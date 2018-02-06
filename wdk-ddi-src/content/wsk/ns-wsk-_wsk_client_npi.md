@@ -1,42 +1,47 @@
 ---
-UID : NS:wsk._WSK_CLIENT_NPI
-title : "_WSK_CLIENT_NPI"
-author : windows-driver-content
-description : The WSK_CLIENT_NPI structure identifies a Network Programming Interface (NPI) implemented by a WSK client.
-old-location : netvista\wsk_client_npi.htm
-old-project : netvista
-ms.assetid : 2f50b228-5565-436f-8c68-8885b8916001
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : WSK_CLIENT_NPI, _WSK_CLIENT_NPI, wsk/WSK_CLIENT_NPI, PWSK_CLIENT_NPI structure pointer [Network Drivers Starting with Windows Vista], wskref_e498e50c-695d-4f5c-a1db-0f87f4313d4a.xml, *PWSK_CLIENT_NPI, PWSK_CLIENT_NPI, netvista.wsk_client_npi, WSK_CLIENT_NPI structure [Network Drivers Starting with Windows Vista], wsk/PWSK_CLIENT_NPI
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wsk.h
-req.include-header : Wsk.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating   systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WSK_CLIENT_NPI, *PWSK_CLIENT_NPI
-req.product : Windows 10 or later.
+UID: NS:wsk._WSK_CLIENT_NPI
+title: "_WSK_CLIENT_NPI"
+author: windows-driver-content
+description: The WSK_CLIENT_NPI structure identifies a Network Programming Interface (NPI) implemented by a WSK client.
+old-location: netvista\wsk_client_npi.htm
+old-project: netvista
+ms.assetid: 2f50b228-5565-436f-8c68-8885b8916001
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: WSK_CLIENT_NPI, _WSK_CLIENT_NPI, wsk/WSK_CLIENT_NPI, PWSK_CLIENT_NPI structure pointer [Network Drivers Starting with Windows Vista], wskref_e498e50c-695d-4f5c-a1db-0f87f4313d4a.xml, *PWSK_CLIENT_NPI, PWSK_CLIENT_NPI, netvista.wsk_client_npi, WSK_CLIENT_NPI structure [Network Drivers Starting with Windows Vista], wsk/PWSK_CLIENT_NPI
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wsk.h
+req.include-header: Wsk.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wsk.h
+apiname:
+-	WSK_CLIENT_NPI
+product: Windows
+targetos: Windows
+req.typenames: WSK_CLIENT_NPI, *PWSK_CLIENT_NPI
+req.product: Windows 10 or later.
 ---
 
 # _WSK_CLIENT_NPI structure

@@ -1,41 +1,46 @@
 ---
-UID : NC:netioddk.NPI_CLIENT_CLEANUP_BINDING_CONTEXT_FN
-title : NPI_CLIENT_CLEANUP_BINDING_CONTEXT_FN
-author : windows-driver-content
-description : A client module's ClientCleanupBindingContext callback function performs any necessary cleanup and deallocation of the client module's binding context after the client module and a provider module have detached from one another.
-old-location : netvista\clientcleanupbindingcontext.htm
-old-project : netvista
-ms.assetid : eebffed4-a2e0-4743-871b-f50f0cdda30d
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.clientcleanupbindingcontext, ClientCleanupBindingContext callback function [Network Drivers Starting with Windows Vista], ClientCleanupBindingContext, NPI_CLIENT_CLEANUP_BINDING_CONTEXT_FN, NPI_CLIENT_CLEANUP_BINDING_CONTEXT_FN, netioddk/ClientCleanupBindingContext, PNPI_CLIENT_CLEANUP_BINDING_CONTEXT_FN callback function [Network Drivers Starting with Windows Vista], PNPI_CLIENT_CLEANUP_BINDING_CONTEXT_FN, nmrref_75483511-e903-4f9d-bc78-29e823b22f8f.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : netioddk.h
-req.include-header : Wsk.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating   systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NET_DMA_PROVIDER_CHARACTERISTICS, *PNET_DMA_PROVIDER_CHARACTERISTICS
+UID: NC:netioddk.NPI_CLIENT_CLEANUP_BINDING_CONTEXT_FN
+title: NPI_CLIENT_CLEANUP_BINDING_CONTEXT_FN
+author: windows-driver-content
+description: A client module's ClientCleanupBindingContext callback function performs any necessary cleanup and deallocation of the client module's binding context after the client module and a provider module have detached from one another.
+old-location: netvista\clientcleanupbindingcontext.htm
+old-project: netvista
+ms.assetid: eebffed4-a2e0-4743-871b-f50f0cdda30d
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.clientcleanupbindingcontext, ClientCleanupBindingContext callback function [Network Drivers Starting with Windows Vista], ClientCleanupBindingContext, NPI_CLIENT_CLEANUP_BINDING_CONTEXT_FN, NPI_CLIENT_CLEANUP_BINDING_CONTEXT_FN, netioddk/ClientCleanupBindingContext, PNPI_CLIENT_CLEANUP_BINDING_CONTEXT_FN callback function [Network Drivers Starting with Windows Vista], PNPI_CLIENT_CLEANUP_BINDING_CONTEXT_FN, nmrref_75483511-e903-4f9d-bc78-29e823b22f8f.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: netioddk.h
+req.include-header: Wsk.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	netioddk.h
+apiname:
+-	PNPI_CLIENT_CLEANUP_BINDING_CONTEXT_FN
+product: Windows
+targetos: Windows
+req.typenames: NET_DMA_PROVIDER_CHARACTERISTICS, *PNET_DMA_PROVIDER_CHARACTERISTICS
 ---
 
 

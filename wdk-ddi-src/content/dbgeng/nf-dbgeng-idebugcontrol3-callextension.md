@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugControl3.CallExtension
-title : IDebugControl3::CallExtension method
-author : windows-driver-content
-description : The CallExtension method calls a debugger extension.
-old-location : debugger\callextension.htm
-old-project : debugger
-ms.assetid : 0d0f23db-5eef-486a-a393-dd3b37826f48
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : CallExtension method [Windows Debugging], IDebugControl interface, dbgeng/IDebugControl::CallExtension, CallExtension, CallExtension method [Windows Debugging], IDebugControl3 interface, CallExtension method [Windows Debugging], IDebugControl2 interface, IDebugControl3::CallExtension, CallExtension method [Windows Debugging], IDebugControl_c37b420a-b94b-4d54-8a5a-2e1a74b49f26.xml, IDebugControl3, IDebugControl3 interface [Windows Debugging], CallExtension method, IDebugControl2 interface [Windows Debugging], CallExtension method, dbgeng/IDebugControl3::CallExtension, IDebugControl interface [Windows Debugging], CallExtension method, IDebugControl::CallExtension, IDebugControl2::CallExtension, dbgeng/IDebugControl2::CallExtension, debugger.callextension
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl3.CallExtension
+title: IDebugControl3::CallExtension method
+author: windows-driver-content
+description: The CallExtension method calls a debugger extension.
+old-location: debugger\callextension.htm
+old-project: debugger
+ms.assetid: 0d0f23db-5eef-486a-a393-dd3b37826f48
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: CallExtension method [Windows Debugging], IDebugControl interface, dbgeng/IDebugControl::CallExtension, CallExtension, CallExtension method [Windows Debugging], IDebugControl3 interface, CallExtension method [Windows Debugging], IDebugControl2 interface, IDebugControl3::CallExtension, CallExtension method [Windows Debugging], IDebugControl_c37b420a-b94b-4d54-8a5a-2e1a74b49f26.xml, IDebugControl3, IDebugControl3 interface [Windows Debugging], CallExtension method, IDebugControl2 interface [Windows Debugging], CallExtension method, dbgeng/IDebugControl3::CallExtension, IDebugControl interface [Windows Debugging], CallExtension method, IDebugControl::CallExtension, IDebugControl2::CallExtension, dbgeng/IDebugControl2::CallExtension, debugger.callextension
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl.CallExtension
+-	IDebugControl2.CallExtension
+-	IDebugControl3.CallExtension
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

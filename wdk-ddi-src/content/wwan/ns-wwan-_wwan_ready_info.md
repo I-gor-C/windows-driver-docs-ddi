@@ -1,42 +1,47 @@
 ---
-UID : NS:wwan._WWAN_READY_INFO
-title : "_WWAN_READY_INFO"
-author : windows-driver-content
-description : The WWAN_READY_INFO structure represents the ready-state of the MB device.
-old-location : netvista\wwan_ready_info.htm
-old-project : netvista
-ms.assetid : 6db8730e-a1da-428b-9938-fd9f3f71283a
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.wwan_ready_info, PWWAN_READY_INFO, wwan/WWAN_READY_INFO, WWAN_READY_INFO structure [Network Drivers Starting with Windows Vista], wwan/PWWAN_READY_INFO, *PWWAN_READY_INFO, PWWAN_READY_INFO structure pointer [Network Drivers Starting with Windows Vista], WWAN_READY_INFO, _WWAN_READY_INFO, WwanRef_8ab0bf23-8ad9-4786-bf5e-013a23d9c16e.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wwan.h
-req.include-header : Wwan.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WWAN_READY_INFO, *PWWAN_READY_INFO
-req.product : Windows 10 or later.
+UID: NS:wwan._WWAN_READY_INFO
+title: "_WWAN_READY_INFO"
+author: windows-driver-content
+description: The WWAN_READY_INFO structure represents the ready-state of the MB device.
+old-location: netvista\wwan_ready_info.htm
+old-project: netvista
+ms.assetid: 6db8730e-a1da-428b-9938-fd9f3f71283a
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.wwan_ready_info, PWWAN_READY_INFO, wwan/WWAN_READY_INFO, WWAN_READY_INFO structure [Network Drivers Starting with Windows Vista], wwan/PWWAN_READY_INFO, *PWWAN_READY_INFO, PWWAN_READY_INFO structure pointer [Network Drivers Starting with Windows Vista], WWAN_READY_INFO, _WWAN_READY_INFO, WwanRef_8ab0bf23-8ad9-4786-bf5e-013a23d9c16e.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wwan.h
+req.include-header: Wwan.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wwan.h
+apiname:
+-	WWAN_READY_INFO
+product: Windows
+targetos: Windows
+req.typenames: WWAN_READY_INFO, *PWWAN_READY_INFO
+req.product: Windows 10 or later.
 ---
 
 # _WWAN_READY_INFO structure

@@ -1,42 +1,47 @@
 ---
-UID : NF:video.VideoPortWritePortUchar
-title : VideoPortWritePortUchar function
-author : windows-driver-content
-description : The VideoPortWritePortUchar function writes a byte to a mapped I/O port.
-old-location : display\videoportwriteportuchar.htm
-old-project : display
-ms.assetid : 0f05f765-ca59-4a92-91a0-f1123dd9cd6f
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : VideoPortWritePortUchar, VideoPortWritePortUchar function [Display Devices], display.videoportwriteportuchar, VideoPort_Functions_cfd3f257-e96f-4f75-a335-6b78aaa47c70.xml, video/VideoPortWritePortUchar
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows 2000 and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Videoprt.lib
-req.dll : Videoprt.sys
-req.irql : Any level (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_PORT_SERVICES
-req.product : Windows 10 or later.
+UID: NF:video.VideoPortWritePortUchar
+title: VideoPortWritePortUchar function
+author: windows-driver-content
+description: The VideoPortWritePortUchar function writes a byte to a mapped I/O port.
+old-location: display\videoportwriteportuchar.htm
+old-project: display
+ms.assetid: 0f05f765-ca59-4a92-91a0-f1123dd9cd6f
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: VideoPortWritePortUchar, VideoPortWritePortUchar function [Display Devices], display.videoportwriteportuchar, VideoPort_Functions_cfd3f257-e96f-4f75-a335-6b78aaa47c70.xml, video/VideoPortWritePortUchar
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows 2000 and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Videoprt.lib
+req.dll: Videoprt.sys
+req.irql: Any level (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Videoprt.sys
+apiname:
+-	VideoPortWritePortUchar
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_PORT_SERVICES
+req.product: Windows 10 or later.
 ---
 
 

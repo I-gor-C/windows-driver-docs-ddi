@@ -1,41 +1,47 @@
 ---
-UID : NF:netioddk.NmrRegisterProvider
-title : NmrRegisterProvider function
-author : windows-driver-content
-description : The NmrRegisterProvider function registers a provider module with the NMR.
-old-location : netvista\nmrregisterprovider.htm
-old-project : netvista
-ms.assetid : aac9382c-5177-4216-bf3d-7970b18662eb
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netioddk/NmrRegisterProvider, netvista.nmrregisterprovider, NmrRegisterProvider, nmrref_ad505c0b-91dd-413d-be24-ab331f8eadca.xml, NmrRegisterProvider function [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : netioddk.h
-req.include-header : Wsk.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating   systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Netio.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NET_DMA_PROVIDER_CHARACTERISTICS, *PNET_DMA_PROVIDER_CHARACTERISTICS
+UID: NF:netioddk.NmrRegisterProvider
+title: NmrRegisterProvider function
+author: windows-driver-content
+description: The NmrRegisterProvider function registers a provider module with the NMR.
+old-location: netvista\nmrregisterprovider.htm
+old-project: netvista
+ms.assetid: aac9382c-5177-4216-bf3d-7970b18662eb
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netioddk/NmrRegisterProvider, netvista.nmrregisterprovider, NmrRegisterProvider, nmrref_ad505c0b-91dd-413d-be24-ab331f8eadca.xml, NmrRegisterProvider function [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: netioddk.h
+req.include-header: Wsk.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Netio.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Netio.lib
+-	Netio.dll
+apiname:
+-	NmrRegisterProvider
+product: Windows
+targetos: Windows
+req.typenames: NET_DMA_PROVIDER_CHARACTERISTICS, *PNET_DMA_PROVIDER_CHARACTERISTICS
 ---
 
 

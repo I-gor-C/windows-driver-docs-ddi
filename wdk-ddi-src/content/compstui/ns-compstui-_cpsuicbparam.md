@@ -1,41 +1,46 @@
 ---
-UID : NS:compstui._CPSUICBPARAM
-title : "_CPSUICBPARAM"
-author : windows-driver-content
-description : The CPSUICBPARAM structure is used as the input parameter to _CPSUICALLBACK-typed callback functions.
-old-location : print\cpsuicbparam.htm
-old-project : print
-ms.assetid : b5545efa-6cb4-41d0-9338-be9a269fa193
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : "*PCPSUICBPARAM, print.cpsuicbparam, CPSUICBPARAM structure [Print Devices], cpsuifnc_9e2d49ae-ecb6-4979-aacd-7dd954034e92.xml, compstui/PCPSUICBPARAM, PCPSUICBPARAM, compstui/CPSUICBPARAM, CPSUICBPARAM, _CPSUICBPARAM, PCPSUICBPARAM structure pointer [Print Devices]"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : compstui.h
-req.include-header : Compstui.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PCPSUICBPARAM, CPSUICBPARAM"
+UID: NS:compstui._CPSUICBPARAM
+title: "_CPSUICBPARAM"
+author: windows-driver-content
+description: The CPSUICBPARAM structure is used as the input parameter to _CPSUICALLBACK-typed callback functions.
+old-location: print\cpsuicbparam.htm
+old-project: print
+ms.assetid: b5545efa-6cb4-41d0-9338-be9a269fa193
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: "*PCPSUICBPARAM, print.cpsuicbparam, CPSUICBPARAM structure [Print Devices], cpsuifnc_9e2d49ae-ecb6-4979-aacd-7dd954034e92.xml, compstui/PCPSUICBPARAM, PCPSUICBPARAM, compstui/CPSUICBPARAM, CPSUICBPARAM, _CPSUICBPARAM, PCPSUICBPARAM structure pointer [Print Devices]"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: compstui.h
+req.include-header: Compstui.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	compstui.h
+apiname:
+-	CPSUICBPARAM
+product: Windows
+targetos: Windows
+req.typenames: "*PCPSUICBPARAM, CPSUICBPARAM"
 ---
 
 # _CPSUICBPARAM structure

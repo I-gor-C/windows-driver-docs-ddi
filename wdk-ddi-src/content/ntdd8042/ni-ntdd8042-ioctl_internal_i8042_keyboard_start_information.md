@@ -1,41 +1,46 @@
 ---
-UID : NI:ntdd8042.IOCTL_INTERNAL_I8042_KEYBOARD_START_INFORMATION
-title : IOCTL_INTERNAL_I8042_KEYBOARD_START_INFORMATION
-author : windows-driver-content
-description : The IOCTL_INTERNAL_I8042_KEYBOARD_START_INFORMATION request passes a pointer to a keyboard interrupt object.
-old-location : hid\ioctl_internal_i8042_keyboard_start_information.htm
-old-project : hid
-ms.assetid : a589b1e1-7462-4de7-83df-c3d55fa01b76
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : hid.ioctl_internal_i8042_keyboard_start_information, IOCTL_INTERNAL_I8042_KEYBOARD_START_INFORMATION control code [Human Input Devices], IOCTL_INTERNAL_I8042_KEYBOARD_START_INFORMATION, ntdd8042/IOCTL_INTERNAL_I8042_KEYBOARD_START_INFORMATION, i8042ref_d5599642-48b8-4b77-b4bb-6e0d7596045d.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntdd8042.h
-req.include-header : Ntdd8042.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : MOUSE_STATE, *PMOUSE_STATE
+UID: NI:ntdd8042.IOCTL_INTERNAL_I8042_KEYBOARD_START_INFORMATION
+title: IOCTL_INTERNAL_I8042_KEYBOARD_START_INFORMATION
+author: windows-driver-content
+description: The IOCTL_INTERNAL_I8042_KEYBOARD_START_INFORMATION request passes a pointer to a keyboard interrupt object.
+old-location: hid\ioctl_internal_i8042_keyboard_start_information.htm
+old-project: hid
+ms.assetid: a589b1e1-7462-4de7-83df-c3d55fa01b76
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: hid.ioctl_internal_i8042_keyboard_start_information, IOCTL_INTERNAL_I8042_KEYBOARD_START_INFORMATION control code [Human Input Devices], IOCTL_INTERNAL_I8042_KEYBOARD_START_INFORMATION, ntdd8042/IOCTL_INTERNAL_I8042_KEYBOARD_START_INFORMATION, i8042ref_d5599642-48b8-4b77-b4bb-6e0d7596045d.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntdd8042.h
+req.include-header: Ntdd8042.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntdd8042.h
+apiname:
+-	IOCTL_INTERNAL_I8042_KEYBOARD_START_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: MOUSE_STATE, *PMOUSE_STATE
 ---
 
 # IOCTL_INTERNAL_I8042_KEYBOARD_START_INFORMATION IOCTL

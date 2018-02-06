@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dkmddi.DXGKDDI_RECOMMENDMONITORMODES
-title : DXGKDDI_RECOMMENDMONITORMODES
-author : windows-driver-content
-description : The DxgkDdiRecommendMonitorModes function inspects the monitor source mode set that is associated with a particular video present target and possibly adds modes to the set.
-old-location : display\dxgkddirecommendmonitormodes.htm
-old-project : display
-ms.assetid : 1fa29ab6-1faa-4be6-ae87-4cac9057471d
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkddirecommendmonitormodes, DxgkDdiRecommendMonitorModes callback function [Display Devices], DxgkDdiRecommendMonitorModes, DXGKDDI_RECOMMENDMONITORMODES, DXGKDDI_RECOMMENDMONITORMODES, d3dkmddi/DxgkDdiRecommendMonitorModes, DmFunctions_0e8f1382-ec41-4953-8e1e-f2a5121acc0c.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "< DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
+UID: NC:d3dkmddi.DXGKDDI_RECOMMENDMONITORMODES
+title: DXGKDDI_RECOMMENDMONITORMODES
+author: windows-driver-content
+description: The DxgkDdiRecommendMonitorModes function inspects the monitor source mode set that is associated with a particular video present target and possibly adds modes to the set.
+old-location: display\dxgkddirecommendmonitormodes.htm
+old-project: display
+ms.assetid: 1fa29ab6-1faa-4be6-ae87-4cac9057471d
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkddirecommendmonitormodes, DxgkDdiRecommendMonitorModes callback function [Display Devices], DxgkDdiRecommendMonitorModes, DXGKDDI_RECOMMENDMONITORMODES, DXGKDDI_RECOMMENDMONITORMODES, d3dkmddi/DxgkDdiRecommendMonitorModes, DmFunctions_0e8f1382-ec41-4953-8e1e-f2a5121acc0c.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "< DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DxgkDdiRecommendMonitorModes
+product: Windows
+targetos: Windows
+req.typenames: DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
 

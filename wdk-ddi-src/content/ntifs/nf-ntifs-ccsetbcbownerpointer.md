@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.CcSetBcbOwnerPointer
-title : CcSetBcbOwnerPointer function
-author : windows-driver-content
-description : The CcSetBcbOwnerPointer routine sets the owner thread pointer for a pinned buffer control block (BCB).
-old-location : ifsk\ccsetbcbownerpointer.htm
-old-project : ifsk
-ms.assetid : fa99ebc4-72d3-42ef-9dda-dcfdd438f66f
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ntifs/CcSetBcbOwnerPointer, CcSetBcbOwnerPointer routine [Installable File System Drivers], ifsk.ccsetbcbownerpointer, CcSetBcbOwnerPointer, ccref_9ad1d1a5-0600-4cfa-88d3-e4e5d2cd9df1.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.CcSetBcbOwnerPointer
+title: CcSetBcbOwnerPointer function
+author: windows-driver-content
+description: The CcSetBcbOwnerPointer routine sets the owner thread pointer for a pinned buffer control block (BCB).
+old-location: ifsk\ccsetbcbownerpointer.htm
+old-project: ifsk
+ms.assetid: fa99ebc4-72d3-42ef-9dda-dcfdd438f66f
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ntifs/CcSetBcbOwnerPointer, CcSetBcbOwnerPointer routine [Installable File System Drivers], ifsk.ccsetbcbownerpointer, CcSetBcbOwnerPointer, ccref_9ad1d1a5-0600-4cfa-88d3-e4e5d2cd9df1.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	CcSetBcbOwnerPointer
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

@@ -1,12 +1,12 @@
 ---
-UID : NA:pointofservicecommontypes
-ms.assetid : b4acf337-75d5-37f2-8097-812ec2347de2
-ms.author : windowsdriverdev
-ms.date : 01/18/18
-ms.keywords : 
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : portal
+UID: NA:pointofservicecommontypes
+ms.assetid: b4acf337-75d5-37f2-8097-812ec2347de2
+ms.author: windowsdriverdev
+ms.date: 01/18/18
+ms.keywords: 
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: portal
 ---
 
 # pointofservicecommontypes.h header

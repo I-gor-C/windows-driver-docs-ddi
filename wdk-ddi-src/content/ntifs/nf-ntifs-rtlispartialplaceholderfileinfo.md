@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.RtlIsPartialPlaceholderFileInfo
-title : RtlIsPartialPlaceholderFileInfo function
-author : windows-driver-content
-description : The RtlIsPartialPlaceholderFileInfo routine determines if a file is a known type of placeholder, based on the information returned by NtQueryInformationFile or NtQueryDirectoryFile.
-old-location : ifsk\rtlispartialplaceholderfileinfo.htm
-old-project : ifsk
-ms.assetid : B84CC8C1-639D-45B4-A2A4-03BA2F1FF04B
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : RtlIsPartialPlaceholderFileInfo routine [Installable File System Drivers], ifsk.rtlispartialplaceholderfileinfo, RtlIsPartialPlaceholderFileInfo, ntifs/RtlIsPartialPlaceholderFileInfo
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows 10, version 1709.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.RtlIsPartialPlaceholderFileInfo
+title: RtlIsPartialPlaceholderFileInfo function
+author: windows-driver-content
+description: The RtlIsPartialPlaceholderFileInfo routine determines if a file is a known type of placeholder, based on the information returned by NtQueryInformationFile or NtQueryDirectoryFile.
+old-location: ifsk\rtlispartialplaceholderfileinfo.htm
+old-project: ifsk
+ms.assetid: B84CC8C1-639D-45B4-A2A4-03BA2F1FF04B
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: RtlIsPartialPlaceholderFileInfo routine [Installable File System Drivers], ifsk.rtlispartialplaceholderfileinfo, RtlIsPartialPlaceholderFileInfo, ntifs/RtlIsPartialPlaceholderFileInfo
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows 10, version 1709.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntifs.h
+apiname:
+-	RtlIsPartialPlaceholderFileInfo
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NF:video.VideoPortInitialize
-title : VideoPortInitialize function
-author : windows-driver-content
-description : The VideoPortInitialize function performs part of the miniport driver initialization, allocating system resources for the miniport driver.
-old-location : display\videoportinitialize.htm
-old-project : display
-ms.assetid : cc0da962-beeb-4035-a68e-e5b856cd5d9b
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : VideoPortInitialize, VideoPort_Functions_215d2fe2-98a9-4504-96cb-492370e349c8.xml, VideoPortInitialize function [Display Devices], display.videoportinitialize, video/VideoPortInitialize
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows 2000 and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Videoprt.lib
-req.dll : Videoprt.sys
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_PORT_SERVICES
-req.product : Windows 10 or later.
+UID: NF:video.VideoPortInitialize
+title: VideoPortInitialize function
+author: windows-driver-content
+description: The VideoPortInitialize function performs part of the miniport driver initialization, allocating system resources for the miniport driver.
+old-location: display\videoportinitialize.htm
+old-project: display
+ms.assetid: cc0da962-beeb-4035-a68e-e5b856cd5d9b
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: VideoPortInitialize, VideoPort_Functions_215d2fe2-98a9-4504-96cb-492370e349c8.xml, VideoPortInitialize function [Display Devices], display.videoportinitialize, video/VideoPortInitialize
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows 2000 and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Videoprt.lib
+req.dll: Videoprt.sys
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Videoprt.sys
+apiname:
+-	VideoPortInitialize
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_PORT_SERVICES
+req.product: Windows 10 or later.
 ---
 
 

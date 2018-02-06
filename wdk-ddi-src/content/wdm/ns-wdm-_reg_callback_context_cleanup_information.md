@@ -1,42 +1,47 @@
 ---
-UID : NS:wdm._REG_CALLBACK_CONTEXT_CLEANUP_INFORMATION
-title : "_REG_CALLBACK_CONTEXT_CLEANUP_INFORMATION"
-author : windows-driver-content
-description : The REG_CALLBACK_CONTEXT_CLEANUP_INFORMATION structure contains information that a driver's RegistryCallback routine can use to free resources that the driver previously allocated for the context that is associated with a registry object.
-old-location : kernel\reg_callback_context_cleanup_information.htm
-old-project : kernel
-ms.assetid : 3ce6286a-6805-491d-85fc-b2c7b0a9a1fb
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/REG_CALLBACK_CONTEXT_CLEANUP_INFORMATION, _REG_CALLBACK_CONTEXT_CLEANUP_INFORMATION, REG_CALLBACK_CONTEXT_CLEANUP_INFORMATION structure [Kernel-Mode Driver Architecture], kstruct_d_949535da-0c9e-474c-9d68-1e8795c7203a.xml, PREG_CALLBACK_CONTEXT_CLEANUP_INFORMATION, PREG_CALLBACK_CONTEXT_CLEANUP_INFORMATION structure pointer [Kernel-Mode Driver Architecture], kernel.reg_callback_context_cleanup_information, *PREG_CALLBACK_CONTEXT_CLEANUP_INFORMATION, wdm/PREG_CALLBACK_CONTEXT_CLEANUP_INFORMATION, REG_CALLBACK_CONTEXT_CLEANUP_INFORMATION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PREG_CALLBACK_CONTEXT_CLEANUP_INFORMATION, REG_CALLBACK_CONTEXT_CLEANUP_INFORMATION"
-req.product : Windows 10 or later.
+UID: NS:wdm._REG_CALLBACK_CONTEXT_CLEANUP_INFORMATION
+title: "_REG_CALLBACK_CONTEXT_CLEANUP_INFORMATION"
+author: windows-driver-content
+description: The REG_CALLBACK_CONTEXT_CLEANUP_INFORMATION structure contains information that a driver's RegistryCallback routine can use to free resources that the driver previously allocated for the context that is associated with a registry object.
+old-location: kernel\reg_callback_context_cleanup_information.htm
+old-project: kernel
+ms.assetid: 3ce6286a-6805-491d-85fc-b2c7b0a9a1fb
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/REG_CALLBACK_CONTEXT_CLEANUP_INFORMATION, _REG_CALLBACK_CONTEXT_CLEANUP_INFORMATION, REG_CALLBACK_CONTEXT_CLEANUP_INFORMATION structure [Kernel-Mode Driver Architecture], kstruct_d_949535da-0c9e-474c-9d68-1e8795c7203a.xml, PREG_CALLBACK_CONTEXT_CLEANUP_INFORMATION, PREG_CALLBACK_CONTEXT_CLEANUP_INFORMATION structure pointer [Kernel-Mode Driver Architecture], kernel.reg_callback_context_cleanup_information, *PREG_CALLBACK_CONTEXT_CLEANUP_INFORMATION, wdm/PREG_CALLBACK_CONTEXT_CLEANUP_INFORMATION, REG_CALLBACK_CONTEXT_CLEANUP_INFORMATION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	REG_CALLBACK_CONTEXT_CLEANUP_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: "*PREG_CALLBACK_CONTEXT_CLEANUP_INFORMATION, REG_CALLBACK_CONTEXT_CLEANUP_INFORMATION"
+req.product: Windows 10 or later.
 ---
 
 # _REG_CALLBACK_CONTEXT_CLEANUP_INFORMATION structure

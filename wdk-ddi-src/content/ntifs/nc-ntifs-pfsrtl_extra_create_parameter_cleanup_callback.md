@@ -1,41 +1,46 @@
 ---
-UID : NC:ntifs.PFSRTL_EXTRA_CREATE_PARAMETER_CLEANUP_CALLBACK
-title : PFSRTL_EXTRA_CREATE_PARAMETER_CLEANUP_CALLBACK
-author : windows-driver-content
-description : A file system filter driver (legacy filter) or a minifilter driver can register a PFSRTL_EXTRA_CREATE_PARAMETER_CLEANUP_CALLBACK-typed routine as the filter driver's CleanupCallback callback routine for an extra create parameter (ECP) context structure.
-old-location : ifsk\pfsrtl_extra_create_parameter_cleanup_callback.htm
-old-project : ifsk
-ms.assetid : 76dc75fa-90ee-4fe7-b8f2-45e1a08a061f
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.pfsrtl_extra_create_parameter_cleanup_callback, PFSRTL_EXTRA_CREATE_PARAMETER_CLEANUP_CALLBACK function pointer [Installable File System Drivers], PFSRTL_EXTRA_CREATE_PARAMETER_CLEANUP_CALLBACK, ntifs/PFSRTL_EXTRA_CREATE_PARAMETER_CLEANUP_CALLBACK, FilterCallbacks_afe97c84-8818-4577-ad94-8f8fdf044570.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ntifs.h
-req.include-header : Ntifs.h, FltKernel.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of all Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VOLUME_READ_PLEX_INPUT, *PVOLUME_READ_PLEX_INPUT
+UID: NC:ntifs.PFSRTL_EXTRA_CREATE_PARAMETER_CLEANUP_CALLBACK
+title: PFSRTL_EXTRA_CREATE_PARAMETER_CLEANUP_CALLBACK
+author: windows-driver-content
+description: A file system filter driver (legacy filter) or a minifilter driver can register a PFSRTL_EXTRA_CREATE_PARAMETER_CLEANUP_CALLBACK-typed routine as the filter driver's CleanupCallback callback routine for an extra create parameter (ECP) context structure.
+old-location: ifsk\pfsrtl_extra_create_parameter_cleanup_callback.htm
+old-project: ifsk
+ms.assetid: 76dc75fa-90ee-4fe7-b8f2-45e1a08a061f
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.pfsrtl_extra_create_parameter_cleanup_callback, PFSRTL_EXTRA_CREATE_PARAMETER_CLEANUP_CALLBACK function pointer [Installable File System Drivers], PFSRTL_EXTRA_CREATE_PARAMETER_CLEANUP_CALLBACK, ntifs/PFSRTL_EXTRA_CREATE_PARAMETER_CLEANUP_CALLBACK, FilterCallbacks_afe97c84-8818-4577-ad94-8f8fdf044570.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ntifs.h
+req.include-header: Ntifs.h, FltKernel.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of all Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	ntifs.h
+apiname:
+-	PFSRTL_EXTRA_CREATE_PARAMETER_CLEANUP_CALLBACK
+product: Windows
+targetos: Windows
+req.typenames: VOLUME_READ_PLEX_INPUT, *PVOLUME_READ_PLEX_INPUT
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3D10DDI_IA_SETTOPOLOGY
-title : PFND3D10DDI_IA_SETTOPOLOGY
-author : windows-driver-content
-description : The IaSetTopology function sets the primitive topology to enable drawing for the input assember.
-old-location : display\iasettopology.htm
-old-project : display
-ms.assetid : c2ee9c8b-7e33-4fc9-9bd3-2b2984e94390
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.iasettopology, IaSetTopology callback function [Display Devices], IaSetTopology, PFND3D10DDI_IA_SETTOPOLOGY, PFND3D10DDI_IA_SETTOPOLOGY, d3d10umddi/IaSetTopology, UserModeDisplayDriverDx10_Functions_9c7ceca5-4745-4550-832d-d85cdcfecf81.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3D10DDI_IA_SETTOPOLOGY
+title: PFND3D10DDI_IA_SETTOPOLOGY
+author: windows-driver-content
+description: The IaSetTopology function sets the primitive topology to enable drawing for the input assember.
+old-location: display\iasettopology.htm
+old-project: display
+ms.assetid: c2ee9c8b-7e33-4fc9-9bd3-2b2984e94390
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.iasettopology, IaSetTopology callback function [Display Devices], IaSetTopology, PFND3D10DDI_IA_SETTOPOLOGY, PFND3D10DDI_IA_SETTOPOLOGY, d3d10umddi/IaSetTopology, UserModeDisplayDriverDx10_Functions_9c7ceca5-4745-4550-832d-d85cdcfecf81.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	IaSetTopology
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

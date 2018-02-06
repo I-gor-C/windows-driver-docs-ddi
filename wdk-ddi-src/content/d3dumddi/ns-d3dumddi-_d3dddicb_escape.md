@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._D3DDDICB_ESCAPE
-title : "_D3DDDICB_ESCAPE"
-author : windows-driver-content
-description : The D3DDDICB_ESCAPE structure describes information that a user-mode display driver shares with a display miniport driver.
-old-location : display\d3dddicb_escape.htm
-old-project : display
-ms.assetid : 37e111be-5175-40d0-b862-0cc79d77d2bc
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : "_D3DDDICB_ESCAPE, d3dumddi/D3DDDICB_ESCAPE, D3DDDICB_ESCAPE structure [Display Devices], D3DDDICB_ESCAPE, display.d3dddicb_escape, D3D_param_Structs_3981c7f8-973d-42c4-abfa-29613731df50.xml"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDICB_ESCAPE
+UID: NS:d3dumddi._D3DDDICB_ESCAPE
+title: "_D3DDDICB_ESCAPE"
+author: windows-driver-content
+description: The D3DDDICB_ESCAPE structure describes information that a user-mode display driver shares with a display miniport driver.
+old-location: display\d3dddicb_escape.htm
+old-project: display
+ms.assetid: 37e111be-5175-40d0-b862-0cc79d77d2bc
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: "_D3DDDICB_ESCAPE, d3dumddi/D3DDDICB_ESCAPE, D3DDDICB_ESCAPE structure [Display Devices], D3DDDICB_ESCAPE, display.d3dddicb_escape, D3D_param_Structs_3981c7f8-973d-42c4-abfa-29613731df50.xml"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	D3DDDICB_ESCAPE
+product: Windows
+targetos: Windows
+req.typenames: D3DDDICB_ESCAPE
 ---
 
 # _D3DDDICB_ESCAPE structure

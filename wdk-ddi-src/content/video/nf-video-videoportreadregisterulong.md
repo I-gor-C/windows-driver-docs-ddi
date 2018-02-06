@@ -1,42 +1,47 @@
 ---
-UID : NF:video.VideoPortReadRegisterUlong
-title : VideoPortReadRegisterUlong function
-author : windows-driver-content
-description : The VideoPortReadRegisterUlong function reads a ULONG value from a mapped register range.
-old-location : display\videoportreadregisterulong.htm
-old-project : display
-ms.assetid : f63f6f55-ceec-4105-9002-f81874e0ac49
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : video/VideoPortReadRegisterUlong, VideoPortReadRegisterUlong function [Display Devices], VideoPortReadRegisterUlong, display.videoportreadregisterulong, VideoPort_Functions_d9150c11-0135-48c2-920e-9d5bcbbdd416.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows 2000 and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Videoprt.lib
-req.dll : Videoprt.sys
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_PORT_SERVICES
-req.product : Windows 10 or later.
+UID: NF:video.VideoPortReadRegisterUlong
+title: VideoPortReadRegisterUlong function
+author: windows-driver-content
+description: The VideoPortReadRegisterUlong function reads a ULONG value from a mapped register range.
+old-location: display\videoportreadregisterulong.htm
+old-project: display
+ms.assetid: f63f6f55-ceec-4105-9002-f81874e0ac49
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: video/VideoPortReadRegisterUlong, VideoPortReadRegisterUlong function [Display Devices], VideoPortReadRegisterUlong, display.videoportreadregisterulong, VideoPort_Functions_d9150c11-0135-48c2-920e-9d5bcbbdd416.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows 2000 and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Videoprt.lib
+req.dll: Videoprt.sys
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Videoprt.sys
+apiname:
+-	VideoPortReadRegisterUlong
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_PORT_SERVICES
+req.product: Windows 10 or later.
 ---
 
 

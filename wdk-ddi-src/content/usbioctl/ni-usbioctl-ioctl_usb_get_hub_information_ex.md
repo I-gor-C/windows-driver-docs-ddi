@@ -1,42 +1,47 @@
 ---
-UID : NI:usbioctl.IOCTL_USB_GET_HUB_INFORMATION_EX
-title : IOCTL_USB_GET_HUB_INFORMATION_EX
-author : windows-driver-content
-description : The IOCTL_USB_GET_HUB_INFORMATION_EX I/O control request is sent by an application to retrieve information about a USB hub in a USB_HUB_INFORMATION_EX structure.The request retrieves the highest port number on the hub.
-old-location : buses\ioctl_usb_get_hub_information_ex.htm
-old-project : usbref
-ms.assetid : 518AB292-A1E7-48CE-B967-C6559580E326
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : buses.ioctl_usb_get_hub_information_ex, IOCTL_USB_GET_HUB_INFORMATION_EX control code [Buses], IOCTL_USB_GET_HUB_INFORMATION_EX, usbioctl/IOCTL_USB_GET_HUB_INFORMATION_EX
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : usbioctl.h
-req.include-header : Usbioctl.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : None supported
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : USB_HUB_TYPE
-req.product : Windows 10 or later.
+UID: NI:usbioctl.IOCTL_USB_GET_HUB_INFORMATION_EX
+title: IOCTL_USB_GET_HUB_INFORMATION_EX
+author: windows-driver-content
+description: The IOCTL_USB_GET_HUB_INFORMATION_EX I/O control request is sent by an application to retrieve information about a USB hub in a USB_HUB_INFORMATION_EX structure.The request retrieves the highest port number on the hub.
+old-location: buses\ioctl_usb_get_hub_information_ex.htm
+old-project: usbref
+ms.assetid: 518AB292-A1E7-48CE-B967-C6559580E326
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: buses.ioctl_usb_get_hub_information_ex, IOCTL_USB_GET_HUB_INFORMATION_EX control code [Buses], IOCTL_USB_GET_HUB_INFORMATION_EX, usbioctl/IOCTL_USB_GET_HUB_INFORMATION_EX
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: usbioctl.h
+req.include-header: Usbioctl.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: None supported
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Usbioctl.h
+apiname:
+-	IOCTL_USB_GET_HUB_INFORMATION_EX
+product: Windows
+targetos: Windows
+req.typenames: USB_HUB_TYPE
+req.product: Windows 10 or later.
 ---
 
 # IOCTL_USB_GET_HUB_INFORMATION_EX IOCTL

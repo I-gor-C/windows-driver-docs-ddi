@@ -1,42 +1,46 @@
 ---
-UID : NF:bidispl.IBidiSpl.BindDevice
-title : IBidiSpl::BindDevice method
-author : windows-driver-content
-description : The IBidiSpl::BindDevice method binds a printer to a bidi request. This method is similar to the OpenPrinter function.
-old-location : print\ibidispl_ibidispl__binddevice.htm
-old-project : print
-ms.assetid : 880ff314-c79d-4395-83ad-ce61bb8da5b5
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : IBidiSpl interface [Print Devices], IBidiSpl::BindDevice method, IBidiSpl, IBidiSpl::BindDevice method [Print Devices], IBidiSpl::BindDevice, print.ibidispl_ibidispl__binddevice, gdi.ibidispl_ibidispl__binddevice, bidispl/IBidiSpl::IBidiSpl::BindDevice, _win32_IBidiSpl_BindDevice, BIDI_ACCESS_USER, BIDI_ACCESS_ADMINISTRATOR, IBidiSpl::BindDevice method [Print Devices], IBidiSpl interface, BindDevice, IBidiSpl::IBidiSpl::BindDevice
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : bidispl.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Windows XP
-req.target-min-winversvr : Windows Server 2003
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : bidispl.h
-req.dll : Bidispl.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
+UID: NF:bidispl.IBidiSpl.BindDevice
+title: IBidiSpl::BindDevice method
+author: windows-driver-content
+description: The IBidiSpl::BindDevice method binds a printer to a bidi request. This method is similar to the OpenPrinter function.
+old-location: print\ibidispl_ibidispl__binddevice.htm
+old-project: print
+ms.assetid: 880ff314-c79d-4395-83ad-ce61bb8da5b5
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: IBidiSpl interface [Print Devices], IBidiSpl::BindDevice method, IBidiSpl, IBidiSpl::BindDevice method [Print Devices], IBidiSpl::BindDevice, print.ibidispl_ibidispl__binddevice, gdi.ibidispl_ibidispl__binddevice, bidispl/IBidiSpl::IBidiSpl::BindDevice, _win32_IBidiSpl_BindDevice, BIDI_ACCESS_USER, BIDI_ACCESS_ADMINISTRATOR, IBidiSpl::BindDevice method [Print Devices], IBidiSpl interface, BindDevice, IBidiSpl::IBidiSpl::BindDevice
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: bidispl.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Windows XP
+req.target-min-winversvr: Windows Server 2003
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: bidispl.h
+req.dll: Bidispl.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	bidispl.dll
+apiname:
 -	IBidiSpl.IBidiSpl::BindDevice
-product : Windows
-targetos : Windows
-req.typenames : "*PMPEG2_TRANSPORT_STRIDE, MPEG2_TRANSPORT_STRIDE"
+product: Windows
+targetos: Windows
+req.typenames: "*PMPEG2_TRANSPORT_STRIDE, MPEG2_TRANSPORT_STRIDE"
 ---
 
 

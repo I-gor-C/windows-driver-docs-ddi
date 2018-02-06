@@ -1,41 +1,46 @@
 ---
-UID : NS:ks.KSPROPERTY_STEPPING_LONG
-title : KSPROPERTY_STEPPING_LONG
-author : windows-driver-content
-description : The KSPROPERTY_STEPPING_LONG structure defines the valid range of values for a 32-bit property.
-old-location : stream\ksproperty_stepping_long.htm
-old-project : stream
-ms.assetid : bf0c16f5-ecfa-42bc-bd60-805d5b28ddc3
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ks/KSPROPERTY_STEPPING_LONG, KSPROPERTY_STEPPING_LONG, PKSPROPERTY_STEPPING_LONG structure pointer [Streaming Media Devices], *PKSPROPERTY_STEPPING_LONG, stream.ksproperty_stepping_long, ks/PKSPROPERTY_STEPPING_LONG, KSPROPERTY_STEPPING_LONG structure [Streaming Media Devices], PKSPROPERTY_STEPPING_LONG, ks-struct_2aad8fb1-d35c-4227-ad97-92451261b33c.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KSPROPERTY_STEPPING_LONG, *PKSPROPERTY_STEPPING_LONG
+UID: NS:ks.KSPROPERTY_STEPPING_LONG
+title: KSPROPERTY_STEPPING_LONG
+author: windows-driver-content
+description: The KSPROPERTY_STEPPING_LONG structure defines the valid range of values for a 32-bit property.
+old-location: stream\ksproperty_stepping_long.htm
+old-project: stream
+ms.assetid: bf0c16f5-ecfa-42bc-bd60-805d5b28ddc3
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ks/KSPROPERTY_STEPPING_LONG, KSPROPERTY_STEPPING_LONG, PKSPROPERTY_STEPPING_LONG structure pointer [Streaming Media Devices], *PKSPROPERTY_STEPPING_LONG, stream.ksproperty_stepping_long, ks/PKSPROPERTY_STEPPING_LONG, KSPROPERTY_STEPPING_LONG structure [Streaming Media Devices], PKSPROPERTY_STEPPING_LONG, ks-struct_2aad8fb1-d35c-4227-ad97-92451261b33c.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	KSPROPERTY_STEPPING_LONG
+product: Windows
+targetos: Windows
+req.typenames: KSPROPERTY_STEPPING_LONG, *PKSPROPERTY_STEPPING_LONG
 ---
 
 # KSPROPERTY_STEPPING_LONG structure

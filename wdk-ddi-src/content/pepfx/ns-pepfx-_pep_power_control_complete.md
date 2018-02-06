@@ -1,41 +1,46 @@
 ---
-UID : NS:pepfx._PEP_POWER_CONTROL_COMPLETE
-title : "_PEP_POWER_CONTROL_COMPLETE"
-author : windows-driver-content
-description : The PEP_POWER_CONTROL_COMPLETE structure contains status information for a power control operation that the PEP previously requested and that the device driver has completed.
-old-location : kernel\pep_power_control_complete.htm
-old-project : kernel
-ms.assetid : E270B609-2D47-4D55-94A6-BE82B2E5B77A
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : pepfx/PPEP_POWER_CONTROL_COMPLETE, PEP_POWER_CONTROL_COMPLETE structure [Kernel-Mode Driver Architecture], PPEP_POWER_CONTROL_COMPLETE structure pointer [Kernel-Mode Driver Architecture], pepfx/PEP_POWER_CONTROL_COMPLETE, PPEP_POWER_CONTROL_COMPLETE, _PEP_POWER_CONTROL_COMPLETE, PEP_POWER_CONTROL_COMPLETE, kernel.pep_power_control_complete, *PPEP_POWER_CONTROL_COMPLETE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : pepfx.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with Windows 10.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PEP_POWER_CONTROL_COMPLETE, *PPEP_POWER_CONTROL_COMPLETE
+UID: NS:pepfx._PEP_POWER_CONTROL_COMPLETE
+title: "_PEP_POWER_CONTROL_COMPLETE"
+author: windows-driver-content
+description: The PEP_POWER_CONTROL_COMPLETE structure contains status information for a power control operation that the PEP previously requested and that the device driver has completed.
+old-location: kernel\pep_power_control_complete.htm
+old-project: kernel
+ms.assetid: E270B609-2D47-4D55-94A6-BE82B2E5B77A
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: pepfx/PPEP_POWER_CONTROL_COMPLETE, PEP_POWER_CONTROL_COMPLETE structure [Kernel-Mode Driver Architecture], PPEP_POWER_CONTROL_COMPLETE structure pointer [Kernel-Mode Driver Architecture], pepfx/PEP_POWER_CONTROL_COMPLETE, PPEP_POWER_CONTROL_COMPLETE, _PEP_POWER_CONTROL_COMPLETE, PEP_POWER_CONTROL_COMPLETE, kernel.pep_power_control_complete, *PPEP_POWER_CONTROL_COMPLETE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: pepfx.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows 10.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	pepfx.h
+apiname:
+-	PEP_POWER_CONTROL_COMPLETE
+product: Windows
+targetos: Windows
+req.typenames: PEP_POWER_CONTROL_COMPLETE, *PPEP_POWER_CONTROL_COMPLETE
 ---
 
 # _PEP_POWER_CONTROL_COMPLETE structure

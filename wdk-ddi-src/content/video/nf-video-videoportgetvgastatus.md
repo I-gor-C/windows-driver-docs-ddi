@@ -1,42 +1,47 @@
 ---
-UID : NF:video.VideoPortGetVgaStatus
-title : VideoPortGetVgaStatus function
-author : windows-driver-content
-description : The VideoPortGetVgaStatus function detects whether the calling device is decoding a VGA I/O address.
-old-location : display\videoportgetvgastatus.htm
-old-project : display
-ms.assetid : 5a2bb69c-b10a-41bb-a92a-de7add3ca2c5
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : VideoPort_Functions_f3e43fe4-2e50-48d4-b185-f44e2a2adb31.xml, VideoPortGetVgaStatus function [Display Devices], video/VideoPortGetVgaStatus, VideoPortGetVgaStatus, display.videoportgetvgastatus
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows 2000 and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Videoprt.lib
-req.dll : Videoprt.sys
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_PORT_SERVICES
-req.product : Windows 10 or later.
+UID: NF:video.VideoPortGetVgaStatus
+title: VideoPortGetVgaStatus function
+author: windows-driver-content
+description: The VideoPortGetVgaStatus function detects whether the calling device is decoding a VGA I/O address.
+old-location: display\videoportgetvgastatus.htm
+old-project: display
+ms.assetid: 5a2bb69c-b10a-41bb-a92a-de7add3ca2c5
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: VideoPort_Functions_f3e43fe4-2e50-48d4-b185-f44e2a2adb31.xml, VideoPortGetVgaStatus function [Display Devices], video/VideoPortGetVgaStatus, VideoPortGetVgaStatus, display.videoportgetvgastatus
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows 2000 and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Videoprt.lib
+req.dll: Videoprt.sys
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Videoprt.sys
+apiname:
+-	VideoPortGetVgaStatus
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_PORT_SERVICES
+req.product: Windows 10 or later.
 ---
 
 

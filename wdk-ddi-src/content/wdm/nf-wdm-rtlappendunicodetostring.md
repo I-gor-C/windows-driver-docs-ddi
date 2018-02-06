@@ -1,42 +1,48 @@
 ---
-UID : NF:wdm.RtlAppendUnicodeToString
-title : RtlAppendUnicodeToString function
-author : windows-driver-content
-description : The RtlAppendUnicodeToString routine concatenates the supplied Unicode string to a buffered Unicode string.
-old-location : kernel\rtlappendunicodetostring.htm
-old-project : kernel
-ms.assetid : 688f033b-1f0e-4f0a-9ccd-457ba726d728
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/RtlAppendUnicodeToString, RtlAppendUnicodeToString, RtlAppendUnicodeToString routine [Kernel-Mode Driver Architecture], k109_7bbe9676-db08-4bf2-b2d5-37b257621336.xml, kernel.rtlappendunicodetostring
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe (kernel mode); Ntdll.dll (user mode)
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.RtlAppendUnicodeToString
+title: RtlAppendUnicodeToString function
+author: windows-driver-content
+description: The RtlAppendUnicodeToString routine concatenates the supplied Unicode string to a buffered Unicode string.
+old-location: kernel\rtlappendunicodetostring.htm
+old-project: kernel
+ms.assetid: 688f033b-1f0e-4f0a-9ccd-457ba726d728
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/RtlAppendUnicodeToString, RtlAppendUnicodeToString, RtlAppendUnicodeToString routine [Kernel-Mode Driver Architecture], k109_7bbe9676-db08-4bf2-b2d5-37b257621336.xml, kernel.rtlappendunicodetostring
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe (kernel mode); Ntdll.dll (user mode)
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+-	Ntdll.dll
+apiname:
+-	RtlAppendUnicodeToString
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

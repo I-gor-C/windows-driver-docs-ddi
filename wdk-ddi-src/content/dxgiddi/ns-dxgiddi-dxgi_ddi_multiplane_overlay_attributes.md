@@ -1,41 +1,46 @@
 ---
-UID : NS:dxgiddi.DXGI_DDI_MULTIPLANE_OVERLAY_ATTRIBUTES
-title : DXGI_DDI_MULTIPLANE_OVERLAY_ATTRIBUTES
-author : windows-driver-content
-description : Used by the user-mode display driver to specify overlay plane attributes.
-old-location : display\dxgi_ddi_multiplane_overlay_attributes.htm
-old-project : display
-ms.assetid : 0bd7f866-d103-449a-b614-d123c040b2da
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgi_ddi_multiplane_overlay_attributes, DXGI_DDI_MULTIPLANE_OVERLAY_ATTRIBUTES structure [Display Devices], dxgiddi/DXGI_DDI_MULTIPLANE_OVERLAY_ATTRIBUTES, DXGI_DDI_MULTIPLANE_OVERLAY_ATTRIBUTES
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : dxgiddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8.1
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGI_DDI_MULTIPLANE_OVERLAY_ATTRIBUTES
+UID: NS:dxgiddi.DXGI_DDI_MULTIPLANE_OVERLAY_ATTRIBUTES
+title: DXGI_DDI_MULTIPLANE_OVERLAY_ATTRIBUTES
+author: windows-driver-content
+description: Used by the user-mode display driver to specify overlay plane attributes.
+old-location: display\dxgi_ddi_multiplane_overlay_attributes.htm
+old-project: display
+ms.assetid: 0bd7f866-d103-449a-b614-d123c040b2da
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgi_ddi_multiplane_overlay_attributes, DXGI_DDI_MULTIPLANE_OVERLAY_ATTRIBUTES structure [Display Devices], dxgiddi/DXGI_DDI_MULTIPLANE_OVERLAY_ATTRIBUTES, DXGI_DDI_MULTIPLANE_OVERLAY_ATTRIBUTES
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: dxgiddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8.1
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Dxgiddi.h
+apiname:
+-	DXGI_DDI_MULTIPLANE_OVERLAY_ATTRIBUTES
+product: Windows
+targetos: Windows
+req.typenames: DXGI_DDI_MULTIPLANE_OVERLAY_ATTRIBUTES
 ---
 
 # DXGI_DDI_MULTIPLANE_OVERLAY_ATTRIBUTES structure

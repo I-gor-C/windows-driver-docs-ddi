@@ -1,42 +1,47 @@
 ---
-UID : NF:winspool.FindFirstPrinterChangeNotification
-title : FindFirstPrinterChangeNotification function
-author : windows-driver-content
-description : Warning  Starting with Windows 10, the APIs which support third-party print providers are deprecated.
-old-location : print\findfirstprinterchangenotification.htm
-old-project : print
-ms.assetid : f6d2034a-0906-42ea-a4bd-9cdb1b36c5cf
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : FindFirstPrinterChangeNotification, winspool/FindFirstPrinterChangeNotification, spoolfnc_cf13c78b-91e2-4d6e-b7be-fda42b3e7588.xml, FindFirstPrinterChangeNotification function [Print Devices], print.findfirstprinterchangenotification
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : winspool.h
-req.include-header : Winspool.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : WinSpool.lib
-req.dll : WinSpool.drv
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : BIDI_TYPE
-req.product : Windows 10 or later.
+UID: NF:winspool.FindFirstPrinterChangeNotification
+title: FindFirstPrinterChangeNotification function
+author: windows-driver-content
+description: Warning  Starting with Windows 10, the APIs which support third-party print providers are deprecated.
+old-location: print\findfirstprinterchangenotification.htm
+old-project: print
+ms.assetid: f6d2034a-0906-42ea-a4bd-9cdb1b36c5cf
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: FindFirstPrinterChangeNotification, winspool/FindFirstPrinterChangeNotification, spoolfnc_cf13c78b-91e2-4d6e-b7be-fda42b3e7588.xml, FindFirstPrinterChangeNotification function [Print Devices], print.findfirstprinterchangenotification
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: winspool.h
+req.include-header: Winspool.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: WinSpool.lib
+req.dll: WinSpool.drv
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	WinSpool.drv
+apiname:
+-	FindFirstPrinterChangeNotification
+product: Windows
+targetos: Windows
+req.typenames: BIDI_TYPE
+req.product: Windows 10 or later.
 ---
 
 

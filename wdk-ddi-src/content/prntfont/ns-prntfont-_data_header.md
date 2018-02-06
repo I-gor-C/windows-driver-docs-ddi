@@ -1,42 +1,47 @@
 ---
-UID : NS:prntfont._DATA_HEADER
-title : "_DATA_HEADER"
-author : windows-driver-content
-description : The DATA_HEADER structure is used to specify a data section within a Unidrv font format file (.uff file).
-old-location : print\data_header.htm
-old-project : print
-ms.assetid : 8c7b6d2f-d2d9-49a5-8137-13d71dfd2611
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : prntfont/DATA_HEADER, PDATA_HEADER, _DATA_HEADER, DATA_HEADER, *PDATA_HEADER, PDATA_HEADER structure pointer [Print Devices], print.data_header, DATA_HEADER structure [Print Devices], prntfont/PDATA_HEADER, print_unidrv-pscript_fonts_7b54b761-a2d8-419d-9726-628cfd33dae6.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : prntfont.h
-req.include-header : Prntfont.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DATA_HEADER, *PDATA_HEADER
-req.product : Windows 10 or later.
+UID: NS:prntfont._DATA_HEADER
+title: "_DATA_HEADER"
+author: windows-driver-content
+description: The DATA_HEADER structure is used to specify a data section within a Unidrv font format file (.uff file).
+old-location: print\data_header.htm
+old-project: print
+ms.assetid: 8c7b6d2f-d2d9-49a5-8137-13d71dfd2611
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: prntfont/DATA_HEADER, PDATA_HEADER, _DATA_HEADER, DATA_HEADER, *PDATA_HEADER, PDATA_HEADER structure pointer [Print Devices], print.data_header, DATA_HEADER structure [Print Devices], prntfont/PDATA_HEADER, print_unidrv-pscript_fonts_7b54b761-a2d8-419d-9726-628cfd33dae6.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: prntfont.h
+req.include-header: Prntfont.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	prntfont.h
+apiname:
+-	DATA_HEADER
+product: Windows
+targetos: Windows
+req.typenames: DATA_HEADER, *PDATA_HEADER
+req.product: Windows 10 or later.
 ---
 
 # _DATA_HEADER structure

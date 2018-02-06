@@ -1,41 +1,46 @@
 ---
-UID : NF:ntddk.KeInvalidateAllCaches
-title : KeInvalidateAllCaches function
-author : windows-driver-content
-description : The KeInvalidateAllCaches routine flushes all processor caches.
-old-location : kernel\keinvalidateallcaches.htm
-old-project : kernel
-ms.assetid : a7971cd1-1e9b-4d81-8422-1ee36651973a
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : KeInvalidateAllCaches routine [Kernel-Mode Driver Architecture], KeInvalidateAllCaches, kernel.keinvalidateallcaches, k105_4b59c5bd-70e3-48e1-aa6c-abf4e02925e8.xml, ntddk/KeInvalidateAllCaches
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Server 2003 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.KeInvalidateAllCaches
+title: KeInvalidateAllCaches function
+author: windows-driver-content
+description: The KeInvalidateAllCaches routine flushes all processor caches.
+old-location: kernel\keinvalidateallcaches.htm
+old-project: kernel
+ms.assetid: a7971cd1-1e9b-4d81-8422-1ee36651973a
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: KeInvalidateAllCaches routine [Kernel-Mode Driver Architecture], KeInvalidateAllCaches, kernel.keinvalidateallcaches, k105_4b59c5bd-70e3-48e1-aa6c-abf4e02925e8.xml, ntddk/KeInvalidateAllCaches
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Server 2003 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	KeInvalidateAllCaches
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

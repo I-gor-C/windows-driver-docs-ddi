@@ -1,42 +1,47 @@
 ---
-UID : NE:rilapitypes.RILUICCKEYREF
-title : RILUICCKEYREF
-author : windows-driver-content
-description : This enumeration describes the RILUICCAPPTYPE.
-old-location : netvista\riluicckeyref.htm
-old-project : netvista
-ms.assetid : 7812008b-867f-4b17-b715-7a1f10c38368
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : RIL_UICCKEYREF_PIN2, RIL_UICCKEYREF_PIN1, netvista.riluicckeyref, rilapitypes/RIL_UICCKEYREF_NEV, rilapitypes/RIL_UICCKEYREF_UPIN, RILUICCKEYREF, rilapitypes/RILUICCKEYREF, RIL_UICCKEYREF_NEV, RIL_UICCKEYREF_UPIN, RILUICCKEYREF enumeration [Network Drivers Starting with Windows Vista], rilapitypes/RIL_UICCKEYREF_PIN1, RIL_UICCKEYREF_ALW, rilapitypes/RIL_UICCKEYREF_PIN2, rilapitypes/RIL_UICCKEYREF_ALW
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : rilapitypes.h
-req.include-header : Rilapitypes.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RILUICCKEYREF
-req.product : Windows 10 or later.
+UID: NE:rilapitypes.RILUICCKEYREF
+title: RILUICCKEYREF
+author: windows-driver-content
+description: This enumeration describes the RILUICCAPPTYPE.
+old-location: netvista\riluicckeyref.htm
+old-project: netvista
+ms.assetid: 7812008b-867f-4b17-b715-7a1f10c38368
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: RIL_UICCKEYREF_PIN2, RIL_UICCKEYREF_PIN1, netvista.riluicckeyref, rilapitypes/RIL_UICCKEYREF_NEV, rilapitypes/RIL_UICCKEYREF_UPIN, RILUICCKEYREF, rilapitypes/RILUICCKEYREF, RIL_UICCKEYREF_NEV, RIL_UICCKEYREF_UPIN, RILUICCKEYREF enumeration [Network Drivers Starting with Windows Vista], rilapitypes/RIL_UICCKEYREF_PIN1, RIL_UICCKEYREF_ALW, rilapitypes/RIL_UICCKEYREF_PIN2, rilapitypes/RIL_UICCKEYREF_ALW
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: rilapitypes.h
+req.include-header: Rilapitypes.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	rilapitypes.h
+apiname:
+-	RILUICCKEYREF
+product: Windows
+targetos: Windows
+req.typenames: RILUICCKEYREF
+req.product: Windows 10 or later.
 ---
 
 # RILUICCKEYREF Enumeration
@@ -57,31 +62,31 @@ enum RILUICCKEYREF {
 ## Constants
 
 <table>
-
-<tr>
-<td>RIL_UICCKEYREF_ALW</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_UICCKEYREF_NEV</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_UICCKEYREF_PIN1</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_UICCKEYREF_PIN2</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_UICCKEYREF_UPIN</td>
-<td></td>
-</tr>
+            
+                <tr>
+                    <td>RIL_UICCKEYREF_ALW</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_UICCKEYREF_NEV</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_UICCKEYREF_PIN1</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_UICCKEYREF_PIN2</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_UICCKEYREF_UPIN</td>
+                    <td></td>
+                </tr>
 </table>
 
 
@@ -90,9 +95,9 @@ enum RILUICCKEYREF {
 | ---- |:---- |
 | **Header** | rilapitypes.h (include Rilapitypes.h) |
 
-## See Also
+    ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn946509">Cellular COM enumerations</a>
+        <a href="https://msdn.microsoft.com/library/windows/hardware/dn946509">Cellular COM enumerations</a>
 
  
 

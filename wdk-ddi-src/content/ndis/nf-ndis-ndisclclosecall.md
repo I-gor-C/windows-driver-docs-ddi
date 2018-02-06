@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisClCloseCall
-title : NdisClCloseCall function
-author : windows-driver-content
-description : NdisClCloseCall requests that a call on the specified VC be torn down.
-old-location : netvista\ndisclclosecall.htm
-old-project : netvista
-ms.assetid : 4d1a7451-8c0f-4df8-85c5-14aaaa9afd94
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : condis_client_ref_6d047338-0482-4d26-8dfa-4c07502fb8a2.xml, NdisClCloseCall function [Network Drivers Starting with Windows Vista], NdisClCloseCall, netvista.ndisclclosecall, ndis/NdisClCloseCall
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisClCloseCall (NDIS 5.1)) in   Windows Vista. Supported for NDIS 5.1 drivers (see    NdisClCloseCall (NDIS 5.1)) in   Windows XP.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_Protocol_Driver_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisClCloseCall
+title: NdisClCloseCall function
+author: windows-driver-content
+description: NdisClCloseCall requests that a call on the specified VC be torn down.
+old-location: netvista\ndisclclosecall.htm
+old-project: netvista
+ms.assetid: 4d1a7451-8c0f-4df8-85c5-14aaaa9afd94
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: condis_client_ref_6d047338-0482-4d26-8dfa-4c07502fb8a2.xml, NdisClCloseCall function [Network Drivers Starting with Windows Vista], NdisClCloseCall, netvista.ndisclclosecall, ndis/NdisClCloseCall
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisClCloseCall (NDIS 5.1)) in   Windows Vista. Supported for NDIS 5.1 drivers (see    NdisClCloseCall (NDIS 5.1)) in   Windows XP.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_Protocol_Driver_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisClCloseCall
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

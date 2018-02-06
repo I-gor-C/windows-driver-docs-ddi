@@ -1,41 +1,46 @@
 ---
-UID : NF:ntddk.PsSetLoadImageNotifyRoutine
-title : PsSetLoadImageNotifyRoutine function
-author : windows-driver-content
-description : The PsSetLoadImageNotifyRoutine routine registers a driver-supplied callback that is subsequently notified whenever an image is loaded (or mapped into memory).
-old-location : kernel\pssetloadimagenotifyroutine.htm
-old-project : kernel
-ms.assetid : e90bc043-1b92-474c-b6c7-7e510271118b
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : PsSetLoadImageNotifyRoutine, k108_287b9d79-8b77-40b6-8fe7-21ac3551e437.xml, kernel.pssetloadimagenotifyroutine, PsSetLoadImageNotifyRoutine routine [Kernel-Mode Driver Architecture], ntddk/PsSetLoadImageNotifyRoutine
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : IrqlPsPassive, PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.PsSetLoadImageNotifyRoutine
+title: PsSetLoadImageNotifyRoutine function
+author: windows-driver-content
+description: The PsSetLoadImageNotifyRoutine routine registers a driver-supplied callback that is subsequently notified whenever an image is loaded (or mapped into memory).
+old-location: kernel\pssetloadimagenotifyroutine.htm
+old-project: kernel
+ms.assetid: e90bc043-1b92-474c-b6c7-7e510271118b
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: PsSetLoadImageNotifyRoutine, k108_287b9d79-8b77-40b6-8fe7-21ac3551e437.xml, kernel.pssetloadimagenotifyroutine, PsSetLoadImageNotifyRoutine routine [Kernel-Mode Driver Architecture], ntddk/PsSetLoadImageNotifyRoutine
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: IrqlPsPassive, PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	PsSetLoadImageNotifyRoutine
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

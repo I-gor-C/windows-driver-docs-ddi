@@ -1,42 +1,47 @@
 ---
-UID : NE:wwan._WWAN_SIM_CLASS
-title : "_WWAN_SIM_CLASS"
-author : windows-driver-content
-description : The WWAN_SIM_CLASS enumeration lists the different types of Subscriber Identity Modules (SIMs) that are supported by the MB device.
-old-location : netvista\wwan_sim_class.htm
-old-project : netvista
-ms.assetid : 4d66874b-bb1d-43e5-a4b2-525face7de81
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : PWWAN_SIM_CLASS, wwan/WWAN_SIM_CLASS, WWAN_SIM_CLASS enumeration [Network Drivers Starting with Windows Vista], WwanSimClassSimLogical, wwan/WwanSimClassSimRemovable, wwan/WwanSimClassSimRemote, WWAN_SIM_CLASS, _WWAN_SIM_CLASS, WwanSimClassSimRemote, WwanSimClassMax, PWWAN_SIM_CLASS enumeration pointer [Network Drivers Starting with Windows Vista], WwanRef_8c5184eb-4ac5-40a7-bb52-875554517f70.xml, wwan/WwanSimClassUnknown, WwanSimClassUnknown, wwan/PWWAN_SIM_CLASS, wwan/WwanSimClassMax, WwanSimClassSimRemovable, netvista.wwan_sim_class, wwan/WwanSimClassSimLogical, *PWWAN_SIM_CLASS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : wwan.h
-req.include-header : Wwan.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWWAN_SIM_CLASS, WWAN_SIM_CLASS"
-req.product : Windows 10 or later.
+UID: NE:wwan._WWAN_SIM_CLASS
+title: "_WWAN_SIM_CLASS"
+author: windows-driver-content
+description: The WWAN_SIM_CLASS enumeration lists the different types of Subscriber Identity Modules (SIMs) that are supported by the MB device.
+old-location: netvista\wwan_sim_class.htm
+old-project: netvista
+ms.assetid: 4d66874b-bb1d-43e5-a4b2-525face7de81
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: PWWAN_SIM_CLASS, wwan/WWAN_SIM_CLASS, WWAN_SIM_CLASS enumeration [Network Drivers Starting with Windows Vista], WwanSimClassSimLogical, wwan/WwanSimClassSimRemovable, wwan/WwanSimClassSimRemote, WWAN_SIM_CLASS, _WWAN_SIM_CLASS, WwanSimClassSimRemote, WwanSimClassMax, PWWAN_SIM_CLASS enumeration pointer [Network Drivers Starting with Windows Vista], WwanRef_8c5184eb-4ac5-40a7-bb52-875554517f70.xml, wwan/WwanSimClassUnknown, WwanSimClassUnknown, wwan/PWWAN_SIM_CLASS, wwan/WwanSimClassMax, WwanSimClassSimRemovable, netvista.wwan_sim_class, wwan/WwanSimClassSimLogical, *PWWAN_SIM_CLASS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: wwan.h
+req.include-header: Wwan.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wwan.h
+apiname:
+-	WWAN_SIM_CLASS
+product: Windows
+targetos: Windows
+req.typenames: "*PWWAN_SIM_CLASS, WWAN_SIM_CLASS"
+req.product: Windows 10 or later.
 ---
 
 # _WWAN_SIM_CLASS Enumeration
@@ -57,32 +62,32 @@ typedef enum _WWAN_SIM_CLASS {
 ## Constants
 
 <table>
-
-<tr>
-<td>WwanSimClassMax</td>
-<td>The total number of supported SIM classes.</td>
-</tr>
-
-<tr>
-<td>WwanSimClassSimLogical</td>
-<td>The device supports a logical or embedded SIM.</td>
-</tr>
-
-<tr>
-<td>WwanSimClassSimRemote</td>
-<td>The device supports a remote SIM that is not physically attached to MB device. For example, a
+            
+                <tr>
+                    <td>WwanSimClassMax</td>
+                    <td>The total number of supported SIM classes.</td>
+                </tr>
+            
+                <tr>
+                    <td>WwanSimClassSimLogical</td>
+                    <td>The device supports a logical or embedded SIM.</td>
+                </tr>
+            
+                <tr>
+                    <td>WwanSimClassSimRemote</td>
+                    <td>The device supports a remote SIM that is not physically attached to MB device. For example, a
      tethered cellular telephone modem.</td>
-</tr>
-
-<tr>
-<td>WwanSimClassSimRemovable</td>
-<td>The device supports a removable SIM.</td>
-</tr>
-
-<tr>
-<td>WwanSimClassUnknown</td>
-<td>The device supports an unknown class of SIM.</td>
-</tr>
+                </tr>
+            
+                <tr>
+                    <td>WwanSimClassSimRemovable</td>
+                    <td>The device supports a removable SIM.</td>
+                </tr>
+            
+                <tr>
+                    <td>WwanSimClassUnknown</td>
+                    <td>The device supports an unknown class of SIM.</td>
+                </tr>
 </table>
 
 
@@ -92,9 +97,9 @@ typedef enum _WWAN_SIM_CLASS {
 | **Windows version** | Available in Windows 7 and later versions of Windows. Available in Windows 7 and later versions of Windows. |
 | **Header** | wwan.h (include Wwan.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\wwan\ns-wwan-_wwan_device_caps.md">WWAN_DEVICE_CAPS</a>
+        <a href="..\wwan\ns-wwan-_wwan_device_caps.md">WWAN_DEVICE_CAPS</a>
 
  
 

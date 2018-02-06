@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia._tagKSTOPOLOGY_ENDPOINTID
-title : "_tagKSTOPOLOGY_ENDPOINTID"
-author : windows-driver-content
-description : The KSTOPOLOGY_ENDPOINTID structure specifies the name and the pin ID of a topology endpoint.
-old-location : audio\kstopology_endpointid.htm
-old-project : audio
-ms.assetid : A84BE3D6-7D2A-4123-979B-F6E1CA8C8B23
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : KSTOPOLOGY_ENDPOINTID structure [Audio Devices], PKSTOPOLOGY_ENDPOINTID, ksmedia/KSTOPOLOGY_ENDPOINTID, PKSTOPOLOGY_ENDPOINTID structure pointer [Audio Devices], KSTOPOLOGY_ENDPOINTID, audio.kstopology_endpointid, _tagKSTOPOLOGY_ENDPOINTID, ksmedia/PKSTOPOLOGY_ENDPOINTID, *PKSTOPOLOGY_ENDPOINTID
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10,Windows 10 Mobile
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KSTOPOLOGY_ENDPOINTID, *PKSTOPOLOGY_ENDPOINTID
+UID: NS:ksmedia._tagKSTOPOLOGY_ENDPOINTID
+title: "_tagKSTOPOLOGY_ENDPOINTID"
+author: windows-driver-content
+description: The KSTOPOLOGY_ENDPOINTID structure specifies the name and the pin ID of a topology endpoint.
+old-location: audio\kstopology_endpointid.htm
+old-project: audio
+ms.assetid: A84BE3D6-7D2A-4123-979B-F6E1CA8C8B23
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: KSTOPOLOGY_ENDPOINTID structure [Audio Devices], PKSTOPOLOGY_ENDPOINTID, ksmedia/KSTOPOLOGY_ENDPOINTID, PKSTOPOLOGY_ENDPOINTID structure pointer [Audio Devices], KSTOPOLOGY_ENDPOINTID, audio.kstopology_endpointid, _tagKSTOPOLOGY_ENDPOINTID, ksmedia/PKSTOPOLOGY_ENDPOINTID, *PKSTOPOLOGY_ENDPOINTID
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10,Windows 10 Mobile
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	KSTOPOLOGY_ENDPOINTID
+product: Windows
+targetos: Windows
+req.typenames: KSTOPOLOGY_ENDPOINTID, *PKSTOPOLOGY_ENDPOINTID
 ---
 
 # _tagKSTOPOLOGY_ENDPOINTID structure

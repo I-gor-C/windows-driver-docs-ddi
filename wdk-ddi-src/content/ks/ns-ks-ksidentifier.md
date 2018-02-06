@@ -1,41 +1,46 @@
 ---
-UID : NS:ks.KSIDENTIFIER
-title : KSIDENTIFIER
-author : windows-driver-content
-description : The KSIDENTIFIER structure specifies a GUID that uniquely identifies a related set of GUIDs, and an index value to refer to a specific member within that set.
-old-location : stream\ksidentifier.htm
-old-project : stream
-ms.assetid : b89977da-d3ac-4f1f-867e-b3b7912b955d
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KSIDENTIFIER structure [Streaming Media Devices], KSDEGRADE, ks/KSIDENTIFIER, PKSIDENTIFIER, *PKSDEGRADE, KSEVENT, ks/PKSIDENTIFIER, PKSIDENTIFIER structure pointer [Streaming Media Devices], stream.ksidentifier, KSPIN_INTERFACE, *PKSMETHOD, *PKSPIN_MEDIUM, *PKSIDENTIFIER, KSPIN_MEDIUM, KSIDENTIFIER, *PKSEVENT, *PKSPROPERTY, KSMETHOD, KSPROPERTY, ks-struct_652a0465-0c2b-4e46-ac43-7a6c5bbdaf80.xml, *PKSPIN_INTERFACE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKSIDENTIFIER, KSIDENTIFIER"
+UID: NS:ks.KSIDENTIFIER
+title: KSIDENTIFIER
+author: windows-driver-content
+description: The KSIDENTIFIER structure specifies a GUID that uniquely identifies a related set of GUIDs, and an index value to refer to a specific member within that set.
+old-location: stream\ksidentifier.htm
+old-project: stream
+ms.assetid: b89977da-d3ac-4f1f-867e-b3b7912b955d
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KSIDENTIFIER structure [Streaming Media Devices], KSDEGRADE, ks/KSIDENTIFIER, PKSIDENTIFIER, *PKSDEGRADE, KSEVENT, ks/PKSIDENTIFIER, PKSIDENTIFIER structure pointer [Streaming Media Devices], stream.ksidentifier, KSPIN_INTERFACE, *PKSMETHOD, *PKSPIN_MEDIUM, *PKSIDENTIFIER, KSPIN_MEDIUM, KSIDENTIFIER, *PKSEVENT, *PKSPROPERTY, KSMETHOD, KSPROPERTY, ks-struct_652a0465-0c2b-4e46-ac43-7a6c5bbdaf80.xml, *PKSPIN_INTERFACE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	KSIDENTIFIER
+product: Windows
+targetos: Windows
+req.typenames: "*PKSIDENTIFIER, KSIDENTIFIER"
 ---
 
 # KSIDENTIFIER structure

@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugControl3.OutputDisassemblyLines
-title : IDebugControl3::OutputDisassemblyLines method
-author : windows-driver-content
-description : The OutputDisassemblyLines method disassembles several processor instructions and sends the resulting assembly instructions to the output callbacks.
-old-location : debugger\outputdisassemblylines.htm
-old-project : debugger
-ms.assetid : fb69e052-1033-457d-bafb-bf4be4ea5966
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : OutputDisassemblyLines method [Windows Debugging], IDebugControl3 interface, IDebugControl2 interface [Windows Debugging], OutputDisassemblyLines method, IDebugControl::OutputDisassemblyLines, OutputDisassemblyLines method [Windows Debugging], dbgeng/IDebugControl::OutputDisassemblyLines, OutputDisassemblyLines method [Windows Debugging], IDebugControl2 interface, IDebugControl_51f0991b-9b9d-4a21-89be-099537a78ea5.xml, IDebugControl2::OutputDisassemblyLines, IDebugControl3, debugger.outputdisassemblylines, IDebugControl3::OutputDisassemblyLines, dbgeng/IDebugControl3::OutputDisassemblyLines, OutputDisassemblyLines, IDebugControl3 interface [Windows Debugging], OutputDisassemblyLines method, OutputDisassemblyLines method [Windows Debugging], IDebugControl interface, IDebugControl interface [Windows Debugging], OutputDisassemblyLines method, dbgeng/IDebugControl2::OutputDisassemblyLines
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl3.OutputDisassemblyLines
+title: IDebugControl3::OutputDisassemblyLines method
+author: windows-driver-content
+description: The OutputDisassemblyLines method disassembles several processor instructions and sends the resulting assembly instructions to the output callbacks.
+old-location: debugger\outputdisassemblylines.htm
+old-project: debugger
+ms.assetid: fb69e052-1033-457d-bafb-bf4be4ea5966
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: OutputDisassemblyLines method [Windows Debugging], IDebugControl3 interface, IDebugControl2 interface [Windows Debugging], OutputDisassemblyLines method, IDebugControl::OutputDisassemblyLines, OutputDisassemblyLines method [Windows Debugging], dbgeng/IDebugControl::OutputDisassemblyLines, OutputDisassemblyLines method [Windows Debugging], IDebugControl2 interface, IDebugControl_51f0991b-9b9d-4a21-89be-099537a78ea5.xml, IDebugControl2::OutputDisassemblyLines, IDebugControl3, debugger.outputdisassemblylines, IDebugControl3::OutputDisassemblyLines, dbgeng/IDebugControl3::OutputDisassemblyLines, OutputDisassemblyLines, IDebugControl3 interface [Windows Debugging], OutputDisassemblyLines method, OutputDisassemblyLines method [Windows Debugging], IDebugControl interface, IDebugControl interface [Windows Debugging], OutputDisassemblyLines method, dbgeng/IDebugControl2::OutputDisassemblyLines
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl.OutputDisassemblyLines
+-	IDebugControl2.OutputDisassemblyLines
+-	IDebugControl3.OutputDisassemblyLines
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

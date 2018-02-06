@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFInterrupt.Enable
-title : IWDFInterrupt::Enable method
-author : windows-driver-content
-description : The Enable method enables a specified device interrupt by calling the driver's OnInterruptEnable callback function.
-old-location : wdf\iwdfinterrupt_enable.htm
-old-project : wdf
-ms.assetid : 605C58C2-9A4F-4185-BB5C-95C9F5180C05
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : Enable method, wudfddi/IWDFInterrupt::Enable, wdf.iwdfinterrupt_enable, IWDFInterrupt::Enable, Enable method, IWDFInterrupt interface, IWDFInterrupt interface, Enable method, umdf.iwdfinterrupt_enable, IWDFInterrupt, Enable
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.11
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFInterrupt.Enable
+title: IWDFInterrupt::Enable method
+author: windows-driver-content
+description: The Enable method enables a specified device interrupt by calling the driver's OnInterruptEnable callback function.
+old-location: wdf\iwdfinterrupt_enable.htm
+old-project: wdf
+ms.assetid: 605C58C2-9A4F-4185-BB5C-95C9F5180C05
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: Enable method, wudfddi/IWDFInterrupt::Enable, wdf.iwdfinterrupt_enable, IWDFInterrupt::Enable, Enable method, IWDFInterrupt interface, IWDFInterrupt interface, Enable method, umdf.iwdfinterrupt_enable, IWDFInterrupt, Enable
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.11
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFInterrupt.Enable
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NF:video.VideoPortWriteRegisterBufferUshort
-title : VideoPortWriteRegisterBufferUshort function
-author : windows-driver-content
-description : The VideoPortWriteRegisterBufferUshort function writes a number of USHORT values to a mapped register.
-old-location : display\videoportwriteregisterbufferushort.htm
-old-project : display
-ms.assetid : 52bc00d5-313c-444d-91d9-8f95640e7d81
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : VideoPortWriteRegisterBufferUshort, video/VideoPortWriteRegisterBufferUshort, display.videoportwriteregisterbufferushort, VideoPort_Functions_f385c5d4-bc63-4aae-b021-b503f6a5336f.xml, VideoPortWriteRegisterBufferUshort function [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows 2000 and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Videoprt.lib
-req.dll : Videoprt.sys
-req.irql : Any level (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_PORT_SERVICES
-req.product : Windows 10 or later.
+UID: NF:video.VideoPortWriteRegisterBufferUshort
+title: VideoPortWriteRegisterBufferUshort function
+author: windows-driver-content
+description: The VideoPortWriteRegisterBufferUshort function writes a number of USHORT values to a mapped register.
+old-location: display\videoportwriteregisterbufferushort.htm
+old-project: display
+ms.assetid: 52bc00d5-313c-444d-91d9-8f95640e7d81
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: VideoPortWriteRegisterBufferUshort, video/VideoPortWriteRegisterBufferUshort, display.videoportwriteregisterbufferushort, VideoPort_Functions_f385c5d4-bc63-4aae-b021-b503f6a5336f.xml, VideoPortWriteRegisterBufferUshort function [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows 2000 and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Videoprt.lib
+req.dll: Videoprt.sys
+req.irql: Any level (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Videoprt.sys
+apiname:
+-	VideoPortWriteRegisterBufferUshort
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_PORT_SERVICES
+req.product: Windows 10 or later.
 ---
 
 

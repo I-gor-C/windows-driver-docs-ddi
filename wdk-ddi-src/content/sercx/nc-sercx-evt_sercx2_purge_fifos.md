@@ -1,42 +1,47 @@
 ---
-UID : NC:sercx.EVT_SERCX2_PURGE_FIFOS
-title : EVT_SERCX2_PURGE_FIFOS
-author : windows-driver-content
-description : The EvtSerCx2PurgeFifos event callback function is called by version 2 of the serial framework extension (SerCx2) to purge the FIFO buffers in the serial controller hardware.
-old-location : serports\evtsercx2purgefifos.htm
-old-project : serports
-ms.assetid : 52875B36-F52B-4D29-9C9D-76DB12BFEEA6
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : serports.evtsercx2purgefifos, EvtSerCx2PurgeFifos callback function [Serial Ports], EvtSerCx2PurgeFifos, EVT_SERCX2_PURGE_FIFOS, EVT_SERCX2_PURGE_FIFOS, 2/EvtSerCx2PurgeFifos
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : sercx.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Available starting with Windows 8.1.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Called at PASSIVE_LEVEL.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SENSOR_VALUE_PAIR, *PSENSOR_VALUE_PAIR
-req.product : Windows 10 or later.
+UID: NC:sercx.EVT_SERCX2_PURGE_FIFOS
+title: EVT_SERCX2_PURGE_FIFOS
+author: windows-driver-content
+description: The EvtSerCx2PurgeFifos event callback function is called by version 2 of the serial framework extension (SerCx2) to purge the FIFO buffers in the serial controller hardware.
+old-location: serports\evtsercx2purgefifos.htm
+old-project: serports
+ms.assetid: 52875B36-F52B-4D29-9C9D-76DB12BFEEA6
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: serports.evtsercx2purgefifos, EvtSerCx2PurgeFifos callback function [Serial Ports], EvtSerCx2PurgeFifos, EVT_SERCX2_PURGE_FIFOS, EVT_SERCX2_PURGE_FIFOS, 2/EvtSerCx2PurgeFifos
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: sercx.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Available starting with Windows 8.1.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Called at PASSIVE_LEVEL.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	2.0\Sercx.h
+apiname:
+-	EvtSerCx2PurgeFifos
+product: Windows
+targetos: Windows
+req.typenames: SENSOR_VALUE_PAIR, *PSENSOR_VALUE_PAIR
+req.product: Windows 10 or later.
 ---
 
 

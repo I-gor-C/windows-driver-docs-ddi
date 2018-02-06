@@ -1,42 +1,47 @@
 ---
-UID : NF:storport.StorPortCompleteServiceIrp
-title : StorPortCompleteServiceIrp function
-author : windows-driver-content
-description : The StorPortCompleteServiceIrp routine is called by a Storport virtual miniport driver when it needs to complete a request that it received in its HwStorProcessServiceRequest callback routine.
-old-location : storage\storportcompleteserviceirp.htm
-old-project : storage
-ms.assetid : 359b1096-f987-4884-ab67-2290bf5196b5
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.storportcompleteserviceirp, StorPortCompleteServiceIrp routine [Storage Devices], StorPortCompleteServiceIrp, storprt_439990ea-8133-4114-b417-1c88e53cce14.xml, storport/StorPortCompleteServiceIrp
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STOR_SPINLOCK
-req.product : Windows 10 or later.
+UID: NF:storport.StorPortCompleteServiceIrp
+title: StorPortCompleteServiceIrp function
+author: windows-driver-content
+description: The StorPortCompleteServiceIrp routine is called by a Storport virtual miniport driver when it needs to complete a request that it received in its HwStorProcessServiceRequest callback routine.
+old-location: storage\storportcompleteserviceirp.htm
+old-project: storage
+ms.assetid: 359b1096-f987-4884-ab67-2290bf5196b5
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.storportcompleteserviceirp, StorPortCompleteServiceIrp routine [Storage Devices], StorPortCompleteServiceIrp, storprt_439990ea-8133-4114-b417-1c88e53cce14.xml, storport/StorPortCompleteServiceIrp
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	storport.h
+apiname:
+-	StorPortCompleteServiceIrp
+product: Windows
+targetos: Windows
+req.typenames: STOR_SPINLOCK
+req.product: Windows 10 or later.
 ---
 
 

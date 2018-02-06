@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddstor._DEVICE_LB_PROVISIONING_DESCRIPTOR
-title : "_DEVICE_LB_PROVISIONING_DESCRIPTOR"
-author : windows-driver-content
-description : The DEVICE_LB_PROVISIONING_DESCRIPTOR structure is one of the query result structures returned from an IOCTL_STORAGE_QUERY_PROPERTY request. This structure contains the thin provisioning capabilities for a storage device.
-old-location : storage\device_lb_provisioning_descriptor.htm
-old-project : storage
-ms.assetid : E7287A50-2BB8-4D11-AB9B-6E65EEDD698D
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : ntddstor/PDEVICE_LB_PROVISIONING_DESCRIPTOR, DEVICE_LB_PROVISIONING_DESCRIPTOR structure [Storage Devices], *PDEVICE_LB_PROVISIONING_DESCRIPTOR, PDEVICE_LB_PROVISIONING_DESCRIPTOR, PDEVICE_LB_PROVISIONING_DESCRIPTOR structure pointer [Storage Devices], ntddstor/DEVICE_LB_PROVISIONING_DESCRIPTOR, _DEVICE_LB_PROVISIONING_DESCRIPTOR, storage.device_lb_provisioning_descriptor, DEVICE_LB_PROVISIONING_DESCRIPTOR
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddstor.h
-req.include-header : Ntddstor.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DEVICE_LB_PROVISIONING_DESCRIPTOR, *PDEVICE_LB_PROVISIONING_DESCRIPTOR
+UID: NS:ntddstor._DEVICE_LB_PROVISIONING_DESCRIPTOR
+title: "_DEVICE_LB_PROVISIONING_DESCRIPTOR"
+author: windows-driver-content
+description: The DEVICE_LB_PROVISIONING_DESCRIPTOR structure is one of the query result structures returned from an IOCTL_STORAGE_QUERY_PROPERTY request. This structure contains the thin provisioning capabilities for a storage device.
+old-location: storage\device_lb_provisioning_descriptor.htm
+old-project: storage
+ms.assetid: E7287A50-2BB8-4D11-AB9B-6E65EEDD698D
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: ntddstor/PDEVICE_LB_PROVISIONING_DESCRIPTOR, DEVICE_LB_PROVISIONING_DESCRIPTOR structure [Storage Devices], *PDEVICE_LB_PROVISIONING_DESCRIPTOR, PDEVICE_LB_PROVISIONING_DESCRIPTOR, PDEVICE_LB_PROVISIONING_DESCRIPTOR structure pointer [Storage Devices], ntddstor/DEVICE_LB_PROVISIONING_DESCRIPTOR, _DEVICE_LB_PROVISIONING_DESCRIPTOR, storage.device_lb_provisioning_descriptor, DEVICE_LB_PROVISIONING_DESCRIPTOR
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddstor.h
+req.include-header: Ntddstor.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddstor.h
+apiname:
+-	DEVICE_LB_PROVISIONING_DESCRIPTOR
+product: Windows
+targetos: Windows
+req.typenames: DEVICE_LB_PROVISIONING_DESCRIPTOR, *PDEVICE_LB_PROVISIONING_DESCRIPTOR
 ---
 
 # _DEVICE_LB_PROVISIONING_DESCRIPTOR structure

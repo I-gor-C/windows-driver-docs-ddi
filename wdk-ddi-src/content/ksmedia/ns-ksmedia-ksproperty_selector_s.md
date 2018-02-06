@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.KSPROPERTY_SELECTOR_S
-title : KSPROPERTY_SELECTOR_S
-author : windows-driver-content
-description : The KSPROPERTY_SELECTOR_S structure describes filter-based property settings in the PROPSETID_VIDCAP_SELECTOR property set.
-old-location : stream\ksproperty_selector_s.htm
-old-project : stream
-ms.assetid : cc9928b7-fab2-44c1-8613-3a94b5e8dcab
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KSPROPERTY_SELECTOR_S structure [Streaming Media Devices], vidcapstruct_7e180fae-5237-4b71-8719-7d3c5ee66592.xml, PKSPROPERTY_SELECTOR_S structure pointer [Streaming Media Devices], ksmedia/KSPROPERTY_SELECTOR_S, *PKSPROPERTY_SELECTOR_S, KSPROPERTY_SELECTOR_S, PKSPROPERTY_SELECTOR_S, ksmedia/PKSPROPERTY_SELECTOR_S, stream.ksproperty_selector_s
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKSPROPERTY_SELECTOR_S, KSPROPERTY_SELECTOR_S"
+UID: NS:ksmedia.KSPROPERTY_SELECTOR_S
+title: KSPROPERTY_SELECTOR_S
+author: windows-driver-content
+description: The KSPROPERTY_SELECTOR_S structure describes filter-based property settings in the PROPSETID_VIDCAP_SELECTOR property set.
+old-location: stream\ksproperty_selector_s.htm
+old-project: stream
+ms.assetid: cc9928b7-fab2-44c1-8613-3a94b5e8dcab
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KSPROPERTY_SELECTOR_S structure [Streaming Media Devices], vidcapstruct_7e180fae-5237-4b71-8719-7d3c5ee66592.xml, PKSPROPERTY_SELECTOR_S structure pointer [Streaming Media Devices], ksmedia/KSPROPERTY_SELECTOR_S, *PKSPROPERTY_SELECTOR_S, KSPROPERTY_SELECTOR_S, PKSPROPERTY_SELECTOR_S, ksmedia/PKSPROPERTY_SELECTOR_S, stream.ksproperty_selector_s
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	KSPROPERTY_SELECTOR_S
+product: Windows
+targetos: Windows
+req.typenames: "*PKSPROPERTY_SELECTOR_S, KSPROPERTY_SELECTOR_S"
 ---
 
 # KSPROPERTY_SELECTOR_S structure

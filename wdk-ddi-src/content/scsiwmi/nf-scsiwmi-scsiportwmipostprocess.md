@@ -1,42 +1,47 @@
 ---
-UID : NF:scsiwmi.ScsiPortWmiPostProcess
-title : ScsiPortWmiPostProcess function
-author : windows-driver-content
-description : The ScsiPortWmiPostProcess routine updates a request context for a WMI SRB.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future.
-old-location : storage\scsiportwmipostprocess.htm
-old-project : storage
-ms.assetid : da1770bc-2233-47ef-afab-cfcb34edb4b9
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : ScsiPortWmiPostProcess routine [Storage Devices], storage.scsiportwmipostprocess, scsiwmi/ScsiPortWmiPostProcess, ScsiPortWmiPostProcess, scsiprt_e10d02e1-18d2-4152-ac11-83bdcbb2ce49.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : scsiwmi.h
-req.include-header : Miniport.h, Scsi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SCSIWMI_ENABLE_DISABLE_CONTROL
-req.product : Windows 10 or later.
+UID: NF:scsiwmi.ScsiPortWmiPostProcess
+title: ScsiPortWmiPostProcess function
+author: windows-driver-content
+description: The ScsiPortWmiPostProcess routine updates a request context for a WMI SRB.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future.
+old-location: storage\scsiportwmipostprocess.htm
+old-project: storage
+ms.assetid: da1770bc-2233-47ef-afab-cfcb34edb4b9
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: ScsiPortWmiPostProcess routine [Storage Devices], storage.scsiportwmipostprocess, scsiwmi/ScsiPortWmiPostProcess, ScsiPortWmiPostProcess, scsiprt_e10d02e1-18d2-4152-ac11-83bdcbb2ce49.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: scsiwmi.h
+req.include-header: Miniport.h, Scsi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	scsiwmi.h
+apiname:
+-	ScsiPortWmiPostProcess
+product: Windows
+targetos: Windows
+req.typenames: SCSIWMI_ENABLE_DISABLE_CONTROL
+req.product: Windows 10 or later.
 ---
 
 

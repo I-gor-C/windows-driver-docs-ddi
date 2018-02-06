@@ -1,41 +1,46 @@
 ---
-UID : NS:hwnclx._CLIENT_DEVICE_INFORMATION
-title : "_CLIENT_DEVICE_INFORMATION"
-author : windows-driver-content
-description : The CLIENT_DEVICE_INFORMATION structure is used by the hardware notification callback HWN_CLIENT_QUERY_DEVICE_INFORMATION to return the total number of hardware notifications that the client device driver provides.
-old-location : gpiobtn\_client_device_information.htm
-old-project : gpiobtn
-ms.assetid : ae438f89-27b7-423f-9f82-b103ba70b7b5
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : CLIENT_DEVICE_INFORMATION structure, *PCLIENT_DEVICE_INFORMATION, CLIENT_DEVICE_INFORMATION, gpiobtn._client_device_information, hwnclx/CLIENT_DEVICE_INFORMATION, _CLIENT_DEVICE_INFORMATION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : hwnclx.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10, version 1709
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : CLIENT_DEVICE_INFORMATION, *PCLIENT_DEVICE_INFORMATION
+UID: NS:hwnclx._CLIENT_DEVICE_INFORMATION
+title: "_CLIENT_DEVICE_INFORMATION"
+author: windows-driver-content
+description: The CLIENT_DEVICE_INFORMATION structure is used by the hardware notification callback HWN_CLIENT_QUERY_DEVICE_INFORMATION to return the total number of hardware notifications that the client device driver provides.
+old-location: gpiobtn\_client_device_information.htm
+old-project: gpiobtn
+ms.assetid: ae438f89-27b7-423f-9f82-b103ba70b7b5
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: CLIENT_DEVICE_INFORMATION structure, *PCLIENT_DEVICE_INFORMATION, CLIENT_DEVICE_INFORMATION, gpiobtn._client_device_information, hwnclx/CLIENT_DEVICE_INFORMATION, _CLIENT_DEVICE_INFORMATION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: hwnclx.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10, version 1709
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Hwnclx.h
+apiname:
+-	CLIENT_DEVICE_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: CLIENT_DEVICE_INFORMATION, *PCLIENT_DEVICE_INFORMATION
 ---
 
 # _CLIENT_DEVICE_INFORMATION structure

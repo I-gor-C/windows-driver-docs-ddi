@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddk._WHEA_PROCESSOR_GENERIC_ERROR_SECTION
-title : "_WHEA_PROCESSOR_GENERIC_ERROR_SECTION"
-author : windows-driver-content
-description : Describes processor error data that is not specific to a particular processor architecture.
-old-location : whea\whea_processor_generic_error_section.htm
-old-project : whea
-ms.assetid : d1ac2ca0-ad08-4149-b489-53807f308fc0
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : GENPROC_PROCISA_X86, PWHEA_PROCESSOR_GENERIC_ERROR_SECTION structure pointer [WHEA Drivers and Applications], GENPROC_OP_GENERIC, whearef_589ac6c8-3889-4033-8776-0d8f402d1f69.xml, GENPROC_PROCISA_IPF, GENPROC_PROCERRTYPE_BUS, whea.whea_processor_generic_error_section, GENPROC_FLAGS_RESTARTABLE, GENPROC_PROCISA_X64, GENPROC_PROCERRTYPE_MAE, GENPROC_FLAGS_PRECISEIP, GENPROC_PROCERRTYPE_TLB, GENPROC_OP_DATAREAD, WHEA_PROCESSOR_GENERIC_ERROR_SECTION structure [WHEA Drivers and Applications], GENPROC_FLAGS_OVERFLOW, WHEA_PROCESSOR_GENERIC_ERROR_SECTION, WHEA_GENERIC_PROCESSOR_ERROR, GENPROC_FLAGS_CORRECTED, ntddk/PWHEA_PROCESSOR_GENERIC_ERROR_SECTION, GENPROC_OP_DATAWRITE, _WHEA_PROCESSOR_GENERIC_ERROR_SECTION, GENPROC_PROCTYPE_XPF, GENPROC_PROCERRTYPE_UNKNOWN, ntddk/WHEA_PROCESSOR_GENERIC_ERROR_SECTION, GENPROC_PROCERRTYPE_CACHE, *PWHEA_PROCESSOR_GENERIC_ERROR_SECTION, GENPROC_OP_INSTRUCTIONEXE, PWHEA_PROCESSOR_GENERIC_ERROR_SECTION, GENPROC_PROCTYPE_IPF, *PWHEA_GENERIC_PROCESSOR_ERROR
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddk.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_PROCESSOR_GENERIC_ERROR_SECTION, *PWHEA_PROCESSOR_GENERIC_ERROR_SECTION
+UID: NS:ntddk._WHEA_PROCESSOR_GENERIC_ERROR_SECTION
+title: "_WHEA_PROCESSOR_GENERIC_ERROR_SECTION"
+author: windows-driver-content
+description: Describes processor error data that is not specific to a particular processor architecture.
+old-location: whea\whea_processor_generic_error_section.htm
+old-project: whea
+ms.assetid: d1ac2ca0-ad08-4149-b489-53807f308fc0
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: GENPROC_PROCISA_X86, PWHEA_PROCESSOR_GENERIC_ERROR_SECTION structure pointer [WHEA Drivers and Applications], GENPROC_OP_GENERIC, whearef_589ac6c8-3889-4033-8776-0d8f402d1f69.xml, GENPROC_PROCISA_IPF, GENPROC_PROCERRTYPE_BUS, whea.whea_processor_generic_error_section, GENPROC_FLAGS_RESTARTABLE, GENPROC_PROCISA_X64, GENPROC_PROCERRTYPE_MAE, GENPROC_FLAGS_PRECISEIP, GENPROC_PROCERRTYPE_TLB, GENPROC_OP_DATAREAD, WHEA_PROCESSOR_GENERIC_ERROR_SECTION structure [WHEA Drivers and Applications], GENPROC_FLAGS_OVERFLOW, WHEA_PROCESSOR_GENERIC_ERROR_SECTION, WHEA_GENERIC_PROCESSOR_ERROR, GENPROC_FLAGS_CORRECTED, ntddk/PWHEA_PROCESSOR_GENERIC_ERROR_SECTION, GENPROC_OP_DATAWRITE, _WHEA_PROCESSOR_GENERIC_ERROR_SECTION, GENPROC_PROCTYPE_XPF, GENPROC_PROCERRTYPE_UNKNOWN, ntddk/WHEA_PROCESSOR_GENERIC_ERROR_SECTION, GENPROC_PROCERRTYPE_CACHE, *PWHEA_PROCESSOR_GENERIC_ERROR_SECTION, GENPROC_OP_INSTRUCTIONEXE, PWHEA_PROCESSOR_GENERIC_ERROR_SECTION, GENPROC_PROCTYPE_IPF, *PWHEA_GENERIC_PROCESSOR_ERROR
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddk.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddk.h
+apiname:
+-	WHEA_PROCESSOR_GENERIC_ERROR_SECTION
+product: Windows
+targetos: Windows
+req.typenames: WHEA_PROCESSOR_GENERIC_ERROR_SECTION, *PWHEA_PROCESSOR_GENERIC_ERROR_SECTION
 ---
 
 # _WHEA_PROCESSOR_GENERIC_ERROR_SECTION structure

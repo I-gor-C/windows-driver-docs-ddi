@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.IoInvalidateDeviceState
-title : IoInvalidateDeviceState function
-author : windows-driver-content
-description : The IoInvalidateDeviceState routine notifies the PnP manager that some aspect of the PnP state of a device has changed.
-old-location : kernel\ioinvalidatedevicestate.htm
-old-project : kernel
-ms.assetid : ca27e8d3-80ee-467c-9c88-19770cd86d94
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/IoInvalidateDeviceState, IoInvalidateDeviceState routine [Kernel-Mode Driver Architecture], kernel.ioinvalidatedevicestate, IoInvalidateDeviceState, k104_05ef79e6-a7d1-4de4-aefa-5aa7d9121f04.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.IoInvalidateDeviceState
+title: IoInvalidateDeviceState function
+author: windows-driver-content
+description: The IoInvalidateDeviceState routine notifies the PnP manager that some aspect of the PnP state of a device has changed.
+old-location: kernel\ioinvalidatedevicestate.htm
+old-project: kernel
+ms.assetid: ca27e8d3-80ee-467c-9c88-19770cd86d94
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/IoInvalidateDeviceState, IoInvalidateDeviceState routine [Kernel-Mode Driver Architecture], kernel.ioinvalidatedevicestate, IoInvalidateDeviceState, k104_05ef79e6-a7d1-4de4-aefa-5aa7d9121f04.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoInvalidateDeviceState
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

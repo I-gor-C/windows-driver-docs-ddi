@@ -1,41 +1,46 @@
 ---
-UID : NS:ndiswwan._NDIS_WWAN_SMS_READ
-title : "_NDIS_WWAN_SMS_READ"
-author : windows-driver-content
-description : The NDIS_WWAN_SMS_READ structure represents an SMS message to read.
-old-location : netvista\ndis_wwan_sms_read.htm
-old-project : netvista
-ms.assetid : 2c15c16f-773b-415d-80a1-fd0b3bcf6fbf
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NDIS_WWAN_SMS_READ structure [Network Drivers Starting with Windows Vista], *PNDIS_WWAN_SMS_READ, _NDIS_WWAN_SMS_READ, PNDIS_WWAN_SMS_READ structure pointer [Network Drivers Starting with Windows Vista], PNDIS_WWAN_SMS_READ, NDIS_WWAN_SMS_READ, WwanRef_7264d34b-78a0-4537-a386-bd77d210d7ae.xml, ndiswwan/PNDIS_WWAN_SMS_READ, netvista.ndis_wwan_sms_read, ndiswwan/NDIS_WWAN_SMS_READ
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndiswwan.h
-req.include-header : Ndiswwan.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PNDIS_WWAN_SMS_READ, NDIS_WWAN_SMS_READ"
+UID: NS:ndiswwan._NDIS_WWAN_SMS_READ
+title: "_NDIS_WWAN_SMS_READ"
+author: windows-driver-content
+description: The NDIS_WWAN_SMS_READ structure represents an SMS message to read.
+old-location: netvista\ndis_wwan_sms_read.htm
+old-project: netvista
+ms.assetid: 2c15c16f-773b-415d-80a1-fd0b3bcf6fbf
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NDIS_WWAN_SMS_READ structure [Network Drivers Starting with Windows Vista], *PNDIS_WWAN_SMS_READ, _NDIS_WWAN_SMS_READ, PNDIS_WWAN_SMS_READ structure pointer [Network Drivers Starting with Windows Vista], PNDIS_WWAN_SMS_READ, NDIS_WWAN_SMS_READ, WwanRef_7264d34b-78a0-4537-a386-bd77d210d7ae.xml, ndiswwan/PNDIS_WWAN_SMS_READ, netvista.ndis_wwan_sms_read, ndiswwan/NDIS_WWAN_SMS_READ
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndiswwan.h
+req.include-header: Ndiswwan.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndiswwan.h
+apiname:
+-	NDIS_WWAN_SMS_READ
+product: Windows
+targetos: Windows
+req.typenames: "*PNDIS_WWAN_SMS_READ, NDIS_WWAN_SMS_READ"
 ---
 
 # _NDIS_WWAN_SMS_READ structure

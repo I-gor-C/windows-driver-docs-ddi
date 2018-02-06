@@ -1,41 +1,46 @@
 ---
-UID : NS:hbapiwmi._SM_GetLUNStatistics_OUT
-title : "_SM_GetLUNStatistics_OUT"
-author : windows-driver-content
-description : The SM_GetLUNStatistics_OUT structure is used to receive output parameters from the SM_GetLUNStatistics_OUT method.
-old-location : storage\sm_getlunstatistics_out.htm
-old-project : storage
-ms.assetid : 5b7e4eb2-d6e9-49c9-b84f-72dd4198c0ce
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : hbapiwmi/PSM_GetLUNStatistics_OUT, PSM_GetLUNStatistics_OUT structure pointer [Storage Devices], *PSM_GetLUNStatistics_OUT, storage.sm_getlunstatistics_out, structs-Fibre_3f322627-9c44-4675-9166-32860aa954a3.xml, hbapiwmi/SM_GetLUNStatistics_OUT, SM_GetLUNStatistics_OUT structure [Storage Devices], SM_GetLUNStatistics_OUT, PSM_GetLUNStatistics_OUT, _SM_GetLUNStatistics_OUT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : hbapiwmi.h
-req.include-header : Hbapiwmi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SM_GetLUNStatistics_OUT, *PSM_GetLUNStatistics_OUT
+UID: NS:hbapiwmi._SM_GetLUNStatistics_OUT
+title: "_SM_GetLUNStatistics_OUT"
+author: windows-driver-content
+description: The SM_GetLUNStatistics_OUT structure is used to receive output parameters from the SM_GetLUNStatistics_OUT method.
+old-location: storage\sm_getlunstatistics_out.htm
+old-project: storage
+ms.assetid: 5b7e4eb2-d6e9-49c9-b84f-72dd4198c0ce
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: hbapiwmi/PSM_GetLUNStatistics_OUT, PSM_GetLUNStatistics_OUT structure pointer [Storage Devices], *PSM_GetLUNStatistics_OUT, storage.sm_getlunstatistics_out, structs-Fibre_3f322627-9c44-4675-9166-32860aa954a3.xml, hbapiwmi/SM_GetLUNStatistics_OUT, SM_GetLUNStatistics_OUT structure [Storage Devices], SM_GetLUNStatistics_OUT, PSM_GetLUNStatistics_OUT, _SM_GetLUNStatistics_OUT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: hbapiwmi.h
+req.include-header: Hbapiwmi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hbapiwmi.h
+apiname:
+-	SM_GetLUNStatistics_OUT
+product: Windows
+targetos: Windows
+req.typenames: SM_GetLUNStatistics_OUT, *PSM_GetLUNStatistics_OUT
 ---
 
 # _SM_GetLUNStatistics_OUT structure

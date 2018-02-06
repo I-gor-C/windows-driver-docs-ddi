@@ -1,41 +1,47 @@
 ---
-UID : NF:portcls.PcInitializeAdapterDriver
-title : PcInitializeAdapterDriver function
-author : windows-driver-content
-description : The PcInitializeAdapterDriver function binds an adapter driver to the PortCls system driver.
-old-location : audio\pcinitializeadapterdriver.htm
-old-project : audio
-ms.assetid : c9d019da-a05b-4c60-99e9-06b8537fa78e
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : portcls/PcInitializeAdapterDriver, audpc-routines_57c7e54d-ab27-4752-b13b-9d7de107322c.xml, audio.pcinitializeadapterdriver, PcInitializeAdapterDriver, PcInitializeAdapterDriver function [Audio Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : portcls.h
-req.include-header : Portcls.h
-req.target-type : Universal
-req.target-min-winverclnt : The PortCls system driver implements the PcInitializeAdapterDriver function in Microsoft Windows 98/Me and in Windows 2000 and later operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Portcls.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.PcInitializeAdapterDriver
+title: PcInitializeAdapterDriver function
+author: windows-driver-content
+description: The PcInitializeAdapterDriver function binds an adapter driver to the PortCls system driver.
+old-location: audio\pcinitializeadapterdriver.htm
+old-project: audio
+ms.assetid: c9d019da-a05b-4c60-99e9-06b8537fa78e
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: portcls/PcInitializeAdapterDriver, audpc-routines_57c7e54d-ab27-4752-b13b-9d7de107322c.xml, audio.pcinitializeadapterdriver, PcInitializeAdapterDriver, PcInitializeAdapterDriver function [Audio Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: portcls.h
+req.include-header: Portcls.h
+req.target-type: Universal
+req.target-min-winverclnt: The PortCls system driver implements the PcInitializeAdapterDriver function in Microsoft Windows 98/Me and in Windows 2000 and later operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Portcls.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Portcls.lib
+-	Portcls.dll
+apiname:
+-	PcInitializeAdapterDriver
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

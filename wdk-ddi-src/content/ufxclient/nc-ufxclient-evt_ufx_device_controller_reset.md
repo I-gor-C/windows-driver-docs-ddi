@@ -1,42 +1,47 @@
 ---
-UID : NC:ufxclient.EVT_UFX_DEVICE_CONTROLLER_RESET
-title : EVT_UFX_DEVICE_CONTROLLER_RESET
-author : windows-driver-content
-description : The client driver's implementation to reset the function controller to its initial state.
-old-location : buses\evt_ufx_device_controller_reset.htm
-old-project : usbref
-ms.assetid : 37CE6358-68F8-49E2-8B3E-126D5D135ADF
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : buses.evt_ufx_device_controller_reset, EvtUfxDeviceControllerReset callback function [Buses], EvtUfxDeviceControllerReset, EVT_UFX_DEVICE_CONTROLLER_RESET, EVT_UFX_DEVICE_CONTROLLER_RESET, ufxclient/EvtUfxDeviceControllerReset, PFN_UFX_DEVICE_CONTROLLER_RESET callback function pointer [Buses], PFN_UFX_DEVICE_CONTROLLER_RESET
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ufxclient.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUFX_HARDWARE_FAILURE_CONTEXT, UFX_HARDWARE_FAILURE_CONTEXT"
-req.product : Windows 10 or later.
+UID: NC:ufxclient.EVT_UFX_DEVICE_CONTROLLER_RESET
+title: EVT_UFX_DEVICE_CONTROLLER_RESET
+author: windows-driver-content
+description: The client driver's implementation to reset the function controller to its initial state.
+old-location: buses\evt_ufx_device_controller_reset.htm
+old-project: usbref
+ms.assetid: 37CE6358-68F8-49E2-8B3E-126D5D135ADF
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: buses.evt_ufx_device_controller_reset, EvtUfxDeviceControllerReset callback function [Buses], EvtUfxDeviceControllerReset, EVT_UFX_DEVICE_CONTROLLER_RESET, EVT_UFX_DEVICE_CONTROLLER_RESET, ufxclient/EvtUfxDeviceControllerReset, PFN_UFX_DEVICE_CONTROLLER_RESET callback function pointer [Buses], PFN_UFX_DEVICE_CONTROLLER_RESET
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ufxclient.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ufxclient.h
+apiname:
+-	PFN_UFX_DEVICE_CONTROLLER_RESET
+product: Windows
+targetos: Windows
+req.typenames: "*PUFX_HARDWARE_FAILURE_CONTEXT, UFX_HARDWARE_FAILURE_CONTEXT"
+req.product: Windows 10 or later.
 ---
 
 

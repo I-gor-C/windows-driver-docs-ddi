@@ -1,41 +1,46 @@
 ---
-UID : NI:mountmgr.IOCTL_MOUNTMGR_NEXT_DRIVE_LETTER
-title : IOCTL_MOUNTMGR_NEXT_DRIVE_LETTER
-author : windows-driver-content
-description : This IOCTL checks to see if the given volume has a drive letter.
-old-location : storage\ioctl_mountmgr_next_drive_letter.htm
-old-project : storage
-ms.assetid : 7e3c5718-180c-435d-89ea-30a5cac325b2
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_mountmgr_next_drive_letter, IOCTL_MOUNTMGR_NEXT_DRIVE_LETTER control code [Storage Devices], IOCTL_MOUNTMGR_NEXT_DRIVE_LETTER, mountmgr/IOCTL_MOUNTMGR_NEXT_DRIVE_LETTER, k307_c77572b5-04ff-453d-91a4-9f58c65930e0.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : mountmgr.h
-req.include-header : Mountmgr.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PMOUNTDEV_UNIQUE_ID, MOUNTDEV_UNIQUE_ID"
+UID: NI:mountmgr.IOCTL_MOUNTMGR_NEXT_DRIVE_LETTER
+title: IOCTL_MOUNTMGR_NEXT_DRIVE_LETTER
+author: windows-driver-content
+description: This IOCTL checks to see if the given volume has a drive letter.
+old-location: storage\ioctl_mountmgr_next_drive_letter.htm
+old-project: storage
+ms.assetid: 7e3c5718-180c-435d-89ea-30a5cac325b2
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_mountmgr_next_drive_letter, IOCTL_MOUNTMGR_NEXT_DRIVE_LETTER control code [Storage Devices], IOCTL_MOUNTMGR_NEXT_DRIVE_LETTER, mountmgr/IOCTL_MOUNTMGR_NEXT_DRIVE_LETTER, k307_c77572b5-04ff-453d-91a4-9f58c65930e0.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: mountmgr.h
+req.include-header: Mountmgr.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Mountmgr.h
+apiname:
+-	IOCTL_MOUNTMGR_NEXT_DRIVE_LETTER
+product: Windows
+targetos: Windows
+req.typenames: "*PMOUNTDEV_UNIQUE_ID, MOUNTDEV_UNIQUE_ID"
 ---
 
 # IOCTL_MOUNTMGR_NEXT_DRIVE_LETTER IOCTL

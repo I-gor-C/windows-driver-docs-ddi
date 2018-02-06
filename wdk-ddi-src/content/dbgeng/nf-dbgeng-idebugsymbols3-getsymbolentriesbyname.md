@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugSymbols3.GetSymbolEntriesByName
-title : IDebugSymbols3::GetSymbolEntriesByName method
-author : windows-driver-content
-description : The GetSymbolEntriesByName method returns the symbols whose names match a given pattern.
-old-location : debugger\getsymbolentriesbyname.htm
-old-project : debugger
-ms.assetid : 90e6c1aa-30d5-40e7-bc35-92b0359485e0
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugSymbols_4c157d74-d5e8-43d5-87f9-5ad089adb4a0.xml, dbgeng/IDebugSymbols3::GetSymbolEntriesByName, IDebugSymbols3 interface [Windows Debugging], GetSymbolEntriesByName method, IDebugSymbols3, IDebugSymbols3::GetSymbolEntriesByName, GetSymbolEntriesByName method [Windows Debugging], GetSymbolEntriesByName, debugger.getsymbolentriesbyname, GetSymbolEntriesByName method [Windows Debugging], IDebugSymbols3 interface
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSymbols3.GetSymbolEntriesByName
+title: IDebugSymbols3::GetSymbolEntriesByName method
+author: windows-driver-content
+description: The GetSymbolEntriesByName method returns the symbols whose names match a given pattern.
+old-location: debugger\getsymbolentriesbyname.htm
+old-project: debugger
+ms.assetid: 90e6c1aa-30d5-40e7-bc35-92b0359485e0
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugSymbols_4c157d74-d5e8-43d5-87f9-5ad089adb4a0.xml, dbgeng/IDebugSymbols3::GetSymbolEntriesByName, IDebugSymbols3 interface [Windows Debugging], GetSymbolEntriesByName method, IDebugSymbols3, IDebugSymbols3::GetSymbolEntriesByName, GetSymbolEntriesByName method [Windows Debugging], GetSymbolEntriesByName, debugger.getsymbolentriesbyname, GetSymbolEntriesByName method [Windows Debugging], IDebugSymbols3 interface
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugSymbols3.GetSymbolEntriesByName
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

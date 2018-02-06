@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfusb.WDF_USB_PIPE_DIRECTION_OUT
-title : WDF_USB_PIPE_DIRECTION_OUT function
-author : windows-driver-content
-description : The WDF_USB_PIPE_DIRECTION_OUT function determines whether a specified USB endpoint is an output endpoint.
-old-location : wdf\wdf_usb_pipe_direction_out.htm
-old-project : wdf
-ms.assetid : 404e1893-8ee2-429c-b7e3-e6d8d01eaa1c
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : kmdf.wdf_usb_pipe_direction_out, WDF_USB_PIPE_DIRECTION_OUT, wdf.wdf_usb_pipe_direction_out, WDF_USB_PIPE_DIRECTION_OUT function, DFUsbRef_24f2180e-94da-4d77-9209-6bf97ea051a3.xml, wdfusb/WDF_USB_PIPE_DIRECTION_OUT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfusb.h
-req.include-header : Wdfusb.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : None
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfusb.WDF_USB_PIPE_DIRECTION_OUT
+title: WDF_USB_PIPE_DIRECTION_OUT function
+author: windows-driver-content
+description: The WDF_USB_PIPE_DIRECTION_OUT function determines whether a specified USB endpoint is an output endpoint.
+old-location: wdf\wdf_usb_pipe_direction_out.htm
+old-project: wdf
+ms.assetid: 404e1893-8ee2-429c-b7e3-e6d8d01eaa1c
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: kmdf.wdf_usb_pipe_direction_out, WDF_USB_PIPE_DIRECTION_OUT, wdf.wdf_usb_pipe_direction_out, WDF_USB_PIPE_DIRECTION_OUT function, DFUsbRef_24f2180e-94da-4d77-9209-6bf97ea051a3.xml, wdfusb/WDF_USB_PIPE_DIRECTION_OUT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfusb.h
+req.include-header: Wdfusb.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: None
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	None
+-	None.dll
+apiname:
+-	WDF_USB_PIPE_DIRECTION_OUT
+product: Windows
+targetos: Windows
+req.typenames: WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
+req.product: Windows 10 or later.
 ---
 
 

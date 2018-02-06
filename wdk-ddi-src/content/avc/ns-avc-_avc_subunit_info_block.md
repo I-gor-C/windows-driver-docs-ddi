@@ -1,41 +1,46 @@
 ---
-UID : NS:avc._AVC_SUBUNIT_INFO_BLOCK
-title : "_AVC_SUBUNIT_INFO_BLOCK"
-author : windows-driver-content
-description : The AVC_SUBUNIT_INFO_BLOCK structure describes subunit information.
-old-location : stream\avc_subunit_info_block.htm
-old-project : stream
-ms.assetid : 66231303-20ec-42d4-b61d-c8e85e4e6a88
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : avc/AVC_SUBUNIT_INFO_BLOCK, AVC_SUBUNIT_INFO_BLOCK, stream.avc_subunit_info_block, AVC_SUBUNIT_INFO_BLOCK structure [Streaming Media Devices], avc/PAVC_SUBUNIT_INFO_BLOCK, PAVC_SUBUNIT_INFO_BLOCK structure pointer [Streaming Media Devices], PAVC_SUBUNIT_INFO_BLOCK, avcref_d8151f14-0fc4-4be5-b815-d94dc77165db.xml, _AVC_SUBUNIT_INFO_BLOCK, *PAVC_SUBUNIT_INFO_BLOCK
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : avc.h
-req.include-header : Avc.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PAVC_SUBUNIT_INFO_BLOCK, AVC_SUBUNIT_INFO_BLOCK"
+UID: NS:avc._AVC_SUBUNIT_INFO_BLOCK
+title: "_AVC_SUBUNIT_INFO_BLOCK"
+author: windows-driver-content
+description: The AVC_SUBUNIT_INFO_BLOCK structure describes subunit information.
+old-location: stream\avc_subunit_info_block.htm
+old-project: stream
+ms.assetid: 66231303-20ec-42d4-b61d-c8e85e4e6a88
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: avc/AVC_SUBUNIT_INFO_BLOCK, AVC_SUBUNIT_INFO_BLOCK, stream.avc_subunit_info_block, AVC_SUBUNIT_INFO_BLOCK structure [Streaming Media Devices], avc/PAVC_SUBUNIT_INFO_BLOCK, PAVC_SUBUNIT_INFO_BLOCK structure pointer [Streaming Media Devices], PAVC_SUBUNIT_INFO_BLOCK, avcref_d8151f14-0fc4-4be5-b815-d94dc77165db.xml, _AVC_SUBUNIT_INFO_BLOCK, *PAVC_SUBUNIT_INFO_BLOCK
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: avc.h
+req.include-header: Avc.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	avc.h
+apiname:
+-	AVC_SUBUNIT_INFO_BLOCK
+product: Windows
+targetos: Windows
+req.typenames: "*PAVC_SUBUNIT_INFO_BLOCK, AVC_SUBUNIT_INFO_BLOCK"
 ---
 
 # _AVC_SUBUNIT_INFO_BLOCK structure

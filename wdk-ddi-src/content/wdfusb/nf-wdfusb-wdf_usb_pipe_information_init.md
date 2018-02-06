@@ -1,42 +1,47 @@
 ---
-UID : NF:wdfusb.WDF_USB_PIPE_INFORMATION_INIT
-title : WDF_USB_PIPE_INFORMATION_INIT function
-author : windows-driver-content
-description : The WDF_USB_PIPE_INFORMATION_INIT function initializes a WDF_USB_PIPE_INFORMATION structure.
-old-location : wdf\wdf_usb_pipe_information_init.htm
-old-project : wdf
-ms.assetid : 13139135-22b4-4ca1-b95e-c4c704501368
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdfusb/WDF_USB_PIPE_INFORMATION_INIT, wdf.wdf_usb_pipe_information_init, WDF_USB_PIPE_INFORMATION_INIT function, kmdf.wdf_usb_pipe_information_init, WDF_USB_PIPE_INFORMATION_INIT, DFUsbRef_ed525fc0-384b-4e9c-877a-075386f5d667.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfusb.h
-req.include-header : Wdfusb.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfusb.WDF_USB_PIPE_INFORMATION_INIT
+title: WDF_USB_PIPE_INFORMATION_INIT function
+author: windows-driver-content
+description: The WDF_USB_PIPE_INFORMATION_INIT function initializes a WDF_USB_PIPE_INFORMATION structure.
+old-location: wdf\wdf_usb_pipe_information_init.htm
+old-project: wdf
+ms.assetid: 13139135-22b4-4ca1-b95e-c4c704501368
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdfusb/WDF_USB_PIPE_INFORMATION_INIT, wdf.wdf_usb_pipe_information_init, WDF_USB_PIPE_INFORMATION_INIT function, kmdf.wdf_usb_pipe_information_init, WDF_USB_PIPE_INFORMATION_INIT, DFUsbRef_ed525fc0-384b-4e9c-877a-075386f5d667.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfusb.h
+req.include-header: Wdfusb.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfusb.h
+apiname:
+-	WDF_USB_PIPE_INFORMATION_INIT
+product: Windows
+targetos: Windows
+req.typenames: WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
+req.product: Windows 10 or later.
 ---
 
 

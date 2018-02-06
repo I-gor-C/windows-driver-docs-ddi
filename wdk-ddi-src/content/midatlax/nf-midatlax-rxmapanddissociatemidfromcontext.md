@@ -1,41 +1,46 @@
 ---
-UID : NF:midatlax.RxMapAndDissociateMidFromContext
-title : RxMapAndDissociateMidFromContext function
-author : windows-driver-content
-description : RxMapAndDissociateMidFromContext maps a Multiplex ID (MID) to its associated context in a MID_ATLAS structure and then disassociates the MID from the context.
-old-location : ifsk\rxmapanddissociatemidfromcontext.htm
-old-project : ifsk
-ms.assetid : e9021983-8a01-4262-ae3f-c265948d5a2c
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.rxmapanddissociatemidfromcontext, midatlax/RxMapAndDissociateMidFromContext, rxref_919dabed-ac8c-4495-8709-8fb45280e16f.xml, RxMapAndDissociateMidFromContext, RxMapAndDissociateMidFromContext function [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : midatlax.h
-req.include-header : Midatlax.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PMCD_INIT_DATA, MCD_INIT_DATA"
+UID: NF:midatlax.RxMapAndDissociateMidFromContext
+title: RxMapAndDissociateMidFromContext function
+author: windows-driver-content
+description: RxMapAndDissociateMidFromContext maps a Multiplex ID (MID) to its associated context in a MID_ATLAS structure and then disassociates the MID from the context.
+old-location: ifsk\rxmapanddissociatemidfromcontext.htm
+old-project: ifsk
+ms.assetid: e9021983-8a01-4262-ae3f-c265948d5a2c
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.rxmapanddissociatemidfromcontext, midatlax/RxMapAndDissociateMidFromContext, rxref_919dabed-ac8c-4495-8709-8fb45280e16f.xml, RxMapAndDissociateMidFromContext, RxMapAndDissociateMidFromContext function [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: midatlax.h
+req.include-header: Midatlax.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	midatlax.h
+apiname:
+-	RxMapAndDissociateMidFromContext
+product: Windows
+targetos: Windows
+req.typenames: "*PMCD_INIT_DATA, MCD_INIT_DATA"
 ---
 
 

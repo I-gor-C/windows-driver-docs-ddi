@@ -1,41 +1,46 @@
 ---
-UID : NC:ndis.FILTER_DETACH
-title : FILTER_DETACH
-author : windows-driver-content
-description : NDIS calls a filter driver's FilterDetach function to release all the resources that are associated with a filter module.Note  You must declare the function by using the FILTER_DETACH type.
-old-location : netvista\filterdetach.htm
-old-project : netvista
-ms.assetid : 49dfbbb3-74e7-4904-8370-36d589276653
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.filterdetach, FilterDetach callback function [Network Drivers Starting with Windows Vista], FilterDetach, FILTER_DETACH, FILTER_DETACH, ndis/FilterDetach, filter_functions_ref_dec15a06-93c1-4da8-9dc6-b66be9c6f8eb.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
+UID: NC:ndis.FILTER_DETACH
+title: FILTER_DETACH
+author: windows-driver-content
+description: NDIS calls a filter driver's FilterDetach function to release all the resources that are associated with a filter module.Note  You must declare the function by using the FILTER_DETACH type.
+old-location: netvista\filterdetach.htm
+old-project: netvista
+ms.assetid: 49dfbbb3-74e7-4904-8370-36d589276653
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.filterdetach, FilterDetach callback function [Network Drivers Starting with Windows Vista], FilterDetach, FILTER_DETACH, FILTER_DETACH, ndis/FilterDetach, filter_functions_ref_dec15a06-93c1-4da8-9dc6-b66be9c6f8eb.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	ndis.h
+apiname:
+-	FilterDetach
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 

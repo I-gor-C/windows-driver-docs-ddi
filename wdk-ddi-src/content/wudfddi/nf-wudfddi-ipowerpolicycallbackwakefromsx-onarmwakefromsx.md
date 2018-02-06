@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IPowerPolicyCallbackWakeFromSx.OnArmWakeFromSx
-title : IPowerPolicyCallbackWakeFromSx::OnArmWakeFromSx method
-author : windows-driver-content
-description : A driver's OnArmWakeFromSx event callback function arms (that is, enables) a device so that it can trigger a wake signal while in a low-power device state.
-old-location : wdf\ipowerpolicycallbackwakefromsx_onarmwakefromsx.htm
-old-project : wdf
-ms.assetid : 98350b75-aa25-4b3f-ad6c-3038111b8a48
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : IPowerPolicyCallbackWakeFromSx interface, OnArmWakeFromSx method, IPowerPolicyCallbackWakeFromSx, IPowerPolicyCallbackWakeFromSx::OnArmWakeFromSx, OnArmWakeFromSx, wudfddi/IPowerPolicyCallbackWakeFromSx::OnArmWakeFromSx, UMDFDeviceObjectRef_36d2ec5a-4244-499b-9ff3-117704e0ac78.xml, OnArmWakeFromSx method, wdf.ipowerpolicycallbackwakefromsx_onarmwakefromsx, umdf.ipowerpolicycallbackwakefromsx_onarmwakefromsx, OnArmWakeFromSx method, IPowerPolicyCallbackWakeFromSx interface
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.9
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IPowerPolicyCallbackWakeFromSx.OnArmWakeFromSx
+title: IPowerPolicyCallbackWakeFromSx::OnArmWakeFromSx method
+author: windows-driver-content
+description: A driver's OnArmWakeFromSx event callback function arms (that is, enables) a device so that it can trigger a wake signal while in a low-power device state.
+old-location: wdf\ipowerpolicycallbackwakefromsx_onarmwakefromsx.htm
+old-project: wdf
+ms.assetid: 98350b75-aa25-4b3f-ad6c-3038111b8a48
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: IPowerPolicyCallbackWakeFromSx interface, OnArmWakeFromSx method, IPowerPolicyCallbackWakeFromSx, IPowerPolicyCallbackWakeFromSx::OnArmWakeFromSx, OnArmWakeFromSx, wudfddi/IPowerPolicyCallbackWakeFromSx::OnArmWakeFromSx, UMDFDeviceObjectRef_36d2ec5a-4244-499b-9ff3-117704e0ac78.xml, OnArmWakeFromSx method, wdf.ipowerpolicycallbackwakefromsx_onarmwakefromsx, umdf.ipowerpolicycallbackwakefromsx_onarmwakefromsx, OnArmWakeFromSx method, IPowerPolicyCallbackWakeFromSx interface
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.9
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Wudfddi.h
+apiname:
+-	IPowerPolicyCallbackWakeFromSx.OnArmWakeFromSx
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

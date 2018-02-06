@@ -1,41 +1,46 @@
 ---
-UID : NF:mcd.ChangerError
-title : ChangerError function
-author : windows-driver-content
-description : ChangerError performs device-specific error handling.
-old-location : storage\changererror.htm
-old-project : storage
-ms.assetid : e2196971-47ad-4ac4-a3e9-c8f7f6b05321
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.changererror, ChangerError function [Storage Devices], mcd/ChangerError, chgrmini_5235b77f-51d1-4fa5-b68c-3e649aed829c.xml, ChangerError
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : mcd.h
-req.include-header : Mcd.h, Ntddchgr.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : LAMP_INTENSITY_WHITE
+UID: NF:mcd.ChangerError
+title: ChangerError function
+author: windows-driver-content
+description: ChangerError performs device-specific error handling.
+old-location: storage\changererror.htm
+old-project: storage
+ms.assetid: e2196971-47ad-4ac4-a3e9-c8f7f6b05321
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.changererror, ChangerError function [Storage Devices], mcd/ChangerError, chgrmini_5235b77f-51d1-4fa5-b68c-3e649aed829c.xml, ChangerError
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: mcd.h
+req.include-header: Mcd.h, Ntddchgr.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	mcd.h
+apiname:
+-	ChangerError
+product: Windows
+targetos: Windows
+req.typenames: LAMP_INTENSITY_WHITE
 ---
 
 

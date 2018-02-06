@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dkmddi.DXGKDDI_MAPCPUHOSTAPERTURE
-title : DXGKDDI_MAPCPUHOSTAPERTURE
-author : windows-driver-content
-description : DxgkDdiMapCpuHostAperture is called to map an allocation that is resident in a local memory segment into the CPU host aperture in order to make it visible to the CPU.
-old-location : display\dxgkddimapcpuhostaperture.htm
-old-project : display
-ms.assetid : 78729B9A-A9FA-4D1E-8D30-3FFD61B1A7D3
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkddimapcpuhostaperture, DxgkDdiMapCpuHostAperture callback function [Display Devices], DxgkDdiMapCpuHostAperture, DXGKDDI_MAPCPUHOSTAPERTURE, DXGKDDI_MAPCPUHOSTAPERTURE, d3dkmddi/DxgkDdiMapCpuHostAperture
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
+UID: NC:d3dkmddi.DXGKDDI_MAPCPUHOSTAPERTURE
+title: DXGKDDI_MAPCPUHOSTAPERTURE
+author: windows-driver-content
+description: DxgkDdiMapCpuHostAperture is called to map an allocation that is resident in a local memory segment into the CPU host aperture in order to make it visible to the CPU.
+old-location: display\dxgkddimapcpuhostaperture.htm
+old-project: display
+ms.assetid: 78729B9A-A9FA-4D1E-8D30-3FFD61B1A7D3
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkddimapcpuhostaperture, DxgkDdiMapCpuHostAperture callback function [Display Devices], DxgkDdiMapCpuHostAperture, DXGKDDI_MAPCPUHOSTAPERTURE, DXGKDDI_MAPCPUHOSTAPERTURE, d3dkmddi/DxgkDdiMapCpuHostAperture
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DxgkDdiMapCpuHostAperture
+product: Windows
+targetos: Windows
+req.typenames: DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
 

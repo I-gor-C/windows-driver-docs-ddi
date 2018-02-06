@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugControl4.ExecuteWide
-title : IDebugControl4::ExecuteWide method
-author : windows-driver-content
-description : The ExecuteWide method executes the specified debugger commands.
-old-location : debugger\executewide.htm
-old-project : debugger
-ms.assetid : 2aece5f0-5cfd-47fe-b8c1-e191f0a4296d
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : ExecuteWide method [Windows Debugging], IDebugControl4 interface, dbgeng/IDebugControl4::ExecuteWide, debugger.executewide, ExecuteWide, ExecuteWide method [Windows Debugging], IDebugControl4 interface [Windows Debugging], ExecuteWide method, IDebugControl4::ExecuteWide, IDebugControl4
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl4.ExecuteWide
+title: IDebugControl4::ExecuteWide method
+author: windows-driver-content
+description: The ExecuteWide method executes the specified debugger commands.
+old-location: debugger\executewide.htm
+old-project: debugger
+ms.assetid: 2aece5f0-5cfd-47fe-b8c1-e191f0a4296d
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: ExecuteWide method [Windows Debugging], IDebugControl4 interface, dbgeng/IDebugControl4::ExecuteWide, debugger.executewide, ExecuteWide, ExecuteWide method [Windows Debugging], IDebugControl4 interface [Windows Debugging], ExecuteWide method, IDebugControl4::ExecuteWide, IDebugControl4
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl4.ExecuteWide
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.IoRequestDpc
-title : IoRequestDpc function
-author : windows-driver-content
-description : The IoRequestDpc routine queues a driver-supplied DpcForIsr routine to complete interrupt-driven I/O processing at a lower IRQL.
-old-location : kernel\iorequestdpc.htm
-old-project : kernel
-ms.assetid : 196555c8-74a6-4dae-ac4d-52654015ffeb
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : k104_37f449eb-de3d-4932-b845-388c73c55d01.xml, IoRequestDpc, kernel.iorequestdpc, IoRequestDpc routine [Kernel-Mode Driver Architecture], wdm/IoRequestDpc
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : DIRQL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.IoRequestDpc
+title: IoRequestDpc function
+author: windows-driver-content
+description: The IoRequestDpc routine queues a driver-supplied DpcForIsr routine to complete interrupt-driven I/O processing at a lower IRQL.
+old-location: kernel\iorequestdpc.htm
+old-project: kernel
+ms.assetid: 196555c8-74a6-4dae-ac4d-52654015ffeb
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: k104_37f449eb-de3d-4932-b845-388c73c55d01.xml, IoRequestDpc, kernel.iorequestdpc, IoRequestDpc routine [Kernel-Mode Driver Architecture], wdm/IoRequestDpc
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: DIRQL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	IoRequestDpc
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

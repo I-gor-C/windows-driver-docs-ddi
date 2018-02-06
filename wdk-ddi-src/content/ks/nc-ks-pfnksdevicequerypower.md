@@ -1,41 +1,46 @@
 ---
-UID : NC:ks.PFNKSDEVICEQUERYPOWER
-title : PFNKSDEVICEQUERYPOWER
-author : windows-driver-content
-description : AVStream calls a minidriver's AVStrMiniDeviceQueryPower routine when it receives an IRP_MN_QUERY_POWER request.
-old-location : stream\avstrminidevicequerypower.htm
-old-project : stream
-ms.assetid : db839cde-cb3e-47f2-9a06-54e37ac7ac67
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.avstrminidevicequerypower, AVStrMiniDeviceQueryPower, AVStrMiniDeviceQueryPower routine [Streaming Media Devices], AVStrMiniDeviceQueryPower, PFNKSDEVICEQUERYPOWER, PFNKSDEVICEQUERYPOWER, ks/AVStrMiniDeviceQueryPower, avstclbk_47f0fecd-9906-4582-9f1d-bb80a469ffa6.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KEYWORDSELECTOR
+UID: NC:ks.PFNKSDEVICEQUERYPOWER
+title: PFNKSDEVICEQUERYPOWER
+author: windows-driver-content
+description: AVStream calls a minidriver's AVStrMiniDeviceQueryPower routine when it receives an IRP_MN_QUERY_POWER request.
+old-location: stream\avstrminidevicequerypower.htm
+old-project: stream
+ms.assetid: db839cde-cb3e-47f2-9a06-54e37ac7ac67
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.avstrminidevicequerypower, AVStrMiniDeviceQueryPower, AVStrMiniDeviceQueryPower routine [Streaming Media Devices], AVStrMiniDeviceQueryPower, PFNKSDEVICEQUERYPOWER, PFNKSDEVICEQUERYPOWER, ks/AVStrMiniDeviceQueryPower, avstclbk_47f0fecd-9906-4582-9f1d-bb80a469ffa6.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	ks.h
+apiname:
+-	AVStrMiniDeviceQueryPower
+product: Windows
+targetos: Windows
+req.typenames: KEYWORDSELECTOR
 ---
 
 

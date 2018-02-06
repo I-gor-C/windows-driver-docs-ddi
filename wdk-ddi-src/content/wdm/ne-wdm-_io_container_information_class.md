@@ -1,42 +1,47 @@
 ---
-UID : NE:wdm._IO_CONTAINER_INFORMATION_CLASS
-title : "_IO_CONTAINER_INFORMATION_CLASS"
-author : windows-driver-content
-description : The IO_CONTAINER_INFORMATION_CLASS enumeration contains constants that indicate the classes of system information that a kernel-mode driver can request.
-old-location : kernel\io_container_information_class.htm
-old-project : kernel
-ms.assetid : 359ed0d2-91b1-46d1-a358-babe7cb993fb
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : IO_CONTAINER_INFORMATION_CLASS, wdm/IoSessionStateInformation, IO_CONTAINER_INFORMATION_CLASS enumeration [Kernel-Mode Driver Architecture], wdm/IO_CONTAINER_INFORMATION_CLASS, IoMaxContainerInformationClass, sysenum_f1533e86-b529-4ef0-b603-e57f4863b740.xml, wdm/IoMaxContainerInformationClass, _IO_CONTAINER_INFORMATION_CLASS, IoSessionStateInformation, kernel.io_container_information_class
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h, Fltkernel.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in Windows 7 and later versions of the Windows operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : IO_CONTAINER_INFORMATION_CLASS
-req.product : Windows 10 or later.
+UID: NE:wdm._IO_CONTAINER_INFORMATION_CLASS
+title: "_IO_CONTAINER_INFORMATION_CLASS"
+author: windows-driver-content
+description: The IO_CONTAINER_INFORMATION_CLASS enumeration contains constants that indicate the classes of system information that a kernel-mode driver can request.
+old-location: kernel\io_container_information_class.htm
+old-project: kernel
+ms.assetid: 359ed0d2-91b1-46d1-a358-babe7cb993fb
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: IO_CONTAINER_INFORMATION_CLASS, wdm/IoSessionStateInformation, IO_CONTAINER_INFORMATION_CLASS enumeration [Kernel-Mode Driver Architecture], wdm/IO_CONTAINER_INFORMATION_CLASS, IoMaxContainerInformationClass, sysenum_f1533e86-b529-4ef0-b603-e57f4863b740.xml, wdm/IoMaxContainerInformationClass, _IO_CONTAINER_INFORMATION_CLASS, IoSessionStateInformation, kernel.io_container_information_class
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h, Fltkernel.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in Windows 7 and later versions of the Windows operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdm.h
+apiname:
+-	IO_CONTAINER_INFORMATION_CLASS
+product: Windows
+targetos: Windows
+req.typenames: IO_CONTAINER_INFORMATION_CLASS
+req.product: Windows 10 or later.
 ---
 
 # _IO_CONTAINER_INFORMATION_CLASS Enumeration
@@ -53,21 +58,21 @@ typedef enum _IO_CONTAINER_INFORMATION_CLASS {
 ## Constants
 
 <table>
-
-<tr>
-<td>IoMaxContainerInformationClass</td>
-<td>Specifies the maximum value in this enumeration type.</td>
-</tr>
-
-<tr>
-<td>IoSessionStateInformation</td>
-<td>Session state information. A driver uses this enumeration constant to request information about a user session.</td>
-</tr>
+            
+                <tr>
+                    <td>IoMaxContainerInformationClass</td>
+                    <td>Specifies the maximum value in this enumeration type.</td>
+                </tr>
+            
+                <tr>
+                    <td>IoSessionStateInformation</td>
+                    <td>Session state information. A driver uses this enumeration constant to request information about a user session.</td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-To request system information, a driver calls the <a href="..\wdm\nf-wdm-iogetcontainerinformation.md">IoGetContainerInformation</a> routine and sets this routine's <i>InformationClass</i> parameter to an <b>IO_CONTAINER_NOTIFICATION_CLASS</b> constant (other than <b>IoMaxContainerInformationClass</b>). Currently, <b>IoGetContainerInformation</b> supports only <i>InformationClass</i> = <b>IoSessionStateInformation</b>.
+        To request system information, a driver calls the <a href="..\wdm\nf-wdm-iogetcontainerinformation.md">IoGetContainerInformation</a> routine and sets this routine's <i>InformationClass</i> parameter to an <b>IO_CONTAINER_NOTIFICATION_CLASS</b> constant (other than <b>IoMaxContainerInformationClass</b>). Currently, <b>IoGetContainerInformation</b> supports only <i>InformationClass</i> = <b>IoSessionStateInformation</b>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -75,9 +80,9 @@ To request system information, a driver calls the <a href="..\wdm\nf-wdm-iogetco
 | **Windows version** | Supported in Windows 7 and later versions of the Windows operating system. Supported in Windows 7 and later versions of the Windows operating system. |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h, Fltkernel.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\wdm\nf-wdm-iogetcontainerinformation.md">IoGetContainerInformation</a>
+        <a href="..\wdm\nf-wdm-iogetcontainerinformation.md">IoGetContainerInformation</a>
 
  
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmdt._DXGK_BACKLIGHT_INFO
-title : "_DXGK_BACKLIGHT_INFO"
-author : windows-driver-content
-description : Contains the current level of backlight reduction that is applied to the integrated display panel. Used by Windows Display Driver Model (WDDM) 1.2 and later display miniport drivers that support adaptive brightness control.
-old-location : display\dxgk_backlight_info.htm
-old-project : display
-ms.assetid : 9008e5e6-e03c-4d34-99bd-3e6624327fcc
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DXGK_BACKLIGHT_INFO structure [Display Devices], display.dxgk_backlight_info, d3dkmdt/DXGK_BACKLIGHT_INFO, DXGK_BACKLIGHT_INFO, _DXGK_BACKLIGHT_INFO
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmdt.h
-req.include-header : D3dkmdt.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_BACKLIGHT_INFO
+UID: NS:d3dkmdt._DXGK_BACKLIGHT_INFO
+title: "_DXGK_BACKLIGHT_INFO"
+author: windows-driver-content
+description: Contains the current level of backlight reduction that is applied to the integrated display panel. Used by Windows Display Driver Model (WDDM) 1.2 and later display miniport drivers that support adaptive brightness control.
+old-location: display\dxgk_backlight_info.htm
+old-project: display
+ms.assetid: 9008e5e6-e03c-4d34-99bd-3e6624327fcc
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DXGK_BACKLIGHT_INFO structure [Display Devices], display.dxgk_backlight_info, d3dkmdt/DXGK_BACKLIGHT_INFO, DXGK_BACKLIGHT_INFO, _DXGK_BACKLIGHT_INFO
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmdt.h
+req.include-header: D3dkmdt.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	D3dkmdt.h
+apiname:
+-	DXGK_BACKLIGHT_INFO
+product: Windows
+targetos: Windows
+req.typenames: DXGK_BACKLIGHT_INFO
 ---
 
 # _DXGK_BACKLIGHT_INFO structure

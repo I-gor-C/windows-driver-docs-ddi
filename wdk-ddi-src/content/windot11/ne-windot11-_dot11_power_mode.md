@@ -1,42 +1,47 @@
 ---
-UID : NE:windot11._DOT11_POWER_MODE
-title : "_DOT11_POWER_MODE"
-author : windows-driver-content
-description : Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
-old-location : netvista\dot11_power_mode.htm
-old-project : netvista
-ms.assetid : 4f18f937-e749-414d-aa21-96c6ab02982b
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : "*PDOT11_POWER_MODE, DOT11_POWER_MODE, PDOT11_POWER_MODE enumeration pointer [Network Drivers Starting with Windows Vista], windot11/dot11_power_mode_unknown, dot11_power_mode_active, PDOT11_POWER_MODE, windot11/PDOT11_POWER_MODE, Native_802.11_data_types_0c9f7464-7651-46e6-910b-2794649d13d0.xml, _DOT11_POWER_MODE, windot11/dot11_power_mode_active, dot11_power_mode_unknown, dot11_power_mode_powersave, windot11/dot11_power_mode_powersave, windot11/DOT11_POWER_MODE, DOT11_POWER_MODE enumeration [Network Drivers Starting with Windows Vista], netvista.dot11_power_mode"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : windot11.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating   systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT11_POWER_MODE, *PDOT11_POWER_MODE
-req.product : Windows 10 or later.
+UID: NE:windot11._DOT11_POWER_MODE
+title: "_DOT11_POWER_MODE"
+author: windows-driver-content
+description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+old-location: netvista\dot11_power_mode.htm
+old-project: netvista
+ms.assetid: 4f18f937-e749-414d-aa21-96c6ab02982b
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: "*PDOT11_POWER_MODE, DOT11_POWER_MODE, PDOT11_POWER_MODE enumeration pointer [Network Drivers Starting with Windows Vista], windot11/dot11_power_mode_unknown, dot11_power_mode_active, PDOT11_POWER_MODE, windot11/PDOT11_POWER_MODE, Native_802.11_data_types_0c9f7464-7651-46e6-910b-2794649d13d0.xml, _DOT11_POWER_MODE, windot11/dot11_power_mode_active, dot11_power_mode_unknown, dot11_power_mode_powersave, windot11/dot11_power_mode_powersave, windot11/DOT11_POWER_MODE, DOT11_POWER_MODE enumeration [Network Drivers Starting with Windows Vista], netvista.dot11_power_mode"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: windot11.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	windot11.h
+apiname:
+-	DOT11_POWER_MODE
+product: Windows
+targetos: Windows
+req.typenames: DOT11_POWER_MODE, *PDOT11_POWER_MODE
+req.product: Windows 10 or later.
 ---
 
 # _DOT11_POWER_MODE Enumeration
@@ -55,26 +60,26 @@ typedef enum _DOT11_POWER_MODE {
 ## Constants
 
 <table>
-
-<tr>
-<td>dot11_power_mode_active</td>
-<td>Specifies an active power mode in which the PHY is always turned on.</td>
-</tr>
-
-<tr>
-<td>dot11_power_mode_powersave</td>
-<td>Specifies a power-save mode in which the PHY is periodically turned off.</td>
-</tr>
-
-<tr>
-<td>dot11_power_mode_unknown</td>
-<td>Specifies an undefined or uninitialized power mode.</td>
-</tr>
+            
+                <tr>
+                    <td>dot11_power_mode_active</td>
+                    <td>Specifies an active power mode in which the PHY is always turned on.</td>
+                </tr>
+            
+                <tr>
+                    <td>dot11_power_mode_powersave</td>
+                    <td>Specifies a power-save mode in which the PHY is periodically turned off.</td>
+                </tr>
+            
+                <tr>
+                    <td>dot11_power_mode_unknown</td>
+                    <td>Specifies an undefined or uninitialized power mode.</td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-An 802.11 station advertises its power management mode through the Power Management subfield of the
+        An 802.11 station advertises its power management mode through the Power Management subfield of the
     Frame Control field in the 802.11 MAC header of transmitted frames. For more information about the Power
     Management subfield, refer to Clause 8.2.4.1.7 of the IEEE 802.11-2012 standard.
 
@@ -84,9 +89,9 @@ An 802.11 station advertises its power management mode through the Power Managem
 | **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems. Available in Windows Vista and later versions of the Windows operating   systems. |
 | **Header** | windot11.h (include Ndis.h) |
 
-## See Also
+    ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff569359">OID_DOT11_ENUM_ASSOCIATION_INFO</a>
+        <a href="https://msdn.microsoft.com/library/windows/hardware/ff569359">OID_DOT11_ENUM_ASSOCIATION_INFO</a>
 
  
 

@@ -1,42 +1,47 @@
 ---
-UID : NS:wdm._TRANSACTIONMANAGER_RECOVERY_INFORMATION
-title : "_TRANSACTIONMANAGER_RECOVERY_INFORMATION"
-author : windows-driver-content
-description : The TRANSACTIONMANAGER_RECOVERY_INFORMATION structure contains information about a transaction manager object.
-old-location : kernel\transactionmanager_recovery_information.htm
-old-project : kernel
-ms.assetid : 76701df3-8e7d-43fa-8caf-6cbf89504aad
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : "*PTRANSACTIONMANAGER_RECOVERY_INFORMATION, wdm/PTRANSACTIONMANAGER_RECOVERY_INFORMATION, ktm_ref_9efce7e2-3965-4659-8659-4f8262aad962.xml, kernel.transactionmanager_recovery_information, _TRANSACTIONMANAGER_RECOVERY_INFORMATION, PTRANSACTIONMANAGER_RECOVERY_INFORMATION, TRANSACTIONMANAGER_RECOVERY_INFORMATION, TRANSACTIONMANAGER_RECOVERY_INFORMATION structure [Kernel-Mode Driver Architecture], wdm/TRANSACTIONMANAGER_RECOVERY_INFORMATION, PTRANSACTIONMANAGER_RECOVERY_INFORMATION structure pointer [Kernel-Mode Driver Architecture]"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : Wdm.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later operating system versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TRANSACTIONMANAGER_RECOVERY_INFORMATION, *PTRANSACTIONMANAGER_RECOVERY_INFORMATION
-req.product : Windows 10 or later.
+UID: NS:wdm._TRANSACTIONMANAGER_RECOVERY_INFORMATION
+title: "_TRANSACTIONMANAGER_RECOVERY_INFORMATION"
+author: windows-driver-content
+description: The TRANSACTIONMANAGER_RECOVERY_INFORMATION structure contains information about a transaction manager object.
+old-location: kernel\transactionmanager_recovery_information.htm
+old-project: kernel
+ms.assetid: 76701df3-8e7d-43fa-8caf-6cbf89504aad
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: "*PTRANSACTIONMANAGER_RECOVERY_INFORMATION, wdm/PTRANSACTIONMANAGER_RECOVERY_INFORMATION, ktm_ref_9efce7e2-3965-4659-8659-4f8262aad962.xml, kernel.transactionmanager_recovery_information, _TRANSACTIONMANAGER_RECOVERY_INFORMATION, PTRANSACTIONMANAGER_RECOVERY_INFORMATION, TRANSACTIONMANAGER_RECOVERY_INFORMATION, TRANSACTIONMANAGER_RECOVERY_INFORMATION structure [Kernel-Mode Driver Architecture], wdm/TRANSACTIONMANAGER_RECOVERY_INFORMATION, PTRANSACTIONMANAGER_RECOVERY_INFORMATION structure pointer [Kernel-Mode Driver Architecture]"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: Wdm.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later operating system versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdm.h
+apiname:
+-	TRANSACTIONMANAGER_RECOVERY_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: TRANSACTIONMANAGER_RECOVERY_INFORMATION, *PTRANSACTIONMANAGER_RECOVERY_INFORMATION
+req.product: Windows 10 or later.
 ---
 
 # _TRANSACTIONMANAGER_RECOVERY_INFORMATION structure

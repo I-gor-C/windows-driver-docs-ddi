@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGKARG_SETVIDPNSOURCEADDRESSWITHMULTIPLANEOVERLAY2
-title : "_DXGKARG_SETVIDPNSOURCEADDRESSWITHMULTIPLANEOVERLAY2"
-author : windows-driver-content
-description : DXGKARG_SETVIDPNSOURCEADDRESSWITHMULTIPLANEOVERLAY2 is passed to the DxgkDdiSetVidPnSourceAddressWithMultiPlaneOverlay2 function to change the overlay configuration being displayed.DXGKARG_SETVIDPNSOURCEADDRESSWITHMULTIPLANEOVERLAY2 is passed to the DxgkDdiSetVidPnSourceAddressWithMultiPlaneOverlay2 function to change the overlay configuration being displayed.
-old-location : display\dxgkarg_setvidpnsourceaddresswithmultiplaneoverlay2.htm
-old-project : display
-ms.assetid : 6138BAF5-F953-47E7-A572-BE4673CF7046
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3dkmddi/DXGKARG_SETVIDPNSOURCEADDRESSWITHMULTIPLANEOVERLAY2, DXGKARG_SETVIDPNSOURCEADDRESSWITHMULTIPLANEOVERLAY2 structure [Display Devices], _DXGKARG_SETVIDPNSOURCEADDRESSWITHMULTIPLANEOVERLAY2, display.dxgkarg_setvidpnsourceaddresswithmultiplaneoverlay2, DXGKARG_SETVIDPNSOURCEADDRESSWITHMULTIPLANEOVERLAY2
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGKARG_SETVIDPNSOURCEADDRESSWITHMULTIPLANEOVERLAY2
+UID: NS:d3dkmddi._DXGKARG_SETVIDPNSOURCEADDRESSWITHMULTIPLANEOVERLAY2
+title: "_DXGKARG_SETVIDPNSOURCEADDRESSWITHMULTIPLANEOVERLAY2"
+author: windows-driver-content
+description: DXGKARG_SETVIDPNSOURCEADDRESSWITHMULTIPLANEOVERLAY2 is passed to the DxgkDdiSetVidPnSourceAddressWithMultiPlaneOverlay2 function to change the overlay configuration being displayed.DXGKARG_SETVIDPNSOURCEADDRESSWITHMULTIPLANEOVERLAY2 is passed to the DxgkDdiSetVidPnSourceAddressWithMultiPlaneOverlay2 function to change the overlay configuration being displayed.
+old-location: display\dxgkarg_setvidpnsourceaddresswithmultiplaneoverlay2.htm
+old-project: display
+ms.assetid: 6138BAF5-F953-47E7-A572-BE4673CF7046
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3dkmddi/DXGKARG_SETVIDPNSOURCEADDRESSWITHMULTIPLANEOVERLAY2, DXGKARG_SETVIDPNSOURCEADDRESSWITHMULTIPLANEOVERLAY2 structure [Display Devices], _DXGKARG_SETVIDPNSOURCEADDRESSWITHMULTIPLANEOVERLAY2, display.dxgkarg_setvidpnsourceaddresswithmultiplaneoverlay2, DXGKARG_SETVIDPNSOURCEADDRESSWITHMULTIPLANEOVERLAY2
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DXGKARG_SETVIDPNSOURCEADDRESSWITHMULTIPLANEOVERLAY2
+product: Windows
+targetos: Windows
+req.typenames: DXGKARG_SETVIDPNSOURCEADDRESSWITHMULTIPLANEOVERLAY2
 ---
 
 # _DXGKARG_SETVIDPNSOURCEADDRESSWITHMULTIPLANEOVERLAY2 structure

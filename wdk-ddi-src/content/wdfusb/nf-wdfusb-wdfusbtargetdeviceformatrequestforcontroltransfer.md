@@ -1,42 +1,50 @@
 ---
-UID : NF:wdfusb.WdfUsbTargetDeviceFormatRequestForControlTransfer
-title : WdfUsbTargetDeviceFormatRequestForControlTransfer function
-author : windows-driver-content
-description : The WdfUsbTargetDeviceFormatRequestForControlTransfer method builds a USB control transfer request, but it does not send the request.
-old-location : wdf\wdfusbtargetdeviceformatrequestforcontroltransfer.htm
-old-project : wdf
-ms.assetid : 72ba7550-9153-4ff7-8478-c9cc71151a25
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WdfUsbTargetDeviceFormatRequestForControlTransfer method, WdfUsbTargetDeviceFormatRequestForControlTransfer, kmdf.wdfusbtargetdeviceformatrequestforcontroltransfer, PFN_WDFUSBTARGETDEVICEFORMATREQUESTFORCONTROLTRANSFER, wdf.wdfusbtargetdeviceformatrequestforcontroltransfer, wdfusb/WdfUsbTargetDeviceFormatRequestForControlTransfer, DFUsbRef_7f2ef529-05f2-46c2-861e-d9557c6bb7bc.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfusb.h
-req.include-header : Wdfusb.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2, RequestFormattedValid, RequestForUrbXrb, RequestSendAndForgetNoFormatting, RequestSendAndForgetNoFormatting2, UsbKmdfIrql, UsbKmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfusb.WdfUsbTargetDeviceFormatRequestForControlTransfer
+title: WdfUsbTargetDeviceFormatRequestForControlTransfer function
+author: windows-driver-content
+description: The WdfUsbTargetDeviceFormatRequestForControlTransfer method builds a USB control transfer request, but it does not send the request.
+old-location: wdf\wdfusbtargetdeviceformatrequestforcontroltransfer.htm
+old-project: wdf
+ms.assetid: 72ba7550-9153-4ff7-8478-c9cc71151a25
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WdfUsbTargetDeviceFormatRequestForControlTransfer method, WdfUsbTargetDeviceFormatRequestForControlTransfer, kmdf.wdfusbtargetdeviceformatrequestforcontroltransfer, PFN_WDFUSBTARGETDEVICEFORMATREQUESTFORCONTROLTRANSFER, wdf.wdfusbtargetdeviceformatrequestforcontroltransfer, wdfusb/WdfUsbTargetDeviceFormatRequestForControlTransfer, DFUsbRef_7f2ef529-05f2-46c2-861e-d9557c6bb7bc.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfusb.h
+req.include-header: Wdfusb.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2, RequestFormattedValid, RequestForUrbXrb, RequestSendAndForgetNoFormatting, RequestSendAndForgetNoFormatting2, UsbKmdfIrql, UsbKmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+-	WUDFx02000.dll
+-	WUDFx02000.dll.dll
+apiname:
+-	WdfUsbTargetDeviceFormatRequestForControlTransfer
+product: Windows
+targetos: Windows
+req.typenames: WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
+req.product: Windows 10 or later.
 ---
 
 

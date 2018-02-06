@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddtape._TAPE_GET_DRIVE_PARAMETERS
-title : "_TAPE_GET_DRIVE_PARAMETERS"
-author : windows-driver-content
-description : The TAPE_GET_DRIVE_PARAMETERS structure is used in conjunction with the IOCTL_TAPE_GET_DRIVE_PARAMS request to retrieve information about capabilities of the tape drive.
-old-location : storage\tape_get_drive_parameters.htm
-old-project : storage
-ms.assetid : 2b1b196f-f012-4136-983e-8c8192bdbd2f
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : structs-tape_aa0e95ac-ea8b-4c88-abc0-7809cd538e26.xml, TAPE_GET_DRIVE_PARAMETERS structure [Storage Devices], storage.tape_get_drive_parameters, TAPE_GET_DRIVE_PARAMETERS, PTAPE_GET_DRIVE_PARAMETERS, *PTAPE_GET_DRIVE_PARAMETERS, _TAPE_GET_DRIVE_PARAMETERS, ntddtape/PTAPE_GET_DRIVE_PARAMETERS, ntddtape/TAPE_GET_DRIVE_PARAMETERS, PTAPE_GET_DRIVE_PARAMETERS structure pointer [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddtape.h
-req.include-header : Ntddtape.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PTAPE_GET_DRIVE_PARAMETERS, TAPE_GET_DRIVE_PARAMETERS"
+UID: NS:ntddtape._TAPE_GET_DRIVE_PARAMETERS
+title: "_TAPE_GET_DRIVE_PARAMETERS"
+author: windows-driver-content
+description: The TAPE_GET_DRIVE_PARAMETERS structure is used in conjunction with the IOCTL_TAPE_GET_DRIVE_PARAMS request to retrieve information about capabilities of the tape drive.
+old-location: storage\tape_get_drive_parameters.htm
+old-project: storage
+ms.assetid: 2b1b196f-f012-4136-983e-8c8192bdbd2f
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: structs-tape_aa0e95ac-ea8b-4c88-abc0-7809cd538e26.xml, TAPE_GET_DRIVE_PARAMETERS structure [Storage Devices], storage.tape_get_drive_parameters, TAPE_GET_DRIVE_PARAMETERS, PTAPE_GET_DRIVE_PARAMETERS, *PTAPE_GET_DRIVE_PARAMETERS, _TAPE_GET_DRIVE_PARAMETERS, ntddtape/PTAPE_GET_DRIVE_PARAMETERS, ntddtape/TAPE_GET_DRIVE_PARAMETERS, PTAPE_GET_DRIVE_PARAMETERS structure pointer [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddtape.h
+req.include-header: Ntddtape.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddtape.h
+apiname:
+-	TAPE_GET_DRIVE_PARAMETERS
+product: Windows
+targetos: Windows
+req.typenames: "*PTAPE_GET_DRIVE_PARAMETERS, TAPE_GET_DRIVE_PARAMETERS"
 ---
 
 # _TAPE_GET_DRIVE_PARAMETERS structure

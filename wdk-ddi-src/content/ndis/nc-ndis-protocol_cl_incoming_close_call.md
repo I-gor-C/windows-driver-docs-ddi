@@ -1,41 +1,46 @@
 ---
-UID : NC:ndis.PROTOCOL_CL_INCOMING_CLOSE_CALL
-title : PROTOCOL_CL_INCOMING_CLOSE_CALL
-author : windows-driver-content
-description : The ProtocolClIncomingCloseCall function is used by all connection-oriented NDIS clients.
-old-location : netvista\protocolclincomingclosecall.htm
-old-project : netvista
-ms.assetid : 01c7d887-eb54-47c3-98f0-bc567b60fb4b
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.protocolclincomingclosecall, ProtocolClIncomingCloseCall callback function [Network Drivers Starting with Windows Vista], ProtocolClIncomingCloseCall, PROTOCOL_CL_INCOMING_CLOSE_CALL, PROTOCOL_CL_INCOMING_CLOSE_CALL, ndis/ProtocolClIncomingCloseCall, condis_client_ref_3c97fa3b-d9ae-4748-8812-9abc896a509a.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see       ProtocolClIncomingCloseCall (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see       ProtocolClIncomingCloseCall (NDIS 5.1)) in Windows XP.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
+UID: NC:ndis.PROTOCOL_CL_INCOMING_CLOSE_CALL
+title: PROTOCOL_CL_INCOMING_CLOSE_CALL
+author: windows-driver-content
+description: The ProtocolClIncomingCloseCall function is used by all connection-oriented NDIS clients.
+old-location: netvista\protocolclincomingclosecall.htm
+old-project: netvista
+ms.assetid: 01c7d887-eb54-47c3-98f0-bc567b60fb4b
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.protocolclincomingclosecall, ProtocolClIncomingCloseCall callback function [Network Drivers Starting with Windows Vista], ProtocolClIncomingCloseCall, PROTOCOL_CL_INCOMING_CLOSE_CALL, PROTOCOL_CL_INCOMING_CLOSE_CALL, ndis/ProtocolClIncomingCloseCall, condis_client_ref_3c97fa3b-d9ae-4748-8812-9abc896a509a.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see       ProtocolClIncomingCloseCall (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see       ProtocolClIncomingCloseCall (NDIS 5.1)) in Windows XP.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ndis.h
+apiname:
+-	ProtocolClIncomingCloseCall
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddtape.IOCTL_TAPE_GET_POSITION
-title : IOCTL_TAPE_GET_POSITION
-author : windows-driver-content
-description : Returns the current absolute, logical, or pseudological partition and offset position on the tape.
-old-location : storage\ioctl_tape_get_position.htm
-old-project : storage
-ms.assetid : 358c3089-7238-4604-add8-575b611b3bc9
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_tape_get_position, IOCTL_TAPE_GET_POSITION control code [Storage Devices], IOCTL_TAPE_GET_POSITION, ntddtape/IOCTL_TAPE_GET_POSITION, k307_88069692-1167-4a21-914b-505e1100f6dc.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddtape.h
-req.include-header : Ntddtape.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TAPE_DRIVE_PROBLEM_TYPE
+UID: NI:ntddtape.IOCTL_TAPE_GET_POSITION
+title: IOCTL_TAPE_GET_POSITION
+author: windows-driver-content
+description: Returns the current absolute, logical, or pseudological partition and offset position on the tape.
+old-location: storage\ioctl_tape_get_position.htm
+old-project: storage
+ms.assetid: 358c3089-7238-4604-add8-575b611b3bc9
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_tape_get_position, IOCTL_TAPE_GET_POSITION control code [Storage Devices], IOCTL_TAPE_GET_POSITION, ntddtape/IOCTL_TAPE_GET_POSITION, k307_88069692-1167-4a21-914b-505e1100f6dc.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddtape.h
+req.include-header: Ntddtape.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddtape.h
+apiname:
+-	IOCTL_TAPE_GET_POSITION
+product: Windows
+targetos: Windows
+req.typenames: TAPE_DRIVE_PROBLEM_TYPE
 ---
 
 # IOCTL_TAPE_GET_POSITION IOCTL

@@ -1,41 +1,46 @@
 ---
-UID : NC:hdaudio.PGET_LINK_POSITION_REGISTER
-title : PGET_LINK_POSITION_REGISTER
-author : windows-driver-content
-description : The GetLinkPositionRegister routine retrieves a pointer to a DMA engine's link position register.The function pointer type for a GetLinkPositionRegister routine is defined as:
-old-location : audio\getlinkpositionregister.htm
-old-project : audio
-ms.assetid : 8b8c7f61-c22a-421f-999f-291999bb243f
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : audio.getlinkpositionregister, GetLinkPositionRegister callback function [Audio Devices], GetLinkPositionRegister, PGET_LINK_POSITION_REGISTER, PGET_LINK_POSITION_REGISTER, hdaudio/GetLinkPositionRegister, aud-prop2_715e978e-6396-479a-a953-6d17016306c4.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : hdaudio.h
-req.include-header : Hdaudio.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT
+UID: NC:hdaudio.PGET_LINK_POSITION_REGISTER
+title: PGET_LINK_POSITION_REGISTER
+author: windows-driver-content
+description: The GetLinkPositionRegister routine retrieves a pointer to a DMA engine's link position register.The function pointer type for a GetLinkPositionRegister routine is defined as:
+old-location: audio\getlinkpositionregister.htm
+old-project: audio
+ms.assetid: 8b8c7f61-c22a-421f-999f-291999bb243f
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: audio.getlinkpositionregister, GetLinkPositionRegister callback function [Audio Devices], GetLinkPositionRegister, PGET_LINK_POSITION_REGISTER, PGET_LINK_POSITION_REGISTER, hdaudio/GetLinkPositionRegister, aud-prop2_715e978e-6396-479a-a953-6d17016306c4.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: hdaudio.h
+req.include-header: Hdaudio.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	hdaudio.h
+apiname:
+-	GetLinkPositionRegister
+product: Windows
+targetos: Windows
+req.typenames: SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT
 ---
 
 

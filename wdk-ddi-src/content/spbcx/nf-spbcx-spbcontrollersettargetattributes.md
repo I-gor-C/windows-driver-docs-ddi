@@ -1,42 +1,48 @@
 ---
-UID : NF:spbcx.SpbControllerSetTargetAttributes
-title : SpbControllerSetTargetAttributes function
-author : windows-driver-content
-description : The SpbControllerSetTargetAttributes method sets object attributes that will be used for all SPBTARGET objects that the SPB framework extension (SpbCx) delivers to the SPB controller driver.
-old-location : spb\spbcontrollersettargetattributes.htm
-old-project : SPB
-ms.assetid : 8EC415AA-F578-42BF-B785-52613B20A2AC
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : SpbControllerSetTargetAttributes method [Buses], SpbControllerSetTargetAttributes, spbcx/SpbControllerSetTargetAttributes, SPB.spbcontrollersettargetattributes
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : spbcx.h
-req.include-header : 
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Spbcxstubs.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SPB_REQUEST_TYPE, *PSPB_REQUEST_TYPE
-req.product : Windows 10 or later.
+UID: NF:spbcx.SpbControllerSetTargetAttributes
+title: SpbControllerSetTargetAttributes function
+author: windows-driver-content
+description: The SpbControllerSetTargetAttributes method sets object attributes that will be used for all SPBTARGET objects that the SPB framework extension (SpbCx) delivers to the SPB controller driver.
+old-location: spb\spbcontrollersettargetattributes.htm
+old-project: SPB
+ms.assetid: 8EC415AA-F578-42BF-B785-52613B20A2AC
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: SpbControllerSetTargetAttributes method [Buses], SpbControllerSetTargetAttributes, spbcx/SpbControllerSetTargetAttributes, SPB.spbcontrollersettargetattributes
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: spbcx.h
+req.include-header: 
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Spbcxstubs.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	spbcxstubs.lib
+-	spbcxstubs.dll
+apiname:
+-	SpbControllerSetTargetAttributes
+product: Windows
+targetos: Windows
+req.typenames: SPB_REQUEST_TYPE, *PSPB_REQUEST_TYPE
+req.product: Windows 10 or later.
 ---
 
 

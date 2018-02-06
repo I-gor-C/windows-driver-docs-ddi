@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGK_ALLOCATIONUSAGEINFO1
-title : "_DXGK_ALLOCATIONUSAGEINFO1"
-author : windows-driver-content
-description : The DXGK_ALLOCATIONUSAGEINFO1 structure describes how an allocation can be used in DMA buffering.
-old-location : display\dxgk_allocationusageinfo1.htm
-old-project : display
-ms.assetid : 6de3363c-fcf8-4350-acee-b401bb3f82a6
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgk_allocationusageinfo1, DXGK_ALLOCATIONUSAGEINFO1 structure [Display Devices], DXGK_ALLOCATIONUSAGEINFO1, DmStructs_262d3b0f-50c6-429b-9b6e-34963d2ae42b.xml, d3dkmddi/DXGK_ALLOCATIONUSAGEINFO1, _DXGK_ALLOCATIONUSAGEINFO1
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_ALLOCATIONUSAGEINFO1
+UID: NS:d3dkmddi._DXGK_ALLOCATIONUSAGEINFO1
+title: "_DXGK_ALLOCATIONUSAGEINFO1"
+author: windows-driver-content
+description: The DXGK_ALLOCATIONUSAGEINFO1 structure describes how an allocation can be used in DMA buffering.
+old-location: display\dxgk_allocationusageinfo1.htm
+old-project: display
+ms.assetid: 6de3363c-fcf8-4350-acee-b401bb3f82a6
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgk_allocationusageinfo1, DXGK_ALLOCATIONUSAGEINFO1 structure [Display Devices], DXGK_ALLOCATIONUSAGEINFO1, DmStructs_262d3b0f-50c6-429b-9b6e-34963d2ae42b.xml, d3dkmddi/DXGK_ALLOCATIONUSAGEINFO1, _DXGK_ALLOCATIONUSAGEINFO1
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DXGK_ALLOCATIONUSAGEINFO1
+product: Windows
+targetos: Windows
+req.typenames: DXGK_ALLOCATIONUSAGEINFO1
 ---
 
 # _DXGK_ALLOCATIONUSAGEINFO1 structure

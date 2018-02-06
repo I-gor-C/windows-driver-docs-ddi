@@ -1,41 +1,46 @@
 ---
-UID : NF:iddcx.IddCxSwapChainGetMoveRegions
-title : IddCxSwapChainGetMoveRegions function
-author : windows-driver-content
-description : n OS callback function the driver calls when it wants retrieve the move regions for the current frame.
-old-location : display\iddcxswapchaingetmoveregions.htm
-old-project : display
-ms.assetid : ae8257a6-4d4c-446e-b144-1adfe0a28e50
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : iddcx/IddCxSwapChainGetMoveRegions, display.iddcxswapchaingetmoveregions, IddCxSwapChainGetMoveRegions method [Display Devices], IddCxSwapChainGetMoveRegions
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : iddcx.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "_Must_inspect_result_"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:iddcx.IddCxSwapChainGetMoveRegions
+title: IddCxSwapChainGetMoveRegions function
+author: windows-driver-content
+description: n OS callback function the driver calls when it wants retrieve the move regions for the current frame.
+old-location: display\iddcxswapchaingetmoveregions.htm
+old-project: display
+ms.assetid: ae8257a6-4d4c-446e-b144-1adfe0a28e50
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: iddcx/IddCxSwapChainGetMoveRegions, display.iddcxswapchaingetmoveregions, IddCxSwapChainGetMoveRegions method [Display Devices], IddCxSwapChainGetMoveRegions
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: iddcx.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "_Must_inspect_result_"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	iddcx.h
+apiname:
+-	IddCxSwapChainGetMoveRegions
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:iscsiprf._MSiSCSI_InitiatorInstanceStatistics
-title : "_MSiSCSI_InitiatorInstanceStatistics"
-author : windows-driver-content
-description : The MSiSCSI_InitiatorInstanceStatistics structure is used by iSCSI initiators to report initiator statistics.
-old-location : storage\msiscsi_initiatorinstancestatistics.htm
-old-project : storage
-ms.assetid : b07b8186-970a-428f-955f-4e7e6ab20bfc
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : PMSiSCSI_InitiatorInstanceStatistics structure pointer [Storage Devices], structs-iSCSI_6914e221-73b2-4626-9281-2e1748bd0048.xml, storage.msiscsi_initiatorinstancestatistics, MSiSCSI_InitiatorInstanceStatistics, *PMSiSCSI_InitiatorInstanceStatistics, iscsiprf/PMSiSCSI_InitiatorInstanceStatistics, iscsiprf/MSiSCSI_InitiatorInstanceStatistics, _MSiSCSI_InitiatorInstanceStatistics, MSiSCSI_InitiatorInstanceStatistics structure [Storage Devices], PMSiSCSI_InitiatorInstanceStatistics
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : iscsiprf.h
-req.include-header : Iscsiprf.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PMSiSCSI_InitiatorInstanceStatistics, MSiSCSI_InitiatorInstanceStatistics"
+UID: NS:iscsiprf._MSiSCSI_InitiatorInstanceStatistics
+title: "_MSiSCSI_InitiatorInstanceStatistics"
+author: windows-driver-content
+description: The MSiSCSI_InitiatorInstanceStatistics structure is used by iSCSI initiators to report initiator statistics.
+old-location: storage\msiscsi_initiatorinstancestatistics.htm
+old-project: storage
+ms.assetid: b07b8186-970a-428f-955f-4e7e6ab20bfc
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: PMSiSCSI_InitiatorInstanceStatistics structure pointer [Storage Devices], structs-iSCSI_6914e221-73b2-4626-9281-2e1748bd0048.xml, storage.msiscsi_initiatorinstancestatistics, MSiSCSI_InitiatorInstanceStatistics, *PMSiSCSI_InitiatorInstanceStatistics, iscsiprf/PMSiSCSI_InitiatorInstanceStatistics, iscsiprf/MSiSCSI_InitiatorInstanceStatistics, _MSiSCSI_InitiatorInstanceStatistics, MSiSCSI_InitiatorInstanceStatistics structure [Storage Devices], PMSiSCSI_InitiatorInstanceStatistics
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: iscsiprf.h
+req.include-header: Iscsiprf.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	iscsiprf.h
+apiname:
+-	MSiSCSI_InitiatorInstanceStatistics
+product: Windows
+targetos: Windows
+req.typenames: "*PMSiSCSI_InitiatorInstanceStatistics, MSiSCSI_InitiatorInstanceStatistics"
 ---
 
 # _MSiSCSI_InitiatorInstanceStatistics structure

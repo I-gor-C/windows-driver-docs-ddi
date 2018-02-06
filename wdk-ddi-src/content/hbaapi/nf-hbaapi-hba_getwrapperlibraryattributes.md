@@ -1,41 +1,46 @@
 ---
-UID : NF:hbaapi.HBA_GetWrapperLibraryAttributes
-title : HBA_GetWrapperLibraryAttributes function
-author : windows-driver-content
-description : The HBA_GetWrapperLibraryAttributes routine retrieves the attributes of the fibre channel HBA API library that are operating system-specific.
-old-location : storage\hba_getwrapperlibraryattributes.htm
-old-project : storage
-ms.assetid : c40b8f20-65e9-4e43-a402-14bd30f15975
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : fibreHBA_rtns_98e62721-8cee-4799-b25f-bf01b52d966c.xml, HBA_GetWrapperLibraryAttributes routine [Storage Devices], hbaapi/HBA_GetWrapperLibraryAttributes, storage.hba_getwrapperlibraryattributes, HBA_GetWrapperLibraryAttributes
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : hbaapi.h
-req.include-header : Hbaapi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Hbaapi.lib
-req.dll : Hbaapi.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HBA_WWNTYPE
+UID: NF:hbaapi.HBA_GetWrapperLibraryAttributes
+title: HBA_GetWrapperLibraryAttributes function
+author: windows-driver-content
+description: The HBA_GetWrapperLibraryAttributes routine retrieves the attributes of the fibre channel HBA API library that are operating system-specific.
+old-location: storage\hba_getwrapperlibraryattributes.htm
+old-project: storage
+ms.assetid: c40b8f20-65e9-4e43-a402-14bd30f15975
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: fibreHBA_rtns_98e62721-8cee-4799-b25f-bf01b52d966c.xml, HBA_GetWrapperLibraryAttributes routine [Storage Devices], hbaapi/HBA_GetWrapperLibraryAttributes, storage.hba_getwrapperlibraryattributes, HBA_GetWrapperLibraryAttributes
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: hbaapi.h
+req.include-header: Hbaapi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Hbaapi.lib
+req.dll: Hbaapi.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Hbaapi.dll
+apiname:
+-	HBA_GetWrapperLibraryAttributes
+product: Windows
+targetos: Windows
+req.typenames: HBA_WWNTYPE
 ---
 
 

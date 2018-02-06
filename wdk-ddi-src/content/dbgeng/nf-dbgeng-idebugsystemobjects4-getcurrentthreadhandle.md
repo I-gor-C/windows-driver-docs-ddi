@@ -1,41 +1,49 @@
 ---
-UID : NF:dbgeng.IDebugSystemObjects4.GetCurrentThreadHandle
-title : IDebugSystemObjects4::GetCurrentThreadHandle method
-author : windows-driver-content
-description : The GetCurrentThreadHandle method returns the system handle for the current thread.
-old-location : debugger\getcurrentthreadhandle.htm
-old-project : debugger
-ms.assetid : edbda821-8016-48db-a2f5-7f615428da0c
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugSystemObjects3::GetCurrentThreadHandle, IDebugSystemObjects2 interface [Windows Debugging], GetCurrentThreadHandle method, dbgeng/IDebugSystemObjects3::GetCurrentThreadHandle, GetCurrentThreadHandle method [Windows Debugging], IDebugSystemObjects interface, dbgeng/IDebugSystemObjects4::GetCurrentThreadHandle, debugger.getcurrentthreadhandle, IDebugSystemObjects4 interface [Windows Debugging], GetCurrentThreadHandle method, IDebugSystemObjects::GetCurrentThreadHandle, GetCurrentThreadHandle method [Windows Debugging], IDebugSystemObjects3 interface [Windows Debugging], GetCurrentThreadHandle method, GetCurrentThreadHandle method [Windows Debugging], IDebugSystemObjects2 interface, IDebugSystemObjects2::GetCurrentThreadHandle, IDebugSystemObjects4, GetCurrentThreadHandle method [Windows Debugging], IDebugSystemObjects3 interface, GetCurrentThreadHandle, GetCurrentThreadHandle method [Windows Debugging], IDebugSystemObjects4 interface, dbgeng/IDebugSystemObjects::GetCurrentThreadHandle, IDebugSystemObjects interface [Windows Debugging], GetCurrentThreadHandle method, IDebugSystemObjects_6c615962-bf20-4cdb-8bab-8afc142e8c65.xml, dbgeng/IDebugSystemObjects2::GetCurrentThreadHandle, IDebugSystemObjects4::GetCurrentThreadHandle
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSystemObjects4.GetCurrentThreadHandle
+title: IDebugSystemObjects4::GetCurrentThreadHandle method
+author: windows-driver-content
+description: The GetCurrentThreadHandle method returns the system handle for the current thread.
+old-location: debugger\getcurrentthreadhandle.htm
+old-project: debugger
+ms.assetid: edbda821-8016-48db-a2f5-7f615428da0c
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugSystemObjects3::GetCurrentThreadHandle, IDebugSystemObjects2 interface [Windows Debugging], GetCurrentThreadHandle method, dbgeng/IDebugSystemObjects3::GetCurrentThreadHandle, GetCurrentThreadHandle method [Windows Debugging], IDebugSystemObjects interface, dbgeng/IDebugSystemObjects4::GetCurrentThreadHandle, debugger.getcurrentthreadhandle, IDebugSystemObjects4 interface [Windows Debugging], GetCurrentThreadHandle method, IDebugSystemObjects::GetCurrentThreadHandle, GetCurrentThreadHandle method [Windows Debugging], IDebugSystemObjects3 interface [Windows Debugging], GetCurrentThreadHandle method, GetCurrentThreadHandle method [Windows Debugging], IDebugSystemObjects2 interface, IDebugSystemObjects2::GetCurrentThreadHandle, IDebugSystemObjects4, GetCurrentThreadHandle method [Windows Debugging], IDebugSystemObjects3 interface, GetCurrentThreadHandle, GetCurrentThreadHandle method [Windows Debugging], IDebugSystemObjects4 interface, dbgeng/IDebugSystemObjects::GetCurrentThreadHandle, IDebugSystemObjects interface [Windows Debugging], GetCurrentThreadHandle method, IDebugSystemObjects_6c615962-bf20-4cdb-8bab-8afc142e8c65.xml, dbgeng/IDebugSystemObjects2::GetCurrentThreadHandle, IDebugSystemObjects4::GetCurrentThreadHandle
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugSystemObjects.GetCurrentThreadHandle
+-	IDebugSystemObjects2.GetCurrentThreadHandle
+-	IDebugSystemObjects3.GetCurrentThreadHandle
+-	IDebugSystemObjects4.GetCurrentThreadHandle
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

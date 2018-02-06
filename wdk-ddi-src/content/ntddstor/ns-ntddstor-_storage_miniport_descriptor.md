@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddstor._STORAGE_MINIPORT_DESCRIPTOR
-title : "_STORAGE_MINIPORT_DESCRIPTOR"
-author : windows-driver-content
-description : Reserved for system use.
-old-location : storage\storage_miniport_descriptor.htm
-old-project : storage
-ms.assetid : 30497CA8-70B6-48F9-B5D5-45E606A3226E
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : STORAGE_MINIPORT_DESCRIPTOR, _STORAGE_MINIPORT_DESCRIPTOR, ntddstor/STORAGE_MINIPORT_DESCRIPTOR, storage.storage_miniport_descriptor, PSTORAGE_MINIPORT_DESCRIPTOR structure pointer [Storage Devices], PSTORAGE_MINIPORT_DESCRIPTOR, *PSTORAGE_MINIPORT_DESCRIPTOR, ntddstor/PSTORAGE_MINIPORT_DESCRIPTOR, STORAGE_MINIPORT_DESCRIPTOR structure [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddstor.h
-req.include-header : Ntddstor.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows Vista
-req.target-min-winversvr : Windows Server 2008
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STORAGE_MINIPORT_DESCRIPTOR, *PSTORAGE_MINIPORT_DESCRIPTOR
+UID: NS:ntddstor._STORAGE_MINIPORT_DESCRIPTOR
+title: "_STORAGE_MINIPORT_DESCRIPTOR"
+author: windows-driver-content
+description: Reserved for system use.
+old-location: storage\storage_miniport_descriptor.htm
+old-project: storage
+ms.assetid: 30497CA8-70B6-48F9-B5D5-45E606A3226E
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: STORAGE_MINIPORT_DESCRIPTOR, _STORAGE_MINIPORT_DESCRIPTOR, ntddstor/STORAGE_MINIPORT_DESCRIPTOR, storage.storage_miniport_descriptor, PSTORAGE_MINIPORT_DESCRIPTOR structure pointer [Storage Devices], PSTORAGE_MINIPORT_DESCRIPTOR, *PSTORAGE_MINIPORT_DESCRIPTOR, ntddstor/PSTORAGE_MINIPORT_DESCRIPTOR, STORAGE_MINIPORT_DESCRIPTOR structure [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddstor.h
+req.include-header: Ntddstor.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows Vista
+req.target-min-winversvr: Windows Server 2008
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddstor.h
+apiname:
+-	STORAGE_MINIPORT_DESCRIPTOR
+product: Windows
+targetos: Windows
+req.typenames: STORAGE_MINIPORT_DESCRIPTOR, *PSTORAGE_MINIPORT_DESCRIPTOR
 ---
 
 # _STORAGE_MINIPORT_DESCRIPTOR structure

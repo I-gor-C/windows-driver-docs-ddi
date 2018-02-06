@@ -1,42 +1,50 @@
 ---
-UID : NF:wdfusb.WdfUsbTargetPipeFormatRequestForRead
-title : WdfUsbTargetPipeFormatRequestForRead function
-author : windows-driver-content
-description : The WdfUsbTargetPipeFormatRequestForRead method builds a read request for a USB input pipe, but it does not send the request.
-old-location : wdf\wdfusbtargetpipeformatrequestforread.htm
-old-project : wdf
-ms.assetid : 33a6f597-2f33-4214-80c1-8bded182800a
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : kmdf.wdfusbtargetpipeformatrequestforread, wdf.wdfusbtargetpipeformatrequestforread, PFN_WDFUSBTARGETPIPEFORMATREQUESTFORREAD, wdfusb/WdfUsbTargetPipeFormatRequestForRead, WdfUsbTargetPipeFormatRequestForRead, WdfUsbTargetPipeFormatRequestForRead method, DFUsbRef_5cd8eeb4-5822-44ef-ba50-e978b780463b.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfusb.h
-req.include-header : Wdfusb.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2, RequestFormattedValid, RequestSendAndForgetNoFormatting, RequestSendAndForgetNoFormatting2, UsbKmdfIrql, UsbKmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfusb.WdfUsbTargetPipeFormatRequestForRead
+title: WdfUsbTargetPipeFormatRequestForRead function
+author: windows-driver-content
+description: The WdfUsbTargetPipeFormatRequestForRead method builds a read request for a USB input pipe, but it does not send the request.
+old-location: wdf\wdfusbtargetpipeformatrequestforread.htm
+old-project: wdf
+ms.assetid: 33a6f597-2f33-4214-80c1-8bded182800a
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: kmdf.wdfusbtargetpipeformatrequestforread, wdf.wdfusbtargetpipeformatrequestforread, PFN_WDFUSBTARGETPIPEFORMATREQUESTFORREAD, wdfusb/WdfUsbTargetPipeFormatRequestForRead, WdfUsbTargetPipeFormatRequestForRead, WdfUsbTargetPipeFormatRequestForRead method, DFUsbRef_5cd8eeb4-5822-44ef-ba50-e978b780463b.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfusb.h
+req.include-header: Wdfusb.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2, RequestFormattedValid, RequestSendAndForgetNoFormatting, RequestSendAndForgetNoFormatting2, UsbKmdfIrql, UsbKmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+-	WUDFx02000.dll
+-	WUDFx02000.dll.dll
+apiname:
+-	WdfUsbTargetPipeFormatRequestForRead
+product: Windows
+targetos: Windows
+req.typenames: WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
+req.product: Windows 10 or later.
 ---
 
 

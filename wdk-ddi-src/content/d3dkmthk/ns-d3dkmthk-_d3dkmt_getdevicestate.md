@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmthk._D3DKMT_GETDEVICESTATE
-title : "_D3DKMT_GETDEVICESTATE"
-author : windows-driver-content
-description : The D3DKMT_GETDEVICESTATE structure describes parameters for retrieving the state of a device.
-old-location : display\d3dkmt_getdevicestate.htm
-old-project : display
-ms.assetid : b90f8b63-51d3-4de4-9d8b-91926150fd30
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DKMT_GETDEVICESTATE, d3dkmthk/D3DKMT_GETDEVICESTATE, _D3DKMT_GETDEVICESTATE, D3DKMT_GETDEVICESTATE structure [Display Devices], display.d3dkmt_getdevicestate, OpenGL_Structs_39a99244-3951-4a2f-a92d-4aec50589cde.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_GETDEVICESTATE
+UID: NS:d3dkmthk._D3DKMT_GETDEVICESTATE
+title: "_D3DKMT_GETDEVICESTATE"
+author: windows-driver-content
+description: The D3DKMT_GETDEVICESTATE structure describes parameters for retrieving the state of a device.
+old-location: display\d3dkmt_getdevicestate.htm
+old-project: display
+ms.assetid: b90f8b63-51d3-4de4-9d8b-91926150fd30
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DKMT_GETDEVICESTATE, d3dkmthk/D3DKMT_GETDEVICESTATE, _D3DKMT_GETDEVICESTATE, D3DKMT_GETDEVICESTATE structure [Display Devices], display.d3dkmt_getdevicestate, OpenGL_Structs_39a99244-3951-4a2f-a92d-4aec50589cde.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmthk.h
+apiname:
+-	D3DKMT_GETDEVICESTATE
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_GETDEVICESTATE
 ---
 
 # _D3DKMT_GETDEVICESTATE structure

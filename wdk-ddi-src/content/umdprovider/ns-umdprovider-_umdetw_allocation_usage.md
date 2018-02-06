@@ -1,42 +1,47 @@
 ---
-UID : NS:umdprovider._UMDETW_ALLOCATION_USAGE
-title : "_UMDETW_ALLOCATION_USAGE"
-author : windows-driver-content
-description : Indicates the reason for mapping from a Microsoft Direct3D memory allocation to a Microsoft DirectX graphics kernel subsystem (Dxgkrnl.sys) allocation.
-old-location : display\umdetw_allocation_usage.htm
-old-project : display
-ms.assetid : 40522471-0fbc-4193-8164-60138e3862fe
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : UMDETW_ALLOCATION_USAGE structure [Display Devices], _UMDETW_ALLOCATION_USAGE, display.umdetw_allocation_usage, UMDETW_ALLOCATION_USAGE, umdprovider/UMDETW_ALLOCATION_USAGE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : umdprovider.h
-req.include-header : Umdprovider.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : UMDETW_ALLOCATION_USAGE
-req.product : Windows 10 or later.
+UID: NS:umdprovider._UMDETW_ALLOCATION_USAGE
+title: "_UMDETW_ALLOCATION_USAGE"
+author: windows-driver-content
+description: Indicates the reason for mapping from a Microsoft Direct3D memory allocation to a Microsoft DirectX graphics kernel subsystem (Dxgkrnl.sys) allocation.
+old-location: display\umdetw_allocation_usage.htm
+old-project: display
+ms.assetid: 40522471-0fbc-4193-8164-60138e3862fe
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: UMDETW_ALLOCATION_USAGE structure [Display Devices], _UMDETW_ALLOCATION_USAGE, display.umdetw_allocation_usage, UMDETW_ALLOCATION_USAGE, umdprovider/UMDETW_ALLOCATION_USAGE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: umdprovider.h
+req.include-header: Umdprovider.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	umdprovider.h
+apiname:
+-	UMDETW_ALLOCATION_USAGE
+product: Windows
+targetos: Windows
+req.typenames: UMDETW_ALLOCATION_USAGE
+req.product: Windows 10 or later.
 ---
 
 # _UMDETW_ALLOCATION_USAGE structure

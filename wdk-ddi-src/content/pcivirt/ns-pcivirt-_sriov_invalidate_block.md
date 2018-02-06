@@ -1,41 +1,46 @@
 ---
-UID : NS:pcivirt._SRIOV_INVALIDATE_BLOCK
-title : "_SRIOV_INVALIDATE_BLOCK"
-author : windows-driver-content
-description : Contains the configuration block information. This structure is used in a IOCTL_SRIOV_INVALIDATE_BLOCK request.
-old-location : pci\sriov_invalidate_block.htm
-old-project : PCI
-ms.assetid : 483e6144-9752-4d47-9ed4-7e73bc0a59cc
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : PCI.sriov_invalidate_block, SRIOV_INVALIDATE_BLOCK structure [Buses], SRIOV_INVALIDATE_BLOCK, pcivirt/SRIOV_INVALIDATE_BLOCK, *PSRIOV_INVALIDATE_BLOCK, _SRIOV_INVALIDATE_BLOCK
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : pcivirt.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SRIOV_INVALIDATE_BLOCK, *PSRIOV_INVALIDATE_BLOCK
+UID: NS:pcivirt._SRIOV_INVALIDATE_BLOCK
+title: "_SRIOV_INVALIDATE_BLOCK"
+author: windows-driver-content
+description: Contains the configuration block information. This structure is used in a IOCTL_SRIOV_INVALIDATE_BLOCK request.
+old-location: pci\sriov_invalidate_block.htm
+old-project: PCI
+ms.assetid: 483e6144-9752-4d47-9ed4-7e73bc0a59cc
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: PCI.sriov_invalidate_block, SRIOV_INVALIDATE_BLOCK structure [Buses], SRIOV_INVALIDATE_BLOCK, pcivirt/SRIOV_INVALIDATE_BLOCK, *PSRIOV_INVALIDATE_BLOCK, _SRIOV_INVALIDATE_BLOCK
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: pcivirt.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Pcivirt.h
+apiname:
+-	SRIOV_INVALIDATE_BLOCK
+product: Windows
+targetos: Windows
+req.typenames: SRIOV_INVALIDATE_BLOCK, *PSRIOV_INVALIDATE_BLOCK
 ---
 
 # _SRIOV_INVALIDATE_BLOCK structure

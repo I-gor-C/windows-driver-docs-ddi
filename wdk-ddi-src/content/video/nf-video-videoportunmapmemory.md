@@ -1,42 +1,47 @@
 ---
-UID : NF:video.VideoPortUnmapMemory
-title : VideoPortUnmapMemory function
-author : windows-driver-content
-description : The VideoPortUnmapMemory function releases a mapping between a logical address range for the adapter and a virtual address range in the user-mode address space of a particular thread. This function is the complement of VideoPortMapMemory.
-old-location : display\videoportunmapmemory.htm
-old-project : display
-ms.assetid : 224c8483-56b8-4341-8347-fa119ec04024
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : video/VideoPortUnmapMemory, display.videoportunmapmemory, VideoPort_Functions_394a66fa-47cd-4e0e-8467-3c3562d27822.xml, VideoPortUnmapMemory, VideoPortUnmapMemory function [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows 2000 and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Videoprt.lib
-req.dll : Videoprt.sys
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_PORT_SERVICES
-req.product : Windows 10 or later.
+UID: NF:video.VideoPortUnmapMemory
+title: VideoPortUnmapMemory function
+author: windows-driver-content
+description: The VideoPortUnmapMemory function releases a mapping between a logical address range for the adapter and a virtual address range in the user-mode address space of a particular thread. This function is the complement of VideoPortMapMemory.
+old-location: display\videoportunmapmemory.htm
+old-project: display
+ms.assetid: 224c8483-56b8-4341-8347-fa119ec04024
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: video/VideoPortUnmapMemory, display.videoportunmapmemory, VideoPort_Functions_394a66fa-47cd-4e0e-8467-3c3562d27822.xml, VideoPortUnmapMemory, VideoPortUnmapMemory function [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows 2000 and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Videoprt.lib
+req.dll: Videoprt.sys
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Videoprt.sys
+apiname:
+-	VideoPortUnmapMemory
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_PORT_SERVICES
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NS:windot11.DOT11_ROAMING_COMPLETION_PARAMETERS
-title : DOT11_ROAMING_COMPLETION_PARAMETERS
-author : windows-driver-content
-description : Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
-old-location : netvista\dot11_roaming_completion_parameters.htm
-old-project : netvista
-ms.assetid : 535857c5-dd71-4575-8475-ff6c7c934dbe
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.dot11_roaming_completion_parameters, windot11/PDOT11_ROAMING_COMPLETION_PARAMETERS, PDOT11_ROAMING_COMPLETION_PARAMETERS, DOT11_ROAMING_COMPLETION_PARAMETERS structure [Network Drivers Starting with Windows Vista], Native_802.11_data_types_49eb3670-7bdc-41ad-b143-cb9d1be8c32f.xml, windot11/DOT11_ROAMING_COMPLETION_PARAMETERS, PDOT11_ROAMING_COMPLETION_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], DOT11_ROAMING_COMPLETION_PARAMETERS, *PDOT11_ROAMING_COMPLETION_PARAMETERS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : windot11.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating   systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT11_ROAMING_COMPLETION_PARAMETERS, *PDOT11_ROAMING_COMPLETION_PARAMETERS
-req.product : Windows 10 or later.
+UID: NS:windot11.DOT11_ROAMING_COMPLETION_PARAMETERS
+title: DOT11_ROAMING_COMPLETION_PARAMETERS
+author: windows-driver-content
+description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+old-location: netvista\dot11_roaming_completion_parameters.htm
+old-project: netvista
+ms.assetid: 535857c5-dd71-4575-8475-ff6c7c934dbe
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.dot11_roaming_completion_parameters, windot11/PDOT11_ROAMING_COMPLETION_PARAMETERS, PDOT11_ROAMING_COMPLETION_PARAMETERS, DOT11_ROAMING_COMPLETION_PARAMETERS structure [Network Drivers Starting with Windows Vista], Native_802.11_data_types_49eb3670-7bdc-41ad-b143-cb9d1be8c32f.xml, windot11/DOT11_ROAMING_COMPLETION_PARAMETERS, PDOT11_ROAMING_COMPLETION_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], DOT11_ROAMING_COMPLETION_PARAMETERS, *PDOT11_ROAMING_COMPLETION_PARAMETERS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: windot11.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	windot11.h
+apiname:
+-	DOT11_ROAMING_COMPLETION_PARAMETERS
+product: Windows
+targetos: Windows
+req.typenames: DOT11_ROAMING_COMPLETION_PARAMETERS, *PDOT11_ROAMING_COMPLETION_PARAMETERS
+req.product: Windows 10 or later.
 ---
 
 # DOT11_ROAMING_COMPLETION_PARAMETERS structure

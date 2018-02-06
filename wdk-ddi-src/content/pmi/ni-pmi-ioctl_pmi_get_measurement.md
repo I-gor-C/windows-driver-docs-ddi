@@ -1,41 +1,46 @@
 ---
-UID : NI:pmi.IOCTL_PMI_GET_MEASUREMENT
-title : IOCTL_PMI_GET_MEASUREMENT
-author : windows-driver-content
-description : The IOCTL_PMI_GET_MEASUREMENT request returns the current measurement data from a power meter.
-old-location : powermeter\ioctl_pmi_get_measurement.htm
-old-project : powermeter
-ms.assetid : 2f479147-cccb-44c8-bc86-37c6731cb95b
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : powermeter.ioctl_pmi_get_measurement, IOCTL_PMI_GET_MEASUREMENT control code [Power Metering and Budgeting Devices], IOCTL_PMI_GET_MEASUREMENT, pmi/IOCTL_PMI_GET_MEASUREMENT, PowerMeterRef_2317a4b3-7909-4c52-a012-39c892a39154.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : pmi.h
-req.include-header : Pmi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7, Windows Server 2008 R2, and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PMI_MEASUREMENT_UNIT
+UID: NI:pmi.IOCTL_PMI_GET_MEASUREMENT
+title: IOCTL_PMI_GET_MEASUREMENT
+author: windows-driver-content
+description: The IOCTL_PMI_GET_MEASUREMENT request returns the current measurement data from a power meter.
+old-location: powermeter\ioctl_pmi_get_measurement.htm
+old-project: powermeter
+ms.assetid: 2f479147-cccb-44c8-bc86-37c6731cb95b
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: powermeter.ioctl_pmi_get_measurement, IOCTL_PMI_GET_MEASUREMENT control code [Power Metering and Budgeting Devices], IOCTL_PMI_GET_MEASUREMENT, pmi/IOCTL_PMI_GET_MEASUREMENT, PowerMeterRef_2317a4b3-7909-4c52-a012-39c892a39154.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: pmi.h
+req.include-header: Pmi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7, Windows Server 2008 R2, and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Pmi.h
+apiname:
+-	IOCTL_PMI_GET_MEASUREMENT
+product: Windows
+targetos: Windows
+req.typenames: PMI_MEASUREMENT_UNIT
 ---
 
 # IOCTL_PMI_GET_MEASUREMENT IOCTL

@@ -1,41 +1,47 @@
 ---
-UID : NF:dbgeng.IDebugAdvanced3.GetSymbolInformation
-title : IDebugAdvanced3::GetSymbolInformation method
-author : windows-driver-content
-description : The GetSymbolInformation method returns specified information about a symbol.
-old-location : debugger\getsymbolinformation.htm
-old-project : debugger
-ms.assetid : 1866c6ad-57a2-4f3d-a2c8-f5748ecf42bc
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : GetSymbolInformation method [Windows Debugging], IDebugAdvanced2::GetSymbolInformation, dbgeng/IDebugAdvanced2::GetSymbolInformation, IDebugAdvanced3, GetSymbolInformation, IDebugAdvanced2 interface [Windows Debugging], GetSymbolInformation method, dbgeng/IDebugAdvanced3::GetSymbolInformation, IDebugAdvanced_353e07f5-e506-4d5f-8c64-d3f500ff283f.xml, GetSymbolInformation method [Windows Debugging], IDebugAdvanced3 interface, IDebugAdvanced3 interface [Windows Debugging], GetSymbolInformation method, debugger.getsymbolinformation, IDebugAdvanced3::GetSymbolInformation, GetSymbolInformation method [Windows Debugging], IDebugAdvanced2 interface
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugAdvanced3.GetSymbolInformation
+title: IDebugAdvanced3::GetSymbolInformation method
+author: windows-driver-content
+description: The GetSymbolInformation method returns specified information about a symbol.
+old-location: debugger\getsymbolinformation.htm
+old-project: debugger
+ms.assetid: 1866c6ad-57a2-4f3d-a2c8-f5748ecf42bc
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: GetSymbolInformation method [Windows Debugging], IDebugAdvanced2::GetSymbolInformation, dbgeng/IDebugAdvanced2::GetSymbolInformation, IDebugAdvanced3, GetSymbolInformation, IDebugAdvanced2 interface [Windows Debugging], GetSymbolInformation method, dbgeng/IDebugAdvanced3::GetSymbolInformation, IDebugAdvanced_353e07f5-e506-4d5f-8c64-d3f500ff283f.xml, GetSymbolInformation method [Windows Debugging], IDebugAdvanced3 interface, IDebugAdvanced3 interface [Windows Debugging], GetSymbolInformation method, debugger.getsymbolinformation, IDebugAdvanced3::GetSymbolInformation, GetSymbolInformation method [Windows Debugging], IDebugAdvanced2 interface
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugAdvanced2.GetSymbolInformation
+-	IDebugAdvanced3.GetSymbolInformation
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

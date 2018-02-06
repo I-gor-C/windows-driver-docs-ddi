@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_CREATEEXTENSIONDEVICE
-title : PFND3DDDI_CREATEEXTENSIONDEVICE
-author : windows-driver-content
-description : The CreateExtensionDevice function creates a Microsoft DirectX Video Acceleration (DirectX VA) extension device.
-old-location : display\createextensiondevice.htm
-old-project : display
-ms.assetid : 7e6dbb70-2e74-4ddb-a504-2c8145af99d9
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.createextensiondevice, CreateExtensionDevice callback function [Display Devices], CreateExtensionDevice, PFND3DDDI_CREATEEXTENSIONDEVICE, PFND3DDDI_CREATEEXTENSIONDEVICE, d3dumddi/CreateExtensionDevice, UserModeDisplayDriver_Functions_342ee084-e24a-43a8-99a9-c83c2670e2e4.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_CREATEEXTENSIONDEVICE
+title: PFND3DDDI_CREATEEXTENSIONDEVICE
+author: windows-driver-content
+description: The CreateExtensionDevice function creates a Microsoft DirectX Video Acceleration (DirectX VA) extension device.
+old-location: display\createextensiondevice.htm
+old-project: display
+ms.assetid: 7e6dbb70-2e74-4ddb-a504-2c8145af99d9
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.createextensiondevice, CreateExtensionDevice callback function [Display Devices], CreateExtensionDevice, PFND3DDDI_CREATEEXTENSIONDEVICE, PFND3DDDI_CREATEEXTENSIONDEVICE, d3dumddi/CreateExtensionDevice, UserModeDisplayDriver_Functions_342ee084-e24a-43a8-99a9-c83c2670e2e4.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	CreateExtensionDevice
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

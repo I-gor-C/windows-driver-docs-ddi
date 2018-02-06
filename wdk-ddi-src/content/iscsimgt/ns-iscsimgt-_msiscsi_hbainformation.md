@@ -1,41 +1,46 @@
 ---
-UID : NS:iscsimgt._MSiSCSI_HBAInformation
-title : "_MSiSCSI_HBAInformation"
-author : windows-driver-content
-description : The MSiSCSI_HBAInformation structure is used by storage miniport drivers to report information about the host bus adapters (HBAs) that they manage to the iSCSI initiator service.
-old-location : storage\msiscsi_hbainformation.htm
-old-project : storage
-ms.assetid : ee2951e0-2632-44b0-870d-33d4d48ac8e8
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : MSiSCSI_HBAInformation, _MSiSCSI_HBAInformation, PMSiSCSI_HBAInformation structure pointer [Storage Devices], structs-iSCSI_f6de2645-3ba4-444e-97a8-3115eb109a95.xml, iscsimgt/PMSiSCSI_HBAInformation, *PMSiSCSI_HBAInformation, MSiSCSI_HBAInformation structure [Storage Devices], PMSiSCSI_HBAInformation, storage.msiscsi_hbainformation, iscsimgt/MSiSCSI_HBAInformation
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : iscsimgt.h
-req.include-header : Iscsimgt.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : MSiSCSI_HBAInformation, *PMSiSCSI_HBAInformation
+UID: NS:iscsimgt._MSiSCSI_HBAInformation
+title: "_MSiSCSI_HBAInformation"
+author: windows-driver-content
+description: The MSiSCSI_HBAInformation structure is used by storage miniport drivers to report information about the host bus adapters (HBAs) that they manage to the iSCSI initiator service.
+old-location: storage\msiscsi_hbainformation.htm
+old-project: storage
+ms.assetid: ee2951e0-2632-44b0-870d-33d4d48ac8e8
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: MSiSCSI_HBAInformation, _MSiSCSI_HBAInformation, PMSiSCSI_HBAInformation structure pointer [Storage Devices], structs-iSCSI_f6de2645-3ba4-444e-97a8-3115eb109a95.xml, iscsimgt/PMSiSCSI_HBAInformation, *PMSiSCSI_HBAInformation, MSiSCSI_HBAInformation structure [Storage Devices], PMSiSCSI_HBAInformation, storage.msiscsi_hbainformation, iscsimgt/MSiSCSI_HBAInformation
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: iscsimgt.h
+req.include-header: Iscsimgt.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	iscsimgt.h
+apiname:
+-	MSiSCSI_HBAInformation
+product: Windows
+targetos: Windows
+req.typenames: MSiSCSI_HBAInformation, *PMSiSCSI_HBAInformation
 ---
 
 # _MSiSCSI_HBAInformation structure

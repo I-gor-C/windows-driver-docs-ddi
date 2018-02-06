@@ -1,42 +1,47 @@
 ---
-UID : NF:sdplib.SdpAddAttributeToTree
-title : SdpAddAttributeToTree function
-author : windows-driver-content
-description : The Bluetooth SdpAddAttributeToTree function is used to attach an SDP attribute node to the top level of an SDP record.
-old-location : bltooth\sdpaddattributetotree.htm
-old-project : bltooth
-ms.assetid : f5b72de2-c2e9-44ac-a2a7-04271e9253d3
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : SdpAddAttributeToTree, bth_funcs_5a46529e-8b1b-474a-a005-16f7a5562d91.xml, bltooth.sdpaddattributetotree, sdplib/SdpAddAttributeToTree, SdpAddAttributeToTree function [Bluetooth Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : sdplib.h
-req.include-header : BthSdpddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Versions:\_Supported in Windows Vista, and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= PASSIVE_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SDCMD_DESCRIPTOR, *PSDCMD_DESCRIPTOR
-req.product : Windows 10 or later.
+UID: NF:sdplib.SdpAddAttributeToTree
+title: SdpAddAttributeToTree function
+author: windows-driver-content
+description: The Bluetooth SdpAddAttributeToTree function is used to attach an SDP attribute node to the top level of an SDP record.
+old-location: bltooth\sdpaddattributetotree.htm
+old-project: bltooth
+ms.assetid: f5b72de2-c2e9-44ac-a2a7-04271e9253d3
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: SdpAddAttributeToTree, bth_funcs_5a46529e-8b1b-474a-a005-16f7a5562d91.xml, bltooth.sdpaddattributetotree, sdplib/SdpAddAttributeToTree, SdpAddAttributeToTree function [Bluetooth Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: sdplib.h
+req.include-header: BthSdpddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Versions:\_Supported in Windows Vista, and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= PASSIVE_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	sdplib.h
+apiname:
+-	SdpAddAttributeToTree
+product: Windows
+targetos: Windows
+req.typenames: SDCMD_DESCRIPTOR, *PSDCMD_DESCRIPTOR
+req.product: Windows 10 or later.
 ---
 
 

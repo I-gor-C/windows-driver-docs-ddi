@@ -1,41 +1,46 @@
 ---
-UID : NS:ndischimney._NDIS_MINIPORT_OFFLOAD_BLOCK_LIST
-title : "_NDIS_MINIPORT_OFFLOAD_BLOCK_LIST"
-author : windows-driver-content
-description : The NDIS_MINIPORT_OFFLOAD_BLOCK_LIST structure is the basic building block of a TCP chimney offload state tree. An offload state tree can contain one or more NDIS_MINIPORT_OFFLOAD_BLOCK_LIST structures.
-old-location : netvista\ndis_miniport_offload_block_list.htm
-old-project : netvista
-ms.assetid : ebc98e65-5d11-4c3d-aea1-dfad1434c093
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : ndischimney/PNDIS_MINIPORT_OFFLOAD_BLOCK_LIST, NDIS_MINIPORT_OFFLOAD_BLOCK_LIST structure [Network Drivers Starting with Windows Vista], netvista.ndis_miniport_offload_block_list, _NDIS_MINIPORT_OFFLOAD_BLOCK_LIST, ndischimney/NDIS_MINIPORT_OFFLOAD_BLOCK_LIST, PNDIS_MINIPORT_OFFLOAD_BLOCK_LIST structure pointer [Network Drivers Starting with Windows Vista], *PNDIS_MINIPORT_OFFLOAD_BLOCK_LIST, NDIS_MINIPORT_OFFLOAD_BLOCK_LIST, tcp_chim_struct_34a99dea-527f-421e-a3a7-92a7c1f7d503.xml, PNDIS_MINIPORT_OFFLOAD_BLOCK_LIST
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndischimney.h
-req.include-header : Ndischimney.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_MINIPORT_OFFLOAD_BLOCK_LIST, *PNDIS_MINIPORT_OFFLOAD_BLOCK_LIST
+UID: NS:ndischimney._NDIS_MINIPORT_OFFLOAD_BLOCK_LIST
+title: "_NDIS_MINIPORT_OFFLOAD_BLOCK_LIST"
+author: windows-driver-content
+description: The NDIS_MINIPORT_OFFLOAD_BLOCK_LIST structure is the basic building block of a TCP chimney offload state tree. An offload state tree can contain one or more NDIS_MINIPORT_OFFLOAD_BLOCK_LIST structures.
+old-location: netvista\ndis_miniport_offload_block_list.htm
+old-project: netvista
+ms.assetid: ebc98e65-5d11-4c3d-aea1-dfad1434c093
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: ndischimney/PNDIS_MINIPORT_OFFLOAD_BLOCK_LIST, NDIS_MINIPORT_OFFLOAD_BLOCK_LIST structure [Network Drivers Starting with Windows Vista], netvista.ndis_miniport_offload_block_list, _NDIS_MINIPORT_OFFLOAD_BLOCK_LIST, ndischimney/NDIS_MINIPORT_OFFLOAD_BLOCK_LIST, PNDIS_MINIPORT_OFFLOAD_BLOCK_LIST structure pointer [Network Drivers Starting with Windows Vista], *PNDIS_MINIPORT_OFFLOAD_BLOCK_LIST, NDIS_MINIPORT_OFFLOAD_BLOCK_LIST, tcp_chim_struct_34a99dea-527f-421e-a3a7-92a7c1f7d503.xml, PNDIS_MINIPORT_OFFLOAD_BLOCK_LIST
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndischimney.h
+req.include-header: Ndischimney.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndischimney.h
+apiname:
+-	NDIS_MINIPORT_OFFLOAD_BLOCK_LIST
+product: Windows
+targetos: Windows
+req.typenames: NDIS_MINIPORT_OFFLOAD_BLOCK_LIST, *PNDIS_MINIPORT_OFFLOAD_BLOCK_LIST
 ---
 
 # _NDIS_MINIPORT_OFFLOAD_BLOCK_LIST structure

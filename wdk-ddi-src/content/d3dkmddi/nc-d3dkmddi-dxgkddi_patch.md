@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dkmddi.DXGKDDI_PATCH
-title : DXGKDDI_PATCH
-author : windows-driver-content
-description : The DxgkDdiPatch function assigns physical addresses to the given direct memory access (DMA) buffer before the DMA buffer is submitted to the graphics hardware.
-old-location : display\dxgkddipatch.htm
-old-project : display
-ms.assetid : 363be784-0e3b-4f9a-a643-80857478bbae
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkddipatch, DxgkDdiPatch callback function [Display Devices], DxgkDdiPatch, DXGKDDI_PATCH, DXGKDDI_PATCH, d3dkmddi/DxgkDdiPatch, DmFunctions_dc8691fa-b688-4762-a641-93e4625d8931.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dkmddi.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
+UID: NC:d3dkmddi.DXGKDDI_PATCH
+title: DXGKDDI_PATCH
+author: windows-driver-content
+description: The DxgkDdiPatch function assigns physical addresses to the given direct memory access (DMA) buffer before the DMA buffer is submitted to the graphics hardware.
+old-location: display\dxgkddipatch.htm
+old-project: display
+ms.assetid: 363be784-0e3b-4f9a-a643-80857478bbae
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkddipatch, DxgkDdiPatch callback function [Display Devices], DxgkDdiPatch, DXGKDDI_PATCH, DXGKDDI_PATCH, d3dkmddi/DxgkDdiPatch, DmFunctions_dc8691fa-b688-4762-a641-93e4625d8931.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dkmddi.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DxgkDdiPatch
+product: Windows
+targetos: Windows
+req.typenames: DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
 

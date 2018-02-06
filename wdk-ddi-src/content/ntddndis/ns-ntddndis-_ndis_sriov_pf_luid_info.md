@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddndis._NDIS_SRIOV_PF_LUID_INFO
-title : "_NDIS_SRIOV_PF_LUID_INFO"
-author : windows-driver-content
-description : The NDIS_SRIOV_PF_LUID_INFO structure specifies the locally unique identifier (LUID) associated with the network adapter's PCI Express (PCIe) Physical Function (PF).
-old-location : netvista\ndis_sriov_pf_luid_info.htm
-old-project : netvista
-ms.assetid : 03a83321-8396-4400-a15c-84a3b507702d
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NDIS_SRIOV_PF_LUID_INFO structure [Network Drivers Starting with Windows Vista], PNDIS_SRIOV_PF_LUID_INFO, netvista.ndis_sriov_pf_luid_info, ntddndis/PNDIS_SRIOV_PF_LUID_INFO, _NDIS_SRIOV_PF_LUID_INFO, *PNDIS_SRIOV_PF_LUID_INFO, NDIS_SRIOV_PF_LUID_INFO, PNDIS_SRIOV_PF_LUID_INFO structure pointer [Network Drivers Starting with Windows Vista], ntddndis/NDIS_SRIOV_PF_LUID_INFO
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.30 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SRIOV_PF_LUID_INFO, *PNDIS_SRIOV_PF_LUID_INFO
+UID: NS:ntddndis._NDIS_SRIOV_PF_LUID_INFO
+title: "_NDIS_SRIOV_PF_LUID_INFO"
+author: windows-driver-content
+description: The NDIS_SRIOV_PF_LUID_INFO structure specifies the locally unique identifier (LUID) associated with the network adapter's PCI Express (PCIe) Physical Function (PF).
+old-location: netvista\ndis_sriov_pf_luid_info.htm
+old-project: netvista
+ms.assetid: 03a83321-8396-4400-a15c-84a3b507702d
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NDIS_SRIOV_PF_LUID_INFO structure [Network Drivers Starting with Windows Vista], PNDIS_SRIOV_PF_LUID_INFO, netvista.ndis_sriov_pf_luid_info, ntddndis/PNDIS_SRIOV_PF_LUID_INFO, _NDIS_SRIOV_PF_LUID_INFO, *PNDIS_SRIOV_PF_LUID_INFO, NDIS_SRIOV_PF_LUID_INFO, PNDIS_SRIOV_PF_LUID_INFO structure pointer [Network Drivers Starting with Windows Vista], ntddndis/NDIS_SRIOV_PF_LUID_INFO
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.30 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddndis.h
+apiname:
+-	NDIS_SRIOV_PF_LUID_INFO
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SRIOV_PF_LUID_INFO, *PNDIS_SRIOV_PF_LUID_INFO
 ---
 
 # _NDIS_SRIOV_PF_LUID_INFO structure

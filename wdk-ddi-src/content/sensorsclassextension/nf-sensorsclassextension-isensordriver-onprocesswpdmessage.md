@@ -1,42 +1,48 @@
 ---
-UID : NF:sensorsclassextension.ISensorDriver.OnProcessWpdMessage
-title : ISensorDriver::OnProcessWpdMessage method
-author : windows-driver-content
-description : The ISensorDriver::OnProcessWpdMessage method handles Windows Portable Device (WPD) commands that the ISensorClassExtension::ProcessIoControl method does not handle internally.
-old-location : sensors\isensordriver_onprocesswpdmessage.htm
-old-project : sensors
-ms.assetid : 4780d0ea-a54a-4125-b3b6-2210a14eff71
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : ISensorDriver, sensors.isensordriver_onprocesswpdmessage, OnProcessWpdMessage method [Sensor Devices], OnProcessWpdMessage, ISensorDriver::OnProcessWpdMessage
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : sensorsclassextension.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : SensorsClassExtension.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SensorConnectionType
-req.product : Windows 10 or later.
+UID: NF:sensorsclassextension.ISensorDriver.OnProcessWpdMessage
+title: ISensorDriver::OnProcessWpdMessage method
+author: windows-driver-content
+description: The ISensorDriver::OnProcessWpdMessage method handles Windows Portable Device (WPD) commands that the ISensorClassExtension::ProcessIoControl method does not handle internally.
+old-location: sensors\isensordriver_onprocesswpdmessage.htm
+old-project: sensors
+ms.assetid: 4780d0ea-a54a-4125-b3b6-2210a14eff71
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: ISensorDriver, sensors.isensordriver_onprocesswpdmessage, OnProcessWpdMessage method [Sensor Devices], OnProcessWpdMessage, ISensorDriver::OnProcessWpdMessage
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: sensorsclassextension.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: SensorsClassExtension.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	SensorsClassExtension.lib
+-	SensorsClassExtension.dll
+apiname:
+-	OnProcessWpdMessage
+product: Windows
+targetos: Windows
+req.typenames: SensorConnectionType
+req.product: Windows 10 or later.
 ---
 
 

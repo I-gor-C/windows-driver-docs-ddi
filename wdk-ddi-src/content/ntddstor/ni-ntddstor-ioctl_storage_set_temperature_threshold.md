@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddstor.IOCTL_STORAGE_SET_TEMPERATURE_THRESHOLD
-title : IOCTL_STORAGE_SET_TEMPERATURE_THRESHOLD
-author : windows-driver-content
-description : A driver can use IOCTL_STORAGE_SET_TEMPERATURE_THRESHOLD to set the temperature threshold of a storage device (when supported by the hardware).
-old-location : storage\ioctl_storage_set_temperature_threshold.htm
-old-project : storage
-ms.assetid : 5D7348DC-1114-4346-9486-FCCE2C0F3E0F
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_storage_set_temperature_threshold, IOCTL_STORAGE_SET_TEMPERATURE_THRESHOLD control code [Storage Devices], IOCTL_STORAGE_SET_TEMPERATURE_THRESHOLD, ntddstor/IOCTL_STORAGE_SET_TEMPERATURE_THRESHOLD
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddstor.h
-req.include-header : Ntddstor.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STORAGE_ZONE_CONDITION, *PSTORAGE_ZONE_CONDITION
+UID: NI:ntddstor.IOCTL_STORAGE_SET_TEMPERATURE_THRESHOLD
+title: IOCTL_STORAGE_SET_TEMPERATURE_THRESHOLD
+author: windows-driver-content
+description: A driver can use IOCTL_STORAGE_SET_TEMPERATURE_THRESHOLD to set the temperature threshold of a storage device (when supported by the hardware).
+old-location: storage\ioctl_storage_set_temperature_threshold.htm
+old-project: storage
+ms.assetid: 5D7348DC-1114-4346-9486-FCCE2C0F3E0F
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_storage_set_temperature_threshold, IOCTL_STORAGE_SET_TEMPERATURE_THRESHOLD control code [Storage Devices], IOCTL_STORAGE_SET_TEMPERATURE_THRESHOLD, ntddstor/IOCTL_STORAGE_SET_TEMPERATURE_THRESHOLD
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddstor.h
+req.include-header: Ntddstor.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddstor.h
+apiname:
+-	IOCTL_STORAGE_SET_TEMPERATURE_THRESHOLD
+product: Windows
+targetos: Windows
+req.typenames: STORAGE_ZONE_CONDITION, *PSTORAGE_ZONE_CONDITION
 ---
 
 # IOCTL_STORAGE_SET_TEMPERATURE_THRESHOLD IOCTL

@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.IoGetNextIrpStackLocation
-title : IoGetNextIrpStackLocation function
-author : windows-driver-content
-description : The IoGetNextIrpStackLocation routine gives a higher level driver access to the next-lower driver's I/O stack location in an IRP so the caller can set it up for the lower driver.
-old-location : kernel\iogetnextirpstacklocation.htm
-old-project : kernel
-ms.assetid : 44d38686-7a66-4e27-9dc7-9b3b4dbdffd6
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/IoGetNextIrpStackLocation, k104_28da61f1-a732-4336-a14a-90a5bd2682c3.xml, IoGetNextIrpStackLocation, kernel.iogetnextirpstacklocation, IoGetNextIrpStackLocation routine [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.IoGetNextIrpStackLocation
+title: IoGetNextIrpStackLocation function
+author: windows-driver-content
+description: The IoGetNextIrpStackLocation routine gives a higher level driver access to the next-lower driver's I/O stack location in an IRP so the caller can set it up for the lower driver.
+old-location: kernel\iogetnextirpstacklocation.htm
+old-project: kernel
+ms.assetid: 44d38686-7a66-4e27-9dc7-9b3b4dbdffd6
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/IoGetNextIrpStackLocation, k104_28da61f1-a732-4336-a14a-90a5bd2682c3.xml, IoGetNextIrpStackLocation, kernel.iogetnextirpstacklocation, IoGetNextIrpStackLocation routine [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	IoGetNextIrpStackLocation
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,42 +1,50 @@
 ---
-UID : NF:wdfinterrupt.WdfInterruptEnable
-title : WdfInterruptEnable function
-author : windows-driver-content
-description : The WdfInterruptEnable method enables a specified device interrupt by calling the driver's EvtInterruptEnable callback function.
-old-location : wdf\wdfinterruptenable.htm
-old-project : wdf
-ms.assetid : e2ffab7f-b6bf-4707-9a3d-9619330b2af1
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : DFInterruptObjectRef_4fa737c9-fae4-4d3c-9a27-165f5348c66c.xml, wdf.wdfinterruptenable, PFN_WDFINTERRUPTENABLE, kmdf.wdfinterruptenable, wdfinterrupt/WdfInterruptEnable, WdfInterruptEnable, WdfInterruptEnable method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfinterrupt.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_INTERRUPT_PRIORITY, *PWDF_INTERRUPT_PRIORITY
-req.product : Windows 10 or later.
+UID: NF:wdfinterrupt.WdfInterruptEnable
+title: WdfInterruptEnable function
+author: windows-driver-content
+description: The WdfInterruptEnable method enables a specified device interrupt by calling the driver's EvtInterruptEnable callback function.
+old-location: wdf\wdfinterruptenable.htm
+old-project: wdf
+ms.assetid: e2ffab7f-b6bf-4707-9a3d-9619330b2af1
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: DFInterruptObjectRef_4fa737c9-fae4-4d3c-9a27-165f5348c66c.xml, wdf.wdfinterruptenable, PFN_WDFINTERRUPTENABLE, kmdf.wdfinterruptenable, wdfinterrupt/WdfInterruptEnable, WdfInterruptEnable, WdfInterruptEnable method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfinterrupt.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+-	WUDFx02000.dll
+-	WUDFx02000.dll.dll
+apiname:
+-	WdfInterruptEnable
+product: Windows
+targetos: Windows
+req.typenames: WDF_INTERRUPT_PRIORITY, *PWDF_INTERRUPT_PRIORITY
+req.product: Windows 10 or later.
 ---
 
 

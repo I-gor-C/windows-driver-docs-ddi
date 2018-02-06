@@ -1,41 +1,46 @@
 ---
-UID : NF:filterpipeline.IXpsDocumentConsumer.SendXpsUnknown
-title : IXpsDocumentConsumer::SendXpsUnknown method
-author : windows-driver-content
-description : The SendXpsUnknown method sends an XPS document part that cannot be identified to the filter pipeline.
-old-location : print\ixpsdocumentconsumer_sendxpsunknown.htm
-old-project : print
-ms.assetid : 5e2880c6-0f5a-4098-a97e-809ad75ddfd0
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : SendXpsUnknown method [Print Devices], IXpsDocumentConsumer, print.ixpsdocumentconsumer_sendxpsunknown, IXpsDocumentConsumer interface [Print Devices], SendXpsUnknown method, filterpipeline/IXpsDocumentConsumer::SendXpsUnknown, filterpipeline_bb57facb-5b47-4cf5-9f06-76c06d294a58.xml, SendXpsUnknown, SendXpsUnknown method [Print Devices], IXpsDocumentConsumer interface, IXpsDocumentConsumer::SendXpsUnknown
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : filterpipeline.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : Filterpipeline.idl
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : filterpipeline.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:filterpipeline.IXpsDocumentConsumer.SendXpsUnknown
+title: IXpsDocumentConsumer::SendXpsUnknown method
+author: windows-driver-content
+description: The SendXpsUnknown method sends an XPS document part that cannot be identified to the filter pipeline.
+old-location: print\ixpsdocumentconsumer_sendxpsunknown.htm
+old-project: print
+ms.assetid: 5e2880c6-0f5a-4098-a97e-809ad75ddfd0
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: SendXpsUnknown method [Print Devices], IXpsDocumentConsumer, print.ixpsdocumentconsumer_sendxpsunknown, IXpsDocumentConsumer interface [Print Devices], SendXpsUnknown method, filterpipeline/IXpsDocumentConsumer::SendXpsUnknown, filterpipeline_bb57facb-5b47-4cf5-9f06-76c06d294a58.xml, SendXpsUnknown, SendXpsUnknown method [Print Devices], IXpsDocumentConsumer interface, IXpsDocumentConsumer::SendXpsUnknown
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: filterpipeline.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: Filterpipeline.idl
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: filterpipeline.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	filterpipeline.h
+apiname:
+-	IXpsDocumentConsumer.SendXpsUnknown
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

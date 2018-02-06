@@ -1,42 +1,47 @@
 ---
-UID : NC:wdfrequest.EVT_WDF_REQUEST_CANCEL
-title : EVT_WDF_REQUEST_CANCEL
-author : windows-driver-content
-description : A driver's EvtRequestCancel event callback function handles operations that must be performed when an I/O request is canceled.
-old-location : wdf\evtrequestcancel.htm
-old-project : wdf
-ms.assetid : db54fa76-d3e0-4f8c-aa3f-bab268dd9b4d
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.evtrequestcancel, EvtRequestCancel callback function, EvtRequestCancel, EVT_WDF_REQUEST_CANCEL, EVT_WDF_REQUEST_CANCEL, wdfrequest/EvtRequestCancel, DFRequestObjectRef_fe2e3eee-9f6a-4fd8-afa7-23eb740ccd01.xml, kmdf.evtrequestcancel
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdfrequest.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_QUERY_INTERFACE_CONFIG, *PWDF_QUERY_INTERFACE_CONFIG
-req.product : Windows 10 or later.
+UID: NC:wdfrequest.EVT_WDF_REQUEST_CANCEL
+title: EVT_WDF_REQUEST_CANCEL
+author: windows-driver-content
+description: A driver's EvtRequestCancel event callback function handles operations that must be performed when an I/O request is canceled.
+old-location: wdf\evtrequestcancel.htm
+old-project: wdf
+ms.assetid: db54fa76-d3e0-4f8c-aa3f-bab268dd9b4d
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.evtrequestcancel, EvtRequestCancel callback function, EvtRequestCancel, EVT_WDF_REQUEST_CANCEL, EVT_WDF_REQUEST_CANCEL, wdfrequest/EvtRequestCancel, DFRequestObjectRef_fe2e3eee-9f6a-4fd8-afa7-23eb740ccd01.xml, kmdf.evtrequestcancel
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdfrequest.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Wdfrequest.h
+apiname:
+-	EvtRequestCancel
+product: Windows
+targetos: Windows
+req.typenames: WDF_QUERY_INTERFACE_CONFIG, *PWDF_QUERY_INTERFACE_CONFIG
+req.product: Windows 10 or later.
 ---
 
 

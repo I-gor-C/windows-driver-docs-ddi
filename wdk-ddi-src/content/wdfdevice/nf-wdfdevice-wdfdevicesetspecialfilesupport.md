@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfdevice.WdfDeviceSetSpecialFileSupport
-title : WdfDeviceSetSpecialFileSupport function
-author : windows-driver-content
-description : The WdfDeviceSetSpecialFileSupport method enables or disables a function driver's support for special files, for the specified device.
-old-location : wdf\wdfdevicesetspecialfilesupport.htm
-old-project : wdf
-ms.assetid : 7648c486-181a-45c8-9c4b-e3158428046a
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WdfDeviceSetSpecialFileSupport, DFDeviceObjectGeneralRef_c40463ef-3c26-431e-99d8-d176b0ef7ebf.xml, PFN_WDFDEVICESETSPECIALFILESUPPORT, wdfdevice/WdfDeviceSetSpecialFileSupport, WdfDeviceSetSpecialFileSupport method, wdf.wdfdevicesetspecialfilesupport, kmdf.wdfdevicesetspecialfilesupport
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfdevice.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_STATE_NOTIFICATION_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfdevice.WdfDeviceSetSpecialFileSupport
+title: WdfDeviceSetSpecialFileSupport function
+author: windows-driver-content
+description: The WdfDeviceSetSpecialFileSupport method enables or disables a function driver's support for special files, for the specified device.
+old-location: wdf\wdfdevicesetspecialfilesupport.htm
+old-project: wdf
+ms.assetid: 7648c486-181a-45c8-9c4b-e3158428046a
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WdfDeviceSetSpecialFileSupport, DFDeviceObjectGeneralRef_c40463ef-3c26-431e-99d8-d176b0ef7ebf.xml, PFN_WDFDEVICESETSPECIALFILESUPPORT, wdfdevice/WdfDeviceSetSpecialFileSupport, WdfDeviceSetSpecialFileSupport method, wdf.wdfdevicesetspecialfilesupport, kmdf.wdfdevicesetspecialfilesupport
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfdevice.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfDeviceSetSpecialFileSupport
+product: Windows
+targetos: Windows
+req.typenames: WDF_STATE_NOTIFICATION_TYPE
+req.product: Windows 10 or later.
 ---
 
 

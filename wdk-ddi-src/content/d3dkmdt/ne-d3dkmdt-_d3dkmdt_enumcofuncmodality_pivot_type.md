@@ -1,41 +1,46 @@
 ---
-UID : NE:d3dkmdt._D3DKMDT_ENUMCOFUNCMODALITY_PIVOT_TYPE
-title : "_D3DKMDT_ENUMCOFUNCMODALITY_PIVOT_TYPE"
-author : windows-driver-content
-description : The D3DKMDT_ENUMCOFUNCMODALITY_PIVOT_TYPE enumeration indicates the pivot type in a call to DxgkDdiEnumVidPnCofuncModality.
-old-location : display\d3dkmdt_enumcofuncmodality_pivot_type.htm
-old-project : display
-ms.assetid : ba99936a-e76a-4a34-b7cd-762a8f15732c
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3dkmdt/D3DKMDT_EPT_VIDPNTARGET, d3dkmdt/D3DKMDT_EPT_VIDPNSOURCE, d3dkmdt/D3DKMDT_EPT_ROTATION, D3DKMDT_EPT_VIDPNSOURCE, D3DKMDT_EPT_ROTATION, D3DKMDT_EPT_NOPIVOT, DmEnums_5abafdb2-5a17-437b-b3e3-9c045c52d582.xml, display.d3dkmdt_enumcofuncmodality_pivot_type, D3DKMDT_EPT_SCALING, D3DKMDT_EPT_VIDPNTARGET, d3dkmdt/D3DKMDT_EPT_SCALING, d3dkmdt/D3DKMDT_EPT_NOPIVOT, D3DKMDT_ENUMCOFUNCMODALITY_PIVOT_TYPE, D3DKMDT_ENUMCOFUNCMODALITY_PIVOT_TYPE enumeration [Display Devices], d3dkmdt/D3DKMDT_ENUMCOFUNCMODALITY_PIVOT_TYPE, d3dkmdt/D3DKMDT_EPT_UNINITIALIZED, _D3DKMDT_ENUMCOFUNCMODALITY_PIVOT_TYPE, D3DKMDT_EPT_UNINITIALIZED
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : d3dkmdt.h
-req.include-header : D3dkmdt.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMDT_ENUMCOFUNCMODALITY_PIVOT_TYPE
+UID: NE:d3dkmdt._D3DKMDT_ENUMCOFUNCMODALITY_PIVOT_TYPE
+title: "_D3DKMDT_ENUMCOFUNCMODALITY_PIVOT_TYPE"
+author: windows-driver-content
+description: The D3DKMDT_ENUMCOFUNCMODALITY_PIVOT_TYPE enumeration indicates the pivot type in a call to DxgkDdiEnumVidPnCofuncModality.
+old-location: display\d3dkmdt_enumcofuncmodality_pivot_type.htm
+old-project: display
+ms.assetid: ba99936a-e76a-4a34-b7cd-762a8f15732c
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3dkmdt/D3DKMDT_EPT_VIDPNTARGET, d3dkmdt/D3DKMDT_EPT_VIDPNSOURCE, d3dkmdt/D3DKMDT_EPT_ROTATION, D3DKMDT_EPT_VIDPNSOURCE, D3DKMDT_EPT_ROTATION, D3DKMDT_EPT_NOPIVOT, DmEnums_5abafdb2-5a17-437b-b3e3-9c045c52d582.xml, display.d3dkmdt_enumcofuncmodality_pivot_type, D3DKMDT_EPT_SCALING, D3DKMDT_EPT_VIDPNTARGET, d3dkmdt/D3DKMDT_EPT_SCALING, d3dkmdt/D3DKMDT_EPT_NOPIVOT, D3DKMDT_ENUMCOFUNCMODALITY_PIVOT_TYPE, D3DKMDT_ENUMCOFUNCMODALITY_PIVOT_TYPE enumeration [Display Devices], d3dkmdt/D3DKMDT_ENUMCOFUNCMODALITY_PIVOT_TYPE, d3dkmdt/D3DKMDT_EPT_UNINITIALIZED, _D3DKMDT_ENUMCOFUNCMODALITY_PIVOT_TYPE, D3DKMDT_EPT_UNINITIALIZED
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: d3dkmdt.h
+req.include-header: D3dkmdt.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmdt.h
+apiname:
+-	D3DKMDT_ENUMCOFUNCMODALITY_PIVOT_TYPE
+product: Windows
+targetos: Windows
+req.typenames: D3DKMDT_ENUMCOFUNCMODALITY_PIVOT_TYPE
 ---
 
 # _D3DKMDT_ENUMCOFUNCMODALITY_PIVOT_TYPE Enumeration
@@ -56,41 +61,41 @@ typedef enum _D3DKMDT_ENUMCOFUNCMODALITY_PIVOT_TYPE {
 ## Constants
 
 <table>
-
-<tr>
-<td>D3DKMDT_EPT_NOPIVOT</td>
-<td>Indicates that the enumeration has no pivot.</td>
-</tr>
-
-<tr>
-<td>D3DKMDT_EPT_ROTATION</td>
-<td>Indicates that the rotatation transformation is the pivot of the enumeration.</td>
-</tr>
-
-<tr>
-<td>D3DKMDT_EPT_SCALING</td>
-<td>Indicates that the scaling transformation is the pivot of the enumeration.</td>
-</tr>
-
-<tr>
-<td>D3DKMDT_EPT_UNINITIALIZED</td>
-<td>Indicates that a variable of type D3DKMDT_ENUMCOFUNCMODALITY_PIVOT_TYPE has not yet been assigned a meaningful value.</td>
-</tr>
-
-<tr>
-<td>D3DKMDT_EPT_VIDPNSOURCE</td>
-<td>Indicates that a video present source is the pivot of the enumeration.</td>
-</tr>
-
-<tr>
-<td>D3DKMDT_EPT_VIDPNTARGET</td>
-<td>Indicates that a video present target is the pivot of the enumeration.</td>
-</tr>
+            
+                <tr>
+                    <td>D3DKMDT_EPT_NOPIVOT</td>
+                    <td>Indicates that the enumeration has no pivot.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DKMDT_EPT_ROTATION</td>
+                    <td>Indicates that the rotatation transformation is the pivot of the enumeration.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DKMDT_EPT_SCALING</td>
+                    <td>Indicates that the scaling transformation is the pivot of the enumeration.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DKMDT_EPT_UNINITIALIZED</td>
+                    <td>Indicates that a variable of type D3DKMDT_ENUMCOFUNCMODALITY_PIVOT_TYPE has not yet been assigned a meaningful value.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DKMDT_EPT_VIDPNSOURCE</td>
+                    <td>Indicates that a video present source is the pivot of the enumeration.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DKMDT_EPT_VIDPNTARGET</td>
+                    <td>Indicates that a video present target is the pivot of the enumeration.</td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-The <b>EnumPivotType</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_enumvidpncofuncmodality.md">DXGKARG_ENUMVIDPNCOFUNCMODALITY</a> structure is a D3DKMDT_ENUMCOFUNCMODALITY_PIVOT_TYPE value.
+        The <b>EnumPivotType</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_enumvidpncofuncmodality.md">DXGKARG_ENUMVIDPNCOFUNCMODALITY</a> structure is a D3DKMDT_ENUMCOFUNCMODALITY_PIVOT_TYPE value.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -98,9 +103,9 @@ The <b>EnumPivotType</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg
 | **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmdt.h (include D3dkmdt.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_enumvidpncofuncmodality.md">DxgkDdiEnumVidPnCofuncModality</a>
+        <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_enumvidpncofuncmodality.md">DxgkDdiEnumVidPnCofuncModality</a>
 
  
 

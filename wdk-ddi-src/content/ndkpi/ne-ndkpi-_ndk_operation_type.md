@@ -1,41 +1,46 @@
 ---
-UID : NE:ndkpi._NDK_OPERATION_TYPE
-title : "_NDK_OPERATION_TYPE"
-author : windows-driver-content
-description : The NDK_OPERATION_TYPE enumeration defines types of NDK operations. Its enumeration values are used in the Type member of the NDK_RESULT_EX structure.
-old-location : netvista\ndk_operation_type.htm
-old-project : netvista
-ms.assetid : EBB89BDA-6249-4D0F-A0EE-7074DDAFFFC1
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NdkOperationTypeRead, NdkOperationTypeFastRegister, ndkpi/NDK_OPERATION_TYPE, ndkpi/NdkOperationTypeReceive, NDK_OPERATION_TYPE enumeration [Network Drivers Starting with Windows Vista], NdkOperationTypeInvalidate, ndkpi/NdkOperationTypeFastRegister, NdkOperationTypeReceive, NdkOperationTypeWrite, ndkpi/NdkOperationTypeBind, NdkOperationTypeReceiveAndInvalidate, ndkpi/NdkOperationTypeReceiveAndInvalidate, ndkpi/NdkOperationTypeInvalidate, _NDK_OPERATION_TYPE, netvista.ndk_operation_type, NDK_OPERATION_TYPE, NdkOperationTypeSend, NdkOperationTypeBind, ndkpi/NdkOperationTypeSend, ndkpi/NdkOperationTypeRead, ndkpi/NdkOperationTypeWrite
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : ndkpi.h
-req.include-header : Ndkpi.h
-req.target-type : Windows
-req.target-min-winverclnt : None supported,Supported in NDIS 6.40 and later.
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDK_OPERATION_TYPE
+UID: NE:ndkpi._NDK_OPERATION_TYPE
+title: "_NDK_OPERATION_TYPE"
+author: windows-driver-content
+description: The NDK_OPERATION_TYPE enumeration defines types of NDK operations. Its enumeration values are used in the Type member of the NDK_RESULT_EX structure.
+old-location: netvista\ndk_operation_type.htm
+old-project: netvista
+ms.assetid: EBB89BDA-6249-4D0F-A0EE-7074DDAFFFC1
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NdkOperationTypeRead, NdkOperationTypeFastRegister, ndkpi/NDK_OPERATION_TYPE, ndkpi/NdkOperationTypeReceive, NDK_OPERATION_TYPE enumeration [Network Drivers Starting with Windows Vista], NdkOperationTypeInvalidate, ndkpi/NdkOperationTypeFastRegister, NdkOperationTypeReceive, NdkOperationTypeWrite, ndkpi/NdkOperationTypeBind, NdkOperationTypeReceiveAndInvalidate, ndkpi/NdkOperationTypeReceiveAndInvalidate, ndkpi/NdkOperationTypeInvalidate, _NDK_OPERATION_TYPE, netvista.ndk_operation_type, NDK_OPERATION_TYPE, NdkOperationTypeSend, NdkOperationTypeBind, ndkpi/NdkOperationTypeSend, ndkpi/NdkOperationTypeRead, ndkpi/NdkOperationTypeWrite
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: ndkpi.h
+req.include-header: Ndkpi.h
+req.target-type: Windows
+req.target-min-winverclnt: None supported,Supported in NDIS 6.40 and later.
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndkpi.h
+apiname:
+-	NDK_OPERATION_TYPE
+product: Windows
+targetos: Windows
+req.typenames: NDK_OPERATION_TYPE
 ---
 
 # _NDK_OPERATION_TYPE Enumeration
@@ -58,46 +63,46 @@ typedef enum _NDK_OPERATION_TYPE {
 ## Constants
 
 <table>
-
-<tr>
-<td>NdkOperationTypeBind</td>
-<td>An <i>NdkBind</i> (<a href="..\ndkpi\nc-ndkpi-ndk_fn_bind.md">NDK_FN_BIND</a>)  operation.</td>
-</tr>
-
-<tr>
-<td>NdkOperationTypeFastRegister</td>
-<td>An <i>NdkFastRegister</i> (<a href="..\ndkpi\nc-ndkpi-ndk_fn_fast_register.md">NDK_FN_FAST_REGISTER</a>) operation.</td>
-</tr>
-
-<tr>
-<td>NdkOperationTypeInvalidate</td>
-<td>An <i>NdkInvalidate</i> (<a href="..\ndkpi\nc-ndkpi-ndk_fn_invalidate.md">NDK_FN_INVALIDATE</a>) operation.</td>
-</tr>
-
-<tr>
-<td>NdkOperationTypeRead</td>
-<td>An <i>NdkRead</i> (<a href="..\ndkpi\nc-ndkpi-ndk_fn_read.md">NDK_FN_READ</a>) operation.</td>
-</tr>
-
-<tr>
-<td>NdkOperationTypeReceive</td>
-<td>An <i>NdkReceive</i> (<a href="..\ndkpi\nc-ndkpi-ndk_fn_receive.md">NDK_FN_RECEIVE</a>) operation.</td>
-</tr>
-
-<tr>
-<td>NdkOperationTypeReceiveAndInvalidate</td>
-<td>An <i>NdkSendAndInvalidate</i> (<a href="..\ndkpi\nc-ndkpi-ndk_fn_send_and_invalidate.md">NDK_FN_SEND_AND_INVALIDATE</a>) operation.</td>
-</tr>
-
-<tr>
-<td>NdkOperationTypeSend</td>
-<td>An <i>NdkSend</i> (<a href="..\ndkpi\nc-ndkpi-ndk_fn_send.md">NDK_FN_SEND</a>) operation.</td>
-</tr>
-
-<tr>
-<td>NdkOperationTypeWrite</td>
-<td>An <i>NdkWrite</i> (<a href="..\ndkpi\nc-ndkpi-ndk_fn_write.md">NDK_FN_WRITE</a>) operation.</td>
-</tr>
+            
+                <tr>
+                    <td>NdkOperationTypeBind</td>
+                    <td>An <i>NdkBind</i> (<a href="..\ndkpi\nc-ndkpi-ndk_fn_bind.md">NDK_FN_BIND</a>)  operation.</td>
+                </tr>
+            
+                <tr>
+                    <td>NdkOperationTypeFastRegister</td>
+                    <td>An <i>NdkFastRegister</i> (<a href="..\ndkpi\nc-ndkpi-ndk_fn_fast_register.md">NDK_FN_FAST_REGISTER</a>) operation.</td>
+                </tr>
+            
+                <tr>
+                    <td>NdkOperationTypeInvalidate</td>
+                    <td>An <i>NdkInvalidate</i> (<a href="..\ndkpi\nc-ndkpi-ndk_fn_invalidate.md">NDK_FN_INVALIDATE</a>) operation.</td>
+                </tr>
+            
+                <tr>
+                    <td>NdkOperationTypeRead</td>
+                    <td>An <i>NdkRead</i> (<a href="..\ndkpi\nc-ndkpi-ndk_fn_read.md">NDK_FN_READ</a>) operation.</td>
+                </tr>
+            
+                <tr>
+                    <td>NdkOperationTypeReceive</td>
+                    <td>An <i>NdkReceive</i> (<a href="..\ndkpi\nc-ndkpi-ndk_fn_receive.md">NDK_FN_RECEIVE</a>) operation.</td>
+                </tr>
+            
+                <tr>
+                    <td>NdkOperationTypeReceiveAndInvalidate</td>
+                    <td>An <i>NdkSendAndInvalidate</i> (<a href="..\ndkpi\nc-ndkpi-ndk_fn_send_and_invalidate.md">NDK_FN_SEND_AND_INVALIDATE</a>) operation.</td>
+                </tr>
+            
+                <tr>
+                    <td>NdkOperationTypeSend</td>
+                    <td>An <i>NdkSend</i> (<a href="..\ndkpi\nc-ndkpi-ndk_fn_send.md">NDK_FN_SEND</a>) operation.</td>
+                </tr>
+            
+                <tr>
+                    <td>NdkOperationTypeWrite</td>
+                    <td>An <i>NdkWrite</i> (<a href="..\ndkpi\nc-ndkpi-ndk_fn_write.md">NDK_FN_WRITE</a>) operation.</td>
+                </tr>
 </table>
 
 
@@ -107,9 +112,9 @@ typedef enum _NDK_OPERATION_TYPE {
 | **Windows version** | None supported,Supported in NDIS 6.40 and later. None supported,Supported in NDIS 6.40 and later. |
 | **Header** | ndkpi.h (include Ndkpi.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\ndkpi\ns-ndkpi-_ndk_result_ex.md">NDK_RESULT_EX</a>
+        <a href="..\ndkpi\ns-ndkpi-_ndk_result_ex.md">NDK_RESULT_EX</a>
 
  
 

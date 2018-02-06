@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisInterlockedInsertHeadList
-title : NdisInterlockedInsertHeadList macro
-author : windows-driver-content
-description : The NdisInterlockedInsertHeadList function inserts an entry, usually a packet, at the head of a doubly linked list so that access to the list is synchronized in a multiprocessor-safe way.
-old-location : netvista\ndisinterlockedinsertheadlist.htm
-old-project : netvista
-ms.assetid : c6221ce9-682c-453b-b036-f4219c9540da
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : ndis/NdisInterlockedInsertHeadList, ndis_interlocked_ref_14cc728a-07b7-471f-a222-4810d9d79d5a.xml, NdisInterlockedInsertHeadList macro [Network Drivers Starting with Windows Vista], NdisInterlockedInsertHeadList, netvista.ndisinterlockedinsertheadlist
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : macro
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see       NdisInterlockedInsertHeadList (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see       NdisInterlockedInsertHeadList (NDIS 5.1)) in Windows XP.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisInterlockedInsertHeadList
+title: NdisInterlockedInsertHeadList macro
+author: windows-driver-content
+description: The NdisInterlockedInsertHeadList function inserts an entry, usually a packet, at the head of a doubly linked list so that access to the list is synchronized in a multiprocessor-safe way.
+old-location: netvista\ndisinterlockedinsertheadlist.htm
+old-project: netvista
+ms.assetid: c6221ce9-682c-453b-b036-f4219c9540da
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: ndis/NdisInterlockedInsertHeadList, ndis_interlocked_ref_14cc728a-07b7-471f-a222-4810d9d79d5a.xml, NdisInterlockedInsertHeadList macro [Network Drivers Starting with Windows Vista], NdisInterlockedInsertHeadList, netvista.ndisinterlockedinsertheadlist
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: macro
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see       NdisInterlockedInsertHeadList (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see       NdisInterlockedInsertHeadList (NDIS 5.1)) in Windows XP.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisInterlockedInsertHeadList
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

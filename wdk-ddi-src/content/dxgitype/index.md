@@ -1,12 +1,12 @@
 ---
-UID : NA:dxgitype
-ms.assetid : 538eee1b-8461-3985-820a-bac0e8340cf6
-ms.author : windowsdriverdev
-ms.date : 01/18/18
-ms.keywords : 
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : portal
+UID: NA:dxgitype
+ms.assetid: 538eee1b-8461-3985-820a-bac0e8340cf6
+ms.author: windowsdriverdev
+ms.date: 01/18/18
+ms.keywords: 
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: portal
 ---
 
 # dxgitype.h header

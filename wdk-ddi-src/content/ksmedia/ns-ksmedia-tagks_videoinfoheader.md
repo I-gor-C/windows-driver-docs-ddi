@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.tagKS_VIDEOINFOHEADER
-title : tagKS_VIDEOINFOHEADER
-author : windows-driver-content
-description : The KS_VIDEOINFOHEADER structure describes the bitmap and color information for a video stream.
-old-location : stream\ks_videoinfoheader.htm
-old-project : stream
-ms.assetid : 402f292c-14f8-4ff3-b1b3-b992578cbcc8
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ksmedia/KS_VIDEOINFOHEADER, PKS_VIDEOINFOHEADER structure pointer [Streaming Media Devices], ksmedia/PKS_VIDEOINFOHEADER, PKS_VIDEOINFOHEADER, *PKS_VIDEOINFOHEADER, vidcapstruct_785a83de-3f90-44f1-b20f-9509032e8a06.xml, tagKS_VIDEOINFOHEADER, stream.ks_videoinfoheader, KS_VIDEOINFOHEADER, KS_VIDEOINFOHEADER structure [Streaming Media Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KS_VIDEOINFOHEADER, *PKS_VIDEOINFOHEADER
+UID: NS:ksmedia.tagKS_VIDEOINFOHEADER
+title: tagKS_VIDEOINFOHEADER
+author: windows-driver-content
+description: The KS_VIDEOINFOHEADER structure describes the bitmap and color information for a video stream.
+old-location: stream\ks_videoinfoheader.htm
+old-project: stream
+ms.assetid: 402f292c-14f8-4ff3-b1b3-b992578cbcc8
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ksmedia/KS_VIDEOINFOHEADER, PKS_VIDEOINFOHEADER structure pointer [Streaming Media Devices], ksmedia/PKS_VIDEOINFOHEADER, PKS_VIDEOINFOHEADER, *PKS_VIDEOINFOHEADER, vidcapstruct_785a83de-3f90-44f1-b20f-9509032e8a06.xml, tagKS_VIDEOINFOHEADER, stream.ks_videoinfoheader, KS_VIDEOINFOHEADER, KS_VIDEOINFOHEADER structure [Streaming Media Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	KS_VIDEOINFOHEADER
+product: Windows
+targetos: Windows
+req.typenames: KS_VIDEOINFOHEADER, *PKS_VIDEOINFOHEADER
 ---
 
 # tagKS_VIDEOINFOHEADER structure

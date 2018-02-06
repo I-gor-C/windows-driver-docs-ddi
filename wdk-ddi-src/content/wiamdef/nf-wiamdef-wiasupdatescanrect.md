@@ -1,42 +1,47 @@
 ---
-UID : NF:wiamdef.wiasUpdateScanRect
-title : wiasUpdateScanRect function
-author : windows-driver-content
-description : The wiasUpdateScanRect function updates the scanning area sizes of the scanning device.
-old-location : image\wiasupdatescanrect.htm
-old-project : image
-ms.assetid : f8184ae1-878f-46fc-bddc-66c065bc9e75
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : wiasFncs_ef2b5686-5026-469b-8133-d2c37fddb732.xml, wiamdef/wiasUpdateScanRect, image.wiasupdatescanrect, wiasUpdateScanRect function [Imaging Devices], wiasUpdateScanRect
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wiamdef.h
-req.include-header : Wiamdef.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wiaservc.lib
-req.dll : Wiaservc.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*LPDEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2, DEVICEDIALOGDATA2"
-req.product : Windows 10 or later.
+UID: NF:wiamdef.wiasUpdateScanRect
+title: wiasUpdateScanRect function
+author: windows-driver-content
+description: The wiasUpdateScanRect function updates the scanning area sizes of the scanning device.
+old-location: image\wiasupdatescanrect.htm
+old-project: image
+ms.assetid: f8184ae1-878f-46fc-bddc-66c065bc9e75
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: wiasFncs_ef2b5686-5026-469b-8133-d2c37fddb732.xml, wiamdef/wiasUpdateScanRect, image.wiasupdatescanrect, wiasUpdateScanRect function [Imaging Devices], wiasUpdateScanRect
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wiamdef.h
+req.include-header: Wiamdef.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wiaservc.lib
+req.dll: Wiaservc.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Wiaservc.dll
+apiname:
+-	wiasUpdateScanRect
+product: Windows
+targetos: Windows
+req.typenames: "*LPDEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2, DEVICEDIALOGDATA2"
+req.product: Windows 10 or later.
 ---
 
 

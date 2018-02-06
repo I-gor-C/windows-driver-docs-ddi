@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._D3DDDIARG_OFFERRESOURCES
-title : "_D3DDDIARG_OFFERRESOURCES"
-author : windows-driver-content
-description : Describes video memory resources that the user-mode display driver offers for reuse. Used with the OfferResources function.
-old-location : display\d3dddiarg_offerresources.htm
-old-project : display
-ms.assetid : 3c5e5dae-14f6-47b9-8c27-48ecc73a43ef
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DDDIARG_OFFERRESOURCES, _D3DDDIARG_OFFERRESOURCES, D3DDDIARG_OFFERRESOURCES structure [Display Devices], display.d3dddiarg_offerresources, d3dumddi/D3DDDIARG_OFFERRESOURCES
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDIARG_OFFERRESOURCES
+UID: NS:d3dumddi._D3DDDIARG_OFFERRESOURCES
+title: "_D3DDDIARG_OFFERRESOURCES"
+author: windows-driver-content
+description: Describes video memory resources that the user-mode display driver offers for reuse. Used with the OfferResources function.
+old-location: display\d3dddiarg_offerresources.htm
+old-project: display
+ms.assetid: 3c5e5dae-14f6-47b9-8c27-48ecc73a43ef
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DDDIARG_OFFERRESOURCES, _D3DDDIARG_OFFERRESOURCES, D3DDDIARG_OFFERRESOURCES structure [Display Devices], display.d3dddiarg_offerresources, d3dumddi/D3DDDIARG_OFFERRESOURCES
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	D3dumddi.h
+apiname:
+-	D3DDDIARG_OFFERRESOURCES
+product: Windows
+targetos: Windows
+req.typenames: D3DDDIARG_OFFERRESOURCES
 ---
 
 # _D3DDDIARG_OFFERRESOURCES structure

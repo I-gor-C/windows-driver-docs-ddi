@@ -1,41 +1,47 @@
 ---
-UID : NF:fwpsk.FwpsQueryConnectionSioFormatRedirectRecords0
-title : FwpsQueryConnectionSioFormatRedirectRecords0 function
-author : windows-driver-content
-description : The FwpsQueryConnectionSioFormatRedirectRecords0 function returns the connection redirect records for a redirected connection.
-old-location : netvista\fwpsqueryconnectionsioformatredirectrecords0.htm
-old-project : netvista
-ms.assetid : AE24409D-AA60-4694-8855-AB2B0F6B1635
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : fwpsk/FwpsQueryConnectionSioFormatRedirectRecords0, FwpsQueryConnectionSioFormatRedirectRecords0 function [Network Drivers Starting with Windows Vista], netvista.fwpsqueryconnectionsioformatredirectrecords0, FwpsQueryConnectionSioFormatRedirectRecords0
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fwpsk.h
-req.include-header : Fwpsk.h
-req.target-type : Universal
-req.target-min-winverclnt : Windows 7
-req.target-min-winversvr : Windows Server 2008 R2
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Fwpkclnt.lib
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FWPS_VSWITCH_EVENT_TYPE
+UID: NF:fwpsk.FwpsQueryConnectionSioFormatRedirectRecords0
+title: FwpsQueryConnectionSioFormatRedirectRecords0 function
+author: windows-driver-content
+description: The FwpsQueryConnectionSioFormatRedirectRecords0 function returns the connection redirect records for a redirected connection.
+old-location: netvista\fwpsqueryconnectionsioformatredirectrecords0.htm
+old-project: netvista
+ms.assetid: AE24409D-AA60-4694-8855-AB2B0F6B1635
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: fwpsk/FwpsQueryConnectionSioFormatRedirectRecords0, FwpsQueryConnectionSioFormatRedirectRecords0 function [Network Drivers Starting with Windows Vista], netvista.fwpsqueryconnectionsioformatredirectrecords0, FwpsQueryConnectionSioFormatRedirectRecords0
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fwpsk.h
+req.include-header: Fwpsk.h
+req.target-type: Universal
+req.target-min-winverclnt: Windows 7
+req.target-min-winversvr: Windows Server 2008 R2
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Fwpkclnt.lib
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	fwpkclnt.lib
+-	fwpkclnt.dll
+apiname:
+-	FwpsQueryConnectionSioFormatRedirectRecords0
+product: Windows
+targetos: Windows
+req.typenames: FWPS_VSWITCH_EVENT_TYPE
 ---
 
 

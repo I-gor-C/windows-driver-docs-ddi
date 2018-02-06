@@ -1,41 +1,46 @@
 ---
-UID : NC:ntdddump.DUMP_READ
-title : DUMP_READ
-author : windows-driver-content
-description : The Dump_Read callback routine is called after the read from the dump port driver. The filter driver can access the dump data during the call to this routine.
-old-location : storage\dump_read.htm
-old-project : storage
-ms.assetid : 5F95D38C-8E11-49D4-82C4-718BD846A834
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.dump_read, Dump_Read routine [Storage Devices], Dump_Read, PDUMP_READ, PDUMP_READ, ntdddump/Dump_Read
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ntdddump.h
-req.include-header : Ntdddump.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available starting with Windows 8
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VERIFY_INFORMATION, *PVERIFY_INFORMATION
+UID: NC:ntdddump.DUMP_READ
+title: DUMP_READ
+author: windows-driver-content
+description: The Dump_Read callback routine is called after the read from the dump port driver. The filter driver can access the dump data during the call to this routine.
+old-location: storage\dump_read.htm
+old-project: storage
+ms.assetid: 5F95D38C-8E11-49D4-82C4-718BD846A834
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.dump_read, Dump_Read routine [Storage Devices], Dump_Read, PDUMP_READ, PDUMP_READ, ntdddump/Dump_Read
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ntdddump.h
+req.include-header: Ntdddump.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available starting with Windows 8
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	ntdddump.h
+apiname:
+-	Dump_Read
+product: Windows
+targetos: Windows
+req.typenames: VERIFY_INFORMATION, *PVERIFY_INFORMATION
 ---
 
 

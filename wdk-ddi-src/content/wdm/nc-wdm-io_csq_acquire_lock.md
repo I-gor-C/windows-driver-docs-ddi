@@ -1,42 +1,47 @@
 ---
-UID : NC:wdm.IO_CSQ_ACQUIRE_LOCK
-title : IO_CSQ_ACQUIRE_LOCK
-author : windows-driver-content
-description : The CsqAcquireLock routine is used by the system to acquire the lock for a driver-implemented, cancel-safe IRP queue.
-old-location : kernel\csqacquirelock.htm
-old-project : kernel
-ms.assetid : 8981e2f9-b456-48de-b31c-25a6884bcf12
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.csqacquirelock, CsqAcquireLock routine [Kernel-Mode Driver Architecture], CsqAcquireLock, IO_CSQ_ACQUIRE_LOCK, IO_CSQ_ACQUIRE_LOCK, wdm/CsqAcquireLock, DrvrRtns_02339dc6-f9f2-47b0-a0c9-df36f862b5d6.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
-req.product : Windows 10 or later.
+UID: NC:wdm.IO_CSQ_ACQUIRE_LOCK
+title: IO_CSQ_ACQUIRE_LOCK
+author: windows-driver-content
+description: The CsqAcquireLock routine is used by the system to acquire the lock for a driver-implemented, cancel-safe IRP queue.
+old-location: kernel\csqacquirelock.htm
+old-project: kernel
+ms.assetid: 8981e2f9-b456-48de-b31c-25a6884bcf12
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.csqacquirelock, CsqAcquireLock routine [Kernel-Mode Driver Architecture], CsqAcquireLock, IO_CSQ_ACQUIRE_LOCK, IO_CSQ_ACQUIRE_LOCK, wdm/CsqAcquireLock, DrvrRtns_02339dc6-f9f2-47b0-a0c9-df36f862b5d6.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Wdm.h
+apiname:
+-	CsqAcquireLock
+product: Windows
+targetos: Windows
+req.typenames: WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+req.product: Windows 10 or later.
 ---
 
 

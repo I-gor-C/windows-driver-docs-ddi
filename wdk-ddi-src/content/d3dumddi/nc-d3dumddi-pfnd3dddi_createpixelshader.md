@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_CREATEPIXELSHADER
-title : PFND3DDDI_CREATEPIXELSHADER
-author : windows-driver-content
-description : The CreatePixelShader function converts pixel shader code into a hardware-specific format and associates this code with a shader handle.
-old-location : display\createpixelshader.htm
-old-project : display
-ms.assetid : b80a1823-6d91-440f-89e4-f7248579cc8f
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.createpixelshader, CreatePixelShader callback function [Display Devices], CreatePixelShader, PFND3DDDI_CREATEPIXELSHADER, PFND3DDDI_CREATEPIXELSHADER, d3dumddi/CreatePixelShader, UserModeDisplayDriver_Functions_4e9d378f-d5aa-4b5d-9a66-ff2dd2f8fae8.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_CREATEPIXELSHADER
+title: PFND3DDDI_CREATEPIXELSHADER
+author: windows-driver-content
+description: The CreatePixelShader function converts pixel shader code into a hardware-specific format and associates this code with a shader handle.
+old-location: display\createpixelshader.htm
+old-project: display
+ms.assetid: b80a1823-6d91-440f-89e4-f7248579cc8f
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.createpixelshader, CreatePixelShader callback function [Display Devices], CreatePixelShader, PFND3DDDI_CREATEPIXELSHADER, PFND3DDDI_CREATEPIXELSHADER, d3dumddi/CreatePixelShader, UserModeDisplayDriver_Functions_4e9d378f-d5aa-4b5d-9a66-ff2dd2f8fae8.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	CreatePixelShader
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

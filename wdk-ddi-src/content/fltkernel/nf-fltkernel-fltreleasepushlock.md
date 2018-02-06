@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltReleasePushLock
-title : FltReleasePushLock macro
-author : windows-driver-content
-description : The FltReleasePushLock routine releases a specified push lock owned by the current thread.
-old-location : ifsk\fltreleasepushlock.htm
-old-project : ifsk
-ms.assetid : 34d1b945-329c-47ff-913d-5576eef665b8
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : fltkernel/FltReleasePushLock, FltReleasePushLock routine [Installable File System Drivers], ifsk.fltreleasepushlock, FltReleasePushLock, FltApiRef_p_to_z_31e736a4-7790-443f-a6bf-e43d3823ad27.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : macro
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : This routine is available on Microsoft Windows XP SP2, Microsoft Windows Server 2003 SP1, and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltReleasePushLock
+title: FltReleasePushLock macro
+author: windows-driver-content
+description: The FltReleasePushLock routine releases a specified push lock owned by the current thread.
+old-location: ifsk\fltreleasepushlock.htm
+old-project: ifsk
+ms.assetid: 34d1b945-329c-47ff-913d-5576eef665b8
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: fltkernel/FltReleasePushLock, FltReleasePushLock routine [Installable File System Drivers], ifsk.fltreleasepushlock, FltReleasePushLock, FltApiRef_p_to_z_31e736a4-7790-443f-a6bf-e43d3823ad27.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: macro
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: This routine is available on Microsoft Windows XP SP2, Microsoft Windows Server 2003 SP1, and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltReleasePushLock
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

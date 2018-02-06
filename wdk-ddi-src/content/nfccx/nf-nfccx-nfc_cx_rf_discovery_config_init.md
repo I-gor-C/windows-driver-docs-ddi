@@ -1,41 +1,47 @@
 ---
-UID : NF:nfccx.NFC_CX_RF_DISCOVERY_CONFIG_INIT
-title : NFC_CX_RF_DISCOVERY_CONFIG_INIT function
-author : windows-driver-content
-description : The NFC_CX_RF_DISCOVERY_CONFIG_INIT function initializes the NFC_CX_RF_DISCOVERY_CONFIG structure.
-old-location : nfpdrivers\nfc_cx_rf_discovery_config_init.htm
-old-project : nfpdrivers
-ms.assetid : C8A6A286-8F62-4A55-9AED-263317088706
-ms.author : windowsdriverdev
-ms.date : 12/18/2017
-ms.keywords : nfccx/NFC_CX_RF_DISCOVERY_CONFIG_INIT, NFC_CX_RF_DISCOVERY_CONFIG_INIT, nfpdrivers.nfc_cx_rf_discovery_config_init, NFC_CX_RF_DISCOVERY_CONFIG_INIT function [Near-Field Proximity Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : nfccx.h
-req.include-header : Ncidef.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Nfccxstub.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NFC_CX_TRANSPORT_TYPE, *PNFC_CX_TRANSPORT_TYPE
+UID: NF:nfccx.NFC_CX_RF_DISCOVERY_CONFIG_INIT
+title: NFC_CX_RF_DISCOVERY_CONFIG_INIT function
+author: windows-driver-content
+description: The NFC_CX_RF_DISCOVERY_CONFIG_INIT function initializes the NFC_CX_RF_DISCOVERY_CONFIG structure.
+old-location: nfpdrivers\nfc_cx_rf_discovery_config_init.htm
+old-project: nfpdrivers
+ms.assetid: C8A6A286-8F62-4A55-9AED-263317088706
+ms.author: windowsdriverdev
+ms.date: 12/18/2017
+ms.keywords: nfccx/NFC_CX_RF_DISCOVERY_CONFIG_INIT, NFC_CX_RF_DISCOVERY_CONFIG_INIT, nfpdrivers.nfc_cx_rf_discovery_config_init, NFC_CX_RF_DISCOVERY_CONFIG_INIT function [Near-Field Proximity Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: nfccx.h
+req.include-header: Ncidef.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Nfccxstub.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	nfccxstub.lib
+-	nfccxstub.dll
+apiname:
+-	NFC_CX_RF_DISCOVERY_CONFIG_INIT
+product: Windows
+targetos: Windows
+req.typenames: NFC_CX_TRANSPORT_TYPE, *PNFC_CX_TRANSPORT_TYPE
 ---
 
 

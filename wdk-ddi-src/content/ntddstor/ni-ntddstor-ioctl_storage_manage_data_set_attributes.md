@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddstor.IOCTL_STORAGE_MANAGE_DATA_SET_ATTRIBUTES
-title : IOCTL_STORAGE_MANAGE_DATA_SET_ATTRIBUTES
-author : windows-driver-content
-description : This IOCTL_STORAGE_MANAGE_DATA_SET_ATTRIBUTES request is used to send a manage data set attributes request to a storage device.
-old-location : storage\ioctl_storage_manage_data_set_attributes.htm
-old-project : storage
-ms.assetid : 678bbca6-f21f-480a-897d-a30e922d01e3
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_storage_manage_data_set_attributes, IOCTL_STORAGE_MANAGE_DATA_SET_ATTRIBUTES control code [Storage Devices], IOCTL_STORAGE_MANAGE_DATA_SET_ATTRIBUTES, ntddstor/IOCTL_STORAGE_MANAGE_DATA_SET_ATTRIBUTES, k307_99edaea9-af25-4aba-ba16-0758c63252b6.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddstor.h
-req.include-header : Ntddstor.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : IRQL < DISPATCH_LEVEL (See Remarks section.)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STORAGE_ZONE_CONDITION, *PSTORAGE_ZONE_CONDITION
+UID: NI:ntddstor.IOCTL_STORAGE_MANAGE_DATA_SET_ATTRIBUTES
+title: IOCTL_STORAGE_MANAGE_DATA_SET_ATTRIBUTES
+author: windows-driver-content
+description: This IOCTL_STORAGE_MANAGE_DATA_SET_ATTRIBUTES request is used to send a manage data set attributes request to a storage device.
+old-location: storage\ioctl_storage_manage_data_set_attributes.htm
+old-project: storage
+ms.assetid: 678bbca6-f21f-480a-897d-a30e922d01e3
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_storage_manage_data_set_attributes, IOCTL_STORAGE_MANAGE_DATA_SET_ATTRIBUTES control code [Storage Devices], IOCTL_STORAGE_MANAGE_DATA_SET_ATTRIBUTES, ntddstor/IOCTL_STORAGE_MANAGE_DATA_SET_ATTRIBUTES, k307_99edaea9-af25-4aba-ba16-0758c63252b6.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddstor.h
+req.include-header: Ntddstor.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: IRQL < DISPATCH_LEVEL (See Remarks section.)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddstor.h
+apiname:
+-	IOCTL_STORAGE_MANAGE_DATA_SET_ATTRIBUTES
+product: Windows
+targetos: Windows
+req.typenames: STORAGE_ZONE_CONDITION, *PSTORAGE_ZONE_CONDITION
 ---
 
 # IOCTL_STORAGE_MANAGE_DATA_SET_ATTRIBUTES IOCTL

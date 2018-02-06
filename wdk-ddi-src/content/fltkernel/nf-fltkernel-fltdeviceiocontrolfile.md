@@ -1,41 +1,47 @@
 ---
-UID : NF:fltkernel.FltDeviceIoControlFile
-title : FltDeviceIoControlFile function
-author : windows-driver-content
-description : FltDeviceIoControlFile sends a control code directly to a specified device driver, causing the corresponding driver to perform the specified action.
-old-location : ifsk\fltdeviceiocontrolfile.htm
-old-project : ifsk
-ms.assetid : f9a6998d-f340-47ad-a9be-ff7ef76c627e
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : fltkernel/FltDeviceIoControlFile, FltDeviceIoControlFile function [Installable File System Drivers], FltDeviceIoControlFile, FltApiRef_a_to_d_0e8f1a72-1620-4d72-8569-7411c724e906.xml, ifsk.fltdeviceiocontrolfile
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltDeviceIoControlFile
+title: FltDeviceIoControlFile function
+author: windows-driver-content
+description: FltDeviceIoControlFile sends a control code directly to a specified device driver, causing the corresponding driver to perform the specified action.
+old-location: ifsk\fltdeviceiocontrolfile.htm
+old-project: ifsk
+ms.assetid: f9a6998d-f340-47ad-a9be-ff7ef76c627e
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: fltkernel/FltDeviceIoControlFile, FltDeviceIoControlFile function [Installable File System Drivers], FltDeviceIoControlFile, FltApiRef_a_to_d_0e8f1a72-1620-4d72-8569-7411c724e906.xml, ifsk.fltdeviceiocontrolfile
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	FltMgr.lib
+-	FltMgr.dll
+apiname:
+-	FltDeviceIoControlFile
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

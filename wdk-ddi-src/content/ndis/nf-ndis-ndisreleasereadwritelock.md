@@ -1,41 +1,46 @@
 ---
-UID : NF:ndis.NdisReleaseReadWriteLock
-title : NdisReleaseReadWriteLock function
-author : windows-driver-content
-description : The NdisReleaseReadWriteLock function releases a lock that was acquired in a preceding call to NdisAcquireReadWriteLock.Note  The read-write lock interface is deprecated for NDIS 6.20 and later drivers, which should use NdisReleaseRWLock instead of NdisReleaseReadWriteLock.
-old-location : netvista\ndisreleasereadwritelock.htm
-old-project : netvista
-ms.assetid : a910ae2d-8a3b-451c-b1f2-a19f7f9f14a2
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : ndis_read_write_lock_ref_4f0f9891-a4a6-457d-b547-4f5543fbc534.xml, netvista.ndisreleasereadwritelock, NdisReleaseReadWriteLock, ndis/NdisReleaseReadWriteLock, NdisReleaseReadWriteLock function [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Deprecated for NDIS 6.20 and later drivers, which should use NdisReleaseRWLock instead of NdisReleaseReadWriteLock. Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisReleaseReadWriteLock (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisReleaseReadWriteLock (NDIS   5.1)) in Windows XP.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_Synch_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : Ndis.sys
-req.irql : DISPATCH_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisReleaseReadWriteLock
+title: NdisReleaseReadWriteLock function
+author: windows-driver-content
+description: The NdisReleaseReadWriteLock function releases a lock that was acquired in a preceding call to NdisAcquireReadWriteLock.Note  The read-write lock interface is deprecated for NDIS 6.20 and later drivers, which should use NdisReleaseRWLock instead of NdisReleaseReadWriteLock.
+old-location: netvista\ndisreleasereadwritelock.htm
+old-project: netvista
+ms.assetid: a910ae2d-8a3b-451c-b1f2-a19f7f9f14a2
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: ndis_read_write_lock_ref_4f0f9891-a4a6-457d-b547-4f5543fbc534.xml, netvista.ndisreleasereadwritelock, NdisReleaseReadWriteLock, ndis/NdisReleaseReadWriteLock, NdisReleaseReadWriteLock function [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Deprecated for NDIS 6.20 and later drivers, which should use NdisReleaseRWLock instead of NdisReleaseReadWriteLock. Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisReleaseReadWriteLock (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisReleaseReadWriteLock (NDIS   5.1)) in Windows XP.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_Synch_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: Ndis.sys
+req.irql: DISPATCH_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	ndis.sys
+apiname:
+-	NdisReleaseReadWriteLock
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

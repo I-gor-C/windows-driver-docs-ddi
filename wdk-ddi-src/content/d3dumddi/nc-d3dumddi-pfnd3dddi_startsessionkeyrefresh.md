@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_STARTSESSIONKEYREFRESH
-title : PFND3DDDI_STARTSESSIONKEYREFRESH
-author : windows-driver-content
-description : The StartSessionKeyRefresh function returns a random number that the driver's FinishSessionKeyRefresh function subsequently uses to perform an exclusive OR operation (XOR) with the session key.
-old-location : display\startsessionkeyrefresh.htm
-old-project : display
-ms.assetid : 986d8f46-3b4f-41b2-938e-4f3adbfe057a
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.startsessionkeyrefresh, StartSessionKeyRefresh callback function [Display Devices], StartSessionKeyRefresh, PFND3DDDI_STARTSESSIONKEYREFRESH, PFND3DDDI_STARTSESSIONKEYREFRESH, d3dumddi/StartSessionKeyRefresh, UserModeDisplayDriver_Functions_c68a1081-f350-4439-8c1c-91d9c54469bd.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : StartSessionKeyRefresh is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_STARTSESSIONKEYREFRESH
+title: PFND3DDDI_STARTSESSIONKEYREFRESH
+author: windows-driver-content
+description: The StartSessionKeyRefresh function returns a random number that the driver's FinishSessionKeyRefresh function subsequently uses to perform an exclusive OR operation (XOR) with the session key.
+old-location: display\startsessionkeyrefresh.htm
+old-project: display
+ms.assetid: 986d8f46-3b4f-41b2-938e-4f3adbfe057a
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.startsessionkeyrefresh, StartSessionKeyRefresh callback function [Display Devices], StartSessionKeyRefresh, PFND3DDDI_STARTSESSIONKEYREFRESH, PFND3DDDI_STARTSESSIONKEYREFRESH, d3dumddi/StartSessionKeyRefresh, UserModeDisplayDriver_Functions_c68a1081-f350-4439-8c1c-91d9c54469bd.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: StartSessionKeyRefresh is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	StartSessionKeyRefresh
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

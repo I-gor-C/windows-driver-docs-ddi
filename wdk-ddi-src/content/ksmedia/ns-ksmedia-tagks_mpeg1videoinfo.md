@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.tagKS_MPEG1VIDEOINFO
-title : tagKS_MPEG1VIDEOINFO
-author : windows-driver-content
-description : The KS_MPEG1VIDEOINFO structure describes an MPEG-1 video stream.
-old-location : stream\ks_mpeg1videoinfo.htm
-old-project : stream
-ms.assetid : 301b954a-4e50-4a04-a575-17d7d54fa691
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ksmedia/PKS_MPEG1VIDEOINFO, ksmedia/KS_MPEG1VIDEOINFO, PKS_MPEG1VIDEOINFO, KS_MPEG1VIDEOINFO, PKS_MPEG1VIDEOINFO structure pointer [Streaming Media Devices], vidcapstruct_5c9e7f76-f279-49fb-9ad8-f23b7741d685.xml, tagKS_MPEG1VIDEOINFO, *PKS_MPEG1VIDEOINFO, KS_MPEG1VIDEOINFO structure [Streaming Media Devices], stream.ks_mpeg1videoinfo
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KS_MPEG1VIDEOINFO, *PKS_MPEG1VIDEOINFO
+UID: NS:ksmedia.tagKS_MPEG1VIDEOINFO
+title: tagKS_MPEG1VIDEOINFO
+author: windows-driver-content
+description: The KS_MPEG1VIDEOINFO structure describes an MPEG-1 video stream.
+old-location: stream\ks_mpeg1videoinfo.htm
+old-project: stream
+ms.assetid: 301b954a-4e50-4a04-a575-17d7d54fa691
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ksmedia/PKS_MPEG1VIDEOINFO, ksmedia/KS_MPEG1VIDEOINFO, PKS_MPEG1VIDEOINFO, KS_MPEG1VIDEOINFO, PKS_MPEG1VIDEOINFO structure pointer [Streaming Media Devices], vidcapstruct_5c9e7f76-f279-49fb-9ad8-f23b7741d685.xml, tagKS_MPEG1VIDEOINFO, *PKS_MPEG1VIDEOINFO, KS_MPEG1VIDEOINFO structure [Streaming Media Devices], stream.ks_mpeg1videoinfo
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	KS_MPEG1VIDEOINFO
+product: Windows
+targetos: Windows
+req.typenames: KS_MPEG1VIDEOINFO, *PKS_MPEG1VIDEOINFO
 ---
 
 # tagKS_MPEG1VIDEOINFO structure

@@ -1,41 +1,46 @@
 ---
-UID : NC:ndkpi.NDK_FN_WRITE
-title : NDK_FN_WRITE
-author : windows-driver-content
-description : The NdkWrite (NDK_FN_WRITE) function posts a write request on an NDK queue pair (QP).
-old-location : netvista\ndk_fn_write.htm
-old-project : netvista
-ms.assetid : 4AE7E897-556B-40C4-BC12-31D957552690
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.ndk_fn_write, NdkWrite callback function [Network Drivers Starting with Windows Vista], NdkWrite, NDK_FN_WRITE, NDK_FN_WRITE, ndkpi/NdkWrite, NDK_OP_FLAG_SILENT_SUCCESS, NDK_OP_FLAG_READ_FENCE, NDK_OP_FLAG_DEFER
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ndkpi.h
-req.include-header : Ndkpi.h
-req.target-type : Windows
-req.target-min-winverclnt : None supported,Supported in NDIS 6.30 and later.
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_WWAN_VISIBLE_PROVIDERS, *PNDIS_WWAN_VISIBLE_PROVIDERS
+UID: NC:ndkpi.NDK_FN_WRITE
+title: NDK_FN_WRITE
+author: windows-driver-content
+description: The NdkWrite (NDK_FN_WRITE) function posts a write request on an NDK queue pair (QP).
+old-location: netvista\ndk_fn_write.htm
+old-project: netvista
+ms.assetid: 4AE7E897-556B-40C4-BC12-31D957552690
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.ndk_fn_write, NdkWrite callback function [Network Drivers Starting with Windows Vista], NdkWrite, NDK_FN_WRITE, NDK_FN_WRITE, ndkpi/NdkWrite, NDK_OP_FLAG_SILENT_SUCCESS, NDK_OP_FLAG_READ_FENCE, NDK_OP_FLAG_DEFER
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ndkpi.h
+req.include-header: Ndkpi.h
+req.target-type: Windows
+req.target-min-winverclnt: None supported,Supported in NDIS 6.30 and later.
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	ndkpi.h
+apiname:
+-	NdkWrite
+product: Windows
+targetos: Windows
+req.typenames: NDIS_WWAN_VISIBLE_PROVIDERS, *PNDIS_WWAN_VISIBLE_PROVIDERS
 ---
 
 

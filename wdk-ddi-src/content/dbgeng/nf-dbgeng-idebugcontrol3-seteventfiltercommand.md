@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugControl3.SetEventFilterCommand
-title : IDebugControl3::SetEventFilterCommand method
-author : windows-driver-content
-description : The SetEventFilterCommand method sets a debugger command for the engine to execute when a specified event occurs.
-old-location : debugger\seteventfiltercommand.htm
-old-project : debugger
-ms.assetid : d68d0a98-ec93-4643-a6c1-eff9d5618e03
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugControl_b0661dd4-9ecd-49ac-93e1-86d3c6c2c3f6.xml, SetEventFilterCommand method [Windows Debugging], IDebugControl3 interface, IDebugControl interface [Windows Debugging], SetEventFilterCommand method, dbgeng/IDebugControl2::SetEventFilterCommand, IDebugControl3, dbgeng/IDebugControl3::SetEventFilterCommand, SetEventFilterCommand method [Windows Debugging], SetEventFilterCommand, debugger.seteventfiltercommand, SetEventFilterCommand method [Windows Debugging], IDebugControl interface, dbgeng/IDebugControl::SetEventFilterCommand, SetEventFilterCommand method [Windows Debugging], IDebugControl2 interface, IDebugControl2::SetEventFilterCommand, IDebugControl3 interface [Windows Debugging], SetEventFilterCommand method, IDebugControl3::SetEventFilterCommand, IDebugControl2 interface [Windows Debugging], SetEventFilterCommand method, IDebugControl::SetEventFilterCommand
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl3.SetEventFilterCommand
+title: IDebugControl3::SetEventFilterCommand method
+author: windows-driver-content
+description: The SetEventFilterCommand method sets a debugger command for the engine to execute when a specified event occurs.
+old-location: debugger\seteventfiltercommand.htm
+old-project: debugger
+ms.assetid: d68d0a98-ec93-4643-a6c1-eff9d5618e03
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugControl_b0661dd4-9ecd-49ac-93e1-86d3c6c2c3f6.xml, SetEventFilterCommand method [Windows Debugging], IDebugControl3 interface, IDebugControl interface [Windows Debugging], SetEventFilterCommand method, dbgeng/IDebugControl2::SetEventFilterCommand, IDebugControl3, dbgeng/IDebugControl3::SetEventFilterCommand, SetEventFilterCommand method [Windows Debugging], SetEventFilterCommand, debugger.seteventfiltercommand, SetEventFilterCommand method [Windows Debugging], IDebugControl interface, dbgeng/IDebugControl::SetEventFilterCommand, SetEventFilterCommand method [Windows Debugging], IDebugControl2 interface, IDebugControl2::SetEventFilterCommand, IDebugControl3 interface [Windows Debugging], SetEventFilterCommand method, IDebugControl3::SetEventFilterCommand, IDebugControl2 interface [Windows Debugging], SetEventFilterCommand method, IDebugControl::SetEventFilterCommand
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl.SetEventFilterCommand
+-	IDebugControl2.SetEventFilterCommand
+-	IDebugControl3.SetEventFilterCommand
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NC:video.PVIDEO_HW_RESET_HW
-title : PVIDEO_HW_RESET_HW
-author : windows-driver-content
-description : HwVidResetHw resets the adapter to character mode.
-old-location : display\hwvidresethw.htm
-old-project : display
-ms.assetid : dae00663-17bd-461d-9b3f-febff2d9811b
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.hwvidresethw, HwVidResetHw callback function [Display Devices], HwVidResetHw, PVIDEO_HW_RESET_HW, PVIDEO_HW_RESET_HW, video/HwVidResetHw, VideoMiniport_Functions_783bcc9a-8af3-4cfb-8121-a2bbeb0e64f1.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VHF_CONFIG, *PVHF_CONFIG
-req.product : Windows 10 or later.
+UID: NC:video.PVIDEO_HW_RESET_HW
+title: PVIDEO_HW_RESET_HW
+author: windows-driver-content
+description: HwVidResetHw resets the adapter to character mode.
+old-location: display\hwvidresethw.htm
+old-project: display
+ms.assetid: dae00663-17bd-461d-9b3f-febff2d9811b
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.hwvidresethw, HwVidResetHw callback function [Display Devices], HwVidResetHw, PVIDEO_HW_RESET_HW, PVIDEO_HW_RESET_HW, video/HwVidResetHw, VideoMiniport_Functions_783bcc9a-8af3-4cfb-8121-a2bbeb0e64f1.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	video.h
+apiname:
+-	HwVidResetHw
+product: Windows
+targetos: Windows
+req.typenames: VHF_CONFIG, *PVHF_CONFIG
+req.product: Windows 10 or later.
 ---
 
 

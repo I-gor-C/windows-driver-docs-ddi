@@ -1,41 +1,46 @@
 ---
-UID : NS:iddcx.IDARG_IN_OPM_GET_CERTIFICATE
-title : IDARG_IN_OPM_GET_CERTIFICATE
-author : windows-driver-content
-description : Gives information about the OPM certificate.
-old-location : display\idarg_in_opm_get_certificate.htm
-old-project : display
-ms.assetid : 0f6ce53f-f755-44f7-b579-ce3526e44c41
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.idarg_in_opm_get_certificate, IDARG_IN_OPM_GET_CERTIFICATE structure [Display Devices], IDARG_IN_OPM_GET_CERTIFICATE, iddcx/IDARG_IN_OPM_GET_CERTIFICATE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : iddcx.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NS:iddcx.IDARG_IN_OPM_GET_CERTIFICATE
+title: IDARG_IN_OPM_GET_CERTIFICATE
+author: windows-driver-content
+description: Gives information about the OPM certificate.
+old-location: display\idarg_in_opm_get_certificate.htm
+old-project: display
+ms.assetid: 0f6ce53f-f755-44f7-b579-ce3526e44c41
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.idarg_in_opm_get_certificate, IDARG_IN_OPM_GET_CERTIFICATE structure [Display Devices], IDARG_IN_OPM_GET_CERTIFICATE, iddcx/IDARG_IN_OPM_GET_CERTIFICATE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: iddcx.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	iddcx.h
+apiname:
+-	IDARG_IN_OPM_GET_CERTIFICATE
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 # IDARG_IN_OPM_GET_CERTIFICATE structure

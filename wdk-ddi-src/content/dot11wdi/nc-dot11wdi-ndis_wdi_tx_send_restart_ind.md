@@ -1,41 +1,46 @@
 ---
-UID : NC:dot11wdi.NDIS_WDI_TX_SEND_RESTART_IND
-title : NDIS_WDI_TX_SEND_RESTART_IND
-author : windows-driver-content
-description : The NdisWdiTxSendRestartIndication callback function resumes transmission on a given port to a given peer or peer-TID combination.
-old-location : netvista\ndiswditxsendrestartindication.htm
-old-project : netvista
-ms.assetid : 40976CC1-89A4-420F-867F-99F857670DAE
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.ndiswditxsendrestartindication, NdisWdiTxSendRestartIndication callback function [Network Drivers Starting with Windows Vista], NdisWdiTxSendRestartIndication, NDIS_WDI_TX_SEND_RESTART_IND, NDIS_WDI_TX_SEND_RESTART_IND, dot11wdi/NdisWdiTxSendRestartIndication
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : dot11wdi.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SYNTH_STATS, *PSYNTH_STATS
+UID: NC:dot11wdi.NDIS_WDI_TX_SEND_RESTART_IND
+title: NDIS_WDI_TX_SEND_RESTART_IND
+author: windows-driver-content
+description: The NdisWdiTxSendRestartIndication callback function resumes transmission on a given port to a given peer or peer-TID combination.
+old-location: netvista\ndiswditxsendrestartindication.htm
+old-project: netvista
+ms.assetid: 40976CC1-89A4-420F-867F-99F857670DAE
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.ndiswditxsendrestartindication, NdisWdiTxSendRestartIndication callback function [Network Drivers Starting with Windows Vista], NdisWdiTxSendRestartIndication, NDIS_WDI_TX_SEND_RESTART_IND, NDIS_WDI_TX_SEND_RESTART_IND, dot11wdi/NdisWdiTxSendRestartIndication
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: dot11wdi.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	dot11wdi.h
+apiname:
+-	NdisWdiTxSendRestartIndication
+product: Windows
+targetos: Windows
+req.typenames: SYNTH_STATS, *PSYNTH_STATS
 ---
 
 

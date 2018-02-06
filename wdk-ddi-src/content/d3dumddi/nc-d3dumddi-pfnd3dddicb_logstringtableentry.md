@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDICB_LOGSTRINGTABLEENTRY
-title : PFND3DDDICB_LOGSTRINGTABLEENTRY
-author : windows-driver-content
-description : Locates a string table entry that is used by the LogMarkerStringTable function to log an Event Tracing for Windows (ETW) marker event. Optionally implemented by Windows Display Driver Model (WDDM) 1.3 and later drivers.
-old-location : display\logmarkerstringtableentry.htm
-old-project : display
-ms.assetid : 54D1F822-2D82-498D-A50F-A917FA127496
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.logmarkerstringtableentry, LogMarkerStringTableEntry callback function [Display Devices], LogMarkerStringTableEntry, PFND3DDDICB_LOGSTRINGTABLEENTRY, PFND3DDDICB_LOGSTRINGTABLEENTRY, d3dumddi/LogMarkerStringTableEntry
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8.1,WDDM 1.3 and later
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDICB_LOGSTRINGTABLEENTRY
+title: PFND3DDDICB_LOGSTRINGTABLEENTRY
+author: windows-driver-content
+description: Locates a string table entry that is used by the LogMarkerStringTable function to log an Event Tracing for Windows (ETW) marker event. Optionally implemented by Windows Display Driver Model (WDDM) 1.3 and later drivers.
+old-location: display\logmarkerstringtableentry.htm
+old-project: display
+ms.assetid: 54D1F822-2D82-498D-A50F-A917FA127496
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.logmarkerstringtableentry, LogMarkerStringTableEntry callback function [Display Devices], LogMarkerStringTableEntry, PFND3DDDICB_LOGSTRINGTABLEENTRY, PFND3DDDICB_LOGSTRINGTABLEENTRY, d3dumddi/LogMarkerStringTableEntry
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8.1,WDDM 1.3 and later
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	D3dumddi.h
+apiname:
+-	LogMarkerStringTableEntry
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NF:sercx.SerCxGetActivity
-title : SerCxGetActivity function
-author : windows-driver-content
-description : The SerCxGetActivity method retrieves the status of pending work for the serial controller driver.
-old-location : serports\sercxgetactivity.htm
-old-project : serports
-ms.assetid : 804D53F2-0F92-4262-A4C8-D171A5E69BFC
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : SerCxGetActivity method [Serial Ports], serports.sercxgetactivity, 1/SerCxGetActivity, SerCxGetActivity
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : sercx.h
-req.include-header : 
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with  Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSERCX_STATUS, SERCX_STATUS"
-req.product : Windows 10 or later.
+UID: NF:sercx.SerCxGetActivity
+title: SerCxGetActivity function
+author: windows-driver-content
+description: The SerCxGetActivity method retrieves the status of pending work for the serial controller driver.
+old-location: serports\sercxgetactivity.htm
+old-project: serports
+ms.assetid: 804D53F2-0F92-4262-A4C8-D171A5E69BFC
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: SerCxGetActivity method [Serial Ports], serports.sercxgetactivity, 1/SerCxGetActivity, SerCxGetActivity
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: sercx.h
+req.include-header: 
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with  Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	1.0\Sercx.h
+apiname:
+-	SerCxGetActivity
+product: Windows
+targetos: Windows
+req.typenames: "*PSERCX_STATUS, SERCX_STATUS"
+req.product: Windows 10 or later.
 ---
 
 

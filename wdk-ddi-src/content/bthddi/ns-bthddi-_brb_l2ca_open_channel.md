@@ -1,41 +1,46 @@
 ---
-UID : NS:bthddi._BRB_L2CA_OPEN_CHANNEL
-title : "_BRB_L2CA_OPEN_CHANNEL"
-author : windows-driver-content
-description : The _BRB_L2CA_OPEN_CHANNEL structure describes a L2CAP channel to open to a remote device, or a response from the profile driver accepting or rejecting an incoming L2CAP connection request that was initiated by a remote device.
-old-location : bltooth\_brb_l2ca_open_channel.htm
-old-project : bltooth
-ms.assetid : 16f79360-c8fd-4be9-9c94-7fa2a1d8c6b5
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : bth_structs_342ad84f-74fb-481f-b549-8f87c375c4d1.xml, _BRB_L2CA_OPEN_CHANNEL structure [Bluetooth Devices], bthddi/_BRB_L2CA_OPEN_CHANNEL, _BRB_L2CA_OPEN_CHANNEL, bltooth._brb_l2ca_open_channel
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : bthddi.h
-req.include-header : Bthddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Versions:\_Supported in Windows Vista, and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback   function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access   paged memory)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NS:bthddi._BRB_L2CA_OPEN_CHANNEL
+title: "_BRB_L2CA_OPEN_CHANNEL"
+author: windows-driver-content
+description: The _BRB_L2CA_OPEN_CHANNEL structure describes a L2CAP channel to open to a remote device, or a response from the profile driver accepting or rejecting an incoming L2CAP connection request that was initiated by a remote device.
+old-location: bltooth\_brb_l2ca_open_channel.htm
+old-project: bltooth
+ms.assetid: 16f79360-c8fd-4be9-9c94-7fa2a1d8c6b5
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: bth_structs_342ad84f-74fb-481f-b549-8f87c375c4d1.xml, _BRB_L2CA_OPEN_CHANNEL structure [Bluetooth Devices], bthddi/_BRB_L2CA_OPEN_CHANNEL, _BRB_L2CA_OPEN_CHANNEL, bltooth._brb_l2ca_open_channel
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: bthddi.h
+req.include-header: Bthddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Versions:\_Supported in Windows Vista, and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback   function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access   paged memory)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	bthddi.h
+apiname:
+-	_BRB_L2CA_OPEN_CHANNEL
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 # _BRB_L2CA_OPEN_CHANNEL structure

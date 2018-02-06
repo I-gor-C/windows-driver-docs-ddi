@@ -1,42 +1,47 @@
 ---
-UID : NS:ucxroothub._HUB_INFO_FROM_PARENT
-title : "_HUB_INFO_FROM_PARENT"
-author : windows-driver-content
-description : Describes information about a hub from its parent device.
-old-location : buses\_hub_info_from_parent.htm
-old-project : usbref
-ms.assetid : 6259CC70-A54B-4A44-B38B-D24C296C8EA0
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : buses._hub_info_from_parent, P_HUB_INFO_FROM_PARENT, *PHUB_INFO_FROM_PARENT, ucxroothub/P_HUB_INFO_FROM_PARENT, HUB_INFO_FROM_PARENT structure [Buses], P_HUB_INFO_FROM_PARENT structure pointer [Buses], ucxroothub/_HUB_INFO_FROM_PARENT, _HUB_INFO_FROM_PARENT, HUB_INFO_FROM_PARENT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ucxroothub.h
-req.include-header : Ucxclass.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HUB_INFO_FROM_PARENT, *PHUB_INFO_FROM_PARENT
-req.product : Windows 10 or later.
+UID: NS:ucxroothub._HUB_INFO_FROM_PARENT
+title: "_HUB_INFO_FROM_PARENT"
+author: windows-driver-content
+description: Describes information about a hub from its parent device.
+old-location: buses\_hub_info_from_parent.htm
+old-project: usbref
+ms.assetid: 6259CC70-A54B-4A44-B38B-D24C296C8EA0
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: buses._hub_info_from_parent, P_HUB_INFO_FROM_PARENT, *PHUB_INFO_FROM_PARENT, ucxroothub/P_HUB_INFO_FROM_PARENT, HUB_INFO_FROM_PARENT structure [Buses], P_HUB_INFO_FROM_PARENT structure pointer [Buses], ucxroothub/_HUB_INFO_FROM_PARENT, _HUB_INFO_FROM_PARENT, HUB_INFO_FROM_PARENT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ucxroothub.h
+req.include-header: Ucxclass.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ucxroothub.h
+apiname:
+-	HUB_INFO_FROM_PARENT
+product: Windows
+targetos: Windows
+req.typenames: HUB_INFO_FROM_PARENT, *PHUB_INFO_FROM_PARENT
+req.product: Windows 10 or later.
 ---
 
 # _HUB_INFO_FROM_PARENT structure

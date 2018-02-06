@@ -1,41 +1,46 @@
 ---
-UID : NI:parallel.IOCTL_INTERNAL_UNLOCK_PORT_NO_DESELECT
-title : IOCTL_INTERNAL_UNLOCK_PORT_NO_DESELECT
-author : windows-driver-content
-description : The IOCTL_INTERNAL_UNLOCK_PORT_NO_DESELECT request frees a parallel device's parent parallel port.
-old-location : parports\ioctl_internal_unlock_port_no_deselect.htm
-old-project : parports
-ms.assetid : 516441bc-d240-43d2-a206-3d0bd8e712e9
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : parports.ioctl_internal_unlock_port_no_deselect, IOCTL_INTERNAL_UNLOCK_PORT_NO_DESELECT control code [Parallel Ports], IOCTL_INTERNAL_UNLOCK_PORT_NO_DESELECT, parallel/IOCTL_INTERNAL_UNLOCK_PORT_NO_DESELECT, cisspd_a62d2a09-93e4-4fc4-ac5d-9589d930c794.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : parallel.h
-req.include-header : Parallel.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RILGBATOKEN, *LPRILGBATOKEN
+UID: NI:parallel.IOCTL_INTERNAL_UNLOCK_PORT_NO_DESELECT
+title: IOCTL_INTERNAL_UNLOCK_PORT_NO_DESELECT
+author: windows-driver-content
+description: The IOCTL_INTERNAL_UNLOCK_PORT_NO_DESELECT request frees a parallel device's parent parallel port.
+old-location: parports\ioctl_internal_unlock_port_no_deselect.htm
+old-project: parports
+ms.assetid: 516441bc-d240-43d2-a206-3d0bd8e712e9
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: parports.ioctl_internal_unlock_port_no_deselect, IOCTL_INTERNAL_UNLOCK_PORT_NO_DESELECT control code [Parallel Ports], IOCTL_INTERNAL_UNLOCK_PORT_NO_DESELECT, parallel/IOCTL_INTERNAL_UNLOCK_PORT_NO_DESELECT, cisspd_a62d2a09-93e4-4fc4-ac5d-9589d930c794.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: parallel.h
+req.include-header: Parallel.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	parallel.h
+apiname:
+-	IOCTL_INTERNAL_UNLOCK_PORT_NO_DESELECT
+product: Windows
+targetos: Windows
+req.typenames: RILGBATOKEN, *LPRILGBATOKEN
 ---
 
 # IOCTL_INTERNAL_UNLOCK_PORT_NO_DESELECT IOCTL

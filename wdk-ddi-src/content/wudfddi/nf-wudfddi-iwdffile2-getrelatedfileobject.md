@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFFile2.GetRelatedFileObject
-title : IWDFFile2::GetRelatedFileObject method
-author : windows-driver-content
-description : The GetRelatedFileObject method retrieves the IWDFFile interface of a related file object, which is a file object that has a technology-specific relationship with another file object.
-old-location : wdf\iwdffile2_getrelatedfileobject.htm
-old-project : wdf
-ms.assetid : 0ac5c19a-b3ec-4f1e-a018-2c11cc18e58d
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : umdf.iwdffile2_getrelatedfileobject, IWDFFile2::GetRelatedFileObject, IWDFFile2, IWDFFile2 interface, GetRelatedFileObject method, GetRelatedFileObject method, wdf.iwdffile2_getrelatedfileobject, UMDFFileObjectRef_f65433dc-ba63-456e-beff-ef7c9e2dffa8.xml, GetRelatedFileObject, GetRelatedFileObject method, IWDFFile2 interface, wudfddi/IWDFFile2::GetRelatedFileObject
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.9
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFFile2.GetRelatedFileObject
+title: IWDFFile2::GetRelatedFileObject method
+author: windows-driver-content
+description: The GetRelatedFileObject method retrieves the IWDFFile interface of a related file object, which is a file object that has a technology-specific relationship with another file object.
+old-location: wdf\iwdffile2_getrelatedfileobject.htm
+old-project: wdf
+ms.assetid: 0ac5c19a-b3ec-4f1e-a018-2c11cc18e58d
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: umdf.iwdffile2_getrelatedfileobject, IWDFFile2::GetRelatedFileObject, IWDFFile2, IWDFFile2 interface, GetRelatedFileObject method, GetRelatedFileObject method, wdf.iwdffile2_getrelatedfileobject, UMDFFileObjectRef_f65433dc-ba63-456e-beff-ef7c9e2dffa8.xml, GetRelatedFileObject, GetRelatedFileObject method, IWDFFile2 interface, wudfddi/IWDFFile2::GetRelatedFileObject
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.9
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFFile2.GetRelatedFileObject
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

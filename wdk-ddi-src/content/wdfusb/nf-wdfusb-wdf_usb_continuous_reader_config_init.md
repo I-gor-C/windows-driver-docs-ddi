@@ -1,42 +1,47 @@
 ---
-UID : NF:wdfusb.WDF_USB_CONTINUOUS_READER_CONFIG_INIT
-title : WDF_USB_CONTINUOUS_READER_CONFIG_INIT function
-author : windows-driver-content
-description : The WDF_USB_CONTINUOUS_READER_CONFIG_INIT function initializes a WDF_USB_CONTINUOUS_READER_CONFIG structure.
-old-location : wdf\wdf_usb_continuous_reader_config_init.htm
-old-project : wdf
-ms.assetid : d9bf6c47-b7ce-413d-8871-4d9d68e27715
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.wdf_usb_continuous_reader_config_init, DFUsbRef_a179cacd-e450-4a53-93e7-4eb3a59fc605.xml, WDF_USB_CONTINUOUS_READER_CONFIG_INIT function, kmdf.wdf_usb_continuous_reader_config_init, WDF_USB_CONTINUOUS_READER_CONFIG_INIT, wdfusb/WDF_USB_CONTINUOUS_READER_CONFIG_INIT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfusb.h
-req.include-header : Wdfusb.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfusb.WDF_USB_CONTINUOUS_READER_CONFIG_INIT
+title: WDF_USB_CONTINUOUS_READER_CONFIG_INIT function
+author: windows-driver-content
+description: The WDF_USB_CONTINUOUS_READER_CONFIG_INIT function initializes a WDF_USB_CONTINUOUS_READER_CONFIG structure.
+old-location: wdf\wdf_usb_continuous_reader_config_init.htm
+old-project: wdf
+ms.assetid: d9bf6c47-b7ce-413d-8871-4d9d68e27715
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.wdf_usb_continuous_reader_config_init, DFUsbRef_a179cacd-e450-4a53-93e7-4eb3a59fc605.xml, WDF_USB_CONTINUOUS_READER_CONFIG_INIT function, kmdf.wdf_usb_continuous_reader_config_init, WDF_USB_CONTINUOUS_READER_CONFIG_INIT, wdfusb/WDF_USB_CONTINUOUS_READER_CONFIG_INIT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfusb.h
+req.include-header: Wdfusb.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfusb.h
+apiname:
+-	WDF_USB_CONTINUOUS_READER_CONFIG_INIT
+product: Windows
+targetos: Windows
+req.typenames: WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
+req.product: Windows 10 or later.
 ---
 
 

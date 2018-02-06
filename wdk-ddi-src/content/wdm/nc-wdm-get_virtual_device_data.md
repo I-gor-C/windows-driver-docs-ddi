@@ -1,42 +1,47 @@
 ---
-UID : NC:wdm.GET_VIRTUAL_DEVICE_DATA
-title : GET_VIRTUAL_DEVICE_DATA
-author : windows-driver-content
-description : The GetVirtualFunctionData routine reads data from the PCI Express (PCIe) configuration space of a virtual function (VF) on a device that supports the single root I/O virtualization (SR-IOV) interface.
-old-location : pci\getvirtualfunctiondata.htm
-old-project : PCI
-ms.assetid : 2DE7417D-C616-4D1F-835D-29F477410F1E
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : PCI.getvirtualfunctiondata, GetVirtualFunctionData routine, GetVirtualFunctionData, GET_VIRTUAL_DEVICE_DATA, GET_VIRTUAL_DEVICE_DATA, wdm/GetVirtualFunctionData
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdm.h
-req.include-header : Wdm.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported in Windows Server 2012 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
-req.product : Windows 10 or later.
+UID: NC:wdm.GET_VIRTUAL_DEVICE_DATA
+title: GET_VIRTUAL_DEVICE_DATA
+author: windows-driver-content
+description: The GetVirtualFunctionData routine reads data from the PCI Express (PCIe) configuration space of a virtual function (VF) on a device that supports the single root I/O virtualization (SR-IOV) interface.
+old-location: pci\getvirtualfunctiondata.htm
+old-project: PCI
+ms.assetid: 2DE7417D-C616-4D1F-835D-29F477410F1E
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: PCI.getvirtualfunctiondata, GetVirtualFunctionData routine, GetVirtualFunctionData, GET_VIRTUAL_DEVICE_DATA, GET_VIRTUAL_DEVICE_DATA, wdm/GetVirtualFunctionData
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdm.h
+req.include-header: Wdm.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported in Windows Server 2012 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Wdm.h
+apiname:
+-	GetVirtualFunctionData
+product: Windows
+targetos: Windows
+req.typenames: WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+req.product: Windows 10 or later.
 ---
 
 

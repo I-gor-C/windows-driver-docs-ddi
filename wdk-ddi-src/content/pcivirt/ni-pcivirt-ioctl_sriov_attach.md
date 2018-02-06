@@ -1,41 +1,46 @@
 ---
-UID : NI:pcivirt.IOCTL_SRIOV_ATTACH
-title : IOCTL_SRIOV_ATTACH
-author : windows-driver-content
-description : The request indicates that the virtualization stack wants to register for Plug and Play events received by the SR-IOV device.
-old-location : pci\ioctl-sriov-attach.htm
-old-project : PCI
-ms.assetid : c1129d60-eeb0-4c90-b181-365f3379d89e
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : PCI.ioctl-sriov-attach, IOCTL_SRIOV_ATTACH control code [Buses], IOCTL_SRIOV_ATTACH, pcivirt/IOCTL_SRIOV_ATTACH
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : pcivirt.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SRIOV_PF_EVENT, *PSRIOV_PF_EVENT
+UID: NI:pcivirt.IOCTL_SRIOV_ATTACH
+title: IOCTL_SRIOV_ATTACH
+author: windows-driver-content
+description: The request indicates that the virtualization stack wants to register for Plug and Play events received by the SR-IOV device.
+old-location: pci\ioctl-sriov-attach.htm
+old-project: PCI
+ms.assetid: c1129d60-eeb0-4c90-b181-365f3379d89e
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: PCI.ioctl-sriov-attach, IOCTL_SRIOV_ATTACH control code [Buses], IOCTL_SRIOV_ATTACH, pcivirt/IOCTL_SRIOV_ATTACH
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: pcivirt.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Pcivirt.h
+apiname:
+-	IOCTL_SRIOV_ATTACH
+product: Windows
+targetos: Windows
+req.typenames: SRIOV_PF_EVENT, *PSRIOV_PF_EVENT
 ---
 
 # IOCTL_SRIOV_ATTACH IOCTL

@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3D11_1DDI_GETCAPTUREHANDLE
-title : PFND3D11_1DDI_GETCAPTUREHANDLE
-author : windows-driver-content
-description : Returns the handle for a specified resource that was allocated by the driver. This function also returns the size and location of specified data within the resource.
-old-location : display\getcapturehandle.htm
-old-project : display
-ms.assetid : b1ca7cf0-fe63-452f-8360-fdba05875719
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.getcapturehandle, GetCaptureHandle callback function [Display Devices], GetCaptureHandle, PFND3D11_1DDI_GETCAPTUREHANDLE, PFND3D11_1DDI_GETCAPTUREHANDLE, d3d10umddi/GetCaptureHandle
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3D11_1DDI_GETCAPTUREHANDLE
+title: PFND3D11_1DDI_GETCAPTUREHANDLE
+author: windows-driver-content
+description: Returns the handle for a specified resource that was allocated by the driver. This function also returns the size and location of specified data within the resource.
+old-location: display\getcapturehandle.htm
+old-project: display
+ms.assetid: b1ca7cf0-fe63-452f-8360-fdba05875719
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.getcapturehandle, GetCaptureHandle callback function [Display Devices], GetCaptureHandle, PFND3D11_1DDI_GETCAPTUREHANDLE, PFND3D11_1DDI_GETCAPTUREHANDLE, d3d10umddi/GetCaptureHandle
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	D3d10umddi.h
+apiname:
+-	GetCaptureHandle
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

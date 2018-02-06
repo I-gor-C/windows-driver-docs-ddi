@@ -1,41 +1,46 @@
 ---
-UID : NF:ks.KsGateCaptureThreshold
-title : KsGateCaptureThreshold function
-author : windows-driver-content
-description : The KsGateCaptureThreshold function is used to capture an ON input of an AND gate specified by Gate.
-old-location : stream\ksgatecapturethreshold.htm
-old-project : stream
-ms.assetid : 24a7745d-28f8-4f5a-9f51-37ad2d0ffa0b
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KsGateCaptureThreshold, avfunc_9fd4ddfc-f715-45da-936e-9527b8ec4a25.xml, stream.ksgatecapturethreshold, KsGateCaptureThreshold function [Streaming Media Devices], ks/KsGateCaptureThreshold
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsGateCaptureThreshold
+title: KsGateCaptureThreshold function
+author: windows-driver-content
+description: The KsGateCaptureThreshold function is used to capture an ON input of an AND gate specified by Gate.
+old-location: stream\ksgatecapturethreshold.htm
+old-project: stream
+ms.assetid: 24a7745d-28f8-4f5a-9f51-37ad2d0ffa0b
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KsGateCaptureThreshold, avfunc_9fd4ddfc-f715-45da-936e-9527b8ec4a25.xml, stream.ksgatecapturethreshold, KsGateCaptureThreshold function [Streaming Media Devices], ks/KsGateCaptureThreshold
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	KsGateCaptureThreshold
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

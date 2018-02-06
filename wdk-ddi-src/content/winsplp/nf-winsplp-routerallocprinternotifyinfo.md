@@ -1,42 +1,47 @@
 ---
-UID : NF:winsplp.RouterAllocPrinterNotifyInfo
-title : RouterAllocPrinterNotifyInfo function
-author : windows-driver-content
-description : The print spooler's RouterAllocPrinterNotifyInfo function allocates a PRINTER_NOTIFY_INFO structure and an array of PRINTER_NOTIFY_INFO_DATA structures.
-old-location : print\routerallocprinternotifyinfo.htm
-old-project : print
-ms.assetid : 319bee1b-c319-4c95-8343-edb9b08e6d6c
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : RouterAllocPrinterNotifyInfo, spoolfnc_036587a9-424d-4169-8c90-7de6165a003d.xml, winsplp/RouterAllocPrinterNotifyInfo, print.routerallocprinternotifyinfo, RouterAllocPrinterNotifyInfo function [Print Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : winsplp.h
-req.include-header : Winsplp.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Spoolss.lib
-req.dll : Spoolss.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NOTIFICATION_CONFIG_FLAGS
-req.product : Windows 10 or later.
+UID: NF:winsplp.RouterAllocPrinterNotifyInfo
+title: RouterAllocPrinterNotifyInfo function
+author: windows-driver-content
+description: The print spooler's RouterAllocPrinterNotifyInfo function allocates a PRINTER_NOTIFY_INFO structure and an array of PRINTER_NOTIFY_INFO_DATA structures.
+old-location: print\routerallocprinternotifyinfo.htm
+old-project: print
+ms.assetid: 319bee1b-c319-4c95-8343-edb9b08e6d6c
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: RouterAllocPrinterNotifyInfo, spoolfnc_036587a9-424d-4169-8c90-7de6165a003d.xml, winsplp/RouterAllocPrinterNotifyInfo, print.routerallocprinternotifyinfo, RouterAllocPrinterNotifyInfo function [Print Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: winsplp.h
+req.include-header: Winsplp.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Spoolss.lib
+req.dll: Spoolss.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Spoolss.dll
+apiname:
+-	RouterAllocPrinterNotifyInfo
+product: Windows
+targetos: Windows
+req.typenames: NOTIFICATION_CONFIG_FLAGS
+req.product: Windows 10 or later.
 ---
 
 

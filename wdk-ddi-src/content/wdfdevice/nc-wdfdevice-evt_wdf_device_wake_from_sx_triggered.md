@@ -1,42 +1,47 @@
 ---
-UID : NC:wdfdevice.EVT_WDF_DEVICE_WAKE_FROM_SX_TRIGGERED
-title : EVT_WDF_DEVICE_WAKE_FROM_SX_TRIGGERED
-author : windows-driver-content
-description : A driver's EvtDeviceWakeFromSxTriggered event callback function informs the driver that its device, which had previously entered a low-power device state because system power was reduced, might have triggered a wake signal.
-old-location : wdf\evtdevicewakefromsxtriggered.htm
-old-project : wdf
-ms.assetid : a1899d90-4906-458d-b7e3-122655f4d926
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.evtdevicewakefromsxtriggered, EvtDeviceWakeFromSxTriggered callback function, EvtDeviceWakeFromSxTriggered, EVT_WDF_DEVICE_WAKE_FROM_SX_TRIGGERED, EVT_WDF_DEVICE_WAKE_FROM_SX_TRIGGERED, wdfdevice/EvtDeviceWakeFromSxTriggered, DFDeviceObjectGeneralRef_38946496-1155-44d9-8636-8343c4623000.xml, kmdf.evtdevicewakefromsxtriggered
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdfdevice.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_DEVICE_SHUTDOWN_FLAGS
-req.product : Windows 10 or later.
+UID: NC:wdfdevice.EVT_WDF_DEVICE_WAKE_FROM_SX_TRIGGERED
+title: EVT_WDF_DEVICE_WAKE_FROM_SX_TRIGGERED
+author: windows-driver-content
+description: A driver's EvtDeviceWakeFromSxTriggered event callback function informs the driver that its device, which had previously entered a low-power device state because system power was reduced, might have triggered a wake signal.
+old-location: wdf\evtdevicewakefromsxtriggered.htm
+old-project: wdf
+ms.assetid: a1899d90-4906-458d-b7e3-122655f4d926
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.evtdevicewakefromsxtriggered, EvtDeviceWakeFromSxTriggered callback function, EvtDeviceWakeFromSxTriggered, EVT_WDF_DEVICE_WAKE_FROM_SX_TRIGGERED, EVT_WDF_DEVICE_WAKE_FROM_SX_TRIGGERED, wdfdevice/EvtDeviceWakeFromSxTriggered, DFDeviceObjectGeneralRef_38946496-1155-44d9-8636-8343c4623000.xml, kmdf.evtdevicewakefromsxtriggered
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdfdevice.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Wdfdevice.h
+apiname:
+-	EvtDeviceWakeFromSxTriggered
+product: Windows
+targetos: Windows
+req.typenames: WDF_DEVICE_SHUTDOWN_FLAGS
+req.product: Windows 10 or later.
 ---
 
 

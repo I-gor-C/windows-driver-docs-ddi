@@ -1,42 +1,47 @@
 ---
-UID : NC:sercx.EVT_SERCX2_CUSTOM_RECEIVE_TRANSACTION_CLEANUP
-title : EVT_SERCX2_CUSTOM_RECEIVE_TRANSACTION_CLEANUP
-author : windows-driver-content
-description : The EvtSerCx2CustomReceiveTransactionCleanup event callback function is called by version 2 of the serial framework extension (SerCx2) to clean up the serial controller's hardware state after a custom-receive transaction ends.
-old-location : serports\evtsercx2customreceivetransactioncleanup.htm
-old-project : serports
-ms.assetid : 72AF3D52-D109-42A7-9F25-14A3F5EDC94A
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : serports.evtsercx2customreceivetransactioncleanup, EvtSerCx2CustomReceiveTransactionCleanup callback function [Serial Ports], EvtSerCx2CustomReceiveTransactionCleanup, EVT_SERCX2_CUSTOM_RECEIVE_TRANSACTION_CLEANUP, EVT_SERCX2_CUSTOM_RECEIVE_TRANSACTION_CLEANUP, 2/EvtSerCx2CustomReceiveTransactionCleanup
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : sercx.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Available starting with Windows 8.1.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Called at IRQL <= DISPATCH_LEVEL.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SENSOR_VALUE_PAIR, *PSENSOR_VALUE_PAIR
-req.product : Windows 10 or later.
+UID: NC:sercx.EVT_SERCX2_CUSTOM_RECEIVE_TRANSACTION_CLEANUP
+title: EVT_SERCX2_CUSTOM_RECEIVE_TRANSACTION_CLEANUP
+author: windows-driver-content
+description: The EvtSerCx2CustomReceiveTransactionCleanup event callback function is called by version 2 of the serial framework extension (SerCx2) to clean up the serial controller's hardware state after a custom-receive transaction ends.
+old-location: serports\evtsercx2customreceivetransactioncleanup.htm
+old-project: serports
+ms.assetid: 72AF3D52-D109-42A7-9F25-14A3F5EDC94A
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: serports.evtsercx2customreceivetransactioncleanup, EvtSerCx2CustomReceiveTransactionCleanup callback function [Serial Ports], EvtSerCx2CustomReceiveTransactionCleanup, EVT_SERCX2_CUSTOM_RECEIVE_TRANSACTION_CLEANUP, EVT_SERCX2_CUSTOM_RECEIVE_TRANSACTION_CLEANUP, 2/EvtSerCx2CustomReceiveTransactionCleanup
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: sercx.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Available starting with Windows 8.1.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Called at IRQL <= DISPATCH_LEVEL.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	2.0\Sercx.h
+apiname:
+-	EvtSerCx2CustomReceiveTransactionCleanup
+product: Windows
+targetos: Windows
+req.typenames: SENSOR_VALUE_PAIR, *PSENSOR_VALUE_PAIR
+req.product: Windows 10 or later.
 ---
 
 

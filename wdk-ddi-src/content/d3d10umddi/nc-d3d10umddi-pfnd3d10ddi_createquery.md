@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3D10DDI_CREATEQUERY
-title : PFND3D10DDI_CREATEQUERY
-author : windows-driver-content
-description : The CreateQuery(D3D10) function creates a query.
-old-location : display\createquery_d3d10_.htm
-old-project : display
-ms.assetid : abe6a82f-1613-4c74-9e81-01939db74bfd
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.createquery_d3d10_, CreateQuery callback function [Display Devices], CreateQuery, PFND3D10DDI_CREATEQUERY, PFND3D10DDI_CREATEQUERY, d3d10umddi/CreateQuery, UserModeDisplayDriverDx10_Functions_faa26999-d692-40b4-81ef-99c730879b49.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3D10DDI_CREATEQUERY
+title: PFND3D10DDI_CREATEQUERY
+author: windows-driver-content
+description: The CreateQuery(D3D10) function creates a query.
+old-location: display\createquery_d3d10_.htm
+old-project: display
+ms.assetid: abe6a82f-1613-4c74-9e81-01939db74bfd
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.createquery_d3d10_, CreateQuery callback function [Display Devices], CreateQuery, PFND3D10DDI_CREATEQUERY, PFND3D10DDI_CREATEQUERY, d3d10umddi/CreateQuery, UserModeDisplayDriverDx10_Functions_faa26999-d692-40b4-81ef-99c730879b49.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	CreateQuery
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

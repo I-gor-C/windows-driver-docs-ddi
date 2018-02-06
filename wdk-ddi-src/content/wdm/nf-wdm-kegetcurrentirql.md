@@ -1,42 +1,48 @@
 ---
-UID : NF:wdm.KeGetCurrentIrql
-title : KeGetCurrentIrql function
-author : windows-driver-content
-description : The KeGetCurrentIrql routine returns the current IRQL.
-old-location : kernel\kegetcurrentirql.htm
-old-project : kernel
-ms.assetid : 63c33017-d827-4a8f-bb6f-fd13a2528e0c
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/KeGetCurrentIrql, KeGetCurrentIrql routine [Kernel-Mode Driver Architecture], kernel.kegetcurrentirql, k105_04c845e8-a239-4400-8a5f-15996754494a.xml, KeGetCurrentIrql
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Hal.lib
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.KeGetCurrentIrql
+title: KeGetCurrentIrql function
+author: windows-driver-content
+description: The KeGetCurrentIrql routine returns the current IRQL.
+old-location: kernel\kegetcurrentirql.htm
+old-project: kernel
+ms.assetid: 63c33017-d827-4a8f-bb6f-fd13a2528e0c
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/KeGetCurrentIrql, KeGetCurrentIrql routine [Kernel-Mode Driver Architecture], kernel.kegetcurrentirql, k105_04c845e8-a239-4400-8a5f-15996754494a.xml, KeGetCurrentIrql
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Hal.lib
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Hal.lib
+-	Hal.dll
+apiname:
+-	KeGetCurrentIrql
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:bdasup._KSM_PIN
-title : "_KSM_PIN"
-author : windows-driver-content
-description : The KSM_PIN structure describes a method request to create or delete a pin factory for a filter.
-old-location : stream\ksm_pin.htm
-old-project : stream
-ms.assetid : 7341af26-3c5c-4f33-b924-2e8098aeee7f
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : bdasup/PKSM_PIN, _KSM_PIN, *PKSM_PIN, KSM_PIN structure [Streaming Media Devices], stream.ksm_pin, bdaref_029de0a4-0975-435c-990d-4b5cac00e003.xml, PKSM_PIN, KSM_PIN, PKSM_PIN structure pointer [Streaming Media Devices], bdasup/KSM_PIN
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : bdasup.h
-req.include-header : Bdasup.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKSM_PIN, KSM_PIN"
+UID: NS:bdasup._KSM_PIN
+title: "_KSM_PIN"
+author: windows-driver-content
+description: The KSM_PIN structure describes a method request to create or delete a pin factory for a filter.
+old-location: stream\ksm_pin.htm
+old-project: stream
+ms.assetid: 7341af26-3c5c-4f33-b924-2e8098aeee7f
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: bdasup/PKSM_PIN, _KSM_PIN, *PKSM_PIN, KSM_PIN structure [Streaming Media Devices], stream.ksm_pin, bdaref_029de0a4-0975-435c-990d-4b5cac00e003.xml, PKSM_PIN, KSM_PIN, PKSM_PIN structure pointer [Streaming Media Devices], bdasup/KSM_PIN
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: bdasup.h
+req.include-header: Bdasup.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	bdasup.h
+apiname:
+-	KSM_PIN
+product: Windows
+targetos: Windows
+req.typenames: "*PKSM_PIN, KSM_PIN"
 ---
 
 # _KSM_PIN structure

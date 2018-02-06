@@ -1,41 +1,46 @@
 ---
-UID : NS:hbapiwmi._RemovePort_OUT
-title : "_RemovePort_OUT"
-author : windows-driver-content
-description : The RemovePort_OUT structure is used by an HBA miniport driver to the output parameter data of the RemovePort WMI method to the WMI client.
-old-location : storage\removeport_out.htm
-old-project : storage
-ms.assetid : 89cb75e4-5e3b-4277-b173-abed00a7360b
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : hbapiwmi/PRemovePort_OUT, hbapiwmi/RemovePort_OUT, storage.removeport_out, RemovePort_OUT structure [Storage Devices], *PRemovePort_OUT, PRemovePort_OUT, structs-Fibre_dc8be161-745b-4919-9227-e333933482cf.xml, RemovePort_OUT, _RemovePort_OUT, PRemovePort_OUT structure pointer [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : hbapiwmi.h
-req.include-header : Hbapiwmi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PRemovePort_OUT, RemovePort_OUT"
+UID: NS:hbapiwmi._RemovePort_OUT
+title: "_RemovePort_OUT"
+author: windows-driver-content
+description: The RemovePort_OUT structure is used by an HBA miniport driver to the output parameter data of the RemovePort WMI method to the WMI client.
+old-location: storage\removeport_out.htm
+old-project: storage
+ms.assetid: 89cb75e4-5e3b-4277-b173-abed00a7360b
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: hbapiwmi/PRemovePort_OUT, hbapiwmi/RemovePort_OUT, storage.removeport_out, RemovePort_OUT structure [Storage Devices], *PRemovePort_OUT, PRemovePort_OUT, structs-Fibre_dc8be161-745b-4919-9227-e333933482cf.xml, RemovePort_OUT, _RemovePort_OUT, PRemovePort_OUT structure pointer [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: hbapiwmi.h
+req.include-header: Hbapiwmi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hbapiwmi.h
+apiname:
+-	RemovePort_OUT
+product: Windows
+targetos: Windows
+req.typenames: "*PRemovePort_OUT, RemovePort_OUT"
 ---
 
 # _RemovePort_OUT structure

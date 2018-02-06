@@ -1,42 +1,47 @@
 ---
-UID : NC:ucxcontroller.EVT_UCX_CONTROLLER_QUERY_USB_CAPABILITY
-title : EVT_UCX_CONTROLLER_QUERY_USB_CAPABILITY
-author : windows-driver-content
-description : The client driver's implementation to determine if the controller supports a specific capability.
-old-location : buses\evt_ucx_controller_query_usb_capability.htm
-old-project : usbref
-ms.assetid : c01150b6-e6cf-484c-be3e-c63984e97bb3
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : buses.evt_ucx_controller_query_usb_capability, EvtUcxControllerQueryUsbCapability callback function [Buses], EvtUcxControllerQueryUsbCapability, EVT_UCX_CONTROLLER_QUERY_USB_CAPABILITY, EVT_UCX_CONTROLLER_QUERY_USB_CAPABILITY, ucxcontroller/EvtUcxControllerQueryUsbCapability, PEVT_UCX_CONTROLLER_QUERY_USB_CAPABILITY callback function pointer [Buses], PEVT_UCX_CONTROLLER_QUERY_USB_CAPABILITY
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ucxcontroller.h
-req.include-header : Ucxclass.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUCM_PD_REQUEST_DATA_OBJECT, UCM_PD_REQUEST_DATA_OBJECT"
-req.product : Windows 10 or later.
+UID: NC:ucxcontroller.EVT_UCX_CONTROLLER_QUERY_USB_CAPABILITY
+title: EVT_UCX_CONTROLLER_QUERY_USB_CAPABILITY
+author: windows-driver-content
+description: The client driver's implementation to determine if the controller supports a specific capability.
+old-location: buses\evt_ucx_controller_query_usb_capability.htm
+old-project: usbref
+ms.assetid: c01150b6-e6cf-484c-be3e-c63984e97bb3
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: buses.evt_ucx_controller_query_usb_capability, EvtUcxControllerQueryUsbCapability callback function [Buses], EvtUcxControllerQueryUsbCapability, EVT_UCX_CONTROLLER_QUERY_USB_CAPABILITY, EVT_UCX_CONTROLLER_QUERY_USB_CAPABILITY, ucxcontroller/EvtUcxControllerQueryUsbCapability, PEVT_UCX_CONTROLLER_QUERY_USB_CAPABILITY callback function pointer [Buses], PEVT_UCX_CONTROLLER_QUERY_USB_CAPABILITY
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ucxcontroller.h
+req.include-header: Ucxclass.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ucxcontroller.h
+apiname:
+-	PEVT_UCX_CONTROLLER_QUERY_USB_CAPABILITY
+product: Windows
+targetos: Windows
+req.typenames: "*PUCM_PD_REQUEST_DATA_OBJECT, UCM_PD_REQUEST_DATA_OBJECT"
+req.product: Windows 10 or later.
 ---
 
 

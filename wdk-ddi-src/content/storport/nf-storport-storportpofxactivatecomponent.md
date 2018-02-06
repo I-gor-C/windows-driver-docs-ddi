@@ -1,42 +1,48 @@
 ---
-UID : NF:storport.StorPortPoFxActivateComponent
-title : StorPortPoFxActivateComponent function
-author : windows-driver-content
-description : The StorPortPoFxActivateComponent routine increments the activation reference count on the specified component of a storage device.
-old-location : storage\storportpofxactivatecomponent.htm
-old-project : storage
-ms.assetid : 23872334-F9C3-4EB5-9B26-0BDB239D8F4E
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storport/StorPortPoFxActivateComponent, storage.storportpofxactivatecomponent, StorPortPoFxActivateComponent, StorPortPoFxActivateComponent routine [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : storport.h
-req.include-header : 
-req.target-type : Universal
-req.target-min-winverclnt : Available in starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Storport.lib
-req.dll : 
-req.irql : IRQL <= DISPATCH_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STOR_SPINLOCK
-req.product : Windows 10 or later.
+UID: NF:storport.StorPortPoFxActivateComponent
+title: StorPortPoFxActivateComponent function
+author: windows-driver-content
+description: The StorPortPoFxActivateComponent routine increments the activation reference count on the specified component of a storage device.
+old-location: storage\storportpofxactivatecomponent.htm
+old-project: storage
+ms.assetid: 23872334-F9C3-4EB5-9B26-0BDB239D8F4E
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storport/StorPortPoFxActivateComponent, storage.storportpofxactivatecomponent, StorPortPoFxActivateComponent, StorPortPoFxActivateComponent routine [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: storport.h
+req.include-header: 
+req.target-type: Universal
+req.target-min-winverclnt: Available in starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Storport.lib
+req.dll: 
+req.irql: IRQL <= DISPATCH_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	storport.lib
+-	storport.dll
+apiname:
+-	StorPortPoFxActivateComponent
+product: Windows
+targetos: Windows
+req.typenames: STOR_SPINLOCK
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,42 +1,48 @@
 ---
-UID : NF:wdm.ZwGetNotificationResourceManager
-title : ZwGetNotificationResourceManager function
-author : windows-driver-content
-description : The ZwGetNotificationResourceManager routine retrieves the next transaction notification from a specified resource manager's notification queue.
-old-location : kernel\zwgetnotificationresourcemanager.htm
-old-project : kernel
-ms.assetid : 53892fd1-d83c-4b6e-9c39-2f64ba0ab310
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ZwGetNotificationResourceManager, ZwGetNotificationResourceManager routine [Kernel-Mode Driver Architecture], wdm/NtGetNotificationResourceManager, NtGetNotificationResourceManager, ktm_ref_c0a3b128-d49c-4080-ae12-0081ab5a27e9.xml, kernel.zwgetnotificationresourcemanager, wdm/ZwGetNotificationResourceManager
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later operating system versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "= PASSIVE_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ZwGetNotificationResourceManager
+title: ZwGetNotificationResourceManager function
+author: windows-driver-content
+description: The ZwGetNotificationResourceManager routine retrieves the next transaction notification from a specified resource manager's notification queue.
+old-location: kernel\zwgetnotificationresourcemanager.htm
+old-project: kernel
+ms.assetid: 53892fd1-d83c-4b6e-9c39-2f64ba0ab310
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ZwGetNotificationResourceManager, ZwGetNotificationResourceManager routine [Kernel-Mode Driver Architecture], wdm/NtGetNotificationResourceManager, NtGetNotificationResourceManager, ktm_ref_c0a3b128-d49c-4080-ae12-0081ab5a27e9.xml, kernel.zwgetnotificationresourcemanager, wdm/ZwGetNotificationResourceManager
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later operating system versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "= PASSIVE_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ZwGetNotificationResourceManager
+-	NtGetNotificationResourceManager
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

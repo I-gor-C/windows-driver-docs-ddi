@@ -1,41 +1,47 @@
 ---
-UID : NF:dbgeng.IDebugSymbolGroup2.GetSymbolParameters
-title : IDebugSymbolGroup2::GetSymbolParameters method
-author : windows-driver-content
-description : The GetSymbolParameters method returns the symbol parameters that describe the specified symbols in a symbol group.
-old-location : debugger\getsymbolparameters.htm
-old-project : debugger
-ms.assetid : e6390a7c-bbe1-47d7-9411-d710c4ab58a8
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : dbgeng/IDebugSymbolGroup2::GetSymbolParameters, IDebugSymbolGroup2, IDebugSymbolGroup::GetSymbolParameters, GetSymbolParameters method [Windows Debugging], IDebugSymbolGroup interface, GetSymbolParameters, GetSymbolParameters method [Windows Debugging], IDebugSymbolGroup2 interface, IDebugSymbolGroup2::GetSymbolParameters, dbgeng/IDebugSymbolGroup::GetSymbolParameters, IDebugSymbolGroup2 interface [Windows Debugging], GetSymbolParameters method, debugger.getsymbolparameters, ComOther_f81a6f5a-df93-4ae2-9694-88a25d6d67a8.xml, GetSymbolParameters method [Windows Debugging], IDebugSymbolGroup interface [Windows Debugging], GetSymbolParameters method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSymbolGroup2.GetSymbolParameters
+title: IDebugSymbolGroup2::GetSymbolParameters method
+author: windows-driver-content
+description: The GetSymbolParameters method returns the symbol parameters that describe the specified symbols in a symbol group.
+old-location: debugger\getsymbolparameters.htm
+old-project: debugger
+ms.assetid: e6390a7c-bbe1-47d7-9411-d710c4ab58a8
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: dbgeng/IDebugSymbolGroup2::GetSymbolParameters, IDebugSymbolGroup2, IDebugSymbolGroup::GetSymbolParameters, GetSymbolParameters method [Windows Debugging], IDebugSymbolGroup interface, GetSymbolParameters, GetSymbolParameters method [Windows Debugging], IDebugSymbolGroup2 interface, IDebugSymbolGroup2::GetSymbolParameters, dbgeng/IDebugSymbolGroup::GetSymbolParameters, IDebugSymbolGroup2 interface [Windows Debugging], GetSymbolParameters method, debugger.getsymbolparameters, ComOther_f81a6f5a-df93-4ae2-9694-88a25d6d67a8.xml, GetSymbolParameters method [Windows Debugging], IDebugSymbolGroup interface [Windows Debugging], GetSymbolParameters method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugSymbolGroup.GetSymbolParameters
+-	IDebugSymbolGroup2.GetSymbolParameters
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

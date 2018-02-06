@@ -1,42 +1,48 @@
 ---
-UID : NF:vhf.VhfReadReportSubmit
-title : VhfReadReportSubmit function
-author : windows-driver-content
-description : The HID source driver calls this method to submit a HID Read (Input) Report to Virtual HID Framework (VHF).
-old-location : hid\vhfreadreportsubmit.htm
-old-project : hid
-ms.assetid : DCC4EB4C-B9A0-4E25-B3BD-4CAB07022A7B
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : VhfReadReportSubmit method [Human Input Devices], hid.vhfreadreportsubmit, vhf/VhfReadReportSubmit, VhfReadReportSubmit
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : vhf.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : VhfKm.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR, *PUSB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR
-req.product : Windows 10 or later.
+UID: NF:vhf.VhfReadReportSubmit
+title: VhfReadReportSubmit function
+author: windows-driver-content
+description: The HID source driver calls this method to submit a HID Read (Input) Report to Virtual HID Framework (VHF).
+old-location: hid\vhfreadreportsubmit.htm
+old-project: hid
+ms.assetid: DCC4EB4C-B9A0-4E25-B3BD-4CAB07022A7B
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: VhfReadReportSubmit method [Human Input Devices], hid.vhfreadreportsubmit, vhf/VhfReadReportSubmit, VhfReadReportSubmit
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: vhf.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: VhfKm.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	vhfKm.lib
+-	vhfKm.dll
+apiname:
+-	VhfReadReportSubmit
+product: Windows
+targetos: Windows
+req.typenames: USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR, *PUSB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR
+req.product: Windows 10 or later.
 ---
 
 

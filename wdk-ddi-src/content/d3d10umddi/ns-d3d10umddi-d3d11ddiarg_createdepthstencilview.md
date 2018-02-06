@@ -1,41 +1,46 @@
 ---
-UID : NS:d3d10umddi.D3D11DDIARG_CREATEDEPTHSTENCILVIEW
-title : D3D11DDIARG_CREATEDEPTHSTENCILVIEW
-author : windows-driver-content
-description : The D3D11DDIARG_CREATEDEPTHSTENCILVIEW structure describes the depth-stencil view to create.
-old-location : display\d3d11ddiarg_createdepthstencilview.htm
-old-project : display
-ms.assetid : 563a443b-f460-4fb2-b179-454466c2291b
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3d10umddi/D3D11DDIARG_CREATEDEPTHSTENCILVIEW, display.d3d11ddiarg_createdepthstencilview, D3D11DDIARG_CREATEDEPTHSTENCILVIEW structure [Display Devices], UMDisplayDriver_Dx11param_Structs_17e6fa50-317c-445d-b304-8097f658652f.xml, D3D11DDIARG_CREATEDEPTHSTENCILVIEW
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Windows
-req.target-min-winverclnt : D3D11DDIARG_CREATEDEPTHSTENCILVIEW is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3D11DDIARG_CREATEDEPTHSTENCILVIEW
+UID: NS:d3d10umddi.D3D11DDIARG_CREATEDEPTHSTENCILVIEW
+title: D3D11DDIARG_CREATEDEPTHSTENCILVIEW
+author: windows-driver-content
+description: The D3D11DDIARG_CREATEDEPTHSTENCILVIEW structure describes the depth-stencil view to create.
+old-location: display\d3d11ddiarg_createdepthstencilview.htm
+old-project: display
+ms.assetid: 563a443b-f460-4fb2-b179-454466c2291b
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3d10umddi/D3D11DDIARG_CREATEDEPTHSTENCILVIEW, display.d3d11ddiarg_createdepthstencilview, D3D11DDIARG_CREATEDEPTHSTENCILVIEW structure [Display Devices], UMDisplayDriver_Dx11param_Structs_17e6fa50-317c-445d-b304-8097f658652f.xml, D3D11DDIARG_CREATEDEPTHSTENCILVIEW
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Windows
+req.target-min-winverclnt: D3D11DDIARG_CREATEDEPTHSTENCILVIEW is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	D3D11DDIARG_CREATEDEPTHSTENCILVIEW
+product: Windows
+targetos: Windows
+req.typenames: D3D11DDIARG_CREATEDEPTHSTENCILVIEW
 ---
 
 # D3D11DDIARG_CREATEDEPTHSTENCILVIEW structure

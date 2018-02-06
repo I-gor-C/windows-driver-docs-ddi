@@ -1,41 +1,46 @@
 ---
-UID : NI:parallel.IOCTL_INTERNAL_LOCK_PORT_NO_SELECT
-title : IOCTL_INTERNAL_LOCK_PORT_NO_SELECT
-author : windows-driver-content
-description : The IOCTL_INTERNAL_LOCK_PORT_NO_SELECT request allocates the parallel device's parent parallel port, but does not select the parallel device.
-old-location : parports\ioctl_internal_lock_port_no_select.htm
-old-project : parports
-ms.assetid : 4ff7fb02-707f-49a3-a1eb-dcf3353f2803
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : parports.ioctl_internal_lock_port_no_select, IOCTL_INTERNAL_LOCK_PORT_NO_SELECT control code [Parallel Ports], IOCTL_INTERNAL_LOCK_PORT_NO_SELECT, parallel/IOCTL_INTERNAL_LOCK_PORT_NO_SELECT, cisspd_a8b5a024-9169-47ef-843d-706a0322247b.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : parallel.h
-req.include-header : Parallel.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RILGBATOKEN, *LPRILGBATOKEN
+UID: NI:parallel.IOCTL_INTERNAL_LOCK_PORT_NO_SELECT
+title: IOCTL_INTERNAL_LOCK_PORT_NO_SELECT
+author: windows-driver-content
+description: The IOCTL_INTERNAL_LOCK_PORT_NO_SELECT request allocates the parallel device's parent parallel port, but does not select the parallel device.
+old-location: parports\ioctl_internal_lock_port_no_select.htm
+old-project: parports
+ms.assetid: 4ff7fb02-707f-49a3-a1eb-dcf3353f2803
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: parports.ioctl_internal_lock_port_no_select, IOCTL_INTERNAL_LOCK_PORT_NO_SELECT control code [Parallel Ports], IOCTL_INTERNAL_LOCK_PORT_NO_SELECT, parallel/IOCTL_INTERNAL_LOCK_PORT_NO_SELECT, cisspd_a8b5a024-9169-47ef-843d-706a0322247b.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: parallel.h
+req.include-header: Parallel.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	parallel.h
+apiname:
+-	IOCTL_INTERNAL_LOCK_PORT_NO_SELECT
+product: Windows
+targetos: Windows
+req.typenames: RILGBATOKEN, *LPRILGBATOKEN
 ---
 
 # IOCTL_INTERNAL_LOCK_PORT_NO_SELECT IOCTL

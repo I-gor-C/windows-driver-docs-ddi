@@ -1,42 +1,47 @@
 ---
-UID : NS:printoem.IPPARAMS
-title : IPPARAMS
-author : windows-driver-content
-description : The IPPARAMS structure is used as an input parameter to a rendering plug-in's IPrintOemUni::ImageProcessing method.
-old-location : print\ipparams.htm
-old-project : print
-ms.assetid : 14ed4180-9ac1-46dd-af76-8d79a2a1fd2d
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : printoem/PIPPARAMS, PIPPARAMS, print_unidrv-pscript_rendering_a002bc49-f3de-4147-bb33-8766672c8d0c.xml, IPPARAMS, print.ipparams, PIPPARAMS structure pointer [Print Devices], IPPARAMS structure [Print Devices], *PIPPARAMS, printoem/IPPARAMS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : printoem.h
-req.include-header : Printoem.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PIPPARAMS, IPPARAMS"
-req.product : Windows 10 or later.
+UID: NS:printoem.IPPARAMS
+title: IPPARAMS
+author: windows-driver-content
+description: The IPPARAMS structure is used as an input parameter to a rendering plug-in's IPrintOemUni::ImageProcessing method.
+old-location: print\ipparams.htm
+old-project: print
+ms.assetid: 14ed4180-9ac1-46dd-af76-8d79a2a1fd2d
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: printoem/PIPPARAMS, PIPPARAMS, print_unidrv-pscript_rendering_a002bc49-f3de-4147-bb33-8766672c8d0c.xml, IPPARAMS, print.ipparams, PIPPARAMS structure pointer [Print Devices], IPPARAMS structure [Print Devices], *PIPPARAMS, printoem/IPPARAMS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: printoem.h
+req.include-header: Printoem.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	printoem.h
+apiname:
+-	IPPARAMS
+product: Windows
+targetos: Windows
+req.typenames: "*PIPPARAMS, IPPARAMS"
+req.product: Windows 10 or later.
 ---
 
 # IPPARAMS structure

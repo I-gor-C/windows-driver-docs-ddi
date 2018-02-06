@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfusb.IWDFUsbRequestCompletionParams.GetDeviceControlTransferParameters
-title : IWDFUsbRequestCompletionParams::GetDeviceControlTransferParameters method
-author : windows-driver-content
-description : The GetDeviceControlTransferParameters method retrieves parameters that are associated with the completion of a device I/O control request.
-old-location : wdf\iwdfusbrequestcompletionparams_getdevicecontroltransferparameters.htm
-old-project : wdf
-ms.assetid : 0c3fd576-48de-454b-8015-51767b21f17e
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : GetDeviceControlTransferParameters, GetDeviceControlTransferParameters method, wdf.iwdfusbrequestcompletionparams_getdevicecontroltransferparameters, IWDFUsbRequestCompletionParams interface, GetDeviceControlTransferParameters method, umdf.iwdfusbrequestcompletionparams_getdevicecontroltransferparameters, wudfusb/IWDFUsbRequestCompletionParams::GetDeviceControlTransferParameters, UMDFRequestObjectRef_b645716e-2ec3-45f3-a3b2-199374aadef8.xml, GetDeviceControlTransferParameters method, IWDFUsbRequestCompletionParams interface, IWDFUsbRequestCompletionParams::GetDeviceControlTransferParameters, IWDFUsbRequestCompletionParams
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfusb.h
-req.include-header : Wudfusb.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.5
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfusb.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
-req.product : Windows 10 or later.
+UID: NF:wudfusb.IWDFUsbRequestCompletionParams.GetDeviceControlTransferParameters
+title: IWDFUsbRequestCompletionParams::GetDeviceControlTransferParameters method
+author: windows-driver-content
+description: The GetDeviceControlTransferParameters method retrieves parameters that are associated with the completion of a device I/O control request.
+old-location: wdf\iwdfusbrequestcompletionparams_getdevicecontroltransferparameters.htm
+old-project: wdf
+ms.assetid: 0c3fd576-48de-454b-8015-51767b21f17e
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: GetDeviceControlTransferParameters, GetDeviceControlTransferParameters method, wdf.iwdfusbrequestcompletionparams_getdevicecontroltransferparameters, IWDFUsbRequestCompletionParams interface, GetDeviceControlTransferParameters method, umdf.iwdfusbrequestcompletionparams_getdevicecontroltransferparameters, wudfusb/IWDFUsbRequestCompletionParams::GetDeviceControlTransferParameters, UMDFRequestObjectRef_b645716e-2ec3-45f3-a3b2-199374aadef8.xml, GetDeviceControlTransferParameters method, IWDFUsbRequestCompletionParams interface, IWDFUsbRequestCompletionParams::GetDeviceControlTransferParameters, IWDFUsbRequestCompletionParams
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfusb.h
+req.include-header: Wudfusb.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.5
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfusb.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFUsbRequestCompletionParams.GetDeviceControlTransferParameters
+product: Windows
+targetos: Windows
+req.typenames: WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,38 +1,38 @@
 ---
-UID : NS:wdm._PCW_REGISTRATION_INFORMATION
-title : _PCW_REGISTRATION_INFORMATION
-author : windows-driver-content
-description : The PCW_REGISTRATION_INFORMATION structure supplies details about the provider and the counter set.
-old-location : devtest\pcw_registration_information.htm
-old-project : devtest
-ms.assetid : f5305351-10b4-47e6-a8b6-e1a91c605ca9
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : _PCW_REGISTRATION_INFORMATION, *PPCW_REGISTRATION_INFORMATION, PCW_REGISTRATION_INFORMATION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.alt-api : PCW_REGISTRATION_INFORMATION
-req.alt-loc : wdm.h
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-req.typenames : "*PPCW_REGISTRATION_INFORMATION, PCW_REGISTRATION_INFORMATION"
-req.product : Windows 10 or later.
+UID: NS:wdm._PCW_REGISTRATION_INFORMATION
+title: _PCW_REGISTRATION_INFORMATION
+author: windows-driver-content
+description: The PCW_REGISTRATION_INFORMATION structure supplies details about the provider and the counter set.
+old-location: devtest\pcw_registration_information.htm
+old-project: devtest
+ms.assetid: f5305351-10b4-47e6-a8b6-e1a91c605ca9
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: _PCW_REGISTRATION_INFORMATION, *PPCW_REGISTRATION_INFORMATION, PCW_REGISTRATION_INFORMATION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.alt-api: PCW_REGISTRATION_INFORMATION
+req.alt-loc: wdm.h
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+req.typenames: *PPCW_REGISTRATION_INFORMATION, PCW_REGISTRATION_INFORMATION
+req.product: Windows 10 or later.
 ---
 
 # _PCW_REGISTRATION_INFORMATION structure

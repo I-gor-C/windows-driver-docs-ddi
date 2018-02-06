@@ -1,41 +1,46 @@
 ---
-UID : NF:ntddk.IoDeassignArcName
-title : IoDeassignArcName macro
-author : windows-driver-content
-description : The IoDeassignArcName routine removes a symbolic link between the ARC name for a device and the named device object.
-old-location : kernel\iodeassignarcname.htm
-old-project : kernel
-ms.assetid : 978fbe0a-ac10-4c83-870d-35d98775c233
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : k104_859767ed-5969-41db-a454-b7808a1ef131.xml, kernel.iodeassignarcname, IoDeassignArcName, IoDeassignArcName routine [Kernel-Mode Driver Architecture], ntddk/IoDeassignArcName
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : macro
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.IoDeassignArcName
+title: IoDeassignArcName macro
+author: windows-driver-content
+description: The IoDeassignArcName routine removes a symbolic link between the ARC name for a device and the named device object.
+old-location: kernel\iodeassignarcname.htm
+old-project: kernel
+ms.assetid: 978fbe0a-ac10-4c83-870d-35d98775c233
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: k104_859767ed-5969-41db-a454-b7808a1ef131.xml, kernel.iodeassignarcname, IoDeassignArcName, IoDeassignArcName routine [Kernel-Mode Driver Architecture], ntddk/IoDeassignArcName
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: macro
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoDeassignArcName
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

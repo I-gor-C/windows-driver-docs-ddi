@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.ExInitializeWorkItem
-title : ExInitializeWorkItem function
-author : windows-driver-content
-description : ExInitializeWorkItem initializes a work-queue item with a caller-supplied context and callback routine to be queued for execution when a system worker thread is given control.
-old-location : ifsk\exinitializeworkitem.htm
-old-project : ifsk
-ms.assetid : e26e7e68-0d0c-42fe-9342-ebbf2bb8f830
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ExInitializeWorkItem routine [Installable File System Drivers], wdm/ExInitializeWorkItem, ExInitializeWorkItem, exref_815c9796-c2e5-4362-926a-2fb509f3a1ae.xml, ifsk.exinitializeworkitem
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : FltKernel.h, Ntifs.h, Ntddk.h, Wdm.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ExInitializeWorkItem
+title: ExInitializeWorkItem function
+author: windows-driver-content
+description: ExInitializeWorkItem initializes a work-queue item with a caller-supplied context and callback routine to be queued for execution when a system worker thread is given control.
+old-location: ifsk\exinitializeworkitem.htm
+old-project: ifsk
+ms.assetid: e26e7e68-0d0c-42fe-9342-ebbf2bb8f830
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ExInitializeWorkItem routine [Installable File System Drivers], wdm/ExInitializeWorkItem, ExInitializeWorkItem, exref_815c9796-c2e5-4362-926a-2fb509f3a1ae.xml, ifsk.exinitializeworkitem
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: FltKernel.h, Ntifs.h, Ntddk.h, Wdm.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdm.h
+apiname:
+-	ExInitializeWorkItem
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

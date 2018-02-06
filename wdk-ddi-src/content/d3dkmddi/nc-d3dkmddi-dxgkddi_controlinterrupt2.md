@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dkmddi.DXGKDDI_CONTROLINTERRUPT2
-title : DXGKDDI_CONTROLINTERRUPT2
-author : windows-driver-content
-description : The DxgkDdi_ControlInterrupt2 function enables or disables the given interrupt type on the graphics hardware.
-old-location : display\dxgkddicontrolinterrupt2.htm
-old-project : display
-ms.assetid : 0C09CAB1-3DFC-4340-8FF2-99CAF7F13156
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkddicontrolinterrupt2, DxgkDdi_ControlInterrupt2 callback function [Display Devices], DxgkDdi_ControlInterrupt2, DXGKDDI_CONTROLINTERRUPT2, DXGKDDI_CONTROLINTERRUPT2, d3dkmddi/DxgkDdi_ControlInterrupt2
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows 10 and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
+UID: NC:d3dkmddi.DXGKDDI_CONTROLINTERRUPT2
+title: DXGKDDI_CONTROLINTERRUPT2
+author: windows-driver-content
+description: The DxgkDdi_ControlInterrupt2 function enables or disables the given interrupt type on the graphics hardware.
+old-location: display\dxgkddicontrolinterrupt2.htm
+old-project: display
+ms.assetid: 0C09CAB1-3DFC-4340-8FF2-99CAF7F13156
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkddicontrolinterrupt2, DxgkDdi_ControlInterrupt2 callback function [Display Devices], DxgkDdi_ControlInterrupt2, DXGKDDI_CONTROLINTERRUPT2, DXGKDDI_CONTROLINTERRUPT2, d3dkmddi/DxgkDdi_ControlInterrupt2
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows 10 and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DxgkDdi_ControlInterrupt2
+product: Windows
+targetos: Windows
+req.typenames: DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
 

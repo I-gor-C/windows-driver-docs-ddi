@@ -1,41 +1,46 @@
 ---
-UID : NF:portcls.IPortWaveRTStream.GetPhysicalPageAddress
-title : IPortWaveRTStream::GetPhysicalPageAddress method
-author : windows-driver-content
-description : The GetPhysicalPageAddress method returns the physical address for a page within a memory descriptor list (MDL).
-old-location : audio\iportwavertstream_getphysicalpageaddress.htm
-old-project : audio
-ms.assetid : 24c22102-f91d-4ea1-81fb-98052b8d0153
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : GetPhysicalPageAddress, audio.iportwavertstream_getphysicalpageaddress, portcls/IPortWaveRTStream::GetPhysicalPageAddress, GetPhysicalPageAddress method [Audio Devices], IPortWaveRTStream interface, GetPhysicalPageAddress method [Audio Devices], IPortWaveRTStream interface [Audio Devices], GetPhysicalPageAddress method, audmp-routines_44b6b9ed-368b-4bf1-9a21-e0e0b2b90728.xml, IPortWaveRTStream::GetPhysicalPageAddress, IPortWaveRTStream
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : portcls.h
-req.include-header : 
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : portcls.h
-req.dll : 
-req.irql : Passive level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.IPortWaveRTStream.GetPhysicalPageAddress
+title: IPortWaveRTStream::GetPhysicalPageAddress method
+author: windows-driver-content
+description: The GetPhysicalPageAddress method returns the physical address for a page within a memory descriptor list (MDL).
+old-location: audio\iportwavertstream_getphysicalpageaddress.htm
+old-project: audio
+ms.assetid: 24c22102-f91d-4ea1-81fb-98052b8d0153
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: GetPhysicalPageAddress, audio.iportwavertstream_getphysicalpageaddress, portcls/IPortWaveRTStream::GetPhysicalPageAddress, GetPhysicalPageAddress method [Audio Devices], IPortWaveRTStream interface, GetPhysicalPageAddress method [Audio Devices], IPortWaveRTStream interface [Audio Devices], GetPhysicalPageAddress method, audmp-routines_44b6b9ed-368b-4bf1-9a21-e0e0b2b90728.xml, IPortWaveRTStream::GetPhysicalPageAddress, IPortWaveRTStream
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: portcls.h
+req.include-header: 
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: portcls.h
+req.dll: 
+req.irql: Passive level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Portcls.h
+apiname:
+-	IPortWaveRTStream.GetPhysicalPageAddress
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

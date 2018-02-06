@@ -1,42 +1,48 @@
 ---
-UID : NF:wdm.ClfsMgmtSetLogFileSize
-title : ClfsMgmtSetLogFileSize function
-author : windows-driver-content
-description : The ClfsMgmtSetLogFileSize routine adds containers to a log or deletes containers from a log.
-old-location : kernel\clfsmgmtsetlogfilesize.htm
-old-project : kernel
-ms.assetid : 76588bdd-ceb8-4c8b-bcd7-23184feacf86
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ClfsMgmtSetLogFileSize routine [Kernel-Mode Driver Architecture], ClfsMgmtSetLogFileSize, Clfs_management_a4f0865a-5c4b-411b-a8a5-349b49c1528b.xml, kernel.clfsmgmtsetlogfilesize, wdm/ClfsMgmtSetLogFileSize
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available starting with Windows Server 2003 R2 and Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Clfs.lib
-req.dll : Clfs.sys
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ClfsMgmtSetLogFileSize
+title: ClfsMgmtSetLogFileSize function
+author: windows-driver-content
+description: The ClfsMgmtSetLogFileSize routine adds containers to a log or deletes containers from a log.
+old-location: kernel\clfsmgmtsetlogfilesize.htm
+old-project: kernel
+ms.assetid: 76588bdd-ceb8-4c8b-bcd7-23184feacf86
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ClfsMgmtSetLogFileSize routine [Kernel-Mode Driver Architecture], ClfsMgmtSetLogFileSize, Clfs_management_a4f0865a-5c4b-411b-a8a5-349b49c1528b.xml, kernel.clfsmgmtsetlogfilesize, wdm/ClfsMgmtSetLogFileSize
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available starting with Windows Server 2003 R2 and Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Clfs.lib
+req.dll: Clfs.sys
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Clfs.sys
+-	Ext-MS-Win-fs-clfs-l1-1-0.dll
+apiname:
+-	ClfsMgmtSetLogFileSize
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

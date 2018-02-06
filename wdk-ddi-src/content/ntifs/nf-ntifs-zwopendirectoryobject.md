@@ -1,41 +1,47 @@
 ---
-UID : NF:ntifs.ZwOpenDirectoryObject
-title : ZwOpenDirectoryObject function
-author : windows-driver-content
-description : The ZwOpenDirectoryObject routine opens an existing directory object.
-old-location : kernel\zwopendirectoryobject.htm
-old-project : kernel
-ms.assetid : ddff6e6e-d22f-4e22-af13-aca889eee0d4
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.zwopendirectoryobject, k111_a3aca9ff-bf76-4cd0-a15d-565201c1e132.xml, ntifs/ZwOpenDirectoryObject, ZwOpenDirectoryObject routine [Kernel-Mode Driver Architecture], ZwOpenDirectoryObject, NtCreateDirectoryObject, ntifs/NtCreateDirectoryObject
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntdef.h, Ntifs.h, Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows XP and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.ZwOpenDirectoryObject
+title: ZwOpenDirectoryObject function
+author: windows-driver-content
+description: The ZwOpenDirectoryObject routine opens an existing directory object.
+old-location: kernel\zwopendirectoryobject.htm
+old-project: kernel
+ms.assetid: ddff6e6e-d22f-4e22-af13-aca889eee0d4
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.zwopendirectoryobject, k111_a3aca9ff-bf76-4cd0-a15d-565201c1e132.xml, ntifs/ZwOpenDirectoryObject, ZwOpenDirectoryObject routine [Kernel-Mode Driver Architecture], ZwOpenDirectoryObject, NtCreateDirectoryObject, ntifs/NtCreateDirectoryObject
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntdef.h, Ntifs.h, Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows XP and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ZwOpenDirectoryObject
+-	NtCreateDirectoryObject
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

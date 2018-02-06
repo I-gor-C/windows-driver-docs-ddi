@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFRemoteTarget.Stop
-title : IWDFRemoteTarget::Stop method
-author : windows-driver-content
-description : The Stop method temporarily stops a remote I/O target.
-old-location : wdf\iwdfremotetarget_stop.htm
-old-project : wdf
-ms.assetid : 4aaef251-7387-4e42-a7ae-e08120fc95ff
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wudfddi/IWDFRemoteTarget::Stop, IWDFRemoteTarget interface, Stop method, Stop method, Stop method, IWDFRemoteTarget interface, IWDFRemoteTarget::Stop, wdf.iwdfremotetarget_stop, UMDFIoTargetObjectRef_a7d1be6f-890c-4e06-9544-7bd18876b56e.xml, IWDFRemoteTarget, Stop, umdf.iwdfremotetarget_stop
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.9
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFRemoteTarget.Stop
+title: IWDFRemoteTarget::Stop method
+author: windows-driver-content
+description: The Stop method temporarily stops a remote I/O target.
+old-location: wdf\iwdfremotetarget_stop.htm
+old-project: wdf
+ms.assetid: 4aaef251-7387-4e42-a7ae-e08120fc95ff
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wudfddi/IWDFRemoteTarget::Stop, IWDFRemoteTarget interface, Stop method, Stop method, Stop method, IWDFRemoteTarget interface, IWDFRemoteTarget::Stop, wdf.iwdfremotetarget_stop, UMDFIoTargetObjectRef_a7d1be6f-890c-4e06-9544-7bd18876b56e.xml, IWDFRemoteTarget, Stop, umdf.iwdfremotetarget_stop
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.9
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFRemoteTarget.Stop
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

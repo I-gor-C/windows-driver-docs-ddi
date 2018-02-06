@@ -1,41 +1,46 @@
 ---
-UID : NF:ksproxy.IKsAggregateControl.KsAddAggregate
-title : IKsAggregateControl::KsAddAggregate method
-author : windows-driver-content
-description : The KsAddAggregate method adds a COM server as an aggregate provider to the list of interface providers for the KS object that exposes the IKsAggregateControl interface.
-old-location : stream\iksaggregatecontrol_ksaddaggregate.htm
-old-project : stream
-ms.assetid : 9808bdb9-17f9-4a80-90c7-e85ab35b74ae
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KsAddAggregate method [Streaming Media Devices], IKsAggregateControl, IKsAggregateControl interface [Streaming Media Devices], KsAddAggregate method, ksproxy_1c56f07f-a830-4c2b-80ae-a18f14588bd3.xml, KsAddAggregate method [Streaming Media Devices], IKsAggregateControl interface, IKsAggregateControl::KsAddAggregate, stream.iksaggregatecontrol_ksaddaggregate, ksproxy/IKsAggregateControl::KsAddAggregate, KsAddAggregate
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : ksproxy.h
-req.include-header : Ksproxy.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : ksproxy.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PIPE_STATE
+UID: NF:ksproxy.IKsAggregateControl.KsAddAggregate
+title: IKsAggregateControl::KsAddAggregate method
+author: windows-driver-content
+description: The KsAddAggregate method adds a COM server as an aggregate provider to the list of interface providers for the KS object that exposes the IKsAggregateControl interface.
+old-location: stream\iksaggregatecontrol_ksaddaggregate.htm
+old-project: stream
+ms.assetid: 9808bdb9-17f9-4a80-90c7-e85ab35b74ae
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KsAddAggregate method [Streaming Media Devices], IKsAggregateControl, IKsAggregateControl interface [Streaming Media Devices], KsAddAggregate method, ksproxy_1c56f07f-a830-4c2b-80ae-a18f14588bd3.xml, KsAddAggregate method [Streaming Media Devices], IKsAggregateControl interface, IKsAggregateControl::KsAddAggregate, stream.iksaggregatecontrol_ksaddaggregate, ksproxy/IKsAggregateControl::KsAddAggregate, KsAddAggregate
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: ksproxy.h
+req.include-header: Ksproxy.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: ksproxy.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	ksproxy.h
+apiname:
+-	IKsAggregateControl.KsAddAggregate
+product: Windows
+targetos: Windows
+req.typenames: PIPE_STATE
 ---
 
 

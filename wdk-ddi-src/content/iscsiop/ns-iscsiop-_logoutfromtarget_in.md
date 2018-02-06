@@ -1,41 +1,46 @@
 ---
-UID : NS:iscsiop._LogoutFromTarget_IN
-title : "_LogoutFromTarget_IN"
-author : windows-driver-content
-description : The LogoutFromTarget_IN structure holds the input data for the LogoutFromTarget method, which is used to log out from an iSCSI target.
-old-location : storage\logoutfromtarget_in.htm
-old-project : storage
-ms.assetid : a52d5995-1fb7-4b73-9d3f-c945e7219a49
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.logoutfromtarget_in, iscsiop/PLogoutFromTarget_IN, structs-iSCSI_759c2265-5518-4f45-8737-5cdfa4d73170.xml, PLogoutFromTarget_IN, _LogoutFromTarget_IN, PLogoutFromTarget_IN structure pointer [Storage Devices], iscsiop/LogoutFromTarget_IN, *PLogoutFromTarget_IN, LogoutFromTarget_IN structure [Storage Devices], LogoutFromTarget_IN
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : iscsiop.h
-req.include-header : Iscsiop.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PLogoutFromTarget_IN, LogoutFromTarget_IN"
+UID: NS:iscsiop._LogoutFromTarget_IN
+title: "_LogoutFromTarget_IN"
+author: windows-driver-content
+description: The LogoutFromTarget_IN structure holds the input data for the LogoutFromTarget method, which is used to log out from an iSCSI target.
+old-location: storage\logoutfromtarget_in.htm
+old-project: storage
+ms.assetid: a52d5995-1fb7-4b73-9d3f-c945e7219a49
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.logoutfromtarget_in, iscsiop/PLogoutFromTarget_IN, structs-iSCSI_759c2265-5518-4f45-8737-5cdfa4d73170.xml, PLogoutFromTarget_IN, _LogoutFromTarget_IN, PLogoutFromTarget_IN structure pointer [Storage Devices], iscsiop/LogoutFromTarget_IN, *PLogoutFromTarget_IN, LogoutFromTarget_IN structure [Storage Devices], LogoutFromTarget_IN
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: iscsiop.h
+req.include-header: Iscsiop.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	iscsiop.h
+apiname:
+-	LogoutFromTarget_IN
+product: Windows
+targetos: Windows
+req.typenames: "*PLogoutFromTarget_IN, LogoutFromTarget_IN"
 ---
 
 # _LogoutFromTarget_IN structure

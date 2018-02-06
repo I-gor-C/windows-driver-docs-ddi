@@ -1,41 +1,47 @@
 ---
-UID : NF:fltkernel.FltAllocateCallbackDataEx
-title : FltAllocateCallbackDataEx function
-author : windows-driver-content
-description : The FltAllocateCallbackDataEx routine allocates a callback data structure and can preallocate memory for additional structures that a minifilter driver can use to initiate an I/O request.
-old-location : ifsk\fltallocatecallbackdataex.htm
-old-project : ifsk
-ms.assetid : f03851a4-e1e9-4fee-b264-c2f91c6e8180
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltAllocateCallbackDataEx routine [Installable File System Drivers], FltApiRef_a_to_d_9ef78123-712f-465a-8c8a-efc3d64b7001.xml, fltkernel/FltAllocateCallbackDataEx, FltAllocateCallbackDataEx, ifsk.fltallocatecallbackdataex
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : FltKernel.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 7 and later versions of the Windows operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltAllocateCallbackDataEx
+title: FltAllocateCallbackDataEx function
+author: windows-driver-content
+description: The FltAllocateCallbackDataEx routine allocates a callback data structure and can preallocate memory for additional structures that a minifilter driver can use to initiate an I/O request.
+old-location: ifsk\fltallocatecallbackdataex.htm
+old-project: ifsk
+ms.assetid: f03851a4-e1e9-4fee-b264-c2f91c6e8180
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltAllocateCallbackDataEx routine [Installable File System Drivers], FltApiRef_a_to_d_9ef78123-712f-465a-8c8a-efc3d64b7001.xml, fltkernel/FltAllocateCallbackDataEx, FltAllocateCallbackDataEx, ifsk.fltallocatecallbackdataex
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: FltKernel.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 7 and later versions of the Windows operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	FltMgr.lib
+-	FltMgr.dll
+apiname:
+-	FltAllocateCallbackDataEx
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

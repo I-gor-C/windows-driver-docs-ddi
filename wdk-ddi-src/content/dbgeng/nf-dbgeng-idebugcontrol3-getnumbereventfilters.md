@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugControl3.GetNumberEventFilters
-title : IDebugControl3::GetNumberEventFilters method
-author : windows-driver-content
-description : The GetNumberEventFilters method returns the number of event filters currently used by the engine.
-old-location : debugger\getnumbereventfilters.htm
-old-project : debugger
-ms.assetid : 6bb80c64-bb2e-4388-b1a8-479bdaa8b635
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : dbgeng/IDebugControl2::GetNumberEventFilters, IDebugControl3 interface [Windows Debugging], GetNumberEventFilters method, dbgeng/IDebugControl::GetNumberEventFilters, dbgeng/IDebugControl3::GetNumberEventFilters, IDebugControl3, GetNumberEventFilters method [Windows Debugging], IDebugControl2 interface [Windows Debugging], GetNumberEventFilters method, GetNumberEventFilters method [Windows Debugging], IDebugControl2 interface, IDebugControl3::GetNumberEventFilters, IDebugControl_de1a980a-b0cb-486b-a292-1a9463a231c6.xml, GetNumberEventFilters, GetNumberEventFilters method [Windows Debugging], IDebugControl interface, IDebugControl::GetNumberEventFilters, IDebugControl2::GetNumberEventFilters, GetNumberEventFilters method [Windows Debugging], IDebugControl3 interface, IDebugControl interface [Windows Debugging], GetNumberEventFilters method, debugger.getnumbereventfilters
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl3.GetNumberEventFilters
+title: IDebugControl3::GetNumberEventFilters method
+author: windows-driver-content
+description: The GetNumberEventFilters method returns the number of event filters currently used by the engine.
+old-location: debugger\getnumbereventfilters.htm
+old-project: debugger
+ms.assetid: 6bb80c64-bb2e-4388-b1a8-479bdaa8b635
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: dbgeng/IDebugControl2::GetNumberEventFilters, IDebugControl3 interface [Windows Debugging], GetNumberEventFilters method, dbgeng/IDebugControl::GetNumberEventFilters, dbgeng/IDebugControl3::GetNumberEventFilters, IDebugControl3, GetNumberEventFilters method [Windows Debugging], IDebugControl2 interface [Windows Debugging], GetNumberEventFilters method, GetNumberEventFilters method [Windows Debugging], IDebugControl2 interface, IDebugControl3::GetNumberEventFilters, IDebugControl_de1a980a-b0cb-486b-a292-1a9463a231c6.xml, GetNumberEventFilters, GetNumberEventFilters method [Windows Debugging], IDebugControl interface, IDebugControl::GetNumberEventFilters, IDebugControl2::GetNumberEventFilters, GetNumberEventFilters method [Windows Debugging], IDebugControl3 interface, IDebugControl interface [Windows Debugging], GetNumberEventFilters method, debugger.getnumbereventfilters
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl.GetNumberEventFilters
+-	IDebugControl2.GetNumberEventFilters
+-	IDebugControl3.GetNumberEventFilters
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

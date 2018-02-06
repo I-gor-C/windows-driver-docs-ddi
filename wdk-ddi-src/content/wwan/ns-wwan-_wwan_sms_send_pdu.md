@@ -1,42 +1,47 @@
 ---
-UID : NS:wwan._WWAN_SMS_SEND_PDU
-title : "_WWAN_SMS_SEND_PDU"
-author : windows-driver-content
-description : The WWAN_SMS_SEND_PDU structure represents a PDU-style SMS message.
-old-location : netvista\wwan_sms_send_pdu.htm
-old-project : netvista
-ms.assetid : 94d19d5b-8fa5-437d-9359-e35ef103f380
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.wwan_sms_send_pdu, PWWAN_SMS_SEND_PDU structure pointer [Network Drivers Starting with Windows Vista], wwan/WWAN_SMS_SEND_PDU, WWAN_SMS_SEND_PDU structure [Network Drivers Starting with Windows Vista], wwan/PWWAN_SMS_SEND_PDU, WWAN_SMS_SEND_PDU, WwanRef_5994a030-78ea-42c2-913a-1b2a9fcc2ea4.xml, *PWWAN_SMS_SEND_PDU, _WWAN_SMS_SEND_PDU, PWWAN_SMS_SEND_PDU
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wwan.h
-req.include-header : Wwan.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WWAN_SMS_SEND_PDU, *PWWAN_SMS_SEND_PDU
-req.product : Windows 10 or later.
+UID: NS:wwan._WWAN_SMS_SEND_PDU
+title: "_WWAN_SMS_SEND_PDU"
+author: windows-driver-content
+description: The WWAN_SMS_SEND_PDU structure represents a PDU-style SMS message.
+old-location: netvista\wwan_sms_send_pdu.htm
+old-project: netvista
+ms.assetid: 94d19d5b-8fa5-437d-9359-e35ef103f380
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.wwan_sms_send_pdu, PWWAN_SMS_SEND_PDU structure pointer [Network Drivers Starting with Windows Vista], wwan/WWAN_SMS_SEND_PDU, WWAN_SMS_SEND_PDU structure [Network Drivers Starting with Windows Vista], wwan/PWWAN_SMS_SEND_PDU, WWAN_SMS_SEND_PDU, WwanRef_5994a030-78ea-42c2-913a-1b2a9fcc2ea4.xml, *PWWAN_SMS_SEND_PDU, _WWAN_SMS_SEND_PDU, PWWAN_SMS_SEND_PDU
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wwan.h
+req.include-header: Wwan.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wwan.h
+apiname:
+-	WWAN_SMS_SEND_PDU
+product: Windows
+targetos: Windows
+req.typenames: WWAN_SMS_SEND_PDU, *PWWAN_SMS_SEND_PDU
+req.product: Windows 10 or later.
 ---
 
 # _WWAN_SMS_SEND_PDU structure

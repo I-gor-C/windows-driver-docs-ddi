@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.SeRegisterLogonSessionTerminatedRoutine
-title : SeRegisterLogonSessionTerminatedRoutine function
-author : windows-driver-content
-description : The SeRegisterLogonSessionTerminatedRoutine routine registers a callback routine to be called when a logon session terminates. A logon session terminates when the last token referencing the logon session is deleted.
-old-location : ifsk\seregisterlogonsessionterminatedroutine.htm
-old-project : ifsk
-ms.assetid : 6cba6db5-b91f-46f0-939e-b02693c81438
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.seregisterlogonsessionterminatedroutine, SeRegisterLogonSessionTerminatedRoutine routine [Installable File System Drivers], SeRegisterLogonSessionTerminatedRoutine, ntifs/SeRegisterLogonSessionTerminatedRoutine, seref_7188551f-9c46-472f-8976-67ee53b994c5.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.SeRegisterLogonSessionTerminatedRoutine
+title: SeRegisterLogonSessionTerminatedRoutine function
+author: windows-driver-content
+description: The SeRegisterLogonSessionTerminatedRoutine routine registers a callback routine to be called when a logon session terminates. A logon session terminates when the last token referencing the logon session is deleted.
+old-location: ifsk\seregisterlogonsessionterminatedroutine.htm
+old-project: ifsk
+ms.assetid: 6cba6db5-b91f-46f0-939e-b02693c81438
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.seregisterlogonsessionterminatedroutine, SeRegisterLogonSessionTerminatedRoutine routine [Installable File System Drivers], SeRegisterLogonSessionTerminatedRoutine, ntifs/SeRegisterLogonSessionTerminatedRoutine, seref_7188551f-9c46-472f-8976-67ee53b994c5.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	SeRegisterLogonSessionTerminatedRoutine
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

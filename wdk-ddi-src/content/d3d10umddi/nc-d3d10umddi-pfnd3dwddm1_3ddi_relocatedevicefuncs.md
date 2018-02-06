@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3DWDDM1_3DDI_RELOCATEDEVICEFUNCS
-title : PFND3DWDDM1_3DDI_RELOCATEDEVICEFUNCS
-author : windows-driver-content
-description : Notifies the user-mode display driver about the new location of the driver function table. Implemented by Windows Display Driver Model (WDDM) 1.3 and later user-mode display drivers.
-old-location : display\relocatedevicefuncs_d3d11_2_.htm
-old-project : display
-ms.assetid : BA2A1F90-6E30-4055-9374-943540AE2446
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.relocatedevicefuncs_d3d11_2_, RelocateDeviceFuncs(D3D11_2) callback function [Display Devices], RelocateDeviceFuncs(D3D11_2), PFND3DWDDM1_3DDI_RELOCATEDEVICEFUNCS, PFND3DWDDM1_3DDI_RELOCATEDEVICEFUNCS, d3d10umddi/RelocateDeviceFuncs(D3D11_2)
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8.1,WDDM 1.3
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3DWDDM1_3DDI_RELOCATEDEVICEFUNCS
+title: PFND3DWDDM1_3DDI_RELOCATEDEVICEFUNCS
+author: windows-driver-content
+description: Notifies the user-mode display driver about the new location of the driver function table. Implemented by Windows Display Driver Model (WDDM) 1.3 and later user-mode display drivers.
+old-location: display\relocatedevicefuncs_d3d11_2_.htm
+old-project: display
+ms.assetid: BA2A1F90-6E30-4055-9374-943540AE2446
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.relocatedevicefuncs_d3d11_2_, RelocateDeviceFuncs(D3D11_2) callback function [Display Devices], RelocateDeviceFuncs(D3D11_2), PFND3DWDDM1_3DDI_RELOCATEDEVICEFUNCS, PFND3DWDDM1_3DDI_RELOCATEDEVICEFUNCS, d3d10umddi/RelocateDeviceFuncs(D3D11_2)
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8.1,WDDM 1.3
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	D3d10umddi.h
+apiname:
+-	RelocateDeviceFuncs(D3D11_2)
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

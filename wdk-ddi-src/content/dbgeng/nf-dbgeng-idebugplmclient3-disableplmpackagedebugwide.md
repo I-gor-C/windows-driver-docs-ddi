@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugPlmClient3.DisablePlmPackageDebugWide
-title : IDebugPlmClient3::DisablePlmPackageDebugWide method
-author : windows-driver-content
-description : Disables a Process Lifecycle Management (PLM) package debug.
-old-location : debugger\idebugplmclient3_disableplmpackagedebugwide.htm
-old-project : debugger
-ms.assetid : 23A5BAC2-E8F3-47FF-9B63-3FFF447C33B4
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugPlmClient3, DisablePlmPackageDebugWide, dbgeng/IDebugPlmClient3::DisablePlmPackageDebugWide, IDebugPlmClient3::DisablePlmPackageDebugWide, debugger.idebugplmclient3_disableplmpackagedebugwide, DisablePlmPackageDebugWide method [Windows Debugging], IDebugPlmClient3 interface, IDebugPlmClient3 interface [Windows Debugging], DisablePlmPackageDebugWide method, DisablePlmPackageDebugWide method [Windows Debugging]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugPlmClient3.DisablePlmPackageDebugWide
+title: IDebugPlmClient3::DisablePlmPackageDebugWide method
+author: windows-driver-content
+description: Disables a Process Lifecycle Management (PLM) package debug.
+old-location: debugger\idebugplmclient3_disableplmpackagedebugwide.htm
+old-project: debugger
+ms.assetid: 23A5BAC2-E8F3-47FF-9B63-3FFF447C33B4
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugPlmClient3, DisablePlmPackageDebugWide, dbgeng/IDebugPlmClient3::DisablePlmPackageDebugWide, IDebugPlmClient3::DisablePlmPackageDebugWide, debugger.idebugplmclient3_disableplmpackagedebugwide, DisablePlmPackageDebugWide method [Windows Debugging], IDebugPlmClient3 interface, IDebugPlmClient3 interface [Windows Debugging], DisablePlmPackageDebugWide method, DisablePlmPackageDebugWide method [Windows Debugging]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugPlmClient3.DisablePlmPackageDebugWide
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

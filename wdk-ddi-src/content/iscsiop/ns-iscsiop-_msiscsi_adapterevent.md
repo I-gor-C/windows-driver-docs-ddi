@@ -1,41 +1,46 @@
 ---
-UID : NS:iscsiop._MSiSCSI_AdapterEvent
-title : "_MSiSCSI_AdapterEvent"
-author : windows-driver-content
-description : The MSiSCSI_AdapterEvent structure contains information that is reported whenever an adapter event occurs.
-old-location : storage\msiscsi_adapterevent.htm
-old-project : storage
-ms.assetid : 03820d4d-d013-40fb-a686-1b228f178f50
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : "_MSiSCSI_AdapterEvent, *PMSiSCSI_AdapterEvent, MSiSCSI_AdapterEvent, MSiSCSI_AdapterEvent structure [Storage Devices], storage.msiscsi_adapterevent, iscsiop/MSiSCSI_AdapterEvent, PMSiSCSI_AdapterEvent structure pointer [Storage Devices], structs-iSCSI_86ec7324-3d5c-44d2-8972-691504f1c5e1.xml, iscsiop/PMSiSCSI_AdapterEvent, PMSiSCSI_AdapterEvent"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : iscsiop.h
-req.include-header : Iscsiop.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PMSiSCSI_AdapterEvent, MSiSCSI_AdapterEvent"
+UID: NS:iscsiop._MSiSCSI_AdapterEvent
+title: "_MSiSCSI_AdapterEvent"
+author: windows-driver-content
+description: The MSiSCSI_AdapterEvent structure contains information that is reported whenever an adapter event occurs.
+old-location: storage\msiscsi_adapterevent.htm
+old-project: storage
+ms.assetid: 03820d4d-d013-40fb-a686-1b228f178f50
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: "_MSiSCSI_AdapterEvent, *PMSiSCSI_AdapterEvent, MSiSCSI_AdapterEvent, MSiSCSI_AdapterEvent structure [Storage Devices], storage.msiscsi_adapterevent, iscsiop/MSiSCSI_AdapterEvent, PMSiSCSI_AdapterEvent structure pointer [Storage Devices], structs-iSCSI_86ec7324-3d5c-44d2-8972-691504f1c5e1.xml, iscsiop/PMSiSCSI_AdapterEvent, PMSiSCSI_AdapterEvent"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: iscsiop.h
+req.include-header: Iscsiop.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	iscsiop.h
+apiname:
+-	MSiSCSI_AdapterEvent
+product: Windows
+targetos: Windows
+req.typenames: "*PMSiSCSI_AdapterEvent, MSiSCSI_AdapterEvent"
 ---
 
 # _MSiSCSI_AdapterEvent structure

@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisMGetVirtualFunctionLocation
-title : NdisMGetVirtualFunctionLocation function
-author : windows-driver-content
-description : A miniport driver calls the NdisMGetVirtualFunctionLocation function to query the device location of a PCI Express (PCIe) Virtual Function (VF) on a PCI bus. The driver uses the device location to construct the PCIe Requestor ID (RID) for the VF.
-old-location : netvista\ndismgetvirtualfunctionlocation.htm
-old-project : netvista
-ms.assetid : 772A7763-67C0-4218-8C5F-23972475D2C9
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NdisMGetVirtualFunctionLocation function [Network Drivers Starting with Windows Vista], ndis/NdisMGetVirtualFunctionLocation, NdisMGetVirtualFunctionLocation, netvista.ndismgetvirtualfunctionlocation
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : None supported,Supported in NDIS 6.30 and later.
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisMGetVirtualFunctionLocation
+title: NdisMGetVirtualFunctionLocation function
+author: windows-driver-content
+description: A miniport driver calls the NdisMGetVirtualFunctionLocation function to query the device location of a PCI Express (PCIe) Virtual Function (VF) on a PCI bus. The driver uses the device location to construct the PCIe Requestor ID (RID) for the VF.
+old-location: netvista\ndismgetvirtualfunctionlocation.htm
+old-project: netvista
+ms.assetid: 772A7763-67C0-4218-8C5F-23972475D2C9
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NdisMGetVirtualFunctionLocation function [Network Drivers Starting with Windows Vista], ndis/NdisMGetVirtualFunctionLocation, NdisMGetVirtualFunctionLocation, netvista.ndismgetvirtualfunctionlocation
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: None supported,Supported in NDIS 6.30 and later.
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisMGetVirtualFunctionLocation
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

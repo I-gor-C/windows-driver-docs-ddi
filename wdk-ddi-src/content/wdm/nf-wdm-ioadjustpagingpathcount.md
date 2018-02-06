@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.IoAdjustPagingPathCount
-title : IoAdjustPagingPathCount macro
-author : windows-driver-content
-description : The IoAdjustPagingPathCount routine increments or decrements a caller-supplied page-file counter as an atomic operation.
-old-location : kernel\ioadjustpagingpathcount.htm
-old-project : kernel
-ms.assetid : be353d10-1d8a-4fea-a415-e1729184e451
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : IoAdjustPagingPathCount, wdm/IoAdjustPagingPathCount, IoAdjustPagingPathCount routine [Kernel-Mode Driver Architecture], k104_f52acd6d-f3f6-43c2-a339-3060a12a6298.xml, kernel.ioadjustpagingpathcount
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : macro
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wdm.h
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.IoAdjustPagingPathCount
+title: IoAdjustPagingPathCount macro
+author: windows-driver-content
+description: The IoAdjustPagingPathCount routine increments or decrements a caller-supplied page-file counter as an atomic operation.
+old-location: kernel\ioadjustpagingpathcount.htm
+old-project: kernel
+ms.assetid: be353d10-1d8a-4fea-a415-e1729184e451
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: IoAdjustPagingPathCount, wdm/IoAdjustPagingPathCount, IoAdjustPagingPathCount routine [Kernel-Mode Driver Architecture], k104_f52acd6d-f3f6-43c2-a339-3060a12a6298.xml, kernel.ioadjustpagingpathcount
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: macro
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wdm.h
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	IoAdjustPagingPathCount
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddcdrm._CDROM_READ_TOC_EX
-title : "_CDROM_READ_TOC_EX"
-author : windows-driver-content
-description : When drivers query a target CD-ROM device with IOCTL_CDROM_READ_TOC_EX they must define the query with this structure.
-old-location : storage\cdrom_read_toc_ex.htm
-old-project : storage
-ms.assetid : 17dbc843-dc65-40d7-9cda-916127e4cfa4
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : PCDROM_READ_TOC_EX structure pointer [Storage Devices], CDROM_READ_TOC_EX structure [Storage Devices], _CDROM_READ_TOC_EX, PCDROM_READ_TOC_EX, ntddcdrm/PCDROM_READ_TOC_EX, CDROM_READ_TOC_EX, ntddcdrm/CDROM_READ_TOC_EX, structs-CD-ROM_b12c5d5a-b319-4122-be7f-721bd384dbf2.xml, storage.cdrom_read_toc_ex, *PCDROM_READ_TOC_EX
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddcdrm.h
-req.include-header : Ntddcdrm.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : CDROM_READ_TOC_EX, *PCDROM_READ_TOC_EX
+UID: NS:ntddcdrm._CDROM_READ_TOC_EX
+title: "_CDROM_READ_TOC_EX"
+author: windows-driver-content
+description: When drivers query a target CD-ROM device with IOCTL_CDROM_READ_TOC_EX they must define the query with this structure.
+old-location: storage\cdrom_read_toc_ex.htm
+old-project: storage
+ms.assetid: 17dbc843-dc65-40d7-9cda-916127e4cfa4
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: PCDROM_READ_TOC_EX structure pointer [Storage Devices], CDROM_READ_TOC_EX structure [Storage Devices], _CDROM_READ_TOC_EX, PCDROM_READ_TOC_EX, ntddcdrm/PCDROM_READ_TOC_EX, CDROM_READ_TOC_EX, ntddcdrm/CDROM_READ_TOC_EX, structs-CD-ROM_b12c5d5a-b319-4122-be7f-721bd384dbf2.xml, storage.cdrom_read_toc_ex, *PCDROM_READ_TOC_EX
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddcdrm.h
+req.include-header: Ntddcdrm.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddcdrm.h
+apiname:
+-	CDROM_READ_TOC_EX
+product: Windows
+targetos: Windows
+req.typenames: CDROM_READ_TOC_EX, *PCDROM_READ_TOC_EX
 ---
 
 # _CDROM_READ_TOC_EX structure

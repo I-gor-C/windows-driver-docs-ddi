@@ -1,42 +1,47 @@
 ---
-UID : NC:video.PVIDEO_HW_FIND_ADAPTER
-title : PVIDEO_HW_FIND_ADAPTER
-author : windows-driver-content
-description : HwVidFindAdapter performs initialization of data specific to the miniport driver and devices supported by the miniport driver.
-old-location : display\hwvidfindadapter.htm
-old-project : display
-ms.assetid : 8c880eff-4b4c-439e-9239-f2343c1fe084
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.hwvidfindadapter, HwVidFindAdapter callback function [Display Devices], HwVidFindAdapter, PVIDEO_HW_FIND_ADAPTER, PVIDEO_HW_FIND_ADAPTER, video/HwVidFindAdapter, VideoMiniport_Functions_f035d610-08b2-4403-b9dc-c069520d61bb.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VHF_CONFIG, *PVHF_CONFIG
-req.product : Windows 10 or later.
+UID: NC:video.PVIDEO_HW_FIND_ADAPTER
+title: PVIDEO_HW_FIND_ADAPTER
+author: windows-driver-content
+description: HwVidFindAdapter performs initialization of data specific to the miniport driver and devices supported by the miniport driver.
+old-location: display\hwvidfindadapter.htm
+old-project: display
+ms.assetid: 8c880eff-4b4c-439e-9239-f2343c1fe084
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.hwvidfindadapter, HwVidFindAdapter callback function [Display Devices], HwVidFindAdapter, PVIDEO_HW_FIND_ADAPTER, PVIDEO_HW_FIND_ADAPTER, video/HwVidFindAdapter, VideoMiniport_Functions_f035d610-08b2-4403-b9dc-c069520d61bb.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	video.h
+apiname:
+-	HwVidFindAdapter
+product: Windows
+targetos: Windows
+req.typenames: VHF_CONFIG, *PVHF_CONFIG
+req.product: Windows 10 or later.
 ---
 
 

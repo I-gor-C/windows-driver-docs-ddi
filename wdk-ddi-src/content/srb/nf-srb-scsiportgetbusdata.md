@@ -1,42 +1,48 @@
 ---
-UID : NF:srb.ScsiPortGetBusData
-title : ScsiPortGetBusData function
-author : windows-driver-content
-description : The ScsiPortGetBusData routine returns bus-type-specific configuration information that a miniport driver's HwScsiFindAdapter routine might use to determine whether it supports a particular adapter on a particular I/O bus, and to configure the HBA if it does.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. Instead, we recommend using the Storport driver and Storport miniport driver models.
-old-location : storage\scsiportgetbusdata.htm
-old-project : storage
-ms.assetid : 43d30c99-9f9e-4516-8c50-e096f760a774
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : ScsiPortGetBusData, ScsiPortGetBusData routine [Storage Devices], srb/ScsiPortGetBusData, scsiprt_85566dfe-b1b6-4b6d-9f80-69fbdd82904a.xml, storage.scsiportgetbusdata
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : srb.h
-req.include-header : Miniport.h, Scsi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Scsiport.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SPB_CONTROLLER_CONFIG, *PSPB_CONTROLLER_CONFIG
-req.product : Windows 10 or later.
+UID: NF:srb.ScsiPortGetBusData
+title: ScsiPortGetBusData function
+author: windows-driver-content
+description: The ScsiPortGetBusData routine returns bus-type-specific configuration information that a miniport driver's HwScsiFindAdapter routine might use to determine whether it supports a particular adapter on a particular I/O bus, and to configure the HBA if it does.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. Instead, we recommend using the Storport driver and Storport miniport driver models.
+old-location: storage\scsiportgetbusdata.htm
+old-project: storage
+ms.assetid: 43d30c99-9f9e-4516-8c50-e096f760a774
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: ScsiPortGetBusData, ScsiPortGetBusData routine [Storage Devices], srb/ScsiPortGetBusData, scsiprt_85566dfe-b1b6-4b6d-9f80-69fbdd82904a.xml, storage.scsiportgetbusdata
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: srb.h
+req.include-header: Miniport.h, Scsi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Scsiport.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Scsiport.lib
+-	Scsiport.dll
+apiname:
+-	ScsiPortGetBusData
+product: Windows
+targetos: Windows
+req.typenames: SPB_CONTROLLER_CONFIG, *PSPB_CONTROLLER_CONFIG
+req.product: Windows 10 or later.
 ---
 
 

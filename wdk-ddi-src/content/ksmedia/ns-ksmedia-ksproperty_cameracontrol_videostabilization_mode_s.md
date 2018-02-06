@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_S
-title : KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_S
-author : windows-driver-content
-description : Describes video stabilization control properties in the PROPSETID_VIDCAP_CAMERACONTROL_VIDEO_STABILIZATION camera control property set. This structure specifies property values that are used in requests to the camera driver.
-old-location : stream\ksproperty_cameracontrol_videostabilization_mode_s.htm
-old-project : stream
-ms.assetid : 7cbf015c-4756-4d5c-a5fb-9cd8a5e0e3fd
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_FLAGS_AUTO, KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_S structure [Streaming Media Devices], PKSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_S structure pointer [Streaming Media Devices], ksmedia/PKSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_S, KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_HIGH, PKSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_S, ksmedia/KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_S, KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_S, KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_FLAGS_MANUAL, KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_MEDIUM, stream.ksproperty_cameracontrol_videostabilization_mode_s, *PKSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_S, KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_OFF, KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_LOW, KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_AUTO
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_S, KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_S"
+UID: NS:ksmedia.KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_S
+title: KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_S
+author: windows-driver-content
+description: Describes video stabilization control properties in the PROPSETID_VIDCAP_CAMERACONTROL_VIDEO_STABILIZATION camera control property set. This structure specifies property values that are used in requests to the camera driver.
+old-location: stream\ksproperty_cameracontrol_videostabilization_mode_s.htm
+old-project: stream
+ms.assetid: 7cbf015c-4756-4d5c-a5fb-9cd8a5e0e3fd
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_FLAGS_AUTO, KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_S structure [Streaming Media Devices], PKSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_S structure pointer [Streaming Media Devices], ksmedia/PKSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_S, KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_HIGH, PKSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_S, ksmedia/KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_S, KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_S, KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_FLAGS_MANUAL, KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_MEDIUM, stream.ksproperty_cameracontrol_videostabilization_mode_s, *PKSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_S, KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_OFF, KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_LOW, KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_AUTO
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ksmedia.h
+apiname:
+-	KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_S
+product: Windows
+targetos: Windows
+req.typenames: "*PKSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_S, KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_S"
 ---
 
 # KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_S structure

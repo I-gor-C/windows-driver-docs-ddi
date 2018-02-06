@@ -1,41 +1,47 @@
 ---
-UID : NF:hidpi.HidP_GetLinkCollectionNodes
-title : HidP_GetLinkCollectionNodes function
-author : windows-driver-content
-description : The HidP_GetLinkCollectionNodes routine returns a top-level collection's link collection array.
-old-location : hid\hidp_getlinkcollectionnodes.htm
-old-project : hid
-ms.assetid : d829b203-8b7f-4504-a9ac-da1f91b3bbd6
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : hidpi/HidP_GetLinkCollectionNodes, hid.hidp_getlinkcollectionnodes, HidP_GetLinkCollectionNodes, hidfunc_cbcd531f-dc4d-4a27-96bd-bfa3589af9a7.xml, HidP_GetLinkCollectionNodes routine [Human Input Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : hidpi.h
-req.include-header : Hidpi.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 2000 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Hidparse.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HIDP_REPORT_TYPE
+UID: NF:hidpi.HidP_GetLinkCollectionNodes
+title: HidP_GetLinkCollectionNodes function
+author: windows-driver-content
+description: The HidP_GetLinkCollectionNodes routine returns a top-level collection's link collection array.
+old-location: hid\hidp_getlinkcollectionnodes.htm
+old-project: hid
+ms.assetid: d829b203-8b7f-4504-a9ac-da1f91b3bbd6
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: hidpi/HidP_GetLinkCollectionNodes, hid.hidp_getlinkcollectionnodes, HidP_GetLinkCollectionNodes, hidfunc_cbcd531f-dc4d-4a27-96bd-bfa3589af9a7.xml, HidP_GetLinkCollectionNodes routine [Human Input Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: hidpi.h
+req.include-header: Hidpi.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 2000 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Hidparse.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Hidparse.lib
+-	Hidparse.dll
+apiname:
+-	HidP_GetLinkCollectionNodes
+product: Windows
+targetos: Windows
+req.typenames: HIDP_REPORT_TYPE
 ---
 
 

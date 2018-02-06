@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_SETZRANGE
-title : PFND3DDDI_SETZRANGE
-author : windows-driver-content
-description : The SetZRange function informs the driver about the range of z values.
-old-location : display\setzrange.htm
-old-project : display
-ms.assetid : 29ccde7c-801c-4e90-bc39-8581f262cc65
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.setzrange, SetZRange callback function [Display Devices], SetZRange, PFND3DDDI_SETZRANGE, PFND3DDDI_SETZRANGE, d3dumddi/SetZRange, UserModeDisplayDriver_Functions_1f472784-89a0-4ddf-ae47-ee891774d03e.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_SETZRANGE
+title: PFND3DDDI_SETZRANGE
+author: windows-driver-content
+description: The SetZRange function informs the driver about the range of z values.
+old-location: display\setzrange.htm
+old-project: display
+ms.assetid: 29ccde7c-801c-4e90-bc39-8581f262cc65
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.setzrange, SetZRange callback function [Display Devices], SetZRange, PFND3DDDI_SETZRANGE, PFND3DDDI_SETZRANGE, d3dumddi/SetZRange, UserModeDisplayDriver_Functions_1f472784-89a0-4ddf-ae47-ee891774d03e.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	SetZRange
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

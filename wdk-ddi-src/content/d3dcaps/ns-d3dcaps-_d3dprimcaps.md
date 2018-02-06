@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dcaps._D3DPrimCaps
-title : "_D3DPrimCaps"
-author : windows-driver-content
-description : Obsolete in DirectX 8.0 and later versions; see Remarks. The D3DPRIMCAPS structure defines the capabilities for each primitive type.
-old-location : display\d3dprimcaps.htm
-old-project : display
-ms.assetid : fa725534-ccc3-4e71-a83f-b25fd4c72c14
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : LPD3DPRIMCAPS structure pointer [Display Devices], LPD3DPRIMCAPS, _D3DPrimCaps, *LPD3DPRIMCAPS, D3DPRIMCAPS, display.d3dprimcaps, d3dcaps/D3DPRIMCAPS, D3DPRIMCAPS structure [Display Devices], d3dcaps/LPD3DPRIMCAPS, d3dstrct_671f3c02-cad3-47bc-871e-df1388f8cf1a.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dcaps.h
-req.include-header : D3dcaps.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*LPD3DPRIMCAPS, D3DPRIMCAPS"
+UID: NS:d3dcaps._D3DPrimCaps
+title: "_D3DPrimCaps"
+author: windows-driver-content
+description: Obsolete in DirectX 8.0 and later versions; see Remarks. The D3DPRIMCAPS structure defines the capabilities for each primitive type.
+old-location: display\d3dprimcaps.htm
+old-project: display
+ms.assetid: fa725534-ccc3-4e71-a83f-b25fd4c72c14
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: LPD3DPRIMCAPS structure pointer [Display Devices], LPD3DPRIMCAPS, _D3DPrimCaps, *LPD3DPRIMCAPS, D3DPRIMCAPS, display.d3dprimcaps, d3dcaps/D3DPRIMCAPS, D3DPRIMCAPS structure [Display Devices], d3dcaps/LPD3DPRIMCAPS, d3dstrct_671f3c02-cad3-47bc-871e-df1388f8cf1a.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dcaps.h
+req.include-header: D3dcaps.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dcaps.h
+apiname:
+-	D3DPRIMCAPS
+product: Windows
+targetos: Windows
+req.typenames: "*LPD3DPRIMCAPS, D3DPRIMCAPS"
 ---
 
 # _D3DPrimCaps structure

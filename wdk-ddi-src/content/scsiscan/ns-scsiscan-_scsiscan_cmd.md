@@ -1,42 +1,47 @@
 ---
-UID : NS:scsiscan._SCSISCAN_CMD
-title : "_SCSISCAN_CMD"
-author : windows-driver-content
-description : The SCSISCAN_CMD structure is used as a parameter to DeviceIoControl, when the specified I/O control code is IOCTL_SCSISCAN_CMD.
-old-location : image\scsiscan_cmd.htm
-old-project : image
-ms.assetid : 412c35b2-eb08-43a3-b776-053645806f5d
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : SCSISCAN_CMD, PSCSISCAN_CMD, _SCSISCAN_CMD, image.scsiscan_cmd, stifnc_2a67c5d9-7866-4dc5-8ce4-6bc832cbf7de.xml, *PSCSISCAN_CMD, PSCSISCAN_CMD structure pointer [Imaging Devices], SCSISCAN_CMD structure [Imaging Devices], scsiscan/SCSISCAN_CMD, scsiscan/PSCSISCAN_CMD
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : scsiscan.h
-req.include-header : Scsiscan.h, Srb.h, Scsi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSCSISCAN_CMD, SCSISCAN_CMD"
-req.product : Windows 10 or later.
+UID: NS:scsiscan._SCSISCAN_CMD
+title: "_SCSISCAN_CMD"
+author: windows-driver-content
+description: The SCSISCAN_CMD structure is used as a parameter to DeviceIoControl, when the specified I/O control code is IOCTL_SCSISCAN_CMD.
+old-location: image\scsiscan_cmd.htm
+old-project: image
+ms.assetid: 412c35b2-eb08-43a3-b776-053645806f5d
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: SCSISCAN_CMD, PSCSISCAN_CMD, _SCSISCAN_CMD, image.scsiscan_cmd, stifnc_2a67c5d9-7866-4dc5-8ce4-6bc832cbf7de.xml, *PSCSISCAN_CMD, PSCSISCAN_CMD structure pointer [Imaging Devices], SCSISCAN_CMD structure [Imaging Devices], scsiscan/SCSISCAN_CMD, scsiscan/PSCSISCAN_CMD
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: scsiscan.h
+req.include-header: Scsiscan.h, Srb.h, Scsi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	scsiscan.h
+apiname:
+-	SCSISCAN_CMD
+product: Windows
+targetos: Windows
+req.typenames: "*PSCSISCAN_CMD, SCSISCAN_CMD"
+req.product: Windows 10 or later.
 ---
 
 # _SCSISCAN_CMD structure

@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi.D3DDDIARG_CHECKPRESENTDURATIONSUPPORT
-title : D3DDDIARG_CHECKPRESENTDURATIONSUPPORT
-author : windows-driver-content
-description : Used in a call to the CheckPresentDurationSupport function to check details on hardware device support for seamlessly switching to a new monitor refresh rate.
-old-location : display\d3dddiarg_checkpresentdurationsupport.htm
-old-project : display
-ms.assetid : D72D6C06-DD6A-4051-9AD0-FD1E240C164A
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DDDIARG_CHECKPRESENTDURATIONSUPPORT structure [Display Devices], display.d3dddiarg_checkpresentdurationsupport, D3DDDIARG_CHECKPRESENTDURATIONSUPPORT, d3dumddi/D3DDDIARG_CHECKPRESENTDURATIONSUPPORT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8.1,WDDM 1.3 and later
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDIARG_CHECKPRESENTDURATIONSUPPORT
+UID: NS:d3dumddi.D3DDDIARG_CHECKPRESENTDURATIONSUPPORT
+title: D3DDDIARG_CHECKPRESENTDURATIONSUPPORT
+author: windows-driver-content
+description: Used in a call to the CheckPresentDurationSupport function to check details on hardware device support for seamlessly switching to a new monitor refresh rate.
+old-location: display\d3dddiarg_checkpresentdurationsupport.htm
+old-project: display
+ms.assetid: D72D6C06-DD6A-4051-9AD0-FD1E240C164A
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DDDIARG_CHECKPRESENTDURATIONSUPPORT structure [Display Devices], display.d3dddiarg_checkpresentdurationsupport, D3DDDIARG_CHECKPRESENTDURATIONSUPPORT, d3dumddi/D3DDDIARG_CHECKPRESENTDURATIONSUPPORT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8.1,WDDM 1.3 and later
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	D3dumddi.h
+apiname:
+-	D3DDDIARG_CHECKPRESENTDURATIONSUPPORT
+product: Windows
+targetos: Windows
+req.typenames: D3DDDIARG_CHECKPRESENTDURATIONSUPPORT
 ---
 
 # D3DDDIARG_CHECKPRESENTDURATIONSUPPORT structure

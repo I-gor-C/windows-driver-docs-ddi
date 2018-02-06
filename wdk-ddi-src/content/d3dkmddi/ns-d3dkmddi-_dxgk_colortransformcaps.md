@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGK_COLORTRANSFORMCAPS
-title : "_DXGK_COLORTRANSFORMCAPS"
-author : windows-driver-content
-description : This structure replaces the DXGK_GAMMARAMPCAPS structure in the DXGK_DRIVERCAPS structure to describe both the gamma and color transform capabilities of the display pipelines.
-old-location : display\dxgk_colortransformcaps_.htm
-old-project : display
-ms.assetid : 83113D6C-44A1-4022-8101-061DEA9868E1
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3dkmddi/PDXGK_COLORTRANSFORMCAPS, display.dxgk_colortransformcaps_, DXGK_COLORTRANSFORMCAPS, PDXGK_COLORTRANSFORMCAPS, PDXGK_COLORTRANSFORMCAPS structure pointer [Display Devices], _DXGK_COLORTRANSFORMCAPS, DXGK_COLORTRANSFORMCAPS structure [Display Devices], d3dkmddi/DXGK_COLORTRANSFORMCAPS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_COLORTRANSFORMCAPS
+UID: NS:d3dkmddi._DXGK_COLORTRANSFORMCAPS
+title: "_DXGK_COLORTRANSFORMCAPS"
+author: windows-driver-content
+description: This structure replaces the DXGK_GAMMARAMPCAPS structure in the DXGK_DRIVERCAPS structure to describe both the gamma and color transform capabilities of the display pipelines.
+old-location: display\dxgk_colortransformcaps_.htm
+old-project: display
+ms.assetid: 83113D6C-44A1-4022-8101-061DEA9868E1
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3dkmddi/PDXGK_COLORTRANSFORMCAPS, display.dxgk_colortransformcaps_, DXGK_COLORTRANSFORMCAPS, PDXGK_COLORTRANSFORMCAPS, PDXGK_COLORTRANSFORMCAPS structure pointer [Display Devices], _DXGK_COLORTRANSFORMCAPS, DXGK_COLORTRANSFORMCAPS structure [Display Devices], d3dkmddi/DXGK_COLORTRANSFORMCAPS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DXGK_COLORTRANSFORMCAPS
+product: Windows
+targetos: Windows
+req.typenames: DXGK_COLORTRANSFORMCAPS
 ---
 
 # _DXGK_COLORTRANSFORMCAPS structure

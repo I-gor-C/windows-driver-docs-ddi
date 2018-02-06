@@ -1,41 +1,46 @@
 ---
-UID : NS:ndischimney._NDIS_OFFLOAD_HANDLE
-title : "_NDIS_OFFLOAD_HANDLE"
-author : windows-driver-content
-description : The NDIS_OFFLOAD_HANDLE structure represents a driver's context for an offloaded state object.
-old-location : netvista\ndis_offload_handle.htm
-old-project : netvista
-ms.assetid : cc1d7ca2-273a-42ca-896c-aebee862a4cd
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : ndischimney/PNDIS_OFFLOAD_HANDLE, PNDIS_OFFLOAD_HANDLE structure pointer [Network Drivers Starting with Windows Vista], *PNDIS_OFFLOAD_HANDLE, _NDIS_OFFLOAD_HANDLE, NDIS_OFFLOAD_HANDLE, NDIS_OFFLOAD_HANDLE structure [Network Drivers Starting with Windows Vista], PNDIS_OFFLOAD_HANDLE, tcp_chim_struct_32ac0fbc-873b-4cd9-9121-d7e77667f05d.xml, ndischimney/NDIS_OFFLOAD_HANDLE, netvista.ndis_offload_handle
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndischimney.h
-req.include-header : Ndischimney.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_OFFLOAD_HANDLE, *PNDIS_OFFLOAD_HANDLE
+UID: NS:ndischimney._NDIS_OFFLOAD_HANDLE
+title: "_NDIS_OFFLOAD_HANDLE"
+author: windows-driver-content
+description: The NDIS_OFFLOAD_HANDLE structure represents a driver's context for an offloaded state object.
+old-location: netvista\ndis_offload_handle.htm
+old-project: netvista
+ms.assetid: cc1d7ca2-273a-42ca-896c-aebee862a4cd
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: ndischimney/PNDIS_OFFLOAD_HANDLE, PNDIS_OFFLOAD_HANDLE structure pointer [Network Drivers Starting with Windows Vista], *PNDIS_OFFLOAD_HANDLE, _NDIS_OFFLOAD_HANDLE, NDIS_OFFLOAD_HANDLE, NDIS_OFFLOAD_HANDLE structure [Network Drivers Starting with Windows Vista], PNDIS_OFFLOAD_HANDLE, tcp_chim_struct_32ac0fbc-873b-4cd9-9121-d7e77667f05d.xml, ndischimney/NDIS_OFFLOAD_HANDLE, netvista.ndis_offload_handle
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndischimney.h
+req.include-header: Ndischimney.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndischimney.h
+apiname:
+-	NDIS_OFFLOAD_HANDLE
+product: Windows
+targetos: Windows
+req.typenames: NDIS_OFFLOAD_HANDLE, *PNDIS_OFFLOAD_HANDLE
 ---
 
 # _NDIS_OFFLOAD_HANDLE structure

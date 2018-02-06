@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddk._PCI_EXPRESS_SLOT_CAPABILITIES_REGISTER
-title : "_PCI_EXPRESS_SLOT_CAPABILITIES_REGISTER"
-author : windows-driver-content
-description : The PCI_EXPRESS_SLOT_CAPABILITIES_REGISTER structure describes a PCI Express (PCIe) slot capabilities register of a PCIe capability structure.
-old-location : pci\pci_express_slot_capabilities_register.htm
-old-project : PCI
-ms.assetid : a5548777-a88e-40f8-891d-662e0892fd37
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : pci_struct_095f0907-dfff-491b-8734-28b42794c46b.xml, _PCI_EXPRESS_SLOT_CAPABILITIES_REGISTER, PPCI_EXPRESS_SLOT_CAPABILITIES_REGISTER union pointer [Buses], *PPCI_EXPRESS_SLOT_CAPABILITIES_REGISTER, PCI_EXPRESS_SLOT_CAPABILITIES_REGISTER, PCI_EXPRESS_SLOT_CAPABILITIES_REGISTER union [Buses], PCI.pci_express_slot_capabilities_register, PPCI_EXPRESS_SLOT_CAPABILITIES_REGISTER, ntddk/PPCI_EXPRESS_SLOT_CAPABILITIES_REGISTER, ntddk/PCI_EXPRESS_SLOT_CAPABILITIES_REGISTER
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PCI_EXPRESS_SLOT_CAPABILITIES_REGISTER, *PPCI_EXPRESS_SLOT_CAPABILITIES_REGISTER
+UID: NS:ntddk._PCI_EXPRESS_SLOT_CAPABILITIES_REGISTER
+title: "_PCI_EXPRESS_SLOT_CAPABILITIES_REGISTER"
+author: windows-driver-content
+description: The PCI_EXPRESS_SLOT_CAPABILITIES_REGISTER structure describes a PCI Express (PCIe) slot capabilities register of a PCIe capability structure.
+old-location: pci\pci_express_slot_capabilities_register.htm
+old-project: PCI
+ms.assetid: a5548777-a88e-40f8-891d-662e0892fd37
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: pci_struct_095f0907-dfff-491b-8734-28b42794c46b.xml, _PCI_EXPRESS_SLOT_CAPABILITIES_REGISTER, PPCI_EXPRESS_SLOT_CAPABILITIES_REGISTER union pointer [Buses], *PPCI_EXPRESS_SLOT_CAPABILITIES_REGISTER, PCI_EXPRESS_SLOT_CAPABILITIES_REGISTER, PCI_EXPRESS_SLOT_CAPABILITIES_REGISTER union [Buses], PCI.pci_express_slot_capabilities_register, PPCI_EXPRESS_SLOT_CAPABILITIES_REGISTER, ntddk/PPCI_EXPRESS_SLOT_CAPABILITIES_REGISTER, ntddk/PCI_EXPRESS_SLOT_CAPABILITIES_REGISTER
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddk.h
+apiname:
+-	PCI_EXPRESS_SLOT_CAPABILITIES_REGISTER
+product: Windows
+targetos: Windows
+req.typenames: PCI_EXPRESS_SLOT_CAPABILITIES_REGISTER, *PPCI_EXPRESS_SLOT_CAPABILITIES_REGISTER
 ---
 
 # _PCI_EXPRESS_SLOT_CAPABILITIES_REGISTER structure

@@ -1,41 +1,46 @@
 ---
-UID : NC:bthddi.PFNBTHPORT_INDICATION_CALLBACK_ENHANCED
-title : PFNBTHPORT_INDICATION_CALLBACK_ENHANCED
-author : windows-driver-content
-description : Profile drivers implement an enhanced L2CAP callback function to provide the Bluetooth driver stack with a mechanism to notify the profile driver about any changes to the status of a currently open L2CAP or eL2CAP connection.
-old-location : bltooth\enhanced_l2cap_callback_function.htm
-old-project : bltooth
-ms.assetid : 1C08937A-2B0C-4A6C-ACDF-1A751BF0D6F6
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : bltooth.enhanced_l2cap_callback_function, BluetoothPortIndicationCallbackEnhanced callback function [Bluetooth Devices], BluetoothPortIndicationCallbackEnhanced, PFNBTHPORT_INDICATION_CALLBACK_ENHANCED, PFNBTHPORT_INDICATION_CALLBACK_ENHANCED, bthddi/BluetoothPortIndicationCallbackEnhanced
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : bthddi.h
-req.include-header : Bthddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported in Windows 8 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PMPEG2_TRANSPORT_STRIDE, MPEG2_TRANSPORT_STRIDE"
+UID: NC:bthddi.PFNBTHPORT_INDICATION_CALLBACK_ENHANCED
+title: PFNBTHPORT_INDICATION_CALLBACK_ENHANCED
+author: windows-driver-content
+description: Profile drivers implement an enhanced L2CAP callback function to provide the Bluetooth driver stack with a mechanism to notify the profile driver about any changes to the status of a currently open L2CAP or eL2CAP connection.
+old-location: bltooth\enhanced_l2cap_callback_function.htm
+old-project: bltooth
+ms.assetid: 1C08937A-2B0C-4A6C-ACDF-1A751BF0D6F6
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: bltooth.enhanced_l2cap_callback_function, BluetoothPortIndicationCallbackEnhanced callback function [Bluetooth Devices], BluetoothPortIndicationCallbackEnhanced, PFNBTHPORT_INDICATION_CALLBACK_ENHANCED, PFNBTHPORT_INDICATION_CALLBACK_ENHANCED, bthddi/BluetoothPortIndicationCallbackEnhanced
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: bthddi.h
+req.include-header: Bthddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported in Windows 8 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	bthddi.h
+apiname:
+-	BluetoothPortIndicationCallbackEnhanced
+product: Windows
+targetos: Windows
+req.typenames: "*PMPEG2_TRANSPORT_STRIDE, MPEG2_TRANSPORT_STRIDE"
 ---
 
 

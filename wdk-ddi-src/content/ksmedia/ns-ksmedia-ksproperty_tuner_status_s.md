@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.KSPROPERTY_TUNER_STATUS_S
-title : KSPROPERTY_TUNER_STATUS_S
-author : windows-driver-content
-description : The KSPROPERTY_TUNER_STATUS_S structure describes the progress of a tuning operation for TV and radio tuner devices, including present tuning frequency.
-old-location : stream\ksproperty_tuner_status_s.htm
-old-project : stream
-ms.assetid : 5e1b37f2-f567-4c03-b0f4-cc1dbd568907
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : "*PKSPROPERTY_TUNER_STATUS_S, KSPROPERTY_TUNER_STATUS_S structure [Streaming Media Devices], KSPROPERTY_TUNER_STATUS_S, PKSPROPERTY_TUNER_STATUS_S structure pointer [Streaming Media Devices], ksmedia/PKSPROPERTY_TUNER_STATUS_S, stream.ksproperty_tuner_status_s, ksmedia/KSPROPERTY_TUNER_STATUS_S, vidcapstruct_a36247d8-99d7-4dad-8632-5feb685616d6.xml, PKSPROPERTY_TUNER_STATUS_S"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KSPROPERTY_TUNER_STATUS_S, *PKSPROPERTY_TUNER_STATUS_S
+UID: NS:ksmedia.KSPROPERTY_TUNER_STATUS_S
+title: KSPROPERTY_TUNER_STATUS_S
+author: windows-driver-content
+description: The KSPROPERTY_TUNER_STATUS_S structure describes the progress of a tuning operation for TV and radio tuner devices, including present tuning frequency.
+old-location: stream\ksproperty_tuner_status_s.htm
+old-project: stream
+ms.assetid: 5e1b37f2-f567-4c03-b0f4-cc1dbd568907
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: "*PKSPROPERTY_TUNER_STATUS_S, KSPROPERTY_TUNER_STATUS_S structure [Streaming Media Devices], KSPROPERTY_TUNER_STATUS_S, PKSPROPERTY_TUNER_STATUS_S structure pointer [Streaming Media Devices], ksmedia/PKSPROPERTY_TUNER_STATUS_S, stream.ksproperty_tuner_status_s, ksmedia/KSPROPERTY_TUNER_STATUS_S, vidcapstruct_a36247d8-99d7-4dad-8632-5feb685616d6.xml, PKSPROPERTY_TUNER_STATUS_S"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	KSPROPERTY_TUNER_STATUS_S
+product: Windows
+targetos: Windows
+req.typenames: KSPROPERTY_TUNER_STATUS_S, *PKSPROPERTY_TUNER_STATUS_S
 ---
 
 # KSPROPERTY_TUNER_STATUS_S structure

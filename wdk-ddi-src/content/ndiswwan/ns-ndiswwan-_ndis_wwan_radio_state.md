@@ -1,41 +1,46 @@
 ---
-UID : NS:ndiswwan._NDIS_WWAN_RADIO_STATE
-title : "_NDIS_WWAN_RADIO_STATE"
-author : windows-driver-content
-description : The NDIS_WWAN_RADIO_STATE structure represents the hardware-based and software-based radio power states of the MB device.
-old-location : netvista\ndis_wwan_radio_state.htm
-old-project : netvista
-ms.assetid : 61173af4-5b6f-47e9-b236-6b45bcd83a9f
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NDIS_WWAN_RADIO_STATE, ndiswwan/PNDIS_WWAN_RADIO_STATE, PNDIS_WWAN_RADIO_STATE, PNDIS_WWAN_RADIO_STATE structure pointer [Network Drivers Starting with Windows Vista], *PNDIS_WWAN_RADIO_STATE, ndiswwan/NDIS_WWAN_RADIO_STATE, _NDIS_WWAN_RADIO_STATE, NDIS_WWAN_RADIO_STATE structure [Network Drivers Starting with Windows Vista], WwanRef_24973f17-426f-492f-ac5e-1f2651dcebd1.xml, netvista.ndis_wwan_radio_state
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndiswwan.h
-req.include-header : Ndiswwan.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PNDIS_WWAN_RADIO_STATE, NDIS_WWAN_RADIO_STATE"
+UID: NS:ndiswwan._NDIS_WWAN_RADIO_STATE
+title: "_NDIS_WWAN_RADIO_STATE"
+author: windows-driver-content
+description: The NDIS_WWAN_RADIO_STATE structure represents the hardware-based and software-based radio power states of the MB device.
+old-location: netvista\ndis_wwan_radio_state.htm
+old-project: netvista
+ms.assetid: 61173af4-5b6f-47e9-b236-6b45bcd83a9f
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NDIS_WWAN_RADIO_STATE, ndiswwan/PNDIS_WWAN_RADIO_STATE, PNDIS_WWAN_RADIO_STATE, PNDIS_WWAN_RADIO_STATE structure pointer [Network Drivers Starting with Windows Vista], *PNDIS_WWAN_RADIO_STATE, ndiswwan/NDIS_WWAN_RADIO_STATE, _NDIS_WWAN_RADIO_STATE, NDIS_WWAN_RADIO_STATE structure [Network Drivers Starting with Windows Vista], WwanRef_24973f17-426f-492f-ac5e-1f2651dcebd1.xml, netvista.ndis_wwan_radio_state
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndiswwan.h
+req.include-header: Ndiswwan.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndiswwan.h
+apiname:
+-	NDIS_WWAN_RADIO_STATE
+product: Windows
+targetos: Windows
+req.typenames: "*PNDIS_WWAN_RADIO_STATE, NDIS_WWAN_RADIO_STATE"
 ---
 
 # _NDIS_WWAN_RADIO_STATE structure

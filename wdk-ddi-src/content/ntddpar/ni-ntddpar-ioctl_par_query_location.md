@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddpar.IOCTL_PAR_QUERY_LOCATION
-title : IOCTL_PAR_QUERY_LOCATION
-author : windows-driver-content
-description : The IOCTL_PAR_QUERY_LOCATION request returns the &#0034;LPTn&#0034; or &#0034;LPTn.m&#0034; symbolic link name associated with a parallel device.
-old-location : parports\ioctl_par_query_location.htm
-old-project : parports
-ms.assetid : a46b1f7f-d624-48f3-a2cf-6828908ba3c1
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : parports.ioctl_par_query_location, IOCTL_PAR_QUERY_LOCATION control code [Parallel Ports], IOCTL_PAR_QUERY_LOCATION, ntddpar/IOCTL_PAR_QUERY_LOCATION, cisspd_49c52fd1-3855-4611-aa3b-4fa7c0ec6b16.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddpar.h
-req.include-header : Ntddpar.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*POFFLOAD_SECURITY_ASSOCIATION, OFFLOAD_SECURITY_ASSOCIATION"
+UID: NI:ntddpar.IOCTL_PAR_QUERY_LOCATION
+title: IOCTL_PAR_QUERY_LOCATION
+author: windows-driver-content
+description: The IOCTL_PAR_QUERY_LOCATION request returns the &#0034;LPTn&#0034; or &#0034;LPTn.m&#0034; symbolic link name associated with a parallel device.
+old-location: parports\ioctl_par_query_location.htm
+old-project: parports
+ms.assetid: a46b1f7f-d624-48f3-a2cf-6828908ba3c1
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: parports.ioctl_par_query_location, IOCTL_PAR_QUERY_LOCATION control code [Parallel Ports], IOCTL_PAR_QUERY_LOCATION, ntddpar/IOCTL_PAR_QUERY_LOCATION, cisspd_49c52fd1-3855-4611-aa3b-4fa7c0ec6b16.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddpar.h
+req.include-header: Ntddpar.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddpar.h
+apiname:
+-	IOCTL_PAR_QUERY_LOCATION
+product: Windows
+targetos: Windows
+req.typenames: "*POFFLOAD_SECURITY_ASSOCIATION, OFFLOAD_SECURITY_ASSOCIATION"
 ---
 
 # IOCTL_PAR_QUERY_LOCATION IOCTL

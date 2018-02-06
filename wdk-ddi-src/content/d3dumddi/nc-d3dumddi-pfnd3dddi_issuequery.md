@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_ISSUEQUERY
-title : PFND3DDDI_ISSUEQUERY
-author : windows-driver-content
-description : The IssueQuery function processes a query.
-old-location : display\issuequery.htm
-old-project : display
-ms.assetid : e31b2b6a-3721-472a-8044-6516a8419ad3
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.issuequery, IssueQuery callback function [Display Devices], IssueQuery, PFND3DDDI_ISSUEQUERY, PFND3DDDI_ISSUEQUERY, d3dumddi/IssueQuery, UserModeDisplayDriver_Functions_59755967-2a97-4c5c-9210-c4e85cdcdd38.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_ISSUEQUERY
+title: PFND3DDDI_ISSUEQUERY
+author: windows-driver-content
+description: The IssueQuery function processes a query.
+old-location: display\issuequery.htm
+old-project: display
+ms.assetid: e31b2b6a-3721-472a-8044-6516a8419ad3
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.issuequery, IssueQuery callback function [Display Devices], IssueQuery, PFND3DDDI_ISSUEQUERY, PFND3DDDI_ISSUEQUERY, d3dumddi/IssueQuery, UserModeDisplayDriver_Functions_59755967-2a97-4c5c-9210-c4e85cdcdd38.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	IssueQuery
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

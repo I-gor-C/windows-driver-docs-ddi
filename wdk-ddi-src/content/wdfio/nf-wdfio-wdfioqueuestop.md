@@ -1,42 +1,50 @@
 ---
-UID : NF:wdfio.WdfIoQueueStop
-title : WdfIoQueueStop function
-author : windows-driver-content
-description : The WdfIoQueueStop method prevents an I/O queue from delivering I/O requests, but the queue receives and stores new requests.
-old-location : wdf\wdfioqueuestop.htm
-old-project : wdf
-ms.assetid : 50ff8064-b28c-4b2b-89d2-bad5e503b2d6
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WdfIoQueueStop, WdfIoQueueStop method, kmdf.wdfioqueuestop, DFQueueObjectRef_c1ac397c-5601-4976-9c42-41b118d429c1.xml, PFN_WDFIOQUEUESTOP, wdf.wdfioqueuestop, wdfio/WdfIoQueueStop
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfio.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : ChangeQueueState, DriverCreate, EvtSurpriseRemoveNoSuspendQueue, KmdfIrql, KmdfIrql2, NoCancelFromEvtSurpriseRemove
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_IO_QUEUE_STATE
-req.product : Windows 10 or later.
+UID: NF:wdfio.WdfIoQueueStop
+title: WdfIoQueueStop function
+author: windows-driver-content
+description: The WdfIoQueueStop method prevents an I/O queue from delivering I/O requests, but the queue receives and stores new requests.
+old-location: wdf\wdfioqueuestop.htm
+old-project: wdf
+ms.assetid: 50ff8064-b28c-4b2b-89d2-bad5e503b2d6
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WdfIoQueueStop, WdfIoQueueStop method, kmdf.wdfioqueuestop, DFQueueObjectRef_c1ac397c-5601-4976-9c42-41b118d429c1.xml, PFN_WDFIOQUEUESTOP, wdf.wdfioqueuestop, wdfio/WdfIoQueueStop
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfio.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: ChangeQueueState, DriverCreate, EvtSurpriseRemoveNoSuspendQueue, KmdfIrql, KmdfIrql2, NoCancelFromEvtSurpriseRemove
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+-	WUDFx02000.dll
+-	WUDFx02000.dll.dll
+apiname:
+-	WdfIoQueueStop
+product: Windows
+targetos: Windows
+req.typenames: WDF_IO_QUEUE_STATE
+req.product: Windows 10 or later.
 ---
 
 

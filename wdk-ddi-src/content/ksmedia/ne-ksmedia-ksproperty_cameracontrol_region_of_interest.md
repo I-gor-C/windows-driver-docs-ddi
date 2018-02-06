@@ -1,41 +1,46 @@
 ---
-UID : NE:ksmedia.KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST
-title : KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST
-author : windows-driver-content
-description : Used to specify a camera region of interest.
-old-location : stream\ksproperty_cameracontrol_region_of_interest.htm
-old-project : stream
-ms.assetid : 58886030-4fb6-432b-9ec1-9eb54350edb4
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ksmedia/KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST, stream.ksproperty_cameracontrol_region_of_interest, KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST, ksmedia/KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST_PROPERTY_ID, KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST enumeration [Streaming Media Devices], KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST_PROPERTY_ID
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST
+UID: NE:ksmedia.KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST
+title: KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST
+author: windows-driver-content
+description: Used to specify a camera region of interest.
+old-location: stream\ksproperty_cameracontrol_region_of_interest.htm
+old-project: stream
+ms.assetid: 58886030-4fb6-432b-9ec1-9eb54350edb4
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ksmedia/KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST, stream.ksproperty_cameracontrol_region_of_interest, KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST, ksmedia/KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST_PROPERTY_ID, KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST enumeration [Streaming Media Devices], KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST_PROPERTY_ID
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ksmedia.h
+apiname:
+-	KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST
+product: Windows
+targetos: Windows
+req.typenames: KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST
 ---
 
 # KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST Enumeration
@@ -51,11 +56,11 @@ typedef enum  {
 ## Constants
 
 <table>
-
-<tr>
-<td>KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST_PROPERTY_ID</td>
-<td>The <a href="https://msdn.microsoft.com/library/windows/hardware/jj156042">KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST_PROPERTY</a> property is used to specify a region of interest.</td>
-</tr>
+            
+                <tr>
+                    <td>KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST_PROPERTY_ID</td>
+                    <td>The <a href="https://msdn.microsoft.com/library/windows/hardware/jj156042">KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST_PROPERTY</a> property is used to specify a region of interest.</td>
+                </tr>
 </table>
 
 
@@ -65,9 +70,9 @@ typedef enum  {
 | **Windows version** | Windows 8 Windows 8 |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
-## See Also
+    ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/jj156042">KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST_PROPERTY</a>
+        <a href="https://msdn.microsoft.com/library/windows/hardware/jj156042">KSPROPERTY_CAMERACONTROL_REGION_OF_INTEREST_PROPERTY</a>
 
  
 

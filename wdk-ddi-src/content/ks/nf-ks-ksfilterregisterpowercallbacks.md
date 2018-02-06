@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsFilterRegisterPowerCallbacks
-title : KsFilterRegisterPowerCallbacks function
-author : windows-driver-content
-description : The KsFilterRegisterPowerCallbacks function registers power management callbacks for Filter.
-old-location : stream\ksfilterregisterpowercallbacks.htm
-old-project : stream
-ms.assetid : 9b4a7932-7371-48d2-95fb-1c3e3ca170be
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KsFilterRegisterPowerCallbacks function [Streaming Media Devices], KsFilterRegisterPowerCallbacks, stream.ksfilterregisterpowercallbacks, avfunc_7c5322b7-f7e2-4641-b466-06f5d9ebfc34.xml, ks/KsFilterRegisterPowerCallbacks
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsFilterRegisterPowerCallbacks
+title: KsFilterRegisterPowerCallbacks function
+author: windows-driver-content
+description: The KsFilterRegisterPowerCallbacks function registers power management callbacks for Filter.
+old-location: stream\ksfilterregisterpowercallbacks.htm
+old-project: stream
+ms.assetid: 9b4a7932-7371-48d2-95fb-1c3e3ca170be
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KsFilterRegisterPowerCallbacks function [Streaming Media Devices], KsFilterRegisterPowerCallbacks, stream.ksfilterregisterpowercallbacks, avfunc_7c5322b7-f7e2-4641-b466-06f5d9ebfc34.xml, ks/KsFilterRegisterPowerCallbacks
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsFilterRegisterPowerCallbacks
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltIsVolumeWritable
-title : FltIsVolumeWritable function
-author : windows-driver-content
-description : The FltIsVolumeWritable routine determines whether the disk device that corresponds to a volume or minifilter driver instance is writable.
-old-location : ifsk\fltisvolumewritable.htm
-old-project : ifsk
-ms.assetid : 9347bc8d-e8fb-440c-8ceb-ce5e8cb1429e
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltIsVolumeWritable routine [Installable File System Drivers], ifsk.fltisvolumewritable, FltIsVolumeWritable, fltkernel/FltIsVolumeWritable, FltApiRef_e_to_o_8b8316b0-5943-425e-a978-a2999629f93c.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : The FltIsVolumeWritable routine is available in Windows Vista and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Fltmgr.lib
-req.dll : Fltmgr.sys
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltIsVolumeWritable
+title: FltIsVolumeWritable function
+author: windows-driver-content
+description: The FltIsVolumeWritable routine determines whether the disk device that corresponds to a volume or minifilter driver instance is writable.
+old-location: ifsk\fltisvolumewritable.htm
+old-project: ifsk
+ms.assetid: 9347bc8d-e8fb-440c-8ceb-ce5e8cb1429e
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltIsVolumeWritable routine [Installable File System Drivers], ifsk.fltisvolumewritable, FltIsVolumeWritable, fltkernel/FltIsVolumeWritable, FltApiRef_e_to_o_8b8316b0-5943-425e-a978-a2999629f93c.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: The FltIsVolumeWritable routine is available in Windows Vista and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Fltmgr.lib
+req.dll: Fltmgr.sys
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltIsVolumeWritable
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NF:wdbgexts.ReadPtr
-title : ReadPtr function
-author : windows-driver-content
-description : The ReadPtr function reads a pointer from the target. ReadPointer should be used instead of this function as the return value of ReadPointer is more consistent with the rest of the WdbgExts API.
-old-location : debugger\readptr.htm
-old-project : debugger
-ms.assetid : e3999ecc-9884-4ae6-8e01-be4538b1d53a
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : debugger.readptr, ReadPtr, WdbgExts_Ref_4eaec659-6522-4d7f-b64a-ad771f93eb56.xml, ReadPtr function [Windows Debugging], wdbgexts/ReadPtr
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdbgexts.h
-req.include-header : Wdbgexts.h, Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXT_TDOP
-req.product : Windows 10 or later.
+UID: NF:wdbgexts.ReadPtr
+title: ReadPtr function
+author: windows-driver-content
+description: The ReadPtr function reads a pointer from the target. ReadPointer should be used instead of this function as the return value of ReadPointer is more consistent with the rest of the WdbgExts API.
+old-location: debugger\readptr.htm
+old-project: debugger
+ms.assetid: e3999ecc-9884-4ae6-8e01-be4538b1d53a
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: debugger.readptr, ReadPtr, WdbgExts_Ref_4eaec659-6522-4d7f-b64a-ad771f93eb56.xml, ReadPtr function [Windows Debugging], wdbgexts/ReadPtr
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdbgexts.h
+req.include-header: Wdbgexts.h, Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdbgexts.h
+apiname:
+-	ReadPtr
+product: Windows
+targetos: Windows
+req.typenames: EXT_TDOP
+req.product: Windows 10 or later.
 ---
 
 

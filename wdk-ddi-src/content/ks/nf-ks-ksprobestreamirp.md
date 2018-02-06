@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsProbeStreamIrp
-title : KsProbeStreamIrp function
-author : windows-driver-content
-description : The KsProbeStreamIrp function makes the specified modifications to the input and output buffers of the given IRP based on the flags passed, and it then validates the stream header.
-old-location : stream\ksprobestreamirp.htm
-old-project : stream
-ms.assetid : 25b49781-2676-4b5e-b17b-dcb1bf98b297
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KsProbeStreamIrp function [Streaming Media Devices], KsProbeStreamIrp, ks/KsProbeStreamIrp, ksfunc_0ed25e85-a785-4021-a7b7-59fa6230eff8.xml, stream.ksprobestreamirp
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsProbeStreamIrp
+title: KsProbeStreamIrp function
+author: windows-driver-content
+description: The KsProbeStreamIrp function makes the specified modifications to the input and output buffers of the given IRP based on the flags passed, and it then validates the stream header.
+old-location: stream\ksprobestreamirp.htm
+old-project: stream
+ms.assetid: 25b49781-2676-4b5e-b17b-dcb1bf98b297
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KsProbeStreamIrp function [Streaming Media Devices], KsProbeStreamIrp, ks/KsProbeStreamIrp, ksfunc_0ed25e85-a785-4021-a7b7-59fa6230eff8.xml, stream.ksprobestreamirp
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsProbeStreamIrp
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

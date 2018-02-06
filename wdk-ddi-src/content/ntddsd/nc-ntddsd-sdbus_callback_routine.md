@@ -1,41 +1,46 @@
 ---
-UID : NC:ntddsd.SDBUS_CALLBACK_ROUTINE
-title : SDBUS_CALLBACK_ROUTINE
-author : windows-driver-content
-description : The PSDBUS_CALLBACK_ROUTINE prototype declares the Secure Digital (SD) driver callback routine that the SD bus driver uses to report device interrupts to the driver.
-old-location : sd\psdbus_callback_routine.htm
-old-project : SD
-ms.assetid : e63ebdcc-afcd-451e-942c-0e295eb3468f
-ms.author : windowsdriverdev
-ms.date : 12/18/2017
-ms.keywords : SD.psdbus_callback_routine, SdBusCallbackRoutine callback function [Buses], SdBusCallbackRoutine, SDBUS_CALLBACK_ROUTINE, SDBUS_CALLBACK_ROUTINE, ntddsd/SdBusCallbackRoutine, sd-rtns_a51040c8-723c-45ae-9e3b-15ef2baca85b.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ntddsd.h
-req.include-header : Ntddsd.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSTORAGE_DIAGNOSTIC_MP_REQUEST, STORAGE_DIAGNOSTIC_MP_REQUEST"
+UID: NC:ntddsd.SDBUS_CALLBACK_ROUTINE
+title: SDBUS_CALLBACK_ROUTINE
+author: windows-driver-content
+description: The PSDBUS_CALLBACK_ROUTINE prototype declares the Secure Digital (SD) driver callback routine that the SD bus driver uses to report device interrupts to the driver.
+old-location: sd\psdbus_callback_routine.htm
+old-project: SD
+ms.assetid: e63ebdcc-afcd-451e-942c-0e295eb3468f
+ms.author: windowsdriverdev
+ms.date: 12/18/2017
+ms.keywords: SD.psdbus_callback_routine, SdBusCallbackRoutine callback function [Buses], SdBusCallbackRoutine, SDBUS_CALLBACK_ROUTINE, SDBUS_CALLBACK_ROUTINE, ntddsd/SdBusCallbackRoutine, sd-rtns_a51040c8-723c-45ae-9e3b-15ef2baca85b.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ntddsd.h
+req.include-header: Ntddsd.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	ntddsd.h
+apiname:
+-	SdBusCallbackRoutine
+product: Windows
+targetos: Windows
+req.typenames: "*PSTORAGE_DIAGNOSTIC_MP_REQUEST, STORAGE_DIAGNOSTIC_MP_REQUEST"
 ---
 
 

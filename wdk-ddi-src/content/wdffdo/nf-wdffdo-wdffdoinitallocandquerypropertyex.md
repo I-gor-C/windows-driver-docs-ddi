@@ -1,42 +1,50 @@
 ---
-UID : NF:wdffdo.WdfFdoInitAllocAndQueryPropertyEx
-title : WdfFdoInitAllocAndQueryPropertyEx function
-author : windows-driver-content
-description : The WdfFdoInitAllocAndQueryPropertyEx method allocates a buffer and retrieves a specified device property.
-old-location : wdf\wdffdoinitallocandquerypropertyex.htm
-old-project : wdf
-ms.assetid : 8F338F5B-2F18-4D7D-AF96-7F80A48D37FB
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.wdffdoinitallocandquerypropertyex, PFN_WDFFDOINITALLOCANDQUERYPROPERTYEX, wdffdo/WdfFdoInitAllocAndQueryPropertyEx, WdfFdoInitAllocAndQueryPropertyEx method, WdfFdoInitAllocAndQueryPropertyEx
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdffdo.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.13
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_DRIVER_VERSION_AVAILABLE_PARAMS, *PWDF_DRIVER_VERSION_AVAILABLE_PARAMS
-req.product : Windows 10 or later.
+UID: NF:wdffdo.WdfFdoInitAllocAndQueryPropertyEx
+title: WdfFdoInitAllocAndQueryPropertyEx function
+author: windows-driver-content
+description: The WdfFdoInitAllocAndQueryPropertyEx method allocates a buffer and retrieves a specified device property.
+old-location: wdf\wdffdoinitallocandquerypropertyex.htm
+old-project: wdf
+ms.assetid: 8F338F5B-2F18-4D7D-AF96-7F80A48D37FB
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.wdffdoinitallocandquerypropertyex, PFN_WDFFDOINITALLOCANDQUERYPROPERTYEX, wdffdo/WdfFdoInitAllocAndQueryPropertyEx, WdfFdoInitAllocAndQueryPropertyEx method, WdfFdoInitAllocAndQueryPropertyEx
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdffdo.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.13
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+-	WUDFx02000.dll
+-	WUDFx02000.dll.dll
+apiname:
+-	WdfFdoInitAllocAndQueryPropertyEx
+product: Windows
+targetos: Windows
+req.typenames: WDF_DRIVER_VERSION_AVAILABLE_PARAMS, *PWDF_DRIVER_VERSION_AVAILABLE_PARAMS
+req.product: Windows 10 or later.
 ---
 
 

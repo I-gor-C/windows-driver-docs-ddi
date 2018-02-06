@@ -1,41 +1,46 @@
 ---
-UID : NS:bthddi._BRB_SCO_TRANSFER
-title : "_BRB_SCO_TRANSFER"
-author : windows-driver-content
-description : The _BRB_SCO_TRANSFER structure describes a buffer to read isochronous data from, or write isochronous data to a SCO channel.
-old-location : bltooth\_brb_sco_transfer.htm
-old-project : bltooth
-ms.assetid : f0aeb4ad-17a6-43bb-87bf-0c6766a6ad39
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : "_BRB_SCO_TRANSFER, bth_structs_2e4ed482-af73-4ca6-997c-53005c4fafc2.xml, _BRB_SCO_TRANSFER structure [Bluetooth Devices], bthddi/_BRB_SCO_TRANSFER, bltooth._brb_sco_transfer"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : bthddi.h
-req.include-header : Bthddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Versions:\_Supported in Windows Vista, and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback   function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access   paged memory)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NS:bthddi._BRB_SCO_TRANSFER
+title: "_BRB_SCO_TRANSFER"
+author: windows-driver-content
+description: The _BRB_SCO_TRANSFER structure describes a buffer to read isochronous data from, or write isochronous data to a SCO channel.
+old-location: bltooth\_brb_sco_transfer.htm
+old-project: bltooth
+ms.assetid: f0aeb4ad-17a6-43bb-87bf-0c6766a6ad39
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: "_BRB_SCO_TRANSFER, bth_structs_2e4ed482-af73-4ca6-997c-53005c4fafc2.xml, _BRB_SCO_TRANSFER structure [Bluetooth Devices], bthddi/_BRB_SCO_TRANSFER, bltooth._brb_sco_transfer"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: bthddi.h
+req.include-header: Bthddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Versions:\_Supported in Windows Vista, and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback   function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access   paged memory)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	bthddi.h
+apiname:
+-	_BRB_SCO_TRANSFER
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 # _BRB_SCO_TRANSFER structure

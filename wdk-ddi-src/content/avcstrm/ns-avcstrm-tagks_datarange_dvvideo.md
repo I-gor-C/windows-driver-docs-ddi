@@ -1,41 +1,46 @@
 ---
-UID : NS:avcstrm.tagKS_DATARANGE_DVVIDEO
-title : tagKS_DATARANGE_DVVIDEO
-author : windows-driver-content
-description : The KS_DATARANGE_DV_AVC structure stores a range of digital video formats.
-old-location : stream\ks_datarange_dvvideo.htm
-old-project : stream
-ms.assetid : 89cbb950-c3e5-4d79-aa7f-fd64cd67fd5e
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : tagKS_DATARANGE_DVVIDEO, KS_DATARANGE_DVVIDEO, *PKS_DATARANGE_DVVIDEO, avcstrm/PKS_DATARANGE_DVVIDEO, stream.ks_datarange_dvvideo, avcstrm/KS_DATARANGE_DVVIDEO, avcsref_4058b68a-c43e-46f0-82b7-dc596cbead98.xml, KS_DATARANGE_DVVIDEO structure [Streaming Media Devices], PKS_DATARANGE_DVVIDEO, PKS_DATARANGE_DVVIDEO structure pointer [Streaming Media Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : avcstrm.h
-req.include-header : Avcstrm.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKS_DATARANGE_DVVIDEO, KS_DATARANGE_DVVIDEO"
+UID: NS:avcstrm.tagKS_DATARANGE_DVVIDEO
+title: tagKS_DATARANGE_DVVIDEO
+author: windows-driver-content
+description: The KS_DATARANGE_DV_AVC structure stores a range of digital video formats.
+old-location: stream\ks_datarange_dvvideo.htm
+old-project: stream
+ms.assetid: 89cbb950-c3e5-4d79-aa7f-fd64cd67fd5e
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: tagKS_DATARANGE_DVVIDEO, KS_DATARANGE_DVVIDEO, *PKS_DATARANGE_DVVIDEO, avcstrm/PKS_DATARANGE_DVVIDEO, stream.ks_datarange_dvvideo, avcstrm/KS_DATARANGE_DVVIDEO, avcsref_4058b68a-c43e-46f0-82b7-dc596cbead98.xml, KS_DATARANGE_DVVIDEO structure [Streaming Media Devices], PKS_DATARANGE_DVVIDEO, PKS_DATARANGE_DVVIDEO structure pointer [Streaming Media Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: avcstrm.h
+req.include-header: Avcstrm.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	avcstrm.h
+apiname:
+-	KS_DATARANGE_DVVIDEO
+product: Windows
+targetos: Windows
+req.typenames: "*PKS_DATARANGE_DVVIDEO, KS_DATARANGE_DVVIDEO"
 ---
 
 # tagKS_DATARANGE_DVVIDEO structure

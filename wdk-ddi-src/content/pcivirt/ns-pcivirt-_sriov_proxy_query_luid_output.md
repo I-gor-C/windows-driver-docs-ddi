@@ -1,41 +1,46 @@
 ---
-UID : NS:pcivirt._SRIOV_PROXY_QUERY_LUID_OUTPUT
-title : "_SRIOV_PROXY_QUERY_LUID_OUTPUT"
-author : windows-driver-content
-description : Stores the local unique identifier of the SR_IOV device implementing the interface. This structure is the output buffer for the IOCTL_SRIOV_PROXY_QUERY_LUID request.
-old-location : pci\sriov_proxy_query_luid_output.htm
-old-project : PCI
-ms.assetid : 8db09aa8-240d-40b6-a28c-77158aff6c39
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : "_SRIOV_PROXY_QUERY_LUID_OUTPUT, SRIOV_PROXY_QUERY_LUID_OUTPUT structure [Buses], pcivirt/SRIOV_PROXY_QUERY_LUID_OUTPUT, PCI.sriov_proxy_query_luid_output, SRIOV_PROXY_QUERY_LUID_OUTPUT, *PSRIOV_PROXY_QUERY_LUID_OUTPUT"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : pcivirt.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SRIOV_PROXY_QUERY_LUID_OUTPUT, *PSRIOV_PROXY_QUERY_LUID_OUTPUT
+UID: NS:pcivirt._SRIOV_PROXY_QUERY_LUID_OUTPUT
+title: "_SRIOV_PROXY_QUERY_LUID_OUTPUT"
+author: windows-driver-content
+description: Stores the local unique identifier of the SR_IOV device implementing the interface. This structure is the output buffer for the IOCTL_SRIOV_PROXY_QUERY_LUID request.
+old-location: pci\sriov_proxy_query_luid_output.htm
+old-project: PCI
+ms.assetid: 8db09aa8-240d-40b6-a28c-77158aff6c39
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: "_SRIOV_PROXY_QUERY_LUID_OUTPUT, SRIOV_PROXY_QUERY_LUID_OUTPUT structure [Buses], pcivirt/SRIOV_PROXY_QUERY_LUID_OUTPUT, PCI.sriov_proxy_query_luid_output, SRIOV_PROXY_QUERY_LUID_OUTPUT, *PSRIOV_PROXY_QUERY_LUID_OUTPUT"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: pcivirt.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Pcivirt.h
+apiname:
+-	SRIOV_PROXY_QUERY_LUID_OUTPUT
+product: Windows
+targetos: Windows
+req.typenames: SRIOV_PROXY_QUERY_LUID_OUTPUT, *PSRIOV_PROXY_QUERY_LUID_OUTPUT
 ---
 
 # _SRIOV_PROXY_QUERY_LUID_OUTPUT structure

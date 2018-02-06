@@ -1,41 +1,46 @@
 ---
-UID : NF:engextcpp.EXT_COMMAND_METHOD
-title : EXT_COMMAND_METHOD macro
-author : windows-driver-content
-description : The EXT_COMMAND_METHOD macro declares an extension command from inside the definition of the EXT_CLASS class.
-old-location : debugger\ext_command_method.htm
-old-project : debugger
-ms.assetid : 30962127-a46f-43f5-a58e-891c5b8a867d
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : EXT_COMMAND_METHOD, engextcpp/EXT_COMMAND_METHOD, EXT_COMMAND_METHOD function [Windows Debugging], debugger.ext_command_method, EngExtCpp_Ref_a4a0b264-50e1-457b-a962-ca691509ea36.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : macro
-req.header : engextcpp.hpp
-req.include-header : Engextcpp.hpp
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : engextcpp.hpp
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SILO_DRIVER_CAPABILITIES, *PSILO_DRIVER_CAPABILITIES
+UID: NF:engextcpp.EXT_COMMAND_METHOD
+title: EXT_COMMAND_METHOD macro
+author: windows-driver-content
+description: The EXT_COMMAND_METHOD macro declares an extension command from inside the definition of the EXT_CLASS class.
+old-location: debugger\ext_command_method.htm
+old-project: debugger
+ms.assetid: 30962127-a46f-43f5-a58e-891c5b8a867d
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: EXT_COMMAND_METHOD, engextcpp/EXT_COMMAND_METHOD, EXT_COMMAND_METHOD function [Windows Debugging], debugger.ext_command_method, EngExtCpp_Ref_a4a0b264-50e1-457b-a962-ca691509ea36.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: macro
+req.header: engextcpp.hpp
+req.include-header: Engextcpp.hpp
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: engextcpp.hpp
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	engextcpp.hpp
+apiname:
+-	EXT_COMMAND_METHOD
+product: Windows
+targetos: Windows
+req.typenames: SILO_DRIVER_CAPABILITIES, *PSILO_DRIVER_CAPABILITIES
 ---
 
 

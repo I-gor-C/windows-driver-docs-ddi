@@ -1,42 +1,48 @@
 ---
-UID : NF:strmini.StreamClassReadWriteConfig
-title : StreamClassReadWriteConfig function
-author : windows-driver-content
-description : The StreamClassReadWriteConfig routine reads or writes configuration data for the minidriver's parent bus driver.
-old-location : stream\streamclassreadwriteconfig.htm
-old-project : stream
-ms.assetid : ae8c1478-b429-4af1-a36d-96145696a990
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : StreamClassReadWriteConfig routine [Streaming Media Devices], stream.streamclassreadwriteconfig, strclass-routines_5bfa9287-1b6a-40d8-abdc-637fe88e6372.xml, StreamClassReadWriteConfig, strmini/StreamClassReadWriteConfig
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : strmini.h
-req.include-header : Strmini.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Stream.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSTREAM_PRIORITY, STREAM_PRIORITY"
-req.product : Windows 10 or later.
+UID: NF:strmini.StreamClassReadWriteConfig
+title: StreamClassReadWriteConfig function
+author: windows-driver-content
+description: The StreamClassReadWriteConfig routine reads or writes configuration data for the minidriver's parent bus driver.
+old-location: stream\streamclassreadwriteconfig.htm
+old-project: stream
+ms.assetid: ae8c1478-b429-4af1-a36d-96145696a990
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: StreamClassReadWriteConfig routine [Streaming Media Devices], stream.streamclassreadwriteconfig, strclass-routines_5bfa9287-1b6a-40d8-abdc-637fe88e6372.xml, StreamClassReadWriteConfig, strmini/StreamClassReadWriteConfig
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: strmini.h
+req.include-header: Strmini.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Stream.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Stream.lib
+-	Stream.dll
+apiname:
+-	StreamClassReadWriteConfig
+product: Windows
+targetos: Windows
+req.typenames: "*PSTREAM_PRIORITY, STREAM_PRIORITY"
+req.product: Windows 10 or later.
 ---
 
 

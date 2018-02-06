@@ -1,42 +1,47 @@
 ---
-UID : NC:wlanihv.DOT11EXT_SET_DEFAULT_KEY_ID
-title : DOT11EXT_SET_DEFAULT_KEY_ID
-author : windows-driver-content
-description : Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
-old-location : netvista\dot11extsetdefaultkeyid.htm
-old-project : netvista
-ms.assetid : 405da147-9b41-4563-8694-6619f86ed366
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.dot11extsetdefaultkeyid, Dot11ExtSetDefaultKeyId callback function [Network Drivers Starting with Windows Vista], Dot11ExtSetDefaultKeyId, DOT11EXT_SET_DEFAULT_KEY_ID, DOT11EXT_SET_DEFAULT_KEY_ID, wlanihv/Dot11ExtSetDefaultKeyId, Native_802.11_IHV_Ext_60922941-d9b1-4d73-8029-513d127944e2.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wlanihv.h
-req.include-header : Wlanihv.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating   systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDRIVER_INFO_8W, DRIVER_INFO_8W, *LPDRIVER_INFO_8W"
-req.product : Windows 10 or later.
+UID: NC:wlanihv.DOT11EXT_SET_DEFAULT_KEY_ID
+title: DOT11EXT_SET_DEFAULT_KEY_ID
+author: windows-driver-content
+description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+old-location: netvista\dot11extsetdefaultkeyid.htm
+old-project: netvista
+ms.assetid: 405da147-9b41-4563-8694-6619f86ed366
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.dot11extsetdefaultkeyid, Dot11ExtSetDefaultKeyId callback function [Network Drivers Starting with Windows Vista], Dot11ExtSetDefaultKeyId, DOT11EXT_SET_DEFAULT_KEY_ID, DOT11EXT_SET_DEFAULT_KEY_ID, wlanihv/Dot11ExtSetDefaultKeyId, Native_802.11_IHV_Ext_60922941-d9b1-4d73-8029-513d127944e2.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wlanihv.h
+req.include-header: Wlanihv.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	wlanihv.h
+apiname:
+-	Dot11ExtSetDefaultKeyId
+product: Windows
+targetos: Windows
+req.typenames: "*PDRIVER_INFO_8W, DRIVER_INFO_8W, *LPDRIVER_INFO_8W"
+req.product: Windows 10 or later.
 ---
 
 

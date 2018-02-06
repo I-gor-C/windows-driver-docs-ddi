@@ -1,42 +1,47 @@
 ---
-UID : NS:wdfworkitem._WDF_WORKITEM_CONFIG
-title : "_WDF_WORKITEM_CONFIG"
-author : windows-driver-content
-description : The WDF_WORKITEM_CONFIG structure contains information that is associated with a work item.
-old-location : wdf\wdf_workitem_config.htm
-old-project : wdf
-ms.assetid : b6186c05-ccb9-432c-bd83-9a3fb3af7f0b
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdfworkitem/WDF_WORKITEM_CONFIG, kmdf.wdf_workitem_config, PWDF_WORKITEM_CONFIG, PWDF_WORKITEM_CONFIG structure pointer, wdf.wdf_workitem_config, wdfworkitem/PWDF_WORKITEM_CONFIG, WDF_WORKITEM_CONFIG, _WDF_WORKITEM_CONFIG, DFWorkItemObjectRef_48012621-6363-421b-8b95-2bdae4e63b32.xml, WDF_WORKITEM_CONFIG structure, *PWDF_WORKITEM_CONFIG
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdfworkitem.h
-req.include-header : Wdf.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDF_WORKITEM_CONFIG, WDF_WORKITEM_CONFIG"
-req.product : Windows 10 or later.
+UID: NS:wdfworkitem._WDF_WORKITEM_CONFIG
+title: "_WDF_WORKITEM_CONFIG"
+author: windows-driver-content
+description: The WDF_WORKITEM_CONFIG structure contains information that is associated with a work item.
+old-location: wdf\wdf_workitem_config.htm
+old-project: wdf
+ms.assetid: b6186c05-ccb9-432c-bd83-9a3fb3af7f0b
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdfworkitem/WDF_WORKITEM_CONFIG, kmdf.wdf_workitem_config, PWDF_WORKITEM_CONFIG, PWDF_WORKITEM_CONFIG structure pointer, wdf.wdf_workitem_config, wdfworkitem/PWDF_WORKITEM_CONFIG, WDF_WORKITEM_CONFIG, _WDF_WORKITEM_CONFIG, DFWorkItemObjectRef_48012621-6363-421b-8b95-2bdae4e63b32.xml, WDF_WORKITEM_CONFIG structure, *PWDF_WORKITEM_CONFIG
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdfworkitem.h
+req.include-header: Wdf.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfworkitem.h
+apiname:
+-	WDF_WORKITEM_CONFIG
+product: Windows
+targetos: Windows
+req.typenames: "*PWDF_WORKITEM_CONFIG, WDF_WORKITEM_CONFIG"
+req.product: Windows 10 or later.
 ---
 
 # _WDF_WORKITEM_CONFIG structure

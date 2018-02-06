@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.KSNODEPROPERTY
-title : KSNODEPROPERTY
-author : windows-driver-content
-description : The KSNODEPROPERTY structure specifies a node and a property of that node.
-old-location : audio\ksnodeproperty.htm
-old-project : audio
-ms.assetid : bbcf7597-217a-499b-b0f2-deef1e85becc
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : KSNODEPROPERTY structure [Audio Devices], ksmedia/PKSNODEPROPERTY, KSNODEPROPERTY, PKSNODEPROPERTY, *PKSNODEPROPERTY, aud-prop_7d1e6907-77f6-445d-ba5d-b94037b234f3.xml, PKSNODEPROPERTY structure pointer [Audio Devices], audio.ksnodeproperty, ksmedia/KSNODEPROPERTY
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKSNODEPROPERTY, KSNODEPROPERTY"
+UID: NS:ksmedia.KSNODEPROPERTY
+title: KSNODEPROPERTY
+author: windows-driver-content
+description: The KSNODEPROPERTY structure specifies a node and a property of that node.
+old-location: audio\ksnodeproperty.htm
+old-project: audio
+ms.assetid: bbcf7597-217a-499b-b0f2-deef1e85becc
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: KSNODEPROPERTY structure [Audio Devices], ksmedia/PKSNODEPROPERTY, KSNODEPROPERTY, PKSNODEPROPERTY, *PKSNODEPROPERTY, aud-prop_7d1e6907-77f6-445d-ba5d-b94037b234f3.xml, PKSNODEPROPERTY structure pointer [Audio Devices], audio.ksnodeproperty, ksmedia/KSNODEPROPERTY
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	KSNODEPROPERTY
+product: Windows
+targetos: Windows
+req.typenames: "*PKSNODEPROPERTY, KSNODEPROPERTY"
 ---
 
 # KSNODEPROPERTY structure

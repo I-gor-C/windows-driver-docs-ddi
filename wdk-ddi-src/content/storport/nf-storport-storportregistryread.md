@@ -1,42 +1,48 @@
 ---
-UID : NF:storport.StorPortRegistryRead
-title : StorPortRegistryRead function
-author : windows-driver-content
-description : The StorPortRegistryRead routine reads the registry data for the indicated device and value.
-old-location : storage\storportregistryread.htm
-old-project : storage
-ms.assetid : 16f13973-c1c1-4123-8fa4-20187ec2c204
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.storportregistryread, StorPortRegistryRead routine [Storage Devices], storprt_6eafcbbc-b767-45b3-97d6-86e591a29a19.xml, storport/StorPortRegistryRead, StorPortRegistryRead
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : StorPortIrql
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Storport.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STOR_SPINLOCK
-req.product : Windows 10 or later.
+UID: NF:storport.StorPortRegistryRead
+title: StorPortRegistryRead function
+author: windows-driver-content
+description: The StorPortRegistryRead routine reads the registry data for the indicated device and value.
+old-location: storage\storportregistryread.htm
+old-project: storage
+ms.assetid: 16f13973-c1c1-4123-8fa4-20187ec2c204
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.storportregistryread, StorPortRegistryRead routine [Storage Devices], storprt_6eafcbbc-b767-45b3-97d6-86e591a29a19.xml, storport/StorPortRegistryRead, StorPortRegistryRead
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: StorPortIrql
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Storport.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Storport.lib
+-	Storport.dll
+apiname:
+-	StorPortRegistryRead
+product: Windows
+targetos: Windows
+req.typenames: STOR_SPINLOCK
+req.product: Windows 10 or later.
 ---
 
 

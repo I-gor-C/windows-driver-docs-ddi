@@ -1,42 +1,47 @@
 ---
-UID : NF:wiamdef.wiasCreateChildAppItem
-title : wiasCreateChildAppItem function
-author : windows-driver-content
-description : The wiasCreateChildAppItem function creates a new application item and inserts it as a child of the specified (parent) item. Note that this item will not have any properties in its property sets until the driver or application actually fills them in.
-old-location : image\wiascreatechildappitem.htm
-old-project : image
-ms.assetid : 1dba59b0-5eac-4507-bd42-517a856aa864
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : wiasCreateChildAppItem function [Imaging Devices], wiasCreateChildAppItem, wiamdef/wiasCreateChildAppItem, image.wiascreatechildappitem, wiasFncs_63e9cbb1-6435-433b-a27f-36b66042be8a.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wiamdef.h
-req.include-header : Wiamdef.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wiaservc.lib
-req.dll : Wiaservc.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*LPDEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2, DEVICEDIALOGDATA2"
-req.product : Windows 10 or later.
+UID: NF:wiamdef.wiasCreateChildAppItem
+title: wiasCreateChildAppItem function
+author: windows-driver-content
+description: The wiasCreateChildAppItem function creates a new application item and inserts it as a child of the specified (parent) item. Note that this item will not have any properties in its property sets until the driver or application actually fills them in.
+old-location: image\wiascreatechildappitem.htm
+old-project: image
+ms.assetid: 1dba59b0-5eac-4507-bd42-517a856aa864
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: wiasCreateChildAppItem function [Imaging Devices], wiasCreateChildAppItem, wiamdef/wiasCreateChildAppItem, image.wiascreatechildappitem, wiasFncs_63e9cbb1-6435-433b-a27f-36b66042be8a.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wiamdef.h
+req.include-header: Wiamdef.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wiaservc.lib
+req.dll: Wiaservc.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Wiaservc.dll
+apiname:
+-	wiasCreateChildAppItem
+product: Windows
+targetos: Windows
+req.typenames: "*LPDEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2, DEVICEDIALOGDATA2"
+req.product: Windows 10 or later.
 ---
 
 

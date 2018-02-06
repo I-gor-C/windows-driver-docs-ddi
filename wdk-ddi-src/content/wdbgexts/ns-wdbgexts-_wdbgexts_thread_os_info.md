@@ -1,42 +1,47 @@
 ---
-UID : NS:wdbgexts._WDBGEXTS_THREAD_OS_INFO
-title : "_WDBGEXTS_THREAD_OS_INFO"
-author : windows-driver-content
-description : The IG_GET_THREAD_OS_INFO Ioctl operation returns information about an operating system thread in the target. When calling Ioctl with IoctlType set to IG_GET_THREAD_OS_INFO, IpvData should contain an instance of the WDBGEXTS_THREAD_OS_INFO structure.
-old-location : debugger\ig_get_thread_os_info.htm
-old-project : debugger
-ms.assetid : 5cd1ba71-af2f-4662-b37d-88f4e4aa7624
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : wdbgexts/PWDBGEXTS_THREAD_OS_INFO, WDBGEXTS_THREAD_OS_INFO structure [Windows Debugging], PWDBGEXTS_THREAD_OS_INFO structure pointer [Windows Debugging], WDBGEXTS_THREAD_OS_INFO, debugger.ig_get_thread_os_info, WdbgExts_Ref_dfcc01ec-d4f4-4eba-adb5-d729f951f502.xml, wdbgexts/WDBGEXTS_THREAD_OS_INFO, *PWDBGEXTS_THREAD_OS_INFO, PWDBGEXTS_THREAD_OS_INFO, _WDBGEXTS_THREAD_OS_INFO
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdbgexts.h
-req.include-header : Wdbgexts.h, Dbgeng.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDBGEXTS_THREAD_OS_INFO, WDBGEXTS_THREAD_OS_INFO"
-req.product : Windows 10 or later.
+UID: NS:wdbgexts._WDBGEXTS_THREAD_OS_INFO
+title: "_WDBGEXTS_THREAD_OS_INFO"
+author: windows-driver-content
+description: The IG_GET_THREAD_OS_INFO Ioctl operation returns information about an operating system thread in the target. When calling Ioctl with IoctlType set to IG_GET_THREAD_OS_INFO, IpvData should contain an instance of the WDBGEXTS_THREAD_OS_INFO structure.
+old-location: debugger\ig_get_thread_os_info.htm
+old-project: debugger
+ms.assetid: 5cd1ba71-af2f-4662-b37d-88f4e4aa7624
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: wdbgexts/PWDBGEXTS_THREAD_OS_INFO, WDBGEXTS_THREAD_OS_INFO structure [Windows Debugging], PWDBGEXTS_THREAD_OS_INFO structure pointer [Windows Debugging], WDBGEXTS_THREAD_OS_INFO, debugger.ig_get_thread_os_info, WdbgExts_Ref_dfcc01ec-d4f4-4eba-adb5-d729f951f502.xml, wdbgexts/WDBGEXTS_THREAD_OS_INFO, *PWDBGEXTS_THREAD_OS_INFO, PWDBGEXTS_THREAD_OS_INFO, _WDBGEXTS_THREAD_OS_INFO
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdbgexts.h
+req.include-header: Wdbgexts.h, Dbgeng.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdbgexts.h
+apiname:
+-	WDBGEXTS_THREAD_OS_INFO
+product: Windows
+targetos: Windows
+req.typenames: "*PWDBGEXTS_THREAD_OS_INFO, WDBGEXTS_THREAD_OS_INFO"
+req.product: Windows 10 or later.
 ---
 
 # _WDBGEXTS_THREAD_OS_INFO structure

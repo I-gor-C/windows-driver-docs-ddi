@@ -1,42 +1,48 @@
 ---
-UID : NF:udecxusbendpoint.UdecxUsbEndpointPurgeComplete
-title : UdecxUsbEndpointPurgeComplete function
-author : windows-driver-content
-description : Completes an asynchronous request for canceling all I/O requests queued to the specified endpoint.
-old-location : buses\udecxusbendpointpurgecomplete.htm
-old-project : usbref
-ms.assetid : 91257BC3-C469-44D5-96E2-D1FA599963F1
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : UdecxUsbEndpointPurgeComplete function [Buses], UdecxUsbEndpointPurgeComplete, buses.udecxusbendpointpurgecomplete, udecxusbendpoint/UdecxUsbEndpointPurgeComplete
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : udecxusbendpoint.h
-req.include-header : Udecx.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 1.15
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Udecxstub.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUDECX_USB_ENDPOINT_INIT_AND_METADATA, UDECX_USB_ENDPOINT_INIT_AND_METADATA"
-req.product : Windows 10 or later.
+UID: NF:udecxusbendpoint.UdecxUsbEndpointPurgeComplete
+title: UdecxUsbEndpointPurgeComplete function
+author: windows-driver-content
+description: Completes an asynchronous request for canceling all I/O requests queued to the specified endpoint.
+old-location: buses\udecxusbendpointpurgecomplete.htm
+old-project: usbref
+ms.assetid: 91257BC3-C469-44D5-96E2-D1FA599963F1
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: UdecxUsbEndpointPurgeComplete function [Buses], UdecxUsbEndpointPurgeComplete, buses.udecxusbendpointpurgecomplete, udecxusbendpoint/UdecxUsbEndpointPurgeComplete
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: udecxusbendpoint.h
+req.include-header: Udecx.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 1.15
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Udecxstub.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Udecxstub.lib
+-	Udecxstub.dll
+apiname:
+-	UdecxUsbEndpointPurgeComplete
+product: Windows
+targetos: Windows
+req.typenames: "*PUDECX_USB_ENDPOINT_INIT_AND_METADATA, UDECX_USB_ENDPOINT_INIT_AND_METADATA"
+req.product: Windows 10 or later.
 ---
 
 

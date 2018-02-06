@@ -1,41 +1,46 @@
 ---
-UID : NC:compstui._CPSUICALLBACK
-title : "_CPSUICALLBACK"
-author : windows-driver-content
-description : The _CPSUICALLBACK function type is used by CPSUI applications (including printer interface DLLs) for defining a callback function intended for use as a CPSUI message handler.
-old-location : print\_cpsuicallback.htm
-old-project : print
-ms.assetid : 7d0f1609-5a24-4d38-9e9e-0c8e2de679a2
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : print._cpsuicallback, _CPSUICALLBACK callback function [Print Devices], _CPSUICALLBACK, compstui/_CPSUICALLBACK, cpsuifnc_a5a532ac-20be-43d5-a9fb-40b918f44d51.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : compstui.h
-req.include-header : Compstui.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPOWERSOURCEUPDATEEX, POWERSOURCEUPDATEEX"
+UID: NC:compstui._CPSUICALLBACK
+title: "_CPSUICALLBACK"
+author: windows-driver-content
+description: The _CPSUICALLBACK function type is used by CPSUI applications (including printer interface DLLs) for defining a callback function intended for use as a CPSUI message handler.
+old-location: print\_cpsuicallback.htm
+old-project: print
+ms.assetid: 7d0f1609-5a24-4d38-9e9e-0c8e2de679a2
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: print._cpsuicallback, _CPSUICALLBACK callback function [Print Devices], _CPSUICALLBACK, compstui/_CPSUICALLBACK, cpsuifnc_a5a532ac-20be-43d5-a9fb-40b918f44d51.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: compstui.h
+req.include-header: Compstui.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	compstui.h
+apiname:
+-	_CPSUICALLBACK
+product: Windows
+targetos: Windows
+req.typenames: "*PPOWERSOURCEUPDATEEX, POWERSOURCEUPDATEEX"
 ---
 
 

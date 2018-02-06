@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugControl3.RemoveEngineOptions
-title : IDebugControl3::RemoveEngineOptions method
-author : windows-driver-content
-description : The RemoveEngineOptions method turns off some of the engine's options.
-old-location : debugger\removeengineoptions.htm
-old-project : debugger
-ms.assetid : ec4cf252-88c4-47de-9015-bcbbd1fd5d1d
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugControl interface [Windows Debugging], RemoveEngineOptions method, IDebugControl3::RemoveEngineOptions, RemoveEngineOptions method [Windows Debugging], IDebugControl3 interface, RemoveEngineOptions method [Windows Debugging], IDebugControl3 interface [Windows Debugging], RemoveEngineOptions method, IDebugControl3, dbgeng/IDebugControl2::RemoveEngineOptions, dbgeng/IDebugControl3::RemoveEngineOptions, RemoveEngineOptions method [Windows Debugging], IDebugControl2 interface, IDebugControl2::RemoveEngineOptions, IDebugControl_b1af0528-4fc2-4ea3-90e8-c7d92b0632f4.xml, RemoveEngineOptions, debugger.removeengineoptions, dbgeng/IDebugControl::RemoveEngineOptions, RemoveEngineOptions method [Windows Debugging], IDebugControl interface, IDebugControl::RemoveEngineOptions, IDebugControl2 interface [Windows Debugging], RemoveEngineOptions method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h, Dbgeng.h, Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl3.RemoveEngineOptions
+title: IDebugControl3::RemoveEngineOptions method
+author: windows-driver-content
+description: The RemoveEngineOptions method turns off some of the engine's options.
+old-location: debugger\removeengineoptions.htm
+old-project: debugger
+ms.assetid: ec4cf252-88c4-47de-9015-bcbbd1fd5d1d
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugControl interface [Windows Debugging], RemoveEngineOptions method, IDebugControl3::RemoveEngineOptions, RemoveEngineOptions method [Windows Debugging], IDebugControl3 interface, RemoveEngineOptions method [Windows Debugging], IDebugControl3 interface [Windows Debugging], RemoveEngineOptions method, IDebugControl3, dbgeng/IDebugControl2::RemoveEngineOptions, dbgeng/IDebugControl3::RemoveEngineOptions, RemoveEngineOptions method [Windows Debugging], IDebugControl2 interface, IDebugControl2::RemoveEngineOptions, IDebugControl_b1af0528-4fc2-4ea3-90e8-c7d92b0632f4.xml, RemoveEngineOptions, debugger.removeengineoptions, dbgeng/IDebugControl::RemoveEngineOptions, RemoveEngineOptions method [Windows Debugging], IDebugControl interface, IDebugControl::RemoveEngineOptions, IDebugControl2 interface [Windows Debugging], RemoveEngineOptions method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h, Dbgeng.h, Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl.RemoveEngineOptions
+-	IDebugControl2.RemoveEngineOptions
+-	IDebugControl3.RemoveEngineOptions
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

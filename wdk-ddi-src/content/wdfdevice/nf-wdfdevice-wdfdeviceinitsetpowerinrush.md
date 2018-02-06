@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfdevice.WdfDeviceInitSetPowerInrush
-title : WdfDeviceInitSetPowerInrush function
-author : windows-driver-content
-description : The WdfDeviceInitSetPowerInrush method informs the power manager that the specified device requires an inrush of current when it starts.
-old-location : wdf\wdfdeviceinitsetpowerinrush.htm
-old-project : wdf
-ms.assetid : 91b29a5b-8bc0-44c0-8c48-2d023da12dcb
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : DFDeviceObjectGeneralRef_07e58947-78a3-4864-924c-8bd11dfd8af5.xml, WdfDeviceInitSetPowerInrush method, wdf.wdfdeviceinitsetpowerinrush, WdfDeviceInitSetPowerInrush, wdfdevice/WdfDeviceInitSetPowerInrush, kmdf.wdfdeviceinitsetpowerinrush, PFN_WDFDEVICEINITSETPOWERINRUSH
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfdevice.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : ChildDeviceInitAPI, DeviceInitAPI, DriverCreate, KmdfIrql, KmdfIrql2, PdoDeviceInitAPI
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_STATE_NOTIFICATION_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfdevice.WdfDeviceInitSetPowerInrush
+title: WdfDeviceInitSetPowerInrush function
+author: windows-driver-content
+description: The WdfDeviceInitSetPowerInrush method informs the power manager that the specified device requires an inrush of current when it starts.
+old-location: wdf\wdfdeviceinitsetpowerinrush.htm
+old-project: wdf
+ms.assetid: 91b29a5b-8bc0-44c0-8c48-2d023da12dcb
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: DFDeviceObjectGeneralRef_07e58947-78a3-4864-924c-8bd11dfd8af5.xml, WdfDeviceInitSetPowerInrush method, wdf.wdfdeviceinitsetpowerinrush, WdfDeviceInitSetPowerInrush, wdfdevice/WdfDeviceInitSetPowerInrush, kmdf.wdfdeviceinitsetpowerinrush, PFN_WDFDEVICEINITSETPOWERINRUSH
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfdevice.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: ChildDeviceInitAPI, DeviceInitAPI, DriverCreate, KmdfIrql, KmdfIrql2, PdoDeviceInitAPI
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfDeviceInitSetPowerInrush
+product: Windows
+targetos: Windows
+req.typenames: WDF_STATE_NOTIFICATION_TYPE
+req.product: Windows 10 or later.
 ---
 
 

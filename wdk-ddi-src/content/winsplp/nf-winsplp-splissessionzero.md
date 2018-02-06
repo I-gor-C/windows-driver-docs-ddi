@@ -1,42 +1,47 @@
 ---
-UID : NF:winsplp.SplIsSessionZero
-title : SplIsSessionZero function
-author : windows-driver-content
-description : The SplIsSessionZero function determines whether a certain print job (print handle plus job ID) was issued in session zero.
-old-location : print\splissessionzero.htm
-old-project : print
-ms.assetid : 9d68a41d-0f2b-4cf0-92c6-8e05ce6b4378
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : spoolfnc_8fd112f0-f2bf-4a33-8411-c1ce7c620390.xml, winsplp/SplIsSessionZero, print.splissessionzero, SplIsSessionZero, SplIsSessionZero function [Print Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : winsplp.h
-req.include-header : Winsplp.h
-req.target-type : Desktop
-req.target-min-winverclnt : This function is available in Windows XP and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Spoolss.lib
-req.dll : Spoolss.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NOTIFICATION_CONFIG_FLAGS
-req.product : Windows 10 or later.
+UID: NF:winsplp.SplIsSessionZero
+title: SplIsSessionZero function
+author: windows-driver-content
+description: The SplIsSessionZero function determines whether a certain print job (print handle plus job ID) was issued in session zero.
+old-location: print\splissessionzero.htm
+old-project: print
+ms.assetid: 9d68a41d-0f2b-4cf0-92c6-8e05ce6b4378
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: spoolfnc_8fd112f0-f2bf-4a33-8411-c1ce7c620390.xml, winsplp/SplIsSessionZero, print.splissessionzero, SplIsSessionZero, SplIsSessionZero function [Print Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: winsplp.h
+req.include-header: Winsplp.h
+req.target-type: Desktop
+req.target-min-winverclnt: This function is available in Windows XP and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Spoolss.lib
+req.dll: Spoolss.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Spoolss.dll
+apiname:
+-	SplIsSessionZero
+product: Windows
+targetos: Windows
+req.typenames: NOTIFICATION_CONFIG_FLAGS
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.IoQueueWorkItemEx
-title : IoQueueWorkItemEx function
-author : windows-driver-content
-description : The IoQueueWorkItemEx routine associates a WorkItemEx routine with a work item, and it inserts the work item into a queue for later processing by a system worker thread.
-old-location : kernel\ioqueueworkitemex.htm
-old-project : kernel
-ms.assetid : 277a6e13-dc2d-4170-a141-9df5b93eb504
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/IoQueueWorkItemEx, IoQueueWorkItemEx, kernel.ioqueueworkitemex, IoQueueWorkItemEx routine [Kernel-Mode Driver Architecture], k104_e14fae9d-5b8c-4683-8226-8694de253b64.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.IoQueueWorkItemEx
+title: IoQueueWorkItemEx function
+author: windows-driver-content
+description: The IoQueueWorkItemEx routine associates a WorkItemEx routine with a work item, and it inserts the work item into a queue for later processing by a system worker thread.
+old-location: kernel\ioqueueworkitemex.htm
+old-project: kernel
+ms.assetid: 277a6e13-dc2d-4170-a141-9df5b93eb504
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/IoQueueWorkItemEx, IoQueueWorkItemEx, kernel.ioqueueworkitemex, IoQueueWorkItemEx routine [Kernel-Mode Driver Architecture], k104_e14fae9d-5b8c-4683-8226-8694de253b64.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoQueueWorkItemEx
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IPnpCallbackHardware2.OnReleaseHardware
-title : IPnpCallbackHardware2::OnReleaseHardware method
-author : windows-driver-content
-description : The OnReleaseHardware method performs operations that are needed when a device is no longer accessible.
-old-location : wdf\ipnpcallbackhardware2_onreleasehardware.htm
-old-project : wdf
-ms.assetid : 652B92C2-EF04-482A-BB57-9F64F947EE4F
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : IPnpCallbackHardware2 interface, OnReleaseHardware method, umdf.ipnpcallbackhardware2_onreleasehardware, OnReleaseHardware method, IPnpCallbackHardware2 interface, IPnpCallbackHardware2::OnReleaseHardware, OnReleaseHardware, wudfddi/IPnpCallbackHardware2::OnReleaseHardware, IPnpCallbackHardware2, wdf.ipnpcallbackhardware2_onreleasehardware, OnReleaseHardware method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.11
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IPnpCallbackHardware2.OnReleaseHardware
+title: IPnpCallbackHardware2::OnReleaseHardware method
+author: windows-driver-content
+description: The OnReleaseHardware method performs operations that are needed when a device is no longer accessible.
+old-location: wdf\ipnpcallbackhardware2_onreleasehardware.htm
+old-project: wdf
+ms.assetid: 652B92C2-EF04-482A-BB57-9F64F947EE4F
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: IPnpCallbackHardware2 interface, OnReleaseHardware method, umdf.ipnpcallbackhardware2_onreleasehardware, OnReleaseHardware method, IPnpCallbackHardware2 interface, IPnpCallbackHardware2::OnReleaseHardware, OnReleaseHardware, wudfddi/IPnpCallbackHardware2::OnReleaseHardware, IPnpCallbackHardware2, wdf.ipnpcallbackhardware2_onreleasehardware, OnReleaseHardware method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.11
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Wudfddi.h
+apiname:
+-	IPnpCallbackHardware2.OnReleaseHardware
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

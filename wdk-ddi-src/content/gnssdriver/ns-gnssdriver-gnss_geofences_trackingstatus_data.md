@@ -1,41 +1,46 @@
 ---
-UID : NS:gnssdriver.GNSS_GEOFENCES_TRACKINGSTATUS_DATA
-title : GNSS_GEOFENCES_TRACKINGSTATUS_DATA
-author : windows-driver-content
-description : This structure is used by the GNSS engine to notify of any changes in the tracking status while tracking a set of previously created geofences.
-old-location : sensors\gnss_geofences_trackingstatus_data.htm
-old-project : sensors
-ms.assetid : 65E59305-B1D9-4255-926A-A72F3B4887AF
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : GNSS_GEOFENCES_TRACKINGSTATUS_DATA structure [Sensor Devices], sensors.gnss_geofences_trackingstatus_data, *PGNSS_GEOFENCES_TRACKINGSTATUS_DATA, gnssdriver/PGNSS_GEOFENCES_TRACKINGSTATUS_DATA, PGNSS_GEOFENCES_TRACKINGSTATUS_DATA structure pointer [Sensor Devices], PGNSS_GEOFENCES_TRACKINGSTATUS_DATA, GNSS_GEOFENCES_TRACKINGSTATUS_DATA, gnssdriver/GNSS_GEOFENCES_TRACKINGSTATUS_DATA
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : gnssdriver.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PGNSS_GEOFENCES_TRACKINGSTATUS_DATA, GNSS_GEOFENCES_TRACKINGSTATUS_DATA"
+UID: NS:gnssdriver.GNSS_GEOFENCES_TRACKINGSTATUS_DATA
+title: GNSS_GEOFENCES_TRACKINGSTATUS_DATA
+author: windows-driver-content
+description: This structure is used by the GNSS engine to notify of any changes in the tracking status while tracking a set of previously created geofences.
+old-location: sensors\gnss_geofences_trackingstatus_data.htm
+old-project: sensors
+ms.assetid: 65E59305-B1D9-4255-926A-A72F3B4887AF
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: GNSS_GEOFENCES_TRACKINGSTATUS_DATA structure [Sensor Devices], sensors.gnss_geofences_trackingstatus_data, *PGNSS_GEOFENCES_TRACKINGSTATUS_DATA, gnssdriver/PGNSS_GEOFENCES_TRACKINGSTATUS_DATA, PGNSS_GEOFENCES_TRACKINGSTATUS_DATA structure pointer [Sensor Devices], PGNSS_GEOFENCES_TRACKINGSTATUS_DATA, GNSS_GEOFENCES_TRACKINGSTATUS_DATA, gnssdriver/GNSS_GEOFENCES_TRACKINGSTATUS_DATA
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: gnssdriver.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	gnssdriver.h
+apiname:
+-	GNSS_GEOFENCES_TRACKINGSTATUS_DATA
+product: Windows
+targetos: Windows
+req.typenames: "*PGNSS_GEOFENCES_TRACKINGSTATUS_DATA, GNSS_GEOFENCES_TRACKINGSTATUS_DATA"
 ---
 
 # GNSS_GEOFENCES_TRACKINGSTATUS_DATA structure

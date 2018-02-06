@@ -1,42 +1,47 @@
 ---
-UID : NF:winsplp.RouterFreePrinterNotifyInfo
-title : RouterFreePrinterNotifyInfo function
-author : windows-driver-content
-description : The print spooler's RouterFreePrinterNotifyInfo function deallocates a specified PRINTER_NOTIFY_INFO structure and its associated PRINTER_NOTIFY_INFO_DATA structure array.
-old-location : print\routerfreeprinternotifyinfo.htm
-old-project : print
-ms.assetid : 11beef0b-061a-4d73-b723-d0214f479503
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : winsplp/RouterFreePrinterNotifyInfo, spoolfnc_7ae0296f-8bfe-4ee3-b621-1d1582deafdf.xml, RouterFreePrinterNotifyInfo function [Print Devices], RouterFreePrinterNotifyInfo, print.routerfreeprinternotifyinfo
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : winsplp.h
-req.include-header : Winsplp.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Spoolss.lib
-req.dll : Spoolss.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NOTIFICATION_CONFIG_FLAGS
-req.product : Windows 10 or later.
+UID: NF:winsplp.RouterFreePrinterNotifyInfo
+title: RouterFreePrinterNotifyInfo function
+author: windows-driver-content
+description: The print spooler's RouterFreePrinterNotifyInfo function deallocates a specified PRINTER_NOTIFY_INFO structure and its associated PRINTER_NOTIFY_INFO_DATA structure array.
+old-location: print\routerfreeprinternotifyinfo.htm
+old-project: print
+ms.assetid: 11beef0b-061a-4d73-b723-d0214f479503
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: winsplp/RouterFreePrinterNotifyInfo, spoolfnc_7ae0296f-8bfe-4ee3-b621-1d1582deafdf.xml, RouterFreePrinterNotifyInfo function [Print Devices], RouterFreePrinterNotifyInfo, print.routerfreeprinternotifyinfo
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: winsplp.h
+req.include-header: Winsplp.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Spoolss.lib
+req.dll: Spoolss.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Spoolss.dll
+apiname:
+-	RouterFreePrinterNotifyInfo
+product: Windows
+targetos: Windows
+req.typenames: NOTIFICATION_CONFIG_FLAGS
+req.product: Windows 10 or later.
 ---
 
 

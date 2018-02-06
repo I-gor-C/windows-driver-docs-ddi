@@ -1,42 +1,47 @@
 ---
-UID : NS:wdm._PCI_EXPRESS_ROOT_ERROR_STATUS
-title : "_PCI_EXPRESS_ROOT_ERROR_STATUS"
-author : windows-driver-content
-description : The PCI_EXPRESS_ROOT_ERROR_STATUS structure describes a PCI Express (PCIe) root error status register of a PCIe advanced error reporting capability structure.
-old-location : pci\pci_express_root_error_status.htm
-old-project : PCI
-ms.assetid : 1af0c877-e634-474e-9b4d-a28991fb3f66
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : "*PPCI_EXPRESS_ROOT_ERROR_STATUS, PCI.pci_express_root_error_status, wdm/PPCI_EXPRESS_ROOT_ERROR_STATUS, PCI_EXPRESS_ROOT_ERROR_STATUS, PPCI_EXPRESS_ROOT_ERROR_STATUS, pci_struct_8b730780-dc4a-4873-8efd-fb6df47f7c8f.xml, _PCI_EXPRESS_ROOT_ERROR_STATUS, wdm/PCI_EXPRESS_ROOT_ERROR_STATUS, PPCI_EXPRESS_ROOT_ERROR_STATUS union pointer [Buses], PCI_EXPRESS_ROOT_ERROR_STATUS union [Buses]"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : Ntddk.h, Wdm.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPCI_EXPRESS_ROOT_ERROR_STATUS, PCI_EXPRESS_ROOT_ERROR_STATUS"
-req.product : Windows 10 or later.
+UID: NS:wdm._PCI_EXPRESS_ROOT_ERROR_STATUS
+title: "_PCI_EXPRESS_ROOT_ERROR_STATUS"
+author: windows-driver-content
+description: The PCI_EXPRESS_ROOT_ERROR_STATUS structure describes a PCI Express (PCIe) root error status register of a PCIe advanced error reporting capability structure.
+old-location: pci\pci_express_root_error_status.htm
+old-project: PCI
+ms.assetid: 1af0c877-e634-474e-9b4d-a28991fb3f66
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: "*PPCI_EXPRESS_ROOT_ERROR_STATUS, PCI.pci_express_root_error_status, wdm/PPCI_EXPRESS_ROOT_ERROR_STATUS, PCI_EXPRESS_ROOT_ERROR_STATUS, PPCI_EXPRESS_ROOT_ERROR_STATUS, pci_struct_8b730780-dc4a-4873-8efd-fb6df47f7c8f.xml, _PCI_EXPRESS_ROOT_ERROR_STATUS, wdm/PCI_EXPRESS_ROOT_ERROR_STATUS, PPCI_EXPRESS_ROOT_ERROR_STATUS union pointer [Buses], PCI_EXPRESS_ROOT_ERROR_STATUS union [Buses]"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: Ntddk.h, Wdm.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdm.h
+apiname:
+-	PCI_EXPRESS_ROOT_ERROR_STATUS
+product: Windows
+targetos: Windows
+req.typenames: "*PPCI_EXPRESS_ROOT_ERROR_STATUS, PCI_EXPRESS_ROOT_ERROR_STATUS"
+req.product: Windows 10 or later.
 ---
 
 # _PCI_EXPRESS_ROOT_ERROR_STATUS structure

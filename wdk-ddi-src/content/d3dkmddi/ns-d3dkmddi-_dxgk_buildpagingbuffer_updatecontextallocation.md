@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGK_BUILDPAGINGBUFFER_UPDATECONTEXTALLOCATION
-title : "_DXGK_BUILDPAGINGBUFFER_UPDATECONTEXTALLOCATION"
-author : windows-driver-content
-description : DXGK_BUILDPAGINGBUFFER_UPDATECONTEXTALLOCATION describes an operation used to update the content of a context or device allocation.
-old-location : display\dxgk_buildpagingbuffer_updatecontextallocation.htm
-old-project : display
-ms.assetid : DA23251C-E901-48A0-9B58-458622DE8CF0
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3dkmddi/DXGK_BUILDPAGINGBUFFER_UPDATECONTEXTALLOCATION, DXGK_BUILDPAGINGBUFFER_UPDATECONTEXTALLOCATION structure [Display Devices], DXGK_BUILDPAGINGBUFFER_UPDATECONTEXTALLOCATION, display.dxgk_buildpagingbuffer_updatecontextallocation, _DXGK_BUILDPAGINGBUFFER_UPDATECONTEXTALLOCATION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_BUILDPAGINGBUFFER_UPDATECONTEXTALLOCATION
+UID: NS:d3dkmddi._DXGK_BUILDPAGINGBUFFER_UPDATECONTEXTALLOCATION
+title: "_DXGK_BUILDPAGINGBUFFER_UPDATECONTEXTALLOCATION"
+author: windows-driver-content
+description: DXGK_BUILDPAGINGBUFFER_UPDATECONTEXTALLOCATION describes an operation used to update the content of a context or device allocation.
+old-location: display\dxgk_buildpagingbuffer_updatecontextallocation.htm
+old-project: display
+ms.assetid: DA23251C-E901-48A0-9B58-458622DE8CF0
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3dkmddi/DXGK_BUILDPAGINGBUFFER_UPDATECONTEXTALLOCATION, DXGK_BUILDPAGINGBUFFER_UPDATECONTEXTALLOCATION structure [Display Devices], DXGK_BUILDPAGINGBUFFER_UPDATECONTEXTALLOCATION, display.dxgk_buildpagingbuffer_updatecontextallocation, _DXGK_BUILDPAGINGBUFFER_UPDATECONTEXTALLOCATION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DXGK_BUILDPAGINGBUFFER_UPDATECONTEXTALLOCATION
+product: Windows
+targetos: Windows
+req.typenames: DXGK_BUILDPAGINGBUFFER_UPDATECONTEXTALLOCATION
 ---
 
 # _DXGK_BUILDPAGINGBUFFER_UPDATECONTEXTALLOCATION structure

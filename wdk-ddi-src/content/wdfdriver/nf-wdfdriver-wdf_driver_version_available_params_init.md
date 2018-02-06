@@ -1,42 +1,47 @@
 ---
-UID : NF:wdfdriver.WDF_DRIVER_VERSION_AVAILABLE_PARAMS_INIT
-title : WDF_DRIVER_VERSION_AVAILABLE_PARAMS_INIT function
-author : windows-driver-content
-description : The WDF_DRIVER_VERSION_AVAILABLE_PARAMS_INIT function initializes a WDF_DRIVER_VERSION_AVAILABLE_PARAMS structure.
-old-location : wdf\wdf_driver_version_available_params_init.htm
-old-project : wdf
-ms.assetid : aba3844e-745d-4d2c-9855-0535f53d7b0a
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdfdriver/WDF_DRIVER_VERSION_AVAILABLE_PARAMS_INIT, WDF_DRIVER_VERSION_AVAILABLE_PARAMS_INIT function, kmdf.wdf_driver_version_available_params_init, WDF_DRIVER_VERSION_AVAILABLE_PARAMS_INIT, wdf.wdf_driver_version_available_params_init, DFDriverObjectRef_9638f416-7d77-45af-8e87-07c51198fb05.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfdriver.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_DRIVER_INIT_FLAGS
-req.product : Windows 10 or later.
+UID: NF:wdfdriver.WDF_DRIVER_VERSION_AVAILABLE_PARAMS_INIT
+title: WDF_DRIVER_VERSION_AVAILABLE_PARAMS_INIT function
+author: windows-driver-content
+description: The WDF_DRIVER_VERSION_AVAILABLE_PARAMS_INIT function initializes a WDF_DRIVER_VERSION_AVAILABLE_PARAMS structure.
+old-location: wdf\wdf_driver_version_available_params_init.htm
+old-project: wdf
+ms.assetid: aba3844e-745d-4d2c-9855-0535f53d7b0a
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdfdriver/WDF_DRIVER_VERSION_AVAILABLE_PARAMS_INIT, WDF_DRIVER_VERSION_AVAILABLE_PARAMS_INIT function, kmdf.wdf_driver_version_available_params_init, WDF_DRIVER_VERSION_AVAILABLE_PARAMS_INIT, wdf.wdf_driver_version_available_params_init, DFDriverObjectRef_9638f416-7d77-45af-8e87-07c51198fb05.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfdriver.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfdriver.h
+apiname:
+-	WDF_DRIVER_VERSION_AVAILABLE_PARAMS_INIT
+product: Windows
+targetos: Windows
+req.typenames: WDF_DRIVER_INIT_FLAGS
+req.product: Windows 10 or later.
 ---
 
 

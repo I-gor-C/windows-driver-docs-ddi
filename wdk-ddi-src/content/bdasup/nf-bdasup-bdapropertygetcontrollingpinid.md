@@ -1,41 +1,47 @@
 ---
-UID : NF:bdasup.BdaPropertyGetControllingPinId
-title : BdaPropertyGetControllingPinId function
-author : windows-driver-content
-description : The BdaPropertyGetControllingPinId function retrieves the identifier of a pin on which to control the properties, methods, and events of a specific node.
-old-location : stream\bdapropertygetcontrollingpinid.htm
-old-project : stream
-ms.assetid : 3d4d4124-9c52-42f5-bc31-b924d9c15c36
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.bdapropertygetcontrollingpinid, BdaPropertyGetControllingPinId function [Streaming Media Devices], BdaPropertyGetControllingPinId, bdasup/BdaPropertyGetControllingPinId, bdaref_7f3a3695-4599-4b16-8a90-4ac171ab1ec0.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : bdasup.h
-req.include-header : Bdasup.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available on Microsoft Windows XP and later operating systems. This routine is available on the Windows 2000 platform only if Microsoft DirectX 9.0 and later is installed on that platform.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Bdasup.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KSP_BDA_NODE_PIN, *PKSP_BDA_NODE_PIN
+UID: NF:bdasup.BdaPropertyGetControllingPinId
+title: BdaPropertyGetControllingPinId function
+author: windows-driver-content
+description: The BdaPropertyGetControllingPinId function retrieves the identifier of a pin on which to control the properties, methods, and events of a specific node.
+old-location: stream\bdapropertygetcontrollingpinid.htm
+old-project: stream
+ms.assetid: 3d4d4124-9c52-42f5-bc31-b924d9c15c36
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.bdapropertygetcontrollingpinid, BdaPropertyGetControllingPinId function [Streaming Media Devices], BdaPropertyGetControllingPinId, bdasup/BdaPropertyGetControllingPinId, bdaref_7f3a3695-4599-4b16-8a90-4ac171ab1ec0.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: bdasup.h
+req.include-header: Bdasup.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available on Microsoft Windows XP and later operating systems. This routine is available on the Windows 2000 platform only if Microsoft DirectX 9.0 and later is installed on that platform.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Bdasup.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Bdasup.lib
+-	Bdasup.dll
+apiname:
+-	BdaPropertyGetControllingPinId
+product: Windows
+targetos: Windows
+req.typenames: KSP_BDA_NODE_PIN, *PKSP_BDA_NODE_PIN
 ---
 
 

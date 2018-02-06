@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfdevice.WdfDeviceInitSetPowerPageable
-title : WdfDeviceInitSetPowerPageable function
-author : windows-driver-content
-description : The WdfDeviceInitSetPowerPageable method informs the power manager that the driver must be able to access pageable data while the system is transitioning between a sleeping state and the working (S0) state.
-old-location : wdf\wdfdeviceinitsetpowerpageable.htm
-old-project : wdf
-ms.assetid : 3a216c35-f6b7-483f-a330-d0a66edb9205
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : DFDeviceObjectGeneralRef_704347eb-35c6-4735-bd2a-e6a988ff2896.xml, wdfdevice/WdfDeviceInitSetPowerPageable, PFN_WDFDEVICEINITSETPOWERPAGEABLE, WdfDeviceInitSetPowerPageable, wdf.wdfdeviceinitsetpowerpageable, WdfDeviceInitSetPowerPageable method, kmdf.wdfdeviceinitsetpowerpageable
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfdevice.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : ChildDeviceInitAPI, DeviceInitAPI, DriverCreate, KmdfIrql, KmdfIrql2, PdoDeviceInitAPI
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_STATE_NOTIFICATION_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfdevice.WdfDeviceInitSetPowerPageable
+title: WdfDeviceInitSetPowerPageable function
+author: windows-driver-content
+description: The WdfDeviceInitSetPowerPageable method informs the power manager that the driver must be able to access pageable data while the system is transitioning between a sleeping state and the working (S0) state.
+old-location: wdf\wdfdeviceinitsetpowerpageable.htm
+old-project: wdf
+ms.assetid: 3a216c35-f6b7-483f-a330-d0a66edb9205
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: DFDeviceObjectGeneralRef_704347eb-35c6-4735-bd2a-e6a988ff2896.xml, wdfdevice/WdfDeviceInitSetPowerPageable, PFN_WDFDEVICEINITSETPOWERPAGEABLE, WdfDeviceInitSetPowerPageable, wdf.wdfdeviceinitsetpowerpageable, WdfDeviceInitSetPowerPageable method, kmdf.wdfdeviceinitsetpowerpageable
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfdevice.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: ChildDeviceInitAPI, DeviceInitAPI, DriverCreate, KmdfIrql, KmdfIrql2, PdoDeviceInitAPI
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfDeviceInitSetPowerPageable
+product: Windows
+targetos: Windows
+req.typenames: WDF_STATE_NOTIFICATION_TYPE
+req.product: Windows 10 or later.
 ---
 
 

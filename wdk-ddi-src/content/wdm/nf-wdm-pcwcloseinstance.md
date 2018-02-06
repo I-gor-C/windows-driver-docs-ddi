@@ -1,38 +1,38 @@
 ---
-UID : NF:wdm.PcwCloseInstance
-title : PcwCloseInstance function
-author : windows-driver-content
-description : The PcwCloseInstance function closes the specified instance of the counter set.
-old-location : devtest\pcwcloseinstance.htm
-old-project : devtest
-ms.assetid : a577a116-9e5e-42d3-aac0-a6b90131ad9d
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : PcwCloseInstance
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 7 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.alt-api : PcwCloseInstance
-req.alt-loc : NtosKrnl.exe
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : <=APC_LEVEL
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.PcwCloseInstance
+title: PcwCloseInstance function
+author: windows-driver-content
+description: The PcwCloseInstance function closes the specified instance of the counter set.
+old-location: devtest\pcwcloseinstance.htm
+old-project: devtest
+ms.assetid: a577a116-9e5e-42d3-aac0-a6b90131ad9d
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: PcwCloseInstance
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 7 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.alt-api: PcwCloseInstance
+req.alt-loc: NtosKrnl.exe
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: <=APC_LEVEL
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

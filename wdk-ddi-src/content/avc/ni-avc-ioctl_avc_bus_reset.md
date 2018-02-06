@@ -1,41 +1,46 @@
 ---
-UID : NI:avc.IOCTL_AVC_BUS_RESET
-title : IOCTL_AVC_BUS_RESET
-author : windows-driver-content
-description : The IOCTL_AVC_BUS_RESET I/O control code allows the caller to complete any previous IOCTL_AVC_UPDATE_VIRTUAL_SUBUNIT_INFO and IOCTL_AVC_REMOVE_VIRTUAL_SUBUNIT_INFO control requests that did not use the AVC_SUBUNIT_ADDR_TRIGGERBUSRESET flag.
-old-location : stream\ioctl_avc_bus_reset.htm
-old-project : stream
-ms.assetid : 8f87ee5f-74bb-446f-8be3-214cc2c01c1b
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.ioctl_avc_bus_reset, IOCTL_AVC_BUS_RESET control code [Streaming Media Devices], IOCTL_AVC_BUS_RESET, avc/IOCTL_AVC_BUS_RESET, avcref_4be76d4b-17fe-4ae6-a078-ebb079499d55.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : avc.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : AVC_FUNCTION
+UID: NI:avc.IOCTL_AVC_BUS_RESET
+title: IOCTL_AVC_BUS_RESET
+author: windows-driver-content
+description: The IOCTL_AVC_BUS_RESET I/O control code allows the caller to complete any previous IOCTL_AVC_UPDATE_VIRTUAL_SUBUNIT_INFO and IOCTL_AVC_REMOVE_VIRTUAL_SUBUNIT_INFO control requests that did not use the AVC_SUBUNIT_ADDR_TRIGGERBUSRESET flag.
+old-location: stream\ioctl_avc_bus_reset.htm
+old-project: stream
+ms.assetid: 8f87ee5f-74bb-446f-8be3-214cc2c01c1b
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.ioctl_avc_bus_reset, IOCTL_AVC_BUS_RESET control code [Streaming Media Devices], IOCTL_AVC_BUS_RESET, avc/IOCTL_AVC_BUS_RESET, avcref_4be76d4b-17fe-4ae6-a078-ebb079499d55.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: avc.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	avc.h
+apiname:
+-	IOCTL_AVC_BUS_RESET
+product: Windows
+targetos: Windows
+req.typenames: AVC_FUNCTION
 ---
 
 # IOCTL_AVC_BUS_RESET IOCTL

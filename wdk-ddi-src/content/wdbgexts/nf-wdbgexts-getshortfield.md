@@ -1,42 +1,47 @@
 ---
-UID : NF:wdbgexts.GetShortField
-title : GetShortField function
-author : windows-driver-content
-description : The GetShortField function reads the value of a member in a structure if its size is less than or equal to 8 bytes, or initializes a structure so it can be read later.
-old-location : debugger\getshortfield.htm
-old-project : debugger
-ms.assetid : f5f00e88-b758-4f37-9fe5-5db8f20835b1
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : GetShortField, debugger.getshortfield, GetShortField function [Windows Debugging], WdbgExts_Ref_ef67af78-e72f-440c-9ef3-d84b8cca12dc.xml, wdbgexts/GetShortField
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdbgexts.h
-req.include-header : Wdbgexts.h, Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXT_TDOP
-req.product : Windows 10 or later.
+UID: NF:wdbgexts.GetShortField
+title: GetShortField function
+author: windows-driver-content
+description: The GetShortField function reads the value of a member in a structure if its size is less than or equal to 8 bytes, or initializes a structure so it can be read later.
+old-location: debugger\getshortfield.htm
+old-project: debugger
+ms.assetid: f5f00e88-b758-4f37-9fe5-5db8f20835b1
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: GetShortField, debugger.getshortfield, GetShortField function [Windows Debugging], WdbgExts_Ref_ef67af78-e72f-440c-9ef3-d84b8cca12dc.xml, wdbgexts/GetShortField
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdbgexts.h
+req.include-header: Wdbgexts.h, Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdbgexts.h
+apiname:
+-	GetShortField
+product: Windows
+targetos: Windows
+req.typenames: EXT_TDOP
+req.product: Windows 10 or later.
 ---
 
 

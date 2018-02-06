@@ -1,42 +1,47 @@
 ---
-UID : NS:sensorscx._SENSOR_CONTROLLER_CONFIG
-title : "_SENSOR_CONTROLLER_CONFIG"
-author : windows-driver-content
-description : This structure contains pointers to callback functions that must be implemented by the driver, and passed on to the class extension to call.
-old-location : sensors\sensor_controller_config.htm
-old-project : sensors
-ms.assetid : EEAC4D16-D0B8-4147-AD2D-7EE60853EBDD
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : PSENSOR_CONTROLLER_CONFIG, PSENSOR_CONTROLLER_CONFIG structure pointer [Sensor Devices], sensorscx/PSENSOR_CONTROLLER_CONFIG, SENSOR_CONTROLLER_CONFIG, SENSOR_CONTROLLER_CONFIG structure [Sensor Devices], sensorscx/SENSOR_CONTROLLER_CONFIG, *PSENSOR_CONTROLLER_CONFIG, sensors.sensor_controller_config, _SENSOR_CONTROLLER_CONFIG
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : sensorscx.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8.1
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SENSOR_CONTROLLER_CONFIG, *PSENSOR_CONTROLLER_CONFIG
-req.product : Windows 10 or later.
+UID: NS:sensorscx._SENSOR_CONTROLLER_CONFIG
+title: "_SENSOR_CONTROLLER_CONFIG"
+author: windows-driver-content
+description: This structure contains pointers to callback functions that must be implemented by the driver, and passed on to the class extension to call.
+old-location: sensors\sensor_controller_config.htm
+old-project: sensors
+ms.assetid: EEAC4D16-D0B8-4147-AD2D-7EE60853EBDD
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: PSENSOR_CONTROLLER_CONFIG, PSENSOR_CONTROLLER_CONFIG structure pointer [Sensor Devices], sensorscx/PSENSOR_CONTROLLER_CONFIG, SENSOR_CONTROLLER_CONFIG, SENSOR_CONTROLLER_CONFIG structure [Sensor Devices], sensorscx/SENSOR_CONTROLLER_CONFIG, *PSENSOR_CONTROLLER_CONFIG, sensors.sensor_controller_config, _SENSOR_CONTROLLER_CONFIG
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: sensorscx.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8.1
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	SensorsCx.h
+apiname:
+-	SENSOR_CONTROLLER_CONFIG
+product: Windows
+targetos: Windows
+req.typenames: SENSOR_CONTROLLER_CONFIG, *PSENSOR_CONTROLLER_CONFIG
+req.product: Windows 10 or later.
 ---
 
 # _SENSOR_CONTROLLER_CONFIG structure

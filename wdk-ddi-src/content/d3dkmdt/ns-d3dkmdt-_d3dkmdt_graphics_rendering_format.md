@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmdt._D3DKMDT_GRAPHICS_RENDERING_FORMAT
-title : "_D3DKMDT_GRAPHICS_RENDERING_FORMAT"
-author : windows-driver-content
-description : The D3DKMDT_GRAPHICS_RENDERING_FORMAT structure contains information about a primary rendering surface.
-old-location : display\d3dkmdt_graphics_rendering_format.htm
-old-project : display
-ms.assetid : 954cc3f6-731f-4c55-bf61-63b5d48248c0
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DKMDT_GRAPHICS_RENDERING_FORMAT, d3dkmdt/D3DKMDT_GRAPHICS_RENDERING_FORMAT, D3DKMDT_GRAPHICS_RENDERING_FORMAT structure [Display Devices], DmStructs_c51e5886-bbd0-48a2-8be7-98d10b13fc2d.xml, display.d3dkmdt_graphics_rendering_format, _D3DKMDT_GRAPHICS_RENDERING_FORMAT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmdt.h
-req.include-header : D3dkmdt.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMDT_GRAPHICS_RENDERING_FORMAT
+UID: NS:d3dkmdt._D3DKMDT_GRAPHICS_RENDERING_FORMAT
+title: "_D3DKMDT_GRAPHICS_RENDERING_FORMAT"
+author: windows-driver-content
+description: The D3DKMDT_GRAPHICS_RENDERING_FORMAT structure contains information about a primary rendering surface.
+old-location: display\d3dkmdt_graphics_rendering_format.htm
+old-project: display
+ms.assetid: 954cc3f6-731f-4c55-bf61-63b5d48248c0
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DKMDT_GRAPHICS_RENDERING_FORMAT, d3dkmdt/D3DKMDT_GRAPHICS_RENDERING_FORMAT, D3DKMDT_GRAPHICS_RENDERING_FORMAT structure [Display Devices], DmStructs_c51e5886-bbd0-48a2-8be7-98d10b13fc2d.xml, display.d3dkmdt_graphics_rendering_format, _D3DKMDT_GRAPHICS_RENDERING_FORMAT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmdt.h
+req.include-header: D3dkmdt.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmdt.h
+apiname:
+-	D3DKMDT_GRAPHICS_RENDERING_FORMAT
+product: Windows
+targetos: Windows
+req.typenames: D3DKMDT_GRAPHICS_RENDERING_FORMAT
 ---
 
 # _D3DKMDT_GRAPHICS_RENDERING_FORMAT structure

@@ -1,41 +1,46 @@
 ---
-UID : NC:dot11wdi.MINIPORT_WDI_TAL_TXRX_ADD_PORT
-title : MINIPORT_WDI_TAL_TXRX_ADD_PORT
-author : windows-driver-content
-description : The MiniportWdiTalTxRxAddPort handler function notifies the datapath components of the creation of a new virtual port.
-old-location : netvista\miniportwditaltxrxaddport.htm
-old-project : netvista
-ms.assetid : D3006A0B-B0E0-4FEA-864A-FA4B75594FB0
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.miniportwditaltxrxaddport, MiniportWdiTalTxRxAddPort callback function [Network Drivers Starting with Windows Vista], MiniportWdiTalTxRxAddPort, MINIPORT_WDI_TAL_TXRX_ADD_PORT, MINIPORT_WDI_TAL_TXRX_ADD_PORT, dot11wdi/MiniportWdiTalTxRxAddPort
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : dot11wdi.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SYNTH_STATS, *PSYNTH_STATS
+UID: NC:dot11wdi.MINIPORT_WDI_TAL_TXRX_ADD_PORT
+title: MINIPORT_WDI_TAL_TXRX_ADD_PORT
+author: windows-driver-content
+description: The MiniportWdiTalTxRxAddPort handler function notifies the datapath components of the creation of a new virtual port.
+old-location: netvista\miniportwditaltxrxaddport.htm
+old-project: netvista
+ms.assetid: D3006A0B-B0E0-4FEA-864A-FA4B75594FB0
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.miniportwditaltxrxaddport, MiniportWdiTalTxRxAddPort callback function [Network Drivers Starting with Windows Vista], MiniportWdiTalTxRxAddPort, MINIPORT_WDI_TAL_TXRX_ADD_PORT, MINIPORT_WDI_TAL_TXRX_ADD_PORT, dot11wdi/MiniportWdiTalTxRxAddPort
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: dot11wdi.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	dot11wdi.h
+apiname:
+-	MiniportWdiTalTxRxAddPort
+product: Windows
+targetos: Windows
+req.typenames: SYNTH_STATS, *PSYNTH_STATS
 ---
 
 

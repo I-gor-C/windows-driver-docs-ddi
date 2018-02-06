@@ -1,41 +1,46 @@
 ---
-UID : NC:ntddk.PSHED_PI_WRITE_ERROR_RECORD
-title : PSHED_PI_WRITE_ERROR_RECORD
-author : windows-driver-content
-description : A PSHED plug-in's WriteErrorRecord callback function writes an error record to the system's persistent data storage.
-old-location : whea\writeerrorrecord.htm
-old-project : whea
-ms.assetid : 4800a0f9-29ee-4631-aee8-5a4924a08f55
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : whea.writeerrorrecord, WriteErrorRecord callback function [WHEA Drivers and Applications], WriteErrorRecord, PSHED_PI_WRITE_ERROR_RECORD, PSHED_PI_WRITE_ERROR_RECORD, ntddk/WriteErrorRecord, whearef_3a405d7d-3427-4c22-919e-7cbab5ea4f19.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= HIGH_LEVEL (See Remarks section)"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PFILTER_INITIALIZATION_DATA, FILTER_INITIALIZATION_DATA"
+UID: NC:ntddk.PSHED_PI_WRITE_ERROR_RECORD
+title: PSHED_PI_WRITE_ERROR_RECORD
+author: windows-driver-content
+description: A PSHED plug-in's WriteErrorRecord callback function writes an error record to the system's persistent data storage.
+old-location: whea\writeerrorrecord.htm
+old-project: whea
+ms.assetid: 4800a0f9-29ee-4631-aee8-5a4924a08f55
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: whea.writeerrorrecord, WriteErrorRecord callback function [WHEA Drivers and Applications], WriteErrorRecord, PSHED_PI_WRITE_ERROR_RECORD, PSHED_PI_WRITE_ERROR_RECORD, ntddk/WriteErrorRecord, whearef_3a405d7d-3427-4c22-919e-7cbab5ea4f19.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= HIGH_LEVEL (See Remarks section)"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ntddk.h
+apiname:
+-	WriteErrorRecord
+product: Windows
+targetos: Windows
+req.typenames: "*PFILTER_INITIALIZATION_DATA, FILTER_INITIALIZATION_DATA"
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.MmGetMdlByteCount
-title : MmGetMdlByteCount macro
-author : windows-driver-content
-description : The MmGetMdlByteCount macro returns the length, in bytes, of the buffer described by the specified MDL.
-old-location : kernel\mmgetmdlbytecount.htm
-old-project : Benchmark
-ms.assetid : a0493418-2ce2-4917-bf9f-e4dc726a3847
-ms.author : windowsdriverdev
-ms.date : 1/12/2018
-ms.keywords : k106_f750d750-c5ca-44cf-b8f1-f52d2eb8bc27.xml, MmGetMdlByteCount, MmGetMdlByteCount macro [Tools], kernel.mmgetmdlbytecount, wdm/MmGetMdlByteCount
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : macro
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : MdlAfterReqCompletedIntIoctlA, MdlAfterReqCompletedIoctlA, MdlAfterReqCompletedReadA, MdlAfterReqCompletedWriteA
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wdm.h
-req.dll : 
-req.irql : Any level (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.MmGetMdlByteCount
+title: MmGetMdlByteCount macro
+author: windows-driver-content
+description: The MmGetMdlByteCount macro returns the length, in bytes, of the buffer described by the specified MDL.
+old-location: kernel\mmgetmdlbytecount.htm
+old-project: Benchmark
+ms.assetid: a0493418-2ce2-4917-bf9f-e4dc726a3847
+ms.author: windowsdriverdev
+ms.date: 1/12/2018
+ms.keywords: k106_f750d750-c5ca-44cf-b8f1-f52d2eb8bc27.xml, MmGetMdlByteCount, MmGetMdlByteCount macro [Tools], kernel.mmgetmdlbytecount, wdm/MmGetMdlByteCount
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: macro
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: MdlAfterReqCompletedIntIoctlA, MdlAfterReqCompletedIoctlA, MdlAfterReqCompletedReadA, MdlAfterReqCompletedWriteA
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wdm.h
+req.dll: 
+req.irql: Any level (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	MmGetMdlByteCount
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

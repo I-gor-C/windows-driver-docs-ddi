@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsInitializeDeviceProfile
-title : KsInitializeDeviceProfile function
-author : windows-driver-content
-description : The KsInitializeDeviceProfile API must be called by all miniport drivers to initialize the profile store and publish the device profiles.
-old-location : stream\ksinitializedeviceprofile.htm
-old-project : stream
-ms.assetid : E6AD21CE-C218-439F-A8F7-8E1AAF307A57
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KsInitializeDeviceProfile, KsInitializeDeviceProfile function [Streaming Media Devices], ks/KsInitializeDeviceProfile, stream.ksinitializedeviceprofile
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ksmedia.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsInitializeDeviceProfile
+title: KsInitializeDeviceProfile function
+author: windows-driver-content
+description: The KsInitializeDeviceProfile API must be called by all miniport drivers to initialize the profile store and publish the device profiles.
+old-location: stream\ksinitializedeviceprofile.htm
+old-project: stream
+ms.assetid: E6AD21CE-C218-439F-A8F7-8E1AAF307A57
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KsInitializeDeviceProfile, KsInitializeDeviceProfile function [Streaming Media Devices], ks/KsInitializeDeviceProfile, stream.ksinitializedeviceprofile
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ksmedia.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ks.lib
+-	ks.dll
+apiname:
+-	KsInitializeDeviceProfile
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

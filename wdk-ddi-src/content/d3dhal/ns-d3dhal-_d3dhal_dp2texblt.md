@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dhal._D3DHAL_DP2TEXBLT
-title : "_D3DHAL_DP2TEXBLT"
-author : windows-driver-content
-description : The D3DHAL_DP2TEXBLT structure is used for texture blts when D3dDrawPrimitives2 responds to the D3DDP2OP_TEXBLT command token.
-old-location : display\d3dhal_dp2texblt.htm
-old-project : display
-ms.assetid : e240fb49-26e6-4d30-b579-03824ac8b67f
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : "_D3DHAL_DP2TEXBLT, d3dstrct_80dddffa-3403-4e1e-a1cc-1cbbfdad09a8.xml, LPD3DHAL_DP2TEXBLT structure pointer [Display Devices], *LPD3DHAL_DP2TEXBLT, D3DHAL_DP2TEXBLT structure [Display Devices], D3DHAL_DP2TEXBLT, d3dhal/LPD3DHAL_DP2TEXBLT, display.d3dhal_dp2texblt, d3dhal/D3DHAL_DP2TEXBLT, LPD3DHAL_DP2TEXBLT"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dhal.h
-req.include-header : D3dhal.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DHAL_DP2TEXBLT
+UID: NS:d3dhal._D3DHAL_DP2TEXBLT
+title: "_D3DHAL_DP2TEXBLT"
+author: windows-driver-content
+description: The D3DHAL_DP2TEXBLT structure is used for texture blts when D3dDrawPrimitives2 responds to the D3DDP2OP_TEXBLT command token.
+old-location: display\d3dhal_dp2texblt.htm
+old-project: display
+ms.assetid: e240fb49-26e6-4d30-b579-03824ac8b67f
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: "_D3DHAL_DP2TEXBLT, d3dstrct_80dddffa-3403-4e1e-a1cc-1cbbfdad09a8.xml, LPD3DHAL_DP2TEXBLT structure pointer [Display Devices], *LPD3DHAL_DP2TEXBLT, D3DHAL_DP2TEXBLT structure [Display Devices], D3DHAL_DP2TEXBLT, d3dhal/LPD3DHAL_DP2TEXBLT, display.d3dhal_dp2texblt, d3dhal/D3DHAL_DP2TEXBLT, LPD3DHAL_DP2TEXBLT"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dhal.h
+req.include-header: D3dhal.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dhal.h
+apiname:
+-	D3DHAL_DP2TEXBLT
+product: Windows
+targetos: Windows
+req.typenames: D3DHAL_DP2TEXBLT
 ---
 
 # _D3DHAL_DP2TEXBLT structure

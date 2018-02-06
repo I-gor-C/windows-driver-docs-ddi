@@ -1,41 +1,46 @@
 ---
-UID : NC:ndis.NDIS_SWITCH_REPORT_FILTERED_NET_BUFFER_LISTS
-title : NDIS_SWITCH_REPORT_FILTERED_NET_BUFFER_LISTS
-author : windows-driver-content
-description : The ReportFilteredNetBufferLists function reports on one or more network packets that were dropped or excluded from port delivery by the extensible switch extension. Each network packet is defined through a NET_BUFFER_LIST structure.
-old-location : netvista\reportfilterednetbufferlists.htm
-old-project : netvista
-ms.assetid : 06E7FC94-628D-4601-8173-F118043A13FB
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.reportfilterednetbufferlists, ReportFilteredNetBufferLists callback function [Network Drivers Starting with Windows Vista], ReportFilteredNetBufferLists, NDIS_SWITCH_REPORT_FILTERED_NET_BUFFER_LISTS, NDIS_SWITCH_REPORT_FILTERED_NET_BUFFER_LISTS, ndis/ReportFilteredNetBufferLists
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported in NDIS 6.30 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
+UID: NC:ndis.NDIS_SWITCH_REPORT_FILTERED_NET_BUFFER_LISTS
+title: NDIS_SWITCH_REPORT_FILTERED_NET_BUFFER_LISTS
+author: windows-driver-content
+description: The ReportFilteredNetBufferLists function reports on one or more network packets that were dropped or excluded from port delivery by the extensible switch extension. Each network packet is defined through a NET_BUFFER_LIST structure.
+old-location: netvista\reportfilterednetbufferlists.htm
+old-project: netvista
+ms.assetid: 06E7FC94-628D-4601-8173-F118043A13FB
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.reportfilterednetbufferlists, ReportFilteredNetBufferLists callback function [Network Drivers Starting with Windows Vista], ReportFilteredNetBufferLists, NDIS_SWITCH_REPORT_FILTERED_NET_BUFFER_LISTS, NDIS_SWITCH_REPORT_FILTERED_NET_BUFFER_LISTS, ndis/ReportFilteredNetBufferLists
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported in NDIS 6.30 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ndis.h
+apiname:
+-	ReportFilteredNetBufferLists
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 

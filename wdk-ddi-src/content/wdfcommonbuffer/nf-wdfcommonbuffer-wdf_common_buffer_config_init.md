@@ -1,42 +1,47 @@
 ---
-UID : NF:wdfcommonbuffer.WDF_COMMON_BUFFER_CONFIG_INIT
-title : WDF_COMMON_BUFFER_CONFIG_INIT function
-author : windows-driver-content
-description : The WDF_COMMON_BUFFER_CONFIG_INIT function initializes a WDF_COMMON_BUFFER_CONFIG structure.
-old-location : wdf\wdf_common_buffer_config_init.htm
-old-project : wdf
-ms.assetid : a678516a-159f-42bc-b135-489677452472
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdfcommonbuffer/WDF_COMMON_BUFFER_CONFIG_INIT, kmdf.wdf_common_buffer_config_init, WDF_COMMON_BUFFER_CONFIG_INIT, wdf.wdf_common_buffer_config_init, DFCommonBufferObjectRef_23c5b41e-89ce-448c-86fa-3ae4e688b378.xml, WDF_COMMON_BUFFER_CONFIG_INIT function
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfcommonbuffer.h
-req.include-header : WdfCommonBuffer.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDF_CHILD_RETRIEVE_INFO, WDF_CHILD_RETRIEVE_INFO"
-req.product : Windows 10 or later.
+UID: NF:wdfcommonbuffer.WDF_COMMON_BUFFER_CONFIG_INIT
+title: WDF_COMMON_BUFFER_CONFIG_INIT function
+author: windows-driver-content
+description: The WDF_COMMON_BUFFER_CONFIG_INIT function initializes a WDF_COMMON_BUFFER_CONFIG structure.
+old-location: wdf\wdf_common_buffer_config_init.htm
+old-project: wdf
+ms.assetid: a678516a-159f-42bc-b135-489677452472
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdfcommonbuffer/WDF_COMMON_BUFFER_CONFIG_INIT, kmdf.wdf_common_buffer_config_init, WDF_COMMON_BUFFER_CONFIG_INIT, wdf.wdf_common_buffer_config_init, DFCommonBufferObjectRef_23c5b41e-89ce-448c-86fa-3ae4e688b378.xml, WDF_COMMON_BUFFER_CONFIG_INIT function
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfcommonbuffer.h
+req.include-header: WdfCommonBuffer.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfcommonbuffer.h
+apiname:
+-	WDF_COMMON_BUFFER_CONFIG_INIT
+product: Windows
+targetos: Windows
+req.typenames: "*PWDF_CHILD_RETRIEVE_INFO, WDF_CHILD_RETRIEVE_INFO"
+req.product: Windows 10 or later.
 ---
 
 

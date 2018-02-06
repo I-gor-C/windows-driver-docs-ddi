@@ -1,42 +1,47 @@
 ---
-UID : NC:storport.HW_STATE_CHANGE
-title : HW_STATE_CHANGE
-author : windows-driver-content
-description : A miniport-provided callback that is called after a notification from StorPortStateChangeDetected is processed.
-old-location : storage\hwstorstatechange.htm
-old-project : storage
-ms.assetid : E7E5E26A-B477-453C-AAFC-9B3572F4FC72
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.hwstorstatechange, HwStorStateChange routine [Storage Devices], HwStorStateChange, HW_STATE_CHANGE, HW_STATE_CHANGE, storport/HwStorStateChange
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 8 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : DISPATCH
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSTORAGE_DEVICE_UNIQUE_IDENTIFIER, STORAGE_DEVICE_UNIQUE_IDENTIFIER"
-req.product : Windows 10 or later.
+UID: NC:storport.HW_STATE_CHANGE
+title: HW_STATE_CHANGE
+author: windows-driver-content
+description: A miniport-provided callback that is called after a notification from StorPortStateChangeDetected is processed.
+old-location: storage\hwstorstatechange.htm
+old-project: storage
+ms.assetid: E7E5E26A-B477-453C-AAFC-9B3572F4FC72
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.hwstorstatechange, HwStorStateChange routine [Storage Devices], HwStorStateChange, HW_STATE_CHANGE, HW_STATE_CHANGE, storport/HwStorStateChange
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 8 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: DISPATCH
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	storport.h
+apiname:
+-	HwStorStateChange
+product: Windows
+targetos: Windows
+req.typenames: "*PSTORAGE_DEVICE_UNIQUE_IDENTIFIER, STORAGE_DEVICE_UNIQUE_IDENTIFIER"
+req.product: Windows 10 or later.
 ---
 
 

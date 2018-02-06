@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3D11_1DDI_VIDEOPROCESSORSETSTREAMSTEREOFORMAT
-title : PFND3D11_1DDI_VIDEOPROCESSORSETSTREAMSTEREOFORMAT
-author : windows-driver-content
-description : Enables or disables stereo 3D video for an input stream on the video processor. In addition, this function specifies the layout of the video frames in memory.
-old-location : display\videoprocessorsetstreamstereoformat.htm
-old-project : display
-ms.assetid : bc79f431-d23e-4440-a8c5-50c29c48444e
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.videoprocessorsetstreamstereoformat, pfnVideoProcessorSetStreamStereoFormat callback function [Display Devices], pfnVideoProcessorSetStreamStereoFormat, PFND3D11_1DDI_VIDEOPROCESSORSETSTREAMSTEREOFORMAT, PFND3D11_1DDI_VIDEOPROCESSORSETSTREAMSTEREOFORMAT, d3d10umddi/pfnVideoProcessorSetStreamStereoFormat
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3D11_1DDI_VIDEOPROCESSORSETSTREAMSTEREOFORMAT
+title: PFND3D11_1DDI_VIDEOPROCESSORSETSTREAMSTEREOFORMAT
+author: windows-driver-content
+description: Enables or disables stereo 3D video for an input stream on the video processor. In addition, this function specifies the layout of the video frames in memory.
+old-location: display\videoprocessorsetstreamstereoformat.htm
+old-project: display
+ms.assetid: bc79f431-d23e-4440-a8c5-50c29c48444e
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.videoprocessorsetstreamstereoformat, pfnVideoProcessorSetStreamStereoFormat callback function [Display Devices], pfnVideoProcessorSetStreamStereoFormat, PFND3D11_1DDI_VIDEOPROCESSORSETSTREAMSTEREOFORMAT, PFND3D11_1DDI_VIDEOPROCESSORSETSTREAMSTEREOFORMAT, d3d10umddi/pfnVideoProcessorSetStreamStereoFormat
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	D3d10umddi.h
+apiname:
+-	pfnVideoProcessorSetStreamStereoFormat
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:ndis._NET_IF_INFORMATION
-title : "_NET_IF_INFORMATION"
-author : windows-driver-content
-description : The NET_IF_INFORMATION structure provides NDIS with information about a registered network interface.
-old-location : netvista\net_if_information.htm
-old-project : netvista
-ms.assetid : 5508650c-473c-4710-869e-053481e83f1b
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : PNET_IF_INFORMATION structure pointer [Network Drivers Starting with Windows Vista], PNET_IF_INFORMATION, NET_IF_INFORMATION structure [Network Drivers Starting with Windows Vista], _NET_IF_INFORMATION, ndis/NET_IF_INFORMATION, ndis/PNET_IF_INFORMATION, net_if_struct_ref_ceb46daa-0e14-4ed8-9f05-9cd064a57dfb.xml, NET_IF_INFORMATION, *PNET_IF_INFORMATION, netvista.net_if_information
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : See Remarks section
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NET_IF_INFORMATION, *PNET_IF_INFORMATION
+UID: NS:ndis._NET_IF_INFORMATION
+title: "_NET_IF_INFORMATION"
+author: windows-driver-content
+description: The NET_IF_INFORMATION structure provides NDIS with information about a registered network interface.
+old-location: netvista\net_if_information.htm
+old-project: netvista
+ms.assetid: 5508650c-473c-4710-869e-053481e83f1b
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: PNET_IF_INFORMATION structure pointer [Network Drivers Starting with Windows Vista], PNET_IF_INFORMATION, NET_IF_INFORMATION structure [Network Drivers Starting with Windows Vista], _NET_IF_INFORMATION, ndis/NET_IF_INFORMATION, ndis/PNET_IF_INFORMATION, net_if_struct_ref_ceb46daa-0e14-4ed8-9f05-9cd064a57dfb.xml, NET_IF_INFORMATION, *PNET_IF_INFORMATION, netvista.net_if_information
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: See Remarks section
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndis.h
+apiname:
+-	NET_IF_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: NET_IF_INFORMATION, *PNET_IF_INFORMATION
 ---
 
 # _NET_IF_INFORMATION structure

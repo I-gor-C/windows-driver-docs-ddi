@@ -1,42 +1,47 @@
 ---
-UID : NC:wdfdevice.EVT_WDF_DEVICE_D0_ENTRY_POST_INTERRUPTS_ENABLED
-title : EVT_WDF_DEVICE_D0_ENTRY_POST_INTERRUPTS_ENABLED
-author : windows-driver-content
-description : A driver's EvtDeviceD0EntryPostInterruptsEnabled event callback function performs device-specific operations that are required after the driver has enabled the device's hardware interrupts.
-old-location : wdf\evtdeviced0entrypostinterruptsenabled.htm
-old-project : wdf
-ms.assetid : 38d74ce1-9d9d-4da5-a2b3-579048850b28
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.evtdeviced0entrypostinterruptsenabled, EvtDeviceD0EntryPostInterruptsEnabled callback function, EvtDeviceD0EntryPostInterruptsEnabled, EVT_WDF_DEVICE_D0_ENTRY_POST_INTERRUPTS_ENABLED, EVT_WDF_DEVICE_D0_ENTRY_POST_INTERRUPTS_ENABLED, wdfdevice/EvtDeviceD0EntryPostInterruptsEnabled, DFDeviceObjectGeneralRef_e37cc70a-3e3e-4268-afda-8b802cc72461.xml, kmdf.evtdeviced0entrypostinterruptsenabled
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdfdevice.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_DEVICE_SHUTDOWN_FLAGS
-req.product : Windows 10 or later.
+UID: NC:wdfdevice.EVT_WDF_DEVICE_D0_ENTRY_POST_INTERRUPTS_ENABLED
+title: EVT_WDF_DEVICE_D0_ENTRY_POST_INTERRUPTS_ENABLED
+author: windows-driver-content
+description: A driver's EvtDeviceD0EntryPostInterruptsEnabled event callback function performs device-specific operations that are required after the driver has enabled the device's hardware interrupts.
+old-location: wdf\evtdeviced0entrypostinterruptsenabled.htm
+old-project: wdf
+ms.assetid: 38d74ce1-9d9d-4da5-a2b3-579048850b28
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.evtdeviced0entrypostinterruptsenabled, EvtDeviceD0EntryPostInterruptsEnabled callback function, EvtDeviceD0EntryPostInterruptsEnabled, EVT_WDF_DEVICE_D0_ENTRY_POST_INTERRUPTS_ENABLED, EVT_WDF_DEVICE_D0_ENTRY_POST_INTERRUPTS_ENABLED, wdfdevice/EvtDeviceD0EntryPostInterruptsEnabled, DFDeviceObjectGeneralRef_e37cc70a-3e3e-4268-afda-8b802cc72461.xml, kmdf.evtdeviced0entrypostinterruptsenabled
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdfdevice.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Wdfdevice.h
+apiname:
+-	EvtDeviceD0EntryPostInterruptsEnabled
+product: Windows
+targetos: Windows
+req.typenames: WDF_DEVICE_SHUTDOWN_FLAGS
+req.product: Windows 10 or later.
 ---
 
 

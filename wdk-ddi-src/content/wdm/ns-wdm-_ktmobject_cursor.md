@@ -1,42 +1,47 @@
 ---
-UID : NS:wdm._KTMOBJECT_CURSOR
-title : "_KTMOBJECT_CURSOR"
-author : windows-driver-content
-description : The KTMOBJECT_CURSOR structure receives enumeration information about KTM objects when a component calls ZwEnumerateTransactionObject.
-old-location : kernel\ktmobject_cursor.htm
-old-project : kernel
-ms.assetid : 0cfcd019-0c5b-4635-859f-741a6e4aa91d
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : KTMOBJECT_CURSOR, ktm_ref_dab40de2-cd5f-4f13-93e8-5baa3b9cc37f.xml, PKTMOBJECT_CURSOR, PKTMOBJECT_CURSOR structure pointer [Kernel-Mode Driver Architecture], wdm/PKTMOBJECT_CURSOR, kernel.ktmobject_cursor, KTMOBJECT_CURSOR structure [Kernel-Mode Driver Architecture], _KTMOBJECT_CURSOR, wdm/KTMOBJECT_CURSOR, *PKTMOBJECT_CURSOR
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later operating system versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KTMOBJECT_CURSOR, *PKTMOBJECT_CURSOR
-req.product : Windows 10 or later.
+UID: NS:wdm._KTMOBJECT_CURSOR
+title: "_KTMOBJECT_CURSOR"
+author: windows-driver-content
+description: The KTMOBJECT_CURSOR structure receives enumeration information about KTM objects when a component calls ZwEnumerateTransactionObject.
+old-location: kernel\ktmobject_cursor.htm
+old-project: kernel
+ms.assetid: 0cfcd019-0c5b-4635-859f-741a6e4aa91d
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: KTMOBJECT_CURSOR, ktm_ref_dab40de2-cd5f-4f13-93e8-5baa3b9cc37f.xml, PKTMOBJECT_CURSOR, PKTMOBJECT_CURSOR structure pointer [Kernel-Mode Driver Architecture], wdm/PKTMOBJECT_CURSOR, kernel.ktmobject_cursor, KTMOBJECT_CURSOR structure [Kernel-Mode Driver Architecture], _KTMOBJECT_CURSOR, wdm/KTMOBJECT_CURSOR, *PKTMOBJECT_CURSOR
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later operating system versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	KTMOBJECT_CURSOR
+product: Windows
+targetos: Windows
+req.typenames: KTMOBJECT_CURSOR, *PKTMOBJECT_CURSOR
+req.product: Windows 10 or later.
 ---
 
 # _KTMOBJECT_CURSOR structure

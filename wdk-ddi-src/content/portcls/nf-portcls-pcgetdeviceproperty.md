@@ -1,41 +1,47 @@
 ---
-UID : NF:portcls.PcGetDeviceProperty
-title : PcGetDeviceProperty function
-author : windows-driver-content
-description : The PcGetDeviceProperty function returns the requested device property from the registry.
-old-location : audio\pcgetdeviceproperty.htm
-old-project : audio
-ms.assetid : 75d66965-ab97-4f67-b62f-e7fedbf524a6
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : PcGetDeviceProperty function [Audio Devices], PcGetDeviceProperty, audio.pcgetdeviceproperty, audpc-routines_c95326e5-dc8f-4a04-b31d-6c4e79cc6771.xml, portcls/PcGetDeviceProperty
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : portcls.h
-req.include-header : Portcls.h
-req.target-type : Universal
-req.target-min-winverclnt : The PortCls system driver implements the PcGetDeviceProperty function in Microsoft Windows 98/Me and in Windows 2000 and later operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Portcls.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.PcGetDeviceProperty
+title: PcGetDeviceProperty function
+author: windows-driver-content
+description: The PcGetDeviceProperty function returns the requested device property from the registry.
+old-location: audio\pcgetdeviceproperty.htm
+old-project: audio
+ms.assetid: 75d66965-ab97-4f67-b62f-e7fedbf524a6
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: PcGetDeviceProperty function [Audio Devices], PcGetDeviceProperty, audio.pcgetdeviceproperty, audpc-routines_c95326e5-dc8f-4a04-b31d-6c4e79cc6771.xml, portcls/PcGetDeviceProperty
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: portcls.h
+req.include-header: Portcls.h
+req.target-type: Universal
+req.target-min-winverclnt: The PortCls system driver implements the PcGetDeviceProperty function in Microsoft Windows 98/Me and in Windows 2000 and later operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Portcls.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Portcls.lib
+-	Portcls.dll
+apiname:
+-	PcGetDeviceProperty
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

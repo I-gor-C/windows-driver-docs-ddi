@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugControl3.SetRadix
-title : IDebugControl3::SetRadix method
-author : windows-driver-content
-description : The SetRadix method sets the default radix (number base) used by the debugger engine when it evaluates and displays MASM expressions, and when it displays symbol information.
-old-location : debugger\setradix.htm
-old-project : debugger
-ms.assetid : 7346733d-2ac7-4eee-9f9c-ea6e1ee2ce5d
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : SetRadix method [Windows Debugging], SetRadix method [Windows Debugging], IDebugControl2 interface, dbgeng/IDebugControl::SetRadix, IDebugControl3::SetRadix, IDebugControl::SetRadix, SetRadix method [Windows Debugging], IDebugControl3 interface, dbgeng/IDebugControl2::SetRadix, dbgeng/IDebugControl3::SetRadix, IDebugControl_f0462fa8-da93-414b-b4b1-246a50572bb2.xml, IDebugControl2 interface [Windows Debugging], SetRadix method, IDebugControl3, SetRadix method [Windows Debugging], IDebugControl interface, debugger.setradix, SetRadix, IDebugControl3 interface [Windows Debugging], SetRadix method, IDebugControl2::SetRadix, IDebugControl interface [Windows Debugging], SetRadix method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl3.SetRadix
+title: IDebugControl3::SetRadix method
+author: windows-driver-content
+description: The SetRadix method sets the default radix (number base) used by the debugger engine when it evaluates and displays MASM expressions, and when it displays symbol information.
+old-location: debugger\setradix.htm
+old-project: debugger
+ms.assetid: 7346733d-2ac7-4eee-9f9c-ea6e1ee2ce5d
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: SetRadix method [Windows Debugging], SetRadix method [Windows Debugging], IDebugControl2 interface, dbgeng/IDebugControl::SetRadix, IDebugControl3::SetRadix, IDebugControl::SetRadix, SetRadix method [Windows Debugging], IDebugControl3 interface, dbgeng/IDebugControl2::SetRadix, dbgeng/IDebugControl3::SetRadix, IDebugControl_f0462fa8-da93-414b-b4b1-246a50572bb2.xml, IDebugControl2 interface [Windows Debugging], SetRadix method, IDebugControl3, SetRadix method [Windows Debugging], IDebugControl interface, debugger.setradix, SetRadix, IDebugControl3 interface [Windows Debugging], SetRadix method, IDebugControl2::SetRadix, IDebugControl interface [Windows Debugging], SetRadix method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl.SetRadix
+-	IDebugControl2.SetRadix
+-	IDebugControl3.SetRadix
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

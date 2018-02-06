@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisMGetDmaAlignment
-title : NdisMGetDmaAlignment function
-author : windows-driver-content
-description : The NdisMGetDmaAlignment function returns the alignment requirements of the DMA system for a NIC.
-old-location : netvista\ndismgetdmaalignment.htm
-old-project : netvista
-ms.assetid : b683518c-b4f4-4ae4-945d-8a2d064a5390
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.ndismgetdmaalignment, ndis/NdisMGetDmaAlignment, dma_ref_75f5af9e-a351-428c-a465-ccd747fcdd37.xml, NdisMGetDmaAlignment function [Network Drivers Starting with Windows Vista], NdisMGetDmaAlignment
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_Miniport_Driver_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : "= PASSIVE_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisMGetDmaAlignment
+title: NdisMGetDmaAlignment function
+author: windows-driver-content
+description: The NdisMGetDmaAlignment function returns the alignment requirements of the DMA system for a NIC.
+old-location: netvista\ndismgetdmaalignment.htm
+old-project: netvista
+ms.assetid: b683518c-b4f4-4ae4-945d-8a2d064a5390
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.ndismgetdmaalignment, ndis/NdisMGetDmaAlignment, dma_ref_75f5af9e-a351-428c-a465-ccd747fcdd37.xml, NdisMGetDmaAlignment function [Network Drivers Starting with Windows Vista], NdisMGetDmaAlignment
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_Miniport_Driver_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: "= PASSIVE_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisMGetDmaAlignment
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

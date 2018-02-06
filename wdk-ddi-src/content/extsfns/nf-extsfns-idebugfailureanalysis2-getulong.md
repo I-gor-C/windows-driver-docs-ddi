@@ -1,41 +1,46 @@
 ---
-UID : NF:extsfns.IDebugFailureAnalysis2.GetUlong
-title : IDebugFailureAnalysis2::GetUlong method
-author : windows-driver-content
-description : The GetUlong method searches a DebugFailureAnalysis object for the first FA entry that has a specified tag. If it finds an FA entry with the specified tag, it gets the ULONG value from the entry's data block.
-old-location : debugger\idebugfailureanalysis2_getulong.htm
-old-project : debugger
-ms.assetid : 3926D55C-0EF6-4E15-B919-CB9E5137DC14
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugFailureAnalysis2 interface [Windows Debugging], GetUlong method, IDebugFailureAnalysis2, GetUlong method [Windows Debugging], IDebugFailureAnalysis2 interface, IDebugFailureAnalysis2::GetUlong, GetUlong, GetUlong method [Windows Debugging], debugger.idebugfailureanalysis2_getulong, extsfns/IDebugFailureAnalysis2::GetUlong
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : extsfns.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : extsfns.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FA_EXTENSION_PLUGIN_PHASE
+UID: NF:extsfns.IDebugFailureAnalysis2.GetUlong
+title: IDebugFailureAnalysis2::GetUlong method
+author: windows-driver-content
+description: The GetUlong method searches a DebugFailureAnalysis object for the first FA entry that has a specified tag. If it finds an FA entry with the specified tag, it gets the ULONG value from the entry's data block.
+old-location: debugger\idebugfailureanalysis2_getulong.htm
+old-project: debugger
+ms.assetid: 3926D55C-0EF6-4E15-B919-CB9E5137DC14
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugFailureAnalysis2 interface [Windows Debugging], GetUlong method, IDebugFailureAnalysis2, GetUlong method [Windows Debugging], IDebugFailureAnalysis2 interface, IDebugFailureAnalysis2::GetUlong, GetUlong, GetUlong method [Windows Debugging], debugger.idebugfailureanalysis2_getulong, extsfns/IDebugFailureAnalysis2::GetUlong
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: extsfns.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: extsfns.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	extsfns.h
+apiname:
+-	IDebugFailureAnalysis2.GetUlong
+product: Windows
+targetos: Windows
+req.typenames: FA_EXTENSION_PLUGIN_PHASE
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.IoGetRemainingStackSize
-title : IoGetRemainingStackSize function
-author : windows-driver-content
-description : The IoGetRemainingStackSize routine returns the current amount of available kernel-mode stack space.
-old-location : kernel\iogetremainingstacksize.htm
-old-project : kernel
-ms.assetid : 5e257b72-fe16-49a0-9232-9c791a88e903
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : k104_bc84d6dd-0874-440d-8f73-b403d18aa660.xml, IoGetRemainingStackSize routine [Kernel-Mode Driver Architecture], kernel.iogetremainingstacksize, IoGetRemainingStackSize, wdm/IoGetRemainingStackSize
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.IoGetRemainingStackSize
+title: IoGetRemainingStackSize function
+author: windows-driver-content
+description: The IoGetRemainingStackSize routine returns the current amount of available kernel-mode stack space.
+old-location: kernel\iogetremainingstacksize.htm
+old-project: kernel
+ms.assetid: 5e257b72-fe16-49a0-9232-9c791a88e903
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: k104_bc84d6dd-0874-440d-8f73-b403d18aa660.xml, IoGetRemainingStackSize routine [Kernel-Mode Driver Architecture], kernel.iogetremainingstacksize, IoGetRemainingStackSize, wdm/IoGetRemainingStackSize
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	IoGetRemainingStackSize
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

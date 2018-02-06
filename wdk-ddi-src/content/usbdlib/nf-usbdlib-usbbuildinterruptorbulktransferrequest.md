@@ -1,42 +1,47 @@
 ---
-UID : NF:usbdlib.UsbBuildInterruptOrBulkTransferRequest
-title : UsbBuildInterruptOrBulkTransferRequest macro
-author : windows-driver-content
-description : The UsbBuildInterruptOrBulkTransferRequest macro formats an URB to send or receive data on a bulk pipe, or to receive data from an interrupt pipe.
-old-location : buses\usbbuildinterruptorbulktransferrequest.htm
-old-project : usbref
-ms.assetid : 2500fa22-b3f9-419d-9e37-5060b83403fb
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : buses.usbbuildinterruptorbulktransferrequest, UsbBuildInterruptOrBulkTransferRequest routine [Buses], usbfunc_ecc1d157-942d-4d0e-9c07-9fef00cd5faf.xml, UsbBuildInterruptOrBulkTransferRequest, usbdlib/UsbBuildInterruptOrBulkTransferRequest
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : macro
-req.header : usbdlib.h
-req.include-header : Usbdlib.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : usbdlib.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : USBCAMD_DEVICE_DATA2, *PUSBCAMD_DEVICE_DATA2
-req.product : Windows 10 or later.
+UID: NF:usbdlib.UsbBuildInterruptOrBulkTransferRequest
+title: UsbBuildInterruptOrBulkTransferRequest macro
+author: windows-driver-content
+description: The UsbBuildInterruptOrBulkTransferRequest macro formats an URB to send or receive data on a bulk pipe, or to receive data from an interrupt pipe.
+old-location: buses\usbbuildinterruptorbulktransferrequest.htm
+old-project: usbref
+ms.assetid: 2500fa22-b3f9-419d-9e37-5060b83403fb
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: buses.usbbuildinterruptorbulktransferrequest, UsbBuildInterruptOrBulkTransferRequest routine [Buses], usbfunc_ecc1d157-942d-4d0e-9c07-9fef00cd5faf.xml, UsbBuildInterruptOrBulkTransferRequest, usbdlib/UsbBuildInterruptOrBulkTransferRequest
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: macro
+req.header: usbdlib.h
+req.include-header: Usbdlib.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: usbdlib.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	usbdlib.h
+apiname:
+-	UsbBuildInterruptOrBulkTransferRequest
+product: Windows
+targetos: Windows
+req.typenames: USBCAMD_DEVICE_DATA2, *PUSBCAMD_DEVICE_DATA2
+req.product: Windows 10 or later.
 ---
 
 

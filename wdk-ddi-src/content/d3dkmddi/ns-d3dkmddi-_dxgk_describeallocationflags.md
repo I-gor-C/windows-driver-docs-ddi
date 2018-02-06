@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGK_DESCRIBEALLOCATIONFLAGS
-title : "_DXGK_DESCRIBEALLOCATIONFLAGS"
-author : windows-driver-content
-description : Used in the DXGKARG_DESCRIBEALLOCATION.Flags member to describe whether an existing allocation is being queried for its display mode.
-old-location : display\dxgk_describeallocationflags.htm
-old-project : display
-ms.assetid : f5cab74a-19ce-45d1-9c6f-461a98c4506c
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgk_describeallocationflags, _DXGK_DESCRIBEALLOCATIONFLAGS, DXGK_DESCRIBEALLOCATIONFLAGS structure [Display Devices], d3dkmddi/DXGK_DESCRIBEALLOCATIONFLAGS, DXGK_DESCRIBEALLOCATIONFLAGS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_DESCRIBEALLOCATIONFLAGS
+UID: NS:d3dkmddi._DXGK_DESCRIBEALLOCATIONFLAGS
+title: "_DXGK_DESCRIBEALLOCATIONFLAGS"
+author: windows-driver-content
+description: Used in the DXGKARG_DESCRIBEALLOCATION.Flags member to describe whether an existing allocation is being queried for its display mode.
+old-location: display\dxgk_describeallocationflags.htm
+old-project: display
+ms.assetid: f5cab74a-19ce-45d1-9c6f-461a98c4506c
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgk_describeallocationflags, _DXGK_DESCRIBEALLOCATIONFLAGS, DXGK_DESCRIBEALLOCATIONFLAGS structure [Display Devices], d3dkmddi/DXGK_DESCRIBEALLOCATIONFLAGS, DXGK_DESCRIBEALLOCATIONFLAGS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	D3dkmddi.h
+apiname:
+-	DXGK_DESCRIBEALLOCATIONFLAGS
+product: Windows
+targetos: Windows
+req.typenames: DXGK_DESCRIBEALLOCATIONFLAGS
 ---
 
 # _DXGK_DESCRIBEALLOCATIONFLAGS structure

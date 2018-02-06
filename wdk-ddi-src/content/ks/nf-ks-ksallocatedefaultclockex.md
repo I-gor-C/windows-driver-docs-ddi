@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsAllocateDefaultClockEx
-title : KsAllocateDefaultClockEx function
-author : windows-driver-content
-description : The KsAllocateDefaultClockEx function allocates and initializes the default clock structure.
-old-location : stream\ksallocatedefaultclockex.htm
-old-project : stream
-ms.assetid : cad04f59-5312-4241-9524-aeabc27df92d
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KsAllocateDefaultClockEx function [Streaming Media Devices], ks/KsAllocateDefaultClockEx, stream.ksallocatedefaultclockex, ksfunc_bace76db-468b-4d8e-bbc4-5a64f238308f.xml, KsAllocateDefaultClockEx
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsAllocateDefaultClockEx
+title: KsAllocateDefaultClockEx function
+author: windows-driver-content
+description: The KsAllocateDefaultClockEx function allocates and initializes the default clock structure.
+old-location: stream\ksallocatedefaultclockex.htm
+old-project: stream
+ms.assetid: cad04f59-5312-4241-9524-aeabc27df92d
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KsAllocateDefaultClockEx function [Streaming Media Devices], ks/KsAllocateDefaultClockEx, stream.ksallocatedefaultclockex, ksfunc_bace76db-468b-4d8e-bbc4-5a64f238308f.xml, KsAllocateDefaultClockEx
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsAllocateDefaultClockEx
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

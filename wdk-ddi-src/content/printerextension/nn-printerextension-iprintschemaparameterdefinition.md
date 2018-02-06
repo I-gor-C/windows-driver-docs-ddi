@@ -1,42 +1,47 @@
 ---
-UID : NN:printerextension.IPrintSchemaParameterDefinition
-title : IPrintSchemaParameterDefinition
-author : windows-driver-content
-description : The IPrintSchemaParameterDefinition interface represents a parameter definition, as defined in the Print Schema Specification.
-old-location : print\iprintschemaparameterdefinition.htm
-old-project : print
-ms.assetid : 205A4F09-6FE5-459E-A94A-13B1839AF489
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : print.iprintschemaparameterdefinition, IPrintSchemaParameterDefinition interface [Print Devices], IPrintSchemaParameterDefinition interface [Print Devices], described, IPrintSchemaParameterDefinition, printerextension/IPrintSchemaParameterDefinition
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : printerextension.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8.1
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : printerextension.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PrintSchemaSelectionType
-req.product : Windows 10 or later.
+UID: NN:printerextension.IPrintSchemaParameterDefinition
+title: IPrintSchemaParameterDefinition
+author: windows-driver-content
+description: The IPrintSchemaParameterDefinition interface represents a parameter definition, as defined in the Print Schema Specification.
+old-location: print\iprintschemaparameterdefinition.htm
+old-project: print
+ms.assetid: 205A4F09-6FE5-459E-A94A-13B1839AF489
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: print.iprintschemaparameterdefinition, IPrintSchemaParameterDefinition interface [Print Devices], IPrintSchemaParameterDefinition interface [Print Devices], described, IPrintSchemaParameterDefinition, printerextension/IPrintSchemaParameterDefinition
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: printerextension.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8.1
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: printerextension.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Printerextension.h
+apiname:
+-	IPrintSchemaParameterDefinition
+product: Windows
+targetos: Windows
+req.typenames: PrintSchemaSelectionType
+req.product: Windows 10 or later.
 ---
 
 # IPrintSchemaParameterDefinition interface

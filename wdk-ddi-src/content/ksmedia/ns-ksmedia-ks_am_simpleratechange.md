@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.KS_AM_SimpleRateChange
-title : KS_AM_SimpleRateChange
-author : windows-driver-content
-description : The KS_AM_SimpleRateChange structure is used to describe a simple rate change (fast-forward or rewind) for an MPEG2 stream.
-old-location : stream\ks_am_simpleratechange.htm
-old-project : stream
-ms.assetid : d797b377-6c27-41f9-932d-264d0e8b5dd0
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : "*PKS_AM_SimpleRateChange, dvdref_8c318967-5f7d-4597-ab40-924e95b86dd7.xml, ksmedia/PKS_AM_SimpleRateChange, KS_AM_SimpleRateChange, stream.ks_am_simpleratechange, PKS_AM_SimpleRateChange structure pointer [Streaming Media Devices], PKS_AM_SimpleRateChange, KS_AM_SimpleRateChange structure [Streaming Media Devices], ksmedia/KS_AM_SimpleRateChange"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKS_AM_SimpleRateChange, KS_AM_SimpleRateChange"
+UID: NS:ksmedia.KS_AM_SimpleRateChange
+title: KS_AM_SimpleRateChange
+author: windows-driver-content
+description: The KS_AM_SimpleRateChange structure is used to describe a simple rate change (fast-forward or rewind) for an MPEG2 stream.
+old-location: stream\ks_am_simpleratechange.htm
+old-project: stream
+ms.assetid: d797b377-6c27-41f9-932d-264d0e8b5dd0
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: "*PKS_AM_SimpleRateChange, dvdref_8c318967-5f7d-4597-ab40-924e95b86dd7.xml, ksmedia/PKS_AM_SimpleRateChange, KS_AM_SimpleRateChange, stream.ks_am_simpleratechange, PKS_AM_SimpleRateChange structure pointer [Streaming Media Devices], PKS_AM_SimpleRateChange, KS_AM_SimpleRateChange structure [Streaming Media Devices], ksmedia/KS_AM_SimpleRateChange"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	KS_AM_SimpleRateChange
+product: Windows
+targetos: Windows
+req.typenames: "*PKS_AM_SimpleRateChange, KS_AM_SimpleRateChange"
 ---
 
 # KS_AM_SimpleRateChange structure

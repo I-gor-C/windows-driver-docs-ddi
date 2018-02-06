@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.IoCreateDevice
-title : IoCreateDevice function
-author : windows-driver-content
-description : The IoCreateDevice routine creates a device object for use by a driver.
-old-location : kernel\iocreatedevice.htm
-old-project : kernel
-ms.assetid : 54ca9dc8-8095-4b62-9ebc-f297abb429ca
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/IoCreateDevice, k104_1e38a631-7e65-4b4b-8d51-3150a8073511.xml, IoCreateDevice routine [Kernel-Mode Driver Architecture], IoCreateDevice, kernel.iocreatedevice
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : AddDevice, CheckDeviceObjectFlags, IrqlIoPassive1, MiniportOnlyWdmDevice, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.IoCreateDevice
+title: IoCreateDevice function
+author: windows-driver-content
+description: The IoCreateDevice routine creates a device object for use by a driver.
+old-location: kernel\iocreatedevice.htm
+old-project: kernel
+ms.assetid: 54ca9dc8-8095-4b62-9ebc-f297abb429ca
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/IoCreateDevice, k104_1e38a631-7e65-4b4b-8d51-3150a8073511.xml, IoCreateDevice routine [Kernel-Mode Driver Architecture], IoCreateDevice, kernel.iocreatedevice
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: AddDevice, CheckDeviceObjectFlags, IrqlIoPassive1, MiniportOnlyWdmDevice, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoCreateDevice
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

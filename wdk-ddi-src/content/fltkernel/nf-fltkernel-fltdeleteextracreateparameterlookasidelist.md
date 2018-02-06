@@ -1,41 +1,47 @@
 ---
-UID : NF:fltkernel.FltDeleteExtraCreateParameterLookasideList
-title : FltDeleteExtraCreateParameterLookasideList function
-author : windows-driver-content
-description : The FltDeleteExtraCreateParameterLookasideList routine frees an extra create parameter (ECP) lookaside list.
-old-location : ifsk\fltdeleteextracreateparameterlookasidelist.htm
-old-project : ifsk
-ms.assetid : 8df06f2c-7358-49ea-8948-b76c5090d75b
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltDeleteExtraCreateParameterLookasideList routine [Installable File System Drivers], FltApiRef_a_to_d_ac849af2-706e-4eac-be0b-1c3c905ccdfe.xml, FltDeleteExtraCreateParameterLookasideList, fltkernel/FltDeleteExtraCreateParameterLookasideList, ifsk.fltdeleteextracreateparameterlookasidelist
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltDeleteExtraCreateParameterLookasideList
+title: FltDeleteExtraCreateParameterLookasideList function
+author: windows-driver-content
+description: The FltDeleteExtraCreateParameterLookasideList routine frees an extra create parameter (ECP) lookaside list.
+old-location: ifsk\fltdeleteextracreateparameterlookasidelist.htm
+old-project: ifsk
+ms.assetid: 8df06f2c-7358-49ea-8948-b76c5090d75b
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltDeleteExtraCreateParameterLookasideList routine [Installable File System Drivers], FltApiRef_a_to_d_ac849af2-706e-4eac-be0b-1c3c905ccdfe.xml, FltDeleteExtraCreateParameterLookasideList, fltkernel/FltDeleteExtraCreateParameterLookasideList, ifsk.fltdeleteextracreateparameterlookasidelist
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	FltMgr.lib
+-	FltMgr.dll
+apiname:
+-	FltDeleteExtraCreateParameterLookasideList
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

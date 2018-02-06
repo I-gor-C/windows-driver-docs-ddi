@@ -1,41 +1,46 @@
 ---
-UID : NS:gnssdriver.GNSS_GEOFENCE_CREATE_RESPONSE
-title : GNSS_GEOFENCE_CREATE_RESPONSE
-author : windows-driver-content
-description : This structure defines the response expected from the GNSS engine when a new geofence is created.
-old-location : sensors\gnss_geofence_create_response.htm
-old-project : sensors
-ms.assetid : D832B534-34E2-402F-833A-C072007E3106
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : gnssdriver/GNSS_GEOFENCE_CREATE_RESPONSE, GNSS_GEOFENCE_CREATE_RESPONSE, *PGNSS_GEOFENCE_CREATE_RESPONSE, GNSS_GEOFENCE_CREATE_RESPONSE structure [Sensor Devices], PGNSS_GEOFENCE_CREATE_RESPONSE, sensors.gnss_geofence_create_response, gnssdriver/PGNSS_GEOFENCE_CREATE_RESPONSE, PGNSS_GEOFENCE_CREATE_RESPONSE structure pointer [Sensor Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : gnssdriver.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PGNSS_GEOFENCE_CREATE_RESPONSE, GNSS_GEOFENCE_CREATE_RESPONSE"
+UID: NS:gnssdriver.GNSS_GEOFENCE_CREATE_RESPONSE
+title: GNSS_GEOFENCE_CREATE_RESPONSE
+author: windows-driver-content
+description: This structure defines the response expected from the GNSS engine when a new geofence is created.
+old-location: sensors\gnss_geofence_create_response.htm
+old-project: sensors
+ms.assetid: D832B534-34E2-402F-833A-C072007E3106
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: gnssdriver/GNSS_GEOFENCE_CREATE_RESPONSE, GNSS_GEOFENCE_CREATE_RESPONSE, *PGNSS_GEOFENCE_CREATE_RESPONSE, GNSS_GEOFENCE_CREATE_RESPONSE structure [Sensor Devices], PGNSS_GEOFENCE_CREATE_RESPONSE, sensors.gnss_geofence_create_response, gnssdriver/PGNSS_GEOFENCE_CREATE_RESPONSE, PGNSS_GEOFENCE_CREATE_RESPONSE structure pointer [Sensor Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: gnssdriver.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	gnssdriver.h
+apiname:
+-	GNSS_GEOFENCE_CREATE_RESPONSE
+product: Windows
+targetos: Windows
+req.typenames: "*PGNSS_GEOFENCE_CREATE_RESPONSE, GNSS_GEOFENCE_CREATE_RESPONSE"
 ---
 
 # GNSS_GEOFENCE_CREATE_RESPONSE structure

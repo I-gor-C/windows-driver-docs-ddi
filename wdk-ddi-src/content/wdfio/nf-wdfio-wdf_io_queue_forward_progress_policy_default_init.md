@@ -1,42 +1,47 @@
 ---
-UID : NF:wdfio.WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY_DEFAULT_INIT
-title : WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY_DEFAULT_INIT function
-author : windows-driver-content
-description : The WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY_DEFAULT_INIT function initializes a driver's WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY structure.
-old-location : wdf\wdf_io_queue_forward_progress_policy_default_init.htm
-old-project : wdf
-ms.assetid : d4342c72-6737-4f9a-927a-dbfdd69da38d
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : DFQueueObjectRef_bc87904f-0d02-4369-ae30-734766e7335b.xml, wdfio/WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY_DEFAULT_INIT, kmdf.wdf_io_queue_forward_progress_policy_default_init, WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY_DEFAULT_INIT function, WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY_DEFAULT_INIT, wdf.wdf_io_queue_forward_progress_policy_default_init
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfio.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.9
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_IO_QUEUE_STATE
-req.product : Windows 10 or later.
+UID: NF:wdfio.WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY_DEFAULT_INIT
+title: WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY_DEFAULT_INIT function
+author: windows-driver-content
+description: The WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY_DEFAULT_INIT function initializes a driver's WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY structure.
+old-location: wdf\wdf_io_queue_forward_progress_policy_default_init.htm
+old-project: wdf
+ms.assetid: d4342c72-6737-4f9a-927a-dbfdd69da38d
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: DFQueueObjectRef_bc87904f-0d02-4369-ae30-734766e7335b.xml, wdfio/WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY_DEFAULT_INIT, kmdf.wdf_io_queue_forward_progress_policy_default_init, WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY_DEFAULT_INIT function, WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY_DEFAULT_INIT, wdf.wdf_io_queue_forward_progress_policy_default_init
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfio.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.9
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfio.h
+apiname:
+-	WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY_DEFAULT_INIT
+product: Windows
+targetos: Windows
+req.typenames: WDF_IO_QUEUE_STATE
+req.product: Windows 10 or later.
 ---
 
 

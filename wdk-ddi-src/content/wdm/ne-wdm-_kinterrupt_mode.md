@@ -1,42 +1,47 @@
 ---
-UID : NE:wdm._KINTERRUPT_MODE
-title : "_KINTERRUPT_MODE"
-author : windows-driver-content
-description : The KINTERRUPT_MODE enumeration type indicates whether an interrupt is level-triggered or edge-triggered.
-old-location : kernel\kinterrupt_mode.htm
-old-project : kernel
-ms.assetid : 2f00fe3f-d73d-4f0f-a1dd-ae72fa57e55d
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/LevelSensitive, sysenum_35275927-b863-496a-8193-579f9d1d3a22.xml, KINTERRUPT_MODE enumeration [Kernel-Mode Driver Architecture], KINTERRUPT_MODE, wdm/Latched, LevelSensitive, wdm/KINTERRUPT_MODE, kernel.kinterrupt_mode, Latched, _KINTERRUPT_MODE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KINTERRUPT_MODE
-req.product : Windows 10 or later.
+UID: NE:wdm._KINTERRUPT_MODE
+title: "_KINTERRUPT_MODE"
+author: windows-driver-content
+description: The KINTERRUPT_MODE enumeration type indicates whether an interrupt is level-triggered or edge-triggered.
+old-location: kernel\kinterrupt_mode.htm
+old-project: kernel
+ms.assetid: 2f00fe3f-d73d-4f0f-a1dd-ae72fa57e55d
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/LevelSensitive, sysenum_35275927-b863-496a-8193-579f9d1d3a22.xml, KINTERRUPT_MODE enumeration [Kernel-Mode Driver Architecture], KINTERRUPT_MODE, wdm/Latched, LevelSensitive, wdm/KINTERRUPT_MODE, kernel.kinterrupt_mode, Latched, _KINTERRUPT_MODE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdm.h
+apiname:
+-	KINTERRUPT_MODE
+product: Windows
+targetos: Windows
+req.typenames: KINTERRUPT_MODE
+req.product: Windows 10 or later.
 ---
 
 # _KINTERRUPT_MODE Enumeration
@@ -53,30 +58,30 @@ typedef enum _KINTERRUPT_MODE {
 ## Constants
 
 <table>
-
-<tr>
-<td>Latched</td>
-<td>The interrupt is edge-triggered. This is the mode for PCI message-signaled interrupts.</td>
-</tr>
-
-<tr>
-<td>LevelSensitive</td>
-<td>The interrupt is level-triggered. This is the mode for traditional PCI line-based interrupts.</td>
-</tr>
+            
+                <tr>
+                    <td>Latched</td>
+                    <td>The interrupt is edge-triggered. This is the mode for PCI message-signaled interrupts.</td>
+                </tr>
+            
+                <tr>
+                    <td>LevelSensitive</td>
+                    <td>The interrupt is level-triggered. This is the mode for traditional PCI line-based interrupts.</td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-The interrupt mode is an electrical characteristic of the interrupt. A device signals a level-triggered interrupt by changing the voltage on the interrupt pin, and holding it there until the processor signals that the interrupt is received. In contrast, to signal an edge-triggered interrupt, the device changes the voltage state for a fixed period of time, before reverting to the original voltage state.
+        The interrupt mode is an electrical characteristic of the interrupt. A device signals a level-triggered interrupt by changing the voltage on the interrupt pin, and holding it there until the processor signals that the interrupt is received. In contrast, to signal an edge-triggered interrupt, the device changes the voltage state for a fixed period of time, before reverting to the original voltage state.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\wdm\ne-wdm-_kinterrupt_polarity.md">KINTERRUPT_POLARITY</a>
+        <a href="..\wdm\ne-wdm-_kinterrupt_polarity.md">KINTERRUPT_POLARITY</a>
 
 <a href="..\wdm\nf-wdm-ioconnectinterruptex.md">IoConnectInterruptEx</a>
 

@@ -1,42 +1,47 @@
 ---
-UID : NS:wdm._PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_SEVERITY
-title : "_PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_SEVERITY"
-author : windows-driver-content
-description : The PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_SEVERITY structure describes a PCI Express (PCIe) secondary uncorrectable error severity register of a PCIe advanced error reporting capability structure.
-old-location : pci\pci_express_sec_uncorrectable_error_severity.htm
-old-project : PCI
-ms.assetid : b00aeced-037b-4bc5-97b7-96501262700f
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : "*PPCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_SEVERITY, PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_SEVERITY, wdm/PPCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_SEVERITY, pci_struct_94eb07f5-9b90-414b-a331-075c61f507a4.xml, wdm/PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_SEVERITY, PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_SEVERITY union [Buses], PCI.pci_express_sec_uncorrectable_error_severity, PPCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_SEVERITY union pointer [Buses], PPCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_SEVERITY, _PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_SEVERITY"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : Ntddk.h, Wdm.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_SEVERITY, *PPCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_SEVERITY
-req.product : Windows 10 or later.
+UID: NS:wdm._PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_SEVERITY
+title: "_PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_SEVERITY"
+author: windows-driver-content
+description: The PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_SEVERITY structure describes a PCI Express (PCIe) secondary uncorrectable error severity register of a PCIe advanced error reporting capability structure.
+old-location: pci\pci_express_sec_uncorrectable_error_severity.htm
+old-project: PCI
+ms.assetid: b00aeced-037b-4bc5-97b7-96501262700f
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: "*PPCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_SEVERITY, PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_SEVERITY, wdm/PPCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_SEVERITY, pci_struct_94eb07f5-9b90-414b-a331-075c61f507a4.xml, wdm/PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_SEVERITY, PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_SEVERITY union [Buses], PCI.pci_express_sec_uncorrectable_error_severity, PPCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_SEVERITY union pointer [Buses], PPCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_SEVERITY, _PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_SEVERITY"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: Ntddk.h, Wdm.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdm.h
+apiname:
+-	PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_SEVERITY
+product: Windows
+targetos: Windows
+req.typenames: PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_SEVERITY, *PPCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_SEVERITY
+req.product: Windows 10 or later.
 ---
 
 # _PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_SEVERITY structure

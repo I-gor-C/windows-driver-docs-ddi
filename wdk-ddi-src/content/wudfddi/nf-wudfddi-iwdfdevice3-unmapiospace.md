@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFDevice3.UnmapIoSpace
-title : IWDFDevice3::UnmapIoSpace method
-author : windows-driver-content
-description : The UnmapIoSpace method unmaps a specified range of physical addresses previously mapped by MapIoSpace method.
-old-location : wdf\iwdfdevice3_unmapiospace.htm
-old-project : wdf
-ms.assetid : E95AC8E6-222A-4C88-8EBD-6BD7F22B9F18
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : IWDFDevice3::UnmapIoSpace, UnmapIoSpace, UnmapIoSpace method, IWDFDevice3 interface, UnmapIoSpace method, wudfddi/IWDFDevice3::UnmapIoSpace, umdf.iwdfdevice3_unmapiospace, wdf.iwdfdevice3_unmapiospace, IWDFDevice3, IWDFDevice3 interface, UnmapIoSpace method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.11
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFDevice3.UnmapIoSpace
+title: IWDFDevice3::UnmapIoSpace method
+author: windows-driver-content
+description: The UnmapIoSpace method unmaps a specified range of physical addresses previously mapped by MapIoSpace method.
+old-location: wdf\iwdfdevice3_unmapiospace.htm
+old-project: wdf
+ms.assetid: E95AC8E6-222A-4C88-8EBD-6BD7F22B9F18
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: IWDFDevice3::UnmapIoSpace, UnmapIoSpace, UnmapIoSpace method, IWDFDevice3 interface, UnmapIoSpace method, wudfddi/IWDFDevice3::UnmapIoSpace, umdf.iwdfdevice3_unmapiospace, wdf.iwdfdevice3_unmapiospace, IWDFDevice3, IWDFDevice3 interface, UnmapIoSpace method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.11
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFDevice3.UnmapIoSpace
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

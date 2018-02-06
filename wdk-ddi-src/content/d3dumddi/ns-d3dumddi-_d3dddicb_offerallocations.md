@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._D3DDDICB_OFFERALLOCATIONS
-title : "_D3DDDICB_OFFERALLOCATIONS"
-author : windows-driver-content
-description : Defines the video memory allocations that the driver offers for reuse. Used with the pfnOfferAllocationsCb function.
-old-location : display\d3dddicb_offerallocations.htm
-old-project : display
-ms.assetid : 26f3cd7b-ae2e-4632-bfb2-e62839346f83
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : "_D3DDDICB_OFFERALLOCATIONS, D3DDDICB_OFFERALLOCATIONS structure [Display Devices], d3dumddi/D3DDDICB_OFFERALLOCATIONS, D3DDDICB_OFFERALLOCATIONS, display.d3dddicb_offerallocations"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDICB_OFFERALLOCATIONS
+UID: NS:d3dumddi._D3DDDICB_OFFERALLOCATIONS
+title: "_D3DDDICB_OFFERALLOCATIONS"
+author: windows-driver-content
+description: Defines the video memory allocations that the driver offers for reuse. Used with the pfnOfferAllocationsCb function.
+old-location: display\d3dddicb_offerallocations.htm
+old-project: display
+ms.assetid: 26f3cd7b-ae2e-4632-bfb2-e62839346f83
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: "_D3DDDICB_OFFERALLOCATIONS, D3DDDICB_OFFERALLOCATIONS structure [Display Devices], d3dumddi/D3DDDICB_OFFERALLOCATIONS, D3DDDICB_OFFERALLOCATIONS, display.d3dddicb_offerallocations"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	D3dumddi.h
+apiname:
+-	D3DDDICB_OFFERALLOCATIONS
+product: Windows
+targetos: Windows
+req.typenames: D3DDDICB_OFFERALLOCATIONS
 ---
 
 # _D3DDDICB_OFFERALLOCATIONS structure

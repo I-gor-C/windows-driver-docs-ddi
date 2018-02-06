@@ -1,42 +1,47 @@
 ---
-UID : NS:winspool._BIDI_REQUEST_CONTAINER
-title : "_BIDI_REQUEST_CONTAINER"
-author : windows-driver-content
-description : The BIDI_REQUEST_CONTAINER structure is a container for a list of bidi requests.
-old-location : print\bidi_request_container.htm
-old-project : print
-ms.assetid : 9892cf0e-23ee-496f-9078-4a2a1fdb19d9
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : BIDI_REQUEST_CONTAINER structure [Print Devices], *PBIDI_REQUEST_CONTAINER, winspool/LPBIDI_REQUEST_CONTAINER, winspool/BIDI_REQUEST_CONTAINER, BIDI_REQUEST_CONTAINER, winspool/PBIDI_REQUEST_CONTAINER, PBIDI_REQUEST_CONTAINER, LPBIDI_REQUEST_CONTAINER structure pointer [Print Devices], LPBIDI_REQUEST_CONTAINER, _BIDI_REQUEST_CONTAINER, print.bidi_request_container, *LPBIDI_REQUEST_CONTAINER, PBIDI_REQUEST_CONTAINER structure pointer [Print Devices], spoolfnc_26c43d0f-69f8-415c-8653-79ef503fe139.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : winspool.h
-req.include-header : Winspool.h
-req.target-type : Windows
-req.target-min-winverclnt : This structure is available in Windows XP and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : BIDI_REQUEST_CONTAINER, *LPBIDI_REQUEST_CONTAINER, *PBIDI_REQUEST_CONTAINER
-req.product : Windows 10 or later.
+UID: NS:winspool._BIDI_REQUEST_CONTAINER
+title: "_BIDI_REQUEST_CONTAINER"
+author: windows-driver-content
+description: The BIDI_REQUEST_CONTAINER structure is a container for a list of bidi requests.
+old-location: print\bidi_request_container.htm
+old-project: print
+ms.assetid: 9892cf0e-23ee-496f-9078-4a2a1fdb19d9
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: BIDI_REQUEST_CONTAINER structure [Print Devices], *PBIDI_REQUEST_CONTAINER, winspool/LPBIDI_REQUEST_CONTAINER, winspool/BIDI_REQUEST_CONTAINER, BIDI_REQUEST_CONTAINER, winspool/PBIDI_REQUEST_CONTAINER, PBIDI_REQUEST_CONTAINER, LPBIDI_REQUEST_CONTAINER structure pointer [Print Devices], LPBIDI_REQUEST_CONTAINER, _BIDI_REQUEST_CONTAINER, print.bidi_request_container, *LPBIDI_REQUEST_CONTAINER, PBIDI_REQUEST_CONTAINER structure pointer [Print Devices], spoolfnc_26c43d0f-69f8-415c-8653-79ef503fe139.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: winspool.h
+req.include-header: Winspool.h
+req.target-type: Windows
+req.target-min-winverclnt: This structure is available in Windows XP and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	winspool.h
+apiname:
+-	BIDI_REQUEST_CONTAINER
+product: Windows
+targetos: Windows
+req.typenames: BIDI_REQUEST_CONTAINER, *LPBIDI_REQUEST_CONTAINER, *PBIDI_REQUEST_CONTAINER
+req.product: Windows 10 or later.
 ---
 
 # _BIDI_REQUEST_CONTAINER structure

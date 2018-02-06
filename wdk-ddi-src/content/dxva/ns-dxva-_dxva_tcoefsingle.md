@@ -1,41 +1,46 @@
 ---
-UID : NS:dxva._DXVA_TCoefSingle
-title : "_DXVA_TCoefSingle"
-author : windows-driver-content
-description : The DXVA_TCoefSingle structure is sent by the host decoder to the accelerator to specify IDCT coefficient values.
-old-location : display\dxva_tcoefsingle.htm
-old-project : display
-ms.assetid : 665a9819-d319-414d-9a31-ee565b293197
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : "_DXVA_TCoefSingle, LPDXVA_TCoefSingle, dxvaref_2b92ced3-3856-466f-b95a-84dd78426a0e.xml, *LPDXVA_TCoefSingle, display.dxva_tcoefsingle, dxva/DXVA_TCoefSingle, DXVA_TCoefSingle, DXVA_TCoefSingle structure [Display Devices], dxva/LPDXVA_TCoefSingle, LPDXVA_TCoefSingle structure pointer [Display Devices]"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : dxva.h
-req.include-header : Dxva.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXVA_TCoefSingle, *LPDXVA_TCoefSingle
+UID: NS:dxva._DXVA_TCoefSingle
+title: "_DXVA_TCoefSingle"
+author: windows-driver-content
+description: The DXVA_TCoefSingle structure is sent by the host decoder to the accelerator to specify IDCT coefficient values.
+old-location: display\dxva_tcoefsingle.htm
+old-project: display
+ms.assetid: 665a9819-d319-414d-9a31-ee565b293197
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: "_DXVA_TCoefSingle, LPDXVA_TCoefSingle, dxvaref_2b92ced3-3856-466f-b95a-84dd78426a0e.xml, *LPDXVA_TCoefSingle, display.dxva_tcoefsingle, dxva/DXVA_TCoefSingle, DXVA_TCoefSingle, DXVA_TCoefSingle structure [Display Devices], dxva/LPDXVA_TCoefSingle, LPDXVA_TCoefSingle structure pointer [Display Devices]"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: dxva.h
+req.include-header: Dxva.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	dxva.h
+apiname:
+-	DXVA_TCoefSingle
+product: Windows
+targetos: Windows
+req.typenames: DXVA_TCoefSingle, *LPDXVA_TCoefSingle
 ---
 
 # _DXVA_TCoefSingle structure

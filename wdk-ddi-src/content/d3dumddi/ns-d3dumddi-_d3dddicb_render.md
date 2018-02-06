@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._D3DDDICB_RENDER
-title : "_D3DDDICB_RENDER"
-author : windows-driver-content
-description : The D3DDDICB_RENDER structure describes the current command buffer to be rendered.
-old-location : display\d3dddicb_render.htm
-old-project : display
-ms.assetid : 7a2bf1a8-d416-46bc-a9ba-9122407ea2a2
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DDDICB_RENDER, _D3DDDICB_RENDER, d3dumddi/D3DDDICB_RENDER, display.d3dddicb_render, D3DDDICB_RENDER structure [Display Devices], D3D_param_Structs_62df043b-dbd7-4faf-a911-683ab12ba79b.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDICB_RENDER
+UID: NS:d3dumddi._D3DDDICB_RENDER
+title: "_D3DDDICB_RENDER"
+author: windows-driver-content
+description: The D3DDDICB_RENDER structure describes the current command buffer to be rendered.
+old-location: display\d3dddicb_render.htm
+old-project: display
+ms.assetid: 7a2bf1a8-d416-46bc-a9ba-9122407ea2a2
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DDDICB_RENDER, _D3DDDICB_RENDER, d3dumddi/D3DDDICB_RENDER, display.d3dddicb_render, D3DDDICB_RENDER structure [Display Devices], D3D_param_Structs_62df043b-dbd7-4faf-a911-683ab12ba79b.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	D3DDDICB_RENDER
+product: Windows
+targetos: Windows
+req.typenames: D3DDDICB_RENDER
 ---
 
 # _D3DDDICB_RENDER structure

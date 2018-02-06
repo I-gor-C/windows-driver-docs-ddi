@@ -1,41 +1,46 @@
 ---
-UID : NS:d3d10umddi.D3D10DDIARG_TEX3D_RENDERTARGETVIEW
-title : D3D10DDIARG_TEX3D_RENDERTARGETVIEW
-author : windows-driver-content
-description : The D3D10DDIARG_TEX3D_RENDERTARGETVIEW structure describes a three-dimensional (3-D) texture that is used to create a render target view in a call to the CreateRenderTargetView function.
-old-location : display\d3d10ddiarg_tex3d_rendertargetview.htm
-old-project : display
-ms.assetid : 2feff5f5-a104-4738-94be-add08fd99037
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3d10umddi/D3D10DDIARG_TEX3D_RENDERTARGETVIEW, D3D10DDIARG_TEX3D_RENDERTARGETVIEW structure [Display Devices], D3D10DDIARG_TEX3D_RENDERTARGETVIEW, UMDisplayDriver_Dx10param_Structs_705e661d-890a-45db-a805-60d2c2cbde6f.xml, display.d3d10ddiarg_tex3d_rendertargetview
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3D10DDIARG_TEX3D_RENDERTARGETVIEW
+UID: NS:d3d10umddi.D3D10DDIARG_TEX3D_RENDERTARGETVIEW
+title: D3D10DDIARG_TEX3D_RENDERTARGETVIEW
+author: windows-driver-content
+description: The D3D10DDIARG_TEX3D_RENDERTARGETVIEW structure describes a three-dimensional (3-D) texture that is used to create a render target view in a call to the CreateRenderTargetView function.
+old-location: display\d3d10ddiarg_tex3d_rendertargetview.htm
+old-project: display
+ms.assetid: 2feff5f5-a104-4738-94be-add08fd99037
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3d10umddi/D3D10DDIARG_TEX3D_RENDERTARGETVIEW, D3D10DDIARG_TEX3D_RENDERTARGETVIEW structure [Display Devices], D3D10DDIARG_TEX3D_RENDERTARGETVIEW, UMDisplayDriver_Dx10param_Structs_705e661d-890a-45db-a805-60d2c2cbde6f.xml, display.d3d10ddiarg_tex3d_rendertargetview
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	D3D10DDIARG_TEX3D_RENDERTARGETVIEW
+product: Windows
+targetos: Windows
+req.typenames: D3D10DDIARG_TEX3D_RENDERTARGETVIEW
 ---
 
 # D3D10DDIARG_TEX3D_RENDERTARGETVIEW structure

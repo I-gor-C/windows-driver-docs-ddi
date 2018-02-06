@@ -1,12 +1,12 @@
 ---
-UID : NA:d3d10umddi
-ms.assetid : 431c5cab-5fae-3d70-8c9e-f9908747c0b3
-ms.author : windowsdriverdev
-ms.date : 01/18/18
-ms.keywords : 
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : portal
+UID: NA:d3d10umddi
+ms.assetid: 431c5cab-5fae-3d70-8c9e-f9908747c0b3
+ms.author: windowsdriverdev
+ms.date: 01/18/18
+ms.keywords: 
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: portal
 ---
 
 # d3d10umddi.h header

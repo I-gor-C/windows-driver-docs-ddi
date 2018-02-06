@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddscsi.IOCTL_ATA_PASS_THROUGH_DIRECT
-title : IOCTL_ATA_PASS_THROUGH_DIRECT
-author : windows-driver-content
-description : Allows an application to send almost any ATA command to a target device, with the following restrictions:\_If a class driver for the target type of device exists, the application must send the request to the class driver.
-old-location : storage\ioctl_ata_pass_through_direct.htm
-old-project : storage
-ms.assetid : 705918c7-c4ea-4495-b87f-2904f7d45ac0
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_ata_pass_through_direct, IOCTL_ATA_PASS_THROUGH_DIRECT control code [Storage Devices], IOCTL_ATA_PASS_THROUGH_DIRECT, ntddscsi/IOCTL_ATA_PASS_THROUGH_DIRECT, k307_8f1da276-e1bf-405e-8e01-a633b8671d5f.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddscsi.h
-req.include-header : Ntddscsi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows Server 2003.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : MP_STORAGE_DIAGNOSTIC_TARGET_TYPE, *PMP_STORAGE_DIAGNOSTIC_TARGET_TYPE
+UID: NI:ntddscsi.IOCTL_ATA_PASS_THROUGH_DIRECT
+title: IOCTL_ATA_PASS_THROUGH_DIRECT
+author: windows-driver-content
+description: Allows an application to send almost any ATA command to a target device, with the following restrictions:\_If a class driver for the target type of device exists, the application must send the request to the class driver.
+old-location: storage\ioctl_ata_pass_through_direct.htm
+old-project: storage
+ms.assetid: 705918c7-c4ea-4495-b87f-2904f7d45ac0
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_ata_pass_through_direct, IOCTL_ATA_PASS_THROUGH_DIRECT control code [Storage Devices], IOCTL_ATA_PASS_THROUGH_DIRECT, ntddscsi/IOCTL_ATA_PASS_THROUGH_DIRECT, k307_8f1da276-e1bf-405e-8e01-a633b8671d5f.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddscsi.h
+req.include-header: Ntddscsi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows Server 2003.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddscsi.h
+apiname:
+-	IOCTL_ATA_PASS_THROUGH_DIRECT
+product: Windows
+targetos: Windows
+req.typenames: MP_STORAGE_DIAGNOSTIC_TARGET_TYPE, *PMP_STORAGE_DIAGNOSTIC_TARGET_TYPE
 ---
 
 # IOCTL_ATA_PASS_THROUGH_DIRECT IOCTL

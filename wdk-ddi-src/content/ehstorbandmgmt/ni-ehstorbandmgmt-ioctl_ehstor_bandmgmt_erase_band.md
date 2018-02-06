@@ -1,41 +1,46 @@
 ---
-UID : NI:ehstorbandmgmt.IOCTL_EHSTOR_BANDMGMT_ERASE_BAND
-title : IOCTL_EHSTOR_BANDMGMT_ERASE_BAND
-author : windows-driver-content
-description : The IOCTL_EHSTOR_BANDMGMT_ERASE_BAND request will cryptographically erase and reset the authentication key of a band. The remaining configuration of the band is left unmodified.
-old-location : storage\ioctl_ehstor_bandmgmt_erase_band.htm
-old-project : storage
-ms.assetid : E7DE8E55-B753-42AF-B25F-F806EE37DCF1
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_ehstor_bandmgmt_erase_band, IOCTL_EHSTOR_BANDMGMT_ERASE_BAND control code [Storage Devices], IOCTL_EHSTOR_BANDMGMT_ERASE_BAND, ehstorbandmgmt/IOCTL_EHSTOR_BANDMGMT_ERASE_BAND
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ehstorbandmgmt.h
-req.include-header : EhStorBandMgmt.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows 8
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXVA_VideoSample32
+UID: NI:ehstorbandmgmt.IOCTL_EHSTOR_BANDMGMT_ERASE_BAND
+title: IOCTL_EHSTOR_BANDMGMT_ERASE_BAND
+author: windows-driver-content
+description: The IOCTL_EHSTOR_BANDMGMT_ERASE_BAND request will cryptographically erase and reset the authentication key of a band. The remaining configuration of the band is left unmodified.
+old-location: storage\ioctl_ehstor_bandmgmt_erase_band.htm
+old-project: storage
+ms.assetid: E7DE8E55-B753-42AF-B25F-F806EE37DCF1
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_ehstor_bandmgmt_erase_band, IOCTL_EHSTOR_BANDMGMT_ERASE_BAND control code [Storage Devices], IOCTL_EHSTOR_BANDMGMT_ERASE_BAND, ehstorbandmgmt/IOCTL_EHSTOR_BANDMGMT_ERASE_BAND
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ehstorbandmgmt.h
+req.include-header: EhStorBandMgmt.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows 8
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	EhStorBandMgmt.h
+apiname:
+-	IOCTL_EHSTOR_BANDMGMT_ERASE_BAND
+product: Windows
+targetos: Windows
+req.typenames: DXVA_VideoSample32
 ---
 
 # IOCTL_EHSTOR_BANDMGMT_ERASE_BAND IOCTL

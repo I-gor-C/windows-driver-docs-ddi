@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dukmdt._D3DDDICB_DESTROYALLOCATION2FLAGS
-title : "_D3DDDICB_DESTROYALLOCATION2FLAGS"
-author : windows-driver-content
-description : The D3DDDICB_DESTROYALLOCATION2FLAGS structure is used with the D3DKMT_DESTROYALLOCATION2 structure to describe parameters for releasing allocations with D3DKMTDestroyAllocation2.D3DDDICB_DESTROYALLOCATION2FLAGS structure is used with the D3DKMT_DESTROYALLOCATION2 structure to describe parameters for releasing allocations with D3DKMTDestroyAllocation2.
-old-location : display\d3dddicb_destroyallocation2flags.htm
-old-project : display
-ms.assetid : 50D4BFB7-B5AC-4202-B426-F152B06C9F46
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DDDICB_DESTROYALLOCATION2FLAGS, D3DDDICB_DESTROYALLOCATION2FLAGS structure [Display Devices], d3dukmdt/D3DDDICB_DESTROYALLOCATION2FLAGS, _D3DDDICB_DESTROYALLOCATION2FLAGS, display.d3dddicb_destroyallocation2flags
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dukmdt.h
-req.include-header : D3dumddi.h, D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDICB_DESTROYALLOCATION2FLAGS
+UID: NS:d3dukmdt._D3DDDICB_DESTROYALLOCATION2FLAGS
+title: "_D3DDDICB_DESTROYALLOCATION2FLAGS"
+author: windows-driver-content
+description: The D3DDDICB_DESTROYALLOCATION2FLAGS structure is used with the D3DKMT_DESTROYALLOCATION2 structure to describe parameters for releasing allocations with D3DKMTDestroyAllocation2.D3DDDICB_DESTROYALLOCATION2FLAGS structure is used with the D3DKMT_DESTROYALLOCATION2 structure to describe parameters for releasing allocations with D3DKMTDestroyAllocation2.
+old-location: display\d3dddicb_destroyallocation2flags.htm
+old-project: display
+ms.assetid: 50D4BFB7-B5AC-4202-B426-F152B06C9F46
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DDDICB_DESTROYALLOCATION2FLAGS, D3DDDICB_DESTROYALLOCATION2FLAGS structure [Display Devices], d3dukmdt/D3DDDICB_DESTROYALLOCATION2FLAGS, _D3DDDICB_DESTROYALLOCATION2FLAGS, display.d3dddicb_destroyallocation2flags
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dukmdt.h
+req.include-header: D3dumddi.h, D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dukmdt.h
+apiname:
+-	D3DDDICB_DESTROYALLOCATION2FLAGS
+product: Windows
+targetos: Windows
+req.typenames: D3DDDICB_DESTROYALLOCATION2FLAGS
 ---
 
 # _D3DDDICB_DESTROYALLOCATION2FLAGS structure

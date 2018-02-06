@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsTerminateDevice
-title : KsTerminateDevice function
-author : windows-driver-content
-description : The KsTerminateDevice function removes an AVStream device.
-old-location : stream\ksterminatedevice.htm
-old-project : stream
-ms.assetid : 3d6ad381-0bd9-47d8-a4dd-e434b62bf5a1
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.ksterminatedevice, KsTerminateDevice, ks/KsTerminateDevice, KsTerminateDevice function [Streaming Media Devices], avfunc_42f55ca4-ed73-4ea2-9f33-462d9d13e3e3.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsTerminateDevice
+title: KsTerminateDevice function
+author: windows-driver-content
+description: The KsTerminateDevice function removes an AVStream device.
+old-location: stream\ksterminatedevice.htm
+old-project: stream
+ms.assetid: 3d6ad381-0bd9-47d8-a4dd-e434b62bf5a1
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.ksterminatedevice, KsTerminateDevice, ks/KsTerminateDevice, KsTerminateDevice function [Streaming Media Devices], avfunc_42f55ca4-ed73-4ea2-9f33-462d9d13e3e3.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsTerminateDevice
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

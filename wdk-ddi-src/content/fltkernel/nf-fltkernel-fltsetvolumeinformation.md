@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltSetVolumeInformation
-title : FltSetVolumeInformation function
-author : windows-driver-content
-description : FltSetVolumeInformation changes various kinds of information about the volume that the given instance is attached to.
-old-location : ifsk\fltsetvolumeinformation.htm
-old-project : ifsk
-ms.assetid : ee6b4a41-e4a7-41b8-9ca9-77b9052724a3
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltApiRef_p_to_z_54f9b03b-9c74-4403-9189-90eb8c93cb3e.xml, FltSetVolumeInformation, ifsk.fltsetvolumeinformation, fltkernel/FltSetVolumeInformation, FltSetVolumeInformation function [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltSetVolumeInformation
+title: FltSetVolumeInformation function
+author: windows-driver-content
+description: FltSetVolumeInformation changes various kinds of information about the volume that the given instance is attached to.
+old-location: ifsk\fltsetvolumeinformation.htm
+old-project: ifsk
+ms.assetid: ee6b4a41-e4a7-41b8-9ca9-77b9052724a3
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltApiRef_p_to_z_54f9b03b-9c74-4403-9189-90eb8c93cb3e.xml, FltSetVolumeInformation, ifsk.fltsetvolumeinformation, fltkernel/FltSetVolumeInformation, FltSetVolumeInformation function [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltSetVolumeInformation
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

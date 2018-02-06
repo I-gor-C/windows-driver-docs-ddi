@@ -1,42 +1,47 @@
 ---
-UID : NF:video.VideoPortQueryServices
-title : VideoPortQueryServices function
-author : windows-driver-content
-description : The VideoPortQueryServices function exposes a specified interface that is implemented by the video port driver.
-old-location : display\videoportqueryservices.htm
-old-project : display
-ms.assetid : 88d54fbc-e865-4a59-bb1c-75adfb49c355
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : VideoPortQueryServices function [Display Devices], video/VideoPortQueryServices, VideoPort_Functions_4f9cc677-4c65-4577-a289-92b8fb01c787.xml, display.videoportqueryservices, VideoPortQueryServices
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows XP and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Videoprt.lib
-req.dll : Videoprt.sys
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_PORT_SERVICES
-req.product : Windows 10 or later.
+UID: NF:video.VideoPortQueryServices
+title: VideoPortQueryServices function
+author: windows-driver-content
+description: The VideoPortQueryServices function exposes a specified interface that is implemented by the video port driver.
+old-location: display\videoportqueryservices.htm
+old-project: display
+ms.assetid: 88d54fbc-e865-4a59-bb1c-75adfb49c355
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: VideoPortQueryServices function [Display Devices], video/VideoPortQueryServices, VideoPort_Functions_4f9cc677-4c65-4577-a289-92b8fb01c787.xml, display.videoportqueryservices, VideoPortQueryServices
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows XP and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Videoprt.lib
+req.dll: Videoprt.sys
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Videoprt.sys
+apiname:
+-	VideoPortQueryServices
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_PORT_SERVICES
+req.product: Windows 10 or later.
 ---
 
 

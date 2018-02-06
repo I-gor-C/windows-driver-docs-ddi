@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisFreeMemoryWithTag
-title : NdisFreeMemoryWithTag function
-author : windows-driver-content
-description : The NdisFreeMemoryWithTag function is deprecated for all NDIS versions. Use NdisAllocateMemoryWithTagPriority instead.
-old-location : netvista\ndisfreememorywithtag.htm
-old-project : netvista
-ms.assetid : c9010a08-3c62-481a-8545-253d7b24b1ac
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : ndis_shared_memory_ref_2a68decc-2cef-4606-9679-c29c0e5362a2.xml, NdisFreeMemoryWithTag, netvista.ndisfreememorywithtag, NdisFreeMemoryWithTag function [Network Drivers Starting with Windows Vista], ndis/NdisFreeMemoryWithTag
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported in NDIS 6.20 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisFreeMemoryWithTag
+title: NdisFreeMemoryWithTag function
+author: windows-driver-content
+description: The NdisFreeMemoryWithTag function is deprecated for all NDIS versions. Use NdisAllocateMemoryWithTagPriority instead.
+old-location: netvista\ndisfreememorywithtag.htm
+old-project: netvista
+ms.assetid: c9010a08-3c62-481a-8545-253d7b24b1ac
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: ndis_shared_memory_ref_2a68decc-2cef-4606-9679-c29c0e5362a2.xml, NdisFreeMemoryWithTag, netvista.ndisfreememorywithtag, NdisFreeMemoryWithTag function [Network Drivers Starting with Windows Vista], ndis/NdisFreeMemoryWithTag
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported in NDIS 6.20 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisFreeMemoryWithTag
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

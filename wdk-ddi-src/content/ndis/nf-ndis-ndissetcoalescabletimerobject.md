@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisSetCoalescableTimerObject
-title : NdisSetCoalescableTimerObject function
-author : windows-driver-content
-description : The NdisSetCoalescableTimerObject function sets a timer object that the operating system coordinates with other timers, typically to reduce power consumption, when the exact expiration of the timer is not important to driver operation.
-old-location : netvista\ndissetcoalescabletimerobject.htm
-old-project : netvista
-ms.assetid : f6f50bba-cda5-41ed-9e0b-1aea5113a22b
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NdisSetCoalescableTimerObject function [Network Drivers Starting with Windows Vista], ndis_timer_ref_1f787022-10cd-4ae1-97d9-f40bae70a844.xml, ndis/NdisSetCoalescableTimerObject, netvista.ndissetcoalescabletimerobject, NdisSetCoalescableTimerObject
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported in NDIS 6.20 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisSetCoalescableTimerObject
+title: NdisSetCoalescableTimerObject function
+author: windows-driver-content
+description: The NdisSetCoalescableTimerObject function sets a timer object that the operating system coordinates with other timers, typically to reduce power consumption, when the exact expiration of the timer is not important to driver operation.
+old-location: netvista\ndissetcoalescabletimerobject.htm
+old-project: netvista
+ms.assetid: f6f50bba-cda5-41ed-9e0b-1aea5113a22b
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NdisSetCoalescableTimerObject function [Network Drivers Starting with Windows Vista], ndis_timer_ref_1f787022-10cd-4ae1-97d9-f40bae70a844.xml, ndis/NdisSetCoalescableTimerObject, netvista.ndissetcoalescabletimerobject, NdisSetCoalescableTimerObject
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported in NDIS 6.20 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisSetCoalescableTimerObject
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

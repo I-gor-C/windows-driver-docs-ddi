@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltIsCallbackDataDirty
-title : FltIsCallbackDataDirty function
-author : windows-driver-content
-description : The FltIsCallbackDataDirty routine tests the FLTFL_CALLBACK_DATA_DIRTY flag in a callback data structure.
-old-location : ifsk\fltiscallbackdatadirty.htm
-old-project : ifsk
-ms.assetid : 128cab09-cbce-4a6f-9c57-5c8eda4477b3
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.fltiscallbackdatadirty, FltIsCallbackDataDirty, fltkernel/FltIsCallbackDataDirty, FltIsCallbackDataDirty routine [Installable File System Drivers], FltApiRef_e_to_o_89035d79-bcf8-4f8d-8030-8a805e1a44df.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltIsCallbackDataDirty
+title: FltIsCallbackDataDirty function
+author: windows-driver-content
+description: The FltIsCallbackDataDirty routine tests the FLTFL_CALLBACK_DATA_DIRTY flag in a callback data structure.
+old-location: ifsk\fltiscallbackdatadirty.htm
+old-project: ifsk
+ms.assetid: 128cab09-cbce-4a6f-9c57-5c8eda4477b3
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.fltiscallbackdatadirty, FltIsCallbackDataDirty, fltkernel/FltIsCallbackDataDirty, FltIsCallbackDataDirty routine [Installable File System Drivers], FltApiRef_e_to_o_89035d79-bcf8-4f8d-8030-8a805e1a44df.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltIsCallbackDataDirty
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

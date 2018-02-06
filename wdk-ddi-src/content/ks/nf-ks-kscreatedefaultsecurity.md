@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsCreateDefaultSecurity
-title : KsCreateDefaultSecurity function
-author : windows-driver-content
-description : The KsCreateDefaultSecurity function creates a security descriptor with default security, optionally inheriting parameters from a parent security descriptor.
-old-location : stream\kscreatedefaultsecurity.htm
-old-project : stream
-ms.assetid : 2992a62b-7c3c-4bf5-ba3a-26c26c419f98
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ks/KsCreateDefaultSecurity, KsCreateDefaultSecurity function [Streaming Media Devices], KsCreateDefaultSecurity, ksfunc_ab036f47-0a15-4983-98b0-7277782f29e6.xml, stream.kscreatedefaultsecurity
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsCreateDefaultSecurity
+title: KsCreateDefaultSecurity function
+author: windows-driver-content
+description: The KsCreateDefaultSecurity function creates a security descriptor with default security, optionally inheriting parameters from a parent security descriptor.
+old-location: stream\kscreatedefaultsecurity.htm
+old-project: stream
+ms.assetid: 2992a62b-7c3c-4bf5-ba3a-26c26c419f98
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ks/KsCreateDefaultSecurity, KsCreateDefaultSecurity function [Streaming Media Devices], KsCreateDefaultSecurity, ksfunc_ab036f47-0a15-4983-98b0-7277782f29e6.xml, stream.kscreatedefaultsecurity
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsCreateDefaultSecurity
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

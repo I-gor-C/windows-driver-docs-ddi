@@ -1,41 +1,46 @@
 ---
-UID : NF:mxdc.MxdcGetPDEVAdjustment
-title : MxdcGetPDEVAdjustment function
-author : windows-driver-content
-description : The MxdcGetPDEVAdjustment function is exported by a printer interface DLL and supplies printer configuration data for the Microsoft XPS Document Converter (MXDC).
-old-location : print\mxdcgetpdevadjustment.htm
-old-project : print
-ms.assetid : 4839337b-0328-4919-8f49-d7847743845c
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : mxdc/MxdcGetPDEVAdjustment, print.mxdcgetpdevadjustment, MxdcGetPDEVAdjustment function [Print Devices], MxdcGetPDEVAdjustment, print_xpsdrv_7e324989-1809-44e8-8b5b-c64f83740cd5.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : mxdc.h
-req.include-header : Mxdc.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Microsoft Windows XP and later versions of the Windows operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
+UID: NF:mxdc.MxdcGetPDEVAdjustment
+title: MxdcGetPDEVAdjustment function
+author: windows-driver-content
+description: The MxdcGetPDEVAdjustment function is exported by a printer interface DLL and supplies printer configuration data for the Microsoft XPS Document Converter (MXDC).
+old-location: print\mxdcgetpdevadjustment.htm
+old-project: print
+ms.assetid: 4839337b-0328-4919-8f49-d7847743845c
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: mxdc/MxdcGetPDEVAdjustment, print.mxdcgetpdevadjustment, MxdcGetPDEVAdjustment function [Print Devices], MxdcGetPDEVAdjustment, print_xpsdrv_7e324989-1809-44e8-8b5b-c64f83740cd5.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: mxdc.h
+req.include-header: Mxdc.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Microsoft Windows XP and later versions of the Windows operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	mxdc.h
+apiname:
+-	MxdcGetPDEVAdjustment
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 

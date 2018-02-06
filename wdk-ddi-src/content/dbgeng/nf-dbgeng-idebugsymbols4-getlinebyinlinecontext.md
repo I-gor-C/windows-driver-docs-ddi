@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugSymbols4.GetLineByInlineContext
-title : IDebugSymbols4::GetLineByInlineContext method
-author : windows-driver-content
-description : Gets a line by inline context.
-old-location : debugger\idebugsymbols4_getlinebyinlinecontext.htm
-old-project : debugger
-ms.assetid : AFDB4DB4-3C63-44A0-88D7-C8047ECB2261
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : GetLineByInlineContext method [Windows Debugging], IDebugSymbols4::GetLineByInlineContext, GetLineByInlineContext, IDebugSymbols4, IDebugSymbols4 interface [Windows Debugging], GetLineByInlineContext method, debugger.idebugsymbols4_getlinebyinlinecontext, GetLineByInlineContext method [Windows Debugging], IDebugSymbols4 interface, dbgeng/IDebugSymbols4::GetLineByInlineContext
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSymbols4.GetLineByInlineContext
+title: IDebugSymbols4::GetLineByInlineContext method
+author: windows-driver-content
+description: Gets a line by inline context.
+old-location: debugger\idebugsymbols4_getlinebyinlinecontext.htm
+old-project: debugger
+ms.assetid: AFDB4DB4-3C63-44A0-88D7-C8047ECB2261
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: GetLineByInlineContext method [Windows Debugging], IDebugSymbols4::GetLineByInlineContext, GetLineByInlineContext, IDebugSymbols4, IDebugSymbols4 interface [Windows Debugging], GetLineByInlineContext method, debugger.idebugsymbols4_getlinebyinlinecontext, GetLineByInlineContext method [Windows Debugging], IDebugSymbols4 interface, dbgeng/IDebugSymbols4::GetLineByInlineContext
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Dbgeng.h
+apiname:
+-	IDebugSymbols4.GetLineByInlineContext
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

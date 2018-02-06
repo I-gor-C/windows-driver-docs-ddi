@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dhal._D3DHAL_DP2SETTRANSFORM
-title : "_D3DHAL_DP2SETTRANSFORM"
-author : windows-driver-content
-description : D3DHAL_DP2SETTRANSFORM structure is used to specify the transform state and matrix for D3dDrawPrimitives2.
-old-location : display\d3dhal_dp2settransform.htm
-old-project : display
-ms.assetid : 7905f5bd-15f5-4b4f-bc00-91acb2371dc0
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : "_D3DHAL_DP2SETTRANSFORM, LPD3DHAL_DP2SETTRANSFORM, d3dhal/D3DHAL_DP2SETTRANSFORM, *LPD3DHAL_DP2SETTRANSFORM, display.d3dhal_dp2settransform, LPD3DHAL_DP2SETTRANSFORM structure pointer [Display Devices], D3DHAL_DP2SETTRANSFORM structure [Display Devices], d3dstrct_0392a6fc-4098-4c82-92fa-5684be9fa195.xml, D3DHAL_DP2SETTRANSFORM, d3dhal/LPD3DHAL_DP2SETTRANSFORM"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dhal.h
-req.include-header : D3dhal.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DHAL_DP2SETTRANSFORM
+UID: NS:d3dhal._D3DHAL_DP2SETTRANSFORM
+title: "_D3DHAL_DP2SETTRANSFORM"
+author: windows-driver-content
+description: D3DHAL_DP2SETTRANSFORM structure is used to specify the transform state and matrix for D3dDrawPrimitives2.
+old-location: display\d3dhal_dp2settransform.htm
+old-project: display
+ms.assetid: 7905f5bd-15f5-4b4f-bc00-91acb2371dc0
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: "_D3DHAL_DP2SETTRANSFORM, LPD3DHAL_DP2SETTRANSFORM, d3dhal/D3DHAL_DP2SETTRANSFORM, *LPD3DHAL_DP2SETTRANSFORM, display.d3dhal_dp2settransform, LPD3DHAL_DP2SETTRANSFORM structure pointer [Display Devices], D3DHAL_DP2SETTRANSFORM structure [Display Devices], d3dstrct_0392a6fc-4098-4c82-92fa-5684be9fa195.xml, D3DHAL_DP2SETTRANSFORM, d3dhal/LPD3DHAL_DP2SETTRANSFORM"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dhal.h
+req.include-header: D3dhal.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dhal.h
+apiname:
+-	D3DHAL_DP2SETTRANSFORM
+product: Windows
+targetos: Windows
+req.typenames: D3DHAL_DP2SETTRANSFORM
 ---
 
 # _D3DHAL_DP2SETTRANSFORM structure

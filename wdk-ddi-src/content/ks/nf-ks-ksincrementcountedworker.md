@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsIncrementCountedWorker
-title : KsIncrementCountedWorker function
-author : windows-driver-content
-description : Increments the current worker count, and optionally queues the counted work item with the worker previously created by KsRegisterCountedWorker.
-old-location : stream\ksincrementcountedworker.htm
-old-project : stream
-ms.assetid : 282ffc00-ca62-4729-afe3-c13ea8069a18
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KsIncrementCountedWorker, stream.ksincrementcountedworker, ksfunc_14b63f3e-f634-4147-891b-111179462966.xml, ks/KsIncrementCountedWorker, KsIncrementCountedWorker function [Streaming Media Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsIncrementCountedWorker
+title: KsIncrementCountedWorker function
+author: windows-driver-content
+description: Increments the current worker count, and optionally queues the counted work item with the worker previously created by KsRegisterCountedWorker.
+old-location: stream\ksincrementcountedworker.htm
+old-project: stream
+ms.assetid: 282ffc00-ca62-4729-afe3-c13ea8069a18
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KsIncrementCountedWorker, stream.ksincrementcountedworker, ksfunc_14b63f3e-f634-4147-891b-111179462966.xml, ks/KsIncrementCountedWorker, KsIncrementCountedWorker function [Streaming Media Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsIncrementCountedWorker
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

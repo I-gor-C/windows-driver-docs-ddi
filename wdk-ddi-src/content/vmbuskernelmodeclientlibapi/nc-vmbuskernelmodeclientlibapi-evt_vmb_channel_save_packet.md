@@ -1,42 +1,47 @@
 ---
-UID : NC:vmbuskernelmodeclientlibapi.EVT_VMB_CHANNEL_SAVE_PACKET
-title : EVT_VMB_CHANNEL_SAVE_PACKET
-author : windows-driver-content
-description : The EvtVmbChannelSavePacket callback function is invoked when the virtualization service provider (VSP) endpoint must save the state associated with a packet.
-old-location : netvista\evt_vmb_channel_save_packet.htm
-old-project : netvista
-ms.assetid : 92CC3C36-D10C-4C6B-8BB4-476E72AD684C
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.evt_vmb_channel_save_packet, EvtVmbChannelSavePacket callback function [Network Drivers Starting with Windows Vista], EvtVmbChannelSavePacket, EVT_VMB_CHANNEL_SAVE_PACKET, EVT_VMB_CHANNEL_SAVE_PACKET, vmbuskernelmodeclientlibapi/EvtVmbChannelSavePacket, PFN_VMB_CHANNEL_SAVE_PACKET callback function pointer [Network Drivers Starting with Windows Vista], PFN_VMB_CHANNEL_SAVE_PACKET
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : vmbuskernelmodeclientlibapi.h
-req.include-header : VmbusKernelModeClientLibApi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PVIDEO_PORT_AGP_SERVICES, VIDEO_PORT_AGP_SERVICES"
-req.product : Windows 10 or later.
+UID: NC:vmbuskernelmodeclientlibapi.EVT_VMB_CHANNEL_SAVE_PACKET
+title: EVT_VMB_CHANNEL_SAVE_PACKET
+author: windows-driver-content
+description: The EvtVmbChannelSavePacket callback function is invoked when the virtualization service provider (VSP) endpoint must save the state associated with a packet.
+old-location: netvista\evt_vmb_channel_save_packet.htm
+old-project: netvista
+ms.assetid: 92CC3C36-D10C-4C6B-8BB4-476E72AD684C
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.evt_vmb_channel_save_packet, EvtVmbChannelSavePacket callback function [Network Drivers Starting with Windows Vista], EvtVmbChannelSavePacket, EVT_VMB_CHANNEL_SAVE_PACKET, EVT_VMB_CHANNEL_SAVE_PACKET, vmbuskernelmodeclientlibapi/EvtVmbChannelSavePacket, PFN_VMB_CHANNEL_SAVE_PACKET callback function pointer [Network Drivers Starting with Windows Vista], PFN_VMB_CHANNEL_SAVE_PACKET
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: vmbuskernelmodeclientlibapi.h
+req.include-header: VmbusKernelModeClientLibApi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	VmbusKernelModeClientLibApi.h
+apiname:
+-	PFN_VMB_CHANNEL_SAVE_PACKET
+product: Windows
+targetos: Windows
+req.typenames: "*PVIDEO_PORT_AGP_SERVICES, VIDEO_PORT_AGP_SERVICES"
+req.product: Windows 10 or later.
 ---
 
 

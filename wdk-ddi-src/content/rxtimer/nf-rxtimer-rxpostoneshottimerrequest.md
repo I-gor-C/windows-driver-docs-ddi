@@ -1,42 +1,47 @@
 ---
-UID : NF:rxtimer.RxPostOneShotTimerRequest
-title : RxPostOneShotTimerRequest function
-author : windows-driver-content
-description : RxPostOneShotTimerRequest initializes a one-shot timer entry. The passed-in pointer to a worker thread routine is called once when the timer expires.
-old-location : ifsk\rxpostoneshottimerrequest.htm
-old-project : ifsk
-ms.assetid : d3ae6401-6d1b-428f-ae74-e262682bcb10
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : RxPostOneShotTimerRequest, rxref_9fb32d67-ac0a-4f85-b999-5f5beaf6b26f.xml, rxtimer/RxPostOneShotTimerRequest, ifsk.rxpostoneshottimerrequest, RxPostOneShotTimerRequest routine [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : rxtimer.h
-req.include-header : Rxtimer.h, Rxworkq.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RX_CONTEXT, *PRX_CONTEXT
-req.product : Windows 10 or later.
+UID: NF:rxtimer.RxPostOneShotTimerRequest
+title: RxPostOneShotTimerRequest function
+author: windows-driver-content
+description: RxPostOneShotTimerRequest initializes a one-shot timer entry. The passed-in pointer to a worker thread routine is called once when the timer expires.
+old-location: ifsk\rxpostoneshottimerrequest.htm
+old-project: ifsk
+ms.assetid: d3ae6401-6d1b-428f-ae74-e262682bcb10
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: RxPostOneShotTimerRequest, rxref_9fb32d67-ac0a-4f85-b999-5f5beaf6b26f.xml, rxtimer/RxPostOneShotTimerRequest, ifsk.rxpostoneshottimerrequest, RxPostOneShotTimerRequest routine [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: rxtimer.h
+req.include-header: Rxtimer.h, Rxworkq.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	rxtimer.h
+apiname:
+-	RxPostOneShotTimerRequest
+product: Windows
+targetos: Windows
+req.typenames: RX_CONTEXT, *PRX_CONTEXT
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NS:wdbgexts._GETSETBUSDATA
-title : "_GETSETBUSDATA"
-author : windows-driver-content
-description : The IG_GET_BUS_DATA Ioctl operation reads data from a system bus and the IG_SET_BUS_DATA Ioctl operation writes data to a system bus.
-old-location : debugger\ig_get_bus_data.htm
-old-project : debugger
-ms.assetid : aca1fe96-20c7-4a51-a331-583b107f62e0
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : BUSDATA structure [Windows Debugging], GETSETBUSDATA, _GETSETBUSDATA, PBUSDATA structure pointer [Windows Debugging], wdbgexts/GETSETBUSDATA, PBUSDATA, debugger.ig_get_bus_data, WdbgExts_Ref_090ca26a-5955-40c6-82c3-310a02a9d64d.xml, *PBUSDATA, GETSETBUSDATA structure [Windows Debugging], BUSDATA, wdbgexts/PBUSDATA
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdbgexts.h
-req.include-header : Wdbgexts.h, Dbgeng.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PBUSDATA, BUSDATA"
-req.product : Windows 10 or later.
+UID: NS:wdbgexts._GETSETBUSDATA
+title: "_GETSETBUSDATA"
+author: windows-driver-content
+description: The IG_GET_BUS_DATA Ioctl operation reads data from a system bus and the IG_SET_BUS_DATA Ioctl operation writes data to a system bus.
+old-location: debugger\ig_get_bus_data.htm
+old-project: debugger
+ms.assetid: aca1fe96-20c7-4a51-a331-583b107f62e0
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: BUSDATA structure [Windows Debugging], GETSETBUSDATA, _GETSETBUSDATA, PBUSDATA structure pointer [Windows Debugging], wdbgexts/GETSETBUSDATA, PBUSDATA, debugger.ig_get_bus_data, WdbgExts_Ref_090ca26a-5955-40c6-82c3-310a02a9d64d.xml, *PBUSDATA, GETSETBUSDATA structure [Windows Debugging], BUSDATA, wdbgexts/PBUSDATA
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdbgexts.h
+req.include-header: Wdbgexts.h, Dbgeng.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdbgexts.h
+apiname:
+-	BUSDATA
+product: Windows
+targetos: Windows
+req.typenames: "*PBUSDATA, BUSDATA"
+req.product: Windows 10 or later.
 ---
 
 # _GETSETBUSDATA structure

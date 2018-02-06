@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.KSAC3_ALTERNATE_AUDIO
-title : KSAC3_ALTERNATE_AUDIO
-author : windows-driver-content
-description : The KSAC3_ALTERNATE_AUDIO structure specifies whether the two mono channels in an AC-3-encoded stream should be interpreted as a stereo pair or as two independent program channels.
-old-location : audio\ksac3_alternate_audio.htm
-old-project : audio
-ms.assetid : 9b97deb9-7e64-49a1-8278-08084c8b7c84
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : KSAC3_ALTERNATE_AUDIO structure [Audio Devices], ksmedia/PKSAC3_ALTERNATE_AUDIO, audio.ksac3_alternate_audio, ksmedia/KSAC3_ALTERNATE_AUDIO, aud-prop_172c7e1b-4c53-4836-82c2-37590cf87744.xml, KSAC3_ALTERNATE_AUDIO, PKSAC3_ALTERNATE_AUDIO structure pointer [Audio Devices], PKSAC3_ALTERNATE_AUDIO, *PKSAC3_ALTERNATE_AUDIO
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKSAC3_ALTERNATE_AUDIO, KSAC3_ALTERNATE_AUDIO"
+UID: NS:ksmedia.KSAC3_ALTERNATE_AUDIO
+title: KSAC3_ALTERNATE_AUDIO
+author: windows-driver-content
+description: The KSAC3_ALTERNATE_AUDIO structure specifies whether the two mono channels in an AC-3-encoded stream should be interpreted as a stereo pair or as two independent program channels.
+old-location: audio\ksac3_alternate_audio.htm
+old-project: audio
+ms.assetid: 9b97deb9-7e64-49a1-8278-08084c8b7c84
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: KSAC3_ALTERNATE_AUDIO structure [Audio Devices], ksmedia/PKSAC3_ALTERNATE_AUDIO, audio.ksac3_alternate_audio, ksmedia/KSAC3_ALTERNATE_AUDIO, aud-prop_172c7e1b-4c53-4836-82c2-37590cf87744.xml, KSAC3_ALTERNATE_AUDIO, PKSAC3_ALTERNATE_AUDIO structure pointer [Audio Devices], PKSAC3_ALTERNATE_AUDIO, *PKSAC3_ALTERNATE_AUDIO
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	KSAC3_ALTERNATE_AUDIO
+product: Windows
+targetos: Windows
+req.typenames: "*PKSAC3_ALTERNATE_AUDIO, KSAC3_ALTERNATE_AUDIO"
 ---
 
 # KSAC3_ALTERNATE_AUDIO structure

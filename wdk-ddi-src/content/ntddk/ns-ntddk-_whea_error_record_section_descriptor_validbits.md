@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddk._WHEA_ERROR_RECORD_SECTION_DESCRIPTOR_VALIDBITS
-title : "_WHEA_ERROR_RECORD_SECTION_DESCRIPTOR_VALIDBITS"
-author : windows-driver-content
-description : The WHEA_ERROR_RECORD_SECTION_DESCRIPTOR_VALIDBITS union describes which members of a WHEA_ERROR_RECORD_SECTION_DESCRIPTOR structure contain valid data.
-old-location : whea\whea_error_record_section_descriptor_validbits.htm
-old-project : whea
-ms.assetid : 7d1f192b-75fe-4ee0-b162-401230299562
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : PWHEA_ERROR_RECORD_SECTION_DESCRIPTOR_VALIDBITS union pointer [WHEA Drivers and Applications], PWHEA_ERROR_RECORD_SECTION_DESCRIPTOR_VALIDBITS, WHEA_ERROR_RECORD_SECTION_DESCRIPTOR_VALIDBITS union [WHEA Drivers and Applications], *PWHEA_ERROR_RECORD_SECTION_DESCRIPTOR_VALIDBITS, WHEA_ERROR_RECORD_SECTION_DESCRIPTOR_VALIDBITS, _WHEA_ERROR_RECORD_SECTION_DESCRIPTOR_VALIDBITS, whea.whea_error_record_section_descriptor_validbits, ntddk/WHEA_ERROR_RECORD_SECTION_DESCRIPTOR_VALIDBITS, whearef_0e13e9d6-57cb-44bd-825e-d9cab5c138c8.xml, ntddk/PWHEA_ERROR_RECORD_SECTION_DESCRIPTOR_VALIDBITS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWHEA_ERROR_RECORD_SECTION_DESCRIPTOR_VALIDBITS, WHEA_ERROR_RECORD_SECTION_DESCRIPTOR_VALIDBITS"
+UID: NS:ntddk._WHEA_ERROR_RECORD_SECTION_DESCRIPTOR_VALIDBITS
+title: "_WHEA_ERROR_RECORD_SECTION_DESCRIPTOR_VALIDBITS"
+author: windows-driver-content
+description: The WHEA_ERROR_RECORD_SECTION_DESCRIPTOR_VALIDBITS union describes which members of a WHEA_ERROR_RECORD_SECTION_DESCRIPTOR structure contain valid data.
+old-location: whea\whea_error_record_section_descriptor_validbits.htm
+old-project: whea
+ms.assetid: 7d1f192b-75fe-4ee0-b162-401230299562
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: PWHEA_ERROR_RECORD_SECTION_DESCRIPTOR_VALIDBITS union pointer [WHEA Drivers and Applications], PWHEA_ERROR_RECORD_SECTION_DESCRIPTOR_VALIDBITS, WHEA_ERROR_RECORD_SECTION_DESCRIPTOR_VALIDBITS union [WHEA Drivers and Applications], *PWHEA_ERROR_RECORD_SECTION_DESCRIPTOR_VALIDBITS, WHEA_ERROR_RECORD_SECTION_DESCRIPTOR_VALIDBITS, _WHEA_ERROR_RECORD_SECTION_DESCRIPTOR_VALIDBITS, whea.whea_error_record_section_descriptor_validbits, ntddk/WHEA_ERROR_RECORD_SECTION_DESCRIPTOR_VALIDBITS, whearef_0e13e9d6-57cb-44bd-825e-d9cab5c138c8.xml, ntddk/PWHEA_ERROR_RECORD_SECTION_DESCRIPTOR_VALIDBITS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddk.h
+apiname:
+-	WHEA_ERROR_RECORD_SECTION_DESCRIPTOR_VALIDBITS
+product: Windows
+targetos: Windows
+req.typenames: "*PWHEA_ERROR_RECORD_SECTION_DESCRIPTOR_VALIDBITS, WHEA_ERROR_RECORD_SECTION_DESCRIPTOR_VALIDBITS"
 ---
 
 # _WHEA_ERROR_RECORD_SECTION_DESCRIPTOR_VALIDBITS structure

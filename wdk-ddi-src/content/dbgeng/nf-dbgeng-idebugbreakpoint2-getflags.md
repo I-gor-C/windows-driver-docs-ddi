@@ -1,41 +1,47 @@
 ---
-UID : NF:dbgeng.IDebugBreakpoint2.GetFlags
-title : IDebugBreakpoint2::GetFlags method
-author : windows-driver-content
-description : The GetFlags method returns the flags for a breakpoint.
-old-location : debugger\getflags.htm
-old-project : debugger
-ms.assetid : 0137a872-63e9-4630-86fa-accfaa9b6d6b
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : GetFlags method [Windows Debugging], IDebugBreakpoint interface, IDebugBreakpoint interface [Windows Debugging], GetFlags method, ComOther_5898a703-87fb-4d47-9d06-026783243e10.xml, dbgeng/IDebugBreakpoint::GetFlags, GetFlags method [Windows Debugging], IDebugBreakpoint2 interface, IDebugBreakpoint2 interface [Windows Debugging], GetFlags method, IDebugBreakpoint2, GetFlags, IDebugBreakpoint::GetFlags, IDebugBreakpoint2::GetFlags, GetFlags method [Windows Debugging], dbgeng/IDebugBreakpoint2::GetFlags, debugger.getflags
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugBreakpoint2.GetFlags
+title: IDebugBreakpoint2::GetFlags method
+author: windows-driver-content
+description: The GetFlags method returns the flags for a breakpoint.
+old-location: debugger\getflags.htm
+old-project: debugger
+ms.assetid: 0137a872-63e9-4630-86fa-accfaa9b6d6b
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: GetFlags method [Windows Debugging], IDebugBreakpoint interface, IDebugBreakpoint interface [Windows Debugging], GetFlags method, ComOther_5898a703-87fb-4d47-9d06-026783243e10.xml, dbgeng/IDebugBreakpoint::GetFlags, GetFlags method [Windows Debugging], IDebugBreakpoint2 interface, IDebugBreakpoint2 interface [Windows Debugging], GetFlags method, IDebugBreakpoint2, GetFlags, IDebugBreakpoint::GetFlags, IDebugBreakpoint2::GetFlags, GetFlags method [Windows Debugging], dbgeng/IDebugBreakpoint2::GetFlags, debugger.getflags
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugBreakpoint.GetFlags
+-	IDebugBreakpoint2.GetFlags
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

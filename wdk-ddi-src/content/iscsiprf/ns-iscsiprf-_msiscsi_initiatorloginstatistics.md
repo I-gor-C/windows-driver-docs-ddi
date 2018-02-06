@@ -1,41 +1,46 @@
 ---
-UID : NS:iscsiprf._MSiSCSI_InitiatorLoginStatistics
-title : "_MSiSCSI_InitiatorLoginStatistics"
-author : windows-driver-content
-description : The MSiSCSI_InitiatorLoginStatistics structure is used by iSCSI initiators to report logon statistics.
-old-location : storage\msiscsi_initiatorloginstatistics.htm
-old-project : storage
-ms.assetid : 8d670887-e8bb-4b99-99ae-16c0dd9c4431
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : PMSiSCSI_InitiatorLoginStatistics, iscsiprf/PMSiSCSI_InitiatorLoginStatistics, MSiSCSI_InitiatorLoginStatistics, iscsiprf/MSiSCSI_InitiatorLoginStatistics, structs-iSCSI_a19b84b5-d660-4005-a22d-2d4157eadab9.xml, storage.msiscsi_initiatorloginstatistics, _MSiSCSI_InitiatorLoginStatistics, PMSiSCSI_InitiatorLoginStatistics structure pointer [Storage Devices], *PMSiSCSI_InitiatorLoginStatistics, MSiSCSI_InitiatorLoginStatistics structure [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : iscsiprf.h
-req.include-header : Iscsiprf.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PMSiSCSI_InitiatorLoginStatistics, MSiSCSI_InitiatorLoginStatistics"
+UID: NS:iscsiprf._MSiSCSI_InitiatorLoginStatistics
+title: "_MSiSCSI_InitiatorLoginStatistics"
+author: windows-driver-content
+description: The MSiSCSI_InitiatorLoginStatistics structure is used by iSCSI initiators to report logon statistics.
+old-location: storage\msiscsi_initiatorloginstatistics.htm
+old-project: storage
+ms.assetid: 8d670887-e8bb-4b99-99ae-16c0dd9c4431
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: PMSiSCSI_InitiatorLoginStatistics, iscsiprf/PMSiSCSI_InitiatorLoginStatistics, MSiSCSI_InitiatorLoginStatistics, iscsiprf/MSiSCSI_InitiatorLoginStatistics, structs-iSCSI_a19b84b5-d660-4005-a22d-2d4157eadab9.xml, storage.msiscsi_initiatorloginstatistics, _MSiSCSI_InitiatorLoginStatistics, PMSiSCSI_InitiatorLoginStatistics structure pointer [Storage Devices], *PMSiSCSI_InitiatorLoginStatistics, MSiSCSI_InitiatorLoginStatistics structure [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: iscsiprf.h
+req.include-header: Iscsiprf.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	iscsiprf.h
+apiname:
+-	MSiSCSI_InitiatorLoginStatistics
+product: Windows
+targetos: Windows
+req.typenames: "*PMSiSCSI_InitiatorLoginStatistics, MSiSCSI_InitiatorLoginStatistics"
 ---
 
 # _MSiSCSI_InitiatorLoginStatistics structure

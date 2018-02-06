@@ -1,42 +1,47 @@
 ---
-UID : NS:ufs.UFS_GEOMETRY_DESCRIPTOR
-title : UFS_GEOMETRY_DESCRIPTOR
-author : windows-driver-content
-description : UFS_GEOMETRY_DESCRIPTOR describes a device's geometric parameters.
-old-location : storage\ufs_geometry_descriptor.htm
-old-project : storage
-ms.assetid : DD3AEB66-E36B-4F18-AFEC-D344132D4B8C
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : PUFS_GEOMETRY_DESCRIPTOR structure pointer [Storage Devices], ufs/PUFS_GEOMETRY_DESCRIPTOR, UFS_GEOMETRY_DESCRIPTOR structure [Storage Devices], storage.ufs_geometry_descriptor, PUFS_GEOMETRY_DESCRIPTOR, *PUFS_GEOMETRY_DESCRIPTOR, UFS_GEOMETRY_DESCRIPTOR, ufs/UFS_GEOMETRY_DESCRIPTOR
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ufs.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10, version 1709
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : UFS_GEOMETRY_DESCRIPTOR, *PUFS_GEOMETRY_DESCRIPTOR
-req.product : Windows 10 or later.
+UID: NS:ufs.UFS_GEOMETRY_DESCRIPTOR
+title: UFS_GEOMETRY_DESCRIPTOR
+author: windows-driver-content
+description: UFS_GEOMETRY_DESCRIPTOR describes a device's geometric parameters.
+old-location: storage\ufs_geometry_descriptor.htm
+old-project: storage
+ms.assetid: DD3AEB66-E36B-4F18-AFEC-D344132D4B8C
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: PUFS_GEOMETRY_DESCRIPTOR structure pointer [Storage Devices], ufs/PUFS_GEOMETRY_DESCRIPTOR, UFS_GEOMETRY_DESCRIPTOR structure [Storage Devices], storage.ufs_geometry_descriptor, PUFS_GEOMETRY_DESCRIPTOR, *PUFS_GEOMETRY_DESCRIPTOR, UFS_GEOMETRY_DESCRIPTOR, ufs/UFS_GEOMETRY_DESCRIPTOR
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ufs.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10, version 1709
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ufs.h
+apiname:
+-	UFS_GEOMETRY_DESCRIPTOR
+product: Windows
+targetos: Windows
+req.typenames: UFS_GEOMETRY_DESCRIPTOR, *PUFS_GEOMETRY_DESCRIPTOR
+req.product: Windows 10 or later.
 ---
 
 # UFS_GEOMETRY_DESCRIPTOR structure

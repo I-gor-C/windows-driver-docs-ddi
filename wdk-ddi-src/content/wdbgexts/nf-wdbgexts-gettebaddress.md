@@ -1,42 +1,47 @@
 ---
-UID : NF:wdbgexts.GetTebAddress
-title : GetTebAddress function
-author : windows-driver-content
-description : The GetTebAddress function returns the address of the thread environment block (TEB) for the current operating system thread.
-old-location : debugger\gettebaddress.htm
-old-project : debugger
-ms.assetid : 6dbe7da6-31f6-43f2-aa25-be6f13c8d8d8
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : GetTebAddress, wdbgexts/GetTebAddress, debugger.gettebaddress, WdbgExts_Ref_69ad127f-7df4-4c57-9475-55040aa02f78.xml, GetTebAddress function [Windows Debugging]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdbgexts.h
-req.include-header : Wdbgexts.h, Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXT_TDOP
-req.product : Windows 10 or later.
+UID: NF:wdbgexts.GetTebAddress
+title: GetTebAddress function
+author: windows-driver-content
+description: The GetTebAddress function returns the address of the thread environment block (TEB) for the current operating system thread.
+old-location: debugger\gettebaddress.htm
+old-project: debugger
+ms.assetid: 6dbe7da6-31f6-43f2-aa25-be6f13c8d8d8
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: GetTebAddress, wdbgexts/GetTebAddress, debugger.gettebaddress, WdbgExts_Ref_69ad127f-7df4-4c57-9475-55040aa02f78.xml, GetTebAddress function [Windows Debugging]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdbgexts.h
+req.include-header: Wdbgexts.h, Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdbgexts.h
+apiname:
+-	GetTebAddress
+product: Windows
+targetos: Windows
+req.typenames: EXT_TDOP
+req.product: Windows 10 or later.
 ---
 
 

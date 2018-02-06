@@ -1,41 +1,46 @@
 ---
-UID : NC:dispmprt.DXGKDDI_GET_CHILD_CONTAINER_ID
-title : DXGKDDI_GET_CHILD_CONTAINER_ID
-author : windows-driver-content
-description : Queries the container ID for the specified target. Implemented by Windows Display Driver Model (WDDM) 1.2 and later display miniport drivers.
-old-location : display\dxgkddigetchildcontainerid.htm
-old-project : display
-ms.assetid : e7073fb3-0cb7-425e-9ffb-d7eaa963a70f
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkddigetchildcontainerid, DxgkDdiGetChildContainerId callback function [Display Devices], DxgkDdiGetChildContainerId, DXGKDDI_GET_CHILD_CONTAINER_ID, DXGKDDI_GET_CHILD_CONTAINER_ID, dispmprt/DxgkDdiGetChildContainerId
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : dispmprt.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
+UID: NC:dispmprt.DXGKDDI_GET_CHILD_CONTAINER_ID
+title: DXGKDDI_GET_CHILD_CONTAINER_ID
+author: windows-driver-content
+description: Queries the container ID for the specified target. Implemented by Windows Display Driver Model (WDDM) 1.2 and later display miniport drivers.
+old-location: display\dxgkddigetchildcontainerid.htm
+old-project: display
+ms.assetid: e7073fb3-0cb7-425e-9ffb-d7eaa963a70f
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkddigetchildcontainerid, DxgkDdiGetChildContainerId callback function [Display Devices], DxgkDdiGetChildContainerId, DXGKDDI_GET_CHILD_CONTAINER_ID, DXGKDDI_GET_CHILD_CONTAINER_ID, dispmprt/DxgkDdiGetChildContainerId
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: dispmprt.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	dispmprt.h
+apiname:
+-	DxgkDdiGetChildContainerId
+product: Windows
+targetos: Windows
+req.typenames: SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ---
 
 

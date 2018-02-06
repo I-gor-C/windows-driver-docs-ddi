@@ -1,41 +1,46 @@
 ---
-UID : NS:d3d10umddi.D3DWDDM1_3DDI_TILED_RESOURCE_COORDINATE
-title : D3DWDDM1_3DDI_TILED_RESOURCE_COORDINATE
-author : windows-driver-content
-description : Specifies the (x, y, z) coordinate values below the index tiles of a tiled resource, along with the respective subresource. Note that the coordinate values do not indicate pixels or bytes.
-old-location : display\d3dwddm1_3ddi_tiled_resource_coordinate.htm
-old-project : display
-ms.assetid : A927CAF9-EF7F-47CC-9BDE-B6E13597368E
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3d10umddi/D3DWDDM1_3DDI_TILED_RESOURCE_COORDINATE, D3DWDDM1_3DDI_TILED_RESOURCE_COORDINATE, display.d3dwddm1_3ddi_tiled_resource_coordinate, D3DWDDM1_3DDI_TILED_RESOURCE_COORDINATE structure [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8.1,WDDM 1.3
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DWDDM1_3DDI_TILED_RESOURCE_COORDINATE
+UID: NS:d3d10umddi.D3DWDDM1_3DDI_TILED_RESOURCE_COORDINATE
+title: D3DWDDM1_3DDI_TILED_RESOURCE_COORDINATE
+author: windows-driver-content
+description: Specifies the (x, y, z) coordinate values below the index tiles of a tiled resource, along with the respective subresource. Note that the coordinate values do not indicate pixels or bytes.
+old-location: display\d3dwddm1_3ddi_tiled_resource_coordinate.htm
+old-project: display
+ms.assetid: A927CAF9-EF7F-47CC-9BDE-B6E13597368E
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3d10umddi/D3DWDDM1_3DDI_TILED_RESOURCE_COORDINATE, D3DWDDM1_3DDI_TILED_RESOURCE_COORDINATE, display.d3dwddm1_3ddi_tiled_resource_coordinate, D3DWDDM1_3DDI_TILED_RESOURCE_COORDINATE structure [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8.1,WDDM 1.3
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	D3d10umddi.h
+apiname:
+-	D3DWDDM1_3DDI_TILED_RESOURCE_COORDINATE
+product: Windows
+targetos: Windows
+req.typenames: D3DWDDM1_3DDI_TILED_RESOURCE_COORDINATE
 ---
 
 # D3DWDDM1_3DDI_TILED_RESOURCE_COORDINATE structure

@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddk._KEY_VIRTUALIZATION_INFORMATION
-title : "_KEY_VIRTUALIZATION_INFORMATION"
-author : windows-driver-content
-description : The KEY_VIRTUALIZATION_INFORMATION structure defines the basic information that is available for a registry key or subkey.
-old-location : kernel\key_virtualization_information.htm
-old-project : kernel
-ms.assetid : 128dd4ed-12c6-472a-b63c-d2d217b5c716
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.key_virtualization_information, _KEY_VIRTUALIZATION_INFORMATION, PKEY_VIRTUALIZATION_INFORMATION structure pointer [Kernel-Mode Driver Architecture], KEY_VIRTUALIZATION_INFORMATION structure [Kernel-Mode Driver Architecture], KEY_VIRTUALIZATION_INFORMATION, ntddk/PKEY_VIRTUALIZATION_INFORMATION, kstruct_c_00c77a09-ed8d-4a66-9b18-b971c9eab5ce.xml, *PKEY_VIRTUALIZATION_INFORMATION, ntddk/KEY_VIRTUALIZATION_INFORMATION, PKEY_VIRTUALIZATION_INFORMATION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Windows
-req.target-min-winverclnt : Available on Windows Vista and later versions of the Windows operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKEY_VIRTUALIZATION_INFORMATION, KEY_VIRTUALIZATION_INFORMATION"
+UID: NS:ntddk._KEY_VIRTUALIZATION_INFORMATION
+title: "_KEY_VIRTUALIZATION_INFORMATION"
+author: windows-driver-content
+description: The KEY_VIRTUALIZATION_INFORMATION structure defines the basic information that is available for a registry key or subkey.
+old-location: kernel\key_virtualization_information.htm
+old-project: kernel
+ms.assetid: 128dd4ed-12c6-472a-b63c-d2d217b5c716
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.key_virtualization_information, _KEY_VIRTUALIZATION_INFORMATION, PKEY_VIRTUALIZATION_INFORMATION structure pointer [Kernel-Mode Driver Architecture], KEY_VIRTUALIZATION_INFORMATION structure [Kernel-Mode Driver Architecture], KEY_VIRTUALIZATION_INFORMATION, ntddk/PKEY_VIRTUALIZATION_INFORMATION, kstruct_c_00c77a09-ed8d-4a66-9b18-b971c9eab5ce.xml, *PKEY_VIRTUALIZATION_INFORMATION, ntddk/KEY_VIRTUALIZATION_INFORMATION, PKEY_VIRTUALIZATION_INFORMATION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Windows
+req.target-min-winverclnt: Available on Windows Vista and later versions of the Windows operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddk.h
+apiname:
+-	KEY_VIRTUALIZATION_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: "*PKEY_VIRTUALIZATION_INFORMATION, KEY_VIRTUALIZATION_INFORMATION"
 ---
 
 # _KEY_VIRTUALIZATION_INFORMATION structure

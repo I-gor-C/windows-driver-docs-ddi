@@ -1,41 +1,46 @@
 ---
-UID : NF:ntddk.RtlPrefixUnicodeString
-title : RtlPrefixUnicodeString function
-author : windows-driver-content
-description : The RtlPrefixUnicodeString routine compares two Unicode strings to determine whether one string is a prefix of the other.
-old-location : kernel\rtlprefixunicodestring.htm
-old-project : kernel
-ms.assetid : 9b26f4ed-6621-4dc5-8b60-9e4d3bf8d898
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : k109_b6130d6d-1a25-460b-a962-3b9353626768.xml, kernel.rtlprefixunicodestring, RtlPrefixUnicodeString, ntddk/RtlPrefixUnicodeString, RtlPrefixUnicodeString routine [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.RtlPrefixUnicodeString
+title: RtlPrefixUnicodeString function
+author: windows-driver-content
+description: The RtlPrefixUnicodeString routine compares two Unicode strings to determine whether one string is a prefix of the other.
+old-location: kernel\rtlprefixunicodestring.htm
+old-project: kernel
+ms.assetid: 9b26f4ed-6621-4dc5-8b60-9e4d3bf8d898
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: k109_b6130d6d-1a25-460b-a962-3b9353626768.xml, kernel.rtlprefixunicodestring, RtlPrefixUnicodeString, ntddk/RtlPrefixUnicodeString, RtlPrefixUnicodeString routine [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	RtlPrefixUnicodeString
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

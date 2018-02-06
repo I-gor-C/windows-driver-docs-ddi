@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.RtlNtStatusToDosError
-title : RtlNtStatusToDosError function
-author : windows-driver-content
-description : The RtlNtStatusToDosError routine converts the specified NTSTATUS code to its equivalent system error code.
-old-location : ifsk\rtlntstatustodoserror.htm
-old-project : ifsk
-ms.assetid : 9ba6f693-b0b7-4176-b951-7bb259bec391
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : RtlNtStatusToDosError, ntifs/RtlNtStatusToDosError, rtlref_8afdfe24-1071-4bab-b935-b1b91eb52766.xml, RtlNtStatusToDosError routine [Installable File System Drivers], ifsk.rtlntstatustodoserror
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : The RtlNtStatusToDosError routine is available on Microsoft Windows 2000 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "< DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.RtlNtStatusToDosError
+title: RtlNtStatusToDosError function
+author: windows-driver-content
+description: The RtlNtStatusToDosError routine converts the specified NTSTATUS code to its equivalent system error code.
+old-location: ifsk\rtlntstatustodoserror.htm
+old-project: ifsk
+ms.assetid: 9ba6f693-b0b7-4176-b951-7bb259bec391
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: RtlNtStatusToDosError, ntifs/RtlNtStatusToDosError, rtlref_8afdfe24-1071-4bab-b935-b1b91eb52766.xml, RtlNtStatusToDosError routine [Installable File System Drivers], ifsk.rtlntstatustodoserror
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: The RtlNtStatusToDosError routine is available on Microsoft Windows 2000 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "< DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	RtlNtStatusToDosError
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

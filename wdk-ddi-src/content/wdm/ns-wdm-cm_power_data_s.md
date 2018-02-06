@@ -1,42 +1,47 @@
 ---
-UID : NS:wdm.CM_Power_Data_s
-title : CM_Power_Data_s
-author : windows-driver-content
-description : The CM_POWER_DATA structure contains information about a device's power management state and capabilities.
-old-location : kernel\cm_power_data.htm
-old-project : kernel
-ms.assetid : 38fea22b-4d9a-4b03-bbb7-c22578f60def
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : PCM_POWER_DATA structure pointer [Kernel-Mode Driver Architecture], *PCM_POWER_DATA, kernel.cm_power_data, CM_POWER_DATA structure [Kernel-Mode Driver Architecture], PCM_POWER_DATA, CM_POWER_DATA, CM_Power_Data_s, kstruct_a_da572af5-5cb2-41f4-be3d-f2c1b715e4d7.xml, wdm/PCM_POWER_DATA, wdm/CM_POWER_DATA
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : Ntddk.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Microsoft Windows XP and later versions of the Windows operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PCM_POWER_DATA, CM_POWER_DATA"
-req.product : Windows 10 or later.
+UID: NS:wdm.CM_Power_Data_s
+title: CM_Power_Data_s
+author: windows-driver-content
+description: The CM_POWER_DATA structure contains information about a device's power management state and capabilities.
+old-location: kernel\cm_power_data.htm
+old-project: kernel
+ms.assetid: 38fea22b-4d9a-4b03-bbb7-c22578f60def
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: PCM_POWER_DATA structure pointer [Kernel-Mode Driver Architecture], *PCM_POWER_DATA, kernel.cm_power_data, CM_POWER_DATA structure [Kernel-Mode Driver Architecture], PCM_POWER_DATA, CM_POWER_DATA, CM_Power_Data_s, kstruct_a_da572af5-5cb2-41f4-be3d-f2c1b715e4d7.xml, wdm/PCM_POWER_DATA, wdm/CM_POWER_DATA
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: Ntddk.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Microsoft Windows XP and later versions of the Windows operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdm.h
+apiname:
+-	CM_POWER_DATA
+product: Windows
+targetos: Windows
+req.typenames: "*PCM_POWER_DATA, CM_POWER_DATA"
+req.product: Windows 10 or later.
 ---
 
 # CM_Power_Data_s structure

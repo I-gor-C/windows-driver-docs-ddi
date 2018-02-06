@@ -1,41 +1,46 @@
 ---
-UID : NF:ksproxy.IKsPin.KsCreateSinkPinHandle
-title : IKsPin::KsCreateSinkPinHandle method
-author : windows-driver-content
-description : The KsCreateSinkPinHandle method creates a pin handle and stores it in the KS pin object.
-old-location : stream\ikspin_kscreatesinkpinhandle.htm
-old-project : stream
-ms.assetid : 68faba0a-8057-4259-b93d-c19899637356
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : IKsPin, KsCreateSinkPinHandle, KsCreateSinkPinHandle method [Streaming Media Devices], IKsPin interface, ksproxy_8d4ac125-ae14-4abf-97cb-74fd33e5029c.xml, stream.ikspin_kscreatesinkpinhandle, IKsPin interface [Streaming Media Devices], KsCreateSinkPinHandle method, ksproxy/IKsPin::KsCreateSinkPinHandle, KsCreateSinkPinHandle method [Streaming Media Devices], IKsPin::KsCreateSinkPinHandle
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : ksproxy.h
-req.include-header : Ksproxy.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : ksproxy.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PIPE_STATE
+UID: NF:ksproxy.IKsPin.KsCreateSinkPinHandle
+title: IKsPin::KsCreateSinkPinHandle method
+author: windows-driver-content
+description: The KsCreateSinkPinHandle method creates a pin handle and stores it in the KS pin object.
+old-location: stream\ikspin_kscreatesinkpinhandle.htm
+old-project: stream
+ms.assetid: 68faba0a-8057-4259-b93d-c19899637356
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: IKsPin, KsCreateSinkPinHandle, KsCreateSinkPinHandle method [Streaming Media Devices], IKsPin interface, ksproxy_8d4ac125-ae14-4abf-97cb-74fd33e5029c.xml, stream.ikspin_kscreatesinkpinhandle, IKsPin interface [Streaming Media Devices], KsCreateSinkPinHandle method, ksproxy/IKsPin::KsCreateSinkPinHandle, KsCreateSinkPinHandle method [Streaming Media Devices], IKsPin::KsCreateSinkPinHandle
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: ksproxy.h
+req.include-header: Ksproxy.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: ksproxy.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	ksproxy.h
+apiname:
+-	IKsPin.KsCreateSinkPinHandle
+product: Windows
+targetos: Windows
+req.typenames: PIPE_STATE
 ---
 
 

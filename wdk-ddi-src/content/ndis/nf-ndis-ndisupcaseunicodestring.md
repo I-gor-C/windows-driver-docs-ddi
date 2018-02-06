@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisUpcaseUnicodeString
-title : NdisUpcaseUnicodeString macro
-author : windows-driver-content
-description : The NdisUpcaseUnicodeString function converts a copy of a given Unicode string to upper case and returns the converted string.Note  This function is deprecated for NDIS 6.0 and later.
-old-location : netvista\ndisupcaseunicodestring.htm
-old-project : netvista
-ms.assetid : 5f735c98-26a6-4644-9fd4-b832ac9379c2
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : ndis_string_ref_79578398-7b4c-4741-a39b-5e5e30b2f4b3.xml, netvista.ndisupcaseunicodestring, NdisUpcaseUnicodeString, NdisUpcaseUnicodeString macro [Network Drivers Starting with Windows Vista], ndis/NdisUpcaseUnicodeString
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : macro
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported for existing drivers in  NDIS 6.0 and later, but new drivers should use RtlUpcaseUnicodeString instead.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_Miscellaneous_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisUpcaseUnicodeString
+title: NdisUpcaseUnicodeString macro
+author: windows-driver-content
+description: The NdisUpcaseUnicodeString function converts a copy of a given Unicode string to upper case and returns the converted string.Note  This function is deprecated for NDIS 6.0 and later.
+old-location: netvista\ndisupcaseunicodestring.htm
+old-project: netvista
+ms.assetid: 5f735c98-26a6-4644-9fd4-b832ac9379c2
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: ndis_string_ref_79578398-7b4c-4741-a39b-5e5e30b2f4b3.xml, netvista.ndisupcaseunicodestring, NdisUpcaseUnicodeString, NdisUpcaseUnicodeString macro [Network Drivers Starting with Windows Vista], ndis/NdisUpcaseUnicodeString
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: macro
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported for existing drivers in  NDIS 6.0 and later, but new drivers should use RtlUpcaseUnicodeString instead.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_Miscellaneous_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisUpcaseUnicodeString
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

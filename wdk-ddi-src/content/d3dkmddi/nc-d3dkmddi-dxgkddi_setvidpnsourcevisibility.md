@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dkmddi.DXGKDDI_SETVIDPNSOURCEVISIBILITY
-title : DXGKDDI_SETVIDPNSOURCEVISIBILITY
-author : windows-driver-content
-description : The DxgkDdiSetVidPnSourceVisibility function programs the video output codec that is associated with a specified video present source to either start scanning or stop scanning the source's primary surface.
-old-location : display\dxgkddisetvidpnsourcevisibility.htm
-old-project : display
-ms.assetid : c94473b4-b898-456d-944d-8879adea16d1
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkddisetvidpnsourcevisibility, DxgkDdiSetVidPnSourceVisibility callback function [Display Devices], DxgkDdiSetVidPnSourceVisibility, DXGKDDI_SETVIDPNSOURCEVISIBILITY, DXGKDDI_SETVIDPNSOURCEVISIBILITY, d3dkmddi/DxgkDdiSetVidPnSourceVisibility, DmFunctions_6a3bb1aa-8bc1-4672-8028-ea3299809a37.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dkmddi.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
+UID: NC:d3dkmddi.DXGKDDI_SETVIDPNSOURCEVISIBILITY
+title: DXGKDDI_SETVIDPNSOURCEVISIBILITY
+author: windows-driver-content
+description: The DxgkDdiSetVidPnSourceVisibility function programs the video output codec that is associated with a specified video present source to either start scanning or stop scanning the source's primary surface.
+old-location: display\dxgkddisetvidpnsourcevisibility.htm
+old-project: display
+ms.assetid: c94473b4-b898-456d-944d-8879adea16d1
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkddisetvidpnsourcevisibility, DxgkDdiSetVidPnSourceVisibility callback function [Display Devices], DxgkDdiSetVidPnSourceVisibility, DXGKDDI_SETVIDPNSOURCEVISIBILITY, DXGKDDI_SETVIDPNSOURCEVISIBILITY, d3dkmddi/DxgkDdiSetVidPnSourceVisibility, DmFunctions_6a3bb1aa-8bc1-4672-8028-ea3299809a37.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dkmddi.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DxgkDdiSetVidPnSourceVisibility
+product: Windows
+targetos: Windows
+req.typenames: DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
 

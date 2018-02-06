@@ -1,41 +1,46 @@
 ---
-UID : NS:hbapiwmi._SendRNIDV2_OUT
-title : "_SendRNIDV2_OUT"
-author : windows-driver-content
-description : The SendRNIDV2_OUT structure is used to report the output parameter data of the SendRNIDV2 WMI method to the WMI client.
-old-location : storage\sendrnidv2_out.htm
-old-project : storage
-ms.assetid : 2d8f1b49-5add-4dd9-998f-d0c1e79f3e7d
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : "_SendRNIDV2_OUT, SendRNIDV2_OUT, hbapiwmi/SendRNIDV2_OUT, hbapiwmi/PSendRNIDV2_OUT, structs-Fibre_78855dda-228d-432f-8189-8be83df6d2ea.xml, PSendRNIDV2_OUT, storage.sendrnidv2_out, SendRNIDV2_OUT structure [Storage Devices], PSendRNIDV2_OUT structure pointer [Storage Devices], *PSendRNIDV2_OUT"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : hbapiwmi.h
-req.include-header : Hbapiwmi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSendRNIDV2_OUT, SendRNIDV2_OUT"
+UID: NS:hbapiwmi._SendRNIDV2_OUT
+title: "_SendRNIDV2_OUT"
+author: windows-driver-content
+description: The SendRNIDV2_OUT structure is used to report the output parameter data of the SendRNIDV2 WMI method to the WMI client.
+old-location: storage\sendrnidv2_out.htm
+old-project: storage
+ms.assetid: 2d8f1b49-5add-4dd9-998f-d0c1e79f3e7d
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: "_SendRNIDV2_OUT, SendRNIDV2_OUT, hbapiwmi/SendRNIDV2_OUT, hbapiwmi/PSendRNIDV2_OUT, structs-Fibre_78855dda-228d-432f-8189-8be83df6d2ea.xml, PSendRNIDV2_OUT, storage.sendrnidv2_out, SendRNIDV2_OUT structure [Storage Devices], PSendRNIDV2_OUT structure pointer [Storage Devices], *PSendRNIDV2_OUT"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: hbapiwmi.h
+req.include-header: Hbapiwmi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hbapiwmi.h
+apiname:
+-	SendRNIDV2_OUT
+product: Windows
+targetos: Windows
+req.typenames: "*PSendRNIDV2_OUT, SendRNIDV2_OUT"
 ---
 
 # _SendRNIDV2_OUT structure

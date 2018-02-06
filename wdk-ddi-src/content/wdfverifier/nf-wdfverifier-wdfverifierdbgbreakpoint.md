@@ -1,42 +1,50 @@
 ---
-UID : NF:wdfverifier.WdfVerifierDbgBreakPoint
-title : WdfVerifierDbgBreakPoint function
-author : windows-driver-content
-description : The WdfVerifierDbgBreakPoint function breaks into a kernel debugger, if a debugger is running.
-old-location : wdf\wdfverifierdbgbreakpoint.htm
-old-project : wdf
-ms.assetid : 55b8a6de-f20b-4d2d-8235-4837bc4a0d7d
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdfverifier/WdfVerifierDbgBreakPoint, WdfVerifierDbgBreakPoint, WdfVerifierDbgBreakPoint function, wdf.wdfverifierdbgbreakpoint, kmdf.wdfverifierdbgbreakpoint, DFDebugRef_e59a7661-75d0-49ac-bac3-a5845cb78226.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfverifier.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : DriverCreate
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_USB_REQUEST_COMPLETION_PARAMS, *PWDF_USB_REQUEST_COMPLETION_PARAMS
-req.product : Windows 10 or later.
+UID: NF:wdfverifier.WdfVerifierDbgBreakPoint
+title: WdfVerifierDbgBreakPoint function
+author: windows-driver-content
+description: The WdfVerifierDbgBreakPoint function breaks into a kernel debugger, if a debugger is running.
+old-location: wdf\wdfverifierdbgbreakpoint.htm
+old-project: wdf
+ms.assetid: 55b8a6de-f20b-4d2d-8235-4837bc4a0d7d
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdfverifier/WdfVerifierDbgBreakPoint, WdfVerifierDbgBreakPoint, WdfVerifierDbgBreakPoint function, wdf.wdfverifierdbgbreakpoint, kmdf.wdfverifierdbgbreakpoint, DFDebugRef_e59a7661-75d0-49ac-bac3-a5845cb78226.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfverifier.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: DriverCreate
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+-	WUDFx02000.dll
+-	WUDFx02000.dll.dll
+apiname:
+-	WdfVerifierDbgBreakPoint
+product: Windows
+targetos: Windows
+req.typenames: WDF_USB_REQUEST_COMPLETION_PARAMS, *PWDF_USB_REQUEST_COMPLETION_PARAMS
+req.product: Windows 10 or later.
 ---
 
 

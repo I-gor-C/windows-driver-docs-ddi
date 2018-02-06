@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltIs32bitProcess
-title : FltIs32bitProcess function
-author : windows-driver-content
-description : The FltIs32bitProcess routine checks whether the originator of the current I/O operation is a 32-bit user-mode application.
-old-location : ifsk\fltis32bitprocess.htm
-old-project : ifsk
-ms.assetid : 0ba4d101-5eba-4258-9526-9e9dc3fd142a
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltIs32bitProcess routine [Installable File System Drivers], fltkernel/FltIs32bitProcess, FltApiRef_e_to_o_dbd737ec-e787-4f85-bd9e-833e06e862f0.xml, FltIs32bitProcess, ifsk.fltis32bitprocess
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : The FltIs32bitProcess routine is available on Microsoft Windows XP SP2, Microsoft Windows Server 2003 SP1, and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltIs32bitProcess
+title: FltIs32bitProcess function
+author: windows-driver-content
+description: The FltIs32bitProcess routine checks whether the originator of the current I/O operation is a 32-bit user-mode application.
+old-location: ifsk\fltis32bitprocess.htm
+old-project: ifsk
+ms.assetid: 0ba4d101-5eba-4258-9526-9e9dc3fd142a
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltIs32bitProcess routine [Installable File System Drivers], fltkernel/FltIs32bitProcess, FltApiRef_e_to_o_dbd737ec-e787-4f85-bd9e-833e06e862f0.xml, FltIs32bitProcess, ifsk.fltis32bitprocess
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: The FltIs32bitProcess routine is available on Microsoft Windows XP SP2, Microsoft Windows Server 2003 SP1, and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltIs32bitProcess
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

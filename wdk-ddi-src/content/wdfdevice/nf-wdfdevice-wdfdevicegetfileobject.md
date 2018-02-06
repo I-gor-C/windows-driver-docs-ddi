@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfdevice.WdfDeviceGetFileObject
-title : WdfDeviceGetFileObject function
-author : windows-driver-content
-description : The WdfDeviceGetFileObject method returns a handle to the framework file object that is associated with a specified WDM file object.
-old-location : wdf\wdfdevicegetfileobject.htm
-old-project : wdf
-ms.assetid : 2e56d444-4248-4f00-b712-cbb3a4869302
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdfdevice/WdfDeviceGetFileObject, WdfDeviceGetFileObject method, wdf.wdfdevicegetfileobject, DFDeviceObjectGeneralRef_5aa48187-4a28-424c-9cd1-76cb5a33dc75.xml, WdfDeviceGetFileObject, kmdf.wdfdevicegetfileobject, PFN_WDFDEVICEGETFILEOBJECT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfdevice.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_STATE_NOTIFICATION_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfdevice.WdfDeviceGetFileObject
+title: WdfDeviceGetFileObject function
+author: windows-driver-content
+description: The WdfDeviceGetFileObject method returns a handle to the framework file object that is associated with a specified WDM file object.
+old-location: wdf\wdfdevicegetfileobject.htm
+old-project: wdf
+ms.assetid: 2e56d444-4248-4f00-b712-cbb3a4869302
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdfdevice/WdfDeviceGetFileObject, WdfDeviceGetFileObject method, wdf.wdfdevicegetfileobject, DFDeviceObjectGeneralRef_5aa48187-4a28-424c-9cd1-76cb5a33dc75.xml, WdfDeviceGetFileObject, kmdf.wdfdevicegetfileobject, PFN_WDFDEVICEGETFILEOBJECT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfdevice.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfDeviceGetFileObject
+product: Windows
+targetos: Windows
+req.typenames: WDF_STATE_NOTIFICATION_TYPE
+req.product: Windows 10 or later.
 ---
 
 

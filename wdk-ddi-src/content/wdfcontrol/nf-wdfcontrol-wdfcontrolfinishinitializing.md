@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfcontrol.WdfControlFinishInitializing
-title : WdfControlFinishInitializing function
-author : windows-driver-content
-description : The WdfControlFinishInitializing method informs the framework that a driver has finished initializing a specified control device object.
-old-location : wdf\wdfcontrolfinishinitializing.htm
-old-project : wdf
-ms.assetid : 13375ae1-6908-44d8-b775-4375f4fdde4d
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.wdfcontrolfinishinitializing, WdfControlFinishInitializing, wdfcontrol/WdfControlFinishInitializing, DFDeviceObjectControllerDevObjRef_af1b91cc-0f6c-4b03-b168-5ac1357f2dc3.xml, WdfControlFinishInitializing method, PFN_WDFCONTROLFINISHINITIALIZING, kmdf.wdfcontrolfinishinitializing
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfcontrol.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : CtlDeviceFinishInitDeviceAdd, CtlDeviceFinishInitDrEntry, DriverCreate, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_DEVICE_SHUTDOWN_FLAGS
-req.product : Windows 10 or later.
+UID: NF:wdfcontrol.WdfControlFinishInitializing
+title: WdfControlFinishInitializing function
+author: windows-driver-content
+description: The WdfControlFinishInitializing method informs the framework that a driver has finished initializing a specified control device object.
+old-location: wdf\wdfcontrolfinishinitializing.htm
+old-project: wdf
+ms.assetid: 13375ae1-6908-44d8-b775-4375f4fdde4d
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.wdfcontrolfinishinitializing, WdfControlFinishInitializing, wdfcontrol/WdfControlFinishInitializing, DFDeviceObjectControllerDevObjRef_af1b91cc-0f6c-4b03-b168-5ac1357f2dc3.xml, WdfControlFinishInitializing method, PFN_WDFCONTROLFINISHINITIALIZING, kmdf.wdfcontrolfinishinitializing
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfcontrol.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: CtlDeviceFinishInitDeviceAdd, CtlDeviceFinishInitDrEntry, DriverCreate, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfControlFinishInitializing
+product: Windows
+targetos: Windows
+req.typenames: WDF_DEVICE_SHUTDOWN_FLAGS
+req.product: Windows 10 or later.
 ---
 
 

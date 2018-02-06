@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisMSynchronizeWithInterruptEx
-title : NdisMSynchronizeWithInterruptEx function
-author : windows-driver-content
-description : Miniport drivers call the NdisMSynchronizeWithInterruptEx function to synchronize the execution of a miniport driver-supplied function with the MiniportInterrupt function.
-old-location : netvista\ndismsynchronizewithinterruptex.htm
-old-project : netvista
-ms.assetid : 5dca9258-a3ae-43f4-a5aa-d591165d72ed
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NdisMSynchronizeWithInterruptEx function [Network Drivers Starting with Windows Vista], NdisMSynchronizeWithInterruptEx, netvista.ndismsynchronizewithinterruptex, ndis/NdisMSynchronizeWithInterruptEx, BOOLEAN, ndis_interrupts_functions_ref_e2b886ed-7425-4f7e-8cb6-4e3946dec8ff.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : NdisMDeregisterInterruptEx
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : "<= DIRQL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisMSynchronizeWithInterruptEx
+title: NdisMSynchronizeWithInterruptEx function
+author: windows-driver-content
+description: Miniport drivers call the NdisMSynchronizeWithInterruptEx function to synchronize the execution of a miniport driver-supplied function with the MiniportInterrupt function.
+old-location: netvista\ndismsynchronizewithinterruptex.htm
+old-project: netvista
+ms.assetid: 5dca9258-a3ae-43f4-a5aa-d591165d72ed
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NdisMSynchronizeWithInterruptEx function [Network Drivers Starting with Windows Vista], NdisMSynchronizeWithInterruptEx, netvista.ndismsynchronizewithinterruptex, ndis/NdisMSynchronizeWithInterruptEx, BOOLEAN, ndis_interrupts_functions_ref_e2b886ed-7425-4f7e-8cb6-4e3946dec8ff.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: NdisMDeregisterInterruptEx
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: "<= DIRQL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisMSynchronizeWithInterruptEx
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

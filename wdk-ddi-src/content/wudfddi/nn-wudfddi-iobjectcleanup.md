@@ -1,42 +1,47 @@
 ---
-UID : NN:wudfddi.IObjectCleanup
-title : IObjectCleanup
-author : windows-driver-content
-description : Any driver that stores a reference-counted COM interface to a WDF object must support the IObjectCleanup interface to prevent interface leakage. Note that drivers, in general, are not required to hold references to WDF objects.
-old-location : wdf\iobjectcleanup.htm
-old-project : wdf
-ms.assetid : 5e465c90-3290-4c89-bf47-521280c0fe5c
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.iobjectcleanup, IObjectCleanup interface, IObjectCleanup interface, described, IObjectCleanup, wudfddi/IObjectCleanup, UMDFBaseObjectRef_4e434f46-a62e-4410-b8ed-663ab59c89dd.xml, umdf.iobjectcleanup
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : wudfddi.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NN:wudfddi.IObjectCleanup
+title: IObjectCleanup
+author: windows-driver-content
+description: Any driver that stores a reference-counted COM interface to a WDF object must support the IObjectCleanup interface to prevent interface leakage. Note that drivers, in general, are not required to hold references to WDF objects.
+old-location: wdf\iobjectcleanup.htm
+old-project: wdf
+ms.assetid: 5e465c90-3290-4c89-bf47-521280c0fe5c
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.iobjectcleanup, IObjectCleanup interface, IObjectCleanup interface, described, IObjectCleanup, wudfddi/IObjectCleanup, UMDFBaseObjectRef_4e434f46-a62e-4410-b8ed-663ab59c89dd.xml, umdf.iobjectcleanup
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: wudfddi.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Wudfddi.h
+apiname:
+-	IObjectCleanup
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 # IObjectCleanup interface

@@ -1,41 +1,46 @@
 ---
-UID : NE:hdaudio._HDAUDIO_STREAM_STATE
-title : "_HDAUDIO_STREAM_STATE"
-author : windows-driver-content
-description : The HDAUDIO_STREAM_STATE enumeration defines constants that specify the different stream states supported by HDAudio.
-old-location : audio\hdaudio_stream_state.htm
-old-project : audio
-ms.assetid : A1029A2D-980F-44F5-B7D6-1C37F97D0368
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : PauseState, hdaudio/PauseState, HDAUDIO_STREAM_STATE enumeration [Audio Devices], hdaudio/RunState, ResetState, audio.hdaudio_stream_state, hdaudio/HDAUDIO_STREAM_STATE, StopState, *PHDAUDIO_STREAM_STATE, _HDAUDIO_STREAM_STATE, HDAUDIO_STREAM_STATE, hdaudio/StopState, hdaudio/PHDAUDIO_STREAM_STATE, hdaudio/ResetState, PHDAUDIO_STREAM_STATE, PHDAUDIO_STREAM_STATE enumeration pointer [Audio Devices], RunState
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : hdaudio.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HDAUDIO_STREAM_STATE, *PHDAUDIO_STREAM_STATE
+UID: NE:hdaudio._HDAUDIO_STREAM_STATE
+title: "_HDAUDIO_STREAM_STATE"
+author: windows-driver-content
+description: The HDAUDIO_STREAM_STATE enumeration defines constants that specify the different stream states supported by HDAudio.
+old-location: audio\hdaudio_stream_state.htm
+old-project: audio
+ms.assetid: A1029A2D-980F-44F5-B7D6-1C37F97D0368
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: PauseState, hdaudio/PauseState, HDAUDIO_STREAM_STATE enumeration [Audio Devices], hdaudio/RunState, ResetState, audio.hdaudio_stream_state, hdaudio/HDAUDIO_STREAM_STATE, StopState, *PHDAUDIO_STREAM_STATE, _HDAUDIO_STREAM_STATE, HDAUDIO_STREAM_STATE, hdaudio/StopState, hdaudio/PHDAUDIO_STREAM_STATE, hdaudio/ResetState, PHDAUDIO_STREAM_STATE, PHDAUDIO_STREAM_STATE enumeration pointer [Audio Devices], RunState
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: hdaudio.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Hdaudio.h
+apiname:
+-	HDAUDIO_STREAM_STATE
+product: Windows
+targetos: Windows
+req.typenames: HDAUDIO_STREAM_STATE, *PHDAUDIO_STREAM_STATE
 ---
 
 # _HDAUDIO_STREAM_STATE Enumeration
@@ -54,31 +59,31 @@ typedef enum _HDAUDIO_STREAM_STATE {
 ## Constants
 
 <table>
-
-<tr>
-<td>PauseState</td>
-<td>The pause state.</td>
-</tr>
-
-<tr>
-<td>ResetState</td>
-<td>The reset state.</td>
-</tr>
-
-<tr>
-<td>RunState</td>
-<td>The run state.</td>
-</tr>
-
-<tr>
-<td>StopState</td>
-<td>The stop state.</td>
-</tr>
+            
+                <tr>
+                    <td>PauseState</td>
+                    <td>The pause state.</td>
+                </tr>
+            
+                <tr>
+                    <td>ResetState</td>
+                    <td>The reset state.</td>
+                </tr>
+            
+                <tr>
+                    <td>RunState</td>
+                    <td>The run state.</td>
+                </tr>
+            
+                <tr>
+                    <td>StopState</td>
+                    <td>The stop state.</td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-This enumeration is used by the <a href="..\hdaudio\nc-hdaudio-pset_dma_engine_state.md">PSET_DMA_ENGINE_STATE</a>.
+        This enumeration is used by the <a href="..\hdaudio\nc-hdaudio-pset_dma_engine_state.md">PSET_DMA_ENGINE_STATE</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |

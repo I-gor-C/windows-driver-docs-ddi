@@ -1,41 +1,46 @@
 ---
-UID : NS:gnssdriver.GNSS_FIXDATA_ACCURACY
-title : GNSS_FIXDATA_ACCURACY
-author : windows-driver-content
-description : This structure defines the accuracy details of a fix.
-old-location : sensors\gnss_fixdata_accuracy.htm
-old-project : sensors
-ms.assetid : 3C08FE5D-1385-4FE3-98C9-9FC530C6C755
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : sensors.gnss_fixdata_accuracy, PGNSS_FIXDATA_ACCURACY structure pointer [Sensor Devices], *PGNSS_FIXDATA_ACCURACY, GNSS_FIXDATA_ACCURACY structure [Sensor Devices], PGNSS_FIXDATA_ACCURACY, GNSS_FIXDATA_ACCURACY, gnssdriver/PGNSS_FIXDATA_ACCURACY, gnssdriver/GNSS_FIXDATA_ACCURACY
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : gnssdriver.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : GNSS_FIXDATA_ACCURACY, *PGNSS_FIXDATA_ACCURACY
+UID: NS:gnssdriver.GNSS_FIXDATA_ACCURACY
+title: GNSS_FIXDATA_ACCURACY
+author: windows-driver-content
+description: This structure defines the accuracy details of a fix.
+old-location: sensors\gnss_fixdata_accuracy.htm
+old-project: sensors
+ms.assetid: 3C08FE5D-1385-4FE3-98C9-9FC530C6C755
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: sensors.gnss_fixdata_accuracy, PGNSS_FIXDATA_ACCURACY structure pointer [Sensor Devices], *PGNSS_FIXDATA_ACCURACY, GNSS_FIXDATA_ACCURACY structure [Sensor Devices], PGNSS_FIXDATA_ACCURACY, GNSS_FIXDATA_ACCURACY, gnssdriver/PGNSS_FIXDATA_ACCURACY, gnssdriver/GNSS_FIXDATA_ACCURACY
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: gnssdriver.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	gnssdriver.h
+apiname:
+-	GNSS_FIXDATA_ACCURACY
+product: Windows
+targetos: Windows
+req.typenames: GNSS_FIXDATA_ACCURACY, *PGNSS_FIXDATA_ACCURACY
 ---
 
 # GNSS_FIXDATA_ACCURACY structure

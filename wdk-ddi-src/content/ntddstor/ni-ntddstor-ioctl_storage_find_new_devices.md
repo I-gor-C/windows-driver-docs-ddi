@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddstor.IOCTL_STORAGE_FIND_NEW_DEVICES
-title : IOCTL_STORAGE_FIND_NEW_DEVICES
-author : windows-driver-content
-description : Determines whether another device that the driver supports has been connected to the I/O bus, either since the system was booted or since the driver last processed this request.
-old-location : storage\ioctl_storage_find_new_devices.htm
-old-project : storage
-ms.assetid : 359169a3-602d-4910-badf-c777c1a804e7
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_storage_find_new_devices, IOCTL_STORAGE_FIND_NEW_DEVICES control code [Storage Devices], IOCTL_STORAGE_FIND_NEW_DEVICES, ntddstor/IOCTL_STORAGE_FIND_NEW_DEVICES, k307_2bd9c727-e25a-4c21-9173-af7bc2c830c6.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddstor.h
-req.include-header : Ntddstor.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STORAGE_ZONE_CONDITION, *PSTORAGE_ZONE_CONDITION
+UID: NI:ntddstor.IOCTL_STORAGE_FIND_NEW_DEVICES
+title: IOCTL_STORAGE_FIND_NEW_DEVICES
+author: windows-driver-content
+description: Determines whether another device that the driver supports has been connected to the I/O bus, either since the system was booted or since the driver last processed this request.
+old-location: storage\ioctl_storage_find_new_devices.htm
+old-project: storage
+ms.assetid: 359169a3-602d-4910-badf-c777c1a804e7
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_storage_find_new_devices, IOCTL_STORAGE_FIND_NEW_DEVICES control code [Storage Devices], IOCTL_STORAGE_FIND_NEW_DEVICES, ntddstor/IOCTL_STORAGE_FIND_NEW_DEVICES, k307_2bd9c727-e25a-4c21-9173-af7bc2c830c6.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddstor.h
+req.include-header: Ntddstor.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddstor.h
+apiname:
+-	IOCTL_STORAGE_FIND_NEW_DEVICES
+product: Windows
+targetos: Windows
+req.typenames: STORAGE_ZONE_CONDITION, *PSTORAGE_ZONE_CONDITION
 ---
 
 # IOCTL_STORAGE_FIND_NEW_DEVICES IOCTL

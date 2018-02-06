@@ -1,41 +1,46 @@
 ---
-UID : NE:fwpsk.FWPS_FIELDS_ALE_BIND_REDIRECT_V4_
-title : FWPS_FIELDS_ALE_BIND_REDIRECT_V4_
-author : windows-driver-content
-description : The FWPS_FIELDS_ALE_BIND_REDIRECT_V4 enumeration type specifies the data field identifiers for the FWPS_LAYER_ALE_BIND_REDIRECT_V4 run-time filtering layer.
-old-location : netvista\fwps_fields_ale_bind_redirect_v4.htm
-old-project : netvista
-ms.assetid : fc9720d7-18d6-4fb9-b876-04bf5497c0fd
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : fwpsk/FWPS_FIELD_ALE_BIND_REDIRECT_V4_MAX, fwpsk/FWPS_FIELD_ALE_BIND_REDIRECT_V4_ALE_APP_ID, wfp_ref_5_const_3_data_fields_864fe799-f80d-4fb0-b6d5-3574c2a6e7a3.xml, netvista.fwps_fields_ale_bind_redirect_v4, FWPS_FIELDS_ALE_BIND_REDIRECT_V4_, fwpsk/FWPS_FIELD_ALE_BIND_REDIRECT_V4_FLAGS, FWPS_FIELD_ALE_BIND_REDIRECT_V4_MAX, FWPS_FIELD_ALE_BIND_REDIRECT_V4_ALE_PACKAGE_ID, FWPS_FIELD_ALE_BIND_REDIRECT_V4_IP_PROTOCOL, fwpsk/FWPS_FIELD_ALE_BIND_REDIRECT_V4_ALE_USER_ID, FWPS_FIELD_ALE_BIND_REDIRECT_V4_IP_LOCAL_PORT, fwpsk/FWPS_FIELD_ALE_BIND_REDIRECT_V4_IP_LOCAL_ADDRESS_TYPE, FWPS_FIELD_ALE_BIND_REDIRECT_V4_FLAGS, fwpsk/FWPS_FIELDS_ALE_BIND_REDIRECT_V4, FWPS_FIELD_ALE_BIND_REDIRECT_V4_IP_LOCAL_ADDRESS_TYPE, fwpsk/FWPS_FIELD_ALE_BIND_REDIRECT_V4_IP_LOCAL_ADDRESS, fwpsk/FWPS_FIELD_ALE_BIND_REDIRECT_V4_IP_PROTOCOL, FWPS_FIELDS_ALE_BIND_REDIRECT_V4, FWPS_FIELD_ALE_BIND_REDIRECT_V4_ALE_APP_ID, fwpsk/FWPS_FIELD_ALE_BIND_REDIRECT_V4_IP_LOCAL_PORT, FWPS_FIELD_ALE_BIND_REDIRECT_V4_ALE_USER_ID, FWPS_FIELDS_ALE_BIND_REDIRECT_V4 enumeration [Network Drivers Starting with Windows Vista], fwpsk/FWPS_FIELD_ALE_BIND_REDIRECT_V4_ALE_PACKAGE_ID, FWPS_FIELD_ALE_BIND_REDIRECT_V4_IP_LOCAL_ADDRESS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : fwpsk.h
-req.include-header : Fwpsk.h
-req.target-type : Windows
-req.target-min-winverclnt : Unless otherwise noted, supported starting with Windows 7.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FWPS_FIELDS_ALE_BIND_REDIRECT_V4
+UID: NE:fwpsk.FWPS_FIELDS_ALE_BIND_REDIRECT_V4_
+title: FWPS_FIELDS_ALE_BIND_REDIRECT_V4_
+author: windows-driver-content
+description: The FWPS_FIELDS_ALE_BIND_REDIRECT_V4 enumeration type specifies the data field identifiers for the FWPS_LAYER_ALE_BIND_REDIRECT_V4 run-time filtering layer.
+old-location: netvista\fwps_fields_ale_bind_redirect_v4.htm
+old-project: netvista
+ms.assetid: fc9720d7-18d6-4fb9-b876-04bf5497c0fd
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: fwpsk/FWPS_FIELD_ALE_BIND_REDIRECT_V4_MAX, fwpsk/FWPS_FIELD_ALE_BIND_REDIRECT_V4_ALE_APP_ID, wfp_ref_5_const_3_data_fields_864fe799-f80d-4fb0-b6d5-3574c2a6e7a3.xml, netvista.fwps_fields_ale_bind_redirect_v4, FWPS_FIELDS_ALE_BIND_REDIRECT_V4_, fwpsk/FWPS_FIELD_ALE_BIND_REDIRECT_V4_FLAGS, FWPS_FIELD_ALE_BIND_REDIRECT_V4_MAX, FWPS_FIELD_ALE_BIND_REDIRECT_V4_ALE_PACKAGE_ID, FWPS_FIELD_ALE_BIND_REDIRECT_V4_IP_PROTOCOL, fwpsk/FWPS_FIELD_ALE_BIND_REDIRECT_V4_ALE_USER_ID, FWPS_FIELD_ALE_BIND_REDIRECT_V4_IP_LOCAL_PORT, fwpsk/FWPS_FIELD_ALE_BIND_REDIRECT_V4_IP_LOCAL_ADDRESS_TYPE, FWPS_FIELD_ALE_BIND_REDIRECT_V4_FLAGS, fwpsk/FWPS_FIELDS_ALE_BIND_REDIRECT_V4, FWPS_FIELD_ALE_BIND_REDIRECT_V4_IP_LOCAL_ADDRESS_TYPE, fwpsk/FWPS_FIELD_ALE_BIND_REDIRECT_V4_IP_LOCAL_ADDRESS, fwpsk/FWPS_FIELD_ALE_BIND_REDIRECT_V4_IP_PROTOCOL, FWPS_FIELDS_ALE_BIND_REDIRECT_V4, FWPS_FIELD_ALE_BIND_REDIRECT_V4_ALE_APP_ID, fwpsk/FWPS_FIELD_ALE_BIND_REDIRECT_V4_IP_LOCAL_PORT, FWPS_FIELD_ALE_BIND_REDIRECT_V4_ALE_USER_ID, FWPS_FIELDS_ALE_BIND_REDIRECT_V4 enumeration [Network Drivers Starting with Windows Vista], fwpsk/FWPS_FIELD_ALE_BIND_REDIRECT_V4_ALE_PACKAGE_ID, FWPS_FIELD_ALE_BIND_REDIRECT_V4_IP_LOCAL_ADDRESS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: fwpsk.h
+req.include-header: Fwpsk.h
+req.target-type: Windows
+req.target-min-winverclnt: Unless otherwise noted, supported starting with Windows 7.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	fwpsk.h
+apiname:
+-	FWPS_FIELDS_ALE_BIND_REDIRECT_V4
+product: Windows
+targetos: Windows
+req.typenames: FWPS_FIELDS_ALE_BIND_REDIRECT_V4
 ---
 
 # FWPS_FIELDS_ALE_BIND_REDIRECT_V4_ Enumeration
@@ -63,66 +68,66 @@ typedef enum FWPS_FIELDS_ALE_BIND_REDIRECT_V4_ {
 ## Constants
 
 <table>
-
-<tr>
-<td>FWPS_FIELD_ALE_BIND_REDIRECT_V4_ALE_APP_ID</td>
-<td>The full path of the application.</td>
-</tr>
-
-<tr>
-<td>FWPS_FIELD_ALE_BIND_REDIRECT_V4_ALE_PACKAGE_ID</td>
-<td>The package identifier is a security identifier (SID) that identifies the associated AppContainer process. For more information about the SID structure, see the description for the SID structure in the Microsoft Windows SDK documentation.
+            
+                <tr>
+                    <td>FWPS_FIELD_ALE_BIND_REDIRECT_V4_ALE_APP_ID</td>
+                    <td>The full path of the application.</td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_ALE_BIND_REDIRECT_V4_ALE_PACKAGE_ID</td>
+                    <td>The package identifier is a security identifier (SID) that identifies the associated AppContainer process. For more information about the SID structure, see the description for the SID structure in the Microsoft Windows SDK documentation.
 <div class="alert"><b>Note</b>  Supported starting with Windows 8.</div><div> </div></td>
-</tr>
-
-<tr>
-<td>FWPS_FIELD_ALE_BIND_REDIRECT_V4_ALE_SECURITY_ATTRIBUTE_FQBN_VALUE</td>
-<td></td>
-</tr>
-
-<tr>
-<td>FWPS_FIELD_ALE_BIND_REDIRECT_V4_ALE_USER_ID</td>
-<td>The identifier of the local user.</td>
-</tr>
-
-<tr>
-<td>FWPS_FIELD_ALE_BIND_REDIRECT_V4_COMPARTMENT_ID</td>
-<td></td>
-</tr>
-
-<tr>
-<td>FWPS_FIELD_ALE_BIND_REDIRECT_V4_FLAGS</td>
-<td>A bitwise OR of a combination of filtering condition flags. For information about the possible
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_ALE_BIND_REDIRECT_V4_ALE_SECURITY_ATTRIBUTE_FQBN_VALUE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_ALE_BIND_REDIRECT_V4_ALE_USER_ID</td>
+                    <td>The identifier of the local user.</td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_ALE_BIND_REDIRECT_V4_COMPARTMENT_ID</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_ALE_BIND_REDIRECT_V4_FLAGS</td>
+                    <td>A bitwise OR of a combination of filtering condition flags. For information about the possible
      flags, see 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff549942">Filtering Condition Flags</a>.</td>
-</tr>
-
-<tr>
-<td>FWPS_FIELD_ALE_BIND_REDIRECT_V4_IP_LOCAL_ADDRESS</td>
-<td>The local IP address.</td>
-</tr>
-
-<tr>
-<td>FWPS_FIELD_ALE_BIND_REDIRECT_V4_IP_LOCAL_ADDRESS_TYPE</td>
-<td>The local IP address type. The possible values are defined by the 
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_ALE_BIND_REDIRECT_V4_IP_LOCAL_ADDRESS</td>
+                    <td>The local IP address.</td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_ALE_BIND_REDIRECT_V4_IP_LOCAL_ADDRESS_TYPE</td>
+                    <td>The local IP address type. The possible values are defined by the 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff568757">NL_ADDRESS_TYPE</a> enumeration.</td>
-</tr>
-
-<tr>
-<td>FWPS_FIELD_ALE_BIND_REDIRECT_V4_IP_LOCAL_PORT</td>
-<td>The local transport protocol port number.</td>
-</tr>
-
-<tr>
-<td>FWPS_FIELD_ALE_BIND_REDIRECT_V4_IP_PROTOCOL</td>
-<td>The IP protocol number, as specified in RFC 1700.</td>
-</tr>
-
-<tr>
-<td>FWPS_FIELD_ALE_BIND_REDIRECT_V4_MAX</td>
-<td>The maximum value for this enumeration. This value might change in future versions of the NDIS
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_ALE_BIND_REDIRECT_V4_IP_LOCAL_PORT</td>
+                    <td>The local transport protocol port number.</td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_ALE_BIND_REDIRECT_V4_IP_PROTOCOL</td>
+                    <td>The IP protocol number, as specified in RFC 1700.</td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_ALE_BIND_REDIRECT_V4_MAX</td>
+                    <td>The maximum value for this enumeration. This value might change in future versions of the NDIS
      header files and binaries.</td>
-</tr>
+                </tr>
 </table>
 
 
@@ -132,9 +137,9 @@ typedef enum FWPS_FIELDS_ALE_BIND_REDIRECT_V4_ {
 | **Windows version** | Unless otherwise noted, supported starting with Windows 7. Unless otherwise noted, supported starting with Windows 7. |
 | **Header** | fwpsk.h (include Fwpsk.h) |
 
-## See Also
+    ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568757">NL_ADDRESS_TYPE</a>
+        <a href="https://msdn.microsoft.com/library/windows/hardware/ff568757">NL_ADDRESS_TYPE</a>
 
  
 

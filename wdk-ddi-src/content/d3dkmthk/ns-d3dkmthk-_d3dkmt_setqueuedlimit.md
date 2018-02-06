@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmthk._D3DKMT_SETQUEUEDLIMIT
-title : "_D3DKMT_SETQUEUEDLIMIT"
-author : windows-driver-content
-description : The D3DKMT_SETQUEUEDLIMIT structure describes parameters for setting or retrieving the limit for the number of operations of the given type that can be queued for the given device.
-old-location : display\d3dkmt_setqueuedlimit.htm
-old-project : display
-ms.assetid : 4fe525b1-9c06-4e2c-9e57-041164905efe
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DKMT_SETQUEUEDLIMIT structure [Display Devices], d3dkmthk/D3DKMT_SETQUEUEDLIMIT, OpenGL_Structs_3c7f7e33-f71a-4547-89ee-7dba69917a4f.xml, _D3DKMT_SETQUEUEDLIMIT, display.d3dkmt_setqueuedlimit, D3DKMT_SETQUEUEDLIMIT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_SETQUEUEDLIMIT
+UID: NS:d3dkmthk._D3DKMT_SETQUEUEDLIMIT
+title: "_D3DKMT_SETQUEUEDLIMIT"
+author: windows-driver-content
+description: The D3DKMT_SETQUEUEDLIMIT structure describes parameters for setting or retrieving the limit for the number of operations of the given type that can be queued for the given device.
+old-location: display\d3dkmt_setqueuedlimit.htm
+old-project: display
+ms.assetid: 4fe525b1-9c06-4e2c-9e57-041164905efe
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DKMT_SETQUEUEDLIMIT structure [Display Devices], d3dkmthk/D3DKMT_SETQUEUEDLIMIT, OpenGL_Structs_3c7f7e33-f71a-4547-89ee-7dba69917a4f.xml, _D3DKMT_SETQUEUEDLIMIT, display.d3dkmt_setqueuedlimit, D3DKMT_SETQUEUEDLIMIT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmthk.h
+apiname:
+-	D3DKMT_SETQUEUEDLIMIT
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_SETQUEUEDLIMIT
 ---
 
 # _D3DKMT_SETQUEUEDLIMIT structure

@@ -1,42 +1,47 @@
 ---
-UID : NS:windot11.DOT11_DISASSOCIATION_PARAMETERS
-title : DOT11_DISASSOCIATION_PARAMETERS
-author : windows-driver-content
-description : Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
-old-location : netvista\dot11_disassociation_parameters.htm
-old-project : netvista
-ms.assetid : bf5f520e-4bbc-4b9f-9e6c-b430cb9e3b28
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : DOT11_DISASSOCIATION_PARAMETERS, windot11/PDOT11_DISASSOCIATION_PARAMETERS, netvista.dot11_disassociation_parameters, Native_802.11_data_types_289b81c2-13d2-484b-9306-6ca3dc961675.xml, windot11/DOT11_DISASSOCIATION_PARAMETERS, DOT11_DISASSOCIATION_PARAMETERS structure [Network Drivers Starting with Windows Vista], PDOT11_DISASSOCIATION_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], *PDOT11_DISASSOCIATION_PARAMETERS, PDOT11_DISASSOCIATION_PARAMETERS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : windot11.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating   systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT11_DISASSOCIATION_PARAMETERS, *PDOT11_DISASSOCIATION_PARAMETERS
-req.product : Windows 10 or later.
+UID: NS:windot11.DOT11_DISASSOCIATION_PARAMETERS
+title: DOT11_DISASSOCIATION_PARAMETERS
+author: windows-driver-content
+description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+old-location: netvista\dot11_disassociation_parameters.htm
+old-project: netvista
+ms.assetid: bf5f520e-4bbc-4b9f-9e6c-b430cb9e3b28
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: DOT11_DISASSOCIATION_PARAMETERS, windot11/PDOT11_DISASSOCIATION_PARAMETERS, netvista.dot11_disassociation_parameters, Native_802.11_data_types_289b81c2-13d2-484b-9306-6ca3dc961675.xml, windot11/DOT11_DISASSOCIATION_PARAMETERS, DOT11_DISASSOCIATION_PARAMETERS structure [Network Drivers Starting with Windows Vista], PDOT11_DISASSOCIATION_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], *PDOT11_DISASSOCIATION_PARAMETERS, PDOT11_DISASSOCIATION_PARAMETERS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: windot11.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	windot11.h
+apiname:
+-	DOT11_DISASSOCIATION_PARAMETERS
+product: Windows
+targetos: Windows
+req.typenames: DOT11_DISASSOCIATION_PARAMETERS, *PDOT11_DISASSOCIATION_PARAMETERS
+req.product: Windows 10 or later.
 ---
 
 # DOT11_DISASSOCIATION_PARAMETERS structure

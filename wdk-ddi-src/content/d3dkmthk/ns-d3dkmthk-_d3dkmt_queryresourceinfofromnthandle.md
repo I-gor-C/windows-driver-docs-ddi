@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmthk._D3DKMT_QUERYRESOURCEINFOFROMNTHANDLE
-title : "_D3DKMT_QUERYRESOURCEINFOFROMNTHANDLE"
-author : windows-driver-content
-description : Describes information that is required to map a global NT handle to resource information.
-old-location : display\d3dkmt_queryresourceinfofromnthandle.htm
-old-project : display
-ms.assetid : 098fe3b9-1169-4ff6-8822-0eb277cb73f9
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : "_D3DKMT_QUERYRESOURCEINFOFROMNTHANDLE, display.d3dkmt_queryresourceinfofromnthandle, D3DKMT_QUERYRESOURCEINFOFROMNTHANDLE, D3DKMT_QUERYRESOURCEINFOFROMNTHANDLE structure [Display Devices], d3dkmthk/D3DKMT_QUERYRESOURCEINFOFROMNTHANDLE"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_QUERYRESOURCEINFOFROMNTHANDLE
+UID: NS:d3dkmthk._D3DKMT_QUERYRESOURCEINFOFROMNTHANDLE
+title: "_D3DKMT_QUERYRESOURCEINFOFROMNTHANDLE"
+author: windows-driver-content
+description: Describes information that is required to map a global NT handle to resource information.
+old-location: display\d3dkmt_queryresourceinfofromnthandle.htm
+old-project: display
+ms.assetid: 098fe3b9-1169-4ff6-8822-0eb277cb73f9
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: "_D3DKMT_QUERYRESOURCEINFOFROMNTHANDLE, display.d3dkmt_queryresourceinfofromnthandle, D3DKMT_QUERYRESOURCEINFOFROMNTHANDLE, D3DKMT_QUERYRESOURCEINFOFROMNTHANDLE structure [Display Devices], d3dkmthk/D3DKMT_QUERYRESOURCEINFOFROMNTHANDLE"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	D3dkmthk.h
+apiname:
+-	D3DKMT_QUERYRESOURCEINFOFROMNTHANDLE
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_QUERYRESOURCEINFOFROMNTHANDLE
 ---
 
 # _D3DKMT_QUERYRESOURCEINFOFROMNTHANDLE structure

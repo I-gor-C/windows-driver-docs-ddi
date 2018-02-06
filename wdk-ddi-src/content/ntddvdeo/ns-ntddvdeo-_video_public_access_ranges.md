@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddvdeo._VIDEO_PUBLIC_ACCESS_RANGES
-title : "_VIDEO_PUBLIC_ACCESS_RANGES"
-author : windows-driver-content
-description : The VIDEO_PUBLIC_ACCESS_RANGES structure contains information about video resources other than frame buffers and video RAM, such as memory-mapped I/O registers or ports.
-old-location : display\video_public_access_ranges.htm
-old-project : display
-ms.assetid : 78912da9-ab02-459c-97b0-477949d4a71d
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : "*PVIDEO_PUBLIC_ACCESS_RANGES, ntddvdeo/VIDEO_PUBLIC_ACCESS_RANGES, PVIDEO_PUBLIC_ACCESS_RANGES structure pointer [Display Devices], VIDEO_PUBLIC_ACCESS_RANGES, Video_Structs_5f4cdfd0-c59a-4568-9524-3f72416f7daf.xml, ntddvdeo/PVIDEO_PUBLIC_ACCESS_RANGES, display.video_public_access_ranges, VIDEO_PUBLIC_ACCESS_RANGES structure [Display Devices], _VIDEO_PUBLIC_ACCESS_RANGES, PVIDEO_PUBLIC_ACCESS_RANGES"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddvdeo.h
-req.include-header : Ntddvdeo.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_PUBLIC_ACCESS_RANGES, *PVIDEO_PUBLIC_ACCESS_RANGES
+UID: NS:ntddvdeo._VIDEO_PUBLIC_ACCESS_RANGES
+title: "_VIDEO_PUBLIC_ACCESS_RANGES"
+author: windows-driver-content
+description: The VIDEO_PUBLIC_ACCESS_RANGES structure contains information about video resources other than frame buffers and video RAM, such as memory-mapped I/O registers or ports.
+old-location: display\video_public_access_ranges.htm
+old-project: display
+ms.assetid: 78912da9-ab02-459c-97b0-477949d4a71d
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: "*PVIDEO_PUBLIC_ACCESS_RANGES, ntddvdeo/VIDEO_PUBLIC_ACCESS_RANGES, PVIDEO_PUBLIC_ACCESS_RANGES structure pointer [Display Devices], VIDEO_PUBLIC_ACCESS_RANGES, Video_Structs_5f4cdfd0-c59a-4568-9524-3f72416f7daf.xml, ntddvdeo/PVIDEO_PUBLIC_ACCESS_RANGES, display.video_public_access_ranges, VIDEO_PUBLIC_ACCESS_RANGES structure [Display Devices], _VIDEO_PUBLIC_ACCESS_RANGES, PVIDEO_PUBLIC_ACCESS_RANGES"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddvdeo.h
+req.include-header: Ntddvdeo.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddvdeo.h
+apiname:
+-	VIDEO_PUBLIC_ACCESS_RANGES
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_PUBLIC_ACCESS_RANGES, *PVIDEO_PUBLIC_ACCESS_RANGES
 ---
 
 # _VIDEO_PUBLIC_ACCESS_RANGES structure

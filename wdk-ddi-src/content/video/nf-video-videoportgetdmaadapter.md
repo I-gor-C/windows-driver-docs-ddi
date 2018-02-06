@@ -1,42 +1,47 @@
 ---
-UID : NF:video.VideoPortGetDmaAdapter
-title : VideoPortGetDmaAdapter function
-author : windows-driver-content
-description : The VideoPortGetDmaAdapter function returns a pointer to a VP_DMA_ADAPTER structure, which is used in subsequent calls to other DMA-related functions.
-old-location : display\videoportgetdmaadapter.htm
-old-project : display
-ms.assetid : e28649d3-cb4f-4589-b421-a7cdd9139e4c
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : VideoPortGetDmaAdapter function [Display Devices], VideoPortGetDmaAdapter, video/VideoPortGetDmaAdapter, display.videoportgetdmaadapter, VideoPort_Functions_a45601ab-cd5a-4aed-95ec-731f09b175a4.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows XP and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Videoprt.lib
-req.dll : Videoprt.sys
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_PORT_SERVICES
-req.product : Windows 10 or later.
+UID: NF:video.VideoPortGetDmaAdapter
+title: VideoPortGetDmaAdapter function
+author: windows-driver-content
+description: The VideoPortGetDmaAdapter function returns a pointer to a VP_DMA_ADAPTER structure, which is used in subsequent calls to other DMA-related functions.
+old-location: display\videoportgetdmaadapter.htm
+old-project: display
+ms.assetid: e28649d3-cb4f-4589-b421-a7cdd9139e4c
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: VideoPortGetDmaAdapter function [Display Devices], VideoPortGetDmaAdapter, video/VideoPortGetDmaAdapter, display.videoportgetdmaadapter, VideoPort_Functions_a45601ab-cd5a-4aed-95ec-731f09b175a4.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows XP and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Videoprt.lib
+req.dll: Videoprt.sys
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Videoprt.sys
+apiname:
+-	VideoPortGetDmaAdapter
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_PORT_SERVICES
+req.product: Windows 10 or later.
 ---
 
 

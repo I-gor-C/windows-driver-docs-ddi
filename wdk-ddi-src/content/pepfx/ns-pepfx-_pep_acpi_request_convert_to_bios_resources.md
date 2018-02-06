@@ -1,41 +1,46 @@
 ---
-UID : NS:pepfx._PEP_ACPI_REQUEST_CONVERT_TO_BIOS_RESOURCES
-title : "_PEP_ACPI_REQUEST_CONVERT_TO_BIOS_RESOURCES"
-author : windows-driver-content
-description : The PEP_ACPI_REQUEST_CONVERT_TO_BIOS_RESOURCES structure is used in the process of converting ACPI resources to BIOS resources by one of the PEP initialization functions.
-old-location : kernel\pep_acpi_request_convert_to_bios_resources.htm
-old-project : kernel
-ms.assetid : DF9FD748-88E8-4E32-B698-0E8A3BE319DB
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : PPEP_ACPI_REQUEST_CONVERT_TO_BIOS_RESOURCES structure pointer [Kernel-Mode Driver Architecture], *PPEP_ACPI_REQUEST_CONVERT_TO_BIOS_RESOURCES, pepfx/PPEP_ACPI_REQUEST_CONVERT_TO_BIOS_RESOURCES, _PEP_ACPI_REQUEST_CONVERT_TO_BIOS_RESOURCES, PPEP_ACPI_REQUEST_CONVERT_TO_BIOS_RESOURCES, pepfx/PEP_ACPI_REQUEST_CONVERT_TO_BIOS_RESOURCES, PEP_ACPI_REQUEST_CONVERT_TO_BIOS_RESOURCES, kernel.pep_acpi_request_convert_to_bios_resources, PEP_ACPI_REQUEST_CONVERT_TO_BIOS_RESOURCES structure [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : pepfx.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with Windows 10.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PEP_ACPI_REQUEST_CONVERT_TO_BIOS_RESOURCES, *PPEP_ACPI_REQUEST_CONVERT_TO_BIOS_RESOURCES
+UID: NS:pepfx._PEP_ACPI_REQUEST_CONVERT_TO_BIOS_RESOURCES
+title: "_PEP_ACPI_REQUEST_CONVERT_TO_BIOS_RESOURCES"
+author: windows-driver-content
+description: The PEP_ACPI_REQUEST_CONVERT_TO_BIOS_RESOURCES structure is used in the process of converting ACPI resources to BIOS resources by one of the PEP initialization functions.
+old-location: kernel\pep_acpi_request_convert_to_bios_resources.htm
+old-project: kernel
+ms.assetid: DF9FD748-88E8-4E32-B698-0E8A3BE319DB
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: PPEP_ACPI_REQUEST_CONVERT_TO_BIOS_RESOURCES structure pointer [Kernel-Mode Driver Architecture], *PPEP_ACPI_REQUEST_CONVERT_TO_BIOS_RESOURCES, pepfx/PPEP_ACPI_REQUEST_CONVERT_TO_BIOS_RESOURCES, _PEP_ACPI_REQUEST_CONVERT_TO_BIOS_RESOURCES, PPEP_ACPI_REQUEST_CONVERT_TO_BIOS_RESOURCES, pepfx/PEP_ACPI_REQUEST_CONVERT_TO_BIOS_RESOURCES, PEP_ACPI_REQUEST_CONVERT_TO_BIOS_RESOURCES, kernel.pep_acpi_request_convert_to_bios_resources, PEP_ACPI_REQUEST_CONVERT_TO_BIOS_RESOURCES structure [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: pepfx.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows 10.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	pepfx.h
+apiname:
+-	PEP_ACPI_REQUEST_CONVERT_TO_BIOS_RESOURCES
+product: Windows
+targetos: Windows
+req.typenames: PEP_ACPI_REQUEST_CONVERT_TO_BIOS_RESOURCES, *PPEP_ACPI_REQUEST_CONVERT_TO_BIOS_RESOURCES
 ---
 
 # _PEP_ACPI_REQUEST_CONVERT_TO_BIOS_RESOURCES structure

@@ -1,41 +1,46 @@
 ---
-UID : NE:avc._tagAvcCommandType
-title : "_tagAvcCommandType"
-author : windows-driver-content
-description : The AvcCommandType enumeration type is used to indicate the type of command issued by a subunit driver to its AV/C subunit through AVC_FUNCTION_COMMAND or AVC_FUNCTION_GET_REQUEST function codes.
-old-location : stream\avccommandtype.htm
-old-project : stream
-ms.assetid : 18bf43bd-3499-4494-839b-9bc07de83644
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : AvcCommandType, AVC_CTYPE_GEN_INQ, AVC_CTYPE_NOTIFY, _tagAvcCommandType, AvcCommandType enumeration [Streaming Media Devices], AVC_CTYPE_CONTROL, stream.avccommandtype, AVC_CTYPE_STATUS, avc/AVC_CTYPE_CONTROL, avc/AVC_CTYPE_GEN_INQ, avcref_08c9f0bb-efe0-412d-9a49-ba497bcc6e25.xml, AVC_CTYPE_SPEC_INQ, avc/AVC_CTYPE_STATUS, avc/AVC_CTYPE_SPEC_INQ, avc/AVC_CTYPE_NOTIFY, avc/AvcCommandType
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : avc.h
-req.include-header : Avc.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : AvcCommandType
+UID: NE:avc._tagAvcCommandType
+title: "_tagAvcCommandType"
+author: windows-driver-content
+description: The AvcCommandType enumeration type is used to indicate the type of command issued by a subunit driver to its AV/C subunit through AVC_FUNCTION_COMMAND or AVC_FUNCTION_GET_REQUEST function codes.
+old-location: stream\avccommandtype.htm
+old-project: stream
+ms.assetid: 18bf43bd-3499-4494-839b-9bc07de83644
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: AvcCommandType, AVC_CTYPE_GEN_INQ, AVC_CTYPE_NOTIFY, _tagAvcCommandType, AvcCommandType enumeration [Streaming Media Devices], AVC_CTYPE_CONTROL, stream.avccommandtype, AVC_CTYPE_STATUS, avc/AVC_CTYPE_CONTROL, avc/AVC_CTYPE_GEN_INQ, avcref_08c9f0bb-efe0-412d-9a49-ba497bcc6e25.xml, AVC_CTYPE_SPEC_INQ, avc/AVC_CTYPE_STATUS, avc/AVC_CTYPE_SPEC_INQ, avc/AVC_CTYPE_NOTIFY, avc/AvcCommandType
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: avc.h
+req.include-header: Avc.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	avc.h
+apiname:
+-	AvcCommandType
+product: Windows
+targetos: Windows
+req.typenames: AvcCommandType
 ---
 
 # _tagAvcCommandType Enumeration
@@ -55,31 +60,31 @@ typedef enum _tagAvcCommandType {
 ## Constants
 
 <table>
-
-<tr>
-<td>AVC_CTYPE_CONTROL</td>
-<td>Specifies a control type of command.</td>
-</tr>
-
-<tr>
-<td>AVC_CTYPE_GEN_INQ</td>
-<td>Specifies a general inquiry command type. This permits a controller to query a target to find out if it supports a specific opcode without needing to pass any specific operands.</td>
-</tr>
-
-<tr>
-<td>AVC_CTYPE_NOTIFY</td>
-<td>Specifies a notify type of command.</td>
-</tr>
-
-<tr>
-<td>AVC_CTYPE_SPEC_INQ</td>
-<td>Specifies a specific-inquiry type of command. This permits a controller to inform targets that a specific set of operands must by furnished along with the opcode when issuing a command.</td>
-</tr>
-
-<tr>
-<td>AVC_CTYPE_STATUS</td>
-<td>Specifies a status type of command.</td>
-</tr>
+            
+                <tr>
+                    <td>AVC_CTYPE_CONTROL</td>
+                    <td>Specifies a control type of command.</td>
+                </tr>
+            
+                <tr>
+                    <td>AVC_CTYPE_GEN_INQ</td>
+                    <td>Specifies a general inquiry command type. This permits a controller to query a target to find out if it supports a specific opcode without needing to pass any specific operands.</td>
+                </tr>
+            
+                <tr>
+                    <td>AVC_CTYPE_NOTIFY</td>
+                    <td>Specifies a notify type of command.</td>
+                </tr>
+            
+                <tr>
+                    <td>AVC_CTYPE_SPEC_INQ</td>
+                    <td>Specifies a specific-inquiry type of command. This permits a controller to inform targets that a specific set of operands must by furnished along with the opcode when issuing a command.</td>
+                </tr>
+            
+                <tr>
+                    <td>AVC_CTYPE_STATUS</td>
+                    <td>Specifies a status type of command.</td>
+                </tr>
 </table>
 
 
@@ -88,9 +93,9 @@ typedef enum _tagAvcCommandType {
 | ---- |:---- |
 | **Header** | avc.h (include Avc.h) |
 
-## See Also
+    ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554150">AVC_FUNCTION_COMMAND</a>
+        <a href="https://msdn.microsoft.com/library/windows/hardware/ff554150">AVC_FUNCTION_COMMAND</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554163">AVC_FUNCTION_GET_REQUEST</a>
 

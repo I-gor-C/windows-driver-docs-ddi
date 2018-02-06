@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3D10DDI_DESTROYDEPTHSTENCILSTATE
-title : PFND3D10DDI_DESTROYDEPTHSTENCILSTATE
-author : windows-driver-content
-description : The DestroyDepthStencilState function destroys the specified depth stencil state object. The depth stencil state object can be destoyed only if it is not currently bound to a display device.
-old-location : display\destroydepthstencilstate.htm
-old-project : display
-ms.assetid : 5fc537f6-2507-4edd-bfa0-c011dd834a22
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.destroydepthstencilstate, DestroyDepthStencilState callback function [Display Devices], DestroyDepthStencilState, PFND3D10DDI_DESTROYDEPTHSTENCILSTATE, PFND3D10DDI_DESTROYDEPTHSTENCILSTATE, d3d10umddi/DestroyDepthStencilState, UserModeDisplayDriverDx10_Functions_0d9deca1-62e7-4caa-9bfd-9c42bdd85c2c.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3D10DDI_DESTROYDEPTHSTENCILSTATE
+title: PFND3D10DDI_DESTROYDEPTHSTENCILSTATE
+author: windows-driver-content
+description: The DestroyDepthStencilState function destroys the specified depth stencil state object. The depth stencil state object can be destoyed only if it is not currently bound to a display device.
+old-location: display\destroydepthstencilstate.htm
+old-project: display
+ms.assetid: 5fc537f6-2507-4edd-bfa0-c011dd834a22
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.destroydepthstencilstate, DestroyDepthStencilState callback function [Display Devices], DestroyDepthStencilState, PFND3D10DDI_DESTROYDEPTHSTENCILSTATE, PFND3D10DDI_DESTROYDEPTHSTENCILSTATE, d3d10umddi/DestroyDepthStencilState, UserModeDisplayDriverDx10_Functions_0d9deca1-62e7-4caa-9bfd-9c42bdd85c2c.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	DestroyDepthStencilState
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

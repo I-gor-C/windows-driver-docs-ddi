@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.DebugCreate
-title : DebugCreate function
-author : windows-driver-content
-description : The DebugCreate function creates a new client object and returns an interface pointer to it.
-old-location : debugger\debugcreate.htm
-old-project : debugger
-ms.assetid : 9dd3632c-4c88-470d-8419-10959eda0454
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : dbgeng/DebugCreate, ClientFns_4a96fd16-32b9-40f5-bc7f-60ae6ecadb32.xml, DebugCreate function [Windows Debugging], debugger.debugcreate, DebugCreate
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.DebugCreate
+title: DebugCreate function
+author: windows-driver-content
+description: The DebugCreate function creates a new client object and returns an interface pointer to it.
+old-location: debugger\debugcreate.htm
+old-project: debugger
+ms.assetid: 9dd3632c-4c88-470d-8419-10959eda0454
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: dbgeng/DebugCreate, ClientFns_4a96fd16-32b9-40f5-bc7f-60ae6ecadb32.xml, DebugCreate function [Windows Debugging], debugger.debugcreate, DebugCreate
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	dbgeng.h
+apiname:
+-	DebugCreate
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

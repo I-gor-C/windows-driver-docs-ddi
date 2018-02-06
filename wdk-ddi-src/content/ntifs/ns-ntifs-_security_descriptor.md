@@ -1,41 +1,46 @@
 ---
-UID : NS:ntifs._SECURITY_DESCRIPTOR
-title : "_SECURITY_DESCRIPTOR"
-author : windows-driver-content
-description : The SECURITY_DESCRIPTOR structure specifies the security information that is associated with an object. For more information, see the reference page for SECURITY_DESCRIPTOR in the Installable File System documentation.
-old-location : kernel\security_descriptor.htm
-old-project : kernel
-ms.assetid : 0af0685c-d3a3-4c76-8fca-fb38f60411bf
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.security_descriptor, kstruct_d_0b8cd06a-644b-40a4-b2bb-6c8c74d63db8.xml, wdm/SECURITY_DESCRIPTOR, _SECURITY_DESCRIPTOR, SECURITY_DESCRIPTOR structure [Kernel-Mode Driver Architecture], *PISECURITY_DESCRIPTOR, SECURITY_DESCRIPTOR
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntifs.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PISECURITY_DESCRIPTOR, SECURITY_DESCRIPTOR"
+UID: NS:ntifs._SECURITY_DESCRIPTOR
+title: "_SECURITY_DESCRIPTOR"
+author: windows-driver-content
+description: The SECURITY_DESCRIPTOR structure specifies the security information that is associated with an object. For more information, see the reference page for SECURITY_DESCRIPTOR in the Installable File System documentation.
+old-location: kernel\security_descriptor.htm
+old-project: kernel
+ms.assetid: 0af0685c-d3a3-4c76-8fca-fb38f60411bf
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.security_descriptor, kstruct_d_0b8cd06a-644b-40a4-b2bb-6c8c74d63db8.xml, wdm/SECURITY_DESCRIPTOR, _SECURITY_DESCRIPTOR, SECURITY_DESCRIPTOR structure [Kernel-Mode Driver Architecture], *PISECURITY_DESCRIPTOR, SECURITY_DESCRIPTOR
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntifs.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	SECURITY_DESCRIPTOR
+product: Windows
+targetos: Windows
+req.typenames: "*PISECURITY_DESCRIPTOR, SECURITY_DESCRIPTOR"
 ---
 
 # _SECURITY_DESCRIPTOR structure

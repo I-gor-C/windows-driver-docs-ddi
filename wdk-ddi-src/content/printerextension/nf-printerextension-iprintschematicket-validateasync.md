@@ -1,42 +1,47 @@
 ---
-UID : NF:printerextension.IPrintSchemaTicket.ValidateAsync
-title : IPrintSchemaTicket::ValidateAsync method
-author : windows-driver-content
-description : Gets an asynchronous PrintTicket validation operation context.
-old-location : print\iprintschematicket_validateasync.htm
-old-project : print
-ms.assetid : B46AE68A-36E1-4367-95F5-0FFBAA42171C
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : ValidateAsync method [Print Devices], IPrintSchemaTicket interface, IPrintSchemaTicket::ValidateAsync, print.iprintschematicket_validateasync, printerextension/IPrintSchemaTicket::ValidateAsync, ValidateAsync, IPrintSchemaTicket, ValidateAsync method [Print Devices], IPrintSchemaTicket interface [Print Devices], ValidateAsync method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : printerextension.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : printerextension.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PrintSchemaSelectionType
-req.product : Windows 10 or later.
+UID: NF:printerextension.IPrintSchemaTicket.ValidateAsync
+title: IPrintSchemaTicket::ValidateAsync method
+author: windows-driver-content
+description: Gets an asynchronous PrintTicket validation operation context.
+old-location: print\iprintschematicket_validateasync.htm
+old-project: print
+ms.assetid: B46AE68A-36E1-4367-95F5-0FFBAA42171C
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: ValidateAsync method [Print Devices], IPrintSchemaTicket interface, IPrintSchemaTicket::ValidateAsync, print.iprintschematicket_validateasync, printerextension/IPrintSchemaTicket::ValidateAsync, ValidateAsync, IPrintSchemaTicket, ValidateAsync method [Print Devices], IPrintSchemaTicket interface [Print Devices], ValidateAsync method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: printerextension.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: printerextension.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	printerextension.h
+apiname:
+-	IPrintSchemaTicket.ValidateAsync
+product: Windows
+targetos: Windows
+req.typenames: PrintSchemaSelectionType
+req.product: Windows 10 or later.
 ---
 
 

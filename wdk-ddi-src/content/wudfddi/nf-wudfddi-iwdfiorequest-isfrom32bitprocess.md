@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFIoRequest.IsFrom32BitProcess
-title : IWDFIoRequest::IsFrom32BitProcess method
-author : windows-driver-content
-description : The IsFrom32BitProcess method determines whether a request originated from a 32-bit process.
-old-location : wdf\iwdfiorequest_isfrom32bitprocess.htm
-old-project : wdf
-ms.assetid : 80e43bd7-9ab9-46b0-a7f3-08c3577be4bc
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : IsFrom32BitProcess method, IsFrom32BitProcess method, IWDFIoRequest interface, IsFrom32BitProcess, wudfddi/IWDFIoRequest::IsFrom32BitProcess, UMDFRequestObjectRef_728bc611-2c40-4a49-b967-77e388072860.xml, wdf.iwdfiorequest_isfrom32bitprocess, umdf.iwdfiorequest_isfrom32bitprocess, IWDFIoRequest::IsFrom32BitProcess, IWDFIoRequest interface, IsFrom32BitProcess method, IWDFIoRequest
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.5
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFIoRequest.IsFrom32BitProcess
+title: IWDFIoRequest::IsFrom32BitProcess method
+author: windows-driver-content
+description: The IsFrom32BitProcess method determines whether a request originated from a 32-bit process.
+old-location: wdf\iwdfiorequest_isfrom32bitprocess.htm
+old-project: wdf
+ms.assetid: 80e43bd7-9ab9-46b0-a7f3-08c3577be4bc
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: IsFrom32BitProcess method, IsFrom32BitProcess method, IWDFIoRequest interface, IsFrom32BitProcess, wudfddi/IWDFIoRequest::IsFrom32BitProcess, UMDFRequestObjectRef_728bc611-2c40-4a49-b967-77e388072860.xml, wdf.iwdfiorequest_isfrom32bitprocess, umdf.iwdfiorequest_isfrom32bitprocess, IWDFIoRequest::IsFrom32BitProcess, IWDFIoRequest interface, IsFrom32BitProcess method, IWDFIoRequest
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.5
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFIoRequest.IsFrom32BitProcess
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

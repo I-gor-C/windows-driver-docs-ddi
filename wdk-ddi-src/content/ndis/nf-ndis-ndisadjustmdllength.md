@@ -1,41 +1,46 @@
 ---
-UID : NF:ndis.NdisAdjustMdlLength
-title : NdisAdjustMdlLength macro
-author : windows-driver-content
-description : The NdisAdjustMdlLength function modifies the length of the data that is associated with an MDL.
-old-location : netvista\ndisadjustmdllength.htm
-old-project : netvista
-ms.assetid : d52d985c-3ebc-45a0-8073-ac26c77441c9
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.ndisadjustmdllength, ndis_netbuf_functions_ref_babeb674-269d-4efc-add1-635666fd7863.xml, NdisAdjustMdlLength macro [Network Drivers Starting with Windows Vista], ndis/NdisAdjustMdlLength, NdisAdjustMdlLength
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : macro
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : ndis.h
-req.dll : 
-req.irql : Any level (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisAdjustMdlLength
+title: NdisAdjustMdlLength macro
+author: windows-driver-content
+description: The NdisAdjustMdlLength function modifies the length of the data that is associated with an MDL.
+old-location: netvista\ndisadjustmdllength.htm
+old-project: netvista
+ms.assetid: d52d985c-3ebc-45a0-8073-ac26c77441c9
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.ndisadjustmdllength, ndis_netbuf_functions_ref_babeb674-269d-4efc-add1-635666fd7863.xml, NdisAdjustMdlLength macro [Network Drivers Starting with Windows Vista], ndis/NdisAdjustMdlLength, NdisAdjustMdlLength
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: macro
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: ndis.h
+req.dll: 
+req.irql: Any level (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndis.h
+apiname:
+-	NdisAdjustMdlLength
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

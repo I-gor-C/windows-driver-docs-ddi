@@ -1,41 +1,47 @@
 ---
-UID : NF:ntddk.MmCopyMemory
-title : MmCopyMemory function
-author : windows-driver-content
-description : The MmCopyMemory routine copies the specified range of virtual or physical memory into the caller-supplied buffer.
-old-location : kernel\mmcopymemory.htm
-old-project : kernel
-ms.assetid : 2B5492CD-B24D-44B5-BDAE-0B43A1AF1FCA
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.mmcopymemory, MmCopyMemory routine [Kernel-Mode Driver Architecture], ntddk/MmCopyMemory, MmCopyMemory
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntddk.h
-req.include-header : 
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 8.1.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ntoskrnl.lib
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.MmCopyMemory
+title: MmCopyMemory function
+author: windows-driver-content
+description: The MmCopyMemory routine copies the specified range of virtual or physical memory into the caller-supplied buffer.
+old-location: kernel\mmcopymemory.htm
+old-project: kernel
+ms.assetid: 2B5492CD-B24D-44B5-BDAE-0B43A1AF1FCA
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.mmcopymemory, MmCopyMemory routine [Kernel-Mode Driver Architecture], ntddk/MmCopyMemory, MmCopyMemory
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntddk.h
+req.include-header: 
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 8.1.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ntoskrnl.lib
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ntoskrnl.lib
+-	ntoskrnl.dll
+apiname:
+-	MmCopyMemory
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

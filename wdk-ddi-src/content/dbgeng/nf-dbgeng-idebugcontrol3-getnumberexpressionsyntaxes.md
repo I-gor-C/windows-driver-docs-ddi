@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugControl3.GetNumberExpressionSyntaxes
-title : IDebugControl3::GetNumberExpressionSyntaxes method
-author : windows-driver-content
-description : The GetNumberExpressionSyntaxes method returns the number of expression syntaxes that are supported by the engine.
-old-location : debugger\getnumberexpressionsyntaxes.htm
-old-project : debugger
-ms.assetid : eb96dd47-300a-49b7-b3c3-ee3bcb6662ba
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugControl3, GetNumberExpressionSyntaxes method [Windows Debugging], IDebugControl3 interface, dbgeng/IDebugControl3::GetNumberExpressionSyntaxes, debugger.getnumberexpressionsyntaxes, IDebugControl3::GetNumberExpressionSyntaxes, IDebugControl3 interface [Windows Debugging], GetNumberExpressionSyntaxes method, GetNumberExpressionSyntaxes, IDebugControl_af12dddf-1d15-4abf-8500-8beab99b69ea.xml, GetNumberExpressionSyntaxes method [Windows Debugging]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl3.GetNumberExpressionSyntaxes
+title: IDebugControl3::GetNumberExpressionSyntaxes method
+author: windows-driver-content
+description: The GetNumberExpressionSyntaxes method returns the number of expression syntaxes that are supported by the engine.
+old-location: debugger\getnumberexpressionsyntaxes.htm
+old-project: debugger
+ms.assetid: eb96dd47-300a-49b7-b3c3-ee3bcb6662ba
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugControl3, GetNumberExpressionSyntaxes method [Windows Debugging], IDebugControl3 interface, dbgeng/IDebugControl3::GetNumberExpressionSyntaxes, debugger.getnumberexpressionsyntaxes, IDebugControl3::GetNumberExpressionSyntaxes, IDebugControl3 interface [Windows Debugging], GetNumberExpressionSyntaxes method, GetNumberExpressionSyntaxes, IDebugControl_af12dddf-1d15-4abf-8500-8beab99b69ea.xml, GetNumberExpressionSyntaxes method [Windows Debugging]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl3.GetNumberExpressionSyntaxes
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

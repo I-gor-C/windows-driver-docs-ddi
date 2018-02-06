@@ -1,42 +1,47 @@
 ---
-UID : NS:strmini._HW_EVENT_DESCRIPTOR
-title : "_HW_EVENT_DESCRIPTOR"
-author : windows-driver-content
-description : When the class driver calls one of the minidriver's StrMiniEvent routines, it passes a pointer to an HW_EVENT_DESCRIPTOR structure to describe the event as enabled or disabled.
-old-location : stream\hw_event_descriptor.htm
-old-project : stream
-ms.assetid : c0efec37-4897-4ece-9f53-4a62204e5af3
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : strmini/HW_EVENT_DESCRIPTOR, _HW_EVENT_DESCRIPTOR, PHW_EVENT_DESCRIPTOR, strclass-struct_ca0c15b2-17d1-4114-9765-5638dd81ca24.xml, HW_EVENT_DESCRIPTOR, *PHW_EVENT_DESCRIPTOR, strmini/PHW_EVENT_DESCRIPTOR, PHW_EVENT_DESCRIPTOR structure pointer [Streaming Media Devices], HW_EVENT_DESCRIPTOR structure [Streaming Media Devices], stream.hw_event_descriptor
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : strmini.h
-req.include-header : Strmini.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PHW_EVENT_DESCRIPTOR, HW_EVENT_DESCRIPTOR"
-req.product : Windows 10 or later.
+UID: NS:strmini._HW_EVENT_DESCRIPTOR
+title: "_HW_EVENT_DESCRIPTOR"
+author: windows-driver-content
+description: When the class driver calls one of the minidriver's StrMiniEvent routines, it passes a pointer to an HW_EVENT_DESCRIPTOR structure to describe the event as enabled or disabled.
+old-location: stream\hw_event_descriptor.htm
+old-project: stream
+ms.assetid: c0efec37-4897-4ece-9f53-4a62204e5af3
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: strmini/HW_EVENT_DESCRIPTOR, _HW_EVENT_DESCRIPTOR, PHW_EVENT_DESCRIPTOR, strclass-struct_ca0c15b2-17d1-4114-9765-5638dd81ca24.xml, HW_EVENT_DESCRIPTOR, *PHW_EVENT_DESCRIPTOR, strmini/PHW_EVENT_DESCRIPTOR, PHW_EVENT_DESCRIPTOR structure pointer [Streaming Media Devices], HW_EVENT_DESCRIPTOR structure [Streaming Media Devices], stream.hw_event_descriptor
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: strmini.h
+req.include-header: Strmini.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	strmini.h
+apiname:
+-	HW_EVENT_DESCRIPTOR
+product: Windows
+targetos: Windows
+req.typenames: "*PHW_EVENT_DESCRIPTOR, HW_EVENT_DESCRIPTOR"
+req.product: Windows 10 or later.
 ---
 
 # _HW_EVENT_DESCRIPTOR structure

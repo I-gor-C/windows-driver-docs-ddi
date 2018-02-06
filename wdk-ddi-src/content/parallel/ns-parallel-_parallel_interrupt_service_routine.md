@@ -1,41 +1,46 @@
 ---
-UID : NS:parallel._PARALLEL_INTERRUPT_SERVICE_ROUTINE
-title : "_PARALLEL_INTERRUPT_SERVICE_ROUTINE"
-author : windows-driver-content
-description : The PARALLEL_INTERRUPT_SERVICE_ROUTINE structure specifies interrupt services that a kernel-mode driver can connect to the operation of a parallel port.
-old-location : parports\parallel_interrupt_service_routine.htm
-old-project : parports
-ms.assetid : dff10a68-f7c4-4f7a-a3f7-3697fc88992a
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : parports.parallel_interrupt_service_routine, parallel/PARALLEL_INTERRUPT_SERVICE_ROUTINE, _PARALLEL_INTERRUPT_SERVICE_ROUTINE, PARALLEL_INTERRUPT_SERVICE_ROUTINE structure [Parallel Ports], PPARALLEL_INTERRUPT_SERVICE_ROUTINE structure pointer [Parallel Ports], PPARALLEL_INTERRUPT_SERVICE_ROUTINE, parallel/PPARALLEL_INTERRUPT_SERVICE_ROUTINE, *PPARALLEL_INTERRUPT_SERVICE_ROUTINE, PARALLEL_INTERRUPT_SERVICE_ROUTINE, cisspd_db43e8c1-06d8-4a00-8f66-896987a45b83.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : parallel.h
-req.include-header : Parallel.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PARALLEL_INTERRUPT_SERVICE_ROUTINE, *PPARALLEL_INTERRUPT_SERVICE_ROUTINE
+UID: NS:parallel._PARALLEL_INTERRUPT_SERVICE_ROUTINE
+title: "_PARALLEL_INTERRUPT_SERVICE_ROUTINE"
+author: windows-driver-content
+description: The PARALLEL_INTERRUPT_SERVICE_ROUTINE structure specifies interrupt services that a kernel-mode driver can connect to the operation of a parallel port.
+old-location: parports\parallel_interrupt_service_routine.htm
+old-project: parports
+ms.assetid: dff10a68-f7c4-4f7a-a3f7-3697fc88992a
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: parports.parallel_interrupt_service_routine, parallel/PARALLEL_INTERRUPT_SERVICE_ROUTINE, _PARALLEL_INTERRUPT_SERVICE_ROUTINE, PARALLEL_INTERRUPT_SERVICE_ROUTINE structure [Parallel Ports], PPARALLEL_INTERRUPT_SERVICE_ROUTINE structure pointer [Parallel Ports], PPARALLEL_INTERRUPT_SERVICE_ROUTINE, parallel/PPARALLEL_INTERRUPT_SERVICE_ROUTINE, *PPARALLEL_INTERRUPT_SERVICE_ROUTINE, PARALLEL_INTERRUPT_SERVICE_ROUTINE, cisspd_db43e8c1-06d8-4a00-8f66-896987a45b83.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: parallel.h
+req.include-header: Parallel.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	parallel.h
+apiname:
+-	PARALLEL_INTERRUPT_SERVICE_ROUTINE
+product: Windows
+targetos: Windows
+req.typenames: PARALLEL_INTERRUPT_SERVICE_ROUTINE, *PPARALLEL_INTERRUPT_SERVICE_ROUTINE
 ---
 
 # _PARALLEL_INTERRUPT_SERVICE_ROUTINE structure

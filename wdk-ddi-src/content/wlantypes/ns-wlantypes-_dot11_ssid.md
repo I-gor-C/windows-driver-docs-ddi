@@ -1,42 +1,47 @@
 ---
-UID : NS:wlantypes._DOT11_SSID
-title : "_DOT11_SSID"
-author : windows-driver-content
-description : Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
-old-location : netvista\dot11_ssid.htm
-old-project : netvista
-ms.assetid : f032b0db-92a0-40ff-a80d-e263d7b2dc67
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : "*PDOT11_SSID, netvista.dot11_ssid, PDOT11_SSID, DOT11_SSID, PDOT11_SSID structure pointer [Network Drivers Starting with Windows Vista], wlantypes/DOT11_SSID, Native_802.11_data_types_e25f30a3-b1f8-43ca-a685-6bc4909028d1.xml, DOT11_SSID structure [Network Drivers Starting with Windows Vista], _DOT11_SSID, wlantypes/PDOT11_SSID"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wlantypes.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating   systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT11_SSID, *PDOT11_SSID
-req.product : Windows 10 or later.
+UID: NS:wlantypes._DOT11_SSID
+title: "_DOT11_SSID"
+author: windows-driver-content
+description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+old-location: netvista\dot11_ssid.htm
+old-project: netvista
+ms.assetid: f032b0db-92a0-40ff-a80d-e263d7b2dc67
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: "*PDOT11_SSID, netvista.dot11_ssid, PDOT11_SSID, DOT11_SSID, PDOT11_SSID structure pointer [Network Drivers Starting with Windows Vista], wlantypes/DOT11_SSID, Native_802.11_data_types_e25f30a3-b1f8-43ca-a685-6bc4909028d1.xml, DOT11_SSID structure [Network Drivers Starting with Windows Vista], _DOT11_SSID, wlantypes/PDOT11_SSID"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wlantypes.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wlantypes.h
+apiname:
+-	DOT11_SSID
+product: Windows
+targetos: Windows
+req.typenames: DOT11_SSID, *PDOT11_SSID
+req.product: Windows 10 or later.
 ---
 
 # _DOT11_SSID structure

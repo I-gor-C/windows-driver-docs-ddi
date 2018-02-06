@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisSetTimerObject
-title : NdisSetTimerObject function
-author : windows-driver-content
-description : The NdisSetTimerObject function sets a timer object to fire after a specified interval or periodically.
-old-location : netvista\ndissettimerobject.htm
-old-project : netvista
-ms.assetid : 75f8fa1b-5b79-4bc2-8b7b-aa1101c9c331
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NdisSetTimerObject, ndis/NdisSetTimerObject, ndis_timer_ref_7be2aa63-67ef-4416-87d5-d11260a57d3f.xml, NdisSetTimerObject function [Network Drivers Starting with Windows Vista], netvista.ndissettimerobject
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_Timer_Function, PeriodicTimer
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisSetTimerObject
+title: NdisSetTimerObject function
+author: windows-driver-content
+description: The NdisSetTimerObject function sets a timer object to fire after a specified interval or periodically.
+old-location: netvista\ndissettimerobject.htm
+old-project: netvista
+ms.assetid: 75f8fa1b-5b79-4bc2-8b7b-aa1101c9c331
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NdisSetTimerObject, ndis/NdisSetTimerObject, ndis_timer_ref_7be2aa63-67ef-4416-87d5-d11260a57d3f.xml, NdisSetTimerObject function [Network Drivers Starting with Windows Vista], netvista.ndissettimerobject
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_Timer_Function, PeriodicTimer
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisSetTimerObject
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

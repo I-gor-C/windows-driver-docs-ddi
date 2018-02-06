@@ -1,41 +1,46 @@
 ---
-UID : NS:1394._IRB_REQ_ASYNC_STREAM
-title : "_IRB_REQ_ASYNC_STREAM"
-author : windows-driver-content
-description : This structure contains the fields necessary for the 1394 bus driver to carry out an asynchronous write request.
-old-location : ieee\irb_req_async_stream.htm
-old-project : IEEE
-ms.assetid : 9E4958B0-066F-4485-AFF2-3AE499AF3E64
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : IRB_REQ_ASYNC_STREAM structure [Buses], IRB_REQ_ASYNC_STREAM, IEEE.irb_req_async_stream, 1394/IRB_REQ_ASYNC_STREAM, _IRB_REQ_ASYNC_STREAM
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : 1394.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : IRB_REQ_ASYNC_STREAM
+UID: NS:1394._IRB_REQ_ASYNC_STREAM
+title: "_IRB_REQ_ASYNC_STREAM"
+author: windows-driver-content
+description: This structure contains the fields necessary for the 1394 bus driver to carry out an asynchronous write request.
+old-location: ieee\irb_req_async_stream.htm
+old-project: IEEE
+ms.assetid: 9E4958B0-066F-4485-AFF2-3AE499AF3E64
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: IRB_REQ_ASYNC_STREAM structure [Buses], IRB_REQ_ASYNC_STREAM, IEEE.irb_req_async_stream, 1394/IRB_REQ_ASYNC_STREAM, _IRB_REQ_ASYNC_STREAM
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: 1394.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	1394.h
+apiname:
+-	IRB_REQ_ASYNC_STREAM
+product: Windows
+targetos: Windows
+req.typenames: IRB_REQ_ASYNC_STREAM
 ---
 
 # _IRB_REQ_ASYNC_STREAM structure

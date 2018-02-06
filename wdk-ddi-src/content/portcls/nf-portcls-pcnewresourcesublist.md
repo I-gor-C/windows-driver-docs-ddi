@@ -1,41 +1,47 @@
 ---
-UID : NF:portcls.PcNewResourceSublist
-title : PcNewResourceSublist function
-author : windows-driver-content
-description : The PcNewResourceSublist function creates and initializes an empty resource list that is derived from another resource list.
-old-location : audio\pcnewresourcesublist.htm
-old-project : audio
-ms.assetid : a7e1a7cf-60ea-4489-a1c2-eac5b218af8c
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : portcls/PcNewResourceSublist, audio.pcnewresourcesublist, PcNewResourceSublist, audpc-routines_3354ba13-6737-4862-b8b4-2afa64dc8eab.xml, PcNewResourceSublist function [Audio Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : portcls.h
-req.include-header : Portcls.h
-req.target-type : Universal
-req.target-min-winverclnt : The PortCls system driver implements the PcNewResourceSublist function in Microsoft Windows 98/Me and in Windows 2000 and later operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Portcls.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.PcNewResourceSublist
+title: PcNewResourceSublist function
+author: windows-driver-content
+description: The PcNewResourceSublist function creates and initializes an empty resource list that is derived from another resource list.
+old-location: audio\pcnewresourcesublist.htm
+old-project: audio
+ms.assetid: a7e1a7cf-60ea-4489-a1c2-eac5b218af8c
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: portcls/PcNewResourceSublist, audio.pcnewresourcesublist, PcNewResourceSublist, audpc-routines_3354ba13-6737-4862-b8b4-2afa64dc8eab.xml, PcNewResourceSublist function [Audio Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: portcls.h
+req.include-header: Portcls.h
+req.target-type: Universal
+req.target-min-winverclnt: The PortCls system driver implements the PcNewResourceSublist function in Microsoft Windows 98/Me and in Windows 2000 and later operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Portcls.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Portcls.lib
+-	Portcls.dll
+apiname:
+-	PcNewResourceSublist
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

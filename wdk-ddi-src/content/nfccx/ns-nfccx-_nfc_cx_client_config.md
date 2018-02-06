@@ -1,41 +1,46 @@
 ---
-UID : NS:nfccx._NFC_CX_CLIENT_CONFIG
-title : "_NFC_CX_CLIENT_CONFIG"
-author : windows-driver-content
-description : The NFC_CX_CLIENT_CONFIG structure is an input parameter to NfcCxDeviceInitConfig.
-old-location : nfpdrivers\nfc_cx_client_config.htm
-old-project : nfpdrivers
-ms.assetid : 8E005C77-4234-4B32-90F2-E4A8A7CD6305
-ms.author : windowsdriverdev
-ms.date : 12/18/2017
-ms.keywords : nfpdrivers.nfc_cx_client_config, NFC_CX_CLIENT_CONFIG, PNFC_CX_CLIENT_CONFIG, nfccx/PNFC_CX_CLIENT_CONFIG, _NFC_CX_CLIENT_CONFIG, *PNFC_CX_CLIENT_CONFIG, nfccx/_NFC_CX_CLIENT_CONFIG, NFC_CX_CLIENT_CONFIG structure [Near-Field Proximity Drivers], PNFC_CX_CLIENT_CONFIG structure pointer [Near-Field Proximity Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : nfccx.h
-req.include-header : Ncidef.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : None supported
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NFC_CX_CLIENT_CONFIG, *PNFC_CX_CLIENT_CONFIG
+UID: NS:nfccx._NFC_CX_CLIENT_CONFIG
+title: "_NFC_CX_CLIENT_CONFIG"
+author: windows-driver-content
+description: The NFC_CX_CLIENT_CONFIG structure is an input parameter to NfcCxDeviceInitConfig.
+old-location: nfpdrivers\nfc_cx_client_config.htm
+old-project: nfpdrivers
+ms.assetid: 8E005C77-4234-4B32-90F2-E4A8A7CD6305
+ms.author: windowsdriverdev
+ms.date: 12/18/2017
+ms.keywords: nfpdrivers.nfc_cx_client_config, NFC_CX_CLIENT_CONFIG, PNFC_CX_CLIENT_CONFIG, nfccx/PNFC_CX_CLIENT_CONFIG, _NFC_CX_CLIENT_CONFIG, *PNFC_CX_CLIENT_CONFIG, nfccx/_NFC_CX_CLIENT_CONFIG, NFC_CX_CLIENT_CONFIG structure [Near-Field Proximity Drivers], PNFC_CX_CLIENT_CONFIG structure pointer [Near-Field Proximity Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: nfccx.h
+req.include-header: Ncidef.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: None supported
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	nfccx.h
+apiname:
+-	NFC_CX_CLIENT_CONFIG
+product: Windows
+targetos: Windows
+req.typenames: NFC_CX_CLIENT_CONFIG, *PNFC_CX_CLIENT_CONFIG
 ---
 
 # _NFC_CX_CLIENT_CONFIG structure

@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.MmAllocatePagesForMdl
-title : MmAllocatePagesForMdl function
-author : windows-driver-content
-description : The MmAllocatePagesForMdl routine allocates zero-filled, nonpaged, physical memory pages to an MDL.
-old-location : kernel\mmallocatepagesformdl.htm
-old-project : kernel
-ms.assetid : 06b52af0-c2d3-444e-8714-4fce4181dddc
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/MmAllocatePagesForMdl, k106_bb9bac91-62a6-45f8-9133-0d23eda07b1e.xml, MmAllocatePagesForMdl, kernel.mmallocatepagesformdl, MmAllocatePagesForMdl routine [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 2000 and later versions of Windows; however, MmAllocatePagesForMdlEx should be used instead of MmAllocatePagesForMdl in Windows Server 2003 Service Pack 1 (SP1) and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : IrqlMmApcLte, HwStorPortProhibitedDDIs, SpNoWait, StorPortStartIo
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.MmAllocatePagesForMdl
+title: MmAllocatePagesForMdl function
+author: windows-driver-content
+description: The MmAllocatePagesForMdl routine allocates zero-filled, nonpaged, physical memory pages to an MDL.
+old-location: kernel\mmallocatepagesformdl.htm
+old-project: kernel
+ms.assetid: 06b52af0-c2d3-444e-8714-4fce4181dddc
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/MmAllocatePagesForMdl, k106_bb9bac91-62a6-45f8-9133-0d23eda07b1e.xml, MmAllocatePagesForMdl, kernel.mmallocatepagesformdl, MmAllocatePagesForMdl routine [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 2000 and later versions of Windows; however, MmAllocatePagesForMdlEx should be used instead of MmAllocatePagesForMdl in Windows Server 2003 Service Pack 1 (SP1) and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: IrqlMmApcLte, HwStorPortProhibitedDDIs, SpNoWait, StorPortStartIo
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	MmAllocatePagesForMdl
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

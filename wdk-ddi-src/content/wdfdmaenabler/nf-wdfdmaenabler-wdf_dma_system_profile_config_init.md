@@ -1,42 +1,47 @@
 ---
-UID : NF:wdfdmaenabler.WDF_DMA_SYSTEM_PROFILE_CONFIG_INIT
-title : WDF_DMA_SYSTEM_PROFILE_CONFIG_INIT function
-author : windows-driver-content
-description : The WDF_DMA_SYSTEM_PROFILE_CONFIG_INIT function initializes a driver's WDF_DMA_SYSTEM_PROFILE_CONFIG structure.
-old-location : wdf\wdf_dma_system_profile_config_init.htm
-old-project : wdf
-ms.assetid : C3E9B4D6-A1BB-425E-A131-D93C3219D28B
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WDF_DMA_SYSTEM_PROFILE_CONFIG_INIT, kmdf.wdf_dma_system_profile_config_init, wdfdmaenabler/WDF_DMA_SYSTEM_PROFILE_CONFIG_INIT, wdf.wdf_dma_system_profile_config_init, WDF_DMA_SYSTEM_PROFILE_CONFIG_INIT function
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfdmaenabler.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : 
-req.kmdf-ver : 1.11
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_DMA_PROFILE
-req.product : Windows 10 or later.
+UID: NF:wdfdmaenabler.WDF_DMA_SYSTEM_PROFILE_CONFIG_INIT
+title: WDF_DMA_SYSTEM_PROFILE_CONFIG_INIT function
+author: windows-driver-content
+description: The WDF_DMA_SYSTEM_PROFILE_CONFIG_INIT function initializes a driver's WDF_DMA_SYSTEM_PROFILE_CONFIG structure.
+old-location: wdf\wdf_dma_system_profile_config_init.htm
+old-project: wdf
+ms.assetid: C3E9B4D6-A1BB-425E-A131-D93C3219D28B
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WDF_DMA_SYSTEM_PROFILE_CONFIG_INIT, kmdf.wdf_dma_system_profile_config_init, wdfdmaenabler/WDF_DMA_SYSTEM_PROFILE_CONFIG_INIT, wdf.wdf_dma_system_profile_config_init, WDF_DMA_SYSTEM_PROFILE_CONFIG_INIT function
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfdmaenabler.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: 
+req.kmdf-ver: 1.11
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfdmaenabler.h
+apiname:
+-	WDF_DMA_SYSTEM_PROFILE_CONFIG_INIT
+product: Windows
+targetos: Windows
+req.typenames: WDF_DMA_PROFILE
+req.product: Windows 10 or later.
 ---
 
 

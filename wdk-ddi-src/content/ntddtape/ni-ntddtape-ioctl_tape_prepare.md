@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddtape.IOCTL_TAPE_PREPARE
-title : IOCTL_TAPE_PREPARE
-author : windows-driver-content
-description : Loads or unloads the tape, resets tape tension, locks or unlocks the ejection mechanism, or formats the tape.
-old-location : storage\ioctl_tape_prepare.htm
-old-project : storage
-ms.assetid : 0e016f3a-4f3a-4256-bb7b-10a5f955b930
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_tape_prepare, IOCTL_TAPE_PREPARE control code [Storage Devices], IOCTL_TAPE_PREPARE, ntddtape/IOCTL_TAPE_PREPARE, k307_a564f3c9-909a-437c-973c-0e6c25fad061.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddtape.h
-req.include-header : Ntddtape.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TAPE_DRIVE_PROBLEM_TYPE
+UID: NI:ntddtape.IOCTL_TAPE_PREPARE
+title: IOCTL_TAPE_PREPARE
+author: windows-driver-content
+description: Loads or unloads the tape, resets tape tension, locks or unlocks the ejection mechanism, or formats the tape.
+old-location: storage\ioctl_tape_prepare.htm
+old-project: storage
+ms.assetid: 0e016f3a-4f3a-4256-bb7b-10a5f955b930
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_tape_prepare, IOCTL_TAPE_PREPARE control code [Storage Devices], IOCTL_TAPE_PREPARE, ntddtape/IOCTL_TAPE_PREPARE, k307_a564f3c9-909a-437c-973c-0e6c25fad061.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddtape.h
+req.include-header: Ntddtape.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddtape.h
+apiname:
+-	IOCTL_TAPE_PREPARE
+product: Windows
+targetos: Windows
+req.typenames: TAPE_DRIVE_PROBLEM_TYPE
 ---
 
 # IOCTL_TAPE_PREPARE IOCTL

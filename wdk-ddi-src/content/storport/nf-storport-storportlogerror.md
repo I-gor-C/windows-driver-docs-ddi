@@ -1,42 +1,48 @@
 ---
-UID : NF:storport.StorPortLogError
-title : StorPortLogError function
-author : windows-driver-content
-description : The StorPortLogError routine notifies the port driver that an error occurred.
-old-location : storage\storportlogerror.htm
-old-project : storage
-ms.assetid : f653e6bf-e99b-4aa2-aa54-d7482d326720
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storport/StorPortLogError, storprt_0eb9851c-bfce-49aa-a22b-3d16a72b3dde.xml, StorPortLogError, StorPortLogError routine [Storage Devices], storage.storportlogerror
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : StorPortDeprecated
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Storport.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STOR_SPINLOCK
-req.product : Windows 10 or later.
+UID: NF:storport.StorPortLogError
+title: StorPortLogError function
+author: windows-driver-content
+description: The StorPortLogError routine notifies the port driver that an error occurred.
+old-location: storage\storportlogerror.htm
+old-project: storage
+ms.assetid: f653e6bf-e99b-4aa2-aa54-d7482d326720
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storport/StorPortLogError, storprt_0eb9851c-bfce-49aa-a22b-3d16a72b3dde.xml, StorPortLogError, StorPortLogError routine [Storage Devices], storage.storportlogerror
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: StorPortDeprecated
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Storport.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Storport.lib
+-	Storport.dll
+apiname:
+-	StorPortLogError
+product: Windows
+targetos: Windows
+req.typenames: STOR_SPINLOCK
+req.product: Windows 10 or later.
 ---
 
 

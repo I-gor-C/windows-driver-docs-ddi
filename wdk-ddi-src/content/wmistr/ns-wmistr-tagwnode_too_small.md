@@ -1,42 +1,47 @@
 ---
-UID : NS:wmistr.tagWNODE_TOO_SMALL
-title : tagWNODE_TOO_SMALL
-author : windows-driver-content
-description : The WNODE_TOO_SMALL structure indicates the size of the buffer needed to receive output from a request.
-old-location : kernel\wnode_too_small.htm
-old-project : kernel
-ms.assetid : eb3d8e2a-20f6-41fc-a220-de93eb83f359
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : WNODE_TOO_SMALL, wmistr/WNODE_TOO_SMALL, *PWNODE_TOO_SMALL, kstruct_d_dcabaeb1-21d1-4cbe-a3ea-c6022e57e4b9.xml, kernel.wnode_too_small, wmistr/PWNODE_TOO_SMALL, PWNODE_TOO_SMALL structure pointer [Kernel-Mode Driver Architecture], WNODE_TOO_SMALL structure [Kernel-Mode Driver Architecture], tagWNODE_TOO_SMALL, PWNODE_TOO_SMALL
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wmistr.h
-req.include-header : Wmistr.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWNODE_TOO_SMALL, WNODE_TOO_SMALL"
-req.product : Windows 10 or later.
+UID: NS:wmistr.tagWNODE_TOO_SMALL
+title: tagWNODE_TOO_SMALL
+author: windows-driver-content
+description: The WNODE_TOO_SMALL structure indicates the size of the buffer needed to receive output from a request.
+old-location: kernel\wnode_too_small.htm
+old-project: kernel
+ms.assetid: eb3d8e2a-20f6-41fc-a220-de93eb83f359
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: WNODE_TOO_SMALL, wmistr/WNODE_TOO_SMALL, *PWNODE_TOO_SMALL, kstruct_d_dcabaeb1-21d1-4cbe-a3ea-c6022e57e4b9.xml, kernel.wnode_too_small, wmistr/PWNODE_TOO_SMALL, PWNODE_TOO_SMALL structure pointer [Kernel-Mode Driver Architecture], WNODE_TOO_SMALL structure [Kernel-Mode Driver Architecture], tagWNODE_TOO_SMALL, PWNODE_TOO_SMALL
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wmistr.h
+req.include-header: Wmistr.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wmistr.h
+apiname:
+-	WNODE_TOO_SMALL
+product: Windows
+targetos: Windows
+req.typenames: "*PWNODE_TOO_SMALL, WNODE_TOO_SMALL"
+req.product: Windows 10 or later.
 ---
 
 # tagWNODE_TOO_SMALL structure

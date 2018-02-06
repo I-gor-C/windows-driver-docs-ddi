@@ -1,42 +1,47 @@
 ---
-UID : NC:video.PROTECT_WC_MEMORY
-title : PROTECT_WC_MEMORY
-author : windows-driver-content
-description : The VideoPortProtectWCMemory callback routine protects Write Combined (WC) video memory from being accessed by the CPU.
-old-location : display\videoportprotectwcmemory.htm
-old-project : display
-ms.assetid : 0cee4f4d-4d9c-44be-94ad-459000f2adb1
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.videoportprotectwcmemory, VideoPortProtectWCMemory callback function [Display Devices], VideoPortProtectWCMemory, PROTECT_WC_MEMORY, PROTECT_WC_MEMORY, video/VideoPortProtectWCMemory, VideoPort_Functions_5aead504-6c27-4b86-95e0-b4ec1b2b3e7d.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows 2000 and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VHF_CONFIG, *PVHF_CONFIG
-req.product : Windows 10 or later.
+UID: NC:video.PROTECT_WC_MEMORY
+title: PROTECT_WC_MEMORY
+author: windows-driver-content
+description: The VideoPortProtectWCMemory callback routine protects Write Combined (WC) video memory from being accessed by the CPU.
+old-location: display\videoportprotectwcmemory.htm
+old-project: display
+ms.assetid: 0cee4f4d-4d9c-44be-94ad-459000f2adb1
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.videoportprotectwcmemory, VideoPortProtectWCMemory callback function [Display Devices], VideoPortProtectWCMemory, PROTECT_WC_MEMORY, PROTECT_WC_MEMORY, video/VideoPortProtectWCMemory, VideoPort_Functions_5aead504-6c27-4b86-95e0-b4ec1b2b3e7d.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows 2000 and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	video.h
+apiname:
+-	VideoPortProtectWCMemory
+product: Windows
+targetos: Windows
+req.typenames: VHF_CONFIG, *PVHF_CONFIG
+req.product: Windows 10 or later.
 ---
 
 

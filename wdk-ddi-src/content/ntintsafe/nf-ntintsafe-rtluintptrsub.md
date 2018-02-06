@@ -1,41 +1,46 @@
 ---
-UID : NF:ntintsafe.RtlUIntPtrSub
-title : RtlUIntPtrSub function
-author : windows-driver-content
-description : Subtracts one value of type UINT_PTR from another.
-old-location : kernel\rtluintptrsub.htm
-old-project : kernel
-ms.assetid : D0E23A94-515B-4225-A8AC-390CDD3BEA60
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : RtlUIntPtrSub function [Kernel-Mode Driver Architecture], RtlUIntPtrSub, ntintsafe/RtlUIntPtrSub, kernel.rtluintptrsub
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntintsafe.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PUBLIC_OBJECT_TYPE_INFORMATION, *PPUBLIC_OBJECT_TYPE_INFORMATION
+UID: NF:ntintsafe.RtlUIntPtrSub
+title: RtlUIntPtrSub function
+author: windows-driver-content
+description: Subtracts one value of type UINT_PTR from another.
+old-location: kernel\rtluintptrsub.htm
+old-project: kernel
+ms.assetid: D0E23A94-515B-4225-A8AC-390CDD3BEA60
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: RtlUIntPtrSub function [Kernel-Mode Driver Architecture], RtlUIntPtrSub, ntintsafe/RtlUIntPtrSub, kernel.rtluintptrsub
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntintsafe.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntintsafe.h
+apiname:
+-	RtlUIntPtrSub
+product: Windows
+targetos: Windows
+req.typenames: PUBLIC_OBJECT_TYPE_INFORMATION, *PPUBLIC_OBJECT_TYPE_INFORMATION
 ---
 
 

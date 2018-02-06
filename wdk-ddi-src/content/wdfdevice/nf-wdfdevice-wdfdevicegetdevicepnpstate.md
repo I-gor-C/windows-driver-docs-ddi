@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfdevice.WdfDeviceGetDevicePnpState
-title : WdfDeviceGetDevicePnpState function
-author : windows-driver-content
-description : The WdfDeviceGetDevicePnpState method returns the current state of the framework's Plug and Play state machine for a specified device.
-old-location : wdf\wdfdevicegetdevicepnpstate.htm
-old-project : wdf
-ms.assetid : 25936ed9-d213-458f-bbc8-90eedea9ba02
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WdfDeviceGetDevicePnpState, wdf.wdfdevicegetdevicepnpstate, kmdf.wdfdevicegetdevicepnpstate, PFN_WDFDEVICEGETDEVICEPNPSTATE, wdfdevice/WdfDeviceGetDevicePnpState, WdfDeviceGetDevicePnpState method, DFDeviceObjectGeneralRef_8c17c41d-4e8e-499e-83db-92006e4fe08a.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfdevice.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_STATE_NOTIFICATION_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfdevice.WdfDeviceGetDevicePnpState
+title: WdfDeviceGetDevicePnpState function
+author: windows-driver-content
+description: The WdfDeviceGetDevicePnpState method returns the current state of the framework's Plug and Play state machine for a specified device.
+old-location: wdf\wdfdevicegetdevicepnpstate.htm
+old-project: wdf
+ms.assetid: 25936ed9-d213-458f-bbc8-90eedea9ba02
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WdfDeviceGetDevicePnpState, wdf.wdfdevicegetdevicepnpstate, kmdf.wdfdevicegetdevicepnpstate, PFN_WDFDEVICEGETDEVICEPNPSTATE, wdfdevice/WdfDeviceGetDevicePnpState, WdfDeviceGetDevicePnpState method, DFDeviceObjectGeneralRef_8c17c41d-4e8e-499e-83db-92006e4fe08a.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfdevice.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfDeviceGetDevicePnpState
+product: Windows
+targetos: Windows
+req.typenames: WDF_STATE_NOTIFICATION_TYPE
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NF:ntddk.RtlRightChild
-title : RtlRightChild macro
-author : windows-driver-content
-description : The RtlRightChild routine returns a pointer to the right child of the specified splay link node.
-old-location : ifsk\rtlrightchild.htm
-old-project : ifsk
-ms.assetid : 1b906983-b000-449b-8e82-46ade5384168
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.rtlrightchild, rtlref_be516cb5-c4a7-4eb7-8faa-eac591b0902d.xml, RtlRightChild routine [Installable File System Drivers], RtlRightChild, ntddk/RtlRightChild
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : macro
-req.header : ntddk.h
-req.include-header : Ntddk.h, Ntifs.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : ntddk.h
-req.dll : 
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.RtlRightChild
+title: RtlRightChild macro
+author: windows-driver-content
+description: The RtlRightChild routine returns a pointer to the right child of the specified splay link node.
+old-location: ifsk\rtlrightchild.htm
+old-project: ifsk
+ms.assetid: 1b906983-b000-449b-8e82-46ade5384168
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.rtlrightchild, rtlref_be516cb5-c4a7-4eb7-8faa-eac591b0902d.xml, RtlRightChild routine [Installable File System Drivers], RtlRightChild, ntddk/RtlRightChild
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: macro
+req.header: ntddk.h
+req.include-header: Ntddk.h, Ntifs.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: ntddk.h
+req.dll: 
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddk.h
+apiname:
+-	RtlRightChild
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

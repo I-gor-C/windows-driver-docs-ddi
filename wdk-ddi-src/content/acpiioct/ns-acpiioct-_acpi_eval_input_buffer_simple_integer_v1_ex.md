@@ -1,41 +1,46 @@
 ---
-UID : NS:acpiioct._ACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V1_EX
-title : "_ACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V1_EX"
-author : windows-driver-content
-description : The ACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_EX structure is used as input to an IOCTL_ACPI_EVAL_METHOD_EX request and to an IOCTL_ACPI_ASYNC_EVAL_METHOD_EX request.
-old-location : acpi\acpi_eval_input_buffer_simple_integer_ex.htm
-old-project : acpi
-ms.assetid : f918c462-67bc-4794-a92e-ffc8650ce9a1
-ms.author : windowsdriverdev
-ms.date : 12/31/2017
-ms.keywords : "*PACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_EX, acpi-meth-eval-ref_29bc925a-8ab0-4f97-a722-a8a6201853a2.xml, acpiioct/PACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V1_EX, acpi.acpi_eval_input_buffer_simple_integer_ex, ACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V1_EX structure [ACPI Devices], PACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V1_EX, ACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V1_EX, *PACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V1_EX, ACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_EX, acpiioct/ACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V1_EX, PACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V1_EX structure pointer [ACPI Devices], _ACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V1_EX"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : acpiioct.h
-req.include-header : Acpiioct.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows Vista and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : ACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_EX, ACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V1_EX, *PACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_EX, *PACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V1_EX
+UID: NS:acpiioct._ACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V1_EX
+title: "_ACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V1_EX"
+author: windows-driver-content
+description: The ACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_EX structure is used as input to an IOCTL_ACPI_EVAL_METHOD_EX request and to an IOCTL_ACPI_ASYNC_EVAL_METHOD_EX request.
+old-location: acpi\acpi_eval_input_buffer_simple_integer_ex.htm
+old-project: acpi
+ms.assetid: f918c462-67bc-4794-a92e-ffc8650ce9a1
+ms.author: windowsdriverdev
+ms.date: 12/31/2017
+ms.keywords: "*PACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_EX, acpi-meth-eval-ref_29bc925a-8ab0-4f97-a722-a8a6201853a2.xml, acpiioct/PACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V1_EX, acpi.acpi_eval_input_buffer_simple_integer_ex, ACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V1_EX structure [ACPI Devices], PACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V1_EX, ACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V1_EX, *PACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V1_EX, ACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_EX, acpiioct/ACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V1_EX, PACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V1_EX structure pointer [ACPI Devices], _ACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V1_EX"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: acpiioct.h
+req.include-header: Acpiioct.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows Vista and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Acpiioct.h
+apiname:
+-	ACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V1_EX
+product: Windows
+targetos: Windows
+req.typenames: ACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_EX, ACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V1_EX, *PACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_EX, *PACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V1_EX
 ---
 
 # _ACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V1_EX structure

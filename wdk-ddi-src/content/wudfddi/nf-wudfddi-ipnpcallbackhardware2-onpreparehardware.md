@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IPnpCallbackHardware2.OnPrepareHardware
-title : IPnpCallbackHardware2::OnPrepareHardware method
-author : windows-driver-content
-description : The OnPrepareHardware method performs any operations that are needed to make a device accessible to the driver.
-old-location : wdf\ipnpcallbackhardware2_onpreparehardware.htm
-old-project : wdf
-ms.assetid : 830D706A-016C-4637-829F-2014AD1A1309
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : umdf.ipnpcallbackhardware2_onpreparehardware, wudfddi/IPnpCallbackHardware2::OnPrepareHardware, OnPrepareHardware method, OnPrepareHardware method, IPnpCallbackHardware2 interface, wdf.ipnpcallbackhardware2_onpreparehardware, OnPrepareHardware, IPnpCallbackHardware2 interface, OnPrepareHardware method, IPnpCallbackHardware2::OnPrepareHardware, IPnpCallbackHardware2
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.11
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IPnpCallbackHardware2.OnPrepareHardware
+title: IPnpCallbackHardware2::OnPrepareHardware method
+author: windows-driver-content
+description: The OnPrepareHardware method performs any operations that are needed to make a device accessible to the driver.
+old-location: wdf\ipnpcallbackhardware2_onpreparehardware.htm
+old-project: wdf
+ms.assetid: 830D706A-016C-4637-829F-2014AD1A1309
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: umdf.ipnpcallbackhardware2_onpreparehardware, wudfddi/IPnpCallbackHardware2::OnPrepareHardware, OnPrepareHardware method, OnPrepareHardware method, IPnpCallbackHardware2 interface, wdf.ipnpcallbackhardware2_onpreparehardware, OnPrepareHardware, IPnpCallbackHardware2 interface, OnPrepareHardware method, IPnpCallbackHardware2::OnPrepareHardware, IPnpCallbackHardware2
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.11
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Wudfddi.h
+apiname:
+-	IPnpCallbackHardware2.OnPrepareHardware
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

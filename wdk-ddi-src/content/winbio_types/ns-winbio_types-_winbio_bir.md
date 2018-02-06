@@ -1,42 +1,47 @@
 ---
-UID : NS:winbio_types._WINBIO_BIR
-title : "_WINBIO_BIR"
-author : windows-driver-content
-description : The WINBIO_BIR structure is the root of the BIR (Biometric Information Record). It contains the size and offset of any other data elements in the BIR.
-old-location : biometric\winbio_bir.htm
-old-project : biometric
-ms.assetid : 159d4767-b0e2-4d76-b23c-e078e13827dd
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : winbio_types/PWINBIO_BIR, _WINBIO_BIR, WINBIO_BIR structure [Biometric Devices], *PWINBIO_BIR, PWINBIO_BIR structure pointer [Biometric Devices], biometric_ref_95ef9f95-37c5-4f04-b4fe-05ef38b4f5f0.xml, PWINBIO_BIR, WINBIO_BIR, winbio_types/WINBIO_BIR, biometric.winbio_bir
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : winbio_types.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WINBIO_BIR
-req.product : Windows 10 or later.
+UID: NS:winbio_types._WINBIO_BIR
+title: "_WINBIO_BIR"
+author: windows-driver-content
+description: The WINBIO_BIR structure is the root of the BIR (Biometric Information Record). It contains the size and offset of any other data elements in the BIR.
+old-location: biometric\winbio_bir.htm
+old-project: biometric
+ms.assetid: 159d4767-b0e2-4d76-b23c-e078e13827dd
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: winbio_types/PWINBIO_BIR, _WINBIO_BIR, WINBIO_BIR structure [Biometric Devices], *PWINBIO_BIR, PWINBIO_BIR structure pointer [Biometric Devices], biometric_ref_95ef9f95-37c5-4f04-b4fe-05ef38b4f5f0.xml, PWINBIO_BIR, WINBIO_BIR, winbio_types/WINBIO_BIR, biometric.winbio_bir
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: winbio_types.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	winbio_types.h
+apiname:
+-	WINBIO_BIR
+product: Windows
+targetos: Windows
+req.typenames: WINBIO_BIR
+req.product: Windows 10 or later.
 ---
 
 # _WINBIO_BIR structure

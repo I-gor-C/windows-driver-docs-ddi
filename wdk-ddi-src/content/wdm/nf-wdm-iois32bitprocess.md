@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.IoIs32bitProcess
-title : IoIs32bitProcess function
-author : windows-driver-content
-description : The IoIs32bitProcess routine checks whether the originator of the current I/O request is a 32-bit user-mode application.
-old-location : kernel\iois32bitprocess.htm
-old-project : kernel
-ms.assetid : a2de12d5-ed9e-42ac-b3e8-a3a567e4ab4a
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : k104_8380b2cb-114a-41bc-a32e-8fb60b18c133.xml, IoIs32bitProcess, IoIs32bitProcess routine [Kernel-Mode Driver Architecture], wdm/IoIs32bitProcess, kernel.iois32bitprocess
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in 64-bit versions of Microsoft Windows XP and later 64-bit versions of the Windows operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.IoIs32bitProcess
+title: IoIs32bitProcess function
+author: windows-driver-content
+description: The IoIs32bitProcess routine checks whether the originator of the current I/O request is a 32-bit user-mode application.
+old-location: kernel\iois32bitprocess.htm
+old-project: kernel
+ms.assetid: a2de12d5-ed9e-42ac-b3e8-a3a567e4ab4a
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: k104_8380b2cb-114a-41bc-a32e-8fb60b18c133.xml, IoIs32bitProcess, IoIs32bitProcess routine [Kernel-Mode Driver Architecture], wdm/IoIs32bitProcess, kernel.iois32bitprocess
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in 64-bit versions of Microsoft Windows XP and later 64-bit versions of the Windows operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoIs32bitProcess
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

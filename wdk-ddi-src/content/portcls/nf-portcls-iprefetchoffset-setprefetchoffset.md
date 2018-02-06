@@ -1,41 +1,46 @@
 ---
-UID : NF:portcls.IPreFetchOffset.SetPreFetchOffset
-title : IPreFetchOffset::SetPreFetchOffset method
-author : windows-driver-content
-description : The SetPreFetchOffset method sets the prefetch offset, which is the number of bytes of data separating the write cursor from the play cursor in a DirectSound output stream.
-old-location : audio\iprefetchoffset_setprefetchoffset.htm
-old-project : audio
-ms.assetid : fef8e8b8-7e79-4d88-b643-9b371e4297fd
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : SetPreFetchOffset, audio.iprefetchoffset_setprefetchoffset, IPreFetchOffset, SetPreFetchOffset method [Audio Devices], SetPreFetchOffset method [Audio Devices], IPreFetchOffset interface, IPreFetchOffset::SetPreFetchOffset, portcls/IPreFetchOffset::SetPreFetchOffset, IPreFetchOffset interface [Audio Devices], SetPreFetchOffset method, audmp-routines_7fb7bb20-d9e0-4022-9de4-1c5952bfccf8.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : portcls.h
-req.include-header : Portcls.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : portcls.h
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.IPreFetchOffset.SetPreFetchOffset
+title: IPreFetchOffset::SetPreFetchOffset method
+author: windows-driver-content
+description: The SetPreFetchOffset method sets the prefetch offset, which is the number of bytes of data separating the write cursor from the play cursor in a DirectSound output stream.
+old-location: audio\iprefetchoffset_setprefetchoffset.htm
+old-project: audio
+ms.assetid: fef8e8b8-7e79-4d88-b643-9b371e4297fd
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: SetPreFetchOffset, audio.iprefetchoffset_setprefetchoffset, IPreFetchOffset, SetPreFetchOffset method [Audio Devices], SetPreFetchOffset method [Audio Devices], IPreFetchOffset interface, IPreFetchOffset::SetPreFetchOffset, portcls/IPreFetchOffset::SetPreFetchOffset, IPreFetchOffset interface [Audio Devices], SetPreFetchOffset method, audmp-routines_7fb7bb20-d9e0-4022-9de4-1c5952bfccf8.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: portcls.h
+req.include-header: Portcls.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: portcls.h
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	portcls.h
+apiname:
+-	IPreFetchOffset.SetPreFetchOffset
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

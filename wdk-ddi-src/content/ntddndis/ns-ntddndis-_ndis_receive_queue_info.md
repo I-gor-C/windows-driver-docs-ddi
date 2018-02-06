@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddndis._NDIS_RECEIVE_QUEUE_INFO
-title : "_NDIS_RECEIVE_QUEUE_INFO"
-author : windows-driver-content
-description : The NDIS_RECEIVE_QUEUE_INFO structure contains information about a receive queue on a network adapter.
-old-location : netvista\ndis_receive_queue_info.htm
-old-project : netvista
-ms.assetid : 7cdc45d4-e8aa-437a-b6fc-8b8c0dc17585
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : PNDIS_RECEIVE_QUEUE_INFO, netvista.ndis_receive_queue_info, *PNDIS_RECEIVE_QUEUE_INFO, NDIS_RECEIVE_QUEUE_INFO structure [Network Drivers Starting with Windows Vista], ntddndis/PNDIS_RECEIVE_QUEUE_INFO, PNDIS_RECEIVE_QUEUE_INFO structure pointer [Network Drivers Starting with Windows Vista], ntddndis/NDIS_RECEIVE_QUEUE_INFO, virtual_machine_queue_ref_5052da2e-c93a-40f9-b129-07538556ef29.xml, _NDIS_RECEIVE_QUEUE_INFO, NDIS_RECEIVE_QUEUE_INFO
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.20 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PNDIS_RECEIVE_QUEUE_INFO, NDIS_RECEIVE_QUEUE_INFO"
+UID: NS:ntddndis._NDIS_RECEIVE_QUEUE_INFO
+title: "_NDIS_RECEIVE_QUEUE_INFO"
+author: windows-driver-content
+description: The NDIS_RECEIVE_QUEUE_INFO structure contains information about a receive queue on a network adapter.
+old-location: netvista\ndis_receive_queue_info.htm
+old-project: netvista
+ms.assetid: 7cdc45d4-e8aa-437a-b6fc-8b8c0dc17585
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: PNDIS_RECEIVE_QUEUE_INFO, netvista.ndis_receive_queue_info, *PNDIS_RECEIVE_QUEUE_INFO, NDIS_RECEIVE_QUEUE_INFO structure [Network Drivers Starting with Windows Vista], ntddndis/PNDIS_RECEIVE_QUEUE_INFO, PNDIS_RECEIVE_QUEUE_INFO structure pointer [Network Drivers Starting with Windows Vista], ntddndis/NDIS_RECEIVE_QUEUE_INFO, virtual_machine_queue_ref_5052da2e-c93a-40f9-b129-07538556ef29.xml, _NDIS_RECEIVE_QUEUE_INFO, NDIS_RECEIVE_QUEUE_INFO
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.20 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddndis.h
+apiname:
+-	NDIS_RECEIVE_QUEUE_INFO
+product: Windows
+targetos: Windows
+req.typenames: "*PNDIS_RECEIVE_QUEUE_INFO, NDIS_RECEIVE_QUEUE_INFO"
 ---
 
 # _NDIS_RECEIVE_QUEUE_INFO structure

@@ -1,41 +1,46 @@
 ---
-UID : NS:ntifs._TOKEN_GROUPS_AND_PRIVILEGES
-title : "_TOKEN_GROUPS_AND_PRIVILEGES"
-author : windows-driver-content
-description : TOKEN_GROUPS_AND_PRIVILEGES contains information about the group security identifiers (SIDs) and privileges in an access token.
-old-location : ifsk\token_groups_and_privileges.htm
-old-project : ifsk
-ms.assetid : 27d4793d-bdb4-46c5-b6e4-a2136e899adc
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ntifs/TOKEN_GROUPS_AND_PRIVILEGES, TOKEN_GROUPS_AND_PRIVILEGES, ifsk.token_groups_and_privileges, *PTOKEN_GROUPS_AND_PRIVILEGES, _TOKEN_GROUPS_AND_PRIVILEGES, securitystructures_4cab5ceb-66b1-4445-a9b0-a428fc628ab5.xml, TOKEN_GROUPS_AND_PRIVILEGES structure [Installable File System Drivers], PTOKEN_GROUPS_AND_PRIVILEGES, PTOKEN_GROUPS_AND_PRIVILEGES structure pointer [Installable File System Drivers], ntifs/PTOKEN_GROUPS_AND_PRIVILEGES
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_GROUPS_AND_PRIVILEGES, *PTOKEN_GROUPS_AND_PRIVILEGES
+UID: NS:ntifs._TOKEN_GROUPS_AND_PRIVILEGES
+title: "_TOKEN_GROUPS_AND_PRIVILEGES"
+author: windows-driver-content
+description: TOKEN_GROUPS_AND_PRIVILEGES contains information about the group security identifiers (SIDs) and privileges in an access token.
+old-location: ifsk\token_groups_and_privileges.htm
+old-project: ifsk
+ms.assetid: 27d4793d-bdb4-46c5-b6e4-a2136e899adc
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ntifs/TOKEN_GROUPS_AND_PRIVILEGES, TOKEN_GROUPS_AND_PRIVILEGES, ifsk.token_groups_and_privileges, *PTOKEN_GROUPS_AND_PRIVILEGES, _TOKEN_GROUPS_AND_PRIVILEGES, securitystructures_4cab5ceb-66b1-4445-a9b0-a428fc628ab5.xml, TOKEN_GROUPS_AND_PRIVILEGES structure [Installable File System Drivers], PTOKEN_GROUPS_AND_PRIVILEGES, PTOKEN_GROUPS_AND_PRIVILEGES structure pointer [Installable File System Drivers], ntifs/PTOKEN_GROUPS_AND_PRIVILEGES
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntifs.h
+apiname:
+-	TOKEN_GROUPS_AND_PRIVILEGES
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_GROUPS_AND_PRIVILEGES, *PTOKEN_GROUPS_AND_PRIVILEGES
 ---
 
 # _TOKEN_GROUPS_AND_PRIVILEGES structure

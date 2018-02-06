@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.KSAC3_ROOM_TYPE
-title : KSAC3_ROOM_TYPE
-author : windows-driver-content
-description : The KSAC3_ROOM_TYPE structure specifies the type of audio mixing room in which an AC-3-encoded stream was produced.
-old-location : audio\ksac3_room_type.htm
-old-project : audio
-ms.assetid : adf514e1-5413-4552-b676-7567e8fa9954
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : KSAC3_ROOM_TYPE structure [Audio Devices], KSAC3_ROOM_TYPE, PKSAC3_ROOM_TYPE, audio.ksac3_room_type, PKSAC3_ROOM_TYPE structure pointer [Audio Devices], ksmedia/KSAC3_ROOM_TYPE, ksmedia/PKSAC3_ROOM_TYPE, *PKSAC3_ROOM_TYPE, aud-prop_cfc30aae-0335-42d9-bd6d-7888fed060af.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKSAC3_ROOM_TYPE, KSAC3_ROOM_TYPE"
+UID: NS:ksmedia.KSAC3_ROOM_TYPE
+title: KSAC3_ROOM_TYPE
+author: windows-driver-content
+description: The KSAC3_ROOM_TYPE structure specifies the type of audio mixing room in which an AC-3-encoded stream was produced.
+old-location: audio\ksac3_room_type.htm
+old-project: audio
+ms.assetid: adf514e1-5413-4552-b676-7567e8fa9954
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: KSAC3_ROOM_TYPE structure [Audio Devices], KSAC3_ROOM_TYPE, PKSAC3_ROOM_TYPE, audio.ksac3_room_type, PKSAC3_ROOM_TYPE structure pointer [Audio Devices], ksmedia/KSAC3_ROOM_TYPE, ksmedia/PKSAC3_ROOM_TYPE, *PKSAC3_ROOM_TYPE, aud-prop_cfc30aae-0335-42d9-bd6d-7888fed060af.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	KSAC3_ROOM_TYPE
+product: Windows
+targetos: Windows
+req.typenames: "*PKSAC3_ROOM_TYPE, KSAC3_ROOM_TYPE"
 ---
 
 # KSAC3_ROOM_TYPE structure

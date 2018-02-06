@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddstor._DEVICE_MANAGE_DATA_SET_ATTRIBUTES
-title : "_DEVICE_MANAGE_DATA_SET_ATTRIBUTES"
-author : windows-driver-content
-description : The DEVICE_MANAGE_DATA_SET_ATTRIBUTES structure specifies a management action for the data-set attributes for a device.
-old-location : storage\device_manage_data_set_attributes.htm
-old-project : storage
-ms.assetid : be0bfcef-09df-4259-a034-0d51db9819ce
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : DeviceDsmActionFlag_NonDestructive, structs-general_f8d2d431-7187-4532-ac05-69868909fc66.xml, DEVICE_DSM_FLAG_ENTIRE_DATA_SET_RANGE, ntddstor/DEVICE_MANAGE_DATA_SET_ATTRIBUTES, *PDEVICE_MANAGE_DATA_SET_ATTRIBUTES, PDEVICE_MANAGE_DATA_SET_ATTRIBUTES structure pointer [Storage Devices], DEVICE_MANAGE_DATA_SET_ATTRIBUTES structure [Storage Devices], ntddstor/PDEVICE_MANAGE_DATA_SET_ATTRIBUTES, PDEVICE_MANAGE_DATA_SET_ATTRIBUTES, _DEVICE_MANAGE_DATA_SET_ATTRIBUTES, DEVICE_MANAGE_DATA_SET_ATTRIBUTES, storage.device_manage_data_set_attributes
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddstor.h
-req.include-header : Ntddstor.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDEVICE_MANAGE_DATA_SET_ATTRIBUTES, DEVICE_MANAGE_DATA_SET_ATTRIBUTES"
+UID: NS:ntddstor._DEVICE_MANAGE_DATA_SET_ATTRIBUTES
+title: "_DEVICE_MANAGE_DATA_SET_ATTRIBUTES"
+author: windows-driver-content
+description: The DEVICE_MANAGE_DATA_SET_ATTRIBUTES structure specifies a management action for the data-set attributes for a device.
+old-location: storage\device_manage_data_set_attributes.htm
+old-project: storage
+ms.assetid: be0bfcef-09df-4259-a034-0d51db9819ce
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: DeviceDsmActionFlag_NonDestructive, structs-general_f8d2d431-7187-4532-ac05-69868909fc66.xml, DEVICE_DSM_FLAG_ENTIRE_DATA_SET_RANGE, ntddstor/DEVICE_MANAGE_DATA_SET_ATTRIBUTES, *PDEVICE_MANAGE_DATA_SET_ATTRIBUTES, PDEVICE_MANAGE_DATA_SET_ATTRIBUTES structure pointer [Storage Devices], DEVICE_MANAGE_DATA_SET_ATTRIBUTES structure [Storage Devices], ntddstor/PDEVICE_MANAGE_DATA_SET_ATTRIBUTES, PDEVICE_MANAGE_DATA_SET_ATTRIBUTES, _DEVICE_MANAGE_DATA_SET_ATTRIBUTES, DEVICE_MANAGE_DATA_SET_ATTRIBUTES, storage.device_manage_data_set_attributes
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddstor.h
+req.include-header: Ntddstor.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddstor.h
+apiname:
+-	DEVICE_MANAGE_DATA_SET_ATTRIBUTES
+product: Windows
+targetos: Windows
+req.typenames: "*PDEVICE_MANAGE_DATA_SET_ATTRIBUTES, DEVICE_MANAGE_DATA_SET_ATTRIBUTES"
 ---
 
 # _DEVICE_MANAGE_DATA_SET_ATTRIBUTES structure

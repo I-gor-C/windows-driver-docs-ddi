@@ -1,41 +1,46 @@
 ---
-UID : NN:portcls.IServiceGroup
-title : IServiceGroup
-author : windows-driver-content
-description : The IServiceGroup interface encapsulates a group of objects that all require notification of the same service request.
-old-location : audio\iservicegroup.htm
-old-project : audio
-ms.assetid : eef2741e-e1a3-471b-a756-d89990929738
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : audio.iservicegroup, IServiceGroup interface [Audio Devices], IServiceGroup interface [Audio Devices], described, IServiceGroup, portcls/IServiceGroup, audmp-routines_10cfd005-be11-47a2-a929-f338f40e6f79.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : portcls.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Portcls.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NN:portcls.IServiceGroup
+title: IServiceGroup
+author: windows-driver-content
+description: The IServiceGroup interface encapsulates a group of objects that all require notification of the same service request.
+old-location: audio\iservicegroup.htm
+old-project: audio
+ms.assetid: eef2741e-e1a3-471b-a756-d89990929738
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: audio.iservicegroup, IServiceGroup interface [Audio Devices], IServiceGroup interface [Audio Devices], described, IServiceGroup, portcls/IServiceGroup, audmp-routines_10cfd005-be11-47a2-a929-f338f40e6f79.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: portcls.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Portcls.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	portcls.h
+apiname:
+-	IServiceGroup
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 # IServiceGroup interface

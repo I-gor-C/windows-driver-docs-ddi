@@ -1,41 +1,46 @@
 ---
-UID : NI:bthioctl.IOCTL_BTH_SDP_ATTRIBUTE_SEARCH
-title : IOCTL_BTH_SDP_ATTRIBUTE_SEARCH
-author : windows-driver-content
-description : The IOCTL_BTH_SDP_ATTRIBUTE_SEARCH request obtains attributes for the specified SDP record.
-old-location : bltooth\ioctl_bth_sdp_attribute_search.htm
-old-project : bltooth
-ms.assetid : 30daf70e-34d1-45f7-a69b-503e275b83af
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : bltooth.ioctl_bth_sdp_attribute_search, IOCTL_BTH_SDP_ATTRIBUTE_SEARCH control code [Bluetooth Devices], IOCTL_BTH_SDP_ATTRIBUTE_SEARCH, bthioctl/IOCTL_BTH_SDP_ATTRIBUTE_SEARCH, bth_ioctls_19f12c1a-aaf5-4751-ba53-94054d3fb725.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : bthioctl.h
-req.include-header : Bthioctl.h
-req.target-type : Windows
-req.target-min-winverclnt : Versions:\_Supported in Windows Vista, and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= PASSIVE_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HFP_BYPASS_CODEC_ID_V1, *PHFP_BYPASS_CODEC_ID_V1
+UID: NI:bthioctl.IOCTL_BTH_SDP_ATTRIBUTE_SEARCH
+title: IOCTL_BTH_SDP_ATTRIBUTE_SEARCH
+author: windows-driver-content
+description: The IOCTL_BTH_SDP_ATTRIBUTE_SEARCH request obtains attributes for the specified SDP record.
+old-location: bltooth\ioctl_bth_sdp_attribute_search.htm
+old-project: bltooth
+ms.assetid: 30daf70e-34d1-45f7-a69b-503e275b83af
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: bltooth.ioctl_bth_sdp_attribute_search, IOCTL_BTH_SDP_ATTRIBUTE_SEARCH control code [Bluetooth Devices], IOCTL_BTH_SDP_ATTRIBUTE_SEARCH, bthioctl/IOCTL_BTH_SDP_ATTRIBUTE_SEARCH, bth_ioctls_19f12c1a-aaf5-4751-ba53-94054d3fb725.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: bthioctl.h
+req.include-header: Bthioctl.h
+req.target-type: Windows
+req.target-min-winverclnt: Versions:\_Supported in Windows Vista, and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= PASSIVE_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Bthioctl.h
+apiname:
+-	IOCTL_BTH_SDP_ATTRIBUTE_SEARCH
+product: Windows
+targetos: Windows
+req.typenames: HFP_BYPASS_CODEC_ID_V1, *PHFP_BYPASS_CODEC_ID_V1
 ---
 
 # IOCTL_BTH_SDP_ATTRIBUTE_SEARCH IOCTL

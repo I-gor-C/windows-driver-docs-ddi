@@ -1,42 +1,47 @@
 ---
-UID : NF:winspool.ExtDeviceMode
-title : ExtDeviceMode function
-author : windows-driver-content
-description : The ExtDeviceMode function is provided only for compatibility with 16-bit applications.
-old-location : print\extdevicemode.htm
-old-project : print
-ms.assetid : dade9d25-7143-4566-adc1-0c97cb508c07
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : ExtDeviceMode, ExtDeviceMode function [Print Devices], print.extdevicemode, winspool/ExtDeviceMode, spoolfnc_56c49c94-99f4-43b9-90eb-189041a1dd3a.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : winspool.h
-req.include-header : Winspool.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Winspool.lib
-req.dll : WinSpool.drv
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : BIDI_TYPE
-req.product : Windows 10 or later.
+UID: NF:winspool.ExtDeviceMode
+title: ExtDeviceMode function
+author: windows-driver-content
+description: The ExtDeviceMode function is provided only for compatibility with 16-bit applications.
+old-location: print\extdevicemode.htm
+old-project: print
+ms.assetid: dade9d25-7143-4566-adc1-0c97cb508c07
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: ExtDeviceMode, ExtDeviceMode function [Print Devices], print.extdevicemode, winspool/ExtDeviceMode, spoolfnc_56c49c94-99f4-43b9-90eb-189041a1dd3a.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: winspool.h
+req.include-header: Winspool.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Winspool.lib
+req.dll: WinSpool.drv
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	WinSpool.drv
+apiname:
+-	ExtDeviceMode
+product: Windows
+targetos: Windows
+req.typenames: BIDI_TYPE
+req.product: Windows 10 or later.
 ---
 
 

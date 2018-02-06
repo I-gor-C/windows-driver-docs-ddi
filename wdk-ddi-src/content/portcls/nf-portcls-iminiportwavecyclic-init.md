@@ -1,41 +1,46 @@
 ---
-UID : NF:portcls.IMiniportWaveCyclic.Init
-title : IMiniportWaveCyclic::Init method
-author : windows-driver-content
-description : The Init method initializes the WaveCyclic miniport object. Initialization includes verification of the hardware using the resources specified in the resource list.
-old-location : audio\iminiportwavecyclic_init.htm
-old-project : audio
-ms.assetid : 2f0147d0-9c1d-4f3e-890f-941568220605
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : IMiniportWavweCyclic::Init, IMiniportWavweCyclic interface [Audio Devices], Init method, Init method [Audio Devices], IMiniportWavweCyclic interface, IMiniportWaveCyclic, Init, IMiniportWaveCyclic::Init, audio.iminiportwavecyclic_init, Init method [Audio Devices], audmp-routines_d18e9242-160d-4f55-9204-2e425b1f1669.xml, portcls/IMiniportWavweCyclic::Init
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : portcls.h
-req.include-header : Portcls.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : portcls.h
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.IMiniportWaveCyclic.Init
+title: IMiniportWaveCyclic::Init method
+author: windows-driver-content
+description: The Init method initializes the WaveCyclic miniport object. Initialization includes verification of the hardware using the resources specified in the resource list.
+old-location: audio\iminiportwavecyclic_init.htm
+old-project: audio
+ms.assetid: 2f0147d0-9c1d-4f3e-890f-941568220605
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: IMiniportWavweCyclic::Init, IMiniportWavweCyclic interface [Audio Devices], Init method, Init method [Audio Devices], IMiniportWavweCyclic interface, IMiniportWaveCyclic, Init, IMiniportWaveCyclic::Init, audio.iminiportwavecyclic_init, Init method [Audio Devices], audmp-routines_d18e9242-160d-4f55-9204-2e425b1f1669.xml, portcls/IMiniportWavweCyclic::Init
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: portcls.h
+req.include-header: Portcls.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: portcls.h
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	portcls.h
+apiname:
+-	IMiniportWavweCyclic.Init
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NC:ndis.NDIS_SWITCH_ADD_NET_BUFFER_LIST_DESTINATION
-title : NDIS_SWITCH_ADD_NET_BUFFER_LIST_DESTINATION
-author : windows-driver-content
-description : The AddNetBufferListDestination function adds a single destination port for a packet that is specified by a NET_BUFFER_LIST structure.
-old-location : netvista\AddNetBufferListDestination.htm
-old-project : netvista
-ms.assetid : 6B8CD868-D2F4-4892-BF6D-DFD7A3984320
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.AddNetBufferListDestination, AddNetBufferListDestination callback function [Network Drivers Starting with Windows Vista], AddNetBufferListDestination, NDIS_SWITCH_ADD_NET_BUFFER_LIST_DESTINATION, NDIS_SWITCH_ADD_NET_BUFFER_LIST_DESTINATION, ndis/AddNetBufferListDestination
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported in NDIS 6.30 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
+UID: NC:ndis.NDIS_SWITCH_ADD_NET_BUFFER_LIST_DESTINATION
+title: NDIS_SWITCH_ADD_NET_BUFFER_LIST_DESTINATION
+author: windows-driver-content
+description: The AddNetBufferListDestination function adds a single destination port for a packet that is specified by a NET_BUFFER_LIST structure.
+old-location: netvista\AddNetBufferListDestination.htm
+old-project: netvista
+ms.assetid: 6B8CD868-D2F4-4892-BF6D-DFD7A3984320
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.AddNetBufferListDestination, AddNetBufferListDestination callback function [Network Drivers Starting with Windows Vista], AddNetBufferListDestination, NDIS_SWITCH_ADD_NET_BUFFER_LIST_DESTINATION, NDIS_SWITCH_ADD_NET_BUFFER_LIST_DESTINATION, ndis/AddNetBufferListDestination
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported in NDIS 6.30 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ndis.h
+apiname:
+-	AddNetBufferListDestination
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 

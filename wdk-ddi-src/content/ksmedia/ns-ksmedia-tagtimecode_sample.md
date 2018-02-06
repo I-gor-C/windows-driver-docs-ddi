@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.tagTIMECODE_SAMPLE
-title : tagTIMECODE_SAMPLE
-author : windows-driver-content
-description : The TIMECODE_SAMPLE structure describes a complete timecode.
-old-location : stream\timecode_sample.htm
-old-project : stream
-ms.assetid : 01654107-29a1-4f34-bb9a-a17fe36a84fe
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : vidcapstruct_518cf1af-a1e2-43a6-b97f-115c4fe8cb6d.xml, *PTIMECODE_SAMPLE, TIMECODE_SAMPLE structure [Streaming Media Devices], ksmedia/TIMECODE_SAMPLE, tagTIMECODE_SAMPLE, stream.timecode_sample, TIMECODE_SAMPLE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TIMECODE_SAMPLE
+UID: NS:ksmedia.tagTIMECODE_SAMPLE
+title: tagTIMECODE_SAMPLE
+author: windows-driver-content
+description: The TIMECODE_SAMPLE structure describes a complete timecode.
+old-location: stream\timecode_sample.htm
+old-project: stream
+ms.assetid: 01654107-29a1-4f34-bb9a-a17fe36a84fe
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: vidcapstruct_518cf1af-a1e2-43a6-b97f-115c4fe8cb6d.xml, *PTIMECODE_SAMPLE, TIMECODE_SAMPLE structure [Streaming Media Devices], ksmedia/TIMECODE_SAMPLE, tagTIMECODE_SAMPLE, stream.timecode_sample, TIMECODE_SAMPLE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	TIMECODE_SAMPLE
+product: Windows
+targetos: Windows
+req.typenames: TIMECODE_SAMPLE
 ---
 
 # tagTIMECODE_SAMPLE structure

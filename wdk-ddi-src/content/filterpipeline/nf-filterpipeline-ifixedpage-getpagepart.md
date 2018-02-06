@@ -1,41 +1,46 @@
 ---
-UID : NF:filterpipeline.IFixedPage.GetPagePart
-title : IFixedPage::GetPagePart method
-author : windows-driver-content
-description : The GetPagePart method gets the images, thumbnails, fonts, and so on in a page by using the URI.
-old-location : print\ifixedpage_getpagepart.htm
-old-project : print
-ms.assetid : 6ec8d282-eedb-419e-84cb-8f4776ea7650
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : filterpipeline_925ca634-7cac-41f6-b80f-cc5c90154ae0.xml, IFixedPage, IFixedPage interface [Print Devices], GetPagePart method, GetPagePart method [Print Devices], print.ifixedpage_getpagepart, filterpipeline/IFixedPage::GetPagePart, GetPagePart method [Print Devices], IFixedPage interface, GetPagePart, IFixedPage::GetPagePart
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : filterpipeline.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : Filterpipeline.idl
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : filterpipeline.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:filterpipeline.IFixedPage.GetPagePart
+title: IFixedPage::GetPagePart method
+author: windows-driver-content
+description: The GetPagePart method gets the images, thumbnails, fonts, and so on in a page by using the URI.
+old-location: print\ifixedpage_getpagepart.htm
+old-project: print
+ms.assetid: 6ec8d282-eedb-419e-84cb-8f4776ea7650
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: filterpipeline_925ca634-7cac-41f6-b80f-cc5c90154ae0.xml, IFixedPage, IFixedPage interface [Print Devices], GetPagePart method, GetPagePart method [Print Devices], print.ifixedpage_getpagepart, filterpipeline/IFixedPage::GetPagePart, GetPagePart method [Print Devices], IFixedPage interface, GetPagePart, IFixedPage::GetPagePart
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: filterpipeline.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: Filterpipeline.idl
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: filterpipeline.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	filterpipeline.h
+apiname:
+-	IFixedPage.GetPagePart
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

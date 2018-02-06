@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.CcWaitForCurrentLazyWriterActivity
-title : CcWaitForCurrentLazyWriterActivity function
-author : windows-driver-content
-description : The CcWaitForCurrentLazyWriterActivity routine puts the caller into a wait state until the current batch of lazy writer activity is completed.
-old-location : ifsk\ccwaitforcurrentlazywriteractivity.htm
-old-project : ifsk
-ms.assetid : eda2198d-d9c9-498a-b94f-5ebdaae417be
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ntifs/CcWaitForCurrentLazyWriterActivity, CcWaitForCurrentLazyWriterActivity routine [Installable File System Drivers], ccref_a216c467-24be-4ea5-9c53-71cf1fe1c47d.xml, ifsk.ccwaitforcurrentlazywriteractivity, CcWaitForCurrentLazyWriterActivity
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available on Microsoft Windows 2000 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.CcWaitForCurrentLazyWriterActivity
+title: CcWaitForCurrentLazyWriterActivity function
+author: windows-driver-content
+description: The CcWaitForCurrentLazyWriterActivity routine puts the caller into a wait state until the current batch of lazy writer activity is completed.
+old-location: ifsk\ccwaitforcurrentlazywriteractivity.htm
+old-project: ifsk
+ms.assetid: eda2198d-d9c9-498a-b94f-5ebdaae417be
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ntifs/CcWaitForCurrentLazyWriterActivity, CcWaitForCurrentLazyWriterActivity routine [Installable File System Drivers], ccref_a216c467-24be-4ea5-9c53-71cf1fe1c47d.xml, ifsk.ccwaitforcurrentlazywriteractivity, CcWaitForCurrentLazyWriterActivity
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available on Microsoft Windows 2000 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	CcWaitForCurrentLazyWriterActivity
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

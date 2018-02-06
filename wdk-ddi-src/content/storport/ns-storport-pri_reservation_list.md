@@ -1,42 +1,47 @@
 ---
-UID : NS:storport.PRI_RESERVATION_LIST
-title : PRI_RESERVATION_LIST
-author : windows-driver-content
-description : The PRI_RESERVATION_LIST structure is returned in response to a Persistent Reserve In command with ServiceAction = RESERVATION_ACTION_READ_RESERVATIONS.
-old-location : storage\pri_reservation_list.htm
-old-project : storage
-ms.assetid : 5756e907-008a-49c3-b1cd-947cb0ce1bd4
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : PRI_RESERVATION_LIST, *PPRI_RESERVATION_LIST, PRI_RESERVATION_LIST structure [Storage Devices], storport/PRI_RESERVATION_LIST, structs-general_10a53f53-2aed-4be1-bf2b-d61efa2c846f.xml, PPRI_RESERVATION_LIST structure pointer [Storage Devices], PPRI_RESERVATION_LIST, storage.pri_reservation_list, storport/PPRI_RESERVATION_LIST
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : storport.h
-req.include-header : Ntddstor.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PRI_RESERVATION_LIST, *PPRI_RESERVATION_LIST
-req.product : Windows 10 or later.
+UID: NS:storport.PRI_RESERVATION_LIST
+title: PRI_RESERVATION_LIST
+author: windows-driver-content
+description: The PRI_RESERVATION_LIST structure is returned in response to a Persistent Reserve In command with ServiceAction = RESERVATION_ACTION_READ_RESERVATIONS.
+old-location: storage\pri_reservation_list.htm
+old-project: storage
+ms.assetid: 5756e907-008a-49c3-b1cd-947cb0ce1bd4
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: PRI_RESERVATION_LIST, *PPRI_RESERVATION_LIST, PRI_RESERVATION_LIST structure [Storage Devices], storport/PRI_RESERVATION_LIST, structs-general_10a53f53-2aed-4be1-bf2b-d61efa2c846f.xml, PPRI_RESERVATION_LIST structure pointer [Storage Devices], PPRI_RESERVATION_LIST, storage.pri_reservation_list, storport/PPRI_RESERVATION_LIST
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: storport.h
+req.include-header: Ntddstor.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	storport.h
+apiname:
+-	PRI_RESERVATION_LIST
+product: Windows
+targetos: Windows
+req.typenames: PRI_RESERVATION_LIST, *PPRI_RESERVATION_LIST
+req.product: Windows 10 or later.
 ---
 
 # PRI_RESERVATION_LIST structure

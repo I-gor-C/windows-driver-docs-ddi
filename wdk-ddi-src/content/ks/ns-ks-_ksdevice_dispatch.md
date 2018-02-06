@@ -1,41 +1,46 @@
 ---
-UID : NS:ks._KSDEVICE_DISPATCH
-title : "_KSDEVICE_DISPATCH"
-author : windows-driver-content
-description : The KSDEVICE_DISPATCH structure describes the callbacks that a client can provide to receive notification of device creation and PnP events.
-old-location : stream\ksdevice_dispatch.htm
-old-project : stream
-ms.assetid : 1ae7af1d-5e1c-4728-82c5-efc8d60b5df6
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KSDEVICE_DISPATCH, KSDEVICE_DISPATCH structure [Streaming Media Devices], PKSDEVICE_DISPATCH, ks/KSDEVICE_DISPATCH, avstruct_7ceb03b7-6973-46bd-ad3e-32fdce7f4f11.xml, ks/PKSDEVICE_DISPATCH, *PKSDEVICE_DISPATCH, _KSDEVICE_DISPATCH, stream.ksdevice_dispatch, PKSDEVICE_DISPATCH structure pointer [Streaming Media Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and in Microsoft DirectX 8.0 and later versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KSDEVICE_DISPATCH, *PKSDEVICE_DISPATCH
+UID: NS:ks._KSDEVICE_DISPATCH
+title: "_KSDEVICE_DISPATCH"
+author: windows-driver-content
+description: The KSDEVICE_DISPATCH structure describes the callbacks that a client can provide to receive notification of device creation and PnP events.
+old-location: stream\ksdevice_dispatch.htm
+old-project: stream
+ms.assetid: 1ae7af1d-5e1c-4728-82c5-efc8d60b5df6
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KSDEVICE_DISPATCH, KSDEVICE_DISPATCH structure [Streaming Media Devices], PKSDEVICE_DISPATCH, ks/KSDEVICE_DISPATCH, avstruct_7ceb03b7-6973-46bd-ad3e-32fdce7f4f11.xml, ks/PKSDEVICE_DISPATCH, *PKSDEVICE_DISPATCH, _KSDEVICE_DISPATCH, stream.ksdevice_dispatch, PKSDEVICE_DISPATCH structure pointer [Streaming Media Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and in Microsoft DirectX 8.0 and later versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	KSDEVICE_DISPATCH
+product: Windows
+targetos: Windows
+req.typenames: KSDEVICE_DISPATCH, *PKSDEVICE_DISPATCH
 ---
 
 # _KSDEVICE_DISPATCH structure

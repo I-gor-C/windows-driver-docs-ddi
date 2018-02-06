@@ -1,42 +1,47 @@
 ---
-UID : NS:usbioctl._USB_PORT_PROPERTIES
-title : "_USB_PORT_PROPERTIES"
-author : windows-driver-content
-description : The USB_PORT_PROPERTIES union is used to report the capabilities of a Universal Serial Bus (USB) port.The port capabilities are retrieved in the USB_PORT_CONNECTOR_PROPERTIES structure by the IOCTL_USB_GET_PORT_CONNECTOR_PROPERTIES I/O control request.
-old-location : buses\usb_port_properties.htm
-old-project : usbref
-ms.assetid : BCADC907-3770-4FBE-AEB3-96F93502E899
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : usbioctl/USB_PORT_PROPERTIES, USB_PORT_PROPERTIES, PUSB_PORT_PROPERTIES union pointer [Buses], _USB_PORT_PROPERTIES, PUSB_PORT_PROPERTIES, USB_PORT_PROPERTIES union [Buses], *PUSB_PORT_PROPERTIES, usbioctl/PUSB_PORT_PROPERTIES, buses.usb_port_properties
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : usbioctl.h
-req.include-header : Usbioctl.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : None supported
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUSB_PORT_PROPERTIES, USB_PORT_PROPERTIES"
-req.product : Windows 10 or later.
+UID: NS:usbioctl._USB_PORT_PROPERTIES
+title: "_USB_PORT_PROPERTIES"
+author: windows-driver-content
+description: The USB_PORT_PROPERTIES union is used to report the capabilities of a Universal Serial Bus (USB) port.The port capabilities are retrieved in the USB_PORT_CONNECTOR_PROPERTIES structure by the IOCTL_USB_GET_PORT_CONNECTOR_PROPERTIES I/O control request.
+old-location: buses\usb_port_properties.htm
+old-project: usbref
+ms.assetid: BCADC907-3770-4FBE-AEB3-96F93502E899
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: usbioctl/USB_PORT_PROPERTIES, USB_PORT_PROPERTIES, PUSB_PORT_PROPERTIES union pointer [Buses], _USB_PORT_PROPERTIES, PUSB_PORT_PROPERTIES, USB_PORT_PROPERTIES union [Buses], *PUSB_PORT_PROPERTIES, usbioctl/PUSB_PORT_PROPERTIES, buses.usb_port_properties
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: usbioctl.h
+req.include-header: Usbioctl.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: None supported
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	usbioctl.h
+apiname:
+-	USB_PORT_PROPERTIES
+product: Windows
+targetos: Windows
+req.typenames: "*PUSB_PORT_PROPERTIES, USB_PORT_PROPERTIES"
+req.product: Windows 10 or later.
 ---
 
 # _USB_PORT_PROPERTIES structure

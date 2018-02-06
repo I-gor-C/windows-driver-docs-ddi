@@ -1,42 +1,48 @@
 ---
-UID : NF:wdffileobject.WdfFileObjectWdmGetFileObject
-title : WdfFileObjectWdmGetFileObject function
-author : windows-driver-content
-description : The WdfFileObjectWdmGetFileObject method returns the Windows Driver Model (WDM) file object that is associated with a specified framework file object.
-old-location : wdf\wdffileobjectwdmgetfileobject.htm
-old-project : wdf
-ms.assetid : f3cc9b23-6140-4cb2-959d-c76f23c697ea
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdffileobject/WdfFileObjectWdmGetFileObject, PFN_WDFFILEOBJECTWDMGETFILEOBJECT, wdf.wdffileobjectwdmgetfileobject, kmdf.wdffileobjectwdmgetfileobject, WdfFileObjectWdmGetFileObject method, WdfFileObjectWdmGetFileObject, DFFileObjectRef_1631ea08-9156-4de4-85e6-9368b89ae0f4.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdffileobject.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_FILE_INFORMATION_CLASS, *PWDF_FILE_INFORMATION_CLASS
-req.product : Windows 10 or later.
+UID: NF:wdffileobject.WdfFileObjectWdmGetFileObject
+title: WdfFileObjectWdmGetFileObject function
+author: windows-driver-content
+description: The WdfFileObjectWdmGetFileObject method returns the Windows Driver Model (WDM) file object that is associated with a specified framework file object.
+old-location: wdf\wdffileobjectwdmgetfileobject.htm
+old-project: wdf
+ms.assetid: f3cc9b23-6140-4cb2-959d-c76f23c697ea
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdffileobject/WdfFileObjectWdmGetFileObject, PFN_WDFFILEOBJECTWDMGETFILEOBJECT, wdf.wdffileobjectwdmgetfileobject, kmdf.wdffileobjectwdmgetfileobject, WdfFileObjectWdmGetFileObject method, WdfFileObjectWdmGetFileObject, DFFileObjectRef_1631ea08-9156-4de4-85e6-9368b89ae0f4.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdffileobject.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfFileObjectWdmGetFileObject
+product: Windows
+targetos: Windows
+req.typenames: WDF_FILE_INFORMATION_CLASS, *PWDF_FILE_INFORMATION_CLASS
+req.product: Windows 10 or later.
 ---
 
 

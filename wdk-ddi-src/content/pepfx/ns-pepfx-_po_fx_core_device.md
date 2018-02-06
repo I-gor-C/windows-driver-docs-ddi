@@ -1,41 +1,46 @@
 ---
-UID : NS:pepfx._PO_FX_CORE_DEVICE
-title : "_PO_FX_CORE_DEVICE"
-author : windows-driver-content
-description : The PO_FX_CORE_DEVICE structure contains information about the power-state attributes of the components in a core system resource, and provides a software interface for power-managing these components.
-old-location : kernel\po_fx_core_device.htm
-old-project : kernel
-ms.assetid : 46C16795-412B-48E7-A7E8-E474CEC51849
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.po_fx_core_device, PPO_FX_CORE_DEVICE structure pointer [Kernel-Mode Driver Architecture], PPO_FX_CORE_DEVICE, *PPO_FX_CORE_DEVICE, pepfx/PPO_FX_CORE_DEVICE, pepfx/PO_FX_CORE_DEVICE, _PO_FX_CORE_DEVICE, PO_FX_CORE_DEVICE structure [Kernel-Mode Driver Architecture], PO_FX_CORE_DEVICE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : pepfx.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with Windows 10.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PO_FX_CORE_DEVICE, *PPO_FX_CORE_DEVICE
+UID: NS:pepfx._PO_FX_CORE_DEVICE
+title: "_PO_FX_CORE_DEVICE"
+author: windows-driver-content
+description: The PO_FX_CORE_DEVICE structure contains information about the power-state attributes of the components in a core system resource, and provides a software interface for power-managing these components.
+old-location: kernel\po_fx_core_device.htm
+old-project: kernel
+ms.assetid: 46C16795-412B-48E7-A7E8-E474CEC51849
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.po_fx_core_device, PPO_FX_CORE_DEVICE structure pointer [Kernel-Mode Driver Architecture], PPO_FX_CORE_DEVICE, *PPO_FX_CORE_DEVICE, pepfx/PPO_FX_CORE_DEVICE, pepfx/PO_FX_CORE_DEVICE, _PO_FX_CORE_DEVICE, PO_FX_CORE_DEVICE structure [Kernel-Mode Driver Architecture], PO_FX_CORE_DEVICE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: pepfx.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows 10.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	pepfx.h
+apiname:
+-	PO_FX_CORE_DEVICE
+product: Windows
+targetos: Windows
+req.typenames: PO_FX_CORE_DEVICE, *PPO_FX_CORE_DEVICE
 ---
 
 # _PO_FX_CORE_DEVICE structure

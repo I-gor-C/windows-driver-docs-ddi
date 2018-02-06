@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfdevice.WdfDeviceInitSetDeviceClass
-title : WdfDeviceInitSetDeviceClass function
-author : windows-driver-content
-description : The WdfDeviceInitSetDeviceClass method specifies a GUID that identifies the device's device setup class.
-old-location : wdf\wdfdeviceinitsetdeviceclass.htm
-old-project : wdf
-ms.assetid : c87a8368-3804-4a07-92c8-65a453d0808f
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.wdfdeviceinitsetdeviceclass, WdfDeviceInitSetDeviceClass method, kmdf.wdfdeviceinitsetdeviceclass, WdfDeviceInitSetDeviceClass, wdfdevice/WdfDeviceInitSetDeviceClass, DFDeviceObjectGeneralRef_9c2c2390-3dcc-40f4-ba43-16c8988dbfae.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfdevice.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : ChildDeviceInitAPI, ControlDeviceInitAPI, DeviceInitAPI, DriverCreate, KmdfIrql, KmdfIrql2, PdoDeviceInitAPI
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_STATE_NOTIFICATION_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfdevice.WdfDeviceInitSetDeviceClass
+title: WdfDeviceInitSetDeviceClass function
+author: windows-driver-content
+description: The WdfDeviceInitSetDeviceClass method specifies a GUID that identifies the device's device setup class.
+old-location: wdf\wdfdeviceinitsetdeviceclass.htm
+old-project: wdf
+ms.assetid: c87a8368-3804-4a07-92c8-65a453d0808f
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.wdfdeviceinitsetdeviceclass, WdfDeviceInitSetDeviceClass method, kmdf.wdfdeviceinitsetdeviceclass, WdfDeviceInitSetDeviceClass, wdfdevice/WdfDeviceInitSetDeviceClass, DFDeviceObjectGeneralRef_9c2c2390-3dcc-40f4-ba43-16c8988dbfae.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfdevice.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: ChildDeviceInitAPI, ControlDeviceInitAPI, DeviceInitAPI, DriverCreate, KmdfIrql, KmdfIrql2, PdoDeviceInitAPI
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfDeviceInitSetDeviceClass
+product: Windows
+targetos: Windows
+req.typenames: WDF_STATE_NOTIFICATION_TYPE
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NC:wdm.PFREE_ADAPTER_CHANNEL
-title : PFREE_ADAPTER_CHANNEL
-author : windows-driver-content
-description : The FreeAdapterChannel routine releases the system DMA controller when a driver has completed all DMA operations necessary to satisfy the current IRP.
-old-location : kernel\freeadapterchannel.htm
-old-project : kernel
-ms.assetid : 916531dd-4768-436a-910c-07d49924ac48
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.freeadapterchannel, FreeAdapterChannel, FreeAdapterChannel callback function [Kernel-Mode Driver Architecture], FreeAdapterChannel, PFREE_ADAPTER_CHANNEL, PFREE_ADAPTER_CHANNEL, wdm/FreeAdapterChannel, kdma_f48025a6-96a2-4bdd-8b48-6c939bdf738b.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : IrqlDispatch, IrqlDispatch(storport)
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : DISPATCH_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
-req.product : Windows 10 or later.
+UID: NC:wdm.PFREE_ADAPTER_CHANNEL
+title: PFREE_ADAPTER_CHANNEL
+author: windows-driver-content
+description: The FreeAdapterChannel routine releases the system DMA controller when a driver has completed all DMA operations necessary to satisfy the current IRP.
+old-location: kernel\freeadapterchannel.htm
+old-project: kernel
+ms.assetid: 916531dd-4768-436a-910c-07d49924ac48
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.freeadapterchannel, FreeAdapterChannel, FreeAdapterChannel callback function [Kernel-Mode Driver Architecture], FreeAdapterChannel, PFREE_ADAPTER_CHANNEL, PFREE_ADAPTER_CHANNEL, wdm/FreeAdapterChannel, kdma_f48025a6-96a2-4bdd-8b48-6c939bdf738b.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: IrqlDispatch, IrqlDispatch(storport)
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: DISPATCH_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	wdm.h
+apiname:
+-	FreeAdapterChannel
+product: Windows
+targetos: Windows
+req.typenames: WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+req.product: Windows 10 or later.
 ---
 
 

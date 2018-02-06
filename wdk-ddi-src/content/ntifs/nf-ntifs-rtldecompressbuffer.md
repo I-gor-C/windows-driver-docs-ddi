@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.RtlDecompressBuffer
-title : RtlDecompressBuffer function
-author : windows-driver-content
-description : The RtlDecompressBuffer function decompresses an entire compressed buffer.
-old-location : ifsk\rtldecompressbuffer.htm
-old-project : ifsk
-ms.assetid : 4f82d094-e6be-4367-9146-1fa3f200ffa0
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : COMPRESSION_FORMAT_XPRESS, COMPRESSION_FORMAT_NONE, COMPRESSION_FORMAT_DEFAULT, rtlref_d19521fb-b086-4ee4-ae65-6354a89aeff9.xml, ifsk.rtldecompressbuffer, RtlDecompressBuffer function [Installable File System Drivers], RtlDecompressBuffer, COMPRESSION_FORMAT_LZNT1, ntifs/RtlDecompressBuffer
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Fltkernel.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting in Windows XP.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.RtlDecompressBuffer
+title: RtlDecompressBuffer function
+author: windows-driver-content
+description: The RtlDecompressBuffer function decompresses an entire compressed buffer.
+old-location: ifsk\rtldecompressbuffer.htm
+old-project: ifsk
+ms.assetid: 4f82d094-e6be-4367-9146-1fa3f200ffa0
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: COMPRESSION_FORMAT_XPRESS, COMPRESSION_FORMAT_NONE, COMPRESSION_FORMAT_DEFAULT, rtlref_d19521fb-b086-4ee4-ae65-6354a89aeff9.xml, ifsk.rtldecompressbuffer, RtlDecompressBuffer function [Installable File System Drivers], RtlDecompressBuffer, COMPRESSION_FORMAT_LZNT1, ntifs/RtlDecompressBuffer
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Fltkernel.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting in Windows XP.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	RtlDecompressBuffer
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

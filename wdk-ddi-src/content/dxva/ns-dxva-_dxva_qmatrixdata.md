@@ -1,41 +1,46 @@
 ---
-UID : NS:dxva._DXVA_QmatrixData
-title : "_DXVA_QmatrixData"
-author : windows-driver-content
-description : The DXVA_QmatrixData structure is sent by the host decoder to the accelerator to load inverse-quantization matrix data for off-host bitstream compressed video picture decoding.
-old-location : display\dxva_qmatrixdata.htm
-old-project : display
-ms.assetid : 2cb96d6b-37f1-47dd-8135-66d3ead2dd64
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : LPDXVA_QmatrixData, DXVA_QmatrixData structure [Display Devices], dxvaref_96294cc5-1f6c-4632-bb98-df5e56bac34f.xml, dxva/DXVA_QmatrixData, display.dxva_qmatrixdata, dxva/LPDXVA_QmatrixData, _DXVA_QmatrixData, LPDXVA_QmatrixData structure pointer [Display Devices], *LPDXVA_QmatrixData, DXVA_QmatrixData
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : dxva.h
-req.include-header : Dxva.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*LPDXVA_QmatrixData, DXVA_QmatrixData"
+UID: NS:dxva._DXVA_QmatrixData
+title: "_DXVA_QmatrixData"
+author: windows-driver-content
+description: The DXVA_QmatrixData structure is sent by the host decoder to the accelerator to load inverse-quantization matrix data for off-host bitstream compressed video picture decoding.
+old-location: display\dxva_qmatrixdata.htm
+old-project: display
+ms.assetid: 2cb96d6b-37f1-47dd-8135-66d3ead2dd64
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: LPDXVA_QmatrixData, DXVA_QmatrixData structure [Display Devices], dxvaref_96294cc5-1f6c-4632-bb98-df5e56bac34f.xml, dxva/DXVA_QmatrixData, display.dxva_qmatrixdata, dxva/LPDXVA_QmatrixData, _DXVA_QmatrixData, LPDXVA_QmatrixData structure pointer [Display Devices], *LPDXVA_QmatrixData, DXVA_QmatrixData
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: dxva.h
+req.include-header: Dxva.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	dxva.h
+apiname:
+-	DXVA_QmatrixData
+product: Windows
+targetos: Windows
+req.typenames: "*LPDXVA_QmatrixData, DXVA_QmatrixData"
 ---
 
 # _DXVA_QmatrixData structure

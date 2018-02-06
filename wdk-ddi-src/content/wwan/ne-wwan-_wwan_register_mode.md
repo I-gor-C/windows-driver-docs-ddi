@@ -1,42 +1,47 @@
 ---
-UID : NE:wwan._WWAN_REGISTER_MODE
-title : "_WWAN_REGISTER_MODE"
-author : windows-driver-content
-description : The WWAN_REGISTER_MODE enumeration lists the different network selection modes which defines the way the device should select a network while registering.
-old-location : netvista\wwan_register_mode.htm
-old-project : netvista
-ms.assetid : 608d041c-1034-49cf-b8da-cb3f7769ac55
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.wwan_register_mode, wwan/WwanRegisterModeManual, wwan/WwanRegisterModeMax, wwan/WwanRegisterModeAutomatic, WwanRef_eac9611f-2097-43fc-96ea-ade56e77b7e7.xml, _WWAN_REGISTER_MODE, *PWWAN_REGISTER_MODE, WwanRegisterModeAutomatic, WwanRegisterModeManual, WwanRegisterModeMax, wwan/WWAN_REGISTER_MODE, PWWAN_REGISTER_MODE, wwan/WwanRegisterModeUnknown, WWAN_REGISTER_MODE, WWAN_REGISTER_MODE enumeration [Network Drivers Starting with Windows Vista], PWWAN_REGISTER_MODE enumeration pointer [Network Drivers Starting with Windows Vista], WwanRegisterModeUnknown, wwan/PWWAN_REGISTER_MODE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : wwan.h
-req.include-header : Wwan.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWWAN_REGISTER_MODE, WWAN_REGISTER_MODE"
-req.product : Windows 10 or later.
+UID: NE:wwan._WWAN_REGISTER_MODE
+title: "_WWAN_REGISTER_MODE"
+author: windows-driver-content
+description: The WWAN_REGISTER_MODE enumeration lists the different network selection modes which defines the way the device should select a network while registering.
+old-location: netvista\wwan_register_mode.htm
+old-project: netvista
+ms.assetid: 608d041c-1034-49cf-b8da-cb3f7769ac55
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.wwan_register_mode, wwan/WwanRegisterModeManual, wwan/WwanRegisterModeMax, wwan/WwanRegisterModeAutomatic, WwanRef_eac9611f-2097-43fc-96ea-ade56e77b7e7.xml, _WWAN_REGISTER_MODE, *PWWAN_REGISTER_MODE, WwanRegisterModeAutomatic, WwanRegisterModeManual, WwanRegisterModeMax, wwan/WWAN_REGISTER_MODE, PWWAN_REGISTER_MODE, wwan/WwanRegisterModeUnknown, WWAN_REGISTER_MODE, WWAN_REGISTER_MODE enumeration [Network Drivers Starting with Windows Vista], PWWAN_REGISTER_MODE enumeration pointer [Network Drivers Starting with Windows Vista], WwanRegisterModeUnknown, wwan/PWWAN_REGISTER_MODE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: wwan.h
+req.include-header: Wwan.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wwan.h
+apiname:
+-	WWAN_REGISTER_MODE
+product: Windows
+targetos: Windows
+req.typenames: "*PWWAN_REGISTER_MODE, WWAN_REGISTER_MODE"
+req.product: Windows 10 or later.
 ---
 
 # _WWAN_REGISTER_MODE Enumeration
@@ -56,31 +61,31 @@ typedef enum _WWAN_REGISTER_MODE {
 ## Constants
 
 <table>
-
-<tr>
-<td>WwanRegisterModeAutomatic</td>
-<td>Device automatically selects a network on which it should register.</td>
-</tr>
-
-<tr>
-<td>WwanRegisterModeManual</td>
-<td>Device registers to a pre-selected (manually selected) network.</td>
-</tr>
-
-<tr>
-<td>WwanRegisterModeMax</td>
-<td>The total number of supported registration modes.</td>
-</tr>
-
-<tr>
-<td>WwanRegisterModeUnknown</td>
-<td>It is not specified how the device registers with network providers.</td>
-</tr>
+            
+                <tr>
+                    <td>WwanRegisterModeAutomatic</td>
+                    <td>Device automatically selects a network on which it should register.</td>
+                </tr>
+            
+                <tr>
+                    <td>WwanRegisterModeManual</td>
+                    <td>Device registers to a pre-selected (manually selected) network.</td>
+                </tr>
+            
+                <tr>
+                    <td>WwanRegisterModeMax</td>
+                    <td>The total number of supported registration modes.</td>
+                </tr>
+            
+                <tr>
+                    <td>WwanRegisterModeUnknown</td>
+                    <td>It is not specified how the device registers with network providers.</td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-<b>WwanRegisterModeAutomatic</b> and 
+        <b>WwanRegisterModeAutomatic</b> and 
     <b>WwanRegisterModeManual</b> are the only acceptable values. Miniport drivers can return 
     <b>WwanRegisterModeManual</b> in cases where it is not able to get this value from device.
 
@@ -90,9 +95,9 @@ typedef enum _WWAN_REGISTER_MODE {
 | **Windows version** | Available in Windows 7 and later versions of Windows. Available in Windows 7 and later versions of Windows. |
 | **Header** | wwan.h (include Wwan.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\wwan\ns-wwan-_wwan_registration_state.md">WWAN_REGISTRATION_STATE</a>
+        <a href="..\wwan\ns-wwan-_wwan_registration_state.md">WWAN_REGISTRATION_STATE</a>
 
  
 

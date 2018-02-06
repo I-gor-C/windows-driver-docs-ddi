@@ -1,41 +1,46 @@
 ---
-UID : NS:hbapiwmi._ScsiReportLuns_IN
-title : "_ScsiReportLuns_IN"
-author : windows-driver-content
-description : The ScsiReportLuns_IN structure is used to deliver input parameter data to the ScsiReportLuns WMI method.
-old-location : storage\scsireportluns_in2.htm
-old-project : storage
-ms.assetid : 6de38cf4-a543-4cc9-aa6f-1804fc858040
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : hbapiwmi/PScsiReportLuns_IN, ScsiReportLuns_IN structure [Storage Devices], *PScsiReportLuns_IN, PScsiReportLuns_IN structure pointer [Storage Devices], storage.scsireportluns_in2, _ScsiReportLuns_IN, PScsiReportLuns_IN, structs-Fibre_29218585-2d91-40f3-bbce-fb23df1e3df9.xml, hbapiwmi/ScsiReportLuns_IN, ScsiReportLuns_IN
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : hbapiwmi.h
-req.include-header : Hbapiwmi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PScsiReportLuns_IN, ScsiReportLuns_IN"
+UID: NS:hbapiwmi._ScsiReportLuns_IN
+title: "_ScsiReportLuns_IN"
+author: windows-driver-content
+description: The ScsiReportLuns_IN structure is used to deliver input parameter data to the ScsiReportLuns WMI method.
+old-location: storage\scsireportluns_in2.htm
+old-project: storage
+ms.assetid: 6de38cf4-a543-4cc9-aa6f-1804fc858040
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: hbapiwmi/PScsiReportLuns_IN, ScsiReportLuns_IN structure [Storage Devices], *PScsiReportLuns_IN, PScsiReportLuns_IN structure pointer [Storage Devices], storage.scsireportluns_in2, _ScsiReportLuns_IN, PScsiReportLuns_IN, structs-Fibre_29218585-2d91-40f3-bbce-fb23df1e3df9.xml, hbapiwmi/ScsiReportLuns_IN, ScsiReportLuns_IN
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: hbapiwmi.h
+req.include-header: Hbapiwmi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Hbapiwmi.h
+apiname:
+-	ScsiReportLuns_IN
+product: Windows
+targetos: Windows
+req.typenames: "*PScsiReportLuns_IN, ScsiReportLuns_IN"
 ---
 
 # _ScsiReportLuns_IN structure

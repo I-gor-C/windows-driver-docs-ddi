@@ -1,41 +1,47 @@
 ---
-UID : NN:ksproxy.IKsControl
-title : IKsControl
-author : windows-driver-content
-description : The IKsControl interface provides user-mode methods that control a KS filter or KS pin. See the IKsControl AVStream COM interface for information about the user-mode equivalent of this interface.
-old-location : stream\ikscontrol.htm
-old-project : stream
-ms.assetid : d73cf2fc-15bb-4f45-aae3-fb55bcd072a3
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.ikscontrol, IKsControl interface [Streaming Media Devices], IKsControl interface [Streaming Media Devices], described, IKsControl, ksproxy/IKsControl, ksproxy_59a4df2f-d723-499a-adc6-907c0592a6ac.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : ksproxy.h
-req.include-header : Ksproxy.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ksproxy.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PIPE_STATE
+UID: NN:ksproxy.IKsControl
+title: IKsControl
+author: windows-driver-content
+description: The IKsControl interface provides user-mode methods that control a KS filter or KS pin. See the IKsControl AVStream COM interface for information about the user-mode equivalent of this interface.
+old-location: stream\ikscontrol.htm
+old-project: stream
+ms.assetid: d73cf2fc-15bb-4f45-aae3-fb55bcd072a3
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.ikscontrol, IKsControl interface [Streaming Media Devices], IKsControl interface [Streaming Media Devices], described, IKsControl, ksproxy/IKsControl, ksproxy_59a4df2f-d723-499a-adc6-907c0592a6ac.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: ksproxy.h
+req.include-header: Ksproxy.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ksproxy.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Ksproxy.lib
+-	Ksproxy.dll
+apiname:
+-	IKsControl
+product: Windows
+targetos: Windows
+req.typenames: PIPE_STATE
 ---
 
 # IKsControl interface

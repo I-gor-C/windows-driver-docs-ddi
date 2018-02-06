@@ -1,42 +1,48 @@
 ---
-UID : NF:sensorsclassextension.ISensorClassExtension.PostEvent
-title : ISensorClassExtension::PostEvent method
-author : windows-driver-content
-description : The ISensorClassExtension::PostEvent method raises one or more driver events in the sensor class extension.
-old-location : sensors\isensorclassextension_postevent.htm
-old-project : sensors
-ms.assetid : 201a4558-8755-4a28-9982-c02ce5b5d8e7
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : ISensorClassExtension::PostEvent, PostEvent method [Sensor Devices], ISensorClassExtension, PostEvent, sensors.isensorclassextension_postevent
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : sensorsclassextension.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : SensorsClassExtension.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SensorConnectionType
-req.product : Windows 10 or later.
+UID: NF:sensorsclassextension.ISensorClassExtension.PostEvent
+title: ISensorClassExtension::PostEvent method
+author: windows-driver-content
+description: The ISensorClassExtension::PostEvent method raises one or more driver events in the sensor class extension.
+old-location: sensors\isensorclassextension_postevent.htm
+old-project: sensors
+ms.assetid: 201a4558-8755-4a28-9982-c02ce5b5d8e7
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: ISensorClassExtension::PostEvent, PostEvent method [Sensor Devices], ISensorClassExtension, PostEvent, sensors.isensorclassextension_postevent
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: sensorsclassextension.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: SensorsClassExtension.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	SensorsClassExtension.lib
+-	SensorsClassExtension.dll
+apiname:
+-	PostEvent
+product: Windows
+targetos: Windows
+req.typenames: SensorConnectionType
+req.product: Windows 10 or later.
 ---
 
 

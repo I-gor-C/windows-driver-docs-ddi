@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._D3DDDICB_PRESENT
-title : "_D3DDDICB_PRESENT"
-author : windows-driver-content
-description : The D3DDDICB_PRESENT structure describes allocations that content is copied to and from.
-old-location : display\d3dddicb_present.htm
-old-project : display
-ms.assetid : 086d95a3-1b3a-4e09-9a39-e1972e0e306c
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3dumddi/D3DDDICB_PRESENT, _D3DDDICB_PRESENT, D3DDDICB_PRESENT structure [Display Devices], D3D_param_Structs_969f252f-fe5c-4351-9c7a-746fd33cb405.xml, display.d3dddicb_present, D3DDDICB_PRESENT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDICB_PRESENT
+UID: NS:d3dumddi._D3DDDICB_PRESENT
+title: "_D3DDDICB_PRESENT"
+author: windows-driver-content
+description: The D3DDDICB_PRESENT structure describes allocations that content is copied to and from.
+old-location: display\d3dddicb_present.htm
+old-project: display
+ms.assetid: 086d95a3-1b3a-4e09-9a39-e1972e0e306c
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3dumddi/D3DDDICB_PRESENT, _D3DDDICB_PRESENT, D3DDDICB_PRESENT structure [Display Devices], D3D_param_Structs_969f252f-fe5c-4351-9c7a-746fd33cb405.xml, display.d3dddicb_present, D3DDDICB_PRESENT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	D3DDDICB_PRESENT
+product: Windows
+targetos: Windows
+req.typenames: D3DDDICB_PRESENT
 ---
 
 # _D3DDDICB_PRESENT structure

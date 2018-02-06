@@ -1,37 +1,37 @@
 ---
-UID : NF:ntddk.DbgPrompt
-title : DbgPrompt function
-author : windows-driver-content
-description : The DbgPrompt routine displays a caller-specified user prompt string on the kernel debugger's display device and obtains a user response string.
-old-location : devtest\dbgprompt.htm
-old-project : devtest
-ms.assetid : 4bb44aab-7032-4cc7-89e3-6ac3bee233d3
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : DbgPrompt
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.alt-api : DbgPrompt
-req.alt-loc : NtDll.dll,NtosKrnl.exe
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtDll.lib (user mode); NtosKrnl.lib (kernel mode)
-req.dll : NtDll.dll (user mode); NtosKrnl.exe (kernel mode)
-req.irql : <= DIRQL
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.DbgPrompt
+title: DbgPrompt function
+author: windows-driver-content
+description: The DbgPrompt routine displays a caller-specified user prompt string on the kernel debugger's display device and obtains a user response string.
+old-location: devtest\dbgprompt.htm
+old-project: devtest
+ms.assetid: 4bb44aab-7032-4cc7-89e3-6ac3bee233d3
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: DbgPrompt
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.alt-api: DbgPrompt
+req.alt-loc: NtDll.dll,NtosKrnl.exe
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtDll.lib (user mode); NtosKrnl.lib (kernel mode)
+req.dll: NtDll.dll (user mode); NtosKrnl.exe (kernel mode)
+req.irql: <= DIRQL
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddk._KEY_CACHED_INFORMATION
-title : "_KEY_CACHED_INFORMATION"
-author : windows-driver-content
-description : The KEY_CACHED_INFORMATION structure holds the cached information available for a registry key or subkey.
-old-location : kernel\key_cached_information.htm
-old-project : kernel
-ms.assetid : 5ee72ae9-0548-480f-84de-4c09ae4be507
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : PKEY_CACHED_INFORMATION, ntddk/PKEY_CACHED_INFORMATION, kstruct_c_72dd8fcc-4983-49e0-af00-57b8fbbf3964.xml, *PKEY_CACHED_INFORMATION, ntddk/KEY_CACHED_INFORMATION, _KEY_CACHED_INFORMATION, KEY_CACHED_INFORMATION, kernel.key_cached_information, KEY_CACHED_INFORMATION structure [Kernel-Mode Driver Architecture], PKEY_CACHED_INFORMATION structure pointer [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KEY_CACHED_INFORMATION, *PKEY_CACHED_INFORMATION
+UID: NS:ntddk._KEY_CACHED_INFORMATION
+title: "_KEY_CACHED_INFORMATION"
+author: windows-driver-content
+description: The KEY_CACHED_INFORMATION structure holds the cached information available for a registry key or subkey.
+old-location: kernel\key_cached_information.htm
+old-project: kernel
+ms.assetid: 5ee72ae9-0548-480f-84de-4c09ae4be507
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: PKEY_CACHED_INFORMATION, ntddk/PKEY_CACHED_INFORMATION, kstruct_c_72dd8fcc-4983-49e0-af00-57b8fbbf3964.xml, *PKEY_CACHED_INFORMATION, ntddk/KEY_CACHED_INFORMATION, _KEY_CACHED_INFORMATION, KEY_CACHED_INFORMATION, kernel.key_cached_information, KEY_CACHED_INFORMATION structure [Kernel-Mode Driver Architecture], PKEY_CACHED_INFORMATION structure pointer [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddk.h
+apiname:
+-	KEY_CACHED_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: KEY_CACHED_INFORMATION, *PKEY_CACHED_INFORMATION
 ---
 
 # _KEY_CACHED_INFORMATION structure

@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_CREATELIGHT
-title : PFND3DDDI_CREATELIGHT
-author : windows-driver-content
-description : The CreateLight function creates a light source.
-old-location : display\createlight.htm
-old-project : display
-ms.assetid : 4649b1d1-6fd3-48fb-b25f-1228851bb682
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.createlight, CreateLight callback function [Display Devices], CreateLight, PFND3DDDI_CREATELIGHT, PFND3DDDI_CREATELIGHT, d3dumddi/CreateLight, UserModeDisplayDriver_Functions_c6b9e247-5a6b-4e90-bcbd-bc02708ca555.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_CREATELIGHT
+title: PFND3DDDI_CREATELIGHT
+author: windows-driver-content
+description: The CreateLight function creates a light source.
+old-location: display\createlight.htm
+old-project: display
+ms.assetid: 4649b1d1-6fd3-48fb-b25f-1228851bb682
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.createlight, CreateLight callback function [Display Devices], CreateLight, PFND3DDDI_CREATELIGHT, PFND3DDDI_CREATELIGHT, d3dumddi/CreateLight, UserModeDisplayDriver_Functions_c6b9e247-5a6b-4e90-bcbd-bc02708ca555.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	CreateLight
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

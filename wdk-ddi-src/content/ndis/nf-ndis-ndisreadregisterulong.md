@@ -1,41 +1,46 @@
 ---
-UID : NF:ndis.NdisReadRegisterUlong
-title : NdisReadRegisterUlong macro
-author : windows-driver-content
-description : NdisReadRegisterUlong is called by the miniport driver to read a ULONG from a memory-mapped device register.
-old-location : netvista\ndisreadregisterulong.htm
-old-project : netvista
-ms.assetid : 18812c18-ec5e-4e8e-9ecf-c3c2a58ca8a2
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NdisReadRegisterUlong macro [Network Drivers Starting with Windows Vista], NdisReadRegisterUlong, miniport_register_ref_44b40f81-b21f-4b5c-b875-deb9b4bd62ab.xml, netvista.ndisreadregisterulong, ndis/NdisReadRegisterUlong
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : macro
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisReadRegisterUlong (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisReadRegisterUlong (NDIS   5.1)) in Windows XP.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : ndis.h
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisReadRegisterUlong
+title: NdisReadRegisterUlong macro
+author: windows-driver-content
+description: NdisReadRegisterUlong is called by the miniport driver to read a ULONG from a memory-mapped device register.
+old-location: netvista\ndisreadregisterulong.htm
+old-project: netvista
+ms.assetid: 18812c18-ec5e-4e8e-9ecf-c3c2a58ca8a2
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NdisReadRegisterUlong macro [Network Drivers Starting with Windows Vista], NdisReadRegisterUlong, miniport_register_ref_44b40f81-b21f-4b5c-b875-deb9b4bd62ab.xml, netvista.ndisreadregisterulong, ndis/NdisReadRegisterUlong
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: macro
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisReadRegisterUlong (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisReadRegisterUlong (NDIS   5.1)) in Windows XP.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: ndis.h
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndis.h
+apiname:
+-	NdisReadRegisterUlong
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

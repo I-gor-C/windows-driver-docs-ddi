@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.KSPROPERTY_VIDEODECODER_S
-title : KSPROPERTY_VIDEODECODER_S
-author : windows-driver-content
-description : The KSPROPERTY_VIDEODECODER_S structure describes property settings in the PROPSETID_VIDCAP_VIDEODECODER property set.
-old-location : stream\ksproperty_videodecoder_s.htm
-old-project : stream
-ms.assetid : 9444835d-0290-49e7-8f49-a1506ce282cd
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : PKSPROPERTY_VIDEODECODER_S structure pointer [Streaming Media Devices], stream.ksproperty_videodecoder_s, KSPROPERTY_VIDEODECODER_S, ksmedia/KSPROPERTY_VIDEODECODER_S, *PKSPROPERTY_VIDEODECODER_S, PKSPROPERTY_VIDEODECODER_S, ksmedia/PKSPROPERTY_VIDEODECODER_S, KSPROPERTY_VIDEODECODER_S structure [Streaming Media Devices], vidcapstruct_fbca2e77-2e08-4a96-932d-706a7e8b9a2a.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KSPROPERTY_VIDEODECODER_S, *PKSPROPERTY_VIDEODECODER_S
+UID: NS:ksmedia.KSPROPERTY_VIDEODECODER_S
+title: KSPROPERTY_VIDEODECODER_S
+author: windows-driver-content
+description: The KSPROPERTY_VIDEODECODER_S structure describes property settings in the PROPSETID_VIDCAP_VIDEODECODER property set.
+old-location: stream\ksproperty_videodecoder_s.htm
+old-project: stream
+ms.assetid: 9444835d-0290-49e7-8f49-a1506ce282cd
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: PKSPROPERTY_VIDEODECODER_S structure pointer [Streaming Media Devices], stream.ksproperty_videodecoder_s, KSPROPERTY_VIDEODECODER_S, ksmedia/KSPROPERTY_VIDEODECODER_S, *PKSPROPERTY_VIDEODECODER_S, PKSPROPERTY_VIDEODECODER_S, ksmedia/PKSPROPERTY_VIDEODECODER_S, KSPROPERTY_VIDEODECODER_S structure [Streaming Media Devices], vidcapstruct_fbca2e77-2e08-4a96-932d-706a7e8b9a2a.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	KSPROPERTY_VIDEODECODER_S
+product: Windows
+targetos: Windows
+req.typenames: KSPROPERTY_VIDEODECODER_S, *PKSPROPERTY_VIDEODECODER_S
 ---
 
 # KSPROPERTY_VIDEODECODER_S structure

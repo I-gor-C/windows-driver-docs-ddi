@@ -1,41 +1,46 @@
 ---
-UID : NC:ndis.PROTOCOL_CM_CLOSE_AF
-title : PROTOCOL_CM_CLOSE_AF
-author : windows-driver-content
-description : The ProtocolCmCloseAf function is a required function that releases per-open resources for an address family that a call manager supports.Note  You must declare the function by using the PROTOCOL_CM_CLOSE_AF type.
-old-location : netvista\protocolcmcloseaf.htm
-old-project : netvista
-ms.assetid : a7a02813-62e4-49c5-abb6-a90f4e092b9f
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.protocolcmcloseaf, ProtocolCmCloseAf callback function [Network Drivers Starting with Windows Vista], ProtocolCmCloseAf, PROTOCOL_CM_CLOSE_AF, PROTOCOL_CM_CLOSE_AF, ndis/ProtocolCmCloseAf, condis_call_manager_ref_bedb117e-f1a4-4faa-a6fb-c6b8a317c958.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see    ProtocolCmCloseAf (NDIS 5.1))   in Windows Vista. Supported for NDIS 5.1 drivers (see    ProtocolCmCloseAf (NDIS 5.1))   in Windows XP.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
+UID: NC:ndis.PROTOCOL_CM_CLOSE_AF
+title: PROTOCOL_CM_CLOSE_AF
+author: windows-driver-content
+description: The ProtocolCmCloseAf function is a required function that releases per-open resources for an address family that a call manager supports.Note  You must declare the function by using the PROTOCOL_CM_CLOSE_AF type.
+old-location: netvista\protocolcmcloseaf.htm
+old-project: netvista
+ms.assetid: a7a02813-62e4-49c5-abb6-a90f4e092b9f
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.protocolcmcloseaf, ProtocolCmCloseAf callback function [Network Drivers Starting with Windows Vista], ProtocolCmCloseAf, PROTOCOL_CM_CLOSE_AF, PROTOCOL_CM_CLOSE_AF, ndis/ProtocolCmCloseAf, condis_call_manager_ref_bedb117e-f1a4-4faa-a6fb-c6b8a317c958.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    ProtocolCmCloseAf (NDIS 5.1))   in Windows Vista. Supported for NDIS 5.1 drivers (see    ProtocolCmCloseAf (NDIS 5.1))   in Windows XP.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ndis.h
+apiname:
+-	ProtocolCmCloseAf
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 

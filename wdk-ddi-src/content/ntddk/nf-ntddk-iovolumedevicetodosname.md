@@ -1,41 +1,46 @@
 ---
-UID : NF:ntddk.IoVolumeDeviceToDosName
-title : IoVolumeDeviceToDosName function
-author : windows-driver-content
-description : The IoVolumeDeviceToDosName routine returns the MS-DOS path for a specified device object that represents a file system volume.
-old-location : kernel\iovolumedevicetodosname.htm
-old-project : kernel
-ms.assetid : f860d0ad-f971-4ba7-93fb-20fe8831fc90
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : k104_01cdeb80-9a49-4d42-a311-cf8b69d03b9c.xml, IoVolumeDeviceToDosName, kernel.iovolumedevicetodosname, ntddk/IoVolumeDeviceToDosName, IoVolumeDeviceToDosName routine [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows XP. Drivers that must work in earlier versions of Windows NT-based operating systems can use RtlVolumeDeviceToDosName, which behaves identically.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.IoVolumeDeviceToDosName
+title: IoVolumeDeviceToDosName function
+author: windows-driver-content
+description: The IoVolumeDeviceToDosName routine returns the MS-DOS path for a specified device object that represents a file system volume.
+old-location: kernel\iovolumedevicetodosname.htm
+old-project: kernel
+ms.assetid: f860d0ad-f971-4ba7-93fb-20fe8831fc90
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: k104_01cdeb80-9a49-4d42-a311-cf8b69d03b9c.xml, IoVolumeDeviceToDosName, kernel.iovolumedevicetodosname, ntddk/IoVolumeDeviceToDosName, IoVolumeDeviceToDosName routine [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows XP. Drivers that must work in earlier versions of Windows NT-based operating systems can use RtlVolumeDeviceToDosName, which behaves identically.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoVolumeDeviceToDosName
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

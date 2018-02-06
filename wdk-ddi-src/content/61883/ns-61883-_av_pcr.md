@@ -1,41 +1,46 @@
 ---
-UID : NS:61883._AV_PCR
-title : "_AV_PCR"
-author : windows-driver-content
-description : The AV_PCR structure specifies settings for an input or output plug.
-old-location : ieee\av_pcr.htm
-old-project : IEEE
-ms.assetid : f6d3f95b-7484-4a6b-9b7e-69f6172b7a12
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : "_AV_PCR, 61883/AV_PCR, AV_PCR structure [Buses], *PAV_PCR, AV_PCR, IEEE.av_pcr, 61883/PAV_PCR, PAV_PCR structure pointer [Buses], 61883_structures_d8602c71-aca5-427d-a8bf-d1da914ebacc.xml, PAV_PCR"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : 61883.h
-req.include-header : 61883.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PAV_PCR, AV_PCR"
+UID: NS:61883._AV_PCR
+title: "_AV_PCR"
+author: windows-driver-content
+description: The AV_PCR structure specifies settings for an input or output plug.
+old-location: ieee\av_pcr.htm
+old-project: IEEE
+ms.assetid: f6d3f95b-7484-4a6b-9b7e-69f6172b7a12
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: "_AV_PCR, 61883/AV_PCR, AV_PCR structure [Buses], *PAV_PCR, AV_PCR, IEEE.av_pcr, 61883/PAV_PCR, PAV_PCR structure pointer [Buses], 61883_structures_d8602c71-aca5-427d-a8bf-d1da914ebacc.xml, PAV_PCR"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: 61883.h
+req.include-header: 61883.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	61883.h
+apiname:
+-	AV_PCR
+product: Windows
+targetos: Windows
+req.typenames: "*PAV_PCR, AV_PCR"
 ---
 
 # _AV_PCR structure

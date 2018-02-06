@@ -1,41 +1,46 @@
 ---
-UID : NS:ntdd8042._OUTPUT_PACKET
-title : "_OUTPUT_PACKET"
-author : windows-driver-content
-description : OUTPUT_PACKET contains information about the data that is being written to a keyboard or mouse device by I8042prt.
-old-location : hid\output_packet.htm
-old-project : hid
-ms.assetid : 1d8d723f-aae5-499e-94cf-c7ccdb24c45f
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : hid.output_packet, ntdd8042/POUTPUT_PACKET, POUTPUT_PACKET, i8042ref_3e563892-06cb-4021-847d-d6afda279c7a.xml, ntdd8042/OUTPUT_PACKET, OUTPUT_PACKET, _OUTPUT_PACKET, *POUTPUT_PACKET, OUTPUT_PACKET structure [Human Input Devices], POUTPUT_PACKET structure pointer [Human Input Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntdd8042.h
-req.include-header : Ntdd8042.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*POUTPUT_PACKET, OUTPUT_PACKET"
+UID: NS:ntdd8042._OUTPUT_PACKET
+title: "_OUTPUT_PACKET"
+author: windows-driver-content
+description: OUTPUT_PACKET contains information about the data that is being written to a keyboard or mouse device by I8042prt.
+old-location: hid\output_packet.htm
+old-project: hid
+ms.assetid: 1d8d723f-aae5-499e-94cf-c7ccdb24c45f
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: hid.output_packet, ntdd8042/POUTPUT_PACKET, POUTPUT_PACKET, i8042ref_3e563892-06cb-4021-847d-d6afda279c7a.xml, ntdd8042/OUTPUT_PACKET, OUTPUT_PACKET, _OUTPUT_PACKET, *POUTPUT_PACKET, OUTPUT_PACKET structure [Human Input Devices], POUTPUT_PACKET structure pointer [Human Input Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntdd8042.h
+req.include-header: Ntdd8042.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntdd8042.h
+apiname:
+-	OUTPUT_PACKET
+product: Windows
+targetos: Windows
+req.typenames: "*POUTPUT_PACKET, OUTPUT_PACKET"
 ---
 
 # _OUTPUT_PACKET structure

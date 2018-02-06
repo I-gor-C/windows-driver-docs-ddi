@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._D3DDDIARG_DRAWINDEXEDPRIMITIVE
-title : "_D3DDDIARG_DRAWINDEXEDPRIMITIVE"
-author : windows-driver-content
-description : The D3DDDIARG_DRAWINDEXEDPRIMITIVE structure describes an indexed primitive to draw.
-old-location : display\d3dddiarg_drawindexedprimitive.htm
-old-project : display
-ms.assetid : 3f8cc918-9819-4c32-93f3-dbc2c1023016
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DDDIARG_DRAWINDEXEDPRIMITIVE, UMDisplayDriver_param_Structs_241177c0-f301-4b49-93cb-5c75ca8cb30a.xml, display.d3dddiarg_drawindexedprimitive, _D3DDDIARG_DRAWINDEXEDPRIMITIVE, d3dumddi/D3DDDIARG_DRAWINDEXEDPRIMITIVE, D3DDDIARG_DRAWINDEXEDPRIMITIVE structure [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDIARG_DRAWINDEXEDPRIMITIVE
+UID: NS:d3dumddi._D3DDDIARG_DRAWINDEXEDPRIMITIVE
+title: "_D3DDDIARG_DRAWINDEXEDPRIMITIVE"
+author: windows-driver-content
+description: The D3DDDIARG_DRAWINDEXEDPRIMITIVE structure describes an indexed primitive to draw.
+old-location: display\d3dddiarg_drawindexedprimitive.htm
+old-project: display
+ms.assetid: 3f8cc918-9819-4c32-93f3-dbc2c1023016
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DDDIARG_DRAWINDEXEDPRIMITIVE, UMDisplayDriver_param_Structs_241177c0-f301-4b49-93cb-5c75ca8cb30a.xml, display.d3dddiarg_drawindexedprimitive, _D3DDDIARG_DRAWINDEXEDPRIMITIVE, d3dumddi/D3DDDIARG_DRAWINDEXEDPRIMITIVE, D3DDDIARG_DRAWINDEXEDPRIMITIVE structure [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	D3DDDIARG_DRAWINDEXEDPRIMITIVE
+product: Windows
+targetos: Windows
+req.typenames: D3DDDIARG_DRAWINDEXEDPRIMITIVE
 ---
 
 # _D3DDDIARG_DRAWINDEXEDPRIMITIVE structure

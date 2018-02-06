@@ -1,42 +1,47 @@
 ---
-UID : NC:wdm.KBUGCHECK_REASON_CALLBACK_ROUTINE
-title : KBUGCHECK_REASON_CALLBACK_ROUTINE
-author : windows-driver-content
-description : Driver-implemented callback functions that the system executes when it issues a bug check.
-old-location : kernel\bugcheckaddpagescallback.htm
-old-project : kernel
-ms.assetid : a3d33a3a-efe7-4346-82bc-555c57ae7b74
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.bugcheckaddpagescallback, BugCheckAddPagesCallback, BugCheckDumpIoCallback, BugCheckSecondaryDumpDataCallback, MyBugCheckCallback callback function [Kernel-Mode Driver Architecture], MyBugCheckCallback, KBUGCHECK_REASON_CALLBACK_ROUTINE, KBUGCHECK_REASON_CALLBACK_ROUTINE, wdm/MyBugCheckCallback, DrvrRtns_337f5b60-9ed5-4a1b-a215-1d3b1e3abb1e.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported starting with Windows Server 2008.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Called at HIGH_LEVEL.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
-req.product : Windows 10 or later.
+UID: NC:wdm.KBUGCHECK_REASON_CALLBACK_ROUTINE
+title: KBUGCHECK_REASON_CALLBACK_ROUTINE
+author: windows-driver-content
+description: Driver-implemented callback functions that the system executes when it issues a bug check.
+old-location: kernel\bugcheckaddpagescallback.htm
+old-project: kernel
+ms.assetid: a3d33a3a-efe7-4346-82bc-555c57ae7b74
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.bugcheckaddpagescallback, BugCheckAddPagesCallback, BugCheckDumpIoCallback, BugCheckSecondaryDumpDataCallback, MyBugCheckCallback callback function [Kernel-Mode Driver Architecture], MyBugCheckCallback, KBUGCHECK_REASON_CALLBACK_ROUTINE, KBUGCHECK_REASON_CALLBACK_ROUTINE, wdm/MyBugCheckCallback, DrvrRtns_337f5b60-9ed5-4a1b-a215-1d3b1e3abb1e.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported starting with Windows Server 2008.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Called at HIGH_LEVEL.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Wdm.h
+apiname:
+-	MyBugCheckCallback
+product: Windows
+targetos: Windows
+req.typenames: WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+req.product: Windows 10 or later.
 ---
 
 

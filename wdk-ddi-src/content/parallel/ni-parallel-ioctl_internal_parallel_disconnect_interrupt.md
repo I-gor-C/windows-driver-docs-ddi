@@ -1,41 +1,46 @@
 ---
-UID : NI:parallel.IOCTL_INTERNAL_PARALLEL_DISCONNECT_INTERRUPT
-title : IOCTL_INTERNAL_PARALLEL_DISCONNECT_INTERRUPT
-author : windows-driver-content
-description : The IOCTL_INTERNAL_PARALLEL_DISCONNECT_INTERRUPT request disconnects an interrupt service routine (and an optional deferred port check service routine) that was connected by using an IOCTL_INTERNAL_PARALLEL_CONNECT_INTERRUPT request.
-old-location : parports\ioctl_internal_parallel_disconnect_interrupt.htm
-old-project : parports
-ms.assetid : 9ca488b1-30d3-44dc-acb3-87d97e439393
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : parports.ioctl_internal_parallel_disconnect_interrupt, IOCTL_INTERNAL_PARALLEL_DISCONNECT_INTERRUPT control code [Parallel Ports], IOCTL_INTERNAL_PARALLEL_DISCONNECT_INTERRUPT, parallel/IOCTL_INTERNAL_PARALLEL_DISCONNECT_INTERRUPT, cisspd_d98e5171-686e-41de-96fd-4615eaad82f3.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : parallel.h
-req.include-header : Parallel.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RILGBATOKEN, *LPRILGBATOKEN
+UID: NI:parallel.IOCTL_INTERNAL_PARALLEL_DISCONNECT_INTERRUPT
+title: IOCTL_INTERNAL_PARALLEL_DISCONNECT_INTERRUPT
+author: windows-driver-content
+description: The IOCTL_INTERNAL_PARALLEL_DISCONNECT_INTERRUPT request disconnects an interrupt service routine (and an optional deferred port check service routine) that was connected by using an IOCTL_INTERNAL_PARALLEL_CONNECT_INTERRUPT request.
+old-location: parports\ioctl_internal_parallel_disconnect_interrupt.htm
+old-project: parports
+ms.assetid: 9ca488b1-30d3-44dc-acb3-87d97e439393
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: parports.ioctl_internal_parallel_disconnect_interrupt, IOCTL_INTERNAL_PARALLEL_DISCONNECT_INTERRUPT control code [Parallel Ports], IOCTL_INTERNAL_PARALLEL_DISCONNECT_INTERRUPT, parallel/IOCTL_INTERNAL_PARALLEL_DISCONNECT_INTERRUPT, cisspd_d98e5171-686e-41de-96fd-4615eaad82f3.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: parallel.h
+req.include-header: Parallel.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	parallel.h
+apiname:
+-	IOCTL_INTERNAL_PARALLEL_DISCONNECT_INTERRUPT
+product: Windows
+targetos: Windows
+req.typenames: RILGBATOKEN, *LPRILGBATOKEN
 ---
 
 # IOCTL_INTERNAL_PARALLEL_DISCONNECT_INTERRUPT IOCTL

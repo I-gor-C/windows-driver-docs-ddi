@@ -1,41 +1,46 @@
 ---
-UID : NS:iscsiop._RemovePersistentLogin_IN
-title : "_RemovePersistentLogin_IN"
-author : windows-driver-content
-description : The RemovePersistentLogin_IN structure holds the input data for the RemovePersistentLogin method, which is used to remove persistent login information.
-old-location : storage\removepersistentlogin_in.htm
-old-project : storage
-ms.assetid : 94dc7a87-83a0-419d-914c-008d797fec87
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : "*PRemovePersistentLogin_IN, PRemovePersistentLogin_IN structure pointer [Storage Devices], _RemovePersistentLogin_IN, storage.removepersistentlogin_in, PRemovePersistentLogin_IN, iscsiop/PRemovePersistentLogin_IN, iscsiop/RemovePersistentLogin_IN, RemovePersistentLogin_IN structure [Storage Devices], structs-iSCSI_4972aa6c-a6a5-4409-a714-49693f679fa2.xml, RemovePersistentLogin_IN"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : iscsiop.h
-req.include-header : Iscsiop.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PRemovePersistentLogin_IN, RemovePersistentLogin_IN"
+UID: NS:iscsiop._RemovePersistentLogin_IN
+title: "_RemovePersistentLogin_IN"
+author: windows-driver-content
+description: The RemovePersistentLogin_IN structure holds the input data for the RemovePersistentLogin method, which is used to remove persistent login information.
+old-location: storage\removepersistentlogin_in.htm
+old-project: storage
+ms.assetid: 94dc7a87-83a0-419d-914c-008d797fec87
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: "*PRemovePersistentLogin_IN, PRemovePersistentLogin_IN structure pointer [Storage Devices], _RemovePersistentLogin_IN, storage.removepersistentlogin_in, PRemovePersistentLogin_IN, iscsiop/PRemovePersistentLogin_IN, iscsiop/RemovePersistentLogin_IN, RemovePersistentLogin_IN structure [Storage Devices], structs-iSCSI_4972aa6c-a6a5-4409-a714-49693f679fa2.xml, RemovePersistentLogin_IN"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: iscsiop.h
+req.include-header: Iscsiop.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	iscsiop.h
+apiname:
+-	RemovePersistentLogin_IN
+product: Windows
+targetos: Windows
+req.typenames: "*PRemovePersistentLogin_IN, RemovePersistentLogin_IN"
 ---
 
 # _RemovePersistentLogin_IN structure

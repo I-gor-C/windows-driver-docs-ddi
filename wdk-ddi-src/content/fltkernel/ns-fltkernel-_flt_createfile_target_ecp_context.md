@@ -1,41 +1,46 @@
 ---
-UID : NS:fltkernel._FLT_CREATEFILE_TARGET_ECP_CONTEXT
-title : "_FLT_CREATEFILE_TARGET_ECP_CONTEXT"
-author : windows-driver-content
-description : The FLT_CREATEFILE_TARGET_ECP_CONTEXT structure is an extra create parameter (ECP) used to return reparse target information back to the caller of FltCreateFileEx2.
-old-location : ifsk\flt_createfile_target_ecp_context.htm
-old-project : ifsk
-ms.assetid : 95BDB715-E476-48EF-9867-112CF665B66D
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FLT_CREATEFILE_TARGET_ECP_CONTEXT, fltkernel/PFLT_CREATEFILE_TARGET_ECP_CONTEXT, FLT_CREATEFILE_TARGET_ECP_CONTEXT structure [Installable File System Drivers], fltkernel/FLT_CREATEFILE_TARGET_ECP_CONTEXT, _FLT_CREATEFILE_TARGET_ECP_CONTEXT, ifsk.flt_createfile_target_ecp_context, PFLT_CREATEFILE_TARGET_ECP_CONTEXT, FLTTCFL_AUTO_REPARSE, *PFLT_CREATEFILE_TARGET_ECP_CONTEXT, PFLT_CREATEFILE_TARGET_ECP_CONTEXT structure pointer [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : fltkernel.h
-req.include-header : FltKernel.h
-req.target-type : Windows
-req.target-min-winverclnt : This structure is available starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PFLT_CREATEFILE_TARGET_ECP_CONTEXT, FLT_CREATEFILE_TARGET_ECP_CONTEXT"
+UID: NS:fltkernel._FLT_CREATEFILE_TARGET_ECP_CONTEXT
+title: "_FLT_CREATEFILE_TARGET_ECP_CONTEXT"
+author: windows-driver-content
+description: The FLT_CREATEFILE_TARGET_ECP_CONTEXT structure is an extra create parameter (ECP) used to return reparse target information back to the caller of FltCreateFileEx2.
+old-location: ifsk\flt_createfile_target_ecp_context.htm
+old-project: ifsk
+ms.assetid: 95BDB715-E476-48EF-9867-112CF665B66D
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FLT_CREATEFILE_TARGET_ECP_CONTEXT, fltkernel/PFLT_CREATEFILE_TARGET_ECP_CONTEXT, FLT_CREATEFILE_TARGET_ECP_CONTEXT structure [Installable File System Drivers], fltkernel/FLT_CREATEFILE_TARGET_ECP_CONTEXT, _FLT_CREATEFILE_TARGET_ECP_CONTEXT, ifsk.flt_createfile_target_ecp_context, PFLT_CREATEFILE_TARGET_ECP_CONTEXT, FLTTCFL_AUTO_REPARSE, *PFLT_CREATEFILE_TARGET_ECP_CONTEXT, PFLT_CREATEFILE_TARGET_ECP_CONTEXT structure pointer [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: fltkernel.h
+req.include-header: FltKernel.h
+req.target-type: Windows
+req.target-min-winverclnt: This structure is available starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	fltkernel.h
+apiname:
+-	FLT_CREATEFILE_TARGET_ECP_CONTEXT
+product: Windows
+targetos: Windows
+req.typenames: "*PFLT_CREATEFILE_TARGET_ECP_CONTEXT, FLT_CREATEFILE_TARGET_ECP_CONTEXT"
 ---
 
 # _FLT_CREATEFILE_TARGET_ECP_CONTEXT structure

@@ -1,42 +1,48 @@
 ---
-UID : NF:storport.StorPortReadPortBufferUchar
-title : StorPortReadPortBufferUchar function
-author : windows-driver-content
-description : The StorPortReadPortBufferUchar routine reads a value from a specified port address
-old-location : storage\storportreadportbufferuchar.htm
-old-project : storage
-ms.assetid : 8602efbf-8e90-43d3-992f-4d2ecbcc7043
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storprt_e7304977-c32a-44c2-88ea-a08767ea5399.xml, storport/StorPortReadPortBufferUchar, StorPortReadPortBufferUchar, storage.storportreadportbufferuchar, StorPortReadPortBufferUchar routine [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Storport.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STOR_SPINLOCK
-req.product : Windows 10 or later.
+UID: NF:storport.StorPortReadPortBufferUchar
+title: StorPortReadPortBufferUchar function
+author: windows-driver-content
+description: The StorPortReadPortBufferUchar routine reads a value from a specified port address
+old-location: storage\storportreadportbufferuchar.htm
+old-project: storage
+ms.assetid: 8602efbf-8e90-43d3-992f-4d2ecbcc7043
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storprt_e7304977-c32a-44c2-88ea-a08767ea5399.xml, storport/StorPortReadPortBufferUchar, StorPortReadPortBufferUchar, storage.storportreadportbufferuchar, StorPortReadPortBufferUchar routine [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Storport.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Storport.lib
+-	Storport.dll
+apiname:
+-	StorPortReadPortBufferUchar
+product: Windows
+targetos: Windows
+req.typenames: STOR_SPINLOCK
+req.product: Windows 10 or later.
 ---
 
 

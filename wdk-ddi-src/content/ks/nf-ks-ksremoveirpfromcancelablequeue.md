@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsRemoveIrpFromCancelableQueue
-title : KsRemoveIrpFromCancelableQueue function
-author : windows-driver-content
-description : The KsRemoveIrpFromCancelableQueue function pops the next noncanceled IRP from the specified queue that can be canceled and removes its cancel status.
-old-location : stream\ksremoveirpfromcancelablequeue.htm
-old-project : stream
-ms.assetid : 6bc23364-07c9-4a01-b475-e4620f62a674
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KsRemoveIrpFromCancelableQueue, KsRemoveIrpFromCancelableQueue function [Streaming Media Devices], stream.ksremoveirpfromcancelablequeue, ks/KsRemoveIrpFromCancelableQueue, ksfunc_35dd895b-1a0b-40a2-bc84-cdc2844bd30f.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsRemoveIrpFromCancelableQueue
+title: KsRemoveIrpFromCancelableQueue function
+author: windows-driver-content
+description: The KsRemoveIrpFromCancelableQueue function pops the next noncanceled IRP from the specified queue that can be canceled and removes its cancel status.
+old-location: stream\ksremoveirpfromcancelablequeue.htm
+old-project: stream
+ms.assetid: 6bc23364-07c9-4a01-b475-e4620f62a674
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KsRemoveIrpFromCancelableQueue, KsRemoveIrpFromCancelableQueue function [Streaming Media Devices], stream.ksremoveirpfromcancelablequeue, ks/KsRemoveIrpFromCancelableQueue, ksfunc_35dd895b-1a0b-40a2-bc84-cdc2844bd30f.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsRemoveIrpFromCancelableQueue
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsForwardIrp
-title : KsForwardIrp function
-author : windows-driver-content
-description : The KsForwardIrp function forwards an IRP to the specified driver after initializing the next stack location and setting the file object.
-old-location : stream\ksforwardirp.htm
-old-project : stream
-ms.assetid : 6db0c232-d90b-4187-94c0-a840f87cf999
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ks/KsForwardIrp, KsForwardIrp, ksfunc_cc7908b4-a6f2-40b1-990f-22c7b5e2bda2.xml, stream.ksforwardirp, KsForwardIrp function [Streaming Media Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsForwardIrp
+title: KsForwardIrp function
+author: windows-driver-content
+description: The KsForwardIrp function forwards an IRP to the specified driver after initializing the next stack location and setting the file object.
+old-location: stream\ksforwardirp.htm
+old-project: stream
+ms.assetid: 6db0c232-d90b-4187-94c0-a840f87cf999
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ks/KsForwardIrp, KsForwardIrp, ksfunc_cc7908b4-a6f2-40b1-990f-22c7b5e2bda2.xml, stream.ksforwardirp, KsForwardIrp function [Streaming Media Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsForwardIrp
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

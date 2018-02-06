@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_DESTROYDEVICE
-title : PFND3DDDI_DESTROYDEVICE
-author : windows-driver-content
-description : The DestroyDevice function destroys a graphics context.
-old-location : display\destroydevice.htm
-old-project : display
-ms.assetid : a3c158c2-6c0d-4da0-80f4-569971b10673
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.destroydevice, DestroyDevice callback function [Display Devices], DestroyDevice, PFND3DDDI_DESTROYDEVICE, PFND3DDDI_DESTROYDEVICE, d3dumddi/DestroyDevice, UserModeDisplayDriver_Functions_4d34f924-8742-4957-b3f0-d4a63d338ada.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_DESTROYDEVICE
+title: PFND3DDDI_DESTROYDEVICE
+author: windows-driver-content
+description: The DestroyDevice function destroys a graphics context.
+old-location: display\destroydevice.htm
+old-project: display
+ms.assetid: a3c158c2-6c0d-4da0-80f4-569971b10673
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.destroydevice, DestroyDevice callback function [Display Devices], DestroyDevice, PFND3DDDI_DESTROYDEVICE, PFND3DDDI_DESTROYDEVICE, d3dumddi/DestroyDevice, UserModeDisplayDriver_Functions_4d34f924-8742-4957-b3f0-d4a63d338ada.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	DestroyDevice
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

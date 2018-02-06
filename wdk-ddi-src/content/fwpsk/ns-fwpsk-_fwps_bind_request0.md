@@ -1,41 +1,46 @@
 ---
-UID : NS:fwpsk._FWPS_BIND_REQUEST0
-title : "_FWPS_BIND_REQUEST0"
-author : windows-driver-content
-description : The FWPS_BIND_REQUEST0 structure defines modifiable data for the FWPM_LAYER_ALE_AUTH_BIND_REDIRECT_V4 and FWPM_LAYER_ALE_AUTH_BIND_REDIRECT_V6 layers.
-old-location : netvista\fwps_bind_request0.htm
-old-project : netvista
-ms.assetid : 1a311470-b443-41d8-866f-10bf3120c13c
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.fwps_bind_request0, fwpsk/FWPS_BIND_REQUEST0, FWPS_BIND_REQUEST0 structure [Network Drivers Starting with Windows Vista], wfp_ref_3_struct_3_fwps_A-E_2be0409e-0b99-44ba-ad3c-bc3c6bb1bee7.xml, _FWPS_BIND_REQUEST0, FWPS_BIND_REQUEST0
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : fwpsk.h
-req.include-header : Fwpsk.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows 7.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FWPS_BIND_REQUEST0
+UID: NS:fwpsk._FWPS_BIND_REQUEST0
+title: "_FWPS_BIND_REQUEST0"
+author: windows-driver-content
+description: The FWPS_BIND_REQUEST0 structure defines modifiable data for the FWPM_LAYER_ALE_AUTH_BIND_REDIRECT_V4 and FWPM_LAYER_ALE_AUTH_BIND_REDIRECT_V6 layers.
+old-location: netvista\fwps_bind_request0.htm
+old-project: netvista
+ms.assetid: 1a311470-b443-41d8-866f-10bf3120c13c
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.fwps_bind_request0, fwpsk/FWPS_BIND_REQUEST0, FWPS_BIND_REQUEST0 structure [Network Drivers Starting with Windows Vista], wfp_ref_3_struct_3_fwps_A-E_2be0409e-0b99-44ba-ad3c-bc3c6bb1bee7.xml, _FWPS_BIND_REQUEST0, FWPS_BIND_REQUEST0
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: fwpsk.h
+req.include-header: Fwpsk.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows 7.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	fwpsk.h
+apiname:
+-	FWPS_BIND_REQUEST0
+product: Windows
+targetos: Windows
+req.typenames: FWPS_BIND_REQUEST0
 ---
 
 # _FWPS_BIND_REQUEST0 structure

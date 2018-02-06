@@ -1,41 +1,46 @@
 ---
-UID : NS:hbapiwmi._SM_GetBindingSupport_IN
-title : "_SM_GetBindingSupport_IN"
-author : windows-driver-content
-description : The SM_GetBindingSupport_IN structure is used to provide input parameters to the SM_GetBindingSupport method.
-old-location : storage\sm_getbindingsupport_in.htm
-old-project : storage
-ms.assetid : c89d86fe-fe8c-48d2-a5c2-7971ea96b7ad
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : PSM_GetBindingSupport_IN structure pointer [Storage Devices], SM_GetBindingSupport_IN, PSM_GetBindingSupport_IN, storage.sm_getbindingsupport_in, SM_GetBindingSupport_IN structure [Storage Devices], hbapiwmi/SM_GetBindingSupport_IN, _SM_GetBindingSupport_IN, hbapiwmi/PSM_GetBindingSupport_IN, *PSM_GetBindingSupport_IN, structs-Fibre_f13c3a99-7626-4dda-b0f2-8505b7aff3b5.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : hbapiwmi.h
-req.include-header : Hbapiwmi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SM_GetBindingSupport_IN, *PSM_GetBindingSupport_IN
+UID: NS:hbapiwmi._SM_GetBindingSupport_IN
+title: "_SM_GetBindingSupport_IN"
+author: windows-driver-content
+description: The SM_GetBindingSupport_IN structure is used to provide input parameters to the SM_GetBindingSupport method.
+old-location: storage\sm_getbindingsupport_in.htm
+old-project: storage
+ms.assetid: c89d86fe-fe8c-48d2-a5c2-7971ea96b7ad
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: PSM_GetBindingSupport_IN structure pointer [Storage Devices], SM_GetBindingSupport_IN, PSM_GetBindingSupport_IN, storage.sm_getbindingsupport_in, SM_GetBindingSupport_IN structure [Storage Devices], hbapiwmi/SM_GetBindingSupport_IN, _SM_GetBindingSupport_IN, hbapiwmi/PSM_GetBindingSupport_IN, *PSM_GetBindingSupport_IN, structs-Fibre_f13c3a99-7626-4dda-b0f2-8505b7aff3b5.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: hbapiwmi.h
+req.include-header: Hbapiwmi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hbapiwmi.h
+apiname:
+-	SM_GetBindingSupport_IN
+product: Windows
+targetos: Windows
+req.typenames: SM_GetBindingSupport_IN, *PSM_GetBindingSupport_IN
 ---
 
 # _SM_GetBindingSupport_IN structure

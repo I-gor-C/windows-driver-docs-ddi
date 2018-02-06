@@ -1,42 +1,47 @@
 ---
-UID : NF:wdfdevice.WDF_FILEOBJECT_CONFIG_INIT
-title : WDF_FILEOBJECT_CONFIG_INIT function
-author : windows-driver-content
-description : The WDF_FILEOBJECT_CONFIG_INIT function initializes a driver's WDF_FILEOBJECT_CONFIG structure.
-old-location : wdf\wdf_fileobject_config_init.htm
-old-project : wdf
-ms.assetid : 87ad817a-4a62-4061-949c-fe45bdfb44d5
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : kmdf.wdf_fileobject_config_init, WDF_FILEOBJECT_CONFIG_INIT function, DFDeviceObjectGeneralRef_ad75f4c0-79f7-42d6-8798-947cdcbfd8f1.xml, wdfdevice/WDF_FILEOBJECT_CONFIG_INIT, wdf.wdf_fileobject_config_init, WDF_FILEOBJECT_CONFIG_INIT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfdevice.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_STATE_NOTIFICATION_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfdevice.WDF_FILEOBJECT_CONFIG_INIT
+title: WDF_FILEOBJECT_CONFIG_INIT function
+author: windows-driver-content
+description: The WDF_FILEOBJECT_CONFIG_INIT function initializes a driver's WDF_FILEOBJECT_CONFIG structure.
+old-location: wdf\wdf_fileobject_config_init.htm
+old-project: wdf
+ms.assetid: 87ad817a-4a62-4061-949c-fe45bdfb44d5
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: kmdf.wdf_fileobject_config_init, WDF_FILEOBJECT_CONFIG_INIT function, DFDeviceObjectGeneralRef_ad75f4c0-79f7-42d6-8798-947cdcbfd8f1.xml, wdfdevice/WDF_FILEOBJECT_CONFIG_INIT, wdf.wdf_fileobject_config_init, WDF_FILEOBJECT_CONFIG_INIT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfdevice.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfdevice.h
+apiname:
+-	WDF_FILEOBJECT_CONFIG_INIT
+product: Windows
+targetos: Windows
+req.typenames: WDF_STATE_NOTIFICATION_TYPE
+req.product: Windows 10 or later.
 ---
 
 

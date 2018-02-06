@@ -1,12 +1,12 @@
 ---
-UID : NA:ntifs
-ms.assetid : e3d525ec-4b50-3580-9b86-a44d770e9b1d
-ms.author : windowsdriverdev
-ms.date : 01/18/18
-ms.keywords : 
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : portal
+UID: NA:ntifs
+ms.assetid: e3d525ec-4b50-3580-9b86-a44d770e9b1d
+ms.author: windowsdriverdev
+ms.date: 01/18/18
+ms.keywords: 
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: portal
 ---
 
 # ntifs.h header

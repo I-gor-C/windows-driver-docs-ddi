@@ -1,42 +1,48 @@
 ---
-UID : NF:wdm.ClfsLsnGreater
-title : ClfsLsnGreater function
-author : windows-driver-content
-description : The ClfsLsnGreater routine determines whether one LSN is greater than another LSN. The two LSNs must be from the same stream.
-old-location : kernel\clfslsngreater.htm
-old-project : kernel
-ms.assetid : 77ad073e-5dac-4d89-869e-547e1aec25da
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ClfsLsnGreater, kernel.clfslsngreater, wdm/ClfsLsnGreater, Clfs_e258803f-9e95-4601-9b4e-2d775836864b.xml, ClfsLsnGreater routine [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Clfs.lib
-req.dll : Clfs.sys
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ClfsLsnGreater
+title: ClfsLsnGreater function
+author: windows-driver-content
+description: The ClfsLsnGreater routine determines whether one LSN is greater than another LSN. The two LSNs must be from the same stream.
+old-location: kernel\clfslsngreater.htm
+old-project: kernel
+ms.assetid: 77ad073e-5dac-4d89-869e-547e1aec25da
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ClfsLsnGreater, kernel.clfslsngreater, wdm/ClfsLsnGreater, Clfs_e258803f-9e95-4601-9b4e-2d775836864b.xml, ClfsLsnGreater routine [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Clfs.lib
+req.dll: Clfs.sys
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Clfs.sys
+-	Ext-MS-Win-fs-clfs-l1-1-0.dll
+apiname:
+-	ClfsLsnGreater
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

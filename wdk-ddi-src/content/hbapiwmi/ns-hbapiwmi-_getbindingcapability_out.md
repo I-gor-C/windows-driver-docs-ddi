@@ -1,41 +1,46 @@
 ---
-UID : NS:hbapiwmi._GetBindingCapability_OUT
-title : "_GetBindingCapability_OUT"
-author : windows-driver-content
-description : The GetBindingCapability_OUT structure is used by a WMI provider to report the output parameter data of the GetBindingCapability WMI method to the WMI client.
-old-location : storage\getbindingcapability_out.htm
-old-project : storage
-ms.assetid : c02bb43c-8f9a-470a-ba65-f3a69b5c6110
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : hbapiwmi/PGetBindingCapability_OUT, hbapiwmi/GetBindingCapability_OUT, storage.getbindingcapability_out, *PGetBindingCapability_OUT, structs-Fibre_611bcad6-5d7f-43ea-8202-4c19bec45f88.xml, PGetBindingCapability_OUT structure pointer [Storage Devices], _GetBindingCapability_OUT, PGetBindingCapability_OUT, GetBindingCapability_OUT structure [Storage Devices], GetBindingCapability_OUT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : hbapiwmi.h
-req.include-header : Hbapiwmi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PGetBindingCapability_OUT, GetBindingCapability_OUT"
+UID: NS:hbapiwmi._GetBindingCapability_OUT
+title: "_GetBindingCapability_OUT"
+author: windows-driver-content
+description: The GetBindingCapability_OUT structure is used by a WMI provider to report the output parameter data of the GetBindingCapability WMI method to the WMI client.
+old-location: storage\getbindingcapability_out.htm
+old-project: storage
+ms.assetid: c02bb43c-8f9a-470a-ba65-f3a69b5c6110
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: hbapiwmi/PGetBindingCapability_OUT, hbapiwmi/GetBindingCapability_OUT, storage.getbindingcapability_out, *PGetBindingCapability_OUT, structs-Fibre_611bcad6-5d7f-43ea-8202-4c19bec45f88.xml, PGetBindingCapability_OUT structure pointer [Storage Devices], _GetBindingCapability_OUT, PGetBindingCapability_OUT, GetBindingCapability_OUT structure [Storage Devices], GetBindingCapability_OUT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: hbapiwmi.h
+req.include-header: Hbapiwmi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hbapiwmi.h
+apiname:
+-	GetBindingCapability_OUT
+product: Windows
+targetos: Windows
+req.typenames: "*PGetBindingCapability_OUT, GetBindingCapability_OUT"
 ---
 
 # _GetBindingCapability_OUT structure

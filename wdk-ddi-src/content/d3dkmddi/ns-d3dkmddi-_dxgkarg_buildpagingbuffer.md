@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGKARG_BUILDPAGINGBUFFER
-title : "_DXGKARG_BUILDPAGINGBUFFER"
-author : windows-driver-content
-description : The DXGKARG_BUILDPAGINGBUFFER structure describes parameters for building a paging buffer that is used in a memory-transfer operation.
-old-location : display\dxgkarg_buildpagingbuffer.htm
-old-project : display
-ms.assetid : dc0de06b-d495-4ce2-b0e2-a6fefd6c8e0c
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DXGKARG_BUILDPAGINGBUFFER, display.dxgkarg_buildpagingbuffer, DXGKARG_BUILDPAGINGBUFFER structure [Display Devices], *IN_PDXGKARG_BUILDPAGINGBUFFER, _DXGKARG_BUILDPAGINGBUFFER, DXGKARG_BUILDPAGINGBUFFER_OPERATION, DmStructs_06cb7ec2-482d-41ba-b550-3c4f27d36070.xml, DXGK_BUILDPAGINGBUFFER_OPERATION, d3dkmddi/DXGKARG_BUILDPAGINGBUFFER
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGKARG_BUILDPAGINGBUFFER
+UID: NS:d3dkmddi._DXGKARG_BUILDPAGINGBUFFER
+title: "_DXGKARG_BUILDPAGINGBUFFER"
+author: windows-driver-content
+description: The DXGKARG_BUILDPAGINGBUFFER structure describes parameters for building a paging buffer that is used in a memory-transfer operation.
+old-location: display\dxgkarg_buildpagingbuffer.htm
+old-project: display
+ms.assetid: dc0de06b-d495-4ce2-b0e2-a6fefd6c8e0c
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DXGKARG_BUILDPAGINGBUFFER, display.dxgkarg_buildpagingbuffer, DXGKARG_BUILDPAGINGBUFFER structure [Display Devices], *IN_PDXGKARG_BUILDPAGINGBUFFER, _DXGKARG_BUILDPAGINGBUFFER, DXGKARG_BUILDPAGINGBUFFER_OPERATION, DmStructs_06cb7ec2-482d-41ba-b550-3c4f27d36070.xml, DXGK_BUILDPAGINGBUFFER_OPERATION, d3dkmddi/DXGKARG_BUILDPAGINGBUFFER
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DXGKARG_BUILDPAGINGBUFFER
+product: Windows
+targetos: Windows
+req.typenames: DXGKARG_BUILDPAGINGBUFFER
 ---
 
 # _DXGKARG_BUILDPAGINGBUFFER structure

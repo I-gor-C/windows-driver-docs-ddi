@@ -1,42 +1,47 @@
 ---
-UID : NS:usb._URB_SELECT_INTERFACE
-title : "_URB_SELECT_INTERFACE"
-author : windows-driver-content
-description : The _URB_SELECT_INTERFACE structure is used by USB client drivers to select an alternate setting for an interface or to change the maximum packet size of a pipe in the current configuration on a USB device.
-old-location : buses\_urb_select_interface.htm
-old-project : usbref
-ms.assetid : 48f80c80-49af-4cda-961b-8967e8d4897a
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : "_URB_SELECT_INTERFACE, _URB_SELECT_INTERFACE structure [Buses], buses._urb_select_interface, usb/_URB_SELECT_INTERFACE, usbstrct_c23c108d-422b-4dee-a1de-a5e341fc1800.xml"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : usb.h
-req.include-header : Usb.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
-req.product : Windows 10 or later.
+UID: NS:usb._URB_SELECT_INTERFACE
+title: "_URB_SELECT_INTERFACE"
+author: windows-driver-content
+description: The _URB_SELECT_INTERFACE structure is used by USB client drivers to select an alternate setting for an interface or to change the maximum packet size of a pipe in the current configuration on a USB device.
+old-location: buses\_urb_select_interface.htm
+old-project: usbref
+ms.assetid: 48f80c80-49af-4cda-961b-8967e8d4897a
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: "_URB_SELECT_INTERFACE, _URB_SELECT_INTERFACE structure [Buses], buses._urb_select_interface, usb/_URB_SELECT_INTERFACE, usbstrct_c23c108d-422b-4dee-a1de-a5e341fc1800.xml"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: usb.h
+req.include-header: Usb.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	usb.h
+apiname:
+-	_URB_SELECT_INTERFACE
+product: Windows
+targetos: Windows
+req.typenames: 
+req.product: Windows 10 or later.
 ---
 
 # _URB_SELECT_INTERFACE structure

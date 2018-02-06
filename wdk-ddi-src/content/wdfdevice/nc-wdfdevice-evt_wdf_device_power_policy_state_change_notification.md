@@ -1,42 +1,47 @@
 ---
-UID : NC:wdfdevice.EVT_WDF_DEVICE_POWER_POLICY_STATE_CHANGE_NOTIFICATION
-title : EVT_WDF_DEVICE_POWER_POLICY_STATE_CHANGE_NOTIFICATION
-author : windows-driver-content
-description : A driver's EvtDevicePowerPolicyStateChange event callback function informs the driver that a device's power policy state machine is moving from one state to another.
-old-location : wdf\evtdevicepowerpolicystatechange.htm
-old-project : wdf
-ms.assetid : 91432773-3255-4feb-a6f4-c24da4486703
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.evtdevicepowerpolicystatechange, EvtDevicePowerPolicyStateChange callback function, EvtDevicePowerPolicyStateChange, EVT_WDF_DEVICE_POWER_POLICY_STATE_CHANGE_NOTIFICATION, EVT_WDF_DEVICE_POWER_POLICY_STATE_CHANGE_NOTIFICATION, wdfdevice/EvtDevicePowerPolicyStateChange, DFDeviceObjectGeneralRef_e672bc5b-0c7a-4df4-8c21-d3f6aafa6fb8.xml, kmdf.evtdevicepowerpolicystatechange
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdfdevice.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_DEVICE_SHUTDOWN_FLAGS
-req.product : Windows 10 or later.
+UID: NC:wdfdevice.EVT_WDF_DEVICE_POWER_POLICY_STATE_CHANGE_NOTIFICATION
+title: EVT_WDF_DEVICE_POWER_POLICY_STATE_CHANGE_NOTIFICATION
+author: windows-driver-content
+description: A driver's EvtDevicePowerPolicyStateChange event callback function informs the driver that a device's power policy state machine is moving from one state to another.
+old-location: wdf\evtdevicepowerpolicystatechange.htm
+old-project: wdf
+ms.assetid: 91432773-3255-4feb-a6f4-c24da4486703
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.evtdevicepowerpolicystatechange, EvtDevicePowerPolicyStateChange callback function, EvtDevicePowerPolicyStateChange, EVT_WDF_DEVICE_POWER_POLICY_STATE_CHANGE_NOTIFICATION, EVT_WDF_DEVICE_POWER_POLICY_STATE_CHANGE_NOTIFICATION, wdfdevice/EvtDevicePowerPolicyStateChange, DFDeviceObjectGeneralRef_e672bc5b-0c7a-4df4-8c21-d3f6aafa6fb8.xml, kmdf.evtdevicepowerpolicystatechange
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdfdevice.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Wdfdevice.h
+apiname:
+-	EvtDevicePowerPolicyStateChange
+product: Windows
+targetos: Windows
+req.typenames: WDF_DEVICE_SHUTDOWN_FLAGS
+req.product: Windows 10 or later.
 ---
 
 

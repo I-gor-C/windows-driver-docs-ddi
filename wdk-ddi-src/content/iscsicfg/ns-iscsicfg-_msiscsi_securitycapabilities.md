@@ -1,41 +1,46 @@
 ---
-UID : NS:iscsicfg._MSiSCSI_SecurityCapabilities
-title : "_MSiSCSI_SecurityCapabilities"
-author : windows-driver-content
-description : The MSiSCSI_SecurityCapabilities structure describes the security capabilities of an initiator.
-old-location : storage\msiscsi_securitycapabilities.htm
-old-project : storage
-ms.assetid : a385283a-7b24-43aa-b291-541bfd6a91a6
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : structs-iSCSI_0e8b2bb9-69df-4d36-8002-ac32177b724a.xml, PMSiSCSI_SecurityCapabilities structure pointer [Storage Devices], MSiSCSI_SecurityCapabilities, iscsicfg/PMSiSCSI_SecurityCapabilities, iscsicfg/MSiSCSI_SecurityCapabilities, _MSiSCSI_SecurityCapabilities, *PMSiSCSI_SecurityCapabilities, MSiSCSI_SecurityCapabilities structure [Storage Devices], storage.msiscsi_securitycapabilities, PMSiSCSI_SecurityCapabilities
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : iscsicfg.h
-req.include-header : Iscsicfg.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PMSiSCSI_SecurityCapabilities, MSiSCSI_SecurityCapabilities"
+UID: NS:iscsicfg._MSiSCSI_SecurityCapabilities
+title: "_MSiSCSI_SecurityCapabilities"
+author: windows-driver-content
+description: The MSiSCSI_SecurityCapabilities structure describes the security capabilities of an initiator.
+old-location: storage\msiscsi_securitycapabilities.htm
+old-project: storage
+ms.assetid: a385283a-7b24-43aa-b291-541bfd6a91a6
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: structs-iSCSI_0e8b2bb9-69df-4d36-8002-ac32177b724a.xml, PMSiSCSI_SecurityCapabilities structure pointer [Storage Devices], MSiSCSI_SecurityCapabilities, iscsicfg/PMSiSCSI_SecurityCapabilities, iscsicfg/MSiSCSI_SecurityCapabilities, _MSiSCSI_SecurityCapabilities, *PMSiSCSI_SecurityCapabilities, MSiSCSI_SecurityCapabilities structure [Storage Devices], storage.msiscsi_securitycapabilities, PMSiSCSI_SecurityCapabilities
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: iscsicfg.h
+req.include-header: Iscsicfg.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	iscsicfg.h
+apiname:
+-	MSiSCSI_SecurityCapabilities
+product: Windows
+targetos: Windows
+req.typenames: "*PMSiSCSI_SecurityCapabilities, MSiSCSI_SecurityCapabilities"
 ---
 
 # _MSiSCSI_SecurityCapabilities structure

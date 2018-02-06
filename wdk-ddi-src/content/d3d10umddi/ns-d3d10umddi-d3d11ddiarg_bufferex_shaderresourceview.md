@@ -1,41 +1,46 @@
 ---
-UID : NS:d3d10umddi.D3D11DDIARG_BUFFEREX_SHADERRESOURCEVIEW
-title : D3D11DDIARG_BUFFEREX_SHADERRESOURCEVIEW
-author : windows-driver-content
-description : The D3D11DDIARG_BUFFEREX_SHADERRESOURCEVIEW structure describes a buffer that is used to create a shader resource view in a call to the CreateShaderResourceView(D3D11) function.
-old-location : display\d3d11ddiarg_bufferex_shaderresourceview.htm
-old-project : display
-ms.assetid : b3585a06-fdb0-4fe9-8d5c-63680039a789
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.d3d11ddiarg_bufferex_shaderresourceview, d3d10umddi/D3D11DDIARG_BUFFEREX_SHADERRESOURCEVIEW, D3D11DDIARG_BUFFEREX_SHADERRESOURCEVIEW structure [Display Devices], UMDisplayDriver_Dx11param_Structs_49ef78b9-8a6f-4b67-bf2f-bae79086b6c7.xml, D3D11DDIARG_BUFFEREX_SHADERRESOURCEVIEW
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Windows
-req.target-min-winverclnt : D3D11DDIARG_BUFFEREX_SHADERRESOURCEVIEW is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3D11DDIARG_BUFFEREX_SHADERRESOURCEVIEW
+UID: NS:d3d10umddi.D3D11DDIARG_BUFFEREX_SHADERRESOURCEVIEW
+title: D3D11DDIARG_BUFFEREX_SHADERRESOURCEVIEW
+author: windows-driver-content
+description: The D3D11DDIARG_BUFFEREX_SHADERRESOURCEVIEW structure describes a buffer that is used to create a shader resource view in a call to the CreateShaderResourceView(D3D11) function.
+old-location: display\d3d11ddiarg_bufferex_shaderresourceview.htm
+old-project: display
+ms.assetid: b3585a06-fdb0-4fe9-8d5c-63680039a789
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.d3d11ddiarg_bufferex_shaderresourceview, d3d10umddi/D3D11DDIARG_BUFFEREX_SHADERRESOURCEVIEW, D3D11DDIARG_BUFFEREX_SHADERRESOURCEVIEW structure [Display Devices], UMDisplayDriver_Dx11param_Structs_49ef78b9-8a6f-4b67-bf2f-bae79086b6c7.xml, D3D11DDIARG_BUFFEREX_SHADERRESOURCEVIEW
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Windows
+req.target-min-winverclnt: D3D11DDIARG_BUFFEREX_SHADERRESOURCEVIEW is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	D3D11DDIARG_BUFFEREX_SHADERRESOURCEVIEW
+product: Windows
+targetos: Windows
+req.typenames: D3D11DDIARG_BUFFEREX_SHADERRESOURCEVIEW
 ---
 
 # D3D11DDIARG_BUFFEREX_SHADERRESOURCEVIEW structure

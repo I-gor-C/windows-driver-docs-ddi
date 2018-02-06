@@ -1,41 +1,46 @@
 ---
-UID : NS:irb._IDE_TRANSFER_MODE_PARAMETERS
-title : "_IDE_TRANSFER_MODE_PARAMETERS"
-author : windows-driver-content
-description : The IDE_TRANSFER_MODE_PARAMETERS structure is used in conjunction with the miniport driver's AtaControllerTransferModeSelect routine to set the transfer mode parameters on a channel.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. Instead, we recommend using the Storport driver and Storport miniport driver models.
-old-location : storage\ide_transfer_mode_parameters.htm
-old-project : storage
-ms.assetid : 66e6efd0-6651-4c87-94ba-d9d3b9191339
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : structs-ATA_41b44f2c-8685-45fe-8c56-2a9a648782b4.xml, PIDE_TRANSFER_MODE_PARAMETERS structure pointer [Storage Devices], irb/IDE_TRANSFER_MODE_PARAMETERS, PIDE_TRANSFER_MODE_PARAMETERS, _IDE_TRANSFER_MODE_PARAMETERS, IDE_TRANSFER_MODE_PARAMETERS structure [Storage Devices], IDE_TRANSFER_MODE_PARAMETERS, storage.ide_transfer_mode_parameters, irb/PIDE_TRANSFER_MODE_PARAMETERS, *PIDE_TRANSFER_MODE_PARAMETERS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : irb.h
-req.include-header : Irb.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : IDE_TRANSFER_MODE_PARAMETERS, *PIDE_TRANSFER_MODE_PARAMETERS
+UID: NS:irb._IDE_TRANSFER_MODE_PARAMETERS
+title: "_IDE_TRANSFER_MODE_PARAMETERS"
+author: windows-driver-content
+description: The IDE_TRANSFER_MODE_PARAMETERS structure is used in conjunction with the miniport driver's AtaControllerTransferModeSelect routine to set the transfer mode parameters on a channel.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. Instead, we recommend using the Storport driver and Storport miniport driver models.
+old-location: storage\ide_transfer_mode_parameters.htm
+old-project: storage
+ms.assetid: 66e6efd0-6651-4c87-94ba-d9d3b9191339
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: structs-ATA_41b44f2c-8685-45fe-8c56-2a9a648782b4.xml, PIDE_TRANSFER_MODE_PARAMETERS structure pointer [Storage Devices], irb/IDE_TRANSFER_MODE_PARAMETERS, PIDE_TRANSFER_MODE_PARAMETERS, _IDE_TRANSFER_MODE_PARAMETERS, IDE_TRANSFER_MODE_PARAMETERS structure [Storage Devices], IDE_TRANSFER_MODE_PARAMETERS, storage.ide_transfer_mode_parameters, irb/PIDE_TRANSFER_MODE_PARAMETERS, *PIDE_TRANSFER_MODE_PARAMETERS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: irb.h
+req.include-header: Irb.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	irb.h
+apiname:
+-	IDE_TRANSFER_MODE_PARAMETERS
+product: Windows
+targetos: Windows
+req.typenames: IDE_TRANSFER_MODE_PARAMETERS, *PIDE_TRANSFER_MODE_PARAMETERS
 ---
 
 # _IDE_TRANSFER_MODE_PARAMETERS structure

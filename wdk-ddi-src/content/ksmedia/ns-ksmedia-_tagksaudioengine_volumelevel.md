@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia._tagKSAUDIOENGINE_VOLUMELEVEL
-title : "_tagKSAUDIOENGINE_VOLUMELEVEL"
-author : windows-driver-content
-description : The KSAUDIOENGINE_VOLUMELEVEL structure specifies the target volume level, ramp type, and duration within which the volume level should change, for a given volume level request via the KSPROPERTY_AUDIOENGINE_VOLUMELEVEL property.
-old-location : audio\ksaudioengine_volumelevel.htm
-old-project : audio
-ms.assetid : E29E6F8B-F708-493B-94C3-A9DEE691ED3C
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : PKSAUDIOENGINE_VOLUMELEVEL, PKSAUDIOENGINE_VOLUMELEVEL structure pointer [Audio Devices], _tagKSAUDIOENGINE_VOLUMELEVEL, *PKSAUDIOENGINE_VOLUMELEVEL, ksmedia/PKSAUDIOENGINE_VOLUMELEVEL, ksmedia/KSAUDIOENGINE_VOLUMELEVEL, KSAUDIOENGINE_VOLUMELEVEL, KSAUDIOENGINE_VOLUMELEVEL structure [Audio Devices], audio.ksaudioengine_volumelevel
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKSAUDIOENGINE_VOLUMELEVEL, KSAUDIOENGINE_VOLUMELEVEL"
+UID: NS:ksmedia._tagKSAUDIOENGINE_VOLUMELEVEL
+title: "_tagKSAUDIOENGINE_VOLUMELEVEL"
+author: windows-driver-content
+description: The KSAUDIOENGINE_VOLUMELEVEL structure specifies the target volume level, ramp type, and duration within which the volume level should change, for a given volume level request via the KSPROPERTY_AUDIOENGINE_VOLUMELEVEL property.
+old-location: audio\ksaudioengine_volumelevel.htm
+old-project: audio
+ms.assetid: E29E6F8B-F708-493B-94C3-A9DEE691ED3C
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: PKSAUDIOENGINE_VOLUMELEVEL, PKSAUDIOENGINE_VOLUMELEVEL structure pointer [Audio Devices], _tagKSAUDIOENGINE_VOLUMELEVEL, *PKSAUDIOENGINE_VOLUMELEVEL, ksmedia/PKSAUDIOENGINE_VOLUMELEVEL, ksmedia/KSAUDIOENGINE_VOLUMELEVEL, KSAUDIOENGINE_VOLUMELEVEL, KSAUDIOENGINE_VOLUMELEVEL structure [Audio Devices], audio.ksaudioengine_volumelevel
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ksmedia.h
+apiname:
+-	KSAUDIOENGINE_VOLUMELEVEL
+product: Windows
+targetos: Windows
+req.typenames: "*PKSAUDIOENGINE_VOLUMELEVEL, KSAUDIOENGINE_VOLUMELEVEL"
 ---
 
 # _tagKSAUDIOENGINE_VOLUMELEVEL structure

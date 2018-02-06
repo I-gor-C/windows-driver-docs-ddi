@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddk._FILE_DISPOSITION_INFORMATION_EX
-title : "_FILE_DISPOSITION_INFORMATION_EX"
-author : windows-driver-content
-description : The FILE_DISPOSITION_INFORMATION_EX structure is used as an argument to the ZwSetInformationFileEx routine and indicates how the operating system should delete a file.
-old-location : ifsk\file_disposition_information_ex.htm
-old-project : ifsk
-ms.assetid : CCFE4B09-F942-4D89-9013-159066D8E37A
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : PFILE_DISPOSITION_INFORMATION_EX structure pointer [Installable File System Drivers], ifsk.file_disposition_information_ex, FILE_DISPOSITION_INFORMATION_EX structure [Installable File System Drivers], *PFILE_DISPOSITION_INFORMATION_EX, PFILE_DISPOSITION_INFORMATION_EX, ntddk/PFILE_DISPOSITION_INFORMATION_EX, _FILE_DISPOSITION_INFORMATION_EX, FILE_DISPOSITION_INFORMATION_EX, ntddk/FILE_DISPOSITION_INFORMATION_EX
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddk.h
-req.include-header : Ntddk.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FILE_DISPOSITION_INFORMATION_EX, *PFILE_DISPOSITION_INFORMATION_EX
+UID: NS:ntddk._FILE_DISPOSITION_INFORMATION_EX
+title: "_FILE_DISPOSITION_INFORMATION_EX"
+author: windows-driver-content
+description: The FILE_DISPOSITION_INFORMATION_EX structure is used as an argument to the ZwSetInformationFileEx routine and indicates how the operating system should delete a file.
+old-location: ifsk\file_disposition_information_ex.htm
+old-project: ifsk
+ms.assetid: CCFE4B09-F942-4D89-9013-159066D8E37A
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: PFILE_DISPOSITION_INFORMATION_EX structure pointer [Installable File System Drivers], ifsk.file_disposition_information_ex, FILE_DISPOSITION_INFORMATION_EX structure [Installable File System Drivers], *PFILE_DISPOSITION_INFORMATION_EX, PFILE_DISPOSITION_INFORMATION_EX, ntddk/PFILE_DISPOSITION_INFORMATION_EX, _FILE_DISPOSITION_INFORMATION_EX, FILE_DISPOSITION_INFORMATION_EX, ntddk/FILE_DISPOSITION_INFORMATION_EX
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddk.h
+req.include-header: Ntddk.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddk.h
+apiname:
+-	FILE_DISPOSITION_INFORMATION_EX
+product: Windows
+targetos: Windows
+req.typenames: FILE_DISPOSITION_INFORMATION_EX, *PFILE_DISPOSITION_INFORMATION_EX
 ---
 
 # _FILE_DISPOSITION_INFORMATION_EX structure

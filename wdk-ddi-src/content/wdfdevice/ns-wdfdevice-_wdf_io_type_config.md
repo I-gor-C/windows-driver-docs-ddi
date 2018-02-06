@@ -1,42 +1,47 @@
 ---
-UID : NS:wdfdevice._WDF_IO_TYPE_CONFIG
-title : "_WDF_IO_TYPE_CONFIG"
-author : windows-driver-content
-description : The WDF_IO_TYPE_CONFIG structure specifies the driver's preferred buffer access method for read and write requests, and for device I/O control requests.
-old-location : wdf\wdf_io_type_config.htm
-old-project : wdf
-ms.assetid : EB3CEC0E-5635-410D-B8D2-031FDB0557C1
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : PWDF_IO_TYPE_CONFIG structure pointer, PWDF_IO_TYPE_CONFIG, wdf.wdf_io_type_config, *PWDF_IO_TYPE_CONFIG, WDF_IO_TYPE_CONFIG, _WDF_IO_TYPE_CONFIG, WDF_IO_TYPE_CONFIG structure, wdfdevice/PWDF_IO_TYPE_CONFIG, wdfdevice/WDF_IO_TYPE_CONFIG
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdfdevice.h
-req.include-header : Wdf.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.13
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_IO_TYPE_CONFIG, *PWDF_IO_TYPE_CONFIG
-req.product : Windows 10 or later.
+UID: NS:wdfdevice._WDF_IO_TYPE_CONFIG
+title: "_WDF_IO_TYPE_CONFIG"
+author: windows-driver-content
+description: The WDF_IO_TYPE_CONFIG structure specifies the driver's preferred buffer access method for read and write requests, and for device I/O control requests.
+old-location: wdf\wdf_io_type_config.htm
+old-project: wdf
+ms.assetid: EB3CEC0E-5635-410D-B8D2-031FDB0557C1
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: PWDF_IO_TYPE_CONFIG structure pointer, PWDF_IO_TYPE_CONFIG, wdf.wdf_io_type_config, *PWDF_IO_TYPE_CONFIG, WDF_IO_TYPE_CONFIG, _WDF_IO_TYPE_CONFIG, WDF_IO_TYPE_CONFIG structure, wdfdevice/PWDF_IO_TYPE_CONFIG, wdfdevice/WDF_IO_TYPE_CONFIG
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdfdevice.h
+req.include-header: Wdf.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.13
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfdevice.h
+apiname:
+-	WDF_IO_TYPE_CONFIG
+product: Windows
+targetos: Windows
+req.typenames: WDF_IO_TYPE_CONFIG, *PWDF_IO_TYPE_CONFIG
+req.product: Windows 10 or later.
 ---
 
 # _WDF_IO_TYPE_CONFIG structure

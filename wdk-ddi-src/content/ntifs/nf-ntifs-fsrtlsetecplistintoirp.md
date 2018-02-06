@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.FsRtlSetEcpListIntoIrp
-title : FsRtlSetEcpListIntoIrp function
-author : windows-driver-content
-description : The FsRtlSetEcpListIntoIrp routine attaches an extra create parameter (ECP) context structure list to an IRP_MJ_CREATE operation.
-old-location : ifsk\fsrtlsetecplistintoirp.htm
-old-project : ifsk
-ms.assetid : 370da53a-3c20-4e45-8732-8f08aa2d96ae
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : fsrtlref_b292fe42-cbfa-430d-abca-528482cecbed.xml, FsRtlSetEcpListIntoIrp routine [Installable File System Drivers], ntifs/FsRtlSetEcpListIntoIrp, ifsk.fsrtlsetecplistintoirp, FsRtlSetEcpListIntoIrp
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : FsRtlSetEcpListIntoIrp is available starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.FsRtlSetEcpListIntoIrp
+title: FsRtlSetEcpListIntoIrp function
+author: windows-driver-content
+description: The FsRtlSetEcpListIntoIrp routine attaches an extra create parameter (ECP) context structure list to an IRP_MJ_CREATE operation.
+old-location: ifsk\fsrtlsetecplistintoirp.htm
+old-project: ifsk
+ms.assetid: 370da53a-3c20-4e45-8732-8f08aa2d96ae
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: fsrtlref_b292fe42-cbfa-430d-abca-528482cecbed.xml, FsRtlSetEcpListIntoIrp routine [Installable File System Drivers], ntifs/FsRtlSetEcpListIntoIrp, ifsk.fsrtlsetecplistintoirp, FsRtlSetEcpListIntoIrp
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: FsRtlSetEcpListIntoIrp is available starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	FsRtlSetEcpListIntoIrp
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

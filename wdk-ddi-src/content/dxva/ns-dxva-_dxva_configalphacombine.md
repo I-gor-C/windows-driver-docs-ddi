@@ -1,41 +1,46 @@
 ---
-UID : NS:dxva._DXVA_ConfigAlphaCombine
-title : "_DXVA_ConfigAlphaCombine"
-author : windows-driver-content
-description : The DXVA_ConfigAlphaCombine structure is sent by the host decoder to the accelerator to set the configuration for alpha-blending combination operations.
-old-location : display\dxva_configalphacombine.htm
-old-project : display
-ms.assetid : 588d5e73-4ec2-486b-914f-7076949653ad
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DXVA_ConfigAlphaCombine, display.dxva_configalphacombine, dxva/DXVA_ConfigAlphaCombine, LPDXVA_ConfigAlphaCombine, dxvaref_3bd67a73-c786-412c-90ad-c546ae2e4645.xml, _DXVA_ConfigAlphaCombine, DXVA_ConfigAlphaCombine structure [Display Devices], dxva/LPDXVA_ConfigAlphaCombine, *LPDXVA_ConfigAlphaCombine, LPDXVA_ConfigAlphaCombine structure pointer [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : dxva.h
-req.include-header : Dxva.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*LPDXVA_ConfigAlphaCombine, DXVA_ConfigAlphaCombine"
+UID: NS:dxva._DXVA_ConfigAlphaCombine
+title: "_DXVA_ConfigAlphaCombine"
+author: windows-driver-content
+description: The DXVA_ConfigAlphaCombine structure is sent by the host decoder to the accelerator to set the configuration for alpha-blending combination operations.
+old-location: display\dxva_configalphacombine.htm
+old-project: display
+ms.assetid: 588d5e73-4ec2-486b-914f-7076949653ad
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DXVA_ConfigAlphaCombine, display.dxva_configalphacombine, dxva/DXVA_ConfigAlphaCombine, LPDXVA_ConfigAlphaCombine, dxvaref_3bd67a73-c786-412c-90ad-c546ae2e4645.xml, _DXVA_ConfigAlphaCombine, DXVA_ConfigAlphaCombine structure [Display Devices], dxva/LPDXVA_ConfigAlphaCombine, *LPDXVA_ConfigAlphaCombine, LPDXVA_ConfigAlphaCombine structure pointer [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: dxva.h
+req.include-header: Dxva.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	dxva.h
+apiname:
+-	DXVA_ConfigAlphaCombine
+product: Windows
+targetos: Windows
+req.typenames: "*LPDXVA_ConfigAlphaCombine, DXVA_ConfigAlphaCombine"
 ---
 
 # _DXVA_ConfigAlphaCombine structure

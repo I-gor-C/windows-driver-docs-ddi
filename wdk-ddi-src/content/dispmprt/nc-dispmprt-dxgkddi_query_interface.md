@@ -1,41 +1,46 @@
 ---
-UID : NC:dispmprt.DXGKDDI_QUERY_INTERFACE
-title : DXGKDDI_QUERY_INTERFACE
-author : windows-driver-content
-description : The DxgkDdiQueryInterface function returns a functional interface that is implemented by the display miniport driver.
-old-location : display\dxgkddiqueryinterface.htm
-old-project : display
-ms.assetid : d8255f36-be3a-4b19-ac8d-8748ac9b6a24
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkddiqueryinterface, DxgkDdiQueryInterface callback function [Display Devices], DxgkDdiQueryInterface, DXGKDDI_QUERY_INTERFACE, DXGKDDI_QUERY_INTERFACE, dispmprt/DxgkDdiQueryInterface, DmFunctions_1c8cdcd5-60e2-4d76-ba70-6af3f96f1740.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : dispmprt.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
+UID: NC:dispmprt.DXGKDDI_QUERY_INTERFACE
+title: DXGKDDI_QUERY_INTERFACE
+author: windows-driver-content
+description: The DxgkDdiQueryInterface function returns a functional interface that is implemented by the display miniport driver.
+old-location: display\dxgkddiqueryinterface.htm
+old-project: display
+ms.assetid: d8255f36-be3a-4b19-ac8d-8748ac9b6a24
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkddiqueryinterface, DxgkDdiQueryInterface callback function [Display Devices], DxgkDdiQueryInterface, DXGKDDI_QUERY_INTERFACE, DXGKDDI_QUERY_INTERFACE, dispmprt/DxgkDdiQueryInterface, DmFunctions_1c8cdcd5-60e2-4d76-ba70-6af3f96f1740.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: dispmprt.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	dispmprt.h
+apiname:
+-	DxgkDdiQueryInterface
+product: Windows
+targetos: Windows
+req.typenames: SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ---
 
 

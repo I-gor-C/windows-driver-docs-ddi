@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddscsi.IOCTL_SCSI_GET_INQUIRY_DATA
-title : IOCTL_SCSI_GET_INQUIRY_DATA
-author : windows-driver-content
-description : Returns the SCSI inquiry data for all devices on a given SCSI host bus adapter (HBA).
-old-location : storage\ioctl_scsi_get_inquiry_data.htm
-old-project : storage
-ms.assetid : a429061b-ede6-48b1-9fc6-e85e4a7c0dfe
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_scsi_get_inquiry_data, IOCTL_SCSI_GET_INQUIRY_DATA control code [Storage Devices], IOCTL_SCSI_GET_INQUIRY_DATA, ntddscsi/IOCTL_SCSI_GET_INQUIRY_DATA, k307_7565e2a4-7599-4c7e-8da1-24349978627e.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddscsi.h
-req.include-header : Ntddscsi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : MP_STORAGE_DIAGNOSTIC_TARGET_TYPE, *PMP_STORAGE_DIAGNOSTIC_TARGET_TYPE
+UID: NI:ntddscsi.IOCTL_SCSI_GET_INQUIRY_DATA
+title: IOCTL_SCSI_GET_INQUIRY_DATA
+author: windows-driver-content
+description: Returns the SCSI inquiry data for all devices on a given SCSI host bus adapter (HBA).
+old-location: storage\ioctl_scsi_get_inquiry_data.htm
+old-project: storage
+ms.assetid: a429061b-ede6-48b1-9fc6-e85e4a7c0dfe
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_scsi_get_inquiry_data, IOCTL_SCSI_GET_INQUIRY_DATA control code [Storage Devices], IOCTL_SCSI_GET_INQUIRY_DATA, ntddscsi/IOCTL_SCSI_GET_INQUIRY_DATA, k307_7565e2a4-7599-4c7e-8da1-24349978627e.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddscsi.h
+req.include-header: Ntddscsi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddscsi.h
+apiname:
+-	IOCTL_SCSI_GET_INQUIRY_DATA
+product: Windows
+targetos: Windows
+req.typenames: MP_STORAGE_DIAGNOSTIC_TARGET_TYPE, *PMP_STORAGE_DIAGNOSTIC_TARGET_TYPE
 ---
 
 # IOCTL_SCSI_GET_INQUIRY_DATA IOCTL

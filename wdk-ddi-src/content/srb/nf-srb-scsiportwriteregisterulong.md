@@ -1,42 +1,48 @@
 ---
-UID : NF:srb.ScsiPortWriteRegisterUlong
-title : ScsiPortWriteRegisterUlong function
-author : windows-driver-content
-description : The ScsiPortWriteRegisterUlong routine transfers a ULONG value to the HBA.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future.
-old-location : storage\scsiportwriteregisterulong.htm
-old-project : storage
-ms.assetid : d6e05c62-da0c-43a5-b51e-4c73f650b77d
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.scsiportwriteregisterulong, scsiprt_8a175f68-d47c-4db0-bc22-bde418a56503.xml, ScsiPortWriteRegisterUlong, ScsiPortWriteRegisterUlong routine [Storage Devices], srb/ScsiPortWriteRegisterUlong
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : srb.h
-req.include-header : Miniport.h, Scsi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Scsiport.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SPB_CONTROLLER_CONFIG, *PSPB_CONTROLLER_CONFIG
-req.product : Windows 10 or later.
+UID: NF:srb.ScsiPortWriteRegisterUlong
+title: ScsiPortWriteRegisterUlong function
+author: windows-driver-content
+description: The ScsiPortWriteRegisterUlong routine transfers a ULONG value to the HBA.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future.
+old-location: storage\scsiportwriteregisterulong.htm
+old-project: storage
+ms.assetid: d6e05c62-da0c-43a5-b51e-4c73f650b77d
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.scsiportwriteregisterulong, scsiprt_8a175f68-d47c-4db0-bc22-bde418a56503.xml, ScsiPortWriteRegisterUlong, ScsiPortWriteRegisterUlong routine [Storage Devices], srb/ScsiPortWriteRegisterUlong
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: srb.h
+req.include-header: Miniport.h, Scsi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Scsiport.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Scsiport.lib
+-	Scsiport.dll
+apiname:
+-	ScsiPortWriteRegisterUlong
+product: Windows
+targetos: Windows
+req.typenames: SPB_CONTROLLER_CONFIG, *PSPB_CONTROLLER_CONFIG
+req.product: Windows 10 or later.
 ---
 
 

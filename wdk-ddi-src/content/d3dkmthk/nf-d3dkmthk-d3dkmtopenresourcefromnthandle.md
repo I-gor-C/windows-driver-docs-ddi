@@ -1,41 +1,49 @@
 ---
-UID : NF:d3dkmthk.D3DKMTOpenResourceFromNtHandle
-title : D3DKMTOpenResourceFromNtHandle function
-author : windows-driver-content
-description : Opens a shared resource from an NT handle.
-old-location : display\d3dkmtopenresourcefromnthandle.htm
-old-project : display
-ms.assetid : d5a66102-782a-482e-8119-48015820d0c7
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DKMTOpenResourceFromNtHandle function [Display Devices], display.d3dkmtopenresourcefromnthandle, PFND3DKMT_OPENRESOURCEFROMNTHANDLE, d3dkmthk/D3DKMTOpenResourceFromNtHandle, D3DKMTOpenResourceFromNtHandle
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Universal
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Gdi32.lib
-req.dll : Gdi32.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_DRIVERVERSION
+UID: NF:d3dkmthk.D3DKMTOpenResourceFromNtHandle
+title: D3DKMTOpenResourceFromNtHandle function
+author: windows-driver-content
+description: Opens a shared resource from an NT handle.
+old-location: display\d3dkmtopenresourcefromnthandle.htm
+old-project: display
+ms.assetid: d5a66102-782a-482e-8119-48015820d0c7
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DKMTOpenResourceFromNtHandle function [Display Devices], display.d3dkmtopenresourcefromnthandle, PFND3DKMT_OPENRESOURCEFROMNTHANDLE, d3dkmthk/D3DKMTOpenResourceFromNtHandle, D3DKMTOpenResourceFromNtHandle
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Universal
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Gdi32.lib
+req.dll: Gdi32.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Gdi32.dll
+-	API-MS-Win-dx-d3dkmt-l1-1-0.dll
+-	API-MS-Win-dx-d3dkmt-l1-1-1.dll
+-	API-MS-Win-DX-D3DKMT-L1-1-2.dll
+apiname:
+-	D3DKMTOpenResourceFromNtHandle
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_DRIVERVERSION
 ---
 
 

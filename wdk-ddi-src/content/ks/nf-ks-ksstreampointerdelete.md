@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsStreamPointerDelete
-title : KsStreamPointerDelete function
-author : windows-driver-content
-description : The KsStreamPointerDelete function deletes a clone stream pointer, releasing a reference on the frame to which this stream pointer referred.
-old-location : stream\ksstreampointerdelete.htm
-old-project : stream
-ms.assetid : 68819fe9-fd90-4391-a129-5aa0cae1558b
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ks/KsStreamPointerDelete, stream.ksstreampointerdelete, KsStreamPointerDelete function [Streaming Media Devices], KsStreamPointerDelete, avfunc_b21da27c-abf4-4277-8a22-232c31fbfe97.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsStreamPointerDelete
+title: KsStreamPointerDelete function
+author: windows-driver-content
+description: The KsStreamPointerDelete function deletes a clone stream pointer, releasing a reference on the frame to which this stream pointer referred.
+old-location: stream\ksstreampointerdelete.htm
+old-project: stream
+ms.assetid: 68819fe9-fd90-4391-a129-5aa0cae1558b
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ks/KsStreamPointerDelete, stream.ksstreampointerdelete, KsStreamPointerDelete function [Streaming Media Devices], KsStreamPointerDelete, avfunc_b21da27c-abf4-4277-8a22-232c31fbfe97.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsStreamPointerDelete
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NC:netioddk.NPI_CLIENT_DETACH_PROVIDER_FN
-title : NPI_CLIENT_DETACH_PROVIDER_FN
-author : windows-driver-content
-description : A client module's ClientDetachProvider callback function detaches the client module from a provider module.
-old-location : netvista\clientdetachprovider.htm
-old-project : netvista
-ms.assetid : a684136a-e2f2-4f82-9e9a-166b40bd7536
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.clientdetachprovider, ClientDetachProvider callback function [Network Drivers Starting with Windows Vista], ClientDetachProvider, NPI_CLIENT_DETACH_PROVIDER_FN, NPI_CLIENT_DETACH_PROVIDER_FN, netioddk/ClientDetachProvider, PNPI_CLIENT_DETACH_PROVIDER_FN callback function [Network Drivers Starting with Windows Vista], PNPI_CLIENT_DETACH_PROVIDER_FN, nmrref_5197d4f5-2cd0-4134-bccb-b509853718cd.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : netioddk.h
-req.include-header : Wsk.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating   systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NET_DMA_PROVIDER_CHARACTERISTICS, *PNET_DMA_PROVIDER_CHARACTERISTICS
+UID: NC:netioddk.NPI_CLIENT_DETACH_PROVIDER_FN
+title: NPI_CLIENT_DETACH_PROVIDER_FN
+author: windows-driver-content
+description: A client module's ClientDetachProvider callback function detaches the client module from a provider module.
+old-location: netvista\clientdetachprovider.htm
+old-project: netvista
+ms.assetid: a684136a-e2f2-4f82-9e9a-166b40bd7536
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.clientdetachprovider, ClientDetachProvider callback function [Network Drivers Starting with Windows Vista], ClientDetachProvider, NPI_CLIENT_DETACH_PROVIDER_FN, NPI_CLIENT_DETACH_PROVIDER_FN, netioddk/ClientDetachProvider, PNPI_CLIENT_DETACH_PROVIDER_FN callback function [Network Drivers Starting with Windows Vista], PNPI_CLIENT_DETACH_PROVIDER_FN, nmrref_5197d4f5-2cd0-4134-bccb-b509853718cd.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: netioddk.h
+req.include-header: Wsk.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	netioddk.h
+apiname:
+-	PNPI_CLIENT_DETACH_PROVIDER_FN
+product: Windows
+targetos: Windows
+req.typenames: NET_DMA_PROVIDER_CHARACTERISTICS, *PNET_DMA_PROVIDER_CHARACTERISTICS
 ---
 
 

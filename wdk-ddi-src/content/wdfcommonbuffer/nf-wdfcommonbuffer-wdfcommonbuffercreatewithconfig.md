@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfcommonbuffer.WdfCommonBufferCreateWithConfig
-title : WdfCommonBufferCreateWithConfig function
-author : windows-driver-content
-description : The WdfCommonBufferCreateWithConfig method creates a memory buffer that both the driver and a direct memory access (DMA) device can access simultaneously, and the method also specifies buffer configuration information.
-old-location : wdf\wdfcommonbuffercreatewithconfig.htm
-old-project : wdf
-ms.assetid : 3ed8b7df-9c7d-44de-a49d-10221acf71e3
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WdfCommonBufferCreateWithConfig, wdfcommonbuffer/WdfCommonBufferCreateWithConfig, WdfCommonBufferCreateWithConfig method, wdf.wdfcommonbuffercreatewithconfig, kmdf.wdfcommonbuffercreatewithconfig, DFCommonBufferObjectRef_4e009b5f-a2a4-4be5-84d6-308c1558e702.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfcommonbuffer.h
-req.include-header : WdfCommonBuffer.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.1
-req.umdf-ver : 
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDF_CHILD_RETRIEVE_INFO, WDF_CHILD_RETRIEVE_INFO"
-req.product : Windows 10 or later.
+UID: NF:wdfcommonbuffer.WdfCommonBufferCreateWithConfig
+title: WdfCommonBufferCreateWithConfig function
+author: windows-driver-content
+description: The WdfCommonBufferCreateWithConfig method creates a memory buffer that both the driver and a direct memory access (DMA) device can access simultaneously, and the method also specifies buffer configuration information.
+old-location: wdf\wdfcommonbuffercreatewithconfig.htm
+old-project: wdf
+ms.assetid: 3ed8b7df-9c7d-44de-a49d-10221acf71e3
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WdfCommonBufferCreateWithConfig, wdfcommonbuffer/WdfCommonBufferCreateWithConfig, WdfCommonBufferCreateWithConfig method, wdf.wdfcommonbuffercreatewithconfig, kmdf.wdfcommonbuffercreatewithconfig, DFCommonBufferObjectRef_4e009b5f-a2a4-4be5-84d6-308c1558e702.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfcommonbuffer.h
+req.include-header: WdfCommonBuffer.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.1
+req.umdf-ver: 
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfCommonBufferCreateWithConfig
+product: Windows
+targetos: Windows
+req.typenames: "*PWDF_CHILD_RETRIEVE_INFO, WDF_CHILD_RETRIEVE_INFO"
+req.product: Windows 10 or later.
 ---
 
 

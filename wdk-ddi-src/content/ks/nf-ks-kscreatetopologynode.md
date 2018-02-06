@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsCreateTopologyNode
-title : KsCreateTopologyNode function
-author : windows-driver-content
-description : The KsCreateTopologyNode function creates a handle to a topology node instance. The function can only be called at PASSIVE_LEVEL.
-old-location : stream\kscreatetopologynode.htm
-old-project : stream
-ms.assetid : aeed8086-b413-428c-b275-d555523b5503
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ks/KsCreateTopologyNode, stream.kscreatetopologynode, KsCreateTopologyNode, ksfunc_15092cdb-3f97-4f13-a10e-9dbc92d20776.xml, KsCreateTopologyNode function [Streaming Media Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsCreateTopologyNode
+title: KsCreateTopologyNode function
+author: windows-driver-content
+description: The KsCreateTopologyNode function creates a handle to a topology node instance. The function can only be called at PASSIVE_LEVEL.
+old-location: stream\kscreatetopologynode.htm
+old-project: stream
+ms.assetid: aeed8086-b413-428c-b275-d555523b5503
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ks/KsCreateTopologyNode, stream.kscreatetopologynode, KsCreateTopologyNode, ksfunc_15092cdb-3f97-4f13-a10e-9dbc92d20776.xml, KsCreateTopologyNode function [Streaming Media Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ks.lib
+-	ks.dll
+apiname:
+-	KsCreateTopologyNode
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

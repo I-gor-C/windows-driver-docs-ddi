@@ -1,42 +1,47 @@
 ---
-UID : NS:wdfdevice._WDF_PNPPOWER_EVENT_CALLBACKS
-title : "_WDF_PNPPOWER_EVENT_CALLBACKS"
-author : windows-driver-content
-description : The WDF_PNPPOWER_EVENT_CALLBACKS structure contains pointers to a driver's Plug and Play and power event callback functions.
-old-location : wdf\wdf_pnppower_event_callbacks.htm
-old-project : wdf
-ms.assetid : 2bfd677f-f2bd-49d7-b572-d7df4de0425c
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : "_WDF_PNPPOWER_EVENT_CALLBACKS, PWDF_PNPPOWER_EVENT_CALLBACKS, WDF_PNPPOWER_EVENT_CALLBACKS structure, kmdf.wdf_pnppower_event_callbacks, WDF_PNPPOWER_EVENT_CALLBACKS, *PWDF_PNPPOWER_EVENT_CALLBACKS, DFDeviceObjectGeneralRef_a4b53707-d968-45a7-a5e8-284e9f34f866.xml, PWDF_PNPPOWER_EVENT_CALLBACKS structure pointer, wdf.wdf_pnppower_event_callbacks, wdfdevice/PWDF_PNPPOWER_EVENT_CALLBACKS, wdfdevice/WDF_PNPPOWER_EVENT_CALLBACKS"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdfdevice.h
-req.include-header : Wdf.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_PNPPOWER_EVENT_CALLBACKS, *PWDF_PNPPOWER_EVENT_CALLBACKS
-req.product : Windows 10 or later.
+UID: NS:wdfdevice._WDF_PNPPOWER_EVENT_CALLBACKS
+title: "_WDF_PNPPOWER_EVENT_CALLBACKS"
+author: windows-driver-content
+description: The WDF_PNPPOWER_EVENT_CALLBACKS structure contains pointers to a driver's Plug and Play and power event callback functions.
+old-location: wdf\wdf_pnppower_event_callbacks.htm
+old-project: wdf
+ms.assetid: 2bfd677f-f2bd-49d7-b572-d7df4de0425c
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: "_WDF_PNPPOWER_EVENT_CALLBACKS, PWDF_PNPPOWER_EVENT_CALLBACKS, WDF_PNPPOWER_EVENT_CALLBACKS structure, kmdf.wdf_pnppower_event_callbacks, WDF_PNPPOWER_EVENT_CALLBACKS, *PWDF_PNPPOWER_EVENT_CALLBACKS, DFDeviceObjectGeneralRef_a4b53707-d968-45a7-a5e8-284e9f34f866.xml, PWDF_PNPPOWER_EVENT_CALLBACKS structure pointer, wdf.wdf_pnppower_event_callbacks, wdfdevice/PWDF_PNPPOWER_EVENT_CALLBACKS, wdfdevice/WDF_PNPPOWER_EVENT_CALLBACKS"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdfdevice.h
+req.include-header: Wdf.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfdevice.h
+apiname:
+-	WDF_PNPPOWER_EVENT_CALLBACKS
+product: Windows
+targetos: Windows
+req.typenames: WDF_PNPPOWER_EVENT_CALLBACKS, *PWDF_PNPPOWER_EVENT_CALLBACKS
+req.product: Windows 10 or later.
 ---
 
 # _WDF_PNPPOWER_EVENT_CALLBACKS structure

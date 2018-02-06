@@ -1,41 +1,46 @@
 ---
-UID : NS:iscsimgt._ISCSI_Path
-title : "_ISCSI_Path"
-author : windows-driver-content
-description : The ISCSI_Path structure contains information about a connection of the iSCSI portal.
-old-location : storage\iscsi_path.htm
-old-project : storage
-ms.assetid : eebc3e2e-41fe-4087-8916-7c8a71929913
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.iscsi_path, PISCSI_Path, ISCSI_Path, _ISCSI_Path, *PISCSI_Path, structs-iSCSI_fe9f6ee9-2fcd-46eb-a010-98e82dbf8c70.xml, ISCSI_Path structure [Storage Devices], PISCSI_Path structure pointer [Storage Devices], iscsimgt/PISCSI_Path, iscsimgt/ISCSI_Path
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : iscsimgt.h
-req.include-header : Iscsimgt.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : ISCSI_Path, *PISCSI_Path
+UID: NS:iscsimgt._ISCSI_Path
+title: "_ISCSI_Path"
+author: windows-driver-content
+description: The ISCSI_Path structure contains information about a connection of the iSCSI portal.
+old-location: storage\iscsi_path.htm
+old-project: storage
+ms.assetid: eebc3e2e-41fe-4087-8916-7c8a71929913
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.iscsi_path, PISCSI_Path, ISCSI_Path, _ISCSI_Path, *PISCSI_Path, structs-iSCSI_fe9f6ee9-2fcd-46eb-a010-98e82dbf8c70.xml, ISCSI_Path structure [Storage Devices], PISCSI_Path structure pointer [Storage Devices], iscsimgt/PISCSI_Path, iscsimgt/ISCSI_Path
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: iscsimgt.h
+req.include-header: Iscsimgt.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	iscsimgt.h
+apiname:
+-	ISCSI_Path
+product: Windows
+targetos: Windows
+req.typenames: ISCSI_Path, *PISCSI_Path
 ---
 
 # _ISCSI_Path structure

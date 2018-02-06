@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_SETDECODERENDERTARGET
-title : PFND3DDDI_SETDECODERENDERTARGET
-author : windows-driver-content
-description : The SetDecodeRenderTarget function sets the render target surface for decoding operations.
-old-location : display\setdecoderendertarget.htm
-old-project : display
-ms.assetid : d522b0f3-ca9c-4e79-96ad-ea9477858ef4
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.setdecoderendertarget, SetDecodeRenderTarget callback function [Display Devices], SetDecodeRenderTarget, PFND3DDDI_SETDECODERENDERTARGET, PFND3DDDI_SETDECODERENDERTARGET, d3dumddi/SetDecodeRenderTarget, UserModeDisplayDriver_Functions_e5c55218-5663-4689-a696-6b9b1c0a7cce.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_SETDECODERENDERTARGET
+title: PFND3DDDI_SETDECODERENDERTARGET
+author: windows-driver-content
+description: The SetDecodeRenderTarget function sets the render target surface for decoding operations.
+old-location: display\setdecoderendertarget.htm
+old-project: display
+ms.assetid: d522b0f3-ca9c-4e79-96ad-ea9477858ef4
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.setdecoderendertarget, SetDecodeRenderTarget callback function [Display Devices], SetDecodeRenderTarget, PFND3DDDI_SETDECODERENDERTARGET, PFND3DDDI_SETDECODERENDERTARGET, d3dumddi/SetDecodeRenderTarget, UserModeDisplayDriver_Functions_e5c55218-5663-4689-a696-6b9b1c0a7cce.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	SetDecodeRenderTarget
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

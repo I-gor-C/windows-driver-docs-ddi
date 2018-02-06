@@ -1,41 +1,46 @@
 ---
-UID : NF:engextcpp.ExtRemoteData.GetShort
-title : ExtRemoteData::GetShort method
-author : windows-driver-content
-description : The GetShort method returns a SHORT version of the ExtRemoteData object, which represents the contents of the target's memory.
-old-location : debugger\extremotedata_getshort.htm
-old-project : debugger
-ms.assetid : 5e364e83-76db-44b0-b5bc-15eed53bbbdf
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : debugger.extremotedata_getshort, ExtRemoteData class [Windows Debugging], GetShort method, ExtRemoteData, GetShort, EngExtCpp_Ref_c2fffdd2-e899-4f87-bd00-415bafa3b84f.xml, GetShort method [Windows Debugging], ExtRemoteData::GetShort, GetShort method [Windows Debugging], ExtRemoteData class
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : engextcpp.hpp
-req.include-header : Engextcpp.hpp
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : engextcpp.hpp
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SILO_DRIVER_CAPABILITIES, *PSILO_DRIVER_CAPABILITIES
+UID: NF:engextcpp.ExtRemoteData.GetShort
+title: ExtRemoteData::GetShort method
+author: windows-driver-content
+description: The GetShort method returns a SHORT version of the ExtRemoteData object, which represents the contents of the target's memory.
+old-location: debugger\extremotedata_getshort.htm
+old-project: debugger
+ms.assetid: 5e364e83-76db-44b0-b5bc-15eed53bbbdf
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: debugger.extremotedata_getshort, ExtRemoteData class [Windows Debugging], GetShort method, ExtRemoteData, GetShort, EngExtCpp_Ref_c2fffdd2-e899-4f87-bd00-415bafa3b84f.xml, GetShort method [Windows Debugging], ExtRemoteData::GetShort, GetShort method [Windows Debugging], ExtRemoteData class
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: engextcpp.hpp
+req.include-header: Engextcpp.hpp
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: engextcpp.hpp
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	engextcpp.hpp
+apiname:
+-	ExtRemoteData.GetShort
+product: Windows
+targetos: Windows
+req.typenames: SILO_DRIVER_CAPABILITIES, *PSILO_DRIVER_CAPABILITIES
 ---
 
 

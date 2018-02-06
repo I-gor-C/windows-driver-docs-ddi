@@ -1,41 +1,46 @@
 ---
-UID : NE:d3d12umddi.D3D12DDI_VIDEO_DECODE_PARAMETER_TYPE_0020
-title : D3D12DDI_VIDEO_DECODE_PARAMETER_TYPE_0020
-author : windows-driver-content
-description : Contains the video decode parameter type.
-old-location : display\d3d12ddi_video_decode_parameter_type.htm
-old-project : display
-ms.assetid : 4ED18E79-2BEA-4FB5-BDA4-B5CA59D6E1A8
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3D12DDI_VIDEO_DECODE_PARAMETER_TYPE_0020_INVERSE_QUANTIZATION_MATRIX, d3d12umddi/D3D12DDI_VIDEO_DECODE_PARAMETER_TYPE_0020_PICTURE_PARAMETERS, D3D12DDI_VIDEO_DECODE_PARAMETER_TYPE_0020_SLICE_CONTROL, d3d12umddi/D3D12DDI_VIDEO_DECODE_PARAMETER_TYPE_0020_INVERSE_QUANTIZATION_MATRIX, display.d3d12ddi_video_decode_parameter_type, d3d12umddi/D3D12DDI_VIDEO_DECODE_PARAMETER_TYPE_0020, D3D12DDI_VIDEO_DECODE_PARAMETER_TYPE_0020, d3d12umddi/D3D12DDI_VIDEO_DECODE_PARAMETER_TYPE_0020_SLICE_CONTROL, D3D12DDI_VIDEO_DECODE_PARAMETER_TYPE_0020_PICTURE_PARAMETERS, D3D12DDI_VIDEO_DECODE_PARAMETER_TYPE_0020 enumeration [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : d3d12umddi.h
-req.include-header : D3d12umddi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3D12DDI_VIDEO_DECODE_PARAMETER_TYPE_0020
+UID: NE:d3d12umddi.D3D12DDI_VIDEO_DECODE_PARAMETER_TYPE_0020
+title: D3D12DDI_VIDEO_DECODE_PARAMETER_TYPE_0020
+author: windows-driver-content
+description: Contains the video decode parameter type.
+old-location: display\d3d12ddi_video_decode_parameter_type.htm
+old-project: display
+ms.assetid: 4ED18E79-2BEA-4FB5-BDA4-B5CA59D6E1A8
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3D12DDI_VIDEO_DECODE_PARAMETER_TYPE_0020_INVERSE_QUANTIZATION_MATRIX, d3d12umddi/D3D12DDI_VIDEO_DECODE_PARAMETER_TYPE_0020_PICTURE_PARAMETERS, D3D12DDI_VIDEO_DECODE_PARAMETER_TYPE_0020_SLICE_CONTROL, d3d12umddi/D3D12DDI_VIDEO_DECODE_PARAMETER_TYPE_0020_INVERSE_QUANTIZATION_MATRIX, display.d3d12ddi_video_decode_parameter_type, d3d12umddi/D3D12DDI_VIDEO_DECODE_PARAMETER_TYPE_0020, D3D12DDI_VIDEO_DECODE_PARAMETER_TYPE_0020, d3d12umddi/D3D12DDI_VIDEO_DECODE_PARAMETER_TYPE_0020_SLICE_CONTROL, D3D12DDI_VIDEO_DECODE_PARAMETER_TYPE_0020_PICTURE_PARAMETERS, D3D12DDI_VIDEO_DECODE_PARAMETER_TYPE_0020 enumeration [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: d3d12umddi.h
+req.include-header: D3d12umddi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	D3d12umddi.h
+apiname:
+-	D3D12DDI_VIDEO_DECODE_PARAMETER_TYPE_0020
+product: Windows
+targetos: Windows
+req.typenames: D3D12DDI_VIDEO_DECODE_PARAMETER_TYPE_0020
 ---
 
 # D3D12DDI_VIDEO_DECODE_PARAMETER_TYPE_0020 Enumeration
@@ -53,26 +58,26 @@ typedef enum D3D12DDI_VIDEO_DECODE_PARAMETER_TYPE_0020 {
 ## Constants
 
 <table>
-
-<tr>
-<td>D3D12DDI_VIDEO_DECODE_PARAMETER_TYPE_0020_INVERSE_QUANTIZATION_MATRIX</td>
-<td>Inverse quantization matrix buffer.</td>
-</tr>
-
-<tr>
-<td>D3D12DDI_VIDEO_DECODE_PARAMETER_TYPE_0020_PICTURE_PARAMETERS</td>
-<td>Picture decoding parameter buffer.</td>
-</tr>
-
-<tr>
-<td>D3D12DDI_VIDEO_DECODE_PARAMETER_TYPE_0020_SLICE_CONTROL</td>
-<td>Slice control buffer.</td>
-</tr>
+            
+                <tr>
+                    <td>D3D12DDI_VIDEO_DECODE_PARAMETER_TYPE_0020_INVERSE_QUANTIZATION_MATRIX</td>
+                    <td>Inverse quantization matrix buffer.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D12DDI_VIDEO_DECODE_PARAMETER_TYPE_0020_PICTURE_PARAMETERS</td>
+                    <td>Picture decoding parameter buffer.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D12DDI_VIDEO_DECODE_PARAMETER_TYPE_0020_SLICE_CONTROL</td>
+                    <td>Slice control buffer.</td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-The definition of each buffer type is dependent upon the decode profile and is defined in each codec specification.
+        The definition of each buffer type is dependent upon the decode profile and is defined in each codec specification.
 
 ## Requirements
 | &nbsp; | &nbsp; |

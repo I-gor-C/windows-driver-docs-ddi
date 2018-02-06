@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugOutputCallbacks2.Output2
-title : IDebugOutputCallbacks2::Output2 method
-author : windows-driver-content
-description : Returns notifications for the IDebugOutputCallbacks2 interface.
-old-location : debugger\idebugoutputcallbacks2_output2.htm
-old-project : debugger
-ms.assetid : 2FFF9B54-6E77-4D46-B6C0-5BADD208BFCC
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugOutputCallbacks2, Output2, IDebugOutputCallbacks2::Output2, Output2 method [Windows Debugging], Output2 method [Windows Debugging], IDebugOutputCallbacks2 interface, debugger.idebugoutputcallbacks2_output2, IDebugOutputCallbacks2 interface [Windows Debugging], Output2 method, DEBUG_OUTCBI_EXPLICIT_FLUSH, dbgeng/IDebugOutputCallbacks2::Output2, DEBUG_OUTCBI_ANY_FORMAT, DEBUG_OUTCBI_DML, DEBUG_OUTCBI_TEXT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugOutputCallbacks2.Output2
+title: IDebugOutputCallbacks2::Output2 method
+author: windows-driver-content
+description: Returns notifications for the IDebugOutputCallbacks2 interface.
+old-location: debugger\idebugoutputcallbacks2_output2.htm
+old-project: debugger
+ms.assetid: 2FFF9B54-6E77-4D46-B6C0-5BADD208BFCC
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugOutputCallbacks2, Output2, IDebugOutputCallbacks2::Output2, Output2 method [Windows Debugging], Output2 method [Windows Debugging], IDebugOutputCallbacks2 interface, debugger.idebugoutputcallbacks2_output2, IDebugOutputCallbacks2 interface [Windows Debugging], Output2 method, DEBUG_OUTCBI_EXPLICIT_FLUSH, dbgeng/IDebugOutputCallbacks2::Output2, DEBUG_OUTCBI_ANY_FORMAT, DEBUG_OUTCBI_DML, DEBUG_OUTCBI_TEXT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugOutputCallbacks2.Output2
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

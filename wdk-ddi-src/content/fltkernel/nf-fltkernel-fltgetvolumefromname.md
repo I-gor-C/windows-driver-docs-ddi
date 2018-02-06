@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltGetVolumeFromName
-title : FltGetVolumeFromName function
-author : windows-driver-content
-description : The FltGetVolumeFromName routine returns an opaque pointer for the volume whose name matches the value of the VolumeName parameter.
-old-location : ifsk\fltgetvolumefromname.htm
-old-project : ifsk
-ms.assetid : 813b914a-05d6-4e5a-9420-f87e94ee9e96
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.fltgetvolumefromname, FltApiRef_e_to_o_1132de70-bc75-48a2-b0ae-d5b6d67a0a07.xml, FltGetVolumeFromName routine [Installable File System Drivers], fltkernel/FltGetVolumeFromName, FltGetVolumeFromName
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltGetVolumeFromName
+title: FltGetVolumeFromName function
+author: windows-driver-content
+description: The FltGetVolumeFromName routine returns an opaque pointer for the volume whose name matches the value of the VolumeName parameter.
+old-location: ifsk\fltgetvolumefromname.htm
+old-project: ifsk
+ms.assetid: 813b914a-05d6-4e5a-9420-f87e94ee9e96
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.fltgetvolumefromname, FltApiRef_e_to_o_1132de70-bc75-48a2-b0ae-d5b6d67a0a07.xml, FltGetVolumeFromName routine [Installable File System Drivers], fltkernel/FltGetVolumeFromName, FltGetVolumeFromName
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltGetVolumeFromName
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

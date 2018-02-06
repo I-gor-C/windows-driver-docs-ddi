@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGK_GDIARG_COLORFILL
-title : "_DXGK_GDIARG_COLORFILL"
-author : windows-driver-content
-description : The DXGK_GDIARG_COLORFILL structure describes the characteristics of a GDI hardware-accelerated color fill operation.
-old-location : display\dxgk_gdiarg_colorfill.htm
-old-project : display
-ms.assetid : f7dad933-31e6-4de2-9753-67c054f44c4a
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DXGK_GDIARG_COLORFILL structure [Display Devices], display.dxgk_gdiarg_colorfill, _DXGK_GDIARG_COLORFILL, DXGK_GDIARG_COLORFILL, d3dkmddi/DXGK_GDIARG_COLORFILL, DmStructs_d80a1a76-a7d1-4c7e-b9b1-3c6986124f77.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7 and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_GDIARG_COLORFILL
+UID: NS:d3dkmddi._DXGK_GDIARG_COLORFILL
+title: "_DXGK_GDIARG_COLORFILL"
+author: windows-driver-content
+description: The DXGK_GDIARG_COLORFILL structure describes the characteristics of a GDI hardware-accelerated color fill operation.
+old-location: display\dxgk_gdiarg_colorfill.htm
+old-project: display
+ms.assetid: f7dad933-31e6-4de2-9753-67c054f44c4a
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DXGK_GDIARG_COLORFILL structure [Display Devices], display.dxgk_gdiarg_colorfill, _DXGK_GDIARG_COLORFILL, DXGK_GDIARG_COLORFILL, d3dkmddi/DXGK_GDIARG_COLORFILL, DmStructs_d80a1a76-a7d1-4c7e-b9b1-3c6986124f77.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7 and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DXGK_GDIARG_COLORFILL
+product: Windows
+targetos: Windows
+req.typenames: DXGK_GDIARG_COLORFILL
 ---
 
 # _DXGK_GDIARG_COLORFILL structure

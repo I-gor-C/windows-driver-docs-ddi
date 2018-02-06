@@ -1,41 +1,47 @@
 ---
-UID : NF:fwpsk.FwpsAcquireClassifyHandle0
-title : FwpsAcquireClassifyHandle0 function
-author : windows-driver-content
-description : The FwpsAcquireClassifyHandle0 function generates a classification handle that is used to identify asynchronous classification operations and requests for writable layer data.Note  FwpsAcquireClassifyHandle0 is a specific version of FwpsAcquireClassifyHandle. See WFP Version-Independent Names and Targeting Specific Versions of Windows for more information.
-old-location : netvista\fwpsacquireclassifyhandle0.htm
-old-project : netvista
-ms.assetid : 7348d937-6541-47a7-ae70-7d851d41bc1a
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : FwpsAcquireClassifyHandle0 function [Network Drivers Starting with Windows Vista], wfp_ref_2_funct_3_fwps_A-B_c0b568dd-f546-4bab-a012-14f4d2a8d846.xml, FwpsAcquireClassifyHandle0, netvista.fwpsacquireclassifyhandle0, fwpsk/FwpsAcquireClassifyHandle0
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fwpsk.h
-req.include-header : Fwpsk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 7.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Fwpkclnt.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FWPS_VSWITCH_EVENT_TYPE
+UID: NF:fwpsk.FwpsAcquireClassifyHandle0
+title: FwpsAcquireClassifyHandle0 function
+author: windows-driver-content
+description: The FwpsAcquireClassifyHandle0 function generates a classification handle that is used to identify asynchronous classification operations and requests for writable layer data.Note  FwpsAcquireClassifyHandle0 is a specific version of FwpsAcquireClassifyHandle. See WFP Version-Independent Names and Targeting Specific Versions of Windows for more information.
+old-location: netvista\fwpsacquireclassifyhandle0.htm
+old-project: netvista
+ms.assetid: 7348d937-6541-47a7-ae70-7d851d41bc1a
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: FwpsAcquireClassifyHandle0 function [Network Drivers Starting with Windows Vista], wfp_ref_2_funct_3_fwps_A-B_c0b568dd-f546-4bab-a012-14f4d2a8d846.xml, FwpsAcquireClassifyHandle0, netvista.fwpsacquireclassifyhandle0, fwpsk/FwpsAcquireClassifyHandle0
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fwpsk.h
+req.include-header: Fwpsk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 7.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Fwpkclnt.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	fwpkclnt.lib
+-	fwpkclnt.dll
+apiname:
+-	FwpsAcquireClassifyHandle0
+product: Windows
+targetos: Windows
+req.typenames: FWPS_VSWITCH_EVENT_TYPE
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NF:portcls.IMiniportWaveCyclicStream.SetState
-title : IMiniportWaveCyclicStream::SetState method
-author : windows-driver-content
-description : The SetState method sets the new state of playback or recording for the stream.
-old-location : audio\iminiportwavecyclicstream_setstate.htm
-old-project : audio
-ms.assetid : 61d7252e-04af-46f1-a885-4720698ae930
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : SetState method [Audio Devices], audio.iminiportwavecyclicstream_setstate, SetState method [Audio Devices], IMiniportWaveCyclicStream interface, IMiniportWaveCyclicStream::SetState, IMiniportWaveCyclicStream, audmp-routines_46474aab-87da-4121-9cb8-ee8b280c7852.xml, portcls/IMiniportWaveCyclicStream::SetState, SetState, IMiniportWaveCyclicStream interface [Audio Devices], SetState method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : portcls.h
-req.include-header : Portcls.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : portcls.h
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.IMiniportWaveCyclicStream.SetState
+title: IMiniportWaveCyclicStream::SetState method
+author: windows-driver-content
+description: The SetState method sets the new state of playback or recording for the stream.
+old-location: audio\iminiportwavecyclicstream_setstate.htm
+old-project: audio
+ms.assetid: 61d7252e-04af-46f1-a885-4720698ae930
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: SetState method [Audio Devices], audio.iminiportwavecyclicstream_setstate, SetState method [Audio Devices], IMiniportWaveCyclicStream interface, IMiniportWaveCyclicStream::SetState, IMiniportWaveCyclicStream, audmp-routines_46474aab-87da-4121-9cb8-ee8b280c7852.xml, portcls/IMiniportWaveCyclicStream::SetState, SetState, IMiniportWaveCyclicStream interface [Audio Devices], SetState method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: portcls.h
+req.include-header: Portcls.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: portcls.h
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	portcls.h
+apiname:
+-	IMiniportWaveCyclicStream.SetState
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

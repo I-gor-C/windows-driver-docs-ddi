@@ -1,41 +1,46 @@
 ---
-UID : NC:gpioclx.GPIO_CLIENT_STOP_CONTROLLER
-title : GPIO_CLIENT_STOP_CONTROLLER
-author : windows-driver-content
-description : The CLIENT_StopController event callback function performs operations that are needed to prepare the general-purpose I/O (GPIO) controller device to exit the D0 power state.
-old-location : gpio\client_stopcontroller.htm
-old-project : GPIO
-ms.assetid : 4B1A33AC-E341-478E-8C1E-94F4473A191C
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : GPIO.client_stopcontroller, CLIENT_StopController callback function [Parallel Ports], CLIENT_StopController, GPIO_CLIENT_STOP_CONTROLLER, GPIO_CLIENT_STOP_CONTROLLER, gpioclx/CLIENT_StopController
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : gpioclx.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Supported starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Called at PASSIVE_LEVEL.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PGNSS_V2UPL_NI_INFO, GNSS_V2UPL_NI_INFO"
+UID: NC:gpioclx.GPIO_CLIENT_STOP_CONTROLLER
+title: GPIO_CLIENT_STOP_CONTROLLER
+author: windows-driver-content
+description: The CLIENT_StopController event callback function performs operations that are needed to prepare the general-purpose I/O (GPIO) controller device to exit the D0 power state.
+old-location: gpio\client_stopcontroller.htm
+old-project: GPIO
+ms.assetid: 4B1A33AC-E341-478E-8C1E-94F4473A191C
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: GPIO.client_stopcontroller, CLIENT_StopController callback function [Parallel Ports], CLIENT_StopController, GPIO_CLIENT_STOP_CONTROLLER, GPIO_CLIENT_STOP_CONTROLLER, gpioclx/CLIENT_StopController
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: gpioclx.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Supported starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Called at PASSIVE_LEVEL.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Gpioclx.h
+apiname:
+-	CLIENT_StopController
+product: Windows
+targetos: Windows
+req.typenames: "*PGNSS_V2UPL_NI_INFO, GNSS_V2UPL_NI_INFO"
 ---
 
 

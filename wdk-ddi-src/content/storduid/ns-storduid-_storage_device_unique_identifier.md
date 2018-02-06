@@ -1,42 +1,47 @@
 ---
-UID : NS:storduid._STORAGE_DEVICE_UNIQUE_IDENTIFIER
-title : "_STORAGE_DEVICE_UNIQUE_IDENTIFIER"
-author : windows-driver-content
-description : The STORAGE_DEVICE_UNIQUE_IDENTIFIER structure defines a device unique identifier (DUID).
-old-location : storage\storage_device_unique_identifier.htm
-old-project : storage
-ms.assetid : 02de3382-031a-4d42-b349-786248da9c5c
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : PSTORAGE_DEVICE_UNIQUE_IDENTIFIER, structs-general_ed4e22dc-a5cb-4746-a846-cbae5e8d7ce8.xml, _STORAGE_DEVICE_UNIQUE_IDENTIFIER, *PSTORAGE_DEVICE_UNIQUE_IDENTIFIER, PSTORAGE_DEVICE_UNIQUE_IDENTIFIER structure pointer [Storage Devices], STORAGE_DEVICE_UNIQUE_IDENTIFIER structure [Storage Devices], STORAGE_DEVICE_UNIQUE_IDENTIFIER, storage.storage_device_unique_identifier, storduid/PSTORAGE_DEVICE_UNIQUE_IDENTIFIER, storduid/STORAGE_DEVICE_UNIQUE_IDENTIFIER
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : storduid.h
-req.include-header : Storduid.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSTORAGE_DEVICE_UNIQUE_IDENTIFIER, STORAGE_DEVICE_UNIQUE_IDENTIFIER"
-req.product : Windows 10 or later.
+UID: NS:storduid._STORAGE_DEVICE_UNIQUE_IDENTIFIER
+title: "_STORAGE_DEVICE_UNIQUE_IDENTIFIER"
+author: windows-driver-content
+description: The STORAGE_DEVICE_UNIQUE_IDENTIFIER structure defines a device unique identifier (DUID).
+old-location: storage\storage_device_unique_identifier.htm
+old-project: storage
+ms.assetid: 02de3382-031a-4d42-b349-786248da9c5c
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: PSTORAGE_DEVICE_UNIQUE_IDENTIFIER, structs-general_ed4e22dc-a5cb-4746-a846-cbae5e8d7ce8.xml, _STORAGE_DEVICE_UNIQUE_IDENTIFIER, *PSTORAGE_DEVICE_UNIQUE_IDENTIFIER, PSTORAGE_DEVICE_UNIQUE_IDENTIFIER structure pointer [Storage Devices], STORAGE_DEVICE_UNIQUE_IDENTIFIER structure [Storage Devices], STORAGE_DEVICE_UNIQUE_IDENTIFIER, storage.storage_device_unique_identifier, storduid/PSTORAGE_DEVICE_UNIQUE_IDENTIFIER, storduid/STORAGE_DEVICE_UNIQUE_IDENTIFIER
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: storduid.h
+req.include-header: Storduid.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	storduid.h
+apiname:
+-	STORAGE_DEVICE_UNIQUE_IDENTIFIER
+product: Windows
+targetos: Windows
+req.typenames: "*PSTORAGE_DEVICE_UNIQUE_IDENTIFIER, STORAGE_DEVICE_UNIQUE_IDENTIFIER"
+req.product: Windows 10 or later.
 ---
 
 # _STORAGE_DEVICE_UNIQUE_IDENTIFIER structure

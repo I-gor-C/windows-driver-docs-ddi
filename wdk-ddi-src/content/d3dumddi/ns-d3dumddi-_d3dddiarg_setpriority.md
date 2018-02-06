@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._D3DDDIARG_SETPRIORITY
-title : "_D3DDDIARG_SETPRIORITY"
-author : windows-driver-content
-description : The D3DDDIARG_SETPRIORITY structure describes the priority level to set for a managed texture.
-old-location : display\d3dddiarg_setpriority.htm
-old-project : display
-ms.assetid : d3dd52de-6d28-4d71-9b64-ba79e17bd9ee
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.d3dddiarg_setpriority, D3DDDIARG_SETPRIORITY, _D3DDDIARG_SETPRIORITY, UMDisplayDriver_param_Structs_e416cff1-5cad-4488-a3e2-ea0b42a7cd81.xml, d3dumddi/D3DDDIARG_SETPRIORITY, D3DDDIARG_SETPRIORITY structure [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDIARG_SETPRIORITY
+UID: NS:d3dumddi._D3DDDIARG_SETPRIORITY
+title: "_D3DDDIARG_SETPRIORITY"
+author: windows-driver-content
+description: The D3DDDIARG_SETPRIORITY structure describes the priority level to set for a managed texture.
+old-location: display\d3dddiarg_setpriority.htm
+old-project: display
+ms.assetid: d3dd52de-6d28-4d71-9b64-ba79e17bd9ee
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.d3dddiarg_setpriority, D3DDDIARG_SETPRIORITY, _D3DDDIARG_SETPRIORITY, UMDisplayDriver_param_Structs_e416cff1-5cad-4488-a3e2-ea0b42a7cd81.xml, d3dumddi/D3DDDIARG_SETPRIORITY, D3DDDIARG_SETPRIORITY structure [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	D3DDDIARG_SETPRIORITY
+product: Windows
+targetos: Windows
+req.typenames: D3DDDIARG_SETPRIORITY
 ---
 
 # _D3DDDIARG_SETPRIORITY structure

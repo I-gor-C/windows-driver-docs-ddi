@@ -1,41 +1,47 @@
 ---
-UID : NF:fwpsk.FwpsInjectForwardAsync0
-title : FwpsInjectForwardAsync0 function
-author : windows-driver-content
-description : The FwpsInjectForwardAsync0 function injects packet data into the forwarding data path.Note  FwpsInjectForwardAsync0 is a specific version of FwpsInjectForwardAsync.
-old-location : netvista\fwpsinjectforwardasync0.htm
-old-project : netvista
-ms.assetid : b7cb70c6-c672-4a29-983c-c73767af72ea
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.fwpsinjectforwardasync0, fwpsk/FwpsInjectForwardAsync0, wfp_ref_2_funct_3_fwps_I_3aa5a7a1-da9d-478e-b8fe-0effc99a1fa5.xml, FwpsInjectForwardAsync0 function [Network Drivers Starting with Windows Vista], FwpsInjectForwardAsync0
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fwpsk.h
-req.include-header : Fwpsk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Fwpkclnt.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FWPS_VSWITCH_EVENT_TYPE
+UID: NF:fwpsk.FwpsInjectForwardAsync0
+title: FwpsInjectForwardAsync0 function
+author: windows-driver-content
+description: The FwpsInjectForwardAsync0 function injects packet data into the forwarding data path.Note  FwpsInjectForwardAsync0 is a specific version of FwpsInjectForwardAsync.
+old-location: netvista\fwpsinjectforwardasync0.htm
+old-project: netvista
+ms.assetid: b7cb70c6-c672-4a29-983c-c73767af72ea
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.fwpsinjectforwardasync0, fwpsk/FwpsInjectForwardAsync0, wfp_ref_2_funct_3_fwps_I_3aa5a7a1-da9d-478e-b8fe-0effc99a1fa5.xml, FwpsInjectForwardAsync0 function [Network Drivers Starting with Windows Vista], FwpsInjectForwardAsync0
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fwpsk.h
+req.include-header: Fwpsk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Fwpkclnt.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	fwpkclnt.lib
+-	fwpkclnt.dll
+apiname:
+-	FwpsInjectForwardAsync0
+product: Windows
+targetos: Windows
+req.typenames: FWPS_VSWITCH_EVENT_TYPE
 ---
 
 

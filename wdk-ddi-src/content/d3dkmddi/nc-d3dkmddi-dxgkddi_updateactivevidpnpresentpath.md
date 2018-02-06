@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dkmddi.DXGKDDI_UPDATEACTIVEVIDPNPRESENTPATH
-title : DXGKDDI_UPDATEACTIVEVIDPNPRESENTPATH
-author : windows-driver-content
-description : The DxgkDdiUpdateActiveVidPnPresentPath function updates one of the video present paths that is currently active on the display adapter.
-old-location : display\dxgkddiupdateactivevidpnpresentpath.htm
-old-project : display
-ms.assetid : 3bf5ebf7-8113-4ab2-beb1-1a52df25ac37
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkddiupdateactivevidpnpresentpath, DxgkDdiUpdateActiveVidPnPresentPath callback function [Display Devices], DxgkDdiUpdateActiveVidPnPresentPath, DXGKDDI_UPDATEACTIVEVIDPNPRESENTPATH, DXGKDDI_UPDATEACTIVEVIDPNPRESENTPATH, d3dkmddi/DxgkDdiUpdateActiveVidPnPresentPath, DmFunctions_837597a1-a23e-4aa9-b219-b1f69eb58ed1.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dkmddi.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
+UID: NC:d3dkmddi.DXGKDDI_UPDATEACTIVEVIDPNPRESENTPATH
+title: DXGKDDI_UPDATEACTIVEVIDPNPRESENTPATH
+author: windows-driver-content
+description: The DxgkDdiUpdateActiveVidPnPresentPath function updates one of the video present paths that is currently active on the display adapter.
+old-location: display\dxgkddiupdateactivevidpnpresentpath.htm
+old-project: display
+ms.assetid: 3bf5ebf7-8113-4ab2-beb1-1a52df25ac37
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkddiupdateactivevidpnpresentpath, DxgkDdiUpdateActiveVidPnPresentPath callback function [Display Devices], DxgkDdiUpdateActiveVidPnPresentPath, DXGKDDI_UPDATEACTIVEVIDPNPRESENTPATH, DXGKDDI_UPDATEACTIVEVIDPNPRESENTPATH, d3dkmddi/DxgkDdiUpdateActiveVidPnPresentPath, DmFunctions_837597a1-a23e-4aa9-b219-b1f69eb58ed1.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dkmddi.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DxgkDdiUpdateActiveVidPnPresentPath
+product: Windows
+targetos: Windows
+req.typenames: DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddser.IOCTL_SERENUM_GET_PORT_NAME
-title : IOCTL_SERENUM_GET_PORT_NAME
-author : windows-driver-content
-description : The IOCTL_SERENUM_GET_PORT_NAME request returns the value of the PortName (or Identifier) entry value for the RS-232 port -- see Registry Settings for a Plug and Play Serial Device.
-old-location : serports\ioctl_serenum_get_port_name.htm
-old-project : serports
-ms.assetid : c61bc594-91be-418f-9e40-ebe99e31304f
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : serports.ioctl_serenum_get_port_name, IOCTL_SERENUM_GET_PORT_NAME control code [Serial Ports], IOCTL_SERENUM_GET_PORT_NAME, ntddser/IOCTL_SERENUM_GET_PORT_NAME, senumref_448bb4bf-eda4-4fbc-abb6-5f470d07861e.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddser.h
-req.include-header : Ntddser.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SD_REQUEST_FUNCTION
+UID: NI:ntddser.IOCTL_SERENUM_GET_PORT_NAME
+title: IOCTL_SERENUM_GET_PORT_NAME
+author: windows-driver-content
+description: The IOCTL_SERENUM_GET_PORT_NAME request returns the value of the PortName (or Identifier) entry value for the RS-232 port -- see Registry Settings for a Plug and Play Serial Device.
+old-location: serports\ioctl_serenum_get_port_name.htm
+old-project: serports
+ms.assetid: c61bc594-91be-418f-9e40-ebe99e31304f
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: serports.ioctl_serenum_get_port_name, IOCTL_SERENUM_GET_PORT_NAME control code [Serial Ports], IOCTL_SERENUM_GET_PORT_NAME, ntddser/IOCTL_SERENUM_GET_PORT_NAME, senumref_448bb4bf-eda4-4fbc-abb6-5f470d07861e.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddser.h
+req.include-header: Ntddser.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddser.h
+apiname:
+-	IOCTL_SERENUM_GET_PORT_NAME
+product: Windows
+targetos: Windows
+req.typenames: SD_REQUEST_FUNCTION
 ---
 
 # IOCTL_SERENUM_GET_PORT_NAME IOCTL

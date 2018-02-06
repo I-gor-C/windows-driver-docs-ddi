@@ -1,41 +1,46 @@
 ---
-UID : NS:ks.KSPROPERTY_ITEM
-title : KSPROPERTY_ITEM
-author : windows-driver-content
-description : Drivers use the KSPROPERTY_ITEM structure to describe how they support a property in a property set.
-old-location : stream\ksproperty_item.htm
-old-project : stream
-ms.assetid : 58530a72-6e07-44f5-9d7d-04bc37ff1ec9
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ks/KSPROPERTY_ITEM, ks/PKSPROPERTY_ITEM, PKSPROPERTY_ITEM structure pointer [Streaming Media Devices], ks-struct_ae02482e-27d1-4485-8fe2-3b9a7393c683.xml, PKSPROPERTY_ITEM, KSPROPERTY_ITEM structure [Streaming Media Devices], stream.ksproperty_item, KSPROPERTY_ITEM, *PKSPROPERTY_ITEM
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KSPROPERTY_ITEM, *PKSPROPERTY_ITEM
+UID: NS:ks.KSPROPERTY_ITEM
+title: KSPROPERTY_ITEM
+author: windows-driver-content
+description: Drivers use the KSPROPERTY_ITEM structure to describe how they support a property in a property set.
+old-location: stream\ksproperty_item.htm
+old-project: stream
+ms.assetid: 58530a72-6e07-44f5-9d7d-04bc37ff1ec9
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ks/KSPROPERTY_ITEM, ks/PKSPROPERTY_ITEM, PKSPROPERTY_ITEM structure pointer [Streaming Media Devices], ks-struct_ae02482e-27d1-4485-8fe2-3b9a7393c683.xml, PKSPROPERTY_ITEM, KSPROPERTY_ITEM structure [Streaming Media Devices], stream.ksproperty_item, KSPROPERTY_ITEM, *PKSPROPERTY_ITEM
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	KSPROPERTY_ITEM
+product: Windows
+targetos: Windows
+req.typenames: KSPROPERTY_ITEM, *PKSPROPERTY_ITEM
 ---
 
 # KSPROPERTY_ITEM structure

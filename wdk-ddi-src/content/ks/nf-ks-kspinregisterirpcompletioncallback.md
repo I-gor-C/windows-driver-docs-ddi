@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsPinRegisterIrpCompletionCallback
-title : KsPinRegisterIrpCompletionCallback function
-author : windows-driver-content
-description : The KsPinRegisterIrpCompletionCallback function registers a minidriver-defined callback routine for a specified pin.
-old-location : stream\kspinregisterirpcompletioncallback.htm
-old-project : stream
-ms.assetid : d2872ea2-565b-47db-8054-876fd3c8fc4d
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : avfunc_ab906fd4-c863-467e-828e-34316fb65269.xml, KsPinRegisterIrpCompletionCallback function [Streaming Media Devices], ks/KsPinRegisterIrpCompletionCallback, stream.kspinregisterirpcompletioncallback, KsPinRegisterIrpCompletionCallback
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsPinRegisterIrpCompletionCallback
+title: KsPinRegisterIrpCompletionCallback function
+author: windows-driver-content
+description: The KsPinRegisterIrpCompletionCallback function registers a minidriver-defined callback routine for a specified pin.
+old-location: stream\kspinregisterirpcompletioncallback.htm
+old-project: stream
+ms.assetid: d2872ea2-565b-47db-8054-876fd3c8fc4d
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: avfunc_ab906fd4-c863-467e-828e-34316fb65269.xml, KsPinRegisterIrpCompletionCallback function [Streaming Media Devices], ks/KsPinRegisterIrpCompletionCallback, stream.kspinregisterirpcompletioncallback, KsPinRegisterIrpCompletionCallback
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsPinRegisterIrpCompletionCallback
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

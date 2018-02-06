@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugAdvanced3.GetThreadContext
-title : IDebugAdvanced3::GetThreadContext method
-author : windows-driver-content
-description : The GetThreadContext method returns the current thread context.
-old-location : debugger\getthreadcontext.htm
-old-project : debugger
-ms.assetid : 6fe12f3b-b241-42e4-b35d-c8a485a5cfa8
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugAdvanced_1a044a89-612f-4a3c-b3cd-0a715ae6af92.xml, GetThreadContext method [Windows Debugging], IDebugAdvanced interface, dbgeng/IDebugAdvanced::GetThreadContext, IDebugAdvanced2 interface [Windows Debugging], GetThreadContext method, IDebugAdvanced3, IDebugAdvanced2::GetThreadContext, GetThreadContext method [Windows Debugging], IDebugAdvanced3 interface, IDebugAdvanced3::GetThreadContext, IDebugAdvanced interface [Windows Debugging], GetThreadContext method, dbgeng/IDebugAdvanced2::GetThreadContext, IDebugAdvanced3 interface [Windows Debugging], GetThreadContext method, debugger.getthreadcontext, GetThreadContext method [Windows Debugging], GetThreadContext method [Windows Debugging], IDebugAdvanced2 interface, IDebugAdvanced::GetThreadContext, GetThreadContext, dbgeng/IDebugAdvanced3::GetThreadContext
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h, Ntddk.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugAdvanced3.GetThreadContext
+title: IDebugAdvanced3::GetThreadContext method
+author: windows-driver-content
+description: The GetThreadContext method returns the current thread context.
+old-location: debugger\getthreadcontext.htm
+old-project: debugger
+ms.assetid: 6fe12f3b-b241-42e4-b35d-c8a485a5cfa8
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugAdvanced_1a044a89-612f-4a3c-b3cd-0a715ae6af92.xml, GetThreadContext method [Windows Debugging], IDebugAdvanced interface, dbgeng/IDebugAdvanced::GetThreadContext, IDebugAdvanced2 interface [Windows Debugging], GetThreadContext method, IDebugAdvanced3, IDebugAdvanced2::GetThreadContext, GetThreadContext method [Windows Debugging], IDebugAdvanced3 interface, IDebugAdvanced3::GetThreadContext, IDebugAdvanced interface [Windows Debugging], GetThreadContext method, dbgeng/IDebugAdvanced2::GetThreadContext, IDebugAdvanced3 interface [Windows Debugging], GetThreadContext method, debugger.getthreadcontext, GetThreadContext method [Windows Debugging], GetThreadContext method [Windows Debugging], IDebugAdvanced2 interface, IDebugAdvanced::GetThreadContext, GetThreadContext, dbgeng/IDebugAdvanced3::GetThreadContext
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h, Ntddk.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugAdvanced.GetThreadContext
+-	IDebugAdvanced2.GetThreadContext
+-	IDebugAdvanced3.GetThreadContext
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

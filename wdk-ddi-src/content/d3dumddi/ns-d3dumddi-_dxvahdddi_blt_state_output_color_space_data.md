@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._DXVAHDDDI_BLT_STATE_OUTPUT_COLOR_SPACE_DATA
-title : "_DXVAHDDDI_BLT_STATE_OUTPUT_COLOR_SPACE_DATA"
-author : windows-driver-content
-description : The DXVAHDDDI_BLT_STATE_OUTPUT_COLOR_SPACE_DATA structure describes data that specifies the color space of the output.
-old-location : display\dxvahdddi_blt_state_output_color_space_data.htm
-old-project : display
-ms.assetid : 411246a5-9486-4194-9fb1-4ec0ba1dd47b
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DXVAHDDDI_BLT_STATE_OUTPUT_COLOR_SPACE_DATA, DXVA2_Structs_87da73df-e65e-4c01-8294-1201215a8d7c.xml, DXVAHDDDI_BLT_STATE_OUTPUT_COLOR_SPACE_DATA structure [Display Devices], _DXVAHDDDI_BLT_STATE_OUTPUT_COLOR_SPACE_DATA, display.dxvahdddi_blt_state_output_color_space_data, d3dumddi/DXVAHDDDI_BLT_STATE_OUTPUT_COLOR_SPACE_DATA
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : DXVAHDDDI_BLT_STATE_OUTPUT_COLOR_SPACE_DATA is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXVAHDDDI_BLT_STATE_OUTPUT_COLOR_SPACE_DATA
+UID: NS:d3dumddi._DXVAHDDDI_BLT_STATE_OUTPUT_COLOR_SPACE_DATA
+title: "_DXVAHDDDI_BLT_STATE_OUTPUT_COLOR_SPACE_DATA"
+author: windows-driver-content
+description: The DXVAHDDDI_BLT_STATE_OUTPUT_COLOR_SPACE_DATA structure describes data that specifies the color space of the output.
+old-location: display\dxvahdddi_blt_state_output_color_space_data.htm
+old-project: display
+ms.assetid: 411246a5-9486-4194-9fb1-4ec0ba1dd47b
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DXVAHDDDI_BLT_STATE_OUTPUT_COLOR_SPACE_DATA, DXVA2_Structs_87da73df-e65e-4c01-8294-1201215a8d7c.xml, DXVAHDDDI_BLT_STATE_OUTPUT_COLOR_SPACE_DATA structure [Display Devices], _DXVAHDDDI_BLT_STATE_OUTPUT_COLOR_SPACE_DATA, display.dxvahdddi_blt_state_output_color_space_data, d3dumddi/DXVAHDDDI_BLT_STATE_OUTPUT_COLOR_SPACE_DATA
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: DXVAHDDDI_BLT_STATE_OUTPUT_COLOR_SPACE_DATA is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	DXVAHDDDI_BLT_STATE_OUTPUT_COLOR_SPACE_DATA
+product: Windows
+targetos: Windows
+req.typenames: DXVAHDDDI_BLT_STATE_OUTPUT_COLOR_SPACE_DATA
 ---
 
 # _DXVAHDDDI_BLT_STATE_OUTPUT_COLOR_SPACE_DATA structure

@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGKARG_GETMULTIPLANEOVERLAYCAPS
-title : "_DXGKARG_GETMULTIPLANEOVERLAYCAPS"
-author : windows-driver-content
-description : Arguments to the DxgkDdiGetMultiPlaneOverlayCaps function.
-old-location : display\dxgkarg_getmultiplaneoverlaycaps.htm
-old-project : display
-ms.assetid : 4792107C-BAAA-48B5-AC9A-829C05795303
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DXGKARG_GETMULTIPLANEOVERLAYCAPS structure [Display Devices], _DXGKARG_GETMULTIPLANEOVERLAYCAPS, DXGKARG_GETMULTIPLANEOVERLAYCAPS, display.dxgkarg_getmultiplaneoverlaycaps, *IN_OUT_PDXGKARG_GETMULTIPLANEOVERLAYCAPS, d3dkmddi/DXGKARG_GETMULTIPLANEOVERLAYCAPS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGKARG_GETMULTIPLANEOVERLAYCAPS
+UID: NS:d3dkmddi._DXGKARG_GETMULTIPLANEOVERLAYCAPS
+title: "_DXGKARG_GETMULTIPLANEOVERLAYCAPS"
+author: windows-driver-content
+description: Arguments to the DxgkDdiGetMultiPlaneOverlayCaps function.
+old-location: display\dxgkarg_getmultiplaneoverlaycaps.htm
+old-project: display
+ms.assetid: 4792107C-BAAA-48B5-AC9A-829C05795303
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DXGKARG_GETMULTIPLANEOVERLAYCAPS structure [Display Devices], _DXGKARG_GETMULTIPLANEOVERLAYCAPS, DXGKARG_GETMULTIPLANEOVERLAYCAPS, display.dxgkarg_getmultiplaneoverlaycaps, *IN_OUT_PDXGKARG_GETMULTIPLANEOVERLAYCAPS, d3dkmddi/DXGKARG_GETMULTIPLANEOVERLAYCAPS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DXGKARG_GETMULTIPLANEOVERLAYCAPS
+product: Windows
+targetos: Windows
+req.typenames: DXGKARG_GETMULTIPLANEOVERLAYCAPS
 ---
 
 # _DXGKARG_GETMULTIPLANEOVERLAYCAPS structure

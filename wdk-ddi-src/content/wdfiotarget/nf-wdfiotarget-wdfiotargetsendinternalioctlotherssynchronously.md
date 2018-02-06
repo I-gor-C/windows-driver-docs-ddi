@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfiotarget.WdfIoTargetSendInternalIoctlOthersSynchronously
-title : WdfIoTargetSendInternalIoctlOthersSynchronously function
-author : windows-driver-content
-description : The WdfIoTargetSendInternalIoctlOthersSynchronously method builds a non-standard internal device control request and sends it synchronously to an I/O target.
-old-location : wdf\wdfiotargetsendinternalioctlotherssynchronously.htm
-old-project : wdf
-ms.assetid : 53070b37-3836-49c2-91d1-369552afe214
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WdfIoTargetSendInternalIoctlOthersSynchronously, kmdf.wdfiotargetsendinternalioctlotherssynchronously, wdfiotarget/WdfIoTargetSendInternalIoctlOthersSynchronously, DFIOTargetRef_78072360-08c2-4a51-be52-8e00425c5ba2.xml, PFN_WDFIOTARGETSENDINTERNALIOCTLOTHERSSYNCHRONOUSLY, wdf.wdfiotargetsendinternalioctlotherssynchronously, WdfIoTargetSendInternalIoctlOthersSynchronously method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfiotarget.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : DeferredRequestCompleted, DriverCreate, IoctlReqs, KmdfIrql, KmdfIrql2, ReadReqs, RequestCompleted, RequestCompletedLocal, WriteReqs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDF_IO_TARGET_STATE, WDF_IO_TARGET_STATE"
-req.product : Windows 10 or later.
+UID: NF:wdfiotarget.WdfIoTargetSendInternalIoctlOthersSynchronously
+title: WdfIoTargetSendInternalIoctlOthersSynchronously function
+author: windows-driver-content
+description: The WdfIoTargetSendInternalIoctlOthersSynchronously method builds a non-standard internal device control request and sends it synchronously to an I/O target.
+old-location: wdf\wdfiotargetsendinternalioctlotherssynchronously.htm
+old-project: wdf
+ms.assetid: 53070b37-3836-49c2-91d1-369552afe214
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WdfIoTargetSendInternalIoctlOthersSynchronously, kmdf.wdfiotargetsendinternalioctlotherssynchronously, wdfiotarget/WdfIoTargetSendInternalIoctlOthersSynchronously, DFIOTargetRef_78072360-08c2-4a51-be52-8e00425c5ba2.xml, PFN_WDFIOTARGETSENDINTERNALIOCTLOTHERSSYNCHRONOUSLY, wdf.wdfiotargetsendinternalioctlotherssynchronously, WdfIoTargetSendInternalIoctlOthersSynchronously method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfiotarget.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: DeferredRequestCompleted, DriverCreate, IoctlReqs, KmdfIrql, KmdfIrql2, ReadReqs, RequestCompleted, RequestCompletedLocal, WriteReqs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfIoTargetSendInternalIoctlOthersSynchronously
+product: Windows
+targetos: Windows
+req.typenames: "*PWDF_IO_TARGET_STATE, WDF_IO_TARGET_STATE"
+req.product: Windows 10 or later.
 ---
 
 

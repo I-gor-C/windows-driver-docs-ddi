@@ -1,42 +1,47 @@
 ---
-UID : NC:video.PINT10_CALL_BIOS
-title : PINT10_CALL_BIOS
-author : windows-driver-content
-description : The Int10CallBios function allows a miniport driver to call the kernel to perform an INT 10h operation, causing the BIOS ROM code on the device to execute natively.
-old-location : display\int10callbios.htm
-old-project : display
-ms.assetid : 994a73bc-81a1-4d73-959c-cc89b242c073
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.int10callbios, Int10CallBios callback function [Display Devices], Int10CallBios, PINT10_CALL_BIOS, PINT10_CALL_BIOS, video/Int10CallBios, VideoPort_Functions_7a9921fa-ea1e-49fa-8881-ea0792d91123.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows 2000 and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VHF_CONFIG, *PVHF_CONFIG
-req.product : Windows 10 or later.
+UID: NC:video.PINT10_CALL_BIOS
+title: PINT10_CALL_BIOS
+author: windows-driver-content
+description: The Int10CallBios function allows a miniport driver to call the kernel to perform an INT 10h operation, causing the BIOS ROM code on the device to execute natively.
+old-location: display\int10callbios.htm
+old-project: display
+ms.assetid: 994a73bc-81a1-4d73-959c-cc89b242c073
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.int10callbios, Int10CallBios callback function [Display Devices], Int10CallBios, PINT10_CALL_BIOS, PINT10_CALL_BIOS, video/Int10CallBios, VideoPort_Functions_7a9921fa-ea1e-49fa-8881-ea0792d91123.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows 2000 and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	video.h
+apiname:
+-	Int10CallBios
+product: Windows
+targetos: Windows
+req.typenames: VHF_CONFIG, *PVHF_CONFIG
+req.product: Windows 10 or later.
 ---
 
 

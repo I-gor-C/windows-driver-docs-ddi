@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugControl3.GetBreakpointById
-title : IDebugControl3::GetBreakpointById method
-author : windows-driver-content
-description : The GetBreakpointById method returns the breakpoint with the specified breakpoint ID.
-old-location : debugger\getbreakpointbyid.htm
-old-project : debugger
-ms.assetid : 6873609d-7f5a-474d-8b48-fee9f93c812b
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugControl2::GetBreakpointById, dbgeng/IDebugControl3::GetBreakpointById, IDebugControl3, GetBreakpointById, IDebugControl_641f8e32-6c08-4b63-89c6-877b52a86ab2.xml, dbgeng/IDebugControl2::GetBreakpointById, GetBreakpointById method [Windows Debugging], dbgeng/IDebugControl::GetBreakpointById, IDebugControl3 interface [Windows Debugging], GetBreakpointById method, debugger.getbreakpointbyid, IDebugControl3::GetBreakpointById, GetBreakpointById method [Windows Debugging], IDebugControl3 interface, IDebugControl::GetBreakpointById, IDebugControl2 interface [Windows Debugging], GetBreakpointById method, GetBreakpointById method [Windows Debugging], IDebugControl interface, GetBreakpointById method [Windows Debugging], IDebugControl2 interface, IDebugControl interface [Windows Debugging], GetBreakpointById method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl3.GetBreakpointById
+title: IDebugControl3::GetBreakpointById method
+author: windows-driver-content
+description: The GetBreakpointById method returns the breakpoint with the specified breakpoint ID.
+old-location: debugger\getbreakpointbyid.htm
+old-project: debugger
+ms.assetid: 6873609d-7f5a-474d-8b48-fee9f93c812b
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugControl2::GetBreakpointById, dbgeng/IDebugControl3::GetBreakpointById, IDebugControl3, GetBreakpointById, IDebugControl_641f8e32-6c08-4b63-89c6-877b52a86ab2.xml, dbgeng/IDebugControl2::GetBreakpointById, GetBreakpointById method [Windows Debugging], dbgeng/IDebugControl::GetBreakpointById, IDebugControl3 interface [Windows Debugging], GetBreakpointById method, debugger.getbreakpointbyid, IDebugControl3::GetBreakpointById, GetBreakpointById method [Windows Debugging], IDebugControl3 interface, IDebugControl::GetBreakpointById, IDebugControl2 interface [Windows Debugging], GetBreakpointById method, GetBreakpointById method [Windows Debugging], IDebugControl interface, GetBreakpointById method [Windows Debugging], IDebugControl2 interface, IDebugControl interface [Windows Debugging], GetBreakpointById method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl.GetBreakpointById
+-	IDebugControl2.GetBreakpointById
+-	IDebugControl3.GetBreakpointById
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

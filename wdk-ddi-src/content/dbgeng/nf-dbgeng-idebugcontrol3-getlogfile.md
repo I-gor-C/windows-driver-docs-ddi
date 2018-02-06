@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugControl3.GetLogFile
-title : IDebugControl3::GetLogFile method
-author : windows-driver-content
-description : The GetLogFile method returns the name of the currently open log file.
-old-location : debugger\getlogfile.htm
-old-project : debugger
-ms.assetid : 9d71a817-55b5-4042-8de8-15b23e51dffd
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : dbgeng/IDebugControl::GetLogFile, IDebugControl3 interface [Windows Debugging], GetLogFile method, IDebugControl_cad2fa56-b2ca-4a26-822e-193acf602913.xml, dbgeng/IDebugControl3::GetLogFile, GetLogFile, debugger.getlogfile, IDebugControl3, GetLogFile method [Windows Debugging], IDebugControl::GetLogFile, GetLogFile method [Windows Debugging], IDebugControl2 interface, IDebugControl2 interface [Windows Debugging], GetLogFile method, IDebugControl2::GetLogFile, IDebugControl interface [Windows Debugging], GetLogFile method, GetLogFile method [Windows Debugging], IDebugControl3 interface, dbgeng/IDebugControl2::GetLogFile, IDebugControl3::GetLogFile, GetLogFile method [Windows Debugging], IDebugControl interface
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl3.GetLogFile
+title: IDebugControl3::GetLogFile method
+author: windows-driver-content
+description: The GetLogFile method returns the name of the currently open log file.
+old-location: debugger\getlogfile.htm
+old-project: debugger
+ms.assetid: 9d71a817-55b5-4042-8de8-15b23e51dffd
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: dbgeng/IDebugControl::GetLogFile, IDebugControl3 interface [Windows Debugging], GetLogFile method, IDebugControl_cad2fa56-b2ca-4a26-822e-193acf602913.xml, dbgeng/IDebugControl3::GetLogFile, GetLogFile, debugger.getlogfile, IDebugControl3, GetLogFile method [Windows Debugging], IDebugControl::GetLogFile, GetLogFile method [Windows Debugging], IDebugControl2 interface, IDebugControl2 interface [Windows Debugging], GetLogFile method, IDebugControl2::GetLogFile, IDebugControl interface [Windows Debugging], GetLogFile method, GetLogFile method [Windows Debugging], IDebugControl3 interface, dbgeng/IDebugControl2::GetLogFile, IDebugControl3::GetLogFile, GetLogFile method [Windows Debugging], IDebugControl interface
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl.GetLogFile
+-	IDebugControl2.GetLogFile
+-	IDebugControl3.GetLogFile
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

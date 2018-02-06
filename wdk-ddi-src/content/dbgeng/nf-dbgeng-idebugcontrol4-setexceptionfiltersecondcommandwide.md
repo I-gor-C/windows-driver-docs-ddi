@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugControl4.SetExceptionFilterSecondCommandWide
-title : IDebugControl4::SetExceptionFilterSecondCommandWide method
-author : windows-driver-content
-description : The SetExceptionFilterSecondCommandWide method sets the command that will be executed by the debugger engine on the second chance of a specified exception.
-old-location : debugger\setexceptionfiltersecondcommandwide.htm
-old-project : debugger
-ms.assetid : cbc0e98b-eac7-441d-b2b5-512725403210
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : SetExceptionFilterSecondCommandWide method [Windows Debugging], IDebugControl4 interface, SetExceptionFilterSecondCommandWide method [Windows Debugging], IDebugControl4::SetExceptionFilterSecondCommandWide, IDebugControl4 interface [Windows Debugging], SetExceptionFilterSecondCommandWide method, dbgeng/IDebugControl4::SetExceptionFilterSecondCommandWide, SetExceptionFilterSecondCommandWide, IDebugControl4, debugger.setexceptionfiltersecondcommandwide
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl4.SetExceptionFilterSecondCommandWide
+title: IDebugControl4::SetExceptionFilterSecondCommandWide method
+author: windows-driver-content
+description: The SetExceptionFilterSecondCommandWide method sets the command that will be executed by the debugger engine on the second chance of a specified exception.
+old-location: debugger\setexceptionfiltersecondcommandwide.htm
+old-project: debugger
+ms.assetid: cbc0e98b-eac7-441d-b2b5-512725403210
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: SetExceptionFilterSecondCommandWide method [Windows Debugging], IDebugControl4 interface, SetExceptionFilterSecondCommandWide method [Windows Debugging], IDebugControl4::SetExceptionFilterSecondCommandWide, IDebugControl4 interface [Windows Debugging], SetExceptionFilterSecondCommandWide method, dbgeng/IDebugControl4::SetExceptionFilterSecondCommandWide, SetExceptionFilterSecondCommandWide, IDebugControl4, debugger.setexceptionfiltersecondcommandwide
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl4.SetExceptionFilterSecondCommandWide
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

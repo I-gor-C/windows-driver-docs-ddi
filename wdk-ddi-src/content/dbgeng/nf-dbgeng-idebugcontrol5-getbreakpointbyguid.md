@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugControl5.GetBreakpointByGuid
-title : IDebugControl5::GetBreakpointByGuid method
-author : windows-driver-content
-description : The GetBreakpointByGuid method returns the breakpoint with the specified breakpoint GUID.
-old-location : debugger\idebugcontrol5_getbreakpointbyguid.htm
-old-project : debugger
-ms.assetid : AC316591-CCF9-4040-B1A3-29AB2033B673
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : debugger.idebugcontrol5_getbreakpointbyguid, dbgeng/IDebugControl5::GetBreakpointByGuid, GetBreakpointByGuid method [Windows Debugging], IDebugControl5 interface, GetBreakpointByGuid method [Windows Debugging], IDebugControl5, IDebugControl5 interface [Windows Debugging], GetBreakpointByGuid method, GetBreakpointByGuid, IDebugControl5::GetBreakpointByGuid
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl5.GetBreakpointByGuid
+title: IDebugControl5::GetBreakpointByGuid method
+author: windows-driver-content
+description: The GetBreakpointByGuid method returns the breakpoint with the specified breakpoint GUID.
+old-location: debugger\idebugcontrol5_getbreakpointbyguid.htm
+old-project: debugger
+ms.assetid: AC316591-CCF9-4040-B1A3-29AB2033B673
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: debugger.idebugcontrol5_getbreakpointbyguid, dbgeng/IDebugControl5::GetBreakpointByGuid, GetBreakpointByGuid method [Windows Debugging], IDebugControl5 interface, GetBreakpointByGuid method [Windows Debugging], IDebugControl5, IDebugControl5 interface [Windows Debugging], GetBreakpointByGuid method, GetBreakpointByGuid, IDebugControl5::GetBreakpointByGuid
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl5.GetBreakpointByGuid
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

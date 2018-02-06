@@ -1,42 +1,47 @@
 ---
-UID : NF:video.VideoPortStartTimer
-title : VideoPortStartTimer function
-author : windows-driver-content
-description : The VideoPortStartTimer function enables calls to a miniport driver's HwVidTimer function.
-old-location : display\videoportstarttimer.htm
-old-project : display
-ms.assetid : d06ae137-d7e8-4e17-82fb-37e5c5e8ad1e
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : video/VideoPortStartTimer, VideoPort_Functions_1efc50e1-c79e-4ee2-acdf-35cdea97a3b9.xml, VideoPortStartTimer, display.videoportstarttimer, VideoPortStartTimer function [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows 2000 and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Videoprt.lib
-req.dll : Videoprt.sys
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_PORT_SERVICES
-req.product : Windows 10 or later.
+UID: NF:video.VideoPortStartTimer
+title: VideoPortStartTimer function
+author: windows-driver-content
+description: The VideoPortStartTimer function enables calls to a miniport driver's HwVidTimer function.
+old-location: display\videoportstarttimer.htm
+old-project: display
+ms.assetid: d06ae137-d7e8-4e17-82fb-37e5c5e8ad1e
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: video/VideoPortStartTimer, VideoPort_Functions_1efc50e1-c79e-4ee2-acdf-35cdea97a3b9.xml, VideoPortStartTimer, display.videoportstarttimer, VideoPortStartTimer function [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows 2000 and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Videoprt.lib
+req.dll: Videoprt.sys
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Videoprt.sys
+apiname:
+-	VideoPortStartTimer
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_PORT_SERVICES
+req.product: Windows 10 or later.
 ---
 
 

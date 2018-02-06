@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsFreeObjectBag
-title : KsFreeObjectBag function
-author : windows-driver-content
-description : The KsFreeObjectBag function empties and frees an object bag.
-old-location : stream\ksfreeobjectbag.htm
-old-project : stream
-ms.assetid : d0bc4e8b-b173-4568-8c0f-7b87fd84e2cf
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.ksfreeobjectbag, ks/KsFreeObjectBag, KsFreeObjectBag, KsFreeObjectBag function [Streaming Media Devices], avfunc_f91aca67-5d6c-42f7-9e24-3b15b54c2b69.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsFreeObjectBag
+title: KsFreeObjectBag function
+author: windows-driver-content
+description: The KsFreeObjectBag function empties and frees an object bag.
+old-location: stream\ksfreeobjectbag.htm
+old-project: stream
+ms.assetid: d0bc4e8b-b173-4568-8c0f-7b87fd84e2cf
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.ksfreeobjectbag, ks/KsFreeObjectBag, KsFreeObjectBag, KsFreeObjectBag function [Streaming Media Devices], avfunc_f91aca67-5d6c-42f7-9e24-3b15b54c2b69.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsFreeObjectBag
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

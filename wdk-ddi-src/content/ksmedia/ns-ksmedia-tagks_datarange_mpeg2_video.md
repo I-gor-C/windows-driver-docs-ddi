@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.tagKS_DATARANGE_MPEG2_VIDEO
-title : tagKS_DATARANGE_MPEG2_VIDEO
-author : windows-driver-content
-description : The KS_DATARANGE_MPEG2_VIDEO structure describes the range of MPEG-2 video formats available for a stream.
-old-location : stream\ks_datarange_mpeg2_video.htm
-old-project : stream
-ms.assetid : ed29c80a-7a42-46e3-8a18-d66dfddb9659
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : vidcapstruct_91d79090-6aa2-4037-8436-7cb21d242e72.xml, ksmedia/KS_DATARANGE_MPEG2_VIDEO, ksmedia/PKS_DATARANGE_MPEG2_VIDEO, PKS_DATARANGE_MPEG2_VIDEO structure pointer [Streaming Media Devices], *PKS_DATARANGE_MPEG2_VIDEO, PKS_DATARANGE_MPEG2_VIDEO, tagKS_DATARANGE_MPEG2_VIDEO, KS_DATARANGE_MPEG2_VIDEO structure [Streaming Media Devices], KS_DATARANGE_MPEG2_VIDEO, stream.ks_datarange_mpeg2_video
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKS_DATARANGE_MPEG2_VIDEO, KS_DATARANGE_MPEG2_VIDEO"
+UID: NS:ksmedia.tagKS_DATARANGE_MPEG2_VIDEO
+title: tagKS_DATARANGE_MPEG2_VIDEO
+author: windows-driver-content
+description: The KS_DATARANGE_MPEG2_VIDEO structure describes the range of MPEG-2 video formats available for a stream.
+old-location: stream\ks_datarange_mpeg2_video.htm
+old-project: stream
+ms.assetid: ed29c80a-7a42-46e3-8a18-d66dfddb9659
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: vidcapstruct_91d79090-6aa2-4037-8436-7cb21d242e72.xml, ksmedia/KS_DATARANGE_MPEG2_VIDEO, ksmedia/PKS_DATARANGE_MPEG2_VIDEO, PKS_DATARANGE_MPEG2_VIDEO structure pointer [Streaming Media Devices], *PKS_DATARANGE_MPEG2_VIDEO, PKS_DATARANGE_MPEG2_VIDEO, tagKS_DATARANGE_MPEG2_VIDEO, KS_DATARANGE_MPEG2_VIDEO structure [Streaming Media Devices], KS_DATARANGE_MPEG2_VIDEO, stream.ks_datarange_mpeg2_video
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	KS_DATARANGE_MPEG2_VIDEO
+product: Windows
+targetos: Windows
+req.typenames: "*PKS_DATARANGE_MPEG2_VIDEO, KS_DATARANGE_MPEG2_VIDEO"
 ---
 
 # tagKS_DATARANGE_MPEG2_VIDEO structure

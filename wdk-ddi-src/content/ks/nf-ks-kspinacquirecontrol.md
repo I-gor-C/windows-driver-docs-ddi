@@ -1,41 +1,46 @@
 ---
-UID : NF:ks.KsPinAcquireControl
-title : KsPinAcquireControl function
-author : windows-driver-content
-description : The KsPinAcquireControl function acquires the control mutex for the AVStream pin specified by Pin.
-old-location : stream\kspinacquirecontrol.htm
-old-project : stream
-ms.assetid : 05ff1829-8305-4bc4-be22-233d391a5dc0
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ks/KsPinAcquireControl, avfunc_fd5d1466-6403-42cf-aab7-d044014c4abf.xml, KsPinAcquireControl, KsPinAcquireControl function [Streaming Media Devices], stream.kspinacquirecontrol
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsPinAcquireControl
+title: KsPinAcquireControl function
+author: windows-driver-content
+description: The KsPinAcquireControl function acquires the control mutex for the AVStream pin specified by Pin.
+old-location: stream\kspinacquirecontrol.htm
+old-project: stream
+ms.assetid: 05ff1829-8305-4bc4-be22-233d391a5dc0
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ks/KsPinAcquireControl, avfunc_fd5d1466-6403-42cf-aab7-d044014c4abf.xml, KsPinAcquireControl, KsPinAcquireControl function [Streaming Media Devices], stream.kspinacquirecontrol
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	KsPinAcquireControl
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

@@ -1,42 +1,48 @@
 ---
-UID : NF:swenum.KsInstallBusEnumInterface
-title : KsInstallBusEnumInterface function
-author : windows-driver-content
-description : The KsInstallBusEnumInterface function installs an interface to the demand-load bus enumerator object.
-old-location : stream\ksinstallbusenuminterface.htm
-old-project : stream
-ms.assetid : d9703786-c46e-4466-a229-9ed0348cb45e
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : swenum/KsInstallBusEnumInterface, ksfunc_6c26cb96-610b-4030-9f9b-ef878fdfe086.xml, KsInstallBusEnumInterface, stream.ksinstallbusenuminterface, KsInstallBusEnumInterface function [Streaming Media Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : swenum.h
-req.include-header : Swenum.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STREAM_TIME_REFERENCE, *PSTREAM_TIME_REFERENCE
-req.product : Windows 10 or later.
+UID: NF:swenum.KsInstallBusEnumInterface
+title: KsInstallBusEnumInterface function
+author: windows-driver-content
+description: The KsInstallBusEnumInterface function installs an interface to the demand-load bus enumerator object.
+old-location: stream\ksinstallbusenuminterface.htm
+old-project: stream
+ms.assetid: d9703786-c46e-4466-a229-9ed0348cb45e
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: swenum/KsInstallBusEnumInterface, ksfunc_6c26cb96-610b-4030-9f9b-ef878fdfe086.xml, KsInstallBusEnumInterface, stream.ksinstallbusenuminterface, KsInstallBusEnumInterface function [Streaming Media Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: swenum.h
+req.include-header: Swenum.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsInstallBusEnumInterface
+product: Windows
+targetos: Windows
+req.typenames: STREAM_TIME_REFERENCE, *PSTREAM_TIME_REFERENCE
+req.product: Windows 10 or later.
 ---
 
 

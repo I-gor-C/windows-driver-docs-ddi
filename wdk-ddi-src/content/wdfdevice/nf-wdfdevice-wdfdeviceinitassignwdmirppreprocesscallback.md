@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfdevice.WdfDeviceInitAssignWdmIrpPreprocessCallback
-title : WdfDeviceInitAssignWdmIrpPreprocessCallback function
-author : windows-driver-content
-description : The WdfDeviceInitAssignWdmIrpPreprocessCallback method registers a callback function to handle an IRP major function code and, optionally, one or more minor function codes that are associated with the major function code.
-old-location : wdf\wdfdeviceinitassignwdmirppreprocesscallback.htm
-old-project : wdf
-ms.assetid : 9c17a5e2-dcf2-493a-9851-11d47adbfc82
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdfdevice/WdfDeviceInitAssignWdmIrpPreprocessCallback, wdf.wdfdeviceinitassignwdmirppreprocesscallback, WdfDeviceInitAssignWdmIrpPreprocessCallback, PFN_WDFDEVICEINITASSIGNWDMIRPPREPROCESSCALLBACK, kmdf.wdfdeviceinitassignwdmirppreprocesscallback, DFDeviceObjectGeneralRef_ff2869f4-a557-4d3a-bd4d-67b8e1720ba9.xml, WdfDeviceInitAssignWdmIrpPreprocessCallback method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfdevice.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : ChildDeviceInitAPI, ControlDeviceInitAPI, DeviceInitAPI, DriverCreate, InitFreeDeviceCallback, InitFreeDeviceCreate, InitFreeNull, KmdfIrql, KmdfIrql2, PdoDeviceInitAPI, PdoInitFreeDeviceCallback, PdoInitFreeDeviceCreate
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_STATE_NOTIFICATION_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfdevice.WdfDeviceInitAssignWdmIrpPreprocessCallback
+title: WdfDeviceInitAssignWdmIrpPreprocessCallback function
+author: windows-driver-content
+description: The WdfDeviceInitAssignWdmIrpPreprocessCallback method registers a callback function to handle an IRP major function code and, optionally, one or more minor function codes that are associated with the major function code.
+old-location: wdf\wdfdeviceinitassignwdmirppreprocesscallback.htm
+old-project: wdf
+ms.assetid: 9c17a5e2-dcf2-493a-9851-11d47adbfc82
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdfdevice/WdfDeviceInitAssignWdmIrpPreprocessCallback, wdf.wdfdeviceinitassignwdmirppreprocesscallback, WdfDeviceInitAssignWdmIrpPreprocessCallback, PFN_WDFDEVICEINITASSIGNWDMIRPPREPROCESSCALLBACK, kmdf.wdfdeviceinitassignwdmirppreprocesscallback, DFDeviceObjectGeneralRef_ff2869f4-a557-4d3a-bd4d-67b8e1720ba9.xml, WdfDeviceInitAssignWdmIrpPreprocessCallback method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfdevice.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: ChildDeviceInitAPI, ControlDeviceInitAPI, DeviceInitAPI, DriverCreate, InitFreeDeviceCallback, InitFreeDeviceCreate, InitFreeNull, KmdfIrql, KmdfIrql2, PdoDeviceInitAPI, PdoInitFreeDeviceCallback, PdoInitFreeDeviceCreate
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfDeviceInitAssignWdmIrpPreprocessCallback
+product: Windows
+targetos: Windows
+req.typenames: WDF_STATE_NOTIFICATION_TYPE
+req.product: Windows 10 or later.
 ---
 
 

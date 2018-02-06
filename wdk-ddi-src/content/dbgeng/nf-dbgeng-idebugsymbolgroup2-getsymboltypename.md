@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugSymbolGroup2.GetSymbolTypeName
-title : IDebugSymbolGroup2::GetSymbolTypeName method
-author : windows-driver-content
-description : The GetSymbolTypeName methods return the name of the specified symbol's type.
-old-location : debugger\getsymboltypename.htm
-old-project : debugger
-ms.assetid : e15b418e-bf4a-49c0-bdb3-24973513e654
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : GetSymbolTypeName method [Windows Debugging], IDebugSymbolGroup2, IDebugSymbolGroup2 interface [Windows Debugging], GetSymbolTypeName method, GetSymbolTypeName method [Windows Debugging], IDebugSymbolGroup2 interface, dbgeng/IDebugSymbolGroup2::GetSymbolTypeName, debugger.getsymboltypename, ComOther_27d4a23e-4566-4b37-a692-2b82310ae8e9.xml, GetSymbolTypeName, IDebugSymbolGroup2::GetSymbolTypeName
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSymbolGroup2.GetSymbolTypeName
+title: IDebugSymbolGroup2::GetSymbolTypeName method
+author: windows-driver-content
+description: The GetSymbolTypeName methods return the name of the specified symbol's type.
+old-location: debugger\getsymboltypename.htm
+old-project: debugger
+ms.assetid: e15b418e-bf4a-49c0-bdb3-24973513e654
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: GetSymbolTypeName method [Windows Debugging], IDebugSymbolGroup2, IDebugSymbolGroup2 interface [Windows Debugging], GetSymbolTypeName method, GetSymbolTypeName method [Windows Debugging], IDebugSymbolGroup2 interface, dbgeng/IDebugSymbolGroup2::GetSymbolTypeName, debugger.getsymboltypename, ComOther_27d4a23e-4566-4b37-a692-2b82310ae8e9.xml, GetSymbolTypeName, IDebugSymbolGroup2::GetSymbolTypeName
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugSymbolGroup2.GetSymbolTypeName
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NF:wiamdef.wiasSetPropertyAttributes
-title : wiasSetPropertyAttributes function
-author : windows-driver-content
-description : The wiasSetPropertyAttributes function sets the access flags and valid values for a set of properties.
-old-location : image\wiassetpropertyattributes.htm
-old-project : image
-ms.assetid : 210e69e7-b3b8-43b5-a0d3-f023c7256438
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : wiasSetPropertyAttributes function [Imaging Devices], wiasSetPropertyAttributes, wiamdef/wiasSetPropertyAttributes, wiasFncs_630b9e1f-49f8-433e-b0f0-19e7e6c32460.xml, image.wiassetpropertyattributes
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wiamdef.h
-req.include-header : Wiamdef.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wiaservc.lib
-req.dll : Wiaservc.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*LPDEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2, DEVICEDIALOGDATA2"
-req.product : Windows 10 or later.
+UID: NF:wiamdef.wiasSetPropertyAttributes
+title: wiasSetPropertyAttributes function
+author: windows-driver-content
+description: The wiasSetPropertyAttributes function sets the access flags and valid values for a set of properties.
+old-location: image\wiassetpropertyattributes.htm
+old-project: image
+ms.assetid: 210e69e7-b3b8-43b5-a0d3-f023c7256438
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: wiasSetPropertyAttributes function [Imaging Devices], wiasSetPropertyAttributes, wiamdef/wiasSetPropertyAttributes, wiasFncs_630b9e1f-49f8-433e-b0f0-19e7e6c32460.xml, image.wiassetpropertyattributes
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wiamdef.h
+req.include-header: Wiamdef.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wiaservc.lib
+req.dll: Wiaservc.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Wiaservc.dll
+apiname:
+-	wiasSetPropertyAttributes
+product: Windows
+targetos: Windows
+req.typenames: "*LPDEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2, DEVICEDIALOGDATA2"
+req.product: Windows 10 or later.
 ---
 
 

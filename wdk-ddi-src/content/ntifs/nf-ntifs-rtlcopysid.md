@@ -1,41 +1,47 @@
 ---
-UID : NF:ntifs.RtlCopySid
-title : RtlCopySid function
-author : windows-driver-content
-description : The RtlCopySid routine copies the value of a security identifier (SID) to a buffer.
-old-location : ifsk\rtlcopysid.htm
-old-project : ifsk
-ms.assetid : adfe720f-695e-49a2-b7b5-940ba11bc83f
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : RtlCopySid routine [Installable File System Drivers], ifsk.rtlcopysid, rtlref_598b8f18-6cd2-4714-a2da-8e91f6aba065.xml, RtlCopySid, ntifs/RtlCopySid
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe (kernel mode); Ntdll.dll (user mode)
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.RtlCopySid
+title: RtlCopySid function
+author: windows-driver-content
+description: The RtlCopySid routine copies the value of a security identifier (SID) to a buffer.
+old-location: ifsk\rtlcopysid.htm
+old-project: ifsk
+ms.assetid: adfe720f-695e-49a2-b7b5-940ba11bc83f
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: RtlCopySid routine [Installable File System Drivers], ifsk.rtlcopysid, rtlref_598b8f18-6cd2-4714-a2da-8e91f6aba065.xml, RtlCopySid, ntifs/RtlCopySid
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe (kernel mode); Ntdll.dll (user mode)
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+-	Ntdll.dll
+apiname:
+-	RtlCopySid
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

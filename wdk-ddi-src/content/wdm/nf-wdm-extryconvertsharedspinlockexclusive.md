@@ -1,42 +1,48 @@
 ---
-UID : NF:wdm.ExTryConvertSharedSpinLockExclusive
-title : ExTryConvertSharedSpinLockExclusive function
-author : windows-driver-content
-description : The ExTryConvertSharedSpinLockExclusive routine attempts to convert the access state of a spin lock from acquired for shared access to exclusive access.
-old-location : kernel\extryconvertsharedspinlockexclusive_.htm
-old-project : kernel
-ms.assetid : 6B97865A-D589-4116-8492-109BEEE93ECA
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/ExTryConvertSharedSpinLockExclusive, ExTryConvertSharedSpinLockExclusive, ExTryConvertSharedSpinLockExclusive routine [Kernel-Mode Driver Architecture], kernel.extryconvertsharedspinlockexclusive_
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : 
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows Vista with SP1.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ntoskrnl.lib
-req.dll : 
-req.irql : DISPATCH_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ExTryConvertSharedSpinLockExclusive
+title: ExTryConvertSharedSpinLockExclusive function
+author: windows-driver-content
+description: The ExTryConvertSharedSpinLockExclusive routine attempts to convert the access state of a spin lock from acquired for shared access to exclusive access.
+old-location: kernel\extryconvertsharedspinlockexclusive_.htm
+old-project: kernel
+ms.assetid: 6B97865A-D589-4116-8492-109BEEE93ECA
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/ExTryConvertSharedSpinLockExclusive, ExTryConvertSharedSpinLockExclusive, ExTryConvertSharedSpinLockExclusive routine [Kernel-Mode Driver Architecture], kernel.extryconvertsharedspinlockexclusive_
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: 
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows Vista with SP1.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ntoskrnl.lib
+req.dll: 
+req.irql: DISPATCH_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ntoskrnl.lib
+-	ntoskrnl.dll
+apiname:
+-	ExTryConvertSharedSpinLockExclusive
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

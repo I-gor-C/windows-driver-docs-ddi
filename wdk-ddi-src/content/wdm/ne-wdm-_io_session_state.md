@@ -1,42 +1,47 @@
 ---
-UID : NE:wdm._IO_SESSION_STATE
-title : "_IO_SESSION_STATE"
-author : windows-driver-content
-description : The IO_SESSION_STATE enumeration contains constants that indicate the current state of a user session.
-old-location : kernel\io_session_state.htm
-old-project : kernel
-ms.assetid : 3e181b22-ae82-4287-8175-bc6043332d5a
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/IoSessionStateTerminated, IoSessionStateTerminated, wdm/IoSessionStateDisconnectedLoggedOn, wdm/IoSessionStateCreated, wdm/IoSessionStateMax, IoSessionStateInitialized, wdm/IoSessionStateDisconnected, IO_SESSION_STATE enumeration [Kernel-Mode Driver Architecture], IoSessionStateDisconnectedLoggedOn, wdm/IoSessionStateInitialized, sysenum_1a899498-22e4-4567-a88e-0773b3590b95.xml, IoSessionStateCreated, PIO_SESSION_STATE, IoSessionStateMax, *PIO_SESSION_STATE, IO_SESSION_STATE, kernel.io_session_state, wdm/IoSessionStateConnected, IoSessionStateConnected, _IO_SESSION_STATE, wdm/PIO_SESSION_STATE, wdm/IoSessionStateLoggedOn, wdm/IO_SESSION_STATE, wdm/IoSessionStateLoggedOff, PIO_SESSION_STATE enumeration pointer [Kernel-Mode Driver Architecture], IoSessionStateLoggedOff, IoSessionStateDisconnected, IoSessionStateLoggedOn
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h, Fltkernel.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in Windows 7 and later versions of the Windows operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : IO_SESSION_STATE, *PIO_SESSION_STATE
-req.product : Windows 10 or later.
+UID: NE:wdm._IO_SESSION_STATE
+title: "_IO_SESSION_STATE"
+author: windows-driver-content
+description: The IO_SESSION_STATE enumeration contains constants that indicate the current state of a user session.
+old-location: kernel\io_session_state.htm
+old-project: kernel
+ms.assetid: 3e181b22-ae82-4287-8175-bc6043332d5a
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/IoSessionStateTerminated, IoSessionStateTerminated, wdm/IoSessionStateDisconnectedLoggedOn, wdm/IoSessionStateCreated, wdm/IoSessionStateMax, IoSessionStateInitialized, wdm/IoSessionStateDisconnected, IO_SESSION_STATE enumeration [Kernel-Mode Driver Architecture], IoSessionStateDisconnectedLoggedOn, wdm/IoSessionStateInitialized, sysenum_1a899498-22e4-4567-a88e-0773b3590b95.xml, IoSessionStateCreated, PIO_SESSION_STATE, IoSessionStateMax, *PIO_SESSION_STATE, IO_SESSION_STATE, kernel.io_session_state, wdm/IoSessionStateConnected, IoSessionStateConnected, _IO_SESSION_STATE, wdm/PIO_SESSION_STATE, wdm/IoSessionStateLoggedOn, wdm/IO_SESSION_STATE, wdm/IoSessionStateLoggedOff, PIO_SESSION_STATE enumeration pointer [Kernel-Mode Driver Architecture], IoSessionStateLoggedOff, IoSessionStateDisconnected, IoSessionStateLoggedOn
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h, Fltkernel.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in Windows 7 and later versions of the Windows operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdm.h
+apiname:
+-	IO_SESSION_STATE
+product: Windows
+targetos: Windows
+req.typenames: IO_SESSION_STATE, *PIO_SESSION_STATE
+req.product: Windows 10 or later.
 ---
 
 # _IO_SESSION_STATE Enumeration
@@ -60,56 +65,56 @@ typedef enum _IO_SESSION_STATE {
 ## Constants
 
 <table>
-
-<tr>
-<td>IoSessionStateConnected</td>
-<td>The session is connected but the user has not yet logged on.</td>
-</tr>
-
-<tr>
-<td>IoSessionStateCreated</td>
-<td>The session has been created.</td>
-</tr>
-
-<tr>
-<td>IoSessionStateDisconnected</td>
-<td>The session has been disconnected.</td>
-</tr>
-
-<tr>
-<td>IoSessionStateDisconnectedLoggedOn</td>
-<td>The session was disconnected while the user was logged on.</td>
-</tr>
-
-<tr>
-<td>IoSessionStateInitialized</td>
-<td>The session has been initialized but has not yet been created.</td>
-</tr>
-
-<tr>
-<td>IoSessionStateLoggedOff</td>
-<td>The user has logged off of the session.</td>
-</tr>
-
-<tr>
-<td>IoSessionStateLoggedOn</td>
-<td>The user is logged on to the session.</td>
-</tr>
-
-<tr>
-<td>IoSessionStateMax</td>
-<td>Specifies the maximum value in this enumeration type.</td>
-</tr>
-
-<tr>
-<td>IoSessionStateTerminated</td>
-<td>The session has been terminated.</td>
-</tr>
+            
+                <tr>
+                    <td>IoSessionStateConnected</td>
+                    <td>The session is connected but the user has not yet logged on.</td>
+                </tr>
+            
+                <tr>
+                    <td>IoSessionStateCreated</td>
+                    <td>The session has been created.</td>
+                </tr>
+            
+                <tr>
+                    <td>IoSessionStateDisconnected</td>
+                    <td>The session has been disconnected.</td>
+                </tr>
+            
+                <tr>
+                    <td>IoSessionStateDisconnectedLoggedOn</td>
+                    <td>The session was disconnected while the user was logged on.</td>
+                </tr>
+            
+                <tr>
+                    <td>IoSessionStateInitialized</td>
+                    <td>The session has been initialized but has not yet been created.</td>
+                </tr>
+            
+                <tr>
+                    <td>IoSessionStateLoggedOff</td>
+                    <td>The user has logged off of the session.</td>
+                </tr>
+            
+                <tr>
+                    <td>IoSessionStateLoggedOn</td>
+                    <td>The user is logged on to the session.</td>
+                </tr>
+            
+                <tr>
+                    <td>IoSessionStateMax</td>
+                    <td>Specifies the maximum value in this enumeration type.</td>
+                </tr>
+            
+                <tr>
+                    <td>IoSessionStateTerminated</td>
+                    <td>The session has been terminated.</td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-When a driver calls the <a href="..\wdm\nf-wdm-iogetcontainerinformation.md">IoGetContainerInformation</a> routine to obtain information about a user session (<i>InformationClass</i> = <b>IoSessionStateInformation</b>), the I/O manager writes an <a href="..\wdm\ns-wdm-_io_session_state_information.md">IO_SESSION_STATE_INFORMATION</a> structure to the buffer pointed to by the routine's <i>Buffer</i> parameter. The I/O manager sets the <b>SessionState</b> member of this structure to an <b>IO_SESSION_STATE</b> enumeration constant (other than <b>IoSessionStateMax</b>).
+        When a driver calls the <a href="..\wdm\nf-wdm-iogetcontainerinformation.md">IoGetContainerInformation</a> routine to obtain information about a user session (<i>InformationClass</i> = <b>IoSessionStateInformation</b>), the I/O manager writes an <a href="..\wdm\ns-wdm-_io_session_state_information.md">IO_SESSION_STATE_INFORMATION</a> structure to the buffer pointed to by the routine's <i>Buffer</i> parameter. The I/O manager sets the <b>SessionState</b> member of this structure to an <b>IO_SESSION_STATE</b> enumeration constant (other than <b>IoSessionStateMax</b>).
 
 The following table shows the session state transitions. For each state transition, the table shows the following:
 <ul>
@@ -134,9 +139,9 @@ The event that causes the transition (a table entry in a white box)
 | **Windows version** | Supported in Windows 7 and later versions of the Windows operating system. Supported in Windows 7 and later versions of the Windows operating system. |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h, Fltkernel.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\wdm\ne-wdm-_io_session_event.md">IO_SESSION_EVENT</a>
+        <a href="..\wdm\ne-wdm-_io_session_event.md">IO_SESSION_EVENT</a>
 
 <a href="..\wdm\nf-wdm-iogetcontainerinformation.md">IoGetContainerInformation</a>
 

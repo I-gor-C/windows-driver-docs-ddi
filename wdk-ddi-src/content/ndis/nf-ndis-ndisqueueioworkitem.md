@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisQueueIoWorkItem
-title : NdisQueueIoWorkItem function
-author : windows-driver-content
-description : NDIS drivers call the NdisQueueIoWorkItem function to queue a work item.
-old-location : netvista\ndisqueueioworkitem.htm
-old-project : netvista
-ms.assetid : f5065217-a74e-41b6-bc23-59b39948a450
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : ndis_work_items_ref_ac034ba5-7f33-4769-9664-2b9bbb5ad9e6.xml, netvista.ndisqueueioworkitem, NdisQueueIoWorkItem, ndis/NdisQueueIoWorkItem, NdisQueueIoWorkItem function [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_Miscellaneous_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisQueueIoWorkItem
+title: NdisQueueIoWorkItem function
+author: windows-driver-content
+description: NDIS drivers call the NdisQueueIoWorkItem function to queue a work item.
+old-location: netvista\ndisqueueioworkitem.htm
+old-project: netvista
+ms.assetid: f5065217-a74e-41b6-bc23-59b39948a450
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: ndis_work_items_ref_ac034ba5-7f33-4769-9664-2b9bbb5ad9e6.xml, netvista.ndisqueueioworkitem, NdisQueueIoWorkItem, ndis/NdisQueueIoWorkItem, NdisQueueIoWorkItem function [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_Miscellaneous_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisQueueIoWorkItem
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

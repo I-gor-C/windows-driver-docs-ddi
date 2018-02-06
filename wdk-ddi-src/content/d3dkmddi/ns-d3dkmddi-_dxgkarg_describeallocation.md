@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGKARG_DESCRIBEALLOCATION
-title : "_DXGKARG_DESCRIBEALLOCATION"
-author : windows-driver-content
-description : The DXGKARG_DESCRIBEALLOCATION structure describes an existing allocation.
-old-location : display\dxgkarg_describeallocation.htm
-old-project : display
-ms.assetid : fd01ff3b-83b7-43d5-bbc6-6959485edd15
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : "_DXGKARG_DESCRIBEALLOCATION, DmStructs_73e3d53a-788b-4c88-980c-df0d2038694f.xml, DXGKARG_DESCRIBEALLOCATION structure [Display Devices], d3dkmddi/DXGKARG_DESCRIBEALLOCATION, *INOUT_PDXGKARG_DESCRIBEALLOCATION, DXGKARG_DESCRIBEALLOCATION, display.dxgkarg_describeallocation"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with  Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGKARG_DESCRIBEALLOCATION
+UID: NS:d3dkmddi._DXGKARG_DESCRIBEALLOCATION
+title: "_DXGKARG_DESCRIBEALLOCATION"
+author: windows-driver-content
+description: The DXGKARG_DESCRIBEALLOCATION structure describes an existing allocation.
+old-location: display\dxgkarg_describeallocation.htm
+old-project: display
+ms.assetid: fd01ff3b-83b7-43d5-bbc6-6959485edd15
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: "_DXGKARG_DESCRIBEALLOCATION, DmStructs_73e3d53a-788b-4c88-980c-df0d2038694f.xml, DXGKARG_DESCRIBEALLOCATION structure [Display Devices], d3dkmddi/DXGKARG_DESCRIBEALLOCATION, *INOUT_PDXGKARG_DESCRIBEALLOCATION, DXGKARG_DESCRIBEALLOCATION, display.dxgkarg_describeallocation"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with  Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DXGKARG_DESCRIBEALLOCATION
+product: Windows
+targetos: Windows
+req.typenames: DXGKARG_DESCRIBEALLOCATION
 ---
 
 # _DXGKARG_DESCRIBEALLOCATION structure

@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddchgr._CHANGER_PRODUCT_DATA
-title : "_CHANGER_PRODUCT_DATA"
-author : windows-driver-content
-description : The CHANGER_PRODUCT_DATA structure is used in conjunction with the IOCTL_CHANGER_GET_PRODUCT_DATA request to retrieve product data for a device.
-old-location : storage\changer_product_data.htm
-old-project : storage
-ms.assetid : 18e5b394-b0ea-481c-b634-83a2ebec4784
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : ntddchgr/CHANGER_PRODUCT_DATA, PCHANGER_PRODUCT_DATA, CHANGER_PRODUCT_DATA, ntddchgr/PCHANGER_PRODUCT_DATA, _CHANGER_PRODUCT_DATA, structs-changer_10598085-7fbc-40f9-a04c-ca8973faace7.xml, *PCHANGER_PRODUCT_DATA, CHANGER_PRODUCT_DATA structure [Storage Devices], storage.changer_product_data, PCHANGER_PRODUCT_DATA structure pointer [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddchgr.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : CHANGER_PRODUCT_DATA, *PCHANGER_PRODUCT_DATA
+UID: NS:ntddchgr._CHANGER_PRODUCT_DATA
+title: "_CHANGER_PRODUCT_DATA"
+author: windows-driver-content
+description: The CHANGER_PRODUCT_DATA structure is used in conjunction with the IOCTL_CHANGER_GET_PRODUCT_DATA request to retrieve product data for a device.
+old-location: storage\changer_product_data.htm
+old-project: storage
+ms.assetid: 18e5b394-b0ea-481c-b634-83a2ebec4784
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: ntddchgr/CHANGER_PRODUCT_DATA, PCHANGER_PRODUCT_DATA, CHANGER_PRODUCT_DATA, ntddchgr/PCHANGER_PRODUCT_DATA, _CHANGER_PRODUCT_DATA, structs-changer_10598085-7fbc-40f9-a04c-ca8973faace7.xml, *PCHANGER_PRODUCT_DATA, CHANGER_PRODUCT_DATA structure [Storage Devices], storage.changer_product_data, PCHANGER_PRODUCT_DATA structure pointer [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddchgr.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddchgr.h
+apiname:
+-	CHANGER_PRODUCT_DATA
+product: Windows
+targetos: Windows
+req.typenames: CHANGER_PRODUCT_DATA, *PCHANGER_PRODUCT_DATA
 ---
 
 # _CHANGER_PRODUCT_DATA structure

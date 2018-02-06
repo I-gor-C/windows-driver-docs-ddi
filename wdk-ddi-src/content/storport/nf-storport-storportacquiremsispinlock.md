@@ -1,42 +1,47 @@
 ---
-UID : NF:storport.StorPortAcquireMSISpinLock
-title : StorPortAcquireMSISpinLock function
-author : windows-driver-content
-description : The StorPortAcquireMSISpinLock routine acquires the message signaled interrupt (MSI) spin lock that is associated with the specified message.
-old-location : storage\storportacquiremsispinlock.htm
-old-project : storage
-ms.assetid : 8aa5a8a6-2024-4b3e-a500-5a484d937a62
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storport/StorPortAcquireMSISpinLock, storage.storportacquiremsispinlock, StorPortAcquireMSISpinLock routine [Storage Devices], StorPortAcquireMSISpinLock, storprt_0db1ab5c-a2a5-4362-84e0-493a5cebc2d3.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Universal
-req.target-min-winverclnt : This routine is available starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STOR_SPINLOCK
-req.product : Windows 10 or later.
+UID: NF:storport.StorPortAcquireMSISpinLock
+title: StorPortAcquireMSISpinLock function
+author: windows-driver-content
+description: The StorPortAcquireMSISpinLock routine acquires the message signaled interrupt (MSI) spin lock that is associated with the specified message.
+old-location: storage\storportacquiremsispinlock.htm
+old-project: storage
+ms.assetid: 8aa5a8a6-2024-4b3e-a500-5a484d937a62
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storport/StorPortAcquireMSISpinLock, storage.storportacquiremsispinlock, StorPortAcquireMSISpinLock routine [Storage Devices], StorPortAcquireMSISpinLock, storprt_0db1ab5c-a2a5-4362-84e0-493a5cebc2d3.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Universal
+req.target-min-winverclnt: This routine is available starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	storport.h
+apiname:
+-	StorPortAcquireMSISpinLock
+product: Windows
+targetos: Windows
+req.typenames: STOR_SPINLOCK
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:fwpsk.FWPS_VSWITCH_EVENT_DISPATCH_TABLE0_
-title : FWPS_VSWITCH_EVENT_DISPATCH_TABLE0_
-author : windows-driver-content
-description : The FWPS_VSWITCH_EVENT_DISPATCH_TABLE0 structure specifies a callout driver-supplied virtual switch event dispatch table.Note  FWPS_VSWITCH_EVENT_DISPATCH_TABLE0 is a specific version of FWPS_VSWITCH_EVENT_DISPATCH_TABLE.
-old-location : netvista\fwps_vswitch_event_dispatch_table0.htm
-old-project : netvista
-ms.assetid : 7e949e6d-7448-4f76-b8a1-6d050261fb21
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : FWPS_VSWITCH_EVENT_DISPATCH_TABLE0_, FWPS_VSWITCH_EVENT_DISPATCH_TABLE0, fwpsk/FWPS_VSWITCH_EVENT_DISPATCH_TABLE0, FWPS_VSWITCH_EVENT_DISPATCH_TABLE0 structure [Network Drivers Starting with Windows Vista], netvista.fwps_vswitch_event_dispatch_table0
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : fwpsk.h
-req.include-header : Fwpsk.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FWPS_VSWITCH_EVENT_DISPATCH_TABLE0
+UID: NS:fwpsk.FWPS_VSWITCH_EVENT_DISPATCH_TABLE0_
+title: FWPS_VSWITCH_EVENT_DISPATCH_TABLE0_
+author: windows-driver-content
+description: The FWPS_VSWITCH_EVENT_DISPATCH_TABLE0 structure specifies a callout driver-supplied virtual switch event dispatch table.Note  FWPS_VSWITCH_EVENT_DISPATCH_TABLE0 is a specific version of FWPS_VSWITCH_EVENT_DISPATCH_TABLE.
+old-location: netvista\fwps_vswitch_event_dispatch_table0.htm
+old-project: netvista
+ms.assetid: 7e949e6d-7448-4f76-b8a1-6d050261fb21
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: FWPS_VSWITCH_EVENT_DISPATCH_TABLE0_, FWPS_VSWITCH_EVENT_DISPATCH_TABLE0, fwpsk/FWPS_VSWITCH_EVENT_DISPATCH_TABLE0, FWPS_VSWITCH_EVENT_DISPATCH_TABLE0 structure [Network Drivers Starting with Windows Vista], netvista.fwps_vswitch_event_dispatch_table0
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: fwpsk.h
+req.include-header: Fwpsk.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	fwpsk.h
+apiname:
+-	FWPS_VSWITCH_EVENT_DISPATCH_TABLE0
+product: Windows
+targetos: Windows
+req.typenames: FWPS_VSWITCH_EVENT_DISPATCH_TABLE0
 ---
 
 # FWPS_VSWITCH_EVENT_DISPATCH_TABLE0_ structure

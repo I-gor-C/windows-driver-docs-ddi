@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFDevice2.GetDeviceStackIoTypePreference
-title : IWDFDevice2::GetDeviceStackIoTypePreference method
-author : windows-driver-content
-description : The GetDeviceStackIoTypePreference method retrieves the buffer access methods that the framework is using for a device.
-old-location : wdf\iwdfdevice2_getdevicestackiotypepreference.htm
-old-project : wdf
-ms.assetid : 3a1f6432-3f61-4502-ac98-fa984539f88e
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : IWDFDevice2 interface, GetDeviceStackIoTypePreference method, GetDeviceStackIoTypePreference, GetDeviceStackIoTypePreference method, wdf.iwdfdevice2_getdevicestackiotypepreference, IWDFDevice2::GetDeviceStackIoTypePreference, umdf.iwdfdevice2_getdevicestackiotypepreference, GetDeviceStackIoTypePreference method, IWDFDevice2 interface, UMDFDeviceObjectRef_f6402826-fe3b-46c7-a4a8-d1d4f74e4b5c.xml, wudfddi/IWDFDevice2::GetDeviceStackIoTypePreference, IWDFDevice2
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.9
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFDevice2.GetDeviceStackIoTypePreference
+title: IWDFDevice2::GetDeviceStackIoTypePreference method
+author: windows-driver-content
+description: The GetDeviceStackIoTypePreference method retrieves the buffer access methods that the framework is using for a device.
+old-location: wdf\iwdfdevice2_getdevicestackiotypepreference.htm
+old-project: wdf
+ms.assetid: 3a1f6432-3f61-4502-ac98-fa984539f88e
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: IWDFDevice2 interface, GetDeviceStackIoTypePreference method, GetDeviceStackIoTypePreference, GetDeviceStackIoTypePreference method, wdf.iwdfdevice2_getdevicestackiotypepreference, IWDFDevice2::GetDeviceStackIoTypePreference, umdf.iwdfdevice2_getdevicestackiotypepreference, GetDeviceStackIoTypePreference method, IWDFDevice2 interface, UMDFDeviceObjectRef_f6402826-fe3b-46c7-a4a8-d1d4f74e4b5c.xml, wudfddi/IWDFDevice2::GetDeviceStackIoTypePreference, IWDFDevice2
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.9
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFDevice2.GetDeviceStackIoTypePreference
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfusb.IWDFUsbTargetPipe.GetType
-title : IWDFUsbTargetPipe::GetType method
-author : windows-driver-content
-description : The GetType method retrieves the type of a USB pipe.
-old-location : wdf\iwdfusbtargetpipe_gettype.htm
-old-project : wdf
-ms.assetid : c8d76d5b-f388-4e22-ba57-d299ab3dee80
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : IWDFUsbTargetPipe, IWDFUsbTargetPipe::GetType, UMDFUSBref_792b0720-a0c3-45da-b5e8-7b2f3a0c3770.xml, GetType method, IWDFUsbTargetPipe interface, GetType method, wudfusb/IWDFUsbTargetPipe::GetType, GetType method, IWDFUsbTargetPipe interface, GetType, wdf.iwdfusbtargetpipe_gettype, umdf.iwdfusbtargetpipe_gettype
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfusb.h
-req.include-header : Wudfusb.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.5
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfusb.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
-req.product : Windows 10 or later.
+UID: NF:wudfusb.IWDFUsbTargetPipe.GetType
+title: IWDFUsbTargetPipe::GetType method
+author: windows-driver-content
+description: The GetType method retrieves the type of a USB pipe.
+old-location: wdf\iwdfusbtargetpipe_gettype.htm
+old-project: wdf
+ms.assetid: c8d76d5b-f388-4e22-ba57-d299ab3dee80
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: IWDFUsbTargetPipe, IWDFUsbTargetPipe::GetType, UMDFUSBref_792b0720-a0c3-45da-b5e8-7b2f3a0c3770.xml, GetType method, IWDFUsbTargetPipe interface, GetType method, wudfusb/IWDFUsbTargetPipe::GetType, GetType method, IWDFUsbTargetPipe interface, GetType, wdf.iwdfusbtargetpipe_gettype, umdf.iwdfusbtargetpipe_gettype
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfusb.h
+req.include-header: Wudfusb.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.5
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfusb.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFUsbTargetPipe.GetType
+product: Windows
+targetos: Windows
+req.typenames: WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NF:ucxendpoint.UcxEndpointGetStaticStreamsReferenced
-title : UcxEndpointGetStaticStreamsReferenced function
-author : windows-driver-content
-description : Returns a referenced static streams object for the specified endpoint.
-old-location : buses\_ucxendpointgetstaticstreamsreferenced.htm
-old-project : usbref
-ms.assetid : A9AB43A9-1409-4AA4-99DE-66D558F2303C
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : UcxEndpointGetStaticStreamsReferenced, UcxEndpointGetStaticStreamsReferenced method [Buses], ucxendpoint/UcxEndpointGetStaticStreamsReferenced, buses._ucxendpointgetstaticstreamsreferenced
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ucxendpoint.h
-req.include-header : Ucxclass.h, Ucxendpoint.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : UCX_ENDPOINT_CHARACTERISTIC_TYPE
-req.product : Windows 10 or later.
+UID: NF:ucxendpoint.UcxEndpointGetStaticStreamsReferenced
+title: UcxEndpointGetStaticStreamsReferenced function
+author: windows-driver-content
+description: Returns a referenced static streams object for the specified endpoint.
+old-location: buses\_ucxendpointgetstaticstreamsreferenced.htm
+old-project: usbref
+ms.assetid: A9AB43A9-1409-4AA4-99DE-66D558F2303C
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: UcxEndpointGetStaticStreamsReferenced, UcxEndpointGetStaticStreamsReferenced method [Buses], ucxendpoint/UcxEndpointGetStaticStreamsReferenced, buses._ucxendpointgetstaticstreamsreferenced
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ucxendpoint.h
+req.include-header: Ucxclass.h, Ucxendpoint.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	ucxendpoint.h
+apiname:
+-	UcxEndpointGetStaticStreamsReferenced
+product: Windows
+targetos: Windows
+req.typenames: UCX_ENDPOINT_CHARACTERISTIC_TYPE
+req.product: Windows 10 or later.
 ---
 
 

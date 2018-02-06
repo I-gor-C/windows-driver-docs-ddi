@@ -1,41 +1,46 @@
 ---
-UID : NC:ntddk.RTL_RUN_ONCE_INIT_FN
-title : RTL_RUN_ONCE_INIT_FN
-author : windows-driver-content
-description : The RunOnceInitialization routine performs a one-time initialization operation.
-old-location : kernel\runonceinitialization.htm
-old-project : kernel
-ms.assetid : 7411c10f-76ab-44df-8cab-2266443417aa
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.runonceinitialization, RunOnceInitialization routine [Kernel-Mode Driver Architecture], RunOnceInitialization, RTL_RUN_ONCE_INIT_FN, RTL_RUN_ONCE_INIT_FN, ntddk/RunOnceInitialization, DrvrRtns_2bf4e129-77ac-4525-9504-4f039a503943.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ntddk.h
-req.include-header : Ntddk.h, Ntifs.h
-req.target-type : Desktop
-req.target-min-winverclnt : Drivers can implement the RunOnceInitialization routine only on Windows Vista and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Called at IRQL <= APC_LEVEL.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PFILTER_INITIALIZATION_DATA, FILTER_INITIALIZATION_DATA"
+UID: NC:ntddk.RTL_RUN_ONCE_INIT_FN
+title: RTL_RUN_ONCE_INIT_FN
+author: windows-driver-content
+description: The RunOnceInitialization routine performs a one-time initialization operation.
+old-location: kernel\runonceinitialization.htm
+old-project: kernel
+ms.assetid: 7411c10f-76ab-44df-8cab-2266443417aa
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.runonceinitialization, RunOnceInitialization routine [Kernel-Mode Driver Architecture], RunOnceInitialization, RTL_RUN_ONCE_INIT_FN, RTL_RUN_ONCE_INIT_FN, ntddk/RunOnceInitialization, DrvrRtns_2bf4e129-77ac-4525-9504-4f039a503943.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ntddk.h
+req.include-header: Ntddk.h, Ntifs.h
+req.target-type: Desktop
+req.target-min-winverclnt: Drivers can implement the RunOnceInitialization routine only on Windows Vista and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Called at IRQL <= APC_LEVEL.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ntddk.h
+apiname:
+-	RunOnceInitialization
+product: Windows
+targetos: Windows
+req.typenames: "*PFILTER_INITIALIZATION_DATA, FILTER_INITIALIZATION_DATA"
 ---
 
 

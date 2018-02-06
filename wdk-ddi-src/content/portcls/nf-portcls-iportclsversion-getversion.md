@@ -1,41 +1,46 @@
 ---
-UID : NF:portcls.IPortClsVersion.GetVersion
-title : IPortClsVersion::GetVersion method
-author : windows-driver-content
-description : The GetVersion method returns the version of the Windows operating system that the driver is running on.
-old-location : audio\iportclsversion_getversion.htm
-old-project : audio
-ms.assetid : ce1394e5-1d45-4b59-8738-fcb2cbe7cf51
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : GetVersion method [Audio Devices], IPortClsVersion interface, IPortClsVersion::GetVersion, GetVersion method [Audio Devices], IPortClsVersion interface [Audio Devices], GetVersion method, audmp-routines_82b73b24-296b-4b31-88e4-1d1303863c6c.xml, GetVersion, portcls/IPortClsVersion::GetVersion, IPortClsVersion, audio.iportclsversion_getversion
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : portcls.h
-req.include-header : Portcls.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : portcls.h
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.IPortClsVersion.GetVersion
+title: IPortClsVersion::GetVersion method
+author: windows-driver-content
+description: The GetVersion method returns the version of the Windows operating system that the driver is running on.
+old-location: audio\iportclsversion_getversion.htm
+old-project: audio
+ms.assetid: ce1394e5-1d45-4b59-8738-fcb2cbe7cf51
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: GetVersion method [Audio Devices], IPortClsVersion interface, IPortClsVersion::GetVersion, GetVersion method [Audio Devices], IPortClsVersion interface [Audio Devices], GetVersion method, audmp-routines_82b73b24-296b-4b31-88e4-1d1303863c6c.xml, GetVersion, portcls/IPortClsVersion::GetVersion, IPortClsVersion, audio.iportclsversion_getversion
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: portcls.h
+req.include-header: Portcls.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: portcls.h
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	portcls.h
+apiname:
+-	IPortClsVersion.GetVersion
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

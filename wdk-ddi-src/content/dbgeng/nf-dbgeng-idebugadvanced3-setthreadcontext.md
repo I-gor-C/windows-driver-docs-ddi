@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugAdvanced3.SetThreadContext
-title : IDebugAdvanced3::SetThreadContext method
-author : windows-driver-content
-description : The SetThreadContext method sets the current thread context.
-old-location : debugger\setthreadcontext.htm
-old-project : debugger
-ms.assetid : eaaaa9d7-ba6d-4379-b721-74c92375ea05
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : SetThreadContext method [Windows Debugging], IDebugAdvanced interface, IDebugAdvanced3, SetThreadContext method [Windows Debugging], IDebugAdvanced2 interface, IDebugAdvanced2::SetThreadContext, dbgeng/IDebugAdvanced2::SetThreadContext, IDebugAdvanced3::SetThreadContext, dbgeng/IDebugAdvanced3::SetThreadContext, debugger.setthreadcontext, SetThreadContext, SetThreadContext method [Windows Debugging], IDebugAdvanced3 interface, dbgeng/IDebugAdvanced::SetThreadContext, IDebugAdvanced2 interface [Windows Debugging], SetThreadContext method, IDebugAdvanced interface [Windows Debugging], SetThreadContext method, IDebugAdvanced::SetThreadContext, SetThreadContext method [Windows Debugging], IDebugAdvanced3 interface [Windows Debugging], SetThreadContext method, IDebugAdvanced_08e9f1e1-7af3-4cdf-9550-7d22fa5a59da.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugAdvanced3.SetThreadContext
+title: IDebugAdvanced3::SetThreadContext method
+author: windows-driver-content
+description: The SetThreadContext method sets the current thread context.
+old-location: debugger\setthreadcontext.htm
+old-project: debugger
+ms.assetid: eaaaa9d7-ba6d-4379-b721-74c92375ea05
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: SetThreadContext method [Windows Debugging], IDebugAdvanced interface, IDebugAdvanced3, SetThreadContext method [Windows Debugging], IDebugAdvanced2 interface, IDebugAdvanced2::SetThreadContext, dbgeng/IDebugAdvanced2::SetThreadContext, IDebugAdvanced3::SetThreadContext, dbgeng/IDebugAdvanced3::SetThreadContext, debugger.setthreadcontext, SetThreadContext, SetThreadContext method [Windows Debugging], IDebugAdvanced3 interface, dbgeng/IDebugAdvanced::SetThreadContext, IDebugAdvanced2 interface [Windows Debugging], SetThreadContext method, IDebugAdvanced interface [Windows Debugging], SetThreadContext method, IDebugAdvanced::SetThreadContext, SetThreadContext method [Windows Debugging], IDebugAdvanced3 interface [Windows Debugging], SetThreadContext method, IDebugAdvanced_08e9f1e1-7af3-4cdf-9550-7d22fa5a59da.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugAdvanced.SetThreadContext
+-	IDebugAdvanced2.SetThreadContext
+-	IDebugAdvanced3.SetThreadContext
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

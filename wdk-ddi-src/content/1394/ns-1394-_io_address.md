@@ -1,41 +1,46 @@
 ---
-UID : NS:1394._IO_ADDRESS
-title : "_IO_ADDRESS"
-author : windows-driver-content
-description : The IO_ADDRESS structure specifies the 1394 64-bit destination address for read, write and lock operations.
-old-location : ieee\io_address.htm
-old-project : IEEE
-ms.assetid : db703d46-d37f-442a-a543-ce9e9c5ea3cb
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : "_IO_ADDRESS, PIO_ADDRESS, IO_ADDRESS, 1394/PIO_ADDRESS, IEEE.io_address, 1394stct_1683915b-161d-4741-91b9-32f632b56e59.xml, *PIO_ADDRESS, 1394/IO_ADDRESS, PIO_ADDRESS structure pointer [Buses], IO_ADDRESS structure [Buses]"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : 1394.h
-req.include-header : 1394.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : IO_ADDRESS, *PIO_ADDRESS
+UID: NS:1394._IO_ADDRESS
+title: "_IO_ADDRESS"
+author: windows-driver-content
+description: The IO_ADDRESS structure specifies the 1394 64-bit destination address for read, write and lock operations.
+old-location: ieee\io_address.htm
+old-project: IEEE
+ms.assetid: db703d46-d37f-442a-a543-ce9e9c5ea3cb
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: "_IO_ADDRESS, PIO_ADDRESS, IO_ADDRESS, 1394/PIO_ADDRESS, IEEE.io_address, 1394stct_1683915b-161d-4741-91b9-32f632b56e59.xml, *PIO_ADDRESS, 1394/IO_ADDRESS, PIO_ADDRESS structure pointer [Buses], IO_ADDRESS structure [Buses]"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: 1394.h
+req.include-header: 1394.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	1394.h
+apiname:
+-	IO_ADDRESS
+product: Windows
+targetos: Windows
+req.typenames: IO_ADDRESS, *PIO_ADDRESS
 ---
 
 # _IO_ADDRESS structure

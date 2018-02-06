@@ -1,41 +1,46 @@
 ---
-UID : NN:portcls.IMiniportMidiStream
-title : IMiniportMidiStream
-author : windows-driver-content
-description : The IMiniportMidiStream interface represents the MIDI stream that flows through a pin on a MIDI filter.
-old-location : audio\iminiportmidistream.htm
-old-project : audio
-ms.assetid : a3b763af-2800-4e6d-b9f8-060ba80de7e6
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : audio.iminiportmidistream, IMiniportMidiStream interface [Audio Devices], IMiniportMidiStream interface [Audio Devices], described, IMiniportMidiStream, portcls/IMiniportMidiStream, audmp-routines_604abeae-e44f-418a-913f-39502b6f266b.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : portcls.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Portcls.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NN:portcls.IMiniportMidiStream
+title: IMiniportMidiStream
+author: windows-driver-content
+description: The IMiniportMidiStream interface represents the MIDI stream that flows through a pin on a MIDI filter.
+old-location: audio\iminiportmidistream.htm
+old-project: audio
+ms.assetid: a3b763af-2800-4e6d-b9f8-060ba80de7e6
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: audio.iminiportmidistream, IMiniportMidiStream interface [Audio Devices], IMiniportMidiStream interface [Audio Devices], described, IMiniportMidiStream, portcls/IMiniportMidiStream, audmp-routines_604abeae-e44f-418a-913f-39502b6f266b.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: portcls.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Portcls.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	portcls.h
+apiname:
+-	IMiniportMidiStream
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 # IMiniportMidiStream interface

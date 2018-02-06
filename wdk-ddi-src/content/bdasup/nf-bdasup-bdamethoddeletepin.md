@@ -1,41 +1,47 @@
 ---
-UID : NF:bdasup.BdaMethodDeletePin
-title : BdaMethodDeletePin function
-author : windows-driver-content
-description : The BdaMethodDeletePin function deletes a pin factory.
-old-location : stream\bdamethoddeletepin.htm
-old-project : stream
-ms.assetid : 179419ee-2a99-4c03-9afb-a9bb34f3efb6
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.bdamethoddeletepin, BdaMethodDeletePin, BdaMethodDeletePin function [Streaming Media Devices], bdaref_6d81ac60-26e8-4cdb-ba9c-05f73cea187d.xml, bdasup/BdaMethodDeletePin
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : bdasup.h
-req.include-header : Bdasup.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available on Microsoft Windows XP and later operating systems. This routine is available on the Windows 2000 platform only if Microsoft DirectX 9.0 and later is installed on that platform.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Bdasup.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KSP_BDA_NODE_PIN, *PKSP_BDA_NODE_PIN
+UID: NF:bdasup.BdaMethodDeletePin
+title: BdaMethodDeletePin function
+author: windows-driver-content
+description: The BdaMethodDeletePin function deletes a pin factory.
+old-location: stream\bdamethoddeletepin.htm
+old-project: stream
+ms.assetid: 179419ee-2a99-4c03-9afb-a9bb34f3efb6
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.bdamethoddeletepin, BdaMethodDeletePin, BdaMethodDeletePin function [Streaming Media Devices], bdaref_6d81ac60-26e8-4cdb-ba9c-05f73cea187d.xml, bdasup/BdaMethodDeletePin
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: bdasup.h
+req.include-header: Bdasup.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available on Microsoft Windows XP and later operating systems. This routine is available on the Windows 2000 platform only if Microsoft DirectX 9.0 and later is installed on that platform.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Bdasup.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Bdasup.lib
+-	Bdasup.dll
+apiname:
+-	BdaMethodDeletePin
+product: Windows
+targetos: Windows
+req.typenames: KSP_BDA_NODE_PIN, *PKSP_BDA_NODE_PIN
 ---
 
 

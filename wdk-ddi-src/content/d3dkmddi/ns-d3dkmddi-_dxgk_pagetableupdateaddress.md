@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGK_PAGETABLEUPDATEADDRESS
-title : "_DXGK_PAGETABLEUPDATEADDRESS"
-author : windows-driver-content
-description : DXGK_PAGETABLEUPDATEADDRESS contains the address of a page table to update. The member containing the address is defined as part of a DxgkDdiBuildPagingBuffer operation in the DXGK_BUILDPAGINGBUFFER_UPDATEPAGETABLE structure.
-old-location : display\dxgk_pagetableupdateaddress.htm
-old-project : display
-ms.assetid : 39013276-C76A-4E31-80DD-26C17A020BD6
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : "_DXGK_PAGETABLEUPDATEADDRESS, DXGK_PAGETABLEUPDATEADDRESS, display.dxgk_pagetableupdateaddress, DXGK_PAGETABLEUPDATEADDRESS structure [Display Devices], d3dkmddi/DXGK_PAGETABLEUPDATEADDRESS"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PAGETABLEUPDATEADDRESS
+UID: NS:d3dkmddi._DXGK_PAGETABLEUPDATEADDRESS
+title: "_DXGK_PAGETABLEUPDATEADDRESS"
+author: windows-driver-content
+description: DXGK_PAGETABLEUPDATEADDRESS contains the address of a page table to update. The member containing the address is defined as part of a DxgkDdiBuildPagingBuffer operation in the DXGK_BUILDPAGINGBUFFER_UPDATEPAGETABLE structure.
+old-location: display\dxgk_pagetableupdateaddress.htm
+old-project: display
+ms.assetid: 39013276-C76A-4E31-80DD-26C17A020BD6
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: "_DXGK_PAGETABLEUPDATEADDRESS, DXGK_PAGETABLEUPDATEADDRESS, display.dxgk_pagetableupdateaddress, DXGK_PAGETABLEUPDATEADDRESS structure [Display Devices], d3dkmddi/DXGK_PAGETABLEUPDATEADDRESS"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DXGK_PAGETABLEUPDATEADDRESS
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PAGETABLEUPDATEADDRESS
 ---
 
 # _DXGK_PAGETABLEUPDATEADDRESS structure

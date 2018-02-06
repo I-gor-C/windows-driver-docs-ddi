@@ -1,41 +1,46 @@
 ---
-UID : NI:ntdddisk.IOCTL_DISK_SET_CACHE_INFORMATION
-title : IOCTL_DISK_SET_CACHE_INFORMATION
-author : windows-driver-content
-description : Sets disk cache configuration data.
-old-location : storage\ioctl_disk_set_cache_information.htm
-old-project : storage
-ms.assetid : ae1ca621-4862-4345-bb51-4a1c31e00542
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_disk_set_cache_information, IOCTL_DISK_SET_CACHE_INFORMATION control code [Storage Devices], IOCTL_DISK_SET_CACHE_INFORMATION, ntdddisk/IOCTL_DISK_SET_CACHE_INFORMATION, k307_4f1b855c-4788-48e9-bc26-7addf3c7e3a9.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntdddisk.h
-req.include-header : Ntdddisk.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DETECTION_TYPE
+UID: NI:ntdddisk.IOCTL_DISK_SET_CACHE_INFORMATION
+title: IOCTL_DISK_SET_CACHE_INFORMATION
+author: windows-driver-content
+description: Sets disk cache configuration data.
+old-location: storage\ioctl_disk_set_cache_information.htm
+old-project: storage
+ms.assetid: ae1ca621-4862-4345-bb51-4a1c31e00542
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_disk_set_cache_information, IOCTL_DISK_SET_CACHE_INFORMATION control code [Storage Devices], IOCTL_DISK_SET_CACHE_INFORMATION, ntdddisk/IOCTL_DISK_SET_CACHE_INFORMATION, k307_4f1b855c-4788-48e9-bc26-7addf3c7e3a9.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntdddisk.h
+req.include-header: Ntdddisk.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntdddisk.h
+apiname:
+-	IOCTL_DISK_SET_CACHE_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: DETECTION_TYPE
 ---
 
 # IOCTL_DISK_SET_CACHE_INFORMATION IOCTL

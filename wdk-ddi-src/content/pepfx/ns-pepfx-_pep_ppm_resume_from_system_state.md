@@ -1,41 +1,46 @@
 ---
-UID : NS:pepfx._PEP_PPM_RESUME_FROM_SYSTEM_STATE
-title : "_PEP_PPM_RESUME_FROM_SYSTEM_STATE"
-author : windows-driver-content
-description : Used by the PEP_NOTIFY_PPM_RESUME_FROM_SYSTEM_STATE notification that notifies the PEP that the system has just resumed from a system power state.
-old-location : kernel\pep_ppm_resume_from_system_state.htm
-old-project : kernel
-ms.assetid : 281f223a-1189-4045-9a3a-17433432a6a3
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : PEP_PPM_RESUME_FROM_SYSTEM_STATE structure [Kernel-Mode Driver Architecture], *PPEP_PPM_RESUME_FROM_SYSTEM_STATE, kernel.pep_ppm_resume_from_system_state, pepfx/PEP_PPM_RESUME_FROM_SYSTEM_STATE, _PEP_PPM_RESUME_FROM_SYSTEM_STATE, PEP_PPM_RESUME_FROM_SYSTEM_STATE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : pepfx.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10, version 1709
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPEP_PPM_RESUME_FROM_SYSTEM_STATE, PEP_PPM_RESUME_FROM_SYSTEM_STATE"
+UID: NS:pepfx._PEP_PPM_RESUME_FROM_SYSTEM_STATE
+title: "_PEP_PPM_RESUME_FROM_SYSTEM_STATE"
+author: windows-driver-content
+description: Used by the PEP_NOTIFY_PPM_RESUME_FROM_SYSTEM_STATE notification that notifies the PEP that the system has just resumed from a system power state.
+old-location: kernel\pep_ppm_resume_from_system_state.htm
+old-project: kernel
+ms.assetid: 281f223a-1189-4045-9a3a-17433432a6a3
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: PEP_PPM_RESUME_FROM_SYSTEM_STATE structure [Kernel-Mode Driver Architecture], *PPEP_PPM_RESUME_FROM_SYSTEM_STATE, kernel.pep_ppm_resume_from_system_state, pepfx/PEP_PPM_RESUME_FROM_SYSTEM_STATE, _PEP_PPM_RESUME_FROM_SYSTEM_STATE, PEP_PPM_RESUME_FROM_SYSTEM_STATE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: pepfx.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10, version 1709
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Pepfx.h
+apiname:
+-	PEP_PPM_RESUME_FROM_SYSTEM_STATE
+product: Windows
+targetos: Windows
+req.typenames: "*PPEP_PPM_RESUME_FROM_SYSTEM_STATE, PEP_PPM_RESUME_FROM_SYSTEM_STATE"
 ---
 
 # _PEP_PPM_RESUME_FROM_SYSTEM_STATE structure

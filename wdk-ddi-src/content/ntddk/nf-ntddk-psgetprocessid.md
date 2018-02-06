@@ -1,41 +1,46 @@
 ---
-UID : NF:ntddk.PsGetProcessId
-title : PsGetProcessId function
-author : windows-driver-content
-description : The PsGetProcessId routine returns the process identifier (process ID) that is associated with a specified process.
-old-location : kernel\psgetprocessid.htm
-old-project : kernel
-ms.assetid : 9e1f6a57-bc48-41c6-815c-6a44e8d01699
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ntddk/PsGetProcessId, PsGetProcessId, PsGetProcessId routine [Kernel-Mode Driver Architecture], k108_b0733011-4102-4e10-83e3-e7e9d7172d08.xml, kernel.psgetprocessid
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows XP and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.PsGetProcessId
+title: PsGetProcessId function
+author: windows-driver-content
+description: The PsGetProcessId routine returns the process identifier (process ID) that is associated with a specified process.
+old-location: kernel\psgetprocessid.htm
+old-project: kernel
+ms.assetid: 9e1f6a57-bc48-41c6-815c-6a44e8d01699
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ntddk/PsGetProcessId, PsGetProcessId, PsGetProcessId routine [Kernel-Mode Driver Architecture], k108_b0733011-4102-4e10-83e3-e7e9d7172d08.xml, kernel.psgetprocessid
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows XP and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	PsGetProcessId
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

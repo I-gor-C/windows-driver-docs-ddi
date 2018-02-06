@@ -1,42 +1,47 @@
 ---
-UID : NI:usbioctl.IOCTL_USB_NOTIFY_ON_TRANSPORT_CHARACTERISTICS_CHANGE
-title : IOCTL_USB_NOTIFY_ON_TRANSPORT_CHARACTERISTICS_CHANGE
-author : windows-driver-content
-description : This request notifies the caller of change in transport characteristics.
-old-location : buses\ioctl_usb_notify_on_transport_characteristics_change.htm
-old-project : usbref
-ms.assetid : 1B71794C-EBAD-4F6C-A71C-C0D419D486BE
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : buses.ioctl_usb_notify_on_transport_characteristics_change, IOCTL_USB_NOTIFY_ON_TRANSPORT_CHARACTERISTICS_CHANGE control code [Buses], IOCTL_USB_NOTIFY_ON_TRANSPORT_CHARACTERISTICS_CHANGE, usbioctl/IOCTL_USB_NOTIFY_ON_TRANSPORT_CHARACTERISTICS_CHANGE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : usbioctl.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10, version 1709
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : USB_HUB_TYPE
-req.product : Windows 10 or later.
+UID: NI:usbioctl.IOCTL_USB_NOTIFY_ON_TRANSPORT_CHARACTERISTICS_CHANGE
+title: IOCTL_USB_NOTIFY_ON_TRANSPORT_CHARACTERISTICS_CHANGE
+author: windows-driver-content
+description: This request notifies the caller of change in transport characteristics.
+old-location: buses\ioctl_usb_notify_on_transport_characteristics_change.htm
+old-project: usbref
+ms.assetid: 1B71794C-EBAD-4F6C-A71C-C0D419D486BE
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: buses.ioctl_usb_notify_on_transport_characteristics_change, IOCTL_USB_NOTIFY_ON_TRANSPORT_CHARACTERISTICS_CHANGE control code [Buses], IOCTL_USB_NOTIFY_ON_TRANSPORT_CHARACTERISTICS_CHANGE, usbioctl/IOCTL_USB_NOTIFY_ON_TRANSPORT_CHARACTERISTICS_CHANGE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: usbioctl.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10, version 1709
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Usbioctl.h
+apiname:
+-	IOCTL_USB_NOTIFY_ON_TRANSPORT_CHARACTERISTICS_CHANGE
+product: Windows
+targetos: Windows
+req.typenames: USB_HUB_TYPE
+req.product: Windows 10 or later.
 ---
 
 # IOCTL_USB_NOTIFY_ON_TRANSPORT_CHARACTERISTICS_CHANGE IOCTL

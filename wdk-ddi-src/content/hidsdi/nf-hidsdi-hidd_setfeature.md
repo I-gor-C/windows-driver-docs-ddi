@@ -1,41 +1,46 @@
 ---
-UID : NF:hidsdi.HidD_SetFeature
-title : HidD_SetFeature function
-author : windows-driver-content
-description : The HidD_SetFeature routine sends a feature report to a top-level collection.
-old-location : hid\hidd_setfeature.htm
-old-project : hid
-ms.assetid : 69b7d775-e689-4010-8c83-f9e393d692be
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : hid.hidd_setfeature, HidD_SetFeature, HidD_SetFeature routine [Human Input Devices], hidsdi/HidD_SetFeature, hidfunc_f34ed05a-c8c1-44e3-ab94-a8df000aac7d.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : hidsdi.h
-req.include-header : Hidsdi.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 2000 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Hid.lib
-req.dll : Hid.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PHID_MINIDRIVER_REGISTRATION, HID_MINIDRIVER_REGISTRATION"
+UID: NF:hidsdi.HidD_SetFeature
+title: HidD_SetFeature function
+author: windows-driver-content
+description: The HidD_SetFeature routine sends a feature report to a top-level collection.
+old-location: hid\hidd_setfeature.htm
+old-project: hid
+ms.assetid: 69b7d775-e689-4010-8c83-f9e393d692be
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: hid.hidd_setfeature, HidD_SetFeature, HidD_SetFeature routine [Human Input Devices], hidsdi/HidD_SetFeature, hidfunc_f34ed05a-c8c1-44e3-ab94-a8df000aac7d.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: hidsdi.h
+req.include-header: Hidsdi.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 2000 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Hid.lib
+req.dll: Hid.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Hid.dll
+apiname:
+-	HidD_SetFeature
+product: Windows
+targetos: Windows
+req.typenames: "*PHID_MINIDRIVER_REGISTRATION, HID_MINIDRIVER_REGISTRATION"
 ---
 
 

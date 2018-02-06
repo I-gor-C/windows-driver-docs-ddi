@@ -1,42 +1,47 @@
 ---
-UID : NF:wdfrequest.WDF_REQUEST_REUSE_PARAMS_INIT
-title : WDF_REQUEST_REUSE_PARAMS_INIT function
-author : windows-driver-content
-description : The WDF_REQUEST_REUSE_PARAMS_INIT function initializes a driver's WDF_REQUEST_REUSE_PARAMS structure.
-old-location : wdf\wdf_request_reuse_params_init.htm
-old-project : wdf
-ms.assetid : a77d77c5-5c8a-439a-93a3-fe29b15c6ed0
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : kmdf.wdf_request_reuse_params_init, DFRequestObjectRef_e43a091a-a926-4705-8241-0620b6ef3096.xml, wdf.wdf_request_reuse_params_init, WDF_REQUEST_REUSE_PARAMS_INIT function, WDF_REQUEST_REUSE_PARAMS_INIT, wdfrequest/WDF_REQUEST_REUSE_PARAMS_INIT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfrequest.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_REQUEST_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfrequest.WDF_REQUEST_REUSE_PARAMS_INIT
+title: WDF_REQUEST_REUSE_PARAMS_INIT function
+author: windows-driver-content
+description: The WDF_REQUEST_REUSE_PARAMS_INIT function initializes a driver's WDF_REQUEST_REUSE_PARAMS structure.
+old-location: wdf\wdf_request_reuse_params_init.htm
+old-project: wdf
+ms.assetid: a77d77c5-5c8a-439a-93a3-fe29b15c6ed0
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: kmdf.wdf_request_reuse_params_init, DFRequestObjectRef_e43a091a-a926-4705-8241-0620b6ef3096.xml, wdf.wdf_request_reuse_params_init, WDF_REQUEST_REUSE_PARAMS_INIT function, WDF_REQUEST_REUSE_PARAMS_INIT, wdfrequest/WDF_REQUEST_REUSE_PARAMS_INIT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfrequest.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfrequest.h
+apiname:
+-	WDF_REQUEST_REUSE_PARAMS_INIT
+product: Windows
+targetos: Windows
+req.typenames: WDF_REQUEST_TYPE
+req.product: Windows 10 or later.
 ---
 
 

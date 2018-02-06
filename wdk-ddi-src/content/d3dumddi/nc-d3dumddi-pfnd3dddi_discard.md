@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_DISCARD
-title : PFND3DDDI_DISCARD
-author : windows-driver-content
-description : Discards (evicts) a set of subresources from video display memory. Implemented by Windows Display Driver Model (WDDM) 1.2 and later user-mode display drivers.
-old-location : display\discard.htm
-old-project : display
-ms.assetid : F3EC7AAE-9DB8-43A1-B756-5F5C91F8372E
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.discard, Discard callback function [Display Devices], Discard, PFND3DDDI_DISCARD, PFND3DDDI_DISCARD, d3dumddi/Discard
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_DISCARD
+title: PFND3DDDI_DISCARD
+author: windows-driver-content
+description: Discards (evicts) a set of subresources from video display memory. Implemented by Windows Display Driver Model (WDDM) 1.2 and later user-mode display drivers.
+old-location: display\discard.htm
+old-project: display
+ms.assetid: F3EC7AAE-9DB8-43A1-B756-5F5C91F8372E
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.discard, Discard callback function [Display Devices], Discard, PFND3DDDI_DISCARD, PFND3DDDI_DISCARD, d3dumddi/Discard
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	Discard
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

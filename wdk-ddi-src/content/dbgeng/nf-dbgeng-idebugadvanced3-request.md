@@ -1,41 +1,47 @@
 ---
-UID : NF:dbgeng.IDebugAdvanced3.Request
-title : IDebugAdvanced3::Request method
-author : windows-driver-content
-description : The Request method performs a variety of different operations.
-old-location : debugger\request.htm
-old-project : debugger
-ms.assetid : efb3c93c-5405-418b-a063-afa8e5e9e59a
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : Request method [Windows Debugging], IDebugAdvanced2 interface, dbgeng/IDebugAdvanced3::Request, IDebugAdvanced3, Request, IDebugAdvanced3 interface [Windows Debugging], Request method, Request method [Windows Debugging], IDebugAdvanced3 interface, debugger.request, dbgeng/IDebugAdvanced2::Request, IDebugAdvanced2::Request, IDebugAdvanced_8fbf249e-5550-42c0-b16d-d42aaa4de660.xml, Request method [Windows Debugging], IDebugAdvanced3::Request, IDebugAdvanced2 interface [Windows Debugging], Request method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugAdvanced3.Request
+title: IDebugAdvanced3::Request method
+author: windows-driver-content
+description: The Request method performs a variety of different operations.
+old-location: debugger\request.htm
+old-project: debugger
+ms.assetid: efb3c93c-5405-418b-a063-afa8e5e9e59a
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: Request method [Windows Debugging], IDebugAdvanced2 interface, dbgeng/IDebugAdvanced3::Request, IDebugAdvanced3, Request, IDebugAdvanced3 interface [Windows Debugging], Request method, Request method [Windows Debugging], IDebugAdvanced3 interface, debugger.request, dbgeng/IDebugAdvanced2::Request, IDebugAdvanced2::Request, IDebugAdvanced_8fbf249e-5550-42c0-b16d-d42aaa4de660.xml, Request method [Windows Debugging], IDebugAdvanced3::Request, IDebugAdvanced2 interface [Windows Debugging], Request method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugAdvanced2.Request
+-	IDebugAdvanced3.Request
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

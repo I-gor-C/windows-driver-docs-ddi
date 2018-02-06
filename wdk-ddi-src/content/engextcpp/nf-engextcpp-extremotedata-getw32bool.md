@@ -1,41 +1,46 @@
 ---
-UID : NF:engextcpp.ExtRemoteData.GetW32Bool
-title : ExtRemoteData::GetW32Bool method
-author : windows-driver-content
-description : The GetW32Bool method returns a BOOL version of the ExtRemoteData object, which represents the contents of the target's memory.
-old-location : debugger\extremotedata_getw32bool.htm
-old-project : debugger
-ms.assetid : a17812f5-4e20-4793-9352-3cabed25a6da
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : EngExtCpp_Ref_367ee79b-5fdf-41ca-b43c-f9f29b3a872c.xml, ExtRemoteData, ExtRemoteData class [Windows Debugging], GetW32Bool method, debugger.extremotedata_getw32bool, ExtRemoteData::GetW32Bool, GetW32Bool, GetW32Bool method [Windows Debugging], GetW32Bool method [Windows Debugging], ExtRemoteData class
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : engextcpp.hpp
-req.include-header : Engextcpp.hpp
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : engextcpp.hpp
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SILO_DRIVER_CAPABILITIES, *PSILO_DRIVER_CAPABILITIES
+UID: NF:engextcpp.ExtRemoteData.GetW32Bool
+title: ExtRemoteData::GetW32Bool method
+author: windows-driver-content
+description: The GetW32Bool method returns a BOOL version of the ExtRemoteData object, which represents the contents of the target's memory.
+old-location: debugger\extremotedata_getw32bool.htm
+old-project: debugger
+ms.assetid: a17812f5-4e20-4793-9352-3cabed25a6da
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: EngExtCpp_Ref_367ee79b-5fdf-41ca-b43c-f9f29b3a872c.xml, ExtRemoteData, ExtRemoteData class [Windows Debugging], GetW32Bool method, debugger.extremotedata_getw32bool, ExtRemoteData::GetW32Bool, GetW32Bool, GetW32Bool method [Windows Debugging], GetW32Bool method [Windows Debugging], ExtRemoteData class
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: engextcpp.hpp
+req.include-header: Engextcpp.hpp
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: engextcpp.hpp
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	engextcpp.hpp
+apiname:
+-	ExtRemoteData.GetW32Bool
+product: Windows
+targetos: Windows
+req.typenames: SILO_DRIVER_CAPABILITIES, *PSILO_DRIVER_CAPABILITIES
 ---
 
 

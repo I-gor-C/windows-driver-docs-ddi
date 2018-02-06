@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dkmddi.DXGKDDI_MONITORDESCRIPTORSET_GETNUMDESCRIPTORS
-title : DXGKDDI_MONITORDESCRIPTORSET_GETNUMDESCRIPTORS
-author : windows-driver-content
-description : The pfnGetNumDescriptors function returns the number of descriptors in a monitor descriptor set.
-old-location : display\dxgk_monitordescriptorset_interface_pfngetnumdescriptors.htm
-old-project : display
-ms.assetid : 7bfcef0b-1371-4e3b-b5dc-c4c548625c8f
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgk_monitordescriptorset_interface_pfngetnumdescriptors, pfnGetNumDescriptors callback function [Display Devices], pfnGetNumDescriptors, DXGKDDI_MONITORDESCRIPTORSET_GETNUMDESCRIPTORS, DXGKDDI_MONITORDESCRIPTORSET_GETNUMDESCRIPTORS, d3dkmddi/pfnGetNumDescriptors, VidPnFunctions_c2c4ad34-be07-4bd8-8576-e91b4549ca95.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
+UID: NC:d3dkmddi.DXGKDDI_MONITORDESCRIPTORSET_GETNUMDESCRIPTORS
+title: DXGKDDI_MONITORDESCRIPTORSET_GETNUMDESCRIPTORS
+author: windows-driver-content
+description: The pfnGetNumDescriptors function returns the number of descriptors in a monitor descriptor set.
+old-location: display\dxgk_monitordescriptorset_interface_pfngetnumdescriptors.htm
+old-project: display
+ms.assetid: 7bfcef0b-1371-4e3b-b5dc-c4c548625c8f
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgk_monitordescriptorset_interface_pfngetnumdescriptors, pfnGetNumDescriptors callback function [Display Devices], pfnGetNumDescriptors, DXGKDDI_MONITORDESCRIPTORSET_GETNUMDESCRIPTORS, DXGKDDI_MONITORDESCRIPTORSET_GETNUMDESCRIPTORS, d3dkmddi/pfnGetNumDescriptors, VidPnFunctions_c2c4ad34-be07-4bd8-8576-e91b4549ca95.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	pfnGetNumDescriptors
+product: Windows
+targetos: Windows
+req.typenames: DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
 

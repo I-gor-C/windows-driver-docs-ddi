@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddk._IMAGE_INFO_EX
-title : "_IMAGE_INFO_EX"
-author : windows-driver-content
-description : Extended version of the image information structure (see IMAGE_INFO).
-old-location : kernel\image_info_ex.htm
-old-project : kernel
-ms.assetid : 97F3D9BE-9069-4A4A-B114-FC9331510512
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : IMAGE_INFO_EX, ntddk/PIMAGE_INFO_EX, _IMAGE_INFO_EX, kernel.image_info_ex, PIMAGE_INFO_EX structure pointer [Kernel-Mode Driver Architecture], *PIMAGE_INFO_EX, ntddk/IMAGE_INFO_EX, PIMAGE_INFO_EX, IMAGE_INFO_EX structure [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : IMAGE_INFO_EX, *PIMAGE_INFO_EX
+UID: NS:ntddk._IMAGE_INFO_EX
+title: "_IMAGE_INFO_EX"
+author: windows-driver-content
+description: Extended version of the image information structure (see IMAGE_INFO).
+old-location: kernel\image_info_ex.htm
+old-project: kernel
+ms.assetid: 97F3D9BE-9069-4A4A-B114-FC9331510512
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: IMAGE_INFO_EX, ntddk/PIMAGE_INFO_EX, _IMAGE_INFO_EX, kernel.image_info_ex, PIMAGE_INFO_EX structure pointer [Kernel-Mode Driver Architecture], *PIMAGE_INFO_EX, ntddk/IMAGE_INFO_EX, PIMAGE_INFO_EX, IMAGE_INFO_EX structure [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddk.h
+apiname:
+-	IMAGE_INFO_EX
+product: Windows
+targetos: Windows
+req.typenames: IMAGE_INFO_EX, *PIMAGE_INFO_EX
 ---
 
 # _IMAGE_INFO_EX structure

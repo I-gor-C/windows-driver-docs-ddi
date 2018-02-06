@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGKARGCB_UPDATECONTEXTALLOCATION
-title : "_DXGKARGCB_UPDATECONTEXTALLOCATION"
-author : windows-driver-content
-description : DXGKARGCB_UPDATECONTEXTALLOCATION contains the data used to call DxgkCbUpdateContextAllocation.
-old-location : display\dxgkargcb_updatecontextallocation.htm
-old-project : display
-ms.assetid : 07BFCA6C-4E75-4BB5-9F6A-22E1FFAFFF6F
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DXGKARGCB_UPDATECONTEXTALLOCATION, display.dxgkargcb_updatecontextallocation, d3dkmddi/DXGKARGCB_UPDATECONTEXTALLOCATION, DXGKARGCB_UPDATECONTEXTALLOCATION structure [Display Devices], _DXGKARGCB_UPDATECONTEXTALLOCATION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGKARGCB_UPDATECONTEXTALLOCATION
+UID: NS:d3dkmddi._DXGKARGCB_UPDATECONTEXTALLOCATION
+title: "_DXGKARGCB_UPDATECONTEXTALLOCATION"
+author: windows-driver-content
+description: DXGKARGCB_UPDATECONTEXTALLOCATION contains the data used to call DxgkCbUpdateContextAllocation.
+old-location: display\dxgkargcb_updatecontextallocation.htm
+old-project: display
+ms.assetid: 07BFCA6C-4E75-4BB5-9F6A-22E1FFAFFF6F
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DXGKARGCB_UPDATECONTEXTALLOCATION, display.dxgkargcb_updatecontextallocation, d3dkmddi/DXGKARGCB_UPDATECONTEXTALLOCATION, DXGKARGCB_UPDATECONTEXTALLOCATION structure [Display Devices], _DXGKARGCB_UPDATECONTEXTALLOCATION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DXGKARGCB_UPDATECONTEXTALLOCATION
+product: Windows
+targetos: Windows
+req.typenames: DXGKARGCB_UPDATECONTEXTALLOCATION
 ---
 
 # _DXGKARGCB_UPDATECONTEXTALLOCATION structure

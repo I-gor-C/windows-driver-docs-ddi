@@ -1,42 +1,47 @@
 ---
-UID : NC:udecxwdfdevice.EVT_UDECX_WDF_DEVICE_RESET
-title : EVT_UDECX_WDF_DEVICE_RESET
-author : windows-driver-content
-description : The UDE client driver's implementation to reset the emulated host controller or the devices attached to it.
-old-location : buses\evt_udecx_wdf_device_reset.htm
-old-project : usbref
-ms.assetid : 394343A5-10E4-4F64-AD3C-1D2114422B39
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : buses.evt_udecx_wdf_device_reset, EvtUdecxWdfDeviceReset callback function [Buses], EvtUdecxWdfDeviceReset, EVT_UDECX_WDF_DEVICE_RESET, EVT_UDECX_WDF_DEVICE_RESET, udecxwdfdevice/EvtUdecxWdfDeviceReset
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : udecxwdfdevice.h
-req.include-header : Udecx.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 1.15
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUDECX_USB_ENDPOINT_CALLBACKS, UDECX_USB_ENDPOINT_CALLBACKS"
-req.product : Windows 10 or later.
+UID: NC:udecxwdfdevice.EVT_UDECX_WDF_DEVICE_RESET
+title: EVT_UDECX_WDF_DEVICE_RESET
+author: windows-driver-content
+description: The UDE client driver's implementation to reset the emulated host controller or the devices attached to it.
+old-location: buses\evt_udecx_wdf_device_reset.htm
+old-project: usbref
+ms.assetid: 394343A5-10E4-4F64-AD3C-1D2114422B39
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: buses.evt_udecx_wdf_device_reset, EvtUdecxWdfDeviceReset callback function [Buses], EvtUdecxWdfDeviceReset, EVT_UDECX_WDF_DEVICE_RESET, EVT_UDECX_WDF_DEVICE_RESET, udecxwdfdevice/EvtUdecxWdfDeviceReset
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: udecxwdfdevice.h
+req.include-header: Udecx.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 1.15
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	UdecxWdfDevice.h
+apiname:
+-	EvtUdecxWdfDeviceReset
+product: Windows
+targetos: Windows
+req.typenames: "*PUDECX_USB_ENDPOINT_CALLBACKS, UDECX_USB_ENDPOINT_CALLBACKS"
+req.product: Windows 10 or later.
 ---
 
 

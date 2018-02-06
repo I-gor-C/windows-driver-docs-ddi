@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.RtlDestroyHeap
-title : RtlDestroyHeap function
-author : windows-driver-content
-description : The RtlDestroyHeap routine destroys the specified heap object. RtlDestroyHeap decommits and releases all the pages of a private heap object, and it invalidates the handle to the heap.
-old-location : ifsk\rtldestroyheap.htm
-old-project : ifsk
-ms.assetid : e62855a0-284b-434b-88a4-1f21f1b77cf2
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : RtlDestroyHeap routine [Installable File System Drivers], RtlDestroyHeap, ntifs/RtlDestroyHeap, rtlref_c1cb90f1-932d-46ab-badc-d960503def9c.xml, ifsk.rtldestroyheap
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : This routine is available on Microsoft Windows XP and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "< DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.RtlDestroyHeap
+title: RtlDestroyHeap function
+author: windows-driver-content
+description: The RtlDestroyHeap routine destroys the specified heap object. RtlDestroyHeap decommits and releases all the pages of a private heap object, and it invalidates the handle to the heap.
+old-location: ifsk\rtldestroyheap.htm
+old-project: ifsk
+ms.assetid: e62855a0-284b-434b-88a4-1f21f1b77cf2
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: RtlDestroyHeap routine [Installable File System Drivers], RtlDestroyHeap, ntifs/RtlDestroyHeap, rtlref_c1cb90f1-932d-46ab-badc-d960503def9c.xml, ifsk.rtldestroyheap
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: This routine is available on Microsoft Windows XP and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "< DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	RtlDestroyHeap
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

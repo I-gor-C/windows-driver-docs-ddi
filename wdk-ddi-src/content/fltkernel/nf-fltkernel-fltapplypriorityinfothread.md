@@ -1,41 +1,47 @@
 ---
-UID : NF:fltkernel.FltApplyPriorityInfoThread
-title : FltApplyPriorityInfoThread function
-author : windows-driver-content
-description : The FltApplyPriorityInfoThread routine is used by a minifilter driver to apply priority information to a thread.
-old-location : ifsk\fltapplypriorityinfothread.htm
-old-project : ifsk
-ms.assetid : 62fd46a8-ee34-4c61-8e87-7fbe1a4622be
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltApplyPriorityInfoThread routine [Installable File System Drivers], FltApplyPriorityInfoThread, FltApiRef_a_to_d_446351ed-afa7-4548-8197-f9bf92d671e5.xml, fltkernel/FltApplyPriorityInfoThread, ifsk.fltapplypriorityinfothread
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Microsoft Windows Vista and later versions of Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Fltmgr.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltApplyPriorityInfoThread
+title: FltApplyPriorityInfoThread function
+author: windows-driver-content
+description: The FltApplyPriorityInfoThread routine is used by a minifilter driver to apply priority information to a thread.
+old-location: ifsk\fltapplypriorityinfothread.htm
+old-project: ifsk
+ms.assetid: 62fd46a8-ee34-4c61-8e87-7fbe1a4622be
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltApplyPriorityInfoThread routine [Installable File System Drivers], FltApplyPriorityInfoThread, FltApiRef_a_to_d_446351ed-afa7-4548-8197-f9bf92d671e5.xml, fltkernel/FltApplyPriorityInfoThread, ifsk.fltapplypriorityinfothread
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Microsoft Windows Vista and later versions of Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Fltmgr.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Fltmgr.lib
+-	Fltmgr.dll
+apiname:
+-	FltApplyPriorityInfoThread
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

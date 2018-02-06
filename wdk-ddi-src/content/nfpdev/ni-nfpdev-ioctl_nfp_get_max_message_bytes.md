@@ -1,41 +1,46 @@
 ---
-UID : NI:nfpdev.IOCTL_NFP_GET_MAX_MESSAGE_BYTES
-title : IOCTL_NFP_GET_MAX_MESSAGE_BYTES
-author : windows-driver-content
-description : A client sends the IOCTL_NFP_GET_MAX_MESSAGE_BYTES request to any generic handle, one that is non-published and non-subscribed, to the provider device to determine the maximum message size supported.
-old-location : nfpdrivers\ioctl_nfp_get_max_message_bytes.htm
-old-project : nfpdrivers
-ms.assetid : 030E00C0-9F28-4EAC-BEBA-6AB0269ABAD5
-ms.author : windowsdriverdev
-ms.date : 12/18/2017
-ms.keywords : nfpdrivers.ioctl_nfp_get_max_message_bytes, IOCTL_NFP_GET_MAX_MESSAGE_BYTES, _IOCTL_NFP_GET_MAX_MESSAGE_BYTES, IOCTL_NFP_GET_MAX_MESSAGE_BYTES control code [Near-Field Proximity Drivers], IOCTL_NFP_GET_MAX_MESSAGE_BYTES, nfpdev/IOCTL_NFP_GET_MAX_MESSAGE_BYTES
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : nfpdev.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SECURE_ELEMENT_TECH_ROUTING_INFO, *PSECURE_ELEMENT_TECH_ROUTING_INFO
+UID: NI:nfpdev.IOCTL_NFP_GET_MAX_MESSAGE_BYTES
+title: IOCTL_NFP_GET_MAX_MESSAGE_BYTES
+author: windows-driver-content
+description: A client sends the IOCTL_NFP_GET_MAX_MESSAGE_BYTES request to any generic handle, one that is non-published and non-subscribed, to the provider device to determine the maximum message size supported.
+old-location: nfpdrivers\ioctl_nfp_get_max_message_bytes.htm
+old-project: nfpdrivers
+ms.assetid: 030E00C0-9F28-4EAC-BEBA-6AB0269ABAD5
+ms.author: windowsdriverdev
+ms.date: 12/18/2017
+ms.keywords: nfpdrivers.ioctl_nfp_get_max_message_bytes, IOCTL_NFP_GET_MAX_MESSAGE_BYTES, _IOCTL_NFP_GET_MAX_MESSAGE_BYTES, IOCTL_NFP_GET_MAX_MESSAGE_BYTES control code [Near-Field Proximity Drivers], IOCTL_NFP_GET_MAX_MESSAGE_BYTES, nfpdev/IOCTL_NFP_GET_MAX_MESSAGE_BYTES
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: nfpdev.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	nfpdev.h
+apiname:
+-	IOCTL_NFP_GET_MAX_MESSAGE_BYTES
+product: Windows
+targetos: Windows
+req.typenames: SECURE_ELEMENT_TECH_ROUTING_INFO, *PSECURE_ELEMENT_TECH_ROUTING_INFO
 ---
 
 # IOCTL_NFP_GET_MAX_MESSAGE_BYTES IOCTL

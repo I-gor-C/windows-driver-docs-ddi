@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfdevice.WdfDeviceWdmGetDeviceObject
-title : WdfDeviceWdmGetDeviceObject function
-author : windows-driver-content
-description : The WdfDeviceWdmGetDeviceObject method returns the Windows Driver Model (WDM) device object that is associated with a specified framework device object.
-old-location : wdf\wdfdevicewdmgetdeviceobject.htm
-old-project : wdf
-ms.assetid : 87a427ae-5c1e-4975-a48f-80c3549a3564
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdfdevice/WdfDeviceWdmGetDeviceObject, WdfDeviceWdmGetDeviceObject method, WdfDeviceWdmGetDeviceObject, PFN_WDFDEVICEWDMGETDEVICEOBJECT, DFDeviceObjectGeneralRef_b145d3cd-578a-4be9-80d1-b260f5693b3d.xml, wdf.wdfdevicewdmgetdeviceobject, kmdf.wdfdevicewdmgetdeviceobject
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfdevice.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_STATE_NOTIFICATION_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfdevice.WdfDeviceWdmGetDeviceObject
+title: WdfDeviceWdmGetDeviceObject function
+author: windows-driver-content
+description: The WdfDeviceWdmGetDeviceObject method returns the Windows Driver Model (WDM) device object that is associated with a specified framework device object.
+old-location: wdf\wdfdevicewdmgetdeviceobject.htm
+old-project: wdf
+ms.assetid: 87a427ae-5c1e-4975-a48f-80c3549a3564
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdfdevice/WdfDeviceWdmGetDeviceObject, WdfDeviceWdmGetDeviceObject method, WdfDeviceWdmGetDeviceObject, PFN_WDFDEVICEWDMGETDEVICEOBJECT, DFDeviceObjectGeneralRef_b145d3cd-578a-4be9-80d1-b260f5693b3d.xml, wdf.wdfdevicewdmgetdeviceobject, kmdf.wdfdevicewdmgetdeviceobject
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfdevice.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfDeviceWdmGetDeviceObject
+product: Windows
+targetos: Windows
+req.typenames: WDF_STATE_NOTIFICATION_TYPE
+req.product: Windows 10 or later.
 ---
 
 

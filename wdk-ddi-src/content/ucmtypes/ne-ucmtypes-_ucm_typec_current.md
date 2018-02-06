@@ -1,42 +1,47 @@
 ---
-UID : NE:ucmtypes._UCM_TYPEC_CURRENT
-title : "_UCM_TYPEC_CURRENT"
-author : windows-driver-content
-description : Defines different Type-C current levels, as defined in the Type-C specification.
-old-location : buses\ucm_type_c_current.htm
-old-project : usbref
-ms.assetid : 5A603C0E-BBB8-4909-B7B0-EAADF428CB5F
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : UcmTypeCCurrentInvalid, UCM_TYPEC_CURRENT, ucmtypes/UcmTypeCCurrentDefaultUsb, UcmTypeCCurrent1500mA, ucmtypes/UcmTypeCCurrent1500mA, UcmTypeCCurrentDefaultUsb, UcmTypeCCurrent3000mA, ucmtypes/UCM_TYPEC_CURRENT, _UCM_TYPEC_CURRENT, buses.ucm_type_c_current, UCM_TYPEC_CURRENT enumeration [Buses], ucmtypes/UcmTypeCCurrentInvalid, ucmtypes/UcmTypeCCurrent3000mA
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : ucmtypes.h
-req.include-header : Ucmcx.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 1.15
-req.umdf-ver : 2.15
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : UCM_TYPEC_CURRENT
-req.product : Windows 10 or later.
+UID: NE:ucmtypes._UCM_TYPEC_CURRENT
+title: "_UCM_TYPEC_CURRENT"
+author: windows-driver-content
+description: Defines different Type-C current levels, as defined in the Type-C specification.
+old-location: buses\ucm_type_c_current.htm
+old-project: usbref
+ms.assetid: 5A603C0E-BBB8-4909-B7B0-EAADF428CB5F
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: UcmTypeCCurrentInvalid, UCM_TYPEC_CURRENT, ucmtypes/UcmTypeCCurrentDefaultUsb, UcmTypeCCurrent1500mA, ucmtypes/UcmTypeCCurrent1500mA, UcmTypeCCurrentDefaultUsb, UcmTypeCCurrent3000mA, ucmtypes/UCM_TYPEC_CURRENT, _UCM_TYPEC_CURRENT, buses.ucm_type_c_current, UCM_TYPEC_CURRENT enumeration [Buses], ucmtypes/UcmTypeCCurrentInvalid, ucmtypes/UcmTypeCCurrent3000mA
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: ucmtypes.h
+req.include-header: Ucmcx.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 1.15
+req.umdf-ver: 2.15
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ucmtypes.h
+apiname:
+-	UCM_TYPEC_CURRENT
+product: Windows
+targetos: Windows
+req.typenames: UCM_TYPEC_CURRENT
+req.product: Windows 10 or later.
 ---
 
 # _UCM_TYPEC_CURRENT Enumeration
@@ -55,26 +60,26 @@ typedef enum _UCM_TYPE_C_CURRENT {
 ## Constants
 
 <table>
-
-<tr>
-<td>UcmTypeCCurrent1500mA</td>
-<td>Indicates the power sourcing current is 1500 mA.</td>
-</tr>
-
-<tr>
-<td>UcmTypeCCurrent3000mA</td>
-<td>Indicates the power sourcing current is 3000 mA.</td>
-</tr>
-
-<tr>
-<td>UcmTypeCCurrentDefaultUsb</td>
-<td>Indicates the power sourcing current is the default USB current.</td>
-</tr>
-
-<tr>
-<td>UcmTypeCCurrentInvalid</td>
-<td>Indicates the power sourcing current state is invalid.</td>
-</tr>
+            
+                <tr>
+                    <td>UcmTypeCCurrent1500mA</td>
+                    <td>Indicates the power sourcing current is 1500 mA.</td>
+                </tr>
+            
+                <tr>
+                    <td>UcmTypeCCurrent3000mA</td>
+                    <td>Indicates the power sourcing current is 3000 mA.</td>
+                </tr>
+            
+                <tr>
+                    <td>UcmTypeCCurrentDefaultUsb</td>
+                    <td>Indicates the power sourcing current is the default USB current.</td>
+                </tr>
+            
+                <tr>
+                    <td>UcmTypeCCurrentInvalid</td>
+                    <td>Indicates the power sourcing current state is invalid.</td>
+                </tr>
 </table>
 
 
@@ -86,9 +91,9 @@ typedef enum _UCM_TYPE_C_CURRENT {
 | **Minimum UMDF version** | 2.15 |
 | **Header** | ucmtypes.h (include Ucmcx.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\ucmmanager\nf-ucmmanager-ucmconnectortypecattach.md">UcmConnectorTypeCAttach</a>
+        <a href="..\ucmmanager\nf-ucmmanager-ucmconnectortypecattach.md">UcmConnectorTypeCAttach</a>
 
 <a href="..\ucmmanager\nf-ucmmanager-ucmconnectortypeccurrentadchanged.md">UcmConnectorTypeCCurrentAdChanged</a>
 

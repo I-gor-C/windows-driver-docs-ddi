@@ -1,42 +1,47 @@
 ---
-UID : NI:sffdisk.IOCTL_SFFDISK_QUERY_DEVICE_PROTOCOL
-title : IOCTL_SFFDISK_QUERY_DEVICE_PROTOCOL
-author : windows-driver-content
-description : User-mode applications use this IOCTL to retrieve a protocol value that identifies the card as either an SD card or an MMC card.
-old-location : sd\ioctl_sffdisk_query_device_protocol.htm
-old-project : SD
-ms.assetid : 47eeb4a9-dece-4500-bbe7-891f64437eef
-ms.author : windowsdriverdev
-ms.date : 12/18/2017
-ms.keywords : SD.ioctl_sffdisk_query_device_protocol, IOCTL_SFFDISK_QUERY_DEVICE_PROTOCOL control code [Buses], IOCTL_SFFDISK_QUERY_DEVICE_PROTOCOL, sffdisk/IOCTL_SFFDISK_QUERY_DEVICE_PROTOCOL, sd-ioctls_4bf0f25d-2d73-4da4-a329-f7a0fa00fecf.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : sffdisk.h
-req.include-header : Sffdisk.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SFFDISK_DPCMD
-req.product : Windows 10 or later.
+UID: NI:sffdisk.IOCTL_SFFDISK_QUERY_DEVICE_PROTOCOL
+title: IOCTL_SFFDISK_QUERY_DEVICE_PROTOCOL
+author: windows-driver-content
+description: User-mode applications use this IOCTL to retrieve a protocol value that identifies the card as either an SD card or an MMC card.
+old-location: sd\ioctl_sffdisk_query_device_protocol.htm
+old-project: SD
+ms.assetid: 47eeb4a9-dece-4500-bbe7-891f64437eef
+ms.author: windowsdriverdev
+ms.date: 12/18/2017
+ms.keywords: SD.ioctl_sffdisk_query_device_protocol, IOCTL_SFFDISK_QUERY_DEVICE_PROTOCOL control code [Buses], IOCTL_SFFDISK_QUERY_DEVICE_PROTOCOL, sffdisk/IOCTL_SFFDISK_QUERY_DEVICE_PROTOCOL, sd-ioctls_4bf0f25d-2d73-4da4-a329-f7a0fa00fecf.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: sffdisk.h
+req.include-header: Sffdisk.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	sffdisk.h
+apiname:
+-	IOCTL_SFFDISK_QUERY_DEVICE_PROTOCOL
+product: Windows
+targetos: Windows
+req.typenames: SFFDISK_DPCMD
+req.product: Windows 10 or later.
 ---
 
 # IOCTL_SFFDISK_QUERY_DEVICE_PROTOCOL IOCTL

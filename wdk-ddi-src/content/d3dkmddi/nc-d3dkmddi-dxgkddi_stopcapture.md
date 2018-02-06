@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dkmddi.DXGKDDI_STOPCAPTURE
-title : DXGKDDI_STOPCAPTURE
-author : windows-driver-content
-description : The DxgkDdiStopCapture function stops the capture hardware from using the given allocation as a capture buffer.
-old-location : display\dxgkddistopcapture.htm
-old-project : display
-ms.assetid : e5d622cc-c550-44cf-8923-5092226066d9
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkddistopcapture, DxgkDdiStopCapture callback function [Display Devices], DxgkDdiStopCapture, DXGKDDI_STOPCAPTURE, DXGKDDI_STOPCAPTURE, d3dkmddi/DxgkDdiStopCapture, DmFunctions_108ab359-fe5b-46f2-bc1b-f1f91bd5b327.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dkmddi.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
+UID: NC:d3dkmddi.DXGKDDI_STOPCAPTURE
+title: DXGKDDI_STOPCAPTURE
+author: windows-driver-content
+description: The DxgkDdiStopCapture function stops the capture hardware from using the given allocation as a capture buffer.
+old-location: display\dxgkddistopcapture.htm
+old-project: display
+ms.assetid: e5d622cc-c550-44cf-8923-5092226066d9
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkddistopcapture, DxgkDdiStopCapture callback function [Display Devices], DxgkDdiStopCapture, DXGKDDI_STOPCAPTURE, DXGKDDI_STOPCAPTURE, d3dkmddi/DxgkDdiStopCapture, DmFunctions_108ab359-fe5b-46f2-bc1b-f1f91bd5b327.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dkmddi.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DxgkDdiStopCapture
+product: Windows
+targetos: Windows
+req.typenames: DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
 

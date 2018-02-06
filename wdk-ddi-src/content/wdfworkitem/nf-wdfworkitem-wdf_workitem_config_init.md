@@ -1,42 +1,47 @@
 ---
-UID : NF:wdfworkitem.WDF_WORKITEM_CONFIG_INIT
-title : WDF_WORKITEM_CONFIG_INIT function
-author : windows-driver-content
-description : The WDF_WORKITEM_CONFIG_INIT function initializes a driver's WDF_WORKITEM_CONFIG structure.
-old-location : wdf\wdf_workitem_config_init.htm
-old-project : wdf
-ms.assetid : d24d9aea-0cdd-4130-9904-4e50c825612e
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WDF_WORKITEM_CONFIG_INIT function, wdfworkitem/WDF_WORKITEM_CONFIG_INIT, wdf.wdf_workitem_config_init, WDF_WORKITEM_CONFIG_INIT, kmdf.wdf_workitem_config_init, DFWorkItemObjectRef_fa6a881e-6591-448a-9fc3-81ab60ff370c.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfworkitem.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDF_WMI_PROVIDER_CONFIG, WDF_WMI_PROVIDER_CONFIG"
-req.product : Windows 10 or later.
+UID: NF:wdfworkitem.WDF_WORKITEM_CONFIG_INIT
+title: WDF_WORKITEM_CONFIG_INIT function
+author: windows-driver-content
+description: The WDF_WORKITEM_CONFIG_INIT function initializes a driver's WDF_WORKITEM_CONFIG structure.
+old-location: wdf\wdf_workitem_config_init.htm
+old-project: wdf
+ms.assetid: d24d9aea-0cdd-4130-9904-4e50c825612e
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WDF_WORKITEM_CONFIG_INIT function, wdfworkitem/WDF_WORKITEM_CONFIG_INIT, wdf.wdf_workitem_config_init, WDF_WORKITEM_CONFIG_INIT, kmdf.wdf_workitem_config_init, DFWorkItemObjectRef_fa6a881e-6591-448a-9fc3-81ab60ff370c.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfworkitem.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfworkitem.h
+apiname:
+-	WDF_WORKITEM_CONFIG_INIT
+product: Windows
+targetos: Windows
+req.typenames: "*PWDF_WMI_PROVIDER_CONFIG, WDF_WMI_PROVIDER_CONFIG"
+req.product: Windows 10 or later.
 ---
 
 

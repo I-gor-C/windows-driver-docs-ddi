@@ -1,42 +1,47 @@
 ---
-UID : NF:printerextension.IPrinterQueueEvent.OnBidiResponseReceived
-title : IPrinterQueueEvent::OnBidiResponseReceived method
-author : windows-driver-content
-description : Called when a bidi response is received.
-old-location : print\iprinterqueueevent_onbidiresponsereceived.htm
-old-project : print
-ms.assetid : D0CD9950-DF73-4D46-B901-FA45BA88D3CF
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : printerextension/IPrinterQueueEvent::OnBidiResponseReceived, IPrinterQueueEvent, OnBidiResponseReceived, OnBidiResponseReceived method [Print Devices], IPrinterQueueEvent interface, IPrinterQueueEvent interface [Print Devices], OnBidiResponseReceived method, OnBidiResponseReceived method [Print Devices], IPrinterQueueEvent::OnBidiResponseReceived, print.iprinterqueueevent_onbidiresponsereceived
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : printerextension.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : printerextension.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PrintSchemaSelectionType
-req.product : Windows 10 or later.
+UID: NF:printerextension.IPrinterQueueEvent.OnBidiResponseReceived
+title: IPrinterQueueEvent::OnBidiResponseReceived method
+author: windows-driver-content
+description: Called when a bidi response is received.
+old-location: print\iprinterqueueevent_onbidiresponsereceived.htm
+old-project: print
+ms.assetid: D0CD9950-DF73-4D46-B901-FA45BA88D3CF
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: printerextension/IPrinterQueueEvent::OnBidiResponseReceived, IPrinterQueueEvent, OnBidiResponseReceived, OnBidiResponseReceived method [Print Devices], IPrinterQueueEvent interface, IPrinterQueueEvent interface [Print Devices], OnBidiResponseReceived method, OnBidiResponseReceived method [Print Devices], IPrinterQueueEvent::OnBidiResponseReceived, print.iprinterqueueevent_onbidiresponsereceived
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: printerextension.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: printerextension.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Printerextension.h
+apiname:
+-	IPrinterQueueEvent.OnBidiResponseReceived
+product: Windows
+targetos: Windows
+req.typenames: PrintSchemaSelectionType
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:ntifs._FSRTL_PER_FILEOBJECT_CONTEXT
-title : "_FSRTL_PER_FILEOBJECT_CONTEXT"
-author : windows-driver-content
-description : The opaque FSRTL_PER_FILEOBJECT_CONTEXT structure is used by the operating system to track file system filter-driver-defined context information structures for a file object.
-old-location : ifsk\fsrtl_per_fileobject_context.htm
-old-project : ifsk
-ms.assetid : f9d6f957-5878-45ca-86a3-1c62f2a52e65
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : PFSRTL_PER_FILEOBJECT_CONTEXT structure pointer [Installable File System Drivers], PFSRTL_PER_FILEOBJECT_CONTEXT, FSRTL_PER_FILEOBJECT_CONTEXT, contextstructures_0b5fadaf-8b73-4a63-9e1d-fa08359d5e8d.xml, ntifs/FSRTL_PER_FILEOBJECT_CONTEXT, ifsk.fsrtl_per_fileobject_context, _FSRTL_PER_FILEOBJECT_CONTEXT, *PFSRTL_PER_FILEOBJECT_CONTEXT, ntifs/PFSRTL_PER_FILEOBJECT_CONTEXT, FSRTL_PER_FILEOBJECT_CONTEXT structure [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntifs.h
-req.include-header : Fltkernel.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PFSRTL_PER_FILEOBJECT_CONTEXT, FSRTL_PER_FILEOBJECT_CONTEXT"
+UID: NS:ntifs._FSRTL_PER_FILEOBJECT_CONTEXT
+title: "_FSRTL_PER_FILEOBJECT_CONTEXT"
+author: windows-driver-content
+description: The opaque FSRTL_PER_FILEOBJECT_CONTEXT structure is used by the operating system to track file system filter-driver-defined context information structures for a file object.
+old-location: ifsk\fsrtl_per_fileobject_context.htm
+old-project: ifsk
+ms.assetid: f9d6f957-5878-45ca-86a3-1c62f2a52e65
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: PFSRTL_PER_FILEOBJECT_CONTEXT structure pointer [Installable File System Drivers], PFSRTL_PER_FILEOBJECT_CONTEXT, FSRTL_PER_FILEOBJECT_CONTEXT, contextstructures_0b5fadaf-8b73-4a63-9e1d-fa08359d5e8d.xml, ntifs/FSRTL_PER_FILEOBJECT_CONTEXT, ifsk.fsrtl_per_fileobject_context, _FSRTL_PER_FILEOBJECT_CONTEXT, *PFSRTL_PER_FILEOBJECT_CONTEXT, ntifs/PFSRTL_PER_FILEOBJECT_CONTEXT, FSRTL_PER_FILEOBJECT_CONTEXT structure [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntifs.h
+req.include-header: Fltkernel.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntifs.h
+apiname:
+-	FSRTL_PER_FILEOBJECT_CONTEXT
+product: Windows
+targetos: Windows
+req.typenames: "*PFSRTL_PER_FILEOBJECT_CONTEXT, FSRTL_PER_FILEOBJECT_CONTEXT"
 ---
 
 # _FSRTL_PER_FILEOBJECT_CONTEXT structure

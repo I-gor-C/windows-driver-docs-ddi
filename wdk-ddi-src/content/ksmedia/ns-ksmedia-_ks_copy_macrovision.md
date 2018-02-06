@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia._KS_COPY_MACROVISION
-title : "_KS_COPY_MACROVISION"
-author : windows-driver-content
-description : The KS_COPY_MACROVISION structure specifies the Macrovision level of the data stream.
-old-location : stream\ks_copy_macrovision.htm
-old-project : stream
-ms.assetid : 86c6ee78-ae4e-4b96-be83-a5960f36a363
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ksmedia/KS_COPY_MACROVISION, stream.ks_copy_macrovision, KS_COPY_MACROVISION structure [Streaming Media Devices], KS_COPY_MACROVISION, dvdref_42184498-7ac6-48d2-9f26-5bf69ececabb.xml, PKS_COPY_MACROVISION structure pointer [Streaming Media Devices], _KS_COPY_MACROVISION, *PKS_COPY_MACROVISION, ksmedia/PKS_COPY_MACROVISION, PKS_COPY_MACROVISION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKS_COPY_MACROVISION, KS_COPY_MACROVISION"
+UID: NS:ksmedia._KS_COPY_MACROVISION
+title: "_KS_COPY_MACROVISION"
+author: windows-driver-content
+description: The KS_COPY_MACROVISION structure specifies the Macrovision level of the data stream.
+old-location: stream\ks_copy_macrovision.htm
+old-project: stream
+ms.assetid: 86c6ee78-ae4e-4b96-be83-a5960f36a363
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ksmedia/KS_COPY_MACROVISION, stream.ks_copy_macrovision, KS_COPY_MACROVISION structure [Streaming Media Devices], KS_COPY_MACROVISION, dvdref_42184498-7ac6-48d2-9f26-5bf69ececabb.xml, PKS_COPY_MACROVISION structure pointer [Streaming Media Devices], _KS_COPY_MACROVISION, *PKS_COPY_MACROVISION, ksmedia/PKS_COPY_MACROVISION, PKS_COPY_MACROVISION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	KS_COPY_MACROVISION
+product: Windows
+targetos: Windows
+req.typenames: "*PKS_COPY_MACROVISION, KS_COPY_MACROVISION"
 ---
 
 # _KS_COPY_MACROVISION structure

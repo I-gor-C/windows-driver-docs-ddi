@@ -1,41 +1,46 @@
 ---
-UID : NS:ndis._LOCK_STATE
-title : "_LOCK_STATE"
-author : windows-driver-content
-description : The LOCK_STATE structure tracks the state of a read/write lock.
-old-location : netvista\lock_state.htm
-old-project : netvista
-ms.assetid : d23c7824-b2ab-4316-8d4c-474619a22223
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : "*PLOCK_STATE, PLOCK_STATE, LOCK_STATE, ndis/LOCK_STATE, PLOCK_STATE structure pointer [Network Drivers Starting with Windows Vista], _LOCK_STATE, netvista.lock_state, ndis_processor_group_ref_d04d3375-211e-4ef8-a30b-d2c6b98f9cc1.xml, LOCK_STATE structure [Network Drivers Starting with Windows Vista], ndis/PLOCK_STATE"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.0 and 6.1. For NDIS 6.20 and later, use LOCK_STATE_EX instead.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : See Remarks section
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PLOCK_STATE, LOCK_STATE"
+UID: NS:ndis._LOCK_STATE
+title: "_LOCK_STATE"
+author: windows-driver-content
+description: The LOCK_STATE structure tracks the state of a read/write lock.
+old-location: netvista\lock_state.htm
+old-project: netvista
+ms.assetid: d23c7824-b2ab-4316-8d4c-474619a22223
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: "*PLOCK_STATE, PLOCK_STATE, LOCK_STATE, ndis/LOCK_STATE, PLOCK_STATE structure pointer [Network Drivers Starting with Windows Vista], _LOCK_STATE, netvista.lock_state, ndis_processor_group_ref_d04d3375-211e-4ef8-a30b-d2c6b98f9cc1.xml, LOCK_STATE structure [Network Drivers Starting with Windows Vista], ndis/PLOCK_STATE"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.0 and 6.1. For NDIS 6.20 and later, use LOCK_STATE_EX instead.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: See Remarks section
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndis.h
+apiname:
+-	LOCK_STATE
+product: Windows
+targetos: Windows
+req.typenames: "*PLOCK_STATE, LOCK_STATE"
 ---
 
 # _LOCK_STATE structure

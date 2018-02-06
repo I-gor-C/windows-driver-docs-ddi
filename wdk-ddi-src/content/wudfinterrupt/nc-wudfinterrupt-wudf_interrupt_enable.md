@@ -1,42 +1,47 @@
 ---
-UID : NC:wudfinterrupt.WUDF_INTERRUPT_ENABLE
-title : WUDF_INTERRUPT_ENABLE
-author : windows-driver-content
-description : A driver's OnInterruptEnable event callback function enables a specified hardware interrupt.
-old-location : wdf\oninterruptenable.htm
-old-project : wdf
-ms.assetid : 6C091427-59FF-4101-ACD6-353C959794F6
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.oninterruptenable, OnInterruptEnable callback function, OnInterruptEnable, WUDF_INTERRUPT_ENABLE, WUDF_INTERRUPT_ENABLE, wudfinterrupt/OnInterruptEnable, umdf.oninterruptenable
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wudfinterrupt.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.11
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS, *PWUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS
-req.product : Windows 10 or later.
+UID: NC:wudfinterrupt.WUDF_INTERRUPT_ENABLE
+title: WUDF_INTERRUPT_ENABLE
+author: windows-driver-content
+description: A driver's OnInterruptEnable event callback function enables a specified hardware interrupt.
+old-location: wdf\oninterruptenable.htm
+old-project: wdf
+ms.assetid: 6C091427-59FF-4101-ACD6-353C959794F6
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.oninterruptenable, OnInterruptEnable callback function, OnInterruptEnable, WUDF_INTERRUPT_ENABLE, WUDF_INTERRUPT_ENABLE, wudfinterrupt/OnInterruptEnable, umdf.oninterruptenable
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wudfinterrupt.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.11
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Wudfinterrupt.h
+apiname:
+-	OnInterruptEnable
+product: Windows
+targetos: Windows
+req.typenames: WUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS, *PWUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS
+req.product: Windows 10 or later.
 ---
 
 

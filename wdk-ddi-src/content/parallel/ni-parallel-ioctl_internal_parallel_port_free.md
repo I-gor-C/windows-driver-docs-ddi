@@ -1,41 +1,46 @@
 ---
-UID : NI:parallel.IOCTL_INTERNAL_PARALLEL_PORT_FREE
-title : IOCTL_INTERNAL_PARALLEL_PORT_FREE
-author : windows-driver-content
-description : The IOCTL_INTERNAL_PARALLEL_PORT_FREE request frees a parallel port.
-old-location : parports\ioctl_internal_parallel_port_free.htm
-old-project : parports
-ms.assetid : bdf44009-4898-4890-9441-918e1647566d
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : parports.ioctl_internal_parallel_port_free, IOCTL_INTERNAL_PARALLEL_PORT_FREE control code [Parallel Ports], IOCTL_INTERNAL_PARALLEL_PORT_FREE, parallel/IOCTL_INTERNAL_PARALLEL_PORT_FREE, cisspd_ec1947dc-7124-445b-8b4a-759d6cba8225.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : parallel.h
-req.include-header : Parallel.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RILGBATOKEN, *LPRILGBATOKEN
+UID: NI:parallel.IOCTL_INTERNAL_PARALLEL_PORT_FREE
+title: IOCTL_INTERNAL_PARALLEL_PORT_FREE
+author: windows-driver-content
+description: The IOCTL_INTERNAL_PARALLEL_PORT_FREE request frees a parallel port.
+old-location: parports\ioctl_internal_parallel_port_free.htm
+old-project: parports
+ms.assetid: bdf44009-4898-4890-9441-918e1647566d
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: parports.ioctl_internal_parallel_port_free, IOCTL_INTERNAL_PARALLEL_PORT_FREE control code [Parallel Ports], IOCTL_INTERNAL_PARALLEL_PORT_FREE, parallel/IOCTL_INTERNAL_PARALLEL_PORT_FREE, cisspd_ec1947dc-7124-445b-8b4a-759d6cba8225.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: parallel.h
+req.include-header: Parallel.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	parallel.h
+apiname:
+-	IOCTL_INTERNAL_PARALLEL_PORT_FREE
+product: Windows
+targetos: Windows
+req.typenames: RILGBATOKEN, *LPRILGBATOKEN
 ---
 
 # IOCTL_INTERNAL_PARALLEL_PORT_FREE IOCTL

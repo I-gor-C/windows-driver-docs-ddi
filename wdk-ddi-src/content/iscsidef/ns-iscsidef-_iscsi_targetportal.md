@@ -1,41 +1,46 @@
 ---
-UID : NS:iscsidef._ISCSI_TargetPortal
-title : "_ISCSI_TargetPortal"
-author : windows-driver-content
-description : The ISCSI_TargetPortal structure provides a definition of a target portal.
-old-location : storage\iscsi_targetportal.htm
-old-project : storage
-ms.assetid : 1adb1dbf-3ec4-4e32-bfe8-cfcf992f67ca
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : iscsidef/ISCSI_TargetPortal, PISCSI_TargetPortal structure pointer [Storage Devices], ISCSI_TargetPortal structure [Storage Devices], ISCSI_TargetPortal, structs-iSCSI_fcbc99fd-e52d-45f4-b525-03c2d925f382.xml, PISCSI_TargetPortal, *PISCSI_TargetPortal, iscsidef/PISCSI_TargetPortal, _ISCSI_TargetPortal, storage.iscsi_targetportal
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : iscsidef.h
-req.include-header : Iscsidef.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : ISCSI_TargetPortal, *PISCSI_TargetPortal
+UID: NS:iscsidef._ISCSI_TargetPortal
+title: "_ISCSI_TargetPortal"
+author: windows-driver-content
+description: The ISCSI_TargetPortal structure provides a definition of a target portal.
+old-location: storage\iscsi_targetportal.htm
+old-project: storage
+ms.assetid: 1adb1dbf-3ec4-4e32-bfe8-cfcf992f67ca
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: iscsidef/ISCSI_TargetPortal, PISCSI_TargetPortal structure pointer [Storage Devices], ISCSI_TargetPortal structure [Storage Devices], ISCSI_TargetPortal, structs-iSCSI_fcbc99fd-e52d-45f4-b525-03c2d925f382.xml, PISCSI_TargetPortal, *PISCSI_TargetPortal, iscsidef/PISCSI_TargetPortal, _ISCSI_TargetPortal, storage.iscsi_targetportal
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: iscsidef.h
+req.include-header: Iscsidef.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	iscsidef.h
+apiname:
+-	ISCSI_TargetPortal
+product: Windows
+targetos: Windows
+req.typenames: ISCSI_TargetPortal, *PISCSI_TargetPortal
 ---
 
 # _ISCSI_TargetPortal structure

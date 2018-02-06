@@ -1,41 +1,46 @@
 ---
-UID : NS:ntdddisk._IDEREGS
-title : "_IDEREGS"
-author : windows-driver-content
-description : The IDEREGS structure is used to report the contents of the IDE controller registers.
-old-location : storage\ideregs.htm
-old-project : storage
-ms.assetid : 20897336-e032-4aa7-be5f-47704c6d1d12
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ideregs, IDEREGS, *LPIDEREGS, PIDEREGS, *PIDEREGS, IDEREGS structure [Storage Devices], LPIDEREGS, _IDEREGS, structs-IDE_aeab294c-9363-4207-bbcb-d9d442ab5c92.xml, ntdddisk/IDEREGS, PIDEREGS structure pointer [Storage Devices], ntdddisk/PIDEREGS, LPIDEREGS structure pointer [Storage Devices], ntdddisk/LPIDEREGS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntdddisk.h
-req.include-header : Ntdddisk.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : IDEREGS, *LPIDEREGS, *PIDEREGS
+UID: NS:ntdddisk._IDEREGS
+title: "_IDEREGS"
+author: windows-driver-content
+description: The IDEREGS structure is used to report the contents of the IDE controller registers.
+old-location: storage\ideregs.htm
+old-project: storage
+ms.assetid: 20897336-e032-4aa7-be5f-47704c6d1d12
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ideregs, IDEREGS, *LPIDEREGS, PIDEREGS, *PIDEREGS, IDEREGS structure [Storage Devices], LPIDEREGS, _IDEREGS, structs-IDE_aeab294c-9363-4207-bbcb-d9d442ab5c92.xml, ntdddisk/IDEREGS, PIDEREGS structure pointer [Storage Devices], ntdddisk/PIDEREGS, LPIDEREGS structure pointer [Storage Devices], ntdddisk/LPIDEREGS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntdddisk.h
+req.include-header: Ntdddisk.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntdddisk.h
+apiname:
+-	IDEREGS
+product: Windows
+targetos: Windows
+req.typenames: IDEREGS, *LPIDEREGS, *PIDEREGS
 ---
 
 # _IDEREGS structure

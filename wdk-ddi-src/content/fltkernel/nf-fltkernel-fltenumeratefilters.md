@@ -1,41 +1,47 @@
 ---
-UID : NF:fltkernel.FltEnumerateFilters
-title : FltEnumerateFilters function
-author : windows-driver-content
-description : The FltEnumerateFilters routine enumerates all registered minifilter drivers in the system.
-old-location : ifsk\fltenumeratefilters.htm
-old-project : ifsk
-ms.assetid : f39ff534-7b51-49b5-bb1f-7cb0e18b3cfc
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltApiRef_e_to_o_04dcdecd-0910-42be-ae92-93bce56216d7.xml, FltEnumerateFilters, fltkernel/FltEnumerateFilters, FltEnumerateFilters routine [Installable File System Drivers], ifsk.fltenumeratefilters
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltEnumerateFilters
+title: FltEnumerateFilters function
+author: windows-driver-content
+description: The FltEnumerateFilters routine enumerates all registered minifilter drivers in the system.
+old-location: ifsk\fltenumeratefilters.htm
+old-project: ifsk
+ms.assetid: f39ff534-7b51-49b5-bb1f-7cb0e18b3cfc
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltApiRef_e_to_o_04dcdecd-0910-42be-ae92-93bce56216d7.xml, FltEnumerateFilters, fltkernel/FltEnumerateFilters, FltEnumerateFilters routine [Installable File System Drivers], ifsk.fltenumeratefilters
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	FltMgr.lib
+-	FltMgr.dll
+apiname:
+-	FltEnumerateFilters
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

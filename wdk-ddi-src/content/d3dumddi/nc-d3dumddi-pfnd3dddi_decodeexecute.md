@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_DECODEEXECUTE
-title : PFND3DDDI_DECODEEXECUTE
-author : windows-driver-content
-description : The DecodeExecute function performs a decode operation by using the given Microsoft DirectX Video Accelerator (VA) decode device.
-old-location : display\decodeexecute.htm
-old-project : display
-ms.assetid : e12496c0-e3e4-437e-9f84-a30ee99b4541
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.decodeexecute, DecodeExecute callback function [Display Devices], DecodeExecute, PFND3DDDI_DECODEEXECUTE, PFND3DDDI_DECODEEXECUTE, d3dumddi/DecodeExecute, UserModeDisplayDriver_Functions_6e4181b3-2ba5-4c77-a05a-4c8bb2d0d97c.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_DECODEEXECUTE
+title: PFND3DDDI_DECODEEXECUTE
+author: windows-driver-content
+description: The DecodeExecute function performs a decode operation by using the given Microsoft DirectX Video Accelerator (VA) decode device.
+old-location: display\decodeexecute.htm
+old-project: display
+ms.assetid: e12496c0-e3e4-437e-9f84-a30ee99b4541
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.decodeexecute, DecodeExecute callback function [Display Devices], DecodeExecute, PFND3DDDI_DECODEEXECUTE, PFND3DDDI_DECODEEXECUTE, d3dumddi/DecodeExecute, UserModeDisplayDriver_Functions_6e4181b3-2ba5-4c77-a05a-4c8bb2d0d97c.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	DecodeExecute
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

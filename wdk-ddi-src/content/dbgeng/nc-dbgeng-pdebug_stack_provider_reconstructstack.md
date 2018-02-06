@@ -1,41 +1,46 @@
 ---
-UID : NC:dbgeng.PDEBUG_STACK_PROVIDER_RECONSTRUCTSTACK
-title : PDEBUG_STACK_PROVIDER_RECONSTRUCTSTACK
-author : windows-driver-content
-description : The ReconstructStack callback function queries dump stream provider on a per-thread basis.
-old-location : debugger\reconstructstack.htm
-old-project : debugger
-ms.assetid : 639A90E8-4B2D-413B-B6F9-078C9DF1B02F
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : debugger.reconstructstack, ReconstructStack, ReconstructStack callback function [Windows Debugging], ReconstructStack, PDEBUG_STACK_PROVIDER_RECONSTRUCTSTACK, PDEBUG_STACK_PROVIDER_RECONSTRUCTSTACK, dbgeng/ReconstructStack
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NC:dbgeng.PDEBUG_STACK_PROVIDER_RECONSTRUCTSTACK
+title: PDEBUG_STACK_PROVIDER_RECONSTRUCTSTACK
+author: windows-driver-content
+description: The ReconstructStack callback function queries dump stream provider on a per-thread basis.
+old-location: debugger\reconstructstack.htm
+old-project: debugger
+ms.assetid: 639A90E8-4B2D-413B-B6F9-078C9DF1B02F
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: debugger.reconstructstack, ReconstructStack, ReconstructStack callback function [Windows Debugging], ReconstructStack, PDEBUG_STACK_PROVIDER_RECONSTRUCTSTACK, PDEBUG_STACK_PROVIDER_RECONSTRUCTSTACK, dbgeng/ReconstructStack
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Dbgeng.h
+apiname:
+-	ReconstructStack
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

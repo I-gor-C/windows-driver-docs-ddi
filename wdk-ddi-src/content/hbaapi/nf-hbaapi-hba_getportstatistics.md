@@ -1,41 +1,46 @@
 ---
-UID : NF:hbaapi.HBA_GetPortStatistics
-title : HBA_GetPortStatistics function
-author : windows-driver-content
-description : The HBA_GetPortStatistics routine retrieves statistics for the indicated port on the HBA.
-old-location : storage\hba_getportstatistics.htm
-old-project : storage
-ms.assetid : 282eccaf-7cb9-4675-9cc3-9261ed1322ca
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : HBA_GetPortStatistics, fibreHBA_rtns_cd33c55b-4c61-4353-ba28-8497e09b49dd.xml, storage.hba_getportstatistics, HBA_GetPortStatistics routine [Storage Devices], hbaapi/HBA_GetPortStatistics
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : hbaapi.h
-req.include-header : Hbaapi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Hbaapi.lib
-req.dll : Hbaapi.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HBA_WWNTYPE
+UID: NF:hbaapi.HBA_GetPortStatistics
+title: HBA_GetPortStatistics function
+author: windows-driver-content
+description: The HBA_GetPortStatistics routine retrieves statistics for the indicated port on the HBA.
+old-location: storage\hba_getportstatistics.htm
+old-project: storage
+ms.assetid: 282eccaf-7cb9-4675-9cc3-9261ed1322ca
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: HBA_GetPortStatistics, fibreHBA_rtns_cd33c55b-4c61-4353-ba28-8497e09b49dd.xml, storage.hba_getportstatistics, HBA_GetPortStatistics routine [Storage Devices], hbaapi/HBA_GetPortStatistics
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: hbaapi.h
+req.include-header: Hbaapi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Hbaapi.lib
+req.dll: Hbaapi.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Hbaapi.dll
+apiname:
+-	HBA_GetPortStatistics
+product: Windows
+targetos: Windows
+req.typenames: HBA_WWNTYPE
 ---
 
 

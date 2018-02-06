@@ -1,42 +1,47 @@
 ---
-UID : NF:sdplib.SdpCreateNodeUInt32
-title : SdpCreateNodeUInt32 function
-author : windows-driver-content
-description : The Bluetooth SdpCreateNodeUInt32 function is used to allocate and initialize an SDP_NODE structure to an unsigned 32-bit integer type.
-old-location : bltooth\sdpcreatenodeuint32.htm
-old-project : bltooth
-ms.assetid : ce89aa5d-ea4e-4d12-a021-e9f52a6bdebb
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : SdpCreateNodeUInt32, SdpCreateNodeUInt32 function [Bluetooth Devices], bth_funcs_8091d5c3-9231-4ee4-aefe-f696a2c04cb2.xml, bltooth.sdpcreatenodeuint32, sdplib/SdpCreateNodeUInt32
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : sdplib.h
-req.include-header : BthSdpddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Versions:\_Supported in Windows Vista, and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= PASSIVE_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SDCMD_DESCRIPTOR, *PSDCMD_DESCRIPTOR
-req.product : Windows 10 or later.
+UID: NF:sdplib.SdpCreateNodeUInt32
+title: SdpCreateNodeUInt32 function
+author: windows-driver-content
+description: The Bluetooth SdpCreateNodeUInt32 function is used to allocate and initialize an SDP_NODE structure to an unsigned 32-bit integer type.
+old-location: bltooth\sdpcreatenodeuint32.htm
+old-project: bltooth
+ms.assetid: ce89aa5d-ea4e-4d12-a021-e9f52a6bdebb
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: SdpCreateNodeUInt32, SdpCreateNodeUInt32 function [Bluetooth Devices], bth_funcs_8091d5c3-9231-4ee4-aefe-f696a2c04cb2.xml, bltooth.sdpcreatenodeuint32, sdplib/SdpCreateNodeUInt32
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: sdplib.h
+req.include-header: BthSdpddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Versions:\_Supported in Windows Vista, and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= PASSIVE_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	sdplib.h
+apiname:
+-	SdpCreateNodeUInt32
+product: Windows
+targetos: Windows
+req.typenames: SDCMD_DESCRIPTOR, *PSDCMD_DESCRIPTOR
+req.product: Windows 10 or later.
 ---
 
 

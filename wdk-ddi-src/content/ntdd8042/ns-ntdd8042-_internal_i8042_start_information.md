@@ -1,41 +1,46 @@
 ---
-UID : NS:ntdd8042._INTERNAL_I8042_START_INFORMATION
-title : "_INTERNAL_I8042_START_INFORMATION"
-author : windows-driver-content
-description : INTERNAL_I8042_START_INFORMATION specifies the interrupt object that an optional, vendor-supplied, upper-level filter device driver can use to synchronize its operation with an I8042prt ISR.
-old-location : hid\internal_i8042_start_information.htm
-old-project : hid
-ms.assetid : 8ceaa9de-195f-4a89-bc3e-323256097248
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : INTERNAL_I8042_START_INFORMATION structure [Human Input Devices], PINTERNAL_I8042_START_INFORMATION structure pointer [Human Input Devices], i8042ref_bf7bcffd-5c6b-47b4-be53-2b543990b2fa.xml, PINTERNAL_I8042_START_INFORMATION, INTERNAL_I8042_START_INFORMATION, ntdd8042/INTERNAL_I8042_START_INFORMATION, ntdd8042/PINTERNAL_I8042_START_INFORMATION, _INTERNAL_I8042_START_INFORMATION, *PINTERNAL_I8042_START_INFORMATION, hid.internal_i8042_start_information
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntdd8042.h
-req.include-header : Ntdd8042.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PINTERNAL_I8042_START_INFORMATION, INTERNAL_I8042_START_INFORMATION"
+UID: NS:ntdd8042._INTERNAL_I8042_START_INFORMATION
+title: "_INTERNAL_I8042_START_INFORMATION"
+author: windows-driver-content
+description: INTERNAL_I8042_START_INFORMATION specifies the interrupt object that an optional, vendor-supplied, upper-level filter device driver can use to synchronize its operation with an I8042prt ISR.
+old-location: hid\internal_i8042_start_information.htm
+old-project: hid
+ms.assetid: 8ceaa9de-195f-4a89-bc3e-323256097248
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: INTERNAL_I8042_START_INFORMATION structure [Human Input Devices], PINTERNAL_I8042_START_INFORMATION structure pointer [Human Input Devices], i8042ref_bf7bcffd-5c6b-47b4-be53-2b543990b2fa.xml, PINTERNAL_I8042_START_INFORMATION, INTERNAL_I8042_START_INFORMATION, ntdd8042/INTERNAL_I8042_START_INFORMATION, ntdd8042/PINTERNAL_I8042_START_INFORMATION, _INTERNAL_I8042_START_INFORMATION, *PINTERNAL_I8042_START_INFORMATION, hid.internal_i8042_start_information
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntdd8042.h
+req.include-header: Ntdd8042.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntdd8042.h
+apiname:
+-	INTERNAL_I8042_START_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: "*PINTERNAL_I8042_START_INFORMATION, INTERNAL_I8042_START_INFORMATION"
 ---
 
 # _INTERNAL_I8042_START_INFORMATION structure

@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsCreateClock
-title : KsCreateClock function
-author : windows-driver-content
-description : The KsCreateClock function creates a handle to a clock instance.
-old-location : stream\kscreateclock.htm
-old-project : stream
-ms.assetid : a125161d-c086-45a4-9b66-4c13d9ed5f11
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ksfunc_ba840ce8-a1c9-4ede-8d2e-6e2829ad9b11.xml, KsCreateClock function [Streaming Media Devices], ks/KsCreateClock, stream.kscreateclock, KsCreateClock
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsCreateClock
+title: KsCreateClock function
+author: windows-driver-content
+description: The KsCreateClock function creates a handle to a clock instance.
+old-location: stream\kscreateclock.htm
+old-project: stream
+ms.assetid: a125161d-c086-45a4-9b66-4c13d9ed5f11
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ksfunc_ba840ce8-a1c9-4ede-8d2e-6e2829ad9b11.xml, KsCreateClock function [Streaming Media Devices], ks/KsCreateClock, stream.kscreateclock, KsCreateClock
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ks.lib
+-	ks.dll
+apiname:
+-	KsCreateClock
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

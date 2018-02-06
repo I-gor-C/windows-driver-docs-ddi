@@ -1,42 +1,47 @@
 ---
-UID : NF:wiamdef.wiasReadPropLong
-title : wiasReadPropLong function
-author : windows-driver-content
-description : The wiasReadPropLong function retrieves a long integer property value from a WIA item.
-old-location : image\wiasreadproplong.htm
-old-project : image
-ms.assetid : 77fc58fd-1bcf-4a68-b083-fa2bfa3ac312
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : wiasFncs_a60071a3-6ae9-431d-8d8b-a964547e9770.xml, image.wiasreadproplong, wiasReadPropLong function [Imaging Devices], wiamdef/wiasReadPropLong, wiasReadPropLong
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wiamdef.h
-req.include-header : Wiamdef.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wiaservc.lib
-req.dll : Wiaservc.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*LPDEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2, DEVICEDIALOGDATA2"
-req.product : Windows 10 or later.
+UID: NF:wiamdef.wiasReadPropLong
+title: wiasReadPropLong function
+author: windows-driver-content
+description: The wiasReadPropLong function retrieves a long integer property value from a WIA item.
+old-location: image\wiasreadproplong.htm
+old-project: image
+ms.assetid: 77fc58fd-1bcf-4a68-b083-fa2bfa3ac312
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: wiasFncs_a60071a3-6ae9-431d-8d8b-a964547e9770.xml, image.wiasreadproplong, wiasReadPropLong function [Imaging Devices], wiamdef/wiasReadPropLong, wiasReadPropLong
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wiamdef.h
+req.include-header: Wiamdef.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wiaservc.lib
+req.dll: Wiaservc.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Wiaservc.dll
+apiname:
+-	wiasReadPropLong
+product: Windows
+targetos: Windows
+req.typenames: "*LPDEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2, DEVICEDIALOGDATA2"
+req.product: Windows 10 or later.
 ---
 
 

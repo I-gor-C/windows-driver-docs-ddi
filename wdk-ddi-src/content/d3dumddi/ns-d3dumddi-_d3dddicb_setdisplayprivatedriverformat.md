@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._D3DDDICB_SETDISPLAYPRIVATEDRIVERFORMAT
-title : "_D3DDDICB_SETDISPLAYPRIVATEDRIVERFORMAT"
-author : windows-driver-content
-description : The D3DDDICB_SETDISPLAYPRIVATEDRIVERFORMAT structure describes the private-format attribute to set for a video present source in a call to the pfnSetDisplayPrivateDriverFormatCb function.
-old-location : display\d3dddicb_setdisplayprivatedriverformat.htm
-old-project : display
-ms.assetid : b10b020d-f18c-403d-b1ee-79552d18ad4e
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.d3dddicb_setdisplayprivatedriverformat, D3D_param_Structs_e953e85b-93cb-46c0-bab8-6d414568b153.xml, d3dumddi/D3DDDICB_SETDISPLAYPRIVATEDRIVERFORMAT, D3DDDICB_SETDISPLAYPRIVATEDRIVERFORMAT, D3DDDICB_SETDISPLAYPRIVATEDRIVERFORMAT structure [Display Devices], _D3DDDICB_SETDISPLAYPRIVATEDRIVERFORMAT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDICB_SETDISPLAYPRIVATEDRIVERFORMAT
+UID: NS:d3dumddi._D3DDDICB_SETDISPLAYPRIVATEDRIVERFORMAT
+title: "_D3DDDICB_SETDISPLAYPRIVATEDRIVERFORMAT"
+author: windows-driver-content
+description: The D3DDDICB_SETDISPLAYPRIVATEDRIVERFORMAT structure describes the private-format attribute to set for a video present source in a call to the pfnSetDisplayPrivateDriverFormatCb function.
+old-location: display\d3dddicb_setdisplayprivatedriverformat.htm
+old-project: display
+ms.assetid: b10b020d-f18c-403d-b1ee-79552d18ad4e
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.d3dddicb_setdisplayprivatedriverformat, D3D_param_Structs_e953e85b-93cb-46c0-bab8-6d414568b153.xml, d3dumddi/D3DDDICB_SETDISPLAYPRIVATEDRIVERFORMAT, D3DDDICB_SETDISPLAYPRIVATEDRIVERFORMAT, D3DDDICB_SETDISPLAYPRIVATEDRIVERFORMAT structure [Display Devices], _D3DDDICB_SETDISPLAYPRIVATEDRIVERFORMAT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	D3DDDICB_SETDISPLAYPRIVATEDRIVERFORMAT
+product: Windows
+targetos: Windows
+req.typenames: D3DDDICB_SETDISPLAYPRIVATEDRIVERFORMAT
 ---
 
 # _D3DDDICB_SETDISPLAYPRIVATEDRIVERFORMAT structure

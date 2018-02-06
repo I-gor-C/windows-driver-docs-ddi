@@ -1,41 +1,46 @@
 ---
-UID : NC:ntddk.PCREATE_PROCESS_NOTIFY_ROUTINE
-title : PCREATE_PROCESS_NOTIFY_ROUTINE
-author : windows-driver-content
-description : Process-creation callback implemented by a driver to track the system-wide creation and deletion of processes against the driver's internal state.
-old-location : kernel\pcreate_process_notify_routine.htm
-old-project : kernel
-ms.assetid : 2C5B3C90-04A9-48CF-9162-0E069A483C5F
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.pcreate_process_notify_routine, SetCreateProcessNotifyRoutine callback function [Kernel-Mode Driver Architecture], SetCreateProcessNotifyRoutine, PCREATE_PROCESS_NOTIFY_ROUTINE, PCREATE_PROCESS_NOTIFY_ROUTINE, ntddk/SetCreateProcessNotifyRoutine
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PFILTER_INITIALIZATION_DATA, FILTER_INITIALIZATION_DATA"
+UID: NC:ntddk.PCREATE_PROCESS_NOTIFY_ROUTINE
+title: PCREATE_PROCESS_NOTIFY_ROUTINE
+author: windows-driver-content
+description: Process-creation callback implemented by a driver to track the system-wide creation and deletion of processes against the driver's internal state.
+old-location: kernel\pcreate_process_notify_routine.htm
+old-project: kernel
+ms.assetid: 2C5B3C90-04A9-48CF-9162-0E069A483C5F
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.pcreate_process_notify_routine, SetCreateProcessNotifyRoutine callback function [Kernel-Mode Driver Architecture], SetCreateProcessNotifyRoutine, PCREATE_PROCESS_NOTIFY_ROUTINE, PCREATE_PROCESS_NOTIFY_ROUTINE, ntddk/SetCreateProcessNotifyRoutine
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ntddk.h
+apiname:
+-	SetCreateProcessNotifyRoutine
+product: Windows
+targetos: Windows
+req.typenames: "*PFILTER_INITIALIZATION_DATA, FILTER_INITIALIZATION_DATA"
 ---
 
 

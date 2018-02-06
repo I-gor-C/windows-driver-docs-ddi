@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_BLT
-title : PFND3DDDI_BLT
-author : windows-driver-content
-description : The Blt function copies the contents of a source surface to a destination surface.
-old-location : display\blt.htm
-old-project : display
-ms.assetid : e87576c6-0173-4d8e-bbaf-b82e2907140a
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.blt, Blt callback function [Display Devices], Blt, PFND3DDDI_BLT, PFND3DDDI_BLT, d3dumddi/Blt, UserModeDisplayDriver_Functions_d2dfd3c9-e7e0-4953-bc88-3d3330aff161.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_BLT
+title: PFND3DDDI_BLT
+author: windows-driver-content
+description: The Blt function copies the contents of a source surface to a destination surface.
+old-location: display\blt.htm
+old-project: display
+ms.assetid: e87576c6-0173-4d8e-bbaf-b82e2907140a
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.blt, Blt callback function [Display Devices], Blt, PFND3DDDI_BLT, PFND3DDDI_BLT, d3dumddi/Blt, UserModeDisplayDriver_Functions_d2dfd3c9-e7e0-4953-bc88-3d3330aff161.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	Blt
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

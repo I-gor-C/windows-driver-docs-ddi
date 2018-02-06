@@ -1,42 +1,47 @@
 ---
-UID : NS:storport._STOR_POFX_COMPONENT_IDLE_STATE
-title : "_STOR_POFX_COMPONENT_IDLE_STATE"
-author : windows-driver-content
-description : The STOR_POFX_COMPONENT_IDLE_STATE structure specifies the attributes of an functional power state (F-state) of a component in a storage device.
-old-location : storage\stor_pofx_component_idle_state.htm
-old-project : storage
-ms.assetid : 2600405F-AE07-4284-84AD-D19EEE2058BF
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : STOR_POFX_COMPONENT_IDLE_STATE structure [Storage Devices], _STOR_POFX_COMPONENT_IDLE_STATE, storage.stor_pofx_component_idle_state, storport/PSTOR_POFX_COMPONENT_IDLE_STATE, storport/STOR_POFX_COMPONENT_IDLE_STATE, PSTOR_POFX_COMPONENT_IDLE_STATE, STOR_POFX_COMPONENT_IDLE_STATE, *PSTOR_POFX_COMPONENT_IDLE_STATE, PSTOR_POFX_COMPONENT_IDLE_STATE structure pointer [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSTOR_POFX_COMPONENT_IDLE_STATE, STOR_POFX_COMPONENT_IDLE_STATE"
-req.product : Windows 10 or later.
+UID: NS:storport._STOR_POFX_COMPONENT_IDLE_STATE
+title: "_STOR_POFX_COMPONENT_IDLE_STATE"
+author: windows-driver-content
+description: The STOR_POFX_COMPONENT_IDLE_STATE structure specifies the attributes of an functional power state (F-state) of a component in a storage device.
+old-location: storage\stor_pofx_component_idle_state.htm
+old-project: storage
+ms.assetid: 2600405F-AE07-4284-84AD-D19EEE2058BF
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: STOR_POFX_COMPONENT_IDLE_STATE structure [Storage Devices], _STOR_POFX_COMPONENT_IDLE_STATE, storage.stor_pofx_component_idle_state, storport/PSTOR_POFX_COMPONENT_IDLE_STATE, storport/STOR_POFX_COMPONENT_IDLE_STATE, PSTOR_POFX_COMPONENT_IDLE_STATE, STOR_POFX_COMPONENT_IDLE_STATE, *PSTOR_POFX_COMPONENT_IDLE_STATE, PSTOR_POFX_COMPONENT_IDLE_STATE structure pointer [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Storport.h
+apiname:
+-	STOR_POFX_COMPONENT_IDLE_STATE
+product: Windows
+targetos: Windows
+req.typenames: "*PSTOR_POFX_COMPONENT_IDLE_STATE, STOR_POFX_COMPONENT_IDLE_STATE"
+req.product: Windows 10 or later.
 ---
 
 # _STOR_POFX_COMPONENT_IDLE_STATE structure

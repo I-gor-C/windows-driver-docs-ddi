@@ -1,42 +1,47 @@
 ---
-UID : NS:printoem._GETINFO_GLYPHBITMAP
-title : "_GETINFO_GLYPHBITMAP"
-author : windows-driver-content
-description : The GETINFO_GLYPHBITMAP structure is used as input to the UNIFONTOBJ_GetInfo callback function.
-old-location : print\getinfo_glyphbitmap.htm
-old-project : print
-ms.assetid : 6a5887fd-0269-4cd1-acf1-f7242016d993
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : PGETINFO_GLYPHBITMAP, print.getinfo_glyphbitmap, PGETINFO_GLYPHBITMAP structure pointer [Print Devices], *PGETINFO_GLYPHBITMAP, GETINFO_GLYPHBITMAP, printoem/GETINFO_GLYPHBITMAP, _GETINFO_GLYPHBITMAP, printoem/PGETINFO_GLYPHBITMAP, GETINFO_GLYPHBITMAP structure [Print Devices], print_unidrv-pscript_rendering_56355138-13b0-4e8b-8132-f7c017105ab3.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : printoem.h
-req.include-header : Printoem.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : GETINFO_GLYPHBITMAP, *PGETINFO_GLYPHBITMAP
-req.product : Windows 10 or later.
+UID: NS:printoem._GETINFO_GLYPHBITMAP
+title: "_GETINFO_GLYPHBITMAP"
+author: windows-driver-content
+description: The GETINFO_GLYPHBITMAP structure is used as input to the UNIFONTOBJ_GetInfo callback function.
+old-location: print\getinfo_glyphbitmap.htm
+old-project: print
+ms.assetid: 6a5887fd-0269-4cd1-acf1-f7242016d993
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: PGETINFO_GLYPHBITMAP, print.getinfo_glyphbitmap, PGETINFO_GLYPHBITMAP structure pointer [Print Devices], *PGETINFO_GLYPHBITMAP, GETINFO_GLYPHBITMAP, printoem/GETINFO_GLYPHBITMAP, _GETINFO_GLYPHBITMAP, printoem/PGETINFO_GLYPHBITMAP, GETINFO_GLYPHBITMAP structure [Print Devices], print_unidrv-pscript_rendering_56355138-13b0-4e8b-8132-f7c017105ab3.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: printoem.h
+req.include-header: Printoem.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	printoem.h
+apiname:
+-	GETINFO_GLYPHBITMAP
+product: Windows
+targetos: Windows
+req.typenames: GETINFO_GLYPHBITMAP, *PGETINFO_GLYPHBITMAP
+req.product: Windows 10 or later.
 ---
 
 # _GETINFO_GLYPHBITMAP structure

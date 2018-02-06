@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGK_HISTORY_BUFFER
-title : "_DXGK_HISTORY_BUFFER"
-author : windows-driver-content
-description : Specifies a history buffer that stores time stamps that record GPU activity throughout the execution lifetime of a direct memory access (DMA) buffer.
-old-location : display\dxgk_history_buffer.htm
-old-project : display
-ms.assetid : 66088355-A110-4295-81D9-542491E2D6E4
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgk_history_buffer, DXGK_HISTORY_BUFFER, DXGK_HISTORY_BUFFER structure [Display Devices], d3dkmddi/DXGK_HISTORY_BUFFER, _DXGK_HISTORY_BUFFER
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8.1,WDDM 1.3 and later
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_HISTORY_BUFFER
+UID: NS:d3dkmddi._DXGK_HISTORY_BUFFER
+title: "_DXGK_HISTORY_BUFFER"
+author: windows-driver-content
+description: Specifies a history buffer that stores time stamps that record GPU activity throughout the execution lifetime of a direct memory access (DMA) buffer.
+old-location: display\dxgk_history_buffer.htm
+old-project: display
+ms.assetid: 66088355-A110-4295-81D9-542491E2D6E4
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgk_history_buffer, DXGK_HISTORY_BUFFER, DXGK_HISTORY_BUFFER structure [Display Devices], d3dkmddi/DXGK_HISTORY_BUFFER, _DXGK_HISTORY_BUFFER
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8.1,WDDM 1.3 and later
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	D3dkmddi.h
+apiname:
+-	DXGK_HISTORY_BUFFER
+product: Windows
+targetos: Windows
+req.typenames: DXGK_HISTORY_BUFFER
 ---
 
 # _DXGK_HISTORY_BUFFER structure

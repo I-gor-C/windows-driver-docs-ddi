@@ -1,42 +1,47 @@
 ---
-UID : NC:wlanihv.DOT11EXTIHV_INIT_ADAPTER
-title : DOT11EXTIHV_INIT_ADAPTER
-author : windows-driver-content
-description : Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
-old-location : netvista\dot11extihvinitadapter.htm
-old-project : netvista
-ms.assetid : 96dc1718-ee35-440a-94e8-eba4a41c9559
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.dot11extihvinitadapter, Dot11ExtIhvInitAdapter callback function [Network Drivers Starting with Windows Vista], Dot11ExtIhvInitAdapter, DOT11EXTIHV_INIT_ADAPTER, DOT11EXTIHV_INIT_ADAPTER, wlanihv/Dot11ExtIhvInitAdapter, Native_802.11_IHV_Ext_c2fbb863-6b05-4444-90f1-37f375db9b9e.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wlanihv.h
-req.include-header : Wlanihv.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating   systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDRIVER_INFO_8W, DRIVER_INFO_8W, *LPDRIVER_INFO_8W"
-req.product : Windows 10 or later.
+UID: NC:wlanihv.DOT11EXTIHV_INIT_ADAPTER
+title: DOT11EXTIHV_INIT_ADAPTER
+author: windows-driver-content
+description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+old-location: netvista\dot11extihvinitadapter.htm
+old-project: netvista
+ms.assetid: 96dc1718-ee35-440a-94e8-eba4a41c9559
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.dot11extihvinitadapter, Dot11ExtIhvInitAdapter callback function [Network Drivers Starting with Windows Vista], Dot11ExtIhvInitAdapter, DOT11EXTIHV_INIT_ADAPTER, DOT11EXTIHV_INIT_ADAPTER, wlanihv/Dot11ExtIhvInitAdapter, Native_802.11_IHV_Ext_c2fbb863-6b05-4444-90f1-37f375db9b9e.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wlanihv.h
+req.include-header: Wlanihv.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	wlanihv.h
+apiname:
+-	Dot11ExtIhvInitAdapter
+product: Windows
+targetos: Windows
+req.typenames: "*PDRIVER_INFO_8W, DRIVER_INFO_8W, *LPDRIVER_INFO_8W"
+req.product: Windows 10 or later.
 ---
 
 

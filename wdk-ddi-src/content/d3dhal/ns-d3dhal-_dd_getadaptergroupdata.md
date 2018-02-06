@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dhal._DD_GETADAPTERGROUPDATA
-title : "_DD_GETADAPTERGROUPDATA"
-author : windows-driver-content
-description : DirectX 9.0 and later versions only. DD_GETADAPTERGROUPDATA is the data structure pointed to by the lpvData field of DD_GETDRIVERINFODATA for DD_GETDRIVERINFO2DATA queries with the type D3DGDI2_TYPE_GETADAPTERGROUP.
-old-location : display\dd_getadaptergroupdata.htm
-old-project : display
-ms.assetid : 8c427880-f809-4b58-8f69-d81a273d705c
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DD_GETADAPTERGROUPDATA structure [Display Devices], d3dhal/DD_GETADAPTERGROUPDATA, _DD_GETADAPTERGROUPDATA, display.dd_getadaptergroupdata, d3dstrct_6bd570c2-bccf-4c1c-8bfb-ff20d77b7201.xml, DD_GETADAPTERGROUPDATA
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dhal.h
-req.include-header : D3dhal.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DD_GETADAPTERGROUPDATA
+UID: NS:d3dhal._DD_GETADAPTERGROUPDATA
+title: "_DD_GETADAPTERGROUPDATA"
+author: windows-driver-content
+description: DirectX 9.0 and later versions only. DD_GETADAPTERGROUPDATA is the data structure pointed to by the lpvData field of DD_GETDRIVERINFODATA for DD_GETDRIVERINFO2DATA queries with the type D3DGDI2_TYPE_GETADAPTERGROUP.
+old-location: display\dd_getadaptergroupdata.htm
+old-project: display
+ms.assetid: 8c427880-f809-4b58-8f69-d81a273d705c
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DD_GETADAPTERGROUPDATA structure [Display Devices], d3dhal/DD_GETADAPTERGROUPDATA, _DD_GETADAPTERGROUPDATA, display.dd_getadaptergroupdata, d3dstrct_6bd570c2-bccf-4c1c-8bfb-ff20d77b7201.xml, DD_GETADAPTERGROUPDATA
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dhal.h
+req.include-header: D3dhal.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dhal.h
+apiname:
+-	DD_GETADAPTERGROUPDATA
+product: Windows
+targetos: Windows
+req.typenames: DD_GETADAPTERGROUPDATA
 ---
 
 # _DD_GETADAPTERGROUPDATA structure

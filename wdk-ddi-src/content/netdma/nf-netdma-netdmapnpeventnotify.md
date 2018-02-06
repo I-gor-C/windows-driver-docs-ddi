@@ -1,41 +1,46 @@
 ---
-UID : NF:netdma.NetDmaPnPEventNotify
-title : NetDmaPnPEventNotify function
-author : windows-driver-content
-description : The NetDmaPnPEventNotify function indicates a power state change for a NetDMA provider device.
-old-location : netvista\netdmapnpeventnotify.htm
-old-project : netvista
-ms.assetid : a0f0fdbc-089c-4bfb-ba5f-eaff6042621c
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.netdmapnpeventnotify, NetDmaPnPEventNotify, netdma/NetDmaPnPEventNotify, NetDmaPnPEventNotify function [Network Drivers Starting with Windows Vista], netdma_ref_406452bc-e56a-47da-9e7a-09fb4aebe1eb.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : netdma.h
-req.include-header : Netdma.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported for NetDMA 2.0 and NetDMA 1.1 drivers in Windows Server 2008.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NET_DMA_PNP_NOTIFICATION_CODE, *PNET_DMA_PNP_NOTIFICATION_CODE
+UID: NF:netdma.NetDmaPnPEventNotify
+title: NetDmaPnPEventNotify function
+author: windows-driver-content
+description: The NetDmaPnPEventNotify function indicates a power state change for a NetDMA provider device.
+old-location: netvista\netdmapnpeventnotify.htm
+old-project: netvista
+ms.assetid: a0f0fdbc-089c-4bfb-ba5f-eaff6042621c
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.netdmapnpeventnotify, NetDmaPnPEventNotify, netdma/NetDmaPnPEventNotify, NetDmaPnPEventNotify function [Network Drivers Starting with Windows Vista], netdma_ref_406452bc-e56a-47da-9e7a-09fb4aebe1eb.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: netdma.h
+req.include-header: Netdma.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported for NetDMA 2.0 and NetDMA 1.1 drivers in Windows Server 2008.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	netdma.h
+apiname:
+-	NetDmaPnPEventNotify
+product: Windows
+targetos: Windows
+req.typenames: NET_DMA_PNP_NOTIFICATION_CODE, *PNET_DMA_PNP_NOTIFICATION_CODE
 ---
 
 

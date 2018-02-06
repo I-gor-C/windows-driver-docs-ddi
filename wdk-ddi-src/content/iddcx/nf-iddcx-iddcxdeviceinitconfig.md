@@ -1,41 +1,46 @@
 ---
-UID : NF:iddcx.IddCxDeviceInitConfig
-title : IddCxDeviceInitConfig function
-author : windows-driver-content
-description : Creates a WDFDEVICE initialization structure to allow indirect displays to be used.
-old-location : display\iddcxdeviceinitconfig.htm
-old-project : display
-ms.assetid : 4789e848-bb95-43e1-9768-8f94a475f9c8
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : IddCxDeviceInitConfig method [Display Devices], display.iddcxdeviceinitconfig, iddcx/IddCxDeviceInitConfig, IddCxDeviceInitConfig
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : iddcx.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "_Must_inspect_result_"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:iddcx.IddCxDeviceInitConfig
+title: IddCxDeviceInitConfig function
+author: windows-driver-content
+description: Creates a WDFDEVICE initialization structure to allow indirect displays to be used.
+old-location: display\iddcxdeviceinitconfig.htm
+old-project: display
+ms.assetid: 4789e848-bb95-43e1-9768-8f94a475f9c8
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: IddCxDeviceInitConfig method [Display Devices], display.iddcxdeviceinitconfig, iddcx/IddCxDeviceInitConfig, IddCxDeviceInitConfig
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: iddcx.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "_Must_inspect_result_"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	iddcx.h
+apiname:
+-	IddCxDeviceInitConfig
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._D3DDDICB_SIGNALSYNCHRONIZATIONOBJECT
-title : "_D3DDDICB_SIGNALSYNCHRONIZATIONOBJECT"
-author : windows-driver-content
-description : The D3DDDICB_SIGNALSYNCHRONIZATIONOBJECT structure describes the parameters that are required to set up signaling in a call to the pfnSignalSynchronizationObjectCb function.
-old-location : display\d3dddicb_signalsynchronizationobject.htm
-old-project : display
-ms.assetid : 08fbcc15-f40f-46de-b3ff-603bc1476d97
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3D_param_Structs_347963a7-4c6b-478e-9a2f-e708a807cac6.xml, _D3DDDICB_SIGNALSYNCHRONIZATIONOBJECT, display.d3dddicb_signalsynchronizationobject, D3DDDICB_SIGNALSYNCHRONIZATIONOBJECT, D3DDDICB_SIGNALSYNCHRONIZATIONOBJECT structure [Display Devices], d3dumddi/D3DDDICB_SIGNALSYNCHRONIZATIONOBJECT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDICB_SIGNALSYNCHRONIZATIONOBJECT
+UID: NS:d3dumddi._D3DDDICB_SIGNALSYNCHRONIZATIONOBJECT
+title: "_D3DDDICB_SIGNALSYNCHRONIZATIONOBJECT"
+author: windows-driver-content
+description: The D3DDDICB_SIGNALSYNCHRONIZATIONOBJECT structure describes the parameters that are required to set up signaling in a call to the pfnSignalSynchronizationObjectCb function.
+old-location: display\d3dddicb_signalsynchronizationobject.htm
+old-project: display
+ms.assetid: 08fbcc15-f40f-46de-b3ff-603bc1476d97
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3D_param_Structs_347963a7-4c6b-478e-9a2f-e708a807cac6.xml, _D3DDDICB_SIGNALSYNCHRONIZATIONOBJECT, display.d3dddicb_signalsynchronizationobject, D3DDDICB_SIGNALSYNCHRONIZATIONOBJECT, D3DDDICB_SIGNALSYNCHRONIZATIONOBJECT structure [Display Devices], d3dumddi/D3DDDICB_SIGNALSYNCHRONIZATIONOBJECT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	D3DDDICB_SIGNALSYNCHRONIZATIONOBJECT
+product: Windows
+targetos: Windows
+req.typenames: D3DDDICB_SIGNALSYNCHRONIZATIONOBJECT
 ---
 
 # _D3DDDICB_SIGNALSYNCHRONIZATIONOBJECT structure

@@ -1,42 +1,47 @@
 ---
-UID : NE:wdfobject._WDF_EXECUTION_LEVEL
-title : "_WDF_EXECUTION_LEVEL"
-author : windows-driver-content
-description : The WDF_EXECUTION_LEVEL enumeration type specifies the maximum IRQL at which the framework will call the event callback functions that a driver has supplied for a framework object.
-old-location : wdf\wdf_execution_level.htm
-old-project : wdf
-ms.assetid : 82b1fe8e-054c-4710-9a32-d620a62a070e
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : kmdf.wdf_execution_level, WDF_EXECUTION_LEVEL, WdfExecutionLevelInheritFromParent, _WDF_EXECUTION_LEVEL, wdfobject/WDF_EXECUTION_LEVEL, wdfobject/WdfExecutionLevelPassive, DFGenObjectRef_f9a9ae20-9dba-4c23-910b-04c60e1f9539.xml, wdfobject/WdfExecutionLevelInvalid, WdfExecutionLevelPassive, WdfExecutionLevelDispatch, wdfobject/WdfExecutionLevelDispatch, wdfobject/WdfExecutionLevelInheritFromParent, WdfExecutionLevelInvalid, wdf.wdf_execution_level, WDF_EXECUTION_LEVEL enumeration
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : wdfobject.h
-req.include-header : Wdf.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_EXECUTION_LEVEL
-req.product : Windows 10 or later.
+UID: NE:wdfobject._WDF_EXECUTION_LEVEL
+title: "_WDF_EXECUTION_LEVEL"
+author: windows-driver-content
+description: The WDF_EXECUTION_LEVEL enumeration type specifies the maximum IRQL at which the framework will call the event callback functions that a driver has supplied for a framework object.
+old-location: wdf\wdf_execution_level.htm
+old-project: wdf
+ms.assetid: 82b1fe8e-054c-4710-9a32-d620a62a070e
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: kmdf.wdf_execution_level, WDF_EXECUTION_LEVEL, WdfExecutionLevelInheritFromParent, _WDF_EXECUTION_LEVEL, wdfobject/WDF_EXECUTION_LEVEL, wdfobject/WdfExecutionLevelPassive, DFGenObjectRef_f9a9ae20-9dba-4c23-910b-04c60e1f9539.xml, wdfobject/WdfExecutionLevelInvalid, WdfExecutionLevelPassive, WdfExecutionLevelDispatch, wdfobject/WdfExecutionLevelDispatch, wdfobject/WdfExecutionLevelInheritFromParent, WdfExecutionLevelInvalid, wdf.wdf_execution_level, WDF_EXECUTION_LEVEL enumeration
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: wdfobject.h
+req.include-header: Wdf.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfobject.h
+apiname:
+-	WDF_EXECUTION_LEVEL
+product: Windows
+targetos: Windows
+req.typenames: WDF_EXECUTION_LEVEL
+req.product: Windows 10 or later.
 ---
 
 # _WDF_EXECUTION_LEVEL Enumeration
@@ -57,31 +62,31 @@ typedef enum _WDF_EXECUTION_LEVEL {
 ## Constants
 
 <table>
-
-<tr>
-<td>WdfExecutionLevelDispatch</td>
-<td>The framework calls the object's callback functions at IRQL &lt;= DISPATCH_LEVEL. Not available in UMDF.</td>
-</tr>
-
-<tr>
-<td>WdfExecutionLevelInheritFromParent</td>
-<td>The framework uses the maximum IRQL value of the object's parent, unless the object is one that requires IRQL = DISPATCH_LEVEL (such as a DPC object). This value is the default if a driver does not specify a WDF_EXECUTION_LEVEL-typed value.</td>
-</tr>
-
-<tr>
-<td>WdfExecutionLevelInvalid</td>
-<td>Reserved for system use.</td>
-</tr>
-
-<tr>
-<td>WdfExecutionLevelPassive</td>
-<td>The framework always calls the object's callback functions at IRQL = PASSIVE_LEVEL.</td>
-</tr>
+            
+                <tr>
+                    <td>WdfExecutionLevelDispatch</td>
+                    <td>The framework calls the object's callback functions at IRQL &lt;= DISPATCH_LEVEL. Not available in UMDF.</td>
+                </tr>
+            
+                <tr>
+                    <td>WdfExecutionLevelInheritFromParent</td>
+                    <td>The framework uses the maximum IRQL value of the object's parent, unless the object is one that requires IRQL = DISPATCH_LEVEL (such as a DPC object). This value is the default if a driver does not specify a WDF_EXECUTION_LEVEL-typed value.</td>
+                </tr>
+            
+                <tr>
+                    <td>WdfExecutionLevelInvalid</td>
+                    <td>Reserved for system use.</td>
+                </tr>
+            
+                <tr>
+                    <td>WdfExecutionLevelPassive</td>
+                    <td>The framework always calls the object's callback functions at IRQL = PASSIVE_LEVEL.</td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-Drivers use the WDF_EXECUTION_LEVEL enumeration type to specify the <b>ExecutionLevel</b> member of an object's <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure.
+        Drivers use the WDF_EXECUTION_LEVEL enumeration type to specify the <b>ExecutionLevel</b> member of an object's <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure.
 
 You can specify an <b>ExecutionLevel</b> value for the following objects:
 <ul>
@@ -124,9 +129,9 @@ For more information about execution levels for event callback functions, see <a
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfobject.h (include Wdf.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a>
+        <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a>
 
  
 

@@ -1,42 +1,47 @@
 ---
-UID : NE:wlantypes._DOT11_CIPHER_ALGORITHM
-title : "_DOT11_CIPHER_ALGORITHM"
-author : windows-driver-content
-description : Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
-old-location : netvista\dot11_cipher_algorithm.htm
-old-project : netvista
-ms.assetid : 5fc1af01-7dd5-43dd-aefe-99dec0b5aa6a
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : wlantypes/DOT11_CIPHER_ALGO_WEP40, wlantypes/DOT11_CIPHER_ALGORITHM, DOT11_CIPHER_ALGORITHM enumeration [Network Drivers Starting with Windows Vista], wlantypes/DOT11_CIPHER_ALGO_TKIP, DOT11_CIPHER_ALGO_NONE, _DOT11_CIPHER_ALGORITHM, wlantypes/DOT11_CIPHER_ALGO_NONE, DOT11_CIPHER_ALGO_BIP, DOT11_CIPHER_ALGO_IHV_START, wlantypes/DOT11_CIPHER_ALGO_BIP, DOT11_CIPHER_ALGORITHM, DOT11_CIPHER_ALGO_WEP104, *PDOT11_CIPHER_ALGORITHM, DOT11_CIPHER_ALGO_WEP, wlantypes/DOT11_CIPHER_ALGO_CCMP, wlantypes/PDOT11_CIPHER_ALGORITHM, PDOT11_CIPHER_ALGORITHM enumeration pointer [Network Drivers Starting with Windows Vista], netvista.dot11_cipher_algorithm, wlantypes/DOT11_CIPHER_ALGO_IHV_END, wlantypes/DOT11_CIPHER_ALGO_IHV_START, wlantypes/DOT11_CIPHER_ALGO_RSN_USE_GROUP, DOT11_CIPHER_ALGO_WEP40, DOT11_CIPHER_ALGO_TKIP, DOT11_CIPHER_ALGO_WPA_USE_GROUP, DOT11_CIPHER_ALGO_IHV_END, DOT11_CIPHER_ALGO_RSN_USE_GROUP, wlantypes/DOT11_CIPHER_ALGO_WEP, Native_802.11_data_types_f6b802d4-cd15-49ca-9518-5dceb9c2b651.xml, wlantypes/DOT11_CIPHER_ALGO_WEP104, PDOT11_CIPHER_ALGORITHM, wlantypes/DOT11_CIPHER_ALGO_WPA_USE_GROUP, DOT11_CIPHER_ALGO_CCMP
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : wlantypes.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 8 and later versions of the Windows operating   systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDOT11_CIPHER_ALGORITHM, DOT11_CIPHER_ALGORITHM"
-req.product : Windows 10 or later.
+UID: NE:wlantypes._DOT11_CIPHER_ALGORITHM
+title: "_DOT11_CIPHER_ALGORITHM"
+author: windows-driver-content
+description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+old-location: netvista\dot11_cipher_algorithm.htm
+old-project: netvista
+ms.assetid: 5fc1af01-7dd5-43dd-aefe-99dec0b5aa6a
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: wlantypes/DOT11_CIPHER_ALGO_WEP40, wlantypes/DOT11_CIPHER_ALGORITHM, DOT11_CIPHER_ALGORITHM enumeration [Network Drivers Starting with Windows Vista], wlantypes/DOT11_CIPHER_ALGO_TKIP, DOT11_CIPHER_ALGO_NONE, _DOT11_CIPHER_ALGORITHM, wlantypes/DOT11_CIPHER_ALGO_NONE, DOT11_CIPHER_ALGO_BIP, DOT11_CIPHER_ALGO_IHV_START, wlantypes/DOT11_CIPHER_ALGO_BIP, DOT11_CIPHER_ALGORITHM, DOT11_CIPHER_ALGO_WEP104, *PDOT11_CIPHER_ALGORITHM, DOT11_CIPHER_ALGO_WEP, wlantypes/DOT11_CIPHER_ALGO_CCMP, wlantypes/PDOT11_CIPHER_ALGORITHM, PDOT11_CIPHER_ALGORITHM enumeration pointer [Network Drivers Starting with Windows Vista], netvista.dot11_cipher_algorithm, wlantypes/DOT11_CIPHER_ALGO_IHV_END, wlantypes/DOT11_CIPHER_ALGO_IHV_START, wlantypes/DOT11_CIPHER_ALGO_RSN_USE_GROUP, DOT11_CIPHER_ALGO_WEP40, DOT11_CIPHER_ALGO_TKIP, DOT11_CIPHER_ALGO_WPA_USE_GROUP, DOT11_CIPHER_ALGO_IHV_END, DOT11_CIPHER_ALGO_RSN_USE_GROUP, wlantypes/DOT11_CIPHER_ALGO_WEP, Native_802.11_data_types_f6b802d4-cd15-49ca-9518-5dceb9c2b651.xml, wlantypes/DOT11_CIPHER_ALGO_WEP104, PDOT11_CIPHER_ALGORITHM, wlantypes/DOT11_CIPHER_ALGO_WPA_USE_GROUP, DOT11_CIPHER_ALGO_CCMP
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: wlantypes.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 8 and later versions of the Windows operating   systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wlantypes.h
+apiname:
+-	DOT11_CIPHER_ALGORITHM
+product: Windows
+targetos: Windows
+req.typenames: "*PDOT11_CIPHER_ALGORITHM, DOT11_CIPHER_ALGORITHM"
+req.product: Windows 10 or later.
 ---
 
 # _DOT11_CIPHER_ALGORITHM Enumeration
@@ -63,69 +68,69 @@ typedef enum _DOT11_CIPHER_ALGORITHM {
 ## Constants
 
 <table>
-
-<tr>
-<td>DOT11_CIPHER_ALGO_BIP</td>
-<td>Specifies a BIP cipher algorithm.</td>
-</tr>
-
-<tr>
-<td>DOT11_CIPHER_ALGO_CCMP</td>
-<td>Specifies an AES-CCMP algorithm, as specified in the IEEE 802.11i-2004 standard and RFC 3610.
+            
+                <tr>
+                    <td>DOT11_CIPHER_ALGO_BIP</td>
+                    <td>Specifies a BIP cipher algorithm.</td>
+                </tr>
+            
+                <tr>
+                    <td>DOT11_CIPHER_ALGO_CCMP</td>
+                    <td>Specifies an AES-CCMP algorithm, as specified in the IEEE 802.11i-2004 standard and RFC 3610.
      Advanced Encryption Standard (AES) is the encryption algorithm defined in FIPS PUB 197.</td>
-</tr>
-
-<tr>
-<td>DOT11_CIPHER_ALGO_GCMP</td>
-<td></td>
-</tr>
-
-<tr>
-<td>DOT11_CIPHER_ALGO_IHV_END</td>
-<td>Specifies the end of the range that is used to define proprietary authentication algorithms that
+                </tr>
+            
+                <tr>
+                    <td>DOT11_CIPHER_ALGO_GCMP</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>DOT11_CIPHER_ALGO_IHV_END</td>
+                    <td>Specifies the end of the range that is used to define proprietary authentication algorithms that
      are developed by an IHV.
      
 
 The 
      <b>DOT11_CIPHER_ALGO_IHV_END</b> enumerator is valid only when the miniport driver is operating in ExtSTA
      mode.</td>
-</tr>
-
-<tr>
-<td>DOT11_CIPHER_ALGO_IHV_START</td>
-<td>Specifies the start of the range that is used to define proprietary cipher algorithms that are
+                </tr>
+            
+                <tr>
+                    <td>DOT11_CIPHER_ALGO_IHV_START</td>
+                    <td>Specifies the start of the range that is used to define proprietary cipher algorithms that are
      developed by an independent hardware vendor (IHV).
      
 
 The 
      <b>DOT11_CIPHER_ALGO_IHV_START</b> enumerator is valid only when the miniport driver is operating in
      ExtSTA mode.</td>
-</tr>
-
-<tr>
-<td>DOT11_CIPHER_ALGO_NONE</td>
-<td>Specifies that no cipher algorithm is enabled or supported.</td>
-</tr>
-
-<tr>
-<td>DOT11_CIPHER_ALGO_RSN_USE_GROUP</td>
-<td>Specifies a Robust Security Network (RSN) Use Group Key cipher suite.
+                </tr>
+            
+                <tr>
+                    <td>DOT11_CIPHER_ALGO_NONE</td>
+                    <td>Specifies that no cipher algorithm is enabled or supported.</td>
+                </tr>
+            
+                <tr>
+                    <td>DOT11_CIPHER_ALGO_RSN_USE_GROUP</td>
+                    <td>Specifies a Robust Security Network (RSN) Use Group Key cipher suite.
 
 For more information about the Use Group Key cipher suite, refer to Clause 7.3.2.25.1 of the IEEE
       802.11i-2004 standard.</td>
-</tr>
-
-<tr>
-<td>DOT11_CIPHER_ALGO_TKIP</td>
-<td>Specifies a Temporal Key Integrity Protocol (TKIP) algorithm, which is the RC4-based cipher suite
+                </tr>
+            
+                <tr>
+                    <td>DOT11_CIPHER_ALGO_TKIP</td>
+                    <td>Specifies a Temporal Key Integrity Protocol (TKIP) algorithm, which is the RC4-based cipher suite
      that is based on the algorithms that are defined in the WPA specification and IEEE 802.11i-2004
      standard. This cipher also uses the Michael Message Integrity Code (MIC) algorithm for forgery
      protection.</td>
-</tr>
-
-<tr>
-<td>DOT11_CIPHER_ALGO_WEP</td>
-<td>Specifies a WEP cipher algorithm with a cipher key of any length.
+                </tr>
+            
+                <tr>
+                    <td>DOT11_CIPHER_ALGO_WEP</td>
+                    <td>Specifies a WEP cipher algorithm with a cipher key of any length.
      
 
 A miniport driver that operates in Extensible Station (ExtSTA) mode specifies the maximum WEP cipher
@@ -137,37 +142,37 @@ A miniport driver that operates in Extensible Station (ExtSTA) mode specifies th
      <b>DOT11_AUTH_ALGO_80211_SHARED_KEY</b> have been enabled. For more information about these
      authentication algorithms, see 
      <a href="..\wlantypes\ne-wlantypes-_dot11_auth_algorithm.md">DOT11_AUTH_ALGORITHM</a>.</div><div> </div></td>
-</tr>
-
-<tr>
-<td>DOT11_CIPHER_ALGO_WEP104</td>
-<td>Specifies a WEP cipher algorithm with a 104-bit cipher key.</td>
-</tr>
-
-<tr>
-<td>DOT11_CIPHER_ALGO_WEP40</td>
-<td>Specifies a Wired Equivalent Privacy (WEP) algorithm, which is the RC4-based algorithm that is
+                </tr>
+            
+                <tr>
+                    <td>DOT11_CIPHER_ALGO_WEP104</td>
+                    <td>Specifies a WEP cipher algorithm with a 104-bit cipher key.</td>
+                </tr>
+            
+                <tr>
+                    <td>DOT11_CIPHER_ALGO_WEP40</td>
+                    <td>Specifies a Wired Equivalent Privacy (WEP) algorithm, which is the RC4-based algorithm that is
      specified in the IEEE 802.11-2012 standard. This enumerator specifies the WEP cipher algorithm with a
      40-bit cipher key.</td>
-</tr>
-
-<tr>
-<td>DOT11_CIPHER_ALGO_WPA_USE_GROUP</td>
-<td>Specifies a Wifi Protected Access (WPA) Use Group Key cipher suite.
+                </tr>
+            
+                <tr>
+                    <td>DOT11_CIPHER_ALGO_WPA_USE_GROUP</td>
+                    <td>Specifies a Wifi Protected Access (WPA) Use Group Key cipher suite.
 
 For more information about the Use Group Key cipher suite, refer to Clause 7.3.2.25.1 of the IEEE
       802.11i-2004 standard.</td>
-</tr>
-
-<tr>
-<td>v1_enum</td>
-<td></td>
-</tr>
+                </tr>
+            
+                <tr>
+                    <td>v1_enum</td>
+                    <td></td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-An IHV can assign a value for its proprietary cipher algorithms from 
+        An IHV can assign a value for its proprietary cipher algorithms from 
     <b>DOT11_CIPHER_ALGO_IHV_START</b> through 
     <b>DOT11_CIPHER_ALGO_IHV_END</b>. The IHV must assign a unique number in this range to each of its
     proprietary cipher algorithms.
@@ -218,9 +223,9 @@ If WPS is enabled on a NIC that is operating in Extensible AP mode, the miniport
 | **Windows version** | Available in Windows 8 and later versions of the Windows operating   systems. Available in Windows 8 and later versions of the Windows operating   systems. |
 | **Header** | wlantypes.h (include Ndis.h) |
 
-## See Also
+    ## See Also
 
-<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-dot11-cipher-key-mapping-key">
+        <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-dot11-cipher-key-mapping-key">
    OID_DOT11_CIPHER_KEY_MAPPING_KEY</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569135">OID_DOT11_CURRENT_PHY_ID</a>

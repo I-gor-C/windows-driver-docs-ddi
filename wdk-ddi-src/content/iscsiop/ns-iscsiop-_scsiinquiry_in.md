@@ -1,41 +1,46 @@
 ---
-UID : NS:iscsiop._ScsiInquiry_IN
-title : "_ScsiInquiry_IN"
-author : windows-driver-content
-description : The ScsiInquiry_IN structure holds the input data for the ScsiInquiry method, which is used to send a SCSI inquiry command.
-old-location : storage\scsiinquiry_in.htm
-old-project : storage
-ms.assetid : b1a73ef7-c13a-4627-8eb0-b9285567caec
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : iscsiop/ScsiInquiry_IN, iscsiop/PScsiInquiry_IN, ScsiInquiry_IN, PScsiInquiry_IN structure pointer [Storage Devices], storage.scsiinquiry_in, PScsiInquiry_IN, structs-iSCSI_2129d82b-f03d-49f2-bf1d-8716840d086c.xml, *PScsiInquiry_IN, ScsiInquiry_IN structure [Storage Devices], _ScsiInquiry_IN
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : iscsiop.h
-req.include-header : Iscsiop.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : ScsiInquiry_IN, *PScsiInquiry_IN
+UID: NS:iscsiop._ScsiInquiry_IN
+title: "_ScsiInquiry_IN"
+author: windows-driver-content
+description: The ScsiInquiry_IN structure holds the input data for the ScsiInquiry method, which is used to send a SCSI inquiry command.
+old-location: storage\scsiinquiry_in.htm
+old-project: storage
+ms.assetid: b1a73ef7-c13a-4627-8eb0-b9285567caec
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: iscsiop/ScsiInquiry_IN, iscsiop/PScsiInquiry_IN, ScsiInquiry_IN, PScsiInquiry_IN structure pointer [Storage Devices], storage.scsiinquiry_in, PScsiInquiry_IN, structs-iSCSI_2129d82b-f03d-49f2-bf1d-8716840d086c.xml, *PScsiInquiry_IN, ScsiInquiry_IN structure [Storage Devices], _ScsiInquiry_IN
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: iscsiop.h
+req.include-header: Iscsiop.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	iscsiop.h
+apiname:
+-	ScsiInquiry_IN
+product: Windows
+targetos: Windows
+req.typenames: ScsiInquiry_IN, *PScsiInquiry_IN
 ---
 
 # _ScsiInquiry_IN structure

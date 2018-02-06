@@ -1,41 +1,46 @@
 ---
-UID : NI:ehstorbandmgmt.IOCTL_EHSTOR_BANDMGMT_SET_BAND_SECURITY
-title : IOCTL_EHSTOR_BANDMGMT_SET_BAND_SECURITY
-author : windows-driver-content
-description : The security properties of bands in a band-managed storage device are modified with the IOCTL_EHSTOR_BANDMGMT_SET_BAND_SECURITY request.
-old-location : storage\ioctl_ehstor_bandmgmt_set_band_security.htm
-old-project : storage
-ms.assetid : CBA94AF4-649D-47C9-879B-4B939DE32BE2
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_ehstor_bandmgmt_set_band_security, IOCTL_EHSTOR_BANDMGMT_SET_BAND_SECURITY control code [Storage Devices], IOCTL_EHSTOR_BANDMGMT_SET_BAND_SECURITY, ehstorbandmgmt/IOCTL_EHSTOR_BANDMGMT_SET_BAND_SECURITY
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ehstorbandmgmt.h
-req.include-header : EhStorBandMgmt.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows 8
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXVA_VideoSample32
+UID: NI:ehstorbandmgmt.IOCTL_EHSTOR_BANDMGMT_SET_BAND_SECURITY
+title: IOCTL_EHSTOR_BANDMGMT_SET_BAND_SECURITY
+author: windows-driver-content
+description: The security properties of bands in a band-managed storage device are modified with the IOCTL_EHSTOR_BANDMGMT_SET_BAND_SECURITY request.
+old-location: storage\ioctl_ehstor_bandmgmt_set_band_security.htm
+old-project: storage
+ms.assetid: CBA94AF4-649D-47C9-879B-4B939DE32BE2
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_ehstor_bandmgmt_set_band_security, IOCTL_EHSTOR_BANDMGMT_SET_BAND_SECURITY control code [Storage Devices], IOCTL_EHSTOR_BANDMGMT_SET_BAND_SECURITY, ehstorbandmgmt/IOCTL_EHSTOR_BANDMGMT_SET_BAND_SECURITY
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ehstorbandmgmt.h
+req.include-header: EhStorBandMgmt.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows 8
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	EhStorBandMgmt.h
+apiname:
+-	IOCTL_EHSTOR_BANDMGMT_SET_BAND_SECURITY
+product: Windows
+targetos: Windows
+req.typenames: DXVA_VideoSample32
 ---
 
 # IOCTL_EHSTOR_BANDMGMT_SET_BAND_SECURITY IOCTL

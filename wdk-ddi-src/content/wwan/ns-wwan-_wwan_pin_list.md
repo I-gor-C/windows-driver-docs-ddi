@@ -1,42 +1,47 @@
 ---
-UID : NS:wwan._WWAN_PIN_LIST
-title : "_WWAN_PIN_LIST"
-author : windows-driver-content
-description : The WWAN_PIN_LIST structure represents a list of descriptions of Personal Identification Numbers (PINs).
-old-location : netvista\wwan_pin_list.htm
-old-project : netvista
-ms.assetid : 7ddea69c-db40-4fae-9ca9-5eadc9b40b0c
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : WWAN_PIN_LIST, PWWAN_PIN_LIST structure pointer [Network Drivers Starting with Windows Vista], WWAN_PIN_LIST structure [Network Drivers Starting with Windows Vista], WwanRef_b23c520d-20ea-4597-8dd2-2a1f9cd68938.xml, PWWAN_PIN_LIST, wwan/PWWAN_PIN_LIST, *PWWAN_PIN_LIST, wwan/WWAN_PIN_LIST, _WWAN_PIN_LIST, netvista.wwan_pin_list
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wwan.h
-req.include-header : Wwan.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WWAN_PIN_LIST, *PWWAN_PIN_LIST
-req.product : Windows 10 or later.
+UID: NS:wwan._WWAN_PIN_LIST
+title: "_WWAN_PIN_LIST"
+author: windows-driver-content
+description: The WWAN_PIN_LIST structure represents a list of descriptions of Personal Identification Numbers (PINs).
+old-location: netvista\wwan_pin_list.htm
+old-project: netvista
+ms.assetid: 7ddea69c-db40-4fae-9ca9-5eadc9b40b0c
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: WWAN_PIN_LIST, PWWAN_PIN_LIST structure pointer [Network Drivers Starting with Windows Vista], WWAN_PIN_LIST structure [Network Drivers Starting with Windows Vista], WwanRef_b23c520d-20ea-4597-8dd2-2a1f9cd68938.xml, PWWAN_PIN_LIST, wwan/PWWAN_PIN_LIST, *PWWAN_PIN_LIST, wwan/WWAN_PIN_LIST, _WWAN_PIN_LIST, netvista.wwan_pin_list
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wwan.h
+req.include-header: Wwan.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wwan.h
+apiname:
+-	WWAN_PIN_LIST
+product: Windows
+targetos: Windows
+req.typenames: WWAN_PIN_LIST, *PWWAN_PIN_LIST
+req.product: Windows 10 or later.
 ---
 
 # _WWAN_PIN_LIST structure

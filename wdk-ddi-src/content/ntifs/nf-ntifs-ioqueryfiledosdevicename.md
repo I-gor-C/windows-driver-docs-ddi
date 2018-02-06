@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.IoQueryFileDosDeviceName
-title : IoQueryFileDosDeviceName function
-author : windows-driver-content
-description : The IoQueryFileDosDeviceName routine retrieves an MS-DOS device name for a file.
-old-location : ifsk\ioqueryfiledosdevicename.htm
-old-project : ifsk
-ms.assetid : 8574e5cf-5bbf-4606-931f-e27b2aa7b7fa
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ntifs/IoQueryFileDosDeviceName, IoQueryFileDosDeviceName, ioref_4bc807ab-ce5e-415c-8f86-50cf3783d233.xml, ifsk.ioqueryfiledosdevicename, IoQueryFileDosDeviceName routine [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h, Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : This routine is available starting withWindows XP.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.IoQueryFileDosDeviceName
+title: IoQueryFileDosDeviceName function
+author: windows-driver-content
+description: The IoQueryFileDosDeviceName routine retrieves an MS-DOS device name for a file.
+old-location: ifsk\ioqueryfiledosdevicename.htm
+old-project: ifsk
+ms.assetid: 8574e5cf-5bbf-4606-931f-e27b2aa7b7fa
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ntifs/IoQueryFileDosDeviceName, IoQueryFileDosDeviceName, ioref_4bc807ab-ce5e-415c-8f86-50cf3783d233.xml, ifsk.ioqueryfiledosdevicename, IoQueryFileDosDeviceName routine [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h, Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: This routine is available starting withWindows XP.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoQueryFileDosDeviceName
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

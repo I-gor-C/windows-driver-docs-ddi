@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugSymbols3.OutputTypedDataPhysical
-title : IDebugSymbols3::OutputTypedDataPhysical method
-author : windows-driver-content
-description : The OutputTypedDataPhysical method formats the contents of a variable in the target computer's physical memory, and then sends this to the output callbacks.
-old-location : debugger\outputtypeddataphysical.htm
-old-project : debugger
-ms.assetid : 0c2ae1ff-bbf1-462f-b9ab-49f74cf12fae
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugSymbols_35ce4485-6c19-44fd-8382-011b0e620f48.xml, IDebugSymbols interface [Windows Debugging], OutputTypedDataPhysical method, OutputTypedDataPhysical, IDebugSymbols2 interface [Windows Debugging], OutputTypedDataPhysical method, dbgeng/IDebugSymbols2::OutputTypedDataPhysical, OutputTypedDataPhysical method [Windows Debugging], IDebugSymbols3 interface, dbgeng/IDebugSymbols3::OutputTypedDataPhysical, IDebugSymbols3, IDebugSymbols2::OutputTypedDataPhysical, IDebugSymbols::OutputTypedDataPhysical, dbgeng/IDebugSymbols::OutputTypedDataPhysical, IDebugSymbols3::OutputTypedDataPhysical, OutputTypedDataPhysical method [Windows Debugging], IDebugSymbols2 interface, OutputTypedDataPhysical method [Windows Debugging], debugger.outputtypeddataphysical, IDebugSymbols3 interface [Windows Debugging], OutputTypedDataPhysical method, OutputTypedDataPhysical method [Windows Debugging], IDebugSymbols interface
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSymbols3.OutputTypedDataPhysical
+title: IDebugSymbols3::OutputTypedDataPhysical method
+author: windows-driver-content
+description: The OutputTypedDataPhysical method formats the contents of a variable in the target computer's physical memory, and then sends this to the output callbacks.
+old-location: debugger\outputtypeddataphysical.htm
+old-project: debugger
+ms.assetid: 0c2ae1ff-bbf1-462f-b9ab-49f74cf12fae
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugSymbols_35ce4485-6c19-44fd-8382-011b0e620f48.xml, IDebugSymbols interface [Windows Debugging], OutputTypedDataPhysical method, OutputTypedDataPhysical, IDebugSymbols2 interface [Windows Debugging], OutputTypedDataPhysical method, dbgeng/IDebugSymbols2::OutputTypedDataPhysical, OutputTypedDataPhysical method [Windows Debugging], IDebugSymbols3 interface, dbgeng/IDebugSymbols3::OutputTypedDataPhysical, IDebugSymbols3, IDebugSymbols2::OutputTypedDataPhysical, IDebugSymbols::OutputTypedDataPhysical, dbgeng/IDebugSymbols::OutputTypedDataPhysical, IDebugSymbols3::OutputTypedDataPhysical, OutputTypedDataPhysical method [Windows Debugging], IDebugSymbols2 interface, OutputTypedDataPhysical method [Windows Debugging], debugger.outputtypeddataphysical, IDebugSymbols3 interface [Windows Debugging], OutputTypedDataPhysical method, OutputTypedDataPhysical method [Windows Debugging], IDebugSymbols interface
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugSymbols.OutputTypedDataPhysical
+-	IDebugSymbols2.OutputTypedDataPhysical
+-	IDebugSymbols3.OutputTypedDataPhysical
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

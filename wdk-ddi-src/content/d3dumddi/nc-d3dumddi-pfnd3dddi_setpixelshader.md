@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_SETPIXELSHADER
-title : PFND3DDDI_SETPIXELSHADER
-author : windows-driver-content
-description : The SetPixelShader function sets a pixel shader to be used in all drawing operations.
-old-location : display\setpixelshader.htm
-old-project : display
-ms.assetid : b7ffd96d-086e-445a-89cf-6f34a5b8a5d4
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.setpixelshader, SetPixelShader callback function [Display Devices], SetPixelShader, PFND3DDDI_SETPIXELSHADER, PFND3DDDI_SETPIXELSHADER, d3dumddi/SetPixelShader, UserModeDisplayDriver_Functions_dd7fa75c-0753-4786-b04a-2fdd0d0e7071.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_SETPIXELSHADER
+title: PFND3DDDI_SETPIXELSHADER
+author: windows-driver-content
+description: The SetPixelShader function sets a pixel shader to be used in all drawing operations.
+old-location: display\setpixelshader.htm
+old-project: display
+ms.assetid: b7ffd96d-086e-445a-89cf-6f34a5b8a5d4
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.setpixelshader, SetPixelShader callback function [Display Devices], SetPixelShader, PFND3DDDI_SETPIXELSHADER, PFND3DDDI_SETPIXELSHADER, d3dumddi/SetPixelShader, UserModeDisplayDriver_Functions_dd7fa75c-0753-4786-b04a-2fdd0d0e7071.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	SetPixelShader
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

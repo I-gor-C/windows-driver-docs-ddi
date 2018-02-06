@@ -1,41 +1,46 @@
 ---
-UID : NC:irb.IDE_CHANNEL_ENABLED
-title : IDE_CHANNEL_ENABLED
-author : windows-driver-content
-description : The AtaControllerChannelEnabled miniport driver routine indicates whether the specified channel is enabled.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
-old-location : storage\atacontrollerchannelenabled.htm
-old-project : storage
-ms.assetid : 67713537-6a5b-4108-8af9-fb5d16844b03
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.atacontrollerchannelenabled, AtaControllerChannelEnabled routine [Storage Devices], AtaControllerChannelEnabled, IDE_CHANNEL_ENABLED, IDE_CHANNEL_ENABLED, irb/AtaControllerChannelEnabled, atartns_4beac2ec-b776-4af2-9acc-b236e0adc364.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : irb.h
-req.include-header : Irb.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : LUID
+UID: NC:irb.IDE_CHANNEL_ENABLED
+title: IDE_CHANNEL_ENABLED
+author: windows-driver-content
+description: The AtaControllerChannelEnabled miniport driver routine indicates whether the specified channel is enabled.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
+old-location: storage\atacontrollerchannelenabled.htm
+old-project: storage
+ms.assetid: 67713537-6a5b-4108-8af9-fb5d16844b03
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.atacontrollerchannelenabled, AtaControllerChannelEnabled routine [Storage Devices], AtaControllerChannelEnabled, IDE_CHANNEL_ENABLED, IDE_CHANNEL_ENABLED, irb/AtaControllerChannelEnabled, atartns_4beac2ec-b776-4af2-9acc-b236e0adc364.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: irb.h
+req.include-header: Irb.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	irb.h
+apiname:
+-	AtaControllerChannelEnabled
+product: Windows
+targetos: Windows
+req.typenames: LUID
 ---
 
 

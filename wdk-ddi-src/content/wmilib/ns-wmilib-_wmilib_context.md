@@ -1,42 +1,47 @@
 ---
-UID : NS:wmilib._WMILIB_CONTEXT
-title : "_WMILIB_CONTEXT"
-author : windows-driver-content
-description : The WMILIB_CONTEXT structure provides registration information for a driver's data blocks and event blocks and defines entry points for the driver's WMI library callback routines.
-old-location : kernel\wmilib_context.htm
-old-project : kernel
-ms.assetid : c9319f35-9745-47c4-a98d-4321e0d39f86
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wmilib/WMILIB_CONTEXT, wmilib/PWMILIB_CONTEXT, PWMILIB_CONTEXT, kstruct_d_b6452306-8092-4c47-aacf-c3ccd558d1f5.xml, WMILIB_CONTEXT structure [Kernel-Mode Driver Architecture], kernel.wmilib_context, *PWMILIB_CONTEXT, PWMILIB_CONTEXT structure pointer [Kernel-Mode Driver Architecture], WMILIB_CONTEXT, _WMILIB_CONTEXT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wmilib.h
-req.include-header : Wmilib.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WMILIB_CONTEXT, *PWMILIB_CONTEXT
-req.product : Windows 10 or later.
+UID: NS:wmilib._WMILIB_CONTEXT
+title: "_WMILIB_CONTEXT"
+author: windows-driver-content
+description: The WMILIB_CONTEXT structure provides registration information for a driver's data blocks and event blocks and defines entry points for the driver's WMI library callback routines.
+old-location: kernel\wmilib_context.htm
+old-project: kernel
+ms.assetid: c9319f35-9745-47c4-a98d-4321e0d39f86
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wmilib/WMILIB_CONTEXT, wmilib/PWMILIB_CONTEXT, PWMILIB_CONTEXT, kstruct_d_b6452306-8092-4c47-aacf-c3ccd558d1f5.xml, WMILIB_CONTEXT structure [Kernel-Mode Driver Architecture], kernel.wmilib_context, *PWMILIB_CONTEXT, PWMILIB_CONTEXT structure pointer [Kernel-Mode Driver Architecture], WMILIB_CONTEXT, _WMILIB_CONTEXT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wmilib.h
+req.include-header: Wmilib.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wmilib.h
+apiname:
+-	WMILIB_CONTEXT
+product: Windows
+targetos: Windows
+req.typenames: WMILIB_CONTEXT, *PWMILIB_CONTEXT
+req.product: Windows 10 or later.
 ---
 
 # _WMILIB_CONTEXT structure

@@ -1,41 +1,46 @@
 ---
-UID : NS:ndiswwan._NDIS_WWAN_GET_VISIBLE_PROVIDERS
-title : "_NDIS_WWAN_GET_VISIBLE_PROVIDERS"
-author : windows-driver-content
-description : The NDIS_WWAN_GET_VISIBLE_PROVIDERS structure is used to request the miniport driver get either all visible providers or only multi-carrier visible providers.
-old-location : netvista\ndis_wwan_get_visible_providers.htm
-old-project : netvista
-ms.assetid : C1AF383A-2D9D-4B2F-A925-D138E1B7AA4F
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NDIS_WWAN_GET_VISIBLE_PROVIDERS, ndiswwan/NDIS_WWAN_GET_VISIBLE_PROVIDERS, PNDIS_WWAN_GET_VISIBLE_PROVIDERS structure pointer [Network Drivers Starting with Windows Vista], *PNDIS_WWAN_GET_VISIBLE_PROVIDERS, ndiswwan/PNDIS_WWAN_GET_VISIBLE_PROVIDERS, PNDIS_WWAN_GET_VISIBLE_PROVIDERS, _NDIS_WWAN_GET_VISIBLE_PROVIDERS, NDIS_WWAN_GET_VISIBLE_PROVIDERS structure [Network Drivers Starting with Windows Vista], netvista.ndis_wwan_get_visible_providers
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndiswwan.h
-req.include-header : Ndiswwan.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with  Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PNDIS_WWAN_GET_VISIBLE_PROVIDERS, NDIS_WWAN_GET_VISIBLE_PROVIDERS"
+UID: NS:ndiswwan._NDIS_WWAN_GET_VISIBLE_PROVIDERS
+title: "_NDIS_WWAN_GET_VISIBLE_PROVIDERS"
+author: windows-driver-content
+description: The NDIS_WWAN_GET_VISIBLE_PROVIDERS structure is used to request the miniport driver get either all visible providers or only multi-carrier visible providers.
+old-location: netvista\ndis_wwan_get_visible_providers.htm
+old-project: netvista
+ms.assetid: C1AF383A-2D9D-4B2F-A925-D138E1B7AA4F
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NDIS_WWAN_GET_VISIBLE_PROVIDERS, ndiswwan/NDIS_WWAN_GET_VISIBLE_PROVIDERS, PNDIS_WWAN_GET_VISIBLE_PROVIDERS structure pointer [Network Drivers Starting with Windows Vista], *PNDIS_WWAN_GET_VISIBLE_PROVIDERS, ndiswwan/PNDIS_WWAN_GET_VISIBLE_PROVIDERS, PNDIS_WWAN_GET_VISIBLE_PROVIDERS, _NDIS_WWAN_GET_VISIBLE_PROVIDERS, NDIS_WWAN_GET_VISIBLE_PROVIDERS structure [Network Drivers Starting with Windows Vista], netvista.ndis_wwan_get_visible_providers
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndiswwan.h
+req.include-header: Ndiswwan.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with  Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndiswwan.h
+apiname:
+-	NDIS_WWAN_GET_VISIBLE_PROVIDERS
+product: Windows
+targetos: Windows
+req.typenames: "*PNDIS_WWAN_GET_VISIBLE_PROVIDERS, NDIS_WWAN_GET_VISIBLE_PROVIDERS"
 ---
 
 # _NDIS_WWAN_GET_VISIBLE_PROVIDERS structure

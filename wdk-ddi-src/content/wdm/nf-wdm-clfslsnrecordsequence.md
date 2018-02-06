@@ -1,42 +1,48 @@
 ---
-UID : NF:wdm.ClfsLsnRecordSequence
-title : ClfsLsnRecordSequence function
-author : windows-driver-content
-description : The ClfsLsnRecordSequence routine returns the record sequence number contained in a specified LSN.
-old-location : kernel\clfslsnrecordsequence.htm
-old-project : kernel
-ms.assetid : 407675de-4a06-49f7-9b43-c48b4c84ac7e
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.clfslsnrecordsequence, wdm/ClfsLsnRecordSequence, Clfs_a78f7923-d295-408c-9a52-16e5cc38ca31.xml, ClfsLsnRecordSequence routine [Kernel-Mode Driver Architecture], ClfsLsnRecordSequence
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Clfs.lib
-req.dll : Clfs.sys
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ClfsLsnRecordSequence
+title: ClfsLsnRecordSequence function
+author: windows-driver-content
+description: The ClfsLsnRecordSequence routine returns the record sequence number contained in a specified LSN.
+old-location: kernel\clfslsnrecordsequence.htm
+old-project: kernel
+ms.assetid: 407675de-4a06-49f7-9b43-c48b4c84ac7e
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.clfslsnrecordsequence, wdm/ClfsLsnRecordSequence, Clfs_a78f7923-d295-408c-9a52-16e5cc38ca31.xml, ClfsLsnRecordSequence routine [Kernel-Mode Driver Architecture], ClfsLsnRecordSequence
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Clfs.lib
+req.dll: Clfs.sys
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Clfs.sys
+-	Ext-MS-Win-fs-clfs-l1-1-0.dll
+apiname:
+-	ClfsLsnRecordSequence
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

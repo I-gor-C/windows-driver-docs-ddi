@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_CREATECRYPTOSESSION
-title : PFND3DDDI_CREATECRYPTOSESSION
-author : windows-driver-content
-description : The CreateCryptoSession function creates a crypto session that the Direct3D runtime uses to manage a session key and to perform crypto operations into and out of protected memory.
-old-location : display\createcryptosession.htm
-old-project : display
-ms.assetid : 85d4ae6c-059d-4256-bdda-18de3d20537a
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.createcryptosession, CreateCryptoSession callback function [Display Devices], CreateCryptoSession, PFND3DDDI_CREATECRYPTOSESSION, PFND3DDDI_CREATECRYPTOSESSION, d3dumddi/CreateCryptoSession, UserModeDisplayDriver_Functions_057e3836-924b-4f64-84fb-53464e71d716.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported starting with Windows 7.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_CREATECRYPTOSESSION
+title: PFND3DDDI_CREATECRYPTOSESSION
+author: windows-driver-content
+description: The CreateCryptoSession function creates a crypto session that the Direct3D runtime uses to manage a session key and to perform crypto operations into and out of protected memory.
+old-location: display\createcryptosession.htm
+old-project: display
+ms.assetid: 85d4ae6c-059d-4256-bdda-18de3d20537a
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.createcryptosession, CreateCryptoSession callback function [Display Devices], CreateCryptoSession, PFND3DDDI_CREATECRYPTOSESSION, PFND3DDDI_CREATECRYPTOSESSION, d3dumddi/CreateCryptoSession, UserModeDisplayDriver_Functions_057e3836-924b-4f64-84fb-53464e71d716.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported starting with Windows 7.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	CreateCryptoSession
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

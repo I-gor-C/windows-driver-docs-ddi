@@ -1,41 +1,46 @@
 ---
-UID : NN:filterpipeline.IPrintWriteStreamFlush
-title : IPrintWriteStreamFlush
-author : windows-driver-content
-description : Filters use the IPrintWriteStreamFlush interface to explicitly flush data as a raw stream of bytes from a filter. This interface is retrieved through IPrintWriteStream::QueryInterface().
-old-location : print\iprintwritestreamflush.htm
-old-project : print
-ms.assetid : DB3E1127-B3B1-4C48-9819-EEF705B9985A
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : print.iprintwritestreamflush, IPrintWriteStreamFlush interface [Print Devices], IPrintWriteStreamFlush interface [Print Devices], described, IPrintWriteStreamFlush, filterpipeline/IPrintWriteStreamFlush
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : filterpipeline.h
-req.include-header : Filterpipeline.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : filterpipeline.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NN:filterpipeline.IPrintWriteStreamFlush
+title: IPrintWriteStreamFlush
+author: windows-driver-content
+description: Filters use the IPrintWriteStreamFlush interface to explicitly flush data as a raw stream of bytes from a filter. This interface is retrieved through IPrintWriteStream::QueryInterface().
+old-location: print\iprintwritestreamflush.htm
+old-project: print
+ms.assetid: DB3E1127-B3B1-4C48-9819-EEF705B9985A
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: print.iprintwritestreamflush, IPrintWriteStreamFlush interface [Print Devices], IPrintWriteStreamFlush interface [Print Devices], described, IPrintWriteStreamFlush, filterpipeline/IPrintWriteStreamFlush
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: filterpipeline.h
+req.include-header: Filterpipeline.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: filterpipeline.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	filterpipeline.h
+apiname:
+-	IPrintWriteStreamFlush
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 # IPrintWriteStreamFlush interface

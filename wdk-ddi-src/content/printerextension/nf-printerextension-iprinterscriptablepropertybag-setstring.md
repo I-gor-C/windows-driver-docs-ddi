@@ -1,42 +1,47 @@
 ---
-UID : NF:printerextension.IPrinterScriptablePropertyBag.SetString
-title : IPrinterScriptablePropertyBag::SetString method
-author : windows-driver-content
-description : Writes a string property.
-old-location : print\iprinterscriptablepropertybag_setstring.htm
-old-project : print
-ms.assetid : 9B4EBCA4-8370-4F00-9853-6EE8408367BE
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : IPrinterScriptablePropertyBag interface [Print Devices], SetString method, SetString method [Print Devices], IPrinterScriptablePropertyBag, printerextension/IPrinterScriptablePropertyBag::SetString, print.iprinterscriptablepropertybag_setstring, SetString, SetString method [Print Devices], IPrinterScriptablePropertyBag interface, IPrinterScriptablePropertyBag::SetString
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : printerextension.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : printerextension.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PrintSchemaSelectionType
-req.product : Windows 10 or later.
+UID: NF:printerextension.IPrinterScriptablePropertyBag.SetString
+title: IPrinterScriptablePropertyBag::SetString method
+author: windows-driver-content
+description: Writes a string property.
+old-location: print\iprinterscriptablepropertybag_setstring.htm
+old-project: print
+ms.assetid: 9B4EBCA4-8370-4F00-9853-6EE8408367BE
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: IPrinterScriptablePropertyBag interface [Print Devices], SetString method, SetString method [Print Devices], IPrinterScriptablePropertyBag, printerextension/IPrinterScriptablePropertyBag::SetString, print.iprinterscriptablepropertybag_setstring, SetString, SetString method [Print Devices], IPrinterScriptablePropertyBag interface, IPrinterScriptablePropertyBag::SetString
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: printerextension.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: printerextension.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Printerextension.h
+apiname:
+-	IPrinterScriptablePropertyBag.SetString
+product: Windows
+targetos: Windows
+req.typenames: PrintSchemaSelectionType
+req.product: Windows 10 or later.
 ---
 
 

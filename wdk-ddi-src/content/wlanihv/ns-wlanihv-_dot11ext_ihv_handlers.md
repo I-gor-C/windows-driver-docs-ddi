@@ -1,42 +1,47 @@
 ---
-UID : NS:wlanihv._DOT11EXT_IHV_HANDLERS
-title : "_DOT11EXT_IHV_HANDLERS"
-author : windows-driver-content
-description : Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
-old-location : netvista\dot11ext_ihv_handlers.htm
-old-project : netvista
-ms.assetid : 6dacd330-45f1-46f8-b2bf-2006c89f664f
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : wlanihv/DOT11EXT_IHV_HANDLERS, wlanihv/PDOT11EXT_IHV_HANDLERS, DOT11EXT_IHV_HANDLERS structure [Network Drivers Starting with Windows Vista], Native_802.11_data_types_e072dcd6-e41c-4c08-b958-9302f62f02c1.xml, PDOT11EXT_IHV_HANDLERS, _DOT11EXT_IHV_HANDLERS, PDOT11EXT_IHV_HANDLERS structure pointer [Network Drivers Starting with Windows Vista], netvista.dot11ext_ihv_handlers, DOT11EXT_IHV_HANDLERS, *PDOT11EXT_IHV_HANDLERS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wlanihv.h
-req.include-header : Wlanihv.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating   systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDOT11EXT_IHV_HANDLERS, DOT11EXT_IHV_HANDLERS"
-req.product : Windows 10 or later.
+UID: NS:wlanihv._DOT11EXT_IHV_HANDLERS
+title: "_DOT11EXT_IHV_HANDLERS"
+author: windows-driver-content
+description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+old-location: netvista\dot11ext_ihv_handlers.htm
+old-project: netvista
+ms.assetid: 6dacd330-45f1-46f8-b2bf-2006c89f664f
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: wlanihv/DOT11EXT_IHV_HANDLERS, wlanihv/PDOT11EXT_IHV_HANDLERS, DOT11EXT_IHV_HANDLERS structure [Network Drivers Starting with Windows Vista], Native_802.11_data_types_e072dcd6-e41c-4c08-b958-9302f62f02c1.xml, PDOT11EXT_IHV_HANDLERS, _DOT11EXT_IHV_HANDLERS, PDOT11EXT_IHV_HANDLERS structure pointer [Network Drivers Starting with Windows Vista], netvista.dot11ext_ihv_handlers, DOT11EXT_IHV_HANDLERS, *PDOT11EXT_IHV_HANDLERS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wlanihv.h
+req.include-header: Wlanihv.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wlanihv.h
+apiname:
+-	DOT11EXT_IHV_HANDLERS
+product: Windows
+targetos: Windows
+req.typenames: "*PDOT11EXT_IHV_HANDLERS, DOT11EXT_IHV_HANDLERS"
+req.product: Windows 10 or later.
 ---
 
 # _DOT11EXT_IHV_HANDLERS structure

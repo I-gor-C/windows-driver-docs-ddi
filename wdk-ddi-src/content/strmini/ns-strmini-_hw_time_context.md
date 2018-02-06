@@ -1,42 +1,47 @@
 ---
-UID : NS:strmini._HW_TIME_CONTEXT
-title : "_HW_TIME_CONTEXT"
-author : windows-driver-content
-description : The class driver passes an HW_TIME_CONTEXT structure as a parameter to be filled in by a stream's StrMiniClock routine, or returns a completed HW_TIME_CONTEXT structure when it responds to a StreamClassQueryMasterClock or StreamClassQueryMasterClockSync request.
-old-location : stream\hw_time_context.htm
-old-project : stream
-ms.assetid : 4f349089-ff50-4f69-941f-ba3e9225abec
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.hw_time_context, strmini/HW_TIME_CONTEXT, PHW_TIME_CONTEXT structure pointer [Streaming Media Devices], strclass-struct_2c3e01ab-3b53-47cb-816f-994c0b7113b0.xml, strmini/PHW_TIME_CONTEXT, HW_TIME_CONTEXT structure [Streaming Media Devices], HW_TIME_CONTEXT, *PHW_TIME_CONTEXT, PHW_TIME_CONTEXT, _HW_TIME_CONTEXT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : strmini.h
-req.include-header : Strmini.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HW_TIME_CONTEXT, *PHW_TIME_CONTEXT
-req.product : Windows 10 or later.
+UID: NS:strmini._HW_TIME_CONTEXT
+title: "_HW_TIME_CONTEXT"
+author: windows-driver-content
+description: The class driver passes an HW_TIME_CONTEXT structure as a parameter to be filled in by a stream's StrMiniClock routine, or returns a completed HW_TIME_CONTEXT structure when it responds to a StreamClassQueryMasterClock or StreamClassQueryMasterClockSync request.
+old-location: stream\hw_time_context.htm
+old-project: stream
+ms.assetid: 4f349089-ff50-4f69-941f-ba3e9225abec
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.hw_time_context, strmini/HW_TIME_CONTEXT, PHW_TIME_CONTEXT structure pointer [Streaming Media Devices], strclass-struct_2c3e01ab-3b53-47cb-816f-994c0b7113b0.xml, strmini/PHW_TIME_CONTEXT, HW_TIME_CONTEXT structure [Streaming Media Devices], HW_TIME_CONTEXT, *PHW_TIME_CONTEXT, PHW_TIME_CONTEXT, _HW_TIME_CONTEXT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: strmini.h
+req.include-header: Strmini.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	strmini.h
+apiname:
+-	HW_TIME_CONTEXT
+product: Windows
+targetos: Windows
+req.typenames: HW_TIME_CONTEXT, *PHW_TIME_CONTEXT
+req.product: Windows 10 or later.
 ---
 
 # _HW_TIME_CONTEXT structure

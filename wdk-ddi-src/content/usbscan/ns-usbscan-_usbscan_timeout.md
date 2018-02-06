@@ -1,42 +1,47 @@
 ---
-UID : NS:usbscan._USBSCAN_TIMEOUT
-title : "_USBSCAN_TIMEOUT"
-author : windows-driver-content
-description : The USBSCAN_TIMEOUT structure stores time-out values for USB bulk IN and bulk OUT operations, and interrupts.
-old-location : image\usbscan_timeout.htm
-old-project : image
-ms.assetid : afa900fc-7297-425b-8308-18806d7d97d3
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : image.usbscan_timeout, stifnc_ebdd7bda-2eb0-446c-a52c-e9a80f6478da.xml, *PUSBSCAN_TIMEOUT, _USBSCAN_TIMEOUT, USBSCAN_TIMEOUT, PUSBSCAN_TIMEOUT structure pointer [Imaging Devices], PUSBSCAN_TIMEOUT, USBSCAN_TIMEOUT structure [Imaging Devices], usbscan/PUSBSCAN_TIMEOUT, usbscan/USBSCAN_TIMEOUT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : usbscan.h
-req.include-header : Usbscan.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUSBSCAN_TIMEOUT, USBSCAN_TIMEOUT"
-req.product : Windows 10 or later.
+UID: NS:usbscan._USBSCAN_TIMEOUT
+title: "_USBSCAN_TIMEOUT"
+author: windows-driver-content
+description: The USBSCAN_TIMEOUT structure stores time-out values for USB bulk IN and bulk OUT operations, and interrupts.
+old-location: image\usbscan_timeout.htm
+old-project: image
+ms.assetid: afa900fc-7297-425b-8308-18806d7d97d3
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: image.usbscan_timeout, stifnc_ebdd7bda-2eb0-446c-a52c-e9a80f6478da.xml, *PUSBSCAN_TIMEOUT, _USBSCAN_TIMEOUT, USBSCAN_TIMEOUT, PUSBSCAN_TIMEOUT structure pointer [Imaging Devices], PUSBSCAN_TIMEOUT, USBSCAN_TIMEOUT structure [Imaging Devices], usbscan/PUSBSCAN_TIMEOUT, usbscan/USBSCAN_TIMEOUT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: usbscan.h
+req.include-header: Usbscan.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	usbscan.h
+apiname:
+-	USBSCAN_TIMEOUT
+product: Windows
+targetos: Windows
+req.typenames: "*PUSBSCAN_TIMEOUT, USBSCAN_TIMEOUT"
+req.product: Windows 10 or later.
 ---
 
 # _USBSCAN_TIMEOUT structure

@@ -1,42 +1,47 @@
 ---
-UID : NS:wdm._REG_LOAD_KEY_INFORMATION
-title : "_REG_LOAD_KEY_INFORMATION"
-author : windows-driver-content
-description : The REG_LOAD_KEY_INFORMATION structure contains information about a registry hive that is being loaded.
-old-location : kernel\reg_load_key_information.htm
-old-project : kernel
-ms.assetid : 4012667b-d287-4846-8860-0cca977f9792
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : PREG_LOAD_KEY_INFORMATION structure pointer [Kernel-Mode Driver Architecture], kstruct_d_31dae695-0a6f-4309-9c39-25c2df4a5b23.xml, REG_LOAD_KEY_INFORMATION, kernel.reg_load_key_information, PREG_LOAD_KEY_INFORMATION, wdm/PREG_LOAD_KEY_INFORMATION, *PREG_LOAD_KEY_INFORMATION, REG_LOAD_KEY_INFORMATION structure [Kernel-Mode Driver Architecture], _REG_LOAD_KEY_INFORMATION, wdm/REG_LOAD_KEY_INFORMATION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : REG_LOAD_KEY_INFORMATION, *PREG_LOAD_KEY_INFORMATION
-req.product : Windows 10 or later.
+UID: NS:wdm._REG_LOAD_KEY_INFORMATION
+title: "_REG_LOAD_KEY_INFORMATION"
+author: windows-driver-content
+description: The REG_LOAD_KEY_INFORMATION structure contains information about a registry hive that is being loaded.
+old-location: kernel\reg_load_key_information.htm
+old-project: kernel
+ms.assetid: 4012667b-d287-4846-8860-0cca977f9792
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: PREG_LOAD_KEY_INFORMATION structure pointer [Kernel-Mode Driver Architecture], kstruct_d_31dae695-0a6f-4309-9c39-25c2df4a5b23.xml, REG_LOAD_KEY_INFORMATION, kernel.reg_load_key_information, PREG_LOAD_KEY_INFORMATION, wdm/PREG_LOAD_KEY_INFORMATION, *PREG_LOAD_KEY_INFORMATION, REG_LOAD_KEY_INFORMATION structure [Kernel-Mode Driver Architecture], _REG_LOAD_KEY_INFORMATION, wdm/REG_LOAD_KEY_INFORMATION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	REG_LOAD_KEY_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: REG_LOAD_KEY_INFORMATION, *PREG_LOAD_KEY_INFORMATION
+req.product: Windows 10 or later.
 ---
 
 # _REG_LOAD_KEY_INFORMATION structure

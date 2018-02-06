@@ -1,41 +1,47 @@
 ---
-UID : NF:hwnclx.HwNProcessAddDevicePreDeviceCreate
-title : HwNProcessAddDevicePreDeviceCreate function
-author : windows-driver-content
-description : Supplies the device prepare/release and entry/exit callbacks to the Windows Driver Foundation (WDF) for transitioning the device into different states.
-old-location : gpiobtn\hwnprocessadddevicepredevicecreate.htm
-old-project : gpiobtn
-ms.assetid : c7bbba08-e9d0-4f78-93d8-e451e4dc2573
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : HwNProcessAddDevicePreDeviceCreate function, gpiobtn.hwnprocessadddevicepredevicecreate, hwnclx/HwNProcessAddDevicePreDeviceCreate, HwNProcessAddDevicePreDeviceCreate
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : hwnclx.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10, version 1709
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Mshwnclxstub.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HWN_CLX_EXPORT_INDEX, *PHWN_CLX_EXPORT_INDEX
+UID: NF:hwnclx.HwNProcessAddDevicePreDeviceCreate
+title: HwNProcessAddDevicePreDeviceCreate function
+author: windows-driver-content
+description: Supplies the device prepare/release and entry/exit callbacks to the Windows Driver Foundation (WDF) for transitioning the device into different states.
+old-location: gpiobtn\hwnprocessadddevicepredevicecreate.htm
+old-project: gpiobtn
+ms.assetid: c7bbba08-e9d0-4f78-93d8-e451e4dc2573
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: HwNProcessAddDevicePreDeviceCreate function, gpiobtn.hwnprocessadddevicepredevicecreate, hwnclx/HwNProcessAddDevicePreDeviceCreate, HwNProcessAddDevicePreDeviceCreate
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: hwnclx.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10, version 1709
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Mshwnclxstub.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Mshwnclxstub.lib
+-	Mshwnclxstub.dll
+apiname:
+-	HwNProcessAddDevicePreDeviceCreate
+product: Windows
+targetos: Windows
+req.typenames: HWN_CLX_EXPORT_INDEX, *PHWN_CLX_EXPORT_INDEX
 ---
 
 

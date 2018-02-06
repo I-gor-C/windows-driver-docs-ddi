@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.SeTokenIsAdmin
-title : SeTokenIsAdmin function
-author : windows-driver-content
-description : The SeTokenIsAdmin routine determines whether a token contains the local administrators group.
-old-location : ifsk\setokenisadmin.htm
-old-project : ifsk
-ms.assetid : 7d0a5d28-175a-44a7-888f-d11dc3f55904
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : SeTokenIsAdmin, ifsk.setokenisadmin, ntifs/SeTokenIsAdmin, SeTokenIsAdmin routine [Installable File System Drivers], seref_e621b2f6-c7c3-4df0-90d4-87a42080e1bd.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : This routine is available on Microsoft Windows 2000 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.SeTokenIsAdmin
+title: SeTokenIsAdmin function
+author: windows-driver-content
+description: The SeTokenIsAdmin routine determines whether a token contains the local administrators group.
+old-location: ifsk\setokenisadmin.htm
+old-project: ifsk
+ms.assetid: 7d0a5d28-175a-44a7-888f-d11dc3f55904
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: SeTokenIsAdmin, ifsk.setokenisadmin, ntifs/SeTokenIsAdmin, SeTokenIsAdmin routine [Installable File System Drivers], seref_e621b2f6-c7c3-4df0-90d4-87a42080e1bd.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: This routine is available on Microsoft Windows 2000 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	SeTokenIsAdmin
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

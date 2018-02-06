@@ -1,41 +1,46 @@
 ---
-UID : NF:ksproxy.IKsPinPipe.KsSetPinBusCache
-title : IKsPinPipe::KsSetPinBusCache method
-author : windows-driver-content
-description : Not recommended for application use.
-old-location : stream\ikspinpipe_kssetpinbuscache.htm
-old-project : stream
-ms.assetid : 5340DB05-12D9-4965-B207-BA113F3801A7
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.ikspinpipe_kssetpinbuscache, IKsPinPipe::KsSetPinBusCache, KsSetPinBusCache, IKsPinPipe, IKsPinPipe interface [Streaming Media Devices], KsSetPinBusCache method, KsSetPinBusCache method [Streaming Media Devices], KsSetPinBusCache method [Streaming Media Devices], IKsPinPipe interface, ksproxy/IKsPinPipe::KsSetPinBusCache
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : ksproxy.h
-req.include-header : Ksproxy.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : ksproxy.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PIPE_STATE
+UID: NF:ksproxy.IKsPinPipe.KsSetPinBusCache
+title: IKsPinPipe::KsSetPinBusCache method
+author: windows-driver-content
+description: Not recommended for application use.
+old-location: stream\ikspinpipe_kssetpinbuscache.htm
+old-project: stream
+ms.assetid: 5340DB05-12D9-4965-B207-BA113F3801A7
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.ikspinpipe_kssetpinbuscache, IKsPinPipe::KsSetPinBusCache, KsSetPinBusCache, IKsPinPipe, IKsPinPipe interface [Streaming Media Devices], KsSetPinBusCache method, KsSetPinBusCache method [Streaming Media Devices], KsSetPinBusCache method [Streaming Media Devices], IKsPinPipe interface, ksproxy/IKsPinPipe::KsSetPinBusCache
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: ksproxy.h
+req.include-header: Ksproxy.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: ksproxy.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	ksproxy.h
+apiname:
+-	IKsPinPipe.KsSetPinBusCache
+product: Windows
+targetos: Windows
+req.typenames: PIPE_STATE
 ---
 
 

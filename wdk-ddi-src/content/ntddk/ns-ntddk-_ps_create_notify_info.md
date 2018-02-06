@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddk._PS_CREATE_NOTIFY_INFO
-title : "_PS_CREATE_NOTIFY_INFO"
-author : windows-driver-content
-description : The PS_CREATE_NOTIFY_INFO structure provides information about a newly created process.
-old-location : kernel\ps_create_notify_info.htm
-old-project : kernel
-ms.assetid : 66fade6b-b1c1-477c-bd44-2809d02271f2
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ntddk/PPS_CREATE_NOTIFY_INFO, _PS_CREATE_NOTIFY_INFO, *PPS_CREATE_NOTIFY_INFO, ntddk/PS_CREATE_NOTIFY_INFO, PPS_CREATE_NOTIFY_INFO, PS_CREATE_NOTIFY_INFO, kstruct_c_489ee208-518d-41f1-af90-a8873f3e7fb0.xml, kernel.ps_create_notify_info, PPS_CREATE_NOTIFY_INFO structure pointer [Kernel-Mode Driver Architecture], PS_CREATE_NOTIFY_INFO structure [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPS_CREATE_NOTIFY_INFO, PS_CREATE_NOTIFY_INFO"
+UID: NS:ntddk._PS_CREATE_NOTIFY_INFO
+title: "_PS_CREATE_NOTIFY_INFO"
+author: windows-driver-content
+description: The PS_CREATE_NOTIFY_INFO structure provides information about a newly created process.
+old-location: kernel\ps_create_notify_info.htm
+old-project: kernel
+ms.assetid: 66fade6b-b1c1-477c-bd44-2809d02271f2
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ntddk/PPS_CREATE_NOTIFY_INFO, _PS_CREATE_NOTIFY_INFO, *PPS_CREATE_NOTIFY_INFO, ntddk/PS_CREATE_NOTIFY_INFO, PPS_CREATE_NOTIFY_INFO, PS_CREATE_NOTIFY_INFO, kstruct_c_489ee208-518d-41f1-af90-a8873f3e7fb0.xml, kernel.ps_create_notify_info, PPS_CREATE_NOTIFY_INFO structure pointer [Kernel-Mode Driver Architecture], PS_CREATE_NOTIFY_INFO structure [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddk.h
+apiname:
+-	PS_CREATE_NOTIFY_INFO
+product: Windows
+targetos: Windows
+req.typenames: "*PPS_CREATE_NOTIFY_INFO, PS_CREATE_NOTIFY_INFO"
 ---
 
 # _PS_CREATE_NOTIFY_INFO structure

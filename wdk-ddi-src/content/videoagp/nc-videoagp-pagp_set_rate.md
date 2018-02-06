@@ -1,42 +1,47 @@
 ---
-UID : NC:videoagp.PAGP_SET_RATE
-title : PAGP_SET_RATE
-author : windows-driver-content
-description : The AgpSetRate function reprograms the data transfer rate of the AGP chipset.
-old-location : display\agpsetrate.htm
-old-project : display
-ms.assetid : 6885df05-8cc4-4ae0-b7ca-6fd94374cfbf
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.agpsetrate, AgpSetRate callback function [Display Devices], AgpSetRate, PAGP_SET_RATE, PAGP_SET_RATE, videoagp/AgpSetRate, VideoPort_Functions_4dfdb762-5156-4a06-9dd8-1766bbe3dbe4.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : videoagp.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows 2000 and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VP_SCATTER_GATHER_LIST, *PVP_SCATTER_GATHER_LIST
-req.product : Windows 10 or later.
+UID: NC:videoagp.PAGP_SET_RATE
+title: PAGP_SET_RATE
+author: windows-driver-content
+description: The AgpSetRate function reprograms the data transfer rate of the AGP chipset.
+old-location: display\agpsetrate.htm
+old-project: display
+ms.assetid: 6885df05-8cc4-4ae0-b7ca-6fd94374cfbf
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.agpsetrate, AgpSetRate callback function [Display Devices], AgpSetRate, PAGP_SET_RATE, PAGP_SET_RATE, videoagp/AgpSetRate, VideoPort_Functions_4dfdb762-5156-4a06-9dd8-1766bbe3dbe4.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: videoagp.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows 2000 and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	videoagp.h
+apiname:
+-	AgpSetRate
+product: Windows
+targetos: Windows
+req.typenames: VP_SCATTER_GATHER_LIST, *PVP_SCATTER_GATHER_LIST
+req.product: Windows 10 or later.
 ---
 
 

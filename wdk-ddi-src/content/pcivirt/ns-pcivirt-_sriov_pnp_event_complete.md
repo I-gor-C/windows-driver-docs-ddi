@@ -1,41 +1,46 @@
 ---
-UID : NS:pcivirt._SRIOV_PNP_EVENT_COMPLETE
-title : "_SRIOV_PNP_EVENT_COMPLETE"
-author : windows-driver-content
-description : Stores the status for an event that the SR-IOV Physical Function (PF) driver should set for Plug and Play even completion. This structure is used in the input buffer of the IOCTL_SRIOV_EVENT_COMPLETE request.
-old-location : pci\sriov_pnp_event_complete.htm
-old-project : PCI
-ms.assetid : 3b40d780-8084-4c19-bb8e-9d1ab3dadc95
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : pcivirt/SRIOV_PNP_EVENT_COMPLETE, SRIOV_PNP_EVENT_COMPLETE, *PSRIOV_PNP_EVENT_COMPLETE, SRIOV_PNP_EVENT_COMPLETE structure [Buses], PCI.sriov_pnp_event_complete, _SRIOV_PNP_EVENT_COMPLETE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : pcivirt.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SRIOV_PNP_EVENT_COMPLETE, *PSRIOV_PNP_EVENT_COMPLETE
+UID: NS:pcivirt._SRIOV_PNP_EVENT_COMPLETE
+title: "_SRIOV_PNP_EVENT_COMPLETE"
+author: windows-driver-content
+description: Stores the status for an event that the SR-IOV Physical Function (PF) driver should set for Plug and Play even completion. This structure is used in the input buffer of the IOCTL_SRIOV_EVENT_COMPLETE request.
+old-location: pci\sriov_pnp_event_complete.htm
+old-project: PCI
+ms.assetid: 3b40d780-8084-4c19-bb8e-9d1ab3dadc95
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: pcivirt/SRIOV_PNP_EVENT_COMPLETE, SRIOV_PNP_EVENT_COMPLETE, *PSRIOV_PNP_EVENT_COMPLETE, SRIOV_PNP_EVENT_COMPLETE structure [Buses], PCI.sriov_pnp_event_complete, _SRIOV_PNP_EVENT_COMPLETE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: pcivirt.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Pcivirt.h
+apiname:
+-	SRIOV_PNP_EVENT_COMPLETE
+product: Windows
+targetos: Windows
+req.typenames: SRIOV_PNP_EVENT_COMPLETE, *PSRIOV_PNP_EVENT_COMPLETE
 ---
 
 # _SRIOV_PNP_EVENT_COMPLETE structure

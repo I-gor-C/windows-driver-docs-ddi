@@ -1,41 +1,46 @@
 ---
-UID : NS:pepfx._PEP_REGISTER_CRASHDUMP_DEVICE
-title : "_PEP_REGISTER_CRASHDUMP_DEVICE"
-author : windows-driver-content
-description : The PEP_REGISTER_CRASHDUMP_DEVICE structure provides a callback routine to turn on a crash-dump device.
-old-location : kernel\pep_register_crashdump_device.htm
-old-project : kernel
-ms.assetid : 207EEFBF-289F-4973-9183-7D87C0BAE09A
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : "*PPEP_REGISTER_CRASHDUMP_DEVICE, PEP_REGISTER_CRASHDUMP_DEVICE, kernel.pep_register_crashdump_device, PPEP_REGISTER_CRASHDUMP_DEVICE, PEP_REGISTER_CRASHDUMP_DEVICE structure [Kernel-Mode Driver Architecture], _PEP_REGISTER_CRASHDUMP_DEVICE, PPEP_REGISTER_CRASHDUMP_DEVICE structure pointer [Kernel-Mode Driver Architecture], pepfx/PEP_REGISTER_CRASHDUMP_DEVICE, pepfx/PPEP_REGISTER_CRASHDUMP_DEVICE"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : pepfx.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with Windows 10.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PEP_REGISTER_CRASHDUMP_DEVICE, *PPEP_REGISTER_CRASHDUMP_DEVICE
+UID: NS:pepfx._PEP_REGISTER_CRASHDUMP_DEVICE
+title: "_PEP_REGISTER_CRASHDUMP_DEVICE"
+author: windows-driver-content
+description: The PEP_REGISTER_CRASHDUMP_DEVICE structure provides a callback routine to turn on a crash-dump device.
+old-location: kernel\pep_register_crashdump_device.htm
+old-project: kernel
+ms.assetid: 207EEFBF-289F-4973-9183-7D87C0BAE09A
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: "*PPEP_REGISTER_CRASHDUMP_DEVICE, PEP_REGISTER_CRASHDUMP_DEVICE, kernel.pep_register_crashdump_device, PPEP_REGISTER_CRASHDUMP_DEVICE, PEP_REGISTER_CRASHDUMP_DEVICE structure [Kernel-Mode Driver Architecture], _PEP_REGISTER_CRASHDUMP_DEVICE, PPEP_REGISTER_CRASHDUMP_DEVICE structure pointer [Kernel-Mode Driver Architecture], pepfx/PEP_REGISTER_CRASHDUMP_DEVICE, pepfx/PPEP_REGISTER_CRASHDUMP_DEVICE"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: pepfx.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows 10.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	pepfx.h
+apiname:
+-	PEP_REGISTER_CRASHDUMP_DEVICE
+product: Windows
+targetos: Windows
+req.typenames: PEP_REGISTER_CRASHDUMP_DEVICE, *PPEP_REGISTER_CRASHDUMP_DEVICE
 ---
 
 # _PEP_REGISTER_CRASHDUMP_DEVICE structure

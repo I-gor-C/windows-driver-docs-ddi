@@ -1,38 +1,38 @@
 ---
-UID : NF:wdm.DbgPrint
-title : DbgPrint function
-author : windows-driver-content
-description : The DbgPrint routine sends a message to the kernel debugger.
-old-location : devtest\dbgprint.htm
-old-project : devtest
-ms.assetid : abff1656-dceb-464f-a89c-30d7a24f742d
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : DbgPrint
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Microsoft Windows 2000 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.alt-api : DbgPrint
-req.alt-loc : NtDll.dll,NtosKrnl.exe
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtDll.lib (user mode); NtosKrnl.lib (kernel mode)
-req.dll : NtDll.dll (user mode); NtosKrnl.exe (kernel mode)
-req.irql : <= DIRQL (see Comments section)
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.DbgPrint
+title: DbgPrint function
+author: windows-driver-content
+description: The DbgPrint routine sends a message to the kernel debugger.
+old-location: devtest\dbgprint.htm
+old-project: devtest
+ms.assetid: abff1656-dceb-464f-a89c-30d7a24f742d
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: DbgPrint
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Microsoft Windows 2000 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.alt-api: DbgPrint
+req.alt-loc: NtDll.dll,NtosKrnl.exe
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtDll.lib (user mode); NtosKrnl.lib (kernel mode)
+req.dll: NtDll.dll (user mode); NtosKrnl.exe (kernel mode)
+req.irql: <= DIRQL (see Comments section)
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

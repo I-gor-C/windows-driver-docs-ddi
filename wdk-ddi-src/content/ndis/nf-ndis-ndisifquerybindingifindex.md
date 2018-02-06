@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisIfQueryBindingIfIndex
-title : NdisIfQueryBindingIfIndex function
-author : windows-driver-content
-description : The NdisIfQueryBindingIfIndex function retrieves the network interface indexes and NET_LUID values for the highest and lowest layered network interfaces that are associated with a specified protocol binding.
-old-location : netvista\ndisifquerybindingifindex.htm
-old-project : netvista
-ms.assetid : 08f31584-b3ea-4e6e-b8ce-17813ca7c06b
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NdisIfQueryBindingIfIndex function [Network Drivers Starting with Windows Vista], net_if_functions_ref_eacdb959-2a12-4688-9e83-7454c579e2d3.xml, netvista.ndisifquerybindingifindex, ndis/NdisIfQueryBindingIfIndex, NdisIfQueryBindingIfIndex
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_Interfaces_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisIfQueryBindingIfIndex
+title: NdisIfQueryBindingIfIndex function
+author: windows-driver-content
+description: The NdisIfQueryBindingIfIndex function retrieves the network interface indexes and NET_LUID values for the highest and lowest layered network interfaces that are associated with a specified protocol binding.
+old-location: netvista\ndisifquerybindingifindex.htm
+old-project: netvista
+ms.assetid: 08f31584-b3ea-4e6e-b8ce-17813ca7c06b
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NdisIfQueryBindingIfIndex function [Network Drivers Starting with Windows Vista], net_if_functions_ref_eacdb959-2a12-4688-9e83-7454c579e2d3.xml, netvista.ndisifquerybindingifindex, ndis/NdisIfQueryBindingIfIndex, NdisIfQueryBindingIfIndex
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_Interfaces_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisIfQueryBindingIfIndex
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

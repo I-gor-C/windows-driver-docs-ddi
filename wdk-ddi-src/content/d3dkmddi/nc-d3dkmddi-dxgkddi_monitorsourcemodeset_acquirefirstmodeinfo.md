@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dkmddi.DXGKDDI_MONITORSOURCEMODESET_ACQUIREFIRSTMODEINFO
-title : DXGKDDI_MONITORSOURCEMODESET_ACQUIREFIRSTMODEINFO
-author : windows-driver-content
-description : The pfnAcquireFirstModeInfo function returns a descriptor of the first mode in a specified monitor source mode set.
-old-location : display\dxgk_monitorsourcemodeset_interface_pfnacquirefirstmodeinfo.htm
-old-project : display
-ms.assetid : d448c3f4-7adb-4ceb-8c42-8cba3d2cfeae
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgk_monitorsourcemodeset_interface_pfnacquirefirstmodeinfo, pfnAcquireFirstModeInfo callback function [Display Devices], pfnAcquireFirstModeInfo, DXGKDDI_MONITORSOURCEMODESET_ACQUIREFIRSTMODEINFO, DXGKDDI_MONITORSOURCEMODESET_ACQUIREFIRSTMODEINFO, d3dkmddi/pfnAcquireFirstModeInfo, VidPnFunctions_81493c6c-3b78-4c4b-969c-276a459a198d.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
+UID: NC:d3dkmddi.DXGKDDI_MONITORSOURCEMODESET_ACQUIREFIRSTMODEINFO
+title: DXGKDDI_MONITORSOURCEMODESET_ACQUIREFIRSTMODEINFO
+author: windows-driver-content
+description: The pfnAcquireFirstModeInfo function returns a descriptor of the first mode in a specified monitor source mode set.
+old-location: display\dxgk_monitorsourcemodeset_interface_pfnacquirefirstmodeinfo.htm
+old-project: display
+ms.assetid: d448c3f4-7adb-4ceb-8c42-8cba3d2cfeae
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgk_monitorsourcemodeset_interface_pfnacquirefirstmodeinfo, pfnAcquireFirstModeInfo callback function [Display Devices], pfnAcquireFirstModeInfo, DXGKDDI_MONITORSOURCEMODESET_ACQUIREFIRSTMODEINFO, DXGKDDI_MONITORSOURCEMODESET_ACQUIREFIRSTMODEINFO, d3dkmddi/pfnAcquireFirstModeInfo, VidPnFunctions_81493c6c-3b78-4c4b-969c-276a459a198d.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	pfnAcquireFirstModeInfo
+product: Windows
+targetos: Windows
+req.typenames: DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
 

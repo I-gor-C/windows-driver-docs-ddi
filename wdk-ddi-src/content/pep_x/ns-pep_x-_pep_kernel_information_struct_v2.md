@@ -1,41 +1,46 @@
 ---
-UID : NS:pep_x._PEP_KERNEL_INFORMATION_STRUCT_V2
-title : "_PEP_KERNEL_INFORMATION_STRUCT_V2"
-author : windows-driver-content
-description : The PEP_KERNEL_INFORMATION structure specifies the interface that the power extension plug-in (PEP) uses to request services from the Windows power management framework (PoFx).
-old-location : kernel\pep_kernel_information.htm
-old-project : kernel
-ms.assetid : 4FBBEF08-3BDA-43B2-A05B-B6BFC2787FC6
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : "_PEP_KERNEL_INFORMATION_STRUCT_V2, PEP_KERNEL_INFORMATION_STRUCT_V1, *PPEP_KERNEL_INFORMATION_STRUCT_V2, kernel.pep_kernel_information, *PPEP_KERNEL_INFORMATION, PEP_KERNEL_INFORMATION structure pointer [Kernel-Mode Driver Architecture], PEP_KERNEL_INFORMATION_STRUCT_V1 structure [Kernel-Mode Driver Architecture], pep_x/PEP_KERNEL_INFORMATION_STRUCT_V1, PPEP_KERNEL_INFORMATION_STRUCT_V1, PEP_KERNEL_INFORMATION, *PPEP_KERNEL_INFORMATION_STRUCT_V1, pep_x/PEP_KERNEL_INFORMATION, PEP_KERNEL_INFORMATION_STRUCT_V2, pep_x/PPEP_KERNEL_INFORMATION_STRUCT_V1, _PEP_KERNEL_INFORMATION_STRUCT_V1, PPEP_KERNEL_INFORMATION_STRUCT_V1 structure pointer [Kernel-Mode Driver Architecture]"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : pep_x.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with Windows 10.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPEP_KERNEL_INFORMATION_STRUCT_V2, PEP_KERNEL_INFORMATION_STRUCT_V2"
+UID: NS:pep_x._PEP_KERNEL_INFORMATION_STRUCT_V2
+title: "_PEP_KERNEL_INFORMATION_STRUCT_V2"
+author: windows-driver-content
+description: The PEP_KERNEL_INFORMATION structure specifies the interface that the power extension plug-in (PEP) uses to request services from the Windows power management framework (PoFx).
+old-location: kernel\pep_kernel_information.htm
+old-project: kernel
+ms.assetid: 4FBBEF08-3BDA-43B2-A05B-B6BFC2787FC6
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: "_PEP_KERNEL_INFORMATION_STRUCT_V2, PEP_KERNEL_INFORMATION_STRUCT_V1, *PPEP_KERNEL_INFORMATION_STRUCT_V2, kernel.pep_kernel_information, *PPEP_KERNEL_INFORMATION, PEP_KERNEL_INFORMATION structure pointer [Kernel-Mode Driver Architecture], PEP_KERNEL_INFORMATION_STRUCT_V1 structure [Kernel-Mode Driver Architecture], pep_x/PEP_KERNEL_INFORMATION_STRUCT_V1, PPEP_KERNEL_INFORMATION_STRUCT_V1, PEP_KERNEL_INFORMATION, *PPEP_KERNEL_INFORMATION_STRUCT_V1, pep_x/PEP_KERNEL_INFORMATION, PEP_KERNEL_INFORMATION_STRUCT_V2, pep_x/PPEP_KERNEL_INFORMATION_STRUCT_V1, _PEP_KERNEL_INFORMATION_STRUCT_V1, PPEP_KERNEL_INFORMATION_STRUCT_V1 structure pointer [Kernel-Mode Driver Architecture]"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: pep_x.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows 10.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	pep_x.h
+apiname:
+-	PEP_KERNEL_INFORMATION_STRUCT_V1
+product: Windows
+targetos: Windows
+req.typenames: "*PPEP_KERNEL_INFORMATION_STRUCT_V2, PEP_KERNEL_INFORMATION_STRUCT_V2"
 ---
 
 # _PEP_KERNEL_INFORMATION_STRUCT_V2 structure

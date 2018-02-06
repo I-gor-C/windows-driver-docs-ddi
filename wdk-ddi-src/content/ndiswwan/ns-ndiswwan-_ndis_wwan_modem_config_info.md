@@ -1,41 +1,46 @@
 ---
-UID : NS:ndiswwan._NDIS_WWAN_MODEM_CONFIG_INFO
-title : "_NDIS_WWAN_MODEM_CONFIG_INFO"
-author : windows-driver-content
-description : The NDIS_WWAN_MODEM_CONFIG_INFO structure represents the modem's configuration information.
-old-location : netvista\ndis_wwan_modem_config_info.htm
-old-project : netvista
-ms.assetid : 07C2BAED-157A-459C-B558-115C0091ECE5
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : "*PNDIS_WWAN_MODEM_CONFIG_INFO, netvista.ndis_wwan_modem_config_info, NDIS_WWAN_MODEM_CONFIG_INFO, ndiswwan/NDIS_WWAN_MODEM_CONFIG_INFO, PNDIS_WWAN_MODEM_CONFIG_INFO, ndiswwan/PNDIS_WWAN_MODEM_CONFIG_INFO, NDIS_WWAN_MODEM_CONFIG_INFO structure [Network Drivers Starting with Windows Vista], _NDIS_WWAN_MODEM_CONFIG_INFO, PNDIS_WWAN_MODEM_CONFIG_INFO structure pointer [Network Drivers Starting with Windows Vista]"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndiswwan.h
-req.include-header : Ndiswwan.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10, version 1709
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_WWAN_MODEM_CONFIG_INFO, *PNDIS_WWAN_MODEM_CONFIG_INFO
+UID: NS:ndiswwan._NDIS_WWAN_MODEM_CONFIG_INFO
+title: "_NDIS_WWAN_MODEM_CONFIG_INFO"
+author: windows-driver-content
+description: The NDIS_WWAN_MODEM_CONFIG_INFO structure represents the modem's configuration information.
+old-location: netvista\ndis_wwan_modem_config_info.htm
+old-project: netvista
+ms.assetid: 07C2BAED-157A-459C-B558-115C0091ECE5
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: "*PNDIS_WWAN_MODEM_CONFIG_INFO, netvista.ndis_wwan_modem_config_info, NDIS_WWAN_MODEM_CONFIG_INFO, ndiswwan/NDIS_WWAN_MODEM_CONFIG_INFO, PNDIS_WWAN_MODEM_CONFIG_INFO, ndiswwan/PNDIS_WWAN_MODEM_CONFIG_INFO, NDIS_WWAN_MODEM_CONFIG_INFO structure [Network Drivers Starting with Windows Vista], _NDIS_WWAN_MODEM_CONFIG_INFO, PNDIS_WWAN_MODEM_CONFIG_INFO structure pointer [Network Drivers Starting with Windows Vista]"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndiswwan.h
+req.include-header: Ndiswwan.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10, version 1709
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndiswwan.h
+apiname:
+-	NDIS_WWAN_MODEM_CONFIG_INFO
+product: Windows
+targetos: Windows
+req.typenames: NDIS_WWAN_MODEM_CONFIG_INFO, *PNDIS_WWAN_MODEM_CONFIG_INFO
 ---
 
 # _NDIS_WWAN_MODEM_CONFIG_INFO structure

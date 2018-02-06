@@ -1,41 +1,49 @@
 ---
-UID : NF:ntstrsafe.RtlStringCbCopyNExW
-title : RtlStringCbCopyNExW function
-author : windows-driver-content
-description : The RtlStringCbCopyNExW and RtlStringCbCopyNExA functions copy a byte-counted string to a buffer while limiting the size of the copied string.
-old-location : kernel\rtlstringcbcopynex.htm
-old-project : kernel
-ms.assetid : 25d6dc68-8cd3-4f8c-ad0d-361b4f6c4cf6
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : STRSAFE_FILL_BEHIND_NULL, RtlStringCbCopyNEx, ntstrsafe/RtlStringCbCopyNExW, RtlStringCbCopyNExA, ntstrsafe/RtlStringCbCopyNExA, STRSAFE_IGNORE_NULLS, safestrings_868bd7e8-88d5-4c41-ba40-ca7934ff86c8.xml, RtlStringCbCopyNExW function [Kernel-Mode Driver Architecture], STRSAFE_NULL_ON_FAILURE, RtlStringCbCopyNExW, STRSAFE_FILL_ON_FAILURE, STRSAFE_NO_TRUNCATION, kernel.rtlstringcbcopynex
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntstrsafe.h
-req.include-header : Ntstrsafe.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows XP with Service Pack 1 (SP1) and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : RtlStringCbCopyNExW (Unicode) and RtlStringCbCopyNExA (ANSI)
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ntstrsafe.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : BATTERY_REPORTING_SCALE, *PBATTERY_REPORTING_SCALE
+UID: NF:ntstrsafe.RtlStringCbCopyNExW
+title: RtlStringCbCopyNExW function
+author: windows-driver-content
+description: The RtlStringCbCopyNExW and RtlStringCbCopyNExA functions copy a byte-counted string to a buffer while limiting the size of the copied string.
+old-location: kernel\rtlstringcbcopynex.htm
+old-project: kernel
+ms.assetid: 25d6dc68-8cd3-4f8c-ad0d-361b4f6c4cf6
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: STRSAFE_FILL_BEHIND_NULL, RtlStringCbCopyNEx, ntstrsafe/RtlStringCbCopyNExW, RtlStringCbCopyNExA, ntstrsafe/RtlStringCbCopyNExA, STRSAFE_IGNORE_NULLS, safestrings_868bd7e8-88d5-4c41-ba40-ca7934ff86c8.xml, RtlStringCbCopyNExW function [Kernel-Mode Driver Architecture], STRSAFE_NULL_ON_FAILURE, RtlStringCbCopyNExW, STRSAFE_FILL_ON_FAILURE, STRSAFE_NO_TRUNCATION, kernel.rtlstringcbcopynex
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntstrsafe.h
+req.include-header: Ntstrsafe.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows XP with Service Pack 1 (SP1) and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: RtlStringCbCopyNExW (Unicode) and RtlStringCbCopyNExA (ANSI)
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ntstrsafe.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ntstrsafe.lib
+-	Ntstrsafe.dll
+apiname:
+-	RtlStringCbCopyNExW
+-	RtlStringCbCopyNExA
+-	RtlStringCbCopyNExW
+product: Windows
+targetos: Windows
+req.typenames: BATTERY_REPORTING_SCALE, *PBATTERY_REPORTING_SCALE
 ---
 
 

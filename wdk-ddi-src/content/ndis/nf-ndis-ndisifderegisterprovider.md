@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisIfDeregisterProvider
-title : NdisIfDeregisterProvider function
-author : windows-driver-content
-description : The NdisIfDeregisterProvider function deregisters an interface provider that was previously registered by a call to the NdisIfRegisterProvider function.
-old-location : netvista\ndisifderegisterprovider.htm
-old-project : netvista
-ms.assetid : 90e921e3-b384-495b-8cb6-74596d060ec0
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : ndis/NdisIfDeregisterProvider, netvista.ndisifderegisterprovider, NdisIfDeregisterProvider, NdisIfDeregisterProvider function [Network Drivers Starting with Windows Vista], net_if_functions_ref_7e9c9d72-3b55-4001-9848-c79608608c82.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_Interfaces_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisIfDeregisterProvider
+title: NdisIfDeregisterProvider function
+author: windows-driver-content
+description: The NdisIfDeregisterProvider function deregisters an interface provider that was previously registered by a call to the NdisIfRegisterProvider function.
+old-location: netvista\ndisifderegisterprovider.htm
+old-project: netvista
+ms.assetid: 90e921e3-b384-495b-8cb6-74596d060ec0
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: ndis/NdisIfDeregisterProvider, netvista.ndisifderegisterprovider, NdisIfDeregisterProvider, NdisIfDeregisterProvider function [Network Drivers Starting with Windows Vista], net_if_functions_ref_7e9c9d72-3b55-4001-9848-c79608608c82.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_Interfaces_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisIfDeregisterProvider
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

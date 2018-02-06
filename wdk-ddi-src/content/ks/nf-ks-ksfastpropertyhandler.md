@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsFastPropertyHandler
-title : KsFastPropertyHandler function
-author : windows-driver-content
-description : The KsFastPropertyHandler function handles fast property requests through IOCTL_KS_PROPERTY. It responds to all property identifiers defined by the sets that are also contained in the fast I/O list. This function can only be called at PASSIVE_LEVEL.
-old-location : stream\ksfastpropertyhandler.htm
-old-project : stream
-ms.assetid : 39a216f8-297d-45cc-9bec-4c0ee9941441
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KsFastPropertyHandler function [Streaming Media Devices], ksfunc_4b896ea0-aa74-4acf-b8fa-cdc4c8cdb4b1.xml, stream.ksfastpropertyhandler, KsFastPropertyHandler, ks/KsFastPropertyHandler
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsFastPropertyHandler
+title: KsFastPropertyHandler function
+author: windows-driver-content
+description: The KsFastPropertyHandler function handles fast property requests through IOCTL_KS_PROPERTY. It responds to all property identifiers defined by the sets that are also contained in the fast I/O list. This function can only be called at PASSIVE_LEVEL.
+old-location: stream\ksfastpropertyhandler.htm
+old-project: stream
+ms.assetid: 39a216f8-297d-45cc-9bec-4c0ee9941441
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KsFastPropertyHandler function [Streaming Media Devices], ksfunc_4b896ea0-aa74-4acf-b8fa-cdc4c8cdb4b1.xml, stream.ksfastpropertyhandler, KsFastPropertyHandler, ks/KsFastPropertyHandler
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsFastPropertyHandler
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

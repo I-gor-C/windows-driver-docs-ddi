@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugEventCallbacks.Breakpoint
-title : IDebugEventCallbacks::Breakpoint method
-author : windows-driver-content
-description : The Breakpoint callback method is called by the engine when the target issues a breakpointexception.
-old-location : debugger\idebugeventcallbacks_breakpoint.htm
-old-project : debugger
-ms.assetid : 76b9aca2-4630-45e2-bed4-f701018c86a5
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : Breakpoint method [Windows Debugging], IDebugEventCallbacks interface, IDebugEventCallbacks interface [Windows Debugging], Breakpoint method, IDebugEventCallbacks, ComCallbacks_16ba89ba-0eb2-4565-ba29-5865abffe1bc.xml, Breakpoint method [Windows Debugging], debugger.idebugeventcallbacks_breakpoint, Breakpoint, IDebugEventCallbacks::Breakpoint, dbgeng/IDebugEventCallbacks::Breakpoint
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugEventCallbacks.Breakpoint
+title: IDebugEventCallbacks::Breakpoint method
+author: windows-driver-content
+description: The Breakpoint callback method is called by the engine when the target issues a breakpointexception.
+old-location: debugger\idebugeventcallbacks_breakpoint.htm
+old-project: debugger
+ms.assetid: 76b9aca2-4630-45e2-bed4-f701018c86a5
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: Breakpoint method [Windows Debugging], IDebugEventCallbacks interface, IDebugEventCallbacks interface [Windows Debugging], Breakpoint method, IDebugEventCallbacks, ComCallbacks_16ba89ba-0eb2-4565-ba29-5865abffe1bc.xml, Breakpoint method [Windows Debugging], debugger.idebugeventcallbacks_breakpoint, Breakpoint, IDebugEventCallbacks::Breakpoint, dbgeng/IDebugEventCallbacks::Breakpoint
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugEventCallbacks.Breakpoint
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

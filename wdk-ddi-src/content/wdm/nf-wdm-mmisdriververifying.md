@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.MmIsDriverVerifying
-title : MmIsDriverVerifying function
-author : windows-driver-content
-description : The MmIsDriverVerifying routine indicates whether the kernel-mode driver that is identified by the specified driver object is being verified or calls a driver that is being verified by Driver Verifier.
-old-location : kernel\mmisdriververifying.htm
-old-project : kernel
-ms.assetid : 74bfe9fb-f751-46a6-a95b-f715ebedd2ec
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : MmIsDriverVerifying routine [Kernel-Mode Driver Architecture], wdm/MmIsDriverVerifying, MmIsDriverVerifying, kernel.mmisdriververifying, k106_50d610e1-b3ae-41c5-a696-13ab0cf314b6.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.MmIsDriverVerifying
+title: MmIsDriverVerifying function
+author: windows-driver-content
+description: The MmIsDriverVerifying routine indicates whether the kernel-mode driver that is identified by the specified driver object is being verified or calls a driver that is being verified by Driver Verifier.
+old-location: kernel\mmisdriververifying.htm
+old-project: kernel
+ms.assetid: 74bfe9fb-f751-46a6-a95b-f715ebedd2ec
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: MmIsDriverVerifying routine [Kernel-Mode Driver Architecture], wdm/MmIsDriverVerifying, MmIsDriverVerifying, kernel.mmisdriververifying, k106_50d610e1-b3ae-41c5-a696-13ab0cf314b6.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	MmIsDriverVerifying
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

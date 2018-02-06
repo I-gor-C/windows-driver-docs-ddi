@@ -1,41 +1,49 @@
 ---
-UID : NF:dbgeng.IDebugDataSpaces4.ReadPointersVirtual
-title : IDebugDataSpaces4::ReadPointersVirtual method
-author : windows-driver-content
-description : The ReadPointersVirtual method is a convenience method for reading pointers from the target's virtual address space.
-old-location : debugger\readpointersvirtual.htm
-old-project : debugger
-ms.assetid : 003fd20c-12d6-40b0-8e43-a7d730199846
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : ReadPointersVirtual method [Windows Debugging], IDebugDataSpaces3 interface [Windows Debugging], ReadPointersVirtual method, IDebugDataSpaces2 interface [Windows Debugging], ReadPointersVirtual method, dbgeng/IDebugDataSpaces2::ReadPointersVirtual, IDebugDataSpaces4::ReadPointersVirtual, dbgeng/IDebugDataSpaces3::ReadPointersVirtual, ReadPointersVirtual method [Windows Debugging], IDebugDataSpaces interface, ReadPointersVirtual method [Windows Debugging], IDebugDataSpaces3 interface, IDebugDataSpaces2::ReadPointersVirtual, debugger.readpointersvirtual, ReadPointersVirtual, IDebugDataSpaces interface [Windows Debugging], ReadPointersVirtual method, dbgeng/IDebugDataSpaces4::ReadPointersVirtual, IDebugDataSpaces_d3857a69-3e22-4d7a-97ef-d6cb7bf8613a.xml, IDebugDataSpaces3::ReadPointersVirtual, IDebugDataSpaces4, ReadPointersVirtual method [Windows Debugging], IDebugDataSpaces4 interface, ReadPointersVirtual method [Windows Debugging], IDebugDataSpaces2 interface, dbgeng/IDebugDataSpaces::ReadPointersVirtual, IDebugDataSpaces4 interface [Windows Debugging], ReadPointersVirtual method, IDebugDataSpaces::ReadPointersVirtual
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugDataSpaces4.ReadPointersVirtual
+title: IDebugDataSpaces4::ReadPointersVirtual method
+author: windows-driver-content
+description: The ReadPointersVirtual method is a convenience method for reading pointers from the target's virtual address space.
+old-location: debugger\readpointersvirtual.htm
+old-project: debugger
+ms.assetid: 003fd20c-12d6-40b0-8e43-a7d730199846
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: ReadPointersVirtual method [Windows Debugging], IDebugDataSpaces3 interface [Windows Debugging], ReadPointersVirtual method, IDebugDataSpaces2 interface [Windows Debugging], ReadPointersVirtual method, dbgeng/IDebugDataSpaces2::ReadPointersVirtual, IDebugDataSpaces4::ReadPointersVirtual, dbgeng/IDebugDataSpaces3::ReadPointersVirtual, ReadPointersVirtual method [Windows Debugging], IDebugDataSpaces interface, ReadPointersVirtual method [Windows Debugging], IDebugDataSpaces3 interface, IDebugDataSpaces2::ReadPointersVirtual, debugger.readpointersvirtual, ReadPointersVirtual, IDebugDataSpaces interface [Windows Debugging], ReadPointersVirtual method, dbgeng/IDebugDataSpaces4::ReadPointersVirtual, IDebugDataSpaces_d3857a69-3e22-4d7a-97ef-d6cb7bf8613a.xml, IDebugDataSpaces3::ReadPointersVirtual, IDebugDataSpaces4, ReadPointersVirtual method [Windows Debugging], IDebugDataSpaces4 interface, ReadPointersVirtual method [Windows Debugging], IDebugDataSpaces2 interface, dbgeng/IDebugDataSpaces::ReadPointersVirtual, IDebugDataSpaces4 interface [Windows Debugging], ReadPointersVirtual method, IDebugDataSpaces::ReadPointersVirtual
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugDataSpaces.ReadPointersVirtual
+-	IDebugDataSpaces2.ReadPointersVirtual
+-	IDebugDataSpaces3.ReadPointersVirtual
+-	IDebugDataSpaces4.ReadPointersVirtual
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

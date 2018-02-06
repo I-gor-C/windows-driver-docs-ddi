@@ -1,41 +1,47 @@
 ---
-UID : NF:portcls.PcRequestNewPowerState
-title : PcRequestNewPowerState function
-author : windows-driver-content
-description : The PcRequestNewPowerState function is used to request a new power state for the device. This function is typically not needed by adapter drivers but can occasionally be useful in working around some kinds of hardware problems.
-old-location : audio\pcrequestnewpowerstate.htm
-old-project : audio
-ms.assetid : fbe2c665-a7e8-43e4-95e5-a7e87521e163
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : audio.pcrequestnewpowerstate, PcRequestNewPowerState, audpc-routines_c3341fb0-4609-4b3f-a0b2-ef589c804f1d.xml, portcls/PcRequestNewPowerState, PcRequestNewPowerState function [Audio Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : portcls.h
-req.include-header : Portcls.h
-req.target-type : Universal
-req.target-min-winverclnt : The PortCls system driver implements the PcRequestNewPowerState function in Microsoft Windows 98/Me and in Windows 2000 and later operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Portcls.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.PcRequestNewPowerState
+title: PcRequestNewPowerState function
+author: windows-driver-content
+description: The PcRequestNewPowerState function is used to request a new power state for the device. This function is typically not needed by adapter drivers but can occasionally be useful in working around some kinds of hardware problems.
+old-location: audio\pcrequestnewpowerstate.htm
+old-project: audio
+ms.assetid: fbe2c665-a7e8-43e4-95e5-a7e87521e163
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: audio.pcrequestnewpowerstate, PcRequestNewPowerState, audpc-routines_c3341fb0-4609-4b3f-a0b2-ef589c804f1d.xml, portcls/PcRequestNewPowerState, PcRequestNewPowerState function [Audio Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: portcls.h
+req.include-header: Portcls.h
+req.target-type: Universal
+req.target-min-winverclnt: The PortCls system driver implements the PcRequestNewPowerState function in Microsoft Windows 98/Me and in Windows 2000 and later operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Portcls.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Portcls.lib
+-	Portcls.dll
+apiname:
+-	PcRequestNewPowerState
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

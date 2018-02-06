@@ -1,41 +1,46 @@
 ---
-UID : NF:portcls.IInterruptSync.GetKInterrupt
-title : IInterruptSync::GetKInterrupt method
-author : windows-driver-content
-description : The GetKInterrupt method gets a WDM interrupt object from a port-class synchronization object.
-old-location : audio\iinterruptsync_getkinterrupt.htm
-old-project : audio
-ms.assetid : 045c509b-852d-405c-9615-8a2f351bf8c7
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : portcls/IInterruptSync::GetKInterrupt, IInterruptSync interface [Audio Devices], GetKInterrupt method, GetKInterrupt, GetKInterrupt method [Audio Devices], IInterruptSync interface, IInterruptSync, IInterruptSync::GetKInterrupt, audio.iinterruptsync_getkinterrupt, audmp-routines_7782adef-dc02-4876-bd48-812f8b3e58da.xml, GetKInterrupt method [Audio Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : portcls.h
-req.include-header : Portcls.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : portcls.h
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.IInterruptSync.GetKInterrupt
+title: IInterruptSync::GetKInterrupt method
+author: windows-driver-content
+description: The GetKInterrupt method gets a WDM interrupt object from a port-class synchronization object.
+old-location: audio\iinterruptsync_getkinterrupt.htm
+old-project: audio
+ms.assetid: 045c509b-852d-405c-9615-8a2f351bf8c7
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: portcls/IInterruptSync::GetKInterrupt, IInterruptSync interface [Audio Devices], GetKInterrupt method, GetKInterrupt, GetKInterrupt method [Audio Devices], IInterruptSync interface, IInterruptSync, IInterruptSync::GetKInterrupt, audio.iinterruptsync_getkinterrupt, audmp-routines_7782adef-dc02-4876-bd48-812f8b3e58da.xml, GetKInterrupt method [Audio Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: portcls.h
+req.include-header: Portcls.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: portcls.h
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	portcls.h
+apiname:
+-	IInterruptSync.GetKInterrupt
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

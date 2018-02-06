@@ -1,41 +1,47 @@
 ---
-UID : NF:dbgeng.IDebugAdvanced3.FindSourceFileAndToken
-title : IDebugAdvanced3::FindSourceFileAndToken method
-author : windows-driver-content
-description : The FindSourceFileAndToken method returns the filename of a source file on the source path or return the value of a variable associated with a file token.
-old-location : debugger\findsourcefileandtoken.htm
-old-project : debugger
-ms.assetid : 92748e47-c536-4bf2-be10-91b8c5f1206d
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugAdvanced3::FindSourceFileAndToken, IDebugAdvanced2::FindSourceFileAndToken, IDebugAdvanced2 interface [Windows Debugging], FindSourceFileAndToken method, IDebugAdvanced3, FindSourceFileAndToken, debugger.findsourcefileandtoken, IDebugAdvanced_3c88de99-1ddb-47e4-ab70-37a2521b9f1b.xml, dbgeng/IDebugAdvanced2::FindSourceFileAndToken, FindSourceFileAndToken method [Windows Debugging], IDebugAdvanced2 interface, FindSourceFileAndToken method [Windows Debugging], FindSourceFileAndToken method [Windows Debugging], IDebugAdvanced3 interface, dbgeng/IDebugAdvanced3::FindSourceFileAndToken, IDebugAdvanced3 interface [Windows Debugging], FindSourceFileAndToken method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugAdvanced3.FindSourceFileAndToken
+title: IDebugAdvanced3::FindSourceFileAndToken method
+author: windows-driver-content
+description: The FindSourceFileAndToken method returns the filename of a source file on the source path or return the value of a variable associated with a file token.
+old-location: debugger\findsourcefileandtoken.htm
+old-project: debugger
+ms.assetid: 92748e47-c536-4bf2-be10-91b8c5f1206d
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugAdvanced3::FindSourceFileAndToken, IDebugAdvanced2::FindSourceFileAndToken, IDebugAdvanced2 interface [Windows Debugging], FindSourceFileAndToken method, IDebugAdvanced3, FindSourceFileAndToken, debugger.findsourcefileandtoken, IDebugAdvanced_3c88de99-1ddb-47e4-ab70-37a2521b9f1b.xml, dbgeng/IDebugAdvanced2::FindSourceFileAndToken, FindSourceFileAndToken method [Windows Debugging], IDebugAdvanced2 interface, FindSourceFileAndToken method [Windows Debugging], FindSourceFileAndToken method [Windows Debugging], IDebugAdvanced3 interface, dbgeng/IDebugAdvanced3::FindSourceFileAndToken, IDebugAdvanced3 interface [Windows Debugging], FindSourceFileAndToken method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugAdvanced2.FindSourceFileAndToken
+-	IDebugAdvanced3.FindSourceFileAndToken
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

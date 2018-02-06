@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsAcquireControl
-title : KsAcquireControl function
-author : windows-driver-content
-description : The KsAcquireControl function acquires the filter control mutex for Object.
-old-location : stream\ksacquirecontrol.htm
-old-project : stream
-ms.assetid : c316382c-8416-43c2-b5fd-2d52d01e1419
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.ksacquirecontrol, ks/KsAcquireControl, avfunc_a3c1eb2c-db95-463f-98f5-a158dd1e14f5.xml, KsAcquireControl, KsAcquireControl function [Streaming Media Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsAcquireControl
+title: KsAcquireControl function
+author: windows-driver-content
+description: The KsAcquireControl function acquires the filter control mutex for Object.
+old-location: stream\ksacquirecontrol.htm
+old-project: stream
+ms.assetid: c316382c-8416-43c2-b5fd-2d52d01e1419
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.ksacquirecontrol, ks/KsAcquireControl, avfunc_a3c1eb2c-db95-463f-98f5-a158dd1e14f5.xml, KsAcquireControl, KsAcquireControl function [Streaming Media Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsAcquireControl
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

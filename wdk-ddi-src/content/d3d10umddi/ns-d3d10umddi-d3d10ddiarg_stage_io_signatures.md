@@ -1,41 +1,46 @@
 ---
-UID : NS:d3d10umddi.D3D10DDIARG_STAGE_IO_SIGNATURES
-title : D3D10DDIARG_STAGE_IO_SIGNATURES
-author : windows-driver-content
-description : The D3D10DDIARG_STAGE_IO_SIGNATURES structure describes an I/O signature.
-old-location : display\d3d10ddiarg_stage_io_signatures.htm
-old-project : display
-ms.assetid : 9639bdc8-9b2f-4911-8a09-d5cf16204cf4
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : UMDisplayDriver_Dx10param_Structs_877fde5f-64e9-455a-b7ed-453e4b6a9e15.xml, display.d3d10ddiarg_stage_io_signatures, d3d10umddi/D3D10DDIARG_STAGE_IO_SIGNATURES, D3D10DDIARG_STAGE_IO_SIGNATURES structure [Display Devices], D3D10DDIARG_STAGE_IO_SIGNATURES
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3D10DDIARG_STAGE_IO_SIGNATURES
+UID: NS:d3d10umddi.D3D10DDIARG_STAGE_IO_SIGNATURES
+title: D3D10DDIARG_STAGE_IO_SIGNATURES
+author: windows-driver-content
+description: The D3D10DDIARG_STAGE_IO_SIGNATURES structure describes an I/O signature.
+old-location: display\d3d10ddiarg_stage_io_signatures.htm
+old-project: display
+ms.assetid: 9639bdc8-9b2f-4911-8a09-d5cf16204cf4
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: UMDisplayDriver_Dx10param_Structs_877fde5f-64e9-455a-b7ed-453e4b6a9e15.xml, display.d3d10ddiarg_stage_io_signatures, d3d10umddi/D3D10DDIARG_STAGE_IO_SIGNATURES, D3D10DDIARG_STAGE_IO_SIGNATURES structure [Display Devices], D3D10DDIARG_STAGE_IO_SIGNATURES
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	D3D10DDIARG_STAGE_IO_SIGNATURES
+product: Windows
+targetos: Windows
+req.typenames: D3D10DDIARG_STAGE_IO_SIGNATURES
 ---
 
 # D3D10DDIARG_STAGE_IO_SIGNATURES structure

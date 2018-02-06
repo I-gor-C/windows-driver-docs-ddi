@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.IoSetIoPriorityHint
-title : IoSetIoPriorityHint function
-author : windows-driver-content
-description : The IoSetIoPriorityHint routine sets the priority hint value for an IRP.
-old-location : kernel\iosetiopriorityhint.htm
-old-project : kernel
-ms.assetid : ecd4ed14-b9f2-45ff-a42b-5c67f1ccfd91
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.iosetiopriorityhint, wdm/IoSetIoPriorityHint, IoSetIoPriorityHint, IoSetIoPriorityHint routine [Kernel-Mode Driver Architecture], k104_9d72dacc-03a6-4dda-8c2b-69b59a817392.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.IoSetIoPriorityHint
+title: IoSetIoPriorityHint function
+author: windows-driver-content
+description: The IoSetIoPriorityHint routine sets the priority hint value for an IRP.
+old-location: kernel\iosetiopriorityhint.htm
+old-project: kernel
+ms.assetid: ecd4ed14-b9f2-45ff-a42b-5c67f1ccfd91
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.iosetiopriorityhint, wdm/IoSetIoPriorityHint, IoSetIoPriorityHint, IoSetIoPriorityHint routine [Kernel-Mode Driver Architecture], k104_9d72dacc-03a6-4dda-8c2b-69b59a817392.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoSetIoPriorityHint
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

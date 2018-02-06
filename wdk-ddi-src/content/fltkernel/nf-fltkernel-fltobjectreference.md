@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltObjectReference
-title : FltObjectReference function
-author : windows-driver-content
-description : The FltObjectReference routine adds a rundown reference to an opaque filter, instance, or volume pointer.
-old-location : ifsk\fltobjectreference.htm
-old-project : ifsk
-ms.assetid : ad6317bf-92fc-4e77-9993-37b7aa123a3d
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltObjectReference, FltApiRef_e_to_o_66eccb5d-8f95-4779-b329-aaeb8b8c09b5.xml, fltkernel/FltObjectReference, ifsk.fltobjectreference, FltObjectReference routine [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltObjectReference
+title: FltObjectReference function
+author: windows-driver-content
+description: The FltObjectReference routine adds a rundown reference to an opaque filter, instance, or volume pointer.
+old-location: ifsk\fltobjectreference.htm
+old-project: ifsk
+ms.assetid: ad6317bf-92fc-4e77-9993-37b7aa123a3d
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltObjectReference, FltApiRef_e_to_o_66eccb5d-8f95-4779-b329-aaeb8b8c09b5.xml, fltkernel/FltObjectReference, ifsk.fltobjectreference, FltObjectReference routine [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltObjectReference
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

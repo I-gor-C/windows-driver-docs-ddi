@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._DXVAHDDDI_BLT_STATE_BACKGROUND_COLOR_DATA
-title : "_DXVAHDDDI_BLT_STATE_BACKGROUND_COLOR_DATA"
-author : windows-driver-content
-description : The DXVAHDDDI_BLT_STATE_BACKGROUND_COLOR_DATA structure describes data that specifies the background color to fill in the target rectangle of the output.
-old-location : display\dxvahdddi_blt_state_background_color_data.htm
-old-project : display
-ms.assetid : 23eaa88a-a3c3-4630-92b0-d76b266a9c45
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : "_DXVAHDDDI_BLT_STATE_BACKGROUND_COLOR_DATA, display.dxvahdddi_blt_state_background_color_data, d3dumddi/DXVAHDDDI_BLT_STATE_BACKGROUND_COLOR_DATA, DXVA2_Structs_d4f86ea1-cbdd-48ab-84ca-1bc64ba4c8db.xml, DXVAHDDDI_BLT_STATE_BACKGROUND_COLOR_DATA structure [Display Devices], DXVAHDDDI_BLT_STATE_BACKGROUND_COLOR_DATA"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : DXVAHDDDI_BLT_STATE_BACKGROUND_COLOR_DATA is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXVAHDDDI_BLT_STATE_BACKGROUND_COLOR_DATA
+UID: NS:d3dumddi._DXVAHDDDI_BLT_STATE_BACKGROUND_COLOR_DATA
+title: "_DXVAHDDDI_BLT_STATE_BACKGROUND_COLOR_DATA"
+author: windows-driver-content
+description: The DXVAHDDDI_BLT_STATE_BACKGROUND_COLOR_DATA structure describes data that specifies the background color to fill in the target rectangle of the output.
+old-location: display\dxvahdddi_blt_state_background_color_data.htm
+old-project: display
+ms.assetid: 23eaa88a-a3c3-4630-92b0-d76b266a9c45
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: "_DXVAHDDDI_BLT_STATE_BACKGROUND_COLOR_DATA, display.dxvahdddi_blt_state_background_color_data, d3dumddi/DXVAHDDDI_BLT_STATE_BACKGROUND_COLOR_DATA, DXVA2_Structs_d4f86ea1-cbdd-48ab-84ca-1bc64ba4c8db.xml, DXVAHDDDI_BLT_STATE_BACKGROUND_COLOR_DATA structure [Display Devices], DXVAHDDDI_BLT_STATE_BACKGROUND_COLOR_DATA"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: DXVAHDDDI_BLT_STATE_BACKGROUND_COLOR_DATA is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	DXVAHDDDI_BLT_STATE_BACKGROUND_COLOR_DATA
+product: Windows
+targetos: Windows
+req.typenames: DXVAHDDDI_BLT_STATE_BACKGROUND_COLOR_DATA
 ---
 
 # _DXVAHDDDI_BLT_STATE_BACKGROUND_COLOR_DATA structure

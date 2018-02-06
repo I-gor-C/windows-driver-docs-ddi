@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dhal._DD_GETD3DQUERYDATA
-title : "_DD_GETD3DQUERYDATA"
-author : windows-driver-content
-description : DirectX 9.0 and later versions only. DD_GETD3DQUERYDATA is the data structure pointed to by the lpvData field of DD_GETDRIVERINFODATA for DD_GETDRIVERINFO2DATA queries with the type D3DGDI2_TYPE_GETD3DQUERY.
-old-location : display\dd_getd3dquerydata.htm
-old-project : display
-ms.assetid : a3bacd56-c25a-45d1-bd9f-b19bc1f95c8f
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3dhal/DD_GETD3DQUERYDATA, _DD_GETD3DQUERYDATA, d3dstrct_ec5ab755-9f1e-4add-bcf1-73bcb01988e6.xml, DD_GETD3DQUERYDATA, display.dd_getd3dquerydata, DD_GETD3DQUERYDATA structure [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dhal.h
-req.include-header : D3dhal.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DD_GETD3DQUERYDATA
+UID: NS:d3dhal._DD_GETD3DQUERYDATA
+title: "_DD_GETD3DQUERYDATA"
+author: windows-driver-content
+description: DirectX 9.0 and later versions only. DD_GETD3DQUERYDATA is the data structure pointed to by the lpvData field of DD_GETDRIVERINFODATA for DD_GETDRIVERINFO2DATA queries with the type D3DGDI2_TYPE_GETD3DQUERY.
+old-location: display\dd_getd3dquerydata.htm
+old-project: display
+ms.assetid: a3bacd56-c25a-45d1-bd9f-b19bc1f95c8f
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3dhal/DD_GETD3DQUERYDATA, _DD_GETD3DQUERYDATA, d3dstrct_ec5ab755-9f1e-4add-bcf1-73bcb01988e6.xml, DD_GETD3DQUERYDATA, display.dd_getd3dquerydata, DD_GETD3DQUERYDATA structure [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dhal.h
+req.include-header: D3dhal.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dhal.h
+apiname:
+-	DD_GETD3DQUERYDATA
+product: Windows
+targetos: Windows
+req.typenames: DD_GETD3DQUERYDATA
 ---
 
 # _DD_GETD3DQUERYDATA structure

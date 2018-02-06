@@ -1,41 +1,46 @@
 ---
-UID : NS:ndis._NDIS_PROCESSOR_INFO
-title : "_NDIS_PROCESSOR_INFO"
-author : windows-driver-content
-description : The NDIS_PROCESSOR_INFO structure specifies information about a processor in the local computer.
-old-location : netvista\ndis_processor_info.htm
-old-project : netvista
-ms.assetid : 55c7044e-20db-4245-a644-93cbeb9cd512
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NDIS_PROCESSOR_INFO structure [Network Drivers Starting with Windows Vista], PNDIS_PROCESSOR_INFO structure pointer [Network Drivers Starting with Windows Vista], ndis/PNDIS_PROCESSOR_INFO, _NDIS_PROCESSOR_INFO, PNDIS_PROCESSOR_INFO, ndis/NDIS_PROCESSOR_INFO, netvista.ndis_processor_info, ndis_sysinfo_ref_87f00f3b-dc88-4f7d-be9e-39a649aa87a6.xml, *PNDIS_PROCESSOR_INFO, NDIS_PROCESSOR_INFO
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.0 and 6.1. For NDIS 6.20 and later, use NDIS_PROCESSOR_INFO_EX.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : See Remarks section
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_PROCESSOR_INFO, *PNDIS_PROCESSOR_INFO
+UID: NS:ndis._NDIS_PROCESSOR_INFO
+title: "_NDIS_PROCESSOR_INFO"
+author: windows-driver-content
+description: The NDIS_PROCESSOR_INFO structure specifies information about a processor in the local computer.
+old-location: netvista\ndis_processor_info.htm
+old-project: netvista
+ms.assetid: 55c7044e-20db-4245-a644-93cbeb9cd512
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NDIS_PROCESSOR_INFO structure [Network Drivers Starting with Windows Vista], PNDIS_PROCESSOR_INFO structure pointer [Network Drivers Starting with Windows Vista], ndis/PNDIS_PROCESSOR_INFO, _NDIS_PROCESSOR_INFO, PNDIS_PROCESSOR_INFO, ndis/NDIS_PROCESSOR_INFO, netvista.ndis_processor_info, ndis_sysinfo_ref_87f00f3b-dc88-4f7d-be9e-39a649aa87a6.xml, *PNDIS_PROCESSOR_INFO, NDIS_PROCESSOR_INFO
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.0 and 6.1. For NDIS 6.20 and later, use NDIS_PROCESSOR_INFO_EX.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: See Remarks section
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndis.h
+apiname:
+-	NDIS_PROCESSOR_INFO
+product: Windows
+targetos: Windows
+req.typenames: NDIS_PROCESSOR_INFO, *PNDIS_PROCESSOR_INFO
 ---
 
 # _NDIS_PROCESSOR_INFO structure

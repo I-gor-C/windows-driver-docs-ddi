@@ -1,42 +1,48 @@
 ---
-UID : NF:srb.ScsiPortWritePortUshort
-title : ScsiPortWritePortUshort function
-author : windows-driver-content
-description : The ScsiPortWritePortUshort routine transfers a USHORT value to the HBA.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future.
-old-location : storage\scsiportwriteportushort.htm
-old-project : storage
-ms.assetid : 4b1accd8-5dbe-47d6-822e-1997a6ab5082
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : srb/ScsiPortWritePortUshort, storage.scsiportwriteportushort, ScsiPortWritePortUshort routine [Storage Devices], scsiprt_e7e27190-3f51-4ede-9b4d-fcc437f46d17.xml, ScsiPortWritePortUshort
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : srb.h
-req.include-header : Miniport.h, Scsi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Scsiport.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SPB_CONTROLLER_CONFIG, *PSPB_CONTROLLER_CONFIG
-req.product : Windows 10 or later.
+UID: NF:srb.ScsiPortWritePortUshort
+title: ScsiPortWritePortUshort function
+author: windows-driver-content
+description: The ScsiPortWritePortUshort routine transfers a USHORT value to the HBA.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future.
+old-location: storage\scsiportwriteportushort.htm
+old-project: storage
+ms.assetid: 4b1accd8-5dbe-47d6-822e-1997a6ab5082
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: srb/ScsiPortWritePortUshort, storage.scsiportwriteportushort, ScsiPortWritePortUshort routine [Storage Devices], scsiprt_e7e27190-3f51-4ede-9b4d-fcc437f46d17.xml, ScsiPortWritePortUshort
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: srb.h
+req.include-header: Miniport.h, Scsi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Scsiport.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Scsiport.lib
+-	Scsiport.dll
+apiname:
+-	ScsiPortWritePortUshort
+product: Windows
+targetos: Windows
+req.typenames: SPB_CONTROLLER_CONFIG, *PSPB_CONTROLLER_CONFIG
+req.product: Windows 10 or later.
 ---
 
 

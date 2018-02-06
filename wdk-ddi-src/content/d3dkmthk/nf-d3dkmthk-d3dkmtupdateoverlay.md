@@ -1,41 +1,49 @@
 ---
-UID : NF:d3dkmthk.D3DKMTUpdateOverlay
-title : D3DKMTUpdateOverlay function
-author : windows-driver-content
-description : The D3DKMTUpdateOverlay function modifies a kernel-mode overlay object.
-old-location : display\d3dkmtupdateoverlay.htm
-old-project : display
-ms.assetid : bd8fc34a-60a3-4ae7-b13e-50d8b4342834
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.d3dkmtupdateoverlay, D3DKMTUpdateOverlay, OpenGL_Functions_bddc75da-dc62-43cf-8ee7-ec9958198669.xml, d3dkmthk/D3DKMTUpdateOverlay, D3DKMTUpdateOverlay function [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Gdi32.lib
-req.dll : Gdi32.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_DRIVERVERSION
+UID: NF:d3dkmthk.D3DKMTUpdateOverlay
+title: D3DKMTUpdateOverlay function
+author: windows-driver-content
+description: The D3DKMTUpdateOverlay function modifies a kernel-mode overlay object.
+old-location: display\d3dkmtupdateoverlay.htm
+old-project: display
+ms.assetid: bd8fc34a-60a3-4ae7-b13e-50d8b4342834
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.d3dkmtupdateoverlay, D3DKMTUpdateOverlay, OpenGL_Functions_bddc75da-dc62-43cf-8ee7-ec9958198669.xml, d3dkmthk/D3DKMTUpdateOverlay, D3DKMTUpdateOverlay function [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Gdi32.lib
+req.dll: Gdi32.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Gdi32.dll
+-	API-MS-Win-dx-d3dkmt-l1-1-0.dll
+-	API-MS-Win-dx-d3dkmt-l1-1-1.dll
+-	API-MS-Win-DX-D3DKMT-L1-1-2.dll
+apiname:
+-	D3DKMTUpdateOverlay
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_DRIVERVERSION
 ---
 
 

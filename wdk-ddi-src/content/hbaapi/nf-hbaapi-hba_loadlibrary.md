@@ -1,41 +1,46 @@
 ---
-UID : NF:hbaapi.HBA_LoadLibrary
-title : HBA_LoadLibrary function
-author : windows-driver-content
-description : The HBA_LoadLibrary routine loads and initializes the system-supplied fibre channel HBA API library.
-old-location : storage\hba_loadlibrary.htm
-old-project : storage
-ms.assetid : f71be39c-4b0c-47fc-a9d5-dfe69d8b11f2
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : hbaapi/HBA_LoadLibrary, storage.hba_loadlibrary, HBA_LoadLibrary routine [Storage Devices], HBA_LoadLibrary, fibreHBA_rtns_59c2bca3-3df2-4a3a-aa0b-90afcbdd26da.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : hbaapi.h
-req.include-header : Hbaapi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Hbaapi.lib
-req.dll : Hbaapi.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HBA_WWNTYPE
+UID: NF:hbaapi.HBA_LoadLibrary
+title: HBA_LoadLibrary function
+author: windows-driver-content
+description: The HBA_LoadLibrary routine loads and initializes the system-supplied fibre channel HBA API library.
+old-location: storage\hba_loadlibrary.htm
+old-project: storage
+ms.assetid: f71be39c-4b0c-47fc-a9d5-dfe69d8b11f2
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: hbaapi/HBA_LoadLibrary, storage.hba_loadlibrary, HBA_LoadLibrary routine [Storage Devices], HBA_LoadLibrary, fibreHBA_rtns_59c2bca3-3df2-4a3a-aa0b-90afcbdd26da.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: hbaapi.h
+req.include-header: Hbaapi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Hbaapi.lib
+req.dll: Hbaapi.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Hbaapi.dll
+apiname:
+-	HBA_LoadLibrary
+product: Windows
+targetos: Windows
+req.typenames: HBA_WWNTYPE
 ---
 
 

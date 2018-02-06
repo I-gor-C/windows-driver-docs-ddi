@@ -1,41 +1,46 @@
 ---
-UID : NF:ks.IKsReferenceClock.GetCorrelatedTime
-title : IKsReferenceClock::GetCorrelatedTime method
-author : windows-driver-content
-description : The IKsReferenceClock::GetCorrelatedTime method queries the associated reference clock for current stream time and acquires the correlated system time.
-old-location : stream\iksreferenceclock_getcorrelatedtime.htm
-old-project : stream
-ms.assetid : 3f4a47bb-460e-4ca0-9aee-4bcfdb88dd30
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : IKsReferenceClock interface [Streaming Media Devices], GetCorrelatedTime method, stream.iksreferenceclock_getcorrelatedtime, ks/IKsReferenceClock::GetCorrelatedTime, IKsReferenceClock, GetCorrelatedTime, IKsReferenceClock::GetCorrelatedTime, avintfc_9bb8180e-a8e6-4b89-a615-0516470a7dd8.xml, GetCorrelatedTime method [Streaming Media Devices], IKsReferenceClock interface, GetCorrelatedTime method [Streaming Media Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : ks.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.IKsReferenceClock.GetCorrelatedTime
+title: IKsReferenceClock::GetCorrelatedTime method
+author: windows-driver-content
+description: The IKsReferenceClock::GetCorrelatedTime method queries the associated reference clock for current stream time and acquires the correlated system time.
+old-location: stream\iksreferenceclock_getcorrelatedtime.htm
+old-project: stream
+ms.assetid: 3f4a47bb-460e-4ca0-9aee-4bcfdb88dd30
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: IKsReferenceClock interface [Streaming Media Devices], GetCorrelatedTime method, stream.iksreferenceclock_getcorrelatedtime, ks/IKsReferenceClock::GetCorrelatedTime, IKsReferenceClock, GetCorrelatedTime, IKsReferenceClock::GetCorrelatedTime, avintfc_9bb8180e-a8e6-4b89-a615-0516470a7dd8.xml, GetCorrelatedTime method [Streaming Media Devices], IKsReferenceClock interface, GetCorrelatedTime method [Streaming Media Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: ks.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	ks.h
+apiname:
+-	IKsReferenceClock.GetCorrelatedTime
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

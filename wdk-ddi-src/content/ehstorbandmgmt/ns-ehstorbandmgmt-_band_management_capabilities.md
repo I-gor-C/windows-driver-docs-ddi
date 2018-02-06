@@ -1,41 +1,46 @@
 ---
-UID : NS:ehstorbandmgmt._BAND_MANAGEMENT_CAPABILITIES
-title : "_BAND_MANAGEMENT_CAPABILITIES"
-author : windows-driver-content
-description : The BAND_MANAGEMENT_CAPABILITIES structure contains the security capabilities available for a storage device. This structure is returned in the system buffer by the IOCTL_EHSTOR_BANDMGMT_QUERY_CAPABILITIES request.
-old-location : storage\band_management_capabilities.htm
-old-project : storage
-ms.assetid : 102C7CEC-B1DD-49F6-AB7F-0CE0A22EBE54
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : PBAND_MANAGEMENT_CAPABILITIES structure pointer [Storage Devices], 0, MEDIAKEY_PROTECTEDBY_AUTHKEY, ehstorbandmgmt/PBAND_MANAGEMENT_CAPABILITIES, BAND_MANAGEMENT_CAPABILITIES, *PBAND_MANAGEMENT_CAPABILITIES, CAPS_ACTIVATED, BAND_MANAGEMENT_CAPABILITIES structure [Storage Devices], MEDIAKEY_PROTECTEDBY_VENDORSCHEME, _BAND_MANAGEMENT_CAPABILITIES, PBAND_MANAGEMENT_CAPABILITIES, ehstorbandmgmt/BAND_MANAGEMENT_CAPABILITIES, CAPS_BANDCROSSING_SUPPORTED, storage.band_management_capabilities, CAPS_SID_SECURED
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ehstorbandmgmt.h
-req.include-header : EhStorBandMgmt.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows 8
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : BAND_MANAGEMENT_CAPABILITIES, *PBAND_MANAGEMENT_CAPABILITIES
+UID: NS:ehstorbandmgmt._BAND_MANAGEMENT_CAPABILITIES
+title: "_BAND_MANAGEMENT_CAPABILITIES"
+author: windows-driver-content
+description: The BAND_MANAGEMENT_CAPABILITIES structure contains the security capabilities available for a storage device. This structure is returned in the system buffer by the IOCTL_EHSTOR_BANDMGMT_QUERY_CAPABILITIES request.
+old-location: storage\band_management_capabilities.htm
+old-project: storage
+ms.assetid: 102C7CEC-B1DD-49F6-AB7F-0CE0A22EBE54
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: PBAND_MANAGEMENT_CAPABILITIES structure pointer [Storage Devices], 0, MEDIAKEY_PROTECTEDBY_AUTHKEY, ehstorbandmgmt/PBAND_MANAGEMENT_CAPABILITIES, BAND_MANAGEMENT_CAPABILITIES, *PBAND_MANAGEMENT_CAPABILITIES, CAPS_ACTIVATED, BAND_MANAGEMENT_CAPABILITIES structure [Storage Devices], MEDIAKEY_PROTECTEDBY_VENDORSCHEME, _BAND_MANAGEMENT_CAPABILITIES, PBAND_MANAGEMENT_CAPABILITIES, ehstorbandmgmt/BAND_MANAGEMENT_CAPABILITIES, CAPS_BANDCROSSING_SUPPORTED, storage.band_management_capabilities, CAPS_SID_SECURED
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ehstorbandmgmt.h
+req.include-header: EhStorBandMgmt.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows 8
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	EhStorBandMgmt.h
+apiname:
+-	BAND_MANAGEMENT_CAPABILITIES
+product: Windows
+targetos: Windows
+req.typenames: BAND_MANAGEMENT_CAPABILITIES, *PBAND_MANAGEMENT_CAPABILITIES
 ---
 
 # _BAND_MANAGEMENT_CAPABILITIES structure

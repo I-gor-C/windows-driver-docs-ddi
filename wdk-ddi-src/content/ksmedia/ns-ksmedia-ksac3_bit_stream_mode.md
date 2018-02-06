@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.KSAC3_BIT_STREAM_MODE
-title : KSAC3_BIT_STREAM_MODE
-author : windows-driver-content
-description : The KSAC3_BIT_STREAM_MODE structure specifies the bit-stream mode, which is the type of audio service that is encoded into an AC-3 stream.
-old-location : audio\ksac3_bit_stream_mode.htm
-old-project : audio
-ms.assetid : 1395687d-643a-40b5-9ca9-bff34c0dd6d5
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : KSAC3_BIT_STREAM_MODE, aud-prop_b90587bf-508c-4e01-83ec-6fd925433d17.xml, KSAC3_BIT_STREAM_MODE structure [Audio Devices], audio.ksac3_bit_stream_mode, PKSAC3_BIT_STREAM_MODE structure pointer [Audio Devices], ksmedia/PKSAC3_BIT_STREAM_MODE, PKSAC3_BIT_STREAM_MODE, ksmedia/KSAC3_BIT_STREAM_MODE, *PKSAC3_BIT_STREAM_MODE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KSAC3_BIT_STREAM_MODE, *PKSAC3_BIT_STREAM_MODE
+UID: NS:ksmedia.KSAC3_BIT_STREAM_MODE
+title: KSAC3_BIT_STREAM_MODE
+author: windows-driver-content
+description: The KSAC3_BIT_STREAM_MODE structure specifies the bit-stream mode, which is the type of audio service that is encoded into an AC-3 stream.
+old-location: audio\ksac3_bit_stream_mode.htm
+old-project: audio
+ms.assetid: 1395687d-643a-40b5-9ca9-bff34c0dd6d5
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: KSAC3_BIT_STREAM_MODE, aud-prop_b90587bf-508c-4e01-83ec-6fd925433d17.xml, KSAC3_BIT_STREAM_MODE structure [Audio Devices], audio.ksac3_bit_stream_mode, PKSAC3_BIT_STREAM_MODE structure pointer [Audio Devices], ksmedia/PKSAC3_BIT_STREAM_MODE, PKSAC3_BIT_STREAM_MODE, ksmedia/KSAC3_BIT_STREAM_MODE, *PKSAC3_BIT_STREAM_MODE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	KSAC3_BIT_STREAM_MODE
+product: Windows
+targetos: Windows
+req.typenames: KSAC3_BIT_STREAM_MODE, *PKSAC3_BIT_STREAM_MODE
 ---
 
 # KSAC3_BIT_STREAM_MODE structure

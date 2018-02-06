@@ -1,41 +1,47 @@
 ---
-UID : NF:aux_klib.AuxKlibEnumerateSystemFirmwareTables
-title : AuxKlibEnumerateSystemFirmwareTables function
-author : windows-driver-content
-description : The AuxKlibEnumerateSystemFirmwareTables routine enumerates all system firmware tables of the specified type.
-old-location : kernel\auxklibenumeratesystemfirmwaretables.htm
-old-project : kernel
-ms.assetid : EEAB636B-5565-4C2A-9EC7-4DC63EBB286F
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : AuxKlibEnumerateSystemFirmwareTables routine [Kernel-Mode Driver Architecture], kernel.auxklibenumeratesystemfirmwaretables, AuxKlibEnumerateSystemFirmwareTables, aux_klib/AuxKlibEnumerateSystemFirmwareTables
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : aux_klib.h
-req.include-header : Aux_klib.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Aux_Klib.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : REPORT_ZONES_EXT_DATA, *PREPORT_ZONES_EXT_DATA
+UID: NF:aux_klib.AuxKlibEnumerateSystemFirmwareTables
+title: AuxKlibEnumerateSystemFirmwareTables function
+author: windows-driver-content
+description: The AuxKlibEnumerateSystemFirmwareTables routine enumerates all system firmware tables of the specified type.
+old-location: kernel\auxklibenumeratesystemfirmwaretables.htm
+old-project: kernel
+ms.assetid: EEAB636B-5565-4C2A-9EC7-4DC63EBB286F
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: AuxKlibEnumerateSystemFirmwareTables routine [Kernel-Mode Driver Architecture], kernel.auxklibenumeratesystemfirmwaretables, AuxKlibEnumerateSystemFirmwareTables, aux_klib/AuxKlibEnumerateSystemFirmwareTables
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: aux_klib.h
+req.include-header: Aux_klib.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Aux_Klib.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Aux_Klib.lib
+-	Aux_Klib.dll
+apiname:
+-	AuxKlibEnumerateSystemFirmwareTables
+product: Windows
+targetos: Windows
+req.typenames: REPORT_ZONES_EXT_DATA, *PREPORT_ZONES_EXT_DATA
 ---
 
 

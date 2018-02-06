@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFIoRequest.GetInputMemory
-title : IWDFIoRequest::GetInputMemory method
-author : windows-driver-content
-description : The GetInputMemory method retrieves the memory object that represents the input buffer in an I/O request.
-old-location : wdf\iwdfiorequest_getinputmemory.htm
-old-project : wdf
-ms.assetid : be3f965b-69fe-4d5e-b1b6-3a370603cd7b
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : UMDFRequestObjectRef_80c18660-b423-42b0-879d-a8732d2e7796.xml, IWDFIoRequest::GetInputMemory, wdf.iwdfiorequest_getinputmemory, wudfddi/IWDFIoRequest::GetInputMemory, IWDFIoRequest interface, GetInputMemory method, GetInputMemory, umdf.iwdfiorequest_getinputmemory, GetInputMemory method, GetInputMemory method, IWDFIoRequest interface, IWDFIoRequest
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.5
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFIoRequest.GetInputMemory
+title: IWDFIoRequest::GetInputMemory method
+author: windows-driver-content
+description: The GetInputMemory method retrieves the memory object that represents the input buffer in an I/O request.
+old-location: wdf\iwdfiorequest_getinputmemory.htm
+old-project: wdf
+ms.assetid: be3f965b-69fe-4d5e-b1b6-3a370603cd7b
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: UMDFRequestObjectRef_80c18660-b423-42b0-879d-a8732d2e7796.xml, IWDFIoRequest::GetInputMemory, wdf.iwdfiorequest_getinputmemory, wudfddi/IWDFIoRequest::GetInputMemory, IWDFIoRequest interface, GetInputMemory method, GetInputMemory, umdf.iwdfiorequest_getinputmemory, GetInputMemory method, GetInputMemory method, IWDFIoRequest interface, IWDFIoRequest
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.5
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFIoRequest.GetInputMemory
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

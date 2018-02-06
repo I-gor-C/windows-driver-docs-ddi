@@ -1,41 +1,46 @@
 ---
-UID : NS:hbapiwmi._SM_SetBindingSupport_OUT
-title : "_SM_SetBindingSupport_OUT"
-author : windows-driver-content
-description : The SM_SetBindingSupport_OUT structure is used to receive output parameters from the SM_SetBindingSupport method.
-old-location : storage\sm_setbindingsupport_out.htm
-old-project : storage
-ms.assetid : b0902b79-25ee-45e6-944e-de9e69ce43ec
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : "_SM_SetBindingSupport_OUT, SM_SetBindingSupport_OUT structure [Storage Devices], hbapiwmi/SM_SetBindingSupport_OUT, hbapiwmi/PSM_SetBindingSupport_OUT, structs-Fibre_b14ee92a-9c2c-4f8a-be35-b189b0d5e97f.xml, storage.sm_setbindingsupport_out, *PSM_SetBindingSupport_OUT, SM_SetBindingSupport_OUT, PSM_SetBindingSupport_OUT, PSM_SetBindingSupport_OUT structure pointer [Storage Devices]"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : hbapiwmi.h
-req.include-header : Hbapiwmi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSM_SetBindingSupport_OUT, SM_SetBindingSupport_OUT"
+UID: NS:hbapiwmi._SM_SetBindingSupport_OUT
+title: "_SM_SetBindingSupport_OUT"
+author: windows-driver-content
+description: The SM_SetBindingSupport_OUT structure is used to receive output parameters from the SM_SetBindingSupport method.
+old-location: storage\sm_setbindingsupport_out.htm
+old-project: storage
+ms.assetid: b0902b79-25ee-45e6-944e-de9e69ce43ec
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: "_SM_SetBindingSupport_OUT, SM_SetBindingSupport_OUT structure [Storage Devices], hbapiwmi/SM_SetBindingSupport_OUT, hbapiwmi/PSM_SetBindingSupport_OUT, structs-Fibre_b14ee92a-9c2c-4f8a-be35-b189b0d5e97f.xml, storage.sm_setbindingsupport_out, *PSM_SetBindingSupport_OUT, SM_SetBindingSupport_OUT, PSM_SetBindingSupport_OUT, PSM_SetBindingSupport_OUT structure pointer [Storage Devices]"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: hbapiwmi.h
+req.include-header: Hbapiwmi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hbapiwmi.h
+apiname:
+-	SM_SetBindingSupport_OUT
+product: Windows
+targetos: Windows
+req.typenames: "*PSM_SetBindingSupport_OUT, SM_SetBindingSupport_OUT"
 ---
 
 # _SM_SetBindingSupport_OUT structure

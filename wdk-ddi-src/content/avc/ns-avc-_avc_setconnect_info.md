@@ -1,41 +1,46 @@
 ---
-UID : NS:avc._AVC_SETCONNECT_INFO
-title : "_AVC_SETCONNECT_INFO"
-author : windows-driver-content
-description : The AVC_SETCONNECT_INFO structure is used to initialize a subunit driver and establish pin connections.
-old-location : stream\avc_setconnect_info.htm
-old-project : stream
-ms.assetid : 16672908-6f1f-471b-b82e-d548e3efeb20
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : avc/AVC_SETCONNECT_INFO, avc/PAVC_SETCONNECT_INFO, PAVC_SETCONNECT_INFO structure pointer [Streaming Media Devices], stream.avc_setconnect_info, AVC_SETCONNECT_INFO structure [Streaming Media Devices], *PAVC_SETCONNECT_INFO, avcref_eec9cff7-6ae3-49d3-a649-349b8284630b.xml, AVC_SETCONNECT_INFO, PAVC_SETCONNECT_INFO, _AVC_SETCONNECT_INFO
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : avc.h
-req.include-header : Avc.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : AVC_SETCONNECT_INFO, *PAVC_SETCONNECT_INFO
+UID: NS:avc._AVC_SETCONNECT_INFO
+title: "_AVC_SETCONNECT_INFO"
+author: windows-driver-content
+description: The AVC_SETCONNECT_INFO structure is used to initialize a subunit driver and establish pin connections.
+old-location: stream\avc_setconnect_info.htm
+old-project: stream
+ms.assetid: 16672908-6f1f-471b-b82e-d548e3efeb20
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: avc/AVC_SETCONNECT_INFO, avc/PAVC_SETCONNECT_INFO, PAVC_SETCONNECT_INFO structure pointer [Streaming Media Devices], stream.avc_setconnect_info, AVC_SETCONNECT_INFO structure [Streaming Media Devices], *PAVC_SETCONNECT_INFO, avcref_eec9cff7-6ae3-49d3-a649-349b8284630b.xml, AVC_SETCONNECT_INFO, PAVC_SETCONNECT_INFO, _AVC_SETCONNECT_INFO
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: avc.h
+req.include-header: Avc.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	avc.h
+apiname:
+-	AVC_SETCONNECT_INFO
+product: Windows
+targetos: Windows
+req.typenames: AVC_SETCONNECT_INFO, *PAVC_SETCONNECT_INFO
 ---
 
 # _AVC_SETCONNECT_INFO structure

@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3D11_1DDI_CREATEVIDEOPROCESSOR
-title : PFND3D11_1DDI_CREATEVIDEOPROCESSOR
-author : windows-driver-content
-description : Creates a video processor object.
-old-location : display\createvideoprocessor1.htm
-old-project : display
-ms.assetid : 741045a2-0a91-490a-907d-5f4900a4a0ae
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.createvideoprocessor1, CreateVideoProcessor callback function [Display Devices], CreateVideoProcessor, PFND3D11_1DDI_CREATEVIDEOPROCESSOR, PFND3D11_1DDI_CREATEVIDEOPROCESSOR, d3d10umddi/CreateVideoProcessor, display.pfncreatevideoprocessor1
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3D11_1DDI_CREATEVIDEOPROCESSOR
+title: PFND3D11_1DDI_CREATEVIDEOPROCESSOR
+author: windows-driver-content
+description: Creates a video processor object.
+old-location: display\createvideoprocessor1.htm
+old-project: display
+ms.assetid: 741045a2-0a91-490a-907d-5f4900a4a0ae
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.createvideoprocessor1, CreateVideoProcessor callback function [Display Devices], CreateVideoProcessor, PFND3D11_1DDI_CREATEVIDEOPROCESSOR, PFND3D11_1DDI_CREATEVIDEOPROCESSOR, d3d10umddi/CreateVideoProcessor, display.pfncreatevideoprocessor1
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	D3d10umddi.h
+apiname:
+-	CreateVideoProcessor
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

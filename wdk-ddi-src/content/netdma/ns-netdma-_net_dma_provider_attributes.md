@@ -1,41 +1,46 @@
 ---
-UID : NS:netdma._NET_DMA_PROVIDER_ATTRIBUTES
-title : "_NET_DMA_PROVIDER_ATTRIBUTES"
-author : windows-driver-content
-description : The NET_DMA_PROVIDER_ATTRIBUTES structure specifies the configuration attributes for a NetDMA provider.
-old-location : netvista\net_dma_provider_attributes.htm
-old-project : netvista
-ms.assetid : 7b5a7e9e-b10b-4c94-80b1-172cd9f0c9ca
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : PNET_DMA_PROVIDER_ATTRIBUTES, *PNET_DMA_PROVIDER_ATTRIBUTES, netdma_ref_a00d6e7c-6712-49c9-9c64-d200e96074c5.xml, _NET_DMA_PROVIDER_ATTRIBUTES, netdma/NET_DMA_PROVIDER_ATTRIBUTES, netdma/PNET_DMA_PROVIDER_ATTRIBUTES, NET_DMA_PROVIDER_ATTRIBUTES, PNET_DMA_PROVIDER_ATTRIBUTES structure pointer [Network Drivers Starting with Windows Vista], NET_DMA_PROVIDER_ATTRIBUTES structure [Network Drivers Starting with Windows Vista], netvista.net_dma_provider_attributes
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : netdma.h
-req.include-header : Netdma.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported for NetDMA 2.0 drivers in Windows Server 2008. Supported for NetDMA 1.1   drivers in Windows Server 2008. Supported for NetDMA 1.0 drivers in Windows Server 2008 and Windows   Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NET_DMA_PROVIDER_ATTRIBUTES, *PNET_DMA_PROVIDER_ATTRIBUTES
+UID: NS:netdma._NET_DMA_PROVIDER_ATTRIBUTES
+title: "_NET_DMA_PROVIDER_ATTRIBUTES"
+author: windows-driver-content
+description: The NET_DMA_PROVIDER_ATTRIBUTES structure specifies the configuration attributes for a NetDMA provider.
+old-location: netvista\net_dma_provider_attributes.htm
+old-project: netvista
+ms.assetid: 7b5a7e9e-b10b-4c94-80b1-172cd9f0c9ca
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: PNET_DMA_PROVIDER_ATTRIBUTES, *PNET_DMA_PROVIDER_ATTRIBUTES, netdma_ref_a00d6e7c-6712-49c9-9c64-d200e96074c5.xml, _NET_DMA_PROVIDER_ATTRIBUTES, netdma/NET_DMA_PROVIDER_ATTRIBUTES, netdma/PNET_DMA_PROVIDER_ATTRIBUTES, NET_DMA_PROVIDER_ATTRIBUTES, PNET_DMA_PROVIDER_ATTRIBUTES structure pointer [Network Drivers Starting with Windows Vista], NET_DMA_PROVIDER_ATTRIBUTES structure [Network Drivers Starting with Windows Vista], netvista.net_dma_provider_attributes
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: netdma.h
+req.include-header: Netdma.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported for NetDMA 2.0 drivers in Windows Server 2008. Supported for NetDMA 1.1   drivers in Windows Server 2008. Supported for NetDMA 1.0 drivers in Windows Server 2008 and Windows   Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	netdma.h
+apiname:
+-	NET_DMA_PROVIDER_ATTRIBUTES
+product: Windows
+targetos: Windows
+req.typenames: NET_DMA_PROVIDER_ATTRIBUTES, *PNET_DMA_PROVIDER_ATTRIBUTES
 ---
 
 # _NET_DMA_PROVIDER_ATTRIBUTES structure

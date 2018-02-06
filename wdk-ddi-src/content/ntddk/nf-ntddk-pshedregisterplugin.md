@@ -1,41 +1,46 @@
 ---
-UID : NF:ntddk.PshedRegisterPlugin
-title : PshedRegisterPlugin function
-author : windows-driver-content
-description : The PshedRegisterPlugin function registers a PSHED plug-in with the PSHED.
-old-location : whea\pshedregisterplugin.htm
-old-project : whea
-ms.assetid : 8ad93312-932c-417c-8198-9ba515e3d55d
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : whearef_27f04399-dd53-44b3-a31e-350aee53bcb1.xml, PshedRegisterPlugin, ntddk/PshedRegisterPlugin, PshedRegisterPlugin function [WHEA Drivers and Applications], whea.pshedregisterplugin
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Pshed.lib
-req.dll : Pshed.dll
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.PshedRegisterPlugin
+title: PshedRegisterPlugin function
+author: windows-driver-content
+description: The PshedRegisterPlugin function registers a PSHED plug-in with the PSHED.
+old-location: whea\pshedregisterplugin.htm
+old-project: whea
+ms.assetid: 8ad93312-932c-417c-8198-9ba515e3d55d
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: whearef_27f04399-dd53-44b3-a31e-350aee53bcb1.xml, PshedRegisterPlugin, ntddk/PshedRegisterPlugin, PshedRegisterPlugin function [WHEA Drivers and Applications], whea.pshedregisterplugin
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Pshed.lib
+req.dll: Pshed.dll
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Pshed.dll
+apiname:
+-	PshedRegisterPlugin
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

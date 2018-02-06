@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dkmddi.DXGKDDI_SETPOINTERSHAPE
-title : DXGKDDI_SETPOINTERSHAPE
-author : windows-driver-content
-description : The DxgkDdiSetPointerShape function sets the appearance and location of the mouse pointer.
-old-location : display\dxgkddisetpointershape.htm
-old-project : display
-ms.assetid : 36b462f7-5bad-4716-8138-af00d20e945b
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkddisetpointershape, DxgkDdiSetPointerShape callback function [Display Devices], DxgkDdiSetPointerShape, DXGKDDI_SETPOINTERSHAPE, DXGKDDI_SETPOINTERSHAPE, d3dkmddi/DxgkDdiSetPointerShape, DmFunctions_39ac69a2-f8dc-4704-b5ab-d57d83685071.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dkmddi.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
+UID: NC:d3dkmddi.DXGKDDI_SETPOINTERSHAPE
+title: DXGKDDI_SETPOINTERSHAPE
+author: windows-driver-content
+description: The DxgkDdiSetPointerShape function sets the appearance and location of the mouse pointer.
+old-location: display\dxgkddisetpointershape.htm
+old-project: display
+ms.assetid: 36b462f7-5bad-4716-8138-af00d20e945b
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkddisetpointershape, DxgkDdiSetPointerShape callback function [Display Devices], DxgkDdiSetPointerShape, DXGKDDI_SETPOINTERSHAPE, DXGKDDI_SETPOINTERSHAPE, d3dkmddi/DxgkDdiSetPointerShape, DmFunctions_39ac69a2-f8dc-4704-b5ab-d57d83685071.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dkmddi.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DxgkDdiSetPointerShape
+product: Windows
+targetos: Windows
+req.typenames: DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
 

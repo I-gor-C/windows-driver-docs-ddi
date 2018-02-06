@@ -1,41 +1,46 @@
 ---
-UID : NI:kbdmou.IOCTL_INTERNAL_MOUSE_CONNECT
-title : IOCTL_INTERNAL_MOUSE_CONNECT
-author : windows-driver-content
-description : The IOCTL_INTERNAL_MOUSE_CONNECT request connects Mouclass service to a mouse device.
-old-location : hid\ioctl_internal_mouse_connect.htm
-old-project : hid
-ms.assetid : f20e424a-60d3-4bfa-9cc3-d2541c927b22
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : hid.ioctl_internal_mouse_connect, IOCTL_INTERNAL_MOUSE_CONNECT control code [Human Input Devices], IOCTL_INTERNAL_MOUSE_CONNECT, kbdmou/IOCTL_INTERNAL_MOUSE_CONNECT, mfilref_df1ebbe7-9806-4c2a-93c5-4fcbbfdf2f1f.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : kbdmou.h
-req.include-header : Kbdmou.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : MSiSCSI_SessionStatistics, *PMSiSCSI_SessionStatistics
+UID: NI:kbdmou.IOCTL_INTERNAL_MOUSE_CONNECT
+title: IOCTL_INTERNAL_MOUSE_CONNECT
+author: windows-driver-content
+description: The IOCTL_INTERNAL_MOUSE_CONNECT request connects Mouclass service to a mouse device.
+old-location: hid\ioctl_internal_mouse_connect.htm
+old-project: hid
+ms.assetid: f20e424a-60d3-4bfa-9cc3-d2541c927b22
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: hid.ioctl_internal_mouse_connect, IOCTL_INTERNAL_MOUSE_CONNECT control code [Human Input Devices], IOCTL_INTERNAL_MOUSE_CONNECT, kbdmou/IOCTL_INTERNAL_MOUSE_CONNECT, mfilref_df1ebbe7-9806-4c2a-93c5-4fcbbfdf2f1f.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: kbdmou.h
+req.include-header: Kbdmou.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	kbdmou.h
+apiname:
+-	IOCTL_INTERNAL_MOUSE_CONNECT
+product: Windows
+targetos: Windows
+req.typenames: MSiSCSI_SessionStatistics, *PMSiSCSI_SessionStatistics
 ---
 
 # IOCTL_INTERNAL_MOUSE_CONNECT IOCTL

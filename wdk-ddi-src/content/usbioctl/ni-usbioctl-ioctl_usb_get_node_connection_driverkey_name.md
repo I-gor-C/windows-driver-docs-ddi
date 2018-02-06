@@ -1,42 +1,47 @@
 ---
-UID : NI:usbioctl.IOCTL_USB_GET_NODE_CONNECTION_DRIVERKEY_NAME
-title : IOCTL_USB_GET_NODE_CONNECTION_DRIVERKEY_NAME
-author : windows-driver-content
-description : The IOCTL_USB_GET_NODE_CONNECTION_DRIVERKEY_NAME I/O control request retrieves the driver registry key name that is associated with the device that is connected to the indicated port.
-old-location : buses\ioctl_usb_get_node_connection_driverkey_name.htm
-old-project : usbref
-ms.assetid : e9826b4d-e8ac-495e-8125-7835b62011dc
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : buses.ioctl_usb_get_node_connection_driverkey_name, IOCTL_USB_GET_NODE_CONNECTION_DRIVERKEY_NAME control code [Buses], IOCTL_USB_GET_NODE_CONNECTION_DRIVERKEY_NAME, usbioctl/IOCTL_USB_GET_NODE_CONNECTION_DRIVERKEY_NAME, usbirp_cdc9e1be-96fd-41d4-a0d3-1303b0b4fb1d.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : usbioctl.h
-req.include-header : Usbioctl.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : USB_HUB_TYPE
-req.product : Windows 10 or later.
+UID: NI:usbioctl.IOCTL_USB_GET_NODE_CONNECTION_DRIVERKEY_NAME
+title: IOCTL_USB_GET_NODE_CONNECTION_DRIVERKEY_NAME
+author: windows-driver-content
+description: The IOCTL_USB_GET_NODE_CONNECTION_DRIVERKEY_NAME I/O control request retrieves the driver registry key name that is associated with the device that is connected to the indicated port.
+old-location: buses\ioctl_usb_get_node_connection_driverkey_name.htm
+old-project: usbref
+ms.assetid: e9826b4d-e8ac-495e-8125-7835b62011dc
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: buses.ioctl_usb_get_node_connection_driverkey_name, IOCTL_USB_GET_NODE_CONNECTION_DRIVERKEY_NAME control code [Buses], IOCTL_USB_GET_NODE_CONNECTION_DRIVERKEY_NAME, usbioctl/IOCTL_USB_GET_NODE_CONNECTION_DRIVERKEY_NAME, usbirp_cdc9e1be-96fd-41d4-a0d3-1303b0b4fb1d.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: usbioctl.h
+req.include-header: Usbioctl.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Usbioctl.h
+apiname:
+-	IOCTL_USB_GET_NODE_CONNECTION_DRIVERKEY_NAME
+product: Windows
+targetos: Windows
+req.typenames: USB_HUB_TYPE
+req.product: Windows 10 or later.
 ---
 
 # IOCTL_USB_GET_NODE_CONNECTION_DRIVERKEY_NAME IOCTL

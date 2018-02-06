@@ -1,41 +1,46 @@
 ---
-UID : NS:ndkpi._NDK_CONNECTOR
-title : "_NDK_CONNECTOR"
-author : windows-driver-content
-description : The NDK_CONNECTOR structure specifies the attributes of an NDK connector object.
-old-location : netvista\ndk_connector.htm
-old-project : netvista
-ms.assetid : B2E4D369-CCCF-4654-875F-69E90FEA1FF9
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NDK_CONNECTOR structure [Network Drivers Starting with Windows Vista], ndkpi/NDK_CONNECTOR, netvista.ndk_connector, NDK_CONNECTOR, ndkpi/PNDK_CONNECTOR, PNDK_CONNECTOR, PNDK_CONNECTOR structure pointer [Network Drivers Starting with Windows Vista], _NDK_CONNECTOR
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndkpi.h
-req.include-header : Ndkpi.h
-req.target-type : Windows
-req.target-min-winverclnt : None supported,Supported in NDIS 6.30 and later.
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDK_CONNECTOR
+UID: NS:ndkpi._NDK_CONNECTOR
+title: "_NDK_CONNECTOR"
+author: windows-driver-content
+description: The NDK_CONNECTOR structure specifies the attributes of an NDK connector object.
+old-location: netvista\ndk_connector.htm
+old-project: netvista
+ms.assetid: B2E4D369-CCCF-4654-875F-69E90FEA1FF9
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NDK_CONNECTOR structure [Network Drivers Starting with Windows Vista], ndkpi/NDK_CONNECTOR, netvista.ndk_connector, NDK_CONNECTOR, ndkpi/PNDK_CONNECTOR, PNDK_CONNECTOR, PNDK_CONNECTOR structure pointer [Network Drivers Starting with Windows Vista], _NDK_CONNECTOR
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndkpi.h
+req.include-header: Ndkpi.h
+req.target-type: Windows
+req.target-min-winverclnt: None supported,Supported in NDIS 6.30 and later.
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndkpi.h
+apiname:
+-	NDK_CONNECTOR
+product: Windows
+targetos: Windows
+req.typenames: NDK_CONNECTOR
 ---
 
 # _NDK_CONNECTOR structure

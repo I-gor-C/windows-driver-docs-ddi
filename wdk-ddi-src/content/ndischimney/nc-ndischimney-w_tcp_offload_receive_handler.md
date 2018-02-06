@@ -1,41 +1,46 @@
 ---
-UID : NC:ndischimney.W_TCP_OFFLOAD_RECEIVE_HANDLER
-title : W_TCP_OFFLOAD_RECEIVE_HANDLER
-author : windows-driver-content
-description : NDIS calls the MiniportTcpOffloadReceive function to post receive requests (receive buffers) on an offloaded TCP connection.
-old-location : netvista\miniporttcpoffloadreceive.htm
-old-project : netvista
-ms.assetid : 9c9c033d-e892-4d8a-8f12-4ca34cdc9ea1
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.miniporttcpoffloadreceive, MiniportTcpOffloadReceive callback function [Network Drivers Starting with Windows Vista], MiniportTcpOffloadReceive, W_TCP_OFFLOAD_RECEIVE_HANDLER, W_TCP_OFFLOAD_RECEIVE_HANDLER, ndischimney/MiniportTcpOffloadReceive, tcp_chim_miniport_func_01f5e6c6-4764-41f3-935a-a08754732ea3.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ndischimney.h
-req.include-header : Ndischimney.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PD_BUFFER_VIRTUAL_SUBNET_INFO
+UID: NC:ndischimney.W_TCP_OFFLOAD_RECEIVE_HANDLER
+title: W_TCP_OFFLOAD_RECEIVE_HANDLER
+author: windows-driver-content
+description: NDIS calls the MiniportTcpOffloadReceive function to post receive requests (receive buffers) on an offloaded TCP connection.
+old-location: netvista\miniporttcpoffloadreceive.htm
+old-project: netvista
+ms.assetid: 9c9c033d-e892-4d8a-8f12-4ca34cdc9ea1
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.miniporttcpoffloadreceive, MiniportTcpOffloadReceive callback function [Network Drivers Starting with Windows Vista], MiniportTcpOffloadReceive, W_TCP_OFFLOAD_RECEIVE_HANDLER, W_TCP_OFFLOAD_RECEIVE_HANDLER, ndischimney/MiniportTcpOffloadReceive, tcp_chim_miniport_func_01f5e6c6-4764-41f3-935a-a08754732ea3.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ndischimney.h
+req.include-header: Ndischimney.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ndischimney.h
+apiname:
+-	MiniportTcpOffloadReceive
+product: Windows
+targetos: Windows
+req.typenames: PD_BUFFER_VIRTUAL_SUBNET_INFO
 ---
 
 

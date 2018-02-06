@@ -1,41 +1,46 @@
 ---
-UID : NS:hidpi._HIDP_CAPS
-title : "_HIDP_CAPS"
-author : windows-driver-content
-description : The HIDP_CAPS structure contains information about a top-level collection's capability.
-old-location : hid\hidp_caps.htm
-old-project : hid
-ms.assetid : ec4d4b7b-acf6-4839-9a61-1883eddce3f4
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : PHIDP_CAPS, hidpi/PHIDP_CAPS, hidpi/HIDP_CAPS, *PHIDP_CAPS, HIDP_CAPS structure [Human Input Devices], _HIDP_CAPS, hidstrct_2ef93e42-2fd2-4dff-87fb-11f1d1342b07.xml, hid.hidp_caps, HIDP_CAPS, PHIDP_CAPS structure pointer [Human Input Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : hidpi.h
-req.include-header : Hidpi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HIDP_CAPS, *PHIDP_CAPS
+UID: NS:hidpi._HIDP_CAPS
+title: "_HIDP_CAPS"
+author: windows-driver-content
+description: The HIDP_CAPS structure contains information about a top-level collection's capability.
+old-location: hid\hidp_caps.htm
+old-project: hid
+ms.assetid: ec4d4b7b-acf6-4839-9a61-1883eddce3f4
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: PHIDP_CAPS, hidpi/PHIDP_CAPS, hidpi/HIDP_CAPS, *PHIDP_CAPS, HIDP_CAPS structure [Human Input Devices], _HIDP_CAPS, hidstrct_2ef93e42-2fd2-4dff-87fb-11f1d1342b07.xml, hid.hidp_caps, HIDP_CAPS, PHIDP_CAPS structure pointer [Human Input Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: hidpi.h
+req.include-header: Hidpi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hidpi.h
+apiname:
+-	HIDP_CAPS
+product: Windows
+targetos: Windows
+req.typenames: HIDP_CAPS, *PHIDP_CAPS
 ---
 
 # _HIDP_CAPS structure

@@ -1,41 +1,46 @@
 ---
-UID : NS:pmi._PMI_EVENT
-title : "_PMI_EVENT"
-author : windows-driver-content
-description : The PMI_EVENT structure contains information about a power metering and budgeting event that is signaled through the Power Meter Interface (PMI).
-old-location : powermeter\pmi_event.htm
-old-project : powermeter
-ms.assetid : 51ae6247-c482-4f13-8699-df871ae346c0
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : "*PPMI_EVENT, PPMI_EVENT, PMI_EVENT, PMI_EVENT structure [Power Metering and Budgeting Devices], pmi/PMI_EVENT, pmi/PPMI_EVENT, PowerMeterRef_8c4d0572-12b8-4e72-b52e-9aa74a22d0c1.xml, powermeter.pmi_event, _PMI_EVENT, PPMI_EVENT structure pointer [Power Metering and Budgeting Devices]"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : pmi.h
-req.include-header : Pmi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7, Windows Server 2008 R2, and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPMI_EVENT, PMI_EVENT"
+UID: NS:pmi._PMI_EVENT
+title: "_PMI_EVENT"
+author: windows-driver-content
+description: The PMI_EVENT structure contains information about a power metering and budgeting event that is signaled through the Power Meter Interface (PMI).
+old-location: powermeter\pmi_event.htm
+old-project: powermeter
+ms.assetid: 51ae6247-c482-4f13-8699-df871ae346c0
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: "*PPMI_EVENT, PPMI_EVENT, PMI_EVENT, PMI_EVENT structure [Power Metering and Budgeting Devices], pmi/PMI_EVENT, pmi/PPMI_EVENT, PowerMeterRef_8c4d0572-12b8-4e72-b52e-9aa74a22d0c1.xml, powermeter.pmi_event, _PMI_EVENT, PPMI_EVENT structure pointer [Power Metering and Budgeting Devices]"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: pmi.h
+req.include-header: Pmi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7, Windows Server 2008 R2, and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	pmi.h
+apiname:
+-	PMI_EVENT
+product: Windows
+targetos: Windows
+req.typenames: "*PPMI_EVENT, PMI_EVENT"
 ---
 
 # _PMI_EVENT structure

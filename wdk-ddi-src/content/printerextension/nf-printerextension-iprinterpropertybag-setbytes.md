@@ -1,42 +1,47 @@
 ---
-UID : NF:printerextension.IPrinterPropertyBag.SetBytes
-title : IPrinterPropertyBag::SetBytes method
-author : windows-driver-content
-description : Writes a byte array property.
-old-location : print\iprinterpropertybag_setbytes.htm
-old-project : print
-ms.assetid : 0138F4F4-658F-4465-8647-17BE488E2FED
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : IPrinterPropertyBag::SetBytes, SetBytes method [Print Devices], IPrinterPropertyBag interface, SetBytes method [Print Devices], IPrinterPropertyBag, SetBytes, printerextension/IPrinterPropertyBag::SetBytes, print.iprinterpropertybag_setbytes, IPrinterPropertyBag interface [Print Devices], SetBytes method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : printerextension.h
-req.include-header : Printerextension.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : printerextension.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PrintSchemaSelectionType
-req.product : Windows 10 or later.
+UID: NF:printerextension.IPrinterPropertyBag.SetBytes
+title: IPrinterPropertyBag::SetBytes method
+author: windows-driver-content
+description: Writes a byte array property.
+old-location: print\iprinterpropertybag_setbytes.htm
+old-project: print
+ms.assetid: 0138F4F4-658F-4465-8647-17BE488E2FED
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: IPrinterPropertyBag::SetBytes, SetBytes method [Print Devices], IPrinterPropertyBag interface, SetBytes method [Print Devices], IPrinterPropertyBag, SetBytes, printerextension/IPrinterPropertyBag::SetBytes, print.iprinterpropertybag_setbytes, IPrinterPropertyBag interface [Print Devices], SetBytes method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: printerextension.h
+req.include-header: Printerextension.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: printerextension.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Printerextension.h
+apiname:
+-	IPrinterPropertyBag.SetBytes
+product: Windows
+targetos: Windows
+req.typenames: PrintSchemaSelectionType
+req.product: Windows 10 or later.
 ---
 
 

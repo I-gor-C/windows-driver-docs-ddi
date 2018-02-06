@@ -1,41 +1,47 @@
 ---
-UID : NF:dbgeng.IDebugSymbolGroup2.ExpandSymbol
-title : IDebugSymbolGroup2::ExpandSymbol method
-author : windows-driver-content
-description : The ExpandSymbol method adds or removes the children of a symbol from a symbol group.
-old-location : debugger\expandsymbol.htm
-old-project : debugger
-ms.assetid : 314fdeea-10be-4cb3-8bd7-9b1b4b12e534
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugSymbolGroup interface [Windows Debugging], ExpandSymbol method, IDebugSymbolGroup2 interface [Windows Debugging], ExpandSymbol method, IDebugSymbolGroup2, dbgeng/IDebugSymbolGroup::ExpandSymbol, ExpandSymbol, IDebugSymbolGroup2::ExpandSymbol, dbgeng/IDebugSymbolGroup2::ExpandSymbol, ExpandSymbol method [Windows Debugging], IDebugSymbolGroup interface, IDebugSymbolGroup::ExpandSymbol, debugger.expandsymbol, ComOther_894f45d2-9f7b-4d8d-85e3-9240d020ebbe.xml, ExpandSymbol method [Windows Debugging], IDebugSymbolGroup2 interface, ExpandSymbol method [Windows Debugging]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSymbolGroup2.ExpandSymbol
+title: IDebugSymbolGroup2::ExpandSymbol method
+author: windows-driver-content
+description: The ExpandSymbol method adds or removes the children of a symbol from a symbol group.
+old-location: debugger\expandsymbol.htm
+old-project: debugger
+ms.assetid: 314fdeea-10be-4cb3-8bd7-9b1b4b12e534
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugSymbolGroup interface [Windows Debugging], ExpandSymbol method, IDebugSymbolGroup2 interface [Windows Debugging], ExpandSymbol method, IDebugSymbolGroup2, dbgeng/IDebugSymbolGroup::ExpandSymbol, ExpandSymbol, IDebugSymbolGroup2::ExpandSymbol, dbgeng/IDebugSymbolGroup2::ExpandSymbol, ExpandSymbol method [Windows Debugging], IDebugSymbolGroup interface, IDebugSymbolGroup::ExpandSymbol, debugger.expandsymbol, ComOther_894f45d2-9f7b-4d8d-85e3-9240d020ebbe.xml, ExpandSymbol method [Windows Debugging], IDebugSymbolGroup2 interface, ExpandSymbol method [Windows Debugging]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugSymbolGroup.ExpandSymbol
+-	IDebugSymbolGroup2.ExpandSymbol
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

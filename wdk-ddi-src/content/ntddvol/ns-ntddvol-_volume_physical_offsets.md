@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddvol._VOLUME_PHYSICAL_OFFSETS
-title : "_VOLUME_PHYSICAL_OFFSETS"
-author : windows-driver-content
-description : The VOLUME_PHYSICAL_OFFSETS structure contains an array of physical offsets and accompanying physical disk numbers and is used with IOCTL_VOLUME_LOGICAL_TO_PHYSICAL to request a series of pairs of physical offsets and disk numbers that correspond to a single logical offset.
-old-location : storage\volume_physical_offsets.htm
-old-project : storage
-ms.assetid : 876cb283-ce0d-44ed-b515-d4ee31089b88
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.volume_physical_offsets, PVOLUME_PHYSICAL_OFFSETS structure pointer [Storage Devices], PVOLUME_PHYSICAL_OFFSETS, *PVOLUME_PHYSICAL_OFFSETS, VOLUME_PHYSICAL_OFFSETS, VOLUME_PHYSICAL_OFFSETS structure [Storage Devices], _VOLUME_PHYSICAL_OFFSETS, ntddvol/VOLUME_PHYSICAL_OFFSETS, ntddvol/PVOLUME_PHYSICAL_OFFSETS, structs-volumemgr_f5ee82b1-a42a-47aa-a3fd-116eeb3b441b.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddvol.h
-req.include-header : Ntddvol.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VOLUME_PHYSICAL_OFFSETS, *PVOLUME_PHYSICAL_OFFSETS
+UID: NS:ntddvol._VOLUME_PHYSICAL_OFFSETS
+title: "_VOLUME_PHYSICAL_OFFSETS"
+author: windows-driver-content
+description: The VOLUME_PHYSICAL_OFFSETS structure contains an array of physical offsets and accompanying physical disk numbers and is used with IOCTL_VOLUME_LOGICAL_TO_PHYSICAL to request a series of pairs of physical offsets and disk numbers that correspond to a single logical offset.
+old-location: storage\volume_physical_offsets.htm
+old-project: storage
+ms.assetid: 876cb283-ce0d-44ed-b515-d4ee31089b88
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.volume_physical_offsets, PVOLUME_PHYSICAL_OFFSETS structure pointer [Storage Devices], PVOLUME_PHYSICAL_OFFSETS, *PVOLUME_PHYSICAL_OFFSETS, VOLUME_PHYSICAL_OFFSETS, VOLUME_PHYSICAL_OFFSETS structure [Storage Devices], _VOLUME_PHYSICAL_OFFSETS, ntddvol/VOLUME_PHYSICAL_OFFSETS, ntddvol/PVOLUME_PHYSICAL_OFFSETS, structs-volumemgr_f5ee82b1-a42a-47aa-a3fd-116eeb3b441b.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddvol.h
+req.include-header: Ntddvol.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddvol.h
+apiname:
+-	VOLUME_PHYSICAL_OFFSETS
+product: Windows
+targetos: Windows
+req.typenames: VOLUME_PHYSICAL_OFFSETS, *PVOLUME_PHYSICAL_OFFSETS
 ---
 
 # _VOLUME_PHYSICAL_OFFSETS structure

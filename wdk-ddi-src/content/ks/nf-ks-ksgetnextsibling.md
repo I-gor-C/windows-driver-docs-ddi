@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsGetNextSibling
-title : KsGetNextSibling function
-author : windows-driver-content
-description : The KsGetNextSibling function returns the next sibling of a given object.
-old-location : stream\ksgetnextsibling.htm
-old-project : stream
-ms.assetid : 509cf778-2b0c-4dd2-982d-0c7be95ad407
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : avfunc_0fedfc95-34c0-44d9-bed4-fff6bf6bd467.xml, stream.ksgetnextsibling, ks/KsGetNextSibling, KsGetNextSibling, KsGetNextSibling function [Streaming Media Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsGetNextSibling
+title: KsGetNextSibling function
+author: windows-driver-content
+description: The KsGetNextSibling function returns the next sibling of a given object.
+old-location: stream\ksgetnextsibling.htm
+old-project: stream
+ms.assetid: 509cf778-2b0c-4dd2-982d-0c7be95ad407
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: avfunc_0fedfc95-34c0-44d9-bed4-fff6bf6bd467.xml, stream.ksgetnextsibling, ks/KsGetNextSibling, KsGetNextSibling, KsGetNextSibling function [Streaming Media Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsGetNextSibling
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

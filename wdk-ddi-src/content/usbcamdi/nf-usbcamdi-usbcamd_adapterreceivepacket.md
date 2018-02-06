@@ -1,42 +1,48 @@
 ---
-UID : NF:usbcamdi.USBCAMD_AdapterReceivePacket
-title : USBCAMD_AdapterReceivePacket function
-author : windows-driver-content
-description : The USBCAMD_AdapterReceivePacket function allows USBCAMD to process an adapter-based stream request block (SRB).
-old-location : stream\usbcamd_adapterreceivepacket.htm
-old-project : stream
-ms.assetid : 12a5ca64-7187-4a70-83ca-0ade6a8b1343
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : usbcmdpr_ad9c24d0-76a2-43a4-9634-a70e9260d907.xml, stream.usbcamd_adapterreceivepacket, usbcamdi/USBCAMD_AdapterReceivePacket, USBCAMD_AdapterReceivePacket, USBCAMD_AdapterReceivePacket function [Streaming Media Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : usbcamdi.h
-req.include-header : Usbcamdi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Usbcamd2.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUSB_BUS_INTERFACE_USBDI_V3, USB_BUS_INTERFACE_USBDI_V3"
-req.product : Windows 10 or later.
+UID: NF:usbcamdi.USBCAMD_AdapterReceivePacket
+title: USBCAMD_AdapterReceivePacket function
+author: windows-driver-content
+description: The USBCAMD_AdapterReceivePacket function allows USBCAMD to process an adapter-based stream request block (SRB).
+old-location: stream\usbcamd_adapterreceivepacket.htm
+old-project: stream
+ms.assetid: 12a5ca64-7187-4a70-83ca-0ade6a8b1343
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: usbcmdpr_ad9c24d0-76a2-43a4-9634-a70e9260d907.xml, stream.usbcamd_adapterreceivepacket, usbcamdi/USBCAMD_AdapterReceivePacket, USBCAMD_AdapterReceivePacket, USBCAMD_AdapterReceivePacket function [Streaming Media Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: usbcamdi.h
+req.include-header: Usbcamdi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Usbcamd2.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	usbcamd2.lib
+-	usbcamd2.dll
+apiname:
+-	USBCAMD_AdapterReceivePacket
+product: Windows
+targetos: Windows
+req.typenames: "*PUSB_BUS_INTERFACE_USBDI_V3, USB_BUS_INTERFACE_USBDI_V3"
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,47 @@
 ---
-UID : NF:portcls.PcForwardContentToInterface
-title : PcForwardContentToInterface function
-author : windows-driver-content
-description : The PcForwardContentToInterface function accepts a pointer to the COM interface of an object to which the caller intends to forward protected content.
-old-location : audio\pcforwardcontenttointerface.htm
-old-project : audio
-ms.assetid : 5aa6aa90-ef41-467e-a096-5ab660b3f357
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : portcls/PcForwardContentToInterface, PcForwardContentToInterface function [Audio Devices], PcForwardContentToInterface, audpc-routines_1c3b8e8d-556e-4029-9e25-5a2e083dd17f.xml, audio.pcforwardcontenttointerface
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : portcls.h
-req.include-header : Portcls.h
-req.target-type : Universal
-req.target-min-winverclnt : The PortCls system driver implements the PcForwardContentToInterface function in Microsoft Windows XP and later operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Portcls.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.PcForwardContentToInterface
+title: PcForwardContentToInterface function
+author: windows-driver-content
+description: The PcForwardContentToInterface function accepts a pointer to the COM interface of an object to which the caller intends to forward protected content.
+old-location: audio\pcforwardcontenttointerface.htm
+old-project: audio
+ms.assetid: 5aa6aa90-ef41-467e-a096-5ab660b3f357
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: portcls/PcForwardContentToInterface, PcForwardContentToInterface function [Audio Devices], PcForwardContentToInterface, audpc-routines_1c3b8e8d-556e-4029-9e25-5a2e083dd17f.xml, audio.pcforwardcontenttointerface
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: portcls.h
+req.include-header: Portcls.h
+req.target-type: Universal
+req.target-min-winverclnt: The PortCls system driver implements the PcForwardContentToInterface function in Microsoft Windows XP and later operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Portcls.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Portcls.lib
+-	Portcls.dll
+apiname:
+-	PcForwardContentToInterface
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

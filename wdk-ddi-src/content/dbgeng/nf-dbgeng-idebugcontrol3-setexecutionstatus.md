@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugControl3.SetExecutionStatus
-title : IDebugControl3::SetExecutionStatus method
-author : windows-driver-content
-description : The SetExecutionStatus method requests that the debugger engine enter an executable state. Actual execution will not occur until the next time WaitForEvent is called.
-old-location : debugger\setexecutionstatus.htm
-old-project : debugger
-ms.assetid : f3468fe5-31b4-4bf6-b0e3-ee27ecfd8e06
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugControl3::SetExecutionStatus, SetExecutionStatus method [Windows Debugging], IDebugControl interface, SetExecutionStatus method [Windows Debugging], IDebugControl2::SetExecutionStatus, SetExecutionStatus, IDebugControl3, dbgeng/IDebugControl2::SetExecutionStatus, IDebugControl2 interface [Windows Debugging], SetExecutionStatus method, IDebugControl_b89bf576-8a07-49a8-8373-0b915300d36a.xml, IDebugControl::SetExecutionStatus, SetExecutionStatus method [Windows Debugging], IDebugControl3 interface, dbgeng/IDebugControl3::SetExecutionStatus, IDebugControl3 interface [Windows Debugging], SetExecutionStatus method, debugger.setexecutionstatus, SetExecutionStatus method [Windows Debugging], IDebugControl2 interface, dbgeng/IDebugControl::SetExecutionStatus, IDebugControl interface [Windows Debugging], SetExecutionStatus method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl3.SetExecutionStatus
+title: IDebugControl3::SetExecutionStatus method
+author: windows-driver-content
+description: The SetExecutionStatus method requests that the debugger engine enter an executable state. Actual execution will not occur until the next time WaitForEvent is called.
+old-location: debugger\setexecutionstatus.htm
+old-project: debugger
+ms.assetid: f3468fe5-31b4-4bf6-b0e3-ee27ecfd8e06
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugControl3::SetExecutionStatus, SetExecutionStatus method [Windows Debugging], IDebugControl interface, SetExecutionStatus method [Windows Debugging], IDebugControl2::SetExecutionStatus, SetExecutionStatus, IDebugControl3, dbgeng/IDebugControl2::SetExecutionStatus, IDebugControl2 interface [Windows Debugging], SetExecutionStatus method, IDebugControl_b89bf576-8a07-49a8-8373-0b915300d36a.xml, IDebugControl::SetExecutionStatus, SetExecutionStatus method [Windows Debugging], IDebugControl3 interface, dbgeng/IDebugControl3::SetExecutionStatus, IDebugControl3 interface [Windows Debugging], SetExecutionStatus method, debugger.setexecutionstatus, SetExecutionStatus method [Windows Debugging], IDebugControl2 interface, dbgeng/IDebugControl::SetExecutionStatus, IDebugControl interface [Windows Debugging], SetExecutionStatus method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl.SetExecutionStatus
+-	IDebugControl2.SetExecutionStatus
+-	IDebugControl3.SetExecutionStatus
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

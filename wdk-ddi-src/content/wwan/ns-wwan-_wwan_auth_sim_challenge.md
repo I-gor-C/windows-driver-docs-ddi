@@ -1,42 +1,47 @@
 ---
-UID : NS:wwan._WWAN_AUTH_SIM_CHALLENGE
-title : "_WWAN_AUTH_SIM_CHALLENGE"
-author : windows-driver-content
-description : The WWAN_AUTH_SIM_CHALLENGE structure represents an authentication challenge using the SIM method.
-old-location : netvista\wwan_auth_sim_challenge.htm
-old-project : netvista
-ms.assetid : E07F3ED0-2F20-40D9-AAAE-49C81168B998
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : wwan/WWAN_AUTH_SIM_CHALLENGE, WWAN_AUTH_SIM_CHALLENGE structure [Network Drivers Starting with Windows Vista], wwan/PWWAN_AUTH_SIM_CHALLENGE, *PWWAN_AUTH_SIM_CHALLENGE, _WWAN_AUTH_SIM_CHALLENGE, WWAN_AUTH_SIM_CHALLENGE, PWWAN_AUTH_SIM_CHALLENGE structure pointer [Network Drivers Starting with Windows Vista], PWWAN_AUTH_SIM_CHALLENGE, netvista.wwan_auth_sim_challenge
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wwan.h
-req.include-header : Wwan.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with  Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWWAN_AUTH_SIM_CHALLENGE, WWAN_AUTH_SIM_CHALLENGE"
-req.product : Windows 10 or later.
+UID: NS:wwan._WWAN_AUTH_SIM_CHALLENGE
+title: "_WWAN_AUTH_SIM_CHALLENGE"
+author: windows-driver-content
+description: The WWAN_AUTH_SIM_CHALLENGE structure represents an authentication challenge using the SIM method.
+old-location: netvista\wwan_auth_sim_challenge.htm
+old-project: netvista
+ms.assetid: E07F3ED0-2F20-40D9-AAAE-49C81168B998
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: wwan/WWAN_AUTH_SIM_CHALLENGE, WWAN_AUTH_SIM_CHALLENGE structure [Network Drivers Starting with Windows Vista], wwan/PWWAN_AUTH_SIM_CHALLENGE, *PWWAN_AUTH_SIM_CHALLENGE, _WWAN_AUTH_SIM_CHALLENGE, WWAN_AUTH_SIM_CHALLENGE, PWWAN_AUTH_SIM_CHALLENGE structure pointer [Network Drivers Starting with Windows Vista], PWWAN_AUTH_SIM_CHALLENGE, netvista.wwan_auth_sim_challenge
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wwan.h
+req.include-header: Wwan.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with  Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wwan.h
+apiname:
+-	WWAN_AUTH_SIM_CHALLENGE
+product: Windows
+targetos: Windows
+req.typenames: "*PWWAN_AUTH_SIM_CHALLENGE, WWAN_AUTH_SIM_CHALLENGE"
+req.product: Windows 10 or later.
 ---
 
 # _WWAN_AUTH_SIM_CHALLENGE structure

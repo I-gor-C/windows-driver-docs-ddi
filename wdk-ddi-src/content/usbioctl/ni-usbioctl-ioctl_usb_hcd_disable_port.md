@@ -1,42 +1,47 @@
 ---
-UID : NI:usbioctl.IOCTL_USB_HCD_DISABLE_PORT
-title : IOCTL_USB_HCD_DISABLE_PORT
-author : windows-driver-content
-description : The IOCTL_USB_HCD_DISABLE_PORT IOCTL has been deprecated. Do not use.
-old-location : buses\ioctl_usb_hcd_disable_port.htm
-old-project : usbref
-ms.assetid : c0ae41be-1b37-4410-8e7a-611a66c599c1
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : buses.ioctl_usb_hcd_disable_port, IOCTL_USB_HCD_DISABLE_PORT control code [Buses], IOCTL_USB_HCD_DISABLE_PORT, usbioctl/IOCTL_USB_HCD_DISABLE_PORT, usbirp_558a0a61-e35f-4015-9f72-df33e85c8c59.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : usbioctl.h
-req.include-header : Usbioctl.h
-req.target-type : Windows
-req.target-min-winverclnt : Available on Microsoft Windows Server 2003, Windows XP, and Windows 2000, but it is not available on Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : USB_HUB_TYPE
-req.product : Windows 10 or later.
+UID: NI:usbioctl.IOCTL_USB_HCD_DISABLE_PORT
+title: IOCTL_USB_HCD_DISABLE_PORT
+author: windows-driver-content
+description: The IOCTL_USB_HCD_DISABLE_PORT IOCTL has been deprecated. Do not use.
+old-location: buses\ioctl_usb_hcd_disable_port.htm
+old-project: usbref
+ms.assetid: c0ae41be-1b37-4410-8e7a-611a66c599c1
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: buses.ioctl_usb_hcd_disable_port, IOCTL_USB_HCD_DISABLE_PORT control code [Buses], IOCTL_USB_HCD_DISABLE_PORT, usbioctl/IOCTL_USB_HCD_DISABLE_PORT, usbirp_558a0a61-e35f-4015-9f72-df33e85c8c59.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: usbioctl.h
+req.include-header: Usbioctl.h
+req.target-type: Windows
+req.target-min-winverclnt: Available on Microsoft Windows Server 2003, Windows XP, and Windows 2000, but it is not available on Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Usbioctl.h
+apiname:
+-	IOCTL_USB_HCD_DISABLE_PORT
+product: Windows
+targetos: Windows
+req.typenames: USB_HUB_TYPE
+req.product: Windows 10 or later.
 ---
 
 # IOCTL_USB_HCD_DISABLE_PORT IOCTL

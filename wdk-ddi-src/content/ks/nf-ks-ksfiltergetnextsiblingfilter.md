@@ -1,41 +1,46 @@
 ---
-UID : NF:ks.KsFilterGetNextSiblingFilter
-title : KsFilterGetNextSiblingFilter function
-author : windows-driver-content
-description : The KsFilterGetNextSiblingFilter function returns the next instantiated filter belonging to the parent filter factory of Filter.
-old-location : stream\ksfiltergetnextsiblingfilter.htm
-old-project : stream
-ms.assetid : 0b0a306a-6066-4a7d-ae2d-12eb8bb3adc0
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KsFilterGetNextSiblingFilter, avfunc_bda9f36a-10d4-4de3-88b2-a358aad4fd04.xml, ks/KsFilterGetNextSiblingFilter, stream.ksfiltergetnextsiblingfilter, KsFilterGetNextSiblingFilter function [Streaming Media Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsFilterGetNextSiblingFilter
+title: KsFilterGetNextSiblingFilter function
+author: windows-driver-content
+description: The KsFilterGetNextSiblingFilter function returns the next instantiated filter belonging to the parent filter factory of Filter.
+old-location: stream\ksfiltergetnextsiblingfilter.htm
+old-project: stream
+ms.assetid: 0b0a306a-6066-4a7d-ae2d-12eb8bb3adc0
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KsFilterGetNextSiblingFilter, avfunc_bda9f36a-10d4-4de3-88b2-a358aad4fd04.xml, ks/KsFilterGetNextSiblingFilter, stream.ksfiltergetnextsiblingfilter, KsFilterGetNextSiblingFilter function [Streaming Media Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	KsFilterGetNextSiblingFilter
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

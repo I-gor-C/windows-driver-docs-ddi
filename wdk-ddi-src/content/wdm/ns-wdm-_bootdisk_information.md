@@ -1,42 +1,47 @@
 ---
-UID : NS:wdm._BOOTDISK_INFORMATION
-title : "_BOOTDISK_INFORMATION"
-author : windows-driver-content
-description : The BOOTDISK_INFORMATION structure contains basic information describing the boot and system disks.
-old-location : kernel\bootdisk_information.htm
-old-project : kernel
-ms.assetid : dd2a525d-fb9d-4fea-b9d7-64b1f498550c
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : PBOOTDISK_INFORMATION, BOOTDISK_INFORMATION, _BOOTDISK_INFORMATION, wdm/BOOTDISK_INFORMATION, PBOOTDISK_INFORMATION structure pointer [Kernel-Mode Driver Architecture], wdm/PBOOTDISK_INFORMATION, kstruct_a_61cd1024-0bb4-4601-a458-4bf52a2339d5.xml, *PBOOTDISK_INFORMATION, kernel.bootdisk_information, BOOTDISK_INFORMATION structure [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : Drivers on Microsoft Windows XP and later versions of the Windows operating system should use the BOOTDISK_INFORMATION_EX structure instead.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : BOOTDISK_INFORMATION, *PBOOTDISK_INFORMATION
-req.product : Windows 10 or later.
+UID: NS:wdm._BOOTDISK_INFORMATION
+title: "_BOOTDISK_INFORMATION"
+author: windows-driver-content
+description: The BOOTDISK_INFORMATION structure contains basic information describing the boot and system disks.
+old-location: kernel\bootdisk_information.htm
+old-project: kernel
+ms.assetid: dd2a525d-fb9d-4fea-b9d7-64b1f498550c
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: PBOOTDISK_INFORMATION, BOOTDISK_INFORMATION, _BOOTDISK_INFORMATION, wdm/BOOTDISK_INFORMATION, PBOOTDISK_INFORMATION structure pointer [Kernel-Mode Driver Architecture], wdm/PBOOTDISK_INFORMATION, kstruct_a_61cd1024-0bb4-4601-a458-4bf52a2339d5.xml, *PBOOTDISK_INFORMATION, kernel.bootdisk_information, BOOTDISK_INFORMATION structure [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: Drivers on Microsoft Windows XP and later versions of the Windows operating system should use the BOOTDISK_INFORMATION_EX structure instead.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	BOOTDISK_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: BOOTDISK_INFORMATION, *PBOOTDISK_INFORMATION
+req.product: Windows 10 or later.
 ---
 
 # _BOOTDISK_INFORMATION structure

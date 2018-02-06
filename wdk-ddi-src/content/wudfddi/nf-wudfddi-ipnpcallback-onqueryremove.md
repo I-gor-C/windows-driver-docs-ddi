@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IPnpCallback.OnQueryRemove
-title : IPnpCallback::OnQueryRemove method
-author : windows-driver-content
-description : The OnQueryRemove method notifies a driver before a device is removed from a computer.
-old-location : wdf\ipnpcallback_onqueryremove.htm
-old-project : wdf
-ms.assetid : ae95a22d-7b5b-4854-b2f5-76b46cf268f9
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : OnQueryRemove, IPnpCallback::OnQueryRemove, OnQueryRemove method, wudfddi/IPnpCallback::OnQueryRemove, IPnpCallback, wdf.ipnpcallback_onqueryremove, OnQueryRemove method, IPnpCallback interface, UMDFDeviceObjectRef_27404593-38b6-46cc-8dcc-809d159822b6.xml, IPnpCallback interface, OnQueryRemove method, umdf.ipnpcallback_onqueryremove
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IPnpCallback.OnQueryRemove
+title: IPnpCallback::OnQueryRemove method
+author: windows-driver-content
+description: The OnQueryRemove method notifies a driver before a device is removed from a computer.
+old-location: wdf\ipnpcallback_onqueryremove.htm
+old-project: wdf
+ms.assetid: ae95a22d-7b5b-4854-b2f5-76b46cf268f9
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: OnQueryRemove, IPnpCallback::OnQueryRemove, OnQueryRemove method, wudfddi/IPnpCallback::OnQueryRemove, IPnpCallback, wdf.ipnpcallback_onqueryremove, OnQueryRemove method, IPnpCallback interface, UMDFDeviceObjectRef_27404593-38b6-46cc-8dcc-809d159822b6.xml, IPnpCallback interface, OnQueryRemove method, umdf.ipnpcallback_onqueryremove
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Wudfddi.h
+apiname:
+-	IPnpCallback.OnQueryRemove
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

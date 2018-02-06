@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmthk._D3DKMT_SIGNALSYNCHRONIZATIONOBJECT2
-title : "_D3DKMT_SIGNALSYNCHRONIZATIONOBJECT2"
-author : windows-driver-content
-description : The D3DKMT_SIGNALSYNCHRONIZATIONOBJECT2 structure contains information about the synchronization events that the D3DKMTSignalSynchronizationObject2 function signals.
-old-location : display\d3dkmt_signalsynchronizationobject2.htm
-old-project : display
-ms.assetid : a4bdafeb-310a-4ceb-966e-a1e3660fc5f2
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3dkmthk/D3DKMT_SIGNALSYNCHRONIZATIONOBJECT2, D3DKMT_SIGNALSYNCHRONIZATIONOBJECT2 structure [Display Devices], D3DKMT_SIGNALSYNCHRONIZATIONOBJECT2, display.d3dkmt_signalsynchronizationobject2, OpenGL_Structs_ac490d8c-5ab9-4a1f-8908-5c2e7786b65b.xml, _D3DKMT_SIGNALSYNCHRONIZATIONOBJECT2
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Windows
-req.target-min-winverclnt : D3DKMT_SIGNALSYNCHRONIZATIONOBJECT2 is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_SIGNALSYNCHRONIZATIONOBJECT2
+UID: NS:d3dkmthk._D3DKMT_SIGNALSYNCHRONIZATIONOBJECT2
+title: "_D3DKMT_SIGNALSYNCHRONIZATIONOBJECT2"
+author: windows-driver-content
+description: The D3DKMT_SIGNALSYNCHRONIZATIONOBJECT2 structure contains information about the synchronization events that the D3DKMTSignalSynchronizationObject2 function signals.
+old-location: display\d3dkmt_signalsynchronizationobject2.htm
+old-project: display
+ms.assetid: a4bdafeb-310a-4ceb-966e-a1e3660fc5f2
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3dkmthk/D3DKMT_SIGNALSYNCHRONIZATIONOBJECT2, D3DKMT_SIGNALSYNCHRONIZATIONOBJECT2 structure [Display Devices], D3DKMT_SIGNALSYNCHRONIZATIONOBJECT2, display.d3dkmt_signalsynchronizationobject2, OpenGL_Structs_ac490d8c-5ab9-4a1f-8908-5c2e7786b65b.xml, _D3DKMT_SIGNALSYNCHRONIZATIONOBJECT2
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Windows
+req.target-min-winverclnt: D3DKMT_SIGNALSYNCHRONIZATIONOBJECT2 is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmthk.h
+apiname:
+-	D3DKMT_SIGNALSYNCHRONIZATIONOBJECT2
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_SIGNALSYNCHRONIZATIONOBJECT2
 ---
 
 # _D3DKMT_SIGNALSYNCHRONIZATIONOBJECT2 structure

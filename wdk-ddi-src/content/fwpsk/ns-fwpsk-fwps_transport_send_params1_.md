@@ -1,41 +1,46 @@
 ---
-UID : NS:fwpsk.FWPS_TRANSPORT_SEND_PARAMS1_
-title : FWPS_TRANSPORT_SEND_PARAMS1_
-author : windows-driver-content
-description : The FWPS_TRANSPORT_SEND_PARAMS1 structure defines properties of an outbound transport layer packet.Note  FWPS_TRANSPORT_SEND_PARAMS1 is the specific version of FWPS_TRANSPORT_SEND_PARAMS used in Windows 7 and later.
-old-location : netvista\fwps_transport_send_params1.htm
-old-project : netvista
-ms.assetid : 8d5653e4-a755-4066-b25a-f8f589821412
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : wfp_ref_3_struct_3_fwps_P-Z_55024e38-5ae1-4a2c-8595-2722e481a947.xml, FWPS_TRANSPORT_SEND_PARAMS1_, FWPS_TRANSPORT_SEND_PARAMS1 structure [Network Drivers Starting with Windows Vista], fwpsk/FWPS_TRANSPORT_SEND_PARAMS1, FWPS_TRANSPORT_SEND_PARAMS1, netvista.fwps_transport_send_params1
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : fwpsk.h
-req.include-header : Fwpsk.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows 7.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FWPS_TRANSPORT_SEND_PARAMS1
+UID: NS:fwpsk.FWPS_TRANSPORT_SEND_PARAMS1_
+title: FWPS_TRANSPORT_SEND_PARAMS1_
+author: windows-driver-content
+description: The FWPS_TRANSPORT_SEND_PARAMS1 structure defines properties of an outbound transport layer packet.Note  FWPS_TRANSPORT_SEND_PARAMS1 is the specific version of FWPS_TRANSPORT_SEND_PARAMS used in Windows 7 and later.
+old-location: netvista\fwps_transport_send_params1.htm
+old-project: netvista
+ms.assetid: 8d5653e4-a755-4066-b25a-f8f589821412
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: wfp_ref_3_struct_3_fwps_P-Z_55024e38-5ae1-4a2c-8595-2722e481a947.xml, FWPS_TRANSPORT_SEND_PARAMS1_, FWPS_TRANSPORT_SEND_PARAMS1 structure [Network Drivers Starting with Windows Vista], fwpsk/FWPS_TRANSPORT_SEND_PARAMS1, FWPS_TRANSPORT_SEND_PARAMS1, netvista.fwps_transport_send_params1
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: fwpsk.h
+req.include-header: Fwpsk.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows 7.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	fwpsk.h
+apiname:
+-	FWPS_TRANSPORT_SEND_PARAMS1
+product: Windows
+targetos: Windows
+req.typenames: FWPS_TRANSPORT_SEND_PARAMS1
 ---
 
 # FWPS_TRANSPORT_SEND_PARAMS1_ structure

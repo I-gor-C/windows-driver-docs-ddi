@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.KeDeregisterNmiCallback
-title : KeDeregisterNmiCallback function
-author : windows-driver-content
-description : The KeDeregisterNmiCallback routine deregisters a nonmaskable interrupt (NMI) callback registered by KeRegisterNmiCallback.
-old-location : kernel\kederegisternmicallback.htm
-old-project : kernel
-ms.assetid : 45022490-8130-449c-8ec9-380be0a3a03d
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/KeDeregisterNmiCallback, kernel.kederegisternmicallback, k105_407e4af5-fb93-4a7e-bacd-cc1d08935815.xml, KeDeregisterNmiCallback, KeDeregisterNmiCallback routine [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Server 2003 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : IrqlKeApcLte2, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.KeDeregisterNmiCallback
+title: KeDeregisterNmiCallback function
+author: windows-driver-content
+description: The KeDeregisterNmiCallback routine deregisters a nonmaskable interrupt (NMI) callback registered by KeRegisterNmiCallback.
+old-location: kernel\kederegisternmicallback.htm
+old-project: kernel
+ms.assetid: 45022490-8130-449c-8ec9-380be0a3a03d
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/KeDeregisterNmiCallback, kernel.kederegisternmicallback, k105_407e4af5-fb93-4a7e-bacd-cc1d08935815.xml, KeDeregisterNmiCallback, KeDeregisterNmiCallback routine [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Server 2003 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: IrqlKeApcLte2, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	KeDeregisterNmiCallback
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddstor._STORAGE_DEVICE_DESCRIPTOR
-title : "_STORAGE_DEVICE_DESCRIPTOR"
-author : windows-driver-content
-description : The STORAGE_DEVICE_DESCRIPTOR structure is used in conjunction with the IOCTL_STORAGE_QUERY_PROPERTY request to retrieve the storage device descriptor data for a device.
-old-location : storage\storage_device_descriptor.htm
-old-project : storage
-ms.assetid : 99b270a0-0634-41a8-9de7-d2a2d4c3059f
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.storage_device_descriptor, PSTORAGE_DEVICE_DESCRIPTOR, ntddstor/PSTORAGE_DEVICE_DESCRIPTOR, PSTORAGE_DEVICE_DESCRIPTOR structure pointer [Storage Devices], STORAGE_DEVICE_DESCRIPTOR structure [Storage Devices], ntddstor/STORAGE_DEVICE_DESCRIPTOR, structs-general_3c393126-f5c8-47d8-bfb5-6127ce656e9a.xml, _STORAGE_DEVICE_DESCRIPTOR, STORAGE_DEVICE_DESCRIPTOR
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddstor.h
-req.include-header : Ntddstor.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STORAGE_DEVICE_DESCRIPTOR, PSTORAGE_DEVICE_DESCRIPTOR
+UID: NS:ntddstor._STORAGE_DEVICE_DESCRIPTOR
+title: "_STORAGE_DEVICE_DESCRIPTOR"
+author: windows-driver-content
+description: The STORAGE_DEVICE_DESCRIPTOR structure is used in conjunction with the IOCTL_STORAGE_QUERY_PROPERTY request to retrieve the storage device descriptor data for a device.
+old-location: storage\storage_device_descriptor.htm
+old-project: storage
+ms.assetid: 99b270a0-0634-41a8-9de7-d2a2d4c3059f
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.storage_device_descriptor, PSTORAGE_DEVICE_DESCRIPTOR, ntddstor/PSTORAGE_DEVICE_DESCRIPTOR, PSTORAGE_DEVICE_DESCRIPTOR structure pointer [Storage Devices], STORAGE_DEVICE_DESCRIPTOR structure [Storage Devices], ntddstor/STORAGE_DEVICE_DESCRIPTOR, structs-general_3c393126-f5c8-47d8-bfb5-6127ce656e9a.xml, _STORAGE_DEVICE_DESCRIPTOR, STORAGE_DEVICE_DESCRIPTOR
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddstor.h
+req.include-header: Ntddstor.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddstor.h
+apiname:
+-	STORAGE_DEVICE_DESCRIPTOR
+product: Windows
+targetos: Windows
+req.typenames: STORAGE_DEVICE_DESCRIPTOR, PSTORAGE_DEVICE_DESCRIPTOR
 ---
 
 # _STORAGE_DEVICE_DESCRIPTOR structure

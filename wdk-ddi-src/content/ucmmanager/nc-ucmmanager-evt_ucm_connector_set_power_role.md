@@ -1,42 +1,47 @@
 ---
-UID : NC:ucmmanager.EVT_UCM_CONNECTOR_SET_POWER_ROLE
-title : EVT_UCM_CONNECTOR_SET_POWER_ROLE
-author : windows-driver-content
-description : The client driver's implementation of the EVT_UCM_CONNECTOR_SET_POWER_ROLE event callback function that sets the power role of the connector to the specified role when attached to a partner connector.
-old-location : buses\evt_ucm_connector_set_power_role.htm
-old-project : usbref
-ms.assetid : 56D5A78D-546E-439E-A69E-A87B0A3B288F
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : buses.evt_ucm_connector_set_power_role, EvtSetDataRole callback function [Buses], EvtSetDataRole, EVT_UCM_CONNECTOR_SET_POWER_ROLE, EVT_UCM_CONNECTOR_SET_POWER_ROLE, ucmmanager/EvtSetDataRole, PFN_UCM_CONNECTOR_SET_POWER_ROLE callback function pointer [Buses], PFN_UCM_CONNECTOR_SET_POWER_ROLE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ucmmanager.h
-req.include-header : Ucmcx.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 1.15
-req.umdf-ver : 2.15
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPORT_DATA_1, PORT_DATA_1"
-req.product : Windows 10 or later.
+UID: NC:ucmmanager.EVT_UCM_CONNECTOR_SET_POWER_ROLE
+title: EVT_UCM_CONNECTOR_SET_POWER_ROLE
+author: windows-driver-content
+description: The client driver's implementation of the EVT_UCM_CONNECTOR_SET_POWER_ROLE event callback function that sets the power role of the connector to the specified role when attached to a partner connector.
+old-location: buses\evt_ucm_connector_set_power_role.htm
+old-project: usbref
+ms.assetid: 56D5A78D-546E-439E-A69E-A87B0A3B288F
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: buses.evt_ucm_connector_set_power_role, EvtSetDataRole callback function [Buses], EvtSetDataRole, EVT_UCM_CONNECTOR_SET_POWER_ROLE, EVT_UCM_CONNECTOR_SET_POWER_ROLE, ucmmanager/EvtSetDataRole, PFN_UCM_CONNECTOR_SET_POWER_ROLE callback function pointer [Buses], PFN_UCM_CONNECTOR_SET_POWER_ROLE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ucmmanager.h
+req.include-header: Ucmcx.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 1.15
+req.umdf-ver: 2.15
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ucmmanager.h
+apiname:
+-	PFN_UCM_CONNECTOR_SET_POWER_ROLE
+product: Windows
+targetos: Windows
+req.typenames: "*PPORT_DATA_1, PORT_DATA_1"
+req.product: Windows 10 or later.
 ---
 
 

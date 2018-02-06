@@ -1,42 +1,47 @@
 ---
-UID : NE:wdm._CLFS_CONTEXT_MODE
-title : "_CLFS_CONTEXT_MODE"
-author : windows-driver-content
-description : The CLFS_CONTEXT_MODE enumeration indicates the type of sequence that the Common Log File System (CLFS) driver follows when it reads a set of records from a stream.
-old-location : kernel\clfs_context_mode.htm
-old-project : kernel
-ms.assetid : 35f2b42d-d67f-4fd4-adde-918a2587980b
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : CLFS_CONTEXT_MODE, ClfsContextUndoNext, *PCLFS_CONTEXT_MODE, kernel.clfs_context_mode, wdm/ClfsContextPrevious, wdm/PPCLFS_CONTEXT_MODE, ClfsContextNone, wdm/ClfsContextForward, PCLFS_CONTEXT_MODE enumeration pointer [Kernel-Mode Driver Architecture], ClfsContextPrevious, PPCLFS_CONTEXT_MODE, _CLFS_CONTEXT_MODE, CLFS_CONTEXT_MODE enumeration [Kernel-Mode Driver Architecture], wdm/CLFS_CONTEXT_MODE, wdm/ClfsContextNone, wdm/PCLFS_CONTEXT_MODE, sysenum_b51a934c-9174-4607-8da9-22c7ecf56730.xml, PCLFS_CONTEXT_MODE, PPCLFS_CONTEXT_MODE enumeration pointer [Kernel-Mode Driver Architecture], ClfsContextForward, wdm/ClfsContextUndoNext
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : wdm.h
-req.include-header : Wdm.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : CLFS_CONTEXT_MODE, *PCLFS_CONTEXT_MODE, PPCLFS_CONTEXT_MODE
-req.product : Windows 10 or later.
+UID: NE:wdm._CLFS_CONTEXT_MODE
+title: "_CLFS_CONTEXT_MODE"
+author: windows-driver-content
+description: The CLFS_CONTEXT_MODE enumeration indicates the type of sequence that the Common Log File System (CLFS) driver follows when it reads a set of records from a stream.
+old-location: kernel\clfs_context_mode.htm
+old-project: kernel
+ms.assetid: 35f2b42d-d67f-4fd4-adde-918a2587980b
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: CLFS_CONTEXT_MODE, ClfsContextUndoNext, *PCLFS_CONTEXT_MODE, kernel.clfs_context_mode, wdm/ClfsContextPrevious, wdm/PPCLFS_CONTEXT_MODE, ClfsContextNone, wdm/ClfsContextForward, PCLFS_CONTEXT_MODE enumeration pointer [Kernel-Mode Driver Architecture], ClfsContextPrevious, PPCLFS_CONTEXT_MODE, _CLFS_CONTEXT_MODE, CLFS_CONTEXT_MODE enumeration [Kernel-Mode Driver Architecture], wdm/CLFS_CONTEXT_MODE, wdm/ClfsContextNone, wdm/PCLFS_CONTEXT_MODE, sysenum_b51a934c-9174-4607-8da9-22c7ecf56730.xml, PCLFS_CONTEXT_MODE, PPCLFS_CONTEXT_MODE enumeration pointer [Kernel-Mode Driver Architecture], ClfsContextForward, wdm/ClfsContextUndoNext
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: wdm.h
+req.include-header: Wdm.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdm.h
+apiname:
+-	CLFS_CONTEXT_MODE
+product: Windows
+targetos: Windows
+req.typenames: CLFS_CONTEXT_MODE, *PCLFS_CONTEXT_MODE, PPCLFS_CONTEXT_MODE
+req.product: Windows 10 or later.
 ---
 
 # _CLFS_CONTEXT_MODE Enumeration
@@ -55,26 +60,26 @@ typedef enum _CLFS_CONTEXT_MODE {
 ## Constants
 
 <table>
-
-<tr>
-<td>ClfsContextForward</td>
-<td>Indicates that the next record in the sequence is the record in the stream that immediately follows the current record.</td>
-</tr>
-
-<tr>
-<td>ClfsContextNone</td>
-<td>Indicates that a variable of type <b>CLFS_CONTEXT_MODE</b> has not yet been assigned a meaningful value.</td>
-</tr>
-
-<tr>
-<td>ClfsContextPrevious</td>
-<td>Indicates that the next record in the sequence is pointed to by the <a href="https://msdn.microsoft.com/4637fa0c-2f19-4f0c-bf13-f4ccac2e7284">previous LSN</a> of the current record.</td>
-</tr>
-
-<tr>
-<td>ClfsContextUndoNext</td>
-<td>Indicates that the next record in the sequence is pointed to by the <a href="https://msdn.microsoft.com/4637fa0c-2f19-4f0c-bf13-f4ccac2e7284">undo-next LSN</a> of the current record.</td>
-</tr>
+            
+                <tr>
+                    <td>ClfsContextForward</td>
+                    <td>Indicates that the next record in the sequence is the record in the stream that immediately follows the current record.</td>
+                </tr>
+            
+                <tr>
+                    <td>ClfsContextNone</td>
+                    <td>Indicates that a variable of type <b>CLFS_CONTEXT_MODE</b> has not yet been assigned a meaningful value.</td>
+                </tr>
+            
+                <tr>
+                    <td>ClfsContextPrevious</td>
+                    <td>Indicates that the next record in the sequence is pointed to by the <a href="https://msdn.microsoft.com/4637fa0c-2f19-4f0c-bf13-f4ccac2e7284">previous LSN</a> of the current record.</td>
+                </tr>
+            
+                <tr>
+                    <td>ClfsContextUndoNext</td>
+                    <td>Indicates that the next record in the sequence is pointed to by the <a href="https://msdn.microsoft.com/4637fa0c-2f19-4f0c-bf13-f4ccac2e7284">undo-next LSN</a> of the current record.</td>
+                </tr>
 </table>
 
 
@@ -83,9 +88,9 @@ typedef enum _CLFS_CONTEXT_MODE {
 | ---- |:---- |
 | **Header** | wdm.h (include Wdm.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\wdm\nf-wdm-clfsreadpreviousrestartarea.md">ClfsReadPreviousRestartArea</a>
+        <a href="..\wdm\nf-wdm-clfsreadpreviousrestartarea.md">ClfsReadPreviousRestartArea</a>
 
 <a href="..\wdm\nf-wdm-clfsreadnextlogrecord.md">ClfsReadNextLogRecord</a>
 

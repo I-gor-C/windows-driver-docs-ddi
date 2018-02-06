@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._D3DDDIARG_CREATECRYPTOSESSION
-title : "_D3DDDIARG_CREATECRYPTOSESSION"
-author : windows-driver-content
-description : The D3DDDIARG_CREATECRYPTOSESSION structure describes an encryption session to create.
-old-location : display\d3dddiarg_createcryptosession.htm
-old-project : display
-ms.assetid : 45bc4d3f-d573-4a11-8d25-160cb8f233f4
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : "_D3DDDIARG_CREATECRYPTOSESSION, D3DDDIARG_CREATECRYPTOSESSION, d3dumddi/D3DDDIARG_CREATECRYPTOSESSION, display.d3dddiarg_createcryptosession, D3DDDIARG_CREATECRYPTOSESSION structure [Display Devices], UMDisplayDriver_param_Structs_39cf7246-689d-47f2-99f8-dcc3b2018958.xml"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : D3DDDIARG_CREATECRYPTOSESSION is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDIARG_CREATECRYPTOSESSION
+UID: NS:d3dumddi._D3DDDIARG_CREATECRYPTOSESSION
+title: "_D3DDDIARG_CREATECRYPTOSESSION"
+author: windows-driver-content
+description: The D3DDDIARG_CREATECRYPTOSESSION structure describes an encryption session to create.
+old-location: display\d3dddiarg_createcryptosession.htm
+old-project: display
+ms.assetid: 45bc4d3f-d573-4a11-8d25-160cb8f233f4
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: "_D3DDDIARG_CREATECRYPTOSESSION, D3DDDIARG_CREATECRYPTOSESSION, d3dumddi/D3DDDIARG_CREATECRYPTOSESSION, display.d3dddiarg_createcryptosession, D3DDDIARG_CREATECRYPTOSESSION structure [Display Devices], UMDisplayDriver_param_Structs_39cf7246-689d-47f2-99f8-dcc3b2018958.xml"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: D3DDDIARG_CREATECRYPTOSESSION is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	D3DDDIARG_CREATECRYPTOSESSION
+product: Windows
+targetos: Windows
+req.typenames: D3DDDIARG_CREATECRYPTOSESSION
 ---
 
 # _D3DDDIARG_CREATECRYPTOSESSION structure

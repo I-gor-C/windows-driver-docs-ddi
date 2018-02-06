@@ -1,42 +1,47 @@
 ---
-UID : NC:wlanihv.DOT11EXT_FREE_BUFFER
-title : DOT11EXT_FREE_BUFFER
-author : windows-driver-content
-description : Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
-old-location : netvista\dot11extfreebuffer.htm
-old-project : netvista
-ms.assetid : a6e49914-29c0-47d2-936b-17c48958cb36
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.dot11extfreebuffer, Dot11ExtFreeBuffer callback function [Network Drivers Starting with Windows Vista], Dot11ExtFreeBuffer, DOT11EXT_FREE_BUFFER, DOT11EXT_FREE_BUFFER, wlanihv/Dot11ExtFreeBuffer, Native_802.11_IHV_Ext_af721540-28a8-43c2-a649-ce0f6fb9adce.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wlanihv.h
-req.include-header : Wlanihv.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating   systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDRIVER_INFO_8W, DRIVER_INFO_8W, *LPDRIVER_INFO_8W"
-req.product : Windows 10 or later.
+UID: NC:wlanihv.DOT11EXT_FREE_BUFFER
+title: DOT11EXT_FREE_BUFFER
+author: windows-driver-content
+description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+old-location: netvista\dot11extfreebuffer.htm
+old-project: netvista
+ms.assetid: a6e49914-29c0-47d2-936b-17c48958cb36
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.dot11extfreebuffer, Dot11ExtFreeBuffer callback function [Network Drivers Starting with Windows Vista], Dot11ExtFreeBuffer, DOT11EXT_FREE_BUFFER, DOT11EXT_FREE_BUFFER, wlanihv/Dot11ExtFreeBuffer, Native_802.11_IHV_Ext_af721540-28a8-43c2-a649-ce0f6fb9adce.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wlanihv.h
+req.include-header: Wlanihv.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	wlanihv.h
+apiname:
+-	Dot11ExtFreeBuffer
+product: Windows
+targetos: Windows
+req.typenames: "*PDRIVER_INFO_8W, DRIVER_INFO_8W, *LPDRIVER_INFO_8W"
+req.product: Windows 10 or later.
 ---
 
 

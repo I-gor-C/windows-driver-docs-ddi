@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dhal._D3DHAL_DP2INDEXEDTRIANGLESTRIP
-title : "_D3DHAL_DP2INDEXEDTRIANGLESTRIP"
-author : windows-driver-content
-description : One or more D3DHAL_DP2INDEXEDTRIANGLESTRIP structures are parsed from the command buffer by the D3dDrawPrimitives2 callback when the D3DHAL_DP2COMMAND structure's bCommand member is set to D3DDP2OP_INDEXEDTRIANGLESTRIP, and are used to render strips of connected triangles using vertex indices.
-old-location : display\d3dhal_dp2indexedtrianglestrip.htm
-old-project : display
-ms.assetid : 542f89f1-f562-4293-9ca1-96e7a0512772
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DHAL_DP2INDEXEDTRIANGLESTRIP structure [Display Devices], LPD3DHAL_DP2INDEXEDTRIANGLESTRIP structure pointer [Display Devices], D3DHAL_DP2INDEXEDTRIANGLESTRIP, display.d3dhal_dp2indexedtrianglestrip, _D3DHAL_DP2INDEXEDTRIANGLESTRIP, *LPD3DHAL_DP2INDEXEDTRIANGLESTRIP, d3dhal/LPD3DHAL_DP2INDEXEDTRIANGLESTRIP, LPD3DHAL_DP2INDEXEDTRIANGLESTRIP, d3dstrct_72ed98e7-63f2-42ec-bcc4-4c4e6184cae5.xml, d3dhal/D3DHAL_DP2INDEXEDTRIANGLESTRIP
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dhal.h
-req.include-header : D3dhal.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DHAL_DP2INDEXEDTRIANGLESTRIP, *LPD3DHAL_DP2INDEXEDTRIANGLESTRIP
+UID: NS:d3dhal._D3DHAL_DP2INDEXEDTRIANGLESTRIP
+title: "_D3DHAL_DP2INDEXEDTRIANGLESTRIP"
+author: windows-driver-content
+description: One or more D3DHAL_DP2INDEXEDTRIANGLESTRIP structures are parsed from the command buffer by the D3dDrawPrimitives2 callback when the D3DHAL_DP2COMMAND structure's bCommand member is set to D3DDP2OP_INDEXEDTRIANGLESTRIP, and are used to render strips of connected triangles using vertex indices.
+old-location: display\d3dhal_dp2indexedtrianglestrip.htm
+old-project: display
+ms.assetid: 542f89f1-f562-4293-9ca1-96e7a0512772
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DHAL_DP2INDEXEDTRIANGLESTRIP structure [Display Devices], LPD3DHAL_DP2INDEXEDTRIANGLESTRIP structure pointer [Display Devices], D3DHAL_DP2INDEXEDTRIANGLESTRIP, display.d3dhal_dp2indexedtrianglestrip, _D3DHAL_DP2INDEXEDTRIANGLESTRIP, *LPD3DHAL_DP2INDEXEDTRIANGLESTRIP, d3dhal/LPD3DHAL_DP2INDEXEDTRIANGLESTRIP, LPD3DHAL_DP2INDEXEDTRIANGLESTRIP, d3dstrct_72ed98e7-63f2-42ec-bcc4-4c4e6184cae5.xml, d3dhal/D3DHAL_DP2INDEXEDTRIANGLESTRIP
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dhal.h
+req.include-header: D3dhal.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dhal.h
+apiname:
+-	D3DHAL_DP2INDEXEDTRIANGLESTRIP
+product: Windows
+targetos: Windows
+req.typenames: D3DHAL_DP2INDEXEDTRIANGLESTRIP, *LPD3DHAL_DP2INDEXEDTRIANGLESTRIP
 ---
 
 # _D3DHAL_DP2INDEXEDTRIANGLESTRIP structure

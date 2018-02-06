@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugControl3.SetLogMask
-title : IDebugControl3::SetLogMask method
-author : windows-driver-content
-description : The SetLogMask method sets the output mask for the currently open log file.
-old-location : debugger\setlogmask.htm
-old-project : debugger
-ms.assetid : 86c4e5ec-e893-4b1e-b397-6c51351df46c
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : SetLogMask method [Windows Debugging], IDebugControl interface, SetLogMask method [Windows Debugging], IDebugControl2 interface, dbgeng/IDebugControl3::SetLogMask, IDebugControl::SetLogMask, IDebugControl2 interface [Windows Debugging], SetLogMask method, SetLogMask method [Windows Debugging], IDebugControl3 interface, IDebugControl3, debugger.setlogmask, IDebugControl interface [Windows Debugging], SetLogMask method, IDebugControl_b1c44a2b-d2fd-407b-8994-00f5e53af10d.xml, SetLogMask method [Windows Debugging], dbgeng/IDebugControl::SetLogMask, IDebugControl3::SetLogMask, dbgeng/IDebugControl2::SetLogMask, IDebugControl2::SetLogMask, IDebugControl3 interface [Windows Debugging], SetLogMask method, SetLogMask
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl3.SetLogMask
+title: IDebugControl3::SetLogMask method
+author: windows-driver-content
+description: The SetLogMask method sets the output mask for the currently open log file.
+old-location: debugger\setlogmask.htm
+old-project: debugger
+ms.assetid: 86c4e5ec-e893-4b1e-b397-6c51351df46c
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: SetLogMask method [Windows Debugging], IDebugControl interface, SetLogMask method [Windows Debugging], IDebugControl2 interface, dbgeng/IDebugControl3::SetLogMask, IDebugControl::SetLogMask, IDebugControl2 interface [Windows Debugging], SetLogMask method, SetLogMask method [Windows Debugging], IDebugControl3 interface, IDebugControl3, debugger.setlogmask, IDebugControl interface [Windows Debugging], SetLogMask method, IDebugControl_b1c44a2b-d2fd-407b-8994-00f5e53af10d.xml, SetLogMask method [Windows Debugging], dbgeng/IDebugControl::SetLogMask, IDebugControl3::SetLogMask, dbgeng/IDebugControl2::SetLogMask, IDebugControl2::SetLogMask, IDebugControl3 interface [Windows Debugging], SetLogMask method, SetLogMask
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl.SetLogMask
+-	IDebugControl2.SetLogMask
+-	IDebugControl3.SetLogMask
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

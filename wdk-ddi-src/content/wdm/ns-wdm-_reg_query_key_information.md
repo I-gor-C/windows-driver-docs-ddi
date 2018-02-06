@@ -1,42 +1,47 @@
 ---
-UID : NS:wdm._REG_QUERY_KEY_INFORMATION
-title : "_REG_QUERY_KEY_INFORMATION"
-author : windows-driver-content
-description : The REG_QUERY_KEY_INFORMATION structure describes the metadata that is about to be queried for a key.
-old-location : kernel\reg_query_key_information.htm
-old-project : kernel
-ms.assetid : 88c64e9a-dbf2-4feb-9ce2-615b5ba98439
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : REG_QUERY_KEY_INFORMATION, _REG_QUERY_KEY_INFORMATION, REG_QUERY_KEY_INFORMATION structure [Kernel-Mode Driver Architecture], kernel.reg_query_key_information, *PREG_QUERY_KEY_INFORMATION, PREG_QUERY_KEY_INFORMATION, wdm/PREG_QUERY_KEY_INFORMATION, PREG_QUERY_KEY_INFORMATION structure pointer [Kernel-Mode Driver Architecture], kstruct_d_5e665782-95c2-4fca-bd49-cb364c449540.xml, wdm/REG_QUERY_KEY_INFORMATION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : Available on Microsoft Windows XP and later versions of the Windows operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PREG_QUERY_KEY_INFORMATION, REG_QUERY_KEY_INFORMATION"
-req.product : Windows 10 or later.
+UID: NS:wdm._REG_QUERY_KEY_INFORMATION
+title: "_REG_QUERY_KEY_INFORMATION"
+author: windows-driver-content
+description: The REG_QUERY_KEY_INFORMATION structure describes the metadata that is about to be queried for a key.
+old-location: kernel\reg_query_key_information.htm
+old-project: kernel
+ms.assetid: 88c64e9a-dbf2-4feb-9ce2-615b5ba98439
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: REG_QUERY_KEY_INFORMATION, _REG_QUERY_KEY_INFORMATION, REG_QUERY_KEY_INFORMATION structure [Kernel-Mode Driver Architecture], kernel.reg_query_key_information, *PREG_QUERY_KEY_INFORMATION, PREG_QUERY_KEY_INFORMATION, wdm/PREG_QUERY_KEY_INFORMATION, PREG_QUERY_KEY_INFORMATION structure pointer [Kernel-Mode Driver Architecture], kstruct_d_5e665782-95c2-4fca-bd49-cb364c449540.xml, wdm/REG_QUERY_KEY_INFORMATION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: Available on Microsoft Windows XP and later versions of the Windows operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdm.h
+apiname:
+-	REG_QUERY_KEY_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: "*PREG_QUERY_KEY_INFORMATION, REG_QUERY_KEY_INFORMATION"
+req.product: Windows 10 or later.
 ---
 
 # _REG_QUERY_KEY_INFORMATION structure

@@ -1,41 +1,46 @@
 ---
-UID : NC:iddcx.EVT_IDD_CX_MONITOR_OPM_GET_CERTIFICATE_SIZE
-title : EVT_IDD_CX_MONITOR_OPM_GET_CERTIFICATE_SIZE
-author : windows-driver-content
-description : EVT_IDD_CX_MONITOR_OPM_GET_CERTIFICATE_SIZE is called by the OS to get the size of an OPM certificate.
-old-location : display\evt_idd_cx_monitor_opm_get_certificate_size.htm
-old-project : display
-ms.assetid : f5293625-19eb-4df9-9934-1e1990b7d608
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.evt_idd_cx_monitor_opm_get_certificate_size, EvtIddCxMonitorOpmGetCertificateSize callback function [Display Devices], EvtIddCxMonitorOpmGetCertificateSize, EVT_IDD_CX_MONITOR_OPM_GET_CERTIFICATE_SIZE, EVT_IDD_CX_MONITOR_OPM_GET_CERTIFICATE_SIZE, iddcx/EvtIddCxMonitorOpmGetCertificateSize, PFN_IDD_CX_MONITOR_OPM_GET_CERTIFICATE_SIZE callback function pointer [Display Devices], PFN_IDD_CX_MONITOR_OPM_GET_CERTIFICATE_SIZE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : iddcx.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "_requires_same_"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WCS_PROFILE_MANAGEMENT_SCOPE
+UID: NC:iddcx.EVT_IDD_CX_MONITOR_OPM_GET_CERTIFICATE_SIZE
+title: EVT_IDD_CX_MONITOR_OPM_GET_CERTIFICATE_SIZE
+author: windows-driver-content
+description: EVT_IDD_CX_MONITOR_OPM_GET_CERTIFICATE_SIZE is called by the OS to get the size of an OPM certificate.
+old-location: display\evt_idd_cx_monitor_opm_get_certificate_size.htm
+old-project: display
+ms.assetid: f5293625-19eb-4df9-9934-1e1990b7d608
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.evt_idd_cx_monitor_opm_get_certificate_size, EvtIddCxMonitorOpmGetCertificateSize callback function [Display Devices], EvtIddCxMonitorOpmGetCertificateSize, EVT_IDD_CX_MONITOR_OPM_GET_CERTIFICATE_SIZE, EVT_IDD_CX_MONITOR_OPM_GET_CERTIFICATE_SIZE, iddcx/EvtIddCxMonitorOpmGetCertificateSize, PFN_IDD_CX_MONITOR_OPM_GET_CERTIFICATE_SIZE callback function pointer [Display Devices], PFN_IDD_CX_MONITOR_OPM_GET_CERTIFICATE_SIZE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: iddcx.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "_requires_same_"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	iddcx.h
+apiname:
+-	PFN_IDD_CX_MONITOR_OPM_GET_CERTIFICATE_SIZE
+product: Windows
+targetos: Windows
+req.typenames: WCS_PROFILE_MANAGEMENT_SCOPE
 ---
 
 

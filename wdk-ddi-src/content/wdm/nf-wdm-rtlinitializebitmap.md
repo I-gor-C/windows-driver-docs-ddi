@@ -1,42 +1,48 @@
 ---
-UID : NF:wdm.RtlInitializeBitMap
-title : RtlInitializeBitMap function
-author : windows-driver-content
-description : The RtlInitializeBitMap routine initializes the header of a bitmap variable.
-old-location : kernel\rtlinitializebitmap.htm
-old-project : kernel
-ms.assetid : 1e196ad1-5804-4d41-a273-18eb40e8f265
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : RtlInitializeBitMap routine [Kernel-Mode Driver Architecture], k109_2c98c30e-fc9f-422d-bfa8-e0d765677664.xml, RtlInitializeBitMap, wdm/RtlInitializeBitMap, kernel.rtlinitializebitmap
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe (kernel mode); Ntdll.dll (user mode)
-req.irql : "<= APC_LEVEL (see Remarks section)"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.RtlInitializeBitMap
+title: RtlInitializeBitMap function
+author: windows-driver-content
+description: The RtlInitializeBitMap routine initializes the header of a bitmap variable.
+old-location: kernel\rtlinitializebitmap.htm
+old-project: kernel
+ms.assetid: 1e196ad1-5804-4d41-a273-18eb40e8f265
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: RtlInitializeBitMap routine [Kernel-Mode Driver Architecture], k109_2c98c30e-fc9f-422d-bfa8-e0d765677664.xml, RtlInitializeBitMap, wdm/RtlInitializeBitMap, kernel.rtlinitializebitmap
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe (kernel mode); Ntdll.dll (user mode)
+req.irql: "<= APC_LEVEL (see Remarks section)"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+-	Ntdll.dll
+apiname:
+-	RtlInitializeBitMap
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

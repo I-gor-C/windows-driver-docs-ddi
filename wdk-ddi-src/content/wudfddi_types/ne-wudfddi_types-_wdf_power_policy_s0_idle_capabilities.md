@@ -1,42 +1,48 @@
 ---
-UID : NE:wudfddi_types._WDF_POWER_POLICY_S0_IDLE_CAPABILITIES
-title : "_WDF_POWER_POLICY_S0_IDLE_CAPABILITIES"
-author : windows-driver-content
-description : The WDF_POWER_POLICY_S0_IDLE_CAPABILITIES enumeration identifies the capabilities that a device can support when it enters a low-power state while it is idling.
-old-location : wdf\wdf_power_policy_s0_idle_capabilities.htm
-old-project : wdf
-ms.assetid : b4a3611d-5eb6-4fb2-a66a-e563569c4790
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdfdevice/IdleCannotWakeFromS0, wudfddi_types/IdleUsbSelectiveSuspend, wudfddi_types/WDF_POWER_POLICY_S0_IDLE_CAPABILITIES, kmdf.wdf_power_policy_s0_idle_capabilities, wudfddi_types/IdleCannotWakeFromS0, wdf.wdf_power_policy_s0_idle_capabilities, wdfdevice/IdleUsbSelectiveSuspend, wudfddi_types/IdleCapsInvalid, WDF_POWER_POLICY_S0_IDLE_CAPABILITIES, wdfdevice/IdleCanWakeFromS0, IdleCanWakeFromS0, wudfddi_types/IdleCanWakeFromS0, wdfdevice/WDF_POWER_POLICY_S0_IDLE_CAPABILITIES, _WDF_POWER_POLICY_S0_IDLE_CAPABILITIES, wdfdevice/IdleCapsInvalid, IdleCannotWakeFromS0, DFDeviceObjectGeneralRef_42de97ef-91c2-44e1-9b69-fe92ca5b0edc.xml, IdleUsbSelectiveSuspend, IdleCapsInvalid, WDF_POWER_POLICY_S0_IDLE_CAPABILITIES enumeration
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : wudfddi_types.h
-req.include-header : Wdf.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 1.11
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_POWER_POLICY_S0_IDLE_CAPABILITIES
-req.product : Windows 10 or later.
+UID: NE:wudfddi_types._WDF_POWER_POLICY_S0_IDLE_CAPABILITIES
+title: "_WDF_POWER_POLICY_S0_IDLE_CAPABILITIES"
+author: windows-driver-content
+description: The WDF_POWER_POLICY_S0_IDLE_CAPABILITIES enumeration identifies the capabilities that a device can support when it enters a low-power state while it is idling.
+old-location: wdf\wdf_power_policy_s0_idle_capabilities.htm
+old-project: wdf
+ms.assetid: b4a3611d-5eb6-4fb2-a66a-e563569c4790
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdfdevice/IdleCannotWakeFromS0, wudfddi_types/IdleUsbSelectiveSuspend, wudfddi_types/WDF_POWER_POLICY_S0_IDLE_CAPABILITIES, kmdf.wdf_power_policy_s0_idle_capabilities, wudfddi_types/IdleCannotWakeFromS0, wdf.wdf_power_policy_s0_idle_capabilities, wdfdevice/IdleUsbSelectiveSuspend, wudfddi_types/IdleCapsInvalid, WDF_POWER_POLICY_S0_IDLE_CAPABILITIES, wdfdevice/IdleCanWakeFromS0, IdleCanWakeFromS0, wudfddi_types/IdleCanWakeFromS0, wdfdevice/WDF_POWER_POLICY_S0_IDLE_CAPABILITIES, _WDF_POWER_POLICY_S0_IDLE_CAPABILITIES, wdfdevice/IdleCapsInvalid, IdleCannotWakeFromS0, DFDeviceObjectGeneralRef_42de97ef-91c2-44e1-9b69-fe92ca5b0edc.xml, IdleUsbSelectiveSuspend, IdleCapsInvalid, WDF_POWER_POLICY_S0_IDLE_CAPABILITIES enumeration
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: wudfddi_types.h
+req.include-header: Wdf.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 1.11
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfdevice.h
+-	wudfddi_types.h
+apiname:
+-	WDF_POWER_POLICY_S0_IDLE_CAPABILITIES
+product: Windows
+targetos: Windows
+req.typenames: WDF_POWER_POLICY_S0_IDLE_CAPABILITIES
+req.product: Windows 10 or later.
 ---
 
 # _WDF_POWER_POLICY_S0_IDLE_CAPABILITIES Enumeration
@@ -57,33 +63,33 @@ typedef enum _WDF_POWER_POLICY_S0_IDLE_CAPABILITIES {
 ## Constants
 
 <table>
-
-<tr>
-<td>IdleCannotWakeFromS0</td>
-<td>The device cannot wake itself from a low-power state while the system is in its working (S0) state.</td>
-</tr>
-
-<tr>
-<td>IdleCanWakeFromS0</td>
-<td>The device can wake itself from a low-power state while the system is in its working (S0) state.</td>
-</tr>
-
-<tr>
-<td>IdleCapsInvalid</td>
-<td>For internal use only.</td>
-</tr>
-
-<tr>
-<td>IdleUsbSelectiveSuspend</td>
-<td>The device is connected to a USB bus and supports <a href="https://msdn.microsoft.com/library/windows/hardware/ff540144">USB selective suspend</a>. Use this value if your USB-connected device supports both idling and waking itself while the computer is in its working state. If your USB device supports only idling, use <b>IdleCannotWakeFromS0</b>. (Drivers for USB devices must not specify <b>IdleCanWakeFromS0</b>.) See the code examples in the following Examples section.
+            
+                <tr>
+                    <td>IdleCannotWakeFromS0</td>
+                    <td>The device cannot wake itself from a low-power state while the system is in its working (S0) state.</td>
+                </tr>
+            
+                <tr>
+                    <td>IdleCanWakeFromS0</td>
+                    <td>The device can wake itself from a low-power state while the system is in its working (S0) state.</td>
+                </tr>
+            
+                <tr>
+                    <td>IdleCapsInvalid</td>
+                    <td>For internal use only.</td>
+                </tr>
+            
+                <tr>
+                    <td>IdleUsbSelectiveSuspend</td>
+                    <td>The device is connected to a USB bus and supports <a href="https://msdn.microsoft.com/library/windows/hardware/ff540144">USB selective suspend</a>. Use this value if your USB-connected device supports both idling and waking itself while the computer is in its working state. If your USB device supports only idling, use <b>IdleCannotWakeFromS0</b>. (Drivers for USB devices must not specify <b>IdleCanWakeFromS0</b>.) See the code examples in the following Examples section.
 
 For Windows XP, the framework supports USB selective suspend only if the device's <a href="..\usbspec\ns-usbspec-_usb_configuration_descriptor.md">USB_CONFIGURATION_DESCRIPTOR</a> structure shows that the device supports <a href="https://msdn.microsoft.com/b32375a9-0f34-474e-b3b9-7216b3d6665d">remote wakeup</a>. For Windows Vista and later versions of Windows, the framework supports USB selective suspend whether or not the device supports remote wakeup.</td>
-</tr>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-The <b>WDF_POWER_POLICY_S0_IDLE_CAPABILITIES</b> enumeration is used in the <a href="..\wdfdevice\ns-wdfdevice-_wdf_device_power_policy_idle_settings.md">WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS</a> structure.
+        The <b>WDF_POWER_POLICY_S0_IDLE_CAPABILITIES</b> enumeration is used in the <a href="..\wdfdevice\ns-wdfdevice-_wdf_device_power_policy_idle_settings.md">WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS</a> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -92,9 +98,9 @@ The <b>WDF_POWER_POLICY_S0_IDLE_CAPABILITIES</b> enumeration is used in the <a h
 | **Minimum UMDF version** | 1.11 |
 | **Header** | wudfddi_types.h (include Wdf.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\wdfdevice\ns-wdfdevice-_wdf_device_power_policy_idle_settings.md">WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS</a>
+        <a href="..\wdfdevice\ns-wdfdevice-_wdf_device_power_policy_idle_settings.md">WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS</a>
 
  
 

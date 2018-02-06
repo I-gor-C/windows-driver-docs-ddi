@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddndis._NDIS_OFFLOAD_PARAMETERS
-title : "_NDIS_OFFLOAD_PARAMETERS"
-author : windows-driver-content
-description : The NDIS_OFFLOAD_PARAMETERS structure specifies the current task offload configuration settings in response to an OID set request of OID_TCP_OFFLOAD_PARAMETERS.
-old-location : netvista\ndis_offload_parameters.htm
-old-project : netvista
-ms.assetid : ceb6647a-a43e-4ab1-88d4-49927103ecba
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NDIS_OFFLOAD_PARAMETERS_LSOV1_DISABLED, NDIS_OFFLOAD_PARAMETERS_LSOV2_DISABLED, netvista.ndis_offload_parameters, NDIS_OFFLOAD_PARAMETERS_LSOV2_ENABLED, PNDIS_OFFLOAD_PARAMETERS, NDIS_OFFLOAD_PARAMETERS_IPSECV2_ESP_ENABLED, NDIS_OFFLOAD_SET_ON, NDIS_OFFLOAD_PARAMETERS_REVISION_3, NDIS_OFFLOAD_PARAMETERS_IPSECV1_ESP_ENABLED, NDIS_OFFLOAD_PARAMETERS, NDIS_OFFLOAD_PARAMETERS structure [Network Drivers Starting with Windows Vista], NDIS_OFFLOAD_SET_OFF, NDIS_OFFLOAD_PARAMETERS_IPSECV1_DISABLED, NDIS_OFFLOAD_PARAMETERS_IPSECV2_DISABLED, PNDIS_OFFLOAD_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], NDIS_OFFLOAD_PARAMETERS_LSOV1_ENABLED, NDIS_OFFLOAD_PARAMETERS_RSC_ENABLED, *PNDIS_OFFLOAD_PARAMETERS, NDIS_OFFLOAD_PARAMETERS_IPSECV2_AH_AND_ESP_ENABLED, NDIS_OFFLOAD_SET_NO_CHANGE, tcpip_offload_ref_9ae50974-12a7-4c63-973e-27684a4f1474.xml, NDIS_OFFLOAD_PARAMETERS_IPSECV2_AH_ENABLED, ntddndis/PNDIS_OFFLOAD_PARAMETERS, NDIS_OFFLOAD_PARAMETERS_NO_CHANGE, NDIS_ENCAPSULATION_TYPE_GRE_MAC, _NDIS_OFFLOAD_PARAMETERS, NDIS_OFFLOAD_PARAMETERS_IPSECV1_AH_ENABLED, NDIS_OFFLOAD_PARAMETERS_REVISION_2, NDIS_OFFLOAD_PARAMETERS_RSC_DISABLED, NDIS_OFFLOAD_PARAMETERS_REVISION_1, NDIS_OFFLOAD_PARAMETERS_IPSECV1_AH_AND_ESP_ENABLED, ntddndis/NDIS_OFFLOAD_PARAMETERS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows Vista,Supported in NDIS 6.0 and later.
-req.target-min-winversvr : Windows Server 2008
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_OFFLOAD_PARAMETERS, *PNDIS_OFFLOAD_PARAMETERS
+UID: NS:ntddndis._NDIS_OFFLOAD_PARAMETERS
+title: "_NDIS_OFFLOAD_PARAMETERS"
+author: windows-driver-content
+description: The NDIS_OFFLOAD_PARAMETERS structure specifies the current task offload configuration settings in response to an OID set request of OID_TCP_OFFLOAD_PARAMETERS.
+old-location: netvista\ndis_offload_parameters.htm
+old-project: netvista
+ms.assetid: ceb6647a-a43e-4ab1-88d4-49927103ecba
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NDIS_OFFLOAD_PARAMETERS_LSOV1_DISABLED, NDIS_OFFLOAD_PARAMETERS_LSOV2_DISABLED, netvista.ndis_offload_parameters, NDIS_OFFLOAD_PARAMETERS_LSOV2_ENABLED, PNDIS_OFFLOAD_PARAMETERS, NDIS_OFFLOAD_PARAMETERS_IPSECV2_ESP_ENABLED, NDIS_OFFLOAD_SET_ON, NDIS_OFFLOAD_PARAMETERS_REVISION_3, NDIS_OFFLOAD_PARAMETERS_IPSECV1_ESP_ENABLED, NDIS_OFFLOAD_PARAMETERS, NDIS_OFFLOAD_PARAMETERS structure [Network Drivers Starting with Windows Vista], NDIS_OFFLOAD_SET_OFF, NDIS_OFFLOAD_PARAMETERS_IPSECV1_DISABLED, NDIS_OFFLOAD_PARAMETERS_IPSECV2_DISABLED, PNDIS_OFFLOAD_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], NDIS_OFFLOAD_PARAMETERS_LSOV1_ENABLED, NDIS_OFFLOAD_PARAMETERS_RSC_ENABLED, *PNDIS_OFFLOAD_PARAMETERS, NDIS_OFFLOAD_PARAMETERS_IPSECV2_AH_AND_ESP_ENABLED, NDIS_OFFLOAD_SET_NO_CHANGE, tcpip_offload_ref_9ae50974-12a7-4c63-973e-27684a4f1474.xml, NDIS_OFFLOAD_PARAMETERS_IPSECV2_AH_ENABLED, ntddndis/PNDIS_OFFLOAD_PARAMETERS, NDIS_OFFLOAD_PARAMETERS_NO_CHANGE, NDIS_ENCAPSULATION_TYPE_GRE_MAC, _NDIS_OFFLOAD_PARAMETERS, NDIS_OFFLOAD_PARAMETERS_IPSECV1_AH_ENABLED, NDIS_OFFLOAD_PARAMETERS_REVISION_2, NDIS_OFFLOAD_PARAMETERS_RSC_DISABLED, NDIS_OFFLOAD_PARAMETERS_REVISION_1, NDIS_OFFLOAD_PARAMETERS_IPSECV1_AH_AND_ESP_ENABLED, ntddndis/NDIS_OFFLOAD_PARAMETERS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows Vista,Supported in NDIS 6.0 and later.
+req.target-min-winversvr: Windows Server 2008
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddndis.h
+apiname:
+-	NDIS_OFFLOAD_PARAMETERS
+product: Windows
+targetos: Windows
+req.typenames: NDIS_OFFLOAD_PARAMETERS, *PNDIS_OFFLOAD_PARAMETERS
 ---
 
 # _NDIS_OFFLOAD_PARAMETERS structure

@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGK_DEVICEINFO
-title : "_DXGK_DEVICEINFO"
-author : windows-driver-content
-description : The DXGK_DEVICEINFO structure describes parameters that the Microsoft DirectX graphics kernel subsystem requires from the display miniport driver.
-old-location : display\dxgk_deviceinfo.htm
-old-project : display
-ms.assetid : 8d941bee-2473-43f8-a157-002708b247aa
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3dkmddi/DXGK_DEVICEINFO, DXGK_DEVICEINFO, DmStructs_9e654caa-e4d0-4f2f-bb1a-07bee305f8f6.xml, _DXGK_DEVICEINFO, DXGK_DEVICEINFO structure [Display Devices], display.dxgk_deviceinfo
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_DEVICEINFO
+UID: NS:d3dkmddi._DXGK_DEVICEINFO
+title: "_DXGK_DEVICEINFO"
+author: windows-driver-content
+description: The DXGK_DEVICEINFO structure describes parameters that the Microsoft DirectX graphics kernel subsystem requires from the display miniport driver.
+old-location: display\dxgk_deviceinfo.htm
+old-project: display
+ms.assetid: 8d941bee-2473-43f8-a157-002708b247aa
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3dkmddi/DXGK_DEVICEINFO, DXGK_DEVICEINFO, DmStructs_9e654caa-e4d0-4f2f-bb1a-07bee305f8f6.xml, _DXGK_DEVICEINFO, DXGK_DEVICEINFO structure [Display Devices], display.dxgk_deviceinfo
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DXGK_DEVICEINFO
+product: Windows
+targetos: Windows
+req.typenames: DXGK_DEVICEINFO
 ---
 
 # _DXGK_DEVICEINFO structure

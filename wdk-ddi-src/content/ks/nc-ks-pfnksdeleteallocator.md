@@ -1,41 +1,46 @@
 ---
-UID : NC:ks.PFNKSDELETEALLOCATOR
-title : PFNKSDELETEALLOCATOR
-author : windows-driver-content
-description : An AVStream minidriver's AVStrMiniDeleteAllocator routine deletes the allocator that is associated with a pin.
-old-location : stream\avstrminideleteallocator.htm
-old-project : stream
-ms.assetid : 867da1f8-061b-4fc1-8e20-3ebc43300f15
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.avstrminideleteallocator, AVStrMiniDeleteAllocator, AVStrMiniDeleteAllocator routine [Streaming Media Devices], AVStrMiniDeleteAllocator, PFNKSDELETEALLOCATOR, PFNKSDELETEALLOCATOR, ks/AVStrMiniDeleteAllocator, avstclbk_32e3c0fd-c437-45e0-8e5e-72f2f628ee51.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KEYWORDSELECTOR
+UID: NC:ks.PFNKSDELETEALLOCATOR
+title: PFNKSDELETEALLOCATOR
+author: windows-driver-content
+description: An AVStream minidriver's AVStrMiniDeleteAllocator routine deletes the allocator that is associated with a pin.
+old-location: stream\avstrminideleteallocator.htm
+old-project: stream
+ms.assetid: 867da1f8-061b-4fc1-8e20-3ebc43300f15
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.avstrminideleteallocator, AVStrMiniDeleteAllocator, AVStrMiniDeleteAllocator routine [Streaming Media Devices], AVStrMiniDeleteAllocator, PFNKSDELETEALLOCATOR, PFNKSDELETEALLOCATOR, ks/AVStrMiniDeleteAllocator, avstclbk_32e3c0fd-c437-45e0-8e5e-72f2f628ee51.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	ks.h
+apiname:
+-	AVStrMiniDeleteAllocator
+product: Windows
+targetos: Windows
+req.typenames: KEYWORDSELECTOR
 ---
 
 

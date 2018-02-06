@@ -1,41 +1,46 @@
 ---
-UID : NS:hidpi._HIDP_EXTENDED_ATTRIBUTES
-title : "_HIDP_EXTENDED_ATTRIBUTES"
-author : windows-driver-content
-description : The HIDP_EXTENDED_ATTRIBUTES structure contains information about the global items specified for a HID control that the HID parser did not recognize.
-old-location : hid\hidp_extended_attributes.htm
-old-project : hid
-ms.assetid : 03be8b22-2108-4a13-be1e-642373095ab5
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : "_HIDP_EXTENDED_ATTRIBUTES, hidstrct_7f0e134c-f292-4558-b805-02861407032f.xml, PHIDP_EXTENDED_ATTRIBUTES structure pointer [Human Input Devices], *PHIDP_EXTENDED_ATTRIBUTES, hidpi/HIDP_EXTENDED_ATTRIBUTES, PHIDP_EXTENDED_ATTRIBUTES, hid.hidp_extended_attributes, HIDP_EXTENDED_ATTRIBUTES structure [Human Input Devices], hidpi/PHIDP_EXTENDED_ATTRIBUTES, HIDP_EXTENDED_ATTRIBUTES"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : hidpi.h
-req.include-header : Hidpi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PHIDP_EXTENDED_ATTRIBUTES, HIDP_EXTENDED_ATTRIBUTES"
+UID: NS:hidpi._HIDP_EXTENDED_ATTRIBUTES
+title: "_HIDP_EXTENDED_ATTRIBUTES"
+author: windows-driver-content
+description: The HIDP_EXTENDED_ATTRIBUTES structure contains information about the global items specified for a HID control that the HID parser did not recognize.
+old-location: hid\hidp_extended_attributes.htm
+old-project: hid
+ms.assetid: 03be8b22-2108-4a13-be1e-642373095ab5
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: "_HIDP_EXTENDED_ATTRIBUTES, hidstrct_7f0e134c-f292-4558-b805-02861407032f.xml, PHIDP_EXTENDED_ATTRIBUTES structure pointer [Human Input Devices], *PHIDP_EXTENDED_ATTRIBUTES, hidpi/HIDP_EXTENDED_ATTRIBUTES, PHIDP_EXTENDED_ATTRIBUTES, hid.hidp_extended_attributes, HIDP_EXTENDED_ATTRIBUTES structure [Human Input Devices], hidpi/PHIDP_EXTENDED_ATTRIBUTES, HIDP_EXTENDED_ATTRIBUTES"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: hidpi.h
+req.include-header: Hidpi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hidpi.h
+apiname:
+-	HIDP_EXTENDED_ATTRIBUTES
+product: Windows
+targetos: Windows
+req.typenames: "*PHIDP_EXTENDED_ATTRIBUTES, HIDP_EXTENDED_ATTRIBUTES"
 ---
 
 # _HIDP_EXTENDED_ATTRIBUTES structure

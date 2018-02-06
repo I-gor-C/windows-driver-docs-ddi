@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3D11DDI_COPYSTRUCTURECOUNT
-title : PFND3D11DDI_COPYSTRUCTURECOUNT
-author : windows-driver-content
-description : The CopyStructureCount function copies the number of items in the filled portion (that is, the filled-size value) of an append buffer unordered access view (UAV) to an offset into a destination buffer.
-old-location : display\copystructurecount.htm
-old-project : display
-ms.assetid : 39f20ff3-859f-4933-8be0-e2bb7c05e7e1
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.copystructurecount, CopyStructureCount callback function [Display Devices], CopyStructureCount, PFND3D11DDI_COPYSTRUCTURECOUNT, PFND3D11DDI_COPYSTRUCTURECOUNT, d3d10umddi/CopyStructureCount, UserModeDisplayDriverDx11_Functions_b6bad9fd-b0b2-40fa-aa4a-664554984dcd.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : CopyStructureCount is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3D11DDI_COPYSTRUCTURECOUNT
+title: PFND3D11DDI_COPYSTRUCTURECOUNT
+author: windows-driver-content
+description: The CopyStructureCount function copies the number of items in the filled portion (that is, the filled-size value) of an append buffer unordered access view (UAV) to an offset into a destination buffer.
+old-location: display\copystructurecount.htm
+old-project: display
+ms.assetid: 39f20ff3-859f-4933-8be0-e2bb7c05e7e1
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.copystructurecount, CopyStructureCount callback function [Display Devices], CopyStructureCount, PFND3D11DDI_COPYSTRUCTURECOUNT, PFND3D11DDI_COPYSTRUCTURECOUNT, d3d10umddi/CopyStructureCount, UserModeDisplayDriverDx11_Functions_b6bad9fd-b0b2-40fa-aa4a-664554984dcd.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: CopyStructureCount is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	CopyStructureCount
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

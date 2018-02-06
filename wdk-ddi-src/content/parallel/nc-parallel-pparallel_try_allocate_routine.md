@@ -1,41 +1,46 @@
 ---
-UID : NC:parallel.PPARALLEL_TRY_ALLOCATE_ROUTINE
-title : PPARALLEL_TRY_ALLOCATE_ROUTINE
-author : windows-driver-content
-description : The PPARALLEL_TRY_ALLOCATE_ROUTINE-typed (ISR) callback routine attempts to allocate a parallel port at IRQL = DIRQL. The system-supplied function driver for parallel ports supplies this routine.
-old-location : parports\parallel_try_allocate_routine__isr_.htm
-old-project : parports
-ms.assetid : bc69e347-8ef7-4a80-9ef4-bbc03f5586c4
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : parports.parallel_try_allocate_routine__isr_, ParallelTryAllocateRoutine callback function [Parallel Ports], ParallelTryAllocateRoutine, PPARALLEL_TRY_ALLOCATE_ROUTINE, PPARALLEL_TRY_ALLOCATE_ROUTINE, parallel/ParallelTryAllocateRoutine, cisspd_737cb583-bcc9-46e9-915b-e073da2c11bf.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : parallel.h
-req.include-header : Parallel.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : DIRQL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RILGBATOKEN, *LPRILGBATOKEN
+UID: NC:parallel.PPARALLEL_TRY_ALLOCATE_ROUTINE
+title: PPARALLEL_TRY_ALLOCATE_ROUTINE
+author: windows-driver-content
+description: The PPARALLEL_TRY_ALLOCATE_ROUTINE-typed (ISR) callback routine attempts to allocate a parallel port at IRQL = DIRQL. The system-supplied function driver for parallel ports supplies this routine.
+old-location: parports\parallel_try_allocate_routine__isr_.htm
+old-project: parports
+ms.assetid: bc69e347-8ef7-4a80-9ef4-bbc03f5586c4
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: parports.parallel_try_allocate_routine__isr_, ParallelTryAllocateRoutine callback function [Parallel Ports], ParallelTryAllocateRoutine, PPARALLEL_TRY_ALLOCATE_ROUTINE, PPARALLEL_TRY_ALLOCATE_ROUTINE, parallel/ParallelTryAllocateRoutine, cisspd_737cb583-bcc9-46e9-915b-e073da2c11bf.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: parallel.h
+req.include-header: Parallel.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: DIRQL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	parallel.h
+apiname:
+-	ParallelTryAllocateRoutine
+product: Windows
+targetos: Windows
+req.typenames: RILGBATOKEN, *LPRILGBATOKEN
 ---
 
 

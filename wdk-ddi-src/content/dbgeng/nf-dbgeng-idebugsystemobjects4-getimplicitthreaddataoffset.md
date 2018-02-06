@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugSystemObjects4.GetImplicitThreadDataOffset
-title : IDebugSystemObjects4::GetImplicitThreadDataOffset method
-author : windows-driver-content
-description : The GetImplicitThreadDataOffset method returns the implicit thread for the current process.
-old-location : debugger\getimplicitthreaddataoffset.htm
-old-project : debugger
-ms.assetid : fe7a1afe-dc87-412c-9e35-4a1af05f9474
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : GetImplicitThreadDataOffset method [Windows Debugging], IDebugSystemObjects3 interface, IDebugSystemObjects_fd957a10-62ec-464c-b5d0-c1b36a13013f.xml, GetImplicitThreadDataOffset method [Windows Debugging], IDebugSystemObjects4 interface, GetImplicitThreadDataOffset, IDebugSystemObjects2 interface [Windows Debugging], GetImplicitThreadDataOffset method, IDebugSystemObjects4 interface [Windows Debugging], GetImplicitThreadDataOffset method, IDebugSystemObjects3 interface [Windows Debugging], GetImplicitThreadDataOffset method, dbgeng/IDebugSystemObjects2::GetImplicitThreadDataOffset, GetImplicitThreadDataOffset method [Windows Debugging], IDebugSystemObjects3::GetImplicitThreadDataOffset, debugger.getimplicitthreaddataoffset, GetImplicitThreadDataOffset method [Windows Debugging], IDebugSystemObjects2 interface, dbgeng/IDebugSystemObjects4::GetImplicitThreadDataOffset, dbgeng/IDebugSystemObjects3::GetImplicitThreadDataOffset, IDebugSystemObjects4::GetImplicitThreadDataOffset, IDebugSystemObjects2::GetImplicitThreadDataOffset, IDebugSystemObjects4
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSystemObjects4.GetImplicitThreadDataOffset
+title: IDebugSystemObjects4::GetImplicitThreadDataOffset method
+author: windows-driver-content
+description: The GetImplicitThreadDataOffset method returns the implicit thread for the current process.
+old-location: debugger\getimplicitthreaddataoffset.htm
+old-project: debugger
+ms.assetid: fe7a1afe-dc87-412c-9e35-4a1af05f9474
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: GetImplicitThreadDataOffset method [Windows Debugging], IDebugSystemObjects3 interface, IDebugSystemObjects_fd957a10-62ec-464c-b5d0-c1b36a13013f.xml, GetImplicitThreadDataOffset method [Windows Debugging], IDebugSystemObjects4 interface, GetImplicitThreadDataOffset, IDebugSystemObjects2 interface [Windows Debugging], GetImplicitThreadDataOffset method, IDebugSystemObjects4 interface [Windows Debugging], GetImplicitThreadDataOffset method, IDebugSystemObjects3 interface [Windows Debugging], GetImplicitThreadDataOffset method, dbgeng/IDebugSystemObjects2::GetImplicitThreadDataOffset, GetImplicitThreadDataOffset method [Windows Debugging], IDebugSystemObjects3::GetImplicitThreadDataOffset, debugger.getimplicitthreaddataoffset, GetImplicitThreadDataOffset method [Windows Debugging], IDebugSystemObjects2 interface, dbgeng/IDebugSystemObjects4::GetImplicitThreadDataOffset, dbgeng/IDebugSystemObjects3::GetImplicitThreadDataOffset, IDebugSystemObjects4::GetImplicitThreadDataOffset, IDebugSystemObjects2::GetImplicitThreadDataOffset, IDebugSystemObjects4
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugSystemObjects2.GetImplicitThreadDataOffset
+-	IDebugSystemObjects3.GetImplicitThreadDataOffset
+-	IDebugSystemObjects4.GetImplicitThreadDataOffset
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NC:netdispumdddi.PFN_HANDLE_KMD_MESSAGE
-title : PFN_HANDLE_KMD_MESSAGE
-author : windows-driver-content
-description : Called by the operating system to handle the asynchronous kernel-mode message that the Miracast user-mode driver receives when the display miniport driver calls the DxgkCbMiracastSendMessage function.
-old-location : display\handlekernelmodemessage.htm
-old-project : display
-ms.assetid : 9DE4F3B0-915A-4C66-85F8-AE248B8471B5
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.handlekernelmodemessage, HandleKernelModeMessage callback function [Display Devices], HandleKernelModeMessage, PFN_HANDLE_KMD_MESSAGE, PFN_HANDLE_KMD_MESSAGE, netdispumdddi/HandleKernelModeMessage
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : netdispumdddi.h
-req.include-header : Netdispumdddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8.1
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDK_SRQ_DISPATCH
+UID: NC:netdispumdddi.PFN_HANDLE_KMD_MESSAGE
+title: PFN_HANDLE_KMD_MESSAGE
+author: windows-driver-content
+description: Called by the operating system to handle the asynchronous kernel-mode message that the Miracast user-mode driver receives when the display miniport driver calls the DxgkCbMiracastSendMessage function.
+old-location: display\handlekernelmodemessage.htm
+old-project: display
+ms.assetid: 9DE4F3B0-915A-4C66-85F8-AE248B8471B5
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.handlekernelmodemessage, HandleKernelModeMessage callback function [Display Devices], HandleKernelModeMessage, PFN_HANDLE_KMD_MESSAGE, PFN_HANDLE_KMD_MESSAGE, netdispumdddi/HandleKernelModeMessage
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: netdispumdddi.h
+req.include-header: Netdispumdddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8.1
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Netdispumdddi.h
+apiname:
+-	HandleKernelModeMessage
+product: Windows
+targetos: Windows
+req.typenames: NDK_SRQ_DISPATCH
 ---
 
 

@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsMapModuleName
-title : KsMapModuleName function
-author : windows-driver-content
-description : The KsMapModuleName function returns the image name and resource identifier that corresponds to the PhysicalDeviceObject and ModuleName parameters.
-old-location : stream\ksmapmodulename.htm
-old-project : stream
-ms.assetid : 3223a1bb-ab6c-45d7-9f9a-367a3aa7d465
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ksfunc_76aec7fa-5e31-46d7-b94d-d7bccac7c3cd.xml, KsMapModuleName function [Streaming Media Devices], stream.ksmapmodulename, ks/KsMapModuleName, KsMapModuleName
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsMapModuleName
+title: KsMapModuleName function
+author: windows-driver-content
+description: The KsMapModuleName function returns the image name and resource identifier that corresponds to the PhysicalDeviceObject and ModuleName parameters.
+old-location: stream\ksmapmodulename.htm
+old-project: stream
+ms.assetid: 3223a1bb-ab6c-45d7-9f9a-367a3aa7d465
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ksfunc_76aec7fa-5e31-46d7-b94d-d7bccac7c3cd.xml, KsMapModuleName function [Streaming Media Devices], stream.ksmapmodulename, ks/KsMapModuleName, KsMapModuleName
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsMapModuleName
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:pep_x._PEP_PPM_IDLE_SELECT
-title : "_PEP_PPM_IDLE_SELECT"
-author : windows-driver-content
-description : The PEP_PPM_IDLE_SELECT structure describes the most energy-efficient idle state that the processor can enter and still satisfy the constraints specified by the operating system.
-old-location : kernel\pep_ppm_idle_select.htm
-old-project : kernel
-ms.assetid : 4783CB44-3A55-4C7C-8EA2-1A72317CC955
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : "_PEP_PPM_IDLE_SELECT, PEP_PPM_IDLE_SELECT structure [Kernel-Mode Driver Architecture], PEP_PPM_IDLE_SELECT, PPEP_PPM_IDLE_SELECT structure pointer [Kernel-Mode Driver Architecture], PPEP_PPM_IDLE_SELECT, pep_x/PEP_PPM_IDLE_SELECT, *PPEP_PPM_IDLE_SELECT, kernel.pep_ppm_idle_select, pep_x/PPEP_PPM_IDLE_SELECT"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : pep_x.h
-req.include-header : Pepfx.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with Windows 10.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PEP_PPM_IDLE_SELECT, *PPEP_PPM_IDLE_SELECT
+UID: NS:pep_x._PEP_PPM_IDLE_SELECT
+title: "_PEP_PPM_IDLE_SELECT"
+author: windows-driver-content
+description: The PEP_PPM_IDLE_SELECT structure describes the most energy-efficient idle state that the processor can enter and still satisfy the constraints specified by the operating system.
+old-location: kernel\pep_ppm_idle_select.htm
+old-project: kernel
+ms.assetid: 4783CB44-3A55-4C7C-8EA2-1A72317CC955
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: "_PEP_PPM_IDLE_SELECT, PEP_PPM_IDLE_SELECT structure [Kernel-Mode Driver Architecture], PEP_PPM_IDLE_SELECT, PPEP_PPM_IDLE_SELECT structure pointer [Kernel-Mode Driver Architecture], PPEP_PPM_IDLE_SELECT, pep_x/PEP_PPM_IDLE_SELECT, *PPEP_PPM_IDLE_SELECT, kernel.pep_ppm_idle_select, pep_x/PPEP_PPM_IDLE_SELECT"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: pep_x.h
+req.include-header: Pepfx.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows 10.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	pep_x.h
+apiname:
+-	PEP_PPM_IDLE_SELECT
+product: Windows
+targetos: Windows
+req.typenames: PEP_PPM_IDLE_SELECT, *PPEP_PPM_IDLE_SELECT
 ---
 
 # _PEP_PPM_IDLE_SELECT structure

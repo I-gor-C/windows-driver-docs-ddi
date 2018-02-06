@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.FsRtlIsAnsiCharacterLegalNtfs
-title : FsRtlIsAnsiCharacterLegalNtfs macro
-author : windows-driver-content
-description : The FsRtlIsAnsiCharacterLegalNtfs macro determines whether an ANSI character is legal for NTFS file names.
-old-location : ifsk\fsrtlisansicharacterlegalntfs.htm
-old-project : ifsk
-ms.assetid : 05d03799-752d-4f59-b96e-1a6d91bee8c4
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FsRtlIsAnsiCharacterLegalNtfs function [Installable File System Drivers], ifsk.fsrtlisansicharacterlegalntfs, fsrtlref_9150101b-7411-4de2-afd5-0b928ed0e6b1.xml, ntifs/FsRtlIsAnsiCharacterLegalNtfs, FsRtlIsAnsiCharacterLegalNtfs
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : macro
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : ntifs.h
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.FsRtlIsAnsiCharacterLegalNtfs
+title: FsRtlIsAnsiCharacterLegalNtfs macro
+author: windows-driver-content
+description: The FsRtlIsAnsiCharacterLegalNtfs macro determines whether an ANSI character is legal for NTFS file names.
+old-location: ifsk\fsrtlisansicharacterlegalntfs.htm
+old-project: ifsk
+ms.assetid: 05d03799-752d-4f59-b96e-1a6d91bee8c4
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FsRtlIsAnsiCharacterLegalNtfs function [Installable File System Drivers], ifsk.fsrtlisansicharacterlegalntfs, fsrtlref_9150101b-7411-4de2-afd5-0b928ed0e6b1.xml, ntifs/FsRtlIsAnsiCharacterLegalNtfs, FsRtlIsAnsiCharacterLegalNtfs
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: macro
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: ntifs.h
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntifs.h
+apiname:
+-	FsRtlIsAnsiCharacterLegalNtfs
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

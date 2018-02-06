@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dkmddi.DXGKDDI_MONITORFREQUENCYRANGESET_RELEASEFREQUENCYRANGEINFO
-title : DXGKDDI_MONITORFREQUENCYRANGESET_RELEASEFREQUENCYRANGEINFO
-author : windows-driver-content
-description : The pfnReleaseFrequencyRangeInfo function releases a D3DKMDT_MONITOR_FREQUENCY_RANGE structure that the VidPN manager previously provided to the display miniport driver.
-old-location : display\dxgk_monitorfrequencyrangeset_interface_pfnreleasefrequencyrangeinfo.htm
-old-project : display
-ms.assetid : 54e3d08b-5f0d-4d98-9b93-e2aec96d3362
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgk_monitorfrequencyrangeset_interface_pfnreleasefrequencyrangeinfo, pfnReleaseFrequencyRangeInfo callback function [Display Devices], pfnReleaseFrequencyRangeInfo, DXGKDDI_MONITORFREQUENCYRANGESET_RELEASEFREQUENCYRANGEINFO, DXGKDDI_MONITORFREQUENCYRANGESET_RELEASEFREQUENCYRANGEINFO, d3dkmddi/pfnReleaseFrequencyRangeInfo, VidPnFunctions_3fa4c08c-827e-43ac-bcf2-68293d94cb79.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
+UID: NC:d3dkmddi.DXGKDDI_MONITORFREQUENCYRANGESET_RELEASEFREQUENCYRANGEINFO
+title: DXGKDDI_MONITORFREQUENCYRANGESET_RELEASEFREQUENCYRANGEINFO
+author: windows-driver-content
+description: The pfnReleaseFrequencyRangeInfo function releases a D3DKMDT_MONITOR_FREQUENCY_RANGE structure that the VidPN manager previously provided to the display miniport driver.
+old-location: display\dxgk_monitorfrequencyrangeset_interface_pfnreleasefrequencyrangeinfo.htm
+old-project: display
+ms.assetid: 54e3d08b-5f0d-4d98-9b93-e2aec96d3362
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgk_monitorfrequencyrangeset_interface_pfnreleasefrequencyrangeinfo, pfnReleaseFrequencyRangeInfo callback function [Display Devices], pfnReleaseFrequencyRangeInfo, DXGKDDI_MONITORFREQUENCYRANGESET_RELEASEFREQUENCYRANGEINFO, DXGKDDI_MONITORFREQUENCYRANGESET_RELEASEFREQUENCYRANGEINFO, d3dkmddi/pfnReleaseFrequencyRangeInfo, VidPnFunctions_3fa4c08c-827e-43ac-bcf2-68293d94cb79.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	pfnReleaseFrequencyRangeInfo
+product: Windows
+targetos: Windows
+req.typenames: DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
 

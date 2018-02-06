@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.MmDoesFileHaveUserWritableReferences
-title : MmDoesFileHaveUserWritableReferences function
-author : windows-driver-content
-description : The MmDoesFileHaveUserWritableReferences function returns the number of writable references for a file object.
-old-location : ifsk\mmdoesfilehaveuserwritablereferences.htm
-old-project : ifsk
-ms.assetid : b88afd6e-3a0a-471e-a874-db8fc3175d61
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : MmDoesFileHaveUserWritableReferences function [Installable File System Drivers], ifsk.mmdoesfilehaveuserwritablereferences, MmDoesFileHaveUserWritableReferences, mmref_fb87e0fa-60db-498e-8a17-a1bd366c3df6.xml, ntifs/MmDoesFileHaveUserWritableReferences
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Fltkernel.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later versions of Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.MmDoesFileHaveUserWritableReferences
+title: MmDoesFileHaveUserWritableReferences function
+author: windows-driver-content
+description: The MmDoesFileHaveUserWritableReferences function returns the number of writable references for a file object.
+old-location: ifsk\mmdoesfilehaveuserwritablereferences.htm
+old-project: ifsk
+ms.assetid: b88afd6e-3a0a-471e-a874-db8fc3175d61
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: MmDoesFileHaveUserWritableReferences function [Installable File System Drivers], ifsk.mmdoesfilehaveuserwritablereferences, MmDoesFileHaveUserWritableReferences, mmref_fb87e0fa-60db-498e-8a17-a1bd366c3df6.xml, ntifs/MmDoesFileHaveUserWritableReferences
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Fltkernel.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later versions of Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	MmDoesFileHaveUserWritableReferences
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

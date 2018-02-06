@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.CmCallbackGetKeyObjectID
-title : CmCallbackGetKeyObjectID function
-author : windows-driver-content
-description : The CmCallbackGetKeyObjectID routine retrieves the unique identifier and object name that are associated with a specified registry key object.
-old-location : kernel\cmcallbackgetkeyobjectid.htm
-old-project : kernel
-ms.assetid : e8db3009-7941-4fcc-a888-22c887bf59d5
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.cmcallbackgetkeyobjectid, CmCallbackGetKeyObjectID, wdm/CmCallbackGetKeyObjectID, CmCallbackGetKeyObjectID routine [Kernel-Mode Driver Architecture], ConfigMgrRef_dbab8a69-78b4-4ae8-8409-e62e62ea8b9e.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.CmCallbackGetKeyObjectID
+title: CmCallbackGetKeyObjectID function
+author: windows-driver-content
+description: The CmCallbackGetKeyObjectID routine retrieves the unique identifier and object name that are associated with a specified registry key object.
+old-location: kernel\cmcallbackgetkeyobjectid.htm
+old-project: kernel
+ms.assetid: e8db3009-7941-4fcc-a888-22c887bf59d5
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.cmcallbackgetkeyobjectid, CmCallbackGetKeyObjectID, wdm/CmCallbackGetKeyObjectID, CmCallbackGetKeyObjectID routine [Kernel-Mode Driver Architecture], ConfigMgrRef_dbab8a69-78b4-4ae8-8409-e62e62ea8b9e.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	CmCallbackGetKeyObjectID
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

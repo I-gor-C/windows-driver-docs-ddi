@@ -1,41 +1,46 @@
 ---
-UID : NF:fcb.RxFinalizeSrvCall
-title : RxFinalizeSrvCall function
-author : windows-driver-content
-description : RxFinalizeSrvCall finalizes the given SRV_CALL structure. The caller must have an exclusive lock on the netname table associated with the device object.
-old-location : ifsk\rxfinalizesrvcall.htm
-old-project : ifsk
-ms.assetid : 293bb629-ac31-4ae3-bba3-b06812e9e6cb
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.rxfinalizesrvcall, rxref_0560ef8e-f9e2-47ba-b78b-c3298e66238e.xml, fcb/RxFinalizeSrvCall, RxFinalizeSrvCall function [Installable File System Drivers], RxFinalizeSrvCall
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fcb.h
-req.include-header : Mrxfcb.h, Fcb.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FA_ENTRY, *PFA_ENTRY
+UID: NF:fcb.RxFinalizeSrvCall
+title: RxFinalizeSrvCall function
+author: windows-driver-content
+description: RxFinalizeSrvCall finalizes the given SRV_CALL structure. The caller must have an exclusive lock on the netname table associated with the device object.
+old-location: ifsk\rxfinalizesrvcall.htm
+old-project: ifsk
+ms.assetid: 293bb629-ac31-4ae3-bba3-b06812e9e6cb
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.rxfinalizesrvcall, rxref_0560ef8e-f9e2-47ba-b78b-c3298e66238e.xml, fcb/RxFinalizeSrvCall, RxFinalizeSrvCall function [Installable File System Drivers], RxFinalizeSrvCall
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fcb.h
+req.include-header: Mrxfcb.h, Fcb.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	fcb.h
+apiname:
+-	RxFinalizeSrvCall
+product: Windows
+targetos: Windows
+req.typenames: FA_ENTRY, *PFA_ENTRY
 ---
 
 

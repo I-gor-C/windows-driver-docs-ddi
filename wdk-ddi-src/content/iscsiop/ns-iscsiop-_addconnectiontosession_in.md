@@ -1,41 +1,46 @@
 ---
-UID : NS:iscsiop._AddConnectionToSession_IN
-title : "_AddConnectionToSession_IN"
-author : windows-driver-content
-description : The AddConnectionToSession_IN structure holds input data for the AddConnectionToSession method, which is used to add a new connection to an already existing session.
-old-location : storage\addconnectiontosession_in.htm
-old-project : storage
-ms.assetid : 7fcb0b87-1f9e-4956-a59a-cd83fa04e5db
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.addconnectiontosession_in, structs-iSCSI_4e238073-ca54-4da3-afcc-4b45e4da243f.xml, _AddConnectionToSession_IN, PAddConnectionToSession_IN, AddConnectionToSession_IN structure [Storage Devices], *PAddConnectionToSession_IN, PAddConnectionToSession_IN structure pointer [Storage Devices], iscsiop/PAddConnectionToSession_IN, AddConnectionToSession_IN, iscsiop/AddConnectionToSession_IN
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : iscsiop.h
-req.include-header : Iscsiop.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PAddConnectionToSession_IN, AddConnectionToSession_IN"
+UID: NS:iscsiop._AddConnectionToSession_IN
+title: "_AddConnectionToSession_IN"
+author: windows-driver-content
+description: The AddConnectionToSession_IN structure holds input data for the AddConnectionToSession method, which is used to add a new connection to an already existing session.
+old-location: storage\addconnectiontosession_in.htm
+old-project: storage
+ms.assetid: 7fcb0b87-1f9e-4956-a59a-cd83fa04e5db
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.addconnectiontosession_in, structs-iSCSI_4e238073-ca54-4da3-afcc-4b45e4da243f.xml, _AddConnectionToSession_IN, PAddConnectionToSession_IN, AddConnectionToSession_IN structure [Storage Devices], *PAddConnectionToSession_IN, PAddConnectionToSession_IN structure pointer [Storage Devices], iscsiop/PAddConnectionToSession_IN, AddConnectionToSession_IN, iscsiop/AddConnectionToSession_IN
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: iscsiop.h
+req.include-header: Iscsiop.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	iscsiop.h
+apiname:
+-	AddConnectionToSession_IN
+product: Windows
+targetos: Windows
+req.typenames: "*PAddConnectionToSession_IN, AddConnectionToSession_IN"
 ---
 
 # _AddConnectionToSession_IN structure

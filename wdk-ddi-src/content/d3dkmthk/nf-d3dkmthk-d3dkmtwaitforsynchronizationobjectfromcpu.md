@@ -1,41 +1,49 @@
 ---
-UID : NF:d3dkmthk.D3DKMTWaitForSynchronizationObjectFromCpu
-title : D3DKMTWaitForSynchronizationObjectFromCpu function
-author : windows-driver-content
-description : D3DKMTWaitForSynchronizationObjectFromCpu waits for a monitored fence to reach a certain value.
-old-location : display\d3dkmtwaitforsynchronizationobjectfromcpu.htm
-old-project : display
-ms.assetid : C65880F7-DFCA-4DF9-ABF1-95A82D1D43ED
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.d3dkmtwaitforsynchronizationobjectfromcpu, D3DKMTWaitForSynchronizationObjectFromCpu function [Display Devices], D3DKMTWaitForSynchronizationObjectFromCpu, d3dkmthk/D3DKMTWaitForSynchronizationObjectFromCpu
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Universal
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : GDI32.lib
-req.dll : GDI32.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_DRIVERVERSION
+UID: NF:d3dkmthk.D3DKMTWaitForSynchronizationObjectFromCpu
+title: D3DKMTWaitForSynchronizationObjectFromCpu function
+author: windows-driver-content
+description: D3DKMTWaitForSynchronizationObjectFromCpu waits for a monitored fence to reach a certain value.
+old-location: display\d3dkmtwaitforsynchronizationobjectfromcpu.htm
+old-project: display
+ms.assetid: C65880F7-DFCA-4DF9-ABF1-95A82D1D43ED
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.d3dkmtwaitforsynchronizationobjectfromcpu, D3DKMTWaitForSynchronizationObjectFromCpu function [Display Devices], D3DKMTWaitForSynchronizationObjectFromCpu, d3dkmthk/D3DKMTWaitForSynchronizationObjectFromCpu
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Universal
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: GDI32.lib
+req.dll: GDI32.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	GDI32.dll
+-	API-MS-Win-DX-D3DKMT-L1-1-1.dll
+-	GDI32.dll
+-	API-MS-Win-DX-D3DKMT-L1-1-2.dll
+apiname:
+-	D3DKMTWaitForSynchronizationObjectFromCpu
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_DRIVERVERSION
 ---
 
 

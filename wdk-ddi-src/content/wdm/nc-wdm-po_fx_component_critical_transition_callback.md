@@ -1,42 +1,47 @@
 ---
-UID : NC:wdm.PO_FX_COMPONENT_CRITICAL_TRANSITION_CALLBACK
-title : PO_FX_COMPONENT_CRITICAL_TRANSITION_CALLBACK
-author : windows-driver-content
-description : The ComponentCriticalTransitionCallback callback routine handles a transition of the specified component between the F0 (fully on) and low-power Fx component power states.
-old-location : kernel\componentcriticaltransitioncallback.htm
-old-project : kernel
-ms.assetid : 6E551951-E903-4970-8B30-6780C9FF4FC6
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.componentcriticaltransitioncallback, ComponentCriticalTransitionCallback routine [Kernel-Mode Driver Architecture], ComponentCriticalTransitionCallback, PO_FX_COMPONENT_CRITICAL_TRANSITION_CALLBACK, PO_FX_COMPONENT_CRITICAL_TRANSITION_CALLBACK, wdm/ComponentCriticalTransitionCallback
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdm.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with Windows 10.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : TBD
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
-req.product : Windows 10 or later.
+UID: NC:wdm.PO_FX_COMPONENT_CRITICAL_TRANSITION_CALLBACK
+title: PO_FX_COMPONENT_CRITICAL_TRANSITION_CALLBACK
+author: windows-driver-content
+description: The ComponentCriticalTransitionCallback callback routine handles a transition of the specified component between the F0 (fully on) and low-power Fx component power states.
+old-location: kernel\componentcriticaltransitioncallback.htm
+old-project: kernel
+ms.assetid: 6E551951-E903-4970-8B30-6780C9FF4FC6
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.componentcriticaltransitioncallback, ComponentCriticalTransitionCallback routine [Kernel-Mode Driver Architecture], ComponentCriticalTransitionCallback, PO_FX_COMPONENT_CRITICAL_TRANSITION_CALLBACK, PO_FX_COMPONENT_CRITICAL_TRANSITION_CALLBACK, wdm/ComponentCriticalTransitionCallback
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdm.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows 10.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: TBD
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Wdm.h
+apiname:
+-	ComponentCriticalTransitionCallback
+product: Windows
+targetos: Windows
+req.typenames: WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+req.product: Windows 10 or later.
 ---
 
 

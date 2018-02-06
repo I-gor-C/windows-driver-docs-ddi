@@ -1,42 +1,47 @@
 ---
-UID : NS:wdm._PCI_EXPRESS_ENHANCED_CAPABILITY_HEADER
-title : "_PCI_EXPRESS_ENHANCED_CAPABILITY_HEADER"
-author : windows-driver-content
-description : The PCI_EXPRESS_ENHANCED_CAPABILITY_HEADER structure describes the header for a PCI Express (PCIe) extended capability structure.
-old-location : pci\pci_express_enhanced_capability_header.htm
-old-project : PCI
-ms.assetid : bc90a153-e6ff-4736-b625-1260a84bb157
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : wdm/PCI_EXPRESS_ENHANCED_CAPABILITY_HEADER, PPCI_EXPRESS_ENHANCED_CAPABILITY_HEADER structure pointer [Buses], PCI_EXPRESS_ENHANCED_CAPABILITY_HEADER structure [Buses], PCI_EXPRESS_ENHANCED_CAPABILITY_HEADER, wdm/PPCI_EXPRESS_ENHANCED_CAPABILITY_HEADER, PPCI_EXPRESS_ENHANCED_CAPABILITY_HEADER, pci_struct_50b450a2-7198-4021-947b-2c276ca9b274.xml, _PCI_EXPRESS_ENHANCED_CAPABILITY_HEADER, *PPCI_EXPRESS_ENHANCED_CAPABILITY_HEADER, PCI.pci_express_enhanced_capability_header
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : Ntddk.h, Wdm.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PCI_EXPRESS_ENHANCED_CAPABILITY_HEADER, *PPCI_EXPRESS_ENHANCED_CAPABILITY_HEADER
-req.product : Windows 10 or later.
+UID: NS:wdm._PCI_EXPRESS_ENHANCED_CAPABILITY_HEADER
+title: "_PCI_EXPRESS_ENHANCED_CAPABILITY_HEADER"
+author: windows-driver-content
+description: The PCI_EXPRESS_ENHANCED_CAPABILITY_HEADER structure describes the header for a PCI Express (PCIe) extended capability structure.
+old-location: pci\pci_express_enhanced_capability_header.htm
+old-project: PCI
+ms.assetid: bc90a153-e6ff-4736-b625-1260a84bb157
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: wdm/PCI_EXPRESS_ENHANCED_CAPABILITY_HEADER, PPCI_EXPRESS_ENHANCED_CAPABILITY_HEADER structure pointer [Buses], PCI_EXPRESS_ENHANCED_CAPABILITY_HEADER structure [Buses], PCI_EXPRESS_ENHANCED_CAPABILITY_HEADER, wdm/PPCI_EXPRESS_ENHANCED_CAPABILITY_HEADER, PPCI_EXPRESS_ENHANCED_CAPABILITY_HEADER, pci_struct_50b450a2-7198-4021-947b-2c276ca9b274.xml, _PCI_EXPRESS_ENHANCED_CAPABILITY_HEADER, *PPCI_EXPRESS_ENHANCED_CAPABILITY_HEADER, PCI.pci_express_enhanced_capability_header
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: Ntddk.h, Wdm.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdm.h
+apiname:
+-	PCI_EXPRESS_ENHANCED_CAPABILITY_HEADER
+product: Windows
+targetos: Windows
+req.typenames: PCI_EXPRESS_ENHANCED_CAPABILITY_HEADER, *PPCI_EXPRESS_ENHANCED_CAPABILITY_HEADER
+req.product: Windows 10 or later.
 ---
 
 # _PCI_EXPRESS_ENHANCED_CAPABILITY_HEADER structure

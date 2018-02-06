@@ -1,41 +1,46 @@
 ---
-UID : NE:bthxddi._BTHX_HCI_PACKET_TYPE
-title : "_BTHX_HCI_PACKET_TYPE"
-author : windows-driver-content
-description : The BTHX_HCI_PACKET_TYPE enumeration lists the different types of packets being sent from the Bluetooth stack to the transport driver.
-old-location : bltooth\bthx_hci_packet_type.htm
-old-project : bltooth
-ms.assetid : 87265ABB-C2B7-468F-83FC-411AD9769517
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : "_BTHX_HCI_PACKET_TYPE, HciPacketAclData, HciPacketCommand, bthxddi/BTHX_HCI_PACKET_TYPE, BTHX_HCI_PACKET_TYPE enumeration [Bluetooth Devices], bthxddi/HciPacketEvent, BTHX_HCI_PACKET_TYPE, HciPacketEvent, bthxddi/HciPacketAclData, bthxddi/HciPacketCommand, bltooth.bthx_hci_packet_type"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : bthxddi.h
-req.include-header : BthXDDI.h
-req.target-type : Windows
-req.target-min-winverclnt : Versions:\_Supported starting with  Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= PASSIVE_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : BTHX_HCI_PACKET_TYPE
+UID: NE:bthxddi._BTHX_HCI_PACKET_TYPE
+title: "_BTHX_HCI_PACKET_TYPE"
+author: windows-driver-content
+description: The BTHX_HCI_PACKET_TYPE enumeration lists the different types of packets being sent from the Bluetooth stack to the transport driver.
+old-location: bltooth\bthx_hci_packet_type.htm
+old-project: bltooth
+ms.assetid: 87265ABB-C2B7-468F-83FC-411AD9769517
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: "_BTHX_HCI_PACKET_TYPE, HciPacketAclData, HciPacketCommand, bthxddi/BTHX_HCI_PACKET_TYPE, BTHX_HCI_PACKET_TYPE enumeration [Bluetooth Devices], bthxddi/HciPacketEvent, BTHX_HCI_PACKET_TYPE, HciPacketEvent, bthxddi/HciPacketAclData, bthxddi/HciPacketCommand, bltooth.bthx_hci_packet_type"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: bthxddi.h
+req.include-header: BthXDDI.h
+req.target-type: Windows
+req.target-min-winverclnt: Versions:\_Supported starting with  Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= PASSIVE_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	BthXDDI.h
+apiname:
+-	BTHX_HCI_PACKET_TYPE
+product: Windows
+targetos: Windows
+req.typenames: BTHX_HCI_PACKET_TYPE
 ---
 
 # _BTHX_HCI_PACKET_TYPE Enumeration
@@ -53,26 +58,26 @@ typedef enum _BTHX_HCI_PACKET_TYPE {
 ## Constants
 
 <table>
-
-<tr>
-<td>HciPacketAclData</td>
-<td>The packet represents ACL data.</td>
-</tr>
-
-<tr>
-<td>HciPacketCommand</td>
-<td>The packet represents a command.</td>
-</tr>
-
-<tr>
-<td>HciPacketEvent</td>
-<td>The packet represents an event.</td>
-</tr>
+            
+                <tr>
+                    <td>HciPacketAclData</td>
+                    <td>The packet represents ACL data.</td>
+                </tr>
+            
+                <tr>
+                    <td>HciPacketCommand</td>
+                    <td>The packet represents a command.</td>
+                </tr>
+            
+                <tr>
+                    <td>HciPacketEvent</td>
+                    <td>The packet represents an event.</td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-The IOCTL_BTHX_HCI_READ and IOCTL_BTHX_HCI_WRITE IOCTLs are used to read/write data to/from the transport driver. The BTHX_HCI_PACKET_TYPE enumeration is used to specify with which type of packet the read/write is associated.
+        The IOCTL_BTHX_HCI_READ and IOCTL_BTHX_HCI_WRITE IOCTLs are used to read/write data to/from the transport driver. The BTHX_HCI_PACKET_TYPE enumeration is used to specify with which type of packet the read/write is associated.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -80,9 +85,9 @@ The IOCTL_BTHX_HCI_READ and IOCTL_BTHX_HCI_WRITE IOCTLs are used to read/write d
 | **Windows version** | Versions:\_Supported starting with  Windows 8. Versions:\_Supported starting with  Windows 8. |
 | **Header** | bthxddi.h (include BthXDDI.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\bthxddi\ni-bthxddi-ioctl_bthx_read_hci.md">IOCTL_BTHX_HCI_READ</a>
+        <a href="..\bthxddi\ni-bthxddi-ioctl_bthx_read_hci.md">IOCTL_BTHX_HCI_READ</a>
 
 <a href="..\bthxddi\ni-bthxddi-ioctl_bthx_write_hci.md">IOCTL_BTHX_HCI_WRITE</a>
 

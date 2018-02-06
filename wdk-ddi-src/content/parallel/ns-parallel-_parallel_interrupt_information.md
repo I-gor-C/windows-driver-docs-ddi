@@ -1,41 +1,46 @@
 ---
-UID : NS:parallel._PARALLEL_INTERRUPT_INFORMATION
-title : "_PARALLEL_INTERRUPT_INFORMATION"
-author : windows-driver-content
-description : The PARALLEL_INTERRUPT_INFORMATION structure specifies information that a kernel-mode driver can use in the context of an ISR that the driver connects to a parallel port.
-old-location : parports\parallel_interrupt_information.htm
-old-project : parports
-ms.assetid : aa4baa12-c349-4961-9694-b8fb3cd8dc50
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : parallel/PPARALLEL_INTERRUPT_INFORMATION, cisspd_3912e608-5549-4b0a-a48d-fdc34af7bc04.xml, parports.parallel_interrupt_information, *PPARALLEL_INTERRUPT_INFORMATION, _PARALLEL_INTERRUPT_INFORMATION, PARALLEL_INTERRUPT_INFORMATION structure [Parallel Ports], PPARALLEL_INTERRUPT_INFORMATION structure pointer [Parallel Ports], PPARALLEL_INTERRUPT_INFORMATION, PARALLEL_INTERRUPT_INFORMATION, parallel/PARALLEL_INTERRUPT_INFORMATION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : parallel.h
-req.include-header : Parallel.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PARALLEL_INTERRUPT_INFORMATION, *PPARALLEL_INTERRUPT_INFORMATION
+UID: NS:parallel._PARALLEL_INTERRUPT_INFORMATION
+title: "_PARALLEL_INTERRUPT_INFORMATION"
+author: windows-driver-content
+description: The PARALLEL_INTERRUPT_INFORMATION structure specifies information that a kernel-mode driver can use in the context of an ISR that the driver connects to a parallel port.
+old-location: parports\parallel_interrupt_information.htm
+old-project: parports
+ms.assetid: aa4baa12-c349-4961-9694-b8fb3cd8dc50
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: parallel/PPARALLEL_INTERRUPT_INFORMATION, cisspd_3912e608-5549-4b0a-a48d-fdc34af7bc04.xml, parports.parallel_interrupt_information, *PPARALLEL_INTERRUPT_INFORMATION, _PARALLEL_INTERRUPT_INFORMATION, PARALLEL_INTERRUPT_INFORMATION structure [Parallel Ports], PPARALLEL_INTERRUPT_INFORMATION structure pointer [Parallel Ports], PPARALLEL_INTERRUPT_INFORMATION, PARALLEL_INTERRUPT_INFORMATION, parallel/PARALLEL_INTERRUPT_INFORMATION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: parallel.h
+req.include-header: Parallel.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	parallel.h
+apiname:
+-	PARALLEL_INTERRUPT_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: PARALLEL_INTERRUPT_INFORMATION, *PPARALLEL_INTERRUPT_INFORMATION
 ---
 
 # _PARALLEL_INTERRUPT_INFORMATION structure

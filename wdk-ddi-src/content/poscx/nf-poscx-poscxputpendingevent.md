@@ -1,42 +1,47 @@
 ---
-UID : NF:poscx.PosCxPutPendingEvent
-title : PosCxPutPendingEvent function
-author : windows-driver-content
-description : PosCxPutPendingEvent creates a new event object, copies the event data to the new event object, and tries to delegate it to the waiting caller.
-old-location : pos\poscxputpendingevent.htm
-old-project : pos
-ms.assetid : 4E2EA8F5-2D4A-4AEB-AF59-97D6C3FB09BC
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : pos.poscxputpendingevent, poscx/PosCxPutPendingEvent, PosCxPutPendingEvent, PosCxPutPendingEvent function
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : poscx.h
-req.include-header : Poscx.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POS_CX_EVENT_PRIORITY
-req.product : Windows 10 or later.
+UID: NF:poscx.PosCxPutPendingEvent
+title: PosCxPutPendingEvent function
+author: windows-driver-content
+description: PosCxPutPendingEvent creates a new event object, copies the event data to the new event object, and tries to delegate it to the waiting caller.
+old-location: pos\poscxputpendingevent.htm
+old-project: pos
+ms.assetid: 4E2EA8F5-2D4A-4AEB-AF59-97D6C3FB09BC
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: pos.poscxputpendingevent, poscx/PosCxPutPendingEvent, PosCxPutPendingEvent, PosCxPutPendingEvent function
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: poscx.h
+req.include-header: Poscx.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	poscx.h
+apiname:
+-	PosCxPutPendingEvent
+product: Windows
+targetos: Windows
+req.typenames: POS_CX_EVENT_PRIORITY
+req.product: Windows 10 or later.
 ---
 
 

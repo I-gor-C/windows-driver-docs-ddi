@@ -1,41 +1,46 @@
 ---
-UID : NC:ks.PFNKSINTERSECTHANDLEREX
-title : PFNKSINTERSECTHANDLEREX
-author : windows-driver-content
-description : AVStream calls a minidriver's AVStrMiniIntersectHandlerEx routine to determine the highest quality intersection of two data ranges.
-old-location : stream\avstrminiintersecthandlerex.htm
-old-project : stream
-ms.assetid : d80f8bc6-29dc-4cb0-87f5-414ec6418156
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.avstrminiintersecthandlerex, AVStrMiniIntersectHandlerEx, AVStrMiniIntersectHandlerEx routine [Streaming Media Devices], AVStrMiniIntersectHandlerEx, PFNKSINTERSECTHANDLEREX, PFNKSINTERSECTHANDLEREX, ks/AVStrMiniIntersectHandlerEx, avstclbk_7a9be78c-3ca2-4fe2-961c-37dbd122a4b8.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ks.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KEYWORDSELECTOR
+UID: NC:ks.PFNKSINTERSECTHANDLEREX
+title: PFNKSINTERSECTHANDLEREX
+author: windows-driver-content
+description: AVStream calls a minidriver's AVStrMiniIntersectHandlerEx routine to determine the highest quality intersection of two data ranges.
+old-location: stream\avstrminiintersecthandlerex.htm
+old-project: stream
+ms.assetid: d80f8bc6-29dc-4cb0-87f5-414ec6418156
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.avstrminiintersecthandlerex, AVStrMiniIntersectHandlerEx, AVStrMiniIntersectHandlerEx routine [Streaming Media Devices], AVStrMiniIntersectHandlerEx, PFNKSINTERSECTHANDLEREX, PFNKSINTERSECTHANDLEREX, ks/AVStrMiniIntersectHandlerEx, avstclbk_7a9be78c-3ca2-4fe2-961c-37dbd122a4b8.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ks.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	ks.h
+apiname:
+-	AVStrMiniIntersectHandlerEx
+product: Windows
+targetos: Windows
+req.typenames: KEYWORDSELECTOR
 ---
 
 

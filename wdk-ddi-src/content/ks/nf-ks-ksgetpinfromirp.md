@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsGetPinFromIrp
-title : KsGetPinFromIrp function
-author : windows-driver-content
-description : The KsGetPinFromIrp function returns the AVStream pin object associated with the given IRP.
-old-location : stream\ksgetpinfromirp.htm
-old-project : stream
-ms.assetid : 96176a33-0721-4a4d-ba1b-131e25fc2306
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ks/KsGetPinFromIrp, avfunc_fa403f21-cccb-4a57-b40a-e7531feac721.xml, KsGetPinFromIrp function [Streaming Media Devices], stream.ksgetpinfromirp, KsGetPinFromIrp
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsGetPinFromIrp
+title: KsGetPinFromIrp function
+author: windows-driver-content
+description: The KsGetPinFromIrp function returns the AVStream pin object associated with the given IRP.
+old-location: stream\ksgetpinfromirp.htm
+old-project: stream
+ms.assetid: 96176a33-0721-4a4d-ba1b-131e25fc2306
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ks/KsGetPinFromIrp, avfunc_fa403f21-cccb-4a57-b40a-e7531feac721.xml, KsGetPinFromIrp function [Streaming Media Devices], stream.ksgetpinfromirp, KsGetPinFromIrp
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsGetPinFromIrp
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

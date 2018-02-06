@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_SETPIXELSHADERCONSTB
-title : PFND3DDDI_SETPIXELSHADERCONSTB
-author : windows-driver-content
-description : The SetPixelShaderConstB function sets one or more pixel shader constant registers with Boolean values.
-old-location : display\setpixelshaderconstb.htm
-old-project : display
-ms.assetid : 6f7c8932-9332-4ff2-89ab-2f9a66783326
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.setpixelshaderconstb, SetPixelShaderConstB callback function [Display Devices], SetPixelShaderConstB, PFND3DDDI_SETPIXELSHADERCONSTB, PFND3DDDI_SETPIXELSHADERCONSTB, d3dumddi/SetPixelShaderConstB, UserModeDisplayDriver_Functions_1f26c07c-fd24-4b1f-bc9d-23f6b8dae95f.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_SETPIXELSHADERCONSTB
+title: PFND3DDDI_SETPIXELSHADERCONSTB
+author: windows-driver-content
+description: The SetPixelShaderConstB function sets one or more pixel shader constant registers with Boolean values.
+old-location: display\setpixelshaderconstb.htm
+old-project: display
+ms.assetid: 6f7c8932-9332-4ff2-89ab-2f9a66783326
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.setpixelshaderconstb, SetPixelShaderConstB callback function [Display Devices], SetPixelShaderConstB, PFND3DDDI_SETPIXELSHADERCONSTB, PFND3DDDI_SETPIXELSHADERCONSTB, d3dumddi/SetPixelShaderConstB, UserModeDisplayDriver_Functions_1f26c07c-fd24-4b1f-bc9d-23f6b8dae95f.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	SetPixelShaderConstB
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

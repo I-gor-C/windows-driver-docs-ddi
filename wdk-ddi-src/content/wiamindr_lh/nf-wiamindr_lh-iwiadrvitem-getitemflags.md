@@ -1,42 +1,47 @@
 ---
-UID : NF:wiamindr_lh.IWiaDrvItem.GetItemFlags
-title : IWiaDrvItem::GetItemFlags method
-author : windows-driver-content
-description : The IWiaDrvItem::GetItemFlags method gets the item flags of the current IWiaDrvItem item.
-old-location : image\iwiadrvitem_getitemflags.htm
-old-project : image
-ms.assetid : 47358d69-ef45-4cac-8187-72c354912c4e
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : DrvItem_6fcac1f5-c754-4158-a1a0-61efe0d3913c.xml, image.iwiadrvitem_getitemflags, wiamindr_lh/IWiaDrvItem::GetItemFlags, IWiaDrvItem::GetItemFlags, GetItemFlags method [Imaging Devices], IWiaDrvItem interface, IWiaDrvItem interface [Imaging Devices], GetItemFlags method, IWiaDrvItem, GetItemFlags, GetItemFlags method [Imaging Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wiamindr_lh.h
-req.include-header : Wiamindr.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Me and in Windows XP and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wiamindr_lh.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SCANWINDOW, *PSCANWINDOW
-req.product : Windows 10 or later.
+UID: NF:wiamindr_lh.IWiaDrvItem.GetItemFlags
+title: IWiaDrvItem::GetItemFlags method
+author: windows-driver-content
+description: The IWiaDrvItem::GetItemFlags method gets the item flags of the current IWiaDrvItem item.
+old-location: image\iwiadrvitem_getitemflags.htm
+old-project: image
+ms.assetid: 47358d69-ef45-4cac-8187-72c354912c4e
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: DrvItem_6fcac1f5-c754-4158-a1a0-61efe0d3913c.xml, image.iwiadrvitem_getitemflags, wiamindr_lh/IWiaDrvItem::GetItemFlags, IWiaDrvItem::GetItemFlags, GetItemFlags method [Imaging Devices], IWiaDrvItem interface, IWiaDrvItem interface [Imaging Devices], GetItemFlags method, IWiaDrvItem, GetItemFlags, GetItemFlags method [Imaging Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wiamindr_lh.h
+req.include-header: Wiamindr.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Me and in Windows XP and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wiamindr_lh.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	wiamindr_lh.h
+apiname:
+-	IWiaDrvItem.GetItemFlags
+product: Windows
+targetos: Windows
+req.typenames: SCANWINDOW, *PSCANWINDOW
+req.product: Windows 10 or later.
 ---
 
 

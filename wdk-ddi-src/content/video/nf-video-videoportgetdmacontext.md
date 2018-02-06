@@ -1,42 +1,47 @@
 ---
-UID : NF:video.VideoPortGetDmaContext
-title : VideoPortGetDmaContext function
-author : windows-driver-content
-description : The VideoPortGetDmaContext function is obsolete in Windows 2000 and later.VideoPortGetDmaContext gets the context previously associated with the specified DMA handle.
-old-location : display\videoportgetdmacontext.htm
-old-project : display
-ms.assetid : 1bd9a156-a366-4f35-956f-d195c41ae722
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.videoportgetdmacontext, video/VideoPortGetDmaContext, VideoPortGetDmaContext function [Display Devices], VideoPortGetDmaContext, VideoPort_Functions_97335d32-fa36-4130-a050-39fbdfc08517.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows 2000 and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Videoprt.lib
-req.dll : Videoprt.sys
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_PORT_SERVICES
-req.product : Windows 10 or later.
+UID: NF:video.VideoPortGetDmaContext
+title: VideoPortGetDmaContext function
+author: windows-driver-content
+description: The VideoPortGetDmaContext function is obsolete in Windows 2000 and later.VideoPortGetDmaContext gets the context previously associated with the specified DMA handle.
+old-location: display\videoportgetdmacontext.htm
+old-project: display
+ms.assetid: 1bd9a156-a366-4f35-956f-d195c41ae722
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.videoportgetdmacontext, video/VideoPortGetDmaContext, VideoPortGetDmaContext function [Display Devices], VideoPortGetDmaContext, VideoPort_Functions_97335d32-fa36-4130-a050-39fbdfc08517.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows 2000 and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Videoprt.lib
+req.dll: Videoprt.sys
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Videoprt.sys
+apiname:
+-	VideoPortGetDmaContext
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_PORT_SERVICES
+req.product: Windows 10 or later.
 ---
 
 

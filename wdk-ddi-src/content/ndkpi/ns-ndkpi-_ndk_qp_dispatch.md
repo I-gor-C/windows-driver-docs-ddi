@@ -1,41 +1,46 @@
 ---
-UID : NS:ndkpi._NDK_QP_DISPATCH
-title : "_NDK_QP_DISPATCH"
-author : windows-driver-content
-description : The NDK_QP_DISPATCH structure specifies dispatch function entry points for the NDK queue pair (QP) object.
-old-location : netvista\ndk_qp_dispatch.htm
-old-project : netvista
-ms.assetid : C2B50C94-693A-48A2-8458-5722F652C933
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : ndkpi/NDK_QP_DISPATCH, NDK_QP_DISPATCH structure [Network Drivers Starting with Windows Vista], NDK_QP_DISPATCH, netvista.ndk_qp_dispatch, _NDK_QP_DISPATCH
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndkpi.h
-req.include-header : Ndkpi.h
-req.target-type : Windows
-req.target-min-winverclnt : None supported,Supported in NDIS 6.30 and later.
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDK_QP_DISPATCH
+UID: NS:ndkpi._NDK_QP_DISPATCH
+title: "_NDK_QP_DISPATCH"
+author: windows-driver-content
+description: The NDK_QP_DISPATCH structure specifies dispatch function entry points for the NDK queue pair (QP) object.
+old-location: netvista\ndk_qp_dispatch.htm
+old-project: netvista
+ms.assetid: C2B50C94-693A-48A2-8458-5722F652C933
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: ndkpi/NDK_QP_DISPATCH, NDK_QP_DISPATCH structure [Network Drivers Starting with Windows Vista], NDK_QP_DISPATCH, netvista.ndk_qp_dispatch, _NDK_QP_DISPATCH
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndkpi.h
+req.include-header: Ndkpi.h
+req.target-type: Windows
+req.target-min-winverclnt: None supported,Supported in NDIS 6.30 and later.
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndkpi.h
+apiname:
+-	NDK_QP_DISPATCH
+product: Windows
+targetos: Windows
+req.typenames: NDK_QP_DISPATCH
 ---
 
 # _NDK_QP_DISPATCH structure

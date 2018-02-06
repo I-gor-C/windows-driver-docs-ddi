@@ -1,42 +1,47 @@
 ---
-UID : NS:wdm._CM_FLOPPY_DEVICE_DATA
-title : "_CM_FLOPPY_DEVICE_DATA"
-author : windows-driver-content
-description : The CM_FLOPPY_DEVICE_DATA structure defines a device-type-specific data record that is stored in the \\Registry\Machine\Hardware\Description tree for a floppy controller if the system can collect this information during the boot process.
-old-location : kernel\cm_floppy_device_data.htm
-old-project : kernel
-ms.assetid : 0ef0d242-4ed6-4c48-85b8-0fc87d3fe39b
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : "*PCM_FLOPPY_DEVICE_DATA, kernel.cm_floppy_device_data, _CM_FLOPPY_DEVICE_DATA, wdm/CM_FLOPPY_DEVICE_DATA, wdm/PCM_FLOPPY_DEVICE_DATA, kstruct_a_7ec8badb-4d88-479e-b0dc-ce88660b8449.xml, CM_FLOPPY_DEVICE_DATA structure [Kernel-Mode Driver Architecture], PCM_FLOPPY_DEVICE_DATA structure pointer [Kernel-Mode Driver Architecture], CM_FLOPPY_DEVICE_DATA, PCM_FLOPPY_DEVICE_DATA"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PCM_FLOPPY_DEVICE_DATA, CM_FLOPPY_DEVICE_DATA"
-req.product : Windows 10 or later.
+UID: NS:wdm._CM_FLOPPY_DEVICE_DATA
+title: "_CM_FLOPPY_DEVICE_DATA"
+author: windows-driver-content
+description: The CM_FLOPPY_DEVICE_DATA structure defines a device-type-specific data record that is stored in the \\Registry\Machine\Hardware\Description tree for a floppy controller if the system can collect this information during the boot process.
+old-location: kernel\cm_floppy_device_data.htm
+old-project: kernel
+ms.assetid: 0ef0d242-4ed6-4c48-85b8-0fc87d3fe39b
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: "*PCM_FLOPPY_DEVICE_DATA, kernel.cm_floppy_device_data, _CM_FLOPPY_DEVICE_DATA, wdm/CM_FLOPPY_DEVICE_DATA, wdm/PCM_FLOPPY_DEVICE_DATA, kstruct_a_7ec8badb-4d88-479e-b0dc-ce88660b8449.xml, CM_FLOPPY_DEVICE_DATA structure [Kernel-Mode Driver Architecture], PCM_FLOPPY_DEVICE_DATA structure pointer [Kernel-Mode Driver Architecture], CM_FLOPPY_DEVICE_DATA, PCM_FLOPPY_DEVICE_DATA"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdm.h
+apiname:
+-	CM_FLOPPY_DEVICE_DATA
+product: Windows
+targetos: Windows
+req.typenames: "*PCM_FLOPPY_DEVICE_DATA, CM_FLOPPY_DEVICE_DATA"
+req.product: Windows 10 or later.
 ---
 
 # _CM_FLOPPY_DEVICE_DATA structure

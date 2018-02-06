@@ -1,41 +1,46 @@
 ---
-UID : NS:ks.KSDISPATCH_TABLE
-title : KSDISPATCH_TABLE
-author : windows-driver-content
-description : The KSDISPATCH_TABLE structure contains pointers to minidriver implemented IRP dispatch routines.
-old-location : stream\ksdispatch_table.htm
-old-project : stream
-ms.assetid : baa45ce7-3dcd-4383-99f2-aeb664a03190
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : "*PKSDISPATCH_TABLE, KSDISPATCH_TABLE structure [Streaming Media Devices], PKSDISPATCH_TABLE structure pointer [Streaming Media Devices], ks/PKSDISPATCH_TABLE, ks-struct_c1daf962-90e2-495e-9531-c23716ee9d68.xml, PKSDISPATCH_TABLE, stream.ksdispatch_table, ks/KSDISPATCH_TABLE, KSDISPATCH_TABLE"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KSDISPATCH_TABLE, *PKSDISPATCH_TABLE
+UID: NS:ks.KSDISPATCH_TABLE
+title: KSDISPATCH_TABLE
+author: windows-driver-content
+description: The KSDISPATCH_TABLE structure contains pointers to minidriver implemented IRP dispatch routines.
+old-location: stream\ksdispatch_table.htm
+old-project: stream
+ms.assetid: baa45ce7-3dcd-4383-99f2-aeb664a03190
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: "*PKSDISPATCH_TABLE, KSDISPATCH_TABLE structure [Streaming Media Devices], PKSDISPATCH_TABLE structure pointer [Streaming Media Devices], ks/PKSDISPATCH_TABLE, ks-struct_c1daf962-90e2-495e-9531-c23716ee9d68.xml, PKSDISPATCH_TABLE, stream.ksdispatch_table, ks/KSDISPATCH_TABLE, KSDISPATCH_TABLE"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	KSDISPATCH_TABLE
+product: Windows
+targetos: Windows
+req.typenames: KSDISPATCH_TABLE, *PKSDISPATCH_TABLE
 ---
 
 # KSDISPATCH_TABLE structure

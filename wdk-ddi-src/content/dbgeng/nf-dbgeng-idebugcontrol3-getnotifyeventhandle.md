@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugControl3.GetNotifyEventHandle
-title : IDebugControl3::GetNotifyEventHandle method
-author : windows-driver-content
-description : The GetNotifyEventHandle method receives the handle of the event that will be signaled after the next exception in a target.
-old-location : debugger\getnotifyeventhandle.htm
-old-project : debugger
-ms.assetid : a949a583-1ee1-4538-9117-4ad1482e8bc8
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugControl_73931ad2-ace6-4d38-ad22-c322f2e3c13c.xml, GetNotifyEventHandle method [Windows Debugging], GetNotifyEventHandle method [Windows Debugging], IDebugControl3 interface, GetNotifyEventHandle method [Windows Debugging], IDebugControl2 interface, IDebugControl3::GetNotifyEventHandle, IDebugControl3, dbgeng/IDebugControl::GetNotifyEventHandle, GetNotifyEventHandle method [Windows Debugging], IDebugControl interface, IDebugControl2::GetNotifyEventHandle, IDebugControl interface [Windows Debugging], GetNotifyEventHandle method, IDebugControl2 interface [Windows Debugging], GetNotifyEventHandle method, debugger.getnotifyeventhandle, IDebugControl3 interface [Windows Debugging], GetNotifyEventHandle method, IDebugControl::GetNotifyEventHandle, dbgeng/IDebugControl2::GetNotifyEventHandle, dbgeng/IDebugControl3::GetNotifyEventHandle, GetNotifyEventHandle
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl3.GetNotifyEventHandle
+title: IDebugControl3::GetNotifyEventHandle method
+author: windows-driver-content
+description: The GetNotifyEventHandle method receives the handle of the event that will be signaled after the next exception in a target.
+old-location: debugger\getnotifyeventhandle.htm
+old-project: debugger
+ms.assetid: a949a583-1ee1-4538-9117-4ad1482e8bc8
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugControl_73931ad2-ace6-4d38-ad22-c322f2e3c13c.xml, GetNotifyEventHandle method [Windows Debugging], GetNotifyEventHandle method [Windows Debugging], IDebugControl3 interface, GetNotifyEventHandle method [Windows Debugging], IDebugControl2 interface, IDebugControl3::GetNotifyEventHandle, IDebugControl3, dbgeng/IDebugControl::GetNotifyEventHandle, GetNotifyEventHandle method [Windows Debugging], IDebugControl interface, IDebugControl2::GetNotifyEventHandle, IDebugControl interface [Windows Debugging], GetNotifyEventHandle method, IDebugControl2 interface [Windows Debugging], GetNotifyEventHandle method, debugger.getnotifyeventhandle, IDebugControl3 interface [Windows Debugging], GetNotifyEventHandle method, IDebugControl::GetNotifyEventHandle, dbgeng/IDebugControl2::GetNotifyEventHandle, dbgeng/IDebugControl3::GetNotifyEventHandle, GetNotifyEventHandle
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl.GetNotifyEventHandle
+-	IDebugControl2.GetNotifyEventHandle
+-	IDebugControl3.GetNotifyEventHandle
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

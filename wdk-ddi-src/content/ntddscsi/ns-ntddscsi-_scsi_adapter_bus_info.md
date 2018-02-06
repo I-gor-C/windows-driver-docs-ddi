@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddscsi._SCSI_ADAPTER_BUS_INFO
-title : "_SCSI_ADAPTER_BUS_INFO"
-author : windows-driver-content
-description : The SCSI_ADAPTER_BUS_INFO structure is used in conjunction with the IOCTL_SCSI_GET_INQUIRY_DATA request to retrieve the SCSI inquiry data for all devices on a given SCSI bus.
-old-location : storage\scsi_adapter_bus_info.htm
-old-project : storage
-ms.assetid : 786d6813-a9f3-437e-9b41-d69e0fce9a4c
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : "_SCSI_ADAPTER_BUS_INFO, PSCSI_ADAPTER_BUS_INFO structure pointer [Storage Devices], PSCSI_ADAPTER_BUS_INFO, *PSCSI_ADAPTER_BUS_INFO, SCSI_ADAPTER_BUS_INFO, SCSI_ADAPTER_BUS_INFO structure [Storage Devices], storage.scsi_adapter_bus_info, ntddscsi/PSCSI_ADAPTER_BUS_INFO, structs-scsibus_f21bd933-bcbc-48b5-8904-845712ce226f.xml, ntddscsi/SCSI_ADAPTER_BUS_INFO"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddscsi.h
-req.include-header : Ntddscsi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SCSI_ADAPTER_BUS_INFO, *PSCSI_ADAPTER_BUS_INFO
+UID: NS:ntddscsi._SCSI_ADAPTER_BUS_INFO
+title: "_SCSI_ADAPTER_BUS_INFO"
+author: windows-driver-content
+description: The SCSI_ADAPTER_BUS_INFO structure is used in conjunction with the IOCTL_SCSI_GET_INQUIRY_DATA request to retrieve the SCSI inquiry data for all devices on a given SCSI bus.
+old-location: storage\scsi_adapter_bus_info.htm
+old-project: storage
+ms.assetid: 786d6813-a9f3-437e-9b41-d69e0fce9a4c
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: "_SCSI_ADAPTER_BUS_INFO, PSCSI_ADAPTER_BUS_INFO structure pointer [Storage Devices], PSCSI_ADAPTER_BUS_INFO, *PSCSI_ADAPTER_BUS_INFO, SCSI_ADAPTER_BUS_INFO, SCSI_ADAPTER_BUS_INFO structure [Storage Devices], storage.scsi_adapter_bus_info, ntddscsi/PSCSI_ADAPTER_BUS_INFO, structs-scsibus_f21bd933-bcbc-48b5-8904-845712ce226f.xml, ntddscsi/SCSI_ADAPTER_BUS_INFO"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddscsi.h
+req.include-header: Ntddscsi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddscsi.h
+apiname:
+-	SCSI_ADAPTER_BUS_INFO
+product: Windows
+targetos: Windows
+req.typenames: SCSI_ADAPTER_BUS_INFO, *PSCSI_ADAPTER_BUS_INFO
 ---
 
 # _SCSI_ADAPTER_BUS_INFO structure

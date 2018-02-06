@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugControl3.CloseLogFile
-title : IDebugControl3::CloseLogFile method
-author : windows-driver-content
-description : The CloseLogFile method closes the currently-open log file.
-old-location : debugger\closelogfile.htm
-old-project : debugger
-ms.assetid : 86ae188b-379c-474e-9f21-60286af19656
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugControl2 interface [Windows Debugging], CloseLogFile method, dbgeng/IDebugControl2::CloseLogFile, IDebugControl3::CloseLogFile, CloseLogFile, CloseLogFile method [Windows Debugging], IDebugControl3 interface, CloseLogFile method [Windows Debugging], IDebugControl2 interface, dbgeng/IDebugControl::CloseLogFile, IDebugControl::CloseLogFile, IDebugControl3 interface [Windows Debugging], CloseLogFile method, debugger.closelogfile, dbgeng/IDebugControl3::CloseLogFile, IDebugControl3, IDebugControl interface [Windows Debugging], CloseLogFile method, IDebugControl_988fe3ac-a51d-4757-995d-40fe9d66aa02.xml, CloseLogFile method [Windows Debugging], IDebugControl interface, CloseLogFile method [Windows Debugging], IDebugControl2::CloseLogFile
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl3.CloseLogFile
+title: IDebugControl3::CloseLogFile method
+author: windows-driver-content
+description: The CloseLogFile method closes the currently-open log file.
+old-location: debugger\closelogfile.htm
+old-project: debugger
+ms.assetid: 86ae188b-379c-474e-9f21-60286af19656
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugControl2 interface [Windows Debugging], CloseLogFile method, dbgeng/IDebugControl2::CloseLogFile, IDebugControl3::CloseLogFile, CloseLogFile, CloseLogFile method [Windows Debugging], IDebugControl3 interface, CloseLogFile method [Windows Debugging], IDebugControl2 interface, dbgeng/IDebugControl::CloseLogFile, IDebugControl::CloseLogFile, IDebugControl3 interface [Windows Debugging], CloseLogFile method, debugger.closelogfile, dbgeng/IDebugControl3::CloseLogFile, IDebugControl3, IDebugControl interface [Windows Debugging], CloseLogFile method, IDebugControl_988fe3ac-a51d-4757-995d-40fe9d66aa02.xml, CloseLogFile method [Windows Debugging], IDebugControl interface, CloseLogFile method [Windows Debugging], IDebugControl2::CloseLogFile
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Dbgeng.h
+apiname:
+-	IDebugControl.CloseLogFile
+-	IDebugControl2.CloseLogFile
+-	IDebugControl3.CloseLogFile
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

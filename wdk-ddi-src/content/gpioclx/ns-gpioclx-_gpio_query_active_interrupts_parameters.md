@@ -1,41 +1,46 @@
 ---
-UID : NS:gpioclx._GPIO_QUERY_ACTIVE_INTERRUPTS_PARAMETERS
-title : "_GPIO_QUERY_ACTIVE_INTERRUPTS_PARAMETERS"
-author : windows-driver-content
-description : The GPIO_QUERY_ACTIVE_INTERRUPTS_PARAMETERS structure describes a set of general-purpose I/O (GPIO) interrupt pins to query for their enabled and active states.
-old-location : gpio\gpio_query_active_interrupts_parameters.htm
-old-project : GPIO
-ms.assetid : A3111B9C-319F-4560-B5A9-5CA6523AD935
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : PGPIO_QUERY_ACTIVE_INTERRUPTS_PARAMETERS, gpioclx/GPIO_QUERY_ACTIVE_INTERRUPTS_PARAMETERS, *PGPIO_QUERY_ACTIVE_INTERRUPTS_PARAMETERS, GPIO_QUERY_ACTIVE_INTERRUPTS_PARAMETERS structure [Parallel Ports], PGPIO_QUERY_ACTIVE_INTERRUPTS_PARAMETERS structure pointer [Parallel Ports], GPIO_QUERY_ACTIVE_INTERRUPTS_PARAMETERS, GPIO.gpio_query_active_interrupts_parameters, gpioclx/PGPIO_QUERY_ACTIVE_INTERRUPTS_PARAMETERS, _GPIO_QUERY_ACTIVE_INTERRUPTS_PARAMETERS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : gpioclx.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : GPIO_QUERY_ACTIVE_INTERRUPTS_PARAMETERS, *PGPIO_QUERY_ACTIVE_INTERRUPTS_PARAMETERS
+UID: NS:gpioclx._GPIO_QUERY_ACTIVE_INTERRUPTS_PARAMETERS
+title: "_GPIO_QUERY_ACTIVE_INTERRUPTS_PARAMETERS"
+author: windows-driver-content
+description: The GPIO_QUERY_ACTIVE_INTERRUPTS_PARAMETERS structure describes a set of general-purpose I/O (GPIO) interrupt pins to query for their enabled and active states.
+old-location: gpio\gpio_query_active_interrupts_parameters.htm
+old-project: GPIO
+ms.assetid: A3111B9C-319F-4560-B5A9-5CA6523AD935
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: PGPIO_QUERY_ACTIVE_INTERRUPTS_PARAMETERS, gpioclx/GPIO_QUERY_ACTIVE_INTERRUPTS_PARAMETERS, *PGPIO_QUERY_ACTIVE_INTERRUPTS_PARAMETERS, GPIO_QUERY_ACTIVE_INTERRUPTS_PARAMETERS structure [Parallel Ports], PGPIO_QUERY_ACTIVE_INTERRUPTS_PARAMETERS structure pointer [Parallel Ports], GPIO_QUERY_ACTIVE_INTERRUPTS_PARAMETERS, GPIO.gpio_query_active_interrupts_parameters, gpioclx/PGPIO_QUERY_ACTIVE_INTERRUPTS_PARAMETERS, _GPIO_QUERY_ACTIVE_INTERRUPTS_PARAMETERS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: gpioclx.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Gpioclx.h
+apiname:
+-	GPIO_QUERY_ACTIVE_INTERRUPTS_PARAMETERS
+product: Windows
+targetos: Windows
+req.typenames: GPIO_QUERY_ACTIVE_INTERRUPTS_PARAMETERS, *PGPIO_QUERY_ACTIVE_INTERRUPTS_PARAMETERS
 ---
 
 # _GPIO_QUERY_ACTIVE_INTERRUPTS_PARAMETERS structure

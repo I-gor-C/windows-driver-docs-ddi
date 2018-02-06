@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddchgr._CHANGER_SET_POSITION
-title : "_CHANGER_SET_POSITION"
-author : windows-driver-content
-description : The CHANGER_SET_POSITION structure is used in conjunction with theIOCTL_CHANGER_SET_POSITION request to set the changer's robotic transport mechanism to the specified element address.
-old-location : storage\changer_set_position.htm
-old-project : storage
-ms.assetid : 1c71473a-98db-41a1-9ca5-ce59f345b5f7
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : PCHANGER_SET_POSITION, PCHANGER_SET_POSITION structure pointer [Storage Devices], ntddchgr/PCHANGER_SET_POSITION, CHANGER_SET_POSITION structure [Storage Devices], CHANGER_SET_POSITION, *PCHANGER_SET_POSITION, structs-changer_ab07ca33-813d-4b35-b5ce-809c63633ce5.xml, ntddchgr/CHANGER_SET_POSITION, storage.changer_set_position, _CHANGER_SET_POSITION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddchgr.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PCHANGER_SET_POSITION, CHANGER_SET_POSITION"
+UID: NS:ntddchgr._CHANGER_SET_POSITION
+title: "_CHANGER_SET_POSITION"
+author: windows-driver-content
+description: The CHANGER_SET_POSITION structure is used in conjunction with theIOCTL_CHANGER_SET_POSITION request to set the changer's robotic transport mechanism to the specified element address.
+old-location: storage\changer_set_position.htm
+old-project: storage
+ms.assetid: 1c71473a-98db-41a1-9ca5-ce59f345b5f7
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: PCHANGER_SET_POSITION, PCHANGER_SET_POSITION structure pointer [Storage Devices], ntddchgr/PCHANGER_SET_POSITION, CHANGER_SET_POSITION structure [Storage Devices], CHANGER_SET_POSITION, *PCHANGER_SET_POSITION, structs-changer_ab07ca33-813d-4b35-b5ce-809c63633ce5.xml, ntddchgr/CHANGER_SET_POSITION, storage.changer_set_position, _CHANGER_SET_POSITION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddchgr.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddchgr.h
+apiname:
+-	CHANGER_SET_POSITION
+product: Windows
+targetos: Windows
+req.typenames: "*PCHANGER_SET_POSITION, CHANGER_SET_POSITION"
 ---
 
 # _CHANGER_SET_POSITION structure

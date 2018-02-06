@@ -1,41 +1,46 @@
 ---
-UID : NF:ks.KsGateTurnInputOff
-title : KsGateTurnInputOff function
-author : windows-driver-content
-description : The KsGateTurnInputOff function turns off an existing input to Gate.
-old-location : stream\ksgateturninputoff.htm
-old-project : stream
-ms.assetid : cbcbb49a-8c45-4843-8c21-6c4d8c7bc6c6
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ks/KsGateTurnInputOff, avfunc_ba116904-80e2-4288-a8d1-d03c0194ef51.xml, KsGateTurnInputOff function [Streaming Media Devices], KsGateTurnInputOff, stream.ksgateturninputoff
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsGateTurnInputOff
+title: KsGateTurnInputOff function
+author: windows-driver-content
+description: The KsGateTurnInputOff function turns off an existing input to Gate.
+old-location: stream\ksgateturninputoff.htm
+old-project: stream
+ms.assetid: cbcbb49a-8c45-4843-8c21-6c4d8c7bc6c6
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ks/KsGateTurnInputOff, avfunc_ba116904-80e2-4288-a8d1-d03c0194ef51.xml, KsGateTurnInputOff function [Streaming Media Devices], KsGateTurnInputOff, stream.ksgateturninputoff
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	KsGateTurnInputOff
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

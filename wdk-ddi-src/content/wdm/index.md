@@ -1,12 +1,12 @@
 ---
-UID : NA:wdm
-ms.assetid : 8462c1fe-6be6-3c3a-88f8-fb7aba330515
-ms.author : windowsdriverdev
-ms.date : 01/18/18
-ms.keywords : 
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : portal
+UID: NA:wdm
+ms.assetid: 8462c1fe-6be6-3c3a-88f8-fb7aba330515
+ms.author: windowsdriverdev
+ms.date: 01/18/18
+ms.keywords: 
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: portal
 ---
 
 # wdm.h header

@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.ExAllocateFromPagedLookasideList
-title : ExAllocateFromPagedLookasideList function
-author : windows-driver-content
-description : The ExAllocateFromPagedLookasideList routine returns a pointer to a paged entry from the given lookaside list, or it returns a pointer to a newly allocated paged entry.
-old-location : kernel\exallocatefrompagedlookasidelist.htm
-old-project : kernel
-ms.assetid : f0c86720-4914-47b1-abb1-151196cc2a68
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : k102_96e03fc6-f951-4c96-8de4-32d67e85ec02.xml, ExAllocateFromPagedLookasideList routine [Kernel-Mode Driver Architecture], wdm/ExAllocateFromPagedLookasideList, ExAllocateFromPagedLookasideList, kernel.exallocatefrompagedlookasidelist
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ExAllocateFromPagedLookasideList
+title: ExAllocateFromPagedLookasideList function
+author: windows-driver-content
+description: The ExAllocateFromPagedLookasideList routine returns a pointer to a paged entry from the given lookaside list, or it returns a pointer to a newly allocated paged entry.
+old-location: kernel\exallocatefrompagedlookasidelist.htm
+old-project: kernel
+ms.assetid: f0c86720-4914-47b1-abb1-151196cc2a68
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: k102_96e03fc6-f951-4c96-8de4-32d67e85ec02.xml, ExAllocateFromPagedLookasideList routine [Kernel-Mode Driver Architecture], wdm/ExAllocateFromPagedLookasideList, ExAllocateFromPagedLookasideList, kernel.exallocatefrompagedlookasidelist
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ExAllocateFromPagedLookasideList
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

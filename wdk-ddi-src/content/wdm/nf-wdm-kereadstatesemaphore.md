@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.KeReadStateSemaphore
-title : KeReadStateSemaphore function
-author : windows-driver-content
-description : The KeReadStateSemaphore routine returns the current state, signaled or not-signaled, of the specified semaphore object.
-old-location : kernel\kereadstatesemaphore.htm
-old-project : kernel
-ms.assetid : e88c89fb-c308-4c6d-a67d-c8f98d539a43
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.kereadstatesemaphore, KeReadStateSemaphore routine [Kernel-Mode Driver Architecture], wdm/KeReadStateSemaphore, KeReadStateSemaphore, k105_cc608a62-f747-4d8c-a4f8-b6df51a4d5dd.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.KeReadStateSemaphore
+title: KeReadStateSemaphore function
+author: windows-driver-content
+description: The KeReadStateSemaphore routine returns the current state, signaled or not-signaled, of the specified semaphore object.
+old-location: kernel\kereadstatesemaphore.htm
+old-project: kernel
+ms.assetid: e88c89fb-c308-4c6d-a67d-c8f98d539a43
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.kereadstatesemaphore, KeReadStateSemaphore routine [Kernel-Mode Driver Architecture], wdm/KeReadStateSemaphore, KeReadStateSemaphore, k105_cc608a62-f747-4d8c-a4f8-b6df51a4d5dd.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	KeReadStateSemaphore
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

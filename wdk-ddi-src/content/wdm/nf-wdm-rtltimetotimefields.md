@@ -1,42 +1,48 @@
 ---
-UID : NF:wdm.RtlTimeToTimeFields
-title : RtlTimeToTimeFields function
-author : windows-driver-content
-description : The RtlTimeToTimeFields routine converts system time into a TIME_FIELDS structure.
-old-location : kernel\rtltimetotimefields.htm
-old-project : kernel
-ms.assetid : 128fe592-8dc1-46cf-8aa6-0f3de0896cc5
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/RtlTimeToTimeFields, kernel.rtltimetotimefields, RtlTimeToTimeFields, k109_574f7b2f-cbb5-447c-84d5-88179cbe4cb7.xml, RtlTimeToTimeFields routine [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe (kernel mode); Ntdll.dll (user mode)
-req.irql : Any level (See Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.RtlTimeToTimeFields
+title: RtlTimeToTimeFields function
+author: windows-driver-content
+description: The RtlTimeToTimeFields routine converts system time into a TIME_FIELDS structure.
+old-location: kernel\rtltimetotimefields.htm
+old-project: kernel
+ms.assetid: 128fe592-8dc1-46cf-8aa6-0f3de0896cc5
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/RtlTimeToTimeFields, kernel.rtltimetotimefields, RtlTimeToTimeFields, k109_574f7b2f-cbb5-447c-84d5-88179cbe4cb7.xml, RtlTimeToTimeFields routine [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe (kernel mode); Ntdll.dll (user mode)
+req.irql: Any level (See Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+-	Ntdll.dll
+apiname:
+-	RtlTimeToTimeFields
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

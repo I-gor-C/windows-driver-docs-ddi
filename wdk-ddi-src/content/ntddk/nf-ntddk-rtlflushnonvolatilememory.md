@@ -1,41 +1,46 @@
 ---
-UID : NF:ntddk.RtlFlushNonVolatileMemory
-title : RtlFlushNonVolatileMemory function
-author : windows-driver-content
-description : The routine RtlFlushNonVolatileMemory optimally flushes the given non-volatile memory region.
-old-location : ifsk\rtlflushnonvolatilememory.htm
-old-project : ifsk
-ms.assetid : 759CDFAA-D939-44E7-AE03-E3ED90F8E09D
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.rtlflushnonvolatilememory, RtlFlushNonVolatileMemory routine [Installable File System Drivers], RtlFlushNonVolatileMemory, ntddk/RtlFlushNonVolatileMemory
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntddk.h
-req.include-header : Winnt.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10, version 1703
-req.target-min-winversvr : None supported
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.RtlFlushNonVolatileMemory
+title: RtlFlushNonVolatileMemory function
+author: windows-driver-content
+description: The routine RtlFlushNonVolatileMemory optimally flushes the given non-volatile memory region.
+old-location: ifsk\rtlflushnonvolatilememory.htm
+old-project: ifsk
+ms.assetid: 759CDFAA-D939-44E7-AE03-E3ED90F8E09D
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.rtlflushnonvolatilememory, RtlFlushNonVolatileMemory routine [Installable File System Drivers], RtlFlushNonVolatileMemory, ntddk/RtlFlushNonVolatileMemory
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntddk.h
+req.include-header: Winnt.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10, version 1703
+req.target-min-winversvr: None supported
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddk.h
+apiname:
+-	RtlFlushNonVolatileMemory
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

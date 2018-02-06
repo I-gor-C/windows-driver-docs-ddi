@@ -1,42 +1,47 @@
 ---
-UID : NC:wdm.KSERVICE_ROUTINE
-title : KSERVICE_ROUTINE
-author : windows-driver-content
-description : The InterruptService routine (ISR) quickly services a device interrupt and schedules post-interrupt processing of received data, if necessary.
-old-location : kernel\interruptservice.htm
-old-project : kernel
-ms.assetid : ad104d4d-5e7f-4730-b898-71ab467f9379
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.interruptservice, InterruptService routine [Kernel-Mode Driver Architecture], InterruptService, KSERVICE_ROUTINE, KSERVICE_ROUTINE, wdm/InterruptService, DrvrRtns_ee9bfb68-3d4c-4abf-9d2b-81037c2572d5.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Called at DIRQL (see Remarks section).
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
-req.product : Windows 10 or later.
+UID: NC:wdm.KSERVICE_ROUTINE
+title: KSERVICE_ROUTINE
+author: windows-driver-content
+description: The InterruptService routine (ISR) quickly services a device interrupt and schedules post-interrupt processing of received data, if necessary.
+old-location: kernel\interruptservice.htm
+old-project: kernel
+ms.assetid: ad104d4d-5e7f-4730-b898-71ab467f9379
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.interruptservice, InterruptService routine [Kernel-Mode Driver Architecture], InterruptService, KSERVICE_ROUTINE, KSERVICE_ROUTINE, wdm/InterruptService, DrvrRtns_ee9bfb68-3d4c-4abf-9d2b-81037c2572d5.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Called at DIRQL (see Remarks section).
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Wdm.h
+apiname:
+-	InterruptService
+product: Windows
+targetos: Windows
+req.typenames: WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+req.product: Windows 10 or later.
 ---
 
 

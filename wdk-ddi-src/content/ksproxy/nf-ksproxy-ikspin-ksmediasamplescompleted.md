@@ -1,41 +1,46 @@
 ---
-UID : NF:ksproxy.IKsPin.KsMediaSamplesCompleted
-title : IKsPin::KsMediaSamplesCompleted method
-author : windows-driver-content
-description : The KsMediaSamplesCompleted method informs a pin that a stream segment completed.
-old-location : stream\ikspin_ksmediasamplescompleted.htm
-old-project : stream
-ms.assetid : df3bbc09-14aa-4243-887b-d88d02a59f73
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KsMediaSamplesCompleted, KsMediaSamplesCompleted method [Streaming Media Devices], IKsPin interface, IKsPin interface [Streaming Media Devices], KsMediaSamplesCompleted method, KsMediaSamplesCompleted method [Streaming Media Devices], IKsPin::KsMediaSamplesCompleted, ksproxy/IKsPin::KsMediaSamplesCompleted, stream.ikspin_ksmediasamplescompleted, ksproxy_06b7c470-0755-4cae-a346-15f544c51d1d.xml, IKsPin
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : ksproxy.h
-req.include-header : Ksproxy.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : ksproxy.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PIPE_STATE
+UID: NF:ksproxy.IKsPin.KsMediaSamplesCompleted
+title: IKsPin::KsMediaSamplesCompleted method
+author: windows-driver-content
+description: The KsMediaSamplesCompleted method informs a pin that a stream segment completed.
+old-location: stream\ikspin_ksmediasamplescompleted.htm
+old-project: stream
+ms.assetid: df3bbc09-14aa-4243-887b-d88d02a59f73
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KsMediaSamplesCompleted, KsMediaSamplesCompleted method [Streaming Media Devices], IKsPin interface, IKsPin interface [Streaming Media Devices], KsMediaSamplesCompleted method, KsMediaSamplesCompleted method [Streaming Media Devices], IKsPin::KsMediaSamplesCompleted, ksproxy/IKsPin::KsMediaSamplesCompleted, stream.ikspin_ksmediasamplescompleted, ksproxy_06b7c470-0755-4cae-a346-15f544c51d1d.xml, IKsPin
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: ksproxy.h
+req.include-header: Ksproxy.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: ksproxy.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	ksproxy.h
+apiname:
+-	IKsPin.KsMediaSamplesCompleted
+product: Windows
+targetos: Windows
+req.typenames: PIPE_STATE
 ---
 
 

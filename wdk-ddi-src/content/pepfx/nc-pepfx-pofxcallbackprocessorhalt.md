@@ -1,41 +1,46 @@
 ---
-UID : NC:pepfx.POFXCALLBACKPROCESSORHALT
-title : POFXCALLBACKPROCESSORHALT
-author : windows-driver-content
-description : The ProcessorHalt routine prepares the processor to be halted.
-old-location : kernel\processorhalt.htm
-old-project : kernel
-ms.assetid : DEBE74B2-DFBD-43D7-8B14-86B4DA7D4C98
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.processorhalt, ProcessorHalt, ProcessorHalt routine [Kernel-Mode Driver Architecture], ProcessorHalt, POFXCALLBACKPROCESSORHALT, POFXCALLBACKPROCESSORHALT, pepfx/ProcessorHalt
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : pepfx.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with Windows 10.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= HIGH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VPCI_PNP_ID, *PVPCI_PNP_ID
+UID: NC:pepfx.POFXCALLBACKPROCESSORHALT
+title: POFXCALLBACKPROCESSORHALT
+author: windows-driver-content
+description: The ProcessorHalt routine prepares the processor to be halted.
+old-location: kernel\processorhalt.htm
+old-project: kernel
+ms.assetid: DEBE74B2-DFBD-43D7-8B14-86B4DA7D4C98
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.processorhalt, ProcessorHalt, ProcessorHalt routine [Kernel-Mode Driver Architecture], ProcessorHalt, POFXCALLBACKPROCESSORHALT, POFXCALLBACKPROCESSORHALT, pepfx/ProcessorHalt
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: pepfx.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows 10.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= HIGH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	pepfx.h
+apiname:
+-	ProcessorHalt
+product: Windows
+targetos: Windows
+req.typenames: VPCI_PNP_ID, *PVPCI_PNP_ID
 ---
 
 

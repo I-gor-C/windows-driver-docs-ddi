@@ -1,41 +1,46 @@
 ---
-UID : NC:ks.PFNKSITEMFREECALLBACK
-title : PFNKSITEMFREECALLBACK
-author : windows-driver-content
-description : A streaming minidriver's KStrItemFreeCallback routine is called to free a previously allocated create item. KStrItemFreeCallback allows the minidriver to perform any cleanup, including flushing security descriptor changes, if necessary.
-old-location : stream\kstritemfreecallback.htm
-old-project : stream
-ms.assetid : c97bb216-a53b-47c7-9be2-2364604b4cf8
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.kstritemfreecallback, KStrItemFreeCallback routine [Streaming Media Devices], KStrItemFreeCallback, PFNKSITEMFREECALLBACK, PFNKSITEMFREECALLBACK, ks/KStrItemFreeCallback, ksfunc_3d98c1cb-4984-4d82-8e58-181445f1feca.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KEYWORDSELECTOR
+UID: NC:ks.PFNKSITEMFREECALLBACK
+title: PFNKSITEMFREECALLBACK
+author: windows-driver-content
+description: A streaming minidriver's KStrItemFreeCallback routine is called to free a previously allocated create item. KStrItemFreeCallback allows the minidriver to perform any cleanup, including flushing security descriptor changes, if necessary.
+old-location: stream\kstritemfreecallback.htm
+old-project: stream
+ms.assetid: c97bb216-a53b-47c7-9be2-2364604b4cf8
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.kstritemfreecallback, KStrItemFreeCallback routine [Streaming Media Devices], KStrItemFreeCallback, PFNKSITEMFREECALLBACK, PFNKSITEMFREECALLBACK, ks/KStrItemFreeCallback, ksfunc_3d98c1cb-4984-4d82-8e58-181445f1feca.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	ks.h
+apiname:
+-	KStrItemFreeCallback
+product: Windows
+targetos: Windows
+req.typenames: KEYWORDSELECTOR
 ---
 
 

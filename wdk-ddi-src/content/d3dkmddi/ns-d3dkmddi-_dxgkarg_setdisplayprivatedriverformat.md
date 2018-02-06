@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGKARG_SETDISPLAYPRIVATEDRIVERFORMAT
-title : "_DXGKARG_SETDISPLAYPRIVATEDRIVERFORMAT"
-author : windows-driver-content
-description : The DXGKARG_SETDISPLAYPRIVATEDRIVERFORMAT structure describes how to set the private-format attribute for a video present source.
-old-location : display\dxgkarg_setdisplayprivatedriverformat.htm
-old-project : display
-ms.assetid : a09cfc9a-26e8-4984-b5c6-7ead5aa4644e
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : "*IN_CONST_PDXGKARG_SETDISPLAYPRIVATEDRIVERFORMAT, DmStructs_adfa4bbe-5e14-4a2a-acee-6d80b408f6ac.xml, _DXGKARG_SETDISPLAYPRIVATEDRIVERFORMAT, DXGKARG_SETDISPLAYPRIVATEDRIVERFORMAT, d3dkmddi/DXGKARG_SETDISPLAYPRIVATEDRIVERFORMAT, DXGKARG_SETDISPLAYPRIVATEDRIVERFORMAT structure [Display Devices], display.dxgkarg_setdisplayprivatedriverformat"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGKARG_SETDISPLAYPRIVATEDRIVERFORMAT
+UID: NS:d3dkmddi._DXGKARG_SETDISPLAYPRIVATEDRIVERFORMAT
+title: "_DXGKARG_SETDISPLAYPRIVATEDRIVERFORMAT"
+author: windows-driver-content
+description: The DXGKARG_SETDISPLAYPRIVATEDRIVERFORMAT structure describes how to set the private-format attribute for a video present source.
+old-location: display\dxgkarg_setdisplayprivatedriverformat.htm
+old-project: display
+ms.assetid: a09cfc9a-26e8-4984-b5c6-7ead5aa4644e
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: "*IN_CONST_PDXGKARG_SETDISPLAYPRIVATEDRIVERFORMAT, DmStructs_adfa4bbe-5e14-4a2a-acee-6d80b408f6ac.xml, _DXGKARG_SETDISPLAYPRIVATEDRIVERFORMAT, DXGKARG_SETDISPLAYPRIVATEDRIVERFORMAT, d3dkmddi/DXGKARG_SETDISPLAYPRIVATEDRIVERFORMAT, DXGKARG_SETDISPLAYPRIVATEDRIVERFORMAT structure [Display Devices], display.dxgkarg_setdisplayprivatedriverformat"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DXGKARG_SETDISPLAYPRIVATEDRIVERFORMAT
+product: Windows
+targetos: Windows
+req.typenames: DXGKARG_SETDISPLAYPRIVATEDRIVERFORMAT
 ---
 
 # _DXGKARG_SETDISPLAYPRIVATEDRIVERFORMAT structure

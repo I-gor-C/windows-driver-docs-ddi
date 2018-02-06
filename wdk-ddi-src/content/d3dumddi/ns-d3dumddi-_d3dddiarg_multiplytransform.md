@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._D3DDDIARG_MULTIPLYTRANSFORM
-title : "_D3DDDIARG_MULTIPLYTRANSFORM"
-author : windows-driver-content
-description : The D3DDDIARG_MULTIPLYTRANSFORM structure describes how to modify the current transform.
-old-location : display\d3dddiarg_multiplytransform.htm
-old-project : display
-ms.assetid : 4f14532f-8937-4715-aa9f-e38f18179af7
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3dumddi/D3DDDIARG_MULTIPLYTRANSFORM, D3DDDIARG_MULTIPLYTRANSFORM structure [Display Devices], display.d3dddiarg_multiplytransform, D3DDDIARG_MULTIPLYTRANSFORM, UMDisplayDriver_param_Structs_9bae119f-aead-46d7-8a10-18cd6e227102.xml, _D3DDDIARG_MULTIPLYTRANSFORM
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDIARG_MULTIPLYTRANSFORM
+UID: NS:d3dumddi._D3DDDIARG_MULTIPLYTRANSFORM
+title: "_D3DDDIARG_MULTIPLYTRANSFORM"
+author: windows-driver-content
+description: The D3DDDIARG_MULTIPLYTRANSFORM structure describes how to modify the current transform.
+old-location: display\d3dddiarg_multiplytransform.htm
+old-project: display
+ms.assetid: 4f14532f-8937-4715-aa9f-e38f18179af7
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3dumddi/D3DDDIARG_MULTIPLYTRANSFORM, D3DDDIARG_MULTIPLYTRANSFORM structure [Display Devices], display.d3dddiarg_multiplytransform, D3DDDIARG_MULTIPLYTRANSFORM, UMDisplayDriver_param_Structs_9bae119f-aead-46d7-8a10-18cd6e227102.xml, _D3DDDIARG_MULTIPLYTRANSFORM
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	D3DDDIARG_MULTIPLYTRANSFORM
+product: Windows
+targetos: Windows
+req.typenames: D3DDDIARG_MULTIPLYTRANSFORM
 ---
 
 # _D3DDDIARG_MULTIPLYTRANSFORM structure

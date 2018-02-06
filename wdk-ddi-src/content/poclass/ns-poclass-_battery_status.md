@@ -1,41 +1,46 @@
 ---
-UID : NS:poclass._BATTERY_STATUS
-title : "_BATTERY_STATUS"
-author : windows-driver-content
-description : The BATTERY_STATUS structure is used by battery miniclass drivers to return status information in response to a call to BatteryMiniQueryStatus.
-old-location : battery\battery_status.htm
-old-project : battery
-ms.assetid : 48df787b-f9f6-45d1-872c-ceeda3087af6
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : BATTERY_STATUS structure [Battery Devices], battery.battery_status, poclass/PBATTERY_STATUS, poclass/BATTERY_STATUS, bat-struct_11dfaf25-0f90-4c5b-8017-15fb2124423b.xml, *PBATTERY_STATUS, PBATTERY_STATUS, BATTERY_STATUS, _BATTERY_STATUS, PBATTERY_STATUS structure pointer [Battery Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : poclass.h
-req.include-header : Batclass.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Called at PASSIVE_LEVEL.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : BATTERY_STATUS, *PBATTERY_STATUS
+UID: NS:poclass._BATTERY_STATUS
+title: "_BATTERY_STATUS"
+author: windows-driver-content
+description: The BATTERY_STATUS structure is used by battery miniclass drivers to return status information in response to a call to BatteryMiniQueryStatus.
+old-location: battery\battery_status.htm
+old-project: battery
+ms.assetid: 48df787b-f9f6-45d1-872c-ceeda3087af6
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: BATTERY_STATUS structure [Battery Devices], battery.battery_status, poclass/PBATTERY_STATUS, poclass/BATTERY_STATUS, bat-struct_11dfaf25-0f90-4c5b-8017-15fb2124423b.xml, *PBATTERY_STATUS, PBATTERY_STATUS, BATTERY_STATUS, _BATTERY_STATUS, PBATTERY_STATUS structure pointer [Battery Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: poclass.h
+req.include-header: Batclass.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Called at PASSIVE_LEVEL.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	poclass.h
+apiname:
+-	BATTERY_STATUS
+product: Windows
+targetos: Windows
+req.typenames: BATTERY_STATUS, *PBATTERY_STATUS
 ---
 
 # _BATTERY_STATUS structure

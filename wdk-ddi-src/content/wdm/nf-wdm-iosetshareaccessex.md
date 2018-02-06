@@ -1,42 +1,48 @@
 ---
-UID : NF:wdm.IoSetShareAccessEx
-title : IoSetShareAccessEx function
-author : windows-driver-content
-description : The IoSetShareAccessEx routine sets the access rights for sharing the specified file object.
-old-location : kernel\iosetshareaccessex.htm
-old-project : kernel
-ms.assetid : 4DCC4A37-0099-4C6F-B00D-B6CAA7D1EC68
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/IoSetShareAccessEx, kernel.iosetshareaccessex, IoSetShareAccessEx, IoSetShareAccessEx routine [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : 
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 7 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ntoskrnl.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.IoSetShareAccessEx
+title: IoSetShareAccessEx function
+author: windows-driver-content
+description: The IoSetShareAccessEx routine sets the access rights for sharing the specified file object.
+old-location: kernel\iosetshareaccessex.htm
+old-project: kernel
+ms.assetid: 4DCC4A37-0099-4C6F-B00D-B6CAA7D1EC68
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/IoSetShareAccessEx, kernel.iosetshareaccessex, IoSetShareAccessEx, IoSetShareAccessEx routine [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: 
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 7 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ntoskrnl.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ntoskrnl.lib
+-	ntoskrnl.dll
+apiname:
+-	IoSetShareAccessEx
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

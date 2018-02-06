@@ -1,41 +1,46 @@
 ---
-UID : NE:ntddk._WHEA_ERROR_SOURCE_STATE
-title : "_WHEA_ERROR_SOURCE_STATE"
-author : windows-driver-content
-description : The WHEA_ERROR_SOURCE_STATE enumeration defines the different runtime states for an error source.
-old-location : whea\whea_error_source_state.htm
-old-project : whea
-ms.assetid : 7be90712-9f6f-4998-a8ca-148ff900c82c
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : WHEA_ERROR_SOURCE_STATE enumeration [WHEA Drivers and Applications], whea.whea_error_source_state, _WHEA_ERROR_SOURCE_STATE, WHEA_ERROR_SOURCE_STATE, ntddk/WHEA_ERROR_SOURCE_STATE, WheaErrSrcStateStopped, ntddk/WheaErrSrcStateStarted, WheaErrSrcStateStarted, ntddk/WheaErrSrcStateStopped, ntddk/PWHEA_ERROR_SOURCE_STATE, whearef_c6edca73-b5ec-4473-bbe3-9ed5e48f017d.xml, *PWHEA_ERROR_SOURCE_STATE, PWHEA_ERROR_SOURCE_STATE enumeration pointer [WHEA Drivers and Applications], PWHEA_ERROR_SOURCE_STATE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWHEA_ERROR_SOURCE_STATE, WHEA_ERROR_SOURCE_STATE"
+UID: NE:ntddk._WHEA_ERROR_SOURCE_STATE
+title: "_WHEA_ERROR_SOURCE_STATE"
+author: windows-driver-content
+description: The WHEA_ERROR_SOURCE_STATE enumeration defines the different runtime states for an error source.
+old-location: whea\whea_error_source_state.htm
+old-project: whea
+ms.assetid: 7be90712-9f6f-4998-a8ca-148ff900c82c
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: WHEA_ERROR_SOURCE_STATE enumeration [WHEA Drivers and Applications], whea.whea_error_source_state, _WHEA_ERROR_SOURCE_STATE, WHEA_ERROR_SOURCE_STATE, ntddk/WHEA_ERROR_SOURCE_STATE, WheaErrSrcStateStopped, ntddk/WheaErrSrcStateStarted, WheaErrSrcStateStarted, ntddk/WheaErrSrcStateStopped, ntddk/PWHEA_ERROR_SOURCE_STATE, whearef_c6edca73-b5ec-4473-bbe3-9ed5e48f017d.xml, *PWHEA_ERROR_SOURCE_STATE, PWHEA_ERROR_SOURCE_STATE enumeration pointer [WHEA Drivers and Applications], PWHEA_ERROR_SOURCE_STATE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddk.h
+apiname:
+-	WHEA_ERROR_SOURCE_STATE
+product: Windows
+targetos: Windows
+req.typenames: "*PWHEA_ERROR_SOURCE_STATE, WHEA_ERROR_SOURCE_STATE"
 ---
 
 # _WHEA_ERROR_SOURCE_STATE Enumeration
@@ -52,21 +57,21 @@ typedef enum _WHEA_ERROR_SOURCE_STATE {
 ## Constants
 
 <table>
-
-<tr>
-<td>WheaErrSrcStateStarted</td>
-<td>The error source is started.</td>
-</tr>
-
-<tr>
-<td>WheaErrSrcStateStopped</td>
-<td>The error source is stopped.</td>
-</tr>
+            
+                <tr>
+                    <td>WheaErrSrcStateStarted</td>
+                    <td>The error source is started.</td>
+                </tr>
+            
+                <tr>
+                    <td>WheaErrSrcStateStopped</td>
+                    <td>The error source is stopped.</td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-The <a href="..\ntddk\ns-ntddk-_whea_error_source_descriptor.md">WHEA_ERROR_SOURCE_DESCRIPTOR</a> structure contains a member of type WHEA_ERROR_SOURCE_STATE that indicates the runtime state of the error source.
+        The <a href="..\ntddk\ns-ntddk-_whea_error_source_descriptor.md">WHEA_ERROR_SOURCE_DESCRIPTOR</a> structure contains a member of type WHEA_ERROR_SOURCE_STATE that indicates the runtime state of the error source.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -74,9 +79,9 @@ The <a href="..\ntddk\ns-ntddk-_whea_error_source_descriptor.md">WHEA_ERROR_SOUR
 | **Windows version** | Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows. Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows. |
 | **Header** | ntddk.h (include Ntddk.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\ntddk\ns-ntddk-_whea_error_source_descriptor.md">WHEA_ERROR_SOURCE_DESCRIPTOR</a>
+        <a href="..\ntddk\ns-ntddk-_whea_error_source_descriptor.md">WHEA_ERROR_SOURCE_DESCRIPTOR</a>
 
  
 

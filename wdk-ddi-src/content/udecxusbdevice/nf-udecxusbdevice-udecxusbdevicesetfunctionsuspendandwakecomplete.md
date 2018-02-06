@@ -1,42 +1,48 @@
 ---
-UID : NF:udecxusbdevice.UdecxUsbDeviceSetFunctionSuspendAndWakeComplete
-title : UdecxUsbDeviceSetFunctionSuspendAndWakeComplete function
-author : windows-driver-content
-description : Completes an asynchronous request for changing the power state of a particular function of a virtual USB 3.0 device.
-old-location : buses\udecxusbdevicesetfunctionsuspendandwakecomplete.htm
-old-project : usbref
-ms.assetid : 21339CB5-8529-4649-9F1A-9D8C80709407
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : UdecxUsbDeviceSetFunctionSuspendAndWakeComplete function [Buses], buses.udecxusbdevicesetfunctionsuspendandwakecomplete, UdecxUsbDeviceSetFunctionSuspendAndWakeComplete, udecxusbdevice/UdecxUsbDeviceSetFunctionSuspendAndWakeComplete
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : udecxusbdevice.h
-req.include-header : Udecx.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 1.15
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Udecxstub.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUDECX_USB_DEVICE_WAKE_SETTING, UDECX_USB_DEVICE_WAKE_SETTING"
-req.product : Windows 10 or later.
+UID: NF:udecxusbdevice.UdecxUsbDeviceSetFunctionSuspendAndWakeComplete
+title: UdecxUsbDeviceSetFunctionSuspendAndWakeComplete function
+author: windows-driver-content
+description: Completes an asynchronous request for changing the power state of a particular function of a virtual USB 3.0 device.
+old-location: buses\udecxusbdevicesetfunctionsuspendandwakecomplete.htm
+old-project: usbref
+ms.assetid: 21339CB5-8529-4649-9F1A-9D8C80709407
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: UdecxUsbDeviceSetFunctionSuspendAndWakeComplete function [Buses], buses.udecxusbdevicesetfunctionsuspendandwakecomplete, UdecxUsbDeviceSetFunctionSuspendAndWakeComplete, udecxusbdevice/UdecxUsbDeviceSetFunctionSuspendAndWakeComplete
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: udecxusbdevice.h
+req.include-header: Udecx.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 1.15
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Udecxstub.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Udecxstub.lib
+-	Udecxstub.dll
+apiname:
+-	UdecxUsbDeviceSetFunctionSuspendAndWakeComplete
+product: Windows
+targetos: Windows
+req.typenames: "*PUDECX_USB_DEVICE_WAKE_SETTING, UDECX_USB_DEVICE_WAKE_SETTING"
+req.product: Windows 10 or later.
 ---
 
 

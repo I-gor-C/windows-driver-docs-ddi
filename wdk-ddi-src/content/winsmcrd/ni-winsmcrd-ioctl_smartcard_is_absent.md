@@ -1,42 +1,47 @@
 ---
-UID : NI:winsmcrd.IOCTL_SMARTCARD_IS_ABSENT
-title : IOCTL_SMARTCARD_IS_ABSENT
-author : windows-driver-content
-description : The IOCTL_SMARTCARD_IS_ABSENT control code returns immediately with STATUS_SUCCESS if no smart card is currently detected.
-old-location : nfpdrivers\ioctl_smartcard_is_absent.htm
-old-project : nfpdrivers
-ms.assetid : A9E4404C-D307-4137-B640-AF28A962B2AD
-ms.author : windowsdriverdev
-ms.date : 12/18/2017
-ms.keywords : nfpdrivers.ioctl_smartcard_is_absent, IOCTL_SMARTCARD_IS_ABSENT control code [Near-Field Proximity Drivers], IOCTL_SMARTCARD_IS_ABSENT, winsmcrd/IOCTL_SMARTCARD_IS_ABSENT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : winsmcrd.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDOT11_WPS_DEVICE_NAME, DOT11_WPS_DEVICE_NAME"
-req.product : Windows 10 or later.
+UID: NI:winsmcrd.IOCTL_SMARTCARD_IS_ABSENT
+title: IOCTL_SMARTCARD_IS_ABSENT
+author: windows-driver-content
+description: The IOCTL_SMARTCARD_IS_ABSENT control code returns immediately with STATUS_SUCCESS if no smart card is currently detected.
+old-location: nfpdrivers\ioctl_smartcard_is_absent.htm
+old-project: nfpdrivers
+ms.assetid: A9E4404C-D307-4137-B640-AF28A962B2AD
+ms.author: windowsdriverdev
+ms.date: 12/18/2017
+ms.keywords: nfpdrivers.ioctl_smartcard_is_absent, IOCTL_SMARTCARD_IS_ABSENT control code [Near-Field Proximity Drivers], IOCTL_SMARTCARD_IS_ABSENT, winsmcrd/IOCTL_SMARTCARD_IS_ABSENT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: winsmcrd.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	winsmcrd.h
+apiname:
+-	IOCTL_SMARTCARD_IS_ABSENT
+product: Windows
+targetos: Windows
+req.typenames: "*PDOT11_WPS_DEVICE_NAME, DOT11_WPS_DEVICE_NAME"
+req.product: Windows 10 or later.
 ---
 
 # IOCTL_SMARTCARD_IS_ABSENT IOCTL

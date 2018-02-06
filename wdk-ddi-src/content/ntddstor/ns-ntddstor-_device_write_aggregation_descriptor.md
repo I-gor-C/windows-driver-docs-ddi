@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddstor._DEVICE_WRITE_AGGREGATION_DESCRIPTOR
-title : "_DEVICE_WRITE_AGGREGATION_DESCRIPTOR"
-author : windows-driver-content
-description : Reserved for system use.
-old-location : storage\device_write_aggregation_descriptor.htm
-old-project : storage
-ms.assetid : 7AACFA1A-4B56-4B51-91B6-5FA30918E516
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : "_DEVICE_WRITE_AGGREGATION_DESCRIPTOR, DEVICE_WRITE_AGGREGATION_DESCRIPTOR, DEVICE_WRITE_AGGREGATION_DESCRIPTOR structure [Storage Devices], ntddstor/DEVICE_WRITE_AGGREGATION_DESCRIPTOR, PDEVICE_WRITE_AGGREGATION_DESCRIPTOR structure pointer [Storage Devices], ntddstor/PDEVICE_WRITE_AGGREGATION_DESCRIPTOR, PDEVICE_WRITE_AGGREGATION_DESCRIPTOR, *PDEVICE_WRITE_AGGREGATION_DESCRIPTOR, storage.device_write_aggregation_descriptor"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddstor.h
-req.include-header : Ntddstor.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 7
-req.target-min-winversvr : Windows Server 2008 R2
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDEVICE_WRITE_AGGREGATION_DESCRIPTOR, DEVICE_WRITE_AGGREGATION_DESCRIPTOR"
+UID: NS:ntddstor._DEVICE_WRITE_AGGREGATION_DESCRIPTOR
+title: "_DEVICE_WRITE_AGGREGATION_DESCRIPTOR"
+author: windows-driver-content
+description: Reserved for system use.
+old-location: storage\device_write_aggregation_descriptor.htm
+old-project: storage
+ms.assetid: 7AACFA1A-4B56-4B51-91B6-5FA30918E516
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: "_DEVICE_WRITE_AGGREGATION_DESCRIPTOR, DEVICE_WRITE_AGGREGATION_DESCRIPTOR, DEVICE_WRITE_AGGREGATION_DESCRIPTOR structure [Storage Devices], ntddstor/DEVICE_WRITE_AGGREGATION_DESCRIPTOR, PDEVICE_WRITE_AGGREGATION_DESCRIPTOR structure pointer [Storage Devices], ntddstor/PDEVICE_WRITE_AGGREGATION_DESCRIPTOR, PDEVICE_WRITE_AGGREGATION_DESCRIPTOR, *PDEVICE_WRITE_AGGREGATION_DESCRIPTOR, storage.device_write_aggregation_descriptor"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddstor.h
+req.include-header: Ntddstor.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 7
+req.target-min-winversvr: Windows Server 2008 R2
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddstor.h
+apiname:
+-	DEVICE_WRITE_AGGREGATION_DESCRIPTOR
+product: Windows
+targetos: Windows
+req.typenames: "*PDEVICE_WRITE_AGGREGATION_DESCRIPTOR, DEVICE_WRITE_AGGREGATION_DESCRIPTOR"
 ---
 
 # _DEVICE_WRITE_AGGREGATION_DESCRIPTOR structure

@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.CcRemapBcb
-title : CcRemapBcb function
-author : windows-driver-content
-description : The CcRemapBcb routine maps a buffer control block (BCB) an additional time to preserve it through several calls that perform additional maps and unpins.
-old-location : ifsk\ccremapbcb.htm
-old-project : ifsk
-ms.assetid : e8855baf-ce75-4a4c-bbbe-d1a7e5a65907
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ntifs/CcRemapBcb, CcRemapBcb, CcRemapBcb routine [Installable File System Drivers], ccref_64bd8036-ecdd-48bd-8894-fea7f28cc3be.xml, ifsk.ccremapbcb
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available on Microsoft Windows 2000 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.CcRemapBcb
+title: CcRemapBcb function
+author: windows-driver-content
+description: The CcRemapBcb routine maps a buffer control block (BCB) an additional time to preserve it through several calls that perform additional maps and unpins.
+old-location: ifsk\ccremapbcb.htm
+old-project: ifsk
+ms.assetid: e8855baf-ce75-4a4c-bbbe-d1a7e5a65907
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ntifs/CcRemapBcb, CcRemapBcb, CcRemapBcb routine [Installable File System Drivers], ccref_64bd8036-ecdd-48bd-8894-fea7f28cc3be.xml, ifsk.ccremapbcb
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available on Microsoft Windows 2000 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	CcRemapBcb
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

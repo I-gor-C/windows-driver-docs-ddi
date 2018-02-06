@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.KSPROPERTY_CROSSBAR_ROUTE_S
-title : KSPROPERTY_CROSSBAR_ROUTE_S
-author : windows-driver-content
-description : The KSPROPERTY_CROSSBAR_ROUTE_S structure describes whether a particular routing is possible and specifies the current routing for a pin.
-old-location : stream\ksproperty_crossbar_route_s.htm
-old-project : stream
-ms.assetid : 0db68fcd-8661-41d2-ac95-e9b6033e6aa8
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.ksproperty_crossbar_route_s, KSPROPERTY_CROSSBAR_ROUTE_S, *PKSPROPERTY_CROSSBAR_ROUTE_S, ksmedia/PKSPROPERTY_CROSSBAR_ROUTE_S, PKSPROPERTY_CROSSBAR_ROUTE_S structure pointer [Streaming Media Devices], PKSPROPERTY_CROSSBAR_ROUTE_S, ksmedia/KSPROPERTY_CROSSBAR_ROUTE_S, KSPROPERTY_CROSSBAR_ROUTE_S structure [Streaming Media Devices], vidcapstruct_a1d08316-6a91-4f40-93d2-b371c6e35eff.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KSPROPERTY_CROSSBAR_ROUTE_S, *PKSPROPERTY_CROSSBAR_ROUTE_S
+UID: NS:ksmedia.KSPROPERTY_CROSSBAR_ROUTE_S
+title: KSPROPERTY_CROSSBAR_ROUTE_S
+author: windows-driver-content
+description: The KSPROPERTY_CROSSBAR_ROUTE_S structure describes whether a particular routing is possible and specifies the current routing for a pin.
+old-location: stream\ksproperty_crossbar_route_s.htm
+old-project: stream
+ms.assetid: 0db68fcd-8661-41d2-ac95-e9b6033e6aa8
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.ksproperty_crossbar_route_s, KSPROPERTY_CROSSBAR_ROUTE_S, *PKSPROPERTY_CROSSBAR_ROUTE_S, ksmedia/PKSPROPERTY_CROSSBAR_ROUTE_S, PKSPROPERTY_CROSSBAR_ROUTE_S structure pointer [Streaming Media Devices], PKSPROPERTY_CROSSBAR_ROUTE_S, ksmedia/KSPROPERTY_CROSSBAR_ROUTE_S, KSPROPERTY_CROSSBAR_ROUTE_S structure [Streaming Media Devices], vidcapstruct_a1d08316-6a91-4f40-93d2-b371c6e35eff.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	KSPROPERTY_CROSSBAR_ROUTE_S
+product: Windows
+targetos: Windows
+req.typenames: KSPROPERTY_CROSSBAR_ROUTE_S, *PKSPROPERTY_CROSSBAR_ROUTE_S
 ---
 
 # KSPROPERTY_CROSSBAR_ROUTE_S structure

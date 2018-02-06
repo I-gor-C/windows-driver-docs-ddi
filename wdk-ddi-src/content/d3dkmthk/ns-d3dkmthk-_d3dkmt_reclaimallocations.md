@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmthk._D3DKMT_RECLAIMALLOCATIONS
-title : "_D3DKMT_RECLAIMALLOCATIONS"
-author : windows-driver-content
-description : Describes video memory resources that are to be reclaimed and that the driver previously offered for reuse. Used with the D3DKMTReclaimAllocations function.
-old-location : display\d3dkmt_reclaimallocations.htm
-old-project : display
-ms.assetid : 7fc9295b-90b4-4fa7-abcb-3e3e6a165203
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : "_D3DKMT_RECLAIMALLOCATIONS, D3DKMT_RECLAIMALLOCATIONS structure [Display Devices], d3dkmthk/D3DKMT_RECLAIMALLOCATIONS, display.d3dkmt_reclaimallocations, D3DKMT_RECLAIMALLOCATIONS"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_RECLAIMALLOCATIONS
+UID: NS:d3dkmthk._D3DKMT_RECLAIMALLOCATIONS
+title: "_D3DKMT_RECLAIMALLOCATIONS"
+author: windows-driver-content
+description: Describes video memory resources that are to be reclaimed and that the driver previously offered for reuse. Used with the D3DKMTReclaimAllocations function.
+old-location: display\d3dkmt_reclaimallocations.htm
+old-project: display
+ms.assetid: 7fc9295b-90b4-4fa7-abcb-3e3e6a165203
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: "_D3DKMT_RECLAIMALLOCATIONS, D3DKMT_RECLAIMALLOCATIONS structure [Display Devices], d3dkmthk/D3DKMT_RECLAIMALLOCATIONS, display.d3dkmt_reclaimallocations, D3DKMT_RECLAIMALLOCATIONS"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	D3dkmthk.h
+apiname:
+-	D3DKMT_RECLAIMALLOCATIONS
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_RECLAIMALLOCATIONS
 ---
 
 # _D3DKMT_RECLAIMALLOCATIONS structure

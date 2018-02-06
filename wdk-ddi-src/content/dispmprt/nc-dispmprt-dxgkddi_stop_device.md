@@ -1,41 +1,46 @@
 ---
-UID : NC:dispmprt.DXGKDDI_STOP_DEVICE
-title : DXGKDDI_STOP_DEVICE
-author : windows-driver-content
-description : The DxgkDdiStopDevice function resets a display adapter and frees resources allocated during DxgkDdiStartDevice.
-old-location : display\dxgkddistopdevice.htm
-old-project : display
-ms.assetid : 3c17c7cf-9cfa-421d-a503-88726519fb6c
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkddistopdevice, DxgkDdiStopDevice callback function [Display Devices], DxgkDdiStopDevice, DXGKDDI_STOP_DEVICE, DXGKDDI_STOP_DEVICE, dispmprt/DxgkDdiStopDevice, DmFunctions_c2d7e95b-beba-488a-b046-98e5daa728b9.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : dispmprt.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
+UID: NC:dispmprt.DXGKDDI_STOP_DEVICE
+title: DXGKDDI_STOP_DEVICE
+author: windows-driver-content
+description: The DxgkDdiStopDevice function resets a display adapter and frees resources allocated during DxgkDdiStartDevice.
+old-location: display\dxgkddistopdevice.htm
+old-project: display
+ms.assetid: 3c17c7cf-9cfa-421d-a503-88726519fb6c
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkddistopdevice, DxgkDdiStopDevice callback function [Display Devices], DxgkDdiStopDevice, DXGKDDI_STOP_DEVICE, DXGKDDI_STOP_DEVICE, dispmprt/DxgkDdiStopDevice, DmFunctions_c2d7e95b-beba-488a-b046-98e5daa728b9.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: dispmprt.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	dispmprt.h
+apiname:
+-	DxgkDdiStopDevice
+product: Windows
+targetos: Windows
+req.typenames: SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ---
 
 

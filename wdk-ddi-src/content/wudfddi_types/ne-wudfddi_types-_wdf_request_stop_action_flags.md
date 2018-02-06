@@ -1,42 +1,47 @@
 ---
-UID : NE:wudfddi_types._WDF_REQUEST_STOP_ACTION_FLAGS
-title : "_WDF_REQUEST_STOP_ACTION_FLAGS"
-author : windows-driver-content
-description : The WDF_REQUEST_STOP_ACTION_FLAGS enumeration contains values that identify the state of a stop action request in a call to the driver's IQueueCallbackIoStop::OnIoStop method.
-old-location : wdf\wdf_request_stop_action_flags_umdf.htm
-old-project : wdf
-ms.assetid : b9e3ea22-be24-4f36-abde-339495b9ed1c
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wudfddi_types/WdfRequestStopRequestCancelable, umdf.wdf_request_stop_action_flags, WdfRequestStopRequestCancelable, umdfstructs_ecbf4eac-7d5f-4c44-a8c3-96731737264b.xml, wudfddi_types/WdfRequestStopActionSuspend, wudfddi_types/WdfRequestStopActionInvalid, WDF_REQUEST_STOP_ACTION_FLAGS enumeration, wudfddi_types/WDF_REQUEST_STOP_ACTION_FLAGS, WdfRequestStopActionPurge, WdfRequestStopActionInvalid, wudfddi_types/WdfRequestStopActionPurge, _WDF_REQUEST_STOP_ACTION_FLAGS, WdfRequestStopActionSuspend, wdf.wdf_request_stop_action_flags_umdf, WDF_REQUEST_STOP_ACTION_FLAGS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : wudfddi_types.h
-req.include-header : Wudfddi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_REQUEST_STOP_ACTION_FLAGS
-req.product : Windows 10 or later.
+UID: NE:wudfddi_types._WDF_REQUEST_STOP_ACTION_FLAGS
+title: "_WDF_REQUEST_STOP_ACTION_FLAGS"
+author: windows-driver-content
+description: The WDF_REQUEST_STOP_ACTION_FLAGS enumeration contains values that identify the state of a stop action request in a call to the driver's IQueueCallbackIoStop::OnIoStop method.
+old-location: wdf\wdf_request_stop_action_flags_umdf.htm
+old-project: wdf
+ms.assetid: b9e3ea22-be24-4f36-abde-339495b9ed1c
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wudfddi_types/WdfRequestStopRequestCancelable, umdf.wdf_request_stop_action_flags, WdfRequestStopRequestCancelable, umdfstructs_ecbf4eac-7d5f-4c44-a8c3-96731737264b.xml, wudfddi_types/WdfRequestStopActionSuspend, wudfddi_types/WdfRequestStopActionInvalid, WDF_REQUEST_STOP_ACTION_FLAGS enumeration, wudfddi_types/WDF_REQUEST_STOP_ACTION_FLAGS, WdfRequestStopActionPurge, WdfRequestStopActionInvalid, wudfddi_types/WdfRequestStopActionPurge, _WDF_REQUEST_STOP_ACTION_FLAGS, WdfRequestStopActionSuspend, wdf.wdf_request_stop_action_flags_umdf, WDF_REQUEST_STOP_ACTION_FLAGS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: wudfddi_types.h
+req.include-header: Wudfddi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wudfddi_types.h
+apiname:
+-	WDF_REQUEST_STOP_ACTION_FLAGS
+product: Windows
+targetos: Windows
+req.typenames: WDF_REQUEST_STOP_ACTION_FLAGS
+req.product: Windows 10 or later.
 ---
 
 # _WDF_REQUEST_STOP_ACTION_FLAGS Enumeration
@@ -58,26 +63,26 @@ typedef enum _WDF_REQUEST_STOP_ACTION_FLAGS {
 ## Constants
 
 <table>
-
-<tr>
-<td>WdfRequestStopActionInvalid</td>
-<td>If this value is set to 1, the request is invalid.</td>
-</tr>
-
-<tr>
-<td>WdfRequestStopActionPurge</td>
-<td>If this value is set to 1, the device and queue are removed.</td>
-</tr>
-
-<tr>
-<td>WdfRequestStopActionSuspend</td>
-<td>If this value is set to 1, the device is suspended.</td>
-</tr>
-
-<tr>
-<td>WdfRequestStopRequestCancelable</td>
-<td>If this value is set to 1, the request is marked as cancelable.</td>
-</tr>
+            
+                <tr>
+                    <td>WdfRequestStopActionInvalid</td>
+                    <td>If this value is set to 1, the request is invalid.</td>
+                </tr>
+            
+                <tr>
+                    <td>WdfRequestStopActionPurge</td>
+                    <td>If this value is set to 1, the device and queue are removed.</td>
+                </tr>
+            
+                <tr>
+                    <td>WdfRequestStopActionSuspend</td>
+                    <td>If this value is set to 1, the device is suspended.</td>
+                </tr>
+            
+                <tr>
+                    <td>WdfRequestStopRequestCancelable</td>
+                    <td>If this value is set to 1, the request is marked as cancelable.</td>
+                </tr>
 </table>
 
 
@@ -86,9 +91,9 @@ typedef enum _WDF_REQUEST_STOP_ACTION_FLAGS {
 | ---- |:---- |
 | **Header** | wudfddi_types.h (include Wudfddi.h) |
 
-## See Also
+    ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556871">IQueueCallbackIoStop::OnIoStop</a>
+        <a href="https://msdn.microsoft.com/library/windows/hardware/ff556871">IQueueCallbackIoStop::OnIoStop</a>
 
  
 

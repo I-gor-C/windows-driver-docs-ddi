@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dhal._DD_GETFORMATDATA
-title : "_DD_GETFORMATDATA"
-author : windows-driver-content
-description : DD_GETFORMATDATA is the data structure pointed to by the lpvData field of DD_GETDRIVERINFODATA for DD_GETDRIVERINFO2DATA queries with the type D3DGDI2_TYPE_GETFORMAT.
-old-location : display\dd_getformatdata.htm
-old-project : display
-ms.assetid : 881a52d1-8e37-4474-a943-086ef5ceca80
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3dhal/DD_GETFORMATDATA, _DD_GETFORMATDATA, display.dd_getformatdata, DD_GETFORMATDATA, d3dstrct_cfa9e4e0-86d8-4b38-9c50-8661012c34e8.xml, DD_GETFORMATDATA structure [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dhal.h
-req.include-header : D3dhal.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DD_GETFORMATDATA
+UID: NS:d3dhal._DD_GETFORMATDATA
+title: "_DD_GETFORMATDATA"
+author: windows-driver-content
+description: DD_GETFORMATDATA is the data structure pointed to by the lpvData field of DD_GETDRIVERINFODATA for DD_GETDRIVERINFO2DATA queries with the type D3DGDI2_TYPE_GETFORMAT.
+old-location: display\dd_getformatdata.htm
+old-project: display
+ms.assetid: 881a52d1-8e37-4474-a943-086ef5ceca80
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3dhal/DD_GETFORMATDATA, _DD_GETFORMATDATA, display.dd_getformatdata, DD_GETFORMATDATA, d3dstrct_cfa9e4e0-86d8-4b38-9c50-8661012c34e8.xml, DD_GETFORMATDATA structure [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dhal.h
+req.include-header: D3dhal.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dhal.h
+apiname:
+-	DD_GETFORMATDATA
+product: Windows
+targetos: Windows
+req.typenames: DD_GETFORMATDATA
 ---
 
 # _DD_GETFORMATDATA structure

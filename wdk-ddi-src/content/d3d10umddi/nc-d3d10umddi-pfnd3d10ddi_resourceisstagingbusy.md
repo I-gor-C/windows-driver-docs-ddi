@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3D10DDI_RESOURCEISSTAGINGBUSY
-title : PFND3D10DDI_RESOURCEISSTAGINGBUSY
-author : windows-driver-content
-description : The ResourceIsStagingBusy function determines whether a resource is currently being used by the graphics pipeline.
-old-location : display\resourceisstagingbusy.htm
-old-project : display
-ms.assetid : df8498e2-a3b5-4bc8-b6d2-0d444f1d1485
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.resourceisstagingbusy, ResourceIsStagingBusy callback function [Display Devices], ResourceIsStagingBusy, PFND3D10DDI_RESOURCEISSTAGINGBUSY, PFND3D10DDI_RESOURCEISSTAGINGBUSY, d3d10umddi/ResourceIsStagingBusy, UserModeDisplayDriverDx10_Functions_4109ed72-e2a5-4b1a-bfc6-7e5ce9227efc.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3D10DDI_RESOURCEISSTAGINGBUSY
+title: PFND3D10DDI_RESOURCEISSTAGINGBUSY
+author: windows-driver-content
+description: The ResourceIsStagingBusy function determines whether a resource is currently being used by the graphics pipeline.
+old-location: display\resourceisstagingbusy.htm
+old-project: display
+ms.assetid: df8498e2-a3b5-4bc8-b6d2-0d444f1d1485
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.resourceisstagingbusy, ResourceIsStagingBusy callback function [Display Devices], ResourceIsStagingBusy, PFND3D10DDI_RESOURCEISSTAGINGBUSY, PFND3D10DDI_RESOURCEISSTAGINGBUSY, d3d10umddi/ResourceIsStagingBusy, UserModeDisplayDriverDx10_Functions_4109ed72-e2a5-4b1a-bfc6-7e5ce9227efc.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	ResourceIsStagingBusy
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGKARG_CANCELCOMMAND
-title : "_DXGKARG_CANCELCOMMAND"
-author : windows-driver-content
-description : Specifies internal resources that are cleaned up by the DxgkDdiCancelCommand function after a command is removed from the hardware queue.
-old-location : display\dxgkarg_cancelcommand.htm
-old-project : display
-ms.assetid : c0066718-50d0-4bd2-a1bf-678c3f6b9253
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3dkmddi/DXGKARG_CANCELCOMMAND, display.dxgkarg_cancelcommand, _DXGKARG_CANCELCOMMAND, DXGKARG_CANCELCOMMAND structure [Display Devices], DXGKARG_CANCELCOMMAND
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGKARG_CANCELCOMMAND
+UID: NS:d3dkmddi._DXGKARG_CANCELCOMMAND
+title: "_DXGKARG_CANCELCOMMAND"
+author: windows-driver-content
+description: Specifies internal resources that are cleaned up by the DxgkDdiCancelCommand function after a command is removed from the hardware queue.
+old-location: display\dxgkarg_cancelcommand.htm
+old-project: display
+ms.assetid: c0066718-50d0-4bd2-a1bf-678c3f6b9253
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3dkmddi/DXGKARG_CANCELCOMMAND, display.dxgkarg_cancelcommand, _DXGKARG_CANCELCOMMAND, DXGKARG_CANCELCOMMAND structure [Display Devices], DXGKARG_CANCELCOMMAND
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	D3dkmddi.h
+apiname:
+-	DXGKARG_CANCELCOMMAND
+product: Windows
+targetos: Windows
+req.typenames: DXGKARG_CANCELCOMMAND
 ---
 
 # _DXGKARG_CANCELCOMMAND structure

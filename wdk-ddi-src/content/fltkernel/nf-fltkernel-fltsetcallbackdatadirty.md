@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltSetCallbackDataDirty
-title : FltSetCallbackDataDirty function
-author : windows-driver-content
-description : A minifilter driver's preoperation or postoperation callback routine calls FltSetCallbackDataDirty to indicate that it has modified the contents of the callback data structure.
-old-location : ifsk\fltsetcallbackdatadirty.htm
-old-project : ifsk
-ms.assetid : aee13598-84ff-48ef-96a6-e6f710c1e880
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltSetCallbackDataDirty, FltSetCallbackDataDirty routine [Installable File System Drivers], fltkernel/FltSetCallbackDataDirty, FltApiRef_p_to_z_6442dbc2-9375-4dc9-bf38-8c7d1005ec74.xml, ifsk.fltsetcallbackdatadirty
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Fltmgr.lib
-req.dll : Fltmgr.sys
-req.irql : Any
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltSetCallbackDataDirty
+title: FltSetCallbackDataDirty function
+author: windows-driver-content
+description: A minifilter driver's preoperation or postoperation callback routine calls FltSetCallbackDataDirty to indicate that it has modified the contents of the callback data structure.
+old-location: ifsk\fltsetcallbackdatadirty.htm
+old-project: ifsk
+ms.assetid: aee13598-84ff-48ef-96a6-e6f710c1e880
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltSetCallbackDataDirty, FltSetCallbackDataDirty routine [Installable File System Drivers], fltkernel/FltSetCallbackDataDirty, FltApiRef_p_to_z_6442dbc2-9375-4dc9-bf38-8c7d1005ec74.xml, ifsk.fltsetcallbackdatadirty
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Fltmgr.lib
+req.dll: Fltmgr.sys
+req.irql: Any
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltSetCallbackDataDirty
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

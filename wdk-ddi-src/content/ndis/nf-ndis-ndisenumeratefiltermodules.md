@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisEnumerateFilterModules
-title : NdisEnumerateFilterModules function
-author : windows-driver-content
-description : The NdisEnumerateFilterModules function enumerates all the filters modules and filter intermediate driver instances in a filter stack.
-old-location : netvista\ndisenumeratefiltermodules.htm
-old-project : netvista
-ms.assetid : cab7609e-cf87-46f6-af23-891e19ef1b80
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NdisEnumerateFilterModules function [Network Drivers Starting with Windows Vista], ndis/NdisEnumerateFilterModules, NdisEnumerateFilterModules, netvista.ndisenumeratefiltermodules, filter_ndis_functions_ref_3caad0fd-b579-4787-bebb-b1a93726cbf0.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_Filter_Driver_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisEnumerateFilterModules
+title: NdisEnumerateFilterModules function
+author: windows-driver-content
+description: The NdisEnumerateFilterModules function enumerates all the filters modules and filter intermediate driver instances in a filter stack.
+old-location: netvista\ndisenumeratefiltermodules.htm
+old-project: netvista
+ms.assetid: cab7609e-cf87-46f6-af23-891e19ef1b80
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NdisEnumerateFilterModules function [Network Drivers Starting with Windows Vista], ndis/NdisEnumerateFilterModules, NdisEnumerateFilterModules, netvista.ndisenumeratefiltermodules, filter_ndis_functions_ref_3caad0fd-b579-4787-bebb-b1a93726cbf0.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_Filter_Driver_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisEnumerateFilterModules
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

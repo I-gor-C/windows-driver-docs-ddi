@@ -1,42 +1,47 @@
 ---
-UID : NS:strmini._HW_STREAM_REQUEST_BLOCK
-title : "_HW_STREAM_REQUEST_BLOCK"
-author : windows-driver-content
-description : The stream class driver uses the HW_STREAM_REQUEST_BLOCK structure to pass information to and from the minidriver, using minidriver provided callbacks.
-old-location : stream\hw_stream_request_block.htm
-old-project : stream
-ms.assetid : e2a19bb1-631d-4160-9980-f3cbeb0b085a
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : strmini/HW_STREAM_REQUEST_BLOCK, strmini/PHW_STREAM_REQUEST_BLOCK, PHW_STREAM_REQUEST_BLOCK structure pointer [Streaming Media Devices], HW_STREAM_REQUEST_BLOCK, _HW_STREAM_REQUEST_BLOCK, PHW_STREAM_REQUEST_BLOCK, strclass-struct_4b0da124-b08a-49fe-acbc-9457db500b26.xml, *PHW_STREAM_REQUEST_BLOCK, HW_STREAM_REQUEST_BLOCK structure [Streaming Media Devices], stream.hw_stream_request_block
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : strmini.h
-req.include-header : Strmini.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PHW_STREAM_REQUEST_BLOCK, HW_STREAM_REQUEST_BLOCK"
-req.product : Windows 10 or later.
+UID: NS:strmini._HW_STREAM_REQUEST_BLOCK
+title: "_HW_STREAM_REQUEST_BLOCK"
+author: windows-driver-content
+description: The stream class driver uses the HW_STREAM_REQUEST_BLOCK structure to pass information to and from the minidriver, using minidriver provided callbacks.
+old-location: stream\hw_stream_request_block.htm
+old-project: stream
+ms.assetid: e2a19bb1-631d-4160-9980-f3cbeb0b085a
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: strmini/HW_STREAM_REQUEST_BLOCK, strmini/PHW_STREAM_REQUEST_BLOCK, PHW_STREAM_REQUEST_BLOCK structure pointer [Streaming Media Devices], HW_STREAM_REQUEST_BLOCK, _HW_STREAM_REQUEST_BLOCK, PHW_STREAM_REQUEST_BLOCK, strclass-struct_4b0da124-b08a-49fe-acbc-9457db500b26.xml, *PHW_STREAM_REQUEST_BLOCK, HW_STREAM_REQUEST_BLOCK structure [Streaming Media Devices], stream.hw_stream_request_block
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: strmini.h
+req.include-header: Strmini.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	strmini.h
+apiname:
+-	HW_STREAM_REQUEST_BLOCK
+product: Windows
+targetos: Windows
+req.typenames: "*PHW_STREAM_REQUEST_BLOCK, HW_STREAM_REQUEST_BLOCK"
+req.product: Windows 10 or later.
 ---
 
 # _HW_STREAM_REQUEST_BLOCK structure

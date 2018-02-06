@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsFilterGenerateEvents
-title : KsFilterGenerateEvents function
-author : windows-driver-content
-description : The KsFilterGenerateEvents function generates events of an indicated type that are present in Filter's event list.
-old-location : stream\ksfiltergenerateevents.htm
-old-project : stream
-ms.assetid : 62340660-3419-4da6-8d58-c2f82b4231ba
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.ksfiltergenerateevents, avfunc_bf12d7bb-6ebf-460b-a2c2-24632c89b083.xml, KsFilterGenerateEvents function [Streaming Media Devices], ks/KsFilterGenerateEvents, KsFilterGenerateEvents
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL (See Remarks section.)"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsFilterGenerateEvents
+title: KsFilterGenerateEvents function
+author: windows-driver-content
+description: The KsFilterGenerateEvents function generates events of an indicated type that are present in Filter's event list.
+old-location: stream\ksfiltergenerateevents.htm
+old-project: stream
+ms.assetid: 62340660-3419-4da6-8d58-c2f82b4231ba
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.ksfiltergenerateevents, avfunc_bf12d7bb-6ebf-460b-a2c2-24632c89b083.xml, KsFilterGenerateEvents function [Streaming Media Devices], ks/KsFilterGenerateEvents, KsFilterGenerateEvents
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL (See Remarks section.)"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsFilterGenerateEvents
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

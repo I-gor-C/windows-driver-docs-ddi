@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsFilterFactoryAddCreateItem
-title : KsFilterFactoryAddCreateItem function
-author : windows-driver-content
-description : The KsFilterFactoryAddCreateItem function adds a new create item for the specified filter factory.
-old-location : stream\ksfilterfactoryaddcreateitem.htm
-old-project : stream
-ms.assetid : c09840fb-8195-4ac5-a164-ba4d82615344
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : avfunc_f4a42084-1d8f-49f8-a6d3-d09304e11049.xml, KsFilterFactoryAddCreateItem function [Streaming Media Devices], ks/KsFilterFactoryAddCreateItem, KsFilterFactoryAddCreateItem, stream.ksfilterfactoryaddcreateitem
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsFilterFactoryAddCreateItem
+title: KsFilterFactoryAddCreateItem function
+author: windows-driver-content
+description: The KsFilterFactoryAddCreateItem function adds a new create item for the specified filter factory.
+old-location: stream\ksfilterfactoryaddcreateitem.htm
+old-project: stream
+ms.assetid: c09840fb-8195-4ac5-a164-ba4d82615344
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: avfunc_f4a42084-1d8f-49f8-a6d3-d09304e11049.xml, KsFilterFactoryAddCreateItem function [Streaming Media Devices], ks/KsFilterFactoryAddCreateItem, KsFilterFactoryAddCreateItem, stream.ksfilterfactoryaddcreateitem
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsFilterFactoryAddCreateItem
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

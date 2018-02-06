@@ -1,41 +1,46 @@
 ---
-UID : NS:irb._IDE_CONTROLLER_CONFIGURATION
-title : "_IDE_CONTROLLER_CONFIGURATION"
-author : windows-driver-content
-description : The IDE_CONTROLLER_CONFIGURATION structure is used to pass controller configuration information between the port driver and the miniport driver.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
-old-location : storage\ide_controller_configuration.htm
-old-project : storage
-ms.assetid : 89b7f66e-3a3a-4723-a409-3b3030c1a45b
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : structs-ATA_c72d9d21-e06b-43e0-8854-8b682e2e0778.xml, storage.ide_controller_configuration, IDE_CONTROLLER_CONFIGURATION structure [Storage Devices], irb/PIDE_CONTROLLER_CONFIGURATION, *PIDE_CONTROLLER_CONFIGURATION, _IDE_CONTROLLER_CONFIGURATION, IDE_CONTROLLER_CONFIGURATION, irb/IDE_CONTROLLER_CONFIGURATION, PIDE_CONTROLLER_CONFIGURATION structure pointer [Storage Devices], PIDE_CONTROLLER_CONFIGURATION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : irb.h
-req.include-header : Irb.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PIDE_CONTROLLER_CONFIGURATION, IDE_CONTROLLER_CONFIGURATION"
+UID: NS:irb._IDE_CONTROLLER_CONFIGURATION
+title: "_IDE_CONTROLLER_CONFIGURATION"
+author: windows-driver-content
+description: The IDE_CONTROLLER_CONFIGURATION structure is used to pass controller configuration information between the port driver and the miniport driver.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
+old-location: storage\ide_controller_configuration.htm
+old-project: storage
+ms.assetid: 89b7f66e-3a3a-4723-a409-3b3030c1a45b
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: structs-ATA_c72d9d21-e06b-43e0-8854-8b682e2e0778.xml, storage.ide_controller_configuration, IDE_CONTROLLER_CONFIGURATION structure [Storage Devices], irb/PIDE_CONTROLLER_CONFIGURATION, *PIDE_CONTROLLER_CONFIGURATION, _IDE_CONTROLLER_CONFIGURATION, IDE_CONTROLLER_CONFIGURATION, irb/IDE_CONTROLLER_CONFIGURATION, PIDE_CONTROLLER_CONFIGURATION structure pointer [Storage Devices], PIDE_CONTROLLER_CONFIGURATION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: irb.h
+req.include-header: Irb.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	irb.h
+apiname:
+-	IDE_CONTROLLER_CONFIGURATION
+product: Windows
+targetos: Windows
+req.typenames: "*PIDE_CONTROLLER_CONFIGURATION, IDE_CONTROLLER_CONFIGURATION"
 ---
 
 # _IDE_CONTROLLER_CONFIGURATION structure

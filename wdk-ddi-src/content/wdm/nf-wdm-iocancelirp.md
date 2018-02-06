@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.IoCancelIrp
-title : IoCancelIrp function
-author : windows-driver-content
-description : The IoCancelIrp routine sets the cancel bit in a given IRP and calls the cancel routine for the IRP if there is one.
-old-location : kernel\iocancelirp.htm
-old-project : kernel
-ms.assetid : 8d991192-2df8-4b4d-a4c5-df5091492e67
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/IoCancelIrp, IoCancelIrp routine [Kernel-Mode Driver Architecture], IoCancelIrp, k104_b43eae94-7d4e-4649-b56c-498285b5033f.xml, kernel.iocancelirp
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.IoCancelIrp
+title: IoCancelIrp function
+author: windows-driver-content
+description: The IoCancelIrp routine sets the cancel bit in a given IRP and calls the cancel routine for the IRP if there is one.
+old-location: kernel\iocancelirp.htm
+old-project: kernel
+ms.assetid: 8d991192-2df8-4b4d-a4c5-df5091492e67
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/IoCancelIrp, IoCancelIrp routine [Kernel-Mode Driver Architecture], IoCancelIrp, k104_b43eae94-7d4e-4649-b56c-498285b5033f.xml, kernel.iocancelirp
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoCancelIrp
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

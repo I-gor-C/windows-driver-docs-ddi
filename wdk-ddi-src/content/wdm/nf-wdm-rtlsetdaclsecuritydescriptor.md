@@ -1,42 +1,48 @@
 ---
-UID : NF:wdm.RtlSetDaclSecurityDescriptor
-title : RtlSetDaclSecurityDescriptor function
-author : windows-driver-content
-description : The RtlSetDaclSecurityDescriptor routine sets the DACL information of an absolute-format security descriptor, or if there is already a DACL present in the security descriptor, it is superseded.
-old-location : kernel\rtlsetdaclsecuritydescriptor.htm
-old-project : kernel
-ms.assetid : d22f4a14-2293-4210-bead-5814484a1471
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : RtlSetDaclSecurityDescriptor, kernel.rtlsetdaclsecuritydescriptor, wdm/RtlSetDaclSecurityDescriptor, RtlSetDaclSecurityDescriptor routine [Kernel-Mode Driver Architecture], k109_b2723172-ac75-4ada-b421-ae144d10d560.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe (kernel mode); Ntdll.dll (user mode)
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.RtlSetDaclSecurityDescriptor
+title: RtlSetDaclSecurityDescriptor function
+author: windows-driver-content
+description: The RtlSetDaclSecurityDescriptor routine sets the DACL information of an absolute-format security descriptor, or if there is already a DACL present in the security descriptor, it is superseded.
+old-location: kernel\rtlsetdaclsecuritydescriptor.htm
+old-project: kernel
+ms.assetid: d22f4a14-2293-4210-bead-5814484a1471
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: RtlSetDaclSecurityDescriptor, kernel.rtlsetdaclsecuritydescriptor, wdm/RtlSetDaclSecurityDescriptor, RtlSetDaclSecurityDescriptor routine [Kernel-Mode Driver Architecture], k109_b2723172-ac75-4ada-b421-ae144d10d560.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe (kernel mode); Ntdll.dll (user mode)
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+-	Ntdll.dll
+apiname:
+-	RtlSetDaclSecurityDescriptor
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

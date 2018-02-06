@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.CcSetFileSizes
-title : CcSetFileSizes function
-author : windows-driver-content
-description : The CcSetFileSizes routine updates the cache maps and section object for a cached file whose size has changed.
-old-location : ifsk\ccsetfilesizes.htm
-old-project : ifsk
-ms.assetid : 1fc92167-ceab-4f8e-bd80-a8f1821846ed
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : CcSetFileSizes, ifsk.ccsetfilesizes, CcSetFileSizes routine [Installable File System Drivers], ccref_2d554d89-6378-4a7c-8984-cb54b9e9e01c.xml, ntifs/CcSetFileSizes
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.CcSetFileSizes
+title: CcSetFileSizes function
+author: windows-driver-content
+description: The CcSetFileSizes routine updates the cache maps and section object for a cached file whose size has changed.
+old-location: ifsk\ccsetfilesizes.htm
+old-project: ifsk
+ms.assetid: 1fc92167-ceab-4f8e-bd80-a8f1821846ed
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: CcSetFileSizes, ifsk.ccsetfilesizes, CcSetFileSizes routine [Installable File System Drivers], ccref_2d554d89-6378-4a7c-8984-cb54b9e9e01c.xml, ntifs/CcSetFileSizes
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	CcSetFileSizes
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

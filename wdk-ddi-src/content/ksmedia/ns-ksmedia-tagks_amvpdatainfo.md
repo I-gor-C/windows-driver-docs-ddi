@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.tagKS_AMVPDATAINFO
-title : tagKS_AMVPDATAINFO
-author : windows-driver-content
-description : The KS_AMVPDATAINFO structure is used to describe the properties of a video port.
-old-location : stream\ks_amvpdatainfo.htm
-old-project : stream
-ms.assetid : 4c217cf8-ca93-4e5d-8cbc-c56794f96d50
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : "*PKS_AMVPDATAINFO, KS_AMVPDATAINFO structure [Streaming Media Devices], ksmedia/KS_AMVPDATAINFO, tagKS_AMVPDATAINFO, stream.ks_amvpdatainfo, dvdref_e3126cb7-47dc-469b-b2ef-caefc04966cc.xml, ksmedia/PKS_AMVPDATAINFO, KS_AMVPDATAINFO, PKS_AMVPDATAINFO, PKS_AMVPDATAINFO structure pointer [Streaming Media Devices]"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKS_AMVPDATAINFO, KS_AMVPDATAINFO"
+UID: NS:ksmedia.tagKS_AMVPDATAINFO
+title: tagKS_AMVPDATAINFO
+author: windows-driver-content
+description: The KS_AMVPDATAINFO structure is used to describe the properties of a video port.
+old-location: stream\ks_amvpdatainfo.htm
+old-project: stream
+ms.assetid: 4c217cf8-ca93-4e5d-8cbc-c56794f96d50
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: "*PKS_AMVPDATAINFO, KS_AMVPDATAINFO structure [Streaming Media Devices], ksmedia/KS_AMVPDATAINFO, tagKS_AMVPDATAINFO, stream.ks_amvpdatainfo, dvdref_e3126cb7-47dc-469b-b2ef-caefc04966cc.xml, ksmedia/PKS_AMVPDATAINFO, KS_AMVPDATAINFO, PKS_AMVPDATAINFO, PKS_AMVPDATAINFO structure pointer [Streaming Media Devices]"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	KS_AMVPDATAINFO
+product: Windows
+targetos: Windows
+req.typenames: "*PKS_AMVPDATAINFO, KS_AMVPDATAINFO"
 ---
 
 # tagKS_AMVPDATAINFO structure

@@ -1,41 +1,46 @@
 ---
-UID : NF:icm.WcsAssociateColorProfileWithDevice
-title : WcsAssociateColorProfileWithDevice function
-author : windows-driver-content
-description : The WcsAssociateColorProfileWithDevice function associates a specified WCS color profile with a specified device.
-old-location : print\wcsassociatecolorprofilewithdevice.htm
-old-project : print
-ms.assetid : b1863604-e8a2-4dc7-9f2f-e0eea9baab1a
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : print.wcsassociatecolorprofilewithdevice, colorfnc_2d78f2bd-52f8-48c9-a018-30b4fed5746b.xml, WcsAssociateColorProfileWithDevice function [Print Devices], icm/WcsAssociateColorProfileWithDevice, WcsAssociateColorProfileWithDevice
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : icm.h
-req.include-header : 
-req.target-type : Universal
-req.target-min-winverclnt : Included in Windows Vista and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Mscms.lib
-req.dll : Mscms.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WCS_PROFILE_MANAGEMENT_SCOPE
+UID: NF:icm.WcsAssociateColorProfileWithDevice
+title: WcsAssociateColorProfileWithDevice function
+author: windows-driver-content
+description: The WcsAssociateColorProfileWithDevice function associates a specified WCS color profile with a specified device.
+old-location: print\wcsassociatecolorprofilewithdevice.htm
+old-project: print
+ms.assetid: b1863604-e8a2-4dc7-9f2f-e0eea9baab1a
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: print.wcsassociatecolorprofilewithdevice, colorfnc_2d78f2bd-52f8-48c9-a018-30b4fed5746b.xml, WcsAssociateColorProfileWithDevice function [Print Devices], icm/WcsAssociateColorProfileWithDevice, WcsAssociateColorProfileWithDevice
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: icm.h
+req.include-header: 
+req.target-type: Universal
+req.target-min-winverclnt: Included in Windows Vista and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Mscms.lib
+req.dll: Mscms.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Mscms.dll
+apiname:
+-	WcsAssociateColorProfileWithDevice
+product: Windows
+targetos: Windows
+req.typenames: WCS_PROFILE_MANAGEMENT_SCOPE
 ---
 
 

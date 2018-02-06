@@ -1,41 +1,46 @@
 ---
-UID : NS:ndkpi._NDK_OBJECT_HEADER
-title : "_NDK_OBJECT_HEADER"
-author : windows-driver-content
-description : The NDK_OBJECT_HEADER structure specifies the object version, type, and other information. It is used in the Header member of every NDK object.
-old-location : netvista\ndk_object_header.htm
-old-project : netvista
-ms.assetid : 12E3ED4A-F078-4489-BC84-69EE735CAEF8
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : ndkpi/NDK_OBJECT_HEADER, NDK_OBJECT_HEADER structure [Network Drivers Starting with Windows Vista], PNDK_OBJECT_HEADER, PNDK_OBJECT_HEADER structure pointer [Network Drivers Starting with Windows Vista], NDK_OBJECT_HEADER, ndkpi/PNDK_OBJECT_HEADER, _NDK_OBJECT_HEADER, netvista.ndk_object_header
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndkpi.h
-req.include-header : Ndkpi.h
-req.target-type : Windows
-req.target-min-winverclnt : None supported,Supported in NDIS 6.30 and later.
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDK_OBJECT_HEADER
+UID: NS:ndkpi._NDK_OBJECT_HEADER
+title: "_NDK_OBJECT_HEADER"
+author: windows-driver-content
+description: The NDK_OBJECT_HEADER structure specifies the object version, type, and other information. It is used in the Header member of every NDK object.
+old-location: netvista\ndk_object_header.htm
+old-project: netvista
+ms.assetid: 12E3ED4A-F078-4489-BC84-69EE735CAEF8
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: ndkpi/NDK_OBJECT_HEADER, NDK_OBJECT_HEADER structure [Network Drivers Starting with Windows Vista], PNDK_OBJECT_HEADER, PNDK_OBJECT_HEADER structure pointer [Network Drivers Starting with Windows Vista], NDK_OBJECT_HEADER, ndkpi/PNDK_OBJECT_HEADER, _NDK_OBJECT_HEADER, netvista.ndk_object_header
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndkpi.h
+req.include-header: Ndkpi.h
+req.target-type: Windows
+req.target-min-winverclnt: None supported,Supported in NDIS 6.30 and later.
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndkpi.h
+apiname:
+-	NDK_OBJECT_HEADER
+product: Windows
+targetos: Windows
+req.typenames: NDK_OBJECT_HEADER
 ---
 
 # _NDK_OBJECT_HEADER structure

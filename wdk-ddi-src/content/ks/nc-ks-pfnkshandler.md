@@ -1,41 +1,46 @@
 ---
-UID : NC:ks.PFNKSHANDLER
-title : PFNKSHANDLER
-author : windows-driver-content
-description : The minidriver-provided KStrMethodHandler routine is called when Kernel Streaming receives an IOCTL_KS_METHOD. Provide a pointer to this handler in the relevant KSMETHOD_ITEM structure.
-old-location : stream\kstrmethodhandler.htm
-old-project : stream
-ms.assetid : 717ac510-b456-43b9-9500-b07e942f424c
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.kstrmethodhandler, KStrMethodHandler, KStrMethodHandler routine [Streaming Media Devices], KStrMethodHandler, PFNKSHANDLER, PFNKSHANDLER, ks/KStrMethodHandler, ksfunc_53b62198-4059-4715-b405-c6f55d736a09.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KEYWORDSELECTOR
+UID: NC:ks.PFNKSHANDLER
+title: PFNKSHANDLER
+author: windows-driver-content
+description: The minidriver-provided KStrMethodHandler routine is called when Kernel Streaming receives an IOCTL_KS_METHOD. Provide a pointer to this handler in the relevant KSMETHOD_ITEM structure.
+old-location: stream\kstrmethodhandler.htm
+old-project: stream
+ms.assetid: 717ac510-b456-43b9-9500-b07e942f424c
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.kstrmethodhandler, KStrMethodHandler, KStrMethodHandler routine [Streaming Media Devices], KStrMethodHandler, PFNKSHANDLER, PFNKSHANDLER, ks/KStrMethodHandler, ksfunc_53b62198-4059-4715-b405-c6f55d736a09.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	ks.h
+apiname:
+-	KStrMethodHandler
+product: Windows
+targetos: Windows
+req.typenames: KEYWORDSELECTOR
 ---
 
 

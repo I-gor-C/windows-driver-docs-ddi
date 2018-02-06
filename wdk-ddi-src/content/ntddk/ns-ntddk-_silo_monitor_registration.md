@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddk._SILO_MONITOR_REGISTRATION
-title : "_SILO_MONITOR_REGISTRATION"
-author : windows-driver-content
-description : This structure specifies a server silo monitor that can receive notifications about server silo events.
-old-location : kernel\silo_monitor_registration.htm
-old-project : kernel
-ms.assetid : F99F6346-3FEE-4889-A058-C7540A4CBFC8
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : SILO_MONITOR_REGISTRATION, PSILO_MONITOR_REGISTRATION, ntddk/SILO_MONITOR_REGISTRATION, *PSILO_MONITOR_REGISTRATION, SILO_MONITOR_REGISTRATION structure [Kernel-Mode Driver Architecture], ntddk/PSILO_MONITOR_REGISTRATION, kernel.silo_monitor_registration, PSILO_MONITOR_REGISTRATION structure pointer [Kernel-Mode Driver Architecture], _SILO_MONITOR_REGISTRATION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddk.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10, version 1607
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSILO_MONITOR_REGISTRATION, SILO_MONITOR_REGISTRATION"
+UID: NS:ntddk._SILO_MONITOR_REGISTRATION
+title: "_SILO_MONITOR_REGISTRATION"
+author: windows-driver-content
+description: This structure specifies a server silo monitor that can receive notifications about server silo events.
+old-location: kernel\silo_monitor_registration.htm
+old-project: kernel
+ms.assetid: F99F6346-3FEE-4889-A058-C7540A4CBFC8
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: SILO_MONITOR_REGISTRATION, PSILO_MONITOR_REGISTRATION, ntddk/SILO_MONITOR_REGISTRATION, *PSILO_MONITOR_REGISTRATION, SILO_MONITOR_REGISTRATION structure [Kernel-Mode Driver Architecture], ntddk/PSILO_MONITOR_REGISTRATION, kernel.silo_monitor_registration, PSILO_MONITOR_REGISTRATION structure pointer [Kernel-Mode Driver Architecture], _SILO_MONITOR_REGISTRATION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddk.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10, version 1607
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddk.h
+apiname:
+-	SILO_MONITOR_REGISTRATION
+product: Windows
+targetos: Windows
+req.typenames: "*PSILO_MONITOR_REGISTRATION, SILO_MONITOR_REGISTRATION"
 ---
 
 # _SILO_MONITOR_REGISTRATION structure

@@ -1,41 +1,46 @@
 ---
-UID : NC:parallel.PNEGOTIATE_IEEE_MODE
-title : PNEGOTIATE_IEEE_MODE
-author : windows-driver-content
-description : The PNEGOTIATE_IEEE_MODE-typed callback routine selects the fastest forward and reverse protocols that the system-supplied bus driver for parallel ports supports from among those specified by the caller.
-old-location : parports\pnegotiate_ieee_mode.htm
-old-project : parports
-ms.assetid : 2cf3564e-10aa-49bb-9b94-abd987870196
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : parports.pnegotiate_ieee_mode, PNEGOTIATE_IEEE_MODE function pointer [Parallel Ports], PNEGOTIATE_IEEE_MODE, parallel/PNEGOTIATE_IEEE_MODE, cisspd_0bea0bb3-2a7c-4cf4-938d-8bc67962a222.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : parallel.h
-req.include-header : Parallel.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RILGBATOKEN, *LPRILGBATOKEN
+UID: NC:parallel.PNEGOTIATE_IEEE_MODE
+title: PNEGOTIATE_IEEE_MODE
+author: windows-driver-content
+description: The PNEGOTIATE_IEEE_MODE-typed callback routine selects the fastest forward and reverse protocols that the system-supplied bus driver for parallel ports supports from among those specified by the caller.
+old-location: parports\pnegotiate_ieee_mode.htm
+old-project: parports
+ms.assetid: 2cf3564e-10aa-49bb-9b94-abd987870196
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: parports.pnegotiate_ieee_mode, PNEGOTIATE_IEEE_MODE function pointer [Parallel Ports], PNEGOTIATE_IEEE_MODE, parallel/PNEGOTIATE_IEEE_MODE, cisspd_0bea0bb3-2a7c-4cf4-938d-8bc67962a222.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: parallel.h
+req.include-header: Parallel.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	parallel.h
+apiname:
+-	PNEGOTIATE_IEEE_MODE
+product: Windows
+targetos: Windows
+req.typenames: RILGBATOKEN, *LPRILGBATOKEN
 ---
 
 

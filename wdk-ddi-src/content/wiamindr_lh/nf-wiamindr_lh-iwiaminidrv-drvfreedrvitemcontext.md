@@ -1,42 +1,47 @@
 ---
-UID : NF:wiamindr_lh.IWiaMiniDrv.drvFreeDrvItemContext
-title : IWiaMiniDrv::drvFreeDrvItemContext method
-author : windows-driver-content
-description : The IWiaMiniDrv::drvFreeDrvItemContext method frees a device-specific context.
-old-location : image\iwiaminidrv_drvfreedrvitemcontext.htm
-old-project : image
-ms.assetid : bc4f751f-d92a-47e6-8cbe-0a587292b160
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : IWiaMiniDrv, IWiaMiniDrv interface [Imaging Devices], drvFreeDrvItemContext method, image.iwiaminidrv_drvfreedrvitemcontext, drvFreeDrvItemContext method [Imaging Devices], IWiaMiniDrv interface, wiamindr_lh/IWiaMiniDrv::drvFreeDrvItemContext, IWiaMiniDrv::drvFreeDrvItemContext, drvFreeDrvItemContext, MiniDrv_59a7d220-cd1d-4cc2-870a-3260feaba7e9.xml, drvFreeDrvItemContext method [Imaging Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wiamindr_lh.h
-req.include-header : Wiamindr.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Me and in Windows XP and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wiamindr_lh.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SCANWINDOW, *PSCANWINDOW
-req.product : Windows 10 or later.
+UID: NF:wiamindr_lh.IWiaMiniDrv.drvFreeDrvItemContext
+title: IWiaMiniDrv::drvFreeDrvItemContext method
+author: windows-driver-content
+description: The IWiaMiniDrv::drvFreeDrvItemContext method frees a device-specific context.
+old-location: image\iwiaminidrv_drvfreedrvitemcontext.htm
+old-project: image
+ms.assetid: bc4f751f-d92a-47e6-8cbe-0a587292b160
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: IWiaMiniDrv, IWiaMiniDrv interface [Imaging Devices], drvFreeDrvItemContext method, image.iwiaminidrv_drvfreedrvitemcontext, drvFreeDrvItemContext method [Imaging Devices], IWiaMiniDrv interface, wiamindr_lh/IWiaMiniDrv::drvFreeDrvItemContext, IWiaMiniDrv::drvFreeDrvItemContext, drvFreeDrvItemContext, MiniDrv_59a7d220-cd1d-4cc2-870a-3260feaba7e9.xml, drvFreeDrvItemContext method [Imaging Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wiamindr_lh.h
+req.include-header: Wiamindr.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Me and in Windows XP and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wiamindr_lh.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	wiamindr_lh.h
+apiname:
+-	IWiaMiniDrv.drvFreeDrvItemContext
+product: Windows
+targetos: Windows
+req.typenames: SCANWINDOW, *PSCANWINDOW
+req.product: Windows 10 or later.
 ---
 
 

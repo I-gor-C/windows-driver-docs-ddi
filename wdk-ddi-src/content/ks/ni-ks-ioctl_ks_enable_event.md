@@ -1,41 +1,46 @@
 ---
-UID : NI:ks.IOCTL_KS_ENABLE_EVENT
-title : IOCTL_KS_ENABLE_EVENT
-author : windows-driver-content
-description : An application can use IOCTL_KS_ENABLE_EVENT to request notification of a KS event type, or to determine the events supported by a KS object.
-old-location : stream\ioctl_ks_enable_event.htm
-old-project : stream
-ms.assetid : 194a99f4-900f-44d1-bbc3-64953e4dce21
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.ioctl_ks_enable_event, IOCTL_KS_ENABLE_EVENT control code [Streaming Media Devices], IOCTL_KS_ENABLE_EVENT, ks/IOCTL_KS_ENABLE_EVENT, ks-ioctl_7cc1eab4-2a30-4998-8f7d-122150800c9a.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NI:ks.IOCTL_KS_ENABLE_EVENT
+title: IOCTL_KS_ENABLE_EVENT
+author: windows-driver-content
+description: An application can use IOCTL_KS_ENABLE_EVENT to request notification of a KS event type, or to determine the events supported by a KS object.
+old-location: stream\ioctl_ks_enable_event.htm
+old-project: stream
+ms.assetid: 194a99f4-900f-44d1-bbc3-64953e4dce21
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.ioctl_ks_enable_event, IOCTL_KS_ENABLE_EVENT control code [Streaming Media Devices], IOCTL_KS_ENABLE_EVENT, ks/IOCTL_KS_ENABLE_EVENT, ks-ioctl_7cc1eab4-2a30-4998-8f7d-122150800c9a.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	IOCTL_KS_ENABLE_EVENT
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 # IOCTL_KS_ENABLE_EVENT IOCTL

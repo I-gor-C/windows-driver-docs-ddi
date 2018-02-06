@@ -1,42 +1,47 @@
 ---
-UID : NS:wdm._IO_SESSION_STATE_INFORMATION
-title : "_IO_SESSION_STATE_INFORMATION"
-author : windows-driver-content
-description : The IO_SESSION_STATE_INFORMATION structure contains information about the state of a user session.
-old-location : kernel\io_session_state_information.htm
-old-project : kernel
-ms.assetid : ef56da02-52ae-4f85-8820-fc310638bb89
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : "_IO_SESSION_STATE_INFORMATION, PIO_SESSION_STATE_INFORMATION, wdm/PIO_SESSION_STATE_INFORMATION, IO_SESSION_STATE_INFORMATION, IO_SESSION_STATE_INFORMATION structure [Kernel-Mode Driver Architecture], wdm/IO_SESSION_STATE_INFORMATION, kstruct_b_1021e6f4-b82d-4f1d-8664-dbef116240d1.xml, *PIO_SESSION_STATE_INFORMATION, kernel.io_session_state_information, PIO_SESSION_STATE_INFORMATION structure pointer [Kernel-Mode Driver Architecture]"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h, Fltkernel.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in Windows 7 and later versions of the Windows operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PIO_SESSION_STATE_INFORMATION, IO_SESSION_STATE_INFORMATION"
-req.product : Windows 10 or later.
+UID: NS:wdm._IO_SESSION_STATE_INFORMATION
+title: "_IO_SESSION_STATE_INFORMATION"
+author: windows-driver-content
+description: The IO_SESSION_STATE_INFORMATION structure contains information about the state of a user session.
+old-location: kernel\io_session_state_information.htm
+old-project: kernel
+ms.assetid: ef56da02-52ae-4f85-8820-fc310638bb89
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: "_IO_SESSION_STATE_INFORMATION, PIO_SESSION_STATE_INFORMATION, wdm/PIO_SESSION_STATE_INFORMATION, IO_SESSION_STATE_INFORMATION, IO_SESSION_STATE_INFORMATION structure [Kernel-Mode Driver Architecture], wdm/IO_SESSION_STATE_INFORMATION, kstruct_b_1021e6f4-b82d-4f1d-8664-dbef116240d1.xml, *PIO_SESSION_STATE_INFORMATION, kernel.io_session_state_information, PIO_SESSION_STATE_INFORMATION structure pointer [Kernel-Mode Driver Architecture]"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h, Fltkernel.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in Windows 7 and later versions of the Windows operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	IO_SESSION_STATE_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: "*PIO_SESSION_STATE_INFORMATION, IO_SESSION_STATE_INFORMATION"
+req.product: Windows 10 or later.
 ---
 
 # _IO_SESSION_STATE_INFORMATION structure

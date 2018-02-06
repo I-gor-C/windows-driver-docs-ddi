@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddk._FILE_FS_VOLUME_INFORMATION
-title : "_FILE_FS_VOLUME_INFORMATION"
-author : windows-driver-content
-description : The FILE_FS_VOLUME_INFORMATION structure is used to query information about a volume on which a file system is mounted.
-old-location : ifsk\file_fs_volume_information.htm
-old-project : ifsk
-ms.assetid : b0c6f733-2d8b-4140-bb2a-2a28212d3e69
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ntddk/FILE_FS_VOLUME_INFORMATION, FILE_FS_VOLUME_INFORMATION, PFILE_FS_VOLUME_INFORMATION structure pointer [Installable File System Drivers], FILE_FS_VOLUME_INFORMATION structure [Installable File System Drivers], *PFILE_FS_VOLUME_INFORMATION, ntddk/PFILE_FS_VOLUME_INFORMATION, ifsk.file_fs_volume_information, PFILE_FS_VOLUME_INFORMATION, fileinformationstructures_97bfe785-4c25-4402-91be-0fd2bda36c5d.xml, _FILE_FS_VOLUME_INFORMATION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddk.h
-req.include-header : Ntddk.h, Ntifs.h, Fltkernel.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PFILE_FS_VOLUME_INFORMATION, FILE_FS_VOLUME_INFORMATION"
+UID: NS:ntddk._FILE_FS_VOLUME_INFORMATION
+title: "_FILE_FS_VOLUME_INFORMATION"
+author: windows-driver-content
+description: The FILE_FS_VOLUME_INFORMATION structure is used to query information about a volume on which a file system is mounted.
+old-location: ifsk\file_fs_volume_information.htm
+old-project: ifsk
+ms.assetid: b0c6f733-2d8b-4140-bb2a-2a28212d3e69
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ntddk/FILE_FS_VOLUME_INFORMATION, FILE_FS_VOLUME_INFORMATION, PFILE_FS_VOLUME_INFORMATION structure pointer [Installable File System Drivers], FILE_FS_VOLUME_INFORMATION structure [Installable File System Drivers], *PFILE_FS_VOLUME_INFORMATION, ntddk/PFILE_FS_VOLUME_INFORMATION, ifsk.file_fs_volume_information, PFILE_FS_VOLUME_INFORMATION, fileinformationstructures_97bfe785-4c25-4402-91be-0fd2bda36c5d.xml, _FILE_FS_VOLUME_INFORMATION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddk.h
+req.include-header: Ntddk.h, Ntifs.h, Fltkernel.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddk.h
+apiname:
+-	FILE_FS_VOLUME_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: "*PFILE_FS_VOLUME_INFORMATION, FILE_FS_VOLUME_INFORMATION"
 ---
 
 # _FILE_FS_VOLUME_INFORMATION structure

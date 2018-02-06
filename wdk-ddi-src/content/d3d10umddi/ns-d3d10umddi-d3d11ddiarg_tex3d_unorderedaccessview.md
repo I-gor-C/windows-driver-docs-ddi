@@ -1,41 +1,46 @@
 ---
-UID : NS:d3d10umddi.D3D11DDIARG_TEX3D_UNORDEREDACCESSVIEW
-title : D3D11DDIARG_TEX3D_UNORDEREDACCESSVIEW
-author : windows-driver-content
-description : The D3D11DDIARG_TEX3D_UNORDEREDACCESSVIEW structure describes a three-dimensional (3-D) texture that is used to create an unordered access view in a call to the CreateUnorderedAccessView function.
-old-location : display\d3d11ddiarg_tex3d_unorderedaccessview.htm
-old-project : display
-ms.assetid : 15b535ab-28ed-41c3-8544-4ccb27a53649
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.d3d11ddiarg_tex3d_unorderedaccessview, D3D11DDIARG_TEX3D_UNORDEREDACCESSVIEW structure [Display Devices], d3d10umddi/D3D11DDIARG_TEX3D_UNORDEREDACCESSVIEW, UMDisplayDriver_Dx11param_Structs_0d8a28d7-9bb4-49b9-9ce9-1f290072ba4d.xml, D3D11DDIARG_TEX3D_UNORDEREDACCESSVIEW
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Windows
-req.target-min-winverclnt : D3D11DDIARG_TEX3D_UNORDEREDACCESSVIEW is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3D11DDIARG_TEX3D_UNORDEREDACCESSVIEW
+UID: NS:d3d10umddi.D3D11DDIARG_TEX3D_UNORDEREDACCESSVIEW
+title: D3D11DDIARG_TEX3D_UNORDEREDACCESSVIEW
+author: windows-driver-content
+description: The D3D11DDIARG_TEX3D_UNORDEREDACCESSVIEW structure describes a three-dimensional (3-D) texture that is used to create an unordered access view in a call to the CreateUnorderedAccessView function.
+old-location: display\d3d11ddiarg_tex3d_unorderedaccessview.htm
+old-project: display
+ms.assetid: 15b535ab-28ed-41c3-8544-4ccb27a53649
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.d3d11ddiarg_tex3d_unorderedaccessview, D3D11DDIARG_TEX3D_UNORDEREDACCESSVIEW structure [Display Devices], d3d10umddi/D3D11DDIARG_TEX3D_UNORDEREDACCESSVIEW, UMDisplayDriver_Dx11param_Structs_0d8a28d7-9bb4-49b9-9ce9-1f290072ba4d.xml, D3D11DDIARG_TEX3D_UNORDEREDACCESSVIEW
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Windows
+req.target-min-winverclnt: D3D11DDIARG_TEX3D_UNORDEREDACCESSVIEW is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	D3D11DDIARG_TEX3D_UNORDEREDACCESSVIEW
+product: Windows
+targetos: Windows
+req.typenames: D3D11DDIARG_TEX3D_UNORDEREDACCESSVIEW
 ---
 
 # D3D11DDIARG_TEX3D_UNORDEREDACCESSVIEW structure

@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.RtlSecondsSince1970ToTime
-title : RtlSecondsSince1970ToTime function
-author : windows-driver-content
-description : The RtlSecondsSince1970ToTime routine converts the elapsed time, in seconds, since the beginning of 1970 to an absolute system time value.
-old-location : ifsk\rtlsecondssince1970totime.htm
-old-project : ifsk
-ms.assetid : 8ec961c6-235c-4980-ac4c-60aa496e8a5d
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ntifs/RtlSecondsSince1970ToTime, ifsk.rtlsecondssince1970totime, rtlref_ca1b3241-af9f-48e1-86e0-56f94c459c63.xml, RtlSecondsSince1970ToTime, RtlSecondsSince1970ToTime routine [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "< DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.RtlSecondsSince1970ToTime
+title: RtlSecondsSince1970ToTime function
+author: windows-driver-content
+description: The RtlSecondsSince1970ToTime routine converts the elapsed time, in seconds, since the beginning of 1970 to an absolute system time value.
+old-location: ifsk\rtlsecondssince1970totime.htm
+old-project: ifsk
+ms.assetid: 8ec961c6-235c-4980-ac4c-60aa496e8a5d
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ntifs/RtlSecondsSince1970ToTime, ifsk.rtlsecondssince1970totime, rtlref_ca1b3241-af9f-48e1-86e0-56f94c459c63.xml, RtlSecondsSince1970ToTime, RtlSecondsSince1970ToTime routine [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "< DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	RtlSecondsSince1970ToTime
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

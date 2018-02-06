@@ -1,41 +1,47 @@
 ---
-UID : NF:bdasup.BdaPropertyNodeMethods
-title : BdaPropertyNodeMethods function
-author : windows-driver-content
-description : The BdaPropertyNodeMethods function retrieves a list of methods that a node supports.
-old-location : stream\bdapropertynodemethods.htm
-old-project : stream
-ms.assetid : 52cb13a6-6efe-4934-a6ec-178d4b2afb0a
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : BdaPropertyNodeMethods, stream.bdapropertynodemethods, BdaPropertyNodeMethods function [Streaming Media Devices], bdaref_15a0d157-4e7d-43ae-9f1f-6ffb70bd4f9b.xml, bdasup/BdaPropertyNodeMethods
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : bdasup.h
-req.include-header : Bdasup.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available on Microsoft Windows XP and later operating systems. This routine is available on the Windows 2000 platform only if Microsoft DirectX 9.0 and later is installed on that platform.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Bdasup.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KSP_BDA_NODE_PIN, *PKSP_BDA_NODE_PIN
+UID: NF:bdasup.BdaPropertyNodeMethods
+title: BdaPropertyNodeMethods function
+author: windows-driver-content
+description: The BdaPropertyNodeMethods function retrieves a list of methods that a node supports.
+old-location: stream\bdapropertynodemethods.htm
+old-project: stream
+ms.assetid: 52cb13a6-6efe-4934-a6ec-178d4b2afb0a
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: BdaPropertyNodeMethods, stream.bdapropertynodemethods, BdaPropertyNodeMethods function [Streaming Media Devices], bdaref_15a0d157-4e7d-43ae-9f1f-6ffb70bd4f9b.xml, bdasup/BdaPropertyNodeMethods
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: bdasup.h
+req.include-header: Bdasup.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available on Microsoft Windows XP and later operating systems. This routine is available on the Windows 2000 platform only if Microsoft DirectX 9.0 and later is installed on that platform.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Bdasup.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Bdasup.lib
+-	Bdasup.dll
+apiname:
+-	BdaPropertyNodeMethods
+product: Windows
+targetos: Windows
+req.typenames: KSP_BDA_NODE_PIN, *PKSP_BDA_NODE_PIN
 ---
 
 

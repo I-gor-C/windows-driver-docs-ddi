@@ -1,41 +1,47 @@
 ---
-UID : NF:dbgeng.IDebugBreakpoint2.GetDataParameters
-title : IDebugBreakpoint2::GetDataParameters method
-author : windows-driver-content
-description : The GetDataParameters method returns the parameters for a processor breakpoint.
-old-location : debugger\getdataparameters.htm
-old-project : debugger
-ms.assetid : e281c67a-df97-464e-9996-b15c18172dc4
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : GetDataParameters method [Windows Debugging], GetDataParameters method [Windows Debugging], IDebugBreakpoint interface, dbgeng/IDebugBreakpoint::GetDataParameters, IDebugBreakpoint2, debugger.getdataparameters, IDebugBreakpoint2 interface [Windows Debugging], GetDataParameters method, IDebugBreakpoint::GetDataParameters, ComOther_297fe316-4a1a-476b-a804-056bb56b6e77.xml, IDebugBreakpoint interface [Windows Debugging], GetDataParameters method, GetDataParameters method [Windows Debugging], IDebugBreakpoint2 interface, dbgeng/IDebugBreakpoint2::GetDataParameters, GetDataParameters, IDebugBreakpoint2::GetDataParameters
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugBreakpoint2.GetDataParameters
+title: IDebugBreakpoint2::GetDataParameters method
+author: windows-driver-content
+description: The GetDataParameters method returns the parameters for a processor breakpoint.
+old-location: debugger\getdataparameters.htm
+old-project: debugger
+ms.assetid: e281c67a-df97-464e-9996-b15c18172dc4
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: GetDataParameters method [Windows Debugging], GetDataParameters method [Windows Debugging], IDebugBreakpoint interface, dbgeng/IDebugBreakpoint::GetDataParameters, IDebugBreakpoint2, debugger.getdataparameters, IDebugBreakpoint2 interface [Windows Debugging], GetDataParameters method, IDebugBreakpoint::GetDataParameters, ComOther_297fe316-4a1a-476b-a804-056bb56b6e77.xml, IDebugBreakpoint interface [Windows Debugging], GetDataParameters method, GetDataParameters method [Windows Debugging], IDebugBreakpoint2 interface, dbgeng/IDebugBreakpoint2::GetDataParameters, GetDataParameters, IDebugBreakpoint2::GetDataParameters
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugBreakpoint.GetDataParameters
+-	IDebugBreakpoint2.GetDataParameters
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

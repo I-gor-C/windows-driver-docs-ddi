@@ -1,42 +1,47 @@
 ---
-UID : NS:wdm._PCI_EXPRESS_BRIDGE_AER_CAPABILITY
-title : "_PCI_EXPRESS_BRIDGE_AER_CAPABILITY"
-author : windows-driver-content
-description : The PCI_EXPRESS_BRIDGE_AER_CAPABILITY structure describes a PCI Express (PCIe) advanced error reporting capability structure for a PCIe bridge device.
-old-location : pci\pci_express_bridge_aer_capability.htm
-old-project : PCI
-ms.assetid : 06bbd3b8-b917-44ed-880e-9d071146e859
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : PCI_EXPRESS_BRIDGE_AER_CAPABILITY, _PCI_EXPRESS_BRIDGE_AER_CAPABILITY, wdm/PPCI_EXPRESS_BRIDGE_AER_CAPABILITY, pci_struct_ccc11a2c-4380-44b4-8404-d7d9931887b6.xml, PPCI_EXPRESS_BRIDGE_AER_CAPABILITY structure pointer [Buses], PCI.pci_express_bridge_aer_capability, PCI_EXPRESS_BRIDGE_AER_CAPABILITY structure [Buses], wdm/PCI_EXPRESS_BRIDGE_AER_CAPABILITY, PPCI_EXPRESS_BRIDGE_AER_CAPABILITY, *PPCI_EXPRESS_BRIDGE_AER_CAPABILITY
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : Ntddk.h, Wdm.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PCI_EXPRESS_BRIDGE_AER_CAPABILITY, *PPCI_EXPRESS_BRIDGE_AER_CAPABILITY
-req.product : Windows 10 or later.
+UID: NS:wdm._PCI_EXPRESS_BRIDGE_AER_CAPABILITY
+title: "_PCI_EXPRESS_BRIDGE_AER_CAPABILITY"
+author: windows-driver-content
+description: The PCI_EXPRESS_BRIDGE_AER_CAPABILITY structure describes a PCI Express (PCIe) advanced error reporting capability structure for a PCIe bridge device.
+old-location: pci\pci_express_bridge_aer_capability.htm
+old-project: PCI
+ms.assetid: 06bbd3b8-b917-44ed-880e-9d071146e859
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: PCI_EXPRESS_BRIDGE_AER_CAPABILITY, _PCI_EXPRESS_BRIDGE_AER_CAPABILITY, wdm/PPCI_EXPRESS_BRIDGE_AER_CAPABILITY, pci_struct_ccc11a2c-4380-44b4-8404-d7d9931887b6.xml, PPCI_EXPRESS_BRIDGE_AER_CAPABILITY structure pointer [Buses], PCI.pci_express_bridge_aer_capability, PCI_EXPRESS_BRIDGE_AER_CAPABILITY structure [Buses], wdm/PCI_EXPRESS_BRIDGE_AER_CAPABILITY, PPCI_EXPRESS_BRIDGE_AER_CAPABILITY, *PPCI_EXPRESS_BRIDGE_AER_CAPABILITY
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: Ntddk.h, Wdm.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdm.h
+apiname:
+-	PCI_EXPRESS_BRIDGE_AER_CAPABILITY
+product: Windows
+targetos: Windows
+req.typenames: PCI_EXPRESS_BRIDGE_AER_CAPABILITY, *PPCI_EXPRESS_BRIDGE_AER_CAPABILITY
+req.product: Windows 10 or later.
 ---
 
 # _PCI_EXPRESS_BRIDGE_AER_CAPABILITY structure

@@ -1,41 +1,47 @@
 ---
-UID : NF:bdasup.BdaCreateTopology
-title : BdaCreateTopology function
-author : windows-driver-content
-description : The BdaCreateTopology function creates the topology between two pins.
-old-location : stream\bdacreatetopology.htm
-old-project : stream
-ms.assetid : 855ef77c-2a85-4c8c-b8e3-c4aaa0d2a089
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : BdaCreateTopology, BdaCreateTopology function [Streaming Media Devices], bdasup/BdaCreateTopology, stream.bdacreatetopology, bdaref_bbf47d95-2b93-4e05-a5fa-aa5ed4968b0a.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : bdasup.h
-req.include-header : Bdasup.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available on Microsoft Windows XP and later operating systems. This routine is available on the Windows 2000 platform only if Microsoft DirectX 9.0 and later is installed on that platform.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Bdasup.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KSP_BDA_NODE_PIN, *PKSP_BDA_NODE_PIN
+UID: NF:bdasup.BdaCreateTopology
+title: BdaCreateTopology function
+author: windows-driver-content
+description: The BdaCreateTopology function creates the topology between two pins.
+old-location: stream\bdacreatetopology.htm
+old-project: stream
+ms.assetid: 855ef77c-2a85-4c8c-b8e3-c4aaa0d2a089
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: BdaCreateTopology, BdaCreateTopology function [Streaming Media Devices], bdasup/BdaCreateTopology, stream.bdacreatetopology, bdaref_bbf47d95-2b93-4e05-a5fa-aa5ed4968b0a.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: bdasup.h
+req.include-header: Bdasup.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available on Microsoft Windows XP and later operating systems. This routine is available on the Windows 2000 platform only if Microsoft DirectX 9.0 and later is installed on that platform.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Bdasup.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Bdasup.lib
+-	Bdasup.dll
+apiname:
+-	BdaCreateTopology
+product: Windows
+targetos: Windows
+req.typenames: KSP_BDA_NODE_PIN, *PKSP_BDA_NODE_PIN
 ---
 
 

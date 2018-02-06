@@ -1,42 +1,47 @@
 ---
-UID : NC:usbcamdi.PCAM_CONFIGURE_ROUTINE_EX
-title : PCAM_CONFIGURE_ROUTINE_EX
-author : windows-driver-content
-description : A camera minidriver's CamConfigureEx callback function configures the isochronous streaming interface.
-old-location : stream\camconfigureex.htm
-old-project : stream
-ms.assetid : ec9fd207-4ed8-4bc9-b240-b5214e8c7f67
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.camconfigureex, CamConfigureEx, CamConfigureEx routine [Streaming Media Devices], CamConfigureEx, PCAM_CONFIGURE_ROUTINE_EX, PCAM_CONFIGURE_ROUTINE_EX, usbcamdi/CamConfigureEx, usbcmdpr_79d31303-32b2-493e-87b6-d6e1a9ad292d.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : usbcamdi.h
-req.include-header : Usbcamdi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUSB_BUS_INTERFACE_USBDI_V3, USB_BUS_INTERFACE_USBDI_V3"
-req.product : Windows 10 or later.
+UID: NC:usbcamdi.PCAM_CONFIGURE_ROUTINE_EX
+title: PCAM_CONFIGURE_ROUTINE_EX
+author: windows-driver-content
+description: A camera minidriver's CamConfigureEx callback function configures the isochronous streaming interface.
+old-location: stream\camconfigureex.htm
+old-project: stream
+ms.assetid: ec9fd207-4ed8-4bc9-b240-b5214e8c7f67
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.camconfigureex, CamConfigureEx, CamConfigureEx routine [Streaming Media Devices], CamConfigureEx, PCAM_CONFIGURE_ROUTINE_EX, PCAM_CONFIGURE_ROUTINE_EX, usbcamdi/CamConfigureEx, usbcmdpr_79d31303-32b2-493e-87b6-d6e1a9ad292d.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: usbcamdi.h
+req.include-header: Usbcamdi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	usbcamdi.h
+apiname:
+-	CamConfigureEx
+product: Windows
+targetos: Windows
+req.typenames: "*PUSB_BUS_INTERFACE_USBDI_V3, USB_BUS_INTERFACE_USBDI_V3"
+req.product: Windows 10 or later.
 ---
 
 

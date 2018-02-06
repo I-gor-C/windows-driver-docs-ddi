@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.KSPROPERTY_TUNER_MODE_S
-title : KSPROPERTY_TUNER_MODE_S
-author : windows-driver-content
-description : The KSPROPERTY_TUNER_MODE_S structure describes the mode of a TV or radio tuner device.
-old-location : stream\ksproperty_tuner_mode_s.htm
-old-project : stream
-ms.assetid : a3e443e5-1766-4292-a25a-ad673734bac1
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : vidcapstruct_fe1fe8d4-8abd-4db3-8438-ef7dddadfa5c.xml, ksmedia/KSPROPERTY_TUNER_MODE_S, PKSPROPERTY_TUNER_MODE_S structure pointer [Streaming Media Devices], stream.ksproperty_tuner_mode_s, *PKSPROPERTY_TUNER_MODE_S, KSPROPERTY_TUNER_MODE_S, KSPROPERTY_TUNER_MODE_S structure [Streaming Media Devices], PKSPROPERTY_TUNER_MODE_S, ksmedia/PKSPROPERTY_TUNER_MODE_S
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KSPROPERTY_TUNER_MODE_S, *PKSPROPERTY_TUNER_MODE_S
+UID: NS:ksmedia.KSPROPERTY_TUNER_MODE_S
+title: KSPROPERTY_TUNER_MODE_S
+author: windows-driver-content
+description: The KSPROPERTY_TUNER_MODE_S structure describes the mode of a TV or radio tuner device.
+old-location: stream\ksproperty_tuner_mode_s.htm
+old-project: stream
+ms.assetid: a3e443e5-1766-4292-a25a-ad673734bac1
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: vidcapstruct_fe1fe8d4-8abd-4db3-8438-ef7dddadfa5c.xml, ksmedia/KSPROPERTY_TUNER_MODE_S, PKSPROPERTY_TUNER_MODE_S structure pointer [Streaming Media Devices], stream.ksproperty_tuner_mode_s, *PKSPROPERTY_TUNER_MODE_S, KSPROPERTY_TUNER_MODE_S, KSPROPERTY_TUNER_MODE_S structure [Streaming Media Devices], PKSPROPERTY_TUNER_MODE_S, ksmedia/PKSPROPERTY_TUNER_MODE_S
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	KSPROPERTY_TUNER_MODE_S
+product: Windows
+targetos: Windows
+req.typenames: KSPROPERTY_TUNER_MODE_S, *PKSPROPERTY_TUNER_MODE_S
 ---
 
 # KSPROPERTY_TUNER_MODE_S structure

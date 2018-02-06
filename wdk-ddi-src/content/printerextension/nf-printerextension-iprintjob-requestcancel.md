@@ -1,42 +1,47 @@
 ---
-UID : NF:printerextension.IPrintJob.RequestCancel
-title : IPrintJob::RequestCancel method
-author : windows-driver-content
-description : Requests the cancellation of a print job.
-old-location : print\iprintjob_requestcancel.htm
-old-project : print
-ms.assetid : 13F8A151-F28A-4A0F-B143-F3DB2197A36B
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : IPrintJob, RequestCancel, IPrintJob interface [Print Devices], RequestCancel method, RequestCancel method [Print Devices], IPrintJob interface, printerextension/IPrintJob::RequestCancel, IPrintJob::RequestCancel, print.iprintjob_requestcancel, RequestCancel method [Print Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : printerextension.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8.1
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : printerextension.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PrintSchemaSelectionType
-req.product : Windows 10 or later.
+UID: NF:printerextension.IPrintJob.RequestCancel
+title: IPrintJob::RequestCancel method
+author: windows-driver-content
+description: Requests the cancellation of a print job.
+old-location: print\iprintjob_requestcancel.htm
+old-project: print
+ms.assetid: 13F8A151-F28A-4A0F-B143-F3DB2197A36B
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: IPrintJob, RequestCancel, IPrintJob interface [Print Devices], RequestCancel method, RequestCancel method [Print Devices], IPrintJob interface, printerextension/IPrintJob::RequestCancel, IPrintJob::RequestCancel, print.iprintjob_requestcancel, RequestCancel method [Print Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: printerextension.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8.1
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: printerextension.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Printerextension.h
+apiname:
+-	IPrintJob.RequestCancel
+product: Windows
+targetos: Windows
+req.typenames: PrintSchemaSelectionType
+req.product: Windows 10 or later.
 ---
 
 

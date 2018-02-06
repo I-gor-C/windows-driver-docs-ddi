@@ -1,41 +1,46 @@
 ---
-UID : NS:acpiioct._ACPI_DEVICE_INFORMATION_OUTPUT_BUFFER
-title : "_ACPI_DEVICE_INFORMATION_OUTPUT_BUFFER"
-author : windows-driver-content
-description : The ACPI_DEVICE_INFORMATION_OUTPUT_BUFFER structure contains output arguments from the IOCTL_ACPI_GET_DEVICE_INFORMATION control method.
-old-location : acpi\acpi_device_information_output_buffer.htm
-old-project : acpi
-ms.assetid : 15AA7E06-DD7F-46B4-B2C2-604EA5150F7D
-ms.author : windowsdriverdev
-ms.date : 12/31/2017
-ms.keywords : acpiioct/PACPI_DEVICE_INFORMATION_OUTPUT_BUFFER, ACPI_DEVICE_INFORMATION_OUTPUT_BUFFER, PACPI_DEVICE_INFORMATION_OUTPUT_BUFFER, *PACPI_DEVICE_INFORMATION_OUTPUT_BUFFER, acpiioct/ACPI_DEVICE_INFORMATION_OUTPUT_BUFFER, acpi.acpi_device_information_output_buffer, PACPI_DEVICE_INFORMATION_OUTPUT_BUFFER structure pointer [ACPI Devices], _ACPI_DEVICE_INFORMATION_OUTPUT_BUFFER, ACPI_DEVICE_INFORMATION_OUTPUT_BUFFER structure [ACPI Devices], acpi.acpi_get_device_information_output_buffer
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : acpiioct.h
-req.include-header : Acpiioct.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : ACPI_DEVICE_INFORMATION_OUTPUT_BUFFER, *PACPI_DEVICE_INFORMATION_OUTPUT_BUFFER
+UID: NS:acpiioct._ACPI_DEVICE_INFORMATION_OUTPUT_BUFFER
+title: "_ACPI_DEVICE_INFORMATION_OUTPUT_BUFFER"
+author: windows-driver-content
+description: The ACPI_DEVICE_INFORMATION_OUTPUT_BUFFER structure contains output arguments from the IOCTL_ACPI_GET_DEVICE_INFORMATION control method.
+old-location: acpi\acpi_device_information_output_buffer.htm
+old-project: acpi
+ms.assetid: 15AA7E06-DD7F-46B4-B2C2-604EA5150F7D
+ms.author: windowsdriverdev
+ms.date: 12/31/2017
+ms.keywords: acpiioct/PACPI_DEVICE_INFORMATION_OUTPUT_BUFFER, ACPI_DEVICE_INFORMATION_OUTPUT_BUFFER, PACPI_DEVICE_INFORMATION_OUTPUT_BUFFER, *PACPI_DEVICE_INFORMATION_OUTPUT_BUFFER, acpiioct/ACPI_DEVICE_INFORMATION_OUTPUT_BUFFER, acpi.acpi_device_information_output_buffer, PACPI_DEVICE_INFORMATION_OUTPUT_BUFFER structure pointer [ACPI Devices], _ACPI_DEVICE_INFORMATION_OUTPUT_BUFFER, ACPI_DEVICE_INFORMATION_OUTPUT_BUFFER structure [ACPI Devices], acpi.acpi_get_device_information_output_buffer
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: acpiioct.h
+req.include-header: Acpiioct.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Acpiioct.h
+apiname:
+-	ACPI_DEVICE_INFORMATION_OUTPUT_BUFFER
+product: Windows
+targetos: Windows
+req.typenames: ACPI_DEVICE_INFORMATION_OUTPUT_BUFFER, *PACPI_DEVICE_INFORMATION_OUTPUT_BUFFER
 ---
 
 # _ACPI_DEVICE_INFORMATION_OUTPUT_BUFFER structure

@@ -1,42 +1,47 @@
 ---
-UID : NF:sercx.SerCx2PioTransmitCleanupTransactionComplete
-title : SerCx2PioTransmitCleanupTransactionComplete function
-author : windows-driver-content
-description : The SerCx2PioTransmitCleanupTransactionComplete method notifies version 2 of the serial framework extension (SerCx2) that serial controller driver has finished cleaning up the serial controller's hardware state after a PIO-transmit transaction.
-old-location : serports\sercx2piotransmitcleanuptransactioncomplete.htm
-old-project : serports
-ms.assetid : 44ADAAB7-E0EE-4908-A0D8-366EC1C3AC2E
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : 2/SerCx2PioTransmitCleanupTransactionComplete, SerCx2PioTransmitCleanupTransactionComplete, serports.sercx2piotransmitcleanuptransactioncomplete, SerCx2PioTransmitCleanupTransactionComplete method [Serial Ports]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : sercx.h
-req.include-header : 
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 8.1.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSERCX_STATUS, SERCX_STATUS"
-req.product : Windows 10 or later.
+UID: NF:sercx.SerCx2PioTransmitCleanupTransactionComplete
+title: SerCx2PioTransmitCleanupTransactionComplete function
+author: windows-driver-content
+description: The SerCx2PioTransmitCleanupTransactionComplete method notifies version 2 of the serial framework extension (SerCx2) that serial controller driver has finished cleaning up the serial controller's hardware state after a PIO-transmit transaction.
+old-location: serports\sercx2piotransmitcleanuptransactioncomplete.htm
+old-project: serports
+ms.assetid: 44ADAAB7-E0EE-4908-A0D8-366EC1C3AC2E
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: 2/SerCx2PioTransmitCleanupTransactionComplete, SerCx2PioTransmitCleanupTransactionComplete, serports.sercx2piotransmitcleanuptransactioncomplete, SerCx2PioTransmitCleanupTransactionComplete method [Serial Ports]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: sercx.h
+req.include-header: 
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 8.1.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	2.0\Sercx.h
+apiname:
+-	SerCx2PioTransmitCleanupTransactionComplete
+product: Windows
+targetos: Windows
+req.typenames: "*PSERCX_STATUS, SERCX_STATUS"
+req.product: Windows 10 or later.
 ---
 
 

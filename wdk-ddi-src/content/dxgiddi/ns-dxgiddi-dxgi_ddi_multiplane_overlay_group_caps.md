@@ -1,41 +1,46 @@
 ---
-UID : NS:dxgiddi.DXGI_DDI_MULTIPLANE_OVERLAY_GROUP_CAPS
-title : DXGI_DDI_MULTIPLANE_OVERLAY_GROUP_CAPS
-author : windows-driver-content
-description : Used by the user-mode display driver to specify groups of overlay plane capabilities.
-old-location : display\dxgi_ddi_multiplane_overlay_group_caps.htm
-old-project : display
-ms.assetid : A8BAD8D4-1009-43D0-B82F-8252062A029C
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DXGI_DDI_MULTIPLANE_OVERLAY_GROUP_CAPS structure [Display Devices], DXGI_DDI_MULTIPLANE_OVERLAY_GROUP_CAPS, dxgiddi/DXGI_DDI_MULTIPLANE_OVERLAY_GROUP_CAPS, display.dxgi_ddi_multiplane_overlay_group_caps
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : dxgiddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8.1
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGI_DDI_MULTIPLANE_OVERLAY_GROUP_CAPS
+UID: NS:dxgiddi.DXGI_DDI_MULTIPLANE_OVERLAY_GROUP_CAPS
+title: DXGI_DDI_MULTIPLANE_OVERLAY_GROUP_CAPS
+author: windows-driver-content
+description: Used by the user-mode display driver to specify groups of overlay plane capabilities.
+old-location: display\dxgi_ddi_multiplane_overlay_group_caps.htm
+old-project: display
+ms.assetid: A8BAD8D4-1009-43D0-B82F-8252062A029C
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DXGI_DDI_MULTIPLANE_OVERLAY_GROUP_CAPS structure [Display Devices], DXGI_DDI_MULTIPLANE_OVERLAY_GROUP_CAPS, dxgiddi/DXGI_DDI_MULTIPLANE_OVERLAY_GROUP_CAPS, display.dxgi_ddi_multiplane_overlay_group_caps
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: dxgiddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8.1
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Dxgiddi.h
+apiname:
+-	DXGI_DDI_MULTIPLANE_OVERLAY_GROUP_CAPS
+product: Windows
+targetos: Windows
+req.typenames: DXGI_DDI_MULTIPLANE_OVERLAY_GROUP_CAPS
 ---
 
 # DXGI_DDI_MULTIPLANE_OVERLAY_GROUP_CAPS structure

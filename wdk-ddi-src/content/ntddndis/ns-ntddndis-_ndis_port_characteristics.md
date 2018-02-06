@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddndis._NDIS_PORT_CHARACTERISTICS
-title : "_NDIS_PORT_CHARACTERISTICS"
-author : windows-driver-content
-description : The NDIS_PORT_CHARACTERISTICS structure specifies the characteristics of an NDIS port. For more information about NDIS ports, see NDIS Ports.
-old-location : netvista\ndis_port_characteristics.htm
-old-project : netvista
-ms.assetid : fd602dd6-c216-413a-a4da-292739774937
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NDIS_PORT_CHARACTERISTICS, PNDIS_PORT_CHARACTERISTICS structure pointer [Network Drivers Starting with Windows Vista], NDIS_PORT_CHARACTERISTICS structure [Network Drivers Starting with Windows Vista], PNDIS_PORT_CHARACTERISTICS, _NDIS_PORT_CHARACTERISTICS, *PNDIS_PORT_CHARACTERISTICS, ntddndis/PNDIS_PORT_CHARACTERISTICS, netvista.ndis_port_characteristics, ndis_ports_ref_2b3ef68d-2ed2-4a06-ab0c-3df59bf7d7a5.xml, ntddndis/NDIS_PORT_CHARACTERISTICS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_PORT_CHARACTERISTICS, *PNDIS_PORT_CHARACTERISTICS
+UID: NS:ntddndis._NDIS_PORT_CHARACTERISTICS
+title: "_NDIS_PORT_CHARACTERISTICS"
+author: windows-driver-content
+description: The NDIS_PORT_CHARACTERISTICS structure specifies the characteristics of an NDIS port. For more information about NDIS ports, see NDIS Ports.
+old-location: netvista\ndis_port_characteristics.htm
+old-project: netvista
+ms.assetid: fd602dd6-c216-413a-a4da-292739774937
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NDIS_PORT_CHARACTERISTICS, PNDIS_PORT_CHARACTERISTICS structure pointer [Network Drivers Starting with Windows Vista], NDIS_PORT_CHARACTERISTICS structure [Network Drivers Starting with Windows Vista], PNDIS_PORT_CHARACTERISTICS, _NDIS_PORT_CHARACTERISTICS, *PNDIS_PORT_CHARACTERISTICS, ntddndis/PNDIS_PORT_CHARACTERISTICS, netvista.ndis_port_characteristics, ndis_ports_ref_2b3ef68d-2ed2-4a06-ab0c-3df59bf7d7a5.xml, ntddndis/NDIS_PORT_CHARACTERISTICS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddndis.h
+apiname:
+-	NDIS_PORT_CHARACTERISTICS
+product: Windows
+targetos: Windows
+req.typenames: NDIS_PORT_CHARACTERISTICS, *PNDIS_PORT_CHARACTERISTICS
 ---
 
 # _NDIS_PORT_CHARACTERISTICS structure

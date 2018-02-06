@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddmmc._FEATURE_DATA_DVD_CPRM
-title : "_FEATURE_DATA_DVD_CPRM"
-author : windows-driver-content
-description : The FEATURE_DATA_DVD_CPRM structure holds information about the DVD Content Protection for Recorded Media (CPRM) feature.
-old-location : storage\feature_data_dvd_cprm.htm
-old-project : storage
-ms.assetid : 060c1e9a-14d3-4f9b-b898-d8042f5efd7e
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : FEATURE_DATA_DVD_CPRM structure [Storage Devices], ntddmmc/PFEATURE_DATA_DVD_CPRM, FEATURE_DATA_DVD_CPRM, *PFEATURE_DATA_DVD_CPRM, storage.feature_data_dvd_cprm, ntddmmc/FEATURE_DATA_DVD_CPRM, PFEATURE_DATA_DVD_CPRM, structs-CD-ROM_376d4f99-5d92-48ad-b126-d1f6858e7fac.xml, _FEATURE_DATA_DVD_CPRM, PFEATURE_DATA_DVD_CPRM structure pointer [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddmmc.h
-req.include-header : Ntddcdrm.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FEATURE_DATA_DVD_CPRM, *PFEATURE_DATA_DVD_CPRM
+UID: NS:ntddmmc._FEATURE_DATA_DVD_CPRM
+title: "_FEATURE_DATA_DVD_CPRM"
+author: windows-driver-content
+description: The FEATURE_DATA_DVD_CPRM structure holds information about the DVD Content Protection for Recorded Media (CPRM) feature.
+old-location: storage\feature_data_dvd_cprm.htm
+old-project: storage
+ms.assetid: 060c1e9a-14d3-4f9b-b898-d8042f5efd7e
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: FEATURE_DATA_DVD_CPRM structure [Storage Devices], ntddmmc/PFEATURE_DATA_DVD_CPRM, FEATURE_DATA_DVD_CPRM, *PFEATURE_DATA_DVD_CPRM, storage.feature_data_dvd_cprm, ntddmmc/FEATURE_DATA_DVD_CPRM, PFEATURE_DATA_DVD_CPRM, structs-CD-ROM_376d4f99-5d92-48ad-b126-d1f6858e7fac.xml, _FEATURE_DATA_DVD_CPRM, PFEATURE_DATA_DVD_CPRM structure pointer [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddmmc.h
+req.include-header: Ntddcdrm.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddmmc.h
+apiname:
+-	FEATURE_DATA_DVD_CPRM
+product: Windows
+targetos: Windows
+req.typenames: FEATURE_DATA_DVD_CPRM, *PFEATURE_DATA_DVD_CPRM
 ---
 
 # _FEATURE_DATA_DVD_CPRM structure

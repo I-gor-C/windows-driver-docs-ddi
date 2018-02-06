@@ -1,41 +1,46 @@
 ---
-UID : NS:dot11wdi._NDIS_WDI_INIT_PARAMETERS
-title : "_NDIS_WDI_INIT_PARAMETERS"
-author : windows-driver-content
-description : The NDIS_WDI_INIT_PARAMETERS structure specifies the WDI functions provided by the operating system and called by the IHV WDI driver.
-old-location : netvista\ndis_wdi_init_parameters.htm
-old-project : netvista
-ms.assetid : 871D266C-55DF-4113-9714-92AB129303E5
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : "_NDIS_WDI_INIT_PARAMETERS, NDIS_WDI_INIT_PARAMETERS structure [Network Drivers Starting with Windows Vista], *PNDIS_WDI_INIT_PARAMETERS, dot11wdi/NDIS_WDI_INIT_PARAMETERS, dot11wdi/PNDIS_WDI_INIT_PARAMETERS, NDIS_WDI_INIT_PARAMETERS, PNDIS_WDI_INIT_PARAMETERS, PNDIS_WDI_INIT_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], netvista.ndis_wdi_init_parameters"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : dot11wdi.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_WDI_INIT_PARAMETERS, *PNDIS_WDI_INIT_PARAMETERS
+UID: NS:dot11wdi._NDIS_WDI_INIT_PARAMETERS
+title: "_NDIS_WDI_INIT_PARAMETERS"
+author: windows-driver-content
+description: The NDIS_WDI_INIT_PARAMETERS structure specifies the WDI functions provided by the operating system and called by the IHV WDI driver.
+old-location: netvista\ndis_wdi_init_parameters.htm
+old-project: netvista
+ms.assetid: 871D266C-55DF-4113-9714-92AB129303E5
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: "_NDIS_WDI_INIT_PARAMETERS, NDIS_WDI_INIT_PARAMETERS structure [Network Drivers Starting with Windows Vista], *PNDIS_WDI_INIT_PARAMETERS, dot11wdi/NDIS_WDI_INIT_PARAMETERS, dot11wdi/PNDIS_WDI_INIT_PARAMETERS, NDIS_WDI_INIT_PARAMETERS, PNDIS_WDI_INIT_PARAMETERS, PNDIS_WDI_INIT_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], netvista.ndis_wdi_init_parameters"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: dot11wdi.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	dot11wdi.h
+apiname:
+-	NDIS_WDI_INIT_PARAMETERS
+product: Windows
+targetos: Windows
+req.typenames: NDIS_WDI_INIT_PARAMETERS, *PNDIS_WDI_INIT_PARAMETERS
 ---
 
 # _NDIS_WDI_INIT_PARAMETERS structure

@@ -1,42 +1,48 @@
 ---
-UID : NF:storport.StorPortAllocateRegistryBuffer
-title : StorPortAllocateRegistryBuffer function
-author : windows-driver-content
-description : The StorPortAllocateRegistryBuffer routine is called by the miniport driver to allocate a buffer that can be used to read and write registry data.
-old-location : storage\storportallocateregistrybuffer.htm
-old-project : storage
-ms.assetid : c8d03a63-4b6a-4e84-994b-0e205401e531
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : StorPortAllocateRegistryBuffer routine [Storage Devices], storport/StorPortAllocateRegistryBuffer, storprt_dc344b88-692d-4529-8b98-c9b5c07a05f3.xml, StorPortAllocateRegistryBuffer, storage.storportallocateregistrybuffer
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Storport.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STOR_SPINLOCK
-req.product : Windows 10 or later.
+UID: NF:storport.StorPortAllocateRegistryBuffer
+title: StorPortAllocateRegistryBuffer function
+author: windows-driver-content
+description: The StorPortAllocateRegistryBuffer routine is called by the miniport driver to allocate a buffer that can be used to read and write registry data.
+old-location: storage\storportallocateregistrybuffer.htm
+old-project: storage
+ms.assetid: c8d03a63-4b6a-4e84-994b-0e205401e531
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: StorPortAllocateRegistryBuffer routine [Storage Devices], storport/StorPortAllocateRegistryBuffer, storprt_dc344b88-692d-4529-8b98-c9b5c07a05f3.xml, StorPortAllocateRegistryBuffer, storage.storportallocateregistrybuffer
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Storport.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Storport.lib
+-	Storport.dll
+apiname:
+-	StorPortAllocateRegistryBuffer
+product: Windows
+targetos: Windows
+req.typenames: STOR_SPINLOCK
+req.product: Windows 10 or later.
 ---
 
 

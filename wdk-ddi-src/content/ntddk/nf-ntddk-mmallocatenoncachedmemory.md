@@ -1,41 +1,46 @@
 ---
-UID : NF:ntddk.MmAllocateNonCachedMemory
-title : MmAllocateNonCachedMemory function
-author : windows-driver-content
-description : The MmAllocateNonCachedMemory routine allocates a virtual address range of noncached and cache-aligned memory.
-old-location : kernel\mmallocatenoncachedmemory.htm
-old-project : kernel
-ms.assetid : aabad72e-2636-47cd-9986-f50ab5101e68
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : k106_a52baa62-3e10-4158-98e5-5e4dce16ee6a.xml, MmAllocateNonCachedMemory, ntddk/MmAllocateNonCachedMemory, MmAllocateNonCachedMemory routine [Kernel-Mode Driver Architecture], kernel.mmallocatenoncachedmemory
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : IrqlMmApcLte, HwStorPortProhibitedDDIs, SpNoWait, StorPortStartIo
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<=APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.MmAllocateNonCachedMemory
+title: MmAllocateNonCachedMemory function
+author: windows-driver-content
+description: The MmAllocateNonCachedMemory routine allocates a virtual address range of noncached and cache-aligned memory.
+old-location: kernel\mmallocatenoncachedmemory.htm
+old-project: kernel
+ms.assetid: aabad72e-2636-47cd-9986-f50ab5101e68
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: k106_a52baa62-3e10-4158-98e5-5e4dce16ee6a.xml, MmAllocateNonCachedMemory, ntddk/MmAllocateNonCachedMemory, MmAllocateNonCachedMemory routine [Kernel-Mode Driver Architecture], kernel.mmallocatenoncachedmemory
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: IrqlMmApcLte, HwStorPortProhibitedDDIs, SpNoWait, StorPortStartIo
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<=APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	MmAllocateNonCachedMemory
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

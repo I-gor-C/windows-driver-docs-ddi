@@ -1,41 +1,46 @@
 ---
-UID : NC:ndis.IF_QUERY_OBJECT
-title : IF_QUERY_OBJECT
-author : windows-driver-content
-description : The ProviderQueryObject function retrieves information about a network interface.
-old-location : netvista\providerqueryobject.htm
-old-project : netvista
-ms.assetid : dea90ff0-7620-4364-90dc-2dc5d2e34ce1
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.providerqueryobject, ProviderQueryObject callback function [Network Drivers Starting with Windows Vista], ProviderQueryObject, IF_QUERY_OBJECT, IF_QUERY_OBJECT, ndis/ProviderQueryObject, *IFP_QUERY_OBJECT callback function [Network Drivers Starting with Windows Vista], *IFP_QUERY_OBJECT, net_if_provider_functions_ref_8e4d405f-cae0-40bc-8d9d-6d85e5c7ff06.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
+UID: NC:ndis.IF_QUERY_OBJECT
+title: IF_QUERY_OBJECT
+author: windows-driver-content
+description: The ProviderQueryObject function retrieves information about a network interface.
+old-location: netvista\providerqueryobject.htm
+old-project: netvista
+ms.assetid: dea90ff0-7620-4364-90dc-2dc5d2e34ce1
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.providerqueryobject, ProviderQueryObject callback function [Network Drivers Starting with Windows Vista], ProviderQueryObject, IF_QUERY_OBJECT, IF_QUERY_OBJECT, ndis/ProviderQueryObject, *IFP_QUERY_OBJECT callback function [Network Drivers Starting with Windows Vista], *IFP_QUERY_OBJECT, net_if_provider_functions_ref_8e4d405f-cae0-40bc-8d9d-6d85e5c7ff06.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ndis.h
+apiname:
+-	*IFP_QUERY_OBJECT
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 

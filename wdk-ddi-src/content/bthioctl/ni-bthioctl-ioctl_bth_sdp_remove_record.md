@@ -1,41 +1,46 @@
 ---
-UID : NI:bthioctl.IOCTL_BTH_SDP_REMOVE_RECORD
-title : IOCTL_BTH_SDP_REMOVE_RECORD
-author : windows-driver-content
-description : The IOCTL_BTH_SDP_REMOVE_RECORD request removes a local SDP record that the profile driver previously submitted. The local server will no longer offer this record to remote devices.
-old-location : bltooth\ioctl_bth_sdp_remove_record.htm
-old-project : bltooth
-ms.assetid : 8d559078-ece5-4e15-b010-e39b86679398
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : bltooth.ioctl_bth_sdp_remove_record, IOCTL_BTH_SDP_REMOVE_RECORD control code [Bluetooth Devices], IOCTL_BTH_SDP_REMOVE_RECORD, bthioctl/IOCTL_BTH_SDP_REMOVE_RECORD, bth_ioctls_863ca82b-4cb5-444c-bd29-b1d620e509a4.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : bthioctl.h
-req.include-header : Bthioctl.h
-req.target-type : Windows
-req.target-min-winverclnt : Versions:\_Supported in Windows Vista, and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= PASSIVE_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HFP_BYPASS_CODEC_ID_V1, *PHFP_BYPASS_CODEC_ID_V1
+UID: NI:bthioctl.IOCTL_BTH_SDP_REMOVE_RECORD
+title: IOCTL_BTH_SDP_REMOVE_RECORD
+author: windows-driver-content
+description: The IOCTL_BTH_SDP_REMOVE_RECORD request removes a local SDP record that the profile driver previously submitted. The local server will no longer offer this record to remote devices.
+old-location: bltooth\ioctl_bth_sdp_remove_record.htm
+old-project: bltooth
+ms.assetid: 8d559078-ece5-4e15-b010-e39b86679398
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: bltooth.ioctl_bth_sdp_remove_record, IOCTL_BTH_SDP_REMOVE_RECORD control code [Bluetooth Devices], IOCTL_BTH_SDP_REMOVE_RECORD, bthioctl/IOCTL_BTH_SDP_REMOVE_RECORD, bth_ioctls_863ca82b-4cb5-444c-bd29-b1d620e509a4.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: bthioctl.h
+req.include-header: Bthioctl.h
+req.target-type: Windows
+req.target-min-winverclnt: Versions:\_Supported in Windows Vista, and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= PASSIVE_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Bthioctl.h
+apiname:
+-	IOCTL_BTH_SDP_REMOVE_RECORD
+product: Windows
+targetos: Windows
+req.typenames: HFP_BYPASS_CODEC_ID_V1, *PHFP_BYPASS_CODEC_ID_V1
 ---
 
 # IOCTL_BTH_SDP_REMOVE_RECORD IOCTL

@@ -1,42 +1,47 @@
 ---
-UID : NS:wdfdevice._WDF_FILEOBJECT_CONFIG
-title : "_WDF_FILEOBJECT_CONFIG"
-author : windows-driver-content
-description : The WDF_FILEOBJECT_CONFIG structure contains configuration information of a driver's framework file objects.
-old-location : wdf\wdf_fileobject_config.htm
-old-project : wdf
-ms.assetid : 6fefc35f-fbbd-4c5e-bb8f-25ad3b6cdb67
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : DFDeviceObjectGeneralRef_5f843338-f299-48d3-80ad-d5d35c122d0f.xml, WDF_FILEOBJECT_CONFIG, _WDF_FILEOBJECT_CONFIG, PWDF_FILEOBJECT_CONFIG, *PWDF_FILEOBJECT_CONFIG, WDF_FILEOBJECT_CONFIG structure, wdfdevice/WDF_FILEOBJECT_CONFIG, wdf.wdf_fileobject_config, kmdf.wdf_fileobject_config, PWDF_FILEOBJECT_CONFIG structure pointer, wdfdevice/PWDF_FILEOBJECT_CONFIG
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdfdevice.h
-req.include-header : Wdf.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_FILEOBJECT_CONFIG, *PWDF_FILEOBJECT_CONFIG
-req.product : Windows 10 or later.
+UID: NS:wdfdevice._WDF_FILEOBJECT_CONFIG
+title: "_WDF_FILEOBJECT_CONFIG"
+author: windows-driver-content
+description: The WDF_FILEOBJECT_CONFIG structure contains configuration information of a driver's framework file objects.
+old-location: wdf\wdf_fileobject_config.htm
+old-project: wdf
+ms.assetid: 6fefc35f-fbbd-4c5e-bb8f-25ad3b6cdb67
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: DFDeviceObjectGeneralRef_5f843338-f299-48d3-80ad-d5d35c122d0f.xml, WDF_FILEOBJECT_CONFIG, _WDF_FILEOBJECT_CONFIG, PWDF_FILEOBJECT_CONFIG, *PWDF_FILEOBJECT_CONFIG, WDF_FILEOBJECT_CONFIG structure, wdfdevice/WDF_FILEOBJECT_CONFIG, wdf.wdf_fileobject_config, kmdf.wdf_fileobject_config, PWDF_FILEOBJECT_CONFIG structure pointer, wdfdevice/PWDF_FILEOBJECT_CONFIG
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdfdevice.h
+req.include-header: Wdf.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfdevice.h
+apiname:
+-	WDF_FILEOBJECT_CONFIG
+product: Windows
+targetos: Windows
+req.typenames: WDF_FILEOBJECT_CONFIG, *PWDF_FILEOBJECT_CONFIG
+req.product: Windows 10 or later.
 ---
 
 # _WDF_FILEOBJECT_CONFIG structure

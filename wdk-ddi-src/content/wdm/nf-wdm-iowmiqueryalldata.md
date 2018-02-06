@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.IoWMIQueryAllData
-title : IoWMIQueryAllData function
-author : windows-driver-content
-description : The IoWMIQueryAllData routine returns all WMI data blocks that implement a given WMI class.
-old-location : kernel\iowmiqueryalldata.htm
-old-project : kernel
-ms.assetid : d0efae7b-5a53-4f8a-b2d7-c30eefad7c90
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.iowmiqueryalldata, wdm/IoWMIQueryAllData, IoWMIQueryAllData, IoWMIQueryAllData routine [Kernel-Mode Driver Architecture], k104_120c73d7-392a-4604-8f6b-11c4e717fcac.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Microsoft Windows XP and later versions of the Windows operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.IoWMIQueryAllData
+title: IoWMIQueryAllData function
+author: windows-driver-content
+description: The IoWMIQueryAllData routine returns all WMI data blocks that implement a given WMI class.
+old-location: kernel\iowmiqueryalldata.htm
+old-project: kernel
+ms.assetid: d0efae7b-5a53-4f8a-b2d7-c30eefad7c90
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.iowmiqueryalldata, wdm/IoWMIQueryAllData, IoWMIQueryAllData, IoWMIQueryAllData routine [Kernel-Mode Driver Architecture], k104_120c73d7-392a-4604-8f6b-11c4e717fcac.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Microsoft Windows XP and later versions of the Windows operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoWMIQueryAllData
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

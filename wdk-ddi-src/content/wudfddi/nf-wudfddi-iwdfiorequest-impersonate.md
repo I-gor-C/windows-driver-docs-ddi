@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFIoRequest.Impersonate
-title : IWDFIoRequest::Impersonate method
-author : windows-driver-content
-description : The Impersonate method registers the interface for the method that the framework should call for impersonation.
-old-location : wdf\iwdfiorequest_impersonate.htm
-old-project : wdf
-ms.assetid : beb630e7-9667-4bc2-bf35-69db6cf0b104
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wudfddi/IWDFIoRequest::Impersonate, IWDFIoRequest interface, Impersonate method, Impersonate method, Impersonate, IWDFIoRequest, Impersonate method, IWDFIoRequest interface, IWDFIoRequest::Impersonate, UMDFRequestObjectRef_a5f40359-edc8-42e1-a63d-99390abeba86.xml, wdf.iwdfiorequest_impersonate, umdf.iwdfiorequest_impersonate
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.5
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFIoRequest.Impersonate
+title: IWDFIoRequest::Impersonate method
+author: windows-driver-content
+description: The Impersonate method registers the interface for the method that the framework should call for impersonation.
+old-location: wdf\iwdfiorequest_impersonate.htm
+old-project: wdf
+ms.assetid: beb630e7-9667-4bc2-bf35-69db6cf0b104
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wudfddi/IWDFIoRequest::Impersonate, IWDFIoRequest interface, Impersonate method, Impersonate method, Impersonate, IWDFIoRequest, Impersonate method, IWDFIoRequest interface, IWDFIoRequest::Impersonate, UMDFRequestObjectRef_a5f40359-edc8-42e1-a63d-99390abeba86.xml, wdf.iwdfiorequest_impersonate, umdf.iwdfiorequest_impersonate
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.5
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFIoRequest.Impersonate
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

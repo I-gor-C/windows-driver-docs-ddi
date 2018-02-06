@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugSymbols3.GetSourceEntryString
-title : IDebugSymbols3::GetSourceEntryString method
-author : windows-driver-content
-description : Queries symbol information and returns locations in the target's memory.
-old-location : debugger\idebugsymbols3_getsourceentrystring.htm
-old-project : debugger
-ms.assetid : 4742F6DD-F7D6-4EF4-877B-C02630018C8E
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugSymbols3::GetSourceEntryString, GetSourceEntryString method [Windows Debugging], IDebugSymbols3 interface, dbgeng/IDebugSymbols3::GetSourceEntryString, GetSourceEntryString method [Windows Debugging], GetSourceEntryString, debugger.idebugsymbols3_getsourceentrystring, IDebugSymbols3, IDebugSymbols3 interface [Windows Debugging], GetSourceEntryString method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSymbols3.GetSourceEntryString
+title: IDebugSymbols3::GetSourceEntryString method
+author: windows-driver-content
+description: Queries symbol information and returns locations in the target's memory.
+old-location: debugger\idebugsymbols3_getsourceentrystring.htm
+old-project: debugger
+ms.assetid: 4742F6DD-F7D6-4EF4-877B-C02630018C8E
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugSymbols3::GetSourceEntryString, GetSourceEntryString method [Windows Debugging], IDebugSymbols3 interface, dbgeng/IDebugSymbols3::GetSourceEntryString, GetSourceEntryString method [Windows Debugging], GetSourceEntryString, debugger.idebugsymbols3_getsourceentrystring, IDebugSymbols3, IDebugSymbols3 interface [Windows Debugging], GetSourceEntryString method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Dbgeng.h
+apiname:
+-	IDebugSymbols3.GetSourceEntryString
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

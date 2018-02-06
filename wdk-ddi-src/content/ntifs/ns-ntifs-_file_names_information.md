@@ -1,41 +1,46 @@
 ---
-UID : NS:ntifs._FILE_NAMES_INFORMATION
-title : "_FILE_NAMES_INFORMATION"
-author : windows-driver-content
-description : A FILE_NAMES_INFORMATION structure used to query detailed information about the names of files in a directory.
-old-location : ifsk\file_names_information.htm
-old-project : ifsk
-ms.assetid : a9eb4606-fe55-4f77-914a-656ebe247066
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : fileinformationstructures_8349a2eb-ffeb-4050-9084-b09474079415.xml, ifsk.file_names_information, FILE_NAMES_INFORMATION, PFILE_NAMES_INFORMATION structure pointer [Installable File System Drivers], PFILE_NAMES_INFORMATION, FILE_NAMES_INFORMATION structure [Installable File System Drivers], *PFILE_NAMES_INFORMATION, _FILE_NAMES_INFORMATION, ntifs/FILE_NAMES_INFORMATION, ntifs/PFILE_NAMES_INFORMATION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntifs.h
-req.include-header : Ntifs.h, Fltkernel.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PFILE_NAMES_INFORMATION, FILE_NAMES_INFORMATION"
+UID: NS:ntifs._FILE_NAMES_INFORMATION
+title: "_FILE_NAMES_INFORMATION"
+author: windows-driver-content
+description: A FILE_NAMES_INFORMATION structure used to query detailed information about the names of files in a directory.
+old-location: ifsk\file_names_information.htm
+old-project: ifsk
+ms.assetid: a9eb4606-fe55-4f77-914a-656ebe247066
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: fileinformationstructures_8349a2eb-ffeb-4050-9084-b09474079415.xml, ifsk.file_names_information, FILE_NAMES_INFORMATION, PFILE_NAMES_INFORMATION structure pointer [Installable File System Drivers], PFILE_NAMES_INFORMATION, FILE_NAMES_INFORMATION structure [Installable File System Drivers], *PFILE_NAMES_INFORMATION, _FILE_NAMES_INFORMATION, ntifs/FILE_NAMES_INFORMATION, ntifs/PFILE_NAMES_INFORMATION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntifs.h
+req.include-header: Ntifs.h, Fltkernel.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntifs.h
+apiname:
+-	FILE_NAMES_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: "*PFILE_NAMES_INFORMATION, FILE_NAMES_INFORMATION"
 ---
 
 # _FILE_NAMES_INFORMATION structure

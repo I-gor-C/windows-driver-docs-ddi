@@ -1,41 +1,46 @@
 ---
-UID : NF:ksproxy.IKsControl.KsEvent
-title : IKsControl::KsEvent method
-author : windows-driver-content
-description : The KsEvent method enables or disables an event, along with any other defined support operations available on an event set.
-old-location : stream\ikscontrol_ksevent.htm
-old-project : stream
-ms.assetid : b1ff6569-9568-40d8-b2a9-e63ce44720a2
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : IKsControl interface [Streaming Media Devices], KsEvent method, IKsControl::KsEvent, KsEvent method [Streaming Media Devices], stream.ikscontrol_ksevent, ksproxy/IKsControl::KsEvent, IKsControl, KsEvent, ksproxy_d7ef7fda-b615-4aa9-8528-aa66de81da5b.xml, KsEvent method [Streaming Media Devices], IKsControl interface
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : ksproxy.h
-req.include-header : Ksproxy.h
-req.target-type : DesktopMobile
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : ksproxy.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PIPE_STATE
+UID: NF:ksproxy.IKsControl.KsEvent
+title: IKsControl::KsEvent method
+author: windows-driver-content
+description: The KsEvent method enables or disables an event, along with any other defined support operations available on an event set.
+old-location: stream\ikscontrol_ksevent.htm
+old-project: stream
+ms.assetid: b1ff6569-9568-40d8-b2a9-e63ce44720a2
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: IKsControl interface [Streaming Media Devices], KsEvent method, IKsControl::KsEvent, KsEvent method [Streaming Media Devices], stream.ikscontrol_ksevent, ksproxy/IKsControl::KsEvent, IKsControl, KsEvent, ksproxy_d7ef7fda-b615-4aa9-8528-aa66de81da5b.xml, KsEvent method [Streaming Media Devices], IKsControl interface
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: ksproxy.h
+req.include-header: Ksproxy.h
+req.target-type: DesktopMobile
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: ksproxy.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	ksproxy.h
+apiname:
+-	IKsControl.KsEvent
+product: Windows
+targetos: Windows
+req.typenames: PIPE_STATE
 ---
 
 

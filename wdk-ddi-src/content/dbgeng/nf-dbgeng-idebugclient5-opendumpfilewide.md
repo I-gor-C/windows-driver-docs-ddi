@@ -1,41 +1,47 @@
 ---
-UID : NF:dbgeng.IDebugClient5.OpenDumpFileWide
-title : IDebugClient5::OpenDumpFileWide method
-author : windows-driver-content
-description : The OpenDumpFileWide method opens a dump file as a debugger target.
-old-location : debugger\opendumpfilewide.htm
-old-project : debugger
-ms.assetid : 56efc94f-ef1e-41f9-ab99-57f0be34a770
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : OpenDumpFileWide method [Windows Debugging], IDebugClient5 interface [Windows Debugging], OpenDumpFileWide method, OpenDumpFileWide, OpenDumpFileWide method [Windows Debugging], IDebugClient5 interface, OpenDumpFileWide method [Windows Debugging], IDebugClient4 interface, IDebugClient4::OpenDumpFileWide, IDebugClient_e3280682-6272-4324-bba5-120a95f27b15.xml, dbgeng/IDebugClient4::OpenDumpFileWide, dbgeng/IDebugClient5::OpenDumpFileWide, debugger.opendumpfilewide, IDebugClient4 interface [Windows Debugging], OpenDumpFileWide method, IDebugClient5::OpenDumpFileWide, IDebugClient5
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugClient5.OpenDumpFileWide
+title: IDebugClient5::OpenDumpFileWide method
+author: windows-driver-content
+description: The OpenDumpFileWide method opens a dump file as a debugger target.
+old-location: debugger\opendumpfilewide.htm
+old-project: debugger
+ms.assetid: 56efc94f-ef1e-41f9-ab99-57f0be34a770
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: OpenDumpFileWide method [Windows Debugging], IDebugClient5 interface [Windows Debugging], OpenDumpFileWide method, OpenDumpFileWide, OpenDumpFileWide method [Windows Debugging], IDebugClient5 interface, OpenDumpFileWide method [Windows Debugging], IDebugClient4 interface, IDebugClient4::OpenDumpFileWide, IDebugClient_e3280682-6272-4324-bba5-120a95f27b15.xml, dbgeng/IDebugClient4::OpenDumpFileWide, dbgeng/IDebugClient5::OpenDumpFileWide, debugger.opendumpfilewide, IDebugClient4 interface [Windows Debugging], OpenDumpFileWide method, IDebugClient5::OpenDumpFileWide, IDebugClient5
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugClient4.OpenDumpFileWide
+-	IDebugClient5.OpenDumpFileWide
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._D3DDDIARG_QUERYRESOURCERESIDENCY
-title : "_D3DDDIARG_QUERYRESOURCERESIDENCY"
-author : windows-driver-content
-description : The D3DDDIARG_QUERYRESOURCERESIDENCY structure describes a list of resources on which residency is verified through the QueryResourceResidency function.
-old-location : display\d3dddiarg_queryresourceresidency.htm
-old-project : display
-ms.assetid : 14c0cb12-3ed0-4c78-befa-6da9e8cd7dbc
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DDDIARG_QUERYRESOURCERESIDENCY structure [Display Devices], D3DDDIARG_QUERYRESOURCERESIDENCY, _D3DDDIARG_QUERYRESOURCERESIDENCY, display.d3dddiarg_queryresourceresidency, d3dumddi/D3DDDIARG_QUERYRESOURCERESIDENCY, UMDisplayDriver_param_Structs_46a460d2-e511-43fd-9906-b9a47762f9a7.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDIARG_QUERYRESOURCERESIDENCY
+UID: NS:d3dumddi._D3DDDIARG_QUERYRESOURCERESIDENCY
+title: "_D3DDDIARG_QUERYRESOURCERESIDENCY"
+author: windows-driver-content
+description: The D3DDDIARG_QUERYRESOURCERESIDENCY structure describes a list of resources on which residency is verified through the QueryResourceResidency function.
+old-location: display\d3dddiarg_queryresourceresidency.htm
+old-project: display
+ms.assetid: 14c0cb12-3ed0-4c78-befa-6da9e8cd7dbc
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DDDIARG_QUERYRESOURCERESIDENCY structure [Display Devices], D3DDDIARG_QUERYRESOURCERESIDENCY, _D3DDDIARG_QUERYRESOURCERESIDENCY, display.d3dddiarg_queryresourceresidency, d3dumddi/D3DDDIARG_QUERYRESOURCERESIDENCY, UMDisplayDriver_param_Structs_46a460d2-e511-43fd-9906-b9a47762f9a7.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	D3DDDIARG_QUERYRESOURCERESIDENCY
+product: Windows
+targetos: Windows
+req.typenames: D3DDDIARG_QUERYRESOURCERESIDENCY
 ---
 
 # _D3DDDIARG_QUERYRESOURCERESIDENCY structure

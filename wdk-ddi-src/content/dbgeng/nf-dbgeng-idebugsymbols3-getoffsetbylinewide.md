@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugSymbols3.GetOffsetByLineWide
-title : IDebugSymbols3::GetOffsetByLineWide method
-author : windows-driver-content
-description : The GetOffsetByLineWide method returns the location of the instruction that corresponds to a specified line in the source code.
-old-location : debugger\getoffsetbylinewide.htm
-old-project : debugger
-ms.assetid : ba09333e-84a5-4166-a859-e09c0cf74347
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : GetOffsetByLineWide method [Windows Debugging], debugger.getoffsetbylinewide, GetOffsetByLineWide method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols3, IDebugSymbols3::GetOffsetByLineWide, dbgeng/IDebugSymbols3::GetOffsetByLineWide, GetOffsetByLineWide, IDebugSymbols3 interface [Windows Debugging], GetOffsetByLineWide method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSymbols3.GetOffsetByLineWide
+title: IDebugSymbols3::GetOffsetByLineWide method
+author: windows-driver-content
+description: The GetOffsetByLineWide method returns the location of the instruction that corresponds to a specified line in the source code.
+old-location: debugger\getoffsetbylinewide.htm
+old-project: debugger
+ms.assetid: ba09333e-84a5-4166-a859-e09c0cf74347
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: GetOffsetByLineWide method [Windows Debugging], debugger.getoffsetbylinewide, GetOffsetByLineWide method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols3, IDebugSymbols3::GetOffsetByLineWide, dbgeng/IDebugSymbols3::GetOffsetByLineWide, GetOffsetByLineWide, IDebugSymbols3 interface [Windows Debugging], GetOffsetByLineWide method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugSymbols3.GetOffsetByLineWide
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

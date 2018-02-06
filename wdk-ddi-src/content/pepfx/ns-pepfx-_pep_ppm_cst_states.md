@@ -1,41 +1,46 @@
 ---
-UID : NS:pepfx._PEP_PPM_CST_STATES
-title : "_PEP_PPM_CST_STATES"
-author : windows-driver-content
-description : The PEP_PPM_CST_STATES structure specifies the properties of the C states (ACPI processor power states) that are supported for a processor.
-old-location : kernel\pep_ppm_cst_states.htm
-old-project : kernel
-ms.assetid : 4E620796-3065-469E-8E91-8F698F672CAE
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : PEP_PPM_CST_STATES structure [Kernel-Mode Driver Architecture], _PEP_PPM_CST_STATES, PPEP_PPM_CST_STATES structure pointer [Kernel-Mode Driver Architecture], *PPEP_PPM_CST_STATES, pepfx/PPEP_PPM_CST_STATES, PPEP_PPM_CST_STATES, PEP_PPM_CST_STATES, kernel.pep_ppm_cst_states, pepfx/PEP_PPM_CST_STATES
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : pepfx.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with Windows 10.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PEP_PPM_CST_STATES, *PPEP_PPM_CST_STATES
+UID: NS:pepfx._PEP_PPM_CST_STATES
+title: "_PEP_PPM_CST_STATES"
+author: windows-driver-content
+description: The PEP_PPM_CST_STATES structure specifies the properties of the C states (ACPI processor power states) that are supported for a processor.
+old-location: kernel\pep_ppm_cst_states.htm
+old-project: kernel
+ms.assetid: 4E620796-3065-469E-8E91-8F698F672CAE
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: PEP_PPM_CST_STATES structure [Kernel-Mode Driver Architecture], _PEP_PPM_CST_STATES, PPEP_PPM_CST_STATES structure pointer [Kernel-Mode Driver Architecture], *PPEP_PPM_CST_STATES, pepfx/PPEP_PPM_CST_STATES, PPEP_PPM_CST_STATES, PEP_PPM_CST_STATES, kernel.pep_ppm_cst_states, pepfx/PEP_PPM_CST_STATES
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: pepfx.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows 10.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	pepfx.h
+apiname:
+-	PEP_PPM_CST_STATES
+product: Windows
+targetos: Windows
+req.typenames: PEP_PPM_CST_STATES, *PPEP_PPM_CST_STATES
 ---
 
 # _PEP_PPM_CST_STATES structure

@@ -1,42 +1,47 @@
 ---
-UID : NF:storport.StorPortFreePool
-title : StorPortFreePool function
-author : windows-driver-content
-description : The StorPortFreePool routine frees a block of memory that was previously allocated by a call to the StorPortAllocatePool routine.
-old-location : storage\storportfreepool.htm
-old-project : storage
-ms.assetid : e5886fa3-dc37-4764-9304-3609a4ced0ad
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storport/StorPortFreePool, storage.storportfreepool, StorPortFreePool routine [Storage Devices], StorPortFreePool, storprt_a4fd5e23-3c56-4bf3-9751-21f90028d704.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : StorPortAllocatePool2, StorPortIrql
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STOR_SPINLOCK
-req.product : Windows 10 or later.
+UID: NF:storport.StorPortFreePool
+title: StorPortFreePool function
+author: windows-driver-content
+description: The StorPortFreePool routine frees a block of memory that was previously allocated by a call to the StorPortAllocatePool routine.
+old-location: storage\storportfreepool.htm
+old-project: storage
+ms.assetid: e5886fa3-dc37-4764-9304-3609a4ced0ad
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storport/StorPortFreePool, storage.storportfreepool, StorPortFreePool routine [Storage Devices], StorPortFreePool, storprt_a4fd5e23-3c56-4bf3-9751-21f90028d704.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: StorPortAllocatePool2, StorPortIrql
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	storport.h
+apiname:
+-	StorPortFreePool
+product: Windows
+targetos: Windows
+req.typenames: STOR_SPINLOCK
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:d3d10umddi.D3D11_1DDI_AUTHENTICATED_QUERY_CRYPTO_SESSION_INPUT
-title : D3D11_1DDI_AUTHENTICATED_QUERY_CRYPTO_SESSION_INPUT
-author : windows-driver-content
-description : Contains the response to a QueryAuthenticatedChannel(D3D11_1) query with a D3D11_1DDI_AUTHENTICATED_QUERY_INPUT.QueryType value of D3D11_1DDI_AUTHENTICATED_QUERY_CRYPTO_SESSION.
-old-location : display\d3d11_1ddi_authenticated_query_crypto_session_input.htm
-old-project : display
-ms.assetid : de902658-6969-4efa-8242-a6a4bd9780ed
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3d10umddi/D3D11_1DDI_AUTHENTICATED_QUERY_CRYPTO_SESSION_INPUT, display.d3d11_1ddi_authenticated_query_crypto_session_input, D3D11_1DDI_AUTHENTICATED_QUERY_CRYPTO_SESSION_INPUT structure [Display Devices], D3D11_1DDI_AUTHENTICATED_QUERY_CRYPTO_SESSION_INPUT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3D11_1DDI_AUTHENTICATED_QUERY_CRYPTO_SESSION_INPUT
+UID: NS:d3d10umddi.D3D11_1DDI_AUTHENTICATED_QUERY_CRYPTO_SESSION_INPUT
+title: D3D11_1DDI_AUTHENTICATED_QUERY_CRYPTO_SESSION_INPUT
+author: windows-driver-content
+description: Contains the response to a QueryAuthenticatedChannel(D3D11_1) query with a D3D11_1DDI_AUTHENTICATED_QUERY_INPUT.QueryType value of D3D11_1DDI_AUTHENTICATED_QUERY_CRYPTO_SESSION.
+old-location: display\d3d11_1ddi_authenticated_query_crypto_session_input.htm
+old-project: display
+ms.assetid: de902658-6969-4efa-8242-a6a4bd9780ed
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3d10umddi/D3D11_1DDI_AUTHENTICATED_QUERY_CRYPTO_SESSION_INPUT, display.d3d11_1ddi_authenticated_query_crypto_session_input, D3D11_1DDI_AUTHENTICATED_QUERY_CRYPTO_SESSION_INPUT structure [Display Devices], D3D11_1DDI_AUTHENTICATED_QUERY_CRYPTO_SESSION_INPUT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	D3d10umddi.h
+apiname:
+-	D3D11_1DDI_AUTHENTICATED_QUERY_CRYPTO_SESSION_INPUT
+product: Windows
+targetos: Windows
+req.typenames: D3D11_1DDI_AUTHENTICATED_QUERY_CRYPTO_SESSION_INPUT
 ---
 
 # D3D11_1DDI_AUTHENTICATED_QUERY_CRYPTO_SESSION_INPUT structure

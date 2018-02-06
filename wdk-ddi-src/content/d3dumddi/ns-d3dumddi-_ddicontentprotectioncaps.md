@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._DDICONTENTPROTECTIONCAPS
-title : "_DDICONTENTPROTECTIONCAPS"
-author : windows-driver-content
-description : The DDICONTENTPROTECTIONCAPS structure describes a specific encryption and decode combination that the driver uses.
-old-location : display\ddicontentprotectioncaps.htm
-old-project : display
-ms.assetid : d223712d-2c77-4bec-b8c0-d677d4caeac2
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : "_DDICONTENTPROTECTIONCAPS, D3D_other_Structs_15111323-4ebe-49be-8ce6-d43a896533ee.xml, d3dumddi/DDICONTENTPROTECTIONCAPS, DDICONTENTPROTECTIONCAPS structure [Display Devices], DDICONTENTPROTECTIONCAPS, display.ddicontentprotectioncaps"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : DDICONTENTPROTECTIONCAPS is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DDICONTENTPROTECTIONCAPS
+UID: NS:d3dumddi._DDICONTENTPROTECTIONCAPS
+title: "_DDICONTENTPROTECTIONCAPS"
+author: windows-driver-content
+description: The DDICONTENTPROTECTIONCAPS structure describes a specific encryption and decode combination that the driver uses.
+old-location: display\ddicontentprotectioncaps.htm
+old-project: display
+ms.assetid: d223712d-2c77-4bec-b8c0-d677d4caeac2
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: "_DDICONTENTPROTECTIONCAPS, D3D_other_Structs_15111323-4ebe-49be-8ce6-d43a896533ee.xml, d3dumddi/DDICONTENTPROTECTIONCAPS, DDICONTENTPROTECTIONCAPS structure [Display Devices], DDICONTENTPROTECTIONCAPS, display.ddicontentprotectioncaps"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: DDICONTENTPROTECTIONCAPS is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	DDICONTENTPROTECTIONCAPS
+product: Windows
+targetos: Windows
+req.typenames: DDICONTENTPROTECTIONCAPS
 ---
 
 # _DDICONTENTPROTECTIONCAPS structure

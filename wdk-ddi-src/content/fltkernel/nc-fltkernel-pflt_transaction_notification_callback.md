@@ -1,41 +1,46 @@
 ---
-UID : NC:fltkernel.PFLT_TRANSACTION_NOTIFICATION_CALLBACK
-title : PFLT_TRANSACTION_NOTIFICATION_CALLBACK
-author : windows-driver-content
-description : A minifilter driver can register a routine of type PFLT_TRANSACTION_NOTIFICATION_CALLBACK as its TransactionNotificationCallback routine.
-old-location : ifsk\pflt_transaction_notification_callback.htm
-old-project : ifsk
-ms.assetid : ed441ca2-ca98-4c8c-9c2f-4258c535ebac
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.pflt_transaction_notification_callback, TransactionNotificationCallback routine [Installable File System Drivers], TransactionNotificationCallback, PFLT_TRANSACTION_NOTIFICATION_CALLBACK, PFLT_TRANSACTION_NOTIFICATION_CALLBACK, fltkernel/TransactionNotificationCallback, FltCallbacks_e4045561-4dc3-44eb-b5c6-086e767f9c22.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Desktop
-req.target-min-winverclnt : The PFLT_TRANSACTION_NOTIFICATION_CALLBACK routine is available on Windows Vista and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NC:fltkernel.PFLT_TRANSACTION_NOTIFICATION_CALLBACK
+title: PFLT_TRANSACTION_NOTIFICATION_CALLBACK
+author: windows-driver-content
+description: A minifilter driver can register a routine of type PFLT_TRANSACTION_NOTIFICATION_CALLBACK as its TransactionNotificationCallback routine.
+old-location: ifsk\pflt_transaction_notification_callback.htm
+old-project: ifsk
+ms.assetid: ed441ca2-ca98-4c8c-9c2f-4258c535ebac
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.pflt_transaction_notification_callback, TransactionNotificationCallback routine [Installable File System Drivers], TransactionNotificationCallback, PFLT_TRANSACTION_NOTIFICATION_CALLBACK, PFLT_TRANSACTION_NOTIFICATION_CALLBACK, fltkernel/TransactionNotificationCallback, FltCallbacks_e4045561-4dc3-44eb-b5c6-086e767f9c22.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Desktop
+req.target-min-winverclnt: The PFLT_TRANSACTION_NOTIFICATION_CALLBACK routine is available on Windows Vista and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	fltkernel.h
+apiname:
+-	TransactionNotificationCallback
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

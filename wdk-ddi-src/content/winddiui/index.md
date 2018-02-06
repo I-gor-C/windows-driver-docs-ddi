@@ -1,12 +1,12 @@
 ---
-UID : NA:winddiui
-ms.assetid : 53a5312f-9f75-3637-bb7f-d79817f00a15
-ms.author : windowsdriverdev
-ms.date : 01/18/18
-ms.keywords : 
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : portal
+UID: NA:winddiui
+ms.assetid: 53a5312f-9f75-3637-bb7f-d79817f00a15
+ms.author: windowsdriverdev
+ms.date: 01/18/18
+ms.keywords: 
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: portal
 ---
 
 # winddiui.h header

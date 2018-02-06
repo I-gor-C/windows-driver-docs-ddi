@@ -1,42 +1,47 @@
 ---
-UID : NC:wdffdo.EVT_WDF_DEVICE_REMOVE_ADDED_RESOURCES
-title : EVT_WDF_DEVICE_REMOVE_ADDED_RESOURCES
-author : windows-driver-content
-description : A driver's EvtDeviceRemoveAddedResources event callback function removes hardware resources that the driver's EvtDeviceFilterAddResourceRequirements callback function added.
-old-location : wdf\evtdeviceremoveaddedresources.htm
-old-project : wdf
-ms.assetid : b18c2b34-db6d-4553-9340-556da1fd7991
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.evtdeviceremoveaddedresources, EvtDeviceRemoveAddedResources callback function, EvtDeviceRemoveAddedResources, EVT_WDF_DEVICE_REMOVE_ADDED_RESOURCES, EVT_WDF_DEVICE_REMOVE_ADDED_RESOURCES, wdffdo/EvtDeviceRemoveAddedResources, DFDeviceObjectFdoPdoRef_c1020fff-8895-4ece-ae27-ef33d3a65de6.xml, kmdf.evtdeviceremoveaddedresources
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdffdo.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_DRIVER_VERSION_AVAILABLE_PARAMS, *PWDF_DRIVER_VERSION_AVAILABLE_PARAMS
-req.product : Windows 10 or later.
+UID: NC:wdffdo.EVT_WDF_DEVICE_REMOVE_ADDED_RESOURCES
+title: EVT_WDF_DEVICE_REMOVE_ADDED_RESOURCES
+author: windows-driver-content
+description: A driver's EvtDeviceRemoveAddedResources event callback function removes hardware resources that the driver's EvtDeviceFilterAddResourceRequirements callback function added.
+old-location: wdf\evtdeviceremoveaddedresources.htm
+old-project: wdf
+ms.assetid: b18c2b34-db6d-4553-9340-556da1fd7991
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.evtdeviceremoveaddedresources, EvtDeviceRemoveAddedResources callback function, EvtDeviceRemoveAddedResources, EVT_WDF_DEVICE_REMOVE_ADDED_RESOURCES, EVT_WDF_DEVICE_REMOVE_ADDED_RESOURCES, wdffdo/EvtDeviceRemoveAddedResources, DFDeviceObjectFdoPdoRef_c1020fff-8895-4ece-ae27-ef33d3a65de6.xml, kmdf.evtdeviceremoveaddedresources
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdffdo.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Wdffdo.h
+apiname:
+-	EvtDeviceRemoveAddedResources
+product: Windows
+targetos: Windows
+req.typenames: WDF_DRIVER_VERSION_AVAILABLE_PARAMS, *PWDF_DRIVER_VERSION_AVAILABLE_PARAMS
+req.product: Windows 10 or later.
 ---
 
 

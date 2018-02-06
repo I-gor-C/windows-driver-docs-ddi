@@ -1,42 +1,47 @@
 ---
-UID : NF:rxworkq.RxDispatchToWorkerThread
-title : RxDispatchToWorkerThread function
-author : windows-driver-content
-description : RxDispatchToWorkerThread invokes a routine in the context of a worker thread. The memory for the WORK_QUEUE_ITEM is allocated by this routine.
-old-location : ifsk\rxdispatchtoworkerthread.htm
-old-project : ifsk
-ms.assetid : 426d28fa-abfe-44d9-9b15-119f92367b40
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : RxDispatchToWorkerThread routine [Installable File System Drivers], RxDispatchToWorkerThread, rxworkq/RxDispatchToWorkerThread, rxref_4ac4f78d-fd07-4d80-a4db-8215322d6c89.xml, ifsk.rxdispatchtoworkerthread
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : rxworkq.h
-req.include-header : Rxworkq.h, Rxstruc.h, Ntifs.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RX_CONTEXT, *PRX_CONTEXT
-req.product : Windows 10 or later.
+UID: NF:rxworkq.RxDispatchToWorkerThread
+title: RxDispatchToWorkerThread function
+author: windows-driver-content
+description: RxDispatchToWorkerThread invokes a routine in the context of a worker thread. The memory for the WORK_QUEUE_ITEM is allocated by this routine.
+old-location: ifsk\rxdispatchtoworkerthread.htm
+old-project: ifsk
+ms.assetid: 426d28fa-abfe-44d9-9b15-119f92367b40
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: RxDispatchToWorkerThread routine [Installable File System Drivers], RxDispatchToWorkerThread, rxworkq/RxDispatchToWorkerThread, rxref_4ac4f78d-fd07-4d80-a4db-8215322d6c89.xml, ifsk.rxdispatchtoworkerthread
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: rxworkq.h
+req.include-header: Rxworkq.h, Rxstruc.h, Ntifs.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	rxworkq.h
+apiname:
+-	RxDispatchToWorkerThread
+product: Windows
+targetos: Windows
+req.typenames: RX_CONTEXT, *PRX_CONTEXT
+req.product: Windows 10 or later.
 ---
 
 

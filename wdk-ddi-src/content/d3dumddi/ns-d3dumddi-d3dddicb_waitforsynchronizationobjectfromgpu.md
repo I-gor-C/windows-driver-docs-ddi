@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi.D3DDDICB_WAITFORSYNCHRONIZATIONOBJECTFROMGPU
-title : D3DDDICB_WAITFORSYNCHRONIZATIONOBJECTFROMGPU
-author : windows-driver-content
-description : D3DDDICB_WAITFORSYNCHRONIZATIONOBJECTFROMGPU is used with pfnWaitForSynchronizationObjectFromGpuCb to wait for a monitored fence to reach a certain value.
-old-location : display\d3dddicb_waitforsynchronizationobjectfromgpu.htm
-old-project : display
-ms.assetid : 2A441CEE-C138-4FF0-8865-04ABFB0F029C
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3dumddi/D3DDDICB_WAITFORSYNCHRONIZATIONOBJECTFROMGPU, D3DDDICB_WAITFORSYNCHRONIZATIONOBJECTFROMGPU structure [Display Devices], display.d3dddicb_waitforsynchronizationobjectfromgpu, D3DDDICB_WAITFORSYNCHRONIZATIONOBJECTFROMGPU
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDICB_WAITFORSYNCHRONIZATIONOBJECTFROMGPU
+UID: NS:d3dumddi.D3DDDICB_WAITFORSYNCHRONIZATIONOBJECTFROMGPU
+title: D3DDDICB_WAITFORSYNCHRONIZATIONOBJECTFROMGPU
+author: windows-driver-content
+description: D3DDDICB_WAITFORSYNCHRONIZATIONOBJECTFROMGPU is used with pfnWaitForSynchronizationObjectFromGpuCb to wait for a monitored fence to reach a certain value.
+old-location: display\d3dddicb_waitforsynchronizationobjectfromgpu.htm
+old-project: display
+ms.assetid: 2A441CEE-C138-4FF0-8865-04ABFB0F029C
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3dumddi/D3DDDICB_WAITFORSYNCHRONIZATIONOBJECTFROMGPU, D3DDDICB_WAITFORSYNCHRONIZATIONOBJECTFROMGPU structure [Display Devices], display.d3dddicb_waitforsynchronizationobjectfromgpu, D3DDDICB_WAITFORSYNCHRONIZATIONOBJECTFROMGPU
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	D3DDDICB_WAITFORSYNCHRONIZATIONOBJECTFROMGPU
+product: Windows
+targetos: Windows
+req.typenames: D3DDDICB_WAITFORSYNCHRONIZATIONOBJECTFROMGPU
 ---
 
 # D3DDDICB_WAITFORSYNCHRONIZATIONOBJECTFROMGPU structure

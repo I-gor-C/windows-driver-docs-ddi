@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3D11_1DDI_DESTROYVIDEODECODEROUTPUTVIEW
-title : PFND3D11_1DDI_DESTROYVIDEODECODEROUTPUTVIEW
-author : windows-driver-content
-description : Releases resources for the video decoder output view that were created through a call to the CreateVideoDecoderOutputView function.
-old-location : display\destroyvideodecoderoutputview.htm
-old-project : display
-ms.assetid : acb174e5-09cc-41e9-8b30-8c64f6193f7b
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.destroyvideodecoderoutputview, pfnDestroyVideoDecoderOutputView callback function [Display Devices], pfnDestroyVideoDecoderOutputView, PFND3D11_1DDI_DESTROYVIDEODECODEROUTPUTVIEW, PFND3D11_1DDI_DESTROYVIDEODECODEROUTPUTVIEW, d3d10umddi/pfnDestroyVideoDecoderOutputView
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3D11_1DDI_DESTROYVIDEODECODEROUTPUTVIEW
+title: PFND3D11_1DDI_DESTROYVIDEODECODEROUTPUTVIEW
+author: windows-driver-content
+description: Releases resources for the video decoder output view that were created through a call to the CreateVideoDecoderOutputView function.
+old-location: display\destroyvideodecoderoutputview.htm
+old-project: display
+ms.assetid: acb174e5-09cc-41e9-8b30-8c64f6193f7b
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.destroyvideodecoderoutputview, pfnDestroyVideoDecoderOutputView callback function [Display Devices], pfnDestroyVideoDecoderOutputView, PFND3D11_1DDI_DESTROYVIDEODECODEROUTPUTVIEW, PFND3D11_1DDI_DESTROYVIDEODECODEROUTPUTVIEW, d3d10umddi/pfnDestroyVideoDecoderOutputView
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	D3d10umddi.h
+apiname:
+-	pfnDestroyVideoDecoderOutputView
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

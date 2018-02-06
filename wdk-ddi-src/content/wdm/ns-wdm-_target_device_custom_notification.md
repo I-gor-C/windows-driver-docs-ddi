@@ -1,42 +1,47 @@
 ---
-UID : NS:wdm._TARGET_DEVICE_CUSTOM_NOTIFICATION
-title : "_TARGET_DEVICE_CUSTOM_NOTIFICATION"
-author : windows-driver-content
-description : The TARGET_DEVICE_CUSTOM_NOTIFICATION structure describes a custom device event.
-old-location : kernel\target_device_custom_notification.htm
-old-project : kernel
-ms.assetid : fa6530a4-13b7-472b-a571-682323edc64e
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/PTARGET_DEVICE_CUSTOM_NOTIFICATION, *PTARGET_DEVICE_CUSTOM_NOTIFICATION, kstruct_d_b83ddfbd-9448-4a91-8a64-ab060ba7614f.xml, PTARGET_DEVICE_CUSTOM_NOTIFICATION structure pointer [Kernel-Mode Driver Architecture], PTARGET_DEVICE_CUSTOM_NOTIFICATION, _TARGET_DEVICE_CUSTOM_NOTIFICATION, TARGET_DEVICE_CUSTOM_NOTIFICATION structure [Kernel-Mode Driver Architecture], kernel.target_device_custom_notification, TARGET_DEVICE_CUSTOM_NOTIFICATION, wdm/TARGET_DEVICE_CUSTOM_NOTIFICATION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PTARGET_DEVICE_CUSTOM_NOTIFICATION, TARGET_DEVICE_CUSTOM_NOTIFICATION"
-req.product : Windows 10 or later.
+UID: NS:wdm._TARGET_DEVICE_CUSTOM_NOTIFICATION
+title: "_TARGET_DEVICE_CUSTOM_NOTIFICATION"
+author: windows-driver-content
+description: The TARGET_DEVICE_CUSTOM_NOTIFICATION structure describes a custom device event.
+old-location: kernel\target_device_custom_notification.htm
+old-project: kernel
+ms.assetid: fa6530a4-13b7-472b-a571-682323edc64e
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/PTARGET_DEVICE_CUSTOM_NOTIFICATION, *PTARGET_DEVICE_CUSTOM_NOTIFICATION, kstruct_d_b83ddfbd-9448-4a91-8a64-ab060ba7614f.xml, PTARGET_DEVICE_CUSTOM_NOTIFICATION structure pointer [Kernel-Mode Driver Architecture], PTARGET_DEVICE_CUSTOM_NOTIFICATION, _TARGET_DEVICE_CUSTOM_NOTIFICATION, TARGET_DEVICE_CUSTOM_NOTIFICATION structure [Kernel-Mode Driver Architecture], kernel.target_device_custom_notification, TARGET_DEVICE_CUSTOM_NOTIFICATION, wdm/TARGET_DEVICE_CUSTOM_NOTIFICATION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdm.h
+apiname:
+-	TARGET_DEVICE_CUSTOM_NOTIFICATION
+product: Windows
+targetos: Windows
+req.typenames: "*PTARGET_DEVICE_CUSTOM_NOTIFICATION, TARGET_DEVICE_CUSTOM_NOTIFICATION"
+req.product: Windows 10 or later.
 ---
 
 # _TARGET_DEVICE_CUSTOM_NOTIFICATION structure

@@ -1,42 +1,47 @@
 ---
-UID : NI:scsiscan.IOCTL_SCSISCAN_GET_INFO
-title : IOCTL_SCSISCAN_GET_INFO
-author : windows-driver-content
-description : The IOCTL_SCSISCAN_GET_INFO I/O control code returns device information.
-old-location : image\ioctl_scsiscan_get_info.htm
-old-project : image
-ms.assetid : 48045e29-5982-44e6-b9a7-3b000e5cf338
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : image.ioctl_scsiscan_get_info, IOCTL_SCSISCAN_GET_INFO control code [Imaging Devices], IOCTL_SCSISCAN_GET_INFO, scsiscan/IOCTL_SCSISCAN_GET_INFO, stifnc_5897897c-6c10-42cd-9301-d5b5f54675fd.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : scsiscan.h
-req.include-header : Scsiscan.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PZONE_DESCRIPTIOR, ZONE_DESCRIPTIOR"
-req.product : Windows 10 or later.
+UID: NI:scsiscan.IOCTL_SCSISCAN_GET_INFO
+title: IOCTL_SCSISCAN_GET_INFO
+author: windows-driver-content
+description: The IOCTL_SCSISCAN_GET_INFO I/O control code returns device information.
+old-location: image\ioctl_scsiscan_get_info.htm
+old-project: image
+ms.assetid: 48045e29-5982-44e6-b9a7-3b000e5cf338
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: image.ioctl_scsiscan_get_info, IOCTL_SCSISCAN_GET_INFO control code [Imaging Devices], IOCTL_SCSISCAN_GET_INFO, scsiscan/IOCTL_SCSISCAN_GET_INFO, stifnc_5897897c-6c10-42cd-9301-d5b5f54675fd.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: scsiscan.h
+req.include-header: Scsiscan.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	scsiscan.h
+apiname:
+-	IOCTL_SCSISCAN_GET_INFO
+product: Windows
+targetos: Windows
+req.typenames: "*PZONE_DESCRIPTIOR, ZONE_DESCRIPTIOR"
+req.product: Windows 10 or later.
 ---
 
 # IOCTL_SCSISCAN_GET_INFO IOCTL

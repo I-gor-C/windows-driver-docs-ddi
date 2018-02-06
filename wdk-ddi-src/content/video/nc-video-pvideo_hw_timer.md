@@ -1,42 +1,47 @@
 ---
-UID : NC:video.PVIDEO_HW_TIMER
-title : PVIDEO_HW_TIMER
-author : windows-driver-content
-description : HwVidTimer is a video miniport driver routine called at timed intervals by the video port driver.
-old-location : display\hwvidtimer.htm
-old-project : display
-ms.assetid : bd41bbbf-4ec8-4e6c-8620-d8a9fe0b8bad
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.hwvidtimer, HwVidTimer callback function [Display Devices], HwVidTimer, PVIDEO_HW_TIMER, PVIDEO_HW_TIMER, video/HwVidTimer, VideoMiniport_Functions_80fa0df4-2b7c-4ffa-9048-e252b8af26cf.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VHF_CONFIG, *PVHF_CONFIG
-req.product : Windows 10 or later.
+UID: NC:video.PVIDEO_HW_TIMER
+title: PVIDEO_HW_TIMER
+author: windows-driver-content
+description: HwVidTimer is a video miniport driver routine called at timed intervals by the video port driver.
+old-location: display\hwvidtimer.htm
+old-project: display
+ms.assetid: bd41bbbf-4ec8-4e6c-8620-d8a9fe0b8bad
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.hwvidtimer, HwVidTimer callback function [Display Devices], HwVidTimer, PVIDEO_HW_TIMER, PVIDEO_HW_TIMER, video/HwVidTimer, VideoMiniport_Functions_80fa0df4-2b7c-4ffa-9048-e252b8af26cf.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	video.h
+apiname:
+-	HwVidTimer
+product: Windows
+targetos: Windows
+req.typenames: VHF_CONFIG, *PVHF_CONFIG
+req.product: Windows 10 or later.
 ---
 
 

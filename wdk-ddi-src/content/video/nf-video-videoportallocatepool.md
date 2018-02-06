@@ -1,42 +1,47 @@
 ---
-UID : NF:video.VideoPortAllocatePool
-title : VideoPortAllocatePool function
-author : windows-driver-content
-description : The VideoPortAllocatePool function allocates a block of pool memory, inserting a caller-supplied tag at the beginning of the memory.
-old-location : display\videoportallocatepool.htm
-old-project : display
-ms.assetid : c981e56f-e582-4c06-8d32-b070d58065d2
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : video/VideoPortAllocatePool, display.videoportallocatepool, VideoPortAllocatePool function [Display Devices], VideoPortAllocatePool, VideoPort_Functions_a9163e5b-6519-4427-a748-066ad120022a.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows XP and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Videoprt.lib
-req.dll : Videoprt.sys
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_PORT_SERVICES
-req.product : Windows 10 or later.
+UID: NF:video.VideoPortAllocatePool
+title: VideoPortAllocatePool function
+author: windows-driver-content
+description: The VideoPortAllocatePool function allocates a block of pool memory, inserting a caller-supplied tag at the beginning of the memory.
+old-location: display\videoportallocatepool.htm
+old-project: display
+ms.assetid: c981e56f-e582-4c06-8d32-b070d58065d2
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: video/VideoPortAllocatePool, display.videoportallocatepool, VideoPortAllocatePool function [Display Devices], VideoPortAllocatePool, VideoPort_Functions_a9163e5b-6519-4427-a748-066ad120022a.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows XP and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Videoprt.lib
+req.dll: Videoprt.sys
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Videoprt.sys
+apiname:
+-	VideoPortAllocatePool
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_PORT_SERVICES
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NF:hbaapi.HBA_GetDiscoveredPortAttributes
-title : HBA_GetDiscoveredPortAttributes function
-author : windows-driver-content
-description : The HBA_GetDiscoveredPortAttributes routine retrieves the attributes for a specified remote fibre channel port.
-old-location : storage\hba_getdiscoveredportattributes.htm
-old-project : storage
-ms.assetid : 64c6ed50-a4b9-4a8c-b38c-b2fcdf5ccee9
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : HBA_GetDiscoveredPortAttributes routine [Storage Devices], hbaapi/HBA_GetDiscoveredPortAttributes, storage.hba_getdiscoveredportattributes, fibreHBA_rtns_3f74a187-728d-4534-8ad8-29e1a9b0add5.xml, HBA_GetDiscoveredPortAttributes
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : hbaapi.h
-req.include-header : Hbaapi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Hbaapi.lib
-req.dll : Hbaapi.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HBA_WWNTYPE
+UID: NF:hbaapi.HBA_GetDiscoveredPortAttributes
+title: HBA_GetDiscoveredPortAttributes function
+author: windows-driver-content
+description: The HBA_GetDiscoveredPortAttributes routine retrieves the attributes for a specified remote fibre channel port.
+old-location: storage\hba_getdiscoveredportattributes.htm
+old-project: storage
+ms.assetid: 64c6ed50-a4b9-4a8c-b38c-b2fcdf5ccee9
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: HBA_GetDiscoveredPortAttributes routine [Storage Devices], hbaapi/HBA_GetDiscoveredPortAttributes, storage.hba_getdiscoveredportattributes, fibreHBA_rtns_3f74a187-728d-4534-8ad8-29e1a9b0add5.xml, HBA_GetDiscoveredPortAttributes
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: hbaapi.h
+req.include-header: Hbaapi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Hbaapi.lib
+req.dll: Hbaapi.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Hbaapi.dll
+apiname:
+-	HBA_GetDiscoveredPortAttributes
+product: Windows
+targetos: Windows
+req.typenames: HBA_WWNTYPE
 ---
 
 

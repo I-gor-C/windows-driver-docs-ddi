@@ -1,42 +1,47 @@
 ---
-UID : NS:wudfddi_types.UMDF_VERSION_DATA
-title : UMDF_VERSION_DATA
-author : windows-driver-content
-description : The UMDF_VERSION_DATA structure describes a version of the framework.
-old-location : wdf\umdf_version_data.htm
-old-project : wdf
-ms.assetid : b83a786d-0b17-4129-bdd4-86942ad9d3ec
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : UMDF_VERSION_DATA, wudfddi_types/PUMDF_VERSION_DATA, PUMDF_VERSION_DATA structure pointer, umdfstructs_b4fe6241-b095-437b-a3f8-e1cf395da8ee.xml, umdf.umdf_version_data, wdf.umdf_version_data, PUMDF_VERSION_DATA, wudfddi_types/UMDF_VERSION_DATA, UMDF_VERSION_DATA structure, *PUMDF_VERSION_DATA
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wudfddi_types.h
-req.include-header : Wudfddi_types.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : UMDF_VERSION_DATA, *PUMDF_VERSION_DATA
-req.product : Windows 10 or later.
+UID: NS:wudfddi_types.UMDF_VERSION_DATA
+title: UMDF_VERSION_DATA
+author: windows-driver-content
+description: The UMDF_VERSION_DATA structure describes a version of the framework.
+old-location: wdf\umdf_version_data.htm
+old-project: wdf
+ms.assetid: b83a786d-0b17-4129-bdd4-86942ad9d3ec
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: UMDF_VERSION_DATA, wudfddi_types/PUMDF_VERSION_DATA, PUMDF_VERSION_DATA structure pointer, umdfstructs_b4fe6241-b095-437b-a3f8-e1cf395da8ee.xml, umdf.umdf_version_data, wdf.umdf_version_data, PUMDF_VERSION_DATA, wudfddi_types/UMDF_VERSION_DATA, UMDF_VERSION_DATA structure, *PUMDF_VERSION_DATA
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wudfddi_types.h
+req.include-header: Wudfddi_types.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wudfddi_types.h
+apiname:
+-	UMDF_VERSION_DATA
+product: Windows
+targetos: Windows
+req.typenames: UMDF_VERSION_DATA, *PUMDF_VERSION_DATA
+req.product: Windows 10 or later.
 ---
 
 # UMDF_VERSION_DATA structure

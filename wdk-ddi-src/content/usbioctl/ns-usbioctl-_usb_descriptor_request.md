@@ -1,42 +1,47 @@
 ---
-UID : NS:usbioctl._USB_DESCRIPTOR_REQUEST
-title : "_USB_DESCRIPTOR_REQUEST"
-author : windows-driver-content
-description : The USB_DESCRIPTOR_REQUEST structure is used with the IOCTL_USB_GET_DESCRIPTOR_FROM_NODE_CONNECTION I/O control request to retrieve one or more descriptors for the device that is associated with the indicated connection index.
-old-location : buses\usb_descriptor_request.htm
-old-project : usbref
-ms.assetid : d4d51366-4d04-47fe-8c44-09c9c6ccf35f
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : usbioctl/USB_DESCRIPTOR_REQUEST, PUSB_DESCRIPTOR_REQUEST, *PUSB_DESCRIPTOR_REQUEST, buses.usb_descriptor_request, _USB_DESCRIPTOR_REQUEST, USB_DESCRIPTOR_REQUEST, PUSB_DESCRIPTOR_REQUEST structure pointer [Buses], usbstrct_b5a96c38-53d8-4d08-849b-d6c8c4b69c72.xml, usbioctl/PUSB_DESCRIPTOR_REQUEST, USB_DESCRIPTOR_REQUEST structure [Buses]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : usbioctl.h
-req.include-header : Usbioctl.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : USB_DESCRIPTOR_REQUEST, *PUSB_DESCRIPTOR_REQUEST
-req.product : Windows 10 or later.
+UID: NS:usbioctl._USB_DESCRIPTOR_REQUEST
+title: "_USB_DESCRIPTOR_REQUEST"
+author: windows-driver-content
+description: The USB_DESCRIPTOR_REQUEST structure is used with the IOCTL_USB_GET_DESCRIPTOR_FROM_NODE_CONNECTION I/O control request to retrieve one or more descriptors for the device that is associated with the indicated connection index.
+old-location: buses\usb_descriptor_request.htm
+old-project: usbref
+ms.assetid: d4d51366-4d04-47fe-8c44-09c9c6ccf35f
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: usbioctl/USB_DESCRIPTOR_REQUEST, PUSB_DESCRIPTOR_REQUEST, *PUSB_DESCRIPTOR_REQUEST, buses.usb_descriptor_request, _USB_DESCRIPTOR_REQUEST, USB_DESCRIPTOR_REQUEST, PUSB_DESCRIPTOR_REQUEST structure pointer [Buses], usbstrct_b5a96c38-53d8-4d08-849b-d6c8c4b69c72.xml, usbioctl/PUSB_DESCRIPTOR_REQUEST, USB_DESCRIPTOR_REQUEST structure [Buses]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: usbioctl.h
+req.include-header: Usbioctl.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	usbioctl.h
+apiname:
+-	USB_DESCRIPTOR_REQUEST
+product: Windows
+targetos: Windows
+req.typenames: USB_DESCRIPTOR_REQUEST, *PUSB_DESCRIPTOR_REQUEST
+req.product: Windows 10 or later.
 ---
 
 # _USB_DESCRIPTOR_REQUEST structure

@@ -1,42 +1,47 @@
 ---
-UID : NS:usb._URB_GET_ISOCH_PIPE_TRANSFER_PATH_DELAYS
-title : "_URB_GET_ISOCH_PIPE_TRANSFER_PATH_DELAYS"
-author : windows-driver-content
-description : The _URB_GET_ISOCH_PIPE_TRANSFER_PATH_DELAYS structure is used by USB client drivers to retrieve delays associated with isochronous transfer programming in the host controller and transfer completion so that the client driver can ensure that the device gets the isochronous packets in time.
-old-location : buses\_urb_get_isoch_pipe_transfer_path_delays.htm
-old-project : usbref
-ms.assetid : 70B74088-C537-4104-A535-F41A24BB72A5
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : "_URB_GET_ISOCH_PIPE_TRANSFER_PATH_DELAYS structure [Buses], _URB_GET_ISOCH_PIPE_TRANSFER_PATH_DELAYS, buses._urb_get_isoch_pipe_transfer_path_delays, usb/_URB_GET_ISOCH_PIPE_TRANSFER_PATH_DELAYS"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : usb.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10, version 1709
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
-req.product : Windows 10 or later.
+UID: NS:usb._URB_GET_ISOCH_PIPE_TRANSFER_PATH_DELAYS
+title: "_URB_GET_ISOCH_PIPE_TRANSFER_PATH_DELAYS"
+author: windows-driver-content
+description: The _URB_GET_ISOCH_PIPE_TRANSFER_PATH_DELAYS structure is used by USB client drivers to retrieve delays associated with isochronous transfer programming in the host controller and transfer completion so that the client driver can ensure that the device gets the isochronous packets in time.
+old-location: buses\_urb_get_isoch_pipe_transfer_path_delays.htm
+old-project: usbref
+ms.assetid: 70B74088-C537-4104-A535-F41A24BB72A5
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: "_URB_GET_ISOCH_PIPE_TRANSFER_PATH_DELAYS structure [Buses], _URB_GET_ISOCH_PIPE_TRANSFER_PATH_DELAYS, buses._urb_get_isoch_pipe_transfer_path_delays, usb/_URB_GET_ISOCH_PIPE_TRANSFER_PATH_DELAYS"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: usb.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10, version 1709
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Usb.h
+apiname:
+-	_URB_GET_ISOCH_PIPE_TRANSFER_PATH_DELAYS
+product: Windows
+targetos: Windows
+req.typenames: 
+req.product: Windows 10 or later.
 ---
 
 # _URB_GET_ISOCH_PIPE_TRANSFER_PATH_DELAYS structure

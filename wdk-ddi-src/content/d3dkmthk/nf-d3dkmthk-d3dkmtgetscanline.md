@@ -1,41 +1,49 @@
 ---
-UID : NF:d3dkmthk.D3DKMTGetScanLine
-title : D3DKMTGetScanLine function
-author : windows-driver-content
-description : The D3DKMTGetScanLine function determines whether the given video present source of a video present network (VidPN) is in vertical blanking mode and retrieves the current scan line.
-old-location : display\d3dkmtgetscanline.htm
-old-project : display
-ms.assetid : 052507ec-4a26-4bb6-8876-c03a9c81f412
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3dkmthk/D3DKMTGetScanLine, display.d3dkmtgetscanline, D3DKMTGetScanLine, OpenGL_Functions_3a2d269d-0867-42fb-9268-86c560531de4.xml, D3DKMTGetScanLine function [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Gdi32.lib
-req.dll : Gdi32.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_DRIVERVERSION
+UID: NF:d3dkmthk.D3DKMTGetScanLine
+title: D3DKMTGetScanLine function
+author: windows-driver-content
+description: The D3DKMTGetScanLine function determines whether the given video present source of a video present network (VidPN) is in vertical blanking mode and retrieves the current scan line.
+old-location: display\d3dkmtgetscanline.htm
+old-project: display
+ms.assetid: 052507ec-4a26-4bb6-8876-c03a9c81f412
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3dkmthk/D3DKMTGetScanLine, display.d3dkmtgetscanline, D3DKMTGetScanLine, OpenGL_Functions_3a2d269d-0867-42fb-9268-86c560531de4.xml, D3DKMTGetScanLine function [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Gdi32.lib
+req.dll: Gdi32.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Gdi32.dll
+-	API-MS-Win-dx-d3dkmt-l1-1-0.dll
+-	API-MS-Win-dx-d3dkmt-l1-1-1.dll
+-	API-MS-Win-DX-D3DKMT-L1-1-2.dll
+apiname:
+-	D3DKMTGetScanLine
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_DRIVERVERSION
 ---
 
 

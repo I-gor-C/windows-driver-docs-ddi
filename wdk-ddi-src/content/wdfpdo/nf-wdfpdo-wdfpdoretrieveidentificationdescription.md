@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfpdo.WdfPdoRetrieveIdentificationDescription
-title : WdfPdoRetrieveIdentificationDescription function
-author : windows-driver-content
-description : The WdfPdoRetrieveIdentificationDescription method retrieves the identification description that is associated with a specified framework device object.
-old-location : wdf\wdfpdoretrieveidentificationdescription.htm
-old-project : wdf
-ms.assetid : fac29ced-7acc-4c2a-ac8a-171b8dd1d45e
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : kmdf.wdfpdoretrieveidentificationdescription, WdfPdoRetrieveIdentificationDescription, PFN_WDFPDORETRIEVEIDENTIFICATIONDESCRIPTION, WdfPdoRetrieveIdentificationDescription method, wdfpdo/WdfPdoRetrieveIdentificationDescription, wdf.wdfpdoretrieveidentificationdescription, DFDeviceObjectFdoPdoRef_fe883ca1-8b36-4ac1-b7ff-8c38bf098148.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfpdo.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDF_OBJECT_CONTEXT_TYPE_INFO, WDF_OBJECT_CONTEXT_TYPE_INFO"
-req.product : Windows 10 or later.
+UID: NF:wdfpdo.WdfPdoRetrieveIdentificationDescription
+title: WdfPdoRetrieveIdentificationDescription function
+author: windows-driver-content
+description: The WdfPdoRetrieveIdentificationDescription method retrieves the identification description that is associated with a specified framework device object.
+old-location: wdf\wdfpdoretrieveidentificationdescription.htm
+old-project: wdf
+ms.assetid: fac29ced-7acc-4c2a-ac8a-171b8dd1d45e
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: kmdf.wdfpdoretrieveidentificationdescription, WdfPdoRetrieveIdentificationDescription, PFN_WDFPDORETRIEVEIDENTIFICATIONDESCRIPTION, WdfPdoRetrieveIdentificationDescription method, wdfpdo/WdfPdoRetrieveIdentificationDescription, wdf.wdfpdoretrieveidentificationdescription, DFDeviceObjectFdoPdoRef_fe883ca1-8b36-4ac1-b7ff-8c38bf098148.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfpdo.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfPdoRetrieveIdentificationDescription
+product: Windows
+targetos: Windows
+req.typenames: "*PWDF_OBJECT_CONTEXT_TYPE_INFO, WDF_OBJECT_CONTEXT_TYPE_INFO"
+req.product: Windows 10 or later.
 ---
 
 

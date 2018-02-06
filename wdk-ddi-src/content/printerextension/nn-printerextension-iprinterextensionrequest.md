@@ -1,42 +1,47 @@
 ---
-UID : NN:printerextension.IPrinterExtensionRequest
-title : IPrinterExtensionRequest
-author : windows-driver-content
-description : Completes the given extension event with either a cancellation or success.
-old-location : print\iprinterextensionrequest_interface.htm
-old-project : print
-ms.assetid : 0EF8652F-34A8-4804-9D3F-8C8BEFCBCAAF
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : print.iprinterextensionrequest_interface, IPrinterExtensionRequest interface [Print Devices], IPrinterExtensionRequest interface [Print Devices], described, IPrinterExtensionRequest, printerextension/IPrinterExtensionRequest
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : printerextension.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : printerextension.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PrintSchemaSelectionType
-req.product : Windows 10 or later.
+UID: NN:printerextension.IPrinterExtensionRequest
+title: IPrinterExtensionRequest
+author: windows-driver-content
+description: Completes the given extension event with either a cancellation or success.
+old-location: print\iprinterextensionrequest_interface.htm
+old-project: print
+ms.assetid: 0EF8652F-34A8-4804-9D3F-8C8BEFCBCAAF
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: print.iprinterextensionrequest_interface, IPrinterExtensionRequest interface [Print Devices], IPrinterExtensionRequest interface [Print Devices], described, IPrinterExtensionRequest, printerextension/IPrinterExtensionRequest
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: printerextension.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: printerextension.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Printerextension.h
+apiname:
+-	IPrinterExtensionRequest
+product: Windows
+targetos: Windows
+req.typenames: PrintSchemaSelectionType
+req.product: Windows 10 or later.
 ---
 
 # IPrinterExtensionRequest interface

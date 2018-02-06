@@ -1,42 +1,47 @@
 ---
-UID : NS:ucxusbdevice._USBDEVICE_UPDATE_20_HARDWARE_LPM_PARAMETERS
-title : "_USBDEVICE_UPDATE_20_HARDWARE_LPM_PARAMETERS"
-author : windows-driver-content
-description : Contains parameters for a request to update USB 2.0 link power management (LPM). UCX passes this structure in the EVT_UCX_USBDEVICE_UPDATE callback function.
-old-location : buses\_usbdevice_update_20_hardware_lpm_parameters.htm
-old-project : usbref
-ms.assetid : B02CB10F-18C9-4E2C-9F30-042588800EA5
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : USBDEVICE_UPDATE_20_HARDWARE_LPM_PARAMETERS, _USBDEVICE_UPDATE_20_HARDWARE_LPM_PARAMETERS, buses._usbdevice_update_20_hardware_lpm_parameters, P_USBDEVICE_UPDATE_20_HARDWARE_LPM_PARAMETERS, ucxusbdevice/P_USBDEVICE_UPDATE_20_HARDWARE_LPM_PARAMETERS, P_USBDEVICE_UPDATE_20_HARDWARE_LPM_PARAMETERS structure pointer [Buses], ucxusbdevice/_USBDEVICE_UPDATE_20_HARDWARE_LPM_PARAMETERS, USBDEVICE_UPDATE_20_HARDWARE_LPM_PARAMETERS structure [Buses]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ucxusbdevice.h
-req.include-header : Ucxclass.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : USBDEVICE_UPDATE_20_HARDWARE_LPM_PARAMETERS
-req.product : Windows 10 or later.
+UID: NS:ucxusbdevice._USBDEVICE_UPDATE_20_HARDWARE_LPM_PARAMETERS
+title: "_USBDEVICE_UPDATE_20_HARDWARE_LPM_PARAMETERS"
+author: windows-driver-content
+description: Contains parameters for a request to update USB 2.0 link power management (LPM). UCX passes this structure in the EVT_UCX_USBDEVICE_UPDATE callback function.
+old-location: buses\_usbdevice_update_20_hardware_lpm_parameters.htm
+old-project: usbref
+ms.assetid: B02CB10F-18C9-4E2C-9F30-042588800EA5
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: USBDEVICE_UPDATE_20_HARDWARE_LPM_PARAMETERS, _USBDEVICE_UPDATE_20_HARDWARE_LPM_PARAMETERS, buses._usbdevice_update_20_hardware_lpm_parameters, P_USBDEVICE_UPDATE_20_HARDWARE_LPM_PARAMETERS, ucxusbdevice/P_USBDEVICE_UPDATE_20_HARDWARE_LPM_PARAMETERS, P_USBDEVICE_UPDATE_20_HARDWARE_LPM_PARAMETERS structure pointer [Buses], ucxusbdevice/_USBDEVICE_UPDATE_20_HARDWARE_LPM_PARAMETERS, USBDEVICE_UPDATE_20_HARDWARE_LPM_PARAMETERS structure [Buses]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ucxusbdevice.h
+req.include-header: Ucxclass.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ucxusbdevice.h
+apiname:
+-	USBDEVICE_UPDATE_20_HARDWARE_LPM_PARAMETERS
+product: Windows
+targetos: Windows
+req.typenames: USBDEVICE_UPDATE_20_HARDWARE_LPM_PARAMETERS
+req.product: Windows 10 or later.
 ---
 
 # _USBDEVICE_UPDATE_20_HARDWARE_LPM_PARAMETERS structure

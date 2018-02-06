@@ -1,42 +1,47 @@
 ---
-UID : NC:wdm.FREE_FUNCTION_EX
-title : FREE_FUNCTION_EX
-author : windows-driver-content
-description : The LookasideListFreeEx routine frees the storage for a lookaside-list entry when a client tries to insert the entry into a lookaside list that is full.
-old-location : kernel\lookasidelistfreeex.htm
-old-project : kernel
-ms.assetid : 2cc2fc91-eb14-4f15-a8ad-c35b4667406f
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.lookasidelistfreeex, LookasideListFreeEx routine [Kernel-Mode Driver Architecture], LookasideListFreeEx, FREE_FUNCTION_EX, FREE_FUNCTION_EX, wdm/LookasideListFreeEx, DrvrRtns_8e1790bd-6b06-4eed-afec-eb8055f2cbde.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported in Windows Vista and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
-req.product : Windows 10 or later.
+UID: NC:wdm.FREE_FUNCTION_EX
+title: FREE_FUNCTION_EX
+author: windows-driver-content
+description: The LookasideListFreeEx routine frees the storage for a lookaside-list entry when a client tries to insert the entry into a lookaside list that is full.
+old-location: kernel\lookasidelistfreeex.htm
+old-project: kernel
+ms.assetid: 2cc2fc91-eb14-4f15-a8ad-c35b4667406f
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.lookasidelistfreeex, LookasideListFreeEx routine [Kernel-Mode Driver Architecture], LookasideListFreeEx, FREE_FUNCTION_EX, FREE_FUNCTION_EX, wdm/LookasideListFreeEx, DrvrRtns_8e1790bd-6b06-4eed-afec-eb8055f2cbde.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported in Windows Vista and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Wdm.h
+apiname:
+-	LookasideListFreeEx
+product: Windows
+targetos: Windows
+req.typenames: WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+req.product: Windows 10 or later.
 ---
 
 

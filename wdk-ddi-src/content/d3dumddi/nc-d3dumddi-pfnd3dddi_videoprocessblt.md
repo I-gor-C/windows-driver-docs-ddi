@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_VIDEOPROCESSBLT
-title : PFND3DDDI_VIDEOPROCESSBLT
-author : windows-driver-content
-description : The VideoProcessBlt function processes a video frame by using the specified Microsoft DirectX Video Accelerator (VA) video processing device.
-old-location : display\videoprocessblt.htm
-old-project : display
-ms.assetid : 719465dd-4547-491c-ab30-ae63bba1b72c
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.videoprocessblt, VideoProcessBlt callback function [Display Devices], VideoProcessBlt, PFND3DDDI_VIDEOPROCESSBLT, PFND3DDDI_VIDEOPROCESSBLT, d3dumddi/VideoProcessBlt, UserModeDisplayDriver_Functions_23e47fd3-a838-4b56-82c3-7894d2b173a1.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_VIDEOPROCESSBLT
+title: PFND3DDDI_VIDEOPROCESSBLT
+author: windows-driver-content
+description: The VideoProcessBlt function processes a video frame by using the specified Microsoft DirectX Video Accelerator (VA) video processing device.
+old-location: display\videoprocessblt.htm
+old-project: display
+ms.assetid: 719465dd-4547-491c-ab30-ae63bba1b72c
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.videoprocessblt, VideoProcessBlt callback function [Display Devices], VideoProcessBlt, PFND3DDDI_VIDEOPROCESSBLT, PFND3DDDI_VIDEOPROCESSBLT, d3dumddi/VideoProcessBlt, UserModeDisplayDriver_Functions_23e47fd3-a838-4b56-82c3-7894d2b173a1.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	VideoProcessBlt
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

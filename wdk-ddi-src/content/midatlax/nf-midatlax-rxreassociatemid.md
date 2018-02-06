@@ -1,41 +1,46 @@
 ---
-UID : NF:midatlax.RxReassociateMid
-title : RxReassociateMid function
-author : windows-driver-content
-description : RxReassociateMid reassociates a Multiplex ID (MID) with an alternate context.
-old-location : ifsk\rxreassociatemid.htm
-old-project : ifsk
-ms.assetid : 2b80aa77-45b3-4157-8ab5-770c827a536a
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : midatlax/RxReassociateMid, rxref_0fbfcaf6-383a-48ed-81b1-eed7521df3e7.xml, RxReassociateMid function [Installable File System Drivers], ifsk.rxreassociatemid, RxReassociateMid
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : midatlax.h
-req.include-header : Midatlax.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PMCD_INIT_DATA, MCD_INIT_DATA"
+UID: NF:midatlax.RxReassociateMid
+title: RxReassociateMid function
+author: windows-driver-content
+description: RxReassociateMid reassociates a Multiplex ID (MID) with an alternate context.
+old-location: ifsk\rxreassociatemid.htm
+old-project: ifsk
+ms.assetid: 2b80aa77-45b3-4157-8ab5-770c827a536a
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: midatlax/RxReassociateMid, rxref_0fbfcaf6-383a-48ed-81b1-eed7521df3e7.xml, RxReassociateMid function [Installable File System Drivers], ifsk.rxreassociatemid, RxReassociateMid
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: midatlax.h
+req.include-header: Midatlax.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	midatlax.h
+apiname:
+-	RxReassociateMid
+product: Windows
+targetos: Windows
+req.typenames: "*PMCD_INIT_DATA, MCD_INIT_DATA"
 ---
 
 

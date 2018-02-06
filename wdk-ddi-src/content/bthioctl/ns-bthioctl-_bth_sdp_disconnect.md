@@ -1,41 +1,46 @@
 ---
-UID : NS:bthioctl._BTH_SDP_DISCONNECT
-title : "_BTH_SDP_DISCONNECT"
-author : windows-driver-content
-description : The BTH_SDP_DISCONNECT structure contains input information about a connection handle to the remote SDP connection to terminate. This structure is passed as the input buffer of IOCTL_BTH_SDP_DISCONNECT.
-old-location : bltooth\bth_sdp_disconnect.htm
-old-project : bltooth
-ms.assetid : d0466569-7c9d-40d2-8794-b1d877a52458
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : PBTH_SDP_DISCONNECT structure pointer [Bluetooth Devices], bthioctl/PBTH_SDP_DISCONNECT, BTH_SDP_DISCONNECT, PBTH_SDP_DISCONNECT, bthioctl/BTH_SDP_DISCONNECT, bth_structs_049df802-3bad-49b0-b80e-f3b0a1579b72.xml, bltooth.bth_sdp_disconnect, _BTH_SDP_DISCONNECT, *PBTH_SDP_DISCONNECT, BTH_SDP_DISCONNECT structure [Bluetooth Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : bthioctl.h
-req.include-header : Bthioctl.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= PASSIVE_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : BTH_SDP_DISCONNECT, *PBTH_SDP_DISCONNECT
+UID: NS:bthioctl._BTH_SDP_DISCONNECT
+title: "_BTH_SDP_DISCONNECT"
+author: windows-driver-content
+description: The BTH_SDP_DISCONNECT structure contains input information about a connection handle to the remote SDP connection to terminate. This structure is passed as the input buffer of IOCTL_BTH_SDP_DISCONNECT.
+old-location: bltooth\bth_sdp_disconnect.htm
+old-project: bltooth
+ms.assetid: d0466569-7c9d-40d2-8794-b1d877a52458
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: PBTH_SDP_DISCONNECT structure pointer [Bluetooth Devices], bthioctl/PBTH_SDP_DISCONNECT, BTH_SDP_DISCONNECT, PBTH_SDP_DISCONNECT, bthioctl/BTH_SDP_DISCONNECT, bth_structs_049df802-3bad-49b0-b80e-f3b0a1579b72.xml, bltooth.bth_sdp_disconnect, _BTH_SDP_DISCONNECT, *PBTH_SDP_DISCONNECT, BTH_SDP_DISCONNECT structure [Bluetooth Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: bthioctl.h
+req.include-header: Bthioctl.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= PASSIVE_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	bthioctl.h
+apiname:
+-	BTH_SDP_DISCONNECT
+product: Windows
+targetos: Windows
+req.typenames: BTH_SDP_DISCONNECT, *PBTH_SDP_DISCONNECT
 ---
 
 # _BTH_SDP_DISCONNECT structure

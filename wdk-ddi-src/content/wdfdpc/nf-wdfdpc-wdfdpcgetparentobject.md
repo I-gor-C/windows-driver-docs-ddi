@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfdpc.WdfDpcGetParentObject
-title : WdfDpcGetParentObject function
-author : windows-driver-content
-description : The WdfDpcGetParentObject method returns the parent object of a specified DPC object.
-old-location : wdf\wdfdpcgetparentobject.htm
-old-project : wdf
-ms.assetid : 77ebca0f-3056-4f11-9d59-fbd166967ed3
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdfdpc/WdfDpcGetParentObject, DFDpcObjectRef_28be5a7f-4f65-4b9e-b9f4-80b754cc8ca3.xml, kmdf.wdfdpcgetparentobject, PFN_WDFDPCGETPARENTOBJECT, WdfDpcGetParentObject, WdfDpcGetParentObject method, wdf.wdfdpcgetparentobject
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfdpc.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDF_DMA_SYSTEM_PROFILE_CONFIG, WDF_DMA_SYSTEM_PROFILE_CONFIG"
-req.product : Windows 10 or later.
+UID: NF:wdfdpc.WdfDpcGetParentObject
+title: WdfDpcGetParentObject function
+author: windows-driver-content
+description: The WdfDpcGetParentObject method returns the parent object of a specified DPC object.
+old-location: wdf\wdfdpcgetparentobject.htm
+old-project: wdf
+ms.assetid: 77ebca0f-3056-4f11-9d59-fbd166967ed3
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdfdpc/WdfDpcGetParentObject, DFDpcObjectRef_28be5a7f-4f65-4b9e-b9f4-80b754cc8ca3.xml, kmdf.wdfdpcgetparentobject, PFN_WDFDPCGETPARENTOBJECT, WdfDpcGetParentObject, WdfDpcGetParentObject method, wdf.wdfdpcgetparentobject
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfdpc.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfDpcGetParentObject
+product: Windows
+targetos: Windows
+req.typenames: "*PWDF_DMA_SYSTEM_PROFILE_CONFIG, WDF_DMA_SYSTEM_PROFILE_CONFIG"
+req.product: Windows 10 or later.
 ---
 
 

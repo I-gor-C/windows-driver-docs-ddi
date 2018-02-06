@@ -1,42 +1,47 @@
 ---
-UID : NE:wdm.DEVICE_REGISTRY_PROPERTY
-title : DEVICE_REGISTRY_PROPERTY
-author : windows-driver-content
-description : The DEVICE_REGISTRY_PROPERTY enumeration identifies device properties that are stored in the registry.
-old-location : kernel\device_registry_property.htm
-old-project : kernel
-ms.assetid : a17b4a88-45e8-45e7-b879-2f41b97be368
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/DevicePropertyDeviceDescription, wdm/, wdm/DevicePropertyClassGuid, wdm/DevicePropertyManufacturer, DevicePropertyLocationInformation, wdm/DevicePropertyBootConfigurationTranslated, wdm/DevicePropertyRemovalPolicy, wdm/DevicePropertyLocationInformation, wdm/DevicePropertyDriverKeyName, wdm/DevicePropertyClassName, DevicePropertyClassGuid, wdm/DevicePropertyInstallState, wdm/DevicePropertyContainerID, DevicePropertyUINumber, DEVICE_REGISTRY_PROPERTY, wdm/DevicePropertyBootConfiguration, wdm/DevicePropertyUINumber, wdm/DevicePropertyAllocatedResources, DevicePropertyDriverKeyName, DevicePropertyFriendlyName, DEVICE_REGISTRY_PROPERTY enumeration [Kernel-Mode Driver Architecture], wdm/DevicePropertyAddress, kernel.device_registry_property, wdm/DevicePropertyEnumeratorName, DevicePropertyClassName, DevicePropertyBusNumber, DevicePropertyAddress, DevicePropertyDeviceDescription, DevicePropertyInstallState, DevicePropertyPhysicalDeviceObjectName, DevicePropertyBusTypeGuid, wdm/DevicePropertyLegacyBusType, wdm/DevicePropertyFriendlyName, wdm/DevicePropertyBusNumber, DevicePropertyManufacturer, wdm/DevicePropertyBusTypeGuid, DevicePropertyLegacyBusType, DevicePropertyResourceRequirements, DevicePropertyRemovalPolicy, wdm/DevicePropertyResourceRequirements, wdm/DevicePropertyPhysicalDeviceObjectName, sysenum_485e3369-186a-4a71-b13e-be6ff9ab8dce.xml, enumeration [Kernel-Mode Driver Architecture], DevicePropertyBootConfigurationTranslated, wdm/DevicePropertyHardwareID, DevicePropertyHardwareID, DevicePropertyCompatibleIDs, wdm/DevicePropertyCompatibleIDs, DevicePropertyBootConfiguration, DevicePropertyEnumeratorName, DevicePropertyContainerID, DevicePropertyAllocatedResources
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DEVICE_REGISTRY_PROPERTY
-req.product : Windows 10 or later.
+UID: NE:wdm.DEVICE_REGISTRY_PROPERTY
+title: DEVICE_REGISTRY_PROPERTY
+author: windows-driver-content
+description: The DEVICE_REGISTRY_PROPERTY enumeration identifies device properties that are stored in the registry.
+old-location: kernel\device_registry_property.htm
+old-project: kernel
+ms.assetid: a17b4a88-45e8-45e7-b879-2f41b97be368
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/DevicePropertyDeviceDescription, wdm/, wdm/DevicePropertyClassGuid, wdm/DevicePropertyManufacturer, DevicePropertyLocationInformation, wdm/DevicePropertyBootConfigurationTranslated, wdm/DevicePropertyRemovalPolicy, wdm/DevicePropertyLocationInformation, wdm/DevicePropertyDriverKeyName, wdm/DevicePropertyClassName, DevicePropertyClassGuid, wdm/DevicePropertyInstallState, wdm/DevicePropertyContainerID, DevicePropertyUINumber, DEVICE_REGISTRY_PROPERTY, wdm/DevicePropertyBootConfiguration, wdm/DevicePropertyUINumber, wdm/DevicePropertyAllocatedResources, DevicePropertyDriverKeyName, DevicePropertyFriendlyName, DEVICE_REGISTRY_PROPERTY enumeration [Kernel-Mode Driver Architecture], wdm/DevicePropertyAddress, kernel.device_registry_property, wdm/DevicePropertyEnumeratorName, DevicePropertyClassName, DevicePropertyBusNumber, DevicePropertyAddress, DevicePropertyDeviceDescription, DevicePropertyInstallState, DevicePropertyPhysicalDeviceObjectName, DevicePropertyBusTypeGuid, wdm/DevicePropertyLegacyBusType, wdm/DevicePropertyFriendlyName, wdm/DevicePropertyBusNumber, DevicePropertyManufacturer, wdm/DevicePropertyBusTypeGuid, DevicePropertyLegacyBusType, DevicePropertyResourceRequirements, DevicePropertyRemovalPolicy, wdm/DevicePropertyResourceRequirements, wdm/DevicePropertyPhysicalDeviceObjectName, sysenum_485e3369-186a-4a71-b13e-be6ff9ab8dce.xml, enumeration [Kernel-Mode Driver Architecture], DevicePropertyBootConfigurationTranslated, wdm/DevicePropertyHardwareID, DevicePropertyHardwareID, DevicePropertyCompatibleIDs, wdm/DevicePropertyCompatibleIDs, DevicePropertyBootConfiguration, DevicePropertyEnumeratorName, DevicePropertyContainerID, DevicePropertyAllocatedResources
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	DEVICE_REGISTRY_PROPERTY
+product: Windows
+targetos: Windows
+req.typenames: DEVICE_REGISTRY_PROPERTY
+req.product: Windows 10 or later.
 ---
 
 # DEVICE_REGISTRY_PROPERTY Enumeration
@@ -74,121 +79,121 @@ typedef enum  {
 ## Constants
 
 <table>
-
-<tr>
-<td>DevicePropertyAddress</td>
-<td></td>
-</tr>
-
-<tr>
-<td>DevicePropertyAllocatedResources</td>
-<td></td>
-</tr>
-
-<tr>
-<td>DevicePropertyBootConfiguration</td>
-<td></td>
-</tr>
-
-<tr>
-<td>DevicePropertyBootConfigurationTranslated</td>
-<td></td>
-</tr>
-
-<tr>
-<td>DevicePropertyBusNumber</td>
-<td></td>
-</tr>
-
-<tr>
-<td>DevicePropertyBusTypeGuid</td>
-<td></td>
-</tr>
-
-<tr>
-<td>DevicePropertyClassGuid</td>
-<td></td>
-</tr>
-
-<tr>
-<td>DevicePropertyClassName</td>
-<td></td>
-</tr>
-
-<tr>
-<td>DevicePropertyCompatibleIDs</td>
-<td></td>
-</tr>
-
-<tr>
-<td>DevicePropertyContainerID</td>
-<td></td>
-</tr>
-
-<tr>
-<td>DevicePropertyDeviceDescription</td>
-<td></td>
-</tr>
-
-<tr>
-<td>DevicePropertyDriverKeyName</td>
-<td></td>
-</tr>
-
-<tr>
-<td>DevicePropertyEnumeratorName</td>
-<td></td>
-</tr>
-
-<tr>
-<td>DevicePropertyFriendlyName</td>
-<td></td>
-</tr>
-
-<tr>
-<td>DevicePropertyHardwareID</td>
-<td></td>
-</tr>
-
-<tr>
-<td>DevicePropertyInstallState</td>
-<td></td>
-</tr>
-
-<tr>
-<td>DevicePropertyLegacyBusType</td>
-<td></td>
-</tr>
-
-<tr>
-<td>DevicePropertyLocationInformation</td>
-<td></td>
-</tr>
-
-<tr>
-<td>DevicePropertyManufacturer</td>
-<td></td>
-</tr>
-
-<tr>
-<td>DevicePropertyPhysicalDeviceObjectName</td>
-<td></td>
-</tr>
-
-<tr>
-<td>DevicePropertyRemovalPolicy</td>
-<td></td>
-</tr>
-
-<tr>
-<td>DevicePropertyResourceRequirements</td>
-<td></td>
-</tr>
-
-<tr>
-<td>DevicePropertyUINumber</td>
-<td></td>
-</tr>
+            
+                <tr>
+                    <td>DevicePropertyAddress</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>DevicePropertyAllocatedResources</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>DevicePropertyBootConfiguration</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>DevicePropertyBootConfigurationTranslated</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>DevicePropertyBusNumber</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>DevicePropertyBusTypeGuid</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>DevicePropertyClassGuid</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>DevicePropertyClassName</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>DevicePropertyCompatibleIDs</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>DevicePropertyContainerID</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>DevicePropertyDeviceDescription</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>DevicePropertyDriverKeyName</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>DevicePropertyEnumeratorName</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>DevicePropertyFriendlyName</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>DevicePropertyHardwareID</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>DevicePropertyInstallState</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>DevicePropertyLegacyBusType</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>DevicePropertyLocationInformation</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>DevicePropertyManufacturer</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>DevicePropertyPhysicalDeviceObjectName</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>DevicePropertyRemovalPolicy</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>DevicePropertyResourceRequirements</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>DevicePropertyUINumber</td>
+                    <td></td>
+                </tr>
 </table>
 
 
@@ -197,9 +202,9 @@ typedef enum  {
 | ---- |:---- |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\wdm\nf-wdm-iogetdeviceproperty.md">IoGetDeviceProperty</a>
+        <a href="..\wdm\nf-wdm-iogetdeviceproperty.md">IoGetDeviceProperty</a>
 
  
 

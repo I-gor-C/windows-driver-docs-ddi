@@ -1,41 +1,46 @@
 ---
-UID : NC:mrx.PMRX_CALLDOWN_CTX
-title : PMRX_CALLDOWN_CTX
-author : windows-driver-content
-description : TheMRxStart routine is called by RDBSS to start the network mini-redirector.
-old-location : ifsk\mrxstart.htm
-old-project : ifsk
-ms.assetid : b5985fc4-dd1a-455d-b2ad-3dc2dfec2e6e
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.mrxstart, MRxStart routine [Installable File System Drivers], MRxStart, PMRX_CALLDOWN_CTX, PMRX_CALLDOWN_CTX, mrx/MRxStart, mrxref_e76b85d0-b290-4206-a16c-5d5ed9a5cfff.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : mrx.h
-req.include-header : Mrx.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SetDSMCounters_IN, *PSetDSMCounters_IN
+UID: NC:mrx.PMRX_CALLDOWN_CTX
+title: PMRX_CALLDOWN_CTX
+author: windows-driver-content
+description: TheMRxStart routine is called by RDBSS to start the network mini-redirector.
+old-location: ifsk\mrxstart.htm
+old-project: ifsk
+ms.assetid: b5985fc4-dd1a-455d-b2ad-3dc2dfec2e6e
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.mrxstart, MRxStart routine [Installable File System Drivers], MRxStart, PMRX_CALLDOWN_CTX, PMRX_CALLDOWN_CTX, mrx/MRxStart, mrxref_e76b85d0-b290-4206-a16c-5d5ed9a5cfff.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: mrx.h
+req.include-header: Mrx.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	mrx.h
+apiname:
+-	MRxStart
+product: Windows
+targetos: Windows
+req.typenames: SetDSMCounters_IN, *PSetDSMCounters_IN
 ---
 
 

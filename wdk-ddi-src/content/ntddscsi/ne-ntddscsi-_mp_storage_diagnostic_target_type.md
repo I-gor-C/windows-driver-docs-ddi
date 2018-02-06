@@ -1,41 +1,46 @@
 ---
-UID : NE:ntddscsi._MP_STORAGE_DIAGNOSTIC_TARGET_TYPE
-title : "_MP_STORAGE_DIAGNOSTIC_TARGET_TYPE"
-author : windows-driver-content
-description : The MP_STORAGE_DIAGNOSTIC_TARGET_TYPE enumeration specifies the target type of a storage diagnostic.
-old-location : storage\mp_storage_diagnostic_target_type.htm
-old-project : storage
-ms.assetid : 1A48FC0F-7ED2-4F9F-8B61-A498B0D13FE8
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : ntddscsi/StorageDiagnosticTargetTypeUndefined, ntddscsi/PMP_STORAGE_DIAGNOSTIC_TARGET_TYPE, ntddscsi/MP_STORAGE_DIAGNOSTIC_TARGET_TYPE, storage.mp_storage_diagnostic_target_type, PMP_STORAGE_DIAGNOSTIC_TARGET_TYPE enumeration pointer [Storage Devices], ntddscsi/StorageDiagnosticTargetTypePort, StorageDiagnosticTargetTypeHbaFirmware, PMP_STORAGE_DIAGNOSTIC_TARGET_TYPE, _MP_STORAGE_DIAGNOSTIC_TARGET_TYPE, StorageDiagnosticTargetTypePort, ntddscsi/StorageDiagnosticTargetTypeHbaFirmware, StorageDiagnosticTargetTypeUndefined, MP_STORAGE_DIAGNOSTIC_TARGET_TYPE, StorageDiagnosticTargetTypeMax, StorageDiagnosticTargetTypeMiniport, ntddscsi/StorageDiagnosticTargetTypeMiniport, ntddscsi/StorageDiagnosticTargetTypeMax, MP_STORAGE_DIAGNOSTIC_TARGET_TYPE enumeration [Storage Devices], *PMP_STORAGE_DIAGNOSTIC_TARGET_TYPE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : ntddscsi.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows 10, version 1709.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : MP_STORAGE_DIAGNOSTIC_TARGET_TYPE, *PMP_STORAGE_DIAGNOSTIC_TARGET_TYPE
+UID: NE:ntddscsi._MP_STORAGE_DIAGNOSTIC_TARGET_TYPE
+title: "_MP_STORAGE_DIAGNOSTIC_TARGET_TYPE"
+author: windows-driver-content
+description: The MP_STORAGE_DIAGNOSTIC_TARGET_TYPE enumeration specifies the target type of a storage diagnostic.
+old-location: storage\mp_storage_diagnostic_target_type.htm
+old-project: storage
+ms.assetid: 1A48FC0F-7ED2-4F9F-8B61-A498B0D13FE8
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: ntddscsi/StorageDiagnosticTargetTypeUndefined, ntddscsi/PMP_STORAGE_DIAGNOSTIC_TARGET_TYPE, ntddscsi/MP_STORAGE_DIAGNOSTIC_TARGET_TYPE, storage.mp_storage_diagnostic_target_type, PMP_STORAGE_DIAGNOSTIC_TARGET_TYPE enumeration pointer [Storage Devices], ntddscsi/StorageDiagnosticTargetTypePort, StorageDiagnosticTargetTypeHbaFirmware, PMP_STORAGE_DIAGNOSTIC_TARGET_TYPE, _MP_STORAGE_DIAGNOSTIC_TARGET_TYPE, StorageDiagnosticTargetTypePort, ntddscsi/StorageDiagnosticTargetTypeHbaFirmware, StorageDiagnosticTargetTypeUndefined, MP_STORAGE_DIAGNOSTIC_TARGET_TYPE, StorageDiagnosticTargetTypeMax, StorageDiagnosticTargetTypeMiniport, ntddscsi/StorageDiagnosticTargetTypeMiniport, ntddscsi/StorageDiagnosticTargetTypeMax, MP_STORAGE_DIAGNOSTIC_TARGET_TYPE enumeration [Storage Devices], *PMP_STORAGE_DIAGNOSTIC_TARGET_TYPE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: ntddscsi.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows 10, version 1709.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddscsi.h
+apiname:
+-	MP_STORAGE_DIAGNOSTIC_TARGET_TYPE
+product: Windows
+targetos: Windows
+req.typenames: MP_STORAGE_DIAGNOSTIC_TARGET_TYPE, *PMP_STORAGE_DIAGNOSTIC_TARGET_TYPE
 ---
 
 # _MP_STORAGE_DIAGNOSTIC_TARGET_TYPE Enumeration
@@ -55,26 +60,26 @@ typedef enum _MP_STORAGE_DIAGNOSTIC_TARGET_TYPE {
 ## Constants
 
 <table>
-
-<tr>
-<td>MpStorageDiagnosticTargetTypeHbaFirmware</td>
-<td></td>
-</tr>
-
-<tr>
-<td>MpStorageDiagnosticTargetTypeMax</td>
-<td></td>
-</tr>
-
-<tr>
-<td>MpStorageDiagnosticTargetTypeMiniport</td>
-<td></td>
-</tr>
-
-<tr>
-<td>MpStorageDiagnosticTargetTypeUndefined</td>
-<td></td>
-</tr>
+            
+                <tr>
+                    <td>MpStorageDiagnosticTargetTypeHbaFirmware</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>MpStorageDiagnosticTargetTypeMax</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>MpStorageDiagnosticTargetTypeMiniport</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>MpStorageDiagnosticTargetTypeUndefined</td>
+                    <td></td>
+                </tr>
 </table>
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltSetIoPriorityHintIntoThread
-title : FltSetIoPriorityHintIntoThread function
-author : windows-driver-content
-description : The FltSetIoPriorityHintIntoThread routine is used by a minifilter driver to set the IO priority information in a thread.
-old-location : ifsk\fltsetiopriorityhintintothread.htm
-old-project : ifsk
-ms.assetid : 924fadbe-2703-43f8-985c-db5a7bb960a6
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltSetIoPriorityHintIntoThread routine [Installable File System Drivers], fltkernel/FltSetIoPriorityHintIntoThread, FltSetIoPriorityHintIntoThread, ifsk.fltsetiopriorityhintintothread, FltApiRef_p_to_z_acdf2d2e-c98e-4e7d-8074-fb2b89594771.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : FltKernel.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltSetIoPriorityHintIntoThread
+title: FltSetIoPriorityHintIntoThread function
+author: windows-driver-content
+description: The FltSetIoPriorityHintIntoThread routine is used by a minifilter driver to set the IO priority information in a thread.
+old-location: ifsk\fltsetiopriorityhintintothread.htm
+old-project: ifsk
+ms.assetid: 924fadbe-2703-43f8-985c-db5a7bb960a6
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltSetIoPriorityHintIntoThread routine [Installable File System Drivers], fltkernel/FltSetIoPriorityHintIntoThread, FltSetIoPriorityHintIntoThread, ifsk.fltsetiopriorityhintintothread, FltApiRef_p_to_z_acdf2d2e-c98e-4e7d-8074-fb2b89594771.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: FltKernel.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltSetIoPriorityHintIntoThread
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

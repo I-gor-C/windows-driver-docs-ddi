@@ -1,41 +1,46 @@
 ---
-UID : NC:pepfx.PPO_ENUMERATE_INTERRUPT_SOURCE_CALLBACK
-title : PPO_ENUMERATE_INTERRUPT_SOURCE_CALLBACK
-author : windows-driver-content
-description : An EnumerateInterruptSource callback routine supplies a platform extension plug-in (PEP) with information about an interrupt source.
-old-location : kernel\enumerateinterruptsource.htm
-old-project : kernel
-ms.assetid : 1E6841D8-88A0-4EDB-89EF-3878AF8B0072
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.enumerateinterruptsource, EnumerateInterruptSource routine [Kernel-Mode Driver Architecture], EnumerateInterruptSource, PO_ENUMERATE_INTERRUPT_SOURCE_CALLBACK, PO_ENUMERATE_INTERRUPT_SOURCE_CALLBACK, pepfx/EnumerateInterruptSource
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : pepfx.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : See Remarks.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VPCI_PNP_ID, *PVPCI_PNP_ID
+UID: NC:pepfx.PPO_ENUMERATE_INTERRUPT_SOURCE_CALLBACK
+title: PPO_ENUMERATE_INTERRUPT_SOURCE_CALLBACK
+author: windows-driver-content
+description: An EnumerateInterruptSource callback routine supplies a platform extension plug-in (PEP) with information about an interrupt source.
+old-location: kernel\enumerateinterruptsource.htm
+old-project: kernel
+ms.assetid: 1E6841D8-88A0-4EDB-89EF-3878AF8B0072
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.enumerateinterruptsource, EnumerateInterruptSource routine [Kernel-Mode Driver Architecture], EnumerateInterruptSource, PO_ENUMERATE_INTERRUPT_SOURCE_CALLBACK, PO_ENUMERATE_INTERRUPT_SOURCE_CALLBACK, pepfx/EnumerateInterruptSource
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: pepfx.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: See Remarks.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	pepfx.h
+apiname:
+-	EnumerateInterruptSource
+product: Windows
+targetos: Windows
+req.typenames: VPCI_PNP_ID, *PVPCI_PNP_ID
 ---
 
 

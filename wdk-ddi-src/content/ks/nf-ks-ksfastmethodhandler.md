@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsFastMethodHandler
-title : KsFastMethodHandler function
-author : windows-driver-content
-description : The KsFastMethodHandler function handles fast methods requested through IOCTL_KS_METHOD. It responds to all method identifiers defined by the sets that are also contained in the fast I/O list. This function can only be called at PASSIVE_LEVEL.
-old-location : stream\ksfastmethodhandler.htm
-old-project : stream
-ms.assetid : 829e96e7-7063-4de3-b13a-0b0d12ba1f44
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KsFastMethodHandler, stream.ksfastmethodhandler, KsFastMethodHandler function [Streaming Media Devices], ksfunc_4c9fb7a6-5297-4b74-a865-14a774f728a5.xml, ks/KsFastMethodHandler
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsFastMethodHandler
+title: KsFastMethodHandler function
+author: windows-driver-content
+description: The KsFastMethodHandler function handles fast methods requested through IOCTL_KS_METHOD. It responds to all method identifiers defined by the sets that are also contained in the fast I/O list. This function can only be called at PASSIVE_LEVEL.
+old-location: stream\ksfastmethodhandler.htm
+old-project: stream
+ms.assetid: 829e96e7-7063-4de3-b13a-0b0d12ba1f44
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KsFastMethodHandler, stream.ksfastmethodhandler, KsFastMethodHandler function [Streaming Media Devices], ksfunc_4c9fb7a6-5297-4b74-a865-14a774f728a5.xml, ks/KsFastMethodHandler
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsFastMethodHandler
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

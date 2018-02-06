@@ -1,41 +1,46 @@
 ---
-UID : NF:mrx.__RxFillAndInstallFastIoDispatch
-title : "__RxFillAndInstallFastIoDispatch function"
-author : windows-driver-content
-description : RxFillAndInstallFastIoDispatch fills out a fast I/O dispatch vector to be identical with the normal dispatch I/O vector and installs it into the driver object associated with the device object passed.
-old-location : ifsk\__rxfillandinstallfastiodispatch.htm
-old-project : ifsk
-ms.assetid : 4619a1aa-0c91-4b77-abbf-077f28437e0f
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : rxref_5898351a-a474-44bb-8ba0-3d2edf81d073.xml, mrx/__RxFillAndInstallFastIoDispatch, __RxFillAndInstallFastIoDispatch function [Installable File System Drivers], __RxFillAndInstallFastIoDispatch, ifsk.__rxfillandinstallfastiodispatch
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : mrx.h
-req.include-header : Mrx.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SetDSMCounters_IN, *PSetDSMCounters_IN
+UID: NF:mrx.__RxFillAndInstallFastIoDispatch
+title: "__RxFillAndInstallFastIoDispatch function"
+author: windows-driver-content
+description: RxFillAndInstallFastIoDispatch fills out a fast I/O dispatch vector to be identical with the normal dispatch I/O vector and installs it into the driver object associated with the device object passed.
+old-location: ifsk\__rxfillandinstallfastiodispatch.htm
+old-project: ifsk
+ms.assetid: 4619a1aa-0c91-4b77-abbf-077f28437e0f
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: rxref_5898351a-a474-44bb-8ba0-3d2edf81d073.xml, mrx/__RxFillAndInstallFastIoDispatch, __RxFillAndInstallFastIoDispatch function [Installable File System Drivers], __RxFillAndInstallFastIoDispatch, ifsk.__rxfillandinstallfastiodispatch
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: mrx.h
+req.include-header: Mrx.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	mrx.h
+apiname:
+-	__RxFillAndInstallFastIoDispatch
+product: Windows
+targetos: Windows
+req.typenames: SetDSMCounters_IN, *PSetDSMCounters_IN
 ---
 
 

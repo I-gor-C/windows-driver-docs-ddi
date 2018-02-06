@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT2
-title : "_DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT2"
-author : windows-driver-content
-description : DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT2 is passed to the DxgkDdiCheckMultiPlaneOverlaySupport2 function to determine whether a specific multi-plane overlay configuration is supported.
-old-location : display\dxgkarg_checkmultiplaneoverlaysupport2.htm
-old-project : display
-ms.assetid : 477EBC8A-04A5-4904-AC62-0FA7DB861ACC
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : "*IN_OUT_PDXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT2, _DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT2, DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT2 structure [Display Devices], DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT2, d3dkmddi/DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT2, display.dxgkarg_checkmultiplaneoverlaysupport2"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT2
+UID: NS:d3dkmddi._DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT2
+title: "_DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT2"
+author: windows-driver-content
+description: DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT2 is passed to the DxgkDdiCheckMultiPlaneOverlaySupport2 function to determine whether a specific multi-plane overlay configuration is supported.
+old-location: display\dxgkarg_checkmultiplaneoverlaysupport2.htm
+old-project: display
+ms.assetid: 477EBC8A-04A5-4904-AC62-0FA7DB861ACC
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: "*IN_OUT_PDXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT2, _DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT2, DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT2 structure [Display Devices], DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT2, d3dkmddi/DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT2, display.dxgkarg_checkmultiplaneoverlaysupport2"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT2
+product: Windows
+targetos: Windows
+req.typenames: DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT2
 ---
 
 # _DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT2 structure

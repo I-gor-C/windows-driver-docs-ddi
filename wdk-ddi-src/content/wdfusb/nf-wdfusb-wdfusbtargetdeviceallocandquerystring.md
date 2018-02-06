@@ -1,42 +1,50 @@
 ---
-UID : NF:wdfusb.WdfUsbTargetDeviceAllocAndQueryString
-title : WdfUsbTargetDeviceAllocAndQueryString function
-author : windows-driver-content
-description : The WdfUsbTargetDeviceAllocAndQueryString method allocates a buffer, then it retrieves the Unicode string that is associated with a specified USB device and descriptor index value.
-old-location : wdf\wdfusbtargetdeviceallocandquerystring.htm
-old-project : wdf
-ms.assetid : a9dea258-601b-4ff7-b03b-b3f22d86f314
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WdfUsbTargetDeviceAllocAndQueryString, kmdf.wdfusbtargetdeviceallocandquerystring, PFN_WDFUSBTARGETDEVICEALLOCANDQUERYSTRING, wdfusb/WdfUsbTargetDeviceAllocAndQueryString, WdfUsbTargetDeviceAllocAndQueryString method, DFUsbRef_708583a1-a585-402f-afd6-5df4457b0a25.xml, wdf.wdfusbtargetdeviceallocandquerystring
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfusb.h
-req.include-header : Wdfusb.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2, UsbKmdfIrql, UsbKmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfusb.WdfUsbTargetDeviceAllocAndQueryString
+title: WdfUsbTargetDeviceAllocAndQueryString function
+author: windows-driver-content
+description: The WdfUsbTargetDeviceAllocAndQueryString method allocates a buffer, then it retrieves the Unicode string that is associated with a specified USB device and descriptor index value.
+old-location: wdf\wdfusbtargetdeviceallocandquerystring.htm
+old-project: wdf
+ms.assetid: a9dea258-601b-4ff7-b03b-b3f22d86f314
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WdfUsbTargetDeviceAllocAndQueryString, kmdf.wdfusbtargetdeviceallocandquerystring, PFN_WDFUSBTARGETDEVICEALLOCANDQUERYSTRING, wdfusb/WdfUsbTargetDeviceAllocAndQueryString, WdfUsbTargetDeviceAllocAndQueryString method, DFUsbRef_708583a1-a585-402f-afd6-5df4457b0a25.xml, wdf.wdfusbtargetdeviceallocandquerystring
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfusb.h
+req.include-header: Wdfusb.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2, UsbKmdfIrql, UsbKmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+-	WUDFx02000.dll
+-	WUDFx02000.dll.dll
+apiname:
+-	WdfUsbTargetDeviceAllocAndQueryString
+product: Windows
+targetos: Windows
+req.typenames: WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
+req.product: Windows 10 or later.
 ---
 
 

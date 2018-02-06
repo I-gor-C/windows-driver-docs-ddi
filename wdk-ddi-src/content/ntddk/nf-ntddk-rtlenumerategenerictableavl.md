@@ -1,41 +1,46 @@
 ---
-UID : NF:ntddk.RtlEnumerateGenericTableAvl
-title : RtlEnumerateGenericTableAvl function
-author : windows-driver-content
-description : The RtlEnumerateGenericTableAvl routine is used to enumerate the elements in a generic table.
-old-location : ifsk\rtlenumerategenerictableavl.htm
-old-project : ifsk
-ms.assetid : 59EE8C41-1951-4EA7-BE49-B39C15B082E9
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : RtlEnumerateGenericTableAvl, ifsk.rtlenumerategenerictableavl, ntddk/RtlEnumerateGenericTableAvl, RtlEnumerateGenericTableAvl routine [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntddk.h
-req.include-header : Ntddk.h, Ntifs.h, Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows XP.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "< DISPATCH_LEVEL (see Remarks section)"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.RtlEnumerateGenericTableAvl
+title: RtlEnumerateGenericTableAvl function
+author: windows-driver-content
+description: The RtlEnumerateGenericTableAvl routine is used to enumerate the elements in a generic table.
+old-location: ifsk\rtlenumerategenerictableavl.htm
+old-project: ifsk
+ms.assetid: 59EE8C41-1951-4EA7-BE49-B39C15B082E9
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: RtlEnumerateGenericTableAvl, ifsk.rtlenumerategenerictableavl, ntddk/RtlEnumerateGenericTableAvl, RtlEnumerateGenericTableAvl routine [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntddk.h
+req.include-header: Ntddk.h, Ntifs.h, Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows XP.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "< DISPATCH_LEVEL (see Remarks section)"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	RtlEnumerateGenericTableAvl
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:gpioclx._GPIO_READ_PINS_PARAMETERS
-title : "_GPIO_READ_PINS_PARAMETERS"
-author : windows-driver-content
-description : The GPIO_READ_PINS_PARAMETERS structure describes a read operation on a group of general-purpose I/O (GPIO) pins.
-old-location : gpio\gpio_read_pins_parameters.htm
-old-project : GPIO
-ms.assetid : D04C836E-C440-4AB9-BB44-7D1E8E0F681D
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : gpioclx/GPIO_READ_PINS_PARAMETERS, gpioclx/PGPIO_READ_PINS_PARAMETERS, *PGPIO_READ_PINS_PARAMETERS, GPIO.gpio_read_pins_parameters, GPIO_READ_PINS_PARAMETERS, PGPIO_READ_PINS_PARAMETERS, _GPIO_READ_PINS_PARAMETERS, PGPIO_READ_PINS_PARAMETERS structure pointer [Parallel Ports], GPIO_READ_PINS_PARAMETERS structure [Parallel Ports]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : gpioclx.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : GPIO_READ_PINS_PARAMETERS, *PGPIO_READ_PINS_PARAMETERS
+UID: NS:gpioclx._GPIO_READ_PINS_PARAMETERS
+title: "_GPIO_READ_PINS_PARAMETERS"
+author: windows-driver-content
+description: The GPIO_READ_PINS_PARAMETERS structure describes a read operation on a group of general-purpose I/O (GPIO) pins.
+old-location: gpio\gpio_read_pins_parameters.htm
+old-project: GPIO
+ms.assetid: D04C836E-C440-4AB9-BB44-7D1E8E0F681D
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: gpioclx/GPIO_READ_PINS_PARAMETERS, gpioclx/PGPIO_READ_PINS_PARAMETERS, *PGPIO_READ_PINS_PARAMETERS, GPIO.gpio_read_pins_parameters, GPIO_READ_PINS_PARAMETERS, PGPIO_READ_PINS_PARAMETERS, _GPIO_READ_PINS_PARAMETERS, PGPIO_READ_PINS_PARAMETERS structure pointer [Parallel Ports], GPIO_READ_PINS_PARAMETERS structure [Parallel Ports]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: gpioclx.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Gpioclx.h
+apiname:
+-	GPIO_READ_PINS_PARAMETERS
+product: Windows
+targetos: Windows
+req.typenames: GPIO_READ_PINS_PARAMETERS, *PGPIO_READ_PINS_PARAMETERS
 ---
 
 # _GPIO_READ_PINS_PARAMETERS structure

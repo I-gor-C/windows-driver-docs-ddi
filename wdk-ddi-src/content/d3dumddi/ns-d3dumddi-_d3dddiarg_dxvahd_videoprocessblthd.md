@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._D3DDDIARG_DXVAHD_VIDEOPROCESSBLTHD
-title : "_D3DDDIARG_DXVAHD_VIDEOPROCESSBLTHD"
-author : windows-driver-content
-description : The D3DDDIARG_DXVAHD_VIDEOPROCESSBLTHD structure describes a Microsoft DirectX Video Acceleration (VA) video processing high definition operation to perform.
-old-location : display\d3dddiarg_dxvahd_videoprocessblthd.htm
-old-project : display
-ms.assetid : 16eb6131-89d5-48da-b5f8-f51b9c37e061
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DDDIARG_DXVAHD_VIDEOPROCESSBLTHD structure [Display Devices], _D3DDDIARG_DXVAHD_VIDEOPROCESSBLTHD, D3DDDIARG_DXVAHD_VIDEOPROCESSBLTHD, UMDisplayDriver_param_Structs_8a72018a-706f-4c26-adca-109365e03ff1.xml, d3dumddi/D3DDDIARG_DXVAHD_VIDEOPROCESSBLTHD, display.d3dddiarg_dxvahd_videoprocessblthd
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : D3DDDIARG_DXVAHD_VIDEOPROCESSBLTHD is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDIARG_DXVAHD_VIDEOPROCESSBLTHD
+UID: NS:d3dumddi._D3DDDIARG_DXVAHD_VIDEOPROCESSBLTHD
+title: "_D3DDDIARG_DXVAHD_VIDEOPROCESSBLTHD"
+author: windows-driver-content
+description: The D3DDDIARG_DXVAHD_VIDEOPROCESSBLTHD structure describes a Microsoft DirectX Video Acceleration (VA) video processing high definition operation to perform.
+old-location: display\d3dddiarg_dxvahd_videoprocessblthd.htm
+old-project: display
+ms.assetid: 16eb6131-89d5-48da-b5f8-f51b9c37e061
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DDDIARG_DXVAHD_VIDEOPROCESSBLTHD structure [Display Devices], _D3DDDIARG_DXVAHD_VIDEOPROCESSBLTHD, D3DDDIARG_DXVAHD_VIDEOPROCESSBLTHD, UMDisplayDriver_param_Structs_8a72018a-706f-4c26-adca-109365e03ff1.xml, d3dumddi/D3DDDIARG_DXVAHD_VIDEOPROCESSBLTHD, display.d3dddiarg_dxvahd_videoprocessblthd
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: D3DDDIARG_DXVAHD_VIDEOPROCESSBLTHD is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	D3DDDIARG_DXVAHD_VIDEOPROCESSBLTHD
+product: Windows
+targetos: Windows
+req.typenames: D3DDDIARG_DXVAHD_VIDEOPROCESSBLTHD
 ---
 
 # _D3DDDIARG_DXVAHD_VIDEOPROCESSBLTHD structure

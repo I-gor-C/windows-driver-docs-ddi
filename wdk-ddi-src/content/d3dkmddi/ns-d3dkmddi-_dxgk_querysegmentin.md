@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGK_QUERYSEGMENTIN
-title : "_DXGK_QUERYSEGMENTIN"
-author : windows-driver-content
-description : The DXGK_QUERYSEGMENTIN structure describes relevant information for a memory-segment query through a call to the display miniport driver's DxgkDdiQueryAdapterInfo function.
-old-location : display\dxgk_querysegmentin.htm
-old-project : display
-ms.assetid : 5a3e6edf-40c7-49f3-8394-0e54c080c92c
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DmStructs_d47cf13d-48ec-49fd-b80c-4df1501db329.xml, d3dkmddi/DXGK_QUERYSEGMENTIN, display.dxgk_querysegmentin, DXGK_QUERYSEGMENTIN structure [Display Devices], DXGK_QUERYSEGMENTIN, _DXGK_QUERYSEGMENTIN
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_QUERYSEGMENTIN
+UID: NS:d3dkmddi._DXGK_QUERYSEGMENTIN
+title: "_DXGK_QUERYSEGMENTIN"
+author: windows-driver-content
+description: The DXGK_QUERYSEGMENTIN structure describes relevant information for a memory-segment query through a call to the display miniport driver's DxgkDdiQueryAdapterInfo function.
+old-location: display\dxgk_querysegmentin.htm
+old-project: display
+ms.assetid: 5a3e6edf-40c7-49f3-8394-0e54c080c92c
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DmStructs_d47cf13d-48ec-49fd-b80c-4df1501db329.xml, d3dkmddi/DXGK_QUERYSEGMENTIN, display.dxgk_querysegmentin, DXGK_QUERYSEGMENTIN structure [Display Devices], DXGK_QUERYSEGMENTIN, _DXGK_QUERYSEGMENTIN
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DXGK_QUERYSEGMENTIN
+product: Windows
+targetos: Windows
+req.typenames: DXGK_QUERYSEGMENTIN
 ---
 
 # _DXGK_QUERYSEGMENTIN structure

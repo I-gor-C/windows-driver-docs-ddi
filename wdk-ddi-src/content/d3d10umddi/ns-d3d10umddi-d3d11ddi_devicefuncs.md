@@ -1,41 +1,46 @@
 ---
-UID : NS:d3d10umddi.D3D11DDI_DEVICEFUNCS
-title : D3D11DDI_DEVICEFUNCS
-author : windows-driver-content
-description : The D3D11DDI_DEVICEFUNCS structure contains functions that a user-mode display driver that is optimized for the Microsoft Direct3D version 11 runtime can implement to render graphics primitives and process state changes.
-old-location : display\d3d11ddi_devicefuncs.htm
-old-project : display
-ms.assetid : fabd77b9-2a2e-4995-a99f-50b46806e312
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3D11DDI_DEVICEFUNCS structure [Display Devices], d3d10umddi/D3D11DDI_DEVICEFUNCS, UMDisplayDriver_Dx11param_Structs_f91ec9c6-5d1b-49ab-8a92-21028de8e10b.xml, display.d3d11ddi_devicefuncs, D3D11DDI_DEVICEFUNCS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Windows
-req.target-min-winverclnt : D3D11DDI_DEVICEFUNCS is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3D11DDI_DEVICEFUNCS
+UID: NS:d3d10umddi.D3D11DDI_DEVICEFUNCS
+title: D3D11DDI_DEVICEFUNCS
+author: windows-driver-content
+description: The D3D11DDI_DEVICEFUNCS structure contains functions that a user-mode display driver that is optimized for the Microsoft Direct3D version 11 runtime can implement to render graphics primitives and process state changes.
+old-location: display\d3d11ddi_devicefuncs.htm
+old-project: display
+ms.assetid: fabd77b9-2a2e-4995-a99f-50b46806e312
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3D11DDI_DEVICEFUNCS structure [Display Devices], d3d10umddi/D3D11DDI_DEVICEFUNCS, UMDisplayDriver_Dx11param_Structs_f91ec9c6-5d1b-49ab-8a92-21028de8e10b.xml, display.d3d11ddi_devicefuncs, D3D11DDI_DEVICEFUNCS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Windows
+req.target-min-winverclnt: D3D11DDI_DEVICEFUNCS is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	D3D11DDI_DEVICEFUNCS
+product: Windows
+targetos: Windows
+req.typenames: D3D11DDI_DEVICEFUNCS
 ---
 
 # D3D11DDI_DEVICEFUNCS structure

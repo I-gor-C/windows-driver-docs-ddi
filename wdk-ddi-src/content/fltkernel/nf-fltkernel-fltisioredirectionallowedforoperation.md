@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltIsIoRedirectionAllowedForOperation
-title : FltIsIoRedirectionAllowedForOperation function
-author : windows-driver-content
-description : The FltIsIoRedirectionAllowedForOperation routine determines whether I/O can be redirected from the filter instance associated with the specified FLT_CALLBACK_DATA structure to the specified filter instance.
-old-location : ifsk\fltisioredirectionallowedforoperation.htm
-old-project : ifsk
-ms.assetid : 601a155d-587f-47fc-960e-d1162eabd4b9
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.fltisioredirectionallowedforoperation, fltkernel/FltIsIoRedirectionAllowedForOperation, FltIsIoRedirectionAllowedForOperation routine [Installable File System Drivers], FltIsIoRedirectionAllowedForOperation
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : FltKernel.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 7 and later versions of the Windows operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltIsIoRedirectionAllowedForOperation
+title: FltIsIoRedirectionAllowedForOperation function
+author: windows-driver-content
+description: The FltIsIoRedirectionAllowedForOperation routine determines whether I/O can be redirected from the filter instance associated with the specified FLT_CALLBACK_DATA structure to the specified filter instance.
+old-location: ifsk\fltisioredirectionallowedforoperation.htm
+old-project: ifsk
+ms.assetid: 601a155d-587f-47fc-960e-d1162eabd4b9
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.fltisioredirectionallowedforoperation, fltkernel/FltIsIoRedirectionAllowedForOperation, FltIsIoRedirectionAllowedForOperation routine [Installable File System Drivers], FltIsIoRedirectionAllowedForOperation
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: FltKernel.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 7 and later versions of the Windows operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltIsIoRedirectionAllowedForOperation
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

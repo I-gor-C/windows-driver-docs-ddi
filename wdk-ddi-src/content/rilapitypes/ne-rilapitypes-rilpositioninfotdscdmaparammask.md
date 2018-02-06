@@ -1,42 +1,47 @@
 ---
-UID : NE:rilapitypes.RILPOSITIONINFOTDSCDMAPARAMMASK
-title : RILPOSITIONINFOTDSCDMAPARAMMASK
-author : windows-driver-content
-description : This enumeration describes the RILPOSITIONINFOTDSCDMAPARAMMASK.
-old-location : netvista\rilpositioninfotdscdmaparammask.htm
-old-project : netvista
-ms.assetid : bbd7579f-ff94-412a-8472-b8e6370f7195
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : RIL_PARAM_POSITION_TDSCDMA_MCC, rilapitypes/RIL_PARAM_POSITION_TDSCDMA_CELLPARAM, RIL_PARAM_POSITION_TDSCDMA_TA, rilapitypes/RIL_PARAM_POSITION_TDSCDMA_PATHLOSS, rilapitypes/ RIL_PARAM_POSITION_TDSCDMA_RSCP, rilapitypes/RIL_PARAM_POSITION_TDSCDMA_TA, rilapitypes/RIL_PARAM_POSITION_TDSCDMA_UARFCN, rilapitypes/RILPOSITIONINFOTDSCDMAPARAMMASK, rilapitypes/RIL_PARAM_POSITION_TDSCDMA_LAC, RIL_PARAM_POSITION_TDSCDMA_RSCP, RIL_PARAM_POSITION_TDSCDMA_UARFCN, rilapitypes/RIL_PARAM_POSITION_TDSCDMA_ALL, RIL_PARAM_POSITION_TDSCDMA_LAC, rilapitypes/RIL_PARAM_POSITION_TDSCDMA_CELLID, RIL_PARAM_POSITION_TDSCDMA_CELLPARAM, netvista.rilpositioninfotdscdmaparammask, RIL_PARAM_POSITION_TDSCDMA_CELLID, RIL_PARAM_POSITION_TDSCDMA_PATHLOSS, RILPOSITIONINFOTDSCDMAPARAMMASK, rilapitypes/RIL_PARAM_POSITION_TDSCDMA_MNC, RIL_PARAM_POSITION_TDSCDMA_ALL, RILPOSITIONINFOTDSCDMAPARAMMASK enumeration [Network Drivers Starting with Windows Vista], RIL_PARAM_POSITION_TDSCDMA_MNC, rilapitypes/RIL_PARAM_POSITION_TDSCDMA_MCC
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : rilapitypes.h
-req.include-header : Rilapitypes.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RILPOSITIONINFOTDSCDMAPARAMMASK
-req.product : Windows 10 or later.
+UID: NE:rilapitypes.RILPOSITIONINFOTDSCDMAPARAMMASK
+title: RILPOSITIONINFOTDSCDMAPARAMMASK
+author: windows-driver-content
+description: This enumeration describes the RILPOSITIONINFOTDSCDMAPARAMMASK.
+old-location: netvista\rilpositioninfotdscdmaparammask.htm
+old-project: netvista
+ms.assetid: bbd7579f-ff94-412a-8472-b8e6370f7195
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: RIL_PARAM_POSITION_TDSCDMA_MCC, rilapitypes/RIL_PARAM_POSITION_TDSCDMA_CELLPARAM, RIL_PARAM_POSITION_TDSCDMA_TA, rilapitypes/RIL_PARAM_POSITION_TDSCDMA_PATHLOSS, rilapitypes/ RIL_PARAM_POSITION_TDSCDMA_RSCP, rilapitypes/RIL_PARAM_POSITION_TDSCDMA_TA, rilapitypes/RIL_PARAM_POSITION_TDSCDMA_UARFCN, rilapitypes/RILPOSITIONINFOTDSCDMAPARAMMASK, rilapitypes/RIL_PARAM_POSITION_TDSCDMA_LAC, RIL_PARAM_POSITION_TDSCDMA_RSCP, RIL_PARAM_POSITION_TDSCDMA_UARFCN, rilapitypes/RIL_PARAM_POSITION_TDSCDMA_ALL, RIL_PARAM_POSITION_TDSCDMA_LAC, rilapitypes/RIL_PARAM_POSITION_TDSCDMA_CELLID, RIL_PARAM_POSITION_TDSCDMA_CELLPARAM, netvista.rilpositioninfotdscdmaparammask, RIL_PARAM_POSITION_TDSCDMA_CELLID, RIL_PARAM_POSITION_TDSCDMA_PATHLOSS, RILPOSITIONINFOTDSCDMAPARAMMASK, rilapitypes/RIL_PARAM_POSITION_TDSCDMA_MNC, RIL_PARAM_POSITION_TDSCDMA_ALL, RILPOSITIONINFOTDSCDMAPARAMMASK enumeration [Network Drivers Starting with Windows Vista], RIL_PARAM_POSITION_TDSCDMA_MNC, rilapitypes/RIL_PARAM_POSITION_TDSCDMA_MCC
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: rilapitypes.h
+req.include-header: Rilapitypes.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	rilapitypes.h
+apiname:
+-	RILPOSITIONINFOTDSCDMAPARAMMASK
+product: Windows
+targetos: Windows
+req.typenames: RILPOSITIONINFOTDSCDMAPARAMMASK
+req.product: Windows 10 or later.
 ---
 
 # RILPOSITIONINFOTDSCDMAPARAMMASK Enumeration
@@ -62,56 +67,56 @@ enum RILPOSITIONINFOTDSCDMAPARAMMASK {
 ## Constants
 
 <table>
-
-<tr>
-<td>RIL_PARAM_POSITION_TDSCDMA_ALL</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_PARAM_POSITION_TDSCDMA_CELLID</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_PARAM_POSITION_TDSCDMA_CELLPARAM</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_PARAM_POSITION_TDSCDMA_LAC</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_PARAM_POSITION_TDSCDMA_MCC</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_PARAM_POSITION_TDSCDMA_MNC</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_PARAM_POSITION_TDSCDMA_PATHLOSS</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_PARAM_POSITION_TDSCDMA_RSCP</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_PARAM_POSITION_TDSCDMA_TA</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_PARAM_POSITION_TDSCDMA_UARFCN</td>
-<td></td>
-</tr>
+            
+                <tr>
+                    <td>RIL_PARAM_POSITION_TDSCDMA_ALL</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_POSITION_TDSCDMA_CELLID</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_POSITION_TDSCDMA_CELLPARAM</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_POSITION_TDSCDMA_LAC</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_POSITION_TDSCDMA_MCC</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_POSITION_TDSCDMA_MNC</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_POSITION_TDSCDMA_PATHLOSS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_POSITION_TDSCDMA_RSCP</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_POSITION_TDSCDMA_TA</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_POSITION_TDSCDMA_UARFCN</td>
+                    <td></td>
+                </tr>
 </table>
 
 
@@ -120,9 +125,9 @@ enum RILPOSITIONINFOTDSCDMAPARAMMASK {
 | ---- |:---- |
 | **Header** | rilapitypes.h (include Rilapitypes.h) |
 
-## See Also
+    ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn946509">Cellular COM enumerations</a>
+        <a href="https://msdn.microsoft.com/library/windows/hardware/dn946509">Cellular COM enumerations</a>
 
  
 

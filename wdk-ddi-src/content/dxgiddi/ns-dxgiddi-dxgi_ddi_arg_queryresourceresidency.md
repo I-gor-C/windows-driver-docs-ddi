@@ -1,41 +1,46 @@
 ---
-UID : NS:dxgiddi.DXGI_DDI_ARG_QUERYRESOURCERESIDENCY
-title : DXGI_DDI_ARG_QUERYRESOURCERESIDENCY
-author : windows-driver-content
-description : The DXGI_DDI_ARG_QUERYRESOURCERESIDENCY structure describes the residency status of a list of resources.
-old-location : display\dxgi_ddi_arg_queryresourceresidency.htm
-old-project : display
-ms.assetid : 140a92a8-4b82-47d0-855c-6bc1f9a3d167
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : UMDisplayDriver_Dx10param_Structs_c6e97d75-9ef8-4ae5-9b1f-c4a25234b906.xml, DXGI_DDI_ARG_QUERYRESOURCERESIDENCY, dxgiddi/DXGI_DDI_ARG_QUERYRESOURCERESIDENCY, display.dxgi_ddi_arg_queryresourceresidency, DXGI_DDI_ARG_QUERYRESOURCERESIDENCY structure [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : dxgiddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGI_DDI_ARG_QUERYRESOURCERESIDENCY
+UID: NS:dxgiddi.DXGI_DDI_ARG_QUERYRESOURCERESIDENCY
+title: DXGI_DDI_ARG_QUERYRESOURCERESIDENCY
+author: windows-driver-content
+description: The DXGI_DDI_ARG_QUERYRESOURCERESIDENCY structure describes the residency status of a list of resources.
+old-location: display\dxgi_ddi_arg_queryresourceresidency.htm
+old-project: display
+ms.assetid: 140a92a8-4b82-47d0-855c-6bc1f9a3d167
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: UMDisplayDriver_Dx10param_Structs_c6e97d75-9ef8-4ae5-9b1f-c4a25234b906.xml, DXGI_DDI_ARG_QUERYRESOURCERESIDENCY, dxgiddi/DXGI_DDI_ARG_QUERYRESOURCERESIDENCY, display.dxgi_ddi_arg_queryresourceresidency, DXGI_DDI_ARG_QUERYRESOURCERESIDENCY structure [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: dxgiddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	dxgiddi.h
+apiname:
+-	DXGI_DDI_ARG_QUERYRESOURCERESIDENCY
+product: Windows
+targetos: Windows
+req.typenames: DXGI_DDI_ARG_QUERYRESOURCERESIDENCY
 ---
 
 # DXGI_DDI_ARG_QUERYRESOURCERESIDENCY structure

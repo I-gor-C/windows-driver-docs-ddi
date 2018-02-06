@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddchgr.IOCTL_CHANGER_MOVE_MEDIUM
-title : IOCTL_CHANGER_MOVE_MEDIUM
-author : windows-driver-content
-description : Moves a piece of media from a source element to a destination.
-old-location : storage\ioctl_changer_move_medium.htm
-old-project : storage
-ms.assetid : 4a410f56-cdc1-4cb0-801c-62402caec4ee
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_changer_move_medium, IOCTL_CHANGER_MOVE_MEDIUM control code [Storage Devices], IOCTL_CHANGER_MOVE_MEDIUM, ntddchgr/IOCTL_CHANGER_MOVE_MEDIUM, k307_4d55c834-2f72-433b-8e75-015908324d87.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddchgr.h
-req.include-header : Ntddchgr.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PELEMENT_TYPE, ELEMENT_TYPE"
+UID: NI:ntddchgr.IOCTL_CHANGER_MOVE_MEDIUM
+title: IOCTL_CHANGER_MOVE_MEDIUM
+author: windows-driver-content
+description: Moves a piece of media from a source element to a destination.
+old-location: storage\ioctl_changer_move_medium.htm
+old-project: storage
+ms.assetid: 4a410f56-cdc1-4cb0-801c-62402caec4ee
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_changer_move_medium, IOCTL_CHANGER_MOVE_MEDIUM control code [Storage Devices], IOCTL_CHANGER_MOVE_MEDIUM, ntddchgr/IOCTL_CHANGER_MOVE_MEDIUM, k307_4d55c834-2f72-433b-8e75-015908324d87.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddchgr.h
+req.include-header: Ntddchgr.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddchgr.h
+apiname:
+-	IOCTL_CHANGER_MOVE_MEDIUM
+product: Windows
+targetos: Windows
+req.typenames: "*PELEMENT_TYPE, ELEMENT_TYPE"
 ---
 
 # IOCTL_CHANGER_MOVE_MEDIUM IOCTL

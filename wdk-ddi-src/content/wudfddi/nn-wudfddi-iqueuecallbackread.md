@@ -1,42 +1,47 @@
 ---
-UID : NN:wudfddi.IQueueCallbackRead
-title : IQueueCallbackRead
-author : windows-driver-content
-description : An I/O queue notifies a driver when a read request is available for the driver.
-old-location : wdf\iqueuecallbackread.htm
-old-project : wdf
-ms.assetid : ccae49a2-2081-44f2-b1f6-cb1e98b74e5d
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.iqueuecallbackread, IQueueCallbackRead interface, IQueueCallbackRead interface, described, IQueueCallbackRead, wudfddi/IQueueCallbackRead, UMDFQueueObjectRef_ea1187c2-6bd1-43a0-aeeb-6d9e1ee48cd7.xml, umdf.iqueuecallbackread
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : wudfddi.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NN:wudfddi.IQueueCallbackRead
+title: IQueueCallbackRead
+author: windows-driver-content
+description: An I/O queue notifies a driver when a read request is available for the driver.
+old-location: wdf\iqueuecallbackread.htm
+old-project: wdf
+ms.assetid: ccae49a2-2081-44f2-b1f6-cb1e98b74e5d
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.iqueuecallbackread, IQueueCallbackRead interface, IQueueCallbackRead interface, described, IQueueCallbackRead, wudfddi/IQueueCallbackRead, UMDFQueueObjectRef_ea1187c2-6bd1-43a0-aeeb-6d9e1ee48cd7.xml, umdf.iqueuecallbackread
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: wudfddi.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	wudfddi.h
+apiname:
+-	IQueueCallbackRead
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 # IQueueCallbackRead interface

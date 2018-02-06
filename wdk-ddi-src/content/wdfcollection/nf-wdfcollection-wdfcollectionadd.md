@@ -1,42 +1,50 @@
 ---
-UID : NF:wdfcollection.WdfCollectionAdd
-title : WdfCollectionAdd function
-author : windows-driver-content
-description : The WdfCollectionAdd method adds a specified framework object to an object collection.
-old-location : wdf\wdfcollectionadd.htm
-old-project : wdf
-ms.assetid : eed2ed36-c081-44c7-857b-d2a9f608a022
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WdfCollectionAdd, WdfCollectionAdd method, wdfcollection/WdfCollectionAdd, PFN_WDFCOLLECTIONADD, kmdf.wdfcollectionadd, DFCollectionObjectRef_76895387-58f4-46fc-b5d0-244408fe57b9.xml, wdf.wdfcollectionadd
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfcollection.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDF_CHILD_RETRIEVE_INFO, WDF_CHILD_RETRIEVE_INFO"
-req.product : Windows 10 or later.
+UID: NF:wdfcollection.WdfCollectionAdd
+title: WdfCollectionAdd function
+author: windows-driver-content
+description: The WdfCollectionAdd method adds a specified framework object to an object collection.
+old-location: wdf\wdfcollectionadd.htm
+old-project: wdf
+ms.assetid: eed2ed36-c081-44c7-857b-d2a9f608a022
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WdfCollectionAdd, WdfCollectionAdd method, wdfcollection/WdfCollectionAdd, PFN_WDFCOLLECTIONADD, kmdf.wdfcollectionadd, DFCollectionObjectRef_76895387-58f4-46fc-b5d0-244408fe57b9.xml, wdf.wdfcollectionadd
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfcollection.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+-	WUDFx02000.dll
+-	WUDFx02000.dll.dll
+apiname:
+-	WdfCollectionAdd
+product: Windows
+targetos: Windows
+req.typenames: "*PWDF_CHILD_RETRIEVE_INFO, WDF_CHILD_RETRIEVE_INFO"
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddmmc._FEATURE_DATA_FORMATTABLE
-title : "_FEATURE_DATA_FORMATTABLE"
-author : windows-driver-content
-description : The FEATURE_DATA_FORMATTABLE structure contains information for the Formattable feature.
-old-location : storage\feature_data_formattable.htm
-old-project : storage
-ms.assetid : 658ea6a4-309d-4f78-9a02-f93e7d945325
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : PFEATURE_DATA_FORMATTABLE structure pointer [Storage Devices], PFEATURE_DATA_FORMATTABLE, FEATURE_DATA_FORMATTABLE, structs-CD-ROM_27503157-de29-4c39-bb7a-b17528984f7f.xml, ntddmmc/FEATURE_DATA_FORMATTABLE, ntddmmc/PFEATURE_DATA_FORMATTABLE, storage.feature_data_formattable, FEATURE_DATA_FORMATTABLE structure [Storage Devices], _FEATURE_DATA_FORMATTABLE, *PFEATURE_DATA_FORMATTABLE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddmmc.h
-req.include-header : Ntddcdrm.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PFEATURE_DATA_FORMATTABLE, FEATURE_DATA_FORMATTABLE"
+UID: NS:ntddmmc._FEATURE_DATA_FORMATTABLE
+title: "_FEATURE_DATA_FORMATTABLE"
+author: windows-driver-content
+description: The FEATURE_DATA_FORMATTABLE structure contains information for the Formattable feature.
+old-location: storage\feature_data_formattable.htm
+old-project: storage
+ms.assetid: 658ea6a4-309d-4f78-9a02-f93e7d945325
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: PFEATURE_DATA_FORMATTABLE structure pointer [Storage Devices], PFEATURE_DATA_FORMATTABLE, FEATURE_DATA_FORMATTABLE, structs-CD-ROM_27503157-de29-4c39-bb7a-b17528984f7f.xml, ntddmmc/FEATURE_DATA_FORMATTABLE, ntddmmc/PFEATURE_DATA_FORMATTABLE, storage.feature_data_formattable, FEATURE_DATA_FORMATTABLE structure [Storage Devices], _FEATURE_DATA_FORMATTABLE, *PFEATURE_DATA_FORMATTABLE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddmmc.h
+req.include-header: Ntddcdrm.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddmmc.h
+apiname:
+-	FEATURE_DATA_FORMATTABLE
+product: Windows
+targetos: Windows
+req.typenames: "*PFEATURE_DATA_FORMATTABLE, FEATURE_DATA_FORMATTABLE"
 ---
 
 # _FEATURE_DATA_FORMATTABLE structure

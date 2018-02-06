@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmthk._D3DKMT_SIGNALSYNCHRONIZATIONOBJECTFROMCPU
-title : "_D3DKMT_SIGNALSYNCHRONIZATIONOBJECTFROMCPU"
-author : windows-driver-content
-description : D3DKMT_SIGNALSYNCHRONIZATIONOBJECTFROMCPU is used with D3DKMTSignalSynchronizationObjectFromCpu to enable a driver to signal a monitored fence.
-old-location : display\d3dkmt_signalsynchronizationobjectfromcpu.htm
-old-project : display
-ms.assetid : 03B822CF-2FB0-412B-9F45-43756D8B4C19
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DKMT_SIGNALSYNCHRONIZATIONOBJECTFROMCPU structure [Display Devices], d3dkmthk/D3DKMT_SIGNALSYNCHRONIZATIONOBJECTFROMCPU, D3DKMT_SIGNALSYNCHRONIZATIONOBJECTFROMCPU, display.d3dkmt_signalsynchronizationobjectfromcpu, _D3DKMT_SIGNALSYNCHRONIZATIONOBJECTFROMCPU
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_SIGNALSYNCHRONIZATIONOBJECTFROMCPU
+UID: NS:d3dkmthk._D3DKMT_SIGNALSYNCHRONIZATIONOBJECTFROMCPU
+title: "_D3DKMT_SIGNALSYNCHRONIZATIONOBJECTFROMCPU"
+author: windows-driver-content
+description: D3DKMT_SIGNALSYNCHRONIZATIONOBJECTFROMCPU is used with D3DKMTSignalSynchronizationObjectFromCpu to enable a driver to signal a monitored fence.
+old-location: display\d3dkmt_signalsynchronizationobjectfromcpu.htm
+old-project: display
+ms.assetid: 03B822CF-2FB0-412B-9F45-43756D8B4C19
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DKMT_SIGNALSYNCHRONIZATIONOBJECTFROMCPU structure [Display Devices], d3dkmthk/D3DKMT_SIGNALSYNCHRONIZATIONOBJECTFROMCPU, D3DKMT_SIGNALSYNCHRONIZATIONOBJECTFROMCPU, display.d3dkmt_signalsynchronizationobjectfromcpu, _D3DKMT_SIGNALSYNCHRONIZATIONOBJECTFROMCPU
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmthk.h
+apiname:
+-	D3DKMT_SIGNALSYNCHRONIZATIONOBJECTFROMCPU
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_SIGNALSYNCHRONIZATIONOBJECTFROMCPU
 ---
 
 # _D3DKMT_SIGNALSYNCHRONIZATIONOBJECTFROMCPU structure

@@ -1,41 +1,46 @@
 ---
-UID : NS:ndis._NDIS_RSC_NBL_INFO
-title : "_NDIS_RSC_NBL_INFO"
-author : windows-driver-content
-description : The NDIS_RSC_NBL_INFO union specifies receive segment coalescing (RSC) counter information that is associated with a NET_BUFFER_LIST structure.
-old-location : netvista\ndis_rsc_nbl_info.htm
-old-project : netvista
-ms.assetid : ba9c18ba-8940-4aef-9d58-3105ee1420ce
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : "_NDIS_RSC_NBL_INFO, NDIS_RSC_NBL_INFO, ndis/NDIS_RSC_NBL_INFO, PNDIS_RSC_NBL_INFO union pointer [Network Drivers Starting with Windows Vista], PNDIS_RSC_NBL_INFO, ndis/PNDIS_RSC_NBL_INFO, *PNDIS_RSC_NBL_INFO, netvista.ndis_rsc_nbl_info, NDIS_RSC_NBL_INFO union [Network Drivers Starting with Windows Vista]"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported for NDIS 6.30 and later drivers in Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : See Remarks section
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PNDIS_RSC_NBL_INFO, NDIS_RSC_NBL_INFO"
+UID: NS:ndis._NDIS_RSC_NBL_INFO
+title: "_NDIS_RSC_NBL_INFO"
+author: windows-driver-content
+description: The NDIS_RSC_NBL_INFO union specifies receive segment coalescing (RSC) counter information that is associated with a NET_BUFFER_LIST structure.
+old-location: netvista\ndis_rsc_nbl_info.htm
+old-project: netvista
+ms.assetid: ba9c18ba-8940-4aef-9d58-3105ee1420ce
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: "_NDIS_RSC_NBL_INFO, NDIS_RSC_NBL_INFO, ndis/NDIS_RSC_NBL_INFO, PNDIS_RSC_NBL_INFO union pointer [Network Drivers Starting with Windows Vista], PNDIS_RSC_NBL_INFO, ndis/PNDIS_RSC_NBL_INFO, *PNDIS_RSC_NBL_INFO, netvista.ndis_rsc_nbl_info, NDIS_RSC_NBL_INFO union [Network Drivers Starting with Windows Vista]"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported for NDIS 6.30 and later drivers in Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: See Remarks section
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndis.h
+apiname:
+-	NDIS_RSC_NBL_INFO
+product: Windows
+targetos: Windows
+req.typenames: "*PNDIS_RSC_NBL_INFO, NDIS_RSC_NBL_INFO"
 ---
 
 # _NDIS_RSC_NBL_INFO structure

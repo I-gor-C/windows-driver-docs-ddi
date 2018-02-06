@@ -1,41 +1,46 @@
 ---
-UID : NC:ks.PFNKSIRPLISTCALLBACK
-title : PFNKSIRPLISTCALLBACK
-author : windows-driver-content
-description : A streaming minidriver's KStrIrpListCallback routine is called to determine whether the passed in IRP should be moved from the source list to the destination list, or if IRP enumeration should be terminated.
-old-location : stream\kstrirplistcallback.htm
-old-project : stream
-ms.assetid : acddecb5-f3e9-413e-a68c-91d71119e0f6
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.kstrirplistcallback, KStrIrpListCallback routine [Streaming Media Devices], KStrIrpListCallback, PFNKSIRPLISTCALLBACK, PFNKSIRPLISTCALLBACK, ks/KStrIrpListCallback, ksfunc_90be2b49-883f-476a-9d01-d1e1296844ab.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KEYWORDSELECTOR
+UID: NC:ks.PFNKSIRPLISTCALLBACK
+title: PFNKSIRPLISTCALLBACK
+author: windows-driver-content
+description: A streaming minidriver's KStrIrpListCallback routine is called to determine whether the passed in IRP should be moved from the source list to the destination list, or if IRP enumeration should be terminated.
+old-location: stream\kstrirplistcallback.htm
+old-project: stream
+ms.assetid: acddecb5-f3e9-413e-a68c-91d71119e0f6
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.kstrirplistcallback, KStrIrpListCallback routine [Streaming Media Devices], KStrIrpListCallback, PFNKSIRPLISTCALLBACK, PFNKSIRPLISTCALLBACK, ks/KStrIrpListCallback, ksfunc_90be2b49-883f-476a-9d01-d1e1296844ab.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	ks.h
+apiname:
+-	KStrIrpListCallback
+product: Windows
+targetos: Windows
+req.typenames: KEYWORDSELECTOR
 ---
 
 

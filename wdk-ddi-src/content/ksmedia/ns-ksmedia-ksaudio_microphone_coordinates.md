@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.KSAUDIO_MICROPHONE_COORDINATES
-title : KSAUDIO_MICROPHONE_COORDINATES
-author : windows-driver-content
-description : The KSAUDIO_MICROPHONE_COORDINATES structure specifies the type and the coordinates of a single microphone in the microphone array.
-old-location : audio\ksaudio_microphone_coordinates.htm
-old-project : audio
-ms.assetid : 443fb3c0-0e75-4abc-b44f-047752b3cab7
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : PKSAUDIO_MICROPHONE_COORDINATES structure pointer [Audio Devices], ksmedia/PKSAUDIO_MICROPHONE_COORDINATES, KSAUDIO_MICROPHONE_COORDINATES, KSAUDIO_MICROPHONE_COORDINATES structure [Audio Devices], audio.ksaudio_microphone_coordinates, PKSAUDIO_MICROPHONE_COORDINATES, ksmedia/KSAUDIO_MICROPHONE_COORDINATES, aud-prop_85a5f68f-13f2-4465-bb16-4d30e9c9d731.xml, *PKSAUDIO_MICROPHONE_COORDINATES
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KSAUDIO_MICROPHONE_COORDINATES, *PKSAUDIO_MICROPHONE_COORDINATES
+UID: NS:ksmedia.KSAUDIO_MICROPHONE_COORDINATES
+title: KSAUDIO_MICROPHONE_COORDINATES
+author: windows-driver-content
+description: The KSAUDIO_MICROPHONE_COORDINATES structure specifies the type and the coordinates of a single microphone in the microphone array.
+old-location: audio\ksaudio_microphone_coordinates.htm
+old-project: audio
+ms.assetid: 443fb3c0-0e75-4abc-b44f-047752b3cab7
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: PKSAUDIO_MICROPHONE_COORDINATES structure pointer [Audio Devices], ksmedia/PKSAUDIO_MICROPHONE_COORDINATES, KSAUDIO_MICROPHONE_COORDINATES, KSAUDIO_MICROPHONE_COORDINATES structure [Audio Devices], audio.ksaudio_microphone_coordinates, PKSAUDIO_MICROPHONE_COORDINATES, ksmedia/KSAUDIO_MICROPHONE_COORDINATES, aud-prop_85a5f68f-13f2-4465-bb16-4d30e9c9d731.xml, *PKSAUDIO_MICROPHONE_COORDINATES
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	KSAUDIO_MICROPHONE_COORDINATES
+product: Windows
+targetos: Windows
+req.typenames: KSAUDIO_MICROPHONE_COORDINATES, *PKSAUDIO_MICROPHONE_COORDINATES
 ---
 
 # KSAUDIO_MICROPHONE_COORDINATES structure

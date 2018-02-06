@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.KSAC3_DIALOGUE_LEVEL
-title : KSAC3_DIALOGUE_LEVEL
-author : windows-driver-content
-description : The KSAC3_DIALOGUE_LEVEL structure specifies the average volume level of spoken dialog within the audio program encoded in an AC-3 stream.
-old-location : audio\ksac3_dialogue_level.htm
-old-project : audio
-ms.assetid : c29d5cbc-ddcc-42e9-ac2d-e442a489adfd
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : PKSAC3_DIALOGUE_LEVEL structure pointer [Audio Devices], PKSAC3_DIALOGUE_LEVEL, *PKSAC3_DIALOGUE_LEVEL, KSAC3_DIALOGUE_LEVEL structure [Audio Devices], aud-prop_223d9fe5-3b60-46b4-a157-7ddab97a75f8.xml, audio.ksac3_dialogue_level, ksmedia/KSAC3_DIALOGUE_LEVEL, KSAC3_DIALOGUE_LEVEL, ksmedia/PKSAC3_DIALOGUE_LEVEL
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KSAC3_DIALOGUE_LEVEL, *PKSAC3_DIALOGUE_LEVEL
+UID: NS:ksmedia.KSAC3_DIALOGUE_LEVEL
+title: KSAC3_DIALOGUE_LEVEL
+author: windows-driver-content
+description: The KSAC3_DIALOGUE_LEVEL structure specifies the average volume level of spoken dialog within the audio program encoded in an AC-3 stream.
+old-location: audio\ksac3_dialogue_level.htm
+old-project: audio
+ms.assetid: c29d5cbc-ddcc-42e9-ac2d-e442a489adfd
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: PKSAC3_DIALOGUE_LEVEL structure pointer [Audio Devices], PKSAC3_DIALOGUE_LEVEL, *PKSAC3_DIALOGUE_LEVEL, KSAC3_DIALOGUE_LEVEL structure [Audio Devices], aud-prop_223d9fe5-3b60-46b4-a157-7ddab97a75f8.xml, audio.ksac3_dialogue_level, ksmedia/KSAC3_DIALOGUE_LEVEL, KSAC3_DIALOGUE_LEVEL, ksmedia/PKSAC3_DIALOGUE_LEVEL
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	KSAC3_DIALOGUE_LEVEL
+product: Windows
+targetos: Windows
+req.typenames: KSAC3_DIALOGUE_LEVEL, *PKSAC3_DIALOGUE_LEVEL
 ---
 
 # KSAC3_DIALOGUE_LEVEL structure

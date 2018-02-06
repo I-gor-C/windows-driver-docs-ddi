@@ -1,42 +1,47 @@
 ---
-UID : NF:ufxclient.UFX_ENDPOINT_CALLBACKS_INIT
-title : UFX_ENDPOINT_CALLBACKS_INIT function
-author : windows-driver-content
-description : The UFX_ENDPOINT_CALLBACKS_INIT macro initializes the UFX_ENDPOINT_CALLBACKS structure.
-old-location : buses\ufx_endpoint_callbacks_init.htm
-old-project : usbref
-ms.assetid : 10EB0C86-915F-4C24-ADBE-1D8E8DD8ECB6
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ufxclient/UFX_ENDPOINT_CALLBACKS_INIT, UFX_ENDPOINT_CALLBACKS_INIT function [Buses], UFX_ENDPOINT_CALLBACKS_INIT, buses.ufx_endpoint_callbacks_init
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ufxclient.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUFX_HARDWARE_FAILURE_CONTEXT, UFX_HARDWARE_FAILURE_CONTEXT"
-req.product : Windows 10 or later.
+UID: NF:ufxclient.UFX_ENDPOINT_CALLBACKS_INIT
+title: UFX_ENDPOINT_CALLBACKS_INIT function
+author: windows-driver-content
+description: The UFX_ENDPOINT_CALLBACKS_INIT macro initializes the UFX_ENDPOINT_CALLBACKS structure.
+old-location: buses\ufx_endpoint_callbacks_init.htm
+old-project: usbref
+ms.assetid: 10EB0C86-915F-4C24-ADBE-1D8E8DD8ECB6
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ufxclient/UFX_ENDPOINT_CALLBACKS_INIT, UFX_ENDPOINT_CALLBACKS_INIT function [Buses], UFX_ENDPOINT_CALLBACKS_INIT, buses.ufx_endpoint_callbacks_init
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ufxclient.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ufxclient.h
+apiname:
+-	UFX_ENDPOINT_CALLBACKS_INIT
+product: Windows
+targetos: Windows
+req.typenames: "*PUFX_HARDWARE_FAILURE_CONTEXT, UFX_HARDWARE_FAILURE_CONTEXT"
+req.product: Windows 10 or later.
 ---
 
 

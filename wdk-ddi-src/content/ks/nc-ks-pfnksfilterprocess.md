@@ -1,41 +1,46 @@
 ---
-UID : NC:ks.PFNKSFILTERPROCESS
-title : PFNKSFILTERPROCESS
-author : windows-driver-content
-description : An AVStream minidriver's AVStrMiniFilterProcess routine is called when the filter is meant to process frames. It is used to perform Filter-Centric Processing.
-old-location : stream\avstrminifilterprocess.htm
-old-project : stream
-ms.assetid : f1998d68-1c9e-4527-a174-b22a8c301e63
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.avstrminifilterprocess, AVStrMiniFilterProcess, AVStrMiniFilterProcess routine [Streaming Media Devices], AVStrMiniFilterProcess, PFNKSFILTERPROCESS, PFNKSFILTERPROCESS, ks/AVStrMiniFilterProcess, avstclbk_220bff5f-a966-460b-9157-b512cfc9c336.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "(See Remarks section)"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KEYWORDSELECTOR
+UID: NC:ks.PFNKSFILTERPROCESS
+title: PFNKSFILTERPROCESS
+author: windows-driver-content
+description: An AVStream minidriver's AVStrMiniFilterProcess routine is called when the filter is meant to process frames. It is used to perform Filter-Centric Processing.
+old-location: stream\avstrminifilterprocess.htm
+old-project: stream
+ms.assetid: f1998d68-1c9e-4527-a174-b22a8c301e63
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.avstrminifilterprocess, AVStrMiniFilterProcess, AVStrMiniFilterProcess routine [Streaming Media Devices], AVStrMiniFilterProcess, PFNKSFILTERPROCESS, PFNKSFILTERPROCESS, ks/AVStrMiniFilterProcess, avstclbk_220bff5f-a966-460b-9157-b512cfc9c336.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "(See Remarks section)"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	ks.h
+apiname:
+-	AVStrMiniFilterProcess
+product: Windows
+targetos: Windows
+req.typenames: KEYWORDSELECTOR
 ---
 
 

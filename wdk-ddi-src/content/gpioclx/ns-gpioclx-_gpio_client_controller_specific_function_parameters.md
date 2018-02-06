@@ -1,41 +1,46 @@
 ---
-UID : NS:gpioclx._GPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION_PARAMETERS
-title : "_GPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION_PARAMETERS"
-author : windows-driver-content
-description : The GPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION_PARAMETERS structure describes the input and output buffers for a controller-specific operation.
-old-location : gpio\gpio_client_controller_specific_function_parameters.htm
-old-project : GPIO
-ms.assetid : 57EE1369-09A5-423F-8025-0863B449A909
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : "_GPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION_PARAMETERS, PGPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION_PARAMETERS, *PGPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION_PARAMETERS, GPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION_PARAMETERS, gpioclx/PGPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION_PARAMETERS, gpioclx/GPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION_PARAMETERS, GPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION_PARAMETERS structure [Parallel Ports], PGPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION_PARAMETERS structure pointer [Parallel Ports], GPIO.gpio_client_controller_specific_function_parameters"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : gpioclx.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PGPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION_PARAMETERS, GPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION_PARAMETERS"
+UID: NS:gpioclx._GPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION_PARAMETERS
+title: "_GPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION_PARAMETERS"
+author: windows-driver-content
+description: The GPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION_PARAMETERS structure describes the input and output buffers for a controller-specific operation.
+old-location: gpio\gpio_client_controller_specific_function_parameters.htm
+old-project: GPIO
+ms.assetid: 57EE1369-09A5-423F-8025-0863B449A909
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: "_GPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION_PARAMETERS, PGPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION_PARAMETERS, *PGPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION_PARAMETERS, GPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION_PARAMETERS, gpioclx/PGPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION_PARAMETERS, gpioclx/GPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION_PARAMETERS, GPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION_PARAMETERS structure [Parallel Ports], PGPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION_PARAMETERS structure pointer [Parallel Ports], GPIO.gpio_client_controller_specific_function_parameters"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: gpioclx.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Gpioclx.h
+apiname:
+-	GPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION_PARAMETERS
+product: Windows
+targetos: Windows
+req.typenames: "*PGPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION_PARAMETERS, GPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION_PARAMETERS"
 ---
 
 # _GPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION_PARAMETERS structure

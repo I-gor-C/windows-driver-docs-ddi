@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dkmddi.DXGKDDI_VIDPNTOPOLOGY_ENUMPATHTARGETSFROMSOURCE
-title : DXGKDDI_VIDPNTOPOLOGY_ENUMPATHTARGETSFROMSOURCE
-author : windows-driver-content
-description : The pfnEnumPathTargetsFromSource function returns the identifier of one of the video present targets associated with a specified video present source.
-old-location : display\dxgk_vidpntopology_interface_pfnenumpathtargetsfromsource.htm
-old-project : display
-ms.assetid : ca925b3c-8141-419d-99a1-43764ec07315
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgk_vidpntopology_interface_pfnenumpathtargetsfromsource, pfnEnumPathTargetsFromSource callback function [Display Devices], pfnEnumPathTargetsFromSource, DXGKDDI_VIDPNTOPOLOGY_ENUMPATHTARGETSFROMSOURCE, DXGKDDI_VIDPNTOPOLOGY_ENUMPATHTARGETSFROMSOURCE, d3dkmddi/pfnEnumPathTargetsFromSource, VidPnFunctions_1d5b570a-a3c6-444f-884f-cbd7228f64c9.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
+UID: NC:d3dkmddi.DXGKDDI_VIDPNTOPOLOGY_ENUMPATHTARGETSFROMSOURCE
+title: DXGKDDI_VIDPNTOPOLOGY_ENUMPATHTARGETSFROMSOURCE
+author: windows-driver-content
+description: The pfnEnumPathTargetsFromSource function returns the identifier of one of the video present targets associated with a specified video present source.
+old-location: display\dxgk_vidpntopology_interface_pfnenumpathtargetsfromsource.htm
+old-project: display
+ms.assetid: ca925b3c-8141-419d-99a1-43764ec07315
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgk_vidpntopology_interface_pfnenumpathtargetsfromsource, pfnEnumPathTargetsFromSource callback function [Display Devices], pfnEnumPathTargetsFromSource, DXGKDDI_VIDPNTOPOLOGY_ENUMPATHTARGETSFROMSOURCE, DXGKDDI_VIDPNTOPOLOGY_ENUMPATHTARGETSFROMSOURCE, d3dkmddi/pfnEnumPathTargetsFromSource, VidPnFunctions_1d5b570a-a3c6-444f-884f-cbd7228f64c9.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	pfnEnumPathTargetsFromSource
+product: Windows
+targetos: Windows
+req.typenames: DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
 

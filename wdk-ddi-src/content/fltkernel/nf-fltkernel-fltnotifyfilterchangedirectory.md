@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltNotifyFilterChangeDirectory
-title : FltNotifyFilterChangeDirectory function
-author : windows-driver-content
-description : The FltNotifyFilterChangeDirectory routine creates a notify structure for an IRP_MN_NOTIFY_CHANGE_DIRECTORY operation and adds it to the specified notify list.
-old-location : ifsk\fltnotifyfilterchangedirectory.htm
-old-project : ifsk
-ms.assetid : bbeabd33-951e-4fd5-9845-cabed5f95fcd
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltNotifyFilterChangeDirectory, fltkernel/FltNotifyFilterChangeDirectory, FltApiRef_e_to_o_855490c1-8b4e-4973-9a96-808b50c20740.xml, ifsk.fltnotifyfilterchangedirectory, FltNotifyFilterChangeDirectory routine [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltNotifyFilterChangeDirectory
+title: FltNotifyFilterChangeDirectory function
+author: windows-driver-content
+description: The FltNotifyFilterChangeDirectory routine creates a notify structure for an IRP_MN_NOTIFY_CHANGE_DIRECTORY operation and adds it to the specified notify list.
+old-location: ifsk\fltnotifyfilterchangedirectory.htm
+old-project: ifsk
+ms.assetid: bbeabd33-951e-4fd5-9845-cabed5f95fcd
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltNotifyFilterChangeDirectory, fltkernel/FltNotifyFilterChangeDirectory, FltApiRef_e_to_o_855490c1-8b4e-4973-9a96-808b50c20740.xml, ifsk.fltnotifyfilterchangedirectory, FltNotifyFilterChangeDirectory routine [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltNotifyFilterChangeDirectory
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

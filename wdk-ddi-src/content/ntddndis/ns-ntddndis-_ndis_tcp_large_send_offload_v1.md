@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddndis._NDIS_TCP_LARGE_SEND_OFFLOAD_V1
-title : "_NDIS_TCP_LARGE_SEND_OFFLOAD_V1"
-author : windows-driver-content
-description : The NDIS_TCP_LARGE_SEND_OFFLOAD_V1 structure provides large send offload version 1 (LSOV1) information in the NDIS_OFFLOAD structure.
-old-location : netvista\ndis_tcp_large_send_offload_v1.htm
-old-project : netvista
-ms.assetid : 3e26b6ae-15e1-41d5-b00d-3e09c1534413
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : "*PNDIS_TCP_LARGE_SEND_OFFLOAD_V1, ntddndis/PNDIS_TCP_LARGE_SEND_OFFLOAD_V1, PNDIS_TCP_LARGE_SEND_OFFLOAD_V1, netvista.ndis_tcp_large_send_offload_v1, NDIS_TCP_LARGE_SEND_OFFLOAD_V1 structure [Network Drivers Starting with Windows Vista], PNDIS_TCP_LARGE_SEND_OFFLOAD_V1 structure pointer [Network Drivers Starting with Windows Vista], _NDIS_TCP_LARGE_SEND_OFFLOAD_V1, NDIS_TCP_LARGE_SEND_OFFLOAD_V1, ntddndis/NDIS_TCP_LARGE_SEND_OFFLOAD_V1, tcpip_offload_ref_2a3bb0f8-f05b-462f-984d-774f607ee0da.xml"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_TCP_LARGE_SEND_OFFLOAD_V1, *PNDIS_TCP_LARGE_SEND_OFFLOAD_V1
+UID: NS:ntddndis._NDIS_TCP_LARGE_SEND_OFFLOAD_V1
+title: "_NDIS_TCP_LARGE_SEND_OFFLOAD_V1"
+author: windows-driver-content
+description: The NDIS_TCP_LARGE_SEND_OFFLOAD_V1 structure provides large send offload version 1 (LSOV1) information in the NDIS_OFFLOAD structure.
+old-location: netvista\ndis_tcp_large_send_offload_v1.htm
+old-project: netvista
+ms.assetid: 3e26b6ae-15e1-41d5-b00d-3e09c1534413
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: "*PNDIS_TCP_LARGE_SEND_OFFLOAD_V1, ntddndis/PNDIS_TCP_LARGE_SEND_OFFLOAD_V1, PNDIS_TCP_LARGE_SEND_OFFLOAD_V1, netvista.ndis_tcp_large_send_offload_v1, NDIS_TCP_LARGE_SEND_OFFLOAD_V1 structure [Network Drivers Starting with Windows Vista], PNDIS_TCP_LARGE_SEND_OFFLOAD_V1 structure pointer [Network Drivers Starting with Windows Vista], _NDIS_TCP_LARGE_SEND_OFFLOAD_V1, NDIS_TCP_LARGE_SEND_OFFLOAD_V1, ntddndis/NDIS_TCP_LARGE_SEND_OFFLOAD_V1, tcpip_offload_ref_2a3bb0f8-f05b-462f-984d-774f607ee0da.xml"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddndis.h
+apiname:
+-	NDIS_TCP_LARGE_SEND_OFFLOAD_V1
+product: Windows
+targetos: Windows
+req.typenames: NDIS_TCP_LARGE_SEND_OFFLOAD_V1, *PNDIS_TCP_LARGE_SEND_OFFLOAD_V1
 ---
 
 # _NDIS_TCP_LARGE_SEND_OFFLOAD_V1 structure

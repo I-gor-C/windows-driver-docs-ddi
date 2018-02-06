@@ -1,41 +1,46 @@
 ---
-UID : NS:61883._IPCR
-title : "_IPCR"
-author : windows-driver-content
-description : The IPCR structure contains initialization values for an input plug.
-old-location : ieee\ipcr.htm
-old-project : IEEE
-ms.assetid : 81c89fbc-5d58-4983-b591-765a7818b932
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : 61883_structures_e7226c37-f3b1-4e57-977a-6fb25c853f19.xml, IPCR structure [Buses], *PIPCR, IPCR, 61883/PIPCR, PIPCR structure pointer [Buses], _IPCR, 61883/IPCR, IEEE.ipcr, PIPCR
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : 61883.h
-req.include-header : 61883.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : IPCR, *PIPCR
+UID: NS:61883._IPCR
+title: "_IPCR"
+author: windows-driver-content
+description: The IPCR structure contains initialization values for an input plug.
+old-location: ieee\ipcr.htm
+old-project: IEEE
+ms.assetid: 81c89fbc-5d58-4983-b591-765a7818b932
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: 61883_structures_e7226c37-f3b1-4e57-977a-6fb25c853f19.xml, IPCR structure [Buses], *PIPCR, IPCR, 61883/PIPCR, PIPCR structure pointer [Buses], _IPCR, 61883/IPCR, IEEE.ipcr, PIPCR
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: 61883.h
+req.include-header: 61883.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	61883.h
+apiname:
+-	IPCR
+product: Windows
+targetos: Windows
+req.typenames: IPCR, *PIPCR
 ---
 
 # _IPCR structure

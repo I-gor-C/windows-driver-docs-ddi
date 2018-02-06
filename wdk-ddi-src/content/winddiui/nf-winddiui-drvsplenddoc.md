@@ -1,42 +1,47 @@
 ---
-UID : NF:winddiui.DrvSplEndDoc
-title : DrvSplEndDoc function
-author : windows-driver-content
-description : "."
-old-location : print\drvsplenddoc.htm
-old-project : print
-ms.assetid : 7972fd88-ca99-4a42-8476-754b26eb118c
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : print_interface-graphics_13e407aa-2d2a-4ec5-b3ab-bcb6fa745039.xml, DrvSplEndDoc function [Print Devices], winddiui/DrvSplEndDoc, print.drvsplenddoc, DrvSplEndDoc
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : winddiui.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WINBIO_VERSION, *PWINBIO_VERSION
-req.product : Windows 10 or later.
+UID: NF:winddiui.DrvSplEndDoc
+title: DrvSplEndDoc function
+author: windows-driver-content
+description: "."
+old-location: print\drvsplenddoc.htm
+old-project: print
+ms.assetid: 7972fd88-ca99-4a42-8476-754b26eb118c
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: print_interface-graphics_13e407aa-2d2a-4ec5-b3ab-bcb6fa745039.xml, DrvSplEndDoc function [Print Devices], winddiui/DrvSplEndDoc, print.drvsplenddoc, DrvSplEndDoc
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: winddiui.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	winddiui.h
+apiname:
+-	DrvSplEndDoc
+product: Windows
+targetos: Windows
+req.typenames: WINBIO_VERSION, *PWINBIO_VERSION
+req.product: Windows 10 or later.
 ---
 
 

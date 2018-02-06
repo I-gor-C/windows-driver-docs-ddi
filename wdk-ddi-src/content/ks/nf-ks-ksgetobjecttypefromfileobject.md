@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsGetObjectTypeFromFileObject
-title : KsGetObjectTypeFromFileObject function
-author : windows-driver-content
-description : The KsGetObjectTypeFromFileObject function returns the AVStream object type that is associated with a given file object.
-old-location : stream\ksgetobjecttypefromfileobject.htm
-old-project : stream
-ms.assetid : b963cf53-68ea-49b6-bbda-a93216fb10a5
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.ksgetobjecttypefromfileobject, KsGetObjectTypeFromFileObject function [Streaming Media Devices], avfunc_51a9a4d6-1481-45f9-918e-582907e8513c.xml, ks/KsGetObjectTypeFromFileObject, KsGetObjectTypeFromFileObject
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsGetObjectTypeFromFileObject
+title: KsGetObjectTypeFromFileObject function
+author: windows-driver-content
+description: The KsGetObjectTypeFromFileObject function returns the AVStream object type that is associated with a given file object.
+old-location: stream\ksgetobjecttypefromfileobject.htm
+old-project: stream
+ms.assetid: b963cf53-68ea-49b6-bbda-a93216fb10a5
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.ksgetobjecttypefromfileobject, KsGetObjectTypeFromFileObject function [Streaming Media Devices], avfunc_51a9a4d6-1481-45f9-918e-582907e8513c.xml, ks/KsGetObjectTypeFromFileObject, KsGetObjectTypeFromFileObject
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsGetObjectTypeFromFileObject
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

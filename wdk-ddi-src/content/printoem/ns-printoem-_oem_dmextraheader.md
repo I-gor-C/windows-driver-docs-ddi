@@ -1,42 +1,47 @@
 ---
-UID : NS:printoem._OEM_DMEXTRAHEADER
-title : "_OEM_DMEXTRAHEADER"
-author : windows-driver-content
-description : The OEM_DMEXTRAHEADER structure must be used to define the first members of a set of private DEVMODEW structure members.
-old-location : print\oem_dmextraheader.htm
-old-project : print
-ms.assetid : fecefdbc-3036-4991-900c-203ae8be254b
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : "*POEM_DMEXTRAHEADER, _OEM_DMEXTRAHEADER, printoem/OEM_DMEXTRAHEADER, printoem/POEM_DMEXTRAHEADER, print_unidrv-pscript_ui_f356f9c1-f867-4c53-8b12-be48da73de4f.xml, POEM_DMEXTRAHEADER structure pointer [Print Devices], print.oem_dmextraheader, POEM_DMEXTRAHEADER, OEM_DMEXTRAHEADER, OEM_DMEXTRAHEADER structure [Print Devices]"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : printoem.h
-req.include-header : Printoem.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : OEM_DMEXTRAHEADER, *POEM_DMEXTRAHEADER
-req.product : Windows 10 or later.
+UID: NS:printoem._OEM_DMEXTRAHEADER
+title: "_OEM_DMEXTRAHEADER"
+author: windows-driver-content
+description: The OEM_DMEXTRAHEADER structure must be used to define the first members of a set of private DEVMODEW structure members.
+old-location: print\oem_dmextraheader.htm
+old-project: print
+ms.assetid: fecefdbc-3036-4991-900c-203ae8be254b
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: "*POEM_DMEXTRAHEADER, _OEM_DMEXTRAHEADER, printoem/OEM_DMEXTRAHEADER, printoem/POEM_DMEXTRAHEADER, print_unidrv-pscript_ui_f356f9c1-f867-4c53-8b12-be48da73de4f.xml, POEM_DMEXTRAHEADER structure pointer [Print Devices], print.oem_dmextraheader, POEM_DMEXTRAHEADER, OEM_DMEXTRAHEADER, OEM_DMEXTRAHEADER structure [Print Devices]"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: printoem.h
+req.include-header: Printoem.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	printoem.h
+apiname:
+-	OEM_DMEXTRAHEADER
+product: Windows
+targetos: Windows
+req.typenames: OEM_DMEXTRAHEADER, *POEM_DMEXTRAHEADER
+req.product: Windows 10 or later.
 ---
 
 # _OEM_DMEXTRAHEADER structure

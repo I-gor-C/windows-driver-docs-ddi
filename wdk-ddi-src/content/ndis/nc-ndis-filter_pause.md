@@ -1,41 +1,46 @@
 ---
-UID : NC:ndis.FILTER_PAUSE
-title : FILTER_PAUSE
-author : windows-driver-content
-description : NDIS calls a filter driver's FilterPause function to initiate a pause operation for the specified filter module.Note  You must declare the function by using the FILTER_PAUSE type.
-old-location : netvista\filterpause.htm
-old-project : netvista
-ms.assetid : a239889e-ec39-48fc-9e82-c8bc3d7ca51a
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.filterpause, FilterPause callback function [Network Drivers Starting with Windows Vista], FilterPause, FILTER_PAUSE, FILTER_PAUSE, ndis/FilterPause, filter_functions_ref_2f28fa9f-47cb-4638-b673-e938872f54f1.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
+UID: NC:ndis.FILTER_PAUSE
+title: FILTER_PAUSE
+author: windows-driver-content
+description: NDIS calls a filter driver's FilterPause function to initiate a pause operation for the specified filter module.Note  You must declare the function by using the FILTER_PAUSE type.
+old-location: netvista\filterpause.htm
+old-project: netvista
+ms.assetid: a239889e-ec39-48fc-9e82-c8bc3d7ca51a
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.filterpause, FilterPause callback function [Network Drivers Starting with Windows Vista], FilterPause, FILTER_PAUSE, FILTER_PAUSE, ndis/FilterPause, filter_functions_ref_2f28fa9f-47cb-4638-b673-e938872f54f1.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ndis.h
+apiname:
+-	FilterPause
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 

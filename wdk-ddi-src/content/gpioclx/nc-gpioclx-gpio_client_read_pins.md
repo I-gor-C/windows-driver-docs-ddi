@@ -1,41 +1,46 @@
 ---
-UID : NC:gpioclx.GPIO_CLIENT_READ_PINS
-title : GPIO_CLIENT_READ_PINS
-author : windows-driver-content
-description : The CLIENT_ReadGpioPins event callback function reads a set of general-purpose I/O (GPIO) pins that are configured as data inputs.
-old-location : gpio\client_readgpiopins.htm
-old-project : GPIO
-ms.assetid : FE1AB8D5-DEA7-47BE-921E-BB33BBB61AC9
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : GPIO.client_readgpiopins, CLIENT_ReadGpioPins callback function [Parallel Ports], CLIENT_ReadGpioPins, GPIO_CLIENT_READ_PINS, GPIO_CLIENT_READ_PINS, gpioclx/CLIENT_ReadGpioPins
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : gpioclx.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Supported starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : See Remarks.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PGNSS_V2UPL_NI_INFO, GNSS_V2UPL_NI_INFO"
+UID: NC:gpioclx.GPIO_CLIENT_READ_PINS
+title: GPIO_CLIENT_READ_PINS
+author: windows-driver-content
+description: The CLIENT_ReadGpioPins event callback function reads a set of general-purpose I/O (GPIO) pins that are configured as data inputs.
+old-location: gpio\client_readgpiopins.htm
+old-project: GPIO
+ms.assetid: FE1AB8D5-DEA7-47BE-921E-BB33BBB61AC9
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: GPIO.client_readgpiopins, CLIENT_ReadGpioPins callback function [Parallel Ports], CLIENT_ReadGpioPins, GPIO_CLIENT_READ_PINS, GPIO_CLIENT_READ_PINS, gpioclx/CLIENT_ReadGpioPins
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: gpioclx.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Supported starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: See Remarks.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Gpioclx.h
+apiname:
+-	CLIENT_ReadGpioPins
+product: Windows
+targetos: Windows
+req.typenames: "*PGNSS_V2UPL_NI_INFO, GNSS_V2UPL_NI_INFO"
 ---
 
 

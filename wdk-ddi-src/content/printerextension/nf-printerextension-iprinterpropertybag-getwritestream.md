@@ -1,42 +1,47 @@
 ---
-UID : NF:printerextension.IPrinterPropertyBag.GetWriteStream
-title : IPrinterPropertyBag::GetWriteStream method
-author : windows-driver-content
-description : Gets a stream in order to write a stream property.
-old-location : print\iprinterpropertybag_getwritestream.htm
-old-project : print
-ms.assetid : 47F535C0-57C7-407B-B47B-188EB6434F2E
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : GetWriteStream method [Print Devices], IPrinterPropertyBag interface, GetWriteStream, IPrinterPropertyBag, IPrinterPropertyBag::GetWriteStream, GetWriteStream method [Print Devices], printerextension/IPrinterPropertyBag::GetWriteStream, print.iprinterpropertybag_getwritestream, IPrinterPropertyBag interface [Print Devices], GetWriteStream method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : printerextension.h
-req.include-header : Printerextension.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : printerextension.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PrintSchemaSelectionType
-req.product : Windows 10 or later.
+UID: NF:printerextension.IPrinterPropertyBag.GetWriteStream
+title: IPrinterPropertyBag::GetWriteStream method
+author: windows-driver-content
+description: Gets a stream in order to write a stream property.
+old-location: print\iprinterpropertybag_getwritestream.htm
+old-project: print
+ms.assetid: 47F535C0-57C7-407B-B47B-188EB6434F2E
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: GetWriteStream method [Print Devices], IPrinterPropertyBag interface, GetWriteStream, IPrinterPropertyBag, IPrinterPropertyBag::GetWriteStream, GetWriteStream method [Print Devices], printerextension/IPrinterPropertyBag::GetWriteStream, print.iprinterpropertybag_getwritestream, IPrinterPropertyBag interface [Print Devices], GetWriteStream method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: printerextension.h
+req.include-header: Printerextension.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: printerextension.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Printerextension.h
+apiname:
+-	IPrinterPropertyBag.GetWriteStream
+product: Windows
+targetos: Windows
+req.typenames: PrintSchemaSelectionType
+req.product: Windows 10 or later.
 ---
 
 

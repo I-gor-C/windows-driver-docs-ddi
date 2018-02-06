@@ -1,42 +1,47 @@
 ---
-UID : NF:wdfpdo.WDF_PDO_EVENT_CALLBACKS_INIT
-title : WDF_PDO_EVENT_CALLBACKS_INIT function
-author : windows-driver-content
-description : The WDF_PDO_EVENT_CALLBACKS_INIT function initializes a WDF_PDO_EVENT_CALLBACKS structure.
-old-location : wdf\wdf_pdo_event_callbacks_init.htm
-old-project : wdf
-ms.assetid : f3e0ee33-42cd-4544-aad2-c353f7c30675
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : kmdf.wdf_pdo_event_callbacks_init, WDF_PDO_EVENT_CALLBACKS_INIT, DFDeviceObjectFdoPdoRef_22fa36a8-bdfa-4aac-88aa-3fb50a4c1c42.xml, wdfpdo/WDF_PDO_EVENT_CALLBACKS_INIT, WDF_PDO_EVENT_CALLBACKS_INIT function, wdf.wdf_pdo_event_callbacks_init
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfpdo.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDF_OBJECT_CONTEXT_TYPE_INFO, WDF_OBJECT_CONTEXT_TYPE_INFO"
-req.product : Windows 10 or later.
+UID: NF:wdfpdo.WDF_PDO_EVENT_CALLBACKS_INIT
+title: WDF_PDO_EVENT_CALLBACKS_INIT function
+author: windows-driver-content
+description: The WDF_PDO_EVENT_CALLBACKS_INIT function initializes a WDF_PDO_EVENT_CALLBACKS structure.
+old-location: wdf\wdf_pdo_event_callbacks_init.htm
+old-project: wdf
+ms.assetid: f3e0ee33-42cd-4544-aad2-c353f7c30675
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: kmdf.wdf_pdo_event_callbacks_init, WDF_PDO_EVENT_CALLBACKS_INIT, DFDeviceObjectFdoPdoRef_22fa36a8-bdfa-4aac-88aa-3fb50a4c1c42.xml, wdfpdo/WDF_PDO_EVENT_CALLBACKS_INIT, WDF_PDO_EVENT_CALLBACKS_INIT function, wdf.wdf_pdo_event_callbacks_init
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfpdo.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfpdo.h
+apiname:
+-	WDF_PDO_EVENT_CALLBACKS_INIT
+product: Windows
+targetos: Windows
+req.typenames: "*PWDF_OBJECT_CONTEXT_TYPE_INFO, WDF_OBJECT_CONTEXT_TYPE_INFO"
+req.product: Windows 10 or later.
 ---
 
 

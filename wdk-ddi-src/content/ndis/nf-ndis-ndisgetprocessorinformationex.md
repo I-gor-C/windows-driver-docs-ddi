@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisGetProcessorInformationEx
-title : NdisGetProcessorInformationEx function
-author : windows-driver-content
-description : The NdisGetProcessorInformationEx function retrieves information about the CPU topology of the local computer.
-old-location : netvista\ndisgetprocessorinformationex.htm
-old-project : netvista
-ms.assetid : 9af21f56-d93d-4130-888c-c7009dc2854d
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NdisGetProcessorInformationEx function [Network Drivers Starting with Windows Vista], ndis/NdisGetProcessorInformationEx, netvista.ndisgetprocessorinformationex, NdisGetProcessorInformationEx, ndis_processor_group_ref_f387710b-fb49-4202-9ff5-496021972695.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported in NDIS 6.20 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisGetProcessorInformationEx
+title: NdisGetProcessorInformationEx function
+author: windows-driver-content
+description: The NdisGetProcessorInformationEx function retrieves information about the CPU topology of the local computer.
+old-location: netvista\ndisgetprocessorinformationex.htm
+old-project: netvista
+ms.assetid: 9af21f56-d93d-4130-888c-c7009dc2854d
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NdisGetProcessorInformationEx function [Network Drivers Starting with Windows Vista], ndis/NdisGetProcessorInformationEx, netvista.ndisgetprocessorinformationex, NdisGetProcessorInformationEx, ndis_processor_group_ref_f387710b-fb49-4202-9ff5-496021972695.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported in NDIS 6.20 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisGetProcessorInformationEx
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NI:sffdisk.IOCTL_SFFDISK_DEVICE_PASSWORD
-title : IOCTL_SFFDISK_DEVICE_PASSWORD
-author : windows-driver-content
-description : User-mode applications use this IOCTL to perform basic operations on a Secure Digital (SD) card, such as setting the password on the card, resetting the card, or locking and unlocking the card.
-old-location : sd\ioctl_sffdisk_device_password.htm
-old-project : SD
-ms.assetid : 76b65ada-06b8-411e-83e9-62088f697f02
-ms.author : windowsdriverdev
-ms.date : 12/18/2017
-ms.keywords : SD.ioctl_sffdisk_device_password, IOCTL_SFFDISK_DEVICE_PASSWORD control code [Buses], IOCTL_SFFDISK_DEVICE_PASSWORD, sffdisk/IOCTL_SFFDISK_DEVICE_PASSWORD, sd-ioctls_409f2592-46a6-4658-bc4f-d15c10452007.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : sffdisk.h
-req.include-header : Sffdisk.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SFFDISK_DPCMD
-req.product : Windows 10 or later.
+UID: NI:sffdisk.IOCTL_SFFDISK_DEVICE_PASSWORD
+title: IOCTL_SFFDISK_DEVICE_PASSWORD
+author: windows-driver-content
+description: User-mode applications use this IOCTL to perform basic operations on a Secure Digital (SD) card, such as setting the password on the card, resetting the card, or locking and unlocking the card.
+old-location: sd\ioctl_sffdisk_device_password.htm
+old-project: SD
+ms.assetid: 76b65ada-06b8-411e-83e9-62088f697f02
+ms.author: windowsdriverdev
+ms.date: 12/18/2017
+ms.keywords: SD.ioctl_sffdisk_device_password, IOCTL_SFFDISK_DEVICE_PASSWORD control code [Buses], IOCTL_SFFDISK_DEVICE_PASSWORD, sffdisk/IOCTL_SFFDISK_DEVICE_PASSWORD, sd-ioctls_409f2592-46a6-4658-bc4f-d15c10452007.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: sffdisk.h
+req.include-header: Sffdisk.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	sffdisk.h
+apiname:
+-	IOCTL_SFFDISK_DEVICE_PASSWORD
+product: Windows
+targetos: Windows
+req.typenames: SFFDISK_DPCMD
+req.product: Windows 10 or later.
 ---
 
 # IOCTL_SFFDISK_DEVICE_PASSWORD IOCTL

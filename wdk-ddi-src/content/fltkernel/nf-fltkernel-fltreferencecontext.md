@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltReferenceContext
-title : FltReferenceContext function
-author : windows-driver-content
-description : FltReferenceContext increments the reference count on a context structure.
-old-location : ifsk\fltreferencecontext.htm
-old-project : ifsk
-ms.assetid : 3e49f80e-3c30-4796-b2f3-7df37746d97b
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : fltkernel/FltReferenceContext, ifsk.fltreferencecontext, FltReferenceContext function [Installable File System Drivers], FltApiRef_p_to_z_bb2ded16-77d3-4fb3-a6c6-870b0112df7a.xml, FltReferenceContext
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltReferenceContext
+title: FltReferenceContext function
+author: windows-driver-content
+description: FltReferenceContext increments the reference count on a context structure.
+old-location: ifsk\fltreferencecontext.htm
+old-project: ifsk
+ms.assetid: 3e49f80e-3c30-4796-b2f3-7df37746d97b
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: fltkernel/FltReferenceContext, ifsk.fltreferencecontext, FltReferenceContext function [Installable File System Drivers], FltApiRef_p_to_z_bb2ded16-77d3-4fb3-a6c6-870b0112df7a.xml, FltReferenceContext
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltReferenceContext
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

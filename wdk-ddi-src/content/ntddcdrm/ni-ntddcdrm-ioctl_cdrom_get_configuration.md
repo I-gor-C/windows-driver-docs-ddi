@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddcdrm.IOCTL_CDROM_GET_CONFIGURATION
-title : IOCTL_CDROM_GET_CONFIGURATION
-author : windows-driver-content
-description : Requests feature and profile information from a CD-ROM device.
-old-location : storage\ioctl_cdrom_get_configuration.htm
-old-project : storage
-ms.assetid : 2eb4b5c3-db06-4d21-8937-847734d7ac2f
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_cdrom_get_configuration, IOCTL_CDROM_GET_CONFIGURATION control code [Storage Devices], IOCTL_CDROM_GET_CONFIGURATION, ntddcdrm/IOCTL_CDROM_GET_CONFIGURATION, k307_355fe40f-4056-4bd7-8e79-8824c38589f6.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddcdrm.h
-req.include-header : Ntddcdrm.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WRITE_ROTATION, *PWRITE_ROTATION
+UID: NI:ntddcdrm.IOCTL_CDROM_GET_CONFIGURATION
+title: IOCTL_CDROM_GET_CONFIGURATION
+author: windows-driver-content
+description: Requests feature and profile information from a CD-ROM device.
+old-location: storage\ioctl_cdrom_get_configuration.htm
+old-project: storage
+ms.assetid: 2eb4b5c3-db06-4d21-8937-847734d7ac2f
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_cdrom_get_configuration, IOCTL_CDROM_GET_CONFIGURATION control code [Storage Devices], IOCTL_CDROM_GET_CONFIGURATION, ntddcdrm/IOCTL_CDROM_GET_CONFIGURATION, k307_355fe40f-4056-4bd7-8e79-8824c38589f6.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddcdrm.h
+req.include-header: Ntddcdrm.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddcdrm.h
+apiname:
+-	IOCTL_CDROM_GET_CONFIGURATION
+product: Windows
+targetos: Windows
+req.typenames: WRITE_ROTATION, *PWRITE_ROTATION
 ---
 
 # IOCTL_CDROM_GET_CONFIGURATION IOCTL

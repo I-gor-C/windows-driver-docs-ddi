@@ -1,42 +1,47 @@
 ---
-UID : NC:wdm.PPUT_DMA_ADAPTER
-title : PPUT_DMA_ADAPTER
-author : windows-driver-content
-description : The PutDmaAdapter routine frees a DMA_ADAPTER structure previously allocated by IoGetDmaAdapter.
-old-location : kernel\putdmaadapter.htm
-old-project : kernel
-ms.assetid : 05a76baf-e5f7-41ca-ac9f-4538cd3e0292
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.putdmaadapter, PutDmaAdapter, PutDmaAdapter callback function [Kernel-Mode Driver Architecture], PutDmaAdapter, PPUT_DMA_ADAPTER, PPUT_DMA_ADAPTER, wdm/PutDmaAdapter, kdma_49fe7ec6-e0a3-445e-9275-08b94ca2cf48.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : IrqlDispatch
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
-req.product : Windows 10 or later.
+UID: NC:wdm.PPUT_DMA_ADAPTER
+title: PPUT_DMA_ADAPTER
+author: windows-driver-content
+description: The PutDmaAdapter routine frees a DMA_ADAPTER structure previously allocated by IoGetDmaAdapter.
+old-location: kernel\putdmaadapter.htm
+old-project: kernel
+ms.assetid: 05a76baf-e5f7-41ca-ac9f-4538cd3e0292
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.putdmaadapter, PutDmaAdapter, PutDmaAdapter callback function [Kernel-Mode Driver Architecture], PutDmaAdapter, PPUT_DMA_ADAPTER, PPUT_DMA_ADAPTER, wdm/PutDmaAdapter, kdma_49fe7ec6-e0a3-445e-9275-08b94ca2cf48.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: IrqlDispatch
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	wdm.h
+apiname:
+-	PutDmaAdapter
+product: Windows
+targetos: Windows
+req.typenames: WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+req.product: Windows 10 or later.
 ---
 
 

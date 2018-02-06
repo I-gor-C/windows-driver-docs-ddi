@@ -1,42 +1,48 @@
 ---
-UID : NF:storport.StorPortWriteRegisterBufferUshort
-title : StorPortWriteRegisterBufferUshort function
-author : windows-driver-content
-description : The StorPortWriteRegisterBufferUshort routine transfers a given number of USHORT values from a buffer to the HBA.
-old-location : storage\storportwriteregisterbufferushort.htm
-old-project : storage
-ms.assetid : 13da18b3-682f-485a-9d74-0bbff4254862
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : StorPortWriteRegisterBufferUshort routine [Storage Devices], storport/StorPortWriteRegisterBufferUshort, StorPortWriteRegisterBufferUshort, storage.storportwriteregisterbufferushort, storprt_8b227304-10e5-46fc-93e1-41b1c91068b1.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Storport.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STOR_SPINLOCK
-req.product : Windows 10 or later.
+UID: NF:storport.StorPortWriteRegisterBufferUshort
+title: StorPortWriteRegisterBufferUshort function
+author: windows-driver-content
+description: The StorPortWriteRegisterBufferUshort routine transfers a given number of USHORT values from a buffer to the HBA.
+old-location: storage\storportwriteregisterbufferushort.htm
+old-project: storage
+ms.assetid: 13da18b3-682f-485a-9d74-0bbff4254862
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: StorPortWriteRegisterBufferUshort routine [Storage Devices], storport/StorPortWriteRegisterBufferUshort, StorPortWriteRegisterBufferUshort, storage.storportwriteregisterbufferushort, storprt_8b227304-10e5-46fc-93e1-41b1c91068b1.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Storport.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Storport.lib
+-	Storport.dll
+apiname:
+-	StorPortWriteRegisterBufferUshort
+product: Windows
+targetos: Windows
+req.typenames: STOR_SPINLOCK
+req.product: Windows 10 or later.
 ---
 
 

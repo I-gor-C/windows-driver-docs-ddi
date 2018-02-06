@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltDeleteContext
-title : FltDeleteContext function
-author : windows-driver-content
-description : FltDeleteContext marks a specified context for deletion.
-old-location : ifsk\fltdeletecontext.htm
-old-project : ifsk
-ms.assetid : 1cdb0747-7616-414b-8287-1ef73637ed05
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : fltkernel/FltDeleteContext, FltDeleteContext function [Installable File System Drivers], FltDeleteContext, FltApiRef_a_to_d_d4c075e6-7a69-4d2f-9017-eccbf55eb9e0.xml, ifsk.fltdeletecontext
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltDeleteContext
+title: FltDeleteContext function
+author: windows-driver-content
+description: FltDeleteContext marks a specified context for deletion.
+old-location: ifsk\fltdeletecontext.htm
+old-project: ifsk
+ms.assetid: 1cdb0747-7616-414b-8287-1ef73637ed05
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: fltkernel/FltDeleteContext, FltDeleteContext function [Installable File System Drivers], FltDeleteContext, FltApiRef_a_to_d_d4c075e6-7a69-4d2f-9017-eccbf55eb9e0.xml, ifsk.fltdeletecontext
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltDeleteContext
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

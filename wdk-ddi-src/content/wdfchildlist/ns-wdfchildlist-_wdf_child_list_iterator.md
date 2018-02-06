@@ -1,42 +1,47 @@
 ---
-UID : NS:wdfchildlist._WDF_CHILD_LIST_ITERATOR
-title : "_WDF_CHILD_LIST_ITERATOR"
-author : windows-driver-content
-description : The WDF_CHILD_LIST_ITERATOR structure identifies the type of child devices that the framework will retrieve when a driver calls WdfChildListRetrieveNextDevice.
-old-location : wdf\wdf_child_list_iterator.htm
-old-project : wdf
-ms.assetid : 3baeaaab-cb2f-49a1-bd01-01bd1e3e5214
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WDF_CHILD_LIST_ITERATOR structure, WDF_CHILD_LIST_ITERATOR, PWDF_CHILD_LIST_ITERATOR, wdfchildlist/PWDF_CHILD_LIST_ITERATOR, _WDF_CHILD_LIST_ITERATOR, kmdf.wdf_child_list_iterator, wdf.wdf_child_list_iterator, *PWDF_CHILD_LIST_ITERATOR, wdfchildlist/WDF_CHILD_LIST_ITERATOR, PWDF_CHILD_LIST_ITERATOR structure pointer, DFDeviceObjectChildListRef_5a77ee51-8e18-4e86-afd0-8add561dab4d.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdfchildlist.h
-req.include-header : Wdf.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_CHILD_LIST_ITERATOR, *PWDF_CHILD_LIST_ITERATOR
-req.product : Windows 10 or later.
+UID: NS:wdfchildlist._WDF_CHILD_LIST_ITERATOR
+title: "_WDF_CHILD_LIST_ITERATOR"
+author: windows-driver-content
+description: The WDF_CHILD_LIST_ITERATOR structure identifies the type of child devices that the framework will retrieve when a driver calls WdfChildListRetrieveNextDevice.
+old-location: wdf\wdf_child_list_iterator.htm
+old-project: wdf
+ms.assetid: 3baeaaab-cb2f-49a1-bd01-01bd1e3e5214
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WDF_CHILD_LIST_ITERATOR structure, WDF_CHILD_LIST_ITERATOR, PWDF_CHILD_LIST_ITERATOR, wdfchildlist/PWDF_CHILD_LIST_ITERATOR, _WDF_CHILD_LIST_ITERATOR, kmdf.wdf_child_list_iterator, wdf.wdf_child_list_iterator, *PWDF_CHILD_LIST_ITERATOR, wdfchildlist/WDF_CHILD_LIST_ITERATOR, PWDF_CHILD_LIST_ITERATOR structure pointer, DFDeviceObjectChildListRef_5a77ee51-8e18-4e86-afd0-8add561dab4d.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdfchildlist.h
+req.include-header: Wdf.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfchildlist.h
+apiname:
+-	WDF_CHILD_LIST_ITERATOR
+product: Windows
+targetos: Windows
+req.typenames: WDF_CHILD_LIST_ITERATOR, *PWDF_CHILD_LIST_ITERATOR
+req.product: Windows 10 or later.
 ---
 
 # _WDF_CHILD_LIST_ITERATOR structure

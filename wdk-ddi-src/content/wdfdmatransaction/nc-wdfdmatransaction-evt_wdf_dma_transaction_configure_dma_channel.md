@@ -1,42 +1,47 @@
 ---
-UID : NC:wdfdmatransaction.EVT_WDF_DMA_TRANSACTION_CONFIGURE_DMA_CHANNEL
-title : EVT_WDF_DMA_TRANSACTION_CONFIGURE_DMA_CHANNEL
-author : windows-driver-content
-description : A driver's EvtDmaTransactionConfigureDmaChannel event callback function configures the DMA adapter for a system-mode DMA enabler.
-old-location : wdf\evtdmatransactionconfiguredmachannel.htm
-old-project : wdf
-ms.assetid : 405D1D3F-FC01-4223-8E28-B3FD3F0516F7
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.evtdmatransactionconfiguredmachannel, EvtDmaTransactionConfigureDmaChannel callback function, EvtDmaTransactionConfigureDmaChannel, EVT_WDF_DMA_TRANSACTION_CONFIGURE_DMA_CHANNEL, EVT_WDF_DMA_TRANSACTION_CONFIGURE_DMA_CHANNEL, wdfdmatransaction/EvtDmaTransactionConfigureDmaChannel, kmdf.evtdmatransactionconfiguredmachannel
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdfdmatransaction.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : 
-req.kmdf-ver : 1.11
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : DISPATCH_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDF_DMA_SYSTEM_PROFILE_CONFIG, WDF_DMA_SYSTEM_PROFILE_CONFIG"
-req.product : Windows 10 or later.
+UID: NC:wdfdmatransaction.EVT_WDF_DMA_TRANSACTION_CONFIGURE_DMA_CHANNEL
+title: EVT_WDF_DMA_TRANSACTION_CONFIGURE_DMA_CHANNEL
+author: windows-driver-content
+description: A driver's EvtDmaTransactionConfigureDmaChannel event callback function configures the DMA adapter for a system-mode DMA enabler.
+old-location: wdf\evtdmatransactionconfiguredmachannel.htm
+old-project: wdf
+ms.assetid: 405D1D3F-FC01-4223-8E28-B3FD3F0516F7
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.evtdmatransactionconfiguredmachannel, EvtDmaTransactionConfigureDmaChannel callback function, EvtDmaTransactionConfigureDmaChannel, EVT_WDF_DMA_TRANSACTION_CONFIGURE_DMA_CHANNEL, EVT_WDF_DMA_TRANSACTION_CONFIGURE_DMA_CHANNEL, wdfdmatransaction/EvtDmaTransactionConfigureDmaChannel, kmdf.evtdmatransactionconfiguredmachannel
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdfdmatransaction.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: 
+req.kmdf-ver: 1.11
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: DISPATCH_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	WdfDmaTransaction.h
+apiname:
+-	EvtDmaTransactionConfigureDmaChannel
+product: Windows
+targetos: Windows
+req.typenames: "*PWDF_DMA_SYSTEM_PROFILE_CONFIG, WDF_DMA_SYSTEM_PROFILE_CONFIG"
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddndis._NDIS_IPSEC_OFFLOAD_V2
-title : "_NDIS_IPSEC_OFFLOAD_V2"
-author : windows-driver-content
-description : The NDIS_IPSEC_OFFLOAD_V2 structure provides information about Internet protocol security (IPsec) version 2 task offload capabilities in the NDIS_OFFLOAD structure.
-old-location : netvista\ndis_ipsec_offload_v2.htm
-old-project : netvista
-ms.assetid : 2319fe88-8f32-415c-bea1-4b7e723f6dbb
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : ntddndis/PNDIS_IPSEC_OFFLOAD_V2, PNDIS_IPSEC_OFFLOAD_V2, netvista.ndis_ipsec_offload_v2, NDIS_IPSEC_OFFLOAD_V2 structure [Network Drivers Starting with Windows Vista], ntddndis/NDIS_IPSEC_OFFLOAD_V2, PNDIS_IPSEC_OFFLOAD_V2 structure pointer [Network Drivers Starting with Windows Vista], *PNDIS_IPSEC_OFFLOAD_V2, task_offload_IPsecv2_ref_e1c132dd-5f77-48e0-98c5-d27b253ec182.xml, _NDIS_IPSEC_OFFLOAD_V2, NDIS_IPSEC_OFFLOAD_V2
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.1 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PNDIS_IPSEC_OFFLOAD_V2, NDIS_IPSEC_OFFLOAD_V2"
+UID: NS:ntddndis._NDIS_IPSEC_OFFLOAD_V2
+title: "_NDIS_IPSEC_OFFLOAD_V2"
+author: windows-driver-content
+description: The NDIS_IPSEC_OFFLOAD_V2 structure provides information about Internet protocol security (IPsec) version 2 task offload capabilities in the NDIS_OFFLOAD structure.
+old-location: netvista\ndis_ipsec_offload_v2.htm
+old-project: netvista
+ms.assetid: 2319fe88-8f32-415c-bea1-4b7e723f6dbb
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: ntddndis/PNDIS_IPSEC_OFFLOAD_V2, PNDIS_IPSEC_OFFLOAD_V2, netvista.ndis_ipsec_offload_v2, NDIS_IPSEC_OFFLOAD_V2 structure [Network Drivers Starting with Windows Vista], ntddndis/NDIS_IPSEC_OFFLOAD_V2, PNDIS_IPSEC_OFFLOAD_V2 structure pointer [Network Drivers Starting with Windows Vista], *PNDIS_IPSEC_OFFLOAD_V2, task_offload_IPsecv2_ref_e1c132dd-5f77-48e0-98c5-d27b253ec182.xml, _NDIS_IPSEC_OFFLOAD_V2, NDIS_IPSEC_OFFLOAD_V2
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.1 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddndis.h
+apiname:
+-	NDIS_IPSEC_OFFLOAD_V2
+product: Windows
+targetos: Windows
+req.typenames: "*PNDIS_IPSEC_OFFLOAD_V2, NDIS_IPSEC_OFFLOAD_V2"
 ---
 
 # _NDIS_IPSEC_OFFLOAD_V2 structure

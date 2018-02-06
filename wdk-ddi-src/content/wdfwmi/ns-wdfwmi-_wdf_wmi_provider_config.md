@@ -1,42 +1,47 @@
 ---
-UID : NS:wdfwmi._WDF_WMI_PROVIDER_CONFIG
-title : "_WDF_WMI_PROVIDER_CONFIG"
-author : windows-driver-content
-description : The WDF_WMI_PROVIDER_CONFIG structure contains configuration information for a driver's WMI data block.
-old-location : wdf\wdf_wmi_provider_config.htm
-old-project : wdf
-ms.assetid : 91b8e4e8-f144-4469-bedf-18f40be7e649
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : PWDF_WMI_PROVIDER_CONFIG structure pointer, DFWMIRef_6cf9c574-aa7a-4184-97c7-bd2b2134f5ac.xml, WDF_WMI_PROVIDER_CONFIG, kmdf.wdf_wmi_provider_config, WDF_WMI_PROVIDER_CONFIG structure, wdf.wdf_wmi_provider_config, _WDF_WMI_PROVIDER_CONFIG, PWDF_WMI_PROVIDER_CONFIG, wdfwmi/PWDF_WMI_PROVIDER_CONFIG, wdfwmi/WDF_WMI_PROVIDER_CONFIG, *PWDF_WMI_PROVIDER_CONFIG
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdfwmi.h
-req.include-header : Wdf.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDF_WMI_PROVIDER_CONFIG, WDF_WMI_PROVIDER_CONFIG"
-req.product : Windows 10 or later.
+UID: NS:wdfwmi._WDF_WMI_PROVIDER_CONFIG
+title: "_WDF_WMI_PROVIDER_CONFIG"
+author: windows-driver-content
+description: The WDF_WMI_PROVIDER_CONFIG structure contains configuration information for a driver's WMI data block.
+old-location: wdf\wdf_wmi_provider_config.htm
+old-project: wdf
+ms.assetid: 91b8e4e8-f144-4469-bedf-18f40be7e649
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: PWDF_WMI_PROVIDER_CONFIG structure pointer, DFWMIRef_6cf9c574-aa7a-4184-97c7-bd2b2134f5ac.xml, WDF_WMI_PROVIDER_CONFIG, kmdf.wdf_wmi_provider_config, WDF_WMI_PROVIDER_CONFIG structure, wdf.wdf_wmi_provider_config, _WDF_WMI_PROVIDER_CONFIG, PWDF_WMI_PROVIDER_CONFIG, wdfwmi/PWDF_WMI_PROVIDER_CONFIG, wdfwmi/WDF_WMI_PROVIDER_CONFIG, *PWDF_WMI_PROVIDER_CONFIG
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdfwmi.h
+req.include-header: Wdf.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfwmi.h
+apiname:
+-	WDF_WMI_PROVIDER_CONFIG
+product: Windows
+targetos: Windows
+req.typenames: "*PWDF_WMI_PROVIDER_CONFIG, WDF_WMI_PROVIDER_CONFIG"
+req.product: Windows 10 or later.
 ---
 
 # _WDF_WMI_PROVIDER_CONFIG structure

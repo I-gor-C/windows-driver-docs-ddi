@@ -1,42 +1,47 @@
 ---
-UID : NS:wlanihv._DOT11EXT_IHV_SECURITY_PROFILE
-title : "_DOT11EXT_IHV_SECURITY_PROFILE"
-author : windows-driver-content
-description : Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
-old-location : netvista\dot11ext_ihv_security_profile.htm
-old-project : netvista
-ms.assetid : cbfeace3-6492-4011-9ca8-c40ba4f47d22
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : DOT11EXT_IHV_SECURITY_PROFILE, wlanihv/PDOT11EXT_IHV_SECURITY_PROFILE, DOT11EXT_IHV_SECURITY_PROFILE structure [Network Drivers Starting with Windows Vista], PDOT11EXT_IHV_SECURITY_PROFILE, *PDOT11EXT_IHV_SECURITY_PROFILE, netvista.dot11ext_ihv_security_profile, Native_802.11_data_types_7761c811-0068-48d5-8b46-da550a008a9c.xml, wlanihv/DOT11EXT_IHV_SECURITY_PROFILE, _DOT11EXT_IHV_SECURITY_PROFILE, PDOT11EXT_IHV_SECURITY_PROFILE structure pointer [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wlanihv.h
-req.include-header : Wlanihv.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating   systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDOT11EXT_IHV_SECURITY_PROFILE, DOT11EXT_IHV_SECURITY_PROFILE"
-req.product : Windows 10 or later.
+UID: NS:wlanihv._DOT11EXT_IHV_SECURITY_PROFILE
+title: "_DOT11EXT_IHV_SECURITY_PROFILE"
+author: windows-driver-content
+description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+old-location: netvista\dot11ext_ihv_security_profile.htm
+old-project: netvista
+ms.assetid: cbfeace3-6492-4011-9ca8-c40ba4f47d22
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: DOT11EXT_IHV_SECURITY_PROFILE, wlanihv/PDOT11EXT_IHV_SECURITY_PROFILE, DOT11EXT_IHV_SECURITY_PROFILE structure [Network Drivers Starting with Windows Vista], PDOT11EXT_IHV_SECURITY_PROFILE, *PDOT11EXT_IHV_SECURITY_PROFILE, netvista.dot11ext_ihv_security_profile, Native_802.11_data_types_7761c811-0068-48d5-8b46-da550a008a9c.xml, wlanihv/DOT11EXT_IHV_SECURITY_PROFILE, _DOT11EXT_IHV_SECURITY_PROFILE, PDOT11EXT_IHV_SECURITY_PROFILE structure pointer [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wlanihv.h
+req.include-header: Wlanihv.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wlanihv.h
+apiname:
+-	DOT11EXT_IHV_SECURITY_PROFILE
+product: Windows
+targetos: Windows
+req.typenames: "*PDOT11EXT_IHV_SECURITY_PROFILE, DOT11EXT_IHV_SECURITY_PROFILE"
+req.product: Windows 10 or later.
 ---
 
 # _DOT11EXT_IHV_SECURITY_PROFILE structure

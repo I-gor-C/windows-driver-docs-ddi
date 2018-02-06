@@ -1,41 +1,46 @@
 ---
-UID : NS:hbaapi.HBA_LUID
-title : HBA_LUID
-author : windows-driver-content
-description : The HBA_LUID structure contains the identification descriptor from the device identification page of the vital products data returned by a SCSI INQUIRY command.
-old-location : storage\hba_luid.htm
-old-project : storage
-ms.assetid : af272e27-6cb4-4f87-9c46-512ac80fa310
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.hba_luid, HBA_LUID structure [Storage Devices], PHBA_LUID structure pointer [Storage Devices], *PHBA_LUID, HBA_LUID, hbaapi/HBA_LUID, PHBA_LUID, structs-Fibre_32d9473b-e356-41cc-9352-7a142fc3dcc7.xml, hbaapi/PHBA_LUID
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : hbaapi.h
-req.include-header : Hbaapi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PHBA_LUID, HBA_LUID"
+UID: NS:hbaapi.HBA_LUID
+title: HBA_LUID
+author: windows-driver-content
+description: The HBA_LUID structure contains the identification descriptor from the device identification page of the vital products data returned by a SCSI INQUIRY command.
+old-location: storage\hba_luid.htm
+old-project: storage
+ms.assetid: af272e27-6cb4-4f87-9c46-512ac80fa310
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.hba_luid, HBA_LUID structure [Storage Devices], PHBA_LUID structure pointer [Storage Devices], *PHBA_LUID, HBA_LUID, hbaapi/HBA_LUID, PHBA_LUID, structs-Fibre_32d9473b-e356-41cc-9352-7a142fc3dcc7.xml, hbaapi/PHBA_LUID
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: hbaapi.h
+req.include-header: Hbaapi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hbaapi.h
+apiname:
+-	HBA_LUID
+product: Windows
+targetos: Windows
+req.typenames: "*PHBA_LUID, HBA_LUID"
 ---
 
 # HBA_LUID structure

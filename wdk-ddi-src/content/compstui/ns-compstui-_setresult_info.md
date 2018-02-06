@@ -1,41 +1,46 @@
 ---
-UID : NS:compstui._SETRESULT_INFO
-title : "_SETRESULT_INFO"
-author : windows-driver-content
-description : The SETRESULT_INFO structure is used as an input parameter to an application's PFNPROPSHEETUI-typed callback function.
-old-location : print\setresult_info.htm
-old-project : print
-ms.assetid : 54701f88-1145-4a50-bf5a-36be1d88355d
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : SETRESULT_INFO structure [Print Devices], PSETRESULT_INFO, cpsuifnc_df5b07fc-1a38-4ae2-a994-2862d9791b10.xml, SETRESULT_INFO, *PSETRESULT_INFO, _SETRESULT_INFO, compstui/PSETRESULT_INFO, compstui/SETRESULT_INFO, print.setresult_info, PSETRESULT_INFO structure pointer [Print Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : compstui.h
-req.include-header : Compstui.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NS:compstui._SETRESULT_INFO
+title: "_SETRESULT_INFO"
+author: windows-driver-content
+description: The SETRESULT_INFO structure is used as an input parameter to an application's PFNPROPSHEETUI-typed callback function.
+old-location: print\setresult_info.htm
+old-project: print
+ms.assetid: 54701f88-1145-4a50-bf5a-36be1d88355d
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: SETRESULT_INFO structure [Print Devices], PSETRESULT_INFO, cpsuifnc_df5b07fc-1a38-4ae2-a994-2862d9791b10.xml, SETRESULT_INFO, *PSETRESULT_INFO, _SETRESULT_INFO, compstui/PSETRESULT_INFO, compstui/SETRESULT_INFO, print.setresult_info, PSETRESULT_INFO structure pointer [Print Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: compstui.h
+req.include-header: Compstui.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	compstui.h
+apiname:
+-	SETRESULT_INFO
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 # _SETRESULT_INFO structure

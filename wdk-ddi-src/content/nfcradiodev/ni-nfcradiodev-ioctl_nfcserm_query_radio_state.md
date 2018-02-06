@@ -1,41 +1,46 @@
 ---
-UID : NI:nfcradiodev.IOCTL_NFCSERM_QUERY_RADIO_STATE
-title : IOCTL_NFCSERM_QUERY_RADIO_STATE
-author : windows-driver-content
-description : This IOCTL is used by the SE radio management application or service to query the current radio power state of the proximity device.
-old-location : nfpdrivers\ioctl_nfcserm_query_radio_state.htm
-old-project : nfpdrivers
-ms.assetid : 625E3B0B-78B4-4C12-B1FD-555FAA5E0E19
-ms.author : windowsdriverdev
-ms.date : 12/18/2017
-ms.keywords : nfpdrivers.ioctl_nfcserm_query_radio_state, IOCTL_NFCSERM_QUERY_RADIO_STATE, _IOCTL_NFCSERM_QUERY_RADIO_STATE, IOCTL_NFCSERM_QUERY_RADIO_STATE control code [Near-Field Proximity Drivers], IOCTL_NFCSERM_QUERY_RADIO_STATE, nfcradiodev/IOCTL_NFCSERM_QUERY_RADIO_STATE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : nfcradiodev.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PNFC_CX_RF_DISCOVERY_CONFIG, NFC_CX_RF_DISCOVERY_CONFIG"
+UID: NI:nfcradiodev.IOCTL_NFCSERM_QUERY_RADIO_STATE
+title: IOCTL_NFCSERM_QUERY_RADIO_STATE
+author: windows-driver-content
+description: This IOCTL is used by the SE radio management application or service to query the current radio power state of the proximity device.
+old-location: nfpdrivers\ioctl_nfcserm_query_radio_state.htm
+old-project: nfpdrivers
+ms.assetid: 625E3B0B-78B4-4C12-B1FD-555FAA5E0E19
+ms.author: windowsdriverdev
+ms.date: 12/18/2017
+ms.keywords: nfpdrivers.ioctl_nfcserm_query_radio_state, IOCTL_NFCSERM_QUERY_RADIO_STATE, _IOCTL_NFCSERM_QUERY_RADIO_STATE, IOCTL_NFCSERM_QUERY_RADIO_STATE control code [Near-Field Proximity Drivers], IOCTL_NFCSERM_QUERY_RADIO_STATE, nfcradiodev/IOCTL_NFCSERM_QUERY_RADIO_STATE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: nfcradiodev.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	nfcradiodev.h
+apiname:
+-	IOCTL_NFCSERM_QUERY_RADIO_STATE
+product: Windows
+targetos: Windows
+req.typenames: "*PNFC_CX_RF_DISCOVERY_CONFIG, NFC_CX_RF_DISCOVERY_CONFIG"
 ---
 
 # IOCTL_NFCSERM_QUERY_RADIO_STATE IOCTL

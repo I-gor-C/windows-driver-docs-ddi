@@ -1,41 +1,46 @@
 ---
-UID : NF:ntddk.PshedSynchronizeExecution
-title : PshedSynchronizeExecution function
-author : windows-driver-content
-description : The PshedSynchronizeExecution function synchronizes the execution of a given function with the hardware error processing for an error source.
-old-location : whea\pshedsynchronizeexecution.htm
-old-project : whea
-ms.assetid : 299fd2fc-d7f4-4176-addd-d45d010b1056
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : PshedSynchronizeExecution, PshedSynchronizeExecution function [WHEA Drivers and Applications], ntddk/PshedSynchronizeExecution, whearef_7a6363f4-466d-498a-97c4-b5f7937005dd.xml, whea.pshedsynchronizeexecution
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Pshed.lib
-req.dll : Pshed.dll
-req.irql : "<= DIRQL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.PshedSynchronizeExecution
+title: PshedSynchronizeExecution function
+author: windows-driver-content
+description: The PshedSynchronizeExecution function synchronizes the execution of a given function with the hardware error processing for an error source.
+old-location: whea\pshedsynchronizeexecution.htm
+old-project: whea
+ms.assetid: 299fd2fc-d7f4-4176-addd-d45d010b1056
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: PshedSynchronizeExecution, PshedSynchronizeExecution function [WHEA Drivers and Applications], ntddk/PshedSynchronizeExecution, whearef_7a6363f4-466d-498a-97c4-b5f7937005dd.xml, whea.pshedsynchronizeexecution
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Pshed.lib
+req.dll: Pshed.dll
+req.irql: "<= DIRQL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Pshed.dll
+apiname:
+-	PshedSynchronizeExecution
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

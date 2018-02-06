@@ -1,42 +1,47 @@
 ---
-UID : NS:ucxusbdevice._UCX_USBDEVICE_EVENT_CALLBACKS
-title : "_UCX_USBDEVICE_EVENT_CALLBACKS"
-author : windows-driver-content
-description : This structure provides a list of UCX USB device event callback functions.
-old-location : buses\_ucx_usbdevice_event_callbacks.htm
-old-project : usbref
-ms.assetid : 7A320D48-E71C-40FE-A2EF-201CFCE55145
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : UCX_USBDEVICE_EVENT_CALLBACKS structure [Buses], buses._ucx_usbdevice_event_callbacks, UCX_USBDEVICE_EVENT_CALLBACKS, P_UCX_USBDEVICE_EVENT_CALLBACKS, ucxusbdevice/_UCX_USBDEVICE_EVENT_CALLBACKS, _UCX_USBDEVICE_EVENT_CALLBACKS, P_UCX_USBDEVICE_EVENT_CALLBACKS structure pointer [Buses], ucxusbdevice/P_UCX_USBDEVICE_EVENT_CALLBACKS, *PUCX_USBDEVICE_EVENT_CALLBACKS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ucxusbdevice.h
-req.include-header : Ucxclass.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : UCX_USBDEVICE_EVENT_CALLBACKS, *PUCX_USBDEVICE_EVENT_CALLBACKS
-req.product : Windows 10 or later.
+UID: NS:ucxusbdevice._UCX_USBDEVICE_EVENT_CALLBACKS
+title: "_UCX_USBDEVICE_EVENT_CALLBACKS"
+author: windows-driver-content
+description: This structure provides a list of UCX USB device event callback functions.
+old-location: buses\_ucx_usbdevice_event_callbacks.htm
+old-project: usbref
+ms.assetid: 7A320D48-E71C-40FE-A2EF-201CFCE55145
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: UCX_USBDEVICE_EVENT_CALLBACKS structure [Buses], buses._ucx_usbdevice_event_callbacks, UCX_USBDEVICE_EVENT_CALLBACKS, P_UCX_USBDEVICE_EVENT_CALLBACKS, ucxusbdevice/_UCX_USBDEVICE_EVENT_CALLBACKS, _UCX_USBDEVICE_EVENT_CALLBACKS, P_UCX_USBDEVICE_EVENT_CALLBACKS structure pointer [Buses], ucxusbdevice/P_UCX_USBDEVICE_EVENT_CALLBACKS, *PUCX_USBDEVICE_EVENT_CALLBACKS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ucxusbdevice.h
+req.include-header: Ucxclass.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ucxusbdevice.h
+apiname:
+-	UCX_USBDEVICE_EVENT_CALLBACKS
+product: Windows
+targetos: Windows
+req.typenames: UCX_USBDEVICE_EVENT_CALLBACKS, *PUCX_USBDEVICE_EVENT_CALLBACKS
+req.product: Windows 10 or later.
 ---
 
 # _UCX_USBDEVICE_EVENT_CALLBACKS structure

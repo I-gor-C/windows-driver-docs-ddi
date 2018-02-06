@@ -1,41 +1,47 @@
 ---
-UID : NF:ntstrsafe.RtlUnicodeStringCbCopyStringN
-title : RtlUnicodeStringCbCopyStringN function
-author : windows-driver-content
-description : The RtlUnicodeStringCbCopyStringN function copies a string into a UNICODE_STRING structure while limiting the size of the copied string.
-old-location : kernel\rtlunicodestringcbcopystringn.htm
-old-project : kernel
-ms.assetid : b36d01e5-179b-4adc-ace3-0664c93aedef
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ntstrsafe/RtlUnicodeStringCbCopyStringN, safestrings_4f11af32-212f-47f5-8585-ad5c04c51ec0.xml, RtlUnicodeStringCbCopyStringN function [Kernel-Mode Driver Architecture], kernel.rtlunicodestringcbcopystringn, RtlUnicodeStringCbCopyStringN
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntstrsafe.h
-req.include-header : Ntstrsafe.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows XP with Service Pack 1 (SP1) and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ntstrsafe.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : BATTERY_REPORTING_SCALE, *PBATTERY_REPORTING_SCALE
+UID: NF:ntstrsafe.RtlUnicodeStringCbCopyStringN
+title: RtlUnicodeStringCbCopyStringN function
+author: windows-driver-content
+description: The RtlUnicodeStringCbCopyStringN function copies a string into a UNICODE_STRING structure while limiting the size of the copied string.
+old-location: kernel\rtlunicodestringcbcopystringn.htm
+old-project: kernel
+ms.assetid: b36d01e5-179b-4adc-ace3-0664c93aedef
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ntstrsafe/RtlUnicodeStringCbCopyStringN, safestrings_4f11af32-212f-47f5-8585-ad5c04c51ec0.xml, RtlUnicodeStringCbCopyStringN function [Kernel-Mode Driver Architecture], kernel.rtlunicodestringcbcopystringn, RtlUnicodeStringCbCopyStringN
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntstrsafe.h
+req.include-header: Ntstrsafe.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows XP with Service Pack 1 (SP1) and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ntstrsafe.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ntstrsafe.lib
+-	Ntstrsafe.dll
+apiname:
+-	RtlUnicodeStringCbCopyStringN
+product: Windows
+targetos: Windows
+req.typenames: BATTERY_REPORTING_SCALE, *PBATTERY_REPORTING_SCALE
 ---
 
 

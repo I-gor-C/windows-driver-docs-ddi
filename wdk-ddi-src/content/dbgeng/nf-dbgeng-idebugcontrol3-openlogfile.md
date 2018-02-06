@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugControl3.OpenLogFile
-title : IDebugControl3::OpenLogFile method
-author : windows-driver-content
-description : The OpenLogFile method opens a log file that will receive output from the client objects.
-old-location : debugger\openlogfile.htm
-old-project : debugger
-ms.assetid : aba8839e-4c44-4c10-8b6f-9f5832c12166
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugControl::OpenLogFile, IDebugControl2 interface [Windows Debugging], OpenLogFile method, IDebugControl3 interface [Windows Debugging], OpenLogFile method, dbgeng/IDebugControl2::OpenLogFile, OpenLogFile method [Windows Debugging], IDebugControl interface, IDebugControl3::OpenLogFile, dbgeng/IDebugControl3::OpenLogFile, IDebugControl3, OpenLogFile, debugger.openlogfile, OpenLogFile method [Windows Debugging], IDebugControl3 interface, IDebugControl interface [Windows Debugging], OpenLogFile method, IDebugControl_984f684e-c1c0-4819-b8ac-02718581c6ad.xml, IDebugControl2::OpenLogFile, dbgeng/IDebugControl::OpenLogFile, OpenLogFile method [Windows Debugging], IDebugControl2 interface, OpenLogFile method [Windows Debugging]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl3.OpenLogFile
+title: IDebugControl3::OpenLogFile method
+author: windows-driver-content
+description: The OpenLogFile method opens a log file that will receive output from the client objects.
+old-location: debugger\openlogfile.htm
+old-project: debugger
+ms.assetid: aba8839e-4c44-4c10-8b6f-9f5832c12166
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugControl::OpenLogFile, IDebugControl2 interface [Windows Debugging], OpenLogFile method, IDebugControl3 interface [Windows Debugging], OpenLogFile method, dbgeng/IDebugControl2::OpenLogFile, OpenLogFile method [Windows Debugging], IDebugControl interface, IDebugControl3::OpenLogFile, dbgeng/IDebugControl3::OpenLogFile, IDebugControl3, OpenLogFile, debugger.openlogfile, OpenLogFile method [Windows Debugging], IDebugControl3 interface, IDebugControl interface [Windows Debugging], OpenLogFile method, IDebugControl_984f684e-c1c0-4819-b8ac-02718581c6ad.xml, IDebugControl2::OpenLogFile, dbgeng/IDebugControl::OpenLogFile, OpenLogFile method [Windows Debugging], IDebugControl2 interface, OpenLogFile method [Windows Debugging]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl.OpenLogFile
+-	IDebugControl2.OpenLogFile
+-	IDebugControl3.OpenLogFile
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

@@ -1,41 +1,47 @@
 ---
-UID : NF:mcd.ChangerClassFreePool
-title : ChangerClassFreePool function
-author : windows-driver-content
-description : The ChangerClassFreePool routine frees pool memory previously allocated using ChangerClassAllocatePool.
-old-location : storage\changerclassfreepool.htm
-old-project : storage
-ms.assetid : c20c39f9-ceee-47f0-849a-f8686fb05e6a
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : chgrclas_3f5fb8a4-3c85-4dde-80c9-f8e001b7b3bd.xml, storage.changerclassfreepool, mcd/ChangerClassFreePool, ChangerClassFreePool routine [Storage Devices], ChangerClassFreePool
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : mcd.h
-req.include-header : Mcd.h, Ntddchgr.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Mcd.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : LAMP_INTENSITY_WHITE
+UID: NF:mcd.ChangerClassFreePool
+title: ChangerClassFreePool function
+author: windows-driver-content
+description: The ChangerClassFreePool routine frees pool memory previously allocated using ChangerClassAllocatePool.
+old-location: storage\changerclassfreepool.htm
+old-project: storage
+ms.assetid: c20c39f9-ceee-47f0-849a-f8686fb05e6a
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: chgrclas_3f5fb8a4-3c85-4dde-80c9-f8e001b7b3bd.xml, storage.changerclassfreepool, mcd/ChangerClassFreePool, ChangerClassFreePool routine [Storage Devices], ChangerClassFreePool
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: mcd.h
+req.include-header: Mcd.h, Ntddchgr.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Mcd.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Mcd.lib
+-	Mcd.dll
+apiname:
+-	ChangerClassFreePool
+product: Windows
+targetos: Windows
+req.typenames: LAMP_INTENSITY_WHITE
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NC:video.PDRIVER_IO_PORT_UCHAR_STRING
-title : PDRIVER_IO_PORT_UCHAR_STRING
-author : windows-driver-content
-description : SvgaHwIoPortUcharString traps an I/O port to which a full-screen MS-DOS application in an x86-based machine is sending a sequence of UCHAR-sized data.
-old-location : display\svgahwioportucharstring.htm
-old-project : display
-ms.assetid : 7158cd6c-a662-46e8-bb7c-ea852797c39e
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.svgahwioportucharstring, SvgaHwIoPortUcharString callback function [Display Devices], SvgaHwIoPortUcharString, PDRIVER_IO_PORT_UCHAR_STRING, PDRIVER_IO_PORT_UCHAR_STRING, video/SvgaHwIoPortUcharString, VideoMiniport_Functions_4008d0c6-1185-46fd-acb1-60a8ddd3b45b.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VHF_CONFIG, *PVHF_CONFIG
-req.product : Windows 10 or later.
+UID: NC:video.PDRIVER_IO_PORT_UCHAR_STRING
+title: PDRIVER_IO_PORT_UCHAR_STRING
+author: windows-driver-content
+description: SvgaHwIoPortUcharString traps an I/O port to which a full-screen MS-DOS application in an x86-based machine is sending a sequence of UCHAR-sized data.
+old-location: display\svgahwioportucharstring.htm
+old-project: display
+ms.assetid: 7158cd6c-a662-46e8-bb7c-ea852797c39e
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.svgahwioportucharstring, SvgaHwIoPortUcharString callback function [Display Devices], SvgaHwIoPortUcharString, PDRIVER_IO_PORT_UCHAR_STRING, PDRIVER_IO_PORT_UCHAR_STRING, video/SvgaHwIoPortUcharString, VideoMiniport_Functions_4008d0c6-1185-46fd-acb1-60a8ddd3b45b.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	video.h
+apiname:
+-	SvgaHwIoPortUcharString
+product: Windows
+targetos: Windows
+req.typenames: VHF_CONFIG, *PVHF_CONFIG
+req.product: Windows 10 or later.
 ---
 
 

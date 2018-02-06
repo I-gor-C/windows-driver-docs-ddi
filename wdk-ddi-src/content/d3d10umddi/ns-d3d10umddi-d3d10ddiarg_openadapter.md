@@ -1,41 +1,46 @@
 ---
-UID : NS:d3d10umddi.D3D10DDIARG_OPENADAPTER
-title : D3D10DDIARG_OPENADAPTER
-author : windows-driver-content
-description : The D3D10DDIARG_OPENADAPTER structure describes the graphics adapter object.
-old-location : display\d3d10ddiarg_openadapter.htm
-old-project : display
-ms.assetid : ac1bf173-8c18-4bb4-9a85-79b59f27ee55
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3D10DDIARG_OPENADAPTER structure [Display Devices], UMDisplayDriver_Dx10param_Structs_3dd9df89-1d5e-4eab-bbe5-c6585543c093.xml, D3D10DDIARG_OPENADAPTER, display.d3d10ddiarg_openadapter, d3d10umddi/D3D10DDIARG_OPENADAPTER
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3D10DDIARG_OPENADAPTER
+UID: NS:d3d10umddi.D3D10DDIARG_OPENADAPTER
+title: D3D10DDIARG_OPENADAPTER
+author: windows-driver-content
+description: The D3D10DDIARG_OPENADAPTER structure describes the graphics adapter object.
+old-location: display\d3d10ddiarg_openadapter.htm
+old-project: display
+ms.assetid: ac1bf173-8c18-4bb4-9a85-79b59f27ee55
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3D10DDIARG_OPENADAPTER structure [Display Devices], UMDisplayDriver_Dx10param_Structs_3dd9df89-1d5e-4eab-bbe5-c6585543c093.xml, D3D10DDIARG_OPENADAPTER, display.d3d10ddiarg_openadapter, d3d10umddi/D3D10DDIARG_OPENADAPTER
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	D3D10DDIARG_OPENADAPTER
+product: Windows
+targetos: Windows
+req.typenames: D3D10DDIARG_OPENADAPTER
 ---
 
 # D3D10DDIARG_OPENADAPTER structure

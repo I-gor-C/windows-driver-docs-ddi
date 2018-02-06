@@ -1,41 +1,46 @@
 ---
-UID : NS:ks.KSSTREAMALLOCATOR_STATUS
-title : KSSTREAMALLOCATOR_STATUS
-author : windows-driver-content
-description : The KSSTREAMALLOCATOR_STATUS structure describes framing requirements and current number of allocated frames for a specific allocator.
-old-location : stream\ksstreamallocator_status.htm
-old-project : stream
-ms.assetid : 95ef6c1e-c2b7-49ca-9aaf-caeb2dca7c3a
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KSSTREAMALLOCATOR_STATUS structure [Streaming Media Devices], PKSSTREAMALLOCATOR_STATUS structure pointer [Streaming Media Devices], PKSSTREAMALLOCATOR_STATUS, ks/KSSTREAMALLOCATOR_STATUS, stream.ksstreamallocator_status, ks/PKSSTREAMALLOCATOR_STATUS, *PKSSTREAMALLOCATOR_STATUS, ks-struct_e9071d70-ee9c-4ef9-828e-81d9abf6cc68.xml, KSSTREAMALLOCATOR_STATUS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKSSTREAMALLOCATOR_STATUS, KSSTREAMALLOCATOR_STATUS"
+UID: NS:ks.KSSTREAMALLOCATOR_STATUS
+title: KSSTREAMALLOCATOR_STATUS
+author: windows-driver-content
+description: The KSSTREAMALLOCATOR_STATUS structure describes framing requirements and current number of allocated frames for a specific allocator.
+old-location: stream\ksstreamallocator_status.htm
+old-project: stream
+ms.assetid: 95ef6c1e-c2b7-49ca-9aaf-caeb2dca7c3a
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KSSTREAMALLOCATOR_STATUS structure [Streaming Media Devices], PKSSTREAMALLOCATOR_STATUS structure pointer [Streaming Media Devices], PKSSTREAMALLOCATOR_STATUS, ks/KSSTREAMALLOCATOR_STATUS, stream.ksstreamallocator_status, ks/PKSSTREAMALLOCATOR_STATUS, *PKSSTREAMALLOCATOR_STATUS, ks-struct_e9071d70-ee9c-4ef9-828e-81d9abf6cc68.xml, KSSTREAMALLOCATOR_STATUS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	KSSTREAMALLOCATOR_STATUS
+product: Windows
+targetos: Windows
+req.typenames: "*PKSSTREAMALLOCATOR_STATUS, KSSTREAMALLOCATOR_STATUS"
 ---
 
 # KSSTREAMALLOCATOR_STATUS structure

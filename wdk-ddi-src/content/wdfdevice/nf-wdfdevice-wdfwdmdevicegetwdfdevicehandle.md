@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfdevice.WdfWdmDeviceGetWdfDeviceHandle
-title : WdfWdmDeviceGetWdfDeviceHandle function
-author : windows-driver-content
-description : The WdfWdmDeviceGetWdfDeviceHandle method returns a handle to the framework device object that is associated with a specified WDM device object.
-old-location : wdf\wdfwdmdevicegetwdfdevicehandle.htm
-old-project : wdf
-ms.assetid : 8083af10-1b35-4600-b409-e895d35f7ccc
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.wdfwdmdevicegetwdfdevicehandle, PFN_WDFWDMDEVICEGETWDFDEVICEHANDLE, WdfWdmDeviceGetWdfDeviceHandle, WdfWdmDeviceGetWdfDeviceHandle method, wdfdevice/WdfWdmDeviceGetWdfDeviceHandle, kmdf.wdfwdmdevicegetwdfdevicehandle, DFDeviceObjectGeneralRef_0b05680a-5252-4932-802d-ee24a0092116.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfdevice.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_STATE_NOTIFICATION_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfdevice.WdfWdmDeviceGetWdfDeviceHandle
+title: WdfWdmDeviceGetWdfDeviceHandle function
+author: windows-driver-content
+description: The WdfWdmDeviceGetWdfDeviceHandle method returns a handle to the framework device object that is associated with a specified WDM device object.
+old-location: wdf\wdfwdmdevicegetwdfdevicehandle.htm
+old-project: wdf
+ms.assetid: 8083af10-1b35-4600-b409-e895d35f7ccc
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.wdfwdmdevicegetwdfdevicehandle, PFN_WDFWDMDEVICEGETWDFDEVICEHANDLE, WdfWdmDeviceGetWdfDeviceHandle, WdfWdmDeviceGetWdfDeviceHandle method, wdfdevice/WdfWdmDeviceGetWdfDeviceHandle, kmdf.wdfwdmdevicegetwdfdevicehandle, DFDeviceObjectGeneralRef_0b05680a-5252-4932-802d-ee24a0092116.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfdevice.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfWdmDeviceGetWdfDeviceHandle
+product: Windows
+targetos: Windows
+req.typenames: WDF_STATE_NOTIFICATION_TYPE
+req.product: Windows 10 or later.
 ---
 
 

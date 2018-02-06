@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugSymbols3.GetFunctionEntryByOffset
-title : IDebugSymbols3::GetFunctionEntryByOffset method
-author : windows-driver-content
-description : The GetFunctionEntryByOffset method returns the function entry information for a function.
-old-location : debugger\getfunctionentrybyoffset.htm
-old-project : debugger
-ms.assetid : 6b1fa9fc-f033-4d93-a2ec-f31159d6a69d
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : debugger.getfunctionentrybyoffset, GetFunctionEntryByOffset method [Windows Debugging], GetFunctionEntryByOffset, IDebugSymbols_2f48c855-76e5-421c-8890-9a96a0468783.xml, GetFunctionEntryByOffset method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols3::GetFunctionEntryByOffset, IDebugSymbols3, dbgeng/IDebugSymbols3::GetFunctionEntryByOffset, IDebugSymbols3 interface [Windows Debugging], GetFunctionEntryByOffset method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h, Winnt.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSymbols3.GetFunctionEntryByOffset
+title: IDebugSymbols3::GetFunctionEntryByOffset method
+author: windows-driver-content
+description: The GetFunctionEntryByOffset method returns the function entry information for a function.
+old-location: debugger\getfunctionentrybyoffset.htm
+old-project: debugger
+ms.assetid: 6b1fa9fc-f033-4d93-a2ec-f31159d6a69d
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: debugger.getfunctionentrybyoffset, GetFunctionEntryByOffset method [Windows Debugging], GetFunctionEntryByOffset, IDebugSymbols_2f48c855-76e5-421c-8890-9a96a0468783.xml, GetFunctionEntryByOffset method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols3::GetFunctionEntryByOffset, IDebugSymbols3, dbgeng/IDebugSymbols3::GetFunctionEntryByOffset, IDebugSymbols3 interface [Windows Debugging], GetFunctionEntryByOffset method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h, Winnt.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugSymbols3.GetFunctionEntryByOffset
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

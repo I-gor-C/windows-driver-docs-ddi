@@ -1,42 +1,47 @@
 ---
-UID : NF:wiautil.CWiauPropertyList.SetAccessSubType
-title : CWiauPropertyList::SetAccessSubType method
-author : windows-driver-content
-description : The CWiauPropertyList::SetAccessSubType method resets a property's access and subtype.
-old-location : image\cwiaupropertylist_setaccesssubtype.htm
-old-project : image
-ms.assetid : 207125d3-0833-4c5d-b66f-aa49c96a6a2d
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : CWiauPropertyList interface [Imaging Devices], SetAccessSubType method, CWiauPropertyList::SetAccessSubType, wiauFncs_ab4b792f-54f0-4efa-bb13-5b71d94e03e0.xml, SetAccessSubType method [Imaging Devices], CWiauPropertyList interface, wiautil/CWiauPropertyList::SetAccessSubType, CWiauPropertyList, SetAccessSubType method [Imaging Devices], image.cwiaupropertylist_setaccesssubtype, SetAccessSubType
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wiautil.h
-req.include-header : Wiautil.h, Wiamindr.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows XP and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wiautil.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SKIP_AMOUNT
-req.product : Windows 10 or later.
+UID: NF:wiautil.CWiauPropertyList.SetAccessSubType
+title: CWiauPropertyList::SetAccessSubType method
+author: windows-driver-content
+description: The CWiauPropertyList::SetAccessSubType method resets a property's access and subtype.
+old-location: image\cwiaupropertylist_setaccesssubtype.htm
+old-project: image
+ms.assetid: 207125d3-0833-4c5d-b66f-aa49c96a6a2d
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: CWiauPropertyList interface [Imaging Devices], SetAccessSubType method, CWiauPropertyList::SetAccessSubType, wiauFncs_ab4b792f-54f0-4efa-bb13-5b71d94e03e0.xml, SetAccessSubType method [Imaging Devices], CWiauPropertyList interface, wiautil/CWiauPropertyList::SetAccessSubType, CWiauPropertyList, SetAccessSubType method [Imaging Devices], image.cwiaupropertylist_setaccesssubtype, SetAccessSubType
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wiautil.h
+req.include-header: Wiautil.h, Wiamindr.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows XP and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wiautil.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Wiautil.h
+apiname:
+-	CWiauPropertyList.SetAccessSubType
+product: Windows
+targetos: Windows
+req.typenames: SKIP_AMOUNT
+req.product: Windows 10 or later.
 ---
 
 

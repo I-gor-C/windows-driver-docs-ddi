@@ -1,41 +1,46 @@
 ---
-UID : NS:ntifs._TOKEN_DEFAULT_DACL
-title : "_TOKEN_DEFAULT_DACL"
-author : windows-driver-content
-description : The TOKEN_DEFAULT_DACL structure specifies a discretionary access-control list (DACL).
-old-location : ifsk\token_default_dacl.htm
-old-project : ifsk
-ms.assetid : db4c23e1-4a49-4864-9eab-36abb2581e58
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : "*PTOKEN_DEFAULT_DACL, ifsk.token_default_dacl, PTOKEN_DEFAULT_DACL structure pointer [Installable File System Drivers], securitystructures_a79d9155-eff5-457f-8036-c3d718b36c4e.xml, ntifs/TOKEN_DEFAULT_DACL, TOKEN_DEFAULT_DACL structure [Installable File System Drivers], ntifs/PTOKEN_DEFAULT_DACL, _TOKEN_DEFAULT_DACL, TOKEN_DEFAULT_DACL, PTOKEN_DEFAULT_DACL"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PTOKEN_DEFAULT_DACL, TOKEN_DEFAULT_DACL"
+UID: NS:ntifs._TOKEN_DEFAULT_DACL
+title: "_TOKEN_DEFAULT_DACL"
+author: windows-driver-content
+description: The TOKEN_DEFAULT_DACL structure specifies a discretionary access-control list (DACL).
+old-location: ifsk\token_default_dacl.htm
+old-project: ifsk
+ms.assetid: db4c23e1-4a49-4864-9eab-36abb2581e58
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: "*PTOKEN_DEFAULT_DACL, ifsk.token_default_dacl, PTOKEN_DEFAULT_DACL structure pointer [Installable File System Drivers], securitystructures_a79d9155-eff5-457f-8036-c3d718b36c4e.xml, ntifs/TOKEN_DEFAULT_DACL, TOKEN_DEFAULT_DACL structure [Installable File System Drivers], ntifs/PTOKEN_DEFAULT_DACL, _TOKEN_DEFAULT_DACL, TOKEN_DEFAULT_DACL, PTOKEN_DEFAULT_DACL"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntifs.h
+apiname:
+-	TOKEN_DEFAULT_DACL
+product: Windows
+targetos: Windows
+req.typenames: "*PTOKEN_DEFAULT_DACL, TOKEN_DEFAULT_DACL"
 ---
 
 # _TOKEN_DEFAULT_DACL structure

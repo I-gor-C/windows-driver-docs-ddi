@@ -1,41 +1,46 @@
 ---
-UID : NI:parallel.IOCTL_INTERNAL_PARALLEL_CLEAR_CHIP_MODE
-title : IOCTL_INTERNAL_PARALLEL_CLEAR_CHIP_MODE
-author : windows-driver-content
-description : The IOCTL_INTERNAL_PARALLEL_CLEAR_CHIP_MODE request clears the operating mode of a parallel port.
-old-location : parports\ioctl_internal_parallel_clear_chip_mode.htm
-old-project : parports
-ms.assetid : bca93bca-96f6-46bb-ba24-9f39b5ad1ab4
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : parports.ioctl_internal_parallel_clear_chip_mode, IOCTL_INTERNAL_PARALLEL_CLEAR_CHIP_MODE control code [Parallel Ports], IOCTL_INTERNAL_PARALLEL_CLEAR_CHIP_MODE, parallel/IOCTL_INTERNAL_PARALLEL_CLEAR_CHIP_MODE, cisspd_912d58fe-f6f8-40c5-b4fe-e8237ea64c04.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : parallel.h
-req.include-header : Parallel.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RILGBATOKEN, *LPRILGBATOKEN
+UID: NI:parallel.IOCTL_INTERNAL_PARALLEL_CLEAR_CHIP_MODE
+title: IOCTL_INTERNAL_PARALLEL_CLEAR_CHIP_MODE
+author: windows-driver-content
+description: The IOCTL_INTERNAL_PARALLEL_CLEAR_CHIP_MODE request clears the operating mode of a parallel port.
+old-location: parports\ioctl_internal_parallel_clear_chip_mode.htm
+old-project: parports
+ms.assetid: bca93bca-96f6-46bb-ba24-9f39b5ad1ab4
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: parports.ioctl_internal_parallel_clear_chip_mode, IOCTL_INTERNAL_PARALLEL_CLEAR_CHIP_MODE control code [Parallel Ports], IOCTL_INTERNAL_PARALLEL_CLEAR_CHIP_MODE, parallel/IOCTL_INTERNAL_PARALLEL_CLEAR_CHIP_MODE, cisspd_912d58fe-f6f8-40c5-b4fe-e8237ea64c04.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: parallel.h
+req.include-header: Parallel.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	parallel.h
+apiname:
+-	IOCTL_INTERNAL_PARALLEL_CLEAR_CHIP_MODE
+product: Windows
+targetos: Windows
+req.typenames: RILGBATOKEN, *LPRILGBATOKEN
 ---
 
 # IOCTL_INTERNAL_PARALLEL_CLEAR_CHIP_MODE IOCTL

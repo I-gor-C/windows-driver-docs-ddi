@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._DXVADDI_VIDEOSAMPLE
-title : "_DXVADDI_VIDEOSAMPLE"
-author : windows-driver-content
-description : The DXVADDI_VIDEOSAMPLE structure describes the format of a video sample that is used in a video processing operation.
-old-location : display\dxvaddi_videosample.htm
-old-project : display
-ms.assetid : 20495325-8ef6-4e6d-8f86-edc12537d46f
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3dumddi/DXVADDI_VIDEOSAMPLE, display.dxvaddi_videosample, DXVADDI_VIDEOSAMPLE structure [Display Devices], _DXVADDI_VIDEOSAMPLE, DXVA2_Structs_c3a4d002-09dc-4653-a965-9c4f587529d4.xml, DXVADDI_VIDEOSAMPLE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXVADDI_VIDEOSAMPLE
+UID: NS:d3dumddi._DXVADDI_VIDEOSAMPLE
+title: "_DXVADDI_VIDEOSAMPLE"
+author: windows-driver-content
+description: The DXVADDI_VIDEOSAMPLE structure describes the format of a video sample that is used in a video processing operation.
+old-location: display\dxvaddi_videosample.htm
+old-project: display
+ms.assetid: 20495325-8ef6-4e6d-8f86-edc12537d46f
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3dumddi/DXVADDI_VIDEOSAMPLE, display.dxvaddi_videosample, DXVADDI_VIDEOSAMPLE structure [Display Devices], _DXVADDI_VIDEOSAMPLE, DXVA2_Structs_c3a4d002-09dc-4653-a965-9c4f587529d4.xml, DXVADDI_VIDEOSAMPLE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	DXVADDI_VIDEOSAMPLE
+product: Windows
+targetos: Windows
+req.typenames: DXVADDI_VIDEOSAMPLE
 ---
 
 # _DXVADDI_VIDEOSAMPLE structure

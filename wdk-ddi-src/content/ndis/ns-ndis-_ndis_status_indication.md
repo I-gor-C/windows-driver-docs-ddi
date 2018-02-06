@@ -1,41 +1,46 @@
 ---
-UID : NS:ndis._NDIS_STATUS_INDICATION
-title : "_NDIS_STATUS_INDICATION"
-author : windows-driver-content
-description : NDIS and underlying drivers use the NDIS_STATUS_INDICATION structure to provide status indications to overlying protocol drivers.
-old-location : netvista\ndis_status_indication.htm
-old-project : netvista
-ms.assetid : bfab907d-a90d-46a0-bd51-6f2b418e3f39
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NDIS_STATUS_INDICATION, NDIS_STATUS_INDICATION structure [Network Drivers Starting with Windows Vista], netvista.ndis_status_indication, ndis/NDIS_STATUS_INDICATION, ndis/PNDIS_STATUS_INDICATION, _NDIS_STATUS_INDICATION, PNDIS_STATUS_INDICATION, ndis_status_ref_6c475f32-573d-4e1b-ae74-bd9e9b8943db.xml, PNDIS_STATUS_INDICATION structure pointer [Network Drivers Starting with Windows Vista], *PNDIS_STATUS_INDICATION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : See Remarks section
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_STATUS_INDICATION, *PNDIS_STATUS_INDICATION
+UID: NS:ndis._NDIS_STATUS_INDICATION
+title: "_NDIS_STATUS_INDICATION"
+author: windows-driver-content
+description: NDIS and underlying drivers use the NDIS_STATUS_INDICATION structure to provide status indications to overlying protocol drivers.
+old-location: netvista\ndis_status_indication.htm
+old-project: netvista
+ms.assetid: bfab907d-a90d-46a0-bd51-6f2b418e3f39
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NDIS_STATUS_INDICATION, NDIS_STATUS_INDICATION structure [Network Drivers Starting with Windows Vista], netvista.ndis_status_indication, ndis/NDIS_STATUS_INDICATION, ndis/PNDIS_STATUS_INDICATION, _NDIS_STATUS_INDICATION, PNDIS_STATUS_INDICATION, ndis_status_ref_6c475f32-573d-4e1b-ae74-bd9e9b8943db.xml, PNDIS_STATUS_INDICATION structure pointer [Network Drivers Starting with Windows Vista], *PNDIS_STATUS_INDICATION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: See Remarks section
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndis.h
+apiname:
+-	NDIS_STATUS_INDICATION
+product: Windows
+targetos: Windows
+req.typenames: NDIS_STATUS_INDICATION, *PNDIS_STATUS_INDICATION
 ---
 
 # _NDIS_STATUS_INDICATION structure

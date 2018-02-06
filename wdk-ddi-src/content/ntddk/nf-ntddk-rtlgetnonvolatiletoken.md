@@ -1,41 +1,46 @@
 ---
-UID : NF:ntddk.RtlGetNonVolatileToken
-title : RtlGetNonVolatileToken function
-author : windows-driver-content
-description : The routine, RtlGetNonVolatileToken, gets various properties about a non-volatile memory buffer and stores them in the variable NvToken.
-old-location : ifsk\rtlgetnonvolatiletoken.htm
-old-project : ifsk
-ms.assetid : A9E866D4-C47F-4926-A838-EDB739CF1185
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.rtlgetnonvolatiletoken, RtlGetNonVolatileToken, ntddk/RtlGetNonVolatileToken, RtlGetNonVolatileToken routine [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntddk.h
-req.include-header : Winnt.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10, version 1703
-req.target-min-winversvr : None supported
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.RtlGetNonVolatileToken
+title: RtlGetNonVolatileToken function
+author: windows-driver-content
+description: The routine, RtlGetNonVolatileToken, gets various properties about a non-volatile memory buffer and stores them in the variable NvToken.
+old-location: ifsk\rtlgetnonvolatiletoken.htm
+old-project: ifsk
+ms.assetid: A9E866D4-C47F-4926-A838-EDB739CF1185
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.rtlgetnonvolatiletoken, RtlGetNonVolatileToken, ntddk/RtlGetNonVolatileToken, RtlGetNonVolatileToken routine [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntddk.h
+req.include-header: Winnt.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10, version 1703
+req.target-min-winversvr: None supported
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddk.h
+apiname:
+-	RtlGetNonVolatileToken
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

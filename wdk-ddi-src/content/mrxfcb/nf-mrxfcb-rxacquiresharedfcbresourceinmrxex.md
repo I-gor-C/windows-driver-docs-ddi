@@ -1,41 +1,46 @@
 ---
-UID : NF:mrxfcb.RxAcquireSharedFcbResourceInMRxEx
-title : RxAcquireSharedFcbResourceInMRxEx function
-author : windows-driver-content
-description : RxAcquireSharedFcbResourceInMRxEx acquires the FCB resource for a network mini-redirector driver in shared mode.
-old-location : ifsk\rxacquiresharedfcbresourceinmrxex.htm
-old-project : ifsk
-ms.assetid : bf8390db-7e42-4860-8cf6-df3459f16cea
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : mrxfcb/RxAcquireSharedFcbResourceInMRxEx, ifsk.rxacquiresharedfcbresourceinmrxex, RxAcquireSharedFcbResourceInMRxEx routine [Installable File System Drivers], rxref_2b8fc5d6-96e5-45a0-897a-f55964e6cc8a.xml, RxAcquireSharedFcbResourceInMRxEx
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : mrxfcb.h
-req.include-header : Mrxfcb.h
-req.target-type : Desktop
-req.target-min-winverclnt : The RxAcquireSharedFcbResourceInMRxEx routine is only available on Windows Server 2003 Service Pack 1 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SetDSMCounters_IN, *PSetDSMCounters_IN
+UID: NF:mrxfcb.RxAcquireSharedFcbResourceInMRxEx
+title: RxAcquireSharedFcbResourceInMRxEx function
+author: windows-driver-content
+description: RxAcquireSharedFcbResourceInMRxEx acquires the FCB resource for a network mini-redirector driver in shared mode.
+old-location: ifsk\rxacquiresharedfcbresourceinmrxex.htm
+old-project: ifsk
+ms.assetid: bf8390db-7e42-4860-8cf6-df3459f16cea
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: mrxfcb/RxAcquireSharedFcbResourceInMRxEx, ifsk.rxacquiresharedfcbresourceinmrxex, RxAcquireSharedFcbResourceInMRxEx routine [Installable File System Drivers], rxref_2b8fc5d6-96e5-45a0-897a-f55964e6cc8a.xml, RxAcquireSharedFcbResourceInMRxEx
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: mrxfcb.h
+req.include-header: Mrxfcb.h
+req.target-type: Desktop
+req.target-min-winverclnt: The RxAcquireSharedFcbResourceInMRxEx routine is only available on Windows Server 2003 Service Pack 1 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	mrxfcb.h
+apiname:
+-	RxAcquireSharedFcbResourceInMRxEx
+product: Windows
+targetos: Windows
+req.typenames: SetDSMCounters_IN, *PSetDSMCounters_IN
 ---
 
 

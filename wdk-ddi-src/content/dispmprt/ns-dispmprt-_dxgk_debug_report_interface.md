@@ -1,41 +1,46 @@
 ---
-UID : NS:dispmprt._DXGK_DEBUG_REPORT_INTERFACE
-title : "_DXGK_DEBUG_REPORT_INTERFACE"
-author : windows-driver-content
-description : The DXGK_DEBUG_REPORT_INTERFACE structure contains pointers to functions in the Debug Report interface, which is implemented by the display port driver.
-old-location : display\dxgk_debug_report_interface.htm
-old-project : display
-ms.assetid : fb1bd1dd-feab-4aa4-8b4f-932f0d5ec4ab
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : dispmprt/DXGK_DEBUG_REPORT_INTERFACE, display.dxgk_debug_report_interface, DXGK_DEBUG_REPORT_INTERFACE structure [Display Devices], dispmprt/PDXGK_DEBUG_REPORT_INTERFACE, DmStructs_b6b70526-c889-47d8-bfb7-7f961cbcef38.xml, PDXGK_DEBUG_REPORT_INTERFACE structure pointer [Display Devices], *PDXGK_DEBUG_REPORT_INTERFACE, _DXGK_DEBUG_REPORT_INTERFACE, PDXGK_DEBUG_REPORT_INTERFACE, DXGK_DEBUG_REPORT_INTERFACE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : dispmprt.h
-req.include-header : Dispmprt.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_DEBUG_REPORT_INTERFACE, *PDXGK_DEBUG_REPORT_INTERFACE
+UID: NS:dispmprt._DXGK_DEBUG_REPORT_INTERFACE
+title: "_DXGK_DEBUG_REPORT_INTERFACE"
+author: windows-driver-content
+description: The DXGK_DEBUG_REPORT_INTERFACE structure contains pointers to functions in the Debug Report interface, which is implemented by the display port driver.
+old-location: display\dxgk_debug_report_interface.htm
+old-project: display
+ms.assetid: fb1bd1dd-feab-4aa4-8b4f-932f0d5ec4ab
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: dispmprt/DXGK_DEBUG_REPORT_INTERFACE, display.dxgk_debug_report_interface, DXGK_DEBUG_REPORT_INTERFACE structure [Display Devices], dispmprt/PDXGK_DEBUG_REPORT_INTERFACE, DmStructs_b6b70526-c889-47d8-bfb7-7f961cbcef38.xml, PDXGK_DEBUG_REPORT_INTERFACE structure pointer [Display Devices], *PDXGK_DEBUG_REPORT_INTERFACE, _DXGK_DEBUG_REPORT_INTERFACE, PDXGK_DEBUG_REPORT_INTERFACE, DXGK_DEBUG_REPORT_INTERFACE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: dispmprt.h
+req.include-header: Dispmprt.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	dispmprt.h
+apiname:
+-	DXGK_DEBUG_REPORT_INTERFACE
+product: Windows
+targetos: Windows
+req.typenames: DXGK_DEBUG_REPORT_INTERFACE, *PDXGK_DEBUG_REPORT_INTERFACE
 ---
 
 # _DXGK_DEBUG_REPORT_INTERFACE structure

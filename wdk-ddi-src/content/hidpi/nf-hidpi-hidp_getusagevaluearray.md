@@ -1,41 +1,47 @@
 ---
-UID : NF:hidpi.HidP_GetUsageValueArray
-title : HidP_GetUsageValueArray function
-author : windows-driver-content
-description : The HidP_GetUsageValueArray routine extracts the data associated with a HID control usage value array from a HID report.
-old-location : hid\hidp_getusagevaluearray.htm
-old-project : hid
-ms.assetid : afc92692-c665-44a7-b268-d29adc42f5bd
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : HidP_GetUsageValueArray routine [Human Input Devices], hidpi/HidP_GetUsageValueArray, HidP_GetUsageValueArray, hid.hidp_getusagevaluearray, hidfunc_4e641f34-d016-4b2f-b472-069334d3e461.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : hidpi.h
-req.include-header : Hidpi.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 2000 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Hidparse.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HIDP_REPORT_TYPE
+UID: NF:hidpi.HidP_GetUsageValueArray
+title: HidP_GetUsageValueArray function
+author: windows-driver-content
+description: The HidP_GetUsageValueArray routine extracts the data associated with a HID control usage value array from a HID report.
+old-location: hid\hidp_getusagevaluearray.htm
+old-project: hid
+ms.assetid: afc92692-c665-44a7-b268-d29adc42f5bd
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: HidP_GetUsageValueArray routine [Human Input Devices], hidpi/HidP_GetUsageValueArray, HidP_GetUsageValueArray, hid.hidp_getusagevaluearray, hidfunc_4e641f34-d016-4b2f-b472-069334d3e461.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: hidpi.h
+req.include-header: Hidpi.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 2000 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Hidparse.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Hidparse.lib
+-	Hidparse.dll
+apiname:
+-	HidP_GetUsageValueArray
+product: Windows
+targetos: Windows
+req.typenames: HIDP_REPORT_TYPE
 ---
 
 

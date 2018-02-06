@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmdt._DXGKMDT_OPM_REQUESTED_INFORMATION
-title : "_DXGKMDT_OPM_REQUESTED_INFORMATION"
-author : windows-driver-content
-description : The DXGKMDT_OPM_REQUESTED_INFORMATION structure contains information that was requested in a call to the DxgkDdiOPMGetInformation or DxgkDdiOPMGetCOPPCompatibleInformation function.
-old-location : display\dxgkmdt_opm_requested_information.htm
-old-project : display
-ms.assetid : c483786a-be8c-4ae3-a48c-45064ce81939
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : "*PDXGKMDT_OPM_REQUESTED_INFORMATION, display.dxgkmdt_opm_requested_information, DXGKMDT_OPM_REQUESTED_INFORMATION, d3dkmdt/PDXGKMDT_OPM_REQUESTED_INFORMATION, DmStructs_671b07eb-3d44-4c06-863a-8bd74f10ee4b.xml, DXGKMDT_OPM_REQUESTED_INFORMATION structure [Display Devices], PDXGKMDT_OPM_REQUESTED_INFORMATION, _DXGKMDT_OPM_REQUESTED_INFORMATION, PDXGKMDT_OPM_REQUESTED_INFORMATION structure pointer [Display Devices], d3dkmdt/DXGKMDT_OPM_REQUESTED_INFORMATION"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmdt.h
-req.include-header : D3dkmdt.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGKMDT_OPM_REQUESTED_INFORMATION, *PDXGKMDT_OPM_REQUESTED_INFORMATION
+UID: NS:d3dkmdt._DXGKMDT_OPM_REQUESTED_INFORMATION
+title: "_DXGKMDT_OPM_REQUESTED_INFORMATION"
+author: windows-driver-content
+description: The DXGKMDT_OPM_REQUESTED_INFORMATION structure contains information that was requested in a call to the DxgkDdiOPMGetInformation or DxgkDdiOPMGetCOPPCompatibleInformation function.
+old-location: display\dxgkmdt_opm_requested_information.htm
+old-project: display
+ms.assetid: c483786a-be8c-4ae3-a48c-45064ce81939
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: "*PDXGKMDT_OPM_REQUESTED_INFORMATION, display.dxgkmdt_opm_requested_information, DXGKMDT_OPM_REQUESTED_INFORMATION, d3dkmdt/PDXGKMDT_OPM_REQUESTED_INFORMATION, DmStructs_671b07eb-3d44-4c06-863a-8bd74f10ee4b.xml, DXGKMDT_OPM_REQUESTED_INFORMATION structure [Display Devices], PDXGKMDT_OPM_REQUESTED_INFORMATION, _DXGKMDT_OPM_REQUESTED_INFORMATION, PDXGKMDT_OPM_REQUESTED_INFORMATION structure pointer [Display Devices], d3dkmdt/DXGKMDT_OPM_REQUESTED_INFORMATION"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmdt.h
+req.include-header: D3dkmdt.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmdt.h
+apiname:
+-	DXGKMDT_OPM_REQUESTED_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: DXGKMDT_OPM_REQUESTED_INFORMATION, *PDXGKMDT_OPM_REQUESTED_INFORMATION
 ---
 
 # _DXGKMDT_OPM_REQUESTED_INFORMATION structure

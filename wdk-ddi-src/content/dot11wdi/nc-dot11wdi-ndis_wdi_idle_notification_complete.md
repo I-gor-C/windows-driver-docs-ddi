@@ -1,41 +1,46 @@
 ---
-UID : NC:dot11wdi.NDIS_WDI_IDLE_NOTIFICATION_COMPLETE
-title : NDIS_WDI_IDLE_NOTIFICATION_COMPLETE
-author : windows-driver-content
-description : Miniport drivers call NdisWdiIdleNotificationComplete callback function to complete a pending idle notification for an NDIS selective suspend operation. NDIS begins the operation when it calls the driver's MiniportWdiIdleNotification handler function.
-old-location : netvista\ndiswdiidlenotificationcomplete.htm
-old-project : netvista
-ms.assetid : 22622545-F92E-4FEE-8F5D-64EC792490C7
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.ndiswdiidlenotificationcomplete, NdisWdiIdleNotificationComplete callback function [Network Drivers Starting with Windows Vista], NdisWdiIdleNotificationComplete, NDIS_WDI_IDLE_NOTIFICATION_COMPLETE, NDIS_WDI_IDLE_NOTIFICATION_COMPLETE, dot11wdi/NdisWdiIdleNotificationComplete
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : dot11wdi.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SYNTH_STATS, *PSYNTH_STATS
+UID: NC:dot11wdi.NDIS_WDI_IDLE_NOTIFICATION_COMPLETE
+title: NDIS_WDI_IDLE_NOTIFICATION_COMPLETE
+author: windows-driver-content
+description: Miniport drivers call NdisWdiIdleNotificationComplete callback function to complete a pending idle notification for an NDIS selective suspend operation. NDIS begins the operation when it calls the driver's MiniportWdiIdleNotification handler function.
+old-location: netvista\ndiswdiidlenotificationcomplete.htm
+old-project: netvista
+ms.assetid: 22622545-F92E-4FEE-8F5D-64EC792490C7
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.ndiswdiidlenotificationcomplete, NdisWdiIdleNotificationComplete callback function [Network Drivers Starting with Windows Vista], NdisWdiIdleNotificationComplete, NDIS_WDI_IDLE_NOTIFICATION_COMPLETE, NDIS_WDI_IDLE_NOTIFICATION_COMPLETE, dot11wdi/NdisWdiIdleNotificationComplete
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: dot11wdi.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	dot11wdi.h
+apiname:
+-	NdisWdiIdleNotificationComplete
+product: Windows
+targetos: Windows
+req.typenames: SYNTH_STATS, *PSYNTH_STATS
 ---
 
 

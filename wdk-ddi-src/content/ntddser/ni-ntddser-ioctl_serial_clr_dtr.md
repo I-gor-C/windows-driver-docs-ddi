@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddser.IOCTL_SERIAL_CLR_DTR
-title : IOCTL_SERIAL_CLR_DTR
-author : windows-driver-content
-description : The IOCTL_SERIAL_CLR_DTR request clears the data terminal ready (DTR) control signal.
-old-location : serports\ioctl_serial_clr_dtr.htm
-old-project : serports
-ms.assetid : e537c39a-4f79-4854-91df-7a08346c17ea
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : serports.ioctl_serial_clr_dtr, IOCTL_SERIAL_CLR_DTR control code [Serial Ports], IOCTL_SERIAL_CLR_DTR, ntddser/IOCTL_SERIAL_CLR_DTR, serref_37ec12d3-15ad-4a49-90c7-766ffb3943f7.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddser.h
-req.include-header : Ntddser.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SD_REQUEST_FUNCTION
+UID: NI:ntddser.IOCTL_SERIAL_CLR_DTR
+title: IOCTL_SERIAL_CLR_DTR
+author: windows-driver-content
+description: The IOCTL_SERIAL_CLR_DTR request clears the data terminal ready (DTR) control signal.
+old-location: serports\ioctl_serial_clr_dtr.htm
+old-project: serports
+ms.assetid: e537c39a-4f79-4854-91df-7a08346c17ea
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: serports.ioctl_serial_clr_dtr, IOCTL_SERIAL_CLR_DTR control code [Serial Ports], IOCTL_SERIAL_CLR_DTR, ntddser/IOCTL_SERIAL_CLR_DTR, serref_37ec12d3-15ad-4a49-90c7-766ffb3943f7.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddser.h
+req.include-header: Ntddser.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddser.h
+apiname:
+-	IOCTL_SERIAL_CLR_DTR
+product: Windows
+targetos: Windows
+req.typenames: SD_REQUEST_FUNCTION
 ---
 
 # IOCTL_SERIAL_CLR_DTR IOCTL

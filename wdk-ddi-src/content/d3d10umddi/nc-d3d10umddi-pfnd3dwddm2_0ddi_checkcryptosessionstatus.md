@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3DWDDM2_0DDI_CHECKCRYPTOSESSIONSTATUS
-title : PFND3DWDDM2_0DDI_CHECKCRYPTOSESSIONSTATUS
-author : windows-driver-content
-description : CheckCryptoSessionStatus returns the status of a CryptoSession object.
-old-location : display\checkcryptosessionstatus.htm
-old-project : display
-ms.assetid : C7BA5CE0-F89E-4C4B-9976-B9CB6BF8DA81
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.checkcryptosessionstatus, CheckCryptoSessionStatus callback function [Display Devices], CheckCryptoSessionStatus, d3d10umddi/CheckCryptoSessionStatus
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3DWDDM2_0DDI_CHECKCRYPTOSESSIONSTATUS
+title: PFND3DWDDM2_0DDI_CHECKCRYPTOSESSIONSTATUS
+author: windows-driver-content
+description: CheckCryptoSessionStatus returns the status of a CryptoSession object.
+old-location: display\checkcryptosessionstatus.htm
+old-project: display
+ms.assetid: C7BA5CE0-F89E-4C4B-9976-B9CB6BF8DA81
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.checkcryptosessionstatus, CheckCryptoSessionStatus callback function [Display Devices], CheckCryptoSessionStatus, d3d10umddi/CheckCryptoSessionStatus
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	D3d10umddi.h
+apiname:
+-	CheckCryptoSessionStatus
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:iscsimgt._ISCSI_SessionStaticInfo
-title : "_ISCSI_SessionStaticInfo"
-author : windows-driver-content
-description : The ISCSI_SessionStaticInfo structure provides information about the characteristics of an iSCSI session.
-old-location : storage\iscsi_sessionstaticinfo.htm
-old-project : storage
-ms.assetid : c652268f-4a31-4ec1-a668-8700cb7f4e1b
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : iscsimgt/ISCSI_SessionStaticInfo, ISCSI_SessionStaticInfo, structs-iSCSI_94ec0954-b409-4acf-8935-7c8dc6b0d095.xml, _ISCSI_SessionStaticInfo, storage.iscsi_sessionstaticinfo, ISCSI_SessionStaticInfo structure [Storage Devices], *PISCSI_SessionStaticInfo, iscsimgt/PISCSI_SessionStaticInfo, PISCSI_SessionStaticInfo, PISCSI_SessionStaticInfo structure pointer [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : iscsimgt.h
-req.include-header : Iscsimgt.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PISCSI_SessionStaticInfo, ISCSI_SessionStaticInfo"
+UID: NS:iscsimgt._ISCSI_SessionStaticInfo
+title: "_ISCSI_SessionStaticInfo"
+author: windows-driver-content
+description: The ISCSI_SessionStaticInfo structure provides information about the characteristics of an iSCSI session.
+old-location: storage\iscsi_sessionstaticinfo.htm
+old-project: storage
+ms.assetid: c652268f-4a31-4ec1-a668-8700cb7f4e1b
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: iscsimgt/ISCSI_SessionStaticInfo, ISCSI_SessionStaticInfo, structs-iSCSI_94ec0954-b409-4acf-8935-7c8dc6b0d095.xml, _ISCSI_SessionStaticInfo, storage.iscsi_sessionstaticinfo, ISCSI_SessionStaticInfo structure [Storage Devices], *PISCSI_SessionStaticInfo, iscsimgt/PISCSI_SessionStaticInfo, PISCSI_SessionStaticInfo, PISCSI_SessionStaticInfo structure pointer [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: iscsimgt.h
+req.include-header: Iscsimgt.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	iscsimgt.h
+apiname:
+-	ISCSI_SessionStaticInfo
+product: Windows
+targetos: Windows
+req.typenames: "*PISCSI_SessionStaticInfo, ISCSI_SessionStaticInfo"
 ---
 
 # _ISCSI_SessionStaticInfo structure

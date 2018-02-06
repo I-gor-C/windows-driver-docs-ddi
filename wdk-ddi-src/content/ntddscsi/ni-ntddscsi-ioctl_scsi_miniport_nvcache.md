@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddscsi.IOCTL_SCSI_MINIPORT_NVCACHE
-title : IOCTL_SCSI_MINIPORT_NVCACHE
-author : windows-driver-content
-description : The NV Cache Management operations that are defined here can be invoked by user-mode application code running with administrator privileges, using DeviceIoControl and the IOCTL_SCSI_MINIPORT control code.
-old-location : storage\ioctl_scsi_miniport_nvcache.htm
-old-project : storage
-ms.assetid : 6331e850-34a7-4d03-a87b-527f3e38f735
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_scsi_miniport_nvcache, IOCTL_SCSI_MINIPORT_NVCACHE control code [Storage Devices], IOCTL_SCSI_MINIPORT_NVCACHE, ntddscsi/IOCTL_SCSI_MINIPORT_NVCACHE, k307_0a3946a8-c611-4499-b62c-25f920eeec1e.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddscsi.h
-req.include-header : Ntddscsi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : MP_STORAGE_DIAGNOSTIC_TARGET_TYPE, *PMP_STORAGE_DIAGNOSTIC_TARGET_TYPE
+UID: NI:ntddscsi.IOCTL_SCSI_MINIPORT_NVCACHE
+title: IOCTL_SCSI_MINIPORT_NVCACHE
+author: windows-driver-content
+description: The NV Cache Management operations that are defined here can be invoked by user-mode application code running with administrator privileges, using DeviceIoControl and the IOCTL_SCSI_MINIPORT control code.
+old-location: storage\ioctl_scsi_miniport_nvcache.htm
+old-project: storage
+ms.assetid: 6331e850-34a7-4d03-a87b-527f3e38f735
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_scsi_miniport_nvcache, IOCTL_SCSI_MINIPORT_NVCACHE control code [Storage Devices], IOCTL_SCSI_MINIPORT_NVCACHE, ntddscsi/IOCTL_SCSI_MINIPORT_NVCACHE, k307_0a3946a8-c611-4499-b62c-25f920eeec1e.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddscsi.h
+req.include-header: Ntddscsi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddscsi.h
+apiname:
+-	IOCTL_SCSI_MINIPORT_NVCACHE
+product: Windows
+targetos: Windows
+req.typenames: MP_STORAGE_DIAGNOSTIC_TARGET_TYPE, *PMP_STORAGE_DIAGNOSTIC_TARGET_TYPE
 ---
 
 # IOCTL_SCSI_MINIPORT_NVCACHE IOCTL

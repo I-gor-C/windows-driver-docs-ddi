@@ -1,41 +1,46 @@
 ---
-UID : NI:61883.IOCTL_61883_CLASS
-title : IOCTL_61883_CLASS
-author : windows-driver-content
-description : An IEC-61883 client driver uses the IRP_MJ_INTERNAL_DEVICE_CONTROL IRP with IoControlCode IOCTL_61883_CLASS to communicate with 1394 driver stack using the IEC-61883 protocol.
-old-location : ieee\ioctl_61883_class.htm
-old-project : IEEE
-ms.assetid : c73472ee-aa27-4256-aa58-9331312ad513
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : IEEE.ioctl_61883_class, IOCTL_61883_CLASS control code [Buses], IOCTL_61883_CLASS, 61883/IOCTL_61883_CLASS, 61883_requests_a47ccc46-e231-4e3e-8a71-97e4a79143e4.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : 61883.h
-req.include-header : 61883.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : CMP_PLUG_TYPE
+UID: NI:61883.IOCTL_61883_CLASS
+title: IOCTL_61883_CLASS
+author: windows-driver-content
+description: An IEC-61883 client driver uses the IRP_MJ_INTERNAL_DEVICE_CONTROL IRP with IoControlCode IOCTL_61883_CLASS to communicate with 1394 driver stack using the IEC-61883 protocol.
+old-location: ieee\ioctl_61883_class.htm
+old-project: IEEE
+ms.assetid: c73472ee-aa27-4256-aa58-9331312ad513
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: IEEE.ioctl_61883_class, IOCTL_61883_CLASS control code [Buses], IOCTL_61883_CLASS, 61883/IOCTL_61883_CLASS, 61883_requests_a47ccc46-e231-4e3e-8a71-97e4a79143e4.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: 61883.h
+req.include-header: 61883.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	61883.h
+apiname:
+-	IOCTL_61883_CLASS
+product: Windows
+targetos: Windows
+req.typenames: CMP_PLUG_TYPE
 ---
 
 # IOCTL_61883_CLASS IOCTL

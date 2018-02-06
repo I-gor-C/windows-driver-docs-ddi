@@ -1,41 +1,47 @@
 ---
-UID : NF:ntifs.SecMakeSPN
-title : SecMakeSPN function
-author : windows-driver-content
-description : SecMakeSPN creates a service provider name string that can be used when communicating with specific security service providers.
-old-location : ifsk\secmakespn.htm
-old-project : ifsk
-ms.assetid : e294832a-f0f2-49ab-b215-7c0e67e5ec13
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : SecMakeSPN, ksecddref_0225b4c1-8cfd-49cc-a69a-85da507c401e.xml, SecMakeSPN function [Installable File System Drivers], ntifs/SecMakeSPN, ifsk.secmakespn
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h, FltKernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ksecdd.lib
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.SecMakeSPN
+title: SecMakeSPN function
+author: windows-driver-content
+description: SecMakeSPN creates a service provider name string that can be used when communicating with specific security service providers.
+old-location: ifsk\secmakespn.htm
+old-project: ifsk
+ms.assetid: e294832a-f0f2-49ab-b215-7c0e67e5ec13
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: SecMakeSPN, ksecddref_0225b4c1-8cfd-49cc-a69a-85da507c401e.xml, SecMakeSPN function [Installable File System Drivers], ntifs/SecMakeSPN, ifsk.secmakespn
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h, FltKernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ksecdd.lib
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ksecdd.lib
+-	Ksecdd.dll
+apiname:
+-	SecMakeSPN
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

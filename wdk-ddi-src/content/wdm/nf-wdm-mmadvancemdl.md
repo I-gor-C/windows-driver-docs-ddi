@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.MmAdvanceMdl
-title : MmAdvanceMdl function
-author : windows-driver-content
-description : The MmAdvanceMdl routine advances the beginning of an MDL's virtual memory range by the specified number of bytes.
-old-location : kernel\mmadvancemdl.htm
-old-project : kernel
-ms.assetid : 93e84c80-d671-4f04-8532-6c374e1ae72b
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : k106_14f78a97-f29c-4996-b8aa-94a04b62f11c.xml, wdm/MmAdvanceMdl, MmAdvanceMdl routine [Kernel-Mode Driver Architecture], kernel.mmadvancemdl, MmAdvanceMdl
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows XP and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.MmAdvanceMdl
+title: MmAdvanceMdl function
+author: windows-driver-content
+description: The MmAdvanceMdl routine advances the beginning of an MDL's virtual memory range by the specified number of bytes.
+old-location: kernel\mmadvancemdl.htm
+old-project: kernel
+ms.assetid: 93e84c80-d671-4f04-8532-6c374e1ae72b
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: k106_14f78a97-f29c-4996-b8aa-94a04b62f11c.xml, wdm/MmAdvanceMdl, MmAdvanceMdl routine [Kernel-Mode Driver Architecture], kernel.mmadvancemdl, MmAdvanceMdl
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows XP and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	MmAdvanceMdl
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

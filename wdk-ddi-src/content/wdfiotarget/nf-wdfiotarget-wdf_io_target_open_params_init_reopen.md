@@ -1,42 +1,47 @@
 ---
-UID : NF:wdfiotarget.WDF_IO_TARGET_OPEN_PARAMS_INIT_REOPEN
-title : WDF_IO_TARGET_OPEN_PARAMS_INIT_REOPEN function
-author : windows-driver-content
-description : The WDF_IO_TARGET_OPEN_PARAMS_INIT_REOPEN function initializes a driver's WDF_IO_TARGET_OPEN_PARAMS structure so the driver can reopen a remote I/O target.
-old-location : wdf\wdf_io_target_open_params_init_reopen.htm
-old-project : wdf
-ms.assetid : 00f1e870-4c74-44d3-9ee9-c8b9e63e5f3b
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdfiotarget/WDF_IO_TARGET_OPEN_PARAMS_INIT_REOPEN, WDF_IO_TARGET_OPEN_PARAMS_INIT_REOPEN function, kmdf.wdf_io_target_open_params_init_reopen, WDF_IO_TARGET_OPEN_PARAMS_INIT_REOPEN, wdf.wdf_io_target_open_params_init_reopen, DFIOTargetRef_f0c123bb-3ecc-401f-ad91-4ed1b359454d.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfiotarget.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDF_IO_TARGET_STATE, WDF_IO_TARGET_STATE"
-req.product : Windows 10 or later.
+UID: NF:wdfiotarget.WDF_IO_TARGET_OPEN_PARAMS_INIT_REOPEN
+title: WDF_IO_TARGET_OPEN_PARAMS_INIT_REOPEN function
+author: windows-driver-content
+description: The WDF_IO_TARGET_OPEN_PARAMS_INIT_REOPEN function initializes a driver's WDF_IO_TARGET_OPEN_PARAMS structure so the driver can reopen a remote I/O target.
+old-location: wdf\wdf_io_target_open_params_init_reopen.htm
+old-project: wdf
+ms.assetid: 00f1e870-4c74-44d3-9ee9-c8b9e63e5f3b
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdfiotarget/WDF_IO_TARGET_OPEN_PARAMS_INIT_REOPEN, WDF_IO_TARGET_OPEN_PARAMS_INIT_REOPEN function, kmdf.wdf_io_target_open_params_init_reopen, WDF_IO_TARGET_OPEN_PARAMS_INIT_REOPEN, wdf.wdf_io_target_open_params_init_reopen, DFIOTargetRef_f0c123bb-3ecc-401f-ad91-4ed1b359454d.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfiotarget.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfiotarget.h
+apiname:
+-	WDF_IO_TARGET_OPEN_PARAMS_INIT_REOPEN
+product: Windows
+targetos: Windows
+req.typenames: "*PWDF_IO_TARGET_STATE, WDF_IO_TARGET_STATE"
+req.product: Windows 10 or later.
 ---
 
 

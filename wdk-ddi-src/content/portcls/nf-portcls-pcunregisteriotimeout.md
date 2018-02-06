@@ -1,41 +1,47 @@
 ---
-UID : NF:portcls.PcUnregisterIoTimeout
-title : PcUnregisterIoTimeout function
-author : windows-driver-content
-description : The PcUnregisterIoTimeout function unregisters a driver-supplied I/O-timer callback routine for a specified device object.
-old-location : audio\pcunregisteriotimeout.htm
-old-project : audio
-ms.assetid : 4266c775-a2e9-46f0-91ad-6f6cce06bea0
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : portcls/PcUnregisterIoTimeout, audio.pcunregisteriotimeout, PcUnregisterIoTimeout function [Audio Devices], audpc-routines_cb67c1bb-c5ad-4118-bdff-906735214653.xml, PcUnregisterIoTimeout
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : portcls.h
-req.include-header : Portcls.h
-req.target-type : Universal
-req.target-min-winverclnt : The PortCls system driver implements the PcUnregisterIoTimeout function in Microsoft Windows 98/Me and in Windows 2000 and later operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Portcls.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.PcUnregisterIoTimeout
+title: PcUnregisterIoTimeout function
+author: windows-driver-content
+description: The PcUnregisterIoTimeout function unregisters a driver-supplied I/O-timer callback routine for a specified device object.
+old-location: audio\pcunregisteriotimeout.htm
+old-project: audio
+ms.assetid: 4266c775-a2e9-46f0-91ad-6f6cce06bea0
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: portcls/PcUnregisterIoTimeout, audio.pcunregisteriotimeout, PcUnregisterIoTimeout function [Audio Devices], audpc-routines_cb67c1bb-c5ad-4118-bdff-906735214653.xml, PcUnregisterIoTimeout
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: portcls.h
+req.include-header: Portcls.h
+req.target-type: Universal
+req.target-min-winverclnt: The PortCls system driver implements the PcUnregisterIoTimeout function in Microsoft Windows 98/Me and in Windows 2000 and later operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Portcls.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Portcls.lib
+-	Portcls.dll
+apiname:
+-	PcUnregisterIoTimeout
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:d3d10umddi.D3D10DDI_ADAPTERFUNCS
-title : D3D10DDI_ADAPTERFUNCS
-author : windows-driver-content
-description : The D3D10DDI_ADAPTERFUNCS structure contains functions that the user-mode display driver can implement to communicate with a graphics adapter object.
-old-location : display\d3d10ddi_adapterfuncs.htm
-old-project : display
-ms.assetid : 11a38b89-cc74-4921-855a-3fd795522945
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3d10umddi/D3D10DDI_ADAPTERFUNCS, UMDisplayDriver_Dx10param_Structs_6d9fe453-3734-43eb-833e-6f7deeccaf2f.xml, D3D10DDI_ADAPTERFUNCS, D3D10DDI_ADAPTERFUNCS structure [Display Devices], display.d3d10ddi_adapterfuncs
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3D10DDI_ADAPTERFUNCS
+UID: NS:d3d10umddi.D3D10DDI_ADAPTERFUNCS
+title: D3D10DDI_ADAPTERFUNCS
+author: windows-driver-content
+description: The D3D10DDI_ADAPTERFUNCS structure contains functions that the user-mode display driver can implement to communicate with a graphics adapter object.
+old-location: display\d3d10ddi_adapterfuncs.htm
+old-project: display
+ms.assetid: 11a38b89-cc74-4921-855a-3fd795522945
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3d10umddi/D3D10DDI_ADAPTERFUNCS, UMDisplayDriver_Dx10param_Structs_6d9fe453-3734-43eb-833e-6f7deeccaf2f.xml, D3D10DDI_ADAPTERFUNCS, D3D10DDI_ADAPTERFUNCS structure [Display Devices], display.d3d10ddi_adapterfuncs
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	D3D10DDI_ADAPTERFUNCS
+product: Windows
+targetos: Windows
+req.typenames: D3D10DDI_ADAPTERFUNCS
 ---
 
 # D3D10DDI_ADAPTERFUNCS structure

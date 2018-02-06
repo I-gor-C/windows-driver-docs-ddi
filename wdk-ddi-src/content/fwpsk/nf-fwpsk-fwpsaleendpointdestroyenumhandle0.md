@@ -1,41 +1,47 @@
 ---
-UID : NF:fwpsk.FwpsAleEndpointDestroyEnumHandle0
-title : FwpsAleEndpointDestroyEnumHandle0 function
-author : windows-driver-content
-description : The FwpsAleEndpointDestroyEnumHandle0 function destroys an endpoint enumeration handle that was created by calling FwpsAleEndpointCreateEnumHandle0.Note  FwpsAleEndpointDestroyEnumHandle0 is a specific version of FwpsAleEndpointDestroyEnumHandle.
-old-location : netvista\fwpsaleendpointdestroyenumhandle0.htm
-old-project : netvista
-ms.assetid : 45ec429e-d324-40c9-bedc-acd75ccb160e
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : fwpsk/FwpsAleEndpointDestroyEnumHandle0, wfp_ref_2_funct_3_fwps_A-B_3230abaf-8185-43b4-b46f-b1c1688ede2d.xml, FwpsAleEndpointDestroyEnumHandle0, netvista.fwpsaleendpointdestroyenumhandle0, FwpsAleEndpointDestroyEnumHandle0 function [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fwpsk.h
-req.include-header : Fwpsk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 7.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Fwpkclnt.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FWPS_VSWITCH_EVENT_TYPE
+UID: NF:fwpsk.FwpsAleEndpointDestroyEnumHandle0
+title: FwpsAleEndpointDestroyEnumHandle0 function
+author: windows-driver-content
+description: The FwpsAleEndpointDestroyEnumHandle0 function destroys an endpoint enumeration handle that was created by calling FwpsAleEndpointCreateEnumHandle0.Note  FwpsAleEndpointDestroyEnumHandle0 is a specific version of FwpsAleEndpointDestroyEnumHandle.
+old-location: netvista\fwpsaleendpointdestroyenumhandle0.htm
+old-project: netvista
+ms.assetid: 45ec429e-d324-40c9-bedc-acd75ccb160e
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: fwpsk/FwpsAleEndpointDestroyEnumHandle0, wfp_ref_2_funct_3_fwps_A-B_3230abaf-8185-43b4-b46f-b1c1688ede2d.xml, FwpsAleEndpointDestroyEnumHandle0, netvista.fwpsaleendpointdestroyenumhandle0, FwpsAleEndpointDestroyEnumHandle0 function [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fwpsk.h
+req.include-header: Fwpsk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 7.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Fwpkclnt.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	fwpkclnt.lib
+-	fwpkclnt.dll
+apiname:
+-	FwpsAleEndpointDestroyEnumHandle0
+product: Windows
+targetos: Windows
+req.typenames: FWPS_VSWITCH_EVENT_TYPE
 ---
 
 

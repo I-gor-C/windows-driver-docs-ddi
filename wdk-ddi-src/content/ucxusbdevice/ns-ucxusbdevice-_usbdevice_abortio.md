@@ -1,42 +1,47 @@
 ---
-UID : NS:ucxusbdevice._USBDEVICE_ABORTIO
-title : "_USBDEVICE_ABORTIO"
-author : windows-driver-content
-description : Contains a handle for the Universal Serial Bus (USB) hub or device for which to abort data transfers.
-old-location : buses\_usbdevice_abortio.htm
-old-project : usbref
-ms.assetid : 69720940-4D3E-43E6-B587-427ED2049FCC
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : USBDEVICE_ABORTIO, USBDEVICE_ABORTIO structure [Buses], P_USBDEVICE_ABORTIO structure pointer [Buses], _USBDEVICE_ABORTIO, ucxusbdevice/_USBDEVICE_ABORTIO, ucxusbdevice/P_USBDEVICE_ABORTIO, *PUSBDEVICE_ABORTIO, buses._usbdevice_abortio, P_USBDEVICE_ABORTIO
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ucxusbdevice.h
-req.include-header : Ucxclass.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUSBDEVICE_ABORTIO, USBDEVICE_ABORTIO"
-req.product : Windows 10 or later.
+UID: NS:ucxusbdevice._USBDEVICE_ABORTIO
+title: "_USBDEVICE_ABORTIO"
+author: windows-driver-content
+description: Contains a handle for the Universal Serial Bus (USB) hub or device for which to abort data transfers.
+old-location: buses\_usbdevice_abortio.htm
+old-project: usbref
+ms.assetid: 69720940-4D3E-43E6-B587-427ED2049FCC
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: USBDEVICE_ABORTIO, USBDEVICE_ABORTIO structure [Buses], P_USBDEVICE_ABORTIO structure pointer [Buses], _USBDEVICE_ABORTIO, ucxusbdevice/_USBDEVICE_ABORTIO, ucxusbdevice/P_USBDEVICE_ABORTIO, *PUSBDEVICE_ABORTIO, buses._usbdevice_abortio, P_USBDEVICE_ABORTIO
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ucxusbdevice.h
+req.include-header: Ucxclass.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ucxusbdevice.h
+apiname:
+-	USBDEVICE_ABORTIO
+product: Windows
+targetos: Windows
+req.typenames: "*PUSBDEVICE_ABORTIO, USBDEVICE_ABORTIO"
+req.product: Windows 10 or later.
 ---
 
 # _USBDEVICE_ABORTIO structure

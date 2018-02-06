@@ -1,41 +1,46 @@
 ---
-UID : NC:ntdd8042.PI8042_MOUSE_ISR
-title : PI8042_MOUSE_ISR
-author : windows-driver-content
-description : A PI8042_MOUSE_ISR-typed callback routine customizes the operation of the I8042prt mouse ISR.
-old-location : hid\pi8042_mouse_isr.htm
-old-project : hid
-ms.assetid : 7c8a0dc8-49ec-476f-b183-1baa419e831d
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : hid.pi8042_mouse_isr, MouseIsr callback function [Human Input Devices], MouseIsr, PI8042_MOUSE_ISR, PI8042_MOUSE_ISR, ntdd8042/MouseIsr, i8042ref_f077c4e7-f77b-4f47-a0a7-a7007e4f2475.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ntdd8042.h
-req.include-header : Ntdd8042.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : MSFC_VirtualFibrePortAttributes, *PMSFC_VirtualFibrePortAttributes
+UID: NC:ntdd8042.PI8042_MOUSE_ISR
+title: PI8042_MOUSE_ISR
+author: windows-driver-content
+description: A PI8042_MOUSE_ISR-typed callback routine customizes the operation of the I8042prt mouse ISR.
+old-location: hid\pi8042_mouse_isr.htm
+old-project: hid
+ms.assetid: 7c8a0dc8-49ec-476f-b183-1baa419e831d
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: hid.pi8042_mouse_isr, MouseIsr callback function [Human Input Devices], MouseIsr, PI8042_MOUSE_ISR, PI8042_MOUSE_ISR, ntdd8042/MouseIsr, i8042ref_f077c4e7-f77b-4f47-a0a7-a7007e4f2475.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ntdd8042.h
+req.include-header: Ntdd8042.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	ntdd8042.h
+apiname:
+-	MouseIsr
+product: Windows
+targetos: Windows
+req.typenames: MSFC_VirtualFibrePortAttributes, *PMSFC_VirtualFibrePortAttributes
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NI:bthioctl.IOCTL_BTH_SDP_SERVICE_ATTRIBUTE_SEARCH
-title : IOCTL_BTH_SDP_SERVICE_ATTRIBUTE_SEARCH
-author : windows-driver-content
-description : The IOCTL_BTH_SDP_SERVICE_ATTRIBUTE_SEARCH request combines an SDP service and attribute search into a single operation. This allows a caller to directly obtain SDP records from a remote device.
-old-location : bltooth\ioctl_bth_sdp_service_attribute_search.htm
-old-project : bltooth
-ms.assetid : f0955e88-df80-4f53-bc5f-5a38a840aab4
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : bltooth.ioctl_bth_sdp_service_attribute_search, IOCTL_BTH_SDP_SERVICE_ATTRIBUTE_SEARCH control code [Bluetooth Devices], IOCTL_BTH_SDP_SERVICE_ATTRIBUTE_SEARCH, bthioctl/IOCTL_BTH_SDP_SERVICE_ATTRIBUTE_SEARCH, bth_ioctls_73db8572-0986-4ac7-a76c-4cb3777c0660.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : bthioctl.h
-req.include-header : Bthioctl.h
-req.target-type : Windows
-req.target-min-winverclnt : Versions:\_Supported in Windows Vista, and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= PASSIVE_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HFP_BYPASS_CODEC_ID_V1, *PHFP_BYPASS_CODEC_ID_V1
+UID: NI:bthioctl.IOCTL_BTH_SDP_SERVICE_ATTRIBUTE_SEARCH
+title: IOCTL_BTH_SDP_SERVICE_ATTRIBUTE_SEARCH
+author: windows-driver-content
+description: The IOCTL_BTH_SDP_SERVICE_ATTRIBUTE_SEARCH request combines an SDP service and attribute search into a single operation. This allows a caller to directly obtain SDP records from a remote device.
+old-location: bltooth\ioctl_bth_sdp_service_attribute_search.htm
+old-project: bltooth
+ms.assetid: f0955e88-df80-4f53-bc5f-5a38a840aab4
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: bltooth.ioctl_bth_sdp_service_attribute_search, IOCTL_BTH_SDP_SERVICE_ATTRIBUTE_SEARCH control code [Bluetooth Devices], IOCTL_BTH_SDP_SERVICE_ATTRIBUTE_SEARCH, bthioctl/IOCTL_BTH_SDP_SERVICE_ATTRIBUTE_SEARCH, bth_ioctls_73db8572-0986-4ac7-a76c-4cb3777c0660.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: bthioctl.h
+req.include-header: Bthioctl.h
+req.target-type: Windows
+req.target-min-winverclnt: Versions:\_Supported in Windows Vista, and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= PASSIVE_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Bthioctl.h
+apiname:
+-	IOCTL_BTH_SDP_SERVICE_ATTRIBUTE_SEARCH
+product: Windows
+targetos: Windows
+req.typenames: HFP_BYPASS_CODEC_ID_V1, *PHFP_BYPASS_CODEC_ID_V1
 ---
 
 # IOCTL_BTH_SDP_SERVICE_ATTRIBUTE_SEARCH IOCTL

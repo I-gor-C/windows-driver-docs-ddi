@@ -1,41 +1,46 @@
 ---
-UID : NN:portcls.IResourceList
-title : IResourceList
-author : windows-driver-content
-description : The IResourceList interface provides an abstraction of a configuration resource list, which is a list of the system hardware resources that the Plug and Play manager assigns to a device at startup time.
-old-location : audio\iresourcelist.htm
-old-project : audio
-ms.assetid : e99ed3bc-368c-433f-ad40-98deda668c51
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : audio.iresourcelist, IResourceList interface [Audio Devices], IResourceList interface [Audio Devices], described, IResourceList, portcls/IResourceList, audmp-routines_beb718b9-c62d-46b8-9147-c9e4aa7faa28.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : portcls.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Portcls.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NN:portcls.IResourceList
+title: IResourceList
+author: windows-driver-content
+description: The IResourceList interface provides an abstraction of a configuration resource list, which is a list of the system hardware resources that the Plug and Play manager assigns to a device at startup time.
+old-location: audio\iresourcelist.htm
+old-project: audio
+ms.assetid: e99ed3bc-368c-433f-ad40-98deda668c51
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: audio.iresourcelist, IResourceList interface [Audio Devices], IResourceList interface [Audio Devices], described, IResourceList, portcls/IResourceList, audmp-routines_beb718b9-c62d-46b8-9147-c9e4aa7faa28.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: portcls.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Portcls.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	portcls.h
+apiname:
+-	IResourceList
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 # IResourceList interface

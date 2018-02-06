@@ -1,41 +1,46 @@
 ---
-UID : NS:ndis._NDIS_SWITCH_PORT_DESTINATION
-title : "_NDIS_SWITCH_PORT_DESTINATION"
-author : windows-driver-content
-description : The NDIS_SWITCH_PORT_DESTINATION structure specifies the Hyper-V extensible switch destination port to which a packet will be delivered.
-old-location : netvista\ndis_switch_port_destination.htm
-old-project : netvista
-ms.assetid : EC7FFB5E-F50B-40C4-B4B7-0A11A374EBD0
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : ndis/NDIS_SWITCH_PORT_DESTINATION, NDIS_SWITCH_PORT_DESTINATION structure [Network Drivers Starting with Windows Vista], NDIS_SWITCH_PORT_DESTINATION, *PNDIS_SWITCH_PORT_DESTINATION, PNDIS_SWITCH_PORT_DESTINATION structure pointer [Network Drivers Starting with Windows Vista], ndis/PNDIS_SWITCH_PORT_DESTINATION, PNDIS_SWITCH_PORT_DESTINATION, netvista.ndis_switch_port_destination, _NDIS_SWITCH_PORT_DESTINATION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.30 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : See Remarks section
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PNDIS_SWITCH_PORT_DESTINATION, NDIS_SWITCH_PORT_DESTINATION"
+UID: NS:ndis._NDIS_SWITCH_PORT_DESTINATION
+title: "_NDIS_SWITCH_PORT_DESTINATION"
+author: windows-driver-content
+description: The NDIS_SWITCH_PORT_DESTINATION structure specifies the Hyper-V extensible switch destination port to which a packet will be delivered.
+old-location: netvista\ndis_switch_port_destination.htm
+old-project: netvista
+ms.assetid: EC7FFB5E-F50B-40C4-B4B7-0A11A374EBD0
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: ndis/NDIS_SWITCH_PORT_DESTINATION, NDIS_SWITCH_PORT_DESTINATION structure [Network Drivers Starting with Windows Vista], NDIS_SWITCH_PORT_DESTINATION, *PNDIS_SWITCH_PORT_DESTINATION, PNDIS_SWITCH_PORT_DESTINATION structure pointer [Network Drivers Starting with Windows Vista], ndis/PNDIS_SWITCH_PORT_DESTINATION, PNDIS_SWITCH_PORT_DESTINATION, netvista.ndis_switch_port_destination, _NDIS_SWITCH_PORT_DESTINATION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.30 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: See Remarks section
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ndis.h
+apiname:
+-	NDIS_SWITCH_PORT_DESTINATION
+product: Windows
+targetos: Windows
+req.typenames: "*PNDIS_SWITCH_PORT_DESTINATION, NDIS_SWITCH_PORT_DESTINATION"
 ---
 
 # _NDIS_SWITCH_PORT_DESTINATION structure

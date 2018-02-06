@@ -1,42 +1,47 @@
 ---
-UID : NF:video.VideoPortGetVersion
-title : VideoPortGetVersion function
-author : windows-driver-content
-description : The VideoPortGetVersion function gets version information about the currently running operating system.
-old-location : display\videoportgetversion.htm
-old-project : display
-ms.assetid : 242eb066-4b2e-4abe-b082-5bfd814c5774
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : video/VideoPortGetVersion, VideoPort_Functions_b616e0f2-430a-43ca-a43f-44cdcaec757f.xml, VideoPortGetVersion function [Display Devices], VideoPortGetVersion, display.videoportgetversion
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows XP and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Videoprt.lib
-req.dll : Videoprt.sys
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_PORT_SERVICES
-req.product : Windows 10 or later.
+UID: NF:video.VideoPortGetVersion
+title: VideoPortGetVersion function
+author: windows-driver-content
+description: The VideoPortGetVersion function gets version information about the currently running operating system.
+old-location: display\videoportgetversion.htm
+old-project: display
+ms.assetid: 242eb066-4b2e-4abe-b082-5bfd814c5774
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: video/VideoPortGetVersion, VideoPort_Functions_b616e0f2-430a-43ca-a43f-44cdcaec757f.xml, VideoPortGetVersion function [Display Devices], VideoPortGetVersion, display.videoportgetversion
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows XP and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Videoprt.lib
+req.dll: Videoprt.sys
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Videoprt.sys
+apiname:
+-	VideoPortGetVersion
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_PORT_SERVICES
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:acpiioct._ACPI_EVAL_OUTPUT_BUFFER_V1
-title : "_ACPI_EVAL_OUTPUT_BUFFER_V1"
-author : windows-driver-content
-description : The ACPI_EVAL_OUTPUT_BUFFER structure contains output arguments from an ACPI control method.
-old-location : acpi\acpi_eval_output_buffer.htm
-old-project : acpi
-ms.assetid : 3bfb43dd-b4e1-49ee-9be6-c9861341daa1
-ms.author : windowsdriverdev
-ms.date : 12/31/2017
-ms.keywords : acpiioct/ACPI_EVAL_OUTPUT_BUFFER_V1, ACPI_EVAL_OUTPUT_BUFFER, ACPI_EVAL_OUTPUT_BUFFER_V1, _ACPI_EVAL_OUTPUT_BUFFER_V1, ACPI_EVAL_OUTPUT_BUFFER_V1 structure [ACPI Devices], acpi.acpi_eval_output_buffer, *PACPI_EVAL_OUTPUT_BUFFER_V1, *PACPI_EVAL_OUTPUT_BUFFER, acpi-meth-eval-ref_438f3766-37fd-449b-8084-26f08c2f82a0.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : acpiioct.h
-req.include-header : Acpiioct.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : ACPI_EVAL_OUTPUT_BUFFER_V1, *PACPI_EVAL_OUTPUT_BUFFER, ACPI_EVAL_OUTPUT_BUFFER
+UID: NS:acpiioct._ACPI_EVAL_OUTPUT_BUFFER_V1
+title: "_ACPI_EVAL_OUTPUT_BUFFER_V1"
+author: windows-driver-content
+description: The ACPI_EVAL_OUTPUT_BUFFER structure contains output arguments from an ACPI control method.
+old-location: acpi\acpi_eval_output_buffer.htm
+old-project: acpi
+ms.assetid: 3bfb43dd-b4e1-49ee-9be6-c9861341daa1
+ms.author: windowsdriverdev
+ms.date: 12/31/2017
+ms.keywords: acpiioct/ACPI_EVAL_OUTPUT_BUFFER_V1, ACPI_EVAL_OUTPUT_BUFFER, ACPI_EVAL_OUTPUT_BUFFER_V1, _ACPI_EVAL_OUTPUT_BUFFER_V1, ACPI_EVAL_OUTPUT_BUFFER_V1 structure [ACPI Devices], acpi.acpi_eval_output_buffer, *PACPI_EVAL_OUTPUT_BUFFER_V1, *PACPI_EVAL_OUTPUT_BUFFER, acpi-meth-eval-ref_438f3766-37fd-449b-8084-26f08c2f82a0.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: acpiioct.h
+req.include-header: Acpiioct.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Acpiioct.h
+apiname:
+-	ACPI_EVAL_OUTPUT_BUFFER_V1
+product: Windows
+targetos: Windows
+req.typenames: ACPI_EVAL_OUTPUT_BUFFER_V1, *PACPI_EVAL_OUTPUT_BUFFER, ACPI_EVAL_OUTPUT_BUFFER
 ---
 
 # _ACPI_EVAL_OUTPUT_BUFFER_V1 structure

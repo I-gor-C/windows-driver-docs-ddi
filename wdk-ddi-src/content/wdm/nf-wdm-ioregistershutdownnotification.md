@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.IoRegisterShutdownNotification
-title : IoRegisterShutdownNotification function
-author : windows-driver-content
-description : The IoRegisterShutdownNotification routine registers the driver to receive an IRP_MJ_SHUTDOWN IRP when the system is shut down.
-old-location : kernel\ioregistershutdownnotification.htm
-old-project : kernel
-ms.assetid : fd9a612b-b0a7-4bef-9fab-8212a3b594b6
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/IoRegisterShutdownNotification, IoRegisterShutdownNotification, IoRegisterShutdownNotification routine [Kernel-Mode Driver Architecture], kernel.ioregistershutdownnotification, k104_dd357e39-68b4-4cc2-b7c7-34f16c74a4a0.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 2000 and later versions of Windows. Not available in Microsoft Windows 98/Me.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : IrqlIoPassive5, PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.IoRegisterShutdownNotification
+title: IoRegisterShutdownNotification function
+author: windows-driver-content
+description: The IoRegisterShutdownNotification routine registers the driver to receive an IRP_MJ_SHUTDOWN IRP when the system is shut down.
+old-location: kernel\ioregistershutdownnotification.htm
+old-project: kernel
+ms.assetid: fd9a612b-b0a7-4bef-9fab-8212a3b594b6
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/IoRegisterShutdownNotification, IoRegisterShutdownNotification, IoRegisterShutdownNotification routine [Kernel-Mode Driver Architecture], kernel.ioregistershutdownnotification, k104_dd357e39-68b4-4cc2-b7c7-34f16c74a4a0.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 2000 and later versions of Windows. Not available in Microsoft Windows 98/Me.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: IrqlIoPassive5, PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoRegisterShutdownNotification
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

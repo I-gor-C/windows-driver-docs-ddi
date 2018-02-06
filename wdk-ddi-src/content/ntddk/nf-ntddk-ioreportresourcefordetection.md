@@ -1,41 +1,46 @@
 ---
-UID : NF:ntddk.IoReportResourceForDetection
-title : IoReportResourceForDetection function
-author : windows-driver-content
-description : The IoReportResourceForDetection routine claims hardware resources in the configuration registry for a legacy device.
-old-location : kernel\ioreportresourcefordetection.htm
-old-project : kernel
-ms.assetid : 83b8e0b0-112c-4263-91f8-0c2e20dd76a4
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.ioreportresourcefordetection, IoReportResourceForDetection, IoReportResourceForDetection routine [Kernel-Mode Driver Architecture], ntddk/IoReportResourceForDetection, k104_e2a8d386-d1bb-4bf5-aa30-d3a905e91174.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.IoReportResourceForDetection
+title: IoReportResourceForDetection function
+author: windows-driver-content
+description: The IoReportResourceForDetection routine claims hardware resources in the configuration registry for a legacy device.
+old-location: kernel\ioreportresourcefordetection.htm
+old-project: kernel
+ms.assetid: 83b8e0b0-112c-4263-91f8-0c2e20dd76a4
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.ioreportresourcefordetection, IoReportResourceForDetection, IoReportResourceForDetection routine [Kernel-Mode Driver Architecture], ntddk/IoReportResourceForDetection, k104_e2a8d386-d1bb-4bf5-aa30-d3a905e91174.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoReportResourceForDetection
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

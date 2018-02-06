@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFIoQueue.DrainSynchronously
-title : IWDFIoQueue::DrainSynchronously method
-author : windows-driver-content
-description : The DrainSynchronously method directs the queue to reject new incoming I/O requests and allows already-queued requests to be delivered to the driver for processing. This method returns after all requests are completed or canceled.
-old-location : wdf\iwdfioqueue_drainsynchronously.htm
-old-project : wdf
-ms.assetid : 6dc32dd7-e15b-4c93-92d1-5b7206ed98c0
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : IWDFIoQueue interface, DrainSynchronously method, DrainSynchronously, DrainSynchronously method, IWDFIoQueue interface, DrainSynchronously method, UMDFQueueObjectRef_35105420-0461-4879-aba2-28c32ece9aab.xml, IWDFIoQueue::DrainSynchronously, umdf.iwdfioqueue_drainsynchronously, wdf.iwdfioqueue_drainsynchronously, IWDFIoQueue, wudfddi/IWDFIoQueue::DrainSynchronously
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.5
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFIoQueue.DrainSynchronously
+title: IWDFIoQueue::DrainSynchronously method
+author: windows-driver-content
+description: The DrainSynchronously method directs the queue to reject new incoming I/O requests and allows already-queued requests to be delivered to the driver for processing. This method returns after all requests are completed or canceled.
+old-location: wdf\iwdfioqueue_drainsynchronously.htm
+old-project: wdf
+ms.assetid: 6dc32dd7-e15b-4c93-92d1-5b7206ed98c0
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: IWDFIoQueue interface, DrainSynchronously method, DrainSynchronously, DrainSynchronously method, IWDFIoQueue interface, DrainSynchronously method, UMDFQueueObjectRef_35105420-0461-4879-aba2-28c32ece9aab.xml, IWDFIoQueue::DrainSynchronously, umdf.iwdfioqueue_drainsynchronously, wdf.iwdfioqueue_drainsynchronously, IWDFIoQueue, wudfddi/IWDFIoQueue::DrainSynchronously
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.5
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFIoQueue.DrainSynchronously
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

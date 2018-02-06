@@ -1,42 +1,47 @@
 ---
-UID : NE:wdfcontrol._WDF_DEVICE_SHUTDOWN_FLAGS
-title : "_WDF_DEVICE_SHUTDOWN_FLAGS"
-author : windows-driver-content
-description : The WDF_DEVICE_SHUTDOWN_FLAGS enumeration defines flags that identify types of shutdown notifications that a driver can receive.
-old-location : wdf\wdf_device_shutdown_flags.htm
-old-project : wdf
-ms.assetid : e394f8de-7257-4baa-9057-bd4bad34212d
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WdfDeviceShutdown, kmdf.wdf_device_shutdown_flags, wdfcontrol/WdfDeviceLastChanceShutdown, WdfDeviceLastChanceShutdown, WDF_DEVICE_SHUTDOWN_FLAGS, DFDeviceObjectControllerDevObjRef_67312956-1032-4272-9b69-ed1674b5e951.xml, _WDF_DEVICE_SHUTDOWN_FLAGS, wdf.wdf_device_shutdown_flags, WDF_DEVICE_SHUTDOWN_FLAGS enumeration, wdfcontrol/WdfDeviceShutdown, wdfcontrol/WDF_DEVICE_SHUTDOWN_FLAGS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : wdfcontrol.h
-req.include-header : Wdf.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_DEVICE_SHUTDOWN_FLAGS
-req.product : Windows 10 or later.
+UID: NE:wdfcontrol._WDF_DEVICE_SHUTDOWN_FLAGS
+title: "_WDF_DEVICE_SHUTDOWN_FLAGS"
+author: windows-driver-content
+description: The WDF_DEVICE_SHUTDOWN_FLAGS enumeration defines flags that identify types of shutdown notifications that a driver can receive.
+old-location: wdf\wdf_device_shutdown_flags.htm
+old-project: wdf
+ms.assetid: e394f8de-7257-4baa-9057-bd4bad34212d
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WdfDeviceShutdown, kmdf.wdf_device_shutdown_flags, wdfcontrol/WdfDeviceLastChanceShutdown, WdfDeviceLastChanceShutdown, WDF_DEVICE_SHUTDOWN_FLAGS, DFDeviceObjectControllerDevObjRef_67312956-1032-4272-9b69-ed1674b5e951.xml, _WDF_DEVICE_SHUTDOWN_FLAGS, wdf.wdf_device_shutdown_flags, WDF_DEVICE_SHUTDOWN_FLAGS enumeration, wdfcontrol/WdfDeviceShutdown, wdfcontrol/WDF_DEVICE_SHUTDOWN_FLAGS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: wdfcontrol.h
+req.include-header: Wdf.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfcontrol.h
+apiname:
+-	WDF_DEVICE_SHUTDOWN_FLAGS
+product: Windows
+targetos: Windows
+req.typenames: WDF_DEVICE_SHUTDOWN_FLAGS
+req.product: Windows 10 or later.
 ---
 
 # _WDF_DEVICE_SHUTDOWN_FLAGS Enumeration
@@ -55,21 +60,21 @@ typedef enum _WDF_DEVICE_SHUTDOWN_FLAGS {
 ## Constants
 
 <table>
-
-<tr>
-<td>WdfDeviceLastChanceShutdown</td>
-<td>The driver is notified when the system is losing its power, and after all file systems have been flushed.</td>
-</tr>
-
-<tr>
-<td>WdfDeviceShutdown</td>
-<td>The driver is notified when the system is losing its power, but before file systems are flushed.</td>
-</tr>
+            
+                <tr>
+                    <td>WdfDeviceLastChanceShutdown</td>
+                    <td>The driver is notified when the system is losing its power, and after all file systems have been flushed.</td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDeviceShutdown</td>
+                    <td>The driver is notified when the system is losing its power, but before file systems are flushed.</td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-The <b>WDF_DEVICE_SHUTDOWN_FLAGS</b> enumeration is used as an input parameter to <a href="..\wdfcontrol\nf-wdfcontrol-wdfcontroldeviceinitsetshutdownnotification.md">WdfControlDeviceInitSetShutdownNotification</a>.
+        The <b>WDF_DEVICE_SHUTDOWN_FLAGS</b> enumeration is used as an input parameter to <a href="..\wdfcontrol\nf-wdfcontrol-wdfcontroldeviceinitsetshutdownnotification.md">WdfControlDeviceInitSetShutdownNotification</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -77,9 +82,9 @@ The <b>WDF_DEVICE_SHUTDOWN_FLAGS</b> enumeration is used as an input parameter t
 | **Minimum KMDF version** | 1.0 |
 | **Header** | wdfcontrol.h (include Wdf.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\wdfcontrol\nf-wdfcontrol-wdfcontroldeviceinitsetshutdownnotification.md">WdfControlDeviceInitSetShutdownNotification</a>
+        <a href="..\wdfcontrol\nf-wdfcontrol-wdfcontroldeviceinitsetshutdownnotification.md">WdfControlDeviceInitSetShutdownNotification</a>
 
  
 

@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugSymbols3.SetSourcePath
-title : IDebugSymbols3::SetSourcePath method
-author : windows-driver-content
-description : The SetSourcePath method sets the source path.
-old-location : debugger\setsourcepath.htm
-old-project : debugger
-ms.assetid : 00b5927e-4b95-4528-bc09-da90db8a7716
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : SetSourcePath method [Windows Debugging], IDebugSymbols interface, dbgeng/IDebugSymbols2::SetSourcePath, IDebugSymbols3::SetSourcePath, IDebugSymbols::SetSourcePath, IDebugSymbols2::SetSourcePath, SetSourcePath, SetSourcePath method [Windows Debugging], SetSourcePath method [Windows Debugging], IDebugSymbols2 interface, dbgeng/IDebugSymbols::SetSourcePath, IDebugSymbols2 interface [Windows Debugging], SetSourcePath method, SetSourcePath method [Windows Debugging], IDebugSymbols3 interface, dbgeng/IDebugSymbols3::SetSourcePath, IDebugSymbols3 interface [Windows Debugging], SetSourcePath method, IDebugSymbols3, debugger.setsourcepath, IDebugSymbols interface [Windows Debugging], SetSourcePath method, IDebugSymbols_d592ec7c-56f9-46b2-9627-d79e8fdba5c4.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSymbols3.SetSourcePath
+title: IDebugSymbols3::SetSourcePath method
+author: windows-driver-content
+description: The SetSourcePath method sets the source path.
+old-location: debugger\setsourcepath.htm
+old-project: debugger
+ms.assetid: 00b5927e-4b95-4528-bc09-da90db8a7716
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: SetSourcePath method [Windows Debugging], IDebugSymbols interface, dbgeng/IDebugSymbols2::SetSourcePath, IDebugSymbols3::SetSourcePath, IDebugSymbols::SetSourcePath, IDebugSymbols2::SetSourcePath, SetSourcePath, SetSourcePath method [Windows Debugging], SetSourcePath method [Windows Debugging], IDebugSymbols2 interface, dbgeng/IDebugSymbols::SetSourcePath, IDebugSymbols2 interface [Windows Debugging], SetSourcePath method, SetSourcePath method [Windows Debugging], IDebugSymbols3 interface, dbgeng/IDebugSymbols3::SetSourcePath, IDebugSymbols3 interface [Windows Debugging], SetSourcePath method, IDebugSymbols3, debugger.setsourcepath, IDebugSymbols interface [Windows Debugging], SetSourcePath method, IDebugSymbols_d592ec7c-56f9-46b2-9627-d79e8fdba5c4.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugSymbols.SetSourcePath
+-	IDebugSymbols2.SetSourcePath
+-	IDebugSymbols3.SetSourcePath
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

@@ -1,42 +1,48 @@
 ---
-UID : NF:wdm.ZwMapViewOfSection
-title : ZwMapViewOfSection function
-author : windows-driver-content
-description : The ZwMapViewOfSection routine maps a view of a section into the virtual address space of a subject process.
-old-location : kernel\zwmapviewofsection.htm
-old-project : kernel
-ms.assetid : 2abe7751-ef8c-4511-aaf6-755428c451fe
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.zwmapviewofsection, k111_cdad5afa-13b3-415e-96e8-688e7984a9fd.xml, NtMapViewOfSection, ZwMapViewOfSection routine [Kernel-Mode Driver Architecture], wdm/ZwMapViewOfSection, wdm/NtMapViewOfSection, ZwMapViewOfSection
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ZwMapViewOfSection
+title: ZwMapViewOfSection function
+author: windows-driver-content
+description: The ZwMapViewOfSection routine maps a view of a section into the virtual address space of a subject process.
+old-location: kernel\zwmapviewofsection.htm
+old-project: kernel
+ms.assetid: 2abe7751-ef8c-4511-aaf6-755428c451fe
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.zwmapviewofsection, k111_cdad5afa-13b3-415e-96e8-688e7984a9fd.xml, NtMapViewOfSection, ZwMapViewOfSection routine [Kernel-Mode Driver Architecture], wdm/ZwMapViewOfSection, wdm/NtMapViewOfSection, ZwMapViewOfSection
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ZwMapViewOfSection
+-	NtMapViewOfSection
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

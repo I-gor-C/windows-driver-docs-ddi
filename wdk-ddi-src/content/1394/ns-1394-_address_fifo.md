@@ -1,41 +1,46 @@
 ---
-UID : NS:1394._ADDRESS_FIFO
-title : "_ADDRESS_FIFO"
-author : windows-driver-content
-description : The ADDRESS_FIFO structure is an entry in a singly-linked list of MDLs used by the REQUEST_ALLOCATE_ADDRESS_RANGE IEEE 1394 bus request.
-old-location : ieee\address_fifo.htm
-old-project : IEEE
-ms.assetid : df2b6438-271d-4ea2-a06b-49a83415ca7a
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : 1394stct_bf7f3e1b-88a4-4c37-88ee-cf5d69595988.xml, ADDRESS_FIFO, IEEE.address_fifo, PADDRESS_FIFO structure pointer [Buses], _ADDRESS_FIFO, *PADDRESS_FIFO, 1394/ADDRESS_FIFO, PADDRESS_FIFO, 1394/PADDRESS_FIFO, ADDRESS_FIFO structure [Buses]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : 1394.h
-req.include-header : 1394.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PADDRESS_FIFO, ADDRESS_FIFO"
+UID: NS:1394._ADDRESS_FIFO
+title: "_ADDRESS_FIFO"
+author: windows-driver-content
+description: The ADDRESS_FIFO structure is an entry in a singly-linked list of MDLs used by the REQUEST_ALLOCATE_ADDRESS_RANGE IEEE 1394 bus request.
+old-location: ieee\address_fifo.htm
+old-project: IEEE
+ms.assetid: df2b6438-271d-4ea2-a06b-49a83415ca7a
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: 1394stct_bf7f3e1b-88a4-4c37-88ee-cf5d69595988.xml, ADDRESS_FIFO, IEEE.address_fifo, PADDRESS_FIFO structure pointer [Buses], _ADDRESS_FIFO, *PADDRESS_FIFO, 1394/ADDRESS_FIFO, PADDRESS_FIFO, 1394/PADDRESS_FIFO, ADDRESS_FIFO structure [Buses]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: 1394.h
+req.include-header: 1394.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	1394.h
+apiname:
+-	ADDRESS_FIFO
+product: Windows
+targetos: Windows
+req.typenames: "*PADDRESS_FIFO, ADDRESS_FIFO"
 ---
 
 # _ADDRESS_FIFO structure

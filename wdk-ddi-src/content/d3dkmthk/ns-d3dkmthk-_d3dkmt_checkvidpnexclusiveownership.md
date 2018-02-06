@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmthk._D3DKMT_CHECKVIDPNEXCLUSIVEOWNERSHIP
-title : "_D3DKMT_CHECKVIDPNEXCLUSIVEOWNERSHIP"
-author : windows-driver-content
-description : The D3DKMT_CHECKVIDPNEXCLUSIVEOWNERSHIP structure describes the parameters to determine the video present source in the path of a video present network (VidPN) topology that exclusively owns the VidPN.
-old-location : display\d3dkmt_checkvidpnexclusiveownership.htm
-old-project : display
-ms.assetid : 5a7f05a0-11ae-49ed-9015-f2712cc77880
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3dkmthk/D3DKMT_CHECKVIDPNEXCLUSIVEOWNERSHIP, D3DKMT_CHECKVIDPNEXCLUSIVEOWNERSHIP structure [Display Devices], D3DKMT_CHECKVIDPNEXCLUSIVEOWNERSHIP, OpenGL_Structs_23afa7dd-8aaa-402b-9b99-235be17cd26e.xml, _D3DKMT_CHECKVIDPNEXCLUSIVEOWNERSHIP, display.d3dkmt_checkvidpnexclusiveownership
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Windows
-req.target-min-winverclnt : D3DKMT_CHECKVIDPNEXCLUSIVEOWNERSHIP is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_CHECKVIDPNEXCLUSIVEOWNERSHIP
+UID: NS:d3dkmthk._D3DKMT_CHECKVIDPNEXCLUSIVEOWNERSHIP
+title: "_D3DKMT_CHECKVIDPNEXCLUSIVEOWNERSHIP"
+author: windows-driver-content
+description: The D3DKMT_CHECKVIDPNEXCLUSIVEOWNERSHIP structure describes the parameters to determine the video present source in the path of a video present network (VidPN) topology that exclusively owns the VidPN.
+old-location: display\d3dkmt_checkvidpnexclusiveownership.htm
+old-project: display
+ms.assetid: 5a7f05a0-11ae-49ed-9015-f2712cc77880
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3dkmthk/D3DKMT_CHECKVIDPNEXCLUSIVEOWNERSHIP, D3DKMT_CHECKVIDPNEXCLUSIVEOWNERSHIP structure [Display Devices], D3DKMT_CHECKVIDPNEXCLUSIVEOWNERSHIP, OpenGL_Structs_23afa7dd-8aaa-402b-9b99-235be17cd26e.xml, _D3DKMT_CHECKVIDPNEXCLUSIVEOWNERSHIP, display.d3dkmt_checkvidpnexclusiveownership
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Windows
+req.target-min-winverclnt: D3DKMT_CHECKVIDPNEXCLUSIVEOWNERSHIP is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmthk.h
+apiname:
+-	D3DKMT_CHECKVIDPNEXCLUSIVEOWNERSHIP
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_CHECKVIDPNEXCLUSIVEOWNERSHIP
 ---
 
 # _D3DKMT_CHECKVIDPNEXCLUSIVEOWNERSHIP structure

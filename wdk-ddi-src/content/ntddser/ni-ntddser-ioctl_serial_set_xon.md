@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddser.IOCTL_SERIAL_SET_XON
-title : IOCTL_SERIAL_SET_XON
-author : windows-driver-content
-description : The IOCTL_SERIAL_SET_XON request emulates the reception of a XON (transmit on) character, which restarts reception of data.
-old-location : serports\ioctl_serial_set_xon.htm
-old-project : serports
-ms.assetid : 082a02dc-93c2-495d-bc20-cb3510c00d78
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : serports.ioctl_serial_set_xon, IOCTL_SERIAL_SET_XON control code [Serial Ports], IOCTL_SERIAL_SET_XON, ntddser/IOCTL_SERIAL_SET_XON, serref_1c7446da-0080-45f4-af38-c674b874883d.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddser.h
-req.include-header : Ntddser.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SD_REQUEST_FUNCTION
+UID: NI:ntddser.IOCTL_SERIAL_SET_XON
+title: IOCTL_SERIAL_SET_XON
+author: windows-driver-content
+description: The IOCTL_SERIAL_SET_XON request emulates the reception of a XON (transmit on) character, which restarts reception of data.
+old-location: serports\ioctl_serial_set_xon.htm
+old-project: serports
+ms.assetid: 082a02dc-93c2-495d-bc20-cb3510c00d78
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: serports.ioctl_serial_set_xon, IOCTL_SERIAL_SET_XON control code [Serial Ports], IOCTL_SERIAL_SET_XON, ntddser/IOCTL_SERIAL_SET_XON, serref_1c7446da-0080-45f4-af38-c674b874883d.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddser.h
+req.include-header: Ntddser.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddser.h
+apiname:
+-	IOCTL_SERIAL_SET_XON
+product: Windows
+targetos: Windows
+req.typenames: SD_REQUEST_FUNCTION
 ---
 
 # IOCTL_SERIAL_SET_XON IOCTL

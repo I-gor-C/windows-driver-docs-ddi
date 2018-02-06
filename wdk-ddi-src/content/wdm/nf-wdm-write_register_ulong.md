@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.WRITE_REGISTER_ULONG
-title : WRITE_REGISTER_ULONG function
-author : windows-driver-content
-description : The WRITE_REGISTER_ULONG routine writes a ULONG value to the specified address.
-old-location : kernel\write_register_ulong.htm
-old-project : kernel
-ms.assetid : d1f3d510-5b2c-4956-b9e0-cd26b2d818a9
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : k103_af58a3ec-4102-4a89-9c58-e56f99d793d0.xml, wdm/WRITE_REGISTER_ULONG, WRITE_REGISTER_ULONG, WRITE_REGISTER_ULONG routine [Kernel-Mode Driver Architecture], kernel.write_register_ulong
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : Any level (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.WRITE_REGISTER_ULONG
+title: WRITE_REGISTER_ULONG function
+author: windows-driver-content
+description: The WRITE_REGISTER_ULONG routine writes a ULONG value to the specified address.
+old-location: kernel\write_register_ulong.htm
+old-project: kernel
+ms.assetid: d1f3d510-5b2c-4956-b9e0-cd26b2d818a9
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: k103_af58a3ec-4102-4a89-9c58-e56f99d793d0.xml, wdm/WRITE_REGISTER_ULONG, WRITE_REGISTER_ULONG, WRITE_REGISTER_ULONG routine [Kernel-Mode Driver Architecture], kernel.write_register_ulong
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: Any level (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	WRITE_REGISTER_ULONG
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

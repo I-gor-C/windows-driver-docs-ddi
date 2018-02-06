@@ -1,41 +1,46 @@
 ---
-UID : NC:netdma.DMA_RESET_HANDLER
-title : DMA_RESET_HANDLER
-author : windows-driver-content
-description : The ProviderResetChannel function resets a DMA channel to the initial state that existed after the DMA channel was allocated.
-old-location : netvista\providerresetchannel.htm
-old-project : netvista
-ms.assetid : ee882897-fbc6-4017-8c30-2a54f6c49491
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.providerresetchannel, ProviderResetChannel callback function [Network Drivers Starting with Windows Vista], ProviderResetChannel, DMA_RESET_HANDLER, DMA_RESET_HANDLER, netdma/ProviderResetChannel, netdma_ref_b8d39a6d-73fa-4d8b-b7c7-3f5eb47a4fc4.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : netdma.h
-req.include-header : Netdma.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported for NetDMA 1.0 drivers in Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : MIRACAST_DRIVER_INTERFACE, *PMIRACAST_DRIVER_INTERFACE
+UID: NC:netdma.DMA_RESET_HANDLER
+title: DMA_RESET_HANDLER
+author: windows-driver-content
+description: The ProviderResetChannel function resets a DMA channel to the initial state that existed after the DMA channel was allocated.
+old-location: netvista\providerresetchannel.htm
+old-project: netvista
+ms.assetid: ee882897-fbc6-4017-8c30-2a54f6c49491
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.providerresetchannel, ProviderResetChannel callback function [Network Drivers Starting with Windows Vista], ProviderResetChannel, DMA_RESET_HANDLER, DMA_RESET_HANDLER, netdma/ProviderResetChannel, netdma_ref_b8d39a6d-73fa-4d8b-b7c7-3f5eb47a4fc4.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: netdma.h
+req.include-header: Netdma.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported for NetDMA 1.0 drivers in Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	netdma.h
+apiname:
+-	ProviderResetChannel
+product: Windows
+targetos: Windows
+req.typenames: MIRACAST_DRIVER_INTERFACE, *PMIRACAST_DRIVER_INTERFACE
 ---
 
 

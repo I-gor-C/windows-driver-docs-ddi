@@ -1,41 +1,46 @@
 ---
-UID : NS:avc._AVC_SUBUNIT_ADDR_SPEC
-title : "_AVC_SUBUNIT_ADDR_SPEC"
-author : windows-driver-content
-description : The AVC_SUBUNIT_ADDR_SPEC structure is used with virtual instances of avc.sys to describe virtual subunit addresses.
-old-location : stream\avc_subunit_addr_spec.htm
-old-project : stream
-ms.assetid : fa9fedc5-cacc-409a-99f5-7103b5424b3c
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : PAVC_SUBUNIT_ADDR_SPEC, _AVC_SUBUNIT_ADDR_SPEC, *PAVC_SUBUNIT_ADDR_SPEC, avc/AVC_SUBUNIT_ADDR_SPEC, avcref_56141f06-dd51-40cb-874a-ec136ec7683f.xml, AVC_SUBUNIT_ADDR_SPEC, stream.avc_subunit_addr_spec, AVC_SUBUNIT_ADDR_SPEC structure [Streaming Media Devices], avc/PAVC_SUBUNIT_ADDR_SPEC, PAVC_SUBUNIT_ADDR_SPEC structure pointer [Streaming Media Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : avc.h
-req.include-header : Avc.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PAVC_SUBUNIT_ADDR_SPEC, AVC_SUBUNIT_ADDR_SPEC"
+UID: NS:avc._AVC_SUBUNIT_ADDR_SPEC
+title: "_AVC_SUBUNIT_ADDR_SPEC"
+author: windows-driver-content
+description: The AVC_SUBUNIT_ADDR_SPEC structure is used with virtual instances of avc.sys to describe virtual subunit addresses.
+old-location: stream\avc_subunit_addr_spec.htm
+old-project: stream
+ms.assetid: fa9fedc5-cacc-409a-99f5-7103b5424b3c
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: PAVC_SUBUNIT_ADDR_SPEC, _AVC_SUBUNIT_ADDR_SPEC, *PAVC_SUBUNIT_ADDR_SPEC, avc/AVC_SUBUNIT_ADDR_SPEC, avcref_56141f06-dd51-40cb-874a-ec136ec7683f.xml, AVC_SUBUNIT_ADDR_SPEC, stream.avc_subunit_addr_spec, AVC_SUBUNIT_ADDR_SPEC structure [Streaming Media Devices], avc/PAVC_SUBUNIT_ADDR_SPEC, PAVC_SUBUNIT_ADDR_SPEC structure pointer [Streaming Media Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: avc.h
+req.include-header: Avc.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	avc.h
+apiname:
+-	AVC_SUBUNIT_ADDR_SPEC
+product: Windows
+targetos: Windows
+req.typenames: "*PAVC_SUBUNIT_ADDR_SPEC, AVC_SUBUNIT_ADDR_SPEC"
 ---
 
 # _AVC_SUBUNIT_ADDR_SPEC structure

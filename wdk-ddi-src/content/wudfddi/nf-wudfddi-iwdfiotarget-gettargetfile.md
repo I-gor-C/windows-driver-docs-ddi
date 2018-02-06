@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFIoTarget.GetTargetFile
-title : IWDFIoTarget::GetTargetFile method
-author : windows-driver-content
-description : The GetTargetFile method retrieves the framework file object that is associated with the I/O target object.
-old-location : wdf\iwdfiotarget_gettargetfile.htm
-old-project : wdf
-ms.assetid : d38ede60-9bcf-4c90-8c41-8f1edf1a1d23
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : UMDFIoTargetObjectRef_c31a719b-616e-4559-851a-a9f5c35bc9e5.xml, IWDFIoTarget, GetTargetFile method, wdf.iwdfiotarget_gettargetfile, GetTargetFile method, IWDFIoTarget interface, IWDFIoTarget::GetTargetFile, IWDFIoTarget interface, GetTargetFile method, umdf.iwdfiotarget_gettargetfile, wudfddi/IWDFIoTarget::GetTargetFile, GetTargetFile
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.5
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFIoTarget.GetTargetFile
+title: IWDFIoTarget::GetTargetFile method
+author: windows-driver-content
+description: The GetTargetFile method retrieves the framework file object that is associated with the I/O target object.
+old-location: wdf\iwdfiotarget_gettargetfile.htm
+old-project: wdf
+ms.assetid: d38ede60-9bcf-4c90-8c41-8f1edf1a1d23
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: UMDFIoTargetObjectRef_c31a719b-616e-4559-851a-a9f5c35bc9e5.xml, IWDFIoTarget, GetTargetFile method, wdf.iwdfiotarget_gettargetfile, GetTargetFile method, IWDFIoTarget interface, IWDFIoTarget::GetTargetFile, IWDFIoTarget interface, GetTargetFile method, umdf.iwdfiotarget_gettargetfile, wudfddi/IWDFIoTarget::GetTargetFile, GetTargetFile
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.5
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFIoTarget.GetTargetFile
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

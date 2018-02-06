@@ -1,42 +1,47 @@
 ---
-UID : NF:wiautil.wiauGetValidFormats
-title : wiauGetValidFormats function
-author : windows-driver-content
-description : The wiauGetValidFormats function calls the IWiaMiniDrv::drvGetWiaFormatInfo method and makes a list of valid formats, using a specified tymed value.
-old-location : image\wiaugetvalidformats.htm
-old-project : image
-ms.assetid : 8bf1d76a-2e5b-4e9a-85fc-187fea72d38c
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : wiauGetValidFormats function [Imaging Devices], wiautil/wiauGetValidFormats, wiauGetValidFormats, image.wiaugetvalidformats, wiauFncs_f311862b-03fe-4fe6-8b30-46cd9a53513b.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wiautil.h
-req.include-header : Wiautil.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows XP and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SKIP_AMOUNT
-req.product : Windows 10 or later.
+UID: NF:wiautil.wiauGetValidFormats
+title: wiauGetValidFormats function
+author: windows-driver-content
+description: The wiauGetValidFormats function calls the IWiaMiniDrv::drvGetWiaFormatInfo method and makes a list of valid formats, using a specified tymed value.
+old-location: image\wiaugetvalidformats.htm
+old-project: image
+ms.assetid: 8bf1d76a-2e5b-4e9a-85fc-187fea72d38c
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: wiauGetValidFormats function [Imaging Devices], wiautil/wiauGetValidFormats, wiauGetValidFormats, image.wiaugetvalidformats, wiauFncs_f311862b-03fe-4fe6-8b30-46cd9a53513b.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wiautil.h
+req.include-header: Wiautil.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows XP and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wiautil.h
+apiname:
+-	wiauGetValidFormats
+product: Windows
+targetos: Windows
+req.typenames: SKIP_AMOUNT
+req.product: Windows 10 or later.
 ---
 
 

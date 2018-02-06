@@ -1,41 +1,46 @@
 ---
-UID : NF:filterpipeline.DrvPopulateFilterServices
-title : DrvPopulateFilterServices function
-author : windows-driver-content
-description : The DrvPopulateFilterServices function is called by the XPSDrv filter pipeline manager to allow the service provider to instantiate filter service objects in the filter pipeline property bag specified by the pPropertyBag parameter.
-old-location : print\drvpopulatefilterservices.htm
-old-project : print
-ms.assetid : A24DAC54-57FE-419D-8B5D-54B8AFC338DE
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : print.drvpopulatefilterservices, DrvPopulateFilterServices, DrvPopulateFilterServices function [Print Devices], filterpipeline/DrvPopulateFilterServices
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : filterpipeline.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:filterpipeline.DrvPopulateFilterServices
+title: DrvPopulateFilterServices function
+author: windows-driver-content
+description: The DrvPopulateFilterServices function is called by the XPSDrv filter pipeline manager to allow the service provider to instantiate filter service objects in the filter pipeline property bag specified by the pPropertyBag parameter.
+old-location: print\drvpopulatefilterservices.htm
+old-project: print
+ms.assetid: A24DAC54-57FE-419D-8B5D-54B8AFC338DE
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: print.drvpopulatefilterservices, DrvPopulateFilterServices, DrvPopulateFilterServices function [Print Devices], filterpipeline/DrvPopulateFilterServices
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: filterpipeline.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Filterpipeline.h
+apiname:
+-	DrvPopulateFilterServices
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

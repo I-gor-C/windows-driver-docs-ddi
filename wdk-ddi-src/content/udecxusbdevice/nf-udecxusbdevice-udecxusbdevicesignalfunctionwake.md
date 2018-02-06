@@ -1,42 +1,48 @@
 ---
-UID : NF:udecxusbdevice.UdecxUsbDeviceSignalFunctionWake
-title : UdecxUsbDeviceSignalFunctionWake function
-author : windows-driver-content
-description : Initiates wake up of the specified function from a low power state. This applies to virtual USB 3.0 devices.
-old-location : buses\udecxusbdevicesignalfunctionwake.htm
-old-project : usbref
-ms.assetid : 82B3B3BD-CEAC-427E-A89E-84CBE85BDBE7
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : udecxusbdevice/UdecxUsbDeviceSignalFunctionWake, UdecxUsbDeviceSignalFunctionWake function [Buses], UdecxUsbDeviceSignalFunctionWake, buses.udecxusbdevicesignalfunctionwake
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : udecxusbdevice.h
-req.include-header : Udecx.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 1.15
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Udecxstub.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUDECX_USB_DEVICE_WAKE_SETTING, UDECX_USB_DEVICE_WAKE_SETTING"
-req.product : Windows 10 or later.
+UID: NF:udecxusbdevice.UdecxUsbDeviceSignalFunctionWake
+title: UdecxUsbDeviceSignalFunctionWake function
+author: windows-driver-content
+description: Initiates wake up of the specified function from a low power state. This applies to virtual USB 3.0 devices.
+old-location: buses\udecxusbdevicesignalfunctionwake.htm
+old-project: usbref
+ms.assetid: 82B3B3BD-CEAC-427E-A89E-84CBE85BDBE7
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: udecxusbdevice/UdecxUsbDeviceSignalFunctionWake, UdecxUsbDeviceSignalFunctionWake function [Buses], UdecxUsbDeviceSignalFunctionWake, buses.udecxusbdevicesignalfunctionwake
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: udecxusbdevice.h
+req.include-header: Udecx.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 1.15
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Udecxstub.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Udecxstub.lib
+-	Udecxstub.dll
+apiname:
+-	UdecxUsbDeviceSignalFunctionWake
+product: Windows
+targetos: Windows
+req.typenames: "*PUDECX_USB_DEVICE_WAKE_SETTING, UDECX_USB_DEVICE_WAKE_SETTING"
+req.product: Windows 10 or later.
 ---
 
 

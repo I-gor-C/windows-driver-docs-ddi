@@ -1,42 +1,47 @@
 ---
-UID : NC:wdm.PO_FX_DEVICE_POWER_NOT_REQUIRED_CALLBACK
-title : PO_FX_DEVICE_POWER_NOT_REQUIRED_CALLBACK
-author : windows-driver-content
-description : The DevicePowerNotRequiredCallback callback routine notifies the device driver that the device is not required to stay in the D0 power state.
-old-location : kernel\devicepowernotrequiredcallback.htm
-old-project : kernel
-ms.assetid : 4BE1EEF7-7053-47AF-91E8-7313C3A56718
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.devicepowernotrequiredcallback, DevicePowerNotRequiredCallback routine [Kernel-Mode Driver Architecture], DevicePowerNotRequiredCallback, PO_FX_DEVICE_POWER_NOT_REQUIRED_CALLBACK, PO_FX_DEVICE_POWER_NOT_REQUIRED_CALLBACK, wdm/DevicePowerNotRequiredCallback
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdm.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Supported starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Called at IRQL <= DISPATCH_LEVEL.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
-req.product : Windows 10 or later.
+UID: NC:wdm.PO_FX_DEVICE_POWER_NOT_REQUIRED_CALLBACK
+title: PO_FX_DEVICE_POWER_NOT_REQUIRED_CALLBACK
+author: windows-driver-content
+description: The DevicePowerNotRequiredCallback callback routine notifies the device driver that the device is not required to stay in the D0 power state.
+old-location: kernel\devicepowernotrequiredcallback.htm
+old-project: kernel
+ms.assetid: 4BE1EEF7-7053-47AF-91E8-7313C3A56718
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.devicepowernotrequiredcallback, DevicePowerNotRequiredCallback routine [Kernel-Mode Driver Architecture], DevicePowerNotRequiredCallback, PO_FX_DEVICE_POWER_NOT_REQUIRED_CALLBACK, PO_FX_DEVICE_POWER_NOT_REQUIRED_CALLBACK, wdm/DevicePowerNotRequiredCallback
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdm.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Supported starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Called at IRQL <= DISPATCH_LEVEL.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Wdm.h
+apiname:
+-	DevicePowerNotRequiredCallback
+product: Windows
+targetos: Windows
+req.typenames: WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+req.product: Windows 10 or later.
 ---
 
 

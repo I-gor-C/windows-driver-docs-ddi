@@ -1,41 +1,46 @@
 ---
-UID : NC:bthsdpddi.PGETNEXTELEMENT
-title : PGETNEXTELEMENT
-author : windows-driver-content
-description : The Bluetooth SdpGetNextElement function is used to iterate through the entries found in an SDP record stream.
-old-location : bltooth\sdpgetnextelement.htm
-old-project : bltooth
-ms.assetid : 60216196-f8c7-4555-a461-4862ce6bc376
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : bltooth.sdpgetnextelement, SdpGetNextElement callback function [Bluetooth Devices], SdpGetNextElement, PGETNEXTELEMENT, PGETNEXTELEMENT, sdplib/SdpGetNextElement, bth_funcs_344a59cb-6151-4634-bc5f-cb23c58eb329.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : bthsdpddi.h
-req.include-header : BthSdpddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Versions:\_Supported in Windows Vista, and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= PASSIVE_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PBTH_VENDOR_SPECIFIC_COMMAND, BTH_VENDOR_SPECIFIC_COMMAND"
+UID: NC:bthsdpddi.PGETNEXTELEMENT
+title: PGETNEXTELEMENT
+author: windows-driver-content
+description: The Bluetooth SdpGetNextElement function is used to iterate through the entries found in an SDP record stream.
+old-location: bltooth\sdpgetnextelement.htm
+old-project: bltooth
+ms.assetid: 60216196-f8c7-4555-a461-4862ce6bc376
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: bltooth.sdpgetnextelement, SdpGetNextElement callback function [Bluetooth Devices], SdpGetNextElement, PGETNEXTELEMENT, PGETNEXTELEMENT, sdplib/SdpGetNextElement, bth_funcs_344a59cb-6151-4634-bc5f-cb23c58eb329.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: bthsdpddi.h
+req.include-header: BthSdpddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Versions:\_Supported in Windows Vista, and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= PASSIVE_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	sdplib.h
+apiname:
+-	SdpGetNextElement
+product: Windows
+targetos: Windows
+req.typenames: "*PBTH_VENDOR_SPECIFIC_COMMAND, BTH_VENDOR_SPECIFIC_COMMAND"
 ---
 
 

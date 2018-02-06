@@ -1,42 +1,47 @@
 ---
-UID : NS:prntfont._UFF_FONTDIRECTORY
-title : "_UFF_FONTDIRECTORY"
-author : windows-driver-content
-description : The UFF_FONTDIRECTORY structure is used to specify the directory of font descriptions contained in a Unidrv font format file (.uff file).
-old-location : print\uff_fontdirectory.htm
-old-project : print
-ms.assetid : d1cde8a4-f27b-440c-bfb1-c9a564c59c04
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : "*PUFF_FONTDIRECTORY, PUFF_FONTDIRECTORY structure pointer [Print Devices], prntfont/UFF_FONTDIRECTORY, print_unidrv-pscript_fonts_979a2793-a3e4-4939-aab1-29510951b621.xml, UFF_FONTDIRECTORY, UFF_FONTDIRECTORY structure [Print Devices], PUFF_FONTDIRECTORY, prntfont/PUFF_FONTDIRECTORY, print.uff_fontdirectory, _UFF_FONTDIRECTORY"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : prntfont.h
-req.include-header : Prntfont.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : UFF_FONTDIRECTORY, *PUFF_FONTDIRECTORY
-req.product : Windows 10 or later.
+UID: NS:prntfont._UFF_FONTDIRECTORY
+title: "_UFF_FONTDIRECTORY"
+author: windows-driver-content
+description: The UFF_FONTDIRECTORY structure is used to specify the directory of font descriptions contained in a Unidrv font format file (.uff file).
+old-location: print\uff_fontdirectory.htm
+old-project: print
+ms.assetid: d1cde8a4-f27b-440c-bfb1-c9a564c59c04
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: "*PUFF_FONTDIRECTORY, PUFF_FONTDIRECTORY structure pointer [Print Devices], prntfont/UFF_FONTDIRECTORY, print_unidrv-pscript_fonts_979a2793-a3e4-4939-aab1-29510951b621.xml, UFF_FONTDIRECTORY, UFF_FONTDIRECTORY structure [Print Devices], PUFF_FONTDIRECTORY, prntfont/PUFF_FONTDIRECTORY, print.uff_fontdirectory, _UFF_FONTDIRECTORY"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: prntfont.h
+req.include-header: Prntfont.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	prntfont.h
+apiname:
+-	UFF_FONTDIRECTORY
+product: Windows
+targetos: Windows
+req.typenames: UFF_FONTDIRECTORY, *PUFF_FONTDIRECTORY
+req.product: Windows 10 or later.
 ---
 
 # _UFF_FONTDIRECTORY structure

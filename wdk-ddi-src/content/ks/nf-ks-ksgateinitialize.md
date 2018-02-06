@@ -1,41 +1,46 @@
 ---
-UID : NF:ks.KsGateInitialize
-title : KsGateInitialize function
-author : windows-driver-content
-description : The KsGateInitialize function initializes a gate for use.
-old-location : stream\ksgateinitialize.htm
-old-project : stream
-ms.assetid : e64715d2-a8f1-47c3-9422-b565800ff79e
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KsGateInitialize function [Streaming Media Devices], KsGateInitialize, stream.ksgateinitialize, avfunc_1ec7041b-e335-4920-ad40-06290d1579c2.xml, ks/KsGateInitialize
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsGateInitialize
+title: KsGateInitialize function
+author: windows-driver-content
+description: The KsGateInitialize function initializes a gate for use.
+old-location: stream\ksgateinitialize.htm
+old-project: stream
+ms.assetid: e64715d2-a8f1-47c3-9422-b565800ff79e
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KsGateInitialize function [Streaming Media Devices], KsGateInitialize, stream.ksgateinitialize, avfunc_1ec7041b-e335-4920-ad40-06290d1579c2.xml, ks/KsGateInitialize
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	KsGateInitialize
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

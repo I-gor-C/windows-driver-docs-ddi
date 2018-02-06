@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGK_QUERYSEGMENTMEMORYSTATE
-title : "_DXGK_QUERYSEGMENTMEMORYSTATE"
-author : windows-driver-content
-description : DXGK_QUERYSEGMENTMEMORYSTATE is used with DxgkDdiQueryAdapterInfo to query invalid graphics processing unit (GPU) memory ranges.
-old-location : display\dxgk_querysegmentmemorystate.htm
-old-project : display
-ms.assetid : 565D8D8D-6EBB-4303-8F7E-E2A4B1DAE4EA
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DXGK_SEGMENTMEMORYSTATE, DXGK_QUERYSEGMENTMEMORYSTATE structure [Display Devices], _DXGK_QUERYSEGMENTMEMORYSTATE, d3dkmddi/DXGK_QUERYSEGMENTMEMORYSTATE, DXGK_QUERYSEGMENTMEMORYSTATE, display.dxgk_querysegmentmemorystate
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_QUERYSEGMENTMEMORYSTATE, DXGK_SEGMENTMEMORYSTATE
+UID: NS:d3dkmddi._DXGK_QUERYSEGMENTMEMORYSTATE
+title: "_DXGK_QUERYSEGMENTMEMORYSTATE"
+author: windows-driver-content
+description: DXGK_QUERYSEGMENTMEMORYSTATE is used with DxgkDdiQueryAdapterInfo to query invalid graphics processing unit (GPU) memory ranges.
+old-location: display\dxgk_querysegmentmemorystate.htm
+old-project: display
+ms.assetid: 565D8D8D-6EBB-4303-8F7E-E2A4B1DAE4EA
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DXGK_SEGMENTMEMORYSTATE, DXGK_QUERYSEGMENTMEMORYSTATE structure [Display Devices], _DXGK_QUERYSEGMENTMEMORYSTATE, d3dkmddi/DXGK_QUERYSEGMENTMEMORYSTATE, DXGK_QUERYSEGMENTMEMORYSTATE, display.dxgk_querysegmentmemorystate
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DXGK_QUERYSEGMENTMEMORYSTATE
+product: Windows
+targetos: Windows
+req.typenames: DXGK_QUERYSEGMENTMEMORYSTATE, DXGK_SEGMENTMEMORYSTATE
 ---
 
 # _DXGK_QUERYSEGMENTMEMORYSTATE structure

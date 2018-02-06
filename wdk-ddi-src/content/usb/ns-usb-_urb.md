@@ -1,42 +1,47 @@
 ---
-UID : NS:usb._URB
-title : "_URB"
-author : windows-driver-content
-description : The URB structure is used by USB client drivers to describe USB request blocks (URBs) that send requests to the USB driver stack. The URB structure defines a format for all possible commands that can be sent to a USB device.
-old-location : buses\urb.htm
-old-project : usbref
-ms.assetid : f28b2c97-61ee-4843-b3c5-b3a55f172c50
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : usb/PURB, PURB, usb/URB, usbstrct_20441a98-258d-44d2-b414-67b336a44fac.xml, URB, URB structure [Buses], _URB, buses.urb, PURB structure pointer [Buses]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : usb.h
-req.include-header : Usb.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : URB, PURB
-req.product : Windows 10 or later.
+UID: NS:usb._URB
+title: "_URB"
+author: windows-driver-content
+description: The URB structure is used by USB client drivers to describe USB request blocks (URBs) that send requests to the USB driver stack. The URB structure defines a format for all possible commands that can be sent to a USB device.
+old-location: buses\urb.htm
+old-project: usbref
+ms.assetid: f28b2c97-61ee-4843-b3c5-b3a55f172c50
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: usb/PURB, PURB, usb/URB, usbstrct_20441a98-258d-44d2-b414-67b336a44fac.xml, URB, URB structure [Buses], _URB, buses.urb, PURB structure pointer [Buses]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: usb.h
+req.include-header: Usb.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	usb.h
+apiname:
+-	URB
+product: Windows
+targetos: Windows
+req.typenames: URB, PURB
+req.product: Windows 10 or later.
 ---
 
 # _URB structure

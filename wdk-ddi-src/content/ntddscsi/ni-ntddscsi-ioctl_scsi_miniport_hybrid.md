@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddscsi.IOCTL_SCSI_MINIPORT_HYBRID
-title : IOCTL_SCSI_MINIPORT_HYBRID
-author : windows-driver-content
-description : The IOCTL_SCSI_MINIPORT_HYBRID control code sends a hybrid disk control request to an HBA-specific miniport driver.
-old-location : storage\ioctl_scsi_miniport_hybrid.htm
-old-project : storage
-ms.assetid : 57DA022A-FAC6-4727-94E1-BCF6FEF1E945
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_scsi_miniport_hybrid, IOCTL_SCSI_MINIPORT_HYBRID control code [Storage Devices], IOCTL_SCSI_MINIPORT_HYBRID, ntddscsi/IOCTL_SCSI_MINIPORT_HYBRID
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddscsi.h
-req.include-header : Ntddscsi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows 8.1.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : MP_STORAGE_DIAGNOSTIC_TARGET_TYPE, *PMP_STORAGE_DIAGNOSTIC_TARGET_TYPE
+UID: NI:ntddscsi.IOCTL_SCSI_MINIPORT_HYBRID
+title: IOCTL_SCSI_MINIPORT_HYBRID
+author: windows-driver-content
+description: The IOCTL_SCSI_MINIPORT_HYBRID control code sends a hybrid disk control request to an HBA-specific miniport driver.
+old-location: storage\ioctl_scsi_miniport_hybrid.htm
+old-project: storage
+ms.assetid: 57DA022A-FAC6-4727-94E1-BCF6FEF1E945
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_scsi_miniport_hybrid, IOCTL_SCSI_MINIPORT_HYBRID control code [Storage Devices], IOCTL_SCSI_MINIPORT_HYBRID, ntddscsi/IOCTL_SCSI_MINIPORT_HYBRID
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddscsi.h
+req.include-header: Ntddscsi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows 8.1.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddscsi.h
+apiname:
+-	IOCTL_SCSI_MINIPORT_HYBRID
+product: Windows
+targetos: Windows
+req.typenames: MP_STORAGE_DIAGNOSTIC_TARGET_TYPE, *PMP_STORAGE_DIAGNOSTIC_TARGET_TYPE
 ---
 
 # IOCTL_SCSI_MINIPORT_HYBRID IOCTL

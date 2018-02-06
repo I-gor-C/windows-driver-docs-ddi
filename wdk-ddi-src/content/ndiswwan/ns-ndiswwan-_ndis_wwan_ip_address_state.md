@@ -1,41 +1,46 @@
 ---
-UID : NS:ndiswwan._NDIS_WWAN_IP_ADDRESS_STATE
-title : "_NDIS_WWAN_IP_ADDRESS_STATE"
-author : windows-driver-content
-description : The NDIS_WWAN_IP_ADDRESS_STATE structure represents the IP address of a PDP context.
-old-location : netvista\ndis_wwan_ip_address_state.htm
-old-project : netvista
-ms.assetid : 114EDC8D-2FD2-4602-827E-9737638E49AC
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : PNDIS_WWAN_IP_ADDRESS_STATE structure pointer [Network Drivers Starting with Windows Vista], NDIS_WWAN_IP_ADDRESS_STATE, PNDIS_WWAN_IP_ADDRESS_STATE, *PNDIS_WWAN_IP_ADDRESS_STATE, netvista.ndis_wwan_ip_address_state, ndiswwan/PNDIS_WWAN_IP_ADDRESS_STATE, NDIS_WWAN_IP_ADDRESS_STATE structure [Network Drivers Starting with Windows Vista], ndiswwan/NDIS_WWAN_IP_ADDRESS_STATE, _NDIS_WWAN_IP_ADDRESS_STATE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndiswwan.h
-req.include-header : Ndiswwan.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 8.1 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_WWAN_IP_ADDRESS_STATE, *PNDIS_WWAN_IP_ADDRESS_STATE
+UID: NS:ndiswwan._NDIS_WWAN_IP_ADDRESS_STATE
+title: "_NDIS_WWAN_IP_ADDRESS_STATE"
+author: windows-driver-content
+description: The NDIS_WWAN_IP_ADDRESS_STATE structure represents the IP address of a PDP context.
+old-location: netvista\ndis_wwan_ip_address_state.htm
+old-project: netvista
+ms.assetid: 114EDC8D-2FD2-4602-827E-9737638E49AC
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: PNDIS_WWAN_IP_ADDRESS_STATE structure pointer [Network Drivers Starting with Windows Vista], NDIS_WWAN_IP_ADDRESS_STATE, PNDIS_WWAN_IP_ADDRESS_STATE, *PNDIS_WWAN_IP_ADDRESS_STATE, netvista.ndis_wwan_ip_address_state, ndiswwan/PNDIS_WWAN_IP_ADDRESS_STATE, NDIS_WWAN_IP_ADDRESS_STATE structure [Network Drivers Starting with Windows Vista], ndiswwan/NDIS_WWAN_IP_ADDRESS_STATE, _NDIS_WWAN_IP_ADDRESS_STATE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndiswwan.h
+req.include-header: Ndiswwan.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 8.1 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndiswwan.h
+apiname:
+-	NDIS_WWAN_IP_ADDRESS_STATE
+product: Windows
+targetos: Windows
+req.typenames: NDIS_WWAN_IP_ADDRESS_STATE, *PNDIS_WWAN_IP_ADDRESS_STATE
 ---
 
 # _NDIS_WWAN_IP_ADDRESS_STATE structure

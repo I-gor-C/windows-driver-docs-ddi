@@ -1,41 +1,46 @@
 ---
-UID : NI:parallel.IOCTL_INTERNAL_GET_PARALLEL_PORT_INFO
-title : IOCTL_INTERNAL_GET_PARALLEL_PORT_INFO
-author : windows-driver-content
-description : The IOCTL_INTERNAL_GET_PARALLEL_PORT_INFO request returns information about a parallel port.
-old-location : parports\ioctl_internal_get_parallel_port_info.htm
-old-project : parports
-ms.assetid : c621e510-1c86-4029-aeb7-e16a38e96f03
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : parports.ioctl_internal_get_parallel_port_info, IOCTL_INTERNAL_GET_PARALLEL_PORT_INFO control code [Parallel Ports], IOCTL_INTERNAL_GET_PARALLEL_PORT_INFO, parallel/IOCTL_INTERNAL_GET_PARALLEL_PORT_INFO, cisspd_c38efa0a-2f2b-481d-82e2-911a152430fd.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : parallel.h
-req.include-header : Parallel.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RILGBATOKEN, *LPRILGBATOKEN
+UID: NI:parallel.IOCTL_INTERNAL_GET_PARALLEL_PORT_INFO
+title: IOCTL_INTERNAL_GET_PARALLEL_PORT_INFO
+author: windows-driver-content
+description: The IOCTL_INTERNAL_GET_PARALLEL_PORT_INFO request returns information about a parallel port.
+old-location: parports\ioctl_internal_get_parallel_port_info.htm
+old-project: parports
+ms.assetid: c621e510-1c86-4029-aeb7-e16a38e96f03
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: parports.ioctl_internal_get_parallel_port_info, IOCTL_INTERNAL_GET_PARALLEL_PORT_INFO control code [Parallel Ports], IOCTL_INTERNAL_GET_PARALLEL_PORT_INFO, parallel/IOCTL_INTERNAL_GET_PARALLEL_PORT_INFO, cisspd_c38efa0a-2f2b-481d-82e2-911a152430fd.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: parallel.h
+req.include-header: Parallel.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	parallel.h
+apiname:
+-	IOCTL_INTERNAL_GET_PARALLEL_PORT_INFO
+product: Windows
+targetos: Windows
+req.typenames: RILGBATOKEN, *LPRILGBATOKEN
 ---
 
 # IOCTL_INTERNAL_GET_PARALLEL_PORT_INFO IOCTL

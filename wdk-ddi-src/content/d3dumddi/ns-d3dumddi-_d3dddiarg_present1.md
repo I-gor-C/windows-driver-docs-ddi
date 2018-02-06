@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._D3DDDIARG_PRESENT1
-title : "_D3DDDIARG_PRESENT1"
-author : windows-driver-content
-description : Describes a resource to display. Used with the pfnPresent1(D3D) function by Windows Display Driver Model (WDDM) 1.3 and later user-mode display drivers.
-old-location : display\d3dddiarg_present1.htm
-old-project : display
-ms.assetid : 17EBEEF1-4C86-4948-AADA-669B2952755A
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DDDIARG_PRESENT1, D3DDDIARG_PRESENT1 structure [Display Devices], d3dumddi/D3DDDIARG_PRESENT1, display.d3dddiarg_present1, _D3DDDIARG_PRESENT1
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : TBD
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDIARG_PRESENT1
+UID: NS:d3dumddi._D3DDDIARG_PRESENT1
+title: "_D3DDDIARG_PRESENT1"
+author: windows-driver-content
+description: Describes a resource to display. Used with the pfnPresent1(D3D) function by Windows Display Driver Model (WDDM) 1.3 and later user-mode display drivers.
+old-location: display\d3dddiarg_present1.htm
+old-project: display
+ms.assetid: 17EBEEF1-4C86-4948-AADA-669B2952755A
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DDDIARG_PRESENT1, D3DDDIARG_PRESENT1 structure [Display Devices], d3dumddi/D3DDDIARG_PRESENT1, display.d3dddiarg_present1, _D3DDDIARG_PRESENT1
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: TBD
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	D3DDDIARG_PRESENT1
+product: Windows
+targetos: Windows
+req.typenames: D3DDDIARG_PRESENT1
 ---
 
 # _D3DDDIARG_PRESENT1 structure

@@ -1,42 +1,47 @@
 ---
-UID : NF:rxcontx.RxResumeBlockedOperations_Serially
-title : RxResumeBlockedOperations_Serially function
-author : windows-driver-content
-description : RxResumeBlockedOperations_Serially wakes up the next waiting thread, if any, on the serialized blocking I/O queue.
-old-location : ifsk\rxresumeblockedoperations_serially.htm
-old-project : ifsk
-ms.assetid : 8418ed17-39f0-4a3b-9eb5-453c7cc2ae98
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : RxResumeBlockedOperations_Serially, ifsk.rxresumeblockedoperations_serially, rxref_b1284b31-72f0-4e0e-9602-817080b96e16.xml, RxResumeBlockedOperations_Serially function [Installable File System Drivers], rxcontx/RxResumeBlockedOperations_Serially
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : rxcontx.h
-req.include-header : Rxcontx.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*LPRILWRITEPHONEBOOKENTRYPARAMS, RILWRITEPHONEBOOKENTRYPARAMS"
-req.product : Windows 10 or later.
+UID: NF:rxcontx.RxResumeBlockedOperations_Serially
+title: RxResumeBlockedOperations_Serially function
+author: windows-driver-content
+description: RxResumeBlockedOperations_Serially wakes up the next waiting thread, if any, on the serialized blocking I/O queue.
+old-location: ifsk\rxresumeblockedoperations_serially.htm
+old-project: ifsk
+ms.assetid: 8418ed17-39f0-4a3b-9eb5-453c7cc2ae98
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: RxResumeBlockedOperations_Serially, ifsk.rxresumeblockedoperations_serially, rxref_b1284b31-72f0-4e0e-9602-817080b96e16.xml, RxResumeBlockedOperations_Serially function [Installable File System Drivers], rxcontx/RxResumeBlockedOperations_Serially
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: rxcontx.h
+req.include-header: Rxcontx.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	rxcontx.h
+apiname:
+-	RxResumeBlockedOperations_Serially
+product: Windows
+targetos: Windows
+req.typenames: "*LPRILWRITEPHONEBOOKENTRYPARAMS, RILWRITEPHONEBOOKENTRYPARAMS"
+req.product: Windows 10 or later.
 ---
 
 

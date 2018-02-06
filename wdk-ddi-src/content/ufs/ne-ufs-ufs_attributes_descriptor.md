@@ -1,42 +1,47 @@
 ---
-UID : NE:ufs.UFS_ATTRIBUTES_DESCRIPTOR
-title : UFS_ATTRIBUTES_DESCRIPTOR
-author : windows-driver-content
-description : UFS_ATTRIBUTES_DESCRIPTOR describes the different types of attributes used by Universal Flash Storage (UFS) descriptors.
-old-location : storage\ufs_attributes_descriptor.htm
-old-project : storage
-ms.assetid : 695D8FE9-FADB-488F-A5F7-7715EAD48DD6
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : ufs/UFS_bPSAState, UFS_wExceptionEventControl, ufs/UFS_dDynCapNeeded, UFS_bRefClkFreq, UFS_bOutOfOrderDataEn, UFS_bPurgeStatus, UFS_bDeviceFFUStatus, ufs/UFS_bActiveICCLevel, ufs/UFS_wExceptionEventControl, ufs/UFS_bDeviceFFUStatus, ufs/UFS_bBootLunEn, UFS_wContextConf, ufs/UFS_Obsolete, ufs/UFS_bOutOfOrderDataEn, UFS_bMaxDataInSize, ufs/UFS_bConfigDescrLock, UFS_bActiveICCLevel, storage.ufs_attributes_descriptor, UFS_ATTRIBUTES_DESCRIPTOR, ufs/UFS_bMaxNumOfRTT, ufs/UFS_Reserved03, UFS_Reserved02, ufs/UFS_bCurrentPowerMode, ufs/UFS_bBackgroundOpStatus, UFS_bCurrentPowerMode, UFS_bPSAState, UFS_bBootLunEn, ufs/UFS_bMaxDataOutSize, UFS_bMaxDataOutSize, ufs/UFS_bMaxDataInSize, UFS_bBackgroundOpStatus, UFS_dSecondsPassed, ufs/UFS_Reserved01, UFS_dDynCapNeeded, ufs/UFS_Reserved02, UFS_ATTRIBUTES_DESCRIPTOR enumeration [Storage Devices], UFS_Obsolete, UFS_wExceptionEventStatus, ufs/UFS_dSecondsPassed, ufs/UFS_bPurgeStatus, ufs/UFS_wContextConf, UFS_bMaxNumOfRTT, ufs/UFS_wExceptionEventStatus, ufs/UFS_bRefClkFreq, UFS_Reserved01, ufs/UFS_dPSADataSize, UFS_bConfigDescrLock, UFS_dPSADataSize, ufs/UFS_ATTRIBUTES_DESCRIPTOR, UFS_Reserved03
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : ufs.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10, version 1709
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : UFS_ATTRIBUTES_DESCRIPTOR
-req.product : Windows 10 or later.
+UID: NE:ufs.UFS_ATTRIBUTES_DESCRIPTOR
+title: UFS_ATTRIBUTES_DESCRIPTOR
+author: windows-driver-content
+description: UFS_ATTRIBUTES_DESCRIPTOR describes the different types of attributes used by Universal Flash Storage (UFS) descriptors.
+old-location: storage\ufs_attributes_descriptor.htm
+old-project: storage
+ms.assetid: 695D8FE9-FADB-488F-A5F7-7715EAD48DD6
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: ufs/UFS_bPSAState, UFS_wExceptionEventControl, ufs/UFS_dDynCapNeeded, UFS_bRefClkFreq, UFS_bOutOfOrderDataEn, UFS_bPurgeStatus, UFS_bDeviceFFUStatus, ufs/UFS_bActiveICCLevel, ufs/UFS_wExceptionEventControl, ufs/UFS_bDeviceFFUStatus, ufs/UFS_bBootLunEn, UFS_wContextConf, ufs/UFS_Obsolete, ufs/UFS_bOutOfOrderDataEn, UFS_bMaxDataInSize, ufs/UFS_bConfigDescrLock, UFS_bActiveICCLevel, storage.ufs_attributes_descriptor, UFS_ATTRIBUTES_DESCRIPTOR, ufs/UFS_bMaxNumOfRTT, ufs/UFS_Reserved03, UFS_Reserved02, ufs/UFS_bCurrentPowerMode, ufs/UFS_bBackgroundOpStatus, UFS_bCurrentPowerMode, UFS_bPSAState, UFS_bBootLunEn, ufs/UFS_bMaxDataOutSize, UFS_bMaxDataOutSize, ufs/UFS_bMaxDataInSize, UFS_bBackgroundOpStatus, UFS_dSecondsPassed, ufs/UFS_Reserved01, UFS_dDynCapNeeded, ufs/UFS_Reserved02, UFS_ATTRIBUTES_DESCRIPTOR enumeration [Storage Devices], UFS_Obsolete, UFS_wExceptionEventStatus, ufs/UFS_dSecondsPassed, ufs/UFS_bPurgeStatus, ufs/UFS_wContextConf, UFS_bMaxNumOfRTT, ufs/UFS_wExceptionEventStatus, ufs/UFS_bRefClkFreq, UFS_Reserved01, ufs/UFS_dPSADataSize, UFS_bConfigDescrLock, UFS_dPSADataSize, ufs/UFS_ATTRIBUTES_DESCRIPTOR, UFS_Reserved03
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: ufs.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10, version 1709
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ufs.h
+apiname:
+-	UFS_ATTRIBUTES_DESCRIPTOR
+product: Windows
+targetos: Windows
+req.typenames: UFS_ATTRIBUTES_DESCRIPTOR
+req.product: Windows 10 or later.
 ---
 
 # UFS_ATTRIBUTES_DESCRIPTOR Enumeration
@@ -74,17 +79,17 @@ typedef enum _UFS_ATTRIBUTES_DESCRIPTOR {
 ## Constants
 
 <table>
-
-<tr>
-<td>UFS_bActiveICCLevel</td>
-<td>Specifies the maximum
+            
+                <tr>
+                    <td>UFS_bActiveICCLevel</td>
+                    <td>Specifies the maximum
 current consumption allowed during
 Active Mode. Value ranges from 0x00 to 0x0F.</td>
-</tr>
-
-<tr>
-<td>UFS_bBackgroundOpStatus</td>
-<td>Specifies if the device has a need for background operations. Contains one of the following values:
+                </tr>
+            
+                <tr>
+                    <td>UFS_bBackgroundOpStatus</td>
+                    <td>Specifies if the device has a need for background operations. Contains one of the following values:
 <table>
 <tr>
 <th>Value</th>
@@ -107,21 +112,21 @@ Active Mode. Value ranges from 0x00 to 0x0F.</td>
 <td>Device has a critical need of background operations. </td>
 </tr>
 </table></td>
-</tr>
-
-<tr>
-<td>UFS_bBootLunEn</td>
-<td>Indicates if the Boot Logical Unit Number(LUN) is enabled.</td>
-</tr>
-
-<tr>
-<td>UFS_bConfigDescrLock</td>
-<td>Specifies if the configuration descriptor is locked.</td>
-</tr>
-
-<tr>
-<td>UFS_bCurrentPowerMode</td>
-<td>Indicates the current power mode. Contains one of the following values:
+                </tr>
+            
+                <tr>
+                    <td>UFS_bBootLunEn</td>
+                    <td>Indicates if the Boot Logical Unit Number(LUN) is enabled.</td>
+                </tr>
+            
+                <tr>
+                    <td>UFS_bConfigDescrLock</td>
+                    <td>Specifies if the configuration descriptor is locked.</td>
+                </tr>
+            
+                <tr>
+                    <td>UFS_bCurrentPowerMode</td>
+                    <td>Indicates the current power mode. Contains one of the following values:
 <table>
 <tr>
 <th>Value</th>
@@ -160,11 +165,11 @@ Active Mode. Value ranges from 0x00 to 0x0F.</td>
 <td>Reserved for future use.</td>
 </tr>
 </table></td>
-</tr>
-
-<tr>
-<td>UFS_bDeviceFFUStatus</td>
-<td>Specifies the Device Field Firmware Update (FFU) status.
+                </tr>
+            
+                <tr>
+                    <td>UFS_bDeviceFFUStatus</td>
+                    <td>Specifies the Device Field Firmware Update (FFU) status.
 <table>
 <tr>
 <th>Value</th>
@@ -199,37 +204,37 @@ Active Mode. Value ranges from 0x00 to 0x0F.</td>
 <td>General Error.</td>
 </tr>
 </table></td>
-</tr>
-
-<tr>
-<td>UFS_bMaxDataInSize</td>
-<td>Specifies the maximum data size in a DATA IN UFS Protocol Information Units (UPIU). This parameter can be written by the
+                </tr>
+            
+                <tr>
+                    <td>UFS_bMaxDataInSize</td>
+                    <td>Specifies the maximum data size in a DATA IN UFS Protocol Information Units (UPIU). This parameter can be written by the
 host only when all logical unit task queues are
 empty.</td>
-</tr>
-
-<tr>
-<td>UFS_bMaxDataOutSize</td>
-<td>Specifies the maximum data-out size. This parameter can be written by the
+                </tr>
+            
+                <tr>
+                    <td>UFS_bMaxDataOutSize</td>
+                    <td>Specifies the maximum data-out size. This parameter can be written by the
 host only when all logical unit task queues are
 empty.</td>
-</tr>
-
-<tr>
-<td>UFS_bMaxNumOfRTT</td>
-<td>Defines the current maximum number of outstanding READY TO TRANSFER UPIU’s (RTT's) that are
+                </tr>
+            
+                <tr>
+                    <td>UFS_bMaxNumOfRTT</td>
+                    <td>Defines the current maximum number of outstanding READY TO TRANSFER UPIU’s (RTT's) that are
 allowed. This value can be set by the host.</td>
-</tr>
-
-<tr>
-<td>UFS_bOutOfOrderDataEn</td>
-<td>Specifies if out-of-order data transfer is
+                </tr>
+            
+                <tr>
+                    <td>UFS_bOutOfOrderDataEn</td>
+                    <td>Specifies if out-of-order data transfer is
 enabled</td>
-</tr>
-
-<tr>
-<td>UFS_bPSAState</td>
-<td>Specifies the current Product State Awareness (PSA) State.
+                </tr>
+            
+                <tr>
+                    <td>UFS_bPSAState</td>
+                    <td>Specifies the current Product State Awareness (PSA) State.
 <table>
 <tr>
 <th>Value</th>
@@ -265,16 +270,16 @@ is locked after it is in
 ‘Soldered’ state.</td>
 </tr>
 </table></td>
-</tr>
-
-<tr>
-<td>UFS_bPurgeStatus</td>
-<td>Specifies the current purge operation's status.</td>
-</tr>
-
-<tr>
-<td>UFS_bRefClkFreq</td>
-<td>Specifies the reference clock frequency value.
+                </tr>
+            
+                <tr>
+                    <td>UFS_bPurgeStatus</td>
+                    <td>Specifies the current purge operation's status.</td>
+                </tr>
+            
+                <tr>
+                    <td>UFS_bRefClkFreq</td>
+                    <td>Specifies the reference clock frequency value.
 <table>
 <tr>
 <th>Value</th>
@@ -297,61 +302,61 @@ is locked after it is in
 <td>52 MHz</td>
 </tr>
 </table></td>
-</tr>
-
-<tr>
-<td>UFS_dDynCapNeeded</td>
-<td>Specifies the dynamic capacity need.</td>
-</tr>
-
-<tr>
-<td>UFS_dPSADataSize</td>
-<td>Specifies the amount of data that the host plans
+                </tr>
+            
+                <tr>
+                    <td>UFS_dDynCapNeeded</td>
+                    <td>Specifies the dynamic capacity need.</td>
+                </tr>
+            
+                <tr>
+                    <td>UFS_dPSADataSize</td>
+                    <td>Specifies the amount of data that the host plans
 to load to all logical units with
 <b>bPSASensitive</b> set to 1.</td>
-</tr>
-
-<tr>
-<td>UFS_dSecondsPassed</td>
-<td>Specifies the time passed in seconds.</td>
-</tr>
-
-<tr>
-<td>UFS_Obsolete</td>
-<td>Obselete</td>
-</tr>
-
-<tr>
-<td>UFS_Reserved01</td>
-<td>Reserved for future use.</td>
-</tr>
-
-<tr>
-<td>UFS_Reserved02</td>
-<td>Reserved for future use.</td>
-</tr>
-
-<tr>
-<td>UFS_Reserved03</td>
-<td>Reserved for future use.</td>
-</tr>
-
-<tr>
-<td>UFS_wContextConf</td>
-<td>Specifies the context attribute.</td>
-</tr>
-
-<tr>
-<td>UFS_wExceptionEventControl</td>
-<td>Specifies the Exception Event Controller. <b>UFS_wExceptionEventControl</b> enables the setting of the
+                </tr>
+            
+                <tr>
+                    <td>UFS_dSecondsPassed</td>
+                    <td>Specifies the time passed in seconds.</td>
+                </tr>
+            
+                <tr>
+                    <td>UFS_Obsolete</td>
+                    <td>Obselete</td>
+                </tr>
+            
+                <tr>
+                    <td>UFS_Reserved01</td>
+                    <td>Reserved for future use.</td>
+                </tr>
+            
+                <tr>
+                    <td>UFS_Reserved02</td>
+                    <td>Reserved for future use.</td>
+                </tr>
+            
+                <tr>
+                    <td>UFS_Reserved03</td>
+                    <td>Reserved for future use.</td>
+                </tr>
+            
+                <tr>
+                    <td>UFS_wContextConf</td>
+                    <td>Specifies the context attribute.</td>
+                </tr>
+            
+                <tr>
+                    <td>UFS_wExceptionEventControl</td>
+                    <td>Specifies the Exception Event Controller. <b>UFS_wExceptionEventControl</b> enables the setting of the
 <b>EVENT_ALERT</b> bit in the Device
 Information field, which is contained in
 the RESPONSE UPIU.</td>
-</tr>
-
-<tr>
-<td>UFS_wExceptionEventStatus</td>
-<td>Specifies a bitmap of each exception event status.A bit will be set only if the
+                </tr>
+            
+                <tr>
+                    <td>UFS_wExceptionEventStatus</td>
+                    <td>Specifies a bitmap of each exception event status.A bit will be set only if the
 relevant event has occurred
 (regardless of the
 <b>UFS_wExceptionEventControl</b> status). Contains the following bits:
@@ -377,12 +382,12 @@ relevant event has occurred
 <td>Reserved.</td>
 </tr>
 </table></td>
-</tr>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-<b>UFS_bCurrentPowerMode</b> is the only attribute the device is required to return in any power mode. If the device
+        <b>UFS_bCurrentPowerMode</b> is the only attribute the device is required to return in any power mode. If the device
 is not in Active power mode or Idle power mode, a <b>QUERY REQUEST UPIU</b> to access descriptors, flags, or attributes other than <b>bCurrentPowerMode</b> may fail.
 
 <b>UFS_bDeviceFFUStatu</b>s value is kept after power cycle, hardware reset or any other type of reset. This attribute may change value when a
@@ -396,9 +401,9 @@ microcode activation event occurs.
 | **Windows version** | Windows 10, version 1709 Windows 10, version 1709 |
 | **Header** | ufs.h |
 
-## See Also
+    ## See Also
 
-<a href="..\ufs\ns-ufs-ufs_rpmb_unit_descriptor.md">UFS_RPMB_UNIT_DESCRIPTOR</a>
+        <a href="..\ufs\ns-ufs-ufs_rpmb_unit_descriptor.md">UFS_RPMB_UNIT_DESCRIPTOR</a>
 
 <a href="..\ufs\ns-ufs-ufs_geometry_descriptor.md">UFS_GEOMETRY_DESCRIPTOR</a>
 

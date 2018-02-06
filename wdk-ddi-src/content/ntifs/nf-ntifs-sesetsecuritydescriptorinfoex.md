@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.SeSetSecurityDescriptorInfoEx
-title : SeSetSecurityDescriptorInfoEx function
-author : windows-driver-content
-description : The SeSetSecurityDescriptorInfoEx routine modifies an object's security descriptor and specifies whether the object supports automatic inheritance of access control entries (ACE).
-old-location : ifsk\sesetsecuritydescriptorinfoex.htm
-old-project : ifsk
-ms.assetid : 90526705-069d-432f-87b1-1efc247aee05
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : seref_d3965072-a36e-478c-9c57-5614920d69c8.xml, SeSetSecurityDescriptorInfoEx routine [Installable File System Drivers], SeSetSecurityDescriptorInfoEx, ifsk.sesetsecuritydescriptorinfoex, ntifs/SeSetSecurityDescriptorInfoEx
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : This routine is available on Microsoft Windows 2000 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.SeSetSecurityDescriptorInfoEx
+title: SeSetSecurityDescriptorInfoEx function
+author: windows-driver-content
+description: The SeSetSecurityDescriptorInfoEx routine modifies an object's security descriptor and specifies whether the object supports automatic inheritance of access control entries (ACE).
+old-location: ifsk\sesetsecuritydescriptorinfoex.htm
+old-project: ifsk
+ms.assetid: 90526705-069d-432f-87b1-1efc247aee05
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: seref_d3965072-a36e-478c-9c57-5614920d69c8.xml, SeSetSecurityDescriptorInfoEx routine [Installable File System Drivers], SeSetSecurityDescriptorInfoEx, ifsk.sesetsecuritydescriptorinfoex, ntifs/SeSetSecurityDescriptorInfoEx
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: This routine is available on Microsoft Windows 2000 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	SeSetSecurityDescriptorInfoEx
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

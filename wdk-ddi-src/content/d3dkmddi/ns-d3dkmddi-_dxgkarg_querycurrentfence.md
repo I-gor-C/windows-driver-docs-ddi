@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGKARG_QUERYCURRENTFENCE
-title : "_DXGKARG_QUERYCURRENTFENCE"
-author : windows-driver-content
-description : The DXGKARG_QUERYCURRENTFENCE structure describes the latest completed submission fence.
-old-location : display\dxgkarg_querycurrentfence.htm
-old-project : display
-ms.assetid : 84a7c49b-d079-4d14-b371-5cfb75c1331c
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : "*INOUT_PDXGKARG_QUERYCURRENTFENCE, _DXGKARG_QUERYCURRENTFENCE, d3dkmddi/DXGKARG_QUERYCURRENTFENCE, DmStructs_799a15e5-b780-43c4-a0c2-d97e3c91caec.xml, DXGKARG_QUERYCURRENTFENCE, DXGKARG_QUERYCURRENTFENCE structure [Display Devices], display.dxgkarg_querycurrentfence"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGKARG_QUERYCURRENTFENCE
+UID: NS:d3dkmddi._DXGKARG_QUERYCURRENTFENCE
+title: "_DXGKARG_QUERYCURRENTFENCE"
+author: windows-driver-content
+description: The DXGKARG_QUERYCURRENTFENCE structure describes the latest completed submission fence.
+old-location: display\dxgkarg_querycurrentfence.htm
+old-project: display
+ms.assetid: 84a7c49b-d079-4d14-b371-5cfb75c1331c
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: "*INOUT_PDXGKARG_QUERYCURRENTFENCE, _DXGKARG_QUERYCURRENTFENCE, d3dkmddi/DXGKARG_QUERYCURRENTFENCE, DmStructs_799a15e5-b780-43c4-a0c2-d97e3c91caec.xml, DXGKARG_QUERYCURRENTFENCE, DXGKARG_QUERYCURRENTFENCE structure [Display Devices], display.dxgkarg_querycurrentfence"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DXGKARG_QUERYCURRENTFENCE
+product: Windows
+targetos: Windows
+req.typenames: DXGKARG_QUERYCURRENTFENCE
 ---
 
 # _DXGKARG_QUERYCURRENTFENCE structure

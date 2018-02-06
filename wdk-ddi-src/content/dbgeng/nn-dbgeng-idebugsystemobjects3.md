@@ -1,41 +1,49 @@
 ---
-UID : NN:dbgeng.IDebugSystemObjects3
-title : IDebugSystemObjects3
-author : windows-driver-content
-description : IDebugSystemObjects3 interface
-old-location : debugger\idebugsystemobjects3.htm
-old-project : debugger
-ms.assetid : 8924c46b-e2b5-473f-aa0c-e755cd9cbbc6
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : debugger.idebugsystemobjects3, IDebugSystemObjects3 interface [Windows Debugging], IDebugSystemObjects3 interface [Windows Debugging], described, IDebugSystemObjects3, dbgeng/IDebugSystemObjects3
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NN:dbgeng.IDebugSystemObjects3
+title: IDebugSystemObjects3
+author: windows-driver-content
+description: IDebugSystemObjects3 interface
+old-location: debugger\idebugsystemobjects3.htm
+old-project: debugger
+ms.assetid: 8924c46b-e2b5-473f-aa0c-e755cd9cbbc6
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: debugger.idebugsystemobjects3, IDebugSystemObjects3 interface [Windows Debugging], IDebugSystemObjects3 interface [Windows Debugging], described, IDebugSystemObjects3, dbgeng/IDebugSystemObjects3
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugSystemObjects3
+-	IDebugSystemObjects3.GetCurrentSystemServer
+-	IDebugSystemObjects3.GetSystemByServer
+-	IDebugSystemObjects3.GetCurrentSystemServerName
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 # IDebugSystemObjects3 interface

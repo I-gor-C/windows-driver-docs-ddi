@@ -1,41 +1,46 @@
 ---
-UID : NF:icm.WcsSetDefaultColorProfile
-title : WcsSetDefaultColorProfile function
-author : windows-driver-content
-description : The WcsSetDefaultColorProfile function sets the default color profile name of the specified profile type in the specified profile management scope.
-old-location : print\wcssetdefaultcolorprofile.htm
-old-project : print
-ms.assetid : 302f271c-801e-409c-a0fc-53f01e5e2055
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : WcsSetDefaultColorProfile, WcsSetDefaultColorProfile function [Print Devices], icm/WcsSetDefaultColorProfile, print.wcssetdefaultcolorprofile, colorfnc_31c96c7b-5616-4bdb-8df8-23e2361a9554.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : icm.h
-req.include-header : 
-req.target-type : Universal
-req.target-min-winverclnt : Included in Windows Vista and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Mscms.lib
-req.dll : Mscms.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WCS_PROFILE_MANAGEMENT_SCOPE
+UID: NF:icm.WcsSetDefaultColorProfile
+title: WcsSetDefaultColorProfile function
+author: windows-driver-content
+description: The WcsSetDefaultColorProfile function sets the default color profile name of the specified profile type in the specified profile management scope.
+old-location: print\wcssetdefaultcolorprofile.htm
+old-project: print
+ms.assetid: 302f271c-801e-409c-a0fc-53f01e5e2055
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: WcsSetDefaultColorProfile, WcsSetDefaultColorProfile function [Print Devices], icm/WcsSetDefaultColorProfile, print.wcssetdefaultcolorprofile, colorfnc_31c96c7b-5616-4bdb-8df8-23e2361a9554.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: icm.h
+req.include-header: 
+req.target-type: Universal
+req.target-min-winverclnt: Included in Windows Vista and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Mscms.lib
+req.dll: Mscms.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Mscms.dll
+apiname:
+-	WcsSetDefaultColorProfile
+product: Windows
+targetos: Windows
+req.typenames: WCS_PROFILE_MANAGEMENT_SCOPE
 ---
 
 

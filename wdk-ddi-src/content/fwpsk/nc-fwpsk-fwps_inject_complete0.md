@@ -1,41 +1,46 @@
 ---
-UID : NC:fwpsk.FWPS_INJECT_COMPLETE0
-title : FWPS_INJECT_COMPLETE0
-author : windows-driver-content
-description : The filter engine calls a callout's completionFn callout function whenever packet data, described by the netBufferList parameter in one of the packet injection functions, has been injected into the network stack.
-old-location : netvista\completionfn.htm
-old-project : netvista
-ms.assetid : c03656ec-f0fe-49f5-8a04-2d26ef23c50a
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.completionfn, completionFn callback function [Network Drivers Starting with Windows Vista], completionFn, FWPS_INJECT_COMPLETE0, FWPS_INJECT_COMPLETE0, fwpsk/completionFn, wfp_ref_2_funct_4_callout_bc142e7e-f390-4b8c-b82b-c13077e1d6bf.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : fwpsk.h
-req.include-header : Fwpsk.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : INSTANCE_PARTIAL_INFORMATION, PINSTANCE_PARTIAL_INFORMATION
+UID: NC:fwpsk.FWPS_INJECT_COMPLETE0
+title: FWPS_INJECT_COMPLETE0
+author: windows-driver-content
+description: The filter engine calls a callout's completionFn callout function whenever packet data, described by the netBufferList parameter in one of the packet injection functions, has been injected into the network stack.
+old-location: netvista\completionfn.htm
+old-project: netvista
+ms.assetid: c03656ec-f0fe-49f5-8a04-2d26ef23c50a
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.completionfn, completionFn callback function [Network Drivers Starting with Windows Vista], completionFn, FWPS_INJECT_COMPLETE0, FWPS_INJECT_COMPLETE0, fwpsk/completionFn, wfp_ref_2_funct_4_callout_bc142e7e-f390-4b8c-b82b-c13077e1d6bf.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: fwpsk.h
+req.include-header: Fwpsk.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Fwpsk.h
+apiname:
+-	completionFn
+product: Windows
+targetos: Windows
+req.typenames: INSTANCE_PARTIAL_INFORMATION, PINSTANCE_PARTIAL_INFORMATION
 ---
 
 

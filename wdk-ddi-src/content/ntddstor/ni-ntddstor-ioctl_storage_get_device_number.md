@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddstor.IOCTL_STORAGE_GET_DEVICE_NUMBER
-title : IOCTL_STORAGE_GET_DEVICE_NUMBER
-author : windows-driver-content
-description : Returns a STORAGE_DEVICE_NUMBER structure that contains the FILE_DEVICE_XXX type, device number, and, for a partitionable device, the partition number assigned to a device by the driver when the device is started.
-old-location : storage\ioctl_storage_get_device_number.htm
-old-project : storage
-ms.assetid : 5d1095c6-b9f9-44ef-bb2b-7bc0265e5aa9
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_storage_get_device_number, IOCTL_STORAGE_GET_DEVICE_NUMBER control code [Storage Devices], IOCTL_STORAGE_GET_DEVICE_NUMBER, ntddstor/IOCTL_STORAGE_GET_DEVICE_NUMBER, k307_d4d6bd65-7f75-4810-90ce-edd3dec950be.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddstor.h
-req.include-header : Ntddstor.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STORAGE_ZONE_CONDITION, *PSTORAGE_ZONE_CONDITION
+UID: NI:ntddstor.IOCTL_STORAGE_GET_DEVICE_NUMBER
+title: IOCTL_STORAGE_GET_DEVICE_NUMBER
+author: windows-driver-content
+description: Returns a STORAGE_DEVICE_NUMBER structure that contains the FILE_DEVICE_XXX type, device number, and, for a partitionable device, the partition number assigned to a device by the driver when the device is started.
+old-location: storage\ioctl_storage_get_device_number.htm
+old-project: storage
+ms.assetid: 5d1095c6-b9f9-44ef-bb2b-7bc0265e5aa9
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_storage_get_device_number, IOCTL_STORAGE_GET_DEVICE_NUMBER control code [Storage Devices], IOCTL_STORAGE_GET_DEVICE_NUMBER, ntddstor/IOCTL_STORAGE_GET_DEVICE_NUMBER, k307_d4d6bd65-7f75-4810-90ce-edd3dec950be.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddstor.h
+req.include-header: Ntddstor.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddstor.h
+apiname:
+-	IOCTL_STORAGE_GET_DEVICE_NUMBER
+product: Windows
+targetos: Windows
+req.typenames: STORAGE_ZONE_CONDITION, *PSTORAGE_ZONE_CONDITION
 ---
 
 # IOCTL_STORAGE_GET_DEVICE_NUMBER IOCTL

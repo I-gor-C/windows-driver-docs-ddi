@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddndis._NDIS_NIC_SWITCH_VF_INFO
-title : "_NDIS_NIC_SWITCH_VF_INFO"
-author : windows-driver-content
-description : The NDIS_NIC_SWITCH_VF_INFO structure specifies the information about a PCI Express (PCIe) Virtual Function (VF) that has been allocated on the network adapter.
-old-location : netvista\ndis_nic_switch_vf_info.htm
-old-project : netvista
-ms.assetid : 1af8b1cd-c594-49c7-8c25-674226295d90
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : ntddndis/NDIS_NIC_SWITCH_VF_INFO, NDIS_NIC_SWITCH_VF_INFO structure [Network Drivers Starting with Windows Vista], *PNDIS_NIC_SWITCH_VF_INFO, PNDIS_NIC_SWITCH_VF_INFO, ntddndis/PNDIS_NIC_SWITCH_VF_INFO, PNDIS_NIC_SWITCH_VF_INFO structure pointer [Network Drivers Starting with Windows Vista], netvista.ndis_nic_switch_vf_info, NDIS_NIC_SWITCH_VF_INFO, _NDIS_NIC_SWITCH_VF_INFO
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.30 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_NIC_SWITCH_VF_INFO, *PNDIS_NIC_SWITCH_VF_INFO
+UID: NS:ntddndis._NDIS_NIC_SWITCH_VF_INFO
+title: "_NDIS_NIC_SWITCH_VF_INFO"
+author: windows-driver-content
+description: The NDIS_NIC_SWITCH_VF_INFO structure specifies the information about a PCI Express (PCIe) Virtual Function (VF) that has been allocated on the network adapter.
+old-location: netvista\ndis_nic_switch_vf_info.htm
+old-project: netvista
+ms.assetid: 1af8b1cd-c594-49c7-8c25-674226295d90
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: ntddndis/NDIS_NIC_SWITCH_VF_INFO, NDIS_NIC_SWITCH_VF_INFO structure [Network Drivers Starting with Windows Vista], *PNDIS_NIC_SWITCH_VF_INFO, PNDIS_NIC_SWITCH_VF_INFO, ntddndis/PNDIS_NIC_SWITCH_VF_INFO, PNDIS_NIC_SWITCH_VF_INFO structure pointer [Network Drivers Starting with Windows Vista], netvista.ndis_nic_switch_vf_info, NDIS_NIC_SWITCH_VF_INFO, _NDIS_NIC_SWITCH_VF_INFO
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.30 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddndis.h
+apiname:
+-	NDIS_NIC_SWITCH_VF_INFO
+product: Windows
+targetos: Windows
+req.typenames: NDIS_NIC_SWITCH_VF_INFO, *PNDIS_NIC_SWITCH_VF_INFO
 ---
 
 # _NDIS_NIC_SWITCH_VF_INFO structure

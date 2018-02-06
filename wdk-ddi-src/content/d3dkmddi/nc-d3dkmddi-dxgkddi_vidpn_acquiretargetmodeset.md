@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dkmddi.DXGKDDI_VIDPN_ACQUIRETARGETMODESET
-title : DXGKDDI_VIDPN_ACQUIRETARGETMODESET
-author : windows-driver-content
-description : The pfnAcquireTargetModeSet function returns a handle to a particular target mode set object that is contained by a specified VidPN object.
-old-location : display\dxgk_vidpn_interface_pfnacquiretargetmodeset.htm
-old-project : display
-ms.assetid : 1b91c472-21eb-4aa8-91e3-c9eb70556d9f
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgk_vidpn_interface_pfnacquiretargetmodeset, pfnAcquireTargetModeSet callback function [Display Devices], pfnAcquireTargetModeSet, DXGKDDI_VIDPN_ACQUIRETARGETMODESET, DXGKDDI_VIDPN_ACQUIRETARGETMODESET, d3dkmddi/pfnAcquireTargetModeSet, VidPnFunctions_e7b058c8-0f02-4456-8938-9182a35826f9.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
+UID: NC:d3dkmddi.DXGKDDI_VIDPN_ACQUIRETARGETMODESET
+title: DXGKDDI_VIDPN_ACQUIRETARGETMODESET
+author: windows-driver-content
+description: The pfnAcquireTargetModeSet function returns a handle to a particular target mode set object that is contained by a specified VidPN object.
+old-location: display\dxgk_vidpn_interface_pfnacquiretargetmodeset.htm
+old-project: display
+ms.assetid: 1b91c472-21eb-4aa8-91e3-c9eb70556d9f
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgk_vidpn_interface_pfnacquiretargetmodeset, pfnAcquireTargetModeSet callback function [Display Devices], pfnAcquireTargetModeSet, DXGKDDI_VIDPN_ACQUIRETARGETMODESET, DXGKDDI_VIDPN_ACQUIRETARGETMODESET, d3dkmddi/pfnAcquireTargetModeSet, VidPnFunctions_e7b058c8-0f02-4456-8938-9182a35826f9.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	pfnAcquireTargetModeSet
+product: Windows
+targetos: Windows
+req.typenames: DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
 

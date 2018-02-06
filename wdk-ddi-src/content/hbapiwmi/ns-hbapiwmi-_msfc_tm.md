@@ -1,41 +1,46 @@
 ---
-UID : NS:hbapiwmi._MSFC_TM
-title : "_MSFC_TM"
-author : windows-driver-content
-description : The MSFC_TM structure is used by WMI providers to timestamp events.
-old-location : storage\msfc_tm.htm
-old-project : storage
-ms.assetid : 7e27f53f-350e-4315-9de6-60835bddcbfb
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : hbapiwmi/PMSFC_TM, storage.msfc_tm, hbapiwmi/MSFC_TM, structs-Fibre_5cca5127-bbcc-4a2f-9ad2-2daeecac1448.xml, *PMSFC_TM, _MSFC_TM, PMSFC_TM structure pointer [Storage Devices], MSFC_TM structure [Storage Devices], MSFC_TM, PMSFC_TM
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : hbapiwmi.h
-req.include-header : Hbapiwmi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : MSFC_TM, *PMSFC_TM
+UID: NS:hbapiwmi._MSFC_TM
+title: "_MSFC_TM"
+author: windows-driver-content
+description: The MSFC_TM structure is used by WMI providers to timestamp events.
+old-location: storage\msfc_tm.htm
+old-project: storage
+ms.assetid: 7e27f53f-350e-4315-9de6-60835bddcbfb
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: hbapiwmi/PMSFC_TM, storage.msfc_tm, hbapiwmi/MSFC_TM, structs-Fibre_5cca5127-bbcc-4a2f-9ad2-2daeecac1448.xml, *PMSFC_TM, _MSFC_TM, PMSFC_TM structure pointer [Storage Devices], MSFC_TM structure [Storage Devices], MSFC_TM, PMSFC_TM
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: hbapiwmi.h
+req.include-header: Hbapiwmi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hbapiwmi.h
+apiname:
+-	MSFC_TM
+product: Windows
+targetos: Windows
+req.typenames: MSFC_TM, *PMSFC_TM
 ---
 
 # _MSFC_TM structure

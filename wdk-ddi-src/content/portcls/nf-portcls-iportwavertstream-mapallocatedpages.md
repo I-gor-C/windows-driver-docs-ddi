@@ -1,41 +1,46 @@
 ---
-UID : NF:portcls.IPortWaveRTStream.MapAllocatedPages
-title : IPortWaveRTStream::MapAllocatedPages method
-author : windows-driver-content
-description : The MapAllocatedPages method maps a list of previously allocated physical pages into a contiguous block of virtual memory that is accessible from kernel-mode.
-old-location : audio\iportwavertstream_mapallocatedpages.htm
-old-project : audio
-ms.assetid : 90f412de-073f-4889-adf3-898cde0206b7
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : IPortWaveRTStream::MapAllocatedPages, audmp-routines_914e2039-e45b-44c5-8b29-0bcc6da901c3.xml, audio.iportwavertstream_mapallocatedpages, MapAllocatedPages method [Audio Devices], IPortWaveRTStream interface, MapAllocatedPages, portcls/IPortWaveRTStream::MapAllocatedPages, IPortWaveRTStream interface [Audio Devices], MapAllocatedPages method, MapAllocatedPages method [Audio Devices], IPortWaveRTStream
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : portcls.h
-req.include-header : 
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : portcls.h
-req.dll : 
-req.irql : Passive level.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.IPortWaveRTStream.MapAllocatedPages
+title: IPortWaveRTStream::MapAllocatedPages method
+author: windows-driver-content
+description: The MapAllocatedPages method maps a list of previously allocated physical pages into a contiguous block of virtual memory that is accessible from kernel-mode.
+old-location: audio\iportwavertstream_mapallocatedpages.htm
+old-project: audio
+ms.assetid: 90f412de-073f-4889-adf3-898cde0206b7
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: IPortWaveRTStream::MapAllocatedPages, audmp-routines_914e2039-e45b-44c5-8b29-0bcc6da901c3.xml, audio.iportwavertstream_mapallocatedpages, MapAllocatedPages method [Audio Devices], IPortWaveRTStream interface, MapAllocatedPages, portcls/IPortWaveRTStream::MapAllocatedPages, IPortWaveRTStream interface [Audio Devices], MapAllocatedPages method, MapAllocatedPages method [Audio Devices], IPortWaveRTStream
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: portcls.h
+req.include-header: 
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: portcls.h
+req.dll: 
+req.irql: Passive level.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Portcls.h
+apiname:
+-	IPortWaveRTStream.MapAllocatedPages
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

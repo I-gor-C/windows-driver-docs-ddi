@@ -1,41 +1,46 @@
 ---
-UID : NC:ndis.PROTOCOL_CM_REG_SAP
-title : PROTOCOL_CM_REG_SAP
-author : windows-driver-content
-description : The ProtocolCmRegisterSap function is a required function that is called by NDIS to request that a call manager register a SAP (service access point) on behalf of a connection-oriented client.Note  You must declare the function by using the PROTOCOL_CM_REG_SAP type. For more information, see the following Examples section.
-old-location : netvista\protocolcmregistersap.htm
-old-project : netvista
-ms.assetid : 3e3e7a0e-a8d2-40b2-895b-187d24867080
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.protocolcmregistersap, ProtocolCmRegisterSap callback function [Network Drivers Starting with Windows Vista], ProtocolCmRegisterSap, PROTOCOL_CM_REG_SAP, PROTOCOL_CM_REG_SAP, ndis/ProtocolCmRegisterSap, condis_call_manager_ref_aaaefdc1-4954-4911-84a4-1f82141ccca6.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see    ProtocolCmRegisterSap (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    ProtocolCmRegisterSap (NDIS   5.1)) in Windows XP.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
+UID: NC:ndis.PROTOCOL_CM_REG_SAP
+title: PROTOCOL_CM_REG_SAP
+author: windows-driver-content
+description: The ProtocolCmRegisterSap function is a required function that is called by NDIS to request that a call manager register a SAP (service access point) on behalf of a connection-oriented client.Note  You must declare the function by using the PROTOCOL_CM_REG_SAP type. For more information, see the following Examples section.
+old-location: netvista\protocolcmregistersap.htm
+old-project: netvista
+ms.assetid: 3e3e7a0e-a8d2-40b2-895b-187d24867080
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.protocolcmregistersap, ProtocolCmRegisterSap callback function [Network Drivers Starting with Windows Vista], ProtocolCmRegisterSap, PROTOCOL_CM_REG_SAP, PROTOCOL_CM_REG_SAP, ndis/ProtocolCmRegisterSap, condis_call_manager_ref_aaaefdc1-4954-4911-84a4-1f82141ccca6.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    ProtocolCmRegisterSap (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    ProtocolCmRegisterSap (NDIS   5.1)) in Windows XP.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ndis.h
+apiname:
+-	ProtocolCmRegisterSap
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 

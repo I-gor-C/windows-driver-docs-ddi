@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGK_PAGE_TABLE_LEVEL_DESC
-title : "_DXGK_PAGE_TABLE_LEVEL_DESC"
-author : windows-driver-content
-description : The DXGK_PAGE_TABLE_LEVEL_DESC structure describes capabilities that are applied at the page level.
-old-location : display\dxgk_page_table_level_desc.htm
-old-project : display
-ms.assetid : 45BC190C-8985-4F8A-AC84-4ACBBCE9EB67
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgk_page_table_level_desc, d3dkmddi/DXGK_PAGE_TABLE_LEVEL_DESC, DXGK_PAGE_TABLE_LEVEL_DESC, _DXGK_PAGE_TABLE_LEVEL_DESC, DXGK_PAGE_TABLE_LEVEL_DESC structure [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PAGE_TABLE_LEVEL_DESC
+UID: NS:d3dkmddi._DXGK_PAGE_TABLE_LEVEL_DESC
+title: "_DXGK_PAGE_TABLE_LEVEL_DESC"
+author: windows-driver-content
+description: The DXGK_PAGE_TABLE_LEVEL_DESC structure describes capabilities that are applied at the page level.
+old-location: display\dxgk_page_table_level_desc.htm
+old-project: display
+ms.assetid: 45BC190C-8985-4F8A-AC84-4ACBBCE9EB67
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgk_page_table_level_desc, d3dkmddi/DXGK_PAGE_TABLE_LEVEL_DESC, DXGK_PAGE_TABLE_LEVEL_DESC, _DXGK_PAGE_TABLE_LEVEL_DESC, DXGK_PAGE_TABLE_LEVEL_DESC structure [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DXGK_PAGE_TABLE_LEVEL_DESC
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PAGE_TABLE_LEVEL_DESC
 ---
 
 # _DXGK_PAGE_TABLE_LEVEL_DESC structure

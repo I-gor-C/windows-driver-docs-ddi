@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugSymbols3.GetSymbolModuleWide
-title : IDebugSymbols3::GetSymbolModuleWide method
-author : windows-driver-content
-description : The GetSymbolModuleWide method returns the base address of module which contains the specified symbol.
-old-location : debugger\getsymbolmodulewide.htm
-old-project : debugger
-ms.assetid : 4c1284da-b086-46f3-aeea-0afe6a2f1031
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : GetSymbolModuleWide method [Windows Debugging], debugger.getsymbolmodulewide, dbgeng/IDebugSymbols3::GetSymbolModuleWide, IDebugSymbols3 interface [Windows Debugging], GetSymbolModuleWide method, GetSymbolModuleWide method [Windows Debugging], IDebugSymbols3 interface, GetSymbolModuleWide, IDebugSymbols3, IDebugSymbols3::GetSymbolModuleWide
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSymbols3.GetSymbolModuleWide
+title: IDebugSymbols3::GetSymbolModuleWide method
+author: windows-driver-content
+description: The GetSymbolModuleWide method returns the base address of module which contains the specified symbol.
+old-location: debugger\getsymbolmodulewide.htm
+old-project: debugger
+ms.assetid: 4c1284da-b086-46f3-aeea-0afe6a2f1031
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: GetSymbolModuleWide method [Windows Debugging], debugger.getsymbolmodulewide, dbgeng/IDebugSymbols3::GetSymbolModuleWide, IDebugSymbols3 interface [Windows Debugging], GetSymbolModuleWide method, GetSymbolModuleWide method [Windows Debugging], IDebugSymbols3 interface, GetSymbolModuleWide, IDebugSymbols3, IDebugSymbols3::GetSymbolModuleWide
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugSymbols3.GetSymbolModuleWide
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

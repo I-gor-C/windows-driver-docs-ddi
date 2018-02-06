@@ -1,41 +1,46 @@
 ---
-UID : NF:d3dkmthk.D3DKMTGetContextInProcessSchedulingPriority
-title : D3DKMTGetContextInProcessSchedulingPriority function
-author : windows-driver-content
-description : Called by an in-process (in-proc) Microsoft Direct3D composition device to retrieve the scheduling priority for a device context that is in the same process as other device contexts.
-old-location : display\d3dkmtgetcontextinprocessschedulingpriority.htm
-old-project : display
-ms.assetid : e2a662b6-6a16-4e63-b5a8-5701a7180f60
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DKMTGetContextInProcessSchedulingPriority, display.d3dkmtgetcontextinprocessschedulingpriority, D3DKMTGetContextInProcessSchedulingPriority function [Display Devices], d3dkmthk/D3DKMTGetContextInProcessSchedulingPriority
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Universal
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_DRIVERVERSION
+UID: NF:d3dkmthk.D3DKMTGetContextInProcessSchedulingPriority
+title: D3DKMTGetContextInProcessSchedulingPriority function
+author: windows-driver-content
+description: Called by an in-process (in-proc) Microsoft Direct3D composition device to retrieve the scheduling priority for a device context that is in the same process as other device contexts.
+old-location: display\d3dkmtgetcontextinprocessschedulingpriority.htm
+old-project: display
+ms.assetid: e2a662b6-6a16-4e63-b5a8-5701a7180f60
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DKMTGetContextInProcessSchedulingPriority, display.d3dkmtgetcontextinprocessschedulingpriority, D3DKMTGetContextInProcessSchedulingPriority function [Display Devices], d3dkmthk/D3DKMTGetContextInProcessSchedulingPriority
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Universal
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	D3dkmthk.h
+apiname:
+-	D3DKMTGetContextInProcessSchedulingPriority
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_DRIVERVERSION
 ---
 
 

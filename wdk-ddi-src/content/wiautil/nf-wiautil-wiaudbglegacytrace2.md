@@ -1,42 +1,47 @@
 ---
-UID : NF:wiautil.wiauDbgLegacyTrace2
-title : wiauDbgLegacyTrace2 function
-author : windows-driver-content
-description : The wiauDbgLegacyTrace2 function logs a trace message.
-old-location : image\wiaudbglegacytrace2.htm
-old-project : image
-ms.assetid : 911a7089-d4ac-4da0-8be6-a3a36567635c
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : wiauDbgLegacyTrace2, wiauFncs_8fbdcd6b-cb2b-461b-81f0-880675d0124b.xml, wiautil/wiauDbgLegacyTrace2, wiauDbgLegacyTrace2 function [Imaging Devices], image.wiaudbglegacytrace2
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wiautil.h
-req.include-header : Wiautil.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows XP and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SKIP_AMOUNT
-req.product : Windows 10 or later.
+UID: NF:wiautil.wiauDbgLegacyTrace2
+title: wiauDbgLegacyTrace2 function
+author: windows-driver-content
+description: The wiauDbgLegacyTrace2 function logs a trace message.
+old-location: image\wiaudbglegacytrace2.htm
+old-project: image
+ms.assetid: 911a7089-d4ac-4da0-8be6-a3a36567635c
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: wiauDbgLegacyTrace2, wiauFncs_8fbdcd6b-cb2b-461b-81f0-880675d0124b.xml, wiautil/wiauDbgLegacyTrace2, wiauDbgLegacyTrace2 function [Imaging Devices], image.wiaudbglegacytrace2
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wiautil.h
+req.include-header: Wiautil.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows XP and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wiautil.h
+apiname:
+-	wiauDbgLegacyTrace2
+product: Windows
+targetos: Windows
+req.typenames: SKIP_AMOUNT
+req.product: Windows 10 or later.
 ---
 
 

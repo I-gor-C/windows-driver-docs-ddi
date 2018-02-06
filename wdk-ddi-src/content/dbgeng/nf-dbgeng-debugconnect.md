@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.DebugConnect
-title : DebugConnect function
-author : windows-driver-content
-description : The DebugConnect and DebugConnectWide functions create a new client object and return an interface pointer to it. The client object will be connected to a remote host.
-old-location : debugger\debugconnect.htm
-old-project : debugger
-ms.assetid : 77dba83d-cc25-4609-905c-7a036cb7ced9
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : ClientFns_7beeb350-b8bd-44ea-b5c9-ca0da15146ae.xml, DebugConnect, debugger.debugconnect, dbgeng/DebugConnect, DebugConnect function [Windows Debugging]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.DebugConnect
+title: DebugConnect function
+author: windows-driver-content
+description: The DebugConnect and DebugConnectWide functions create a new client object and return an interface pointer to it. The client object will be connected to a remote host.
+old-location: debugger\debugconnect.htm
+old-project: debugger
+ms.assetid: 77dba83d-cc25-4609-905c-7a036cb7ced9
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: ClientFns_7beeb350-b8bd-44ea-b5c9-ca0da15146ae.xml, DebugConnect, debugger.debugconnect, dbgeng/DebugConnect, DebugConnect function [Windows Debugging]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	dbgeng.h
+apiname:
+-	DebugConnect
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

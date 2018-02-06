@@ -1,42 +1,47 @@
 ---
-UID : NE:wdm._KTMOBJECT_TYPE
-title : "_KTMOBJECT_TYPE"
-author : windows-driver-content
-description : The KTMOBJECT_TYPE enumeration identifies the types of objects that KTM supports.
-old-location : kernel\ktmobject_type.htm
-old-project : kernel
-ms.assetid : 0ace1cdf-0a15-48bb-9444-c947239e453e
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/PKTMOBJECT_TYPE, wdm/KTMOBJECT_TYPE, KTMOBJECT_TYPE, wdm/KTMOBJECT_TRANSACTION_MANAGER, _KTMOBJECT_TYPE, wdm/KTMOBJECT_INVALID, KTMOBJECT_INVALID, KTMOBJECT_TRANSACTION_MANAGER, KTMOBJECT_TRANSACTION, wdm/KTMOBJECT_TRANSACTION, KTMOBJECT_RESOURCE_MANAGER, *PKTMOBJECT_TYPE, PKTMOBJECT_TYPE enumeration pointer [Kernel-Mode Driver Architecture], KTMOBJECT_ENLISTMENT, kernel.ktmobject_type, ktm_ref_1f145c7b-775d-4d0f-b5cd-1e09f5c5b438.xml, KTMOBJECT_TYPE enumeration [Kernel-Mode Driver Architecture], wdm/KTMOBJECT_ENLISTMENT, wdm/KTMOBJECT_RESOURCE_MANAGER, PKTMOBJECT_TYPE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later operating system versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKTMOBJECT_TYPE, KTMOBJECT_TYPE"
-req.product : Windows 10 or later.
+UID: NE:wdm._KTMOBJECT_TYPE
+title: "_KTMOBJECT_TYPE"
+author: windows-driver-content
+description: The KTMOBJECT_TYPE enumeration identifies the types of objects that KTM supports.
+old-location: kernel\ktmobject_type.htm
+old-project: kernel
+ms.assetid: 0ace1cdf-0a15-48bb-9444-c947239e453e
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/PKTMOBJECT_TYPE, wdm/KTMOBJECT_TYPE, KTMOBJECT_TYPE, wdm/KTMOBJECT_TRANSACTION_MANAGER, _KTMOBJECT_TYPE, wdm/KTMOBJECT_INVALID, KTMOBJECT_INVALID, KTMOBJECT_TRANSACTION_MANAGER, KTMOBJECT_TRANSACTION, wdm/KTMOBJECT_TRANSACTION, KTMOBJECT_RESOURCE_MANAGER, *PKTMOBJECT_TYPE, PKTMOBJECT_TYPE enumeration pointer [Kernel-Mode Driver Architecture], KTMOBJECT_ENLISTMENT, kernel.ktmobject_type, ktm_ref_1f145c7b-775d-4d0f-b5cd-1e09f5c5b438.xml, KTMOBJECT_TYPE enumeration [Kernel-Mode Driver Architecture], wdm/KTMOBJECT_ENLISTMENT, wdm/KTMOBJECT_RESOURCE_MANAGER, PKTMOBJECT_TYPE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later operating system versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	KTMOBJECT_TYPE
+product: Windows
+targetos: Windows
+req.typenames: "*PKTMOBJECT_TYPE, KTMOBJECT_TYPE"
+req.product: Windows 10 or later.
 ---
 
 # _KTMOBJECT_TYPE Enumeration
@@ -56,36 +61,36 @@ typedef enum _KTMOBJECT_TYPE {
 ## Constants
 
 <table>
-
-<tr>
-<td>KTMOBJECT_ENLISTMENT</td>
-<td>KTM enlistment objects.</td>
-</tr>
-
-<tr>
-<td>KTMOBJECT_INVALID</td>
-<td>Invalid object type.</td>
-</tr>
-
-<tr>
-<td>KTMOBJECT_RESOURCE_MANAGER</td>
-<td>KTM resource manager objects.</td>
-</tr>
-
-<tr>
-<td>KTMOBJECT_TRANSACTION</td>
-<td>KTM transaction objects.</td>
-</tr>
-
-<tr>
-<td>KTMOBJECT_TRANSACTION_MANAGER</td>
-<td>KTM transaction manager objects.</td>
-</tr>
+            
+                <tr>
+                    <td>KTMOBJECT_ENLISTMENT</td>
+                    <td>KTM enlistment objects.</td>
+                </tr>
+            
+                <tr>
+                    <td>KTMOBJECT_INVALID</td>
+                    <td>Invalid object type.</td>
+                </tr>
+            
+                <tr>
+                    <td>KTMOBJECT_RESOURCE_MANAGER</td>
+                    <td>KTM resource manager objects.</td>
+                </tr>
+            
+                <tr>
+                    <td>KTMOBJECT_TRANSACTION</td>
+                    <td>KTM transaction objects.</td>
+                </tr>
+            
+                <tr>
+                    <td>KTMOBJECT_TRANSACTION_MANAGER</td>
+                    <td>KTM transaction manager objects.</td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-The <b>KTMOBJECT_TYPE</b> enumeration is used with the <a href="..\wdm\nf-wdm-zwenumeratetransactionobject.md">ZwEnumerateTransactionObject</a> routine.
+        The <b>KTMOBJECT_TYPE</b> enumeration is used with the <a href="..\wdm\nf-wdm-zwenumeratetransactionobject.md">ZwEnumerateTransactionObject</a> routine.
 
 For more information about KTM objects, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff554272">KTM Objects</a>.
 
@@ -95,9 +100,9 @@ For more information about KTM objects, see <a href="https://msdn.microsoft.com/
 | **Windows version** | Available in Windows Vista and later operating system versions. Available in Windows Vista and later operating system versions. |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\wdm\nf-wdm-zwenumeratetransactionobject.md">ZwEnumerateTransactionObject</a>
+        <a href="..\wdm\nf-wdm-zwenumeratetransactionobject.md">ZwEnumerateTransactionObject</a>
 
  
 

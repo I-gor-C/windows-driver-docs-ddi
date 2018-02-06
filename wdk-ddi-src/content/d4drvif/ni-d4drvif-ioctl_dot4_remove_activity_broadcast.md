@@ -1,41 +1,46 @@
 ---
-UID : NI:d4drvif.IOCTL_DOT4_REMOVE_ACTIVITY_BROADCAST
-title : IOCTL_DOT4_REMOVE_ACTIVITY_BROADCAST
-author : windows-driver-content
-description : This topic describes IOCTL_DOT4_REMOVE_ACTIVITY_BROADCAST.
-old-location : print\ioctl_ioctl_dot4_remove_activity_broadcast.htm
-old-project : print
-ms.assetid : F2CD1373-CDBD-4D14-8C63-7A08A5EBCED6
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : print.ioctl_ioctl_dot4_remove_activity_broadcast, IOCTL_DOT4_REMOVE_ACTIVITY_BROADCAST control code [Print Devices], IOCTL_DOT4_REMOVE_ACTIVITY_BROADCAST, d4drvif/IOCTL_DOT4_REMOVE_ACTIVITY_BROADCAST
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : d4drvif.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDIARG_GETENCRYPTIONBLTKEY
+UID: NI:d4drvif.IOCTL_DOT4_REMOVE_ACTIVITY_BROADCAST
+title: IOCTL_DOT4_REMOVE_ACTIVITY_BROADCAST
+author: windows-driver-content
+description: This topic describes IOCTL_DOT4_REMOVE_ACTIVITY_BROADCAST.
+old-location: print\ioctl_ioctl_dot4_remove_activity_broadcast.htm
+old-project: print
+ms.assetid: F2CD1373-CDBD-4D14-8C63-7A08A5EBCED6
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: print.ioctl_ioctl_dot4_remove_activity_broadcast, IOCTL_DOT4_REMOVE_ACTIVITY_BROADCAST control code [Print Devices], IOCTL_DOT4_REMOVE_ACTIVITY_BROADCAST, d4drvif/IOCTL_DOT4_REMOVE_ACTIVITY_BROADCAST
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: d4drvif.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	D4drvif.h
+apiname:
+-	IOCTL_DOT4_REMOVE_ACTIVITY_BROADCAST
+product: Windows
+targetos: Windows
+req.typenames: D3DDDIARG_GETENCRYPTIONBLTKEY
 ---
 
 # IOCTL_DOT4_REMOVE_ACTIVITY_BROADCAST IOCTL

@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3D10DDI_QUERYEND
-title : PFND3D10DDI_QUERYEND
-author : windows-driver-content
-description : The QueryEnd function marks the end of a sequence of graphics commands for a query and transitions the query to the &#0034;issued&#0034; state.
-old-location : display\queryend.htm
-old-project : display
-ms.assetid : 5a231d7e-7e47-40ad-99d1-82661dec41d0
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.queryend, QueryEnd callback function [Display Devices], QueryEnd, PFND3D10DDI_QUERYEND, PFND3D10DDI_QUERYEND, d3d10umddi/QueryEnd, UserModeDisplayDriverDx10_Functions_9897bbe4-a58c-430b-815a-eb4360ce8043.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3D10DDI_QUERYEND
+title: PFND3D10DDI_QUERYEND
+author: windows-driver-content
+description: The QueryEnd function marks the end of a sequence of graphics commands for a query and transitions the query to the &#0034;issued&#0034; state.
+old-location: display\queryend.htm
+old-project: display
+ms.assetid: 5a231d7e-7e47-40ad-99d1-82661dec41d0
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.queryend, QueryEnd callback function [Display Devices], QueryEnd, PFND3D10DDI_QUERYEND, PFND3D10DDI_QUERYEND, d3d10umddi/QueryEnd, UserModeDisplayDriverDx10_Functions_9897bbe4-a58c-430b-815a-eb4360ce8043.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	QueryEnd
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

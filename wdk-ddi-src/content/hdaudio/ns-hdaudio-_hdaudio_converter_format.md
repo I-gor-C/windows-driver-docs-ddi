@@ -1,41 +1,46 @@
 ---
-UID : NS:hdaudio._HDAUDIO_CONVERTER_FORMAT
-title : "_HDAUDIO_CONVERTER_FORMAT"
-author : windows-driver-content
-description : The HDAUDIO_CONVERTER_FORMAT structure specifies the 16-bit encoded stream format for an input or output converter, as defined in the Intel High Definition Audio Specification (see the Intel HD Audio website).
-old-location : audio\hdaudio_converter_format.htm
-old-project : audio
-ms.assetid : 623f58f6-db82-4a4a-bac3-cc821babfe99
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : hdaudio/PHDAUDIO_CONVERTER_FORMAT, HDAUDIO_CONVERTER_FORMAT, audio.hdaudio_converter_format, _HDAUDIO_CONVERTER_FORMAT, aud-prop2_fbc3cdcb-94a1-43ef-bf23-4b1cca37e99d.xml, *PHDAUDIO_CONVERTER_FORMAT, hdaudio/HDAUDIO_CONVERTER_FORMAT, PHDAUDIO_CONVERTER_FORMAT structure pointer [Audio Devices], HDAUDIO_CONVERTER_FORMAT structure [Audio Devices], PHDAUDIO_CONVERTER_FORMAT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : hdaudio.h
-req.include-header : Hdaudio.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PHDAUDIO_CONVERTER_FORMAT, HDAUDIO_CONVERTER_FORMAT"
+UID: NS:hdaudio._HDAUDIO_CONVERTER_FORMAT
+title: "_HDAUDIO_CONVERTER_FORMAT"
+author: windows-driver-content
+description: The HDAUDIO_CONVERTER_FORMAT structure specifies the 16-bit encoded stream format for an input or output converter, as defined in the Intel High Definition Audio Specification (see the Intel HD Audio website).
+old-location: audio\hdaudio_converter_format.htm
+old-project: audio
+ms.assetid: 623f58f6-db82-4a4a-bac3-cc821babfe99
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: hdaudio/PHDAUDIO_CONVERTER_FORMAT, HDAUDIO_CONVERTER_FORMAT, audio.hdaudio_converter_format, _HDAUDIO_CONVERTER_FORMAT, aud-prop2_fbc3cdcb-94a1-43ef-bf23-4b1cca37e99d.xml, *PHDAUDIO_CONVERTER_FORMAT, hdaudio/HDAUDIO_CONVERTER_FORMAT, PHDAUDIO_CONVERTER_FORMAT structure pointer [Audio Devices], HDAUDIO_CONVERTER_FORMAT structure [Audio Devices], PHDAUDIO_CONVERTER_FORMAT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: hdaudio.h
+req.include-header: Hdaudio.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hdaudio.h
+apiname:
+-	HDAUDIO_CONVERTER_FORMAT
+product: Windows
+targetos: Windows
+req.typenames: "*PHDAUDIO_CONVERTER_FORMAT, HDAUDIO_CONVERTER_FORMAT"
 ---
 
 # _HDAUDIO_CONVERTER_FORMAT structure

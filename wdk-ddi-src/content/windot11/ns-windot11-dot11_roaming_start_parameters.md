@@ -1,42 +1,47 @@
 ---
-UID : NS:windot11.DOT11_ROAMING_START_PARAMETERS
-title : DOT11_ROAMING_START_PARAMETERS
-author : windows-driver-content
-description : Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
-old-location : netvista\dot11_roaming_start_parameters.htm
-old-project : netvista
-ms.assetid : 23a0eabc-9eac-4375-b2ca-66b70deaba82
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : Native_802.11_data_types_7635397d-74dc-44d0-af58-47048361367d.xml, PDOT11_ROAMING_START_PARAMETERS, DOT11_ROAMING_START_PARAMETERS structure [Network Drivers Starting with Windows Vista], netvista.dot11_roaming_start_parameters, windot11/DOT11_ROAMING_START_PARAMETERS, *PDOT11_ROAMING_START_PARAMETERS, PDOT11_ROAMING_START_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], windot11/PDOT11_ROAMING_START_PARAMETERS, DOT11_ROAMING_START_PARAMETERS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : windot11.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating   systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDOT11_ROAMING_START_PARAMETERS, DOT11_ROAMING_START_PARAMETERS"
-req.product : Windows 10 or later.
+UID: NS:windot11.DOT11_ROAMING_START_PARAMETERS
+title: DOT11_ROAMING_START_PARAMETERS
+author: windows-driver-content
+description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+old-location: netvista\dot11_roaming_start_parameters.htm
+old-project: netvista
+ms.assetid: 23a0eabc-9eac-4375-b2ca-66b70deaba82
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: Native_802.11_data_types_7635397d-74dc-44d0-af58-47048361367d.xml, PDOT11_ROAMING_START_PARAMETERS, DOT11_ROAMING_START_PARAMETERS structure [Network Drivers Starting with Windows Vista], netvista.dot11_roaming_start_parameters, windot11/DOT11_ROAMING_START_PARAMETERS, *PDOT11_ROAMING_START_PARAMETERS, PDOT11_ROAMING_START_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], windot11/PDOT11_ROAMING_START_PARAMETERS, DOT11_ROAMING_START_PARAMETERS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: windot11.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	windot11.h
+apiname:
+-	DOT11_ROAMING_START_PARAMETERS
+product: Windows
+targetos: Windows
+req.typenames: "*PDOT11_ROAMING_START_PARAMETERS, DOT11_ROAMING_START_PARAMETERS"
+req.product: Windows 10 or later.
 ---
 
 # DOT11_ROAMING_START_PARAMETERS structure

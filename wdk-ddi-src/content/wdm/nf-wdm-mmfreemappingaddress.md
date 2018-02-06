@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.MmFreeMappingAddress
-title : MmFreeMappingAddress function
-author : windows-driver-content
-description : The MmFreeMappingAddress routine frees a range of virtual memory reserved by the MmAllocateMappingAddress routine.
-old-location : kernel\mmfreemappingaddress.htm
-old-project : kernel
-ms.assetid : df5afc18-da83-46b4-b7ab-8cef4353b951
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : MmFreeMappingAddress routine [Kernel-Mode Driver Architecture], wdm/MmFreeMappingAddress, MmFreeMappingAddress, k106_fa09359d-0552-429a-b3af-048f03ea7a15.xml, kernel.mmfreemappingaddress
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows XP and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<=APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.MmFreeMappingAddress
+title: MmFreeMappingAddress function
+author: windows-driver-content
+description: The MmFreeMappingAddress routine frees a range of virtual memory reserved by the MmAllocateMappingAddress routine.
+old-location: kernel\mmfreemappingaddress.htm
+old-project: kernel
+ms.assetid: df5afc18-da83-46b4-b7ab-8cef4353b951
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: MmFreeMappingAddress routine [Kernel-Mode Driver Architecture], wdm/MmFreeMappingAddress, MmFreeMappingAddress, k106_fa09359d-0552-429a-b3af-048f03ea7a15.xml, kernel.mmfreemappingaddress
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows XP and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<=APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	MmFreeMappingAddress
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFIoRequest3.RetrieveActivityId
-title : IWDFIoRequest3::RetrieveActivityId method
-author : windows-driver-content
-description : The RetrieveActivityId method retrieves the current activity identifier associated with an I/O request.
-old-location : wdf\iwdfiorequest3_retrieveactivityid.htm
-old-project : wdf
-ms.assetid : A90FCF3C-B648-4E97-887E-FCE58D7FA13A
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RetrieveActivityId method, IWDFIoRequest3 interface, IWDFIoRequest3 interface, RetrieveActivityId method, wudfddi/IWDFIoRequest3::RetrieveActivityId, IWDFIoRequest3, RetrieveActivityId, RetrieveActivityId method, IWDFIoRequest3::RetrieveActivityId, wdf.iwdfiorequest3_retrieveactivityid, umdf.iwdfiorequest3_retrieveactivityid
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.11
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFIoRequest3.RetrieveActivityId
+title: IWDFIoRequest3::RetrieveActivityId method
+author: windows-driver-content
+description: The RetrieveActivityId method retrieves the current activity identifier associated with an I/O request.
+old-location: wdf\iwdfiorequest3_retrieveactivityid.htm
+old-project: wdf
+ms.assetid: A90FCF3C-B648-4E97-887E-FCE58D7FA13A
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: RetrieveActivityId method, IWDFIoRequest3 interface, IWDFIoRequest3 interface, RetrieveActivityId method, wudfddi/IWDFIoRequest3::RetrieveActivityId, IWDFIoRequest3, RetrieveActivityId, RetrieveActivityId method, IWDFIoRequest3::RetrieveActivityId, wdf.iwdfiorequest3_retrieveactivityid, umdf.iwdfiorequest3_retrieveactivityid
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.11
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFIoRequest3.RetrieveActivityId
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

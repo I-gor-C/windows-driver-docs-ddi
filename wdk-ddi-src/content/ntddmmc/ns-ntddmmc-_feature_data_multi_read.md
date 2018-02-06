@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddmmc._FEATURE_DATA_MULTI_READ
-title : "_FEATURE_DATA_MULTI_READ"
-author : windows-driver-content
-description : The FEATURE_DATA_MULTI_READ structure contains data for the multiread feature.
-old-location : storage\feature_data_multi_read.htm
-old-project : storage
-ms.assetid : a7db6bd2-7c04-4bfc-b4b4-db1f99520e56
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : ntddmmc/FEATURE_DATA_MULTI_READ, *PFEATURE_DATA_MULTI_READ, FEATURE_DATA_MULTI_READ structure [Storage Devices], _FEATURE_DATA_MULTI_READ, FEATURE_DATA_MULTI_READ, storage.feature_data_multi_read, ntddmmc/PFEATURE_DATA_MULTI_READ, structs-CD-ROM_687fe1cb-1667-4650-97c5-d6e4af7df2af.xml, PFEATURE_DATA_MULTI_READ, PFEATURE_DATA_MULTI_READ structure pointer [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddmmc.h
-req.include-header : Ntddcdrm.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PFEATURE_DATA_MULTI_READ, FEATURE_DATA_MULTI_READ"
+UID: NS:ntddmmc._FEATURE_DATA_MULTI_READ
+title: "_FEATURE_DATA_MULTI_READ"
+author: windows-driver-content
+description: The FEATURE_DATA_MULTI_READ structure contains data for the multiread feature.
+old-location: storage\feature_data_multi_read.htm
+old-project: storage
+ms.assetid: a7db6bd2-7c04-4bfc-b4b4-db1f99520e56
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: ntddmmc/FEATURE_DATA_MULTI_READ, *PFEATURE_DATA_MULTI_READ, FEATURE_DATA_MULTI_READ structure [Storage Devices], _FEATURE_DATA_MULTI_READ, FEATURE_DATA_MULTI_READ, storage.feature_data_multi_read, ntddmmc/PFEATURE_DATA_MULTI_READ, structs-CD-ROM_687fe1cb-1667-4650-97c5-d6e4af7df2af.xml, PFEATURE_DATA_MULTI_READ, PFEATURE_DATA_MULTI_READ structure pointer [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddmmc.h
+req.include-header: Ntddcdrm.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddmmc.h
+apiname:
+-	FEATURE_DATA_MULTI_READ
+product: Windows
+targetos: Windows
+req.typenames: "*PFEATURE_DATA_MULTI_READ, FEATURE_DATA_MULTI_READ"
 ---
 
 # _FEATURE_DATA_MULTI_READ structure

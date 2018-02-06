@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3D11_1DDI_GETCRYPTOKEYEXCHANGETYPE
-title : PFND3D11_1DDI_GETCRYPTOKEYEXCHANGETYPE
-author : windows-driver-content
-description : Queries the type of key exchange that is supported by the cryptographic engine of the display adapter for a specified encryption algorithm and video decoder profile.
-old-location : display\getcryptokeyexchangetype.htm
-old-project : display
-ms.assetid : 64870c9f-facf-4344-93d0-12cbcec86e11
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.getcryptokeyexchangetype, GetCryptoKeyExchangeType callback function [Display Devices], GetCryptoKeyExchangeType, PFND3D11_1DDI_GETCRYPTOKEYEXCHANGETYPE, PFND3D11_1DDI_GETCRYPTOKEYEXCHANGETYPE, d3d10umddi/GetCryptoKeyExchangeType
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3D11_1DDI_GETCRYPTOKEYEXCHANGETYPE
+title: PFND3D11_1DDI_GETCRYPTOKEYEXCHANGETYPE
+author: windows-driver-content
+description: Queries the type of key exchange that is supported by the cryptographic engine of the display adapter for a specified encryption algorithm and video decoder profile.
+old-location: display\getcryptokeyexchangetype.htm
+old-project: display
+ms.assetid: 64870c9f-facf-4344-93d0-12cbcec86e11
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.getcryptokeyexchangetype, GetCryptoKeyExchangeType callback function [Display Devices], GetCryptoKeyExchangeType, PFND3D11_1DDI_GETCRYPTOKEYEXCHANGETYPE, PFND3D11_1DDI_GETCRYPTOKEYEXCHANGETYPE, d3d10umddi/GetCryptoKeyExchangeType
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	D3d10umddi.h
+apiname:
+-	GetCryptoKeyExchangeType
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

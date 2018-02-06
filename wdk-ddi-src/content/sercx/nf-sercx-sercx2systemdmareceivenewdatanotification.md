@@ -1,42 +1,47 @@
 ---
-UID : NF:sercx.SerCx2SystemDmaReceiveNewDataNotification
-title : SerCx2SystemDmaReceiveNewDataNotification function
-author : windows-driver-content
-description : The SerCx2SystemDmaReceiveNewDataNotification method notifies version 2 of the serial framework extension (SerCx2) that data is available to be read from the receive FIFO in the serial controller hardware.
-old-location : serports\sercx2systemdmareceivenewdatanotification.htm
-old-project : serports
-ms.assetid : 9ECC15F2-9D08-4EEF-ADBD-612D8D1B5B72
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : SerCx2SystemDmaReceiveNewDataNotification, SerCx2SystemDmaReceiveNewDataNotification method [Serial Ports], serports.sercx2systemdmareceivenewdatanotification, 2/SerCx2SystemDmaReceiveNewDataNotification
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : sercx.h
-req.include-header : 
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 8.1.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSERCX_STATUS, SERCX_STATUS"
-req.product : Windows 10 or later.
+UID: NF:sercx.SerCx2SystemDmaReceiveNewDataNotification
+title: SerCx2SystemDmaReceiveNewDataNotification function
+author: windows-driver-content
+description: The SerCx2SystemDmaReceiveNewDataNotification method notifies version 2 of the serial framework extension (SerCx2) that data is available to be read from the receive FIFO in the serial controller hardware.
+old-location: serports\sercx2systemdmareceivenewdatanotification.htm
+old-project: serports
+ms.assetid: 9ECC15F2-9D08-4EEF-ADBD-612D8D1B5B72
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: SerCx2SystemDmaReceiveNewDataNotification, SerCx2SystemDmaReceiveNewDataNotification method [Serial Ports], serports.sercx2systemdmareceivenewdatanotification, 2/SerCx2SystemDmaReceiveNewDataNotification
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: sercx.h
+req.include-header: 
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 8.1.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	2.0\Sercx.h
+apiname:
+-	SerCx2SystemDmaReceiveNewDataNotification
+product: Windows
+targetos: Windows
+req.typenames: "*PSERCX_STATUS, SERCX_STATUS"
+req.product: Windows 10 or later.
 ---
 
 

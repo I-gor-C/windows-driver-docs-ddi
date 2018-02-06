@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugDataSpaces4.ReadHandleData
-title : IDebugDataSpaces4::ReadHandleData method
-author : windows-driver-content
-description : The ReadHandleData method retrieves information about a system object specified by a system handle.
-old-location : debugger\readhandledata.htm
-old-project : debugger
-ms.assetid : 9ad8e8c1-6aee-4eac-93e6-5997212c63d0
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : ReadHandleData, dbgeng/IDebugDataSpaces3::ReadHandleData, dbgeng/IDebugDataSpaces4::ReadHandleData, ReadHandleData method [Windows Debugging], IDebugDataSpaces3 interface, IDebugDataSpaces2::ReadHandleData, IDebugDataSpaces4 interface [Windows Debugging], ReadHandleData method, ReadHandleData method [Windows Debugging], IDebugDataSpaces4::ReadHandleData, IDebugDataSpaces3 interface [Windows Debugging], ReadHandleData method, ReadHandleData method [Windows Debugging], IDebugDataSpaces4 interface, debugger.readhandledata, dbgeng/IDebugDataSpaces2::ReadHandleData, IDebugDataSpaces_cbad043a-7b6e-4c5c-8a14-9a7b20a0b125.xml, IDebugDataSpaces4, ReadHandleData method [Windows Debugging], IDebugDataSpaces2 interface, IDebugDataSpaces2 interface [Windows Debugging], ReadHandleData method, IDebugDataSpaces3::ReadHandleData
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugDataSpaces4.ReadHandleData
+title: IDebugDataSpaces4::ReadHandleData method
+author: windows-driver-content
+description: The ReadHandleData method retrieves information about a system object specified by a system handle.
+old-location: debugger\readhandledata.htm
+old-project: debugger
+ms.assetid: 9ad8e8c1-6aee-4eac-93e6-5997212c63d0
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: ReadHandleData, dbgeng/IDebugDataSpaces3::ReadHandleData, dbgeng/IDebugDataSpaces4::ReadHandleData, ReadHandleData method [Windows Debugging], IDebugDataSpaces3 interface, IDebugDataSpaces2::ReadHandleData, IDebugDataSpaces4 interface [Windows Debugging], ReadHandleData method, ReadHandleData method [Windows Debugging], IDebugDataSpaces4::ReadHandleData, IDebugDataSpaces3 interface [Windows Debugging], ReadHandleData method, ReadHandleData method [Windows Debugging], IDebugDataSpaces4 interface, debugger.readhandledata, dbgeng/IDebugDataSpaces2::ReadHandleData, IDebugDataSpaces_cbad043a-7b6e-4c5c-8a14-9a7b20a0b125.xml, IDebugDataSpaces4, ReadHandleData method [Windows Debugging], IDebugDataSpaces2 interface, IDebugDataSpaces2 interface [Windows Debugging], ReadHandleData method, IDebugDataSpaces3::ReadHandleData
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugDataSpaces2.ReadHandleData
+-	IDebugDataSpaces3.ReadHandleData
+-	IDebugDataSpaces4.ReadHandleData
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

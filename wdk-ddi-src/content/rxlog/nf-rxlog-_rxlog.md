@@ -1,42 +1,47 @@
 ---
-UID : NF:rxlog._RxLog
-title : "_RxLog function"
-author : windows-driver-content
-description : "_RxLog takes a format string and variable number of parameters and formats an output string for recording as an I/O error log entry if logging is enabled."
-old-location : ifsk\_rxlog.htm
-old-project : ifsk
-ms.assetid : 00f6c2d9-7521-46c8-b37e-2be304d8a045
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk._rxlog, _RxLog, _RxLog function [Installable File System Drivers], rxlog/_RxLog, rxref_2c140100-e24e-4fe0-935a-81fa6840db24.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : rxlog.h
-req.include-header : Rxlog.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RX_CONTEXT, *PRX_CONTEXT
-req.product : Windows 10 or later.
+UID: NF:rxlog._RxLog
+title: "_RxLog function"
+author: windows-driver-content
+description: "_RxLog takes a format string and variable number of parameters and formats an output string for recording as an I/O error log entry if logging is enabled."
+old-location: ifsk\_rxlog.htm
+old-project: ifsk
+ms.assetid: 00f6c2d9-7521-46c8-b37e-2be304d8a045
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk._rxlog, _RxLog, _RxLog function [Installable File System Drivers], rxlog/_RxLog, rxref_2c140100-e24e-4fe0-935a-81fa6840db24.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: rxlog.h
+req.include-header: Rxlog.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	rxlog.h
+apiname:
+-	_RxLog
+product: Windows
+targetos: Windows
+req.typenames: RX_CONTEXT, *PRX_CONTEXT
+req.product: Windows 10 or later.
 ---
 
 

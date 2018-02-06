@@ -1,42 +1,48 @@
 ---
-UID : NF:wdm.RtlCopyUnicodeString
-title : RtlCopyUnicodeString function
-author : windows-driver-content
-description : The RtlCopyUnicodeString routine copies a source string to a destination string.
-old-location : kernel\rtlcopyunicodestring.htm
-old-project : kernel
-ms.assetid : 241801a5-4a02-46f3-a007-f571d58c7825
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : k109_5d0b341c-a440-4137-bdc3-77e0da0db58c.xml, kernel.rtlcopyunicodestring, RtlCopyUnicodeString routine [Kernel-Mode Driver Architecture], wdm/RtlCopyUnicodeString, RtlCopyUnicodeString
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe (kernel mode); Ntdll.dll (user mode)
-req.irql : Any level (See Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.RtlCopyUnicodeString
+title: RtlCopyUnicodeString function
+author: windows-driver-content
+description: The RtlCopyUnicodeString routine copies a source string to a destination string.
+old-location: kernel\rtlcopyunicodestring.htm
+old-project: kernel
+ms.assetid: 241801a5-4a02-46f3-a007-f571d58c7825
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: k109_5d0b341c-a440-4137-bdc3-77e0da0db58c.xml, kernel.rtlcopyunicodestring, RtlCopyUnicodeString routine [Kernel-Mode Driver Architecture], wdm/RtlCopyUnicodeString, RtlCopyUnicodeString
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe (kernel mode); Ntdll.dll (user mode)
+req.irql: Any level (See Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+-	Ntdll.dll
+apiname:
+-	RtlCopyUnicodeString
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

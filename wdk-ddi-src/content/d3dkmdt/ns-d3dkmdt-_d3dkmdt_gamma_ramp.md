@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmdt._D3DKMDT_GAMMA_RAMP
-title : "_D3DKMDT_GAMMA_RAMP"
-author : windows-driver-content
-description : The D3DKMDT_GAMMA_RAMP structure contains descriptive information about a gamma lookup table and a pointer to the lookup table.
-old-location : display\d3dkmdt_gamma_ramp.htm
-old-project : display
-ms.assetid : 3a875a1e-ef4f-4851-9329-f1fd2aca261f
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DKMDT_GAMMA_RAMP, display.d3dkmdt_gamma_ramp, _D3DKMDT_GAMMA_RAMP, d3dkmdt/D3DKMDT_GAMMA_RAMP, DmStructs_bb8721fc-b604-45e4-b3c8-ff27bda95e5b.xml, D3DKMDT_GAMMA_RAMP structure [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmdt.h
-req.include-header : D3dkmdt.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMDT_GAMMA_RAMP
+UID: NS:d3dkmdt._D3DKMDT_GAMMA_RAMP
+title: "_D3DKMDT_GAMMA_RAMP"
+author: windows-driver-content
+description: The D3DKMDT_GAMMA_RAMP structure contains descriptive information about a gamma lookup table and a pointer to the lookup table.
+old-location: display\d3dkmdt_gamma_ramp.htm
+old-project: display
+ms.assetid: 3a875a1e-ef4f-4851-9329-f1fd2aca261f
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DKMDT_GAMMA_RAMP, display.d3dkmdt_gamma_ramp, _D3DKMDT_GAMMA_RAMP, d3dkmdt/D3DKMDT_GAMMA_RAMP, DmStructs_bb8721fc-b604-45e4-b3c8-ff27bda95e5b.xml, D3DKMDT_GAMMA_RAMP structure [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmdt.h
+req.include-header: D3dkmdt.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmdt.h
+apiname:
+-	D3DKMDT_GAMMA_RAMP
+product: Windows
+targetos: Windows
+req.typenames: D3DKMDT_GAMMA_RAMP
 ---
 
 # _D3DKMDT_GAMMA_RAMP structure

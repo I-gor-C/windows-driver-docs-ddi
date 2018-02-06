@@ -1,42 +1,47 @@
 ---
-UID : NN:wudfddi.IWDFDevice
-title : IWDFDevice
-author : windows-driver-content
-description : The IWDFDevice interface exposes a device object, which is a representation of a device on the system.
-old-location : wdf\iwdfdevice.htm
-old-project : wdf
-ms.assetid : b0f8a156-e0e0-48d1-9e23-4ac07795df07
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.iwdfdevice, IWDFDevice interface, IWDFDevice interface, described, IWDFDevice, wudfddi/IWDFDevice, UMDFDeviceObjectRef_d0dc8041-1d51-457b-8632-e500bf4df724.xml, umdf.iwdfdevice
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.5
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NN:wudfddi.IWDFDevice
+title: IWDFDevice
+author: windows-driver-content
+description: The IWDFDevice interface exposes a device object, which is a representation of a device on the system.
+old-location: wdf\iwdfdevice.htm
+old-project: wdf
+ms.assetid: b0f8a156-e0e0-48d1-9e23-4ac07795df07
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.iwdfdevice, IWDFDevice interface, IWDFDevice interface, described, IWDFDevice, wudfddi/IWDFDevice, UMDFDeviceObjectRef_d0dc8041-1d51-457b-8632-e500bf4df724.xml, umdf.iwdfdevice
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.5
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFDevice
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 # IWDFDevice interface

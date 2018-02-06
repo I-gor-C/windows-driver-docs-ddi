@@ -1,41 +1,46 @@
 ---
-UID : NS:fwpsk.FWPS_INCOMING_METADATA_VALUES0_
-title : FWPS_INCOMING_METADATA_VALUES0_
-author : windows-driver-content
-description : The FWPS_INCOMING_METADATA_VALUES0 structure defines metadata values that the filter engine passes to a callout's classifyFn callout function.Note  FWPS_INCOMING_METADATA_VALUES0 is a specific version of FWPS_INCOMING_METADATA_VALUES.
-old-location : netvista\fwps_incoming_metadata_values0.htm
-old-project : netvista
-ms.assetid : fba7eb60-0d19-4bfd-b484-2e615d3e9237
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : FWPS_L2_METADATA_FIELD_VSWITCH_PACKET_CONTEXT, wfp_ref_3_struct_3_fwps_F-O_ee69ce82-24a0-4757-bba4-f1abb3f00c8e.xml, fwpsk/FWPS_INCOMING_METADATA_VALUES0, FWPS_L2_METADATA_FIELD_WIFI_OPERATION_MODE, FWPS_INCOMING_METADATA_VALUES0_, FWPS_L2_METADATA_FIELD_VSWITCH_SOURCE_NIC_INDEX, FWPS_L2_METADATA_FIELD_ETHERNET_MAC_HEADER_SIZE, FWPS_L2_METADATA_FIELD_VSWITCH_DESTINATION_PORT_ID, FWPS_L2_INCOMING_FLAG_IS_RAW_IPV4_FRAMING, FWPS_INCOMING_METADATA_VALUES0 structure [Network Drivers Starting with Windows Vista], FWPS_L2_INCOMING_FLAG_IS_RAW_IPV6_FRAMING, FWPS_INCOMING_METADATA_VALUES0, FWPS_L2_INCOMING_FLAG_RECLASSIFY_MULTI_DESTINATION, FWPS_L2_METADATA_FIELD_VSWITCH_SOURCE_PORT_ID, netvista.fwps_incoming_metadata_values0
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : fwpsk.h
-req.include-header : Fwpsk.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with  Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FWPS_INCOMING_METADATA_VALUES0
+UID: NS:fwpsk.FWPS_INCOMING_METADATA_VALUES0_
+title: FWPS_INCOMING_METADATA_VALUES0_
+author: windows-driver-content
+description: The FWPS_INCOMING_METADATA_VALUES0 structure defines metadata values that the filter engine passes to a callout's classifyFn callout function.Note  FWPS_INCOMING_METADATA_VALUES0 is a specific version of FWPS_INCOMING_METADATA_VALUES.
+old-location: netvista\fwps_incoming_metadata_values0.htm
+old-project: netvista
+ms.assetid: fba7eb60-0d19-4bfd-b484-2e615d3e9237
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: FWPS_L2_METADATA_FIELD_VSWITCH_PACKET_CONTEXT, wfp_ref_3_struct_3_fwps_F-O_ee69ce82-24a0-4757-bba4-f1abb3f00c8e.xml, fwpsk/FWPS_INCOMING_METADATA_VALUES0, FWPS_L2_METADATA_FIELD_WIFI_OPERATION_MODE, FWPS_INCOMING_METADATA_VALUES0_, FWPS_L2_METADATA_FIELD_VSWITCH_SOURCE_NIC_INDEX, FWPS_L2_METADATA_FIELD_ETHERNET_MAC_HEADER_SIZE, FWPS_L2_METADATA_FIELD_VSWITCH_DESTINATION_PORT_ID, FWPS_L2_INCOMING_FLAG_IS_RAW_IPV4_FRAMING, FWPS_INCOMING_METADATA_VALUES0 structure [Network Drivers Starting with Windows Vista], FWPS_L2_INCOMING_FLAG_IS_RAW_IPV6_FRAMING, FWPS_INCOMING_METADATA_VALUES0, FWPS_L2_INCOMING_FLAG_RECLASSIFY_MULTI_DESTINATION, FWPS_L2_METADATA_FIELD_VSWITCH_SOURCE_PORT_ID, netvista.fwps_incoming_metadata_values0
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: fwpsk.h
+req.include-header: Fwpsk.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with  Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	fwpsk.h
+apiname:
+-	FWPS_INCOMING_METADATA_VALUES0
+product: Windows
+targetos: Windows
+req.typenames: FWPS_INCOMING_METADATA_VALUES0
 ---
 
 # FWPS_INCOMING_METADATA_VALUES0_ structure

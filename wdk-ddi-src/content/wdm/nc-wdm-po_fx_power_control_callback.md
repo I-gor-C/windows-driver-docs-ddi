@@ -1,42 +1,47 @@
 ---
-UID : NC:wdm.PO_FX_POWER_CONTROL_CALLBACK
-title : PO_FX_POWER_CONTROL_CALLBACK
-author : windows-driver-content
-description : The PowerControlCallback callback routine performs a power control operation that is requested by the power management framework (PoFx).
-old-location : kernel\powercontrolcallback.htm
-old-project : kernel
-ms.assetid : 110DAD1A-606B-4973-8724-03B531B2AEA9
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.powercontrolcallback, PowerControlCallback routine [Kernel-Mode Driver Architecture], PowerControlCallback, PO_FX_POWER_CONTROL_CALLBACK, PO_FX_POWER_CONTROL_CALLBACK, wdm/PowerControlCallback
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdm.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Supported starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Called at IRQL <= DISPATCH_LEVEL.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
-req.product : Windows 10 or later.
+UID: NC:wdm.PO_FX_POWER_CONTROL_CALLBACK
+title: PO_FX_POWER_CONTROL_CALLBACK
+author: windows-driver-content
+description: The PowerControlCallback callback routine performs a power control operation that is requested by the power management framework (PoFx).
+old-location: kernel\powercontrolcallback.htm
+old-project: kernel
+ms.assetid: 110DAD1A-606B-4973-8724-03B531B2AEA9
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.powercontrolcallback, PowerControlCallback routine [Kernel-Mode Driver Architecture], PowerControlCallback, PO_FX_POWER_CONTROL_CALLBACK, PO_FX_POWER_CONTROL_CALLBACK, wdm/PowerControlCallback
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdm.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Supported starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Called at IRQL <= DISPATCH_LEVEL.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Wdm.h
+apiname:
+-	PowerControlCallback
+product: Windows
+targetos: Windows
+req.typenames: WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+req.product: Windows 10 or later.
 ---
 
 

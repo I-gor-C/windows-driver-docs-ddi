@@ -1,41 +1,46 @@
 ---
-UID : NS:hbapiwmi._GetPersistentBinding2_OUT
-title : "_GetPersistentBinding2_OUT"
-author : windows-driver-content
-description : The GetBindingSupport_OUT structure is used to report the output parameter data of the GetPersistentBinding2 WMI method to the WMI client.
-old-location : storage\getpersistentbinding2_out.htm
-old-project : storage
-ms.assetid : 883a7a56-ecb9-428f-a15a-ba428a626bed
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : PGetPersistentBinding2_OUT, *PGetPersistentBinding2_OUT, hbapiwmi/GetPersistentBinding2_OUT, hbapiwmi/PGetPersistentBinding2_OUT, GetPersistentBinding2_OUT structure [Storage Devices], GetPersistentBinding2_OUT, PGetPersistentBinding2_OUT structure pointer [Storage Devices], structs-Fibre_e6ffe5e2-f1e2-4b40-836c-954eb31301de.xml, _GetPersistentBinding2_OUT, storage.getpersistentbinding2_out
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : hbapiwmi.h
-req.include-header : Hbapiwmi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PGetPersistentBinding2_OUT, GetPersistentBinding2_OUT"
+UID: NS:hbapiwmi._GetPersistentBinding2_OUT
+title: "_GetPersistentBinding2_OUT"
+author: windows-driver-content
+description: The GetBindingSupport_OUT structure is used to report the output parameter data of the GetPersistentBinding2 WMI method to the WMI client.
+old-location: storage\getpersistentbinding2_out.htm
+old-project: storage
+ms.assetid: 883a7a56-ecb9-428f-a15a-ba428a626bed
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: PGetPersistentBinding2_OUT, *PGetPersistentBinding2_OUT, hbapiwmi/GetPersistentBinding2_OUT, hbapiwmi/PGetPersistentBinding2_OUT, GetPersistentBinding2_OUT structure [Storage Devices], GetPersistentBinding2_OUT, PGetPersistentBinding2_OUT structure pointer [Storage Devices], structs-Fibre_e6ffe5e2-f1e2-4b40-836c-954eb31301de.xml, _GetPersistentBinding2_OUT, storage.getpersistentbinding2_out
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: hbapiwmi.h
+req.include-header: Hbapiwmi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hbapiwmi.h
+apiname:
+-	GetPersistentBinding2_OUT
+product: Windows
+targetos: Windows
+req.typenames: "*PGetPersistentBinding2_OUT, GetPersistentBinding2_OUT"
 ---
 
 # _GetPersistentBinding2_OUT structure

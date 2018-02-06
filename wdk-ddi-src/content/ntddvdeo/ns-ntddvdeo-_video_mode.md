@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddvdeo._VIDEO_MODE
-title : "_VIDEO_MODE"
-author : windows-driver-content
-description : The VIDEO_MODE structure contains the requested VGA mode that an adapter should set. This structure is used in conjunction with IOCTL_VIDEO_SET_CURRENT_MODE.
-old-location : display\video_mode.htm
-old-project : display
-ms.assetid : 01fad141-d023-4a3a-80ae-cb07985db8d1
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : VIDEO_MODE, PVIDEO_MODE, *PVIDEO_MODE, ntddvdeo/VIDEO_MODE, VIDEO_MODE structure [Display Devices], ntddvdeo/PVIDEO_MODE, Video_Structs_7a64b36b-d8f2-411d-86e3-4fe854a94220.xml, _VIDEO_MODE, PVIDEO_MODE structure pointer [Display Devices], display.video_mode
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddvdeo.h
-req.include-header : Ntddvdeo.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PVIDEO_MODE, VIDEO_MODE"
+UID: NS:ntddvdeo._VIDEO_MODE
+title: "_VIDEO_MODE"
+author: windows-driver-content
+description: The VIDEO_MODE structure contains the requested VGA mode that an adapter should set. This structure is used in conjunction with IOCTL_VIDEO_SET_CURRENT_MODE.
+old-location: display\video_mode.htm
+old-project: display
+ms.assetid: 01fad141-d023-4a3a-80ae-cb07985db8d1
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: VIDEO_MODE, PVIDEO_MODE, *PVIDEO_MODE, ntddvdeo/VIDEO_MODE, VIDEO_MODE structure [Display Devices], ntddvdeo/PVIDEO_MODE, Video_Structs_7a64b36b-d8f2-411d-86e3-4fe854a94220.xml, _VIDEO_MODE, PVIDEO_MODE structure pointer [Display Devices], display.video_mode
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddvdeo.h
+req.include-header: Ntddvdeo.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddvdeo.h
+apiname:
+-	VIDEO_MODE
+product: Windows
+targetos: Windows
+req.typenames: "*PVIDEO_MODE, VIDEO_MODE"
 ---
 
 # _VIDEO_MODE structure

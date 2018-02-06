@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmthk._D3DKMT_EVICT
-title : "_D3DKMT_EVICT"
-author : windows-driver-content
-description : D3DKMT_EVICT is used with D3DKMTEvict to subtract one from the residency reference count.
-old-location : display\d3dkmt_evict.htm
-old-project : display
-ms.assetid : 07785939-C3D1-4085-BA1A-91E8FEE52B70
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.d3dkmt_evict, _D3DKMT_EVICT, D3DKMT_EVICT structure [Display Devices], d3dkmthk/D3DKMT_EVICT, D3DKMT_EVICT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_EVICT
+UID: NS:d3dkmthk._D3DKMT_EVICT
+title: "_D3DKMT_EVICT"
+author: windows-driver-content
+description: D3DKMT_EVICT is used with D3DKMTEvict to subtract one from the residency reference count.
+old-location: display\d3dkmt_evict.htm
+old-project: display
+ms.assetid: 07785939-C3D1-4085-BA1A-91E8FEE52B70
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.d3dkmt_evict, _D3DKMT_EVICT, D3DKMT_EVICT structure [Display Devices], d3dkmthk/D3DKMT_EVICT, D3DKMT_EVICT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmthk.h
+apiname:
+-	D3DKMT_EVICT
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_EVICT
 ---
 
 # _D3DKMT_EVICT structure

@@ -1,41 +1,46 @@
 ---
-UID : NS:ntifs._TOKEN_SOURCE
-title : "_TOKEN_SOURCE"
-author : windows-driver-content
-description : TOKEN_SOURCE identifies the source of an access token.
-old-location : ifsk\token_source.htm
-old-project : ifsk
-ms.assetid : 0820f6f2-bec2-4d38-9a95-cfff6151ef02
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : "*PTOKEN_SOURCE, ntifs/PTOKEN_SOURCE, ifsk.token_source, TOKEN_SOURCE, securitystructures_caf23dc4-0bfe-40e1-9b94-b58bb0eb893e.xml, PTOKEN_SOURCE structure pointer [Installable File System Drivers], ntifs/TOKEN_SOURCE, PTOKEN_SOURCE, _TOKEN_SOURCE, TOKEN_SOURCE structure [Installable File System Drivers]"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PTOKEN_SOURCE, TOKEN_SOURCE"
+UID: NS:ntifs._TOKEN_SOURCE
+title: "_TOKEN_SOURCE"
+author: windows-driver-content
+description: TOKEN_SOURCE identifies the source of an access token.
+old-location: ifsk\token_source.htm
+old-project: ifsk
+ms.assetid: 0820f6f2-bec2-4d38-9a95-cfff6151ef02
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: "*PTOKEN_SOURCE, ntifs/PTOKEN_SOURCE, ifsk.token_source, TOKEN_SOURCE, securitystructures_caf23dc4-0bfe-40e1-9b94-b58bb0eb893e.xml, PTOKEN_SOURCE structure pointer [Installable File System Drivers], ntifs/TOKEN_SOURCE, PTOKEN_SOURCE, _TOKEN_SOURCE, TOKEN_SOURCE structure [Installable File System Drivers]"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntifs.h
+apiname:
+-	TOKEN_SOURCE
+product: Windows
+targetos: Windows
+req.typenames: "*PTOKEN_SOURCE, TOKEN_SOURCE"
 ---
 
 # _TOKEN_SOURCE structure

@@ -1,41 +1,49 @@
 ---
-UID : NF:d3dkmthk.D3DKMTSignalSynchronizationObjectFromGpu2
-title : D3DKMTSignalSynchronizationObjectFromGpu2 function
-author : windows-driver-content
-description : D3DKMTSignalSynchronizationObjectFromGpu2 is used to signal a monitored fence.
-old-location : display\d3dkmtsignalsynchronizationobjectfromgpu2.htm
-old-project : display
-ms.assetid : 813193DC-8066-4B98-BC24-7688630AAC1C
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.d3dkmtsignalsynchronizationobjectfromgpu2, d3dkmthk/D3DKMTSignalSynchronizationObjectFromGpu2, D3DKMTSignalSynchronizationObjectFromGpu2 function [Display Devices], D3DKMTSignalSynchronizationObjectFromGpu2
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Universal
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : GDI32.lib
-req.dll : GDI32.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_DRIVERVERSION
+UID: NF:d3dkmthk.D3DKMTSignalSynchronizationObjectFromGpu2
+title: D3DKMTSignalSynchronizationObjectFromGpu2 function
+author: windows-driver-content
+description: D3DKMTSignalSynchronizationObjectFromGpu2 is used to signal a monitored fence.
+old-location: display\d3dkmtsignalsynchronizationobjectfromgpu2.htm
+old-project: display
+ms.assetid: 813193DC-8066-4B98-BC24-7688630AAC1C
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.d3dkmtsignalsynchronizationobjectfromgpu2, d3dkmthk/D3DKMTSignalSynchronizationObjectFromGpu2, D3DKMTSignalSynchronizationObjectFromGpu2 function [Display Devices], D3DKMTSignalSynchronizationObjectFromGpu2
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Universal
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: GDI32.lib
+req.dll: GDI32.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	GDI32.dll
+-	API-MS-Win-DX-D3DKMT-L1-1-1.dll
+-	GDI32.dll
+-	API-MS-Win-DX-D3DKMT-L1-1-2.dll
+apiname:
+-	D3DKMTSignalSynchronizationObjectFromGpu2
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_DRIVERVERSION
 ---
 
 

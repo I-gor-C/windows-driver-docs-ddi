@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddmmc._FEATURE_DATA_CD_MASTERING
-title : "_FEATURE_DATA_CD_MASTERING"
-author : windows-driver-content
-description : The FEATURE_DATA_CD_MASTERING structure holds information for the CD Mastering feature.
-old-location : storage\feature_data_cd_mastering.htm
-old-project : storage
-ms.assetid : 340e9675-9d07-4224-ac1b-86e7586c0738
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : PFEATURE_DATA_CD_MASTERING structure pointer [Storage Devices], FEATURE_DATA_CD_MASTERING, PFEATURE_DATA_CD_MASTERING, *PFEATURE_DATA_CD_MASTERING, storage.feature_data_cd_mastering, _FEATURE_DATA_CD_MASTERING, ntddmmc/PFEATURE_DATA_CD_MASTERING, ntddmmc/FEATURE_DATA_CD_MASTERING, structs-CD-ROM_f803f10f-2ef7-4e3b-9c16-1ed2f3c5b2a5.xml, FEATURE_DATA_CD_MASTERING structure [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddmmc.h
-req.include-header : Ntddcdrm.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PFEATURE_DATA_CD_MASTERING, FEATURE_DATA_CD_MASTERING"
+UID: NS:ntddmmc._FEATURE_DATA_CD_MASTERING
+title: "_FEATURE_DATA_CD_MASTERING"
+author: windows-driver-content
+description: The FEATURE_DATA_CD_MASTERING structure holds information for the CD Mastering feature.
+old-location: storage\feature_data_cd_mastering.htm
+old-project: storage
+ms.assetid: 340e9675-9d07-4224-ac1b-86e7586c0738
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: PFEATURE_DATA_CD_MASTERING structure pointer [Storage Devices], FEATURE_DATA_CD_MASTERING, PFEATURE_DATA_CD_MASTERING, *PFEATURE_DATA_CD_MASTERING, storage.feature_data_cd_mastering, _FEATURE_DATA_CD_MASTERING, ntddmmc/PFEATURE_DATA_CD_MASTERING, ntddmmc/FEATURE_DATA_CD_MASTERING, structs-CD-ROM_f803f10f-2ef7-4e3b-9c16-1ed2f3c5b2a5.xml, FEATURE_DATA_CD_MASTERING structure [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddmmc.h
+req.include-header: Ntddcdrm.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddmmc.h
+apiname:
+-	FEATURE_DATA_CD_MASTERING
+product: Windows
+targetos: Windows
+req.typenames: "*PFEATURE_DATA_CD_MASTERING, FEATURE_DATA_CD_MASTERING"
 ---
 
 # _FEATURE_DATA_CD_MASTERING structure

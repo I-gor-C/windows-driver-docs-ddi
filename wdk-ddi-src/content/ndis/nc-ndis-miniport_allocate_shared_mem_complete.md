@@ -1,41 +1,46 @@
 ---
-UID : NC:ndis.MINIPORT_ALLOCATE_SHARED_MEM_COMPLETE
-title : MINIPORT_ALLOCATE_SHARED_MEM_COMPLETE
-author : windows-driver-content
-description : NDIS calls a miniport driver's MiniportSharedMemoryAllocateComplete function to complete a shared memory allocation request that the miniport driver started by calling the NdisMAllocateSharedMemoryAsyncEx function.
-old-location : netvista\miniportsharedmemoryallocatecomplete.htm
-old-project : netvista
-ms.assetid : d102a001-960c-4fe6-af2d-d740bba744b1
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.miniportsharedmemoryallocatecomplete, MiniportSharedMemoryAllocateComplete callback function [Network Drivers Starting with Windows Vista], MiniportSharedMemoryAllocateComplete, MINIPORT_ALLOCATE_SHARED_MEM_COMPLETE, MINIPORT_ALLOCATE_SHARED_MEM_COMPLETE, ndis/MiniportSharedMemoryAllocateComplete, ndis_sgdma_ref_0099c752-42ac-4b2d-9787-98deca358cfc.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
+UID: NC:ndis.MINIPORT_ALLOCATE_SHARED_MEM_COMPLETE
+title: MINIPORT_ALLOCATE_SHARED_MEM_COMPLETE
+author: windows-driver-content
+description: NDIS calls a miniport driver's MiniportSharedMemoryAllocateComplete function to complete a shared memory allocation request that the miniport driver started by calling the NdisMAllocateSharedMemoryAsyncEx function.
+old-location: netvista\miniportsharedmemoryallocatecomplete.htm
+old-project: netvista
+ms.assetid: d102a001-960c-4fe6-af2d-d740bba744b1
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.miniportsharedmemoryallocatecomplete, MiniportSharedMemoryAllocateComplete callback function [Network Drivers Starting with Windows Vista], MiniportSharedMemoryAllocateComplete, MINIPORT_ALLOCATE_SHARED_MEM_COMPLETE, MINIPORT_ALLOCATE_SHARED_MEM_COMPLETE, ndis/MiniportSharedMemoryAllocateComplete, ndis_sgdma_ref_0099c752-42ac-4b2d-9787-98deca358cfc.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ndis.h
+apiname:
+-	MiniportSharedMemoryAllocateComplete
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 

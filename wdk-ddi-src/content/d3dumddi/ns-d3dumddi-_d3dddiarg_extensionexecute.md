@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._D3DDDIARG_EXTENSIONEXECUTE
-title : "_D3DDDIARG_EXTENSIONEXECUTE"
-author : windows-driver-content
-description : The D3DDDIARG_EXTENSIONEXECUTE structure describes a Microsoft DirectX Video Acceleration (VA) extension operation to perform.
-old-location : display\d3dddiarg_extensionexecute.htm
-old-project : display
-ms.assetid : adc3e8a0-b261-47dc-ada2-bd21cb3ca954
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DDDIARG_EXTENSIONEXECUTE structure [Display Devices], D3DDDIARG_EXTENSIONEXECUTE, d3dumddi/D3DDDIARG_EXTENSIONEXECUTE, display.d3dddiarg_extensionexecute, UMDisplayDriver_param_Structs_99780923-fb21-4c84-bced-973ebfe44b1a.xml, _D3DDDIARG_EXTENSIONEXECUTE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDIARG_EXTENSIONEXECUTE
+UID: NS:d3dumddi._D3DDDIARG_EXTENSIONEXECUTE
+title: "_D3DDDIARG_EXTENSIONEXECUTE"
+author: windows-driver-content
+description: The D3DDDIARG_EXTENSIONEXECUTE structure describes a Microsoft DirectX Video Acceleration (VA) extension operation to perform.
+old-location: display\d3dddiarg_extensionexecute.htm
+old-project: display
+ms.assetid: adc3e8a0-b261-47dc-ada2-bd21cb3ca954
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DDDIARG_EXTENSIONEXECUTE structure [Display Devices], D3DDDIARG_EXTENSIONEXECUTE, d3dumddi/D3DDDIARG_EXTENSIONEXECUTE, display.d3dddiarg_extensionexecute, UMDisplayDriver_param_Structs_99780923-fb21-4c84-bced-973ebfe44b1a.xml, _D3DDDIARG_EXTENSIONEXECUTE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	D3DDDIARG_EXTENSIONEXECUTE
+product: Windows
+targetos: Windows
+req.typenames: D3DDDIARG_EXTENSIONEXECUTE
 ---
 
 # _D3DDDIARG_EXTENSIONEXECUTE structure

@@ -1,42 +1,47 @@
 ---
-UID : NF:storport.StorPortGetLogicalProcessorRelationship
-title : StorPortGetLogicalProcessorRelationship function
-author : windows-driver-content
-description : The StorPortGetLogicalProcessorRelationship routine returns relationship information for one or more specified types.
-old-location : storage\storportgetlogicalprocessorrelationship.htm
-old-project : storage
-ms.assetid : 32b92771-7f23-492c-a3b0-b10032c9f80a
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storport/StorPortGetLogicalProcessorRelationship, StorPortGetLogicalProcessorRelationship routine [Storage Devices], storprt_65b00469-41a4-446b-aaa5-fee877aaff3c.xml, storage.storportgetlogicalprocessorrelationship, StorPortGetLogicalProcessorRelationship
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 7 and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : StorPortIrql
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STOR_SPINLOCK
-req.product : Windows 10 or later.
+UID: NF:storport.StorPortGetLogicalProcessorRelationship
+title: StorPortGetLogicalProcessorRelationship function
+author: windows-driver-content
+description: The StorPortGetLogicalProcessorRelationship routine returns relationship information for one or more specified types.
+old-location: storage\storportgetlogicalprocessorrelationship.htm
+old-project: storage
+ms.assetid: 32b92771-7f23-492c-a3b0-b10032c9f80a
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storport/StorPortGetLogicalProcessorRelationship, StorPortGetLogicalProcessorRelationship routine [Storage Devices], storprt_65b00469-41a4-446b-aaa5-fee877aaff3c.xml, storage.storportgetlogicalprocessorrelationship, StorPortGetLogicalProcessorRelationship
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 7 and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: StorPortIrql
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	storport.h
+apiname:
+-	StorPortGetLogicalProcessorRelationship
+product: Windows
+targetos: Windows
+req.typenames: STOR_SPINLOCK
+req.product: Windows 10 or later.
 ---
 
 

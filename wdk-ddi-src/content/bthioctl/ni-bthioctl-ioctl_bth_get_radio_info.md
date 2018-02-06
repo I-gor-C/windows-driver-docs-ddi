@@ -1,41 +1,46 @@
 ---
-UID : NI:bthioctl.IOCTL_BTH_GET_RADIO_INFO
-title : IOCTL_BTH_GET_RADIO_INFO
-author : windows-driver-content
-description : The IOCTL_BTH_GET_RADIO_INFO request obtains information about the specified remote radio.
-old-location : bltooth\ioctl_bth_get_radio_info.htm
-old-project : bltooth
-ms.assetid : 45803e80-6090-4b64-8c92-6b5efebd1cfc
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : bltooth.ioctl_bth_get_radio_info, IOCTL_BTH_GET_RADIO_INFO control code [Bluetooth Devices], IOCTL_BTH_GET_RADIO_INFO, bthioctl/IOCTL_BTH_GET_RADIO_INFO, bth_ioctls_ed6699c7-3a05-46bd-ba8b-d138ce1ad751.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : bthioctl.h
-req.include-header : Bthioctl.h
-req.target-type : Windows
-req.target-min-winverclnt : Versions:\_Supported in Windows Vista, and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= PASSIVE_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HFP_BYPASS_CODEC_ID_V1, *PHFP_BYPASS_CODEC_ID_V1
+UID: NI:bthioctl.IOCTL_BTH_GET_RADIO_INFO
+title: IOCTL_BTH_GET_RADIO_INFO
+author: windows-driver-content
+description: The IOCTL_BTH_GET_RADIO_INFO request obtains information about the specified remote radio.
+old-location: bltooth\ioctl_bth_get_radio_info.htm
+old-project: bltooth
+ms.assetid: 45803e80-6090-4b64-8c92-6b5efebd1cfc
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: bltooth.ioctl_bth_get_radio_info, IOCTL_BTH_GET_RADIO_INFO control code [Bluetooth Devices], IOCTL_BTH_GET_RADIO_INFO, bthioctl/IOCTL_BTH_GET_RADIO_INFO, bth_ioctls_ed6699c7-3a05-46bd-ba8b-d138ce1ad751.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: bthioctl.h
+req.include-header: Bthioctl.h
+req.target-type: Windows
+req.target-min-winverclnt: Versions:\_Supported in Windows Vista, and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= PASSIVE_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Bthioctl.h
+apiname:
+-	IOCTL_BTH_GET_RADIO_INFO
+product: Windows
+targetos: Windows
+req.typenames: HFP_BYPASS_CODEC_ID_V1, *PHFP_BYPASS_CODEC_ID_V1
 ---
 
 # IOCTL_BTH_GET_RADIO_INFO IOCTL

@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugSymbols3.GetModuleByModuleName
-title : IDebugSymbols3::GetModuleByModuleName method
-author : windows-driver-content
-description : The GetModuleByModuleName method searches through the target's modules for one with the specified name.
-old-location : debugger\getmodulebymodulename.htm
-old-project : debugger
-ms.assetid : 243b79fe-b1b2-48b4-bb0b-c56b787e7b83
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : GetModuleByModuleName, IDebugSymbols::GetModuleByModuleName, debugger.getmodulebymodulename, IDebugSymbols2::GetModuleByModuleName, IDebugSymbols3::GetModuleByModuleName, IDebugSymbols_1a407f12-64e8-43a3-b831-ef8c9b701537.xml, IDebugSymbols interface [Windows Debugging], GetModuleByModuleName method, dbgeng/IDebugSymbols3::GetModuleByModuleName, dbgeng/IDebugSymbols::GetModuleByModuleName, GetModuleByModuleName method [Windows Debugging], IDebugSymbols3 interface, GetModuleByModuleName method [Windows Debugging], IDebugSymbols2 interface, GetModuleByModuleName method [Windows Debugging], IDebugSymbols interface, GetModuleByModuleName method [Windows Debugging], IDebugSymbols3 interface [Windows Debugging], GetModuleByModuleName method, IDebugSymbols3, dbgeng/IDebugSymbols2::GetModuleByModuleName, IDebugSymbols2 interface [Windows Debugging], GetModuleByModuleName method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSymbols3.GetModuleByModuleName
+title: IDebugSymbols3::GetModuleByModuleName method
+author: windows-driver-content
+description: The GetModuleByModuleName method searches through the target's modules for one with the specified name.
+old-location: debugger\getmodulebymodulename.htm
+old-project: debugger
+ms.assetid: 243b79fe-b1b2-48b4-bb0b-c56b787e7b83
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: GetModuleByModuleName, IDebugSymbols::GetModuleByModuleName, debugger.getmodulebymodulename, IDebugSymbols2::GetModuleByModuleName, IDebugSymbols3::GetModuleByModuleName, IDebugSymbols_1a407f12-64e8-43a3-b831-ef8c9b701537.xml, IDebugSymbols interface [Windows Debugging], GetModuleByModuleName method, dbgeng/IDebugSymbols3::GetModuleByModuleName, dbgeng/IDebugSymbols::GetModuleByModuleName, GetModuleByModuleName method [Windows Debugging], IDebugSymbols3 interface, GetModuleByModuleName method [Windows Debugging], IDebugSymbols2 interface, GetModuleByModuleName method [Windows Debugging], IDebugSymbols interface, GetModuleByModuleName method [Windows Debugging], IDebugSymbols3 interface [Windows Debugging], GetModuleByModuleName method, IDebugSymbols3, dbgeng/IDebugSymbols2::GetModuleByModuleName, IDebugSymbols2 interface [Windows Debugging], GetModuleByModuleName method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugSymbols.GetModuleByModuleName
+-	IDebugSymbols2.GetModuleByModuleName
+-	IDebugSymbols3.GetModuleByModuleName
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

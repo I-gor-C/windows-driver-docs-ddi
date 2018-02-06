@@ -1,42 +1,48 @@
 ---
-UID : NF:storport.StorPortRegistryWriteAdapterKey
-title : StorPortRegistryWriteAdapterKey function
-author : windows-driver-content
-description : The StorPortRegistryWriteAdapterKey routine is called by the miniport driver to write the hardware or device registry adapter keys located in registry at HKLM/CurrentControlSet/Enum/&lt;Instance path&gt;/DeviceParameters/...
-old-location : storage\storportregistrywriteadapterkey.htm
-old-project : storage
-ms.assetid : D995FB36-177A-44BF-9326-EB2820DB0962
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : StorPortRegistryWriteAdapterKey routine [Storage Devices], StorPortRegistryWriteAdapterKey, storage.storportregistrywriteadapterkey, storport/StorPortRegistryWriteAdapterKey
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Storport.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STOR_SPINLOCK
-req.product : Windows 10 or later.
+UID: NF:storport.StorPortRegistryWriteAdapterKey
+title: StorPortRegistryWriteAdapterKey function
+author: windows-driver-content
+description: The StorPortRegistryWriteAdapterKey routine is called by the miniport driver to write the hardware or device registry adapter keys located in registry at HKLM/CurrentControlSet/Enum/&lt;Instance path&gt;/DeviceParameters/...
+old-location: storage\storportregistrywriteadapterkey.htm
+old-project: storage
+ms.assetid: D995FB36-177A-44BF-9326-EB2820DB0962
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: StorPortRegistryWriteAdapterKey routine [Storage Devices], StorPortRegistryWriteAdapterKey, storage.storportregistrywriteadapterkey, storport/StorPortRegistryWriteAdapterKey
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Storport.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Storport.lib
+-	Storport.dll
+apiname:
+-	StorPortRegistryWriteAdapterKey
+product: Windows
+targetos: Windows
+req.typenames: STOR_SPINLOCK
+req.product: Windows 10 or later.
 ---
 
 

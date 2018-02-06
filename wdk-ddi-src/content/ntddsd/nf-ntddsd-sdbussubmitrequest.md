@@ -1,41 +1,46 @@
 ---
-UID : NF:ntddsd.SdBusSubmitRequest
-title : SdBusSubmitRequest function
-author : windows-driver-content
-description : The SdBusSubmitRequest routine sends a synchronous Secure Digital (SD) request to the bus driver.
-old-location : sd\sdbussubmitrequest.htm
-old-project : SD
-ms.assetid : 8f794681-afa9-474b-a3b9-bc7c21c7c423
-ms.author : windowsdriverdev
-ms.date : 12/18/2017
-ms.keywords : SD.sdbussubmitrequest, ntddsd/SdBusSubmitRequest, SdBusSubmitRequest function [Buses], sd-rtns_2709a5bb-0cc9-42b0-9fd1-2b8206a383d5.xml, SdBusSubmitRequest
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntddsd.h
-req.include-header : Ntddsd.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SD_REQUEST_FUNCTION
+UID: NF:ntddsd.SdBusSubmitRequest
+title: SdBusSubmitRequest function
+author: windows-driver-content
+description: The SdBusSubmitRequest routine sends a synchronous Secure Digital (SD) request to the bus driver.
+old-location: sd\sdbussubmitrequest.htm
+old-project: SD
+ms.assetid: 8f794681-afa9-474b-a3b9-bc7c21c7c423
+ms.author: windowsdriverdev
+ms.date: 12/18/2017
+ms.keywords: SD.sdbussubmitrequest, ntddsd/SdBusSubmitRequest, SdBusSubmitRequest function [Buses], sd-rtns_2709a5bb-0cc9-42b0-9fd1-2b8206a383d5.xml, SdBusSubmitRequest
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntddsd.h
+req.include-header: Ntddsd.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddsd.h
+apiname:
+-	SdBusSubmitRequest
+product: Windows
+targetos: Windows
+req.typenames: SD_REQUEST_FUNCTION
 ---
 
 

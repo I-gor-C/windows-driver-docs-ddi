@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dkmddi.DXGKDDI_SETPALETTE
-title : DXGKDDI_SETPALETTE
-author : windows-driver-content
-description : The DxgkDdiSetPalette function programs the color registers for palettized 8 bits-per-pixel (bpp) modes.
-old-location : display\dxgkddisetpalette.htm
-old-project : display
-ms.assetid : 3a46bf84-df62-4247-b842-d5b131c96428
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkddisetpalette, DxgkDdiSetPalette callback function [Display Devices], DxgkDdiSetPalette, DXGKDDI_SETPALETTE, DXGKDDI_SETPALETTE, d3dkmddi/DxgkDdiSetPalette, DmFunctions_88e6fd1a-1c14-4a4e-8616-c508b07ed94e.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dkmddi.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
+UID: NC:d3dkmddi.DXGKDDI_SETPALETTE
+title: DXGKDDI_SETPALETTE
+author: windows-driver-content
+description: The DxgkDdiSetPalette function programs the color registers for palettized 8 bits-per-pixel (bpp) modes.
+old-location: display\dxgkddisetpalette.htm
+old-project: display
+ms.assetid: 3a46bf84-df62-4247-b842-d5b131c96428
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkddisetpalette, DxgkDdiSetPalette callback function [Display Devices], DxgkDdiSetPalette, DXGKDDI_SETPALETTE, DXGKDDI_SETPALETTE, d3dkmddi/DxgkDdiSetPalette, DmFunctions_88e6fd1a-1c14-4a4e-8616-c508b07ed94e.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dkmddi.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DxgkDdiSetPalette
+product: Windows
+targetos: Windows
+req.typenames: DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
 

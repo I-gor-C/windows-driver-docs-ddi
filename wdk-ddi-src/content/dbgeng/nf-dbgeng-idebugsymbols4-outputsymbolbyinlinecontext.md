@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugSymbols4.OutputSymbolByInlineContext
-title : IDebugSymbols4::OutputSymbolByInlineContext method
-author : windows-driver-content
-description : Specifies an output symbol by using an inline context.
-old-location : debugger\idebugsymbols4_outputsymbolbyinlinecontext.htm
-old-project : debugger
-ms.assetid : 55BA214C-7161-4B2C-8107-11EE22D63CD6
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : OutputSymbolByInlineContext, OutputSymbolByInlineContext method [Windows Debugging], OutputSymbolByInlineContext method [Windows Debugging], IDebugSymbols4 interface, IDebugSymbols4, IDebugSymbols4 interface [Windows Debugging], OutputSymbolByInlineContext method, IDebugSymbols4::OutputSymbolByInlineContext, debugger.idebugsymbols4_outputsymbolbyinlinecontext, dbgeng/IDebugSymbols4::OutputSymbolByInlineContext
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSymbols4.OutputSymbolByInlineContext
+title: IDebugSymbols4::OutputSymbolByInlineContext method
+author: windows-driver-content
+description: Specifies an output symbol by using an inline context.
+old-location: debugger\idebugsymbols4_outputsymbolbyinlinecontext.htm
+old-project: debugger
+ms.assetid: 55BA214C-7161-4B2C-8107-11EE22D63CD6
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: OutputSymbolByInlineContext, OutputSymbolByInlineContext method [Windows Debugging], OutputSymbolByInlineContext method [Windows Debugging], IDebugSymbols4 interface, IDebugSymbols4, IDebugSymbols4 interface [Windows Debugging], OutputSymbolByInlineContext method, IDebugSymbols4::OutputSymbolByInlineContext, debugger.idebugsymbols4_outputsymbolbyinlinecontext, dbgeng/IDebugSymbols4::OutputSymbolByInlineContext
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Dbgeng.h
+apiname:
+-	IDebugSymbols4.OutputSymbolByInlineContext
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltRollbackEnlistment
-title : FltRollbackEnlistment function
-author : windows-driver-content
-description : The FltRollbackEnlistment routine rolls back or aborts a transaction on behalf of a minifilter driver.
-old-location : ifsk\fltrollbackenlistment.htm
-old-project : ifsk
-ms.assetid : a63ebd95-801b-4de2-963e-392e6d90eb9f
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltRollbackEnlistment routine [Installable File System Drivers], ifsk.fltrollbackenlistment, fltkernel/FltRollbackEnlistment, FltRollbackEnlistment, FltApiRef_p_to_z_f59e0c07-d415-440b-aec8-89c330679e0d.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : This routine is available on Windows Vista and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltRollbackEnlistment
+title: FltRollbackEnlistment function
+author: windows-driver-content
+description: The FltRollbackEnlistment routine rolls back or aborts a transaction on behalf of a minifilter driver.
+old-location: ifsk\fltrollbackenlistment.htm
+old-project: ifsk
+ms.assetid: a63ebd95-801b-4de2-963e-392e6d90eb9f
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltRollbackEnlistment routine [Installable File System Drivers], ifsk.fltrollbackenlistment, fltkernel/FltRollbackEnlistment, FltRollbackEnlistment, FltApiRef_p_to_z_f59e0c07-d415-440b-aec8-89c330679e0d.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: This routine is available on Windows Vista and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltRollbackEnlistment
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

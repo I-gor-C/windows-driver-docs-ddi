@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFDeviceInitialize.RetrieveDeviceInstanceId
-title : IWDFDeviceInitialize::RetrieveDeviceInstanceId method
-author : windows-driver-content
-description : The RetrieveDeviceInstanceId method retrieves the identifier of an instance of a device.
-old-location : wdf\iwdfdeviceinitialize_retrievedeviceinstanceid.htm
-old-project : wdf
-ms.assetid : 5f1651f9-4952-4e87-90fc-3f79948b8457
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : UMDFDeviceObjectRef_b383227b-ba03-4c85-9517-bb87eac631ef.xml, umdf.iwdfdeviceinitialize_retrievedeviceinstanceid, wdf.iwdfdeviceinitialize_retrievedeviceinstanceid, IWDFDeviceInitialize, RetrieveDeviceInstanceId, RetrieveDeviceInstanceId method, IWDFDeviceInitialize interface, IWDFDeviceInitialize::RetrieveDeviceInstanceId, RetrieveDeviceInstanceId method, IWDFDeviceInitialize interface, RetrieveDeviceInstanceId method, wudfddi/IWDFDeviceInitialize::RetrieveDeviceInstanceId
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.5
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFDeviceInitialize.RetrieveDeviceInstanceId
+title: IWDFDeviceInitialize::RetrieveDeviceInstanceId method
+author: windows-driver-content
+description: The RetrieveDeviceInstanceId method retrieves the identifier of an instance of a device.
+old-location: wdf\iwdfdeviceinitialize_retrievedeviceinstanceid.htm
+old-project: wdf
+ms.assetid: 5f1651f9-4952-4e87-90fc-3f79948b8457
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: UMDFDeviceObjectRef_b383227b-ba03-4c85-9517-bb87eac631ef.xml, umdf.iwdfdeviceinitialize_retrievedeviceinstanceid, wdf.iwdfdeviceinitialize_retrievedeviceinstanceid, IWDFDeviceInitialize, RetrieveDeviceInstanceId, RetrieveDeviceInstanceId method, IWDFDeviceInitialize interface, IWDFDeviceInitialize::RetrieveDeviceInstanceId, RetrieveDeviceInstanceId method, IWDFDeviceInitialize interface, RetrieveDeviceInstanceId method, wudfddi/IWDFDeviceInitialize::RetrieveDeviceInstanceId
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.5
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFDeviceInitialize.RetrieveDeviceInstanceId
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

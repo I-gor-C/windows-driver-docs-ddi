@@ -1,42 +1,47 @@
 ---
-UID : NS:wdfpdo._WDF_PDO_EVENT_CALLBACKS
-title : "_WDF_PDO_EVENT_CALLBACKS"
-author : windows-driver-content
-description : The WDF_PDO_EVENT_CALLBACKS structure is the dispatch table for a bus driver's event callback functions.
-old-location : wdf\wdf_pdo_event_callbacks.htm
-old-project : wdf
-ms.assetid : 13cb1da1-0bb7-444e-a0e1-abcac7d0240d
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : DFDeviceObjectFdoPdoRef_7a22d0f9-82ea-448e-8272-d3009beea440.xml, PWDF_PDO_EVENT_CALLBACKS structure pointer, WDF_PDO_EVENT_CALLBACKS structure, wdf.wdf_pdo_event_callbacks, WDF_PDO_EVENT_CALLBACKS, wdfpdo/WDF_PDO_EVENT_CALLBACKS, _WDF_PDO_EVENT_CALLBACKS, wdfpdo/PWDF_PDO_EVENT_CALLBACKS, kmdf.wdf_pdo_event_callbacks, PWDF_PDO_EVENT_CALLBACKS, *PWDF_PDO_EVENT_CALLBACKS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdfpdo.h
-req.include-header : Wdf.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_PDO_EVENT_CALLBACKS, *PWDF_PDO_EVENT_CALLBACKS
-req.product : Windows 10 or later.
+UID: NS:wdfpdo._WDF_PDO_EVENT_CALLBACKS
+title: "_WDF_PDO_EVENT_CALLBACKS"
+author: windows-driver-content
+description: The WDF_PDO_EVENT_CALLBACKS structure is the dispatch table for a bus driver's event callback functions.
+old-location: wdf\wdf_pdo_event_callbacks.htm
+old-project: wdf
+ms.assetid: 13cb1da1-0bb7-444e-a0e1-abcac7d0240d
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: DFDeviceObjectFdoPdoRef_7a22d0f9-82ea-448e-8272-d3009beea440.xml, PWDF_PDO_EVENT_CALLBACKS structure pointer, WDF_PDO_EVENT_CALLBACKS structure, wdf.wdf_pdo_event_callbacks, WDF_PDO_EVENT_CALLBACKS, wdfpdo/WDF_PDO_EVENT_CALLBACKS, _WDF_PDO_EVENT_CALLBACKS, wdfpdo/PWDF_PDO_EVENT_CALLBACKS, kmdf.wdf_pdo_event_callbacks, PWDF_PDO_EVENT_CALLBACKS, *PWDF_PDO_EVENT_CALLBACKS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdfpdo.h
+req.include-header: Wdf.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfpdo.h
+apiname:
+-	WDF_PDO_EVENT_CALLBACKS
+product: Windows
+targetos: Windows
+req.typenames: WDF_PDO_EVENT_CALLBACKS, *PWDF_PDO_EVENT_CALLBACKS
+req.product: Windows 10 or later.
 ---
 
 # _WDF_PDO_EVENT_CALLBACKS structure

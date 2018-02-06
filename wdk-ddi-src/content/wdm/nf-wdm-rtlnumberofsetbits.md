@@ -1,42 +1,48 @@
 ---
-UID : NF:wdm.RtlNumberOfSetBits
-title : RtlNumberOfSetBits function
-author : windows-driver-content
-description : The RtlNumberOfSetBits routine returns a count of the set bits in a given bitmap variable.
-old-location : kernel\rtlnumberofsetbits.htm
-old-project : kernel
-ms.assetid : 6208f750-4871-43b9-b848-011180d39fd8
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : RtlNumberOfSetBits routine [Kernel-Mode Driver Architecture], wdm/RtlNumberOfSetBits, RtlNumberOfSetBits, k109_b8b2c3f8-3ec3-4690-90bb-e5b120b5b062.xml, kernel.rtlnumberofsetbits
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe (kernel mode); Ntdll.dll (user mode)
-req.irql : "<= APC_LEVEL (See Remarks section)"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.RtlNumberOfSetBits
+title: RtlNumberOfSetBits function
+author: windows-driver-content
+description: The RtlNumberOfSetBits routine returns a count of the set bits in a given bitmap variable.
+old-location: kernel\rtlnumberofsetbits.htm
+old-project: kernel
+ms.assetid: 6208f750-4871-43b9-b848-011180d39fd8
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: RtlNumberOfSetBits routine [Kernel-Mode Driver Architecture], wdm/RtlNumberOfSetBits, RtlNumberOfSetBits, k109_b8b2c3f8-3ec3-4690-90bb-e5b120b5b062.xml, kernel.rtlnumberofsetbits
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe (kernel mode); Ntdll.dll (user mode)
+req.irql: "<= APC_LEVEL (See Remarks section)"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+-	Ntdll.dll
+apiname:
+-	RtlNumberOfSetBits
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

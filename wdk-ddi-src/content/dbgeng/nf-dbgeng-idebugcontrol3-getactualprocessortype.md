@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugControl3.GetActualProcessorType
-title : IDebugControl3::GetActualProcessorType method
-author : windows-driver-content
-description : The GetActualProcessorType method returns the processor type of the physical processor of the computer that is running the target.
-old-location : debugger\getactualprocessortype.htm
-old-project : debugger
-ms.assetid : c02be0a4-f82a-4895-bbae-21f6ffdc5466
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : GetActualProcessorType method [Windows Debugging], GetActualProcessorType, IDebugControl3 interface [Windows Debugging], GetActualProcessorType method, IDebugControl3::GetActualProcessorType, dbgeng/IDebugControl3::GetActualProcessorType, GetActualProcessorType method [Windows Debugging], IDebugControl interface, GetActualProcessorType method [Windows Debugging], IDebugControl2 interface, IDebugControl2::GetActualProcessorType, dbgeng/IDebugControl2::GetActualProcessorType, IDebugControl::GetActualProcessorType, IDebugControl3, IDebugControl2 interface [Windows Debugging], GetActualProcessorType method, dbgeng/IDebugControl::GetActualProcessorType, GetActualProcessorType method [Windows Debugging], IDebugControl3 interface, IDebugControl_5511971f-2155-4ba3-b0f3-9bcd91b29555.xml, IDebugControl interface [Windows Debugging], GetActualProcessorType method, debugger.getactualprocessortype
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl3.GetActualProcessorType
+title: IDebugControl3::GetActualProcessorType method
+author: windows-driver-content
+description: The GetActualProcessorType method returns the processor type of the physical processor of the computer that is running the target.
+old-location: debugger\getactualprocessortype.htm
+old-project: debugger
+ms.assetid: c02be0a4-f82a-4895-bbae-21f6ffdc5466
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: GetActualProcessorType method [Windows Debugging], GetActualProcessorType, IDebugControl3 interface [Windows Debugging], GetActualProcessorType method, IDebugControl3::GetActualProcessorType, dbgeng/IDebugControl3::GetActualProcessorType, GetActualProcessorType method [Windows Debugging], IDebugControl interface, GetActualProcessorType method [Windows Debugging], IDebugControl2 interface, IDebugControl2::GetActualProcessorType, dbgeng/IDebugControl2::GetActualProcessorType, IDebugControl::GetActualProcessorType, IDebugControl3, IDebugControl2 interface [Windows Debugging], GetActualProcessorType method, dbgeng/IDebugControl::GetActualProcessorType, GetActualProcessorType method [Windows Debugging], IDebugControl3 interface, IDebugControl_5511971f-2155-4ba3-b0f3-9bcd91b29555.xml, IDebugControl interface [Windows Debugging], GetActualProcessorType method, debugger.getactualprocessortype
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl.GetActualProcessorType
+-	IDebugControl2.GetActualProcessorType
+-	IDebugControl3.GetActualProcessorType
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NF:wdfchildlist.WDF_CHILD_ADDRESS_DESCRIPTION_HEADER_INIT
-title : WDF_CHILD_ADDRESS_DESCRIPTION_HEADER_INIT function
-author : windows-driver-content
-description : The WDF_CHILD_ADDRESS_DESCRIPTION_HEADER_INIT function initializes a WDF_CHILD_ADDRESS_DESCRIPTION_HEADER structure.
-old-location : wdf\wdf_child_address_description_header_init.htm
-old-project : wdf
-ms.assetid : acc56cb0-5f89-413f-9fdc-a051cc4947c0
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WDF_CHILD_ADDRESS_DESCRIPTION_HEADER_INIT function, DFDeviceObjectChildListRef_167489bc-617b-440a-a0b2-d5c346b4cf50.xml, kmdf.wdf_child_address_description_header_init, wdf.wdf_child_address_description_header_init, wdfchildlist/WDF_CHILD_ADDRESS_DESCRIPTION_HEADER_INIT, WDF_CHILD_ADDRESS_DESCRIPTION_HEADER_INIT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfchildlist.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_RETRIEVE_CHILD_FLAGS
-req.product : Windows 10 or later.
+UID: NF:wdfchildlist.WDF_CHILD_ADDRESS_DESCRIPTION_HEADER_INIT
+title: WDF_CHILD_ADDRESS_DESCRIPTION_HEADER_INIT function
+author: windows-driver-content
+description: The WDF_CHILD_ADDRESS_DESCRIPTION_HEADER_INIT function initializes a WDF_CHILD_ADDRESS_DESCRIPTION_HEADER structure.
+old-location: wdf\wdf_child_address_description_header_init.htm
+old-project: wdf
+ms.assetid: acc56cb0-5f89-413f-9fdc-a051cc4947c0
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WDF_CHILD_ADDRESS_DESCRIPTION_HEADER_INIT function, DFDeviceObjectChildListRef_167489bc-617b-440a-a0b2-d5c346b4cf50.xml, kmdf.wdf_child_address_description_header_init, wdf.wdf_child_address_description_header_init, wdfchildlist/WDF_CHILD_ADDRESS_DESCRIPTION_HEADER_INIT, WDF_CHILD_ADDRESS_DESCRIPTION_HEADER_INIT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfchildlist.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfchildlist.h
+apiname:
+-	WDF_CHILD_ADDRESS_DESCRIPTION_HEADER_INIT
+product: Windows
+targetos: Windows
+req.typenames: WDF_RETRIEVE_CHILD_FLAGS
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,38 +1,38 @@
 ---
-UID : NF:wdm.vDbgPrintEx
-title : vDbgPrintEx function
-author : windows-driver-content
-description : The vDbgPrintEx routine sends a string to the kernel debugger if certain conditions are met.
-old-location : devtest\vdbgprintex.htm
-old-project : devtest
-ms.assetid : e7118f5b-819f-428f-a5e6-80a36705d626
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : vDbgPrintEx
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Dpfilter.h, Wdm.h, Ntddk.h, Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating system versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.alt-api : vDbgPrintEx
-req.alt-loc : NtDll.dll,NtosKrnl.exe
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtDll.lib (user mode); NtosKrnl.lib (kernel mode)
-req.dll : NtDll.dll (user mode); NtosKrnl.exe (kernel mode)
-req.irql : <= DIRQL (see Comments section)
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.vDbgPrintEx
+title: vDbgPrintEx function
+author: windows-driver-content
+description: The vDbgPrintEx routine sends a string to the kernel debugger if certain conditions are met.
+old-location: devtest\vdbgprintex.htm
+old-project: devtest
+ms.assetid: e7118f5b-819f-428f-a5e6-80a36705d626
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: vDbgPrintEx
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Dpfilter.h, Wdm.h, Ntddk.h, Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating system versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.alt-api: vDbgPrintEx
+req.alt-loc: NtDll.dll,NtosKrnl.exe
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtDll.lib (user mode); NtosKrnl.lib (kernel mode)
+req.dll: NtDll.dll (user mode); NtosKrnl.exe (kernel mode)
+req.irql: <= DIRQL (see Comments section)
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

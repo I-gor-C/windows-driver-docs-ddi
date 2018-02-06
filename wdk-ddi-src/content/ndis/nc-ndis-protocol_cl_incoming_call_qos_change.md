@@ -1,41 +1,46 @@
 ---
-UID : NC:ndis.PROTOCOL_CL_INCOMING_CALL_QOS_CHANGE
-title : PROTOCOL_CL_INCOMING_CALL_QOS_CHANGE
-author : windows-driver-content
-description : The ProtocolClIncomingCallQoSChange function is used by connection-oriented clients on networks that support dynamic quality-of-service.
-old-location : netvista\protocolclincomingcallqoschange.htm
-old-project : netvista
-ms.assetid : ca9953f4-35db-4acb-b0ea-887156b4f6ee
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.protocolclincomingcallqoschange, ProtocolClIncomingCallQoSChange callback function [Network Drivers Starting with Windows Vista], ProtocolClIncomingCallQoSChange, PROTOCOL_CL_INCOMING_CALL_QOS_CHANGE, PROTOCOL_CL_INCOMING_CALL_QOS_CHANGE, ndis/ProtocolClIncomingCallQoSChange, condis_client_ref_09f3fdc8-cdc0-4b49-82c2-bd5816c9d5a9.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see       ProtocolClIncomingCallQoSChange (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see       ProtocolClIncomingCallQoSChange (NDIS 5.1)) in Windows XP.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
+UID: NC:ndis.PROTOCOL_CL_INCOMING_CALL_QOS_CHANGE
+title: PROTOCOL_CL_INCOMING_CALL_QOS_CHANGE
+author: windows-driver-content
+description: The ProtocolClIncomingCallQoSChange function is used by connection-oriented clients on networks that support dynamic quality-of-service.
+old-location: netvista\protocolclincomingcallqoschange.htm
+old-project: netvista
+ms.assetid: ca9953f4-35db-4acb-b0ea-887156b4f6ee
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.protocolclincomingcallqoschange, ProtocolClIncomingCallQoSChange callback function [Network Drivers Starting with Windows Vista], ProtocolClIncomingCallQoSChange, PROTOCOL_CL_INCOMING_CALL_QOS_CHANGE, PROTOCOL_CL_INCOMING_CALL_QOS_CHANGE, ndis/ProtocolClIncomingCallQoSChange, condis_client_ref_09f3fdc8-cdc0-4b49-82c2-bd5816c9d5a9.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see       ProtocolClIncomingCallQoSChange (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see       ProtocolClIncomingCallQoSChange (NDIS 5.1)) in Windows XP.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ndis.h
+apiname:
+-	ProtocolClIncomingCallQoSChange
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 

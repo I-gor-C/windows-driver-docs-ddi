@@ -1,42 +1,47 @@
 ---
-UID : NF:wiamdef.WIAS_ERROR
-title : WIAS_ERROR macro
-author : windows-driver-content
-description : The WIAS_ERROR macro writes a diagnostic message to the Wiatrace.log file.
-old-location : image\wias_error.htm
-old-project : image
-ms.assetid : e439f130-1b99-4f46-ace5-3456c09a5f67
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : wiamdef/WIAS_ERROR, image.wias_error, WIAS_ERROR, WIAS_ERROR macro [Imaging Devices], IWiaLog_5b3e0d61-e0e5-4385-8256-943e437cee9d.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : macro
-req.header : wiamdef.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wiamdef.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*LPDEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2, DEVICEDIALOGDATA2"
-req.product : Windows 10 or later.
+UID: NF:wiamdef.WIAS_ERROR
+title: WIAS_ERROR macro
+author: windows-driver-content
+description: The WIAS_ERROR macro writes a diagnostic message to the Wiatrace.log file.
+old-location: image\wias_error.htm
+old-project: image
+ms.assetid: e439f130-1b99-4f46-ace5-3456c09a5f67
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: wiamdef/WIAS_ERROR, image.wias_error, WIAS_ERROR, WIAS_ERROR macro [Imaging Devices], IWiaLog_5b3e0d61-e0e5-4385-8256-943e437cee9d.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: macro
+req.header: wiamdef.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wiamdef.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wiamdef.h
+apiname:
+-	WIAS_ERROR
+product: Windows
+targetos: Windows
+req.typenames: "*LPDEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2, DEVICEDIALOGDATA2"
+req.product: Windows 10 or later.
 ---
 
 

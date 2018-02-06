@@ -1,41 +1,46 @@
 ---
-UID : NF:irb.AtaPortControllerSyncRoutine
-title : AtaPortControllerSyncRoutine function
-author : windows-driver-content
-description : The AtaPortControllerSyncRoutine routine provides synchronized access to data structures that are shared across all channels on a controller.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
-old-location : storage\ataportcontrollersyncroutine.htm
-old-project : storage
-ms.assetid : 6b39e89e-21cc-404f-b9fc-6cad0b5c8d22
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : AtaPortControllerSyncRoutine routine [Storage Devices], storage.ataportcontrollersyncroutine, AtaPortControllerSyncRoutine, irb/AtaPortControllerSyncRoutine, atartns_1fdbc2cb-49db-4121-aaaa-8a50c2a6cbde.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : irb.h
-req.include-header : Ata.h, Irb.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : IDE_POWER_STATE
+UID: NF:irb.AtaPortControllerSyncRoutine
+title: AtaPortControllerSyncRoutine function
+author: windows-driver-content
+description: The AtaPortControllerSyncRoutine routine provides synchronized access to data structures that are shared across all channels on a controller.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
+old-location: storage\ataportcontrollersyncroutine.htm
+old-project: storage
+ms.assetid: 6b39e89e-21cc-404f-b9fc-6cad0b5c8d22
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: AtaPortControllerSyncRoutine routine [Storage Devices], storage.ataportcontrollersyncroutine, AtaPortControllerSyncRoutine, irb/AtaPortControllerSyncRoutine, atartns_1fdbc2cb-49db-4121-aaaa-8a50c2a6cbde.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: irb.h
+req.include-header: Ata.h, Irb.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	irb.h
+apiname:
+-	AtaPortControllerSyncRoutine
+product: Windows
+targetos: Windows
+req.typenames: IDE_POWER_STATE
 ---
 
 

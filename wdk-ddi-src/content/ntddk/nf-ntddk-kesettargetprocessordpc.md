@@ -1,41 +1,46 @@
 ---
-UID : NF:ntddk.KeSetTargetProcessorDpc
-title : KeSetTargetProcessorDpc function
-author : windows-driver-content
-description : The KeSetTargetProcessorDpc routine specifies the processor that a DPC routine will be run on.
-old-location : kernel\kesettargetprocessordpc.htm
-old-project : kernel
-ms.assetid : 9fd86250-a495-4628-a07b-f5c44df69c0e
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : KeSetTargetProcessorDpc, wdm/KeSetTargetProcessorDpc, k105_a7931e50-ba41-47a0-9056-e9479ac46808.xml, KeSetTargetProcessorDpc routine [Kernel-Mode Driver Architecture], kernel.kesettargetprocessordpc
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntddk.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.KeSetTargetProcessorDpc
+title: KeSetTargetProcessorDpc function
+author: windows-driver-content
+description: The KeSetTargetProcessorDpc routine specifies the processor that a DPC routine will be run on.
+old-location: kernel\kesettargetprocessordpc.htm
+old-project: kernel
+ms.assetid: 9fd86250-a495-4628-a07b-f5c44df69c0e
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: KeSetTargetProcessorDpc, wdm/KeSetTargetProcessorDpc, k105_a7931e50-ba41-47a0-9056-e9479ac46808.xml, KeSetTargetProcessorDpc routine [Kernel-Mode Driver Architecture], kernel.kesettargetprocessordpc
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntddk.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	KeSetTargetProcessorDpc
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

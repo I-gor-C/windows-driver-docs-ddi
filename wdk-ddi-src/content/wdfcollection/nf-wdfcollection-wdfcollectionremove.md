@@ -1,42 +1,50 @@
 ---
-UID : NF:wdfcollection.WdfCollectionRemove
-title : WdfCollectionRemove function
-author : windows-driver-content
-description : The WdfCollectionRemove method removes an object from a specified object collection.
-old-location : wdf\wdfcollectionremove.htm
-old-project : wdf
-ms.assetid : 3a708949-3d4e-49b2-bef2-7151aec2b84b
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : PFN_WDFCOLLECTIONREMOVE, kmdf.wdfcollectionremove, wdf.wdfcollectionremove, DFCollectionObjectRef_ec848e8e-f64b-4f17-997a-0d9b6c509eb0.xml, WdfCollectionRemove method, WdfCollectionRemove, wdfcollection/WdfCollectionRemove
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfcollection.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDF_CHILD_RETRIEVE_INFO, WDF_CHILD_RETRIEVE_INFO"
-req.product : Windows 10 or later.
+UID: NF:wdfcollection.WdfCollectionRemove
+title: WdfCollectionRemove function
+author: windows-driver-content
+description: The WdfCollectionRemove method removes an object from a specified object collection.
+old-location: wdf\wdfcollectionremove.htm
+old-project: wdf
+ms.assetid: 3a708949-3d4e-49b2-bef2-7151aec2b84b
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: PFN_WDFCOLLECTIONREMOVE, kmdf.wdfcollectionremove, wdf.wdfcollectionremove, DFCollectionObjectRef_ec848e8e-f64b-4f17-997a-0d9b6c509eb0.xml, WdfCollectionRemove method, WdfCollectionRemove, wdfcollection/WdfCollectionRemove
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfcollection.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+-	WUDFx02000.dll
+-	WUDFx02000.dll.dll
+apiname:
+-	WdfCollectionRemove
+product: Windows
+targetos: Windows
+req.typenames: "*PWDF_CHILD_RETRIEVE_INFO, WDF_CHILD_RETRIEVE_INFO"
+req.product: Windows 10 or later.
 ---
 
 

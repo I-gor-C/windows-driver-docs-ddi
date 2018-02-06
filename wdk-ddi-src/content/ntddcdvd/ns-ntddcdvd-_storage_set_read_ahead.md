@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddcdvd._STORAGE_SET_READ_AHEAD
-title : "_STORAGE_SET_READ_AHEAD"
-author : windows-driver-content
-description : The STORAGE_SET_READ_AHEAD structure is used in conjunction with the IOCTL_STORAGE_SET_READ_AHEAD request to instruct the device to skip to the target address upon reaching the trigger address.
-old-location : storage\storage_set_read_ahead.htm
-old-project : storage
-ms.assetid : 5220230f-5436-4a79-808c-ab840d7009e7
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : PSTORAGE_SET_READ_AHEAD, STORAGE_SET_READ_AHEAD structure [Storage Devices], ntddcdvd/PSTORAGE_SET_READ_AHEAD, STORAGE_SET_READ_AHEAD, _STORAGE_SET_READ_AHEAD, ntddcdvd/STORAGE_SET_READ_AHEAD, structs-general_a6938152-7839-43e0-a030-8767d032469c.xml, *PSTORAGE_SET_READ_AHEAD, PSTORAGE_SET_READ_AHEAD structure pointer [Storage Devices], storage.storage_set_read_ahead
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddcdvd.h
-req.include-header : Ntddcdvd.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STORAGE_SET_READ_AHEAD, *PSTORAGE_SET_READ_AHEAD
+UID: NS:ntddcdvd._STORAGE_SET_READ_AHEAD
+title: "_STORAGE_SET_READ_AHEAD"
+author: windows-driver-content
+description: The STORAGE_SET_READ_AHEAD structure is used in conjunction with the IOCTL_STORAGE_SET_READ_AHEAD request to instruct the device to skip to the target address upon reaching the trigger address.
+old-location: storage\storage_set_read_ahead.htm
+old-project: storage
+ms.assetid: 5220230f-5436-4a79-808c-ab840d7009e7
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: PSTORAGE_SET_READ_AHEAD, STORAGE_SET_READ_AHEAD structure [Storage Devices], ntddcdvd/PSTORAGE_SET_READ_AHEAD, STORAGE_SET_READ_AHEAD, _STORAGE_SET_READ_AHEAD, ntddcdvd/STORAGE_SET_READ_AHEAD, structs-general_a6938152-7839-43e0-a030-8767d032469c.xml, *PSTORAGE_SET_READ_AHEAD, PSTORAGE_SET_READ_AHEAD structure pointer [Storage Devices], storage.storage_set_read_ahead
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddcdvd.h
+req.include-header: Ntddcdvd.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddcdvd.h
+apiname:
+-	STORAGE_SET_READ_AHEAD
+product: Windows
+targetos: Windows
+req.typenames: STORAGE_SET_READ_AHEAD, *PSTORAGE_SET_READ_AHEAD
 ---
 
 # _STORAGE_SET_READ_AHEAD structure

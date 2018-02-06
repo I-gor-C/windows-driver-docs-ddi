@@ -1,41 +1,46 @@
 ---
-UID : NS:bdasup._KSM_PIN_PAIR
-title : "_KSM_PIN_PAIR"
-author : windows-driver-content
-description : The KSM_PIN_PAIR structure describes a method request to retrieve the pin pairing structure (BDA_PIN_PAIRING) between a pair of input and output pins.
-old-location : stream\ksm_pin_pair.htm
-old-project : stream
-ms.assetid : a38e1215-4689-4b75-9a32-4d6570694b77
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : PKSM_PIN_PAIR, bdasup/PKSM_PIN_PAIR, bdasup/KSM_PIN_PAIR, stream.ksm_pin_pair, _KSM_PIN_PAIR, *PKSM_PIN_PAIR, bdaref_4d2071d5-ba64-4026-95a9-0763dc2f13cf.xml, PKSM_PIN_PAIR structure pointer [Streaming Media Devices], KSM_PIN_PAIR structure [Streaming Media Devices], KSM_PIN_PAIR
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : bdasup.h
-req.include-header : Bdasup.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKSM_PIN_PAIR, KSM_PIN_PAIR"
+UID: NS:bdasup._KSM_PIN_PAIR
+title: "_KSM_PIN_PAIR"
+author: windows-driver-content
+description: The KSM_PIN_PAIR structure describes a method request to retrieve the pin pairing structure (BDA_PIN_PAIRING) between a pair of input and output pins.
+old-location: stream\ksm_pin_pair.htm
+old-project: stream
+ms.assetid: a38e1215-4689-4b75-9a32-4d6570694b77
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: PKSM_PIN_PAIR, bdasup/PKSM_PIN_PAIR, bdasup/KSM_PIN_PAIR, stream.ksm_pin_pair, _KSM_PIN_PAIR, *PKSM_PIN_PAIR, bdaref_4d2071d5-ba64-4026-95a9-0763dc2f13cf.xml, PKSM_PIN_PAIR structure pointer [Streaming Media Devices], KSM_PIN_PAIR structure [Streaming Media Devices], KSM_PIN_PAIR
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: bdasup.h
+req.include-header: Bdasup.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	bdasup.h
+apiname:
+-	KSM_PIN_PAIR
+product: Windows
+targetos: Windows
+req.typenames: "*PKSM_PIN_PAIR, KSM_PIN_PAIR"
 ---
 
 # _KSM_PIN_PAIR structure

@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia._KSAUDIO_PACKETSIZE_CONSTRAINTS
-title : "_KSAUDIO_PACKETSIZE_CONSTRAINTS"
-author : windows-driver-content
-description : The KSAUDIO_PACKETSIZE_CONSTRAINTS structure describes the physical hardware constraints.
-old-location : audio\ksaudio_packetsize_constraints.htm
-old-project : audio
-ms.assetid : 6BD3E98A-A2A5-4285-8F41-1445F90DD8EB
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : PKSAUDIO_PACKETSIZE_CONSTRAINTS, FILE_QUAD_ALIGNMENT, FILE_128_BYTE_ALIGNMENT, FILE_WORD_ALIGNMENT, _KSAUDIO_PACKETSIZE_CONSTRAINTS, FILE_64_BYTE_ALIGNMENT, KSAUDIO_PACKETSIZE_CONSTRAINTS structure [Audio Devices], FILE_32_BYTE_ALIGNMENT, KSAUDIO_PACKETSIZE_CONSTRAINTS, FILE_256_BYTE_ALIGNMENT, FILE_LONG_ALIGNMENT, ksmedia/PKSAUDIO_PACKETSIZE_CONSTRAINTS, FILE_512_BYTE_ALIGNMENT, FILE_OCTA_ALIGNMENT, audio.ksaudio_packetsize_constraints, PKSAUDIO_PACKETSIZE_CONSTRAINTS structure pointer [Audio Devices], ksmedia/KSAUDIO_PACKETSIZE_CONSTRAINTS, FILE_BYTE_ALIGNMENT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KSAUDIO_PACKETSIZE_CONSTRAINTS
+UID: NS:ksmedia._KSAUDIO_PACKETSIZE_CONSTRAINTS
+title: "_KSAUDIO_PACKETSIZE_CONSTRAINTS"
+author: windows-driver-content
+description: The KSAUDIO_PACKETSIZE_CONSTRAINTS structure describes the physical hardware constraints.
+old-location: audio\ksaudio_packetsize_constraints.htm
+old-project: audio
+ms.assetid: 6BD3E98A-A2A5-4285-8F41-1445F90DD8EB
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: PKSAUDIO_PACKETSIZE_CONSTRAINTS, FILE_QUAD_ALIGNMENT, FILE_128_BYTE_ALIGNMENT, FILE_WORD_ALIGNMENT, _KSAUDIO_PACKETSIZE_CONSTRAINTS, FILE_64_BYTE_ALIGNMENT, KSAUDIO_PACKETSIZE_CONSTRAINTS structure [Audio Devices], FILE_32_BYTE_ALIGNMENT, KSAUDIO_PACKETSIZE_CONSTRAINTS, FILE_256_BYTE_ALIGNMENT, FILE_LONG_ALIGNMENT, ksmedia/PKSAUDIO_PACKETSIZE_CONSTRAINTS, FILE_512_BYTE_ALIGNMENT, FILE_OCTA_ALIGNMENT, audio.ksaudio_packetsize_constraints, PKSAUDIO_PACKETSIZE_CONSTRAINTS structure pointer [Audio Devices], ksmedia/KSAUDIO_PACKETSIZE_CONSTRAINTS, FILE_BYTE_ALIGNMENT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	KSAUDIO_PACKETSIZE_CONSTRAINTS
+product: Windows
+targetos: Windows
+req.typenames: KSAUDIO_PACKETSIZE_CONSTRAINTS
 ---
 
 # _KSAUDIO_PACKETSIZE_CONSTRAINTS structure

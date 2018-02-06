@@ -1,41 +1,46 @@
 ---
-UID : NS:ntifs._NETWORK_OPEN_ECP_CONTEXT
-title : "_NETWORK_OPEN_ECP_CONTEXT"
-author : windows-driver-content
-description : The NETWORK_OPEN_ECP_CONTEXT structure is used to interpret network ECP contexts on files.
-old-location : ifsk\network_open_ecp_context.htm
-old-project : ifsk
-ms.assetid : 583fe92d-ce81-47b4-bd75-5566a5379790
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : PNETWORK_OPEN_ECP_CONTEXT structure pointer [Installable File System Drivers], _NETWORK_OPEN_ECP_CONTEXT, ntifs/PNETWORK_OPEN_ECP_CONTEXT, PNETWORK_OPEN_ECP_CONTEXT, NETWORK_OPEN_ECP_CONTEXT, ntifs/NETWORK_OPEN_ECP_CONTEXT, NETWORK_OPEN_ECP_CONTEXT structure [Installable File System Drivers], ifsk.network_open_ecp_context, ECP_Structures_9cdb7dab-17df-47f3-b994-fca989b3442e.xml, *PNETWORK_OPEN_ECP_CONTEXT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : This structure is available starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PNETWORK_OPEN_ECP_CONTEXT, NETWORK_OPEN_ECP_CONTEXT"
+UID: NS:ntifs._NETWORK_OPEN_ECP_CONTEXT
+title: "_NETWORK_OPEN_ECP_CONTEXT"
+author: windows-driver-content
+description: The NETWORK_OPEN_ECP_CONTEXT structure is used to interpret network ECP contexts on files.
+old-location: ifsk\network_open_ecp_context.htm
+old-project: ifsk
+ms.assetid: 583fe92d-ce81-47b4-bd75-5566a5379790
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: PNETWORK_OPEN_ECP_CONTEXT structure pointer [Installable File System Drivers], _NETWORK_OPEN_ECP_CONTEXT, ntifs/PNETWORK_OPEN_ECP_CONTEXT, PNETWORK_OPEN_ECP_CONTEXT, NETWORK_OPEN_ECP_CONTEXT, ntifs/NETWORK_OPEN_ECP_CONTEXT, NETWORK_OPEN_ECP_CONTEXT structure [Installable File System Drivers], ifsk.network_open_ecp_context, ECP_Structures_9cdb7dab-17df-47f3-b994-fca989b3442e.xml, *PNETWORK_OPEN_ECP_CONTEXT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: This structure is available starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntifs.h
+apiname:
+-	NETWORK_OPEN_ECP_CONTEXT
+product: Windows
+targetos: Windows
+req.typenames: "*PNETWORK_OPEN_ECP_CONTEXT, NETWORK_OPEN_ECP_CONTEXT"
 ---
 
 # _NETWORK_OPEN_ECP_CONTEXT structure

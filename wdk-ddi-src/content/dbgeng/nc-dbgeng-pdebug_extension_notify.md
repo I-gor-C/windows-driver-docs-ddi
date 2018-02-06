@@ -1,41 +1,46 @@
 ---
-UID : NC:dbgeng.PDEBUG_EXTENSION_NOTIFY
-title : PDEBUG_EXTENSION_NOTIFY
-author : windows-driver-content
-description : The engine calls the DebugExtensionNotify callback function to inform the extension DLL when a session changes its active or accessible status.C++ CALLBACK* PDEBUG_EXTENSION_NOTIFY DebugExtensionNotify;
-old-location : debugger\debugextensionnotify.htm
-old-project : debugger
-ms.assetid : 5e877882-00f7-4c46-86e1-debf576ffdb1
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : debugger.debugextensionnotify, DebugExtensionNotify, DebugExtensionNotify callback function [Windows Debugging], DebugExtensionNotify, PDEBUG_EXTENSION_NOTIFY, PDEBUG_EXTENSION_NOTIFY, dbgeng/DebugExtensionNotify, Extensions_Ref_18dd6999-773d-42e8-826a-dcac1fc1ed35.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : dbgeng.h
-req.include-header : 
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NC:dbgeng.PDEBUG_EXTENSION_NOTIFY
+title: PDEBUG_EXTENSION_NOTIFY
+author: windows-driver-content
+description: The engine calls the DebugExtensionNotify callback function to inform the extension DLL when a session changes its active or accessible status.C++ CALLBACK* PDEBUG_EXTENSION_NOTIFY DebugExtensionNotify;
+old-location: debugger\debugextensionnotify.htm
+old-project: debugger
+ms.assetid: 5e877882-00f7-4c46-86e1-debf576ffdb1
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: debugger.debugextensionnotify, DebugExtensionNotify, DebugExtensionNotify callback function [Windows Debugging], DebugExtensionNotify, PDEBUG_EXTENSION_NOTIFY, PDEBUG_EXTENSION_NOTIFY, dbgeng/DebugExtensionNotify, Extensions_Ref_18dd6999-773d-42e8-826a-dcac1fc1ed35.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: dbgeng.h
+req.include-header: 
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	dbgeng.h
+apiname:
+-	DebugExtensionNotify
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

@@ -1,41 +1,47 @@
 ---
-UID : NF:bdasup.BdaStartChanges
-title : BdaStartChanges function
-author : windows-driver-content
-description : The BdaStartChanges function initiates the setting of new BDA topology changes.
-old-location : stream\bdastartchanges.htm
-old-project : stream
-ms.assetid : ee54b382-7b69-4d8d-8728-fe2bff7884cf
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : bdaref_16498957-566e-405d-b573-3a2eb75a6bcb.xml, BdaStartChanges function [Streaming Media Devices], BdaStartChanges, stream.bdastartchanges, bdasup/BdaStartChanges
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : bdasup.h
-req.include-header : Bdasup.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available on Microsoft Windows XP and later operating systems. This routine is available on the Windows 2000 platform only if Microsoft DirectX 9.0 and later is installed on that platform.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Bdasup.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KSP_BDA_NODE_PIN, *PKSP_BDA_NODE_PIN
+UID: NF:bdasup.BdaStartChanges
+title: BdaStartChanges function
+author: windows-driver-content
+description: The BdaStartChanges function initiates the setting of new BDA topology changes.
+old-location: stream\bdastartchanges.htm
+old-project: stream
+ms.assetid: ee54b382-7b69-4d8d-8728-fe2bff7884cf
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: bdaref_16498957-566e-405d-b573-3a2eb75a6bcb.xml, BdaStartChanges function [Streaming Media Devices], BdaStartChanges, stream.bdastartchanges, bdasup/BdaStartChanges
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: bdasup.h
+req.include-header: Bdasup.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available on Microsoft Windows XP and later operating systems. This routine is available on the Windows 2000 platform only if Microsoft DirectX 9.0 and later is installed on that platform.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Bdasup.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Bdasup.lib
+-	Bdasup.dll
+apiname:
+-	BdaStartChanges
+product: Windows
+targetos: Windows
+req.typenames: KSP_BDA_NODE_PIN, *PKSP_BDA_NODE_PIN
 ---
 
 

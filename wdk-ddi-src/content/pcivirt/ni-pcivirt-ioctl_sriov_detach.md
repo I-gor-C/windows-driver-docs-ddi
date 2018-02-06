@@ -1,41 +1,46 @@
 ---
-UID : NI:pcivirt.IOCTL_SRIOV_DETACH
-title : IOCTL_SRIOV_DETACH
-author : windows-driver-content
-description : The request indicates that the virtualization stack wants to unregister for Plug and Play events (previously registered through the IOCTL_SRIOV_ATTACH request).
-old-location : pci\ioctl-sriov-detach.htm
-old-project : PCI
-ms.assetid : 8ede4a48-317b-46be-834a-a67b638b28c0
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : PCI.ioctl-sriov-detach, IOCTL_SRIOV_DETACH control code [Buses], IOCTL_SRIOV_DETACH, pcivirt/IOCTL_SRIOV_DETACH
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : pcivirt.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SRIOV_PF_EVENT, *PSRIOV_PF_EVENT
+UID: NI:pcivirt.IOCTL_SRIOV_DETACH
+title: IOCTL_SRIOV_DETACH
+author: windows-driver-content
+description: The request indicates that the virtualization stack wants to unregister for Plug and Play events (previously registered through the IOCTL_SRIOV_ATTACH request).
+old-location: pci\ioctl-sriov-detach.htm
+old-project: PCI
+ms.assetid: 8ede4a48-317b-46be-834a-a67b638b28c0
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: PCI.ioctl-sriov-detach, IOCTL_SRIOV_DETACH control code [Buses], IOCTL_SRIOV_DETACH, pcivirt/IOCTL_SRIOV_DETACH
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: pcivirt.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Pcivirt.h
+apiname:
+-	IOCTL_SRIOV_DETACH
+product: Windows
+targetos: Windows
+req.typenames: SRIOV_PF_EVENT, *PSRIOV_PF_EVENT
 ---
 
 # IOCTL_SRIOV_DETACH IOCTL

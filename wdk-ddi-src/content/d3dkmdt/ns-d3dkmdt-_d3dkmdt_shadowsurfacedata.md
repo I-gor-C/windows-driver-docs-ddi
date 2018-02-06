@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmdt._D3DKMDT_SHADOWSURFACEDATA
-title : "_D3DKMDT_SHADOWSURFACEDATA"
-author : windows-driver-content
-description : The D3DKMDT_SHADOWSURFACEDATA structure describes a lockable shadow surface, which matches the primary surface in format and resolution for a given display mode.
-old-location : display\d3dkmdt_shadowsurfacedata.htm
-old-project : display
-ms.assetid : 1b7f6a39-b0d3-4a0b-b030-b7fef3ab58d6
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DmStructs_645dbefc-137b-47c5-aa4b-de9037d71182.xml, _D3DKMDT_SHADOWSURFACEDATA, D3DKMDT_SHADOWSURFACEDATA, d3dkmdt/D3DKMDT_SHADOWSURFACEDATA, D3DKMDT_SHADOWSURFACEDATA structure [Display Devices], display.d3dkmdt_shadowsurfacedata
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmdt.h
-req.include-header : D3dkmdt.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMDT_SHADOWSURFACEDATA
+UID: NS:d3dkmdt._D3DKMDT_SHADOWSURFACEDATA
+title: "_D3DKMDT_SHADOWSURFACEDATA"
+author: windows-driver-content
+description: The D3DKMDT_SHADOWSURFACEDATA structure describes a lockable shadow surface, which matches the primary surface in format and resolution for a given display mode.
+old-location: display\d3dkmdt_shadowsurfacedata.htm
+old-project: display
+ms.assetid: 1b7f6a39-b0d3-4a0b-b030-b7fef3ab58d6
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DmStructs_645dbefc-137b-47c5-aa4b-de9037d71182.xml, _D3DKMDT_SHADOWSURFACEDATA, D3DKMDT_SHADOWSURFACEDATA, d3dkmdt/D3DKMDT_SHADOWSURFACEDATA, D3DKMDT_SHADOWSURFACEDATA structure [Display Devices], display.d3dkmdt_shadowsurfacedata
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmdt.h
+req.include-header: D3dkmdt.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmdt.h
+apiname:
+-	D3DKMDT_SHADOWSURFACEDATA
+product: Windows
+targetos: Windows
+req.typenames: D3DKMDT_SHADOWSURFACEDATA
 ---
 
 # _D3DKMDT_SHADOWSURFACEDATA structure

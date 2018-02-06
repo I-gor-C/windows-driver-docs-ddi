@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.MmAllocateContiguousNodeMemory
-title : MmAllocateContiguousNodeMemory function
-author : windows-driver-content
-description : The MmAllocateContiguousNodeMemory routine allocates a range of contiguous, nonpaged physical memory and maps it to the system address space.
-old-location : kernel\mmallocatecontiguousnodememory.htm
-old-project : kernel
-ms.assetid : 08960797-4846-46D4-8DD9-3A935EAD7D48
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : MmAllocateContiguousNodeMemory routine [Kernel-Mode Driver Architecture], kernel.mmallocatecontiguousnodememory, wdm/MmAllocateContiguousNodeMemory, MmAllocateContiguousNodeMemory
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.MmAllocateContiguousNodeMemory
+title: MmAllocateContiguousNodeMemory function
+author: windows-driver-content
+description: The MmAllocateContiguousNodeMemory routine allocates a range of contiguous, nonpaged physical memory and maps it to the system address space.
+old-location: kernel\mmallocatecontiguousnodememory.htm
+old-project: kernel
+ms.assetid: 08960797-4846-46D4-8DD9-3A935EAD7D48
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: MmAllocateContiguousNodeMemory routine [Kernel-Mode Driver Architecture], kernel.mmallocatecontiguousnodememory, wdm/MmAllocateContiguousNodeMemory, MmAllocateContiguousNodeMemory
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	MmAllocateContiguousNodeMemory
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

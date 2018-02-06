@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._D3DDDICB_SUBMITCOMMAND
-title : "_D3DDDICB_SUBMITCOMMAND"
-author : windows-driver-content
-description : The D3DDDICB_SUBMITCOMMAND structure is used to submit command buffers on contexts that support graphics processing unit (GPU) virtual addressing.
-old-location : display\d3dddicb_submitcommand.htm
-old-project : display
-ms.assetid : 53D4890A-D075-4DF7-97E6-A8E8A174866B
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3dumddi/D3DDDICB_SUBMITCOMMAND, display.d3dddicb_submitcommand, D3DDDICB_SUBMITCOMMAND, _D3DDDICB_SUBMITCOMMAND, D3DDDICB_SUBMITCOMMAND structure [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDICB_SUBMITCOMMAND
+UID: NS:d3dumddi._D3DDDICB_SUBMITCOMMAND
+title: "_D3DDDICB_SUBMITCOMMAND"
+author: windows-driver-content
+description: The D3DDDICB_SUBMITCOMMAND structure is used to submit command buffers on contexts that support graphics processing unit (GPU) virtual addressing.
+old-location: display\d3dddicb_submitcommand.htm
+old-project: display
+ms.assetid: 53D4890A-D075-4DF7-97E6-A8E8A174866B
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3dumddi/D3DDDICB_SUBMITCOMMAND, display.d3dddicb_submitcommand, D3DDDICB_SUBMITCOMMAND, _D3DDDICB_SUBMITCOMMAND, D3DDDICB_SUBMITCOMMAND structure [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	D3DDDICB_SUBMITCOMMAND
+product: Windows
+targetos: Windows
+req.typenames: D3DDDICB_SUBMITCOMMAND
 ---
 
 # _D3DDDICB_SUBMITCOMMAND structure

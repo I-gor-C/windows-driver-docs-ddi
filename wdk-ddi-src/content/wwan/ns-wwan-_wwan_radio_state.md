@@ -1,42 +1,47 @@
 ---
-UID : NS:wwan._WWAN_RADIO_STATE
-title : "_WWAN_RADIO_STATE"
-author : windows-driver-content
-description : The WWAN_RADIO_STATE structure represents the hardware-based and software-based radio power states of the MB device.
-old-location : netvista\wwan_radio_state.htm
-old-project : netvista
-ms.assetid : 15c02819-bae8-48f5-8782-97823b6907bd
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : PWWAN_RADIO_STATE, netvista.wwan_radio_state, wwan/PWWAN_RADIO_STATE, WWAN_RADIO_STATE structure [Network Drivers Starting with Windows Vista], wwan/WWAN_RADIO_STATE, PWWAN_RADIO_STATE structure pointer [Network Drivers Starting with Windows Vista], WwanRef_b1ea0ea1-b23f-4e5c-9528-659e1f6e4162.xml, *PWWAN_RADIO_STATE, WWAN_RADIO_STATE, _WWAN_RADIO_STATE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wwan.h
-req.include-header : Wwan.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WWAN_RADIO_STATE, *PWWAN_RADIO_STATE
-req.product : Windows 10 or later.
+UID: NS:wwan._WWAN_RADIO_STATE
+title: "_WWAN_RADIO_STATE"
+author: windows-driver-content
+description: The WWAN_RADIO_STATE structure represents the hardware-based and software-based radio power states of the MB device.
+old-location: netvista\wwan_radio_state.htm
+old-project: netvista
+ms.assetid: 15c02819-bae8-48f5-8782-97823b6907bd
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: PWWAN_RADIO_STATE, netvista.wwan_radio_state, wwan/PWWAN_RADIO_STATE, WWAN_RADIO_STATE structure [Network Drivers Starting with Windows Vista], wwan/WWAN_RADIO_STATE, PWWAN_RADIO_STATE structure pointer [Network Drivers Starting with Windows Vista], WwanRef_b1ea0ea1-b23f-4e5c-9528-659e1f6e4162.xml, *PWWAN_RADIO_STATE, WWAN_RADIO_STATE, _WWAN_RADIO_STATE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wwan.h
+req.include-header: Wwan.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wwan.h
+apiname:
+-	WWAN_RADIO_STATE
+product: Windows
+targetos: Windows
+req.typenames: WWAN_RADIO_STATE, *PWWAN_RADIO_STATE
+req.product: Windows 10 or later.
 ---
 
 # _WWAN_RADIO_STATE structure

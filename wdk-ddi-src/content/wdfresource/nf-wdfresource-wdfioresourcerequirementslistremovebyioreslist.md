@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfresource.WdfIoResourceRequirementsListRemoveByIoResList
-title : WdfIoResourceRequirementsListRemoveByIoResList function
-author : windows-driver-content
-description : The WdfIoResourceRequirementsListRemoveByIoResList method removes a logical configuration from a resource requirements list.
-old-location : wdf\wdfioresourcerequirementslistremovebyioreslist.htm
-old-project : wdf
-ms.assetid : 507729e9-96da-461c-badb-a3725abf6591
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WdfIoResourceRequirementsListRemoveByIoResList method, DFResourceObjectRef_fa50f423-3ade-4deb-89a0-d79cd3f98710.xml, wdf.wdfioresourcerequirementslistremovebyioreslist, kmdf.wdfioresourcerequirementslistremovebyioreslist, PFN_WDFIORESOURCEREQUIREMENTSLISTREMOVEBYIORESLIST, wdfresource/WdfIoResourceRequirementsListRemoveByIoResList, WdfIoResourceRequirementsListRemoveByIoResList
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfresource.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_REQUEST_SEND_OPTIONS, *PWDF_REQUEST_SEND_OPTIONS
-req.product : Windows 10 or later.
+UID: NF:wdfresource.WdfIoResourceRequirementsListRemoveByIoResList
+title: WdfIoResourceRequirementsListRemoveByIoResList function
+author: windows-driver-content
+description: The WdfIoResourceRequirementsListRemoveByIoResList method removes a logical configuration from a resource requirements list.
+old-location: wdf\wdfioresourcerequirementslistremovebyioreslist.htm
+old-project: wdf
+ms.assetid: 507729e9-96da-461c-badb-a3725abf6591
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WdfIoResourceRequirementsListRemoveByIoResList method, DFResourceObjectRef_fa50f423-3ade-4deb-89a0-d79cd3f98710.xml, wdf.wdfioresourcerequirementslistremovebyioreslist, kmdf.wdfioresourcerequirementslistremovebyioreslist, PFN_WDFIORESOURCEREQUIREMENTSLISTREMOVEBYIORESLIST, wdfresource/WdfIoResourceRequirementsListRemoveByIoResList, WdfIoResourceRequirementsListRemoveByIoResList
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfresource.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfIoResourceRequirementsListRemoveByIoResList
+product: Windows
+targetos: Windows
+req.typenames: WDF_REQUEST_SEND_OPTIONS, *PWDF_REQUEST_SEND_OPTIONS
+req.product: Windows 10 or later.
 ---
 
 

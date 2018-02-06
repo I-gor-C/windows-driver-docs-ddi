@@ -1,42 +1,47 @@
 ---
-UID : NS:storport._STOR_DEVICE_CAPABILITIES
-title : "_STOR_DEVICE_CAPABILITIES"
-author : windows-driver-content
-description : The STOR_DEVICE_CAPABILITIES structure reports device capabilities to the Storport driver in response to a capabilities query in a SCSI request block (SRB) with a function of SRB_FUNCTION_PNP.
-old-location : storage\stor_device_capabilities.htm
-old-project : storage
-ms.assetid : 62BE93C6-8E1C-4430-BB07-C25E8D4076B0
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : "*PSTOR_DEVICE_CAPABILITIES, storport/STOR_DEVICE_CAPABILITIES, STOR_DEVICE_CAPABILITIES structure [Storage Devices], storport/PSTOR_DEVICE_CAPABILITIES, STOR_DEVICE_CAPABILITIES, PSTOR_DEVICE_CAPABILITIES structure pointer [Storage Devices], storage.stor_device_capabilities, _STOR_DEVICE_CAPABILITIES, PSTOR_DEVICE_CAPABILITIES"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STOR_DEVICE_CAPABILITIES, *PSTOR_DEVICE_CAPABILITIES
-req.product : Windows 10 or later.
+UID: NS:storport._STOR_DEVICE_CAPABILITIES
+title: "_STOR_DEVICE_CAPABILITIES"
+author: windows-driver-content
+description: The STOR_DEVICE_CAPABILITIES structure reports device capabilities to the Storport driver in response to a capabilities query in a SCSI request block (SRB) with a function of SRB_FUNCTION_PNP.
+old-location: storage\stor_device_capabilities.htm
+old-project: storage
+ms.assetid: 62BE93C6-8E1C-4430-BB07-C25E8D4076B0
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: "*PSTOR_DEVICE_CAPABILITIES, storport/STOR_DEVICE_CAPABILITIES, STOR_DEVICE_CAPABILITIES structure [Storage Devices], storport/PSTOR_DEVICE_CAPABILITIES, STOR_DEVICE_CAPABILITIES, PSTOR_DEVICE_CAPABILITIES structure pointer [Storage Devices], storage.stor_device_capabilities, _STOR_DEVICE_CAPABILITIES, PSTOR_DEVICE_CAPABILITIES"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	storport.h
+apiname:
+-	STOR_DEVICE_CAPABILITIES
+product: Windows
+targetos: Windows
+req.typenames: STOR_DEVICE_CAPABILITIES, *PSTOR_DEVICE_CAPABILITIES
+req.product: Windows 10 or later.
 ---
 
 # _STOR_DEVICE_CAPABILITIES structure

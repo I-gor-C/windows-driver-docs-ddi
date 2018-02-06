@@ -1,42 +1,47 @@
 ---
-UID : NS:windot11.DOT11_OFFLOAD_NETWORK
-title : DOT11_OFFLOAD_NETWORK
-author : windows-driver-content
-description : The DOT11_OFFLOAD_NETWORK structure describes a network list offload.
-old-location : netvista\dot11_offload_network.htm
-old-project : netvista
-ms.assetid : 75DC558F-801B-42ED-9282-127E86E78923
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.dot11_offload_network, DOT11_OFFLOAD_NETWORK structure [Network Drivers Starting with Windows Vista], *PDOT11_OFFLOAD_NETWORK, PDOT11_OFFLOAD_NETWORK, DOT11_OFFLOAD_NETWORK, windot11/DOT11_OFFLOAD_NETWORK, windot11/PDOT11_OFFLOAD_NETWORK, PDOT11_OFFLOAD_NETWORK structure pointer [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : windot11.h
-req.include-header : Windot11.h
-req.target-type : Windows
-req.target-min-winverclnt : Versions:\_Supported in Windows 8
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDOT11_OFFLOAD_NETWORK, DOT11_OFFLOAD_NETWORK"
-req.product : Windows 10 or later.
+UID: NS:windot11.DOT11_OFFLOAD_NETWORK
+title: DOT11_OFFLOAD_NETWORK
+author: windows-driver-content
+description: The DOT11_OFFLOAD_NETWORK structure describes a network list offload.
+old-location: netvista\dot11_offload_network.htm
+old-project: netvista
+ms.assetid: 75DC558F-801B-42ED-9282-127E86E78923
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.dot11_offload_network, DOT11_OFFLOAD_NETWORK structure [Network Drivers Starting with Windows Vista], *PDOT11_OFFLOAD_NETWORK, PDOT11_OFFLOAD_NETWORK, DOT11_OFFLOAD_NETWORK, windot11/DOT11_OFFLOAD_NETWORK, windot11/PDOT11_OFFLOAD_NETWORK, PDOT11_OFFLOAD_NETWORK structure pointer [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: windot11.h
+req.include-header: Windot11.h
+req.target-type: Windows
+req.target-min-winverclnt: Versions:\_Supported in Windows 8
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Windot11.h
+apiname:
+-	DOT11_OFFLOAD_NETWORK
+product: Windows
+targetos: Windows
+req.typenames: "*PDOT11_OFFLOAD_NETWORK, DOT11_OFFLOAD_NETWORK"
+req.product: Windows 10 or later.
 ---
 
 # DOT11_OFFLOAD_NETWORK structure

@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddstor._STORAGE_LB_PROVISIONING_MAP_RESOURCES
-title : "_STORAGE_LB_PROVISIONING_MAP_RESOURCES"
-author : windows-driver-content
-description : The STORAGE_LB_PROVISIONING_MAP_RESOURCES structure contains, when valid, the count of available and used bytes mapped to a storage device. This structure is returned from an IOCTL_STORAGE_GET_LB_PROVISIONING_MAP_RESOURCES request.
-old-location : storage\storage_lb_provisioning_map_resources.htm
-old-project : storage
-ms.assetid : 6F7DE233-D002-4927-80FC-307A3A33653A
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : ntddstor/STORAGE_LB_PROVISIONING_MAP_RESOURCES, STORAGE_LB_PROVISIONING_MAP_RESOURCES, ntddstor/PSTORAGE_LB_PROVISIONING_MAP_RESOURCES, LOG_PAGE_LBP_RESOURCE_SCOPE_DEDICATED_TO_LUN, storage.storage_lb_provisioning_map_resources, _STORAGE_LB_PROVISIONING_MAP_RESOURCES, STORAGE_LB_PROVISIONING_MAP_RESOURCES structure [Storage Devices], PSTORAGE_LB_PROVISIONING_MAP_RESOURCES, *PSTORAGE_LB_PROVISIONING_MAP_RESOURCES, PSTORAGE_LB_PROVISIONING_MAP_RESOURCES structure pointer [Storage Devices], LOG_PAGE_LBP_RESOURCE_SCOPE_NOT_DEDICATED_TO_LUN, LOG_PAGE_LBP_RESOURCE_SCOPE_NOT_REPORTED
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddstor.h
-req.include-header : Ntddstor.h, Scsi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSTORAGE_LB_PROVISIONING_MAP_RESOURCES, STORAGE_LB_PROVISIONING_MAP_RESOURCES"
+UID: NS:ntddstor._STORAGE_LB_PROVISIONING_MAP_RESOURCES
+title: "_STORAGE_LB_PROVISIONING_MAP_RESOURCES"
+author: windows-driver-content
+description: The STORAGE_LB_PROVISIONING_MAP_RESOURCES structure contains, when valid, the count of available and used bytes mapped to a storage device. This structure is returned from an IOCTL_STORAGE_GET_LB_PROVISIONING_MAP_RESOURCES request.
+old-location: storage\storage_lb_provisioning_map_resources.htm
+old-project: storage
+ms.assetid: 6F7DE233-D002-4927-80FC-307A3A33653A
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: ntddstor/STORAGE_LB_PROVISIONING_MAP_RESOURCES, STORAGE_LB_PROVISIONING_MAP_RESOURCES, ntddstor/PSTORAGE_LB_PROVISIONING_MAP_RESOURCES, LOG_PAGE_LBP_RESOURCE_SCOPE_DEDICATED_TO_LUN, storage.storage_lb_provisioning_map_resources, _STORAGE_LB_PROVISIONING_MAP_RESOURCES, STORAGE_LB_PROVISIONING_MAP_RESOURCES structure [Storage Devices], PSTORAGE_LB_PROVISIONING_MAP_RESOURCES, *PSTORAGE_LB_PROVISIONING_MAP_RESOURCES, PSTORAGE_LB_PROVISIONING_MAP_RESOURCES structure pointer [Storage Devices], LOG_PAGE_LBP_RESOURCE_SCOPE_NOT_DEDICATED_TO_LUN, LOG_PAGE_LBP_RESOURCE_SCOPE_NOT_REPORTED
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddstor.h
+req.include-header: Ntddstor.h, Scsi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddstor.h
+apiname:
+-	STORAGE_LB_PROVISIONING_MAP_RESOURCES
+product: Windows
+targetos: Windows
+req.typenames: "*PSTORAGE_LB_PROVISIONING_MAP_RESOURCES, STORAGE_LB_PROVISIONING_MAP_RESOURCES"
 ---
 
 # _STORAGE_LB_PROVISIONING_MAP_RESOURCES structure

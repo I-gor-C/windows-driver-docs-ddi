@@ -1,42 +1,47 @@
 ---
-UID : NF:wiamindr_lh.IWiaMiniDrv.drvValidateItemProperties
-title : IWiaMiniDrv::drvValidateItemProperties method
-author : windows-driver-content
-description : The IWiaMiniDrv::drvValidateItemProperties method validates an item's properties against the set of valid values for each property and will update those properties if necessary.
-old-location : image\iwiaminidrv_drvvalidateitemproperties.htm
-old-project : image
-ms.assetid : 12052128-9ea7-41cd-bb75-be7175e26c12
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : IWiaMiniDrv, drvValidateItemProperties method [Imaging Devices], IWiaMiniDrv interface, drvValidateItemProperties method [Imaging Devices], image.iwiaminidrv_drvvalidateitemproperties, IWiaMiniDrv::drvValidateItemProperties, MiniDrv_b288e05c-a142-452a-9ac7-ffb2dfcae4cf.xml, drvValidateItemProperties, wiamindr_lh/IWiaMiniDrv::drvValidateItemProperties, IWiaMiniDrv interface [Imaging Devices], drvValidateItemProperties method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wiamindr_lh.h
-req.include-header : Wiamindr.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Me and in Windows XP and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wiamindr_lh.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SCANWINDOW, *PSCANWINDOW
-req.product : Windows 10 or later.
+UID: NF:wiamindr_lh.IWiaMiniDrv.drvValidateItemProperties
+title: IWiaMiniDrv::drvValidateItemProperties method
+author: windows-driver-content
+description: The IWiaMiniDrv::drvValidateItemProperties method validates an item's properties against the set of valid values for each property and will update those properties if necessary.
+old-location: image\iwiaminidrv_drvvalidateitemproperties.htm
+old-project: image
+ms.assetid: 12052128-9ea7-41cd-bb75-be7175e26c12
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: IWiaMiniDrv, drvValidateItemProperties method [Imaging Devices], IWiaMiniDrv interface, drvValidateItemProperties method [Imaging Devices], image.iwiaminidrv_drvvalidateitemproperties, IWiaMiniDrv::drvValidateItemProperties, MiniDrv_b288e05c-a142-452a-9ac7-ffb2dfcae4cf.xml, drvValidateItemProperties, wiamindr_lh/IWiaMiniDrv::drvValidateItemProperties, IWiaMiniDrv interface [Imaging Devices], drvValidateItemProperties method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wiamindr_lh.h
+req.include-header: Wiamindr.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Me and in Windows XP and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wiamindr_lh.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	wiamindr_lh.h
+apiname:
+-	IWiaMiniDrv.drvValidateItemProperties
+product: Windows
+targetos: Windows
+req.typenames: SCANWINDOW, *PSCANWINDOW
+req.product: Windows 10 or later.
 ---
 
 

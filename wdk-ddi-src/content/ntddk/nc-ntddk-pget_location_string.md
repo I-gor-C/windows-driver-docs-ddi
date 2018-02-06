@@ -1,41 +1,46 @@
 ---
-UID : NC:ntddk.PGET_LOCATION_STRING
-title : PGET_LOCATION_STRING
-author : windows-driver-content
-description : The PnpGetLocationString routine provides the device-specific part of the device's SPDRP_LOCATION_PATHS property.
-old-location : kernel\pnpgetlocationstring.htm
-old-project : kernel
-ms.assetid : 03ebdeed-10f0-4633-a9cd-4db683a8c3a7
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.pnpgetlocationstring, PnpGetLocationString routine [Kernel-Mode Driver Architecture], PnpGetLocationString, PGET_LOCATION_STRING, PGET_LOCATION_STRING, ntddk/PnpGetLocationString, drvr_interface_86bd2a9c-408f-430f-9ab7-5c368600de1e.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ntddk.h
-req.include-header : Ntddk.h, Ntifs.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available starting with Windows Server 2003.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= PASSIVE_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PFILTER_INITIALIZATION_DATA, FILTER_INITIALIZATION_DATA"
+UID: NC:ntddk.PGET_LOCATION_STRING
+title: PGET_LOCATION_STRING
+author: windows-driver-content
+description: The PnpGetLocationString routine provides the device-specific part of the device's SPDRP_LOCATION_PATHS property.
+old-location: kernel\pnpgetlocationstring.htm
+old-project: kernel
+ms.assetid: 03ebdeed-10f0-4633-a9cd-4db683a8c3a7
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.pnpgetlocationstring, PnpGetLocationString routine [Kernel-Mode Driver Architecture], PnpGetLocationString, PGET_LOCATION_STRING, PGET_LOCATION_STRING, ntddk/PnpGetLocationString, drvr_interface_86bd2a9c-408f-430f-9ab7-5c368600de1e.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ntddk.h
+req.include-header: Ntddk.h, Ntifs.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available starting with Windows Server 2003.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= PASSIVE_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ntddk.h
+apiname:
+-	PnpGetLocationString
+product: Windows
+targetos: Windows
+req.typenames: "*PFILTER_INITIALIZATION_DATA, FILTER_INITIALIZATION_DATA"
 ---
 
 

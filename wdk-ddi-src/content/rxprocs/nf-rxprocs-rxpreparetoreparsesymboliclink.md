@@ -1,42 +1,47 @@
 ---
-UID : NF:rxprocs.RxPrepareToReparseSymbolicLink
-title : RxPrepareToReparseSymbolicLink function
-author : windows-driver-content
-description : RxPrepareToReparseSymbolicLink sets up the file object name to facilitate a reparse. This routine is used by the network mini-redirectors to traverse symbolic links.
-old-location : ifsk\rxpreparetoreparsesymboliclink.htm
-old-project : ifsk
-ms.assetid : 6a05b25f-e529-469a-8bfc-e75c0f7a9a8a
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.rxpreparetoreparsesymboliclink, RxPrepareToReparseSymbolicLink, rxprocs/RxPrepareToReparseSymbolicLink, rxref_6726dffd-ccae-43e0-98da-14dc0d11c7c2.xml, RxPrepareToReparseSymbolicLink routine [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : rxprocs.h
-req.include-header : Rxprocs.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RX_CONTEXT, *PRX_CONTEXT
-req.product : Windows 10 or later.
+UID: NF:rxprocs.RxPrepareToReparseSymbolicLink
+title: RxPrepareToReparseSymbolicLink function
+author: windows-driver-content
+description: RxPrepareToReparseSymbolicLink sets up the file object name to facilitate a reparse. This routine is used by the network mini-redirectors to traverse symbolic links.
+old-location: ifsk\rxpreparetoreparsesymboliclink.htm
+old-project: ifsk
+ms.assetid: 6a05b25f-e529-469a-8bfc-e75c0f7a9a8a
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.rxpreparetoreparsesymboliclink, RxPrepareToReparseSymbolicLink, rxprocs/RxPrepareToReparseSymbolicLink, rxref_6726dffd-ccae-43e0-98da-14dc0d11c7c2.xml, RxPrepareToReparseSymbolicLink routine [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: rxprocs.h
+req.include-header: Rxprocs.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	rxprocs.h
+apiname:
+-	RxPrepareToReparseSymbolicLink
+product: Windows
+targetos: Windows
+req.typenames: RX_CONTEXT, *PRX_CONTEXT
+req.product: Windows 10 or later.
 ---
 
 

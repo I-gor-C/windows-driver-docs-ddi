@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugControl5.OutputStackTraceEx
-title : IDebugControl5::OutputStackTraceEx method
-author : windows-driver-content
-description : The OutputStackTraceEx method outputs either the supplied stack frame or the current stack frames.
-old-location : debugger\idebugcontrol5_outputstacktraceex.htm
-old-project : debugger
-ms.assetid : C89203F9-FCCF-4D71-8E8A-9F5F4AE89004
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : OutputStackTraceEx method [Windows Debugging], IDebugControl5 interface, OutputStackTraceEx method [Windows Debugging], IDebugControl5::OutputStackTraceEx, OutputStackTraceEx, debugger.idebugcontrol5_outputstacktraceex, dbgeng/IDebugControl5::OutputStackTraceEx, IDebugControl5, IDebugControl5 interface [Windows Debugging], OutputStackTraceEx method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl5.OutputStackTraceEx
+title: IDebugControl5::OutputStackTraceEx method
+author: windows-driver-content
+description: The OutputStackTraceEx method outputs either the supplied stack frame or the current stack frames.
+old-location: debugger\idebugcontrol5_outputstacktraceex.htm
+old-project: debugger
+ms.assetid: C89203F9-FCCF-4D71-8E8A-9F5F4AE89004
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: OutputStackTraceEx method [Windows Debugging], IDebugControl5 interface, OutputStackTraceEx method [Windows Debugging], IDebugControl5::OutputStackTraceEx, OutputStackTraceEx, debugger.idebugcontrol5_outputstacktraceex, dbgeng/IDebugControl5::OutputStackTraceEx, IDebugControl5, IDebugControl5 interface [Windows Debugging], OutputStackTraceEx method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl5.OutputStackTraceEx
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

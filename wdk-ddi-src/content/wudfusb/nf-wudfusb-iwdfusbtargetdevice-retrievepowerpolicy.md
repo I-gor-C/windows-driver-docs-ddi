@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfusb.IWDFUsbTargetDevice.RetrievePowerPolicy
-title : IWDFUsbTargetDevice::RetrievePowerPolicy method
-author : windows-driver-content
-description : The RetrievePowerPolicy method retrieves a WinUsb power policy.
-old-location : wdf\iwdfusbtargetdevice_retrievepowerpolicy.htm
-old-project : wdf
-ms.assetid : e15561e3-ba3d-4c65-bb6e-d90f3fab22af
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : IWDFUsbTargetDevice interface, RetrievePowerPolicy method, UMDFUSBref_50da7595-0735-475b-863e-33a689f4fc2b.xml, IWDFUsbTargetDevice, RetrievePowerPolicy, umdf.iwdfusbtargetdevice_retrievepowerpolicy, IWDFUsbTargetDevice::RetrievePowerPolicy, RetrievePowerPolicy method, IWDFUsbTargetDevice interface, wdf.iwdfusbtargetdevice_retrievepowerpolicy, wudfusb/IWDFUsbTargetDevice::RetrievePowerPolicy, RetrievePowerPolicy method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfusb.h
-req.include-header : Wudfusb.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.5
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfusb.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
-req.product : Windows 10 or later.
+UID: NF:wudfusb.IWDFUsbTargetDevice.RetrievePowerPolicy
+title: IWDFUsbTargetDevice::RetrievePowerPolicy method
+author: windows-driver-content
+description: The RetrievePowerPolicy method retrieves a WinUsb power policy.
+old-location: wdf\iwdfusbtargetdevice_retrievepowerpolicy.htm
+old-project: wdf
+ms.assetid: e15561e3-ba3d-4c65-bb6e-d90f3fab22af
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: IWDFUsbTargetDevice interface, RetrievePowerPolicy method, UMDFUSBref_50da7595-0735-475b-863e-33a689f4fc2b.xml, IWDFUsbTargetDevice, RetrievePowerPolicy, umdf.iwdfusbtargetdevice_retrievepowerpolicy, IWDFUsbTargetDevice::RetrievePowerPolicy, RetrievePowerPolicy method, IWDFUsbTargetDevice interface, wdf.iwdfusbtargetdevice_retrievepowerpolicy, wudfusb/IWDFUsbTargetDevice::RetrievePowerPolicy, RetrievePowerPolicy method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfusb.h
+req.include-header: Wudfusb.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.5
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfusb.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFUsbTargetDevice.RetrievePowerPolicy
+product: Windows
+targetos: Windows
+req.typenames: WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
+req.product: Windows 10 or later.
 ---
 
 

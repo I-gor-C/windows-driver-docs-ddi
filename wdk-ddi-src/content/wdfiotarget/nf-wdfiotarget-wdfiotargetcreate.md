@@ -1,42 +1,50 @@
 ---
-UID : NF:wdfiotarget.WdfIoTargetCreate
-title : WdfIoTargetCreate function
-author : windows-driver-content
-description : The WdfIoTargetCreate method creates a remote I/O target for a specified device.
-old-location : wdf\wdfiotargetcreate.htm
-old-project : wdf
-ms.assetid : 21a2fa9c-24c1-4964-aaa7-96ac86b8c078
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WdfIoTargetCreate, PFN_WDFIOTARGETCREATE, DFIOTargetRef_3de8d750-e0e1-4a74-8e2b-977a27db024f.xml, wdfiotarget/WdfIoTargetCreate, kmdf.wdfiotargetcreate, WdfIoTargetCreate method, wdf.wdfiotargetcreate
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfiotarget.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDF_IO_TARGET_STATE, WDF_IO_TARGET_STATE"
-req.product : Windows 10 or later.
+UID: NF:wdfiotarget.WdfIoTargetCreate
+title: WdfIoTargetCreate function
+author: windows-driver-content
+description: The WdfIoTargetCreate method creates a remote I/O target for a specified device.
+old-location: wdf\wdfiotargetcreate.htm
+old-project: wdf
+ms.assetid: 21a2fa9c-24c1-4964-aaa7-96ac86b8c078
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WdfIoTargetCreate, PFN_WDFIOTARGETCREATE, DFIOTargetRef_3de8d750-e0e1-4a74-8e2b-977a27db024f.xml, wdfiotarget/WdfIoTargetCreate, kmdf.wdfiotargetcreate, WdfIoTargetCreate method, wdf.wdfiotargetcreate
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfiotarget.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+-	WUDFx02000.dll
+-	WUDFx02000.dll.dll
+apiname:
+-	WdfIoTargetCreate
+product: Windows
+targetos: Windows
+req.typenames: "*PWDF_IO_TARGET_STATE, WDF_IO_TARGET_STATE"
+req.product: Windows 10 or later.
 ---
 
 

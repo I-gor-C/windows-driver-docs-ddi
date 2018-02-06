@@ -1,41 +1,46 @@
 ---
-UID : NC:ntddk.SILO_MONITOR_TERMINATE_CALLBACK
-title : SILO_MONITOR_TERMINATE_CALLBACK
-author : windows-driver-content
-description : This callback is invoked when a silo is terminated.
-old-location : kernel\silo_monitor_terminate_callback.htm
-old-project : kernel
-ms.assetid : 1F87D6AC-3603-4A34-BAAB-8B43ADF9E595
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.silo_monitor_terminate_callback, TerminateCallback callback function [Kernel-Mode Driver Architecture], TerminateCallback, SILO_MONITOR_TERMINATE_CALLBACK, SILO_MONITOR_TERMINATE_CALLBACK, ntddk/TerminateCallback
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ntddk.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10, version 1607
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PFILTER_INITIALIZATION_DATA, FILTER_INITIALIZATION_DATA"
+UID: NC:ntddk.SILO_MONITOR_TERMINATE_CALLBACK
+title: SILO_MONITOR_TERMINATE_CALLBACK
+author: windows-driver-content
+description: This callback is invoked when a silo is terminated.
+old-location: kernel\silo_monitor_terminate_callback.htm
+old-project: kernel
+ms.assetid: 1F87D6AC-3603-4A34-BAAB-8B43ADF9E595
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.silo_monitor_terminate_callback, TerminateCallback callback function [Kernel-Mode Driver Architecture], TerminateCallback, SILO_MONITOR_TERMINATE_CALLBACK, SILO_MONITOR_TERMINATE_CALLBACK, ntddk/TerminateCallback
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ntddk.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10, version 1607
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	ntddk.h
+apiname:
+-	TerminateCallback
+product: Windows
+targetos: Windows
+req.typenames: "*PFILTER_INITIALIZATION_DATA, FILTER_INITIALIZATION_DATA"
 ---
 
 

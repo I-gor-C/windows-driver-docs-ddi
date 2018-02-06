@@ -1,41 +1,46 @@
 ---
-UID : NS:iscsimgt._ISCSI_ConnectionStaticInfo
-title : "_ISCSI_ConnectionStaticInfo"
-author : windows-driver-content
-description : The ISCSI_ConnectionStaticInfo structure contains information about the characteristics of an established connection.
-old-location : storage\iscsi_connectionstaticinfo.htm
-old-project : storage
-ms.assetid : 14d4464e-d4e8-446c-8822-0b16c984313c
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : "*PISCSI_ConnectionStaticInfo, PISCSI_ConnectionStaticInfo, ISCSI_ConnectionStaticInfo structure [Storage Devices], iscsimgt/ISCSI_ConnectionStaticInfo, PISCSI_ConnectionStaticInfo structure pointer [Storage Devices], ISCSI_ConnectionStaticInfo, storage.iscsi_connectionstaticinfo, iscsimgt/PISCSI_ConnectionStaticInfo, structs-iSCSI_ef0dc102-31e4-466e-b094-d4a6b6a01ce6.xml, _ISCSI_ConnectionStaticInfo"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : iscsimgt.h
-req.include-header : Iscsimgt.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : ISCSI_ConnectionStaticInfo, *PISCSI_ConnectionStaticInfo
+UID: NS:iscsimgt._ISCSI_ConnectionStaticInfo
+title: "_ISCSI_ConnectionStaticInfo"
+author: windows-driver-content
+description: The ISCSI_ConnectionStaticInfo structure contains information about the characteristics of an established connection.
+old-location: storage\iscsi_connectionstaticinfo.htm
+old-project: storage
+ms.assetid: 14d4464e-d4e8-446c-8822-0b16c984313c
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: "*PISCSI_ConnectionStaticInfo, PISCSI_ConnectionStaticInfo, ISCSI_ConnectionStaticInfo structure [Storage Devices], iscsimgt/ISCSI_ConnectionStaticInfo, PISCSI_ConnectionStaticInfo structure pointer [Storage Devices], ISCSI_ConnectionStaticInfo, storage.iscsi_connectionstaticinfo, iscsimgt/PISCSI_ConnectionStaticInfo, structs-iSCSI_ef0dc102-31e4-466e-b094-d4a6b6a01ce6.xml, _ISCSI_ConnectionStaticInfo"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: iscsimgt.h
+req.include-header: Iscsimgt.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	iscsimgt.h
+apiname:
+-	ISCSI_ConnectionStaticInfo
+product: Windows
+targetos: Windows
+req.typenames: ISCSI_ConnectionStaticInfo, *PISCSI_ConnectionStaticInfo
 ---
 
 # _ISCSI_ConnectionStaticInfo structure

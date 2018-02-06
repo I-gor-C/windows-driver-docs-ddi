@@ -1,41 +1,46 @@
 ---
-UID : NS:d3d10umddi.D3D10DDI_VERTEX_CACHE_DESC
-title : D3D10DDI_VERTEX_CACHE_DESC
-author : windows-driver-content
-description : The D3D10DDI_VERTEX_CACHE_DESC structure describes mesh-optimization data.
-old-location : display\d3d10ddi_vertex_cache_desc.htm
-old-project : display
-ms.assetid : c6cff037-436c-4c7e-85b8-02c9d7827f95
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3D10DDI_VERTEX_CACHE_DESC, D3D10DDI_VERTEX_CACHE_DESC structure [Display Devices], d3d10umddi/D3D10DDI_VERTEX_CACHE_DESC, UMDisplayDriver_Dx10param_Structs_585c3ccc-83c7-4d3b-903d-7eac81a1c21c.xml, display.d3d10ddi_vertex_cache_desc
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3D10DDI_VERTEX_CACHE_DESC
+UID: NS:d3d10umddi.D3D10DDI_VERTEX_CACHE_DESC
+title: D3D10DDI_VERTEX_CACHE_DESC
+author: windows-driver-content
+description: The D3D10DDI_VERTEX_CACHE_DESC structure describes mesh-optimization data.
+old-location: display\d3d10ddi_vertex_cache_desc.htm
+old-project: display
+ms.assetid: c6cff037-436c-4c7e-85b8-02c9d7827f95
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3D10DDI_VERTEX_CACHE_DESC, D3D10DDI_VERTEX_CACHE_DESC structure [Display Devices], d3d10umddi/D3D10DDI_VERTEX_CACHE_DESC, UMDisplayDriver_Dx10param_Structs_585c3ccc-83c7-4d3b-903d-7eac81a1c21c.xml, display.d3d10ddi_vertex_cache_desc
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	D3D10DDI_VERTEX_CACHE_DESC
+product: Windows
+targetos: Windows
+req.typenames: D3D10DDI_VERTEX_CACHE_DESC
 ---
 
 # D3D10DDI_VERTEX_CACHE_DESC structure

@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFIoRequest.MarkCancelable
-title : IWDFIoRequest::MarkCancelable method
-author : windows-driver-content
-description : The MarkCancelable method enables the canceling of the I/O request.
-old-location : wdf\iwdfiorequest_markcancelable.htm
-old-project : wdf
-ms.assetid : 73e323a4-d40e-4414-92b7-310bfb0f6457
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : MarkCancelable method, IWDFIoRequest interface, MarkCancelable method, wdf.iwdfiorequest_markcancelable, umdf.iwdfiorequest_markcancelable, UMDFRequestObjectRef_c1304e95-724d-4ced-abc2-801b1606f43b.xml, MarkCancelable, wudfddi/IWDFIoRequest::MarkCancelable, IWDFIoRequest::MarkCancelable, MarkCancelable method, IWDFIoRequest interface, IWDFIoRequest
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.5
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFIoRequest.MarkCancelable
+title: IWDFIoRequest::MarkCancelable method
+author: windows-driver-content
+description: The MarkCancelable method enables the canceling of the I/O request.
+old-location: wdf\iwdfiorequest_markcancelable.htm
+old-project: wdf
+ms.assetid: 73e323a4-d40e-4414-92b7-310bfb0f6457
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: MarkCancelable method, IWDFIoRequest interface, MarkCancelable method, wdf.iwdfiorequest_markcancelable, umdf.iwdfiorequest_markcancelable, UMDFRequestObjectRef_c1304e95-724d-4ced-abc2-801b1606f43b.xml, MarkCancelable, wudfddi/IWDFIoRequest::MarkCancelable, IWDFIoRequest::MarkCancelable, MarkCancelable method, IWDFIoRequest interface, IWDFIoRequest
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.5
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFIoRequest.MarkCancelable
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

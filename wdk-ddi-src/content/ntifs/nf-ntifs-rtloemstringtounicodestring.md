@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.RtlOemStringToUnicodeString
-title : RtlOemStringToUnicodeString function
-author : windows-driver-content
-description : The RtlOemStringToUnicodeString routine translates a given source string into a null-terminated Unicode string using the current system OEM code page.
-old-location : ifsk\rtloemstringtounicodestring.htm
-old-project : ifsk
-ms.assetid : 0420718f-3d0f-4f15-85ec-c2cdfa930023
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : RtlOemStringToUnicodeString routine [Installable File System Drivers], rtlref_6b1f3210-6b02-4f20-9887-b7efd0090b7f.xml, ntifs/RtlOemStringToUnicodeString, ifsk.rtloemstringtounicodestring, RtlOemStringToUnicodeString
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "< DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.RtlOemStringToUnicodeString
+title: RtlOemStringToUnicodeString function
+author: windows-driver-content
+description: The RtlOemStringToUnicodeString routine translates a given source string into a null-terminated Unicode string using the current system OEM code page.
+old-location: ifsk\rtloemstringtounicodestring.htm
+old-project: ifsk
+ms.assetid: 0420718f-3d0f-4f15-85ec-c2cdfa930023
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: RtlOemStringToUnicodeString routine [Installable File System Drivers], rtlref_6b1f3210-6b02-4f20-9887-b7efd0090b7f.xml, ntifs/RtlOemStringToUnicodeString, ifsk.rtloemstringtounicodestring, RtlOemStringToUnicodeString
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "< DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	RtlOemStringToUnicodeString
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

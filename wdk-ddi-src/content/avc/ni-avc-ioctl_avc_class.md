@@ -1,41 +1,46 @@
 ---
-UID : NI:avc.IOCTL_AVC_CLASS
-title : IOCTL_AVC_CLASS
-author : windows-driver-content
-description : The IOCTL_AVC_CLASS I/O control code is supported only from kernel mode, using the IRP_MJ_INTERNAL_DEVICE_CONTROL dispatch.Avc.sys supports two device interfaces, depending upon the type of instance (peer or virtual).
-old-location : stream\ioctl_avc_class.htm
-old-project : stream
-ms.assetid : 033069b8-98e5-4302-ae4e-71f9249533ff
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.ioctl_avc_class, IOCTL_AVC_CLASS control code [Streaming Media Devices], IOCTL_AVC_CLASS, avc/IOCTL_AVC_CLASS, avcref_720c03f6-d568-4ebe-8bd8-295fd8a6c222.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : avc.h
-req.include-header : Avc.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : AVC_FUNCTION
+UID: NI:avc.IOCTL_AVC_CLASS
+title: IOCTL_AVC_CLASS
+author: windows-driver-content
+description: The IOCTL_AVC_CLASS I/O control code is supported only from kernel mode, using the IRP_MJ_INTERNAL_DEVICE_CONTROL dispatch.Avc.sys supports two device interfaces, depending upon the type of instance (peer or virtual).
+old-location: stream\ioctl_avc_class.htm
+old-project: stream
+ms.assetid: 033069b8-98e5-4302-ae4e-71f9249533ff
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.ioctl_avc_class, IOCTL_AVC_CLASS control code [Streaming Media Devices], IOCTL_AVC_CLASS, avc/IOCTL_AVC_CLASS, avcref_720c03f6-d568-4ebe-8bd8-295fd8a6c222.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: avc.h
+req.include-header: Avc.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	avc.h
+apiname:
+-	IOCTL_AVC_CLASS
+product: Windows
+targetos: Windows
+req.typenames: AVC_FUNCTION
 ---
 
 # IOCTL_AVC_CLASS IOCTL

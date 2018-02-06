@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.tagKSCAMERA_EXTENDEDPROP_FIELDOFVIEW
-title : tagKSCAMERA_EXTENDEDPROP_FIELDOFVIEW
-author : windows-driver-content
-description : The Field of View Control property describes the current Field of View (FOV) of the camera along with the pitch angle of the camera position.
-old-location : stream\kscamera_extendedprop_fieldofview.htm
-old-project : stream
-ms.assetid : CC3FFC63-8404-4EA6-9738-F0A3C52585B8
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : PKSCAMERA_EXTENDEDPROP_FIELDOFVIEW structure pointer [Streaming Media Devices], KSCAMERA_EXTENDEDPROP_FIELDOFVIEW, *PKSCAMERA_EXTENDEDPROP_FIELDOFVIEW, ksmedia/PKSCAMERA_EXTENDEDPROP_FIELDOFVIEW, tagKSCAMERA_EXTENDEDPROP_FIELDOFVIEW, ksmedia/KSCAMERA_EXTENDEDPROP_FIELDOFVIEW, PKSCAMERA_EXTENDEDPROP_FIELDOFVIEW, KSCAMERA_EXTENDEDPROP_FIELDOFVIEW structure [Streaming Media Devices], stream.kscamera_extendedprop_fieldofview
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows 8.1.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKSCAMERA_EXTENDEDPROP_FIELDOFVIEW, KSCAMERA_EXTENDEDPROP_FIELDOFVIEW"
+UID: NS:ksmedia.tagKSCAMERA_EXTENDEDPROP_FIELDOFVIEW
+title: tagKSCAMERA_EXTENDEDPROP_FIELDOFVIEW
+author: windows-driver-content
+description: The Field of View Control property describes the current Field of View (FOV) of the camera along with the pitch angle of the camera position.
+old-location: stream\kscamera_extendedprop_fieldofview.htm
+old-project: stream
+ms.assetid: CC3FFC63-8404-4EA6-9738-F0A3C52585B8
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: PKSCAMERA_EXTENDEDPROP_FIELDOFVIEW structure pointer [Streaming Media Devices], KSCAMERA_EXTENDEDPROP_FIELDOFVIEW, *PKSCAMERA_EXTENDEDPROP_FIELDOFVIEW, ksmedia/PKSCAMERA_EXTENDEDPROP_FIELDOFVIEW, tagKSCAMERA_EXTENDEDPROP_FIELDOFVIEW, ksmedia/KSCAMERA_EXTENDEDPROP_FIELDOFVIEW, PKSCAMERA_EXTENDEDPROP_FIELDOFVIEW, KSCAMERA_EXTENDEDPROP_FIELDOFVIEW structure [Streaming Media Devices], stream.kscamera_extendedprop_fieldofview
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows 8.1.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ksmedia.h
+apiname:
+-	KSCAMERA_EXTENDEDPROP_FIELDOFVIEW
+product: Windows
+targetos: Windows
+req.typenames: "*PKSCAMERA_EXTENDEDPROP_FIELDOFVIEW, KSCAMERA_EXTENDEDPROP_FIELDOFVIEW"
 ---
 
 # tagKSCAMERA_EXTENDEDPROP_FIELDOFVIEW structure

@@ -1,42 +1,47 @@
 ---
-UID : NF:storport.StorPortQueryPerformanceCounter
-title : StorPortQueryPerformanceCounter function
-author : windows-driver-content
-description : The current system performance counter value is queried is returned by the StorPortQueryPerformanceCounter routine.
-old-location : storage\storportqueryperformancecounter.htm
-old-project : storage
-ms.assetid : 6502E3AE-5841-41C9-BEB7-B00620DBF02D
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : StorPortQueryPerformanceCounter routine [Storage Devices], storport/StorPortQueryPerformanceCounter, StorPortQueryPerformanceCounter, storage.storportqueryperformancecounter
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : Any
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STOR_SPINLOCK
-req.product : Windows 10 or later.
+UID: NF:storport.StorPortQueryPerformanceCounter
+title: StorPortQueryPerformanceCounter function
+author: windows-driver-content
+description: The current system performance counter value is queried is returned by the StorPortQueryPerformanceCounter routine.
+old-location: storage\storportqueryperformancecounter.htm
+old-project: storage
+ms.assetid: 6502E3AE-5841-41C9-BEB7-B00620DBF02D
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: StorPortQueryPerformanceCounter routine [Storage Devices], storport/StorPortQueryPerformanceCounter, StorPortQueryPerformanceCounter, storage.storportqueryperformancecounter
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: Any
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Storport.h
+apiname:
+-	StorPortQueryPerformanceCounter
+product: Windows
+targetos: Windows
+req.typenames: STOR_SPINLOCK
+req.product: Windows 10 or later.
 ---
 
 

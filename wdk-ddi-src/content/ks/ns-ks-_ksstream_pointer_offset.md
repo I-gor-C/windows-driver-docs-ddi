@@ -1,41 +1,46 @@
 ---
-UID : NS:ks._KSSTREAM_POINTER_OFFSET
-title : "_KSSTREAM_POINTER_OFFSET"
-author : windows-driver-content
-description : The KSSTREAM_POINTER_OFFSET structure indexes bytes or mappings within a frame.
-old-location : stream\ksstream_pointer_offset.htm
-old-project : stream
-ms.assetid : ccbe77ee-2377-45d9-b8bf-714680c1920a
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : "_KSSTREAM_POINTER_OFFSET, avstruct_e210364b-520e-4d21-98ea-e22f5468e911.xml, *PKSSTREAM_POINTER_OFFSET, KSSTREAM_POINTER_OFFSET structure [Streaming Media Devices], KSSTREAM_POINTER_OFFSET, stream.ksstream_pointer_offset, PKSSTREAM_POINTER_OFFSET structure pointer [Streaming Media Devices], ks/KSSTREAM_POINTER_OFFSET, ks/PKSSTREAM_POINTER_OFFSET, PKSSTREAM_POINTER_OFFSET"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and in Microsoft DirectX 8.0 and later versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KSSTREAM_POINTER_OFFSET, *PKSSTREAM_POINTER_OFFSET
+UID: NS:ks._KSSTREAM_POINTER_OFFSET
+title: "_KSSTREAM_POINTER_OFFSET"
+author: windows-driver-content
+description: The KSSTREAM_POINTER_OFFSET structure indexes bytes or mappings within a frame.
+old-location: stream\ksstream_pointer_offset.htm
+old-project: stream
+ms.assetid: ccbe77ee-2377-45d9-b8bf-714680c1920a
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: "_KSSTREAM_POINTER_OFFSET, avstruct_e210364b-520e-4d21-98ea-e22f5468e911.xml, *PKSSTREAM_POINTER_OFFSET, KSSTREAM_POINTER_OFFSET structure [Streaming Media Devices], KSSTREAM_POINTER_OFFSET, stream.ksstream_pointer_offset, PKSSTREAM_POINTER_OFFSET structure pointer [Streaming Media Devices], ks/KSSTREAM_POINTER_OFFSET, ks/PKSSTREAM_POINTER_OFFSET, PKSSTREAM_POINTER_OFFSET"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and in Microsoft DirectX 8.0 and later versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	KSSTREAM_POINTER_OFFSET
+product: Windows
+targetos: Windows
+req.typenames: KSSTREAM_POINTER_OFFSET, *PKSSTREAM_POINTER_OFFSET
 ---
 
 # _KSSTREAM_POINTER_OFFSET structure

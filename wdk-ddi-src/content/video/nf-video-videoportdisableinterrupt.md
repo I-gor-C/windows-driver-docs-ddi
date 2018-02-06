@@ -1,42 +1,47 @@
 ---
-UID : NF:video.VideoPortDisableInterrupt
-title : VideoPortDisableInterrupt function
-author : windows-driver-content
-description : The VideoPortDisableInterrupt function is obsolete and should not be called.The VideoPortDisableInterrupt function disables interrupts from a video adapter.
-old-location : display\videoportdisableinterrupt.htm
-old-project : display
-ms.assetid : 4a2be8af-e393-4c7f-9377-cb2842778104
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : VideoPortDisableInterrupt function [Display Devices], VideoPortDisableInterrupt, display.videoportdisableinterrupt, video/VideoPortDisableInterrupt, VideoPort_Functions_b01a5ae8-7e44-4ac8-9e11-ee266f34a4da.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows 2000 and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Videoprt.lib
-req.dll : Videoprt.sys
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_PORT_SERVICES
-req.product : Windows 10 or later.
+UID: NF:video.VideoPortDisableInterrupt
+title: VideoPortDisableInterrupt function
+author: windows-driver-content
+description: The VideoPortDisableInterrupt function is obsolete and should not be called.The VideoPortDisableInterrupt function disables interrupts from a video adapter.
+old-location: display\videoportdisableinterrupt.htm
+old-project: display
+ms.assetid: 4a2be8af-e393-4c7f-9377-cb2842778104
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: VideoPortDisableInterrupt function [Display Devices], VideoPortDisableInterrupt, display.videoportdisableinterrupt, video/VideoPortDisableInterrupt, VideoPort_Functions_b01a5ae8-7e44-4ac8-9e11-ee266f34a4da.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows 2000 and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Videoprt.lib
+req.dll: Videoprt.sys
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Videoprt.sys
+apiname:
+-	VideoPortDisableInterrupt
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_PORT_SERVICES
+req.product: Windows 10 or later.
 ---
 
 

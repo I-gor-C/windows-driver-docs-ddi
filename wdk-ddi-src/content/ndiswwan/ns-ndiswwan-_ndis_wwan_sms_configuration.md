@@ -1,41 +1,46 @@
 ---
-UID : NS:ndiswwan._NDIS_WWAN_SMS_CONFIGURATION
-title : "_NDIS_WWAN_SMS_CONFIGURATION"
-author : windows-driver-content
-description : The NDIS_WWAN_SMS_CONFIGURATION structure represents the SMS configuration of the MB device.
-old-location : netvista\ndis_wwan_sms_configuration.htm
-old-project : netvista
-ms.assetid : 77d62078-7421-40c7-b743-fbc09b0eb5f9
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : ndiswwan/NDIS_WWAN_SMS_CONFIGURATION, _NDIS_WWAN_SMS_CONFIGURATION, *PNDIS_WWAN_SMS_CONFIGURATION, NDIS_WWAN_SMS_CONFIGURATION, netvista.ndis_wwan_sms_configuration, ndiswwan/PNDIS_WWAN_SMS_CONFIGURATION, NDIS_WWAN_SMS_CONFIGURATION structure [Network Drivers Starting with Windows Vista], PNDIS_WWAN_SMS_CONFIGURATION structure pointer [Network Drivers Starting with Windows Vista], WwanRef_29c93c56-0878-421c-a690-aa5d3ba2e64a.xml, PNDIS_WWAN_SMS_CONFIGURATION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndiswwan.h
-req.include-header : Ndiswwan.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_WWAN_SMS_CONFIGURATION, *PNDIS_WWAN_SMS_CONFIGURATION
+UID: NS:ndiswwan._NDIS_WWAN_SMS_CONFIGURATION
+title: "_NDIS_WWAN_SMS_CONFIGURATION"
+author: windows-driver-content
+description: The NDIS_WWAN_SMS_CONFIGURATION structure represents the SMS configuration of the MB device.
+old-location: netvista\ndis_wwan_sms_configuration.htm
+old-project: netvista
+ms.assetid: 77d62078-7421-40c7-b743-fbc09b0eb5f9
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: ndiswwan/NDIS_WWAN_SMS_CONFIGURATION, _NDIS_WWAN_SMS_CONFIGURATION, *PNDIS_WWAN_SMS_CONFIGURATION, NDIS_WWAN_SMS_CONFIGURATION, netvista.ndis_wwan_sms_configuration, ndiswwan/PNDIS_WWAN_SMS_CONFIGURATION, NDIS_WWAN_SMS_CONFIGURATION structure [Network Drivers Starting with Windows Vista], PNDIS_WWAN_SMS_CONFIGURATION structure pointer [Network Drivers Starting with Windows Vista], WwanRef_29c93c56-0878-421c-a690-aa5d3ba2e64a.xml, PNDIS_WWAN_SMS_CONFIGURATION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndiswwan.h
+req.include-header: Ndiswwan.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndiswwan.h
+apiname:
+-	NDIS_WWAN_SMS_CONFIGURATION
+product: Windows
+targetos: Windows
+req.typenames: NDIS_WWAN_SMS_CONFIGURATION, *PNDIS_WWAN_SMS_CONFIGURATION
 ---
 
 # _NDIS_WWAN_SMS_CONFIGURATION structure

@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.KSPROPERTY_TUNER_STANDARD_S
-title : KSPROPERTY_TUNER_STANDARD_S
-author : windows-driver-content
-description : The KSPROPERTY_TUNER_STANDARD_S structure describe the standard of a TV tuner device, such as PAL, NTSC or SECAM.
-old-location : stream\ksproperty_tuner_standard_s.htm
-old-project : stream
-ms.assetid : 3eea8ee2-1ad5-4e00-b0c3-0710b58a2518
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : vidcapstruct_b7568a5f-0825-495b-97ff-c8cee17ab8d3.xml, PKSPROPERTY_TUNER_STANDARD_S structure pointer [Streaming Media Devices], stream.ksproperty_tuner_standard_s, KSPROPERTY_TUNER_STANDARD_S structure [Streaming Media Devices], ksmedia/KSPROPERTY_TUNER_STANDARD_S, PKSPROPERTY_TUNER_STANDARD_S, *PKSPROPERTY_TUNER_STANDARD_S, ksmedia/PKSPROPERTY_TUNER_STANDARD_S, KSPROPERTY_TUNER_STANDARD_S
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKSPROPERTY_TUNER_STANDARD_S, KSPROPERTY_TUNER_STANDARD_S"
+UID: NS:ksmedia.KSPROPERTY_TUNER_STANDARD_S
+title: KSPROPERTY_TUNER_STANDARD_S
+author: windows-driver-content
+description: The KSPROPERTY_TUNER_STANDARD_S structure describe the standard of a TV tuner device, such as PAL, NTSC or SECAM.
+old-location: stream\ksproperty_tuner_standard_s.htm
+old-project: stream
+ms.assetid: 3eea8ee2-1ad5-4e00-b0c3-0710b58a2518
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: vidcapstruct_b7568a5f-0825-495b-97ff-c8cee17ab8d3.xml, PKSPROPERTY_TUNER_STANDARD_S structure pointer [Streaming Media Devices], stream.ksproperty_tuner_standard_s, KSPROPERTY_TUNER_STANDARD_S structure [Streaming Media Devices], ksmedia/KSPROPERTY_TUNER_STANDARD_S, PKSPROPERTY_TUNER_STANDARD_S, *PKSPROPERTY_TUNER_STANDARD_S, ksmedia/PKSPROPERTY_TUNER_STANDARD_S, KSPROPERTY_TUNER_STANDARD_S
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	KSPROPERTY_TUNER_STANDARD_S
+product: Windows
+targetos: Windows
+req.typenames: "*PKSPROPERTY_TUNER_STANDARD_S, KSPROPERTY_TUNER_STANDARD_S"
 ---
 
 # KSPROPERTY_TUNER_STANDARD_S structure

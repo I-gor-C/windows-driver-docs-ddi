@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.KeQueryMaximumProcessorCountEx
-title : KeQueryMaximumProcessorCountEx function
-author : windows-driver-content
-description : The KeQueryMaximumProcessorCountEx routine returns the maximum number of logical processors in a specified group in a multiprocessor system.
-old-location : kernel\kequerymaximumprocessorcountex.htm
-old-project : kernel
-ms.assetid : 6ccc0f8c-d7b7-4043-8580-d35345d884cc
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : KeQueryMaximumProcessorCountEx, k105_594dbccc-80ed-4d33-a8ed-a6df6bfdfc09.xml, kernel.kequerymaximumprocessorcountex, KeQueryMaximumProcessorCountEx routine [Kernel-Mode Driver Architecture], wdm/KeQueryMaximumProcessorCountEx
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 7 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.KeQueryMaximumProcessorCountEx
+title: KeQueryMaximumProcessorCountEx function
+author: windows-driver-content
+description: The KeQueryMaximumProcessorCountEx routine returns the maximum number of logical processors in a specified group in a multiprocessor system.
+old-location: kernel\kequerymaximumprocessorcountex.htm
+old-project: kernel
+ms.assetid: 6ccc0f8c-d7b7-4043-8580-d35345d884cc
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: KeQueryMaximumProcessorCountEx, k105_594dbccc-80ed-4d33-a8ed-a6df6bfdfc09.xml, kernel.kequerymaximumprocessorcountex, KeQueryMaximumProcessorCountEx routine [Kernel-Mode Driver Architecture], wdm/KeQueryMaximumProcessorCountEx
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 7 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	KeQueryMaximumProcessorCountEx
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

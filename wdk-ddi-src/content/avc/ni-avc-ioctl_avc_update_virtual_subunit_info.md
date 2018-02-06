@@ -1,41 +1,46 @@
 ---
-UID : NI:avc.IOCTL_AVC_UPDATE_VIRTUAL_SUBUNIT_INFO
-title : IOCTL_AVC_UPDATE_VIRTUAL_SUBUNIT_INFO
-author : windows-driver-content
-description : The IOCTL_AVC_UPDATE_VIRTUAL_SUBUNIT_INFO I/O control code controls the enumeration of virtual subunits.
-old-location : stream\ioctl_avc_update_virtual_subunit_info.htm
-old-project : stream
-ms.assetid : 2a66ea7f-bfa1-4c51-a93d-18043fc49066
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.ioctl_avc_update_virtual_subunit_info, IOCTL_AVC_UPDATE_VIRTUAL_SUBUNIT_INFO control code [Streaming Media Devices], IOCTL_AVC_UPDATE_VIRTUAL_SUBUNIT_INFO, avc/IOCTL_AVC_UPDATE_VIRTUAL_SUBUNIT_INFO, avcref_70967704-87c3-4d0b-856f-e031ae0011cc.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : avc.h
-req.include-header : Avc.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : AVC_FUNCTION
+UID: NI:avc.IOCTL_AVC_UPDATE_VIRTUAL_SUBUNIT_INFO
+title: IOCTL_AVC_UPDATE_VIRTUAL_SUBUNIT_INFO
+author: windows-driver-content
+description: The IOCTL_AVC_UPDATE_VIRTUAL_SUBUNIT_INFO I/O control code controls the enumeration of virtual subunits.
+old-location: stream\ioctl_avc_update_virtual_subunit_info.htm
+old-project: stream
+ms.assetid: 2a66ea7f-bfa1-4c51-a93d-18043fc49066
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.ioctl_avc_update_virtual_subunit_info, IOCTL_AVC_UPDATE_VIRTUAL_SUBUNIT_INFO control code [Streaming Media Devices], IOCTL_AVC_UPDATE_VIRTUAL_SUBUNIT_INFO, avc/IOCTL_AVC_UPDATE_VIRTUAL_SUBUNIT_INFO, avcref_70967704-87c3-4d0b-856f-e031ae0011cc.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: avc.h
+req.include-header: Avc.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	avc.h
+apiname:
+-	IOCTL_AVC_UPDATE_VIRTUAL_SUBUNIT_INFO
+product: Windows
+targetos: Windows
+req.typenames: AVC_FUNCTION
 ---
 
 # IOCTL_AVC_UPDATE_VIRTUAL_SUBUNIT_INFO IOCTL

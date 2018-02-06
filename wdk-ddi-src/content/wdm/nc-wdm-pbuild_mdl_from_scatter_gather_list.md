@@ -1,42 +1,47 @@
 ---
-UID : NC:wdm.PBUILD_MDL_FROM_SCATTER_GATHER_LIST
-title : PBUILD_MDL_FROM_SCATTER_GATHER_LIST
-author : windows-driver-content
-description : The BuildMdlFromScatterGatherList routine builds an MDL from a scatter/gather list allocated by the system.Note  This routine is reserved for system use.
-old-location : kernel\buildmdlfromscattergatherlist.htm
-old-project : kernel
-ms.assetid : 2bf190a3-cc42-42b4-b687-cd66021e66c2
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.buildmdlfromscattergatherlist, BuildMdlFromScatterGatherList, BuildMdlFromScatterGatherList callback function [Kernel-Mode Driver Architecture], BuildMdlFromScatterGatherList, PBUILD_MDL_FROM_SCATTER_GATHER_LIST, PBUILD_MDL_FROM_SCATTER_GATHER_LIST, wdm/BuildMdlFromScatterGatherList, kdma_8a1b5bc2-b0ff-41ca-b352-647a0e7b4a79.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdm.h
-req.include-header : Wdm.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows XP and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : IrqlDispatch
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
-req.product : Windows 10 or later.
+UID: NC:wdm.PBUILD_MDL_FROM_SCATTER_GATHER_LIST
+title: PBUILD_MDL_FROM_SCATTER_GATHER_LIST
+author: windows-driver-content
+description: The BuildMdlFromScatterGatherList routine builds an MDL from a scatter/gather list allocated by the system.Note  This routine is reserved for system use.
+old-location: kernel\buildmdlfromscattergatherlist.htm
+old-project: kernel
+ms.assetid: 2bf190a3-cc42-42b4-b687-cd66021e66c2
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.buildmdlfromscattergatherlist, BuildMdlFromScatterGatherList, BuildMdlFromScatterGatherList callback function [Kernel-Mode Driver Architecture], BuildMdlFromScatterGatherList, PBUILD_MDL_FROM_SCATTER_GATHER_LIST, PBUILD_MDL_FROM_SCATTER_GATHER_LIST, wdm/BuildMdlFromScatterGatherList, kdma_8a1b5bc2-b0ff-41ca-b352-647a0e7b4a79.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdm.h
+req.include-header: Wdm.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows XP and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: IrqlDispatch
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	wdm.h
+apiname:
+-	BuildMdlFromScatterGatherList
+product: Windows
+targetos: Windows
+req.typenames: WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NC:dispmprt.DXGKDDI_I2C_TRANSMIT_DATA_TO_DISPLAY
-title : DXGKDDI_I2C_TRANSMIT_DATA_TO_DISPLAY
-author : windows-driver-content
-description : The DxgkDdiI2CTransmitDataToDisplay function transmits data to an I2C device in a monitor.
-old-location : display\dxgkddii2ctransmitdatatodisplay.htm
-old-project : display
-ms.assetid : 67a08982-5d2f-4cd8-be14-76977fde0aac
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkddii2ctransmitdatatodisplay, DxgkDdiI2CTransmitDataToDisplay callback function [Display Devices], DxgkDdiI2CTransmitDataToDisplay, DXGKDDI_I2C_TRANSMIT_DATA_TO_DISPLAY, DXGKDDI_I2C_TRANSMIT_DATA_TO_DISPLAY, dispmprt/DxgkDdiI2CTransmitDataToDisplay, DmFunctions_6152910a-6f9c-4686-b025-2508bbfdf257.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : dispmprt.h
-req.include-header : Dispmprt.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
+UID: NC:dispmprt.DXGKDDI_I2C_TRANSMIT_DATA_TO_DISPLAY
+title: DXGKDDI_I2C_TRANSMIT_DATA_TO_DISPLAY
+author: windows-driver-content
+description: The DxgkDdiI2CTransmitDataToDisplay function transmits data to an I2C device in a monitor.
+old-location: display\dxgkddii2ctransmitdatatodisplay.htm
+old-project: display
+ms.assetid: 67a08982-5d2f-4cd8-be14-76977fde0aac
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkddii2ctransmitdatatodisplay, DxgkDdiI2CTransmitDataToDisplay callback function [Display Devices], DxgkDdiI2CTransmitDataToDisplay, DXGKDDI_I2C_TRANSMIT_DATA_TO_DISPLAY, DXGKDDI_I2C_TRANSMIT_DATA_TO_DISPLAY, dispmprt/DxgkDdiI2CTransmitDataToDisplay, DmFunctions_6152910a-6f9c-4686-b025-2508bbfdf257.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: dispmprt.h
+req.include-header: Dispmprt.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	dispmprt.h
+apiname:
+-	DxgkDdiI2CTransmitDataToDisplay
+product: Windows
+targetos: Windows
+req.typenames: SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ---
 
 

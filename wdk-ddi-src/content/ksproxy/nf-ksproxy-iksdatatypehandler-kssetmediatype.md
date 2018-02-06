@@ -1,41 +1,46 @@
 ---
-UID : NF:ksproxy.IKsDataTypeHandler.KsSetMediaType
-title : IKsDataTypeHandler::KsSetMediaType method
-author : windows-driver-content
-description : The KsSetMediaType method sets the media type for a data type handler.
-old-location : stream\iksdatatypehandler_kssetmediatype.htm
-old-project : stream
-ms.assetid : b1c97d4f-b305-4c9f-b3fd-06d0ebcb0ed0
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KsSetMediaType method [Streaming Media Devices], ksproxy/IKsDataTypeHandler::KsSetMediaType, KsSetMediaType method [Streaming Media Devices], IKsDataTypeHandler interface, IKsDataTypeHandler::KsSetMediaType, ksproxy_5992cc35-8912-4e1e-8712-ebb6f36f5193.xml, IKsDataTypeHandler, stream.iksdatatypehandler_kssetmediatype, KsSetMediaType, IKsDataTypeHandler interface [Streaming Media Devices], KsSetMediaType method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : ksproxy.h
-req.include-header : Ksproxy.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : ksproxy.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PIPE_STATE
+UID: NF:ksproxy.IKsDataTypeHandler.KsSetMediaType
+title: IKsDataTypeHandler::KsSetMediaType method
+author: windows-driver-content
+description: The KsSetMediaType method sets the media type for a data type handler.
+old-location: stream\iksdatatypehandler_kssetmediatype.htm
+old-project: stream
+ms.assetid: b1c97d4f-b305-4c9f-b3fd-06d0ebcb0ed0
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KsSetMediaType method [Streaming Media Devices], ksproxy/IKsDataTypeHandler::KsSetMediaType, KsSetMediaType method [Streaming Media Devices], IKsDataTypeHandler interface, IKsDataTypeHandler::KsSetMediaType, ksproxy_5992cc35-8912-4e1e-8712-ebb6f36f5193.xml, IKsDataTypeHandler, stream.iksdatatypehandler_kssetmediatype, KsSetMediaType, IKsDataTypeHandler interface [Streaming Media Devices], KsSetMediaType method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: ksproxy.h
+req.include-header: Ksproxy.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: ksproxy.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	ksproxy.h
+apiname:
+-	IKsDataTypeHandler.KsSetMediaType
+product: Windows
+targetos: Windows
+req.typenames: PIPE_STATE
 ---
 
 

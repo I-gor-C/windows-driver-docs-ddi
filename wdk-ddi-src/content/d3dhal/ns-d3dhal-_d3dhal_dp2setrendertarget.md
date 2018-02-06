@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dhal._D3DHAL_DP2SETRENDERTARGET
-title : "_D3DHAL_DP2SETRENDERTARGET"
-author : windows-driver-content
-description : The D3DHAL_DP2SETRENDERTARGET structure is used with the D3DDP2OP_SETRENDERTARGET opcode to map a new rendering target surface and depth buffer in the current context.
-old-location : display\d3dhal_dp2setrendertarget.htm
-old-project : display
-ms.assetid : 0ececf46-23a4-456b-8305-b9cd0ffba4b6
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.d3dhal_dp2setrendertarget, D3DHAL_DP2SETRENDERTARGET structure [Display Devices], LPD3DHAL_DP2SETRENDERTARGET structure pointer [Display Devices], D3DHAL_DP2SETRENDERTARGET, *LPD3DHAL_DP2SETRENDERTARGET, d3dstrct_d3f81bd9-d8fd-4560-b8b3-61af41d4a13b.xml, d3dhal/D3DHAL_DP2SETRENDERTARGET, LPD3DHAL_DP2SETRENDERTARGET, d3dhal/LPD3DHAL_DP2SETRENDERTARGET, _D3DHAL_DP2SETRENDERTARGET
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dhal.h
-req.include-header : D3dhal.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DHAL_DP2SETRENDERTARGET
+UID: NS:d3dhal._D3DHAL_DP2SETRENDERTARGET
+title: "_D3DHAL_DP2SETRENDERTARGET"
+author: windows-driver-content
+description: The D3DHAL_DP2SETRENDERTARGET structure is used with the D3DDP2OP_SETRENDERTARGET opcode to map a new rendering target surface and depth buffer in the current context.
+old-location: display\d3dhal_dp2setrendertarget.htm
+old-project: display
+ms.assetid: 0ececf46-23a4-456b-8305-b9cd0ffba4b6
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.d3dhal_dp2setrendertarget, D3DHAL_DP2SETRENDERTARGET structure [Display Devices], LPD3DHAL_DP2SETRENDERTARGET structure pointer [Display Devices], D3DHAL_DP2SETRENDERTARGET, *LPD3DHAL_DP2SETRENDERTARGET, d3dstrct_d3f81bd9-d8fd-4560-b8b3-61af41d4a13b.xml, d3dhal/D3DHAL_DP2SETRENDERTARGET, LPD3DHAL_DP2SETRENDERTARGET, d3dhal/LPD3DHAL_DP2SETRENDERTARGET, _D3DHAL_DP2SETRENDERTARGET
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dhal.h
+req.include-header: D3dhal.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dhal.h
+apiname:
+-	D3DHAL_DP2SETRENDERTARGET
+product: Windows
+targetos: Windows
+req.typenames: D3DHAL_DP2SETRENDERTARGET
 ---
 
 # _D3DHAL_DP2SETRENDERTARGET structure

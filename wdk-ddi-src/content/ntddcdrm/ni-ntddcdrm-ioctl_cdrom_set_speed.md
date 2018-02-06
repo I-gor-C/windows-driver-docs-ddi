@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddcdrm.IOCTL_CDROM_SET_SPEED
-title : IOCTL_CDROM_SET_SPEED
-author : windows-driver-content
-description : Sets the spindle speed of the CD-ROM drive.
-old-location : storage\ioctl_cdrom_set_speed.htm
-old-project : storage
-ms.assetid : 14acc5f4-1346-4da4-b692-01396cff776e
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_cdrom_set_speed, IOCTL_CDROM_SET_SPEED control code [Storage Devices], IOCTL_CDROM_SET_SPEED, ntddcdrm/IOCTL_CDROM_SET_SPEED, k307_df26ae09-2af1-4290-812a-b0f279112d97.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddcdrm.h
-req.include-header : Ntddcdrm.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WRITE_ROTATION, *PWRITE_ROTATION
+UID: NI:ntddcdrm.IOCTL_CDROM_SET_SPEED
+title: IOCTL_CDROM_SET_SPEED
+author: windows-driver-content
+description: Sets the spindle speed of the CD-ROM drive.
+old-location: storage\ioctl_cdrom_set_speed.htm
+old-project: storage
+ms.assetid: 14acc5f4-1346-4da4-b692-01396cff776e
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_cdrom_set_speed, IOCTL_CDROM_SET_SPEED control code [Storage Devices], IOCTL_CDROM_SET_SPEED, ntddcdrm/IOCTL_CDROM_SET_SPEED, k307_df26ae09-2af1-4290-812a-b0f279112d97.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddcdrm.h
+req.include-header: Ntddcdrm.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddcdrm.h
+apiname:
+-	IOCTL_CDROM_SET_SPEED
+product: Windows
+targetos: Windows
+req.typenames: WRITE_ROTATION, *PWRITE_ROTATION
 ---
 
 # IOCTL_CDROM_SET_SPEED IOCTL

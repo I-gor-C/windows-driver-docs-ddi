@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGKARG_SUBMITCOMMANDVIRTUAL
-title : "_DXGKARG_SUBMITCOMMANDVIRTUAL"
-author : windows-driver-content
-description : DXGKARG_SUBMITCOMMANDVIRTUAL is used to submit a direct memory access (DMA) buffer to a context that supports virtual addressing with the DxgkDdiSubmitCommandVirtualdevice driver interface (DDI).
-old-location : display\dxgkarg_submitcommandvirtual.htm
-old-project : display
-ms.assetid : 7BBB4BEC-82F1-44B9-A0C2-1073517A4116
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : "_DXGKARG_SUBMITCOMMANDVIRTUAL, DXGKARG_SUBMITCOMMANDVIRTUAL, display.dxgkarg_submitcommandvirtual, d3dkmddi/DXGKARG_SUBMITCOMMANDVIRTUAL, DXGKARG_SUBMITCOMMANDVIRTUAL structure [Display Devices]"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGKARG_SUBMITCOMMANDVIRTUAL
+UID: NS:d3dkmddi._DXGKARG_SUBMITCOMMANDVIRTUAL
+title: "_DXGKARG_SUBMITCOMMANDVIRTUAL"
+author: windows-driver-content
+description: DXGKARG_SUBMITCOMMANDVIRTUAL is used to submit a direct memory access (DMA) buffer to a context that supports virtual addressing with the DxgkDdiSubmitCommandVirtualdevice driver interface (DDI).
+old-location: display\dxgkarg_submitcommandvirtual.htm
+old-project: display
+ms.assetid: 7BBB4BEC-82F1-44B9-A0C2-1073517A4116
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: "_DXGKARG_SUBMITCOMMANDVIRTUAL, DXGKARG_SUBMITCOMMANDVIRTUAL, display.dxgkarg_submitcommandvirtual, d3dkmddi/DXGKARG_SUBMITCOMMANDVIRTUAL, DXGKARG_SUBMITCOMMANDVIRTUAL structure [Display Devices]"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DXGKARG_SUBMITCOMMANDVIRTUAL
+product: Windows
+targetos: Windows
+req.typenames: DXGKARG_SUBMITCOMMANDVIRTUAL
 ---
 
 # _DXGKARG_SUBMITCOMMANDVIRTUAL structure

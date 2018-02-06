@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._D3DDDICB_SETPRIORITY
-title : "_D3DDDICB_SETPRIORITY"
-author : windows-driver-content
-description : The D3DDDICB_SETPRIORITY structure describes the priority level to which to set a resource or list of allocations.
-old-location : display\d3dddicb_setpriority.htm
-old-project : display
-ms.assetid : 8d828d7b-2f86-4fe9-864c-9d0ac4b0ed65
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DDDICB_SETPRIORITY structure [Display Devices], D3D_param_Structs_38d8110c-0d63-4409-9576-ef9892dae2b7.xml, _D3DDDICB_SETPRIORITY, d3dumddi/D3DDDICB_SETPRIORITY, display.d3dddicb_setpriority, D3DDDICB_SETPRIORITY
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDICB_SETPRIORITY
+UID: NS:d3dumddi._D3DDDICB_SETPRIORITY
+title: "_D3DDDICB_SETPRIORITY"
+author: windows-driver-content
+description: The D3DDDICB_SETPRIORITY structure describes the priority level to which to set a resource or list of allocations.
+old-location: display\d3dddicb_setpriority.htm
+old-project: display
+ms.assetid: 8d828d7b-2f86-4fe9-864c-9d0ac4b0ed65
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DDDICB_SETPRIORITY structure [Display Devices], D3D_param_Structs_38d8110c-0d63-4409-9576-ef9892dae2b7.xml, _D3DDDICB_SETPRIORITY, d3dumddi/D3DDDICB_SETPRIORITY, display.d3dddicb_setpriority, D3DDDICB_SETPRIORITY
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	D3DDDICB_SETPRIORITY
+product: Windows
+targetos: Windows
+req.typenames: D3DDDICB_SETPRIORITY
 ---
 
 # _D3DDDICB_SETPRIORITY structure

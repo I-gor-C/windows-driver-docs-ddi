@@ -1,41 +1,46 @@
 ---
-UID : NC:ks.PFNKSDEVICESETPOWER
-title : PFNKSDEVICESETPOWER
-author : windows-driver-content
-description : AVStream calls a minidriver's AVStrMiniDeviceSetPower routine when it receives an IRP_MN_SET_POWER.
-old-location : stream\avstrminidevicesetpower.htm
-old-project : stream
-ms.assetid : 40d5eb14-b7bd-42b6-a3f5-fe9e8c5c806e
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.avstrminidevicesetpower, AVStrMiniDeviceSetPower, AVStrMiniDeviceSetPower routine [Streaming Media Devices], AVStrMiniDeviceSetPower, PFNKSDEVICESETPOWER, PFNKSDEVICESETPOWER, ks/AVStrMiniDeviceSetPower, avstclbk_8b833d83-a199-44a9-97b8-c4afc624d6d5.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KEYWORDSELECTOR
+UID: NC:ks.PFNKSDEVICESETPOWER
+title: PFNKSDEVICESETPOWER
+author: windows-driver-content
+description: AVStream calls a minidriver's AVStrMiniDeviceSetPower routine when it receives an IRP_MN_SET_POWER.
+old-location: stream\avstrminidevicesetpower.htm
+old-project: stream
+ms.assetid: 40d5eb14-b7bd-42b6-a3f5-fe9e8c5c806e
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.avstrminidevicesetpower, AVStrMiniDeviceSetPower, AVStrMiniDeviceSetPower routine [Streaming Media Devices], AVStrMiniDeviceSetPower, PFNKSDEVICESETPOWER, PFNKSDEVICESETPOWER, ks/AVStrMiniDeviceSetPower, avstclbk_8b833d83-a199-44a9-97b8-c4afc624d6d5.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	ks.h
+apiname:
+-	AVStrMiniDeviceSetPower
+product: Windows
+targetos: Windows
+req.typenames: KEYWORDSELECTOR
 ---
 
 

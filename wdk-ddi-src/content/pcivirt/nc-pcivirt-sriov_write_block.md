@@ -1,41 +1,46 @@
 ---
-UID : NC:pcivirt.SRIOV_WRITE_BLOCK
-title : SRIOV_WRITE_BLOCK
-author : windows-driver-content
-description : Writes data to the specified configuration block of a PCI Express SR-IOV Virtual Function (VF).
-old-location : pci\sriov_write_block.htm
-old-project : PCI
-ms.assetid : da47d601-2fab-49bb-b669-909a2e5c95c0
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : PCI.sriov_write_block, SriovWriteBlock callback function [Buses], SriovWriteBlock, SRIOV_WRITE_BLOCK, SRIOV_WRITE_BLOCK, pcivirt/SriovWriteBlock, *PSRIOV_WRITE_BLOCK callback function pointer [Buses], *PSRIOV_WRITE_BLOCK
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : pcivirt.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PARCLASS_INFORMATION, *PPARCLASS_INFORMATION
+UID: NC:pcivirt.SRIOV_WRITE_BLOCK
+title: SRIOV_WRITE_BLOCK
+author: windows-driver-content
+description: Writes data to the specified configuration block of a PCI Express SR-IOV Virtual Function (VF).
+old-location: pci\sriov_write_block.htm
+old-project: PCI
+ms.assetid: da47d601-2fab-49bb-b669-909a2e5c95c0
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: PCI.sriov_write_block, SriovWriteBlock callback function [Buses], SriovWriteBlock, SRIOV_WRITE_BLOCK, SRIOV_WRITE_BLOCK, pcivirt/SriovWriteBlock, *PSRIOV_WRITE_BLOCK callback function pointer [Buses], *PSRIOV_WRITE_BLOCK
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: pcivirt.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Pcivirt.h
+apiname:
+-	*PSRIOV_WRITE_BLOCK
+product: Windows
+targetos: Windows
+req.typenames: PARCLASS_INFORMATION, *PPARCLASS_INFORMATION
 ---
 
 

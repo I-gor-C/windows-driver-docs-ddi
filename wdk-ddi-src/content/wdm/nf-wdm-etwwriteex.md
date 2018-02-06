@@ -1,38 +1,38 @@
 ---
-UID : NF:wdm.EtwWriteEx
-title : EtwWriteEx function
-author : windows-driver-content
-description : The EtwWriteEx function is a tracing function for publishing events that support filtering in your kernel-mode driver code.
-old-location : devtest\etwwriteex.htm
-old-project : devtest
-ms.assetid : E2EF929A-61EB-412B-B8E8-D51FD6944B1D
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : EtwWriteEx
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : 
-req.target-type : Universal
-req.target-min-winverclnt : Windows 7
-req.target-min-winversvr : Windows Server 2008 R2
-req.kmdf-ver : 
-req.umdf-ver : 
-req.alt-api : EtwWriteEx
-req.alt-loc : NtosKrnl.exe
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : 
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.EtwWriteEx
+title: EtwWriteEx function
+author: windows-driver-content
+description: The EtwWriteEx function is a tracing function for publishing events that support filtering in your kernel-mode driver code.
+old-location: devtest\etwwriteex.htm
+old-project: devtest
+ms.assetid: E2EF929A-61EB-412B-B8E8-D51FD6944B1D
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: EtwWriteEx
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: 
+req.target-type: Universal
+req.target-min-winverclnt: Windows 7
+req.target-min-winversvr: Windows Server 2008 R2
+req.kmdf-ver: 
+req.umdf-ver: 
+req.alt-api: EtwWriteEx
+req.alt-loc: NtosKrnl.exe
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: 
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

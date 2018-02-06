@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugSymbols3.SetScopeFromStoredEvent
-title : IDebugSymbols3::SetScopeFromStoredEvent method
-author : windows-driver-content
-description : The SetScopeFromStoredEvent method sets the current scope to the scope of the stored event.
-old-location : debugger\setscopefromstoredevent.htm
-old-project : debugger
-ms.assetid : 34c50e32-37c8-4e6a-a666-fce8880cb000
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugSymbols3 interface [Windows Debugging], SetScopeFromStoredEvent method, SetScopeFromStoredEvent method [Windows Debugging], debugger.setscopefromstoredevent, SetScopeFromStoredEvent method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols3::SetScopeFromStoredEvent, IDebugSymbols_710b59d8-620b-479f-bfeb-dd1196cd2dbc.xml, dbgeng/IDebugSymbols3::SetScopeFromStoredEvent, IDebugSymbols3, SetScopeFromStoredEvent
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSymbols3.SetScopeFromStoredEvent
+title: IDebugSymbols3::SetScopeFromStoredEvent method
+author: windows-driver-content
+description: The SetScopeFromStoredEvent method sets the current scope to the scope of the stored event.
+old-location: debugger\setscopefromstoredevent.htm
+old-project: debugger
+ms.assetid: 34c50e32-37c8-4e6a-a666-fce8880cb000
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugSymbols3 interface [Windows Debugging], SetScopeFromStoredEvent method, SetScopeFromStoredEvent method [Windows Debugging], debugger.setscopefromstoredevent, SetScopeFromStoredEvent method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols3::SetScopeFromStoredEvent, IDebugSymbols_710b59d8-620b-479f-bfeb-dd1196cd2dbc.xml, dbgeng/IDebugSymbols3::SetScopeFromStoredEvent, IDebugSymbols3, SetScopeFromStoredEvent
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Dbgeng.h
+apiname:
+-	IDebugSymbols3.SetScopeFromStoredEvent
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

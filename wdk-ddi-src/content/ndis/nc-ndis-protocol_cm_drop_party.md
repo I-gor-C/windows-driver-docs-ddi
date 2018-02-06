@@ -1,41 +1,46 @@
 ---
-UID : NC:ndis.PROTOCOL_CM_DROP_PARTY
-title : PROTOCOL_CM_DROP_PARTY
-author : windows-driver-content
-description : The ProtocolCmDropParty function is required.
-old-location : netvista\protocolcmdropparty.htm
-old-project : netvista
-ms.assetid : be0fce3e-7308-42fa-b63a-4d5cfec7ea6c
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.protocolcmdropparty, ProtocolCmDropParty callback function [Network Drivers Starting with Windows Vista], ProtocolCmDropParty, PROTOCOL_CM_DROP_PARTY, PROTOCOL_CM_DROP_PARTY, ndis/ProtocolCmDropParty, condis_call_manager_ref_cda3b3ab-baf4-43a7-b560-7a717687508e.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see    ProtocolCmDropParty (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    ProtocolCmDropParty (NDIS   5.1)) in Windows XP.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
+UID: NC:ndis.PROTOCOL_CM_DROP_PARTY
+title: PROTOCOL_CM_DROP_PARTY
+author: windows-driver-content
+description: The ProtocolCmDropParty function is required.
+old-location: netvista\protocolcmdropparty.htm
+old-project: netvista
+ms.assetid: be0fce3e-7308-42fa-b63a-4d5cfec7ea6c
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.protocolcmdropparty, ProtocolCmDropParty callback function [Network Drivers Starting with Windows Vista], ProtocolCmDropParty, PROTOCOL_CM_DROP_PARTY, PROTOCOL_CM_DROP_PARTY, ndis/ProtocolCmDropParty, condis_call_manager_ref_cda3b3ab-baf4-43a7-b560-7a717687508e.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    ProtocolCmDropParty (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    ProtocolCmDropParty (NDIS   5.1)) in Windows XP.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ndis.h
+apiname:
+-	ProtocolCmDropParty
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 

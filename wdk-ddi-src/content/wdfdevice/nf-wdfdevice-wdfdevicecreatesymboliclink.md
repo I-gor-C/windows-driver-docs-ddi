@@ -1,42 +1,50 @@
 ---
-UID : NF:wdfdevice.WdfDeviceCreateSymbolicLink
-title : WdfDeviceCreateSymbolicLink function
-author : windows-driver-content
-description : The WdfDeviceCreateSymbolicLink method creates a symbolic link to a specified device.
-old-location : wdf\wdfdevicecreatesymboliclink.htm
-old-project : wdf
-ms.assetid : c22035a2-8ceb-42e9-9d54-8997ce0dd8da
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WdfDeviceCreateSymbolicLink method, wdfdevice/WdfDeviceCreateSymbolicLink, kmdf.wdfdevicecreatesymboliclink, WdfDeviceCreateSymbolicLink, DFDeviceObjectGeneralRef_f970bbdf-21d6-497c-abc1-84456c95dc79.xml, wdf.wdfdevicecreatesymboliclink, PFN_WDFDEVICECREATESYMBOLICLINK
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfdevice.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_STATE_NOTIFICATION_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfdevice.WdfDeviceCreateSymbolicLink
+title: WdfDeviceCreateSymbolicLink function
+author: windows-driver-content
+description: The WdfDeviceCreateSymbolicLink method creates a symbolic link to a specified device.
+old-location: wdf\wdfdevicecreatesymboliclink.htm
+old-project: wdf
+ms.assetid: c22035a2-8ceb-42e9-9d54-8997ce0dd8da
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WdfDeviceCreateSymbolicLink method, wdfdevice/WdfDeviceCreateSymbolicLink, kmdf.wdfdevicecreatesymboliclink, WdfDeviceCreateSymbolicLink, DFDeviceObjectGeneralRef_f970bbdf-21d6-497c-abc1-84456c95dc79.xml, wdf.wdfdevicecreatesymboliclink, PFN_WDFDEVICECREATESYMBOLICLINK
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfdevice.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+-	WUDFx02000.dll
+-	WUDFx02000.dll.dll
+apiname:
+-	WdfDeviceCreateSymbolicLink
+product: Windows
+targetos: Windows
+req.typenames: WDF_STATE_NOTIFICATION_TYPE
+req.product: Windows 10 or later.
 ---
 
 

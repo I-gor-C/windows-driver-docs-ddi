@@ -1,41 +1,46 @@
 ---
-UID : NE:ntifs._FSRTL_CHANGE_BACKING_TYPE
-title : "_FSRTL_CHANGE_BACKING_TYPE"
-author : windows-driver-content
-description : The FSRTL_CHANGE_BACKING_TYPE enumeration specifies the type of cache or control area that a file object designates.
-old-location : ifsk\fsrtl_change_backing_type.htm
-old-project : ifsk
-ms.assetid : 952812f4-5d29-4d1d-ab81-dd3a76a5f04c
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ntifs/PFSRTL_CHANGE_BACKING_TYPE, ntifs/ChangeImageControlArea, ntifs/ChangeDataControlArea, _FSRTL_CHANGE_BACKING_TYPE, PFSRTL_CHANGE_BACKING_TYPE enumeration pointer [Installable File System Drivers], ChangeImageControlArea, FSRTL_CHANGE_BACKING_TYPE, ChangeSharedCacheMap, FSRTL_CHANGE_BACKING_TYPE enumeration [Installable File System Drivers], ntifs/FSRTL_CHANGE_BACKING_TYPE, ChangeDataControlArea, *PFSRTL_CHANGE_BACKING_TYPE, PFSRTL_CHANGE_BACKING_TYPE, ifsk.fsrtl_change_backing_type, ntifs/ChangeSharedCacheMap, contextstructures_f0bf2082-c88d-4f01-8e40-f7259e040ea6.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PFSRTL_CHANGE_BACKING_TYPE, FSRTL_CHANGE_BACKING_TYPE"
+UID: NE:ntifs._FSRTL_CHANGE_BACKING_TYPE
+title: "_FSRTL_CHANGE_BACKING_TYPE"
+author: windows-driver-content
+description: The FSRTL_CHANGE_BACKING_TYPE enumeration specifies the type of cache or control area that a file object designates.
+old-location: ifsk\fsrtl_change_backing_type.htm
+old-project: ifsk
+ms.assetid: 952812f4-5d29-4d1d-ab81-dd3a76a5f04c
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ntifs/PFSRTL_CHANGE_BACKING_TYPE, ntifs/ChangeImageControlArea, ntifs/ChangeDataControlArea, _FSRTL_CHANGE_BACKING_TYPE, PFSRTL_CHANGE_BACKING_TYPE enumeration pointer [Installable File System Drivers], ChangeImageControlArea, FSRTL_CHANGE_BACKING_TYPE, ChangeSharedCacheMap, FSRTL_CHANGE_BACKING_TYPE enumeration [Installable File System Drivers], ntifs/FSRTL_CHANGE_BACKING_TYPE, ChangeDataControlArea, *PFSRTL_CHANGE_BACKING_TYPE, PFSRTL_CHANGE_BACKING_TYPE, ifsk.fsrtl_change_backing_type, ntifs/ChangeSharedCacheMap, contextstructures_f0bf2082-c88d-4f01-8e40-f7259e040ea6.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntifs.h
+apiname:
+-	FSRTL_CHANGE_BACKING_TYPE
+product: Windows
+targetos: Windows
+req.typenames: "*PFSRTL_CHANGE_BACKING_TYPE, FSRTL_CHANGE_BACKING_TYPE"
 ---
 
 # _FSRTL_CHANGE_BACKING_TYPE Enumeration
@@ -53,21 +58,21 @@ typedef enum _FSRTL_CHANGE_BACKING_TYPE {
 ## Constants
 
 <table>
-
-<tr>
-<td>ChangeDataControlArea</td>
-<td>The data control area of the memory manager.</td>
-</tr>
-
-<tr>
-<td>ChangeImageControlArea</td>
-<td>An image control area that belongs to the memory manager.</td>
-</tr>
-
-<tr>
-<td>ChangeSharedCacheMap</td>
-<td>The shared cache map of the cache manager.</td>
-</tr>
+            
+                <tr>
+                    <td>ChangeDataControlArea</td>
+                    <td>The data control area of the memory manager.</td>
+                </tr>
+            
+                <tr>
+                    <td>ChangeImageControlArea</td>
+                    <td>An image control area that belongs to the memory manager.</td>
+                </tr>
+            
+                <tr>
+                    <td>ChangeSharedCacheMap</td>
+                    <td>The shared cache map of the cache manager.</td>
+                </tr>
 </table>
 
 
@@ -76,9 +81,9 @@ typedef enum _FSRTL_CHANGE_BACKING_TYPE {
 | ---- |:---- |
 | **Header** | ntifs.h (include Ntifs.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\ntifs\nf-ntifs-fsrtlchangebackingfileobject.md">FsRtlChangeBackingFileObject</a>
+        <a href="..\ntifs\nf-ntifs-fsrtlchangebackingfileobject.md">FsRtlChangeBackingFileObject</a>
 
  
 

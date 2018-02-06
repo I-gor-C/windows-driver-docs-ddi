@@ -1,42 +1,47 @@
 ---
-UID : NS:sercx._SERCX2_SYSTEM_DMA_TRANSMIT_CONFIG
-title : "_SERCX2_SYSTEM_DMA_TRANSMIT_CONFIG"
-author : windows-driver-content
-description : The SERCX2_SYSTEM_DMA_TRANSMIT_CONFIG structure contains information that version 2 of the serial framework extension (SerCx2) uses to configure a new system-DMA-transmit object.
-old-location : serports\sercx2_system_dma_transmit_config.htm
-old-project : serports
-ms.assetid : AAC70470-B58E-44F1-9CC5-4E0C25539639
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : 2/PSERCX2_SYSTEM_DMA_TRANSMIT_CONFIG, SERCX2_SYSTEM_DMA_TRANSMIT_CONFIG, 2/SERCX2_SYSTEM_DMA_TRANSMIT_CONFIG, *PSERCX2_SYSTEM_DMA_TRANSMIT_CONFIG, PSERCX2_SYSTEM_DMA_TRANSMIT_CONFIG, _SERCX2_SYSTEM_DMA_TRANSMIT_CONFIG, SERCX2_SYSTEM_DMA_TRANSMIT_CONFIG structure [Serial Ports], PSERCX2_SYSTEM_DMA_TRANSMIT_CONFIG structure pointer [Serial Ports], serports.sercx2_system_dma_transmit_config
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : sercx.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with Windows 8.1.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Any IRQL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSERCX2_SYSTEM_DMA_TRANSMIT_CONFIG, SERCX2_SYSTEM_DMA_TRANSMIT_CONFIG"
-req.product : Windows 10 or later.
+UID: NS:sercx._SERCX2_SYSTEM_DMA_TRANSMIT_CONFIG
+title: "_SERCX2_SYSTEM_DMA_TRANSMIT_CONFIG"
+author: windows-driver-content
+description: The SERCX2_SYSTEM_DMA_TRANSMIT_CONFIG structure contains information that version 2 of the serial framework extension (SerCx2) uses to configure a new system-DMA-transmit object.
+old-location: serports\sercx2_system_dma_transmit_config.htm
+old-project: serports
+ms.assetid: AAC70470-B58E-44F1-9CC5-4E0C25539639
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: 2/PSERCX2_SYSTEM_DMA_TRANSMIT_CONFIG, SERCX2_SYSTEM_DMA_TRANSMIT_CONFIG, 2/SERCX2_SYSTEM_DMA_TRANSMIT_CONFIG, *PSERCX2_SYSTEM_DMA_TRANSMIT_CONFIG, PSERCX2_SYSTEM_DMA_TRANSMIT_CONFIG, _SERCX2_SYSTEM_DMA_TRANSMIT_CONFIG, SERCX2_SYSTEM_DMA_TRANSMIT_CONFIG structure [Serial Ports], PSERCX2_SYSTEM_DMA_TRANSMIT_CONFIG structure pointer [Serial Ports], serports.sercx2_system_dma_transmit_config
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: sercx.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows 8.1.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Any IRQL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	2.0\Sercx.h
+apiname:
+-	SERCX2_SYSTEM_DMA_TRANSMIT_CONFIG
+product: Windows
+targetos: Windows
+req.typenames: "*PSERCX2_SYSTEM_DMA_TRANSMIT_CONFIG, SERCX2_SYSTEM_DMA_TRANSMIT_CONFIG"
+req.product: Windows 10 or later.
 ---
 
 # _SERCX2_SYSTEM_DMA_TRANSMIT_CONFIG structure

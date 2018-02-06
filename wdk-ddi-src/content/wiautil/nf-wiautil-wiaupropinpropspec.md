@@ -1,42 +1,47 @@
 ---
-UID : NF:wiautil.wiauPropInPropSpec
-title : wiauPropInPropSpec function
-author : windows-driver-content
-description : The wiauPropInPropSpec function determines whether a specified property specification ID is contained in an array of such values. The function optionally gets the index at which the property specification ID was found.
-old-location : image\wiaupropinpropspec.htm
-old-project : image
-ms.assetid : 5ab82378-ff12-46cc-814b-dc533db15a37
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : wiauPropInPropSpec, wiauFncs_8f694518-d3a5-4636-aae5-046ae519ce0e.xml, wiauPropInPropSpec function [Imaging Devices], image.wiaupropinpropspec, wiautil/wiauPropInPropSpec
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wiautil.h
-req.include-header : Wiautil.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows XP and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SKIP_AMOUNT
-req.product : Windows 10 or later.
+UID: NF:wiautil.wiauPropInPropSpec
+title: wiauPropInPropSpec function
+author: windows-driver-content
+description: The wiauPropInPropSpec function determines whether a specified property specification ID is contained in an array of such values. The function optionally gets the index at which the property specification ID was found.
+old-location: image\wiaupropinpropspec.htm
+old-project: image
+ms.assetid: 5ab82378-ff12-46cc-814b-dc533db15a37
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: wiauPropInPropSpec, wiauFncs_8f694518-d3a5-4636-aae5-046ae519ce0e.xml, wiauPropInPropSpec function [Imaging Devices], image.wiaupropinpropspec, wiautil/wiauPropInPropSpec
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wiautil.h
+req.include-header: Wiautil.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows XP and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wiautil.h
+apiname:
+-	wiauPropInPropSpec
+product: Windows
+targetos: Windows
+req.typenames: SKIP_AMOUNT
+req.product: Windows 10 or later.
 ---
 
 

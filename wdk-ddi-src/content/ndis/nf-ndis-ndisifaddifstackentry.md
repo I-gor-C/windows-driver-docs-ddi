@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisIfAddIfStackEntry
-title : NdisIfAddIfStackEntry function
-author : windows-driver-content
-description : The NdisIfAddIfStackEntry function specifies the ordering of two network interfaces in the NDIS network interface stack.
-old-location : netvista\ndisifaddifstackentry.htm
-old-project : netvista
-ms.assetid : 6927bcdf-e2b5-4a60-8f71-a977f3a1c120
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : net_if_functions_ref_3e652431-fb28-4382-957a-3c532951e847.xml, ndis/NdisIfAddIfStackEntry, netvista.ndisifaddifstackentry, NdisIfAddIfStackEntry function [Network Drivers Starting with Windows Vista], NdisIfAddIfStackEntry
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_Interfaces_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisIfAddIfStackEntry
+title: NdisIfAddIfStackEntry function
+author: windows-driver-content
+description: The NdisIfAddIfStackEntry function specifies the ordering of two network interfaces in the NDIS network interface stack.
+old-location: netvista\ndisifaddifstackentry.htm
+old-project: netvista
+ms.assetid: 6927bcdf-e2b5-4a60-8f71-a977f3a1c120
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: net_if_functions_ref_3e652431-fb28-4382-957a-3c532951e847.xml, ndis/NdisIfAddIfStackEntry, netvista.ndisifaddifstackentry, NdisIfAddIfStackEntry function [Network Drivers Starting with Windows Vista], NdisIfAddIfStackEntry
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_Interfaces_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisIfAddIfStackEntry
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NC:dot11wdi.MINIPORT_WDI_TX_TAL_SEND_COMPLETE
-title : MINIPORT_WDI_TX_TAL_SEND_COMPLETE
-author : windows-driver-content
-description : The MiniportWdiTxTalSendComplete handler function returns ownership of one or more TX frame injected by the TAL back to the TxEngine.
-old-location : netvista\miniportwditxtalsendcomplete.htm
-old-project : netvista
-ms.assetid : 347B069F-76B6-42D5-9613-7D0214C2FEDB
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.miniportwditxtalsendcomplete, MiniportWdiTxTalSendComplete callback function [Network Drivers Starting with Windows Vista], MiniportWdiTxTalSendComplete, MINIPORT_WDI_TX_TAL_SEND_COMPLETE, MINIPORT_WDI_TX_TAL_SEND_COMPLETE, dot11wdi/MiniportWdiTxTalSendComplete
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : dot11wdi.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SYNTH_STATS, *PSYNTH_STATS
+UID: NC:dot11wdi.MINIPORT_WDI_TX_TAL_SEND_COMPLETE
+title: MINIPORT_WDI_TX_TAL_SEND_COMPLETE
+author: windows-driver-content
+description: The MiniportWdiTxTalSendComplete handler function returns ownership of one or more TX frame injected by the TAL back to the TxEngine.
+old-location: netvista\miniportwditxtalsendcomplete.htm
+old-project: netvista
+ms.assetid: 347B069F-76B6-42D5-9613-7D0214C2FEDB
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.miniportwditxtalsendcomplete, MiniportWdiTxTalSendComplete callback function [Network Drivers Starting with Windows Vista], MiniportWdiTxTalSendComplete, MINIPORT_WDI_TX_TAL_SEND_COMPLETE, MINIPORT_WDI_TX_TAL_SEND_COMPLETE, dot11wdi/MiniportWdiTxTalSendComplete
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: dot11wdi.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	dot11wdi.h
+apiname:
+-	MiniportWdiTxTalSendComplete
+product: Windows
+targetos: Windows
+req.typenames: SYNTH_STATS, *PSYNTH_STATS
 ---
 
 

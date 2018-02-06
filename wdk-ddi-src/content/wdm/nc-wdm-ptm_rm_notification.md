@@ -1,42 +1,47 @@
 ---
-UID : NC:wdm.PTM_RM_NOTIFICATION
-title : PTM_RM_NOTIFICATION
-author : windows-driver-content
-description : A resource manager's ResourceManagerNotification callback routine receives and handles transaction notifications.
-old-location : kernel\resourcemanagernotification.htm
-old-project : kernel
-ms.assetid : 86d8632a-be39-46ed-8ec6-f65edb4bb017
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.resourcemanagernotification, (*PTM_RM_NOTIFICATION) callback function [Kernel-Mode Driver Architecture], (*PTM_RM_NOTIFICATION), PTM_RM_NOTIFICATION, PTM_RM_NOTIFICATION, wdm/(*PTM_RM_NOTIFICATION), ktm_ref_f4bc7393-b895-4a03-8eb6-b0a71f26e1d5.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later operating system versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (See Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
-req.product : Windows 10 or later.
+UID: NC:wdm.PTM_RM_NOTIFICATION
+title: PTM_RM_NOTIFICATION
+author: windows-driver-content
+description: A resource manager's ResourceManagerNotification callback routine receives and handles transaction notifications.
+old-location: kernel\resourcemanagernotification.htm
+old-project: kernel
+ms.assetid: 86d8632a-be39-46ed-8ec6-f65edb4bb017
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.resourcemanagernotification, (*PTM_RM_NOTIFICATION) callback function [Kernel-Mode Driver Architecture], (*PTM_RM_NOTIFICATION), PTM_RM_NOTIFICATION, PTM_RM_NOTIFICATION, wdm/(*PTM_RM_NOTIFICATION), ktm_ref_f4bc7393-b895-4a03-8eb6-b0a71f26e1d5.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later operating system versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (See Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Wdm.h
+apiname:
+-	(*PTM_RM_NOTIFICATION)
+product: Windows
+targetos: Windows
+req.typenames: WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+req.product: Windows 10 or later.
 ---
 
 

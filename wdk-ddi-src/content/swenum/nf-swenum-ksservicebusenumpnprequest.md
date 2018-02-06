@@ -1,42 +1,48 @@
 ---
-UID : NF:swenum.KsServiceBusEnumPnpRequest
-title : KsServiceBusEnumPnpRequest function
-author : windows-driver-content
-description : The KsServiceBusEnumPnpRequest function services IRP_MJ_PNP requests on behalf of the demand-load bus enumerator object that was created with KsCreateBusEnumObject.
-old-location : stream\ksservicebusenumpnprequest.htm
-old-project : stream
-ms.assetid : cdf0017f-e8c0-4e95-bea6-8bc2509c090c
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KsServiceBusEnumPnpRequest, stream.ksservicebusenumpnprequest, swenum/KsServiceBusEnumPnpRequest, ksfunc_eb0bfe3e-a401-4941-8b68-a9de970c2b1e.xml, KsServiceBusEnumPnpRequest function [Streaming Media Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : swenum.h
-req.include-header : Swenum.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STREAM_TIME_REFERENCE, *PSTREAM_TIME_REFERENCE
-req.product : Windows 10 or later.
+UID: NF:swenum.KsServiceBusEnumPnpRequest
+title: KsServiceBusEnumPnpRequest function
+author: windows-driver-content
+description: The KsServiceBusEnumPnpRequest function services IRP_MJ_PNP requests on behalf of the demand-load bus enumerator object that was created with KsCreateBusEnumObject.
+old-location: stream\ksservicebusenumpnprequest.htm
+old-project: stream
+ms.assetid: cdf0017f-e8c0-4e95-bea6-8bc2509c090c
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KsServiceBusEnumPnpRequest, stream.ksservicebusenumpnprequest, swenum/KsServiceBusEnumPnpRequest, ksfunc_eb0bfe3e-a401-4941-8b68-a9de970c2b1e.xml, KsServiceBusEnumPnpRequest function [Streaming Media Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: swenum.h
+req.include-header: Swenum.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsServiceBusEnumPnpRequest
+product: Windows
+targetos: Windows
+req.typenames: STREAM_TIME_REFERENCE, *PSTREAM_TIME_REFERENCE
+req.product: Windows 10 or later.
 ---
 
 

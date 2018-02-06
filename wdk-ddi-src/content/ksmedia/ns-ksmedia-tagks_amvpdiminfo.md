@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.tagKS_AMVPDIMINFO
-title : tagKS_AMVPDIMINFO
-author : windows-driver-content
-description : The KS_AMVPDIMINFO structure is used to describe the dimensions of a video port.
-old-location : stream\ks_amvpdiminfo.htm
-old-project : stream
-ms.assetid : 5b8126ee-ba47-4eaf-887a-764e17a20e03
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : dvdref_4c6b6231-a3ef-49a5-8b27-c7ba0062c53a.xml, ksmedia/PKS_AMVPDIMINFO, tagKS_AMVPDIMINFO, KS_AMVPDIMINFO structure [Streaming Media Devices], stream.ks_amvpdiminfo, *PKS_AMVPDIMINFO, ksmedia/KS_AMVPDIMINFO, PKS_AMVPDIMINFO, KS_AMVPDIMINFO, PKS_AMVPDIMINFO structure pointer [Streaming Media Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKS_AMVPDIMINFO, KS_AMVPDIMINFO"
+UID: NS:ksmedia.tagKS_AMVPDIMINFO
+title: tagKS_AMVPDIMINFO
+author: windows-driver-content
+description: The KS_AMVPDIMINFO structure is used to describe the dimensions of a video port.
+old-location: stream\ks_amvpdiminfo.htm
+old-project: stream
+ms.assetid: 5b8126ee-ba47-4eaf-887a-764e17a20e03
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: dvdref_4c6b6231-a3ef-49a5-8b27-c7ba0062c53a.xml, ksmedia/PKS_AMVPDIMINFO, tagKS_AMVPDIMINFO, KS_AMVPDIMINFO structure [Streaming Media Devices], stream.ks_amvpdiminfo, *PKS_AMVPDIMINFO, ksmedia/KS_AMVPDIMINFO, PKS_AMVPDIMINFO, KS_AMVPDIMINFO, PKS_AMVPDIMINFO structure pointer [Streaming Media Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	KS_AMVPDIMINFO
+product: Windows
+targetos: Windows
+req.typenames: "*PKS_AMVPDIMINFO, KS_AMVPDIMINFO"
 ---
 
 # tagKS_AMVPDIMINFO structure

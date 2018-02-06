@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGK_POWER_COMPONENT_FLAGS
-title : "_DXGK_POWER_COMPONENT_FLAGS"
-author : windows-driver-content
-description : Describes state transition information about a power component.
-old-location : display\dxgk_power_component_flags.htm
-old-project : display
-ms.assetid : aa8cce5b-d582-4c5b-99e2-fad1f0e80128
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : "_DXGK_POWER_COMPONENT_FLAGS, DXGK_POWER_COMPONENT_FLAGS structure [Display Devices], d3dkmddi/DXGK_POWER_COMPONENT_FLAGS, DXGK_POWER_COMPONENT_FLAGS, display.dxgk_power_component_flags"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_POWER_COMPONENT_FLAGS
+UID: NS:d3dkmddi._DXGK_POWER_COMPONENT_FLAGS
+title: "_DXGK_POWER_COMPONENT_FLAGS"
+author: windows-driver-content
+description: Describes state transition information about a power component.
+old-location: display\dxgk_power_component_flags.htm
+old-project: display
+ms.assetid: aa8cce5b-d582-4c5b-99e2-fad1f0e80128
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: "_DXGK_POWER_COMPONENT_FLAGS, DXGK_POWER_COMPONENT_FLAGS structure [Display Devices], d3dkmddi/DXGK_POWER_COMPONENT_FLAGS, DXGK_POWER_COMPONENT_FLAGS, display.dxgk_power_component_flags"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	D3dkmddi.h
+apiname:
+-	DXGK_POWER_COMPONENT_FLAGS
+product: Windows
+targetos: Windows
+req.typenames: DXGK_POWER_COMPONENT_FLAGS
 ---
 
 # _DXGK_POWER_COMPONENT_FLAGS structure

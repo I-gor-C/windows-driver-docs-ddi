@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugControl3.GetNumberSupportedProcessorTypes
-title : IDebugControl3::GetNumberSupportedProcessorTypes method
-author : windows-driver-content
-description : The GetNumberSupportedProcessorTypes method returns the number of processor types supported by the engine.
-old-location : debugger\getnumbersupportedprocessortypes.htm
-old-project : debugger
-ms.assetid : 6057fd27-75be-403b-a939-7865de45e031
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugControl_5b3a8335-0e6f-4f83-9549-fa53ce9eb1d5.xml, IDebugControl::GetNumberSupportedProcessorTypes, GetNumberSupportedProcessorTypes method [Windows Debugging], dbgeng/IDebugControl2::GetNumberSupportedProcessorTypes, debugger.getnumbersupportedprocessortypes, IDebugControl3, GetNumberSupportedProcessorTypes method [Windows Debugging], IDebugControl2 interface, IDebugControl2 interface [Windows Debugging], GetNumberSupportedProcessorTypes method, GetNumberSupportedProcessorTypes method [Windows Debugging], IDebugControl interface, GetNumberSupportedProcessorTypes method [Windows Debugging], IDebugControl3 interface, IDebugControl2::GetNumberSupportedProcessorTypes, dbgeng/IDebugControl3::GetNumberSupportedProcessorTypes, IDebugControl3::GetNumberSupportedProcessorTypes, GetNumberSupportedProcessorTypes, dbgeng/IDebugControl::GetNumberSupportedProcessorTypes, IDebugControl3 interface [Windows Debugging], GetNumberSupportedProcessorTypes method, IDebugControl interface [Windows Debugging], GetNumberSupportedProcessorTypes method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl3.GetNumberSupportedProcessorTypes
+title: IDebugControl3::GetNumberSupportedProcessorTypes method
+author: windows-driver-content
+description: The GetNumberSupportedProcessorTypes method returns the number of processor types supported by the engine.
+old-location: debugger\getnumbersupportedprocessortypes.htm
+old-project: debugger
+ms.assetid: 6057fd27-75be-403b-a939-7865de45e031
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugControl_5b3a8335-0e6f-4f83-9549-fa53ce9eb1d5.xml, IDebugControl::GetNumberSupportedProcessorTypes, GetNumberSupportedProcessorTypes method [Windows Debugging], dbgeng/IDebugControl2::GetNumberSupportedProcessorTypes, debugger.getnumbersupportedprocessortypes, IDebugControl3, GetNumberSupportedProcessorTypes method [Windows Debugging], IDebugControl2 interface, IDebugControl2 interface [Windows Debugging], GetNumberSupportedProcessorTypes method, GetNumberSupportedProcessorTypes method [Windows Debugging], IDebugControl interface, GetNumberSupportedProcessorTypes method [Windows Debugging], IDebugControl3 interface, IDebugControl2::GetNumberSupportedProcessorTypes, dbgeng/IDebugControl3::GetNumberSupportedProcessorTypes, IDebugControl3::GetNumberSupportedProcessorTypes, GetNumberSupportedProcessorTypes, dbgeng/IDebugControl::GetNumberSupportedProcessorTypes, IDebugControl3 interface [Windows Debugging], GetNumberSupportedProcessorTypes method, IDebugControl interface [Windows Debugging], GetNumberSupportedProcessorTypes method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl.GetNumberSupportedProcessorTypes
+-	IDebugControl2.GetNumberSupportedProcessorTypes
+-	IDebugControl3.GetNumberSupportedProcessorTypes
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

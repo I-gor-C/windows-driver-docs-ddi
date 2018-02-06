@@ -1,41 +1,49 @@
 ---
-UID : NF:ntstrsafe.RtlStringCbPrintfExA
-title : RtlStringCbPrintfExA function
-author : windows-driver-content
-description : The RtlStringCbPrintfExW and RtlStringCbPrintfExA functions create a byte-counted text string, with formatting that is based on supplied formatting information.
-old-location : kernel\rtlstringcbprintfex.htm
-old-project : kernel
-ms.assetid : 514a5b40-c9ba-4ed1-871d-fd6ffde583a6
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ntstrsafe/RtlStringCbPrintfExA, RtlStringCbPrintfExW, RtlStringCbPrintfEx, STRSAFE_NO_TRUNCATION, STRSAFE_IGNORE_NULLS, kernel.rtlstringcbprintfex, ntstrsafe/RtlStringCbPrintfExW, RtlStringCbPrintfExW function [Kernel-Mode Driver Architecture], STRSAFE_NULL_ON_FAILURE, RtlStringCbPrintfExA, STRSAFE_FILL_ON_FAILURE, safestrings_44a6ae33-3b6e-4de4-893c-4a198dfa75da.xml, STRSAFE_FILL_BEHIND_NULL
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntstrsafe.h
-req.include-header : Ntstrsafe.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available starting with Windows XP with Service Pack 1 (SP1).
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : RtlStringCbPrintfExW (Unicode) and RtlStringCbPrintfExA (ANSI)
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ntstrsafe.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : BATTERY_REPORTING_SCALE, *PBATTERY_REPORTING_SCALE
+UID: NF:ntstrsafe.RtlStringCbPrintfExA
+title: RtlStringCbPrintfExA function
+author: windows-driver-content
+description: The RtlStringCbPrintfExW and RtlStringCbPrintfExA functions create a byte-counted text string, with formatting that is based on supplied formatting information.
+old-location: kernel\rtlstringcbprintfex.htm
+old-project: kernel
+ms.assetid: 514a5b40-c9ba-4ed1-871d-fd6ffde583a6
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ntstrsafe/RtlStringCbPrintfExA, RtlStringCbPrintfExW, RtlStringCbPrintfEx, STRSAFE_NO_TRUNCATION, STRSAFE_IGNORE_NULLS, kernel.rtlstringcbprintfex, ntstrsafe/RtlStringCbPrintfExW, RtlStringCbPrintfExW function [Kernel-Mode Driver Architecture], STRSAFE_NULL_ON_FAILURE, RtlStringCbPrintfExA, STRSAFE_FILL_ON_FAILURE, safestrings_44a6ae33-3b6e-4de4-893c-4a198dfa75da.xml, STRSAFE_FILL_BEHIND_NULL
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntstrsafe.h
+req.include-header: Ntstrsafe.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available starting with Windows XP with Service Pack 1 (SP1).
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: RtlStringCbPrintfExW (Unicode) and RtlStringCbPrintfExA (ANSI)
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ntstrsafe.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ntstrsafe.lib
+-	Ntstrsafe.dll
+apiname:
+-	RtlStringCbPrintfExW
+-	RtlStringCbPrintfExA
+-	RtlStringCbPrintfExW
+product: Windows
+targetos: Windows
+req.typenames: BATTERY_REPORTING_SCALE, *PBATTERY_REPORTING_SCALE
 ---
 
 

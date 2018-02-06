@@ -1,41 +1,47 @@
 ---
-UID : NF:ndischimney.NdisInvalidateOffload
-title : NdisInvalidateOffload function
-author : windows-driver-content
-description : A protocol or intermediate driver calls the NdisInvalidateOffload function to invalidate previously offloaded TCP chimney state objects.
-old-location : netvista\ndisinvalidateoffload.htm
-old-project : netvista
-ms.assetid : d9cb2724-cf14-4814-8a19-1237e0862b1a
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : ndischimney/NdisInvalidateOffload, NdisInvalidateOffload, tcp_chim_ndis_func_f9049fdc-87ff-467c-9427-d42876e16aa3.xml, netvista.ndisinvalidateoffload, NdisInvalidateOffload function [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndischimney.h
-req.include-header : Ndischimney.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PD_BUFFER_VIRTUAL_SUBNET_INFO
+UID: NF:ndischimney.NdisInvalidateOffload
+title: NdisInvalidateOffload function
+author: windows-driver-content
+description: A protocol or intermediate driver calls the NdisInvalidateOffload function to invalidate previously offloaded TCP chimney state objects.
+old-location: netvista\ndisinvalidateoffload.htm
+old-project: netvista
+ms.assetid: d9cb2724-cf14-4814-8a19-1237e0862b1a
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: ndischimney/NdisInvalidateOffload, NdisInvalidateOffload, tcp_chim_ndis_func_f9049fdc-87ff-467c-9427-d42876e16aa3.xml, netvista.ndisinvalidateoffload, NdisInvalidateOffload function [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndischimney.h
+req.include-header: Ndischimney.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisInvalidateOffload
+product: Windows
+targetos: Windows
+req.typenames: PD_BUFFER_VIRTUAL_SUBNET_INFO
 ---
 
 

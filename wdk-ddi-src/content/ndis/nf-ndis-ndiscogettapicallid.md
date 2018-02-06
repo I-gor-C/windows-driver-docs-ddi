@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisCoGetTapiCallId
-title : NdisCoGetTapiCallId function
-author : windows-driver-content
-description : NdisCoGetTapiCallId retrieves a string that TAPI applications can use to identify a particular NDIS virtual connection (VC).
-old-location : netvista\ndiscogettapicallid.htm
-old-project : netvista
-ms.assetid : 3cb47545-177f-46ef-aff6-33ad8c9a6974
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : condis_protocol_ref_97e82564-7f8b-42ba-9eda-75842f326c52.xml, netvista.ndiscogettapicallid, ndis/NdisCoGetTapiCallId, NdisCoGetTapiCallId, NdisCoGetTapiCallId function [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisCoGetTapiCallId (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisCoGetTapiCallId (NDIS   5.1)) in Windows XP.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_Connection_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : DISPATCH_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisCoGetTapiCallId
+title: NdisCoGetTapiCallId function
+author: windows-driver-content
+description: NdisCoGetTapiCallId retrieves a string that TAPI applications can use to identify a particular NDIS virtual connection (VC).
+old-location: netvista\ndiscogettapicallid.htm
+old-project: netvista
+ms.assetid: 3cb47545-177f-46ef-aff6-33ad8c9a6974
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: condis_protocol_ref_97e82564-7f8b-42ba-9eda-75842f326c52.xml, netvista.ndiscogettapicallid, ndis/NdisCoGetTapiCallId, NdisCoGetTapiCallId, NdisCoGetTapiCallId function [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisCoGetTapiCallId (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisCoGetTapiCallId (NDIS   5.1)) in Windows XP.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_Connection_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: DISPATCH_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisCoGetTapiCallId
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

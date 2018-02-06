@@ -1,42 +1,47 @@
 ---
-UID : NF:winsplp.UpdatePrintDeviceObject
-title : UpdatePrintDeviceObject function
-author : windows-driver-content
-description : The UpdatePrintDeviceObject function updates the properties of a device object that is in the print provider queue.
-old-location : print\updateprintdeviceobject.htm
-old-project : print
-ms.assetid : 52E8F8BF-0362-4BA9-BABD-7B009B3FFA7F
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : print.updateprintdeviceobject, UpdatePrintDeviceObject function [Print Devices], UpdatePrintDeviceObject, winsplp/UpdatePrintDeviceObject
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : winsplp.h
-req.include-header : Winspool.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : WinSpool.lib
-req.dll : WinSpool.drv
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NOTIFICATION_CONFIG_FLAGS
-req.product : Windows 10 or later.
+UID: NF:winsplp.UpdatePrintDeviceObject
+title: UpdatePrintDeviceObject function
+author: windows-driver-content
+description: The UpdatePrintDeviceObject function updates the properties of a device object that is in the print provider queue.
+old-location: print\updateprintdeviceobject.htm
+old-project: print
+ms.assetid: 52E8F8BF-0362-4BA9-BABD-7B009B3FFA7F
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: print.updateprintdeviceobject, UpdatePrintDeviceObject function [Print Devices], UpdatePrintDeviceObject, winsplp/UpdatePrintDeviceObject
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: winsplp.h
+req.include-header: Winspool.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: WinSpool.lib
+req.dll: WinSpool.drv
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	WinSpool.drv
+apiname:
+-	UpdatePrintDeviceObject
+product: Windows
+targetos: Windows
+req.typenames: NOTIFICATION_CONFIG_FLAGS
+req.product: Windows 10 or later.
 ---
 
 

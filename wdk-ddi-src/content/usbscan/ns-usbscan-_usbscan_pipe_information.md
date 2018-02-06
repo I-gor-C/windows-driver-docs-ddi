@@ -1,42 +1,47 @@
 ---
-UID : NS:usbscan._USBSCAN_PIPE_INFORMATION
-title : "_USBSCAN_PIPE_INFORMATION"
-author : windows-driver-content
-description : The USBSCAN_PIPE_INFORMATION structure is used to describe a USB transfer pipe for a still image device. An array of USBSCAN_PIPE_INFORMATION structures is supplied within a USBSCAN_PIPE_CONFIGURATION structure.
-old-location : image\usbscan_pipe_information.htm
-old-project : image
-ms.assetid : a13bec15-67e1-45f9-be90-dee5c555ad64
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : USBSCAN_PIPE_INFORMATION structure [Imaging Devices], *PUSBSCAN_PIPE_INFORMATION, usbscan/USBSCAN_PIPE_INFORMATION, _USBSCAN_PIPE_INFORMATION, PUSBSCAN_PIPE_INFORMATION, image.usbscan_pipe_information, PUSBSCAN_PIPE_INFORMATION structure pointer [Imaging Devices], usbscan/PUSBSCAN_PIPE_INFORMATION, USBSCAN_PIPE_INFORMATION, stifnc_3a31b5a2-4bd9-4e95-b10d-959c6caa8754.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : usbscan.h
-req.include-header : Usbscan.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUSBSCAN_PIPE_INFORMATION, USBSCAN_PIPE_INFORMATION"
-req.product : Windows 10 or later.
+UID: NS:usbscan._USBSCAN_PIPE_INFORMATION
+title: "_USBSCAN_PIPE_INFORMATION"
+author: windows-driver-content
+description: The USBSCAN_PIPE_INFORMATION structure is used to describe a USB transfer pipe for a still image device. An array of USBSCAN_PIPE_INFORMATION structures is supplied within a USBSCAN_PIPE_CONFIGURATION structure.
+old-location: image\usbscan_pipe_information.htm
+old-project: image
+ms.assetid: a13bec15-67e1-45f9-be90-dee5c555ad64
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: USBSCAN_PIPE_INFORMATION structure [Imaging Devices], *PUSBSCAN_PIPE_INFORMATION, usbscan/USBSCAN_PIPE_INFORMATION, _USBSCAN_PIPE_INFORMATION, PUSBSCAN_PIPE_INFORMATION, image.usbscan_pipe_information, PUSBSCAN_PIPE_INFORMATION structure pointer [Imaging Devices], usbscan/PUSBSCAN_PIPE_INFORMATION, USBSCAN_PIPE_INFORMATION, stifnc_3a31b5a2-4bd9-4e95-b10d-959c6caa8754.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: usbscan.h
+req.include-header: Usbscan.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	usbscan.h
+apiname:
+-	USBSCAN_PIPE_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: "*PUSBSCAN_PIPE_INFORMATION, USBSCAN_PIPE_INFORMATION"
+req.product: Windows 10 or later.
 ---
 
 # _USBSCAN_PIPE_INFORMATION structure

@@ -1,41 +1,46 @@
 ---
-UID : NS:ks._KSDEVICE
-title : "_KSDEVICE"
-author : windows-driver-content
-description : The KSDEVICE structure describes a WDM functional device that is managed by AVStream.
-old-location : stream\ksdevice.htm
-old-project : stream
-ms.assetid : 95b80298-a3b4-416b-8744-88873ac30037
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KSDEVICE, ks/KSDEVICE, KSDEVICE structure [Streaming Media Devices], stream.ksdevice, ks/PKSDEVICE, _KSDEVICE, *PKSDEVICE, avstruct_0f140861-d58a-48cf-9bac-679acbd30d02.xml, PKSDEVICE structure pointer [Streaming Media Devices], PKSDEVICE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and in Microsoft DirectX 8.0 and later versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KSDEVICE, *PKSDEVICE
+UID: NS:ks._KSDEVICE
+title: "_KSDEVICE"
+author: windows-driver-content
+description: The KSDEVICE structure describes a WDM functional device that is managed by AVStream.
+old-location: stream\ksdevice.htm
+old-project: stream
+ms.assetid: 95b80298-a3b4-416b-8744-88873ac30037
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KSDEVICE, ks/KSDEVICE, KSDEVICE structure [Streaming Media Devices], stream.ksdevice, ks/PKSDEVICE, _KSDEVICE, *PKSDEVICE, avstruct_0f140861-d58a-48cf-9bac-679acbd30d02.xml, PKSDEVICE structure pointer [Streaming Media Devices], PKSDEVICE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and in Microsoft DirectX 8.0 and later versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	KSDEVICE
+product: Windows
+targetos: Windows
+req.typenames: KSDEVICE, *PKSDEVICE
 ---
 
 # _KSDEVICE structure

@@ -1,41 +1,46 @@
 ---
-UID : NF:ntddk.PshedAllocateMemory
-title : PshedAllocateMemory function
-author : windows-driver-content
-description : The PshedAllocateMemory function allocates a block of memory from the nonpaged pool.
-old-location : whea\pshedallocatememory.htm
-old-project : whea
-ms.assetid : e489601e-b016-4681-97a0-78f42004909f
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : PshedAllocateMemory function [WHEA Drivers and Applications], PshedAllocateMemory, whearef_e18a3aba-ca99-4b65-92de-1c6b8c740e31.xml, whea.pshedallocatememory, ntddk/PshedAllocateMemory
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Pshed.lib
-req.dll : Pshed.dll
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.PshedAllocateMemory
+title: PshedAllocateMemory function
+author: windows-driver-content
+description: The PshedAllocateMemory function allocates a block of memory from the nonpaged pool.
+old-location: whea\pshedallocatememory.htm
+old-project: whea
+ms.assetid: e489601e-b016-4681-97a0-78f42004909f
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: PshedAllocateMemory function [WHEA Drivers and Applications], PshedAllocateMemory, whearef_e18a3aba-ca99-4b65-92de-1c6b8c740e31.xml, whea.pshedallocatememory, ntddk/PshedAllocateMemory
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Pshed.lib
+req.dll: Pshed.dll
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Pshed.dll
+apiname:
+-	PshedAllocateMemory
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

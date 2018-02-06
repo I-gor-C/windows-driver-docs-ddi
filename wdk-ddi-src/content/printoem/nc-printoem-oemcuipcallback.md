@@ -1,42 +1,47 @@
 ---
-UID : NC:printoem.OEMCUIPCALLBACK
-title : OEMCUIPCALLBACK
-author : windows-driver-content
-description : The OEMCUIPCALLBACK function type is used for defining callback functions that are specified by a user interface plug-in's IPrintOemUI::CommonUIProp method. The structure is defined in printoem.h.
-old-location : print\oemcuipcallback.htm
-old-project : print
-ms.assetid : d740bed2-ba3c-4834-8bda-3512ac8da1d5
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : print.oemcuipcallback, OEMCUIPCALLBACK callback function [Print Devices], OEMCUIPCALLBACK, printoem/OEMCUIPCALLBACK, print_unidrv-pscript_ui_e40ce896-2920-4839-99a8-ddc0a616dcad.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : printoem.h
-req.include-header : Printoem.h, Compstui.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PrintSchemaSelectionType
-req.product : Windows 10 or later.
+UID: NC:printoem.OEMCUIPCALLBACK
+title: OEMCUIPCALLBACK
+author: windows-driver-content
+description: The OEMCUIPCALLBACK function type is used for defining callback functions that are specified by a user interface plug-in's IPrintOemUI::CommonUIProp method. The structure is defined in printoem.h.
+old-location: print\oemcuipcallback.htm
+old-project: print
+ms.assetid: d740bed2-ba3c-4834-8bda-3512ac8da1d5
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: print.oemcuipcallback, OEMCUIPCALLBACK callback function [Print Devices], OEMCUIPCALLBACK, printoem/OEMCUIPCALLBACK, print_unidrv-pscript_ui_e40ce896-2920-4839-99a8-ddc0a616dcad.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: printoem.h
+req.include-header: Printoem.h, Compstui.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	printoem.h
+apiname:
+-	OEMCUIPCALLBACK
+product: Windows
+targetos: Windows
+req.typenames: PrintSchemaSelectionType
+req.product: Windows 10 or later.
 ---
 
 

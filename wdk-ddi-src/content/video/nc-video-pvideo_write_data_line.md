@@ -1,42 +1,47 @@
 ---
-UID : NC:video.PVIDEO_WRITE_DATA_LINE
-title : PVIDEO_WRITE_DATA_LINE
-author : windows-driver-content
-description : WriteDataLine sets the I2C serial data line to high or low.
-old-location : display\writedataline.htm
-old-project : display
-ms.assetid : 3f860619-a479-4291-b3f3-ea4d309beee7
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.writedataline, WriteDataLine callback function [Display Devices], WriteDataLine, PVIDEO_WRITE_DATA_LINE, PVIDEO_WRITE_DATA_LINE, video/WriteDataLine, VideoMiniport_Functions_35effeac-fbe1-44b9-905f-111460800d86.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VHF_CONFIG, *PVHF_CONFIG
-req.product : Windows 10 or later.
+UID: NC:video.PVIDEO_WRITE_DATA_LINE
+title: PVIDEO_WRITE_DATA_LINE
+author: windows-driver-content
+description: WriteDataLine sets the I2C serial data line to high or low.
+old-location: display\writedataline.htm
+old-project: display
+ms.assetid: 3f860619-a479-4291-b3f3-ea4d309beee7
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.writedataline, WriteDataLine callback function [Display Devices], WriteDataLine, PVIDEO_WRITE_DATA_LINE, PVIDEO_WRITE_DATA_LINE, video/WriteDataLine, VideoMiniport_Functions_35effeac-fbe1-44b9-905f-111460800d86.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	video.h
+apiname:
+-	WriteDataLine
+product: Windows
+targetos: Windows
+req.typenames: VHF_CONFIG, *PVHF_CONFIG
+req.product: Windows 10 or later.
 ---
 
 

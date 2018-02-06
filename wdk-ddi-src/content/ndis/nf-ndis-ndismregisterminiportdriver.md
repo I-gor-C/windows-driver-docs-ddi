@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisMRegisterMiniportDriver
-title : NdisMRegisterMiniportDriver function
-author : windows-driver-content
-description : A miniport driver calls the NdisMRegisterMiniportDriver function to register MiniportXxx entry points with NDIS as the first step in initialization.
-old-location : netvista\ndismregisterminiportdriver.htm
-old-project : netvista
-ms.assetid : bed68aa8-499d-41fd-997b-a46316913cc8
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NdisMRegisterMiniportDriver, miniport_ndis_functions_ref_d6406d6d-f738-4f65-90af-38038b188cc7.xml, netvista.ndismregisterminiportdriver, NdisMRegisterMiniportDriver function [Network Drivers Starting with Windows Vista], ndis/NdisMRegisterMiniportDriver
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_Miniport_Driver_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisMRegisterMiniportDriver
+title: NdisMRegisterMiniportDriver function
+author: windows-driver-content
+description: A miniport driver calls the NdisMRegisterMiniportDriver function to register MiniportXxx entry points with NDIS as the first step in initialization.
+old-location: netvista\ndismregisterminiportdriver.htm
+old-project: netvista
+ms.assetid: bed68aa8-499d-41fd-997b-a46316913cc8
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NdisMRegisterMiniportDriver, miniport_ndis_functions_ref_d6406d6d-f738-4f65-90af-38038b188cc7.xml, netvista.ndismregisterminiportdriver, NdisMRegisterMiniportDriver function [Network Drivers Starting with Windows Vista], ndis/NdisMRegisterMiniportDriver
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_Miniport_Driver_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisMRegisterMiniportDriver
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

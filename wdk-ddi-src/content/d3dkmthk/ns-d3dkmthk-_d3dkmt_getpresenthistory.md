@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmthk._D3DKMT_GETPRESENTHISTORY
-title : "_D3DKMT_GETPRESENTHISTORY"
-author : windows-driver-content
-description : The D3DKMT_GETPRESENTHISTORY structure describes the state of copying history.
-old-location : display\d3dkmt_getpresenthistory.htm
-old-project : display
-ms.assetid : 6d9b0473-544f-43aa-9358-ec51d84d45d9
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : "_D3DKMT_GETPRESENTHISTORY, display.d3dkmt_getpresenthistory, OpenGL_Structs_966946a8-3611-4c25-a57f-1fc99c2004d0.xml, D3DKMT_GETPRESENTHISTORY, d3dkmthk/D3DKMT_GETPRESENTHISTORY, D3DKMT_GETPRESENTHISTORY structure [Display Devices]"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_GETPRESENTHISTORY
+UID: NS:d3dkmthk._D3DKMT_GETPRESENTHISTORY
+title: "_D3DKMT_GETPRESENTHISTORY"
+author: windows-driver-content
+description: The D3DKMT_GETPRESENTHISTORY structure describes the state of copying history.
+old-location: display\d3dkmt_getpresenthistory.htm
+old-project: display
+ms.assetid: 6d9b0473-544f-43aa-9358-ec51d84d45d9
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: "_D3DKMT_GETPRESENTHISTORY, display.d3dkmt_getpresenthistory, OpenGL_Structs_966946a8-3611-4c25-a57f-1fc99c2004d0.xml, D3DKMT_GETPRESENTHISTORY, d3dkmthk/D3DKMT_GETPRESENTHISTORY, D3DKMT_GETPRESENTHISTORY structure [Display Devices]"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmthk.h
+apiname:
+-	D3DKMT_GETPRESENTHISTORY
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_GETPRESENTHISTORY
 ---
 
 # _D3DKMT_GETPRESENTHISTORY structure

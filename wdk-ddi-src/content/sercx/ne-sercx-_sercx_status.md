@@ -1,42 +1,47 @@
 ---
-UID : NE:sercx._SERCX_STATUS
-title : "_SERCX_STATUS"
-author : windows-driver-content
-description : The SERCX_STATUS enumeration indicates the status of a serial receive or transmit operation.
-old-location : serports\sercx_status.htm
-old-project : serports
-ms.assetid : 7EF129C7-25C3-49D2-8FC5-FFA1C4E77935
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : "_SERCX_STATUS, 1/SerCxStatusCancelled, SerCxStatusTimeout, 1/SERCX_STATUS, SerCxStatusSuccess, serports.sercx_status, SERCX_STATUS enumeration [Serial Ports], SerCxStatusCancelled, SERCX_STATUS, 1/SerCxStatusTimeout, *PSERCX_STATUS, 1/SerCxStatusSuccess"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : sercx.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Called at IRQL <= DISPATCH_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSERCX_STATUS, SERCX_STATUS"
-req.product : Windows 10 or later.
+UID: NE:sercx._SERCX_STATUS
+title: "_SERCX_STATUS"
+author: windows-driver-content
+description: The SERCX_STATUS enumeration indicates the status of a serial receive or transmit operation.
+old-location: serports\sercx_status.htm
+old-project: serports
+ms.assetid: 7EF129C7-25C3-49D2-8FC5-FFA1C4E77935
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: "_SERCX_STATUS, 1/SerCxStatusCancelled, SerCxStatusTimeout, 1/SERCX_STATUS, SerCxStatusSuccess, serports.sercx_status, SERCX_STATUS enumeration [Serial Ports], SerCxStatusCancelled, SERCX_STATUS, 1/SerCxStatusTimeout, *PSERCX_STATUS, 1/SerCxStatusSuccess"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: sercx.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Called at IRQL <= DISPATCH_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	1.0\Sercx.h
+apiname:
+-	SERCX_STATUS
+product: Windows
+targetos: Windows
+req.typenames: "*PSERCX_STATUS, SERCX_STATUS"
+req.product: Windows 10 or later.
 ---
 
 # _SERCX_STATUS Enumeration
@@ -54,26 +59,26 @@ typedef enum _SERCX_STATUS {
 ## Constants
 
 <table>
-
-<tr>
-<td>SerCxStatusCancelled</td>
-<td>The operation was canceled.</td>
-</tr>
-
-<tr>
-<td>SerCxStatusSuccess</td>
-<td>The operation is proceeding successfully.</td>
-</tr>
-
-<tr>
-<td>SerCxStatusTimeout</td>
-<td>The operation timed out. This enumeration value applies only to read interval time-outs for receive operations. For more information, see the description of the <b>ReadIntervalTimeout</b> member in <a href="..\ntddser\ns-ntddser-_serial_timeouts.md">SERIAL_TIMEOUTS</a>.</td>
-</tr>
+            
+                <tr>
+                    <td>SerCxStatusCancelled</td>
+                    <td>The operation was canceled.</td>
+                </tr>
+            
+                <tr>
+                    <td>SerCxStatusSuccess</td>
+                    <td>The operation is proceeding successfully.</td>
+                </tr>
+            
+                <tr>
+                    <td>SerCxStatusTimeout</td>
+                    <td>The operation timed out. This enumeration value applies only to read interval time-outs for receive operations. For more information, see the description of the <b>ReadIntervalTimeout</b> member in <a href="..\ntddser\ns-ntddser-_serial_timeouts.md">SERIAL_TIMEOUTS</a>.</td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-The <a href="..\sercx\nf-sercx-sercxprogressreceive.md">SerCxProgressReceive</a> and <a href="..\sercx\nf-sercx-sercxprogresstransmit.md">SerCxProgressTransmit</a> methods have parameters that are <b>SERCX_STATUS</b> enumeration values.
+        The <a href="..\sercx\nf-sercx-sercxprogressreceive.md">SerCxProgressReceive</a> and <a href="..\sercx\nf-sercx-sercxprogresstransmit.md">SerCxProgressTransmit</a> methods have parameters that are <b>SERCX_STATUS</b> enumeration values.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -81,9 +86,9 @@ The <a href="..\sercx\nf-sercx-sercxprogressreceive.md">SerCxProgressReceive</a>
 | **Windows version** | Supported starting with Windows 8. Supported starting with Windows 8. |
 | **Header** | sercx.h |
 
-## See Also
+    ## See Also
 
-<a href="..\sercx\nf-sercx-sercxprogressreceive.md">SerCxProgressReceive</a>
+        <a href="..\sercx\nf-sercx-sercxprogressreceive.md">SerCxProgressReceive</a>
 
 <a href="..\sercx\nf-sercx-sercxprogresstransmit.md">SerCxProgressTransmit</a>
 

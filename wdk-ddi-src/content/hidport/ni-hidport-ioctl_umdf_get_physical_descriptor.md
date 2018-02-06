@@ -1,41 +1,46 @@
 ---
-UID : NI:hidport.IOCTL_UMDF_GET_PHYSICAL_DESCRIPTOR
-title : IOCTL_UMDF_GET_PHYSICAL_DESCRIPTOR
-author : windows-driver-content
-description : The IOCTL_UMDF_GET_PHYSICAL_DESCRIPTOR control code obtains the physical descriptor of a HIDClass device.
-old-location : hid\ioctl_umdf_get_physical_descriptor.htm
-old-project : hid
-ms.assetid : F5852D3B-FD30-4308-A08E-B7DEA86A35E6
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : hid.ioctl_umdf_get_physical_descriptor, IOCTL_UMDF_GET_PHYSICAL_DESCRIPTOR control code, IOCTL_UMDF_GET_PHYSICAL_DESCRIPTOR, hidport/IOCTL_UMDF_GET_PHYSICAL_DESCRIPTOR, umdf.ioctl_umdf_get_physical_descriptor
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : hidport.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.11
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : USAGE_AND_PAGE, *PUSAGE_AND_PAGE
+UID: NI:hidport.IOCTL_UMDF_GET_PHYSICAL_DESCRIPTOR
+title: IOCTL_UMDF_GET_PHYSICAL_DESCRIPTOR
+author: windows-driver-content
+description: The IOCTL_UMDF_GET_PHYSICAL_DESCRIPTOR control code obtains the physical descriptor of a HIDClass device.
+old-location: hid\ioctl_umdf_get_physical_descriptor.htm
+old-project: hid
+ms.assetid: F5852D3B-FD30-4308-A08E-B7DEA86A35E6
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: hid.ioctl_umdf_get_physical_descriptor, IOCTL_UMDF_GET_PHYSICAL_DESCRIPTOR control code, IOCTL_UMDF_GET_PHYSICAL_DESCRIPTOR, hidport/IOCTL_UMDF_GET_PHYSICAL_DESCRIPTOR, umdf.ioctl_umdf_get_physical_descriptor
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: hidport.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.11
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Hidport.h
+apiname:
+-	IOCTL_UMDF_GET_PHYSICAL_DESCRIPTOR
+product: Windows
+targetos: Windows
+req.typenames: USAGE_AND_PAGE, *PUSAGE_AND_PAGE
 ---
 
 # IOCTL_UMDF_GET_PHYSICAL_DESCRIPTOR IOCTL

@@ -1,42 +1,47 @@
 ---
-UID : NC:vhf.EVT_VHF_CLEANUP
-title : EVT_VHF_CLEANUP
-author : windows-driver-content
-description : The HID source driver implements this event callback to free resources that might the driver allocated to the virtual HID device.
-old-location : hid\evtvhfcleanup.htm
-old-project : hid
-ms.assetid : 1D477E7B-E4EA-46E7-872C-3BEBFBD31702
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : hid.evtvhfcleanup, EvtVhfCleanup callback function [Human Input Devices], EvtVhfCleanup, EVT_VHF_CLEANUP, EVT_VHF_CLEANUP, vhf/EvtVhfCleanup
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : vhf.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : None supported
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR, *PUSB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR
-req.product : Windows 10 or later.
+UID: NC:vhf.EVT_VHF_CLEANUP
+title: EVT_VHF_CLEANUP
+author: windows-driver-content
+description: The HID source driver implements this event callback to free resources that might the driver allocated to the virtual HID device.
+old-location: hid\evtvhfcleanup.htm
+old-project: hid
+ms.assetid: 1D477E7B-E4EA-46E7-872C-3BEBFBD31702
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: hid.evtvhfcleanup, EvtVhfCleanup callback function [Human Input Devices], EvtVhfCleanup, EVT_VHF_CLEANUP, EVT_VHF_CLEANUP, vhf/EvtVhfCleanup
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: vhf.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: None supported
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	vhf.h
+apiname:
+-	EvtVhfCleanup
+product: Windows
+targetos: Windows
+req.typenames: USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR, *PUSB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR
+req.product: Windows 10 or later.
 ---
 
 

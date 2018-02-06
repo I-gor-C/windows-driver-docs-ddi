@@ -1,41 +1,46 @@
 ---
-UID : NS:bthddi._BRB_SCO_GET_CHANNEL_INFO
-title : "_BRB_SCO_GET_CHANNEL_INFO"
-author : windows-driver-content
-description : The _BRB_SCO_GET_CHANNEL_INFO structure describes the settings and statistics of a SCO channel.
-old-location : bltooth\_brb_sco_get_channel_info.htm
-old-project : bltooth
-ms.assetid : 1a7eb79c-5a3e-4977-ba1f-682bbebb0494
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : bth_structs_cf7da00a-9c32-432d-a8a2-7bac58fe17e0.xml, _BRB_SCO_GET_CHANNEL_INFO structure [Bluetooth Devices], _BRB_SCO_GET_CHANNEL_INFO, bltooth._brb_sco_get_channel_info, bthddi/_BRB_SCO_GET_CHANNEL_INFO
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : bthddi.h
-req.include-header : Bthddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Versions:\_Supported in Windows Vista, and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback   function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access   paged memory)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NS:bthddi._BRB_SCO_GET_CHANNEL_INFO
+title: "_BRB_SCO_GET_CHANNEL_INFO"
+author: windows-driver-content
+description: The _BRB_SCO_GET_CHANNEL_INFO structure describes the settings and statistics of a SCO channel.
+old-location: bltooth\_brb_sco_get_channel_info.htm
+old-project: bltooth
+ms.assetid: 1a7eb79c-5a3e-4977-ba1f-682bbebb0494
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: bth_structs_cf7da00a-9c32-432d-a8a2-7bac58fe17e0.xml, _BRB_SCO_GET_CHANNEL_INFO structure [Bluetooth Devices], _BRB_SCO_GET_CHANNEL_INFO, bltooth._brb_sco_get_channel_info, bthddi/_BRB_SCO_GET_CHANNEL_INFO
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: bthddi.h
+req.include-header: Bthddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Versions:\_Supported in Windows Vista, and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback   function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access   paged memory)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	bthddi.h
+apiname:
+-	_BRB_SCO_GET_CHANNEL_INFO
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 # _BRB_SCO_GET_CHANNEL_INFO structure

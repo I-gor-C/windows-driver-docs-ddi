@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.KeGetProcessorNumberFromIndex
-title : KeGetProcessorNumberFromIndex function
-author : windows-driver-content
-description : The KeGetProcessorNumberFromIndex routine converts a systemwide processor index to a group number and a group-relative processor number.
-old-location : kernel\kegetprocessornumberfromindex.htm
-old-project : kernel
-ms.assetid : a6c9a7fa-8fef-4d6d-aab5-e712c49c0144
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : KeGetProcessorNumberFromIndex routine [Kernel-Mode Driver Architecture], KeGetProcessorNumberFromIndex, wdm/KeGetProcessorNumberFromIndex, kernel.kegetprocessornumberfromindex, k105_c0b567bd-4436-4f6a-87a2-86d8b165e2dc.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Ntddk.h, Wdm.h, Ntddk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 7 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.KeGetProcessorNumberFromIndex
+title: KeGetProcessorNumberFromIndex function
+author: windows-driver-content
+description: The KeGetProcessorNumberFromIndex routine converts a systemwide processor index to a group number and a group-relative processor number.
+old-location: kernel\kegetprocessornumberfromindex.htm
+old-project: kernel
+ms.assetid: a6c9a7fa-8fef-4d6d-aab5-e712c49c0144
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: KeGetProcessorNumberFromIndex routine [Kernel-Mode Driver Architecture], KeGetProcessorNumberFromIndex, wdm/KeGetProcessorNumberFromIndex, kernel.kegetprocessornumberfromindex, k105_c0b567bd-4436-4f6a-87a2-86d8b165e2dc.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Ntddk.h, Wdm.h, Ntddk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 7 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	KeGetProcessorNumberFromIndex
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

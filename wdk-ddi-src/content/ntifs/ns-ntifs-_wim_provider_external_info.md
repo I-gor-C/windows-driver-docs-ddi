@@ -1,41 +1,46 @@
 ---
-UID : NS:ntifs._WIM_PROVIDER_EXTERNAL_INFO
-title : "_WIM_PROVIDER_EXTERNAL_INFO"
-author : windows-driver-content
-description : The WIM_PROVIDER_EXTERNAL_INFO structure holds the identifier and status information for the Windows Image File (WIM) external backing provider.
-old-location : ifsk\wim_provider_external_info.htm
-old-project : ifsk
-ms.assetid : CD51FBD6-A589-4135-8BF0-8F0075654A05
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : WIM_PROVIDER_EXTERNAL_INFO, _WIM_PROVIDER_EXTERNAL_INFO, WIM_PROVIDER_EXTERNAL_FLAG_SUSPENDED, ntifs/PWIM_PROVIDER_EXTERNAL_INFO, ifsk.wim_provider_external_info, *PWIM_PROVIDER_EXTERNAL_INFO, PWIM_PROVIDER_EXTERNAL_INFO, PWIM_PROVIDER_EXTERNAL_INFO structure pointer [Installable File System Drivers], ntifs/WIM_PROVIDER_EXTERNAL_INFO, WIM_PROVIDER_EXTERNAL_INFO structure [Installable File System Drivers], WIM_PROVIDER_EXTERNAL_FLAG_NOT_ACTIVE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntifs.h
-req.include-header : Ntifs.h, Fltkernel.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows 8.1 Update.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WIM_PROVIDER_EXTERNAL_INFO, *PWIM_PROVIDER_EXTERNAL_INFO
+UID: NS:ntifs._WIM_PROVIDER_EXTERNAL_INFO
+title: "_WIM_PROVIDER_EXTERNAL_INFO"
+author: windows-driver-content
+description: The WIM_PROVIDER_EXTERNAL_INFO structure holds the identifier and status information for the Windows Image File (WIM) external backing provider.
+old-location: ifsk\wim_provider_external_info.htm
+old-project: ifsk
+ms.assetid: CD51FBD6-A589-4135-8BF0-8F0075654A05
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: WIM_PROVIDER_EXTERNAL_INFO, _WIM_PROVIDER_EXTERNAL_INFO, WIM_PROVIDER_EXTERNAL_FLAG_SUSPENDED, ntifs/PWIM_PROVIDER_EXTERNAL_INFO, ifsk.wim_provider_external_info, *PWIM_PROVIDER_EXTERNAL_INFO, PWIM_PROVIDER_EXTERNAL_INFO, PWIM_PROVIDER_EXTERNAL_INFO structure pointer [Installable File System Drivers], ntifs/WIM_PROVIDER_EXTERNAL_INFO, WIM_PROVIDER_EXTERNAL_INFO structure [Installable File System Drivers], WIM_PROVIDER_EXTERNAL_FLAG_NOT_ACTIVE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntifs.h
+req.include-header: Ntifs.h, Fltkernel.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows 8.1 Update.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntifs.h
+apiname:
+-	WIM_PROVIDER_EXTERNAL_INFO
+product: Windows
+targetos: Windows
+req.typenames: WIM_PROVIDER_EXTERNAL_INFO, *PWIM_PROVIDER_EXTERNAL_INFO
 ---
 
 # _WIM_PROVIDER_EXTERNAL_INFO structure

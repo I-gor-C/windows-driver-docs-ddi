@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dkmddi.DXGKDDI_QUERYCONNECTIONCHANGE
-title : DXGKDDI_QUERYCONNECTIONCHANGE
-author : windows-driver-content
-description : The OS calls this in response to a status change reported through DxgkCbIndicateConnectorChange or when the OutputFlags.ConnectorStatusChanges field indicates that a call to SetTimingsFromVidPn has detected connector status changes.
-old-location : display\dxgkddi_queryconnectionchange.htm
-old-project : display
-ms.assetid : 8C09B692-3439-4ACD-942D-F7A107E2B4DA
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkddi_queryconnectionchange, DXGKDDI_QUERYCONNECTIONCHANGE callback function [Display Devices], DXGKDDI_QUERYCONNECTIONCHANGE, d3dkmddi/DXGKDDI_QUERYCONNECTIONCHANGE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dkmddi.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
+UID: NC:d3dkmddi.DXGKDDI_QUERYCONNECTIONCHANGE
+title: DXGKDDI_QUERYCONNECTIONCHANGE
+author: windows-driver-content
+description: The OS calls this in response to a status change reported through DxgkCbIndicateConnectorChange or when the OutputFlags.ConnectorStatusChanges field indicates that a call to SetTimingsFromVidPn has detected connector status changes.
+old-location: display\dxgkddi_queryconnectionchange.htm
+old-project: display
+ms.assetid: 8C09B692-3439-4ACD-942D-F7A107E2B4DA
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkddi_queryconnectionchange, DXGKDDI_QUERYCONNECTIONCHANGE callback function [Display Devices], DXGKDDI_QUERYCONNECTIONCHANGE, d3dkmddi/DXGKDDI_QUERYCONNECTIONCHANGE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dkmddi.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DXGKDDI_QUERYCONNECTIONCHANGE
+product: Windows
+targetos: Windows
+req.typenames: DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:ntifs._FILE_LINKS_INFORMATION
-title : "_FILE_LINKS_INFORMATION"
-author : windows-driver-content
-description : The FILE_LINKS_INFORMATION structure is used to query NTFS hard links to an existing file.
-old-location : ifsk\file_links_information.htm
-old-project : ifsk
-ms.assetid : adf1d2f3-4395-43d9-8157-e9f246e2bba8
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.file_links_information, PFILE_LINKS_INFORMATION, PFILE_LINKS_INFORMATION structure pointer [Installable File System Drivers], FILE_LINKS_INFORMATION, *PFILE_LINKS_INFORMATION, _FILE_LINKS_INFORMATION, ntifs/FILE_LINKS_INFORMATION, ntifs/PFILE_LINKS_INFORMATION, FILE_LINKS_INFORMATION structure [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntifs.h
-req.include-header : FltKernel.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PFILE_LINKS_INFORMATION, FILE_LINKS_INFORMATION"
+UID: NS:ntifs._FILE_LINKS_INFORMATION
+title: "_FILE_LINKS_INFORMATION"
+author: windows-driver-content
+description: The FILE_LINKS_INFORMATION structure is used to query NTFS hard links to an existing file.
+old-location: ifsk\file_links_information.htm
+old-project: ifsk
+ms.assetid: adf1d2f3-4395-43d9-8157-e9f246e2bba8
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.file_links_information, PFILE_LINKS_INFORMATION, PFILE_LINKS_INFORMATION structure pointer [Installable File System Drivers], FILE_LINKS_INFORMATION, *PFILE_LINKS_INFORMATION, _FILE_LINKS_INFORMATION, ntifs/FILE_LINKS_INFORMATION, ntifs/PFILE_LINKS_INFORMATION, FILE_LINKS_INFORMATION structure [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntifs.h
+req.include-header: FltKernel.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntifs.h
+apiname:
+-	FILE_LINKS_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: "*PFILE_LINKS_INFORMATION, FILE_LINKS_INFORMATION"
 ---
 
 # _FILE_LINKS_INFORMATION structure

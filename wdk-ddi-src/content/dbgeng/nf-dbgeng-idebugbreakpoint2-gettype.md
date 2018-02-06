@@ -1,41 +1,47 @@
 ---
-UID : NF:dbgeng.IDebugBreakpoint2.GetType
-title : IDebugBreakpoint2::GetType method
-author : windows-driver-content
-description : The GetType method returns the type of the breakpoint and the type of the processor that a breakpoint is set for.
-old-location : debugger\gettype.htm
-old-project : debugger
-ms.assetid : c6aa6560-3183-4e3a-a625-80d1c5072af5
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : dbgeng/IDebugBreakpoint::GetType, ComOther_3305c400-f816-463b-a643-4495bf546460.xml, IDebugBreakpoint2::GetType, debugger.gettype, GetType method [Windows Debugging], IDebugBreakpoint2, GetType, GetType method [Windows Debugging], IDebugBreakpoint interface, dbgeng/IDebugBreakpoint2::GetType, IDebugBreakpoint::GetType, GetType method [Windows Debugging], IDebugBreakpoint2 interface, IDebugBreakpoint interface [Windows Debugging], GetType method, IDebugBreakpoint2 interface [Windows Debugging], GetType method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugBreakpoint2.GetType
+title: IDebugBreakpoint2::GetType method
+author: windows-driver-content
+description: The GetType method returns the type of the breakpoint and the type of the processor that a breakpoint is set for.
+old-location: debugger\gettype.htm
+old-project: debugger
+ms.assetid: c6aa6560-3183-4e3a-a625-80d1c5072af5
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: dbgeng/IDebugBreakpoint::GetType, ComOther_3305c400-f816-463b-a643-4495bf546460.xml, IDebugBreakpoint2::GetType, debugger.gettype, GetType method [Windows Debugging], IDebugBreakpoint2, GetType, GetType method [Windows Debugging], IDebugBreakpoint interface, dbgeng/IDebugBreakpoint2::GetType, IDebugBreakpoint::GetType, GetType method [Windows Debugging], IDebugBreakpoint2 interface, IDebugBreakpoint interface [Windows Debugging], GetType method, IDebugBreakpoint2 interface [Windows Debugging], GetType method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugBreakpoint.GetType
+-	IDebugBreakpoint2.GetType
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

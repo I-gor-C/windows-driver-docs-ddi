@@ -1,42 +1,47 @@
 ---
-UID : NF:printerextension.IPrinterPropertyBag.GetBytes
-title : IPrinterPropertyBag::GetBytes method
-author : windows-driver-content
-description : Reads a byte array property.
-old-location : print\iprinterpropertybag_getbytes.htm
-old-project : print
-ms.assetid : F75E182D-90FA-4597-95E0-60A6326CF68D
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : GetBytes method [Print Devices], IPrinterPropertyBag interface, print.iprinterpropertybag_getbytes, IPrinterPropertyBag, GetBytes method [Print Devices], IPrinterPropertyBag interface [Print Devices], GetBytes method, GetBytes, IPrinterPropertyBag::GetBytes, printerextension/IPrinterPropertyBag::GetBytes
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : printerextension.h
-req.include-header : Printerextension.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : printerextension.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PrintSchemaSelectionType
-req.product : Windows 10 or later.
+UID: NF:printerextension.IPrinterPropertyBag.GetBytes
+title: IPrinterPropertyBag::GetBytes method
+author: windows-driver-content
+description: Reads a byte array property.
+old-location: print\iprinterpropertybag_getbytes.htm
+old-project: print
+ms.assetid: F75E182D-90FA-4597-95E0-60A6326CF68D
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: GetBytes method [Print Devices], IPrinterPropertyBag interface, print.iprinterpropertybag_getbytes, IPrinterPropertyBag, GetBytes method [Print Devices], IPrinterPropertyBag interface [Print Devices], GetBytes method, GetBytes, IPrinterPropertyBag::GetBytes, printerextension/IPrinterPropertyBag::GetBytes
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: printerextension.h
+req.include-header: Printerextension.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: printerextension.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Printerextension.h
+apiname:
+-	IPrinterPropertyBag.GetBytes
+product: Windows
+targetos: Windows
+req.typenames: PrintSchemaSelectionType
+req.product: Windows 10 or later.
 ---
 
 

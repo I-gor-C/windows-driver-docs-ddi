@@ -1,42 +1,47 @@
 ---
-UID : NF:upssvc.UPSTurnOff
-title : UPSTurnOff function
-author : windows-driver-content
-description : The UPSTurnOff function turns off the UPS unit's power outlets, after a specified delay time.
-old-location : battery\upsturnoff.htm
-old-project : battery
-ms.assetid : 17ae946a-e57e-48bd-9213-cf47db2cba64
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : UPSTurnOff function [Battery Devices], battery.upsturnoff, UPS_fns_ab585909-7eee-470f-b33f-6045f839ceed.xml, UPSTurnOff, upssvc/UPSTurnOff
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : upssvc.h
-req.include-header : Upssvc.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : UMDETW_ALLOCATION_USAGE
-req.product : Windows 10 or later.
+UID: NF:upssvc.UPSTurnOff
+title: UPSTurnOff function
+author: windows-driver-content
+description: The UPSTurnOff function turns off the UPS unit's power outlets, after a specified delay time.
+old-location: battery\upsturnoff.htm
+old-project: battery
+ms.assetid: 17ae946a-e57e-48bd-9213-cf47db2cba64
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: UPSTurnOff function [Battery Devices], battery.upsturnoff, UPS_fns_ab585909-7eee-470f-b33f-6045f839ceed.xml, UPSTurnOff, upssvc/UPSTurnOff
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: upssvc.h
+req.include-header: Upssvc.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	upssvc.h
+apiname:
+-	UPSTurnOff
+product: Windows
+targetos: Windows
+req.typenames: UMDETW_ALLOCATION_USAGE
+req.product: Windows 10 or later.
 ---
 
 

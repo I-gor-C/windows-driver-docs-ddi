@@ -1,42 +1,47 @@
 ---
-UID : NF:rxce.RxCeSend
-title : RxCeSend function
-author : windows-driver-content
-description : RxCeSend sends a transport service data unit (TSDU) along the specified connection on a virtual circuit.
-old-location : ifsk\rxcesend.htm
-old-project : ifsk
-ms.assetid : bf1b9c63-6fc2-4006-8f9a-d4b50d61d270
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : rxce/RxCeSend, rxref_07c5b21c-253c-4032-a5e8-61c4e71450fb.xml, ifsk.rxcesend, RxCeSend, RxCeSend function [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : rxce.h
-req.include-header : Rxce.h, Tdi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*LPRILWRITEPHONEBOOKENTRYPARAMS, RILWRITEPHONEBOOKENTRYPARAMS"
-req.product : Windows 10 or later.
+UID: NF:rxce.RxCeSend
+title: RxCeSend function
+author: windows-driver-content
+description: RxCeSend sends a transport service data unit (TSDU) along the specified connection on a virtual circuit.
+old-location: ifsk\rxcesend.htm
+old-project: ifsk
+ms.assetid: bf1b9c63-6fc2-4006-8f9a-d4b50d61d270
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: rxce/RxCeSend, rxref_07c5b21c-253c-4032-a5e8-61c4e71450fb.xml, ifsk.rxcesend, RxCeSend, RxCeSend function [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: rxce.h
+req.include-header: Rxce.h, Tdi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	rxce.h
+apiname:
+-	RxCeSend
+product: Windows
+targetos: Windows
+req.typenames: "*LPRILWRITEPHONEBOOKENTRYPARAMS, RILWRITEPHONEBOOKENTRYPARAMS"
+req.product: Windows 10 or later.
 ---
 
 

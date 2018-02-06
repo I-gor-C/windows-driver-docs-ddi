@@ -1,42 +1,46 @@
 ---
-UID : NF:bidispl.IBidiRequest.GetResult
-title : IBidiRequest::GetResult method
-author : windows-driver-content
-description : The IBidiRequest::GetResult method tells whether the bidi request was successful.
-old-location : print\ibidirequest_ibidirequest__getresult.htm
-old-project : print
-ms.assetid : d3d37fd2-b3fa-4664-ba4b-c355197d9b40
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : bidispl/IBidiRequest::IBidiRequest::GetResult, IBidiRequest::IBidiRequest::GetResult, _win32_IBidiRequest_GetResult, IBidiRequest::GetResult method [Print Devices], GetResult, IBidiRequest::GetResult, IBidiRequest, IBidiRequest::GetResult method [Print Devices], IBidiRequest interface, print.ibidirequest_ibidirequest__getresult, IBidiRequest interface [Print Devices], IBidiRequest::GetResult method, gdi.ibidirequest_ibidirequest__getresult
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : bidispl.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Windows XP
-req.target-min-winversvr : Windows Server 2003
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : bidispl.h
-req.dll : Bidispl.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
+UID: NF:bidispl.IBidiRequest.GetResult
+title: IBidiRequest::GetResult method
+author: windows-driver-content
+description: The IBidiRequest::GetResult method tells whether the bidi request was successful.
+old-location: print\ibidirequest_ibidirequest__getresult.htm
+old-project: print
+ms.assetid: d3d37fd2-b3fa-4664-ba4b-c355197d9b40
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: bidispl/IBidiRequest::IBidiRequest::GetResult, IBidiRequest::IBidiRequest::GetResult, _win32_IBidiRequest_GetResult, IBidiRequest::GetResult method [Print Devices], GetResult, IBidiRequest::GetResult, IBidiRequest, IBidiRequest::GetResult method [Print Devices], IBidiRequest interface, print.ibidirequest_ibidirequest__getresult, IBidiRequest interface [Print Devices], IBidiRequest::GetResult method, gdi.ibidirequest_ibidirequest__getresult
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: bidispl.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Windows XP
+req.target-min-winversvr: Windows Server 2003
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: bidispl.h
+req.dll: Bidispl.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	bidispl.dll
+apiname:
 -	IBidiRequest.IBidiRequest::GetResult
-product : Windows
-targetos : Windows
-req.typenames : "*PMPEG2_TRANSPORT_STRIDE, MPEG2_TRANSPORT_STRIDE"
+product: Windows
+targetos: Windows
+req.typenames: "*PMPEG2_TRANSPORT_STRIDE, MPEG2_TRANSPORT_STRIDE"
 ---
 
 

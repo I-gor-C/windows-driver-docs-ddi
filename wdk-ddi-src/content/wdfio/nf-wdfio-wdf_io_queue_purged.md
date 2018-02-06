@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfio.WDF_IO_QUEUE_PURGED
-title : WDF_IO_QUEUE_PURGED function
-author : windows-driver-content
-description : The WDF_IO_QUEUE_PURGED function returns TRUE if an I/O queue's state indicates that the queue is drained.
-old-location : wdf\wdf_io_queue_purged.htm
-old-project : wdf
-ms.assetid : dbb061a6-a770-411c-9c3a-8453662b4362
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WDF_IO_QUEUE_PURGED, WDF_IO_QUEUE_PURGED function, kmdf.wdf_io_queue_purged, DFQueueObjectRef_2d745708-c310-494a-aedc-362bdc930650.xml, wdf.wdf_io_queue_purged, wdfio/WDF_IO_QUEUE_PURGED
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfio.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : None
-req.dll : 
-req.irql : Any IRQL.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_IO_QUEUE_STATE
-req.product : Windows 10 or later.
+UID: NF:wdfio.WDF_IO_QUEUE_PURGED
+title: WDF_IO_QUEUE_PURGED function
+author: windows-driver-content
+description: The WDF_IO_QUEUE_PURGED function returns TRUE if an I/O queue's state indicates that the queue is drained.
+old-location: wdf\wdf_io_queue_purged.htm
+old-project: wdf
+ms.assetid: dbb061a6-a770-411c-9c3a-8453662b4362
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WDF_IO_QUEUE_PURGED, WDF_IO_QUEUE_PURGED function, kmdf.wdf_io_queue_purged, DFQueueObjectRef_2d745708-c310-494a-aedc-362bdc930650.xml, wdf.wdf_io_queue_purged, wdfio/WDF_IO_QUEUE_PURGED
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfio.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: None
+req.dll: 
+req.irql: Any IRQL.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	None
+-	None.dll
+apiname:
+-	WDF_IO_QUEUE_PURGED
+product: Windows
+targetos: Windows
+req.typenames: WDF_IO_QUEUE_STATE
+req.product: Windows 10 or later.
 ---
 
 

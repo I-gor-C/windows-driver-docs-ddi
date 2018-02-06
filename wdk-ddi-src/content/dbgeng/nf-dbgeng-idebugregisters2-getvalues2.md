@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugRegisters2.GetValues2
-title : IDebugRegisters2::GetValues2 method
-author : windows-driver-content
-description : The GetValues2 method fetches the value of several of the target's registers.
-old-location : debugger\getvalues2.htm
-old-project : debugger
-ms.assetid : 182e55ec-1a99-4bd6-bcf6-d5e8302b9eae
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : dbgeng/IDebugRegisters2::GetValues2, GetValues2 method [Windows Debugging], IDebugRegisters2 interface, IDebugRegisters_de7a1e67-5ffe-48f8-a19d-63858c500389.xml, IDebugRegisters2 interface [Windows Debugging], GetValues2 method, debugger.getvalues2, IDebugRegisters2, GetValues2, GetValues2 method [Windows Debugging], IDebugRegisters2::GetValues2
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : DbgEng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugRegisters2.GetValues2
+title: IDebugRegisters2::GetValues2 method
+author: windows-driver-content
+description: The GetValues2 method fetches the value of several of the target's registers.
+old-location: debugger\getvalues2.htm
+old-project: debugger
+ms.assetid: 182e55ec-1a99-4bd6-bcf6-d5e8302b9eae
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: dbgeng/IDebugRegisters2::GetValues2, GetValues2 method [Windows Debugging], IDebugRegisters2 interface, IDebugRegisters_de7a1e67-5ffe-48f8-a19d-63858c500389.xml, IDebugRegisters2 interface [Windows Debugging], GetValues2 method, debugger.getvalues2, IDebugRegisters2, GetValues2, GetValues2 method [Windows Debugging], IDebugRegisters2::GetValues2
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: DbgEng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugRegisters2.GetValues2
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

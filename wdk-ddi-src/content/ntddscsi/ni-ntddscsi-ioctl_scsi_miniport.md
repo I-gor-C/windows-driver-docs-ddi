@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddscsi.IOCTL_SCSI_MINIPORT
-title : IOCTL_SCSI_MINIPORT
-author : windows-driver-content
-description : Sends a special control function to an HBA-specific miniport driver.
-old-location : storage\ioctl_scsi_miniport.htm
-old-project : storage
-ms.assetid : 5a9facc7-c83e-4dd4-9fb4-e3385c1b94ea
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_scsi_miniport, IOCTL_SCSI_MINIPORT control code [Storage Devices], IOCTL_SCSI_MINIPORT, ntddscsi/IOCTL_SCSI_MINIPORT, k307_49b821f3-1a79-44aa-a6a1-92543177181d.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddscsi.h
-req.include-header : Ntddscsi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : MP_STORAGE_DIAGNOSTIC_TARGET_TYPE, *PMP_STORAGE_DIAGNOSTIC_TARGET_TYPE
+UID: NI:ntddscsi.IOCTL_SCSI_MINIPORT
+title: IOCTL_SCSI_MINIPORT
+author: windows-driver-content
+description: Sends a special control function to an HBA-specific miniport driver.
+old-location: storage\ioctl_scsi_miniport.htm
+old-project: storage
+ms.assetid: 5a9facc7-c83e-4dd4-9fb4-e3385c1b94ea
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_scsi_miniport, IOCTL_SCSI_MINIPORT control code [Storage Devices], IOCTL_SCSI_MINIPORT, ntddscsi/IOCTL_SCSI_MINIPORT, k307_49b821f3-1a79-44aa-a6a1-92543177181d.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddscsi.h
+req.include-header: Ntddscsi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddscsi.h
+apiname:
+-	IOCTL_SCSI_MINIPORT
+product: Windows
+targetos: Windows
+req.typenames: MP_STORAGE_DIAGNOSTIC_TARGET_TYPE, *PMP_STORAGE_DIAGNOSTIC_TARGET_TYPE
 ---
 
 # IOCTL_SCSI_MINIPORT IOCTL

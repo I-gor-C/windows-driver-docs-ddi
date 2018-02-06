@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3D11DDI_SETRENDERTARGETS
-title : PFND3D11DDI_SETRENDERTARGETS
-author : windows-driver-content
-description : The SetRenderTargets(D3D11) function sets render target surfaces.
-old-location : display\setrendertargets_d3d11_.htm
-old-project : display
-ms.assetid : cfe5f570-4e53-43ee-942d-56da8dfcfe80
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.setrendertargets_d3d11_, SetRenderTargets callback function [Display Devices], SetRenderTargets, PFND3D11DDI_SETRENDERTARGETS, PFND3D11DDI_SETRENDERTARGETS, d3d10umddi/SetRenderTargets, UserModeDisplayDriverDx11_Functions_a24d5500-fe0a-4d17-a3fb-acb6ed9e4698.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : SetRenderTargets(D3D11) is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3D11DDI_SETRENDERTARGETS
+title: PFND3D11DDI_SETRENDERTARGETS
+author: windows-driver-content
+description: The SetRenderTargets(D3D11) function sets render target surfaces.
+old-location: display\setrendertargets_d3d11_.htm
+old-project: display
+ms.assetid: cfe5f570-4e53-43ee-942d-56da8dfcfe80
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.setrendertargets_d3d11_, SetRenderTargets callback function [Display Devices], SetRenderTargets, PFND3D11DDI_SETRENDERTARGETS, PFND3D11DDI_SETRENDERTARGETS, d3d10umddi/SetRenderTargets, UserModeDisplayDriverDx11_Functions_a24d5500-fe0a-4d17-a3fb-acb6ed9e4698.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: SetRenderTargets(D3D11) is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	SetRenderTargets
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

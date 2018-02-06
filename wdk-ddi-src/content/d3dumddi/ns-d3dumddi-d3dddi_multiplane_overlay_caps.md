@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi.D3DDDI_MULTIPLANE_OVERLAY_CAPS
-title : D3DDDI_MULTIPLANE_OVERLAY_CAPS
-author : windows-driver-content
-description : Used by the user-mode display driver to specify overlay plane capabilities.
-old-location : display\d3dddi_multiplane_overlay_caps.htm
-old-project : display
-ms.assetid : 66365126-d7c3-4886-b14f-a94dc12c1626
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DDDI_MULTIPLANE_OVERLAY_CAPS, D3DDDI_MULTIPLANE_OVERLAY_CAPS structure [Display Devices], display.d3dddi_multiplane_overlay_caps, d3dumddi/D3DDDI_MULTIPLANE_OVERLAY_CAPS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8.1
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDI_MULTIPLANE_OVERLAY_CAPS
+UID: NS:d3dumddi.D3DDDI_MULTIPLANE_OVERLAY_CAPS
+title: D3DDDI_MULTIPLANE_OVERLAY_CAPS
+author: windows-driver-content
+description: Used by the user-mode display driver to specify overlay plane capabilities.
+old-location: display\d3dddi_multiplane_overlay_caps.htm
+old-project: display
+ms.assetid: 66365126-d7c3-4886-b14f-a94dc12c1626
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DDDI_MULTIPLANE_OVERLAY_CAPS, D3DDDI_MULTIPLANE_OVERLAY_CAPS structure [Display Devices], display.d3dddi_multiplane_overlay_caps, d3dumddi/D3DDDI_MULTIPLANE_OVERLAY_CAPS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8.1
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	D3dumddi.h
+apiname:
+-	D3DDDI_MULTIPLANE_OVERLAY_CAPS
+product: Windows
+targetos: Windows
+req.typenames: D3DDDI_MULTIPLANE_OVERLAY_CAPS
 ---
 
 # D3DDDI_MULTIPLANE_OVERLAY_CAPS structure

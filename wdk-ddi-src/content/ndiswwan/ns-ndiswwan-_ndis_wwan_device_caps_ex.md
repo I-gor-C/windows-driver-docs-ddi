@@ -1,41 +1,46 @@
 ---
-UID : NS:ndiswwan._NDIS_WWAN_DEVICE_CAPS_EX
-title : "_NDIS_WWAN_DEVICE_CAPS_EX"
-author : windows-driver-content
-description : The NDIS_WWAN_DEVICE_CAPS_EX structure represents the capabilities of the MB device.
-old-location : netvista\ndis_wwan_device_caps_ex.htm
-old-project : netvista
-ms.assetid : FC801FA3-699F-4EE5-BED9-35CA696A5E52
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : ndiswwan/NDIS_WWAN_DEVICE_CAPS_EX, _NDIS_WWAN_DEVICE_CAPS_EX, NDIS_WWAN_DEVICE_CAPS_EX, ndiswwan/PNDIS_WWAN_DEVICE_CAPS_EX, PNDIS_WWAN_DEVICE_CAPS_EX, *PNDIS_WWAN_DEVICE_CAPS_EX, netvista.ndis_wwan_device_caps_ex, NDIS_WWAN_DEVICE_CAPS_EX structure [Network Drivers Starting with Windows Vista], PNDIS_WWAN_DEVICE_CAPS_EX structure pointer [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndiswwan.h
-req.include-header : Ndiswwan.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10, version 1703
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PNDIS_WWAN_DEVICE_CAPS_EX, NDIS_WWAN_DEVICE_CAPS_EX"
+UID: NS:ndiswwan._NDIS_WWAN_DEVICE_CAPS_EX
+title: "_NDIS_WWAN_DEVICE_CAPS_EX"
+author: windows-driver-content
+description: The NDIS_WWAN_DEVICE_CAPS_EX structure represents the capabilities of the MB device.
+old-location: netvista\ndis_wwan_device_caps_ex.htm
+old-project: netvista
+ms.assetid: FC801FA3-699F-4EE5-BED9-35CA696A5E52
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: ndiswwan/NDIS_WWAN_DEVICE_CAPS_EX, _NDIS_WWAN_DEVICE_CAPS_EX, NDIS_WWAN_DEVICE_CAPS_EX, ndiswwan/PNDIS_WWAN_DEVICE_CAPS_EX, PNDIS_WWAN_DEVICE_CAPS_EX, *PNDIS_WWAN_DEVICE_CAPS_EX, netvista.ndis_wwan_device_caps_ex, NDIS_WWAN_DEVICE_CAPS_EX structure [Network Drivers Starting with Windows Vista], PNDIS_WWAN_DEVICE_CAPS_EX structure pointer [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndiswwan.h
+req.include-header: Ndiswwan.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10, version 1703
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndiswwan.h
+apiname:
+-	NDIS_WWAN_DEVICE_CAPS_EX
+product: Windows
+targetos: Windows
+req.typenames: "*PNDIS_WWAN_DEVICE_CAPS_EX, NDIS_WWAN_DEVICE_CAPS_EX"
 ---
 
 # _NDIS_WWAN_DEVICE_CAPS_EX structure

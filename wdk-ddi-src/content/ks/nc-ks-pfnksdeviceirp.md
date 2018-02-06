@@ -1,41 +1,46 @@
 ---
-UID : NC:ks.PFNKSDEVICEIRP
-title : PFNKSDEVICEIRP
-author : windows-driver-content
-description : An AVStream minidriver's IRP handler routine is called when these IRPs is dispatched by the device.IRP_MN_QUERY_REMOVE_DEVICEIRP_MN_QUERY_STOP_DEVICEIRP_MN_QUERY_INTERFACE
-old-location : stream\avstrminidevicequeryremove.htm
-old-project : stream
-ms.assetid : c31d7e52-46f7-46b9-9fa2-1778f2301b4d
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.avstrminidevicequeryremove, AVStrMiniDeviceQueryRemove, AVStrMiniDeviceQueryRemove, AVStrMiniDeviceQueryInterface, AVStrMiniDeviceQueryRemove routine [Streaming Media Devices], AVStrMiniDeviceQueryRemove, PFNKSDEVICEIRP, PFNKSDEVICEIRP, ks/AVStrMiniDeviceQueryRemove, avstclbk_e4e3e23a-c4e7-47fb-ad10-6a0a630669ed.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (See Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KEYWORDSELECTOR
+UID: NC:ks.PFNKSDEVICEIRP
+title: PFNKSDEVICEIRP
+author: windows-driver-content
+description: An AVStream minidriver's IRP handler routine is called when these IRPs is dispatched by the device.IRP_MN_QUERY_REMOVE_DEVICEIRP_MN_QUERY_STOP_DEVICEIRP_MN_QUERY_INTERFACE
+old-location: stream\avstrminidevicequeryremove.htm
+old-project: stream
+ms.assetid: c31d7e52-46f7-46b9-9fa2-1778f2301b4d
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.avstrminidevicequeryremove, AVStrMiniDeviceQueryRemove, AVStrMiniDeviceQueryRemove, AVStrMiniDeviceQueryInterface, AVStrMiniDeviceQueryRemove routine [Streaming Media Devices], AVStrMiniDeviceQueryRemove, PFNKSDEVICEIRP, PFNKSDEVICEIRP, ks/AVStrMiniDeviceQueryRemove, avstclbk_e4e3e23a-c4e7-47fb-ad10-6a0a630669ed.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (See Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	ks.h
+apiname:
+-	AVStrMiniDeviceQueryRemove
+product: Windows
+targetos: Windows
+req.typenames: KEYWORDSELECTOR
 ---
 
 

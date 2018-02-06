@@ -1,41 +1,47 @@
 ---
-UID : NF:fwpsk.FwpsDiscardClonedStreamData0
-title : FwpsDiscardClonedStreamData0 function
-author : windows-driver-content
-description : The FwpsDiscardClonedStreamData0 function frees the memory buffer that is allocated by the FwpsCloneStreamData0 function.Note  FwpsDiscardClonedStreamData0 is a specific version of FwpsDiscardClonedStreamData.
-old-location : netvista\fwpsdiscardclonedstreamdata0.htm
-old-project : netvista
-ms.assetid : 11e8338d-4ca3-49a4-8cfe-ac9f15434b4f
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : fwpsk/FwpsDiscardClonedStreamData0, wfp_ref_2_funct_3_fwps_D-H_b09851bf-8f28-4f16-8c7d-b6f89b276845.xml, FwpsDiscardClonedStreamData0 function [Network Drivers Starting with Windows Vista], netvista.fwpsdiscardclonedstreamdata0, FwpsDiscardClonedStreamData0
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fwpsk.h
-req.include-header : Fwpsk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Fwpkclnt.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FWPS_VSWITCH_EVENT_TYPE
+UID: NF:fwpsk.FwpsDiscardClonedStreamData0
+title: FwpsDiscardClonedStreamData0 function
+author: windows-driver-content
+description: The FwpsDiscardClonedStreamData0 function frees the memory buffer that is allocated by the FwpsCloneStreamData0 function.Note  FwpsDiscardClonedStreamData0 is a specific version of FwpsDiscardClonedStreamData.
+old-location: netvista\fwpsdiscardclonedstreamdata0.htm
+old-project: netvista
+ms.assetid: 11e8338d-4ca3-49a4-8cfe-ac9f15434b4f
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: fwpsk/FwpsDiscardClonedStreamData0, wfp_ref_2_funct_3_fwps_D-H_b09851bf-8f28-4f16-8c7d-b6f89b276845.xml, FwpsDiscardClonedStreamData0 function [Network Drivers Starting with Windows Vista], netvista.fwpsdiscardclonedstreamdata0, FwpsDiscardClonedStreamData0
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fwpsk.h
+req.include-header: Fwpsk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Fwpkclnt.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	fwpkclnt.lib
+-	fwpkclnt.dll
+apiname:
+-	FwpsDiscardClonedStreamData0
+product: Windows
+targetos: Windows
+req.typenames: FWPS_VSWITCH_EVENT_TYPE
 ---
 
 

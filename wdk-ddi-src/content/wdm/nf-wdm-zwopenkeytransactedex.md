@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.ZwOpenKeyTransactedEx
-title : ZwOpenKeyTransactedEx function
-author : windows-driver-content
-description : The ZwOpenKeyTransactedEx routine opens an existing registry key and associates the key with a transaction.
-old-location : kernel\zwopenkeytransactedex.htm
-old-project : kernel
-ms.assetid : 8e3db1b4-6ee1-40a1-9818-434152fdffd7
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/ZwOpenKeyTransactedEx, ZwOpenKeyTransactedEx routine [Kernel-Mode Driver Architecture], ZwOpenKeyTransactedEx, kernel.zwopenkeytransactedex, k111_765ab476-0a2a-4eb4-ba87-387fa49ae118.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 7 and later versions of the Windows operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ZwOpenKeyTransactedEx
+title: ZwOpenKeyTransactedEx function
+author: windows-driver-content
+description: The ZwOpenKeyTransactedEx routine opens an existing registry key and associates the key with a transaction.
+old-location: kernel\zwopenkeytransactedex.htm
+old-project: kernel
+ms.assetid: 8e3db1b4-6ee1-40a1-9818-434152fdffd7
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/ZwOpenKeyTransactedEx, ZwOpenKeyTransactedEx routine [Kernel-Mode Driver Architecture], ZwOpenKeyTransactedEx, kernel.zwopenkeytransactedex, k111_765ab476-0a2a-4eb4-ba87-387fa49ae118.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 7 and later versions of the Windows operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ZwOpenKeyTransactedEx
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

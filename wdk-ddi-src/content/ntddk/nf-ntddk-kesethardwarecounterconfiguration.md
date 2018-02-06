@@ -1,41 +1,46 @@
 ---
-UID : NF:ntddk.KeSetHardwareCounterConfiguration
-title : KeSetHardwareCounterConfiguration function
-author : windows-driver-content
-description : The KeSetHardwareCounterConfiguration routine specifies a list of hardware counters to use for thread profiling.
-old-location : kernel\kesethardwarecounterconfiguration.htm
-old-project : kernel
-ms.assetid : 9677dbd7-4b6f-49a9-ac38-fdcbaeb3a6f8
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : k105_2cf79626-ed0d-4a15-bd9f-22b669ffde98.xml, kernel.kesethardwarecounterconfiguration, KeSetHardwareCounterConfiguration routine [Kernel-Mode Driver Architecture], ntddk/KeSetHardwareCounterConfiguration, KeSetHardwareCounterConfiguration
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 7.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.KeSetHardwareCounterConfiguration
+title: KeSetHardwareCounterConfiguration function
+author: windows-driver-content
+description: The KeSetHardwareCounterConfiguration routine specifies a list of hardware counters to use for thread profiling.
+old-location: kernel\kesethardwarecounterconfiguration.htm
+old-project: kernel
+ms.assetid: 9677dbd7-4b6f-49a9-ac38-fdcbaeb3a6f8
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: k105_2cf79626-ed0d-4a15-bd9f-22b669ffde98.xml, kernel.kesethardwarecounterconfiguration, KeSetHardwareCounterConfiguration routine [Kernel-Mode Driver Architecture], ntddk/KeSetHardwareCounterConfiguration, KeSetHardwareCounterConfiguration
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 7.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	KeSetHardwareCounterConfiguration
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

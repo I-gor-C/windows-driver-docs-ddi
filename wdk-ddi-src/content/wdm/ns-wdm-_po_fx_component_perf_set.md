@@ -1,42 +1,47 @@
 ---
-UID : NS:wdm._PO_FX_COMPONENT_PERF_SET
-title : "_PO_FX_COMPONENT_PERF_SET"
-author : windows-driver-content
-description : The PO_FX_COMPONENT_PERF_SET structure represents a set of performance states for a single component within a device.
-old-location : kernel\po_fx_component_perf_set.htm
-old-project : kernel
-ms.assetid : 2305BE73-8363-4534-A64D-06C91F636E2F
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : PPO_FX_COMPONENT_PERF_SET structure pointer [Kernel-Mode Driver Architecture], _PO_FX_COMPONENT_PERF_SET, kernel.po_fx_component_perf_set, PO_FX_COMPONENT_PERF_SET, *PPO_FX_COMPONENT_PERF_SET, PPO_FX_COMPONENT_PERF_SET, PO_FX_COMPONENT_PERF_SET structure [Kernel-Mode Driver Architecture], wdm/PO_FX_COMPONENT_PERF_SET, wdm/PPO_FX_COMPONENT_PERF_SET
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with Windows 10.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPO_FX_COMPONENT_PERF_SET, PO_FX_COMPONENT_PERF_SET"
-req.product : Windows 10 or later.
+UID: NS:wdm._PO_FX_COMPONENT_PERF_SET
+title: "_PO_FX_COMPONENT_PERF_SET"
+author: windows-driver-content
+description: The PO_FX_COMPONENT_PERF_SET structure represents a set of performance states for a single component within a device.
+old-location: kernel\po_fx_component_perf_set.htm
+old-project: kernel
+ms.assetid: 2305BE73-8363-4534-A64D-06C91F636E2F
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: PPO_FX_COMPONENT_PERF_SET structure pointer [Kernel-Mode Driver Architecture], _PO_FX_COMPONENT_PERF_SET, kernel.po_fx_component_perf_set, PO_FX_COMPONENT_PERF_SET, *PPO_FX_COMPONENT_PERF_SET, PPO_FX_COMPONENT_PERF_SET, PO_FX_COMPONENT_PERF_SET structure [Kernel-Mode Driver Architecture], wdm/PO_FX_COMPONENT_PERF_SET, wdm/PPO_FX_COMPONENT_PERF_SET
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows 10.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	PO_FX_COMPONENT_PERF_SET
+product: Windows
+targetos: Windows
+req.typenames: "*PPO_FX_COMPONENT_PERF_SET, PO_FX_COMPONENT_PERF_SET"
+req.product: Windows 10 or later.
 ---
 
 # _PO_FX_COMPONENT_PERF_SET structure

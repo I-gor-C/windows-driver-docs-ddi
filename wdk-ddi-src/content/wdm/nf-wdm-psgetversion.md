@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.PsGetVersion
-title : PsGetVersion function
-author : windows-driver-content
-description : This function is obsolete in Windows XP and later versions of the Windows operating system. Use RtlGetVersion instead.PsGetVersion returns caller-selected information about the current version of the NT-based operating system.
-old-location : kernel\psgetversion.htm
-old-project : kernel
-ms.assetid : db3d2e34-3d83-423d-b446-2800d53a8220
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : PsGetVersion function [Kernel-Mode Driver Architecture], wdm/PsGetVersion, kernel.psgetversion, PsGetVersion, k108_3c73c1e7-3f02-4598-adae-43c378dcfb08.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Ntddk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : IrqlPsPassive, PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.PsGetVersion
+title: PsGetVersion function
+author: windows-driver-content
+description: This function is obsolete in Windows XP and later versions of the Windows operating system. Use RtlGetVersion instead.PsGetVersion returns caller-selected information about the current version of the NT-based operating system.
+old-location: kernel\psgetversion.htm
+old-project: kernel
+ms.assetid: db3d2e34-3d83-423d-b446-2800d53a8220
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: PsGetVersion function [Kernel-Mode Driver Architecture], wdm/PsGetVersion, kernel.psgetversion, PsGetVersion, k108_3c73c1e7-3f02-4598-adae-43c378dcfb08.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Ntddk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: IrqlPsPassive, PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	PsGetVersion
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

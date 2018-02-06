@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.FsRtlRemoveExtraCreateParameter
-title : FsRtlRemoveExtraCreateParameter function
-author : windows-driver-content
-description : The FsRtlRemoveExtraCreateParameter routine searches an ECP list for an ECP context structure and, if found, detaches it from the ECP list.
-old-location : ifsk\fsrtlremoveextracreateparameter.htm
-old-project : ifsk
-ms.assetid : a34845a9-d596-40de-b4d1-0f733818d961
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ntifs/FsRtlRemoveExtraCreateParameter, fsrtlref_3fa961e9-0dc1-4d4b-a5dc-80883b1db15e.xml, FsRtlRemoveExtraCreateParameter routine [Installable File System Drivers], FsRtlRemoveExtraCreateParameter, ifsk.fsrtlremoveextracreateparameter
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : FsRtlRemoveExtraCreateParameter routine is available starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.FsRtlRemoveExtraCreateParameter
+title: FsRtlRemoveExtraCreateParameter function
+author: windows-driver-content
+description: The FsRtlRemoveExtraCreateParameter routine searches an ECP list for an ECP context structure and, if found, detaches it from the ECP list.
+old-location: ifsk\fsrtlremoveextracreateparameter.htm
+old-project: ifsk
+ms.assetid: a34845a9-d596-40de-b4d1-0f733818d961
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ntifs/FsRtlRemoveExtraCreateParameter, fsrtlref_3fa961e9-0dc1-4d4b-a5dc-80883b1db15e.xml, FsRtlRemoveExtraCreateParameter routine [Installable File System Drivers], FsRtlRemoveExtraCreateParameter, ifsk.fsrtlremoveextracreateparameter
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: FsRtlRemoveExtraCreateParameter routine is available starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	FsRtlRemoveExtraCreateParameter
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

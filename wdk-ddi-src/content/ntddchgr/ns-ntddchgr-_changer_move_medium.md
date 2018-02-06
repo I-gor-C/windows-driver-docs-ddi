@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddchgr._CHANGER_MOVE_MEDIUM
-title : "_CHANGER_MOVE_MEDIUM"
-author : windows-driver-content
-description : The CHANGER_MOVE_MEDIUM structure is used in conjunction with the IOCTL_CHANGER_MOVE_MEDIUM request to move a piece of media from a source element to a destination.
-old-location : storage\changer_move_medium.htm
-old-project : storage
-ms.assetid : b19c8add-7377-40d2-8496-fcfa166ac143
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : "_CHANGER_MOVE_MEDIUM, PCHANGER_MOVE_MEDIUM, CHANGER_MOVE_MEDIUM structure [Storage Devices], CHANGER_MOVE_MEDIUM, ntddchgr/PCHANGER_MOVE_MEDIUM, PCHANGER_MOVE_MEDIUM structure pointer [Storage Devices], storage.changer_move_medium, ntddchgr/CHANGER_MOVE_MEDIUM, *PCHANGER_MOVE_MEDIUM, structs-changer_866dd781-90cd-41be-84ce-61c16d31a369.xml"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddchgr.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : CHANGER_MOVE_MEDIUM, *PCHANGER_MOVE_MEDIUM
+UID: NS:ntddchgr._CHANGER_MOVE_MEDIUM
+title: "_CHANGER_MOVE_MEDIUM"
+author: windows-driver-content
+description: The CHANGER_MOVE_MEDIUM structure is used in conjunction with the IOCTL_CHANGER_MOVE_MEDIUM request to move a piece of media from a source element to a destination.
+old-location: storage\changer_move_medium.htm
+old-project: storage
+ms.assetid: b19c8add-7377-40d2-8496-fcfa166ac143
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: "_CHANGER_MOVE_MEDIUM, PCHANGER_MOVE_MEDIUM, CHANGER_MOVE_MEDIUM structure [Storage Devices], CHANGER_MOVE_MEDIUM, ntddchgr/PCHANGER_MOVE_MEDIUM, PCHANGER_MOVE_MEDIUM structure pointer [Storage Devices], storage.changer_move_medium, ntddchgr/CHANGER_MOVE_MEDIUM, *PCHANGER_MOVE_MEDIUM, structs-changer_866dd781-90cd-41be-84ce-61c16d31a369.xml"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddchgr.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddchgr.h
+apiname:
+-	CHANGER_MOVE_MEDIUM
+product: Windows
+targetos: Windows
+req.typenames: CHANGER_MOVE_MEDIUM, *PCHANGER_MOVE_MEDIUM
 ---
 
 # _CHANGER_MOVE_MEDIUM structure

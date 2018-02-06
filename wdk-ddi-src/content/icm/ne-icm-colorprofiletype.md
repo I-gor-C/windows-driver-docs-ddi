@@ -1,41 +1,46 @@
 ---
-UID : NE:icm.COLORPROFILETYPE
-title : COLORPROFILETYPE
-author : windows-driver-content
-description : The COLORPROFILETYPE enumeration is used to specify the type of color profile.
-old-location : print\colorprofiletype.htm
-old-project : print
-ms.assetid : 756ba822-ace2-4893-a989-9d355434e57c
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : "*PCOLORPROFILETYPE, CPT_CAMP, icm/COLORPROFILETYPE, colorfnc_409d0d83-91ea-408a-8970-4de6e9cf94eb.xml, icm/CPT_GMMP, COLORPROFILETYPE, CPT_GMMP, print.colorprofiletype, CPT_ICC, icm/CPT_CAMP, COLORPROFILETYPE enumeration [Print Devices], icm/CPT_DMP, CPT_DMP, icm/CPT_ICC"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : icm.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Included in Windows Vista and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : COLORPROFILETYPE
+UID: NE:icm.COLORPROFILETYPE
+title: COLORPROFILETYPE
+author: windows-driver-content
+description: The COLORPROFILETYPE enumeration is used to specify the type of color profile.
+old-location: print\colorprofiletype.htm
+old-project: print
+ms.assetid: 756ba822-ace2-4893-a989-9d355434e57c
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: "*PCOLORPROFILETYPE, CPT_CAMP, icm/COLORPROFILETYPE, colorfnc_409d0d83-91ea-408a-8970-4de6e9cf94eb.xml, icm/CPT_GMMP, COLORPROFILETYPE, CPT_GMMP, print.colorprofiletype, CPT_ICC, icm/CPT_CAMP, COLORPROFILETYPE enumeration [Print Devices], icm/CPT_DMP, CPT_DMP, icm/CPT_ICC"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: icm.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Included in Windows Vista and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	icm.h
+apiname:
+-	COLORPROFILETYPE
+product: Windows
+targetos: Windows
+req.typenames: COLORPROFILETYPE
 ---
 
 # COLORPROFILETYPE Enumeration
@@ -54,31 +59,31 @@ typedef enum  {
 ## Constants
 
 <table>
-
-<tr>
-<td>CPT_CAMP</td>
-<td>Specifies a WCS color appearance model profile (CAMP). If this value is specified, only the CPST_NONE value of <a href="..\icm\ne-icm-colorprofilesubtype.md">COLORPROFILESUBTYPE</a> is valid.</td>
-</tr>
-
-<tr>
-<td>CPT_DMP</td>
-<td>Specifies a WCS device model profile (DMP). If this value is specified, only the CPST_RGB_WORKING_SPACE and CPST_CUSTOM_WORKING_SPACE values of <a href="..\icm\ne-icm-colorprofilesubtype.md">COLORPROFILESUBTYPE</a> are valid.</td>
-</tr>
-
-<tr>
-<td>CPT_GMMP</td>
-<td>Specifies a WCS gamut map model profile (GMMP). If this value is specified, only the CPST_PERCEPTUAL, CPST_SATURATION, CPST_RELATIVE_COLORIMETRIC, and CPST_ABSOLUTE_COLORIMETRIC values of <a href="..\icm\ne-icm-colorprofilesubtype.md">COLORPROFILESUBTYPE</a> are valid. Any one of these values may optionally be combined (in a bitwise OR operation) with CPST_DEFAULT.</td>
-</tr>
-
-<tr>
-<td>CPT_ICC</td>
-<td>Specifies an ICC profile. If this value is specified, only the CPST_RGB_WORKING_SPACE and CPST_CUSTOM_WORKING_SPACE values of <a href="..\icm\ne-icm-colorprofilesubtype.md">COLORPROFILESUBTYPE</a> are valid.</td>
-</tr>
+            
+                <tr>
+                    <td>CPT_CAMP</td>
+                    <td>Specifies a WCS color appearance model profile (CAMP). If this value is specified, only the CPST_NONE value of <a href="..\icm\ne-icm-colorprofilesubtype.md">COLORPROFILESUBTYPE</a> is valid.</td>
+                </tr>
+            
+                <tr>
+                    <td>CPT_DMP</td>
+                    <td>Specifies a WCS device model profile (DMP). If this value is specified, only the CPST_RGB_WORKING_SPACE and CPST_CUSTOM_WORKING_SPACE values of <a href="..\icm\ne-icm-colorprofilesubtype.md">COLORPROFILESUBTYPE</a> are valid.</td>
+                </tr>
+            
+                <tr>
+                    <td>CPT_GMMP</td>
+                    <td>Specifies a WCS gamut map model profile (GMMP). If this value is specified, only the CPST_PERCEPTUAL, CPST_SATURATION, CPST_RELATIVE_COLORIMETRIC, and CPST_ABSOLUTE_COLORIMETRIC values of <a href="..\icm\ne-icm-colorprofilesubtype.md">COLORPROFILESUBTYPE</a> are valid. Any one of these values may optionally be combined (in a bitwise OR operation) with CPST_DEFAULT.</td>
+                </tr>
+            
+                <tr>
+                    <td>CPT_ICC</td>
+                    <td>Specifies an ICC profile. If this value is specified, only the CPST_RGB_WORKING_SPACE and CPST_CUSTOM_WORKING_SPACE values of <a href="..\icm\ne-icm-colorprofilesubtype.md">COLORPROFILESUBTYPE</a> are valid.</td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-The PCOLORPROFILETYPE and LPCOLORPROFILETYPE data types are defined as pointers to this enumeration:
+        The PCOLORPROFILETYPE and LPCOLORPROFILETYPE data types are defined as pointers to this enumeration:
 <div class="code"><span codelanguage=""><table>
 <tr>
 <th></th>
@@ -96,9 +101,9 @@ The PCOLORPROFILETYPE and LPCOLORPROFILETYPE data types are defined as pointers 
 | **Windows version** | Included in Windows Vista and later. Included in Windows Vista and later. |
 | **Header** | icm.h |
 
-## See Also
+    ## See Also
 
-<a href="..\icm\ne-icm-colorprofilesubtype.md">COLORPROFILESUBTYPE</a>
+        <a href="..\icm\ne-icm-colorprofilesubtype.md">COLORPROFILESUBTYPE</a>
 
  
 

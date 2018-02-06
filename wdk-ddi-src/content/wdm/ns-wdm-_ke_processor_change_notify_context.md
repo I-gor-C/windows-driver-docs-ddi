@@ -1,42 +1,47 @@
 ---
-UID : NS:wdm._KE_PROCESSOR_CHANGE_NOTIFY_CONTEXT
-title : "_KE_PROCESSOR_CHANGE_NOTIFY_CONTEXT"
-author : windows-driver-content
-description : The KE_PROCESSOR_CHANGE_NOTIFY_CONTEXT structure describes the notification context that is passed to a registered callback function when a new processor is dynamically added to a hardware partition.
-old-location : kernel\ke_processor_change_notify_context.htm
-old-project : kernel
-ms.assetid : b8b8e2af-487c-4d7b-8af0-b6365d4703b0
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/PKE_PROCESSOR_CHANGE_NOTIFY_CONTEXT, PKE_PROCESSOR_CHANGE_NOTIFY_CONTEXT structure pointer [Kernel-Mode Driver Architecture], kstruct_c_dcd6ab01-880a-4a63-bd74-acff53b786d1.xml, *PKE_PROCESSOR_CHANGE_NOTIFY_CONTEXT, PKE_PROCESSOR_CHANGE_NOTIFY_CONTEXT, _KE_PROCESSOR_CHANGE_NOTIFY_CONTEXT, wdm/KE_PROCESSOR_CHANGE_NOTIFY_CONTEXT, kernel.ke_processor_change_notify_context, KE_PROCESSOR_CHANGE_NOTIFY_CONTEXT, KE_PROCESSOR_CHANGE_NOTIFY_CONTEXT structure [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with Windows Server 2008.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKE_PROCESSOR_CHANGE_NOTIFY_CONTEXT, KE_PROCESSOR_CHANGE_NOTIFY_CONTEXT"
-req.product : Windows 10 or later.
+UID: NS:wdm._KE_PROCESSOR_CHANGE_NOTIFY_CONTEXT
+title: "_KE_PROCESSOR_CHANGE_NOTIFY_CONTEXT"
+author: windows-driver-content
+description: The KE_PROCESSOR_CHANGE_NOTIFY_CONTEXT structure describes the notification context that is passed to a registered callback function when a new processor is dynamically added to a hardware partition.
+old-location: kernel\ke_processor_change_notify_context.htm
+old-project: kernel
+ms.assetid: b8b8e2af-487c-4d7b-8af0-b6365d4703b0
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/PKE_PROCESSOR_CHANGE_NOTIFY_CONTEXT, PKE_PROCESSOR_CHANGE_NOTIFY_CONTEXT structure pointer [Kernel-Mode Driver Architecture], kstruct_c_dcd6ab01-880a-4a63-bd74-acff53b786d1.xml, *PKE_PROCESSOR_CHANGE_NOTIFY_CONTEXT, PKE_PROCESSOR_CHANGE_NOTIFY_CONTEXT, _KE_PROCESSOR_CHANGE_NOTIFY_CONTEXT, wdm/KE_PROCESSOR_CHANGE_NOTIFY_CONTEXT, kernel.ke_processor_change_notify_context, KE_PROCESSOR_CHANGE_NOTIFY_CONTEXT, KE_PROCESSOR_CHANGE_NOTIFY_CONTEXT structure [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows Server 2008.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	KE_PROCESSOR_CHANGE_NOTIFY_CONTEXT
+product: Windows
+targetos: Windows
+req.typenames: "*PKE_PROCESSOR_CHANGE_NOTIFY_CONTEXT, KE_PROCESSOR_CHANGE_NOTIFY_CONTEXT"
+req.product: Windows 10 or later.
 ---
 
 # _KE_PROCESSOR_CHANGE_NOTIFY_CONTEXT structure

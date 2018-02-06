@@ -1,41 +1,46 @@
 ---
-UID : NE:ksmedia.PCAPTURE_MEMORY_ALLOCATION_FLAGS
-title : "*PCAPTURE_MEMORY_ALLOCATION_FLAGS"
-author : windows-driver-content
-description : The CAPTURE_MEMORY_ALLOCATION_FLAGS enumeration defines types of memory surfaces to which AVStream minidrivers can capture audio and video data.
-old-location : stream\capture_memory_allocation_flags.htm
-old-project : stream
-ms.assetid : 3b96301a-28a5-494b-bd12-8d3d4516730e
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ksmedia/KS_CAPTURE_ALLOC_VRAM, ksmedia/KS_CAPTURE_ALLOC_SYSTEM, KS_CAPTURE_ALLOC_INVALID, PCAPTURE_MEMORY_ALLOCATION_FLAGS, ksmedia/KS_CAPTURE_ALLOC_VRAM_MAPPED, *PCAPTURE_MEMORY_ALLOCATION_FLAGS, CAPTURE_MEMORY_ALLOCATION_FLAGS, CAPTURE_MEMORY_ALLOCATION_FLAGS enumeration [Streaming Media Devices], KS_CAPTURE_ALLOC_SYSTEM_AGP, ksmedia/KS_CAPTURE_ALLOC_SYSTEM_AGP, KS_CAPTURE_ALLOC_SYSTEM, KS_CAPTURE_ALLOC_VRAM_MAPPED, PCAPTURE_MEMORY_ALLOCATION_FLAGS enumeration pointer [Streaming Media Devices], avstruct_2c1411b2-f4a6-44f9-ba68-63f2f5654105.xml, KS_CAPTURE_ALLOC_VRAM, ksmedia/CAPTURE_MEMORY_ALLOCATION_FLAGS, stream.capture_memory_allocation_flags, ksmedia/PCAPTURE_MEMORY_ALLOCATION_FLAGS, ksmedia/KS_CAPTURE_ALLOC_INVALID
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PCAPTURE_MEMORY_ALLOCATION_FLAGS, CAPTURE_MEMORY_ALLOCATION_FLAGS"
+UID: NE:ksmedia.PCAPTURE_MEMORY_ALLOCATION_FLAGS
+title: "*PCAPTURE_MEMORY_ALLOCATION_FLAGS"
+author: windows-driver-content
+description: The CAPTURE_MEMORY_ALLOCATION_FLAGS enumeration defines types of memory surfaces to which AVStream minidrivers can capture audio and video data.
+old-location: stream\capture_memory_allocation_flags.htm
+old-project: stream
+ms.assetid: 3b96301a-28a5-494b-bd12-8d3d4516730e
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ksmedia/KS_CAPTURE_ALLOC_VRAM, ksmedia/KS_CAPTURE_ALLOC_SYSTEM, KS_CAPTURE_ALLOC_INVALID, PCAPTURE_MEMORY_ALLOCATION_FLAGS, ksmedia/KS_CAPTURE_ALLOC_VRAM_MAPPED, *PCAPTURE_MEMORY_ALLOCATION_FLAGS, CAPTURE_MEMORY_ALLOCATION_FLAGS, CAPTURE_MEMORY_ALLOCATION_FLAGS enumeration [Streaming Media Devices], KS_CAPTURE_ALLOC_SYSTEM_AGP, ksmedia/KS_CAPTURE_ALLOC_SYSTEM_AGP, KS_CAPTURE_ALLOC_SYSTEM, KS_CAPTURE_ALLOC_VRAM_MAPPED, PCAPTURE_MEMORY_ALLOCATION_FLAGS enumeration pointer [Streaming Media Devices], avstruct_2c1411b2-f4a6-44f9-ba68-63f2f5654105.xml, KS_CAPTURE_ALLOC_VRAM, ksmedia/CAPTURE_MEMORY_ALLOCATION_FLAGS, stream.capture_memory_allocation_flags, ksmedia/PCAPTURE_MEMORY_ALLOCATION_FLAGS, ksmedia/KS_CAPTURE_ALLOC_INVALID
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	CAPTURE_MEMORY_ALLOCATION_FLAGS
+product: Windows
+targetos: Windows
+req.typenames: "*PCAPTURE_MEMORY_ALLOCATION_FLAGS, CAPTURE_MEMORY_ALLOCATION_FLAGS"
 ---
 
 # *PCAPTURE_MEMORY_ALLOCATION_FLAGS Enumeration
@@ -55,36 +60,36 @@ typedef enum  {
 ## Constants
 
 <table>
-
-<tr>
-<td>KS_CAPTURE_ALLOC_INVALID</td>
-<td>Invalid memory surface.</td>
-</tr>
-
-<tr>
-<td>KS_CAPTURE_ALLOC_SECURE_BUFFER</td>
-<td></td>
-</tr>
-
-<tr>
-<td>KS_CAPTURE_ALLOC_SYSTEM</td>
-<td>Not currently supported.</td>
-</tr>
-
-<tr>
-<td>KS_CAPTURE_ALLOC_SYSTEM_AGP</td>
-<td>Identifies a surface in system memory that is tagged as AGP accessible.</td>
-</tr>
-
-<tr>
-<td>KS_CAPTURE_ALLOC_VRAM</td>
-<td>Identifies a surface in display memory.</td>
-</tr>
-
-<tr>
-<td>KS_CAPTURE_ALLOC_VRAM_MAPPED</td>
-<td>Not currently supported.</td>
-</tr>
+            
+                <tr>
+                    <td>KS_CAPTURE_ALLOC_INVALID</td>
+                    <td>Invalid memory surface.</td>
+                </tr>
+            
+                <tr>
+                    <td>KS_CAPTURE_ALLOC_SECURE_BUFFER</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>KS_CAPTURE_ALLOC_SYSTEM</td>
+                    <td>Not currently supported.</td>
+                </tr>
+            
+                <tr>
+                    <td>KS_CAPTURE_ALLOC_SYSTEM_AGP</td>
+                    <td>Identifies a surface in system memory that is tagged as AGP accessible.</td>
+                </tr>
+            
+                <tr>
+                    <td>KS_CAPTURE_ALLOC_VRAM</td>
+                    <td>Identifies a surface in display memory.</td>
+                </tr>
+            
+                <tr>
+                    <td>KS_CAPTURE_ALLOC_VRAM_MAPPED</td>
+                    <td>Not currently supported.</td>
+                </tr>
 </table>
 
 
@@ -93,9 +98,9 @@ typedef enum  {
 | ---- |:---- |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
-## See Also
+    ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565209">KSPROPERTY_PREFERRED_CAPTURE_SURFACE</a>
+        <a href="https://msdn.microsoft.com/library/windows/hardware/ff565209">KSPROPERTY_PREFERRED_CAPTURE_SURFACE</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565130">KSPROPERTY_CURRENT_CAPTURE_SURFACE</a>
 

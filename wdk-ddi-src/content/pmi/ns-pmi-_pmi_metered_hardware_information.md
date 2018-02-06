@@ -1,41 +1,46 @@
 ---
-UID : NS:pmi._PMI_METERED_HARDWARE_INFORMATION
-title : "_PMI_METERED_HARDWARE_INFORMATION"
-author : windows-driver-content
-description : The PMI_METERED_HARDWARE_INFORMATION structure contains information about one or more power supplies that are monitored by the power meter.
-old-location : powermeter\pmi_metered_hardware_information.htm
-old-project : powermeter
-ms.assetid : 44dcfd41-7f0e-487e-8b08-5f301f17e7c1
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : pmi/PPMI_METERED_HARDWARE_INFORMATION, PowerMeterRef_34a15685-680d-467d-bd78-2c933d614214.xml, _PMI_METERED_HARDWARE_INFORMATION, PPMI_METERED_HARDWARE_INFORMATION structure pointer [Power Metering and Budgeting Devices], PMI_METERED_HARDWARE_INFORMATION structure [Power Metering and Budgeting Devices], PPMI_METERED_HARDWARE_INFORMATION, PMI_METERED_HARDWARE_INFORMATION, powermeter.pmi_metered_hardware_information, pmi/PMI_METERED_HARDWARE_INFORMATION, *PPMI_METERED_HARDWARE_INFORMATION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : pmi.h
-req.include-header : Pmi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7, Windows Server 2008 R2, and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PMI_METERED_HARDWARE_INFORMATION, *PPMI_METERED_HARDWARE_INFORMATION
+UID: NS:pmi._PMI_METERED_HARDWARE_INFORMATION
+title: "_PMI_METERED_HARDWARE_INFORMATION"
+author: windows-driver-content
+description: The PMI_METERED_HARDWARE_INFORMATION structure contains information about one or more power supplies that are monitored by the power meter.
+old-location: powermeter\pmi_metered_hardware_information.htm
+old-project: powermeter
+ms.assetid: 44dcfd41-7f0e-487e-8b08-5f301f17e7c1
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: pmi/PPMI_METERED_HARDWARE_INFORMATION, PowerMeterRef_34a15685-680d-467d-bd78-2c933d614214.xml, _PMI_METERED_HARDWARE_INFORMATION, PPMI_METERED_HARDWARE_INFORMATION structure pointer [Power Metering and Budgeting Devices], PMI_METERED_HARDWARE_INFORMATION structure [Power Metering and Budgeting Devices], PPMI_METERED_HARDWARE_INFORMATION, PMI_METERED_HARDWARE_INFORMATION, powermeter.pmi_metered_hardware_information, pmi/PMI_METERED_HARDWARE_INFORMATION, *PPMI_METERED_HARDWARE_INFORMATION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: pmi.h
+req.include-header: Pmi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7, Windows Server 2008 R2, and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	pmi.h
+apiname:
+-	PMI_METERED_HARDWARE_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: PMI_METERED_HARDWARE_INFORMATION, *PPMI_METERED_HARDWARE_INFORMATION
 ---
 
 # _PMI_METERED_HARDWARE_INFORMATION structure

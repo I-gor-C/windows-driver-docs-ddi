@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.IoSetDevicePropertyData
-title : IoSetDevicePropertyData function
-author : windows-driver-content
-description : The IoSetDevicePropertyData routine modifies the current setting for a device property.
-old-location : kernel\iosetdevicepropertydata.htm
-old-project : kernel
-ms.assetid : 8e535a6a-9b17-4ef6-b068-43042a589ac0
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : IoSetDevicePropertyData routine [Kernel-Mode Driver Architecture], IoSetDevicePropertyData, kernel.iosetdevicepropertydata, wdm/IoSetDevicePropertyData, k104_a7cd308b-4d43-4364-80fb-ae773d0de101.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.IoSetDevicePropertyData
+title: IoSetDevicePropertyData function
+author: windows-driver-content
+description: The IoSetDevicePropertyData routine modifies the current setting for a device property.
+old-location: kernel\iosetdevicepropertydata.htm
+old-project: kernel
+ms.assetid: 8e535a6a-9b17-4ef6-b068-43042a589ac0
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: IoSetDevicePropertyData routine [Kernel-Mode Driver Architecture], IoSetDevicePropertyData, kernel.iosetdevicepropertydata, wdm/IoSetDevicePropertyData, k104_a7cd308b-4d43-4364-80fb-ae773d0de101.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoSetDevicePropertyData
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

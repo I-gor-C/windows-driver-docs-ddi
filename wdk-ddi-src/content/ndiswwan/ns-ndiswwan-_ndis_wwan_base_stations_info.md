@@ -1,41 +1,46 @@
 ---
-UID : NS:ndiswwan._NDIS_WWAN_BASE_STATIONS_INFO
-title : "_NDIS_WWAN_BASE_STATIONS_INFO"
-author : windows-driver-content
-description : The NDIS_WWAN_BASE_STATIONS_INFO structure contains information about both serving and neighboring base stations.
-old-location : netvista\ndis_wwan_base_stations_info.htm
-old-project : netvista
-ms.assetid : 7C0E0903-F564-4F2B-95F9-FA8512FEF61B
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : "*PNDIS_WWAN_BASE_STATIONS_INFO, PNDIS_WWAN_BASE_STATIONS_INFO, netvista.ndis_wwan_base_stations_info, ndiswwan/NDIS_WWAN_BASE_STATIONS_INFO, _NDIS_WWAN_BASE_STATIONS_INFO, NDIS_WWAN_BASE_STATIONS_INFO structure [Network Drivers Starting with Windows Vista], ndiswwan/PNDIS_WWAN_BASE_STATIONS_INFO, NDIS_WWAN_BASE_STATIONS_INFO, PNDIS_WWAN_BASE_STATIONS_INFO structure pointer [Network Drivers Starting with Windows Vista]"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndiswwan.h
-req.include-header : Ndiswwan.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10, version 1709
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_WWAN_BASE_STATIONS_INFO, *PNDIS_WWAN_BASE_STATIONS_INFO
+UID: NS:ndiswwan._NDIS_WWAN_BASE_STATIONS_INFO
+title: "_NDIS_WWAN_BASE_STATIONS_INFO"
+author: windows-driver-content
+description: The NDIS_WWAN_BASE_STATIONS_INFO structure contains information about both serving and neighboring base stations.
+old-location: netvista\ndis_wwan_base_stations_info.htm
+old-project: netvista
+ms.assetid: 7C0E0903-F564-4F2B-95F9-FA8512FEF61B
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: "*PNDIS_WWAN_BASE_STATIONS_INFO, PNDIS_WWAN_BASE_STATIONS_INFO, netvista.ndis_wwan_base_stations_info, ndiswwan/NDIS_WWAN_BASE_STATIONS_INFO, _NDIS_WWAN_BASE_STATIONS_INFO, NDIS_WWAN_BASE_STATIONS_INFO structure [Network Drivers Starting with Windows Vista], ndiswwan/PNDIS_WWAN_BASE_STATIONS_INFO, NDIS_WWAN_BASE_STATIONS_INFO, PNDIS_WWAN_BASE_STATIONS_INFO structure pointer [Network Drivers Starting with Windows Vista]"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndiswwan.h
+req.include-header: Ndiswwan.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10, version 1709
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndiswwan.h
+apiname:
+-	NDIS_WWAN_BASE_STATIONS_INFO
+product: Windows
+targetos: Windows
+req.typenames: NDIS_WWAN_BASE_STATIONS_INFO, *PNDIS_WWAN_BASE_STATIONS_INFO
 ---
 
 # _NDIS_WWAN_BASE_STATIONS_INFO structure

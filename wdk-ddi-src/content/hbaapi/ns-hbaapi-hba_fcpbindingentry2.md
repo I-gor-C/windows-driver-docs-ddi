@@ -1,41 +1,46 @@
 ---
-UID : NS:hbaapi.HBA_FCPBindingEntry2
-title : HBA_FCPBindingEntry2
-author : windows-driver-content
-description : The HBA_FCPBindingEntry2 structure defines a binding between the information that uniquely identifies a logical unit for the operating system and the fibre channel protocol (FCP) identifier for the logical unit.
-old-location : storage\hba_fcpbindingentry2.htm
-old-project : storage
-ms.assetid : e2e7353d-2c83-4704-bec4-9485ab3c7706
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : "*PHBA_FCPBINDINGENTRY2, storage.hba_fcpbindingentry2, HBA_FCPBINDINGENTRY2, hbaapi/HBA_FCPBindingEntry2, HBA_FCPBindingEntry2 structure [Storage Devices], hbaapi/PHBA_FCPBINDINGENTRY2, HBA_FCPBindingEntry2, HBA_FCPBINDINGENTRY2 structure [Storage Devices], PHBA_FCPBINDINGENTRY2 structure pointer [Storage Devices], structs-Fibre_168ea26c-34d1-4843-8464-528dc53e3953.xml, PHBA_FCPBINDINGENTRY2"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : hbaapi.h
-req.include-header : Hbaapi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PHBA_FCPBINDINGENTRY2, HBA_FCPBINDINGENTRY2"
+UID: NS:hbaapi.HBA_FCPBindingEntry2
+title: HBA_FCPBindingEntry2
+author: windows-driver-content
+description: The HBA_FCPBindingEntry2 structure defines a binding between the information that uniquely identifies a logical unit for the operating system and the fibre channel protocol (FCP) identifier for the logical unit.
+old-location: storage\hba_fcpbindingentry2.htm
+old-project: storage
+ms.assetid: e2e7353d-2c83-4704-bec4-9485ab3c7706
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: "*PHBA_FCPBINDINGENTRY2, storage.hba_fcpbindingentry2, HBA_FCPBINDINGENTRY2, hbaapi/HBA_FCPBindingEntry2, HBA_FCPBindingEntry2 structure [Storage Devices], hbaapi/PHBA_FCPBINDINGENTRY2, HBA_FCPBindingEntry2, HBA_FCPBINDINGENTRY2 structure [Storage Devices], PHBA_FCPBINDINGENTRY2 structure pointer [Storage Devices], structs-Fibre_168ea26c-34d1-4843-8464-528dc53e3953.xml, PHBA_FCPBINDINGENTRY2"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: hbaapi.h
+req.include-header: Hbaapi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hbaapi.h
+apiname:
+-	HBA_FCPBINDINGENTRY2
+product: Windows
+targetos: Windows
+req.typenames: "*PHBA_FCPBINDINGENTRY2, HBA_FCPBINDINGENTRY2"
 ---
 
 # HBA_FCPBindingEntry2 structure

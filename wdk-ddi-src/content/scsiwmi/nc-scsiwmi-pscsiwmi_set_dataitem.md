@@ -1,42 +1,47 @@
 ---
-UID : NC:scsiwmi.PSCSIWMI_SET_DATAITEM
-title : PSCSIWMI_SET_DATAITEM
-author : windows-driver-content
-description : A miniport driver's HwScsiWmiSetDataItem routine is called to change a single data item in an instance of a data block.
-old-location : storage\hwscsiwmisetdataitem.htm
-old-project : storage
-ms.assetid : 24b8415e-4326-4aef-bcbb-fabffa25c7d6
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.hwscsiwmisetdataitem, HwScsiWmiSetDataItem callback function [Storage Devices], HwScsiWmiSetDataItem, PSCSIWMI_SET_DATAITEM, PSCSIWMI_SET_DATAITEM, scsiwmi/HwScsiWmiSetDataItem, Scsimini_6cc9b791-9522-4839-b60b-776c73b04d38.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : scsiwmi.h
-req.include-header : Scsiwmi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SCSISCAN_INFO, *PSCSISCAN_INFO
-req.product : Windows 10 or later.
+UID: NC:scsiwmi.PSCSIWMI_SET_DATAITEM
+title: PSCSIWMI_SET_DATAITEM
+author: windows-driver-content
+description: A miniport driver's HwScsiWmiSetDataItem routine is called to change a single data item in an instance of a data block.
+old-location: storage\hwscsiwmisetdataitem.htm
+old-project: storage
+ms.assetid: 24b8415e-4326-4aef-bcbb-fabffa25c7d6
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.hwscsiwmisetdataitem, HwScsiWmiSetDataItem callback function [Storage Devices], HwScsiWmiSetDataItem, PSCSIWMI_SET_DATAITEM, PSCSIWMI_SET_DATAITEM, scsiwmi/HwScsiWmiSetDataItem, Scsimini_6cc9b791-9522-4839-b60b-776c73b04d38.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: scsiwmi.h
+req.include-header: Scsiwmi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	scsiwmi.h
+apiname:
+-	HwScsiWmiSetDataItem
+product: Windows
+targetos: Windows
+req.typenames: SCSISCAN_INFO, *PSCSISCAN_INFO
+req.product: Windows 10 or later.
 ---
 
 

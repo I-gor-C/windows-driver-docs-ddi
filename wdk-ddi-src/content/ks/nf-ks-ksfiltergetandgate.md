@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsFilterGetAndGate
-title : KsFilterGetAndGate function
-author : windows-driver-content
-description : The KsFilterGetAndGate function returns Filter's AND gate.
-old-location : stream\ksfiltergetandgate.htm
-old-project : stream
-ms.assetid : b5f7c4ed-0596-4e88-b987-fd454e4b4971
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ks/KsFilterGetAndGate, avfunc_58886874-f3f3-4e2d-a69c-e85260dcc702.xml, KsFilterGetAndGate function [Streaming Media Devices], KsFilterGetAndGate, stream.ksfiltergetandgate
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsFilterGetAndGate
+title: KsFilterGetAndGate function
+author: windows-driver-content
+description: The KsFilterGetAndGate function returns Filter's AND gate.
+old-location: stream\ksfiltergetandgate.htm
+old-project: stream
+ms.assetid: b5f7c4ed-0596-4e88-b987-fd454e4b4971
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ks/KsFilterGetAndGate, avfunc_58886874-f3f3-4e2d-a69c-e85260dcc702.xml, KsFilterGetAndGate function [Streaming Media Devices], KsFilterGetAndGate, stream.ksfiltergetandgate
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsFilterGetAndGate
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

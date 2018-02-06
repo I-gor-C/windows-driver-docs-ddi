@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugClient6.SetEventContextCallbacks
-title : IDebugClient6::SetEventContextCallbacks method
-author : windows-driver-content
-description : Registers an event callbacks object with this client.
-old-location : debugger\idebugclient6_seteventcontextcallbacks.htm
-old-project : debugger
-ms.assetid : 246573DB-5FEB-4068-8DB8-950F5EDFD1A9
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugClient6 interface [Windows Debugging], SetEventContextCallbacks method, SetEventContextCallbacks, IDebugClient6, IDebugClient6::SetEventContextCallbacks, SetEventContextCallbacks method [Windows Debugging], dbgeng/IDebugClient6::SetEventContextCallbacks, debugger.idebugclient6_seteventcontextcallbacks, SetEventContextCallbacks method [Windows Debugging], IDebugClient6 interface
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugClient6.SetEventContextCallbacks
+title: IDebugClient6::SetEventContextCallbacks method
+author: windows-driver-content
+description: Registers an event callbacks object with this client.
+old-location: debugger\idebugclient6_seteventcontextcallbacks.htm
+old-project: debugger
+ms.assetid: 246573DB-5FEB-4068-8DB8-950F5EDFD1A9
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugClient6 interface [Windows Debugging], SetEventContextCallbacks method, SetEventContextCallbacks, IDebugClient6, IDebugClient6::SetEventContextCallbacks, SetEventContextCallbacks method [Windows Debugging], dbgeng/IDebugClient6::SetEventContextCallbacks, debugger.idebugclient6_seteventcontextcallbacks, SetEventContextCallbacks method [Windows Debugging], IDebugClient6 interface
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugClient6.SetEventContextCallbacks
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

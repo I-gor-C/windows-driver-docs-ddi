@@ -1,41 +1,46 @@
 ---
-UID : NS:fwpsk.FWPS_PACKET_LIST_FWP_INFORMATION0_
-title : FWPS_PACKET_LIST_FWP_INFORMATION0_
-author : windows-driver-content
-description : The FWPS_PACKET_LIST_FWP_INFORMATION0 structure defines Windows Filtering Platform information associated with a packet list.Note  FWPS_PACKET_LIST_FWP_INFORMATION0 is a specific version of FWPS_PACKET_LIST_FWP_INFORMATION.
-old-location : netvista\fwps_packet_list_fwp_information0.htm
-old-project : netvista
-ms.assetid : e2d3faf3-cd3b-4147-8ceb-5b3f0c257939
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : FWPS_PACKET_LIST_FWP_INFORMATION0_, FWPS_PACKET_LIST_FWP_INFORMATION0, fwpsk/FWPS_PACKET_LIST_FWP_INFORMATION0, wfp_ref_3_struct_3_fwps_P-Z_ae770ad6-5c74-4954-98ca-ffb23f8dcc7c.xml, FWPS_PACKET_LIST_FWP_INFORMATION0 structure [Network Drivers Starting with Windows Vista], netvista.fwps_packet_list_fwp_information0
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : fwpsk.h
-req.include-header : Fwpsk.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FWPS_PACKET_LIST_FWP_INFORMATION0
+UID: NS:fwpsk.FWPS_PACKET_LIST_FWP_INFORMATION0_
+title: FWPS_PACKET_LIST_FWP_INFORMATION0_
+author: windows-driver-content
+description: The FWPS_PACKET_LIST_FWP_INFORMATION0 structure defines Windows Filtering Platform information associated with a packet list.Note  FWPS_PACKET_LIST_FWP_INFORMATION0 is a specific version of FWPS_PACKET_LIST_FWP_INFORMATION.
+old-location: netvista\fwps_packet_list_fwp_information0.htm
+old-project: netvista
+ms.assetid: e2d3faf3-cd3b-4147-8ceb-5b3f0c257939
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: FWPS_PACKET_LIST_FWP_INFORMATION0_, FWPS_PACKET_LIST_FWP_INFORMATION0, fwpsk/FWPS_PACKET_LIST_FWP_INFORMATION0, wfp_ref_3_struct_3_fwps_P-Z_ae770ad6-5c74-4954-98ca-ffb23f8dcc7c.xml, FWPS_PACKET_LIST_FWP_INFORMATION0 structure [Network Drivers Starting with Windows Vista], netvista.fwps_packet_list_fwp_information0
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: fwpsk.h
+req.include-header: Fwpsk.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	fwpsk.h
+apiname:
+-	FWPS_PACKET_LIST_FWP_INFORMATION0
+product: Windows
+targetos: Windows
+req.typenames: FWPS_PACKET_LIST_FWP_INFORMATION0
 ---
 
 # FWPS_PACKET_LIST_FWP_INFORMATION0_ structure

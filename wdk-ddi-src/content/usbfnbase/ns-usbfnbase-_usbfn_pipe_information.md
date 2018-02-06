@@ -1,42 +1,47 @@
 ---
-UID : NS:usbfnbase._USBFN_PIPE_INFORMATION
-title : "_USBFN_PIPE_INFORMATION"
-author : windows-driver-content
-description : Describes attributes of a pipe associated with an endpoint on a specific interface.
-old-location : buses\usbfn_pipe_information.htm
-old-project : usbref
-ms.assetid : F8BBD279-3694-4559-83B3-9312EF4153C0
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : usbfnbase/USBFN_PIPE_INFORMATION, _USBFN_PIPE_INFORMATION, PUSBFN_PIPE_INFORMATION structure pointer [Buses], USBFN_PIPE_INFORMATION structure [Buses], PUSBFN_PIPE_INFORMATION, usbfnbase/PUSBFN_PIPE_INFORMATION, buses.usbfn_pipe_information, USBFN_PIPE_INFORMATION, *PUSBFN_PIPE_INFORMATION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : usbfnbase.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : USBFN_PIPE_INFORMATION, *PUSBFN_PIPE_INFORMATION
-req.product : Windows 10 or later.
+UID: NS:usbfnbase._USBFN_PIPE_INFORMATION
+title: "_USBFN_PIPE_INFORMATION"
+author: windows-driver-content
+description: Describes attributes of a pipe associated with an endpoint on a specific interface.
+old-location: buses\usbfn_pipe_information.htm
+old-project: usbref
+ms.assetid: F8BBD279-3694-4559-83B3-9312EF4153C0
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: usbfnbase/USBFN_PIPE_INFORMATION, _USBFN_PIPE_INFORMATION, PUSBFN_PIPE_INFORMATION structure pointer [Buses], USBFN_PIPE_INFORMATION structure [Buses], PUSBFN_PIPE_INFORMATION, usbfnbase/PUSBFN_PIPE_INFORMATION, buses.usbfn_pipe_information, USBFN_PIPE_INFORMATION, *PUSBFN_PIPE_INFORMATION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: usbfnbase.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	usbfnbase.h
+apiname:
+-	USBFN_PIPE_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: USBFN_PIPE_INFORMATION, *PUSBFN_PIPE_INFORMATION
+req.product: Windows 10 or later.
 ---
 
 # _USBFN_PIPE_INFORMATION structure

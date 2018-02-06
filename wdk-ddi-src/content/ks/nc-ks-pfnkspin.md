@@ -1,41 +1,46 @@
 ---
-UID : NC:ks.PFNKSPIN
-title : PFNKSPIN
-author : windows-driver-content
-description : An AVStream minidriver's callback routine is called when:\_There is data available for a KSPIN structure to process. Use this routine to perform Pin-Centric Processing.The relevant KSPIN is serving as a sink pin and is connected to an AVStream source pin.
-old-location : stream\avstrminipinprocess.htm
-old-project : stream
-ms.assetid : d2315dd9-1643-4b8e-a010-8fccc582ca2b
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.avstrminipinprocess, AVStrMiniPinProcess, AVStrMiniPinConnect, MyAVStrMiniPin routine [Streaming Media Devices], MyAVStrMiniPin, PFNKSPIN, PFNKSPIN, ks/MyAVStrMiniPin, avstclbk_9c9fb1b9-d592-41de-8190-b8b2808ea35b.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "(See Remarks section)"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KEYWORDSELECTOR
+UID: NC:ks.PFNKSPIN
+title: PFNKSPIN
+author: windows-driver-content
+description: An AVStream minidriver's callback routine is called when:\_There is data available for a KSPIN structure to process. Use this routine to perform Pin-Centric Processing.The relevant KSPIN is serving as a sink pin and is connected to an AVStream source pin.
+old-location: stream\avstrminipinprocess.htm
+old-project: stream
+ms.assetid: d2315dd9-1643-4b8e-a010-8fccc582ca2b
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.avstrminipinprocess, AVStrMiniPinProcess, AVStrMiniPinConnect, MyAVStrMiniPin routine [Streaming Media Devices], MyAVStrMiniPin, PFNKSPIN, PFNKSPIN, ks/MyAVStrMiniPin, avstclbk_9c9fb1b9-d592-41de-8190-b8b2808ea35b.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "(See Remarks section)"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	ks.h
+apiname:
+-	MyAVStrMiniPin
+product: Windows
+targetos: Windows
+req.typenames: KEYWORDSELECTOR
 ---
 
 

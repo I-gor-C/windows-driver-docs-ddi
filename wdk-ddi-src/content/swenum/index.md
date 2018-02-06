@@ -1,12 +1,12 @@
 ---
-UID : NA:swenum
-ms.assetid : 631903f3-c726-3652-b341-ccbe7cdd2a44
-ms.author : windowsdriverdev
-ms.date : 01/18/18
-ms.keywords : 
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : portal
+UID: NA:swenum
+ms.assetid: 631903f3-c726-3652-b341-ccbe7cdd2a44
+ms.author: windowsdriverdev
+ms.date: 01/18/18
+ms.keywords: 
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: portal
 ---
 
 # swenum.h header

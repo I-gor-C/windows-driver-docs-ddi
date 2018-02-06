@@ -1,41 +1,46 @@
 ---
-UID : NF:extsfns.IDebugFailureAnalysis2.GetBuffer
-title : IDebugFailureAnalysis2::GetBuffer method
-author : windows-driver-content
-description : The GetBuffer method searches a DebugFailureAnalysis object for the first FA entry that has a specified tag. If it finds an FA entry with the specified tag, it gets the entry's data block.
-old-location : debugger\idebugfailureanalysis2_getbuffer.htm
-old-project : debugger
-ms.assetid : 262B5237-86BF-43D6-A29A-A868663EA5D9
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugFailureAnalysis2 interface [Windows Debugging], GetBuffer method, IDebugFailureAnalysis2, extsfns/IDebugFailureAnalysis2::GetBuffer, GetBuffer method [Windows Debugging], IDebugFailureAnalysis2 interface, debugger.idebugfailureanalysis2_getbuffer, GetBuffer, IDebugFailureAnalysis2::GetBuffer, GetBuffer method [Windows Debugging]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : extsfns.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : extsfns.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FA_EXTENSION_PLUGIN_PHASE
+UID: NF:extsfns.IDebugFailureAnalysis2.GetBuffer
+title: IDebugFailureAnalysis2::GetBuffer method
+author: windows-driver-content
+description: The GetBuffer method searches a DebugFailureAnalysis object for the first FA entry that has a specified tag. If it finds an FA entry with the specified tag, it gets the entry's data block.
+old-location: debugger\idebugfailureanalysis2_getbuffer.htm
+old-project: debugger
+ms.assetid: 262B5237-86BF-43D6-A29A-A868663EA5D9
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugFailureAnalysis2 interface [Windows Debugging], GetBuffer method, IDebugFailureAnalysis2, extsfns/IDebugFailureAnalysis2::GetBuffer, GetBuffer method [Windows Debugging], IDebugFailureAnalysis2 interface, debugger.idebugfailureanalysis2_getbuffer, GetBuffer, IDebugFailureAnalysis2::GetBuffer, GetBuffer method [Windows Debugging]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: extsfns.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: extsfns.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	extsfns.h
+apiname:
+-	IDebugFailureAnalysis2.GetBuffer
+product: Windows
+targetos: Windows
+req.typenames: FA_EXTENSION_PLUGIN_PHASE
 ---
 
 

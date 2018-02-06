@@ -1,41 +1,49 @@
 ---
-UID : NF:d3dkmthk.D3DKMTWaitForSynchronizationObject2
-title : D3DKMTWaitForSynchronizationObject2 function
-author : windows-driver-content
-description : The D3DKMTWaitForSynchronizationObject2 function inserts a wait for the specified synchronization objects in the specified context stream.
-old-location : display\d3dkmtwaitforsynchronizationobject2.htm
-old-project : display
-ms.assetid : 692d3336-d9cd-438b-a52c-ae4c55070227
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3dkmthk/D3DKMTWaitForSynchronizationObject2, D3DKMTWaitForSynchronizationObject2, OpenGL_Functions_4453dc1e-8824-494e-9a74-2d3628f1ff81.xml, D3DKMTWaitForSynchronizationObject2 function [Display Devices], display.d3dkmtwaitforsynchronizationobject2
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Universal
-req.target-min-winverclnt : D3DKMTWaitForSynchronizationObject2 is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Gdi32.lib
-req.dll : Gdi32.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_DRIVERVERSION
+UID: NF:d3dkmthk.D3DKMTWaitForSynchronizationObject2
+title: D3DKMTWaitForSynchronizationObject2 function
+author: windows-driver-content
+description: The D3DKMTWaitForSynchronizationObject2 function inserts a wait for the specified synchronization objects in the specified context stream.
+old-location: display\d3dkmtwaitforsynchronizationobject2.htm
+old-project: display
+ms.assetid: 692d3336-d9cd-438b-a52c-ae4c55070227
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3dkmthk/D3DKMTWaitForSynchronizationObject2, D3DKMTWaitForSynchronizationObject2, OpenGL_Functions_4453dc1e-8824-494e-9a74-2d3628f1ff81.xml, D3DKMTWaitForSynchronizationObject2 function [Display Devices], display.d3dkmtwaitforsynchronizationobject2
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Universal
+req.target-min-winverclnt: D3DKMTWaitForSynchronizationObject2 is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Gdi32.lib
+req.dll: Gdi32.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Gdi32.dll
+-	API-MS-Win-dx-d3dkmt-l1-1-0.dll
+-	API-MS-Win-dx-d3dkmt-l1-1-1.dll
+-	API-MS-Win-DX-D3DKMT-L1-1-2.dll
+apiname:
+-	D3DKMTWaitForSynchronizationObject2
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_DRIVERVERSION
 ---
 
 

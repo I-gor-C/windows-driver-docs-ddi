@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfusb.IWDFUsbTargetPipe.Reset
-title : IWDFUsbTargetPipe::Reset method
-author : windows-driver-content
-description : The Reset method resets the data toggle and clears the stall condition on a USB pipe.
-old-location : wdf\iwdfusbtargetpipe_reset.htm
-old-project : wdf
-ms.assetid : 8d42dd60-a032-4486-87e0-2204e833035b
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.iwdfusbtargetpipe_reset, Reset method, Reset method, IWDFUsbTargetPipe interface, IWDFUsbTargetPipe, Reset, IWDFUsbTargetPipe interface, Reset method, wudfusb/IWDFUsbTargetPipe::Reset, UMDFUSBref_510f6831-e75f-41b6-9637-7400fe89e4d3.xml, umdf.iwdfusbtargetpipe_reset, IWDFUsbTargetPipe::Reset
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfusb.h
-req.include-header : Wudfusb.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.5
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfusb.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
-req.product : Windows 10 or later.
+UID: NF:wudfusb.IWDFUsbTargetPipe.Reset
+title: IWDFUsbTargetPipe::Reset method
+author: windows-driver-content
+description: The Reset method resets the data toggle and clears the stall condition on a USB pipe.
+old-location: wdf\iwdfusbtargetpipe_reset.htm
+old-project: wdf
+ms.assetid: 8d42dd60-a032-4486-87e0-2204e833035b
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.iwdfusbtargetpipe_reset, Reset method, Reset method, IWDFUsbTargetPipe interface, IWDFUsbTargetPipe, Reset, IWDFUsbTargetPipe interface, Reset method, wudfusb/IWDFUsbTargetPipe::Reset, UMDFUSBref_510f6831-e75f-41b6-9637-7400fe89e4d3.xml, umdf.iwdfusbtargetpipe_reset, IWDFUsbTargetPipe::Reset
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfusb.h
+req.include-header: Wudfusb.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.5
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfusb.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFUsbTargetPipe.Reset
+product: Windows
+targetos: Windows
+req.typenames: WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
+req.product: Windows 10 or later.
 ---
 
 

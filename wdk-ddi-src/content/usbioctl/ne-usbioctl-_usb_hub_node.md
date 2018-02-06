@@ -1,42 +1,47 @@
 ---
-UID : NE:usbioctl._USB_HUB_NODE
-title : "_USB_HUB_NODE"
-author : windows-driver-content
-description : The USB_HUB_NODE enumerator indicates whether a device is a hub or a composite device.
-old-location : buses\usb_hub_node.htm
-old-project : usbref
-ms.assetid : fdd69121-2b3c-4394-b67e-c29f43daf113
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : usbioctl/UsbHub, usbioctl/USB_HUB_NODE, buses.usb_hub_node, usbioctl/UsbMIParent, USB_HUB_NODE, UsbMIParent, usbstrct_9dadc1ba-6775-48d3-8ebf-fa42ad6992bf.xml, USB_HUB_NODE enumeration [Buses], _USB_HUB_NODE, UsbHub
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : usbioctl.h
-req.include-header : Usbioctl.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : USB_HUB_NODE
-req.product : Windows 10 or later.
+UID: NE:usbioctl._USB_HUB_NODE
+title: "_USB_HUB_NODE"
+author: windows-driver-content
+description: The USB_HUB_NODE enumerator indicates whether a device is a hub or a composite device.
+old-location: buses\usb_hub_node.htm
+old-project: usbref
+ms.assetid: fdd69121-2b3c-4394-b67e-c29f43daf113
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: usbioctl/UsbHub, usbioctl/USB_HUB_NODE, buses.usb_hub_node, usbioctl/UsbMIParent, USB_HUB_NODE, UsbMIParent, usbstrct_9dadc1ba-6775-48d3-8ebf-fa42ad6992bf.xml, USB_HUB_NODE enumeration [Buses], _USB_HUB_NODE, UsbHub
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: usbioctl.h
+req.include-header: Usbioctl.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	usbioctl.h
+apiname:
+-	USB_HUB_NODE
+product: Windows
+targetos: Windows
+req.typenames: USB_HUB_NODE
+req.product: Windows 10 or later.
 ---
 
 # _USB_HUB_NODE Enumeration
@@ -53,30 +58,30 @@ typedef enum _USB_HUB_NODE {
 ## Constants
 
 <table>
-
-<tr>
-<td>UsbHub</td>
-<td>Indicates that the device is a hub.</td>
-</tr>
-
-<tr>
-<td>UsbMIParent</td>
-<td>Indicates that the device is a composite device with multiple interfaces.</td>
-</tr>
+            
+                <tr>
+                    <td>UsbHub</td>
+                    <td>Indicates that the device is a hub.</td>
+                </tr>
+            
+                <tr>
+                    <td>UsbMIParent</td>
+                    <td>Indicates that the device is a composite device with multiple interfaces.</td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-Composite devices are devices that have multiple interfaces. Windows loads the USB generic parent driver for composite devices, instead of the hub driver, but the generic parent driver performs many of the functions of the hub driver. It creates a child PDO for each interface, as though the interface were a separate device.
+        Composite devices are devices that have multiple interfaces. Windows loads the USB generic parent driver for composite devices, instead of the hub driver, but the generic parent driver performs many of the functions of the hub driver. It creates a child PDO for each interface, as though the interface were a separate device.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
 | **Header** | usbioctl.h (include Usbioctl.h) |
 
-## See Also
+    ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539322">USB Constants and Enumerations</a>
+        <a href="https://msdn.microsoft.com/library/windows/hardware/ff539322">USB Constants and Enumerations</a>
 
 <a href="..\usbioctl\ns-usbioctl-_usb_node_information.md">USB_NODE_INFORMATION</a>
 

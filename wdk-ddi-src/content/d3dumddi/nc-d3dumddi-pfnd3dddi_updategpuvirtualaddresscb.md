@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_UPDATEGPUVIRTUALADDRESSCB
-title : PFND3DDDI_UPDATEGPUVIRTUALADDRESSCB
-author : windows-driver-content
-description : pfnUpdateGpuVirtualAddressCb is a special operation used in the context of tile resources.
-old-location : display\pfnupdategpuvirtualaddresscb.htm
-old-project : display
-ms.assetid : 99D075A0-4483-47D1-BA24-80C45BFF407A
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.pfnupdategpuvirtualaddresscb, pfnUpdateGpuVirtualAddressCb callback function [Display Devices], pfnUpdateGpuVirtualAddressCb, PFND3DDDI_UPDATEGPUVIRTUALADDRESSCB, PFND3DDDI_UPDATEGPUVIRTUALADDRESSCB, d3dumddi/pfnUpdateGpuVirtualAddressCb
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_UPDATEGPUVIRTUALADDRESSCB
+title: PFND3DDDI_UPDATEGPUVIRTUALADDRESSCB
+author: windows-driver-content
+description: pfnUpdateGpuVirtualAddressCb is a special operation used in the context of tile resources.
+old-location: display\pfnupdategpuvirtualaddresscb.htm
+old-project: display
+ms.assetid: 99D075A0-4483-47D1-BA24-80C45BFF407A
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.pfnupdategpuvirtualaddresscb, pfnUpdateGpuVirtualAddressCb callback function [Display Devices], pfnUpdateGpuVirtualAddressCb, PFND3DDDI_UPDATEGPUVIRTUALADDRESSCB, PFND3DDDI_UPDATEGPUVIRTUALADDRESSCB, d3dumddi/pfnUpdateGpuVirtualAddressCb
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	pfnUpdateGpuVirtualAddressCb
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

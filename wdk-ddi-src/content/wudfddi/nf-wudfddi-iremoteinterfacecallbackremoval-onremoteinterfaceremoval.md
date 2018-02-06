@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IRemoteInterfaceCallbackRemoval.OnRemoteInterfaceRemoval
-title : IRemoteInterfaceCallbackRemoval::OnRemoteInterfaceRemoval method
-author : windows-driver-content
-description : A UMDF-based driver's OnRemoteInterfaceRemoval event callback function notifies the driver that it cannot use a device interface because the interface has been removed.
-old-location : wdf\iremoteinterfacecallbackremoval_onremoteinterfaceremoval.htm
-old-project : wdf
-ms.assetid : 0dfa2eb8-a7f6-46d9-9599-5e2aaf583f78
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : OnRemoteInterfaceRemoval method, IRemoteInterfaceCallbackRemoval interface, OnRemoteInterfaceRemoval method, umdf.iremoteinterfacecallbackremoval_onremoteinterfaceremoval, IRemoteInterfaceCallbackRemoval, UMDFIoTargetObjectRef_17c1557c-2046-4bea-8b7f-88fea7103155.xml, wudfddi/IRemoteInterfaceCallbackRemoval::OnRemoteInterfaceRemoval, OnRemoteInterfaceRemoval, wdf.iremoteinterfacecallbackremoval_onremoteinterfaceremoval, IRemoteInterfaceCallbackRemoval::OnRemoteInterfaceRemoval, OnRemoteInterfaceRemoval method, IRemoteInterfaceCallbackRemoval interface
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.9
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IRemoteInterfaceCallbackRemoval.OnRemoteInterfaceRemoval
+title: IRemoteInterfaceCallbackRemoval::OnRemoteInterfaceRemoval method
+author: windows-driver-content
+description: A UMDF-based driver's OnRemoteInterfaceRemoval event callback function notifies the driver that it cannot use a device interface because the interface has been removed.
+old-location: wdf\iremoteinterfacecallbackremoval_onremoteinterfaceremoval.htm
+old-project: wdf
+ms.assetid: 0dfa2eb8-a7f6-46d9-9599-5e2aaf583f78
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: OnRemoteInterfaceRemoval method, IRemoteInterfaceCallbackRemoval interface, OnRemoteInterfaceRemoval method, umdf.iremoteinterfacecallbackremoval_onremoteinterfaceremoval, IRemoteInterfaceCallbackRemoval, UMDFIoTargetObjectRef_17c1557c-2046-4bea-8b7f-88fea7103155.xml, wudfddi/IRemoteInterfaceCallbackRemoval::OnRemoteInterfaceRemoval, OnRemoteInterfaceRemoval, wdf.iremoteinterfacecallbackremoval_onremoteinterfaceremoval, IRemoteInterfaceCallbackRemoval::OnRemoteInterfaceRemoval, OnRemoteInterfaceRemoval method, IRemoteInterfaceCallbackRemoval interface
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.9
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Wudfddi.h
+apiname:
+-	IRemoteInterfaceCallbackRemoval.OnRemoteInterfaceRemoval
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

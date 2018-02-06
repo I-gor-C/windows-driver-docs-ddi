@@ -1,41 +1,46 @@
 ---
-UID : NF:portcls.IResourceList.AddEntry
-title : IResourceList::AddEntry method
-author : windows-driver-content
-description : The AddEntry method adds an entry to a resource list.
-old-location : audio\iresourcelist_addentry.htm
-old-project : audio
-ms.assetid : 7f4ac419-a24e-4421-9891-9fea9479e781
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : AddEntry method [Audio Devices], audio.iresourcelist_addentry, AddEntry method [Audio Devices], IResourceList interface, IResourceList, audmp-routines_6a6091c9-4cb3-40ca-8bb9-39b239c322b7.xml, AddEntry, IResourceList interface [Audio Devices], AddEntry method, portcls/IResourceList::AddEntry, IResourceList::AddEntry
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : portcls.h
-req.include-header : Portcls.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : portcls.h
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.IResourceList.AddEntry
+title: IResourceList::AddEntry method
+author: windows-driver-content
+description: The AddEntry method adds an entry to a resource list.
+old-location: audio\iresourcelist_addentry.htm
+old-project: audio
+ms.assetid: 7f4ac419-a24e-4421-9891-9fea9479e781
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: AddEntry method [Audio Devices], audio.iresourcelist_addentry, AddEntry method [Audio Devices], IResourceList interface, IResourceList, audmp-routines_6a6091c9-4cb3-40ca-8bb9-39b239c322b7.xml, AddEntry, IResourceList interface [Audio Devices], AddEntry method, portcls/IResourceList::AddEntry, IResourceList::AddEntry
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: portcls.h
+req.include-header: Portcls.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: portcls.h
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	portcls.h
+apiname:
+-	IResourceList.AddEntry
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

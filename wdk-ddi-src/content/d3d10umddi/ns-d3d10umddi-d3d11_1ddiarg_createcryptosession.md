@@ -1,41 +1,46 @@
 ---
-UID : NS:d3d10umddi.D3D11_1DDIARG_CREATECRYPTOSESSION
-title : D3D11_1DDIARG_CREATECRYPTOSESSION
-author : windows-driver-content
-description : Specifies the attributes of the cryptographic session to be created by the user-mode driver's CreateCryptoSession function.
-old-location : display\d3d11_1ddiarg_createcryptosession.htm
-old-project : display
-ms.assetid : 9e63a4eb-050b-4f12-ad43-00e62021abd3
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3d10umddi/D3D11_1DDIARG_CREATECRYPTOSESSION, D3D11_1DDIARG_CREATECRYPTOSESSION, D3D11_1DDIARG_CREATECRYPTOSESSION structure [Display Devices], D3D11_1DDI_CRYPTO_TYPE_PROPRIETARY, D3DWDDM2_0DDI_KEY_EXCHANGE_HW_PROTECTION, D3D11_1DDI_CRYPTO_TYPE_AES128_CTR, D3D11_1DDI_KEY_EXCHANGE_RSAES_OAEP, display.d3d11_1ddiarg_createcryptosession
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3D11_1DDIARG_CREATECRYPTOSESSION
+UID: NS:d3d10umddi.D3D11_1DDIARG_CREATECRYPTOSESSION
+title: D3D11_1DDIARG_CREATECRYPTOSESSION
+author: windows-driver-content
+description: Specifies the attributes of the cryptographic session to be created by the user-mode driver's CreateCryptoSession function.
+old-location: display\d3d11_1ddiarg_createcryptosession.htm
+old-project: display
+ms.assetid: 9e63a4eb-050b-4f12-ad43-00e62021abd3
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3d10umddi/D3D11_1DDIARG_CREATECRYPTOSESSION, D3D11_1DDIARG_CREATECRYPTOSESSION, D3D11_1DDIARG_CREATECRYPTOSESSION structure [Display Devices], D3D11_1DDI_CRYPTO_TYPE_PROPRIETARY, D3DWDDM2_0DDI_KEY_EXCHANGE_HW_PROTECTION, D3D11_1DDI_CRYPTO_TYPE_AES128_CTR, D3D11_1DDI_KEY_EXCHANGE_RSAES_OAEP, display.d3d11_1ddiarg_createcryptosession
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	D3d10umddi.h
+apiname:
+-	D3D11_1DDIARG_CREATECRYPTOSESSION
+product: Windows
+targetos: Windows
+req.typenames: D3D11_1DDIARG_CREATECRYPTOSESSION
 ---
 
 # D3D11_1DDIARG_CREATECRYPTOSESSION structure

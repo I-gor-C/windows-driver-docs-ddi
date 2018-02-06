@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.CcDeferWrite
-title : CcDeferWrite function
-author : windows-driver-content
-description : The CcDeferWrite routine defers writing to a cached file.
-old-location : ifsk\ccdeferwrite.htm
-old-project : ifsk
-ms.assetid : a655bcde-c627-4c90-8579-348ab0174c27
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ccref_06158fb8-cf33-42fa-bf7c-94b3a5e1fcfd.xml, ntifs/CcDeferWrite, CcDeferWrite, CcDeferWrite routine [Installable File System Drivers], ifsk.ccdeferwrite
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.CcDeferWrite
+title: CcDeferWrite function
+author: windows-driver-content
+description: The CcDeferWrite routine defers writing to a cached file.
+old-location: ifsk\ccdeferwrite.htm
+old-project: ifsk
+ms.assetid: a655bcde-c627-4c90-8579-348ab0174c27
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ccref_06158fb8-cf33-42fa-bf7c-94b3a5e1fcfd.xml, ntifs/CcDeferWrite, CcDeferWrite, CcDeferWrite routine [Installable File System Drivers], ifsk.ccdeferwrite
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	CcDeferWrite
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

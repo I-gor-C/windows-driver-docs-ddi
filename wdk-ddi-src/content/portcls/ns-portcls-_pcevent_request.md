@@ -1,41 +1,46 @@
 ---
-UID : NS:portcls._PCEVENT_REQUEST
-title : "_PCEVENT_REQUEST"
-author : windows-driver-content
-description : The PCEVENT_REQUEST structure specifies an event request.
-old-location : audio\pcevent_request.htm
-old-project : audio
-ms.assetid : b28bd1c2-9fbe-4427-a4ba-5b79a338e913
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : "*PPCEVENT_REQUEST, portcls/PCEVENT_REQUEST, PPCEVENT_REQUEST, PCEVENT_REQUEST structure [Audio Devices], audio.pcevent_request, portcls/PPCEVENT_REQUEST, _PCEVENT_REQUEST, audpc-struct_d60c4cf4-11e2-44b7-842a-65d965c8c422.xml, PCEVENT_REQUEST, PPCEVENT_REQUEST structure pointer [Audio Devices]"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : portcls.h
-req.include-header : Portcls.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPCEVENT_REQUEST, PCEVENT_REQUEST"
+UID: NS:portcls._PCEVENT_REQUEST
+title: "_PCEVENT_REQUEST"
+author: windows-driver-content
+description: The PCEVENT_REQUEST structure specifies an event request.
+old-location: audio\pcevent_request.htm
+old-project: audio
+ms.assetid: b28bd1c2-9fbe-4427-a4ba-5b79a338e913
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: "*PPCEVENT_REQUEST, portcls/PCEVENT_REQUEST, PPCEVENT_REQUEST, PCEVENT_REQUEST structure [Audio Devices], audio.pcevent_request, portcls/PPCEVENT_REQUEST, _PCEVENT_REQUEST, audpc-struct_d60c4cf4-11e2-44b7-842a-65d965c8c422.xml, PCEVENT_REQUEST, PPCEVENT_REQUEST structure pointer [Audio Devices]"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: portcls.h
+req.include-header: Portcls.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	portcls.h
+apiname:
+-	PCEVENT_REQUEST
+product: Windows
+targetos: Windows
+req.typenames: "*PPCEVENT_REQUEST, PCEVENT_REQUEST"
 ---
 
 # _PCEVENT_REQUEST structure

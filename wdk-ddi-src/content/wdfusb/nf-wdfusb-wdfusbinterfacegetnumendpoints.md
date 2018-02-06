@@ -1,42 +1,50 @@
 ---
-UID : NF:wdfusb.WdfUsbInterfaceGetNumEndpoints
-title : WdfUsbInterfaceGetNumEndpoints function
-author : windows-driver-content
-description : The WdfUsbInterfaceGetNumEndpoints method returns the number of endpoints that are associated with a specified alternate setting of a specified USB interface.
-old-location : wdf\wdfusbinterfacegetnumendpoints.htm
-old-project : wdf
-ms.assetid : 6041b96e-2364-4592-9bc5-de4fb1b36957
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdfusb/WdfUsbInterfaceGetNumEndpoints, WdfUsbInterfaceGetNumEndpoints method, WdfUsbInterfaceGetNumEndpoints, wdf.wdfusbinterfacegetnumendpoints, DFUsbRef_e0c08e93-b09f-40d0-9958-e4e51d7b887d.xml, PFN_WDFUSBINTERFACEGETNUMENDPOINTS, kmdf.wdfusbinterfacegetnumendpoints
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfusb.h
-req.include-header : Wdfusb.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2, UsbKmdfIrql, UsbKmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfusb.WdfUsbInterfaceGetNumEndpoints
+title: WdfUsbInterfaceGetNumEndpoints function
+author: windows-driver-content
+description: The WdfUsbInterfaceGetNumEndpoints method returns the number of endpoints that are associated with a specified alternate setting of a specified USB interface.
+old-location: wdf\wdfusbinterfacegetnumendpoints.htm
+old-project: wdf
+ms.assetid: 6041b96e-2364-4592-9bc5-de4fb1b36957
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdfusb/WdfUsbInterfaceGetNumEndpoints, WdfUsbInterfaceGetNumEndpoints method, WdfUsbInterfaceGetNumEndpoints, wdf.wdfusbinterfacegetnumendpoints, DFUsbRef_e0c08e93-b09f-40d0-9958-e4e51d7b887d.xml, PFN_WDFUSBINTERFACEGETNUMENDPOINTS, kmdf.wdfusbinterfacegetnumendpoints
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfusb.h
+req.include-header: Wdfusb.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2, UsbKmdfIrql, UsbKmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+-	WUDFx02000.dll
+-	WUDFx02000.dll.dll
+apiname:
+-	WdfUsbInterfaceGetNumEndpoints
+product: Windows
+targetos: Windows
+req.typenames: WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
+req.product: Windows 10 or later.
 ---
 
 

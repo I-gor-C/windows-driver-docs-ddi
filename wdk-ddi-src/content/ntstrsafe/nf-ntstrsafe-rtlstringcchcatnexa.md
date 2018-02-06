@@ -1,41 +1,49 @@
 ---
-UID : NF:ntstrsafe.RtlStringCchCatNExA
-title : RtlStringCchCatNExA function
-author : windows-driver-content
-description : The RtlStringCchCatNExW and RtlStringCchCatNExA functions concatenate two character-counted strings while limiting the size of the appended string.
-old-location : kernel\rtlstringcchcatnex.htm
-old-project : kernel
-ms.assetid : a8919512-0e39-46f0-b421-776341c61fa2
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : RtlStringCchCatNExW, RtlStringCchCatNEx, RtlStringCchCatNExA, STRSAFE_NO_TRUNCATION, STRSAFE_IGNORE_NULLS, kernel.rtlstringcchcatnex, RtlStringCchCatNExW function [Kernel-Mode Driver Architecture], safestrings_ff59619d-42b1-4d9f-80cf-8c6a331d1b3f.xml, STRSAFE_NULL_ON_FAILURE, STRSAFE_FILL_ON_FAILURE, ntstrsafe/RtlStringCchCatNExA, ntstrsafe/RtlStringCchCatNExW, STRSAFE_FILL_BEHIND_NULL
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntstrsafe.h
-req.include-header : Ntstrsafe.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows XP with Service Pack 1 (SP1) and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : RtlStringCchCatNExW (Unicode) and RtlStringCchCatNExA (ANSI)
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ntstrsafe.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : BATTERY_REPORTING_SCALE, *PBATTERY_REPORTING_SCALE
+UID: NF:ntstrsafe.RtlStringCchCatNExA
+title: RtlStringCchCatNExA function
+author: windows-driver-content
+description: The RtlStringCchCatNExW and RtlStringCchCatNExA functions concatenate two character-counted strings while limiting the size of the appended string.
+old-location: kernel\rtlstringcchcatnex.htm
+old-project: kernel
+ms.assetid: a8919512-0e39-46f0-b421-776341c61fa2
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: RtlStringCchCatNExW, RtlStringCchCatNEx, RtlStringCchCatNExA, STRSAFE_NO_TRUNCATION, STRSAFE_IGNORE_NULLS, kernel.rtlstringcchcatnex, RtlStringCchCatNExW function [Kernel-Mode Driver Architecture], safestrings_ff59619d-42b1-4d9f-80cf-8c6a331d1b3f.xml, STRSAFE_NULL_ON_FAILURE, STRSAFE_FILL_ON_FAILURE, ntstrsafe/RtlStringCchCatNExA, ntstrsafe/RtlStringCchCatNExW, STRSAFE_FILL_BEHIND_NULL
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntstrsafe.h
+req.include-header: Ntstrsafe.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows XP with Service Pack 1 (SP1) and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: RtlStringCchCatNExW (Unicode) and RtlStringCchCatNExA (ANSI)
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ntstrsafe.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ntstrsafe.lib
+-	Ntstrsafe.dll
+apiname:
+-	RtlStringCchCatNExW
+-	RtlStringCchCatNExA
+-	RtlStringCchCatNExW
+product: Windows
+targetos: Windows
+req.typenames: BATTERY_REPORTING_SCALE, *PBATTERY_REPORTING_SCALE
 ---
 
 

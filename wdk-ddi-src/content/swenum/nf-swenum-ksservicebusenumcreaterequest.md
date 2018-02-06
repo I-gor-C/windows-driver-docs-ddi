@@ -1,42 +1,48 @@
 ---
-UID : NF:swenum.KsServiceBusEnumCreateRequest
-title : KsServiceBusEnumCreateRequest function
-author : windows-driver-content
-description : The KsServiceBusEnumCreateRequest function services IRP_MJ_CREATE requests for the software bus device interface.
-old-location : stream\ksservicebusenumcreaterequest.htm
-old-project : stream
-ms.assetid : 23a2dd4d-ea30-4646-a4c3-bc90ad60933d
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ksfunc_2eac1d4d-0b8f-4997-8265-4f3e7354f3a1.xml, swenum/KsServiceBusEnumCreateRequest, KsServiceBusEnumCreateRequest, KsServiceBusEnumCreateRequest function [Streaming Media Devices], stream.ksservicebusenumcreaterequest
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : swenum.h
-req.include-header : Swenum.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STREAM_TIME_REFERENCE, *PSTREAM_TIME_REFERENCE
-req.product : Windows 10 or later.
+UID: NF:swenum.KsServiceBusEnumCreateRequest
+title: KsServiceBusEnumCreateRequest function
+author: windows-driver-content
+description: The KsServiceBusEnumCreateRequest function services IRP_MJ_CREATE requests for the software bus device interface.
+old-location: stream\ksservicebusenumcreaterequest.htm
+old-project: stream
+ms.assetid: 23a2dd4d-ea30-4646-a4c3-bc90ad60933d
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ksfunc_2eac1d4d-0b8f-4997-8265-4f3e7354f3a1.xml, swenum/KsServiceBusEnumCreateRequest, KsServiceBusEnumCreateRequest, KsServiceBusEnumCreateRequest function [Streaming Media Devices], stream.ksservicebusenumcreaterequest
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: swenum.h
+req.include-header: Swenum.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsServiceBusEnumCreateRequest
+product: Windows
+targetos: Windows
+req.typenames: STREAM_TIME_REFERENCE, *PSTREAM_TIME_REFERENCE
+req.product: Windows 10 or later.
 ---
 
 

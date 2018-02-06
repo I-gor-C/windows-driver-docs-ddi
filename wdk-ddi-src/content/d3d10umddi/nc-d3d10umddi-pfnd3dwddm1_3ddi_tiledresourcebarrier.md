@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3DWDDM1_3DDI_TILEDRESOURCEBARRIER
-title : PFND3DWDDM1_3DDI_TILEDRESOURCEBARRIER
-author : windows-driver-content
-description : Specifies a data access ordering constraint between multiple tiled resources. For more info about this constraint, see Remarks.
-old-location : display\tiledresourcebarrier.htm
-old-project : display
-ms.assetid : 9A2E9B3F-13E4-48D7-A3F3-E7CDCDD1E0CC
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.tiledresourcebarrier, TiledResourceBarrier callback function [Display Devices], TiledResourceBarrier, PFND3DWDDM1_3DDI_TILEDRESOURCEBARRIER, PFND3DWDDM1_3DDI_TILEDRESOURCEBARRIER, d3d10umddi/TiledResourceBarrier
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8.1,WDDM 1.3
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3DWDDM1_3DDI_TILEDRESOURCEBARRIER
+title: PFND3DWDDM1_3DDI_TILEDRESOURCEBARRIER
+author: windows-driver-content
+description: Specifies a data access ordering constraint between multiple tiled resources. For more info about this constraint, see Remarks.
+old-location: display\tiledresourcebarrier.htm
+old-project: display
+ms.assetid: 9A2E9B3F-13E4-48D7-A3F3-E7CDCDD1E0CC
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.tiledresourcebarrier, TiledResourceBarrier callback function [Display Devices], TiledResourceBarrier, PFND3DWDDM1_3DDI_TILEDRESOURCEBARRIER, PFND3DWDDM1_3DDI_TILEDRESOURCEBARRIER, d3d10umddi/TiledResourceBarrier
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8.1,WDDM 1.3
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	D3d10umddi.h
+apiname:
+-	TiledResourceBarrier
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

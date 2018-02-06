@@ -1,42 +1,47 @@
 ---
-UID : NC:wdm.PALLOCATE_ADAPTER_CHANNEL_EX
-title : PALLOCATE_ADAPTER_CHANNEL_EX
-author : windows-driver-content
-description : The AllocateAdapterChannelEx routine allocates the resources that are needed to perform a DMA transfer, and then calls the driver-supplied AdapterControl routine to initiate the DMA transfer.
-old-location : kernel\allocateadapterchannelex.htm
-old-project : kernel
-ms.assetid : BF255782-0C3E-4F36-BD38-79CE88E7F37D
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.allocateadapterchannelex, AllocateAdapterChannelEx, AllocateAdapterChannelEx callback function [Kernel-Mode Driver Architecture], AllocateAdapterChannelEx, PALLOCATE_ADAPTER_CHANNEL_EX, PALLOCATE_ADAPTER_CHANNEL_EX, wdm/AllocateAdapterChannelEx, DMA_SYNCHRONOUS_CALLBACK
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : DISPATCH_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
-req.product : Windows 10 or later.
+UID: NC:wdm.PALLOCATE_ADAPTER_CHANNEL_EX
+title: PALLOCATE_ADAPTER_CHANNEL_EX
+author: windows-driver-content
+description: The AllocateAdapterChannelEx routine allocates the resources that are needed to perform a DMA transfer, and then calls the driver-supplied AdapterControl routine to initiate the DMA transfer.
+old-location: kernel\allocateadapterchannelex.htm
+old-project: kernel
+ms.assetid: BF255782-0C3E-4F36-BD38-79CE88E7F37D
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.allocateadapterchannelex, AllocateAdapterChannelEx, AllocateAdapterChannelEx callback function [Kernel-Mode Driver Architecture], AllocateAdapterChannelEx, PALLOCATE_ADAPTER_CHANNEL_EX, PALLOCATE_ADAPTER_CHANNEL_EX, wdm/AllocateAdapterChannelEx, DMA_SYNCHRONOUS_CALLBACK
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: DISPATCH_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Wdm.h
+apiname:
+-	AllocateAdapterChannelEx
+product: Windows
+targetos: Windows
+req.typenames: WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+req.product: Windows 10 or later.
 ---
 
 

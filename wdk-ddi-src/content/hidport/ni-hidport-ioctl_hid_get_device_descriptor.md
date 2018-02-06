@@ -1,41 +1,46 @@
 ---
-UID : NI:hidport.IOCTL_HID_GET_DEVICE_DESCRIPTOR
-title : IOCTL_HID_GET_DEVICE_DESCRIPTOR
-author : windows-driver-content
-description : The IOCTL_HID_GET_DEVICE_DESCRIPTOR request obtains a HIDClass device's HID descriptor.
-old-location : hid\ioctl_hid_get_device_descriptor.htm
-old-project : hid
-ms.assetid : 89eac71d-c3f9-48b2-9174-26e4ccbe1d6e
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : hid.ioctl_hid_get_device_descriptor, IOCTL_HID_GET_DEVICE_DESCRIPTOR control code [Human Input Devices], IOCTL_HID_GET_DEVICE_DESCRIPTOR, hidport/IOCTL_HID_GET_DEVICE_DESCRIPTOR, hidioreq_4994292a-eb5e-4a7e-a1bf-b105836c3b59.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : hidport.h
-req.include-header : Hidport.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : USAGE_AND_PAGE, *PUSAGE_AND_PAGE
+UID: NI:hidport.IOCTL_HID_GET_DEVICE_DESCRIPTOR
+title: IOCTL_HID_GET_DEVICE_DESCRIPTOR
+author: windows-driver-content
+description: The IOCTL_HID_GET_DEVICE_DESCRIPTOR request obtains a HIDClass device's HID descriptor.
+old-location: hid\ioctl_hid_get_device_descriptor.htm
+old-project: hid
+ms.assetid: 89eac71d-c3f9-48b2-9174-26e4ccbe1d6e
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: hid.ioctl_hid_get_device_descriptor, IOCTL_HID_GET_DEVICE_DESCRIPTOR control code [Human Input Devices], IOCTL_HID_GET_DEVICE_DESCRIPTOR, hidport/IOCTL_HID_GET_DEVICE_DESCRIPTOR, hidioreq_4994292a-eb5e-4a7e-a1bf-b105836c3b59.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: hidport.h
+req.include-header: Hidport.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hidport.h
+apiname:
+-	IOCTL_HID_GET_DEVICE_DESCRIPTOR
+product: Windows
+targetos: Windows
+req.typenames: USAGE_AND_PAGE, *PUSAGE_AND_PAGE
 ---
 
 # IOCTL_HID_GET_DEVICE_DESCRIPTOR IOCTL

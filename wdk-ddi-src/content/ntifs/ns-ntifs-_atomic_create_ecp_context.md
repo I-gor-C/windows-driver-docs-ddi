@@ -1,41 +1,46 @@
 ---
-UID : NS:ntifs._ATOMIC_CREATE_ECP_CONTEXT
-title : "_ATOMIC_CREATE_ECP_CONTEXT"
-author : windows-driver-content
-description : This structure allows supplemental operations to be performed on a file atomically during create.
-old-location : ifsk\atomic_create_ecp_context.htm
-old-project : ifsk
-ms.assetid : CFA879CC-6124-4E1C-B440-358455A5E6EF
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ntifs/ATOMIC_CREATE_ECP_CONTEXT, ATOMIC_CREATE_ECP_IN_FLAG_VDL_SPECIFIED, ATOMIC_CREATE_ECP_OUT_FLAG_EOF_SET, ATOMIC_CREATE_ECP_OUT_FLAG_VDL_SET, ntifs/PATOMIC_CREATE_ECP_CONTEXT, ATOMIC_CREATE_ECP_IN_FLAG_BEST_EFFORT, ATOMIC_CREATE_ECP_IN_FLAG_OPERATION_MASK, ATOMIC_CREATE_ECP_IN_FLAG_REPARSE_POINT_SPECIFIED, ifsk.atomic_create_ecp_context, ATOMIC_CREATE_ECP_OUT_FLAG_REPARSE_POINT_SET, _ATOMIC_CREATE_ECP_CONTEXT, *PATOMIC_CREATE_ECP_CONTEXT, ATOMIC_CREATE_ECP_IN_FLAG_SPARSE_SPECIFIED, ATOMIC_CREATE_ECP_CONTEXT, PATOMIC_CREATE_ECP_CONTEXT, ATOMIC_CREATE_ECP_CONTEXT structure [Installable File System Drivers], ATOMIC_CREATE_ECP_OUT_FLAG_SPARSE_SET, ATOMIC_CREATE_ECP_IN_FLAG_EOF_SPECIFIED, ATOMIC_CREATE_ECP_OUT_FLAG_OPERATION_MASK, PATOMIC_CREATE_ECP_CONTEXT structure pointer [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntifs.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10, version 1607
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PATOMIC_CREATE_ECP_CONTEXT, ATOMIC_CREATE_ECP_CONTEXT"
+UID: NS:ntifs._ATOMIC_CREATE_ECP_CONTEXT
+title: "_ATOMIC_CREATE_ECP_CONTEXT"
+author: windows-driver-content
+description: This structure allows supplemental operations to be performed on a file atomically during create.
+old-location: ifsk\atomic_create_ecp_context.htm
+old-project: ifsk
+ms.assetid: CFA879CC-6124-4E1C-B440-358455A5E6EF
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ntifs/ATOMIC_CREATE_ECP_CONTEXT, ATOMIC_CREATE_ECP_IN_FLAG_VDL_SPECIFIED, ATOMIC_CREATE_ECP_OUT_FLAG_EOF_SET, ATOMIC_CREATE_ECP_OUT_FLAG_VDL_SET, ntifs/PATOMIC_CREATE_ECP_CONTEXT, ATOMIC_CREATE_ECP_IN_FLAG_BEST_EFFORT, ATOMIC_CREATE_ECP_IN_FLAG_OPERATION_MASK, ATOMIC_CREATE_ECP_IN_FLAG_REPARSE_POINT_SPECIFIED, ifsk.atomic_create_ecp_context, ATOMIC_CREATE_ECP_OUT_FLAG_REPARSE_POINT_SET, _ATOMIC_CREATE_ECP_CONTEXT, *PATOMIC_CREATE_ECP_CONTEXT, ATOMIC_CREATE_ECP_IN_FLAG_SPARSE_SPECIFIED, ATOMIC_CREATE_ECP_CONTEXT, PATOMIC_CREATE_ECP_CONTEXT, ATOMIC_CREATE_ECP_CONTEXT structure [Installable File System Drivers], ATOMIC_CREATE_ECP_OUT_FLAG_SPARSE_SET, ATOMIC_CREATE_ECP_IN_FLAG_EOF_SPECIFIED, ATOMIC_CREATE_ECP_OUT_FLAG_OPERATION_MASK, PATOMIC_CREATE_ECP_CONTEXT structure pointer [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntifs.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10, version 1607
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntifs.h
+apiname:
+-	ATOMIC_CREATE_ECP_CONTEXT
+product: Windows
+targetos: Windows
+req.typenames: "*PATOMIC_CREATE_ECP_CONTEXT, ATOMIC_CREATE_ECP_CONTEXT"
 ---
 
 # _ATOMIC_CREATE_ECP_CONTEXT structure

@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._D3DDDIARG_CREATEEXTENSIONDEVICE
-title : "_D3DDDIARG_CREATEEXTENSIONDEVICE"
-author : windows-driver-content
-description : The D3DDDIARG_CREATEEXTENSIONDEVICE structure describes a Microsoft DirectX Video Acceleration (DirectX VA) extension device to create.
-old-location : display\d3dddiarg_createextensiondevice.htm
-old-project : display
-ms.assetid : 33076a24-8856-4533-b4ab-ec1d7bdb083d
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DDDIARG_CREATEEXTENSIONDEVICE, D3DDDIARG_CREATEEXTENSIONDEVICE structure [Display Devices], display.d3dddiarg_createextensiondevice, _D3DDDIARG_CREATEEXTENSIONDEVICE, UMDisplayDriver_param_Structs_edb27385-af11-4750-aa90-854e21ee11a0.xml, d3dumddi/D3DDDIARG_CREATEEXTENSIONDEVICE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDIARG_CREATEEXTENSIONDEVICE
+UID: NS:d3dumddi._D3DDDIARG_CREATEEXTENSIONDEVICE
+title: "_D3DDDIARG_CREATEEXTENSIONDEVICE"
+author: windows-driver-content
+description: The D3DDDIARG_CREATEEXTENSIONDEVICE structure describes a Microsoft DirectX Video Acceleration (DirectX VA) extension device to create.
+old-location: display\d3dddiarg_createextensiondevice.htm
+old-project: display
+ms.assetid: 33076a24-8856-4533-b4ab-ec1d7bdb083d
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DDDIARG_CREATEEXTENSIONDEVICE, D3DDDIARG_CREATEEXTENSIONDEVICE structure [Display Devices], display.d3dddiarg_createextensiondevice, _D3DDDIARG_CREATEEXTENSIONDEVICE, UMDisplayDriver_param_Structs_edb27385-af11-4750-aa90-854e21ee11a0.xml, d3dumddi/D3DDDIARG_CREATEEXTENSIONDEVICE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	D3DDDIARG_CREATEEXTENSIONDEVICE
+product: Windows
+targetos: Windows
+req.typenames: D3DDDIARG_CREATEEXTENSIONDEVICE
 ---
 
 # _D3DDDIARG_CREATEEXTENSIONDEVICE structure

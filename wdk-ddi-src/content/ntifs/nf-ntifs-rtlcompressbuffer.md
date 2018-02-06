@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.RtlCompressBuffer
-title : RtlCompressBuffer function
-author : windows-driver-content
-description : The RtlCompressBuffer function compresses a buffer and can be used by a file system driver to facilitate the implementation of file compression.
-old-location : ifsk\rtlcompressbuffer.htm
-old-project : ifsk
-ms.assetid : 49fb1062-9709-4691-9655-8cbf3c5055fb
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : COMPRESSION_FORMAT_XPRESS, COMPRESSION_FORMAT_NONE, RtlCompressBuffer function [Installable File System Drivers], COMPRESSION_ENGINE_HIBER, rtlref_5d0857eb-eefe-4e85-8f89-fcbfe37ce41f.xml, RtlCompressBuffer, COMPRESSION_FORMAT_DEFAULT, COMPRESSION_ENGINE_MAXIMUM, COMPRESSION_ENGINE_STANDARD, ifsk.rtlcompressbuffer, COMPRESSION_FORMAT_LZNT1, ntifs/RtlCompressBuffer, COMPRESSION_FORMAT_XPRESS_HUFF
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Fltkernel.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting in Windows XP.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.RtlCompressBuffer
+title: RtlCompressBuffer function
+author: windows-driver-content
+description: The RtlCompressBuffer function compresses a buffer and can be used by a file system driver to facilitate the implementation of file compression.
+old-location: ifsk\rtlcompressbuffer.htm
+old-project: ifsk
+ms.assetid: 49fb1062-9709-4691-9655-8cbf3c5055fb
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: COMPRESSION_FORMAT_XPRESS, COMPRESSION_FORMAT_NONE, RtlCompressBuffer function [Installable File System Drivers], COMPRESSION_ENGINE_HIBER, rtlref_5d0857eb-eefe-4e85-8f89-fcbfe37ce41f.xml, RtlCompressBuffer, COMPRESSION_FORMAT_DEFAULT, COMPRESSION_ENGINE_MAXIMUM, COMPRESSION_ENGINE_STANDARD, ifsk.rtlcompressbuffer, COMPRESSION_FORMAT_LZNT1, ntifs/RtlCompressBuffer, COMPRESSION_FORMAT_XPRESS_HUFF
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Fltkernel.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting in Windows XP.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	RtlCompressBuffer
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

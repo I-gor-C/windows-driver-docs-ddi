@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddcdrm._CDROM_NOMINAL_PERFORMANCE_DESCRIPTOR
-title : "_CDROM_NOMINAL_PERFORMANCE_DESCRIPTOR"
-author : windows-driver-content
-description : The CDROM_NOMINAL_PERFORMANCE_DESCRIPTOR structure gives the host an approximation of logical unit performance.
-old-location : storage\cdrom_nominal_performance_descriptor.htm
-old-project : storage
-ms.assetid : F931CE79-7070-43B9-BFED-9F3D5B18623E
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : CDROM_NOMINAL_PERFORMANCE_DESCRIPTOR, CDROM_NOMINAL_PERFORMANCE_DESCRIPTOR structure [Storage Devices], PCDROM_NOMINAL_PERFORMANCE_DESCRIPTOR structure pointer [Storage Devices], ntddcdrm/CDROM_NOMINAL_PERFORMANCE_DESCRIPTOR, storage.cdrom_nominal_performance_descriptor, PCDROM_NOMINAL_PERFORMANCE_DESCRIPTOR, *PCDROM_NOMINAL_PERFORMANCE_DESCRIPTOR, _CDROM_NOMINAL_PERFORMANCE_DESCRIPTOR, ntddcdrm/PCDROM_NOMINAL_PERFORMANCE_DESCRIPTOR
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddcdrm.h
-req.include-header : Ntddcdrm.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PCDROM_NOMINAL_PERFORMANCE_DESCRIPTOR, CDROM_NOMINAL_PERFORMANCE_DESCRIPTOR"
+UID: NS:ntddcdrm._CDROM_NOMINAL_PERFORMANCE_DESCRIPTOR
+title: "_CDROM_NOMINAL_PERFORMANCE_DESCRIPTOR"
+author: windows-driver-content
+description: The CDROM_NOMINAL_PERFORMANCE_DESCRIPTOR structure gives the host an approximation of logical unit performance.
+old-location: storage\cdrom_nominal_performance_descriptor.htm
+old-project: storage
+ms.assetid: F931CE79-7070-43B9-BFED-9F3D5B18623E
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: CDROM_NOMINAL_PERFORMANCE_DESCRIPTOR, CDROM_NOMINAL_PERFORMANCE_DESCRIPTOR structure [Storage Devices], PCDROM_NOMINAL_PERFORMANCE_DESCRIPTOR structure pointer [Storage Devices], ntddcdrm/CDROM_NOMINAL_PERFORMANCE_DESCRIPTOR, storage.cdrom_nominal_performance_descriptor, PCDROM_NOMINAL_PERFORMANCE_DESCRIPTOR, *PCDROM_NOMINAL_PERFORMANCE_DESCRIPTOR, _CDROM_NOMINAL_PERFORMANCE_DESCRIPTOR, ntddcdrm/PCDROM_NOMINAL_PERFORMANCE_DESCRIPTOR
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddcdrm.h
+req.include-header: Ntddcdrm.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddcdrm.h
+apiname:
+-	CDROM_NOMINAL_PERFORMANCE_DESCRIPTOR
+product: Windows
+targetos: Windows
+req.typenames: "*PCDROM_NOMINAL_PERFORMANCE_DESCRIPTOR, CDROM_NOMINAL_PERFORMANCE_DESCRIPTOR"
 ---
 
 # _CDROM_NOMINAL_PERFORMANCE_DESCRIPTOR structure

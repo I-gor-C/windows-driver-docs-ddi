@@ -1,42 +1,48 @@
 ---
-UID : NF:vmbuskernelmodeclientlibapi.VmbChannelCreateGpadlFromMdl
-title : VmbChannelCreateGpadlFromMdl function
-author : windows-driver-content
-description : The VmbChannelCreateGpadlFromMdl function creates a Guest Physical Address Descriptor List (GPADL) that describes a client-side buffer. The GPADL can be used in the server to access the buffer.
-old-location : netvista\vmbchannelcreategpadlfrommdl.htm
-old-project : netvista
-ms.assetid : 6C63E250-1A11-45E8-B535-263806DA4A33
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : VmbChannelCreateGpadlFromMdl, VMBUS_CHANNEL_GPADL_READ_ONLY, vmbuskernelmodeclientlibapi/VmbChannelCreateGpadlFromMdl, VmbChannelCreateGpadlFromMdl function [Network Drivers Starting with Windows Vista], netvista.vmbchannelcreategpadlfrommdl
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : vmbuskernelmodeclientlibapi.h
-req.include-header : VmbusKernelModeClientLibApi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8.1
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 1.13
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Vmbkmcl.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PVIDEO_PORT_AGP_SERVICES, VIDEO_PORT_AGP_SERVICES"
-req.product : Windows 10 or later.
+UID: NF:vmbuskernelmodeclientlibapi.VmbChannelCreateGpadlFromMdl
+title: VmbChannelCreateGpadlFromMdl function
+author: windows-driver-content
+description: The VmbChannelCreateGpadlFromMdl function creates a Guest Physical Address Descriptor List (GPADL) that describes a client-side buffer. The GPADL can be used in the server to access the buffer.
+old-location: netvista\vmbchannelcreategpadlfrommdl.htm
+old-project: netvista
+ms.assetid: 6C63E250-1A11-45E8-B535-263806DA4A33
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: VmbChannelCreateGpadlFromMdl, VMBUS_CHANNEL_GPADL_READ_ONLY, vmbuskernelmodeclientlibapi/VmbChannelCreateGpadlFromMdl, VmbChannelCreateGpadlFromMdl function [Network Drivers Starting with Windows Vista], netvista.vmbchannelcreategpadlfrommdl
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: vmbuskernelmodeclientlibapi.h
+req.include-header: VmbusKernelModeClientLibApi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8.1
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 1.13
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Vmbkmcl.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	vmbkmcl.lib
+-	vmbkmcl.dll
+apiname:
+-	VmbChannelCreateGpadlFromMdl
+product: Windows
+targetos: Windows
+req.typenames: "*PVIDEO_PORT_AGP_SERVICES, VIDEO_PORT_AGP_SERVICES"
+req.product: Windows 10 or later.
 ---
 
 

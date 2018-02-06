@@ -1,41 +1,46 @@
 ---
-UID : NS:dxgiddi.DXGI_DDI_ARG_GET_GAMMA_CONTROL_CAPS
-title : DXGI_DDI_ARG_GET_GAMMA_CONTROL_CAPS
-author : windows-driver-content
-description : The DXGI_DDI_ARG_GET_GAMMA_CONTROL_CAPS structure contains gamma capabilities.
-old-location : display\dxgi_ddi_arg_get_gamma_control_caps.htm
-old-project : display
-ms.assetid : 1e7930e4-ab3e-4981-9533-ed1da8c777dc
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DXGI_DDI_ARG_GET_GAMMA_CONTROL_CAPS, DXGI_DDI_ARG_GET_GAMMA_CONTROL_CAPS structure [Display Devices], dxgiddi/DXGI_DDI_ARG_GET_GAMMA_CONTROL_CAPS, UMDisplayDriver_Dx10param_Structs_770eb1ba-2972-4133-b899-a096a53fc1de.xml, display.dxgi_ddi_arg_get_gamma_control_caps
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : dxgiddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGI_DDI_ARG_GET_GAMMA_CONTROL_CAPS
+UID: NS:dxgiddi.DXGI_DDI_ARG_GET_GAMMA_CONTROL_CAPS
+title: DXGI_DDI_ARG_GET_GAMMA_CONTROL_CAPS
+author: windows-driver-content
+description: The DXGI_DDI_ARG_GET_GAMMA_CONTROL_CAPS structure contains gamma capabilities.
+old-location: display\dxgi_ddi_arg_get_gamma_control_caps.htm
+old-project: display
+ms.assetid: 1e7930e4-ab3e-4981-9533-ed1da8c777dc
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DXGI_DDI_ARG_GET_GAMMA_CONTROL_CAPS, DXGI_DDI_ARG_GET_GAMMA_CONTROL_CAPS structure [Display Devices], dxgiddi/DXGI_DDI_ARG_GET_GAMMA_CONTROL_CAPS, UMDisplayDriver_Dx10param_Structs_770eb1ba-2972-4133-b899-a096a53fc1de.xml, display.dxgi_ddi_arg_get_gamma_control_caps
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: dxgiddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	dxgiddi.h
+apiname:
+-	DXGI_DDI_ARG_GET_GAMMA_CONTROL_CAPS
+product: Windows
+targetos: Windows
+req.typenames: DXGI_DDI_ARG_GET_GAMMA_CONTROL_CAPS
 ---
 
 # DXGI_DDI_ARG_GET_GAMMA_CONTROL_CAPS structure

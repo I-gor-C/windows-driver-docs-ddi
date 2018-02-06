@@ -1,41 +1,46 @@
 ---
-UID : NS:hpmi._HPMI_QUERY_CAPABILITIES_RESPONSE
-title : "_HPMI_QUERY_CAPABILITIES_RESPONSE"
-author : windows-driver-content
-description : HPMI_QUERY_CAPABILITIES_RESPONSE is a structure used to return information about software defined batteries (SDB).
-old-location : powermeter\hpmi_query_capabilities_response.htm
-old-project : powermeter
-ms.assetid : 2D7B6278-6D7A-41C4-B21A-D531CD8DCD91
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : "_HPMI_QUERY_CAPABILITIES_RESPONSE, HPMI_QUERY_CAPABILITIES_RESPONSE structure [Power Metering and Budgeting Devices], powermeter.hpmi_query_capabilities_response, hpmi/PHPMI_QUERY_CAPABILITIES_RESPONSE, HPMI_QUERY_CAPABILITIES_RESPONSE, *PHPMI_QUERY_CAPABILITIES_RESPONSE, PHPMI_QUERY_CAPABILITIES_RESPONSE structure pointer [Power Metering and Budgeting Devices], PHPMI_QUERY_CAPABILITIES_RESPONSE, hpmi/HPMI_QUERY_CAPABILITIES_RESPONSE"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : hpmi.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 10, version 1709 and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HPMI_QUERY_CAPABILITIES_RESPONSE, *PHPMI_QUERY_CAPABILITIES_RESPONSE
+UID: NS:hpmi._HPMI_QUERY_CAPABILITIES_RESPONSE
+title: "_HPMI_QUERY_CAPABILITIES_RESPONSE"
+author: windows-driver-content
+description: HPMI_QUERY_CAPABILITIES_RESPONSE is a structure used to return information about software defined batteries (SDB).
+old-location: powermeter\hpmi_query_capabilities_response.htm
+old-project: powermeter
+ms.assetid: 2D7B6278-6D7A-41C4-B21A-D531CD8DCD91
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: "_HPMI_QUERY_CAPABILITIES_RESPONSE, HPMI_QUERY_CAPABILITIES_RESPONSE structure [Power Metering and Budgeting Devices], powermeter.hpmi_query_capabilities_response, hpmi/PHPMI_QUERY_CAPABILITIES_RESPONSE, HPMI_QUERY_CAPABILITIES_RESPONSE, *PHPMI_QUERY_CAPABILITIES_RESPONSE, PHPMI_QUERY_CAPABILITIES_RESPONSE structure pointer [Power Metering and Budgeting Devices], PHPMI_QUERY_CAPABILITIES_RESPONSE, hpmi/HPMI_QUERY_CAPABILITIES_RESPONSE"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: hpmi.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 10, version 1709 and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hpmi.h
+apiname:
+-	HPMI_QUERY_CAPABILITIES_RESPONSE
+product: Windows
+targetos: Windows
+req.typenames: HPMI_QUERY_CAPABILITIES_RESPONSE, *PHPMI_QUERY_CAPABILITIES_RESPONSE
 ---
 
 # _HPMI_QUERY_CAPABILITIES_RESPONSE structure

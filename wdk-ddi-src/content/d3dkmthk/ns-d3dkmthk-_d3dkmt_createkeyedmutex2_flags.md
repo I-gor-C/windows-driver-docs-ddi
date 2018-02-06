@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmthk._D3DKMT_CREATEKEYEDMUTEX2_FLAGS
-title : "_D3DKMT_CREATEKEYEDMUTEX2_FLAGS"
-author : windows-driver-content
-description : Indicates how a handle to a keyed mutex is specified.
-old-location : display\d3dkmt_createkeyedmutex2_flags.htm
-old-project : display
-ms.assetid : 21c2d262-bf8c-48a3-9801-5c2bd73f0282
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DKMT_CREATEKEYEDMUTEX2_FLAGS, display.d3dkmt_createkeyedmutex2_flags, D3DKMT_CREATEKEYEDMUTEX2_FLAGS structure [Display Devices], _D3DKMT_CREATEKEYEDMUTEX2_FLAGS, d3dkmthk/D3DKMT_CREATEKEYEDMUTEX2_FLAGS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_CREATEKEYEDMUTEX2_FLAGS
+UID: NS:d3dkmthk._D3DKMT_CREATEKEYEDMUTEX2_FLAGS
+title: "_D3DKMT_CREATEKEYEDMUTEX2_FLAGS"
+author: windows-driver-content
+description: Indicates how a handle to a keyed mutex is specified.
+old-location: display\d3dkmt_createkeyedmutex2_flags.htm
+old-project: display
+ms.assetid: 21c2d262-bf8c-48a3-9801-5c2bd73f0282
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DKMT_CREATEKEYEDMUTEX2_FLAGS, display.d3dkmt_createkeyedmutex2_flags, D3DKMT_CREATEKEYEDMUTEX2_FLAGS structure [Display Devices], _D3DKMT_CREATEKEYEDMUTEX2_FLAGS, d3dkmthk/D3DKMT_CREATEKEYEDMUTEX2_FLAGS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	D3dkmthk.h
+apiname:
+-	D3DKMT_CREATEKEYEDMUTEX2_FLAGS
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_CREATEKEYEDMUTEX2_FLAGS
 ---
 
 # _D3DKMT_CREATEKEYEDMUTEX2_FLAGS structure

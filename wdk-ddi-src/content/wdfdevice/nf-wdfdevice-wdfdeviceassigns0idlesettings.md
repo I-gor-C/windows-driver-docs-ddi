@@ -1,42 +1,50 @@
 ---
-UID : NF:wdfdevice.WdfDeviceAssignS0IdleSettings
-title : WdfDeviceAssignS0IdleSettings function
-author : windows-driver-content
-description : The WdfDeviceAssignS0IdleSettings method provides driver-supplied information that the framework uses when a device is idle and the system is in its working (S0) state.
-old-location : wdf\wdfdeviceassigns0idlesettings.htm
-old-project : wdf
-ms.assetid : 78bb5b51-b5b2-4177-8965-e54c04881dd3
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WdfDeviceAssignS0IdleSettings method, kmdf.wdfdeviceassigns0idlesettings, wdfdevice/WdfDeviceAssignS0IdleSettings, PFN_WDFDEVICEASSIGNS0IDLESETTINGS, DFDeviceObjectGeneralRef_e43c95d7-1261-45d0-b47c-460b65bc28c8.xml, wdf.wdfdeviceassigns0idlesettings, WdfDeviceAssignS0IdleSettings
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfdevice.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : DriverCreate, FDOPowerPolicyOwnerAPI, KmdfIrql, KmdfIrql2, NonFDONotPowerPolicyOwnerAPI
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_STATE_NOTIFICATION_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfdevice.WdfDeviceAssignS0IdleSettings
+title: WdfDeviceAssignS0IdleSettings function
+author: windows-driver-content
+description: The WdfDeviceAssignS0IdleSettings method provides driver-supplied information that the framework uses when a device is idle and the system is in its working (S0) state.
+old-location: wdf\wdfdeviceassigns0idlesettings.htm
+old-project: wdf
+ms.assetid: 78bb5b51-b5b2-4177-8965-e54c04881dd3
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WdfDeviceAssignS0IdleSettings method, kmdf.wdfdeviceassigns0idlesettings, wdfdevice/WdfDeviceAssignS0IdleSettings, PFN_WDFDEVICEASSIGNS0IDLESETTINGS, DFDeviceObjectGeneralRef_e43c95d7-1261-45d0-b47c-460b65bc28c8.xml, wdf.wdfdeviceassigns0idlesettings, WdfDeviceAssignS0IdleSettings
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfdevice.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: DriverCreate, FDOPowerPolicyOwnerAPI, KmdfIrql, KmdfIrql2, NonFDONotPowerPolicyOwnerAPI
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+-	WUDFx02000.dll
+-	WUDFx02000.dll.dll
+apiname:
+-	WdfDeviceAssignS0IdleSettings
+product: Windows
+targetos: Windows
+req.typenames: WDF_STATE_NOTIFICATION_TYPE
+req.product: Windows 10 or later.
 ---
 
 

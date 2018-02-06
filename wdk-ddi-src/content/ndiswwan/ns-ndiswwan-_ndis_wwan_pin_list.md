@@ -1,41 +1,46 @@
 ---
-UID : NS:ndiswwan._NDIS_WWAN_PIN_LIST
-title : "_NDIS_WWAN_PIN_LIST"
-author : windows-driver-content
-description : The NDIS_WWAN_PIN_LIST structure represents a list of descriptions of Personal Identification Numbers (PINs).
-old-location : netvista\ndis_wwan_pin_list.htm
-old-project : netvista
-ms.assetid : 1d3c1084-8f51-4c8a-813e-6700d60c3dab
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : "_NDIS_WWAN_PIN_LIST, NDIS_WWAN_PIN_LIST structure [Network Drivers Starting with Windows Vista], ndiswwan/PNDIS_WWAN_PIN_LIST, *PNDIS_WWAN_PIN_LIST, netvista.ndis_wwan_pin_list, NDIS_WWAN_PIN_LIST, WwanRef_783d82e8-71ad-488c-be54-4bd316b949d7.xml, PNDIS_WWAN_PIN_LIST, ndiswwan/NDIS_WWAN_PIN_LIST, PNDIS_WWAN_PIN_LIST structure pointer [Network Drivers Starting with Windows Vista]"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndiswwan.h
-req.include-header : Ndiswwan.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PNDIS_WWAN_PIN_LIST, NDIS_WWAN_PIN_LIST"
+UID: NS:ndiswwan._NDIS_WWAN_PIN_LIST
+title: "_NDIS_WWAN_PIN_LIST"
+author: windows-driver-content
+description: The NDIS_WWAN_PIN_LIST structure represents a list of descriptions of Personal Identification Numbers (PINs).
+old-location: netvista\ndis_wwan_pin_list.htm
+old-project: netvista
+ms.assetid: 1d3c1084-8f51-4c8a-813e-6700d60c3dab
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: "_NDIS_WWAN_PIN_LIST, NDIS_WWAN_PIN_LIST structure [Network Drivers Starting with Windows Vista], ndiswwan/PNDIS_WWAN_PIN_LIST, *PNDIS_WWAN_PIN_LIST, netvista.ndis_wwan_pin_list, NDIS_WWAN_PIN_LIST, WwanRef_783d82e8-71ad-488c-be54-4bd316b949d7.xml, PNDIS_WWAN_PIN_LIST, ndiswwan/NDIS_WWAN_PIN_LIST, PNDIS_WWAN_PIN_LIST structure pointer [Network Drivers Starting with Windows Vista]"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndiswwan.h
+req.include-header: Ndiswwan.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndiswwan.h
+apiname:
+-	NDIS_WWAN_PIN_LIST
+product: Windows
+targetos: Windows
+req.typenames: "*PNDIS_WWAN_PIN_LIST, NDIS_WWAN_PIN_LIST"
 ---
 
 # _NDIS_WWAN_PIN_LIST structure

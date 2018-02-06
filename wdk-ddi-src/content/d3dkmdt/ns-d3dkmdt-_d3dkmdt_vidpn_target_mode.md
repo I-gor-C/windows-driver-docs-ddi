@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmdt._D3DKMDT_VIDPN_TARGET_MODE
-title : "_D3DKMDT_VIDPN_TARGET_MODE"
-author : windows-driver-content
-description : The D3DKMDT_VIDPN_TARGET_MODE structure contains information about a video present network (VidPN) target mode.
-old-location : display\d3dkmdt_vidpn_target_mode.htm
-old-project : display
-ms.assetid : 9a20e955-7ef1-4cb7-8081-42fb69b55fb6
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3dkmdt/D3DKMDT_VIDPN_TARGET_MODE, D3DKMDT_VIDPN_TARGET_MODE structure [Display Devices], DmStructs_a1ac1f39-cd89-458b-95b5-91fd5cbc507e.xml, _D3DKMDT_VIDPN_TARGET_MODE, D3DKMDT_VIDPN_TARGET_MODE, display.d3dkmdt_vidpn_target_mode
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmdt.h
-req.include-header : D3dkmdt.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMDT_VIDPN_TARGET_MODE
+UID: NS:d3dkmdt._D3DKMDT_VIDPN_TARGET_MODE
+title: "_D3DKMDT_VIDPN_TARGET_MODE"
+author: windows-driver-content
+description: The D3DKMDT_VIDPN_TARGET_MODE structure contains information about a video present network (VidPN) target mode.
+old-location: display\d3dkmdt_vidpn_target_mode.htm
+old-project: display
+ms.assetid: 9a20e955-7ef1-4cb7-8081-42fb69b55fb6
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3dkmdt/D3DKMDT_VIDPN_TARGET_MODE, D3DKMDT_VIDPN_TARGET_MODE structure [Display Devices], DmStructs_a1ac1f39-cd89-458b-95b5-91fd5cbc507e.xml, _D3DKMDT_VIDPN_TARGET_MODE, D3DKMDT_VIDPN_TARGET_MODE, display.d3dkmdt_vidpn_target_mode
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmdt.h
+req.include-header: D3dkmdt.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmdt.h
+apiname:
+-	D3DKMDT_VIDPN_TARGET_MODE
+product: Windows
+targetos: Windows
+req.typenames: D3DKMDT_VIDPN_TARGET_MODE
 ---
 
 # _D3DKMDT_VIDPN_TARGET_MODE structure

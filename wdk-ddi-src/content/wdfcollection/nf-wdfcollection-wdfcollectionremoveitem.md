@@ -1,42 +1,50 @@
 ---
-UID : NF:wdfcollection.WdfCollectionRemoveItem
-title : WdfCollectionRemoveItem function
-author : windows-driver-content
-description : The WdfCollectionRemoveItem method removes a specified object from an object collection, based on a specified index value.
-old-location : wdf\wdfcollectionremoveitem.htm
-old-project : wdf
-ms.assetid : 03fde4a7-a4d1-4045-ac0c-6a37f2367b9d
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WdfCollectionRemoveItem, wdf.wdfcollectionremoveitem, DFCollectionObjectRef_a037497e-b219-41c1-8d65-29cf8be17989.xml, kmdf.wdfcollectionremoveitem, WdfCollectionRemoveItem method, wdfcollection/WdfCollectionRemoveItem, PFN_WDFCOLLECTIONREMOVEITEM
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfcollection.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDF_CHILD_RETRIEVE_INFO, WDF_CHILD_RETRIEVE_INFO"
-req.product : Windows 10 or later.
+UID: NF:wdfcollection.WdfCollectionRemoveItem
+title: WdfCollectionRemoveItem function
+author: windows-driver-content
+description: The WdfCollectionRemoveItem method removes a specified object from an object collection, based on a specified index value.
+old-location: wdf\wdfcollectionremoveitem.htm
+old-project: wdf
+ms.assetid: 03fde4a7-a4d1-4045-ac0c-6a37f2367b9d
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WdfCollectionRemoveItem, wdf.wdfcollectionremoveitem, DFCollectionObjectRef_a037497e-b219-41c1-8d65-29cf8be17989.xml, kmdf.wdfcollectionremoveitem, WdfCollectionRemoveItem method, wdfcollection/WdfCollectionRemoveItem, PFN_WDFCOLLECTIONREMOVEITEM
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfcollection.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+-	WUDFx02000.dll
+-	WUDFx02000.dll.dll
+apiname:
+-	WdfCollectionRemoveItem
+product: Windows
+targetos: Windows
+req.typenames: "*PWDF_CHILD_RETRIEVE_INFO, WDF_CHILD_RETRIEVE_INFO"
+req.product: Windows 10 or later.
 ---
 
 

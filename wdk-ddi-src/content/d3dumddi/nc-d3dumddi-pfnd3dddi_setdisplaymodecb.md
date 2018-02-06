@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_SETDISPLAYMODECB
-title : PFND3DDDI_SETDISPLAYMODECB
-author : windows-driver-content
-description : The pfnSetDisplayModeCb function sets the allocation that is used to scan out to the display.
-old-location : display\pfnsetdisplaymodecb.htm
-old-project : display
-ms.assetid : a1f58757-809d-4351-8b1a-fd4420981c24
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.pfnsetdisplaymodecb, pfnSetDisplayModeCb callback function [Display Devices], pfnSetDisplayModeCb, PFND3DDDI_SETDISPLAYMODECB, PFND3DDDI_SETDISPLAYMODECB, d3dumddi/pfnSetDisplayModeCb, D3Druntime_Functions_717329e1-853d-498e-8792-ba6468825cbb.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_SETDISPLAYMODECB
+title: PFND3DDDI_SETDISPLAYMODECB
+author: windows-driver-content
+description: The pfnSetDisplayModeCb function sets the allocation that is used to scan out to the display.
+old-location: display\pfnsetdisplaymodecb.htm
+old-project: display
+ms.assetid: a1f58757-809d-4351-8b1a-fd4420981c24
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.pfnsetdisplaymodecb, pfnSetDisplayModeCb callback function [Display Devices], pfnSetDisplayModeCb, PFND3DDDI_SETDISPLAYMODECB, PFND3DDDI_SETDISPLAYMODECB, d3dumddi/pfnSetDisplayModeCb, D3Druntime_Functions_717329e1-853d-498e-8792-ba6468825cbb.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	pfnSetDisplayModeCb
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

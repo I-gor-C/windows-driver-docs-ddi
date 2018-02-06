@@ -1,41 +1,46 @@
 ---
-UID : NC:dispmprt.DXGKDDI_MIRACAST_HANDLE_IO_CONTROL
-title : DXGKDDI_MIRACAST_HANDLE_IO_CONTROL
-author : windows-driver-content
-description : Called by the operating system to request that the display miniport driver process a synchronous I/O control request in response to a user-mode display driver call to the MiracastIoControl function.
-old-location : display\dxgkddimiracastiocontrol.htm
-old-project : display
-ms.assetid : 83E817C3-A30D-4597-A490-C4FB93A78FCE
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkddimiracastiocontrol, DxgkDdiMiracastIoControl callback function [Display Devices], DxgkDdiMiracastIoControl, DXGKDDI_MIRACAST_HANDLE_IO_CONTROL, DXGKDDI_MIRACAST_HANDLE_IO_CONTROL, dispmprt/DxgkDdiMiracastIoControl
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : dispmprt.h
-req.include-header : Dispmprt.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8.1
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
+UID: NC:dispmprt.DXGKDDI_MIRACAST_HANDLE_IO_CONTROL
+title: DXGKDDI_MIRACAST_HANDLE_IO_CONTROL
+author: windows-driver-content
+description: Called by the operating system to request that the display miniport driver process a synchronous I/O control request in response to a user-mode display driver call to the MiracastIoControl function.
+old-location: display\dxgkddimiracastiocontrol.htm
+old-project: display
+ms.assetid: 83E817C3-A30D-4597-A490-C4FB93A78FCE
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkddimiracastiocontrol, DxgkDdiMiracastIoControl callback function [Display Devices], DxgkDdiMiracastIoControl, DXGKDDI_MIRACAST_HANDLE_IO_CONTROL, DXGKDDI_MIRACAST_HANDLE_IO_CONTROL, dispmprt/DxgkDdiMiracastIoControl
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: dispmprt.h
+req.include-header: Dispmprt.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8.1
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Dispmprt.h
+apiname:
+-	DxgkDdiMiracastIoControl
+product: Windows
+targetos: Windows
+req.typenames: SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ---
 
 

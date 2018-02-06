@@ -1,42 +1,47 @@
 ---
-UID : NC:wdm.EX_CALLBACK_FUNCTION
-title : EX_CALLBACK_FUNCTION
-author : windows-driver-content
-description : A filter driver's RegistryCallback routine can monitor, block, or modify a registry operation.
-old-location : kernel\registrycallback.htm
-old-project : kernel
-ms.assetid : 220ce3b8-2820-4753-9659-5ce7b4f4f32d
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.registrycallback, RegistryCallback routine [Kernel-Mode Driver Architecture], RegistryCallback, EX_CALLBACK_FUNCTION, EX_CALLBACK_FUNCTION, wdm/RegistryCallback, DrvrRtns_988f8f3d-4ee8-4351-8fc0-703a88bd8421.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported starting with Windows XP (see Return Value section).
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Called at PASSIVE_LEVEL (see Remarks section).
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
-req.product : Windows 10 or later.
+UID: NC:wdm.EX_CALLBACK_FUNCTION
+title: EX_CALLBACK_FUNCTION
+author: windows-driver-content
+description: A filter driver's RegistryCallback routine can monitor, block, or modify a registry operation.
+old-location: kernel\registrycallback.htm
+old-project: kernel
+ms.assetid: 220ce3b8-2820-4753-9659-5ce7b4f4f32d
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.registrycallback, RegistryCallback routine [Kernel-Mode Driver Architecture], RegistryCallback, EX_CALLBACK_FUNCTION, EX_CALLBACK_FUNCTION, wdm/RegistryCallback, DrvrRtns_988f8f3d-4ee8-4351-8fc0-703a88bd8421.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported starting with Windows XP (see Return Value section).
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Called at PASSIVE_LEVEL (see Remarks section).
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Wdm.h
+apiname:
+-	RegistryCallback
+product: Windows
+targetos: Windows
+req.typenames: WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+req.product: Windows 10 or later.
 ---
 
 

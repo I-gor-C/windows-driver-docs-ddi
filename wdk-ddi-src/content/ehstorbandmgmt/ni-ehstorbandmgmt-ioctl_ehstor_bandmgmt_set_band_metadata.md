@@ -1,41 +1,46 @@
 ---
-UID : NI:ehstorbandmgmt.IOCTL_EHSTOR_BANDMGMT_SET_BAND_METADATA
-title : IOCTL_EHSTOR_BANDMGMT_SET_BAND_METADATA
-author : windows-driver-content
-description : Metadata associated with a band is set with an IOCTL_EHSTOR_BANDMGMT_SET_BAND_METADATA request. The metadata for a band serves as a data area for a key manager application.
-old-location : storage\ioctl_ehstor_bandmgmt_set_band_metadata.htm
-old-project : storage
-ms.assetid : 5FBEAB29-C256-47EF-B673-6584679B8908
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_ehstor_bandmgmt_set_band_metadata, IOCTL_EHSTOR_BANDMGMT_SET_BAND_METADATA control code [Storage Devices], IOCTL_EHSTOR_BANDMGMT_SET_BAND_METADATA, ehstorbandmgmt/IOCTL_EHSTOR_BANDMGMT_SET_BAND_METADATA
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ehstorbandmgmt.h
-req.include-header : EhStorBandMgmt.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 8 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXVA_VideoSample32
+UID: NI:ehstorbandmgmt.IOCTL_EHSTOR_BANDMGMT_SET_BAND_METADATA
+title: IOCTL_EHSTOR_BANDMGMT_SET_BAND_METADATA
+author: windows-driver-content
+description: Metadata associated with a band is set with an IOCTL_EHSTOR_BANDMGMT_SET_BAND_METADATA request. The metadata for a band serves as a data area for a key manager application.
+old-location: storage\ioctl_ehstor_bandmgmt_set_band_metadata.htm
+old-project: storage
+ms.assetid: 5FBEAB29-C256-47EF-B673-6584679B8908
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_ehstor_bandmgmt_set_band_metadata, IOCTL_EHSTOR_BANDMGMT_SET_BAND_METADATA control code [Storage Devices], IOCTL_EHSTOR_BANDMGMT_SET_BAND_METADATA, ehstorbandmgmt/IOCTL_EHSTOR_BANDMGMT_SET_BAND_METADATA
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ehstorbandmgmt.h
+req.include-header: EhStorBandMgmt.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 8 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	EhStorBandMgmt.h
+apiname:
+-	IOCTL_EHSTOR_BANDMGMT_SET_BAND_METADATA
+product: Windows
+targetos: Windows
+req.typenames: DXVA_VideoSample32
 ---
 
 # IOCTL_EHSTOR_BANDMGMT_SET_BAND_METADATA IOCTL

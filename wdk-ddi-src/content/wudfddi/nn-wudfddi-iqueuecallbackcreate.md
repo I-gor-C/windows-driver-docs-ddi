@@ -1,42 +1,47 @@
 ---
-UID : NN:wudfddi.IQueueCallbackCreate
-title : IQueueCallbackCreate
-author : windows-driver-content
-description : An I/O queue notifies a driver when an open file request is available for the driver.
-old-location : wdf\iqueuecallbackcreate.htm
-old-project : wdf
-ms.assetid : 50b8acc6-5f08-47d5-b45d-31ff33a06be1
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.iqueuecallbackcreate, IQueueCallbackCreate interface, IQueueCallbackCreate interface, described, IQueueCallbackCreate, wudfddi/IQueueCallbackCreate, UMDFQueueObjectRef_dfb85326-329e-4d5b-9889-1894c53e4cb7.xml, umdf.iqueuecallbackcreate
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : wudfddi.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NN:wudfddi.IQueueCallbackCreate
+title: IQueueCallbackCreate
+author: windows-driver-content
+description: An I/O queue notifies a driver when an open file request is available for the driver.
+old-location: wdf\iqueuecallbackcreate.htm
+old-project: wdf
+ms.assetid: 50b8acc6-5f08-47d5-b45d-31ff33a06be1
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.iqueuecallbackcreate, IQueueCallbackCreate interface, IQueueCallbackCreate interface, described, IQueueCallbackCreate, wudfddi/IQueueCallbackCreate, UMDFQueueObjectRef_dfb85326-329e-4d5b-9889-1894c53e4cb7.xml, umdf.iqueuecallbackcreate
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: wudfddi.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	wudfddi.h
+apiname:
+-	IQueueCallbackCreate
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 # IQueueCallbackCreate interface

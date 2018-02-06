@@ -1,41 +1,47 @@
 ---
-UID : NF:dot11wdi.NdisMRegisterWdiMiniportDriver
-title : NdisMRegisterWdiMiniportDriver function
-author : windows-driver-content
-description : A miniport driver calls the NdisMRegisterWdiMiniportDriver function to register MiniportWdiXxx entry points with NDIS as the first step in initialization.
-old-location : netvista\ndismregisterwdiminiportdriver.htm
-old-project : netvista
-ms.assetid : 60FE4E6C-38D4-438F-983B-7336926F6FE2
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NdisMRegisterWdiMiniportDriver, netvista.ndismregisterwdiminiportdriver, dot11wdi/NdisMRegisterWdiMiniportDriver, NdisMRegisterWdiMiniportDriver function [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : dot11wdi.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDI_TX_PAUSE_REASON
+UID: NF:dot11wdi.NdisMRegisterWdiMiniportDriver
+title: NdisMRegisterWdiMiniportDriver function
+author: windows-driver-content
+description: A miniport driver calls the NdisMRegisterWdiMiniportDriver function to register MiniportWdiXxx entry points with NDIS as the first step in initialization.
+old-location: netvista\ndismregisterwdiminiportdriver.htm
+old-project: netvista
+ms.assetid: 60FE4E6C-38D4-438F-983B-7336926F6FE2
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NdisMRegisterWdiMiniportDriver, netvista.ndismregisterwdiminiportdriver, dot11wdi/NdisMRegisterWdiMiniportDriver, NdisMRegisterWdiMiniportDriver function [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: dot11wdi.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisMRegisterWdiMiniportDriver
+product: Windows
+targetos: Windows
+req.typenames: WDI_TX_PAUSE_REASON
 ---
 
 

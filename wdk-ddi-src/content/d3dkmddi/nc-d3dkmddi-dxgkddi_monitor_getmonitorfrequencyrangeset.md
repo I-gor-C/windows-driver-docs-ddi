@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dkmddi.DXGKDDI_MONITOR_GETMONITORFREQUENCYRANGESET
-title : DXGKDDI_MONITOR_GETMONITORFREQUENCYRANGESET
-author : windows-driver-content
-description : The pfnGetMonitorFrequencyRangeSet function returns a handle to the monitor frequency range set object that is associated with a specified monitor.
-old-location : display\dxgk_monitor_interface_pfngetmonitorfrequencyrangeset.htm
-old-project : display
-ms.assetid : 78b80dbb-af1e-457c-854f-ff0404ab9808
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgk_monitor_interface_pfngetmonitorfrequencyrangeset, pfnGetMonitorFrequencyRangeSet callback function [Display Devices], pfnGetMonitorFrequencyRangeSet, DXGKDDI_MONITOR_GETMONITORFREQUENCYRANGESET, DXGKDDI_MONITOR_GETMONITORFREQUENCYRANGESET, d3dkmddi/pfnGetMonitorFrequencyRangeSet, VidPnFunctions_2088f146-59a2-49d1-9295-21a28d50e2d0.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
+UID: NC:d3dkmddi.DXGKDDI_MONITOR_GETMONITORFREQUENCYRANGESET
+title: DXGKDDI_MONITOR_GETMONITORFREQUENCYRANGESET
+author: windows-driver-content
+description: The pfnGetMonitorFrequencyRangeSet function returns a handle to the monitor frequency range set object that is associated with a specified monitor.
+old-location: display\dxgk_monitor_interface_pfngetmonitorfrequencyrangeset.htm
+old-project: display
+ms.assetid: 78b80dbb-af1e-457c-854f-ff0404ab9808
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgk_monitor_interface_pfngetmonitorfrequencyrangeset, pfnGetMonitorFrequencyRangeSet callback function [Display Devices], pfnGetMonitorFrequencyRangeSet, DXGKDDI_MONITOR_GETMONITORFREQUENCYRANGESET, DXGKDDI_MONITOR_GETMONITORFREQUENCYRANGESET, d3dkmddi/pfnGetMonitorFrequencyRangeSet, VidPnFunctions_2088f146-59a2-49d1-9295-21a28d50e2d0.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	pfnGetMonitorFrequencyRangeSet
+product: Windows
+targetos: Windows
+req.typenames: DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
 

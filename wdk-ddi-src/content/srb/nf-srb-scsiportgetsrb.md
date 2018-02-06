@@ -1,42 +1,48 @@
 ---
-UID : NF:srb.ScsiPortGetSrb
-title : ScsiPortGetSrb function
-author : windows-driver-content
-description : The ScsiPortGetSrb routine returns a pointer to an active SCSI request for a particular logical unit.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future.
-old-location : storage\scsiportgetsrb.htm
-old-project : storage
-ms.assetid : c8f0e47c-4d06-445f-a6dd-9bd80fc490bc
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : ScsiPortGetSrb, storage.scsiportgetsrb, srb/ScsiPortGetSrb, ScsiPortGetSrb routine [Storage Devices], scsiprt_28205a6f-8758-4aed-8fae-94a12c216cf4.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : srb.h
-req.include-header : Miniport.h, Scsi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Scsiport.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SPB_CONTROLLER_CONFIG, *PSPB_CONTROLLER_CONFIG
-req.product : Windows 10 or later.
+UID: NF:srb.ScsiPortGetSrb
+title: ScsiPortGetSrb function
+author: windows-driver-content
+description: The ScsiPortGetSrb routine returns a pointer to an active SCSI request for a particular logical unit.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future.
+old-location: storage\scsiportgetsrb.htm
+old-project: storage
+ms.assetid: c8f0e47c-4d06-445f-a6dd-9bd80fc490bc
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: ScsiPortGetSrb, storage.scsiportgetsrb, srb/ScsiPortGetSrb, ScsiPortGetSrb routine [Storage Devices], scsiprt_28205a6f-8758-4aed-8fae-94a12c216cf4.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: srb.h
+req.include-header: Miniport.h, Scsi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Scsiport.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Scsiport.lib
+-	Scsiport.dll
+apiname:
+-	ScsiPortGetSrb
+product: Windows
+targetos: Windows
+req.typenames: SPB_CONTROLLER_CONFIG, *PSPB_CONTROLLER_CONFIG
+req.product: Windows 10 or later.
 ---
 
 

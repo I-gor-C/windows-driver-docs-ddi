@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisMRegisterInterruptEx
-title : NdisMRegisterInterruptEx function
-author : windows-driver-content
-description : NDIS miniport drivers call the NdisMRegisterInterruptEx function to register an interrupt.
-old-location : netvista\ndismregisterinterruptex.htm
-old-project : netvista
-ms.assetid : db0b3d51-5bbb-45fb-8c45-dda8c2212b5f
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.ndismregisterinterruptex, NdisMRegisterInterruptEx function [Network Drivers Starting with Windows Vista], NdisMRegisterInterruptEx, ndis_interrupts_functions_ref_9a28602d-5a32-459c-92da-9d97b93f5fde.xml, ndis/NdisMRegisterInterruptEx
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Init_DeRegisterInterrupt, Init_RegisterInterrupt, Irql_Interrupt_Function, NdisMDeregisterInterruptEx
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisMRegisterInterruptEx
+title: NdisMRegisterInterruptEx function
+author: windows-driver-content
+description: NDIS miniport drivers call the NdisMRegisterInterruptEx function to register an interrupt.
+old-location: netvista\ndismregisterinterruptex.htm
+old-project: netvista
+ms.assetid: db0b3d51-5bbb-45fb-8c45-dda8c2212b5f
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.ndismregisterinterruptex, NdisMRegisterInterruptEx function [Network Drivers Starting with Windows Vista], NdisMRegisterInterruptEx, ndis_interrupts_functions_ref_9a28602d-5a32-459c-92da-9d97b93f5fde.xml, ndis/NdisMRegisterInterruptEx
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Init_DeRegisterInterrupt, Init_RegisterInterrupt, Irql_Interrupt_Function, NdisMDeregisterInterruptEx
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisMRegisterInterruptEx
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

@@ -1,41 +1,47 @@
 ---
-UID : NF:ntifs.ZwQueryInformationToken
-title : ZwQueryInformationToken function
-author : windows-driver-content
-description : The ZwQueryInformationToken routine retrieves a specified type of information about an access token. The calling process must have appropriate access rights to obtain the information.
-old-location : kernel\zwqueryinformationtoken.htm
-old-project : kernel
-ms.assetid : 554b541b-943a-413e-9803-7dba17d0c6ce
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ntifs/ZwQueryInformationToken, ntifs/NtQueryInformationToken, k111_2f945a17-f3b4-423a-90fa-6f02d240d42d.xml, NtQueryInformationToken, ZwQueryInformationToken, kernel.zwqueryinformationtoken, ZwQueryInformationToken routine [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows XP and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.ZwQueryInformationToken
+title: ZwQueryInformationToken function
+author: windows-driver-content
+description: The ZwQueryInformationToken routine retrieves a specified type of information about an access token. The calling process must have appropriate access rights to obtain the information.
+old-location: kernel\zwqueryinformationtoken.htm
+old-project: kernel
+ms.assetid: 554b541b-943a-413e-9803-7dba17d0c6ce
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ntifs/ZwQueryInformationToken, ntifs/NtQueryInformationToken, k111_2f945a17-f3b4-423a-90fa-6f02d240d42d.xml, NtQueryInformationToken, ZwQueryInformationToken, kernel.zwqueryinformationtoken, ZwQueryInformationToken routine [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows XP and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ZwQueryInformationToken
+-	NtQueryInformationToken
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NC:bthsdpddi.PRETRIEVEUINT64
-title : PRETRIEVEUINT64
-author : windows-driver-content
-description : The Bluetooth SdpRetrieveUint128 function is used to copy an unaligned 128-bit integer from an SDP stream.
-old-location : bltooth\sdpretrieveuint128.htm
-old-project : bltooth
-ms.assetid : fa187750-1aed-4e74-8e98-a3b8c731f1d1
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : bltooth.sdpretrieveuint128, SdpRetrieveUint128 callback function [Bluetooth Devices], SdpRetrieveUint128, PRETRIEVEUINT64, PRETRIEVEUINT64, sdplib/SdpRetrieveUint128, bth_funcs_5377ee2b-643e-4486-9eb2-6d37bda46c85.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : bthsdpddi.h
-req.include-header : BthSdpddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Versions:\_Supported in Windows Vista, and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= PASSIVE_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PBTH_VENDOR_SPECIFIC_COMMAND, BTH_VENDOR_SPECIFIC_COMMAND"
+UID: NC:bthsdpddi.PRETRIEVEUINT64
+title: PRETRIEVEUINT64
+author: windows-driver-content
+description: The Bluetooth SdpRetrieveUint128 function is used to copy an unaligned 128-bit integer from an SDP stream.
+old-location: bltooth\sdpretrieveuint128.htm
+old-project: bltooth
+ms.assetid: fa187750-1aed-4e74-8e98-a3b8c731f1d1
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: bltooth.sdpretrieveuint128, SdpRetrieveUint128 callback function [Bluetooth Devices], SdpRetrieveUint128, PRETRIEVEUINT64, PRETRIEVEUINT64, sdplib/SdpRetrieveUint128, bth_funcs_5377ee2b-643e-4486-9eb2-6d37bda46c85.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: bthsdpddi.h
+req.include-header: BthSdpddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Versions:\_Supported in Windows Vista, and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= PASSIVE_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	sdplib.h
+apiname:
+-	SdpRetrieveUint128
+product: Windows
+targetos: Windows
+req.typenames: "*PBTH_VENDOR_SPECIFIC_COMMAND, BTH_VENDOR_SPECIFIC_COMMAND"
 ---
 
 

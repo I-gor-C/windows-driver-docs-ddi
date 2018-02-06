@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisAcquireSpinLock
-title : NdisAcquireSpinLock macro
-author : windows-driver-content
-description : The NdisAcquireSpinLock function acquires a spin lock so the caller gains exclusive access to the resources, shared among driver functions, that the spin lock protects.
-old-location : netvista\ndisacquirespinlock.htm
-old-project : netvista
-ms.assetid : c19c9396-bc24-4f4b-a0c9-f8de76a9c46b
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NdisAcquireSpinLock, ndis/NdisAcquireSpinLock, netvista.ndisacquirespinlock, ndis_spin_lock_ref_54c55d32-a190-4454-ad0d-670427754b8b.xml, NdisAcquireSpinLock macro [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : macro
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisAcquireSpinLock (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisAcquireSpinLock (NDIS   5.1)) in Windows XP.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_Synch_Function, SpinLock, SpinLockBalanced, SpinLockDpr, SpinLockDprRelease, SpinlockRelease
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisAcquireSpinLock
+title: NdisAcquireSpinLock macro
+author: windows-driver-content
+description: The NdisAcquireSpinLock function acquires a spin lock so the caller gains exclusive access to the resources, shared among driver functions, that the spin lock protects.
+old-location: netvista\ndisacquirespinlock.htm
+old-project: netvista
+ms.assetid: c19c9396-bc24-4f4b-a0c9-f8de76a9c46b
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NdisAcquireSpinLock, ndis/NdisAcquireSpinLock, netvista.ndisacquirespinlock, ndis_spin_lock_ref_54c55d32-a190-4454-ad0d-670427754b8b.xml, NdisAcquireSpinLock macro [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: macro
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisAcquireSpinLock (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisAcquireSpinLock (NDIS   5.1)) in Windows XP.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_Synch_Function, SpinLock, SpinLockBalanced, SpinLockDpr, SpinLockDprRelease, SpinlockRelease
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisAcquireSpinLock
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

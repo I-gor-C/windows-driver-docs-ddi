@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.PsCreateSystemThread
-title : PsCreateSystemThread function
-author : windows-driver-content
-description : The PsCreateSystemThread routine creates a system thread that executes in kernel mode and returns a handle for the thread.
-old-location : kernel\pscreatesystemthread.htm
-old-project : kernel
-ms.assetid : 4f6bfae4-8515-4fc4-aab3-9e16dbeda6da
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/PsCreateSystemThread, k108_858fe76b-471d-42c9-8844-c14ae33bd235.xml, PsCreateSystemThread, PsCreateSystemThread routine [Kernel-Mode Driver Architecture], kernel.pscreatesystemthread
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : IrqlPsPassive, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.PsCreateSystemThread
+title: PsCreateSystemThread function
+author: windows-driver-content
+description: The PsCreateSystemThread routine creates a system thread that executes in kernel mode and returns a handle for the thread.
+old-location: kernel\pscreatesystemthread.htm
+old-project: kernel
+ms.assetid: 4f6bfae4-8515-4fc4-aab3-9e16dbeda6da
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/PsCreateSystemThread, k108_858fe76b-471d-42c9-8844-c14ae33bd235.xml, PsCreateSystemThread, PsCreateSystemThread routine [Kernel-Mode Driver Architecture], kernel.pscreatesystemthread
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: IrqlPsPassive, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	PsCreateSystemThread
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

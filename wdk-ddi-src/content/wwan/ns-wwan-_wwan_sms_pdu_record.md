@@ -1,42 +1,47 @@
 ---
-UID : NS:wwan._WWAN_SMS_PDU_RECORD
-title : "_WWAN_SMS_PDU_RECORD"
-author : windows-driver-content
-description : The WWAN_SMS_PDU_RECORD structure represents a PDU-style SMS message record.
-old-location : netvista\wwan_sms_pdu_record.htm
-old-project : netvista
-ms.assetid : 20200222-8539-497e-891e-2d29c3207c56
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : PWWAN_SMS_PDU_RECORD structure pointer [Network Drivers Starting with Windows Vista], wwan/WWAN_SMS_PDU_RECORD, PWWAN_SMS_PDU_RECORD, WWAN_SMS_PDU_RECORD structure [Network Drivers Starting with Windows Vista], netvista.wwan_sms_pdu_record, WwanRef_b21c5d84-e8d4-4cf4-9942-f6f1a14c23c0.xml, _WWAN_SMS_PDU_RECORD, WWAN_SMS_PDU_RECORD, *PWWAN_SMS_PDU_RECORD, wwan/PWWAN_SMS_PDU_RECORD
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wwan.h
-req.include-header : Wwan.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWWAN_SMS_PDU_RECORD, WWAN_SMS_PDU_RECORD"
-req.product : Windows 10 or later.
+UID: NS:wwan._WWAN_SMS_PDU_RECORD
+title: "_WWAN_SMS_PDU_RECORD"
+author: windows-driver-content
+description: The WWAN_SMS_PDU_RECORD structure represents a PDU-style SMS message record.
+old-location: netvista\wwan_sms_pdu_record.htm
+old-project: netvista
+ms.assetid: 20200222-8539-497e-891e-2d29c3207c56
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: PWWAN_SMS_PDU_RECORD structure pointer [Network Drivers Starting with Windows Vista], wwan/WWAN_SMS_PDU_RECORD, PWWAN_SMS_PDU_RECORD, WWAN_SMS_PDU_RECORD structure [Network Drivers Starting with Windows Vista], netvista.wwan_sms_pdu_record, WwanRef_b21c5d84-e8d4-4cf4-9942-f6f1a14c23c0.xml, _WWAN_SMS_PDU_RECORD, WWAN_SMS_PDU_RECORD, *PWWAN_SMS_PDU_RECORD, wwan/PWWAN_SMS_PDU_RECORD
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wwan.h
+req.include-header: Wwan.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wwan.h
+apiname:
+-	WWAN_SMS_PDU_RECORD
+product: Windows
+targetos: Windows
+req.typenames: "*PWWAN_SMS_PDU_RECORD, WWAN_SMS_PDU_RECORD"
+req.product: Windows 10 or later.
 ---
 
 # _WWAN_SMS_PDU_RECORD structure

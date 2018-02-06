@@ -1,41 +1,46 @@
 ---
-UID : NC:ndis.PROTOCOL_CL_DROP_PARTY_COMPLETE
-title : PROTOCOL_CL_DROP_PARTY_COMPLETE
-author : windows-driver-content
-description : The ProtocolClDropPartyComplete function is used by connection-oriented NDIS clients that set up multipoint connections.
-old-location : netvista\protocolcldroppartycomplete.htm
-old-project : netvista
-ms.assetid : c916f379-393c-41d7-ab30-2f3181c3ada6
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.protocolcldroppartycomplete, ProtocolClDropPartyComplete callback function [Network Drivers Starting with Windows Vista], ProtocolClDropPartyComplete, PROTOCOL_CL_DROP_PARTY_COMPLETE, PROTOCOL_CL_DROP_PARTY_COMPLETE, ndis/ProtocolClDropPartyComplete, condis_client_ref_6586ee1a-9f7f-4125-966e-1f6df74b75df.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see       ProtocolClDropPartyComplete (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see       ProtocolClDropPartyComplete (NDIS 5.1)) in Windows XP.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
+UID: NC:ndis.PROTOCOL_CL_DROP_PARTY_COMPLETE
+title: PROTOCOL_CL_DROP_PARTY_COMPLETE
+author: windows-driver-content
+description: The ProtocolClDropPartyComplete function is used by connection-oriented NDIS clients that set up multipoint connections.
+old-location: netvista\protocolcldroppartycomplete.htm
+old-project: netvista
+ms.assetid: c916f379-393c-41d7-ab30-2f3181c3ada6
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.protocolcldroppartycomplete, ProtocolClDropPartyComplete callback function [Network Drivers Starting with Windows Vista], ProtocolClDropPartyComplete, PROTOCOL_CL_DROP_PARTY_COMPLETE, PROTOCOL_CL_DROP_PARTY_COMPLETE, ndis/ProtocolClDropPartyComplete, condis_client_ref_6586ee1a-9f7f-4125-966e-1f6df74b75df.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see       ProtocolClDropPartyComplete (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see       ProtocolClDropPartyComplete (NDIS 5.1)) in Windows XP.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ndis.h
+apiname:
+-	ProtocolClDropPartyComplete
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 

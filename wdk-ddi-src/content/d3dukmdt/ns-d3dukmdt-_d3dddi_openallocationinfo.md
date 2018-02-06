@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dukmdt._D3DDDI_OPENALLOCATIONINFO
-title : "_D3DDDI_OPENALLOCATIONINFO"
-author : windows-driver-content
-description : The D3DDDI_OPENALLOCATIONINFO structure describes an allocation to be opened.
-old-location : display\d3dddi_openallocationinfo.htm
-old-project : display
-ms.assetid : cd50602a-c4aa-410b-9ed6-56d7237571cd
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : "_D3DDDI_OPENALLOCATIONINFO, d3dukmdt/D3DDDI_OPENALLOCATIONINFO, D3D_other_Structs_cfb185b4-cc7d-4c1a-9e76-6032816feab0.xml, D3DDDI_OPENALLOCATIONINFO, D3DDDI_OPENALLOCATIONINFO structure [Display Devices], display.d3dddi_openallocationinfo"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dukmdt.h
-req.include-header : D3dumddi.h, D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDI_OPENALLOCATIONINFO
+UID: NS:d3dukmdt._D3DDDI_OPENALLOCATIONINFO
+title: "_D3DDDI_OPENALLOCATIONINFO"
+author: windows-driver-content
+description: The D3DDDI_OPENALLOCATIONINFO structure describes an allocation to be opened.
+old-location: display\d3dddi_openallocationinfo.htm
+old-project: display
+ms.assetid: cd50602a-c4aa-410b-9ed6-56d7237571cd
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: "_D3DDDI_OPENALLOCATIONINFO, d3dukmdt/D3DDDI_OPENALLOCATIONINFO, D3D_other_Structs_cfb185b4-cc7d-4c1a-9e76-6032816feab0.xml, D3DDDI_OPENALLOCATIONINFO, D3DDDI_OPENALLOCATIONINFO structure [Display Devices], display.d3dddi_openallocationinfo"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dukmdt.h
+req.include-header: D3dumddi.h, D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dukmdt.h
+apiname:
+-	D3DDDI_OPENALLOCATIONINFO
+product: Windows
+targetos: Windows
+req.typenames: D3DDDI_OPENALLOCATIONINFO
 ---
 
 # _D3DDDI_OPENALLOCATIONINFO structure

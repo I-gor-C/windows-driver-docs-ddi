@@ -1,42 +1,47 @@
 ---
-UID : NF:video.VideoPortFreePool
-title : VideoPortFreePool function
-author : windows-driver-content
-description : The VideoPortFreePool function deallocates a block of pool memory previously allocated by VideoPortAllocatePool.
-old-location : display\videoportfreepool.htm
-old-project : display
-ms.assetid : 84e4f178-87d3-4f40-b4fc-7959818305fd
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : VideoPortFreePool, VideoPortFreePool function [Display Devices], video/VideoPortFreePool, display.videoportfreepool, VideoPort_Functions_a2b1e2c4-9f8d-455b-8484-c51e0669d526.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows XP and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Videoprt.lib
-req.dll : Videoprt.sys
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_PORT_SERVICES
-req.product : Windows 10 or later.
+UID: NF:video.VideoPortFreePool
+title: VideoPortFreePool function
+author: windows-driver-content
+description: The VideoPortFreePool function deallocates a block of pool memory previously allocated by VideoPortAllocatePool.
+old-location: display\videoportfreepool.htm
+old-project: display
+ms.assetid: 84e4f178-87d3-4f40-b4fc-7959818305fd
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: VideoPortFreePool, VideoPortFreePool function [Display Devices], video/VideoPortFreePool, display.videoportfreepool, VideoPort_Functions_a2b1e2c4-9f8d-455b-8484-c51e0669d526.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows XP and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Videoprt.lib
+req.dll: Videoprt.sys
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Videoprt.sys
+apiname:
+-	VideoPortFreePool
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_PORT_SERVICES
+req.product: Windows 10 or later.
 ---
 
 

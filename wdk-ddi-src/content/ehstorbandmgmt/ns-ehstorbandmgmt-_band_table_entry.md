@@ -1,41 +1,46 @@
 ---
-UID : NS:ehstorbandmgmt._BAND_TABLE_ENTRY
-title : "_BAND_TABLE_ENTRY"
-author : windows-driver-content
-description : Banding information entries in BAND_TABLE are represented as BAND_TABLE_ENTRY structures. These entries contain location and security properties for a band configuration.
-old-location : storage\band_table_entry.htm
-old-project : storage
-ms.assetid : 6956327E-5407-4771-9BB9-F59D752A5410
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : ehstorbandmgmt/PBAND_TABLE_ENTRY, PBAND_TABLE_ENTRY, PBAND_TABLE_ENTRY structure pointer [Storage Devices], storage.band_table_entry, ehstorbandmgmt/BAND_TABLE_ENTRY, BAND_TABLE_ENTRY, BAND_TABLE_ENTRY structure [Storage Devices], *PBAND_TABLE_ENTRY, _BAND_TABLE_ENTRY
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ehstorbandmgmt.h
-req.include-header : EhStorBandMgmt.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows 8
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : BAND_TABLE_ENTRY, *PBAND_TABLE_ENTRY
+UID: NS:ehstorbandmgmt._BAND_TABLE_ENTRY
+title: "_BAND_TABLE_ENTRY"
+author: windows-driver-content
+description: Banding information entries in BAND_TABLE are represented as BAND_TABLE_ENTRY structures. These entries contain location and security properties for a band configuration.
+old-location: storage\band_table_entry.htm
+old-project: storage
+ms.assetid: 6956327E-5407-4771-9BB9-F59D752A5410
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: ehstorbandmgmt/PBAND_TABLE_ENTRY, PBAND_TABLE_ENTRY, PBAND_TABLE_ENTRY structure pointer [Storage Devices], storage.band_table_entry, ehstorbandmgmt/BAND_TABLE_ENTRY, BAND_TABLE_ENTRY, BAND_TABLE_ENTRY structure [Storage Devices], *PBAND_TABLE_ENTRY, _BAND_TABLE_ENTRY
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ehstorbandmgmt.h
+req.include-header: EhStorBandMgmt.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows 8
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	EhStorBandMgmt.h
+apiname:
+-	BAND_TABLE_ENTRY
+product: Windows
+targetos: Windows
+req.typenames: BAND_TABLE_ENTRY, *PBAND_TABLE_ENTRY
 ---
 
 # _BAND_TABLE_ENTRY structure

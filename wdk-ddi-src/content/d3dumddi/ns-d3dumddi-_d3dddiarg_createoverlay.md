@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._D3DDDIARG_CREATEOVERLAY
-title : "_D3DDDIARG_CREATEOVERLAY"
-author : windows-driver-content
-description : The D3DDDIARG_CREATEOVERLAY structure describes an overlay to create.
-old-location : display\d3dddiarg_createoverlay.htm
-old-project : display
-ms.assetid : 74252431-5250-408a-91cc-cc529396f720
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : "_D3DDDIARG_CREATEOVERLAY, D3DDDIARG_CREATEOVERLAY structure [Display Devices], D3DDDIARG_CREATEOVERLAY, d3dumddi/D3DDDIARG_CREATEOVERLAY, display.d3dddiarg_createoverlay, UMDisplayDriver_param_Structs_3261a00d-4b26-4c64-a5e0-abd453aee84c.xml"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDIARG_CREATEOVERLAY
+UID: NS:d3dumddi._D3DDDIARG_CREATEOVERLAY
+title: "_D3DDDIARG_CREATEOVERLAY"
+author: windows-driver-content
+description: The D3DDDIARG_CREATEOVERLAY structure describes an overlay to create.
+old-location: display\d3dddiarg_createoverlay.htm
+old-project: display
+ms.assetid: 74252431-5250-408a-91cc-cc529396f720
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: "_D3DDDIARG_CREATEOVERLAY, D3DDDIARG_CREATEOVERLAY structure [Display Devices], D3DDDIARG_CREATEOVERLAY, d3dumddi/D3DDDIARG_CREATEOVERLAY, display.d3dddiarg_createoverlay, UMDisplayDriver_param_Structs_3261a00d-4b26-4c64-a5e0-abd453aee84c.xml"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	D3DDDIARG_CREATEOVERLAY
+product: Windows
+targetos: Windows
+req.typenames: D3DDDIARG_CREATEOVERLAY
 ---
 
 # _D3DDDIARG_CREATEOVERLAY structure

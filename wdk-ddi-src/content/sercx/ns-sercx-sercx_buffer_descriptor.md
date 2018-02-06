@@ -1,42 +1,47 @@
 ---
-UID : NS:sercx.SERCX_BUFFER_DESCRIPTOR
-title : SERCX_BUFFER_DESCRIPTOR
-author : windows-driver-content
-description : The SERCX_BUFFER_DESCRIPTOR structure describes a data buffer for a receive operation or transmit operation.
-old-location : serports\sercx_buffer_descriptor.htm
-old-project : serports
-ms.assetid : 0F13A5B2-CD35-4127-B2E3-F4027D098CB2
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : SERCX_BUFFER_DESCRIPTOR, 1/PSERCX_BUFFER_DESCRIPTOR, serports.sercx_buffer_descriptor, PSERCX_BUFFER_DESCRIPTOR, *PSERCX_BUFFER_DESCRIPTOR, PSERCX_BUFFER_DESCRIPTOR structure pointer [Serial Ports], 1/SERCX_BUFFER_DESCRIPTOR, SERCX_BUFFER_DESCRIPTOR structure [Serial Ports]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : sercx.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Any IRQL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SERCX_BUFFER_DESCRIPTOR, *PSERCX_BUFFER_DESCRIPTOR
-req.product : Windows 10 or later.
+UID: NS:sercx.SERCX_BUFFER_DESCRIPTOR
+title: SERCX_BUFFER_DESCRIPTOR
+author: windows-driver-content
+description: The SERCX_BUFFER_DESCRIPTOR structure describes a data buffer for a receive operation or transmit operation.
+old-location: serports\sercx_buffer_descriptor.htm
+old-project: serports
+ms.assetid: 0F13A5B2-CD35-4127-B2E3-F4027D098CB2
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: SERCX_BUFFER_DESCRIPTOR, 1/PSERCX_BUFFER_DESCRIPTOR, serports.sercx_buffer_descriptor, PSERCX_BUFFER_DESCRIPTOR, *PSERCX_BUFFER_DESCRIPTOR, PSERCX_BUFFER_DESCRIPTOR structure pointer [Serial Ports], 1/SERCX_BUFFER_DESCRIPTOR, SERCX_BUFFER_DESCRIPTOR structure [Serial Ports]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: sercx.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Any IRQL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	1.0\Sercx.h
+apiname:
+-	SERCX_BUFFER_DESCRIPTOR
+product: Windows
+targetos: Windows
+req.typenames: SERCX_BUFFER_DESCRIPTOR, *PSERCX_BUFFER_DESCRIPTOR
+req.product: Windows 10 or later.
 ---
 
 # SERCX_BUFFER_DESCRIPTOR structure

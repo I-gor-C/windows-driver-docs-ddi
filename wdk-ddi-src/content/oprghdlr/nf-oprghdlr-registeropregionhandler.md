@@ -1,41 +1,47 @@
 ---
-UID : NF:oprghdlr.RegisterOpRegionHandler
-title : RegisterOpRegionHandler function
-author : windows-driver-content
-description : The RegisterOpRegionHandler routine registers an operation region handler with the ACPI driver.
-old-location : acpi\registeropregionhandler.htm
-old-project : acpi
-ms.assetid : 5795a1d1-0e13-4f9f-b2f2-37bbd71bde7a
-ms.author : windowsdriverdev
-ms.date : 12/31/2017
-ms.keywords : RegisterOpRegionHandler, RegisterOpRegionHandler routine [ACPI Devices], acpi.registeropregionhandler, opregref_9742e50b-613d-4191-b0a2-6d1b0f365494.xml, oprghdlr/RegisterOpRegionHandler
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : oprghdlr.h
-req.include-header : Oprghdlr.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Oprghdlr.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RILGBATOKEN, *LPRILGBATOKEN
+UID: NF:oprghdlr.RegisterOpRegionHandler
+title: RegisterOpRegionHandler function
+author: windows-driver-content
+description: The RegisterOpRegionHandler routine registers an operation region handler with the ACPI driver.
+old-location: acpi\registeropregionhandler.htm
+old-project: acpi
+ms.assetid: 5795a1d1-0e13-4f9f-b2f2-37bbd71bde7a
+ms.author: windowsdriverdev
+ms.date: 12/31/2017
+ms.keywords: RegisterOpRegionHandler, RegisterOpRegionHandler routine [ACPI Devices], acpi.registeropregionhandler, opregref_9742e50b-613d-4191-b0a2-6d1b0f365494.xml, oprghdlr/RegisterOpRegionHandler
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: oprghdlr.h
+req.include-header: Oprghdlr.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Oprghdlr.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Oprghdlr.lib
+-	Oprghdlr.dll
+apiname:
+-	RegisterOpRegionHandler
+product: Windows
+targetos: Windows
+req.typenames: RILGBATOKEN, *LPRILGBATOKEN
 ---
 
 

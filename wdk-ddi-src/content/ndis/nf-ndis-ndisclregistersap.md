@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisClRegisterSap
-title : NdisClRegisterSap function
-author : windows-driver-content
-description : NdisClRegisterSap registers a SAP on which the client can receive incoming calls from a remote node.
-old-location : netvista\ndisclregistersap.htm
-old-project : netvista
-ms.assetid : 33ed0839-d1e3-4872-baa8-ead7e97f8c53
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : condis_client_ref_ee22bc25-7935-458f-8016-6537d9803acb.xml, NdisClRegisterSap function [Network Drivers Starting with Windows Vista], netvista.ndisclregistersap, NdisClRegisterSap, ndis/NdisClRegisterSap
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisClRegisterSap (NDIS 5.1)) in   Windows Vista. Supported for NDIS 5.1 drivers (see    NdisClRegisterSap (NDIS 5.1)) in   Windows XP.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_Protocol_Driver_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisClRegisterSap
+title: NdisClRegisterSap function
+author: windows-driver-content
+description: NdisClRegisterSap registers a SAP on which the client can receive incoming calls from a remote node.
+old-location: netvista\ndisclregistersap.htm
+old-project: netvista
+ms.assetid: 33ed0839-d1e3-4872-baa8-ead7e97f8c53
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: condis_client_ref_ee22bc25-7935-458f-8016-6537d9803acb.xml, NdisClRegisterSap function [Network Drivers Starting with Windows Vista], netvista.ndisclregistersap, NdisClRegisterSap, ndis/NdisClRegisterSap
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisClRegisterSap (NDIS 5.1)) in   Windows Vista. Supported for NDIS 5.1 drivers (see    NdisClRegisterSap (NDIS 5.1)) in   Windows XP.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_Protocol_Driver_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisClRegisterSap
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

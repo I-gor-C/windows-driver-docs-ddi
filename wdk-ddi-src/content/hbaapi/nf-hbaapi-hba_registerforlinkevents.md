@@ -1,41 +1,46 @@
 ---
-UID : NF:hbaapi.HBA_RegisterForLinkEvents
-title : HBA_RegisterForLinkEvents function
-author : windows-driver-content
-description : The HBA_RegisterForLinkEvents routine registers with a specified adapter for asynchronous fabric link-level events.
-old-location : storage\hba_registerforlinkevents.htm
-old-project : storage
-ms.assetid : f0e6834c-b827-4342-83f1-5980f8edce24
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : fibreHBA_rtns_7fd8f7c4-faaf-4190-99c8-560615e14365.xml, HBA_RegisterForLinkEvents, hbaapi/HBA_RegisterForLinkEvents, storage.hba_registerforlinkevents, HBA_RegisterForLinkEvents routine [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : hbaapi.h
-req.include-header : Hbaapi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Hbaapi.lib
-req.dll : Hbaapi.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HBA_WWNTYPE
+UID: NF:hbaapi.HBA_RegisterForLinkEvents
+title: HBA_RegisterForLinkEvents function
+author: windows-driver-content
+description: The HBA_RegisterForLinkEvents routine registers with a specified adapter for asynchronous fabric link-level events.
+old-location: storage\hba_registerforlinkevents.htm
+old-project: storage
+ms.assetid: f0e6834c-b827-4342-83f1-5980f8edce24
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: fibreHBA_rtns_7fd8f7c4-faaf-4190-99c8-560615e14365.xml, HBA_RegisterForLinkEvents, hbaapi/HBA_RegisterForLinkEvents, storage.hba_registerforlinkevents, HBA_RegisterForLinkEvents routine [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: hbaapi.h
+req.include-header: Hbaapi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Hbaapi.lib
+req.dll: Hbaapi.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Hbaapi.dll
+apiname:
+-	HBA_RegisterForLinkEvents
+product: Windows
+targetos: Windows
+req.typenames: HBA_WWNTYPE
 ---
 
 

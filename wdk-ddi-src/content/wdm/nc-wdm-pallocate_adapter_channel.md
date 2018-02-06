@@ -1,42 +1,47 @@
 ---
-UID : NC:wdm.PALLOCATE_ADAPTER_CHANNEL
-title : PALLOCATE_ADAPTER_CHANNEL
-author : windows-driver-content
-description : The AllocateAdapterChannel routine prepares the system for a DMA operation on behalf of the target device object, and then calls the driver-supplied AdapterControl routine to carry out the DMA operation.
-old-location : kernel\allocateadapterchannel.htm
-old-project : kernel
-ms.assetid : d3339754-1a54-48f0-90c8-6c7db59fb7cc
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.allocateadapterchannel, AllocateAdapterChannel, AllocateAdapterChannel callback function [Kernel-Mode Driver Architecture], AllocateAdapterChannel, PALLOCATE_ADAPTER_CHANNEL, PALLOCATE_ADAPTER_CHANNEL, wdm/AllocateAdapterChannel, kdma_b2d02da0-ab8f-4fc3-a7a5-a981920c071d.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : IrqlDispatch, IrqlDispatch(storport)
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : DISPATCH_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
-req.product : Windows 10 or later.
+UID: NC:wdm.PALLOCATE_ADAPTER_CHANNEL
+title: PALLOCATE_ADAPTER_CHANNEL
+author: windows-driver-content
+description: The AllocateAdapterChannel routine prepares the system for a DMA operation on behalf of the target device object, and then calls the driver-supplied AdapterControl routine to carry out the DMA operation.
+old-location: kernel\allocateadapterchannel.htm
+old-project: kernel
+ms.assetid: d3339754-1a54-48f0-90c8-6c7db59fb7cc
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.allocateadapterchannel, AllocateAdapterChannel, AllocateAdapterChannel callback function [Kernel-Mode Driver Architecture], AllocateAdapterChannel, PALLOCATE_ADAPTER_CHANNEL, PALLOCATE_ADAPTER_CHANNEL, wdm/AllocateAdapterChannel, kdma_b2d02da0-ab8f-4fc3-a7a5-a981920c071d.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: IrqlDispatch, IrqlDispatch(storport)
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: DISPATCH_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	wdm.h
+apiname:
+-	AllocateAdapterChannel
+product: Windows
+targetos: Windows
+req.typenames: WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+req.product: Windows 10 or later.
 ---
 
 

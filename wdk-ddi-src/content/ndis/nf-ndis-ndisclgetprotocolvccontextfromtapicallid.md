@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisClGetProtocolVcContextFromTapiCallId
-title : NdisClGetProtocolVcContextFromTapiCallId function
-author : windows-driver-content
-description : NdisClGetProtocolVcContextFromTapiCallId retrieves the client context for a virtual connection (VC) identified by a TAPI Call ID string.
-old-location : netvista\ndisclgetprotocolvccontextfromtapicallid.htm
-old-project : netvista
-ms.assetid : 5c716207-b093-499a-8fad-344b5ac51e25
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NdisClGetProtocolVcContextFromTapiCallId function [Network Drivers Starting with Windows Vista], ndis/NdisClGetProtocolVcContextFromTapiCallId, netvista.ndisclgetprotocolvccontextfromtapicallid, condis_client_ref_0f7c98a1-306b-40b4-b84c-0e624c936e90.xml, NdisClGetProtocolVcContextFromTapiCallId
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see       NdisClGetProtocolVcContextFromTapiCallId (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1   drivers (see       NdisClGetProtocolVcContextFromTapiCallId (NDIS 5.1)) in Windows XP.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_Protocol_Driver_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : DISPATCH_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisClGetProtocolVcContextFromTapiCallId
+title: NdisClGetProtocolVcContextFromTapiCallId function
+author: windows-driver-content
+description: NdisClGetProtocolVcContextFromTapiCallId retrieves the client context for a virtual connection (VC) identified by a TAPI Call ID string.
+old-location: netvista\ndisclgetprotocolvccontextfromtapicallid.htm
+old-project: netvista
+ms.assetid: 5c716207-b093-499a-8fad-344b5ac51e25
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NdisClGetProtocolVcContextFromTapiCallId function [Network Drivers Starting with Windows Vista], ndis/NdisClGetProtocolVcContextFromTapiCallId, netvista.ndisclgetprotocolvccontextfromtapicallid, condis_client_ref_0f7c98a1-306b-40b4-b84c-0e624c936e90.xml, NdisClGetProtocolVcContextFromTapiCallId
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see       NdisClGetProtocolVcContextFromTapiCallId (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1   drivers (see       NdisClGetProtocolVcContextFromTapiCallId (NDIS 5.1)) in Windows XP.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_Protocol_Driver_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: DISPATCH_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisClGetProtocolVcContextFromTapiCallId
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltRequestOperationStatusCallback
-title : FltRequestOperationStatusCallback function
-author : windows-driver-content
-description : FltRequestOperationStatusCallback returns status information for the given I/O operation.
-old-location : ifsk\fltrequestoperationstatuscallback.htm
-old-project : ifsk
-ms.assetid : 17379ce3-d9c1-4fbf-ab2e-b87604e6c71e
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : fltkernel/FltRequestOperationStatusCallback, ifsk.fltrequestoperationstatuscallback, FltRequestOperationStatusCallback function [Installable File System Drivers], FltRequestOperationStatusCallback, FltApiRef_p_to_z_85d8f6d5-37d1-469f-8c97-8b358f69e9ef.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Fltmgr.lib
-req.dll : Fltmgr.sys
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltRequestOperationStatusCallback
+title: FltRequestOperationStatusCallback function
+author: windows-driver-content
+description: FltRequestOperationStatusCallback returns status information for the given I/O operation.
+old-location: ifsk\fltrequestoperationstatuscallback.htm
+old-project: ifsk
+ms.assetid: 17379ce3-d9c1-4fbf-ab2e-b87604e6c71e
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: fltkernel/FltRequestOperationStatusCallback, ifsk.fltrequestoperationstatuscallback, FltRequestOperationStatusCallback function [Installable File System Drivers], FltRequestOperationStatusCallback, FltApiRef_p_to_z_85d8f6d5-37d1-469f-8c97-8b358f69e9ef.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Fltmgr.lib
+req.dll: Fltmgr.sys
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltRequestOperationStatusCallback
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

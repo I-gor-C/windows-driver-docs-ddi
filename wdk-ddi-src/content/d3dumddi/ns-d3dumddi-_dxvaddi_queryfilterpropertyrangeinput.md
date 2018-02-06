@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._DXVADDI_QUERYFILTERPROPERTYRANGEINPUT
-title : "_DXVADDI_QUERYFILTERPROPERTYRANGEINPUT"
-author : windows-driver-content
-description : The DXVADDI_QUERYFILTERPROPERTYRANGEINPUT structure describes a filter setting on a video stream that range information is requested for.
-old-location : display\dxvaddi_queryfilterpropertyrangeinput.htm
-old-project : display
-ms.assetid : d073d326-6cc6-4216-b312-809d707aef3b
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3dumddi/DXVADDI_QUERYFILTERPROPERTYRANGEINPUT, _DXVADDI_QUERYFILTERPROPERTYRANGEINPUT, DXVADDI_QUERYFILTERPROPERTYRANGEINPUT structure [Display Devices], display.dxvaddi_queryfilterpropertyrangeinput, DXVADDI_QUERYFILTERPROPERTYRANGEINPUT, DXVA2_Structs_28a2aed9-57a1-4bd6-b8dc-c09bb9e821b0.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXVADDI_QUERYFILTERPROPERTYRANGEINPUT
+UID: NS:d3dumddi._DXVADDI_QUERYFILTERPROPERTYRANGEINPUT
+title: "_DXVADDI_QUERYFILTERPROPERTYRANGEINPUT"
+author: windows-driver-content
+description: The DXVADDI_QUERYFILTERPROPERTYRANGEINPUT structure describes a filter setting on a video stream that range information is requested for.
+old-location: display\dxvaddi_queryfilterpropertyrangeinput.htm
+old-project: display
+ms.assetid: d073d326-6cc6-4216-b312-809d707aef3b
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3dumddi/DXVADDI_QUERYFILTERPROPERTYRANGEINPUT, _DXVADDI_QUERYFILTERPROPERTYRANGEINPUT, DXVADDI_QUERYFILTERPROPERTYRANGEINPUT structure [Display Devices], display.dxvaddi_queryfilterpropertyrangeinput, DXVADDI_QUERYFILTERPROPERTYRANGEINPUT, DXVA2_Structs_28a2aed9-57a1-4bd6-b8dc-c09bb9e821b0.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	DXVADDI_QUERYFILTERPROPERTYRANGEINPUT
+product: Windows
+targetos: Windows
+req.typenames: DXVADDI_QUERYFILTERPROPERTYRANGEINPUT
 ---
 
 # _DXVADDI_QUERYFILTERPROPERTYRANGEINPUT structure

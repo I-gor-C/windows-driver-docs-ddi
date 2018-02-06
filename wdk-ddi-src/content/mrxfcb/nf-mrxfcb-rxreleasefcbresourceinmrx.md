@@ -1,41 +1,46 @@
 ---
-UID : NF:mrxfcb.RxReleaseFcbResourceInMRx
-title : RxReleaseFcbResourceInMRx function
-author : windows-driver-content
-description : RxReleaseFcbResourceInMRx releases the FCB resource acquired by a network mini-redirector driver.
-old-location : ifsk\rxreleasefcbresourceinmrx.htm
-old-project : ifsk
-ms.assetid : 48308dcd-e423-4c25-9fec-3a423043e988
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : RxReleaseFcbResourceInMRx function [Installable File System Drivers], RxReleaseFcbResourceInMRx, mrxfcb/RxReleaseFcbResourceInMRx, ifsk.rxreleasefcbresourceinmrx, rxref_b433f8ba-7bdd-4fd2-baba-346e886a23dc.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : mrxfcb.h
-req.include-header : Mrxfcb.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SetDSMCounters_IN, *PSetDSMCounters_IN
+UID: NF:mrxfcb.RxReleaseFcbResourceInMRx
+title: RxReleaseFcbResourceInMRx function
+author: windows-driver-content
+description: RxReleaseFcbResourceInMRx releases the FCB resource acquired by a network mini-redirector driver.
+old-location: ifsk\rxreleasefcbresourceinmrx.htm
+old-project: ifsk
+ms.assetid: 48308dcd-e423-4c25-9fec-3a423043e988
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: RxReleaseFcbResourceInMRx function [Installable File System Drivers], RxReleaseFcbResourceInMRx, mrxfcb/RxReleaseFcbResourceInMRx, ifsk.rxreleasefcbresourceinmrx, rxref_b433f8ba-7bdd-4fd2-baba-346e886a23dc.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: mrxfcb.h
+req.include-header: Mrxfcb.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	mrxfcb.h
+apiname:
+-	RxReleaseFcbResourceInMRx
+product: Windows
+targetos: Windows
+req.typenames: SetDSMCounters_IN, *PSetDSMCounters_IN
 ---
 
 

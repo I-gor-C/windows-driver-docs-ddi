@@ -1,42 +1,47 @@
 ---
-UID : NS:ucmtypes._UCM_PD_POWER_DATA_OBJECT
-title : "_UCM_PD_POWER_DATA_OBJECT"
-author : windows-driver-content
-description : Describes a Power Data Object. For information about these members, see the Power Delivery specification.
-old-location : buses\ucm_pd_power_data_object.htm
-old-project : usbref
-ms.assetid : C54750A9-EE64-4FE7-9ED6-EC9709A82C43
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : buses.ucm_pd_power_data_object, _UCM_PD_POWER_DATA_OBJECT, *PUCM_PD_POWER_DATA_OBJECT, ucmtypes/UCM_PD_POWER_DATA_OBJECT, PUCM_PD_POWER_DATA_OBJECT union pointer [Buses], UCM_PD_POWER_DATA_OBJECT union [Buses], ucmtypes/PUCM_PD_POWER_DATA_OBJECT, PUCM_PD_POWER_DATA_OBJECT, UCM_PD_POWER_DATA_OBJECT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ucmtypes.h
-req.include-header : Ucmcx.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 1.15
-req.umdf-ver : 2.15
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUCM_PD_POWER_DATA_OBJECT, UCM_PD_POWER_DATA_OBJECT"
-req.product : Windows 10 or later.
+UID: NS:ucmtypes._UCM_PD_POWER_DATA_OBJECT
+title: "_UCM_PD_POWER_DATA_OBJECT"
+author: windows-driver-content
+description: Describes a Power Data Object. For information about these members, see the Power Delivery specification.
+old-location: buses\ucm_pd_power_data_object.htm
+old-project: usbref
+ms.assetid: C54750A9-EE64-4FE7-9ED6-EC9709A82C43
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: buses.ucm_pd_power_data_object, _UCM_PD_POWER_DATA_OBJECT, *PUCM_PD_POWER_DATA_OBJECT, ucmtypes/UCM_PD_POWER_DATA_OBJECT, PUCM_PD_POWER_DATA_OBJECT union pointer [Buses], UCM_PD_POWER_DATA_OBJECT union [Buses], ucmtypes/PUCM_PD_POWER_DATA_OBJECT, PUCM_PD_POWER_DATA_OBJECT, UCM_PD_POWER_DATA_OBJECT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ucmtypes.h
+req.include-header: Ucmcx.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 1.15
+req.umdf-ver: 2.15
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ucmtypes.h
+apiname:
+-	UCM_PD_POWER_DATA_OBJECT
+product: Windows
+targetos: Windows
+req.typenames: "*PUCM_PD_POWER_DATA_OBJECT, UCM_PD_POWER_DATA_OBJECT"
+req.product: Windows 10 or later.
 ---
 
 # _UCM_PD_POWER_DATA_OBJECT structure

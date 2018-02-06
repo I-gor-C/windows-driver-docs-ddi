@@ -1,41 +1,46 @@
 ---
-UID : NS:ndkpi._NDK_SGE
-title : "_NDK_SGE"
-author : windows-driver-content
-description : The NDK_SGE structure specifies the local buffers for NDK work requests.
-old-location : netvista\ndk_sge.htm
-old-project : netvista
-ms.assetid : D64DD5F0-2BCA-4A6B-A7BA-04A2B8E3B9FE
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NDK_SGE structure [Network Drivers Starting with Windows Vista], _NDK_SGE, netvista.ndk_sge, NDK_SGE, ndkpi/NDK_SGE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndkpi.h
-req.include-header : Ndkpi.h
-req.target-type : Windows
-req.target-min-winverclnt : None supported,Supported in NDIS 6.30 and later.
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDK_SGE
+UID: NS:ndkpi._NDK_SGE
+title: "_NDK_SGE"
+author: windows-driver-content
+description: The NDK_SGE structure specifies the local buffers for NDK work requests.
+old-location: netvista\ndk_sge.htm
+old-project: netvista
+ms.assetid: D64DD5F0-2BCA-4A6B-A7BA-04A2B8E3B9FE
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NDK_SGE structure [Network Drivers Starting with Windows Vista], _NDK_SGE, netvista.ndk_sge, NDK_SGE, ndkpi/NDK_SGE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndkpi.h
+req.include-header: Ndkpi.h
+req.target-type: Windows
+req.target-min-winverclnt: None supported,Supported in NDIS 6.30 and later.
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndkpi.h
+apiname:
+-	NDK_SGE
+product: Windows
+targetos: Windows
+req.typenames: NDK_SGE
 ---
 
 # _NDK_SGE structure

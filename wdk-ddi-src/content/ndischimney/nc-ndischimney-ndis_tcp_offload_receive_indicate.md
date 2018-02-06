@@ -1,41 +1,46 @@
 ---
-UID : NC:ndischimney.NDIS_TCP_OFFLOAD_RECEIVE_INDICATE
-title : NDIS_TCP_OFFLOAD_RECEIVE_INDICATE
-author : windows-driver-content
-description : An offload target calls the NdisTcpOffloadReceiveHandler function to indicate that received network data is available for consumption by a client application.
-old-location : netvista\ndistcpoffloadreceivehandler.htm
-old-project : netvista
-ms.assetid : a45dede9-6559-4207-a49f-d9627054433a
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.ndistcpoffloadreceivehandler, NdisTcpOffloadReceiveHandler callback function [Network Drivers Starting with Windows Vista], NdisTcpOffloadReceiveHandler, NDIS_TCP_OFFLOAD_RECEIVE_INDICATE, NDIS_TCP_OFFLOAD_RECEIVE_INDICATE, ndischimney/NdisTcpOffloadReceiveHandler, tcp_chim_ndis_func_c79b9638-b69d-49de-b33b-95c0136a45f8.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ndischimney.h
-req.include-header : Ndischimney.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : DISPATCH_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PD_BUFFER_VIRTUAL_SUBNET_INFO
+UID: NC:ndischimney.NDIS_TCP_OFFLOAD_RECEIVE_INDICATE
+title: NDIS_TCP_OFFLOAD_RECEIVE_INDICATE
+author: windows-driver-content
+description: An offload target calls the NdisTcpOffloadReceiveHandler function to indicate that received network data is available for consumption by a client application.
+old-location: netvista\ndistcpoffloadreceivehandler.htm
+old-project: netvista
+ms.assetid: a45dede9-6559-4207-a49f-d9627054433a
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.ndistcpoffloadreceivehandler, NdisTcpOffloadReceiveHandler callback function [Network Drivers Starting with Windows Vista], NdisTcpOffloadReceiveHandler, NDIS_TCP_OFFLOAD_RECEIVE_INDICATE, NDIS_TCP_OFFLOAD_RECEIVE_INDICATE, ndischimney/NdisTcpOffloadReceiveHandler, tcp_chim_ndis_func_c79b9638-b69d-49de-b33b-95c0136a45f8.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ndischimney.h
+req.include-header: Ndischimney.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: DISPATCH_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	ndischimney.h
+apiname:
+-	NdisTcpOffloadReceiveHandler
+product: Windows
+targetos: Windows
+req.typenames: PD_BUFFER_VIRTUAL_SUBNET_INFO
 ---
 
 

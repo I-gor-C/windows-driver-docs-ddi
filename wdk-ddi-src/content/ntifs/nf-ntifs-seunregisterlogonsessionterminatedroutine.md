@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.SeUnregisterLogonSessionTerminatedRoutine
-title : SeUnregisterLogonSessionTerminatedRoutine function
-author : windows-driver-content
-description : The SeUnregisterLogonSessionTerminatedRoutine routine unregisters a callback routine that was registered by an earlier call to SeRegisterLogonSessionTerminatedRoutine.
-old-location : ifsk\seunregisterlogonsessionterminatedroutine.htm
-old-project : ifsk
-ms.assetid : 74f24296-cd42-402b-a61f-0199c4a07fd0
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : seref_dbf0d7bc-c252-4805-99e1-075ce9e08ddc.xml, SeUnregisterLogonSessionTerminatedRoutine, ntifs/SeUnregisterLogonSessionTerminatedRoutine, SeUnregisterLogonSessionTerminatedRoutine routine [Installable File System Drivers], ifsk.seunregisterlogonsessionterminatedroutine
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.SeUnregisterLogonSessionTerminatedRoutine
+title: SeUnregisterLogonSessionTerminatedRoutine function
+author: windows-driver-content
+description: The SeUnregisterLogonSessionTerminatedRoutine routine unregisters a callback routine that was registered by an earlier call to SeRegisterLogonSessionTerminatedRoutine.
+old-location: ifsk\seunregisterlogonsessionterminatedroutine.htm
+old-project: ifsk
+ms.assetid: 74f24296-cd42-402b-a61f-0199c4a07fd0
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: seref_dbf0d7bc-c252-4805-99e1-075ce9e08ddc.xml, SeUnregisterLogonSessionTerminatedRoutine, ntifs/SeUnregisterLogonSessionTerminatedRoutine, SeUnregisterLogonSessionTerminatedRoutine routine [Installable File System Drivers], ifsk.seunregisterlogonsessionterminatedroutine
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	SeUnregisterLogonSessionTerminatedRoutine
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

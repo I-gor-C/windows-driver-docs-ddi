@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.IoGetRelatedDeviceObject
-title : IoGetRelatedDeviceObject function
-author : windows-driver-content
-description : Given a file object, the IoGetRelatedDeviceObject routine returns a pointer to the corresponding device object.
-old-location : kernel\iogetrelateddeviceobject.htm
-old-project : kernel
-ms.assetid : 70427fad-6a3d-40bb-9523-787c14fa1e39
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.iogetrelateddeviceobject, IoGetRelatedDeviceObject routine [Kernel-Mode Driver Architecture], wdm/IoGetRelatedDeviceObject, IoGetRelatedDeviceObject, k104_22abf9c6-81f5-497e-9bca-8a00b2c871df.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= DISPATCH_LEVEL (see Remarks section)"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.IoGetRelatedDeviceObject
+title: IoGetRelatedDeviceObject function
+author: windows-driver-content
+description: Given a file object, the IoGetRelatedDeviceObject routine returns a pointer to the corresponding device object.
+old-location: kernel\iogetrelateddeviceobject.htm
+old-project: kernel
+ms.assetid: 70427fad-6a3d-40bb-9523-787c14fa1e39
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.iogetrelateddeviceobject, IoGetRelatedDeviceObject routine [Kernel-Mode Driver Architecture], wdm/IoGetRelatedDeviceObject, IoGetRelatedDeviceObject, k104_22abf9c6-81f5-497e-9bca-8a00b2c871df.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= DISPATCH_LEVEL (see Remarks section)"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoGetRelatedDeviceObject
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NC:storport.HW_INTERRUPT
-title : HW_INTERRUPT
-author : windows-driver-content
-description : The Storport driver calls the HwStorInterrupt routine after the HBA generates an interrupt request.
-old-location : storage\hwstorinterrupt.htm
-old-project : storage
-ms.assetid : 3c61d947-3e05-4750-a50c-be9b2dc573f0
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.hwstorinterrupt, HwStorInterrupt routine [Storage Devices], HwStorInterrupt, HW_INTERRUPT, HW_INTERRUPT, storport/HwStorInterrupt, stormini_17f68641-1cfd-47b3-a52f-be98f96e693f.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : DIRQL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSTORAGE_DEVICE_UNIQUE_IDENTIFIER, STORAGE_DEVICE_UNIQUE_IDENTIFIER"
-req.product : Windows 10 or later.
+UID: NC:storport.HW_INTERRUPT
+title: HW_INTERRUPT
+author: windows-driver-content
+description: The Storport driver calls the HwStorInterrupt routine after the HBA generates an interrupt request.
+old-location: storage\hwstorinterrupt.htm
+old-project: storage
+ms.assetid: 3c61d947-3e05-4750-a50c-be9b2dc573f0
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.hwstorinterrupt, HwStorInterrupt routine [Storage Devices], HwStorInterrupt, HW_INTERRUPT, HW_INTERRUPT, storport/HwStorInterrupt, stormini_17f68641-1cfd-47b3-a52f-be98f96e693f.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: DIRQL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Storport.h
+apiname:
+-	HwStorInterrupt
+product: Windows
+targetos: Windows
+req.typenames: "*PSTORAGE_DEVICE_UNIQUE_IDENTIFIER, STORAGE_DEVICE_UNIQUE_IDENTIFIER"
+req.product: Windows 10 or later.
 ---
 
 

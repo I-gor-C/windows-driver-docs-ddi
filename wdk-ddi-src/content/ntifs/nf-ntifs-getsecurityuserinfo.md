@@ -1,41 +1,47 @@
 ---
-UID : NF:ntifs.GetSecurityUserInfo
-title : GetSecurityUserInfo function
-author : windows-driver-content
-description : The GetSecurityUserInfo function retrieves information about a logon session.
-old-location : ifsk\getsecurityuserinfo.htm
-old-project : ifsk
-ms.assetid : 2f26ff14-dd2c-4e80-aea5-38a7dd16d904
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : IFSMiscRef_e375e4a8-9702-41b8-b848-0dcbc0a7d9bd.xml, GetSecurityUserInfo function [Installable File System Drivers], GetSecurityUserInfo, ntifs/GetSecurityUserInfo, ifsk.getsecurityuserinfo
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h, FltKernel.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Microsoft Windows 2000 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ksecdd.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.GetSecurityUserInfo
+title: GetSecurityUserInfo function
+author: windows-driver-content
+description: The GetSecurityUserInfo function retrieves information about a logon session.
+old-location: ifsk\getsecurityuserinfo.htm
+old-project: ifsk
+ms.assetid: 2f26ff14-dd2c-4e80-aea5-38a7dd16d904
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: IFSMiscRef_e375e4a8-9702-41b8-b848-0dcbc0a7d9bd.xml, GetSecurityUserInfo function [Installable File System Drivers], GetSecurityUserInfo, ntifs/GetSecurityUserInfo, ifsk.getsecurityuserinfo
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h, FltKernel.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Microsoft Windows 2000 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ksecdd.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ksecdd.lib
+-	ksecdd.dll
+apiname:
+-	GetSecurityUserInfo
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

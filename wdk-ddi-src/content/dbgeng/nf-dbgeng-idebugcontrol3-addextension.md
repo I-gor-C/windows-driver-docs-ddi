@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugControl3.AddExtension
-title : IDebugControl3::AddExtension method
-author : windows-driver-content
-description : The AddExtension method loads an extension library into the debugger engine.
-old-location : debugger\addextension.htm
-old-project : debugger
-ms.assetid : 67dbc01a-83ee-4c7c-921e-f0945fbcc2ef
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : AddExtension method [Windows Debugging], IDebugControl interface, debugger.addextension, IDebugControl interface [Windows Debugging], AddExtension method, IDebugControl3::AddExtension, IDebugControl2::AddExtension, IDebugControl3, dbgeng/IDebugControl2::AddExtension, AddExtension method [Windows Debugging], IDebugControl2 interface, AddExtension, IDebugControl::AddExtension, IDebugControl_9d85fcbb-1c02-4b5a-b9ab-c50b9b266d1d.xml, dbgeng/IDebugControl::AddExtension, IDebugControl2 interface [Windows Debugging], AddExtension method, AddExtension method [Windows Debugging], IDebugControl3 interface, dbgeng/IDebugControl3::AddExtension, IDebugControl3 interface [Windows Debugging], AddExtension method, AddExtension method [Windows Debugging]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl3.AddExtension
+title: IDebugControl3::AddExtension method
+author: windows-driver-content
+description: The AddExtension method loads an extension library into the debugger engine.
+old-location: debugger\addextension.htm
+old-project: debugger
+ms.assetid: 67dbc01a-83ee-4c7c-921e-f0945fbcc2ef
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: AddExtension method [Windows Debugging], IDebugControl interface, debugger.addextension, IDebugControl interface [Windows Debugging], AddExtension method, IDebugControl3::AddExtension, IDebugControl2::AddExtension, IDebugControl3, dbgeng/IDebugControl2::AddExtension, AddExtension method [Windows Debugging], IDebugControl2 interface, AddExtension, IDebugControl::AddExtension, IDebugControl_9d85fcbb-1c02-4b5a-b9ab-c50b9b266d1d.xml, dbgeng/IDebugControl::AddExtension, IDebugControl2 interface [Windows Debugging], AddExtension method, AddExtension method [Windows Debugging], IDebugControl3 interface, dbgeng/IDebugControl3::AddExtension, IDebugControl3 interface [Windows Debugging], AddExtension method, AddExtension method [Windows Debugging]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Dbgeng.h
+apiname:
+-	IDebugControl.AddExtension
+-	IDebugControl2.AddExtension
+-	IDebugControl3.AddExtension
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

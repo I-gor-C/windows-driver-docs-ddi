@@ -1,41 +1,46 @@
 ---
-UID : NF:hidsdi.HidD_GetPreparsedData
-title : HidD_GetPreparsedData function
-author : windows-driver-content
-description : The HidD_GetPreparsedData routine returns a top-level collection's preparsed data.
-old-location : hid\hidd_getpreparseddata.htm
-old-project : hid
-ms.assetid : e5c550f0-a466-4d0b-ac6f-bcdce600245f
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : HidD_GetPreparsedData, HidD_GetPreparsedData routine [Human Input Devices], hidfunc_e728f2ff-69e2-46d0-8266-7ff011fb8bd5.xml, hidsdi/HidD_GetPreparsedData, hid.hidd_getpreparseddata
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : hidsdi.h
-req.include-header : Hidsdi.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 2000 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Hid.lib
-req.dll : Hid.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PHID_MINIDRIVER_REGISTRATION, HID_MINIDRIVER_REGISTRATION"
+UID: NF:hidsdi.HidD_GetPreparsedData
+title: HidD_GetPreparsedData function
+author: windows-driver-content
+description: The HidD_GetPreparsedData routine returns a top-level collection's preparsed data.
+old-location: hid\hidd_getpreparseddata.htm
+old-project: hid
+ms.assetid: e5c550f0-a466-4d0b-ac6f-bcdce600245f
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: HidD_GetPreparsedData, HidD_GetPreparsedData routine [Human Input Devices], hidfunc_e728f2ff-69e2-46d0-8266-7ff011fb8bd5.xml, hidsdi/HidD_GetPreparsedData, hid.hidd_getpreparseddata
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: hidsdi.h
+req.include-header: Hidsdi.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 2000 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Hid.lib
+req.dll: Hid.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Hid.dll
+apiname:
+-	HidD_GetPreparsedData
+product: Windows
+targetos: Windows
+req.typenames: "*PHID_MINIDRIVER_REGISTRATION, HID_MINIDRIVER_REGISTRATION"
 ---
 
 

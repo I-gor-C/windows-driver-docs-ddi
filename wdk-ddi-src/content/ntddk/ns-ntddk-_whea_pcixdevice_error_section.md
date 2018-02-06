@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddk._WHEA_PCIXDEVICE_ERROR_SECTION
-title : "_WHEA_PCIXDEVICE_ERROR_SECTION"
-author : windows-driver-content
-description : The WHEA_PCIXDEVICE_ERROR_SECTION structure describes PCI or PCI-X device error data.
-old-location : whea\whea_pcixdevice_error_section.htm
-old-project : whea
-ms.assetid : 0d2ec4e5-193d-45bf-8588-6afc1a9fb68c
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : "*PWHEA_PCIXDEVICE_ERROR, whea.whea_pcixdevice_error_section, whearef_79293b09-c49f-499f-9423-319265088a26.xml, WHEA_PCIXDEVICE_ERROR_SECTION structure [WHEA Drivers and Applications], ntddk/WHEA_PCIXDEVICE_ERROR_SECTION, WHEA_PCIXDEVICE_ERROR, _WHEA_PCIXDEVICE_ERROR_SECTION, *PWHEA_PCIXDEVICE_ERROR_SECTION, WHEA_PCIXDEVICE_ERROR_SECTION, PWHEA_PCIXDEVICE_ERROR_SECTION structure pointer [WHEA Drivers and Applications], ntddk/PWHEA_PCIXDEVICE_ERROR_SECTION, PWHEA_PCIXDEVICE_ERROR_SECTION"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWHEA_PCIXDEVICE_ERROR_SECTION, WHEA_PCIXDEVICE_ERROR_SECTION"
+UID: NS:ntddk._WHEA_PCIXDEVICE_ERROR_SECTION
+title: "_WHEA_PCIXDEVICE_ERROR_SECTION"
+author: windows-driver-content
+description: The WHEA_PCIXDEVICE_ERROR_SECTION structure describes PCI or PCI-X device error data.
+old-location: whea\whea_pcixdevice_error_section.htm
+old-project: whea
+ms.assetid: 0d2ec4e5-193d-45bf-8588-6afc1a9fb68c
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: "*PWHEA_PCIXDEVICE_ERROR, whea.whea_pcixdevice_error_section, whearef_79293b09-c49f-499f-9423-319265088a26.xml, WHEA_PCIXDEVICE_ERROR_SECTION structure [WHEA Drivers and Applications], ntddk/WHEA_PCIXDEVICE_ERROR_SECTION, WHEA_PCIXDEVICE_ERROR, _WHEA_PCIXDEVICE_ERROR_SECTION, *PWHEA_PCIXDEVICE_ERROR_SECTION, WHEA_PCIXDEVICE_ERROR_SECTION, PWHEA_PCIXDEVICE_ERROR_SECTION structure pointer [WHEA Drivers and Applications], ntddk/PWHEA_PCIXDEVICE_ERROR_SECTION, PWHEA_PCIXDEVICE_ERROR_SECTION"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddk.h
+apiname:
+-	WHEA_PCIXDEVICE_ERROR_SECTION
+product: Windows
+targetos: Windows
+req.typenames: "*PWHEA_PCIXDEVICE_ERROR_SECTION, WHEA_PCIXDEVICE_ERROR_SECTION"
 ---
 
 # _WHEA_PCIXDEVICE_ERROR_SECTION structure

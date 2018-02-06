@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3D11DDI_DISPATCHINDIRECT
-title : PFND3D11DDI_DISPATCHINDIRECT
-author : windows-driver-content
-description : The DispatchIndirect function executes the compute shader.
-old-location : display\dispatchindirect.htm
-old-project : display
-ms.assetid : 0c818515-163f-48ba-ad57-f4405672c98f
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dispatchindirect, DispatchIndirect callback function [Display Devices], DispatchIndirect, PFND3D11DDI_DISPATCHINDIRECT, PFND3D11DDI_DISPATCHINDIRECT, d3d10umddi/DispatchIndirect, UserModeDisplayDriverDx11_Functions_39c7b613-66de-4dd8-8b43-d1ae2a926e77.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : DispatchIndirect is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3D11DDI_DISPATCHINDIRECT
+title: PFND3D11DDI_DISPATCHINDIRECT
+author: windows-driver-content
+description: The DispatchIndirect function executes the compute shader.
+old-location: display\dispatchindirect.htm
+old-project: display
+ms.assetid: 0c818515-163f-48ba-ad57-f4405672c98f
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dispatchindirect, DispatchIndirect callback function [Display Devices], DispatchIndirect, PFND3D11DDI_DISPATCHINDIRECT, PFND3D11DDI_DISPATCHINDIRECT, d3d10umddi/DispatchIndirect, UserModeDisplayDriverDx11_Functions_39c7b613-66de-4dd8-8b43-d1ae2a926e77.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: DispatchIndirect is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	DispatchIndirect
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dhal._D3DHAL_DP2CREATEVERTEXSHADERFUNC
-title : "_D3DHAL_DP2CREATEVERTEXSHADERFUNC"
-author : windows-driver-content
-description : DirectX 9.0 and later versions only. The D3DHAL_DP2CREATEVERTEXSHADERFUNC structure is used to create a vertex shader code object when a D3DDP2OP_CREATEVERTEXSHADERFUNC opcode is received by D3dDrawPrimitives2.
-old-location : display\d3dhal_dp2createvertexshaderfunc.htm
-old-project : display
-ms.assetid : 2b7456e5-a6fa-42bf-aace-21d555c3e821
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : LPD3DHAL_DP2CREATEVERTEXSHADERFUNC, D3DHAL_DP2CREATEVERTEXSHADERFUNC, display.d3dhal_dp2createvertexshaderfunc, _D3DHAL_DP2CREATEVERTEXSHADERFUNC, d3dhal/LPD3DHAL_DP2CREATEVERTEXSHADERFUNC, d3dstrct_cb83183c-18cc-4e11-814f-2b50836cbe39.xml, *LPD3DHAL_DP2CREATEVERTEXSHADERFUNC, LPD3DHAL_DP2CREATEVERTEXSHADERFUNC structure pointer [Display Devices], d3dhal/D3DHAL_DP2CREATEVERTEXSHADERFUNC, D3DHAL_DP2CREATEVERTEXSHADERFUNC structure [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dhal.h
-req.include-header : D3dhal.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DHAL_DP2CREATEVERTEXSHADERFUNC
+UID: NS:d3dhal._D3DHAL_DP2CREATEVERTEXSHADERFUNC
+title: "_D3DHAL_DP2CREATEVERTEXSHADERFUNC"
+author: windows-driver-content
+description: DirectX 9.0 and later versions only. The D3DHAL_DP2CREATEVERTEXSHADERFUNC structure is used to create a vertex shader code object when a D3DDP2OP_CREATEVERTEXSHADERFUNC opcode is received by D3dDrawPrimitives2.
+old-location: display\d3dhal_dp2createvertexshaderfunc.htm
+old-project: display
+ms.assetid: 2b7456e5-a6fa-42bf-aace-21d555c3e821
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: LPD3DHAL_DP2CREATEVERTEXSHADERFUNC, D3DHAL_DP2CREATEVERTEXSHADERFUNC, display.d3dhal_dp2createvertexshaderfunc, _D3DHAL_DP2CREATEVERTEXSHADERFUNC, d3dhal/LPD3DHAL_DP2CREATEVERTEXSHADERFUNC, d3dstrct_cb83183c-18cc-4e11-814f-2b50836cbe39.xml, *LPD3DHAL_DP2CREATEVERTEXSHADERFUNC, LPD3DHAL_DP2CREATEVERTEXSHADERFUNC structure pointer [Display Devices], d3dhal/D3DHAL_DP2CREATEVERTEXSHADERFUNC, D3DHAL_DP2CREATEVERTEXSHADERFUNC structure [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dhal.h
+req.include-header: D3dhal.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dhal.h
+apiname:
+-	D3DHAL_DP2CREATEVERTEXSHADERFUNC
+product: Windows
+targetos: Windows
+req.typenames: D3DHAL_DP2CREATEVERTEXSHADERFUNC
 ---
 
 # _D3DHAL_DP2CREATEVERTEXSHADERFUNC structure

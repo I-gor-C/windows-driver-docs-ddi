@@ -1,41 +1,46 @@
 ---
-UID : NS:ndkpi._NDK_LISTENER
-title : "_NDK_LISTENER"
-author : windows-driver-content
-description : The NDK_LISTENER structure specifies the attributes of an NDK listener object.
-old-location : netvista\ndk_listener.htm
-old-project : netvista
-ms.assetid : 0043DC3F-E8EE-448F-B381-C67C199CE7A7
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NDK_LISTENER, PNDK_LISTENER, _NDK_LISTENER, PNDK_LISTENER structure pointer [Network Drivers Starting with Windows Vista], ndkpi/NDK_LISTENER, NDK_LISTENER structure [Network Drivers Starting with Windows Vista], ndkpi/PNDK_LISTENER, netvista.ndk_listener
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndkpi.h
-req.include-header : Ndkpi.h
-req.target-type : Windows
-req.target-min-winverclnt : None supported,Supported in NDIS 6.30 and later.
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDK_LISTENER
+UID: NS:ndkpi._NDK_LISTENER
+title: "_NDK_LISTENER"
+author: windows-driver-content
+description: The NDK_LISTENER structure specifies the attributes of an NDK listener object.
+old-location: netvista\ndk_listener.htm
+old-project: netvista
+ms.assetid: 0043DC3F-E8EE-448F-B381-C67C199CE7A7
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NDK_LISTENER, PNDK_LISTENER, _NDK_LISTENER, PNDK_LISTENER structure pointer [Network Drivers Starting with Windows Vista], ndkpi/NDK_LISTENER, NDK_LISTENER structure [Network Drivers Starting with Windows Vista], ndkpi/PNDK_LISTENER, netvista.ndk_listener
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndkpi.h
+req.include-header: Ndkpi.h
+req.target-type: Windows
+req.target-min-winverclnt: None supported,Supported in NDIS 6.30 and later.
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndkpi.h
+apiname:
+-	NDK_LISTENER
+product: Windows
+targetos: Windows
+req.typenames: NDK_LISTENER
 ---
 
 # _NDK_LISTENER structure

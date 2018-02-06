@@ -1,41 +1,46 @@
 ---
-UID : NS:d3d10umddi.D3DWDDM2_0DDI_CORELAYER_DEVICECALLBACKS
-title : D3DWDDM2_0DDI_CORELAYER_DEVICECALLBACKS
-author : windows-driver-content
-description : This structure contains the function table for the core layer device callback functions.
-old-location : display\d3dwddm2_0ddi_corelayer_devicecallbacks.htm
-old-project : display
-ms.assetid : A8E60BF8-2DFE-479A-9DA9-C3D9B012EBE9
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DWDDM2_0DDI_CORELAYER_DEVICECALLBACKS, d3d10umddi/D3DWDDM2_0DDI_CORELAYER_DEVICECALLBACKS, D3DWDDM2_0DDI_CORELAYER_DEVICECALLBACKS structure [Display Devices], display.d3dwddm2_0ddi_corelayer_devicecallbacks
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DWDDM2_0DDI_CORELAYER_DEVICECALLBACKS
+UID: NS:d3d10umddi.D3DWDDM2_0DDI_CORELAYER_DEVICECALLBACKS
+title: D3DWDDM2_0DDI_CORELAYER_DEVICECALLBACKS
+author: windows-driver-content
+description: This structure contains the function table for the core layer device callback functions.
+old-location: display\d3dwddm2_0ddi_corelayer_devicecallbacks.htm
+old-project: display
+ms.assetid: A8E60BF8-2DFE-479A-9DA9-C3D9B012EBE9
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DWDDM2_0DDI_CORELAYER_DEVICECALLBACKS, d3d10umddi/D3DWDDM2_0DDI_CORELAYER_DEVICECALLBACKS, D3DWDDM2_0DDI_CORELAYER_DEVICECALLBACKS structure [Display Devices], display.d3dwddm2_0ddi_corelayer_devicecallbacks
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	D3d10umddi.h
+apiname:
+-	D3DWDDM2_0DDI_CORELAYER_DEVICECALLBACKS
+product: Windows
+targetos: Windows
+req.typenames: D3DWDDM2_0DDI_CORELAYER_DEVICECALLBACKS
 ---
 
 # D3DWDDM2_0DDI_CORELAYER_DEVICECALLBACKS structure

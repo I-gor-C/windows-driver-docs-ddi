@@ -1,38 +1,38 @@
 ---
-UID : NC:wdm.ETWENABLECALLBACK
-title : ETWENABLECALLBACK
-author : windows-driver-content
-description : The EtwEnableCallback function is an optional driver-supplied callback function that is used to receive enable or disable notifications.
-old-location : devtest\etwenablecallback.htm
-old-project : devtest
-ms.assetid : 5953a3ae-b130-42fd-9dc8-974d15c6dfc5
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : _WDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.alt-api : EtwEnableCallback
-req.alt-loc : wdm.h
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
-req.product : Windows 10 or later.
+UID: NC:wdm.ETWENABLECALLBACK
+title: ETWENABLECALLBACK
+author: windows-driver-content
+description: The EtwEnableCallback function is an optional driver-supplied callback function that is used to receive enable or disable notifications.
+old-location: devtest\etwenablecallback.htm
+old-project: devtest
+ms.assetid: 5953a3ae-b130-42fd-9dc8-974d15c6dfc5
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: _WDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.alt-api: EtwEnableCallback
+req.alt-loc: wdm.h
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+req.typenames: WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+req.product: Windows 10 or later.
 ---
 
 

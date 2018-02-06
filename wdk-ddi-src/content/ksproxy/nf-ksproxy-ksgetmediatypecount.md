@@ -1,41 +1,47 @@
 ---
-UID : NF:ksproxy.KsGetMediaTypeCount
-title : KsGetMediaTypeCount function
-author : windows-driver-content
-description : The KsGetMediaTypeCount function returns the number of available media types on a pin factory identifier.
-old-location : stream\ksgetmediatypecount.htm
-old-project : stream
-ms.assetid : 157cb12c-1b2d-45b5-8541-e16ee3449064
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KsGetMediaTypeCount, ksproxy_77c6249c-2b35-4d9e-afff-b01cf5518a73.xml, ksproxy/KsGetMediaTypeCount, KsGetMediaTypeCount function [Streaming Media Devices], stream.ksgetmediatypecount
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ksproxy.h
-req.include-header : Ksproxy.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ksproxy.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PIPE_STATE
+UID: NF:ksproxy.KsGetMediaTypeCount
+title: KsGetMediaTypeCount function
+author: windows-driver-content
+description: The KsGetMediaTypeCount function returns the number of available media types on a pin factory identifier.
+old-location: stream\ksgetmediatypecount.htm
+old-project: stream
+ms.assetid: 157cb12c-1b2d-45b5-8541-e16ee3449064
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KsGetMediaTypeCount, ksproxy_77c6249c-2b35-4d9e-afff-b01cf5518a73.xml, ksproxy/KsGetMediaTypeCount, KsGetMediaTypeCount function [Streaming Media Devices], stream.ksgetmediatypecount
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ksproxy.h
+req.include-header: Ksproxy.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ksproxy.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ksproxy.lib
+-	Ksproxy.dll
+apiname:
+-	KsGetMediaTypeCount
+product: Windows
+targetos: Windows
+req.typenames: PIPE_STATE
 ---
 
 

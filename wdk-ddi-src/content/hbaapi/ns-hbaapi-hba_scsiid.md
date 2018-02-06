@@ -1,41 +1,46 @@
 ---
-UID : NS:hbaapi.HBA_ScsiId
-title : HBA_ScsiId
-author : windows-driver-content
-description : The HBA_ScsiId structure contains information used by the operating system to identify a SCSI logical unit.
-old-location : storage\hba_scsiid.htm
-old-project : storage
-ms.assetid : c2acb40c-cb6e-45b4-b0be-911f6b37094e
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : HBA_SCSIID structure [Storage Devices], storage.hba_scsiid, *PHBA_SCSIID, HBA_ScsiId structure [Storage Devices], hbaapi/HBA_ScsiId, structs-Fibre_855aa506-19ff-469d-8b32-3fc7f9e84ade.xml, PHBA_SCSIID structure pointer [Storage Devices], hbaapi/PHBA_SCSIID, HBA_SCSIID, PHBA_SCSIID, HBA_ScsiId
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : hbaapi.h
-req.include-header : Hbaapi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PHBA_SCSIID, HBA_SCSIID"
+UID: NS:hbaapi.HBA_ScsiId
+title: HBA_ScsiId
+author: windows-driver-content
+description: The HBA_ScsiId structure contains information used by the operating system to identify a SCSI logical unit.
+old-location: storage\hba_scsiid.htm
+old-project: storage
+ms.assetid: c2acb40c-cb6e-45b4-b0be-911f6b37094e
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: HBA_SCSIID structure [Storage Devices], storage.hba_scsiid, *PHBA_SCSIID, HBA_ScsiId structure [Storage Devices], hbaapi/HBA_ScsiId, structs-Fibre_855aa506-19ff-469d-8b32-3fc7f9e84ade.xml, PHBA_SCSIID structure pointer [Storage Devices], hbaapi/PHBA_SCSIID, HBA_SCSIID, PHBA_SCSIID, HBA_ScsiId
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: hbaapi.h
+req.include-header: Hbaapi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hbaapi.h
+apiname:
+-	HBA_SCSIID
+product: Windows
+targetos: Windows
+req.typenames: "*PHBA_SCSIID, HBA_SCSIID"
 ---
 
 # HBA_ScsiId structure

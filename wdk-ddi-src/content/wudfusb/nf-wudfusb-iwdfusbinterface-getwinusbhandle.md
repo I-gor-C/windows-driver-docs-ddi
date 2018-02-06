@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfusb.IWDFUsbInterface.GetWinUsbHandle
-title : IWDFUsbInterface::GetWinUsbHandle method
-author : windows-driver-content
-description : The GetWinUsbHandle method retrieves the WinUsb interface handle that is associated with a USB interface.
-old-location : wdf\iwdfusbinterface_getwinusbhandle.htm
-old-project : wdf
-ms.assetid : 31c23596-21b2-4fb2-96bd-5372fe2432ab
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : GetWinUsbHandle method, IWDFUsbInterface interface, wudfusb/IWDFUsbInterface::GetWinUsbHandle, wdf.iwdfusbinterface_getwinusbhandle, IWDFUsbInterface, GetWinUsbHandle, IWDFUsbInterface::GetWinUsbHandle, umdf.iwdfusbinterface_getwinusbhandle, IWDFUsbInterface interface, GetWinUsbHandle method, UMDFUSBref_6c94f0cc-8995-45c9-8101-bc123b0e48bf.xml, GetWinUsbHandle method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfusb.h
-req.include-header : Wudfusb.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.5
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfusb.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
-req.product : Windows 10 or later.
+UID: NF:wudfusb.IWDFUsbInterface.GetWinUsbHandle
+title: IWDFUsbInterface::GetWinUsbHandle method
+author: windows-driver-content
+description: The GetWinUsbHandle method retrieves the WinUsb interface handle that is associated with a USB interface.
+old-location: wdf\iwdfusbinterface_getwinusbhandle.htm
+old-project: wdf
+ms.assetid: 31c23596-21b2-4fb2-96bd-5372fe2432ab
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: GetWinUsbHandle method, IWDFUsbInterface interface, wudfusb/IWDFUsbInterface::GetWinUsbHandle, wdf.iwdfusbinterface_getwinusbhandle, IWDFUsbInterface, GetWinUsbHandle, IWDFUsbInterface::GetWinUsbHandle, umdf.iwdfusbinterface_getwinusbhandle, IWDFUsbInterface interface, GetWinUsbHandle method, UMDFUSBref_6c94f0cc-8995-45c9-8101-bc123b0e48bf.xml, GetWinUsbHandle method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfusb.h
+req.include-header: Wudfusb.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.5
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfusb.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFUsbInterface.GetWinUsbHandle
+product: Windows
+targetos: Windows
+req.typenames: WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
+req.product: Windows 10 or later.
 ---
 
 

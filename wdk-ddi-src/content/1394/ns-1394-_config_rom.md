@@ -1,41 +1,46 @@
 ---
-UID : NS:1394._CONFIG_ROM
-title : "_CONFIG_ROM"
-author : windows-driver-content
-description : The CONFIG_ROM structure is used to contain the first 24 bytes of an IEEE 1394 device's configuration ROM.
-old-location : ieee\config_rom.htm
-old-project : IEEE
-ms.assetid : 0ab96bc2-a89f-42cf-9ee2-020b47dff4cf
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : PCONFIG_ROM structure pointer [Buses], *PCONFIG_ROM, CONFIG_ROM, 1394/PCONFIG_ROM, PCONFIG_ROM, 1394stct_83c9e36a-b3d7-46cc-9dc6-1e40095d041b.xml, IEEE.config_rom, 1394/CONFIG_ROM, _CONFIG_ROM, CONFIG_ROM structure [Buses]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : 1394.h
-req.include-header : 1394.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : CONFIG_ROM, *PCONFIG_ROM
+UID: NS:1394._CONFIG_ROM
+title: "_CONFIG_ROM"
+author: windows-driver-content
+description: The CONFIG_ROM structure is used to contain the first 24 bytes of an IEEE 1394 device's configuration ROM.
+old-location: ieee\config_rom.htm
+old-project: IEEE
+ms.assetid: 0ab96bc2-a89f-42cf-9ee2-020b47dff4cf
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: PCONFIG_ROM structure pointer [Buses], *PCONFIG_ROM, CONFIG_ROM, 1394/PCONFIG_ROM, PCONFIG_ROM, 1394stct_83c9e36a-b3d7-46cc-9dc6-1e40095d041b.xml, IEEE.config_rom, 1394/CONFIG_ROM, _CONFIG_ROM, CONFIG_ROM structure [Buses]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: 1394.h
+req.include-header: 1394.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	1394.h
+apiname:
+-	CONFIG_ROM
+product: Windows
+targetos: Windows
+req.typenames: CONFIG_ROM, *PCONFIG_ROM
 ---
 
 # _CONFIG_ROM structure

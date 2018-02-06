@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.FsRtlFindExtraCreateParameter
-title : FsRtlFindExtraCreateParameter function
-author : windows-driver-content
-description : The FsRtlFindExtraCreateParameter routine searches a given ECP list for an ECP context structure of a given type and returns a pointer to this structure if it is found.
-old-location : ifsk\fsrtlfindextracreateparameter.htm
-old-project : ifsk
-ms.assetid : e72958d0-b7ff-45b6-bdd2-f894d5b44cf4
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.fsrtlfindextracreateparameter, fsrtlref_3536c7a7-2d3c-4aa5-9a91-5579a8108655.xml, FsRtlFindExtraCreateParameter routine [Installable File System Drivers], ntifs/FsRtlFindExtraCreateParameter, FsRtlFindExtraCreateParameter
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : The FsRtlFindExtraCreateParameter routine is available starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.FsRtlFindExtraCreateParameter
+title: FsRtlFindExtraCreateParameter function
+author: windows-driver-content
+description: The FsRtlFindExtraCreateParameter routine searches a given ECP list for an ECP context structure of a given type and returns a pointer to this structure if it is found.
+old-location: ifsk\fsrtlfindextracreateparameter.htm
+old-project: ifsk
+ms.assetid: e72958d0-b7ff-45b6-bdd2-f894d5b44cf4
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.fsrtlfindextracreateparameter, fsrtlref_3536c7a7-2d3c-4aa5-9a91-5579a8108655.xml, FsRtlFindExtraCreateParameter routine [Installable File System Drivers], ntifs/FsRtlFindExtraCreateParameter, FsRtlFindExtraCreateParameter
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: The FsRtlFindExtraCreateParameter routine is available starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	FsRtlFindExtraCreateParameter
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

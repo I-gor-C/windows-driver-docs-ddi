@@ -1,41 +1,46 @@
 ---
-UID : NS:hbapiwmi._AddLink_OUT
-title : "_AddLink_OUT"
-author : windows-driver-content
-description : The AddLink_OUT structure is used by an HBA miniport driver to report the status of a call to the AddLink WMI method.
-old-location : storage\addlink_out.htm
-old-project : storage
-ms.assetid : fe088ec7-2577-488d-a1c7-a7e2a1f86f6a
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : structs-Fibre_5f49a86f-a59f-4572-bfa2-5bb78dfe599b.xml, hbapiwmi/PAddLink_OUT, AddLink_OUT, hbapiwmi/AddLink_OUT, _AddLink_OUT, PAddLink_OUT, storage.addlink_out, *PAddLink_OUT, AddLink_OUT structure [Storage Devices], PAddLink_OUT structure pointer [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : hbapiwmi.h
-req.include-header : Hbapiwmi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PAddLink_OUT, AddLink_OUT"
+UID: NS:hbapiwmi._AddLink_OUT
+title: "_AddLink_OUT"
+author: windows-driver-content
+description: The AddLink_OUT structure is used by an HBA miniport driver to report the status of a call to the AddLink WMI method.
+old-location: storage\addlink_out.htm
+old-project: storage
+ms.assetid: fe088ec7-2577-488d-a1c7-a7e2a1f86f6a
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: structs-Fibre_5f49a86f-a59f-4572-bfa2-5bb78dfe599b.xml, hbapiwmi/PAddLink_OUT, AddLink_OUT, hbapiwmi/AddLink_OUT, _AddLink_OUT, PAddLink_OUT, storage.addlink_out, *PAddLink_OUT, AddLink_OUT structure [Storage Devices], PAddLink_OUT structure pointer [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: hbapiwmi.h
+req.include-header: Hbapiwmi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hbapiwmi.h
+apiname:
+-	AddLink_OUT
+product: Windows
+targetos: Windows
+req.typenames: "*PAddLink_OUT, AddLink_OUT"
 ---
 
 # _AddLink_OUT structure

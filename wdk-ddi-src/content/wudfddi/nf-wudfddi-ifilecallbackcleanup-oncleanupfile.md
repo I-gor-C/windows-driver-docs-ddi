@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IFileCallbackCleanup.OnCleanupFile
-title : IFileCallbackCleanup::OnCleanupFile method
-author : windows-driver-content
-description : The OnCleanupFile method cancels all I/O requests that a driver has pending in the framework queue.
-old-location : wdf\ifilecallbackcleanup_oncleanupfile.htm
-old-project : wdf
-ms.assetid : e6dd18f4-725f-4611-ad70-029654cf4375
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : OnCleanupFile method, IFileCallbackCleanup interface, wdf.ifilecallbackcleanup_oncleanupfile, UMDFFileObjectRef_a264918b-dd98-40e8-b644-d39414c2351c.xml, IFileCallbackCleanup, OnCleanupFile, wudfddi/IFileCallbackCleanup::OnCleanupFile, OnCleanupFile method, IFileCallbackCleanup::OnCleanupFile, umdf.ifilecallbackcleanup_oncleanupfile, IFileCallbackCleanup interface, OnCleanupFile method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IFileCallbackCleanup.OnCleanupFile
+title: IFileCallbackCleanup::OnCleanupFile method
+author: windows-driver-content
+description: The OnCleanupFile method cancels all I/O requests that a driver has pending in the framework queue.
+old-location: wdf\ifilecallbackcleanup_oncleanupfile.htm
+old-project: wdf
+ms.assetid: e6dd18f4-725f-4611-ad70-029654cf4375
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: OnCleanupFile method, IFileCallbackCleanup interface, wdf.ifilecallbackcleanup_oncleanupfile, UMDFFileObjectRef_a264918b-dd98-40e8-b644-d39414c2351c.xml, IFileCallbackCleanup, OnCleanupFile, wudfddi/IFileCallbackCleanup::OnCleanupFile, OnCleanupFile method, IFileCallbackCleanup::OnCleanupFile, umdf.ifilecallbackcleanup_oncleanupfile, IFileCallbackCleanup interface, OnCleanupFile method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Wudfddi.h
+apiname:
+-	IFileCallbackCleanup.OnCleanupFile
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

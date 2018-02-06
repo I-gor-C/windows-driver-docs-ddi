@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfcontrol.WdfControlDeviceInitAllocate
-title : WdfControlDeviceInitAllocate function
-author : windows-driver-content
-description : The WdfControlDeviceInitAllocate method allocates a WDFDEVICE_INIT structure that a driver uses when creating a new control device object.
-old-location : wdf\wdfcontroldeviceinitallocate.htm
-old-project : wdf
-ms.assetid : 3d423861-4c4d-45f2-bc44-b7cf1b230458
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WdfControlDeviceInitAllocate method, wdfcontrol/WdfControlDeviceInitAllocate, WdfControlDeviceInitAllocate, kmdf.wdfcontroldeviceinitallocate, wdf.wdfcontroldeviceinitallocate, DFDeviceObjectControllerDevObjRef_1450db30-6c2a-4103-99f6-2afe634000bf.xml, PFN_WDFCONTROLDEVICEINITALLOCATE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfcontrol.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : ControlDeviceInitAPI, CtlDeviceFinishInitDeviceAdd, CtlDeviceFinishInitDrEntry, DriverCreate, InitFreeDeviceCallback, InitFreeDeviceCreate, InitFreeDeviceCreateType2, InitFreeDeviceCreateType4, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_DEVICE_SHUTDOWN_FLAGS
-req.product : Windows 10 or later.
+UID: NF:wdfcontrol.WdfControlDeviceInitAllocate
+title: WdfControlDeviceInitAllocate function
+author: windows-driver-content
+description: The WdfControlDeviceInitAllocate method allocates a WDFDEVICE_INIT structure that a driver uses when creating a new control device object.
+old-location: wdf\wdfcontroldeviceinitallocate.htm
+old-project: wdf
+ms.assetid: 3d423861-4c4d-45f2-bc44-b7cf1b230458
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WdfControlDeviceInitAllocate method, wdfcontrol/WdfControlDeviceInitAllocate, WdfControlDeviceInitAllocate, kmdf.wdfcontroldeviceinitallocate, wdf.wdfcontroldeviceinitallocate, DFDeviceObjectControllerDevObjRef_1450db30-6c2a-4103-99f6-2afe634000bf.xml, PFN_WDFCONTROLDEVICEINITALLOCATE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfcontrol.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: ControlDeviceInitAPI, CtlDeviceFinishInitDeviceAdd, CtlDeviceFinishInitDrEntry, DriverCreate, InitFreeDeviceCallback, InitFreeDeviceCreate, InitFreeDeviceCreateType2, InitFreeDeviceCreateType4, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfControlDeviceInitAllocate
+product: Windows
+targetos: Windows
+req.typenames: WDF_DEVICE_SHUTDOWN_FLAGS
+req.product: Windows 10 or later.
 ---
 
 

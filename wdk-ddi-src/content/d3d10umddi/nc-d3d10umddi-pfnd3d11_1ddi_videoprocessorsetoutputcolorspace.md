@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3D11_1DDI_VIDEOPROCESSORSETOUTPUTCOLORSPACE
-title : PFND3D11_1DDI_VIDEOPROCESSORSETOUTPUTCOLORSPACE
-author : windows-driver-content
-description : Sets the output color space for the video processor.
-old-location : display\videoprocessorsetoutputcolorspace.htm
-old-project : display
-ms.assetid : a6d1020d-e8e1-465f-a133-59afdfe1cfce
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.videoprocessorsetoutputcolorspace, pfnVideoProcessorSetOutputColorSpace callback function [Display Devices], pfnVideoProcessorSetOutputColorSpace, PFND3D11_1DDI_VIDEOPROCESSORSETOUTPUTCOLORSPACE, PFND3D11_1DDI_VIDEOPROCESSORSETOUTPUTCOLORSPACE, d3d10umddi/pfnVideoProcessorSetOutputColorSpace
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3D11_1DDI_VIDEOPROCESSORSETOUTPUTCOLORSPACE
+title: PFND3D11_1DDI_VIDEOPROCESSORSETOUTPUTCOLORSPACE
+author: windows-driver-content
+description: Sets the output color space for the video processor.
+old-location: display\videoprocessorsetoutputcolorspace.htm
+old-project: display
+ms.assetid: a6d1020d-e8e1-465f-a133-59afdfe1cfce
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.videoprocessorsetoutputcolorspace, pfnVideoProcessorSetOutputColorSpace callback function [Display Devices], pfnVideoProcessorSetOutputColorSpace, PFND3D11_1DDI_VIDEOPROCESSORSETOUTPUTCOLORSPACE, PFND3D11_1DDI_VIDEOPROCESSORSETOUTPUTCOLORSPACE, d3d10umddi/pfnVideoProcessorSetOutputColorSpace
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	D3d10umddi.h
+apiname:
+-	pfnVideoProcessorSetOutputColorSpace
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

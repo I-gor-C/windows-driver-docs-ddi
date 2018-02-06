@@ -1,42 +1,47 @@
 ---
-UID : NS:wwan._WWAN_SMS_FILTER
-title : "_WWAN_SMS_FILTER"
-author : windows-driver-content
-description : The WWAN_SMS_FILTER structure represents the filter to apply to SMS messages on the MB device.
-old-location : netvista\wwan_sms_filter.htm
-old-project : netvista
-ms.assetid : 798101da-51be-416d-ac56-2f55a21e8ea8
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : PWWAN_SMS_FILTER structure pointer [Network Drivers Starting with Windows Vista], PWWAN_SMS_FILTER, WwanRef_1bec8893-7ce8-4d8c-aea1-d1c76b0013fc.xml, WWAN_SMS_FILTER structure [Network Drivers Starting with Windows Vista], netvista.wwan_sms_filter, wwan/WWAN_SMS_FILTER, WWAN_SMS_FILTER, wwan/PWWAN_SMS_FILTER, *PWWAN_SMS_FILTER, _WWAN_SMS_FILTER
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wwan.h
-req.include-header : Wwan.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WWAN_SMS_FILTER, *PWWAN_SMS_FILTER
-req.product : Windows 10 or later.
+UID: NS:wwan._WWAN_SMS_FILTER
+title: "_WWAN_SMS_FILTER"
+author: windows-driver-content
+description: The WWAN_SMS_FILTER structure represents the filter to apply to SMS messages on the MB device.
+old-location: netvista\wwan_sms_filter.htm
+old-project: netvista
+ms.assetid: 798101da-51be-416d-ac56-2f55a21e8ea8
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: PWWAN_SMS_FILTER structure pointer [Network Drivers Starting with Windows Vista], PWWAN_SMS_FILTER, WwanRef_1bec8893-7ce8-4d8c-aea1-d1c76b0013fc.xml, WWAN_SMS_FILTER structure [Network Drivers Starting with Windows Vista], netvista.wwan_sms_filter, wwan/WWAN_SMS_FILTER, WWAN_SMS_FILTER, wwan/PWWAN_SMS_FILTER, *PWWAN_SMS_FILTER, _WWAN_SMS_FILTER
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wwan.h
+req.include-header: Wwan.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wwan.h
+apiname:
+-	WWAN_SMS_FILTER
+product: Windows
+targetos: Windows
+req.typenames: WWAN_SMS_FILTER, *PWWAN_SMS_FILTER
+req.product: Windows 10 or later.
 ---
 
 # _WWAN_SMS_FILTER structure

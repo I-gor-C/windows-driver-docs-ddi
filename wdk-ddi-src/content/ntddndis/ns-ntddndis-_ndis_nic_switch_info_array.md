@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddndis._NDIS_NIC_SWITCH_INFO_ARRAY
-title : "_NDIS_NIC_SWITCH_INFO_ARRAY"
-author : windows-driver-content
-description : The NDIS_NIC_SWITCH_INFO_ARRAY structure specifies an array. Each element in the array specifies the attributes of a network adapter switch that has been created on the network adapter.
-old-location : netvista\ndis_nic_switch_info_array.htm
-old-project : netvista
-ms.assetid : bff2b133-bbef-4f2a-a7b1-34d7cf364205
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : ntddndis/PNDIS_NIC_SWITCH_INFO_ARRAY, PNDIS_NIC_SWITCH_INFO_ARRAY structure pointer [Network Drivers Starting with Windows Vista], netvista.ndis_nic_switch_info_array, *PNDIS_NIC_SWITCH_INFO_ARRAY, NDIS_NIC_SWITCH_INFO_ARRAY structure [Network Drivers Starting with Windows Vista], ntddndis/NDIS_NIC_SWITCH_INFO_ARRAY, _NDIS_NIC_SWITCH_INFO_ARRAY, NDIS_NIC_SWITCH_INFO_ARRAY, PNDIS_NIC_SWITCH_INFO_ARRAY
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.30 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PNDIS_NIC_SWITCH_INFO_ARRAY, NDIS_NIC_SWITCH_INFO_ARRAY"
+UID: NS:ntddndis._NDIS_NIC_SWITCH_INFO_ARRAY
+title: "_NDIS_NIC_SWITCH_INFO_ARRAY"
+author: windows-driver-content
+description: The NDIS_NIC_SWITCH_INFO_ARRAY structure specifies an array. Each element in the array specifies the attributes of a network adapter switch that has been created on the network adapter.
+old-location: netvista\ndis_nic_switch_info_array.htm
+old-project: netvista
+ms.assetid: bff2b133-bbef-4f2a-a7b1-34d7cf364205
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: ntddndis/PNDIS_NIC_SWITCH_INFO_ARRAY, PNDIS_NIC_SWITCH_INFO_ARRAY structure pointer [Network Drivers Starting with Windows Vista], netvista.ndis_nic_switch_info_array, *PNDIS_NIC_SWITCH_INFO_ARRAY, NDIS_NIC_SWITCH_INFO_ARRAY structure [Network Drivers Starting with Windows Vista], ntddndis/NDIS_NIC_SWITCH_INFO_ARRAY, _NDIS_NIC_SWITCH_INFO_ARRAY, NDIS_NIC_SWITCH_INFO_ARRAY, PNDIS_NIC_SWITCH_INFO_ARRAY
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.30 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddndis.h
+apiname:
+-	NDIS_NIC_SWITCH_INFO_ARRAY
+product: Windows
+targetos: Windows
+req.typenames: "*PNDIS_NIC_SWITCH_INFO_ARRAY, NDIS_NIC_SWITCH_INFO_ARRAY"
 ---
 
 # _NDIS_NIC_SWITCH_INFO_ARRAY structure

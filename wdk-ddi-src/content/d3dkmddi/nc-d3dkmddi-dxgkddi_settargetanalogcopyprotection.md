@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dkmddi.DXGKDDI_SETTARGETANALOGCOPYPROTECTION
-title : DXGKDDI_SETTARGETANALOGCOPYPROTECTION
-author : windows-driver-content
-description : Sets the analog copy protection on the specified target id. This is functionally equivalent to the DxgkDdiUpdateActiveVidPnPresentPath in previous WDDM versions if only the D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION is changed.
-old-location : display\dxgkddi_settargetanalogcopyprotection.htm
-old-project : display
-ms.assetid : D41A1867-C654-4747-B804-CAE047025458
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkddi_settargetanalogcopyprotection, DXGKDDI_SETTARGETANALOGCOPYPROTECTION callback function [Display Devices], DXGKDDI_SETTARGETANALOGCOPYPROTECTION, d3dkmddi/DXGKDDI_SETTARGETANALOGCOPYPROTECTION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dkmddi.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
+UID: NC:d3dkmddi.DXGKDDI_SETTARGETANALOGCOPYPROTECTION
+title: DXGKDDI_SETTARGETANALOGCOPYPROTECTION
+author: windows-driver-content
+description: Sets the analog copy protection on the specified target id. This is functionally equivalent to the DxgkDdiUpdateActiveVidPnPresentPath in previous WDDM versions if only the D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION is changed.
+old-location: display\dxgkddi_settargetanalogcopyprotection.htm
+old-project: display
+ms.assetid: D41A1867-C654-4747-B804-CAE047025458
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkddi_settargetanalogcopyprotection, DXGKDDI_SETTARGETANALOGCOPYPROTECTION callback function [Display Devices], DXGKDDI_SETTARGETANALOGCOPYPROTECTION, d3dkmddi/DXGKDDI_SETTARGETANALOGCOPYPROTECTION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dkmddi.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DXGKDDI_SETTARGETANALOGCOPYPROTECTION
+product: Windows
+targetos: Windows
+req.typenames: DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
 

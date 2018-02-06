@@ -1,42 +1,47 @@
 ---
-UID : NE:rilapitypes.RILSUBSCRIBERINFOSERVICE
-title : RILSUBSCRIBERINFOSERVICE
-author : windows-driver-content
-description : This enumeration describes the RILSUBSCRIBERINFOSERVICE.
-old-location : netvista\rilsubscriberinfoservice.htm
-old-project : netvista
-ms.assetid : 9dcdfbcc-bab8-4621-993b-e64106d0457e
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : RIL_SERVICE_FAX, RIL_SERVICE_VOICE, rilapitypes/RILSUBSCRIBERINFOSERVICE, RILSUBSCRIBERINFOSERVICE enumeration [Network Drivers Starting with Windows Vista], netvista.rilsubscriberinfoservice, rilapitypes/RIL_SERVICE_VOICE, RIL_SERVICE_OTHER, rilapitypes/RIL_SERVICE_OTHER, RILSUBSCRIBERINFOSERVICE, rilapitypes/RIL_SERVICE_UNKNOWN, rilapitypes/RIL_SERVICE_FAX, RIL_SERVICE_UNKNOWN
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : rilapitypes.h
-req.include-header : Rilapitypes.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RILSUBSCRIBERINFOSERVICE
-req.product : Windows 10 or later.
+UID: NE:rilapitypes.RILSUBSCRIBERINFOSERVICE
+title: RILSUBSCRIBERINFOSERVICE
+author: windows-driver-content
+description: This enumeration describes the RILSUBSCRIBERINFOSERVICE.
+old-location: netvista\rilsubscriberinfoservice.htm
+old-project: netvista
+ms.assetid: 9dcdfbcc-bab8-4621-993b-e64106d0457e
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: RIL_SERVICE_FAX, RIL_SERVICE_VOICE, rilapitypes/RILSUBSCRIBERINFOSERVICE, RILSUBSCRIBERINFOSERVICE enumeration [Network Drivers Starting with Windows Vista], netvista.rilsubscriberinfoservice, rilapitypes/RIL_SERVICE_VOICE, RIL_SERVICE_OTHER, rilapitypes/RIL_SERVICE_OTHER, RILSUBSCRIBERINFOSERVICE, rilapitypes/RIL_SERVICE_UNKNOWN, rilapitypes/RIL_SERVICE_FAX, RIL_SERVICE_UNKNOWN
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: rilapitypes.h
+req.include-header: Rilapitypes.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	rilapitypes.h
+apiname:
+-	RILSUBSCRIBERINFOSERVICE
+product: Windows
+targetos: Windows
+req.typenames: RILSUBSCRIBERINFOSERVICE
+req.product: Windows 10 or later.
 ---
 
 # RILSUBSCRIBERINFOSERVICE Enumeration
@@ -56,31 +61,31 @@ enum RILSUBSCRIBERINFOSERVICE {
 ## Constants
 
 <table>
-
-<tr>
-<td>RIL_SERVICE_FAX</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_SERVICE_MAX</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_SERVICE_OTHER</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_SERVICE_UNKNOWN</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_SERVICE_VOICE</td>
-<td></td>
-</tr>
+            
+                <tr>
+                    <td>RIL_SERVICE_FAX</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_SERVICE_MAX</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_SERVICE_OTHER</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_SERVICE_UNKNOWN</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_SERVICE_VOICE</td>
+                    <td></td>
+                </tr>
 </table>
 
 
@@ -89,9 +94,9 @@ enum RILSUBSCRIBERINFOSERVICE {
 | ---- |:---- |
 | **Header** | rilapitypes.h (include Rilapitypes.h) |
 
-## See Also
+    ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn946511">Cellular COM structures</a>
+        <a href="https://msdn.microsoft.com/library/windows/hardware/dn946511">Cellular COM structures</a>
 
  
 

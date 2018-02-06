@@ -1,41 +1,46 @@
 ---
-UID : NF:extsfns.IDebugFailureAnalysis2.SetString
-title : IDebugFailureAnalysis2::SetString method
-author : windows-driver-content
-description : The SetString method searches a DebugFailureAnalysis object for the first FA entry that has a specified tag. If it finds an FA entry with the specified tag, it sets (overwrites) the data block of the FA entry to a specified string value.
-old-location : debugger\idebugfailureanalysis2_setstring.htm
-old-project : debugger
-ms.assetid : 38B63AFF-BE37-45FB-9FD2-A49F216E1B81
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugFailureAnalysis2, debugger.idebugfailureanalysis2_setstring, SetString, IDebugFailureAnalysis2::SetString, SetString method [Windows Debugging], IDebugFailureAnalysis2 interface [Windows Debugging], SetString method, extsfns/IDebugFailureAnalysis2::SetString, SetString method [Windows Debugging], IDebugFailureAnalysis2 interface
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : extsfns.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : extsfns.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FA_EXTENSION_PLUGIN_PHASE
+UID: NF:extsfns.IDebugFailureAnalysis2.SetString
+title: IDebugFailureAnalysis2::SetString method
+author: windows-driver-content
+description: The SetString method searches a DebugFailureAnalysis object for the first FA entry that has a specified tag. If it finds an FA entry with the specified tag, it sets (overwrites) the data block of the FA entry to a specified string value.
+old-location: debugger\idebugfailureanalysis2_setstring.htm
+old-project: debugger
+ms.assetid: 38B63AFF-BE37-45FB-9FD2-A49F216E1B81
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugFailureAnalysis2, debugger.idebugfailureanalysis2_setstring, SetString, IDebugFailureAnalysis2::SetString, SetString method [Windows Debugging], IDebugFailureAnalysis2 interface [Windows Debugging], SetString method, extsfns/IDebugFailureAnalysis2::SetString, SetString method [Windows Debugging], IDebugFailureAnalysis2 interface
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: extsfns.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: extsfns.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	extsfns.h
+apiname:
+-	IDebugFailureAnalysis2.SetString
+product: Windows
+targetos: Windows
+req.typenames: FA_EXTENSION_PLUGIN_PHASE
 ---
 
 

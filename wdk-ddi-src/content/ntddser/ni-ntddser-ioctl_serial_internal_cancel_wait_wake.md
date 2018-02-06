@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddser.IOCTL_SERIAL_INTERNAL_CANCEL_WAIT_WAKE
-title : IOCTL_SERIAL_INTERNAL_CANCEL_WAIT_WAKE
-author : windows-driver-content
-description : The IOCTL_SERIAL_INTERNAL_CANCEL_WAIT_WAKE request disables the wait/wake operation of a serial device.
-old-location : serports\ioctl_serial_internal_cancel_wait_wake.htm
-old-project : serports
-ms.assetid : 007701f4-4ee0-46e1-963c-e2af2a441a81
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : serports.ioctl_serial_internal_cancel_wait_wake, IOCTL_SERIAL_INTERNAL_CANCEL_WAIT_WAKE control code [Serial Ports], IOCTL_SERIAL_INTERNAL_CANCEL_WAIT_WAKE, ntddser/IOCTL_SERIAL_INTERNAL_CANCEL_WAIT_WAKE, serref_0976b701-5c14-4912-854f-4d5a356744d2.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddser.h
-req.include-header : Ntddser.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SD_REQUEST_FUNCTION
+UID: NI:ntddser.IOCTL_SERIAL_INTERNAL_CANCEL_WAIT_WAKE
+title: IOCTL_SERIAL_INTERNAL_CANCEL_WAIT_WAKE
+author: windows-driver-content
+description: The IOCTL_SERIAL_INTERNAL_CANCEL_WAIT_WAKE request disables the wait/wake operation of a serial device.
+old-location: serports\ioctl_serial_internal_cancel_wait_wake.htm
+old-project: serports
+ms.assetid: 007701f4-4ee0-46e1-963c-e2af2a441a81
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: serports.ioctl_serial_internal_cancel_wait_wake, IOCTL_SERIAL_INTERNAL_CANCEL_WAIT_WAKE control code [Serial Ports], IOCTL_SERIAL_INTERNAL_CANCEL_WAIT_WAKE, ntddser/IOCTL_SERIAL_INTERNAL_CANCEL_WAIT_WAKE, serref_0976b701-5c14-4912-854f-4d5a356744d2.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddser.h
+req.include-header: Ntddser.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddser.h
+apiname:
+-	IOCTL_SERIAL_INTERNAL_CANCEL_WAIT_WAKE
+product: Windows
+targetos: Windows
+req.typenames: SD_REQUEST_FUNCTION
 ---
 
 # IOCTL_SERIAL_INTERNAL_CANCEL_WAIT_WAKE IOCTL

@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.RtlFreeAnsiString
-title : RtlFreeAnsiString function
-author : windows-driver-content
-description : The RtlFreeAnsiString routine releases storage that was allocated by RtlUnicodeStringToAnsiString.
-old-location : kernel\rtlfreeansistring.htm
-old-project : kernel
-ms.assetid : ca46be9e-31f6-4118-8958-4eb2c8450e8c
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/RtlFreeAnsiString, kernel.rtlfreeansistring, RtlFreeAnsiString routine [Kernel-Mode Driver Architecture], RtlFreeAnsiString, k109_0213924f-caca-4411-b5cc-d93282f01948.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<=APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.RtlFreeAnsiString
+title: RtlFreeAnsiString function
+author: windows-driver-content
+description: The RtlFreeAnsiString routine releases storage that was allocated by RtlUnicodeStringToAnsiString.
+old-location: kernel\rtlfreeansistring.htm
+old-project: kernel
+ms.assetid: ca46be9e-31f6-4118-8958-4eb2c8450e8c
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/RtlFreeAnsiString, kernel.rtlfreeansistring, RtlFreeAnsiString routine [Kernel-Mode Driver Architecture], RtlFreeAnsiString, k109_0213924f-caca-4411-b5cc-d93282f01948.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<=APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	RtlFreeAnsiString
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

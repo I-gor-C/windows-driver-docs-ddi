@@ -1,42 +1,47 @@
 ---
-UID : NS:wsk._WSK_PROVIDER_DISPATCH
-title : "_WSK_PROVIDER_DISPATCH"
-author : windows-driver-content
-description : The WSK_PROVIDER_DISPATCH structure specifies the WSK subsystem's dispatch table of functions that are not specific to a particular socket.
-old-location : netvista\wsk_provider_dispatch.htm
-old-project : netvista
-ms.assetid : 864891dd-7db5-4343-9014-c6a284f1fd7e
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : wsk/WSK_PROVIDER_DISPATCH, PWSK_PROVIDER_DISPATCH structure pointer [Network Drivers Starting with Windows Vista], *PWSK_PROVIDER_DISPATCH, _WSK_PROVIDER_DISPATCH, WSK_PROVIDER_DISPATCH structure [Network Drivers Starting with Windows Vista], PWSK_PROVIDER_DISPATCH, netvista.wsk_provider_dispatch, wskref_3e9340b7-e9e6-46bd-8f28-810354655c6c.xml, wsk/PWSK_PROVIDER_DISPATCH, WSK_PROVIDER_DISPATCH
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wsk.h
-req.include-header : Wsk.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating   systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WSK_PROVIDER_DISPATCH, *PWSK_PROVIDER_DISPATCH
-req.product : Windows 10 or later.
+UID: NS:wsk._WSK_PROVIDER_DISPATCH
+title: "_WSK_PROVIDER_DISPATCH"
+author: windows-driver-content
+description: The WSK_PROVIDER_DISPATCH structure specifies the WSK subsystem's dispatch table of functions that are not specific to a particular socket.
+old-location: netvista\wsk_provider_dispatch.htm
+old-project: netvista
+ms.assetid: 864891dd-7db5-4343-9014-c6a284f1fd7e
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: wsk/WSK_PROVIDER_DISPATCH, PWSK_PROVIDER_DISPATCH structure pointer [Network Drivers Starting with Windows Vista], *PWSK_PROVIDER_DISPATCH, _WSK_PROVIDER_DISPATCH, WSK_PROVIDER_DISPATCH structure [Network Drivers Starting with Windows Vista], PWSK_PROVIDER_DISPATCH, netvista.wsk_provider_dispatch, wskref_3e9340b7-e9e6-46bd-8f28-810354655c6c.xml, wsk/PWSK_PROVIDER_DISPATCH, WSK_PROVIDER_DISPATCH
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wsk.h
+req.include-header: Wsk.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wsk.h
+apiname:
+-	WSK_PROVIDER_DISPATCH
+product: Windows
+targetos: Windows
+req.typenames: WSK_PROVIDER_DISPATCH, *PWSK_PROVIDER_DISPATCH
+req.product: Windows 10 or later.
 ---
 
 # _WSK_PROVIDER_DISPATCH structure

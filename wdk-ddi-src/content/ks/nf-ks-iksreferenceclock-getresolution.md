@@ -1,41 +1,46 @@
 ---
-UID : NF:ks.IKsReferenceClock.GetResolution
-title : IKsReferenceClock::GetResolution method
-author : windows-driver-content
-description : The IKsReferenceClock::GetResolution method queries the associated reference clock for its resolution.
-old-location : stream\iksreferenceclock_getresolution.htm
-old-project : stream
-ms.assetid : 7fb70431-db09-470b-b795-826aba3a8b77
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : IKsReferenceClock::GetResolution, GetResolution method [Streaming Media Devices], IKsReferenceClock interface, stream.iksreferenceclock_getresolution, GetResolution method [Streaming Media Devices], ks/IKsReferenceClock::GetResolution, avintfc_941baf81-e369-45bc-a798-15270a6d8a29.xml, IKsReferenceClock, IKsReferenceClock interface [Streaming Media Devices], GetResolution method, GetResolution
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : ks.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.IKsReferenceClock.GetResolution
+title: IKsReferenceClock::GetResolution method
+author: windows-driver-content
+description: The IKsReferenceClock::GetResolution method queries the associated reference clock for its resolution.
+old-location: stream\iksreferenceclock_getresolution.htm
+old-project: stream
+ms.assetid: 7fb70431-db09-470b-b795-826aba3a8b77
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: IKsReferenceClock::GetResolution, GetResolution method [Streaming Media Devices], IKsReferenceClock interface, stream.iksreferenceclock_getresolution, GetResolution method [Streaming Media Devices], ks/IKsReferenceClock::GetResolution, avintfc_941baf81-e369-45bc-a798-15270a6d8a29.xml, IKsReferenceClock, IKsReferenceClock interface [Streaming Media Devices], GetResolution method, GetResolution
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: ks.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	ks.h
+apiname:
+-	IKsReferenceClock.GetResolution
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

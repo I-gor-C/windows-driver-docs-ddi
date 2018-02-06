@@ -1,41 +1,46 @@
 ---
-UID : NC:ndis.FILTER_RECEIVE_NET_BUFFER_LISTS
-title : FILTER_RECEIVE_NET_BUFFER_LISTS
-author : windows-driver-content
-description : NDIS calls the FilterReceiveNetBufferLists function to request a filter driver to process a receive indication.Note  You must declare the function by using the FILTER_RECEIVE_NET_BUFFER_LISTS type.
-old-location : netvista\filterreceivenetbufferlists.htm
-old-project : netvista
-ms.assetid : 6359c2a7-1208-41ea-bbf9-015c91b6e8f6
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.filterreceivenetbufferlists, FilterReceiveNetBufferLists callback function [Network Drivers Starting with Windows Vista], FilterReceiveNetBufferLists, FILTER_RECEIVE_NET_BUFFER_LISTS, FILTER_RECEIVE_NET_BUFFER_LISTS, ndis/FilterReceiveNetBufferLists, filter_functions_ref_c78036bd-cb6a-4898-b8b3-2d8585c7cfde.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
+UID: NC:ndis.FILTER_RECEIVE_NET_BUFFER_LISTS
+title: FILTER_RECEIVE_NET_BUFFER_LISTS
+author: windows-driver-content
+description: NDIS calls the FilterReceiveNetBufferLists function to request a filter driver to process a receive indication.Note  You must declare the function by using the FILTER_RECEIVE_NET_BUFFER_LISTS type.
+old-location: netvista\filterreceivenetbufferlists.htm
+old-project: netvista
+ms.assetid: 6359c2a7-1208-41ea-bbf9-015c91b6e8f6
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.filterreceivenetbufferlists, FilterReceiveNetBufferLists callback function [Network Drivers Starting with Windows Vista], FilterReceiveNetBufferLists, FILTER_RECEIVE_NET_BUFFER_LISTS, FILTER_RECEIVE_NET_BUFFER_LISTS, ndis/FilterReceiveNetBufferLists, filter_functions_ref_c78036bd-cb6a-4898-b8b3-2d8585c7cfde.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ndis.h
+apiname:
+-	FilterReceiveNetBufferLists
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NE:hpmi._HPMI_HINT_BOOL
-title : "_HPMI_HINT_BOOL"
-author : windows-driver-content
-description : Boolean type value used to track availability of HPMI hint data.
-old-location : powermeter\hpmi_hint_bool.htm
-old-project : powermeter
-ms.assetid : E056400C-A0FE-4740-945D-C529C8804DF3
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : hpmi/HPMI_HINT_BOOL, powermeter.hpmi_hint_bool, hpmi/HpmiBoolMax, _HPMI_HINT_BOOL, hpmi/HpmiBoolTrue, HpmiBoolMax, *PHPMI_HINT_BOOL, HpmiBoolUnavailable, HpmiBoolFalse, hpmi/HpmiBoolUnavailable, hpmi/HpmiBoolFalse, HpmiBoolTrue, HPMI_HINT_BOOL, HPMI_HINT_BOOL enumeration [Power Metering and Budgeting Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : hpmi.h
-req.include-header : Hpmi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 10, version 1709 and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PHPMI_HINT_BOOL, HPMI_HINT_BOOL"
+UID: NE:hpmi._HPMI_HINT_BOOL
+title: "_HPMI_HINT_BOOL"
+author: windows-driver-content
+description: Boolean type value used to track availability of HPMI hint data.
+old-location: powermeter\hpmi_hint_bool.htm
+old-project: powermeter
+ms.assetid: E056400C-A0FE-4740-945D-C529C8804DF3
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: hpmi/HPMI_HINT_BOOL, powermeter.hpmi_hint_bool, hpmi/HpmiBoolMax, _HPMI_HINT_BOOL, hpmi/HpmiBoolTrue, HpmiBoolMax, *PHPMI_HINT_BOOL, HpmiBoolUnavailable, HpmiBoolFalse, hpmi/HpmiBoolUnavailable, hpmi/HpmiBoolFalse, HpmiBoolTrue, HPMI_HINT_BOOL, HPMI_HINT_BOOL enumeration [Power Metering and Budgeting Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: hpmi.h
+req.include-header: Hpmi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 10, version 1709 and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hpmi.h
+apiname:
+-	HPMI_HINT_BOOL
+product: Windows
+targetos: Windows
+req.typenames: "*PHPMI_HINT_BOOL, HPMI_HINT_BOOL"
 ---
 
 # _HPMI_HINT_BOOL Enumeration
@@ -56,26 +61,26 @@ typedef enum _HPMI_HINT_BOOL {
 ## Constants
 
 <table>
-
-<tr>
-<td>HpmiBoolFalse</td>
-<td>Condition is asserted to be false.</td>
-</tr>
-
-<tr>
-<td>HpmiBoolMax</td>
-<td>Value is not used.</td>
-</tr>
-
-<tr>
-<td>HpmiBoolTrue</td>
-<td>Condition is asserted to be true.</td>
-</tr>
-
-<tr>
-<td>HpmiBoolUnavailable</td>
-<td>No data is available.</td>
-</tr>
+            
+                <tr>
+                    <td>HpmiBoolFalse</td>
+                    <td>Condition is asserted to be false.</td>
+                </tr>
+            
+                <tr>
+                    <td>HpmiBoolMax</td>
+                    <td>Value is not used.</td>
+                </tr>
+            
+                <tr>
+                    <td>HpmiBoolTrue</td>
+                    <td>Condition is asserted to be true.</td>
+                </tr>
+            
+                <tr>
+                    <td>HpmiBoolUnavailable</td>
+                    <td>No data is available.</td>
+                </tr>
 </table>
 
 
@@ -85,9 +90,9 @@ typedef enum _HPMI_HINT_BOOL {
 | **Windows version** | Available in Windows 10, version 1709 and later versions of the Windows operating systems. Available in Windows 10, version 1709 and later versions of the Windows operating systems. |
 | **Header** | hpmi.h (include Hpmi.h) |
 
-## See Also
+    ## See Also
 
-<a href="https://msdn.microsoft.com/35934D6C-3FB4-4AD4-AA50-BD3A7790269F">hpmi.h</a>
+        <a href="https://msdn.microsoft.com/35934D6C-3FB4-4AD4-AA50-BD3A7790269F">hpmi.h</a>
 
 <a href="..\hpmi\ni-hpmi-ioctl_hpmi_battery_utilization_hint.md">IOCTL_HPMI_BATTERY_UTILIZATION_HINT</a>
 

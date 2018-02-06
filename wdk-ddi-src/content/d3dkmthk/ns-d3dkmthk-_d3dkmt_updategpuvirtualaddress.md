@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmthk._D3DKMT_UPDATEGPUVIRTUALADDRESS
-title : "_D3DKMT_UPDATEGPUVIRTUALADDRESS"
-author : windows-driver-content
-description : D3DKMT_UPDATEGPUVIRTUALADDRESS is used with UpdateGpuVirtualAddress to allow the driver to specify a number of mapping operations to be applied to the process virtual address space in a single batch of page table updates.
-old-location : display\d3dkmt_updategpuvirtualaddress.htm
-old-project : display
-ms.assetid : B6586406-6CAD-479F-AE41-93EFBA195B99
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : "_D3DKMT_UPDATEGPUVIRTUALADDRESS, display.d3dkmt_updategpuvirtualaddress, D3DKMT_UPDATEGPUVIRTUALADDRESS structure [Display Devices], D3DKMT_UPDATEGPUVIRTUALADDRESS, d3dkmthk/D3DKMT_UPDATEGPUVIRTUALADDRESS"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_UPDATEGPUVIRTUALADDRESS
+UID: NS:d3dkmthk._D3DKMT_UPDATEGPUVIRTUALADDRESS
+title: "_D3DKMT_UPDATEGPUVIRTUALADDRESS"
+author: windows-driver-content
+description: D3DKMT_UPDATEGPUVIRTUALADDRESS is used with UpdateGpuVirtualAddress to allow the driver to specify a number of mapping operations to be applied to the process virtual address space in a single batch of page table updates.
+old-location: display\d3dkmt_updategpuvirtualaddress.htm
+old-project: display
+ms.assetid: B6586406-6CAD-479F-AE41-93EFBA195B99
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: "_D3DKMT_UPDATEGPUVIRTUALADDRESS, display.d3dkmt_updategpuvirtualaddress, D3DKMT_UPDATEGPUVIRTUALADDRESS structure [Display Devices], D3DKMT_UPDATEGPUVIRTUALADDRESS, d3dkmthk/D3DKMT_UPDATEGPUVIRTUALADDRESS"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmthk.h
+apiname:
+-	D3DKMT_UPDATEGPUVIRTUALADDRESS
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_UPDATEGPUVIRTUALADDRESS
 ---
 
 # _D3DKMT_UPDATEGPUVIRTUALADDRESS structure

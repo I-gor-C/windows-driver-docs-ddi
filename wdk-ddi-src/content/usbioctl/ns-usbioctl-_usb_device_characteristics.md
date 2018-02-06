@@ -1,42 +1,47 @@
 ---
-UID : NS:usbioctl._USB_DEVICE_CHARACTERISTICS
-title : "_USB_DEVICE_CHARACTERISTICS"
-author : windows-driver-content
-description : Contains information about the USB device’s characteristics, such as the maximum send and receive delays for any request. This structure is used in the IOCTL_USB_GET_DEVICE_CHARACTERISTICS request.
-old-location : buses\usb_device_characteristics.htm
-old-project : usbref
-ms.assetid : D4A8DE43-3E81-4A1C-B1C0-ABE6000D9F11
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : "_USB_DEVICE_CHARACTERISTICS, *PUSB_DEVICE_CHARACTERISTICS, usbioctl/PUSB_DEVICE_CHARACTERISTICS, usbioctl/USB_DEVICE_CHARACTERISTICS, USB_DEVICE_CHARACTERISTICS, PUSB_DEVICE_CHARACTERISTICS, buses.usb_device_characteristics, USB_DEVICE_CHARACTERISTICS structure [Buses], PUSB_DEVICE_CHARACTERISTICS structure pointer [Buses]"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : usbioctl.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : USB_DEVICE_CHARACTERISTICS, *PUSB_DEVICE_CHARACTERISTICS
-req.product : Windows 10 or later.
+UID: NS:usbioctl._USB_DEVICE_CHARACTERISTICS
+title: "_USB_DEVICE_CHARACTERISTICS"
+author: windows-driver-content
+description: Contains information about the USB device’s characteristics, such as the maximum send and receive delays for any request. This structure is used in the IOCTL_USB_GET_DEVICE_CHARACTERISTICS request.
+old-location: buses\usb_device_characteristics.htm
+old-project: usbref
+ms.assetid: D4A8DE43-3E81-4A1C-B1C0-ABE6000D9F11
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: "_USB_DEVICE_CHARACTERISTICS, *PUSB_DEVICE_CHARACTERISTICS, usbioctl/PUSB_DEVICE_CHARACTERISTICS, usbioctl/USB_DEVICE_CHARACTERISTICS, USB_DEVICE_CHARACTERISTICS, PUSB_DEVICE_CHARACTERISTICS, buses.usb_device_characteristics, USB_DEVICE_CHARACTERISTICS structure [Buses], PUSB_DEVICE_CHARACTERISTICS structure pointer [Buses]"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: usbioctl.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Usbioctl.h
+apiname:
+-	USB_DEVICE_CHARACTERISTICS
+product: Windows
+targetos: Windows
+req.typenames: USB_DEVICE_CHARACTERISTICS, *PUSB_DEVICE_CHARACTERISTICS
+req.product: Windows 10 or later.
 ---
 
 # _USB_DEVICE_CHARACTERISTICS structure

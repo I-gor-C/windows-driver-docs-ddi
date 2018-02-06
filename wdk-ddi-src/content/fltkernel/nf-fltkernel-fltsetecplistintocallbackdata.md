@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltSetEcpListIntoCallbackData
-title : FltSetEcpListIntoCallbackData function
-author : windows-driver-content
-description : The FltSetEcpListIntoCallbackData routine attaches an extra create parameter context structure (ECP) list to a create operation callback-data object.
-old-location : ifsk\fltsetecplistintocallbackdata.htm
-old-project : ifsk
-ms.assetid : 91179c1c-fe45-418f-8992-a40e41e3017a
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltSetEcpListIntoCallbackData routine [Installable File System Drivers], FltApiRef_p_to_z_01e8fac7-3c58-4ed2-85ac-38580cca36e6.xml, fltkernel/FltSetEcpListIntoCallbackData, ifsk.fltsetecplistintocallbackdata, FltSetEcpListIntoCallbackData
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : This routine is available starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltSetEcpListIntoCallbackData
+title: FltSetEcpListIntoCallbackData function
+author: windows-driver-content
+description: The FltSetEcpListIntoCallbackData routine attaches an extra create parameter context structure (ECP) list to a create operation callback-data object.
+old-location: ifsk\fltsetecplistintocallbackdata.htm
+old-project: ifsk
+ms.assetid: 91179c1c-fe45-418f-8992-a40e41e3017a
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltSetEcpListIntoCallbackData routine [Installable File System Drivers], FltApiRef_p_to_z_01e8fac7-3c58-4ed2-85ac-38580cca36e6.xml, fltkernel/FltSetEcpListIntoCallbackData, ifsk.fltsetecplistintocallbackdata, FltSetEcpListIntoCallbackData
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: This routine is available starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltSetEcpListIntoCallbackData
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisMRegisterIoPortRange
-title : NdisMRegisterIoPortRange function
-author : windows-driver-content
-description : NdisMRegisterIoPortRange sets up driver access to device I/O ports with the NdisRawReadPortXxx and NdisRawWritePortXxx functions and claims the range of I/O port addresses in the registry for that driver's NIC.
-old-location : netvista\ndismregisterioportrange.htm
-old-project : netvista
-ms.assetid : 3e7fc02b-9562-44b9-8659-793a1d96d1e9
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NdisMRegisterIoPortRange function [Network Drivers Starting with Windows Vista], miniport_port_io_ref_fa0141f1-639d-485d-a074-8af029c04406.xml, netvista.ndismregisterioportrange, NdisMRegisterIoPortRange, ndis/NdisMRegisterIoPortRange
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisMRegisterIoPortRange (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisMRegisterIoPortRange (NDIS   5.1)) in Windows XP.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_Miniport_Driver_Function, NdisMRegisterIoPortRange
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisMRegisterIoPortRange
+title: NdisMRegisterIoPortRange function
+author: windows-driver-content
+description: NdisMRegisterIoPortRange sets up driver access to device I/O ports with the NdisRawReadPortXxx and NdisRawWritePortXxx functions and claims the range of I/O port addresses in the registry for that driver's NIC.
+old-location: netvista\ndismregisterioportrange.htm
+old-project: netvista
+ms.assetid: 3e7fc02b-9562-44b9-8659-793a1d96d1e9
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NdisMRegisterIoPortRange function [Network Drivers Starting with Windows Vista], miniport_port_io_ref_fa0141f1-639d-485d-a074-8af029c04406.xml, netvista.ndismregisterioportrange, NdisMRegisterIoPortRange, ndis/NdisMRegisterIoPortRange
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisMRegisterIoPortRange (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisMRegisterIoPortRange (NDIS   5.1)) in Windows XP.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_Miniport_Driver_Function, NdisMRegisterIoPortRange
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisMRegisterIoPortRange
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

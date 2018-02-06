@@ -1,41 +1,46 @@
 ---
-UID : NS:netdma._NET_DMA_CHANNEL_PARAMETERS
-title : "_NET_DMA_CHANNEL_PARAMETERS"
-author : windows-driver-content
-description : The NET_DMA_CHANNEL_PARAMETERS structure specifies the configuration parameters that a DMA provider driver should use to configure a DMA channel.
-old-location : netvista\net_dma_channel_parameters.htm
-old-project : netvista
-ms.assetid : 0d09a9e9-06c5-4026-9053-ac74a59509cc
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NetDmaTransferStatusSuspend, NetDmaTransferStatusIdle, netvista.net_dma_channel_parameters, PNET_DMA_CHANNEL_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], *PNET_DMA_CHANNEL_PARAMETERS, netdma/NET_DMA_CHANNEL_PARAMETERS, NetDmaTransferStatusHalted, NET_DMA_CHANNEL_PARAMETERS, netdma/PNET_DMA_CHANNEL_PARAMETERS, PNET_DMA_CHANNEL_PARAMETERS, _NET_DMA_CHANNEL_PARAMETERS, NetDmaTransferStatusActive, NET_DMA_CHANNEL_PARAMETERS structure [Network Drivers Starting with Windows Vista], netdma_ref_021ebc64-529e-4588-b5ff-83ed04aa9478.xml, NetDmaTransferStatusArmed
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : netdma.h
-req.include-header : Netdma.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows Vista
-req.target-min-winversvr : Windows Server 2008
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NET_DMA_CHANNEL_PARAMETERS, *PNET_DMA_CHANNEL_PARAMETERS
+UID: NS:netdma._NET_DMA_CHANNEL_PARAMETERS
+title: "_NET_DMA_CHANNEL_PARAMETERS"
+author: windows-driver-content
+description: The NET_DMA_CHANNEL_PARAMETERS structure specifies the configuration parameters that a DMA provider driver should use to configure a DMA channel.
+old-location: netvista\net_dma_channel_parameters.htm
+old-project: netvista
+ms.assetid: 0d09a9e9-06c5-4026-9053-ac74a59509cc
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NetDmaTransferStatusSuspend, NetDmaTransferStatusIdle, netvista.net_dma_channel_parameters, PNET_DMA_CHANNEL_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], *PNET_DMA_CHANNEL_PARAMETERS, netdma/NET_DMA_CHANNEL_PARAMETERS, NetDmaTransferStatusHalted, NET_DMA_CHANNEL_PARAMETERS, netdma/PNET_DMA_CHANNEL_PARAMETERS, PNET_DMA_CHANNEL_PARAMETERS, _NET_DMA_CHANNEL_PARAMETERS, NetDmaTransferStatusActive, NET_DMA_CHANNEL_PARAMETERS structure [Network Drivers Starting with Windows Vista], netdma_ref_021ebc64-529e-4588-b5ff-83ed04aa9478.xml, NetDmaTransferStatusArmed
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: netdma.h
+req.include-header: Netdma.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows Vista
+req.target-min-winversvr: Windows Server 2008
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	netdma.h
+apiname:
+-	NET_DMA_CHANNEL_PARAMETERS
+product: Windows
+targetos: Windows
+req.typenames: NET_DMA_CHANNEL_PARAMETERS, *PNET_DMA_CHANNEL_PARAMETERS
 ---
 
 # _NET_DMA_CHANNEL_PARAMETERS structure

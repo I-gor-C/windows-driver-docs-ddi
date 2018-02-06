@@ -1,41 +1,47 @@
 ---
-UID : NF:bdasup.BdaCreatePin
-title : BdaCreatePin function
-author : windows-driver-content
-description : The BdaCreatePin function creates a new pin in the specified filter.
-old-location : stream\bdacreatepin.htm
-old-project : stream
-ms.assetid : ac69fdaa-f1e3-4487-93e1-f900f73be2fe
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : BdaCreatePin, stream.bdacreatepin, bdaref_e84fba91-044c-40f3-9364-ede0bbabda48.xml, BdaCreatePin function [Streaming Media Devices], bdasup/BdaCreatePin
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : bdasup.h
-req.include-header : Bdasup.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available on Microsoft Windows XP and later operating systems. This routine is available on the Windows 2000 platform only if Microsoft DirectX 9.0 and later is installed on that platform.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Bdasup.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KSP_BDA_NODE_PIN, *PKSP_BDA_NODE_PIN
+UID: NF:bdasup.BdaCreatePin
+title: BdaCreatePin function
+author: windows-driver-content
+description: The BdaCreatePin function creates a new pin in the specified filter.
+old-location: stream\bdacreatepin.htm
+old-project: stream
+ms.assetid: ac69fdaa-f1e3-4487-93e1-f900f73be2fe
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: BdaCreatePin, stream.bdacreatepin, bdaref_e84fba91-044c-40f3-9364-ede0bbabda48.xml, BdaCreatePin function [Streaming Media Devices], bdasup/BdaCreatePin
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: bdasup.h
+req.include-header: Bdasup.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available on Microsoft Windows XP and later operating systems. This routine is available on the Windows 2000 platform only if Microsoft DirectX 9.0 and later is installed on that platform.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Bdasup.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Bdasup.lib
+-	Bdasup.dll
+apiname:
+-	BdaCreatePin
+product: Windows
+targetos: Windows
+req.typenames: KSP_BDA_NODE_PIN, *PKSP_BDA_NODE_PIN
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:d3d10umddi.D3D11_1DDIARG_STAGE_IO_SIGNATURES
-title : D3D11_1DDIARG_STAGE_IO_SIGNATURES
-author : windows-driver-content
-description : Describes an I/O signature.
-old-location : display\d3d11_1ddiarg_stage_io_signatures.htm
-old-project : display
-ms.assetid : c7da4303-2ba4-4ac3-ad24-4ff25bb5466d
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3d10umddi/D3D11_1DDIARG_STAGE_IO_SIGNATURES, D3D11_1DDIARG_STAGE_IO_SIGNATURES, display.d3d11_1ddiarg_stage_io_signatures, D3D11_1DDIARG_STAGE_IO_SIGNATURES structure [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3D11_1DDIARG_STAGE_IO_SIGNATURES
+UID: NS:d3d10umddi.D3D11_1DDIARG_STAGE_IO_SIGNATURES
+title: D3D11_1DDIARG_STAGE_IO_SIGNATURES
+author: windows-driver-content
+description: Describes an I/O signature.
+old-location: display\d3d11_1ddiarg_stage_io_signatures.htm
+old-project: display
+ms.assetid: c7da4303-2ba4-4ac3-ad24-4ff25bb5466d
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3d10umddi/D3D11_1DDIARG_STAGE_IO_SIGNATURES, D3D11_1DDIARG_STAGE_IO_SIGNATURES, display.d3d11_1ddiarg_stage_io_signatures, D3D11_1DDIARG_STAGE_IO_SIGNATURES structure [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	D3d10umddi.h
+apiname:
+-	D3D11_1DDIARG_STAGE_IO_SIGNATURES
+product: Windows
+targetos: Windows
+req.typenames: D3D11_1DDIARG_STAGE_IO_SIGNATURES
 ---
 
 # D3D11_1DDIARG_STAGE_IO_SIGNATURES structure

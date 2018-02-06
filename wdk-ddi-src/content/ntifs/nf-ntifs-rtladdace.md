@@ -1,41 +1,47 @@
 ---
-UID : NF:ntifs.RtlAddAce
-title : RtlAddAce function
-author : windows-driver-content
-description : The RtlAddAce routine adds one or more access control entries (ACEs) to a specified access control list (ACL).
-old-location : ifsk\rtladdace.htm
-old-project : ifsk
-ms.assetid : 291b1fa9-5f42-49b6-b6de-20054a832bb2
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : rtlref_798d31d8-c233-4154-981d-a84cfdd95045.xml, ifsk.rtladdace, RtlAddAce, ntifs/RtlAddAce, RtlAddAce routine [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : This routine is available starting with Windows Server 2003 with SP1.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe (kernel mode); Ntdll.dll (user mode)
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.RtlAddAce
+title: RtlAddAce function
+author: windows-driver-content
+description: The RtlAddAce routine adds one or more access control entries (ACEs) to a specified access control list (ACL).
+old-location: ifsk\rtladdace.htm
+old-project: ifsk
+ms.assetid: 291b1fa9-5f42-49b6-b6de-20054a832bb2
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: rtlref_798d31d8-c233-4154-981d-a84cfdd95045.xml, ifsk.rtladdace, RtlAddAce, ntifs/RtlAddAce, RtlAddAce routine [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: This routine is available starting with Windows Server 2003 with SP1.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe (kernel mode); Ntdll.dll (user mode)
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+-	Ntdll.dll
+apiname:
+-	RtlAddAce
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

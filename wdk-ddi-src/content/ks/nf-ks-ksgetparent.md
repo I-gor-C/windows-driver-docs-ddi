@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsGetParent
-title : KsGetParent function
-author : windows-driver-content
-description : The KsGetParent function acquires the parent of the given object.
-old-location : stream\ksgetparent.htm
-old-project : stream
-ms.assetid : d7804745-295f-491a-80f4-84441598bbf4
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KsGetParent, stream.ksgetparent, KsGetParent function [Streaming Media Devices], ks/KsGetParent, avfunc_da3c1932-98b1-4f29-8b5a-4663077759e9.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsGetParent
+title: KsGetParent function
+author: windows-driver-content
+description: The KsGetParent function acquires the parent of the given object.
+old-location: stream\ksgetparent.htm
+old-project: stream
+ms.assetid: d7804745-295f-491a-80f4-84441598bbf4
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KsGetParent, stream.ksgetparent, KsGetParent function [Streaming Media Devices], ks/KsGetParent, avfunc_da3c1932-98b1-4f29-8b5a-4663077759e9.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsGetParent
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

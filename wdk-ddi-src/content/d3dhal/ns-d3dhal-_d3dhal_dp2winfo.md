@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dhal._D3DHAL_DP2WINFO
-title : "_D3DHAL_DP2WINFO"
-author : windows-driver-content
-description : The D3DHAL_DP2WINFO structure is used to inform the driver of the w-range to be used for w-buffering.
-old-location : display\d3dhal_dp2winfo.htm
-old-project : display
-ms.assetid : da4cdaff-4418-4b88-bf47-5a1567e940e1
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3dhal/LPD3DHAL_DP2WINFO, LPD3DHAL_DP2WINFO, display.d3dhal_dp2winfo, d3dstrct_f0755102-ab0f-43fd-9821-3cde940d24a1.xml, _D3DHAL_DP2WINFO, d3dhal/D3DHAL_DP2WINFO, D3DHAL_DP2WINFO, D3DHAL_DP2WINFO structure [Display Devices], LPD3DHAL_DP2WINFO structure pointer [Display Devices], *LPD3DHAL_DP2WINFO
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dhal.h
-req.include-header : D3dhal.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DHAL_DP2WINFO
+UID: NS:d3dhal._D3DHAL_DP2WINFO
+title: "_D3DHAL_DP2WINFO"
+author: windows-driver-content
+description: The D3DHAL_DP2WINFO structure is used to inform the driver of the w-range to be used for w-buffering.
+old-location: display\d3dhal_dp2winfo.htm
+old-project: display
+ms.assetid: da4cdaff-4418-4b88-bf47-5a1567e940e1
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3dhal/LPD3DHAL_DP2WINFO, LPD3DHAL_DP2WINFO, display.d3dhal_dp2winfo, d3dstrct_f0755102-ab0f-43fd-9821-3cde940d24a1.xml, _D3DHAL_DP2WINFO, d3dhal/D3DHAL_DP2WINFO, D3DHAL_DP2WINFO, D3DHAL_DP2WINFO structure [Display Devices], LPD3DHAL_DP2WINFO structure pointer [Display Devices], *LPD3DHAL_DP2WINFO
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dhal.h
+req.include-header: D3dhal.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dhal.h
+apiname:
+-	D3DHAL_DP2WINFO
+product: Windows
+targetos: Windows
+req.typenames: D3DHAL_DP2WINFO
 ---
 
 # _D3DHAL_DP2WINFO structure

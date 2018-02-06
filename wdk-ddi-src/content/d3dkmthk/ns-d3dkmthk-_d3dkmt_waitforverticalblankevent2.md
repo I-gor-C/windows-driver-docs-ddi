@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmthk._D3DKMT_WAITFORVERTICALBLANKEVENT2
-title : "_D3DKMT_WAITFORVERTICALBLANKEVENT2"
-author : windows-driver-content
-description : Describes parameters for multiple wait objects, including a vertical blank event. Supported starting with Windows 8.
-old-location : display\d3dkmt_waitforverticalblankevent2.htm
-old-project : display
-ms.assetid : b83e1d1c-e940-4e7b-8a74-82aee2c54391
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3dkmthk/D3DKMT_WAITFORVERTICALBLANKEVENT2, display.d3dkmt_waitforverticalblankevent2, _D3DKMT_WAITFORVERTICALBLANKEVENT2, D3DKMT_WAITFORVERTICALBLANKEVENT2 structure [Display Devices], D3DKMT_WAITFORVERTICALBLANKEVENT2
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_WAITFORVERTICALBLANKEVENT2
+UID: NS:d3dkmthk._D3DKMT_WAITFORVERTICALBLANKEVENT2
+title: "_D3DKMT_WAITFORVERTICALBLANKEVENT2"
+author: windows-driver-content
+description: Describes parameters for multiple wait objects, including a vertical blank event. Supported starting with Windows 8.
+old-location: display\d3dkmt_waitforverticalblankevent2.htm
+old-project: display
+ms.assetid: b83e1d1c-e940-4e7b-8a74-82aee2c54391
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3dkmthk/D3DKMT_WAITFORVERTICALBLANKEVENT2, display.d3dkmt_waitforverticalblankevent2, _D3DKMT_WAITFORVERTICALBLANKEVENT2, D3DKMT_WAITFORVERTICALBLANKEVENT2 structure [Display Devices], D3DKMT_WAITFORVERTICALBLANKEVENT2
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	D3dkmthk.h
+apiname:
+-	D3DKMT_WAITFORVERTICALBLANKEVENT2
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_WAITFORVERTICALBLANKEVENT2
 ---
 
 # _D3DKMT_WAITFORVERTICALBLANKEVENT2 structure

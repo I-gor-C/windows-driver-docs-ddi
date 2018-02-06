@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.CmGetCallbackVersion
-title : CmGetCallbackVersion function
-author : windows-driver-content
-description : The CmGetCallbackVersion routine retrieves the major and minor version numbers for the current version of the configuration manager's registry callback feature.
-old-location : kernel\cmgetcallbackversion.htm
-old-project : kernel
-ms.assetid : 4b7aba14-bc6a-4d3d-bcc5-53fd122794a1
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : CmGetCallbackVersion routine [Kernel-Mode Driver Architecture], wdm/CmGetCallbackVersion, CmGetCallbackVersion, kernel.cmgetcallbackversion, ConfigMgrRef_f15e2e9c-8b84-40b2-abb4-b37a6d38f920.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.CmGetCallbackVersion
+title: CmGetCallbackVersion function
+author: windows-driver-content
+description: The CmGetCallbackVersion routine retrieves the major and minor version numbers for the current version of the configuration manager's registry callback feature.
+old-location: kernel\cmgetcallbackversion.htm
+old-project: kernel
+ms.assetid: 4b7aba14-bc6a-4d3d-bcc5-53fd122794a1
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: CmGetCallbackVersion routine [Kernel-Mode Driver Architecture], wdm/CmGetCallbackVersion, CmGetCallbackVersion, kernel.cmgetcallbackversion, ConfigMgrRef_f15e2e9c-8b84-40b2-abb4-b37a6d38f920.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	CmGetCallbackVersion
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

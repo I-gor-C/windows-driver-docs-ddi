@@ -1,41 +1,46 @@
 ---
-UID : NC:hdaudio.PALLOCATE_CONTIGUOUS_DMA_BUFFER
-title : PALLOCATE_CONTIGUOUS_DMA_BUFFER
-author : windows-driver-content
-description : The AllocateContiguousDmaBuffer routine allocates a DMA buffer that consists of a single, contiguous block of physical memory.The function pointer type for an AllocateContiguousDmaBuffer routine is defined as:
-old-location : audio\allocatecontiguousdmabuffer.htm
-old-project : audio
-ms.assetid : 4538ce8e-fccd-4862-b226-a99fe578a5fd
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : audio.allocatecontiguousdmabuffer, AllocateContiguousDmaBuffer callback function [Audio Devices], AllocateContiguousDmaBuffer, PALLOCATE_CONTIGUOUS_DMA_BUFFER, PALLOCATE_CONTIGUOUS_DMA_BUFFER, hdaudio/AllocateContiguousDmaBuffer, aud-prop2_c9f2fa85-0967-4793-9092-9f95986c2126.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : hdaudio.h
-req.include-header : Hdaudio.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT
+UID: NC:hdaudio.PALLOCATE_CONTIGUOUS_DMA_BUFFER
+title: PALLOCATE_CONTIGUOUS_DMA_BUFFER
+author: windows-driver-content
+description: The AllocateContiguousDmaBuffer routine allocates a DMA buffer that consists of a single, contiguous block of physical memory.The function pointer type for an AllocateContiguousDmaBuffer routine is defined as:
+old-location: audio\allocatecontiguousdmabuffer.htm
+old-project: audio
+ms.assetid: 4538ce8e-fccd-4862-b226-a99fe578a5fd
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: audio.allocatecontiguousdmabuffer, AllocateContiguousDmaBuffer callback function [Audio Devices], AllocateContiguousDmaBuffer, PALLOCATE_CONTIGUOUS_DMA_BUFFER, PALLOCATE_CONTIGUOUS_DMA_BUFFER, hdaudio/AllocateContiguousDmaBuffer, aud-prop2_c9f2fa85-0967-4793-9092-9f95986c2126.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: hdaudio.h
+req.include-header: Hdaudio.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	hdaudio.h
+apiname:
+-	AllocateContiguousDmaBuffer
+product: Windows
+targetos: Windows
+req.typenames: SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT
 ---
 
 

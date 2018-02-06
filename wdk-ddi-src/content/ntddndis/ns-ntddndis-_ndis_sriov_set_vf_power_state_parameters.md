@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddndis._NDIS_SRIOV_SET_VF_POWER_STATE_PARAMETERS
-title : "_NDIS_SRIOV_SET_VF_POWER_STATE_PARAMETERS"
-author : windows-driver-content
-description : The NDIS_SRIOV_SET_VF_POWER_STATE_PARAMETERS structure specifies the parameters for changing the power state of a network adapter's PCI Express (PCIe) Virtual Function (VF).
-old-location : netvista\ndis_sriov_set_vf_power_state_parameters.htm
-old-project : netvista
-ms.assetid : f2914619-1721-42ef-a20f-5774b906a35e
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NDIS_SRIOV_SET_VF_POWER_STATE_PARAMETERS, PNDIS_SRIOV_SET_VF_POWER_STATE_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], ntddndis/NDIS_SRIOV_SET_VF_POWER_STATE_PARAMETERS, ntddndis/PNDIS_SRIOV_SET_VF_POWER_STATE_PARAMETERS, *PNDIS_SRIOV_SET_VF_POWER_STATE_PARAMETERS, _NDIS_SRIOV_SET_VF_POWER_STATE_PARAMETERS, NDIS_SRIOV_SET_VF_POWER_STATE_PARAMETERS structure [Network Drivers Starting with Windows Vista], netvista.ndis_sriov_set_vf_power_state_parameters, PNDIS_SRIOV_SET_VF_POWER_STATE_PARAMETERS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.30 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SRIOV_SET_VF_POWER_STATE_PARAMETERS, *PNDIS_SRIOV_SET_VF_POWER_STATE_PARAMETERS
+UID: NS:ntddndis._NDIS_SRIOV_SET_VF_POWER_STATE_PARAMETERS
+title: "_NDIS_SRIOV_SET_VF_POWER_STATE_PARAMETERS"
+author: windows-driver-content
+description: The NDIS_SRIOV_SET_VF_POWER_STATE_PARAMETERS structure specifies the parameters for changing the power state of a network adapter's PCI Express (PCIe) Virtual Function (VF).
+old-location: netvista\ndis_sriov_set_vf_power_state_parameters.htm
+old-project: netvista
+ms.assetid: f2914619-1721-42ef-a20f-5774b906a35e
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NDIS_SRIOV_SET_VF_POWER_STATE_PARAMETERS, PNDIS_SRIOV_SET_VF_POWER_STATE_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], ntddndis/NDIS_SRIOV_SET_VF_POWER_STATE_PARAMETERS, ntddndis/PNDIS_SRIOV_SET_VF_POWER_STATE_PARAMETERS, *PNDIS_SRIOV_SET_VF_POWER_STATE_PARAMETERS, _NDIS_SRIOV_SET_VF_POWER_STATE_PARAMETERS, NDIS_SRIOV_SET_VF_POWER_STATE_PARAMETERS structure [Network Drivers Starting with Windows Vista], netvista.ndis_sriov_set_vf_power_state_parameters, PNDIS_SRIOV_SET_VF_POWER_STATE_PARAMETERS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.30 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddndis.h
+apiname:
+-	NDIS_SRIOV_SET_VF_POWER_STATE_PARAMETERS
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SRIOV_SET_VF_POWER_STATE_PARAMETERS, *PNDIS_SRIOV_SET_VF_POWER_STATE_PARAMETERS
 ---
 
 # _NDIS_SRIOV_SET_VF_POWER_STATE_PARAMETERS structure

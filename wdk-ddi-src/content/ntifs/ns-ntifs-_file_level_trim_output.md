@@ -1,41 +1,46 @@
 ---
-UID : NS:ntifs._FILE_LEVEL_TRIM_OUTPUT
-title : "_FILE_LEVEL_TRIM_OUTPUT"
-author : windows-driver-content
-description : The FILE_LEVEL_TRIM_OUTPUT structure contains the results of a trim operation performed by an FSCTL_FILE_LEVEL_TRIM request.
-old-location : ifsk\file_level_trim_output.htm
-old-project : ifsk
-ms.assetid : 28CCE967-E752-4E0E-94D9-3A4243266684
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ntifs/FILE_LEVEL_TRIM_RANGE, FILE_LEVEL_TRIM_OUTPUT, PFILE_LEVEL_TRIM_RANGE_OUTPUT, FILE_LEVEL_TRIM_OUTPUT structure [Installable File System Drivers], ntifs/PFILE_LEVEL_TRIM_RANGE_OUTPUT, FILE_LEVEL_TRIM_RANGE_OUTPUT, PFILE_LEVEL_TRIM_RANGE_OUTPUT structure pointer [Installable File System Drivers], _FILE_LEVEL_TRIM_OUTPUT, *PFILE_LEVEL_TRIM_OUTPUT, FILE_LEVEL_TRIM_RANGE_OUTPUT structure [Installable File System Drivers], ifsk.file_level_trim_output
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 8 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PFILE_LEVEL_TRIM_OUTPUT, FILE_LEVEL_TRIM_OUTPUT"
+UID: NS:ntifs._FILE_LEVEL_TRIM_OUTPUT
+title: "_FILE_LEVEL_TRIM_OUTPUT"
+author: windows-driver-content
+description: The FILE_LEVEL_TRIM_OUTPUT structure contains the results of a trim operation performed by an FSCTL_FILE_LEVEL_TRIM request.
+old-location: ifsk\file_level_trim_output.htm
+old-project: ifsk
+ms.assetid: 28CCE967-E752-4E0E-94D9-3A4243266684
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ntifs/FILE_LEVEL_TRIM_RANGE, FILE_LEVEL_TRIM_OUTPUT, PFILE_LEVEL_TRIM_RANGE_OUTPUT, FILE_LEVEL_TRIM_OUTPUT structure [Installable File System Drivers], ntifs/PFILE_LEVEL_TRIM_RANGE_OUTPUT, FILE_LEVEL_TRIM_RANGE_OUTPUT, PFILE_LEVEL_TRIM_RANGE_OUTPUT structure pointer [Installable File System Drivers], _FILE_LEVEL_TRIM_OUTPUT, *PFILE_LEVEL_TRIM_OUTPUT, FILE_LEVEL_TRIM_RANGE_OUTPUT structure [Installable File System Drivers], ifsk.file_level_trim_output
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 8 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntifs.h
+apiname:
+-	FILE_LEVEL_TRIM_RANGE_OUTPUT
+product: Windows
+targetos: Windows
+req.typenames: "*PFILE_LEVEL_TRIM_OUTPUT, FILE_LEVEL_TRIM_OUTPUT"
 ---
 
 # _FILE_LEVEL_TRIM_OUTPUT structure

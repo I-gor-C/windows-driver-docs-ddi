@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_DXVAHD_GETVIDEOPROCESSSTREAMSTATEPRIVATE
-title : PFND3DDDI_DXVAHD_GETVIDEOPROCESSSTREAMSTATEPRIVATE
-author : windows-driver-content
-description : The GetVideoProcessStreamStatePrivate function retrieves the private stream-state data for a video processor.
-old-location : display\getvideoprocessstreamstateprivate.htm
-old-project : display
-ms.assetid : 0503b382-8ed3-461e-906f-27953ac5f757
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.getvideoprocessstreamstateprivate, GetVideoProcessStreamStatePrivate callback function [Display Devices], GetVideoProcessStreamStatePrivate, PFND3DDDI_DXVAHD_GETVIDEOPROCESSSTREAMSTATEPRIVATE, PFND3DDDI_DXVAHD_GETVIDEOPROCESSSTREAMSTATEPRIVATE, d3dumddi/GetVideoProcessStreamStatePrivate, UserModeDisplayDriver_Functions_1016a4a3-3988-40ef-9ef9-f62a20651aaa.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : GetVideoProcessStreamStatePrivate is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_DXVAHD_GETVIDEOPROCESSSTREAMSTATEPRIVATE
+title: PFND3DDDI_DXVAHD_GETVIDEOPROCESSSTREAMSTATEPRIVATE
+author: windows-driver-content
+description: The GetVideoProcessStreamStatePrivate function retrieves the private stream-state data for a video processor.
+old-location: display\getvideoprocessstreamstateprivate.htm
+old-project: display
+ms.assetid: 0503b382-8ed3-461e-906f-27953ac5f757
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.getvideoprocessstreamstateprivate, GetVideoProcessStreamStatePrivate callback function [Display Devices], GetVideoProcessStreamStatePrivate, PFND3DDDI_DXVAHD_GETVIDEOPROCESSSTREAMSTATEPRIVATE, PFND3DDDI_DXVAHD_GETVIDEOPROCESSSTREAMSTATEPRIVATE, d3dumddi/GetVideoProcessStreamStatePrivate, UserModeDisplayDriver_Functions_1016a4a3-3988-40ef-9ef9-f62a20651aaa.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: GetVideoProcessStreamStatePrivate is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	GetVideoProcessStreamStatePrivate
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

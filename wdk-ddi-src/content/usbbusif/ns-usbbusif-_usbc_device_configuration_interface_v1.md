@@ -1,42 +1,47 @@
 ---
-UID : NS:usbbusif._USBC_DEVICE_CONFIGURATION_INTERFACE_V1
-title : "_USBC_DEVICE_CONFIGURATION_INTERFACE_V1"
-author : windows-driver-content
-description : The USBC_DEVICE_CONFIGURATION_INTERFACE_V1 structure is exposed by the vendor-supplied filter drivers to assist the USB generic parent driver in defining interface collections.
-old-location : buses\usbc_device_configuration_interface_v1.htm
-old-project : usbref
-ms.assetid : 86e8946f-f87f-40d4-bd02-6e4befe847e0
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : USBC_DEVICE_CONFIGURATION_INTERFACE_V1 structure [Buses], usbinterKR_f3f8ee06-a861-4787-a611-766308347395.xml, buses.usbc_device_configuration_interface_v1, _USBC_DEVICE_CONFIGURATION_INTERFACE_V1, USBC_DEVICE_CONFIGURATION_INTERFACE_V1, *PUSBC_DEVICE_CONFIGURATION_INTERFACE_V1, usbbusif/PUSBC_DEVICE_CONFIGURATION_INTERFACE_V1, PUSBC_DEVICE_CONFIGURATION_INTERFACE_V1, PUSBC_DEVICE_CONFIGURATION_INTERFACE_V1 structure pointer [Buses], usbbusif/USBC_DEVICE_CONFIGURATION_INTERFACE_V1
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : usbbusif.h
-req.include-header : Usbbusif.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUSBC_DEVICE_CONFIGURATION_INTERFACE_V1, USBC_DEVICE_CONFIGURATION_INTERFACE_V1"
-req.product : Windows 10 or later.
+UID: NS:usbbusif._USBC_DEVICE_CONFIGURATION_INTERFACE_V1
+title: "_USBC_DEVICE_CONFIGURATION_INTERFACE_V1"
+author: windows-driver-content
+description: The USBC_DEVICE_CONFIGURATION_INTERFACE_V1 structure is exposed by the vendor-supplied filter drivers to assist the USB generic parent driver in defining interface collections.
+old-location: buses\usbc_device_configuration_interface_v1.htm
+old-project: usbref
+ms.assetid: 86e8946f-f87f-40d4-bd02-6e4befe847e0
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: USBC_DEVICE_CONFIGURATION_INTERFACE_V1 structure [Buses], usbinterKR_f3f8ee06-a861-4787-a611-766308347395.xml, buses.usbc_device_configuration_interface_v1, _USBC_DEVICE_CONFIGURATION_INTERFACE_V1, USBC_DEVICE_CONFIGURATION_INTERFACE_V1, *PUSBC_DEVICE_CONFIGURATION_INTERFACE_V1, usbbusif/PUSBC_DEVICE_CONFIGURATION_INTERFACE_V1, PUSBC_DEVICE_CONFIGURATION_INTERFACE_V1, PUSBC_DEVICE_CONFIGURATION_INTERFACE_V1 structure pointer [Buses], usbbusif/USBC_DEVICE_CONFIGURATION_INTERFACE_V1
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: usbbusif.h
+req.include-header: Usbbusif.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	usbbusif.h
+apiname:
+-	USBC_DEVICE_CONFIGURATION_INTERFACE_V1
+product: Windows
+targetos: Windows
+req.typenames: "*PUSBC_DEVICE_CONFIGURATION_INTERFACE_V1, USBC_DEVICE_CONFIGURATION_INTERFACE_V1"
+req.product: Windows 10 or later.
 ---
 
 # _USBC_DEVICE_CONFIGURATION_INTERFACE_V1 structure

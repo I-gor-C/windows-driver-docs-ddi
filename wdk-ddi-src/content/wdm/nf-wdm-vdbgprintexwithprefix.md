@@ -1,38 +1,38 @@
 ---
-UID : NF:wdm.vDbgPrintExWithPrefix
-title : vDbgPrintExWithPrefix function
-author : windows-driver-content
-description : The vDbgPrintExWithPrefix routine sends a string to the kernel debugger if certain conditions that you specify are met. This routine can append a prefix to debugger output to help organize debugging results.
-old-location : devtest\vdbgprintexwithprefix.htm
-old-project : devtest
-ms.assetid : bd7acc4e-9941-45a1-ad90-996e80c1937b
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : vDbgPrintExWithPrefix
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Dpfilter.h, Wdm.h, Ntddk.h, Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating system versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.alt-api : vDbgPrintExWithPrefix
-req.alt-loc : NtDll.dll,NtosKrnl.exe
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtDll.lib (user mode); NtosKrnl.lib (kernel mode)
-req.dll : NtDll.dll (user mode); NtosKrnl.exe (kernel mode)
-req.irql : <= DIRQL (see Comments section)
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.vDbgPrintExWithPrefix
+title: vDbgPrintExWithPrefix function
+author: windows-driver-content
+description: The vDbgPrintExWithPrefix routine sends a string to the kernel debugger if certain conditions that you specify are met. This routine can append a prefix to debugger output to help organize debugging results.
+old-location: devtest\vdbgprintexwithprefix.htm
+old-project: devtest
+ms.assetid: bd7acc4e-9941-45a1-ad90-996e80c1937b
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: vDbgPrintExWithPrefix
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Dpfilter.h, Wdm.h, Ntddk.h, Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating system versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.alt-api: vDbgPrintExWithPrefix
+req.alt-loc: NtDll.dll,NtosKrnl.exe
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtDll.lib (user mode); NtosKrnl.lib (kernel mode)
+req.dll: NtDll.dll (user mode); NtosKrnl.exe (kernel mode)
+req.irql: <= DIRQL (see Comments section)
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

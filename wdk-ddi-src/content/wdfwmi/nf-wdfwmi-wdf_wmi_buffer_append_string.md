@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfwmi.WDF_WMI_BUFFER_APPEND_STRING
-title : WDF_WMI_BUFFER_APPEND_STRING function
-author : windows-driver-content
-description : The WDF_WMI_BUFFER_APPEND_STRING function copies a specified Unicode string into a specified buffer in the format that WMI requires.
-old-location : wdf\wdf_wmi_buffer_append_string.htm
-old-project : wdf
-ms.assetid : 23d65788-23ce-4ed7-8b68-890c1c3a4100
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WDF_WMI_BUFFER_APPEND_STRING, DFWMIRef_db6f29cb-fcdc-4948-9ea3-9b36e9f969e8.xml, wdf.wdf_wmi_buffer_append_string, kmdf.wdf_wmi_buffer_append_string, WDF_WMI_BUFFER_APPEND_STRING function, wdfwmi/WDF_WMI_BUFFER_APPEND_STRING
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfwmi.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : None
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_WMI_PROVIDER_FLAGS
-req.product : Windows 10 or later.
+UID: NF:wdfwmi.WDF_WMI_BUFFER_APPEND_STRING
+title: WDF_WMI_BUFFER_APPEND_STRING function
+author: windows-driver-content
+description: The WDF_WMI_BUFFER_APPEND_STRING function copies a specified Unicode string into a specified buffer in the format that WMI requires.
+old-location: wdf\wdf_wmi_buffer_append_string.htm
+old-project: wdf
+ms.assetid: 23d65788-23ce-4ed7-8b68-890c1c3a4100
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WDF_WMI_BUFFER_APPEND_STRING, DFWMIRef_db6f29cb-fcdc-4948-9ea3-9b36e9f969e8.xml, wdf.wdf_wmi_buffer_append_string, kmdf.wdf_wmi_buffer_append_string, WDF_WMI_BUFFER_APPEND_STRING function, wdfwmi/WDF_WMI_BUFFER_APPEND_STRING
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfwmi.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: None
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	None
+-	None.dll
+apiname:
+-	WDF_WMI_BUFFER_APPEND_STRING
+product: Windows
+targetos: Windows
+req.typenames: WDF_WMI_PROVIDER_FLAGS
+req.product: Windows 10 or later.
 ---
 
 

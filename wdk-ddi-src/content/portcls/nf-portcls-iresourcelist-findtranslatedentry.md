@@ -1,41 +1,46 @@
 ---
-UID : NF:portcls.IResourceList.FindTranslatedEntry
-title : IResourceList::FindTranslatedEntry method
-author : windows-driver-content
-description : The FindTranslatedEntry method returns a pointer to a translated entry of the specified type, or NULL if no such entry is found.
-old-location : audio\iresourcelist_findtranslatedentry.htm
-old-project : audio
-ms.assetid : b3e8ae4d-a923-406e-ad1a-f7ed7277f676
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : IResourceList::FindTranslatedEntry, IResourceList, FindTranslatedEntry method [Audio Devices], IResourceList interface, audio.iresourcelist_findtranslatedentry, FindTranslatedEntry method [Audio Devices], IResourceList interface [Audio Devices], FindTranslatedEntry method, audmp-routines_a4100c1c-8955-46bb-a9cc-8cee22609598.xml, portcls/IResourceList::FindTranslatedEntry, FindTranslatedEntry
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : portcls.h
-req.include-header : Portcls.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : portcls.h
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.IResourceList.FindTranslatedEntry
+title: IResourceList::FindTranslatedEntry method
+author: windows-driver-content
+description: The FindTranslatedEntry method returns a pointer to a translated entry of the specified type, or NULL if no such entry is found.
+old-location: audio\iresourcelist_findtranslatedentry.htm
+old-project: audio
+ms.assetid: b3e8ae4d-a923-406e-ad1a-f7ed7277f676
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: IResourceList::FindTranslatedEntry, IResourceList, FindTranslatedEntry method [Audio Devices], IResourceList interface, audio.iresourcelist_findtranslatedentry, FindTranslatedEntry method [Audio Devices], IResourceList interface [Audio Devices], FindTranslatedEntry method, audmp-routines_a4100c1c-8955-46bb-a9cc-8cee22609598.xml, portcls/IResourceList::FindTranslatedEntry, FindTranslatedEntry
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: portcls.h
+req.include-header: Portcls.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: portcls.h
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	portcls.h
+apiname:
+-	IResourceList.FindTranslatedEntry
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

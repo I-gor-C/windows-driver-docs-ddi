@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfusb.IWDFUsbTargetPipe.GetInformation
-title : IWDFUsbTargetPipe::GetInformation method
-author : windows-driver-content
-description : The GetInformation method retrieves information about a USB pipe (endpoint).
-old-location : wdf\iwdfusbtargetpipe_getinformation.htm
-old-project : wdf
-ms.assetid : b1462a64-debf-441f-8964-4644074e5e53
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : IWDFUsbTargetPipe, wudfusb/IWDFUsbTargetPipe::GetInformation, IWDFUsbTargetPipe interface, GetInformation method, UMDFUSBref_4d7b2b77-fa26-45e2-8f3f-e0315d70f937.xml, umdf.iwdfusbtargetpipe_getinformation, GetInformation method, IWDFUsbTargetPipe interface, GetInformation method, IWDFUsbTargetPipe::GetInformation, GetInformation, wdf.iwdfusbtargetpipe_getinformation
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfusb.h
-req.include-header : Wudfusb.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.5
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfusb.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
-req.product : Windows 10 or later.
+UID: NF:wudfusb.IWDFUsbTargetPipe.GetInformation
+title: IWDFUsbTargetPipe::GetInformation method
+author: windows-driver-content
+description: The GetInformation method retrieves information about a USB pipe (endpoint).
+old-location: wdf\iwdfusbtargetpipe_getinformation.htm
+old-project: wdf
+ms.assetid: b1462a64-debf-441f-8964-4644074e5e53
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: IWDFUsbTargetPipe, wudfusb/IWDFUsbTargetPipe::GetInformation, IWDFUsbTargetPipe interface, GetInformation method, UMDFUSBref_4d7b2b77-fa26-45e2-8f3f-e0315d70f937.xml, umdf.iwdfusbtargetpipe_getinformation, GetInformation method, IWDFUsbTargetPipe interface, GetInformation method, IWDFUsbTargetPipe::GetInformation, GetInformation, wdf.iwdfusbtargetpipe_getinformation
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfusb.h
+req.include-header: Wudfusb.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.5
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfusb.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFUsbTargetPipe.GetInformation
+product: Windows
+targetos: Windows
+req.typenames: WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
+req.product: Windows 10 or later.
 ---
 
 

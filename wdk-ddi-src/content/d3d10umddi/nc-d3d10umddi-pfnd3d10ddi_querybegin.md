@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3D10DDI_QUERYBEGIN
-title : PFND3D10DDI_QUERYBEGIN
-author : windows-driver-content
-description : The QueryBegin function marks the beginning of a sequence of graphics commands for a query and transitions the query to the &#0034;building&#0034; state.
-old-location : display\querybegin.htm
-old-project : display
-ms.assetid : 2f0a7462-83a6-47df-b5f6-b3706b875349
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.querybegin, QueryBegin callback function [Display Devices], QueryBegin, PFND3D10DDI_QUERYBEGIN, PFND3D10DDI_QUERYBEGIN, d3d10umddi/QueryBegin, UserModeDisplayDriverDx10_Functions_d456daf9-09b9-4174-8eba-7591ec45cd20.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3D10DDI_QUERYBEGIN
+title: PFND3D10DDI_QUERYBEGIN
+author: windows-driver-content
+description: The QueryBegin function marks the beginning of a sequence of graphics commands for a query and transitions the query to the &#0034;building&#0034; state.
+old-location: display\querybegin.htm
+old-project: display
+ms.assetid: 2f0a7462-83a6-47df-b5f6-b3706b875349
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.querybegin, QueryBegin callback function [Display Devices], QueryBegin, PFND3D10DDI_QUERYBEGIN, PFND3D10DDI_QUERYBEGIN, d3d10umddi/QueryBegin, UserModeDisplayDriverDx10_Functions_d456daf9-09b9-4174-8eba-7591ec45cd20.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	QueryBegin
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

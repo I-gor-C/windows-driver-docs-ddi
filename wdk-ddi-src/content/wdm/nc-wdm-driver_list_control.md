@@ -1,42 +1,47 @@
 ---
-UID : NC:wdm.DRIVER_LIST_CONTROL
-title : DRIVER_LIST_CONTROL
-author : windows-driver-content
-description : The AdapterListControl routine starts a direct memory access (DMA) scatter/gather operation.
-old-location : kernel\adapterlistcontrol.htm
-old-project : kernel
-ms.assetid : 9fb49710-5d8c-4376-9898-7f0ae570ee94
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.adapterlistcontrol, AdapterListControl, AdapterListControl routine [Kernel-Mode Driver Architecture], AdapterListControl, DRIVER_LIST_CONTROL, DRIVER_LIST_CONTROL, wdm/AdapterListControl, DrvrRtns_feb5903f-df38-4471-ab1e-2e6341620774.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Called at DISPATCH_LEVEL.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
-req.product : Windows 10 or later.
+UID: NC:wdm.DRIVER_LIST_CONTROL
+title: DRIVER_LIST_CONTROL
+author: windows-driver-content
+description: The AdapterListControl routine starts a direct memory access (DMA) scatter/gather operation.
+old-location: kernel\adapterlistcontrol.htm
+old-project: kernel
+ms.assetid: 9fb49710-5d8c-4376-9898-7f0ae570ee94
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.adapterlistcontrol, AdapterListControl, AdapterListControl routine [Kernel-Mode Driver Architecture], AdapterListControl, DRIVER_LIST_CONTROL, DRIVER_LIST_CONTROL, wdm/AdapterListControl, DrvrRtns_feb5903f-df38-4471-ab1e-2e6341620774.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Called at DISPATCH_LEVEL.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Wdm.h
+apiname:
+-	AdapterListControl
+product: Windows
+targetos: Windows
+req.typenames: WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+req.product: Windows 10 or later.
 ---
 
 

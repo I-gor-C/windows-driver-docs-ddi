@@ -1,42 +1,47 @@
 ---
-UID : NE:wudfddi._DEVICE_POWER_STATE
-title : "_DEVICE_POWER_STATE"
-author : windows-driver-content
-description : The DEVICE_POWER_STATE enumeration identifies the device power states that a device can enter.
-old-location : wdf\device_power_state.htm
-old-project : wdf
-ms.assetid : 7dd4d0ae-876a-4156-8a09-2ebc82a25117
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wudfddi/DEVICE_POWER_STATE, *PDEVICE_POWER_STATE, wudfddi/PowerDeviceUnspecified, PowerDeviceD3, PowerDeviceMaximum, wudfddi/PowerDeviceD2, PowerDeviceUnspecified, wudfddi/PowerDeviceD0, wdf.device_power_state, wudfddi/PowerDeviceMaximum, umdf.device_power_state, PowerDeviceD2, PDEVICE_POWER_STATE enumeration pointer, wudfddi/PDEVICE_POWER_STATE, wudfddi/PowerDeviceD3, umdfstructs_6dca1ebb-421e-446b-b2b6-cc7b87afcf58.xml, DEVICE_POWER_STATE, PowerDeviceD0, DEVICE_POWER_STATE enumeration, PDEVICE_POWER_STATE, _DEVICE_POWER_STATE, wudfddi/PowerDeviceD1, PowerDeviceD1
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.9
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDEVICE_POWER_STATE, DEVICE_POWER_STATE"
-req.product : Windows 10 or later.
+UID: NE:wudfddi._DEVICE_POWER_STATE
+title: "_DEVICE_POWER_STATE"
+author: windows-driver-content
+description: The DEVICE_POWER_STATE enumeration identifies the device power states that a device can enter.
+old-location: wdf\device_power_state.htm
+old-project: wdf
+ms.assetid: 7dd4d0ae-876a-4156-8a09-2ebc82a25117
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wudfddi/DEVICE_POWER_STATE, *PDEVICE_POWER_STATE, wudfddi/PowerDeviceUnspecified, PowerDeviceD3, PowerDeviceMaximum, wudfddi/PowerDeviceD2, PowerDeviceUnspecified, wudfddi/PowerDeviceD0, wdf.device_power_state, wudfddi/PowerDeviceMaximum, umdf.device_power_state, PowerDeviceD2, PDEVICE_POWER_STATE enumeration pointer, wudfddi/PDEVICE_POWER_STATE, wudfddi/PowerDeviceD3, umdfstructs_6dca1ebb-421e-446b-b2b6-cc7b87afcf58.xml, DEVICE_POWER_STATE, PowerDeviceD0, DEVICE_POWER_STATE enumeration, PDEVICE_POWER_STATE, _DEVICE_POWER_STATE, wudfddi/PowerDeviceD1, PowerDeviceD1
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.9
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wudfddi.h
+apiname:
+-	DEVICE_POWER_STATE
+product: Windows
+targetos: Windows
+req.typenames: "*PDEVICE_POWER_STATE, DEVICE_POWER_STATE"
+req.product: Windows 10 or later.
 ---
 
 # _DEVICE_POWER_STATE Enumeration
@@ -59,41 +64,41 @@ typedef enum _DEVICE_POWER_STATE {
 ## Constants
 
 <table>
-
-<tr>
-<td>PowerDeviceD0</td>
-<td>The device's working (D0) state. This is the device's highest power state.</td>
-</tr>
-
-<tr>
-<td>PowerDeviceD1</td>
-<td>The device's D1 <a href="https://msdn.microsoft.com/f594a63f-10ce-439d-abe3-d342555d98f0">sleeping state</a>.</td>
-</tr>
-
-<tr>
-<td>PowerDeviceD2</td>
-<td>The device's D2 sleeping state.</td>
-</tr>
-
-<tr>
-<td>PowerDeviceD3</td>
-<td>The device's D3 sleeping state.</td>
-</tr>
-
-<tr>
-<td>PowerDeviceMaximum</td>
-<td>For system use only.</td>
-</tr>
-
-<tr>
-<td>PowerDeviceUnspecified</td>
-<td>The device power state is unspecified.</td>
-</tr>
+            
+                <tr>
+                    <td>PowerDeviceD0</td>
+                    <td>The device's working (D0) state. This is the device's highest power state.</td>
+                </tr>
+            
+                <tr>
+                    <td>PowerDeviceD1</td>
+                    <td>The device's D1 <a href="https://msdn.microsoft.com/f594a63f-10ce-439d-abe3-d342555d98f0">sleeping state</a>.</td>
+                </tr>
+            
+                <tr>
+                    <td>PowerDeviceD2</td>
+                    <td>The device's D2 sleeping state.</td>
+                </tr>
+            
+                <tr>
+                    <td>PowerDeviceD3</td>
+                    <td>The device's D3 sleeping state.</td>
+                </tr>
+            
+                <tr>
+                    <td>PowerDeviceMaximum</td>
+                    <td>For system use only.</td>
+                </tr>
+            
+                <tr>
+                    <td>PowerDeviceUnspecified</td>
+                    <td>The device power state is unspecified.</td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-The <b>DEVICE_POWER_STATE</b> enumeration is used as input to <a href="https://msdn.microsoft.com/library/windows/hardware/ff556920">IWDFDevice2::AssignS0IdleSettings</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff556923">IWDFDevice2::AssignSxWakeSettings</a>.
+        The <b>DEVICE_POWER_STATE</b> enumeration is used as input to <a href="https://msdn.microsoft.com/library/windows/hardware/ff556920">IWDFDevice2::AssignS0IdleSettings</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff556923">IWDFDevice2::AssignSxWakeSettings</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -101,9 +106,9 @@ The <b>DEVICE_POWER_STATE</b> enumeration is used as input to <a href="https://m
 | **Minimum UMDF version** | 1.9 |
 | **Header** | wudfddi.h (include Wudfddi.h) |
 
-## See Also
+    ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556923">IWDFDevice2::AssignSxWakeSettings</a>
+        <a href="https://msdn.microsoft.com/library/windows/hardware/ff556923">IWDFDevice2::AssignSxWakeSettings</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556920">IWDFDevice2::AssignS0IdleSettings</a>
 

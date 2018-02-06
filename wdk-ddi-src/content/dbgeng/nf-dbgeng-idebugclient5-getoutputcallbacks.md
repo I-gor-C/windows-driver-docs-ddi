@@ -1,41 +1,50 @@
 ---
-UID : NF:dbgeng.IDebugClient5.GetOutputCallbacks
-title : IDebugClient5::GetOutputCallbacks method
-author : windows-driver-content
-description : The GetOutputCallbacks method returns the output callbacks object registered with the client.
-old-location : debugger\getoutputcallbacks.htm
-old-project : debugger
-ms.assetid : 43f27e56-a6aa-4548-9c96-000e53a7eb9a
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : dbgeng/IDebugClient5::GetOutputCallbacks, IDebugClient5 interface [Windows Debugging], GetOutputCallbacks method, GetOutputCallbacks method [Windows Debugging], IDebugClient4 interface, IDebugClient3::GetOutputCallbacks, dbgeng/IDebugClient2::GetOutputCallbacks, GetOutputCallbacks method [Windows Debugging], GetOutputCallbacks, IDebugClient_693aaf2a-8408-48c4-b7c0-66e7064a6f35.xml, dbgeng/IDebugClient3::GetOutputCallbacks, GetOutputCallbacks method [Windows Debugging], IDebugClient5 interface, GetOutputCallbacks method [Windows Debugging], IDebugClient2 interface, IDebugClient3 interface [Windows Debugging], GetOutputCallbacks method, debugger.getoutputcallbacks, GetOutputCallbacks method [Windows Debugging], IDebugClient3 interface, IDebugClient5::GetOutputCallbacks, IDebugClient2::GetOutputCallbacks, GetOutputCallbacks method [Windows Debugging], IDebugClient interface, IDebugClient interface [Windows Debugging], GetOutputCallbacks method, IDebugClient::GetOutputCallbacks, IDebugClient2 interface [Windows Debugging], GetOutputCallbacks method, IDebugClient4::GetOutputCallbacks, dbgeng/IDebugClient4::GetOutputCallbacks, IDebugClient4 interface [Windows Debugging], GetOutputCallbacks method, IDebugClient5, dbgeng/IDebugClient::GetOutputCallbacks
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugClient5.GetOutputCallbacks
+title: IDebugClient5::GetOutputCallbacks method
+author: windows-driver-content
+description: The GetOutputCallbacks method returns the output callbacks object registered with the client.
+old-location: debugger\getoutputcallbacks.htm
+old-project: debugger
+ms.assetid: 43f27e56-a6aa-4548-9c96-000e53a7eb9a
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: dbgeng/IDebugClient5::GetOutputCallbacks, IDebugClient5 interface [Windows Debugging], GetOutputCallbacks method, GetOutputCallbacks method [Windows Debugging], IDebugClient4 interface, IDebugClient3::GetOutputCallbacks, dbgeng/IDebugClient2::GetOutputCallbacks, GetOutputCallbacks method [Windows Debugging], GetOutputCallbacks, IDebugClient_693aaf2a-8408-48c4-b7c0-66e7064a6f35.xml, dbgeng/IDebugClient3::GetOutputCallbacks, GetOutputCallbacks method [Windows Debugging], IDebugClient5 interface, GetOutputCallbacks method [Windows Debugging], IDebugClient2 interface, IDebugClient3 interface [Windows Debugging], GetOutputCallbacks method, debugger.getoutputcallbacks, GetOutputCallbacks method [Windows Debugging], IDebugClient3 interface, IDebugClient5::GetOutputCallbacks, IDebugClient2::GetOutputCallbacks, GetOutputCallbacks method [Windows Debugging], IDebugClient interface, IDebugClient interface [Windows Debugging], GetOutputCallbacks method, IDebugClient::GetOutputCallbacks, IDebugClient2 interface [Windows Debugging], GetOutputCallbacks method, IDebugClient4::GetOutputCallbacks, dbgeng/IDebugClient4::GetOutputCallbacks, IDebugClient4 interface [Windows Debugging], GetOutputCallbacks method, IDebugClient5, dbgeng/IDebugClient::GetOutputCallbacks
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugClient.GetOutputCallbacks
+-	IDebugClient2.GetOutputCallbacks
+-	IDebugClient3.GetOutputCallbacks
+-	IDebugClient4.GetOutputCallbacks
+-	IDebugClient5.GetOutputCallbacks
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

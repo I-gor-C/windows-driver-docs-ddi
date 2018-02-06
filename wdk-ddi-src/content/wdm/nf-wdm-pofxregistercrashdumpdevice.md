@@ -1,42 +1,48 @@
 ---
-UID : NF:wdm.PoFxRegisterCrashdumpDevice
-title : PoFxRegisterCrashdumpDevice function
-author : windows-driver-content
-description : The PoFxRegisterCrashdumpDevice routine registers a crash-dump device.
-old-location : kernel\pofxregistercrashdumpdevice.htm
-old-project : kernel
-ms.assetid : 3237B68F-838A-4443-89FD-DC7815EAB403
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : PoFxRegisterCrashdumpDevice routine [Kernel-Mode Driver Architecture], PoFxRegisterCrashdumpDevice, wdm/PoFxRegisterCrashdumpDevice, kernel.pofxregistercrashdumpdevice
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Pepfx.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows 8.1.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ntoskrnl.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.PoFxRegisterCrashdumpDevice
+title: PoFxRegisterCrashdumpDevice function
+author: windows-driver-content
+description: The PoFxRegisterCrashdumpDevice routine registers a crash-dump device.
+old-location: kernel\pofxregistercrashdumpdevice.htm
+old-project: kernel
+ms.assetid: 3237B68F-838A-4443-89FD-DC7815EAB403
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: PoFxRegisterCrashdumpDevice routine [Kernel-Mode Driver Architecture], PoFxRegisterCrashdumpDevice, wdm/PoFxRegisterCrashdumpDevice, kernel.pofxregistercrashdumpdevice
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Pepfx.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows 8.1.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ntoskrnl.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ntoskrnl.lib
+-	ntoskrnl.dll
+apiname:
+-	PoFxRegisterCrashdumpDevice
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

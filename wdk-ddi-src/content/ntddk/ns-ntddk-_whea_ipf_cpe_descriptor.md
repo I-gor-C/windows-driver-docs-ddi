@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddk._WHEA_IPF_CPE_DESCRIPTOR
-title : "_WHEA_IPF_CPE_DESCRIPTOR"
-author : windows-driver-content
-description : The WHEA_IPF_CPE_DESCRIPTOR structure describes a corrected platform error (CPE) error source for an Itanium processor.
-old-location : whea\whea_ipf_cpe_descriptor.htm
-old-project : whea
-ms.assetid : ffe1c550-a7cc-4d27-9a1e-287fdc7e08eb
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : ntddk/WHEA_IPF_CPE_DESCRIPTOR, *PWHEA_IPF_CPE_DESCRIPTOR, PWHEA_IPF_CPE_DESCRIPTOR structure pointer [WHEA Drivers and Applications], whearef_b64c919f-4854-4506-b14a-ec31b0a3e67e.xml, PWHEA_IPF_CPE_DESCRIPTOR, WHEA_IPF_CPE_DESCRIPTOR structure [WHEA Drivers and Applications], ntddk/PWHEA_IPF_CPE_DESCRIPTOR, _WHEA_IPF_CPE_DESCRIPTOR, WHEA_IPF_CPE_DESCRIPTOR, whea.whea_ipf_cpe_descriptor
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_IPF_CPE_DESCRIPTOR, *PWHEA_IPF_CPE_DESCRIPTOR
+UID: NS:ntddk._WHEA_IPF_CPE_DESCRIPTOR
+title: "_WHEA_IPF_CPE_DESCRIPTOR"
+author: windows-driver-content
+description: The WHEA_IPF_CPE_DESCRIPTOR structure describes a corrected platform error (CPE) error source for an Itanium processor.
+old-location: whea\whea_ipf_cpe_descriptor.htm
+old-project: whea
+ms.assetid: ffe1c550-a7cc-4d27-9a1e-287fdc7e08eb
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: ntddk/WHEA_IPF_CPE_DESCRIPTOR, *PWHEA_IPF_CPE_DESCRIPTOR, PWHEA_IPF_CPE_DESCRIPTOR structure pointer [WHEA Drivers and Applications], whearef_b64c919f-4854-4506-b14a-ec31b0a3e67e.xml, PWHEA_IPF_CPE_DESCRIPTOR, WHEA_IPF_CPE_DESCRIPTOR structure [WHEA Drivers and Applications], ntddk/PWHEA_IPF_CPE_DESCRIPTOR, _WHEA_IPF_CPE_DESCRIPTOR, WHEA_IPF_CPE_DESCRIPTOR, whea.whea_ipf_cpe_descriptor
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddk.h
+apiname:
+-	WHEA_IPF_CPE_DESCRIPTOR
+product: Windows
+targetos: Windows
+req.typenames: WHEA_IPF_CPE_DESCRIPTOR, *PWHEA_IPF_CPE_DESCRIPTOR
 ---
 
 # _WHEA_IPF_CPE_DESCRIPTOR structure

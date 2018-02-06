@@ -1,41 +1,46 @@
 ---
-UID : NC:ks.PFNKSPINPOWER
-title : PFNKSPINPOWER
-author : windows-driver-content
-description : An AVStream minidriver's AVStrMiniPinPower routine is called for pin-centric pins when the device is waking or entering a sleep state.
-old-location : stream\avstrminipinpower.htm
-old-project : stream
-ms.assetid : 6362ca08-cf8d-4e54-b144-10b2252f05c5
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.avstrminipinpower, AVStrMiniPinPower, AVStrMiniPinPower routine [Streaming Media Devices], AVStrMiniPinPower, PFNKSPINPOWER, PFNKSPINPOWER, ks/AVStrMiniPinPower, avstclbk_fd047ae3-b574-4dad-a16b-2152193fb2cd.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KEYWORDSELECTOR
+UID: NC:ks.PFNKSPINPOWER
+title: PFNKSPINPOWER
+author: windows-driver-content
+description: An AVStream minidriver's AVStrMiniPinPower routine is called for pin-centric pins when the device is waking or entering a sleep state.
+old-location: stream\avstrminipinpower.htm
+old-project: stream
+ms.assetid: 6362ca08-cf8d-4e54-b144-10b2252f05c5
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.avstrminipinpower, AVStrMiniPinPower, AVStrMiniPinPower routine [Streaming Media Devices], AVStrMiniPinPower, PFNKSPINPOWER, PFNKSPINPOWER, ks/AVStrMiniPinPower, avstclbk_fd047ae3-b574-4dad-a16b-2152193fb2cd.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	ks.h
+apiname:
+-	AVStrMiniPinPower
+product: Windows
+targetos: Windows
+req.typenames: KEYWORDSELECTOR
 ---
 
 

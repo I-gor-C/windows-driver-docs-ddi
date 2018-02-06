@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.KSPROPERTY_VIDEOPROCAMP_NODE_S
-title : KSPROPERTY_VIDEOPROCAMP_NODE_S
-author : windows-driver-content
-description : The KSPROPERTY_VIDEOPROCAMP_NODE_S structure describes node-based property settings in the PROPSETID_VIDCAP_VIDEOPROCAMP property set.
-old-location : stream\ksproperty_videoprocamp_node_s.htm
-old-project : stream
-ms.assetid : 7350ffec-2993-4f05-b031-3d633a6f17ad
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : "*PKSPROPERTY_VIDEOPROCAMP_NODE_S, vidcapstruct_d7d544d4-dd33-4498-9104-c63fa5a48079.xml, KSPROPERTY_VIDEOPROCAMP_NODE_S, PKSPROPERTY_VIDEOPROCAMP_NODE_S structure pointer [Streaming Media Devices], stream.ksproperty_videoprocamp_node_s, PKSPROPERTY_VIDEOPROCAMP_NODE_S, ksmedia/PKSPROPERTY_VIDEOPROCAMP_NODE_S, KSPROPERTY_VIDEOPROCAMP_NODE_S structure [Streaming Media Devices], ksmedia/KSPROPERTY_VIDEOPROCAMP_NODE_S"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKSPROPERTY_VIDEOPROCAMP_NODE_S, KSPROPERTY_VIDEOPROCAMP_NODE_S"
+UID: NS:ksmedia.KSPROPERTY_VIDEOPROCAMP_NODE_S
+title: KSPROPERTY_VIDEOPROCAMP_NODE_S
+author: windows-driver-content
+description: The KSPROPERTY_VIDEOPROCAMP_NODE_S structure describes node-based property settings in the PROPSETID_VIDCAP_VIDEOPROCAMP property set.
+old-location: stream\ksproperty_videoprocamp_node_s.htm
+old-project: stream
+ms.assetid: 7350ffec-2993-4f05-b031-3d633a6f17ad
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: "*PKSPROPERTY_VIDEOPROCAMP_NODE_S, vidcapstruct_d7d544d4-dd33-4498-9104-c63fa5a48079.xml, KSPROPERTY_VIDEOPROCAMP_NODE_S, PKSPROPERTY_VIDEOPROCAMP_NODE_S structure pointer [Streaming Media Devices], stream.ksproperty_videoprocamp_node_s, PKSPROPERTY_VIDEOPROCAMP_NODE_S, ksmedia/PKSPROPERTY_VIDEOPROCAMP_NODE_S, KSPROPERTY_VIDEOPROCAMP_NODE_S structure [Streaming Media Devices], ksmedia/KSPROPERTY_VIDEOPROCAMP_NODE_S"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	KSPROPERTY_VIDEOPROCAMP_NODE_S
+product: Windows
+targetos: Windows
+req.typenames: "*PKSPROPERTY_VIDEOPROCAMP_NODE_S, KSPROPERTY_VIDEOPROCAMP_NODE_S"
 ---
 
 # KSPROPERTY_VIDEOPROCAMP_NODE_S structure

@@ -1,41 +1,46 @@
 ---
-UID : NS:mpiowmi._MPIO_DISK_HEALTH_CLASS
-title : "_MPIO_DISK_HEALTH_CLASS"
-author : windows-driver-content
-description : The MPIO_DISK_HEALTH_CLASS structure contains the health information for a multi-path disk.
-old-location : storage\mpio_disk_health_class.htm
-old-project : storage
-ms.assetid : 07b04bad-9d52-4a32-8834-48cd5803844c
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : mpiowmi/PMPIO_DISK_HEALTH_CLASS, PMPIO_DISK_HEALTH_CLASS, MPIO_DISK_HEALTH_CLASS, PMPIO_DISK_HEALTH_CLASS structure pointer [Storage Devices], structs-scsibus_b3dfb95d-08eb-4eb6-80bb-3437282a65d6.xml, *PMPIO_DISK_HEALTH_CLASS, MPIO_DISK_HEALTH_CLASS structure [Storage Devices], storage.mpio_disk_health_class, mpiowmi/MPIO_DISK_HEALTH_CLASS, _MPIO_DISK_HEALTH_CLASS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : mpiowmi.h
-req.include-header : Mpiowmi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : MPIO_DISK_HEALTH_CLASS, *PMPIO_DISK_HEALTH_CLASS
+UID: NS:mpiowmi._MPIO_DISK_HEALTH_CLASS
+title: "_MPIO_DISK_HEALTH_CLASS"
+author: windows-driver-content
+description: The MPIO_DISK_HEALTH_CLASS structure contains the health information for a multi-path disk.
+old-location: storage\mpio_disk_health_class.htm
+old-project: storage
+ms.assetid: 07b04bad-9d52-4a32-8834-48cd5803844c
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: mpiowmi/PMPIO_DISK_HEALTH_CLASS, PMPIO_DISK_HEALTH_CLASS, MPIO_DISK_HEALTH_CLASS, PMPIO_DISK_HEALTH_CLASS structure pointer [Storage Devices], structs-scsibus_b3dfb95d-08eb-4eb6-80bb-3437282a65d6.xml, *PMPIO_DISK_HEALTH_CLASS, MPIO_DISK_HEALTH_CLASS structure [Storage Devices], storage.mpio_disk_health_class, mpiowmi/MPIO_DISK_HEALTH_CLASS, _MPIO_DISK_HEALTH_CLASS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: mpiowmi.h
+req.include-header: Mpiowmi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	mpiowmi.h
+apiname:
+-	MPIO_DISK_HEALTH_CLASS
+product: Windows
+targetos: Windows
+req.typenames: MPIO_DISK_HEALTH_CLASS, *PMPIO_DISK_HEALTH_CLASS
 ---
 
 # _MPIO_DISK_HEALTH_CLASS structure

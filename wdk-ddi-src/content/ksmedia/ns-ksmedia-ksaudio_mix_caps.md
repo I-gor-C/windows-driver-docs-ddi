@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.KSAUDIO_MIX_CAPS
-title : KSAUDIO_MIX_CAPS
-author : windows-driver-content
-description : The KSAUDIO_MIX_CAPS structure specifies the mixing capabilities of a particular data path from one input channel of a supermixer node (KSNODETYPE_SUPERMIX) to an output channel of the same node.
-old-location : audio\ksaudio_mix_caps.htm
-old-project : audio
-ms.assetid : d201fdce-ae56-4ba5-a947-e3e0cecc6e17
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : PKSAUDIO_MIX_CAPS structure pointer [Audio Devices], *PKSAUDIO_MIX_CAPS, KSAUDIO_MIX_CAPS structure [Audio Devices], aud-prop_5468df9e-d7f4-4449-a59f-694100f2f825.xml, PKSAUDIO_MIX_CAPS, KSAUDIO_MIX_CAPS, ksmedia/KSAUDIO_MIX_CAPS, audio.ksaudio_mix_caps, ksmedia/PKSAUDIO_MIX_CAPS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KSAUDIO_MIX_CAPS, *PKSAUDIO_MIX_CAPS
+UID: NS:ksmedia.KSAUDIO_MIX_CAPS
+title: KSAUDIO_MIX_CAPS
+author: windows-driver-content
+description: The KSAUDIO_MIX_CAPS structure specifies the mixing capabilities of a particular data path from one input channel of a supermixer node (KSNODETYPE_SUPERMIX) to an output channel of the same node.
+old-location: audio\ksaudio_mix_caps.htm
+old-project: audio
+ms.assetid: d201fdce-ae56-4ba5-a947-e3e0cecc6e17
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: PKSAUDIO_MIX_CAPS structure pointer [Audio Devices], *PKSAUDIO_MIX_CAPS, KSAUDIO_MIX_CAPS structure [Audio Devices], aud-prop_5468df9e-d7f4-4449-a59f-694100f2f825.xml, PKSAUDIO_MIX_CAPS, KSAUDIO_MIX_CAPS, ksmedia/KSAUDIO_MIX_CAPS, audio.ksaudio_mix_caps, ksmedia/PKSAUDIO_MIX_CAPS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	KSAUDIO_MIX_CAPS
+product: Windows
+targetos: Windows
+req.typenames: KSAUDIO_MIX_CAPS, *PKSAUDIO_MIX_CAPS
 ---
 
 # KSAUDIO_MIX_CAPS structure

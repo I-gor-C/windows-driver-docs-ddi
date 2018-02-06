@@ -1,41 +1,49 @@
 ---
-UID : NF:irb.AtaPortReadRegisterBufferUshort
-title : AtaPortReadRegisterBufferUshort function
-author : windows-driver-content
-description : The AtaPortReadRegisterBufferUshort routine transfers a specified number of USHORT values from the HBA to a buffer.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
-old-location : storage\ataportreadregisterbufferushort.htm
-old-project : storage
-ms.assetid : bd2e8fe0-7daf-4fdd-ac3a-893df6d0f10f
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : AtaPortReadRegisterBufferUshort, storage.ataportreadregisterbufferushort, irb/AtaPortReadRegisterBufferUshort, AtaPortReadRegisterBufferUshort routine [Storage Devices], atartns_4943b97d-90a0-44d9-adfa-d3bce57e88c9.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : irb.h
-req.include-header : Ata.h, Irb.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ataport.lib; Pciidex.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : IDE_POWER_STATE
+UID: NF:irb.AtaPortReadRegisterBufferUshort
+title: AtaPortReadRegisterBufferUshort function
+author: windows-driver-content
+description: The AtaPortReadRegisterBufferUshort routine transfers a specified number of USHORT values from the HBA to a buffer.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
+old-location: storage\ataportreadregisterbufferushort.htm
+old-project: storage
+ms.assetid: bd2e8fe0-7daf-4fdd-ac3a-893df6d0f10f
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: AtaPortReadRegisterBufferUshort, storage.ataportreadregisterbufferushort, irb/AtaPortReadRegisterBufferUshort, AtaPortReadRegisterBufferUshort routine [Storage Devices], atartns_4943b97d-90a0-44d9-adfa-d3bce57e88c9.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: irb.h
+req.include-header: Ata.h, Irb.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ataport.lib; Pciidex.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ataport.lib
+-	ataport.dll
+-	pciidex.lib
+-	pciidex.dll
+apiname:
+-	AtaPortReadRegisterBufferUshort
+product: Windows
+targetos: Windows
+req.typenames: IDE_POWER_STATE
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddmmc._FEATURE_DATA_PROFILE_LIST
-title : "_FEATURE_DATA_PROFILE_LIST"
-author : windows-driver-content
-description : The FEATURE_DATA_PROFILE_LIST structure contains the data for a profile list descriptor.
-old-location : storage\feature_data_profile_list.htm
-old-project : storage
-ms.assetid : 77b8c789-0f3d-43b5-95ff-15d93b67cbe3
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : PFEATURE_DATA_PROFILE_LIST structure pointer [Storage Devices], FEATURE_DATA_PROFILE_LIST structure [Storage Devices], FEATURE_DATA_PROFILE_LIST, *PFEATURE_DATA_PROFILE_LIST, storage.feature_data_profile_list, ntddmmc/FEATURE_DATA_PROFILE_LIST, structs-CD-ROM_fae1990f-a605-4281-a8e6-e8e08431493d.xml, _FEATURE_DATA_PROFILE_LIST, ntddmmc/PFEATURE_DATA_PROFILE_LIST, PFEATURE_DATA_PROFILE_LIST
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddmmc.h
-req.include-header : Ntddcdrm.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PFEATURE_DATA_PROFILE_LIST, FEATURE_DATA_PROFILE_LIST"
+UID: NS:ntddmmc._FEATURE_DATA_PROFILE_LIST
+title: "_FEATURE_DATA_PROFILE_LIST"
+author: windows-driver-content
+description: The FEATURE_DATA_PROFILE_LIST structure contains the data for a profile list descriptor.
+old-location: storage\feature_data_profile_list.htm
+old-project: storage
+ms.assetid: 77b8c789-0f3d-43b5-95ff-15d93b67cbe3
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: PFEATURE_DATA_PROFILE_LIST structure pointer [Storage Devices], FEATURE_DATA_PROFILE_LIST structure [Storage Devices], FEATURE_DATA_PROFILE_LIST, *PFEATURE_DATA_PROFILE_LIST, storage.feature_data_profile_list, ntddmmc/FEATURE_DATA_PROFILE_LIST, structs-CD-ROM_fae1990f-a605-4281-a8e6-e8e08431493d.xml, _FEATURE_DATA_PROFILE_LIST, ntddmmc/PFEATURE_DATA_PROFILE_LIST, PFEATURE_DATA_PROFILE_LIST
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddmmc.h
+req.include-header: Ntddcdrm.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddmmc.h
+apiname:
+-	FEATURE_DATA_PROFILE_LIST
+product: Windows
+targetos: Windows
+req.typenames: "*PFEATURE_DATA_PROFILE_LIST, FEATURE_DATA_PROFILE_LIST"
 ---
 
 # _FEATURE_DATA_PROFILE_LIST structure

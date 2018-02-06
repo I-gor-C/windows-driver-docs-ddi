@@ -1,42 +1,47 @@
 ---
-UID : NI:winbio_ioctl.IOCTL_BIOMETRIC_SET_INDICATOR
-title : IOCTL_BIOMETRIC_SET_INDICATOR
-author : windows-driver-content
-description : The IOCTL_BIOMETRIC_SET_INDICATOR IOCTL directs the driver to update the status of the indicator light.
-old-location : biometric\ioctl_biometric_set_indicator.htm
-old-project : biometric
-ms.assetid : 5aaaf178-a137-4a98-a77f-b426514a8cd9
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : biometric.ioctl_biometric_set_indicator, IOCTL_BIOMETRIC_SET_INDICATOR control code [Biometric Devices], IOCTL_BIOMETRIC_SET_INDICATOR, winbio_ioctl/IOCTL_BIOMETRIC_SET_INDICATOR, biometric_ref_46e6f908-83fd-4e5b-9cc4-183da4f178d2.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : winbio_ioctl.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : BMP_IMAGE_INFO, *PBMP_IMAGE_INFO
-req.product : Windows 10 or later.
+UID: NI:winbio_ioctl.IOCTL_BIOMETRIC_SET_INDICATOR
+title: IOCTL_BIOMETRIC_SET_INDICATOR
+author: windows-driver-content
+description: The IOCTL_BIOMETRIC_SET_INDICATOR IOCTL directs the driver to update the status of the indicator light.
+old-location: biometric\ioctl_biometric_set_indicator.htm
+old-project: biometric
+ms.assetid: 5aaaf178-a137-4a98-a77f-b426514a8cd9
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: biometric.ioctl_biometric_set_indicator, IOCTL_BIOMETRIC_SET_INDICATOR control code [Biometric Devices], IOCTL_BIOMETRIC_SET_INDICATOR, winbio_ioctl/IOCTL_BIOMETRIC_SET_INDICATOR, biometric_ref_46e6f908-83fd-4e5b-9cc4-183da4f178d2.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: winbio_ioctl.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Winbio_ioctl.h
+apiname:
+-	IOCTL_BIOMETRIC_SET_INDICATOR
+product: Windows
+targetos: Windows
+req.typenames: BMP_IMAGE_INFO, *PBMP_IMAGE_INFO
+req.product: Windows 10 or later.
 ---
 
 # IOCTL_BIOMETRIC_SET_INDICATOR IOCTL

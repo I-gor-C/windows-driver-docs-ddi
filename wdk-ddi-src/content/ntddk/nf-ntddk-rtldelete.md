@@ -1,41 +1,46 @@
 ---
-UID : NF:ntddk.RtlDelete
-title : RtlDelete function
-author : windows-driver-content
-description : The RtlDelete routine deletes the specified node from the splay link tree.
-old-location : ifsk\rtldelete.htm
-old-project : ifsk
-ms.assetid : ca73b7cf-56c0-4e83-8804-59f73fbd4714
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ntddk/RtlDelete, ifsk.rtldelete, RtlDelete, rtlref_637fb420-7027-4426-a4a0-7ae887ad1950.xml, RtlDelete routine [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntddk.h
-req.include-header : Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.RtlDelete
+title: RtlDelete function
+author: windows-driver-content
+description: The RtlDelete routine deletes the specified node from the splay link tree.
+old-location: ifsk\rtldelete.htm
+old-project: ifsk
+ms.assetid: ca73b7cf-56c0-4e83-8804-59f73fbd4714
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ntddk/RtlDelete, ifsk.rtldelete, RtlDelete, rtlref_637fb420-7027-4426-a4a0-7ae887ad1950.xml, RtlDelete routine [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntddk.h
+req.include-header: Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	RtlDelete
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

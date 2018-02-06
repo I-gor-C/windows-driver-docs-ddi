@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddcdrm._CDROM_WRITE_SPEED_DESCRIPTOR
-title : "_CDROM_WRITE_SPEED_DESCRIPTOR"
-author : windows-driver-content
-description : The CDROM_WRITE_SPEED_DESCRIPTOR structure is returned for the IOCTL_CDROM_GET_PERFORMANCE IOCTL when the request type is CdromWriteSpeedRequest.
-old-location : storage\cdrom_write_speed_descriptor.htm
-old-project : storage
-ms.assetid : 21CFAA26-3E11-4E3B-949A-C905813E56A8
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : "_CDROM_WRITE_SPEED_DESCRIPTOR, storage.cdrom_write_speed_descriptor, PCDROM_WRITE_SPEED_DESCRIPTOR, CDROM_WRITE_SPEED_DESCRIPTOR structure [Storage Devices], ntddcdrm/PCDROM_WRITE_SPEED_DESCRIPTOR, ntddcdrm/CDROM_WRITE_SPEED_DESCRIPTOR, *PCDROM_WRITE_SPEED_DESCRIPTOR, PCDROM_WRITE_SPEED_DESCRIPTOR structure pointer [Storage Devices], CDROM_WRITE_SPEED_DESCRIPTOR"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddcdrm.h
-req.include-header : Ntddcdrm.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PCDROM_WRITE_SPEED_DESCRIPTOR, CDROM_WRITE_SPEED_DESCRIPTOR"
+UID: NS:ntddcdrm._CDROM_WRITE_SPEED_DESCRIPTOR
+title: "_CDROM_WRITE_SPEED_DESCRIPTOR"
+author: windows-driver-content
+description: The CDROM_WRITE_SPEED_DESCRIPTOR structure is returned for the IOCTL_CDROM_GET_PERFORMANCE IOCTL when the request type is CdromWriteSpeedRequest.
+old-location: storage\cdrom_write_speed_descriptor.htm
+old-project: storage
+ms.assetid: 21CFAA26-3E11-4E3B-949A-C905813E56A8
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: "_CDROM_WRITE_SPEED_DESCRIPTOR, storage.cdrom_write_speed_descriptor, PCDROM_WRITE_SPEED_DESCRIPTOR, CDROM_WRITE_SPEED_DESCRIPTOR structure [Storage Devices], ntddcdrm/PCDROM_WRITE_SPEED_DESCRIPTOR, ntddcdrm/CDROM_WRITE_SPEED_DESCRIPTOR, *PCDROM_WRITE_SPEED_DESCRIPTOR, PCDROM_WRITE_SPEED_DESCRIPTOR structure pointer [Storage Devices], CDROM_WRITE_SPEED_DESCRIPTOR"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddcdrm.h
+req.include-header: Ntddcdrm.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddcdrm.h
+apiname:
+-	CDROM_WRITE_SPEED_DESCRIPTOR
+product: Windows
+targetos: Windows
+req.typenames: "*PCDROM_WRITE_SPEED_DESCRIPTOR, CDROM_WRITE_SPEED_DESCRIPTOR"
 ---
 
 # _CDROM_WRITE_SPEED_DESCRIPTOR structure

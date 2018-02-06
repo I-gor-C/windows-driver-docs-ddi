@@ -1,41 +1,49 @@
 ---
-UID : NF:irb.AtaPortCopyMemory
-title : AtaPortCopyMemory function
-author : windows-driver-content
-description : The AtaPortCopyMemory routine copies data from one location to another.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
-old-location : storage\ataportcopymemory.htm
-old-project : storage
-ms.assetid : f5e449f8-9ff9-4d3d-9a62-3e985b57bd50
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : AtaPortCopyMemory, atartns_7aa7f4e2-4c74-403e-bbdf-795973a9846b.xml, irb/AtaPortCopyMemory, storage.ataportcopymemory, AtaPortCopyMemory routine [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : irb.h
-req.include-header : Ata.h, Irb.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ataport.lib; Pciidex.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : IDE_POWER_STATE
+UID: NF:irb.AtaPortCopyMemory
+title: AtaPortCopyMemory function
+author: windows-driver-content
+description: The AtaPortCopyMemory routine copies data from one location to another.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
+old-location: storage\ataportcopymemory.htm
+old-project: storage
+ms.assetid: f5e449f8-9ff9-4d3d-9a62-3e985b57bd50
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: AtaPortCopyMemory, atartns_7aa7f4e2-4c74-403e-bbdf-795973a9846b.xml, irb/AtaPortCopyMemory, storage.ataportcopymemory, AtaPortCopyMemory routine [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: irb.h
+req.include-header: Ata.h, Irb.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ataport.lib; Pciidex.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ataport.lib
+-	ataport.dll
+-	pciidex.lib
+-	pciidex.dll
+apiname:
+-	AtaPortCopyMemory
+product: Windows
+targetos: Windows
+req.typenames: IDE_POWER_STATE
 ---
 
 

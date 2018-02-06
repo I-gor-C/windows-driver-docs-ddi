@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dukmdt._D3DDDIARG_CREATERESOURCE
-title : "_D3DDDIARG_CREATERESOURCE"
-author : windows-driver-content
-description : The D3DDDIARG_CREATERESOURCE structure contains information for creating a resource.
-old-location : display\d3dddiarg_createresource.htm
-old-project : display
-ms.assetid : 022047a4-105e-4859-ba37-fb408f903e7b
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DDDIARG_CREATERESOURCE structure [Display Devices], _D3DDDIARG_CREATERESOURCE, display.d3dddiarg_createresource, UMDisplayDriver_param_Structs_c8d46034-b0b8-4909-962d-683be7aa099d.xml, D3DDDIARG_CREATERESOURCE, d3dukmdt/D3DDDIARG_CREATERESOURCE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dukmdt.h
-req.include-header : D3dumddi.h, D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDIARG_CREATERESOURCE
+UID: NS:d3dukmdt._D3DDDIARG_CREATERESOURCE
+title: "_D3DDDIARG_CREATERESOURCE"
+author: windows-driver-content
+description: The D3DDDIARG_CREATERESOURCE structure contains information for creating a resource.
+old-location: display\d3dddiarg_createresource.htm
+old-project: display
+ms.assetid: 022047a4-105e-4859-ba37-fb408f903e7b
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DDDIARG_CREATERESOURCE structure [Display Devices], _D3DDDIARG_CREATERESOURCE, display.d3dddiarg_createresource, UMDisplayDriver_param_Structs_c8d46034-b0b8-4909-962d-683be7aa099d.xml, D3DDDIARG_CREATERESOURCE, d3dukmdt/D3DDDIARG_CREATERESOURCE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dukmdt.h
+req.include-header: D3dumddi.h, D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dukmdt.h
+apiname:
+-	D3DDDIARG_CREATERESOURCE
+product: Windows
+targetos: Windows
+req.typenames: D3DDDIARG_CREATERESOURCE
 ---
 
 # _D3DDDIARG_CREATERESOURCE structure

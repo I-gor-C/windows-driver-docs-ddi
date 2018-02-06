@@ -1,41 +1,46 @@
 ---
-UID : NN:portcls.IRegistryKey
-title : IRegistryKey
-author : windows-driver-content
-description : The IRegistryKey interface provides an abstraction of a registry key that a miniport driver can use to access the key and its subkeys.
-old-location : audio\iregistrykey.htm
-old-project : audio
-ms.assetid : 41601234-7b8e-4d53-9455-626a5a3c4ff3
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : audio.iregistrykey, IRegistryKey interface [Audio Devices], IRegistryKey interface [Audio Devices], described, IRegistryKey, portcls/IRegistryKey, audmp-routines_40bea095-17f2-4b5f-96e8-ab2fed6d82d4.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : portcls.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Portcls.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NN:portcls.IRegistryKey
+title: IRegistryKey
+author: windows-driver-content
+description: The IRegistryKey interface provides an abstraction of a registry key that a miniport driver can use to access the key and its subkeys.
+old-location: audio\iregistrykey.htm
+old-project: audio
+ms.assetid: 41601234-7b8e-4d53-9455-626a5a3c4ff3
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: audio.iregistrykey, IRegistryKey interface [Audio Devices], IRegistryKey interface [Audio Devices], described, IRegistryKey, portcls/IRegistryKey, audmp-routines_40bea095-17f2-4b5f-96e8-ab2fed6d82d4.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: portcls.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Portcls.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	portcls.h
+apiname:
+-	IRegistryKey
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 # IRegistryKey interface

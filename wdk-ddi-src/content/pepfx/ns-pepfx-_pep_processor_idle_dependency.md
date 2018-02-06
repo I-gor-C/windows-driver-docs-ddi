@@ -1,41 +1,46 @@
 ---
-UID : NS:pepfx._PEP_PROCESSOR_IDLE_DEPENDENCY
-title : "_PEP_PROCESSOR_IDLE_DEPENDENCY"
-author : windows-driver-content
-description : The PEP_PROCESSOR_IDLE_DEPENDENCY structure specifies the dependencies of a platform idle state on the specified processor.
-old-location : kernel\pep_processor_idle_dependency.htm
-old-project : kernel
-ms.assetid : 8C2C074B-3D59-416A-BCBD-2A0117F86776
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : PEP_PROCESSOR_IDLE_DEPENDENCY, PPEP_PROCESSOR_IDLE_DEPENDENCY, pepfx/PPEP_PROCESSOR_IDLE_DEPENDENCY, pepfx/PEP_PROCESSOR_IDLE_DEPENDENCY, *PPEP_PROCESSOR_IDLE_DEPENDENCY, _PEP_PROCESSOR_IDLE_DEPENDENCY, PEP_PROCESSOR_IDLE_DEPENDENCY structure [Kernel-Mode Driver Architecture], PPEP_PROCESSOR_IDLE_DEPENDENCY structure pointer [Kernel-Mode Driver Architecture], kernel.pep_processor_idle_dependency
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : pepfx.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with Windows 10.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PEP_PROCESSOR_IDLE_DEPENDENCY, *PPEP_PROCESSOR_IDLE_DEPENDENCY
+UID: NS:pepfx._PEP_PROCESSOR_IDLE_DEPENDENCY
+title: "_PEP_PROCESSOR_IDLE_DEPENDENCY"
+author: windows-driver-content
+description: The PEP_PROCESSOR_IDLE_DEPENDENCY structure specifies the dependencies of a platform idle state on the specified processor.
+old-location: kernel\pep_processor_idle_dependency.htm
+old-project: kernel
+ms.assetid: 8C2C074B-3D59-416A-BCBD-2A0117F86776
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: PEP_PROCESSOR_IDLE_DEPENDENCY, PPEP_PROCESSOR_IDLE_DEPENDENCY, pepfx/PPEP_PROCESSOR_IDLE_DEPENDENCY, pepfx/PEP_PROCESSOR_IDLE_DEPENDENCY, *PPEP_PROCESSOR_IDLE_DEPENDENCY, _PEP_PROCESSOR_IDLE_DEPENDENCY, PEP_PROCESSOR_IDLE_DEPENDENCY structure [Kernel-Mode Driver Architecture], PPEP_PROCESSOR_IDLE_DEPENDENCY structure pointer [Kernel-Mode Driver Architecture], kernel.pep_processor_idle_dependency
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: pepfx.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows 10.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	pepfx.h
+apiname:
+-	PEP_PROCESSOR_IDLE_DEPENDENCY
+product: Windows
+targetos: Windows
+req.typenames: PEP_PROCESSOR_IDLE_DEPENDENCY, *PPEP_PROCESSOR_IDLE_DEPENDENCY
 ---
 
 # _PEP_PROCESSOR_IDLE_DEPENDENCY structure

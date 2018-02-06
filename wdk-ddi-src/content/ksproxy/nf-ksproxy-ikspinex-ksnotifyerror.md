@@ -1,41 +1,46 @@
 ---
-UID : NF:ksproxy.IKsPinEx.KsNotifyError
-title : IKsPinEx::KsNotifyError method
-author : windows-driver-content
-description : The KsNotifyError method notifies the filter graph of an error to give the filter graph an opportunity to halt.
-old-location : stream\ikspinex_ksnotifyerror.htm
-old-project : stream
-ms.assetid : a2526734-c0bf-4f6b-b91e-2f6891c46c69
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ksproxy_41c855aa-58a3-4bf6-bb8a-1eb8dfe2a3e1.xml, KsNotifyError, ksproxy/IKsPinEx::KsNotifyError, IKsPinEx, stream.ikspinex_ksnotifyerror, KsNotifyError method [Streaming Media Devices], IKsPinEx interface [Streaming Media Devices], KsNotifyError method, IKsPinEx::KsNotifyError, KsNotifyError method [Streaming Media Devices], IKsPinEx interface
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : ksproxy.h
-req.include-header : Ksproxy.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : ksproxy.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PIPE_STATE
+UID: NF:ksproxy.IKsPinEx.KsNotifyError
+title: IKsPinEx::KsNotifyError method
+author: windows-driver-content
+description: The KsNotifyError method notifies the filter graph of an error to give the filter graph an opportunity to halt.
+old-location: stream\ikspinex_ksnotifyerror.htm
+old-project: stream
+ms.assetid: a2526734-c0bf-4f6b-b91e-2f6891c46c69
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ksproxy_41c855aa-58a3-4bf6-bb8a-1eb8dfe2a3e1.xml, KsNotifyError, ksproxy/IKsPinEx::KsNotifyError, IKsPinEx, stream.ikspinex_ksnotifyerror, KsNotifyError method [Streaming Media Devices], IKsPinEx interface [Streaming Media Devices], KsNotifyError method, IKsPinEx::KsNotifyError, KsNotifyError method [Streaming Media Devices], IKsPinEx interface
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: ksproxy.h
+req.include-header: Ksproxy.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: ksproxy.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	ksproxy.h
+apiname:
+-	IKsPinEx.KsNotifyError
+product: Windows
+targetos: Windows
+req.typenames: PIPE_STATE
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NC:wdfio.EVT_WDF_IO_ALLOCATE_REQUEST_RESOURCES
-title : EVT_WDF_IO_ALLOCATE_REQUEST_RESOURCES
-author : windows-driver-content
-description : A driver's EvtIoAllocateRequestResources callback function allocates request-specific resources that the driver requires to process the specified request.
-old-location : wdf\evtioallocaterequestresources.htm
-old-project : wdf
-ms.assetid : 6a60c563-582a-4919-bf0f-919deb3055d3
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.evtioallocaterequestresources, EvtIoAllocateRequestResources callback function, EvtIoAllocateRequestResources, EVT_WDF_IO_ALLOCATE_REQUEST_RESOURCES, EVT_WDF_IO_ALLOCATE_REQUEST_RESOURCES, wdfio/EvtIoAllocateRequestResources, DFQueueObjectRef_85702d4a-4861-4512-a392-f106e038d3be.xml, kmdf.evtioallocaterequestresources
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdfio.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.9
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL (see Remarks section)"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_INTERRUPT_INFO, *PWDF_INTERRUPT_INFO
-req.product : Windows 10 or later.
+UID: NC:wdfio.EVT_WDF_IO_ALLOCATE_REQUEST_RESOURCES
+title: EVT_WDF_IO_ALLOCATE_REQUEST_RESOURCES
+author: windows-driver-content
+description: A driver's EvtIoAllocateRequestResources callback function allocates request-specific resources that the driver requires to process the specified request.
+old-location: wdf\evtioallocaterequestresources.htm
+old-project: wdf
+ms.assetid: 6a60c563-582a-4919-bf0f-919deb3055d3
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.evtioallocaterequestresources, EvtIoAllocateRequestResources callback function, EvtIoAllocateRequestResources, EVT_WDF_IO_ALLOCATE_REQUEST_RESOURCES, EVT_WDF_IO_ALLOCATE_REQUEST_RESOURCES, wdfio/EvtIoAllocateRequestResources, DFQueueObjectRef_85702d4a-4861-4512-a392-f106e038d3be.xml, kmdf.evtioallocaterequestresources
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdfio.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.9
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL (see Remarks section)"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Wdfio.h
+apiname:
+-	EvtIoAllocateRequestResources
+product: Windows
+targetos: Windows
+req.typenames: WDF_INTERRUPT_INFO, *PWDF_INTERRUPT_INFO
+req.product: Windows 10 or later.
 ---
 
 

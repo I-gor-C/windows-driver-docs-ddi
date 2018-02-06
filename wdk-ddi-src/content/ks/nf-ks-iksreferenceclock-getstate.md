@@ -1,41 +1,46 @@
 ---
-UID : NF:ks.IKsReferenceClock.GetState
-title : IKsReferenceClock::GetState method
-author : windows-driver-content
-description : The IKsReferenceClock::GetState method queries the associated reference clock for its current streaming state.
-old-location : stream\iksreferenceclock_getstate.htm
-old-project : stream
-ms.assetid : 5a77a8bc-b477-41b3-bc4e-07c6c14291a1
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.iksreferenceclock_getstate, IKsReferenceClock::GetState, IKsReferenceClock interface [Streaming Media Devices], GetState method, IKsReferenceClock, GetState, GetState method [Streaming Media Devices], GetState method [Streaming Media Devices], IKsReferenceClock interface, ks/IKsReferenceClock::GetState, avintfc_e2017894-2e83-4091-84b7-5ea793076b29.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : ks.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.IKsReferenceClock.GetState
+title: IKsReferenceClock::GetState method
+author: windows-driver-content
+description: The IKsReferenceClock::GetState method queries the associated reference clock for its current streaming state.
+old-location: stream\iksreferenceclock_getstate.htm
+old-project: stream
+ms.assetid: 5a77a8bc-b477-41b3-bc4e-07c6c14291a1
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.iksreferenceclock_getstate, IKsReferenceClock::GetState, IKsReferenceClock interface [Streaming Media Devices], GetState method, IKsReferenceClock, GetState, GetState method [Streaming Media Devices], GetState method [Streaming Media Devices], IKsReferenceClock interface, ks/IKsReferenceClock::GetState, avintfc_e2017894-2e83-4091-84b7-5ea793076b29.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: ks.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	ks.h
+apiname:
+-	IKsReferenceClock.GetState
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

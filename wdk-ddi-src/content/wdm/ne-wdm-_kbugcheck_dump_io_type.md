@@ -1,42 +1,47 @@
 ---
-UID : NE:wdm._KBUGCHECK_DUMP_IO_TYPE
-title : "_KBUGCHECK_DUMP_IO_TYPE"
-author : windows-driver-content
-description : The KBUGCHECK_DUMP_IO_TYPE enumeration type identifies the type of a section of data within a crash dump file.
-old-location : kernel\kbugcheck_dump_io_type.htm
-old-project : kernel
-ms.assetid : 928be338-a588-4535-8395-229ec6f3ecb7
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/KbDumpIoComplete, KbDumpIoInvalid, sysenum_e6f9d577-edd8-43f0-9cc5-33b88e5237aa.xml, kernel.kbugcheck_dump_io_type, wdm/KbDumpIoHeader, wdm/KbDumpIoBody, KbDumpIoComplete, KbDumpIoSecondaryData, KbDumpIoHeader, wdm/KbDumpIoSecondaryData, wdm/KbDumpIoInvalid, _KBUGCHECK_DUMP_IO_TYPE, KbDumpIoBody, wdm/KBUGCHECK_DUMP_IO_TYPE, KBUGCHECK_DUMP_IO_TYPE, KBUGCHECK_DUMP_IO_TYPE enumeration [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : Available on Microsoft Windows XP with Service Pack 1 (SP1), Windows Server 2003, and later versions of the Windows operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KBUGCHECK_DUMP_IO_TYPE
-req.product : Windows 10 or later.
+UID: NE:wdm._KBUGCHECK_DUMP_IO_TYPE
+title: "_KBUGCHECK_DUMP_IO_TYPE"
+author: windows-driver-content
+description: The KBUGCHECK_DUMP_IO_TYPE enumeration type identifies the type of a section of data within a crash dump file.
+old-location: kernel\kbugcheck_dump_io_type.htm
+old-project: kernel
+ms.assetid: 928be338-a588-4535-8395-229ec6f3ecb7
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/KbDumpIoComplete, KbDumpIoInvalid, sysenum_e6f9d577-edd8-43f0-9cc5-33b88e5237aa.xml, kernel.kbugcheck_dump_io_type, wdm/KbDumpIoHeader, wdm/KbDumpIoBody, KbDumpIoComplete, KbDumpIoSecondaryData, KbDumpIoHeader, wdm/KbDumpIoSecondaryData, wdm/KbDumpIoInvalid, _KBUGCHECK_DUMP_IO_TYPE, KbDumpIoBody, wdm/KBUGCHECK_DUMP_IO_TYPE, KBUGCHECK_DUMP_IO_TYPE, KBUGCHECK_DUMP_IO_TYPE enumeration [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: Available on Microsoft Windows XP with Service Pack 1 (SP1), Windows Server 2003, and later versions of the Windows operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	KBUGCHECK_DUMP_IO_TYPE
+product: Windows
+targetos: Windows
+req.typenames: KBUGCHECK_DUMP_IO_TYPE
+req.product: Windows 10 or later.
 ---
 
 # _KBUGCHECK_DUMP_IO_TYPE Enumeration
@@ -56,36 +61,36 @@ typedef enum _KBUGCHECK_DUMP_IO_TYPE {
 ## Constants
 
 <table>
-
-<tr>
-<td>KbDumpIoBody</td>
-<td>Specifies that the crash dump data is part of the main body of the crash dump, such as the memory state at the time of the bug check.</td>
-</tr>
-
-<tr>
-<td>KbDumpIoComplete</td>
-<td>Specifies that the crash dump data has been completely written.</td>
-</tr>
-
-<tr>
-<td>KbDumpIoHeader</td>
-<td>Specifies that crash dump data is header information.</td>
-</tr>
-
-<tr>
-<td>KbDumpIoInvalid</td>
-<td>Reserved for system use. Do not use.</td>
-</tr>
-
-<tr>
-<td>KbDumpIoSecondaryData</td>
-<td>Specifies that the crash dump data is data returned by a <a href="https://msdn.microsoft.com/library/windows/hardware/ff540679">BugCheckSecondaryDumpDataCallback</a> routine.</td>
-</tr>
+            
+                <tr>
+                    <td>KbDumpIoBody</td>
+                    <td>Specifies that the crash dump data is part of the main body of the crash dump, such as the memory state at the time of the bug check.</td>
+                </tr>
+            
+                <tr>
+                    <td>KbDumpIoComplete</td>
+                    <td>Specifies that the crash dump data has been completely written.</td>
+                </tr>
+            
+                <tr>
+                    <td>KbDumpIoHeader</td>
+                    <td>Specifies that crash dump data is header information.</td>
+                </tr>
+            
+                <tr>
+                    <td>KbDumpIoInvalid</td>
+                    <td>Reserved for system use. Do not use.</td>
+                </tr>
+            
+                <tr>
+                    <td>KbDumpIoSecondaryData</td>
+                    <td>Specifies that the crash dump data is data returned by a <a href="https://msdn.microsoft.com/library/windows/hardware/ff540679">BugCheckSecondaryDumpDataCallback</a> routine.</td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-<b>KBUGCHECK_DUMP_IO_TYPE</b> values are used in the <b>Type</b> member of <a href="..\wdm\ns-wdm-_kbugcheck_dump_io.md">KBUGCHECK_DUMP_IO</a> to specify the type of data in an I/O operation on the crash dump file.
+        <b>KBUGCHECK_DUMP_IO_TYPE</b> values are used in the <b>Type</b> member of <a href="..\wdm\ns-wdm-_kbugcheck_dump_io.md">KBUGCHECK_DUMP_IO</a> to specify the type of data in an I/O operation on the crash dump file.
 
 For more information about how this enumeration type is used, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff540677">BugCheckDumpIoCallback</a>.
 
@@ -95,9 +100,9 @@ For more information about how this enumeration type is used, see <a href="https
 | **Windows version** | Available on Microsoft Windows XP with Service Pack 1 (SP1), Windows Server 2003, and later versions of the Windows operating system. Available on Microsoft Windows XP with Service Pack 1 (SP1), Windows Server 2003, and later versions of the Windows operating system. |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
-## See Also
+    ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540677">BugCheckDumpIoCallback</a>
+        <a href="https://msdn.microsoft.com/library/windows/hardware/ff540677">BugCheckDumpIoCallback</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540679">BugCheckSecondaryDumpDataCallback</a>
 

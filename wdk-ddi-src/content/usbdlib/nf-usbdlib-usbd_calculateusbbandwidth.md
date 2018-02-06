@@ -1,42 +1,48 @@
 ---
-UID : NF:usbdlib.USBD_CalculateUsbBandwidth
-title : USBD_CalculateUsbBandwidth function
-author : windows-driver-content
-description : The USBD_CalculateUsbBandwidth routine has been deprecated in Windows XP and later operating systems. Do not use.
-old-location : buses\usbd_calculateusbbandwidth.htm
-old-project : usbref
-ms.assetid : a54f3fb4-032a-4538-8b6d-20d6834d08c4
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : usbfunc_a422b001-17f1-42b4-b10e-3d64d4279530.xml, usbdlib/USBD_CalculateUsbBandwidth, buses.usbd_calculateusbbandwidth, USBD_CalculateUsbBandwidth routine [Buses], USBD_CalculateUsbBandwidth
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : usbdlib.h
-req.include-header : Usbdlib.h
-req.target-type : Universal
-req.target-min-winverclnt : Deprecated.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Usbd.lib
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : USBCAMD_DEVICE_DATA2, *PUSBCAMD_DEVICE_DATA2
-req.product : Windows 10 or later.
+UID: NF:usbdlib.USBD_CalculateUsbBandwidth
+title: USBD_CalculateUsbBandwidth function
+author: windows-driver-content
+description: The USBD_CalculateUsbBandwidth routine has been deprecated in Windows XP and later operating systems. Do not use.
+old-location: buses\usbd_calculateusbbandwidth.htm
+old-project: usbref
+ms.assetid: a54f3fb4-032a-4538-8b6d-20d6834d08c4
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: usbfunc_a422b001-17f1-42b4-b10e-3d64d4279530.xml, usbdlib/USBD_CalculateUsbBandwidth, buses.usbd_calculateusbbandwidth, USBD_CalculateUsbBandwidth routine [Buses], USBD_CalculateUsbBandwidth
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: usbdlib.h
+req.include-header: Usbdlib.h
+req.target-type: Universal
+req.target-min-winverclnt: Deprecated.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Usbd.lib
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Usbd.lib
+-	Usbd.dll
+apiname:
+-	USBD_CalculateUsbBandwidth
+product: Windows
+targetos: Windows
+req.typenames: USBCAMD_DEVICE_DATA2, *PUSBCAMD_DEVICE_DATA2
+req.product: Windows 10 or later.
 ---
 
 

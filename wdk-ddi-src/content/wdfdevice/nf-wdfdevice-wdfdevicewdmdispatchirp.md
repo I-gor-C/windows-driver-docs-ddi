@@ -1,42 +1,50 @@
 ---
-UID : NF:wdfdevice.WdfDeviceWdmDispatchIrp
-title : WdfDeviceWdmDispatchIrp function
-author : windows-driver-content
-description : The WdfDeviceWdmDispatchIrp method returns a dispatched IRP to the framework from EvtDeviceWdmIrpDispatch.
-old-location : wdf\wdfdevicewdmdispatchirp.htm
-old-project : wdf
-ms.assetid : 362C6F7C-7B92-43A8-9BD0-F647FDD266E4
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : kmdf.wdfdevicewdmdispatchirp, wdfdevice/WdfDeviceWdmDispatchIrp, wdf.wdfdevicewdmdispatchirp, WdfDeviceWdmDispatchIrp, WdfDeviceWdmDispatchIrp method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfdevice.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.11
-req.umdf-ver : 2.17
-req.ddi-compliance : DriverCreate
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_STATE_NOTIFICATION_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfdevice.WdfDeviceWdmDispatchIrp
+title: WdfDeviceWdmDispatchIrp function
+author: windows-driver-content
+description: The WdfDeviceWdmDispatchIrp method returns a dispatched IRP to the framework from EvtDeviceWdmIrpDispatch.
+old-location: wdf\wdfdevicewdmdispatchirp.htm
+old-project: wdf
+ms.assetid: 362C6F7C-7B92-43A8-9BD0-F647FDD266E4
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: kmdf.wdfdevicewdmdispatchirp, wdfdevice/WdfDeviceWdmDispatchIrp, wdf.wdfdevicewdmdispatchirp, WdfDeviceWdmDispatchIrp, WdfDeviceWdmDispatchIrp method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfdevice.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.11
+req.umdf-ver: 2.17
+req.ddi-compliance: DriverCreate
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+-	WUDFx02000.dll
+-	WUDFx02000.dll.dll
+apiname:
+-	WdfDeviceWdmDispatchIrp
+product: Windows
+targetos: Windows
+req.typenames: WDF_STATE_NOTIFICATION_TYPE
+req.product: Windows 10 or later.
 ---
 
 

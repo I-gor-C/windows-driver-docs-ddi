@@ -1,41 +1,46 @@
 ---
-UID : NS:ndiswwan._NDIS_WWAN_HOME_PROVIDER
-title : "_NDIS_WWAN_HOME_PROVIDER"
-author : windows-driver-content
-description : The NDIS_WWAN_HOME_PROVIDER structure represents details about the home network provider.
-old-location : netvista\ndis_wwan_home_provider.htm
-old-project : netvista
-ms.assetid : 5f92a711-97fe-4420-be50-89302cc9486c
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NDIS_WWAN_HOME_PROVIDER, ndiswwan/PNDIS_WWAN_HOME_PROVIDER, WwanRef_8a7e631d-16f6-461d-89f1-805dd56f4803.xml, ndiswwan/NDIS_WWAN_HOME_PROVIDER, PNDIS_WWAN_HOME_PROVIDER structure pointer [Network Drivers Starting with Windows Vista], NDIS_WWAN_HOME_PROVIDER structure [Network Drivers Starting with Windows Vista], netvista.ndis_wwan_home_provider, *PNDIS_WWAN_HOME_PROVIDER, PNDIS_WWAN_HOME_PROVIDER, _NDIS_WWAN_HOME_PROVIDER
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndiswwan.h
-req.include-header : Ndiswwan.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_WWAN_HOME_PROVIDER, *PNDIS_WWAN_HOME_PROVIDER
+UID: NS:ndiswwan._NDIS_WWAN_HOME_PROVIDER
+title: "_NDIS_WWAN_HOME_PROVIDER"
+author: windows-driver-content
+description: The NDIS_WWAN_HOME_PROVIDER structure represents details about the home network provider.
+old-location: netvista\ndis_wwan_home_provider.htm
+old-project: netvista
+ms.assetid: 5f92a711-97fe-4420-be50-89302cc9486c
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NDIS_WWAN_HOME_PROVIDER, ndiswwan/PNDIS_WWAN_HOME_PROVIDER, WwanRef_8a7e631d-16f6-461d-89f1-805dd56f4803.xml, ndiswwan/NDIS_WWAN_HOME_PROVIDER, PNDIS_WWAN_HOME_PROVIDER structure pointer [Network Drivers Starting with Windows Vista], NDIS_WWAN_HOME_PROVIDER structure [Network Drivers Starting with Windows Vista], netvista.ndis_wwan_home_provider, *PNDIS_WWAN_HOME_PROVIDER, PNDIS_WWAN_HOME_PROVIDER, _NDIS_WWAN_HOME_PROVIDER
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndiswwan.h
+req.include-header: Ndiswwan.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndiswwan.h
+apiname:
+-	NDIS_WWAN_HOME_PROVIDER
+product: Windows
+targetos: Windows
+req.typenames: NDIS_WWAN_HOME_PROVIDER, *PNDIS_WWAN_HOME_PROVIDER
 ---
 
 # _NDIS_WWAN_HOME_PROVIDER structure

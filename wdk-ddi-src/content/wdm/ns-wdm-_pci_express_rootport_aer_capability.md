@@ -1,42 +1,47 @@
 ---
-UID : NS:wdm._PCI_EXPRESS_ROOTPORT_AER_CAPABILITY
-title : "_PCI_EXPRESS_ROOTPORT_AER_CAPABILITY"
-author : windows-driver-content
-description : The PCI_EXPRESS_ROOTPORT_AER_CAPABILITY structure describes a PCI Express (PCIe) advanced error reporting capability structure for a root port or a root complex event collector.
-old-location : pci\pci_express_rootport_aer_capability.htm
-old-project : PCI
-ms.assetid : 19272158-96bb-4efa-b32b-f8848d01bad1
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : PCI.pci_express_rootport_aer_capability, *PPCI_EXPRESS_ROOTPORT_AER_CAPABILITY, wdm/PPCI_EXPRESS_ROOTPORT_AER_CAPABILITY, wdm/PCI_EXPRESS_ROOTPORT_AER_CAPABILITY, pci_struct_f65551d3-2213-468e-aa94-508b29c11844.xml, PCI_EXPRESS_ROOTPORT_AER_CAPABILITY structure [Buses], PCI_EXPRESS_ROOTPORT_AER_CAPABILITY, _PCI_EXPRESS_ROOTPORT_AER_CAPABILITY, PPCI_EXPRESS_ROOTPORT_AER_CAPABILITY, PPCI_EXPRESS_ROOTPORT_AER_CAPABILITY structure pointer [Buses]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : Ntddk.h, Wdm.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PCI_EXPRESS_ROOTPORT_AER_CAPABILITY, *PPCI_EXPRESS_ROOTPORT_AER_CAPABILITY
-req.product : Windows 10 or later.
+UID: NS:wdm._PCI_EXPRESS_ROOTPORT_AER_CAPABILITY
+title: "_PCI_EXPRESS_ROOTPORT_AER_CAPABILITY"
+author: windows-driver-content
+description: The PCI_EXPRESS_ROOTPORT_AER_CAPABILITY structure describes a PCI Express (PCIe) advanced error reporting capability structure for a root port or a root complex event collector.
+old-location: pci\pci_express_rootport_aer_capability.htm
+old-project: PCI
+ms.assetid: 19272158-96bb-4efa-b32b-f8848d01bad1
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: PCI.pci_express_rootport_aer_capability, *PPCI_EXPRESS_ROOTPORT_AER_CAPABILITY, wdm/PPCI_EXPRESS_ROOTPORT_AER_CAPABILITY, wdm/PCI_EXPRESS_ROOTPORT_AER_CAPABILITY, pci_struct_f65551d3-2213-468e-aa94-508b29c11844.xml, PCI_EXPRESS_ROOTPORT_AER_CAPABILITY structure [Buses], PCI_EXPRESS_ROOTPORT_AER_CAPABILITY, _PCI_EXPRESS_ROOTPORT_AER_CAPABILITY, PPCI_EXPRESS_ROOTPORT_AER_CAPABILITY, PPCI_EXPRESS_ROOTPORT_AER_CAPABILITY structure pointer [Buses]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: Ntddk.h, Wdm.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdm.h
+apiname:
+-	PCI_EXPRESS_ROOTPORT_AER_CAPABILITY
+product: Windows
+targetos: Windows
+req.typenames: PCI_EXPRESS_ROOTPORT_AER_CAPABILITY, *PPCI_EXPRESS_ROOTPORT_AER_CAPABILITY
+req.product: Windows 10 or later.
 ---
 
 # _PCI_EXPRESS_ROOTPORT_AER_CAPABILITY structure

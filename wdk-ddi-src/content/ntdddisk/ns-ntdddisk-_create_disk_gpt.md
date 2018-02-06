@@ -1,41 +1,46 @@
 ---
-UID : NS:ntdddisk._CREATE_DISK_GPT
-title : "_CREATE_DISK_GPT"
-author : windows-driver-content
-description : The CREATE_DISK_GPT structure is used with the IOCTL IOCTL_DISK_CREATE_DISK to initialize a disk with an empty GPT partition table.
-old-location : storage\create_disk_gpt.htm
-old-project : storage
-ms.assetid : 24ae7329-064f-43bf-8c1d-8aad9fdf2254
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : CREATE_DISK_GPT structure [Storage Devices], ntdddisk/PCREATE_DISK_GPT, structs-disk_c5c62f65-c252-482b-bbf7-1bb021920649.xml, *PCREATE_DISK_GPT, _CREATE_DISK_GPT, PCREATE_DISK_GPT structure pointer [Storage Devices], ntdddisk/CREATE_DISK_GPT, CREATE_DISK_GPT, storage.create_disk_gpt, PCREATE_DISK_GPT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntdddisk.h
-req.include-header : Ntdddisk.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PCREATE_DISK_GPT, CREATE_DISK_GPT"
+UID: NS:ntdddisk._CREATE_DISK_GPT
+title: "_CREATE_DISK_GPT"
+author: windows-driver-content
+description: The CREATE_DISK_GPT structure is used with the IOCTL IOCTL_DISK_CREATE_DISK to initialize a disk with an empty GPT partition table.
+old-location: storage\create_disk_gpt.htm
+old-project: storage
+ms.assetid: 24ae7329-064f-43bf-8c1d-8aad9fdf2254
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: CREATE_DISK_GPT structure [Storage Devices], ntdddisk/PCREATE_DISK_GPT, structs-disk_c5c62f65-c252-482b-bbf7-1bb021920649.xml, *PCREATE_DISK_GPT, _CREATE_DISK_GPT, PCREATE_DISK_GPT structure pointer [Storage Devices], ntdddisk/CREATE_DISK_GPT, CREATE_DISK_GPT, storage.create_disk_gpt, PCREATE_DISK_GPT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntdddisk.h
+req.include-header: Ntdddisk.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntdddisk.h
+apiname:
+-	CREATE_DISK_GPT
+product: Windows
+targetos: Windows
+req.typenames: "*PCREATE_DISK_GPT, CREATE_DISK_GPT"
 ---
 
 # _CREATE_DISK_GPT structure

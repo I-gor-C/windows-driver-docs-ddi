@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.PoFxNotifySurprisePowerOn
-title : PoFxNotifySurprisePowerOn function
-author : windows-driver-content
-description : The PoFxNotifySurprisePowerOn routine notifies the power management framework (PoFx) that a device was turned on as a side effect of supplying power to some other device.
-old-location : kernel\pofxnotifysurprisepoweron.htm
-old-project : kernel
-ms.assetid : AB9C7D32-D536-4B2B-9C85-DF5A0031798C
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : PoFxNotifySurprisePowerOn, kernel.pofxnotifysurprisepoweron, wdm/PoFxNotifySurprisePowerOn, PoFxNotifySurprisePowerOn routine [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : 
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ntoskrnl.lib
-req.dll : Ntoskrnl.exe
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.PoFxNotifySurprisePowerOn
+title: PoFxNotifySurprisePowerOn function
+author: windows-driver-content
+description: The PoFxNotifySurprisePowerOn routine notifies the power management framework (PoFx) that a device was turned on as a side effect of supplying power to some other device.
+old-location: kernel\pofxnotifysurprisepoweron.htm
+old-project: kernel
+ms.assetid: AB9C7D32-D536-4B2B-9C85-DF5A0031798C
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: PoFxNotifySurprisePowerOn, kernel.pofxnotifysurprisepoweron, wdm/PoFxNotifySurprisePowerOn, PoFxNotifySurprisePowerOn routine [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: 
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ntoskrnl.lib
+req.dll: Ntoskrnl.exe
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Ntoskrnl.exe
+apiname:
+-	PoFxNotifySurprisePowerOn
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

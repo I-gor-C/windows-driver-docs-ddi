@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmdt._DXGKMDT_OPM_OUTPUT_ID
-title : "_DXGKMDT_OPM_OUTPUT_ID"
-author : windows-driver-content
-description : The DXGKMDT_OPM_OUTPUT_ID structure identifies the output connector.
-old-location : display\dxgkmdt_opm_output_id.htm
-old-project : display
-ms.assetid : c7b2e4ba-7f76-474d-9752-0934898cac09
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DXGKMDT_OPM_OUTPUT_ID structure [Display Devices], d3dkmdt/DXGKMDT_OPM_OUTPUT_ID, display.dxgkmdt_opm_output_id, _DXGKMDT_OPM_OUTPUT_ID, DmStructs_b0696fe6-3647-4a09-9817-578d4cfbf60a.xml, DXGKMDT_OPM_OUTPUT_ID
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmdt.h
-req.include-header : D3dkmdt.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7 and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGKMDT_OPM_OUTPUT_ID
+UID: NS:d3dkmdt._DXGKMDT_OPM_OUTPUT_ID
+title: "_DXGKMDT_OPM_OUTPUT_ID"
+author: windows-driver-content
+description: The DXGKMDT_OPM_OUTPUT_ID structure identifies the output connector.
+old-location: display\dxgkmdt_opm_output_id.htm
+old-project: display
+ms.assetid: c7b2e4ba-7f76-474d-9752-0934898cac09
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DXGKMDT_OPM_OUTPUT_ID structure [Display Devices], d3dkmdt/DXGKMDT_OPM_OUTPUT_ID, display.dxgkmdt_opm_output_id, _DXGKMDT_OPM_OUTPUT_ID, DmStructs_b0696fe6-3647-4a09-9817-578d4cfbf60a.xml, DXGKMDT_OPM_OUTPUT_ID
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmdt.h
+req.include-header: D3dkmdt.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7 and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmdt.h
+apiname:
+-	DXGKMDT_OPM_OUTPUT_ID
+product: Windows
+targetos: Windows
+req.typenames: DXGKMDT_OPM_OUTPUT_ID
 ---
 
 # _DXGKMDT_OPM_OUTPUT_ID structure

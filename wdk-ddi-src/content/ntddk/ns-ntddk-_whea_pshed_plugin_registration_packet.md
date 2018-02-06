@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddk._WHEA_PSHED_PLUGIN_REGISTRATION_PACKET
-title : "_WHEA_PSHED_PLUGIN_REGISTRATION_PACKET"
-author : windows-driver-content
-description : The WHEA_PSHED_PLUGIN_REGISTRATION_PACKET structure describes the data required for registering a PSHED plug-in with the PSHED.
-old-location : whea\whea_pshed_plugin_registration_packet.htm
-old-project : whea
-ms.assetid : 9dafa65f-26f6-42a6-a125-013c61a66ccc
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : PWHEA_PSHED_PLUGIN_REGISTRATION_PACKET structure pointer [WHEA Drivers and Applications], whea.whea_pshed_plugin_registration_packet, WHEA_PSHED_PLUGIN_REGISTRATION_PACKET, *PWHEA_PSHED_PLUGIN_REGISTRATION_PACKET, ntddk/PWHEA_PSHED_PLUGIN_REGISTRATION_PACKET, whearef_9e79e188-a1ce-4d98-a15d-a45c27f9e836.xml, _WHEA_PSHED_PLUGIN_REGISTRATION_PACKET, WHEA_PSHED_PLUGIN_REGISTRATION_PACKET structure [WHEA Drivers and Applications], ntddk/WHEA_PSHED_PLUGIN_REGISTRATION_PACKET, PWHEA_PSHED_PLUGIN_REGISTRATION_PACKET
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_PSHED_PLUGIN_REGISTRATION_PACKET, *PWHEA_PSHED_PLUGIN_REGISTRATION_PACKET
+UID: NS:ntddk._WHEA_PSHED_PLUGIN_REGISTRATION_PACKET
+title: "_WHEA_PSHED_PLUGIN_REGISTRATION_PACKET"
+author: windows-driver-content
+description: The WHEA_PSHED_PLUGIN_REGISTRATION_PACKET structure describes the data required for registering a PSHED plug-in with the PSHED.
+old-location: whea\whea_pshed_plugin_registration_packet.htm
+old-project: whea
+ms.assetid: 9dafa65f-26f6-42a6-a125-013c61a66ccc
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: PWHEA_PSHED_PLUGIN_REGISTRATION_PACKET structure pointer [WHEA Drivers and Applications], whea.whea_pshed_plugin_registration_packet, WHEA_PSHED_PLUGIN_REGISTRATION_PACKET, *PWHEA_PSHED_PLUGIN_REGISTRATION_PACKET, ntddk/PWHEA_PSHED_PLUGIN_REGISTRATION_PACKET, whearef_9e79e188-a1ce-4d98-a15d-a45c27f9e836.xml, _WHEA_PSHED_PLUGIN_REGISTRATION_PACKET, WHEA_PSHED_PLUGIN_REGISTRATION_PACKET structure [WHEA Drivers and Applications], ntddk/WHEA_PSHED_PLUGIN_REGISTRATION_PACKET, PWHEA_PSHED_PLUGIN_REGISTRATION_PACKET
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddk.h
+apiname:
+-	WHEA_PSHED_PLUGIN_REGISTRATION_PACKET
+product: Windows
+targetos: Windows
+req.typenames: WHEA_PSHED_PLUGIN_REGISTRATION_PACKET, *PWHEA_PSHED_PLUGIN_REGISTRATION_PACKET
 ---
 
 # _WHEA_PSHED_PLUGIN_REGISTRATION_PACKET structure

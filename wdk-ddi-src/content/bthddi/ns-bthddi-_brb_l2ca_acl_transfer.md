@@ -1,41 +1,46 @@
 ---
-UID : NS:bthddi._BRB_L2CA_ACL_TRANSFER
-title : "_BRB_L2CA_ACL_TRANSFER"
-author : windows-driver-content
-description : The _BRB_L2CA_ACL_TRANSFER structure describes a buffer to read asynchronous data from, or write asynchronous data to a L2CAP channel.
-old-location : bltooth\_brb_l2ca_acl_transfer.htm
-old-project : bltooth
-ms.assetid : 8ab1365a-99bd-47b3-bf3d-8f70b4a7028a
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : bltooth._brb_l2ca_acl_transfer, bthddi/_BRB_L2CA_ACL_TRANSFER, bth_structs_5dfd1186-d8a1-4ec5-9ce8-028d462fcb21.xml, _BRB_L2CA_ACL_TRANSFER, _BRB_L2CA_ACL_TRANSFER structure [Bluetooth Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : bthddi.h
-req.include-header : Bthddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Versions:\_Supported in Windows Vista, and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback   function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access   paged memory)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NS:bthddi._BRB_L2CA_ACL_TRANSFER
+title: "_BRB_L2CA_ACL_TRANSFER"
+author: windows-driver-content
+description: The _BRB_L2CA_ACL_TRANSFER structure describes a buffer to read asynchronous data from, or write asynchronous data to a L2CAP channel.
+old-location: bltooth\_brb_l2ca_acl_transfer.htm
+old-project: bltooth
+ms.assetid: 8ab1365a-99bd-47b3-bf3d-8f70b4a7028a
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: bltooth._brb_l2ca_acl_transfer, bthddi/_BRB_L2CA_ACL_TRANSFER, bth_structs_5dfd1186-d8a1-4ec5-9ce8-028d462fcb21.xml, _BRB_L2CA_ACL_TRANSFER, _BRB_L2CA_ACL_TRANSFER structure [Bluetooth Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: bthddi.h
+req.include-header: Bthddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Versions:\_Supported in Windows Vista, and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback   function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access   paged memory)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	bthddi.h
+apiname:
+-	_BRB_L2CA_ACL_TRANSFER
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 # _BRB_L2CA_ACL_TRANSFER structure

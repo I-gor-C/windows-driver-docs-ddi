@@ -1,42 +1,47 @@
 ---
-UID : NC:ucxcontroller.EVT_UCX_CONTROLLER_SET_TRANSPORT_CHARACTERISTICS_CHANGE_NOTIFICATION
-title : EVT_UCX_CONTROLLER_SET_TRANSPORT_CHARACTERISTICS_CHANGE_NOTIFICATION
-author : windows-driver-content
-description : UCX invokes this callback function to specify its preference in transport characteristics for which the client driver must send notifications when changes occur.
-old-location : buses\evt_ucx_controller_set_transport_characteristics_change_notification.htm
-old-project : usbref
-ms.assetid : 559D2215-B78C-41EA-9E2C-6E67AE5276BE
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : buses.evt_ucx_controller_set_transport_characteristics_change_notification, EvUcxControllerSetTransportCharacteristicsChangeNotification callback function [Buses], EvUcxControllerSetTransportCharacteristicsChangeNotification, EVT_UCX_CONTROLLER_SET_TRANSPORT_CHARACTERISTICS_CHANGE_NOTIFICATION, EVT_UCX_CONTROLLER_SET_TRANSPORT_CHARACTERISTICS_CHANGE_NOTIFICATION, ucxcontroller/EvUcxControllerSetTransportCharacteristicsChangeNotification, *PFN_UCX_CONTROLLER_SET_TRANSPORT_CHARACTERISTICS_CHANGE_NOTIFICATION callback function pointer [Buses], *PFN_UCX_CONTROLLER_SET_TRANSPORT_CHARACTERISTICS_CHANGE_NOTIFICATION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ucxcontroller.h
-req.include-header : Ucxclass.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10, version 1709
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUCM_PD_REQUEST_DATA_OBJECT, UCM_PD_REQUEST_DATA_OBJECT"
-req.product : Windows 10 or later.
+UID: NC:ucxcontroller.EVT_UCX_CONTROLLER_SET_TRANSPORT_CHARACTERISTICS_CHANGE_NOTIFICATION
+title: EVT_UCX_CONTROLLER_SET_TRANSPORT_CHARACTERISTICS_CHANGE_NOTIFICATION
+author: windows-driver-content
+description: UCX invokes this callback function to specify its preference in transport characteristics for which the client driver must send notifications when changes occur.
+old-location: buses\evt_ucx_controller_set_transport_characteristics_change_notification.htm
+old-project: usbref
+ms.assetid: 559D2215-B78C-41EA-9E2C-6E67AE5276BE
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: buses.evt_ucx_controller_set_transport_characteristics_change_notification, EvUcxControllerSetTransportCharacteristicsChangeNotification callback function [Buses], EvUcxControllerSetTransportCharacteristicsChangeNotification, EVT_UCX_CONTROLLER_SET_TRANSPORT_CHARACTERISTICS_CHANGE_NOTIFICATION, EVT_UCX_CONTROLLER_SET_TRANSPORT_CHARACTERISTICS_CHANGE_NOTIFICATION, ucxcontroller/EvUcxControllerSetTransportCharacteristicsChangeNotification, *PFN_UCX_CONTROLLER_SET_TRANSPORT_CHARACTERISTICS_CHANGE_NOTIFICATION callback function pointer [Buses], *PFN_UCX_CONTROLLER_SET_TRANSPORT_CHARACTERISTICS_CHANGE_NOTIFICATION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ucxcontroller.h
+req.include-header: Ucxclass.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10, version 1709
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	UcxController.h
+apiname:
+-	*PFN_UCX_CONTROLLER_SET_TRANSPORT_CHARACTERISTICS_CHANGE_NOTIFICATION
+product: Windows
+targetos: Windows
+req.typenames: "*PUCM_PD_REQUEST_DATA_OBJECT, UCM_PD_REQUEST_DATA_OBJECT"
+req.product: Windows 10 or later.
 ---
 
 

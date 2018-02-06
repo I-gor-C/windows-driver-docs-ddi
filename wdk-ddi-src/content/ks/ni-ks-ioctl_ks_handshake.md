@@ -1,41 +1,46 @@
 ---
-UID : NI:ks.IOCTL_KS_HANDSHAKE
-title : IOCTL_KS_HANDSHAKE
-author : windows-driver-content
-description : A kernel-mode client can use IOCTL_KS_HANDSHAKE to negotiate an interface between unconnected AVStream pins.
-old-location : stream\ioctl_ks_handshake.htm
-old-project : stream
-ms.assetid : 63c50af0-365b-4074-a703-9e43b1514a55
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.ioctl_ks_handshake, IOCTL_KS_HANDSHAKE control code [Streaming Media Devices], IOCTL_KS_HANDSHAKE, ks/IOCTL_KS_HANDSHAKE, ks-ioctl_f848d65c-b795-439e-a8a1-d4c2e0764ef1.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NI:ks.IOCTL_KS_HANDSHAKE
+title: IOCTL_KS_HANDSHAKE
+author: windows-driver-content
+description: A kernel-mode client can use IOCTL_KS_HANDSHAKE to negotiate an interface between unconnected AVStream pins.
+old-location: stream\ioctl_ks_handshake.htm
+old-project: stream
+ms.assetid: 63c50af0-365b-4074-a703-9e43b1514a55
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.ioctl_ks_handshake, IOCTL_KS_HANDSHAKE control code [Streaming Media Devices], IOCTL_KS_HANDSHAKE, ks/IOCTL_KS_HANDSHAKE, ks-ioctl_f848d65c-b795-439e-a8a1-d4c2e0764ef1.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	IOCTL_KS_HANDSHAKE
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 # IOCTL_KS_HANDSHAKE IOCTL

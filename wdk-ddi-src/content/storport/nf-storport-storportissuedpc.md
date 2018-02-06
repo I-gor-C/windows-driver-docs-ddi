@@ -1,42 +1,47 @@
 ---
-UID : NF:storport.StorPortIssueDpc
-title : StorPortIssueDpc function
-author : windows-driver-content
-description : The StorPortIssueDpc routine issues a deferred procedure call (DPC).
-old-location : storage\storportissuedpc.htm
-old-project : storage
-ms.assetid : a0c46c51-f6c4-4609-9dba-b730f33c3ed6
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.storportissuedpc, StorPortIssueDpc routine [Storage Devices], storprt_e9cbe677-4d21-4c07-97a2-9db50858321f.xml, StorPortIssueDpc, storport/StorPortIssueDpc
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STOR_SPINLOCK
-req.product : Windows 10 or later.
+UID: NF:storport.StorPortIssueDpc
+title: StorPortIssueDpc function
+author: windows-driver-content
+description: The StorPortIssueDpc routine issues a deferred procedure call (DPC).
+old-location: storage\storportissuedpc.htm
+old-project: storage
+ms.assetid: a0c46c51-f6c4-4609-9dba-b730f33c3ed6
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.storportissuedpc, StorPortIssueDpc routine [Storage Devices], storprt_e9cbe677-4d21-4c07-97a2-9db50858321f.xml, StorPortIssueDpc, storport/StorPortIssueDpc
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	storport.h
+apiname:
+-	StorPortIssueDpc
+product: Windows
+targetos: Windows
+req.typenames: STOR_SPINLOCK
+req.product: Windows 10 or later.
 ---
 
 

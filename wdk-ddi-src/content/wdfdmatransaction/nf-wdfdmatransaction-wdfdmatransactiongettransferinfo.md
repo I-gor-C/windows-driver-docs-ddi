@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfdmatransaction.WdfDmaTransactionGetTransferInfo
-title : WdfDmaTransactionGetTransferInfo function
-author : windows-driver-content
-description : The WdfDmaTransactionGetTransferInfo method returns the number of map registers and scatter/gather list entries required for an initialized DMA transaction.
-old-location : wdf\wdfdmatransactiongettransferinfo.htm
-old-project : wdf
-ms.assetid : 9EE04529-D322-4498-B802-BB6A53FBC716
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.wdfdmatransactiongettransferinfo, WdfDmaTransactionGetTransferInfo method, PFN_WDFDMATRANSACTIONGETTRANSFERINFO, wdfdmatransaction/WdfDmaTransactionGetTransferInfo, WdfDmaTransactionGetTransferInfo, kmdf.wdfdmatransactiongettransferinfo
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfdmatransaction.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.11
-req.umdf-ver : 
-req.ddi-compliance : DriverCreate
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDF_DMA_SYSTEM_PROFILE_CONFIG, WDF_DMA_SYSTEM_PROFILE_CONFIG"
-req.product : Windows 10 or later.
+UID: NF:wdfdmatransaction.WdfDmaTransactionGetTransferInfo
+title: WdfDmaTransactionGetTransferInfo function
+author: windows-driver-content
+description: The WdfDmaTransactionGetTransferInfo method returns the number of map registers and scatter/gather list entries required for an initialized DMA transaction.
+old-location: wdf\wdfdmatransactiongettransferinfo.htm
+old-project: wdf
+ms.assetid: 9EE04529-D322-4498-B802-BB6A53FBC716
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.wdfdmatransactiongettransferinfo, WdfDmaTransactionGetTransferInfo method, PFN_WDFDMATRANSACTIONGETTRANSFERINFO, wdfdmatransaction/WdfDmaTransactionGetTransferInfo, WdfDmaTransactionGetTransferInfo, kmdf.wdfdmatransactiongettransferinfo
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfdmatransaction.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.11
+req.umdf-ver: 
+req.ddi-compliance: DriverCreate
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfDmaTransactionGetTransferInfo
+product: Windows
+targetos: Windows
+req.typenames: "*PWDF_DMA_SYSTEM_PROFILE_CONFIG, WDF_DMA_SYSTEM_PROFILE_CONFIG"
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,42 +1,48 @@
 ---
-UID : NF:spbcx.SpbRequestGetTarget
-title : SpbRequestGetTarget function
-author : windows-driver-content
-description : The SpbRequestGetTarget method retrieves the SPBTARGET handle from the specified I/O request.
-old-location : spb\spbrequestgettarget.htm
-old-project : SPB
-ms.assetid : 2F89C886-99FF-4D6C-B52F-6422DB9E76AE
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : SpbRequestGetTarget, SpbRequestGetTarget method [Buses], spbcx/SpbRequestGetTarget, SPB.spbrequestgettarget
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : spbcx.h
-req.include-header : 
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Spbcxstubs.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SPB_REQUEST_TYPE, *PSPB_REQUEST_TYPE
-req.product : Windows 10 or later.
+UID: NF:spbcx.SpbRequestGetTarget
+title: SpbRequestGetTarget function
+author: windows-driver-content
+description: The SpbRequestGetTarget method retrieves the SPBTARGET handle from the specified I/O request.
+old-location: spb\spbrequestgettarget.htm
+old-project: SPB
+ms.assetid: 2F89C886-99FF-4D6C-B52F-6422DB9E76AE
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: SpbRequestGetTarget, SpbRequestGetTarget method [Buses], spbcx/SpbRequestGetTarget, SPB.spbrequestgettarget
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: spbcx.h
+req.include-header: 
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Spbcxstubs.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	spbcxstubs.lib
+-	spbcxstubs.dll
+apiname:
+-	SpbRequestGetTarget
+product: Windows
+targetos: Windows
+req.typenames: SPB_REQUEST_TYPE, *PSPB_REQUEST_TYPE
+req.product: Windows 10 or later.
 ---
 
 

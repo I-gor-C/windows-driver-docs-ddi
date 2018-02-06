@@ -1,41 +1,46 @@
 ---
-UID : NF:engextcpp.ExtRemoteData.GetDouble
-title : ExtRemoteData::GetDouble method
-author : windows-driver-content
-description : The GetDouble method returns a double version of the ExtRemoteData object, which represents the contents of the target's memory.
-old-location : debugger\extremotedata_getdouble.htm
-old-project : debugger
-ms.assetid : f8645e92-659f-42b8-a850-49a434ec2a67
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : ExtRemoteData, GetDouble, debugger.extremotedata_getdouble, GetDouble method [Windows Debugging], ExtRemoteData class, GetDouble method [Windows Debugging], EngExtCpp_Ref_8776e6fd-9e13-4502-a445-da65a8fcfe41.xml, ExtRemoteData::GetDouble, ExtRemoteData class [Windows Debugging], GetDouble method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : engextcpp.hpp
-req.include-header : Engextcpp.hpp
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : engextcpp.hpp
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SILO_DRIVER_CAPABILITIES, *PSILO_DRIVER_CAPABILITIES
+UID: NF:engextcpp.ExtRemoteData.GetDouble
+title: ExtRemoteData::GetDouble method
+author: windows-driver-content
+description: The GetDouble method returns a double version of the ExtRemoteData object, which represents the contents of the target's memory.
+old-location: debugger\extremotedata_getdouble.htm
+old-project: debugger
+ms.assetid: f8645e92-659f-42b8-a850-49a434ec2a67
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: ExtRemoteData, GetDouble, debugger.extremotedata_getdouble, GetDouble method [Windows Debugging], ExtRemoteData class, GetDouble method [Windows Debugging], EngExtCpp_Ref_8776e6fd-9e13-4502-a445-da65a8fcfe41.xml, ExtRemoteData::GetDouble, ExtRemoteData class [Windows Debugging], GetDouble method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: engextcpp.hpp
+req.include-header: Engextcpp.hpp
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: engextcpp.hpp
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	engextcpp.hpp
+apiname:
+-	ExtRemoteData.GetDouble
+product: Windows
+targetos: Windows
+req.typenames: SILO_DRIVER_CAPABILITIES, *PSILO_DRIVER_CAPABILITIES
 ---
 
 

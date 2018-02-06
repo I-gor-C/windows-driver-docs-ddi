@@ -1,42 +1,47 @@
 ---
-UID : NI:usbioctl.IOCTL_GET_HCD_DRIVERKEY_NAME
-title : IOCTL_GET_HCD_DRIVERKEY_NAME
-author : windows-driver-content
-description : The IOCTL_GET_HCD_DRIVERKEY_NAME I/O control request retrieves the driver key name in the registry for a USB host controller driver.
-old-location : buses\ioctl_get_hcd_driverkey_name.htm
-old-project : usbref
-ms.assetid : 2435ef20-c75c-4b28-9824-8428b2ac6326
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : buses.ioctl_get_hcd_driverkey_name, IOCTL_GET_HCD_DRIVERKEY_NAME control code [Buses], IOCTL_GET_HCD_DRIVERKEY_NAME, usbioctl/IOCTL_GET_HCD_DRIVERKEY_NAME, usbirp_e5bfae17-3a5d-414d-a24d-6c09269618aa.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : usbioctl.h
-req.include-header : Usbioctl.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : USB_HUB_TYPE
-req.product : Windows 10 or later.
+UID: NI:usbioctl.IOCTL_GET_HCD_DRIVERKEY_NAME
+title: IOCTL_GET_HCD_DRIVERKEY_NAME
+author: windows-driver-content
+description: The IOCTL_GET_HCD_DRIVERKEY_NAME I/O control request retrieves the driver key name in the registry for a USB host controller driver.
+old-location: buses\ioctl_get_hcd_driverkey_name.htm
+old-project: usbref
+ms.assetid: 2435ef20-c75c-4b28-9824-8428b2ac6326
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: buses.ioctl_get_hcd_driverkey_name, IOCTL_GET_HCD_DRIVERKEY_NAME control code [Buses], IOCTL_GET_HCD_DRIVERKEY_NAME, usbioctl/IOCTL_GET_HCD_DRIVERKEY_NAME, usbirp_e5bfae17-3a5d-414d-a24d-6c09269618aa.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: usbioctl.h
+req.include-header: Usbioctl.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Usbioctl.h
+apiname:
+-	IOCTL_GET_HCD_DRIVERKEY_NAME
+product: Windows
+targetos: Windows
+req.typenames: USB_HUB_TYPE
+req.product: Windows 10 or later.
 ---
 
 # IOCTL_GET_HCD_DRIVERKEY_NAME IOCTL

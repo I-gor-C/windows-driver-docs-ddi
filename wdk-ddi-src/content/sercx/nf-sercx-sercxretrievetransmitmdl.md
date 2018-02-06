@@ -1,42 +1,47 @@
 ---
-UID : NF:sercx.SerCxRetrieveTransmitMdl
-title : SerCxRetrieveTransmitMdl function
-author : windows-driver-content
-description : The SerCxRetrieveTransmitMdl method retrieves the MDL that describes the buffer that contains the next block of output data to be transmitted.
-old-location : serports\sercxretrievetransmitmdl.htm
-old-project : serports
-ms.assetid : C0FF3667-9641-4032-826E-7E297F57CDFA
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : SerCxRetrieveTransmitMdl method [Serial Ports], SerCxRetrieveTransmitMdl, 1/SerCxRetrieveTransmitMdl, serports.sercxretrievetransmitmdl
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : sercx.h
-req.include-header : 
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSERCX_STATUS, SERCX_STATUS"
-req.product : Windows 10 or later.
+UID: NF:sercx.SerCxRetrieveTransmitMdl
+title: SerCxRetrieveTransmitMdl function
+author: windows-driver-content
+description: The SerCxRetrieveTransmitMdl method retrieves the MDL that describes the buffer that contains the next block of output data to be transmitted.
+old-location: serports\sercxretrievetransmitmdl.htm
+old-project: serports
+ms.assetid: C0FF3667-9641-4032-826E-7E297F57CDFA
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: SerCxRetrieveTransmitMdl method [Serial Ports], SerCxRetrieveTransmitMdl, 1/SerCxRetrieveTransmitMdl, serports.sercxretrievetransmitmdl
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: sercx.h
+req.include-header: 
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	1.0\Sercx.h
+apiname:
+-	SerCxRetrieveTransmitMdl
+product: Windows
+targetos: Windows
+req.typenames: "*PSERCX_STATUS, SERCX_STATUS"
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NE:ntddndis._NDIS_HYPERVISOR_PARTITION_TYPE
-title : "_NDIS_HYPERVISOR_PARTITION_TYPE"
-author : windows-driver-content
-description : The NDIS_HYPERVISOR_PARTITION_TYPE enumeration identifies the current partition type that is running on the hypervisor.
-old-location : netvista\ndis_hypervisor_partition_type.htm
-old-project : netvista
-ms.assetid : 830460f8-4cd6-4a52-ac32-004dc4a204e3
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : ntddndis/PNDIS_HYPERVISOR_PARTITION_TYPE, ntddndis/NDIS_HYPERVISOR_PARTITION_TYPE, PNDIS_HYPERVISOR_PARTITION_TYPE enumeration pointer [Network Drivers Starting with Windows Vista], NdisHypervisorPartitionTypeMsHvParent, NdisHypervisorPartitionTypeUnknown, _NDIS_HYPERVISOR_PARTITION_TYPE, *PNDIS_HYPERVISOR_PARTITION_TYPE, ntddndis/NdisHypervisorPartitionTypeUnknown, PNDIS_HYPERVISOR_PARTITION_TYPE, ntddndis/NdisHypervisorPartitionTypeMsHvParent, netvista.ndis_hypervisor_partition_type, NdisHypervisorPartitionTypeMax, ntddndis/NdisHypervisorPartitionMsHvChild, NdisHypervisorPartitionMsHvChild, NDIS_HYPERVISOR_PARTITION_TYPE, ntddndis/NdisHypervisorPartitionTypeMax, virtual_machine_queue_ref_582bebe7-e184-4460-8437-b81bcd6dbf8b.xml, NDIS_HYPERVISOR_PARTITION_TYPE enumeration [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : ntddndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.20 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_HYPERVISOR_PARTITION_TYPE, *PNDIS_HYPERVISOR_PARTITION_TYPE
+UID: NE:ntddndis._NDIS_HYPERVISOR_PARTITION_TYPE
+title: "_NDIS_HYPERVISOR_PARTITION_TYPE"
+author: windows-driver-content
+description: The NDIS_HYPERVISOR_PARTITION_TYPE enumeration identifies the current partition type that is running on the hypervisor.
+old-location: netvista\ndis_hypervisor_partition_type.htm
+old-project: netvista
+ms.assetid: 830460f8-4cd6-4a52-ac32-004dc4a204e3
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: ntddndis/PNDIS_HYPERVISOR_PARTITION_TYPE, ntddndis/NDIS_HYPERVISOR_PARTITION_TYPE, PNDIS_HYPERVISOR_PARTITION_TYPE enumeration pointer [Network Drivers Starting with Windows Vista], NdisHypervisorPartitionTypeMsHvParent, NdisHypervisorPartitionTypeUnknown, _NDIS_HYPERVISOR_PARTITION_TYPE, *PNDIS_HYPERVISOR_PARTITION_TYPE, ntddndis/NdisHypervisorPartitionTypeUnknown, PNDIS_HYPERVISOR_PARTITION_TYPE, ntddndis/NdisHypervisorPartitionTypeMsHvParent, netvista.ndis_hypervisor_partition_type, NdisHypervisorPartitionTypeMax, ntddndis/NdisHypervisorPartitionMsHvChild, NdisHypervisorPartitionMsHvChild, NDIS_HYPERVISOR_PARTITION_TYPE, ntddndis/NdisHypervisorPartitionTypeMax, virtual_machine_queue_ref_582bebe7-e184-4460-8437-b81bcd6dbf8b.xml, NDIS_HYPERVISOR_PARTITION_TYPE enumeration [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: ntddndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.20 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddndis.h
+apiname:
+-	NDIS_HYPERVISOR_PARTITION_TYPE
+product: Windows
+targetos: Windows
+req.typenames: NDIS_HYPERVISOR_PARTITION_TYPE, *PNDIS_HYPERVISOR_PARTITION_TYPE
 ---
 
 # _NDIS_HYPERVISOR_PARTITION_TYPE Enumeration
@@ -59,35 +64,35 @@ typedef enum _NDIS_HYPERVISOR_PARTITION_TYPE {
 ## Constants
 
 <table>
-
-<tr>
-<td>NdisHypervisorPartitionMsHvChild</td>
-<td>The child partition is running on
+            
+                <tr>
+                    <td>NdisHypervisorPartitionMsHvChild</td>
+                    <td>The child partition is running on
      the Microsoft hypervisor.</td>
-</tr>
-
-<tr>
-<td>NdisHypervisorPartitionTypeMax</td>
-<td>The maximum value for this enumeration. This value might change in future versions of the NDIS
+                </tr>
+            
+                <tr>
+                    <td>NdisHypervisorPartitionTypeMax</td>
+                    <td>The maximum value for this enumeration. This value might change in future versions of the NDIS
      header files and binaries.</td>
-</tr>
-
-<tr>
-<td>NdisHypervisorPartitionTypeMsHvParent</td>
-<td>The parent partition (also known as the root partition) is running
+                </tr>
+            
+                <tr>
+                    <td>NdisHypervisorPartitionTypeMsHvParent</td>
+                    <td>The parent partition (also known as the root partition) is running
      on the Microsoft hypervisor.</td>
-</tr>
-
-<tr>
-<td>NdisHypervisorPartitionTypeUnknown</td>
-<td>The partition type that is running on the hypervisor is not known.
+                </tr>
+            
+                <tr>
+                    <td>NdisHypervisorPartitionTypeUnknown</td>
+                    <td>The partition type that is running on the hypervisor is not known.
 <div class="alert"><b>Note</b>  This enumeration value is used to identify a partition type for a third-party hypervisor.</div><div> </div></td>
-</tr>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-For more information about Hyper-V parent and child partitions, see <a href="https://msdn.microsoft.com/467996B2-9319-47F9-BAEB-5AC1F20B6E01">Virtualized Networking Concepts and Terms</a>.
+        For more information about Hyper-V parent and child partitions, see <a href="https://msdn.microsoft.com/467996B2-9319-47F9-BAEB-5AC1F20B6E01">Virtualized Networking Concepts and Terms</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -95,9 +100,9 @@ For more information about Hyper-V parent and child partitions, see <a href="htt
 | **Windows version** | Supported in NDIS 6.20 and later. Supported in NDIS 6.20 and later. |
 | **Header** | ntddndis.h (include Ndis.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_hypervisor_info.md">NDIS_HYPERVISOR_INFO</a>
+        <a href="..\ntddndis\ns-ntddndis-_ndis_hypervisor_info.md">NDIS_HYPERVISOR_INFO</a>
 
  
 

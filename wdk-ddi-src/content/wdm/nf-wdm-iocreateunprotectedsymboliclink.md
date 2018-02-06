@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.IoCreateUnprotectedSymbolicLink
-title : IoCreateUnprotectedSymbolicLink function
-author : windows-driver-content
-description : The IoCreateUnprotectedSymbolicLink routine sets up an unprotected symbolic link between a device object name and a corresponding Win32-visible name.
-old-location : kernel\iocreateunprotectedsymboliclink.htm
-old-project : kernel
-ms.assetid : 21ca4ec1-fd5f-46bb-9760-3bb0cdb761b9
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : k104_72bb6571-da2d-4027-bfcd-24438e3bd08a.xml, IoCreateUnprotectedSymbolicLink, IoCreateUnprotectedSymbolicLink routine [Kernel-Mode Driver Architecture], wdm/IoCreateUnprotectedSymbolicLink, kernel.iocreateunprotectedsymboliclink
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : IrqlIoPassive4, PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.IoCreateUnprotectedSymbolicLink
+title: IoCreateUnprotectedSymbolicLink function
+author: windows-driver-content
+description: The IoCreateUnprotectedSymbolicLink routine sets up an unprotected symbolic link between a device object name and a corresponding Win32-visible name.
+old-location: kernel\iocreateunprotectedsymboliclink.htm
+old-project: kernel
+ms.assetid: 21ca4ec1-fd5f-46bb-9760-3bb0cdb761b9
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: k104_72bb6571-da2d-4027-bfcd-24438e3bd08a.xml, IoCreateUnprotectedSymbolicLink, IoCreateUnprotectedSymbolicLink routine [Kernel-Mode Driver Architecture], wdm/IoCreateUnprotectedSymbolicLink, kernel.iocreateunprotectedsymboliclink
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: IrqlIoPassive4, PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoCreateUnprotectedSymbolicLink
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

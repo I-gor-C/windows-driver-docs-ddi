@@ -1,41 +1,49 @@
 ---
-UID : NF:d3dkmthk.D3DKMTEscape
-title : D3DKMTEscape function
-author : windows-driver-content
-description : The D3DKMTEscape function exchanges information with the display miniport driver.
-old-location : display\d3dkmtescape.htm
-old-project : display
-ms.assetid : 60b105df-2085-40bc-9d95-0f6b317a565e
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3dkmthk/D3DKMTEscape, D3DKMTEscape, OpenGL_Functions_ad391641-4fb5-425a-839f-7b257f26849a.xml, D3DKMTEscape function [Display Devices], display.d3dkmtescape
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Gdi32.lib
-req.dll : Gdi32.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_DRIVERVERSION
+UID: NF:d3dkmthk.D3DKMTEscape
+title: D3DKMTEscape function
+author: windows-driver-content
+description: The D3DKMTEscape function exchanges information with the display miniport driver.
+old-location: display\d3dkmtescape.htm
+old-project: display
+ms.assetid: 60b105df-2085-40bc-9d95-0f6b317a565e
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3dkmthk/D3DKMTEscape, D3DKMTEscape, OpenGL_Functions_ad391641-4fb5-425a-839f-7b257f26849a.xml, D3DKMTEscape function [Display Devices], display.d3dkmtescape
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Gdi32.lib
+req.dll: Gdi32.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Gdi32.dll
+-	API-MS-Win-dx-d3dkmt-l1-1-0.dll
+-	API-MS-Win-dx-d3dkmt-l1-1-1.dll
+-	API-MS-Win-DX-D3DKMT-L1-1-2.dll
+apiname:
+-	D3DKMTEscape
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_DRIVERVERSION
 ---
 
 

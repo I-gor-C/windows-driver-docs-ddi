@@ -1,41 +1,46 @@
 ---
-UID : NS:dxva._DXVA_BufferDescription
-title : "_DXVA_BufferDescription"
-author : windows-driver-content
-description : The DXVA_BufferDescription structure is sent by the host decoder to the accelerator to provide information to the accelerator about the buffer that is currently being passed from the host to the accelerator.
-old-location : display\dxva_bufferdescription.htm
-old-project : display
-ms.assetid : 34b1585d-ceba-4e13-b5c1-70ce29a940c5
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : LPDXVA_BufferDescription structure pointer [Display Devices], dxva/DXVA_BufferDescription, display.dxva_bufferdescription, dxvaref_3d6f62c8-77a1-40b0-8bf3-1a82deaf3020.xml, LPDXVA_BufferDescription, dxva/LPDXVA_BufferDescription, _DXVA_BufferDescription, *LPDXVA_BufferDescription, DXVA_BufferDescription structure [Display Devices], DXVA_BufferDescription
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : dxva.h
-req.include-header : Dxva.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*LPDXVA_BufferDescription, DXVA_BufferDescription"
+UID: NS:dxva._DXVA_BufferDescription
+title: "_DXVA_BufferDescription"
+author: windows-driver-content
+description: The DXVA_BufferDescription structure is sent by the host decoder to the accelerator to provide information to the accelerator about the buffer that is currently being passed from the host to the accelerator.
+old-location: display\dxva_bufferdescription.htm
+old-project: display
+ms.assetid: 34b1585d-ceba-4e13-b5c1-70ce29a940c5
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: LPDXVA_BufferDescription structure pointer [Display Devices], dxva/DXVA_BufferDescription, display.dxva_bufferdescription, dxvaref_3d6f62c8-77a1-40b0-8bf3-1a82deaf3020.xml, LPDXVA_BufferDescription, dxva/LPDXVA_BufferDescription, _DXVA_BufferDescription, *LPDXVA_BufferDescription, DXVA_BufferDescription structure [Display Devices], DXVA_BufferDescription
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: dxva.h
+req.include-header: Dxva.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	dxva.h
+apiname:
+-	DXVA_BufferDescription
+product: Windows
+targetos: Windows
+req.typenames: "*LPDXVA_BufferDescription, DXVA_BufferDescription"
 ---
 
 # _DXVA_BufferDescription structure

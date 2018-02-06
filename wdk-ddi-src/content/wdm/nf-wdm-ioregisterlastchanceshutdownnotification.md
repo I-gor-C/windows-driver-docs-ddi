@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.IoRegisterLastChanceShutdownNotification
-title : IoRegisterLastChanceShutdownNotification function
-author : windows-driver-content
-description : The IoRegisterLastChanceShutdownNotification routine registers a driver to receive an IRP_MJ_SHUTDOWN IRP when the system is shut down, after all file systems have been flushed.
-old-location : kernel\ioregisterlastchanceshutdownnotification.htm
-old-project : kernel
-ms.assetid : 9ee590ce-e822-4c15-bb01-6f726268f163
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/IoRegisterLastChanceShutdownNotification, IoRegisterLastChanceShutdownNotification routine [Kernel-Mode Driver Architecture], IoRegisterLastChanceShutdownNotification, kernel.ioregisterlastchanceshutdownnotification, k104_233a75d7-252b-45e3-a980-bda55edd3fdc.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 2000 and later versions of Windows. Not available in Microsoft Windows 98/Me.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.IoRegisterLastChanceShutdownNotification
+title: IoRegisterLastChanceShutdownNotification function
+author: windows-driver-content
+description: The IoRegisterLastChanceShutdownNotification routine registers a driver to receive an IRP_MJ_SHUTDOWN IRP when the system is shut down, after all file systems have been flushed.
+old-location: kernel\ioregisterlastchanceshutdownnotification.htm
+old-project: kernel
+ms.assetid: 9ee590ce-e822-4c15-bb01-6f726268f163
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/IoRegisterLastChanceShutdownNotification, IoRegisterLastChanceShutdownNotification routine [Kernel-Mode Driver Architecture], IoRegisterLastChanceShutdownNotification, kernel.ioregisterlastchanceshutdownnotification, k104_233a75d7-252b-45e3-a980-bda55edd3fdc.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 2000 and later versions of Windows. Not available in Microsoft Windows 98/Me.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoRegisterLastChanceShutdownNotification
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

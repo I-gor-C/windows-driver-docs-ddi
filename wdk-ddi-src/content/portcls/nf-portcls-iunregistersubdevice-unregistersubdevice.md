@@ -1,41 +1,46 @@
 ---
-UID : NF:portcls.IUnregisterSubdevice.UnregisterSubdevice
-title : IUnregisterSubdevice::UnregisterSubdevice method
-author : windows-driver-content
-description : The UnregisterSubdevice method deletes the registration of a subdevice that was previously registered by a call to PcRegisterSubdevice.
-old-location : audio\iunregistersubdevice_unregistersubdevice.htm
-old-project : audio
-ms.assetid : 042378f0-aa0f-49be-b881-86558ad33baf
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : audio.iunregistersubdevice_unregistersubdevice, IUnregisterSubdevice, UnregisterSubdevice, IUnregisterSubdevice::UnregisterSubdevice, UnregisterSubdevice method [Audio Devices], IUnregisterSubdevice interface, audmp-routines_8fb24a5e-af25-42e0-a96e-2f4728f17cde.xml, portcls/IUnregisterSubdevice::UnregisterSubdevice, UnregisterSubdevice method [Audio Devices], IUnregisterSubdevice interface [Audio Devices], UnregisterSubdevice method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : portcls.h
-req.include-header : Portcls.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : portcls.h
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.IUnregisterSubdevice.UnregisterSubdevice
+title: IUnregisterSubdevice::UnregisterSubdevice method
+author: windows-driver-content
+description: The UnregisterSubdevice method deletes the registration of a subdevice that was previously registered by a call to PcRegisterSubdevice.
+old-location: audio\iunregistersubdevice_unregistersubdevice.htm
+old-project: audio
+ms.assetid: 042378f0-aa0f-49be-b881-86558ad33baf
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: audio.iunregistersubdevice_unregistersubdevice, IUnregisterSubdevice, UnregisterSubdevice, IUnregisterSubdevice::UnregisterSubdevice, UnregisterSubdevice method [Audio Devices], IUnregisterSubdevice interface, audmp-routines_8fb24a5e-af25-42e0-a96e-2f4728f17cde.xml, portcls/IUnregisterSubdevice::UnregisterSubdevice, UnregisterSubdevice method [Audio Devices], IUnregisterSubdevice interface [Audio Devices], UnregisterSubdevice method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: portcls.h
+req.include-header: Portcls.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: portcls.h
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	portcls.h
+apiname:
+-	IUnregisterSubdevice.UnregisterSubdevice
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

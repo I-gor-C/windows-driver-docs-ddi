@@ -1,42 +1,47 @@
 ---
-UID : NC:wdfwmi.EVT_WDF_WMI_INSTANCE_EXECUTE_METHOD
-title : EVT_WDF_WMI_INSTANCE_EXECUTE_METHOD
-author : windows-driver-content
-description : A driver's EvtWmiInstanceExecuteMethod callback function executes a specified method that the driver provides for a WMI data provider's instance.
-old-location : wdf\evtwmiinstanceexecutemethod.htm
-old-project : wdf
-ms.assetid : b14de1d7-0df2-46d1-a3bd-c23f33d3ed75
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.evtwmiinstanceexecutemethod, EvtWmiInstanceExecuteMethod callback function, EvtWmiInstanceExecuteMethod, EVT_WDF_WMI_INSTANCE_EXECUTE_METHOD, EVT_WDF_WMI_INSTANCE_EXECUTE_METHOD, wdfwmi/EvtWmiInstanceExecuteMethod, DFWMIRef_d54dc0b0-bdef-40a7-b863-5946f4d8e5f5.xml, kmdf.evtwmiinstanceexecutemethod
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdfwmi.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_USB_REQUEST_COMPLETION_PARAMS, *PWDF_USB_REQUEST_COMPLETION_PARAMS
-req.product : Windows 10 or later.
+UID: NC:wdfwmi.EVT_WDF_WMI_INSTANCE_EXECUTE_METHOD
+title: EVT_WDF_WMI_INSTANCE_EXECUTE_METHOD
+author: windows-driver-content
+description: A driver's EvtWmiInstanceExecuteMethod callback function executes a specified method that the driver provides for a WMI data provider's instance.
+old-location: wdf\evtwmiinstanceexecutemethod.htm
+old-project: wdf
+ms.assetid: b14de1d7-0df2-46d1-a3bd-c23f33d3ed75
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.evtwmiinstanceexecutemethod, EvtWmiInstanceExecuteMethod callback function, EvtWmiInstanceExecuteMethod, EVT_WDF_WMI_INSTANCE_EXECUTE_METHOD, EVT_WDF_WMI_INSTANCE_EXECUTE_METHOD, wdfwmi/EvtWmiInstanceExecuteMethod, DFWMIRef_d54dc0b0-bdef-40a7-b863-5946f4d8e5f5.xml, kmdf.evtwmiinstanceexecutemethod
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdfwmi.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	WdfWMI.h
+apiname:
+-	EvtWmiInstanceExecuteMethod
+product: Windows
+targetos: Windows
+req.typenames: WDF_USB_REQUEST_COMPLETION_PARAMS, *PWDF_USB_REQUEST_COMPLETION_PARAMS
+req.product: Windows 10 or later.
 ---
 
 

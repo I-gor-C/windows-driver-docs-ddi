@@ -1,41 +1,49 @@
 ---
-UID : NF:irb.AtaPortReadPortBufferUlong
-title : AtaPortReadPortBufferUlong function
-author : windows-driver-content
-description : The AtaPortReadPortBufferUlong routine transfers a given number of ULONG values from the HBA to a buffer.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
-old-location : storage\ataportreadportbufferulong.htm
-old-project : storage
-ms.assetid : ff70685f-f3cf-49c0-bb0b-02e561feeac3
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : atartns_e2f251c9-d2a0-4b33-91d8-2d700eb4253e.xml, irb/AtaPortReadPortBufferUlong, AtaPortReadPortBufferUlong, storage.ataportreadportbufferulong, AtaPortReadPortBufferUlong routine [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : irb.h
-req.include-header : Ata.h, Irb.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ataport.lib; Pciidex.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : IDE_POWER_STATE
+UID: NF:irb.AtaPortReadPortBufferUlong
+title: AtaPortReadPortBufferUlong function
+author: windows-driver-content
+description: The AtaPortReadPortBufferUlong routine transfers a given number of ULONG values from the HBA to a buffer.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
+old-location: storage\ataportreadportbufferulong.htm
+old-project: storage
+ms.assetid: ff70685f-f3cf-49c0-bb0b-02e561feeac3
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: atartns_e2f251c9-d2a0-4b33-91d8-2d700eb4253e.xml, irb/AtaPortReadPortBufferUlong, AtaPortReadPortBufferUlong, storage.ataportreadportbufferulong, AtaPortReadPortBufferUlong routine [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: irb.h
+req.include-header: Ata.h, Irb.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ataport.lib; Pciidex.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ataport.lib
+-	ataport.dll
+-	pciidex.lib
+-	pciidex.dll
+apiname:
+-	AtaPortReadPortBufferUlong
+product: Windows
+targetos: Windows
+req.typenames: IDE_POWER_STATE
 ---
 
 

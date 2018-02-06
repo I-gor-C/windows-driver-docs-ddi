@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.IoGetFunctionCodeFromCtlCode
-title : IoGetFunctionCodeFromCtlCode macro
-author : windows-driver-content
-description : The IoGetFunctionCodeFromCtlCode macro returns the value of the function code contained in an I/O control code.
-old-location : kernel\iogetfunctioncodefromctlcode.htm
-old-project : kernel
-ms.assetid : 8bbde78d-49f4-4181-9d92-312010322a7a
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : IoGetFunctionCodeFromCtlCode function [Kernel-Mode Driver Architecture], IoGetFunctionCodeFromCtlCode, k104_211d730a-0df4-45f4-af58-25d2609c7696.xml, kernel.iogetfunctioncodefromctlcode, wdm/IoGetFunctionCodeFromCtlCode
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : macro
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wdm.h
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.IoGetFunctionCodeFromCtlCode
+title: IoGetFunctionCodeFromCtlCode macro
+author: windows-driver-content
+description: The IoGetFunctionCodeFromCtlCode macro returns the value of the function code contained in an I/O control code.
+old-location: kernel\iogetfunctioncodefromctlcode.htm
+old-project: kernel
+ms.assetid: 8bbde78d-49f4-4181-9d92-312010322a7a
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: IoGetFunctionCodeFromCtlCode function [Kernel-Mode Driver Architecture], IoGetFunctionCodeFromCtlCode, k104_211d730a-0df4-45f4-af58-25d2609c7696.xml, kernel.iogetfunctioncodefromctlcode, wdm/IoGetFunctionCodeFromCtlCode
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: macro
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wdm.h
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	IoGetFunctionCodeFromCtlCode
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

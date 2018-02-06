@@ -1,42 +1,50 @@
 ---
-UID : NF:wdfrequest.WdfRequestGetStatus
-title : WdfRequestGetStatus function
-author : windows-driver-content
-description : The WdfRequestGetStatus method returns the status of an I/O request.
-old-location : wdf\wdfrequestgetstatus.htm
-old-project : wdf
-ms.assetid : 82f922a1-34c1-475b-b12a-210ae602a4bd
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdfrequest/WdfRequestGetStatus, WdfRequestGetStatus method, DFRequestObjectRef_60149f5d-5523-4b88-9bba-464be280b2b7.xml, wdf.wdfrequestgetstatus, PFN_WDFREQUESTGETSTATUS, kmdf.wdfrequestgetstatus, WdfRequestGetStatus
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfrequest.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2, RequestGetStatusValid
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_REQUEST_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfrequest.WdfRequestGetStatus
+title: WdfRequestGetStatus function
+author: windows-driver-content
+description: The WdfRequestGetStatus method returns the status of an I/O request.
+old-location: wdf\wdfrequestgetstatus.htm
+old-project: wdf
+ms.assetid: 82f922a1-34c1-475b-b12a-210ae602a4bd
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdfrequest/WdfRequestGetStatus, WdfRequestGetStatus method, DFRequestObjectRef_60149f5d-5523-4b88-9bba-464be280b2b7.xml, wdf.wdfrequestgetstatus, PFN_WDFREQUESTGETSTATUS, kmdf.wdfrequestgetstatus, WdfRequestGetStatus
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfrequest.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2, RequestGetStatusValid
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+-	WUDFx02000.dll
+-	WUDFx02000.dll.dll
+apiname:
+-	WdfRequestGetStatus
+product: Windows
+targetos: Windows
+req.typenames: WDF_REQUEST_TYPE
+req.product: Windows 10 or later.
 ---
 
 

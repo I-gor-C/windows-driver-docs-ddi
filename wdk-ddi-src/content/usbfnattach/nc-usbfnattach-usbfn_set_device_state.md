@@ -1,42 +1,47 @@
 ---
-UID : NC:usbfnattach.USBFN_SET_DEVICE_STATE
-title : USBFN_SET_DEVICE_STATE
-author : windows-driver-content
-description : The filter driver's implementation to set the device state and operating bus speed.
-old-location : buses\usbfn_set_device_state.htm
-old-project : usbref
-ms.assetid : EAEFEE8A-D96B-40D8-A4F0-FEFA670E1E6E
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : buses.usbfn_set_device_state, UsbFnSetDeviceState callback function [Buses], UsbFnSetDeviceState, USBFN_SET_DEVICE_STATE, USBFN_SET_DEVICE_STATE, usbfnattach/UsbFnSetDeviceState, PFN_USBFN_SET_DEVICE_STATE callback function pointer [Buses], PFN_USBFN_SET_DEVICE_STATE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : usbfnattach.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : USBD_INTERFACE_LIST_ENTRY, *PUSBD_INTERFACE_LIST_ENTRY
-req.product : Windows 10 or later.
+UID: NC:usbfnattach.USBFN_SET_DEVICE_STATE
+title: USBFN_SET_DEVICE_STATE
+author: windows-driver-content
+description: The filter driver's implementation to set the device state and operating bus speed.
+old-location: buses\usbfn_set_device_state.htm
+old-project: usbref
+ms.assetid: EAEFEE8A-D96B-40D8-A4F0-FEFA670E1E6E
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: buses.usbfn_set_device_state, UsbFnSetDeviceState callback function [Buses], UsbFnSetDeviceState, USBFN_SET_DEVICE_STATE, USBFN_SET_DEVICE_STATE, usbfnattach/UsbFnSetDeviceState, PFN_USBFN_SET_DEVICE_STATE callback function pointer [Buses], PFN_USBFN_SET_DEVICE_STATE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: usbfnattach.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	usbfnattach.h
+apiname:
+-	PFN_USBFN_SET_DEVICE_STATE
+product: Windows
+targetos: Windows
+req.typenames: USBD_INTERFACE_LIST_ENTRY, *PUSBD_INTERFACE_LIST_ENTRY
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NF:sercx.SerCxGetConnectionParameters
-title : SerCxGetConnectionParameters function
-author : windows-driver-content
-description : The SerCxGetConnectionParameters method retrieves the connection parameters for the associated peripheral device.
-old-location : serports\sercxgetconnectionparameters.htm
-old-project : serports
-ms.assetid : 361BC3A7-AE86-4C92-B7E1-A30D467D4A65
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : 1/SerCxGetConnectionParameters, SerCxGetConnectionParameters, serports.sercxgetconnectionparameters, SerCxGetConnectionParameters method [Serial Ports]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : sercx.h
-req.include-header : 
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSERCX_STATUS, SERCX_STATUS"
-req.product : Windows 10 or later.
+UID: NF:sercx.SerCxGetConnectionParameters
+title: SerCxGetConnectionParameters function
+author: windows-driver-content
+description: The SerCxGetConnectionParameters method retrieves the connection parameters for the associated peripheral device.
+old-location: serports\sercxgetconnectionparameters.htm
+old-project: serports
+ms.assetid: 361BC3A7-AE86-4C92-B7E1-A30D467D4A65
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: 1/SerCxGetConnectionParameters, SerCxGetConnectionParameters, serports.sercxgetconnectionparameters, SerCxGetConnectionParameters method [Serial Ports]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: sercx.h
+req.include-header: 
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	1.0\Sercx.h
+apiname:
+-	SerCxGetConnectionParameters
+product: Windows
+targetos: Windows
+req.typenames: "*PSERCX_STATUS, SERCX_STATUS"
+req.product: Windows 10 or later.
 ---
 
 

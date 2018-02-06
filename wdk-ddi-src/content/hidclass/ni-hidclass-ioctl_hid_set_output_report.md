@@ -1,41 +1,46 @@
 ---
-UID : NI:hidclass.IOCTL_HID_SET_OUTPUT_REPORT
-title : IOCTL_HID_SET_OUTPUT_REPORT
-author : windows-driver-content
-description : The IOCTL_HID_SET_OUTPUT_REPORT request sends an output report to a top-level collection.
-old-location : hid\ioctl_hid_set_output_report.htm
-old-project : hid
-ms.assetid : f5c0f3a7-5d90-4a95-9ba0-01aea98d8c79
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : hid.ioctl_hid_set_output_report, IOCTL_HID_SET_OUTPUT_REPORT control code [Human Input Devices], IOCTL_HID_SET_OUTPUT_REPORT, hidclass/IOCTL_HID_SET_OUTPUT_REPORT, hidioreq_1b4d06b6-4e28-4465-8b88-356d70bf1dee.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : hidclass.h
-req.include-header : Hidclass.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HDAUDIO_STREAM_FORMAT, *PHDAUDIO_STREAM_FORMAT
+UID: NI:hidclass.IOCTL_HID_SET_OUTPUT_REPORT
+title: IOCTL_HID_SET_OUTPUT_REPORT
+author: windows-driver-content
+description: The IOCTL_HID_SET_OUTPUT_REPORT request sends an output report to a top-level collection.
+old-location: hid\ioctl_hid_set_output_report.htm
+old-project: hid
+ms.assetid: f5c0f3a7-5d90-4a95-9ba0-01aea98d8c79
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: hid.ioctl_hid_set_output_report, IOCTL_HID_SET_OUTPUT_REPORT control code [Human Input Devices], IOCTL_HID_SET_OUTPUT_REPORT, hidclass/IOCTL_HID_SET_OUTPUT_REPORT, hidioreq_1b4d06b6-4e28-4465-8b88-356d70bf1dee.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: hidclass.h
+req.include-header: Hidclass.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hidclass.h
+apiname:
+-	IOCTL_HID_SET_OUTPUT_REPORT
+product: Windows
+targetos: Windows
+req.typenames: HDAUDIO_STREAM_FORMAT, *PHDAUDIO_STREAM_FORMAT
 ---
 
 # IOCTL_HID_SET_OUTPUT_REPORT IOCTL

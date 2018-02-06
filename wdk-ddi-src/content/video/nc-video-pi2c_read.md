@@ -1,42 +1,47 @@
 ---
-UID : NC:video.PI2C_READ
-title : PI2C_READ
-author : windows-driver-content
-description : The I2CRead function reads data over the I2C channel.
-old-location : display\i2cread.htm
-old-project : display
-ms.assetid : 1418ec29-be67-46af-b6db-0b534ecafb37
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.i2cread, I2CRead callback function [Display Devices], I2CRead, PI2C_READ, PI2C_READ, video/I2CRead, VideoPort_Functions_cb73b3b1-1646-43ef-ac61-5a14c9a53b9b.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows 2000 and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VHF_CONFIG, *PVHF_CONFIG
-req.product : Windows 10 or later.
+UID: NC:video.PI2C_READ
+title: PI2C_READ
+author: windows-driver-content
+description: The I2CRead function reads data over the I2C channel.
+old-location: display\i2cread.htm
+old-project: display
+ms.assetid: 1418ec29-be67-46af-b6db-0b534ecafb37
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.i2cread, I2CRead callback function [Display Devices], I2CRead, PI2C_READ, PI2C_READ, video/I2CRead, VideoPort_Functions_cb73b3b1-1646-43ef-ac61-5a14c9a53b9b.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows 2000 and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	video.h
+apiname:
+-	I2CRead
+product: Windows
+targetos: Windows
+req.typenames: VHF_CONFIG, *PVHF_CONFIG
+req.product: Windows 10 or later.
 ---
 
 

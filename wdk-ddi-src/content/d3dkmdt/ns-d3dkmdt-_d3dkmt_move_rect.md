@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmdt._D3DKMT_MOVE_RECT
-title : "_D3DKMT_MOVE_RECT"
-author : windows-driver-content
-description : Provides information on a screen-to-screen move and a dirty rectangle copy operation.
-old-location : display\d3dkmt_move_rect.htm
-old-project : display
-ms.assetid : 2d9e0a8e-9485-427d-bdd0-2d89dec76a77
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DKMT_MOVE_RECT structure [Display Devices], d3dkmdt/D3DKMT_MOVE_RECT, _D3DKMT_MOVE_RECT, display.d3dkmt_move_rect, D3DKMT_MOVE_RECT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmdt.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_MOVE_RECT
+UID: NS:d3dkmdt._D3DKMT_MOVE_RECT
+title: "_D3DKMT_MOVE_RECT"
+author: windows-driver-content
+description: Provides information on a screen-to-screen move and a dirty rectangle copy operation.
+old-location: display\d3dkmt_move_rect.htm
+old-project: display
+ms.assetid: 2d9e0a8e-9485-427d-bdd0-2d89dec76a77
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DKMT_MOVE_RECT structure [Display Devices], d3dkmdt/D3DKMT_MOVE_RECT, _D3DKMT_MOVE_RECT, display.d3dkmt_move_rect, D3DKMT_MOVE_RECT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmdt.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	D3dkmdt.h
+apiname:
+-	D3DKMT_MOVE_RECT
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_MOVE_RECT
 ---
 
 # _D3DKMT_MOVE_RECT structure

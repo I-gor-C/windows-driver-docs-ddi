@@ -1,42 +1,47 @@
 ---
-UID : NF:ucxcontroller.UcxIoDeviceControl
-title : UcxIoDeviceControl function
-author : windows-driver-content
-description : Allows USB host controller extension (UCX) to handle an I/O control code (IOCTL) request from user mode.
-old-location : buses\_ucxiodevicecontrol.htm
-old-project : usbref
-ms.assetid : 7C1DD018-2EDF-48BB-8DFC-ADAF72A1909D
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : buses._ucxiodevicecontrol, UcxIoDeviceControl method [Buses], ucxcontroller/UcxIoDeviceControl, UcxIoDeviceControl
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ucxcontroller.h
-req.include-header : Ucxclass.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : UCX_CONTROLLER_STATE
-req.product : Windows 10 or later.
+UID: NF:ucxcontroller.UcxIoDeviceControl
+title: UcxIoDeviceControl function
+author: windows-driver-content
+description: Allows USB host controller extension (UCX) to handle an I/O control code (IOCTL) request from user mode.
+old-location: buses\_ucxiodevicecontrol.htm
+old-project: usbref
+ms.assetid: 7C1DD018-2EDF-48BB-8DFC-ADAF72A1909D
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: buses._ucxiodevicecontrol, UcxIoDeviceControl method [Buses], ucxcontroller/UcxIoDeviceControl, UcxIoDeviceControl
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ucxcontroller.h
+req.include-header: Ucxclass.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Ucxcontroller.h
+apiname:
+-	UcxIoDeviceControl
+product: Windows
+targetos: Windows
+req.typenames: UCX_CONTROLLER_STATE
+req.product: Windows 10 or later.
 ---
 
 

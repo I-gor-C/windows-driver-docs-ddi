@@ -1,41 +1,46 @@
 ---
-UID : NC:dispmprt.DXGKDDI_SET_POWER_STATE
-title : DXGKDDI_SET_POWER_STATE
-author : windows-driver-content
-description : The DxgkDdiSetPowerState function sets the power state of a display adapter or a child device of a display adapter.
-old-location : display\dxgkddisetpowerstate.htm
-old-project : display
-ms.assetid : 6462be4f-1f6e-4b85-a3ba-15820ee8605b
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkddisetpowerstate, DxgkDdiSetPowerState callback function [Display Devices], DxgkDdiSetPowerState, DXGKDDI_SET_POWER_STATE, DXGKDDI_SET_POWER_STATE, dispmprt/DxgkDdiSetPowerState, DmFunctions_712dfd67-ab92-4ffb-80e8-18e6b80a0dd4.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : dispmprt.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Available starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
+UID: NC:dispmprt.DXGKDDI_SET_POWER_STATE
+title: DXGKDDI_SET_POWER_STATE
+author: windows-driver-content
+description: The DxgkDdiSetPowerState function sets the power state of a display adapter or a child device of a display adapter.
+old-location: display\dxgkddisetpowerstate.htm
+old-project: display
+ms.assetid: 6462be4f-1f6e-4b85-a3ba-15820ee8605b
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkddisetpowerstate, DxgkDdiSetPowerState callback function [Display Devices], DxgkDdiSetPowerState, DXGKDDI_SET_POWER_STATE, DXGKDDI_SET_POWER_STATE, dispmprt/DxgkDdiSetPowerState, DmFunctions_712dfd67-ab92-4ffb-80e8-18e6b80a0dd4.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: dispmprt.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Available starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Dispmprt.h
+apiname:
+-	DxgkDdiSetPowerState
+product: Windows
+targetos: Windows
+req.typenames: SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ---
 
 

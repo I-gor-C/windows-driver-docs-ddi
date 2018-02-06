@@ -1,41 +1,46 @@
 ---
-UID : NS:hbapiwmi._AddTarget_IN
-title : "_AddTarget_IN"
-author : windows-driver-content
-description : The AddPort_IN structure is used by a WMI client to deliver the input parameter data of the AddTarget WMI method to the HBA miniport driver.
-old-location : storage\addtarget_in.htm
-old-project : storage
-ms.assetid : 7c6a7ca8-83aa-41fe-92f5-6598464d9803
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : AddTarget_IN structure [Storage Devices], PAddTarget_IN structure pointer [Storage Devices], _AddTarget_IN, hbapiwmi/PAddTarget_IN, hbapiwmi/AddTarget_IN, AddTarget_IN, PAddTarget_IN, *PAddTarget_IN, storage.addtarget_in, structs-Fibre_7109b51c-872e-4e2e-affb-388fe21750d7.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : hbapiwmi.h
-req.include-header : Hbapiwmi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PAddTarget_IN, AddTarget_IN"
+UID: NS:hbapiwmi._AddTarget_IN
+title: "_AddTarget_IN"
+author: windows-driver-content
+description: The AddPort_IN structure is used by a WMI client to deliver the input parameter data of the AddTarget WMI method to the HBA miniport driver.
+old-location: storage\addtarget_in.htm
+old-project: storage
+ms.assetid: 7c6a7ca8-83aa-41fe-92f5-6598464d9803
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: AddTarget_IN structure [Storage Devices], PAddTarget_IN structure pointer [Storage Devices], _AddTarget_IN, hbapiwmi/PAddTarget_IN, hbapiwmi/AddTarget_IN, AddTarget_IN, PAddTarget_IN, *PAddTarget_IN, storage.addtarget_in, structs-Fibre_7109b51c-872e-4e2e-affb-388fe21750d7.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: hbapiwmi.h
+req.include-header: Hbapiwmi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hbapiwmi.h
+apiname:
+-	AddTarget_IN
+product: Windows
+targetos: Windows
+req.typenames: "*PAddTarget_IN, AddTarget_IN"
 ---
 
 # _AddTarget_IN structure

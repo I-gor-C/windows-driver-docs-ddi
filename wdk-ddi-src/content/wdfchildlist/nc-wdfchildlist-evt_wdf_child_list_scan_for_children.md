@@ -1,42 +1,47 @@
 ---
-UID : NC:wdfchildlist.EVT_WDF_CHILD_LIST_SCAN_FOR_CHILDREN
-title : EVT_WDF_CHILD_LIST_SCAN_FOR_CHILDREN
-author : windows-driver-content
-description : A driver's EvtChildListScanForChildren event callback function must report all of the child devices that are present.
-old-location : wdf\evtchildlistscanforchildren.htm
-old-project : wdf
-ms.assetid : 57b06ecd-fc8c-4653-bb78-2bc6ecde6d63
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.evtchildlistscanforchildren, EvtChildListScanForChildren callback function, EvtChildListScanForChildren, EVT_WDF_CHILD_LIST_SCAN_FOR_CHILDREN, EVT_WDF_CHILD_LIST_SCAN_FOR_CHILDREN, wdfchildlist/EvtChildListScanForChildren, DFDeviceObjectChildListRef_fa95ef9d-6bb7-4eb0-8535-06853fa1759c.xml, kmdf.evtchildlistscanforchildren
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdfchildlist.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDBGEXTS_THREAD_OS_INFO, WDBGEXTS_THREAD_OS_INFO"
-req.product : Windows 10 or later.
+UID: NC:wdfchildlist.EVT_WDF_CHILD_LIST_SCAN_FOR_CHILDREN
+title: EVT_WDF_CHILD_LIST_SCAN_FOR_CHILDREN
+author: windows-driver-content
+description: A driver's EvtChildListScanForChildren event callback function must report all of the child devices that are present.
+old-location: wdf\evtchildlistscanforchildren.htm
+old-project: wdf
+ms.assetid: 57b06ecd-fc8c-4653-bb78-2bc6ecde6d63
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.evtchildlistscanforchildren, EvtChildListScanForChildren callback function, EvtChildListScanForChildren, EVT_WDF_CHILD_LIST_SCAN_FOR_CHILDREN, EVT_WDF_CHILD_LIST_SCAN_FOR_CHILDREN, wdfchildlist/EvtChildListScanForChildren, DFDeviceObjectChildListRef_fa95ef9d-6bb7-4eb0-8535-06853fa1759c.xml, kmdf.evtchildlistscanforchildren
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdfchildlist.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	WdfChildlist.h
+apiname:
+-	EvtChildListScanForChildren
+product: Windows
+targetos: Windows
+req.typenames: "*PWDBGEXTS_THREAD_OS_INFO, WDBGEXTS_THREAD_OS_INFO"
+req.product: Windows 10 or later.
 ---
 
 

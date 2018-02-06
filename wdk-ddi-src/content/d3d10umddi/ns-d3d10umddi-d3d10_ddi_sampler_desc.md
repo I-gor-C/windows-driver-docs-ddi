@@ -1,41 +1,46 @@
 ---
-UID : NS:d3d10umddi.D3D10_DDI_SAMPLER_DESC
-title : D3D10_DDI_SAMPLER_DESC
-author : windows-driver-content
-description : The D3D10_DDI_SAMPLER_DESC structure describes a sampler.
-old-location : display\d3d10_ddi_sampler_desc.htm
-old-project : display
-ms.assetid : 2f65b381-bf81-45b5-9583-793e4ffb453c
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3d10umddi/D3D10_DDI_SAMPLER_DESC, D3D10_DDI_SAMPLER_DESC, display.d3d10_ddi_sampler_desc, D3D10_DDI_SAMPLER_DESC structure [Display Devices], UMDisplayDriver_Dx10param_Structs_3bd0d5fd-417c-43ef-9bdf-0073d8651ced.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3D10_DDI_SAMPLER_DESC
+UID: NS:d3d10umddi.D3D10_DDI_SAMPLER_DESC
+title: D3D10_DDI_SAMPLER_DESC
+author: windows-driver-content
+description: The D3D10_DDI_SAMPLER_DESC structure describes a sampler.
+old-location: display\d3d10_ddi_sampler_desc.htm
+old-project: display
+ms.assetid: 2f65b381-bf81-45b5-9583-793e4ffb453c
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3d10umddi/D3D10_DDI_SAMPLER_DESC, D3D10_DDI_SAMPLER_DESC, display.d3d10_ddi_sampler_desc, D3D10_DDI_SAMPLER_DESC structure [Display Devices], UMDisplayDriver_Dx10param_Structs_3bd0d5fd-417c-43ef-9bdf-0073d8651ced.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	D3D10_DDI_SAMPLER_DESC
+product: Windows
+targetos: Windows
+req.typenames: D3D10_DDI_SAMPLER_DESC
 ---
 
 # D3D10_DDI_SAMPLER_DESC structure

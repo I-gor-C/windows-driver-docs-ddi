@@ -1,42 +1,47 @@
 ---
-UID : NF:video.VideoPortStopTimer
-title : VideoPortStopTimer function
-author : windows-driver-content
-description : The VideoPortStopTimer function disables calls to a miniport driver's HwVidTimer function.
-old-location : display\videoportstoptimer.htm
-old-project : display
-ms.assetid : 8f6927e1-2342-4816-aa43-1849c3a7702b
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : video/VideoPortStopTimer, VideoPortStopTimer function [Display Devices], display.videoportstoptimer, VideoPort_Functions_335cb68f-85a0-4e57-9e91-65df281f68a4.xml, VideoPortStopTimer
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows 2000 and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Videoprt.lib
-req.dll : Videoprt.sys
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_PORT_SERVICES
-req.product : Windows 10 or later.
+UID: NF:video.VideoPortStopTimer
+title: VideoPortStopTimer function
+author: windows-driver-content
+description: The VideoPortStopTimer function disables calls to a miniport driver's HwVidTimer function.
+old-location: display\videoportstoptimer.htm
+old-project: display
+ms.assetid: 8f6927e1-2342-4816-aa43-1849c3a7702b
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: video/VideoPortStopTimer, VideoPortStopTimer function [Display Devices], display.videoportstoptimer, VideoPort_Functions_335cb68f-85a0-4e57-9e91-65df281f68a4.xml, VideoPortStopTimer
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows 2000 and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Videoprt.lib
+req.dll: Videoprt.sys
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Videoprt.sys
+apiname:
+-	VideoPortStopTimer
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_PORT_SERVICES
+req.product: Windows 10 or later.
 ---
 
 

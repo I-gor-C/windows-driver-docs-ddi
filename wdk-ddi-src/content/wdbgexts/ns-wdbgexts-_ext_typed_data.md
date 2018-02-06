@@ -1,42 +1,47 @@
 ---
-UID : NS:wdbgexts._EXT_TYPED_DATA
-title : "_EXT_TYPED_DATA"
-author : windows-driver-content
-description : The EXT_TYPED_DATA structure is passed to and returned from the DEBUG_REQUEST_EXT_TYPED_DATA_ANSI Request operation. It contains the input and output parameters for the operation as well as specifying which particular suboperation to perform.
-old-location : debugger\ext_typed_data.htm
-old-project : debugger
-ms.assetid : 99abb7b6-3e20-4875-b257-c3fc4146e392
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : wdbgexts/EXT_TYPED_DATA, Structures_e4240445-73f9-4f38-8f1b-17035ced15f7.xml, PEXT_TYPED_DATA, wdbgexts/PEXT_TYPED_DATA, *PEXT_TYPED_DATA, PEXT_TYPED_DATA structure pointer [Windows Debugging], debugger.ext_typed_data, EXT_TYPED_DATA structure [Windows Debugging], EXT_TYPED_DATA, _EXT_TYPED_DATA
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdbgexts.h
-req.include-header : WdbgExts.h, DbgEng.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PEXT_TYPED_DATA, EXT_TYPED_DATA"
-req.product : Windows 10 or later.
+UID: NS:wdbgexts._EXT_TYPED_DATA
+title: "_EXT_TYPED_DATA"
+author: windows-driver-content
+description: The EXT_TYPED_DATA structure is passed to and returned from the DEBUG_REQUEST_EXT_TYPED_DATA_ANSI Request operation. It contains the input and output parameters for the operation as well as specifying which particular suboperation to perform.
+old-location: debugger\ext_typed_data.htm
+old-project: debugger
+ms.assetid: 99abb7b6-3e20-4875-b257-c3fc4146e392
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: wdbgexts/EXT_TYPED_DATA, Structures_e4240445-73f9-4f38-8f1b-17035ced15f7.xml, PEXT_TYPED_DATA, wdbgexts/PEXT_TYPED_DATA, *PEXT_TYPED_DATA, PEXT_TYPED_DATA structure pointer [Windows Debugging], debugger.ext_typed_data, EXT_TYPED_DATA structure [Windows Debugging], EXT_TYPED_DATA, _EXT_TYPED_DATA
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdbgexts.h
+req.include-header: WdbgExts.h, DbgEng.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdbgexts.h
+apiname:
+-	EXT_TYPED_DATA
+product: Windows
+targetos: Windows
+req.typenames: "*PEXT_TYPED_DATA, EXT_TYPED_DATA"
+req.product: Windows 10 or later.
 ---
 
 # _EXT_TYPED_DATA structure

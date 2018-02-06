@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddndis._NDIS_SWITCH_PORT_PROPERTY_ENUM_INFO
-title : "_NDIS_SWITCH_PORT_PROPERTY_ENUM_INFO"
-author : windows-driver-content
-description : The NDIS_SWITCH_PORT_PROPERTY_ENUM_INFO structure contains information about a Hyper-V extensible switch port policy property.
-old-location : netvista\ndis_switch_port_property_enum_info.htm
-old-project : netvista
-ms.assetid : 537342c3-fbcf-493d-98ce-64ea1a84225b
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : ntddndis/PNDIS_SWITCH_PORT_PROPERTY_ENUM_INFO, *PNDIS_SWITCH_PORT_PROPERTY_ENUM_INFO, PNDIS_SWITCH_PORT_PROPERTY_ENUM_INFO structure pointer [Network Drivers Starting with Windows Vista], NDIS_SWITCH_PORT_PROPERTY_ENUM_INFO structure [Network Drivers Starting with Windows Vista], ntddndis/NDIS_SWITCH_PORT_PROPERTY_ENUM_INFO, NDIS_SWITCH_PORT_PROPERTY_ENUM_INFO, _NDIS_SWITCH_PORT_PROPERTY_ENUM_INFO, PNDIS_SWITCH_PORT_PROPERTY_ENUM_INFO, netvista.ndis_switch_port_property_enum_info
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.30 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PNDIS_SWITCH_PORT_PROPERTY_ENUM_INFO, NDIS_SWITCH_PORT_PROPERTY_ENUM_INFO"
+UID: NS:ntddndis._NDIS_SWITCH_PORT_PROPERTY_ENUM_INFO
+title: "_NDIS_SWITCH_PORT_PROPERTY_ENUM_INFO"
+author: windows-driver-content
+description: The NDIS_SWITCH_PORT_PROPERTY_ENUM_INFO structure contains information about a Hyper-V extensible switch port policy property.
+old-location: netvista\ndis_switch_port_property_enum_info.htm
+old-project: netvista
+ms.assetid: 537342c3-fbcf-493d-98ce-64ea1a84225b
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: ntddndis/PNDIS_SWITCH_PORT_PROPERTY_ENUM_INFO, *PNDIS_SWITCH_PORT_PROPERTY_ENUM_INFO, PNDIS_SWITCH_PORT_PROPERTY_ENUM_INFO structure pointer [Network Drivers Starting with Windows Vista], NDIS_SWITCH_PORT_PROPERTY_ENUM_INFO structure [Network Drivers Starting with Windows Vista], ntddndis/NDIS_SWITCH_PORT_PROPERTY_ENUM_INFO, NDIS_SWITCH_PORT_PROPERTY_ENUM_INFO, _NDIS_SWITCH_PORT_PROPERTY_ENUM_INFO, PNDIS_SWITCH_PORT_PROPERTY_ENUM_INFO, netvista.ndis_switch_port_property_enum_info
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.30 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddndis.h
+apiname:
+-	NDIS_SWITCH_PORT_PROPERTY_ENUM_INFO
+product: Windows
+targetos: Windows
+req.typenames: "*PNDIS_SWITCH_PORT_PROPERTY_ENUM_INFO, NDIS_SWITCH_PORT_PROPERTY_ENUM_INFO"
 ---
 
 # _NDIS_SWITCH_PORT_PROPERTY_ENUM_INFO structure

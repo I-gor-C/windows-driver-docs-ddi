@@ -1,42 +1,47 @@
 ---
-UID : NF:storport.StorPortAsyncNotificationDetected
-title : StorPortAsyncNotificationDetected function
-author : windows-driver-content
-description : A storage miniport driver calls StorPortAsyncNotificationDetected to notify the Storport driver of a storage device status change event.
-old-location : storage\storportasyncnotificationdetected.htm
-old-project : storage
-ms.assetid : 558F652C-6D1A-4BAF-9C2C-3F4FE24651D2
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : RAID_ASYNC_NOTIFY_FLAG_DEVICE_STATUS, storage.storportasyncnotificationdetected, RAID_ASYNC_NOTIFY_FLAG_MEDIA_STATUS, RAID_ASYNC_NOTIFY_FLAG_DEVICE_OPERATION, storport/StorPortAsyncNotificationDetected, StorPortAsyncNotificationDetected routine [Storage Devices], StorPortAsyncNotificationDetected
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : Any
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STOR_SPINLOCK
-req.product : Windows 10 or later.
+UID: NF:storport.StorPortAsyncNotificationDetected
+title: StorPortAsyncNotificationDetected function
+author: windows-driver-content
+description: A storage miniport driver calls StorPortAsyncNotificationDetected to notify the Storport driver of a storage device status change event.
+old-location: storage\storportasyncnotificationdetected.htm
+old-project: storage
+ms.assetid: 558F652C-6D1A-4BAF-9C2C-3F4FE24651D2
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: RAID_ASYNC_NOTIFY_FLAG_DEVICE_STATUS, storage.storportasyncnotificationdetected, RAID_ASYNC_NOTIFY_FLAG_MEDIA_STATUS, RAID_ASYNC_NOTIFY_FLAG_DEVICE_OPERATION, storport/StorPortAsyncNotificationDetected, StorPortAsyncNotificationDetected routine [Storage Devices], StorPortAsyncNotificationDetected
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: Any
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	storport.h
+apiname:
+-	StorPortAsyncNotificationDetected
+product: Windows
+targetos: Windows
+req.typenames: STOR_SPINLOCK
+req.product: Windows 10 or later.
 ---
 
 

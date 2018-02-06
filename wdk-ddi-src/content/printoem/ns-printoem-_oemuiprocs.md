@@ -1,42 +1,47 @@
 ---
-UID : NS:printoem._OEMUIPROCS
-title : "_OEMUIPROCS"
-author : windows-driver-content
-description : The OEMUIPROCS structure is obsolete.The OEMUIPROCS structure contains the address of the DrvGetDriverSetting and DrvUpdateUISetting functions that are exported by Microsoft printer drivers.
-old-location : print\oemuiprocs.htm
-old-project : print
-ms.assetid : 67dfb4bd-c43c-4da3-833d-34050d49dea3
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : OEMUIPROCS structure [Print Devices], POEMUIPROCS, POEMUIPROCS structure pointer [Print Devices], _OEMUIPROCS, print.oemuiprocs, printoem/OEMUIPROCS, print_unidrv-pscript_ui_2252155b-8f63-4c0f-886b-c66b26ccdd5f.xml, printoem/POEMUIPROCS, *POEMUIPROCS, OEMUIPROCS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : printoem.h
-req.include-header : Printoem.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : OEMUIPROCS, *POEMUIPROCS
-req.product : Windows 10 or later.
+UID: NS:printoem._OEMUIPROCS
+title: "_OEMUIPROCS"
+author: windows-driver-content
+description: The OEMUIPROCS structure is obsolete.The OEMUIPROCS structure contains the address of the DrvGetDriverSetting and DrvUpdateUISetting functions that are exported by Microsoft printer drivers.
+old-location: print\oemuiprocs.htm
+old-project: print
+ms.assetid: 67dfb4bd-c43c-4da3-833d-34050d49dea3
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: OEMUIPROCS structure [Print Devices], POEMUIPROCS, POEMUIPROCS structure pointer [Print Devices], _OEMUIPROCS, print.oemuiprocs, printoem/OEMUIPROCS, print_unidrv-pscript_ui_2252155b-8f63-4c0f-886b-c66b26ccdd5f.xml, printoem/POEMUIPROCS, *POEMUIPROCS, OEMUIPROCS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: printoem.h
+req.include-header: Printoem.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	printoem.h
+apiname:
+-	OEMUIPROCS
+product: Windows
+targetos: Windows
+req.typenames: OEMUIPROCS, *POEMUIPROCS
+req.product: Windows 10 or later.
 ---
 
 # _OEMUIPROCS structure

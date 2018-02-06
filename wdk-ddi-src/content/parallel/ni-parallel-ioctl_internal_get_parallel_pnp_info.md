@@ -1,41 +1,46 @@
 ---
-UID : NI:parallel.IOCTL_INTERNAL_GET_PARALLEL_PNP_INFO
-title : IOCTL_INTERNAL_GET_PARALLEL_PNP_INFO
-author : windows-driver-content
-description : The IOCTL_INTERNAL_GET_PARALLEL_PNP_INFO request returns Plug and Play information about a parallel port.
-old-location : parports\ioctl_internal_get_parallel_pnp_info.htm
-old-project : parports
-ms.assetid : 9a93d91a-e9b8-41f5-8d15-f693336bee07
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : parports.ioctl_internal_get_parallel_pnp_info, IOCTL_INTERNAL_GET_PARALLEL_PNP_INFO control code [Parallel Ports], IOCTL_INTERNAL_GET_PARALLEL_PNP_INFO, parallel/IOCTL_INTERNAL_GET_PARALLEL_PNP_INFO, cisspd_66e27d46-1bd9-4e14-8b3f-4d7760552498.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : parallel.h
-req.include-header : Parallel.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RILGBATOKEN, *LPRILGBATOKEN
+UID: NI:parallel.IOCTL_INTERNAL_GET_PARALLEL_PNP_INFO
+title: IOCTL_INTERNAL_GET_PARALLEL_PNP_INFO
+author: windows-driver-content
+description: The IOCTL_INTERNAL_GET_PARALLEL_PNP_INFO request returns Plug and Play information about a parallel port.
+old-location: parports\ioctl_internal_get_parallel_pnp_info.htm
+old-project: parports
+ms.assetid: 9a93d91a-e9b8-41f5-8d15-f693336bee07
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: parports.ioctl_internal_get_parallel_pnp_info, IOCTL_INTERNAL_GET_PARALLEL_PNP_INFO control code [Parallel Ports], IOCTL_INTERNAL_GET_PARALLEL_PNP_INFO, parallel/IOCTL_INTERNAL_GET_PARALLEL_PNP_INFO, cisspd_66e27d46-1bd9-4e14-8b3f-4d7760552498.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: parallel.h
+req.include-header: Parallel.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	parallel.h
+apiname:
+-	IOCTL_INTERNAL_GET_PARALLEL_PNP_INFO
+product: Windows
+targetos: Windows
+req.typenames: RILGBATOKEN, *LPRILGBATOKEN
 ---
 
 # IOCTL_INTERNAL_GET_PARALLEL_PNP_INFO IOCTL

@@ -1,41 +1,46 @@
 ---
-UID : NS:pep_x._PEP_WORK_IDLE_STATE
-title : "_PEP_WORK_IDLE_STATE"
-author : windows-driver-content
-description : The PEP_WORK_IDLE_STATE structure contains a request to transition a component to an Fx power state.
-old-location : kernel\pep_work_idle_state.htm
-old-project : kernel
-ms.assetid : DD8C454D-D0F6-456B-B59A-2E4DF2D757B5
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.pep_work_idle_state, _PEP_WORK_IDLE_STATE, pep_x/PEP_WORK_IDLE_STATE, PPEP_WORK_IDLE_STATE, PPEP_WORK_IDLE_STATE structure pointer [Kernel-Mode Driver Architecture], PEP_WORK_IDLE_STATE, *PPEP_WORK_IDLE_STATE, PEP_WORK_IDLE_STATE structure [Kernel-Mode Driver Architecture], pep_x/PPEP_WORK_IDLE_STATE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : pep_x.h
-req.include-header : Pepfx.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with Windows 10.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPEP_WORK_IDLE_STATE, PEP_WORK_IDLE_STATE"
+UID: NS:pep_x._PEP_WORK_IDLE_STATE
+title: "_PEP_WORK_IDLE_STATE"
+author: windows-driver-content
+description: The PEP_WORK_IDLE_STATE structure contains a request to transition a component to an Fx power state.
+old-location: kernel\pep_work_idle_state.htm
+old-project: kernel
+ms.assetid: DD8C454D-D0F6-456B-B59A-2E4DF2D757B5
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.pep_work_idle_state, _PEP_WORK_IDLE_STATE, pep_x/PEP_WORK_IDLE_STATE, PPEP_WORK_IDLE_STATE, PPEP_WORK_IDLE_STATE structure pointer [Kernel-Mode Driver Architecture], PEP_WORK_IDLE_STATE, *PPEP_WORK_IDLE_STATE, PEP_WORK_IDLE_STATE structure [Kernel-Mode Driver Architecture], pep_x/PPEP_WORK_IDLE_STATE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: pep_x.h
+req.include-header: Pepfx.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows 10.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	pep_x.h
+apiname:
+-	PEP_WORK_IDLE_STATE
+product: Windows
+targetos: Windows
+req.typenames: "*PPEP_WORK_IDLE_STATE, PEP_WORK_IDLE_STATE"
 ---
 
 # _PEP_WORK_IDLE_STATE structure

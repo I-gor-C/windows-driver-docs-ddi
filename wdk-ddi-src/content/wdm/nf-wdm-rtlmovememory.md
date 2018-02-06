@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.RtlMoveMemory
-title : RtlMoveMemory macro
-author : windows-driver-content
-description : The RtlMoveMemory routine copies the contents of a source memory block to a destination memory block, and supports overlapping source and destination memory blocks.
-old-location : kernel\rtlmovememory.htm
-old-project : kernel
-ms.assetid : f6727247-e704-42d7-b4f1-ce7d20e317bb
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.rtlmovememory, RtlMoveMemory routine [Kernel-Mode Driver Architecture], k109_5731ba5b-a7a5-4883-87cf-543768a29a93.xml, RtlMoveMemory, wdm/RtlMoveMemory
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : macro
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : BufAfterReqCompletedIntIoctlA, BufAfterReqCompletedIoctlA, BufAfterReqCompletedReadA, BufAfterReqCompletedWriteA
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : Any level (See Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.RtlMoveMemory
+title: RtlMoveMemory macro
+author: windows-driver-content
+description: The RtlMoveMemory routine copies the contents of a source memory block to a destination memory block, and supports overlapping source and destination memory blocks.
+old-location: kernel\rtlmovememory.htm
+old-project: kernel
+ms.assetid: f6727247-e704-42d7-b4f1-ce7d20e317bb
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.rtlmovememory, RtlMoveMemory routine [Kernel-Mode Driver Architecture], k109_5731ba5b-a7a5-4883-87cf-543768a29a93.xml, RtlMoveMemory, wdm/RtlMoveMemory
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: macro
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: BufAfterReqCompletedIntIoctlA, BufAfterReqCompletedIoctlA, BufAfterReqCompletedReadA, BufAfterReqCompletedWriteA
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: Any level (See Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	RtlMoveMemory
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

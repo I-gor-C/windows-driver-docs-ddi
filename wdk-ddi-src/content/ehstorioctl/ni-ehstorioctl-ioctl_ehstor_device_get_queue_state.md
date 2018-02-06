@@ -1,41 +1,46 @@
 ---
-UID : NI:ehstorioctl.IOCTL_EHSTOR_DEVICE_GET_QUEUE_STATE
-title : IOCTL_EHSTOR_DEVICE_GET_QUEUE_STATE
-author : windows-driver-content
-description : The IOCTL_EHSTOR_DEVICE_GET_QUEUE_STATE request is sent by silo drivers and applications to determine the state of a storage device queue.
-old-location : storage\ioctl_ehstor_device_get_queue_state.htm
-old-project : storage
-ms.assetid : 1BF7E7B3-26CF-41BB-B2E9-8EDC6872CF34
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_ehstor_device_get_queue_state, IOCTL_EHSTOR_DEVICE_GET_QUEUE_STATE control code [Storage Devices], IOCTL_EHSTOR_DEVICE_GET_QUEUE_STATE, ehstorioctl/IOCTL_EHSTOR_DEVICE_GET_QUEUE_STATE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ehstorioctl.h
-req.include-header : EhStorIoctl.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows 8
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PDO_TYPE
+UID: NI:ehstorioctl.IOCTL_EHSTOR_DEVICE_GET_QUEUE_STATE
+title: IOCTL_EHSTOR_DEVICE_GET_QUEUE_STATE
+author: windows-driver-content
+description: The IOCTL_EHSTOR_DEVICE_GET_QUEUE_STATE request is sent by silo drivers and applications to determine the state of a storage device queue.
+old-location: storage\ioctl_ehstor_device_get_queue_state.htm
+old-project: storage
+ms.assetid: 1BF7E7B3-26CF-41BB-B2E9-8EDC6872CF34
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_ehstor_device_get_queue_state, IOCTL_EHSTOR_DEVICE_GET_QUEUE_STATE control code [Storage Devices], IOCTL_EHSTOR_DEVICE_GET_QUEUE_STATE, ehstorioctl/IOCTL_EHSTOR_DEVICE_GET_QUEUE_STATE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ehstorioctl.h
+req.include-header: EhStorIoctl.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows 8
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	EhStorIoctl.h
+apiname:
+-	IOCTL_EHSTOR_DEVICE_GET_QUEUE_STATE
+product: Windows
+targetos: Windows
+req.typenames: PDO_TYPE
 ---
 
 # IOCTL_EHSTOR_DEVICE_GET_QUEUE_STATE IOCTL

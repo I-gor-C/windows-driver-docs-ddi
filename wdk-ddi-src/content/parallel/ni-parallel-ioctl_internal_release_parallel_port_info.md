@@ -1,41 +1,46 @@
 ---
-UID : NI:parallel.IOCTL_INTERNAL_RELEASE_PARALLEL_PORT_INFO
-title : IOCTL_INTERNAL_RELEASE_PARALLEL_PORT_INFO
-author : windows-driver-content
-description : The IOCTL_INTERNAL_RELEASE_PARALLEL_PORT_INFO request returns STATUS_SUCCESS.
-old-location : parports\ioctl_internal_release_parallel_port_info.htm
-old-project : parports
-ms.assetid : 1a28e6db-b140-42aa-be52-fb5655983383
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : parports.ioctl_internal_release_parallel_port_info, IOCTL_INTERNAL_RELEASE_PARALLEL_PORT_INFO control code [Parallel Ports], IOCTL_INTERNAL_RELEASE_PARALLEL_PORT_INFO, parallel/IOCTL_INTERNAL_RELEASE_PARALLEL_PORT_INFO, cisspd_3bbcd68f-ea0d-46c8-8aab-0e33dcb4afad.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : parallel.h
-req.include-header : Parallel.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RILGBATOKEN, *LPRILGBATOKEN
+UID: NI:parallel.IOCTL_INTERNAL_RELEASE_PARALLEL_PORT_INFO
+title: IOCTL_INTERNAL_RELEASE_PARALLEL_PORT_INFO
+author: windows-driver-content
+description: The IOCTL_INTERNAL_RELEASE_PARALLEL_PORT_INFO request returns STATUS_SUCCESS.
+old-location: parports\ioctl_internal_release_parallel_port_info.htm
+old-project: parports
+ms.assetid: 1a28e6db-b140-42aa-be52-fb5655983383
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: parports.ioctl_internal_release_parallel_port_info, IOCTL_INTERNAL_RELEASE_PARALLEL_PORT_INFO control code [Parallel Ports], IOCTL_INTERNAL_RELEASE_PARALLEL_PORT_INFO, parallel/IOCTL_INTERNAL_RELEASE_PARALLEL_PORT_INFO, cisspd_3bbcd68f-ea0d-46c8-8aab-0e33dcb4afad.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: parallel.h
+req.include-header: Parallel.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	parallel.h
+apiname:
+-	IOCTL_INTERNAL_RELEASE_PARALLEL_PORT_INFO
+product: Windows
+targetos: Windows
+req.typenames: RILGBATOKEN, *LPRILGBATOKEN
 ---
 
 # IOCTL_INTERNAL_RELEASE_PARALLEL_PORT_INFO IOCTL

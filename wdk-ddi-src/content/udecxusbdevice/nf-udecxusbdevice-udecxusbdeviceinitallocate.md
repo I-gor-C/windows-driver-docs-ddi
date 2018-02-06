@@ -1,42 +1,48 @@
 ---
-UID : NF:udecxusbdevice.UdecxUsbDeviceInitAllocate
-title : UdecxUsbDeviceInitAllocate function
-author : windows-driver-content
-description : Allocates memory for a UDECXUSBDEVICE_INIT structure that is used to initialize a virtual USB device.
-old-location : buses\udecxusbdeviceinitallocate.htm
-old-project : usbref
-ms.assetid : 127D132B-6A40-4F6F-BCDA-473F89A1A747
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : buses.udecxusbdeviceinitallocate, UdecxUsbDeviceInitAllocate function [Buses], UdecxUsbDeviceInitAllocate, udecxusbdevice/UdecxUsbDeviceInitAllocate
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : udecxusbdevice.h
-req.include-header : Udecx.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 1.15
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Udecxstub.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUDECX_USB_DEVICE_WAKE_SETTING, UDECX_USB_DEVICE_WAKE_SETTING"
-req.product : Windows 10 or later.
+UID: NF:udecxusbdevice.UdecxUsbDeviceInitAllocate
+title: UdecxUsbDeviceInitAllocate function
+author: windows-driver-content
+description: Allocates memory for a UDECXUSBDEVICE_INIT structure that is used to initialize a virtual USB device.
+old-location: buses\udecxusbdeviceinitallocate.htm
+old-project: usbref
+ms.assetid: 127D132B-6A40-4F6F-BCDA-473F89A1A747
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: buses.udecxusbdeviceinitallocate, UdecxUsbDeviceInitAllocate function [Buses], UdecxUsbDeviceInitAllocate, udecxusbdevice/UdecxUsbDeviceInitAllocate
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: udecxusbdevice.h
+req.include-header: Udecx.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 1.15
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Udecxstub.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Udecxstub.lib
+-	Udecxstub.dll
+apiname:
+-	UdecxUsbDeviceInitAllocate
+product: Windows
+targetos: Windows
+req.typenames: "*PUDECX_USB_DEVICE_WAKE_SETTING, UDECX_USB_DEVICE_WAKE_SETTING"
+req.product: Windows 10 or later.
 ---
 
 

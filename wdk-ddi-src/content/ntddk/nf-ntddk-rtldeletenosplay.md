@@ -1,41 +1,46 @@
 ---
-UID : NF:ntddk.RtlDeleteNoSplay
-title : RtlDeleteNoSplay function
-author : windows-driver-content
-description : The RtlDeleteNoSplay routine deletes the specified node from the splay link tree.
-old-location : ifsk\rtldeletenosplay.htm
-old-project : ifsk
-ms.assetid : 09d8096a-71f9-4e9d-a66b-282424394b76
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : RtlDeleteNoSplay, rtlref_def5bfa8-367a-410e-8e3c-fdbf11cce05e.xml, RtlDeleteNoSplay routine [Installable File System Drivers], ntddk/RtlDeleteNoSplay, ifsk.rtldeletenosplay
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntddk.h
-req.include-header : Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.RtlDeleteNoSplay
+title: RtlDeleteNoSplay function
+author: windows-driver-content
+description: The RtlDeleteNoSplay routine deletes the specified node from the splay link tree.
+old-location: ifsk\rtldeletenosplay.htm
+old-project: ifsk
+ms.assetid: 09d8096a-71f9-4e9d-a66b-282424394b76
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: RtlDeleteNoSplay, rtlref_def5bfa8-367a-410e-8e3c-fdbf11cce05e.xml, RtlDeleteNoSplay routine [Installable File System Drivers], ntddk/RtlDeleteNoSplay, ifsk.rtldeletenosplay
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntddk.h
+req.include-header: Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	RtlDeleteNoSplay
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IPnpCallbackSelfManagedIo.OnSelfManagedIoCleanup
-title : IPnpCallbackSelfManagedIo::OnSelfManagedIoCleanup method
-author : windows-driver-content
-description : The OnSelfManagedIoCleanup method releases memory for a device's self-managed I/O operations, after the device is removed.
-old-location : wdf\ipnpcallbackselfmanagedio_onselfmanagediocleanup.htm
-old-project : wdf
-ms.assetid : 0890c352-8722-4108-9b76-60c81179b46b
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : OnSelfManagedIoCleanup method, wudfddi/IPnpCallbackSelfManagedIo::OnSelfManagedIoCleanup, umdf.ipnpcallbackselfmanagedio_onselfmanagediocleanup, OnSelfManagedIoCleanup, wdf.ipnpcallbackselfmanagedio_onselfmanagediocleanup, OnSelfManagedIoCleanup method, IPnpCallbackSelfManagedIo interface, UMDFDeviceObjectRef_32b2f920-2288-4d12-8ecd-a5ea61cc8ebd.xml, IPnpCallbackSelfManagedIo, IPnpCallbackSelfManagedIo::OnSelfManagedIoCleanup, IPnpCallbackSelfManagedIo interface, OnSelfManagedIoCleanup method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IPnpCallbackSelfManagedIo.OnSelfManagedIoCleanup
+title: IPnpCallbackSelfManagedIo::OnSelfManagedIoCleanup method
+author: windows-driver-content
+description: The OnSelfManagedIoCleanup method releases memory for a device's self-managed I/O operations, after the device is removed.
+old-location: wdf\ipnpcallbackselfmanagedio_onselfmanagediocleanup.htm
+old-project: wdf
+ms.assetid: 0890c352-8722-4108-9b76-60c81179b46b
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: OnSelfManagedIoCleanup method, wudfddi/IPnpCallbackSelfManagedIo::OnSelfManagedIoCleanup, umdf.ipnpcallbackselfmanagedio_onselfmanagediocleanup, OnSelfManagedIoCleanup, wdf.ipnpcallbackselfmanagedio_onselfmanagediocleanup, OnSelfManagedIoCleanup method, IPnpCallbackSelfManagedIo interface, UMDFDeviceObjectRef_32b2f920-2288-4d12-8ecd-a5ea61cc8ebd.xml, IPnpCallbackSelfManagedIo, IPnpCallbackSelfManagedIo::OnSelfManagedIoCleanup, IPnpCallbackSelfManagedIo interface, OnSelfManagedIoCleanup method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Wudfddi.h
+apiname:
+-	IPnpCallbackSelfManagedIo.OnSelfManagedIoCleanup
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

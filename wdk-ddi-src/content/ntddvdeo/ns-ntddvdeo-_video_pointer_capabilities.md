@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddvdeo._VIDEO_POINTER_CAPABILITIES
-title : "_VIDEO_POINTER_CAPABILITIES"
-author : windows-driver-content
-description : Contains capabilities of the screen pointer.
-old-location : display\video_pointer_capabilities.htm
-old-project : display
-ms.assetid : bc5f98da-1e2e-421b-9c76-97359e51b526
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : PVIDEO_POINTER_CAPABILITIES structure pointer [Display Devices], *PVIDEO_POINTER_CAPABILITIES, PVIDEO_POINTER_CAPABILITIES, ntddvdeo/PVIDEO_POINTER_CAPABILITIES, display.video_pointer_capabilities, Video_Structs_03a35602-adfd-4485-a155-866b578fa807.xml, ntddvdeo/VIDEO_POINTER_CAPABILITIES, VIDEO_POINTER_CAPABILITIES structure [Display Devices], VIDEO_POINTER_CAPABILITIES, _VIDEO_POINTER_CAPABILITIES
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddvdeo.h
-req.include-header : Ntddvdeo.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PVIDEO_POINTER_CAPABILITIES, VIDEO_POINTER_CAPABILITIES"
+UID: NS:ntddvdeo._VIDEO_POINTER_CAPABILITIES
+title: "_VIDEO_POINTER_CAPABILITIES"
+author: windows-driver-content
+description: Contains capabilities of the screen pointer.
+old-location: display\video_pointer_capabilities.htm
+old-project: display
+ms.assetid: bc5f98da-1e2e-421b-9c76-97359e51b526
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: PVIDEO_POINTER_CAPABILITIES structure pointer [Display Devices], *PVIDEO_POINTER_CAPABILITIES, PVIDEO_POINTER_CAPABILITIES, ntddvdeo/PVIDEO_POINTER_CAPABILITIES, display.video_pointer_capabilities, Video_Structs_03a35602-adfd-4485-a155-866b578fa807.xml, ntddvdeo/VIDEO_POINTER_CAPABILITIES, VIDEO_POINTER_CAPABILITIES structure [Display Devices], VIDEO_POINTER_CAPABILITIES, _VIDEO_POINTER_CAPABILITIES
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddvdeo.h
+req.include-header: Ntddvdeo.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddvdeo.h
+apiname:
+-	VIDEO_POINTER_CAPABILITIES
+product: Windows
+targetos: Windows
+req.typenames: "*PVIDEO_POINTER_CAPABILITIES, VIDEO_POINTER_CAPABILITIES"
 ---
 
 # _VIDEO_POINTER_CAPABILITIES structure

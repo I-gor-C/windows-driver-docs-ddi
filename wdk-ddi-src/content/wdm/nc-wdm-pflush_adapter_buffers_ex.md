@@ -1,42 +1,47 @@
 ---
-UID : NC:wdm.PFLUSH_ADAPTER_BUFFERS_EX
-title : PFLUSH_ADAPTER_BUFFERS_EX
-author : windows-driver-content
-description : The FlushAdapterBuffersEx routine flushes any data that remains in the data cache at the end of a DMA transfer operation performed by a system DMA controller or bus-master device.
-old-location : kernel\flushadapterbuffersex.htm
-old-project : kernel
-ms.assetid : D211CB5B-9FE6-4829-950D-F7DDD1A00F76
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.flushadapterbuffersex, FlushAdapterBuffersEx, FlushAdapterBuffersEx callback function [Kernel-Mode Driver Architecture], FlushAdapterBuffersEx, PFLUSH_ADAPTER_BUFFERS_EX, PFLUSH_ADAPTER_BUFFERS_EX, wdm/FlushAdapterBuffersEx
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
-req.product : Windows 10 or later.
+UID: NC:wdm.PFLUSH_ADAPTER_BUFFERS_EX
+title: PFLUSH_ADAPTER_BUFFERS_EX
+author: windows-driver-content
+description: The FlushAdapterBuffersEx routine flushes any data that remains in the data cache at the end of a DMA transfer operation performed by a system DMA controller or bus-master device.
+old-location: kernel\flushadapterbuffersex.htm
+old-project: kernel
+ms.assetid: D211CB5B-9FE6-4829-950D-F7DDD1A00F76
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.flushadapterbuffersex, FlushAdapterBuffersEx, FlushAdapterBuffersEx callback function [Kernel-Mode Driver Architecture], FlushAdapterBuffersEx, PFLUSH_ADAPTER_BUFFERS_EX, PFLUSH_ADAPTER_BUFFERS_EX, wdm/FlushAdapterBuffersEx
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Wdm.h
+apiname:
+-	FlushAdapterBuffersEx
+product: Windows
+targetos: Windows
+req.typenames: WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+req.product: Windows 10 or later.
 ---
 
 

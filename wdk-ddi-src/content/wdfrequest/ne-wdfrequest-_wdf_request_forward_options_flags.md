@@ -1,42 +1,47 @@
 ---
-UID : NE:wdfrequest._WDF_REQUEST_FORWARD_OPTIONS_FLAGS
-title : "_WDF_REQUEST_FORWARD_OPTIONS_FLAGS"
-author : windows-driver-content
-description : The WDF_REQUEST_FORWARD_OPTIONS_FLAGS enumeration type defines flags that are used in a driver's WDF_REQUEST_FORWARD_OPTIONS structure.
-old-location : wdf\wdf_request_forward_options_flags.htm
-old-project : wdf
-ms.assetid : 6161bfd3-482c-4571-bd88-2e25d32b34a0
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.wdf_request_forward_options_flags, WDF_REQUEST_FORWARD_OPTIONS_FLAGS, DFRequestObjectRef_cad8f6c6-9c76-4dc3-ac3f-3938e5174563.xml, wdfrequest/WDF_REQUEST_FORWARD_OPTIONS_FLAGS, WDF_REQUEST_FORWARD_OPTIONS_FLAGS enumeration, WDF_REQUEST_FORWARD_OPTION_SEND_AND_FORGET, wdfrequest/WDF_REQUEST_FORWARD_OPTION_SEND_AND_FORGET, kmdf.wdf_request_forward_options_flags, _WDF_REQUEST_FORWARD_OPTIONS_FLAGS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : wdfrequest.h
-req.include-header : Wdf.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.9
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_REQUEST_FORWARD_OPTIONS_FLAGS
-req.product : Windows 10 or later.
+UID: NE:wdfrequest._WDF_REQUEST_FORWARD_OPTIONS_FLAGS
+title: "_WDF_REQUEST_FORWARD_OPTIONS_FLAGS"
+author: windows-driver-content
+description: The WDF_REQUEST_FORWARD_OPTIONS_FLAGS enumeration type defines flags that are used in a driver's WDF_REQUEST_FORWARD_OPTIONS structure.
+old-location: wdf\wdf_request_forward_options_flags.htm
+old-project: wdf
+ms.assetid: 6161bfd3-482c-4571-bd88-2e25d32b34a0
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.wdf_request_forward_options_flags, WDF_REQUEST_FORWARD_OPTIONS_FLAGS, DFRequestObjectRef_cad8f6c6-9c76-4dc3-ac3f-3938e5174563.xml, wdfrequest/WDF_REQUEST_FORWARD_OPTIONS_FLAGS, WDF_REQUEST_FORWARD_OPTIONS_FLAGS enumeration, WDF_REQUEST_FORWARD_OPTION_SEND_AND_FORGET, wdfrequest/WDF_REQUEST_FORWARD_OPTION_SEND_AND_FORGET, kmdf.wdf_request_forward_options_flags, _WDF_REQUEST_FORWARD_OPTIONS_FLAGS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: wdfrequest.h
+req.include-header: Wdf.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.9
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfrequest.h
+apiname:
+-	WDF_REQUEST_FORWARD_OPTIONS_FLAGS
+product: Windows
+targetos: Windows
+req.typenames: WDF_REQUEST_FORWARD_OPTIONS_FLAGS
+req.product: Windows 10 or later.
 ---
 
 # _WDF_REQUEST_FORWARD_OPTIONS_FLAGS Enumeration
@@ -54,16 +59,16 @@ typedef enum _WDF_REQUEST_FORWARD_OPTIONS_FLAGS {
 ## Constants
 
 <table>
-
-<tr>
-<td>WDF_REQUEST_FORWARD_OPTION_SEND_AND_FORGET</td>
-<td>If set, the driver does not need to be notified when the request is completed or canceled. The driver does not set a <a href="..\wdfrequest\nc-wdfrequest-evt_wdf_request_completion_routine.md">CompletionRoutine</a> callback function or call <a href="..\wdfrequest\nf-wdfrequest-wdfrequestcomplete.md">WdfRequestComplete</a> for the request.</td>
-</tr>
+            
+                <tr>
+                    <td>WDF_REQUEST_FORWARD_OPTION_SEND_AND_FORGET</td>
+                    <td>If set, the driver does not need to be notified when the request is completed or canceled. The driver does not set a <a href="..\wdfrequest\nc-wdfrequest-evt_wdf_request_completion_routine.md">CompletionRoutine</a> callback function or call <a href="..\wdfrequest\nf-wdfrequest-wdfrequestcomplete.md">WdfRequestComplete</a> for the request.</td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-Currently, drivers must set the WDF_REQUEST_FORWARD_OPTION_SEND_AND_FORGET flag.
+        Currently, drivers must set the WDF_REQUEST_FORWARD_OPTION_SEND_AND_FORGET flag.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -71,9 +76,9 @@ Currently, drivers must set the WDF_REQUEST_FORWARD_OPTION_SEND_AND_FORGET flag.
 | **Minimum KMDF version** | 1.9 |
 | **Header** | wdfrequest.h (include Wdf.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\wdfrequest\ns-wdfrequest-_wdf_request_forward_options.md">WDF_REQUEST_FORWARD_OPTIONS</a>
+        <a href="..\wdfrequest\ns-wdfrequest-_wdf_request_forward_options.md">WDF_REQUEST_FORWARD_OPTIONS</a>
 
  
 

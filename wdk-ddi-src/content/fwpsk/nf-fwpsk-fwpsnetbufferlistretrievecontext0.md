@@ -1,41 +1,47 @@
 ---
-UID : NF:fwpsk.FwpsNetBufferListRetrieveContext0
-title : FwpsNetBufferListRetrieveContext0 function
-author : windows-driver-content
-description : The FwpsNetBufferListRetrieveContext0 function retrieves the context associated with a network buffer list that was tagged in another layer.Note  FwpsNetBufferListRetrieveContext0 is a specific version of FwpsNetBufferListRetrieveContext.
-old-location : netvista\fwpsnetbufferlistretrievecontext0.htm
-old-project : netvista
-ms.assetid : 482cec75-8a21-4988-b869-639d019f9460
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : FwpsNetBufferListRetrieveContext0 function [Network Drivers Starting with Windows Vista], wfp_ref_2_funct_3_fwps_J-Q_63312511-d342-4705-86d9-844c59f42fe3.xml, FwpsNetBufferListRetrieveContext0, netvista.fwpsnetbufferlistretrievecontext0, fwpsk/FwpsNetBufferListRetrieveContext0
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fwpsk.h
-req.include-header : Fwpsk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with  Windows 7.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Fwpkclnt.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FWPS_VSWITCH_EVENT_TYPE
+UID: NF:fwpsk.FwpsNetBufferListRetrieveContext0
+title: FwpsNetBufferListRetrieveContext0 function
+author: windows-driver-content
+description: The FwpsNetBufferListRetrieveContext0 function retrieves the context associated with a network buffer list that was tagged in another layer.Note  FwpsNetBufferListRetrieveContext0 is a specific version of FwpsNetBufferListRetrieveContext.
+old-location: netvista\fwpsnetbufferlistretrievecontext0.htm
+old-project: netvista
+ms.assetid: 482cec75-8a21-4988-b869-639d019f9460
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: FwpsNetBufferListRetrieveContext0 function [Network Drivers Starting with Windows Vista], wfp_ref_2_funct_3_fwps_J-Q_63312511-d342-4705-86d9-844c59f42fe3.xml, FwpsNetBufferListRetrieveContext0, netvista.fwpsnetbufferlistretrievecontext0, fwpsk/FwpsNetBufferListRetrieveContext0
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fwpsk.h
+req.include-header: Fwpsk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with  Windows 7.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Fwpkclnt.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	fwpkclnt.lib
+-	fwpkclnt.dll
+apiname:
+-	FwpsNetBufferListRetrieveContext0
+product: Windows
+targetos: Windows
+req.typenames: FWPS_VSWITCH_EVENT_TYPE
 ---
 
 

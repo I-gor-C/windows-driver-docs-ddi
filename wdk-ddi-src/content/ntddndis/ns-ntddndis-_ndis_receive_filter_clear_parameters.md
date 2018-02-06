@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddndis._NDIS_RECEIVE_FILTER_CLEAR_PARAMETERS
-title : "_NDIS_RECEIVE_FILTER_CLEAR_PARAMETERS"
-author : windows-driver-content
-description : The NDIS_RECEIVE_FILTER_CLEAR_PARAMETERS structure specifies the parameters to clear a receive filter on a network adapter.
-old-location : netvista\ndis_receive_filter_clear_parameters.htm
-old-project : netvista
-ms.assetid : 101f9fea-cfc2-4ea5-82ee-a260d10b5a96
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.ndis_receive_filter_clear_parameters, NDIS_RECEIVE_FILTER_CLEAR_PARAMETERS, ntddndis/NDIS_RECEIVE_FILTER_CLEAR_PARAMETERS, *PNDIS_RECEIVE_FILTER_CLEAR_PARAMETERS, NDIS_RECEIVE_FILTER_CLEAR_PARAMETERS structure [Network Drivers Starting with Windows Vista], _NDIS_RECEIVE_FILTER_CLEAR_PARAMETERS, ntddndis/PNDIS_RECEIVE_FILTER_CLEAR_PARAMETERS, PNDIS_RECEIVE_FILTER_CLEAR_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], virtual_machine_queue_ref_c0ec4d22-f248-4fe1-855e-99cfe6b2cd1f.xml, PNDIS_RECEIVE_FILTER_CLEAR_PARAMETERS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.20 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PNDIS_RECEIVE_FILTER_CLEAR_PARAMETERS, NDIS_RECEIVE_FILTER_CLEAR_PARAMETERS"
+UID: NS:ntddndis._NDIS_RECEIVE_FILTER_CLEAR_PARAMETERS
+title: "_NDIS_RECEIVE_FILTER_CLEAR_PARAMETERS"
+author: windows-driver-content
+description: The NDIS_RECEIVE_FILTER_CLEAR_PARAMETERS structure specifies the parameters to clear a receive filter on a network adapter.
+old-location: netvista\ndis_receive_filter_clear_parameters.htm
+old-project: netvista
+ms.assetid: 101f9fea-cfc2-4ea5-82ee-a260d10b5a96
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.ndis_receive_filter_clear_parameters, NDIS_RECEIVE_FILTER_CLEAR_PARAMETERS, ntddndis/NDIS_RECEIVE_FILTER_CLEAR_PARAMETERS, *PNDIS_RECEIVE_FILTER_CLEAR_PARAMETERS, NDIS_RECEIVE_FILTER_CLEAR_PARAMETERS structure [Network Drivers Starting with Windows Vista], _NDIS_RECEIVE_FILTER_CLEAR_PARAMETERS, ntddndis/PNDIS_RECEIVE_FILTER_CLEAR_PARAMETERS, PNDIS_RECEIVE_FILTER_CLEAR_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], virtual_machine_queue_ref_c0ec4d22-f248-4fe1-855e-99cfe6b2cd1f.xml, PNDIS_RECEIVE_FILTER_CLEAR_PARAMETERS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.20 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddndis.h
+apiname:
+-	NDIS_RECEIVE_FILTER_CLEAR_PARAMETERS
+product: Windows
+targetos: Windows
+req.typenames: "*PNDIS_RECEIVE_FILTER_CLEAR_PARAMETERS, NDIS_RECEIVE_FILTER_CLEAR_PARAMETERS"
 ---
 
 # _NDIS_RECEIVE_FILTER_CLEAR_PARAMETERS structure

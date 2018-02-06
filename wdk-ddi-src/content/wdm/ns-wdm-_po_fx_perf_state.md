@@ -1,42 +1,47 @@
 ---
-UID : NS:wdm._PO_FX_PERF_STATE
-title : "_PO_FX_PERF_STATE"
-author : windows-driver-content
-description : The PO_FX_PERF_STATE structure represents a performance state for a single component within a device.
-old-location : kernel\po_fx_perf_state.htm
-old-project : kernel
-ms.assetid : 06A41593-A052-43A7-B3A7-02185B557FA3
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : PPO_FX_PERF_STATE structure pointer [Kernel-Mode Driver Architecture], PO_FX_PERF_STATE, _PO_FX_PERF_STATE, *PPO_FX_PERF_STATE, PO_FX_PERF_STATE structure [Kernel-Mode Driver Architecture], kernel.po_fx_perf_state, PPO_FX_PERF_STATE, wdm/PO_FX_PERF_STATE, wdm/PPO_FX_PERF_STATE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with Windows 10.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPO_FX_PERF_STATE, PO_FX_PERF_STATE"
-req.product : Windows 10 or later.
+UID: NS:wdm._PO_FX_PERF_STATE
+title: "_PO_FX_PERF_STATE"
+author: windows-driver-content
+description: The PO_FX_PERF_STATE structure represents a performance state for a single component within a device.
+old-location: kernel\po_fx_perf_state.htm
+old-project: kernel
+ms.assetid: 06A41593-A052-43A7-B3A7-02185B557FA3
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: PPO_FX_PERF_STATE structure pointer [Kernel-Mode Driver Architecture], PO_FX_PERF_STATE, _PO_FX_PERF_STATE, *PPO_FX_PERF_STATE, PO_FX_PERF_STATE structure [Kernel-Mode Driver Architecture], kernel.po_fx_perf_state, PPO_FX_PERF_STATE, wdm/PO_FX_PERF_STATE, wdm/PPO_FX_PERF_STATE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows 10.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	PO_FX_PERF_STATE
+product: Windows
+targetos: Windows
+req.typenames: "*PPO_FX_PERF_STATE, PO_FX_PERF_STATE"
+req.product: Windows 10 or later.
 ---
 
 # _PO_FX_PERF_STATE structure

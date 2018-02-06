@@ -1,42 +1,47 @@
 ---
-UID : NC:ucxendpoint.EVT_UCX_ENDPOINT_RESET
-title : EVT_UCX_ENDPOINT_RESET
-author : windows-driver-content
-description : The client driver's implementation that UCX calls to reset the controller’s programming for an endpoint.
-old-location : buses\evt_ucx_endpoint_reset.htm
-old-project : usbref
-ms.assetid : 927fdd48-416e-4e8f-a29c-c2799952197e
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : buses.evt_ucx_endpoint_reset, EvtUcxEndpointReset callback function [Buses], EvtUcxEndpointReset, EVT_UCX_ENDPOINT_RESET, EVT_UCX_ENDPOINT_RESET, ucxendpoint/EvtUcxEndpointReset, PEVT_UCX_ENDPOINT_RESET callback function pointer [Buses], PEVT_UCX_ENDPOINT_RESET
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ucxendpoint.h
-req.include-header : Ucxclass.h, Ucxendpoint.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : DISPATCH_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : UCX_CONTROLLER_TRANSPORT_CHARACTERISTICS_CHANGE_FLAGS
-req.product : Windows 10 or later.
+UID: NC:ucxendpoint.EVT_UCX_ENDPOINT_RESET
+title: EVT_UCX_ENDPOINT_RESET
+author: windows-driver-content
+description: The client driver's implementation that UCX calls to reset the controller’s programming for an endpoint.
+old-location: buses\evt_ucx_endpoint_reset.htm
+old-project: usbref
+ms.assetid: 927fdd48-416e-4e8f-a29c-c2799952197e
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: buses.evt_ucx_endpoint_reset, EvtUcxEndpointReset callback function [Buses], EvtUcxEndpointReset, EVT_UCX_ENDPOINT_RESET, EVT_UCX_ENDPOINT_RESET, ucxendpoint/EvtUcxEndpointReset, PEVT_UCX_ENDPOINT_RESET callback function pointer [Buses], PEVT_UCX_ENDPOINT_RESET
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ucxendpoint.h
+req.include-header: Ucxclass.h, Ucxendpoint.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: DISPATCH_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	ucxendpoint.h
+apiname:
+-	PEVT_UCX_ENDPOINT_RESET
+product: Windows
+targetos: Windows
+req.typenames: UCX_CONTROLLER_TRANSPORT_CHARACTERISTICS_CHANGE_FLAGS
+req.product: Windows 10 or later.
 ---
 
 

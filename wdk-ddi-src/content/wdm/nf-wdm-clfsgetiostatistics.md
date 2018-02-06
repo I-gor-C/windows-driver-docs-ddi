@@ -1,42 +1,48 @@
 ---
-UID : NF:wdm.ClfsGetIoStatistics
-title : ClfsGetIoStatistics function
-author : windows-driver-content
-description : The ClfsGetIoStatistics routine returns I/O statistics for a specified CLFS log.
-old-location : kernel\clfsgetiostatistics.htm
-old-project : kernel
-ms.assetid : 68c04751-761c-4e32-927d-aad61813cd38
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : Clfs_af9b22c3-0845-4687-9a76-b6872d2b138d.xml, ClfsGetIoStatistics routine [Kernel-Mode Driver Architecture], kernel.clfsgetiostatistics, wdm/ClfsGetIoStatistics, ClfsGetIoStatistics
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Clfs.lib
-req.dll : Clfs.sys
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ClfsGetIoStatistics
+title: ClfsGetIoStatistics function
+author: windows-driver-content
+description: The ClfsGetIoStatistics routine returns I/O statistics for a specified CLFS log.
+old-location: kernel\clfsgetiostatistics.htm
+old-project: kernel
+ms.assetid: 68c04751-761c-4e32-927d-aad61813cd38
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: Clfs_af9b22c3-0845-4687-9a76-b6872d2b138d.xml, ClfsGetIoStatistics routine [Kernel-Mode Driver Architecture], kernel.clfsgetiostatistics, wdm/ClfsGetIoStatistics, ClfsGetIoStatistics
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Clfs.lib
+req.dll: Clfs.sys
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Clfs.sys
+-	Ext-MS-Win-fs-clfs-l1-1-0.dll
+apiname:
+-	ClfsGetIoStatistics
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

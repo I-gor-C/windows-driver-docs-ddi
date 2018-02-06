@@ -1,41 +1,46 @@
 ---
-UID : NF:irb.AtaPortRegistryChannelSubkeyRead
-title : AtaPortRegistryChannelSubkeyRead function
-author : windows-driver-content
-description : The AtaPortRegistryChannelSubKeyRead routine reads the data that is associated with the indicated value name under the registry key HKLM\CurrentControlSet\Services\&lt;service name&gt;\ControllerN\ChannelM, where N is the number of the controller and M is the number of the channel. Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. Instead, we recommend using the Storport driver and Storport miniport driver models.
-old-location : storage\ataportregistrychannelsubkeyread.htm
-old-project : storage
-ms.assetid : 50fc7a8c-64ee-4a0c-9106-a071a7cefc34
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : irb/AtaPortRegistryChannelSubkeyRead, atartns_35b220a8-6f27-43c3-90b7-fc0ef628b270.xml, AtaPortRegistryChannelSubkeyRead routine [Storage Devices], AtaPortRegistryChannelSubkeyRead, storage.ataportregistrychannelsubkeyread
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : irb.h
-req.include-header : Ata.h, Irb.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : IDE_POWER_STATE
+UID: NF:irb.AtaPortRegistryChannelSubkeyRead
+title: AtaPortRegistryChannelSubkeyRead function
+author: windows-driver-content
+description: The AtaPortRegistryChannelSubKeyRead routine reads the data that is associated with the indicated value name under the registry key HKLM\CurrentControlSet\Services\&lt;service name&gt;\ControllerN\ChannelM, where N is the number of the controller and M is the number of the channel. Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. Instead, we recommend using the Storport driver and Storport miniport driver models.
+old-location: storage\ataportregistrychannelsubkeyread.htm
+old-project: storage
+ms.assetid: 50fc7a8c-64ee-4a0c-9106-a071a7cefc34
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: irb/AtaPortRegistryChannelSubkeyRead, atartns_35b220a8-6f27-43c3-90b7-fc0ef628b270.xml, AtaPortRegistryChannelSubkeyRead routine [Storage Devices], AtaPortRegistryChannelSubkeyRead, storage.ataportregistrychannelsubkeyread
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: irb.h
+req.include-header: Ata.h, Irb.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	irb.h
+apiname:
+-	AtaPortRegistryChannelSubkeyRead
+product: Windows
+targetos: Windows
+req.typenames: IDE_POWER_STATE
 ---
 
 

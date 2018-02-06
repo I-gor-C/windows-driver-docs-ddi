@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi.D3DDDICB_PRESENTMULTIPLANEOVERLAY
-title : D3DDDICB_PRESENTMULTIPLANEOVERLAY
-author : windows-driver-content
-description : Describes multiplane overlay allocations that content is copied to and from.
-old-location : display\d3dddicb_presentmultiplaneoverlay.htm
-old-project : display
-ms.assetid : 4161418c-4f56-4daf-bf3d-e76899ccd1b2
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DDDICB_PRESENTMULTIPLANEOVERLAY structure [Display Devices], D3DDDICB_PRESENTMULTIPLANEOVERLAY, d3dumddi/D3DDDICB_PRESENTMULTIPLANEOVERLAY, display.d3dddicb_presentmultiplaneoverlay
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8.1
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDICB_PRESENTMULTIPLANEOVERLAY
+UID: NS:d3dumddi.D3DDDICB_PRESENTMULTIPLANEOVERLAY
+title: D3DDDICB_PRESENTMULTIPLANEOVERLAY
+author: windows-driver-content
+description: Describes multiplane overlay allocations that content is copied to and from.
+old-location: display\d3dddicb_presentmultiplaneoverlay.htm
+old-project: display
+ms.assetid: 4161418c-4f56-4daf-bf3d-e76899ccd1b2
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DDDICB_PRESENTMULTIPLANEOVERLAY structure [Display Devices], D3DDDICB_PRESENTMULTIPLANEOVERLAY, d3dumddi/D3DDDICB_PRESENTMULTIPLANEOVERLAY, display.d3dddicb_presentmultiplaneoverlay
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8.1
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	D3dumddi.h
+apiname:
+-	D3DDDICB_PRESENTMULTIPLANEOVERLAY
+product: Windows
+targetos: Windows
+req.typenames: D3DDDICB_PRESENTMULTIPLANEOVERLAY
 ---
 
 # D3DDDICB_PRESENTMULTIPLANEOVERLAY structure

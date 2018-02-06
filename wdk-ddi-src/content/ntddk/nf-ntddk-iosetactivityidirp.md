@@ -1,41 +1,46 @@
 ---
-UID : NF:ntddk.IoSetActivityIdIrp
-title : IoSetActivityIdIrp function
-author : windows-driver-content
-description : The IoSetActivityIdIrp routine associates an activity ID with an IRP.
-old-location : kernel\iosetactivityidirp.htm
-old-project : kernel
-ms.assetid : 81D3BE8C-D6E0-47E2-959C-3834988E4C61
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : IoSetActivityIdIrp routine [Kernel-Mode Driver Architecture], IoSetActivityIdIrp, kernel.iosetactivityidirp, ntddk/IoSetActivityIdIrp
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with  Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : Any level if a GUID is passed in, otherwise PASSIVE_LEVEL.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.IoSetActivityIdIrp
+title: IoSetActivityIdIrp function
+author: windows-driver-content
+description: The IoSetActivityIdIrp routine associates an activity ID with an IRP.
+old-location: kernel\iosetactivityidirp.htm
+old-project: kernel
+ms.assetid: 81D3BE8C-D6E0-47E2-959C-3834988E4C61
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: IoSetActivityIdIrp routine [Kernel-Mode Driver Architecture], IoSetActivityIdIrp, kernel.iosetactivityidirp, ntddk/IoSetActivityIdIrp
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with  Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: Any level if a GUID is passed in, otherwise PASSIVE_LEVEL.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoSetActivityIdIrp
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

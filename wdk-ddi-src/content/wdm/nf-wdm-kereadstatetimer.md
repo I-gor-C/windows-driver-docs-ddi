@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.KeReadStateTimer
-title : KeReadStateTimer function
-author : windows-driver-content
-description : The KeReadStateTimer routine reads the current state of a timer object.
-old-location : kernel\kereadstatetimer.htm
-old-project : kernel
-ms.assetid : 0f7fc534-4a81-42e0-a3e6-8b91baa28b55
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : KeReadStateTimer, k105_8e101501-f419-40ff-91cd-a8aee0ffcbc8.xml, KeReadStateTimer routine [Kernel-Mode Driver Architecture], wdm/KeReadStateTimer, kernel.kereadstatetimer
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : IrqlKeDispatchLte, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.KeReadStateTimer
+title: KeReadStateTimer function
+author: windows-driver-content
+description: The KeReadStateTimer routine reads the current state of a timer object.
+old-location: kernel\kereadstatetimer.htm
+old-project: kernel
+ms.assetid: 0f7fc534-4a81-42e0-a3e6-8b91baa28b55
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: KeReadStateTimer, k105_8e101501-f419-40ff-91cd-a8aee0ffcbc8.xml, KeReadStateTimer routine [Kernel-Mode Driver Architecture], wdm/KeReadStateTimer, kernel.kereadstatetimer
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: IrqlKeDispatchLte, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	KeReadStateTimer
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

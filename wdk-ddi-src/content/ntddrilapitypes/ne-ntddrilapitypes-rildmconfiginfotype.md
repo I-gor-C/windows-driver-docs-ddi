@@ -1,41 +1,46 @@
 ---
-UID : NE:ntddrilapitypes.RILDMCONFIGINFOTYPE
-title : RILDMCONFIGINFOTYPE
-author : windows-driver-content
-description : This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
-old-location : netvista\rildmconfiginfotype.htm
-old-project : netvista
-ms.assetid : c6dc14a5-59de-42dd-9e45-99f632bf6a57
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : RIL_DMCV_TYPE_DWORD, RIL_DMCV_TYPE_STRING, ntddrilapitypes/RIL_DMCV_TYPE_MAX, ntddrilapitypes/RIL_DMCV_TYPE_DWORD, ntddrilapitypes/RIL_DMCV_TYPE_STRING, RIL_DMCV_TYPE_MAX, RIL_DMCV_TYPE_BOOLEAN, RILDMCONFIGINFOTYPE, ntddrilapitypes/RILDMCONFIGINFOTYPE, netvista.rildmconfiginfotype, ntddrilapitypes/RIL_DMCV_TYPE_BOOLEAN, RILDMCONFIGINFOTYPE enumeration [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : ntddrilapitypes.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RILDMCONFIGINFOTYPE
+UID: NE:ntddrilapitypes.RILDMCONFIGINFOTYPE
+title: RILDMCONFIGINFOTYPE
+author: windows-driver-content
+description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+old-location: netvista\rildmconfiginfotype.htm
+old-project: netvista
+ms.assetid: c6dc14a5-59de-42dd-9e45-99f632bf6a57
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: RIL_DMCV_TYPE_DWORD, RIL_DMCV_TYPE_STRING, ntddrilapitypes/RIL_DMCV_TYPE_MAX, ntddrilapitypes/RIL_DMCV_TYPE_DWORD, ntddrilapitypes/RIL_DMCV_TYPE_STRING, RIL_DMCV_TYPE_MAX, RIL_DMCV_TYPE_BOOLEAN, RILDMCONFIGINFOTYPE, ntddrilapitypes/RILDMCONFIGINFOTYPE, netvista.rildmconfiginfotype, ntddrilapitypes/RIL_DMCV_TYPE_BOOLEAN, RILDMCONFIGINFOTYPE enumeration [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: ntddrilapitypes.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddrilapitypes.h
+apiname:
+-	RILDMCONFIGINFOTYPE
+product: Windows
+targetos: Windows
+req.typenames: RILDMCONFIGINFOTYPE
 ---
 
 # RILDMCONFIGINFOTYPE Enumeration
@@ -54,31 +59,31 @@ typedef enum _RILDMCONFIGINFOTYPE {
 ## Constants
 
 <table>
-
-<tr>
-<td>RIL_DMCV_TYPE_BOOLEAN</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_DMCV_TYPE_DWORD</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_DMCV_TYPE_MAX</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_DMCV_TYPE_NONE</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_DMCV_TYPE_STRING</td>
-<td></td>
-</tr>
+            
+                <tr>
+                    <td>RIL_DMCV_TYPE_BOOLEAN</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_DMCV_TYPE_DWORD</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_DMCV_TYPE_MAX</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_DMCV_TYPE_NONE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_DMCV_TYPE_STRING</td>
+                    <td></td>
+                </tr>
 </table>
 
 

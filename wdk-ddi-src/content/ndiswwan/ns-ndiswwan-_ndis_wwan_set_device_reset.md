@@ -1,41 +1,46 @@
 ---
-UID : NS:ndiswwan._NDIS_WWAN_SET_DEVICE_RESET
-title : "_NDIS_WWAN_SET_DEVICE_RESET"
-author : windows-driver-content
-description : The NDIS_WWAN_SET_DEVICE_RESET structure represents a command to reset a modem device. It is sent as part of an OID_WWAN_DEVICE_RESET set request.
-old-location : netvista\ndis_wwan_set_device_reset.htm
-old-project : netvista
-ms.assetid : 73894308-CFE0-49EF-BB09-E104CEE9C746
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : PNDIS_WWAN_SET_DEVICE_RESET, NDIS_WWAN_SET_DEVICE_RESET, PNDIS_WWAN_SET_DEVICE_RESET structure pointer [Network Drivers Starting with Windows Vista], netvista.ndis_wwan_set_device_reset, *PNDIS_WWAN_SET_DEVICE_RESET, ndiswwan/NDIS_WWAN_SET_DEVICE_RESET, ndiswwan/PNDIS_WWAN_SET_DEVICE_RESET, _NDIS_WWAN_SET_DEVICE_RESET, NDIS_WWAN_SET_DEVICE_RESET structure [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndiswwan.h
-req.include-header : Ndiswwan.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10, version 1709
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_WWAN_SET_DEVICE_RESET, *PNDIS_WWAN_SET_DEVICE_RESET
+UID: NS:ndiswwan._NDIS_WWAN_SET_DEVICE_RESET
+title: "_NDIS_WWAN_SET_DEVICE_RESET"
+author: windows-driver-content
+description: The NDIS_WWAN_SET_DEVICE_RESET structure represents a command to reset a modem device. It is sent as part of an OID_WWAN_DEVICE_RESET set request.
+old-location: netvista\ndis_wwan_set_device_reset.htm
+old-project: netvista
+ms.assetid: 73894308-CFE0-49EF-BB09-E104CEE9C746
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: PNDIS_WWAN_SET_DEVICE_RESET, NDIS_WWAN_SET_DEVICE_RESET, PNDIS_WWAN_SET_DEVICE_RESET structure pointer [Network Drivers Starting with Windows Vista], netvista.ndis_wwan_set_device_reset, *PNDIS_WWAN_SET_DEVICE_RESET, ndiswwan/NDIS_WWAN_SET_DEVICE_RESET, ndiswwan/PNDIS_WWAN_SET_DEVICE_RESET, _NDIS_WWAN_SET_DEVICE_RESET, NDIS_WWAN_SET_DEVICE_RESET structure [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndiswwan.h
+req.include-header: Ndiswwan.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10, version 1709
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndiswwan.h
+apiname:
+-	NDIS_WWAN_SET_DEVICE_RESET
+product: Windows
+targetos: Windows
+req.typenames: NDIS_WWAN_SET_DEVICE_RESET, *PNDIS_WWAN_SET_DEVICE_RESET
 ---
 
 # _NDIS_WWAN_SET_DEVICE_RESET structure

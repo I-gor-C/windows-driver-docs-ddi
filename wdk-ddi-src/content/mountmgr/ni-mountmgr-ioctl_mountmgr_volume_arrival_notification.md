@@ -1,41 +1,46 @@
 ---
-UID : NI:mountmgr.IOCTL_MOUNTMGR_VOLUME_ARRIVAL_NOTIFICATION
-title : IOCTL_MOUNTMGR_VOLUME_ARRIVAL_NOTIFICATION
-author : windows-driver-content
-description : This IOCTL allows a client to simulate a Plug and Play device interface arrival notification with the given volume name.
-old-location : storage\ioctl_mountmgr_volume_arrival_notification.htm
-old-project : storage
-ms.assetid : 0c27c49e-a06c-4781-9d7f-50f15f9715ac
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_mountmgr_volume_arrival_notification, IOCTL_MOUNTMGR_VOLUME_ARRIVAL_NOTIFICATION control code [Storage Devices], IOCTL_MOUNTMGR_VOLUME_ARRIVAL_NOTIFICATION, mountmgr/IOCTL_MOUNTMGR_VOLUME_ARRIVAL_NOTIFICATION, k307_7a15b0f1-9be7-476f-936c-225e39ef53c0.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : mountmgr.h
-req.include-header : Mountmgr.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PMOUNTDEV_UNIQUE_ID, MOUNTDEV_UNIQUE_ID"
+UID: NI:mountmgr.IOCTL_MOUNTMGR_VOLUME_ARRIVAL_NOTIFICATION
+title: IOCTL_MOUNTMGR_VOLUME_ARRIVAL_NOTIFICATION
+author: windows-driver-content
+description: This IOCTL allows a client to simulate a Plug and Play device interface arrival notification with the given volume name.
+old-location: storage\ioctl_mountmgr_volume_arrival_notification.htm
+old-project: storage
+ms.assetid: 0c27c49e-a06c-4781-9d7f-50f15f9715ac
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_mountmgr_volume_arrival_notification, IOCTL_MOUNTMGR_VOLUME_ARRIVAL_NOTIFICATION control code [Storage Devices], IOCTL_MOUNTMGR_VOLUME_ARRIVAL_NOTIFICATION, mountmgr/IOCTL_MOUNTMGR_VOLUME_ARRIVAL_NOTIFICATION, k307_7a15b0f1-9be7-476f-936c-225e39ef53c0.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: mountmgr.h
+req.include-header: Mountmgr.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Mountmgr.h
+apiname:
+-	IOCTL_MOUNTMGR_VOLUME_ARRIVAL_NOTIFICATION
+product: Windows
+targetos: Windows
+req.typenames: "*PMOUNTDEV_UNIQUE_ID, MOUNTDEV_UNIQUE_ID"
 ---
 
 # IOCTL_MOUNTMGR_VOLUME_ARRIVAL_NOTIFICATION IOCTL

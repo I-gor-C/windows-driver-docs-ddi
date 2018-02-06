@@ -1,41 +1,46 @@
 ---
-UID : NF:ntddk.WheaGetErrPacketFromErrRecord
-title : WheaGetErrPacketFromErrRecord function
-author : windows-driver-content
-description : The WheaGetErrPacketFromErrRecord function returns a pointer to the hardware error packet that is contained within a WHEA error record. The hardware error packet is formatted as a WHEA_ERROR_PACKET structure.
-old-location : whea\wheageterrpacketfromerrrecord.htm
-old-project : whea
-ms.assetid : 8b4a835f-b1ec-4308-8e0d-a13c0f421dc8
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : WheaGetErrPacketFromErrRecord, whearef2_c7c202ca-0ed0-4a12-a3f0-64723e6483c6.xml, ntddk/WheaGetErrPacketFromErrRecord, whea.wheageterrpacketfromerrrecord, WheaGetErrPacketFromErrRecord function [WHEA Drivers and Applications]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.WheaGetErrPacketFromErrRecord
+title: WheaGetErrPacketFromErrRecord function
+author: windows-driver-content
+description: The WheaGetErrPacketFromErrRecord function returns a pointer to the hardware error packet that is contained within a WHEA error record. The hardware error packet is formatted as a WHEA_ERROR_PACKET structure.
+old-location: whea\wheageterrpacketfromerrrecord.htm
+old-project: whea
+ms.assetid: 8b4a835f-b1ec-4308-8e0d-a13c0f421dc8
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: WheaGetErrPacketFromErrRecord, whearef2_c7c202ca-0ed0-4a12-a3f0-64723e6483c6.xml, ntddk/WheaGetErrPacketFromErrRecord, whea.wheageterrpacketfromerrrecord, WheaGetErrPacketFromErrRecord function [WHEA Drivers and Applications]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddk.h
+apiname:
+-	WheaGetErrPacketFromErrRecord
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

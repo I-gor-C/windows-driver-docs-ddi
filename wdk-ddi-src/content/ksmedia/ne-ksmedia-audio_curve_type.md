@@ -1,41 +1,46 @@
 ---
-UID : NE:ksmedia.AUDIO_CURVE_TYPE
-title : AUDIO_CURVE_TYPE
-author : windows-driver-content
-description : The AUDIO_CURVE_TYPE enumeration defines constants that specify a curve algorithm to be applied to set a volume level.
-old-location : audio\audio_curve_type.htm
-old-project : audio
-ms.assetid : E3CE3385-8744-4E3F-A5EF-41AC4E3E4375
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : AUDIO_CURVE_TYPE_WINDOWS_FADE, audio.audio_curve_type, AUDIO_CURVE_TYPE_NONE, ksmedia/AUDIO_CURVE_TYPE_NONE, AUDIO_CURVE_TYPE enumeration [Audio Devices], AUDIO_CURVE_TYPE, ksmedia/AUDIO_CURVE_TYPE, ksmedia/AUDIO_CURVE_TYPE_WINDOWS_FADE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : ksmedia.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : AUDIO_CURVE_TYPE
+UID: NE:ksmedia.AUDIO_CURVE_TYPE
+title: AUDIO_CURVE_TYPE
+author: windows-driver-content
+description: The AUDIO_CURVE_TYPE enumeration defines constants that specify a curve algorithm to be applied to set a volume level.
+old-location: audio\audio_curve_type.htm
+old-project: audio
+ms.assetid: E3CE3385-8744-4E3F-A5EF-41AC4E3E4375
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: AUDIO_CURVE_TYPE_WINDOWS_FADE, audio.audio_curve_type, AUDIO_CURVE_TYPE_NONE, ksmedia/AUDIO_CURVE_TYPE_NONE, AUDIO_CURVE_TYPE enumeration [Audio Devices], AUDIO_CURVE_TYPE, ksmedia/AUDIO_CURVE_TYPE, ksmedia/AUDIO_CURVE_TYPE_WINDOWS_FADE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: ksmedia.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ksmedia.h
+apiname:
+-	AUDIO_CURVE_TYPE
+product: Windows
+targetos: Windows
+req.typenames: AUDIO_CURVE_TYPE
 ---
 
 # AUDIO_CURVE_TYPE Enumeration
@@ -52,21 +57,21 @@ typedef enum _AUDIO_CURVE_TYPE {
 ## Constants
 
 <table>
-
-<tr>
-<td>AUDIO_CURVE_TYPE_NONE</td>
-<td>Specifies that no curve algorithm will be applied.  When this curve is specified, the duration of the curve specified must be equal to 0.</td>
-</tr>
-
-<tr>
-<td>AUDIO_CURVE_TYPE_WINDOWS_FADE</td>
-<td>Specifies that the algorithm that is applied to the volume setting must follow the curve shown in the diagram in the <b>Remarks</b> section.</td>
-</tr>
+            
+                <tr>
+                    <td>AUDIO_CURVE_TYPE_NONE</td>
+                    <td>Specifies that no curve algorithm will be applied.  When this curve is specified, the duration of the curve specified must be equal to 0.</td>
+                </tr>
+            
+                <tr>
+                    <td>AUDIO_CURVE_TYPE_WINDOWS_FADE</td>
+                    <td>Specifies that the algorithm that is applied to the volume setting must follow the curve shown in the diagram in the <b>Remarks</b> section.</td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-The following snippet of pseudocode shows the logic for the algorithm that is applied to the volume setting to reach the target volume level.<pre class="syntax" xml:space="preserve"><code>// POWER IN AMPLITUDE: 1.75
+        The following snippet of pseudocode shows the logic for the algorithm that is applied to the volume setting to reach the target volume level.<pre class="syntax" xml:space="preserve"><code>// POWER IN AMPLITUDE: 1.75
 
 // Fade In:
 // Curve begins at 0 when nFrame = 0
@@ -108,9 +113,9 @@ And the following diagram shows a graphical representation of the preceding pseu
 | **Windows version** | Windows 8 Windows 8 |
 | **Header** | ksmedia.h |
 
-## See Also
+    ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh831855">KSPROPERTY_AUDIOENGINE_VOLUMELEVEL</a>
+        <a href="https://msdn.microsoft.com/library/windows/hardware/hh831855">KSPROPERTY_AUDIOENGINE_VOLUMELEVEL</a>
 
 <a href="..\ksmedia\ns-ksmedia-_tagksaudioengine_volumelevel.md">KSAUDIOENGINE_VOLUMELEVEL</a>
 

@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfdevice.WdfDeviceInitFree
-title : WdfDeviceInitFree function
-author : windows-driver-content
-description : The WdfDeviceInitFree method deallocates a WDFDEVICE_INIT structure.
-old-location : wdf\wdfdeviceinitfree.htm
-old-project : wdf
-ms.assetid : 61540bd2-8496-4972-854c-968b53c90788
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : DFDeviceObjectGeneralRef_c2bdf168-0e3f-40c9-9e88-77faf7241bcb.xml, wdfdevice/WdfDeviceInitFree, kmdf.wdfdeviceinitfree, WdfDeviceInitFree method, WdfDeviceInitFree, PFN_WDFDEVICEINITFREE, wdf.wdfdeviceinitfree
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfdevice.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : DoubleDeviceInitFree, DriverCreate, InitFreeDeviceCallback, InitFreeDeviceCreate, InitFreeDeviceCreateType2, InitFreeDeviceCreateType4, InitFreeNull, KmdfIrql, KmdfIrql2, PdoInitFreeDeviceCallback, PdoInitFreeDeviceCreate, PdoInitFreeDeviceCreateType2, PdoInitFreeDeviceCreateType4
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_STATE_NOTIFICATION_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfdevice.WdfDeviceInitFree
+title: WdfDeviceInitFree function
+author: windows-driver-content
+description: The WdfDeviceInitFree method deallocates a WDFDEVICE_INIT structure.
+old-location: wdf\wdfdeviceinitfree.htm
+old-project: wdf
+ms.assetid: 61540bd2-8496-4972-854c-968b53c90788
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: DFDeviceObjectGeneralRef_c2bdf168-0e3f-40c9-9e88-77faf7241bcb.xml, wdfdevice/WdfDeviceInitFree, kmdf.wdfdeviceinitfree, WdfDeviceInitFree method, WdfDeviceInitFree, PFN_WDFDEVICEINITFREE, wdf.wdfdeviceinitfree
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfdevice.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: DoubleDeviceInitFree, DriverCreate, InitFreeDeviceCallback, InitFreeDeviceCreate, InitFreeDeviceCreateType2, InitFreeDeviceCreateType4, InitFreeNull, KmdfIrql, KmdfIrql2, PdoInitFreeDeviceCallback, PdoInitFreeDeviceCreate, PdoInitFreeDeviceCreateType2, PdoInitFreeDeviceCreateType4
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfDeviceInitFree
+product: Windows
+targetos: Windows
+req.typenames: WDF_STATE_NOTIFICATION_TYPE
+req.product: Windows 10 or later.
 ---
 
 

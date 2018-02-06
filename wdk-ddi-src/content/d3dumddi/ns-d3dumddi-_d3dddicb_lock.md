@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._D3DDDICB_LOCK
-title : "_D3DDDICB_LOCK"
-author : windows-driver-content
-description : The D3DDDICB_LOCK structure describes parameters for locking an allocation.
-old-location : display\d3dddicb_lock.htm
-old-project : display
-ms.assetid : e8d563fe-937a-48cb-9c7b-f282d12a9fcf
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.d3dddicb_lock, D3DDDICB_LOCK, d3dumddi/D3DDDICB_LOCK, _D3DDDICB_LOCK, D3DDDICB_LOCK structure [Display Devices], D3D_param_Structs_84ac7e9c-e228-4ace-9e1b-74af8c52af85.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDICB_LOCK
+UID: NS:d3dumddi._D3DDDICB_LOCK
+title: "_D3DDDICB_LOCK"
+author: windows-driver-content
+description: The D3DDDICB_LOCK structure describes parameters for locking an allocation.
+old-location: display\d3dddicb_lock.htm
+old-project: display
+ms.assetid: e8d563fe-937a-48cb-9c7b-f282d12a9fcf
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.d3dddicb_lock, D3DDDICB_LOCK, d3dumddi/D3DDDICB_LOCK, _D3DDDICB_LOCK, D3DDDICB_LOCK structure [Display Devices], D3D_param_Structs_84ac7e9c-e228-4ace-9e1b-74af8c52af85.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	D3DDDICB_LOCK
+product: Windows
+targetos: Windows
+req.typenames: D3DDDICB_LOCK
 ---
 
 # _D3DDDICB_LOCK structure

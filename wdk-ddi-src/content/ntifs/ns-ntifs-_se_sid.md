@@ -1,41 +1,46 @@
 ---
-UID : NS:ntifs._SE_SID
-title : "_SE_SID"
-author : windows-driver-content
-description : The SE_SID union holds the maximum-sized valid Security Identifier (SID). The structure occupies 68-bytes and is suitable for stack allocation.
-old-location : ifsk\se_sid.htm
-old-project : ifsk
-ms.assetid : 6950B71D-B396-494E-A23C-EE37B439FD05
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : SE_SID union [Installable File System Drivers], *PSE_SID, _SE_SID, ntifs/SE_SID, PSE_SID, SE_SID, ntifs/PSE_SID, PSE_SID union pointer [Installable File System Drivers], ifsk.se_sid
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntifs.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SE_SID, *PSE_SID
+UID: NS:ntifs._SE_SID
+title: "_SE_SID"
+author: windows-driver-content
+description: The SE_SID union holds the maximum-sized valid Security Identifier (SID). The structure occupies 68-bytes and is suitable for stack allocation.
+old-location: ifsk\se_sid.htm
+old-project: ifsk
+ms.assetid: 6950B71D-B396-494E-A23C-EE37B439FD05
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: SE_SID union [Installable File System Drivers], *PSE_SID, _SE_SID, ntifs/SE_SID, PSE_SID, SE_SID, ntifs/PSE_SID, PSE_SID union pointer [Installable File System Drivers], ifsk.se_sid
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntifs.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntifs.h
+apiname:
+-	SE_SID
+product: Windows
+targetos: Windows
+req.typenames: SE_SID, *PSE_SID
 ---
 
 # _SE_SID structure

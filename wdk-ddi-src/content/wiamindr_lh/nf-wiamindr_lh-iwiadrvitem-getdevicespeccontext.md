@@ -1,42 +1,47 @@
 ---
-UID : NF:wiamindr_lh.IWiaDrvItem.GetDeviceSpecContext
-title : IWiaDrvItem::GetDeviceSpecContext method
-author : windows-driver-content
-description : The IWiaDrvItem::GetDeviceSpecContext method gets a device-specific context.
-old-location : image\iwiadrvitem_getdevicespeccontext.htm
-old-project : image
-ms.assetid : 04f8d7ef-43c6-43b7-afa1-06ae379a8e26
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : DrvItem_c9edf09c-212c-456c-9eb2-c6c87adf59f3.xml, wiamindr_lh/IWiaDrvItem::GetDeviceSpecContext, IWiaDrvItem interface [Imaging Devices], GetDeviceSpecContext method, IWiaDrvItem, GetDeviceSpecContext method [Imaging Devices], IWiaDrvItem interface, image.iwiadrvitem_getdevicespeccontext, GetDeviceSpecContext, IWiaDrvItem::GetDeviceSpecContext, GetDeviceSpecContext method [Imaging Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wiamindr_lh.h
-req.include-header : Wiamindr.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Me and in Windows XP and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wiamindr_lh.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SCANWINDOW, *PSCANWINDOW
-req.product : Windows 10 or later.
+UID: NF:wiamindr_lh.IWiaDrvItem.GetDeviceSpecContext
+title: IWiaDrvItem::GetDeviceSpecContext method
+author: windows-driver-content
+description: The IWiaDrvItem::GetDeviceSpecContext method gets a device-specific context.
+old-location: image\iwiadrvitem_getdevicespeccontext.htm
+old-project: image
+ms.assetid: 04f8d7ef-43c6-43b7-afa1-06ae379a8e26
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: DrvItem_c9edf09c-212c-456c-9eb2-c6c87adf59f3.xml, wiamindr_lh/IWiaDrvItem::GetDeviceSpecContext, IWiaDrvItem interface [Imaging Devices], GetDeviceSpecContext method, IWiaDrvItem, GetDeviceSpecContext method [Imaging Devices], IWiaDrvItem interface, image.iwiadrvitem_getdevicespeccontext, GetDeviceSpecContext, IWiaDrvItem::GetDeviceSpecContext, GetDeviceSpecContext method [Imaging Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wiamindr_lh.h
+req.include-header: Wiamindr.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Me and in Windows XP and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wiamindr_lh.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	wiamindr_lh.h
+apiname:
+-	IWiaDrvItem.GetDeviceSpecContext
+product: Windows
+targetos: Windows
+req.typenames: SCANWINDOW, *PSCANWINDOW
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NN:portcls.IMiniportAudioEngineNode
-title : IMiniportAudioEngineNode
-author : windows-driver-content
-description : This interface allows a miniport driver to use KS properties that access the audio engine via a KS filter handle.
-old-location : audio\iminiportaudioenginenode.htm
-old-project : audio
-ms.assetid : 58170D54-869A-49CC-865A-AB64BFB41A4B
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : audio.iminiportaudioenginenode, IMiniportAudioEngineNode interface [Audio Devices], IMiniportAudioEngineNode interface [Audio Devices], described, IMiniportAudioEngineNode, portcls/IMiniportAudioEngineNode
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : portcls.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Portcls.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NN:portcls.IMiniportAudioEngineNode
+title: IMiniportAudioEngineNode
+author: windows-driver-content
+description: This interface allows a miniport driver to use KS properties that access the audio engine via a KS filter handle.
+old-location: audio\iminiportaudioenginenode.htm
+old-project: audio
+ms.assetid: 58170D54-869A-49CC-865A-AB64BFB41A4B
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: audio.iminiportaudioenginenode, IMiniportAudioEngineNode interface [Audio Devices], IMiniportAudioEngineNode interface [Audio Devices], described, IMiniportAudioEngineNode, portcls/IMiniportAudioEngineNode
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: portcls.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Portcls.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Portcls.h
+apiname:
+-	IMiniportAudioEngineNode
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 # IMiniportAudioEngineNode interface

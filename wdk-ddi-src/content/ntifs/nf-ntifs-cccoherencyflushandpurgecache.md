@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.CcCoherencyFlushAndPurgeCache
-title : CcCoherencyFlushAndPurgeCache function
-author : windows-driver-content
-description : The CcCoherencyFlushAndPurgeCache routine flushes and/or purges the cache to ensure cache coherency.
-old-location : ifsk\cccoherencyflushandpurgecache.htm
-old-project : ifsk
-ms.assetid : 61dfdd09-1e2b-4771-a2c2-62454adc7832
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : CcCoherencyFlushAndPurgeCache, ccref_79641311-568b-472c-9950-2e46472affcf.xml, ntifs/CcCoherencyFlushAndPurgeCache, ifsk.cccoherencyflushandpurgecache, CcCoherencyFlushAndPurgeCache routine [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h, FltKernel.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 7 and later
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.CcCoherencyFlushAndPurgeCache
+title: CcCoherencyFlushAndPurgeCache function
+author: windows-driver-content
+description: The CcCoherencyFlushAndPurgeCache routine flushes and/or purges the cache to ensure cache coherency.
+old-location: ifsk\cccoherencyflushandpurgecache.htm
+old-project: ifsk
+ms.assetid: 61dfdd09-1e2b-4771-a2c2-62454adc7832
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: CcCoherencyFlushAndPurgeCache, ccref_79641311-568b-472c-9950-2e46472affcf.xml, ntifs/CcCoherencyFlushAndPurgeCache, ifsk.cccoherencyflushandpurgecache, CcCoherencyFlushAndPurgeCache routine [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h, FltKernel.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 7 and later
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	CcCoherencyFlushAndPurgeCache
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

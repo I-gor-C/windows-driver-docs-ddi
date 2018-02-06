@@ -1,42 +1,48 @@
 ---
-UID : NF:winsplp.ControlPrintProcessor
-title : ControlPrintProcessor function
-author : windows-driver-content
-description : A print processor's ControlPrintProcessor function allows the spooler to control a print job.
-old-location : print\controlprintprocessor.htm
-old-project : print
-ms.assetid : a0a19747-ab39-4606-a49b-78e5e056da32
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : spoolfnc_203120f1-7819-448e-9813-3aa2b24bfd7f.xml, print.controlprintprocessor, ControlPrintProcessor, winsplp/ControlPrintProcessor, ControlPrintProcessor function [Print Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : winsplp.h
-req.include-header : Winsplp.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Nwprint.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NOTIFICATION_CONFIG_FLAGS
-req.product : Windows 10 or later.
+UID: NF:winsplp.ControlPrintProcessor
+title: ControlPrintProcessor function
+author: windows-driver-content
+description: A print processor's ControlPrintProcessor function allows the spooler to control a print job.
+old-location: print\controlprintprocessor.htm
+old-project: print
+ms.assetid: a0a19747-ab39-4606-a49b-78e5e056da32
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: spoolfnc_203120f1-7819-448e-9813-3aa2b24bfd7f.xml, print.controlprintprocessor, ControlPrintProcessor, winsplp/ControlPrintProcessor, ControlPrintProcessor function [Print Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: winsplp.h
+req.include-header: Winsplp.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Nwprint.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Nwprint.lib
+-	Nwprint.dll
+apiname:
+-	ControlPrintProcessor
+product: Windows
+targetos: Windows
+req.typenames: NOTIFICATION_CONFIG_FLAGS
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:ndis._NDIS_NBL_MEDIA_SPECIFIC_INFORMATION_EX
-title : "_NDIS_NBL_MEDIA_SPECIFIC_INFORMATION_EX"
-author : windows-driver-content
-description : The NDIS_NBL_MEDIA_SPECIFIC_INFORMATION_EX structure defines media-specific information that is associated with a NET_BUFFER_LIST structure.
-old-location : netvista\ndis_nbl_media_specific_information_ex.htm
-old-project : netvista
-ms.assetid : f2c74fc3-45e2-4541-81a1-eb022e24cede
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : ndis/NDIS_NBL_MEDIA_SPECIFIC_INFORMATION_EX, PNDIS_NBL_MEDIA_SPECIFIC_INFORMATION_EX, *PNDIS_NBL_MEDIA_SPECIFIC_INFORMATION_EX, PNDIS_NBL_MEDIA_SPECIFIC_INFORMATION_EX structure pointer [Network Drivers Starting with Windows Vista], NDIS_NBL_MEDIA_SPECIFIC_INFORMATION_EX, ndis_netbuf_macros_media_specific_587542fc-f693-4a93-b343-0a9e86e6659e.xml, NDIS_NBL_MEDIA_SPECIFIC_INFORMATION_EX structure [Network Drivers Starting with Windows Vista], netvista.ndis_nbl_media_specific_information_ex, _NDIS_NBL_MEDIA_SPECIFIC_INFORMATION_EX, ndis/PNDIS_NBL_MEDIA_SPECIFIC_INFORMATION_EX
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.20 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : See Remarks section
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PNDIS_NBL_MEDIA_SPECIFIC_INFORMATION_EX, NDIS_NBL_MEDIA_SPECIFIC_INFORMATION_EX"
+UID: NS:ndis._NDIS_NBL_MEDIA_SPECIFIC_INFORMATION_EX
+title: "_NDIS_NBL_MEDIA_SPECIFIC_INFORMATION_EX"
+author: windows-driver-content
+description: The NDIS_NBL_MEDIA_SPECIFIC_INFORMATION_EX structure defines media-specific information that is associated with a NET_BUFFER_LIST structure.
+old-location: netvista\ndis_nbl_media_specific_information_ex.htm
+old-project: netvista
+ms.assetid: f2c74fc3-45e2-4541-81a1-eb022e24cede
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: ndis/NDIS_NBL_MEDIA_SPECIFIC_INFORMATION_EX, PNDIS_NBL_MEDIA_SPECIFIC_INFORMATION_EX, *PNDIS_NBL_MEDIA_SPECIFIC_INFORMATION_EX, PNDIS_NBL_MEDIA_SPECIFIC_INFORMATION_EX structure pointer [Network Drivers Starting with Windows Vista], NDIS_NBL_MEDIA_SPECIFIC_INFORMATION_EX, ndis_netbuf_macros_media_specific_587542fc-f693-4a93-b343-0a9e86e6659e.xml, NDIS_NBL_MEDIA_SPECIFIC_INFORMATION_EX structure [Network Drivers Starting with Windows Vista], netvista.ndis_nbl_media_specific_information_ex, _NDIS_NBL_MEDIA_SPECIFIC_INFORMATION_EX, ndis/PNDIS_NBL_MEDIA_SPECIFIC_INFORMATION_EX
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.20 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: See Remarks section
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndis.h
+apiname:
+-	NDIS_NBL_MEDIA_SPECIFIC_INFORMATION_EX
+product: Windows
+targetos: Windows
+req.typenames: "*PNDIS_NBL_MEDIA_SPECIFIC_INFORMATION_EX, NDIS_NBL_MEDIA_SPECIFIC_INFORMATION_EX"
 ---
 
 # _NDIS_NBL_MEDIA_SPECIFIC_INFORMATION_EX structure

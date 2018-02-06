@@ -1,42 +1,47 @@
 ---
-UID : NC:wmilib.WMI_SET_DATABLOCK_CALLBACK
-title : WMI_SET_DATABLOCK_CALLBACK
-author : windows-driver-content
-description : The DpWmiSetDataBlock routine changes all data items in a single instance of a data block. This routine is optional.
-old-location : kernel\dpwmisetdatablock.htm
-old-project : kernel
-ms.assetid : 429c84e4-16da-452a-b26d-a71546299f0b
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.dpwmisetdatablock, DpWmiSetDataBlock, DpWmiSetDataBlock callback function [Kernel-Mode Driver Architecture], DpWmiSetDataBlock, WMI_SET_DATABLOCK_CALLBACK, WMI_SET_DATABLOCK_CALLBACK, wmilib/DpWmiSetDataBlock, k903_bb4a483a-1ffc-4664-930b-13cc3579086e.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wmilib.h
-req.include-header : Wmilib.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Called at PASSIVE_LEVEL.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WMI_CHANGER_PROBLEM_DEVICE_ERROR, *PWMI_CHANGER_PROBLEM_DEVICE_ERROR
-req.product : Windows 10 or later.
+UID: NC:wmilib.WMI_SET_DATABLOCK_CALLBACK
+title: WMI_SET_DATABLOCK_CALLBACK
+author: windows-driver-content
+description: The DpWmiSetDataBlock routine changes all data items in a single instance of a data block. This routine is optional.
+old-location: kernel\dpwmisetdatablock.htm
+old-project: kernel
+ms.assetid: 429c84e4-16da-452a-b26d-a71546299f0b
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.dpwmisetdatablock, DpWmiSetDataBlock, DpWmiSetDataBlock callback function [Kernel-Mode Driver Architecture], DpWmiSetDataBlock, WMI_SET_DATABLOCK_CALLBACK, WMI_SET_DATABLOCK_CALLBACK, wmilib/DpWmiSetDataBlock, k903_bb4a483a-1ffc-4664-930b-13cc3579086e.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wmilib.h
+req.include-header: Wmilib.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Called at PASSIVE_LEVEL.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Wmilib.h
+apiname:
+-	DpWmiSetDataBlock
+product: Windows
+targetos: Windows
+req.typenames: WMI_CHANGER_PROBLEM_DEVICE_ERROR, *PWMI_CHANGER_PROBLEM_DEVICE_ERROR
+req.product: Windows 10 or later.
 ---
 
 

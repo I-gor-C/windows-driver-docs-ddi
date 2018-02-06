@@ -1,42 +1,47 @@
 ---
-UID : NF:wdfio.WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY_PAGINGIO_INIT
-title : WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY_PAGINGIO_INIT function
-author : windows-driver-content
-description : The WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY_PAGINGIO_INIT function initializes a driver's WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY structure.
-old-location : wdf\wdf_io_queue_forward_progress_policy_pagingio_init.htm
-old-project : wdf
-ms.assetid : e8839d4d-b7cb-4f18-b122-42c87e779d7f
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdfio/WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY_PAGINGIO_INIT, WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY_PAGINGIO_INIT, wdf.wdf_io_queue_forward_progress_policy_pagingio_init, kmdf.wdf_io_queue_forward_progress_policy_pagingio_init, DFQueueObjectRef_57ac1d7b-3417-4757-bd62-21bc8b13c782.xml, WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY_PAGINGIO_INIT function
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfio.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.9
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_IO_QUEUE_STATE
-req.product : Windows 10 or later.
+UID: NF:wdfio.WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY_PAGINGIO_INIT
+title: WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY_PAGINGIO_INIT function
+author: windows-driver-content
+description: The WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY_PAGINGIO_INIT function initializes a driver's WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY structure.
+old-location: wdf\wdf_io_queue_forward_progress_policy_pagingio_init.htm
+old-project: wdf
+ms.assetid: e8839d4d-b7cb-4f18-b122-42c87e779d7f
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdfio/WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY_PAGINGIO_INIT, WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY_PAGINGIO_INIT, wdf.wdf_io_queue_forward_progress_policy_pagingio_init, kmdf.wdf_io_queue_forward_progress_policy_pagingio_init, DFQueueObjectRef_57ac1d7b-3417-4757-bd62-21bc8b13c782.xml, WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY_PAGINGIO_INIT function
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfio.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.9
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfio.h
+apiname:
+-	WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY_PAGINGIO_INIT
+product: Windows
+targetos: Windows
+req.typenames: WDF_IO_QUEUE_STATE
+req.product: Windows 10 or later.
 ---
 
 

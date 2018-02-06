@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.KSPROPERTY_VIDEOCONTROL_MODE_S
-title : KSPROPERTY_VIDEOCONTROL_MODE_S
-author : windows-driver-content
-description : The KSPROPERTY_VIDEOCONTROL_MODE_S structure describes video-control modes for a stream, such as image flipping or event triggering abilities.
-old-location : stream\ksproperty_videocontrol_mode_s.htm
-old-project : stream
-ms.assetid : ba6ac5ef-4153-479f-a1a9-b71d1d80786c
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : "*PKSPROPERTY_VIDEOCONTROL_MODE_S, ksmedia/KSPROPERTY_VIDEOCONTROL_MODE_S, ksmedia/PKSPROPERTY_VIDEOCONTROL_MODE_S, PKSPROPERTY_VIDEOCONTROL_MODE_S, stream.ksproperty_videocontrol_mode_s, KSPROPERTY_VIDEOCONTROL_MODE_S structure [Streaming Media Devices], PKSPROPERTY_VIDEOCONTROL_MODE_S structure pointer [Streaming Media Devices], vidcapstruct_35950052-3872-4155-842f-b8615aa68234.xml, KSPROPERTY_VIDEOCONTROL_MODE_S"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKSPROPERTY_VIDEOCONTROL_MODE_S, KSPROPERTY_VIDEOCONTROL_MODE_S"
+UID: NS:ksmedia.KSPROPERTY_VIDEOCONTROL_MODE_S
+title: KSPROPERTY_VIDEOCONTROL_MODE_S
+author: windows-driver-content
+description: The KSPROPERTY_VIDEOCONTROL_MODE_S structure describes video-control modes for a stream, such as image flipping or event triggering abilities.
+old-location: stream\ksproperty_videocontrol_mode_s.htm
+old-project: stream
+ms.assetid: ba6ac5ef-4153-479f-a1a9-b71d1d80786c
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: "*PKSPROPERTY_VIDEOCONTROL_MODE_S, ksmedia/KSPROPERTY_VIDEOCONTROL_MODE_S, ksmedia/PKSPROPERTY_VIDEOCONTROL_MODE_S, PKSPROPERTY_VIDEOCONTROL_MODE_S, stream.ksproperty_videocontrol_mode_s, KSPROPERTY_VIDEOCONTROL_MODE_S structure [Streaming Media Devices], PKSPROPERTY_VIDEOCONTROL_MODE_S structure pointer [Streaming Media Devices], vidcapstruct_35950052-3872-4155-842f-b8615aa68234.xml, KSPROPERTY_VIDEOCONTROL_MODE_S"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	KSPROPERTY_VIDEOCONTROL_MODE_S
+product: Windows
+targetos: Windows
+req.typenames: "*PKSPROPERTY_VIDEOCONTROL_MODE_S, KSPROPERTY_VIDEOCONTROL_MODE_S"
 ---
 
 # KSPROPERTY_VIDEOCONTROL_MODE_S structure

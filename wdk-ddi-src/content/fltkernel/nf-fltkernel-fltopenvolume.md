@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltOpenVolume
-title : FltOpenVolume function
-author : windows-driver-content
-description : The FltOpenVolume routine returns a handle and a file object pointer for the file system volume that a given minifilter driver instance is attached to.
-old-location : ifsk\fltopenvolume.htm
-old-project : ifsk
-ms.assetid : 99cfa1eb-3d0f-4e27-9884-f5789ee328c3
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltApiRef_e_to_o_fa9d628c-94e6-46f5-9f8f-9923c554a15f.xml, FltOpenVolume routine [Installable File System Drivers], ifsk.fltopenvolume, fltkernel/FltOpenVolume, FltOpenVolume
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Microsoft Windows 2000 Update Rollup 1 for SP4, Windows XP SP3, Windows Server 2003 SP1, and later versions of the Windows operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltOpenVolume
+title: FltOpenVolume function
+author: windows-driver-content
+description: The FltOpenVolume routine returns a handle and a file object pointer for the file system volume that a given minifilter driver instance is attached to.
+old-location: ifsk\fltopenvolume.htm
+old-project: ifsk
+ms.assetid: 99cfa1eb-3d0f-4e27-9884-f5789ee328c3
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltApiRef_e_to_o_fa9d628c-94e6-46f5-9f8f-9923c554a15f.xml, FltOpenVolume routine [Installable File System Drivers], ifsk.fltopenvolume, fltkernel/FltOpenVolume, FltOpenVolume
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Microsoft Windows 2000 Update Rollup 1 for SP4, Windows XP SP3, Windows Server 2003 SP1, and later versions of the Windows operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltOpenVolume
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

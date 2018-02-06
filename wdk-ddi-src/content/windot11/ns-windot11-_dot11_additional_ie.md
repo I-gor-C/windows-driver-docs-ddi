@@ -1,42 +1,47 @@
 ---
-UID : NS:windot11._DOT11_ADDITIONAL_IE
-title : "_DOT11_ADDITIONAL_IE"
-author : windows-driver-content
-description : Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
-old-location : netvista\dot11_additional_ie.htm
-old-project : netvista
-ms.assetid : db034863-f5fa-42bb-81c8-23d4784e0abe
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : "*PDOT11_ADDITIONAL_IE, DOT11_ADDITIONAL_IE structure [Network Drivers Starting with Windows Vista], PDOT11_ADDITIONAL_IE, _DOT11_ADDITIONAL_IE, windot11/PDOT11_ADDITIONAL_IE, Native_802.11_data_types_306f816b-e8fa-4f61-be10-5fd4d793f5a5.xml, windot11/DOT11_ADDITIONAL_IE, netvista.dot11_additional_ie, DOT11_ADDITIONAL_IE, PDOT11_ADDITIONAL_IE structure pointer [Network Drivers Starting with Windows Vista]"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : windot11.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7 and later versions of the Windows operating   systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT11_ADDITIONAL_IE, *PDOT11_ADDITIONAL_IE
-req.product : Windows 10 or later.
+UID: NS:windot11._DOT11_ADDITIONAL_IE
+title: "_DOT11_ADDITIONAL_IE"
+author: windows-driver-content
+description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+old-location: netvista\dot11_additional_ie.htm
+old-project: netvista
+ms.assetid: db034863-f5fa-42bb-81c8-23d4784e0abe
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: "*PDOT11_ADDITIONAL_IE, DOT11_ADDITIONAL_IE structure [Network Drivers Starting with Windows Vista], PDOT11_ADDITIONAL_IE, _DOT11_ADDITIONAL_IE, windot11/PDOT11_ADDITIONAL_IE, Native_802.11_data_types_306f816b-e8fa-4f61-be10-5fd4d793f5a5.xml, windot11/DOT11_ADDITIONAL_IE, netvista.dot11_additional_ie, DOT11_ADDITIONAL_IE, PDOT11_ADDITIONAL_IE structure pointer [Network Drivers Starting with Windows Vista]"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: windot11.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7 and later versions of the Windows operating   systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	windot11.h
+apiname:
+-	DOT11_ADDITIONAL_IE
+product: Windows
+targetos: Windows
+req.typenames: DOT11_ADDITIONAL_IE, *PDOT11_ADDITIONAL_IE
+req.product: Windows 10 or later.
 ---
 
 # _DOT11_ADDITIONAL_IE structure

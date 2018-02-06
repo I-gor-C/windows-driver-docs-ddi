@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddndis._OFFLOAD_IPSEC_DELETE_UDPESP_SA
-title : "_OFFLOAD_IPSEC_DELETE_UDPESP_SA"
-author : windows-driver-content
-description : The OFFLOAD_IPSEC_DELETE_UDPESP_SA structure contains information for each security association (SA) and parser entry that a miniport driver deletes from a NIC.
-old-location : netvista\offload_ipsec_delete_udpesp_sa.htm
-old-project : netvista
-ms.assetid : f1304fb4-87c8-4a0f-a10f-6a2c5cbaed20
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : 216offload_7d48a18d-546e-4e72-baf6-5a9e8de5a615.xml, _OFFLOAD_IPSEC_DELETE_UDPESP_SA, *POFFLOAD_IPSEC_DELETE_UDPESP_SA, ntddndis/OFFLOAD_IPSEC_DELETE_UDPESP_SA, POFFLOAD_IPSEC_DELETE_UDPESP_SA structure pointer [Network Drivers Starting with Windows Vista], POFFLOAD_IPSEC_DELETE_UDPESP_SA, netvista.offload_ipsec_delete_udpesp_sa, OFFLOAD_IPSEC_DELETE_UDPESP_SA, OFFLOAD_IPSEC_DELETE_UDPESP_SA structure [Network Drivers Starting with Windows Vista], ntddndis/POFFLOAD_IPSEC_DELETE_UDPESP_SA
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : OFFLOAD_IPSEC_DELETE_UDPESP_SA, *POFFLOAD_IPSEC_DELETE_UDPESP_SA
+UID: NS:ntddndis._OFFLOAD_IPSEC_DELETE_UDPESP_SA
+title: "_OFFLOAD_IPSEC_DELETE_UDPESP_SA"
+author: windows-driver-content
+description: The OFFLOAD_IPSEC_DELETE_UDPESP_SA structure contains information for each security association (SA) and parser entry that a miniport driver deletes from a NIC.
+old-location: netvista\offload_ipsec_delete_udpesp_sa.htm
+old-project: netvista
+ms.assetid: f1304fb4-87c8-4a0f-a10f-6a2c5cbaed20
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: 216offload_7d48a18d-546e-4e72-baf6-5a9e8de5a615.xml, _OFFLOAD_IPSEC_DELETE_UDPESP_SA, *POFFLOAD_IPSEC_DELETE_UDPESP_SA, ntddndis/OFFLOAD_IPSEC_DELETE_UDPESP_SA, POFFLOAD_IPSEC_DELETE_UDPESP_SA structure pointer [Network Drivers Starting with Windows Vista], POFFLOAD_IPSEC_DELETE_UDPESP_SA, netvista.offload_ipsec_delete_udpesp_sa, OFFLOAD_IPSEC_DELETE_UDPESP_SA, OFFLOAD_IPSEC_DELETE_UDPESP_SA structure [Network Drivers Starting with Windows Vista], ntddndis/POFFLOAD_IPSEC_DELETE_UDPESP_SA
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddndis.h
+apiname:
+-	OFFLOAD_IPSEC_DELETE_UDPESP_SA
+product: Windows
+targetos: Windows
+req.typenames: OFFLOAD_IPSEC_DELETE_UDPESP_SA, *POFFLOAD_IPSEC_DELETE_UDPESP_SA
 ---
 
 # _OFFLOAD_IPSEC_DELETE_UDPESP_SA structure

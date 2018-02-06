@@ -1,42 +1,48 @@
 ---
-UID : NF:storport.StorPortPause
-title : StorPortPause function
-author : windows-driver-content
-description : The StorPortPause routine pauses an adapter for the specified period of time.
-old-location : storage\storportpause.htm
-old-project : storage
-ms.assetid : 304df6fb-8586-454a-a89a-24ac8848d3a1
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storprt_0d8b3555-f061-4320-948e-f8db6a204d0e.xml, StorPortPause, storport/StorPortPause, StorPortPause routine [Storage Devices], storage.storportpause
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Storport.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STOR_SPINLOCK
-req.product : Windows 10 or later.
+UID: NF:storport.StorPortPause
+title: StorPortPause function
+author: windows-driver-content
+description: The StorPortPause routine pauses an adapter for the specified period of time.
+old-location: storage\storportpause.htm
+old-project: storage
+ms.assetid: 304df6fb-8586-454a-a89a-24ac8848d3a1
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storprt_0d8b3555-f061-4320-948e-f8db6a204d0e.xml, StorPortPause, storport/StorPortPause, StorPortPause routine [Storage Devices], storage.storportpause
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Storport.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Storport.lib
+-	Storport.dll
+apiname:
+-	StorPortPause
+product: Windows
+targetos: Windows
+req.typenames: STOR_SPINLOCK
+req.product: Windows 10 or later.
 ---
 
 

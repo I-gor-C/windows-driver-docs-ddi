@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfdevice.WdfDeviceWdmAssignPowerFrameworkSettings
-title : WdfDeviceWdmAssignPowerFrameworkSettings function
-author : windows-driver-content
-description : The WdfDeviceWdmAssignPowerFrameworkSettings method registers power management framework (PoFx) settings for single-component devices.
-old-location : wdf\wdfdevicewdmassignpowerframeworksettings.htm
-old-project : wdf
-ms.assetid : 676A458E-A6E0-4F09-AAF2-21EA122EF74D
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WdfDeviceWdmAssignPowerFrameworkSettings, WdfDeviceWdmAssignPowerFrameworkSettings method, kmdf.wdfdevicewdmassignpowerframeworksettings, wdfdevice/WdfDeviceWdmAssignPowerFrameworkSettings, PFN_WDFDEVICEWDMASSIGNPOWERFRAMEWORKSETTINGS, wdf.wdfdevicewdmassignpowerframeworksettings
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfdevice.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : 
-req.kmdf-ver : 1.11
-req.umdf-ver : 
-req.ddi-compliance : DriverCreate
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_STATE_NOTIFICATION_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfdevice.WdfDeviceWdmAssignPowerFrameworkSettings
+title: WdfDeviceWdmAssignPowerFrameworkSettings function
+author: windows-driver-content
+description: The WdfDeviceWdmAssignPowerFrameworkSettings method registers power management framework (PoFx) settings for single-component devices.
+old-location: wdf\wdfdevicewdmassignpowerframeworksettings.htm
+old-project: wdf
+ms.assetid: 676A458E-A6E0-4F09-AAF2-21EA122EF74D
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WdfDeviceWdmAssignPowerFrameworkSettings, WdfDeviceWdmAssignPowerFrameworkSettings method, kmdf.wdfdevicewdmassignpowerframeworksettings, wdfdevice/WdfDeviceWdmAssignPowerFrameworkSettings, PFN_WDFDEVICEWDMASSIGNPOWERFRAMEWORKSETTINGS, wdf.wdfdevicewdmassignpowerframeworksettings
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfdevice.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: 
+req.kmdf-ver: 1.11
+req.umdf-ver: 
+req.ddi-compliance: DriverCreate
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfDeviceWdmAssignPowerFrameworkSettings
+product: Windows
+targetos: Windows
+req.typenames: WDF_STATE_NOTIFICATION_TYPE
+req.product: Windows 10 or later.
 ---
 
 

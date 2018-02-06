@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugSymbolGroup2.GetSymbolValueTextWide
-title : IDebugSymbolGroup2::GetSymbolValueTextWide method
-author : windows-driver-content
-description : The GetSymbolValueTextWide method returns a string that represents the value of a symbol.
-old-location : debugger\getsymbolvaluetextwide.htm
-old-project : debugger
-ms.assetid : 56e147ea-497b-4691-8a62-8165828b1f36
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : GetSymbolValueTextWide, IDebugSymbolGroup2, GetSymbolValueTextWide method [Windows Debugging], IDebugSymbolGroup2::GetSymbolValueTextWide, dbgeng/IDebugSymbolGroup2::GetSymbolValueTextWide, debugger.getsymbolvaluetextwide, IDebugSymbolGroup2 interface [Windows Debugging], GetSymbolValueTextWide method, GetSymbolValueTextWide method [Windows Debugging], IDebugSymbolGroup2 interface
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSymbolGroup2.GetSymbolValueTextWide
+title: IDebugSymbolGroup2::GetSymbolValueTextWide method
+author: windows-driver-content
+description: The GetSymbolValueTextWide method returns a string that represents the value of a symbol.
+old-location: debugger\getsymbolvaluetextwide.htm
+old-project: debugger
+ms.assetid: 56e147ea-497b-4691-8a62-8165828b1f36
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: GetSymbolValueTextWide, IDebugSymbolGroup2, GetSymbolValueTextWide method [Windows Debugging], IDebugSymbolGroup2::GetSymbolValueTextWide, dbgeng/IDebugSymbolGroup2::GetSymbolValueTextWide, debugger.getsymbolvaluetextwide, IDebugSymbolGroup2 interface [Windows Debugging], GetSymbolValueTextWide method, GetSymbolValueTextWide method [Windows Debugging], IDebugSymbolGroup2 interface
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugSymbolGroup2.GetSymbolValueTextWide
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddndis._NDIS_RECEIVE_FILTER_INFO_ARRAY
-title : "_NDIS_RECEIVE_FILTER_INFO_ARRAY"
-author : windows-driver-content
-description : The NDIS_RECEIVE_FILTER_INFO_ARRAY structure specifies a list of receive filters that are currently configured on a miniport driver.
-old-location : netvista\ndis_receive_filter_info_array.htm
-old-project : netvista
-ms.assetid : 32896b46-1143-4598-ad15-2eb4dbdea6e8
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NDIS_RECEIVE_FILTER_INFO_ARRAY structure [Network Drivers Starting with Windows Vista], ntddndis/PNDIS_RECEIVE_FILTER_INFO_ARRAY, virtual_machine_queue_ref_f87d474d-4909-48ed-8891-7213bd4dcbc1.xml, *PNDIS_RECEIVE_FILTER_INFO_ARRAY, PNDIS_RECEIVE_FILTER_INFO_ARRAY structure pointer [Network Drivers Starting with Windows Vista], _NDIS_RECEIVE_FILTER_INFO_ARRAY, PNDIS_RECEIVE_FILTER_INFO_ARRAY, netvista.ndis_receive_filter_info_array, NDIS_RECEIVE_FILTER_INFO_ARRAY, ntddndis/NDIS_RECEIVE_FILTER_INFO_ARRAY
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.20 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_RECEIVE_FILTER_INFO_ARRAY, *PNDIS_RECEIVE_FILTER_INFO_ARRAY
+UID: NS:ntddndis._NDIS_RECEIVE_FILTER_INFO_ARRAY
+title: "_NDIS_RECEIVE_FILTER_INFO_ARRAY"
+author: windows-driver-content
+description: The NDIS_RECEIVE_FILTER_INFO_ARRAY structure specifies a list of receive filters that are currently configured on a miniport driver.
+old-location: netvista\ndis_receive_filter_info_array.htm
+old-project: netvista
+ms.assetid: 32896b46-1143-4598-ad15-2eb4dbdea6e8
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NDIS_RECEIVE_FILTER_INFO_ARRAY structure [Network Drivers Starting with Windows Vista], ntddndis/PNDIS_RECEIVE_FILTER_INFO_ARRAY, virtual_machine_queue_ref_f87d474d-4909-48ed-8891-7213bd4dcbc1.xml, *PNDIS_RECEIVE_FILTER_INFO_ARRAY, PNDIS_RECEIVE_FILTER_INFO_ARRAY structure pointer [Network Drivers Starting with Windows Vista], _NDIS_RECEIVE_FILTER_INFO_ARRAY, PNDIS_RECEIVE_FILTER_INFO_ARRAY, netvista.ndis_receive_filter_info_array, NDIS_RECEIVE_FILTER_INFO_ARRAY, ntddndis/NDIS_RECEIVE_FILTER_INFO_ARRAY
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.20 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddndis.h
+apiname:
+-	NDIS_RECEIVE_FILTER_INFO_ARRAY
+product: Windows
+targetos: Windows
+req.typenames: NDIS_RECEIVE_FILTER_INFO_ARRAY, *PNDIS_RECEIVE_FILTER_INFO_ARRAY
 ---
 
 # _NDIS_RECEIVE_FILTER_INFO_ARRAY structure

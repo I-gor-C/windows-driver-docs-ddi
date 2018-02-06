@@ -1,41 +1,46 @@
 ---
-UID : NS:ehstorbandmgmt._BAND_SECURITY_INFO
-title : "_BAND_SECURITY_INFO"
-author : windows-driver-content
-description : The BAND_SECURITY_INFO structure specifies the security information for a band table entry query.
-old-location : storage\band_security_info.htm
-old-project : storage
-ms.assetid : 310F996F-F350-4F25-BC8A-386513908557
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : ehstorbandmgmt/PBAND_LOCATION_INFO, PBAND_LOCATION_INFO structure pointer [Storage Devices], BAND_LOCATION_INFO, *PBAND_SECURITY_INFO, BAND_LOCATION_INFO structure [Storage Devices], ehstorbandmgmt/BAND_SECURITY_INFO, _BAND_SECURITY_INFO, BAND_SECURITY_INFO, storage.band_security_info, BAND_SECURITY_INFO structure [Storage Devices], PBAND_LOCATION_INFO
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ehstorbandmgmt.h
-req.include-header : EhStorBandMgmt.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows 8
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PBAND_SECURITY_INFO, BAND_SECURITY_INFO"
+UID: NS:ehstorbandmgmt._BAND_SECURITY_INFO
+title: "_BAND_SECURITY_INFO"
+author: windows-driver-content
+description: The BAND_SECURITY_INFO structure specifies the security information for a band table entry query.
+old-location: storage\band_security_info.htm
+old-project: storage
+ms.assetid: 310F996F-F350-4F25-BC8A-386513908557
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: ehstorbandmgmt/PBAND_LOCATION_INFO, PBAND_LOCATION_INFO structure pointer [Storage Devices], BAND_LOCATION_INFO, *PBAND_SECURITY_INFO, BAND_LOCATION_INFO structure [Storage Devices], ehstorbandmgmt/BAND_SECURITY_INFO, _BAND_SECURITY_INFO, BAND_SECURITY_INFO, storage.band_security_info, BAND_SECURITY_INFO structure [Storage Devices], PBAND_LOCATION_INFO
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ehstorbandmgmt.h
+req.include-header: EhStorBandMgmt.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows 8
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	EhStorBandMgmt.h
+apiname:
+-	BAND_LOCATION_INFO
+product: Windows
+targetos: Windows
+req.typenames: "*PBAND_SECURITY_INFO, BAND_SECURITY_INFO"
 ---
 
 # _BAND_SECURITY_INFO structure

@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltGetStreamContext
-title : FltGetStreamContext function
-author : windows-driver-content
-description : The FltGetStreamContext routine retrieves a context that was set for a file stream by a given minifilter driver instance.
-old-location : ifsk\fltgetstreamcontext.htm
-old-project : ifsk
-ms.assetid : c076390d-42b0-4c8f-b9b1-9db910068795
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.fltgetstreamcontext, FltGetStreamContext, fltkernel/FltGetStreamContext, FltGetStreamContext routine [Installable File System Drivers], FltApiRef_e_to_o_e7a12c32-5aec-433e-86e4-46844f56e75a.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltGetStreamContext
+title: FltGetStreamContext function
+author: windows-driver-content
+description: The FltGetStreamContext routine retrieves a context that was set for a file stream by a given minifilter driver instance.
+old-location: ifsk\fltgetstreamcontext.htm
+old-project: ifsk
+ms.assetid: c076390d-42b0-4c8f-b9b1-9db910068795
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.fltgetstreamcontext, FltGetStreamContext, fltkernel/FltGetStreamContext, FltGetStreamContext routine [Installable File System Drivers], FltApiRef_e_to_o_e7a12c32-5aec-433e-86e4-46844f56e75a.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltGetStreamContext
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

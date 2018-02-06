@@ -1,41 +1,46 @@
 ---
-UID : NF:ntddk.HalFreeHardwareCounters
-title : HalFreeHardwareCounters function
-author : windows-driver-content
-description : The HalFreeHardwareCounters routine frees a set of hardware performance counters that was acquired in a previous call to HalAllocateHardwareCounters routine.
-old-location : kernel\halfreehardwarecounters.htm
-old-project : kernel
-ms.assetid : 646a073b-e0c5-4d41-b60c-3935c129fb39
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.halfreehardwarecounters, k103_7516fb8d-7064-4f4a-bbef-a979809bf011.xml, HalFreeHardwareCounters, HalFreeHardwareCounters routine [Kernel-Mode Driver Architecture], ntddk/HalFreeHardwareCounters
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntddk.h
-req.include-header : Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 7 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Hal.lib
-req.dll : Hal.dll
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.HalFreeHardwareCounters
+title: HalFreeHardwareCounters function
+author: windows-driver-content
+description: The HalFreeHardwareCounters routine frees a set of hardware performance counters that was acquired in a previous call to HalAllocateHardwareCounters routine.
+old-location: kernel\halfreehardwarecounters.htm
+old-project: kernel
+ms.assetid: 646a073b-e0c5-4d41-b60c-3935c129fb39
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.halfreehardwarecounters, k103_7516fb8d-7064-4f4a-bbef-a979809bf011.xml, HalFreeHardwareCounters, HalFreeHardwareCounters routine [Kernel-Mode Driver Architecture], ntddk/HalFreeHardwareCounters
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntddk.h
+req.include-header: Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 7 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Hal.lib
+req.dll: Hal.dll
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Hal.dll
+apiname:
+-	HalFreeHardwareCounters
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

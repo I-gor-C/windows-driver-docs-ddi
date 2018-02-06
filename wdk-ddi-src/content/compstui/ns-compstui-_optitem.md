@@ -1,41 +1,46 @@
 ---
-UID : NS:compstui._OPTITEM
-title : "_OPTITEM"
-author : windows-driver-content
-description : The OPTITEM structure is used by CPSUI applications (including printer interface DLLs) for describing one property sheet option on a property sheet page, if the page is described by a COMPROPSHEETUI structure.
-old-location : print\optitem.htm
-old-project : print
-ms.assetid : 983f9774-d498-473a-bdfb-ec55cc4298cf
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : cpsuifnc_0d0609c0-cb09-4428-b083-8db736570309.xml, OPTITEM structure [Print Devices], *POPTITEM, compstui/OPTITEM, OPTITEM, POPTITEM, _OPTITEM, POPTITEM structure pointer [Print Devices], print.optitem, compstui/POPTITEM
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : compstui.h
-req.include-header : Compstui.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*POPTITEM, OPTITEM"
+UID: NS:compstui._OPTITEM
+title: "_OPTITEM"
+author: windows-driver-content
+description: The OPTITEM structure is used by CPSUI applications (including printer interface DLLs) for describing one property sheet option on a property sheet page, if the page is described by a COMPROPSHEETUI structure.
+old-location: print\optitem.htm
+old-project: print
+ms.assetid: 983f9774-d498-473a-bdfb-ec55cc4298cf
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: cpsuifnc_0d0609c0-cb09-4428-b083-8db736570309.xml, OPTITEM structure [Print Devices], *POPTITEM, compstui/OPTITEM, OPTITEM, POPTITEM, _OPTITEM, POPTITEM structure pointer [Print Devices], print.optitem, compstui/POPTITEM
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: compstui.h
+req.include-header: Compstui.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	compstui.h
+apiname:
+-	OPTITEM
+product: Windows
+targetos: Windows
+req.typenames: "*POPTITEM, OPTITEM"
 ---
 
 # _OPTITEM structure

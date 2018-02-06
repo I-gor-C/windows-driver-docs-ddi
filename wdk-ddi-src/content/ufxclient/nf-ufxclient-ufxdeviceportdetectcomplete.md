@@ -1,42 +1,47 @@
 ---
-UID : NF:ufxclient.UfxDevicePortDetectComplete
-title : UfxDevicePortDetectComplete function
-author : windows-driver-content
-description : Notifies UFX about the port type that was detected.
-old-location : buses\ufxdeviceportdetectcomplete.htm
-old-project : usbref
-ms.assetid : D5F65152-54CD-45FA-99CE-F5B4DF444BB8
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ufxclient/UfxDevicePortDetectComplete, UfxDevicePortDetectComplete, UfxDevicePortDetectComplete method [Buses], buses.ufxdeviceportdetectcomplete
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ufxclient.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : DISPATCH_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUFX_HARDWARE_FAILURE_CONTEXT, UFX_HARDWARE_FAILURE_CONTEXT"
-req.product : Windows 10 or later.
+UID: NF:ufxclient.UfxDevicePortDetectComplete
+title: UfxDevicePortDetectComplete function
+author: windows-driver-content
+description: Notifies UFX about the port type that was detected.
+old-location: buses\ufxdeviceportdetectcomplete.htm
+old-project: usbref
+ms.assetid: D5F65152-54CD-45FA-99CE-F5B4DF444BB8
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ufxclient/UfxDevicePortDetectComplete, UfxDevicePortDetectComplete, UfxDevicePortDetectComplete method [Buses], buses.ufxdeviceportdetectcomplete
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ufxclient.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: DISPATCH_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	ufxclient.h
+apiname:
+-	UfxDevicePortDetectComplete
+product: Windows
+targetos: Windows
+req.typenames: "*PUFX_HARDWARE_FAILURE_CONTEXT, UFX_HARDWARE_FAILURE_CONTEXT"
+req.product: Windows 10 or later.
 ---
 
 

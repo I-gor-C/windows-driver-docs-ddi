@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.RtlAreBitsClear
-title : RtlAreBitsClear function
-author : windows-driver-content
-description : The RtlAreBitsClear routine determines whether a given range of bits within a bitmap variable is clear.
-old-location : kernel\rtlarebitsclear.htm
-old-project : kernel
-ms.assetid : f4092f06-3ed7-4153-8498-0fdfac958a1e
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : RtlAreBitsClear routine [Kernel-Mode Driver Architecture], RtlAreBitsClear, kernel.rtlarebitsclear, wdm/RtlAreBitsClear, k109_bbef7cb1-d817-498e-b091-2d07acc0e552.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL (See Remarks section)"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.RtlAreBitsClear
+title: RtlAreBitsClear function
+author: windows-driver-content
+description: The RtlAreBitsClear routine determines whether a given range of bits within a bitmap variable is clear.
+old-location: kernel\rtlarebitsclear.htm
+old-project: kernel
+ms.assetid: f4092f06-3ed7-4153-8498-0fdfac958a1e
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: RtlAreBitsClear routine [Kernel-Mode Driver Architecture], RtlAreBitsClear, kernel.rtlarebitsclear, wdm/RtlAreBitsClear, k109_bbef7cb1-d817-498e-b091-2d07acc0e552.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL (See Remarks section)"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	RtlAreBitsClear
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

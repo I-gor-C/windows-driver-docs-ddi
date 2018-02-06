@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.RtlGenerate8dot3Name
-title : RtlGenerate8dot3Name function
-author : windows-driver-content
-description : The RtlGenerate8dot3Name routine generates a short (8.3) name for the specified long file name.
-old-location : ifsk\rtlgenerate8dot3name.htm
-old-project : ifsk
-ms.assetid : 7e8f84c4-c251-4f80-a8fc-465e44c14405
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.rtlgenerate8dot3name, rtlref_e28a5c45-d430-43a7-89f8-4f193971715c.xml, RtlGenerate8dot3Name, ntifs/RtlGenerate8dot3Name, RtlGenerate8dot3Name routine [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "< DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.RtlGenerate8dot3Name
+title: RtlGenerate8dot3Name function
+author: windows-driver-content
+description: The RtlGenerate8dot3Name routine generates a short (8.3) name for the specified long file name.
+old-location: ifsk\rtlgenerate8dot3name.htm
+old-project: ifsk
+ms.assetid: 7e8f84c4-c251-4f80-a8fc-465e44c14405
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.rtlgenerate8dot3name, rtlref_e28a5c45-d430-43a7-89f8-4f193971715c.xml, RtlGenerate8dot3Name, ntifs/RtlGenerate8dot3Name, RtlGenerate8dot3Name routine [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "< DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	RtlGenerate8dot3Name
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

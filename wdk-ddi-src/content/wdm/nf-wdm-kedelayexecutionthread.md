@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.KeDelayExecutionThread
-title : KeDelayExecutionThread function
-author : windows-driver-content
-description : The KeDelayExecutionThread routine puts the current thread into an alertable or nonalertable wait state for a specified interval.
-old-location : kernel\kedelayexecutionthread.htm
-old-project : kernel
-ms.assetid : fe8dc704-3baf-4955-85fe-bba19181dbbf
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : KeDelayExecutionThread routine [Kernel-Mode Driver Architecture], wdm/KeDelayExecutionThread, k105_2335c373-d2b6-49bf-b329-92ab442ccade.xml, kernel.kedelayexecutionthread, KeDelayExecutionThread
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : IrqlKeApcLte1, PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.KeDelayExecutionThread
+title: KeDelayExecutionThread function
+author: windows-driver-content
+description: The KeDelayExecutionThread routine puts the current thread into an alertable or nonalertable wait state for a specified interval.
+old-location: kernel\kedelayexecutionthread.htm
+old-project: kernel
+ms.assetid: fe8dc704-3baf-4955-85fe-bba19181dbbf
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: KeDelayExecutionThread routine [Kernel-Mode Driver Architecture], wdm/KeDelayExecutionThread, k105_2335c373-d2b6-49bf-b329-92ab442ccade.xml, kernel.kedelayexecutionthread, KeDelayExecutionThread
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: IrqlKeApcLte1, PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	KeDelayExecutionThread
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

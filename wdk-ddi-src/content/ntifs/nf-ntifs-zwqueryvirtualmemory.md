@@ -1,41 +1,47 @@
 ---
-UID : NF:ntifs.ZwQueryVirtualMemory
-title : ZwQueryVirtualMemory function
-author : windows-driver-content
-description : The ZwQueryVirtualMemory routine determines the state, protection, and type of a region of pages within the virtual address space of the subject process.
-old-location : kernel\zwqueryvirtualmemory.htm
-old-project : kernel
-ms.assetid : 011BE902-5ED3-4AD8-B825-6850A72C1D5F
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.zwqueryvirtualmemory, ZwQueryVirtualMemory routine [Kernel-Mode Driver Architecture], ZwQueryVirtualMemory, ntifs/NtQueryVirtualMemory, ntifs/ZwQueryVirtualMemory, NtQueryVirtualMemory
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : 
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 10.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.ZwQueryVirtualMemory
+title: ZwQueryVirtualMemory function
+author: windows-driver-content
+description: The ZwQueryVirtualMemory routine determines the state, protection, and type of a region of pages within the virtual address space of the subject process.
+old-location: kernel\zwqueryvirtualmemory.htm
+old-project: kernel
+ms.assetid: 011BE902-5ED3-4AD8-B825-6850A72C1D5F
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.zwqueryvirtualmemory, ZwQueryVirtualMemory routine [Kernel-Mode Driver Architecture], ZwQueryVirtualMemory, ntifs/NtQueryVirtualMemory, ntifs/ZwQueryVirtualMemory, NtQueryVirtualMemory
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: 
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 10.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ZwQueryVirtualMemory
+-	NtQueryVirtualMemory
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

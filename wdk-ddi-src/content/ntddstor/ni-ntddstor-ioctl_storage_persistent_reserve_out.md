@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddstor.IOCTL_STORAGE_PERSISTENT_RESERVE_OUT
-title : IOCTL_STORAGE_PERSISTENT_RESERVE_OUT
-author : windows-driver-content
-description : The generic storage class driver (classpnp.sys) exposes an I/O control (IOCTL) interface for issuing Persistent Reserve Out commands.
-old-location : storage\ioctl_storage_persistent_reserve_out.htm
-old-project : storage
-ms.assetid : a9863ac9-46e2-4888-879e-7d56e9260142
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_storage_persistent_reserve_out, IOCTL_STORAGE_PERSISTENT_RESERVE_OUT control code [Storage Devices], IOCTL_STORAGE_PERSISTENT_RESERVE_OUT, ntddstor/IOCTL_STORAGE_PERSISTENT_RESERVE_OUT, k307_664b87a0-88f2-42ac-851e-b1fbbf36c66a.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddstor.h
-req.include-header : Ntddstor.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STORAGE_ZONE_CONDITION, *PSTORAGE_ZONE_CONDITION
+UID: NI:ntddstor.IOCTL_STORAGE_PERSISTENT_RESERVE_OUT
+title: IOCTL_STORAGE_PERSISTENT_RESERVE_OUT
+author: windows-driver-content
+description: The generic storage class driver (classpnp.sys) exposes an I/O control (IOCTL) interface for issuing Persistent Reserve Out commands.
+old-location: storage\ioctl_storage_persistent_reserve_out.htm
+old-project: storage
+ms.assetid: a9863ac9-46e2-4888-879e-7d56e9260142
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_storage_persistent_reserve_out, IOCTL_STORAGE_PERSISTENT_RESERVE_OUT control code [Storage Devices], IOCTL_STORAGE_PERSISTENT_RESERVE_OUT, ntddstor/IOCTL_STORAGE_PERSISTENT_RESERVE_OUT, k307_664b87a0-88f2-42ac-851e-b1fbbf36c66a.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddstor.h
+req.include-header: Ntddstor.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddstor.h
+apiname:
+-	IOCTL_STORAGE_PERSISTENT_RESERVE_OUT
+product: Windows
+targetos: Windows
+req.typenames: STORAGE_ZONE_CONDITION, *PSTORAGE_ZONE_CONDITION
 ---
 
 # IOCTL_STORAGE_PERSISTENT_RESERVE_OUT IOCTL

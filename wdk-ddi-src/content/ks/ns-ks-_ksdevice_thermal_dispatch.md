@@ -1,41 +1,46 @@
 ---
-UID : NS:ks._KSDEVICE_THERMAL_DISPATCH
-title : "_KSDEVICE_THERMAL_DISPATCH"
-author : windows-driver-content
-description : The KSDEVICE_THERMAL_DISPATCH structure is used by the miniport driver in the API call to register thermal notification callbacks. This structure contains the callback function pointers for active and passive cooling interfaces.
-old-location : stream\ksdevice_thermal_dispatch.htm
-old-project : stream
-ms.assetid : 6E4ADD86-EFC4-4369-83A1-1D2824235310
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.ksdevice_thermal_dispatch, KsDevice, *PKSDEVICE_THERMAL_DISPATCH, KSDEVICE_THERMAL_DISPATCH, KSDEVICE_THERMAL_DISPATCH structure [Streaming Media Devices], _KSDEVICE_THERMAL_DISPATCH, DeviceThermalState, Percentage, PKSDEVICE_THERMAL_DISPATCH, Engaged, PKSDEVICE_THERMAL_DISPATCH structure pointer [Streaming Media Devices], ks/KSDEVICE_THERMAL_DISPATCH, ks/PKSDEVICE_THERMAL_DISPATCH
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKSDEVICE_THERMAL_DISPATCH, KSDEVICE_THERMAL_DISPATCH"
+UID: NS:ks._KSDEVICE_THERMAL_DISPATCH
+title: "_KSDEVICE_THERMAL_DISPATCH"
+author: windows-driver-content
+description: The KSDEVICE_THERMAL_DISPATCH structure is used by the miniport driver in the API call to register thermal notification callbacks. This structure contains the callback function pointers for active and passive cooling interfaces.
+old-location: stream\ksdevice_thermal_dispatch.htm
+old-project: stream
+ms.assetid: 6E4ADD86-EFC4-4369-83A1-1D2824235310
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.ksdevice_thermal_dispatch, KsDevice, *PKSDEVICE_THERMAL_DISPATCH, KSDEVICE_THERMAL_DISPATCH, KSDEVICE_THERMAL_DISPATCH structure [Streaming Media Devices], _KSDEVICE_THERMAL_DISPATCH, DeviceThermalState, Percentage, PKSDEVICE_THERMAL_DISPATCH, Engaged, PKSDEVICE_THERMAL_DISPATCH structure pointer [Streaming Media Devices], ks/KSDEVICE_THERMAL_DISPATCH, ks/PKSDEVICE_THERMAL_DISPATCH
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	KSDEVICE_THERMAL_DISPATCH
+product: Windows
+targetos: Windows
+req.typenames: "*PKSDEVICE_THERMAL_DISPATCH, KSDEVICE_THERMAL_DISPATCH"
 ---
 
 # _KSDEVICE_THERMAL_DISPATCH structure

@@ -1,41 +1,46 @@
 ---
-UID : NF:portcls.IMiniportMidiStream.Read
-title : IMiniportMidiStream::Read method
-author : windows-driver-content
-description : The Read method reads data from an incoming MIDI stream.
-old-location : audio\iminiportmidistream_read.htm
-old-project : audio
-ms.assetid : 448dc408-c47f-4c8b-8baf-a831c69c3020
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : IMiniportMidiStream interface [Audio Devices], Read method, audmp-routines_35ce63a1-ab31-4758-887a-9043e1f65915.xml, IMiniportMidiStream, Read method [Audio Devices], IMiniportMidiStream interface, Read, Read method [Audio Devices], portcls/IMiniportMidiStream::Read, IMiniportMidiStream::Read, audio.iminiportmidistream_read
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : portcls.h
-req.include-header : Portcls.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : portcls.h
-req.dll : 
-req.irql : DISPATCH_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.IMiniportMidiStream.Read
+title: IMiniportMidiStream::Read method
+author: windows-driver-content
+description: The Read method reads data from an incoming MIDI stream.
+old-location: audio\iminiportmidistream_read.htm
+old-project: audio
+ms.assetid: 448dc408-c47f-4c8b-8baf-a831c69c3020
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: IMiniportMidiStream interface [Audio Devices], Read method, audmp-routines_35ce63a1-ab31-4758-887a-9043e1f65915.xml, IMiniportMidiStream, Read method [Audio Devices], IMiniportMidiStream interface, Read, Read method [Audio Devices], portcls/IMiniportMidiStream::Read, IMiniportMidiStream::Read, audio.iminiportmidistream_read
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: portcls.h
+req.include-header: Portcls.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: portcls.h
+req.dll: 
+req.irql: DISPATCH_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	portcls.h
+apiname:
+-	IMiniportMidiStream.Read
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

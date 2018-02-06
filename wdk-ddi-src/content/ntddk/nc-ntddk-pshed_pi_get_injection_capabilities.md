@@ -1,41 +1,46 @@
 ---
-UID : NC:ntddk.PSHED_PI_GET_INJECTION_CAPABILITIES
-title : PSHED_PI_GET_INJECTION_CAPABILITIES
-author : windows-driver-content
-description : A PSHED plug-in's GetInjectionCapabilities callback function returns an error injection capabilities union that describes the types of hardware errors that can be injected into the hardware platform.
-old-location : whea\getinjectioncapabilities.htm
-old-project : whea
-ms.assetid : 8cb19677-11b8-4594-b4dd-ebd00fae07d4
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : whea.getinjectioncapabilities, GetInjectionCapabilities callback function [WHEA Drivers and Applications], GetInjectionCapabilities, PSHED_PI_GET_INJECTION_CAPABILITIES, PSHED_PI_GET_INJECTION_CAPABILITIES, ntddk/GetInjectionCapabilities, whearef_0c5e00c7-c5d7-4e28-a351-7831d883c70f.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PFILTER_INITIALIZATION_DATA, FILTER_INITIALIZATION_DATA"
+UID: NC:ntddk.PSHED_PI_GET_INJECTION_CAPABILITIES
+title: PSHED_PI_GET_INJECTION_CAPABILITIES
+author: windows-driver-content
+description: A PSHED plug-in's GetInjectionCapabilities callback function returns an error injection capabilities union that describes the types of hardware errors that can be injected into the hardware platform.
+old-location: whea\getinjectioncapabilities.htm
+old-project: whea
+ms.assetid: 8cb19677-11b8-4594-b4dd-ebd00fae07d4
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: whea.getinjectioncapabilities, GetInjectionCapabilities callback function [WHEA Drivers and Applications], GetInjectionCapabilities, PSHED_PI_GET_INJECTION_CAPABILITIES, PSHED_PI_GET_INJECTION_CAPABILITIES, ntddk/GetInjectionCapabilities, whearef_0c5e00c7-c5d7-4e28-a351-7831d883c70f.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ntddk.h
+apiname:
+-	GetInjectionCapabilities
+product: Windows
+targetos: Windows
+req.typenames: "*PFILTER_INITIALIZATION_DATA, FILTER_INITIALIZATION_DATA"
 ---
 
 

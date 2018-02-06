@@ -1,42 +1,47 @@
 ---
-UID : NS:windot11._DOT11_CURRENT_OPERATION_MODE
-title : "_DOT11_CURRENT_OPERATION_MODE"
-author : windows-driver-content
-description : Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
-old-location : netvista\dot11_current_operation_mode.htm
-old-project : netvista
-ms.assetid : 085ee8f4-7e96-416a-a59f-f35c8ad0dbf4
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : Native_802.11_data_types_d2f0f1a7-3e89-4ac1-acbd-a032909837a2.xml, windot11/PDOT11_CURRENT_OPERATION_MODE, PDOT11_CURRENT_OPERATION_MODE, DOT11_CURRENT_OPERATION_MODE structure [Network Drivers Starting with Windows Vista], windot11/DOT11_CURRENT_OPERATION_MODE, netvista.dot11_current_operation_mode, DOT11_CURRENT_OPERATION_MODE, *PDOT11_CURRENT_OPERATION_MODE, PDOT11_CURRENT_OPERATION_MODE structure pointer [Network Drivers Starting with Windows Vista], _DOT11_CURRENT_OPERATION_MODE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : windot11.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating   systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT11_CURRENT_OPERATION_MODE, *PDOT11_CURRENT_OPERATION_MODE
-req.product : Windows 10 or later.
+UID: NS:windot11._DOT11_CURRENT_OPERATION_MODE
+title: "_DOT11_CURRENT_OPERATION_MODE"
+author: windows-driver-content
+description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+old-location: netvista\dot11_current_operation_mode.htm
+old-project: netvista
+ms.assetid: 085ee8f4-7e96-416a-a59f-f35c8ad0dbf4
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: Native_802.11_data_types_d2f0f1a7-3e89-4ac1-acbd-a032909837a2.xml, windot11/PDOT11_CURRENT_OPERATION_MODE, PDOT11_CURRENT_OPERATION_MODE, DOT11_CURRENT_OPERATION_MODE structure [Network Drivers Starting with Windows Vista], windot11/DOT11_CURRENT_OPERATION_MODE, netvista.dot11_current_operation_mode, DOT11_CURRENT_OPERATION_MODE, *PDOT11_CURRENT_OPERATION_MODE, PDOT11_CURRENT_OPERATION_MODE structure pointer [Network Drivers Starting with Windows Vista], _DOT11_CURRENT_OPERATION_MODE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: windot11.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	windot11.h
+apiname:
+-	DOT11_CURRENT_OPERATION_MODE
+product: Windows
+targetos: Windows
+req.typenames: DOT11_CURRENT_OPERATION_MODE, *PDOT11_CURRENT_OPERATION_MODE
+req.product: Windows 10 or later.
 ---
 
 # _DOT11_CURRENT_OPERATION_MODE structure

@@ -1,41 +1,46 @@
 ---
-UID : NF:ksproxy.IKsClockPropertySet.KsGetPhysicalTime
-title : IKsClockPropertySet::KsGetPhysicalTime method
-author : windows-driver-content
-description : The KsGetPhysicalTime method retrieves the physical time from the underlying clock.
-old-location : stream\iksclockpropertyset_ksgetphysicaltime.htm
-old-project : stream
-ms.assetid : 25875f28-292f-40d9-8b29-ec9af49b0bc0
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : IKsClockPropertySet, KsGetPhysicalTime method [Streaming Media Devices], KsGetPhysicalTime, IKsClockPropertySet interface [Streaming Media Devices], KsGetPhysicalTime method, IKsClockPropertySet::KsGetPhysicalTime, KsGetPhysicalTime method [Streaming Media Devices], IKsClockPropertySet interface, ksproxy/IKsClockPropertySet::KsGetPhysicalTime, ksproxy_d242cd7a-c210-41b2-9c3c-59900c79e351.xml, stream.iksclockpropertyset_ksgetphysicaltime
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : ksproxy.h
-req.include-header : Ksproxy.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : ksproxy.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PIPE_STATE
+UID: NF:ksproxy.IKsClockPropertySet.KsGetPhysicalTime
+title: IKsClockPropertySet::KsGetPhysicalTime method
+author: windows-driver-content
+description: The KsGetPhysicalTime method retrieves the physical time from the underlying clock.
+old-location: stream\iksclockpropertyset_ksgetphysicaltime.htm
+old-project: stream
+ms.assetid: 25875f28-292f-40d9-8b29-ec9af49b0bc0
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: IKsClockPropertySet, KsGetPhysicalTime method [Streaming Media Devices], KsGetPhysicalTime, IKsClockPropertySet interface [Streaming Media Devices], KsGetPhysicalTime method, IKsClockPropertySet::KsGetPhysicalTime, KsGetPhysicalTime method [Streaming Media Devices], IKsClockPropertySet interface, ksproxy/IKsClockPropertySet::KsGetPhysicalTime, ksproxy_d242cd7a-c210-41b2-9c3c-59900c79e351.xml, stream.iksclockpropertyset_ksgetphysicaltime
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: ksproxy.h
+req.include-header: Ksproxy.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: ksproxy.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	ksproxy.h
+apiname:
+-	IKsClockPropertySet.KsGetPhysicalTime
+product: Windows
+targetos: Windows
+req.typenames: PIPE_STATE
 ---
 
 

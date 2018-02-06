@@ -1,42 +1,47 @@
 ---
-UID : NE:udecxwdfdevice._UDECX_WDF_DEVICE_RESET_ACTION
-title : "_UDECX_WDF_DEVICE_RESET_ACTION"
-author : windows-driver-content
-description : Defines values that indicate the types of reset operation supported by an emulated USB host controller.
-old-location : buses\udecx_wdf_device_reset_action.htm
-old-project : usbref
-ms.assetid : E3216F62-5506-4DA2-AD89-B2406D3E97C0
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : UdecxWdfDeviceResetActionResetWdfDevice, _UDECX_WDF_DEVICE_RESET_ACTION, *PUDECX_WDF_DEVICE_RESET_ACTION, udecxwdfdevice/UDECX_WDF_DEVICE_RESET_ACTION, buses.udecx_wdf_device_reset_action, udecxwdfdevice/UdecxWdfDeviceResetActionResetWdfDevice, udecxwdfdevice/UdecxWdfDeviceResetActionResetEachUsbDevice, UDECX_WDF_DEVICE_RESET_ACTION, UDECX_WDF_DEVICE_RESET_ACTION enumeration [Buses], UdecxWdfDeviceResetActionResetEachUsbDevice
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : udecxwdfdevice.h
-req.include-header : Udecx.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUDECX_WDF_DEVICE_RESET_ACTION, UDECX_WDF_DEVICE_RESET_ACTION"
-req.product : Windows 10 or later.
+UID: NE:udecxwdfdevice._UDECX_WDF_DEVICE_RESET_ACTION
+title: "_UDECX_WDF_DEVICE_RESET_ACTION"
+author: windows-driver-content
+description: Defines values that indicate the types of reset operation supported by an emulated USB host controller.
+old-location: buses\udecx_wdf_device_reset_action.htm
+old-project: usbref
+ms.assetid: E3216F62-5506-4DA2-AD89-B2406D3E97C0
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: UdecxWdfDeviceResetActionResetWdfDevice, _UDECX_WDF_DEVICE_RESET_ACTION, *PUDECX_WDF_DEVICE_RESET_ACTION, udecxwdfdevice/UDECX_WDF_DEVICE_RESET_ACTION, buses.udecx_wdf_device_reset_action, udecxwdfdevice/UdecxWdfDeviceResetActionResetWdfDevice, udecxwdfdevice/UdecxWdfDeviceResetActionResetEachUsbDevice, UDECX_WDF_DEVICE_RESET_ACTION, UDECX_WDF_DEVICE_RESET_ACTION enumeration [Buses], UdecxWdfDeviceResetActionResetEachUsbDevice
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: udecxwdfdevice.h
+req.include-header: Udecx.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	UdecxWdfDevice.h
+apiname:
+-	UDECX_WDF_DEVICE_RESET_ACTION
+product: Windows
+targetos: Windows
+req.typenames: "*PUDECX_WDF_DEVICE_RESET_ACTION, UDECX_WDF_DEVICE_RESET_ACTION"
+req.product: Windows 10 or later.
 ---
 
 # _UDECX_WDF_DEVICE_RESET_ACTION Enumeration
@@ -53,16 +58,16 @@ typedef enum _UDECX_WDF_DEVICE_RESET_ACTION {
 ## Constants
 
 <table>
-
-<tr>
-<td>UdecxWdfDeviceResetActionResetEachUsbDevice</td>
-<td>Each device that is attached to the controller is reset.</td>
-</tr>
-
-<tr>
-<td>UdecxWdfDeviceResetActionResetWdfDevice</td>
-<td>The emulated host controller is reset.</td>
-</tr>
+            
+                <tr>
+                    <td>UdecxWdfDeviceResetActionResetEachUsbDevice</td>
+                    <td>Each device that is attached to the controller is reset.</td>
+                </tr>
+            
+                <tr>
+                    <td>UdecxWdfDeviceResetActionResetWdfDevice</td>
+                    <td>The emulated host controller is reset.</td>
+                </tr>
 </table>
 
 
@@ -71,9 +76,9 @@ typedef enum _UDECX_WDF_DEVICE_RESET_ACTION {
 | ---- |:---- |
 | **Header** | udecxwdfdevice.h (include Udecx.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\udecxwdfdevice\nc-udecxwdfdevice-evt_udecx_wdf_device_reset.md">EVT_UDECX_WDF_DEVICE_RESET</a>
+        <a href="..\udecxwdfdevice\nc-udecxwdfdevice-evt_udecx_wdf_device_reset.md">EVT_UDECX_WDF_DEVICE_RESET</a>
 
 <a href="..\udecxwdfdevice\ns-udecxwdfdevice-_udecx_wdf_device_config.md">UDECX_WDF_DEVICE_CONFIG</a>
 

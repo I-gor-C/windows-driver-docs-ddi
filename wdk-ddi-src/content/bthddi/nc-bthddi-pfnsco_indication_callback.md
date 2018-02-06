@@ -1,41 +1,46 @@
 ---
-UID : NC:bthddi.PFNSCO_INDICATION_CALLBACK
-title : PFNSCO_INDICATION_CALLBACK
-author : windows-driver-content
-description : Profile drivers implement a SCO callback function to provide the Bluetooth driver stack with a mechanism to notify the profile driver about incoming SCO connection requests from remote devices, and any changes to the status of a currently open SCO connection.
-old-location : bltooth\sco_callback_function.htm
-old-project : bltooth
-ms.assetid : abc9fc88-6852-4bfb-8271-7a73a508c397
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : bltooth.sco_callback_function, SCOIndicationCallback callback function [Bluetooth Devices], SCOIndicationCallback, PFNSCO_INDICATION_CALLBACK, PFNSCO_INDICATION_CALLBACK, bthddi/SCOIndicationCallback, bth_funcs_05d035df-348d-42c0-8041-5d3822b0346e.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : bthddi.h
-req.include-header : Bthddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Versions:\_Supported in Windows Vista, and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback   function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access   paged memory)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PMPEG2_TRANSPORT_STRIDE, MPEG2_TRANSPORT_STRIDE"
+UID: NC:bthddi.PFNSCO_INDICATION_CALLBACK
+title: PFNSCO_INDICATION_CALLBACK
+author: windows-driver-content
+description: Profile drivers implement a SCO callback function to provide the Bluetooth driver stack with a mechanism to notify the profile driver about incoming SCO connection requests from remote devices, and any changes to the status of a currently open SCO connection.
+old-location: bltooth\sco_callback_function.htm
+old-project: bltooth
+ms.assetid: abc9fc88-6852-4bfb-8271-7a73a508c397
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: bltooth.sco_callback_function, SCOIndicationCallback callback function [Bluetooth Devices], SCOIndicationCallback, PFNSCO_INDICATION_CALLBACK, PFNSCO_INDICATION_CALLBACK, bthddi/SCOIndicationCallback, bth_funcs_05d035df-348d-42c0-8041-5d3822b0346e.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: bthddi.h
+req.include-header: Bthddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Versions:\_Supported in Windows Vista, and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback   function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access   paged memory)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	bthddi.h
+apiname:
+-	SCOIndicationCallback
+product: Windows
+targetos: Windows
+req.typenames: "*PMPEG2_TRANSPORT_STRIDE, MPEG2_TRANSPORT_STRIDE"
 ---
 
 

@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfqueryinterface.WdfDeviceInterfaceDereferenceNoOp
-title : WdfDeviceInterfaceDereferenceNoOp function
-author : windows-driver-content
-description : The WdfDeviceInterfaceDereferenceNoOp method can be used for driver-defined interfaces that do not require reference counts.
-old-location : wdf\wdfdeviceinterfacedereferencenoop.htm
-old-project : wdf
-ms.assetid : 76319a0b-a7b3-48f6-804b-e01bc360c441
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WdfDeviceInterfaceDereferenceNoOp method, wdfqueryinterface/WdfDeviceInterfaceDereferenceNoOp, DFDeviceObjectDriverDefIntRef_2bfa96a8-a58a-4408-83db-11670d7de8c7.xml, PFN_WDFDEVICEINTERFACEDEREFERENCENOOP, wdf.wdfdeviceinterfacedereferencenoop, WdfDeviceInterfaceDereferenceNoOp, kmdf.wdfdeviceinterfacedereferencenoop
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfqueryinterface.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_PDO_EVENT_CALLBACKS, *PWDF_PDO_EVENT_CALLBACKS
-req.product : Windows 10 or later.
+UID: NF:wdfqueryinterface.WdfDeviceInterfaceDereferenceNoOp
+title: WdfDeviceInterfaceDereferenceNoOp function
+author: windows-driver-content
+description: The WdfDeviceInterfaceDereferenceNoOp method can be used for driver-defined interfaces that do not require reference counts.
+old-location: wdf\wdfdeviceinterfacedereferencenoop.htm
+old-project: wdf
+ms.assetid: 76319a0b-a7b3-48f6-804b-e01bc360c441
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WdfDeviceInterfaceDereferenceNoOp method, wdfqueryinterface/WdfDeviceInterfaceDereferenceNoOp, DFDeviceObjectDriverDefIntRef_2bfa96a8-a58a-4408-83db-11670d7de8c7.xml, PFN_WDFDEVICEINTERFACEDEREFERENCENOOP, wdf.wdfdeviceinterfacedereferencenoop, WdfDeviceInterfaceDereferenceNoOp, kmdf.wdfdeviceinterfacedereferencenoop
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfqueryinterface.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfDeviceInterfaceDereferenceNoOp
+product: Windows
+targetos: Windows
+req.typenames: WDF_PDO_EVENT_CALLBACKS, *PWDF_PDO_EVENT_CALLBACKS
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:iscsidef._ISCSI_LUNList
-title : "_ISCSI_LUNList"
-author : windows-driver-content
-description : The ISCSI_LUNList structure defines a mapping between the LUN number that is used by the operating system and the LUN number that is configured in the iSCSI target.
-old-location : storage\iscsi_lunlist.htm
-old-project : storage
-ms.assetid : 1c477f38-c24f-45df-ab02-62ee47c0957b
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : iscsidef/PISCSI_LUNList, PISCSI_LUNList structure pointer [Storage Devices], ISCSI_LUNList, iscsidef/ISCSI_LUNList, ISCSI_LUNList structure [Storage Devices], _ISCSI_LUNList, storage.iscsi_lunlist, structs-iSCSI_f6a29259-8905-438e-ba9f-1055026d7bf6.xml, *PISCSI_LUNList, PISCSI_LUNList
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : iscsidef.h
-req.include-header : Iscsidef.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PISCSI_LUNList, ISCSI_LUNList"
+UID: NS:iscsidef._ISCSI_LUNList
+title: "_ISCSI_LUNList"
+author: windows-driver-content
+description: The ISCSI_LUNList structure defines a mapping between the LUN number that is used by the operating system and the LUN number that is configured in the iSCSI target.
+old-location: storage\iscsi_lunlist.htm
+old-project: storage
+ms.assetid: 1c477f38-c24f-45df-ab02-62ee47c0957b
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: iscsidef/PISCSI_LUNList, PISCSI_LUNList structure pointer [Storage Devices], ISCSI_LUNList, iscsidef/ISCSI_LUNList, ISCSI_LUNList structure [Storage Devices], _ISCSI_LUNList, storage.iscsi_lunlist, structs-iSCSI_f6a29259-8905-438e-ba9f-1055026d7bf6.xml, *PISCSI_LUNList, PISCSI_LUNList
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: iscsidef.h
+req.include-header: Iscsidef.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	iscsidef.h
+apiname:
+-	ISCSI_LUNList
+product: Windows
+targetos: Windows
+req.typenames: "*PISCSI_LUNList, ISCSI_LUNList"
 ---
 
 # _ISCSI_LUNList structure

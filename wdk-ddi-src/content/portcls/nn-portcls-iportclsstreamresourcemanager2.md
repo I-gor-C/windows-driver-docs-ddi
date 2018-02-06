@@ -1,41 +1,46 @@
 ---
-UID : NN:portcls.IPortClsStreamResourceManager2
-title : IPortClsStreamResourceManager2
-author : windows-driver-content
-description : IPortClsStreamResourceManager2 is used to manage the registration of audio stream resources.
-old-location : audio\iportclsstreamresourcemanager2.htm
-old-project : audio
-ms.assetid : B37310B5-3C74-428A-B8DF-C39B85A521C0
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : audio.iportclsstreamresourcemanager2, IPortClsStreamResourceManager2 interface [Audio Devices], IPortClsStreamResourceManager2 interface [Audio Devices], described, IPortClsStreamResourceManager2, portcls/IPortClsStreamResourceManager2
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : portcls.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Portcls.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NN:portcls.IPortClsStreamResourceManager2
+title: IPortClsStreamResourceManager2
+author: windows-driver-content
+description: IPortClsStreamResourceManager2 is used to manage the registration of audio stream resources.
+old-location: audio\iportclsstreamresourcemanager2.htm
+old-project: audio
+ms.assetid: B37310B5-3C74-428A-B8DF-C39B85A521C0
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: audio.iportclsstreamresourcemanager2, IPortClsStreamResourceManager2 interface [Audio Devices], IPortClsStreamResourceManager2 interface [Audio Devices], described, IPortClsStreamResourceManager2, portcls/IPortClsStreamResourceManager2
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: portcls.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Portcls.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	portcls.h
+apiname:
+-	IPortClsStreamResourceManager2
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 # IPortClsStreamResourceManager2 interface

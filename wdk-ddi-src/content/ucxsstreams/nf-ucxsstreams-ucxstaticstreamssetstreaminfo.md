@@ -1,42 +1,47 @@
 ---
-UID : NF:ucxsstreams.UcxStaticStreamsSetStreamInfo
-title : UcxStaticStreamsSetStreamInfo function
-author : windows-driver-content
-description : Sets stream information for each stream enabled by the client driver.
-old-location : buses\_ucxstaticstreamssetstreaminfo.htm
-old-project : usbref
-ms.assetid : 40AE9327-ABB7-4A63-AC90-494E2BC26C08
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : buses._ucxstaticstreamssetstreaminfo, UcxStaticStreamsSetStreamInfo, UcxStaticStreamsSetStreamInfo method [Buses]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ucxsstreams.h
-req.include-header : Ucxclass.h, Ucxstreams.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUCX_ROOTHUB_CONFIG, UCX_ROOTHUB_CONFIG"
-req.product : Windows 10 or later.
+UID: NF:ucxsstreams.UcxStaticStreamsSetStreamInfo
+title: UcxStaticStreamsSetStreamInfo function
+author: windows-driver-content
+description: Sets stream information for each stream enabled by the client driver.
+old-location: buses\_ucxstaticstreamssetstreaminfo.htm
+old-project: usbref
+ms.assetid: 40AE9327-ABB7-4A63-AC90-494E2BC26C08
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: buses._ucxstaticstreamssetstreaminfo, UcxStaticStreamsSetStreamInfo, UcxStaticStreamsSetStreamInfo method [Buses]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ucxsstreams.h
+req.include-header: Ucxclass.h, Ucxstreams.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	ucxsstreams.h
+apiname:
+-	UcxStaticStreamsSetStreamInfo
+product: Windows
+targetos: Windows
+req.typenames: "*PUCX_ROOTHUB_CONFIG, UCX_ROOTHUB_CONFIG"
+req.product: Windows 10 or later.
 ---
 
 

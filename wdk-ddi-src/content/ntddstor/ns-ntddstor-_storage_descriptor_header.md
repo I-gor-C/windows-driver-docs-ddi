@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddstor._STORAGE_DESCRIPTOR_HEADER
-title : "_STORAGE_DESCRIPTOR_HEADER"
-author : windows-driver-content
-description : The STORAGE_DESCRIPTOR_HEADER structure is used in conjunction with the IOCTL_STORAGE_QUERY_PROPERTY request to retrieve the properties of a storage device or adapter.
-old-location : storage\storage_descriptor_header.htm
-old-project : storage
-ms.assetid : 57d019b0-7914-42f6-a888-16042aa97444
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : STORAGE_DESCRIPTOR_HEADER structure [Storage Devices], storage.storage_descriptor_header, ntddstor/STORAGE_DESCRIPTOR_HEADER, STORAGE_DESCRIPTOR_HEADER, structs-general_9ba3bf25-17dc-41e1-9b3e-971d2ddd4780.xml, PSTORAGE_DESCRIPTOR_HEADER structure pointer [Storage Devices], _STORAGE_DESCRIPTOR_HEADER, PSTORAGE_DESCRIPTOR_HEADER, ntddstor/PSTORAGE_DESCRIPTOR_HEADER
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddstor.h
-req.include-header : Ntddstor.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PSTORAGE_DESCRIPTOR_HEADER, STORAGE_DESCRIPTOR_HEADER
+UID: NS:ntddstor._STORAGE_DESCRIPTOR_HEADER
+title: "_STORAGE_DESCRIPTOR_HEADER"
+author: windows-driver-content
+description: The STORAGE_DESCRIPTOR_HEADER structure is used in conjunction with the IOCTL_STORAGE_QUERY_PROPERTY request to retrieve the properties of a storage device or adapter.
+old-location: storage\storage_descriptor_header.htm
+old-project: storage
+ms.assetid: 57d019b0-7914-42f6-a888-16042aa97444
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: STORAGE_DESCRIPTOR_HEADER structure [Storage Devices], storage.storage_descriptor_header, ntddstor/STORAGE_DESCRIPTOR_HEADER, STORAGE_DESCRIPTOR_HEADER, structs-general_9ba3bf25-17dc-41e1-9b3e-971d2ddd4780.xml, PSTORAGE_DESCRIPTOR_HEADER structure pointer [Storage Devices], _STORAGE_DESCRIPTOR_HEADER, PSTORAGE_DESCRIPTOR_HEADER, ntddstor/PSTORAGE_DESCRIPTOR_HEADER
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddstor.h
+req.include-header: Ntddstor.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddstor.h
+apiname:
+-	STORAGE_DESCRIPTOR_HEADER
+product: Windows
+targetos: Windows
+req.typenames: PSTORAGE_DESCRIPTOR_HEADER, STORAGE_DESCRIPTOR_HEADER
 ---
 
 # _STORAGE_DESCRIPTOR_HEADER structure

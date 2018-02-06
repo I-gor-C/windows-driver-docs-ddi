@@ -1,42 +1,47 @@
 ---
-UID : NS:usb._URB_OS_FEATURE_DESCRIPTOR_REQUEST
-title : "_URB_OS_FEATURE_DESCRIPTOR_REQUEST"
-author : windows-driver-content
-description : The _URB_OS_FEATURE_DESCRIPTOR_REQUEST structure is used by the USB hub driver to retrieve Microsoft OS Feature Descriptors from a USB device or an interface on a USB device.
-old-location : buses\_urb_os_feature_descriptor_request.htm
-old-project : usbref
-ms.assetid : 9ff62523-e9e3-4f32-802f-6fee0082d925
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : usb/_URB_OS_FEATURE_DESCRIPTOR_REQUEST, _URB_OS_FEATURE_DESCRIPTOR_REQUEST, buses._urb_os_feature_descriptor_request, _URB_OS_FEATURE_DESCRIPTOR_REQUEST structure [Buses]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : usb.h
-req.include-header : Usb.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows XP and later operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
-req.product : Windows 10 or later.
+UID: NS:usb._URB_OS_FEATURE_DESCRIPTOR_REQUEST
+title: "_URB_OS_FEATURE_DESCRIPTOR_REQUEST"
+author: windows-driver-content
+description: The _URB_OS_FEATURE_DESCRIPTOR_REQUEST structure is used by the USB hub driver to retrieve Microsoft OS Feature Descriptors from a USB device or an interface on a USB device.
+old-location: buses\_urb_os_feature_descriptor_request.htm
+old-project: usbref
+ms.assetid: 9ff62523-e9e3-4f32-802f-6fee0082d925
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: usb/_URB_OS_FEATURE_DESCRIPTOR_REQUEST, _URB_OS_FEATURE_DESCRIPTOR_REQUEST, buses._urb_os_feature_descriptor_request, _URB_OS_FEATURE_DESCRIPTOR_REQUEST structure [Buses]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: usb.h
+req.include-header: Usb.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows XP and later operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	usb.h
+apiname:
+-	_URB_OS_FEATURE_DESCRIPTOR_REQUEST
+product: Windows
+targetos: Windows
+req.typenames: 
+req.product: Windows 10 or later.
 ---
 
 # _URB_OS_FEATURE_DESCRIPTOR_REQUEST structure

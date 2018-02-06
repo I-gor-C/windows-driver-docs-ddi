@@ -1,42 +1,47 @@
 ---
-UID : NS:usb._URB_CONTROL_GET_INTERFACE_REQUEST
-title : "_URB_CONTROL_GET_INTERFACE_REQUEST"
-author : windows-driver-content
-description : The _URB_CONTROL_GET_INTERFACE_REQUEST structure is used by USB client drivers to retrieve the current alternate interface setting for an interface in the current configuration.
-old-location : buses\_urb_control_get_interface_request.htm
-old-project : usbref
-ms.assetid : 64f843ba-8462-48d4-ba3a-a028bb921880
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : usb/_URB_CONTROL_GET_INTERFACE_REQUEST, _URB_CONTROL_GET_INTERFACE_REQUEST structure [Buses], _URB_CONTROL_GET_INTERFACE_REQUEST, usbstrct_b0ec613c-60c0-4043-9506-5c0ede728380.xml, buses._urb_control_get_interface_request
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : usb.h
-req.include-header : Usb.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
-req.product : Windows 10 or later.
+UID: NS:usb._URB_CONTROL_GET_INTERFACE_REQUEST
+title: "_URB_CONTROL_GET_INTERFACE_REQUEST"
+author: windows-driver-content
+description: The _URB_CONTROL_GET_INTERFACE_REQUEST structure is used by USB client drivers to retrieve the current alternate interface setting for an interface in the current configuration.
+old-location: buses\_urb_control_get_interface_request.htm
+old-project: usbref
+ms.assetid: 64f843ba-8462-48d4-ba3a-a028bb921880
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: usb/_URB_CONTROL_GET_INTERFACE_REQUEST, _URB_CONTROL_GET_INTERFACE_REQUEST structure [Buses], _URB_CONTROL_GET_INTERFACE_REQUEST, usbstrct_b0ec613c-60c0-4043-9506-5c0ede728380.xml, buses._urb_control_get_interface_request
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: usb.h
+req.include-header: Usb.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	usb.h
+apiname:
+-	_URB_CONTROL_GET_INTERFACE_REQUEST
+product: Windows
+targetos: Windows
+req.typenames: 
+req.product: Windows 10 or later.
 ---
 
 # _URB_CONTROL_GET_INTERFACE_REQUEST structure

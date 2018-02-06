@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddscsi.IOCTL_MINIPORT_PROCESS_SERVICE_IRP
-title : IOCTL_MINIPORT_PROCESS_SERVICE_IRP
-author : windows-driver-content
-description : This IOCTL is used by a user-mode application or kernel-mode driver that requires notification when something of interest happens in the virtual miniport.
-old-location : storage\ioctl_miniport_process_service_irp.htm
-old-project : storage
-ms.assetid : 5d9f695c-9a9f-4af9-8bf6-2096f3278852
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_miniport_process_service_irp, IOCTL_MINIPORT_PROCESS_SERVICE_IRP control code [Storage Devices], IOCTL_MINIPORT_PROCESS_SERVICE_IRP, ntddscsi/IOCTL_MINIPORT_PROCESS_SERVICE_IRP, k307_8997b602-e4ce-4b15-be19-77ba863de295.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddscsi.h
-req.include-header : Ntddscsi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : MP_STORAGE_DIAGNOSTIC_TARGET_TYPE, *PMP_STORAGE_DIAGNOSTIC_TARGET_TYPE
+UID: NI:ntddscsi.IOCTL_MINIPORT_PROCESS_SERVICE_IRP
+title: IOCTL_MINIPORT_PROCESS_SERVICE_IRP
+author: windows-driver-content
+description: This IOCTL is used by a user-mode application or kernel-mode driver that requires notification when something of interest happens in the virtual miniport.
+old-location: storage\ioctl_miniport_process_service_irp.htm
+old-project: storage
+ms.assetid: 5d9f695c-9a9f-4af9-8bf6-2096f3278852
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_miniport_process_service_irp, IOCTL_MINIPORT_PROCESS_SERVICE_IRP control code [Storage Devices], IOCTL_MINIPORT_PROCESS_SERVICE_IRP, ntddscsi/IOCTL_MINIPORT_PROCESS_SERVICE_IRP, k307_8997b602-e4ce-4b15-be19-77ba863de295.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddscsi.h
+req.include-header: Ntddscsi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddscsi.h
+apiname:
+-	IOCTL_MINIPORT_PROCESS_SERVICE_IRP
+product: Windows
+targetos: Windows
+req.typenames: MP_STORAGE_DIAGNOSTIC_TARGET_TYPE, *PMP_STORAGE_DIAGNOSTIC_TARGET_TYPE
 ---
 
 # IOCTL_MINIPORT_PROCESS_SERVICE_IRP IOCTL

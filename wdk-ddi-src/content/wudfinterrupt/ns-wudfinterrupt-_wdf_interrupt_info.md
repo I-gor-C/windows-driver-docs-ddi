@@ -1,42 +1,47 @@
 ---
-UID : NS:wudfinterrupt._WDF_INTERRUPT_INFO
-title : "_WDF_INTERRUPT_INFO"
-author : windows-driver-content
-description : The WDF_INTERRUPT_INFO structure contains information about a device's interrupt resource.
-old-location : wdf\wdf_interrupt_info_umdf.htm
-old-project : wdf
-ms.assetid : 37B997D1-6F5D-4685-BF46-2C33685C157F
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WDF_INTERRUPT_INFO, wudfinterrupt/WDF_INTERRUPT_INFO, *PWDF_INTERRUPT_INFO, wdf.wdf_interrupt_info_umdf, _WDF_INTERRUPT_INFO, PWDF_INTERRUPT_INFO structure pointer, PWDF_INTERRUPT_INFO, umdf.wdf_interrupt_info, wudfinterrupt/PWDF_INTERRUPT_INFO, WDF_INTERRUPT_INFO structure
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wudfinterrupt.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.11
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_INTERRUPT_INFO, *PWDF_INTERRUPT_INFO
-req.product : Windows 10 or later.
+UID: NS:wudfinterrupt._WDF_INTERRUPT_INFO
+title: "_WDF_INTERRUPT_INFO"
+author: windows-driver-content
+description: The WDF_INTERRUPT_INFO structure contains information about a device's interrupt resource.
+old-location: wdf\wdf_interrupt_info_umdf.htm
+old-project: wdf
+ms.assetid: 37B997D1-6F5D-4685-BF46-2C33685C157F
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WDF_INTERRUPT_INFO, wudfinterrupt/WDF_INTERRUPT_INFO, *PWDF_INTERRUPT_INFO, wdf.wdf_interrupt_info_umdf, _WDF_INTERRUPT_INFO, PWDF_INTERRUPT_INFO structure pointer, PWDF_INTERRUPT_INFO, umdf.wdf_interrupt_info, wudfinterrupt/PWDF_INTERRUPT_INFO, WDF_INTERRUPT_INFO structure
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wudfinterrupt.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.11
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wudfinterrupt.h
+apiname:
+-	WDF_INTERRUPT_INFO
+product: Windows
+targetos: Windows
+req.typenames: WDF_INTERRUPT_INFO, *PWDF_INTERRUPT_INFO
+req.product: Windows 10 or later.
 ---
 
 # _WDF_INTERRUPT_INFO structure

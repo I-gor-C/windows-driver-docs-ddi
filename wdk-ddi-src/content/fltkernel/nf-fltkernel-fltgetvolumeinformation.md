@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltGetVolumeInformation
-title : FltGetVolumeInformation function
-author : windows-driver-content
-description : The FltGetVolumeInformation routine provides information about a given volume.
-old-location : ifsk\fltgetvolumeinformation.htm
-old-project : ifsk
-ms.assetid : e25a7114-c1e5-4432-82a1-4c2e82d9fbc6
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltGetVolumeInformation routine [Installable File System Drivers], FltGetVolumeInformation, fltkernel/FltGetVolumeInformation, FltApiRef_e_to_o_79337a57-aa20-42b8-a85b-8268ef108564.xml, ifsk.fltgetvolumeinformation
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : FltKernel.h
-req.target-type : Universal
-req.target-min-winverclnt : This routine is available starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltGetVolumeInformation
+title: FltGetVolumeInformation function
+author: windows-driver-content
+description: The FltGetVolumeInformation routine provides information about a given volume.
+old-location: ifsk\fltgetvolumeinformation.htm
+old-project: ifsk
+ms.assetid: e25a7114-c1e5-4432-82a1-4c2e82d9fbc6
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltGetVolumeInformation routine [Installable File System Drivers], FltGetVolumeInformation, fltkernel/FltGetVolumeInformation, FltApiRef_e_to_o_79337a57-aa20-42b8-a85b-8268ef108564.xml, ifsk.fltgetvolumeinformation
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: FltKernel.h
+req.target-type: Universal
+req.target-min-winverclnt: This routine is available starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltGetVolumeInformation
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddk._WHEA_XPF_PROCINFO
-title : "_WHEA_XPF_PROCINFO"
-author : windows-driver-content
-description : The WHEA_XPF_PROCINFO structure describes processor error information that is specific to the x86 and x64 processor architectures.
-old-location : whea\whea_xpf_procinfo.htm
-old-project : whea
-ms.assetid : 90fb54dd-a2df-423c-8dd6-bd99c5ad1de4
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : ntddk/WHEA_XPF_PROCINFO, ntddk/PWHEA_XPF_PROCINFO, PWHEA_XPF_PROCINFO, WHEA_XPF_PROCINFO structure [WHEA Drivers and Applications], PWHEA_XPF_PROCINFO structure pointer [WHEA Drivers and Applications], WHEA_XPF_PROCINFO, _WHEA_XPF_PROCINFO, *PWHEA_XPF_PROCINFO, whearef_adb42f7c-687b-47ef-b3fe-312ef995e5c5.xml, whea.whea_xpf_procinfo
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWHEA_XPF_PROCINFO, WHEA_XPF_PROCINFO"
+UID: NS:ntddk._WHEA_XPF_PROCINFO
+title: "_WHEA_XPF_PROCINFO"
+author: windows-driver-content
+description: The WHEA_XPF_PROCINFO structure describes processor error information that is specific to the x86 and x64 processor architectures.
+old-location: whea\whea_xpf_procinfo.htm
+old-project: whea
+ms.assetid: 90fb54dd-a2df-423c-8dd6-bd99c5ad1de4
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: ntddk/WHEA_XPF_PROCINFO, ntddk/PWHEA_XPF_PROCINFO, PWHEA_XPF_PROCINFO, WHEA_XPF_PROCINFO structure [WHEA Drivers and Applications], PWHEA_XPF_PROCINFO structure pointer [WHEA Drivers and Applications], WHEA_XPF_PROCINFO, _WHEA_XPF_PROCINFO, *PWHEA_XPF_PROCINFO, whearef_adb42f7c-687b-47ef-b3fe-312ef995e5c5.xml, whea.whea_xpf_procinfo
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddk.h
+apiname:
+-	WHEA_XPF_PROCINFO
+product: Windows
+targetos: Windows
+req.typenames: "*PWHEA_XPF_PROCINFO, WHEA_XPF_PROCINFO"
 ---
 
 # _WHEA_XPF_PROCINFO structure

@@ -1,42 +1,47 @@
 ---
-UID : NF:poscx.PosCxPutPendingEventMemory
-title : PosCxPutPendingEventMemory function
-author : windows-driver-content
-description : PosCxPutPendingEventMemory tries to delegate a memory object containing the event data to a waiting caller. If the target caller does not have a read request waiting, the new event is added to the designated event queue (control or data).
-old-location : pos\poscxputpendingeventmemory.htm
-old-project : pos
-ms.assetid : DF9CA4A8-4B2A-4DED-9514-422AC5E0940D
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : poscx/PosCxPutPendingEventMemory, pos.poscxputpendingeventmemory, PosCxPutPendingEventMemory, PosCxPutPendingEventMemory function
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : poscx.h
-req.include-header : Poscx.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POS_CX_EVENT_PRIORITY
-req.product : Windows 10 or later.
+UID: NF:poscx.PosCxPutPendingEventMemory
+title: PosCxPutPendingEventMemory function
+author: windows-driver-content
+description: PosCxPutPendingEventMemory tries to delegate a memory object containing the event data to a waiting caller. If the target caller does not have a read request waiting, the new event is added to the designated event queue (control or data).
+old-location: pos\poscxputpendingeventmemory.htm
+old-project: pos
+ms.assetid: DF9CA4A8-4B2A-4DED-9514-422AC5E0940D
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: poscx/PosCxPutPendingEventMemory, pos.poscxputpendingeventmemory, PosCxPutPendingEventMemory, PosCxPutPendingEventMemory function
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: poscx.h
+req.include-header: Poscx.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	poscx.h
+apiname:
+-	PosCxPutPendingEventMemory
+product: Windows
+targetos: Windows
+req.typenames: POS_CX_EVENT_PRIORITY
+req.product: Windows 10 or later.
 ---
 
 

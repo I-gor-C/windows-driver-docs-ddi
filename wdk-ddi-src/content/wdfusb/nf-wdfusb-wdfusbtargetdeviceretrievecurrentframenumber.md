@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfusb.WdfUsbTargetDeviceRetrieveCurrentFrameNumber
-title : WdfUsbTargetDeviceRetrieveCurrentFrameNumber function
-author : windows-driver-content
-description : The WdfUsbTargetDeviceRetrieveCurrentFrameNumber method retrieves the current USB frame number.
-old-location : wdf\wdfusbtargetdeviceretrievecurrentframenumber.htm
-old-project : wdf
-ms.assetid : 7f73339f-adac-4569-92e7-1b166f93db92
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WdfUsbTargetDeviceRetrieveCurrentFrameNumber method, kmdf.wdfusbtargetdeviceretrievecurrentframenumber, DFUsbRef_9dd2f1ce-06f7-43a2-8e65-931c03f69c6e.xml, WdfUsbTargetDeviceRetrieveCurrentFrameNumber, wdfusb/WdfUsbTargetDeviceRetrieveCurrentFrameNumber, PFN_WDFUSBTARGETDEVICERETRIEVECURRENTFRAMENUMBER, wdf.wdfusbtargetdeviceretrievecurrentframenumber
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfusb.h
-req.include-header : Wdfusb.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2, UsbKmdfIrql, UsbKmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfusb.WdfUsbTargetDeviceRetrieveCurrentFrameNumber
+title: WdfUsbTargetDeviceRetrieveCurrentFrameNumber function
+author: windows-driver-content
+description: The WdfUsbTargetDeviceRetrieveCurrentFrameNumber method retrieves the current USB frame number.
+old-location: wdf\wdfusbtargetdeviceretrievecurrentframenumber.htm
+old-project: wdf
+ms.assetid: 7f73339f-adac-4569-92e7-1b166f93db92
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WdfUsbTargetDeviceRetrieveCurrentFrameNumber method, kmdf.wdfusbtargetdeviceretrievecurrentframenumber, DFUsbRef_9dd2f1ce-06f7-43a2-8e65-931c03f69c6e.xml, WdfUsbTargetDeviceRetrieveCurrentFrameNumber, wdfusb/WdfUsbTargetDeviceRetrieveCurrentFrameNumber, PFN_WDFUSBTARGETDEVICERETRIEVECURRENTFRAMENUMBER, wdf.wdfusbtargetdeviceretrievecurrentframenumber
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfusb.h
+req.include-header: Wdfusb.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2, UsbKmdfIrql, UsbKmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfUsbTargetDeviceRetrieveCurrentFrameNumber
+product: Windows
+targetos: Windows
+req.typenames: WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
+req.product: Windows 10 or later.
 ---
 
 

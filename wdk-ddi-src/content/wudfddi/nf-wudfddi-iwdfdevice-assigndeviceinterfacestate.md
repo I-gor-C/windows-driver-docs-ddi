@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFDevice.AssignDeviceInterfaceState
-title : IWDFDevice::AssignDeviceInterfaceState method
-author : windows-driver-content
-description : The AssignDeviceInterfaceState method enables or disables the specified device interface instance for a device.
-old-location : wdf\iwdfdevice_assigndeviceinterfacestate.htm
-old-project : wdf
-ms.assetid : 466af310-f2a7-4bd7-b927-df644e2e9c24
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : umdf.iwdfdevice_assigndeviceinterfacestate, wudfddi/IWDFDevice::AssignDeviceInterfaceState, AssignDeviceInterfaceState method, UMDFDeviceObjectRef_d3c15e61-9df6-4b55-a479-375486383064.xml, wdf.iwdfdevice_assigndeviceinterfacestate, AssignDeviceInterfaceState method, IWDFDevice interface, AssignDeviceInterfaceState, IWDFDevice, IWDFDevice interface, AssignDeviceInterfaceState method, IWDFDevice::AssignDeviceInterfaceState
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.5
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFDevice.AssignDeviceInterfaceState
+title: IWDFDevice::AssignDeviceInterfaceState method
+author: windows-driver-content
+description: The AssignDeviceInterfaceState method enables or disables the specified device interface instance for a device.
+old-location: wdf\iwdfdevice_assigndeviceinterfacestate.htm
+old-project: wdf
+ms.assetid: 466af310-f2a7-4bd7-b927-df644e2e9c24
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: umdf.iwdfdevice_assigndeviceinterfacestate, wudfddi/IWDFDevice::AssignDeviceInterfaceState, AssignDeviceInterfaceState method, UMDFDeviceObjectRef_d3c15e61-9df6-4b55-a479-375486383064.xml, wdf.iwdfdevice_assigndeviceinterfacestate, AssignDeviceInterfaceState method, IWDFDevice interface, AssignDeviceInterfaceState, IWDFDevice, IWDFDevice interface, AssignDeviceInterfaceState method, IWDFDevice::AssignDeviceInterfaceState
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.5
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFDevice.AssignDeviceInterfaceState
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

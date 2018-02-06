@@ -1,41 +1,47 @@
 ---
-UID : NF:hidpi.HidP_InitializeReportForID
-title : HidP_InitializeReportForID function
-author : windows-driver-content
-description : The HidP_InitializeReportForID routine initializes a HID report.
-old-location : hid\hidp_initializereportforid.htm
-old-project : hid
-ms.assetid : 9d56a07e-8898-4bd6-93ae-752ff7d3b215
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : hidpi/HidP_InitializeReportForID, HidP_InitializeReportForID, HidP_InitializeReportForID routine [Human Input Devices], hidfunc_b02350cf-7d33-4a71-9afb-4b3c07e52650.xml, hid.hidp_initializereportforid
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : hidpi.h
-req.include-header : Hidpi.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 2000 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Hidparse.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HIDP_REPORT_TYPE
+UID: NF:hidpi.HidP_InitializeReportForID
+title: HidP_InitializeReportForID function
+author: windows-driver-content
+description: The HidP_InitializeReportForID routine initializes a HID report.
+old-location: hid\hidp_initializereportforid.htm
+old-project: hid
+ms.assetid: 9d56a07e-8898-4bd6-93ae-752ff7d3b215
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: hidpi/HidP_InitializeReportForID, HidP_InitializeReportForID, HidP_InitializeReportForID routine [Human Input Devices], hidfunc_b02350cf-7d33-4a71-9afb-4b3c07e52650.xml, hid.hidp_initializereportforid
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: hidpi.h
+req.include-header: Hidpi.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 2000 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Hidparse.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Hidparse.lib
+-	Hidparse.dll
+apiname:
+-	HidP_InitializeReportForID
+product: Windows
+targetos: Windows
+req.typenames: HIDP_REPORT_TYPE
 ---
 
 

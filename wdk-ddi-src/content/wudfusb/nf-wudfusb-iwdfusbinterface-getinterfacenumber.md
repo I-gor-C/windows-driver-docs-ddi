@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfusb.IWDFUsbInterface.GetInterfaceNumber
-title : IWDFUsbInterface::GetInterfaceNumber method
-author : windows-driver-content
-description : The GetInterfaceNumber method retrieves the index of a USB interface.
-old-location : wdf\iwdfusbinterface_getinterfacenumber.htm
-old-project : wdf
-ms.assetid : de8de14a-94a8-49e2-912a-9c174f5a2c74
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : IWDFUsbInterface, GetInterfaceNumber, umdf.iwdfusbinterface_getinterfacenumber, wdf.iwdfusbinterface_getinterfacenumber, GetInterfaceNumber method, GetInterfaceNumber method, IWDFUsbInterface interface, IWDFUsbInterface interface, GetInterfaceNumber method, wudfusb/IWDFUsbInterface::GetInterfaceNumber, IWDFUsbInterface::GetInterfaceNumber, UMDFUSBref_4f4d9bc1-a1a1-4cc4-87ba-522fa3f8a0f7.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfusb.h
-req.include-header : Wudfusb.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.5
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfusb.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
-req.product : Windows 10 or later.
+UID: NF:wudfusb.IWDFUsbInterface.GetInterfaceNumber
+title: IWDFUsbInterface::GetInterfaceNumber method
+author: windows-driver-content
+description: The GetInterfaceNumber method retrieves the index of a USB interface.
+old-location: wdf\iwdfusbinterface_getinterfacenumber.htm
+old-project: wdf
+ms.assetid: de8de14a-94a8-49e2-912a-9c174f5a2c74
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: IWDFUsbInterface, GetInterfaceNumber, umdf.iwdfusbinterface_getinterfacenumber, wdf.iwdfusbinterface_getinterfacenumber, GetInterfaceNumber method, GetInterfaceNumber method, IWDFUsbInterface interface, IWDFUsbInterface interface, GetInterfaceNumber method, wudfusb/IWDFUsbInterface::GetInterfaceNumber, IWDFUsbInterface::GetInterfaceNumber, UMDFUSBref_4f4d9bc1-a1a1-4cc4-87ba-522fa3f8a0f7.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfusb.h
+req.include-header: Wudfusb.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.5
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfusb.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFUsbInterface.GetInterfaceNumber
+product: Windows
+targetos: Windows
+req.typenames: WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmthk._D3DKMT_WAITFORSYNCHRONIZATIONOBJECTFROMCPU
-title : "_D3DKMT_WAITFORSYNCHRONIZATIONOBJECTFROMCPU"
-author : windows-driver-content
-description : D3DKMT_WAITFORSYNCHRONIZATIONOBJECTFROMCPU is used with D3DKMTWaitForSynchronizationObjectFromCpu to wait for a monitored fence to reach a certain value.
-old-location : display\d3dkmt_waitforsynchronizationobjectfromcpu.htm
-old-project : display
-ms.assetid : 76091965-D87B-4429-85A8-EC8085C773D7
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.d3dkmt_waitforsynchronizationobjectfromcpu, d3dkmthk/D3DKMT_WAITFORSYNCHRONIZATIONOBJECTFROMCPU, WaitAny, D3DKMT_WAITFORSYNCHRONIZATIONOBJECTFROMCPU, _D3DKMT_WAITFORSYNCHRONIZATIONOBJECTFROMCPU, D3DKMT_WAITFORSYNCHRONIZATIONOBJECTFROMCPU structure [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_WAITFORSYNCHRONIZATIONOBJECTFROMCPU
+UID: NS:d3dkmthk._D3DKMT_WAITFORSYNCHRONIZATIONOBJECTFROMCPU
+title: "_D3DKMT_WAITFORSYNCHRONIZATIONOBJECTFROMCPU"
+author: windows-driver-content
+description: D3DKMT_WAITFORSYNCHRONIZATIONOBJECTFROMCPU is used with D3DKMTWaitForSynchronizationObjectFromCpu to wait for a monitored fence to reach a certain value.
+old-location: display\d3dkmt_waitforsynchronizationobjectfromcpu.htm
+old-project: display
+ms.assetid: 76091965-D87B-4429-85A8-EC8085C773D7
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.d3dkmt_waitforsynchronizationobjectfromcpu, d3dkmthk/D3DKMT_WAITFORSYNCHRONIZATIONOBJECTFROMCPU, WaitAny, D3DKMT_WAITFORSYNCHRONIZATIONOBJECTFROMCPU, _D3DKMT_WAITFORSYNCHRONIZATIONOBJECTFROMCPU, D3DKMT_WAITFORSYNCHRONIZATIONOBJECTFROMCPU structure [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	D3dkmthk.h
+apiname:
+-	D3DKMT_WAITFORSYNCHRONIZATIONOBJECTFROMCPU
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_WAITFORSYNCHRONIZATIONOBJECTFROMCPU
 ---
 
 # _D3DKMT_WAITFORSYNCHRONIZATIONOBJECTFROMCPU structure

@@ -1,42 +1,47 @@
 ---
-UID : NC:wlanihv.DOT11EXT_SET_VIRTUAL_STATION_AP_PROPERTIES
-title : DOT11EXT_SET_VIRTUAL_STATION_AP_PROPERTIES
-author : windows-driver-content
-description : Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
-old-location : netvista\dot11extsetvirtualstationapproperties.htm
-old-project : netvista
-ms.assetid : 11ba5799-2bb5-475f-bf69-cf1a1c3c128c
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.dot11extsetvirtualstationapproperties, Dot11ExtSetVirtualStationAPProperties callback function [Network Drivers Starting with Windows Vista], Dot11ExtSetVirtualStationAPProperties, DOT11EXT_SET_VIRTUAL_STATION_AP_PROPERTIES, DOT11EXT_SET_VIRTUAL_STATION_AP_PROPERTIES, wlanihv/Dot11ExtSetVirtualStationAPProperties, Native_802.11_IHV_Ext_99551e02-eec3-413e-a14d-60d6ce5c09ee.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wlanihv.h
-req.include-header : Wlanihv.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows 7 and later versions of the Windows operating   systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDRIVER_INFO_8W, DRIVER_INFO_8W, *LPDRIVER_INFO_8W"
-req.product : Windows 10 or later.
+UID: NC:wlanihv.DOT11EXT_SET_VIRTUAL_STATION_AP_PROPERTIES
+title: DOT11EXT_SET_VIRTUAL_STATION_AP_PROPERTIES
+author: windows-driver-content
+description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+old-location: netvista\dot11extsetvirtualstationapproperties.htm
+old-project: netvista
+ms.assetid: 11ba5799-2bb5-475f-bf69-cf1a1c3c128c
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.dot11extsetvirtualstationapproperties, Dot11ExtSetVirtualStationAPProperties callback function [Network Drivers Starting with Windows Vista], Dot11ExtSetVirtualStationAPProperties, DOT11EXT_SET_VIRTUAL_STATION_AP_PROPERTIES, DOT11EXT_SET_VIRTUAL_STATION_AP_PROPERTIES, wlanihv/Dot11ExtSetVirtualStationAPProperties, Native_802.11_IHV_Ext_99551e02-eec3-413e-a14d-60d6ce5c09ee.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wlanihv.h
+req.include-header: Wlanihv.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows 7 and later versions of the Windows operating   systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	wlanihv.h
+apiname:
+-	Dot11ExtSetVirtualStationAPProperties
+product: Windows
+targetos: Windows
+req.typenames: "*PDRIVER_INFO_8W, DRIVER_INFO_8W, *LPDRIVER_INFO_8W"
+req.product: Windows 10 or later.
 ---
 
 

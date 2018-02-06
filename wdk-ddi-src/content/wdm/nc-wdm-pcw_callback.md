@@ -1,38 +1,38 @@
 ---
-UID : NC:wdm.PCW_CALLBACK
-title : PCW_CALLBACK
-author : windows-driver-content
-description : Providers can implement a PCW_CALLBACK function to receive notification when consumers perform certain actions, such as adding or removing counters from a query.
-old-location : devtest\pcwcallback.htm
-old-project : devtest
-ms.assetid : 5058fc17-1016-45bc-a6ea-5e2458824e7b
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : _WDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows 7 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.alt-api : PcwCallback
-req.alt-loc : Wdm.h
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : <=APC_LEVEL
-req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
-req.product : Windows 10 or later.
+UID: NC:wdm.PCW_CALLBACK
+title: PCW_CALLBACK
+author: windows-driver-content
+description: Providers can implement a PCW_CALLBACK function to receive notification when consumers perform certain actions, such as adding or removing counters from a query.
+old-location: devtest\pcwcallback.htm
+old-project: devtest
+ms.assetid: 5058fc17-1016-45bc-a6ea-5e2458824e7b
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: _WDI_TYPE_PMK_NAME, WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows 7 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.alt-api: PcwCallback
+req.alt-loc: Wdm.h
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: <=APC_LEVEL
+req.typenames: WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+req.product: Windows 10 or later.
 ---
 
 

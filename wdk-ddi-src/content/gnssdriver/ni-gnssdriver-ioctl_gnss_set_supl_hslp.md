@@ -1,41 +1,46 @@
 ---
-UID : NI:gnssdriver.IOCTL_GNSS_SET_SUPL_HSLP
-title : IOCTL_GNSS_SET_SUPL_HSLP
-author : windows-driver-content
-description : The IOCTL_GNSS_SET_SUPL_HSLP control code is used by the GNSS adapter to set the SUPL H-SLP address.
-old-location : sensors\ioctl_gnss_set_supl_hslp.htm
-old-project : sensors
-ms.assetid : A6056EB4-4CEA-4C80-A3CA-1B6B81F47889
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : sensors.ioctl_gnss_set_supl_hslp, IOCTL_GNSS_SET_SUPL_HSLP control code [Sensor Devices], IOCTL_GNSS_SET_SUPL_HSLP, gnssdriver/IOCTL_GNSS_SET_SUPL_HSLP
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : gnssdriver.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : GNSS_SUPL_CERT_ACTION
+UID: NI:gnssdriver.IOCTL_GNSS_SET_SUPL_HSLP
+title: IOCTL_GNSS_SET_SUPL_HSLP
+author: windows-driver-content
+description: The IOCTL_GNSS_SET_SUPL_HSLP control code is used by the GNSS adapter to set the SUPL H-SLP address.
+old-location: sensors\ioctl_gnss_set_supl_hslp.htm
+old-project: sensors
+ms.assetid: A6056EB4-4CEA-4C80-A3CA-1B6B81F47889
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: sensors.ioctl_gnss_set_supl_hslp, IOCTL_GNSS_SET_SUPL_HSLP control code [Sensor Devices], IOCTL_GNSS_SET_SUPL_HSLP, gnssdriver/IOCTL_GNSS_SET_SUPL_HSLP
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: gnssdriver.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	gnssdriver.h
+apiname:
+-	IOCTL_GNSS_SET_SUPL_HSLP
+product: Windows
+targetos: Windows
+req.typenames: GNSS_SUPL_CERT_ACTION
 ---
 
 # IOCTL_GNSS_SET_SUPL_HSLP IOCTL

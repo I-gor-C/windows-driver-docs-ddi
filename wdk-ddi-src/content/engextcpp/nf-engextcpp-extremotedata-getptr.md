@@ -1,41 +1,46 @@
 ---
-UID : NF:engextcpp.ExtRemoteData.GetPtr
-title : ExtRemoteData::GetPtr method
-author : windows-driver-content
-description : The GetPtr method returns a pointer from the target's memory version of the ExtRemoteData object, which represents the contents of the target's memory. The size of the unsigned integer from the target is the same size as a pointer on the target.
-old-location : debugger\extremotedata_getptr.htm
-old-project : debugger
-ms.assetid : f9778881-9b53-49c5-9fe8-80f9a866b9af
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : ExtRemoteData, GetPtr method [Windows Debugging], ExtRemoteData class, debugger.extremotedata_getptr, ExtRemoteData class [Windows Debugging], GetPtr method, ExtRemoteData::GetPtr, EngExtCpp_Ref_6aea2145-72ce-4bdc-afb2-1fa360e643da.xml, GetPtr, GetPtr method [Windows Debugging]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : engextcpp.hpp
-req.include-header : Engextcpp.hpp
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : engextcpp.hpp
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SILO_DRIVER_CAPABILITIES, *PSILO_DRIVER_CAPABILITIES
+UID: NF:engextcpp.ExtRemoteData.GetPtr
+title: ExtRemoteData::GetPtr method
+author: windows-driver-content
+description: The GetPtr method returns a pointer from the target's memory version of the ExtRemoteData object, which represents the contents of the target's memory. The size of the unsigned integer from the target is the same size as a pointer on the target.
+old-location: debugger\extremotedata_getptr.htm
+old-project: debugger
+ms.assetid: f9778881-9b53-49c5-9fe8-80f9a866b9af
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: ExtRemoteData, GetPtr method [Windows Debugging], ExtRemoteData class, debugger.extremotedata_getptr, ExtRemoteData class [Windows Debugging], GetPtr method, ExtRemoteData::GetPtr, EngExtCpp_Ref_6aea2145-72ce-4bdc-afb2-1fa360e643da.xml, GetPtr, GetPtr method [Windows Debugging]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: engextcpp.hpp
+req.include-header: Engextcpp.hpp
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: engextcpp.hpp
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	engextcpp.hpp
+apiname:
+-	ExtRemoteData.GetPtr
+product: Windows
+targetos: Windows
+req.typenames: SILO_DRIVER_CAPABILITIES, *PSILO_DRIVER_CAPABILITIES
 ---
 
 

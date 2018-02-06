@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfusb.IWDFUsbTargetPipe.SetPipePolicy
-title : IWDFUsbTargetPipe::SetPipePolicy method
-author : windows-driver-content
-description : The SetPipePolicy method sets the WinUsb pipe policy.
-old-location : wdf\iwdfusbtargetpipe_setpipepolicy.htm
-old-project : wdf
-ms.assetid : 3c8f5c4a-a1a3-41a9-ae55-f83048aab0ec
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : IWDFUsbTargetPipe, UMDFUSBref_ab486cfe-19aa-440c-a017-e956aa4d2bb1.xml, SetPipePolicy, wdf.iwdfusbtargetpipe_setpipepolicy, wudfusb/IWDFUsbTargetPipe::SetPipePolicy, SetPipePolicy method, IWDFUsbTargetPipe interface, umdf.iwdfusbtargetpipe_setpipepolicy, IWDFUsbTargetPipe::SetPipePolicy, IWDFUsbTargetPipe interface, SetPipePolicy method, SetPipePolicy method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfusb.h
-req.include-header : Wudfusb.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.5
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfusb.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
-req.product : Windows 10 or later.
+UID: NF:wudfusb.IWDFUsbTargetPipe.SetPipePolicy
+title: IWDFUsbTargetPipe::SetPipePolicy method
+author: windows-driver-content
+description: The SetPipePolicy method sets the WinUsb pipe policy.
+old-location: wdf\iwdfusbtargetpipe_setpipepolicy.htm
+old-project: wdf
+ms.assetid: 3c8f5c4a-a1a3-41a9-ae55-f83048aab0ec
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: IWDFUsbTargetPipe, UMDFUSBref_ab486cfe-19aa-440c-a017-e956aa4d2bb1.xml, SetPipePolicy, wdf.iwdfusbtargetpipe_setpipepolicy, wudfusb/IWDFUsbTargetPipe::SetPipePolicy, SetPipePolicy method, IWDFUsbTargetPipe interface, umdf.iwdfusbtargetpipe_setpipepolicy, IWDFUsbTargetPipe::SetPipePolicy, IWDFUsbTargetPipe interface, SetPipePolicy method, SetPipePolicy method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfusb.h
+req.include-header: Wudfusb.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.5
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfusb.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFUsbTargetPipe.SetPipePolicy
+product: Windows
+targetos: Windows
+req.typenames: WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
+req.product: Windows 10 or later.
 ---
 
 

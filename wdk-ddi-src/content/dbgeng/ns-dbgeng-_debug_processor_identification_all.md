@@ -1,41 +1,46 @@
 ---
-UID : NS:dbgeng._DEBUG_PROCESSOR_IDENTIFICATION_ALL
-title : "_DEBUG_PROCESSOR_IDENTIFICATION_ALL"
-author : windows-driver-content
-description : This union contains relevant information for a processor the supported processors.
-old-location : debugger\debug_processor_identification_all.htm
-old-project : debugger
-ms.assetid : 2C4C03BC-0D84-4151-B1A1-FE76F0355CD6
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : "*PDEBUG_PROCESSOR_IDENTIFICATION_ALL, DEBUG_PROCESSOR_IDENTIFICATION_ALL union [Windows Debugging], debugger.debug_processor_identification_all, DEBUG_PROCESSOR_IDENTIFICATION_ALL, _DEBUG_PROCESSOR_IDENTIFICATION_ALL, dbgeng/DEBUG_PROCESSOR_IDENTIFICATION_ALL"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : dbgeng.h
-req.include-header : DbgEng.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDEBUG_PROCESSOR_IDENTIFICATION_ALL, DEBUG_PROCESSOR_IDENTIFICATION_ALL"
+UID: NS:dbgeng._DEBUG_PROCESSOR_IDENTIFICATION_ALL
+title: "_DEBUG_PROCESSOR_IDENTIFICATION_ALL"
+author: windows-driver-content
+description: This union contains relevant information for a processor the supported processors.
+old-location: debugger\debug_processor_identification_all.htm
+old-project: debugger
+ms.assetid: 2C4C03BC-0D84-4151-B1A1-FE76F0355CD6
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: "*PDEBUG_PROCESSOR_IDENTIFICATION_ALL, DEBUG_PROCESSOR_IDENTIFICATION_ALL union [Windows Debugging], debugger.debug_processor_identification_all, DEBUG_PROCESSOR_IDENTIFICATION_ALL, _DEBUG_PROCESSOR_IDENTIFICATION_ALL, dbgeng/DEBUG_PROCESSOR_IDENTIFICATION_ALL"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: dbgeng.h
+req.include-header: DbgEng.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	DbgEng.h
+apiname:
+-	DEBUG_PROCESSOR_IDENTIFICATION_ALL
+product: Windows
+targetos: Windows
+req.typenames: "*PDEBUG_PROCESSOR_IDENTIFICATION_ALL, DEBUG_PROCESSOR_IDENTIFICATION_ALL"
 ---
 
 # _DEBUG_PROCESSOR_IDENTIFICATION_ALL structure

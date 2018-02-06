@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugControl3.GetNumberEvents
-title : IDebugControl3::GetNumberEvents method
-author : windows-driver-content
-description : The GetNumberEvents method returns the number of events for the current target, if the number of events is fixed.
-old-location : debugger\getnumberevents.htm
-old-project : debugger
-ms.assetid : fb570110-a0a5-4a95-9a26-c4e4ada309b2
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugControl3 interface [Windows Debugging], GetNumberEvents method, GetNumberEvents method [Windows Debugging], GetNumberEvents method [Windows Debugging], IDebugControl3 interface, dbgeng/IDebugControl3::GetNumberEvents, IDebugControl3, debugger.getnumberevents, IDebugControl_520cbec0-e8b3-49d1-9938-a8f496585758.xml, IDebugControl3::GetNumberEvents, GetNumberEvents
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl3.GetNumberEvents
+title: IDebugControl3::GetNumberEvents method
+author: windows-driver-content
+description: The GetNumberEvents method returns the number of events for the current target, if the number of events is fixed.
+old-location: debugger\getnumberevents.htm
+old-project: debugger
+ms.assetid: fb570110-a0a5-4a95-9a26-c4e4ada309b2
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugControl3 interface [Windows Debugging], GetNumberEvents method, GetNumberEvents method [Windows Debugging], GetNumberEvents method [Windows Debugging], IDebugControl3 interface, dbgeng/IDebugControl3::GetNumberEvents, IDebugControl3, debugger.getnumberevents, IDebugControl_520cbec0-e8b3-49d1-9938-a8f496585758.xml, IDebugControl3::GetNumberEvents, GetNumberEvents
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl3.GetNumberEvents
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

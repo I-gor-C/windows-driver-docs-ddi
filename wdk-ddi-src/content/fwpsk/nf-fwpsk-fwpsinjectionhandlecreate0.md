@@ -1,41 +1,47 @@
 ---
-UID : NF:fwpsk.FwpsInjectionHandleCreate0
-title : FwpsInjectionHandleCreate0 function
-author : windows-driver-content
-description : The FwpsInjectionHandleCreate0 function creates a handle that can be used by packet injection functions to inject packet or stream data into the TCP/IP network stack and by the FwpsQueryPacketInjectionState0 function to query the packet injection state.Note  FwpsInjectionHandleCreate0 is a specific version of FwpsInjectionHandleCreate. See WFP Version-Independent Names and Targeting Specific Versions of Windows for more information.
-old-location : netvista\fwpsinjectionhandlecreate0.htm
-old-project : netvista
-ms.assetid : 61cee8ef-1070-46d4-a541-94a9f09b593b
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.fwpsinjectionhandlecreate0, FwpsInjectionHandleCreate0 function [Network Drivers Starting with Windows Vista], FwpsInjectionHandleCreate0, wfp_ref_2_funct_3_fwps_I_24f21d21-bf9c-4f77-9630-2c589b18aca4.xml, fwpsk/FwpsInjectionHandleCreate0
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fwpsk.h
-req.include-header : Fwpsk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Fwpkclnt.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FWPS_VSWITCH_EVENT_TYPE
+UID: NF:fwpsk.FwpsInjectionHandleCreate0
+title: FwpsInjectionHandleCreate0 function
+author: windows-driver-content
+description: The FwpsInjectionHandleCreate0 function creates a handle that can be used by packet injection functions to inject packet or stream data into the TCP/IP network stack and by the FwpsQueryPacketInjectionState0 function to query the packet injection state.Note  FwpsInjectionHandleCreate0 is a specific version of FwpsInjectionHandleCreate. See WFP Version-Independent Names and Targeting Specific Versions of Windows for more information.
+old-location: netvista\fwpsinjectionhandlecreate0.htm
+old-project: netvista
+ms.assetid: 61cee8ef-1070-46d4-a541-94a9f09b593b
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.fwpsinjectionhandlecreate0, FwpsInjectionHandleCreate0 function [Network Drivers Starting with Windows Vista], FwpsInjectionHandleCreate0, wfp_ref_2_funct_3_fwps_I_24f21d21-bf9c-4f77-9630-2c589b18aca4.xml, fwpsk/FwpsInjectionHandleCreate0
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fwpsk.h
+req.include-header: Fwpsk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Fwpkclnt.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	fwpkclnt.lib
+-	fwpkclnt.dll
+apiname:
+-	FwpsInjectionHandleCreate0
+product: Windows
+targetos: Windows
+req.typenames: FWPS_VSWITCH_EVENT_TYPE
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NE:ntdddisk._DETECTION_TYPE
-title : "_DETECTION_TYPE"
-author : windows-driver-content
-description : The DETECTION_TYPE enumeration type is used in conjunction with the IOCTL_DISK_GET_DRIVE_GEOMETRY_EX request and the DISK_GEOMETRY_EX structure to determine the type of formatting used by the BIOS to record the disk geometry.
-old-location : storage\detection_type.htm
-old-project : storage
-ms.assetid : 3257a207-dd7e-4321-b037-95d62cea6f76
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : ntdddisk/DETECTION_TYPE, DetectInt13, DETECTION_TYPE, ntdddisk/DetectNone, _DETECTION_TYPE, storage.detection_type, DetectExInt13, ntdddisk/DetectInt13, structs-disk_2d3d7a57-abcd-43b2-a62d-8b8c45a9fca0.xml, ntdddisk/DetectExInt13, DetectNone, DETECTION_TYPE enumeration [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : ntdddisk.h
-req.include-header : Ntdddisk.h, Ntddk.h, Ntdddisk.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DETECTION_TYPE
+UID: NE:ntdddisk._DETECTION_TYPE
+title: "_DETECTION_TYPE"
+author: windows-driver-content
+description: The DETECTION_TYPE enumeration type is used in conjunction with the IOCTL_DISK_GET_DRIVE_GEOMETRY_EX request and the DISK_GEOMETRY_EX structure to determine the type of formatting used by the BIOS to record the disk geometry.
+old-location: storage\detection_type.htm
+old-project: storage
+ms.assetid: 3257a207-dd7e-4321-b037-95d62cea6f76
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: ntdddisk/DETECTION_TYPE, DetectInt13, DETECTION_TYPE, ntdddisk/DetectNone, _DETECTION_TYPE, storage.detection_type, DetectExInt13, ntdddisk/DetectInt13, structs-disk_2d3d7a57-abcd-43b2-a62d-8b8c45a9fca0.xml, ntdddisk/DetectExInt13, DetectNone, DETECTION_TYPE enumeration [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: ntdddisk.h
+req.include-header: Ntdddisk.h, Ntddk.h, Ntdddisk.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntdddisk.h
+apiname:
+-	DETECTION_TYPE
+product: Windows
+targetos: Windows
+req.typenames: DETECTION_TYPE
 ---
 
 # _DETECTION_TYPE Enumeration
@@ -53,35 +58,35 @@ typedef enum _DETECTION_TYPE {
 ## Constants
 
 <table>
-
-<tr>
-<td>DetectExInt13</td>
-<td>Indicates that the disk contains an extended INT 13h partition.</td>
-</tr>
-
-<tr>
-<td>DetectInt13</td>
-<td>Indicates that the disk has a standard INT 13h partition.</td>
-</tr>
-
-<tr>
-<td>DetectNone</td>
-<td>Indicates that the disk contains neither an INT 13h partition nor an extended INT 13h partition.</td>
-</tr>
+            
+                <tr>
+                    <td>DetectExInt13</td>
+                    <td>Indicates that the disk contains an extended INT 13h partition.</td>
+                </tr>
+            
+                <tr>
+                    <td>DetectInt13</td>
+                    <td>Indicates that the disk has a standard INT 13h partition.</td>
+                </tr>
+            
+                <tr>
+                    <td>DetectNone</td>
+                    <td>Indicates that the disk contains neither an INT 13h partition nor an extended INT 13h partition.</td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-Possible formatting types are the standard INT 13h partition format or the extended INT 13h partition format.
+        Possible formatting types are the standard INT 13h partition format or the extended INT 13h partition format.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
 | **Header** | ntdddisk.h (include Ntdddisk.h, Ntddk.h, Ntdddisk.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\ntdddisk\ns-ntdddisk-_disk_detection_info.md">DISK_DETECTION_INFO</a>
+        <a href="..\ntdddisk\ns-ntdddisk-_disk_detection_info.md">DISK_DETECTION_INFO</a>
 
  
 

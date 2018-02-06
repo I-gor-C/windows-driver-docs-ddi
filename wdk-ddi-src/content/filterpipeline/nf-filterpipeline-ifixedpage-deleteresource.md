@@ -1,41 +1,46 @@
 ---
-UID : NF:filterpipeline.IFixedPage.DeleteResource
-title : IFixedPage::DeleteResource method
-author : windows-driver-content
-description : The DeleteResource method deletes a resource that is associated with the page.
-old-location : print\ifixedpage_deleteresource.htm
-old-project : print
-ms.assetid : 11aefa65-9f1c-4a6e-aac0-8727c6e00a02
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : DeleteResource method [Print Devices], IFixedPage::DeleteResource, IFixedPage, filterpipeline_b87a40f2-68cc-4664-9531-aaffc41b1a1a.xml, IFixedPage interface [Print Devices], DeleteResource method, DeleteResource method [Print Devices], IFixedPage interface, print.ifixedpage_deleteresource, DeleteResource, filterpipeline/IFixedPage::DeleteResource
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : filterpipeline.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : Filterpipeline.idl
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : filterpipeline.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:filterpipeline.IFixedPage.DeleteResource
+title: IFixedPage::DeleteResource method
+author: windows-driver-content
+description: The DeleteResource method deletes a resource that is associated with the page.
+old-location: print\ifixedpage_deleteresource.htm
+old-project: print
+ms.assetid: 11aefa65-9f1c-4a6e-aac0-8727c6e00a02
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: DeleteResource method [Print Devices], IFixedPage::DeleteResource, IFixedPage, filterpipeline_b87a40f2-68cc-4664-9531-aaffc41b1a1a.xml, IFixedPage interface [Print Devices], DeleteResource method, DeleteResource method [Print Devices], IFixedPage interface, print.ifixedpage_deleteresource, DeleteResource, filterpipeline/IFixedPage::DeleteResource
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: filterpipeline.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: Filterpipeline.idl
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: filterpipeline.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	filterpipeline.h
+apiname:
+-	IFixedPage.DeleteResource
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

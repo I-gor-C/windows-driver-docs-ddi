@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisCancelSendNetBufferLists
-title : NdisCancelSendNetBufferLists function
-author : windows-driver-content
-description : Protocol drivers call the NdisCancelSendNetBufferLists function to cancel the transmission of network data.
-old-location : netvista\ndiscancelsendnetbufferlists.htm
-old-project : netvista
-ms.assetid : 7b61db73-ddd4-4d46-b378-9a82fdf041ea
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.ndiscancelsendnetbufferlists, ndis_sendrcv_ref_f4aca438-863f-44fa-9503-8ac339010360.xml, NdisCancelSendNetBufferLists, ndis/NdisCancelSendNetBufferLists, NdisCancelSendNetBufferLists function [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_SendRcv_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisCancelSendNetBufferLists
+title: NdisCancelSendNetBufferLists function
+author: windows-driver-content
+description: Protocol drivers call the NdisCancelSendNetBufferLists function to cancel the transmission of network data.
+old-location: netvista\ndiscancelsendnetbufferlists.htm
+old-project: netvista
+ms.assetid: 7b61db73-ddd4-4d46-b378-9a82fdf041ea
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.ndiscancelsendnetbufferlists, ndis_sendrcv_ref_f4aca438-863f-44fa-9503-8ac339010360.xml, NdisCancelSendNetBufferLists, ndis/NdisCancelSendNetBufferLists, NdisCancelSendNetBufferLists function [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_SendRcv_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisCancelSendNetBufferLists
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NF:ndis.NdisReadRegisterUshort
-title : NdisReadRegisterUshort macro
-author : windows-driver-content
-description : NdisReadRegisterUshort is called by the miniport driver to read a USHORT from a memory-mapped device register.
-old-location : netvista\ndisreadregisterushort.htm
-old-project : netvista
-ms.assetid : 0048fb18-8728-4b41-b4e2-5762966d5ed0
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NdisReadRegisterUshort, ndis/NdisReadRegisterUshort, NdisReadRegisterUshort macro [Network Drivers Starting with Windows Vista], miniport_register_ref_7eef891a-3f3e-4c42-8165-399555eb018f.xml, netvista.ndisreadregisterushort
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : macro
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisReadRegisterUshort (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisReadRegisterUshort (NDIS   5.1)) in Windows XP.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : ndis.h
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisReadRegisterUshort
+title: NdisReadRegisterUshort macro
+author: windows-driver-content
+description: NdisReadRegisterUshort is called by the miniport driver to read a USHORT from a memory-mapped device register.
+old-location: netvista\ndisreadregisterushort.htm
+old-project: netvista
+ms.assetid: 0048fb18-8728-4b41-b4e2-5762966d5ed0
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NdisReadRegisterUshort, ndis/NdisReadRegisterUshort, NdisReadRegisterUshort macro [Network Drivers Starting with Windows Vista], miniport_register_ref_7eef891a-3f3e-4c42-8165-399555eb018f.xml, netvista.ndisreadregisterushort
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: macro
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisReadRegisterUshort (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisReadRegisterUshort (NDIS   5.1)) in Windows XP.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: ndis.h
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndis.h
+apiname:
+-	NdisReadRegisterUshort
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

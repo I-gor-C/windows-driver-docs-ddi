@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3DWDDM2_0DDI_SETHARDWAREPROTECTION
-title : PFND3DWDDM2_0DDI_SETHARDWAREPROTECTION
-author : windows-driver-content
-description : SetHardwareProtection allows the Desktop Window Manager (DWM) full-screen swap chain buffers to transfer between protected and non-protected states without having to be recreated.
-old-location : display\sethardwareprotection.htm
-old-project : display
-ms.assetid : 9D41C504-1F84-4F1A-B767-D3B423A8AA46
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.sethardwareprotection, pfnSetHardwareProtection callback function [Display Devices], pfnSetHardwareProtection, PFND3DWDDM2_0DDI_SETHARDWAREPROTECTION, PFND3DWDDM2_0DDI_SETHARDWAREPROTECTION, d3d10umddi/pfnSetHardwareProtection
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3DWDDM2_0DDI_SETHARDWAREPROTECTION
+title: PFND3DWDDM2_0DDI_SETHARDWAREPROTECTION
+author: windows-driver-content
+description: SetHardwareProtection allows the Desktop Window Manager (DWM) full-screen swap chain buffers to transfer between protected and non-protected states without having to be recreated.
+old-location: display\sethardwareprotection.htm
+old-project: display
+ms.assetid: 9D41C504-1F84-4F1A-B767-D3B423A8AA46
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.sethardwareprotection, pfnSetHardwareProtection callback function [Display Devices], pfnSetHardwareProtection, PFND3DWDDM2_0DDI_SETHARDWAREPROTECTION, PFND3DWDDM2_0DDI_SETHARDWAREPROTECTION, d3d10umddi/pfnSetHardwareProtection
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	D3d10umddi.h
+apiname:
+-	pfnSetHardwareProtection
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

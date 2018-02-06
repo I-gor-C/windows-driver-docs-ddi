@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.RtlConvertSidToUnicodeString
-title : RtlConvertSidToUnicodeString function
-author : windows-driver-content
-description : The RtlConvertSidToUnicodeString routine generates a printable Unicode string representation of a security identifier (SID).
-old-location : ifsk\rtlconvertsidtounicodestring.htm
-old-project : ifsk
-ms.assetid : 5dea6764-9ca0-4d38-9900-174637c4f648
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ntifs/RtlConvertSidToUnicodeString, RtlConvertSidToUnicodeString, rtlref_4b2b8867-c248-49e9-9b38-de3f9449a504.xml, ifsk.rtlconvertsidtounicodestring, RtlConvertSidToUnicodeString routine [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h, FltKernel.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 2000 and later Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.RtlConvertSidToUnicodeString
+title: RtlConvertSidToUnicodeString function
+author: windows-driver-content
+description: The RtlConvertSidToUnicodeString routine generates a printable Unicode string representation of a security identifier (SID).
+old-location: ifsk\rtlconvertsidtounicodestring.htm
+old-project: ifsk
+ms.assetid: 5dea6764-9ca0-4d38-9900-174637c4f648
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ntifs/RtlConvertSidToUnicodeString, RtlConvertSidToUnicodeString, rtlref_4b2b8867-c248-49e9-9b38-de3f9449a504.xml, ifsk.rtlconvertsidtounicodestring, RtlConvertSidToUnicodeString routine [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h, FltKernel.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 2000 and later Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	RtlConvertSidToUnicodeString
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

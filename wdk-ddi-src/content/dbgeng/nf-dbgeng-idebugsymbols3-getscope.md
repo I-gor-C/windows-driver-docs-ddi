@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugSymbols3.GetScope
-title : IDebugSymbols3::GetScope method
-author : windows-driver-content
-description : The GetScope method returns information about the current scope.
-old-location : debugger\getscope.htm
-old-project : debugger
-ms.assetid : 59eb490e-66d5-4108-8d00-5503fa56665d
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : dbgeng/IDebugSymbols::GetScope, IDebugSymbols2::GetScope, IDebugSymbols::GetScope, dbgeng/IDebugSymbols2::GetScope, IDebugSymbols interface [Windows Debugging], GetScope method, IDebugSymbols3, IDebugSymbols_500f523a-22d9-468e-8d7c-36f49bda089c.xml, GetScope method [Windows Debugging], IDebugSymbols3::GetScope, debugger.getscope, GetScope method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols3 interface [Windows Debugging], GetScope method, dbgeng/IDebugSymbols3::GetScope, IDebugSymbols2 interface [Windows Debugging], GetScope method, GetScope, GetScope method [Windows Debugging], IDebugSymbols interface, GetScope method [Windows Debugging], IDebugSymbols2 interface
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h, Ntddk.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSymbols3.GetScope
+title: IDebugSymbols3::GetScope method
+author: windows-driver-content
+description: The GetScope method returns information about the current scope.
+old-location: debugger\getscope.htm
+old-project: debugger
+ms.assetid: 59eb490e-66d5-4108-8d00-5503fa56665d
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: dbgeng/IDebugSymbols::GetScope, IDebugSymbols2::GetScope, IDebugSymbols::GetScope, dbgeng/IDebugSymbols2::GetScope, IDebugSymbols interface [Windows Debugging], GetScope method, IDebugSymbols3, IDebugSymbols_500f523a-22d9-468e-8d7c-36f49bda089c.xml, GetScope method [Windows Debugging], IDebugSymbols3::GetScope, debugger.getscope, GetScope method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols3 interface [Windows Debugging], GetScope method, dbgeng/IDebugSymbols3::GetScope, IDebugSymbols2 interface [Windows Debugging], GetScope method, GetScope, GetScope method [Windows Debugging], IDebugSymbols interface, GetScope method [Windows Debugging], IDebugSymbols2 interface
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h, Ntddk.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugSymbols.GetScope
+-	IDebugSymbols2.GetScope
+-	IDebugSymbols3.GetScope
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

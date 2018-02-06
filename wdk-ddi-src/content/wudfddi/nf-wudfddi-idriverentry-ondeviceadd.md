@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IDriverEntry.OnDeviceAdd
-title : IDriverEntry::OnDeviceAdd method
-author : windows-driver-content
-description : The OnDeviceAdd method adds a new device to a system.
-old-location : wdf\idriverentry_ondeviceadd.htm
-old-project : wdf
-ms.assetid : f2953b0d-6745-4804-bcda-47c7ddfb901f
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : OnDeviceAdd, UMDFDriverObjectRef_81d1022a-84b6-4a2e-a227-57f30c515171.xml, OnDeviceAdd method, umdf.idriverentry_ondeviceadd, IDriverEntry::OnDeviceAdd, IDriverEntry interface, OnDeviceAdd method, wdf.idriverentry_ondeviceadd, IDriverEntry, OnDeviceAdd method, IDriverEntry interface, wudfddi/IDriverEntry::OnDeviceAdd
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IDriverEntry.OnDeviceAdd
+title: IDriverEntry::OnDeviceAdd method
+author: windows-driver-content
+description: The OnDeviceAdd method adds a new device to a system.
+old-location: wdf\idriverentry_ondeviceadd.htm
+old-project: wdf
+ms.assetid: f2953b0d-6745-4804-bcda-47c7ddfb901f
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: OnDeviceAdd, UMDFDriverObjectRef_81d1022a-84b6-4a2e-a227-57f30c515171.xml, OnDeviceAdd method, umdf.idriverentry_ondeviceadd, IDriverEntry::OnDeviceAdd, IDriverEntry interface, OnDeviceAdd method, wdf.idriverentry_ondeviceadd, IDriverEntry, OnDeviceAdd method, IDriverEntry interface, wudfddi/IDriverEntry::OnDeviceAdd
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Wudfddi.h
+apiname:
+-	IDriverEntry.OnDeviceAdd
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

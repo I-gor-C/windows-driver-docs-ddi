@@ -1,42 +1,47 @@
 ---
-UID : NS:usbspec._USB_CONFIGURATION_DESCRIPTOR
-title : "_USB_CONFIGURATION_DESCRIPTOR"
-author : windows-driver-content
-description : The USB_CONFIGURATION_DESCRIPTOR structure is used by USB client drivers to hold a USB-defined configuration descriptor.
-old-location : buses\usb_configuration_descriptor.htm
-old-project : usbref
-ms.assetid : 2a9398f7-4d01-42a6-9ac2-ca105db76bb8
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : PUSB_CONFIGURATION_DESCRIPTOR, PUSB_CONFIGURATION_DESCRIPTOR structure pointer [Buses], usbspec/USB_CONFIGURATION_DESCRIPTOR, USB_CONFIGURATION_DESCRIPTOR structure [Buses], buses.usb_configuration_descriptor, USB_CONFIGURATION_DESCRIPTOR, _USB_CONFIGURATION_DESCRIPTOR, *PUSB_CONFIGURATION_DESCRIPTOR, usbspec/PUSB_CONFIGURATION_DESCRIPTOR, usbstrct_f057519c-8b38-479c-9065-16c2106550aa.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : usbspec.h
-req.include-header : Usb100.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : USB_CONFIGURATION_DESCRIPTOR, *PUSB_CONFIGURATION_DESCRIPTOR
-req.product : Windows 10 or later.
+UID: NS:usbspec._USB_CONFIGURATION_DESCRIPTOR
+title: "_USB_CONFIGURATION_DESCRIPTOR"
+author: windows-driver-content
+description: The USB_CONFIGURATION_DESCRIPTOR structure is used by USB client drivers to hold a USB-defined configuration descriptor.
+old-location: buses\usb_configuration_descriptor.htm
+old-project: usbref
+ms.assetid: 2a9398f7-4d01-42a6-9ac2-ca105db76bb8
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: PUSB_CONFIGURATION_DESCRIPTOR, PUSB_CONFIGURATION_DESCRIPTOR structure pointer [Buses], usbspec/USB_CONFIGURATION_DESCRIPTOR, USB_CONFIGURATION_DESCRIPTOR structure [Buses], buses.usb_configuration_descriptor, USB_CONFIGURATION_DESCRIPTOR, _USB_CONFIGURATION_DESCRIPTOR, *PUSB_CONFIGURATION_DESCRIPTOR, usbspec/PUSB_CONFIGURATION_DESCRIPTOR, usbstrct_f057519c-8b38-479c-9065-16c2106550aa.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: usbspec.h
+req.include-header: Usb100.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	usbspec.h
+apiname:
+-	USB_CONFIGURATION_DESCRIPTOR
+product: Windows
+targetos: Windows
+req.typenames: USB_CONFIGURATION_DESCRIPTOR, *PUSB_CONFIGURATION_DESCRIPTOR
+req.product: Windows 10 or later.
 ---
 
 # _USB_CONFIGURATION_DESCRIPTOR structure

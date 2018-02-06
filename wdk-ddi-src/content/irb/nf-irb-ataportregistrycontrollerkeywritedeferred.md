@@ -1,41 +1,46 @@
 ---
-UID : NF:irb.AtaPortRegistryControllerKeyWriteDeferred
-title : AtaPortRegistryControllerKeyWriteDeferred function
-author : windows-driver-content
-description : The AtaPortRegistryControllerKeyWriteDeferred routine writes the data asynchronously to the indicated value name under the registry key HKLM\CurrentControlSet\Services\&lt;service name&gt;\ControllerN, where N is the number of the controller.
-old-location : storage\ataportregistrycontrollerkeywritedeferred.htm
-old-project : storage
-ms.assetid : f4297e91-06ae-4c7a-87bc-12e3f5b0238c
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ataportregistrycontrollerkeywritedeferred, AtaPortRegistryControllerKeyWriteDeferred routine [Storage Devices], atartns_cd43ce27-787a-4ffb-99d5-de7f410c4b32.xml, irb/AtaPortRegistryControllerKeyWriteDeferred, AtaPortRegistryControllerKeyWriteDeferred
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : irb.h
-req.include-header : Ata.h, Irb.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : IDE_POWER_STATE
+UID: NF:irb.AtaPortRegistryControllerKeyWriteDeferred
+title: AtaPortRegistryControllerKeyWriteDeferred function
+author: windows-driver-content
+description: The AtaPortRegistryControllerKeyWriteDeferred routine writes the data asynchronously to the indicated value name under the registry key HKLM\CurrentControlSet\Services\&lt;service name&gt;\ControllerN, where N is the number of the controller.
+old-location: storage\ataportregistrycontrollerkeywritedeferred.htm
+old-project: storage
+ms.assetid: f4297e91-06ae-4c7a-87bc-12e3f5b0238c
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ataportregistrycontrollerkeywritedeferred, AtaPortRegistryControllerKeyWriteDeferred routine [Storage Devices], atartns_cd43ce27-787a-4ffb-99d5-de7f410c4b32.xml, irb/AtaPortRegistryControllerKeyWriteDeferred, AtaPortRegistryControllerKeyWriteDeferred
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: irb.h
+req.include-header: Ata.h, Irb.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	irb.h
+apiname:
+-	AtaPortRegistryControllerKeyWriteDeferred
+product: Windows
+targetos: Windows
+req.typenames: IDE_POWER_STATE
 ---
 
 

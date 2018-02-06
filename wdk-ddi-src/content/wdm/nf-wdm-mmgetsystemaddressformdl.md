@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.MmGetSystemAddressForMdl
-title : MmGetSystemAddressForMdl macro
-author : windows-driver-content
-description : The MmGetSystemAddressForMdl routine is obsolete for Windows 2000 and later versions of Windows, and for Windows Me.
-old-location : kernel\mmgetsystemaddressformdl.htm
-old-project : kernel
-ms.assetid : e5366a28-a541-47bb-b158-af676ad46273
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : k106_fc92914d-81c3-4ae9-a12d-86003d55bb4d.xml, kernel.mmgetsystemaddressformdl, MmGetSystemAddressForMdl routine [Kernel-Mode Driver Architecture], MmGetSystemAddressForMdl, wdm/MmGetSystemAddressForMdl
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : macro
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Desktop
-req.target-min-winverclnt : Obsolete for Windows 2000 and later versions of Windows, and for Windows Me. This routine is supported only for WDM drivers that must run on Windows 98. Otherwise, use MmGetSystemAddressForMdlSafe.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wdm.h
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.MmGetSystemAddressForMdl
+title: MmGetSystemAddressForMdl macro
+author: windows-driver-content
+description: The MmGetSystemAddressForMdl routine is obsolete for Windows 2000 and later versions of Windows, and for Windows Me.
+old-location: kernel\mmgetsystemaddressformdl.htm
+old-project: kernel
+ms.assetid: e5366a28-a541-47bb-b158-af676ad46273
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: k106_fc92914d-81c3-4ae9-a12d-86003d55bb4d.xml, kernel.mmgetsystemaddressformdl, MmGetSystemAddressForMdl routine [Kernel-Mode Driver Architecture], MmGetSystemAddressForMdl, wdm/MmGetSystemAddressForMdl
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: macro
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Desktop
+req.target-min-winverclnt: Obsolete for Windows 2000 and later versions of Windows, and for Windows Me. This routine is supported only for WDM drivers that must run on Windows 98. Otherwise, use MmGetSystemAddressForMdlSafe.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wdm.h
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdm.h
+apiname:
+-	MmGetSystemAddressForMdl
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

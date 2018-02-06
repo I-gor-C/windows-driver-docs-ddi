@@ -1,41 +1,46 @@
 ---
-UID : NS:d3d10umddi.D3D10_DDI_QUERY_DATA_SO_STATISTICS
-title : D3D10_DDI_QUERY_DATA_SO_STATISTICS
-author : windows-driver-content
-description : The D3D10_DDI_QUERY_DATA_SO_STATISTICS structure describes stream output statistics that is used in a call to the CreateQuery(D3D10) function to create a D3D10DDI_QUERY_STREAMOUTPUTSTATS query type and in a call to the QueryGetData function to return information about the query.
-old-location : display\d3d10_ddi_query_data_so_statistics.htm
-old-project : display
-ms.assetid : 641c8f8d-e398-4ca4-9e28-bba2ef7d1bd3
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : UMDisplayDriver_Dx10param_Structs_3748a5db-9ce8-4763-baac-4110b754188d.xml, display.d3d10_ddi_query_data_so_statistics, D3D10_DDI_QUERY_DATA_SO_STATISTICS, D3D10_DDI_QUERY_DATA_SO_STATISTICS structure [Display Devices], d3d10umddi/D3D10_DDI_QUERY_DATA_SO_STATISTICS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3D10_DDI_QUERY_DATA_SO_STATISTICS
+UID: NS:d3d10umddi.D3D10_DDI_QUERY_DATA_SO_STATISTICS
+title: D3D10_DDI_QUERY_DATA_SO_STATISTICS
+author: windows-driver-content
+description: The D3D10_DDI_QUERY_DATA_SO_STATISTICS structure describes stream output statistics that is used in a call to the CreateQuery(D3D10) function to create a D3D10DDI_QUERY_STREAMOUTPUTSTATS query type and in a call to the QueryGetData function to return information about the query.
+old-location: display\d3d10_ddi_query_data_so_statistics.htm
+old-project: display
+ms.assetid: 641c8f8d-e398-4ca4-9e28-bba2ef7d1bd3
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: UMDisplayDriver_Dx10param_Structs_3748a5db-9ce8-4763-baac-4110b754188d.xml, display.d3d10_ddi_query_data_so_statistics, D3D10_DDI_QUERY_DATA_SO_STATISTICS, D3D10_DDI_QUERY_DATA_SO_STATISTICS structure [Display Devices], d3d10umddi/D3D10_DDI_QUERY_DATA_SO_STATISTICS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	D3D10_DDI_QUERY_DATA_SO_STATISTICS
+product: Windows
+targetos: Windows
+req.typenames: D3D10_DDI_QUERY_DATA_SO_STATISTICS
 ---
 
 # D3D10_DDI_QUERY_DATA_SO_STATISTICS structure

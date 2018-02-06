@@ -1,42 +1,48 @@
 ---
-UID : NF:srb.ScsiPortInitialize
-title : ScsiPortInitialize function
-author : windows-driver-content
-description : For a non-Plug and Play miniport driver, the ScsiPortInitialize routine sets up the PORT_CONFIGURATION_INFORMATION structure and calls the miniport driver's HwScsiFindAdapter routine.
-old-location : storage\scsiportinitialize.htm
-old-project : storage
-ms.assetid : f6adca68-e016-4725-bd8e-691c71d1d471
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : ScsiPortInitialize routine [Storage Devices], ScsiPortInitialize, storage.scsiportinitialize, srb/ScsiPortInitialize, scsiprt_62fb91f9-a420-4156-9a1e-b58b65067a8b.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : srb.h
-req.include-header : Miniport.h, Scsi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Scsiport.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SPB_CONTROLLER_CONFIG, *PSPB_CONTROLLER_CONFIG
-req.product : Windows 10 or later.
+UID: NF:srb.ScsiPortInitialize
+title: ScsiPortInitialize function
+author: windows-driver-content
+description: For a non-Plug and Play miniport driver, the ScsiPortInitialize routine sets up the PORT_CONFIGURATION_INFORMATION structure and calls the miniport driver's HwScsiFindAdapter routine.
+old-location: storage\scsiportinitialize.htm
+old-project: storage
+ms.assetid: f6adca68-e016-4725-bd8e-691c71d1d471
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: ScsiPortInitialize routine [Storage Devices], ScsiPortInitialize, storage.scsiportinitialize, srb/ScsiPortInitialize, scsiprt_62fb91f9-a420-4156-9a1e-b58b65067a8b.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: srb.h
+req.include-header: Miniport.h, Scsi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Scsiport.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Scsiport.lib
+-	Scsiport.dll
+apiname:
+-	ScsiPortInitialize
+product: Windows
+targetos: Windows
+req.typenames: SPB_CONTROLLER_CONFIG, *PSPB_CONTROLLER_CONFIG
+req.product: Windows 10 or later.
 ---
 
 

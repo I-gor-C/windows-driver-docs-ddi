@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddtape._TAPE_PREPARE
-title : "_TAPE_PREPARE"
-author : windows-driver-content
-description : The TAPE_PREPARE structure is used in conjunction with the IOCTL_TAPE_PREPARE request to load or unload tape, reset the tape's tension, lock or unlock the ejection mechanism, or format the tape.
-old-location : storage\tape_prepare.htm
-old-project : storage
-ms.assetid : 0bca5849-e0f9-42b2-82f8-aadea2aa01ae
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : "*PTAPE_PREPARE, PTAPE_PREPARE, ntddtape/TAPE_PREPARE, structs-tape_b563ea19-797c-4df0-a384-7e9c579ee2e9.xml, PTAPE_PREPARE structure pointer [Storage Devices], storage.tape_prepare, TAPE_PREPARE, TAPE_PREPARE structure [Storage Devices], ntddtape/PTAPE_PREPARE, _TAPE_PREPARE"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddtape.h
-req.include-header : Ntddtape.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PTAPE_PREPARE, TAPE_PREPARE"
+UID: NS:ntddtape._TAPE_PREPARE
+title: "_TAPE_PREPARE"
+author: windows-driver-content
+description: The TAPE_PREPARE structure is used in conjunction with the IOCTL_TAPE_PREPARE request to load or unload tape, reset the tape's tension, lock or unlock the ejection mechanism, or format the tape.
+old-location: storage\tape_prepare.htm
+old-project: storage
+ms.assetid: 0bca5849-e0f9-42b2-82f8-aadea2aa01ae
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: "*PTAPE_PREPARE, PTAPE_PREPARE, ntddtape/TAPE_PREPARE, structs-tape_b563ea19-797c-4df0-a384-7e9c579ee2e9.xml, PTAPE_PREPARE structure pointer [Storage Devices], storage.tape_prepare, TAPE_PREPARE, TAPE_PREPARE structure [Storage Devices], ntddtape/PTAPE_PREPARE, _TAPE_PREPARE"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddtape.h
+req.include-header: Ntddtape.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddtape.h
+apiname:
+-	TAPE_PREPARE
+product: Windows
+targetos: Windows
+req.typenames: "*PTAPE_PREPARE, TAPE_PREPARE"
 ---
 
 # _TAPE_PREPARE structure

@@ -1,41 +1,47 @@
 ---
-UID : NF:drmk.DrmForwardContentToFileObject
-title : DrmForwardContentToFileObject function
-author : windows-driver-content
-description : The DrmForwardContentToFileObject function is obsolete and is maintained only to support existing drivers.
-old-location : audio\drmforwardcontenttofileobject.htm
-old-project : audio
-ms.assetid : 84d81ae3-708d-48ee-99c5-b79f085a9592
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : drmk/DrmForwardContentToFileObject, audio.drmforwardcontenttofileobject, DrmForwardContentToFileObject function [Audio Devices], DrmForwardContentToFileObject, aud-prop2_f0deebf5-ef63-406b-a424-b084e775333c.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : drmk.h
-req.include-header : Drmk.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Drmk.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDI_TX_METADATA, *PWDI_TX_METADATA
+UID: NF:drmk.DrmForwardContentToFileObject
+title: DrmForwardContentToFileObject function
+author: windows-driver-content
+description: The DrmForwardContentToFileObject function is obsolete and is maintained only to support existing drivers.
+old-location: audio\drmforwardcontenttofileobject.htm
+old-project: audio
+ms.assetid: 84d81ae3-708d-48ee-99c5-b79f085a9592
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: drmk/DrmForwardContentToFileObject, audio.drmforwardcontenttofileobject, DrmForwardContentToFileObject function [Audio Devices], DrmForwardContentToFileObject, aud-prop2_f0deebf5-ef63-406b-a424-b084e775333c.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: drmk.h
+req.include-header: Drmk.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Drmk.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Drmk.lib
+-	Drmk.dll
+apiname:
+-	DrmForwardContentToFileObject
+product: Windows
+targetos: Windows
+req.typenames: WDI_TX_METADATA, *PWDI_TX_METADATA
 ---
 
 

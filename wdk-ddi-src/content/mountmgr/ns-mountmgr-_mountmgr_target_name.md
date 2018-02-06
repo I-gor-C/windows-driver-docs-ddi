@@ -1,41 +1,46 @@
 ---
-UID : NS:mountmgr._MOUNTMGR_TARGET_NAME
-title : "_MOUNTMGR_TARGET_NAME"
-author : windows-driver-content
-description : The MOUNTMGR_TARGET_NAME structure contains the nonpersistent target device name for a device and is used by mount manager clients with the IOCTL_MOUNTMGR_KEEP_LINKS_WHEN_OFFLINE request to tell the mount manager to keep the symbolic link for a device active even after the device has gone offline.
-old-location : storage\mountmgr_target_name.htm
-old-project : storage
-ms.assetid : 7a9cdc0d-0275-4ef9-a570-8788f77099af
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.mountmgr_target_name, mountmgr/MOUNTMGR_TARGET_NAME, PMOUNTMGR_TARGET_NAME structure pointer [Storage Devices], _MOUNTMGR_TARGET_NAME, mountmgr/PMOUNTMGR_TARGET_NAME, structs-mntmgr_abcf0a10-ecbb-433e-9848-c2d5065ca1ac.xml, PMOUNTMGR_TARGET_NAME, *PMOUNTMGR_TARGET_NAME, MOUNTMGR_TARGET_NAME structure [Storage Devices], MOUNTMGR_TARGET_NAME
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : mountmgr.h
-req.include-header : Mountmgr.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PMOUNTMGR_TARGET_NAME, MOUNTMGR_TARGET_NAME"
+UID: NS:mountmgr._MOUNTMGR_TARGET_NAME
+title: "_MOUNTMGR_TARGET_NAME"
+author: windows-driver-content
+description: The MOUNTMGR_TARGET_NAME structure contains the nonpersistent target device name for a device and is used by mount manager clients with the IOCTL_MOUNTMGR_KEEP_LINKS_WHEN_OFFLINE request to tell the mount manager to keep the symbolic link for a device active even after the device has gone offline.
+old-location: storage\mountmgr_target_name.htm
+old-project: storage
+ms.assetid: 7a9cdc0d-0275-4ef9-a570-8788f77099af
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.mountmgr_target_name, mountmgr/MOUNTMGR_TARGET_NAME, PMOUNTMGR_TARGET_NAME structure pointer [Storage Devices], _MOUNTMGR_TARGET_NAME, mountmgr/PMOUNTMGR_TARGET_NAME, structs-mntmgr_abcf0a10-ecbb-433e-9848-c2d5065ca1ac.xml, PMOUNTMGR_TARGET_NAME, *PMOUNTMGR_TARGET_NAME, MOUNTMGR_TARGET_NAME structure [Storage Devices], MOUNTMGR_TARGET_NAME
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: mountmgr.h
+req.include-header: Mountmgr.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	mountmgr.h
+apiname:
+-	MOUNTMGR_TARGET_NAME
+product: Windows
+targetos: Windows
+req.typenames: "*PMOUNTMGR_TARGET_NAME, MOUNTMGR_TARGET_NAME"
 ---
 
 # _MOUNTMGR_TARGET_NAME structure

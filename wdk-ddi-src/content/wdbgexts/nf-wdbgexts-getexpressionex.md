@@ -1,42 +1,47 @@
 ---
-UID : NF:wdbgexts.GetExpressionEx
-title : GetExpressionEx function
-author : windows-driver-content
-description : The GetExpressionEx function evaluates an expression. The expression is evaluated using the MASM evaluator, and can contain aliases.
-old-location : debugger\getexpressionex.htm
-old-project : debugger
-ms.assetid : 07525217-afa5-4fbf-8c84-847ded9556d8
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : debugger.getexpressionex, wdbgexts/GetExpressionEx, WdbgExts_Ref_74af8a17-694a-46ec-827c-fdd2aecbf15c.xml, GetExpressionEx function [Windows Debugging], GetExpressionEx
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdbgexts.h
-req.include-header : Wdbgexts.h, Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXT_TDOP
-req.product : Windows 10 or later.
+UID: NF:wdbgexts.GetExpressionEx
+title: GetExpressionEx function
+author: windows-driver-content
+description: The GetExpressionEx function evaluates an expression. The expression is evaluated using the MASM evaluator, and can contain aliases.
+old-location: debugger\getexpressionex.htm
+old-project: debugger
+ms.assetid: 07525217-afa5-4fbf-8c84-847ded9556d8
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: debugger.getexpressionex, wdbgexts/GetExpressionEx, WdbgExts_Ref_74af8a17-694a-46ec-827c-fdd2aecbf15c.xml, GetExpressionEx function [Windows Debugging], GetExpressionEx
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdbgexts.h
+req.include-header: Wdbgexts.h, Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdbgexts.h
+apiname:
+-	GetExpressionEx
+product: Windows
+targetos: Windows
+req.typenames: EXT_TDOP
+req.product: Windows 10 or later.
 ---
 
 

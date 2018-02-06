@@ -1,42 +1,47 @@
 ---
-UID : NC:wsk.PFN_WSK_SOCKET_CONNECT
-title : PFN_WSK_SOCKET_CONNECT
-author : windows-driver-content
-description : The WskSocketConnect function creates a new connection-oriented socket, binds it to a local transport address, connects it to a given remote transport address, and returns a pointer to the associated socket object.
-old-location : netvista\wsksocketconnect.htm
-old-project : netvista
-ms.assetid : b1482160-49db-4490-b347-ff9396abf2ff
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.wsksocketconnect, WskSocketConnect callback function [Network Drivers Starting with Windows Vista], WskSocketConnect, PFN_WSK_SOCKET_CONNECT, PFN_WSK_SOCKET_CONNECT, wsk/WskSocketConnect, wskref_326c63cb-233d-4b6e-9c36-15e7f2cb1f1c.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wsk.h
-req.include-header : Wsk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating   systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WNODE_HEADER, *PWNODE_HEADER
-req.product : Windows 10 or later.
+UID: NC:wsk.PFN_WSK_SOCKET_CONNECT
+title: PFN_WSK_SOCKET_CONNECT
+author: windows-driver-content
+description: The WskSocketConnect function creates a new connection-oriented socket, binds it to a local transport address, connects it to a given remote transport address, and returns a pointer to the associated socket object.
+old-location: netvista\wsksocketconnect.htm
+old-project: netvista
+ms.assetid: b1482160-49db-4490-b347-ff9396abf2ff
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.wsksocketconnect, WskSocketConnect callback function [Network Drivers Starting with Windows Vista], WskSocketConnect, PFN_WSK_SOCKET_CONNECT, PFN_WSK_SOCKET_CONNECT, wsk/WskSocketConnect, wskref_326c63cb-233d-4b6e-9c36-15e7f2cb1f1c.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wsk.h
+req.include-header: Wsk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	wsk.h
+apiname:
+-	WskSocketConnect
+product: Windows
+targetos: Windows
+req.typenames: WNODE_HEADER, *PWNODE_HEADER
+req.product: Windows 10 or later.
 ---
 
 

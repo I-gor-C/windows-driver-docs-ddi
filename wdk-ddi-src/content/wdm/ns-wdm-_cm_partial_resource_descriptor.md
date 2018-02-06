@@ -1,42 +1,47 @@
 ---
-UID : NS:wdm._CM_PARTIAL_RESOURCE_DESCRIPTOR
-title : "_CM_PARTIAL_RESOURCE_DESCRIPTOR"
-author : windows-driver-content
-description : The CM_PARTIAL_RESOURCE_DESCRIPTOR structure specifies one or more system hardware resources, of a single type, assigned to a device.
-old-location : kernel\cm_partial_resource_descriptor.htm
-old-project : kernel
-ms.assetid : 96bf7bab-b8f5-439c-8717-ea6956ed0213
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : CM_RESOURCE_CONNECTION_TYPE_SERIAL_I2C, CmResourceShareDeviceExclusive, CM_RESOURCE_CONNECTION_TYPE_SERIAL_UART, CM_PARTIAL_RESOURCE_DESCRIPTOR structure [Kernel-Mode Driver Architecture], CM_RESOURCE_CONNECTION_TYPE_SERIAL_SPI, wdm/PCM_PARTIAL_RESOURCE_DESCRIPTOR, CmResourceShareDriverExclusive, CM_RESOURCE_CONNECTION_CLASS_SERIAL, CM_PARTIAL_RESOURCE_DESCRIPTOR, _CM_PARTIAL_RESOURCE_DESCRIPTOR, PCM_PARTIAL_RESOURCE_DESCRIPTOR structure pointer [Kernel-Mode Driver Architecture], PCM_PARTIAL_RESOURCE_DESCRIPTOR, CmResourceShareShared, wdm/CM_PARTIAL_RESOURCE_DESCRIPTOR, CM_RESOURCE_CONNECTION_TYPE_GPIO_IO, kstruct_a_2a821975-e3b8-4ce0-9dd5-8afe348001d8.xml, CM_RESOURCE_CONNECTION_CLASS_GPIO, kernel.cm_partial_resource_descriptor, *PCM_PARTIAL_RESOURCE_DESCRIPTOR
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : CM_PARTIAL_RESOURCE_DESCRIPTOR, *PCM_PARTIAL_RESOURCE_DESCRIPTOR
-req.product : Windows 10 or later.
+UID: NS:wdm._CM_PARTIAL_RESOURCE_DESCRIPTOR
+title: "_CM_PARTIAL_RESOURCE_DESCRIPTOR"
+author: windows-driver-content
+description: The CM_PARTIAL_RESOURCE_DESCRIPTOR structure specifies one or more system hardware resources, of a single type, assigned to a device.
+old-location: kernel\cm_partial_resource_descriptor.htm
+old-project: kernel
+ms.assetid: 96bf7bab-b8f5-439c-8717-ea6956ed0213
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: CM_RESOURCE_CONNECTION_TYPE_SERIAL_I2C, CmResourceShareDeviceExclusive, CM_RESOURCE_CONNECTION_TYPE_SERIAL_UART, CM_PARTIAL_RESOURCE_DESCRIPTOR structure [Kernel-Mode Driver Architecture], CM_RESOURCE_CONNECTION_TYPE_SERIAL_SPI, wdm/PCM_PARTIAL_RESOURCE_DESCRIPTOR, CmResourceShareDriverExclusive, CM_RESOURCE_CONNECTION_CLASS_SERIAL, CM_PARTIAL_RESOURCE_DESCRIPTOR, _CM_PARTIAL_RESOURCE_DESCRIPTOR, PCM_PARTIAL_RESOURCE_DESCRIPTOR structure pointer [Kernel-Mode Driver Architecture], PCM_PARTIAL_RESOURCE_DESCRIPTOR, CmResourceShareShared, wdm/CM_PARTIAL_RESOURCE_DESCRIPTOR, CM_RESOURCE_CONNECTION_TYPE_GPIO_IO, kstruct_a_2a821975-e3b8-4ce0-9dd5-8afe348001d8.xml, CM_RESOURCE_CONNECTION_CLASS_GPIO, kernel.cm_partial_resource_descriptor, *PCM_PARTIAL_RESOURCE_DESCRIPTOR
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	CM_PARTIAL_RESOURCE_DESCRIPTOR
+product: Windows
+targetos: Windows
+req.typenames: CM_PARTIAL_RESOURCE_DESCRIPTOR, *PCM_PARTIAL_RESOURCE_DESCRIPTOR
+req.product: Windows 10 or later.
 ---
 
 # _CM_PARTIAL_RESOURCE_DESCRIPTOR structure

@@ -1,41 +1,46 @@
 ---
-UID : NS:ntifs._FILE_FS_PERSISTENT_VOLUME_INFORMATION
-title : "_FILE_FS_PERSISTENT_VOLUME_INFORMATION"
-author : windows-driver-content
-description : The FILE_FS_PERSISTENT_VOLUME_INFORMATION structure is used to control persistent settings for a file system volume. Persistent settings persist on a file system volume between reboots of the computer.
-old-location : ifsk\file_fs_persistent_volume_information.htm
-old-project : ifsk
-ms.assetid : f1c7785e-e135-4060-8cf7-5c985b37ff83
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : PERSISTENT_VOLUME_STATE_GLOBAL_METADATA_NO_SEEK_PENALTY, PERSISTENT_VOLUME_STATE_SHORT_NAME_CREATION_DISABLED, FILE_FS_PERSISTENT_VOLUME_INFORMATION structure [Installable File System Drivers], PERSISTENT_VOLUME_STATE_CONTAINS_BACKING_WIM, ntifs/FILE_FS_PERSISTENT_VOLUME_INFORMATION, fileinformationstructures_81dcbc8f-6b7e-455e-b1b2-b99e6fd4084d.xml, PFILE_FS_PERSISTENT_VOLUME_INFORMATION, PERSISTENT_VOLUME_STATE_LOCAL_METADATA_NO_SEEK_PENALTY, PERSISTENT_VOLUME_STATE_BACKED_BY_WIM, PFILE_FS_PERSISTENT_VOLUME_INFORMATION structure pointer [Installable File System Drivers], PERSISTENT_VOLUME_STATE_VOLUME_SCRUB_DISABLED, PERSISTENT_VOLUME_STATE_NO_HEAT_GATHERING, _FILE_FS_PERSISTENT_VOLUME_INFORMATION, ntifs/PFILE_FS_PERSISTENT_VOLUME_INFORMATION, ifsk.file_fs_persistent_volume_information, FILE_FS_PERSISTENT_VOLUME_INFORMATION, *PFILE_FS_PERSISTENT_VOLUME_INFORMATION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows 7.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FILE_FS_PERSISTENT_VOLUME_INFORMATION, *PFILE_FS_PERSISTENT_VOLUME_INFORMATION
+UID: NS:ntifs._FILE_FS_PERSISTENT_VOLUME_INFORMATION
+title: "_FILE_FS_PERSISTENT_VOLUME_INFORMATION"
+author: windows-driver-content
+description: The FILE_FS_PERSISTENT_VOLUME_INFORMATION structure is used to control persistent settings for a file system volume. Persistent settings persist on a file system volume between reboots of the computer.
+old-location: ifsk\file_fs_persistent_volume_information.htm
+old-project: ifsk
+ms.assetid: f1c7785e-e135-4060-8cf7-5c985b37ff83
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: PERSISTENT_VOLUME_STATE_GLOBAL_METADATA_NO_SEEK_PENALTY, PERSISTENT_VOLUME_STATE_SHORT_NAME_CREATION_DISABLED, FILE_FS_PERSISTENT_VOLUME_INFORMATION structure [Installable File System Drivers], PERSISTENT_VOLUME_STATE_CONTAINS_BACKING_WIM, ntifs/FILE_FS_PERSISTENT_VOLUME_INFORMATION, fileinformationstructures_81dcbc8f-6b7e-455e-b1b2-b99e6fd4084d.xml, PFILE_FS_PERSISTENT_VOLUME_INFORMATION, PERSISTENT_VOLUME_STATE_LOCAL_METADATA_NO_SEEK_PENALTY, PERSISTENT_VOLUME_STATE_BACKED_BY_WIM, PFILE_FS_PERSISTENT_VOLUME_INFORMATION structure pointer [Installable File System Drivers], PERSISTENT_VOLUME_STATE_VOLUME_SCRUB_DISABLED, PERSISTENT_VOLUME_STATE_NO_HEAT_GATHERING, _FILE_FS_PERSISTENT_VOLUME_INFORMATION, ntifs/PFILE_FS_PERSISTENT_VOLUME_INFORMATION, ifsk.file_fs_persistent_volume_information, FILE_FS_PERSISTENT_VOLUME_INFORMATION, *PFILE_FS_PERSISTENT_VOLUME_INFORMATION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows 7.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntifs.h
+apiname:
+-	FILE_FS_PERSISTENT_VOLUME_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: FILE_FS_PERSISTENT_VOLUME_INFORMATION, *PFILE_FS_PERSISTENT_VOLUME_INFORMATION
 ---
 
 # _FILE_FS_PERSISTENT_VOLUME_INFORMATION structure

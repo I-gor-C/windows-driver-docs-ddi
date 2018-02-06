@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddcdvd.IOCTL_AACS_READ_MEDIA_ID
-title : IOCTL_AACS_READ_MEDIA_ID
-author : windows-driver-content
-description : Reads the Advanced Access Content System (AACS)-specific media identifier data.
-old-location : storage\ioctl_aacs_read_media_id.htm
-old-project : storage
-ms.assetid : e56f6af5-0391-4044-b6b3-efb27b511db6
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_aacs_read_media_id, IOCTL_AACS_READ_MEDIA_ID control code [Storage Devices], IOCTL_AACS_READ_MEDIA_ID, ntddcdvd/IOCTL_AACS_READ_MEDIA_ID, k307_1f0ffe88-e59a-44e5-bec0-247d38478be8.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddcdvd.h
-req.include-header : Ntddcdvd.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DVD_STRUCTURE_FORMAT, *PDVD_STRUCTURE_FORMAT
+UID: NI:ntddcdvd.IOCTL_AACS_READ_MEDIA_ID
+title: IOCTL_AACS_READ_MEDIA_ID
+author: windows-driver-content
+description: Reads the Advanced Access Content System (AACS)-specific media identifier data.
+old-location: storage\ioctl_aacs_read_media_id.htm
+old-project: storage
+ms.assetid: e56f6af5-0391-4044-b6b3-efb27b511db6
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_aacs_read_media_id, IOCTL_AACS_READ_MEDIA_ID control code [Storage Devices], IOCTL_AACS_READ_MEDIA_ID, ntddcdvd/IOCTL_AACS_READ_MEDIA_ID, k307_1f0ffe88-e59a-44e5-bec0-247d38478be8.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddcdvd.h
+req.include-header: Ntddcdvd.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddcdvd.h
+apiname:
+-	IOCTL_AACS_READ_MEDIA_ID
+product: Windows
+targetos: Windows
+req.typenames: DVD_STRUCTURE_FORMAT, *PDVD_STRUCTURE_FORMAT
 ---
 
 # IOCTL_AACS_READ_MEDIA_ID IOCTL

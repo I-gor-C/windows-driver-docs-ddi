@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddtape._TAPE_GET_POSITION
-title : "_TAPE_GET_POSITION"
-author : windows-driver-content
-description : The TAPE_GET_POSITION structure is used in conjunction with the IOCTL_TAPE_GET_POSITION request to retrieve the current absolute, logical, or pseudological partition and offset position on the tape.
-old-location : storage\tape_get_position.htm
-old-project : storage
-ms.assetid : dd7a194a-6ce4-4889-b574-7c4f232f45f0
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : ntddtape/PTAPE_GET_POSITION, TAPE_GET_POSITION, ntddtape/TAPE_GET_POSITION, PTAPE_GET_POSITION, TAPE_GET_POSITION structure [Storage Devices], PTAPE_GET_POSITION structure pointer [Storage Devices], structs-tape_e80e5f0f-02d5-4745-a2d1-3d94e8dc9959.xml, _TAPE_GET_POSITION, *PTAPE_GET_POSITION, storage.tape_get_position
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddtape.h
-req.include-header : Ntddtape.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TAPE_GET_POSITION, *PTAPE_GET_POSITION
+UID: NS:ntddtape._TAPE_GET_POSITION
+title: "_TAPE_GET_POSITION"
+author: windows-driver-content
+description: The TAPE_GET_POSITION structure is used in conjunction with the IOCTL_TAPE_GET_POSITION request to retrieve the current absolute, logical, or pseudological partition and offset position on the tape.
+old-location: storage\tape_get_position.htm
+old-project: storage
+ms.assetid: dd7a194a-6ce4-4889-b574-7c4f232f45f0
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: ntddtape/PTAPE_GET_POSITION, TAPE_GET_POSITION, ntddtape/TAPE_GET_POSITION, PTAPE_GET_POSITION, TAPE_GET_POSITION structure [Storage Devices], PTAPE_GET_POSITION structure pointer [Storage Devices], structs-tape_e80e5f0f-02d5-4745-a2d1-3d94e8dc9959.xml, _TAPE_GET_POSITION, *PTAPE_GET_POSITION, storage.tape_get_position
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddtape.h
+req.include-header: Ntddtape.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddtape.h
+apiname:
+-	TAPE_GET_POSITION
+product: Windows
+targetos: Windows
+req.typenames: TAPE_GET_POSITION, *PTAPE_GET_POSITION
 ---
 
 # _TAPE_GET_POSITION structure

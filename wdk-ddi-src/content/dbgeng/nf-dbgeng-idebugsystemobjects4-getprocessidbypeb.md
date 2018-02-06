@@ -1,41 +1,49 @@
 ---
-UID : NF:dbgeng.IDebugSystemObjects4.GetProcessIdByPeb
-title : IDebugSystemObjects4::GetProcessIdByPeb method
-author : windows-driver-content
-description : The GetProcessIdByPeb method returns the engine process ID for the specified process. The process is specified by its process environment block (PEB).
-old-location : debugger\getprocessidbypeb.htm
-old-project : debugger
-ms.assetid : 2ee2b610-30c7-4932-b8f6-df5040a5bad8
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugSystemObjects4::GetProcessIdByPeb, GetProcessIdByPeb method [Windows Debugging], IDebugSystemObjects4 interface, GetProcessIdByPeb method [Windows Debugging], IDebugSystemObjects2 interface, GetProcessIdByPeb method [Windows Debugging], IDebugSystemObjects_f5f2396d-d537-40a0-987d-314a9dfb01ff.xml, dbgeng/IDebugSystemObjects::GetProcessIdByPeb, IDebugSystemObjects4, debugger.getprocessidbypeb, IDebugSystemObjects3::GetProcessIdByPeb, dbgeng/IDebugSystemObjects3::GetProcessIdByPeb, IDebugSystemObjects2 interface [Windows Debugging], GetProcessIdByPeb method, IDebugSystemObjects3 interface [Windows Debugging], GetProcessIdByPeb method, IDebugSystemObjects2::GetProcessIdByPeb, dbgeng/IDebugSystemObjects2::GetProcessIdByPeb, IDebugSystemObjects interface [Windows Debugging], GetProcessIdByPeb method, GetProcessIdByPeb method [Windows Debugging], IDebugSystemObjects3 interface, IDebugSystemObjects4 interface [Windows Debugging], GetProcessIdByPeb method, GetProcessIdByPeb method [Windows Debugging], IDebugSystemObjects interface, IDebugSystemObjects::GetProcessIdByPeb, dbgeng/IDebugSystemObjects4::GetProcessIdByPeb, GetProcessIdByPeb
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSystemObjects4.GetProcessIdByPeb
+title: IDebugSystemObjects4::GetProcessIdByPeb method
+author: windows-driver-content
+description: The GetProcessIdByPeb method returns the engine process ID for the specified process. The process is specified by its process environment block (PEB).
+old-location: debugger\getprocessidbypeb.htm
+old-project: debugger
+ms.assetid: 2ee2b610-30c7-4932-b8f6-df5040a5bad8
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugSystemObjects4::GetProcessIdByPeb, GetProcessIdByPeb method [Windows Debugging], IDebugSystemObjects4 interface, GetProcessIdByPeb method [Windows Debugging], IDebugSystemObjects2 interface, GetProcessIdByPeb method [Windows Debugging], IDebugSystemObjects_f5f2396d-d537-40a0-987d-314a9dfb01ff.xml, dbgeng/IDebugSystemObjects::GetProcessIdByPeb, IDebugSystemObjects4, debugger.getprocessidbypeb, IDebugSystemObjects3::GetProcessIdByPeb, dbgeng/IDebugSystemObjects3::GetProcessIdByPeb, IDebugSystemObjects2 interface [Windows Debugging], GetProcessIdByPeb method, IDebugSystemObjects3 interface [Windows Debugging], GetProcessIdByPeb method, IDebugSystemObjects2::GetProcessIdByPeb, dbgeng/IDebugSystemObjects2::GetProcessIdByPeb, IDebugSystemObjects interface [Windows Debugging], GetProcessIdByPeb method, GetProcessIdByPeb method [Windows Debugging], IDebugSystemObjects3 interface, IDebugSystemObjects4 interface [Windows Debugging], GetProcessIdByPeb method, GetProcessIdByPeb method [Windows Debugging], IDebugSystemObjects interface, IDebugSystemObjects::GetProcessIdByPeb, dbgeng/IDebugSystemObjects4::GetProcessIdByPeb, GetProcessIdByPeb
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugSystemObjects.GetProcessIdByPeb
+-	IDebugSystemObjects2.GetProcessIdByPeb
+-	IDebugSystemObjects3.GetProcessIdByPeb
+-	IDebugSystemObjects4.GetProcessIdByPeb
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

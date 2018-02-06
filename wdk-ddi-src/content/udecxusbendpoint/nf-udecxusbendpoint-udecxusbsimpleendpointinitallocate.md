@@ -1,42 +1,48 @@
 ---
-UID : NF:udecxusbendpoint.UdecxUsbSimpleEndpointInitAllocate
-title : UdecxUsbSimpleEndpointInitAllocate function
-author : windows-driver-content
-description : Allocates memory for an initialization structure that is used to create a simple endpoint for the specified virtual USB device.
-old-location : buses\udecxusbsimpleendpointinitallocate.htm
-old-project : usbref
-ms.assetid : 1BF79756-F55D-4F13-A03C-35F7880C5B21
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : udecxusbendpoint/UdecxUsbSimpleEndpointInitAllocate, UdecxUsbSimpleEndpointInitAllocate, UdecxUsbSimpleEndpointInitAllocate function [Buses], buses.udecxusbsimpleendpointinitallocate
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : udecxusbendpoint.h
-req.include-header : Udecx.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 1.15
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Udecxstub.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUDECX_USB_ENDPOINT_INIT_AND_METADATA, UDECX_USB_ENDPOINT_INIT_AND_METADATA"
-req.product : Windows 10 or later.
+UID: NF:udecxusbendpoint.UdecxUsbSimpleEndpointInitAllocate
+title: UdecxUsbSimpleEndpointInitAllocate function
+author: windows-driver-content
+description: Allocates memory for an initialization structure that is used to create a simple endpoint for the specified virtual USB device.
+old-location: buses\udecxusbsimpleendpointinitallocate.htm
+old-project: usbref
+ms.assetid: 1BF79756-F55D-4F13-A03C-35F7880C5B21
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: udecxusbendpoint/UdecxUsbSimpleEndpointInitAllocate, UdecxUsbSimpleEndpointInitAllocate, UdecxUsbSimpleEndpointInitAllocate function [Buses], buses.udecxusbsimpleendpointinitallocate
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: udecxusbendpoint.h
+req.include-header: Udecx.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 1.15
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Udecxstub.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Udecxstub.lib
+-	Udecxstub.dll
+apiname:
+-	UdecxUsbSimpleEndpointInitAllocate
+product: Windows
+targetos: Windows
+req.typenames: "*PUDECX_USB_ENDPOINT_INIT_AND_METADATA, UDECX_USB_ENDPOINT_INIT_AND_METADATA"
+req.product: Windows 10 or later.
 ---
 
 

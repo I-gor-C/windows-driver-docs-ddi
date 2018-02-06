@@ -1,42 +1,47 @@
 ---
-UID : NS:scsiwmi._SCSIWMILIB_CONTEXT
-title : "_SCSIWMILIB_CONTEXT"
-author : windows-driver-content
-description : A SCSI_WMILIB_CONTEXT structure provides registration information for a miniport driver's data and event blocks and defines entry points for the miniport driver's HwScsiWmiXxx callback routines.
-old-location : storage\scsi_wmilib_context.htm
-old-project : storage
-ms.assetid : 7886cee8-1142-42e6-8206-84667621ba77
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : SCSI_WMILIB_CONTEXT, structs-scsibus_725dbb64-2d39-493d-b1bf-e056ca31244f.xml, PSCSI_WMILIB_CONTEXT structure pointer [Storage Devices], PSCSI_WMILIB_CONTEXT, scsiwmi/PSCSI_WMILIB_CONTEXT, _SCSIWMILIB_CONTEXT, scsiwmi/SCSI_WMILIB_CONTEXT, *PSCSI_WMILIB_CONTEXT, SCSI_WMILIB_CONTEXT structure [Storage Devices], storage.scsi_wmilib_context
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : scsiwmi.h
-req.include-header : Scsiwmi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSCSI_WMILIB_CONTEXT, SCSI_WMILIB_CONTEXT"
-req.product : Windows 10 or later.
+UID: NS:scsiwmi._SCSIWMILIB_CONTEXT
+title: "_SCSIWMILIB_CONTEXT"
+author: windows-driver-content
+description: A SCSI_WMILIB_CONTEXT structure provides registration information for a miniport driver's data and event blocks and defines entry points for the miniport driver's HwScsiWmiXxx callback routines.
+old-location: storage\scsi_wmilib_context.htm
+old-project: storage
+ms.assetid: 7886cee8-1142-42e6-8206-84667621ba77
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: SCSI_WMILIB_CONTEXT, structs-scsibus_725dbb64-2d39-493d-b1bf-e056ca31244f.xml, PSCSI_WMILIB_CONTEXT structure pointer [Storage Devices], PSCSI_WMILIB_CONTEXT, scsiwmi/PSCSI_WMILIB_CONTEXT, _SCSIWMILIB_CONTEXT, scsiwmi/SCSI_WMILIB_CONTEXT, *PSCSI_WMILIB_CONTEXT, SCSI_WMILIB_CONTEXT structure [Storage Devices], storage.scsi_wmilib_context
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: scsiwmi.h
+req.include-header: Scsiwmi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	scsiwmi.h
+apiname:
+-	SCSI_WMILIB_CONTEXT
+product: Windows
+targetos: Windows
+req.typenames: "*PSCSI_WMILIB_CONTEXT, SCSI_WMILIB_CONTEXT"
+req.product: Windows 10 or later.
 ---
 
 # _SCSIWMILIB_CONTEXT structure

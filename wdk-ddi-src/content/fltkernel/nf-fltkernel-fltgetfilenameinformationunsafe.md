@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltGetFileNameInformationUnsafe
-title : FltGetFileNameInformationUnsafe function
-author : windows-driver-content
-description : The FltGetFileNameInformationUnsafe routine returns name information for an open file or directory.
-old-location : ifsk\fltgetfilenameinformationunsafe.htm
-old-project : ifsk
-ms.assetid : 3c5ec515-d332-4fef-8b78-b2f04a672fd7
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltGetFileNameInformationUnsafe, FltApiRef_e_to_o_b6504bfd-52eb-4563-a581-ccb0b6a9afc1.xml, fltkernel/FltGetFileNameInformationUnsafe, FltGetFileNameInformationUnsafe routine [Installable File System Drivers], ifsk.fltgetfilenameinformationunsafe
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltGetFileNameInformationUnsafe
+title: FltGetFileNameInformationUnsafe function
+author: windows-driver-content
+description: The FltGetFileNameInformationUnsafe routine returns name information for an open file or directory.
+old-location: ifsk\fltgetfilenameinformationunsafe.htm
+old-project: ifsk
+ms.assetid: 3c5ec515-d332-4fef-8b78-b2f04a672fd7
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltGetFileNameInformationUnsafe, FltApiRef_e_to_o_b6504bfd-52eb-4563-a581-ccb0b6a9afc1.xml, fltkernel/FltGetFileNameInformationUnsafe, FltGetFileNameInformationUnsafe routine [Installable File System Drivers], ifsk.fltgetfilenameinformationunsafe
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltGetFileNameInformationUnsafe
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3D11_1DDI_NEGOTIATECRYPTOSESSIONKEYESCHANGE
-title : PFND3D11_1DDI_NEGOTIATECRYPTOSESSIONKEYESCHANGE
-author : windows-driver-content
-description : Establishes a session key for a cryptographic session object.
-old-location : display\negotiatecryptosessionkeyexchange.htm
-old-project : display
-ms.assetid : a48dcbae-3236-4523-bc14-4be694da9a7b
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.negotiatecryptosessionkeyexchange, NegotiateCryptoSessionKeyExchange callback function [Display Devices], NegotiateCryptoSessionKeyExchange, PFND3D11_1DDI_NEGOTIATECRYPTOSESSIONKEYESCHANGE, PFND3D11_1DDI_NEGOTIATECRYPTOSESSIONKEYESCHANGE, d3d10umddi/NegotiateCryptoSessionKeyExchange
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3D11_1DDI_NEGOTIATECRYPTOSESSIONKEYESCHANGE
+title: PFND3D11_1DDI_NEGOTIATECRYPTOSESSIONKEYESCHANGE
+author: windows-driver-content
+description: Establishes a session key for a cryptographic session object.
+old-location: display\negotiatecryptosessionkeyexchange.htm
+old-project: display
+ms.assetid: a48dcbae-3236-4523-bc14-4be694da9a7b
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.negotiatecryptosessionkeyexchange, NegotiateCryptoSessionKeyExchange callback function [Display Devices], NegotiateCryptoSessionKeyExchange, PFND3D11_1DDI_NEGOTIATECRYPTOSESSIONKEYESCHANGE, PFND3D11_1DDI_NEGOTIATECRYPTOSESSIONKEYESCHANGE, d3d10umddi/NegotiateCryptoSessionKeyExchange
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	D3d10umddi.h
+apiname:
+-	NegotiateCryptoSessionKeyExchange
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

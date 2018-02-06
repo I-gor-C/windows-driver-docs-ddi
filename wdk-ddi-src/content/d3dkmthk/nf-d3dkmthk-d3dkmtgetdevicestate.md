@@ -1,41 +1,49 @@
 ---
-UID : NF:d3dkmthk.D3DKMTGetDeviceState
-title : D3DKMTGetDeviceState function
-author : windows-driver-content
-description : The D3DKMTGetDeviceState function retrieves the state of a device.
-old-location : display\d3dkmtgetdevicestate.htm
-old-project : display
-ms.assetid : 8ea84934-63a7-40bf-8523-ccd2b9e5aceb
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : OpenGL_Functions_396da637-bbc6-478c-8ec9-534d82691c45.xml, display.d3dkmtgetdevicestate, D3DKMTGetDeviceState, d3dkmthk/D3DKMTGetDeviceState, D3DKMTGetDeviceState function [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Gdi32.lib
-req.dll : Gdi32.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_DRIVERVERSION
+UID: NF:d3dkmthk.D3DKMTGetDeviceState
+title: D3DKMTGetDeviceState function
+author: windows-driver-content
+description: The D3DKMTGetDeviceState function retrieves the state of a device.
+old-location: display\d3dkmtgetdevicestate.htm
+old-project: display
+ms.assetid: 8ea84934-63a7-40bf-8523-ccd2b9e5aceb
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: OpenGL_Functions_396da637-bbc6-478c-8ec9-534d82691c45.xml, display.d3dkmtgetdevicestate, D3DKMTGetDeviceState, d3dkmthk/D3DKMTGetDeviceState, D3DKMTGetDeviceState function [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Gdi32.lib
+req.dll: Gdi32.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Gdi32.dll
+-	API-MS-Win-dx-d3dkmt-l1-1-0.dll
+-	API-MS-Win-dx-d3dkmt-l1-1-1.dll
+-	API-MS-Win-DX-D3DKMT-L1-1-2.dll
+apiname:
+-	D3DKMTGetDeviceState
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_DRIVERVERSION
 ---
 
 

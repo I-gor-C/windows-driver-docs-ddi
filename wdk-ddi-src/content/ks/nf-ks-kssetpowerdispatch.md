@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsSetPowerDispatch
-title : KsSetPowerDispatch function
-author : windows-driver-content
-description : Sets the power dispatch function to be called when the driver object receives an IRP_MJ_POWER IRP.
-old-location : stream\kssetpowerdispatch.htm
-old-project : stream
-ms.assetid : 77ceaebe-ded1-4fbb-bc10-593ff62fcbe2
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KsSetPowerDispatch routine [Streaming Media Devices], stream.kssetpowerdispatch, ksfunc_b561e4ba-dadd-4e9c-a8e3-1d9b182cdd4f.xml, ks/KsSetPowerDispatch, KsSetPowerDispatch
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsSetPowerDispatch
+title: KsSetPowerDispatch function
+author: windows-driver-content
+description: Sets the power dispatch function to be called when the driver object receives an IRP_MJ_POWER IRP.
+old-location: stream\kssetpowerdispatch.htm
+old-project: stream
+ms.assetid: 77ceaebe-ded1-4fbb-bc10-593ff62fcbe2
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KsSetPowerDispatch routine [Streaming Media Devices], stream.kssetpowerdispatch, ksfunc_b561e4ba-dadd-4e9c-a8e3-1d9b182cdd4f.xml, ks/KsSetPowerDispatch, KsSetPowerDispatch
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsSetPowerDispatch
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

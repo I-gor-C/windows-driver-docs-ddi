@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddstor.IOCTL_STORAGE_BREAK_RESERVATION
-title : IOCTL_STORAGE_BREAK_RESERVATION
-author : windows-driver-content
-description : Breaks a disk reservation.
-old-location : storage\ioctl_storage_break_reservation.htm
-old-project : storage
-ms.assetid : 4f6d14b1-45fd-4f45-a10a-1483c10cec12
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_storage_break_reservation, IOCTL_STORAGE_BREAK_RESERVATION control code [Storage Devices], IOCTL_STORAGE_BREAK_RESERVATION, ntddstor/IOCTL_STORAGE_BREAK_RESERVATION, k307_c8e206c8-a186-4bd4-a68e-899c8ca652a4.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddstor.h
-req.include-header : Ntddstor.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STORAGE_ZONE_CONDITION, *PSTORAGE_ZONE_CONDITION
+UID: NI:ntddstor.IOCTL_STORAGE_BREAK_RESERVATION
+title: IOCTL_STORAGE_BREAK_RESERVATION
+author: windows-driver-content
+description: Breaks a disk reservation.
+old-location: storage\ioctl_storage_break_reservation.htm
+old-project: storage
+ms.assetid: 4f6d14b1-45fd-4f45-a10a-1483c10cec12
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_storage_break_reservation, IOCTL_STORAGE_BREAK_RESERVATION control code [Storage Devices], IOCTL_STORAGE_BREAK_RESERVATION, ntddstor/IOCTL_STORAGE_BREAK_RESERVATION, k307_c8e206c8-a186-4bd4-a68e-899c8ca652a4.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddstor.h
+req.include-header: Ntddstor.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddstor.h
+apiname:
+-	IOCTL_STORAGE_BREAK_RESERVATION
+product: Windows
+targetos: Windows
+req.typenames: STORAGE_ZONE_CONDITION, *PSTORAGE_ZONE_CONDITION
 ---
 
 # IOCTL_STORAGE_BREAK_RESERVATION IOCTL

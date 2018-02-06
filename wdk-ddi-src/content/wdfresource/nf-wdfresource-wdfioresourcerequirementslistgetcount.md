@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfresource.WdfIoResourceRequirementsListGetCount
-title : WdfIoResourceRequirementsListGetCount function
-author : windows-driver-content
-description : The WdfIoResourceRequirementsListGetCount method returns the number of logical configurations that are contained in a resource requirements list.
-old-location : wdf\wdfioresourcerequirementslistgetcount.htm
-old-project : wdf
-ms.assetid : 00a79e57-5915-49a3-b11f-223cc93c2e99
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdfresource/WdfIoResourceRequirementsListGetCount, WdfIoResourceRequirementsListGetCount, wdf.wdfioresourcerequirementslistgetcount, WdfIoResourceRequirementsListGetCount method, PFN_WDFIORESOURCEREQUIREMENTSLISTGETCOUNT, DFResourceObjectRef_927d5729-0c1e-4363-9f2d-b5fefba8e2f6.xml, kmdf.wdfioresourcerequirementslistgetcount
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfresource.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_REQUEST_SEND_OPTIONS, *PWDF_REQUEST_SEND_OPTIONS
-req.product : Windows 10 or later.
+UID: NF:wdfresource.WdfIoResourceRequirementsListGetCount
+title: WdfIoResourceRequirementsListGetCount function
+author: windows-driver-content
+description: The WdfIoResourceRequirementsListGetCount method returns the number of logical configurations that are contained in a resource requirements list.
+old-location: wdf\wdfioresourcerequirementslistgetcount.htm
+old-project: wdf
+ms.assetid: 00a79e57-5915-49a3-b11f-223cc93c2e99
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdfresource/WdfIoResourceRequirementsListGetCount, WdfIoResourceRequirementsListGetCount, wdf.wdfioresourcerequirementslistgetcount, WdfIoResourceRequirementsListGetCount method, PFN_WDFIORESOURCEREQUIREMENTSLISTGETCOUNT, DFResourceObjectRef_927d5729-0c1e-4363-9f2d-b5fefba8e2f6.xml, kmdf.wdfioresourcerequirementslistgetcount
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfresource.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfIoResourceRequirementsListGetCount
+product: Windows
+targetos: Windows
+req.typenames: WDF_REQUEST_SEND_OPTIONS, *PWDF_REQUEST_SEND_OPTIONS
+req.product: Windows 10 or later.
 ---
 
 

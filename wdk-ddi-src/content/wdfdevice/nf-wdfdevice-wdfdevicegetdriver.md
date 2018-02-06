@@ -1,42 +1,50 @@
 ---
-UID : NF:wdfdevice.WdfDeviceGetDriver
-title : WdfDeviceGetDriver function
-author : windows-driver-content
-description : The WdfDeviceGetDriver method returns a handle to the framework driver object that is associated with a specified framework device object.
-old-location : wdf\wdfdevicegetdriver.htm
-old-project : wdf
-ms.assetid : 774cce7b-37bf-495b-8087-915b164745ba
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : kmdf.wdfdevicegetdriver, wdf.wdfdevicegetdriver, WdfDeviceGetDriver, wdfdevice/WdfDeviceGetDriver, PFN_WDFDEVICEGETDRIVER, DFDeviceObjectGeneralRef_821bd67e-0a04-4664-91e1-4fa608a8b93e.xml, WdfDeviceGetDriver method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfdevice.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_STATE_NOTIFICATION_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfdevice.WdfDeviceGetDriver
+title: WdfDeviceGetDriver function
+author: windows-driver-content
+description: The WdfDeviceGetDriver method returns a handle to the framework driver object that is associated with a specified framework device object.
+old-location: wdf\wdfdevicegetdriver.htm
+old-project: wdf
+ms.assetid: 774cce7b-37bf-495b-8087-915b164745ba
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: kmdf.wdfdevicegetdriver, wdf.wdfdevicegetdriver, WdfDeviceGetDriver, wdfdevice/WdfDeviceGetDriver, PFN_WDFDEVICEGETDRIVER, DFDeviceObjectGeneralRef_821bd67e-0a04-4664-91e1-4fa608a8b93e.xml, WdfDeviceGetDriver method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfdevice.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+-	WUDFx02000.dll
+-	WUDFx02000.dll.dll
+apiname:
+-	WdfDeviceGetDriver
+product: Windows
+targetos: Windows
+req.typenames: WDF_STATE_NOTIFICATION_TYPE
+req.product: Windows 10 or later.
 ---
 
 

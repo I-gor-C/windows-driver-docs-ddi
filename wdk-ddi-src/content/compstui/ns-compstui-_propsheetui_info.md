@@ -1,41 +1,46 @@
 ---
-UID : NS:compstui._PROPSHEETUI_INFO
-title : "_PROPSHEETUI_INFO"
-author : windows-driver-content
-description : The PROPSHEETUI_INFO structure is used as an input parameter to PFNPROPSHEETUI-typed functions.
-old-location : print\propsheetui_info.htm
-old-project : print
-ms.assetid : b21c3ee1-13e8-4796-af45-6ba60e84df4e
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : "*PPROPSHEETUI_INFO, PPROPSHEETUI_INFO structure pointer [Print Devices], compstui/PPROPSHEETUI_INFO, cpsuifnc_0afe9ac8-ca1f-4984-acc5-04a8955b4b30.xml, PPROPSHEETUI_INFO, PROPSHEETUI_INFO, compstui/PROPSHEETUI_INFO, _PROPSHEETUI_INFO, print.propsheetui_info, PROPSHEETUI_INFO structure [Print Devices]"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : compstui.h
-req.include-header : Compstui.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPROPSHEETUI_INFO, PROPSHEETUI_INFO"
+UID: NS:compstui._PROPSHEETUI_INFO
+title: "_PROPSHEETUI_INFO"
+author: windows-driver-content
+description: The PROPSHEETUI_INFO structure is used as an input parameter to PFNPROPSHEETUI-typed functions.
+old-location: print\propsheetui_info.htm
+old-project: print
+ms.assetid: b21c3ee1-13e8-4796-af45-6ba60e84df4e
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: "*PPROPSHEETUI_INFO, PPROPSHEETUI_INFO structure pointer [Print Devices], compstui/PPROPSHEETUI_INFO, cpsuifnc_0afe9ac8-ca1f-4984-acc5-04a8955b4b30.xml, PPROPSHEETUI_INFO, PROPSHEETUI_INFO, compstui/PROPSHEETUI_INFO, _PROPSHEETUI_INFO, print.propsheetui_info, PROPSHEETUI_INFO structure [Print Devices]"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: compstui.h
+req.include-header: Compstui.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	compstui.h
+apiname:
+-	PROPSHEETUI_INFO
+product: Windows
+targetos: Windows
+req.typenames: "*PPROPSHEETUI_INFO, PROPSHEETUI_INFO"
 ---
 
 # _PROPSHEETUI_INFO structure

@@ -1,41 +1,46 @@
 ---
-UID : NS:d3d10umddi.D3D11_1DDI_VIDEO_PROCESSOR_CUSTOM_RATE
-title : D3D11_1DDI_VIDEO_PROCESSOR_CUSTOM_RATE
-author : windows-driver-content
-description : Specifies a custom rate for frame-rate conversion or inverse telecine (IVTC).
-old-location : display\d3d11_1ddi_video_processor_custom_rate.htm
-old-project : display
-ms.assetid : d7ea23de-1d2d-4a76-aa99-0b18bf50654c
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3D11_1DDI_VIDEO_PROCESSOR_CUSTOM_RATE structure [Display Devices], D3D11_1DDI_VIDEO_PROCESSOR_CUSTOM_RATE, display.d3d11_1ddi_video_processor_custom_rate, d3d10umddi/D3D11_1DDI_VIDEO_PROCESSOR_CUSTOM_RATE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3D11_1DDI_VIDEO_PROCESSOR_CUSTOM_RATE
+UID: NS:d3d10umddi.D3D11_1DDI_VIDEO_PROCESSOR_CUSTOM_RATE
+title: D3D11_1DDI_VIDEO_PROCESSOR_CUSTOM_RATE
+author: windows-driver-content
+description: Specifies a custom rate for frame-rate conversion or inverse telecine (IVTC).
+old-location: display\d3d11_1ddi_video_processor_custom_rate.htm
+old-project: display
+ms.assetid: d7ea23de-1d2d-4a76-aa99-0b18bf50654c
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3D11_1DDI_VIDEO_PROCESSOR_CUSTOM_RATE structure [Display Devices], D3D11_1DDI_VIDEO_PROCESSOR_CUSTOM_RATE, display.d3d11_1ddi_video_processor_custom_rate, d3d10umddi/D3D11_1DDI_VIDEO_PROCESSOR_CUSTOM_RATE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	D3d10umddi.h
+apiname:
+-	D3D11_1DDI_VIDEO_PROCESSOR_CUSTOM_RATE
+product: Windows
+targetos: Windows
+req.typenames: D3D11_1DDI_VIDEO_PROCESSOR_CUSTOM_RATE
 ---
 
 # D3D11_1DDI_VIDEO_PROCESSOR_CUSTOM_RATE structure

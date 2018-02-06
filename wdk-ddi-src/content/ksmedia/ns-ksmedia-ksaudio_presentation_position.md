@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.KSAUDIO_PRESENTATION_POSITION
-title : KSAUDIO_PRESENTATION_POSITION
-author : windows-driver-content
-description : The KSAUDIO_PRESENTATION_POSITION structure specifies the current cursor position in audio data stream that is being rendered to the endpoint.
-old-location : audio\ksaudio_presentation_position.htm
-old-project : audio
-ms.assetid : 6C9F2E99-17B4-49AD-A94F-E3EF9282B649
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : ksmedia/PKSAUDIO_PRESENTATION_POSITION, ksmedia/KSAUDIO_PRESENTATION_POSITION, PKSAUDIO_PRESENTATION_POSITION, audio.ksaudio_presentation_position, *PKSAUDIO_PRESENTATION_POSITION, PKSAUDIO_PRESENTATION_POSITION structure pointer [Audio Devices], KSAUDIO_PRESENTATION_POSITION structure [Audio Devices], KSAUDIO_PRESENTATION_POSITION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KSAUDIO_PRESENTATION_POSITION, *PKSAUDIO_PRESENTATION_POSITION
+UID: NS:ksmedia.KSAUDIO_PRESENTATION_POSITION
+title: KSAUDIO_PRESENTATION_POSITION
+author: windows-driver-content
+description: The KSAUDIO_PRESENTATION_POSITION structure specifies the current cursor position in audio data stream that is being rendered to the endpoint.
+old-location: audio\ksaudio_presentation_position.htm
+old-project: audio
+ms.assetid: 6C9F2E99-17B4-49AD-A94F-E3EF9282B649
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: ksmedia/PKSAUDIO_PRESENTATION_POSITION, ksmedia/KSAUDIO_PRESENTATION_POSITION, PKSAUDIO_PRESENTATION_POSITION, audio.ksaudio_presentation_position, *PKSAUDIO_PRESENTATION_POSITION, PKSAUDIO_PRESENTATION_POSITION structure pointer [Audio Devices], KSAUDIO_PRESENTATION_POSITION structure [Audio Devices], KSAUDIO_PRESENTATION_POSITION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ksmedia.h
+apiname:
+-	KSAUDIO_PRESENTATION_POSITION
+product: Windows
+targetos: Windows
+req.typenames: KSAUDIO_PRESENTATION_POSITION, *PKSAUDIO_PRESENTATION_POSITION
 ---
 
 # KSAUDIO_PRESENTATION_POSITION structure

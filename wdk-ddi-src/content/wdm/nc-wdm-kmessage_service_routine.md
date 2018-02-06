@@ -1,42 +1,47 @@
 ---
-UID : NC:wdm.KMESSAGE_SERVICE_ROUTINE
-title : KMESSAGE_SERVICE_ROUTINE
-author : windows-driver-content
-description : An InterruptMessageService routine services a message-signaled interrupt.
-old-location : kernel\interruptmessageservice.htm
-old-project : kernel
-ms.assetid : f84e1835-33a4-4300-8701-ed73249f8119
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.interruptmessageservice, InterruptMessageService routine [Kernel-Mode Driver Architecture], InterruptMessageService, KMESSAGE_SERVICE_ROUTINE, KMESSAGE_SERVICE_ROUTINE, wdm/InterruptMessageService, DrvrRtns_1f39517a-fa8b-44a4-9e6c-2ecc428cd416.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Desktop
-req.target-min-winverclnt : See Remarks section.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
-req.product : Windows 10 or later.
+UID: NC:wdm.KMESSAGE_SERVICE_ROUTINE
+title: KMESSAGE_SERVICE_ROUTINE
+author: windows-driver-content
+description: An InterruptMessageService routine services a message-signaled interrupt.
+old-location: kernel\interruptmessageservice.htm
+old-project: kernel
+ms.assetid: f84e1835-33a4-4300-8701-ed73249f8119
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.interruptmessageservice, InterruptMessageService routine [Kernel-Mode Driver Architecture], InterruptMessageService, KMESSAGE_SERVICE_ROUTINE, KMESSAGE_SERVICE_ROUTINE, wdm/InterruptMessageService, DrvrRtns_1f39517a-fa8b-44a4-9e6c-2ecc428cd416.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Desktop
+req.target-min-winverclnt: See Remarks section.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Wdm.h
+apiname:
+-	InterruptMessageService
+product: Windows
+targetos: Windows
+req.typenames: WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+req.product: Windows 10 or later.
 ---
 
 

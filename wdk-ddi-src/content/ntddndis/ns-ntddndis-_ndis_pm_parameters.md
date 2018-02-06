@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddndis._NDIS_PM_PARAMETERS
-title : "_NDIS_PM_PARAMETERS"
-author : windows-driver-content
-description : The NDIS_PM_PARAMETERS structure specifies the current or new power management hardware capabilities that are enabled for a network adapter.
-old-location : netvista\ndis_pm_parameters.htm
-old-project : netvista
-ms.assetid : 7747645c-398f-434e-9f0c-21b6d3c7d963
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NDIS_PM_PARAMETERS structure [Network Drivers Starting with Windows Vista], PNDIS_PM_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], netvista.ndis_pm_parameters, miniport_power_management_ref_dc82d32a-ee0e-4167-b322-f0b91ece8002.xml, NDIS_PM_PARAMETERS, ntddndis/NDIS_PM_PARAMETERS, PNDIS_PM_PARAMETERS, ntddndis/PNDIS_PM_PARAMETERS, _NDIS_PM_PARAMETERS, *PNDIS_PM_PARAMETERS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddndis.h
-req.include-header : Ntddndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.20 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_PM_PARAMETERS, *PNDIS_PM_PARAMETERS
+UID: NS:ntddndis._NDIS_PM_PARAMETERS
+title: "_NDIS_PM_PARAMETERS"
+author: windows-driver-content
+description: The NDIS_PM_PARAMETERS structure specifies the current or new power management hardware capabilities that are enabled for a network adapter.
+old-location: netvista\ndis_pm_parameters.htm
+old-project: netvista
+ms.assetid: 7747645c-398f-434e-9f0c-21b6d3c7d963
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NDIS_PM_PARAMETERS structure [Network Drivers Starting with Windows Vista], PNDIS_PM_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], netvista.ndis_pm_parameters, miniport_power_management_ref_dc82d32a-ee0e-4167-b322-f0b91ece8002.xml, NDIS_PM_PARAMETERS, ntddndis/NDIS_PM_PARAMETERS, PNDIS_PM_PARAMETERS, ntddndis/PNDIS_PM_PARAMETERS, _NDIS_PM_PARAMETERS, *PNDIS_PM_PARAMETERS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddndis.h
+req.include-header: Ntddndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.20 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddndis.h
+apiname:
+-	NDIS_PM_PARAMETERS
+product: Windows
+targetos: Windows
+req.typenames: NDIS_PM_PARAMETERS, *PNDIS_PM_PARAMETERS
 ---
 
 # _NDIS_PM_PARAMETERS structure

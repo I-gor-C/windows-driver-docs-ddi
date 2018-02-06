@@ -1,41 +1,46 @@
 ---
-UID : NS:d3d10umddi.D3D10DDI_MIPINFO
-title : D3D10DDI_MIPINFO
-author : windows-driver-content
-description : The D3D10DDI_MIPINFO structure describes the MIP-level texture and physical coordinates of a surface.
-old-location : display\d3d10ddi_mipinfo.htm
-old-project : display
-ms.assetid : 5f00ff32-5ecf-40ca-91bb-aacc542bb7f4
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3d10umddi/D3D10DDI_MIPINFO, D3D10DDI_MIPINFO, display.d3d10ddi_mipinfo, UMDisplayDriver_Dx10param_Structs_67768e5f-a18d-4bd9-a1be-96587f267c36.xml, D3D10DDI_MIPINFO structure [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3D10DDI_MIPINFO
+UID: NS:d3d10umddi.D3D10DDI_MIPINFO
+title: D3D10DDI_MIPINFO
+author: windows-driver-content
+description: The D3D10DDI_MIPINFO structure describes the MIP-level texture and physical coordinates of a surface.
+old-location: display\d3d10ddi_mipinfo.htm
+old-project: display
+ms.assetid: 5f00ff32-5ecf-40ca-91bb-aacc542bb7f4
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3d10umddi/D3D10DDI_MIPINFO, D3D10DDI_MIPINFO, display.d3d10ddi_mipinfo, UMDisplayDriver_Dx10param_Structs_67768e5f-a18d-4bd9-a1be-96587f267c36.xml, D3D10DDI_MIPINFO structure [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	D3D10DDI_MIPINFO
+product: Windows
+targetos: Windows
+req.typenames: D3D10DDI_MIPINFO
 ---
 
 # D3D10DDI_MIPINFO structure

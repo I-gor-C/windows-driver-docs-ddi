@@ -1,42 +1,47 @@
 ---
-UID : NE:wwan._WWAN_IP_TYPE
-title : "_WWAN_IP_TYPE"
-author : windows-driver-content
-description : The WWAN_IP_TYPE enumeration lists the different levels of supported IP.
-old-location : netvista\wwan_ip_type.htm
-old-project : netvista
-ms.assetid : E4CE7BE7-021A-4C9A-B467-B63AACEC1266
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : wwan/WWAN_IP_TYPE, *PWWAN_IP_TYPE, WWAN_IP_TYPE enumeration [Network Drivers Starting with Windows Vista], WwanIPTypeDefault, _WWAN_IP_TYPE, wwan/WwanIPTypeIpv4v6, WwanIPTypeIPv6, WwanIPTypeIPv4, wwan/WwanIPTypeIPv6, WWAN_IP_TYPE, netvista.wwan_ip_type, wwan/WwanIPTypeDefault, WwanIPTypeIpv4v6, wwan/WwanIPTypeIPv4
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : wwan.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Versions:\_Supported in Windows 8 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WWAN_IP_TYPE, *PWWAN_IP_TYPE
-req.product : Windows 10 or later.
+UID: NE:wwan._WWAN_IP_TYPE
+title: "_WWAN_IP_TYPE"
+author: windows-driver-content
+description: The WWAN_IP_TYPE enumeration lists the different levels of supported IP.
+old-location: netvista\wwan_ip_type.htm
+old-project: netvista
+ms.assetid: E4CE7BE7-021A-4C9A-B467-B63AACEC1266
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: wwan/WWAN_IP_TYPE, *PWWAN_IP_TYPE, WWAN_IP_TYPE enumeration [Network Drivers Starting with Windows Vista], WwanIPTypeDefault, _WWAN_IP_TYPE, wwan/WwanIPTypeIpv4v6, WwanIPTypeIPv6, WwanIPTypeIPv4, wwan/WwanIPTypeIPv6, WWAN_IP_TYPE, netvista.wwan_ip_type, wwan/WwanIPTypeDefault, WwanIPTypeIpv4v6, wwan/WwanIPTypeIPv4
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: wwan.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Versions:\_Supported in Windows 8 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wwan.h
+apiname:
+-	WWAN_IP_TYPE
+product: Windows
+targetos: Windows
+req.typenames: WWAN_IP_TYPE, *PWWAN_IP_TYPE
+req.product: Windows 10 or later.
 ---
 
 # _WWAN_IP_TYPE Enumeration
@@ -55,31 +60,31 @@ typedef enum _WWAN_IP_TYPE {
 ## Constants
 
 <table>
-
-<tr>
-<td>WwanIPTypeDefault</td>
-<td>Default IP.</td>
-</tr>
-
-<tr>
-<td>WwanIPTypeIPv4</td>
-<td>IPv4.</td>
-</tr>
-
-<tr>
-<td>WwanIPTypeIpv4v6</td>
-<td>IPv4 with IPv6</td>
-</tr>
-
-<tr>
-<td>WwanIPTypeIPv6</td>
-<td>IPv6</td>
-</tr>
-
-<tr>
-<td>WwanIPTypeXlat</td>
-<td></td>
-</tr>
+            
+                <tr>
+                    <td>WwanIPTypeDefault</td>
+                    <td>Default IP.</td>
+                </tr>
+            
+                <tr>
+                    <td>WwanIPTypeIPv4</td>
+                    <td>IPv4.</td>
+                </tr>
+            
+                <tr>
+                    <td>WwanIPTypeIpv4v6</td>
+                    <td>IPv4 with IPv6</td>
+                </tr>
+            
+                <tr>
+                    <td>WwanIPTypeIPv6</td>
+                    <td>IPv6</td>
+                </tr>
+            
+                <tr>
+                    <td>WwanIPTypeXlat</td>
+                    <td></td>
+                </tr>
 </table>
 
 
@@ -89,9 +94,9 @@ typedef enum _WWAN_IP_TYPE {
 | **Windows version** | Versions:\_Supported in Windows 8 and later versions of Windows. Versions:\_Supported in Windows 8 and later versions of Windows. |
 | **Header** | wwan.h |
 
-## See Also
+    ## See Also
 
-<a href="..\wwan\ns-wwan-_wwan_context_state.md">WWAN_CONTEXT_STATE</a>
+        <a href="..\wwan\ns-wwan-_wwan_context_state.md">WWAN_CONTEXT_STATE</a>
 
 <a href="..\wwan\ns-wwan-_wwan_set_context_state.md">WWAN_SET_CONTEXT_STATE</a>
 

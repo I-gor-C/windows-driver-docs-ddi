@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugSymbols3.GetTypeNameWide
-title : IDebugSymbols3::GetTypeNameWide method
-author : windows-driver-content
-description : The GetTypeNameWide method returns the name of the type symbol specified by its type ID and module.
-old-location : debugger\gettypenamewide.htm
-old-project : debugger
-ms.assetid : 0098aa2c-4ee4-49e4-a480-2402e771742f
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : GetTypeNameWide method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols3::GetTypeNameWide, IDebugSymbols3 interface [Windows Debugging], GetTypeNameWide method, dbgeng/IDebugSymbols3::GetTypeNameWide, GetTypeNameWide method [Windows Debugging], debugger.gettypenamewide, IDebugSymbols3, GetTypeNameWide
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSymbols3.GetTypeNameWide
+title: IDebugSymbols3::GetTypeNameWide method
+author: windows-driver-content
+description: The GetTypeNameWide method returns the name of the type symbol specified by its type ID and module.
+old-location: debugger\gettypenamewide.htm
+old-project: debugger
+ms.assetid: 0098aa2c-4ee4-49e4-a480-2402e771742f
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: GetTypeNameWide method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols3::GetTypeNameWide, IDebugSymbols3 interface [Windows Debugging], GetTypeNameWide method, dbgeng/IDebugSymbols3::GetTypeNameWide, GetTypeNameWide method [Windows Debugging], debugger.gettypenamewide, IDebugSymbols3, GetTypeNameWide
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugSymbols3.GetTypeNameWide
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

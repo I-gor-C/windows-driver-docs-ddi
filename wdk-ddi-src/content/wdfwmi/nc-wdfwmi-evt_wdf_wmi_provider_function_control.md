@@ -1,42 +1,47 @@
 ---
-UID : NC:wdfwmi.EVT_WDF_WMI_PROVIDER_FUNCTION_CONTROL
-title : EVT_WDF_WMI_PROVIDER_FUNCTION_CONTROL
-author : windows-driver-content
-description : A driver's EvtWmiProviderFunctionControl callback function enables and disables the driver's support for collecting data and sending events for a specified WMI data provider.
-old-location : wdf\evtwmiproviderfunctioncontrol.htm
-old-project : wdf
-ms.assetid : 89b48747-d3aa-48c7-825c-94545f378f07
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.evtwmiproviderfunctioncontrol, EvtWmiProviderFunctionControl callback function, EvtWmiProviderFunctionControl, EVT_WDF_WMI_PROVIDER_FUNCTION_CONTROL, EVT_WDF_WMI_PROVIDER_FUNCTION_CONTROL, wdfwmi/EvtWmiProviderFunctionControl, DFWMIRef_2beaafe2-cb59-49cb-85dc-6ea2beff1b1e.xml, kmdf.evtwmiproviderfunctioncontrol
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdfwmi.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_USB_REQUEST_COMPLETION_PARAMS, *PWDF_USB_REQUEST_COMPLETION_PARAMS
-req.product : Windows 10 or later.
+UID: NC:wdfwmi.EVT_WDF_WMI_PROVIDER_FUNCTION_CONTROL
+title: EVT_WDF_WMI_PROVIDER_FUNCTION_CONTROL
+author: windows-driver-content
+description: A driver's EvtWmiProviderFunctionControl callback function enables and disables the driver's support for collecting data and sending events for a specified WMI data provider.
+old-location: wdf\evtwmiproviderfunctioncontrol.htm
+old-project: wdf
+ms.assetid: 89b48747-d3aa-48c7-825c-94545f378f07
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.evtwmiproviderfunctioncontrol, EvtWmiProviderFunctionControl callback function, EvtWmiProviderFunctionControl, EVT_WDF_WMI_PROVIDER_FUNCTION_CONTROL, EVT_WDF_WMI_PROVIDER_FUNCTION_CONTROL, wdfwmi/EvtWmiProviderFunctionControl, DFWMIRef_2beaafe2-cb59-49cb-85dc-6ea2beff1b1e.xml, kmdf.evtwmiproviderfunctioncontrol
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdfwmi.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	WdfWMI.h
+apiname:
+-	EvtWmiProviderFunctionControl
+product: Windows
+targetos: Windows
+req.typenames: WDF_USB_REQUEST_COMPLETION_PARAMS, *PWDF_USB_REQUEST_COMPLETION_PARAMS
+req.product: Windows 10 or later.
 ---
 
 

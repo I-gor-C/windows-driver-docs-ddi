@@ -1,41 +1,46 @@
 ---
-UID : NS:ndis._NDIS_OFFLOAD_ENCAPSULATION
-title : "_NDIS_OFFLOAD_ENCAPSULATION"
-author : windows-driver-content
-description : The NDIS_OFFLOAD_ENCAPSULATION structure specifies encapsulation settings when it is used with the OID_OFFLOAD_ENCAPSULATION OID.
-old-location : netvista\ndis_offload_encapsulation.htm
-old-project : netvista
-ms.assetid : 19013ffa-6bb5-4a77-b85b-c32fb0bf0530
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.ndis_offload_encapsulation, PNDIS_OFFLOAD_ENCAPSULATION, PNDIS_OFFLOAD_ENCAPSULATION structure pointer [Network Drivers Starting with Windows Vista], NDIS_ENCAPSULATION_IEEE_802_3, NDIS_OFFLOAD_ENCAPSULATION, ndis/PNDIS_OFFLOAD_ENCAPSULATION, NDIS_OFFLOAD_ENCAPSULATION structure [Network Drivers Starting with Windows Vista], *PNDIS_OFFLOAD_ENCAPSULATION, _NDIS_OFFLOAD_ENCAPSULATION, ndis/NDIS_OFFLOAD_ENCAPSULATION, NDIS_ENCAPSULATION_IEEE_LLC_SNAP_ROUTED, tcpip_offload_ref_d3154816-5813-4616-b17f-b76362d9a58f.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : See Remarks section
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PNDIS_OFFLOAD_ENCAPSULATION, NDIS_OFFLOAD_ENCAPSULATION"
+UID: NS:ndis._NDIS_OFFLOAD_ENCAPSULATION
+title: "_NDIS_OFFLOAD_ENCAPSULATION"
+author: windows-driver-content
+description: The NDIS_OFFLOAD_ENCAPSULATION structure specifies encapsulation settings when it is used with the OID_OFFLOAD_ENCAPSULATION OID.
+old-location: netvista\ndis_offload_encapsulation.htm
+old-project: netvista
+ms.assetid: 19013ffa-6bb5-4a77-b85b-c32fb0bf0530
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.ndis_offload_encapsulation, PNDIS_OFFLOAD_ENCAPSULATION, PNDIS_OFFLOAD_ENCAPSULATION structure pointer [Network Drivers Starting with Windows Vista], NDIS_ENCAPSULATION_IEEE_802_3, NDIS_OFFLOAD_ENCAPSULATION, ndis/PNDIS_OFFLOAD_ENCAPSULATION, NDIS_OFFLOAD_ENCAPSULATION structure [Network Drivers Starting with Windows Vista], *PNDIS_OFFLOAD_ENCAPSULATION, _NDIS_OFFLOAD_ENCAPSULATION, ndis/NDIS_OFFLOAD_ENCAPSULATION, NDIS_ENCAPSULATION_IEEE_LLC_SNAP_ROUTED, tcpip_offload_ref_d3154816-5813-4616-b17f-b76362d9a58f.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: See Remarks section
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndis.h
+apiname:
+-	NDIS_OFFLOAD_ENCAPSULATION
+product: Windows
+targetos: Windows
+req.typenames: "*PNDIS_OFFLOAD_ENCAPSULATION, NDIS_OFFLOAD_ENCAPSULATION"
 ---
 
 # _NDIS_OFFLOAD_ENCAPSULATION structure

@@ -1,42 +1,47 @@
 ---
-UID : NS:wmistr._WNODE_HEADER
-title : "_WNODE_HEADER"
-author : windows-driver-content
-description : The WNODE_HEADER structure is the first member of all other WNODE_XXX structures. It contains information common to all such structures.
-old-location : kernel\wnode_header.htm
-old-project : kernel
-ms.assetid : a895f048-b111-4ccc-8466-fe9b169a2f95
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : "_WNODE_HEADER, WNODE_HEADER structure [Kernel-Mode Driver Architecture], wmistr/WNODE_HEADER, kernel.wnode_header, *PWNODE_HEADER, PWNODE_HEADER structure pointer [Kernel-Mode Driver Architecture], wmistr/PWNODE_HEADER, kstruct_d_ff879b76-aed0-46d5-a688-c59e1424aeb4.xml, WNODE_HEADER, PWNODE_HEADER"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wmistr.h
-req.include-header : Wmistr.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WNODE_HEADER, *PWNODE_HEADER
-req.product : Windows 10 or later.
+UID: NS:wmistr._WNODE_HEADER
+title: "_WNODE_HEADER"
+author: windows-driver-content
+description: The WNODE_HEADER structure is the first member of all other WNODE_XXX structures. It contains information common to all such structures.
+old-location: kernel\wnode_header.htm
+old-project: kernel
+ms.assetid: a895f048-b111-4ccc-8466-fe9b169a2f95
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: "_WNODE_HEADER, WNODE_HEADER structure [Kernel-Mode Driver Architecture], wmistr/WNODE_HEADER, kernel.wnode_header, *PWNODE_HEADER, PWNODE_HEADER structure pointer [Kernel-Mode Driver Architecture], wmistr/PWNODE_HEADER, kstruct_d_ff879b76-aed0-46d5-a688-c59e1424aeb4.xml, WNODE_HEADER, PWNODE_HEADER"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wmistr.h
+req.include-header: Wmistr.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wmistr.h
+apiname:
+-	WNODE_HEADER
+product: Windows
+targetos: Windows
+req.typenames: WNODE_HEADER, *PWNODE_HEADER
+req.product: Windows 10 or later.
 ---
 
 # _WNODE_HEADER structure

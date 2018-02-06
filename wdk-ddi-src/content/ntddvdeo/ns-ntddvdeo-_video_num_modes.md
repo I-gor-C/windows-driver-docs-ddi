@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddvdeo._VIDEO_NUM_MODES
-title : "_VIDEO_NUM_MODES"
-author : windows-driver-content
-description : The VIDEO_NUM_MODES structure contains the number of modes supported by a video adapter, and the size of the structure that describes each mode.
-old-location : display\video_num_modes.htm
-old-project : display
-ms.assetid : d4ca1276-c0f6-46c6-bf86-3cd2a0c5f194
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : PVIDEO_NUM_MODES, ntddvdeo/VIDEO_NUM_MODES, *PVIDEO_NUM_MODES, Video_Structs_9e999162-309a-4902-8854-172c672bf1ea.xml, display.video_num_modes, VIDEO_NUM_MODES, _VIDEO_NUM_MODES, ntddvdeo/PVIDEO_NUM_MODES, PVIDEO_NUM_MODES structure pointer [Display Devices], VIDEO_NUM_MODES structure [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddvdeo.h
-req.include-header : Ntddvdeo.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PVIDEO_NUM_MODES, VIDEO_NUM_MODES"
+UID: NS:ntddvdeo._VIDEO_NUM_MODES
+title: "_VIDEO_NUM_MODES"
+author: windows-driver-content
+description: The VIDEO_NUM_MODES structure contains the number of modes supported by a video adapter, and the size of the structure that describes each mode.
+old-location: display\video_num_modes.htm
+old-project: display
+ms.assetid: d4ca1276-c0f6-46c6-bf86-3cd2a0c5f194
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: PVIDEO_NUM_MODES, ntddvdeo/VIDEO_NUM_MODES, *PVIDEO_NUM_MODES, Video_Structs_9e999162-309a-4902-8854-172c672bf1ea.xml, display.video_num_modes, VIDEO_NUM_MODES, _VIDEO_NUM_MODES, ntddvdeo/PVIDEO_NUM_MODES, PVIDEO_NUM_MODES structure pointer [Display Devices], VIDEO_NUM_MODES structure [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddvdeo.h
+req.include-header: Ntddvdeo.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddvdeo.h
+apiname:
+-	VIDEO_NUM_MODES
+product: Windows
+targetos: Windows
+req.typenames: "*PVIDEO_NUM_MODES, VIDEO_NUM_MODES"
 ---
 
 # _VIDEO_NUM_MODES structure

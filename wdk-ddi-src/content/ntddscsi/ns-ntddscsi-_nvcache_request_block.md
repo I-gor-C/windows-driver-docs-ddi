@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddscsi._NVCACHE_REQUEST_BLOCK
-title : "_NVCACHE_REQUEST_BLOCK"
-author : windows-driver-content
-description : The NVCACHE_REQUEST_BLOCK structure is used in conjunction with the IOCTL_SCSI_MINIPORT request to manage hybrid-hard disk drive (H-HDD) devices (for example, Microsoft ReadyDrive technology).
-old-location : storage\nvcache_request_block.htm
-old-project : storage
-ms.assetid : 25ca2d81-72a5-47ae-bdfd-0ec63e1ca39a
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : NVCACHE_REQUEST_BLOCK, PNVCACHE_REQUEST_BLOCK structure pointer [Storage Devices], storage.nvcache_request_block, *PNVCACHE_REQUEST_BLOCK, ntddscsi/PNVCACHE_REQUEST_BLOCK, NVCACHE_REQUEST_BLOCK structure [Storage Devices], PNVCACHE_REQUEST_BLOCK, ntddscsi/NVCACHE_REQUEST_BLOCK, structs-nvcache_1886905c-1d48-4cc9-b74c-3b52dc65b279.xml, _NVCACHE_REQUEST_BLOCK
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddscsi.h
-req.include-header : Ntddscsi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NVCACHE_REQUEST_BLOCK, *PNVCACHE_REQUEST_BLOCK
+UID: NS:ntddscsi._NVCACHE_REQUEST_BLOCK
+title: "_NVCACHE_REQUEST_BLOCK"
+author: windows-driver-content
+description: The NVCACHE_REQUEST_BLOCK structure is used in conjunction with the IOCTL_SCSI_MINIPORT request to manage hybrid-hard disk drive (H-HDD) devices (for example, Microsoft ReadyDrive technology).
+old-location: storage\nvcache_request_block.htm
+old-project: storage
+ms.assetid: 25ca2d81-72a5-47ae-bdfd-0ec63e1ca39a
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: NVCACHE_REQUEST_BLOCK, PNVCACHE_REQUEST_BLOCK structure pointer [Storage Devices], storage.nvcache_request_block, *PNVCACHE_REQUEST_BLOCK, ntddscsi/PNVCACHE_REQUEST_BLOCK, NVCACHE_REQUEST_BLOCK structure [Storage Devices], PNVCACHE_REQUEST_BLOCK, ntddscsi/NVCACHE_REQUEST_BLOCK, structs-nvcache_1886905c-1d48-4cc9-b74c-3b52dc65b279.xml, _NVCACHE_REQUEST_BLOCK
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddscsi.h
+req.include-header: Ntddscsi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddscsi.h
+apiname:
+-	NVCACHE_REQUEST_BLOCK
+product: Windows
+targetos: Windows
+req.typenames: NVCACHE_REQUEST_BLOCK, *PNVCACHE_REQUEST_BLOCK
 ---
 
 # _NVCACHE_REQUEST_BLOCK structure

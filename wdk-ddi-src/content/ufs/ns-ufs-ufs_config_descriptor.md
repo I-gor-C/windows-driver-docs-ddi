@@ -1,42 +1,47 @@
 ---
-UID : NS:ufs.UFS_CONFIG_DESCRIPTOR
-title : UFS_CONFIG_DESCRIPTOR
-author : windows-driver-content
-description : The UFS_CONFIG_DESCRIPTOR structure describes the modifiable values of the default device configuration set by the manufacturer.
-old-location : storage\ufs_config_descriptor.htm
-old-project : storage
-ms.assetid : B65A2268-6959-4630-97DA-C0CFD37D9174
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : PUFS_CONFIG_DESCRIPTOR structure pointer [Storage Devices], PUFS_CONFIG_DESCRIPTOR, *PUFS_CONFIG_DESCRIPTOR, storage.ufs_config_descriptor, ufs/PUFS_CONFIG_DESCRIPTOR, UFS_CONFIG_DESCRIPTOR structure [Storage Devices], ufs/UFS_CONFIG_DESCRIPTOR, UFS_CONFIG_DESCRIPTOR
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ufs.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10, version 1709
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : UFS_CONFIG_DESCRIPTOR, *PUFS_CONFIG_DESCRIPTOR
-req.product : Windows 10 or later.
+UID: NS:ufs.UFS_CONFIG_DESCRIPTOR
+title: UFS_CONFIG_DESCRIPTOR
+author: windows-driver-content
+description: The UFS_CONFIG_DESCRIPTOR structure describes the modifiable values of the default device configuration set by the manufacturer.
+old-location: storage\ufs_config_descriptor.htm
+old-project: storage
+ms.assetid: B65A2268-6959-4630-97DA-C0CFD37D9174
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: PUFS_CONFIG_DESCRIPTOR structure pointer [Storage Devices], PUFS_CONFIG_DESCRIPTOR, *PUFS_CONFIG_DESCRIPTOR, storage.ufs_config_descriptor, ufs/PUFS_CONFIG_DESCRIPTOR, UFS_CONFIG_DESCRIPTOR structure [Storage Devices], ufs/UFS_CONFIG_DESCRIPTOR, UFS_CONFIG_DESCRIPTOR
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ufs.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10, version 1709
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ufs.h
+apiname:
+-	UFS_CONFIG_DESCRIPTOR
+product: Windows
+targetos: Windows
+req.typenames: UFS_CONFIG_DESCRIPTOR, *PUFS_CONFIG_DESCRIPTOR
+req.product: Windows 10 or later.
 ---
 
 # UFS_CONFIG_DESCRIPTOR structure

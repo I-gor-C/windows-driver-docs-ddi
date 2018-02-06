@@ -1,42 +1,47 @@
 ---
-UID : NF:storport.StorPortPutScatterGatherList
-title : StorPortPutScatterGatherList function
-author : windows-driver-content
-description : The StorPortPutScatterGatherList routine releases any resources associated with a scatter/gather list that was previously created by a call to the StorPortBuildScatterGatherList routine.
-old-location : storage\storportputscattergatherlist.htm
-old-project : storage
-ms.assetid : 0b380597-09dc-414f-b2c6-f541d35540da
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : StorPortPutScatterGatherList routine [Storage Devices], storage.storportputscattergatherlist, StorPortPutScatterGatherList, storprt_d8e74add-b512-4584-aa56-d9337ad3d7a9.xml, storport/StorPortPutScatterGatherList
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : StorPortIrql
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : DISPATCH_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STOR_SPINLOCK
-req.product : Windows 10 or later.
+UID: NF:storport.StorPortPutScatterGatherList
+title: StorPortPutScatterGatherList function
+author: windows-driver-content
+description: The StorPortPutScatterGatherList routine releases any resources associated with a scatter/gather list that was previously created by a call to the StorPortBuildScatterGatherList routine.
+old-location: storage\storportputscattergatherlist.htm
+old-project: storage
+ms.assetid: 0b380597-09dc-414f-b2c6-f541d35540da
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: StorPortPutScatterGatherList routine [Storage Devices], storage.storportputscattergatherlist, StorPortPutScatterGatherList, storprt_d8e74add-b512-4584-aa56-d9337ad3d7a9.xml, storport/StorPortPutScatterGatherList
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: StorPortIrql
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: DISPATCH_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	storport.h
+apiname:
+-	StorPortPutScatterGatherList
+product: Windows
+targetos: Windows
+req.typenames: STOR_SPINLOCK
+req.product: Windows 10 or later.
 ---
 
 

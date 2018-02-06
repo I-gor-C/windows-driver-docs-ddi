@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugRegisters2.GetPseudoDescription
-title : IDebugRegisters2::GetPseudoDescription method
-author : windows-driver-content
-description : The GetPseudoDescription method returns a description of a pseudo-register, including its name and type.
-old-location : debugger\getpseudodescription.htm
-old-project : debugger
-ms.assetid : dc1c7b8a-1233-4f22-8c5f-273f370a1e06
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugRegisters2::GetPseudoDescription, dbgeng/IDebugRegisters2::GetPseudoDescription, GetPseudoDescription method [Windows Debugging], IDebugRegisters2 interface, debugger.getpseudodescription, GetPseudoDescription method [Windows Debugging], IDebugRegisters2, GetPseudoDescription, IDebugRegisters2 interface [Windows Debugging], GetPseudoDescription method, IDebugRegisters_7b1f8069-32d0-4fb4-9cee-7fd045bae8d3.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : DbgEng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugRegisters2.GetPseudoDescription
+title: IDebugRegisters2::GetPseudoDescription method
+author: windows-driver-content
+description: The GetPseudoDescription method returns a description of a pseudo-register, including its name and type.
+old-location: debugger\getpseudodescription.htm
+old-project: debugger
+ms.assetid: dc1c7b8a-1233-4f22-8c5f-273f370a1e06
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugRegisters2::GetPseudoDescription, dbgeng/IDebugRegisters2::GetPseudoDescription, GetPseudoDescription method [Windows Debugging], IDebugRegisters2 interface, debugger.getpseudodescription, GetPseudoDescription method [Windows Debugging], IDebugRegisters2, GetPseudoDescription, IDebugRegisters2 interface [Windows Debugging], GetPseudoDescription method, IDebugRegisters_7b1f8069-32d0-4fb4-9cee-7fd045bae8d3.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: DbgEng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugRegisters2.GetPseudoDescription
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

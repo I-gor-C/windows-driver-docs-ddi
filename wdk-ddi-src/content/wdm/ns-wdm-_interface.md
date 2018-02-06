@@ -1,42 +1,47 @@
 ---
-UID : NS:wdm._INTERFACE
-title : "_INTERFACE"
-author : windows-driver-content
-description : The INTERFACE structure describes an interface that is exported by a driver for use by other drivers.
-old-location : kernel\interface.htm
-old-project : kernel
-ms.assetid : d853643d-d3e8-40cc-a8a8-848f36f3bdae
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/INTERFACE, INTERFACE structure [Kernel-Mode Driver Architecture], INTERFACE, _INTERFACE, *PINTERFACE, PINTERFACE structure pointer [Kernel-Mode Driver Architecture], kernel.interface, PINTERFACE, wdm/PINTERFACE, kstruct_b_667d57fa-a959-4904-a15e-af4d4f44988e.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PINTERFACE, INTERFACE"
-req.product : Windows 10 or later.
+UID: NS:wdm._INTERFACE
+title: "_INTERFACE"
+author: windows-driver-content
+description: The INTERFACE structure describes an interface that is exported by a driver for use by other drivers.
+old-location: kernel\interface.htm
+old-project: kernel
+ms.assetid: d853643d-d3e8-40cc-a8a8-848f36f3bdae
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/INTERFACE, INTERFACE structure [Kernel-Mode Driver Architecture], INTERFACE, _INTERFACE, *PINTERFACE, PINTERFACE structure pointer [Kernel-Mode Driver Architecture], kernel.interface, PINTERFACE, wdm/PINTERFACE, kstruct_b_667d57fa-a959-4904-a15e-af4d4f44988e.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	INTERFACE
+product: Windows
+targetos: Windows
+req.typenames: "*PINTERFACE, INTERFACE"
+req.product: Windows 10 or later.
 ---
 
 # _INTERFACE structure

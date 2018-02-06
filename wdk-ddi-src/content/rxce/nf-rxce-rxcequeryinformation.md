@@ -1,42 +1,47 @@
 ---
-UID : NF:rxce.RxCeQueryInformation
-title : RxCeQueryInformation function
-author : windows-driver-content
-description : RxCeQueryInformation queries information about a connection in a caller-allocated buffer.
-old-location : ifsk\rxcequeryinformation.htm
-old-project : ifsk
-ms.assetid : 58dd579c-3fb8-45c7-a7bc-ca0919166153
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : rxref_b7508a13-8eb0-42d0-917c-300a5eb4c0e9.xml, RxCeQueryInformation, RxCeQueryInformation function [Installable File System Drivers], ifsk.rxcequeryinformation, rxce/RxCeQueryInformation
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : rxce.h
-req.include-header : Rxce.h, Rxcehdlr.h, Tdi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*LPRILWRITEPHONEBOOKENTRYPARAMS, RILWRITEPHONEBOOKENTRYPARAMS"
-req.product : Windows 10 or later.
+UID: NF:rxce.RxCeQueryInformation
+title: RxCeQueryInformation function
+author: windows-driver-content
+description: RxCeQueryInformation queries information about a connection in a caller-allocated buffer.
+old-location: ifsk\rxcequeryinformation.htm
+old-project: ifsk
+ms.assetid: 58dd579c-3fb8-45c7-a7bc-ca0919166153
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: rxref_b7508a13-8eb0-42d0-917c-300a5eb4c0e9.xml, RxCeQueryInformation, RxCeQueryInformation function [Installable File System Drivers], ifsk.rxcequeryinformation, rxce/RxCeQueryInformation
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: rxce.h
+req.include-header: Rxce.h, Rxcehdlr.h, Tdi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	rxce.h
+apiname:
+-	RxCeQueryInformation
+product: Windows
+targetos: Windows
+req.typenames: "*LPRILWRITEPHONEBOOKENTRYPARAMS, RILWRITEPHONEBOOKENTRYPARAMS"
+req.product: Windows 10 or later.
 ---
 
 

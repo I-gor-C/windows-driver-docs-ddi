@@ -1,42 +1,48 @@
 ---
-UID : NF:usbdlib.USBD_CloseHandle
-title : USBD_CloseHandle function
-author : windows-driver-content
-description : The USBD_CloseHandle routine is called by a USB client driver to close a USBD handle and release all resources associated with the driver's registration.
-old-location : buses\usbd_unregister.htm
-old-project : usbref
-ms.assetid : 6876E96D-E249-4B7C-A496-27E3F4A7F7E2
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : usbdlib/USBD_CloseHandle, buses.usbd_unregister, USBD_CloseHandle, USBD_CloseHandle routine [Buses]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : usbdlib.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Requires DDK for Windows 8. Targets Windows Vista and later versions of the Windows operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Usbdex.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : USBCAMD_DEVICE_DATA2, *PUSBCAMD_DEVICE_DATA2
-req.product : Windows 10 or later.
+UID: NF:usbdlib.USBD_CloseHandle
+title: USBD_CloseHandle function
+author: windows-driver-content
+description: The USBD_CloseHandle routine is called by a USB client driver to close a USBD handle and release all resources associated with the driver's registration.
+old-location: buses\usbd_unregister.htm
+old-project: usbref
+ms.assetid: 6876E96D-E249-4B7C-A496-27E3F4A7F7E2
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: usbdlib/USBD_CloseHandle, buses.usbd_unregister, USBD_CloseHandle, USBD_CloseHandle routine [Buses]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: usbdlib.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Requires DDK for Windows 8. Targets Windows Vista and later versions of the Windows operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Usbdex.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Usbdex.lib
+-	Usbdex.dll
+apiname:
+-	USBD_CloseHandle
+product: Windows
+targetos: Windows
+req.typenames: USBCAMD_DEVICE_DATA2, *PUSBCAMD_DEVICE_DATA2
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NC:ndis.MINIPORT_DISABLE_INTERRUPT
-title : MINIPORT_DISABLE_INTERRUPT
-author : windows-driver-content
-description : NDIS can call a miniport driver's MiniportDisableInterruptEx handler to disable interrupts for diagnostic and troubleshooting purposes.
-old-location : netvista\miniportdisableinterruptex.htm
-old-project : netvista
-ms.assetid : 6016ab15-56c6-4430-8883-d4cdcdf6116f
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.miniportdisableinterruptex, MiniportDisableInterruptEx callback function [Network Drivers Starting with Windows Vista], MiniportDisableInterruptEx, MINIPORT_DISABLE_INTERRUPT, MINIPORT_DISABLE_INTERRUPT, ndis/MiniportDisableInterruptEx, ndis_interrupts_miniport_functions_ref_985ddb3d-4a38-4c96-8599-17f211d47b49.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : See Remarks section
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
+UID: NC:ndis.MINIPORT_DISABLE_INTERRUPT
+title: MINIPORT_DISABLE_INTERRUPT
+author: windows-driver-content
+description: NDIS can call a miniport driver's MiniportDisableInterruptEx handler to disable interrupts for diagnostic and troubleshooting purposes.
+old-location: netvista\miniportdisableinterruptex.htm
+old-project: netvista
+ms.assetid: 6016ab15-56c6-4430-8883-d4cdcdf6116f
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.miniportdisableinterruptex, MiniportDisableInterruptEx callback function [Network Drivers Starting with Windows Vista], MiniportDisableInterruptEx, MINIPORT_DISABLE_INTERRUPT, MINIPORT_DISABLE_INTERRUPT, ndis/MiniportDisableInterruptEx, ndis_interrupts_miniport_functions_ref_985ddb3d-4a38-4c96-8599-17f211d47b49.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: See Remarks section
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ndis.h
+apiname:
+-	MiniportDisableInterruptEx
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 

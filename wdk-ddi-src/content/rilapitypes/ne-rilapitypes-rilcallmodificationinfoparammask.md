@@ -1,42 +1,47 @@
 ---
-UID : NE:rilapitypes.RILCALLMODIFICATIONINFOPARAMMASK
-title : RILCALLMODIFICATIONINFOPARAMMASK
-author : windows-driver-content
-description : This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
-old-location : netvista\rilcallmodificationinfoparammask_2.htm
-old-project : netvista
-ms.assetid : 78726ec3-f777-4165-baec-c2c013e4c86a
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.rilcallmodificationinfoparammask_2, rilapitypes/RILCALLMODIFICATIONINFOPARAMMASK, RIL_PARAM_CMI_NEWCALLTYPE, rilapitypes/RIL_PARAM_CMI_OLDCALLTYPE, RIL_PARAM_CMI_ADDRESS, rilapitypes/RIL_PARAM_CMI_MODIFICATIONTYPE, rilapitypes/RIL_PARAM_CMI_NEWCALLTYPE, rilapitypes/RIL_PARAM_CMI_ADDRESS, RIL_PARAM_CMI_ALPHAIDENTIFIER, RILCALLMODIFICATIONINFOPARAMMASK, RILCALLMODIFICATIONINFOPARAMMASK enumeration [Network Drivers Starting with Windows Vista], rilapitypes/RIL_PARAM_CMI_ID, RIL_PARAM_CMI_ID, rilapitypes/RIL_PARAM_CMI_ALPHAIDENTIFIER, RIL_PARAM_CMI_MODIFICATIONTYPE, rilapitypes/RIL_PARAM_CMI_ALL, RIL_PARAM_CMI_ALL, RIL_PARAM_CMI_OLDCALLTYPE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : rilapitypes.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RILCALLMODIFICATIONINFOPARAMMASK
-req.product : Windows 10 or later.
+UID: NE:rilapitypes.RILCALLMODIFICATIONINFOPARAMMASK
+title: RILCALLMODIFICATIONINFOPARAMMASK
+author: windows-driver-content
+description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+old-location: netvista\rilcallmodificationinfoparammask_2.htm
+old-project: netvista
+ms.assetid: 78726ec3-f777-4165-baec-c2c013e4c86a
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.rilcallmodificationinfoparammask_2, rilapitypes/RILCALLMODIFICATIONINFOPARAMMASK, RIL_PARAM_CMI_NEWCALLTYPE, rilapitypes/RIL_PARAM_CMI_OLDCALLTYPE, RIL_PARAM_CMI_ADDRESS, rilapitypes/RIL_PARAM_CMI_MODIFICATIONTYPE, rilapitypes/RIL_PARAM_CMI_NEWCALLTYPE, rilapitypes/RIL_PARAM_CMI_ADDRESS, RIL_PARAM_CMI_ALPHAIDENTIFIER, RILCALLMODIFICATIONINFOPARAMMASK, RILCALLMODIFICATIONINFOPARAMMASK enumeration [Network Drivers Starting with Windows Vista], rilapitypes/RIL_PARAM_CMI_ID, RIL_PARAM_CMI_ID, rilapitypes/RIL_PARAM_CMI_ALPHAIDENTIFIER, RIL_PARAM_CMI_MODIFICATIONTYPE, rilapitypes/RIL_PARAM_CMI_ALL, RIL_PARAM_CMI_ALL, RIL_PARAM_CMI_OLDCALLTYPE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: rilapitypes.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	rilapitypes.h
+apiname:
+-	RILCALLMODIFICATIONINFOPARAMMASK
+product: Windows
+targetos: Windows
+req.typenames: RILCALLMODIFICATIONINFOPARAMMASK
+req.product: Windows 10 or later.
 ---
 
 # RILCALLMODIFICATIONINFOPARAMMASK Enumeration
@@ -58,46 +63,46 @@ typedef enum _RILCALLMODIFICATIONINFOPARAMMASK {
 ## Constants
 
 <table>
-
-<tr>
-<td>RIL_PARAM_CMI_ADDRESS</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_PARAM_CMI_ALL</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_PARAM_CMI_ALPHAIDENTIFIER</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_PARAM_CMI_EXECUTOR</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_PARAM_CMI_ID</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_PARAM_CMI_MODIFICATIONTYPE</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_PARAM_CMI_NEWCALLTYPE</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_PARAM_CMI_OLDCALLTYPE</td>
-<td></td>
-</tr>
+            
+                <tr>
+                    <td>RIL_PARAM_CMI_ADDRESS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_CMI_ALL</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_CMI_ALPHAIDENTIFIER</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_CMI_EXECUTOR</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_CMI_ID</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_CMI_MODIFICATIONTYPE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_CMI_NEWCALLTYPE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_CMI_OLDCALLTYPE</td>
+                    <td></td>
+                </tr>
 </table>
 
 

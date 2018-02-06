@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugClient5.CreateProcessAndAttach2Wide
-title : IDebugClient5::CreateProcessAndAttach2Wide method
-author : windows-driver-content
-description : The CreateProcessAndAttach2Wide method creates a process from a specified command line, then attach to that process or another user-mode process.
-old-location : debugger\createprocessandattach2wide.htm
-old-project : debugger
-ms.assetid : a1a1170b-9ecc-4432-badd-50847c974469
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : dbgeng/IDebugClient5::CreateProcessAndAttach2Wide, IDebugClient5 interface [Windows Debugging], CreateProcessAndAttach2Wide method, IDebugClient5::CreateProcessAndAttach2Wide, CreateProcessAndAttach2Wide method [Windows Debugging], IDebugClient5 interface, CreateProcessAndAttach2Wide, CreateProcessAndAttach2Wide method [Windows Debugging], debugger.createprocessandattach2wide, IDebugClient5
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugClient5.CreateProcessAndAttach2Wide
+title: IDebugClient5::CreateProcessAndAttach2Wide method
+author: windows-driver-content
+description: The CreateProcessAndAttach2Wide method creates a process from a specified command line, then attach to that process or another user-mode process.
+old-location: debugger\createprocessandattach2wide.htm
+old-project: debugger
+ms.assetid: a1a1170b-9ecc-4432-badd-50847c974469
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: dbgeng/IDebugClient5::CreateProcessAndAttach2Wide, IDebugClient5 interface [Windows Debugging], CreateProcessAndAttach2Wide method, IDebugClient5::CreateProcessAndAttach2Wide, CreateProcessAndAttach2Wide method [Windows Debugging], IDebugClient5 interface, CreateProcessAndAttach2Wide, CreateProcessAndAttach2Wide method [Windows Debugging], debugger.createprocessandattach2wide, IDebugClient5
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugClient5.CreateProcessAndAttach2Wide
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

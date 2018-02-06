@@ -1,42 +1,47 @@
 ---
-UID : NF:rxprocs.RxPurgeAllFobxs
-title : RxPurgeAllFobxs function
-author : windows-driver-content
-description : RxPurgeAllFobxs purges all of the FOBX structures associated with a network mini-redirector.
-old-location : ifsk\rxpurgeallfobxs.htm
-old-project : ifsk
-ms.assetid : 3d2a31be-1b59-48a8-8cde-61d7f7319724
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : rxprocs/RxPurgeAllFobxs, RxPurgeAllFobxs function [Installable File System Drivers], ifsk.rxpurgeallfobxs, rxref_80dc8a6f-2b11-44b1-986b-b29402e4d46e.xml, RxPurgeAllFobxs
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : rxprocs.h
-req.include-header : Rxprocs.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RX_CONTEXT, *PRX_CONTEXT
-req.product : Windows 10 or later.
+UID: NF:rxprocs.RxPurgeAllFobxs
+title: RxPurgeAllFobxs function
+author: windows-driver-content
+description: RxPurgeAllFobxs purges all of the FOBX structures associated with a network mini-redirector.
+old-location: ifsk\rxpurgeallfobxs.htm
+old-project: ifsk
+ms.assetid: 3d2a31be-1b59-48a8-8cde-61d7f7319724
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: rxprocs/RxPurgeAllFobxs, RxPurgeAllFobxs function [Installable File System Drivers], ifsk.rxpurgeallfobxs, rxref_80dc8a6f-2b11-44b1-986b-b29402e4d46e.xml, RxPurgeAllFobxs
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: rxprocs.h
+req.include-header: Rxprocs.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	rxprocs.h
+apiname:
+-	RxPurgeAllFobxs
+product: Windows
+targetos: Windows
+req.typenames: RX_CONTEXT, *PRX_CONTEXT
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NF:netdma.NetDmaProviderStart
-title : NetDmaProviderStart function
-author : windows-driver-content
-description : The NetDmaProviderStart function notifies the NetDMA interface that all of the DMA channels that are associated with a DMA provider are initialized and ready for DMA transfers.
-old-location : netvista\netdmaproviderstart.htm
-old-project : netvista
-ms.assetid : e99ebbe8-8605-4bf2-9ec0-d7cde25058f7
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netdma_ref_bdb7c400-1c73-4dcb-8eb2-4121172302ad.xml, netdma/NetDmaProviderStart, NetDmaProviderStart, netvista.netdmaproviderstart, NetDmaProviderStart function [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : netdma.h
-req.include-header : Netdma.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported for NetDMA 1.0 drivers in Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NET_DMA_PNP_NOTIFICATION_CODE, *PNET_DMA_PNP_NOTIFICATION_CODE
+UID: NF:netdma.NetDmaProviderStart
+title: NetDmaProviderStart function
+author: windows-driver-content
+description: The NetDmaProviderStart function notifies the NetDMA interface that all of the DMA channels that are associated with a DMA provider are initialized and ready for DMA transfers.
+old-location: netvista\netdmaproviderstart.htm
+old-project: netvista
+ms.assetid: e99ebbe8-8605-4bf2-9ec0-d7cde25058f7
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netdma_ref_bdb7c400-1c73-4dcb-8eb2-4121172302ad.xml, netdma/NetDmaProviderStart, NetDmaProviderStart, netvista.netdmaproviderstart, NetDmaProviderStart function [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: netdma.h
+req.include-header: Netdma.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported for NetDMA 1.0 drivers in Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	netdma.h
+apiname:
+-	NetDmaProviderStart
+product: Windows
+targetos: Windows
+req.typenames: NET_DMA_PNP_NOTIFICATION_CODE, *PNET_DMA_PNP_NOTIFICATION_CODE
 ---
 
 

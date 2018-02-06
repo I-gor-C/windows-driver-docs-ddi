@@ -1,42 +1,47 @@
 ---
-UID : NN:wudfddi.IWDFObject
-title : IWDFObject
-author : windows-driver-content
-description : The IWDFObject interface exposes the framework base object that provides the basic functionality common across all framework object types. All framework objects are derived from this root object.
-old-location : wdf\iwdfobject.htm
-old-project : wdf
-ms.assetid : d2668856-a25d-4329-b230-f36992f8f9a4
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.iwdfobject, IWDFObject interface, IWDFObject interface, described, IWDFObject, wudfddi/IWDFObject, UMDFBaseObjectRef_b2026a30-0f91-4793-8622-093ca142f794.xml, umdf.iwdfobject
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : wudfddi.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.5
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NN:wudfddi.IWDFObject
+title: IWDFObject
+author: windows-driver-content
+description: The IWDFObject interface exposes the framework base object that provides the basic functionality common across all framework object types. All framework objects are derived from this root object.
+old-location: wdf\iwdfobject.htm
+old-project: wdf
+ms.assetid: d2668856-a25d-4329-b230-f36992f8f9a4
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.iwdfobject, IWDFObject interface, IWDFObject interface, described, IWDFObject, wudfddi/IWDFObject, UMDFBaseObjectRef_b2026a30-0f91-4793-8622-093ca142f794.xml, umdf.iwdfobject
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: wudfddi.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.5
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFObject
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 # IWDFObject interface

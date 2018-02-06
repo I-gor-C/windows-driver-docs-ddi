@@ -1,41 +1,46 @@
 ---
-UID : NC:ndis.FILTER_NET_PNP_EVENT
-title : FILTER_NET_PNP_EVENT
-author : windows-driver-content
-description : NDIS calls a filter driver's FilterNetPnPEvent function to notify the driver of network Plug and Play (PnP) and Power Management events.Note  You must declare the function by using the FILTER_NET_PNP_EVENT type.
-old-location : netvista\filternetpnpevent.htm
-old-project : netvista
-ms.assetid : 5c52b2d2-3fba-4d28-8172-7b6854386061
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.filternetpnpevent, FilterNetPnPEvent callback function [Network Drivers Starting with Windows Vista], FilterNetPnPEvent, FILTER_NET_PNP_EVENT, FILTER_NET_PNP_EVENT, ndis/FilterNetPnPEvent, filter_functions_ref_4d98cb8b-3f25-4e2c-abca-ac9c714f4a1a.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
+UID: NC:ndis.FILTER_NET_PNP_EVENT
+title: FILTER_NET_PNP_EVENT
+author: windows-driver-content
+description: NDIS calls a filter driver's FilterNetPnPEvent function to notify the driver of network Plug and Play (PnP) and Power Management events.Note  You must declare the function by using the FILTER_NET_PNP_EVENT type.
+old-location: netvista\filternetpnpevent.htm
+old-project: netvista
+ms.assetid: 5c52b2d2-3fba-4d28-8172-7b6854386061
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.filternetpnpevent, FilterNetPnPEvent callback function [Network Drivers Starting with Windows Vista], FilterNetPnPEvent, FILTER_NET_PNP_EVENT, FILTER_NET_PNP_EVENT, ndis/FilterNetPnPEvent, filter_functions_ref_4d98cb8b-3f25-4e2c-abca-ac9c714f4a1a.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ndis.h
+apiname:
+-	FilterNetPnPEvent
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 

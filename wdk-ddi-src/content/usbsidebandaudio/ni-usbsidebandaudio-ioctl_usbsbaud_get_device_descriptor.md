@@ -1,42 +1,47 @@
 ---
-UID : NI:usbsidebandaudio.IOCTL_USBSBAUD_GET_DEVICE_DESCRIPTOR
-title : IOCTL_USBSBAUD_GET_DEVICE_DESCRIPTOR
-author : windows-driver-content
-description : TBD
-old-location : audio\ioctl_usbsbaud_get_device_descriptor.htm
-old-project : audio
-ms.assetid : DD254D2A-BFB4-4CE6-93E0-37AB0AB2CAE6
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : audio.ioctl_usbsbaud_get_device_descriptor, IOCTL_USBSBAUD_GET_DEVICE_DESCRIPTOR control code [Audio Devices], IOCTL_USBSBAUD_GET_DEVICE_DESCRIPTOR, usbsidebandaudio/IOCTL_USBSBAUD_GET_DEVICE_DESCRIPTOR
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : usbsidebandaudio.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUSBSCAN_TIMEOUT, USBSCAN_TIMEOUT"
-req.product : Windows 10 or later.
+UID: NI:usbsidebandaudio.IOCTL_USBSBAUD_GET_DEVICE_DESCRIPTOR
+title: IOCTL_USBSBAUD_GET_DEVICE_DESCRIPTOR
+author: windows-driver-content
+description: TBD
+old-location: audio\ioctl_usbsbaud_get_device_descriptor.htm
+old-project: audio
+ms.assetid: DD254D2A-BFB4-4CE6-93E0-37AB0AB2CAE6
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: audio.ioctl_usbsbaud_get_device_descriptor, IOCTL_USBSBAUD_GET_DEVICE_DESCRIPTOR control code [Audio Devices], IOCTL_USBSBAUD_GET_DEVICE_DESCRIPTOR, usbsidebandaudio/IOCTL_USBSBAUD_GET_DEVICE_DESCRIPTOR
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: usbsidebandaudio.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	USBSidebandAudio.h
+apiname:
+-	IOCTL_USBSBAUD_GET_DEVICE_DESCRIPTOR
+product: Windows
+targetos: Windows
+req.typenames: "*PUSBSCAN_TIMEOUT, USBSCAN_TIMEOUT"
+req.product: Windows 10 or later.
 ---
 
 # IOCTL_USBSBAUD_GET_DEVICE_DESCRIPTOR IOCTL

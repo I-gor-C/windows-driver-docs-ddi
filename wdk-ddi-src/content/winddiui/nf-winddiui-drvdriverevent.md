@@ -1,42 +1,47 @@
 ---
-UID : NF:winddiui.DrvDriverEvent
-title : DrvDriverEvent function
-author : windows-driver-content
-description : The print spooler calls a printer interface DLL's DrvDriverEvent function when the spooler processes driver-specific events that might require action by the printer driver.
-old-location : print\drvdriverevent.htm
-old-project : print
-ms.assetid : 84d1f438-b6ee-4199-89ae-9384601203b3
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : print.drvdriverevent, DrvDriverEvent, winddiui/DrvDriverEvent, DrvDriverEvent function [Print Devices], print_interface-graphics_41c98198-e5b7-4725-9b93-d467ec38e4c3.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : winddiui.h
-req.include-header : Winddiui.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WINBIO_VERSION, *PWINBIO_VERSION
-req.product : Windows 10 or later.
+UID: NF:winddiui.DrvDriverEvent
+title: DrvDriverEvent function
+author: windows-driver-content
+description: The print spooler calls a printer interface DLL's DrvDriverEvent function when the spooler processes driver-specific events that might require action by the printer driver.
+old-location: print\drvdriverevent.htm
+old-project: print
+ms.assetid: 84d1f438-b6ee-4199-89ae-9384601203b3
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: print.drvdriverevent, DrvDriverEvent, winddiui/DrvDriverEvent, DrvDriverEvent function [Print Devices], print_interface-graphics_41c98198-e5b7-4725-9b93-d467ec38e4c3.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: winddiui.h
+req.include-header: Winddiui.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	winddiui.h
+apiname:
+-	DrvDriverEvent
+product: Windows
+targetos: Windows
+req.typenames: WINBIO_VERSION, *PWINBIO_VERSION
+req.product: Windows 10 or later.
 ---
 
 

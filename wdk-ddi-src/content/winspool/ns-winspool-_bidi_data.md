@@ -1,42 +1,47 @@
 ---
-UID : NS:winspool._BIDI_DATA
-title : "_BIDI_DATA"
-author : windows-driver-content
-description : The BIDI_DATA structure is used to store the values of a bidi schema.
-old-location : print\bidi_data.htm
-old-project : print
-ms.assetid : 9e0f3044-01c0-4dec-b34c-0f33ccfe3300
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : winspool/PBIDI_DATA, BIDI_DATA structure [Print Devices], PBIDI_DATA structure pointer [Print Devices], LPBIDI_DATA structure pointer [Print Devices], *LPBIDI_DATA, spoolfnc_6e6c0bc2-88f6-43ab-8183-42ee1a91e593.xml, winspool/LPBIDI_DATA, _BIDI_DATA, PBIDI_DATA, BIDI_DATA, *PBIDI_DATA, winspool/BIDI_DATA, LPBIDI_DATA, print.bidi_data
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : winspool.h
-req.include-header : Winspool.h
-req.target-type : Windows
-req.target-min-winverclnt : This structure is available in Windows XP and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PBIDI_DATA, *LPBIDI_DATA, BIDI_DATA"
-req.product : Windows 10 or later.
+UID: NS:winspool._BIDI_DATA
+title: "_BIDI_DATA"
+author: windows-driver-content
+description: The BIDI_DATA structure is used to store the values of a bidi schema.
+old-location: print\bidi_data.htm
+old-project: print
+ms.assetid: 9e0f3044-01c0-4dec-b34c-0f33ccfe3300
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: winspool/PBIDI_DATA, BIDI_DATA structure [Print Devices], PBIDI_DATA structure pointer [Print Devices], LPBIDI_DATA structure pointer [Print Devices], *LPBIDI_DATA, spoolfnc_6e6c0bc2-88f6-43ab-8183-42ee1a91e593.xml, winspool/LPBIDI_DATA, _BIDI_DATA, PBIDI_DATA, BIDI_DATA, *PBIDI_DATA, winspool/BIDI_DATA, LPBIDI_DATA, print.bidi_data
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: winspool.h
+req.include-header: Winspool.h
+req.target-type: Windows
+req.target-min-winverclnt: This structure is available in Windows XP and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	winspool.h
+apiname:
+-	BIDI_DATA
+product: Windows
+targetos: Windows
+req.typenames: "*PBIDI_DATA, *LPBIDI_DATA, BIDI_DATA"
+req.product: Windows 10 or later.
 ---
 
 # _BIDI_DATA structure

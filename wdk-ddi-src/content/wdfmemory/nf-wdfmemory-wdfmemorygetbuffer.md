@@ -1,42 +1,50 @@
 ---
-UID : NF:wdfmemory.WdfMemoryGetBuffer
-title : WdfMemoryGetBuffer function
-author : windows-driver-content
-description : The WdfMemoryGetBuffer method returns a pointer to the buffer that is associated with a specified memory object.
-old-location : wdf\wdfmemorygetbuffer.htm
-old-project : wdf
-ms.assetid : a5044eb5-d619-4adb-a00c-2d01e0311ade
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : DFMemoryObjectRef_6f8615ee-5e34-46c5-8c83-4b52433753aa.xml, WdfMemoryGetBuffer method, wdfmemory/WdfMemoryGetBuffer, PFN_WDFMEMORYGETBUFFER, wdf.wdfmemorygetbuffer, kmdf.wdfmemorygetbuffer, WdfMemoryGetBuffer
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfmemory.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : DriverCreate, MemAfterReqCompletedIntIoctlA, MemAfterReqCompletedIoctlA, MemAfterReqCompletedReadA, MemAfterReqCompletedWriteA
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_MEMORY_DESCRIPTOR_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfmemory.WdfMemoryGetBuffer
+title: WdfMemoryGetBuffer function
+author: windows-driver-content
+description: The WdfMemoryGetBuffer method returns a pointer to the buffer that is associated with a specified memory object.
+old-location: wdf\wdfmemorygetbuffer.htm
+old-project: wdf
+ms.assetid: a5044eb5-d619-4adb-a00c-2d01e0311ade
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: DFMemoryObjectRef_6f8615ee-5e34-46c5-8c83-4b52433753aa.xml, WdfMemoryGetBuffer method, wdfmemory/WdfMemoryGetBuffer, PFN_WDFMEMORYGETBUFFER, wdf.wdfmemorygetbuffer, kmdf.wdfmemorygetbuffer, WdfMemoryGetBuffer
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfmemory.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: DriverCreate, MemAfterReqCompletedIntIoctlA, MemAfterReqCompletedIoctlA, MemAfterReqCompletedReadA, MemAfterReqCompletedWriteA
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+-	WUDFx02000.dll
+-	WUDFx02000.dll.dll
+apiname:
+-	WdfMemoryGetBuffer
+product: Windows
+targetos: Windows
+req.typenames: WDF_MEMORY_DESCRIPTOR_TYPE
+req.product: Windows 10 or later.
 ---
 
 

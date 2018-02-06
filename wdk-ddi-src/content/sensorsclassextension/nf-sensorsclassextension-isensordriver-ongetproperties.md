@@ -1,42 +1,48 @@
 ---
-UID : NF:sensorsclassextension.ISensorDriver.OnGetProperties
-title : ISensorDriver::OnGetProperties method
-author : windows-driver-content
-description : The ISensorDriver::OnGetProperties method retrieves values for the specified properties from the specified sensor.
-old-location : sensors\isensordriver_ongetproperties.htm
-old-project : sensors
-ms.assetid : 8c7f378c-b4e6-4074-8b6a-571068b5ab80
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : OnGetProperties, ISensorDriver, OnGetProperties method [Sensor Devices], ISensorDriver::OnGetProperties, sensors.isensordriver_ongetproperties
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : sensorsclassextension.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : SensorsClassExtension.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SensorConnectionType
-req.product : Windows 10 or later.
+UID: NF:sensorsclassextension.ISensorDriver.OnGetProperties
+title: ISensorDriver::OnGetProperties method
+author: windows-driver-content
+description: The ISensorDriver::OnGetProperties method retrieves values for the specified properties from the specified sensor.
+old-location: sensors\isensordriver_ongetproperties.htm
+old-project: sensors
+ms.assetid: 8c7f378c-b4e6-4074-8b6a-571068b5ab80
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: OnGetProperties, ISensorDriver, OnGetProperties method [Sensor Devices], ISensorDriver::OnGetProperties, sensors.isensordriver_ongetproperties
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: sensorsclassextension.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: SensorsClassExtension.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	SensorsClassExtension.lib
+-	SensorsClassExtension.dll
+apiname:
+-	OnGetProperties
+product: Windows
+targetos: Windows
+req.typenames: SensorConnectionType
+req.product: Windows 10 or later.
 ---
 
 

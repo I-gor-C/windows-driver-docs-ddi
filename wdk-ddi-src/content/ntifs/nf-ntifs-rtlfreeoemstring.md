@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.RtlFreeOemString
-title : RtlFreeOemString function
-author : windows-driver-content
-description : The RtlFreeOemString routine releases storage that was allocated by any of the Rtl..ToOemString routines.
-old-location : ifsk\rtlfreeoemstring.htm
-old-project : ifsk
-ms.assetid : cd9bc03d-1f57-420c-9430-d2d742f654e1
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : rtlref_ffc98e3c-a96f-4250-a527-bcd1ba2ce506.xml, RtlFreeOemString, ifsk.rtlfreeoemstring, ntifs/RtlFreeOemString, RtlFreeOemString routine [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "< DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.RtlFreeOemString
+title: RtlFreeOemString function
+author: windows-driver-content
+description: The RtlFreeOemString routine releases storage that was allocated by any of the Rtl..ToOemString routines.
+old-location: ifsk\rtlfreeoemstring.htm
+old-project: ifsk
+ms.assetid: cd9bc03d-1f57-420c-9430-d2d742f654e1
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: rtlref_ffc98e3c-a96f-4250-a527-bcd1ba2ce506.xml, RtlFreeOemString, ifsk.rtlfreeoemstring, ntifs/RtlFreeOemString, RtlFreeOemString routine [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "< DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	RtlFreeOemString
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

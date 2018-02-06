@@ -1,42 +1,47 @@
 ---
-UID : NF:wiautil.wiauDbgHelper2
-title : wiauDbgHelper2 function
-author : windows-driver-content
-description : The wiauDbgHelper2 function writes a message to a log file, or debugger, or both.
-old-location : image\wiaudbghelper2.htm
-old-project : image
-ms.assetid : 577ce93a-5a90-4e85-afc6-3791f402c238
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : wiauDbgHelper2 function [Imaging Devices], image.wiaudbghelper2, wiauFncs_6ccf146a-ec2e-4ca4-827a-dec2f8ea629d.xml, wiauDbgHelper2, wiautil/wiauDbgHelper2
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wiautil.h
-req.include-header : Wiautil.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows XP and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SKIP_AMOUNT
-req.product : Windows 10 or later.
+UID: NF:wiautil.wiauDbgHelper2
+title: wiauDbgHelper2 function
+author: windows-driver-content
+description: The wiauDbgHelper2 function writes a message to a log file, or debugger, or both.
+old-location: image\wiaudbghelper2.htm
+old-project: image
+ms.assetid: 577ce93a-5a90-4e85-afc6-3791f402c238
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: wiauDbgHelper2 function [Imaging Devices], image.wiaudbghelper2, wiauFncs_6ccf146a-ec2e-4ca4-827a-dec2f8ea629d.xml, wiauDbgHelper2, wiautil/wiauDbgHelper2
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wiautil.h
+req.include-header: Wiautil.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows XP and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wiautil.h
+apiname:
+-	wiauDbgHelper2
+product: Windows
+targetos: Windows
+req.typenames: SKIP_AMOUNT
+req.product: Windows 10 or later.
 ---
 
 

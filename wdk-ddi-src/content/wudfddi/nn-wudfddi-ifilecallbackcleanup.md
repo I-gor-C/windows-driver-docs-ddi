@@ -1,42 +1,47 @@
 ---
-UID : NN:wudfddi.IFileCallbackCleanup
-title : IFileCallbackCleanup
-author : windows-driver-content
-description : The framework can notify a driver when the driver should perform a cleanup operation.
-old-location : wdf\ifilecallbackcleanup.htm
-old-project : wdf
-ms.assetid : d42eb7d5-6bf6-4f0f-a249-a869db486b6f
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.ifilecallbackcleanup, IFileCallbackCleanup interface, IFileCallbackCleanup interface, described, IFileCallbackCleanup, wudfddi/IFileCallbackCleanup, UMDFFileObjectRef_8f409e94-4586-4f25-a8ba-1c39544ec661.xml, umdf.ifilecallbackcleanup
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NN:wudfddi.IFileCallbackCleanup
+title: IFileCallbackCleanup
+author: windows-driver-content
+description: The framework can notify a driver when the driver should perform a cleanup operation.
+old-location: wdf\ifilecallbackcleanup.htm
+old-project: wdf
+ms.assetid: d42eb7d5-6bf6-4f0f-a249-a869db486b6f
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.ifilecallbackcleanup, IFileCallbackCleanup interface, IFileCallbackCleanup interface, described, IFileCallbackCleanup, wudfddi/IFileCallbackCleanup, UMDFFileObjectRef_8f409e94-4586-4f25-a8ba-1c39544ec661.xml, umdf.ifilecallbackcleanup
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Wudfddi.h
+apiname:
+-	IFileCallbackCleanup
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 # IFileCallbackCleanup interface

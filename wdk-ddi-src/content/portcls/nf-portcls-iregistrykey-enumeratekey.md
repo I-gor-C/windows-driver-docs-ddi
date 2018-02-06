@@ -1,41 +1,46 @@
 ---
-UID : NF:portcls.IRegistryKey.EnumerateKey
-title : IRegistryKey::EnumerateKey method
-author : windows-driver-content
-description : The EnumerateKey method returns information about the subkeys of the open key.
-old-location : audio\iregistrykey_enumeratekey.htm
-old-project : audio
-ms.assetid : 2438c994-a283-49fe-a39b-99de678df2e2
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : IRegistryKey interface [Audio Devices], EnumerateKey method, audmp-routines_ef31b848-c963-4327-ba86-bca98383ad90.xml, portcls/IRegistryKey::EnumerateKey, EnumerateKey method [Audio Devices], EnumerateKey, IRegistryKey, IRegistryKey::EnumerateKey, EnumerateKey method [Audio Devices], IRegistryKey interface, audio.iregistrykey_enumeratekey
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : portcls.h
-req.include-header : Portcls.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : portcls.h
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.IRegistryKey.EnumerateKey
+title: IRegistryKey::EnumerateKey method
+author: windows-driver-content
+description: The EnumerateKey method returns information about the subkeys of the open key.
+old-location: audio\iregistrykey_enumeratekey.htm
+old-project: audio
+ms.assetid: 2438c994-a283-49fe-a39b-99de678df2e2
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: IRegistryKey interface [Audio Devices], EnumerateKey method, audmp-routines_ef31b848-c963-4327-ba86-bca98383ad90.xml, portcls/IRegistryKey::EnumerateKey, EnumerateKey method [Audio Devices], EnumerateKey, IRegistryKey, IRegistryKey::EnumerateKey, EnumerateKey method [Audio Devices], IRegistryKey interface, audio.iregistrykey_enumeratekey
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: portcls.h
+req.include-header: Portcls.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: portcls.h
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	portcls.h
+apiname:
+-	IRegistryKey.EnumerateKey
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGK_QUERYSEGMENTIN4
-title : "_DXGK_QUERYSEGMENTIN4"
-author : windows-driver-content
-description : The DXGK_QUERYSEGMENTIN4 structure is used to specify the adapter to query.
-old-location : display\dxgk_querysegmentin4.htm
-old-project : display
-ms.assetid : B78E5AEF-DC31-44B2-92D8-DE7C83726E29
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : "_DXGK_QUERYSEGMENTIN4, d3dkmddi/DXGK_QUERYSEGMENTIN4, DXGK_QUERYSEGMENTIN4 structure [Display Devices], display.dxgk_querysegmentin4, DXGK_QUERYSEGMENTIN4"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_QUERYSEGMENTIN4
+UID: NS:d3dkmddi._DXGK_QUERYSEGMENTIN4
+title: "_DXGK_QUERYSEGMENTIN4"
+author: windows-driver-content
+description: The DXGK_QUERYSEGMENTIN4 structure is used to specify the adapter to query.
+old-location: display\dxgk_querysegmentin4.htm
+old-project: display
+ms.assetid: B78E5AEF-DC31-44B2-92D8-DE7C83726E29
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: "_DXGK_QUERYSEGMENTIN4, d3dkmddi/DXGK_QUERYSEGMENTIN4, DXGK_QUERYSEGMENTIN4 structure [Display Devices], display.dxgk_querysegmentin4, DXGK_QUERYSEGMENTIN4"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DXGK_QUERYSEGMENTIN4
+product: Windows
+targetos: Windows
+req.typenames: DXGK_QUERYSEGMENTIN4
 ---
 
 # _DXGK_QUERYSEGMENTIN4 structure

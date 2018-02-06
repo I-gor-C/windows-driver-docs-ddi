@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGKARG_GETSTANDARDALLOCATIONDRIVERDATA
-title : "_DXGKARG_GETSTANDARDALLOCATIONDRIVERDATA"
-author : windows-driver-content
-description : The DXGKARG_GETSTANDARDALLOCATIONDRIVERDATA structure describes a standard allocation type.
-old-location : display\dxgkarg_getstandardallocationdriverdata.htm
-old-project : display
-ms.assetid : 4327ba59-bd74-4018-85d2-54a1693c62c1
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkarg_getstandardallocationdriverdata, *INOUT_PDXGKARG_GETSTANDARDALLOCATIONDRIVERDATA, d3dkmddi/DXGKARG_GETSTANDARDALLOCATIONDRIVERDATA, DmStructs_2ef51052-bc21-4374-9471-c03b2a81b8b3.xml, DXGKARG_GETSTANDARDALLOCATIONDRIVERDATA, DXGKARG_GETSTANDARDALLOCATIONDRIVERDATA structure [Display Devices], _DXGKARG_GETSTANDARDALLOCATIONDRIVERDATA
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGKARG_GETSTANDARDALLOCATIONDRIVERDATA
+UID: NS:d3dkmddi._DXGKARG_GETSTANDARDALLOCATIONDRIVERDATA
+title: "_DXGKARG_GETSTANDARDALLOCATIONDRIVERDATA"
+author: windows-driver-content
+description: The DXGKARG_GETSTANDARDALLOCATIONDRIVERDATA structure describes a standard allocation type.
+old-location: display\dxgkarg_getstandardallocationdriverdata.htm
+old-project: display
+ms.assetid: 4327ba59-bd74-4018-85d2-54a1693c62c1
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkarg_getstandardallocationdriverdata, *INOUT_PDXGKARG_GETSTANDARDALLOCATIONDRIVERDATA, d3dkmddi/DXGKARG_GETSTANDARDALLOCATIONDRIVERDATA, DmStructs_2ef51052-bc21-4374-9471-c03b2a81b8b3.xml, DXGKARG_GETSTANDARDALLOCATIONDRIVERDATA, DXGKARG_GETSTANDARDALLOCATIONDRIVERDATA structure [Display Devices], _DXGKARG_GETSTANDARDALLOCATIONDRIVERDATA
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DXGKARG_GETSTANDARDALLOCATIONDRIVERDATA
+product: Windows
+targetos: Windows
+req.typenames: DXGKARG_GETSTANDARDALLOCATIONDRIVERDATA
 ---
 
 # _DXGKARG_GETSTANDARDALLOCATIONDRIVERDATA structure

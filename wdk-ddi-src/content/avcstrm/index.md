@@ -1,12 +1,12 @@
 ---
-UID : NA:avcstrm
-ms.assetid : 95ad8480-00a5-327d-bbf8-cb0d47180196
-ms.author : windowsdriverdev
-ms.date : 01/18/18
-ms.keywords : 
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : portal
+UID: NA:avcstrm
+ms.assetid: 95ad8480-00a5-327d-bbf8-cb0d47180196
+ms.author: windowsdriverdev
+ms.date: 01/18/18
+ms.keywords: 
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: portal
 ---
 
 # avcstrm.h header

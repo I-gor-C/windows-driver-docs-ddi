@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddstor._STORAGE_TEMPERATURE_DATA_DESCRIPTOR
-title : "_STORAGE_TEMPERATURE_DATA_DESCRIPTOR"
-author : windows-driver-content
-description : This structure is used in conjunction with IOCTL_STORAGE_QUERY_PROPERTY to return temperature data from a storage device or adapter.
-old-location : storage\storage_temperature_data_descriptor.htm
-old-project : storage
-ms.assetid : A6041B10-0296-4A96-B65C-C35B8DCB2B5D
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : "*PSTORAGE_TEMPERATURE_DATA_DESCRIPTOR, ntddstor/PSTORAGE_TEMPERATURE_DATA_DESCRIPTOR, ntddstor/STORAGE_TEMPERATURE_DATA_DESCRIPTOR, PSTORAGE_TEMPERATURE_DATA_DESCRIPTOR structure pointer [Storage Devices], PSTORAGE_TEMPERATURE_DATA_DESCRIPTOR, STORAGE_TEMPERATURE_DATA_DESCRIPTOR structure [Storage Devices], STORAGE_TEMPERATURE_DATA_DESCRIPTOR, _STORAGE_TEMPERATURE_DATA_DESCRIPTOR, storage.storage_temperature_data_descriptor"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddstor.h
-req.include-header : Ntddstor.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STORAGE_TEMPERATURE_DATA_DESCRIPTOR, *PSTORAGE_TEMPERATURE_DATA_DESCRIPTOR
+UID: NS:ntddstor._STORAGE_TEMPERATURE_DATA_DESCRIPTOR
+title: "_STORAGE_TEMPERATURE_DATA_DESCRIPTOR"
+author: windows-driver-content
+description: This structure is used in conjunction with IOCTL_STORAGE_QUERY_PROPERTY to return temperature data from a storage device or adapter.
+old-location: storage\storage_temperature_data_descriptor.htm
+old-project: storage
+ms.assetid: A6041B10-0296-4A96-B65C-C35B8DCB2B5D
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: "*PSTORAGE_TEMPERATURE_DATA_DESCRIPTOR, ntddstor/PSTORAGE_TEMPERATURE_DATA_DESCRIPTOR, ntddstor/STORAGE_TEMPERATURE_DATA_DESCRIPTOR, PSTORAGE_TEMPERATURE_DATA_DESCRIPTOR structure pointer [Storage Devices], PSTORAGE_TEMPERATURE_DATA_DESCRIPTOR, STORAGE_TEMPERATURE_DATA_DESCRIPTOR structure [Storage Devices], STORAGE_TEMPERATURE_DATA_DESCRIPTOR, _STORAGE_TEMPERATURE_DATA_DESCRIPTOR, storage.storage_temperature_data_descriptor"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddstor.h
+req.include-header: Ntddstor.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddstor.h
+apiname:
+-	STORAGE_TEMPERATURE_DATA_DESCRIPTOR
+product: Windows
+targetos: Windows
+req.typenames: STORAGE_TEMPERATURE_DATA_DESCRIPTOR, *PSTORAGE_TEMPERATURE_DATA_DESCRIPTOR
 ---
 
 # _STORAGE_TEMPERATURE_DATA_DESCRIPTOR structure

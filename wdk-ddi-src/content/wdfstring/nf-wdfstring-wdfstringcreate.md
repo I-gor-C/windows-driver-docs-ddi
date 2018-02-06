@@ -1,42 +1,50 @@
 ---
-UID : NF:wdfstring.WdfStringCreate
-title : WdfStringCreate function
-author : windows-driver-content
-description : The WdfStringCreate method creates a framework string object and optionally assigns a specified Unicode string to the object.
-old-location : wdf\wdfstringcreate.htm
-old-project : wdf
-ms.assetid : 491b99c6-5531-4d24-83a4-c404b58d111c
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WdfStringCreate, PFN_WDFSTRINGCREATE, kmdf.wdfstringcreate, wdfstring/WdfStringCreate, WdfStringCreate method, DFStringObjectRef_1c460976-7e49-45c8-9fdb-c6651048d387.xml, wdf.wdfstringcreate
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfstring.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_REQUEST_SEND_OPTIONS, *PWDF_REQUEST_SEND_OPTIONS
-req.product : Windows 10 or later.
+UID: NF:wdfstring.WdfStringCreate
+title: WdfStringCreate function
+author: windows-driver-content
+description: The WdfStringCreate method creates a framework string object and optionally assigns a specified Unicode string to the object.
+old-location: wdf\wdfstringcreate.htm
+old-project: wdf
+ms.assetid: 491b99c6-5531-4d24-83a4-c404b58d111c
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WdfStringCreate, PFN_WDFSTRINGCREATE, kmdf.wdfstringcreate, wdfstring/WdfStringCreate, WdfStringCreate method, DFStringObjectRef_1c460976-7e49-45c8-9fdb-c6651048d387.xml, wdf.wdfstringcreate
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfstring.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+-	WUDFx02000.dll
+-	WUDFx02000.dll.dll
+apiname:
+-	WdfStringCreate
+product: Windows
+targetos: Windows
+req.typenames: WDF_REQUEST_SEND_OPTIONS, *PWDF_REQUEST_SEND_OPTIONS
+req.product: Windows 10 or later.
 ---
 
 

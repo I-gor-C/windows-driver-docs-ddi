@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGKARG_RECOMMENDMONITORMODES
-title : "_DXGKARG_RECOMMENDMONITORMODES"
-author : windows-driver-content
-description : The DXGKARG_RECOMMENDMONITORMODES structure contains arguments for the DxgkDdiRecommendMonitorModes function.
-old-location : display\dxgkarg_recommendmonitormodes.htm
-old-project : display
-ms.assetid : 283f398e-4162-4c46-847b-834f8f303052
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkarg_recommendmonitormodes, DXGKARG_RECOMMENDMONITORMODES, DXGKARG_RECOMMENDMONITORMODES structure [Display Devices], DmStructs_151c48fa-735a-4962-9fe7-446830441f1c.xml, _DXGKARG_RECOMMENDMONITORMODES, d3dkmddi/DXGKARG_RECOMMENDMONITORMODES
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGKARG_RECOMMENDMONITORMODES
+UID: NS:d3dkmddi._DXGKARG_RECOMMENDMONITORMODES
+title: "_DXGKARG_RECOMMENDMONITORMODES"
+author: windows-driver-content
+description: The DXGKARG_RECOMMENDMONITORMODES structure contains arguments for the DxgkDdiRecommendMonitorModes function.
+old-location: display\dxgkarg_recommendmonitormodes.htm
+old-project: display
+ms.assetid: 283f398e-4162-4c46-847b-834f8f303052
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkarg_recommendmonitormodes, DXGKARG_RECOMMENDMONITORMODES, DXGKARG_RECOMMENDMONITORMODES structure [Display Devices], DmStructs_151c48fa-735a-4962-9fe7-446830441f1c.xml, _DXGKARG_RECOMMENDMONITORMODES, d3dkmddi/DXGKARG_RECOMMENDMONITORMODES
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DXGKARG_RECOMMENDMONITORMODES
+product: Windows
+targetos: Windows
+req.typenames: DXGKARG_RECOMMENDMONITORMODES
 ---
 
 # _DXGKARG_RECOMMENDMONITORMODES structure

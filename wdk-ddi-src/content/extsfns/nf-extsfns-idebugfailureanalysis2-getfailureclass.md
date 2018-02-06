@@ -1,41 +1,46 @@
 ---
-UID : NF:extsfns.IDebugFailureAnalysis2.GetFailureClass
-title : IDebugFailureAnalysis2::GetFailureClass method
-author : windows-driver-content
-description : The GetFailureClass method gets the failure class of a DebugFailureAnalysis object. The failure class indicates whether the debugging session that created the DebugFailureAnalysis object is a kernel mode session or a user mode session.
-old-location : debugger\idebugfailureanalysis2_getfailureclass.htm
-old-project : debugger
-ms.assetid : 4840F881-E3CB-4C89-AE2D-88610790C221
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugFailureAnalysis2, GetFailureClass method [Windows Debugging], IDebugFailureAnalysis2 interface, GetFailureClass method [Windows Debugging], extsfns/IDebugFailureAnalysis2::GetFailureClass, IDebugFailureAnalysis2::GetFailureClass, GetFailureClass, debugger.idebugfailureanalysis2_getfailureclass, IDebugFailureAnalysis2 interface [Windows Debugging], GetFailureClass method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : extsfns.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : extsfns.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FA_EXTENSION_PLUGIN_PHASE
+UID: NF:extsfns.IDebugFailureAnalysis2.GetFailureClass
+title: IDebugFailureAnalysis2::GetFailureClass method
+author: windows-driver-content
+description: The GetFailureClass method gets the failure class of a DebugFailureAnalysis object. The failure class indicates whether the debugging session that created the DebugFailureAnalysis object is a kernel mode session or a user mode session.
+old-location: debugger\idebugfailureanalysis2_getfailureclass.htm
+old-project: debugger
+ms.assetid: 4840F881-E3CB-4C89-AE2D-88610790C221
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugFailureAnalysis2, GetFailureClass method [Windows Debugging], IDebugFailureAnalysis2 interface, GetFailureClass method [Windows Debugging], extsfns/IDebugFailureAnalysis2::GetFailureClass, IDebugFailureAnalysis2::GetFailureClass, GetFailureClass, debugger.idebugfailureanalysis2_getfailureclass, IDebugFailureAnalysis2 interface [Windows Debugging], GetFailureClass method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: extsfns.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: extsfns.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	extsfns.h
+apiname:
+-	IDebugFailureAnalysis2.GetFailureClass
+product: Windows
+targetos: Windows
+req.typenames: FA_EXTENSION_PLUGIN_PHASE
 ---
 
 

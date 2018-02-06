@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.KSRTAUDIO_BUFFER_PROPERTY_WITH_NOTIFICATION
-title : KSRTAUDIO_BUFFER_PROPERTY_WITH_NOTIFICATION
-author : windows-driver-content
-description : The KSRTAUDIO_BUFFER_PROPERTY_WITH_NOTIFICATION structure appends a buffer base address, a requested buffer size, and a notification count to a KSPROPERTY structure.
-old-location : audio\ksrtaudio_buffer_property_with_notification.htm
-old-project : audio
-ms.assetid : 767c18e3-4455-4d2b-a71a-23ca11f718c8
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : "*PKSRTAUDIO_BUFFER_PROPERTY_WITH_NOTIFICATION, KSRTAUDIO_BUFFER_PROPERTY_WITH_NOTIFICATION structure [Audio Devices], PKSRTAUDIO_BUFFER_PROPERTY_WITH_NOTIFICATION, aud-prop_43dd73ce-1c4d-4138-a7c1-9f1f17da5643.xml, ksmedia/PKSRTAUDIO_BUFFER_PROPERTY_WITH_NOTIFICATION, KSRTAUDIO_BUFFER_PROPERTY_WITH_NOTIFICATION, ksmedia/KSRTAUDIO_BUFFER_PROPERTY_WITH_NOTIFICATION, audio.ksrtaudio_buffer_property_with_notification, PKSRTAUDIO_BUFFER_PROPERTY_WITH_NOTIFICATION structure pointer [Audio Devices]"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKSRTAUDIO_BUFFER_PROPERTY_WITH_NOTIFICATION, KSRTAUDIO_BUFFER_PROPERTY_WITH_NOTIFICATION"
+UID: NS:ksmedia.KSRTAUDIO_BUFFER_PROPERTY_WITH_NOTIFICATION
+title: KSRTAUDIO_BUFFER_PROPERTY_WITH_NOTIFICATION
+author: windows-driver-content
+description: The KSRTAUDIO_BUFFER_PROPERTY_WITH_NOTIFICATION structure appends a buffer base address, a requested buffer size, and a notification count to a KSPROPERTY structure.
+old-location: audio\ksrtaudio_buffer_property_with_notification.htm
+old-project: audio
+ms.assetid: 767c18e3-4455-4d2b-a71a-23ca11f718c8
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: "*PKSRTAUDIO_BUFFER_PROPERTY_WITH_NOTIFICATION, KSRTAUDIO_BUFFER_PROPERTY_WITH_NOTIFICATION structure [Audio Devices], PKSRTAUDIO_BUFFER_PROPERTY_WITH_NOTIFICATION, aud-prop_43dd73ce-1c4d-4138-a7c1-9f1f17da5643.xml, ksmedia/PKSRTAUDIO_BUFFER_PROPERTY_WITH_NOTIFICATION, KSRTAUDIO_BUFFER_PROPERTY_WITH_NOTIFICATION, ksmedia/KSRTAUDIO_BUFFER_PROPERTY_WITH_NOTIFICATION, audio.ksrtaudio_buffer_property_with_notification, PKSRTAUDIO_BUFFER_PROPERTY_WITH_NOTIFICATION structure pointer [Audio Devices]"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	KSRTAUDIO_BUFFER_PROPERTY_WITH_NOTIFICATION
+product: Windows
+targetos: Windows
+req.typenames: "*PKSRTAUDIO_BUFFER_PROPERTY_WITH_NOTIFICATION, KSRTAUDIO_BUFFER_PROPERTY_WITH_NOTIFICATION"
 ---
 
 # KSRTAUDIO_BUFFER_PROPERTY_WITH_NOTIFICATION structure

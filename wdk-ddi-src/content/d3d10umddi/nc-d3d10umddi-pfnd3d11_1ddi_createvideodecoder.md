@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3D11_1DDI_CREATEVIDEODECODER
-title : PFND3D11_1DDI_CREATEVIDEODECODER
-author : windows-driver-content
-description : Creates a video decoder object.
-old-location : display\createvideodecoder.htm
-old-project : display
-ms.assetid : 41254f99-1806-428c-8bf3-7e736dbeec84
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.createvideodecoder, CreateVideoDecoder callback function [Display Devices], CreateVideoDecoder, PFND3D11_1DDI_CREATEVIDEODECODER, PFND3D11_1DDI_CREATEVIDEODECODER, d3d10umddi/CreateVideoDecoder
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3D11_1DDI_CREATEVIDEODECODER
+title: PFND3D11_1DDI_CREATEVIDEODECODER
+author: windows-driver-content
+description: Creates a video decoder object.
+old-location: display\createvideodecoder.htm
+old-project: display
+ms.assetid: 41254f99-1806-428c-8bf3-7e736dbeec84
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.createvideodecoder, CreateVideoDecoder callback function [Display Devices], CreateVideoDecoder, PFND3D11_1DDI_CREATEVIDEODECODER, PFND3D11_1DDI_CREATEVIDEODECODER, d3d10umddi/CreateVideoDecoder
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	D3d10umddi.h
+apiname:
+-	CreateVideoDecoder
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

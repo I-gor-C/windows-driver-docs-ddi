@@ -1,41 +1,46 @@
 ---
-UID : NC:ks.PFNKSFILTERVOID
-title : PFNKSFILTERVOID
-author : windows-driver-content
-description : An AVStream minidriver's AVStrMiniFilterReset routine is called when AVStream receives an IOCTL_KS_RESET_STATE to return the filter to the state it was in at Acquire-time.
-old-location : stream\avstrminifilterreset.htm
-old-project : stream
-ms.assetid : 8259117b-87ef-410a-955b-6f99966574a6
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.avstrminifilterreset, AVStrMiniFilterReset, AVStrMiniFilterReset routine [Streaming Media Devices], AVStrMiniFilterReset, PFNKSFILTERVOID, PFNKSFILTERVOID, ks/AVStrMiniFilterReset, avstclbk_71a3cd5d-faa7-4a7f-a341-deacfbcda051.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KEYWORDSELECTOR
+UID: NC:ks.PFNKSFILTERVOID
+title: PFNKSFILTERVOID
+author: windows-driver-content
+description: An AVStream minidriver's AVStrMiniFilterReset routine is called when AVStream receives an IOCTL_KS_RESET_STATE to return the filter to the state it was in at Acquire-time.
+old-location: stream\avstrminifilterreset.htm
+old-project: stream
+ms.assetid: 8259117b-87ef-410a-955b-6f99966574a6
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.avstrminifilterreset, AVStrMiniFilterReset, AVStrMiniFilterReset routine [Streaming Media Devices], AVStrMiniFilterReset, PFNKSFILTERVOID, PFNKSFILTERVOID, ks/AVStrMiniFilterReset, avstclbk_71a3cd5d-faa7-4a7f-a341-deacfbcda051.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	ks.h
+apiname:
+-	AVStrMiniFilterReset
+product: Windows
+targetos: Windows
+req.typenames: KEYWORDSELECTOR
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltGetIoPriorityHintFromFileObject
-title : FltGetIoPriorityHintFromFileObject function
-author : windows-driver-content
-description : The FltGetIoPriorityHintFromFileObject routine is used by a minifilter driver to get IO priority information from a file object.
-old-location : ifsk\fltgetiopriorityhintfromfileobject.htm
-old-project : ifsk
-ms.assetid : ca854716-8f6e-42bd-ae03-e31f951b0874
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.fltgetiopriorityhintfromfileobject, FltGetIoPriorityHintFromFileObject, fltkernel/FltGetIoPriorityHintFromFileObject, FltGetIoPriorityHintFromFileObject routine [Installable File System Drivers], FltApiRef_e_to_o_0a239f34-f16d-4386-a171-66c537e3f241.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : FltKernel.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltGetIoPriorityHintFromFileObject
+title: FltGetIoPriorityHintFromFileObject function
+author: windows-driver-content
+description: The FltGetIoPriorityHintFromFileObject routine is used by a minifilter driver to get IO priority information from a file object.
+old-location: ifsk\fltgetiopriorityhintfromfileobject.htm
+old-project: ifsk
+ms.assetid: ca854716-8f6e-42bd-ae03-e31f951b0874
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.fltgetiopriorityhintfromfileobject, FltGetIoPriorityHintFromFileObject, fltkernel/FltGetIoPriorityHintFromFileObject, FltGetIoPriorityHintFromFileObject routine [Installable File System Drivers], FltApiRef_e_to_o_0a239f34-f16d-4386-a171-66c537e3f241.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: FltKernel.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltGetIoPriorityHintFromFileObject
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

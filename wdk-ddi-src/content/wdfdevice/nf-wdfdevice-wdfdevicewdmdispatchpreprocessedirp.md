@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfdevice.WdfDeviceWdmDispatchPreprocessedIrp
-title : WdfDeviceWdmDispatchPreprocessedIrp function
-author : windows-driver-content
-description : The WdfDeviceWdmDispatchPreprocessedIrp method returns a preprocessed IRP to the framework.
-old-location : wdf\wdfdevicewdmdispatchpreprocessedirp.htm
-old-project : wdf
-ms.assetid : 83b18680-0b58-4278-87ff-757eb6e76178
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : kmdf.wdfdevicewdmdispatchpreprocessedirp, WdfDeviceWdmDispatchPreprocessedIrp, DFDeviceObjectGeneralRef_e861729e-006d-413c-9f7e-60e2fae72c1f.xml, wdfdevice/WdfDeviceWdmDispatchPreprocessedIrp, wdf.wdfdevicewdmdispatchpreprocessedirp, PFN_WDFDEVICEWDMDISPATCHPREPROCESSEDIRP, WdfDeviceWdmDispatchPreprocessedIrp method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfdevice.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_STATE_NOTIFICATION_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfdevice.WdfDeviceWdmDispatchPreprocessedIrp
+title: WdfDeviceWdmDispatchPreprocessedIrp function
+author: windows-driver-content
+description: The WdfDeviceWdmDispatchPreprocessedIrp method returns a preprocessed IRP to the framework.
+old-location: wdf\wdfdevicewdmdispatchpreprocessedirp.htm
+old-project: wdf
+ms.assetid: 83b18680-0b58-4278-87ff-757eb6e76178
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: kmdf.wdfdevicewdmdispatchpreprocessedirp, WdfDeviceWdmDispatchPreprocessedIrp, DFDeviceObjectGeneralRef_e861729e-006d-413c-9f7e-60e2fae72c1f.xml, wdfdevice/WdfDeviceWdmDispatchPreprocessedIrp, wdf.wdfdevicewdmdispatchpreprocessedirp, PFN_WDFDEVICEWDMDISPATCHPREPROCESSEDIRP, WdfDeviceWdmDispatchPreprocessedIrp method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfdevice.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfDeviceWdmDispatchPreprocessedIrp
+product: Windows
+targetos: Windows
+req.typenames: WDF_STATE_NOTIFICATION_TYPE
+req.product: Windows 10 or later.
 ---
 
 

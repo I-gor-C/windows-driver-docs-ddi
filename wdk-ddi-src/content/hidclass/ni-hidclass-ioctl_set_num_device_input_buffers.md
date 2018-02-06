@@ -1,41 +1,46 @@
 ---
-UID : NI:hidclass.IOCTL_SET_NUM_DEVICE_INPUT_BUFFERS
-title : IOCTL_SET_NUM_DEVICE_INPUT_BUFFERS
-author : windows-driver-content
-description : The IOCTL_SET_NUM_DEVICE_INPUT_BUFFERS request sets the number of buffers for the input report queue of a top-level collection.
-old-location : hid\ioctl_set_num_device_input_buffers.htm
-old-project : hid
-ms.assetid : a44f9d57-473c-45ed-94e3-db339c6d2296
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : hid.ioctl_set_num_device_input_buffers, IOCTL_SET_NUM_DEVICE_INPUT_BUFFERS control code [Human Input Devices], IOCTL_SET_NUM_DEVICE_INPUT_BUFFERS, hidclass/IOCTL_SET_NUM_DEVICE_INPUT_BUFFERS, hidioreq_2fe1c0f7-6867-4924-a76f-b7970ebb1201.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : hidclass.h
-req.include-header : Hidclass.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HDAUDIO_STREAM_FORMAT, *PHDAUDIO_STREAM_FORMAT
+UID: NI:hidclass.IOCTL_SET_NUM_DEVICE_INPUT_BUFFERS
+title: IOCTL_SET_NUM_DEVICE_INPUT_BUFFERS
+author: windows-driver-content
+description: The IOCTL_SET_NUM_DEVICE_INPUT_BUFFERS request sets the number of buffers for the input report queue of a top-level collection.
+old-location: hid\ioctl_set_num_device_input_buffers.htm
+old-project: hid
+ms.assetid: a44f9d57-473c-45ed-94e3-db339c6d2296
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: hid.ioctl_set_num_device_input_buffers, IOCTL_SET_NUM_DEVICE_INPUT_BUFFERS control code [Human Input Devices], IOCTL_SET_NUM_DEVICE_INPUT_BUFFERS, hidclass/IOCTL_SET_NUM_DEVICE_INPUT_BUFFERS, hidioreq_2fe1c0f7-6867-4924-a76f-b7970ebb1201.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: hidclass.h
+req.include-header: Hidclass.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hidclass.h
+apiname:
+-	IOCTL_SET_NUM_DEVICE_INPUT_BUFFERS
+product: Windows
+targetos: Windows
+req.typenames: HDAUDIO_STREAM_FORMAT, *PHDAUDIO_STREAM_FORMAT
 ---
 
 # IOCTL_SET_NUM_DEVICE_INPUT_BUFFERS IOCTL

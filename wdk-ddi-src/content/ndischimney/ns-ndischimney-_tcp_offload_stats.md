@@ -1,41 +1,46 @@
 ---
-UID : NS:ndischimney._TCP_OFFLOAD_STATS
-title : "_TCP_OFFLOAD_STATS"
-author : windows-driver-content
-description : The TCP_OFFLOAD_STATS structure contains statistics that an offload target supplies in response to a query of OID_TCP4_OFFLOAD_STATS or OID_TCP6_OFFLOAD_STATS.
-old-location : netvista\tcp_offload_stats.htm
-old-project : netvista
-ms.assetid : 959bc46a-c574-4130-a83d-22a695d0d891
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : "*PTCP_OFFLOAD_STATS, PTCP_OFFLOAD_STATS, ndischimney/PTCP_OFFLOAD_STATS, netvista.tcp_offload_stats, PTCP_OFFLOAD_STATS structure pointer [Network Drivers Starting with Windows Vista], tcp_chim_struct_62878657-feff-41e4-b540-cbde66c1244e.xml, ndischimney/TCP_OFFLOAD_STATS, _TCP_OFFLOAD_STATS, TCP_OFFLOAD_STATS structure [Network Drivers Starting with Windows Vista], TCP_OFFLOAD_STATS"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndischimney.h
-req.include-header : Ndischimney.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TCP_OFFLOAD_STATS, *PTCP_OFFLOAD_STATS
+UID: NS:ndischimney._TCP_OFFLOAD_STATS
+title: "_TCP_OFFLOAD_STATS"
+author: windows-driver-content
+description: The TCP_OFFLOAD_STATS structure contains statistics that an offload target supplies in response to a query of OID_TCP4_OFFLOAD_STATS or OID_TCP6_OFFLOAD_STATS.
+old-location: netvista\tcp_offload_stats.htm
+old-project: netvista
+ms.assetid: 959bc46a-c574-4130-a83d-22a695d0d891
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: "*PTCP_OFFLOAD_STATS, PTCP_OFFLOAD_STATS, ndischimney/PTCP_OFFLOAD_STATS, netvista.tcp_offload_stats, PTCP_OFFLOAD_STATS structure pointer [Network Drivers Starting with Windows Vista], tcp_chim_struct_62878657-feff-41e4-b540-cbde66c1244e.xml, ndischimney/TCP_OFFLOAD_STATS, _TCP_OFFLOAD_STATS, TCP_OFFLOAD_STATS structure [Network Drivers Starting with Windows Vista], TCP_OFFLOAD_STATS"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndischimney.h
+req.include-header: Ndischimney.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndischimney.h
+apiname:
+-	TCP_OFFLOAD_STATS
+product: Windows
+targetos: Windows
+req.typenames: TCP_OFFLOAD_STATS, *PTCP_OFFLOAD_STATS
 ---
 
 # _TCP_OFFLOAD_STATS structure

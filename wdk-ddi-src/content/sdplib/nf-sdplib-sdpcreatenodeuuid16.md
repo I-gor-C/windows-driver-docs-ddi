@@ -1,42 +1,47 @@
 ---
-UID : NF:sdplib.SdpCreateNodeUUID16
-title : SdpCreateNodeUUID16 function
-author : windows-driver-content
-description : The Bluetooth SdpCreateNodeUUID16 function is used to allocate and initialize an SDP_NODE structure to a 16-bit UUID type.
-old-location : bltooth\sdpcreatenodeuuid16.htm
-old-project : bltooth
-ms.assetid : d36b65e9-4e9e-40be-a89c-f04030cea459
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : sdplib/SdpCreateNodeUUID16, SdpCreateNodeUUID16 function [Bluetooth Devices], SdpCreateNodeUUID16, bth_funcs_adf751aa-5dca-4356-8c15-84a4996acef9.xml, bltooth.sdpcreatenodeuuid16
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : sdplib.h
-req.include-header : BthSdpddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Versions:\_Supported in Windows Vista, and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= PASSIVE_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SDCMD_DESCRIPTOR, *PSDCMD_DESCRIPTOR
-req.product : Windows 10 or later.
+UID: NF:sdplib.SdpCreateNodeUUID16
+title: SdpCreateNodeUUID16 function
+author: windows-driver-content
+description: The Bluetooth SdpCreateNodeUUID16 function is used to allocate and initialize an SDP_NODE structure to a 16-bit UUID type.
+old-location: bltooth\sdpcreatenodeuuid16.htm
+old-project: bltooth
+ms.assetid: d36b65e9-4e9e-40be-a89c-f04030cea459
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: sdplib/SdpCreateNodeUUID16, SdpCreateNodeUUID16 function [Bluetooth Devices], SdpCreateNodeUUID16, bth_funcs_adf751aa-5dca-4356-8c15-84a4996acef9.xml, bltooth.sdpcreatenodeuuid16
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: sdplib.h
+req.include-header: BthSdpddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Versions:\_Supported in Windows Vista, and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= PASSIVE_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	sdplib.h
+apiname:
+-	SdpCreateNodeUUID16
+product: Windows
+targetos: Windows
+req.typenames: SDCMD_DESCRIPTOR, *PSDCMD_DESCRIPTOR
+req.product: Windows 10 or later.
 ---
 
 

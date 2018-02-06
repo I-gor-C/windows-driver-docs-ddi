@@ -1,41 +1,46 @@
 ---
-UID : NC:fltkernel.PFLT_FILTER_UNLOAD_CALLBACK
-title : PFLT_FILTER_UNLOAD_CALLBACK
-author : windows-driver-content
-description : A minifilter driver can register a routine of type PFLT_FILTER_UNLOAD_CALLBACK as the minifilter driver's FilterUnloadCallback routine.
-old-location : ifsk\pflt_filter_unload_callback.htm
-old-project : ifsk
-ms.assetid : 746f13f5-c92d-4dae-8fd7-4c9fdfa9e044
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.pflt_filter_unload_callback, FilterUnloadCallback routine [Installable File System Drivers], FilterUnloadCallback, PFLT_FILTER_UNLOAD_CALLBACK, PFLT_FILTER_UNLOAD_CALLBACK, fltkernel/FilterUnloadCallback, FltCallbacks_e28b1a16-b974-493a-8ab5-7b6004d66268.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NC:fltkernel.PFLT_FILTER_UNLOAD_CALLBACK
+title: PFLT_FILTER_UNLOAD_CALLBACK
+author: windows-driver-content
+description: A minifilter driver can register a routine of type PFLT_FILTER_UNLOAD_CALLBACK as the minifilter driver's FilterUnloadCallback routine.
+old-location: ifsk\pflt_filter_unload_callback.htm
+old-project: ifsk
+ms.assetid: 746f13f5-c92d-4dae-8fd7-4c9fdfa9e044
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.pflt_filter_unload_callback, FilterUnloadCallback routine [Installable File System Drivers], FilterUnloadCallback, PFLT_FILTER_UNLOAD_CALLBACK, PFLT_FILTER_UNLOAD_CALLBACK, fltkernel/FilterUnloadCallback, FltCallbacks_e28b1a16-b974-493a-8ab5-7b6004d66268.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	fltkernel.h
+apiname:
+-	FilterUnloadCallback
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddcdvd._DVD_COPY_PROTECT_KEY
-title : "_DVD_COPY_PROTECT_KEY"
-author : windows-driver-content
-description : The DVD_COPY_PROTECT_KEY structure is used in conjunction with the IOCTL_DVD_READ_KEY request to execute a report key command of the specified type.
-old-location : storage\dvd_copy_protect_key.htm
-old-project : storage
-ms.assetid : 79f3fdaf-e23a-40ba-a1eb-5428a63cc96a
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : ntddcdvd/DVD_COPY_PROTECT_KEY, PDVD_COPY_PROTECT_KEY structure pointer [Storage Devices], PDVD_COPY_PROTECT_KEY, structs-DVD_3ea6aa08-28ce-42d0-855d-d2e83ce58f89.xml, DVD_COPY_PROTECT_KEY, _DVD_COPY_PROTECT_KEY, storage.dvd_copy_protect_key, ntddcdvd/PDVD_COPY_PROTECT_KEY, *PDVD_COPY_PROTECT_KEY, DVD_COPY_PROTECT_KEY structure [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddcdvd.h
-req.include-header : Ntddcdvd.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DVD_COPY_PROTECT_KEY, *PDVD_COPY_PROTECT_KEY
+UID: NS:ntddcdvd._DVD_COPY_PROTECT_KEY
+title: "_DVD_COPY_PROTECT_KEY"
+author: windows-driver-content
+description: The DVD_COPY_PROTECT_KEY structure is used in conjunction with the IOCTL_DVD_READ_KEY request to execute a report key command of the specified type.
+old-location: storage\dvd_copy_protect_key.htm
+old-project: storage
+ms.assetid: 79f3fdaf-e23a-40ba-a1eb-5428a63cc96a
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: ntddcdvd/DVD_COPY_PROTECT_KEY, PDVD_COPY_PROTECT_KEY structure pointer [Storage Devices], PDVD_COPY_PROTECT_KEY, structs-DVD_3ea6aa08-28ce-42d0-855d-d2e83ce58f89.xml, DVD_COPY_PROTECT_KEY, _DVD_COPY_PROTECT_KEY, storage.dvd_copy_protect_key, ntddcdvd/PDVD_COPY_PROTECT_KEY, *PDVD_COPY_PROTECT_KEY, DVD_COPY_PROTECT_KEY structure [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddcdvd.h
+req.include-header: Ntddcdvd.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddcdvd.h
+apiname:
+-	DVD_COPY_PROTECT_KEY
+product: Windows
+targetos: Windows
+req.typenames: DVD_COPY_PROTECT_KEY, *PDVD_COPY_PROTECT_KEY
 ---
 
 # _DVD_COPY_PROTECT_KEY structure

@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.SeAppendPrivileges
-title : SeAppendPrivileges function
-author : windows-driver-content
-description : The SeAppendPrivileges routine appends additional privileges to the privilege set in an access state structure.
-old-location : ifsk\seappendprivileges.htm
-old-project : ifsk
-ms.assetid : b7a9142a-b6db-4a64-a5e3-d03d39ac3d09
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : SeAppendPrivileges, ifsk.seappendprivileges, SeAppendPrivileges routine [Installable File System Drivers], ntifs/SeAppendPrivileges, seref_c48fbff8-669f-4138-8f55-84bc083d9af5.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.SeAppendPrivileges
+title: SeAppendPrivileges function
+author: windows-driver-content
+description: The SeAppendPrivileges routine appends additional privileges to the privilege set in an access state structure.
+old-location: ifsk\seappendprivileges.htm
+old-project: ifsk
+ms.assetid: b7a9142a-b6db-4a64-a5e3-d03d39ac3d09
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: SeAppendPrivileges, ifsk.seappendprivileges, SeAppendPrivileges routine [Installable File System Drivers], ntifs/SeAppendPrivileges, seref_c48fbff8-669f-4138-8f55-84bc083d9af5.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	SeAppendPrivileges
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

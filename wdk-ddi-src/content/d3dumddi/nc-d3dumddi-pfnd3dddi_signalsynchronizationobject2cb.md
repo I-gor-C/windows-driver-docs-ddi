@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_SIGNALSYNCHRONIZATIONOBJECT2CB
-title : PFND3DDDI_SIGNALSYNCHRONIZATIONOBJECT2CB
-author : windows-driver-content
-description : Inserts a signal on the specified synchronization objects in the specified context direct memory access (DMA) stream. Used by WDDM 1.2 and later user-mode display drivers.
-old-location : display\pfnsignalsynchronizationobject2cb.htm
-old-project : display
-ms.assetid : 01B5E793-D075-42B5-9ADF-D033249AEE9F
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.pfnsignalsynchronizationobject2cb, pfnSignalSynchronizationObject2Cb callback function [Display Devices], pfnSignalSynchronizationObject2Cb, PFND3DDDI_SIGNALSYNCHRONIZATIONOBJECT2CB, PFND3DDDI_SIGNALSYNCHRONIZATIONOBJECT2CB, d3dumddi/pfnSignalSynchronizationObject2Cb
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_SIGNALSYNCHRONIZATIONOBJECT2CB
+title: PFND3DDDI_SIGNALSYNCHRONIZATIONOBJECT2CB
+author: windows-driver-content
+description: Inserts a signal on the specified synchronization objects in the specified context direct memory access (DMA) stream. Used by WDDM 1.2 and later user-mode display drivers.
+old-location: display\pfnsignalsynchronizationobject2cb.htm
+old-project: display
+ms.assetid: 01B5E793-D075-42B5-9ADF-D033249AEE9F
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.pfnsignalsynchronizationobject2cb, pfnSignalSynchronizationObject2Cb callback function [Display Devices], pfnSignalSynchronizationObject2Cb, PFND3DDDI_SIGNALSYNCHRONIZATIONOBJECT2CB, PFND3DDDI_SIGNALSYNCHRONIZATIONOBJECT2CB, d3dumddi/pfnSignalSynchronizationObject2Cb
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	pfnSignalSynchronizationObject2Cb
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

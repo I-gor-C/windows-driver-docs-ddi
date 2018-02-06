@@ -1,42 +1,47 @@
 ---
-UID : NS:vhf._VHF_CONFIG
-title : "_VHF_CONFIG"
-author : windows-driver-content
-description : Contains initial configuration information that is provided by the HID source driver when it calls VhfCreate to create a virtual HID device.
-old-location : hid\vhf_config.htm
-old-project : hid
-ms.assetid : 384BE20B-0F40-418D-B24E-9711BF7CE53A
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : VHF_CONFIG, PVHF_CONFIG structure pointer [Human Input Devices], vhf/PVHF_CONFIG, PVHF_CONFIG, _VHF_CONFIG, vhf/VHF_CONFIG, VHF_CONFIG structure [Human Input Devices], hid.vhf_config, *PVHF_CONFIG
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : vhf.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : None supported
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VHF_CONFIG, *PVHF_CONFIG
-req.product : Windows 10 or later.
+UID: NS:vhf._VHF_CONFIG
+title: "_VHF_CONFIG"
+author: windows-driver-content
+description: Contains initial configuration information that is provided by the HID source driver when it calls VhfCreate to create a virtual HID device.
+old-location: hid\vhf_config.htm
+old-project: hid
+ms.assetid: 384BE20B-0F40-418D-B24E-9711BF7CE53A
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: VHF_CONFIG, PVHF_CONFIG structure pointer [Human Input Devices], vhf/PVHF_CONFIG, PVHF_CONFIG, _VHF_CONFIG, vhf/VHF_CONFIG, VHF_CONFIG structure [Human Input Devices], hid.vhf_config, *PVHF_CONFIG
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: vhf.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: None supported
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	vhf.h
+apiname:
+-	VHF_CONFIG
+product: Windows
+targetos: Windows
+req.typenames: VHF_CONFIG, *PVHF_CONFIG
+req.product: Windows 10 or later.
 ---
 
 # _VHF_CONFIG structure

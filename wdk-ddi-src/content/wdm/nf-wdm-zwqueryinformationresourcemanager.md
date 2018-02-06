@@ -1,42 +1,48 @@
 ---
-UID : NF:wdm.ZwQueryInformationResourceManager
-title : ZwQueryInformationResourceManager function
-author : windows-driver-content
-description : The ZwQueryInformationResourceManager routine retrieves information about a specified resource manager object.
-old-location : kernel\zwqueryinformationresourcemanager.htm
-old-project : kernel
-ms.assetid : 6faeb410-486e-4b79-b942-62d16039d24b
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/NtQueryInformationResourceManager, wdm/ZwQueryInformationResourceManager, ZwQueryInformationResourceManager, ZwQueryInformationResourceManager routine [Kernel-Mode Driver Architecture], kernel.zwqueryinformationresourcemanager, NtQueryInformationResourceManager, ktm_ref_2232fa2b-badb-4054-8a99-65f55ca1bff5.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later operating system versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ZwQueryInformationResourceManager
+title: ZwQueryInformationResourceManager function
+author: windows-driver-content
+description: The ZwQueryInformationResourceManager routine retrieves information about a specified resource manager object.
+old-location: kernel\zwqueryinformationresourcemanager.htm
+old-project: kernel
+ms.assetid: 6faeb410-486e-4b79-b942-62d16039d24b
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/NtQueryInformationResourceManager, wdm/ZwQueryInformationResourceManager, ZwQueryInformationResourceManager, ZwQueryInformationResourceManager routine [Kernel-Mode Driver Architecture], kernel.zwqueryinformationresourcemanager, NtQueryInformationResourceManager, ktm_ref_2232fa2b-badb-4054-8a99-65f55ca1bff5.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later operating system versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ZwQueryInformationResourceManager
+-	NtQueryInformationResourceManager
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

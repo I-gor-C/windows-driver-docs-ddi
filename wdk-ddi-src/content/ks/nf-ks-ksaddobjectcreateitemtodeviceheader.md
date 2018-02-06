@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsAddObjectCreateItemToDeviceHeader
-title : KsAddObjectCreateItemToDeviceHeader function
-author : windows-driver-content
-description : The KsAddObjectCreateItemToDeviceHeader function adds the specified create-item to an empty item in the previously allocated create item list for this device header.
-old-location : stream\ksaddobjectcreateitemtodeviceheader.htm
-old-project : stream
-ms.assetid : cf508b5c-4af8-4371-b833-eaa71535afc5
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.ksaddobjectcreateitemtodeviceheader, KsAddObjectCreateItemToDeviceHeader function [Streaming Media Devices], KsAddObjectCreateItemToDeviceHeader, ks/KsAddObjectCreateItemToDeviceHeader, ksfunc_89d7ee34-62de-4702-9cfa-5e3b6c9a9819.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsAddObjectCreateItemToDeviceHeader
+title: KsAddObjectCreateItemToDeviceHeader function
+author: windows-driver-content
+description: The KsAddObjectCreateItemToDeviceHeader function adds the specified create-item to an empty item in the previously allocated create item list for this device header.
+old-location: stream\ksaddobjectcreateitemtodeviceheader.htm
+old-project: stream
+ms.assetid: cf508b5c-4af8-4371-b833-eaa71535afc5
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.ksaddobjectcreateitemtodeviceheader, KsAddObjectCreateItemToDeviceHeader function [Streaming Media Devices], KsAddObjectCreateItemToDeviceHeader, ks/KsAddObjectCreateItemToDeviceHeader, ksfunc_89d7ee34-62de-4702-9cfa-5e3b6c9a9819.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsAddObjectCreateItemToDeviceHeader
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

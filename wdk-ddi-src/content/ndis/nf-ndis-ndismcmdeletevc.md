@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisMCmDeleteVc
-title : NdisMCmDeleteVc function
-author : windows-driver-content
-description : NdisMCmDeleteVc destroys a caller-created VC.
-old-location : netvista\ndismcmdeletevc.htm
-old-project : netvista
-ms.assetid : b55d0995-efd8-4a61-85e9-970559e21a88
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NdisMCmDeleteVc, netvista.ndismcmdeletevc, condis_mcm_ref_a6a2bb4d-a82e-422f-b9f0-821519513cb4.xml, ndis/NdisMCmDeleteVc, NdisMCmDeleteVc function [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisMCmDeleteVc (NDIS 5.1)) in   Windows Vista. Supported for NDIS 5.1 drivers (see    NdisMCmDeleteVc (NDIS 5.1)) in   Windows XP.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_MCM_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisMCmDeleteVc
+title: NdisMCmDeleteVc function
+author: windows-driver-content
+description: NdisMCmDeleteVc destroys a caller-created VC.
+old-location: netvista\ndismcmdeletevc.htm
+old-project: netvista
+ms.assetid: b55d0995-efd8-4a61-85e9-970559e21a88
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NdisMCmDeleteVc, netvista.ndismcmdeletevc, condis_mcm_ref_a6a2bb4d-a82e-422f-b9f0-821519513cb4.xml, ndis/NdisMCmDeleteVc, NdisMCmDeleteVc function [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisMCmDeleteVc (NDIS 5.1)) in   Windows Vista. Supported for NDIS 5.1 drivers (see    NdisMCmDeleteVc (NDIS 5.1)) in   Windows XP.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_MCM_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisMCmDeleteVc
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

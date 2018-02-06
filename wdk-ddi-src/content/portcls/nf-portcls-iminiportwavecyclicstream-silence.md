@@ -1,41 +1,46 @@
 ---
-UID : NF:portcls.IMiniportWaveCyclicStream.Silence
-title : IMiniportWaveCyclicStream::Silence method
-author : windows-driver-content
-description : The Silence method is used to copy silence samples to a specified buffer.
-old-location : audio\iminiportwavecyclicstream_silence.htm
-old-project : audio
-ms.assetid : e2acf3f5-d054-44c4-8ab9-ffd1b934f700
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : IMiniportWaveCyclicStream::Silence, Silence method [Audio Devices], audio.iminiportwavecyclicstream_silence, audmp-routines_860013ac-d79b-4b11-91b7-1a7bc3c84a5b.xml, IMiniportWaveCyclicStream, IMiniportWaveCyclicStream interface [Audio Devices], Silence method, portcls/IMiniportWaveCyclicStream::Silence, Silence method [Audio Devices], IMiniportWaveCyclicStream interface, Silence
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : portcls.h
-req.include-header : Portcls.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : portcls.h
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.IMiniportWaveCyclicStream.Silence
+title: IMiniportWaveCyclicStream::Silence method
+author: windows-driver-content
+description: The Silence method is used to copy silence samples to a specified buffer.
+old-location: audio\iminiportwavecyclicstream_silence.htm
+old-project: audio
+ms.assetid: e2acf3f5-d054-44c4-8ab9-ffd1b934f700
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: IMiniportWaveCyclicStream::Silence, Silence method [Audio Devices], audio.iminiportwavecyclicstream_silence, audmp-routines_860013ac-d79b-4b11-91b7-1a7bc3c84a5b.xml, IMiniportWaveCyclicStream, IMiniportWaveCyclicStream interface [Audio Devices], Silence method, portcls/IMiniportWaveCyclicStream::Silence, Silence method [Audio Devices], IMiniportWaveCyclicStream interface, Silence
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: portcls.h
+req.include-header: Portcls.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: portcls.h
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	portcls.h
+apiname:
+-	IMiniportWaveCyclicStream.Silence
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

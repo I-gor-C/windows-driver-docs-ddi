@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.tagKSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPS
-title : tagKSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPS
-author : windows-driver-content
-description : This structure contains the capabilities for an ROI control.
-old-location : stream\kscamera_extendedprop_roi_configcaps.htm
-old-project : stream
-ms.assetid : BAC5B134-22F5-4BC9-BBD6-6AF3C934510B
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : PKSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPS structure pointer [Streaming Media Devices], ksmedia/KSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPS, PKSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPS, tagKSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPS, ksmedia/PKSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPS, KSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPS, KSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPS structure [Streaming Media Devices], stream.kscamera_extendedprop_roi_configcaps, *PKSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPS, KSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPS"
+UID: NS:ksmedia.tagKSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPS
+title: tagKSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPS
+author: windows-driver-content
+description: This structure contains the capabilities for an ROI control.
+old-location: stream\kscamera_extendedprop_roi_configcaps.htm
+old-project: stream
+ms.assetid: BAC5B134-22F5-4BC9-BBD6-6AF3C934510B
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: PKSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPS structure pointer [Streaming Media Devices], ksmedia/KSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPS, PKSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPS, tagKSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPS, ksmedia/PKSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPS, KSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPS, KSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPS structure [Streaming Media Devices], stream.kscamera_extendedprop_roi_configcaps, *PKSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ksmedia.h
+apiname:
+-	KSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPS
+product: Windows
+targetos: Windows
+req.typenames: "*PKSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPS, KSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPS"
 ---
 
 # tagKSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPS structure

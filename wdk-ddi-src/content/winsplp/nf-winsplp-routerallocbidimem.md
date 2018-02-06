@@ -1,42 +1,47 @@
 ---
-UID : NF:winsplp.RouterAllocBidiMem
-title : RouterAllocBidiMem function
-author : windows-driver-content
-description : RouterAllocBidiMem allocates a block of memory of a specified size. This function is used by the port monitor to allocate memory for strings and binary objects.
-old-location : print\routerallocbidimem.htm
-old-project : print
-ms.assetid : 39042c66-3db1-41bd-b06d-12aefcb007d3
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : winsplp/RouterAllocBidiMem, print.routerallocbidimem, RouterAllocBidiMem function [Print Devices], RouterAllocBidiMem, spoolfnc_ed433d21-ccfa-4061-9fbd-3bf333e12b31.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : winsplp.h
-req.include-header : Winsplp.h
-req.target-type : Desktop
-req.target-min-winverclnt : This function is available in Windows XP and later operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Spoolss.lib
-req.dll : Spoolss.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NOTIFICATION_CONFIG_FLAGS
-req.product : Windows 10 or later.
+UID: NF:winsplp.RouterAllocBidiMem
+title: RouterAllocBidiMem function
+author: windows-driver-content
+description: RouterAllocBidiMem allocates a block of memory of a specified size. This function is used by the port monitor to allocate memory for strings and binary objects.
+old-location: print\routerallocbidimem.htm
+old-project: print
+ms.assetid: 39042c66-3db1-41bd-b06d-12aefcb007d3
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: winsplp/RouterAllocBidiMem, print.routerallocbidimem, RouterAllocBidiMem function [Print Devices], RouterAllocBidiMem, spoolfnc_ed433d21-ccfa-4061-9fbd-3bf333e12b31.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: winsplp.h
+req.include-header: Winsplp.h
+req.target-type: Desktop
+req.target-min-winverclnt: This function is available in Windows XP and later operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Spoolss.lib
+req.dll: Spoolss.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Spoolss.dll
+apiname:
+-	RouterAllocBidiMem
+product: Windows
+targetos: Windows
+req.typenames: NOTIFICATION_CONFIG_FLAGS
+req.product: Windows 10 or later.
 ---
 
 

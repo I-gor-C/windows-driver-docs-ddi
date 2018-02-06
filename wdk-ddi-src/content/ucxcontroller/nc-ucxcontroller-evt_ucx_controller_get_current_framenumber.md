@@ -1,42 +1,47 @@
 ---
-UID : NC:ucxcontroller.EVT_UCX_CONTROLLER_GET_CURRENT_FRAMENUMBER
-title : EVT_UCX_CONTROLLER_GET_CURRENT_FRAMENUMBER
-author : windows-driver-content
-description : The client driver's implementation that UCX calls to retrieve the current 32-bit frame number.
-old-location : buses\evt_ucx_controller_get_current_framenumber.htm
-old-project : usbref
-ms.assetid : 2755d0fd-9801-4d54-89cb-54f8b984288c
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : buses.evt_ucx_controller_get_current_framenumber, EvtUcxControllerGetCurrentFrameNumber callback function [Buses], EvtUcxControllerGetCurrentFrameNumber, EVT_UCX_CONTROLLER_GET_CURRENT_FRAMENUMBER, EVT_UCX_CONTROLLER_GET_CURRENT_FRAMENUMBER, ucxcontroller/EvtUcxControllerGetCurrentFrameNumber, PEVT_UCX_CONTROLLER_GET_CURRENT_FRAMENUMBER callback function pointer [Buses], PEVT_UCX_CONTROLLER_GET_CURRENT_FRAMENUMBER
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ucxcontroller.h
-req.include-header : Ucxclass.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUCM_PD_REQUEST_DATA_OBJECT, UCM_PD_REQUEST_DATA_OBJECT"
-req.product : Windows 10 or later.
+UID: NC:ucxcontroller.EVT_UCX_CONTROLLER_GET_CURRENT_FRAMENUMBER
+title: EVT_UCX_CONTROLLER_GET_CURRENT_FRAMENUMBER
+author: windows-driver-content
+description: The client driver's implementation that UCX calls to retrieve the current 32-bit frame number.
+old-location: buses\evt_ucx_controller_get_current_framenumber.htm
+old-project: usbref
+ms.assetid: 2755d0fd-9801-4d54-89cb-54f8b984288c
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: buses.evt_ucx_controller_get_current_framenumber, EvtUcxControllerGetCurrentFrameNumber callback function [Buses], EvtUcxControllerGetCurrentFrameNumber, EVT_UCX_CONTROLLER_GET_CURRENT_FRAMENUMBER, EVT_UCX_CONTROLLER_GET_CURRENT_FRAMENUMBER, ucxcontroller/EvtUcxControllerGetCurrentFrameNumber, PEVT_UCX_CONTROLLER_GET_CURRENT_FRAMENUMBER callback function pointer [Buses], PEVT_UCX_CONTROLLER_GET_CURRENT_FRAMENUMBER
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ucxcontroller.h
+req.include-header: Ucxclass.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ucxcontroller.h
+apiname:
+-	PEVT_UCX_CONTROLLER_GET_CURRENT_FRAMENUMBER
+product: Windows
+targetos: Windows
+req.typenames: "*PUCM_PD_REQUEST_DATA_OBJECT, UCM_PD_REQUEST_DATA_OBJECT"
+req.product: Windows 10 or later.
 ---
 
 

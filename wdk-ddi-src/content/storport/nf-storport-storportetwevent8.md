@@ -1,42 +1,47 @@
 ---
-UID : NF:storport.StorPortEtwEvent8
-title : StorPortEtwEvent8 function
-author : windows-driver-content
-description : The StorPortEtwEvent8 publishes an Event Tracing for Windows (ETW) event to a storage trace channel. The miniport can log eight general purpose ETW parameters. The ETW parameters are expressed as eight name-value pairs.
-old-location : storage\storportetwevent8.htm
-old-project : storage
-ms.assetid : FC0E8267-5AA6-47D6-9F98-B6B19CA3F260
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : StorportEtwLevelWarning, StorportEtwEventOpcodeInfo, StorportEtwEventOpcodeStart, STORPORT_ETW_EVENT_KEYWORD_POWER, StorportEtwLevelCritical, StorportEtwEventOpcodeResume, StorPortEtwEvent8 routine [Storage Devices], StorportEtwEventOpcodeDC_Stop, StorportEtwEventOpcodeSuspend, StorportEtwEventOpcodeReply, storage.storportetwevent8, storport/StorPortEtwEvent8, StorPortEtwEvent8, StorportEtwLevelLogAlways, StorportEtwEventOpcodeExtension, StorportEtwLevelError, STORPORT_ETW_EVENT_KEYWORD_PERFORMANCE, STORPORT_ETW_EVENT_KEYWORD_IO, StorportEtwLevelInformational, StorportEtwEventOpcodeDC_Start, StorportEtwEventOpcodeStop, STORPORT_ETW_EVENT_KEYWORD_ENUMERATION, StorportEtwLevelVerbose, StorportEtwEventOpcodeReceive
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in starting with Windows 8.1.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STOR_SPINLOCK
-req.product : Windows 10 or later.
+UID: NF:storport.StorPortEtwEvent8
+title: StorPortEtwEvent8 function
+author: windows-driver-content
+description: The StorPortEtwEvent8 publishes an Event Tracing for Windows (ETW) event to a storage trace channel. The miniport can log eight general purpose ETW parameters. The ETW parameters are expressed as eight name-value pairs.
+old-location: storage\storportetwevent8.htm
+old-project: storage
+ms.assetid: FC0E8267-5AA6-47D6-9F98-B6B19CA3F260
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: StorportEtwLevelWarning, StorportEtwEventOpcodeInfo, StorportEtwEventOpcodeStart, STORPORT_ETW_EVENT_KEYWORD_POWER, StorportEtwLevelCritical, StorportEtwEventOpcodeResume, StorPortEtwEvent8 routine [Storage Devices], StorportEtwEventOpcodeDC_Stop, StorportEtwEventOpcodeSuspend, StorportEtwEventOpcodeReply, storage.storportetwevent8, storport/StorPortEtwEvent8, StorPortEtwEvent8, StorportEtwLevelLogAlways, StorportEtwEventOpcodeExtension, StorportEtwLevelError, STORPORT_ETW_EVENT_KEYWORD_PERFORMANCE, STORPORT_ETW_EVENT_KEYWORD_IO, StorportEtwLevelInformational, StorportEtwEventOpcodeDC_Start, StorportEtwEventOpcodeStop, STORPORT_ETW_EVENT_KEYWORD_ENUMERATION, StorportEtwLevelVerbose, StorportEtwEventOpcodeReceive
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in starting with Windows 8.1.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	storport.h
+apiname:
+-	StorPortEtwEvent8
+product: Windows
+targetos: Windows
+req.typenames: STOR_SPINLOCK
+req.product: Windows 10 or later.
 ---
 
 

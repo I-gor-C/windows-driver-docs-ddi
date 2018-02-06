@@ -1,41 +1,49 @@
 ---
-UID : NF:irb.AtaPortReleaseRequestSenseIrb
-title : AtaPortReleaseRequestSenseIrb function
-author : windows-driver-content
-description : The AtaPortReleaseRequestSenseIrb routine frees the request sense IRB tha is allocated by using AtaPortBuildRequestSenseIrb.
-old-location : storage\ataportreleaserequestsenseirb.htm
-old-project : storage
-ms.assetid : 53e5e234-c256-4581-b109-307f2f17522f
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : AtaPortReleaseRequestSenseIrb routine [Storage Devices], AtaPortReleaseRequestSenseIrb, storage.ataportreleaserequestsenseirb, atartns_b46ae59d-b5b8-49fb-9458-742eefacd197.xml, irb/AtaPortReleaseRequestSenseIrb
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : irb.h
-req.include-header : Ata.h, Irb.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ataport.lib; Pciidex.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : IDE_POWER_STATE
+UID: NF:irb.AtaPortReleaseRequestSenseIrb
+title: AtaPortReleaseRequestSenseIrb function
+author: windows-driver-content
+description: The AtaPortReleaseRequestSenseIrb routine frees the request sense IRB tha is allocated by using AtaPortBuildRequestSenseIrb.
+old-location: storage\ataportreleaserequestsenseirb.htm
+old-project: storage
+ms.assetid: 53e5e234-c256-4581-b109-307f2f17522f
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: AtaPortReleaseRequestSenseIrb routine [Storage Devices], AtaPortReleaseRequestSenseIrb, storage.ataportreleaserequestsenseirb, atartns_b46ae59d-b5b8-49fb-9458-742eefacd197.xml, irb/AtaPortReleaseRequestSenseIrb
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: irb.h
+req.include-header: Ata.h, Irb.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ataport.lib; Pciidex.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ataport.lib
+-	ataport.dll
+-	pciidex.lib
+-	pciidex.dll
+apiname:
+-	AtaPortReleaseRequestSenseIrb
+product: Windows
+targetos: Windows
+req.typenames: IDE_POWER_STATE
 ---
 
 

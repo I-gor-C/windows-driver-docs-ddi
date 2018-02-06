@@ -1,41 +1,46 @@
 ---
-UID : NS:ks.KSEVENTDATA
-title : KSEVENTDATA
-author : windows-driver-content
-description : Kernel streaming clients send the KSEVENTDATA structure to the class driver to specify a notification method.
-old-location : stream\kseventdata.htm
-old-project : stream
-ms.assetid : 83503353-e4f7-47ba-9a0c-71264798e983
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : PKSEVENTDATA structure pointer [Streaming Media Devices], ks/PKSEVENTDATA, PKSEVENTDATA, ks-struct_e9669775-4fb9-465a-bd2b-fd02f718d7a3.xml, KSEVENTDATA, KSEVENTDATA structure [Streaming Media Devices], *PKSEVENTDATA, ks/KSEVENTDATA, stream.kseventdata
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KSEVENTDATA, *PKSEVENTDATA
+UID: NS:ks.KSEVENTDATA
+title: KSEVENTDATA
+author: windows-driver-content
+description: Kernel streaming clients send the KSEVENTDATA structure to the class driver to specify a notification method.
+old-location: stream\kseventdata.htm
+old-project: stream
+ms.assetid: 83503353-e4f7-47ba-9a0c-71264798e983
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: PKSEVENTDATA structure pointer [Streaming Media Devices], ks/PKSEVENTDATA, PKSEVENTDATA, ks-struct_e9669775-4fb9-465a-bd2b-fd02f718d7a3.xml, KSEVENTDATA, KSEVENTDATA structure [Streaming Media Devices], *PKSEVENTDATA, ks/KSEVENTDATA, stream.kseventdata
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	KSEVENTDATA
+product: Windows
+targetos: Windows
+req.typenames: KSEVENTDATA, *PKSEVENTDATA
 ---
 
 # KSEVENTDATA structure

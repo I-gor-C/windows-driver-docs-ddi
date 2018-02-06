@@ -1,42 +1,47 @@
 ---
-UID : NS:wiadef._WIA_PATCH_CODES
-title : "_WIA_PATCH_CODES"
-author : windows-driver-content
-description : The WIA_PATCH_CODES structure stores header information for the patch code metadata report of one scan job (one call to IWiaMiniDrv::drvAcquireItemData).
-old-location : image\wia_patch_codes.htm
-old-project : image
-ms.assetid : CFD2403B-DDD4-4318-9084-1B3E3462FBDC
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : image.wia_patch_codes, _WIA_PATCH_CODES, WIA_PATCH_CODES, wiadef/WIA_PATCH_CODES, WIA_PATCH_CODES structure [Imaging Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wiadef.h
-req.include-header : Wiadef.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WIA_PATCH_CODES
-req.product : Windows 10 or later.
+UID: NS:wiadef._WIA_PATCH_CODES
+title: "_WIA_PATCH_CODES"
+author: windows-driver-content
+description: The WIA_PATCH_CODES structure stores header information for the patch code metadata report of one scan job (one call to IWiaMiniDrv::drvAcquireItemData).
+old-location: image\wia_patch_codes.htm
+old-project: image
+ms.assetid: CFD2403B-DDD4-4318-9084-1B3E3462FBDC
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: image.wia_patch_codes, _WIA_PATCH_CODES, WIA_PATCH_CODES, wiadef/WIA_PATCH_CODES, WIA_PATCH_CODES structure [Imaging Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wiadef.h
+req.include-header: Wiadef.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wiadef.h
+apiname:
+-	WIA_PATCH_CODES
+product: Windows
+targetos: Windows
+req.typenames: WIA_PATCH_CODES
+req.product: Windows 10 or later.
 ---
 
 # _WIA_PATCH_CODES structure

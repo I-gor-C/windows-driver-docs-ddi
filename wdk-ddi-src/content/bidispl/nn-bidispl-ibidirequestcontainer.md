@@ -1,41 +1,46 @@
 ---
-UID : NN:bidispl.IBidiRequestContainer
-title : IBidiRequestContainer
-author : windows-driver-content
-description : The IBidiRequestContainer interface allows an application or other objects to compose and retrieve a list of bidi requests.
-old-location : print\ibidirequestcontainer.htm
-old-project : print
-ms.assetid : 21dfcbe8-2fc1-4495-af54-5d4c83b8bb79
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : print.ibidirequestcontainer, IBidiRequestContainer interface [Print Devices], IBidiRequestContainer interface [Print Devices], described, IBidiRequestContainer, bidispl/IBidiRequestContainer, _win32_IBidiRequestContainer, gdi.ibidirequestcontainer
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : bidispl.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows XP
-req.target-min-winversvr : Windows Server 2003
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : bidispl.h
-req.dll : Bidispl.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PMPEG2_TRANSPORT_STRIDE, MPEG2_TRANSPORT_STRIDE"
+UID: NN:bidispl.IBidiRequestContainer
+title: IBidiRequestContainer
+author: windows-driver-content
+description: The IBidiRequestContainer interface allows an application or other objects to compose and retrieve a list of bidi requests.
+old-location: print\ibidirequestcontainer.htm
+old-project: print
+ms.assetid: 21dfcbe8-2fc1-4495-af54-5d4c83b8bb79
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: print.ibidirequestcontainer, IBidiRequestContainer interface [Print Devices], IBidiRequestContainer interface [Print Devices], described, IBidiRequestContainer, bidispl/IBidiRequestContainer, _win32_IBidiRequestContainer, gdi.ibidirequestcontainer
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: bidispl.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows XP
+req.target-min-winversvr: Windows Server 2003
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: bidispl.h
+req.dll: Bidispl.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Bidispl.h
+apiname:
+-	IBidiRequestContainer
+product: Windows
+targetos: Windows
+req.typenames: "*PMPEG2_TRANSPORT_STRIDE, MPEG2_TRANSPORT_STRIDE"
 ---
 
 # IBidiRequestContainer interface

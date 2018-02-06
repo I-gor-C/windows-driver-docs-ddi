@@ -1,42 +1,47 @@
 ---
-UID : NC:scsiwmi.PSCSIWMI_EXECUTE_METHOD
-title : PSCSIWMI_EXECUTE_METHOD
-author : windows-driver-content
-description : A miniport driver's HwScsiWmiExecuteMethod routine is called to execute a method associated with a data block.
-old-location : storage\hwscsiwmiexecutemethod.htm
-old-project : storage
-ms.assetid : 67a82442-591e-4e52-aaaf-b3cdb68c483a
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.hwscsiwmiexecutemethod, HwScsiWmiExecuteMethod callback function [Storage Devices], HwScsiWmiExecuteMethod, PSCSIWMI_EXECUTE_METHOD, PSCSIWMI_EXECUTE_METHOD, scsiwmi/HwScsiWmiExecuteMethod, Scsimini_a0b3e943-a363-478d-9d68-09acf0c5b591.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : scsiwmi.h
-req.include-header : Scsiwmi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SCSISCAN_INFO, *PSCSISCAN_INFO
-req.product : Windows 10 or later.
+UID: NC:scsiwmi.PSCSIWMI_EXECUTE_METHOD
+title: PSCSIWMI_EXECUTE_METHOD
+author: windows-driver-content
+description: A miniport driver's HwScsiWmiExecuteMethod routine is called to execute a method associated with a data block.
+old-location: storage\hwscsiwmiexecutemethod.htm
+old-project: storage
+ms.assetid: 67a82442-591e-4e52-aaaf-b3cdb68c483a
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.hwscsiwmiexecutemethod, HwScsiWmiExecuteMethod callback function [Storage Devices], HwScsiWmiExecuteMethod, PSCSIWMI_EXECUTE_METHOD, PSCSIWMI_EXECUTE_METHOD, scsiwmi/HwScsiWmiExecuteMethod, Scsimini_a0b3e943-a363-478d-9d68-09acf0c5b591.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: scsiwmi.h
+req.include-header: Scsiwmi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	scsiwmi.h
+apiname:
+-	HwScsiWmiExecuteMethod
+product: Windows
+targetos: Windows
+req.typenames: SCSISCAN_INFO, *PSCSISCAN_INFO
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NF:ks.KsGateTurnInputOn
-title : KsGateTurnInputOn function
-author : windows-driver-content
-description : The KsGateTurnInputOn function turns on an existing input to Gate.
-old-location : stream\ksgateturninputon.htm
-old-project : stream
-ms.assetid : 68c914bf-a293-42b0-85aa-c9e8f2ba18ac
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.ksgateturninputon, avfunc_9aaa9c85-b3a1-49ae-8135-6402f7bc1755.xml, KsGateTurnInputOn function [Streaming Media Devices], KsGateTurnInputOn, ks/KsGateTurnInputOn
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsGateTurnInputOn
+title: KsGateTurnInputOn function
+author: windows-driver-content
+description: The KsGateTurnInputOn function turns on an existing input to Gate.
+old-location: stream\ksgateturninputon.htm
+old-project: stream
+ms.assetid: 68c914bf-a293-42b0-85aa-c9e8f2ba18ac
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.ksgateturninputon, avfunc_9aaa9c85-b3a1-49ae-8135-6402f7bc1755.xml, KsGateTurnInputOn function [Streaming Media Devices], KsGateTurnInputOn, ks/KsGateTurnInputOn
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	KsGateTurnInputOn
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

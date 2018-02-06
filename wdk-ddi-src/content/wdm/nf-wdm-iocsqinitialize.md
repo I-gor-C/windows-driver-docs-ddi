@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.IoCsqInitialize
-title : IoCsqInitialize function
-author : windows-driver-content
-description : The IoCsqInitialize routine initializes the driver's cancel-safe IRP queue dispatch table.
-old-location : kernel\iocsqinitialize.htm
-old-project : kernel
-ms.assetid : 5287db75-3096-45ab-b35b-1ee8b076157d
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : IoCsqInitialize, IoCsqInitialize routine [Kernel-Mode Driver Architecture], wdm/IoCsqInitialize, kernel.iocsqinitialize, k104_08afe4e8-f68d-4490-86ec-a558b2090a82.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows XP and later versions of the Windows operating system. Drivers that must also work for Windows 2000 and Windows 98/Me can instead link to Csq.lib to use the routine.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.IoCsqInitialize
+title: IoCsqInitialize function
+author: windows-driver-content
+description: The IoCsqInitialize routine initializes the driver's cancel-safe IRP queue dispatch table.
+old-location: kernel\iocsqinitialize.htm
+old-project: kernel
+ms.assetid: 5287db75-3096-45ab-b35b-1ee8b076157d
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: IoCsqInitialize, IoCsqInitialize routine [Kernel-Mode Driver Architecture], wdm/IoCsqInitialize, kernel.iocsqinitialize, k104_08afe4e8-f68d-4490-86ec-a558b2090a82.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows XP and later versions of the Windows operating system. Drivers that must also work for Windows 2000 and Windows 98/Me can instead link to Csq.lib to use the routine.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoCsqInitialize
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

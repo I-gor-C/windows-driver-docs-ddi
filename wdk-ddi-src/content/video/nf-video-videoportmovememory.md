@@ -1,42 +1,47 @@
 ---
-UID : NF:video.VideoPortMoveMemory
-title : VideoPortMoveMemory function
-author : windows-driver-content
-description : The VideoPortMoveMemory function copies data from the source location to the destination location in system memory.
-old-location : display\videoportmovememory.htm
-old-project : display
-ms.assetid : 32b754ef-2a85-4ba7-9d4f-3c2de2501319
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : VideoPortMoveMemory, VideoPort_Functions_ab574585-85be-48ea-9713-25867812699a.xml, VideoPortMoveMemory function [Display Devices], video/VideoPortMoveMemory, display.videoportmovememory
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows 2000 and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Videoprt.lib
-req.dll : Videoprt.sys
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_PORT_SERVICES
-req.product : Windows 10 or later.
+UID: NF:video.VideoPortMoveMemory
+title: VideoPortMoveMemory function
+author: windows-driver-content
+description: The VideoPortMoveMemory function copies data from the source location to the destination location in system memory.
+old-location: display\videoportmovememory.htm
+old-project: display
+ms.assetid: 32b754ef-2a85-4ba7-9d4f-3c2de2501319
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: VideoPortMoveMemory, VideoPort_Functions_ab574585-85be-48ea-9713-25867812699a.xml, VideoPortMoveMemory function [Display Devices], video/VideoPortMoveMemory, display.videoportmovememory
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows 2000 and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Videoprt.lib
+req.dll: Videoprt.sys
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Videoprt.sys
+apiname:
+-	VideoPortMoveMemory
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_PORT_SERVICES
+req.product: Windows 10 or later.
 ---
 
 

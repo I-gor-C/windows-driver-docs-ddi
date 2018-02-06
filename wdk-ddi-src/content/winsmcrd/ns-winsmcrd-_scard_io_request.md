@@ -1,42 +1,47 @@
 ---
-UID : NS:winsmcrd._SCARD_IO_REQUEST
-title : "_SCARD_IO_REQUEST"
-author : windows-driver-content
-description : This structure is used to identify a smart card I/O request.
-old-location : nfpdrivers\scard_io_request_structure.htm
-old-project : nfpdrivers
-ms.assetid : DE670712-2F11-4BB0-ADC7-B68C94EF0759
-ms.author : windowsdriverdev
-ms.date : 12/18/2017
-ms.keywords : "_SCARD_IO_REQUEST, winsmcrd/PSCARD_IO_REQUEST, *LPSCARD_IO_REQUEST, PSCARD_IO_REQUEST, *LPSCARD_IO_REQUEST structure pointer [Near-Field Proximity Drivers], SCARD_IO_REQUEST, *LPSCARD_IO_REQUEST, SCARD_IO_REQUEST structure [Near-Field Proximity Drivers], PSCARD_IO_REQUEST, *LPSCARD_IO_REQUEST, nfpdrivers.scard_io_request_structure, winsmcrd/SCARD_IO_REQUEST, *PSCARD_IO_REQUEST"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : winsmcrd.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SCARD_IO_REQUEST, *PSCARD_IO_REQUEST, *LPSCARD_IO_REQUEST
-req.product : Windows 10 or later.
+UID: NS:winsmcrd._SCARD_IO_REQUEST
+title: "_SCARD_IO_REQUEST"
+author: windows-driver-content
+description: This structure is used to identify a smart card I/O request.
+old-location: nfpdrivers\scard_io_request_structure.htm
+old-project: nfpdrivers
+ms.assetid: DE670712-2F11-4BB0-ADC7-B68C94EF0759
+ms.author: windowsdriverdev
+ms.date: 12/18/2017
+ms.keywords: "_SCARD_IO_REQUEST, winsmcrd/PSCARD_IO_REQUEST, *LPSCARD_IO_REQUEST, PSCARD_IO_REQUEST, *LPSCARD_IO_REQUEST structure pointer [Near-Field Proximity Drivers], SCARD_IO_REQUEST, *LPSCARD_IO_REQUEST, SCARD_IO_REQUEST structure [Near-Field Proximity Drivers], PSCARD_IO_REQUEST, *LPSCARD_IO_REQUEST, nfpdrivers.scard_io_request_structure, winsmcrd/SCARD_IO_REQUEST, *PSCARD_IO_REQUEST"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: winsmcrd.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	winsmcrd.h
+apiname:
+-	SCARD_IO_REQUEST
+product: Windows
+targetos: Windows
+req.typenames: SCARD_IO_REQUEST, *PSCARD_IO_REQUEST, *LPSCARD_IO_REQUEST
+req.product: Windows 10 or later.
 ---
 
 # _SCARD_IO_REQUEST structure

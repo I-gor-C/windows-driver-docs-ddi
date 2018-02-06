@@ -1,41 +1,46 @@
 ---
-UID : NC:dot11wdi.MINIPORT_WDI_CANCEL_IDLE_NOTIFICATION
-title : MINIPORT_WDI_CANCEL_IDLE_NOTIFICATION
-author : windows-driver-content
-description : NDIS calls the MiniportWdiCancelIdleNotification handler function to notify the WDI miniport driver that NDIS has detected activity on the suspended network adapter.
-old-location : netvista\miniportwdicancelidlenotification.htm
-old-project : netvista
-ms.assetid : 4C52E367-2E75-47EC-8743-F3FA2EEE25F8
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.miniportwdicancelidlenotification, MiniportWdiCancelIdleNotification callback function [Network Drivers Starting with Windows Vista], MiniportWdiCancelIdleNotification, MINIPORT_WDI_CANCEL_IDLE_NOTIFICATION, MINIPORT_WDI_CANCEL_IDLE_NOTIFICATION, dot11wdi/MiniportWdiCancelIdleNotification
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : dot11wdi.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SYNTH_STATS, *PSYNTH_STATS
+UID: NC:dot11wdi.MINIPORT_WDI_CANCEL_IDLE_NOTIFICATION
+title: MINIPORT_WDI_CANCEL_IDLE_NOTIFICATION
+author: windows-driver-content
+description: NDIS calls the MiniportWdiCancelIdleNotification handler function to notify the WDI miniport driver that NDIS has detected activity on the suspended network adapter.
+old-location: netvista\miniportwdicancelidlenotification.htm
+old-project: netvista
+ms.assetid: 4C52E367-2E75-47EC-8743-F3FA2EEE25F8
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.miniportwdicancelidlenotification, MiniportWdiCancelIdleNotification callback function [Network Drivers Starting with Windows Vista], MiniportWdiCancelIdleNotification, MINIPORT_WDI_CANCEL_IDLE_NOTIFICATION, MINIPORT_WDI_CANCEL_IDLE_NOTIFICATION, dot11wdi/MiniportWdiCancelIdleNotification
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: dot11wdi.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	dot11wdi.h
+apiname:
+-	MiniportWdiCancelIdleNotification
+product: Windows
+targetos: Windows
+req.typenames: SYNTH_STATS, *PSYNTH_STATS
 ---
 
 

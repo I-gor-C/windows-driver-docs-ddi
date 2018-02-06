@@ -1,42 +1,47 @@
 ---
-UID : NS:wdfdriver._WDF_DRIVER_CONFIG
-title : "_WDF_DRIVER_CONFIG"
-author : windows-driver-content
-description : The WDF_DRIVER_CONFIG structure is an input parameter to WdfDriverCreate.
-old-location : wdf\wdf_driver_config.htm
-old-project : wdf
-ms.assetid : 24197846-9664-4fc6-8578-5bcaf0e4a71c
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : "_WDF_DRIVER_CONFIG, DFDriverObjectRef_89306ddc-557c-4142-a26b-a120acdffed6.xml, kmdf.wdf_driver_config, wdf.wdf_driver_config, WDF_DRIVER_CONFIG structure, wdfdriver/PWDF_DRIVER_CONFIG, wdfdriver/WDF_DRIVER_CONFIG, PWDF_DRIVER_CONFIG structure pointer, *PWDF_DRIVER_CONFIG, PWDF_DRIVER_CONFIG, WDF_DRIVER_CONFIG"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdfdriver.h
-req.include-header : Wdf.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_DRIVER_CONFIG, *PWDF_DRIVER_CONFIG
-req.product : Windows 10 or later.
+UID: NS:wdfdriver._WDF_DRIVER_CONFIG
+title: "_WDF_DRIVER_CONFIG"
+author: windows-driver-content
+description: The WDF_DRIVER_CONFIG structure is an input parameter to WdfDriverCreate.
+old-location: wdf\wdf_driver_config.htm
+old-project: wdf
+ms.assetid: 24197846-9664-4fc6-8578-5bcaf0e4a71c
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: "_WDF_DRIVER_CONFIG, DFDriverObjectRef_89306ddc-557c-4142-a26b-a120acdffed6.xml, kmdf.wdf_driver_config, wdf.wdf_driver_config, WDF_DRIVER_CONFIG structure, wdfdriver/PWDF_DRIVER_CONFIG, wdfdriver/WDF_DRIVER_CONFIG, PWDF_DRIVER_CONFIG structure pointer, *PWDF_DRIVER_CONFIG, PWDF_DRIVER_CONFIG, WDF_DRIVER_CONFIG"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdfdriver.h
+req.include-header: Wdf.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfdriver.h
+apiname:
+-	WDF_DRIVER_CONFIG
+product: Windows
+targetos: Windows
+req.typenames: WDF_DRIVER_CONFIG, *PWDF_DRIVER_CONFIG
+req.product: Windows 10 or later.
 ---
 
 # _WDF_DRIVER_CONFIG structure

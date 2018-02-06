@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.MmAllocateMdlForIoSpace
-title : MmAllocateMdlForIoSpace function
-author : windows-driver-content
-description : The MmAllocateMdlForIoSpace routine allocates an MDL and initializes this MDL to describe a set of physical address ranges in I/O address space.
-old-location : kernel\mmallocatemdlforiospace.htm
-old-project : kernel
-ms.assetid : 198ECC2A-1AC0-44FA-8E5C-84F1C8BEE246
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.mmallocatemdlforiospace, wdm/MmAllocateMdlForIoSpace, MmAllocateMdlForIoSpace, MmAllocateMdlForIoSpace routine [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.MmAllocateMdlForIoSpace
+title: MmAllocateMdlForIoSpace function
+author: windows-driver-content
+description: The MmAllocateMdlForIoSpace routine allocates an MDL and initializes this MDL to describe a set of physical address ranges in I/O address space.
+old-location: kernel\mmallocatemdlforiospace.htm
+old-project: kernel
+ms.assetid: 198ECC2A-1AC0-44FA-8E5C-84F1C8BEE246
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.mmallocatemdlforiospace, wdm/MmAllocateMdlForIoSpace, MmAllocateMdlForIoSpace, MmAllocateMdlForIoSpace routine [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	MmAllocateMdlForIoSpace
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

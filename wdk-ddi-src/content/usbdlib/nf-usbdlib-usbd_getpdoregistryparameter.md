@@ -1,42 +1,48 @@
 ---
-UID : NF:usbdlib.USBD_GetPdoRegistryParameter
-title : USBD_GetPdoRegistryParameter function
-author : windows-driver-content
-description : The USBD_GetPdoRegistryParameter routine retrieves the value from the specified key in the USB device's hardware registry.
-old-location : buses\usbd_getpdoregistryparameter.htm
-old-project : usbref
-ms.assetid : f61be32a-2537-4b7f-8f22-4149b00a15a4
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : USBD_GetPdoRegistryParameter, USBD_GetPdoRegistryParameter routine [Buses], usbfunc_b85b350e-68ad-4256-b4df-f61ea0367b62.xml, buses.usbd_getpdoregistryparameter, usbdlib/USBD_GetPdoRegistryParameter
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : usbdlib.h
-req.include-header : 
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Usbd.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : USBCAMD_DEVICE_DATA2, *PUSBCAMD_DEVICE_DATA2
-req.product : Windows 10 or later.
+UID: NF:usbdlib.USBD_GetPdoRegistryParameter
+title: USBD_GetPdoRegistryParameter function
+author: windows-driver-content
+description: The USBD_GetPdoRegistryParameter routine retrieves the value from the specified key in the USB device's hardware registry.
+old-location: buses\usbd_getpdoregistryparameter.htm
+old-project: usbref
+ms.assetid: f61be32a-2537-4b7f-8f22-4149b00a15a4
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: USBD_GetPdoRegistryParameter, USBD_GetPdoRegistryParameter routine [Buses], usbfunc_b85b350e-68ad-4256-b4df-f61ea0367b62.xml, buses.usbd_getpdoregistryparameter, usbdlib/USBD_GetPdoRegistryParameter
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: usbdlib.h
+req.include-header: 
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Usbd.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	usbd.lib
+-	usbd.dll
+apiname:
+-	USBD_GetPdoRegistryParameter
+product: Windows
+targetos: Windows
+req.typenames: USBCAMD_DEVICE_DATA2, *PUSBCAMD_DEVICE_DATA2
+req.product: Windows 10 or later.
 ---
 
 

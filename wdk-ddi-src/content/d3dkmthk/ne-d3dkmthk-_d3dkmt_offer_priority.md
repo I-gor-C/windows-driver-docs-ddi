@@ -1,41 +1,46 @@
 ---
-UID : NE:d3dkmthk._D3DKMT_OFFER_PRIORITY
-title : "_D3DKMT_OFFER_PRIORITY"
-author : windows-driver-content
-description : Indicates the importance of video memory resources that the user-mode display driver offers for reuse.
-old-location : display\d3dkmt_offer_priority.htm
-old-project : display
-ms.assetid : fec15098-3130-42d6-b889-579ecab6f162
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : "_D3DKMT_OFFER_PRIORITY, D3DKMT_OFFER_PRIORITY, D3DKMT_OFFER_PRIORITY_NORMAL, D3DKMT_OFFER_PRIORITY_HIGH, display.d3dkmt_offer_priority, d3dkmthk/D3DKMT_OFFER_PRIORITY_LOW, d3dkmthk/D3DKMT_OFFER_PRIORITY, D3DKMT_OFFER_PRIORITY_LOW, d3dkmthk/D3DKMT_OFFER_PRIORITY_AUTO, d3dkmthk/D3DKMT_OFFER_PRIORITY_HIGH, D3DKMT_OFFER_PRIORITY_AUTO, D3DKMT_OFFER_PRIORITY enumeration [Display Devices], d3dkmthk/D3DKMT_OFFER_PRIORITY_NORMAL"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_OFFER_PRIORITY
+UID: NE:d3dkmthk._D3DKMT_OFFER_PRIORITY
+title: "_D3DKMT_OFFER_PRIORITY"
+author: windows-driver-content
+description: Indicates the importance of video memory resources that the user-mode display driver offers for reuse.
+old-location: display\d3dkmt_offer_priority.htm
+old-project: display
+ms.assetid: fec15098-3130-42d6-b889-579ecab6f162
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: "_D3DKMT_OFFER_PRIORITY, D3DKMT_OFFER_PRIORITY, D3DKMT_OFFER_PRIORITY_NORMAL, D3DKMT_OFFER_PRIORITY_HIGH, display.d3dkmt_offer_priority, d3dkmthk/D3DKMT_OFFER_PRIORITY_LOW, d3dkmthk/D3DKMT_OFFER_PRIORITY, D3DKMT_OFFER_PRIORITY_LOW, d3dkmthk/D3DKMT_OFFER_PRIORITY_AUTO, d3dkmthk/D3DKMT_OFFER_PRIORITY_HIGH, D3DKMT_OFFER_PRIORITY_AUTO, D3DKMT_OFFER_PRIORITY enumeration [Display Devices], d3dkmthk/D3DKMT_OFFER_PRIORITY_NORMAL"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	D3dkmthk.h
+apiname:
+-	D3DKMT_OFFER_PRIORITY
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_OFFER_PRIORITY
 ---
 
 # _D3DKMT_OFFER_PRIORITY Enumeration
@@ -54,26 +59,26 @@ typedef enum _D3DKMT_OFFER_PRIORITY {
 ## Constants
 
 <table>
-
-<tr>
-<td>D3DKMT_OFFER_PRIORITY_AUTO</td>
-<td>The video memory manager should make a policy decision on the allocation's value based on its  priority for eviction.</td>
-</tr>
-
-<tr>
-<td>D3DKMT_OFFER_PRIORITY_HIGH</td>
-<td>The allocation has useful content and cannot easily be regenerated. The video memory manager (which is part of Dxgkrnl.sys) should therefore avoid discarding this allocation before other offered allocations.</td>
-</tr>
-
-<tr>
-<td>D3DKMT_OFFER_PRIORITY_LOW</td>
-<td>The allocation has low value and should be discarded before other offered allocations. Specify this type for allocations that have no useful content.</td>
-</tr>
-
-<tr>
-<td>D3DKMT_OFFER_PRIORITY_NORMAL</td>
-<td>The allocation has useful content but can easily be regenerated.</td>
-</tr>
+            
+                <tr>
+                    <td>D3DKMT_OFFER_PRIORITY_AUTO</td>
+                    <td>The video memory manager should make a policy decision on the allocation's value based on its  priority for eviction.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DKMT_OFFER_PRIORITY_HIGH</td>
+                    <td>The allocation has useful content and cannot easily be regenerated. The video memory manager (which is part of Dxgkrnl.sys) should therefore avoid discarding this allocation before other offered allocations.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DKMT_OFFER_PRIORITY_LOW</td>
+                    <td>The allocation has low value and should be discarded before other offered allocations. Specify this type for allocations that have no useful content.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DKMT_OFFER_PRIORITY_NORMAL</td>
+                    <td>The allocation has useful content but can easily be regenerated.</td>
+                </tr>
 </table>
 
 
@@ -83,9 +88,9 @@ typedef enum _D3DKMT_OFFER_PRIORITY {
 | **Windows version** | Windows 8 Windows 8 |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_offerallocations.md">D3DKMT_OFFERALLOCATIONS</a>
+        <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_offerallocations.md">D3DKMT_OFFERALLOCATIONS</a>
 
  
 

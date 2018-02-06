@@ -1,41 +1,46 @@
 ---
-UID : NS:ntifs._FILE_LEVEL_TRIM_RANGE
-title : "_FILE_LEVEL_TRIM_RANGE"
-author : windows-driver-content
-description : Contains the offset and length of a trim range for a file.
-old-location : ifsk\file_level_trim_range.htm
-old-project : ifsk
-ms.assetid : C74E90C5-9876-4CD1-B9A7-1B32A6AAB474
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ntifs/FILE_LEVEL_TRIM_RANGE, FILE_LEVEL_TRIM_RANGE, *PFILE_LEVEL_TRIM_RANGE, ifsk.file_level_trim_range, ntifs/PFILE_LEVEL_TRIM_RANGE, PFILE_LEVEL_TRIM_RANGE structure pointer [Installable File System Drivers], FILE_LEVEL_TRIM_RANGE structure [Installable File System Drivers], PFILE_LEVEL_TRIM_RANGE, _FILE_LEVEL_TRIM_RANGE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FILE_LEVEL_TRIM_RANGE, *PFILE_LEVEL_TRIM_RANGE
+UID: NS:ntifs._FILE_LEVEL_TRIM_RANGE
+title: "_FILE_LEVEL_TRIM_RANGE"
+author: windows-driver-content
+description: Contains the offset and length of a trim range for a file.
+old-location: ifsk\file_level_trim_range.htm
+old-project: ifsk
+ms.assetid: C74E90C5-9876-4CD1-B9A7-1B32A6AAB474
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ntifs/FILE_LEVEL_TRIM_RANGE, FILE_LEVEL_TRIM_RANGE, *PFILE_LEVEL_TRIM_RANGE, ifsk.file_level_trim_range, ntifs/PFILE_LEVEL_TRIM_RANGE, PFILE_LEVEL_TRIM_RANGE structure pointer [Installable File System Drivers], FILE_LEVEL_TRIM_RANGE structure [Installable File System Drivers], PFILE_LEVEL_TRIM_RANGE, _FILE_LEVEL_TRIM_RANGE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntifs.h
+apiname:
+-	FILE_LEVEL_TRIM_RANGE
+product: Windows
+targetos: Windows
+req.typenames: FILE_LEVEL_TRIM_RANGE, *PFILE_LEVEL_TRIM_RANGE
 ---
 
 # _FILE_LEVEL_TRIM_RANGE structure

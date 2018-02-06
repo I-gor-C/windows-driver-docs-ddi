@@ -1,42 +1,48 @@
 ---
-UID : NF:wdm.ZwCommitComplete
-title : ZwCommitComplete function
-author : windows-driver-content
-description : The ZwCommitComplete routine notifies KTM that the calling resource manager has finished committing a transaction's data.
-old-location : kernel\zwcommitcomplete.htm
-old-project : kernel
-ms.assetid : d0b968bc-bbab-4b6f-bb1f-9e36ac7c1e05
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ktm_ref_1bcef47a-0767-4bfe-944c-f88a5ecff0e6.xml, wdm/NtCommitComplete, NtCommitComplete, ZwCommitComplete, ZwCommitComplete routine [Kernel-Mode Driver Architecture], wdm/ZwCommitComplete, kernel.zwcommitcomplete
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later operating system versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ZwCommitComplete
+title: ZwCommitComplete function
+author: windows-driver-content
+description: The ZwCommitComplete routine notifies KTM that the calling resource manager has finished committing a transaction's data.
+old-location: kernel\zwcommitcomplete.htm
+old-project: kernel
+ms.assetid: d0b968bc-bbab-4b6f-bb1f-9e36ac7c1e05
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ktm_ref_1bcef47a-0767-4bfe-944c-f88a5ecff0e6.xml, wdm/NtCommitComplete, NtCommitComplete, ZwCommitComplete, ZwCommitComplete routine [Kernel-Mode Driver Architecture], wdm/ZwCommitComplete, kernel.zwcommitcomplete
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later operating system versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ZwCommitComplete
+-	NtCommitComplete
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

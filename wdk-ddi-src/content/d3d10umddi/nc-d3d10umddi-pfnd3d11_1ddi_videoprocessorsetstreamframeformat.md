@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3D11_1DDI_VIDEOPROCESSORSETSTREAMFRAMEFORMAT
-title : PFND3D11_1DDI_VIDEOPROCESSORSETSTREAMFRAMEFORMAT
-author : windows-driver-content
-description : Specifies whether an input stream on the video processor contains interlaced or progressive frames.
-old-location : display\videoprocessorsetstreamframeformat.htm
-old-project : display
-ms.assetid : 49310ddf-403a-4fb4-98bb-9ef00ef28310
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.videoprocessorsetstreamframeformat, pfnVideoProcessorSetStreamFrameFormat callback function [Display Devices], pfnVideoProcessorSetStreamFrameFormat, PFND3D11_1DDI_VIDEOPROCESSORSETSTREAMFRAMEFORMAT, PFND3D11_1DDI_VIDEOPROCESSORSETSTREAMFRAMEFORMAT, d3d10umddi/pfnVideoProcessorSetStreamFrameFormat
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3D11_1DDI_VIDEOPROCESSORSETSTREAMFRAMEFORMAT
+title: PFND3D11_1DDI_VIDEOPROCESSORSETSTREAMFRAMEFORMAT
+author: windows-driver-content
+description: Specifies whether an input stream on the video processor contains interlaced or progressive frames.
+old-location: display\videoprocessorsetstreamframeformat.htm
+old-project: display
+ms.assetid: 49310ddf-403a-4fb4-98bb-9ef00ef28310
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.videoprocessorsetstreamframeformat, pfnVideoProcessorSetStreamFrameFormat callback function [Display Devices], pfnVideoProcessorSetStreamFrameFormat, PFND3D11_1DDI_VIDEOPROCESSORSETSTREAMFRAMEFORMAT, PFND3D11_1DDI_VIDEOPROCESSORSETSTREAMFRAMEFORMAT, d3d10umddi/pfnVideoProcessorSetStreamFrameFormat
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	D3d10umddi.h
+apiname:
+-	pfnVideoProcessorSetStreamFrameFormat
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NF:ksproxy.IKsPinPipe.KsGetFilterName
-title : IKsPinPipe::KsGetFilterName method
-author : windows-driver-content
-description : Returns the name of a filter.
-old-location : stream\ikspinpipe_ksgetfiltername.htm
-old-project : stream
-ms.assetid : A009B276-AF91-4FDD-AB81-6992311B3744
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KsGetFilterName, ksproxy/IKsPinPipe::KsGetFilterName, stream.ikspinpipe_ksgetfiltername, IKsPinPipe::KsGetFilterName, IKsPinPipe, KsGetFilterName method [Streaming Media Devices], IKsPinPipe interface, IKsPinPipe interface [Streaming Media Devices], KsGetFilterName method, KsGetFilterName method [Streaming Media Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : ksproxy.h
-req.include-header : Ksproxy.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : ksproxy.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PIPE_STATE
+UID: NF:ksproxy.IKsPinPipe.KsGetFilterName
+title: IKsPinPipe::KsGetFilterName method
+author: windows-driver-content
+description: Returns the name of a filter.
+old-location: stream\ikspinpipe_ksgetfiltername.htm
+old-project: stream
+ms.assetid: A009B276-AF91-4FDD-AB81-6992311B3744
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KsGetFilterName, ksproxy/IKsPinPipe::KsGetFilterName, stream.ikspinpipe_ksgetfiltername, IKsPinPipe::KsGetFilterName, IKsPinPipe, KsGetFilterName method [Streaming Media Devices], IKsPinPipe interface, IKsPinPipe interface [Streaming Media Devices], KsGetFilterName method, KsGetFilterName method [Streaming Media Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: ksproxy.h
+req.include-header: Ksproxy.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: ksproxy.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	ksproxy.h
+apiname:
+-	IKsPinPipe.KsGetFilterName
+product: Windows
+targetos: Windows
+req.typenames: PIPE_STATE
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NC:wdfdevice.EVT_WDF_DEVICE_FILE_CREATE
-title : EVT_WDF_DEVICE_FILE_CREATE
-author : windows-driver-content
-description : A driver's EvtDeviceFileCreate callback function handles operations that must be performed when an application requests access to a device.
-old-location : wdf\evtdevicefilecreate.htm
-old-project : wdf
-ms.assetid : ee44c0bf-1fca-442d-8871-df6079e89ced
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.evtdevicefilecreate, EvtDeviceFileCreate callback function, EvtDeviceFileCreate, EVT_WDF_DEVICE_FILE_CREATE, EVT_WDF_DEVICE_FILE_CREATE, wdfdevice/EvtDeviceFileCreate, DFDeviceObjectGeneralRef_74ee41b0-ed8c-4028-8f82-d747a4d916bb.xml, kmdf.evtdevicefilecreate
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdfdevice.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_DEVICE_SHUTDOWN_FLAGS
-req.product : Windows 10 or later.
+UID: NC:wdfdevice.EVT_WDF_DEVICE_FILE_CREATE
+title: EVT_WDF_DEVICE_FILE_CREATE
+author: windows-driver-content
+description: A driver's EvtDeviceFileCreate callback function handles operations that must be performed when an application requests access to a device.
+old-location: wdf\evtdevicefilecreate.htm
+old-project: wdf
+ms.assetid: ee44c0bf-1fca-442d-8871-df6079e89ced
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.evtdevicefilecreate, EvtDeviceFileCreate callback function, EvtDeviceFileCreate, EVT_WDF_DEVICE_FILE_CREATE, EVT_WDF_DEVICE_FILE_CREATE, wdfdevice/EvtDeviceFileCreate, DFDeviceObjectGeneralRef_74ee41b0-ed8c-4028-8f82-d747a4d916bb.xml, kmdf.evtdevicefilecreate
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdfdevice.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Wdfdevice.h
+apiname:
+-	EvtDeviceFileCreate
+product: Windows
+targetos: Windows
+req.typenames: WDF_DEVICE_SHUTDOWN_FLAGS
+req.product: Windows 10 or later.
 ---
 
 

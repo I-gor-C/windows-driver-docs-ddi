@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.IoUnregisterFsRegistrationChange
-title : IoUnregisterFsRegistrationChange function
-author : windows-driver-content
-description : The IoUnregisterFsRegistrationChange routine unregisters file system filter driver's file system registration change notification routine.
-old-location : ifsk\iounregisterfsregistrationchange.htm
-old-project : ifsk
-ms.assetid : 4e10afc0-b9c4-4495-83a1-11f9b82143fc
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.iounregisterfsregistrationchange, ntifs/IoUnregisterFsRegistrationChange, IoUnregisterFsRegistrationChange routine [Installable File System Drivers], ioref_18a53f5a-49f9-40ba-bf85-d2fea7d6fbfb.xml, IoUnregisterFsRegistrationChange
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "< DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.IoUnregisterFsRegistrationChange
+title: IoUnregisterFsRegistrationChange function
+author: windows-driver-content
+description: The IoUnregisterFsRegistrationChange routine unregisters file system filter driver's file system registration change notification routine.
+old-location: ifsk\iounregisterfsregistrationchange.htm
+old-project: ifsk
+ms.assetid: 4e10afc0-b9c4-4495-83a1-11f9b82143fc
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.iounregisterfsregistrationchange, ntifs/IoUnregisterFsRegistrationChange, IoUnregisterFsRegistrationChange routine [Installable File System Drivers], ioref_18a53f5a-49f9-40ba-bf85-d2fea7d6fbfb.xml, IoUnregisterFsRegistrationChange
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "< DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoUnregisterFsRegistrationChange
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

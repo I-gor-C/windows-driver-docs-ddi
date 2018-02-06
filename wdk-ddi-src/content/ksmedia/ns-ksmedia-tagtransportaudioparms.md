@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.tagTRANSPORTAUDIOPARMS
-title : tagTRANSPORTAUDIOPARMS
-author : windows-driver-content
-description : The TRANSPORTAUDIOPARMS structure is defined but not used.
-old-location : stream\transportaudioparms.htm
-old-project : stream
-ms.assetid : 591ef01a-1a89-454a-ab58-a76813a9d4c2
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : "*PTRANSPORTAUDIOPARMS, ksmedia/PTRANSPORTAUDIOPARMS, PTRANSPORTAUDIOPARMS structure pointer [Streaming Media Devices], tagTRANSPORTAUDIOPARMS, ksmedia/TRANSPORTAUDIOPARMS, vidcapstruct_f68139f5-186d-43da-8f9a-45d2af4f782b.xml, stream.transportaudioparms, TRANSPORTAUDIOPARMS structure [Streaming Media Devices], PTRANSPORTAUDIOPARMS, TRANSPORTAUDIOPARMS"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TRANSPORTAUDIOPARMS, *PTRANSPORTAUDIOPARMS
+UID: NS:ksmedia.tagTRANSPORTAUDIOPARMS
+title: tagTRANSPORTAUDIOPARMS
+author: windows-driver-content
+description: The TRANSPORTAUDIOPARMS structure is defined but not used.
+old-location: stream\transportaudioparms.htm
+old-project: stream
+ms.assetid: 591ef01a-1a89-454a-ab58-a76813a9d4c2
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: "*PTRANSPORTAUDIOPARMS, ksmedia/PTRANSPORTAUDIOPARMS, PTRANSPORTAUDIOPARMS structure pointer [Streaming Media Devices], tagTRANSPORTAUDIOPARMS, ksmedia/TRANSPORTAUDIOPARMS, vidcapstruct_f68139f5-186d-43da-8f9a-45d2af4f782b.xml, stream.transportaudioparms, TRANSPORTAUDIOPARMS structure [Streaming Media Devices], PTRANSPORTAUDIOPARMS, TRANSPORTAUDIOPARMS"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	TRANSPORTAUDIOPARMS
+product: Windows
+targetos: Windows
+req.typenames: TRANSPORTAUDIOPARMS, *PTRANSPORTAUDIOPARMS
 ---
 
 # tagTRANSPORTAUDIOPARMS structure

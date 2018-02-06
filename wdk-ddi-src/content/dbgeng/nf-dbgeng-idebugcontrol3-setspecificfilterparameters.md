@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugControl3.SetSpecificFilterParameters
-title : IDebugControl3::SetSpecificFilterParameters method
-author : windows-driver-content
-description : The SetSpecificFilterParameters method changes the break status and handling status for some specific event filters.
-old-location : debugger\setspecificfilterparameters.htm
-old-project : debugger
-ms.assetid : 97eb6db8-3c0a-44b4-8fb4-9e42ee9f9856
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : dbgeng/IDebugControl3::SetSpecificFilterParameters, IDebugControl interface [Windows Debugging], SetSpecificFilterParameters method, SetSpecificFilterParameters method [Windows Debugging], dbgeng/IDebugControl::SetSpecificFilterParameters, IDebugControl_9bf01d08-9fc1-4ddf-b8dd-c6db0b568f83.xml, IDebugControl::SetSpecificFilterParameters, SetSpecificFilterParameters method [Windows Debugging], IDebugControl interface, IDebugControl3::SetSpecificFilterParameters, IDebugControl2 interface [Windows Debugging], SetSpecificFilterParameters method, IDebugControl3, IDebugControl2::SetSpecificFilterParameters, debugger.setspecificfilterparameters, SetSpecificFilterParameters, SetSpecificFilterParameters method [Windows Debugging], IDebugControl3 interface, IDebugControl3 interface [Windows Debugging], SetSpecificFilterParameters method, dbgeng/IDebugControl2::SetSpecificFilterParameters, SetSpecificFilterParameters method [Windows Debugging], IDebugControl2 interface
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl3.SetSpecificFilterParameters
+title: IDebugControl3::SetSpecificFilterParameters method
+author: windows-driver-content
+description: The SetSpecificFilterParameters method changes the break status and handling status for some specific event filters.
+old-location: debugger\setspecificfilterparameters.htm
+old-project: debugger
+ms.assetid: 97eb6db8-3c0a-44b4-8fb4-9e42ee9f9856
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: dbgeng/IDebugControl3::SetSpecificFilterParameters, IDebugControl interface [Windows Debugging], SetSpecificFilterParameters method, SetSpecificFilterParameters method [Windows Debugging], dbgeng/IDebugControl::SetSpecificFilterParameters, IDebugControl_9bf01d08-9fc1-4ddf-b8dd-c6db0b568f83.xml, IDebugControl::SetSpecificFilterParameters, SetSpecificFilterParameters method [Windows Debugging], IDebugControl interface, IDebugControl3::SetSpecificFilterParameters, IDebugControl2 interface [Windows Debugging], SetSpecificFilterParameters method, IDebugControl3, IDebugControl2::SetSpecificFilterParameters, debugger.setspecificfilterparameters, SetSpecificFilterParameters, SetSpecificFilterParameters method [Windows Debugging], IDebugControl3 interface, IDebugControl3 interface [Windows Debugging], SetSpecificFilterParameters method, dbgeng/IDebugControl2::SetSpecificFilterParameters, SetSpecificFilterParameters method [Windows Debugging], IDebugControl2 interface
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl.SetSpecificFilterParameters
+-	IDebugControl2.SetSpecificFilterParameters
+-	IDebugControl3.SetSpecificFilterParameters
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

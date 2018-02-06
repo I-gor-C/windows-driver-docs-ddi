@@ -1,42 +1,47 @@
 ---
-UID : NF:storport.StorPortGetStartIoPerfParams
-title : StorPortGetStartIoPerfParams function
-author : windows-driver-content
-description : The StorPortGetStartIoPerfParams routine places the performance parameters for a given I/O request in a STARTIO_PERFORMANCE_PARAMETERS structure.
-old-location : storage\storportgetstartioperfparams.htm
-old-project : storage
-ms.assetid : c3314ac6-2b46-417f-a87b-64e27df9686d
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storprt_ad7184c9-2f69-4571-ba56-28b5a3b353d7.xml, storport/StorPortGetStartIoPerfParams, StorPortGetStartIoPerfParams routine [Storage Devices], StorPortGetStartIoPerfParams, storage.storportgetstartioperfparams
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STOR_SPINLOCK
-req.product : Windows 10 or later.
+UID: NF:storport.StorPortGetStartIoPerfParams
+title: StorPortGetStartIoPerfParams function
+author: windows-driver-content
+description: The StorPortGetStartIoPerfParams routine places the performance parameters for a given I/O request in a STARTIO_PERFORMANCE_PARAMETERS structure.
+old-location: storage\storportgetstartioperfparams.htm
+old-project: storage
+ms.assetid: c3314ac6-2b46-417f-a87b-64e27df9686d
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storprt_ad7184c9-2f69-4571-ba56-28b5a3b353d7.xml, storport/StorPortGetStartIoPerfParams, StorPortGetStartIoPerfParams routine [Storage Devices], StorPortGetStartIoPerfParams, storage.storportgetstartioperfparams
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	storport.h
+apiname:
+-	StorPortGetStartIoPerfParams
+product: Windows
+targetos: Windows
+req.typenames: STOR_SPINLOCK
+req.product: Windows 10 or later.
 ---
 
 

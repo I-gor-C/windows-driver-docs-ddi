@@ -1,42 +1,47 @@
 ---
-UID : NS:wsk._WSK_EVENT_CALLBACK_CONTROL
-title : "_WSK_EVENT_CALLBACK_CONTROL"
-author : windows-driver-content
-description : The WSK_EVENT_CALLBACK_CONTROL structure specifies the information for enabling and disabling a socket's event callback functions.
-old-location : netvista\wsk_event_callback_control.htm
-old-project : netvista
-ms.assetid : 152e142a-dda4-4540-b1a9-14625f4653bb
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : WSK_EVENT_CALLBACK_CONTROL structure [Network Drivers Starting with Windows Vista], *PWSK_EVENT_CALLBACK_CONTROL, wsk/WSK_EVENT_CALLBACK_CONTROL, netvista.wsk_event_callback_control, wskref_22cd0a01-12fe-4e5a-a423-c3198cc5ab05.xml, _WSK_EVENT_CALLBACK_CONTROL, WSK_EVENT_CALLBACK_CONTROL, wsk/PWSK_EVENT_CALLBACK_CONTROL, PWSK_EVENT_CALLBACK_CONTROL structure pointer [Network Drivers Starting with Windows Vista], PWSK_EVENT_CALLBACK_CONTROL
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wsk.h
-req.include-header : Wsk.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating   systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WSK_EVENT_CALLBACK_CONTROL, *PWSK_EVENT_CALLBACK_CONTROL
-req.product : Windows 10 or later.
+UID: NS:wsk._WSK_EVENT_CALLBACK_CONTROL
+title: "_WSK_EVENT_CALLBACK_CONTROL"
+author: windows-driver-content
+description: The WSK_EVENT_CALLBACK_CONTROL structure specifies the information for enabling and disabling a socket's event callback functions.
+old-location: netvista\wsk_event_callback_control.htm
+old-project: netvista
+ms.assetid: 152e142a-dda4-4540-b1a9-14625f4653bb
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: WSK_EVENT_CALLBACK_CONTROL structure [Network Drivers Starting with Windows Vista], *PWSK_EVENT_CALLBACK_CONTROL, wsk/WSK_EVENT_CALLBACK_CONTROL, netvista.wsk_event_callback_control, wskref_22cd0a01-12fe-4e5a-a423-c3198cc5ab05.xml, _WSK_EVENT_CALLBACK_CONTROL, WSK_EVENT_CALLBACK_CONTROL, wsk/PWSK_EVENT_CALLBACK_CONTROL, PWSK_EVENT_CALLBACK_CONTROL structure pointer [Network Drivers Starting with Windows Vista], PWSK_EVENT_CALLBACK_CONTROL
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wsk.h
+req.include-header: Wsk.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wsk.h
+apiname:
+-	WSK_EVENT_CALLBACK_CONTROL
+product: Windows
+targetos: Windows
+req.typenames: WSK_EVENT_CALLBACK_CONTROL, *PWSK_EVENT_CALLBACK_CONTROL
+req.product: Windows 10 or later.
 ---
 
 # _WSK_EVENT_CALLBACK_CONTROL structure

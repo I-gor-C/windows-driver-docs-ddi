@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFInterrupt.SetExtendedPolicy
-title : IWDFInterrupt::SetExtendedPolicy method
-author : windows-driver-content
-description : The SetExtendedPolicy method specifies the interrupt priority, processor affinity, affinity policy, and processor group for a specified interrupt.
-old-location : wdf\iwdfinterrupt_setextendedpolicy.htm
-old-project : wdf
-ms.assetid : 6637E939-010E-4462-92CE-50C4DB867694
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : SetExtendedPolicy, SetExtendedPolicy method, IWDFInterrupt::SetExtendedPolicy, wudfddi/IWDFInterrupt::SetExtendedPolicy, SetExtendedPolicy method, IWDFInterrupt interface, umdf.iwdfinterrupt_setextendedpolicy, IWDFInterrupt, IWDFInterrupt interface, SetExtendedPolicy method, wdf.iwdfinterrupt_setextendedpolicy
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.11
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFInterrupt.SetExtendedPolicy
+title: IWDFInterrupt::SetExtendedPolicy method
+author: windows-driver-content
+description: The SetExtendedPolicy method specifies the interrupt priority, processor affinity, affinity policy, and processor group for a specified interrupt.
+old-location: wdf\iwdfinterrupt_setextendedpolicy.htm
+old-project: wdf
+ms.assetid: 6637E939-010E-4462-92CE-50C4DB867694
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: SetExtendedPolicy, SetExtendedPolicy method, IWDFInterrupt::SetExtendedPolicy, wudfddi/IWDFInterrupt::SetExtendedPolicy, SetExtendedPolicy method, IWDFInterrupt interface, umdf.iwdfinterrupt_setextendedpolicy, IWDFInterrupt, IWDFInterrupt interface, SetExtendedPolicy method, wdf.iwdfinterrupt_setextendedpolicy
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.11
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFInterrupt.SetExtendedPolicy
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

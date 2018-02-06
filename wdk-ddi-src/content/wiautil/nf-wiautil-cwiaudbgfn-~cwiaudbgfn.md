@@ -1,42 +1,47 @@
 ---
-UID : NF:wiautil.CWiauDbgFn.~CWiauDbgFn
-title : CWiauDbgFn::~CWiauDbgFn method
-author : windows-driver-content
-description : The CWiauDbgFn::~CWiauDbgFn destructor is called when the function or method being traced by CWiauDbgFn::CWiauDbgFn is exited.
-old-location : image\cwiaudbgfn__cwiaudbgfn.htm
-old-project : image
-ms.assetid : 13c136f9-079a-414e-a40b-1938899024a0
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : "~CWiauDbgFn method [Imaging Devices], wiauFncs_5fc25385-87e3-4664-9df6-be2c6bef7d75.xml, CWiauDbgFn::~CWiauDbgFn, ~CWiauDbgFn method [Imaging Devices], CWiauDbgFn interface, wiautil/CWiauDbgFn::~CWiauDbgFn, CWiauDbgFn interface [Imaging Devices], ~CWiauDbgFn method, ~CWiauDbgFn, CWiauDbgFn, image.cwiaudbgfn__cwiaudbgfn"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wiautil.h
-req.include-header : Wiautil.h, Wiamindr.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows XP and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wiautil.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SKIP_AMOUNT
-req.product : Windows 10 or later.
+UID: NF:wiautil.CWiauDbgFn.~CWiauDbgFn
+title: CWiauDbgFn::~CWiauDbgFn method
+author: windows-driver-content
+description: The CWiauDbgFn::~CWiauDbgFn destructor is called when the function or method being traced by CWiauDbgFn::CWiauDbgFn is exited.
+old-location: image\cwiaudbgfn__cwiaudbgfn.htm
+old-project: image
+ms.assetid: 13c136f9-079a-414e-a40b-1938899024a0
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: "~CWiauDbgFn method [Imaging Devices], wiauFncs_5fc25385-87e3-4664-9df6-be2c6bef7d75.xml, CWiauDbgFn::~CWiauDbgFn, ~CWiauDbgFn method [Imaging Devices], CWiauDbgFn interface, wiautil/CWiauDbgFn::~CWiauDbgFn, CWiauDbgFn interface [Imaging Devices], ~CWiauDbgFn method, ~CWiauDbgFn, CWiauDbgFn, image.cwiaudbgfn__cwiaudbgfn"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wiautil.h
+req.include-header: Wiautil.h, Wiamindr.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows XP and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wiautil.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Wiautil.h
+apiname:
+-	CWiauDbgFn.~CWiauDbgFn
+product: Windows
+targetos: Windows
+req.typenames: SKIP_AMOUNT
+req.product: Windows 10 or later.
 ---
 
 

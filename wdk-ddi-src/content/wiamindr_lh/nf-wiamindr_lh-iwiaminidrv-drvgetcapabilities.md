@@ -1,42 +1,47 @@
 ---
-UID : NF:wiamindr_lh.IWiaMiniDrv.drvGetCapabilities
-title : IWiaMiniDrv::drvGetCapabilities method
-author : windows-driver-content
-description : The IWiaMiniDrv::drvGetCapabilities method returns an array of events and commands that a device supports.
-old-location : image\iwiaminidrv_drvgetcapabilities.htm
-old-project : image
-ms.assetid : 946a6ea7-5818-4959-adf2-3568c1b64b1a
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : IWiaMiniDrv, MiniDrv_c88a03f8-d527-47b0-953c-a7bf231c733e.xml, drvGetCapabilities, drvGetCapabilities method [Imaging Devices], IWiaMiniDrv interface, image.iwiaminidrv_drvgetcapabilities, drvGetCapabilities method [Imaging Devices], IWiaMiniDrv interface [Imaging Devices], drvGetCapabilities method, wiamindr_lh/IWiaMiniDrv::drvGetCapabilities, IWiaMiniDrv::drvGetCapabilities
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wiamindr_lh.h
-req.include-header : Wiamindr.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Me and in Windows XP and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wiamindr_lh.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SCANWINDOW, *PSCANWINDOW
-req.product : Windows 10 or later.
+UID: NF:wiamindr_lh.IWiaMiniDrv.drvGetCapabilities
+title: IWiaMiniDrv::drvGetCapabilities method
+author: windows-driver-content
+description: The IWiaMiniDrv::drvGetCapabilities method returns an array of events and commands that a device supports.
+old-location: image\iwiaminidrv_drvgetcapabilities.htm
+old-project: image
+ms.assetid: 946a6ea7-5818-4959-adf2-3568c1b64b1a
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: IWiaMiniDrv, MiniDrv_c88a03f8-d527-47b0-953c-a7bf231c733e.xml, drvGetCapabilities, drvGetCapabilities method [Imaging Devices], IWiaMiniDrv interface, image.iwiaminidrv_drvgetcapabilities, drvGetCapabilities method [Imaging Devices], IWiaMiniDrv interface [Imaging Devices], drvGetCapabilities method, wiamindr_lh/IWiaMiniDrv::drvGetCapabilities, IWiaMiniDrv::drvGetCapabilities
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wiamindr_lh.h
+req.include-header: Wiamindr.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Me and in Windows XP and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wiamindr_lh.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	wiamindr_lh.h
+apiname:
+-	IWiaMiniDrv.drvGetCapabilities
+product: Windows
+targetos: Windows
+req.typenames: SCANWINDOW, *PSCANWINDOW
+req.product: Windows 10 or later.
 ---
 
 

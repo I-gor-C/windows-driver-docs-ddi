@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugSystemObjects4.GetImplicitProcessDataOffset
-title : IDebugSystemObjects4::GetImplicitProcessDataOffset method
-author : windows-driver-content
-description : The GetImplicitProcessDataOffset method returns the implicit process for the current target.
-old-location : debugger\getimplicitprocessdataoffset.htm
-old-project : debugger
-ms.assetid : 20a11f3b-cc49-4080-ac4c-b8e18d4b2f73
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugSystemObjects4 interface [Windows Debugging], GetImplicitProcessDataOffset method, IDebugSystemObjects4, debugger.getimplicitprocessdataoffset, GetImplicitProcessDataOffset method [Windows Debugging], IDebugSystemObjects4 interface, IDebugSystemObjects4::GetImplicitProcessDataOffset, GetImplicitProcessDataOffset method [Windows Debugging], IDebugSystemObjects_3ec83d96-a7ff-4767-be21-b822c45ae01e.xml, dbgeng/IDebugSystemObjects4::GetImplicitProcessDataOffset, GetImplicitProcessDataOffset method [Windows Debugging], IDebugSystemObjects3 interface, dbgeng/IDebugSystemObjects2::GetImplicitProcessDataOffset, GetImplicitProcessDataOffset, IDebugSystemObjects3::GetImplicitProcessDataOffset, IDebugSystemObjects2 interface [Windows Debugging], GetImplicitProcessDataOffset method, IDebugSystemObjects3 interface [Windows Debugging], GetImplicitProcessDataOffset method, dbgeng/IDebugSystemObjects3::GetImplicitProcessDataOffset, GetImplicitProcessDataOffset method [Windows Debugging], IDebugSystemObjects2 interface, IDebugSystemObjects2::GetImplicitProcessDataOffset
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSystemObjects4.GetImplicitProcessDataOffset
+title: IDebugSystemObjects4::GetImplicitProcessDataOffset method
+author: windows-driver-content
+description: The GetImplicitProcessDataOffset method returns the implicit process for the current target.
+old-location: debugger\getimplicitprocessdataoffset.htm
+old-project: debugger
+ms.assetid: 20a11f3b-cc49-4080-ac4c-b8e18d4b2f73
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugSystemObjects4 interface [Windows Debugging], GetImplicitProcessDataOffset method, IDebugSystemObjects4, debugger.getimplicitprocessdataoffset, GetImplicitProcessDataOffset method [Windows Debugging], IDebugSystemObjects4 interface, IDebugSystemObjects4::GetImplicitProcessDataOffset, GetImplicitProcessDataOffset method [Windows Debugging], IDebugSystemObjects_3ec83d96-a7ff-4767-be21-b822c45ae01e.xml, dbgeng/IDebugSystemObjects4::GetImplicitProcessDataOffset, GetImplicitProcessDataOffset method [Windows Debugging], IDebugSystemObjects3 interface, dbgeng/IDebugSystemObjects2::GetImplicitProcessDataOffset, GetImplicitProcessDataOffset, IDebugSystemObjects3::GetImplicitProcessDataOffset, IDebugSystemObjects2 interface [Windows Debugging], GetImplicitProcessDataOffset method, IDebugSystemObjects3 interface [Windows Debugging], GetImplicitProcessDataOffset method, dbgeng/IDebugSystemObjects3::GetImplicitProcessDataOffset, GetImplicitProcessDataOffset method [Windows Debugging], IDebugSystemObjects2 interface, IDebugSystemObjects2::GetImplicitProcessDataOffset
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugSystemObjects2.GetImplicitProcessDataOffset
+-	IDebugSystemObjects3.GetImplicitProcessDataOffset
+-	IDebugSystemObjects4.GetImplicitProcessDataOffset
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

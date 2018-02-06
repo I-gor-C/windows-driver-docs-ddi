@@ -1,42 +1,46 @@
 ---
-UID : NS:usbsidebandaudio._USBSIDEBANDAUDIO_STREAM_STATUS_PARAMS
-title : "_USBSIDEBANDAUDIO_STREAM_STATUS_PARAMS"
-author : windows-driver-content
-description : TBD.
-old-location : audio\usbsidebandaudio_stream_status_params.htm
-old-project : audio
-ms.assetid : 5C50D9B0-53C7-4F1B-A6D1-CE77A3645956
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : PUSBSIDEBANDAUDIO_STREAM_STATUS_PARAMS structure pointer [Audio Devices], audio.usbsidebandaudio_stream_status_params, PUSBSIDEBANDAUDIO_STREAM_STATUS_PARAMS, USBSIDEBANDAUDIO_STREAM_STATUS_PARAMS structure [Audio Devices], *PUSBSIDEBANDAUDIO_STREAM_STATUS_PARAMS, _USBSIDEBANDAUDIO_STREAM_STATUS_PARAMS, USBSIDEBANDAUDIO_STREAM_STATUS_PARAMS, usbsidebandaudio/USBSIDEBANDAUDIO_STREAM_STATUS_PARAMS, usbsidebandaudio/PUSBSIDEBANDAUDIO_STREAM_STATUS_PARAMS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : usbsidebandaudio.h
-req.include-header : Usbsidebandaudio.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : USBSIDEBANDAUDIO_STREAM_STATUS_PARAMS, *PUSBSIDEBANDAUDIO_STREAM_STATUS_PARAMS
-req.product : Windows 10 or later.
+UID: NS:usbsidebandaudio._USBSIDEBANDAUDIO_STREAM_STATUS_PARAMS
+title: "_USBSIDEBANDAUDIO_STREAM_STATUS_PARAMS"
+author: windows-driver-content
+description: TBD.
+old-location: audio\usbsidebandaudio_stream_status_params.htm
+old-project: audio
+ms.assetid: 5C50D9B0-53C7-4F1B-A6D1-CE77A3645956
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: PUSBSIDEBANDAUDIO_STREAM_STATUS_PARAMS structure pointer [Audio Devices], audio.usbsidebandaudio_stream_status_params, PUSBSIDEBANDAUDIO_STREAM_STATUS_PARAMS, USBSIDEBANDAUDIO_STREAM_STATUS_PARAMS structure [Audio Devices], *PUSBSIDEBANDAUDIO_STREAM_STATUS_PARAMS, _USBSIDEBANDAUDIO_STREAM_STATUS_PARAMS, USBSIDEBANDAUDIO_STREAM_STATUS_PARAMS, usbsidebandaudio/USBSIDEBANDAUDIO_STREAM_STATUS_PARAMS, usbsidebandaudio/PUSBSIDEBANDAUDIO_STREAM_STATUS_PARAMS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: usbsidebandaudio.h
+req.include-header: Usbsidebandaudio.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	kbSyntax
+apitype:
+-	<TBD>
+apilocation:
+-
+apiname:
+-	USBSIDEBANDAUDIO_STREAM_STATUS_PARAMS
+product: Windows
+targetos: Windows
+req.typenames: USBSIDEBANDAUDIO_STREAM_STATUS_PARAMS, *PUSBSIDEBANDAUDIO_STREAM_STATUS_PARAMS
+req.product: Windows 10 or later.
 ---
 
 # _USBSIDEBANDAUDIO_STREAM_STATUS_PARAMS structure

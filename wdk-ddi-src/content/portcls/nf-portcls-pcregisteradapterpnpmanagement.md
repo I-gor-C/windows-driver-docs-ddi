@@ -1,41 +1,47 @@
 ---
-UID : NF:portcls.PcRegisterAdapterPnpManagement
-title : PcRegisterAdapterPnpManagement function
-author : windows-driver-content
-description : The PcRegisterAdapterPnpManagement function registers the adapter's PnP-management interface with the PortCls system driver. It is used to support PnP rebalance.
-old-location : audio\pcregisteradapterpnpmanagement.htm
-old-project : audio
-ms.assetid : DF597216-FB81-466C-871E-5E08C69B78DA
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : portcls/PcRegisterAdapterPnPManagement, audio.pcregisteradapterpnpmanagement, PcRegisterAdapterPnPManagement, PcRegisterAdapterPnpManagement, PcRegisterAdapterPnPManagement function [Audio Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : portcls.h
-req.include-header : Portcls.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 10, version 1511 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Portcls.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.PcRegisterAdapterPnpManagement
+title: PcRegisterAdapterPnpManagement function
+author: windows-driver-content
+description: The PcRegisterAdapterPnpManagement function registers the adapter's PnP-management interface with the PortCls system driver. It is used to support PnP rebalance.
+old-location: audio\pcregisteradapterpnpmanagement.htm
+old-project: audio
+ms.assetid: DF597216-FB81-466C-871E-5E08C69B78DA
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: portcls/PcRegisterAdapterPnPManagement, audio.pcregisteradapterpnpmanagement, PcRegisterAdapterPnPManagement, PcRegisterAdapterPnpManagement, PcRegisterAdapterPnPManagement function [Audio Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: portcls.h
+req.include-header: Portcls.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 10, version 1511 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Portcls.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Portcls.lib
+-	Portcls.dll
+apiname:
+-	PcRegisterAdapterPnPManagement
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

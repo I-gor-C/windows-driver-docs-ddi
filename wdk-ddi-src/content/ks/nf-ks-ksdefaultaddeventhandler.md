@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsDefaultAddEventHandler
-title : KsDefaultAddEventHandler function
-author : windows-driver-content
-description : The KsDefaultAddEventHandler function is a default routine to handle event 'add' requests.
-old-location : stream\ksdefaultaddeventhandler.htm
-old-project : stream
-ms.assetid : 8e429a48-4e86-4673-aa32-85b640e2f64f
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KsDefaultAddEventHandler function [Streaming Media Devices], avfunc_7e4e393b-c3ab-4538-8790-9fe4c4f964cd.xml, stream.ksdefaultaddeventhandler, ks/KsDefaultAddEventHandler, KsDefaultAddEventHandler
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsDefaultAddEventHandler
+title: KsDefaultAddEventHandler function
+author: windows-driver-content
+description: The KsDefaultAddEventHandler function is a default routine to handle event 'add' requests.
+old-location: stream\ksdefaultaddeventhandler.htm
+old-project: stream
+ms.assetid: 8e429a48-4e86-4673-aa32-85b640e2f64f
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KsDefaultAddEventHandler function [Streaming Media Devices], avfunc_7e4e393b-c3ab-4538-8790-9fe4c4f964cd.xml, stream.ksdefaultaddeventhandler, ks/KsDefaultAddEventHandler, KsDefaultAddEventHandler
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsDefaultAddEventHandler
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

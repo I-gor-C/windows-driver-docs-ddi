@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.SeSetAccessStateGenericMapping
-title : SeSetAccessStateGenericMapping function
-author : windows-driver-content
-description : The SeSetAccessStateGenericMapping routine sets the generic mapping field of an ACCESS_STATE structure.
-old-location : ifsk\sesetaccessstategenericmapping.htm
-old-project : ifsk
-ms.assetid : b9a5ca5c-2d1c-4974-bef8-6003a4d6e864
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : seref_41bfccdf-c133-4587-9d9e-a328eedbd28b.xml, ntifs/SeSetAccessStateGenericMapping, ifsk.sesetaccessstategenericmapping, SeSetAccessStateGenericMapping routine [Installable File System Drivers], SeSetAccessStateGenericMapping
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.SeSetAccessStateGenericMapping
+title: SeSetAccessStateGenericMapping function
+author: windows-driver-content
+description: The SeSetAccessStateGenericMapping routine sets the generic mapping field of an ACCESS_STATE structure.
+old-location: ifsk\sesetaccessstategenericmapping.htm
+old-project: ifsk
+ms.assetid: b9a5ca5c-2d1c-4974-bef8-6003a4d6e864
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: seref_41bfccdf-c133-4587-9d9e-a328eedbd28b.xml, ntifs/SeSetAccessStateGenericMapping, ifsk.sesetaccessstategenericmapping, SeSetAccessStateGenericMapping routine [Installable File System Drivers], SeSetAccessStateGenericMapping
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	SeSetAccessStateGenericMapping
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

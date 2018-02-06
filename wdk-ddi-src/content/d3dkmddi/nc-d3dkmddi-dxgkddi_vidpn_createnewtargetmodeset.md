@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dkmddi.DXGKDDI_VIDPN_CREATENEWTARGETMODESET
-title : DXGKDDI_VIDPN_CREATENEWTARGETMODESET
-author : windows-driver-content
-description : The pfnCreateNewTargetModeSet function creates a new target mode set object within a specified VidPN object.
-old-location : display\dxgk_vidpn_interface_pfncreatenewtargetmodeset.htm
-old-project : display
-ms.assetid : c52935b4-306f-4200-80d9-0cfab6998450
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgk_vidpn_interface_pfncreatenewtargetmodeset, pfnCreateNewTargetModeSet callback function [Display Devices], pfnCreateNewTargetModeSet, DXGKDDI_VIDPN_CREATENEWTARGETMODESET, DXGKDDI_VIDPN_CREATENEWTARGETMODESET, d3dkmddi/pfnCreateNewTargetModeSet, VidPnFunctions_5bdc542e-e774-434b-a634-84ca5ed07d8d.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
+UID: NC:d3dkmddi.DXGKDDI_VIDPN_CREATENEWTARGETMODESET
+title: DXGKDDI_VIDPN_CREATENEWTARGETMODESET
+author: windows-driver-content
+description: The pfnCreateNewTargetModeSet function creates a new target mode set object within a specified VidPN object.
+old-location: display\dxgk_vidpn_interface_pfncreatenewtargetmodeset.htm
+old-project: display
+ms.assetid: c52935b4-306f-4200-80d9-0cfab6998450
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgk_vidpn_interface_pfncreatenewtargetmodeset, pfnCreateNewTargetModeSet callback function [Display Devices], pfnCreateNewTargetModeSet, DXGKDDI_VIDPN_CREATENEWTARGETMODESET, DXGKDDI_VIDPN_CREATENEWTARGETMODESET, d3dkmddi/pfnCreateNewTargetModeSet, VidPnFunctions_5bdc542e-e774-434b-a634-84ca5ed07d8d.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	pfnCreateNewTargetModeSet
+product: Windows
+targetos: Windows
+req.typenames: DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
 

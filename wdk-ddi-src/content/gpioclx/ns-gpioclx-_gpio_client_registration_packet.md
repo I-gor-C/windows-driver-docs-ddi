@@ -1,41 +1,46 @@
 ---
-UID : NS:gpioclx._GPIO_CLIENT_REGISTRATION_PACKET
-title : "_GPIO_CLIENT_REGISTRATION_PACKET"
-author : windows-driver-content
-description : The GPIO_CLIENT_REGISTRATION_PACKET structure contains registration information that the general-purpose I/O (GPIO) controller driver passes to the GPIO framework extension (GpioClx).
-old-location : gpio\gpio_client_registration_packet.htm
-old-project : GPIO
-ms.assetid : A3E1FC46-ED09-4AB3-B898-253552A76649
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : gpioclx/PGPIO_CLIENT_REGISTRATION_PACKET, *PGPIO_CLIENT_REGISTRATION_PACKET, GPIO_CLIENT_REGISTRATION_PACKET, gpioclx/GPIO_CLIENT_REGISTRATION_PACKET, _GPIO_CLIENT_REGISTRATION_PACKET, PGPIO_CLIENT_REGISTRATION_PACKET structure pointer [Parallel Ports], PGPIO_CLIENT_REGISTRATION_PACKET, GPIO_CLIENT_REGISTRATION_PACKET structure [Parallel Ports], GPIO.gpio_client_registration_packet
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : gpioclx.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PGPIO_CLIENT_REGISTRATION_PACKET, GPIO_CLIENT_REGISTRATION_PACKET"
+UID: NS:gpioclx._GPIO_CLIENT_REGISTRATION_PACKET
+title: "_GPIO_CLIENT_REGISTRATION_PACKET"
+author: windows-driver-content
+description: The GPIO_CLIENT_REGISTRATION_PACKET structure contains registration information that the general-purpose I/O (GPIO) controller driver passes to the GPIO framework extension (GpioClx).
+old-location: gpio\gpio_client_registration_packet.htm
+old-project: GPIO
+ms.assetid: A3E1FC46-ED09-4AB3-B898-253552A76649
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: gpioclx/PGPIO_CLIENT_REGISTRATION_PACKET, *PGPIO_CLIENT_REGISTRATION_PACKET, GPIO_CLIENT_REGISTRATION_PACKET, gpioclx/GPIO_CLIENT_REGISTRATION_PACKET, _GPIO_CLIENT_REGISTRATION_PACKET, PGPIO_CLIENT_REGISTRATION_PACKET structure pointer [Parallel Ports], PGPIO_CLIENT_REGISTRATION_PACKET, GPIO_CLIENT_REGISTRATION_PACKET structure [Parallel Ports], GPIO.gpio_client_registration_packet
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: gpioclx.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Gpioclx.h
+apiname:
+-	GPIO_CLIENT_REGISTRATION_PACKET
+product: Windows
+targetos: Windows
+req.typenames: "*PGPIO_CLIENT_REGISTRATION_PACKET, GPIO_CLIENT_REGISTRATION_PACKET"
 ---
 
 # _GPIO_CLIENT_REGISTRATION_PACKET structure

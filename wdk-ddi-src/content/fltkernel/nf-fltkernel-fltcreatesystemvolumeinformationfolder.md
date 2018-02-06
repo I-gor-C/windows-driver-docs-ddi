@@ -1,41 +1,47 @@
 ---
-UID : NF:fltkernel.FltCreateSystemVolumeInformationFolder
-title : FltCreateSystemVolumeInformationFolder function
-author : windows-driver-content
-description : FltCreateSystemVolumeInformationFolder verifies the existence of the &#0034;System Volume Information&#0034; folder on a file system volume. If the folder is not present, then the folder is created.
-old-location : ifsk\fltcreatesystemvolumeinformationfolder.htm
-old-project : ifsk
-ms.assetid : 1da9bd59-d45e-40e0-9947-c4f56309acc7
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltCreateSystemVolumeInformationFolder, fltkernel/FltCreateSystemVolumeInformationFolder, ifsk.fltcreatesystemvolumeinformationfolder, FltCreateSystemVolumeInformationFolder function [Installable File System Drivers], FltApiRef_a_to_d_cceaf5ba-8497-4026-94af-8b59afe9c24d.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltCreateSystemVolumeInformationFolder
+title: FltCreateSystemVolumeInformationFolder function
+author: windows-driver-content
+description: FltCreateSystemVolumeInformationFolder verifies the existence of the &#0034;System Volume Information&#0034; folder on a file system volume. If the folder is not present, then the folder is created.
+old-location: ifsk\fltcreatesystemvolumeinformationfolder.htm
+old-project: ifsk
+ms.assetid: 1da9bd59-d45e-40e0-9947-c4f56309acc7
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltCreateSystemVolumeInformationFolder, fltkernel/FltCreateSystemVolumeInformationFolder, ifsk.fltcreatesystemvolumeinformationfolder, FltCreateSystemVolumeInformationFolder function [Installable File System Drivers], FltApiRef_a_to_d_cceaf5ba-8497-4026-94af-8b59afe9c24d.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	FltMgr.lib
+-	FltMgr.dll
+apiname:
+-	FltCreateSystemVolumeInformationFolder
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

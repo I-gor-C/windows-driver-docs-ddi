@@ -1,42 +1,48 @@
 ---
-UID : NF:wdm.ZwEnumerateValueKey
-title : ZwEnumerateValueKey function
-author : windows-driver-content
-description : The ZwEnumerateValueKey routine gets information about the value entries of an open key.
-old-location : kernel\zwenumeratevaluekey.htm
-old-project : kernel
-ms.assetid : 4e94c9cc-eaa9-4de1-8f17-d24a5ed19507
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : NtEnumerateValueKey, wdm/ZwEnumerateValueKey, ZwEnumerateValueKey routine [Kernel-Mode Driver Architecture], kernel.zwenumeratevaluekey, ZwEnumerateValueKey, k111_bea1b1ab-2cfe-4d17-abd3-1a45652c70a5.xml, wdm/NtEnumerateValueKey
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : IrqlZwPassive, PowerIrpDDis, ZwRegistryCreate, ZwRegistryOpen, HwStorPortProhibitedDDIs, ZwRegistryCreate(storport), ZwRegistryOpen(storport)
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ZwEnumerateValueKey
+title: ZwEnumerateValueKey function
+author: windows-driver-content
+description: The ZwEnumerateValueKey routine gets information about the value entries of an open key.
+old-location: kernel\zwenumeratevaluekey.htm
+old-project: kernel
+ms.assetid: 4e94c9cc-eaa9-4de1-8f17-d24a5ed19507
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: NtEnumerateValueKey, wdm/ZwEnumerateValueKey, ZwEnumerateValueKey routine [Kernel-Mode Driver Architecture], kernel.zwenumeratevaluekey, ZwEnumerateValueKey, k111_bea1b1ab-2cfe-4d17-abd3-1a45652c70a5.xml, wdm/NtEnumerateValueKey
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: IrqlZwPassive, PowerIrpDDis, ZwRegistryCreate, ZwRegistryOpen, HwStorPortProhibitedDDIs, ZwRegistryCreate(storport), ZwRegistryOpen(storport)
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ZwEnumerateValueKey
+-	NtEnumerateValueKey
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

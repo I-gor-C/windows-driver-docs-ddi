@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFRequestCompletionParams.GetCompletionStatus
-title : IWDFRequestCompletionParams::GetCompletionStatus method
-author : windows-driver-content
-description : The GetCompletionStatus method retrieves the completion status of an I/O request.
-old-location : wdf\iwdfrequestcompletionparams_getcompletionstatus.htm
-old-project : wdf
-ms.assetid : 8959fc25-2477-485a-aa40-10d6228cb476
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : IWDFRequestCompletionParams, GetCompletionStatus method, wdf.iwdfrequestcompletionparams_getcompletionstatus, IWDFRequestCompletionParams interface, GetCompletionStatus method, GetCompletionStatus method, IWDFRequestCompletionParams interface, GetCompletionStatus, wudfddi/IWDFRequestCompletionParams::GetCompletionStatus, umdf.iwdfrequestcompletionparams_getcompletionstatus, UMDFRequestObjectRef_b3664f4d-fdb1-425f-be0a-3b4150762b9d.xml, IWDFRequestCompletionParams::GetCompletionStatus
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.5
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFRequestCompletionParams.GetCompletionStatus
+title: IWDFRequestCompletionParams::GetCompletionStatus method
+author: windows-driver-content
+description: The GetCompletionStatus method retrieves the completion status of an I/O request.
+old-location: wdf\iwdfrequestcompletionparams_getcompletionstatus.htm
+old-project: wdf
+ms.assetid: 8959fc25-2477-485a-aa40-10d6228cb476
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: IWDFRequestCompletionParams, GetCompletionStatus method, wdf.iwdfrequestcompletionparams_getcompletionstatus, IWDFRequestCompletionParams interface, GetCompletionStatus method, GetCompletionStatus method, IWDFRequestCompletionParams interface, GetCompletionStatus, wudfddi/IWDFRequestCompletionParams::GetCompletionStatus, umdf.iwdfrequestcompletionparams_getcompletionstatus, UMDFRequestObjectRef_b3664f4d-fdb1-425f-be0a-3b4150762b9d.xml, IWDFRequestCompletionParams::GetCompletionStatus
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.5
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFRequestCompletionParams.GetCompletionStatus
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

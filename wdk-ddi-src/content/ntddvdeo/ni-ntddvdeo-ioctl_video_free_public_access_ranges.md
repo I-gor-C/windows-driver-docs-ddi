@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddvdeo.IOCTL_VIDEO_FREE_PUBLIC_ACCESS_RANGES
-title : IOCTL_VIDEO_FREE_PUBLIC_ACCESS_RANGES
-author : windows-driver-content
-description : Releases the address range that was allocated by a preceding IOCTL_VIDEO_QUERY_PUBLIC_ACCESS_RANGES request. Support for this nonmodal request is optional.
-old-location : display\ioctl_video_free_public_access_ranges.htm
-old-project : display
-ms.assetid : 6adc5234-a7c3-4860-8d3e-6c990f460ecc
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.ioctl_video_free_public_access_ranges, IOCTL_VIDEO_FREE_PUBLIC_ACCESS_RANGES control code [Display Devices], IOCTL_VIDEO_FREE_PUBLIC_ACCESS_RANGES, ntddvdeo/IOCTL_VIDEO_FREE_PUBLIC_ACCESS_RANGES, Video_IOCTLs_8b60ca4e-5d15-4fa1-8257-805d90276262.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddvdeo.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TAPE_WRITE_MARKS, *PTAPE_WRITE_MARKS
+UID: NI:ntddvdeo.IOCTL_VIDEO_FREE_PUBLIC_ACCESS_RANGES
+title: IOCTL_VIDEO_FREE_PUBLIC_ACCESS_RANGES
+author: windows-driver-content
+description: Releases the address range that was allocated by a preceding IOCTL_VIDEO_QUERY_PUBLIC_ACCESS_RANGES request. Support for this nonmodal request is optional.
+old-location: display\ioctl_video_free_public_access_ranges.htm
+old-project: display
+ms.assetid: 6adc5234-a7c3-4860-8d3e-6c990f460ecc
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.ioctl_video_free_public_access_ranges, IOCTL_VIDEO_FREE_PUBLIC_ACCESS_RANGES control code [Display Devices], IOCTL_VIDEO_FREE_PUBLIC_ACCESS_RANGES, ntddvdeo/IOCTL_VIDEO_FREE_PUBLIC_ACCESS_RANGES, Video_IOCTLs_8b60ca4e-5d15-4fa1-8257-805d90276262.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddvdeo.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddvdeo.h
+apiname:
+-	IOCTL_VIDEO_FREE_PUBLIC_ACCESS_RANGES
+product: Windows
+targetos: Windows
+req.typenames: TAPE_WRITE_MARKS, *PTAPE_WRITE_MARKS
 ---
 
 # IOCTL_VIDEO_FREE_PUBLIC_ACCESS_RANGES IOCTL

@@ -1,41 +1,46 @@
 ---
-UID : NF:ntintsafe.RtlPtrdiffTSub
-title : RtlPtrdiffTSub function
-author : windows-driver-content
-description : Subtracts one value of type PTRDIFF_T from another.
-old-location : kernel\rtlptrdifftsub.htm
-old-project : kernel
-ms.assetid : C87E3BD5-8CA7-443E-8CC3-F863CD4F321A
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ntintsafe/RtlPtrdiffTSub, RtlPtrdiffTSub, kernel.rtlptrdifftsub, RtlPtrdiffTSub function [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntintsafe.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PUBLIC_OBJECT_TYPE_INFORMATION, *PPUBLIC_OBJECT_TYPE_INFORMATION
+UID: NF:ntintsafe.RtlPtrdiffTSub
+title: RtlPtrdiffTSub function
+author: windows-driver-content
+description: Subtracts one value of type PTRDIFF_T from another.
+old-location: kernel\rtlptrdifftsub.htm
+old-project: kernel
+ms.assetid: C87E3BD5-8CA7-443E-8CC3-F863CD4F321A
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ntintsafe/RtlPtrdiffTSub, RtlPtrdiffTSub, kernel.rtlptrdifftsub, RtlPtrdiffTSub function [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntintsafe.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntintsafe.h
+apiname:
+-	RtlPtrdiffTSub
+product: Windows
+targetos: Windows
+req.typenames: PUBLIC_OBJECT_TYPE_INFORMATION, *PPUBLIC_OBJECT_TYPE_INFORMATION
 ---
 
 

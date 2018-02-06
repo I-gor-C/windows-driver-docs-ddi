@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.FsRtlLookupPerStreamContext
-title : FsRtlLookupPerStreamContext macro
-author : windows-driver-content
-description : The FsRtlLookupPerStreamContext macro retrieves a per-stream context structure for a file stream.
-old-location : ifsk\fsrtllookupperstreamcontext.htm
-old-project : ifsk
-ms.assetid : 8f8c47c3-1917-4252-b812-711ef52d22d7
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : fsrtlref_8284a485-5669-4a4f-a2cf-d566b82299fb.xml, ifsk.fsrtllookupperstreamcontext, ntifs/FsRtlLookupPerStreamContext, FsRtlLookupPerStreamContext, FsRtlLookupPerStreamContext function [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : macro
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Desktop
-req.target-min-winverclnt : This routine is available on Update Rollup for Windows 2000 Service Pack 4 (SP4) and on Windows XP and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.FsRtlLookupPerStreamContext
+title: FsRtlLookupPerStreamContext macro
+author: windows-driver-content
+description: The FsRtlLookupPerStreamContext macro retrieves a per-stream context structure for a file stream.
+old-location: ifsk\fsrtllookupperstreamcontext.htm
+old-project: ifsk
+ms.assetid: 8f8c47c3-1917-4252-b812-711ef52d22d7
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: fsrtlref_8284a485-5669-4a4f-a2cf-d566b82299fb.xml, ifsk.fsrtllookupperstreamcontext, ntifs/FsRtlLookupPerStreamContext, FsRtlLookupPerStreamContext, FsRtlLookupPerStreamContext function [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: macro
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Desktop
+req.target-min-winverclnt: This routine is available on Update Rollup for Windows 2000 Service Pack 4 (SP4) and on Windows XP and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	FsRtlLookupPerStreamContext
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

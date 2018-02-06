@@ -1,41 +1,46 @@
 ---
-UID : NC:ndis.FILTER_CANCEL_SEND_NET_BUFFER_LISTS
-title : FILTER_CANCEL_SEND_NET_BUFFER_LISTS
-author : windows-driver-content
-description : NDIS calls a filter driver's FilterCancelSendNetBufferLists function to cancel the transmission of all NET_BUFFER_LIST structures that are marked with a specified cancellation identifier.Note  You must declare the function by using the FILTER_CANCEL_SEND_NET_BUFFER_LISTS type. For more information, see the following Examples section.
-old-location : netvista\filtercancelsendnetbufferlists.htm
-old-project : netvista
-ms.assetid : 55979b0d-61a6-43da-8fa5-11159b1a48d1
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.filtercancelsendnetbufferlists, FilterCancelSendNetBufferLists callback function [Network Drivers Starting with Windows Vista], FilterCancelSendNetBufferLists, FILTER_CANCEL_SEND_NET_BUFFER_LISTS, FILTER_CANCEL_SEND_NET_BUFFER_LISTS, ndis/FilterCancelSendNetBufferLists, (*FILTER_CANCEL_SEND_HANDLER) callback function [Network Drivers Starting with Windows Vista], (*FILTER_CANCEL_SEND_HANDLER), filter_functions_ref_4538f981-3e2c-496b-bbea-e85baf122257.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
+UID: NC:ndis.FILTER_CANCEL_SEND_NET_BUFFER_LISTS
+title: FILTER_CANCEL_SEND_NET_BUFFER_LISTS
+author: windows-driver-content
+description: NDIS calls a filter driver's FilterCancelSendNetBufferLists function to cancel the transmission of all NET_BUFFER_LIST structures that are marked with a specified cancellation identifier.Note  You must declare the function by using the FILTER_CANCEL_SEND_NET_BUFFER_LISTS type. For more information, see the following Examples section.
+old-location: netvista\filtercancelsendnetbufferlists.htm
+old-project: netvista
+ms.assetid: 55979b0d-61a6-43da-8fa5-11159b1a48d1
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.filtercancelsendnetbufferlists, FilterCancelSendNetBufferLists callback function [Network Drivers Starting with Windows Vista], FilterCancelSendNetBufferLists, FILTER_CANCEL_SEND_NET_BUFFER_LISTS, FILTER_CANCEL_SEND_NET_BUFFER_LISTS, ndis/FilterCancelSendNetBufferLists, (*FILTER_CANCEL_SEND_HANDLER) callback function [Network Drivers Starting with Windows Vista], (*FILTER_CANCEL_SEND_HANDLER), filter_functions_ref_4538f981-3e2c-496b-bbea-e85baf122257.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ndis.h
+apiname:
+-	(*FILTER_CANCEL_SEND_HANDLER)
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 

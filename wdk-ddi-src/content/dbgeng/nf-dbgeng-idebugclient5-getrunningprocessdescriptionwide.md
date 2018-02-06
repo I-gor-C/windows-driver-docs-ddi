@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugClient5.GetRunningProcessDescriptionWide
-title : IDebugClient5::GetRunningProcessDescriptionWide method
-author : windows-driver-content
-description : The GetRunningProcessDescriptionWide method returns a description of the process that includes the executable image name, the service names, the MTS package names, and the command line.
-old-location : debugger\getrunningprocessdescriptionwide.htm
-old-project : debugger
-ms.assetid : 1af85bbe-19e8-4e16-a598-f9822fd6f766
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : GetRunningProcessDescriptionWide method [Windows Debugging], dbgeng/IDebugClient3::GetRunningProcessDescriptionWide, GetRunningProcessDescriptionWide method [Windows Debugging], IDebugClient5 interface, debugger.getrunningprocessdescriptionwide, IDebugClient3::GetRunningProcessDescriptionWide, GetRunningProcessDescriptionWide method [Windows Debugging], IDebugClient3 interface, IDebugClient4 interface [Windows Debugging], GetRunningProcessDescriptionWide method, IDebugClient4::GetRunningProcessDescriptionWide, dbgeng/IDebugClient5::GetRunningProcessDescriptionWide, IDebugClient5::GetRunningProcessDescriptionWide, GetRunningProcessDescriptionWide, IDebugClient3 interface [Windows Debugging], GetRunningProcessDescriptionWide method, GetRunningProcessDescriptionWide method [Windows Debugging], IDebugClient4 interface, dbgeng/IDebugClient4::GetRunningProcessDescriptionWide, IDebugClient5 interface [Windows Debugging], GetRunningProcessDescriptionWide method, IDebugClient5
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugClient5.GetRunningProcessDescriptionWide
+title: IDebugClient5::GetRunningProcessDescriptionWide method
+author: windows-driver-content
+description: The GetRunningProcessDescriptionWide method returns a description of the process that includes the executable image name, the service names, the MTS package names, and the command line.
+old-location: debugger\getrunningprocessdescriptionwide.htm
+old-project: debugger
+ms.assetid: 1af85bbe-19e8-4e16-a598-f9822fd6f766
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: GetRunningProcessDescriptionWide method [Windows Debugging], dbgeng/IDebugClient3::GetRunningProcessDescriptionWide, GetRunningProcessDescriptionWide method [Windows Debugging], IDebugClient5 interface, debugger.getrunningprocessdescriptionwide, IDebugClient3::GetRunningProcessDescriptionWide, GetRunningProcessDescriptionWide method [Windows Debugging], IDebugClient3 interface, IDebugClient4 interface [Windows Debugging], GetRunningProcessDescriptionWide method, IDebugClient4::GetRunningProcessDescriptionWide, dbgeng/IDebugClient5::GetRunningProcessDescriptionWide, IDebugClient5::GetRunningProcessDescriptionWide, GetRunningProcessDescriptionWide, IDebugClient3 interface [Windows Debugging], GetRunningProcessDescriptionWide method, GetRunningProcessDescriptionWide method [Windows Debugging], IDebugClient4 interface, dbgeng/IDebugClient4::GetRunningProcessDescriptionWide, IDebugClient5 interface [Windows Debugging], GetRunningProcessDescriptionWide method, IDebugClient5
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugClient3.GetRunningProcessDescriptionWide
+-	IDebugClient4.GetRunningProcessDescriptionWide
+-	IDebugClient5.GetRunningProcessDescriptionWide
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

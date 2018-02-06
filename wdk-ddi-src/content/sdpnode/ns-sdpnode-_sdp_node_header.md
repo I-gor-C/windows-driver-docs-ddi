@@ -1,42 +1,47 @@
 ---
-UID : NS:sdpnode._SDP_NODE_HEADER
-title : "_SDP_NODE_HEADER"
-author : windows-driver-content
-description : The SDP_NODE_HEADER structure holds information about an element in a tree-based representation of an SDP record.
-old-location : bltooth\sdp_node_header.htm
-old-project : bltooth
-ms.assetid : 2c756db7-b7a9-493a-8fb1-8bbc741f8c63
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : SDP_NODE_HEADER, _SDP_NODE_HEADER, *PSDP_NODE_HEADER, SDP_NODE_HEADER structure [Bluetooth Devices], PSDP_NODE_HEADER, sdpnode/PSDP_NODE_HEADER, PSDP_NODE_HEADER structure pointer [Bluetooth Devices], bltooth.sdp_node_header, sdpnode/SDP_NODE_HEADER, bth_structs_9fc0ef9d-c505-4cd8-8ea7-78988215c68a.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : sdpnode.h
-req.include-header : Sdpnode.h
-req.target-type : Windows
-req.target-min-winverclnt : Versions:\_Supported in Windows Vista, and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= PASSIVE_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSDP_NODE_HEADER, SDP_NODE_HEADER"
-req.product : Windows 10 or later.
+UID: NS:sdpnode._SDP_NODE_HEADER
+title: "_SDP_NODE_HEADER"
+author: windows-driver-content
+description: The SDP_NODE_HEADER structure holds information about an element in a tree-based representation of an SDP record.
+old-location: bltooth\sdp_node_header.htm
+old-project: bltooth
+ms.assetid: 2c756db7-b7a9-493a-8fb1-8bbc741f8c63
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: SDP_NODE_HEADER, _SDP_NODE_HEADER, *PSDP_NODE_HEADER, SDP_NODE_HEADER structure [Bluetooth Devices], PSDP_NODE_HEADER, sdpnode/PSDP_NODE_HEADER, PSDP_NODE_HEADER structure pointer [Bluetooth Devices], bltooth.sdp_node_header, sdpnode/SDP_NODE_HEADER, bth_structs_9fc0ef9d-c505-4cd8-8ea7-78988215c68a.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: sdpnode.h
+req.include-header: Sdpnode.h
+req.target-type: Windows
+req.target-min-winverclnt: Versions:\_Supported in Windows Vista, and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= PASSIVE_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	sdpnode.h
+apiname:
+-	SDP_NODE_HEADER
+product: Windows
+targetos: Windows
+req.typenames: "*PSDP_NODE_HEADER, SDP_NODE_HEADER"
+req.product: Windows 10 or later.
 ---
 
 # _SDP_NODE_HEADER structure

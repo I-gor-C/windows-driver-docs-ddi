@@ -1,41 +1,47 @@
 ---
-UID : NF:fltkernel.FltCreateMailslotFile
-title : FltCreateMailslotFile function
-author : windows-driver-content
-description : Minifilter drivers call FltCreateMailslotFile to create a new pipe or open an existing mailslot.
-old-location : ifsk\fltcreatemailslotfile.htm
-old-project : ifsk
-ms.assetid : A727CDC1-A17A-4ABE-92AC-7CAEC11B78D1
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.fltcreatemailslotfile, fltkernel/FltCreateMailslotFile, FltCreateMailslotFile function [Installable File System Drivers], FltCreateMailslotFile
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : FltKernel.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Fltmgr.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltCreateMailslotFile
+title: FltCreateMailslotFile function
+author: windows-driver-content
+description: Minifilter drivers call FltCreateMailslotFile to create a new pipe or open an existing mailslot.
+old-location: ifsk\fltcreatemailslotfile.htm
+old-project: ifsk
+ms.assetid: A727CDC1-A17A-4ABE-92AC-7CAEC11B78D1
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.fltcreatemailslotfile, fltkernel/FltCreateMailslotFile, FltCreateMailslotFile function [Installable File System Drivers], FltCreateMailslotFile
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: FltKernel.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Fltmgr.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Fltmgr.lib
+-	Fltmgr.dll
+apiname:
+-	FltCreateMailslotFile
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

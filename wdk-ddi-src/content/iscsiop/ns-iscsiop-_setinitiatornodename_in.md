@@ -1,41 +1,46 @@
 ---
-UID : NS:iscsiop._SetInitiatorNodeName_IN
-title : "_SetInitiatorNodeName_IN"
-author : windows-driver-content
-description : The SetInitiatorNodeName_IN structure holds the input data for the SetInitiatorNodeName method.
-old-location : storage\setinitiatornodename_in.htm
-old-project : storage
-ms.assetid : 58af1872-23bf-44f2-9ef4-271f0ddef5d5
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : SetInitiatorNodeName_IN structure [Storage Devices], _SetInitiatorNodeName_IN, *PSetInitiatorNodeName_IN, PSetInitiatorNodeName_IN, iscsiop/SetInitiatorNodeName_IN, SetInitiatorNodeName_IN, iscsiop/PSetInitiatorNodeName_IN, PSetInitiatorNodeName_IN structure pointer [Storage Devices], structs-iSCSI_fac4e524-8266-4135-9211-564d1ea2a952.xml, storage.setinitiatornodename_in
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : iscsiop.h
-req.include-header : Iscsiop.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SetInitiatorNodeName_IN, *PSetInitiatorNodeName_IN
+UID: NS:iscsiop._SetInitiatorNodeName_IN
+title: "_SetInitiatorNodeName_IN"
+author: windows-driver-content
+description: The SetInitiatorNodeName_IN structure holds the input data for the SetInitiatorNodeName method.
+old-location: storage\setinitiatornodename_in.htm
+old-project: storage
+ms.assetid: 58af1872-23bf-44f2-9ef4-271f0ddef5d5
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: SetInitiatorNodeName_IN structure [Storage Devices], _SetInitiatorNodeName_IN, *PSetInitiatorNodeName_IN, PSetInitiatorNodeName_IN, iscsiop/SetInitiatorNodeName_IN, SetInitiatorNodeName_IN, iscsiop/PSetInitiatorNodeName_IN, PSetInitiatorNodeName_IN structure pointer [Storage Devices], structs-iSCSI_fac4e524-8266-4135-9211-564d1ea2a952.xml, storage.setinitiatornodename_in
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: iscsiop.h
+req.include-header: Iscsiop.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	iscsiop.h
+apiname:
+-	SetInitiatorNodeName_IN
+product: Windows
+targetos: Windows
+req.typenames: SetInitiatorNodeName_IN, *PSetInitiatorNodeName_IN
 ---
 
 # _SetInitiatorNodeName_IN structure

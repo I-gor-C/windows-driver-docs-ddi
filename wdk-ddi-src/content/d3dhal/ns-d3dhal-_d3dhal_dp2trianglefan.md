@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dhal._D3DHAL_DP2TRIANGLEFAN
-title : "_D3DHAL_DP2TRIANGLEFAN"
-author : windows-driver-content
-description : One D3DHAL_DP2TRIANGLEFAN structure is parsed from the command buffer by the D3dDrawPrimitives2 callback when the D3DHAL_DP2COMMAND structure's bCommand member is set to D3DDP2OP_TRIANGLEFAN, and is used to render a triangle fan.
-old-location : display\d3dhal_dp2trianglefan.htm
-old-project : display
-ms.assetid : 563fe6c9-868e-4b84-b14b-baee8ab00a2d
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : "_D3DHAL_DP2TRIANGLEFAN, d3dhal/D3DHAL_DP2TRIANGLEFAN, LPD3DHAL_DP2TRIANGLEFAN, LPD3DHAL_DP2TRIANGLEFAN structure pointer [Display Devices], D3DHAL_DP2TRIANGLEFAN, D3DHAL_DP2TRIANGLEFAN structure [Display Devices], d3dhal/LPD3DHAL_DP2TRIANGLEFAN, d3dstrct_6726a70e-3ff1-4a9f-ac1e-46acf9be04e9.xml, display.d3dhal_dp2trianglefan, *LPD3DHAL_DP2TRIANGLEFAN"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dhal.h
-req.include-header : D3dhal.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*LPD3DHAL_DP2TRIANGLEFAN, D3DHAL_DP2TRIANGLEFAN"
+UID: NS:d3dhal._D3DHAL_DP2TRIANGLEFAN
+title: "_D3DHAL_DP2TRIANGLEFAN"
+author: windows-driver-content
+description: One D3DHAL_DP2TRIANGLEFAN structure is parsed from the command buffer by the D3dDrawPrimitives2 callback when the D3DHAL_DP2COMMAND structure's bCommand member is set to D3DDP2OP_TRIANGLEFAN, and is used to render a triangle fan.
+old-location: display\d3dhal_dp2trianglefan.htm
+old-project: display
+ms.assetid: 563fe6c9-868e-4b84-b14b-baee8ab00a2d
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: "_D3DHAL_DP2TRIANGLEFAN, d3dhal/D3DHAL_DP2TRIANGLEFAN, LPD3DHAL_DP2TRIANGLEFAN, LPD3DHAL_DP2TRIANGLEFAN structure pointer [Display Devices], D3DHAL_DP2TRIANGLEFAN, D3DHAL_DP2TRIANGLEFAN structure [Display Devices], d3dhal/LPD3DHAL_DP2TRIANGLEFAN, d3dstrct_6726a70e-3ff1-4a9f-ac1e-46acf9be04e9.xml, display.d3dhal_dp2trianglefan, *LPD3DHAL_DP2TRIANGLEFAN"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dhal.h
+req.include-header: D3dhal.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dhal.h
+apiname:
+-	D3DHAL_DP2TRIANGLEFAN
+product: Windows
+targetos: Windows
+req.typenames: "*LPD3DHAL_DP2TRIANGLEFAN, D3DHAL_DP2TRIANGLEFAN"
 ---
 
 # _D3DHAL_DP2TRIANGLEFAN structure

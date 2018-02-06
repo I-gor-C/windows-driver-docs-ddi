@@ -1,41 +1,46 @@
 ---
-UID : NS:d3d10umddi.D3DWDDM1_3DDI_D3D11_OPTIONS_DATA1
-title : D3DWDDM1_3DDI_D3D11_OPTIONS_DATA1
-author : windows-driver-content
-description : Specifies the level of support by the hardware and user-mode display driver for tiled resources.
-old-location : display\d3dwddm1_3ddi_d3d11_options_data1.htm
-old-project : display
-ms.assetid : 822819CE-DF40-4AFD-966A-DA5C433646D7
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DWDDM1_3DDI_D3D11_OPTIONS_DATA1 structure [Display Devices], display.d3dwddm1_3ddi_d3d11_options_data1, D3DWDDM1_3DDI_D3D11_OPTIONS_DATA1, d3d10umddi/D3DWDDM1_3DDI_D3D11_OPTIONS_DATA1
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3d10umddi.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8.1,WDDM 1.3 and later
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DWDDM1_3DDI_D3D11_OPTIONS_DATA1
+UID: NS:d3d10umddi.D3DWDDM1_3DDI_D3D11_OPTIONS_DATA1
+title: D3DWDDM1_3DDI_D3D11_OPTIONS_DATA1
+author: windows-driver-content
+description: Specifies the level of support by the hardware and user-mode display driver for tiled resources.
+old-location: display\d3dwddm1_3ddi_d3d11_options_data1.htm
+old-project: display
+ms.assetid: 822819CE-DF40-4AFD-966A-DA5C433646D7
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DWDDM1_3DDI_D3D11_OPTIONS_DATA1 structure [Display Devices], display.d3dwddm1_3ddi_d3d11_options_data1, D3DWDDM1_3DDI_D3D11_OPTIONS_DATA1, d3d10umddi/D3DWDDM1_3DDI_D3D11_OPTIONS_DATA1
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3d10umddi.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8.1,WDDM 1.3 and later
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	D3DWDDM1_3DDI_D3D11_OPTIONS_DATA1
+product: Windows
+targetos: Windows
+req.typenames: D3DWDDM1_3DDI_D3D11_OPTIONS_DATA1
 ---
 
 # D3DWDDM1_3DDI_D3D11_OPTIONS_DATA1 structure

@@ -1,42 +1,47 @@
 ---
-UID : NS:usbcamdi._USBCAMD_DEVICE_DATA2
-title : "_USBCAMD_DEVICE_DATA2"
-author : windows-driver-content
-description : The USBCAMD_DEVICE_DATA2 structure specifies the entry points for a camera minidriver's functions that USBCAMD calls.
-old-location : stream\usbcamd_device_data2.htm
-old-project : stream
-ms.assetid : 51339fd1-a962-4e3c-b9c9-5fe54ff53aa0
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.usbcamd_device_data2, usbcmdpr_01305731-bde1-4718-8ff9-d0f102d6cc34.xml, usbcamdi/PUSBCAMD_DEVICE_DATA2, _USBCAMD_DEVICE_DATA2, *PUSBCAMD_DEVICE_DATA2, USBCAMD_DEVICE_DATA2 structure [Streaming Media Devices], USBCAMD_DEVICE_DATA2, PUSBCAMD_DEVICE_DATA2 structure pointer [Streaming Media Devices], PUSBCAMD_DEVICE_DATA2, usbcamdi/USBCAMD_DEVICE_DATA2
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : usbcamdi.h
-req.include-header : Usbcamdi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : USBCAMD_DEVICE_DATA2, *PUSBCAMD_DEVICE_DATA2
-req.product : Windows 10 or later.
+UID: NS:usbcamdi._USBCAMD_DEVICE_DATA2
+title: "_USBCAMD_DEVICE_DATA2"
+author: windows-driver-content
+description: The USBCAMD_DEVICE_DATA2 structure specifies the entry points for a camera minidriver's functions that USBCAMD calls.
+old-location: stream\usbcamd_device_data2.htm
+old-project: stream
+ms.assetid: 51339fd1-a962-4e3c-b9c9-5fe54ff53aa0
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.usbcamd_device_data2, usbcmdpr_01305731-bde1-4718-8ff9-d0f102d6cc34.xml, usbcamdi/PUSBCAMD_DEVICE_DATA2, _USBCAMD_DEVICE_DATA2, *PUSBCAMD_DEVICE_DATA2, USBCAMD_DEVICE_DATA2 structure [Streaming Media Devices], USBCAMD_DEVICE_DATA2, PUSBCAMD_DEVICE_DATA2 structure pointer [Streaming Media Devices], PUSBCAMD_DEVICE_DATA2, usbcamdi/USBCAMD_DEVICE_DATA2
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: usbcamdi.h
+req.include-header: Usbcamdi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	usbcamdi.h
+apiname:
+-	USBCAMD_DEVICE_DATA2
+product: Windows
+targetos: Windows
+req.typenames: USBCAMD_DEVICE_DATA2, *PUSBCAMD_DEVICE_DATA2
+req.product: Windows 10 or later.
 ---
 
 # _USBCAMD_DEVICE_DATA2 structure

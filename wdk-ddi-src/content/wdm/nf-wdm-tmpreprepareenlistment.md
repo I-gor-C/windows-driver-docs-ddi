@@ -1,42 +1,49 @@
 ---
-UID : NF:wdm.TmPrePrepareEnlistment
-title : TmPrePrepareEnlistment function
-author : windows-driver-content
-description : The TmPrePrepareEnlistment routine initiates the pre-prepare operation for a specified enlistment's transaction.
-old-location : kernel\tmpreprepareenlistment.htm
-old-project : kernel
-ms.assetid : 54c0fed2-a553-4321-bf61-0f71d18ab7c5
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ktm_ref_b27bc92e-86df-4457-9a8a-bf56eb7d1ac8.xml, TmPrePrepareEnlistment, kernel.tmpreprepareenlistment, wdm/TmPrePrepareEnlistment, TmPrePrepareEnlistment routine [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later operating system versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.TmPrePrepareEnlistment
+title: TmPrePrepareEnlistment function
+author: windows-driver-content
+description: The TmPrePrepareEnlistment routine initiates the pre-prepare operation for a specified enlistment's transaction.
+old-location: kernel\tmpreprepareenlistment.htm
+old-project: kernel
+ms.assetid: 54c0fed2-a553-4321-bf61-0f71d18ab7c5
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ktm_ref_b27bc92e-86df-4457-9a8a-bf56eb7d1ac8.xml, TmPrePrepareEnlistment, kernel.tmpreprepareenlistment, wdm/TmPrePrepareEnlistment, TmPrePrepareEnlistment routine [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later operating system versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+-	Ext-MS-Win-ntos-tm-l1-1-0.dll
+-	tm.sys
+apiname:
+-	TmPrePrepareEnlistment
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

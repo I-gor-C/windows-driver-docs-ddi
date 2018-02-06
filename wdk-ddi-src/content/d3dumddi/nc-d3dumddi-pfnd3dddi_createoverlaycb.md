@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_CREATEOVERLAYCB
-title : PFND3DDDI_CREATEOVERLAYCB
-author : windows-driver-content
-description : The pfnCreateOverlayCb function creates a kernel-mode overlay object and calls the display miniport driver to display the overlay.
-old-location : display\pfncreateoverlaycb.htm
-old-project : display
-ms.assetid : fbd5b3af-0963-4e41-8be3-41e3e1ecf8bc
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.pfncreateoverlaycb, pfnCreateOverlayCb callback function [Display Devices], pfnCreateOverlayCb, PFND3DDDI_CREATEOVERLAYCB, PFND3DDDI_CREATEOVERLAYCB, d3dumddi/pfnCreateOverlayCb, D3Druntime_Functions_d30fc7c1-55b2-4444-9ac1-34baabc073f6.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_CREATEOVERLAYCB
+title: PFND3DDDI_CREATEOVERLAYCB
+author: windows-driver-content
+description: The pfnCreateOverlayCb function creates a kernel-mode overlay object and calls the display miniport driver to display the overlay.
+old-location: display\pfncreateoverlaycb.htm
+old-project: display
+ms.assetid: fbd5b3af-0963-4e41-8be3-41e3e1ecf8bc
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.pfncreateoverlaycb, pfnCreateOverlayCb callback function [Display Devices], pfnCreateOverlayCb, PFND3DDDI_CREATEOVERLAYCB, PFND3DDDI_CREATEOVERLAYCB, d3dumddi/pfnCreateOverlayCb, D3Druntime_Functions_d30fc7c1-55b2-4444-9ac1-34baabc073f6.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	pfnCreateOverlayCb
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

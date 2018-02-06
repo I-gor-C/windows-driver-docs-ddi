@@ -1,42 +1,47 @@
 ---
-UID : NF:wiamindr_lh.IWiaMiniDrv.drvAcquireItemData
-title : IWiaMiniDrv::drvAcquireItemData method
-author : windows-driver-content
-description : The IWiaMiniDrv::drvAcquireItemData method is called by the WIA service to transfer data from the device to an application.
-old-location : image\iwiaminidrv_drvacquireitemdata.htm
-old-project : image
-ms.assetid : ab49643b-ab77-49ea-9a3b-e3a184cd29d0
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : image.iwiaminidrv_drvacquireitemdata, wiamindr_lh/IWiaMiniDrv::drvAcquireItemData, drvAcquireItemData method [Imaging Devices], IWiaMiniDrv interface, IWiaMiniDrv, drvAcquireItemData method [Imaging Devices], drvAcquireItemData, MiniDrv_fb4ad9e4-6648-4038-9b72-4e521d4dd5f2.xml, IWiaMiniDrv::drvAcquireItemData, IWiaMiniDrv interface [Imaging Devices], drvAcquireItemData method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wiamindr_lh.h
-req.include-header : Wiamindr.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Me and in Windows XP and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wiamindr_lh.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SCANWINDOW, *PSCANWINDOW
-req.product : Windows 10 or later.
+UID: NF:wiamindr_lh.IWiaMiniDrv.drvAcquireItemData
+title: IWiaMiniDrv::drvAcquireItemData method
+author: windows-driver-content
+description: The IWiaMiniDrv::drvAcquireItemData method is called by the WIA service to transfer data from the device to an application.
+old-location: image\iwiaminidrv_drvacquireitemdata.htm
+old-project: image
+ms.assetid: ab49643b-ab77-49ea-9a3b-e3a184cd29d0
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: image.iwiaminidrv_drvacquireitemdata, wiamindr_lh/IWiaMiniDrv::drvAcquireItemData, drvAcquireItemData method [Imaging Devices], IWiaMiniDrv interface, IWiaMiniDrv, drvAcquireItemData method [Imaging Devices], drvAcquireItemData, MiniDrv_fb4ad9e4-6648-4038-9b72-4e521d4dd5f2.xml, IWiaMiniDrv::drvAcquireItemData, IWiaMiniDrv interface [Imaging Devices], drvAcquireItemData method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wiamindr_lh.h
+req.include-header: Wiamindr.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Me and in Windows XP and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wiamindr_lh.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	wiamindr_lh.h
+apiname:
+-	IWiaMiniDrv.drvAcquireItemData
+product: Windows
+targetos: Windows
+req.typenames: SCANWINDOW, *PSCANWINDOW
+req.product: Windows 10 or later.
 ---
 
 

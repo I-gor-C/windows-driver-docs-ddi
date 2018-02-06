@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.MmIsDriverSuspectForVerifier
-title : MmIsDriverSuspectForVerifier function
-author : windows-driver-content
-description : The MmIsDriverSuspectForVerifier routine indicates whether the driver represented by the specified driver object is in the list of drivers that are selected to be verified by Driver Verifier.
-old-location : kernel\mmisdriversuspectforverifier.htm
-old-project : kernel
-ms.assetid : 049BDC6E-2FB2-421F-9229-320F2ED98663
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.mmisdriversuspectforverifier, MmIsDriverSuspectForVerifier, wdm/MmIsDriverSuspectForVerifier, MmIsDriverSuspectForVerifier routine [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.MmIsDriverSuspectForVerifier
+title: MmIsDriverSuspectForVerifier function
+author: windows-driver-content
+description: The MmIsDriverSuspectForVerifier routine indicates whether the driver represented by the specified driver object is in the list of drivers that are selected to be verified by Driver Verifier.
+old-location: kernel\mmisdriversuspectforverifier.htm
+old-project: kernel
+ms.assetid: 049BDC6E-2FB2-421F-9229-320F2ED98663
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.mmisdriversuspectforverifier, MmIsDriverSuspectForVerifier, wdm/MmIsDriverSuspectForVerifier, MmIsDriverSuspectForVerifier routine [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	MmIsDriverSuspectForVerifier
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

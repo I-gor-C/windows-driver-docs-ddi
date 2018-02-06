@@ -1,41 +1,46 @@
 ---
-UID : NC:dispmprt.DXGKCB_EXCLUDE_ADAPTER_ACCESS
-title : DXGKCB_EXCLUDE_ADAPTER_ACCESS
-author : windows-driver-content
-description : The DxgkCbExcludeAdapterAccess function prevents all access to the display adapter and calls a provided DxgkProtectedCallback callback routine while in this protected state.
-old-location : display\dxgkcbexcludeadapteraccess.htm
-old-project : display
-ms.assetid : e74e79fe-3b36-427e-ae0b-4072a0438c4e
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkcbexcludeadapteraccess, DxgkCbExcludeAdapterAccess callback function [Display Devices], DxgkCbExcludeAdapterAccess, DXGKCB_EXCLUDE_ADAPTER_ACCESS, DXGKCB_EXCLUDE_ADAPTER_ACCESS, dispmprt/DxgkCbExcludeAdapterAccess, DpFunctions_8ad0a347-3d2f-429c-9b1f-67f000dbfc03.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : dispmprt.h
-req.include-header : Dispmprt.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
+UID: NC:dispmprt.DXGKCB_EXCLUDE_ADAPTER_ACCESS
+title: DXGKCB_EXCLUDE_ADAPTER_ACCESS
+author: windows-driver-content
+description: The DxgkCbExcludeAdapterAccess function prevents all access to the display adapter and calls a provided DxgkProtectedCallback callback routine while in this protected state.
+old-location: display\dxgkcbexcludeadapteraccess.htm
+old-project: display
+ms.assetid: e74e79fe-3b36-427e-ae0b-4072a0438c4e
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkcbexcludeadapteraccess, DxgkCbExcludeAdapterAccess callback function [Display Devices], DxgkCbExcludeAdapterAccess, DXGKCB_EXCLUDE_ADAPTER_ACCESS, DXGKCB_EXCLUDE_ADAPTER_ACCESS, dispmprt/DxgkCbExcludeAdapterAccess, DpFunctions_8ad0a347-3d2f-429c-9b1f-67f000dbfc03.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: dispmprt.h
+req.include-header: Dispmprt.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	dispmprt.h
+apiname:
+-	DxgkCbExcludeAdapterAccess
+product: Windows
+targetos: Windows
+req.typenames: SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ---
 
 

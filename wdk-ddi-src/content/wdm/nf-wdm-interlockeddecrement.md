@@ -1,42 +1,52 @@
 ---
-UID : NF:wdm.InterlockedDecrement
-title : InterlockedDecrement function
-author : windows-driver-content
-description : The InterlockedDecrement routine decrements a caller-supplied variable of type LONG as an atomic operation.
-old-location : kernel\interlockeddecrement.htm
-old-project : kernel
-ms.assetid : 06964a2c-f666-44e8-a747-41791f61c67c
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : InterlockedDecrement routine [Kernel-Mode Driver Architecture], InterlockedDecrement, k102_cc85e517-f056-413e-a095-671867632613.xml, kernel.interlockeddecrement, wdm/InterlockedDecrement
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : OneCoreUAP.lib on Windows 10
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.InterlockedDecrement
+title: InterlockedDecrement function
+author: windows-driver-content
+description: The InterlockedDecrement routine decrements a caller-supplied variable of type LONG as an atomic operation.
+old-location: kernel\interlockeddecrement.htm
+old-project: kernel
+ms.assetid: 06964a2c-f666-44e8-a747-41791f61c67c
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: InterlockedDecrement routine [Kernel-Mode Driver Architecture], InterlockedDecrement, k102_cc85e517-f056-413e-a095-671867632613.xml, kernel.interlockeddecrement, wdm/InterlockedDecrement
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: OneCoreUAP.lib on Windows 10
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	OneCoreUAP.lib
+-	OneCoreUAP.dll
+-	API-MS-Win-Core-Interlocked-l1-1-0.dll
+-	API-MS-Win-Core-Interlocked-l1-2-0.dll
+-	KernelBase.dll
+-	MinKernelBase.dll
+apiname:
+-	InterlockedDecrement
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

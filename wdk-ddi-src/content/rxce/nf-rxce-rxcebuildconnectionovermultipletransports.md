@@ -1,42 +1,47 @@
 ---
-UID : NF:rxce.RxCeBuildConnectionOverMultipleTransports
-title : RxCeBuildConnectionOverMultipleTransports function
-author : windows-driver-content
-description : RxCeBuildConnectionOverMultipleTransports establishes a connection between a local RDBSS connection address and a given remote address and supports multiple transports.
-old-location : ifsk\rxcebuildconnectionovermultipletransports.htm
-old-project : ifsk
-ms.assetid : 9ef9a5a5-e0ad-46c0-8193-8d2a18a21ea0
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : rxce/RxCeBuildConnectionOverMultipleTransports, rxref_813ee01b-f378-4598-813a-4f2f3c47189f.xml, RxCeBuildConnectionOverMultipleTransports, RxCeBuildConnectionOverMultipleTransports routine [Installable File System Drivers], ifsk.rxcebuildconnectionovermultipletransports
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : rxce.h
-req.include-header : Rxce.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*LPRILWRITEPHONEBOOKENTRYPARAMS, RILWRITEPHONEBOOKENTRYPARAMS"
-req.product : Windows 10 or later.
+UID: NF:rxce.RxCeBuildConnectionOverMultipleTransports
+title: RxCeBuildConnectionOverMultipleTransports function
+author: windows-driver-content
+description: RxCeBuildConnectionOverMultipleTransports establishes a connection between a local RDBSS connection address and a given remote address and supports multiple transports.
+old-location: ifsk\rxcebuildconnectionovermultipletransports.htm
+old-project: ifsk
+ms.assetid: 9ef9a5a5-e0ad-46c0-8193-8d2a18a21ea0
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: rxce/RxCeBuildConnectionOverMultipleTransports, rxref_813ee01b-f378-4598-813a-4f2f3c47189f.xml, RxCeBuildConnectionOverMultipleTransports, RxCeBuildConnectionOverMultipleTransports routine [Installable File System Drivers], ifsk.rxcebuildconnectionovermultipletransports
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: rxce.h
+req.include-header: Rxce.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	rxce.h
+apiname:
+-	RxCeBuildConnectionOverMultipleTransports
+product: Windows
+targetos: Windows
+req.typenames: "*LPRILWRITEPHONEBOOKENTRYPARAMS, RILWRITEPHONEBOOKENTRYPARAMS"
+req.product: Windows 10 or later.
 ---
 
 

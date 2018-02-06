@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddk._WHEA_PCI_SLOT_NUMBER
-title : "_WHEA_PCI_SLOT_NUMBER"
-author : windows-driver-content
-description : The WHEA_PCI_SLOT_NUMBER structure describes a logical PCI slot.
-old-location : whea\whea_pci_slot_number.htm
-old-project : whea
-ms.assetid : 4e2938a2-6301-4d2a-a467-eca1f5bbb260
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : whea.whea_pci_slot_number, whearef_6999e061-3501-48fe-bd6c-383493056665.xml, PWHEA_PCI_SLOT_NUMBER, ntddk/WHEA_PCI_SLOT_NUMBER, ntddk/PWHEA_PCI_SLOT_NUMBER, WHEA_PCI_SLOT_NUMBER, *PWHEA_PCI_SLOT_NUMBER, WHEA_PCI_SLOT_NUMBER structure [WHEA Drivers and Applications], _WHEA_PCI_SLOT_NUMBER, PWHEA_PCI_SLOT_NUMBER structure pointer [WHEA Drivers and Applications]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_PCI_SLOT_NUMBER, *PWHEA_PCI_SLOT_NUMBER
+UID: NS:ntddk._WHEA_PCI_SLOT_NUMBER
+title: "_WHEA_PCI_SLOT_NUMBER"
+author: windows-driver-content
+description: The WHEA_PCI_SLOT_NUMBER structure describes a logical PCI slot.
+old-location: whea\whea_pci_slot_number.htm
+old-project: whea
+ms.assetid: 4e2938a2-6301-4d2a-a467-eca1f5bbb260
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: whea.whea_pci_slot_number, whearef_6999e061-3501-48fe-bd6c-383493056665.xml, PWHEA_PCI_SLOT_NUMBER, ntddk/WHEA_PCI_SLOT_NUMBER, ntddk/PWHEA_PCI_SLOT_NUMBER, WHEA_PCI_SLOT_NUMBER, *PWHEA_PCI_SLOT_NUMBER, WHEA_PCI_SLOT_NUMBER structure [WHEA Drivers and Applications], _WHEA_PCI_SLOT_NUMBER, PWHEA_PCI_SLOT_NUMBER structure pointer [WHEA Drivers and Applications]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddk.h
+apiname:
+-	WHEA_PCI_SLOT_NUMBER
+product: Windows
+targetos: Windows
+req.typenames: WHEA_PCI_SLOT_NUMBER, *PWHEA_PCI_SLOT_NUMBER
 ---
 
 # _WHEA_PCI_SLOT_NUMBER structure

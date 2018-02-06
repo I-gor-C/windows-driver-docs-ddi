@@ -1,42 +1,47 @@
 ---
-UID : NS:rilapitypes.RILIMSI
-title : RILIMSI
-author : windows-driver-content
-description : This structure represents a RILIMSI.
-old-location : netvista\rilimsi.htm
-old-project : netvista
-ms.assetid : e2dc6a60-b3a6-4b2a-8a6c-aa513ca9b87b
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : RILIMSI, *LPRILIMSI, rilapitypes/RILIMSI, netvista.rilimsi, RILIMSI structure [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : rilapitypes.h
-req.include-header : Rilapitypes.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*LPRILIMSI, RILIMSI"
-req.product : Windows 10 or later.
+UID: NS:rilapitypes.RILIMSI
+title: RILIMSI
+author: windows-driver-content
+description: This structure represents a RILIMSI.
+old-location: netvista\rilimsi.htm
+old-project: netvista
+ms.assetid: e2dc6a60-b3a6-4b2a-8a6c-aa513ca9b87b
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: RILIMSI, *LPRILIMSI, rilapitypes/RILIMSI, netvista.rilimsi, RILIMSI structure [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: rilapitypes.h
+req.include-header: Rilapitypes.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	rilapitypes.h
+apiname:
+-	RILIMSI
+product: Windows
+targetos: Windows
+req.typenames: "*LPRILIMSI, RILIMSI"
+req.product: Windows 10 or later.
 ---
 
 # RILIMSI structure

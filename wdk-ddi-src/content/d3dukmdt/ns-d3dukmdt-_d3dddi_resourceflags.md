@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dukmdt._D3DDDI_RESOURCEFLAGS
-title : "_D3DDDI_RESOURCEFLAGS"
-author : windows-driver-content
-description : The D3DDDI_RESOURCEFLAGS structure identifies the type of resources to create in a call to the driver's CreateResource function.
-old-location : display\d3dddi_resourceflags.htm
-old-project : display
-ms.assetid : a466a158-dacf-42cc-b2ad-8af5b2c6c7d5
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DDDI_RESOURCEFLAGS, _D3DDDI_RESOURCEFLAGS, D3DDDI_RESOURCEFLAGS structure [Display Devices], d3dukmdt/D3DDDI_RESOURCEFLAGS, D3D_other_Structs_f00f4222-1c56-4b96-abe4-bf05088b7aa4.xml, display.d3dddi_resourceflags
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dukmdt.h
-req.include-header : D3dumddi.h, D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDI_RESOURCEFLAGS
+UID: NS:d3dukmdt._D3DDDI_RESOURCEFLAGS
+title: "_D3DDDI_RESOURCEFLAGS"
+author: windows-driver-content
+description: The D3DDDI_RESOURCEFLAGS structure identifies the type of resources to create in a call to the driver's CreateResource function.
+old-location: display\d3dddi_resourceflags.htm
+old-project: display
+ms.assetid: a466a158-dacf-42cc-b2ad-8af5b2c6c7d5
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DDDI_RESOURCEFLAGS, _D3DDDI_RESOURCEFLAGS, D3DDDI_RESOURCEFLAGS structure [Display Devices], d3dukmdt/D3DDDI_RESOURCEFLAGS, D3D_other_Structs_f00f4222-1c56-4b96-abe4-bf05088b7aa4.xml, display.d3dddi_resourceflags
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dukmdt.h
+req.include-header: D3dumddi.h, D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dukmdt.h
+apiname:
+-	D3DDDI_RESOURCEFLAGS
+product: Windows
+targetos: Windows
+req.typenames: D3DDDI_RESOURCEFLAGS
 ---
 
 # _D3DDDI_RESOURCEFLAGS structure

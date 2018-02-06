@@ -1,42 +1,48 @@
 ---
-UID : NF:storport.StorPortBusy
-title : StorPortBusy function
-author : windows-driver-content
-description : The StorPortBusy routine notifies the port driver that the adapter is currently busy, handling outstanding requests.
-old-location : storage\storportbusy.htm
-old-project : storage
-ms.assetid : 81e5b26d-78b5-4ee7-a47c-fc92d01752d1
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.storportbusy, StorPortBusy, storprt_b4765f8e-c48f-4920-bd1a-1ff9dbdd8656.xml, StorPortBusy routine [Storage Devices], storport/StorPortBusy
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Storport.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STOR_SPINLOCK
-req.product : Windows 10 or later.
+UID: NF:storport.StorPortBusy
+title: StorPortBusy function
+author: windows-driver-content
+description: The StorPortBusy routine notifies the port driver that the adapter is currently busy, handling outstanding requests.
+old-location: storage\storportbusy.htm
+old-project: storage
+ms.assetid: 81e5b26d-78b5-4ee7-a47c-fc92d01752d1
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.storportbusy, StorPortBusy, storprt_b4765f8e-c48f-4920-bd1a-1ff9dbdd8656.xml, StorPortBusy routine [Storage Devices], storport/StorPortBusy
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Storport.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Storport.lib
+-	Storport.dll
+apiname:
+-	StorPortBusy
+product: Windows
+targetos: Windows
+req.typenames: STOR_SPINLOCK
+req.product: Windows 10 or later.
 ---
 
 

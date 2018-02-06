@@ -1,42 +1,47 @@
 ---
-UID : NN:wiamindr_lh.IWiaMiniDrv
-title : IWiaMiniDrv
-author : windows-driver-content
-description : The IWiaMiniDrv interface provides the methods that are the entry points for all communication between the minidriver and the WIA service. These methods allow the WIA service to control the device.
-old-location : image\iwiaminidrv_interface.htm
-old-project : image
-ms.assetid : 15068d10-5e24-427c-9684-24ce67b75ada
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : image.iwiaminidrv_interface, IWiaMiniDrv interface [Imaging Devices], IWiaMiniDrv interface [Imaging Devices], described, IWiaMiniDrv, wiamindr_lh/IWiaMiniDrv, MiniDrv_8a22bfee-13f8-4efc-b31d-8dd9fabfe131.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : wiamindr_lh.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wiamindr_lh.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SCANWINDOW, *PSCANWINDOW
-req.product : Windows 10 or later.
+UID: NN:wiamindr_lh.IWiaMiniDrv
+title: IWiaMiniDrv
+author: windows-driver-content
+description: The IWiaMiniDrv interface provides the methods that are the entry points for all communication between the minidriver and the WIA service. These methods allow the WIA service to control the device.
+old-location: image\iwiaminidrv_interface.htm
+old-project: image
+ms.assetid: 15068d10-5e24-427c-9684-24ce67b75ada
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: image.iwiaminidrv_interface, IWiaMiniDrv interface [Imaging Devices], IWiaMiniDrv interface [Imaging Devices], described, IWiaMiniDrv, wiamindr_lh/IWiaMiniDrv, MiniDrv_8a22bfee-13f8-4efc-b31d-8dd9fabfe131.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: wiamindr_lh.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wiamindr_lh.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	wiamindr_lh.h
+apiname:
+-	IWiaMiniDrv
+product: Windows
+targetos: Windows
+req.typenames: SCANWINDOW, *PSCANWINDOW
+req.product: Windows 10 or later.
 ---
 
 # IWiaMiniDrv interface

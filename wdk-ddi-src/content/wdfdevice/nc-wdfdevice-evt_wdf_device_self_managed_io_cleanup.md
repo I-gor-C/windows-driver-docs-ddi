@@ -1,42 +1,47 @@
 ---
-UID : NC:wdfdevice.EVT_WDF_DEVICE_SELF_MANAGED_IO_CLEANUP
-title : EVT_WDF_DEVICE_SELF_MANAGED_IO_CLEANUP
-author : windows-driver-content
-description : A driver's EvtDeviceSelfManagedIoCleanup event callback function handles deallocation activity for the device's self-managed I/O operations, after a device has been removed.
-old-location : wdf\evtdeviceselfmanagediocleanup.htm
-old-project : wdf
-ms.assetid : 639ff3fd-ce38-417e-8fc4-a03ad259a5c8
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.evtdeviceselfmanagediocleanup, EvtDeviceSelfManagedIoCleanup callback function, EvtDeviceSelfManagedIoCleanup, EVT_WDF_DEVICE_SELF_MANAGED_IO_CLEANUP, EVT_WDF_DEVICE_SELF_MANAGED_IO_CLEANUP, wdfdevice/EvtDeviceSelfManagedIoCleanup, DFDeviceObjectGeneralRef_73e3f47e-1f3d-4dee-9fb2-62acbb5aaea2.xml, kmdf.evtdeviceselfmanagediocleanup
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdfdevice.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_DEVICE_SHUTDOWN_FLAGS
-req.product : Windows 10 or later.
+UID: NC:wdfdevice.EVT_WDF_DEVICE_SELF_MANAGED_IO_CLEANUP
+title: EVT_WDF_DEVICE_SELF_MANAGED_IO_CLEANUP
+author: windows-driver-content
+description: A driver's EvtDeviceSelfManagedIoCleanup event callback function handles deallocation activity for the device's self-managed I/O operations, after a device has been removed.
+old-location: wdf\evtdeviceselfmanagediocleanup.htm
+old-project: wdf
+ms.assetid: 639ff3fd-ce38-417e-8fc4-a03ad259a5c8
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.evtdeviceselfmanagediocleanup, EvtDeviceSelfManagedIoCleanup callback function, EvtDeviceSelfManagedIoCleanup, EVT_WDF_DEVICE_SELF_MANAGED_IO_CLEANUP, EVT_WDF_DEVICE_SELF_MANAGED_IO_CLEANUP, wdfdevice/EvtDeviceSelfManagedIoCleanup, DFDeviceObjectGeneralRef_73e3f47e-1f3d-4dee-9fb2-62acbb5aaea2.xml, kmdf.evtdeviceselfmanagediocleanup
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdfdevice.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Wdfdevice.h
+apiname:
+-	EvtDeviceSelfManagedIoCleanup
+product: Windows
+targetos: Windows
+req.typenames: WDF_DEVICE_SHUTDOWN_FLAGS
+req.product: Windows 10 or later.
 ---
 
 

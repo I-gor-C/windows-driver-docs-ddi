@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.ExInterlockedAddLargeStatistic
-title : ExInterlockedAddLargeStatistic macro
-author : windows-driver-content
-description : The ExInterlockedAddLargeStatistic routine performs an interlocked addition of a ULONG increment value to a LARGE_INTEGER variable.
-old-location : kernel\exinterlockedaddlargestatistic.htm
-old-project : kernel
-ms.assetid : f044a344-4768-499b-85b4-714062111b2c
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/ExInterlockedAddLargeStatistic, kernel.exinterlockedaddlargestatistic, ExInterlockedAddLargeStatistic, ExInterlockedAddLargeStatistic routine [Kernel-Mode Driver Architecture], k102_232887d0-d6f0-4664-bcff-221f371bfe6a.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : macro
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : Any level (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ExInterlockedAddLargeStatistic
+title: ExInterlockedAddLargeStatistic macro
+author: windows-driver-content
+description: The ExInterlockedAddLargeStatistic routine performs an interlocked addition of a ULONG increment value to a LARGE_INTEGER variable.
+old-location: kernel\exinterlockedaddlargestatistic.htm
+old-project: kernel
+ms.assetid: f044a344-4768-499b-85b4-714062111b2c
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/ExInterlockedAddLargeStatistic, kernel.exinterlockedaddlargestatistic, ExInterlockedAddLargeStatistic, ExInterlockedAddLargeStatistic routine [Kernel-Mode Driver Architecture], k102_232887d0-d6f0-4664-bcff-221f371bfe6a.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: macro
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: Any level (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ExInterlockedAddLargeStatistic
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

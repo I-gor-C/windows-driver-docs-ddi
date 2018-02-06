@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmdt._D3DKMDT_GDISURFACEDATA
-title : "_D3DKMDT_GDISURFACEDATA"
-author : windows-driver-content
-description : The D3DKMDT_GDISURFACEDATA structure describes surfaces that are used by GDI hardware acceleration and the Desktop Window Manager (DWM).
-old-location : display\d3dkmdt_gdisurfacedata.htm
-old-project : display
-ms.assetid : 7ae789dd-2454-4ed6-bd26-5ebfd9c33768
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DKMDT_GDISURFACEDATA, d3dkmdt/D3DKMDT_GDISURFACEDATA, display.d3dkmdt_gdisurfacedata, D3DKMDT_GDISURFACEDATA structure [Display Devices], DmStructs_91525c19-9d84-4406-b456-c6d80cb0f1d3.xml, _D3DKMDT_GDISURFACEDATA
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmdt.h
-req.include-header : D3dkmdt.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with Windows 7.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMDT_GDISURFACEDATA
+UID: NS:d3dkmdt._D3DKMDT_GDISURFACEDATA
+title: "_D3DKMDT_GDISURFACEDATA"
+author: windows-driver-content
+description: The D3DKMDT_GDISURFACEDATA structure describes surfaces that are used by GDI hardware acceleration and the Desktop Window Manager (DWM).
+old-location: display\d3dkmdt_gdisurfacedata.htm
+old-project: display
+ms.assetid: 7ae789dd-2454-4ed6-bd26-5ebfd9c33768
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DKMDT_GDISURFACEDATA, d3dkmdt/D3DKMDT_GDISURFACEDATA, display.d3dkmdt_gdisurfacedata, D3DKMDT_GDISURFACEDATA structure [Display Devices], DmStructs_91525c19-9d84-4406-b456-c6d80cb0f1d3.xml, _D3DKMDT_GDISURFACEDATA
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmdt.h
+req.include-header: D3dkmdt.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows 7.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmdt.h
+apiname:
+-	D3DKMDT_GDISURFACEDATA
+product: Windows
+targetos: Windows
+req.typenames: D3DKMDT_GDISURFACEDATA
 ---
 
 # _D3DKMDT_GDISURFACEDATA structure

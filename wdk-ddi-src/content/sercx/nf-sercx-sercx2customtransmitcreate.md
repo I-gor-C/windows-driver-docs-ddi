@@ -1,42 +1,47 @@
 ---
-UID : NF:sercx.SerCx2CustomTransmitCreate
-title : SerCx2CustomTransmitCreate function
-author : windows-driver-content
-description : The SerCx2CustomTransmitCreate method creates a custom-transmit object, which version 2 of the serial framework extension (SerCx2) uses to write transmit data to the serial controller by means of a custom data-transfer mechanism.
-old-location : serports\sercx2customtransmitcreate.htm
-old-project : serports
-ms.assetid : 2B904208-7561-4C39-A411-4E396FF1E609
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : serports.sercx2customtransmitcreate, SerCx2CustomTransmitCreate method [Serial Ports], SerCx2CustomTransmitCreate, 2/SerCx2CustomTransmitCreate
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : sercx.h
-req.include-header : 
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 8.1.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSERCX_STATUS, SERCX_STATUS"
-req.product : Windows 10 or later.
+UID: NF:sercx.SerCx2CustomTransmitCreate
+title: SerCx2CustomTransmitCreate function
+author: windows-driver-content
+description: The SerCx2CustomTransmitCreate method creates a custom-transmit object, which version 2 of the serial framework extension (SerCx2) uses to write transmit data to the serial controller by means of a custom data-transfer mechanism.
+old-location: serports\sercx2customtransmitcreate.htm
+old-project: serports
+ms.assetid: 2B904208-7561-4C39-A411-4E396FF1E609
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: serports.sercx2customtransmitcreate, SerCx2CustomTransmitCreate method [Serial Ports], SerCx2CustomTransmitCreate, 2/SerCx2CustomTransmitCreate
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: sercx.h
+req.include-header: 
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 8.1.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	2.0\Sercx.h
+apiname:
+-	SerCx2CustomTransmitCreate
+product: Windows
+targetos: Windows
+req.typenames: "*PSERCX_STATUS, SERCX_STATUS"
+req.product: Windows 10 or later.
 ---
 
 

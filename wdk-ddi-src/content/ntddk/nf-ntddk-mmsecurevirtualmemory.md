@@ -1,41 +1,46 @@
 ---
-UID : NF:ntddk.MmSecureVirtualMemory
-title : MmSecureVirtualMemory function
-author : windows-driver-content
-description : The MmSecureVirtualMemory routine secures a user-space memory address range so that it cannot be freed and its protection type cannot be made more restrictive.
-old-location : kernel\mmsecurevirtualmemory.htm
-old-project : kernel
-ms.assetid : e5c2d5d5-550e-42e5-b86a-f17e361925dc
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.mmsecurevirtualmemory, MmSecureVirtualMemory, k106_d85881bb-59a3-4494-afaa-55c49b71b64b.xml, MmSecureVirtualMemory routine [Kernel-Mode Driver Architecture], ntddk/MmSecureVirtualMemory
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : IrqlMmApcLte, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<=APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.MmSecureVirtualMemory
+title: MmSecureVirtualMemory function
+author: windows-driver-content
+description: The MmSecureVirtualMemory routine secures a user-space memory address range so that it cannot be freed and its protection type cannot be made more restrictive.
+old-location: kernel\mmsecurevirtualmemory.htm
+old-project: kernel
+ms.assetid: e5c2d5d5-550e-42e5-b86a-f17e361925dc
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.mmsecurevirtualmemory, MmSecureVirtualMemory, k106_d85881bb-59a3-4494-afaa-55c49b71b64b.xml, MmSecureVirtualMemory routine [Kernel-Mode Driver Architecture], ntddk/MmSecureVirtualMemory
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: IrqlMmApcLte, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<=APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	MmSecureVirtualMemory
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

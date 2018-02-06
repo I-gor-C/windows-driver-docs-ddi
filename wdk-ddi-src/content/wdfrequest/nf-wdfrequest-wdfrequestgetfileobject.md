@@ -1,42 +1,50 @@
 ---
-UID : NF:wdfrequest.WdfRequestGetFileObject
-title : WdfRequestGetFileObject function
-author : windows-driver-content
-description : The WdfRequestGetFileObject method retrieves the framework file object that is associated with a specified I/O request.
-old-location : wdf\wdfrequestgetfileobject.htm
-old-project : wdf
-ms.assetid : 0c5a1e12-b66f-4bcb-bb9d-739b883fe9c2
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WdfRequestGetFileObject, wdfrequest/WdfRequestGetFileObject, wdf.wdfrequestgetfileobject, PFN_WDFREQUESTGETFILEOBJECT, kmdf.wdfrequestgetfileobject, DFRequestObjectRef_cfa39375-4338-428c-aec5-52479b2a91ea.xml, WdfRequestGetFileObject method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfrequest.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : DriverCreate, FileObjectConfigured, InvalidReqAccess, InvalidReqAccessLocal, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_REQUEST_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfrequest.WdfRequestGetFileObject
+title: WdfRequestGetFileObject function
+author: windows-driver-content
+description: The WdfRequestGetFileObject method retrieves the framework file object that is associated with a specified I/O request.
+old-location: wdf\wdfrequestgetfileobject.htm
+old-project: wdf
+ms.assetid: 0c5a1e12-b66f-4bcb-bb9d-739b883fe9c2
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WdfRequestGetFileObject, wdfrequest/WdfRequestGetFileObject, wdf.wdfrequestgetfileobject, PFN_WDFREQUESTGETFILEOBJECT, kmdf.wdfrequestgetfileobject, DFRequestObjectRef_cfa39375-4338-428c-aec5-52479b2a91ea.xml, WdfRequestGetFileObject method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfrequest.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: DriverCreate, FileObjectConfigured, InvalidReqAccess, InvalidReqAccessLocal, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+-	WUDFx02000.dll
+-	WUDFx02000.dll.dll
+apiname:
+-	WdfRequestGetFileObject
+product: Windows
+targetos: Windows
+req.typenames: WDF_REQUEST_TYPE
+req.product: Windows 10 or later.
 ---
 
 

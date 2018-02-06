@@ -1,42 +1,47 @@
 ---
-UID : NC:wdfdriver.EVT_WDF_DRIVER_UNLOAD
-title : EVT_WDF_DRIVER_UNLOAD
-author : windows-driver-content
-description : A driver's EvtDriverUnload event callback function performs operations that must take place before the driver is unloaded.
-old-location : wdf\evtdriverunload.htm
-old-project : wdf
-ms.assetid : 2a2ed215-1b62-4ff1-bea6-e38fafbcf7d0
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.evtdriverunload, EvtDriverUnload callback function, EvtDriverUnload, EVT_WDF_DRIVER_UNLOAD, EVT_WDF_DRIVER_UNLOAD, wdfdriver/EvtDriverUnload, DFDriverObjectRef_4c29e844-1ad7-4d45-b01d-e03f841bb9dd.xml, kmdf.evtdriverunload
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdfdriver.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDF_DPC_CONFIG, WDF_DPC_CONFIG"
-req.product : Windows 10 or later.
+UID: NC:wdfdriver.EVT_WDF_DRIVER_UNLOAD
+title: EVT_WDF_DRIVER_UNLOAD
+author: windows-driver-content
+description: A driver's EvtDriverUnload event callback function performs operations that must take place before the driver is unloaded.
+old-location: wdf\evtdriverunload.htm
+old-project: wdf
+ms.assetid: 2a2ed215-1b62-4ff1-bea6-e38fafbcf7d0
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.evtdriverunload, EvtDriverUnload callback function, EvtDriverUnload, EVT_WDF_DRIVER_UNLOAD, EVT_WDF_DRIVER_UNLOAD, wdfdriver/EvtDriverUnload, DFDriverObjectRef_4c29e844-1ad7-4d45-b01d-e03f841bb9dd.xml, kmdf.evtdriverunload
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdfdriver.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Wdfdriver.h
+apiname:
+-	EvtDriverUnload
+product: Windows
+targetos: Windows
+req.typenames: "*PWDF_DPC_CONFIG, WDF_DPC_CONFIG"
+req.product: Windows 10 or later.
 ---
 
 

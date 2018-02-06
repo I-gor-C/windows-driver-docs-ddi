@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddndis._NDIS_SWITCH_PORT_PROPERTY_ROUTING_DOMAIN
-title : "_NDIS_SWITCH_PORT_PROPERTY_ROUTING_DOMAIN"
-author : windows-driver-content
-description : The NDIS_SWITCH_PORT_PROPERTY_ROUTING_DOMAIN structure is used to specify the routing domain properties of a VM network adapter.
-old-location : netvista\ndis_switch_port_property_routing_domain.htm
-old-project : netvista
-ms.assetid : 6E1DF4F3-9ED4-4E34-A768-1B5008D61B0C
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : "_NDIS_SWITCH_PORT_PROPERTY_ROUTING_DOMAIN, PNDIS_SWITCH_PORT_PROPERTY_ROUTING_DOMAIN, NDIS_SWITCH_PORT_PROPERTY_ROUTING_DOMAIN, ntddndis/NDIS_SWITCH_PORT_PROPERTY_ROUTING_DOMAIN, ntddndis/PNDIS_SWITCH_PORT_PROPERTY_ROUTING_DOMAIN, *PNDIS_SWITCH_PORT_PROPERTY_ROUTING_DOMAIN, PNDIS_SWITCH_PORT_PROPERTY_ROUTING_DOMAIN structure pointer [Network Drivers Starting with Windows Vista], netvista.ndis_switch_port_property_routing_domain, NDIS_SWITCH_PORT_PROPERTY_ROUTING_DOMAIN structure [Network Drivers Starting with Windows Vista]"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.40 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PNDIS_SWITCH_PORT_PROPERTY_ROUTING_DOMAIN, NDIS_SWITCH_PORT_PROPERTY_ROUTING_DOMAIN"
+UID: NS:ntddndis._NDIS_SWITCH_PORT_PROPERTY_ROUTING_DOMAIN
+title: "_NDIS_SWITCH_PORT_PROPERTY_ROUTING_DOMAIN"
+author: windows-driver-content
+description: The NDIS_SWITCH_PORT_PROPERTY_ROUTING_DOMAIN structure is used to specify the routing domain properties of a VM network adapter.
+old-location: netvista\ndis_switch_port_property_routing_domain.htm
+old-project: netvista
+ms.assetid: 6E1DF4F3-9ED4-4E34-A768-1B5008D61B0C
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: "_NDIS_SWITCH_PORT_PROPERTY_ROUTING_DOMAIN, PNDIS_SWITCH_PORT_PROPERTY_ROUTING_DOMAIN, NDIS_SWITCH_PORT_PROPERTY_ROUTING_DOMAIN, ntddndis/NDIS_SWITCH_PORT_PROPERTY_ROUTING_DOMAIN, ntddndis/PNDIS_SWITCH_PORT_PROPERTY_ROUTING_DOMAIN, *PNDIS_SWITCH_PORT_PROPERTY_ROUTING_DOMAIN, PNDIS_SWITCH_PORT_PROPERTY_ROUTING_DOMAIN structure pointer [Network Drivers Starting with Windows Vista], netvista.ndis_switch_port_property_routing_domain, NDIS_SWITCH_PORT_PROPERTY_ROUTING_DOMAIN structure [Network Drivers Starting with Windows Vista]"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.40 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddndis.h
+apiname:
+-	NDIS_SWITCH_PORT_PROPERTY_ROUTING_DOMAIN
+product: Windows
+targetos: Windows
+req.typenames: "*PNDIS_SWITCH_PORT_PROPERTY_ROUTING_DOMAIN, NDIS_SWITCH_PORT_PROPERTY_ROUTING_DOMAIN"
 ---
 
 # _NDIS_SWITCH_PORT_PROPERTY_ROUTING_DOMAIN structure

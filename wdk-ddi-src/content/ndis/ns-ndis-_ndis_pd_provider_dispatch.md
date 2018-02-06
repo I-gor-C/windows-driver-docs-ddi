@@ -1,41 +1,46 @@
 ---
-UID : NS:ndis._NDIS_PD_PROVIDER_DISPATCH
-title : "_NDIS_PD_PROVIDER_DISPATCH"
-author : windows-driver-content
-description : This structure is used as input for the OID_PD_OPEN_PROVIDER and serves as a container for all the provider's driver routines.
-old-location : netvista\ndis_pd_provider_dispatch.htm
-old-project : netvista
-ms.assetid : E93B8A07-7C06-470B-9B26-8D59C2685D2C
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.ndis_pd_provider_dispatch, PNDIS_PD_PROVIDER_DISPATCH structure pointer [Network Drivers Starting with Windows Vista], ndis/NDIS_PD_PROVIDER_DISPATCH, ndis/PNDIS_PD_PROVIDER_DISPATCH, _NDIS_PD_PROVIDER_DISPATCH, NDIS_PD_PROVIDER_DISPATCH, PNDIS_PD_PROVIDER_DISPATCH, NDIS_PD_PROVIDER_DISPATCH structure [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndis.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : See Remarks section
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_PD_PROVIDER_DISPATCH
+UID: NS:ndis._NDIS_PD_PROVIDER_DISPATCH
+title: "_NDIS_PD_PROVIDER_DISPATCH"
+author: windows-driver-content
+description: This structure is used as input for the OID_PD_OPEN_PROVIDER and serves as a container for all the provider's driver routines.
+old-location: netvista\ndis_pd_provider_dispatch.htm
+old-project: netvista
+ms.assetid: E93B8A07-7C06-470B-9B26-8D59C2685D2C
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.ndis_pd_provider_dispatch, PNDIS_PD_PROVIDER_DISPATCH structure pointer [Network Drivers Starting with Windows Vista], ndis/NDIS_PD_PROVIDER_DISPATCH, ndis/PNDIS_PD_PROVIDER_DISPATCH, _NDIS_PD_PROVIDER_DISPATCH, NDIS_PD_PROVIDER_DISPATCH, PNDIS_PD_PROVIDER_DISPATCH, NDIS_PD_PROVIDER_DISPATCH structure [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndis.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: See Remarks section
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ndis.h
+apiname:
+-	NDIS_PD_PROVIDER_DISPATCH
+product: Windows
+targetos: Windows
+req.typenames: NDIS_PD_PROVIDER_DISPATCH
 ---
 
 # _NDIS_PD_PROVIDER_DISPATCH structure

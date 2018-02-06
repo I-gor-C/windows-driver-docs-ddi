@@ -1,41 +1,46 @@
 ---
-UID : NS:d3d10umddi._D3D11_1DDI_GETCAPTUREHANDLEDATA
-title : "_D3D11_1DDI_GETCAPTUREHANDLEDATA"
-author : windows-driver-content
-description : Defines a resource allocation in a call to the GetCaptureHandle function.
-old-location : display\d3d11_1ddi_getcapturehandledata.htm
-old-project : display
-ms.assetid : f12ace3a-2bb4-433b-b987-2027a48f4c14
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3D11_1DDI_GETCAPTUREHANDLEDATA structure [Display Devices], d3d10umddi/D3D11_1DDI_GETCAPTUREHANDLEDATA, D3D11_1DDI_GETCAPTUREHANDLEDATA, display.d3d11_1ddi_getcapturehandledata, _D3D11_1DDI_GETCAPTUREHANDLEDATA
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3D11_1DDI_GETCAPTUREHANDLEDATA
+UID: NS:d3d10umddi._D3D11_1DDI_GETCAPTUREHANDLEDATA
+title: "_D3D11_1DDI_GETCAPTUREHANDLEDATA"
+author: windows-driver-content
+description: Defines a resource allocation in a call to the GetCaptureHandle function.
+old-location: display\d3d11_1ddi_getcapturehandledata.htm
+old-project: display
+ms.assetid: f12ace3a-2bb4-433b-b987-2027a48f4c14
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3D11_1DDI_GETCAPTUREHANDLEDATA structure [Display Devices], d3d10umddi/D3D11_1DDI_GETCAPTUREHANDLEDATA, D3D11_1DDI_GETCAPTUREHANDLEDATA, display.d3d11_1ddi_getcapturehandledata, _D3D11_1DDI_GETCAPTUREHANDLEDATA
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	D3d10umddi.h
+apiname:
+-	D3D11_1DDI_GETCAPTUREHANDLEDATA
+product: Windows
+targetos: Windows
+req.typenames: D3D11_1DDI_GETCAPTUREHANDLEDATA
 ---
 
 # _D3D11_1DDI_GETCAPTUREHANDLEDATA structure

@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGKARG_SETVIDPNSOURCEADDRESSWITHMULTIPLANEOVERLAY3
-title : "_DXGKARG_SETVIDPNSOURCEADDRESSWITHMULTIPLANEOVERLAY3"
-author : windows-driver-content
-description : Contains arguments for the DxgkDdiSetVidPnSourceAddressWithMultiPlaneOverlay3 function.
-old-location : display\dxgkarg_setvidpnsourceaddresswithmultiplaneoverlay3.htm
-old-project : display
-ms.assetid : 1C6324DB-18E2-4CBC-9589-73DF3EB79503
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DXGKARG_SETVIDPNSOURCEADDRESSWITHMULTIPLANEOVERLAY3 structure [Display Devices], d3dkmddi/DXGKARG_SETVIDPNSOURCEADDRESSWITHMULTIPLANEOVERLAY3, _DXGKARG_SETVIDPNSOURCEADDRESSWITHMULTIPLANEOVERLAY3, display.dxgkarg_setvidpnsourceaddresswithmultiplaneoverlay3, DXGKARG_SETVIDPNSOURCEADDRESSWITHMULTIPLANEOVERLAY3, *IN_OUT_PDXGKARG_SETVIDPNSOURCEADDRESSWITHMULTIPLANEOVERLAY3
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGKARG_SETVIDPNSOURCEADDRESSWITHMULTIPLANEOVERLAY3
+UID: NS:d3dkmddi._DXGKARG_SETVIDPNSOURCEADDRESSWITHMULTIPLANEOVERLAY3
+title: "_DXGKARG_SETVIDPNSOURCEADDRESSWITHMULTIPLANEOVERLAY3"
+author: windows-driver-content
+description: Contains arguments for the DxgkDdiSetVidPnSourceAddressWithMultiPlaneOverlay3 function.
+old-location: display\dxgkarg_setvidpnsourceaddresswithmultiplaneoverlay3.htm
+old-project: display
+ms.assetid: 1C6324DB-18E2-4CBC-9589-73DF3EB79503
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DXGKARG_SETVIDPNSOURCEADDRESSWITHMULTIPLANEOVERLAY3 structure [Display Devices], d3dkmddi/DXGKARG_SETVIDPNSOURCEADDRESSWITHMULTIPLANEOVERLAY3, _DXGKARG_SETVIDPNSOURCEADDRESSWITHMULTIPLANEOVERLAY3, display.dxgkarg_setvidpnsourceaddresswithmultiplaneoverlay3, DXGKARG_SETVIDPNSOURCEADDRESSWITHMULTIPLANEOVERLAY3, *IN_OUT_PDXGKARG_SETVIDPNSOURCEADDRESSWITHMULTIPLANEOVERLAY3
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DXGKARG_SETVIDPNSOURCEADDRESSWITHMULTIPLANEOVERLAY3
+product: Windows
+targetos: Windows
+req.typenames: DXGKARG_SETVIDPNSOURCEADDRESSWITHMULTIPLANEOVERLAY3
 ---
 
 # _DXGKARG_SETVIDPNSOURCEADDRESSWITHMULTIPLANEOVERLAY3 structure

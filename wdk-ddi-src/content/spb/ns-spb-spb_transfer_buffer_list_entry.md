@@ -1,42 +1,47 @@
 ---
-UID : NS:spb.SPB_TRANSFER_BUFFER_LIST_ENTRY
-title : SPB_TRANSFER_BUFFER_LIST_ENTRY
-author : windows-driver-content
-description : The SPB_TRANSFER_BUFFER_LIST_ENTRY structure describes either a simple transfer buffer, or an element in an array of one or more transfer buffers.
-old-location : spb\spb_transfer_buffer_list_entry.htm
-old-project : SPB
-ms.assetid : C53F4F44-5338-4BEF-8055-AE4AC37002AC
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : SPB_TRANSFER_BUFFER_LIST_ENTRY structure [Buses], *PSPB_TRANSFER_BUFFER_LIST_ENTRY, spb/SPB_TRANSFER_BUFFER_LIST_ENTRY, PSPB_TRANSFER_BUFFER_LIST_ENTRY, PSPB_TRANSFER_BUFFER_LIST_ENTRY structure pointer [Buses], SPB.spb_transfer_buffer_list_entry, SPB_TRANSFER_BUFFER_LIST_ENTRY, spb/PSPB_TRANSFER_BUFFER_LIST_ENTRY
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : spb.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SPB_TRANSFER_BUFFER_LIST_ENTRY, *PSPB_TRANSFER_BUFFER_LIST_ENTRY
-req.product : Windows 10 or later.
+UID: NS:spb.SPB_TRANSFER_BUFFER_LIST_ENTRY
+title: SPB_TRANSFER_BUFFER_LIST_ENTRY
+author: windows-driver-content
+description: The SPB_TRANSFER_BUFFER_LIST_ENTRY structure describes either a simple transfer buffer, or an element in an array of one or more transfer buffers.
+old-location: spb\spb_transfer_buffer_list_entry.htm
+old-project: SPB
+ms.assetid: C53F4F44-5338-4BEF-8055-AE4AC37002AC
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: SPB_TRANSFER_BUFFER_LIST_ENTRY structure [Buses], *PSPB_TRANSFER_BUFFER_LIST_ENTRY, spb/SPB_TRANSFER_BUFFER_LIST_ENTRY, PSPB_TRANSFER_BUFFER_LIST_ENTRY, PSPB_TRANSFER_BUFFER_LIST_ENTRY structure pointer [Buses], SPB.spb_transfer_buffer_list_entry, SPB_TRANSFER_BUFFER_LIST_ENTRY, spb/PSPB_TRANSFER_BUFFER_LIST_ENTRY
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: spb.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Spb.h
+apiname:
+-	SPB_TRANSFER_BUFFER_LIST_ENTRY
+product: Windows
+targetos: Windows
+req.typenames: SPB_TRANSFER_BUFFER_LIST_ENTRY, *PSPB_TRANSFER_BUFFER_LIST_ENTRY
+req.product: Windows 10 or later.
 ---
 
 # SPB_TRANSFER_BUFFER_LIST_ENTRY structure

@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisMGetBusData
-title : NdisMGetBusData function
-author : windows-driver-content
-description : NDIS drivers call the NdisMGetBusData function to read the configuration space of a device.
-old-location : netvista\ndismgetbusdata.htm
-old-project : netvista
-ms.assetid : 495191f4-a5c6-4223-8c5d-e4c0ecb0cc5d
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.ndismgetbusdata, hardware_configuration_ref_e2ffab8c-2dba-4b49-a7dc-246a4792ca43.xml, ndis/NdisMGetBusData, NdisMGetBusData, NdisMGetBusData function [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisMGetBusData
+title: NdisMGetBusData function
+author: windows-driver-content
+description: NDIS drivers call the NdisMGetBusData function to read the configuration space of a device.
+old-location: netvista\ndismgetbusdata.htm
+old-project: netvista
+ms.assetid: 495191f4-a5c6-4223-8c5d-e4c0ecb0cc5d
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.ndismgetbusdata, hardware_configuration_ref_e2ffab8c-2dba-4b49-a7dc-246a4792ca43.xml, ndis/NdisMGetBusData, NdisMGetBusData, NdisMGetBusData function [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisMGetBusData
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NF:d3dkmthk.D3DKMTSetVidPnSourceOwner1
-title : D3DKMTSetVidPnSourceOwner1 function
-author : windows-driver-content
-description : Sets and releases the video present source in the path of a video present network (VidPN) topology that owns the VidPN, and lets output duplication options be specified. Supported starting with Windows 8.
-old-location : display\d3dkmtsetvidpnsourceowner1.htm
-old-project : display
-ms.assetid : ccee5459-f156-41c3-b9a1-8bd7d16c8d19
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : PFND3DKMT_SETVIDPNSOURCEOWNER1, display.d3dkmtsetvidpnsourceowner1, D3DKMTSetVidPnSourceOwner1, D3DKMTSetVidPnSourceOwner1 function [Display Devices], d3dkmthk/D3DKMTSetVidPnSourceOwner1
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Universal
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Gdi32.lib
-req.dll : Gdi32.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_DRIVERVERSION
+UID: NF:d3dkmthk.D3DKMTSetVidPnSourceOwner1
+title: D3DKMTSetVidPnSourceOwner1 function
+author: windows-driver-content
+description: Sets and releases the video present source in the path of a video present network (VidPN) topology that owns the VidPN, and lets output duplication options be specified. Supported starting with Windows 8.
+old-location: display\d3dkmtsetvidpnsourceowner1.htm
+old-project: display
+ms.assetid: ccee5459-f156-41c3-b9a1-8bd7d16c8d19
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: PFND3DKMT_SETVIDPNSOURCEOWNER1, display.d3dkmtsetvidpnsourceowner1, D3DKMTSetVidPnSourceOwner1, D3DKMTSetVidPnSourceOwner1 function [Display Devices], d3dkmthk/D3DKMTSetVidPnSourceOwner1
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Universal
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Gdi32.lib
+req.dll: Gdi32.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Gdi32.dll
+apiname:
+-	D3DKMTSetVidPnSourceOwner1
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_DRIVERVERSION
 ---
 
 

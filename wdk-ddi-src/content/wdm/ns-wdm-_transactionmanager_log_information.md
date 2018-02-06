@@ -1,42 +1,47 @@
 ---
-UID : NS:wdm._TRANSACTIONMANAGER_LOG_INFORMATION
-title : "_TRANSACTIONMANAGER_LOG_INFORMATION"
-author : windows-driver-content
-description : The TRANSACTIONMANAGER_LOG_INFORMATION structure contains information about a transaction manager object.
-old-location : kernel\transactionmanager_log_information.htm
-old-project : kernel
-ms.assetid : 7d0da54d-54a2-4440-910f-d99716660506
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ktm_ref_3cdc0767-5078-43dc-8a25-3e90a4a1483a.xml, PTRANSACTIONMANAGER_LOG_INFORMATION structure pointer [Kernel-Mode Driver Architecture], TRANSACTIONMANAGER_LOG_INFORMATION structure [Kernel-Mode Driver Architecture], wdm/TRANSACTIONMANAGER_LOG_INFORMATION, _TRANSACTIONMANAGER_LOG_INFORMATION, wdm/PTRANSACTIONMANAGER_LOG_INFORMATION, *PTRANSACTIONMANAGER_LOG_INFORMATION, PTRANSACTIONMANAGER_LOG_INFORMATION, kernel.transactionmanager_log_information, TRANSACTIONMANAGER_LOG_INFORMATION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later operating system versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TRANSACTIONMANAGER_LOG_INFORMATION, *PTRANSACTIONMANAGER_LOG_INFORMATION
-req.product : Windows 10 or later.
+UID: NS:wdm._TRANSACTIONMANAGER_LOG_INFORMATION
+title: "_TRANSACTIONMANAGER_LOG_INFORMATION"
+author: windows-driver-content
+description: The TRANSACTIONMANAGER_LOG_INFORMATION structure contains information about a transaction manager object.
+old-location: kernel\transactionmanager_log_information.htm
+old-project: kernel
+ms.assetid: 7d0da54d-54a2-4440-910f-d99716660506
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ktm_ref_3cdc0767-5078-43dc-8a25-3e90a4a1483a.xml, PTRANSACTIONMANAGER_LOG_INFORMATION structure pointer [Kernel-Mode Driver Architecture], TRANSACTIONMANAGER_LOG_INFORMATION structure [Kernel-Mode Driver Architecture], wdm/TRANSACTIONMANAGER_LOG_INFORMATION, _TRANSACTIONMANAGER_LOG_INFORMATION, wdm/PTRANSACTIONMANAGER_LOG_INFORMATION, *PTRANSACTIONMANAGER_LOG_INFORMATION, PTRANSACTIONMANAGER_LOG_INFORMATION, kernel.transactionmanager_log_information, TRANSACTIONMANAGER_LOG_INFORMATION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later operating system versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	TRANSACTIONMANAGER_LOG_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: TRANSACTIONMANAGER_LOG_INFORMATION, *PTRANSACTIONMANAGER_LOG_INFORMATION
+req.product: Windows 10 or later.
 ---
 
 # _TRANSACTIONMANAGER_LOG_INFORMATION structure

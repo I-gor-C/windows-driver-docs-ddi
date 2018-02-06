@@ -1,42 +1,47 @@
 ---
-UID : NC:strmini.PHW_INTERRUPT
-title : PHW_INTERRUPT
-author : windows-driver-content
-description : StrMiniInterrupt is the minidriver's interrupt service routine.
-old-location : stream\strminiinterrupt.htm
-old-project : stream
-ms.assetid : a98986c6-f4ac-4e2e-9ba0-49fec6684158
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.strminiinterrupt, StrMiniInterrupt, StrMiniInterrupt routine [Streaming Media Devices], StrMiniInterrupt, PHW_INTERRUPT, PHW_INTERRUPT, strmini/StrMiniInterrupt, strmini-routines_10ec4194-fc96-49da-a7d7-e7e90ead67e3.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : strmini.h
-req.include-header : Strmini.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PZONE_DESCRIPTIOR, ZONE_DESCRIPTIOR"
-req.product : Windows 10 or later.
+UID: NC:strmini.PHW_INTERRUPT
+title: PHW_INTERRUPT
+author: windows-driver-content
+description: StrMiniInterrupt is the minidriver's interrupt service routine.
+old-location: stream\strminiinterrupt.htm
+old-project: stream
+ms.assetid: a98986c6-f4ac-4e2e-9ba0-49fec6684158
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.strminiinterrupt, StrMiniInterrupt, StrMiniInterrupt routine [Streaming Media Devices], StrMiniInterrupt, PHW_INTERRUPT, PHW_INTERRUPT, strmini/StrMiniInterrupt, strmini-routines_10ec4194-fc96-49da-a7d7-e7e90ead67e3.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: strmini.h
+req.include-header: Strmini.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	strmini.h
+apiname:
+-	StrMiniInterrupt
+product: Windows
+targetos: Windows
+req.typenames: "*PZONE_DESCRIPTIOR, ZONE_DESCRIPTIOR"
+req.product: Windows 10 or later.
 ---
 
 

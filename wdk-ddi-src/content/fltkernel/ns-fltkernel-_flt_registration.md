@@ -1,41 +1,46 @@
 ---
-UID : NS:fltkernel._FLT_REGISTRATION
-title : "_FLT_REGISTRATION"
-author : windows-driver-content
-description : The FLT_REGISTRATION structure is passed as a parameter to FltRegisterFilter.
-old-location : ifsk\flt_registration.htm
-old-project : ifsk
-ms.assetid : 3313af42-0e0a-4ad0-b0bb-0afb795e24fd
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : "*PFLT_REGISTRATION, _FLT_REGISTRATION, FLTFL_REGISTRATION_SUPPORT_NPFS_MSFS, fltkernel/FLT_REGISTRATION, FltSystemStructures_5257e153-faae-4eb8-845a-f6c137a29390.xml, FLTFL_REGISTRATION_DO_NOT_SUPPORT_SERVICE_STOP, ifsk.flt_registration, FLT_REGISTRATION, FLT_REGISTRATION structure [Installable File System Drivers], fltkernel/PFLT_REGISTRATION, PFLT_REGISTRATION structure pointer [Installable File System Drivers], PFLT_REGISTRATION, FLTFL_REGISTRATION_SUPPORT_DAX_VOLUME"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PFLT_REGISTRATION, FLT_REGISTRATION"
+UID: NS:fltkernel._FLT_REGISTRATION
+title: "_FLT_REGISTRATION"
+author: windows-driver-content
+description: The FLT_REGISTRATION structure is passed as a parameter to FltRegisterFilter.
+old-location: ifsk\flt_registration.htm
+old-project: ifsk
+ms.assetid: 3313af42-0e0a-4ad0-b0bb-0afb795e24fd
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: "*PFLT_REGISTRATION, _FLT_REGISTRATION, FLTFL_REGISTRATION_SUPPORT_NPFS_MSFS, fltkernel/FLT_REGISTRATION, FltSystemStructures_5257e153-faae-4eb8-845a-f6c137a29390.xml, FLTFL_REGISTRATION_DO_NOT_SUPPORT_SERVICE_STOP, ifsk.flt_registration, FLT_REGISTRATION, FLT_REGISTRATION structure [Installable File System Drivers], fltkernel/PFLT_REGISTRATION, PFLT_REGISTRATION structure pointer [Installable File System Drivers], PFLT_REGISTRATION, FLTFL_REGISTRATION_SUPPORT_DAX_VOLUME"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	fltkernel.h
+apiname:
+-	FLT_REGISTRATION
+product: Windows
+targetos: Windows
+req.typenames: "*PFLT_REGISTRATION, FLT_REGISTRATION"
 ---
 
 # _FLT_REGISTRATION structure

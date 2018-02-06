@@ -1,41 +1,46 @@
 ---
-UID : NI:hidclass.IOCTL_HID_GET_SERIALNUMBER_STRING
-title : IOCTL_HID_GET_SERIALNUMBER_STRING
-author : windows-driver-content
-description : The IOCTL_HID_GET_SERIALNUMBER_STRING request obtains a top-level collection's embedded string that identifies the device's serial number.
-old-location : hid\ioctl_hid_get_serialnumber_string.htm
-old-project : hid
-ms.assetid : 81adb295-a4b3-46de-8b46-15fe89c5f7a5
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : hid.ioctl_hid_get_serialnumber_string, IOCTL_HID_GET_SERIALNUMBER_STRING control code [Human Input Devices], IOCTL_HID_GET_SERIALNUMBER_STRING, hidclass/IOCTL_HID_GET_SERIALNUMBER_STRING, hidioreq_6f0fd737-3834-4f3e-be8d-4027b6525c87.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : hidclass.h
-req.include-header : Hidclass.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HDAUDIO_STREAM_FORMAT, *PHDAUDIO_STREAM_FORMAT
+UID: NI:hidclass.IOCTL_HID_GET_SERIALNUMBER_STRING
+title: IOCTL_HID_GET_SERIALNUMBER_STRING
+author: windows-driver-content
+description: The IOCTL_HID_GET_SERIALNUMBER_STRING request obtains a top-level collection's embedded string that identifies the device's serial number.
+old-location: hid\ioctl_hid_get_serialnumber_string.htm
+old-project: hid
+ms.assetid: 81adb295-a4b3-46de-8b46-15fe89c5f7a5
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: hid.ioctl_hid_get_serialnumber_string, IOCTL_HID_GET_SERIALNUMBER_STRING control code [Human Input Devices], IOCTL_HID_GET_SERIALNUMBER_STRING, hidclass/IOCTL_HID_GET_SERIALNUMBER_STRING, hidioreq_6f0fd737-3834-4f3e-be8d-4027b6525c87.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: hidclass.h
+req.include-header: Hidclass.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hidclass.h
+apiname:
+-	IOCTL_HID_GET_SERIALNUMBER_STRING
+product: Windows
+targetos: Windows
+req.typenames: HDAUDIO_STREAM_FORMAT, *PHDAUDIO_STREAM_FORMAT
 ---
 
 # IOCTL_HID_GET_SERIALNUMBER_STRING IOCTL

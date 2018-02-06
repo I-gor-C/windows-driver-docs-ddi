@@ -1,42 +1,47 @@
 ---
-UID : NF:storport.StorPortEnablePassiveInitialization
-title : StorPortEnablePassiveInitialization function
-author : windows-driver-content
-description : The StorPortEnablePassiveInitialization routine enables the miniport's HwStorPassiveInitializeRoutine callback routine to execute at PASSIVE_LEVEL during miniport initialization.
-old-location : storage\storportenablepassiveinitialization.htm
-old-project : storage
-ms.assetid : 881253d2-b44d-4c41-ad72-b0143dc50803
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : StorPortEnablePassiveInitialization routine [Storage Devices], storage.storportenablepassiveinitialization, StorPortEnablePassiveInitialization, storprt_faea18e4-c684-4010-aca4-177132c011c5.xml, storport/StorPortEnablePassiveInitialization
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : StorPortEnablePassive, StorPortPassiveFromHwInit
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : DIRQL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STOR_SPINLOCK
-req.product : Windows 10 or later.
+UID: NF:storport.StorPortEnablePassiveInitialization
+title: StorPortEnablePassiveInitialization function
+author: windows-driver-content
+description: The StorPortEnablePassiveInitialization routine enables the miniport's HwStorPassiveInitializeRoutine callback routine to execute at PASSIVE_LEVEL during miniport initialization.
+old-location: storage\storportenablepassiveinitialization.htm
+old-project: storage
+ms.assetid: 881253d2-b44d-4c41-ad72-b0143dc50803
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: StorPortEnablePassiveInitialization routine [Storage Devices], storage.storportenablepassiveinitialization, StorPortEnablePassiveInitialization, storprt_faea18e4-c684-4010-aca4-177132c011c5.xml, storport/StorPortEnablePassiveInitialization
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: StorPortEnablePassive, StorPortPassiveFromHwInit
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: DIRQL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	storport.h
+apiname:
+-	StorPortEnablePassiveInitialization
+product: Windows
+targetos: Windows
+req.typenames: STOR_SPINLOCK
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NN:wudfddi.IPowerPolicyCallbackWakeFromS0
-title : IPowerPolicyCallbackWakeFromS0
-author : windows-driver-content
-description : A driver's IPowerPolicyCallbackWakeFromS0 interface provides callback functions that the framework calls to notify the driver about wake events.
-old-location : wdf\ipowerpolicycallbackwakefroms0.htm
-old-project : wdf
-ms.assetid : d1b29916-9800-4276-860c-f7d143deb962
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.ipowerpolicycallbackwakefroms0, IPowerPolicyCallbackWakeFromS0 interface, IPowerPolicyCallbackWakeFromS0 interface, described, IPowerPolicyCallbackWakeFromS0, wudfddi/IPowerPolicyCallbackWakeFromS0, UMDFDeviceObjectRef_e79ecf1d-279d-4945-941a-ed53b00f6242.xml, umdf.ipowerpolicycallbackwakefroms0
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.9
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NN:wudfddi.IPowerPolicyCallbackWakeFromS0
+title: IPowerPolicyCallbackWakeFromS0
+author: windows-driver-content
+description: A driver's IPowerPolicyCallbackWakeFromS0 interface provides callback functions that the framework calls to notify the driver about wake events.
+old-location: wdf\ipowerpolicycallbackwakefroms0.htm
+old-project: wdf
+ms.assetid: d1b29916-9800-4276-860c-f7d143deb962
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.ipowerpolicycallbackwakefroms0, IPowerPolicyCallbackWakeFromS0 interface, IPowerPolicyCallbackWakeFromS0 interface, described, IPowerPolicyCallbackWakeFromS0, wudfddi/IPowerPolicyCallbackWakeFromS0, UMDFDeviceObjectRef_e79ecf1d-279d-4945-941a-ed53b00f6242.xml, umdf.ipowerpolicycallbackwakefroms0
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.9
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Wudfddi.h
+apiname:
+-	IPowerPolicyCallbackWakeFromS0
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 # IPowerPolicyCallbackWakeFromS0 interface

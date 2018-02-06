@@ -1,41 +1,46 @@
 ---
-UID : NS:bthioctl._BTH_SDP_ATTRIBUTE_SEARCH_REQUEST
-title : "_BTH_SDP_ATTRIBUTE_SEARCH_REQUEST"
-author : windows-driver-content
-description : The BTH_SDP_ATTRIBUTE_SEARCH_REQUEST structure contains information pertinent to an SDP attribute search.
-old-location : bltooth\bth_sdp_attribute_search_request.htm
-old-project : bltooth
-ms.assetid : 46198c94-df83-42bb-ad3e-181f252ccd99
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : BTH_SDP_ATTRIBUTE_SEARCH_REQUEST, PBTH_SDP_ATTRIBUTE_SEARCH_REQUEST, _BTH_SDP_ATTRIBUTE_SEARCH_REQUEST, PBTH_SDP_ATTRIBUTE_SEARCH_REQUEST structure pointer [Bluetooth Devices], bth_structs_7856642e-a720-490e-9240-d61ac6f257b4.xml, bltooth.bth_sdp_attribute_search_request, bthioctl/BTH_SDP_ATTRIBUTE_SEARCH_REQUEST, bthioctl/PBTH_SDP_ATTRIBUTE_SEARCH_REQUEST, *PBTH_SDP_ATTRIBUTE_SEARCH_REQUEST, BTH_SDP_ATTRIBUTE_SEARCH_REQUEST structure [Bluetooth Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : bthioctl.h
-req.include-header : Bthioctl.h
-req.target-type : Windows
-req.target-min-winverclnt : Versions:\_Supported in Windows Vista, and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= PASSIVE_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PBTH_SDP_ATTRIBUTE_SEARCH_REQUEST, BTH_SDP_ATTRIBUTE_SEARCH_REQUEST"
+UID: NS:bthioctl._BTH_SDP_ATTRIBUTE_SEARCH_REQUEST
+title: "_BTH_SDP_ATTRIBUTE_SEARCH_REQUEST"
+author: windows-driver-content
+description: The BTH_SDP_ATTRIBUTE_SEARCH_REQUEST structure contains information pertinent to an SDP attribute search.
+old-location: bltooth\bth_sdp_attribute_search_request.htm
+old-project: bltooth
+ms.assetid: 46198c94-df83-42bb-ad3e-181f252ccd99
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: BTH_SDP_ATTRIBUTE_SEARCH_REQUEST, PBTH_SDP_ATTRIBUTE_SEARCH_REQUEST, _BTH_SDP_ATTRIBUTE_SEARCH_REQUEST, PBTH_SDP_ATTRIBUTE_SEARCH_REQUEST structure pointer [Bluetooth Devices], bth_structs_7856642e-a720-490e-9240-d61ac6f257b4.xml, bltooth.bth_sdp_attribute_search_request, bthioctl/BTH_SDP_ATTRIBUTE_SEARCH_REQUEST, bthioctl/PBTH_SDP_ATTRIBUTE_SEARCH_REQUEST, *PBTH_SDP_ATTRIBUTE_SEARCH_REQUEST, BTH_SDP_ATTRIBUTE_SEARCH_REQUEST structure [Bluetooth Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: bthioctl.h
+req.include-header: Bthioctl.h
+req.target-type: Windows
+req.target-min-winverclnt: Versions:\_Supported in Windows Vista, and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= PASSIVE_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	bthioctl.h
+apiname:
+-	BTH_SDP_ATTRIBUTE_SEARCH_REQUEST
+product: Windows
+targetos: Windows
+req.typenames: "*PBTH_SDP_ATTRIBUTE_SEARCH_REQUEST, BTH_SDP_ATTRIBUTE_SEARCH_REQUEST"
 ---
 
 # _BTH_SDP_ATTRIBUTE_SEARCH_REQUEST structure

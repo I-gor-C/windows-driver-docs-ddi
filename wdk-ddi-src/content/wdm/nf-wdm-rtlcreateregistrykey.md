@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.RtlCreateRegistryKey
-title : RtlCreateRegistryKey function
-author : windows-driver-content
-description : The RtlCreateRegistryKey routine adds a key object in the registry along a given relative path.
-old-location : kernel\rtlcreateregistrykey.htm
-old-project : kernel
-ms.assetid : 2214acc8-b24a-4db4-9ce3-f639291428f2
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.rtlcreateregistrykey, RtlCreateRegistryKey, wdm/RtlCreateRegistryKey, RtlCreateRegistryKey routine [Kernel-Mode Driver Architecture], k109_9a163bcc-501d-453b-b426-a4267d04135c.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 2000 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.RtlCreateRegistryKey
+title: RtlCreateRegistryKey function
+author: windows-driver-content
+description: The RtlCreateRegistryKey routine adds a key object in the registry along a given relative path.
+old-location: kernel\rtlcreateregistrykey.htm
+old-project: kernel
+ms.assetid: 2214acc8-b24a-4db4-9ce3-f639291428f2
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.rtlcreateregistrykey, RtlCreateRegistryKey, wdm/RtlCreateRegistryKey, RtlCreateRegistryKey routine [Kernel-Mode Driver Architecture], k109_9a163bcc-501d-453b-b426-a4267d04135c.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 2000 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	RtlCreateRegistryKey
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

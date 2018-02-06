@@ -1,42 +1,47 @@
 ---
-UID : NS:windot11.DOT11_KEY_ALGO_TKIP_MIC
-title : DOT11_KEY_ALGO_TKIP_MIC
-author : windows-driver-content
-description : Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
-old-location : netvista\dot11_key_algo_tkip_mic.htm
-old-project : netvista
-ms.assetid : 2f6e08e3-50cf-4d2e-aac8-185a5c0b38ed
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : windot11/PDOT11_KEY_ALGO_TKIP_MIC, Native_802.11_data_types_09def77d-63b7-4db5-8689-8be14e166738.xml, windot11/DOT11_KEY_ALGO_TKIP_MIC, PDOT11_KEY_ALGO_TKIP_MIC, DOT11_KEY_ALGO_TKIP_MIC, netvista.dot11_key_algo_tkip_mic, PDOT11_KEY_ALGO_TKIP_MIC structure pointer [Network Drivers Starting with Windows Vista], *PDOT11_KEY_ALGO_TKIP_MIC, DOT11_KEY_ALGO_TKIP_MIC structure [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : windot11.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating   systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDOT11_KEY_ALGO_TKIP_MIC, DOT11_KEY_ALGO_TKIP_MIC"
-req.product : Windows 10 or later.
+UID: NS:windot11.DOT11_KEY_ALGO_TKIP_MIC
+title: DOT11_KEY_ALGO_TKIP_MIC
+author: windows-driver-content
+description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+old-location: netvista\dot11_key_algo_tkip_mic.htm
+old-project: netvista
+ms.assetid: 2f6e08e3-50cf-4d2e-aac8-185a5c0b38ed
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: windot11/PDOT11_KEY_ALGO_TKIP_MIC, Native_802.11_data_types_09def77d-63b7-4db5-8689-8be14e166738.xml, windot11/DOT11_KEY_ALGO_TKIP_MIC, PDOT11_KEY_ALGO_TKIP_MIC, DOT11_KEY_ALGO_TKIP_MIC, netvista.dot11_key_algo_tkip_mic, PDOT11_KEY_ALGO_TKIP_MIC structure pointer [Network Drivers Starting with Windows Vista], *PDOT11_KEY_ALGO_TKIP_MIC, DOT11_KEY_ALGO_TKIP_MIC structure [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: windot11.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	windot11.h
+apiname:
+-	DOT11_KEY_ALGO_TKIP_MIC
+product: Windows
+targetos: Windows
+req.typenames: "*PDOT11_KEY_ALGO_TKIP_MIC, DOT11_KEY_ALGO_TKIP_MIC"
+req.product: Windows 10 or later.
 ---
 
 # DOT11_KEY_ALGO_TKIP_MIC structure

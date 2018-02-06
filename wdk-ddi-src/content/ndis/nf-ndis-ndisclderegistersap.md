@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisClDeregisterSap
-title : NdisClDeregisterSap function
-author : windows-driver-content
-description : NdisClDeregisterSap releases a previously registered SAP.
-old-location : netvista\ndisclderegistersap.htm
-old-project : netvista
-ms.assetid : ee3eb668-04f5-4731-b0bd-5cc8a9d4407f
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NdisClDeregisterSap, condis_client_ref_44c25719-9fbb-496b-97f6-f897cfe2b346.xml, netvista.ndisclderegistersap, ndis/NdisClDeregisterSap, NdisClDeregisterSap function [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisClDeregisterSap (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisClDeregisterSap (NDIS   5.1)) in Windows XP.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_Protocol_Driver_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisClDeregisterSap
+title: NdisClDeregisterSap function
+author: windows-driver-content
+description: NdisClDeregisterSap releases a previously registered SAP.
+old-location: netvista\ndisclderegistersap.htm
+old-project: netvista
+ms.assetid: ee3eb668-04f5-4731-b0bd-5cc8a9d4407f
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NdisClDeregisterSap, condis_client_ref_44c25719-9fbb-496b-97f6-f897cfe2b346.xml, netvista.ndisclderegistersap, ndis/NdisClDeregisterSap, NdisClDeregisterSap function [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisClDeregisterSap (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisClDeregisterSap (NDIS   5.1)) in Windows XP.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_Protocol_Driver_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisClDeregisterSap
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

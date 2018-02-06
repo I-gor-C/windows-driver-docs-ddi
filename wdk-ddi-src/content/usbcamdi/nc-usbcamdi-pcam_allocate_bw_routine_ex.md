@@ -1,42 +1,47 @@
 ---
-UID : NC:usbcamdi.PCAM_ALLOCATE_BW_ROUTINE_EX
-title : PCAM_ALLOCATE_BW_ROUTINE_EX
-author : windows-driver-content
-description : A camera minidriver's CamAllocateBandwidthEx callback function selects the appropriate alternate setting within the USB video streaming interface and prepares the device to stream.
-old-location : stream\camallocatebandwidthex.htm
-old-project : stream
-ms.assetid : 00d8385e-e339-4e63-a79a-f5fa87d8987d
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.camallocatebandwidthex, CamAllocateBandwidthEx, CamAllocateBandwidthEx routine [Streaming Media Devices], CamAllocateBandwidthEx, PCAM_ALLOCATE_BW_ROUTINE_EX, PCAM_ALLOCATE_BW_ROUTINE_EX, usbcamdi/CamAllocateBandwidthEx, usbcmdpr_dd4a1139-55b9-4342-9eeb-69e902497fa2.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : usbcamdi.h
-req.include-header : Usbcamdi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUSB_BUS_INTERFACE_USBDI_V3, USB_BUS_INTERFACE_USBDI_V3"
-req.product : Windows 10 or later.
+UID: NC:usbcamdi.PCAM_ALLOCATE_BW_ROUTINE_EX
+title: PCAM_ALLOCATE_BW_ROUTINE_EX
+author: windows-driver-content
+description: A camera minidriver's CamAllocateBandwidthEx callback function selects the appropriate alternate setting within the USB video streaming interface and prepares the device to stream.
+old-location: stream\camallocatebandwidthex.htm
+old-project: stream
+ms.assetid: 00d8385e-e339-4e63-a79a-f5fa87d8987d
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.camallocatebandwidthex, CamAllocateBandwidthEx, CamAllocateBandwidthEx routine [Streaming Media Devices], CamAllocateBandwidthEx, PCAM_ALLOCATE_BW_ROUTINE_EX, PCAM_ALLOCATE_BW_ROUTINE_EX, usbcamdi/CamAllocateBandwidthEx, usbcmdpr_dd4a1139-55b9-4342-9eeb-69e902497fa2.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: usbcamdi.h
+req.include-header: Usbcamdi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	usbcamdi.h
+apiname:
+-	CamAllocateBandwidthEx
+product: Windows
+targetos: Windows
+req.typenames: "*PUSB_BUS_INTERFACE_USBDI_V3, USB_BUS_INTERFACE_USBDI_V3"
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NN:filterpipeline.IPrintPipelineManagerControl
-title : IPrintPipelineManagerControl
-author : windows-driver-content
-description : The IPrintPipelineManagerControl interface is passed to each filter in the IPrintPipelineFilter::InitializeFilter method.
-old-location : print\iprintpipelinemanagercontrol.htm
-old-project : print
-ms.assetid : 82efbe8d-0928-4550-9de1-a806a00791eb
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : print.iprintpipelinemanagercontrol, IPrintPipelineManagerControl interface [Print Devices], IPrintPipelineManagerControl interface [Print Devices], described, IPrintPipelineManagerControl, filterpipeline/IPrintPipelineManagerControl, filterpipeline_5b9732d1-6a75-4059-84fa-1bbbdeb70eb3.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : filterpipeline.h
-req.include-header : Filterpipeline.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : filterpipeline.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NN:filterpipeline.IPrintPipelineManagerControl
+title: IPrintPipelineManagerControl
+author: windows-driver-content
+description: The IPrintPipelineManagerControl interface is passed to each filter in the IPrintPipelineFilter::InitializeFilter method.
+old-location: print\iprintpipelinemanagercontrol.htm
+old-project: print
+ms.assetid: 82efbe8d-0928-4550-9de1-a806a00791eb
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: print.iprintpipelinemanagercontrol, IPrintPipelineManagerControl interface [Print Devices], IPrintPipelineManagerControl interface [Print Devices], described, IPrintPipelineManagerControl, filterpipeline/IPrintPipelineManagerControl, filterpipeline_5b9732d1-6a75-4059-84fa-1bbbdeb70eb3.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: filterpipeline.h
+req.include-header: Filterpipeline.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: filterpipeline.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	filterpipeline.h
+apiname:
+-	IPrintPipelineManagerControl
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 # IPrintPipelineManagerControl interface

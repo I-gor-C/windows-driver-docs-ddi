@@ -1,42 +1,47 @@
 ---
-UID : NF:wia_lh.IWiaImageFilter.InitializeFilter
-title : IWiaImageFilter::InitializeFilter method
-author : windows-driver-content
-description : The IWiaImageFilter::InitializeFilter method stores the references to pWiaItem2 and pWiaTransferCallback parameters passed into the method.
-old-location : image\iwiaimagefilter_initializefilter.htm
-old-project : image
-ms.assetid : 03e359aa-4745-4961-a342-79f725468aab
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : IWiaErrorHandler_f9d42d0d-1768-4868-bd41-b20297008312.xml, wia_lh/IWiaImageFilter::InitializeFilter, IWiaImageFilter, InitializeFilter, IWiaImageFilter::InitializeFilter, IWiaImageFilter interface [Imaging Devices], InitializeFilter method, InitializeFilter method [Imaging Devices], IWiaImageFilter interface, InitializeFilter method [Imaging Devices], image.iwiaimagefilter_initializefilter
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wia_lh.h
-req.include-header : Wia_lh.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wia_lh.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : BMP_IMAGE_INFO, *PBMP_IMAGE_INFO
-req.product : Windows 10 or later.
+UID: NF:wia_lh.IWiaImageFilter.InitializeFilter
+title: IWiaImageFilter::InitializeFilter method
+author: windows-driver-content
+description: The IWiaImageFilter::InitializeFilter method stores the references to pWiaItem2 and pWiaTransferCallback parameters passed into the method.
+old-location: image\iwiaimagefilter_initializefilter.htm
+old-project: image
+ms.assetid: 03e359aa-4745-4961-a342-79f725468aab
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: IWiaErrorHandler_f9d42d0d-1768-4868-bd41-b20297008312.xml, wia_lh/IWiaImageFilter::InitializeFilter, IWiaImageFilter, InitializeFilter, IWiaImageFilter::InitializeFilter, IWiaImageFilter interface [Imaging Devices], InitializeFilter method, InitializeFilter method [Imaging Devices], IWiaImageFilter interface, InitializeFilter method [Imaging Devices], image.iwiaimagefilter_initializefilter
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wia_lh.h
+req.include-header: Wia_lh.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wia_lh.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	wia_lh.h
+apiname:
+-	IWiaImageFilter.InitializeFilter
+product: Windows
+targetos: Windows
+req.typenames: BMP_IMAGE_INFO, *PBMP_IMAGE_INFO
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:hbaapi.HBA_MgmtInfo
-title : HBA_MgmtInfo
-author : windows-driver-content
-description : The HBA_MgmtInfo structure is used in conjunction with the HBA_SetRNIDMgmtInfo routine to program the HBA to return the indicated request node identification information data (RNID).
-old-location : storage\hba_mgmtinfo.htm
-old-project : storage
-ms.assetid : a4ccb122-ae90-4b06-a40d-21f131add99b
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : structs-Fibre_d7bcdc56-a999-4d0b-b7f0-88fe53b349b1.xml, PHBA_MGMTINFO, hbaapi/PHBA_MGMTINFO, hbaapi/HBA_MgmtInfo, *PHBA_MGMTINFO, HBA_MgmtInfo, HBA_MgmtInfo structure [Storage Devices], storage.hba_mgmtinfo, HBA_MGMTINFO, PHBA_MGMTINFO structure pointer [Storage Devices], HBA_MGMTINFO structure [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : hbaapi.h
-req.include-header : Hbaapi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PHBA_MGMTINFO, HBA_MGMTINFO"
+UID: NS:hbaapi.HBA_MgmtInfo
+title: HBA_MgmtInfo
+author: windows-driver-content
+description: The HBA_MgmtInfo structure is used in conjunction with the HBA_SetRNIDMgmtInfo routine to program the HBA to return the indicated request node identification information data (RNID).
+old-location: storage\hba_mgmtinfo.htm
+old-project: storage
+ms.assetid: a4ccb122-ae90-4b06-a40d-21f131add99b
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: structs-Fibre_d7bcdc56-a999-4d0b-b7f0-88fe53b349b1.xml, PHBA_MGMTINFO, hbaapi/PHBA_MGMTINFO, hbaapi/HBA_MgmtInfo, *PHBA_MGMTINFO, HBA_MgmtInfo, HBA_MgmtInfo structure [Storage Devices], storage.hba_mgmtinfo, HBA_MGMTINFO, PHBA_MGMTINFO structure pointer [Storage Devices], HBA_MGMTINFO structure [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: hbaapi.h
+req.include-header: Hbaapi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hbaapi.h
+apiname:
+-	HBA_MGMTINFO
+product: Windows
+targetos: Windows
+req.typenames: "*PHBA_MGMTINFO, HBA_MGMTINFO"
 ---
 
 # HBA_MgmtInfo structure

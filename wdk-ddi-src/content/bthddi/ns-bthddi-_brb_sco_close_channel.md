@@ -1,41 +1,46 @@
 ---
-UID : NS:bthddi._BRB_SCO_CLOSE_CHANNEL
-title : "_BRB_SCO_CLOSE_CHANNEL"
-author : windows-driver-content
-description : The _BRB_SCO_CLOSE_CHANNEL structure describes a currently open SCO channel to close.
-old-location : bltooth\_brb_sco_close_channel.htm
-old-project : bltooth
-ms.assetid : 1921cee1-411b-4fec-acfd-3380e84823b8
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : bltooth._brb_sco_close_channel, bth_structs_d031efa4-0a68-47c0-8344-e95c677661c9.xml, _BRB_SCO_CLOSE_CHANNEL structure [Bluetooth Devices], bthddi/_BRB_SCO_CLOSE_CHANNEL, _BRB_SCO_CLOSE_CHANNEL
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : bthddi.h
-req.include-header : Bthddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Versions:\_Supported in Windows Vista, and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback   function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access   paged memory)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NS:bthddi._BRB_SCO_CLOSE_CHANNEL
+title: "_BRB_SCO_CLOSE_CHANNEL"
+author: windows-driver-content
+description: The _BRB_SCO_CLOSE_CHANNEL structure describes a currently open SCO channel to close.
+old-location: bltooth\_brb_sco_close_channel.htm
+old-project: bltooth
+ms.assetid: 1921cee1-411b-4fec-acfd-3380e84823b8
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: bltooth._brb_sco_close_channel, bth_structs_d031efa4-0a68-47c0-8344-e95c677661c9.xml, _BRB_SCO_CLOSE_CHANNEL structure [Bluetooth Devices], bthddi/_BRB_SCO_CLOSE_CHANNEL, _BRB_SCO_CLOSE_CHANNEL
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: bthddi.h
+req.include-header: Bthddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Versions:\_Supported in Windows Vista, and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback   function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access   paged memory)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	bthddi.h
+apiname:
+-	_BRB_SCO_CLOSE_CHANNEL
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 # _BRB_SCO_CLOSE_CHANNEL structure

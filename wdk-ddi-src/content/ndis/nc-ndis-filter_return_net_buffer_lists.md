@@ -1,41 +1,46 @@
 ---
-UID : NC:ndis.FILTER_RETURN_NET_BUFFER_LISTS
-title : FILTER_RETURN_NET_BUFFER_LISTS
-author : windows-driver-content
-description : NDIS calls the FilterReturnNetBufferLists function to return a linked list of NET_BUFFER_LIST structures and associated data to a filter driver.Note  You must declare the function by using the FILTER_RETURN_NET_BUFFER_LISTS type.
-old-location : netvista\filterreturnnetbufferlists.htm
-old-project : netvista
-ms.assetid : 8d7e362f-62da-4ce7-9497-1cfaff2b678e
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.filterreturnnetbufferlists, FilterReturnNetBufferLists callback function [Network Drivers Starting with Windows Vista], FilterReturnNetBufferLists, FILTER_RETURN_NET_BUFFER_LISTS, FILTER_RETURN_NET_BUFFER_LISTS, ndis/FilterReturnNetBufferLists, filter_functions_ref_a4a0c4ae-790b-43f9-a209-06538a7bbab6.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
+UID: NC:ndis.FILTER_RETURN_NET_BUFFER_LISTS
+title: FILTER_RETURN_NET_BUFFER_LISTS
+author: windows-driver-content
+description: NDIS calls the FilterReturnNetBufferLists function to return a linked list of NET_BUFFER_LIST structures and associated data to a filter driver.Note  You must declare the function by using the FILTER_RETURN_NET_BUFFER_LISTS type.
+old-location: netvista\filterreturnnetbufferlists.htm
+old-project: netvista
+ms.assetid: 8d7e362f-62da-4ce7-9497-1cfaff2b678e
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.filterreturnnetbufferlists, FilterReturnNetBufferLists callback function [Network Drivers Starting with Windows Vista], FilterReturnNetBufferLists, FILTER_RETURN_NET_BUFFER_LISTS, FILTER_RETURN_NET_BUFFER_LISTS, ndis/FilterReturnNetBufferLists, filter_functions_ref_a4a0c4ae-790b-43f9-a209-06538a7bbab6.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ndis.h
+apiname:
+-	FilterReturnNetBufferLists
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 

@@ -1,41 +1,47 @@
 ---
-UID : NF:fwpsk.FwpsAleEndpointEnum0
-title : FwpsAleEndpointEnum0 function
-author : windows-driver-content
-description : The FwpsAleEndpointEnum0 function enumerates application layer enforcement (ALE) endpoints.Note  FwpsAleEndpointEnum0 is a specific version of FwpsAleEndpointEnum.
-old-location : netvista\fwpsaleendpointenum0.htm
-old-project : netvista
-ms.assetid : 8b3257ea-9eeb-426b-8c82-a4f0242861a8
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : fwpsk/FwpsAleEndpointEnum0, netvista.fwpsaleendpointenum0, FwpsAleEndpointEnum0, wfp_ref_2_funct_3_fwps_A-B_daf596f9-09c1-4e1c-8869-8c6aec4da6cd.xml, FwpsAleEndpointEnum0 function [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fwpsk.h
-req.include-header : Fwpsk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 7.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Fwpkclnt.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FWPS_VSWITCH_EVENT_TYPE
+UID: NF:fwpsk.FwpsAleEndpointEnum0
+title: FwpsAleEndpointEnum0 function
+author: windows-driver-content
+description: The FwpsAleEndpointEnum0 function enumerates application layer enforcement (ALE) endpoints.Note  FwpsAleEndpointEnum0 is a specific version of FwpsAleEndpointEnum.
+old-location: netvista\fwpsaleendpointenum0.htm
+old-project: netvista
+ms.assetid: 8b3257ea-9eeb-426b-8c82-a4f0242861a8
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: fwpsk/FwpsAleEndpointEnum0, netvista.fwpsaleendpointenum0, FwpsAleEndpointEnum0, wfp_ref_2_funct_3_fwps_A-B_daf596f9-09c1-4e1c-8869-8c6aec4da6cd.xml, FwpsAleEndpointEnum0 function [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fwpsk.h
+req.include-header: Fwpsk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 7.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Fwpkclnt.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	fwpkclnt.lib
+-	fwpkclnt.dll
+apiname:
+-	FwpsAleEndpointEnum0
+product: Windows
+targetos: Windows
+req.typenames: FWPS_VSWITCH_EVENT_TYPE
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:npivwmi._MSFC_VirtualFibrePortAttributes
-title : "_MSFC_VirtualFibrePortAttributes"
-author : windows-driver-content
-description : The MSFC_VirtualFibrePortAttributes structure contains attribute information for a virtual port.
-old-location : storage\msfc_virtualfibreportattributes.htm
-old-project : storage
-ms.assetid : FD8D6063-E6DD-4EA6-9675-774C58C08B40
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : MSFC_VirtualFibrePortAttributes, _MSFC_VirtualFibrePortAttributes, npivwmi/MSFC_VirtualFibrePortAttributes, PMSFC_VirtualFibrePortAttributes structure pointer [Storage Devices], *PMSFC_VirtualFibrePortAttributes, npivwmi/PMSFC_VirtualFibrePortAttributes, PMSFC_VirtualFibrePortAttributes, storage.msfc_virtualfibreportattributes, MSFC_VirtualFibrePortAttributes structure [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : npivwmi.h
-req.include-header : Npivwmi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : MSFC_VirtualFibrePortAttributes, *PMSFC_VirtualFibrePortAttributes
+UID: NS:npivwmi._MSFC_VirtualFibrePortAttributes
+title: "_MSFC_VirtualFibrePortAttributes"
+author: windows-driver-content
+description: The MSFC_VirtualFibrePortAttributes structure contains attribute information for a virtual port.
+old-location: storage\msfc_virtualfibreportattributes.htm
+old-project: storage
+ms.assetid: FD8D6063-E6DD-4EA6-9675-774C58C08B40
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: MSFC_VirtualFibrePortAttributes, _MSFC_VirtualFibrePortAttributes, npivwmi/MSFC_VirtualFibrePortAttributes, PMSFC_VirtualFibrePortAttributes structure pointer [Storage Devices], *PMSFC_VirtualFibrePortAttributes, npivwmi/PMSFC_VirtualFibrePortAttributes, PMSFC_VirtualFibrePortAttributes, storage.msfc_virtualfibreportattributes, MSFC_VirtualFibrePortAttributes structure [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: npivwmi.h
+req.include-header: Npivwmi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	npivwmi.h
+apiname:
+-	MSFC_VirtualFibrePortAttributes
+product: Windows
+targetos: Windows
+req.typenames: MSFC_VirtualFibrePortAttributes, *PMSFC_VirtualFibrePortAttributes
 ---
 
 # _MSFC_VirtualFibrePortAttributes structure

@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.tagKS_H264VIDEOINFO
-title : tagKS_H264VIDEOINFO
-author : windows-driver-content
-description : The KS_H264VIDEOINFO describes the device capabilities that apply to the current media type.
-old-location : stream\ks_h264videoinfo.htm
-old-project : stream
-ms.assetid : 1EBA2124-F5D3-4683-B967-8179CCCD3102
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ksmedia/KS_H264VIDEOINFO, PKS_H264VIDEOINFO, KS_H264VIDEOINFO, stream.ks_h264videoinfo, PKS_H264VIDEOINFO structure pointer [Streaming Media Devices], tagKS_H264VIDEOINFO, ksmedia/PKS_H264VIDEOINFO, *PKS_H264VIDEOINFO, KS_H264VIDEOINFO structure [Streaming Media Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKS_H264VIDEOINFO, KS_H264VIDEOINFO"
+UID: NS:ksmedia.tagKS_H264VIDEOINFO
+title: tagKS_H264VIDEOINFO
+author: windows-driver-content
+description: The KS_H264VIDEOINFO describes the device capabilities that apply to the current media type.
+old-location: stream\ks_h264videoinfo.htm
+old-project: stream
+ms.assetid: 1EBA2124-F5D3-4683-B967-8179CCCD3102
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ksmedia/KS_H264VIDEOINFO, PKS_H264VIDEOINFO, KS_H264VIDEOINFO, stream.ks_h264videoinfo, PKS_H264VIDEOINFO structure pointer [Streaming Media Devices], tagKS_H264VIDEOINFO, ksmedia/PKS_H264VIDEOINFO, *PKS_H264VIDEOINFO, KS_H264VIDEOINFO structure [Streaming Media Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ksmedia.h
+apiname:
+-	KS_H264VIDEOINFO
+product: Windows
+targetos: Windows
+req.typenames: "*PKS_H264VIDEOINFO, KS_H264VIDEOINFO"
 ---
 
 # tagKS_H264VIDEOINFO structure

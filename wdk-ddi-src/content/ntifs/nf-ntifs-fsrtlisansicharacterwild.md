@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.FsRtlIsAnsiCharacterWild
-title : FsRtlIsAnsiCharacterWild macro
-author : windows-driver-content
-description : The FsRtlIsAnsiCharacterWild macro determines whether an ANSI character is a wildcard character.
-old-location : ifsk\fsrtlisansicharacterwild.htm
-old-project : ifsk
-ms.assetid : badbc73a-44aa-4917-83a8-2ebd9f9ec576
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FsRtlIsAnsiCharacterWild, fsrtlref_f5a31572-36b5-4bc3-8224-a4a7d8b74c65.xml, ntifs/FsRtlIsAnsiCharacterWild, FsRtlIsAnsiCharacterWild function [Installable File System Drivers], ifsk.fsrtlisansicharacterwild
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : macro
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : ntifs.h
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.FsRtlIsAnsiCharacterWild
+title: FsRtlIsAnsiCharacterWild macro
+author: windows-driver-content
+description: The FsRtlIsAnsiCharacterWild macro determines whether an ANSI character is a wildcard character.
+old-location: ifsk\fsrtlisansicharacterwild.htm
+old-project: ifsk
+ms.assetid: badbc73a-44aa-4917-83a8-2ebd9f9ec576
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FsRtlIsAnsiCharacterWild, fsrtlref_f5a31572-36b5-4bc3-8224-a4a7d8b74c65.xml, ntifs/FsRtlIsAnsiCharacterWild, FsRtlIsAnsiCharacterWild function [Installable File System Drivers], ifsk.fsrtlisansicharacterwild
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: macro
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: ntifs.h
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntifs.h
+apiname:
+-	FsRtlIsAnsiCharacterWild
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

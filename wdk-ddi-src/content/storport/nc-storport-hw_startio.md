@@ -1,42 +1,47 @@
 ---
-UID : NC:storport.HW_STARTIO
-title : HW_STARTIO
-author : windows-driver-content
-description : The Storport driver calls the HwStorStartIo routine one time for each incoming I/O request.
-old-location : storage\hwstorstartio.htm
-old-project : storage
-ms.assetid : 73085ca7-a442-4c16-b1e3-6de048e7f1f7
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.hwstorstartio, HwStorStartIo routine [Storage Devices], HwStorStartIo, HW_STARTIO, HW_STARTIO, storport/HwStorStartIo, stormini_8f910467-49f3-4f15-919d-84edee8ad053.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : DISPATCH_LEVEL (See Remarks section.)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSTORAGE_DEVICE_UNIQUE_IDENTIFIER, STORAGE_DEVICE_UNIQUE_IDENTIFIER"
-req.product : Windows 10 or later.
+UID: NC:storport.HW_STARTIO
+title: HW_STARTIO
+author: windows-driver-content
+description: The Storport driver calls the HwStorStartIo routine one time for each incoming I/O request.
+old-location: storage\hwstorstartio.htm
+old-project: storage
+ms.assetid: 73085ca7-a442-4c16-b1e3-6de048e7f1f7
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.hwstorstartio, HwStorStartIo routine [Storage Devices], HwStorStartIo, HW_STARTIO, HW_STARTIO, storport/HwStorStartIo, stormini_8f910467-49f3-4f15-919d-84edee8ad053.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: DISPATCH_LEVEL (See Remarks section.)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Storport.h
+apiname:
+-	HwStorStartIo
+product: Windows
+targetos: Windows
+req.typenames: "*PSTORAGE_DEVICE_UNIQUE_IDENTIFIER, STORAGE_DEVICE_UNIQUE_IDENTIFIER"
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:ntifs._SE_EXPORTS
-title : "_SE_EXPORTS"
-author : windows-driver-content
-description : The SeExports structure is a large external static SE_EXPORTS structure that defines a number of well-known security constants for privilege values and security identifiers.
-old-location : ifsk\seexports.htm
-old-project : ifsk
-ms.assetid : e6c398b4-f38f-4819-96f9-cefc3a728dbc
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : PSE_EXPORTS structure pointer [Installable File System Drivers], SeExports, ifsk.seexports, securitystructures_39c83c22-bf3d-4755-ac4c-6bd31f8829d3.xml, PSE_EXPORTS, ntifs/SeExports, SeExports structure [Installable File System Drivers], ntifs/PSE_EXPORTS, SE_EXPORTS structure [Installable File System Drivers], SE_EXPORTS, _SE_EXPORTS, *PSE_EXPORTS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSE_EXPORTS, SE_EXPORTS"
+UID: NS:ntifs._SE_EXPORTS
+title: "_SE_EXPORTS"
+author: windows-driver-content
+description: The SeExports structure is a large external static SE_EXPORTS structure that defines a number of well-known security constants for privilege values and security identifiers.
+old-location: ifsk\seexports.htm
+old-project: ifsk
+ms.assetid: e6c398b4-f38f-4819-96f9-cefc3a728dbc
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: PSE_EXPORTS structure pointer [Installable File System Drivers], SeExports, ifsk.seexports, securitystructures_39c83c22-bf3d-4755-ac4c-6bd31f8829d3.xml, PSE_EXPORTS, ntifs/SeExports, SeExports structure [Installable File System Drivers], ntifs/PSE_EXPORTS, SE_EXPORTS structure [Installable File System Drivers], SE_EXPORTS, _SE_EXPORTS, *PSE_EXPORTS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntifs.h
+apiname:
+-	SE_EXPORTS
+product: Windows
+targetos: Windows
+req.typenames: "*PSE_EXPORTS, SE_EXPORTS"
 ---
 
 # _SE_EXPORTS structure

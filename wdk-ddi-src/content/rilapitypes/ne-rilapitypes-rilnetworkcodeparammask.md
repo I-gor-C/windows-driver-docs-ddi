@@ -1,42 +1,47 @@
 ---
-UID : NE:rilapitypes.RILNETWORKCODEPARAMMASK
-title : RILNETWORKCODEPARAMMASK
-author : windows-driver-content
-description : This enumeration describes the RILNETWORKCODEPARAMMASK.
-old-location : netvista\rilnetworkcodeparammask.htm
-old-project : netvista
-ms.assetid : 10842352-4201-477f-b1ea-8ed9181a6012
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : RIL_PARAM_NETWORKCODE_EXECUTOR, RIL_PARAM_NETWORKCODE_SID, RIL_PARAM_NETWORKCODE_ALL, rilapitypes/RIL_PARAM_NETWORKCODE_ALL, rilapitypes/RIL_PARAM_NETWORKCODE_MCC, rilapitypes/RIL_PARAM_NETWORKCODE_NID, netvista.rilnetworkcodeparammask, RIL_PARAM_NETWORKCODE_NID, RIL_PARAM_NETWORKCODE_MNC, RIL_PARAM_NETWORKCODE_RI, rilapitypes/RIL_PARAM_NETWORKCODE_SID, RILNETWORKCODEPARAMMASK, RIL_PARAM_NETWORKCODE_MCC, rilapitypes/RIL_PARAM_NETWORKCODE_RI, RILNETWORKCODEPARAMMASK enumeration [Network Drivers Starting with Windows Vista], rilapitypes/RIL_PARAM_NETWORKCODE_MNC, rilapitypes/RIL_PARAM_NETWORKCODE_EXECUTOR, rilapitypes/RILNETWORKCODEPARAMMASK
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : rilapitypes.h
-req.include-header : Rilapitypes.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RILNETWORKCODEPARAMMASK
-req.product : Windows 10 or later.
+UID: NE:rilapitypes.RILNETWORKCODEPARAMMASK
+title: RILNETWORKCODEPARAMMASK
+author: windows-driver-content
+description: This enumeration describes the RILNETWORKCODEPARAMMASK.
+old-location: netvista\rilnetworkcodeparammask.htm
+old-project: netvista
+ms.assetid: 10842352-4201-477f-b1ea-8ed9181a6012
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: RIL_PARAM_NETWORKCODE_EXECUTOR, RIL_PARAM_NETWORKCODE_SID, RIL_PARAM_NETWORKCODE_ALL, rilapitypes/RIL_PARAM_NETWORKCODE_ALL, rilapitypes/RIL_PARAM_NETWORKCODE_MCC, rilapitypes/RIL_PARAM_NETWORKCODE_NID, netvista.rilnetworkcodeparammask, RIL_PARAM_NETWORKCODE_NID, RIL_PARAM_NETWORKCODE_MNC, RIL_PARAM_NETWORKCODE_RI, rilapitypes/RIL_PARAM_NETWORKCODE_SID, RILNETWORKCODEPARAMMASK, RIL_PARAM_NETWORKCODE_MCC, rilapitypes/RIL_PARAM_NETWORKCODE_RI, RILNETWORKCODEPARAMMASK enumeration [Network Drivers Starting with Windows Vista], rilapitypes/RIL_PARAM_NETWORKCODE_MNC, rilapitypes/RIL_PARAM_NETWORKCODE_EXECUTOR, rilapitypes/RILNETWORKCODEPARAMMASK
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: rilapitypes.h
+req.include-header: Rilapitypes.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	rilapitypes.h
+apiname:
+-	RILNETWORKCODEPARAMMASK
+product: Windows
+targetos: Windows
+req.typenames: RILNETWORKCODEPARAMMASK
+req.product: Windows 10 or later.
 ---
 
 # RILNETWORKCODEPARAMMASK Enumeration
@@ -59,41 +64,41 @@ enum RILNETWORKCODEPARAMMASK {
 ## Constants
 
 <table>
-
-<tr>
-<td>RIL_PARAM_NETWORKCODE_ALL</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_PARAM_NETWORKCODE_EXECUTOR</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_PARAM_NETWORKCODE_MCC</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_PARAM_NETWORKCODE_MNC</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_PARAM_NETWORKCODE_NID</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_PARAM_NETWORKCODE_RI</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_PARAM_NETWORKCODE_SID</td>
-<td></td>
-</tr>
+            
+                <tr>
+                    <td>RIL_PARAM_NETWORKCODE_ALL</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_NETWORKCODE_EXECUTOR</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_NETWORKCODE_MCC</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_NETWORKCODE_MNC</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_NETWORKCODE_NID</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_NETWORKCODE_RI</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_NETWORKCODE_SID</td>
+                    <td></td>
+                </tr>
 </table>
 
 
@@ -102,9 +107,9 @@ enum RILNETWORKCODEPARAMMASK {
 | ---- |:---- |
 | **Header** | rilapitypes.h (include Rilapitypes.h) |
 
-## See Also
+    ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn946509">Cellular COM enumerations</a>
+        <a href="https://msdn.microsoft.com/library/windows/hardware/dn946509">Cellular COM enumerations</a>
 
  
 

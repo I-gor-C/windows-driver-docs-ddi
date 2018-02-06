@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IPnpCallback.OnSurpriseRemoval
-title : IPnpCallback::OnSurpriseRemoval method
-author : windows-driver-content
-description : The OnSurpriseRemoval method notifies a driver after a device is removed from a computer unexpectedly so that the driver can perform necessary operations.
-old-location : wdf\ipnpcallback_onsurpriseremoval.htm
-old-project : wdf
-ms.assetid : 4289406f-dda0-4439-be6e-6e638bb46e1f
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : umdf.ipnpcallback_onsurpriseremoval, wdf.ipnpcallback_onsurpriseremoval, OnSurpriseRemoval method, wudfddi/IPnpCallback::OnSurpriseRemoval, UMDFDeviceObjectRef_92f0661b-48a5-4d85-9bcf-f763c38b08ed.xml, IPnpCallback, IPnpCallback interface, OnSurpriseRemoval method, IPnpCallback::OnSurpriseRemoval, OnSurpriseRemoval method, IPnpCallback interface, OnSurpriseRemoval
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IPnpCallback.OnSurpriseRemoval
+title: IPnpCallback::OnSurpriseRemoval method
+author: windows-driver-content
+description: The OnSurpriseRemoval method notifies a driver after a device is removed from a computer unexpectedly so that the driver can perform necessary operations.
+old-location: wdf\ipnpcallback_onsurpriseremoval.htm
+old-project: wdf
+ms.assetid: 4289406f-dda0-4439-be6e-6e638bb46e1f
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: umdf.ipnpcallback_onsurpriseremoval, wdf.ipnpcallback_onsurpriseremoval, OnSurpriseRemoval method, wudfddi/IPnpCallback::OnSurpriseRemoval, UMDFDeviceObjectRef_92f0661b-48a5-4d85-9bcf-f763c38b08ed.xml, IPnpCallback, IPnpCallback interface, OnSurpriseRemoval method, IPnpCallback::OnSurpriseRemoval, OnSurpriseRemoval method, IPnpCallback interface, OnSurpriseRemoval
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Wudfddi.h
+apiname:
+-	IPnpCallback.OnSurpriseRemoval
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

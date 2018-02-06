@@ -1,41 +1,46 @@
 ---
-UID : NC:ndis.NDIS_PD_CLEAR_RECEIVE_FILTER
-title : NDIS_PD_CLEAR_RECEIVE_FILTER
-author : windows-driver-content
-description : The PacketDirect (PD) platform calls a PD-capable miniport driver's NdisPDClearReceiveFilter function to clear this filter from the PD platform.
-old-location : netvista\ndispdclearreceivefilter.htm
-old-project : netvista
-ms.assetid : C91F2E5D-C37F-48A9-9AE0-F5A8C5D8F54D
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.ndispdclearreceivefilter, NdisPDClearReceiveFilter callback function [Network Drivers Starting with Windows Vista], NdisPDClearReceiveFilter, NDIS_PD_CLEAR_RECEIVE_FILTER, NDIS_PD_CLEAR_RECEIVE_FILTER, ndis/NdisPDClearReceiveFilter
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ndis.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
+UID: NC:ndis.NDIS_PD_CLEAR_RECEIVE_FILTER
+title: NDIS_PD_CLEAR_RECEIVE_FILTER
+author: windows-driver-content
+description: The PacketDirect (PD) platform calls a PD-capable miniport driver's NdisPDClearReceiveFilter function to clear this filter from the PD platform.
+old-location: netvista\ndispdclearreceivefilter.htm
+old-project: netvista
+ms.assetid: C91F2E5D-C37F-48A9-9AE0-F5A8C5D8F54D
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.ndispdclearreceivefilter, NdisPDClearReceiveFilter callback function [Network Drivers Starting with Windows Vista], NdisPDClearReceiveFilter, NDIS_PD_CLEAR_RECEIVE_FILTER, NDIS_PD_CLEAR_RECEIVE_FILTER, ndis/NdisPDClearReceiveFilter
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ndis.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ndis.h
+apiname:
+-	NdisPDClearReceiveFilter
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 

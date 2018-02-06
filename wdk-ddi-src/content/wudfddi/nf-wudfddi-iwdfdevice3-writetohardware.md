@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFDevice3.WriteToHardware
-title : IWDFDevice3::WriteToHardware method
-author : windows-driver-content
-description : The WriteToHardware method is used internally by the framework. Do not use.
-old-location : wdf\iwdfdevice3_writetohardware.htm
-old-project : wdf
-ms.assetid : 55FBE72C-E74E-4116-9602-6D491592350F
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : IWDFDevice3::WriteToHardware, WriteToHardware method, wdf.iwdfdevice3_writetohardware, WriteToHardware method, IWDFDevice3 interface, wudfddi/IWDFDevice3::WriteToHardware, umdf.iwdfdevice3_writetohardware, WriteToHardware, IWDFDevice3, IWDFDevice3 interface, WriteToHardware method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.11
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFDevice3.WriteToHardware
+title: IWDFDevice3::WriteToHardware method
+author: windows-driver-content
+description: The WriteToHardware method is used internally by the framework. Do not use.
+old-location: wdf\iwdfdevice3_writetohardware.htm
+old-project: wdf
+ms.assetid: 55FBE72C-E74E-4116-9602-6D491592350F
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: IWDFDevice3::WriteToHardware, WriteToHardware method, wdf.iwdfdevice3_writetohardware, WriteToHardware method, IWDFDevice3 interface, wudfddi/IWDFDevice3::WriteToHardware, umdf.iwdfdevice3_writetohardware, WriteToHardware, IWDFDevice3, IWDFDevice3 interface, WriteToHardware method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.11
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFDevice3.WriteToHardware
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

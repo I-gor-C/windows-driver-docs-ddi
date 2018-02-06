@@ -1,41 +1,46 @@
 ---
-UID : NF:keyworddetectoroemadapter.IKeywordDetectorOemAdapter.GetCapabilities
-title : IKeywordDetectorOemAdapter::GetCapabilities method
-author : windows-driver-content
-description : The GetCapabilities method returns the keywords and languages supported by the object.
-old-location : audio\ikeyworddetectoroemadapter_getcapabilities.htm
-old-project : audio
-ms.assetid : 5885E2BB-78DA-46F5-8330-DE8785C61946
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : IKeywordDetectorOemAdapter interface [Audio Devices], GetCapabilities method, IKeywordDetectorOemAdapter, GetCapabilities method [Audio Devices], GetCapabilities, GetCapabilities method [Audio Devices], IKeywordDetectorOemAdapter interface, keyworddetectoroemadapter/IKeywordDetectorOemAdapter::GetCapabilities, audio.ikeyworddetectoroemadapter_getcapabilities, IKeywordDetectorOemAdapter::GetCapabilities
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : keyworddetectoroemadapter.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : KeywordDetectorOemAdapter.idl
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : keyworddetectoroemadapter.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KEYWORDID
+UID: NF:keyworddetectoroemadapter.IKeywordDetectorOemAdapter.GetCapabilities
+title: IKeywordDetectorOemAdapter::GetCapabilities method
+author: windows-driver-content
+description: The GetCapabilities method returns the keywords and languages supported by the object.
+old-location: audio\ikeyworddetectoroemadapter_getcapabilities.htm
+old-project: audio
+ms.assetid: 5885E2BB-78DA-46F5-8330-DE8785C61946
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: IKeywordDetectorOemAdapter interface [Audio Devices], GetCapabilities method, IKeywordDetectorOemAdapter, GetCapabilities method [Audio Devices], GetCapabilities, GetCapabilities method [Audio Devices], IKeywordDetectorOemAdapter interface, keyworddetectoroemadapter/IKeywordDetectorOemAdapter::GetCapabilities, audio.ikeyworddetectoroemadapter_getcapabilities, IKeywordDetectorOemAdapter::GetCapabilities
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: keyworddetectoroemadapter.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: KeywordDetectorOemAdapter.idl
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: keyworddetectoroemadapter.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	KeywordDetectorOemAdapter.h
+apiname:
+-	IKeywordDetectorOemAdapter.GetCapabilities
+product: Windows
+targetos: Windows
+req.typenames: KEYWORDID
 ---
 
 

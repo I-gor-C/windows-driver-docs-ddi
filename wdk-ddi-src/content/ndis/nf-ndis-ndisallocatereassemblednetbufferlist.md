@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisAllocateReassembledNetBufferList
-title : NdisAllocateReassembledNetBufferList function
-author : windows-driver-content
-description : Call the NdisAllocateReassembledNetBufferList function to reassemble a fragmented NET_BUFFER_LIST structure.
-old-location : netvista\ndisallocatereassemblednetbufferlist.htm
-old-project : netvista
-ms.assetid : 6a7fcb43-93bf-4351-8198-1d788b1bcc8c
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NdisAllocateReassembledNetBufferList, NdisAllocateReassembledNetBufferList function [Network Drivers Starting with Windows Vista], ndis/NdisAllocateReassembledNetBufferList, ndis_netbuf_functions_ref_20c58532-de90-4594-9bd8-5393a70c6b80.xml, netvista.ndisallocatereassemblednetbufferlist
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_NetBuffer_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisAllocateReassembledNetBufferList
+title: NdisAllocateReassembledNetBufferList function
+author: windows-driver-content
+description: Call the NdisAllocateReassembledNetBufferList function to reassemble a fragmented NET_BUFFER_LIST structure.
+old-location: netvista\ndisallocatereassemblednetbufferlist.htm
+old-project: netvista
+ms.assetid: 6a7fcb43-93bf-4351-8198-1d788b1bcc8c
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NdisAllocateReassembledNetBufferList, NdisAllocateReassembledNetBufferList function [Network Drivers Starting with Windows Vista], ndis/NdisAllocateReassembledNetBufferList, ndis_netbuf_functions_ref_20c58532-de90-4594-9bd8-5393a70c6b80.xml, netvista.ndisallocatereassemblednetbufferlist
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_NetBuffer_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisAllocateReassembledNetBufferList
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

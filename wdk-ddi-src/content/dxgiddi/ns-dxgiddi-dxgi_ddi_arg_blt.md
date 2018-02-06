@@ -1,41 +1,46 @@
 ---
-UID : NS:dxgiddi.DXGI_DDI_ARG_BLT
-title : DXGI_DDI_ARG_BLT
-author : windows-driver-content
-description : The DXGI_DDI_ARG_BLT structure describes the parameters of a bit-block transfer (bitblt).
-old-location : display\dxgi_ddi_arg_blt.htm
-old-project : display
-ms.assetid : 695f2aff-cce3-4358-a9e2-48eea43e8ef5
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DXGI_DDI_ARG_BLT, dxgiddi/DXGI_DDI_ARG_BLT, DXGI_DDI_ARG_BLT structure [Display Devices], display.dxgi_ddi_arg_blt, UMDisplayDriver_Dx10param_Structs_299fa1c4-8c06-4a7e-a81c-741eb2e8c00a.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : dxgiddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGI_DDI_ARG_BLT
+UID: NS:dxgiddi.DXGI_DDI_ARG_BLT
+title: DXGI_DDI_ARG_BLT
+author: windows-driver-content
+description: The DXGI_DDI_ARG_BLT structure describes the parameters of a bit-block transfer (bitblt).
+old-location: display\dxgi_ddi_arg_blt.htm
+old-project: display
+ms.assetid: 695f2aff-cce3-4358-a9e2-48eea43e8ef5
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DXGI_DDI_ARG_BLT, dxgiddi/DXGI_DDI_ARG_BLT, DXGI_DDI_ARG_BLT structure [Display Devices], display.dxgi_ddi_arg_blt, UMDisplayDriver_Dx10param_Structs_299fa1c4-8c06-4a7e-a81c-741eb2e8c00a.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: dxgiddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	dxgiddi.h
+apiname:
+-	DXGI_DDI_ARG_BLT
+product: Windows
+targetos: Windows
+req.typenames: DXGI_DDI_ARG_BLT
 ---
 
 # DXGI_DDI_ARG_BLT structure

@@ -1,42 +1,47 @@
 ---
-UID : NF:wia_lh.IWiaTransferCallback.TransferCallback
-title : IWiaTransferCallback::TransferCallback method
-author : windows-driver-content
-description : The IWiaTransferCallback::TransferCallback method is implemented by an image processing filter. It is called by the WIA service as a result of an application calling IWiaTransfer::Download or the preview component's IWiaPreview::GetNewPreview.
-old-location : image\iwiatransfercallback_transfercallback.htm
-old-project : image
-ms.assetid : dc6c2057-9617-4c69-ac79-2a8f910a1ee2
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : IWiaTransferCallback, TransferCallback, TransferCallback method [Imaging Devices], IWiaTransferCallback interface [Imaging Devices], TransferCallback method, wia_lh/IWiaTransferCallback::TransferCallback, IWiaTransferCallback::TransferCallback, image.iwiatransfercallback_transfercallback, IWiaTransfercallback_8e8bdc78-ce93-4fe1-98aa-91ffe608ee52.xml, TransferCallback method [Imaging Devices], IWiaTransferCallback interface
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wia_lh.h
-req.include-header : Wia.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wia_lh.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : BMP_IMAGE_INFO, *PBMP_IMAGE_INFO
-req.product : Windows 10 or later.
+UID: NF:wia_lh.IWiaTransferCallback.TransferCallback
+title: IWiaTransferCallback::TransferCallback method
+author: windows-driver-content
+description: The IWiaTransferCallback::TransferCallback method is implemented by an image processing filter. It is called by the WIA service as a result of an application calling IWiaTransfer::Download or the preview component's IWiaPreview::GetNewPreview.
+old-location: image\iwiatransfercallback_transfercallback.htm
+old-project: image
+ms.assetid: dc6c2057-9617-4c69-ac79-2a8f910a1ee2
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: IWiaTransferCallback, TransferCallback, TransferCallback method [Imaging Devices], IWiaTransferCallback interface [Imaging Devices], TransferCallback method, wia_lh/IWiaTransferCallback::TransferCallback, IWiaTransferCallback::TransferCallback, image.iwiatransfercallback_transfercallback, IWiaTransfercallback_8e8bdc78-ce93-4fe1-98aa-91ffe608ee52.xml, TransferCallback method [Imaging Devices], IWiaTransferCallback interface
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wia_lh.h
+req.include-header: Wia.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wia_lh.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	wia_lh.h
+apiname:
+-	IWiaTransferCallback.TransferCallback
+product: Windows
+targetos: Windows
+req.typenames: BMP_IMAGE_INFO, *PBMP_IMAGE_INFO
+req.product: Windows 10 or later.
 ---
 
 

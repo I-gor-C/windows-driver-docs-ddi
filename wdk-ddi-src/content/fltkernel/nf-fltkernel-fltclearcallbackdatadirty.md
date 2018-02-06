@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltClearCallbackDataDirty
-title : FltClearCallbackDataDirty function
-author : windows-driver-content
-description : The FltClearCallbackDataDirty routine clears the callback dirty flag in a callback data structure.
-old-location : ifsk\fltclearcallbackdatadirty.htm
-old-project : ifsk
-ms.assetid : c53ec6e5-83f8-4262-b832-1a206e6652e6
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltClearCallbackDataDirty, ifsk.fltclearcallbackdatadirty, fltkernel/FltClearCallbackDataDirty, FltApiRef_a_to_d_04cd5e96-3277-4afa-b3cb-07c0f418fe42.xml, FltClearCallbackDataDirty routine [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltClearCallbackDataDirty
+title: FltClearCallbackDataDirty function
+author: windows-driver-content
+description: The FltClearCallbackDataDirty routine clears the callback dirty flag in a callback data structure.
+old-location: ifsk\fltclearcallbackdatadirty.htm
+old-project: ifsk
+ms.assetid: c53ec6e5-83f8-4262-b832-1a206e6652e6
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltClearCallbackDataDirty, ifsk.fltclearcallbackdatadirty, fltkernel/FltClearCallbackDataDirty, FltApiRef_a_to_d_04cd5e96-3277-4afa-b3cb-07c0f418fe42.xml, FltClearCallbackDataDirty routine [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltClearCallbackDataDirty
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NI:ehstorbandmgmt.IOCTL_EHSTOR_BANDMGMT_ACTIVATE
-title : IOCTL_EHSTOR_BANDMGMT_ACTIVATE
-author : windows-driver-content
-description : This IOCTL_EHSTOR_BANDMGMT_ACTIVATE request is sent to activate the security features and band management on a storage device. The request includes activation options and the authentication key.
-old-location : storage\ioctl_ehstor_bandmgmt_activate.htm
-old-project : storage
-ms.assetid : 10C3077A-1A6A-4AA1-BC9B-829353A8A895
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_ehstor_bandmgmt_activate, IOCTL_EHSTOR_BANDMGMT_ACTIVATE control code [Storage Devices], IOCTL_EHSTOR_BANDMGMT_ACTIVATE, ehstorbandmgmt/IOCTL_EHSTOR_BANDMGMT_ACTIVATE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ehstorbandmgmt.h
-req.include-header : EhStorBandMgmt.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with  Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXVA_VideoSample32
+UID: NI:ehstorbandmgmt.IOCTL_EHSTOR_BANDMGMT_ACTIVATE
+title: IOCTL_EHSTOR_BANDMGMT_ACTIVATE
+author: windows-driver-content
+description: This IOCTL_EHSTOR_BANDMGMT_ACTIVATE request is sent to activate the security features and band management on a storage device. The request includes activation options and the authentication key.
+old-location: storage\ioctl_ehstor_bandmgmt_activate.htm
+old-project: storage
+ms.assetid: 10C3077A-1A6A-4AA1-BC9B-829353A8A895
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_ehstor_bandmgmt_activate, IOCTL_EHSTOR_BANDMGMT_ACTIVATE control code [Storage Devices], IOCTL_EHSTOR_BANDMGMT_ACTIVATE, ehstorbandmgmt/IOCTL_EHSTOR_BANDMGMT_ACTIVATE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ehstorbandmgmt.h
+req.include-header: EhStorBandMgmt.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with  Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	EhStorBandMgmt.h
+apiname:
+-	IOCTL_EHSTOR_BANDMGMT_ACTIVATE
+product: Windows
+targetos: Windows
+req.typenames: DXVA_VideoSample32
 ---
 
 # IOCTL_EHSTOR_BANDMGMT_ACTIVATE IOCTL

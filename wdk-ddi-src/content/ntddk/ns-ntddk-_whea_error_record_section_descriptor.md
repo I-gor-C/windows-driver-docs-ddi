@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddk._WHEA_ERROR_RECORD_SECTION_DESCRIPTOR
-title : "_WHEA_ERROR_RECORD_SECTION_DESCRIPTOR"
-author : windows-driver-content
-description : The WHEA_ERROR_RECORD_SECTION_DESCRIPTOR structure describes a section of error information that is part of an error record.
-old-location : whea\whea_error_record_section_descriptor.htm
-old-project : whea
-ms.assetid : f1abbf2b-19c9-4d34-9975-4f7ab98792af
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : PWHEA_ERROR_RECORD_SECTION_DESCRIPTOR structure pointer [WHEA Drivers and Applications], whearef_91e354e5-972e-4bf2-b3e7-34e99299ee1f.xml, ntddk/PWHEA_ERROR_RECORD_SECTION_DESCRIPTOR, ntddk/WHEA_ERROR_RECORD_SECTION_DESCRIPTOR, WHEA_ERROR_RECORD_SECTION_DESCRIPTOR, *PWHEA_ERROR_RECORD_SECTION_DESCRIPTOR, PWHEA_ERROR_RECORD_SECTION_DESCRIPTOR, whea.whea_error_record_section_descriptor, WHEA_ERROR_RECORD_SECTION_DESCRIPTOR structure [WHEA Drivers and Applications], _WHEA_ERROR_RECORD_SECTION_DESCRIPTOR
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_ERROR_RECORD_SECTION_DESCRIPTOR, *PWHEA_ERROR_RECORD_SECTION_DESCRIPTOR
+UID: NS:ntddk._WHEA_ERROR_RECORD_SECTION_DESCRIPTOR
+title: "_WHEA_ERROR_RECORD_SECTION_DESCRIPTOR"
+author: windows-driver-content
+description: The WHEA_ERROR_RECORD_SECTION_DESCRIPTOR structure describes a section of error information that is part of an error record.
+old-location: whea\whea_error_record_section_descriptor.htm
+old-project: whea
+ms.assetid: f1abbf2b-19c9-4d34-9975-4f7ab98792af
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: PWHEA_ERROR_RECORD_SECTION_DESCRIPTOR structure pointer [WHEA Drivers and Applications], whearef_91e354e5-972e-4bf2-b3e7-34e99299ee1f.xml, ntddk/PWHEA_ERROR_RECORD_SECTION_DESCRIPTOR, ntddk/WHEA_ERROR_RECORD_SECTION_DESCRIPTOR, WHEA_ERROR_RECORD_SECTION_DESCRIPTOR, *PWHEA_ERROR_RECORD_SECTION_DESCRIPTOR, PWHEA_ERROR_RECORD_SECTION_DESCRIPTOR, whea.whea_error_record_section_descriptor, WHEA_ERROR_RECORD_SECTION_DESCRIPTOR structure [WHEA Drivers and Applications], _WHEA_ERROR_RECORD_SECTION_DESCRIPTOR
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddk.h
+apiname:
+-	WHEA_ERROR_RECORD_SECTION_DESCRIPTOR
+product: Windows
+targetos: Windows
+req.typenames: WHEA_ERROR_RECORD_SECTION_DESCRIPTOR, *PWHEA_ERROR_RECORD_SECTION_DESCRIPTOR
 ---
 
 # _WHEA_ERROR_RECORD_SECTION_DESCRIPTOR structure

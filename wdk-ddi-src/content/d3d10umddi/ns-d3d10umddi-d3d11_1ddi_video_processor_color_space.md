@@ -1,41 +1,46 @@
 ---
-UID : NS:d3d10umddi.D3D11_1DDI_VIDEO_PROCESSOR_COLOR_SPACE
-title : D3D11_1DDI_VIDEO_PROCESSOR_COLOR_SPACE
-author : windows-driver-content
-description : Specifies the color space for video processing.
-old-location : display\d3d11_1ddi_video_processor_color_space.htm
-old-project : display
-ms.assetid : 2878b36e-3850-4af8-aeca-9c5d2da717f9
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3D11_1DDI_VIDEO_PROCESSOR_COLOR_SPACE, d3d10umddi/D3D11_1DDI_VIDEO_PROCESSOR_COLOR_SPACE, display.d3d11_1ddi_video_processor_color_space, D3D11_1DDI_VIDEO_PROCESSOR_COLOR_SPACE structure [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3D11_1DDI_VIDEO_PROCESSOR_COLOR_SPACE
+UID: NS:d3d10umddi.D3D11_1DDI_VIDEO_PROCESSOR_COLOR_SPACE
+title: D3D11_1DDI_VIDEO_PROCESSOR_COLOR_SPACE
+author: windows-driver-content
+description: Specifies the color space for video processing.
+old-location: display\d3d11_1ddi_video_processor_color_space.htm
+old-project: display
+ms.assetid: 2878b36e-3850-4af8-aeca-9c5d2da717f9
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3D11_1DDI_VIDEO_PROCESSOR_COLOR_SPACE, d3d10umddi/D3D11_1DDI_VIDEO_PROCESSOR_COLOR_SPACE, display.d3d11_1ddi_video_processor_color_space, D3D11_1DDI_VIDEO_PROCESSOR_COLOR_SPACE structure [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	D3d10umddi.h
+apiname:
+-	D3D11_1DDI_VIDEO_PROCESSOR_COLOR_SPACE
+product: Windows
+targetos: Windows
+req.typenames: D3D11_1DDI_VIDEO_PROCESSOR_COLOR_SPACE
 ---
 
 # D3D11_1DDI_VIDEO_PROCESSOR_COLOR_SPACE structure

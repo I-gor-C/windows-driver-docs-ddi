@@ -1,42 +1,47 @@
 ---
-UID : NS:winsplp.MESSAGEBOX_PARAMS
-title : MESSAGEBOX_PARAMS
-author : windows-driver-content
-description : The MESSAGEBOX_PARAMS structure is used by the SplPromptUIInUsersSession function to hold information about the appearance and behavior of a message box.
-old-location : print\messagebox_params.htm
-old-project : print
-ms.assetid : 28a94e25-9beb-46a1-9e9d-9fe4823372be
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : PMESSAGEBOX_PARAMS, *PMESSAGEBOX_PARAMS, print.messagebox_params, spoolfnc_c70908b4-e8de-4e3e-810d-d76cf2104d91.xml, PMESSAGEBOX_PARAMS structure pointer [Print Devices], winsplp/MESSAGEBOX_PARAMS, winsplp/PMESSAGEBOX_PARAMS, MESSAGEBOX_PARAMS structure [Print Devices], MESSAGEBOX_PARAMS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : winsplp.h
-req.include-header : Winsplp.h
-req.target-type : Windows
-req.target-min-winverclnt : This structure is available in Windows XP and later operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : MESSAGEBOX_PARAMS, *PMESSAGEBOX_PARAMS
-req.product : Windows 10 or later.
+UID: NS:winsplp.MESSAGEBOX_PARAMS
+title: MESSAGEBOX_PARAMS
+author: windows-driver-content
+description: The MESSAGEBOX_PARAMS structure is used by the SplPromptUIInUsersSession function to hold information about the appearance and behavior of a message box.
+old-location: print\messagebox_params.htm
+old-project: print
+ms.assetid: 28a94e25-9beb-46a1-9e9d-9fe4823372be
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: PMESSAGEBOX_PARAMS, *PMESSAGEBOX_PARAMS, print.messagebox_params, spoolfnc_c70908b4-e8de-4e3e-810d-d76cf2104d91.xml, PMESSAGEBOX_PARAMS structure pointer [Print Devices], winsplp/MESSAGEBOX_PARAMS, winsplp/PMESSAGEBOX_PARAMS, MESSAGEBOX_PARAMS structure [Print Devices], MESSAGEBOX_PARAMS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: winsplp.h
+req.include-header: Winsplp.h
+req.target-type: Windows
+req.target-min-winverclnt: This structure is available in Windows XP and later operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	winsplp.h
+apiname:
+-	MESSAGEBOX_PARAMS
+product: Windows
+targetos: Windows
+req.typenames: MESSAGEBOX_PARAMS, *PMESSAGEBOX_PARAMS
+req.product: Windows 10 or later.
 ---
 
 # MESSAGEBOX_PARAMS structure

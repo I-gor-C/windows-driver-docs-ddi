@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.KeRemoveQueue
-title : KeRemoveQueue function
-author : windows-driver-content
-description : The KeRemoveQueue routine gives the calling thread a pointer to a dequeued entry from the given queue object or allows the caller to wait, up to an optional timeout interval, on the queue object.
-old-location : ifsk\keremovequeue.htm
-old-project : ifsk
-ms.assetid : 475e352a-b6ea-4e37-ad46-e94284caa105
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KeRemoveQueue, ifsk.keremovequeue, KeRemoveQueue routine [Installable File System Drivers], ntifs/KeRemoveQueue, keref_99014b0b-5ca1-4cda-8422-fc3819f42d8b.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h, FltKernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.KeRemoveQueue
+title: KeRemoveQueue function
+author: windows-driver-content
+description: The KeRemoveQueue routine gives the calling thread a pointer to a dequeued entry from the given queue object or allows the caller to wait, up to an optional timeout interval, on the queue object.
+old-location: ifsk\keremovequeue.htm
+old-project: ifsk
+ms.assetid: 475e352a-b6ea-4e37-ad46-e94284caa105
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KeRemoveQueue, ifsk.keremovequeue, KeRemoveQueue routine [Installable File System Drivers], ntifs/KeRemoveQueue, keref_99014b0b-5ca1-4cda-8422-fc3819f42d8b.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h, FltKernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	KeRemoveQueue
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

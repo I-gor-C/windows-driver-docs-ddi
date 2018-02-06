@@ -1,41 +1,46 @@
 ---
-UID : NF:ntintsafe.RtlUIntPtrMult
-title : RtlUIntPtrMult function
-author : windows-driver-content
-description : Multiplies one value of type UINT_PTR by another.
-old-location : kernel\rtluintptrmult.htm
-old-project : kernel
-ms.assetid : E484AB83-DEA6-4FC7-9896-26984D998661
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.rtluintptrmult, RtlUIntPtrMult function [Kernel-Mode Driver Architecture], ntintsafe/RtlUIntPtrMult, RtlUIntPtrMult
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntintsafe.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PUBLIC_OBJECT_TYPE_INFORMATION, *PPUBLIC_OBJECT_TYPE_INFORMATION
+UID: NF:ntintsafe.RtlUIntPtrMult
+title: RtlUIntPtrMult function
+author: windows-driver-content
+description: Multiplies one value of type UINT_PTR by another.
+old-location: kernel\rtluintptrmult.htm
+old-project: kernel
+ms.assetid: E484AB83-DEA6-4FC7-9896-26984D998661
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.rtluintptrmult, RtlUIntPtrMult function [Kernel-Mode Driver Architecture], ntintsafe/RtlUIntPtrMult, RtlUIntPtrMult
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntintsafe.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntintsafe.h
+apiname:
+-	RtlUIntPtrMult
+product: Windows
+targetos: Windows
+req.typenames: PUBLIC_OBJECT_TYPE_INFORMATION, *PPUBLIC_OBJECT_TYPE_INFORMATION
 ---
 
 

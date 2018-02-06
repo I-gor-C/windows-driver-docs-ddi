@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfwdm.InitializeObjectAttributes
-title : InitializeObjectAttributes macro
-author : windows-driver-content
-description : The InitializeObjectAttributes macro initializes the opaque OBJECT_ATTRIBUTES structure, which specifies the properties of an object handle to routines that open handles.
-old-location : kernel\initializeobjectattributes.htm
-old-project : kernel
-ms.assetid : ee89a9af-0bdf-476e-b4e3-eb60662e160d
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : k107_f7e00cf9-9598-4835-b51a-3df9e003587e.xml, InitializeObjectAttributes, wudfwdm/InitializeObjectAttributes, kernel.initializeobjectattributes, InitializeObjectAttributes macro [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : macro
-req.header : wudfwdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntdef.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfwdm.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
-req.product : Windows 10 or later.
+UID: NF:wudfwdm.InitializeObjectAttributes
+title: InitializeObjectAttributes macro
+author: windows-driver-content
+description: The InitializeObjectAttributes macro initializes the opaque OBJECT_ATTRIBUTES structure, which specifies the properties of an object handle to routines that open handles.
+old-location: kernel\initializeobjectattributes.htm
+old-project: kernel
+ms.assetid: ee89a9af-0bdf-476e-b4e3-eb60662e160d
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: k107_f7e00cf9-9598-4835-b51a-3df9e003587e.xml, InitializeObjectAttributes, wudfwdm/InitializeObjectAttributes, kernel.initializeobjectattributes, InitializeObjectAttributes macro [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: macro
+req.header: wudfwdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntdef.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfwdm.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wudfwdm.h
+apiname:
+-	InitializeObjectAttributes
+product: Windows
+targetos: Windows
+req.typenames: WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
+req.product: Windows 10 or later.
 ---
 
 

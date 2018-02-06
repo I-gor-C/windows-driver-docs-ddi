@@ -1,41 +1,46 @@
 ---
-UID : NF:hbaapi.HBA_ScsiReportLUNsV2
-title : HBA_ScsiReportLUNsV2 function
-author : windows-driver-content
-description : The HBA_ScsiReportLUNsV2 routine sends a SCSI report LUNs command to the indicated remote port.
-old-location : storage\hba_scsireportlunsv2.htm
-old-project : storage
-ms.assetid : 6a4dfb93-4044-4a7a-a993-38c91f84cae2
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : hbaapi/HBA_ScsiReportLUNsV2, HBA_ScsiReportLUNsV2, fibreHBA_rtns_ca5de2ac-67e1-49e0-9397-c5e987854154.xml, HBA_ScsiReportLUNsV2 routine [Storage Devices], storage.hba_scsireportlunsv2
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : hbaapi.h
-req.include-header : Hbaapi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Hbaapi.lib
-req.dll : Hbaapi.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HBA_WWNTYPE
+UID: NF:hbaapi.HBA_ScsiReportLUNsV2
+title: HBA_ScsiReportLUNsV2 function
+author: windows-driver-content
+description: The HBA_ScsiReportLUNsV2 routine sends a SCSI report LUNs command to the indicated remote port.
+old-location: storage\hba_scsireportlunsv2.htm
+old-project: storage
+ms.assetid: 6a4dfb93-4044-4a7a-a993-38c91f84cae2
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: hbaapi/HBA_ScsiReportLUNsV2, HBA_ScsiReportLUNsV2, fibreHBA_rtns_ca5de2ac-67e1-49e0-9397-c5e987854154.xml, HBA_ScsiReportLUNsV2 routine [Storage Devices], storage.hba_scsireportlunsv2
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: hbaapi.h
+req.include-header: Hbaapi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Hbaapi.lib
+req.dll: Hbaapi.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Hbaapi.dll
+apiname:
+-	HBA_ScsiReportLUNsV2
+product: Windows
+targetos: Windows
+req.typenames: HBA_WWNTYPE
 ---
 
 

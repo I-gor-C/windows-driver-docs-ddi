@@ -1,41 +1,46 @@
 ---
-UID : NC:dbgeng.PDEBUG_STACK_PROVIDER_ENDTHREADSTACKRECONSTRUCTION
-title : PDEBUG_STACK_PROVIDER_ENDTHREADSTACKRECONSTRUCTION
-author : windows-driver-content
-description : The EndThreadStackReconstruction callback function may be called after stack reconstruction to clean up state.
-old-location : debugger\endthreadstackreconstruction.htm
-old-project : debugger
-ms.assetid : 76984F28-7AC9-44FD-9D8B-CC184484C73E
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : debugger.endthreadstackreconstruction, EndThreadStackReconstruction, EndThreadStackReconstruction callback function [Windows Debugging], EndThreadStackReconstruction, PDEBUG_STACK_PROVIDER_ENDTHREADSTACKRECONSTRUCTION, PDEBUG_STACK_PROVIDER_ENDTHREADSTACKRECONSTRUCTION, dbgeng/EndThreadStackReconstruction
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NC:dbgeng.PDEBUG_STACK_PROVIDER_ENDTHREADSTACKRECONSTRUCTION
+title: PDEBUG_STACK_PROVIDER_ENDTHREADSTACKRECONSTRUCTION
+author: windows-driver-content
+description: The EndThreadStackReconstruction callback function may be called after stack reconstruction to clean up state.
+old-location: debugger\endthreadstackreconstruction.htm
+old-project: debugger
+ms.assetid: 76984F28-7AC9-44FD-9D8B-CC184484C73E
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: debugger.endthreadstackreconstruction, EndThreadStackReconstruction, EndThreadStackReconstruction callback function [Windows Debugging], EndThreadStackReconstruction, PDEBUG_STACK_PROVIDER_ENDTHREADSTACKRECONSTRUCTION, PDEBUG_STACK_PROVIDER_ENDTHREADSTACKRECONSTRUCTION, dbgeng/EndThreadStackReconstruction
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Dbgeng.h
+apiname:
+-	EndThreadStackReconstruction
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

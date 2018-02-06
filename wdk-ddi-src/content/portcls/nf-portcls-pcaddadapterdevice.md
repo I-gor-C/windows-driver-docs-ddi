@@ -1,41 +1,47 @@
 ---
-UID : NF:portcls.PcAddAdapterDevice
-title : PcAddAdapterDevice function
-author : windows-driver-content
-description : The PcAddAdapterDevice function adds an adapter device to the WDM device stack.
-old-location : audio\pcaddadapterdevice.htm
-old-project : audio
-ms.assetid : fa571ca0-194c-4018-9b93-a3cc687f7632
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : PcAddAdapterDevice, audpc-routines_5b2b0ba0-67b7-4c8d-bd47-b7e664500637.xml, portcls/PcAddAdapterDevice, audio.pcaddadapterdevice, PcAddAdapterDevice function [Audio Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : portcls.h
-req.include-header : Portcls.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting in Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Portcls.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.PcAddAdapterDevice
+title: PcAddAdapterDevice function
+author: windows-driver-content
+description: The PcAddAdapterDevice function adds an adapter device to the WDM device stack.
+old-location: audio\pcaddadapterdevice.htm
+old-project: audio
+ms.assetid: fa571ca0-194c-4018-9b93-a3cc687f7632
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: PcAddAdapterDevice, audpc-routines_5b2b0ba0-67b7-4c8d-bd47-b7e664500637.xml, portcls/PcAddAdapterDevice, audio.pcaddadapterdevice, PcAddAdapterDevice function [Audio Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: portcls.h
+req.include-header: Portcls.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting in Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Portcls.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Portcls.lib
+-	Portcls.dll
+apiname:
+-	PcAddAdapterDevice
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

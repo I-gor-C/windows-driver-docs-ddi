@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.KeInsertQueue
-title : KeInsertQueue function
-author : windows-driver-content
-description : The KeInsertQueue routine inserts an entry at the tail of the given queue if it cannot immediately use the entry to satisfy a thread wait.
-old-location : ifsk\keinsertqueue.htm
-old-project : ifsk
-ms.assetid : 0aee6102-e9e3-41dc-a222-36bebb3d4294
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : keref_0e1ad47f-c38b-40e8-8629-8d970d5e1a72.xml, KeInsertQueue routine [Installable File System Drivers], KeInsertQueue, ifsk.keinsertqueue, ntifs/KeInsertQueue
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.KeInsertQueue
+title: KeInsertQueue function
+author: windows-driver-content
+description: The KeInsertQueue routine inserts an entry at the tail of the given queue if it cannot immediately use the entry to satisfy a thread wait.
+old-location: ifsk\keinsertqueue.htm
+old-project: ifsk
+ms.assetid: 0aee6102-e9e3-41dc-a222-36bebb3d4294
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: keref_0e1ad47f-c38b-40e8-8629-8d970d5e1a72.xml, KeInsertQueue routine [Installable File System Drivers], KeInsertQueue, ifsk.keinsertqueue, ntifs/KeInsertQueue
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	KeInsertQueue
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

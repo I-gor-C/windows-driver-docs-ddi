@@ -1,41 +1,46 @@
 ---
-UID : NF:portcls.IMiniportStreamAudioEngineNode.SetStreamLoopbackProtection
-title : IMiniportStreamAudioEngineNode::SetStreamLoopbackProtection method
-author : windows-driver-content
-description : Sets the loopback protection status of the audio engine node.
-old-location : audio\iminiportstreamaudioenginenode_setstreamloopbackprotection.htm
-old-project : audio
-ms.assetid : FAC9AC9B-9C4B-4D53-A59A-8901EC8755BC
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : SetStreamLoopbackProtection method [Audio Devices], IMiniportStreamAudioEngineNode interface, portcls/IMiniportStreamAudioEngineNode::SetStreamLoopbackProtection, IMiniportStreamAudioEngineNode interface [Audio Devices], SetStreamLoopbackProtection method, IMiniportStreamAudioEngineNode, IMiniportStreamAudioEngineNode::SetStreamLoopbackProtection, audio.iminiportstreamaudioenginenode_setstreamloopbackprotection, SetStreamLoopbackProtection method [Audio Devices], SetStreamLoopbackProtection
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : portcls.h
-req.include-header : 
-req.target-type : Universal
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : portcls.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.IMiniportStreamAudioEngineNode.SetStreamLoopbackProtection
+title: IMiniportStreamAudioEngineNode::SetStreamLoopbackProtection method
+author: windows-driver-content
+description: Sets the loopback protection status of the audio engine node.
+old-location: audio\iminiportstreamaudioenginenode_setstreamloopbackprotection.htm
+old-project: audio
+ms.assetid: FAC9AC9B-9C4B-4D53-A59A-8901EC8755BC
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: SetStreamLoopbackProtection method [Audio Devices], IMiniportStreamAudioEngineNode interface, portcls/IMiniportStreamAudioEngineNode::SetStreamLoopbackProtection, IMiniportStreamAudioEngineNode interface [Audio Devices], SetStreamLoopbackProtection method, IMiniportStreamAudioEngineNode, IMiniportStreamAudioEngineNode::SetStreamLoopbackProtection, audio.iminiportstreamaudioenginenode_setstreamloopbackprotection, SetStreamLoopbackProtection method [Audio Devices], SetStreamLoopbackProtection
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: portcls.h
+req.include-header: 
+req.target-type: Universal
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: portcls.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Portcls.h
+apiname:
+-	IMiniportStreamAudioEngineNode.SetStreamLoopbackProtection
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

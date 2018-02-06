@@ -1,42 +1,50 @@
 ---
-UID : NF:wdffdo.WdfFdoInitSetFilter
-title : WdfFdoInitSetFilter function
-author : windows-driver-content
-description : The WdfFdoInitSetFilter method identifies the calling driver as an upper-level or lower-level filter driver, for a specified device.
-old-location : wdf\wdffdoinitsetfilter.htm
-old-project : wdf
-ms.assetid : 6e195025-4e70-44fa-a12d-0a98417381a0
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WdfFdoInitSetFilter, kmdf.wdffdoinitsetfilter, WdfFdoInitSetFilter method, PFN_WDFFDOINITSETFILTER, wdffdo/WdfFdoInitSetFilter, DFDeviceObjectFdoPdoRef_d1040c41-d94a-489d-ab74-9b3ae1e900bb.xml, wdf.wdffdoinitsetfilter
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdffdo.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : DeviceInitAPI, DriverCreate, DrvAckIoStop, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_DRIVER_VERSION_AVAILABLE_PARAMS, *PWDF_DRIVER_VERSION_AVAILABLE_PARAMS
-req.product : Windows 10 or later.
+UID: NF:wdffdo.WdfFdoInitSetFilter
+title: WdfFdoInitSetFilter function
+author: windows-driver-content
+description: The WdfFdoInitSetFilter method identifies the calling driver as an upper-level or lower-level filter driver, for a specified device.
+old-location: wdf\wdffdoinitsetfilter.htm
+old-project: wdf
+ms.assetid: 6e195025-4e70-44fa-a12d-0a98417381a0
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WdfFdoInitSetFilter, kmdf.wdffdoinitsetfilter, WdfFdoInitSetFilter method, PFN_WDFFDOINITSETFILTER, wdffdo/WdfFdoInitSetFilter, DFDeviceObjectFdoPdoRef_d1040c41-d94a-489d-ab74-9b3ae1e900bb.xml, wdf.wdffdoinitsetfilter
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdffdo.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: DeviceInitAPI, DriverCreate, DrvAckIoStop, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+-	WUDFx02000.dll
+-	WUDFx02000.dll.dll
+apiname:
+-	WdfFdoInitSetFilter
+product: Windows
+targetos: Windows
+req.typenames: WDF_DRIVER_VERSION_AVAILABLE_PARAMS, *PWDF_DRIVER_VERSION_AVAILABLE_PARAMS
+req.product: Windows 10 or later.
 ---
 
 

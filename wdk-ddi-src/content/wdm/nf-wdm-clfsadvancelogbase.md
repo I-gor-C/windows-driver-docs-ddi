@@ -1,42 +1,48 @@
 ---
-UID : NF:wdm.ClfsAdvanceLogBase
-title : ClfsAdvanceLogBase function
-author : windows-driver-content
-description : The ClfsAdvanceLogBase routine sets the base LSN of a CLFS stream.
-old-location : kernel\clfsadvancelogbase.htm
-old-project : kernel
-ms.assetid : 00f776f7-83c5-4856-a1d3-8b76122d3986
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ClfsAdvanceLogBase routine [Kernel-Mode Driver Architecture], Clfs_d8f1a522-ef50-47fe-bd39-f18f2f176a3b.xml, kernel.clfsadvancelogbase, ClfsAdvanceLogBase, wdm/ClfsAdvanceLogBase
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Clfs.lib
-req.dll : Clfs.sys
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ClfsAdvanceLogBase
+title: ClfsAdvanceLogBase function
+author: windows-driver-content
+description: The ClfsAdvanceLogBase routine sets the base LSN of a CLFS stream.
+old-location: kernel\clfsadvancelogbase.htm
+old-project: kernel
+ms.assetid: 00f776f7-83c5-4856-a1d3-8b76122d3986
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ClfsAdvanceLogBase routine [Kernel-Mode Driver Architecture], Clfs_d8f1a522-ef50-47fe-bd39-f18f2f176a3b.xml, kernel.clfsadvancelogbase, ClfsAdvanceLogBase, wdm/ClfsAdvanceLogBase
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Clfs.lib
+req.dll: Clfs.sys
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Clfs.sys
+-	Ext-MS-Win-fs-clfs-l1-1-0.dll
+apiname:
+-	ClfsAdvanceLogBase
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NI:kbdmou.IOCTL_INTERNAL_MOUSE_DISCONNECT
-title : IOCTL_INTERNAL_MOUSE_DISCONNECT
-author : windows-driver-content
-description : The IOCTL_INTERNAL_MOUSE_DISCONNECT request is completed by Moufiltr with an error status of STATUS_NOT_IMPLEMENTED.
-old-location : hid\ioctl_internal_mouse_disconnect.htm
-old-project : hid
-ms.assetid : e62c61e7-ef64-4939-ad24-686d137b6319
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : hid.ioctl_internal_mouse_disconnect, IOCTL_INTERNAL_MOUSE_DISCONNECT control code [Human Input Devices], IOCTL_INTERNAL_MOUSE_DISCONNECT, kbdmou/IOCTL_INTERNAL_MOUSE_DISCONNECT, mfilref_11062207-6bb0-4a84-aaee-c3c086812b90.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : kbdmou.h
-req.include-header : Kbdmou.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : MSiSCSI_SessionStatistics, *PMSiSCSI_SessionStatistics
+UID: NI:kbdmou.IOCTL_INTERNAL_MOUSE_DISCONNECT
+title: IOCTL_INTERNAL_MOUSE_DISCONNECT
+author: windows-driver-content
+description: The IOCTL_INTERNAL_MOUSE_DISCONNECT request is completed by Moufiltr with an error status of STATUS_NOT_IMPLEMENTED.
+old-location: hid\ioctl_internal_mouse_disconnect.htm
+old-project: hid
+ms.assetid: e62c61e7-ef64-4939-ad24-686d137b6319
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: hid.ioctl_internal_mouse_disconnect, IOCTL_INTERNAL_MOUSE_DISCONNECT control code [Human Input Devices], IOCTL_INTERNAL_MOUSE_DISCONNECT, kbdmou/IOCTL_INTERNAL_MOUSE_DISCONNECT, mfilref_11062207-6bb0-4a84-aaee-c3c086812b90.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: kbdmou.h
+req.include-header: Kbdmou.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	kbdmou.h
+apiname:
+-	IOCTL_INTERNAL_MOUSE_DISCONNECT
+product: Windows
+targetos: Windows
+req.typenames: MSiSCSI_SessionStatistics, *PMSiSCSI_SessionStatistics
 ---
 
 # IOCTL_INTERNAL_MOUSE_DISCONNECT IOCTL

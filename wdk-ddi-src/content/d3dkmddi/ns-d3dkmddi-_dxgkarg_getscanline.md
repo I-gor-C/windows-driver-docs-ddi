@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGKARG_GETSCANLINE
-title : "_DXGKARG_GETSCANLINE"
-author : windows-driver-content
-description : The DXGKARG_GETSCANLINE structure contains information about a video present target's vertical blanking status.
-old-location : display\dxgkarg_getscanline.htm
-old-project : display
-ms.assetid : 92138511-46cf-4c8b-84d0-a11fe9208be5
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkarg_getscanline, DXGKARG_GETSCANLINE, _DXGKARG_GETSCANLINE, DXGKARG_GETSCANLINE structure [Display Devices], d3dkmddi/DXGKARG_GETSCANLINE, *INOUT_PDXGKARG_GETSCANLINE, DmStructs_9e2cdcde-c2ca-4474-9c96-ee66a80f0295.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGKARG_GETSCANLINE
+UID: NS:d3dkmddi._DXGKARG_GETSCANLINE
+title: "_DXGKARG_GETSCANLINE"
+author: windows-driver-content
+description: The DXGKARG_GETSCANLINE structure contains information about a video present target's vertical blanking status.
+old-location: display\dxgkarg_getscanline.htm
+old-project: display
+ms.assetid: 92138511-46cf-4c8b-84d0-a11fe9208be5
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkarg_getscanline, DXGKARG_GETSCANLINE, _DXGKARG_GETSCANLINE, DXGKARG_GETSCANLINE structure [Display Devices], d3dkmddi/DXGKARG_GETSCANLINE, *INOUT_PDXGKARG_GETSCANLINE, DmStructs_9e2cdcde-c2ca-4474-9c96-ee66a80f0295.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DXGKARG_GETSCANLINE
+product: Windows
+targetos: Windows
+req.typenames: DXGKARG_GETSCANLINE
 ---
 
 # _DXGKARG_GETSCANLINE structure

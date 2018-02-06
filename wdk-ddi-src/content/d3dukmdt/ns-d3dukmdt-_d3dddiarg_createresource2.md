@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dukmdt._D3DDDIARG_CREATERESOURCE2
-title : "_D3DDDIARG_CREATERESOURCE2"
-author : windows-driver-content
-description : Contains information for creating a resource. Used by Windows Display Driver Model (WDDM) 1.2 and later user-mode display drivers.
-old-location : display\d3dddiarg_createresource2.htm
-old-project : display
-ms.assetid : 337874d1-9f9b-429d-a970-60b5d86ac7a2
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DDDIARG_CREATERESOURCE2 structure [Display Devices], _D3DDDIARG_CREATERESOURCE2, display.d3dddiarg_createresource2, d3dukmdt/D3DDDIARG_CREATERESOURCE2, D3DDDIARG_CREATERESOURCE2
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dukmdt.h
-req.include-header : D3dukmdt.h, D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDIARG_CREATERESOURCE2
+UID: NS:d3dukmdt._D3DDDIARG_CREATERESOURCE2
+title: "_D3DDDIARG_CREATERESOURCE2"
+author: windows-driver-content
+description: Contains information for creating a resource. Used by Windows Display Driver Model (WDDM) 1.2 and later user-mode display drivers.
+old-location: display\d3dddiarg_createresource2.htm
+old-project: display
+ms.assetid: 337874d1-9f9b-429d-a970-60b5d86ac7a2
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DDDIARG_CREATERESOURCE2 structure [Display Devices], _D3DDDIARG_CREATERESOURCE2, display.d3dddiarg_createresource2, d3dukmdt/D3DDDIARG_CREATERESOURCE2, D3DDDIARG_CREATERESOURCE2
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dukmdt.h
+req.include-header: D3dukmdt.h, D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	D3dukmdt.h
+apiname:
+-	D3DDDIARG_CREATERESOURCE2
+product: Windows
+targetos: Windows
+req.typenames: D3DDDIARG_CREATERESOURCE2
 ---
 
 # _D3DDDIARG_CREATERESOURCE2 structure

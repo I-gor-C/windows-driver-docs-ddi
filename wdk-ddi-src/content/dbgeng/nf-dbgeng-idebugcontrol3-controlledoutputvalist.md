@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugControl3.ControlledOutputVaList
-title : IDebugControl3::ControlledOutputVaList method
-author : windows-driver-content
-description : The ControlledOutputVaList method formats a string and sends the result to output callbacks that were registered with some of the engine's clients.
-old-location : debugger\controlledoutputvalist.htm
-old-project : debugger
-ms.assetid : 5fd3c915-77e0-4f81-9131-0eaf9d3493a3
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : ControlledOutputVaList method [Windows Debugging], IDebugControl interface, dbgeng/IDebugControl2::ControlledOutputVaList, IDebugControl::ControlledOutputVaList, dbgeng/IDebugControl::ControlledOutputVaList, dbgeng/IDebugControl3::ControlledOutputVaList, IDebugControl_2ea55393-9577-4639-ac83-5cefb584ff3b.xml, IDebugControl3, IDebugControl interface [Windows Debugging], ControlledOutputVaList method, ControlledOutputVaList method [Windows Debugging], IDebugControl2 interface, ControlledOutputVaList method [Windows Debugging], IDebugControl2::ControlledOutputVaList, ControlledOutputVaList method [Windows Debugging], IDebugControl3 interface, ControlledOutputVaList, IDebugControl3::ControlledOutputVaList, debugger.controlledoutputvalist, IDebugControl2 interface [Windows Debugging], ControlledOutputVaList method, IDebugControl3 interface [Windows Debugging], ControlledOutputVaList method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h, Stdarg.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl3.ControlledOutputVaList
+title: IDebugControl3::ControlledOutputVaList method
+author: windows-driver-content
+description: The ControlledOutputVaList method formats a string and sends the result to output callbacks that were registered with some of the engine's clients.
+old-location: debugger\controlledoutputvalist.htm
+old-project: debugger
+ms.assetid: 5fd3c915-77e0-4f81-9131-0eaf9d3493a3
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: ControlledOutputVaList method [Windows Debugging], IDebugControl interface, dbgeng/IDebugControl2::ControlledOutputVaList, IDebugControl::ControlledOutputVaList, dbgeng/IDebugControl::ControlledOutputVaList, dbgeng/IDebugControl3::ControlledOutputVaList, IDebugControl_2ea55393-9577-4639-ac83-5cefb584ff3b.xml, IDebugControl3, IDebugControl interface [Windows Debugging], ControlledOutputVaList method, ControlledOutputVaList method [Windows Debugging], IDebugControl2 interface, ControlledOutputVaList method [Windows Debugging], IDebugControl2::ControlledOutputVaList, ControlledOutputVaList method [Windows Debugging], IDebugControl3 interface, ControlledOutputVaList, IDebugControl3::ControlledOutputVaList, debugger.controlledoutputvalist, IDebugControl2 interface [Windows Debugging], ControlledOutputVaList method, IDebugControl3 interface [Windows Debugging], ControlledOutputVaList method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h, Stdarg.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Dbgeng.h
+apiname:
+-	IDebugControl.ControlledOutputVaList
+-	IDebugControl2.ControlledOutputVaList
+-	IDebugControl3.ControlledOutputVaList
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

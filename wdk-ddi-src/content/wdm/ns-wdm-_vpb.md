@@ -1,42 +1,47 @@
 ---
-UID : NS:wdm._VPB
-title : "_VPB"
-author : windows-driver-content
-description : The volume parameter block (VPB) structure is used to map a device object that represents a mounted file system volume to a device object that represents a physical or virtual disk device.
-old-location : ifsk\vpb.htm
-old-project : ifsk
-ms.assetid : aba1638f-1ab0-4953-afe9-1f539e5bd967
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : VPB_RAW_MOUNT, VPB_REMOVE_PENDING, VPB, wdm/VPB, ifsk.vpb, VPB_MOUNTED, PVPB structure pointer [Installable File System Drivers], VPB structure [Installable File System Drivers], *PVPB, _VPB, PVPB, VPB_LOCKED, VPB_DIRECT_WRITES_ALLOWED, VPB_PERSISTENT, wdm/PVPB
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h, FltKernel.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PVPB, VPB"
-req.product : Windows 10 or later.
+UID: NS:wdm._VPB
+title: "_VPB"
+author: windows-driver-content
+description: The volume parameter block (VPB) structure is used to map a device object that represents a mounted file system volume to a device object that represents a physical or virtual disk device.
+old-location: ifsk\vpb.htm
+old-project: ifsk
+ms.assetid: aba1638f-1ab0-4953-afe9-1f539e5bd967
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: VPB_RAW_MOUNT, VPB_REMOVE_PENDING, VPB, wdm/VPB, ifsk.vpb, VPB_MOUNTED, PVPB structure pointer [Installable File System Drivers], VPB structure [Installable File System Drivers], *PVPB, _VPB, PVPB, VPB_LOCKED, VPB_DIRECT_WRITES_ALLOWED, VPB_PERSISTENT, wdm/PVPB
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h, FltKernel.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdm.h
+apiname:
+-	VPB
+product: Windows
+targetos: Windows
+req.typenames: "*PVPB, VPB"
+req.product: Windows 10 or later.
 ---
 
 # _VPB structure

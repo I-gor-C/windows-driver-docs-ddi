@@ -1,41 +1,46 @@
 ---
-UID : NE:d3dukmdt._D3DDDI_SYNCHRONIZATIONOBJECT_TYPE
-title : "_D3DDDI_SYNCHRONIZATIONOBJECT_TYPE"
-author : windows-driver-content
-description : The D3DDDI_SYNCHRONIZATIONOBJECT_TYPE enumeration indicates the type of synchronization object.
-old-location : display\d3dddi_synchronizationobject_type.htm
-old-project : display
-ms.assetid : afd1aad4-d4cd-420f-bd3f-f171dc818a3e
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3dukmdt/D3DDDI_CPU_NOTIFICATION, D3DDDI_SYNCHRONIZATION_MUTEX, D3DDDI_SYNCHRONIZATIONOBJECT_TYPE, d3dukmdt/D3DDDI_MONITORED_FENCE, d3dukmdt/D3DDDI_FENCE, D3DDDI_CPU_NOTIFICATION, d3dukmdt/D3DDDI_SYNCHRONIZATION_MUTEX, D3DDDI_SEMAPHORE, d3dukmdt/D3DDDI_SEMAPHORE, d3dukmdt/D3DDDI_SYNCHRONIZATIONOBJECT_TYPE, _D3DDDI_SYNCHRONIZATIONOBJECT_TYPE, DmEnums_b63edb60-f53f-4779-ad85-b9ad8a889508.xml, D3DDDI_SYNCHRONIZATIONOBJECT_TYPE enumeration [Display Devices], display.d3dddi_synchronizationobject_type, d3dukmdt/, D3DDDI_FENCE, D3DDDI_MONITORED_FENCE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : d3dukmdt.h
-req.include-header : D3dukmdt.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDI_SYNCHRONIZATIONOBJECT_TYPE
+UID: NE:d3dukmdt._D3DDDI_SYNCHRONIZATIONOBJECT_TYPE
+title: "_D3DDDI_SYNCHRONIZATIONOBJECT_TYPE"
+author: windows-driver-content
+description: The D3DDDI_SYNCHRONIZATIONOBJECT_TYPE enumeration indicates the type of synchronization object.
+old-location: display\d3dddi_synchronizationobject_type.htm
+old-project: display
+ms.assetid: afd1aad4-d4cd-420f-bd3f-f171dc818a3e
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3dukmdt/D3DDDI_CPU_NOTIFICATION, D3DDDI_SYNCHRONIZATION_MUTEX, D3DDDI_SYNCHRONIZATIONOBJECT_TYPE, d3dukmdt/D3DDDI_MONITORED_FENCE, d3dukmdt/D3DDDI_FENCE, D3DDDI_CPU_NOTIFICATION, d3dukmdt/D3DDDI_SYNCHRONIZATION_MUTEX, D3DDDI_SEMAPHORE, d3dukmdt/D3DDDI_SEMAPHORE, d3dukmdt/D3DDDI_SYNCHRONIZATIONOBJECT_TYPE, _D3DDDI_SYNCHRONIZATIONOBJECT_TYPE, DmEnums_b63edb60-f53f-4779-ad85-b9ad8a889508.xml, D3DDDI_SYNCHRONIZATIONOBJECT_TYPE enumeration [Display Devices], display.d3dddi_synchronizationobject_type, d3dukmdt/, D3DDDI_FENCE, D3DDDI_MONITORED_FENCE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: d3dukmdt.h
+req.include-header: D3dukmdt.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dukmdt.h
+apiname:
+-	D3DDDI_SYNCHRONIZATIONOBJECT_TYPE
+product: Windows
+targetos: Windows
+req.typenames: D3DDDI_SYNCHRONIZATIONOBJECT_TYPE
 ---
 
 # _D3DDDI_SYNCHRONIZATIONOBJECT_TYPE Enumeration
@@ -63,50 +68,50 @@ typedef enum _D3DDDI_SYNCHRONIZATIONOBJECT_TYPE {
 ## Constants
 
 <table>
-
-<tr>
-<td>D3DDDI_CPU_NOTIFICATION</td>
-<td>The synchronization object is a CPU notification.
-
-Supported starting with Windows 7.</td>
-</tr>
-
-<tr>
-<td>D3DDDI_FENCE</td>
-<td>The synchronization object is a fence. 
+            
+                <tr>
+                    <td>D3DDDI_CPU_NOTIFICATION</td>
+                    <td>The synchronization object is a CPU notification.
 
 Supported starting with Windows 7.</td>
-</tr>
+                </tr>
+            
+                <tr>
+                    <td>D3DDDI_FENCE</td>
+                    <td>The synchronization object is a fence. 
 
-<tr>
-<td>D3DDDI_MONITORED_FENCE</td>
-<td>The synchronization object is a monitored fence.
+Supported starting with Windows 7.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DDDI_MONITORED_FENCE</td>
+                    <td>The synchronization object is a monitored fence.
 
 Supported starting with Windows 10.
 
 The synchronization object is a periodic monitored fence.
 
 Supported starting with Windows 10.</td>
-</tr>
-
-<tr>
-<td>D3DDDI_PERIODIC_MONITORED_FENCE</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DDDI_SEMAPHORE</td>
-<td>The synchronization object is a semaphore.
-
-Supported starting with Windows Vista.</td>
-</tr>
-
-<tr>
-<td>D3DDDI_SYNCHRONIZATION_MUTEX</td>
-<td>The synchronization object is a synchronization mutex.
+                </tr>
+            
+                <tr>
+                    <td>D3DDDI_PERIODIC_MONITORED_FENCE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DDDI_SEMAPHORE</td>
+                    <td>The synchronization object is a semaphore.
 
 Supported starting with Windows Vista.</td>
-</tr>
+                </tr>
+            
+                <tr>
+                    <td>D3DDDI_SYNCHRONIZATION_MUTEX</td>
+                    <td>The synchronization object is a synchronization mutex.
+
+Supported starting with Windows Vista.</td>
+                </tr>
 </table>
 
 

@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisCmNotifyCloseAddressFamily
-title : NdisCmNotifyCloseAddressFamily function
-author : windows-driver-content
-description : The NdisCmNotifyCloseAddressFamily function notifies NDIS that a call manager is unbinding from an underlying miniport adapter and that any associated CoNDIS clients should close the specified address family (AF).
-old-location : netvista\ndiscmnotifycloseaddressfamily.htm
-old-project : netvista
-ms.assetid : 1967f663-86ce-4e9d-9498-61951bdf4db0
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NdisCmNotifyCloseAddressFamily function [Network Drivers Starting with Windows Vista], netvista.ndiscmnotifycloseaddressfamily, ndis/NdisCmNotifyCloseAddressFamily, condis_call_manager_ref_91b51137-6a26-4b90-a83c-c06a9463bf97.xml, NdisCmNotifyCloseAddressFamily
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_CallManager_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisCmNotifyCloseAddressFamily
+title: NdisCmNotifyCloseAddressFamily function
+author: windows-driver-content
+description: The NdisCmNotifyCloseAddressFamily function notifies NDIS that a call manager is unbinding from an underlying miniport adapter and that any associated CoNDIS clients should close the specified address family (AF).
+old-location: netvista\ndiscmnotifycloseaddressfamily.htm
+old-project: netvista
+ms.assetid: 1967f663-86ce-4e9d-9498-61951bdf4db0
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NdisCmNotifyCloseAddressFamily function [Network Drivers Starting with Windows Vista], netvista.ndiscmnotifycloseaddressfamily, ndis/NdisCmNotifyCloseAddressFamily, condis_call_manager_ref_91b51137-6a26-4b90-a83c-c06a9463bf97.xml, NdisCmNotifyCloseAddressFamily
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_CallManager_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisCmNotifyCloseAddressFamily
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

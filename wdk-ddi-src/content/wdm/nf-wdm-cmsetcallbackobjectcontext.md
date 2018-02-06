@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.CmSetCallbackObjectContext
-title : CmSetCallbackObjectContext function
-author : windows-driver-content
-description : The CmSetCallbackObjectContext routine associates specified context information with a specified registry object.
-old-location : kernel\cmsetcallbackobjectcontext.htm
-old-project : kernel
-ms.assetid : 69e85037-5c60-404a-b251-dc1622c7d818
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.cmsetcallbackobjectcontext, CmSetCallbackObjectContext routine [Kernel-Mode Driver Architecture], CmSetCallbackObjectContext, ConfigMgrRef_86ecc2b5-c790-4414-973d-6d26475b211d.xml, wdm/CmSetCallbackObjectContext
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.CmSetCallbackObjectContext
+title: CmSetCallbackObjectContext function
+author: windows-driver-content
+description: The CmSetCallbackObjectContext routine associates specified context information with a specified registry object.
+old-location: kernel\cmsetcallbackobjectcontext.htm
+old-project: kernel
+ms.assetid: 69e85037-5c60-404a-b251-dc1622c7d818
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.cmsetcallbackobjectcontext, CmSetCallbackObjectContext routine [Kernel-Mode Driver Architecture], CmSetCallbackObjectContext, ConfigMgrRef_86ecc2b5-c790-4414-973d-6d26475b211d.xml, wdm/CmSetCallbackObjectContext
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	CmSetCallbackObjectContext
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

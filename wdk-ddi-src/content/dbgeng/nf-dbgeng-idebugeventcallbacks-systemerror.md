@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugEventCallbacks.SystemError
-title : IDebugEventCallbacks::SystemError method
-author : windows-driver-content
-description : The SystemError callback method is called by the engine when a system error occurs in the target.
-old-location : debugger\idebugeventcallbacks_systemerror.htm
-old-project : debugger
-ms.assetid : 651f5207-36c8-4d46-8305-950efb2365bf
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugEventCallbacks interface [Windows Debugging], SystemError method, dbgeng/IDebugEventCallbacks::SystemError, IDebugEventCallbacks, SystemError method [Windows Debugging], IDebugEventCallbacks::SystemError, ComCallbacks_a84628b9-4376-4ca0-883f-835d19e13d73.xml, SystemError method [Windows Debugging], IDebugEventCallbacks interface, SystemError, debugger.idebugeventcallbacks_systemerror
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugEventCallbacks.SystemError
+title: IDebugEventCallbacks::SystemError method
+author: windows-driver-content
+description: The SystemError callback method is called by the engine when a system error occurs in the target.
+old-location: debugger\idebugeventcallbacks_systemerror.htm
+old-project: debugger
+ms.assetid: 651f5207-36c8-4d46-8305-950efb2365bf
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugEventCallbacks interface [Windows Debugging], SystemError method, dbgeng/IDebugEventCallbacks::SystemError, IDebugEventCallbacks, SystemError method [Windows Debugging], IDebugEventCallbacks::SystemError, ComCallbacks_a84628b9-4376-4ca0-883f-835d19e13d73.xml, SystemError method [Windows Debugging], IDebugEventCallbacks interface, SystemError, debugger.idebugeventcallbacks_systemerror
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugEventCallbacks.SystemError
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

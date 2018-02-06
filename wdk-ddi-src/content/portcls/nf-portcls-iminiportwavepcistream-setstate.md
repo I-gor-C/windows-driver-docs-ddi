@@ -1,41 +1,46 @@
 ---
-UID : NF:portcls.IMiniportWavePciStream.SetState
-title : IMiniportWavePciStream::SetState method
-author : windows-driver-content
-description : The SetState method changes the state of the stream transport.
-old-location : audio\iminiportwavepcistream_setstate.htm
-old-project : audio
-ms.assetid : ae029e17-7229-49a6-bf5f-96e0cb143d5b
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : audio.iminiportwavepcistream_setstate, SetState method [Audio Devices], IMiniportWavePciStream, SetState method [Audio Devices], IMiniportWavePciStream interface, portcls/IMiniportWavePciStream::SetState, IMiniportWavePciStream::SetState, audmp-routines_71487eb9-23d5-4428-92c0-fc75e58d0da5.xml, IMiniportWavePciStream interface [Audio Devices], SetState method, SetState
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : portcls.h
-req.include-header : Portcls.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : portcls.h
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.IMiniportWavePciStream.SetState
+title: IMiniportWavePciStream::SetState method
+author: windows-driver-content
+description: The SetState method changes the state of the stream transport.
+old-location: audio\iminiportwavepcistream_setstate.htm
+old-project: audio
+ms.assetid: ae029e17-7229-49a6-bf5f-96e0cb143d5b
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: audio.iminiportwavepcistream_setstate, SetState method [Audio Devices], IMiniportWavePciStream, SetState method [Audio Devices], IMiniportWavePciStream interface, portcls/IMiniportWavePciStream::SetState, IMiniportWavePciStream::SetState, audmp-routines_71487eb9-23d5-4428-92c0-fc75e58d0da5.xml, IMiniportWavePciStream interface [Audio Devices], SetState method, SetState
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: portcls.h
+req.include-header: Portcls.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: portcls.h
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	portcls.h
+apiname:
+-	IMiniportWavePciStream.SetState
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

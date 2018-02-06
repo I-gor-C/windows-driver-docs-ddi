@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.MmFreeContiguousMemorySpecifyCache
-title : MmFreeContiguousMemorySpecifyCache function
-author : windows-driver-content
-description : The MmFreeContiguousMemorySpecifyCache routine frees a buffer that was allocated by an MmAllocateContiguousMemorySpecifyCacheXxx routine.
-old-location : kernel\mmfreecontiguousmemoryspecifycache.htm
-old-project : kernel
-ms.assetid : e5958dd7-b287-4f0d-8677-75d850885262
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : MmFreeContiguousMemorySpecifyCache routine [Kernel-Mode Driver Architecture], k106_256e3525-d48d-4045-872c-2e2fd6302525.xml, MmFreeContiguousMemorySpecifyCache, wdm/MmFreeContiguousMemorySpecifyCache, kernel.mmfreecontiguousmemoryspecifycache
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.MmFreeContiguousMemorySpecifyCache
+title: MmFreeContiguousMemorySpecifyCache function
+author: windows-driver-content
+description: The MmFreeContiguousMemorySpecifyCache routine frees a buffer that was allocated by an MmAllocateContiguousMemorySpecifyCacheXxx routine.
+old-location: kernel\mmfreecontiguousmemoryspecifycache.htm
+old-project: kernel
+ms.assetid: e5958dd7-b287-4f0d-8677-75d850885262
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: MmFreeContiguousMemorySpecifyCache routine [Kernel-Mode Driver Architecture], k106_256e3525-d48d-4045-872c-2e2fd6302525.xml, MmFreeContiguousMemorySpecifyCache, wdm/MmFreeContiguousMemorySpecifyCache, kernel.mmfreecontiguousmemoryspecifycache
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	MmFreeContiguousMemorySpecifyCache
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

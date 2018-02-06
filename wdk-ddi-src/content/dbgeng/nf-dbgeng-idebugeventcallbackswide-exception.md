@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugEventCallbacksWide.Exception
-title : IDebugEventCallbacksWide::Exception method
-author : windows-driver-content
-description : The Exception callback method is called by the engine when an exceptiondebugging event occurs in the target.
-old-location : debugger\idebugeventcallbackswide_exception.htm
-old-project : debugger
-ms.assetid : 02f5bec1-f2d2-4b72-bd9e-b30315c334da
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : Exception method [Windows Debugging], IDebugEventCallbacksWide interface, IDebugEventCallbacksWide interface [Windows Debugging], Exception method, IDebugEventCallbacksWide, Exception method [Windows Debugging], IDebugEventCallbacksWide::Exception, debugger.idebugeventcallbackswide_exception, dbgeng/IDebugEventCallbacksWide::Exception, Exception
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugEventCallbacksWide.Exception
+title: IDebugEventCallbacksWide::Exception method
+author: windows-driver-content
+description: The Exception callback method is called by the engine when an exceptiondebugging event occurs in the target.
+old-location: debugger\idebugeventcallbackswide_exception.htm
+old-project: debugger
+ms.assetid: 02f5bec1-f2d2-4b72-bd9e-b30315c334da
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: Exception method [Windows Debugging], IDebugEventCallbacksWide interface, IDebugEventCallbacksWide interface [Windows Debugging], Exception method, IDebugEventCallbacksWide, Exception method [Windows Debugging], IDebugEventCallbacksWide::Exception, debugger.idebugeventcallbackswide_exception, dbgeng/IDebugEventCallbacksWide::Exception, Exception
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugEventCallbacksWide.Exception
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

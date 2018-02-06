@@ -1,41 +1,46 @@
 ---
-UID : NF:mrx.RxStartMinirdr
-title : RxStartMinirdr function
-author : windows-driver-content
-description : RxStartMinirdr is called to start up a network mini-redirector that has previously called to register with RDBSS.
-old-location : ifsk\rxstartminirdr.htm
-old-project : ifsk
-ms.assetid : d5b091fa-13bf-4761-a03d-1790e7045b69
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.rxstartminirdr, rxref_0ecf01ed-771f-44e8-a107-6d3a0d2beb02.xml, mrx/RxStartMinirdr, RxStartMinirdr, RxStartMinirdr function [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : mrx.h
-req.include-header : Mrx.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SetDSMCounters_IN, *PSetDSMCounters_IN
+UID: NF:mrx.RxStartMinirdr
+title: RxStartMinirdr function
+author: windows-driver-content
+description: RxStartMinirdr is called to start up a network mini-redirector that has previously called to register with RDBSS.
+old-location: ifsk\rxstartminirdr.htm
+old-project: ifsk
+ms.assetid: d5b091fa-13bf-4761-a03d-1790e7045b69
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.rxstartminirdr, rxref_0ecf01ed-771f-44e8-a107-6d3a0d2beb02.xml, mrx/RxStartMinirdr, RxStartMinirdr, RxStartMinirdr function [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: mrx.h
+req.include-header: Mrx.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	mrx.h
+apiname:
+-	RxStartMinirdr
+product: Windows
+targetos: Windows
+req.typenames: SetDSMCounters_IN, *PSetDSMCounters_IN
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NF:rxprocs.RxSetSrvCallDomainName
-title : RxSetSrvCallDomainName function
-author : windows-driver-content
-description : RxSetSrvCallDomainName is called by a network mini-redirector driver to set the domain name associated with any given server (SRV_CALL structure).
-old-location : ifsk\rxsetsrvcalldomainname.htm
-old-project : ifsk
-ms.assetid : 876b3932-780f-4d00-8afc-40960f8fcaaf
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : rxprocs/RxSetSrvCallDomainName, ifsk.rxsetsrvcalldomainname, RxSetSrvCallDomainName function [Installable File System Drivers], RxSetSrvCallDomainName, rxref_f6d23374-7565-4922-8f1c-222886e3a90c.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : rxprocs.h
-req.include-header : Mrxfcb.h, Rxprocs.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RX_CONTEXT, *PRX_CONTEXT
-req.product : Windows 10 or later.
+UID: NF:rxprocs.RxSetSrvCallDomainName
+title: RxSetSrvCallDomainName function
+author: windows-driver-content
+description: RxSetSrvCallDomainName is called by a network mini-redirector driver to set the domain name associated with any given server (SRV_CALL structure).
+old-location: ifsk\rxsetsrvcalldomainname.htm
+old-project: ifsk
+ms.assetid: 876b3932-780f-4d00-8afc-40960f8fcaaf
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: rxprocs/RxSetSrvCallDomainName, ifsk.rxsetsrvcalldomainname, RxSetSrvCallDomainName function [Installable File System Drivers], RxSetSrvCallDomainName, rxref_f6d23374-7565-4922-8f1c-222886e3a90c.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: rxprocs.h
+req.include-header: Mrxfcb.h, Rxprocs.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	rxprocs.h
+apiname:
+-	RxSetSrvCallDomainName
+product: Windows
+targetos: Windows
+req.typenames: RX_CONTEXT, *PRX_CONTEXT
+req.product: Windows 10 or later.
 ---
 
 

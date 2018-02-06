@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.CcSetAdditionalCacheAttributes
-title : CcSetAdditionalCacheAttributes function
-author : windows-driver-content
-description : Call the CcSetAdditionalCacheAttributes routine to enable or disable read-ahead (also called &#0034;lazy read&#0034;) or write-behind (also called &#0034;lazy write&#0034;) on a cached file.
-old-location : ifsk\ccsetadditionalcacheattributes.htm
-old-project : ifsk
-ms.assetid : 2f891543-0222-45c8-97cd-719ec5dd2fa8
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : CcSetAdditionalCacheAttributes, ifsk.ccsetadditionalcacheattributes, ccref_a9722d17-3140-4bcd-abd9-46d31fa13174.xml, CcSetAdditionalCacheAttributes routine [Installable File System Drivers], ntifs/CcSetAdditionalCacheAttributes
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.CcSetAdditionalCacheAttributes
+title: CcSetAdditionalCacheAttributes function
+author: windows-driver-content
+description: Call the CcSetAdditionalCacheAttributes routine to enable or disable read-ahead (also called &#0034;lazy read&#0034;) or write-behind (also called &#0034;lazy write&#0034;) on a cached file.
+old-location: ifsk\ccsetadditionalcacheattributes.htm
+old-project: ifsk
+ms.assetid: 2f891543-0222-45c8-97cd-719ec5dd2fa8
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: CcSetAdditionalCacheAttributes, ifsk.ccsetadditionalcacheattributes, ccref_a9722d17-3140-4bcd-abd9-46d31fa13174.xml, CcSetAdditionalCacheAttributes routine [Installable File System Drivers], ntifs/CcSetAdditionalCacheAttributes
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	CcSetAdditionalCacheAttributes
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

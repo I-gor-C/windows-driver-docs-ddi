@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugInputCallbacks.StartInput
-title : IDebugInputCallbacks::StartInput method
-author : windows-driver-content
-description : The StartInput callback method is called by the engine to indicate that it is waiting for a line of input.
-old-location : debugger\idebuginputcallbacks_startinput.htm
-old-project : debugger
-ms.assetid : 4ac3764e-6482-49de-aac8-3b540561d201
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugInputCallbacks, IDebugInputCallbacks::StartInput, dbgeng/IDebugInputCallbacks::StartInput, debugger.idebuginputcallbacks_startinput, ComCallbacks_155d62a2-08b2-4caf-80d6-80fab139e77b.xml, StartInput method [Windows Debugging], IDebugInputCallbacks interface, IDebugInputCallbacks interface [Windows Debugging], StartInput method, StartInput, StartInput method [Windows Debugging]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugInputCallbacks.StartInput
+title: IDebugInputCallbacks::StartInput method
+author: windows-driver-content
+description: The StartInput callback method is called by the engine to indicate that it is waiting for a line of input.
+old-location: debugger\idebuginputcallbacks_startinput.htm
+old-project: debugger
+ms.assetid: 4ac3764e-6482-49de-aac8-3b540561d201
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugInputCallbacks, IDebugInputCallbacks::StartInput, dbgeng/IDebugInputCallbacks::StartInput, debugger.idebuginputcallbacks_startinput, ComCallbacks_155d62a2-08b2-4caf-80d6-80fab139e77b.xml, StartInput method [Windows Debugging], IDebugInputCallbacks interface, IDebugInputCallbacks interface [Windows Debugging], StartInput method, StartInput, StartInput method [Windows Debugging]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugInputCallbacks.StartInput
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

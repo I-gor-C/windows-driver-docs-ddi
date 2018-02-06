@@ -1,42 +1,47 @@
 ---
-UID : NF:printerextension.IPrintSchemaOption.GetPropertyValue
-title : IPrintSchemaOption::GetPropertyValue method
-author : windows-driver-content
-description : Gets the XML node for the &#0034;value&#0034; child element of a &#0034;Property&#0034; or a &#0034;ScoredProperty&#0034; element with the given name.
-old-location : print\iprintschemaoption_getpropertyvalue.htm
-old-project : print
-ms.assetid : 6CD5202C-7852-46AA-90ED-3477E6654188
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : print.iprintschemaoption_getpropertyvalue, GetPropertyValue, GetPropertyValue method [Print Devices], IPrintSchemaOption interface, IPrintSchemaOption::GetPropertyValue, printerextension/IPrintSchemaOption::GetPropertyValue, IPrintSchemaOption interface [Print Devices], GetPropertyValue method, IPrintSchemaOption, GetPropertyValue method [Print Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : printerextension.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : printerextension.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PrintSchemaSelectionType
-req.product : Windows 10 or later.
+UID: NF:printerextension.IPrintSchemaOption.GetPropertyValue
+title: IPrintSchemaOption::GetPropertyValue method
+author: windows-driver-content
+description: Gets the XML node for the &#0034;value&#0034; child element of a &#0034;Property&#0034; or a &#0034;ScoredProperty&#0034; element with the given name.
+old-location: print\iprintschemaoption_getpropertyvalue.htm
+old-project: print
+ms.assetid: 6CD5202C-7852-46AA-90ED-3477E6654188
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: print.iprintschemaoption_getpropertyvalue, GetPropertyValue, GetPropertyValue method [Print Devices], IPrintSchemaOption interface, IPrintSchemaOption::GetPropertyValue, printerextension/IPrintSchemaOption::GetPropertyValue, IPrintSchemaOption interface [Print Devices], GetPropertyValue method, IPrintSchemaOption, GetPropertyValue method [Print Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: printerextension.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: printerextension.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Printerextension.h
+apiname:
+-	IPrintSchemaOption.GetPropertyValue
+product: Windows
+targetos: Windows
+req.typenames: PrintSchemaSelectionType
+req.product: Windows 10 or later.
 ---
 
 

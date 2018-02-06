@@ -1,42 +1,47 @@
 ---
-UID : NS:usbcamdi.USBCAMD_INTERFACE
-title : USBCAMD_INTERFACE
-author : windows-driver-content
-description : The USBCAMD_INTERFACE structure defines a set of services related to the USB bus interfaces.
-old-location : stream\usbcamd_interface.htm
-old-project : stream
-ms.assetid : 864dbe8d-2771-4532-8a50-ed1bf5286658
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : usbcamdi/USBCAMD_INTERFACE, PUSBCAMD_INTERFACE, stream.usbcamd_interface, USBCAMD_INTERFACE structure [Streaming Media Devices], USBCAMD_INTERFACE, usbcmdpr_113d60d6-c353-468a-9c3d-801c76caf7be.xml, usbcamdi/PUSBCAMD_INTERFACE, PUSBCAMD_INTERFACE structure pointer [Streaming Media Devices], *PUSBCAMD_INTERFACE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : usbcamdi.h
-req.include-header : Usbcamdi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUSBCAMD_INTERFACE, USBCAMD_INTERFACE"
-req.product : Windows 10 or later.
+UID: NS:usbcamdi.USBCAMD_INTERFACE
+title: USBCAMD_INTERFACE
+author: windows-driver-content
+description: The USBCAMD_INTERFACE structure defines a set of services related to the USB bus interfaces.
+old-location: stream\usbcamd_interface.htm
+old-project: stream
+ms.assetid: 864dbe8d-2771-4532-8a50-ed1bf5286658
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: usbcamdi/USBCAMD_INTERFACE, PUSBCAMD_INTERFACE, stream.usbcamd_interface, USBCAMD_INTERFACE structure [Streaming Media Devices], USBCAMD_INTERFACE, usbcmdpr_113d60d6-c353-468a-9c3d-801c76caf7be.xml, usbcamdi/PUSBCAMD_INTERFACE, PUSBCAMD_INTERFACE structure pointer [Streaming Media Devices], *PUSBCAMD_INTERFACE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: usbcamdi.h
+req.include-header: Usbcamdi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	usbcamdi.h
+apiname:
+-	USBCAMD_INTERFACE
+product: Windows
+targetos: Windows
+req.typenames: "*PUSBCAMD_INTERFACE, USBCAMD_INTERFACE"
+req.product: Windows 10 or later.
 ---
 
 # USBCAMD_INTERFACE structure

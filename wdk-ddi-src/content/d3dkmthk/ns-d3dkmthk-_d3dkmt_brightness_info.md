@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmthk._D3DKMT_BRIGHTNESS_INFO
-title : "_D3DKMT_BRIGHTNESS_INFO"
-author : windows-driver-content
-description : Contains information about the brightness of an integrated display panel.
-old-location : display\d3dkmt_brightness_info.htm
-old-project : display
-ms.assetid : a620b0b2-85ce-4373-a50c-299d8ce7a91c
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : "_D3DKMT_BRIGHTNESS_INFO, d3dkmthk/D3DKMT_BRIGHTNESS_INFO, D3DKMT_BRIGHTNESS_INFO structure [Display Devices], D3DKMT_BRIGHTNESS_INFO, display.d3dkmt_brightness_info"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_BRIGHTNESS_INFO
+UID: NS:d3dkmthk._D3DKMT_BRIGHTNESS_INFO
+title: "_D3DKMT_BRIGHTNESS_INFO"
+author: windows-driver-content
+description: Contains information about the brightness of an integrated display panel.
+old-location: display\d3dkmt_brightness_info.htm
+old-project: display
+ms.assetid: a620b0b2-85ce-4373-a50c-299d8ce7a91c
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: "_D3DKMT_BRIGHTNESS_INFO, d3dkmthk/D3DKMT_BRIGHTNESS_INFO, D3DKMT_BRIGHTNESS_INFO structure [Display Devices], D3DKMT_BRIGHTNESS_INFO, display.d3dkmt_brightness_info"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	D3dkmthk.h
+apiname:
+-	D3DKMT_BRIGHTNESS_INFO
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_BRIGHTNESS_INFO
 ---
 
 # _D3DKMT_BRIGHTNESS_INFO structure

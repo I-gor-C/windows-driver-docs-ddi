@@ -1,41 +1,46 @@
 ---
-UID : NC:compstui.PFNCOMPROPSHEET
-title : PFNCOMPROPSHEET
-author : windows-driver-content
-description : The ComPropSheet function is supplied by CPSUI and can be called by CPSUI applications (including printer interface DLLs) to build property sheet pages.
-old-location : print\compropsheet.htm
-old-project : print
-ms.assetid : d9654346-1f28-4e02-8f6c-17e37ed09b92
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : print.compropsheet, ComPropSheet routine [Print Devices], ComPropSheet, PFNCOMPROPSHEET, PFNCOMPROPSHEET, compstui/ComPropSheet, cpsuifnc_2586427b-a3ae-4c2e-b081-06d58ec310c3.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : compstui.h
-req.include-header : Compstui.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPOWERSOURCEUPDATEEX, POWERSOURCEUPDATEEX"
+UID: NC:compstui.PFNCOMPROPSHEET
+title: PFNCOMPROPSHEET
+author: windows-driver-content
+description: The ComPropSheet function is supplied by CPSUI and can be called by CPSUI applications (including printer interface DLLs) to build property sheet pages.
+old-location: print\compropsheet.htm
+old-project: print
+ms.assetid: d9654346-1f28-4e02-8f6c-17e37ed09b92
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: print.compropsheet, ComPropSheet routine [Print Devices], ComPropSheet, PFNCOMPROPSHEET, PFNCOMPROPSHEET, compstui/ComPropSheet, cpsuifnc_2586427b-a3ae-4c2e-b081-06d58ec310c3.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: compstui.h
+req.include-header: Compstui.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	compstui.h
+apiname:
+-	ComPropSheet
+product: Windows
+targetos: Windows
+req.typenames: "*PPOWERSOURCEUPDATEEX, POWERSOURCEUPDATEEX"
 ---
 
 

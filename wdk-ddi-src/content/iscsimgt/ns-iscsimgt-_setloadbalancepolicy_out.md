@@ -1,41 +1,46 @@
 ---
-UID : NS:iscsimgt._SetLoadBalancePolicy_OUT
-title : "_SetLoadBalancePolicy_OUT"
-author : windows-driver-content
-description : The SetLoadBalancePolicy_OUT structure holds the output data for the SetLoadBalance method.
-old-location : storage\setloadbalancepolicy_out.htm
-old-project : storage
-ms.assetid : 28b54f80-9268-4ccb-ac19-b1b4bfef4192
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : SetLoadBalancePolicy_OUT structure [Storage Devices], iscsimgt/PSetLoadBalancePolicy_OUT, storage.setloadbalancepolicy_out, SetLoadBalancePolicy_OUT, _SetLoadBalancePolicy_OUT, PSetLoadBalancePolicy_OUT structure pointer [Storage Devices], PSetLoadBalancePolicy_OUT, structs-iSCSI_32a19db4-8102-4e39-b9be-30a8a03d2732.xml, *PSetLoadBalancePolicy_OUT, iscsimgt/SetLoadBalancePolicy_OUT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : iscsimgt.h
-req.include-header : Iscsimgt.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SetLoadBalancePolicy_OUT, *PSetLoadBalancePolicy_OUT
+UID: NS:iscsimgt._SetLoadBalancePolicy_OUT
+title: "_SetLoadBalancePolicy_OUT"
+author: windows-driver-content
+description: The SetLoadBalancePolicy_OUT structure holds the output data for the SetLoadBalance method.
+old-location: storage\setloadbalancepolicy_out.htm
+old-project: storage
+ms.assetid: 28b54f80-9268-4ccb-ac19-b1b4bfef4192
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: SetLoadBalancePolicy_OUT structure [Storage Devices], iscsimgt/PSetLoadBalancePolicy_OUT, storage.setloadbalancepolicy_out, SetLoadBalancePolicy_OUT, _SetLoadBalancePolicy_OUT, PSetLoadBalancePolicy_OUT structure pointer [Storage Devices], PSetLoadBalancePolicy_OUT, structs-iSCSI_32a19db4-8102-4e39-b9be-30a8a03d2732.xml, *PSetLoadBalancePolicy_OUT, iscsimgt/SetLoadBalancePolicy_OUT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: iscsimgt.h
+req.include-header: Iscsimgt.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	iscsimgt.h
+apiname:
+-	SetLoadBalancePolicy_OUT
+product: Windows
+targetos: Windows
+req.typenames: SetLoadBalancePolicy_OUT, *PSetLoadBalancePolicy_OUT
 ---
 
 # _SetLoadBalancePolicy_OUT structure

@@ -1,41 +1,46 @@
 ---
-UID : NI:gpio.IOCTL_GPIO_WRITE_PINS
-title : IOCTL_GPIO_WRITE_PINS
-author : windows-driver-content
-description : The IOCTL_GPIO_WRITE_PINS I/O control code enables a client of the general-purpose I/O (GPIO) controller to write to a set of GPIO pins that are configured as outputs.
-old-location : gpio\ioctl_gpio_write_pins.htm
-old-project : GPIO
-ms.assetid : 579462C6-2C0B-41AC-836D-2D3448080AD8
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : GPIO.ioctl_gpio_write_pins, IOCTL_GPIO_WRITE_PINS control code [Parallel Ports], IOCTL_GPIO_WRITE_PINS, gpio/IOCTL_GPIO_WRITE_PINS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : gpio.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PGNSS_V2UPL_NI_INFO, GNSS_V2UPL_NI_INFO"
+UID: NI:gpio.IOCTL_GPIO_WRITE_PINS
+title: IOCTL_GPIO_WRITE_PINS
+author: windows-driver-content
+description: The IOCTL_GPIO_WRITE_PINS I/O control code enables a client of the general-purpose I/O (GPIO) controller to write to a set of GPIO pins that are configured as outputs.
+old-location: gpio\ioctl_gpio_write_pins.htm
+old-project: GPIO
+ms.assetid: 579462C6-2C0B-41AC-836D-2D3448080AD8
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: GPIO.ioctl_gpio_write_pins, IOCTL_GPIO_WRITE_PINS control code [Parallel Ports], IOCTL_GPIO_WRITE_PINS, gpio/IOCTL_GPIO_WRITE_PINS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: gpio.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Gpio.h
+apiname:
+-	IOCTL_GPIO_WRITE_PINS
+product: Windows
+targetos: Windows
+req.typenames: "*PGNSS_V2UPL_NI_INFO, GNSS_V2UPL_NI_INFO"
 ---
 
 # IOCTL_GPIO_WRITE_PINS IOCTL

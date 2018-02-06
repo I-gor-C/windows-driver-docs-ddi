@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltGetContextsEx
-title : FltGetContextsEx function
-author : windows-driver-content
-description : The FltGetContextsEx routine retrieves a minifilter driver's contexts for the objects related to the current operation.
-old-location : ifsk\fltgetcontextsex.htm
-old-project : ifsk
-ms.assetid : 99903B10-5FA8-430F-9E1F-90A45E07B7D0
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltGetContextsEx, FltGetContextsEx routine [Installable File System Drivers], ifsk.fltgetcontextsex, fltkernel/FltGetContextsEx
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltGetContextsEx
+title: FltGetContextsEx function
+author: windows-driver-content
+description: The FltGetContextsEx routine retrieves a minifilter driver's contexts for the objects related to the current operation.
+old-location: ifsk\fltgetcontextsex.htm
+old-project: ifsk
+ms.assetid: 99903B10-5FA8-430F-9E1F-90A45E07B7D0
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltGetContextsEx, FltGetContextsEx routine [Installable File System Drivers], ifsk.fltgetcontextsex, fltkernel/FltGetContextsEx
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltGetContextsEx
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

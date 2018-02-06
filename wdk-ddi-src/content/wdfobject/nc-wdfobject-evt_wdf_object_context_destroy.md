@@ -1,42 +1,47 @@
 ---
-UID : NC:wdfobject.EVT_WDF_OBJECT_CONTEXT_DESTROY
-title : EVT_WDF_OBJECT_CONTEXT_DESTROY
-author : windows-driver-content
-description : A driver's EvtDestroyCallback event callback function performs operations that are associated with the deletion of a framework object.
-old-location : wdf\evtdestroycallback.htm
-old-project : wdf
-ms.assetid : 4c3b08d2-bb25-40bd-b2fc-1b9ea2d452b3
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.evtdestroycallback, EvtDestroyCallback callback function, EvtDestroyCallback, EVT_WDF_OBJECT_CONTEXT_DESTROY, EVT_WDF_OBJECT_CONTEXT_DESTROY, wdfobject/EvtDestroyCallback, DFGenObjectRef_a9194b33-b67b-43bb-8d50-d918576769c0.xml, kmdf.evtdestroycallback
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdfobject.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDF_MEMORY_DESCRIPTOR, WDF_MEMORY_DESCRIPTOR"
-req.product : Windows 10 or later.
+UID: NC:wdfobject.EVT_WDF_OBJECT_CONTEXT_DESTROY
+title: EVT_WDF_OBJECT_CONTEXT_DESTROY
+author: windows-driver-content
+description: A driver's EvtDestroyCallback event callback function performs operations that are associated with the deletion of a framework object.
+old-location: wdf\evtdestroycallback.htm
+old-project: wdf
+ms.assetid: 4c3b08d2-bb25-40bd-b2fc-1b9ea2d452b3
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.evtdestroycallback, EvtDestroyCallback callback function, EvtDestroyCallback, EVT_WDF_OBJECT_CONTEXT_DESTROY, EVT_WDF_OBJECT_CONTEXT_DESTROY, wdfobject/EvtDestroyCallback, DFGenObjectRef_a9194b33-b67b-43bb-8d50-d918576769c0.xml, kmdf.evtdestroycallback
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdfobject.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Wdfobject.h
+apiname:
+-	EvtDestroyCallback
+product: Windows
+targetos: Windows
+req.typenames: "*PWDF_MEMORY_DESCRIPTOR, WDF_MEMORY_DESCRIPTOR"
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,42 +1,50 @@
 ---
-UID : NF:wdfusb.WdfUsbTargetDeviceSelectConfig
-title : WdfUsbTargetDeviceSelectConfig function
-author : windows-driver-content
-description : The WdfUsbTargetDeviceSelectConfig method selects a USB configuration for a device, or it deconfigures the device.
-old-location : wdf\wdfusbtargetdeviceselectconfig.htm
-old-project : wdf
-ms.assetid : 6f5ab951-0652-477c-8a0a-71d1b94d08c6
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WdfUsbTargetDeviceSelectConfig method, wdfusb/WdfUsbTargetDeviceSelectConfig, wdf.wdfusbtargetdeviceselectconfig, DFUsbRef_9f390705-2077-43ca-a1b9-0be087c86619.xml, PFN_WDFUSBTARGETDEVICESELECTCONFIG, WdfUsbTargetDeviceSelectConfig, kmdf.wdfusbtargetdeviceselectconfig
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfusb.h
-req.include-header : Wdfusb.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2, UsbKmdfIrql, UsbKmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfusb.WdfUsbTargetDeviceSelectConfig
+title: WdfUsbTargetDeviceSelectConfig function
+author: windows-driver-content
+description: The WdfUsbTargetDeviceSelectConfig method selects a USB configuration for a device, or it deconfigures the device.
+old-location: wdf\wdfusbtargetdeviceselectconfig.htm
+old-project: wdf
+ms.assetid: 6f5ab951-0652-477c-8a0a-71d1b94d08c6
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WdfUsbTargetDeviceSelectConfig method, wdfusb/WdfUsbTargetDeviceSelectConfig, wdf.wdfusbtargetdeviceselectconfig, DFUsbRef_9f390705-2077-43ca-a1b9-0be087c86619.xml, PFN_WDFUSBTARGETDEVICESELECTCONFIG, WdfUsbTargetDeviceSelectConfig, kmdf.wdfusbtargetdeviceselectconfig
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfusb.h
+req.include-header: Wdfusb.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2, UsbKmdfIrql, UsbKmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+-	WUDFx02000.dll
+-	WUDFx02000.dll.dll
+apiname:
+-	WdfUsbTargetDeviceSelectConfig
+product: Windows
+targetos: Windows
+req.typenames: WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFDeviceInitialize.SetPnpCapability
-title : IWDFDeviceInitialize::SetPnpCapability method
-author : windows-driver-content
-description : The SetPnpCapability method sets the specified Plug and Play (PnP) capability of a device to the specified state.
-old-location : wdf\iwdfdeviceinitialize_setpnpcapability.htm
-old-project : wdf
-ms.assetid : 82892740-12f6-469b-a65c-6905d32c0b0d
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : IWDFDeviceInitialize::SetPnpCapability, wudfddi/IWDFDeviceInitialize::SetPnpCapability, IWDFDeviceInitialize, SetPnpCapability method, IWDFDeviceInitialize interface, umdf.iwdfdeviceinitialize_setpnpcapability, wdf.iwdfdeviceinitialize_setpnpcapability, IWDFDeviceInitialize interface, SetPnpCapability method, SetPnpCapability, SetPnpCapability method, UMDFDeviceObjectRef_516aeba5-c0c2-40a0-a9e6-d1a983835a94.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.5
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFDeviceInitialize.SetPnpCapability
+title: IWDFDeviceInitialize::SetPnpCapability method
+author: windows-driver-content
+description: The SetPnpCapability method sets the specified Plug and Play (PnP) capability of a device to the specified state.
+old-location: wdf\iwdfdeviceinitialize_setpnpcapability.htm
+old-project: wdf
+ms.assetid: 82892740-12f6-469b-a65c-6905d32c0b0d
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: IWDFDeviceInitialize::SetPnpCapability, wudfddi/IWDFDeviceInitialize::SetPnpCapability, IWDFDeviceInitialize, SetPnpCapability method, IWDFDeviceInitialize interface, umdf.iwdfdeviceinitialize_setpnpcapability, wdf.iwdfdeviceinitialize_setpnpcapability, IWDFDeviceInitialize interface, SetPnpCapability method, SetPnpCapability, SetPnpCapability method, UMDFDeviceObjectRef_516aeba5-c0c2-40a0-a9e6-d1a983835a94.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.5
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFDeviceInitialize.SetPnpCapability
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

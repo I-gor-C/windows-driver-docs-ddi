@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugSymbolGroup2.GetSymbolNameWide
-title : IDebugSymbolGroup2::GetSymbolNameWide method
-author : windows-driver-content
-description : The GetSymbolNameWide method returns the name of a symbol in a symbol group.
-old-location : debugger\getsymbolnamewide.htm
-old-project : debugger
-ms.assetid : b5de2450-8003-4866-86e8-1fd251e1552c
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : GetSymbolNameWide, IDebugSymbolGroup2, GetSymbolNameWide method [Windows Debugging], IDebugSymbolGroup2 interface, GetSymbolNameWide method [Windows Debugging], debugger.getsymbolnamewide, dbgeng/IDebugSymbolGroup2::GetSymbolNameWide, IDebugSymbolGroup2 interface [Windows Debugging], GetSymbolNameWide method, IDebugSymbolGroup2::GetSymbolNameWide
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSymbolGroup2.GetSymbolNameWide
+title: IDebugSymbolGroup2::GetSymbolNameWide method
+author: windows-driver-content
+description: The GetSymbolNameWide method returns the name of a symbol in a symbol group.
+old-location: debugger\getsymbolnamewide.htm
+old-project: debugger
+ms.assetid: b5de2450-8003-4866-86e8-1fd251e1552c
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: GetSymbolNameWide, IDebugSymbolGroup2, GetSymbolNameWide method [Windows Debugging], IDebugSymbolGroup2 interface, GetSymbolNameWide method [Windows Debugging], debugger.getsymbolnamewide, dbgeng/IDebugSymbolGroup2::GetSymbolNameWide, IDebugSymbolGroup2 interface [Windows Debugging], GetSymbolNameWide method, IDebugSymbolGroup2::GetSymbolNameWide
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugSymbolGroup2.GetSymbolNameWide
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

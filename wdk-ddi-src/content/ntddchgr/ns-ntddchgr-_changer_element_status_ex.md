@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddchgr._CHANGER_ELEMENT_STATUS_EX
-title : "_CHANGER_ELEMENT_STATUS_EX"
-author : windows-driver-content
-description : The ChangerGetElementStatus routine returns status information in this structure.
-old-location : storage\changer_element_status_ex.htm
-old-project : storage
-ms.assetid : 1fb0d0f9-711a-4bd4-baf6-38ccbeae6e4a
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : ELEMENT_STATUS_INENAB, ELEMENT_STATUS_PVOLTAG, ERROR_UNHANDLED_ERROR, CHANGER_ELEMENT_STATUS_EX structure [Storage Devices], ELEMENT_STATUS_FULL, PCHANGER_ELEMENT_STATUS_EX, storage.changer_element_status_ex, ERROR_LABEL_UNREADABLE, ELEMENT_STATUS_SVALID, ELEMENT_STATUS_INVERT, ntddchgr/PCHANGER_ELEMENT_STATUS_EX, ELEMENT_STATUS_EXCEPT, ERROR_LABEL_QUESTIONABLE, ELEMENT_STATUS_AVOLTAG, ELEMENT_STATUS_ID_VALID, *PCHANGER_ELEMENT_STATUS_EX, ELEMENT_STATUS_PRODUCT_DATA, ERROR_TRAY_MALFUNCTION, ERROR_DRIVE_NOT_INSTALLED, ntddchgr/CHANGER_ELEMENT_STATUS_EX, PCHANGER_ELEMENT_STATUS_EX structure pointer [Storage Devices], ELEMENT_STATUS_LUN_VALID, structs-changer_f620141a-83de-49c3-a79a-4f297e06955b.xml, ELEMENT_STATUS_ACCESS, ELEMENT_STATUS_EXENAB, CHANGER_ELEMENT_STATUS_EX, ELEMENT_STATUS_NOT_BUS, ELEMENT_STATUS_IMPEXP, _CHANGER_ELEMENT_STATUS_EX, ERROR_SLOT_NOT_PRESENT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddchgr.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : CHANGER_ELEMENT_STATUS_EX, *PCHANGER_ELEMENT_STATUS_EX
+UID: NS:ntddchgr._CHANGER_ELEMENT_STATUS_EX
+title: "_CHANGER_ELEMENT_STATUS_EX"
+author: windows-driver-content
+description: The ChangerGetElementStatus routine returns status information in this structure.
+old-location: storage\changer_element_status_ex.htm
+old-project: storage
+ms.assetid: 1fb0d0f9-711a-4bd4-baf6-38ccbeae6e4a
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: ELEMENT_STATUS_INENAB, ELEMENT_STATUS_PVOLTAG, ERROR_UNHANDLED_ERROR, CHANGER_ELEMENT_STATUS_EX structure [Storage Devices], ELEMENT_STATUS_FULL, PCHANGER_ELEMENT_STATUS_EX, storage.changer_element_status_ex, ERROR_LABEL_UNREADABLE, ELEMENT_STATUS_SVALID, ELEMENT_STATUS_INVERT, ntddchgr/PCHANGER_ELEMENT_STATUS_EX, ELEMENT_STATUS_EXCEPT, ERROR_LABEL_QUESTIONABLE, ELEMENT_STATUS_AVOLTAG, ELEMENT_STATUS_ID_VALID, *PCHANGER_ELEMENT_STATUS_EX, ELEMENT_STATUS_PRODUCT_DATA, ERROR_TRAY_MALFUNCTION, ERROR_DRIVE_NOT_INSTALLED, ntddchgr/CHANGER_ELEMENT_STATUS_EX, PCHANGER_ELEMENT_STATUS_EX structure pointer [Storage Devices], ELEMENT_STATUS_LUN_VALID, structs-changer_f620141a-83de-49c3-a79a-4f297e06955b.xml, ELEMENT_STATUS_ACCESS, ELEMENT_STATUS_EXENAB, CHANGER_ELEMENT_STATUS_EX, ELEMENT_STATUS_NOT_BUS, ELEMENT_STATUS_IMPEXP, _CHANGER_ELEMENT_STATUS_EX, ERROR_SLOT_NOT_PRESENT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddchgr.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddchgr.h
+apiname:
+-	CHANGER_ELEMENT_STATUS_EX
+product: Windows
+targetos: Windows
+req.typenames: CHANGER_ELEMENT_STATUS_EX, *PCHANGER_ELEMENT_STATUS_EX
 ---
 
 # _CHANGER_ELEMENT_STATUS_EX structure

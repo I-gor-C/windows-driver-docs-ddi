@@ -1,41 +1,46 @@
 ---
-UID : NI:ehstorbandmgmt.IOCTL_EHSTOR_BANDMGMT_CREATE_BAND
-title : IOCTL_EHSTOR_BANDMGMT_CREATE_BAND
-author : windows-driver-content
-description : New bands are created on a band-managed storage device with the IOCTL_EHSTOR_BANDMGMT_CREATE_BAND request. A new band is added to the table of band entries, which includes band location and security properties.
-old-location : storage\ioctl_ehstor_bandmgmt_create_band.htm
-old-project : storage
-ms.assetid : B5AEA98A-223D-4D14-A36B-EB5266F80AF8
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_ehstor_bandmgmt_create_band, IOCTL_EHSTOR_BANDMGMT_CREATE_BAND control code [Storage Devices], IOCTL_EHSTOR_BANDMGMT_CREATE_BAND, ehstorbandmgmt/IOCTL_EHSTOR_BANDMGMT_CREATE_BAND
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ehstorbandmgmt.h
-req.include-header : EhStorBandMgmt.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows 8
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXVA_VideoSample32
+UID: NI:ehstorbandmgmt.IOCTL_EHSTOR_BANDMGMT_CREATE_BAND
+title: IOCTL_EHSTOR_BANDMGMT_CREATE_BAND
+author: windows-driver-content
+description: New bands are created on a band-managed storage device with the IOCTL_EHSTOR_BANDMGMT_CREATE_BAND request. A new band is added to the table of band entries, which includes band location and security properties.
+old-location: storage\ioctl_ehstor_bandmgmt_create_band.htm
+old-project: storage
+ms.assetid: B5AEA98A-223D-4D14-A36B-EB5266F80AF8
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_ehstor_bandmgmt_create_band, IOCTL_EHSTOR_BANDMGMT_CREATE_BAND control code [Storage Devices], IOCTL_EHSTOR_BANDMGMT_CREATE_BAND, ehstorbandmgmt/IOCTL_EHSTOR_BANDMGMT_CREATE_BAND
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ehstorbandmgmt.h
+req.include-header: EhStorBandMgmt.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows 8
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	EhStorBandMgmt.h
+apiname:
+-	IOCTL_EHSTOR_BANDMGMT_CREATE_BAND
+product: Windows
+targetos: Windows
+req.typenames: DXVA_VideoSample32
 ---
 
 # IOCTL_EHSTOR_BANDMGMT_CREATE_BAND IOCTL

@@ -1,42 +1,47 @@
 ---
-UID : NF:storport.StorPortInterlockedInsertHeadList
-title : StorPortInterlockedInsertHeadList function
-author : windows-driver-content
-description : The StorPortInterlockedInsertHeadList routine atomically inserts an entry at the beginning of a doubly linked list of STOR_LIST_ENTRY structures.
-old-location : storage\storportinterlockedinsertheadlist.htm
-old-project : storage
-ms.assetid : 13874D19-4835-41B4-B58C-2B25D619607C
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : StorPortInterlockedInsertHeadList routine [Storage Devices], storport/StorPortInterlockedInsertHeadList, storage.storportinterlockedinsertheadlist, StorPortInterlockedInsertHeadList
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STOR_SPINLOCK
-req.product : Windows 10 or later.
+UID: NF:storport.StorPortInterlockedInsertHeadList
+title: StorPortInterlockedInsertHeadList function
+author: windows-driver-content
+description: The StorPortInterlockedInsertHeadList routine atomically inserts an entry at the beginning of a doubly linked list of STOR_LIST_ENTRY structures.
+old-location: storage\storportinterlockedinsertheadlist.htm
+old-project: storage
+ms.assetid: 13874D19-4835-41B4-B58C-2B25D619607C
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: StorPortInterlockedInsertHeadList routine [Storage Devices], storport/StorPortInterlockedInsertHeadList, storage.storportinterlockedinsertheadlist, StorPortInterlockedInsertHeadList
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	storport.h
+apiname:
+-	StorPortInterlockedInsertHeadList
+product: Windows
+targetos: Windows
+req.typenames: STOR_SPINLOCK
+req.product: Windows 10 or later.
 ---
 
 

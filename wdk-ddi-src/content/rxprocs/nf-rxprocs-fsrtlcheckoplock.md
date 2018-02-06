@@ -1,42 +1,47 @@
 ---
-UID : NF:rxprocs.FsRtlCheckOplock
-title : FsRtlCheckOplock macro
-author : windows-driver-content
-description : The FsRtlCheckOplock routine synchronizes the IRP for a file I/O operation with the file's current opportunistic lock (oplock) state.
-old-location : ifsk\fsrtlcheckoplock.htm
-old-project : ifsk
-ms.assetid : e1430ef2-fb94-4f0d-bdc8-59b423fe9c8c
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.fsrtlcheckoplock, FsRtlCheckOplock routine [Installable File System Drivers], fsrtlref_c11dbb80-c7a8-437d-bb6b-661edcf2f24a.xml, FsRtlCheckOplock, rxprocs/FsRtlCheckOplock
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : macro
-req.header : rxprocs.h
-req.include-header : FltKernel.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : This routine is available in Microsoft Windows 2000 and later versions of Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RX_CONTEXT, *PRX_CONTEXT
-req.product : Windows 10 or later.
+UID: NF:rxprocs.FsRtlCheckOplock
+title: FsRtlCheckOplock macro
+author: windows-driver-content
+description: The FsRtlCheckOplock routine synchronizes the IRP for a file I/O operation with the file's current opportunistic lock (oplock) state.
+old-location: ifsk\fsrtlcheckoplock.htm
+old-project: ifsk
+ms.assetid: e1430ef2-fb94-4f0d-bdc8-59b423fe9c8c
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.fsrtlcheckoplock, FsRtlCheckOplock routine [Installable File System Drivers], fsrtlref_c11dbb80-c7a8-437d-bb6b-661edcf2f24a.xml, FsRtlCheckOplock, rxprocs/FsRtlCheckOplock
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: macro
+req.header: rxprocs.h
+req.include-header: FltKernel.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: This routine is available in Microsoft Windows 2000 and later versions of Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	FsRtlCheckOplock
+product: Windows
+targetos: Windows
+req.typenames: RX_CONTEXT, *PRX_CONTEXT
+req.product: Windows 10 or later.
 ---
 
 

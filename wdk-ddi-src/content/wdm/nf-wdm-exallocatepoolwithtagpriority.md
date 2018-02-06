@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.ExAllocatePoolWithTagPriority
-title : ExAllocatePoolWithTagPriority function
-author : windows-driver-content
-description : The ExAllocatePoolWithTagPriority routine allocates pool memory of the specified type.
-old-location : kernel\exallocatepoolwithtagpriority.htm
-old-project : kernel
-ms.assetid : 33087a37-e6fc-4b21-aa9e-e4617eeccd29
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.exallocatepoolwithtagpriority, k102_cca6adc7-0f37-4565-858d-a191062f4fbd.xml, wdm/ExAllocatePoolWithTagPriority, ExAllocatePoolWithTagPriority routine [Kernel-Mode Driver Architecture], ExAllocatePoolWithTagPriority
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : IrqlExAllocatePool, IrqlExFree2, HwStorPortProhibitedDDIs, SpNoWait, StorPortStartIo
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= DISPATCH_LEVEL (see Remarks section)"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ExAllocatePoolWithTagPriority
+title: ExAllocatePoolWithTagPriority function
+author: windows-driver-content
+description: The ExAllocatePoolWithTagPriority routine allocates pool memory of the specified type.
+old-location: kernel\exallocatepoolwithtagpriority.htm
+old-project: kernel
+ms.assetid: 33087a37-e6fc-4b21-aa9e-e4617eeccd29
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.exallocatepoolwithtagpriority, k102_cca6adc7-0f37-4565-858d-a191062f4fbd.xml, wdm/ExAllocatePoolWithTagPriority, ExAllocatePoolWithTagPriority routine [Kernel-Mode Driver Architecture], ExAllocatePoolWithTagPriority
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: IrqlExAllocatePool, IrqlExFree2, HwStorPortProhibitedDDIs, SpNoWait, StorPortStartIo
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= DISPATCH_LEVEL (see Remarks section)"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ExAllocatePoolWithTagPriority
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

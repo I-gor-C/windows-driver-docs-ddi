@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.MmMapMdl
-title : MmMapMdl function
-author : windows-driver-content
-description : This function maps physical pages described by a memory descriptor list (MDL) into the system virtual address space.
-old-location : kernel\mmmapmdl.htm
-old-project : kernel
-ms.assetid : 4272f7a2-9379-40dd-a0a1-784dd25bc8bc
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : MmMapMdl, wdm/MmMapMdl, kernel.mmmapmdl, MmMapMdl function [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10, version 1709
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe (kernel mode)
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.MmMapMdl
+title: MmMapMdl function
+author: windows-driver-content
+description: This function maps physical pages described by a memory descriptor list (MDL) into the system virtual address space.
+old-location: kernel\mmmapmdl.htm
+old-project: kernel
+ms.assetid: 4272f7a2-9379-40dd-a0a1-784dd25bc8bc
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: MmMapMdl, wdm/MmMapMdl, kernel.mmmapmdl, MmMapMdl function [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10, version 1709
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe (kernel mode)
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	MmMapMdl
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

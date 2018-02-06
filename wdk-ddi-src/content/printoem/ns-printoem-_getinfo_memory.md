@@ -1,42 +1,47 @@
 ---
-UID : NS:printoem._GETINFO_MEMORY
-title : "_GETINFO_MEMORY"
-author : windows-driver-content
-description : The GETINFO_MEMORY structure is used as input to the UNIFONTOBJ_GetInfo callback function.
-old-location : print\getinfo_memory.htm
-old-project : print
-ms.assetid : d6730599-a8f0-4bea-9ee4-47a60249271d
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : "_GETINFO_MEMORY, PGETINFO_MEMORY, printoem/GETINFO_MEMORY, print_unidrv-pscript_rendering_d39a4f36-c521-4da4-8f63-5121b344d33a.xml, PGETINFO_MEMORY structure pointer [Print Devices], print.getinfo_memory, printoem/PGETINFO_MEMORY, GETINFO_MEMORY structure [Print Devices], GETINFO_MEMORY, PGETINFO_MEMROY"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : printoem.h
-req.include-header : Printoem.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : GETINFO_MEMORY, PGETINFO_MEMROY
-req.product : Windows 10 or later.
+UID: NS:printoem._GETINFO_MEMORY
+title: "_GETINFO_MEMORY"
+author: windows-driver-content
+description: The GETINFO_MEMORY structure is used as input to the UNIFONTOBJ_GetInfo callback function.
+old-location: print\getinfo_memory.htm
+old-project: print
+ms.assetid: d6730599-a8f0-4bea-9ee4-47a60249271d
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: "_GETINFO_MEMORY, PGETINFO_MEMORY, printoem/GETINFO_MEMORY, print_unidrv-pscript_rendering_d39a4f36-c521-4da4-8f63-5121b344d33a.xml, PGETINFO_MEMORY structure pointer [Print Devices], print.getinfo_memory, printoem/PGETINFO_MEMORY, GETINFO_MEMORY structure [Print Devices], GETINFO_MEMORY, PGETINFO_MEMROY"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: printoem.h
+req.include-header: Printoem.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	printoem.h
+apiname:
+-	GETINFO_MEMORY
+product: Windows
+targetos: Windows
+req.typenames: GETINFO_MEMORY, PGETINFO_MEMROY
+req.product: Windows 10 or later.
 ---
 
 # _GETINFO_MEMORY structure

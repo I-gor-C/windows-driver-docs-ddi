@@ -1,41 +1,46 @@
 ---
-UID : NS:irb._IDE_TASK_FILE
-title : "_IDE_TASK_FILE"
-author : windows-driver-content
-description : The IDE_TASK_FILE structure contains the current and previous IDE task file.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
-old-location : storage\ide_task_file.htm
-old-project : storage
-ms.assetid : f18b46c0-975b-49ba-b398-45f2a44d6d3b
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : IDE_TASK_FILE, PIDE_TASK_FILE structure pointer [Storage Devices], structs-ATA_0d96e047-8840-46cd-9df1-606ca70edb9e.xml, storage.ide_task_file, irb/IDE_TASK_FILE, PIDE_TASK_FILE, IDE_TASK_FILE structure [Storage Devices], _IDE_TASK_FILE, irb/PIDE_TASK_FILE, *PIDE_TASK_FILE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : irb.h
-req.include-header : Irb.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PIDE_TASK_FILE, IDE_TASK_FILE"
+UID: NS:irb._IDE_TASK_FILE
+title: "_IDE_TASK_FILE"
+author: windows-driver-content
+description: The IDE_TASK_FILE structure contains the current and previous IDE task file.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
+old-location: storage\ide_task_file.htm
+old-project: storage
+ms.assetid: f18b46c0-975b-49ba-b398-45f2a44d6d3b
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: IDE_TASK_FILE, PIDE_TASK_FILE structure pointer [Storage Devices], structs-ATA_0d96e047-8840-46cd-9df1-606ca70edb9e.xml, storage.ide_task_file, irb/IDE_TASK_FILE, PIDE_TASK_FILE, IDE_TASK_FILE structure [Storage Devices], _IDE_TASK_FILE, irb/PIDE_TASK_FILE, *PIDE_TASK_FILE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: irb.h
+req.include-header: Irb.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	irb.h
+apiname:
+-	IDE_TASK_FILE
+product: Windows
+targetos: Windows
+req.typenames: "*PIDE_TASK_FILE, IDE_TASK_FILE"
 ---
 
 # _IDE_TASK_FILE structure

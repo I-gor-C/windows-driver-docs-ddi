@@ -1,42 +1,47 @@
 ---
-UID : NF:storport.StorPortSetUnitAttributes
-title : StorPortSetUnitAttributes function
-author : windows-driver-content
-description : The StorPortSetUnitAttributes routine registers the power attributes of a storage unit device with the Storport driver.
-old-location : storage\storportsetunitattributes.htm
-old-project : storage
-ms.assetid : 0E05233D-79B0-4FC7-B13C-91B6B1F57E89
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storport/StorPortSetUnitAttributes, storage.storportsetunitattributes, StorPortSetUnitAttributes routine [Storage Devices], StorPortSetUnitAttributes
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : Any
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STOR_SPINLOCK
-req.product : Windows 10 or later.
+UID: NF:storport.StorPortSetUnitAttributes
+title: StorPortSetUnitAttributes function
+author: windows-driver-content
+description: The StorPortSetUnitAttributes routine registers the power attributes of a storage unit device with the Storport driver.
+old-location: storage\storportsetunitattributes.htm
+old-project: storage
+ms.assetid: 0E05233D-79B0-4FC7-B13C-91B6B1F57E89
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storport/StorPortSetUnitAttributes, storage.storportsetunitattributes, StorPortSetUnitAttributes routine [Storage Devices], StorPortSetUnitAttributes
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: Any
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Storport.h
+apiname:
+-	StorPortSetUnitAttributes
+product: Windows
+targetos: Windows
+req.typenames: STOR_SPINLOCK
+req.product: Windows 10 or later.
 ---
 
 

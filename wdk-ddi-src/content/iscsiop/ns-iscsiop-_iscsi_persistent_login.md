@@ -1,41 +1,46 @@
 ---
-UID : NS:iscsiop._ISCSI_Persistent_Login
-title : "_ISCSI_Persistent_Login"
-author : windows-driver-content
-description : The ISCSI_Persistent_Login structure defines a persistent logon that the operating system initiates automatically when the computer boots up.
-old-location : storage\iscsi_persistent_login.htm
-old-project : storage
-ms.assetid : c43ee3dd-552a-41ab-9b4f-01611e44f453
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : iscsiop/PISCSI_Persistent_Login, PISCSI_Persistent_Login structure pointer [Storage Devices], *PISCSI_Persistent_Login, iscsiop/ISCSI_Persistent_Login, PISCSI_Persistent_Login, ISCSI_Persistent_Login, _ISCSI_Persistent_Login, structs-iSCSI_86b54cb5-df75-47c0-8dc4-337a5f46bea0.xml, ISCSI_Persistent_Login structure [Storage Devices], storage.iscsi_persistent_login
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : iscsiop.h
-req.include-header : Iscsiop.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PISCSI_Persistent_Login, ISCSI_Persistent_Login"
+UID: NS:iscsiop._ISCSI_Persistent_Login
+title: "_ISCSI_Persistent_Login"
+author: windows-driver-content
+description: The ISCSI_Persistent_Login structure defines a persistent logon that the operating system initiates automatically when the computer boots up.
+old-location: storage\iscsi_persistent_login.htm
+old-project: storage
+ms.assetid: c43ee3dd-552a-41ab-9b4f-01611e44f453
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: iscsiop/PISCSI_Persistent_Login, PISCSI_Persistent_Login structure pointer [Storage Devices], *PISCSI_Persistent_Login, iscsiop/ISCSI_Persistent_Login, PISCSI_Persistent_Login, ISCSI_Persistent_Login, _ISCSI_Persistent_Login, structs-iSCSI_86b54cb5-df75-47c0-8dc4-337a5f46bea0.xml, ISCSI_Persistent_Login structure [Storage Devices], storage.iscsi_persistent_login
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: iscsiop.h
+req.include-header: Iscsiop.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	iscsiop.h
+apiname:
+-	ISCSI_Persistent_Login
+product: Windows
+targetos: Windows
+req.typenames: "*PISCSI_Persistent_Login, ISCSI_Persistent_Login"
 ---
 
 # _ISCSI_Persistent_Login structure

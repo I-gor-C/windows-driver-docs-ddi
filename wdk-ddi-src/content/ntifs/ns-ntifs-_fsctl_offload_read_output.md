@@ -1,41 +1,46 @@
 ---
-UID : NS:ntifs._FSCTL_OFFLOAD_READ_OUTPUT
-title : "_FSCTL_OFFLOAD_READ_OUTPUT"
-author : windows-driver-content
-description : The FSCTL_OFFLOAD_READ_OUTPUT structure contains the output for the FSCTL_OFFLOAD_READ control code request.
-old-location : ifsk\fsctl_offload_read_output.htm
-old-project : ifsk
-ms.assetid : 418E66FA-BECD-4F9F-B28C-962995C637B9
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ntifs/FSCTL_OFFLOAD_READ_OUTPUT, FSCTL_OFFLOAD_READ_OUTPUT, PFSCTL_OFFLOAD_READ_OUTPUT, OFFLOAD_READ_FLAG_CANNOT_OFFLOAD_BEYOND_CURRENT_RANGE, ntifs/PFSCTL_OFFLOAD_READ_OUTPUT, _FSCTL_OFFLOAD_READ_OUTPUT, FSCTL_OFFLOAD_READ_OUTPUT structure [Installable File System Drivers], OFFLOAD_READ_FLAG_ALL_ZERO_BEYOND_CURRENT_RANGE, OFFLOAD_READ_FLAG_FILE_TOO_SMALL, *PFSCTL_OFFLOAD_READ_OUTPUT, PFSCTL_OFFLOAD_READ_OUTPUT structure pointer [Installable File System Drivers], ifsk.fsctl_offload_read_output
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntifs.h
-req.include-header : Ntifs.h, Fltkernel.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FSCTL_OFFLOAD_READ_OUTPUT, *PFSCTL_OFFLOAD_READ_OUTPUT
+UID: NS:ntifs._FSCTL_OFFLOAD_READ_OUTPUT
+title: "_FSCTL_OFFLOAD_READ_OUTPUT"
+author: windows-driver-content
+description: The FSCTL_OFFLOAD_READ_OUTPUT structure contains the output for the FSCTL_OFFLOAD_READ control code request.
+old-location: ifsk\fsctl_offload_read_output.htm
+old-project: ifsk
+ms.assetid: 418E66FA-BECD-4F9F-B28C-962995C637B9
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ntifs/FSCTL_OFFLOAD_READ_OUTPUT, FSCTL_OFFLOAD_READ_OUTPUT, PFSCTL_OFFLOAD_READ_OUTPUT, OFFLOAD_READ_FLAG_CANNOT_OFFLOAD_BEYOND_CURRENT_RANGE, ntifs/PFSCTL_OFFLOAD_READ_OUTPUT, _FSCTL_OFFLOAD_READ_OUTPUT, FSCTL_OFFLOAD_READ_OUTPUT structure [Installable File System Drivers], OFFLOAD_READ_FLAG_ALL_ZERO_BEYOND_CURRENT_RANGE, OFFLOAD_READ_FLAG_FILE_TOO_SMALL, *PFSCTL_OFFLOAD_READ_OUTPUT, PFSCTL_OFFLOAD_READ_OUTPUT structure pointer [Installable File System Drivers], ifsk.fsctl_offload_read_output
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntifs.h
+req.include-header: Ntifs.h, Fltkernel.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntifs.h
+apiname:
+-	FSCTL_OFFLOAD_READ_OUTPUT
+product: Windows
+targetos: Windows
+req.typenames: FSCTL_OFFLOAD_READ_OUTPUT, *PFSCTL_OFFLOAD_READ_OUTPUT
 ---
 
 # _FSCTL_OFFLOAD_READ_OUTPUT structure

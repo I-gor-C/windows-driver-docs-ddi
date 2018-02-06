@@ -1,41 +1,46 @@
 ---
-UID : NE:ksmedia.KS_VideoControlFlags
-title : KS_VideoControlFlags
-author : windows-driver-content
-description : The KS_VideoControlFlags enumeration defines video control capabilities for a specific stream.
-old-location : stream\ks_videocontrolflags.htm
-old-project : stream
-ms.assetid : 7f8b3727-132c-41c8-a252-0f9c8812002f
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KS_Obsolete_VideoControlFlag_ExternalTriggerEnable, KS_VideoControlFlag_ExternalTriggerEnable, KS_VideoControlFlag_StillCapturePreviewFrame, ksmedia/KS_VideoControlFlag_Trigger, ksmedia/KS_VideoControlFlag_StopPhotoSequenceCapture, ksmedia/KS_VideoControlFlag_ExternalTriggerEnable, KS_VideoControlFlag_Trigger, ksmedia/KS_VideoControlFlag_FlipHorizontal, ksmedia/KS_VideoControlFlag_StartPhotoSequenceCapture, KS_VideoControlFlags enumeration [Streaming Media Devices], KS_VideoControlFlag_StopPhotoSequenceCapture, ksmedia/KS_Obsolete_VideoControlFlag_ExternalTriggerEnable, ksmedia/KS_VideoControlFlags, stream.ks_videocontrolflags, KS_VideoControlFlags, KS_VideoControlFlag_FlipHorizontal, vidcapstruct_ae01591c-4ee4-4e70-bfc2-c78ad73a296f.xml, KS_VideoControlFlag_FlipVertical, ksmedia/KS_Obsolete_VideoControlFlag_Trigger, KS_VideoControlFlag_IndependentImagePin, KS_VideoControlFlag_StartPhotoSequenceCapture, ksmedia/KS_VideoControlFlag_FlipVertical, ksmedia/KS_VideoControlFlag_StillCapturePreviewFrame, ksmedia/KS_VideoControlFlag_IndependentImagePin, KS_Obsolete_VideoControlFlag_Trigger
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KS_VideoControlFlags
+UID: NE:ksmedia.KS_VideoControlFlags
+title: KS_VideoControlFlags
+author: windows-driver-content
+description: The KS_VideoControlFlags enumeration defines video control capabilities for a specific stream.
+old-location: stream\ks_videocontrolflags.htm
+old-project: stream
+ms.assetid: 7f8b3727-132c-41c8-a252-0f9c8812002f
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KS_Obsolete_VideoControlFlag_ExternalTriggerEnable, KS_VideoControlFlag_ExternalTriggerEnable, KS_VideoControlFlag_StillCapturePreviewFrame, ksmedia/KS_VideoControlFlag_Trigger, ksmedia/KS_VideoControlFlag_StopPhotoSequenceCapture, ksmedia/KS_VideoControlFlag_ExternalTriggerEnable, KS_VideoControlFlag_Trigger, ksmedia/KS_VideoControlFlag_FlipHorizontal, ksmedia/KS_VideoControlFlag_StartPhotoSequenceCapture, KS_VideoControlFlags enumeration [Streaming Media Devices], KS_VideoControlFlag_StopPhotoSequenceCapture, ksmedia/KS_Obsolete_VideoControlFlag_ExternalTriggerEnable, ksmedia/KS_VideoControlFlags, stream.ks_videocontrolflags, KS_VideoControlFlags, KS_VideoControlFlag_FlipHorizontal, vidcapstruct_ae01591c-4ee4-4e70-bfc2-c78ad73a296f.xml, KS_VideoControlFlag_FlipVertical, ksmedia/KS_Obsolete_VideoControlFlag_Trigger, KS_VideoControlFlag_IndependentImagePin, KS_VideoControlFlag_StartPhotoSequenceCapture, ksmedia/KS_VideoControlFlag_FlipVertical, ksmedia/KS_VideoControlFlag_StillCapturePreviewFrame, ksmedia/KS_VideoControlFlag_IndependentImagePin, KS_Obsolete_VideoControlFlag_Trigger
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	KS_VideoControlFlags
+product: Windows
+targetos: Windows
+req.typenames: KS_VideoControlFlags
 ---
 
 # KS_VideoControlFlags Enumeration
@@ -62,64 +67,64 @@ typedef enum  {
 ## Constants
 
 <table>
-
-<tr>
-<td>KS_Obsolete_VideoControlFlag_ExternalTriggerEnable</td>
-<td>This value is obsolete. Do not use.</td>
-</tr>
-
-<tr>
-<td>KS_Obsolete_VideoControlFlag_Trigger</td>
-<td>This value is obsolete. Do not use.</td>
-</tr>
-
-<tr>
-<td>KS_VideoControlFlag_ExternalTriggerEnable</td>
-<td>The minidriver can enable acquisition of a single video frame based on an external trigger. An external trigger typically is hardware-specific.</td>
-</tr>
-
-<tr>
-<td>KS_VideoControlFlag_FlipHorizontal</td>
-<td>The minidriver is capable of flipping the image horizontally.</td>
-</tr>
-
-<tr>
-<td>KS_VideoControlFlag_FlipVertical</td>
-<td>The minidriver is capable of flipping the image vertically.</td>
-</tr>
-
-<tr>
-<td>KS_VideoControlFlag_IndependentImagePin</td>
-<td>Determines if the image pin is independent of the video pin.
-
-Supported starting with Windows 8.</td>
-</tr>
-
-<tr>
-<td>KS_VideoControlFlag_StartPhotoSequenceCapture</td>
-<td>Begin photo sequence capture operation.
-
-Supported starting with Windows 8.1.</td>
-</tr>
-
-<tr>
-<td>KS_VideoControlFlag_StillCapturePreviewFrame</td>
-<td>Reserved for system use. Do not use in your driver.
+            
+                <tr>
+                    <td>KS_Obsolete_VideoControlFlag_ExternalTriggerEnable</td>
+                    <td>This value is obsolete. Do not use.</td>
+                </tr>
+            
+                <tr>
+                    <td>KS_Obsolete_VideoControlFlag_Trigger</td>
+                    <td>This value is obsolete. Do not use.</td>
+                </tr>
+            
+                <tr>
+                    <td>KS_VideoControlFlag_ExternalTriggerEnable</td>
+                    <td>The minidriver can enable acquisition of a single video frame based on an external trigger. An external trigger typically is hardware-specific.</td>
+                </tr>
+            
+                <tr>
+                    <td>KS_VideoControlFlag_FlipHorizontal</td>
+                    <td>The minidriver is capable of flipping the image horizontally.</td>
+                </tr>
+            
+                <tr>
+                    <td>KS_VideoControlFlag_FlipVertical</td>
+                    <td>The minidriver is capable of flipping the image vertically.</td>
+                </tr>
+            
+                <tr>
+                    <td>KS_VideoControlFlag_IndependentImagePin</td>
+                    <td>Determines if the image pin is independent of the video pin.
 
 Supported starting with Windows 8.</td>
-</tr>
-
-<tr>
-<td>KS_VideoControlFlag_StopPhotoSequenceCapture</td>
-<td>Stop photo sequence operation.
+                </tr>
+            
+                <tr>
+                    <td>KS_VideoControlFlag_StartPhotoSequenceCapture</td>
+                    <td>Begin photo sequence capture operation.
 
 Supported starting with Windows 8.1.</td>
-</tr>
+                </tr>
+            
+                <tr>
+                    <td>KS_VideoControlFlag_StillCapturePreviewFrame</td>
+                    <td>Reserved for system use. Do not use in your driver.
 
-<tr>
-<td>KS_VideoControlFlag_Trigger</td>
-<td>The minidriver can enable acquisition of a single video frame based on a programmatic trigger.</td>
-</tr>
+Supported starting with Windows 8.</td>
+                </tr>
+            
+                <tr>
+                    <td>KS_VideoControlFlag_StopPhotoSequenceCapture</td>
+                    <td>Stop photo sequence operation.
+
+Supported starting with Windows 8.1.</td>
+                </tr>
+            
+                <tr>
+                    <td>KS_VideoControlFlag_Trigger</td>
+                    <td>The minidriver can enable acquisition of a single video frame based on a programmatic trigger.</td>
+                </tr>
 </table>
 
 
@@ -128,9 +133,9 @@ Supported starting with Windows 8.1.</td>
 | ---- |:---- |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\ksmedia\ns-ksmedia-ksproperty_videocontrol_mode_s.md">KSPROPERTY_VIDEOCONTROL_MODE_S</a>
+        <a href="..\ksmedia\ns-ksmedia-ksproperty_videocontrol_mode_s.md">KSPROPERTY_VIDEOCONTROL_MODE_S</a>
 
 <a href="..\ksmedia\ns-ksmedia-ksproperty_videocontrol_caps_s.md">KSPROPERTY_VIDEOCONTROL_CAPS_S</a>
 

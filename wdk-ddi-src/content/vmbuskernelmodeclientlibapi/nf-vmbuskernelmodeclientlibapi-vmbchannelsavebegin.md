@@ -1,42 +1,47 @@
 ---
-UID : NF:vmbuskernelmodeclientlibapi.VmbChannelSaveBegin
-title : VmbChannelSaveBegin function
-author : windows-driver-content
-description : The VmbChannelSaveBegin function initializes the context for saving the state of a channel. The driver must check the return value of the function.
-old-location : netvista\vmbchannelsavebegin.htm
-old-project : netvista
-ms.assetid : A0946287-3ED2-4DE1-A3D7-46611B25BB93
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : vmbuskernelmodeclientlibapi/VmbChannelSaveBegin, VmbChannelSaveBegin, netvista.vmbchannelsavebegin, VmbChannelSaveBegin function [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : vmbuskernelmodeclientlibapi.h
-req.include-header : VmbusKernelModeClientLibApi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8.1
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 1.13
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PVIDEO_PORT_AGP_SERVICES, VIDEO_PORT_AGP_SERVICES"
-req.product : Windows 10 or later.
+UID: NF:vmbuskernelmodeclientlibapi.VmbChannelSaveBegin
+title: VmbChannelSaveBegin function
+author: windows-driver-content
+description: The VmbChannelSaveBegin function initializes the context for saving the state of a channel. The driver must check the return value of the function.
+old-location: netvista\vmbchannelsavebegin.htm
+old-project: netvista
+ms.assetid: A0946287-3ED2-4DE1-A3D7-46611B25BB93
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: vmbuskernelmodeclientlibapi/VmbChannelSaveBegin, VmbChannelSaveBegin, netvista.vmbchannelsavebegin, VmbChannelSaveBegin function [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: vmbuskernelmodeclientlibapi.h
+req.include-header: VmbusKernelModeClientLibApi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8.1
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 1.13
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	VmbusKernelModeClientLibApi.h
+apiname:
+-	VmbChannelSaveBegin
+product: Windows
+targetos: Windows
+req.typenames: "*PVIDEO_PORT_AGP_SERVICES, VIDEO_PORT_AGP_SERVICES"
+req.product: Windows 10 or later.
 ---
 
 

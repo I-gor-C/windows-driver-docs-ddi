@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3D10DDI_RESOURCERESOLVESUBRESOURCE
-title : PFND3D10DDI_RESOURCERESOLVESUBRESOURCE
-author : windows-driver-content
-description : The ResourceResolveSubresource function resolves multiple samples to one pixel.
-old-location : display\resourceresolvesubresource.htm
-old-project : display
-ms.assetid : f9f4a6e2-bc01-477f-a919-ec71871f665b
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.resourceresolvesubresource, ResourceResolveSubresource callback function [Display Devices], ResourceResolveSubresource, PFND3D10DDI_RESOURCERESOLVESUBRESOURCE, PFND3D10DDI_RESOURCERESOLVESUBRESOURCE, d3d10umddi/ResourceResolveSubresource, UserModeDisplayDriverDx10_Functions_bddd44ef-1872-4285-9b04-fdd509e84527.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3D10DDI_RESOURCERESOLVESUBRESOURCE
+title: PFND3D10DDI_RESOURCERESOLVESUBRESOURCE
+author: windows-driver-content
+description: The ResourceResolveSubresource function resolves multiple samples to one pixel.
+old-location: display\resourceresolvesubresource.htm
+old-project: display
+ms.assetid: f9f4a6e2-bc01-477f-a919-ec71871f665b
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.resourceresolvesubresource, ResourceResolveSubresource callback function [Display Devices], ResourceResolveSubresource, PFND3D10DDI_RESOURCERESOLVESUBRESOURCE, PFND3D10DDI_RESOURCERESOLVESUBRESOURCE, d3d10umddi/ResourceResolveSubresource, UserModeDisplayDriverDx10_Functions_bddd44ef-1872-4285-9b04-fdd509e84527.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	ResourceResolveSubresource
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

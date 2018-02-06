@@ -1,41 +1,46 @@
 ---
-UID : NC:ks.PFNKSPININITIALIZEALLOCATOR
-title : PFNKSPININITIALIZEALLOCATOR
-author : windows-driver-content
-description : An AVStream minidriver's AVStrMiniInitializeAllocator routine initializes an allocator that will be associated with a pin.
-old-location : stream\avstrminiinitializeallocator.htm
-old-project : stream
-ms.assetid : 9c6d3856-702c-416b-a5d2-b3578a55bbcd
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.avstrminiinitializeallocator, AVStrMiniInitializeAllocator, AVStrMiniInitializeAllocator routine [Streaming Media Devices], AVStrMiniInitializeAllocator, PFNKSPININITIALIZEALLOCATOR, PFNKSPININITIALIZEALLOCATOR, ks/AVStrMiniInitializeAllocator, avstclbk_979c0a29-7e4b-463c-8ff3-62124b0d49d1.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KEYWORDSELECTOR
+UID: NC:ks.PFNKSPININITIALIZEALLOCATOR
+title: PFNKSPININITIALIZEALLOCATOR
+author: windows-driver-content
+description: An AVStream minidriver's AVStrMiniInitializeAllocator routine initializes an allocator that will be associated with a pin.
+old-location: stream\avstrminiinitializeallocator.htm
+old-project: stream
+ms.assetid: 9c6d3856-702c-416b-a5d2-b3578a55bbcd
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.avstrminiinitializeallocator, AVStrMiniInitializeAllocator, AVStrMiniInitializeAllocator routine [Streaming Media Devices], AVStrMiniInitializeAllocator, PFNKSPININITIALIZEALLOCATOR, PFNKSPININITIALIZEALLOCATOR, ks/AVStrMiniInitializeAllocator, avstclbk_979c0a29-7e4b-463c-8ff3-62124b0d49d1.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	ks.h
+apiname:
+-	AVStrMiniInitializeAllocator
+product: Windows
+targetos: Windows
+req.typenames: KEYWORDSELECTOR
 ---
 
 

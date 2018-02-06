@@ -1,41 +1,47 @@
 ---
-UID : NF:fltkernel.FltAllocateExtraCreateParameterFromLookasideList
-title : FltAllocateExtraCreateParameterFromLookasideList function
-author : windows-driver-content
-description : The FltAllocateExtraCreateParameterFromLookasideList routine allocates memory pool from a given lookaside list for an extra create parameter (ECP) context structure and generates a pointer to that structure.
-old-location : ifsk\fltallocateextracreateparameterfromlookasidelist.htm
-old-project : ifsk
-ms.assetid : 33ab7ff3-d9b0-43ad-9971-62735f3240df
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : fltkernel/FltAllocateExtraCreateParameterFromLookasideList, FltApiRef_a_to_d_27580c4f-61c2-46b1-be1c-8895c918a05e.xml, FltAllocateExtraCreateParameterFromLookasideList routine [Installable File System Drivers], ifsk.fltallocateextracreateparameterfromlookasidelist, FltAllocateExtraCreateParameterFromLookasideList
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltAllocateExtraCreateParameterFromLookasideList
+title: FltAllocateExtraCreateParameterFromLookasideList function
+author: windows-driver-content
+description: The FltAllocateExtraCreateParameterFromLookasideList routine allocates memory pool from a given lookaside list for an extra create parameter (ECP) context structure and generates a pointer to that structure.
+old-location: ifsk\fltallocateextracreateparameterfromlookasidelist.htm
+old-project: ifsk
+ms.assetid: 33ab7ff3-d9b0-43ad-9971-62735f3240df
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: fltkernel/FltAllocateExtraCreateParameterFromLookasideList, FltApiRef_a_to_d_27580c4f-61c2-46b1-be1c-8895c918a05e.xml, FltAllocateExtraCreateParameterFromLookasideList routine [Installable File System Drivers], ifsk.fltallocateextracreateparameterfromlookasidelist, FltAllocateExtraCreateParameterFromLookasideList
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	FltMgr.lib
+-	FltMgr.dll
+apiname:
+-	FltAllocateExtraCreateParameterFromLookasideList
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

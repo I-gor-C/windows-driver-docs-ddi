@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugSymbols3.EndSymbolMatch
-title : IDebugSymbols3::EndSymbolMatch method
-author : windows-driver-content
-description : The EndSymbolMatch method releases the resources used by a symbol search.
-old-location : debugger\endsymbolmatch.htm
-old-project : debugger
-ms.assetid : 02cc9db2-173a-4d5d-a465-098391336100
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : EndSymbolMatch method [Windows Debugging], IDebugSymbols2 interface, dbgeng/IDebugSymbols::EndSymbolMatch, debugger.endsymbolmatch, IDebugSymbols::EndSymbolMatch, EndSymbolMatch, EndSymbolMatch method [Windows Debugging], IDebugSymbols3 interface, dbgeng/IDebugSymbols3::EndSymbolMatch, IDebugSymbols_1661cc8a-ad5c-4cd3-83fe-f829bd07e453.xml, IDebugSymbols2::EndSymbolMatch, EndSymbolMatch method [Windows Debugging], IDebugSymbols2 interface [Windows Debugging], EndSymbolMatch method, dbgeng/IDebugSymbols2::EndSymbolMatch, EndSymbolMatch method [Windows Debugging], IDebugSymbols interface, IDebugSymbols3 interface [Windows Debugging], EndSymbolMatch method, IDebugSymbols3::EndSymbolMatch, IDebugSymbols3, IDebugSymbols interface [Windows Debugging], EndSymbolMatch method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSymbols3.EndSymbolMatch
+title: IDebugSymbols3::EndSymbolMatch method
+author: windows-driver-content
+description: The EndSymbolMatch method releases the resources used by a symbol search.
+old-location: debugger\endsymbolmatch.htm
+old-project: debugger
+ms.assetid: 02cc9db2-173a-4d5d-a465-098391336100
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: EndSymbolMatch method [Windows Debugging], IDebugSymbols2 interface, dbgeng/IDebugSymbols::EndSymbolMatch, debugger.endsymbolmatch, IDebugSymbols::EndSymbolMatch, EndSymbolMatch, EndSymbolMatch method [Windows Debugging], IDebugSymbols3 interface, dbgeng/IDebugSymbols3::EndSymbolMatch, IDebugSymbols_1661cc8a-ad5c-4cd3-83fe-f829bd07e453.xml, IDebugSymbols2::EndSymbolMatch, EndSymbolMatch method [Windows Debugging], IDebugSymbols2 interface [Windows Debugging], EndSymbolMatch method, dbgeng/IDebugSymbols2::EndSymbolMatch, EndSymbolMatch method [Windows Debugging], IDebugSymbols interface, IDebugSymbols3 interface [Windows Debugging], EndSymbolMatch method, IDebugSymbols3::EndSymbolMatch, IDebugSymbols3, IDebugSymbols interface [Windows Debugging], EndSymbolMatch method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugSymbols.EndSymbolMatch
+-	IDebugSymbols2.EndSymbolMatch
+-	IDebugSymbols3.EndSymbolMatch
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

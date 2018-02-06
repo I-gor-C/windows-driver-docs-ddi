@@ -1,41 +1,47 @@
 ---
-UID : NF:dbgeng.IDebugBreakpoint2.GetCurrentPassCount
-title : IDebugBreakpoint2::GetCurrentPassCount method
-author : windows-driver-content
-description : The GetCurrentPassCount method returns the remaining number of times that the target must reach the breakpoint location before the breakpoint is triggered.
-old-location : debugger\getcurrentpasscount.htm
-old-project : debugger
-ms.assetid : ff9b9988-6790-48d1-8423-60c63b0a90cf
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : dbgeng/IDebugBreakpoint2::GetCurrentPassCount, IDebugBreakpoint2::GetCurrentPassCount, ComOther_b9308489-679e-4ced-bd73-84cbeaadc669.xml, IDebugBreakpoint2, IDebugBreakpoint::GetCurrentPassCount, GetCurrentPassCount method [Windows Debugging], IDebugBreakpoint interface, dbgeng/IDebugBreakpoint::GetCurrentPassCount, GetCurrentPassCount method [Windows Debugging], IDebugBreakpoint2 interface, IDebugBreakpoint2 interface [Windows Debugging], GetCurrentPassCount method, debugger.getcurrentpasscount, IDebugBreakpoint interface [Windows Debugging], GetCurrentPassCount method, GetCurrentPassCount method [Windows Debugging], GetCurrentPassCount
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugBreakpoint2.GetCurrentPassCount
+title: IDebugBreakpoint2::GetCurrentPassCount method
+author: windows-driver-content
+description: The GetCurrentPassCount method returns the remaining number of times that the target must reach the breakpoint location before the breakpoint is triggered.
+old-location: debugger\getcurrentpasscount.htm
+old-project: debugger
+ms.assetid: ff9b9988-6790-48d1-8423-60c63b0a90cf
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: dbgeng/IDebugBreakpoint2::GetCurrentPassCount, IDebugBreakpoint2::GetCurrentPassCount, ComOther_b9308489-679e-4ced-bd73-84cbeaadc669.xml, IDebugBreakpoint2, IDebugBreakpoint::GetCurrentPassCount, GetCurrentPassCount method [Windows Debugging], IDebugBreakpoint interface, dbgeng/IDebugBreakpoint::GetCurrentPassCount, GetCurrentPassCount method [Windows Debugging], IDebugBreakpoint2 interface, IDebugBreakpoint2 interface [Windows Debugging], GetCurrentPassCount method, debugger.getcurrentpasscount, IDebugBreakpoint interface [Windows Debugging], GetCurrentPassCount method, GetCurrentPassCount method [Windows Debugging], GetCurrentPassCount
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugBreakpoint.GetCurrentPassCount
+-	IDebugBreakpoint2.GetCurrentPassCount
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

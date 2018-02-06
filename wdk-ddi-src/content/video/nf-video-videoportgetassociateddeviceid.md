@@ -1,42 +1,47 @@
 ---
-UID : NF:video.VideoPortGetAssociatedDeviceID
-title : VideoPortGetAssociatedDeviceID function
-author : windows-driver-content
-description : The VideoPortGetAssociatedDeviceID function obtains the child ID for a specified device object.
-old-location : display\videoportgetassociateddeviceid.htm
-old-project : display
-ms.assetid : 6c40f98b-4d93-4ee8-8217-51e6f1170cf8
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : VideoPortGetAssociatedDeviceID, display.videoportgetassociateddeviceid, VideoPortGetAssociatedDeviceID function [Display Devices], VideoPort_Functions_56a3fa57-fd1a-4b45-8de7-ee9450a525f4.xml, video/VideoPortGetAssociatedDeviceID
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows XP and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Videoprt.lib
-req.dll : Videoprt.sys
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_PORT_SERVICES
-req.product : Windows 10 or later.
+UID: NF:video.VideoPortGetAssociatedDeviceID
+title: VideoPortGetAssociatedDeviceID function
+author: windows-driver-content
+description: The VideoPortGetAssociatedDeviceID function obtains the child ID for a specified device object.
+old-location: display\videoportgetassociateddeviceid.htm
+old-project: display
+ms.assetid: 6c40f98b-4d93-4ee8-8217-51e6f1170cf8
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: VideoPortGetAssociatedDeviceID, display.videoportgetassociateddeviceid, VideoPortGetAssociatedDeviceID function [Display Devices], VideoPort_Functions_56a3fa57-fd1a-4b45-8de7-ee9450a525f4.xml, video/VideoPortGetAssociatedDeviceID
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows XP and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Videoprt.lib
+req.dll: Videoprt.sys
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Videoprt.sys
+apiname:
+-	VideoPortGetAssociatedDeviceID
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_PORT_SERVICES
+req.product: Windows 10 or later.
 ---
 
 

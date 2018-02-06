@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltGetLowerInstance
-title : FltGetLowerInstance function
-author : windows-driver-content
-description : The FltGetLowerInstance routine returns an opaque instance pointer for the next lower minifilter driver instance, if there is one, that is attached below a given minifilter driver instance on the same volume.
-old-location : ifsk\fltgetlowerinstance.htm
-old-project : ifsk
-ms.assetid : bba47250-0344-4b5d-8461-d481519ba9ba
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltGetLowerInstance routine [Installable File System Drivers], FltGetLowerInstance, FltApiRef_e_to_o_6040eade-f27b-4fe5-999e-830065cafb71.xml, ifsk.fltgetlowerinstance, fltkernel/FltGetLowerInstance
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltGetLowerInstance
+title: FltGetLowerInstance function
+author: windows-driver-content
+description: The FltGetLowerInstance routine returns an opaque instance pointer for the next lower minifilter driver instance, if there is one, that is attached below a given minifilter driver instance on the same volume.
+old-location: ifsk\fltgetlowerinstance.htm
+old-project: ifsk
+ms.assetid: bba47250-0344-4b5d-8461-d481519ba9ba
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltGetLowerInstance routine [Installable File System Drivers], FltGetLowerInstance, FltApiRef_e_to_o_6040eade-f27b-4fe5-999e-830065cafb71.xml, ifsk.fltgetlowerinstance, fltkernel/FltGetLowerInstance
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltGetLowerInstance
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

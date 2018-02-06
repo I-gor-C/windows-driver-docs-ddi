@@ -1,41 +1,46 @@
 ---
-UID : NC:ndkpi.NDK_FN_CREATE_MW
-title : NDK_FN_CREATE_MW
-author : windows-driver-content
-description : The NdkCreateMw (NDK_FN_CREATE_MW) function creates an NDK memory window (MW) object.
-old-location : netvista\ndk_fn_create_mw.htm
-old-project : netvista
-ms.assetid : BAE0DF74-19AB-4AE9-A28C-C1CC2F569D1F
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.ndk_fn_create_mw, NdkCreateMw callback function [Network Drivers Starting with Windows Vista], NdkCreateMw, NDK_FN_CREATE_MW, NDK_FN_CREATE_MW, ndkpi/NdkCreateMw
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ndkpi.h
-req.include-header : Ndkpi.h
-req.target-type : Windows
-req.target-min-winverclnt : None supported,Supported in NDIS 6.30 and later.
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_WWAN_VISIBLE_PROVIDERS, *PNDIS_WWAN_VISIBLE_PROVIDERS
+UID: NC:ndkpi.NDK_FN_CREATE_MW
+title: NDK_FN_CREATE_MW
+author: windows-driver-content
+description: The NdkCreateMw (NDK_FN_CREATE_MW) function creates an NDK memory window (MW) object.
+old-location: netvista\ndk_fn_create_mw.htm
+old-project: netvista
+ms.assetid: BAE0DF74-19AB-4AE9-A28C-C1CC2F569D1F
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.ndk_fn_create_mw, NdkCreateMw callback function [Network Drivers Starting with Windows Vista], NdkCreateMw, NDK_FN_CREATE_MW, NDK_FN_CREATE_MW, ndkpi/NdkCreateMw
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ndkpi.h
+req.include-header: Ndkpi.h
+req.target-type: Windows
+req.target-min-winverclnt: None supported,Supported in NDIS 6.30 and later.
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	ndkpi.h
+apiname:
+-	NdkCreateMw
+product: Windows
+targetos: Windows
+req.typenames: NDIS_WWAN_VISIBLE_PROVIDERS, *PNDIS_WWAN_VISIBLE_PROVIDERS
 ---
 
 

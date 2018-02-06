@@ -1,42 +1,47 @@
 ---
-UID : NI:usbioctl.IOCTL_USB_GET_NODE_CONNECTION_ATTRIBUTES
-title : IOCTL_USB_GET_NODE_CONNECTION_ATTRIBUTES
-author : windows-driver-content
-description : The IOCTL_USB_GET_NODE_CONNECTION_ATTRIBUTES I/O control request retrieves the Microsoft-extended port attributes for a specific port.
-old-location : buses\ioctl_usb_get_node_connection_attributes.htm
-old-project : usbref
-ms.assetid : a28613f4-52ba-40f0-9d40-19f1a5d8124a
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : buses.ioctl_usb_get_node_connection_attributes, IOCTL_USB_GET_NODE_CONNECTION_ATTRIBUTES control code [Buses], IOCTL_USB_GET_NODE_CONNECTION_ATTRIBUTES, usbioctl/IOCTL_USB_GET_NODE_CONNECTION_ATTRIBUTES, usbirp_7240de27-e12b-4c72-94c3-5913a217c0c3.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : usbioctl.h
-req.include-header : Usbioctl.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows XP, Windows Server 2003, and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : USB_HUB_TYPE
-req.product : Windows 10 or later.
+UID: NI:usbioctl.IOCTL_USB_GET_NODE_CONNECTION_ATTRIBUTES
+title: IOCTL_USB_GET_NODE_CONNECTION_ATTRIBUTES
+author: windows-driver-content
+description: The IOCTL_USB_GET_NODE_CONNECTION_ATTRIBUTES I/O control request retrieves the Microsoft-extended port attributes for a specific port.
+old-location: buses\ioctl_usb_get_node_connection_attributes.htm
+old-project: usbref
+ms.assetid: a28613f4-52ba-40f0-9d40-19f1a5d8124a
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: buses.ioctl_usb_get_node_connection_attributes, IOCTL_USB_GET_NODE_CONNECTION_ATTRIBUTES control code [Buses], IOCTL_USB_GET_NODE_CONNECTION_ATTRIBUTES, usbioctl/IOCTL_USB_GET_NODE_CONNECTION_ATTRIBUTES, usbirp_7240de27-e12b-4c72-94c3-5913a217c0c3.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: usbioctl.h
+req.include-header: Usbioctl.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows XP, Windows Server 2003, and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Usbioctl.h
+apiname:
+-	IOCTL_USB_GET_NODE_CONNECTION_ATTRIBUTES
+product: Windows
+targetos: Windows
+req.typenames: USB_HUB_TYPE
+req.product: Windows 10 or later.
 ---
 
 # IOCTL_USB_GET_NODE_CONNECTION_ATTRIBUTES IOCTL

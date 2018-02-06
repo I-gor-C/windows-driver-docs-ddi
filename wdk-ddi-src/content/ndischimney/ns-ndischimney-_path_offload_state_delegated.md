@@ -1,41 +1,46 @@
 ---
-UID : NS:ndischimney._PATH_OFFLOAD_STATE_DELEGATED
-title : "_PATH_OFFLOAD_STATE_DELEGATED"
-author : windows-driver-content
-description : The PATH_OFFLOAD_STATE_DELEGATED structure contains the delegated variables of a path state object.
-old-location : netvista\path_offload_state_delegated.htm
-old-project : netvista
-ms.assetid : 3a1603ec-639f-4899-8889-3c7ed2cfe375
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : PPATH_OFFLOAD_STATE_DELEGATED structure pointer [Network Drivers Starting with Windows Vista], _PATH_OFFLOAD_STATE_DELEGATED, ndischimney/PATH_OFFLOAD_STATE_DELEGATED, tcp_chim_struct_63dab32f-c9a5-428f-94e1-7b534d83fd50.xml, PPATH_OFFLOAD_STATE_DELEGATED, *PPATH_OFFLOAD_STATE_DELEGATED, PATH_OFFLOAD_STATE_DELEGATED, netvista.path_offload_state_delegated, PATH_OFFLOAD_STATE_DELEGATED structure [Network Drivers Starting with Windows Vista], ndischimney/PPATH_OFFLOAD_STATE_DELEGATED
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndischimney.h
-req.include-header : Ndischimney.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPATH_OFFLOAD_STATE_DELEGATED, PATH_OFFLOAD_STATE_DELEGATED"
+UID: NS:ndischimney._PATH_OFFLOAD_STATE_DELEGATED
+title: "_PATH_OFFLOAD_STATE_DELEGATED"
+author: windows-driver-content
+description: The PATH_OFFLOAD_STATE_DELEGATED structure contains the delegated variables of a path state object.
+old-location: netvista\path_offload_state_delegated.htm
+old-project: netvista
+ms.assetid: 3a1603ec-639f-4899-8889-3c7ed2cfe375
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: PPATH_OFFLOAD_STATE_DELEGATED structure pointer [Network Drivers Starting with Windows Vista], _PATH_OFFLOAD_STATE_DELEGATED, ndischimney/PATH_OFFLOAD_STATE_DELEGATED, tcp_chim_struct_63dab32f-c9a5-428f-94e1-7b534d83fd50.xml, PPATH_OFFLOAD_STATE_DELEGATED, *PPATH_OFFLOAD_STATE_DELEGATED, PATH_OFFLOAD_STATE_DELEGATED, netvista.path_offload_state_delegated, PATH_OFFLOAD_STATE_DELEGATED structure [Network Drivers Starting with Windows Vista], ndischimney/PPATH_OFFLOAD_STATE_DELEGATED
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndischimney.h
+req.include-header: Ndischimney.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndischimney.h
+apiname:
+-	PATH_OFFLOAD_STATE_DELEGATED
+product: Windows
+targetos: Windows
+req.typenames: "*PPATH_OFFLOAD_STATE_DELEGATED, PATH_OFFLOAD_STATE_DELEGATED"
 ---
 
 # _PATH_OFFLOAD_STATE_DELEGATED structure

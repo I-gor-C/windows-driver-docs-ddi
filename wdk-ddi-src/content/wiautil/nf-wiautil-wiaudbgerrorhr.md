@@ -1,42 +1,47 @@
 ---
-UID : NF:wiautil.wiauDbgErrorHr
-title : wiauDbgErrorHr function
-author : windows-driver-content
-description : The wiauDbgErrorHr function logs a message containing an HRESULT and its error message string.
-old-location : image\wiaudbgerrorhr.htm
-old-project : image
-ms.assetid : 18d248d9-d447-4d3e-9eaa-f6befb4bef58
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : wiauFncs_1400188e-53d1-481c-a470-8a2247b7f34f.xml, wiautil/wiauDbgErrorHr, wiauDbgErrorHr, image.wiaudbgerrorhr, wiauDbgErrorHr function [Imaging Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wiautil.h
-req.include-header : Wiautil.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows XP and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SKIP_AMOUNT
-req.product : Windows 10 or later.
+UID: NF:wiautil.wiauDbgErrorHr
+title: wiauDbgErrorHr function
+author: windows-driver-content
+description: The wiauDbgErrorHr function logs a message containing an HRESULT and its error message string.
+old-location: image\wiaudbgerrorhr.htm
+old-project: image
+ms.assetid: 18d248d9-d447-4d3e-9eaa-f6befb4bef58
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: wiauFncs_1400188e-53d1-481c-a470-8a2247b7f34f.xml, wiautil/wiauDbgErrorHr, wiauDbgErrorHr, image.wiaudbgerrorhr, wiauDbgErrorHr function [Imaging Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wiautil.h
+req.include-header: Wiautil.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows XP and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wiautil.h
+apiname:
+-	wiauDbgErrorHr
+product: Windows
+targetos: Windows
+req.typenames: SKIP_AMOUNT
+req.product: Windows 10 or later.
 ---
 
 

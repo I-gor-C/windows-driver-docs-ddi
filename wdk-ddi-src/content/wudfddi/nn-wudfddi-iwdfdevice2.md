@@ -1,42 +1,47 @@
 ---
-UID : NN:wudfddi.IWDFDevice2
-title : IWDFDevice2
-author : windows-driver-content
-description : Drivers obtain the IWDFDevice2 interface by calling IWDFDevice::QueryInterface.
-old-location : wdf\iwdfdevice2.htm
-old-project : wdf
-ms.assetid : f4d3d2cf-8877-4071-8e75-f971803beca4
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.iwdfdevice2, IWDFDevice2 interface, IWDFDevice2 interface, described, IWDFDevice2, wudfddi/IWDFDevice2, UMDFDeviceObjectRef_0b02d642-234d-4f98-b6d1-5557aa74eb14.xml, umdf.iwdfdevice2
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.9
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NN:wudfddi.IWDFDevice2
+title: IWDFDevice2
+author: windows-driver-content
+description: Drivers obtain the IWDFDevice2 interface by calling IWDFDevice::QueryInterface.
+old-location: wdf\iwdfdevice2.htm
+old-project: wdf
+ms.assetid: f4d3d2cf-8877-4071-8e75-f971803beca4
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.iwdfdevice2, IWDFDevice2 interface, IWDFDevice2 interface, described, IWDFDevice2, wudfddi/IWDFDevice2, UMDFDeviceObjectRef_0b02d642-234d-4f98-b6d1-5557aa74eb14.xml, umdf.iwdfdevice2
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.9
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFDevice2
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 # IWDFDevice2 interface

@@ -1,42 +1,47 @@
 ---
-UID : NF:printoem.OEMStretchBltROP
-title : OEMStretchBltROP function
-author : windows-driver-content
-description : The OEMStretchBltROP function performs a stretching bit-block transfer using a raster operation (ROP).
-old-location : print\oemstretchbltrop.htm
-old-project : print
-ms.assetid : 2e265dc6-3e04-4f25-ae3b-6cb7ce5ce9ae
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : OEMStretchBltROP function [Print Devices], printoem/OEMStretchBltROP, print_unidrv-pscript_rendering_b1617a87-83e0-4b49-b123-e1db1ed3dd70.xml, print.oemstretchbltrop, OEMStretchBltROP
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : printoem.h
-req.include-header : Printoem.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STDVARIABLEINDEX
-req.product : Windows 10 or later.
+UID: NF:printoem.OEMStretchBltROP
+title: OEMStretchBltROP function
+author: windows-driver-content
+description: The OEMStretchBltROP function performs a stretching bit-block transfer using a raster operation (ROP).
+old-location: print\oemstretchbltrop.htm
+old-project: print
+ms.assetid: 2e265dc6-3e04-4f25-ae3b-6cb7ce5ce9ae
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: OEMStretchBltROP function [Print Devices], printoem/OEMStretchBltROP, print_unidrv-pscript_rendering_b1617a87-83e0-4b49-b123-e1db1ed3dd70.xml, print.oemstretchbltrop, OEMStretchBltROP
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: printoem.h
+req.include-header: Printoem.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	printoem.h
+apiname:
+-	OEMStretchBltROP
+product: Windows
+targetos: Windows
+req.typenames: STDVARIABLEINDEX
+req.product: Windows 10 or later.
 ---
 
 

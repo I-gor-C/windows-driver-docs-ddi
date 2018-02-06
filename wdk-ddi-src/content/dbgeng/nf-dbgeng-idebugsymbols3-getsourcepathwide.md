@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugSymbols3.GetSourcePathWide
-title : IDebugSymbols3::GetSourcePathWide method
-author : windows-driver-content
-description : The GetSourcePathWide method returns the source path.
-old-location : debugger\getsourcepathwide.htm
-old-project : debugger
-ms.assetid : 6c9c8270-78c4-4bc2-a0e4-5c5e245326ad
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugSymbols3::GetSourcePathWide, debugger.getsourcepathwide, IDebugSymbols3, dbgeng/IDebugSymbols3::GetSourcePathWide, GetSourcePathWide, GetSourcePathWide method [Windows Debugging], GetSourcePathWide method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols3 interface [Windows Debugging], GetSourcePathWide method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSymbols3.GetSourcePathWide
+title: IDebugSymbols3::GetSourcePathWide method
+author: windows-driver-content
+description: The GetSourcePathWide method returns the source path.
+old-location: debugger\getsourcepathwide.htm
+old-project: debugger
+ms.assetid: 6c9c8270-78c4-4bc2-a0e4-5c5e245326ad
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugSymbols3::GetSourcePathWide, debugger.getsourcepathwide, IDebugSymbols3, dbgeng/IDebugSymbols3::GetSourcePathWide, GetSourcePathWide, GetSourcePathWide method [Windows Debugging], GetSourcePathWide method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols3 interface [Windows Debugging], GetSourcePathWide method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugSymbols3.GetSourcePathWide
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

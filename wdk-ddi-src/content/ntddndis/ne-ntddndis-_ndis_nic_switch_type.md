@@ -1,41 +1,46 @@
 ---
-UID : NE:ntddndis._NDIS_NIC_SWITCH_TYPE
-title : "_NDIS_NIC_SWITCH_TYPE"
-author : windows-driver-content
-description : The NDIS_NIC_SWITCH_TYPE enumeration specifies the type of the NIC switch on a network adapter.
-old-location : netvista\ndis_nic_switch_type.htm
-old-project : netvista
-ms.assetid : F990F166-D9DA-43F5-95D3-86B9B11FACF1
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : ntddndis/NdisNicSwitchTypeUnspecified, ntddndis/PNDIS_NIC_SWITCH_TYPE, ntddndis/NdisNicSwitchTypeMax, PNDIS_NIC_SWITCH_TYPE enumeration pointer [Network Drivers Starting with Windows Vista], NdisNicSwitchTypeMax, PNDIS_NIC_SWITCH_TYPE, NdisNicSwitchTypeUnspecified, netvista.ndis_nic_switch_type, ntddndis/NDIS_NIC_SWITCH_TYPE, NDIS_NIC_SWITCH_TYPE enumeration [Network Drivers Starting with Windows Vista], NDIS_NIC_SWITCH_TYPE, ntddndis/NdisNicSwitchTypeExternal, _NDIS_NIC_SWITCH_TYPE, *PNDIS_NIC_SWITCH_TYPE, NdisNicSwitchTypeExternal
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : ntddndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.30 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_NIC_SWITCH_TYPE, *PNDIS_NIC_SWITCH_TYPE
+UID: NE:ntddndis._NDIS_NIC_SWITCH_TYPE
+title: "_NDIS_NIC_SWITCH_TYPE"
+author: windows-driver-content
+description: The NDIS_NIC_SWITCH_TYPE enumeration specifies the type of the NIC switch on a network adapter.
+old-location: netvista\ndis_nic_switch_type.htm
+old-project: netvista
+ms.assetid: F990F166-D9DA-43F5-95D3-86B9B11FACF1
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: ntddndis/NdisNicSwitchTypeUnspecified, ntddndis/PNDIS_NIC_SWITCH_TYPE, ntddndis/NdisNicSwitchTypeMax, PNDIS_NIC_SWITCH_TYPE enumeration pointer [Network Drivers Starting with Windows Vista], NdisNicSwitchTypeMax, PNDIS_NIC_SWITCH_TYPE, NdisNicSwitchTypeUnspecified, netvista.ndis_nic_switch_type, ntddndis/NDIS_NIC_SWITCH_TYPE, NDIS_NIC_SWITCH_TYPE enumeration [Network Drivers Starting with Windows Vista], NDIS_NIC_SWITCH_TYPE, ntddndis/NdisNicSwitchTypeExternal, _NDIS_NIC_SWITCH_TYPE, *PNDIS_NIC_SWITCH_TYPE, NdisNicSwitchTypeExternal
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: ntddndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.30 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddndis.h
+apiname:
+-	NDIS_NIC_SWITCH_TYPE
+product: Windows
+targetos: Windows
+req.typenames: NDIS_NIC_SWITCH_TYPE, *PNDIS_NIC_SWITCH_TYPE
 ---
 
 # _NDIS_NIC_SWITCH_TYPE Enumeration
@@ -53,26 +58,26 @@ typedef enum _NDIS_NIC_SWITCH_TYPE {
 ## Constants
 
 <table>
-
-<tr>
-<td>NdisNicSwitchTypeExternal</td>
-<td>This value specifies an external switch. The single root I/O virtualization (SR-IOV) virtual ports (VPorts) connected to this type of switch, including the default VPort, can access the external network through the physical port on the network adapter.</td>
-</tr>
-
-<tr>
-<td>NdisNicSwitchTypeMax</td>
-<td>The maximum value for this enumeration. This value might change in future versions of the NDIS header files and binaries.</td>
-</tr>
-
-<tr>
-<td>NdisNicSwitchTypeUnspecified</td>
-<td>The NIC switch type is not specified.</td>
-</tr>
+            
+                <tr>
+                    <td>NdisNicSwitchTypeExternal</td>
+                    <td>This value specifies an external switch. The single root I/O virtualization (SR-IOV) virtual ports (VPorts) connected to this type of switch, including the default VPort, can access the external network through the physical port on the network adapter.</td>
+                </tr>
+            
+                <tr>
+                    <td>NdisNicSwitchTypeMax</td>
+                    <td>The maximum value for this enumeration. This value might change in future versions of the NDIS header files and binaries.</td>
+                </tr>
+            
+                <tr>
+                    <td>NdisNicSwitchTypeUnspecified</td>
+                    <td>The NIC switch type is not specified.</td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-The <b>SwitchType</b> member of the <a href="..\ntddndis\ns-ntddndis-_ndis_nic_switch_parameters.md">NDIS_NIC_SWITCH_PARAMETERS</a> and <a href="..\ntddndis\ns-ntddndis-_ndis_nic_switch_info.md">NDIS_NIC_SWITCH_INFO</a> structures is an <b>NDIS_NIC_SWITCH_TYPE</b> enumeration data type. 
+        The <b>SwitchType</b> member of the <a href="..\ntddndis\ns-ntddndis-_ndis_nic_switch_parameters.md">NDIS_NIC_SWITCH_PARAMETERS</a> and <a href="..\ntddndis\ns-ntddndis-_ndis_nic_switch_info.md">NDIS_NIC_SWITCH_INFO</a> structures is an <b>NDIS_NIC_SWITCH_TYPE</b> enumeration data type. 
 
 
 
@@ -84,9 +89,9 @@ For more information about the NIC switch, see <a href="https://msdn.microsoft.c
 | **Windows version** | Supported in NDIS 6.30 and later. Supported in NDIS 6.30 and later. |
 | **Header** | ntddndis.h (include Ndis.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_nic_switch_info.md">NDIS_NIC_SWITCH_INFO</a>
+        <a href="..\ntddndis\ns-ntddndis-_ndis_nic_switch_info.md">NDIS_NIC_SWITCH_INFO</a>
 
 <a href="..\ntddndis\ns-ntddndis-_ndis_nic_switch_parameters.md">NDIS_NIC_SWITCH_PARAMETERS</a>
 

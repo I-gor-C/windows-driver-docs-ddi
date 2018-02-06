@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGKARG_VALIDATEUPDATEALLOCPROPERTY
-title : "_DXGKARG_VALIDATEUPDATEALLOCPROPERTY"
-author : windows-driver-content
-description : The DXGARG_VALIDATEUPDATEALLOCPROPERTY structure holds the information needed to validate the parameters to update the properties of an allocation.
-old-location : display\dxgkarg_validateupdateallocproperty.htm
-old-project : display
-ms.assetid : EC9654B8-06AA-43C8-A159-F176BDE4E015
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DXGKARG_VALIDATEUPDATEALLOCPROPERTY, DXGKARG_VALIDATEUPDATEALLOCPROPERTY structure [Display Devices], d3dkmddi/DXGKARG_VALIDATEUPDATEALLOCPROPERTY, display.dxgkarg_validateupdateallocproperty, _DXGKARG_VALIDATEUPDATEALLOCPROPERTY
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 10 and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGKARG_VALIDATEUPDATEALLOCPROPERTY
+UID: NS:d3dkmddi._DXGKARG_VALIDATEUPDATEALLOCPROPERTY
+title: "_DXGKARG_VALIDATEUPDATEALLOCPROPERTY"
+author: windows-driver-content
+description: The DXGARG_VALIDATEUPDATEALLOCPROPERTY structure holds the information needed to validate the parameters to update the properties of an allocation.
+old-location: display\dxgkarg_validateupdateallocproperty.htm
+old-project: display
+ms.assetid: EC9654B8-06AA-43C8-A159-F176BDE4E015
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DXGKARG_VALIDATEUPDATEALLOCPROPERTY, DXGKARG_VALIDATEUPDATEALLOCPROPERTY structure [Display Devices], d3dkmddi/DXGKARG_VALIDATEUPDATEALLOCPROPERTY, display.dxgkarg_validateupdateallocproperty, _DXGKARG_VALIDATEUPDATEALLOCPROPERTY
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 10 and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DXGKARG_VALIDATEUPDATEALLOCPROPERTY
+product: Windows
+targetos: Windows
+req.typenames: DXGKARG_VALIDATEUPDATEALLOCPROPERTY
 ---
 
 # _DXGKARG_VALIDATEUPDATEALLOCPROPERTY structure

@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddcdrm.IOCTL_CDROM_RESUME_AUDIO
-title : IOCTL_CDROM_RESUME_AUDIO
-author : windows-driver-content
-description : Resumes a suspended audio operation. Obsolete, beginning with Windows Vista.
-old-location : storage\ioctl_cdrom_resume_audio.htm
-old-project : storage
-ms.assetid : 50bf3cf3-5225-45c9-9f14-bfcd84574a83
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_cdrom_resume_audio, IOCTL_CDROM_RESUME_AUDIO control code [Storage Devices], IOCTL_CDROM_RESUME_AUDIO, ntddcdrm/IOCTL_CDROM_RESUME_AUDIO, k307_64959ad0-32bd-4b0d-b1a0-2983efcd74fa.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddcdrm.h
-req.include-header : Ntddcdrm.h
-req.target-type : Windows
-req.target-min-winverclnt : Obsolete, beginning with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WRITE_ROTATION, *PWRITE_ROTATION
+UID: NI:ntddcdrm.IOCTL_CDROM_RESUME_AUDIO
+title: IOCTL_CDROM_RESUME_AUDIO
+author: windows-driver-content
+description: Resumes a suspended audio operation. Obsolete, beginning with Windows Vista.
+old-location: storage\ioctl_cdrom_resume_audio.htm
+old-project: storage
+ms.assetid: 50bf3cf3-5225-45c9-9f14-bfcd84574a83
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_cdrom_resume_audio, IOCTL_CDROM_RESUME_AUDIO control code [Storage Devices], IOCTL_CDROM_RESUME_AUDIO, ntddcdrm/IOCTL_CDROM_RESUME_AUDIO, k307_64959ad0-32bd-4b0d-b1a0-2983efcd74fa.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddcdrm.h
+req.include-header: Ntddcdrm.h
+req.target-type: Windows
+req.target-min-winverclnt: Obsolete, beginning with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddcdrm.h
+apiname:
+-	IOCTL_CDROM_RESUME_AUDIO
+product: Windows
+targetos: Windows
+req.typenames: WRITE_ROTATION, *PWRITE_ROTATION
 ---
 
 # IOCTL_CDROM_RESUME_AUDIO IOCTL

@@ -1,41 +1,46 @@
 ---
-UID : NF:ks.IKsControl.KsEvent
-title : IKsControl::KsEvent method
-author : windows-driver-content
-description : The IKsControl::KsEvent method enables or disables an event, together with any other defined support operations available on an event set.
-old-location : stream\ikscontrol_ksevent2.htm
-old-project : stream
-ms.assetid : 9e4b86cf-308f-4d9b-be28-966312dc4e43
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : IKsControl interface [Streaming Media Devices], KsEvent method, ks/IKsControl::KsEvent, stream.ikscontrol_ksevent2, avintfc_359de56d-5fcc-47ea-838c-cd110493856c.xml, IKsControl::KsEvent, KsEvent method [Streaming Media Devices], IKsControl, KsEvent, KsEvent method [Streaming Media Devices], IKsControl interface
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : DesktopMobile
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : ks.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.IKsControl.KsEvent
+title: IKsControl::KsEvent method
+author: windows-driver-content
+description: The IKsControl::KsEvent method enables or disables an event, together with any other defined support operations available on an event set.
+old-location: stream\ikscontrol_ksevent2.htm
+old-project: stream
+ms.assetid: 9e4b86cf-308f-4d9b-be28-966312dc4e43
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: IKsControl interface [Streaming Media Devices], KsEvent method, ks/IKsControl::KsEvent, stream.ikscontrol_ksevent2, avintfc_359de56d-5fcc-47ea-838c-cd110493856c.xml, IKsControl::KsEvent, KsEvent method [Streaming Media Devices], IKsControl, KsEvent, KsEvent method [Streaming Media Devices], IKsControl interface
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: DesktopMobile
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: ks.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	ks.h
+apiname:
+-	IKsControl.KsEvent
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

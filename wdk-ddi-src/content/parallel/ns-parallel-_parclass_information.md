@@ -1,41 +1,46 @@
 ---
-UID : NS:parallel._PARCLASS_INFORMATION
-title : "_PARCLASS_INFORMATION"
-author : windows-driver-content
-description : The PARCLASS_INFORMATION structure specifies information about a parallel port, pointers to callback routines to operate a parallel port, and pointers to callback routines to read and write to a parallel device.
-old-location : parports\parclass_information.htm
-old-project : parports
-ms.assetid : abad8ebd-a9fc-4cfb-8495-aca4e38ee45a
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : "_PARCLASS_INFORMATION, parallel/PPARCLASS_INFORMATION, parallel/PARCLASS_INFORMATION, parports.parclass_information, PARCLASS_INFORMATION, PPARCLASS_INFORMATION structure pointer [Parallel Ports], cisspd_b7b1d8b8-fc86-4bd9-a474-e31f416da93c.xml, PPARCLASS_INFORMATION, PARCLASS_INFORMATION structure [Parallel Ports], *PPARCLASS_INFORMATION"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : parallel.h
-req.include-header : Parallel.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PARCLASS_INFORMATION, *PPARCLASS_INFORMATION
+UID: NS:parallel._PARCLASS_INFORMATION
+title: "_PARCLASS_INFORMATION"
+author: windows-driver-content
+description: The PARCLASS_INFORMATION structure specifies information about a parallel port, pointers to callback routines to operate a parallel port, and pointers to callback routines to read and write to a parallel device.
+old-location: parports\parclass_information.htm
+old-project: parports
+ms.assetid: abad8ebd-a9fc-4cfb-8495-aca4e38ee45a
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: "_PARCLASS_INFORMATION, parallel/PPARCLASS_INFORMATION, parallel/PARCLASS_INFORMATION, parports.parclass_information, PARCLASS_INFORMATION, PPARCLASS_INFORMATION structure pointer [Parallel Ports], cisspd_b7b1d8b8-fc86-4bd9-a474-e31f416da93c.xml, PPARCLASS_INFORMATION, PARCLASS_INFORMATION structure [Parallel Ports], *PPARCLASS_INFORMATION"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: parallel.h
+req.include-header: Parallel.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	parallel.h
+apiname:
+-	PARCLASS_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: PARCLASS_INFORMATION, *PPARCLASS_INFORMATION
 ---
 
 # _PARCLASS_INFORMATION structure

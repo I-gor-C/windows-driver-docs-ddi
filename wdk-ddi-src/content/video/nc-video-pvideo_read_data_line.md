@@ -1,42 +1,47 @@
 ---
-UID : NC:video.PVIDEO_READ_DATA_LINE
-title : PVIDEO_READ_DATA_LINE
-author : windows-driver-content
-description : ReadDataLine reads a single data bit from the I2C serial data line.
-old-location : display\readdataline.htm
-old-project : display
-ms.assetid : 071000a3-c1b7-47fd-aec7-9e9f32edddf6
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.readdataline, ReadDataLine callback function [Display Devices], ReadDataLine, PVIDEO_READ_DATA_LINE, PVIDEO_READ_DATA_LINE, video/ReadDataLine, VideoMiniport_Functions_6507a035-50bc-4a1e-92bf-f07e75cf023b.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VHF_CONFIG, *PVHF_CONFIG
-req.product : Windows 10 or later.
+UID: NC:video.PVIDEO_READ_DATA_LINE
+title: PVIDEO_READ_DATA_LINE
+author: windows-driver-content
+description: ReadDataLine reads a single data bit from the I2C serial data line.
+old-location: display\readdataline.htm
+old-project: display
+ms.assetid: 071000a3-c1b7-47fd-aec7-9e9f32edddf6
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.readdataline, ReadDataLine callback function [Display Devices], ReadDataLine, PVIDEO_READ_DATA_LINE, PVIDEO_READ_DATA_LINE, video/ReadDataLine, VideoMiniport_Functions_6507a035-50bc-4a1e-92bf-f07e75cf023b.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	video.h
+apiname:
+-	ReadDataLine
+product: Windows
+targetos: Windows
+req.typenames: VHF_CONFIG, *PVHF_CONFIG
+req.product: Windows 10 or later.
 ---
 
 

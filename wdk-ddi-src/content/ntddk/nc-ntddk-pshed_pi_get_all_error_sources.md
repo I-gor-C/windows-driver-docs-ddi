@@ -1,41 +1,46 @@
 ---
-UID : NC:ntddk.PSHED_PI_GET_ALL_ERROR_SOURCES
-title : PSHED_PI_GET_ALL_ERROR_SOURCES
-author : windows-driver-content
-description : A PSHED plug-in's GetAllErrorSources callback function returns a list of error source descriptor structures that represents all of the error sources that are implemented by the hardware platform.
-old-location : whea\getallerrorsources.htm
-old-project : whea
-ms.assetid : e9c97f88-aa13-4a3e-9236-c09703d17e4b
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : whea.getallerrorsources, GetAllErrorSources callback function [WHEA Drivers and Applications], GetAllErrorSources, PSHED_PI_GET_ALL_ERROR_SOURCES, PSHED_PI_GET_ALL_ERROR_SOURCES, ntddk/GetAllErrorSources, whearef_fe2e1679-84ee-4f90-8615-24cbab3cb686.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PFILTER_INITIALIZATION_DATA, FILTER_INITIALIZATION_DATA"
+UID: NC:ntddk.PSHED_PI_GET_ALL_ERROR_SOURCES
+title: PSHED_PI_GET_ALL_ERROR_SOURCES
+author: windows-driver-content
+description: A PSHED plug-in's GetAllErrorSources callback function returns a list of error source descriptor structures that represents all of the error sources that are implemented by the hardware platform.
+old-location: whea\getallerrorsources.htm
+old-project: whea
+ms.assetid: e9c97f88-aa13-4a3e-9236-c09703d17e4b
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: whea.getallerrorsources, GetAllErrorSources callback function [WHEA Drivers and Applications], GetAllErrorSources, PSHED_PI_GET_ALL_ERROR_SOURCES, PSHED_PI_GET_ALL_ERROR_SOURCES, ntddk/GetAllErrorSources, whearef_fe2e1679-84ee-4f90-8615-24cbab3cb686.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ntddk.h
+apiname:
+-	GetAllErrorSources
+product: Windows
+targetos: Windows
+req.typenames: "*PFILTER_INITIALIZATION_DATA, FILTER_INITIALIZATION_DATA"
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NF:wiamindr_lh.IWiaMiniDrv.drvGetDeviceErrorStr
-title : IWiaMiniDrv::drvGetDeviceErrorStr method
-author : windows-driver-content
-description : The IWiaMiniDrv::drvGetDeviceErrorStr method maps an error code to a Unicode string that describes the error.
-old-location : image\iwiaminidrv_drvgetdeviceerrorstr.htm
-old-project : image
-ms.assetid : c34a6834-8875-400c-9634-6c2b9b68164f
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : wiamindr_lh/IWiaMiniDrv::drvGetDeviceErrorStr, IWiaMiniDrv, drvGetDeviceErrorStr method [Imaging Devices], IWiaMiniDrv interface [Imaging Devices], drvGetDeviceErrorStr method, MiniDrv_d5a72b62-8987-4d0a-921e-8a7f4d915d12.xml, drvGetDeviceErrorStr, image.iwiaminidrv_drvgetdeviceerrorstr, IWiaMiniDrv::drvGetDeviceErrorStr, drvGetDeviceErrorStr method [Imaging Devices], IWiaMiniDrv interface
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wiamindr_lh.h
-req.include-header : Wiamindr.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Me and in Windows XP and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wiamindr_lh.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SCANWINDOW, *PSCANWINDOW
-req.product : Windows 10 or later.
+UID: NF:wiamindr_lh.IWiaMiniDrv.drvGetDeviceErrorStr
+title: IWiaMiniDrv::drvGetDeviceErrorStr method
+author: windows-driver-content
+description: The IWiaMiniDrv::drvGetDeviceErrorStr method maps an error code to a Unicode string that describes the error.
+old-location: image\iwiaminidrv_drvgetdeviceerrorstr.htm
+old-project: image
+ms.assetid: c34a6834-8875-400c-9634-6c2b9b68164f
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: wiamindr_lh/IWiaMiniDrv::drvGetDeviceErrorStr, IWiaMiniDrv, drvGetDeviceErrorStr method [Imaging Devices], IWiaMiniDrv interface [Imaging Devices], drvGetDeviceErrorStr method, MiniDrv_d5a72b62-8987-4d0a-921e-8a7f4d915d12.xml, drvGetDeviceErrorStr, image.iwiaminidrv_drvgetdeviceerrorstr, IWiaMiniDrv::drvGetDeviceErrorStr, drvGetDeviceErrorStr method [Imaging Devices], IWiaMiniDrv interface
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wiamindr_lh.h
+req.include-header: Wiamindr.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Me and in Windows XP and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wiamindr_lh.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	wiamindr_lh.h
+apiname:
+-	IWiaMiniDrv.drvGetDeviceErrorStr
+product: Windows
+targetos: Windows
+req.typenames: SCANWINDOW, *PSCANWINDOW
+req.product: Windows 10 or later.
 ---
 
 

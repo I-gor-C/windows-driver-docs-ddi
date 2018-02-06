@@ -1,41 +1,46 @@
 ---
-UID : NS:dxva._DXVA_Highlight
-title : "_DXVA_Highlight"
-author : windows-driver-content
-description : The DXVA_Highlight structure is sent by the host decoder to the accelerator to specify a highlighted rectangular area of a subpicture, and to create an alpha-blending surface with DCCMD data and a DPXD surface.
-old-location : display\dxva_highlight.htm
-old-project : display
-ms.assetid : 62c5f41a-1db2-4777-af86-67d2345a05c0
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : dxvaref_509ed85b-59ad-44d2-a686-2b2077542c6d.xml, LPDXVA_Highlight, LPDXVA_Highlight structure pointer [Display Devices], _DXVA_Highlight, display.dxva_highlight, *LPDXVA_Highlight, dxva/LPDXVA_Highlight, DXVA_Highlight structure [Display Devices], dxva/DXVA_Highlight, DXVA_Highlight
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : dxva.h
-req.include-header : Dxva.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*LPDXVA_Highlight, DXVA_Highlight"
+UID: NS:dxva._DXVA_Highlight
+title: "_DXVA_Highlight"
+author: windows-driver-content
+description: The DXVA_Highlight structure is sent by the host decoder to the accelerator to specify a highlighted rectangular area of a subpicture, and to create an alpha-blending surface with DCCMD data and a DPXD surface.
+old-location: display\dxva_highlight.htm
+old-project: display
+ms.assetid: 62c5f41a-1db2-4777-af86-67d2345a05c0
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: dxvaref_509ed85b-59ad-44d2-a686-2b2077542c6d.xml, LPDXVA_Highlight, LPDXVA_Highlight structure pointer [Display Devices], _DXVA_Highlight, display.dxva_highlight, *LPDXVA_Highlight, dxva/LPDXVA_Highlight, DXVA_Highlight structure [Display Devices], dxva/DXVA_Highlight, DXVA_Highlight
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: dxva.h
+req.include-header: Dxva.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	dxva.h
+apiname:
+-	DXVA_Highlight
+product: Windows
+targetos: Windows
+req.typenames: "*LPDXVA_Highlight, DXVA_Highlight"
 ---
 
 # _DXVA_Highlight structure

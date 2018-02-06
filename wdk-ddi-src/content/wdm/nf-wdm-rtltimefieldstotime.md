@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.RtlTimeFieldsToTime
-title : RtlTimeFieldsToTime function
-author : windows-driver-content
-description : The RtlTimeFieldsToTime routine converts TIME_FIELDS information to a system time value.
-old-location : kernel\rtltimefieldstotime.htm
-old-project : kernel
-ms.assetid : 5873b627-6ef4-4e2c-8a53-921f37b729bc
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : RtlTimeFieldsToTime routine [Kernel-Mode Driver Architecture], RtlTimeFieldsToTime, kernel.rtltimefieldstotime, wdm/RtlTimeFieldsToTime, k109_9b5d67de-92c3-4fb7-bcd7-4e045ae9ada4.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : Any level (See Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.RtlTimeFieldsToTime
+title: RtlTimeFieldsToTime function
+author: windows-driver-content
+description: The RtlTimeFieldsToTime routine converts TIME_FIELDS information to a system time value.
+old-location: kernel\rtltimefieldstotime.htm
+old-project: kernel
+ms.assetid: 5873b627-6ef4-4e2c-8a53-921f37b729bc
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: RtlTimeFieldsToTime routine [Kernel-Mode Driver Architecture], RtlTimeFieldsToTime, kernel.rtltimefieldstotime, wdm/RtlTimeFieldsToTime, k109_9b5d67de-92c3-4fb7-bcd7-4e045ae9ada4.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: Any level (See Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	RtlTimeFieldsToTime
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

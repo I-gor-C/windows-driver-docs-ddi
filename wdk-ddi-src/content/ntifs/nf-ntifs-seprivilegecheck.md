@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.SePrivilegeCheck
-title : SePrivilegeCheck function
-author : windows-driver-content
-description : The SePrivilegeCheck routine determines whether a specified set of privileges is enabled in the subject's access token.
-old-location : ifsk\seprivilegecheck.htm
-old-project : ifsk
-ms.assetid : 707ced39-4153-4a6e-b87d-7e4eb487e738
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ntifs/SePrivilegeCheck, SePrivilegeCheck, seref_45aa3a8c-26b9-4bb9-968a-5f7d4a12ca3a.xml, ifsk.seprivilegecheck, SePrivilegeCheck routine [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.SePrivilegeCheck
+title: SePrivilegeCheck function
+author: windows-driver-content
+description: The SePrivilegeCheck routine determines whether a specified set of privileges is enabled in the subject's access token.
+old-location: ifsk\seprivilegecheck.htm
+old-project: ifsk
+ms.assetid: 707ced39-4153-4a6e-b87d-7e4eb487e738
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ntifs/SePrivilegeCheck, SePrivilegeCheck, seref_45aa3a8c-26b9-4bb9-968a-5f7d4a12ca3a.xml, ifsk.seprivilegecheck, SePrivilegeCheck routine [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	SePrivilegeCheck
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

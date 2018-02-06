@@ -1,41 +1,46 @@
 ---
-UID : NF:hbaapi.HBA_RemovePersistentBinding
-title : HBA_RemovePersistentBinding function
-author : windows-driver-content
-description : The HBA_RemovePersistentBinding routine retrieves information about the specified target.
-old-location : storage\hba_removepersistentbinding.htm
-old-project : storage
-ms.assetid : f2dbdd95-ddf9-4e95-acd5-853c29cebf02
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : fibreHBA_rtns_d8ccc5eb-b268-4809-88e5-3cee263f6b35.xml, storage.hba_removepersistentbinding, HBA_RemovePersistentBinding routine [Storage Devices], HBA_RemovePersistentBinding, hbaapi/HBA_RemovePersistentBinding
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : hbaapi.h
-req.include-header : Hbaapi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Hbaapi.lib
-req.dll : Hbaapi.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HBA_WWNTYPE
+UID: NF:hbaapi.HBA_RemovePersistentBinding
+title: HBA_RemovePersistentBinding function
+author: windows-driver-content
+description: The HBA_RemovePersistentBinding routine retrieves information about the specified target.
+old-location: storage\hba_removepersistentbinding.htm
+old-project: storage
+ms.assetid: f2dbdd95-ddf9-4e95-acd5-853c29cebf02
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: fibreHBA_rtns_d8ccc5eb-b268-4809-88e5-3cee263f6b35.xml, storage.hba_removepersistentbinding, HBA_RemovePersistentBinding routine [Storage Devices], HBA_RemovePersistentBinding, hbaapi/HBA_RemovePersistentBinding
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: hbaapi.h
+req.include-header: Hbaapi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Hbaapi.lib
+req.dll: Hbaapi.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Hbaapi.dll
+apiname:
+-	HBA_RemovePersistentBinding
+product: Windows
+targetos: Windows
+req.typenames: HBA_WWNTYPE
 ---
 
 

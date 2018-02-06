@@ -1,41 +1,46 @@
 ---
-UID : NS:pep_x._PEP_PPM_IDLE_CANCEL
-title : "_PEP_PPM_IDLE_CANCEL"
-author : windows-driver-content
-description : The PEP_PPM_IDLE_CANCEL structure indicates why the processor could not enter the previously selected idle state.
-old-location : kernel\pep_ppm_idle_cancel.htm
-old-project : kernel
-ms.assetid : 29B16A23-A3C1-4994-8F72-403BE32ABBD2
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : "_PEP_PPM_IDLE_CANCEL, PEP_PPM_IDLE_CANCEL, pep_x/PEP_PPM_IDLE_CANCEL, *PPEP_PPM_IDLE_CANCEL, PPEP_PPM_IDLE_CANCEL, pep_x/PPEP_PPM_IDLE_CANCEL, kernel.pep_ppm_idle_cancel, PEP_PPM_IDLE_CANCEL structure [Kernel-Mode Driver Architecture], PPEP_PPM_IDLE_CANCEL structure pointer [Kernel-Mode Driver Architecture]"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : pep_x.h
-req.include-header : Pepfx.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with Windows 10.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PEP_PPM_IDLE_CANCEL, *PPEP_PPM_IDLE_CANCEL
+UID: NS:pep_x._PEP_PPM_IDLE_CANCEL
+title: "_PEP_PPM_IDLE_CANCEL"
+author: windows-driver-content
+description: The PEP_PPM_IDLE_CANCEL structure indicates why the processor could not enter the previously selected idle state.
+old-location: kernel\pep_ppm_idle_cancel.htm
+old-project: kernel
+ms.assetid: 29B16A23-A3C1-4994-8F72-403BE32ABBD2
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: "_PEP_PPM_IDLE_CANCEL, PEP_PPM_IDLE_CANCEL, pep_x/PEP_PPM_IDLE_CANCEL, *PPEP_PPM_IDLE_CANCEL, PPEP_PPM_IDLE_CANCEL, pep_x/PPEP_PPM_IDLE_CANCEL, kernel.pep_ppm_idle_cancel, PEP_PPM_IDLE_CANCEL structure [Kernel-Mode Driver Architecture], PPEP_PPM_IDLE_CANCEL structure pointer [Kernel-Mode Driver Architecture]"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: pep_x.h
+req.include-header: Pepfx.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows 10.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	pep_x.h
+apiname:
+-	PEP_PPM_IDLE_CANCEL
+product: Windows
+targetos: Windows
+req.typenames: PEP_PPM_IDLE_CANCEL, *PPEP_PPM_IDLE_CANCEL
 ---
 
 # _PEP_PPM_IDLE_CANCEL structure

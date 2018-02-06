@@ -1,42 +1,47 @@
 ---
-UID : NC:wsk.PFN_WSK_ACCEPT_EVENT
-title : PFN_WSK_ACCEPT_EVENT
-author : windows-driver-content
-description : The WskAcceptEvent event callback function notifies a WSK application that an incoming connection on a listening socket has been accepted.
-old-location : netvista\wskacceptevent.htm
-old-project : netvista
-ms.assetid : 672440f0-810a-4e68-82a5-d038770898c5
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.wskacceptevent, WskAcceptEvent callback function [Network Drivers Starting with Windows Vista], WskAcceptEvent, PFN_WSK_ACCEPT_EVENT, PFN_WSK_ACCEPT_EVENT, wsk/WskAcceptEvent, wskref_5a830348-5fa7-4704-86f2-9d1a953f057b.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wsk.h
-req.include-header : Wsk.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating   systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WNODE_HEADER, *PWNODE_HEADER
-req.product : Windows 10 or later.
+UID: NC:wsk.PFN_WSK_ACCEPT_EVENT
+title: PFN_WSK_ACCEPT_EVENT
+author: windows-driver-content
+description: The WskAcceptEvent event callback function notifies a WSK application that an incoming connection on a listening socket has been accepted.
+old-location: netvista\wskacceptevent.htm
+old-project: netvista
+ms.assetid: 672440f0-810a-4e68-82a5-d038770898c5
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.wskacceptevent, WskAcceptEvent callback function [Network Drivers Starting with Windows Vista], WskAcceptEvent, PFN_WSK_ACCEPT_EVENT, PFN_WSK_ACCEPT_EVENT, wsk/WskAcceptEvent, wskref_5a830348-5fa7-4704-86f2-9d1a953f057b.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wsk.h
+req.include-header: Wsk.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	wsk.h
+apiname:
+-	WskAcceptEvent
+product: Windows
+targetos: Windows
+req.typenames: WNODE_HEADER, *PWNODE_HEADER
+req.product: Windows 10 or later.
 ---
 
 

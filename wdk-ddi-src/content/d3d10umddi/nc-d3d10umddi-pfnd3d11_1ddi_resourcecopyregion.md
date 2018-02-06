@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3D11_1DDI_RESOURCECOPYREGION
-title : PFND3D11_1DDI_RESOURCECOPYREGION
-author : windows-driver-content
-description : Copies a source subresource region to a location on a destination subresource.
-old-location : display\resourcecopyregion_d3d11_1_.htm
-old-project : display
-ms.assetid : CA26FB37-1A4C-4057-90A5-64FFBE289E39
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.resourcecopyregion_d3d11_1_, ResourceConvertRegion(D3D11_1), PFND3D11_1DDI_RESOURCECOPYREGION, pfnResourceConvertRegion, ResourceCopyRegion(D3D11_1) callback function [Display Devices], ResourceCopyRegion(D3D11_1), PFND3D11_1DDI_RESOURCECOPYREGION, PFND3D11_1DDI_RESOURCECOPYREGION, d3d10umddi/ResourceCopyRegion(D3D11_1)
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3D11_1DDI_RESOURCECOPYREGION
+title: PFND3D11_1DDI_RESOURCECOPYREGION
+author: windows-driver-content
+description: Copies a source subresource region to a location on a destination subresource.
+old-location: display\resourcecopyregion_d3d11_1_.htm
+old-project: display
+ms.assetid: CA26FB37-1A4C-4057-90A5-64FFBE289E39
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.resourcecopyregion_d3d11_1_, ResourceConvertRegion(D3D11_1), PFND3D11_1DDI_RESOURCECOPYREGION, pfnResourceConvertRegion, ResourceCopyRegion(D3D11_1) callback function [Display Devices], ResourceCopyRegion(D3D11_1), PFND3D11_1DDI_RESOURCECOPYREGION, PFND3D11_1DDI_RESOURCECOPYREGION, d3d10umddi/ResourceCopyRegion(D3D11_1)
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	D3d10umddi.h
+apiname:
+-	ResourceCopyRegion(D3D11_1)
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

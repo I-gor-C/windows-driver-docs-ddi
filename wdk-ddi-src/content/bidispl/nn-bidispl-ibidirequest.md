@@ -1,41 +1,46 @@
 ---
-UID : NN:bidispl.IBidiRequest
-title : IBidiRequest
-author : windows-driver-content
-description : The IBidiRequest interface allows an application or other objects to compose a bidi request.
-old-location : print\ibidirequest.htm
-old-project : print
-ms.assetid : e7b16853-7f1d-45e4-af5e-4ae9cbb9b191
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : print.ibidirequest, IBidiRequest interface [Print Devices], IBidiRequest interface [Print Devices], described, IBidiRequest, bidispl/IBidiRequest, _win32_IBidiRequest, gdi.ibidirequest
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : bidispl.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows XP
-req.target-min-winversvr : Windows Server 2003
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : bidispl.h
-req.dll : Bidispl.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PMPEG2_TRANSPORT_STRIDE, MPEG2_TRANSPORT_STRIDE"
+UID: NN:bidispl.IBidiRequest
+title: IBidiRequest
+author: windows-driver-content
+description: The IBidiRequest interface allows an application or other objects to compose a bidi request.
+old-location: print\ibidirequest.htm
+old-project: print
+ms.assetid: e7b16853-7f1d-45e4-af5e-4ae9cbb9b191
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: print.ibidirequest, IBidiRequest interface [Print Devices], IBidiRequest interface [Print Devices], described, IBidiRequest, bidispl/IBidiRequest, _win32_IBidiRequest, gdi.ibidirequest
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: bidispl.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows XP
+req.target-min-winversvr: Windows Server 2003
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: bidispl.h
+req.dll: Bidispl.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Bidispl.h
+apiname:
+-	IBidiRequest
+product: Windows
+targetos: Windows
+req.typenames: "*PMPEG2_TRANSPORT_STRIDE, MPEG2_TRANSPORT_STRIDE"
 ---
 
 # IBidiRequest interface

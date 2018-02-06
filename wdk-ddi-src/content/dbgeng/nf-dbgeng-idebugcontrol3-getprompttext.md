@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugControl3.GetPromptText
-title : IDebugControl3::GetPromptText method
-author : windows-driver-content
-description : The GetPromptText method returns the standard prompt text that will be prepended to the formatted output specified in the OutputPrompt and OutputPromptVaList methods.
-old-location : debugger\getprompttext.htm
-old-project : debugger
-ms.assetid : 8d828cf1-991b-4c2d-882b-de56512a6737
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : GetPromptText method [Windows Debugging], debugger.getprompttext, GetPromptText method [Windows Debugging], IDebugControl2 interface, IDebugControl3, dbgeng/IDebugControl2::GetPromptText, GetPromptText method [Windows Debugging], IDebugControl3 interface, IDebugControl3 interface [Windows Debugging], GetPromptText method, IDebugControl3::GetPromptText, dbgeng/IDebugControl3::GetPromptText, IDebugControl2::GetPromptText, IDebugControl_1f566e74-8920-43ce-8e5f-3c467ddb8d8a.xml, IDebugControl interface [Windows Debugging], GetPromptText method, IDebugControl2 interface [Windows Debugging], GetPromptText method, GetPromptText, dbgeng/IDebugControl::GetPromptText, GetPromptText method [Windows Debugging], IDebugControl interface, IDebugControl::GetPromptText
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl3.GetPromptText
+title: IDebugControl3::GetPromptText method
+author: windows-driver-content
+description: The GetPromptText method returns the standard prompt text that will be prepended to the formatted output specified in the OutputPrompt and OutputPromptVaList methods.
+old-location: debugger\getprompttext.htm
+old-project: debugger
+ms.assetid: 8d828cf1-991b-4c2d-882b-de56512a6737
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: GetPromptText method [Windows Debugging], debugger.getprompttext, GetPromptText method [Windows Debugging], IDebugControl2 interface, IDebugControl3, dbgeng/IDebugControl2::GetPromptText, GetPromptText method [Windows Debugging], IDebugControl3 interface, IDebugControl3 interface [Windows Debugging], GetPromptText method, IDebugControl3::GetPromptText, dbgeng/IDebugControl3::GetPromptText, IDebugControl2::GetPromptText, IDebugControl_1f566e74-8920-43ce-8e5f-3c467ddb8d8a.xml, IDebugControl interface [Windows Debugging], GetPromptText method, IDebugControl2 interface [Windows Debugging], GetPromptText method, GetPromptText, dbgeng/IDebugControl::GetPromptText, GetPromptText method [Windows Debugging], IDebugControl interface, IDebugControl::GetPromptText
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl.GetPromptText
+-	IDebugControl2.GetPromptText
+-	IDebugControl3.GetPromptText
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

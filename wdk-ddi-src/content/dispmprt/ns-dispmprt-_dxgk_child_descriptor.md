@@ -1,41 +1,46 @@
 ---
-UID : NS:dispmprt._DXGK_CHILD_DESCRIPTOR
-title : "_DXGK_CHILD_DESCRIPTOR"
-author : windows-driver-content
-description : The DXGK_CHILD_DESCRIPTOR structure holds identification and capability information for an individual child device of the display adapter.
-old-location : display\dxgk_child_descriptor.htm
-old-project : display
-ms.assetid : a814da0c-3712-4e7b-9349-a446d7b32c90
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DmStructs_711f63dc-7ad9-49d8-b83b-5e375764a762.xml, DXGK_CHILD_DESCRIPTOR, *PDXGK_CHILD_DESCRIPTOR, DXGK_CHILD_DESCRIPTOR structure [Display Devices], PDXGK_CHILD_DESCRIPTOR structure pointer [Display Devices], _DXGK_CHILD_DESCRIPTOR, PDXGK_CHILD_DESCRIPTOR, display.dxgk_child_descriptor, dispmprt/DXGK_CHILD_DESCRIPTOR, dispmprt/PDXGK_CHILD_DESCRIPTOR
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : dispmprt.h
-req.include-header : Dispmprt.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDXGK_CHILD_DESCRIPTOR, DXGK_CHILD_DESCRIPTOR"
+UID: NS:dispmprt._DXGK_CHILD_DESCRIPTOR
+title: "_DXGK_CHILD_DESCRIPTOR"
+author: windows-driver-content
+description: The DXGK_CHILD_DESCRIPTOR structure holds identification and capability information for an individual child device of the display adapter.
+old-location: display\dxgk_child_descriptor.htm
+old-project: display
+ms.assetid: a814da0c-3712-4e7b-9349-a446d7b32c90
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DmStructs_711f63dc-7ad9-49d8-b83b-5e375764a762.xml, DXGK_CHILD_DESCRIPTOR, *PDXGK_CHILD_DESCRIPTOR, DXGK_CHILD_DESCRIPTOR structure [Display Devices], PDXGK_CHILD_DESCRIPTOR structure pointer [Display Devices], _DXGK_CHILD_DESCRIPTOR, PDXGK_CHILD_DESCRIPTOR, display.dxgk_child_descriptor, dispmprt/DXGK_CHILD_DESCRIPTOR, dispmprt/PDXGK_CHILD_DESCRIPTOR
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: dispmprt.h
+req.include-header: Dispmprt.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Dispmprt.h
+apiname:
+-	DXGK_CHILD_DESCRIPTOR
+product: Windows
+targetos: Windows
+req.typenames: "*PDXGK_CHILD_DESCRIPTOR, DXGK_CHILD_DESCRIPTOR"
 ---
 
 # _DXGK_CHILD_DESCRIPTOR structure

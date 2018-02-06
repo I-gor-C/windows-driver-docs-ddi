@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugDataSpaces4.FillVirtual
-title : IDebugDataSpaces4::FillVirtual method
-author : windows-driver-content
-description : The FillVirtual method writes a pattern of bytes to the target's virtual memory. The pattern is written repeatedly until the specified memory range is filled.
-old-location : debugger\fillvirtual.htm
-old-project : debugger
-ms.assetid : d55ccd38-00c7-491b-aadf-8b42b5e89600
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : debugger.fillvirtual, IDebugDataSpaces2 interface [Windows Debugging], FillVirtual method, dbgeng/IDebugDataSpaces2::FillVirtual, FillVirtual, IDebugDataSpaces2::FillVirtual, dbgeng/IDebugDataSpaces3::FillVirtual, IDebugDataSpaces4 interface [Windows Debugging], FillVirtual method, IDebugDataSpaces4::FillVirtual, dbgeng/IDebugDataSpaces4::FillVirtual, IDebugDataSpaces_26ed83e1-6084-4826-bf6c-30be250d3e3f.xml, IDebugDataSpaces3 interface [Windows Debugging], FillVirtual method, FillVirtual method [Windows Debugging], IDebugDataSpaces2 interface, FillVirtual method [Windows Debugging], IDebugDataSpaces4 interface, IDebugDataSpaces4, FillVirtual method [Windows Debugging], IDebugDataSpaces3::FillVirtual, FillVirtual method [Windows Debugging], IDebugDataSpaces3 interface
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugDataSpaces4.FillVirtual
+title: IDebugDataSpaces4::FillVirtual method
+author: windows-driver-content
+description: The FillVirtual method writes a pattern of bytes to the target's virtual memory. The pattern is written repeatedly until the specified memory range is filled.
+old-location: debugger\fillvirtual.htm
+old-project: debugger
+ms.assetid: d55ccd38-00c7-491b-aadf-8b42b5e89600
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: debugger.fillvirtual, IDebugDataSpaces2 interface [Windows Debugging], FillVirtual method, dbgeng/IDebugDataSpaces2::FillVirtual, FillVirtual, IDebugDataSpaces2::FillVirtual, dbgeng/IDebugDataSpaces3::FillVirtual, IDebugDataSpaces4 interface [Windows Debugging], FillVirtual method, IDebugDataSpaces4::FillVirtual, dbgeng/IDebugDataSpaces4::FillVirtual, IDebugDataSpaces_26ed83e1-6084-4826-bf6c-30be250d3e3f.xml, IDebugDataSpaces3 interface [Windows Debugging], FillVirtual method, FillVirtual method [Windows Debugging], IDebugDataSpaces2 interface, FillVirtual method [Windows Debugging], IDebugDataSpaces4 interface, IDebugDataSpaces4, FillVirtual method [Windows Debugging], IDebugDataSpaces3::FillVirtual, FillVirtual method [Windows Debugging], IDebugDataSpaces3 interface
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugDataSpaces2.FillVirtual
+-	IDebugDataSpaces3.FillVirtual
+-	IDebugDataSpaces4.FillVirtual
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

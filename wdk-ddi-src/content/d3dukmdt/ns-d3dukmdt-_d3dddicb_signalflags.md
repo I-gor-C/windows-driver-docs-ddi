@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dukmdt._D3DDDICB_SIGNALFLAGS
-title : "_D3DDDICB_SIGNALFLAGS"
-author : windows-driver-content
-description : The D3DDDICB_SIGNALFLAGS structure describes signaling behavior in a call to the pfnSignalSynchronizationObjectCb or pfnSignalSynchronizationObject2Cb functions.
-old-location : display\d3dddicb_signalflags.htm
-old-project : display
-ms.assetid : 1efe98c4-021b-4312-bbcc-52267e528b5f
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DDDICB_SIGNALFLAGS structure [Display Devices], D3DDDICB_SIGNALFLAGS, _D3DDDICB_SIGNALFLAGS, display.d3dddicb_signalflags, D3D_other_Structs_3165168a-bcae-409c-8ca2-741675016ba8.xml, d3dukmdt/D3DDDICB_SIGNALFLAGS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dukmdt.h
-req.include-header : D3dumddi.h, D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDICB_SIGNALFLAGS
+UID: NS:d3dukmdt._D3DDDICB_SIGNALFLAGS
+title: "_D3DDDICB_SIGNALFLAGS"
+author: windows-driver-content
+description: The D3DDDICB_SIGNALFLAGS structure describes signaling behavior in a call to the pfnSignalSynchronizationObjectCb or pfnSignalSynchronizationObject2Cb functions.
+old-location: display\d3dddicb_signalflags.htm
+old-project: display
+ms.assetid: 1efe98c4-021b-4312-bbcc-52267e528b5f
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DDDICB_SIGNALFLAGS structure [Display Devices], D3DDDICB_SIGNALFLAGS, _D3DDDICB_SIGNALFLAGS, display.d3dddicb_signalflags, D3D_other_Structs_3165168a-bcae-409c-8ca2-741675016ba8.xml, d3dukmdt/D3DDDICB_SIGNALFLAGS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dukmdt.h
+req.include-header: D3dumddi.h, D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dukmdt.h
+apiname:
+-	D3DDDICB_SIGNALFLAGS
+product: Windows
+targetos: Windows
+req.typenames: D3DDDICB_SIGNALFLAGS
 ---
 
 # _D3DDDICB_SIGNALFLAGS structure

@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3D11_1DDI_GETCONTENTPROTECTIONCAPS
-title : PFND3D11_1DDI_GETCONTENTPROTECTIONCAPS
-author : windows-driver-content
-description : Queries the available content protection for a specified encryption algorithm and video decoder profile.
-old-location : display\getcontentprotectioncaps.htm
-old-project : display
-ms.assetid : 51024d63-f58c-45a7-bd6f-9f24a6805878
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.getcontentprotectioncaps, pfnGetContentProtectionCaps callback function [Display Devices], pfnGetContentProtectionCaps, PFND3D11_1DDI_GETCONTENTPROTECTIONCAPS, PFND3D11_1DDI_GETCONTENTPROTECTIONCAPS, d3d10umddi/pfnGetContentProtectionCaps
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3D11_1DDI_GETCONTENTPROTECTIONCAPS
+title: PFND3D11_1DDI_GETCONTENTPROTECTIONCAPS
+author: windows-driver-content
+description: Queries the available content protection for a specified encryption algorithm and video decoder profile.
+old-location: display\getcontentprotectioncaps.htm
+old-project: display
+ms.assetid: 51024d63-f58c-45a7-bd6f-9f24a6805878
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.getcontentprotectioncaps, pfnGetContentProtectionCaps callback function [Display Devices], pfnGetContentProtectionCaps, PFND3D11_1DDI_GETCONTENTPROTECTIONCAPS, PFND3D11_1DDI_GETCONTENTPROTECTIONCAPS, d3d10umddi/pfnGetContentProtectionCaps
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	D3d10umddi.h
+apiname:
+-	pfnGetContentProtectionCaps
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

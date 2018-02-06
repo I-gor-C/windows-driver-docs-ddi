@@ -1,42 +1,50 @@
 ---
-UID : NF:wdfdevice.WdfDeviceQueryProperty
-title : WdfDeviceQueryProperty function
-author : windows-driver-content
-description : The WdfDeviceQueryProperty method retrieves a specified device property.
-old-location : wdf\wdfdevicequeryproperty.htm
-old-project : wdf
-ms.assetid : be05a5b5-e895-402b-bf0a-cbdb75fdef1d
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WdfDeviceQueryProperty method, wdf.wdfdevicequeryproperty, WdfDeviceQueryProperty, kmdf.wdfdevicequeryproperty, DFDeviceObjectGeneralRef_e3f58989-ddd0-4402-94bf-418481869972.xml, PFN_WDFDEVICEQUERYPROPERTY, wdfdevice/WdfDeviceQueryProperty
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfdevice.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_STATE_NOTIFICATION_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfdevice.WdfDeviceQueryProperty
+title: WdfDeviceQueryProperty function
+author: windows-driver-content
+description: The WdfDeviceQueryProperty method retrieves a specified device property.
+old-location: wdf\wdfdevicequeryproperty.htm
+old-project: wdf
+ms.assetid: be05a5b5-e895-402b-bf0a-cbdb75fdef1d
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WdfDeviceQueryProperty method, wdf.wdfdevicequeryproperty, WdfDeviceQueryProperty, kmdf.wdfdevicequeryproperty, DFDeviceObjectGeneralRef_e3f58989-ddd0-4402-94bf-418481869972.xml, PFN_WDFDEVICEQUERYPROPERTY, wdfdevice/WdfDeviceQueryProperty
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfdevice.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+-	WUDFx02000.dll
+-	WUDFx02000.dll.dll
+apiname:
+-	WdfDeviceQueryProperty
+product: Windows
+targetos: Windows
+req.typenames: WDF_STATE_NOTIFICATION_TYPE
+req.product: Windows 10 or later.
 ---
 
 

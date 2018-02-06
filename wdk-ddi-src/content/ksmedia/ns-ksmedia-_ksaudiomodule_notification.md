@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia._KSAUDIOMODULE_NOTIFICATION
-title : "_KSAUDIOMODULE_NOTIFICATION"
-author : windows-driver-content
-description : The KSAUDIOMODULE_NOTIFICATION structure describes the properties associated with audio modules change notification.
-old-location : audio\ksaudiomodule_notification.htm
-old-project : audio
-ms.assetid : 92A9462C-0E8C-4012-9374-3437BB220502
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : ksmedia/PKSAUDIOMODULE_NOTIFICATION, KSAUDIOMODULE_NOTIFICATION structure [Audio Devices], *PKSAUDIOMODULE_NOTIFICATION, PKSAUDIOMODULE_NOTIFICATION, PKSAUDIOMODULE_NOTIFICATION structure pointer [Audio Devices], audio.ksaudiomodule_notification, _KSAUDIOMODULE_NOTIFICATION, KSAUDIOMODULE_NOTIFICATION, ksmedia/KSAUDIOMODULE_NOTIFICATION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10, version 1703
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKSAUDIOMODULE_NOTIFICATION, KSAUDIOMODULE_NOTIFICATION"
+UID: NS:ksmedia._KSAUDIOMODULE_NOTIFICATION
+title: "_KSAUDIOMODULE_NOTIFICATION"
+author: windows-driver-content
+description: The KSAUDIOMODULE_NOTIFICATION structure describes the properties associated with audio modules change notification.
+old-location: audio\ksaudiomodule_notification.htm
+old-project: audio
+ms.assetid: 92A9462C-0E8C-4012-9374-3437BB220502
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: ksmedia/PKSAUDIOMODULE_NOTIFICATION, KSAUDIOMODULE_NOTIFICATION structure [Audio Devices], *PKSAUDIOMODULE_NOTIFICATION, PKSAUDIOMODULE_NOTIFICATION, PKSAUDIOMODULE_NOTIFICATION structure pointer [Audio Devices], audio.ksaudiomodule_notification, _KSAUDIOMODULE_NOTIFICATION, KSAUDIOMODULE_NOTIFICATION, ksmedia/KSAUDIOMODULE_NOTIFICATION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10, version 1703
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ksmedia.h
+apiname:
+-	KSAUDIOMODULE_NOTIFICATION
+product: Windows
+targetos: Windows
+req.typenames: "*PKSAUDIOMODULE_NOTIFICATION, KSAUDIOMODULE_NOTIFICATION"
 ---
 
 # _KSAUDIOMODULE_NOTIFICATION structure

@@ -1,41 +1,46 @@
 ---
-UID : NC:mrx.PMRX_CREATE_V_NET_ROOT
-title : PMRX_CREATE_V_NET_ROOT
-author : windows-driver-content
-description : The MRxCreateVNetRoot routine is called by RDBSS to request that the network mini-redirector create a V_NET_ROOT structure and, in some cases, a NET_ROOT structure.
-old-location : ifsk\mrxcreatevnetroot.htm
-old-project : ifsk
-ms.assetid : 8cd5aa01-c814-4737-9088-0361e6ee9a61
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.mrxcreatevnetroot, MRxCreateVNetRoot routine [Installable File System Drivers], MRxCreateVNetRoot, PMRX_CREATE_V_NET_ROOT, PMRX_CREATE_V_NET_ROOT, mrx/MRxCreateVNetRoot, mrxref_8d77acec-f7a5-40c6-8543-421c5c1f79f5.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : mrx.h
-req.include-header : Mrx.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SetDSMCounters_IN, *PSetDSMCounters_IN
+UID: NC:mrx.PMRX_CREATE_V_NET_ROOT
+title: PMRX_CREATE_V_NET_ROOT
+author: windows-driver-content
+description: The MRxCreateVNetRoot routine is called by RDBSS to request that the network mini-redirector create a V_NET_ROOT structure and, in some cases, a NET_ROOT structure.
+old-location: ifsk\mrxcreatevnetroot.htm
+old-project: ifsk
+ms.assetid: 8cd5aa01-c814-4737-9088-0361e6ee9a61
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.mrxcreatevnetroot, MRxCreateVNetRoot routine [Installable File System Drivers], MRxCreateVNetRoot, PMRX_CREATE_V_NET_ROOT, PMRX_CREATE_V_NET_ROOT, mrx/MRxCreateVNetRoot, mrxref_8d77acec-f7a5-40c6-8543-421c5c1f79f5.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: mrx.h
+req.include-header: Mrx.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	mrx.h
+apiname:
+-	MRxCreateVNetRoot
+product: Windows
+targetos: Windows
+req.typenames: SetDSMCounters_IN, *PSetDSMCounters_IN
 ---
 
 

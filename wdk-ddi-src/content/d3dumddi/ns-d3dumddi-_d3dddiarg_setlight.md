@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._D3DDDIARG_SETLIGHT
-title : "_D3DDDIARG_SETLIGHT"
-author : windows-driver-content
-description : The D3DDDIARG_SETLIGHT structure describes how to set light properties.
-old-location : display\d3dddiarg_setlight.htm
-old-project : display
-ms.assetid : 91da1c7a-aff5-4ece-b18d-14bd41e95464
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.d3dddiarg_setlight, D3DDDIARG_SETLIGHT structure [Display Devices], _D3DDDIARG_SETLIGHT, UMDisplayDriver_param_Structs_85eaa308-4edf-44ee-9235-e8637c10aa35.xml, d3dumddi/D3DDDIARG_SETLIGHT, D3DDDIARG_SETLIGHT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDIARG_SETLIGHT
+UID: NS:d3dumddi._D3DDDIARG_SETLIGHT
+title: "_D3DDDIARG_SETLIGHT"
+author: windows-driver-content
+description: The D3DDDIARG_SETLIGHT structure describes how to set light properties.
+old-location: display\d3dddiarg_setlight.htm
+old-project: display
+ms.assetid: 91da1c7a-aff5-4ece-b18d-14bd41e95464
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.d3dddiarg_setlight, D3DDDIARG_SETLIGHT structure [Display Devices], _D3DDDIARG_SETLIGHT, UMDisplayDriver_param_Structs_85eaa308-4edf-44ee-9235-e8637c10aa35.xml, d3dumddi/D3DDDIARG_SETLIGHT, D3DDDIARG_SETLIGHT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	D3DDDIARG_SETLIGHT
+product: Windows
+targetos: Windows
+req.typenames: D3DDDIARG_SETLIGHT
 ---
 
 # _D3DDDIARG_SETLIGHT structure

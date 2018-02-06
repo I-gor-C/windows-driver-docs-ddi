@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltRegisterFilter
-title : FltRegisterFilter function
-author : windows-driver-content
-description : FltRegisterFilter registers a minifilter driver.
-old-location : ifsk\fltregisterfilter.htm
-old-project : ifsk
-ms.assetid : 46e96f85-d368-40cd-9530-81959d20b750
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltApiRef_p_to_z_41e3002c-d720-4e0f-81cb-36cbc215cdba.xml, fltkernel/FltRegisterFilter, FltRegisterFilter, ifsk.fltregisterfilter, FltRegisterFilter function [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltRegisterFilter
+title: FltRegisterFilter function
+author: windows-driver-content
+description: FltRegisterFilter registers a minifilter driver.
+old-location: ifsk\fltregisterfilter.htm
+old-project: ifsk
+ms.assetid: 46e96f85-d368-40cd-9530-81959d20b750
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltApiRef_p_to_z_41e3002c-d720-4e0f-81cb-36cbc215cdba.xml, fltkernel/FltRegisterFilter, FltRegisterFilter, ifsk.fltregisterfilter, FltRegisterFilter function [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltRegisterFilter
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

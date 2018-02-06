@@ -1,42 +1,47 @@
 ---
-UID : NN:wudfddi.IWDFFile3
-title : IWDFFile3
-author : windows-driver-content
-description : Drivers obtain the IWDFFile3 interface by calling IWDFFile::QueryInterface.
-old-location : wdf\iwdffile3.htm
-old-project : wdf
-ms.assetid : 67F55A00-2DE4-4ECE-8DAF-BBCBB156454E
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.iwdffile3, IWDFFile3 interface, IWDFFile3 interface, described, IWDFFile3, wudfddi/IWDFFile3, umdf.iwdffile3
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : wudfddi.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.11
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NN:wudfddi.IWDFFile3
+title: IWDFFile3
+author: windows-driver-content
+description: Drivers obtain the IWDFFile3 interface by calling IWDFFile::QueryInterface.
+old-location: wdf\iwdffile3.htm
+old-project: wdf
+ms.assetid: 67F55A00-2DE4-4ECE-8DAF-BBCBB156454E
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.iwdffile3, IWDFFile3 interface, IWDFFile3 interface, described, IWDFFile3, wudfddi/IWDFFile3, umdf.iwdffile3
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: wudfddi.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.11
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Wudfddi.h
+apiname:
+-	IWDFFile3
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 # IWDFFile3 interface

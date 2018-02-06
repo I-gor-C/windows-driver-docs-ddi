@@ -1,42 +1,47 @@
 ---
-UID : NS:storport._VIRTUAL_HW_INITIALIZATION_DATA
-title : "_VIRTUAL_HW_INITIALIZATION_DATA"
-author : windows-driver-content
-description : The VIRTUAL_HW_INITIALIZATION_DATA structure contains information particular to each virtual miniport driver.
-old-location : storage\virtual_hw_initialization_data.htm
-old-project : storage
-ms.assetid : 10e7e097-ed84-4200-b7b6-6a838a058fd2
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storport/PVIRTUAL_HW_INITIALIZATION_DATA, PVIRTUAL_HW_INITIALIZATION_DATA, storport/VIRTUAL_HW_INITIALIZATION_DATA, VIRTUAL_HW_INITIALIZATION_DATA structure [Storage Devices], storage.virtual_hw_initialization_data, _VIRTUAL_HW_INITIALIZATION_DATA, VIRTUAL_HW_INITIALIZATION_DATA, PVIRTUAL_HW_INITIALIZATION_DATA structure pointer [Storage Devices], *PVIRTUAL_HW_INITIALIZATION_DATA, structs-virtual_afc3c543-a34f-4853-b67b-06d57d0350b6.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIRTUAL_HW_INITIALIZATION_DATA, *PVIRTUAL_HW_INITIALIZATION_DATA
-req.product : Windows 10 or later.
+UID: NS:storport._VIRTUAL_HW_INITIALIZATION_DATA
+title: "_VIRTUAL_HW_INITIALIZATION_DATA"
+author: windows-driver-content
+description: The VIRTUAL_HW_INITIALIZATION_DATA structure contains information particular to each virtual miniport driver.
+old-location: storage\virtual_hw_initialization_data.htm
+old-project: storage
+ms.assetid: 10e7e097-ed84-4200-b7b6-6a838a058fd2
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storport/PVIRTUAL_HW_INITIALIZATION_DATA, PVIRTUAL_HW_INITIALIZATION_DATA, storport/VIRTUAL_HW_INITIALIZATION_DATA, VIRTUAL_HW_INITIALIZATION_DATA structure [Storage Devices], storage.virtual_hw_initialization_data, _VIRTUAL_HW_INITIALIZATION_DATA, VIRTUAL_HW_INITIALIZATION_DATA, PVIRTUAL_HW_INITIALIZATION_DATA structure pointer [Storage Devices], *PVIRTUAL_HW_INITIALIZATION_DATA, structs-virtual_afc3c543-a34f-4853-b67b-06d57d0350b6.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	storport.h
+apiname:
+-	VIRTUAL_HW_INITIALIZATION_DATA
+product: Windows
+targetos: Windows
+req.typenames: VIRTUAL_HW_INITIALIZATION_DATA, *PVIRTUAL_HW_INITIALIZATION_DATA
+req.product: Windows 10 or later.
 ---
 
 # _VIRTUAL_HW_INITIALIZATION_DATA structure

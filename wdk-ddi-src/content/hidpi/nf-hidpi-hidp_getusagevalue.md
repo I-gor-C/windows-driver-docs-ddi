@@ -1,41 +1,47 @@
 ---
-UID : NF:hidpi.HidP_GetUsageValue
-title : HidP_GetUsageValue function
-author : windows-driver-content
-description : The HidP_GetUsageValue routine extracts the data associated with a HID control value that matches the selection criteria in a HID report.
-old-location : hid\hidp_getusagevalue.htm
-old-project : hid
-ms.assetid : 5f2d1536-4676-4afe-aa5c-08e7c74d1dd2
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : hid.hidp_getusagevalue, hidfunc_d046d7e6-bd4c-4d80-80a8-f8e2d000eeee.xml, hidpi/HidP_GetUsageValue, HidP_GetUsageValue routine [Human Input Devices], HidP_GetUsageValue
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : hidpi.h
-req.include-header : Hidpi.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 2000 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Hidparse.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HIDP_REPORT_TYPE
+UID: NF:hidpi.HidP_GetUsageValue
+title: HidP_GetUsageValue function
+author: windows-driver-content
+description: The HidP_GetUsageValue routine extracts the data associated with a HID control value that matches the selection criteria in a HID report.
+old-location: hid\hidp_getusagevalue.htm
+old-project: hid
+ms.assetid: 5f2d1536-4676-4afe-aa5c-08e7c74d1dd2
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: hid.hidp_getusagevalue, hidfunc_d046d7e6-bd4c-4d80-80a8-f8e2d000eeee.xml, hidpi/HidP_GetUsageValue, HidP_GetUsageValue routine [Human Input Devices], HidP_GetUsageValue
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: hidpi.h
+req.include-header: Hidpi.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 2000 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Hidparse.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Hidparse.lib
+-	Hidparse.dll
+apiname:
+-	HidP_GetUsageValue
+product: Windows
+targetos: Windows
+req.typenames: HIDP_REPORT_TYPE
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NS:video._VPOSVERSIONINFO
-title : "_VPOSVERSIONINFO"
-author : windows-driver-content
-description : The VPOSVERSIONINFO structure contains version information about the currently running operating system.
-old-location : display\vposversioninfo.htm
-old-project : display
-ms.assetid : b6335df5-81d9-4a00-8e97-0ebebb987d32
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : video/PVPOSVERSIONINFO, VPOSVERSIONINFO, VPOSVERSIONINFO structure [Display Devices], PVPOSVERSIONINFO structure pointer [Display Devices], Video_Structs_893105be-4f14-4903-aae1-85ffe8ef8a2b.xml, *PVPOSVERSIONINFO, PVPOSVERSIONINFO, _VPOSVERSIONINFO, video/VPOSVERSIONINFO, display.vposversioninfo
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VPOSVERSIONINFO, *PVPOSVERSIONINFO
-req.product : Windows 10 or later.
+UID: NS:video._VPOSVERSIONINFO
+title: "_VPOSVERSIONINFO"
+author: windows-driver-content
+description: The VPOSVERSIONINFO structure contains version information about the currently running operating system.
+old-location: display\vposversioninfo.htm
+old-project: display
+ms.assetid: b6335df5-81d9-4a00-8e97-0ebebb987d32
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: video/PVPOSVERSIONINFO, VPOSVERSIONINFO, VPOSVERSIONINFO structure [Display Devices], PVPOSVERSIONINFO structure pointer [Display Devices], Video_Structs_893105be-4f14-4903-aae1-85ffe8ef8a2b.xml, *PVPOSVERSIONINFO, PVPOSVERSIONINFO, _VPOSVERSIONINFO, video/VPOSVERSIONINFO, display.vposversioninfo
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	video.h
+apiname:
+-	VPOSVERSIONINFO
+product: Windows
+targetos: Windows
+req.typenames: VPOSVERSIONINFO, *PVPOSVERSIONINFO
+req.product: Windows 10 or later.
 ---
 
 # _VPOSVERSIONINFO structure

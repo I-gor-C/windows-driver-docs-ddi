@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsPinGetReferenceClockInterface
-title : KsPinGetReferenceClockInterface function
-author : windows-driver-content
-description : The KsPinGetReferenceClockInterface function returns a COM style interface to the reference clock associated with Pin. This interface pointer will be an IKsReferenceClock interface.
-old-location : stream\kspingetreferenceclockinterface.htm
-old-project : stream
-ms.assetid : 49c78b4e-aa3a-4c4b-8720-0302a537c84c
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ks/KsPinGetReferenceClockInterface, KsPinGetReferenceClockInterface function [Streaming Media Devices], avfunc_7434698b-f441-4d80-91db-8fa5d7d10c60.xml, stream.kspingetreferenceclockinterface, KsPinGetReferenceClockInterface
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsPinGetReferenceClockInterface
+title: KsPinGetReferenceClockInterface function
+author: windows-driver-content
+description: The KsPinGetReferenceClockInterface function returns a COM style interface to the reference clock associated with Pin. This interface pointer will be an IKsReferenceClock interface.
+old-location: stream\kspingetreferenceclockinterface.htm
+old-project: stream
+ms.assetid: 49c78b4e-aa3a-4c4b-8720-0302a537c84c
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ks/KsPinGetReferenceClockInterface, KsPinGetReferenceClockInterface function [Streaming Media Devices], avfunc_7434698b-f441-4d80-91db-8fa5d7d10c60.xml, stream.kspingetreferenceclockinterface, KsPinGetReferenceClockInterface
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsPinGetReferenceClockInterface
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

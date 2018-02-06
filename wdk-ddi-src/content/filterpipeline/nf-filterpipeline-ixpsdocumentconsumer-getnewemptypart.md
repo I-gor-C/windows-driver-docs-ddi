@@ -1,41 +1,46 @@
 ---
-UID : NF:filterpipeline.IXpsDocumentConsumer.GetNewEmptyPart
-title : IXpsDocumentConsumer::GetNewEmptyPart method
-author : windows-driver-content
-description : The GetNewEmptyPart method creates a new XPS part.
-old-location : print\ixpsdocumentconsumer_getnewemptypart.htm
-old-project : print
-ms.assetid : cc0911da-46ca-4cf7-a59e-da0d53e1d10c
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : IXpsDocumentConsumer::GetNewEmptyPart, GetNewEmptyPart method [Print Devices], GetNewEmptyPart method [Print Devices], IXpsDocumentConsumer interface, IXpsDocumentConsumer, filterpipeline/IXpsDocumentConsumer::GetNewEmptyPart, print.ixpsdocumentconsumer_getnewemptypart, IXpsDocumentConsumer interface [Print Devices], GetNewEmptyPart method, filterpipeline_c4770528-f57a-4197-b60b-5b780d5e7752.xml, GetNewEmptyPart
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : filterpipeline.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : Filterpipeline.idl
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : filterpipeline.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:filterpipeline.IXpsDocumentConsumer.GetNewEmptyPart
+title: IXpsDocumentConsumer::GetNewEmptyPart method
+author: windows-driver-content
+description: The GetNewEmptyPart method creates a new XPS part.
+old-location: print\ixpsdocumentconsumer_getnewemptypart.htm
+old-project: print
+ms.assetid: cc0911da-46ca-4cf7-a59e-da0d53e1d10c
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: IXpsDocumentConsumer::GetNewEmptyPart, GetNewEmptyPart method [Print Devices], GetNewEmptyPart method [Print Devices], IXpsDocumentConsumer interface, IXpsDocumentConsumer, filterpipeline/IXpsDocumentConsumer::GetNewEmptyPart, print.ixpsdocumentconsumer_getnewemptypart, IXpsDocumentConsumer interface [Print Devices], GetNewEmptyPart method, filterpipeline_c4770528-f57a-4197-b60b-5b780d5e7752.xml, GetNewEmptyPart
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: filterpipeline.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: Filterpipeline.idl
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: filterpipeline.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	filterpipeline.h
+apiname:
+-	IXpsDocumentConsumer.GetNewEmptyPart
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

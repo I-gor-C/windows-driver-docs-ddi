@@ -1,42 +1,47 @@
 ---
-UID : NC:vhf.EVT_VHF_READY_FOR_NEXT_READ_REPORT
-title : EVT_VHF_READY_FOR_NEXT_READ_REPORT
-author : windows-driver-content
-description : The HID source driver implements this event call back function to use its buffering scheme for HID Input Reports, and wants to get notified when the next report can be submitted to VHF.
-old-location : hid\evtvhfreadyfornextreadreport.htm
-old-project : hid
-ms.assetid : 02DDBE00-C342-474B-8D06-FBB929BA4760
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : hid.evtvhfreadyfornextreadreport, EvtVhfReadyForNextReadReport callback function [Human Input Devices], EvtVhfReadyForNextReadReport, EVT_VHF_READY_FOR_NEXT_READ_REPORT, EVT_VHF_READY_FOR_NEXT_READ_REPORT, vhf/EvtVhfReadyForNextReadReport
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : vhf.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : None supported
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR, *PUSB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR
-req.product : Windows 10 or later.
+UID: NC:vhf.EVT_VHF_READY_FOR_NEXT_READ_REPORT
+title: EVT_VHF_READY_FOR_NEXT_READ_REPORT
+author: windows-driver-content
+description: The HID source driver implements this event call back function to use its buffering scheme for HID Input Reports, and wants to get notified when the next report can be submitted to VHF.
+old-location: hid\evtvhfreadyfornextreadreport.htm
+old-project: hid
+ms.assetid: 02DDBE00-C342-474B-8D06-FBB929BA4760
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: hid.evtvhfreadyfornextreadreport, EvtVhfReadyForNextReadReport callback function [Human Input Devices], EvtVhfReadyForNextReadReport, EVT_VHF_READY_FOR_NEXT_READ_REPORT, EVT_VHF_READY_FOR_NEXT_READ_REPORT, vhf/EvtVhfReadyForNextReadReport
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: vhf.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: None supported
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	vhf.h
+apiname:
+-	EvtVhfReadyForNextReadReport
+product: Windows
+targetos: Windows
+req.typenames: USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR, *PUSB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR
+req.product: Windows 10 or later.
 ---
 
 

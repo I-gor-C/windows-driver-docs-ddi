@@ -1,42 +1,47 @@
 ---
-UID : NF:wdbgexts.GetFieldValue
-title : GetFieldValue macro
-author : windows-driver-content
-description : The GetFieldValue macro is a thin wrapper around the GetFieldData function. It is provided as a convenience for reading the value of a member in a structure.
-old-location : debugger\getfieldvalue.htm
-old-project : debugger
-ms.assetid : 4655bac3-997e-43d9-b628-b4292ae5509d
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : WdbgExts_Ref_68aca028-5d92-48a3-845d-f9eb480a2c40.xml, GetFieldValue, debugger.getfieldvalue, wdbgexts/GetFieldValue, GetFieldValue function [Windows Debugging]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : macro
-req.header : wdbgexts.h
-req.include-header : Wdbgexts.h, Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wdbgexts.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXT_TDOP
-req.product : Windows 10 or later.
+UID: NF:wdbgexts.GetFieldValue
+title: GetFieldValue macro
+author: windows-driver-content
+description: The GetFieldValue macro is a thin wrapper around the GetFieldData function. It is provided as a convenience for reading the value of a member in a structure.
+old-location: debugger\getfieldvalue.htm
+old-project: debugger
+ms.assetid: 4655bac3-997e-43d9-b628-b4292ae5509d
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: WdbgExts_Ref_68aca028-5d92-48a3-845d-f9eb480a2c40.xml, GetFieldValue, debugger.getfieldvalue, wdbgexts/GetFieldValue, GetFieldValue function [Windows Debugging]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: macro
+req.header: wdbgexts.h
+req.include-header: Wdbgexts.h, Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wdbgexts.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdbgexts.h
+apiname:
+-	GetFieldValue
+product: Windows
+targetos: Windows
+req.typenames: EXT_TDOP
+req.product: Windows 10 or later.
 ---
 
 

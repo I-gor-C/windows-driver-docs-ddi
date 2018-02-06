@@ -1,42 +1,48 @@
 ---
-UID : NF:ucmmanager.UcmConnectorDataDirectionChanged
-title : UcmConnectorDataDirectionChanged function
-author : windows-driver-content
-description : Notifies the USB connector manager framework extension (UcmCx) with the new data role of a change in data role.
-old-location : buses\ucmconnectordatadirectionchanged.htm
-old-project : usbref
-ms.assetid : 62ED07DF-2DDC-42FD-80C3-75AB3DE839AD
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : UcmConnectorDataDirectionChanged, buses.ucmconnectordatadirectionchanged, ucmmanager/UcmConnectorDataDirectionChanged, UcmConnectorDataDirectionChanged method [Buses]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ucmmanager.h
-req.include-header : Ucmcx.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 1.15
-req.umdf-ver : 2.15
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : UcmCxstub.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPORT_DATA_1, PORT_DATA_1"
-req.product : Windows 10 or later.
+UID: NF:ucmmanager.UcmConnectorDataDirectionChanged
+title: UcmConnectorDataDirectionChanged function
+author: windows-driver-content
+description: Notifies the USB connector manager framework extension (UcmCx) with the new data role of a change in data role.
+old-location: buses\ucmconnectordatadirectionchanged.htm
+old-project: usbref
+ms.assetid: 62ED07DF-2DDC-42FD-80C3-75AB3DE839AD
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: UcmConnectorDataDirectionChanged, buses.ucmconnectordatadirectionchanged, ucmmanager/UcmConnectorDataDirectionChanged, UcmConnectorDataDirectionChanged method [Buses]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ucmmanager.h
+req.include-header: Ucmcx.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 1.15
+req.umdf-ver: 2.15
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: UcmCxstub.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	UcmCxstub.lib
+-	UcmCxstub.dll
+apiname:
+-	UcmConnectorDataDirectionChanged
+product: Windows
+targetos: Windows
+req.typenames: "*PPORT_DATA_1, PORT_DATA_1"
+req.product: Windows 10 or later.
 ---
 
 

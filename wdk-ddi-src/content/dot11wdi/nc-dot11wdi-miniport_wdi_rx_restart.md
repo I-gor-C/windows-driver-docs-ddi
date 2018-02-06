@@ -1,41 +1,46 @@
 ---
-UID : NC:dot11wdi.MINIPORT_WDI_RX_RESTART
-title : MINIPORT_WDI_RX_RESTART
-author : windows-driver-content
-description : The MiniportWdiRxRestart handler function configures the RxEngine to restart indicating data traffic. This is issued following a MiniportWdiRxStop.
-old-location : netvista\miniportwdirxrestart.htm
-old-project : netvista
-ms.assetid : 465716C7-A157-4B06-BAE2-F18A08126040
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.miniportwdirxrestart, MiniportWdiRxRestart callback function [Network Drivers Starting with Windows Vista], MiniportWdiRxRestart, MINIPORT_WDI_RX_RESTART, MINIPORT_WDI_RX_RESTART, dot11wdi/MiniportWdiRxRestart
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : dot11wdi.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SYNTH_STATS, *PSYNTH_STATS
+UID: NC:dot11wdi.MINIPORT_WDI_RX_RESTART
+title: MINIPORT_WDI_RX_RESTART
+author: windows-driver-content
+description: The MiniportWdiRxRestart handler function configures the RxEngine to restart indicating data traffic. This is issued following a MiniportWdiRxStop.
+old-location: netvista\miniportwdirxrestart.htm
+old-project: netvista
+ms.assetid: 465716C7-A157-4B06-BAE2-F18A08126040
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.miniportwdirxrestart, MiniportWdiRxRestart callback function [Network Drivers Starting with Windows Vista], MiniportWdiRxRestart, MINIPORT_WDI_RX_RESTART, MINIPORT_WDI_RX_RESTART, dot11wdi/MiniportWdiRxRestart
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: dot11wdi.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	dot11wdi.h
+apiname:
+-	MiniportWdiRxRestart
+product: Windows
+targetos: Windows
+req.typenames: SYNTH_STATS, *PSYNTH_STATS
 ---
 
 

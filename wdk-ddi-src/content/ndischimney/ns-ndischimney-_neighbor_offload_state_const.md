@@ -1,41 +1,46 @@
 ---
-UID : NS:ndischimney._NEIGHBOR_OFFLOAD_STATE_CONST
-title : "_NEIGHBOR_OFFLOAD_STATE_CONST"
-author : windows-driver-content
-description : The NEIGHBOR_OFFLOAD_STATE_CONST structure contains the constant variables of a neighbor state object.
-old-location : netvista\neighbor_offload_state_const.htm
-old-project : netvista
-ms.assetid : 1c79a3d6-c365-4740-a2e0-94333b70d8cc
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : tcp_chim_struct_3e21fef6-9a3c-4eba-b6fb-31af70a3eaaa.xml, netvista.neighbor_offload_state_const, PNEIGHBOR_OFFLOAD_STATE_CONST structure pointer [Network Drivers Starting with Windows Vista], NEIGHBOR_OFFLOAD_STATE_CONST, *PNEIGHBOR_OFFLOAD_STATE_CONST, ndischimney/PNEIGHBOR_OFFLOAD_STATE_CONST, PNEIGHBOR_OFFLOAD_STATE_CONST, ndischimney/NEIGHBOR_OFFLOAD_STATE_CONST, NEIGHBOR_OFFLOAD_STATE_CONST structure [Network Drivers Starting with Windows Vista], _NEIGHBOR_OFFLOAD_STATE_CONST
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndischimney.h
-req.include-header : Ndischimney.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NEIGHBOR_OFFLOAD_STATE_CONST, *PNEIGHBOR_OFFLOAD_STATE_CONST
+UID: NS:ndischimney._NEIGHBOR_OFFLOAD_STATE_CONST
+title: "_NEIGHBOR_OFFLOAD_STATE_CONST"
+author: windows-driver-content
+description: The NEIGHBOR_OFFLOAD_STATE_CONST structure contains the constant variables of a neighbor state object.
+old-location: netvista\neighbor_offload_state_const.htm
+old-project: netvista
+ms.assetid: 1c79a3d6-c365-4740-a2e0-94333b70d8cc
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: tcp_chim_struct_3e21fef6-9a3c-4eba-b6fb-31af70a3eaaa.xml, netvista.neighbor_offload_state_const, PNEIGHBOR_OFFLOAD_STATE_CONST structure pointer [Network Drivers Starting with Windows Vista], NEIGHBOR_OFFLOAD_STATE_CONST, *PNEIGHBOR_OFFLOAD_STATE_CONST, ndischimney/PNEIGHBOR_OFFLOAD_STATE_CONST, PNEIGHBOR_OFFLOAD_STATE_CONST, ndischimney/NEIGHBOR_OFFLOAD_STATE_CONST, NEIGHBOR_OFFLOAD_STATE_CONST structure [Network Drivers Starting with Windows Vista], _NEIGHBOR_OFFLOAD_STATE_CONST
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndischimney.h
+req.include-header: Ndischimney.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndischimney.h
+apiname:
+-	NEIGHBOR_OFFLOAD_STATE_CONST
+product: Windows
+targetos: Windows
+req.typenames: NEIGHBOR_OFFLOAD_STATE_CONST, *PNEIGHBOR_OFFLOAD_STATE_CONST
 ---
 
 # _NEIGHBOR_OFFLOAD_STATE_CONST structure

@@ -1,41 +1,46 @@
 ---
-UID : NI:bthioctl.IOCTL_BTH_SDP_SUBMIT_RECORD
-title : IOCTL_BTH_SDP_SUBMIT_RECORD
-author : windows-driver-content
-description : The IOCTL_BTH_SDP_SUBMIT_RECORD request allows a profile driver to add an SDP record to the local SDP server, allowing the client to advertise that a service is available on the local computer.
-old-location : bltooth\ioctl_bth_sdp_submit_record.htm
-old-project : bltooth
-ms.assetid : ec6739d3-5956-4cc2-90ff-75c67c0a84e7
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : bltooth.ioctl_bth_sdp_submit_record, IOCTL_BTH_SDP_SUBMIT_RECORD control code [Bluetooth Devices], IOCTL_BTH_SDP_SUBMIT_RECORD, bthioctl/IOCTL_BTH_SDP_SUBMIT_RECORD, bth_ioctls_e32ecb99-7a41-4405-844e-8c1038d3cb89.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : bthioctl.h
-req.include-header : Bthioctl.h
-req.target-type : Windows
-req.target-min-winverclnt : Versions:\_Supported in Windows Vista, and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= PASSIVE_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HFP_BYPASS_CODEC_ID_V1, *PHFP_BYPASS_CODEC_ID_V1
+UID: NI:bthioctl.IOCTL_BTH_SDP_SUBMIT_RECORD
+title: IOCTL_BTH_SDP_SUBMIT_RECORD
+author: windows-driver-content
+description: The IOCTL_BTH_SDP_SUBMIT_RECORD request allows a profile driver to add an SDP record to the local SDP server, allowing the client to advertise that a service is available on the local computer.
+old-location: bltooth\ioctl_bth_sdp_submit_record.htm
+old-project: bltooth
+ms.assetid: ec6739d3-5956-4cc2-90ff-75c67c0a84e7
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: bltooth.ioctl_bth_sdp_submit_record, IOCTL_BTH_SDP_SUBMIT_RECORD control code [Bluetooth Devices], IOCTL_BTH_SDP_SUBMIT_RECORD, bthioctl/IOCTL_BTH_SDP_SUBMIT_RECORD, bth_ioctls_e32ecb99-7a41-4405-844e-8c1038d3cb89.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: bthioctl.h
+req.include-header: Bthioctl.h
+req.target-type: Windows
+req.target-min-winverclnt: Versions:\_Supported in Windows Vista, and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= PASSIVE_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Bthioctl.h
+apiname:
+-	IOCTL_BTH_SDP_SUBMIT_RECORD
+product: Windows
+targetos: Windows
+req.typenames: HFP_BYPASS_CODEC_ID_V1, *PHFP_BYPASS_CODEC_ID_V1
 ---
 
 # IOCTL_BTH_SDP_SUBMIT_RECORD IOCTL

@@ -1,42 +1,47 @@
 ---
-UID : NS:storport._STOR_RICH_DEVICE_DESCRIPTION
-title : "_STOR_RICH_DEVICE_DESCRIPTION"
-author : windows-driver-content
-description : The STOR_RICH_DEVICE_DESCRIPTION structure describes the attributes of the physical device for which a driver is requesting a DMA (direct memory access) adapter.
-old-location : storage\stor_rich_device_description.htm
-old-project : storage
-ms.assetid : 765A420C-F406-4A46-BDCC-26A451549F8D
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : "_STOR_RICH_DEVICE_DESCRIPTION, storport/PSTOR_RICH_DEVICE_DESCRIPTION, STOR_RICH_DEVICE_DESCRIPTION, PSTOR_RICH_DEVICE_DESCRIPTION structure pointer [Storage Devices], storage.stor_rich_device_description, storport/STOR_RICH_DEVICE_DESCRIPTION, PSTOR_RICH_DEVICE_DESCRIPTION, *PSTOR_RICH_DEVICE_DESCRIPTION, STOR_RICH_DEVICE_DESCRIPTION structure [Storage Devices]"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : storport.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10, version 1607
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSTOR_RICH_DEVICE_DESCRIPTION, STOR_RICH_DEVICE_DESCRIPTION"
-req.product : Windows 10 or later.
+UID: NS:storport._STOR_RICH_DEVICE_DESCRIPTION
+title: "_STOR_RICH_DEVICE_DESCRIPTION"
+author: windows-driver-content
+description: The STOR_RICH_DEVICE_DESCRIPTION structure describes the attributes of the physical device for which a driver is requesting a DMA (direct memory access) adapter.
+old-location: storage\stor_rich_device_description.htm
+old-project: storage
+ms.assetid: 765A420C-F406-4A46-BDCC-26A451549F8D
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: "_STOR_RICH_DEVICE_DESCRIPTION, storport/PSTOR_RICH_DEVICE_DESCRIPTION, STOR_RICH_DEVICE_DESCRIPTION, PSTOR_RICH_DEVICE_DESCRIPTION structure pointer [Storage Devices], storage.stor_rich_device_description, storport/STOR_RICH_DEVICE_DESCRIPTION, PSTOR_RICH_DEVICE_DESCRIPTION, *PSTOR_RICH_DEVICE_DESCRIPTION, STOR_RICH_DEVICE_DESCRIPTION structure [Storage Devices]"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: storport.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10, version 1607
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Storport.h
+apiname:
+-	STOR_RICH_DEVICE_DESCRIPTION
+product: Windows
+targetos: Windows
+req.typenames: "*PSTOR_RICH_DEVICE_DESCRIPTION, STOR_RICH_DEVICE_DESCRIPTION"
+req.product: Windows 10 or later.
 ---
 
 # _STOR_RICH_DEVICE_DESCRIPTION structure

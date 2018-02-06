@@ -1,42 +1,48 @@
 ---
-UID : NF:wdm.ClfsMgmtDeregisterManagedClient
-title : ClfsMgmtDeregisterManagedClient function
-author : windows-driver-content
-description : The ClfsMgmtDeregisterManagedClient routine removes the connection between a client and a log, so that the client no longer manages the log.
-old-location : kernel\clfsmgmtderegistermanagedclient.htm
-old-project : kernel
-ms.assetid : 5dee3b70-9c8d-420d-86f9-9795b4d8b1e8
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.clfsmgmtderegistermanagedclient, ClfsMgmtDeregisterManagedClient routine [Kernel-Mode Driver Architecture], Clfs_management_6a802f4a-8157-42c8-8eda-740a1207714a.xml, ClfsMgmtDeregisterManagedClient, wdm/ClfsMgmtDeregisterManagedClient
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Clfs.lib
-req.dll : Clfs.sys
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ClfsMgmtDeregisterManagedClient
+title: ClfsMgmtDeregisterManagedClient function
+author: windows-driver-content
+description: The ClfsMgmtDeregisterManagedClient routine removes the connection between a client and a log, so that the client no longer manages the log.
+old-location: kernel\clfsmgmtderegistermanagedclient.htm
+old-project: kernel
+ms.assetid: 5dee3b70-9c8d-420d-86f9-9795b4d8b1e8
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.clfsmgmtderegistermanagedclient, ClfsMgmtDeregisterManagedClient routine [Kernel-Mode Driver Architecture], Clfs_management_6a802f4a-8157-42c8-8eda-740a1207714a.xml, ClfsMgmtDeregisterManagedClient, wdm/ClfsMgmtDeregisterManagedClient
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Clfs.lib
+req.dll: Clfs.sys
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Clfs.sys
+-	Ext-MS-Win-fs-clfs-l1-1-0.dll
+apiname:
+-	ClfsMgmtDeregisterManagedClient
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

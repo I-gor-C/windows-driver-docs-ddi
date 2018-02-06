@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.IoUpdateShareAccess
-title : IoUpdateShareAccess function
-author : windows-driver-content
-description : The IoUpdateShareAccess routine updates the share access for the given file object, usually when the file is being opened.
-old-location : kernel\ioupdateshareaccess.htm
-old-project : kernel
-ms.assetid : b8e14607-a8d4-4e15-8b1d-92096879ea65
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.ioupdateshareaccess, k104_24b78a73-20f1-4d8b-be0e-67964e8dbc31.xml, wdm/IoUpdateShareAccess, IoUpdateShareAccess routine [Kernel-Mode Driver Architecture], IoUpdateShareAccess
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : IrqlIoPassive5, PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.IoUpdateShareAccess
+title: IoUpdateShareAccess function
+author: windows-driver-content
+description: The IoUpdateShareAccess routine updates the share access for the given file object, usually when the file is being opened.
+old-location: kernel\ioupdateshareaccess.htm
+old-project: kernel
+ms.assetid: b8e14607-a8d4-4e15-8b1d-92096879ea65
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.ioupdateshareaccess, k104_24b78a73-20f1-4d8b-be0e-67964e8dbc31.xml, wdm/IoUpdateShareAccess, IoUpdateShareAccess routine [Kernel-Mode Driver Architecture], IoUpdateShareAccess
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: IrqlIoPassive5, PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoUpdateShareAccess
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

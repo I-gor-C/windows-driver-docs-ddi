@@ -1,41 +1,46 @@
 ---
-UID : NC:fltkernel.PFLT_CONTEXT_CLEANUP_CALLBACK
-title : PFLT_CONTEXT_CLEANUP_CALLBACK
-author : windows-driver-content
-description : A minifilter driver can register a routine of type PFLT_CONTEXT_CLEANUP_CALLBACK as the minifilter driver's ContextCleanupCallback routine.
-old-location : ifsk\pflt_context_cleanup_callback.htm
-old-project : ifsk
-ms.assetid : f17eb108-58d1-4640-a0cc-ae568b0c844c
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.pflt_context_cleanup_callback, ContextCleanupCallback routine [Installable File System Drivers], ContextCleanupCallback, PFLT_CONTEXT_CLEANUP_CALLBACK, PFLT_CONTEXT_CLEANUP_CALLBACK, fltkernel/ContextCleanupCallback, FltCallbacks_870edcbe-dbd7-4fad-b4f3-628bffe6fb44.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<=APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NC:fltkernel.PFLT_CONTEXT_CLEANUP_CALLBACK
+title: PFLT_CONTEXT_CLEANUP_CALLBACK
+author: windows-driver-content
+description: A minifilter driver can register a routine of type PFLT_CONTEXT_CLEANUP_CALLBACK as the minifilter driver's ContextCleanupCallback routine.
+old-location: ifsk\pflt_context_cleanup_callback.htm
+old-project: ifsk
+ms.assetid: f17eb108-58d1-4640-a0cc-ae568b0c844c
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.pflt_context_cleanup_callback, ContextCleanupCallback routine [Installable File System Drivers], ContextCleanupCallback, PFLT_CONTEXT_CLEANUP_CALLBACK, PFLT_CONTEXT_CLEANUP_CALLBACK, fltkernel/ContextCleanupCallback, FltCallbacks_870edcbe-dbd7-4fad-b4f3-628bffe6fb44.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<=APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	fltkernel.h
+apiname:
+-	ContextCleanupCallback
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NF:portcls.IMiniportWavePciStream.RevokeMappings
-title : IMiniportWavePciStream::RevokeMappings method
-author : windows-driver-content
-description : The RevokeMappings method revokes mappings that were previously obtained through IPortWavePciStream::GetMapping.
-old-location : audio\iminiportwavepcistream_revokemappings.htm
-old-project : audio
-ms.assetid : a6534917-5fe6-449b-8e85-398d26730f66
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : portcls/IMiniportWavePciStream::RevokeMappings, RevokeMappings method [Audio Devices], IMiniportWavePciStream interface, IMiniportWavePciStream, RevokeMappings, audio.iminiportwavepcistream_revokemappings, audmp-routines_f995bc15-917a-416d-9066-3d5667866973.xml, IMiniportWavePciStream interface [Audio Devices], RevokeMappings method, IMiniportWavePciStream::RevokeMappings, RevokeMappings method [Audio Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : portcls.h
-req.include-header : Portcls.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : portcls.h
-req.dll : 
-req.irql : DISPATCH_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.IMiniportWavePciStream.RevokeMappings
+title: IMiniportWavePciStream::RevokeMappings method
+author: windows-driver-content
+description: The RevokeMappings method revokes mappings that were previously obtained through IPortWavePciStream::GetMapping.
+old-location: audio\iminiportwavepcistream_revokemappings.htm
+old-project: audio
+ms.assetid: a6534917-5fe6-449b-8e85-398d26730f66
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: portcls/IMiniportWavePciStream::RevokeMappings, RevokeMappings method [Audio Devices], IMiniportWavePciStream interface, IMiniportWavePciStream, RevokeMappings, audio.iminiportwavepcistream_revokemappings, audmp-routines_f995bc15-917a-416d-9066-3d5667866973.xml, IMiniportWavePciStream interface [Audio Devices], RevokeMappings method, IMiniportWavePciStream::RevokeMappings, RevokeMappings method [Audio Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: portcls.h
+req.include-header: Portcls.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: portcls.h
+req.dll: 
+req.irql: DISPATCH_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	portcls.h
+apiname:
+-	IMiniportWavePciStream.RevokeMappings
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddser.IOCTL_SERIAL_SET_TIMEOUTS
-title : IOCTL_SERIAL_SET_TIMEOUTS
-author : windows-driver-content
-description : An IOCTL_SERIAL_SET_TIMEOUTS request resets the time-out value that the system-supplied bus driver for parallel ports uses with write requests.
-old-location : parports\ioctl_serial_set_timeouts.htm
-old-project : parports
-ms.assetid : 524efbe1-110e-4c59-a759-b083888b2e26
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : parports.ioctl_serial_set_timeouts, IOCTL_SERIAL_SET_TIMEOUTS control code [Parallel Ports], IOCTL_SERIAL_SET_TIMEOUTS, ntddser/IOCTL_SERIAL_SET_TIMEOUTS, cisspd_d42d38bf-b276-4428-9a6e-05f4d0b4253b.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddser.h
-req.include-header : Ntddser.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SD_REQUEST_FUNCTION
+UID: NI:ntddser.IOCTL_SERIAL_SET_TIMEOUTS
+title: IOCTL_SERIAL_SET_TIMEOUTS
+author: windows-driver-content
+description: An IOCTL_SERIAL_SET_TIMEOUTS request resets the time-out value that the system-supplied bus driver for parallel ports uses with write requests.
+old-location: parports\ioctl_serial_set_timeouts.htm
+old-project: parports
+ms.assetid: 524efbe1-110e-4c59-a759-b083888b2e26
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: parports.ioctl_serial_set_timeouts, IOCTL_SERIAL_SET_TIMEOUTS control code [Parallel Ports], IOCTL_SERIAL_SET_TIMEOUTS, ntddser/IOCTL_SERIAL_SET_TIMEOUTS, cisspd_d42d38bf-b276-4428-9a6e-05f4d0b4253b.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddser.h
+req.include-header: Ntddser.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddser.h
+apiname:
+-	IOCTL_SERIAL_SET_TIMEOUTS
+product: Windows
+targetos: Windows
+req.typenames: SD_REQUEST_FUNCTION
 ---
 
 # IOCTL_SERIAL_SET_TIMEOUTS IOCTL

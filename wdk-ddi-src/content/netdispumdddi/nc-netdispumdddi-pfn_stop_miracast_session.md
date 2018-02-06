@@ -1,41 +1,46 @@
 ---
-UID : NC:netdispumdddi.PFN_STOP_MIRACAST_SESSION
-title : PFN_STOP_MIRACAST_SESSION
-author : windows-driver-content
-description : Called by the operating system to start a Miracast connected session that had earlier been started by a call to the StartMiracastSession function.
-old-location : display\stopmiracastsession.htm
-old-project : display
-ms.assetid : ab9ad8ee-9390-41a4-9a69-2e98579b2b77
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.stopmiracastsession, StopMiracastSession callback function [Display Devices], StopMiracastSession, PFN_STOP_MIRACAST_SESSION, PFN_STOP_MIRACAST_SESSION, netdispumdddi/StopMiracastSession
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : netdispumdddi.h
-req.include-header : Netdispumdddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8.1
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDK_SRQ_DISPATCH
+UID: NC:netdispumdddi.PFN_STOP_MIRACAST_SESSION
+title: PFN_STOP_MIRACAST_SESSION
+author: windows-driver-content
+description: Called by the operating system to start a Miracast connected session that had earlier been started by a call to the StartMiracastSession function.
+old-location: display\stopmiracastsession.htm
+old-project: display
+ms.assetid: ab9ad8ee-9390-41a4-9a69-2e98579b2b77
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.stopmiracastsession, StopMiracastSession callback function [Display Devices], StopMiracastSession, PFN_STOP_MIRACAST_SESSION, PFN_STOP_MIRACAST_SESSION, netdispumdddi/StopMiracastSession
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: netdispumdddi.h
+req.include-header: Netdispumdddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8.1
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Netdispumdddi.h
+apiname:
+-	StopMiracastSession
+product: Windows
+targetos: Windows
+req.typenames: NDK_SRQ_DISPATCH
 ---
 
 

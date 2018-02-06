@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddvdeo.IOCTL_VIDEO_HANDLE_VIDEOPARAMETERS
-title : IOCTL_VIDEO_HANDLE_VIDEOPARAMETERS
-author : windows-driver-content
-description : Gets the capabilities of the device's television connector and/or copy protection hardware, or sets the desired functionality on the copy protection hardware.
-old-location : display\ioctl_video_handle_videoparameters.htm
-old-project : display
-ms.assetid : 5c48d2b7-3dcc-4025-ab3c-12085369cd7d
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.ioctl_video_handle_videoparameters, IOCTL_VIDEO_HANDLE_VIDEOPARAMETERS control code [Display Devices], IOCTL_VIDEO_HANDLE_VIDEOPARAMETERS, ntddvdeo/IOCTL_VIDEO_HANDLE_VIDEOPARAMETERS, Video_IOCTLs_c94e510e-22f7-47af-8e82-f84ef2b926c6.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddvdeo.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TAPE_WRITE_MARKS, *PTAPE_WRITE_MARKS
+UID: NI:ntddvdeo.IOCTL_VIDEO_HANDLE_VIDEOPARAMETERS
+title: IOCTL_VIDEO_HANDLE_VIDEOPARAMETERS
+author: windows-driver-content
+description: Gets the capabilities of the device's television connector and/or copy protection hardware, or sets the desired functionality on the copy protection hardware.
+old-location: display\ioctl_video_handle_videoparameters.htm
+old-project: display
+ms.assetid: 5c48d2b7-3dcc-4025-ab3c-12085369cd7d
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.ioctl_video_handle_videoparameters, IOCTL_VIDEO_HANDLE_VIDEOPARAMETERS control code [Display Devices], IOCTL_VIDEO_HANDLE_VIDEOPARAMETERS, ntddvdeo/IOCTL_VIDEO_HANDLE_VIDEOPARAMETERS, Video_IOCTLs_c94e510e-22f7-47af-8e82-f84ef2b926c6.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddvdeo.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddvdeo.h
+apiname:
+-	IOCTL_VIDEO_HANDLE_VIDEOPARAMETERS
+product: Windows
+targetos: Windows
+req.typenames: TAPE_WRITE_MARKS, *PTAPE_WRITE_MARKS
 ---
 
 # IOCTL_VIDEO_HANDLE_VIDEOPARAMETERS IOCTL

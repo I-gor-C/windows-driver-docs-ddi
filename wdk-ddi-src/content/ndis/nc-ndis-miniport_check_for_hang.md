@@ -1,41 +1,46 @@
 ---
-UID : NC:ndis.MINIPORT_CHECK_FOR_HANG
-title : MINIPORT_CHECK_FOR_HANG
-author : windows-driver-content
-description : NDIS calls a miniport driver's MiniportCheckForHangEx function to check the operational state of the miniport adapter that represents a network interface card (NIC).
-old-location : netvista\miniportcheckforhangex.htm
-old-project : netvista
-ms.assetid : ead0af85-0584-49de-82cc-8a059ebfdf4f
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.miniportcheckforhangex, MiniportCheckForHangEx callback function [Network Drivers Starting with Windows Vista], MiniportCheckForHangEx, MINIPORT_CHECK_FOR_HANG, MINIPORT_CHECK_FOR_HANG, ndis/MiniportCheckForHangEx, miniport_functions_ref_4dac5544-94b0-4be6-aa81-709bff9163a7.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
+UID: NC:ndis.MINIPORT_CHECK_FOR_HANG
+title: MINIPORT_CHECK_FOR_HANG
+author: windows-driver-content
+description: NDIS calls a miniport driver's MiniportCheckForHangEx function to check the operational state of the miniport adapter that represents a network interface card (NIC).
+old-location: netvista\miniportcheckforhangex.htm
+old-project: netvista
+ms.assetid: ead0af85-0584-49de-82cc-8a059ebfdf4f
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.miniportcheckforhangex, MiniportCheckForHangEx callback function [Network Drivers Starting with Windows Vista], MiniportCheckForHangEx, MINIPORT_CHECK_FOR_HANG, MINIPORT_CHECK_FOR_HANG, ndis/MiniportCheckForHangEx, miniport_functions_ref_4dac5544-94b0-4be6-aa81-709bff9163a7.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ndis.h
+apiname:
+-	MiniportCheckForHangEx
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 

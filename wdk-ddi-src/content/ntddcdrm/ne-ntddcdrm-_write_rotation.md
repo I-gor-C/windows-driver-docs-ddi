@@ -1,41 +1,46 @@
 ---
-UID : NE:ntddcdrm._WRITE_ROTATION
-title : "_WRITE_ROTATION"
-author : windows-driver-content
-description : The WRITE_ROTATION enumeration specifies whether a CD-ROM drive uses constant linear velocity (CLV) rotation or constant angular velocity (CAV) rotation when it writes to a CD.
-old-location : storage\write_rotation.htm
-old-project : storage
-ms.assetid : e3569e38-cb56-4e33-baba-c479fc4368da
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.write_rotation, PWRITE_ROTATION enumeration pointer [Storage Devices], WRITE_ROTATION enumeration [Storage Devices], CdromDefaultRotation, PWRITE_ROTATION, ntddcdrm/CdromDefaultRotation, WRITE_ROTATION, ntddcdrm/WRITE_ROTATION, ntddcdrm/CdromCAVRotation, *PWRITE_ROTATION, structs-CD-ROM_1fcb9104-97bd-48bf-8f08-66b292cd9045.xml, _WRITE_ROTATION, ntddcdrm/PWRITE_ROTATION, CdromCAVRotation
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : ntddcdrm.h
-req.include-header : Ntddcdrm.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WRITE_ROTATION, *PWRITE_ROTATION
+UID: NE:ntddcdrm._WRITE_ROTATION
+title: "_WRITE_ROTATION"
+author: windows-driver-content
+description: The WRITE_ROTATION enumeration specifies whether a CD-ROM drive uses constant linear velocity (CLV) rotation or constant angular velocity (CAV) rotation when it writes to a CD.
+old-location: storage\write_rotation.htm
+old-project: storage
+ms.assetid: e3569e38-cb56-4e33-baba-c479fc4368da
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.write_rotation, PWRITE_ROTATION enumeration pointer [Storage Devices], WRITE_ROTATION enumeration [Storage Devices], CdromDefaultRotation, PWRITE_ROTATION, ntddcdrm/CdromDefaultRotation, WRITE_ROTATION, ntddcdrm/WRITE_ROTATION, ntddcdrm/CdromCAVRotation, *PWRITE_ROTATION, structs-CD-ROM_1fcb9104-97bd-48bf-8f08-66b292cd9045.xml, _WRITE_ROTATION, ntddcdrm/PWRITE_ROTATION, CdromCAVRotation
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: ntddcdrm.h
+req.include-header: Ntddcdrm.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddcdrm.h
+apiname:
+-	WRITE_ROTATION
+product: Windows
+targetos: Windows
+req.typenames: WRITE_ROTATION, *PWRITE_ROTATION
 ---
 
 # _WRITE_ROTATION Enumeration
@@ -52,16 +57,16 @@ typedef enum _WRITE_ROTATION {
 ## Constants
 
 <table>
-
-<tr>
-<td>CdromCAVRotation</td>
-<td>The CD-ROM drive uses the (default) constant angular velocity (CAV) method when it writes to a CD.</td>
-</tr>
-
-<tr>
-<td>CdromDefaultRotation</td>
-<td>The CD-ROM drive uses the (default) constant linear velocity (CLV) method when it writes to a CD.</td>
-</tr>
+            
+                <tr>
+                    <td>CdromCAVRotation</td>
+                    <td>The CD-ROM drive uses the (default) constant angular velocity (CAV) method when it writes to a CD.</td>
+                </tr>
+            
+                <tr>
+                    <td>CdromDefaultRotation</td>
+                    <td>The CD-ROM drive uses the (default) constant linear velocity (CLV) method when it writes to a CD.</td>
+                </tr>
 </table>
 
 
@@ -70,9 +75,9 @@ typedef enum _WRITE_ROTATION {
 | ---- |:---- |
 | **Header** | ntddcdrm.h (include Ntddcdrm.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\ntddcdrm\ni-ntddcdrm-ioctl_cdrom_set_speed.md">IOCTL_CDROM_SET_SPEED</a>
+        <a href="..\ntddcdrm\ni-ntddcdrm-ioctl_cdrom_set_speed.md">IOCTL_CDROM_SET_SPEED</a>
 
 <a href="..\ntddcdrm\ne-ntddcdrm-_cdrom_speed_request.md">CDROM_SPEED_REQUEST</a>
 

@@ -1,42 +1,47 @@
 ---
-UID : NC:wdm.PFREE_ADAPTER_OBJECT
-title : PFREE_ADAPTER_OBJECT
-author : windows-driver-content
-description : The FreeAdapterObject routine releases the specified adapter object after a driver has completed all DMA operations.
-old-location : kernel\freeadapterobject.htm
-old-project : kernel
-ms.assetid : 4A63AAEF-8DBD-4969-8D05-EA06A17D4B61
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.freeadapterobject, FreeAdapterObject, FreeAdapterObject callback function [Kernel-Mode Driver Architecture], FreeAdapterObject, PFREE_ADAPTER_OBJECT, PFREE_ADAPTER_OBJECT, wdm/FreeAdapterObject
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
-req.product : Windows 10 or later.
+UID: NC:wdm.PFREE_ADAPTER_OBJECT
+title: PFREE_ADAPTER_OBJECT
+author: windows-driver-content
+description: The FreeAdapterObject routine releases the specified adapter object after a driver has completed all DMA operations.
+old-location: kernel\freeadapterobject.htm
+old-project: kernel
+ms.assetid: 4A63AAEF-8DBD-4969-8D05-EA06A17D4B61
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.freeadapterobject, FreeAdapterObject, FreeAdapterObject callback function [Kernel-Mode Driver Architecture], FreeAdapterObject, PFREE_ADAPTER_OBJECT, PFREE_ADAPTER_OBJECT, wdm/FreeAdapterObject
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Wdm.h
+apiname:
+-	FreeAdapterObject
+product: Windows
+targetos: Windows
+req.typenames: WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+req.product: Windows 10 or later.
 ---
 
 

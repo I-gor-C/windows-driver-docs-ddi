@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFDevice2.ResumeIdle
-title : IWDFDevice2::ResumeIdle method
-author : windows-driver-content
-description : The ResumeIdle method informs the framework that the device is not in use and can be placed in a device low-power state if it remains idle.
-old-location : wdf\iwdfdevice2_resumeidle.htm
-old-project : wdf
-ms.assetid : e821f738-3712-49c2-9026-ff6ddc0381a6
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : IWDFDevice2::ResumeIdle, ResumeIdle method, IWDFDevice2 interface, umdf.iwdfdevice2_resumeidle, wudfddi/IWDFDevice2::ResumeIdle, wdf.iwdfdevice2_resumeidle, UMDFDeviceObjectRef_2c3c90d0-ac7d-44ac-b643-7dd6abd8ac67.xml, IWDFDevice2 interface, ResumeIdle method, IWDFDevice2, ResumeIdle method, ResumeIdle
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.9
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFDevice2.ResumeIdle
+title: IWDFDevice2::ResumeIdle method
+author: windows-driver-content
+description: The ResumeIdle method informs the framework that the device is not in use and can be placed in a device low-power state if it remains idle.
+old-location: wdf\iwdfdevice2_resumeidle.htm
+old-project: wdf
+ms.assetid: e821f738-3712-49c2-9026-ff6ddc0381a6
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: IWDFDevice2::ResumeIdle, ResumeIdle method, IWDFDevice2 interface, umdf.iwdfdevice2_resumeidle, wudfddi/IWDFDevice2::ResumeIdle, wdf.iwdfdevice2_resumeidle, UMDFDeviceObjectRef_2c3c90d0-ac7d-44ac-b643-7dd6abd8ac67.xml, IWDFDevice2 interface, ResumeIdle method, IWDFDevice2, ResumeIdle method, ResumeIdle
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.9
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFDevice2.ResumeIdle
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

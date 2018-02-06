@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltGetDeviceObject
-title : FltGetDeviceObject function
-author : windows-driver-content
-description : The FltGetDeviceObject routine returns a pointer to the Filter Manager's volume device object (VDO) for a given volume.
-old-location : ifsk\fltgetdeviceobject.htm
-old-project : ifsk
-ms.assetid : 1351efd1-1f7f-4f4b-b0ce-d9f08fba6613
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : fltkernel/FltGetDeviceObject, FltGetDeviceObject routine [Installable File System Drivers], ifsk.fltgetdeviceobject, FltApiRef_e_to_o_0ef7e26f-6eb6-42e3-a469-4d4fa0c8e659.xml, FltGetDeviceObject
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Fltmgr.lib
-req.dll : Fltmgr.sys
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltGetDeviceObject
+title: FltGetDeviceObject function
+author: windows-driver-content
+description: The FltGetDeviceObject routine returns a pointer to the Filter Manager's volume device object (VDO) for a given volume.
+old-location: ifsk\fltgetdeviceobject.htm
+old-project: ifsk
+ms.assetid: 1351efd1-1f7f-4f4b-b0ce-d9f08fba6613
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: fltkernel/FltGetDeviceObject, FltGetDeviceObject routine [Installable File System Drivers], ifsk.fltgetdeviceobject, FltApiRef_e_to_o_0ef7e26f-6eb6-42e3-a469-4d4fa0c8e659.xml, FltGetDeviceObject
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Fltmgr.lib
+req.dll: Fltmgr.sys
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltGetDeviceObject
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

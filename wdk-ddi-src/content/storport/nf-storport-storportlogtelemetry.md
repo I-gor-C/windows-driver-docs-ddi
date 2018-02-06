@@ -1,42 +1,47 @@
 ---
-UID : NF:storport.StorPortLogTelemetry
-title : StorPortLogTelemetry function
-author : windows-driver-content
-description : The StorPortLogTelemetry routine logs a miniport telemetry event to help diagnose or collect any useful information.
-old-location : storage\storportlogtelemetry.htm
-old-project : storage
-ms.assetid : 3B32F31C-3850-43D4-9C6E-40D35B8AF4D4
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.storportlogtelemetry, storport/StorPortLogTelemetry, StorPortLogTelemetry, StorPortLogTelemetry routine [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10, version 1703
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : Any
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STOR_SPINLOCK
-req.product : Windows 10 or later.
+UID: NF:storport.StorPortLogTelemetry
+title: StorPortLogTelemetry function
+author: windows-driver-content
+description: The StorPortLogTelemetry routine logs a miniport telemetry event to help diagnose or collect any useful information.
+old-location: storage\storportlogtelemetry.htm
+old-project: storage
+ms.assetid: 3B32F31C-3850-43D4-9C6E-40D35B8AF4D4
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.storportlogtelemetry, storport/StorPortLogTelemetry, StorPortLogTelemetry, StorPortLogTelemetry routine [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10, version 1703
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: Any
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	storport.h
+apiname:
+-	StorPortLogTelemetry
+product: Windows
+targetos: Windows
+req.typenames: STOR_SPINLOCK
+req.product: Windows 10 or later.
 ---
 
 

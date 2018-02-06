@@ -1,42 +1,47 @@
 ---
-UID : NS:usbioctl._USB_NODE_CONNECTION_ATTRIBUTES
-title : "_USB_NODE_CONNECTION_ATTRIBUTES"
-author : windows-driver-content
-description : The USB_NODE_CONNECTION_ATTRIBUTES structure is used with the IOCTL_USB_GET_NODE_CONNECTION_ATTRIBUTES I/O control request to retrieve the attributes of a connection.
-old-location : buses\usb_node_connection_attributes.htm
-old-project : usbref
-ms.assetid : 893dc1f2-785e-434e-88c7-9bbf2f1c4ad6
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : buses.usb_node_connection_attributes, USB_NODE_CONNECTION_ATTRIBUTES, PUSB_NODE_CONNECTION_ATTRIBUTES structure pointer [Buses], usbioctl/PUSB_NODE_CONNECTION_ATTRIBUTES, USB_NODE_CONNECTION_ATTRIBUTES structure [Buses], usbioctl/USB_NODE_CONNECTION_ATTRIBUTES, usbstrct_20423110-ee37-4637-8202-e712bb13d43b.xml, *PUSB_NODE_CONNECTION_ATTRIBUTES, PUSB_NODE_CONNECTION_ATTRIBUTES, _USB_NODE_CONNECTION_ATTRIBUTES
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : usbioctl.h
-req.include-header : Usbioctl.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUSB_NODE_CONNECTION_ATTRIBUTES, USB_NODE_CONNECTION_ATTRIBUTES"
-req.product : Windows 10 or later.
+UID: NS:usbioctl._USB_NODE_CONNECTION_ATTRIBUTES
+title: "_USB_NODE_CONNECTION_ATTRIBUTES"
+author: windows-driver-content
+description: The USB_NODE_CONNECTION_ATTRIBUTES structure is used with the IOCTL_USB_GET_NODE_CONNECTION_ATTRIBUTES I/O control request to retrieve the attributes of a connection.
+old-location: buses\usb_node_connection_attributes.htm
+old-project: usbref
+ms.assetid: 893dc1f2-785e-434e-88c7-9bbf2f1c4ad6
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: buses.usb_node_connection_attributes, USB_NODE_CONNECTION_ATTRIBUTES, PUSB_NODE_CONNECTION_ATTRIBUTES structure pointer [Buses], usbioctl/PUSB_NODE_CONNECTION_ATTRIBUTES, USB_NODE_CONNECTION_ATTRIBUTES structure [Buses], usbioctl/USB_NODE_CONNECTION_ATTRIBUTES, usbstrct_20423110-ee37-4637-8202-e712bb13d43b.xml, *PUSB_NODE_CONNECTION_ATTRIBUTES, PUSB_NODE_CONNECTION_ATTRIBUTES, _USB_NODE_CONNECTION_ATTRIBUTES
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: usbioctl.h
+req.include-header: Usbioctl.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	usbioctl.h
+apiname:
+-	USB_NODE_CONNECTION_ATTRIBUTES
+product: Windows
+targetos: Windows
+req.typenames: "*PUSB_NODE_CONNECTION_ATTRIBUTES, USB_NODE_CONNECTION_ATTRIBUTES"
+req.product: Windows 10 or later.
 ---
 
 # _USB_NODE_CONNECTION_ATTRIBUTES structure

@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisAllocateIoWorkItem
-title : NdisAllocateIoWorkItem function
-author : windows-driver-content
-description : NDIS drivers call the NdisAllocateIoWorkItem function to allocate a work item. For more information, see NDIS I/O Work Items.
-old-location : netvista\ndisallocateioworkitem.htm
-old-project : netvista
-ms.assetid : 54977838-381e-4c86-a6ca-646202fdc619
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.ndisallocateioworkitem, ndis/NdisAllocateIoWorkItem, NdisAllocateIoWorkItem function [Network Drivers Starting with Windows Vista], NdisAllocateIoWorkItem, ndis_work_items_ref_c227456a-4847-40db-b530-a772f4fd4dc3.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Init_NdisAllocateIoWorkItem, Irql_Miscellaneous_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisAllocateIoWorkItem
+title: NdisAllocateIoWorkItem function
+author: windows-driver-content
+description: NDIS drivers call the NdisAllocateIoWorkItem function to allocate a work item. For more information, see NDIS I/O Work Items.
+old-location: netvista\ndisallocateioworkitem.htm
+old-project: netvista
+ms.assetid: 54977838-381e-4c86-a6ca-646202fdc619
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.ndisallocateioworkitem, ndis/NdisAllocateIoWorkItem, NdisAllocateIoWorkItem function [Network Drivers Starting with Windows Vista], NdisAllocateIoWorkItem, ndis_work_items_ref_c227456a-4847-40db-b530-a772f4fd4dc3.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Init_NdisAllocateIoWorkItem, Irql_Miscellaneous_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisAllocateIoWorkItem
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NS:wdm._SCATTER_GATHER_LIST
-title : "_SCATTER_GATHER_LIST"
-author : windows-driver-content
-description : The SCATTER_GATHER_LIST structure describes the scatter/gather list for a DMA operation.
-old-location : kernel\scatter_gather_list.htm
-old-project : kernel
-ms.assetid : 3cc6da15-8367-4430-afe8-956376eef1c7
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.scatter_gather_list, SCATTER_GATHER_LIST, PSCATTER_GATHER_LIST structure pointer [Kernel-Mode Driver Architecture], kstruct_d_b8c13069-6d90-4fcf-8582-c57bf11509ea.xml, wdm/PSCATTER_GATHER_LIST, SCATTER_GATHER_LIST structure [Kernel-Mode Driver Architecture], *PSCATTER_GATHER_LIST, wdm/SCATTER_GATHER_LIST, PSCATTER_GATHER_LIST, _SCATTER_GATHER_LIST
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSCATTER_GATHER_LIST, SCATTER_GATHER_LIST"
-req.product : Windows 10 or later.
+UID: NS:wdm._SCATTER_GATHER_LIST
+title: "_SCATTER_GATHER_LIST"
+author: windows-driver-content
+description: The SCATTER_GATHER_LIST structure describes the scatter/gather list for a DMA operation.
+old-location: kernel\scatter_gather_list.htm
+old-project: kernel
+ms.assetid: 3cc6da15-8367-4430-afe8-956376eef1c7
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.scatter_gather_list, SCATTER_GATHER_LIST, PSCATTER_GATHER_LIST structure pointer [Kernel-Mode Driver Architecture], kstruct_d_b8c13069-6d90-4fcf-8582-c57bf11509ea.xml, wdm/PSCATTER_GATHER_LIST, SCATTER_GATHER_LIST structure [Kernel-Mode Driver Architecture], *PSCATTER_GATHER_LIST, wdm/SCATTER_GATHER_LIST, PSCATTER_GATHER_LIST, _SCATTER_GATHER_LIST
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	SCATTER_GATHER_LIST
+product: Windows
+targetos: Windows
+req.typenames: "*PSCATTER_GATHER_LIST, SCATTER_GATHER_LIST"
+req.product: Windows 10 or later.
 ---
 
 # _SCATTER_GATHER_LIST structure

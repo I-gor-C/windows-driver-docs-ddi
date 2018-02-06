@@ -1,41 +1,46 @@
 ---
-UID : NS:hbapiwmi._ScsiReadCapacity_OUT
-title : "_ScsiReadCapacity_OUT"
-author : windows-driver-content
-description : The ScsiReadCapacity_OUT structure is used to report the output data of the ScsiReadCapacity WMI method to the WMI client.
-old-location : storage\scsireadcapacity_out2.htm
-old-project : storage
-ms.assetid : bf295061-42d6-4f2e-a39e-9bac440b0d93
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : hbapiwmi/PScsiReadCapacity_OUT, _ScsiReadCapacity_OUT, storage.scsireadcapacity_out2, hbapiwmi/ScsiReadCapacity_OUT, PScsiReadCapacity_OUT structure pointer [Storage Devices], ScsiReadCapacity_OUT, structs-Fibre_b362afaf-6cf2-4e2b-9239-11d7fdec3d74.xml, *PScsiReadCapacity_OUT, PScsiReadCapacity_OUT, ScsiReadCapacity_OUT structure [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : hbapiwmi.h
-req.include-header : Hbapiwmi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : ScsiReadCapacity_OUT, *PScsiReadCapacity_OUT
+UID: NS:hbapiwmi._ScsiReadCapacity_OUT
+title: "_ScsiReadCapacity_OUT"
+author: windows-driver-content
+description: The ScsiReadCapacity_OUT structure is used to report the output data of the ScsiReadCapacity WMI method to the WMI client.
+old-location: storage\scsireadcapacity_out2.htm
+old-project: storage
+ms.assetid: bf295061-42d6-4f2e-a39e-9bac440b0d93
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: hbapiwmi/PScsiReadCapacity_OUT, _ScsiReadCapacity_OUT, storage.scsireadcapacity_out2, hbapiwmi/ScsiReadCapacity_OUT, PScsiReadCapacity_OUT structure pointer [Storage Devices], ScsiReadCapacity_OUT, structs-Fibre_b362afaf-6cf2-4e2b-9239-11d7fdec3d74.xml, *PScsiReadCapacity_OUT, PScsiReadCapacity_OUT, ScsiReadCapacity_OUT structure [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: hbapiwmi.h
+req.include-header: Hbapiwmi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Hbapiwmi.h
+apiname:
+-	ScsiReadCapacity_OUT
+product: Windows
+targetos: Windows
+req.typenames: ScsiReadCapacity_OUT, *PScsiReadCapacity_OUT
 ---
 
 # _ScsiReadCapacity_OUT structure

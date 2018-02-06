@@ -1,41 +1,46 @@
 ---
-UID : NF:ntddk.RtlRunOnceExecuteOnce
-title : RtlRunOnceExecuteOnce function
-author : windows-driver-content
-description : The RtlRunOnceExecuteOnce performs a one-time initialization.
-old-location : kernel\rtlrunonceexecuteonce.htm
-old-project : kernel
-ms.assetid : 2769eb2c-33e2-4e3f-a1bf-1ebc9213b224
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.rtlrunonceexecuteonce, RtlRunOnceExecuteOnce, ntddk/RtlRunOnceExecuteOnce, k109_c1729bff-038f-4714-b422-1b97dd5a9c19.xml, RtlRunOnceExecuteOnce function [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL (See Remarks section.)"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.RtlRunOnceExecuteOnce
+title: RtlRunOnceExecuteOnce function
+author: windows-driver-content
+description: The RtlRunOnceExecuteOnce performs a one-time initialization.
+old-location: kernel\rtlrunonceexecuteonce.htm
+old-project: kernel
+ms.assetid: 2769eb2c-33e2-4e3f-a1bf-1ebc9213b224
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.rtlrunonceexecuteonce, RtlRunOnceExecuteOnce, ntddk/RtlRunOnceExecuteOnce, k109_c1729bff-038f-4714-b422-1b97dd5a9c19.xml, RtlRunOnceExecuteOnce function [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL (See Remarks section.)"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	RtlRunOnceExecuteOnce
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

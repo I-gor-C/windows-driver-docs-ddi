@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.FsRtlAreThereCurrentFileLocks
-title : FsRtlAreThereCurrentFileLocks macro
-author : windows-driver-content
-description : The FsRtlAreThereCurrentFileLocks macro checks whether any byte range locks exist for the specified file.
-old-location : ifsk\fsrtlaretherecurrentfilelocks.htm
-old-project : ifsk
-ms.assetid : 2d8789e1-721d-4abe-9864-0f7fdeb24482
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.fsrtlaretherecurrentfilelocks, FsRtlAreThereCurrentFileLocks function [Installable File System Drivers], FsRtlAreThereCurrentFileLocks, ntifs/FsRtlAreThereCurrentFileLocks, fsrtlref_c3102eee-b523-418a-8977-a875e0eb76b7.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : macro
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : ntifs.h
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.FsRtlAreThereCurrentFileLocks
+title: FsRtlAreThereCurrentFileLocks macro
+author: windows-driver-content
+description: The FsRtlAreThereCurrentFileLocks macro checks whether any byte range locks exist for the specified file.
+old-location: ifsk\fsrtlaretherecurrentfilelocks.htm
+old-project: ifsk
+ms.assetid: 2d8789e1-721d-4abe-9864-0f7fdeb24482
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.fsrtlaretherecurrentfilelocks, FsRtlAreThereCurrentFileLocks function [Installable File System Drivers], FsRtlAreThereCurrentFileLocks, ntifs/FsRtlAreThereCurrentFileLocks, fsrtlref_c3102eee-b523-418a-8977-a875e0eb76b7.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: macro
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: ntifs.h
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntifs.h
+apiname:
+-	FsRtlAreThereCurrentFileLocks
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

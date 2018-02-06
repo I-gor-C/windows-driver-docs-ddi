@@ -1,38 +1,38 @@
 ---
-UID : NF:wdm.SeEtwWriteKMCveEvent
-title : SeEtwWriteKMCveEvent function
-author : windows-driver-content
-description : The SeEtwWriteKMCveEvent function is a tracing function for publishing events when an attempted security vulnerability exploit is detected in your kernel-mode drivers.
-old-location : devtest\seetwwritekmcveevent.htm
-old-project : devtest
-ms.assetid : 9CF6C8FC-869A-4667-9859-845BFF093549
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : SeEtwWriteKMCveEvent
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 10 and later versions of Windows
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.alt-api : SeEtwWriteKMCveEvent
-req.alt-loc : Ntoskrnl.exe
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ntoskrnl.lib
-req.dll : Ntoskrnl.exe
-req.irql : 
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.SeEtwWriteKMCveEvent
+title: SeEtwWriteKMCveEvent function
+author: windows-driver-content
+description: The SeEtwWriteKMCveEvent function is a tracing function for publishing events when an attempted security vulnerability exploit is detected in your kernel-mode drivers.
+old-location: devtest\seetwwritekmcveevent.htm
+old-project: devtest
+ms.assetid: 9CF6C8FC-869A-4667-9859-845BFF093549
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: SeEtwWriteKMCveEvent
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 10 and later versions of Windows
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.alt-api: SeEtwWriteKMCveEvent
+req.alt-loc: Ntoskrnl.exe
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ntoskrnl.lib
+req.dll: Ntoskrnl.exe
+req.irql: 
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

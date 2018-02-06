@@ -1,42 +1,47 @@
 ---
-UID : NS:wdm._IO_RESOURCE_REQUIREMENTS_LIST
-title : "_IO_RESOURCE_REQUIREMENTS_LIST"
-author : windows-driver-content
-description : The IO_RESOURCE_REQUIREMENTS_LIST structure describes sets of resource configurations that can be used by a device. Each configuration represents a range of raw resources, of various types, that can be used by a device.
-old-location : kernel\io_resource_requirements_list.htm
-old-project : kernel
-ms.assetid : e581fd34-4564-4882-b91d-94801e579bde
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.io_resource_requirements_list, PIO_RESOURCE_REQUIREMENTS_LIST structure pointer [Kernel-Mode Driver Architecture], PIO_RESOURCE_REQUIREMENTS_LIST, *PIO_RESOURCE_REQUIREMENTS_LIST, IO_RESOURCE_REQUIREMENTS_LIST structure [Kernel-Mode Driver Architecture], wdm/PIO_RESOURCE_REQUIREMENTS_LIST, wdm/IO_RESOURCE_REQUIREMENTS_LIST, IO_RESOURCE_REQUIREMENTS_LIST, _IO_RESOURCE_REQUIREMENTS_LIST, kstruct_b_3a1f163a-5841-4284-9ee7-c0999e1a9bbc.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PIO_RESOURCE_REQUIREMENTS_LIST, IO_RESOURCE_REQUIREMENTS_LIST"
-req.product : Windows 10 or later.
+UID: NS:wdm._IO_RESOURCE_REQUIREMENTS_LIST
+title: "_IO_RESOURCE_REQUIREMENTS_LIST"
+author: windows-driver-content
+description: The IO_RESOURCE_REQUIREMENTS_LIST structure describes sets of resource configurations that can be used by a device. Each configuration represents a range of raw resources, of various types, that can be used by a device.
+old-location: kernel\io_resource_requirements_list.htm
+old-project: kernel
+ms.assetid: e581fd34-4564-4882-b91d-94801e579bde
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.io_resource_requirements_list, PIO_RESOURCE_REQUIREMENTS_LIST structure pointer [Kernel-Mode Driver Architecture], PIO_RESOURCE_REQUIREMENTS_LIST, *PIO_RESOURCE_REQUIREMENTS_LIST, IO_RESOURCE_REQUIREMENTS_LIST structure [Kernel-Mode Driver Architecture], wdm/PIO_RESOURCE_REQUIREMENTS_LIST, wdm/IO_RESOURCE_REQUIREMENTS_LIST, IO_RESOURCE_REQUIREMENTS_LIST, _IO_RESOURCE_REQUIREMENTS_LIST, kstruct_b_3a1f163a-5841-4284-9ee7-c0999e1a9bbc.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	IO_RESOURCE_REQUIREMENTS_LIST
+product: Windows
+targetos: Windows
+req.typenames: "*PIO_RESOURCE_REQUIREMENTS_LIST, IO_RESOURCE_REQUIREMENTS_LIST"
+req.product: Windows 10 or later.
 ---
 
 # _IO_RESOURCE_REQUIREMENTS_LIST structure

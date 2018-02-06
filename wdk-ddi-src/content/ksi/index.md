@@ -1,12 +1,12 @@
 ---
-UID : NA:ksi
-ms.assetid : fdd7f024-67ad-3717-8eef-b2160dba827d
-ms.author : windowsdriverdev
-ms.date : 01/18/18
-ms.keywords : 
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : portal
+UID: NA:ksi
+ms.assetid: fdd7f024-67ad-3717-8eef-b2160dba827d
+ms.author: windowsdriverdev
+ms.date: 01/18/18
+ms.keywords: 
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: portal
 ---
 
 # ksi.h header

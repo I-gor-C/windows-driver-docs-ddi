@@ -1,42 +1,48 @@
 ---
-UID : NF:wdm.ClfsRemoveLogContainer
-title : ClfsRemoveLogContainer function
-author : windows-driver-content
-description : The ClfsRemoveLogContainer routine removes a container from a CLFS log.
-old-location : kernel\clfsremovelogcontainer.htm
-old-project : kernel
-ms.assetid : 5c49bf4f-acc6-4c0f-bbc2-bafb68ea1a74
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ClfsRemoveLogContainer, wdm/ClfsRemoveLogContainer, ClfsRemoveLogContainer routine [Kernel-Mode Driver Architecture], kernel.clfsremovelogcontainer, Clfs_f797d534-9c7e-4871-81d1-aff9ccedccf5.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Clfs.lib
-req.dll : Clfs.sys
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ClfsRemoveLogContainer
+title: ClfsRemoveLogContainer function
+author: windows-driver-content
+description: The ClfsRemoveLogContainer routine removes a container from a CLFS log.
+old-location: kernel\clfsremovelogcontainer.htm
+old-project: kernel
+ms.assetid: 5c49bf4f-acc6-4c0f-bbc2-bafb68ea1a74
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ClfsRemoveLogContainer, wdm/ClfsRemoveLogContainer, ClfsRemoveLogContainer routine [Kernel-Mode Driver Architecture], kernel.clfsremovelogcontainer, Clfs_f797d534-9c7e-4871-81d1-aff9ccedccf5.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Clfs.lib
+req.dll: Clfs.sys
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Clfs.sys
+-	Ext-MS-Win-fs-clfs-l1-1-0.dll
+apiname:
+-	ClfsRemoveLogContainer
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

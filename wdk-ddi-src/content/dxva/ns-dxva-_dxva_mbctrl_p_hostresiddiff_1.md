@@ -1,41 +1,46 @@
 ---
-UID : NS:dxva._DXVA_MBctrl_P_HostResidDiff_1
-title : "_DXVA_MBctrl_P_HostResidDiff_1"
-author : windows-driver-content
-description : The DXVA_MBctrl_P_HostResidDiff_1 structure is sent once per macroblock by the host decoder to the accelerator to specify macroblock control commands for most nonintra picture cases when using host-based IDCT.
-old-location : display\dxva_mbctrl_p_hostresiddiff_1.htm
-old-project : display
-ms.assetid : be67b423-32a1-4f30-9f2c-fa6347cc960f
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : dxva/DXVA_MBctrl_P_HostResidDiff_1, display.dxva_mbctrl_p_hostresiddiff_1, _DXVA_MBctrl_P_HostResidDiff_1, dxvaref_a97c973f-9673-4049-badd-648b1d0cc39c.xml, DXVA_MBctrl_P_HostResidDiff_1, *LPDXVA_MBctrl_P_HostResidDiff_1, DXVA_MBctrl_P_HostResidDiff_1 structure [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : dxva.h
-req.include-header : Dxva.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXVA_MBctrl_P_HostResidDiff_1
+UID: NS:dxva._DXVA_MBctrl_P_HostResidDiff_1
+title: "_DXVA_MBctrl_P_HostResidDiff_1"
+author: windows-driver-content
+description: The DXVA_MBctrl_P_HostResidDiff_1 structure is sent once per macroblock by the host decoder to the accelerator to specify macroblock control commands for most nonintra picture cases when using host-based IDCT.
+old-location: display\dxva_mbctrl_p_hostresiddiff_1.htm
+old-project: display
+ms.assetid: be67b423-32a1-4f30-9f2c-fa6347cc960f
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: dxva/DXVA_MBctrl_P_HostResidDiff_1, display.dxva_mbctrl_p_hostresiddiff_1, _DXVA_MBctrl_P_HostResidDiff_1, dxvaref_a97c973f-9673-4049-badd-648b1d0cc39c.xml, DXVA_MBctrl_P_HostResidDiff_1, *LPDXVA_MBctrl_P_HostResidDiff_1, DXVA_MBctrl_P_HostResidDiff_1 structure [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: dxva.h
+req.include-header: Dxva.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	dxva.h
+apiname:
+-	DXVA_MBctrl_P_HostResidDiff_1
+product: Windows
+targetos: Windows
+req.typenames: DXVA_MBctrl_P_HostResidDiff_1
 ---
 
 # _DXVA_MBctrl_P_HostResidDiff_1 structure

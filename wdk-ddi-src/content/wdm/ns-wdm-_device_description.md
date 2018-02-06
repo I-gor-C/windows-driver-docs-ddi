@@ -1,42 +1,47 @@
 ---
-UID : NS:wdm._DEVICE_DESCRIPTION
-title : "_DEVICE_DESCRIPTION"
-author : windows-driver-content
-description : The DEVICE_DESCRIPTION structure describes the attributes of the physical device for which a driver is requesting a DMA adapter.
-old-location : kernel\device_description.htm
-old-project : kernel
-ms.assetid : 7f0c7d72-9fe6-4cc1-8028-fd64cdee5d85
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : DEVICE_DESCRIPTION structure [Kernel-Mode Driver Architecture], wdm/DEVICE_DESCRIPTION, kernel.device_description, kstruct_a_22341019-dd23-41b3-b7d9-73a22ba1e146.xml, _DEVICE_DESCRIPTION, DEVICE_DESCRIPTION_VERSION, DEVICE_DESCRIPTION_VERSION2, *PDEVICE_DESCRIPTION, wdm/PDEVICE_DESCRIPTION, DEVICE_DESCRIPTION_VERSION3, PDEVICE_DESCRIPTION structure pointer [Kernel-Mode Driver Architecture], DEVICE_DESCRIPTION_VERSION1, DEVICE_DESCRIPTION, PDEVICE_DESCRIPTION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DEVICE_DESCRIPTION, *PDEVICE_DESCRIPTION
-req.product : Windows 10 or later.
+UID: NS:wdm._DEVICE_DESCRIPTION
+title: "_DEVICE_DESCRIPTION"
+author: windows-driver-content
+description: The DEVICE_DESCRIPTION structure describes the attributes of the physical device for which a driver is requesting a DMA adapter.
+old-location: kernel\device_description.htm
+old-project: kernel
+ms.assetid: 7f0c7d72-9fe6-4cc1-8028-fd64cdee5d85
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: DEVICE_DESCRIPTION structure [Kernel-Mode Driver Architecture], wdm/DEVICE_DESCRIPTION, kernel.device_description, kstruct_a_22341019-dd23-41b3-b7d9-73a22ba1e146.xml, _DEVICE_DESCRIPTION, DEVICE_DESCRIPTION_VERSION, DEVICE_DESCRIPTION_VERSION2, *PDEVICE_DESCRIPTION, wdm/PDEVICE_DESCRIPTION, DEVICE_DESCRIPTION_VERSION3, PDEVICE_DESCRIPTION structure pointer [Kernel-Mode Driver Architecture], DEVICE_DESCRIPTION_VERSION1, DEVICE_DESCRIPTION, PDEVICE_DESCRIPTION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	DEVICE_DESCRIPTION
+product: Windows
+targetos: Windows
+req.typenames: DEVICE_DESCRIPTION, *PDEVICE_DESCRIPTION
+req.product: Windows 10 or later.
 ---
 
 # _DEVICE_DESCRIPTION structure

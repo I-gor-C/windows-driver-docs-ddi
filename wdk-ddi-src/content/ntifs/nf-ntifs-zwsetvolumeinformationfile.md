@@ -1,41 +1,47 @@
 ---
-UID : NF:ntifs.ZwSetVolumeInformationFile
-title : ZwSetVolumeInformationFile function
-author : windows-driver-content
-description : The ZwSetVolumeInformationFile routine modifies information about the volume associated with a given file, directory, storage device, or volume.
-old-location : kernel\zwsetvolumeinformationfile.htm
-old-project : kernel
-ms.assetid : 6afc3e8b-0be0-4728-b00f-deea5e60d27e
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ntifs/ZwSetVolumeInformationFile, NtSetInformationFile, ZwSetVolumeInformationFile routine [Kernel-Mode Driver Architecture], kernel.zwsetvolumeinformationfile, k111_580470b4-9769-4fec-9811-04f703473131.xml, ntifs/NtSetInformationFile, ZwSetVolumeInformationFile
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Server 2003 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.ZwSetVolumeInformationFile
+title: ZwSetVolumeInformationFile function
+author: windows-driver-content
+description: The ZwSetVolumeInformationFile routine modifies information about the volume associated with a given file, directory, storage device, or volume.
+old-location: kernel\zwsetvolumeinformationfile.htm
+old-project: kernel
+ms.assetid: 6afc3e8b-0be0-4728-b00f-deea5e60d27e
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ntifs/ZwSetVolumeInformationFile, NtSetInformationFile, ZwSetVolumeInformationFile routine [Kernel-Mode Driver Architecture], kernel.zwsetvolumeinformationfile, k111_580470b4-9769-4fec-9811-04f703473131.xml, ntifs/NtSetInformationFile, ZwSetVolumeInformationFile
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Server 2003 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ZwSetVolumeInformationFile
+-	NtSetInformationFile
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

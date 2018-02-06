@@ -1,41 +1,46 @@
 ---
-UID : NS:hbaapi.HBA_FCPTargetMappingV2
-title : HBA_FCPTargetMappingV2
-author : windows-driver-content
-description : The HBA_FCPTargetMappingV2 structure contains a variable length array of target mappings.
-old-location : storage\hba_fcptargetmappingv2.htm
-old-project : storage
-ms.assetid : 2c241a38-c6b6-4c77-a8ba-be7ba2a8a701
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : hbaapi/HBA_FCPTargetMappingV2, PHBA_FCPTARGETMAPPINGV2 structure pointer [Storage Devices], HBA_FCPTARGETMAPPINGV2, HBA_FCPTargetMappingV2 structure [Storage Devices], storage.hba_fcptargetmappingv2, *PHBA_FCPTARGETMAPPINGV2, structs-Fibre_316084b2-47c7-46e2-aa1e-1d99a97de1cb.xml, HBA_FCPTargetMappingV2, hbaapi/PHBA_FCPTARGETMAPPINGV2, PHBA_FCPTARGETMAPPINGV2, HBA_FCPTARGETMAPPINGV2 structure [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : hbaapi.h
-req.include-header : Hbaapi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HBA_FCPTARGETMAPPINGV2, *PHBA_FCPTARGETMAPPINGV2
+UID: NS:hbaapi.HBA_FCPTargetMappingV2
+title: HBA_FCPTargetMappingV2
+author: windows-driver-content
+description: The HBA_FCPTargetMappingV2 structure contains a variable length array of target mappings.
+old-location: storage\hba_fcptargetmappingv2.htm
+old-project: storage
+ms.assetid: 2c241a38-c6b6-4c77-a8ba-be7ba2a8a701
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: hbaapi/HBA_FCPTargetMappingV2, PHBA_FCPTARGETMAPPINGV2 structure pointer [Storage Devices], HBA_FCPTARGETMAPPINGV2, HBA_FCPTargetMappingV2 structure [Storage Devices], storage.hba_fcptargetmappingv2, *PHBA_FCPTARGETMAPPINGV2, structs-Fibre_316084b2-47c7-46e2-aa1e-1d99a97de1cb.xml, HBA_FCPTargetMappingV2, hbaapi/PHBA_FCPTARGETMAPPINGV2, PHBA_FCPTARGETMAPPINGV2, HBA_FCPTARGETMAPPINGV2 structure [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: hbaapi.h
+req.include-header: Hbaapi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hbaapi.h
+apiname:
+-	HBA_FCPTARGETMAPPINGV2
+product: Windows
+targetos: Windows
+req.typenames: HBA_FCPTARGETMAPPINGV2, *PHBA_FCPTARGETMAPPINGV2
 ---
 
 # HBA_FCPTargetMappingV2 structure

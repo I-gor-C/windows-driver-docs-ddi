@@ -1,41 +1,46 @@
 ---
-UID : NS:dxva._DXVA_COPPSetProtectionLevelCmdData
-title : "_DXVA_COPPSetProtectionLevelCmdData"
-author : windows-driver-content
-description : The DXVA_COPPSetProtectionLevelCmdData structure describes the protection types and levels to set on the physical connector associated with a COPP DirectX VA device.
-old-location : display\dxva_coppsetprotectionlevelcmddata.htm
-old-project : display
-ms.assetid : d68d6e50-1373-43bc-a22b-dd9db47614c8
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxva_coppsetprotectionlevelcmddata, dxvaref_ac7e802b-dd23-49da-ab02-21d80eaabe86.xml, dxva/DXVA_COPPSetProtectionLevelCmdData, DXVA_COPPSetProtectionLevelCmdData structure [Display Devices], DXVA_COPPSetProtectionLevelCmdData, _DXVA_COPPSetProtectionLevelCmdData
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : dxva.h
-req.include-header : Dxva.h
-req.target-type : Windows
-req.target-min-winverclnt : This structure applies only to Windows Server 2003 with SP1 and later, and Windows XP with SP2 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXVA_COPPSetProtectionLevelCmdData
+UID: NS:dxva._DXVA_COPPSetProtectionLevelCmdData
+title: "_DXVA_COPPSetProtectionLevelCmdData"
+author: windows-driver-content
+description: The DXVA_COPPSetProtectionLevelCmdData structure describes the protection types and levels to set on the physical connector associated with a COPP DirectX VA device.
+old-location: display\dxva_coppsetprotectionlevelcmddata.htm
+old-project: display
+ms.assetid: d68d6e50-1373-43bc-a22b-dd9db47614c8
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxva_coppsetprotectionlevelcmddata, dxvaref_ac7e802b-dd23-49da-ab02-21d80eaabe86.xml, dxva/DXVA_COPPSetProtectionLevelCmdData, DXVA_COPPSetProtectionLevelCmdData structure [Display Devices], DXVA_COPPSetProtectionLevelCmdData, _DXVA_COPPSetProtectionLevelCmdData
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: dxva.h
+req.include-header: Dxva.h
+req.target-type: Windows
+req.target-min-winverclnt: This structure applies only to Windows Server 2003 with SP1 and later, and Windows XP with SP2 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	dxva.h
+apiname:
+-	DXVA_COPPSetProtectionLevelCmdData
+product: Windows
+targetos: Windows
+req.typenames: DXVA_COPPSetProtectionLevelCmdData
 ---
 
 # _DXVA_COPPSetProtectionLevelCmdData structure

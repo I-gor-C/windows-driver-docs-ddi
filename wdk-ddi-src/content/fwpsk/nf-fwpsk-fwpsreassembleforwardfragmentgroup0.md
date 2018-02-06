@@ -1,41 +1,47 @@
 ---
-UID : NF:fwpsk.FwpsReassembleForwardFragmentGroup0
-title : FwpsReassembleForwardFragmentGroup0 function
-author : windows-driver-content
-description : The FwpsReassembleForwardFragmentGroup0 function assembles a list of IP fragments in the forwarding data path into a single packet.Note  FwpsReassembleForwardFragmentGroup0 is a specific version of FwpsReassembleForwardFragmentGroup.
-old-location : netvista\fwpsreassembleforwardfragmentgroup0.htm
-old-project : netvista
-ms.assetid : 00322dbf-0099-439a-8d65-bf530129cea1
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.fwpsreassembleforwardfragmentgroup0, FwpsReassembleForwardFragmentGroup0 function [Network Drivers Starting with Windows Vista], wfp_ref_2_funct_3_fwps_R-Z_354e1536-de02-474d-b99f-b5d81875aecd.xml, FwpsReassembleForwardFragmentGroup0, fwpsk/FwpsReassembleForwardFragmentGroup0
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fwpsk.h
-req.include-header : Fwpsk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows Server 2008.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Fwpkclnt.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FWPS_VSWITCH_EVENT_TYPE
+UID: NF:fwpsk.FwpsReassembleForwardFragmentGroup0
+title: FwpsReassembleForwardFragmentGroup0 function
+author: windows-driver-content
+description: The FwpsReassembleForwardFragmentGroup0 function assembles a list of IP fragments in the forwarding data path into a single packet.Note  FwpsReassembleForwardFragmentGroup0 is a specific version of FwpsReassembleForwardFragmentGroup.
+old-location: netvista\fwpsreassembleforwardfragmentgroup0.htm
+old-project: netvista
+ms.assetid: 00322dbf-0099-439a-8d65-bf530129cea1
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.fwpsreassembleforwardfragmentgroup0, FwpsReassembleForwardFragmentGroup0 function [Network Drivers Starting with Windows Vista], wfp_ref_2_funct_3_fwps_R-Z_354e1536-de02-474d-b99f-b5d81875aecd.xml, FwpsReassembleForwardFragmentGroup0, fwpsk/FwpsReassembleForwardFragmentGroup0
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fwpsk.h
+req.include-header: Fwpsk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows Server 2008.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Fwpkclnt.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	fwpkclnt.lib
+-	fwpkclnt.dll
+apiname:
+-	FwpsReassembleForwardFragmentGroup0
+product: Windows
+targetos: Windows
+req.typenames: FWPS_VSWITCH_EVENT_TYPE
 ---
 
 

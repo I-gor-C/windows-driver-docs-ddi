@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddmmc._FEATURE_DATA_REAL_TIME_STREAMING
-title : "_FEATURE_DATA_REAL_TIME_STREAMING"
-author : windows-driver-content
-description : The FEATURE_DATA_REAL_TIME_STREAMING structure holds information about the Real Time Streaming feature.
-old-location : storage\feature_data_real_time_streaming.htm
-old-project : storage
-ms.assetid : 3b1b54cc-52a5-48ce-a637-70e289c1944e
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : PFEATURE_DATA_REAL_TIME_STREAMING, storage.feature_data_real_time_streaming, FEATURE_DATA_REAL_TIME_STREAMING, *PFEATURE_DATA_REAL_TIME_STREAMING, FEATURE_DATA_REAL_TIME_STREAMING structure [Storage Devices], structs-CD-ROM_2bd0a42c-a5b8-4a5b-958e-56e1a47a6499.xml, _FEATURE_DATA_REAL_TIME_STREAMING, PFEATURE_DATA_REAL_TIME_STREAMING structure pointer [Storage Devices], ntddmmc/FEATURE_DATA_REAL_TIME_STREAMING, ntddmmc/PFEATURE_DATA_REAL_TIME_STREAMING
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddmmc.h
-req.include-header : Ntddcdrm.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PFEATURE_DATA_REAL_TIME_STREAMING, FEATURE_DATA_REAL_TIME_STREAMING"
+UID: NS:ntddmmc._FEATURE_DATA_REAL_TIME_STREAMING
+title: "_FEATURE_DATA_REAL_TIME_STREAMING"
+author: windows-driver-content
+description: The FEATURE_DATA_REAL_TIME_STREAMING structure holds information about the Real Time Streaming feature.
+old-location: storage\feature_data_real_time_streaming.htm
+old-project: storage
+ms.assetid: 3b1b54cc-52a5-48ce-a637-70e289c1944e
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: PFEATURE_DATA_REAL_TIME_STREAMING, storage.feature_data_real_time_streaming, FEATURE_DATA_REAL_TIME_STREAMING, *PFEATURE_DATA_REAL_TIME_STREAMING, FEATURE_DATA_REAL_TIME_STREAMING structure [Storage Devices], structs-CD-ROM_2bd0a42c-a5b8-4a5b-958e-56e1a47a6499.xml, _FEATURE_DATA_REAL_TIME_STREAMING, PFEATURE_DATA_REAL_TIME_STREAMING structure pointer [Storage Devices], ntddmmc/FEATURE_DATA_REAL_TIME_STREAMING, ntddmmc/PFEATURE_DATA_REAL_TIME_STREAMING
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddmmc.h
+req.include-header: Ntddcdrm.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddmmc.h
+apiname:
+-	FEATURE_DATA_REAL_TIME_STREAMING
+product: Windows
+targetos: Windows
+req.typenames: "*PFEATURE_DATA_REAL_TIME_STREAMING, FEATURE_DATA_REAL_TIME_STREAMING"
 ---
 
 # _FEATURE_DATA_REAL_TIME_STREAMING structure

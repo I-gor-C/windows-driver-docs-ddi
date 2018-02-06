@@ -1,42 +1,47 @@
 ---
-UID : NS:prntfont._UNI_CODEPAGEINFO
-title : "_UNI_CODEPAGEINFO"
-author : windows-driver-content
-description : The UNI_CODEPAGEINFO structure is one of the structures used to define the contents of glyph translation table files (.gtt files).
-old-location : print\uni_codepageinfo.htm
-old-project : print
-ms.assetid : 042362d3-d5bf-47af-957f-8f1eb7a9ca7a
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : PUNI_CODEPAGEINFO, print.uni_codepageinfo, UNI_CODEPAGEINFO structure [Print Devices], PUNI_CODEPAGEINFO structure pointer [Print Devices], _UNI_CODEPAGEINFO, prntfont/UNI_CODEPAGEINFO, *PUNI_CODEPAGEINFO, print_unidrv-pscript_fonts_63611a4f-c59c-4fee-a8f3-c1391ff02afd.xml, prntfont/PUNI_CODEPAGEINFO, UNI_CODEPAGEINFO
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : prntfont.h
-req.include-header : Prntfont.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUNI_CODEPAGEINFO, UNI_CODEPAGEINFO"
-req.product : Windows 10 or later.
+UID: NS:prntfont._UNI_CODEPAGEINFO
+title: "_UNI_CODEPAGEINFO"
+author: windows-driver-content
+description: The UNI_CODEPAGEINFO structure is one of the structures used to define the contents of glyph translation table files (.gtt files).
+old-location: print\uni_codepageinfo.htm
+old-project: print
+ms.assetid: 042362d3-d5bf-47af-957f-8f1eb7a9ca7a
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: PUNI_CODEPAGEINFO, print.uni_codepageinfo, UNI_CODEPAGEINFO structure [Print Devices], PUNI_CODEPAGEINFO structure pointer [Print Devices], _UNI_CODEPAGEINFO, prntfont/UNI_CODEPAGEINFO, *PUNI_CODEPAGEINFO, print_unidrv-pscript_fonts_63611a4f-c59c-4fee-a8f3-c1391ff02afd.xml, prntfont/PUNI_CODEPAGEINFO, UNI_CODEPAGEINFO
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: prntfont.h
+req.include-header: Prntfont.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	prntfont.h
+apiname:
+-	UNI_CODEPAGEINFO
+product: Windows
+targetos: Windows
+req.typenames: "*PUNI_CODEPAGEINFO, UNI_CODEPAGEINFO"
+req.product: Windows 10 or later.
 ---
 
 # _UNI_CODEPAGEINFO structure

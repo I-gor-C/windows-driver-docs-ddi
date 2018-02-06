@@ -1,41 +1,47 @@
 ---
-UID : NF:fltkernel.FltEnumerateInstanceInformationByDeviceObject
-title : FltEnumerateInstanceInformationByDeviceObject function
-author : windows-driver-content
-description : The FltEnumerateInstanceInformationByDeviceObject routine provides information about minifilter driver instances and legacy filter drivers that are attached to the volume related to a specified device object.
-old-location : ifsk\fltenumerateinstanceinformationbydeviceobject.htm
-old-project : ifsk
-ms.assetid : 3E7754A3-3A7A-4036-B524-CBA40EF22048
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltEnumerateInstanceInformationByDeviceObject, fltkernel/FltEnumerateInstanceInformationByDeviceObject, ifsk.fltenumerateinstanceinformationbydeviceobject, FltEnumerateInstanceInformationByDeviceObject routine [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltEnumerateInstanceInformationByDeviceObject
+title: FltEnumerateInstanceInformationByDeviceObject function
+author: windows-driver-content
+description: The FltEnumerateInstanceInformationByDeviceObject routine provides information about minifilter driver instances and legacy filter drivers that are attached to the volume related to a specified device object.
+old-location: ifsk\fltenumerateinstanceinformationbydeviceobject.htm
+old-project: ifsk
+ms.assetid: 3E7754A3-3A7A-4036-B524-CBA40EF22048
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltEnumerateInstanceInformationByDeviceObject, fltkernel/FltEnumerateInstanceInformationByDeviceObject, ifsk.fltenumerateinstanceinformationbydeviceobject, FltEnumerateInstanceInformationByDeviceObject routine [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	FltMgr.lib
+-	FltMgr.dll
+apiname:
+-	FltEnumerateInstanceInformationByDeviceObject
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

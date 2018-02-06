@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddmmc._FEATURE_DATA_DISC_CONTROL_BLOCKS_EX
-title : "_FEATURE_DATA_DISC_CONTROL_BLOCKS_EX"
-author : windows-driver-content
-description : The FEATURE_DATA_DISC_CONTROL_BLOCKS_EX structure holds the data reported for a Disc Control Block.
-old-location : storage\feature_data_disc_control_blocks_ex.htm
-old-project : storage
-ms.assetid : 08344cf3-7724-4c11-8855-ba061a0284f8
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : structs-CD-ROM_5e32d5eb-6a1d-412d-9efe-dba88f85c730.xml, PFEATURE_DATA_DISC_CONTROL_BLOCKS_EX, storage.feature_data_disc_control_blocks_ex, _FEATURE_DATA_DISC_CONTROL_BLOCKS_EX, FEATURE_DATA_DISC_CONTROL_BLOCKS_EX structure [Storage Devices], ntddmmc/FEATURE_DATA_DISC_CONTROL_BLOCKS_EX, ntddmmc/PFEATURE_DATA_DISC_CONTROL_BLOCKS_EX, *PFEATURE_DATA_DISC_CONTROL_BLOCKS_EX, PFEATURE_DATA_DISC_CONTROL_BLOCKS_EX structure pointer [Storage Devices], FEATURE_DATA_DISC_CONTROL_BLOCKS_EX
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddmmc.h
-req.include-header : Ntddcdrm.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PFEATURE_DATA_DISC_CONTROL_BLOCKS_EX, FEATURE_DATA_DISC_CONTROL_BLOCKS_EX"
+UID: NS:ntddmmc._FEATURE_DATA_DISC_CONTROL_BLOCKS_EX
+title: "_FEATURE_DATA_DISC_CONTROL_BLOCKS_EX"
+author: windows-driver-content
+description: The FEATURE_DATA_DISC_CONTROL_BLOCKS_EX structure holds the data reported for a Disc Control Block.
+old-location: storage\feature_data_disc_control_blocks_ex.htm
+old-project: storage
+ms.assetid: 08344cf3-7724-4c11-8855-ba061a0284f8
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: structs-CD-ROM_5e32d5eb-6a1d-412d-9efe-dba88f85c730.xml, PFEATURE_DATA_DISC_CONTROL_BLOCKS_EX, storage.feature_data_disc_control_blocks_ex, _FEATURE_DATA_DISC_CONTROL_BLOCKS_EX, FEATURE_DATA_DISC_CONTROL_BLOCKS_EX structure [Storage Devices], ntddmmc/FEATURE_DATA_DISC_CONTROL_BLOCKS_EX, ntddmmc/PFEATURE_DATA_DISC_CONTROL_BLOCKS_EX, *PFEATURE_DATA_DISC_CONTROL_BLOCKS_EX, PFEATURE_DATA_DISC_CONTROL_BLOCKS_EX structure pointer [Storage Devices], FEATURE_DATA_DISC_CONTROL_BLOCKS_EX
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddmmc.h
+req.include-header: Ntddcdrm.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddmmc.h
+apiname:
+-	FEATURE_DATA_DISC_CONTROL_BLOCKS_EX
+product: Windows
+targetos: Windows
+req.typenames: "*PFEATURE_DATA_DISC_CONTROL_BLOCKS_EX, FEATURE_DATA_DISC_CONTROL_BLOCKS_EX"
 ---
 
 # _FEATURE_DATA_DISC_CONTROL_BLOCKS_EX structure

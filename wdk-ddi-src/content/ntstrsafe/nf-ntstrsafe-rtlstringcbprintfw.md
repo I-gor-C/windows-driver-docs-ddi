@@ -1,41 +1,49 @@
 ---
-UID : NF:ntstrsafe.RtlStringCbPrintfW
-title : RtlStringCbPrintfW function
-author : windows-driver-content
-description : The RtlStringCbPrintfW and RtlStringCbPrintfA functions create a byte-counted text string, with formatting that is based on supplied formatting information.
-old-location : kernel\rtlstringcbprintf.htm
-old-project : kernel
-ms.assetid : ff35590f-1834-462a-9a9e-f7a3268776e8
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ntstrsafe/RtlStringCbPrintfA, RtlStringCbPrintfA, safestrings_066962fd-30e4-4535-b667-bf6f8fa2f2b2.xml, kernel.rtlstringcbprintf, RtlStringCbPrintf, RtlStringCbPrintfW function [Kernel-Mode Driver Architecture], ntstrsafe/RtlStringCbPrintfW, RtlStringCbPrintfW
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntstrsafe.h
-req.include-header : Ntstrsafe.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available starting with Windows XP with Service Pack 1 (SP1).
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : RtlStringCbPrintfW (Unicode) and RtlStringCbPrintfA (ANSI)
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ntstrsafe.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : BATTERY_REPORTING_SCALE, *PBATTERY_REPORTING_SCALE
+UID: NF:ntstrsafe.RtlStringCbPrintfW
+title: RtlStringCbPrintfW function
+author: windows-driver-content
+description: The RtlStringCbPrintfW and RtlStringCbPrintfA functions create a byte-counted text string, with formatting that is based on supplied formatting information.
+old-location: kernel\rtlstringcbprintf.htm
+old-project: kernel
+ms.assetid: ff35590f-1834-462a-9a9e-f7a3268776e8
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ntstrsafe/RtlStringCbPrintfA, RtlStringCbPrintfA, safestrings_066962fd-30e4-4535-b667-bf6f8fa2f2b2.xml, kernel.rtlstringcbprintf, RtlStringCbPrintf, RtlStringCbPrintfW function [Kernel-Mode Driver Architecture], ntstrsafe/RtlStringCbPrintfW, RtlStringCbPrintfW
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntstrsafe.h
+req.include-header: Ntstrsafe.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available starting with Windows XP with Service Pack 1 (SP1).
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: RtlStringCbPrintfW (Unicode) and RtlStringCbPrintfA (ANSI)
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ntstrsafe.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ntstrsafe.lib
+-	Ntstrsafe.dll
+apiname:
+-	RtlStringCbPrintfW
+-	RtlStringCbPrintfA
+-	RtlStringCbPrintfW
+product: Windows
+targetos: Windows
+req.typenames: BATTERY_REPORTING_SCALE, *PBATTERY_REPORTING_SCALE
 ---
 
 

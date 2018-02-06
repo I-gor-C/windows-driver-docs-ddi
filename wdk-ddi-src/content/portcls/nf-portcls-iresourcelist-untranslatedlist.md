@@ -1,41 +1,46 @@
 ---
-UID : NF:portcls.IResourceList.UntranslatedList
-title : IResourceList::UntranslatedList method
-author : windows-driver-content
-description : The UntranslatedList method returns the list of untranslated resources.
-old-location : audio\iresourcelist_untranslatedlist.htm
-old-project : audio
-ms.assetid : b5b0a540-2730-40ef-8f65-135a19b9a732
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : audmp-routines_b367743a-b341-49cc-a300-da84b91ec7a5.xml, audio.iresourcelist_untranslatedlist, UntranslatedList method [Audio Devices], IResourceList interface, IResourceList, IResourceList interface [Audio Devices], UntranslatedList method, UntranslatedList method [Audio Devices], portcls/IResourceList::UntranslatedList, IResourceList::UntranslatedList, UntranslatedList
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : portcls.h
-req.include-header : Portcls.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : portcls.h
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.IResourceList.UntranslatedList
+title: IResourceList::UntranslatedList method
+author: windows-driver-content
+description: The UntranslatedList method returns the list of untranslated resources.
+old-location: audio\iresourcelist_untranslatedlist.htm
+old-project: audio
+ms.assetid: b5b0a540-2730-40ef-8f65-135a19b9a732
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: audmp-routines_b367743a-b341-49cc-a300-da84b91ec7a5.xml, audio.iresourcelist_untranslatedlist, UntranslatedList method [Audio Devices], IResourceList interface, IResourceList, IResourceList interface [Audio Devices], UntranslatedList method, UntranslatedList method [Audio Devices], portcls/IResourceList::UntranslatedList, IResourceList::UntranslatedList, UntranslatedList
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: portcls.h
+req.include-header: Portcls.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: portcls.h
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	portcls.h
+apiname:
+-	IResourceList.UntranslatedList
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

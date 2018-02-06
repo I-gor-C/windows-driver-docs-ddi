@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dkmddi.DXGKDDI_COMMITVIDPN
-title : DXGKDDI_COMMITVIDPN
-author : windows-driver-content
-description : The DxgkDdiCommitVidPn function makes a specified video present network (VidPN) active on a display adapter.
-old-location : display\dxgkddicommitvidpn.htm
-old-project : display
-ms.assetid : 979b86e9-f3ff-4022-8c00-b6afc2b1f747
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkddicommitvidpn, DxgkDdiCommitVidPn callback function [Display Devices], DxgkDdiCommitVidPn, DXGKDDI_COMMITVIDPN, DXGKDDI_COMMITVIDPN, d3dkmddi/DxgkDdiCommitVidPn, DmFunctions_467cba1e-3eeb-4735-9fb3-46c8c737b48d.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
+UID: NC:d3dkmddi.DXGKDDI_COMMITVIDPN
+title: DXGKDDI_COMMITVIDPN
+author: windows-driver-content
+description: The DxgkDdiCommitVidPn function makes a specified video present network (VidPN) active on a display adapter.
+old-location: display\dxgkddicommitvidpn.htm
+old-project: display
+ms.assetid: 979b86e9-f3ff-4022-8c00-b6afc2b1f747
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkddicommitvidpn, DxgkDdiCommitVidPn callback function [Display Devices], DxgkDdiCommitVidPn, DXGKDDI_COMMITVIDPN, DXGKDDI_COMMITVIDPN, d3dkmddi/DxgkDdiCommitVidPn, DmFunctions_467cba1e-3eeb-4735-9fb3-46c8c737b48d.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DxgkDdiCommitVidPn
+product: Windows
+targetos: Windows
+req.typenames: DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
 

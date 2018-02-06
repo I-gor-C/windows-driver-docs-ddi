@@ -1,41 +1,46 @@
 ---
-UID : NC:fltkernel.PFLT_COMPLETE_LOCK_CALLBACK_DATA_ROUTINE
-title : PFLT_COMPLETE_LOCK_CALLBACK_DATA_ROUTINE
-author : windows-driver-content
-description : A minifilter driver can register a routine of type PFLT_COMPLETE_LOCK_CALLBACK_DATA_ROUTINE as the minifilter driver's CompleteLockCallbackDataRoutine callback routine for a FILE_LOCK structure.
-old-location : ifsk\pflt_complete_lock_callback_data_routine.htm
-old-project : ifsk
-ms.assetid : 5b6fe740-22bb-4620-86a2-1e3be1f380f3
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.pflt_complete_lock_callback_data_routine, CompleteLockCallbackDataRoutine routine [Installable File System Drivers], CompleteLockCallbackDataRoutine, PFLT_COMPLETE_LOCK_CALLBACK_DATA_ROUTINE, PFLT_COMPLETE_LOCK_CALLBACK_DATA_ROUTINE, fltkernel/CompleteLockCallbackDataRoutine, FltCallbacks_a02e356c-ad01-4ae4-bfff-b753ffa0a1c3.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available starting with  Windows XP with SP2 or Windows Server 2003 with SP1.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<=APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NC:fltkernel.PFLT_COMPLETE_LOCK_CALLBACK_DATA_ROUTINE
+title: PFLT_COMPLETE_LOCK_CALLBACK_DATA_ROUTINE
+author: windows-driver-content
+description: A minifilter driver can register a routine of type PFLT_COMPLETE_LOCK_CALLBACK_DATA_ROUTINE as the minifilter driver's CompleteLockCallbackDataRoutine callback routine for a FILE_LOCK structure.
+old-location: ifsk\pflt_complete_lock_callback_data_routine.htm
+old-project: ifsk
+ms.assetid: 5b6fe740-22bb-4620-86a2-1e3be1f380f3
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.pflt_complete_lock_callback_data_routine, CompleteLockCallbackDataRoutine routine [Installable File System Drivers], CompleteLockCallbackDataRoutine, PFLT_COMPLETE_LOCK_CALLBACK_DATA_ROUTINE, PFLT_COMPLETE_LOCK_CALLBACK_DATA_ROUTINE, fltkernel/CompleteLockCallbackDataRoutine, FltCallbacks_a02e356c-ad01-4ae4-bfff-b753ffa0a1c3.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available starting with  Windows XP with SP2 or Windows Server 2003 with SP1.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<=APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	fltkernel.h
+apiname:
+-	CompleteLockCallbackDataRoutine
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

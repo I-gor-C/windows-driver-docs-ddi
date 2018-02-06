@@ -1,41 +1,46 @@
 ---
-UID : NF:ntddk.ExRaiseAccessViolation
-title : ExRaiseAccessViolation function
-author : windows-driver-content
-description : The ExRaiseAccessViolation routine can be used with structured exception handling to throw a driver-determined exception for a memory access violation that occurs when a driver processes I/O requests.
-old-location : kernel\exraiseaccessviolation.htm
-old-project : kernel
-ms.assetid : c35e07c0-ffbd-4110-bb32-b47a512129dd
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : k102_71b4c053-599c-4a6d-8a59-08aae6bdc534.xml, ExRaiseAccessViolation, ntddk/ExRaiseAccessViolation, kernel.exraiseaccessviolation, ExRaiseAccessViolation routine [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 2000 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : IrqlExPassive, PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.ExRaiseAccessViolation
+title: ExRaiseAccessViolation function
+author: windows-driver-content
+description: The ExRaiseAccessViolation routine can be used with structured exception handling to throw a driver-determined exception for a memory access violation that occurs when a driver processes I/O requests.
+old-location: kernel\exraiseaccessviolation.htm
+old-project: kernel
+ms.assetid: c35e07c0-ffbd-4110-bb32-b47a512129dd
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: k102_71b4c053-599c-4a6d-8a59-08aae6bdc534.xml, ExRaiseAccessViolation, ntddk/ExRaiseAccessViolation, kernel.exraiseaccessviolation, ExRaiseAccessViolation routine [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 2000 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: IrqlExPassive, PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ExRaiseAccessViolation
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

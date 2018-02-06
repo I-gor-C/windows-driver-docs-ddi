@@ -1,42 +1,47 @@
 ---
-UID : NF:video.VideoPortReleaseSpinLockFromDpcLevel
-title : VideoPortReleaseSpinLockFromDpcLevel function
-author : windows-driver-content
-description : The VideoPortReleaseSpinLockFromDpcLevel function releases the spin lock obtained by a previous call to VideoPortAcquireSpinLockAtDpcLevel.
-old-location : display\videoportreleasespinlockfromdpclevel.htm
-old-project : display
-ms.assetid : 375158e7-3fb5-4e49-a7cf-ee9a1e5c07ca
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : video/VideoPortReleaseSpinLockFromDpcLevel, VideoPort_Functions_2c3a3aa1-4ef4-4b7f-8cdf-b658a1128c35.xml, VideoPortReleaseSpinLockFromDpcLevel, display.videoportreleasespinlockfromdpclevel, VideoPortReleaseSpinLockFromDpcLevel function [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows XP and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Videoprt.lib
-req.dll : Videoprt.sys
-req.irql : DISPATCH_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_PORT_SERVICES
-req.product : Windows 10 or later.
+UID: NF:video.VideoPortReleaseSpinLockFromDpcLevel
+title: VideoPortReleaseSpinLockFromDpcLevel function
+author: windows-driver-content
+description: The VideoPortReleaseSpinLockFromDpcLevel function releases the spin lock obtained by a previous call to VideoPortAcquireSpinLockAtDpcLevel.
+old-location: display\videoportreleasespinlockfromdpclevel.htm
+old-project: display
+ms.assetid: 375158e7-3fb5-4e49-a7cf-ee9a1e5c07ca
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: video/VideoPortReleaseSpinLockFromDpcLevel, VideoPort_Functions_2c3a3aa1-4ef4-4b7f-8cdf-b658a1128c35.xml, VideoPortReleaseSpinLockFromDpcLevel, display.videoportreleasespinlockfromdpclevel, VideoPortReleaseSpinLockFromDpcLevel function [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows XP and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Videoprt.lib
+req.dll: Videoprt.sys
+req.irql: DISPATCH_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Videoprt.sys
+apiname:
+-	VideoPortReleaseSpinLockFromDpcLevel
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_PORT_SERVICES
+req.product: Windows 10 or later.
 ---
 
 

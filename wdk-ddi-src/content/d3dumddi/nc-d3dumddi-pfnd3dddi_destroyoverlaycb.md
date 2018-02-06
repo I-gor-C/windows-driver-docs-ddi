@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_DESTROYOVERLAYCB
-title : PFND3DDDI_DESTROYOVERLAYCB
-author : windows-driver-content
-description : The pfnDestroyOverlayCb function disables the overlay hardware and destroys the kernel-mode overlay object.
-old-location : display\pfndestroyoverlaycb.htm
-old-project : display
-ms.assetid : 9fc83bad-c183-4cba-9514-bfe1c676cba5
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.pfndestroyoverlaycb, pfnDestroyOverlayCb callback function [Display Devices], pfnDestroyOverlayCb, PFND3DDDI_DESTROYOVERLAYCB, PFND3DDDI_DESTROYOVERLAYCB, d3dumddi/pfnDestroyOverlayCb, D3Druntime_Functions_57512079-654f-4858-bd66-984935adec15.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_DESTROYOVERLAYCB
+title: PFND3DDDI_DESTROYOVERLAYCB
+author: windows-driver-content
+description: The pfnDestroyOverlayCb function disables the overlay hardware and destroys the kernel-mode overlay object.
+old-location: display\pfndestroyoverlaycb.htm
+old-project: display
+ms.assetid: 9fc83bad-c183-4cba-9514-bfe1c676cba5
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.pfndestroyoverlaycb, pfnDestroyOverlayCb callback function [Display Devices], pfnDestroyOverlayCb, PFND3DDDI_DESTROYOVERLAYCB, PFND3DDDI_DESTROYOVERLAYCB, d3dumddi/pfnDestroyOverlayCb, D3Druntime_Functions_57512079-654f-4858-bd66-984935adec15.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	pfnDestroyOverlayCb
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

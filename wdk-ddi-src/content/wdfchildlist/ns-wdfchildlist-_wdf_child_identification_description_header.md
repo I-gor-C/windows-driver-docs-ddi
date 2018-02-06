@@ -1,42 +1,47 @@
 ---
-UID : NS:wdfchildlist._WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER
-title : "_WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER"
-author : windows-driver-content
-description : The WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER structure is a header structure that must be the first member of every identification description structure.
-old-location : wdf\wdf_child_identification_description_header.htm
-old-project : wdf
-ms.assetid : 9bec95c9-785f-4578-a28a-6cffc986a3b9
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : PWDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER, kmdf.wdf_child_identification_description_header, DFDeviceObjectChildListRef_543d7f3d-e182-4147-a1cb-62d39fdde4e3.xml, WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER structure, wdf.wdf_child_identification_description_header, *PWDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER, wdfchildlist/PWDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER, _WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER, PWDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER structure pointer, WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER, wdfchildlist/WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdfchildlist.h
-req.include-header : Wdf.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER, *PWDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER
-req.product : Windows 10 or later.
+UID: NS:wdfchildlist._WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER
+title: "_WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER"
+author: windows-driver-content
+description: The WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER structure is a header structure that must be the first member of every identification description structure.
+old-location: wdf\wdf_child_identification_description_header.htm
+old-project: wdf
+ms.assetid: 9bec95c9-785f-4578-a28a-6cffc986a3b9
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: PWDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER, kmdf.wdf_child_identification_description_header, DFDeviceObjectChildListRef_543d7f3d-e182-4147-a1cb-62d39fdde4e3.xml, WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER structure, wdf.wdf_child_identification_description_header, *PWDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER, wdfchildlist/PWDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER, _WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER, PWDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER structure pointer, WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER, wdfchildlist/WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdfchildlist.h
+req.include-header: Wdf.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfchildlist.h
+apiname:
+-	WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER
+product: Windows
+targetos: Windows
+req.typenames: WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER, *PWDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER
+req.product: Windows 10 or later.
 ---
 
 # _WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER structure

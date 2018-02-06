@@ -1,41 +1,46 @@
 ---
-UID : NS:ks.KSPROPERTY_SET
-title : KSPROPERTY_SET
-author : windows-driver-content
-description : A kernel streaming driver or pin may use the KSPROPERTY_SET structure to describe how it supports a property set.
-old-location : stream\ksproperty_set.htm
-old-project : stream
-ms.assetid : 18eda28d-f1dc-4b49-8c1a-07e11ea4b288
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : "*PKSPROPERTY_SET, KSPROPERTY_SET, stream.ksproperty_set, ks-struct_2c865d90-5142-4cda-bbd2-af67ac716c87.xml, ks/KSPROPERTY_SET, PKSPROPERTY_SET, ks/PKSPROPERTY_SET, KSPROPERTY_SET structure [Streaming Media Devices], PKSPROPERTY_SET structure pointer [Streaming Media Devices]"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KSPROPERTY_SET, *PKSPROPERTY_SET
+UID: NS:ks.KSPROPERTY_SET
+title: KSPROPERTY_SET
+author: windows-driver-content
+description: A kernel streaming driver or pin may use the KSPROPERTY_SET structure to describe how it supports a property set.
+old-location: stream\ksproperty_set.htm
+old-project: stream
+ms.assetid: 18eda28d-f1dc-4b49-8c1a-07e11ea4b288
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: "*PKSPROPERTY_SET, KSPROPERTY_SET, stream.ksproperty_set, ks-struct_2c865d90-5142-4cda-bbd2-af67ac716c87.xml, ks/KSPROPERTY_SET, PKSPROPERTY_SET, ks/PKSPROPERTY_SET, KSPROPERTY_SET structure [Streaming Media Devices], PKSPROPERTY_SET structure pointer [Streaming Media Devices]"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	KSPROPERTY_SET
+product: Windows
+targetos: Windows
+req.typenames: KSPROPERTY_SET, *PKSPROPERTY_SET
 ---
 
 # KSPROPERTY_SET structure

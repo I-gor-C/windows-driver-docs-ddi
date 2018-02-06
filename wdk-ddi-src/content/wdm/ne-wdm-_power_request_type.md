@@ -1,42 +1,47 @@
 ---
-UID : NE:wdm._POWER_REQUEST_TYPE
-title : "_POWER_REQUEST_TYPE"
-author : windows-driver-content
-description : The POWER_REQUEST_TYPE enumeration indicates the power request type.
-old-location : kernel\power_request_type.htm
-old-project : kernel
-ms.assetid : 266cdf1a-6122-4f46-8e93-8f76fceb0180
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/PowerRequestSystemRequired, wdm/PPOWER_REQUEST_TYPE, wdm/POWER_REQUEST_TYPE, PowerRequestSystemRequired, _POWER_REQUEST_TYPE, POWER_REQUEST_TYPE, kernel.power_request_type, PPOWER_REQUEST_TYPE, POWER_REQUEST_TYPE enumeration [Kernel-Mode Driver Architecture], wdm/PowerRequestExecutionRequired, wdm/PowerRequestDisplayRequired, PowerRequestAwayModeRequired, PPOWER_REQUEST_TYPE enumeration pointer [Kernel-Mode Driver Architecture], sysenum_2d1a5da5-2541-4db1-bfde-2bd06f38b17c.xml, PowerRequestExecutionRequired, *PPOWER_REQUEST_TYPE, wdm/PowerRequestAwayModeRequired, PowerRequestDisplayRequired
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with Windows 7.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPOWER_REQUEST_TYPE, POWER_REQUEST_TYPE"
-req.product : Windows 10 or later.
+UID: NE:wdm._POWER_REQUEST_TYPE
+title: "_POWER_REQUEST_TYPE"
+author: windows-driver-content
+description: The POWER_REQUEST_TYPE enumeration indicates the power request type.
+old-location: kernel\power_request_type.htm
+old-project: kernel
+ms.assetid: 266cdf1a-6122-4f46-8e93-8f76fceb0180
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/PowerRequestSystemRequired, wdm/PPOWER_REQUEST_TYPE, wdm/POWER_REQUEST_TYPE, PowerRequestSystemRequired, _POWER_REQUEST_TYPE, POWER_REQUEST_TYPE, kernel.power_request_type, PPOWER_REQUEST_TYPE, POWER_REQUEST_TYPE enumeration [Kernel-Mode Driver Architecture], wdm/PowerRequestExecutionRequired, wdm/PowerRequestDisplayRequired, PowerRequestAwayModeRequired, PPOWER_REQUEST_TYPE enumeration pointer [Kernel-Mode Driver Architecture], sysenum_2d1a5da5-2541-4db1-bfde-2bd06f38b17c.xml, PowerRequestExecutionRequired, *PPOWER_REQUEST_TYPE, wdm/PowerRequestAwayModeRequired, PowerRequestDisplayRequired
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows 7.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	POWER_REQUEST_TYPE
+product: Windows
+targetos: Windows
+req.typenames: "*PPOWER_REQUEST_TYPE, POWER_REQUEST_TYPE"
+req.product: Windows 10 or later.
 ---
 
 # _POWER_REQUEST_TYPE Enumeration
@@ -55,31 +60,31 @@ typedef enum _POWER_REQUEST_TYPE {
 ## Constants
 
 <table>
-
-<tr>
-<td>PowerRequestAwayModeRequired</td>
-<td>Not used by drivers. For more information, see Remarks.</td>
-</tr>
-
-<tr>
-<td>PowerRequestDisplayRequired</td>
-<td>Not used by drivers. For more information, see Remarks.</td>
-</tr>
-
-<tr>
-<td>PowerRequestExecutionRequired</td>
-<td>Not used by drivers. For more information, see Remarks.</td>
-</tr>
-
-<tr>
-<td>PowerRequestSystemRequired</td>
-<td>Prevents the computer from automatically entering sleep mode after a period of user inactivity.</td>
-</tr>
+            
+                <tr>
+                    <td>PowerRequestAwayModeRequired</td>
+                    <td>Not used by drivers. For more information, see Remarks.</td>
+                </tr>
+            
+                <tr>
+                    <td>PowerRequestDisplayRequired</td>
+                    <td>Not used by drivers. For more information, see Remarks.</td>
+                </tr>
+            
+                <tr>
+                    <td>PowerRequestExecutionRequired</td>
+                    <td>Not used by drivers. For more information, see Remarks.</td>
+                </tr>
+            
+                <tr>
+                    <td>PowerRequestSystemRequired</td>
+                    <td>Prevents the computer from automatically entering sleep mode after a period of user inactivity.</td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-This enumeration is used by the kernel-mode <a href="..\wdm\nf-wdm-poclearpowerrequest.md">PoClearPowerRequest</a> and <a href="..\wdm\nf-wdm-posetpowerrequest.md">PoSetPowerRequest</a> routines. Drivers that call these routines must specify the <b>PowerRequestSystemRequired</b> enumeration value.
+        This enumeration is used by the kernel-mode <a href="..\wdm\nf-wdm-poclearpowerrequest.md">PoClearPowerRequest</a> and <a href="..\wdm\nf-wdm-posetpowerrequest.md">PoSetPowerRequest</a> routines. Drivers that call these routines must specify the <b>PowerRequestSystemRequired</b> enumeration value.
 
 The other three enumeration values—<b>PowerRequestDisplayRequired</b>, <b>PowerRequestAwayModeRequired</b>, and <b>PowerRequestExecutionRequired</b>—are not used by drivers. Applications specify these power request types in calls to the <a href="https://msdn.microsoft.com/85249de8-5832-4f25-bbd9-3576cfd1caa0">PowerSetRequest</a> and <a href="https://msdn.microsoft.com/794248b1-5aa8-495e-aca6-1a1f35dc9c7f">PowerClearRequest</a> functions.
 
@@ -107,9 +112,9 @@ While a <b>PowerRequestExecutionRequired</b> power request is in effect, the cal
 | **Windows version** | Supported starting with Windows 7. Supported starting with Windows 7. |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\wdm\nf-wdm-poclearpowerrequest.md">PoClearPowerRequest</a>
+        <a href="..\wdm\nf-wdm-poclearpowerrequest.md">PoClearPowerRequest</a>
 
 <a href="https://msdn.microsoft.com/85249de8-5832-4f25-bbd9-3576cfd1caa0">PowerSetRequest</a>
 

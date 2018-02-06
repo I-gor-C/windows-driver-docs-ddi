@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dkmddi.DXGKDDI_RENDER
-title : DXGKDDI_RENDER
-author : windows-driver-content
-description : The DxgkDdiRender function generates a direct memory access (DMA) buffer from the command buffer that the user-mode display driver passed.
-old-location : display\dxgkddirender.htm
-old-project : display
-ms.assetid : fd634768-5e1e-4f40-82fd-5ef69148c3d7
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkddirender, DxgkDdiRender callback function [Display Devices], DxgkDdiRender, DXGKDDI_RENDER, DXGKDDI_RENDER, d3dkmddi/DxgkDdiRender, DmFunctions_e6f475cd-e097-4ea7-9f66-9e0b2d78d46b.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dkmddi.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
+UID: NC:d3dkmddi.DXGKDDI_RENDER
+title: DXGKDDI_RENDER
+author: windows-driver-content
+description: The DxgkDdiRender function generates a direct memory access (DMA) buffer from the command buffer that the user-mode display driver passed.
+old-location: display\dxgkddirender.htm
+old-project: display
+ms.assetid: fd634768-5e1e-4f40-82fd-5ef69148c3d7
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkddirender, DxgkDdiRender callback function [Display Devices], DxgkDdiRender, DXGKDDI_RENDER, DXGKDDI_RENDER, d3dkmddi/DxgkDdiRender, DmFunctions_e6f475cd-e097-4ea7-9f66-9e0b2d78d46b.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dkmddi.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DxgkDdiRender
+product: Windows
+targetos: Windows
+req.typenames: DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
 

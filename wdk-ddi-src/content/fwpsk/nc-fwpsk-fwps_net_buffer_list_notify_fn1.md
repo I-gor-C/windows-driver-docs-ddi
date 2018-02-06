@@ -1,41 +1,46 @@
 ---
-UID : NC:fwpsk.FWPS_NET_BUFFER_LIST_NOTIFY_FN1
-title : FWPS_NET_BUFFER_LIST_NOTIFY_FN1
-author : windows-driver-content
-description : The filter engine calls the FWPS_NET_BUFFER_LIST_NOTIFY_FN1 callout function to notify the callout driver about events that are associated with packets tagged by the callout.Note   FWPS_NET_BUFFER_LIST_NOTIFY_FN1 is the specific version of FWPS_NET_BUFFER_LIST_NOTIFY_FN used in Windows 8 and later. See WFP Version-Independent Names and Targeting Specific Versions of Windows for more information. For Windows 7, FWPS_NET_BUFFER_LIST_NOTIFY_FN0 is available.
-old-location : netvista\fwps_net_buffer_list_notify_fn1.htm
-old-project : netvista
-ms.assetid : fe9ab4b2-5692-4b6e-a7fc-11e9ac8280bc
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.fwps_net_buffer_list_notify_fn1, FwpsNetBufferListNotifyFN1 callback function [Network Drivers Starting with Windows Vista], FwpsNetBufferListNotifyFN1, FWPS_NET_BUFFER_LIST_NOTIFY_FN1, FWPS_NET_BUFFER_LIST_NOTIFY_FN1, fwpsk/FwpsNetBufferListNotifyFN1
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : fwpsk.h
-req.include-header : Fwpsk.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : INSTANCE_PARTIAL_INFORMATION, PINSTANCE_PARTIAL_INFORMATION
+UID: NC:fwpsk.FWPS_NET_BUFFER_LIST_NOTIFY_FN1
+title: FWPS_NET_BUFFER_LIST_NOTIFY_FN1
+author: windows-driver-content
+description: The filter engine calls the FWPS_NET_BUFFER_LIST_NOTIFY_FN1 callout function to notify the callout driver about events that are associated with packets tagged by the callout.Note   FWPS_NET_BUFFER_LIST_NOTIFY_FN1 is the specific version of FWPS_NET_BUFFER_LIST_NOTIFY_FN used in Windows 8 and later. See WFP Version-Independent Names and Targeting Specific Versions of Windows for more information. For Windows 7, FWPS_NET_BUFFER_LIST_NOTIFY_FN0 is available.
+old-location: netvista\fwps_net_buffer_list_notify_fn1.htm
+old-project: netvista
+ms.assetid: fe9ab4b2-5692-4b6e-a7fc-11e9ac8280bc
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.fwps_net_buffer_list_notify_fn1, FwpsNetBufferListNotifyFN1 callback function [Network Drivers Starting with Windows Vista], FwpsNetBufferListNotifyFN1, FWPS_NET_BUFFER_LIST_NOTIFY_FN1, FWPS_NET_BUFFER_LIST_NOTIFY_FN1, fwpsk/FwpsNetBufferListNotifyFN1
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: fwpsk.h
+req.include-header: Fwpsk.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	fwpsk.h
+apiname:
+-	FwpsNetBufferListNotifyFN1
+product: Windows
+targetos: Windows
+req.typenames: INSTANCE_PARTIAL_INFORMATION, PINSTANCE_PARTIAL_INFORMATION
 ---
 
 

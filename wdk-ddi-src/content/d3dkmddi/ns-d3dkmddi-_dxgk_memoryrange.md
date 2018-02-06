@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGK_MEMORYRANGE
-title : "_DXGK_MEMORYRANGE"
-author : windows-driver-content
-description : DXGK_MEMORYRANGE is used with DxgkDdiQueryAdapterInfo and DXGK_QUERYSEGMENTMEMORYSTATE to query bad graphics processing unit (GPU) memory ranges.
-old-location : display\dxgk_memoryrange.htm
-old-project : display
-ms.assetid : 68B9465D-BA5E-4DE3-8A55-B344399FBB5F
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DXGK_MEMORYRANGE structure [Display Devices], _DXGK_MEMORYRANGE, display.dxgk_memoryrange, d3dkmddi/DXGK_MEMORYRANGE, DXGK_MEMORYRANGE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_MEMORYRANGE
+UID: NS:d3dkmddi._DXGK_MEMORYRANGE
+title: "_DXGK_MEMORYRANGE"
+author: windows-driver-content
+description: DXGK_MEMORYRANGE is used with DxgkDdiQueryAdapterInfo and DXGK_QUERYSEGMENTMEMORYSTATE to query bad graphics processing unit (GPU) memory ranges.
+old-location: display\dxgk_memoryrange.htm
+old-project: display
+ms.assetid: 68B9465D-BA5E-4DE3-8A55-B344399FBB5F
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DXGK_MEMORYRANGE structure [Display Devices], _DXGK_MEMORYRANGE, display.dxgk_memoryrange, d3dkmddi/DXGK_MEMORYRANGE, DXGK_MEMORYRANGE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DXGK_MEMORYRANGE
+product: Windows
+targetos: Windows
+req.typenames: DXGK_MEMORYRANGE
 ---
 
 # _DXGK_MEMORYRANGE structure

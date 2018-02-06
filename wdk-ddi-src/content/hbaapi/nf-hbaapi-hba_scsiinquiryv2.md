@@ -1,41 +1,46 @@
 ---
-UID : NF:hbaapi.HBA_ScsiInquiryV2
-title : HBA_ScsiInquiryV2 function
-author : windows-driver-content
-description : The HBA_ScsiInquiryV2 routine sends a SCSI inquiry command to the specified remote port.
-old-location : storage\hba_scsiinquiryv2.htm
-old-project : storage
-ms.assetid : ba82c6f1-f310-4258-8867-8309845320cc
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : HBA_ScsiInquiryV2 routine [Storage Devices], storage.hba_scsiinquiryv2, HBA_ScsiInquiryV2, hbaapi/HBA_ScsiInquiryV2, fibreHBA_rtns_eb1e2682-5317-4ea3-a3e2-2d1db00c5f9b.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : hbaapi.h
-req.include-header : Hbaapi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Hbaapi.lib
-req.dll : Hbaapi.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HBA_WWNTYPE
+UID: NF:hbaapi.HBA_ScsiInquiryV2
+title: HBA_ScsiInquiryV2 function
+author: windows-driver-content
+description: The HBA_ScsiInquiryV2 routine sends a SCSI inquiry command to the specified remote port.
+old-location: storage\hba_scsiinquiryv2.htm
+old-project: storage
+ms.assetid: ba82c6f1-f310-4258-8867-8309845320cc
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: HBA_ScsiInquiryV2 routine [Storage Devices], storage.hba_scsiinquiryv2, HBA_ScsiInquiryV2, hbaapi/HBA_ScsiInquiryV2, fibreHBA_rtns_eb1e2682-5317-4ea3-a3e2-2d1db00c5f9b.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: hbaapi.h
+req.include-header: Hbaapi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Hbaapi.lib
+req.dll: Hbaapi.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Hbaapi.dll
+apiname:
+-	HBA_ScsiInquiryV2
+product: Windows
+targetos: Windows
+req.typenames: HBA_WWNTYPE
 ---
 
 

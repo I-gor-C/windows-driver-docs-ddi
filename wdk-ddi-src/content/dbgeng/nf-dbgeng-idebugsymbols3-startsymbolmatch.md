@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugSymbols3.StartSymbolMatch
-title : IDebugSymbols3::StartSymbolMatch method
-author : windows-driver-content
-description : The StartSymbolMatch method initializes a search for symbols whose names match a given pattern.
-old-location : debugger\startsymbolmatch.htm
-old-project : debugger
-ms.assetid : 465b13a7-59e0-47f8-9e33-82043a23f146
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : StartSymbolMatch method [Windows Debugging], IDebugSymbols2 interface, IDebugSymbols2 interface [Windows Debugging], StartSymbolMatch method, IDebugSymbols2::StartSymbolMatch, debugger.startsymbolmatch, StartSymbolMatch method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols3::StartSymbolMatch, StartSymbolMatch, StartSymbolMatch method [Windows Debugging], IDebugSymbols interface, IDebugSymbols interface [Windows Debugging], StartSymbolMatch method, dbgeng/IDebugSymbols3::StartSymbolMatch, IDebugSymbols::StartSymbolMatch, dbgeng/IDebugSymbols2::StartSymbolMatch, dbgeng/IDebugSymbols::StartSymbolMatch, IDebugSymbols_4b000f13-0dc1-4a2c-8de3-3bf5384172c3.xml, IDebugSymbols3, StartSymbolMatch method [Windows Debugging], IDebugSymbols3 interface [Windows Debugging], StartSymbolMatch method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSymbols3.StartSymbolMatch
+title: IDebugSymbols3::StartSymbolMatch method
+author: windows-driver-content
+description: The StartSymbolMatch method initializes a search for symbols whose names match a given pattern.
+old-location: debugger\startsymbolmatch.htm
+old-project: debugger
+ms.assetid: 465b13a7-59e0-47f8-9e33-82043a23f146
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: StartSymbolMatch method [Windows Debugging], IDebugSymbols2 interface, IDebugSymbols2 interface [Windows Debugging], StartSymbolMatch method, IDebugSymbols2::StartSymbolMatch, debugger.startsymbolmatch, StartSymbolMatch method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols3::StartSymbolMatch, StartSymbolMatch, StartSymbolMatch method [Windows Debugging], IDebugSymbols interface, IDebugSymbols interface [Windows Debugging], StartSymbolMatch method, dbgeng/IDebugSymbols3::StartSymbolMatch, IDebugSymbols::StartSymbolMatch, dbgeng/IDebugSymbols2::StartSymbolMatch, dbgeng/IDebugSymbols::StartSymbolMatch, IDebugSymbols_4b000f13-0dc1-4a2c-8de3-3bf5384172c3.xml, IDebugSymbols3, StartSymbolMatch method [Windows Debugging], IDebugSymbols3 interface [Windows Debugging], StartSymbolMatch method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugSymbols.StartSymbolMatch
+-	IDebugSymbols2.StartSymbolMatch
+-	IDebugSymbols3.StartSymbolMatch
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

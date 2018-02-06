@@ -1,41 +1,46 @@
 ---
-UID : NN:portcls.IPortWaveRTStream
-title : IPortWaveRTStream
-author : windows-driver-content
-description : The IPortWaveRTStream interface is supported in Windows Vista and later operating systems, and it is a stream-specific interface that provides helper methods for use by the WaveRT miniport driver.
-old-location : audio\iportwavertstream.htm
-old-project : audio
-ms.assetid : ca5039ff-d34a-4a61-b288-64f0c1f31b91
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : audio.iportwavertstream, IPortWaveRTStream interface [Audio Devices], IPortWaveRTStream interface [Audio Devices], described, IPortWaveRTStream, portcls/IPortWaveRTStream, audmp-routines_485f04fa-bdd1-4b92-bb3b-4f8653393811.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : portcls.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Portcls.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NN:portcls.IPortWaveRTStream
+title: IPortWaveRTStream
+author: windows-driver-content
+description: The IPortWaveRTStream interface is supported in Windows Vista and later operating systems, and it is a stream-specific interface that provides helper methods for use by the WaveRT miniport driver.
+old-location: audio\iportwavertstream.htm
+old-project: audio
+ms.assetid: ca5039ff-d34a-4a61-b288-64f0c1f31b91
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: audio.iportwavertstream, IPortWaveRTStream interface [Audio Devices], IPortWaveRTStream interface [Audio Devices], described, IPortWaveRTStream, portcls/IPortWaveRTStream, audmp-routines_485f04fa-bdd1-4b92-bb3b-4f8653393811.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: portcls.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Portcls.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	portcls.h
+apiname:
+-	IPortWaveRTStream
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 # IPortWaveRTStream interface

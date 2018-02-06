@@ -1,41 +1,46 @@
 ---
-UID : NC:fwpsk.FWPS_VSWITCH_FILTER_ENGINE_REORDER_CALLBACK0
-title : FWPS_VSWITCH_FILTER_ENGINE_REORDER_CALLBACK0
-author : windows-driver-content
-description : The filter engine calls the vSwitchFilterEngineReorderNotifyRn (FWPS_VSWITCH_FILTER_ENGINE_REORDER_CALLBACK0) callout function to notify the callout driver about events that are associated the virtual switch filter engine reordering.Note  FWPS_VSWITCH_FILTER_ENGINE_REORDER_CALLBACK0 is a specific version of FWPS_VSWITCH_FILTER_ENGINE_REORDER_CALLBACK. See WFP Version-Independent Names and Targeting Specific Versions of Windows for more information.
-old-location : netvista\fwps_vswitch_filter_engine_reorder_callback0.htm
-old-project : netvista
-ms.assetid : 2526E8BD-316F-4B8D-9CC4-66F4E3B7D708
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.fwps_vswitch_filter_engine_reorder_callback0, vSwitchFilterEngineReorderNotifyRn callback function [Network Drivers Starting with Windows Vista], vSwitchFilterEngineReorderNotifyRn, FWPS_VSWITCH_FILTER_ENGINE_REORDER_CALLBACK0, FWPS_VSWITCH_FILTER_ENGINE_REORDER_CALLBACK0, fwpsk/vSwitchFilterEngineReorderNotifyRn
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : fwpsk.h
-req.include-header : Fwpsk.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : INSTANCE_PARTIAL_INFORMATION, PINSTANCE_PARTIAL_INFORMATION
+UID: NC:fwpsk.FWPS_VSWITCH_FILTER_ENGINE_REORDER_CALLBACK0
+title: FWPS_VSWITCH_FILTER_ENGINE_REORDER_CALLBACK0
+author: windows-driver-content
+description: The filter engine calls the vSwitchFilterEngineReorderNotifyRn (FWPS_VSWITCH_FILTER_ENGINE_REORDER_CALLBACK0) callout function to notify the callout driver about events that are associated the virtual switch filter engine reordering.Note  FWPS_VSWITCH_FILTER_ENGINE_REORDER_CALLBACK0 is a specific version of FWPS_VSWITCH_FILTER_ENGINE_REORDER_CALLBACK. See WFP Version-Independent Names and Targeting Specific Versions of Windows for more information.
+old-location: netvista\fwps_vswitch_filter_engine_reorder_callback0.htm
+old-project: netvista
+ms.assetid: 2526E8BD-316F-4B8D-9CC4-66F4E3B7D708
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.fwps_vswitch_filter_engine_reorder_callback0, vSwitchFilterEngineReorderNotifyRn callback function [Network Drivers Starting with Windows Vista], vSwitchFilterEngineReorderNotifyRn, FWPS_VSWITCH_FILTER_ENGINE_REORDER_CALLBACK0, FWPS_VSWITCH_FILTER_ENGINE_REORDER_CALLBACK0, fwpsk/vSwitchFilterEngineReorderNotifyRn
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: fwpsk.h
+req.include-header: Fwpsk.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	fwpsk.h
+apiname:
+-	vSwitchFilterEngineReorderNotifyRn
+product: Windows
+targetos: Windows
+req.typenames: INSTANCE_PARTIAL_INFORMATION, PINSTANCE_PARTIAL_INFORMATION
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NC:irb.IDE_CHANNEL_INIT
-title : IDE_CHANNEL_INIT
-author : windows-driver-content
-description : The AtaChannelInitRoutine miniport driver routine initializes the miniport driver's channel interface.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
-old-location : storage\atachannelinitroutine.htm
-old-project : storage
-ms.assetid : c59f93cc-d182-4764-a207-0799e55c6cf6
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.atachannelinitroutine, AtaChannelInitRoutine routine [Storage Devices], AtaChannelInitRoutine, IDE_CHANNEL_INIT, IDE_CHANNEL_INIT, irb/AtaChannelInitRoutine, atartns_7bbe3bef-24c7-4666-9b83-a29646d92f71.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : irb.h
-req.include-header : Irb.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : LUID
+UID: NC:irb.IDE_CHANNEL_INIT
+title: IDE_CHANNEL_INIT
+author: windows-driver-content
+description: The AtaChannelInitRoutine miniport driver routine initializes the miniport driver's channel interface.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
+old-location: storage\atachannelinitroutine.htm
+old-project: storage
+ms.assetid: c59f93cc-d182-4764-a207-0799e55c6cf6
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.atachannelinitroutine, AtaChannelInitRoutine routine [Storage Devices], AtaChannelInitRoutine, IDE_CHANNEL_INIT, IDE_CHANNEL_INIT, irb/AtaChannelInitRoutine, atartns_7bbe3bef-24c7-4666-9b83-a29646d92f71.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: irb.h
+req.include-header: Irb.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	irb.h
+apiname:
+-	AtaChannelInitRoutine
+product: Windows
+targetos: Windows
+req.typenames: LUID
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:dxva._DXVA_DeinterlaceQueryAvailableModes
-title : "_DXVA_DeinterlaceQueryAvailableModes"
-author : windows-driver-content
-description : The DXVA_DeinterlaceQueryAvailableModes structure describes the available deinterlacing or frame-rate conversion modes for a particular input video format.
-old-location : display\dxva_deinterlacequeryavailablemodes.htm
-old-project : display
-ms.assetid : c754f540-19ff-491f-89ec-63d3306c4068
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DXVA_DeinterlaceQueryAvailableModes structure [Display Devices], dxva/DXVA_DeinterlaceQueryAvailableModes, display.dxva_deinterlacequeryavailablemodes, _DXVA_DeinterlaceQueryAvailableModes, dxvaref_9c2ffe96-e286-4f0f-bb6b-57bc6ee64b2c.xml, DXVA_DeinterlaceQueryAvailableModes
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : dxva.h
-req.include-header : Dxva.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXVA_DeinterlaceQueryAvailableModes
+UID: NS:dxva._DXVA_DeinterlaceQueryAvailableModes
+title: "_DXVA_DeinterlaceQueryAvailableModes"
+author: windows-driver-content
+description: The DXVA_DeinterlaceQueryAvailableModes structure describes the available deinterlacing or frame-rate conversion modes for a particular input video format.
+old-location: display\dxva_deinterlacequeryavailablemodes.htm
+old-project: display
+ms.assetid: c754f540-19ff-491f-89ec-63d3306c4068
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DXVA_DeinterlaceQueryAvailableModes structure [Display Devices], dxva/DXVA_DeinterlaceQueryAvailableModes, display.dxva_deinterlacequeryavailablemodes, _DXVA_DeinterlaceQueryAvailableModes, dxvaref_9c2ffe96-e286-4f0f-bb6b-57bc6ee64b2c.xml, DXVA_DeinterlaceQueryAvailableModes
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: dxva.h
+req.include-header: Dxva.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	dxva.h
+apiname:
+-	DXVA_DeinterlaceQueryAvailableModes
+product: Windows
+targetos: Windows
+req.typenames: DXVA_DeinterlaceQueryAvailableModes
 ---
 
 # _DXVA_DeinterlaceQueryAvailableModes structure

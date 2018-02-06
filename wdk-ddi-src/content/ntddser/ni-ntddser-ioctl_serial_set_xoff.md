@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddser.IOCTL_SERIAL_SET_XOFF
-title : IOCTL_SERIAL_SET_XOFF
-author : windows-driver-content
-description : The IOCTL_SERIAL_SET_XOFF request emulates the reception of an XOFF (transmit off) character.
-old-location : serports\ioctl_serial_set_xoff.htm
-old-project : serports
-ms.assetid : cfddecbd-e225-484f-ba5c-6223a724b414
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : serports.ioctl_serial_set_xoff, IOCTL_SERIAL_SET_XOFF control code [Serial Ports], IOCTL_SERIAL_SET_XOFF, ntddser/IOCTL_SERIAL_SET_XOFF, serref_a2b3591a-cd26-4073-a7ab-af7f2b3f43b6.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddser.h
-req.include-header : Ntddser.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SD_REQUEST_FUNCTION
+UID: NI:ntddser.IOCTL_SERIAL_SET_XOFF
+title: IOCTL_SERIAL_SET_XOFF
+author: windows-driver-content
+description: The IOCTL_SERIAL_SET_XOFF request emulates the reception of an XOFF (transmit off) character.
+old-location: serports\ioctl_serial_set_xoff.htm
+old-project: serports
+ms.assetid: cfddecbd-e225-484f-ba5c-6223a724b414
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: serports.ioctl_serial_set_xoff, IOCTL_SERIAL_SET_XOFF control code [Serial Ports], IOCTL_SERIAL_SET_XOFF, ntddser/IOCTL_SERIAL_SET_XOFF, serref_a2b3591a-cd26-4073-a7ab-af7f2b3f43b6.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddser.h
+req.include-header: Ntddser.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddser.h
+apiname:
+-	IOCTL_SERIAL_SET_XOFF
+product: Windows
+targetos: Windows
+req.typenames: SD_REQUEST_FUNCTION
 ---
 
 # IOCTL_SERIAL_SET_XOFF IOCTL

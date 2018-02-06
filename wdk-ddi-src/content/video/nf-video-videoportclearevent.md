@@ -1,42 +1,47 @@
 ---
-UID : NF:video.VideoPortClearEvent
-title : VideoPortClearEvent function
-author : windows-driver-content
-description : The VideoPortClearEvent function sets a given event object to the nonsignaled state.
-old-location : display\videoportclearevent.htm
-old-project : display
-ms.assetid : 70b9b8b4-8adc-4628-a37b-b513ecaca9ca
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : video/VideoPortClearEvent, VideoPort_Functions_4b6d9a3c-ee76-4c45-888f-4ef37f802e6b.xml, VideoPortClearEvent function [Display Devices], display.videoportclearevent, VideoPortClearEvent
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows XP and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Videoprt.lib
-req.dll : Videoprt.sys
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_PORT_SERVICES
-req.product : Windows 10 or later.
+UID: NF:video.VideoPortClearEvent
+title: VideoPortClearEvent function
+author: windows-driver-content
+description: The VideoPortClearEvent function sets a given event object to the nonsignaled state.
+old-location: display\videoportclearevent.htm
+old-project: display
+ms.assetid: 70b9b8b4-8adc-4628-a37b-b513ecaca9ca
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: video/VideoPortClearEvent, VideoPort_Functions_4b6d9a3c-ee76-4c45-888f-4ef37f802e6b.xml, VideoPortClearEvent function [Display Devices], display.videoportclearevent, VideoPortClearEvent
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows XP and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Videoprt.lib
+req.dll: Videoprt.sys
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Videoprt.sys
+apiname:
+-	VideoPortClearEvent
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_PORT_SERVICES
+req.product: Windows 10 or later.
 ---
 
 

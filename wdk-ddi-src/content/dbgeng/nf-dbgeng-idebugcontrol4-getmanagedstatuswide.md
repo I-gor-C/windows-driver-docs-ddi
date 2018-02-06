@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugControl4.GetManagedStatusWide
-title : IDebugControl4::GetManagedStatusWide method
-author : windows-driver-content
-description : Provides feedback as a Unicode character string on the engine's use of the runtime debugging APIs provided by the common language runtime (CLR).
-old-location : debugger\idebugcontrol4_getmanagedstatuswide.htm
-old-project : debugger
-ms.assetid : 5854BB6A-EB5F-493A-96E4-0DF298EC0332
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : GetManagedStatusWide method [Windows Debugging], GetManagedStatusWide method [Windows Debugging], IDebugControl4 interface, GetManagedStatusWide, debugger.idebugcontrol4_getmanagedstatuswide, dbgeng/IDebugControl4::GetManagedStatusWide, IDebugControl4::GetManagedStatusWide, IDebugControl4, IDebugControl4 interface [Windows Debugging], GetManagedStatusWide method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl4.GetManagedStatusWide
+title: IDebugControl4::GetManagedStatusWide method
+author: windows-driver-content
+description: Provides feedback as a Unicode character string on the engine's use of the runtime debugging APIs provided by the common language runtime (CLR).
+old-location: debugger\idebugcontrol4_getmanagedstatuswide.htm
+old-project: debugger
+ms.assetid: 5854BB6A-EB5F-493A-96E4-0DF298EC0332
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: GetManagedStatusWide method [Windows Debugging], GetManagedStatusWide method [Windows Debugging], IDebugControl4 interface, GetManagedStatusWide, debugger.idebugcontrol4_getmanagedstatuswide, dbgeng/IDebugControl4::GetManagedStatusWide, IDebugControl4::GetManagedStatusWide, IDebugControl4, IDebugControl4 interface [Windows Debugging], GetManagedStatusWide method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl4.GetManagedStatusWide
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

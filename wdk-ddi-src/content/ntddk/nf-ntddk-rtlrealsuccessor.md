@@ -1,41 +1,46 @@
 ---
-UID : NF:ntddk.RtlRealSuccessor
-title : RtlRealSuccessor function
-author : windows-driver-content
-description : The RtlRealSuccessor routine returns a pointer to the successor of the specified node in the splay link tree.
-old-location : ifsk\rtlrealsuccessor.htm
-old-project : ifsk
-ms.assetid : 19180ab8-7ac6-45cb-8f17-b16368bbb32b
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ntddk/RtlRealSuccessor, RtlRealSuccessor routine [Installable File System Drivers], ifsk.rtlrealsuccessor, rtlref_5bf190a8-a1c9-45d8-8be3-73178d2f7add.xml, RtlRealSuccessor
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntddk.h
-req.include-header : Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : This routine is available on Microsoft Windows 2000 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.RtlRealSuccessor
+title: RtlRealSuccessor function
+author: windows-driver-content
+description: The RtlRealSuccessor routine returns a pointer to the successor of the specified node in the splay link tree.
+old-location: ifsk\rtlrealsuccessor.htm
+old-project: ifsk
+ms.assetid: 19180ab8-7ac6-45cb-8f17-b16368bbb32b
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ntddk/RtlRealSuccessor, RtlRealSuccessor routine [Installable File System Drivers], ifsk.rtlrealsuccessor, rtlref_5bf190a8-a1c9-45d8-8be3-73178d2f7add.xml, RtlRealSuccessor
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntddk.h
+req.include-header: Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: This routine is available on Microsoft Windows 2000 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	RtlRealSuccessor
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

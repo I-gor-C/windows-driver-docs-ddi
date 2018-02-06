@@ -1,42 +1,47 @@
 ---
-UID : NF:rxprocs.RxCompleteRequest
-title : RxCompleteRequest function
-author : windows-driver-content
-description : RxCompleteRequest completes the IRP request associated with an RX_CONTEXT structure.
-old-location : ifsk\rxcompleterequest.htm
-old-project : ifsk
-ms.assetid : f5e9219b-0697-427e-b92e-7cd647a0e0b6
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : RxCompleteRequest, RxCompleteRequest function [Installable File System Drivers], ifsk.rxcompleterequest, rxref_12eec336-4619-430c-a36c-ddbe855b8865.xml, rxprocs/RxCompleteRequest
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : rxprocs.h
-req.include-header : Rxprocs.h, Rxcontx.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RX_CONTEXT, *PRX_CONTEXT
-req.product : Windows 10 or later.
+UID: NF:rxprocs.RxCompleteRequest
+title: RxCompleteRequest function
+author: windows-driver-content
+description: RxCompleteRequest completes the IRP request associated with an RX_CONTEXT structure.
+old-location: ifsk\rxcompleterequest.htm
+old-project: ifsk
+ms.assetid: f5e9219b-0697-427e-b92e-7cd647a0e0b6
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: RxCompleteRequest, RxCompleteRequest function [Installable File System Drivers], ifsk.rxcompleterequest, rxref_12eec336-4619-430c-a36c-ddbe855b8865.xml, rxprocs/RxCompleteRequest
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: rxprocs.h
+req.include-header: Rxprocs.h, Rxcontx.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	rxprocs.h
+apiname:
+-	RxCompleteRequest
+product: Windows
+targetos: Windows
+req.typenames: RX_CONTEXT, *PRX_CONTEXT
+req.product: Windows 10 or later.
 ---
 
 

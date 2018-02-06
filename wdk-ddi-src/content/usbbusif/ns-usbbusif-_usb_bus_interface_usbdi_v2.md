@@ -1,42 +1,47 @@
 ---
-UID : NS:usbbusif._USB_BUS_INTERFACE_USBDI_V2
-title : "_USB_BUS_INTERFACE_USBDI_V2"
-author : windows-driver-content
-description : The USB_BUS_INTERFACE_USBDI_V2 structure is provided by the USB hub driver to allow USB clients to make direct calls to the hub driver without allocating IRPs.
-old-location : buses\usb_bus_interface_usbdi_v2.htm
-old-project : usbref
-ms.assetid : c7d9f8b1-a18f-4644-aaee-c019692e62a6
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : usbinterKR_bcb1539a-bd26-421b-b8b3-c135ffe45e57.xml, USB_BUS_INTERFACE_USBDI_V2, PUSB_BUS_INTERFACE_USBDI_V2 structure pointer [Buses], PUSB_BUS_INTERFACE_USBDI_V2, USB_BUS_INTERFACE_USBDI_V2 structure [Buses], *PUSB_BUS_INTERFACE_USBDI_V2, usbbusif/USB_BUS_INTERFACE_USBDI_V2, usbbusif/PUSB_BUS_INTERFACE_USBDI_V2, _USB_BUS_INTERFACE_USBDI_V2, buses.usb_bus_interface_usbdi_v2
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : usbbusif.h
-req.include-header : Usbbusif.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : USB_BUS_INTERFACE_USBDI_V2, *PUSB_BUS_INTERFACE_USBDI_V2
-req.product : Windows 10 or later.
+UID: NS:usbbusif._USB_BUS_INTERFACE_USBDI_V2
+title: "_USB_BUS_INTERFACE_USBDI_V2"
+author: windows-driver-content
+description: The USB_BUS_INTERFACE_USBDI_V2 structure is provided by the USB hub driver to allow USB clients to make direct calls to the hub driver without allocating IRPs.
+old-location: buses\usb_bus_interface_usbdi_v2.htm
+old-project: usbref
+ms.assetid: c7d9f8b1-a18f-4644-aaee-c019692e62a6
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: usbinterKR_bcb1539a-bd26-421b-b8b3-c135ffe45e57.xml, USB_BUS_INTERFACE_USBDI_V2, PUSB_BUS_INTERFACE_USBDI_V2 structure pointer [Buses], PUSB_BUS_INTERFACE_USBDI_V2, USB_BUS_INTERFACE_USBDI_V2 structure [Buses], *PUSB_BUS_INTERFACE_USBDI_V2, usbbusif/USB_BUS_INTERFACE_USBDI_V2, usbbusif/PUSB_BUS_INTERFACE_USBDI_V2, _USB_BUS_INTERFACE_USBDI_V2, buses.usb_bus_interface_usbdi_v2
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: usbbusif.h
+req.include-header: Usbbusif.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	usbbusif.h
+apiname:
+-	USB_BUS_INTERFACE_USBDI_V2
+product: Windows
+targetos: Windows
+req.typenames: USB_BUS_INTERFACE_USBDI_V2, *PUSB_BUS_INTERFACE_USBDI_V2
+req.product: Windows 10 or later.
 ---
 
 # _USB_BUS_INTERFACE_USBDI_V2 structure

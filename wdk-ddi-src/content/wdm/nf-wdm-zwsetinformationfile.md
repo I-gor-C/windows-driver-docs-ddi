@@ -1,42 +1,48 @@
 ---
-UID : NF:wdm.ZwSetInformationFile
-title : ZwSetInformationFile function
-author : windows-driver-content
-description : The ZwSetInformationFile routine changes various kinds of information about a file object.
-old-location : kernel\zwsetinformationfile.htm
-old-project : kernel
-ms.assetid : a6f92495-89f0-4728-b6d8-083c55bc3206
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ZwSetInformationFile, k111_91ac021a-37b3-4d2d-9369-c80659e0dcd7.xml, NtSetInformationFile, kernel.zwsetinformationfile, wdm/NtSetInformationFile, ZwSetInformationFile routine [Kernel-Mode Driver Architecture], wdm/ZwSetInformationFile
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ZwSetInformationFile
+title: ZwSetInformationFile function
+author: windows-driver-content
+description: The ZwSetInformationFile routine changes various kinds of information about a file object.
+old-location: kernel\zwsetinformationfile.htm
+old-project: kernel
+ms.assetid: a6f92495-89f0-4728-b6d8-083c55bc3206
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ZwSetInformationFile, k111_91ac021a-37b3-4d2d-9369-c80659e0dcd7.xml, NtSetInformationFile, kernel.zwsetinformationfile, wdm/NtSetInformationFile, ZwSetInformationFile routine [Kernel-Mode Driver Architecture], wdm/ZwSetInformationFile
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ZwSetInformationFile
+-	NtSetInformationFile
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

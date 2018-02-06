@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugControl3.OutputPromptVaList
-title : IDebugControl3::OutputPromptVaList method
-author : windows-driver-content
-description : The OutputPromptVaList method formats and sends a user prompt to the output callback objects.
-old-location : debugger\outputpromptvalist.htm
-old-project : debugger
-ms.assetid : 08140a38-19dd-4fce-8659-ab5eb3257f2f
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : debugger.outputpromptvalist, IDebugControl2::OutputPromptVaList, OutputPromptVaList method [Windows Debugging], dbgeng/IDebugControl3::OutputPromptVaList, dbgeng/IDebugControl::OutputPromptVaList, OutputPromptVaList method [Windows Debugging], IDebugControl2 interface, OutputPromptVaList, IDebugControl_fc743964-a97c-45d2-8167-0e7401c7a546.xml, IDebugControl3, IDebugControl::OutputPromptVaList, dbgeng/IDebugControl2::OutputPromptVaList, IDebugControl3 interface [Windows Debugging], OutputPromptVaList method, IDebugControl2 interface [Windows Debugging], OutputPromptVaList method, IDebugControl3::OutputPromptVaList, OutputPromptVaList method [Windows Debugging], IDebugControl interface, IDebugControl interface [Windows Debugging], OutputPromptVaList method, OutputPromptVaList method [Windows Debugging], IDebugControl3 interface
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h, Stdarg.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl3.OutputPromptVaList
+title: IDebugControl3::OutputPromptVaList method
+author: windows-driver-content
+description: The OutputPromptVaList method formats and sends a user prompt to the output callback objects.
+old-location: debugger\outputpromptvalist.htm
+old-project: debugger
+ms.assetid: 08140a38-19dd-4fce-8659-ab5eb3257f2f
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: debugger.outputpromptvalist, IDebugControl2::OutputPromptVaList, OutputPromptVaList method [Windows Debugging], dbgeng/IDebugControl3::OutputPromptVaList, dbgeng/IDebugControl::OutputPromptVaList, OutputPromptVaList method [Windows Debugging], IDebugControl2 interface, OutputPromptVaList, IDebugControl_fc743964-a97c-45d2-8167-0e7401c7a546.xml, IDebugControl3, IDebugControl::OutputPromptVaList, dbgeng/IDebugControl2::OutputPromptVaList, IDebugControl3 interface [Windows Debugging], OutputPromptVaList method, IDebugControl2 interface [Windows Debugging], OutputPromptVaList method, IDebugControl3::OutputPromptVaList, OutputPromptVaList method [Windows Debugging], IDebugControl interface, IDebugControl interface [Windows Debugging], OutputPromptVaList method, OutputPromptVaList method [Windows Debugging], IDebugControl3 interface
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h, Stdarg.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl.OutputPromptVaList
+-	IDebugControl2.OutputPromptVaList
+-	IDebugControl3.OutputPromptVaList
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NE:wudfddi.__MIDL___MIDL_itf_wudfddi_0000_0000_0001
-title : "__MIDL___MIDL_itf_wudfddi_0000_0000_0001"
-author : windows-driver-content
-description : The POWER_ACTION enumeration identifies the system power actions that can occur on a computer.
-old-location : wdf\power_action.htm
-old-project : wdf
-ms.assetid : 0c4a5eb8-d364-4e5d-9d2f-2605c8c34f63
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : PPOWER_ACTION enumeration pointer, umdfstructs_02db2a83-1907-4aa2-9cdd-af3477e78ddd.xml, *PPOWER_ACTION, PowerActionShutdownOff, wudfddi/PowerActionReserved, PPOWER_ACTION, wudfddi/PowerActionShutdown, PowerActionWarmEject, wudfddi/PowerActionShutdownOff, wdf.power_action, __MIDL___MIDL_itf_wudfddi_0000_0000_0001, PowerActionHibernate, POWER_ACTION, wudfddi/PowerActionSleep, wudfddi/PPOWER_ACTION, PowerActionShutdown, PowerActionNone, wudfddi/PowerActionWarmEject, wudfddi/POWER_ACTION, POWER_ACTION enumeration, PowerActionShutdownReset, wudfddi/PowerActionNone, PowerActionReserved, PowerActionSleep, wudfddi/PowerActionHibernate, umdf.power_action, wudfddi/PowerActionShutdownReset
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : wudfddi.h
-req.include-header : Wudfddi.h, Ntpoapi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.9
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NE:wudfddi.__MIDL___MIDL_itf_wudfddi_0000_0000_0001
+title: "__MIDL___MIDL_itf_wudfddi_0000_0000_0001"
+author: windows-driver-content
+description: The POWER_ACTION enumeration identifies the system power actions that can occur on a computer.
+old-location: wdf\power_action.htm
+old-project: wdf
+ms.assetid: 0c4a5eb8-d364-4e5d-9d2f-2605c8c34f63
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: PPOWER_ACTION enumeration pointer, umdfstructs_02db2a83-1907-4aa2-9cdd-af3477e78ddd.xml, *PPOWER_ACTION, PowerActionShutdownOff, wudfddi/PowerActionReserved, PPOWER_ACTION, wudfddi/PowerActionShutdown, PowerActionWarmEject, wudfddi/PowerActionShutdownOff, wdf.power_action, __MIDL___MIDL_itf_wudfddi_0000_0000_0001, PowerActionHibernate, POWER_ACTION, wudfddi/PowerActionSleep, wudfddi/PPOWER_ACTION, PowerActionShutdown, PowerActionNone, wudfddi/PowerActionWarmEject, wudfddi/POWER_ACTION, POWER_ACTION enumeration, PowerActionShutdownReset, wudfddi/PowerActionNone, PowerActionReserved, PowerActionSleep, wudfddi/PowerActionHibernate, umdf.power_action, wudfddi/PowerActionShutdownReset
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: wudfddi.h
+req.include-header: Wudfddi.h, Ntpoapi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.9
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wudfddi.h
+apiname:
+-	POWER_ACTION
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 # __MIDL___MIDL_itf_wudfddi_0000_0000_0001 Enumeration
@@ -61,51 +66,51 @@ typedef enum  {
 ## Constants
 
 <table>
-
-<tr>
-<td>PowerActionHibernate</td>
-<td>The computer is entering its <a href="https://msdn.microsoft.com/2fd883b5-4e89-4ce9-b75a-b821348ac860">hibernation (S4) state</a>.</td>
-</tr>
-
-<tr>
-<td>PowerActionNone</td>
-<td>No power action is taking place.</td>
-</tr>
-
-<tr>
-<td>PowerActionReserved</td>
-<td>Reserved for system use.</td>
-</tr>
-
-<tr>
-<td>PowerActionShutdown</td>
-<td>The computer is entering its <a href="https://msdn.microsoft.com/c08d688d-c31a-4d57-a343-406edfa35e8f">shutdown (S5) state</a>. After all devices have entered their <a href="https://msdn.microsoft.com/f594a63f-10ce-439d-abe3-d342555d98f0">off (D3) state</a>, the computer remains powered on until an administrator presses the power button.</td>
-</tr>
-
-<tr>
-<td>PowerActionShutdownOff</td>
-<td>The computer is entering its shutdown (S5) state. After all devices have entered their off (D3) state, the computer automatically powers off.</td>
-</tr>
-
-<tr>
-<td>PowerActionShutdownReset</td>
-<td>The computer is entering its shutdown (S5) state. After all devices have entered their off (D3) state, the computer automatically powers off and then immediately restarts and returns to its working (S0) state.</td>
-</tr>
-
-<tr>
-<td>PowerActionSleep</td>
-<td>The computer is entering a <a href="https://msdn.microsoft.com/2fd883b5-4e89-4ce9-b75a-b821348ac860">system sleeping (S1, S2, or S3) state</a>.</td>
-</tr>
-
-<tr>
-<td>PowerActionWarmEject</td>
-<td>The computer is being ejected from an ACPI-compatible dock device. Typically, the computer's power state does not change.</td>
-</tr>
+            
+                <tr>
+                    <td>PowerActionHibernate</td>
+                    <td>The computer is entering its <a href="https://msdn.microsoft.com/2fd883b5-4e89-4ce9-b75a-b821348ac860">hibernation (S4) state</a>.</td>
+                </tr>
+            
+                <tr>
+                    <td>PowerActionNone</td>
+                    <td>No power action is taking place.</td>
+                </tr>
+            
+                <tr>
+                    <td>PowerActionReserved</td>
+                    <td>Reserved for system use.</td>
+                </tr>
+            
+                <tr>
+                    <td>PowerActionShutdown</td>
+                    <td>The computer is entering its <a href="https://msdn.microsoft.com/c08d688d-c31a-4d57-a343-406edfa35e8f">shutdown (S5) state</a>. After all devices have entered their <a href="https://msdn.microsoft.com/f594a63f-10ce-439d-abe3-d342555d98f0">off (D3) state</a>, the computer remains powered on until an administrator presses the power button.</td>
+                </tr>
+            
+                <tr>
+                    <td>PowerActionShutdownOff</td>
+                    <td>The computer is entering its shutdown (S5) state. After all devices have entered their off (D3) state, the computer automatically powers off.</td>
+                </tr>
+            
+                <tr>
+                    <td>PowerActionShutdownReset</td>
+                    <td>The computer is entering its shutdown (S5) state. After all devices have entered their off (D3) state, the computer automatically powers off and then immediately restarts and returns to its working (S0) state.</td>
+                </tr>
+            
+                <tr>
+                    <td>PowerActionSleep</td>
+                    <td>The computer is entering a <a href="https://msdn.microsoft.com/2fd883b5-4e89-4ce9-b75a-b821348ac860">system sleeping (S1, S2, or S3) state</a>.</td>
+                </tr>
+            
+                <tr>
+                    <td>PowerActionWarmEject</td>
+                    <td>The computer is being ejected from an ACPI-compatible dock device. Typically, the computer's power state does not change.</td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-The <b>POWER_ACTION</b> enumeration is used as the return value for <a href="https://msdn.microsoft.com/library/windows/hardware/ff556936">IWDFDevice2::GetSystemPowerAction</a>.
+        The <b>POWER_ACTION</b> enumeration is used as the return value for <a href="https://msdn.microsoft.com/library/windows/hardware/ff556936">IWDFDevice2::GetSystemPowerAction</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -113,9 +118,9 @@ The <b>POWER_ACTION</b> enumeration is used as the return value for <a href="htt
 | **Minimum UMDF version** | 1.9 |
 | **Header** | wudfddi.h (include Wudfddi.h, Ntpoapi.h) |
 
-## See Also
+    ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556936">IWDFDevice2::GetSystemPowerAction</a>
+        <a href="https://msdn.microsoft.com/library/windows/hardware/ff556936">IWDFDevice2::GetSystemPowerAction</a>
 
  
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGKARG_COMMITVIDPN
-title : "_DXGKARG_COMMITVIDPN"
-author : windows-driver-content
-description : The DXGKARG_COMMITVIDPN structure holds arguments for the DxgkDdiCommitVidPn function. The DxgkDdiCommitVidPn function makes a specified video present network (VidPN) active on a display adapter.
-old-location : display\dxgkarg_commitvidpn.htm
-old-project : display
-ms.assetid : d297d917-fc49-454a-aacd-4db0ac7a09c2
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkarg_commitvidpn, DXGKARG_COMMITVIDPN, d3dkmddi/DXGKARG_COMMITVIDPN, _DXGKARG_COMMITVIDPN, DXGKARG_COMMITVIDPN structure [Display Devices], DmStructs_c5fd5803-c93b-4000-94b3-3adcb37dd6c1.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGKARG_COMMITVIDPN
+UID: NS:d3dkmddi._DXGKARG_COMMITVIDPN
+title: "_DXGKARG_COMMITVIDPN"
+author: windows-driver-content
+description: The DXGKARG_COMMITVIDPN structure holds arguments for the DxgkDdiCommitVidPn function. The DxgkDdiCommitVidPn function makes a specified video present network (VidPN) active on a display adapter.
+old-location: display\dxgkarg_commitvidpn.htm
+old-project: display
+ms.assetid: d297d917-fc49-454a-aacd-4db0ac7a09c2
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkarg_commitvidpn, DXGKARG_COMMITVIDPN, d3dkmddi/DXGKARG_COMMITVIDPN, _DXGKARG_COMMITVIDPN, DXGKARG_COMMITVIDPN structure [Display Devices], DmStructs_c5fd5803-c93b-4000-94b3-3adcb37dd6c1.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DXGKARG_COMMITVIDPN
+product: Windows
+targetos: Windows
+req.typenames: DXGKARG_COMMITVIDPN
 ---
 
 # _DXGKARG_COMMITVIDPN structure

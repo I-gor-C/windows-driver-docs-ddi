@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddk._WHEA_ERROR_PACKET_V1
-title : "_WHEA_ERROR_PACKET_V1"
-author : windows-driver-content
-description : The WHEA_ERROR_PACKET_V1 structure describes the hardware error data that is passed to the operating system by a low-level hardware error handler (LLHEH).Note  The WHEA_ERROR_PACKET_V1 structure is supported in Windows Server 2008 and Windows Vista SP1.
-old-location : whea\whea_error_packet_v1.htm
-old-project : whea
-ms.assetid : 66189a9a-241f-4457-87cd-d5d583a46f14
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : WHEA_ERROR_PACKET_V1, *PWHEA_ERROR_PACKET, WHEA_ERROR_PACKET_V1 structure [WHEA Drivers and Applications], ntddk/PWHEA_ERROR_PACKET_V1, *PWHEA_ERROR_PACKET_V1, WHEA_ERROR_PACKET, whearef_d65ca9a6-c7ff-42f0-b7d5-763b6a34b924.xml, ntddk/WHEA_ERROR_PACKET_V1, whea.whea_error_packet_v1, PWHEA_ERROR_PACKET_V1 structure pointer [WHEA Drivers and Applications], PWHEA_ERROR_PACKET_V1, _WHEA_ERROR_PACKET_V1
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_ERROR_PACKET, WHEA_ERROR_PACKET_V1, *PWHEA_ERROR_PACKET, *PWHEA_ERROR_PACKET_V1
+UID: NS:ntddk._WHEA_ERROR_PACKET_V1
+title: "_WHEA_ERROR_PACKET_V1"
+author: windows-driver-content
+description: The WHEA_ERROR_PACKET_V1 structure describes the hardware error data that is passed to the operating system by a low-level hardware error handler (LLHEH).Note  The WHEA_ERROR_PACKET_V1 structure is supported in Windows Server 2008 and Windows Vista SP1.
+old-location: whea\whea_error_packet_v1.htm
+old-project: whea
+ms.assetid: 66189a9a-241f-4457-87cd-d5d583a46f14
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: WHEA_ERROR_PACKET_V1, *PWHEA_ERROR_PACKET, WHEA_ERROR_PACKET_V1 structure [WHEA Drivers and Applications], ntddk/PWHEA_ERROR_PACKET_V1, *PWHEA_ERROR_PACKET_V1, WHEA_ERROR_PACKET, whearef_d65ca9a6-c7ff-42f0-b7d5-763b6a34b924.xml, ntddk/WHEA_ERROR_PACKET_V1, whea.whea_error_packet_v1, PWHEA_ERROR_PACKET_V1 structure pointer [WHEA Drivers and Applications], PWHEA_ERROR_PACKET_V1, _WHEA_ERROR_PACKET_V1
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddk.h
+apiname:
+-	WHEA_ERROR_PACKET_V1
+product: Windows
+targetos: Windows
+req.typenames: WHEA_ERROR_PACKET, WHEA_ERROR_PACKET_V1, *PWHEA_ERROR_PACKET, *PWHEA_ERROR_PACKET_V1
 ---
 
 # _WHEA_ERROR_PACKET_V1 structure

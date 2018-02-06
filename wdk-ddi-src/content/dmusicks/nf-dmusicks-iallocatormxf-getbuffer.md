@@ -1,41 +1,46 @@
 ---
-UID : NF:dmusicks.IAllocatorMXF.GetBuffer
-title : IAllocatorMXF::GetBuffer method
-author : windows-driver-content
-description : The GetBuffer method allocates a buffer for long MIDI events.
-old-location : audio\iallocatormxf_getbuffer.htm
-old-project : audio
-ms.assetid : eebae465-a49a-4e19-a636-9da7f9db7278
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : audmp-routines_5abb78f4-de92-4342-877f-e7f1c15f8d8e.xml, dmusicks/IAllocatorMXF::GetBuffer, audio.iallocatormxf_getbuffer, GetBuffer method [Audio Devices], IAllocatorMXF, IAllocatorMXF::GetBuffer, IAllocatorMXF interface [Audio Devices], GetBuffer method, GetBuffer, GetBuffer method [Audio Devices], IAllocatorMXF interface
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dmusicks.h
-req.include-header : Dmusicks.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dmusicks.h
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DMUS_STREAM_TYPE
+UID: NF:dmusicks.IAllocatorMXF.GetBuffer
+title: IAllocatorMXF::GetBuffer method
+author: windows-driver-content
+description: The GetBuffer method allocates a buffer for long MIDI events.
+old-location: audio\iallocatormxf_getbuffer.htm
+old-project: audio
+ms.assetid: eebae465-a49a-4e19-a636-9da7f9db7278
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: audmp-routines_5abb78f4-de92-4342-877f-e7f1c15f8d8e.xml, dmusicks/IAllocatorMXF::GetBuffer, audio.iallocatormxf_getbuffer, GetBuffer method [Audio Devices], IAllocatorMXF, IAllocatorMXF::GetBuffer, IAllocatorMXF interface [Audio Devices], GetBuffer method, GetBuffer, GetBuffer method [Audio Devices], IAllocatorMXF interface
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dmusicks.h
+req.include-header: Dmusicks.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dmusicks.h
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dmusicks.h
+apiname:
+-	IAllocatorMXF.GetBuffer
+product: Windows
+targetos: Windows
+req.typenames: DMUS_STREAM_TYPE
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugClient5.CreateProcess2
-title : IDebugClient5::CreateProcess2 method
-author : windows-driver-content
-description : The CreateProcess2 method executes the given command to create a new process.
-old-location : debugger\createprocess2.htm
-old-project : debugger
-ms.assetid : 6b10dcec-2c1a-4068-adb2-4f532ec0b897
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : CreateProcess2 method [Windows Debugging], IDebugClient5 interface, CreateProcess2 method [Windows Debugging], dbgeng/IDebugClient5::CreateProcess2, CreateProcess2, IDebugClient_1cf74a01-b7bd-4899-8a17-4fc443ee0fbc.xml, IDebugClient5 interface [Windows Debugging], CreateProcess2 method, debugger.createprocess2, IDebugClient5, IDebugClient5::CreateProcess2
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugClient5.CreateProcess2
+title: IDebugClient5::CreateProcess2 method
+author: windows-driver-content
+description: The CreateProcess2 method executes the given command to create a new process.
+old-location: debugger\createprocess2.htm
+old-project: debugger
+ms.assetid: 6b10dcec-2c1a-4068-adb2-4f532ec0b897
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: CreateProcess2 method [Windows Debugging], IDebugClient5 interface, CreateProcess2 method [Windows Debugging], dbgeng/IDebugClient5::CreateProcess2, CreateProcess2, IDebugClient_1cf74a01-b7bd-4899-8a17-4fc443ee0fbc.xml, IDebugClient5 interface [Windows Debugging], CreateProcess2 method, debugger.createprocess2, IDebugClient5, IDebugClient5::CreateProcess2
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugClient5.CreateProcess2
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

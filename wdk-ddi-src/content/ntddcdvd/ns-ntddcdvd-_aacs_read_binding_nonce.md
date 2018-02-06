@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddcdvd._AACS_READ_BINDING_NONCE
-title : "_AACS_READ_BINDING_NONCE"
-author : windows-driver-content
-description : The AACS_READ_BINDING_NONCE structure is a wrapper for the Authentication Grant Identifier (AGID) and logical block address (LBA)/length pair that are required to read a nonce.
-old-location : storage\aacs_read_binding_nonce.htm
-old-project : storage
-ms.assetid : 5d017896-bb83-4ea3-9d28-b774213f86e9
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : ntddcdvd/AACS_READ_BINDING_NONCE, PAACS_READ_BINDING_NONCE structure pointer [Storage Devices], PAACS_READ_BINDING_NONCE, _AACS_READ_BINDING_NONCE, AACS_READ_BINDING_NONCE, *PAACS_READ_BINDING_NONCE, ntddcdvd/PAACS_READ_BINDING_NONCE, AACS_READ_BINDING_NONCE structure [Storage Devices], storage.aacs_read_binding_nonce, structs-DVD_bc4b150f-5fa2-4c8d-b8fa-d3c3bf1c8639.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddcdvd.h
-req.include-header : Ntddcdvd.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : AACS_READ_BINDING_NONCE, *PAACS_READ_BINDING_NONCE
+UID: NS:ntddcdvd._AACS_READ_BINDING_NONCE
+title: "_AACS_READ_BINDING_NONCE"
+author: windows-driver-content
+description: The AACS_READ_BINDING_NONCE structure is a wrapper for the Authentication Grant Identifier (AGID) and logical block address (LBA)/length pair that are required to read a nonce.
+old-location: storage\aacs_read_binding_nonce.htm
+old-project: storage
+ms.assetid: 5d017896-bb83-4ea3-9d28-b774213f86e9
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: ntddcdvd/AACS_READ_BINDING_NONCE, PAACS_READ_BINDING_NONCE structure pointer [Storage Devices], PAACS_READ_BINDING_NONCE, _AACS_READ_BINDING_NONCE, AACS_READ_BINDING_NONCE, *PAACS_READ_BINDING_NONCE, ntddcdvd/PAACS_READ_BINDING_NONCE, AACS_READ_BINDING_NONCE structure [Storage Devices], storage.aacs_read_binding_nonce, structs-DVD_bc4b150f-5fa2-4c8d-b8fa-d3c3bf1c8639.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddcdvd.h
+req.include-header: Ntddcdvd.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddcdvd.h
+apiname:
+-	AACS_READ_BINDING_NONCE
+product: Windows
+targetos: Windows
+req.typenames: AACS_READ_BINDING_NONCE, *PAACS_READ_BINDING_NONCE
 ---
 
 # _AACS_READ_BINDING_NONCE structure

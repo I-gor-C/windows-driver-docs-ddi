@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.ExDeleteLookasideListEx
-title : ExDeleteLookasideListEx function
-author : windows-driver-content
-description : The ExDeleteLookasideListEx routine deletes a lookaside list.
-old-location : kernel\exdeletelookasidelistex.htm
-old-project : kernel
-ms.assetid : b72187de-a2ac-446f-bb06-9ca380454122
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ExDeleteLookasideListEx, wdm/ExDeleteLookasideListEx, ExDeleteLookasideListEx routine [Kernel-Mode Driver Architecture], k102_35b6c2b4-58a3-4900-b8dc-63ed0a53b80f.xml, kernel.exdeletelookasidelistex
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ExDeleteLookasideListEx
+title: ExDeleteLookasideListEx function
+author: windows-driver-content
+description: The ExDeleteLookasideListEx routine deletes a lookaside list.
+old-location: kernel\exdeletelookasidelistex.htm
+old-project: kernel
+ms.assetid: b72187de-a2ac-446f-bb06-9ca380454122
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ExDeleteLookasideListEx, wdm/ExDeleteLookasideListEx, ExDeleteLookasideListEx routine [Kernel-Mode Driver Architecture], k102_35b6c2b4-58a3-4900-b8dc-63ed0a53b80f.xml, kernel.exdeletelookasidelistex
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ExDeleteLookasideListEx
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

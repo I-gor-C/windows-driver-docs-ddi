@@ -1,42 +1,48 @@
 ---
-UID : NF:srb.ScsiPortStallExecution
-title : ScsiPortStallExecution function
-author : windows-driver-content
-description : The ScsiPortStallExecution routine stalls in the miniport driver.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future.
-old-location : storage\scsiportstallexecution.htm
-old-project : storage
-ms.assetid : 2b033cfe-9649-4993-b348-6c9af2d0f4bc
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : srb/ScsiPortStallExecution, storage.scsiportstallexecution, ScsiPortStallExecution, ScsiPortStallExecution routine [Storage Devices], scsiprt_563a19de-adda-4461-9eb2-4c97a2c4f179.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : srb.h
-req.include-header : Miniport.h, Scsi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Scsiport.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SPB_CONTROLLER_CONFIG, *PSPB_CONTROLLER_CONFIG
-req.product : Windows 10 or later.
+UID: NF:srb.ScsiPortStallExecution
+title: ScsiPortStallExecution function
+author: windows-driver-content
+description: The ScsiPortStallExecution routine stalls in the miniport driver.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future.
+old-location: storage\scsiportstallexecution.htm
+old-project: storage
+ms.assetid: 2b033cfe-9649-4993-b348-6c9af2d0f4bc
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: srb/ScsiPortStallExecution, storage.scsiportstallexecution, ScsiPortStallExecution, ScsiPortStallExecution routine [Storage Devices], scsiprt_563a19de-adda-4461-9eb2-4c97a2c4f179.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: srb.h
+req.include-header: Miniport.h, Scsi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Scsiport.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Scsiport.lib
+-	Scsiport.dll
+apiname:
+-	ScsiPortStallExecution
+product: Windows
+targetos: Windows
+req.typenames: SPB_CONTROLLER_CONFIG, *PSPB_CONTROLLER_CONFIG
+req.product: Windows 10 or later.
 ---
 
 

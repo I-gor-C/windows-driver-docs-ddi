@@ -1,41 +1,46 @@
 ---
-UID : NF:ntddk.RtlCharToInteger
-title : RtlCharToInteger function
-author : windows-driver-content
-description : The RtlCharToInteger routine converts a single-byte character string to an integer value in the specified base.
-old-location : kernel\rtlchartointeger.htm
-old-project : kernel
-ms.assetid : a08cb12a-c574-4871-9bba-f8f3a766f377
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : RtlCharToInteger, RtlCharToInteger routine [Kernel-Mode Driver Architecture], kernel.rtlchartointeger, k109_0c8d9b78-6363-4884-a475-4f402ea3643a.xml, ntddk/RtlCharToInteger
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.RtlCharToInteger
+title: RtlCharToInteger function
+author: windows-driver-content
+description: The RtlCharToInteger routine converts a single-byte character string to an integer value in the specified base.
+old-location: kernel\rtlchartointeger.htm
+old-project: kernel
+ms.assetid: a08cb12a-c574-4871-9bba-f8f3a766f377
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: RtlCharToInteger, RtlCharToInteger routine [Kernel-Mode Driver Architecture], kernel.rtlchartointeger, k109_0c8d9b78-6363-4884-a475-4f402ea3643a.xml, ntddk/RtlCharToInteger
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	RtlCharToInteger
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

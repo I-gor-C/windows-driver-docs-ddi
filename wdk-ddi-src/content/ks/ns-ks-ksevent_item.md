@@ -1,41 +1,46 @@
 ---
-UID : NS:ks.KSEVENT_ITEM
-title : KSEVENT_ITEM
-author : windows-driver-content
-description : The KSEVENT_ITEM structure describe a minidriver's support for a specific event within an event set.
-old-location : stream\ksevent_item.htm
-old-project : stream
-ms.assetid : a501a693-bea1-43eb-af8c-5512c8ee9d50
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ks-struct_1e126443-3eef-4e67-9969-69c3a4aaa17c.xml, KSEVENT_ITEM, PKSEVENT_ITEM structure pointer [Streaming Media Devices], KSEVENT_ITEM structure [Streaming Media Devices], stream.ksevent_item, *PKSEVENT_ITEM, ks/PKSEVENT_ITEM, PKSEVENT_ITEM, ks/KSEVENT_ITEM
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKSEVENT_ITEM, KSEVENT_ITEM"
+UID: NS:ks.KSEVENT_ITEM
+title: KSEVENT_ITEM
+author: windows-driver-content
+description: The KSEVENT_ITEM structure describe a minidriver's support for a specific event within an event set.
+old-location: stream\ksevent_item.htm
+old-project: stream
+ms.assetid: a501a693-bea1-43eb-af8c-5512c8ee9d50
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ks-struct_1e126443-3eef-4e67-9969-69c3a4aaa17c.xml, KSEVENT_ITEM, PKSEVENT_ITEM structure pointer [Streaming Media Devices], KSEVENT_ITEM structure [Streaming Media Devices], stream.ksevent_item, *PKSEVENT_ITEM, ks/PKSEVENT_ITEM, PKSEVENT_ITEM, ks/KSEVENT_ITEM
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	KSEVENT_ITEM
+product: Windows
+targetos: Windows
+req.typenames: "*PKSEVENT_ITEM, KSEVENT_ITEM"
 ---
 
 # KSEVENT_ITEM structure

@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.ExQueryDepthSList
-title : ExQueryDepthSList function
-author : windows-driver-content
-description : The ExQueryDepthSList routine returns the number of entries currently in a given sequenced singly linked list.
-old-location : kernel\exquerydepthslist.htm
-old-project : kernel
-ms.assetid : fdf40535-4e0d-4db9-9e95-744029eb2bd5
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ExQueryDepthSList routine [Kernel-Mode Driver Architecture], ExQueryDepthSList, k102_14e2b5cb-bc6a-43f7-a0b2-1fcd8fd414a7.xml, wdm/ExQueryDepthSList, kernel.exquerydepthslist
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ExQueryDepthSList
+title: ExQueryDepthSList function
+author: windows-driver-content
+description: The ExQueryDepthSList routine returns the number of entries currently in a given sequenced singly linked list.
+old-location: kernel\exquerydepthslist.htm
+old-project: kernel
+ms.assetid: fdf40535-4e0d-4db9-9e95-744029eb2bd5
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ExQueryDepthSList routine [Kernel-Mode Driver Architecture], ExQueryDepthSList, k102_14e2b5cb-bc6a-43f7-a0b2-1fcd8fd414a7.xml, wdm/ExQueryDepthSList, kernel.exquerydepthslist
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ExQueryDepthSList
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

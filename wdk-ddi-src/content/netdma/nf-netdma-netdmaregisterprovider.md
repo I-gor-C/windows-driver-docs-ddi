@@ -1,41 +1,46 @@
 ---
-UID : NF:netdma.NetDmaRegisterProvider
-title : NetDmaRegisterProvider function
-author : windows-driver-content
-description : The NetDmaRegisterProvider function registers a DMA provider.
-old-location : netvista\netdmaregisterprovider.htm
-old-project : netvista
-ms.assetid : 35d70d0b-c1b9-433f-941d-6cb61ddf0b62
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NetDmaRegisterProvider, netvista.netdmaregisterprovider, netdma_ref_5267288c-9502-40f7-9af1-557babf3f840.xml, NetDmaRegisterProvider function [Network Drivers Starting with Windows Vista], netdma/NetDmaRegisterProvider
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : netdma.h
-req.include-header : Netdma.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported for NetDMA 1.0 drivers in Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NET_DMA_PNP_NOTIFICATION_CODE, *PNET_DMA_PNP_NOTIFICATION_CODE
+UID: NF:netdma.NetDmaRegisterProvider
+title: NetDmaRegisterProvider function
+author: windows-driver-content
+description: The NetDmaRegisterProvider function registers a DMA provider.
+old-location: netvista\netdmaregisterprovider.htm
+old-project: netvista
+ms.assetid: 35d70d0b-c1b9-433f-941d-6cb61ddf0b62
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NetDmaRegisterProvider, netvista.netdmaregisterprovider, netdma_ref_5267288c-9502-40f7-9af1-557babf3f840.xml, NetDmaRegisterProvider function [Network Drivers Starting with Windows Vista], netdma/NetDmaRegisterProvider
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: netdma.h
+req.include-header: Netdma.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported for NetDMA 1.0 drivers in Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	netdma.h
+apiname:
+-	NetDmaRegisterProvider
+product: Windows
+targetos: Windows
+req.typenames: NET_DMA_PNP_NOTIFICATION_CODE, *PNET_DMA_PNP_NOTIFICATION_CODE
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGK_QUERYSEGMENTOUT3
-title : "_DXGK_QUERYSEGMENTOUT3"
-author : windows-driver-content
-description : Describes memory-segment information that a Windows Display Driver Model (WDDM) 1.2 or later display miniport driver should return from a call to its DxgkDdiQueryAdapterInfo function.
-old-location : display\dxgk_querysegmentout3.htm
-old-project : display
-ms.assetid : 4a78a998-7eab-4499-a280-96ca6d6ff5a2
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : "_DXGK_QUERYSEGMENTOUT3, DXGK_QUERYSEGMENTOUT3 structure [Display Devices], d3dkmddi/DXGK_QUERYSEGMENTOUT3, DXGK_QUERYSEGMENTOUT3, display.dxgk_querysegmentout3"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_QUERYSEGMENTOUT3
+UID: NS:d3dkmddi._DXGK_QUERYSEGMENTOUT3
+title: "_DXGK_QUERYSEGMENTOUT3"
+author: windows-driver-content
+description: Describes memory-segment information that a Windows Display Driver Model (WDDM) 1.2 or later display miniport driver should return from a call to its DxgkDdiQueryAdapterInfo function.
+old-location: display\dxgk_querysegmentout3.htm
+old-project: display
+ms.assetid: 4a78a998-7eab-4499-a280-96ca6d6ff5a2
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: "_DXGK_QUERYSEGMENTOUT3, DXGK_QUERYSEGMENTOUT3 structure [Display Devices], d3dkmddi/DXGK_QUERYSEGMENTOUT3, DXGK_QUERYSEGMENTOUT3, display.dxgk_querysegmentout3"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	D3dkmddi.h
+apiname:
+-	DXGK_QUERYSEGMENTOUT3
+product: Windows
+targetos: Windows
+req.typenames: DXGK_QUERYSEGMENTOUT3
 ---
 
 # _DXGK_QUERYSEGMENTOUT3 structure

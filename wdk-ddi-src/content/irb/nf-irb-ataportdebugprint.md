@@ -1,41 +1,49 @@
 ---
-UID : NF:irb.AtaPortDebugPrint
-title : AtaPortDebugPrint function
-author : windows-driver-content
-description : The AtaPortDebugPrint routine passes a message string to the kernel debugger for the debugger to print.
-old-location : storage\ataportdebugprint.htm
-old-project : storage
-ms.assetid : 2a93d30f-4aa0-46b9-b9c7-cc15c62f3053
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : AtaPortDebugPrint routine [Storage Devices], irb/AtaPortDebugPrint, atartns_57e04fb5-19ac-42fc-9bc5-32645ef61320.xml, storage.ataportdebugprint, AtaPortDebugPrint
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : irb.h
-req.include-header : Ata.h, Irb.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ataport.lib; Pciidex.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : IDE_POWER_STATE
+UID: NF:irb.AtaPortDebugPrint
+title: AtaPortDebugPrint function
+author: windows-driver-content
+description: The AtaPortDebugPrint routine passes a message string to the kernel debugger for the debugger to print.
+old-location: storage\ataportdebugprint.htm
+old-project: storage
+ms.assetid: 2a93d30f-4aa0-46b9-b9c7-cc15c62f3053
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: AtaPortDebugPrint routine [Storage Devices], irb/AtaPortDebugPrint, atartns_57e04fb5-19ac-42fc-9bc5-32645ef61320.xml, storage.ataportdebugprint, AtaPortDebugPrint
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: irb.h
+req.include-header: Ata.h, Irb.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ataport.lib; Pciidex.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ataport.lib
+-	ataport.dll
+-	pciidex.lib
+-	pciidex.dll
+apiname:
+-	AtaPortDebugPrint
+product: Windows
+targetos: Windows
+req.typenames: IDE_POWER_STATE
 ---
 
 

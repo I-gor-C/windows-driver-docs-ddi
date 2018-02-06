@@ -1,41 +1,46 @@
 ---
-UID : NC:ndis.NDIS_SWITCH_DEREFERENCE_SWITCH_NIC
-title : NDIS_SWITCH_DEREFERENCE_SWITCH_NIC
-author : windows-driver-content
-description : The DereferenceSwitchNic function decrements the Hyper-V extensible switch reference counter for a network adapter that is connected to an extensible switch port. The reference counter was incremented through a previous call to ReferenceSwitchNic.
-old-location : netvista\DereferenceSwitchNic.htm
-old-project : netvista
-ms.assetid : 58C72F81-07B9-45FE-A8BA-0405DBE4CA20
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.DereferenceSwitchNic, DereferenceSwitchNic callback function [Network Drivers Starting with Windows Vista], DereferenceSwitchNic, NDIS_SWITCH_DEREFERENCE_SWITCH_NIC, NDIS_SWITCH_DEREFERENCE_SWITCH_NIC, ndis/DereferenceSwitchNic
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported in NDIS 6.30 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
+UID: NC:ndis.NDIS_SWITCH_DEREFERENCE_SWITCH_NIC
+title: NDIS_SWITCH_DEREFERENCE_SWITCH_NIC
+author: windows-driver-content
+description: The DereferenceSwitchNic function decrements the Hyper-V extensible switch reference counter for a network adapter that is connected to an extensible switch port. The reference counter was incremented through a previous call to ReferenceSwitchNic.
+old-location: netvista\DereferenceSwitchNic.htm
+old-project: netvista
+ms.assetid: 58C72F81-07B9-45FE-A8BA-0405DBE4CA20
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.DereferenceSwitchNic, DereferenceSwitchNic callback function [Network Drivers Starting with Windows Vista], DereferenceSwitchNic, NDIS_SWITCH_DEREFERENCE_SWITCH_NIC, NDIS_SWITCH_DEREFERENCE_SWITCH_NIC, ndis/DereferenceSwitchNic
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported in NDIS 6.30 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ndis.h
+apiname:
+-	DereferenceSwitchNic
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 

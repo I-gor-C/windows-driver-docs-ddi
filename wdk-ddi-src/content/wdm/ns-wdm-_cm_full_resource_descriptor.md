@@ -1,42 +1,47 @@
 ---
-UID : NS:wdm._CM_FULL_RESOURCE_DESCRIPTOR
-title : "_CM_FULL_RESOURCE_DESCRIPTOR"
-author : windows-driver-content
-description : The CM_FULL_RESOURCE_DESCRIPTOR structure specifies a set of system hardware resources of various types, assigned to a device that is connected to a specific bus. This structure is contained within a CM_RESOURCE_LIST structure.
-old-location : kernel\cm_full_resource_descriptor.htm
-old-project : kernel
-ms.assetid : e405c545-da0c-4b47-84c2-dd26d746da94
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.cm_full_resource_descriptor, CM_FULL_RESOURCE_DESCRIPTOR structure [Kernel-Mode Driver Architecture], PCM_FULL_RESOURCE_DESCRIPTOR, CM_FULL_RESOURCE_DESCRIPTOR, *PCM_FULL_RESOURCE_DESCRIPTOR, wdm/PCM_FULL_RESOURCE_DESCRIPTOR, wdm/CM_FULL_RESOURCE_DESCRIPTOR, kstruct_a_eb7de4ac-cd02-44cc-9e26-a9c2a99eb8e6.xml, _CM_FULL_RESOURCE_DESCRIPTOR, PCM_FULL_RESOURCE_DESCRIPTOR structure pointer [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : CM_FULL_RESOURCE_DESCRIPTOR, *PCM_FULL_RESOURCE_DESCRIPTOR
-req.product : Windows 10 or later.
+UID: NS:wdm._CM_FULL_RESOURCE_DESCRIPTOR
+title: "_CM_FULL_RESOURCE_DESCRIPTOR"
+author: windows-driver-content
+description: The CM_FULL_RESOURCE_DESCRIPTOR structure specifies a set of system hardware resources of various types, assigned to a device that is connected to a specific bus. This structure is contained within a CM_RESOURCE_LIST structure.
+old-location: kernel\cm_full_resource_descriptor.htm
+old-project: kernel
+ms.assetid: e405c545-da0c-4b47-84c2-dd26d746da94
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.cm_full_resource_descriptor, CM_FULL_RESOURCE_DESCRIPTOR structure [Kernel-Mode Driver Architecture], PCM_FULL_RESOURCE_DESCRIPTOR, CM_FULL_RESOURCE_DESCRIPTOR, *PCM_FULL_RESOURCE_DESCRIPTOR, wdm/PCM_FULL_RESOURCE_DESCRIPTOR, wdm/CM_FULL_RESOURCE_DESCRIPTOR, kstruct_a_eb7de4ac-cd02-44cc-9e26-a9c2a99eb8e6.xml, _CM_FULL_RESOURCE_DESCRIPTOR, PCM_FULL_RESOURCE_DESCRIPTOR structure pointer [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdm.h
+apiname:
+-	CM_FULL_RESOURCE_DESCRIPTOR
+product: Windows
+targetos: Windows
+req.typenames: CM_FULL_RESOURCE_DESCRIPTOR, *PCM_FULL_RESOURCE_DESCRIPTOR
+req.product: Windows 10 or later.
 ---
 
 # _CM_FULL_RESOURCE_DESCRIPTOR structure

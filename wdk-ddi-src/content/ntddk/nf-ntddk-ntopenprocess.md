@@ -1,41 +1,47 @@
 ---
-UID : NF:ntddk.NtOpenProcess
-title : NtOpenProcess function
-author : windows-driver-content
-description : The ZwOpenProcess routine opens a handle to a process object and sets the access rights to this object.
-old-location : kernel\zwopenprocess.htm
-old-project : kernel
-ms.assetid : 261d7676-9ce7-4e15-a58f-0439434f202b
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : NtOpenProcess, ntddk/ZwOpenProcess, ntddk/NtOpenProcess, kernel.zwopenprocess, ZwOpenProcess routine [Kernel-Mode Driver Architecture], ZwOpenProcess, k111_cf01d6cd-b10e-46b6-9b78-984aac1ef96d.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntddk.h
-req.include-header : Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 2000 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.NtOpenProcess
+title: NtOpenProcess function
+author: windows-driver-content
+description: The ZwOpenProcess routine opens a handle to a process object and sets the access rights to this object.
+old-location: kernel\zwopenprocess.htm
+old-project: kernel
+ms.assetid: 261d7676-9ce7-4e15-a58f-0439434f202b
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: NtOpenProcess, ntddk/ZwOpenProcess, ntddk/NtOpenProcess, kernel.zwopenprocess, ZwOpenProcess routine [Kernel-Mode Driver Architecture], ZwOpenProcess, k111_cf01d6cd-b10e-46b6-9b78-984aac1ef96d.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntddk.h
+req.include-header: Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 2000 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ZwOpenProcess
+-	NtOpenProcess
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

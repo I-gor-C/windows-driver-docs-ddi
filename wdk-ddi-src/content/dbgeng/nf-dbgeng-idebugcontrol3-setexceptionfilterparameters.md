@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugControl3.SetExceptionFilterParameters
-title : IDebugControl3::SetExceptionFilterParameters method
-author : windows-driver-content
-description : The SetExceptionFilterParameters method changes the break status and handling status for some exception filters.
-old-location : debugger\setexceptionfilterparameters.htm
-old-project : debugger
-ms.assetid : b749f96d-d04a-48f2-9012-b7c853e0de14
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : SetExceptionFilterParameters method [Windows Debugging], IDebugControl2 interface, IDebugControl::SetExceptionFilterParameters, IDebugControl3 interface [Windows Debugging], SetExceptionFilterParameters method, IDebugControl interface [Windows Debugging], SetExceptionFilterParameters method, SetExceptionFilterParameters method [Windows Debugging], IDebugControl interface, IDebugControl2 interface [Windows Debugging], SetExceptionFilterParameters method, dbgeng/IDebugControl3::SetExceptionFilterParameters, dbgeng/IDebugControl2::SetExceptionFilterParameters, IDebugControl3, SetExceptionFilterParameters, SetExceptionFilterParameters method [Windows Debugging], IDebugControl3 interface, dbgeng/IDebugControl::SetExceptionFilterParameters, IDebugControl3::SetExceptionFilterParameters, debugger.setexceptionfilterparameters, SetExceptionFilterParameters method [Windows Debugging], IDebugControl_4e60bce4-e40d-46b6-83ad-55559b97fbad.xml, IDebugControl2::SetExceptionFilterParameters
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl3.SetExceptionFilterParameters
+title: IDebugControl3::SetExceptionFilterParameters method
+author: windows-driver-content
+description: The SetExceptionFilterParameters method changes the break status and handling status for some exception filters.
+old-location: debugger\setexceptionfilterparameters.htm
+old-project: debugger
+ms.assetid: b749f96d-d04a-48f2-9012-b7c853e0de14
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: SetExceptionFilterParameters method [Windows Debugging], IDebugControl2 interface, IDebugControl::SetExceptionFilterParameters, IDebugControl3 interface [Windows Debugging], SetExceptionFilterParameters method, IDebugControl interface [Windows Debugging], SetExceptionFilterParameters method, SetExceptionFilterParameters method [Windows Debugging], IDebugControl interface, IDebugControl2 interface [Windows Debugging], SetExceptionFilterParameters method, dbgeng/IDebugControl3::SetExceptionFilterParameters, dbgeng/IDebugControl2::SetExceptionFilterParameters, IDebugControl3, SetExceptionFilterParameters, SetExceptionFilterParameters method [Windows Debugging], IDebugControl3 interface, dbgeng/IDebugControl::SetExceptionFilterParameters, IDebugControl3::SetExceptionFilterParameters, debugger.setexceptionfilterparameters, SetExceptionFilterParameters method [Windows Debugging], IDebugControl_4e60bce4-e40d-46b6-83ad-55559b97fbad.xml, IDebugControl2::SetExceptionFilterParameters
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl.SetExceptionFilterParameters
+-	IDebugControl2.SetExceptionFilterParameters
+-	IDebugControl3.SetExceptionFilterParameters
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

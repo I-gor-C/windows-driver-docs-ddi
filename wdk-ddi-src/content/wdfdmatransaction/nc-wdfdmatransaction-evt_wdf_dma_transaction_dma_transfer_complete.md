@@ -1,42 +1,47 @@
 ---
-UID : NC:wdfdmatransaction.EVT_WDF_DMA_TRANSACTION_DMA_TRANSFER_COMPLETE
-title : EVT_WDF_DMA_TRANSACTION_DMA_TRANSFER_COMPLETE
-author : windows-driver-content
-description : A driver's EvtDmaTransactionDmaTransferComplete event callback function is called when the system-mode controller has completed the current DMA transfer.
-old-location : wdf\evtdmatransactiondmatransfercomplete.htm
-old-project : wdf
-ms.assetid : C638A505-AAE1-48FC-B06B-F2F161ADC948
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.evtdmatransactiondmatransfercomplete, EvtDmaTransactionDmaTransferComplete callback function, EvtDmaTransactionDmaTransferComplete, EVT_WDF_DMA_TRANSACTION_DMA_TRANSFER_COMPLETE, EVT_WDF_DMA_TRANSACTION_DMA_TRANSFER_COMPLETE, wdfdmatransaction/EvtDmaTransactionDmaTransferComplete, kmdf.evtdmatransactiondmatransfercomplete
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdfdmatransaction.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : 
-req.kmdf-ver : 1.11
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : DISPATCH_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDF_DMA_SYSTEM_PROFILE_CONFIG, WDF_DMA_SYSTEM_PROFILE_CONFIG"
-req.product : Windows 10 or later.
+UID: NC:wdfdmatransaction.EVT_WDF_DMA_TRANSACTION_DMA_TRANSFER_COMPLETE
+title: EVT_WDF_DMA_TRANSACTION_DMA_TRANSFER_COMPLETE
+author: windows-driver-content
+description: A driver's EvtDmaTransactionDmaTransferComplete event callback function is called when the system-mode controller has completed the current DMA transfer.
+old-location: wdf\evtdmatransactiondmatransfercomplete.htm
+old-project: wdf
+ms.assetid: C638A505-AAE1-48FC-B06B-F2F161ADC948
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.evtdmatransactiondmatransfercomplete, EvtDmaTransactionDmaTransferComplete callback function, EvtDmaTransactionDmaTransferComplete, EVT_WDF_DMA_TRANSACTION_DMA_TRANSFER_COMPLETE, EVT_WDF_DMA_TRANSACTION_DMA_TRANSFER_COMPLETE, wdfdmatransaction/EvtDmaTransactionDmaTransferComplete, kmdf.evtdmatransactiondmatransfercomplete
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdfdmatransaction.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: 
+req.kmdf-ver: 1.11
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: DISPATCH_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	WdfDmaTransaction.h
+apiname:
+-	EvtDmaTransactionDmaTransferComplete
+product: Windows
+targetos: Windows
+req.typenames: "*PWDF_DMA_SYSTEM_PROFILE_CONFIG, WDF_DMA_SYSTEM_PROFILE_CONFIG"
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NF:nfccx.NfcCxSetRfDiscoveryConfig
-title : NfcCxSetRfDiscoveryConfig function
-author : windows-driver-content
-description : Called by the client driver to configure the RF discovery parameters.
-old-location : nfpdrivers\_nfccxsetrfdiscoveryconfig.htm
-old-project : nfpdrivers
-ms.assetid : D0190BA1-196D-4F8B-A367-80272F094B6B
-ms.author : windowsdriverdev
-ms.date : 12/18/2017
-ms.keywords : NfcCxSetRfDiscoveryConfig method [Near-Field Proximity Drivers], NfcCxSetRfDiscoveryConfig, nfpdrivers._nfccxsetrfdiscoveryconfig, nfccx/NfcCxSetRfDiscoveryConfig
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : nfccx.h
-req.include-header : Ncidef.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : None supported
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Nfccxstub.lib
-req.dll : NfcCx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NFC_CX_TRANSPORT_TYPE, *PNFC_CX_TRANSPORT_TYPE
+UID: NF:nfccx.NfcCxSetRfDiscoveryConfig
+title: NfcCxSetRfDiscoveryConfig function
+author: windows-driver-content
+description: Called by the client driver to configure the RF discovery parameters.
+old-location: nfpdrivers\_nfccxsetrfdiscoveryconfig.htm
+old-project: nfpdrivers
+ms.assetid: D0190BA1-196D-4F8B-A367-80272F094B6B
+ms.author: windowsdriverdev
+ms.date: 12/18/2017
+ms.keywords: NfcCxSetRfDiscoveryConfig method [Near-Field Proximity Drivers], NfcCxSetRfDiscoveryConfig, nfpdrivers._nfccxsetrfdiscoveryconfig, nfccx/NfcCxSetRfDiscoveryConfig
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: nfccx.h
+req.include-header: Ncidef.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: None supported
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Nfccxstub.lib
+req.dll: NfcCx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NfcCx.dll
+apiname:
+-	NfcCxSetRfDiscoveryConfig
+product: Windows
+targetos: Windows
+req.typenames: NFC_CX_TRANSPORT_TYPE, *PNFC_CX_TRANSPORT_TYPE
 ---
 
 

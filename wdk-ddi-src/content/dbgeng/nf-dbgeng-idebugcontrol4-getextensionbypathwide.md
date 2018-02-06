@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugControl4.GetExtensionByPathWide
-title : IDebugControl4::GetExtensionByPathWide method
-author : windows-driver-content
-description : The GetExtensionByPathWide method returns the handle for an already loaded extension library.
-old-location : debugger\getextensionbypathwide.htm
-old-project : debugger
-ms.assetid : 85257190-2b39-487d-ada6-4c8cd0b1450f
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : GetExtensionByPathWide method [Windows Debugging], debugger.getextensionbypathwide, GetExtensionByPathWide method [Windows Debugging], IDebugControl4 interface, IDebugControl4::GetExtensionByPathWide, dbgeng/IDebugControl4::GetExtensionByPathWide, IDebugControl4 interface [Windows Debugging], GetExtensionByPathWide method, IDebugControl4, GetExtensionByPathWide
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl4.GetExtensionByPathWide
+title: IDebugControl4::GetExtensionByPathWide method
+author: windows-driver-content
+description: The GetExtensionByPathWide method returns the handle for an already loaded extension library.
+old-location: debugger\getextensionbypathwide.htm
+old-project: debugger
+ms.assetid: 85257190-2b39-487d-ada6-4c8cd0b1450f
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: GetExtensionByPathWide method [Windows Debugging], debugger.getextensionbypathwide, GetExtensionByPathWide method [Windows Debugging], IDebugControl4 interface, IDebugControl4::GetExtensionByPathWide, dbgeng/IDebugControl4::GetExtensionByPathWide, IDebugControl4 interface [Windows Debugging], GetExtensionByPathWide method, IDebugControl4, GetExtensionByPathWide
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl4.GetExtensionByPathWide
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

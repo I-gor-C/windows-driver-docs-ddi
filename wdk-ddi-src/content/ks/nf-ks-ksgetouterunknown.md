@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsGetOuterUnknown
-title : KsGetOuterUnknown function
-author : windows-driver-content
-description : The KsGetOuterUnknown function returns the outer IUnknown of a given AVStream object.
-old-location : stream\ksgetouterunknown.htm
-old-project : stream
-ms.assetid : e86e2c96-9ae5-4f6d-9c76-1c2816f318e7
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ks/KsGetOuterUnknown, KsGetOuterUnknown, avfunc_5b660e76-03af-4fba-92f9-f11eeeaa3da0.xml, KsGetOuterUnknown function [Streaming Media Devices], stream.ksgetouterunknown
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsGetOuterUnknown
+title: KsGetOuterUnknown function
+author: windows-driver-content
+description: The KsGetOuterUnknown function returns the outer IUnknown of a given AVStream object.
+old-location: stream\ksgetouterunknown.htm
+old-project: stream
+ms.assetid: e86e2c96-9ae5-4f6d-9c76-1c2816f318e7
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ks/KsGetOuterUnknown, KsGetOuterUnknown, avfunc_5b660e76-03af-4fba-92f9-f11eeeaa3da0.xml, KsGetOuterUnknown function [Streaming Media Devices], stream.ksgetouterunknown
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsGetOuterUnknown
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

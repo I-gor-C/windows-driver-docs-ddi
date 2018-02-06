@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.IoGetCurrentIrpStackLocation
-title : IoGetCurrentIrpStackLocation function
-author : windows-driver-content
-description : The IoGetCurrentIrpStackLocation routine returns a pointer to the caller's I/O stack location in the specified IRP.
-old-location : kernel\iogetcurrentirpstacklocation.htm
-old-project : kernel
-ms.assetid : 75144188-728b-4613-ac69-8cadf0f60233
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : IoGetCurrentIrpStackLocation routine [Kernel-Mode Driver Architecture], kernel.iogetcurrentirpstacklocation, k104_f92e53c7-8a26-4cb0-859b-b0a7be4dce6a.xml, IoGetCurrentIrpStackLocation, wdm/IoGetCurrentIrpStackLocation
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.IoGetCurrentIrpStackLocation
+title: IoGetCurrentIrpStackLocation function
+author: windows-driver-content
+description: The IoGetCurrentIrpStackLocation routine returns a pointer to the caller's I/O stack location in the specified IRP.
+old-location: kernel\iogetcurrentirpstacklocation.htm
+old-project: kernel
+ms.assetid: 75144188-728b-4613-ac69-8cadf0f60233
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: IoGetCurrentIrpStackLocation routine [Kernel-Mode Driver Architecture], kernel.iogetcurrentirpstacklocation, k104_f92e53c7-8a26-4cb0-859b-b0a7be4dce6a.xml, IoGetCurrentIrpStackLocation, wdm/IoGetCurrentIrpStackLocation
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	IoGetCurrentIrpStackLocation
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

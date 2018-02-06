@@ -1,42 +1,48 @@
 ---
-UID : NF:wdm.ZwCreateEnlistment
-title : ZwCreateEnlistment function
-author : windows-driver-content
-description : The ZwCreateEnlistment routine creates a new enlistment object for a transaction.
-old-location : kernel\zwcreateenlistment.htm
-old-project : kernel
-ms.assetid : 5ffd8262-10b3-4c40-bd3e-050271338508
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/NtCreateEnlistment, ktm_ref_30b47803-67b7-4a88-9f87-0dbee055f580.xml, kernel.zwcreateenlistment, wdm/ZwCreateEnlistment, ZwCreateEnlistment, ZwCreateEnlistment routine [Kernel-Mode Driver Architecture], NtCreateEnlistment
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later operating system versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ZwCreateEnlistment
+title: ZwCreateEnlistment function
+author: windows-driver-content
+description: The ZwCreateEnlistment routine creates a new enlistment object for a transaction.
+old-location: kernel\zwcreateenlistment.htm
+old-project: kernel
+ms.assetid: 5ffd8262-10b3-4c40-bd3e-050271338508
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/NtCreateEnlistment, ktm_ref_30b47803-67b7-4a88-9f87-0dbee055f580.xml, kernel.zwcreateenlistment, wdm/ZwCreateEnlistment, ZwCreateEnlistment, ZwCreateEnlistment routine [Kernel-Mode Driver Architecture], NtCreateEnlistment
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later operating system versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ZwCreateEnlistment
+-	NtCreateEnlistment
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

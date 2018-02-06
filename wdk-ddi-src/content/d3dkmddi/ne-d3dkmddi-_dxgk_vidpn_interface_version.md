@@ -1,41 +1,46 @@
 ---
-UID : NE:d3dkmddi._DXGK_VIDPN_INTERFACE_VERSION
-title : "_DXGK_VIDPN_INTERFACE_VERSION"
-author : windows-driver-content
-description : The DXGK_VIDPN_INTERFACE_VERSION enumeration indicates the version of a video present network (VidPN) interface.
-old-location : display\dxgk_vidpn_interface_version.htm
-old-project : display
-ms.assetid : 819261a5-bec0-49a8-942a-9313d3b793ca
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3dkmddi/DXGK_VIDPN_INTERFACE_VERSION_UNINITIALIZED, _DXGK_VIDPN_INTERFACE_VERSION, display.dxgk_vidpn_interface_version, DmEnums_69c4e28b-70fe-4576-b726-6fa6d78c97d0.xml, DXGK_VIDPN_INTERFACE_VERSION_V1, d3dkmddi/DXGK_VIDPN_INTERFACE_VERSION, DXGK_VIDPN_INTERFACE_VERSION enumeration [Display Devices], DXGK_VIDPN_INTERFACE_VERSION, DXGK_VIDPN_INTERFACE_VERSION_UNINITIALIZED, d3dkmddi/DXGK_VIDPN_INTERFACE_VERSION_V1
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_VIDPN_INTERFACE_VERSION
+UID: NE:d3dkmddi._DXGK_VIDPN_INTERFACE_VERSION
+title: "_DXGK_VIDPN_INTERFACE_VERSION"
+author: windows-driver-content
+description: The DXGK_VIDPN_INTERFACE_VERSION enumeration indicates the version of a video present network (VidPN) interface.
+old-location: display\dxgk_vidpn_interface_version.htm
+old-project: display
+ms.assetid: 819261a5-bec0-49a8-942a-9313d3b793ca
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3dkmddi/DXGK_VIDPN_INTERFACE_VERSION_UNINITIALIZED, _DXGK_VIDPN_INTERFACE_VERSION, display.dxgk_vidpn_interface_version, DmEnums_69c4e28b-70fe-4576-b726-6fa6d78c97d0.xml, DXGK_VIDPN_INTERFACE_VERSION_V1, d3dkmddi/DXGK_VIDPN_INTERFACE_VERSION, DXGK_VIDPN_INTERFACE_VERSION enumeration [Display Devices], DXGK_VIDPN_INTERFACE_VERSION, DXGK_VIDPN_INTERFACE_VERSION_UNINITIALIZED, d3dkmddi/DXGK_VIDPN_INTERFACE_VERSION_V1
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DXGK_VIDPN_INTERFACE_VERSION
+product: Windows
+targetos: Windows
+req.typenames: DXGK_VIDPN_INTERFACE_VERSION
 ---
 
 # _DXGK_VIDPN_INTERFACE_VERSION Enumeration
@@ -52,21 +57,21 @@ typedef enum _DXGK_VIDPN_INTERFACE_VERSION {
 ## Constants
 
 <table>
-
-<tr>
-<td>DXGK_VIDPN_INTERFACE_VERSION_UNINITIALIZED</td>
-<td>Indicates that a variable of type DXGK_VIDPN_INTERFACE_VERSION has not yet been assigned a meaningful value.</td>
-</tr>
-
-<tr>
-<td>DXGK_VIDPN_INTERFACE_VERSION_V1</td>
-<td>Indicates version 1 of the VidPN interface.</td>
-</tr>
+            
+                <tr>
+                    <td>DXGK_VIDPN_INTERFACE_VERSION_UNINITIALIZED</td>
+                    <td>Indicates that a variable of type DXGK_VIDPN_INTERFACE_VERSION has not yet been assigned a meaningful value.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXGK_VIDPN_INTERFACE_VERSION_V1</td>
+                    <td>Indicates version 1 of the VidPN interface.</td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-The <i>VidPnInterfaceVersion</i> parameter of the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_queryvidpninterface.md">DxgkCbQueryVidPnInterface</a> function and the <b>Version</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_vidpn_interface.md">DXGK_VIDPN_INTERFACE</a> structure are DXGK_VIDPN_INTERFACE_VERSION values.
+        The <i>VidPnInterfaceVersion</i> parameter of the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_queryvidpninterface.md">DxgkCbQueryVidPnInterface</a> function and the <b>Version</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_vidpn_interface.md">DXGK_VIDPN_INTERFACE</a> structure are DXGK_VIDPN_INTERFACE_VERSION values.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -74,9 +79,9 @@ The <i>VidPnInterfaceVersion</i> parameter of the <a href="..\d3dkmddi\nc-d3dkmd
 | **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmddi.h (include D3dkmddi.h) |
 
-## See Also
+    ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570556">VidPn Interface</a>
+        <a href="https://msdn.microsoft.com/library/windows/hardware/ff570556">VidPn Interface</a>
 
  
 

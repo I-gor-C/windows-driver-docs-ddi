@@ -1,42 +1,47 @@
 ---
-UID : NS:scsi._TRACK_INFORMATION2
-title : "_TRACK_INFORMATION2"
-author : windows-driver-content
-description : The TRACK_INFORMATION2 structure is used to report track information.
-old-location : storage\track_information2.htm
-old-project : storage
-ms.assetid : 2fea2f8a-eb55-409c-80d2-c3f49ab6bfdf
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : PTRACK_INFORMATION2 structure pointer [Storage Devices], structs-CD-ROM_a77c4142-fe27-489b-ab9c-1637cf4b911d.xml, *PTRACK_INFORMATION2, scsi/PTRACK_INFORMATION2, scsi/TRACK_INFORMATION2, storage.track_information2, PTRACK_INFORMATION2, TRACK_INFORMATION2, _TRACK_INFORMATION2, TRACK_INFORMATION2 structure [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : scsi.h
-req.include-header : Scsi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TRACK_INFORMATION2, *PTRACK_INFORMATION2
-req.product : Windows 10 or later.
+UID: NS:scsi._TRACK_INFORMATION2
+title: "_TRACK_INFORMATION2"
+author: windows-driver-content
+description: The TRACK_INFORMATION2 structure is used to report track information.
+old-location: storage\track_information2.htm
+old-project: storage
+ms.assetid: 2fea2f8a-eb55-409c-80d2-c3f49ab6bfdf
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: PTRACK_INFORMATION2 structure pointer [Storage Devices], structs-CD-ROM_a77c4142-fe27-489b-ab9c-1637cf4b911d.xml, *PTRACK_INFORMATION2, scsi/PTRACK_INFORMATION2, scsi/TRACK_INFORMATION2, storage.track_information2, PTRACK_INFORMATION2, TRACK_INFORMATION2, _TRACK_INFORMATION2, TRACK_INFORMATION2 structure [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: scsi.h
+req.include-header: Scsi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	scsi.h
+apiname:
+-	TRACK_INFORMATION2
+product: Windows
+targetos: Windows
+req.typenames: TRACK_INFORMATION2, *PTRACK_INFORMATION2
+req.product: Windows 10 or later.
 ---
 
 # _TRACK_INFORMATION2 structure

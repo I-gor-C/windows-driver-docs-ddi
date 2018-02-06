@@ -1,41 +1,46 @@
 ---
-UID : NC:pepfx.POFXCALLBACKENUMERATEUNMASKEDINTERRUPTS
-title : POFXCALLBACKENUMERATEUNMASKEDINTERRUPTS
-author : windows-driver-content
-description : The EnumerateUnmaskedInterrupts routine enumerates interrupt sources whose interrupts are unmasked and enabled.
-old-location : kernel\enumerateunmaskedinterrupts.htm
-old-project : kernel
-ms.assetid : 8B3E8FE0-9A96-43CD-8C6D-28F302BDF2D7
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.enumerateunmaskedinterrupts, EnumerateUnmaskedInterruptsext, EnumerateUnmaskedInterrupts routine [Kernel-Mode Driver Architecture], EnumerateUnmaskedInterrupts, POFXCALLBACKENUMERATEUNMASKEDINTERRUPTS, POFXCALLBACKENUMERATEUNMASKEDINTERRUPTS, pepfx/EnumerateUnmaskedInterrupts
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : pepfx.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with Windows 10.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= HIGH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VPCI_PNP_ID, *PVPCI_PNP_ID
+UID: NC:pepfx.POFXCALLBACKENUMERATEUNMASKEDINTERRUPTS
+title: POFXCALLBACKENUMERATEUNMASKEDINTERRUPTS
+author: windows-driver-content
+description: The EnumerateUnmaskedInterrupts routine enumerates interrupt sources whose interrupts are unmasked and enabled.
+old-location: kernel\enumerateunmaskedinterrupts.htm
+old-project: kernel
+ms.assetid: 8B3E8FE0-9A96-43CD-8C6D-28F302BDF2D7
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.enumerateunmaskedinterrupts, EnumerateUnmaskedInterruptsext, EnumerateUnmaskedInterrupts routine [Kernel-Mode Driver Architecture], EnumerateUnmaskedInterrupts, POFXCALLBACKENUMERATEUNMASKEDINTERRUPTS, POFXCALLBACKENUMERATEUNMASKEDINTERRUPTS, pepfx/EnumerateUnmaskedInterrupts
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: pepfx.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows 10.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= HIGH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	pepfx.h
+apiname:
+-	EnumerateUnmaskedInterrupts
+product: Windows
+targetos: Windows
+req.typenames: VPCI_PNP_ID, *PVPCI_PNP_ID
 ---
 
 

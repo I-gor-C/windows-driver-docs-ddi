@@ -1,41 +1,47 @@
 ---
-UID : NN:ksproxy.IKsPinEx
-title : IKsPinEx
-author : windows-driver-content
-description : The IKsPinEx interface inherits all the methods of the IKsPin interface and extends IKsPin to provide a method that notifies the filter graph of an error to give the filter graph an opportunity to halt.
-old-location : stream\ikspinex.htm
-old-project : stream
-ms.assetid : 9e6fd96d-c78e-44f3-ae4c-3688da48a494
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.ikspinex, IKsPinEx interface [Streaming Media Devices], IKsPinEx interface [Streaming Media Devices], described, IKsPinEx, ksproxy/IKsPinEx, ksproxy_3c92d570-f22f-4165-bafd-9a22f5516137.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : ksproxy.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ksproxy.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PIPE_STATE
+UID: NN:ksproxy.IKsPinEx
+title: IKsPinEx
+author: windows-driver-content
+description: The IKsPinEx interface inherits all the methods of the IKsPin interface and extends IKsPin to provide a method that notifies the filter graph of an error to give the filter graph an opportunity to halt.
+old-location: stream\ikspinex.htm
+old-project: stream
+ms.assetid: 9e6fd96d-c78e-44f3-ae4c-3688da48a494
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.ikspinex, IKsPinEx interface [Streaming Media Devices], IKsPinEx interface [Streaming Media Devices], described, IKsPinEx, ksproxy/IKsPinEx, ksproxy_3c92d570-f22f-4165-bafd-9a22f5516137.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: ksproxy.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ksproxy.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Ksproxy.lib
+-	Ksproxy.dll
+apiname:
+-	IKsPinEx
+product: Windows
+targetos: Windows
+req.typenames: PIPE_STATE
 ---
 
 # IKsPinEx interface

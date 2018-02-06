@@ -1,42 +1,47 @@
 ---
-UID : NE:windot11._DOT11_WFD_DISCOVER_TYPE
-title : "_DOT11_WFD_DISCOVER_TYPE"
-author : windows-driver-content
-description : The DOT11_WFD_DISCOVER_TYPE enumeration indicates the mode of Wi-Fi Direct device discovery.
-old-location : netvista\dot11_wfd_discover_type.htm
-old-project : netvista
-ms.assetid : B50C7FD5-5AE4-4BF3-9FD7-F006F4B6BAAF
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : dot11_wfd_discover_type_find_only, DOT11_WFD_DISCOVER_TYPE enumeration [Network Drivers Starting with Windows Vista], windot11/dot11_wfd_discover_type_auto, dot11_wfd_discover_type_forced, dot11_wfd_discover_type_auto, _DOT11_WFD_DISCOVER_TYPE, windot11/DOT11_WFD_DISCOVER_TYPE, dot11_wfd_discover_type_scan_only, DOT11_WFD_DISCOVER_TYPE, windot11/dot11_wfd_discover_type_find_only, windot11/dot11_wfd_discover_type_forced, dot11_wfd_discover_type_scan_social_channels, windot11/dot11_wfd_discover_type_scan_only, windot11/dot11_wfd_discover_type_scan_social_channels, *PDOT11_WFD_DISCOVER_TYPE, netvista.dot11_wfd_discover_type
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : windot11.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT11_WFD_DISCOVER_TYPE, *PDOT11_WFD_DISCOVER_TYPE
-req.product : Windows 10 or later.
+UID: NE:windot11._DOT11_WFD_DISCOVER_TYPE
+title: "_DOT11_WFD_DISCOVER_TYPE"
+author: windows-driver-content
+description: The DOT11_WFD_DISCOVER_TYPE enumeration indicates the mode of Wi-Fi Direct device discovery.
+old-location: netvista\dot11_wfd_discover_type.htm
+old-project: netvista
+ms.assetid: B50C7FD5-5AE4-4BF3-9FD7-F006F4B6BAAF
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: dot11_wfd_discover_type_find_only, DOT11_WFD_DISCOVER_TYPE enumeration [Network Drivers Starting with Windows Vista], windot11/dot11_wfd_discover_type_auto, dot11_wfd_discover_type_forced, dot11_wfd_discover_type_auto, _DOT11_WFD_DISCOVER_TYPE, windot11/DOT11_WFD_DISCOVER_TYPE, dot11_wfd_discover_type_scan_only, DOT11_WFD_DISCOVER_TYPE, windot11/dot11_wfd_discover_type_find_only, windot11/dot11_wfd_discover_type_forced, dot11_wfd_discover_type_scan_social_channels, windot11/dot11_wfd_discover_type_scan_only, windot11/dot11_wfd_discover_type_scan_social_channels, *PDOT11_WFD_DISCOVER_TYPE, netvista.dot11_wfd_discover_type
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: windot11.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Windot11.h
+apiname:
+-	DOT11_WFD_DISCOVER_TYPE
+product: Windows
+targetos: Windows
+req.typenames: DOT11_WFD_DISCOVER_TYPE, *PDOT11_WFD_DISCOVER_TYPE
+req.product: Windows 10 or later.
 ---
 
 # _DOT11_WFD_DISCOVER_TYPE Enumeration
@@ -56,36 +61,36 @@ typedef enum _DOT11_WFD_DISCOVER_TYPE {
 ## Constants
 
 <table>
-
-<tr>
-<td>dot11_wfd_discover_type_auto</td>
-<td>Discovery mode is determined by the driver.</td>
-</tr>
-
-<tr>
-<td>dot11_wfd_discover_type_find_only</td>
-<td>Device discovery occurs only during the find phase.</td>
-</tr>
-
-<tr>
-<td>dot11_wfd_discover_type_forced</td>
-<td>A flag indicating that a complete device discovery is required. If this flag is not set, a partial discovery can be performed.</td>
-</tr>
-
-<tr>
-<td>dot11_wfd_discover_type_scan_only</td>
-<td>Device discovery occurs only during the scan phase. During the scan phase, Wi-Fi Direct devices should scan each social channel at least once every 250ms.</td>
-</tr>
-
-<tr>
-<td>dot11_wfd_discover_type_scan_social_channels</td>
-<td>The WFD device must perform device discovery by scanning only P2P social channels. In this setting, the device should scan each social channel at least once every 250ms.</td>
-</tr>
+            
+                <tr>
+                    <td>dot11_wfd_discover_type_auto</td>
+                    <td>Discovery mode is determined by the driver.</td>
+                </tr>
+            
+                <tr>
+                    <td>dot11_wfd_discover_type_find_only</td>
+                    <td>Device discovery occurs only during the find phase.</td>
+                </tr>
+            
+                <tr>
+                    <td>dot11_wfd_discover_type_forced</td>
+                    <td>A flag indicating that a complete device discovery is required. If this flag is not set, a partial discovery can be performed.</td>
+                </tr>
+            
+                <tr>
+                    <td>dot11_wfd_discover_type_scan_only</td>
+                    <td>Device discovery occurs only during the scan phase. During the scan phase, Wi-Fi Direct devices should scan each social channel at least once every 250ms.</td>
+                </tr>
+            
+                <tr>
+                    <td>dot11_wfd_discover_type_scan_social_channels</td>
+                    <td>The WFD device must perform device discovery by scanning only P2P social channels. In this setting, the device should scan each social channel at least once every 250ms.</td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-The <b>dot11_wfd_discover_type_forced</b> flag may be set along with only one of the other discovery modes.
+        The <b>dot11_wfd_discover_type_forced</b> flag may be set along with only one of the other discovery modes.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -93,9 +98,9 @@ The <b>dot11_wfd_discover_type_forced</b> flag may be set along with only one of
 | **Windows version** | Supported starting with Windows 8. Supported starting with Windows 8. |
 | **Header** | windot11.h |
 
-## See Also
+    ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451795">OID_DOT11_WFD_DISCOVER_REQUEST</a>
+        <a href="https://msdn.microsoft.com/library/windows/hardware/hh451795">OID_DOT11_WFD_DISCOVER_REQUEST</a>
 
 <a href="..\windot11\ns-windot11-_dot11_wfd_discover_request.md">DOT11_WFD_DISCOVER_REQUEST</a>
 

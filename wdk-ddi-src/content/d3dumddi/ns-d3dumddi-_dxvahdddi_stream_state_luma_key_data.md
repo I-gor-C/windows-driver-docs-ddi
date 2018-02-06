@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._DXVAHDDDI_STREAM_STATE_LUMA_KEY_DATA
-title : "_DXVAHDDDI_STREAM_STATE_LUMA_KEY_DATA"
-author : windows-driver-content
-description : The DXVAHDDDI_STREAM_STATE_LUMA_KEY_DATA structure describes stream-state data that specifies the luma key of the input. The driver assumes that a pixel that has a luma value within the luma-key range is transparent.
-old-location : display\dxvahdddi_stream_state_luma_key_data.htm
-old-project : display
-ms.assetid : bd620f6d-6c19-41d4-a68c-3dcf2eec93ae
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DXVAHDDDI_STREAM_STATE_LUMA_KEY_DATA structure [Display Devices], _DXVAHDDDI_STREAM_STATE_LUMA_KEY_DATA, d3dumddi/DXVAHDDDI_STREAM_STATE_LUMA_KEY_DATA, DXVA2_Structs_a76427d8-e062-4fae-9350-f68d162effef.xml, display.dxvahdddi_stream_state_luma_key_data, DXVAHDDDI_STREAM_STATE_LUMA_KEY_DATA
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : DXVAHDDDI_STREAM_STATE_LUMA_KEY_DATA is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXVAHDDDI_STREAM_STATE_LUMA_KEY_DATA
+UID: NS:d3dumddi._DXVAHDDDI_STREAM_STATE_LUMA_KEY_DATA
+title: "_DXVAHDDDI_STREAM_STATE_LUMA_KEY_DATA"
+author: windows-driver-content
+description: The DXVAHDDDI_STREAM_STATE_LUMA_KEY_DATA structure describes stream-state data that specifies the luma key of the input. The driver assumes that a pixel that has a luma value within the luma-key range is transparent.
+old-location: display\dxvahdddi_stream_state_luma_key_data.htm
+old-project: display
+ms.assetid: bd620f6d-6c19-41d4-a68c-3dcf2eec93ae
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DXVAHDDDI_STREAM_STATE_LUMA_KEY_DATA structure [Display Devices], _DXVAHDDDI_STREAM_STATE_LUMA_KEY_DATA, d3dumddi/DXVAHDDDI_STREAM_STATE_LUMA_KEY_DATA, DXVA2_Structs_a76427d8-e062-4fae-9350-f68d162effef.xml, display.dxvahdddi_stream_state_luma_key_data, DXVAHDDDI_STREAM_STATE_LUMA_KEY_DATA
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: DXVAHDDDI_STREAM_STATE_LUMA_KEY_DATA is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	DXVAHDDDI_STREAM_STATE_LUMA_KEY_DATA
+product: Windows
+targetos: Windows
+req.typenames: DXVAHDDDI_STREAM_STATE_LUMA_KEY_DATA
 ---
 
 # _DXVAHDDDI_STREAM_STATE_LUMA_KEY_DATA structure

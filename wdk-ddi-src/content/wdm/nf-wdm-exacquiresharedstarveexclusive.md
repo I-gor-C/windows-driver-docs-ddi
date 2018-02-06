@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.ExAcquireSharedStarveExclusive
-title : ExAcquireSharedStarveExclusive function
-author : windows-driver-content
-description : The ExAcquireSharedStarveExclusive routine acquires a given resource for shared access without waiting for any pending attempts to acquire exclusive access to the same resource.
-old-location : kernel\exacquiresharedstarveexclusive.htm
-old-project : kernel
-ms.assetid : b148e684-18bd-4ab3-b772-6bc103b9f436
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : k102_b350fc88-cc76-4432-98e0-90e113e98007.xml, wdm/ExAcquireSharedStarveExclusive, kernel.exacquiresharedstarveexclusive, ExAcquireSharedStarveExclusive, ExAcquireSharedStarveExclusive routine [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : IrqlExApcLte3, WithinCriticalRegion, HwStorPortProhibitedDDIs, WithinCriticalRegion(storport)
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ExAcquireSharedStarveExclusive
+title: ExAcquireSharedStarveExclusive function
+author: windows-driver-content
+description: The ExAcquireSharedStarveExclusive routine acquires a given resource for shared access without waiting for any pending attempts to acquire exclusive access to the same resource.
+old-location: kernel\exacquiresharedstarveexclusive.htm
+old-project: kernel
+ms.assetid: b148e684-18bd-4ab3-b772-6bc103b9f436
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: k102_b350fc88-cc76-4432-98e0-90e113e98007.xml, wdm/ExAcquireSharedStarveExclusive, kernel.exacquiresharedstarveexclusive, ExAcquireSharedStarveExclusive, ExAcquireSharedStarveExclusive routine [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: IrqlExApcLte3, WithinCriticalRegion, HwStorPortProhibitedDDIs, WithinCriticalRegion(storport)
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ExAcquireSharedStarveExclusive
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

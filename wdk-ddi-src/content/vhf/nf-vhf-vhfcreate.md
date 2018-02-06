@@ -1,42 +1,48 @@
 ---
-UID : NF:vhf.VhfCreate
-title : VhfCreate function
-author : windows-driver-content
-description : The HID source driver calls this method to create a virtual HID device.
-old-location : hid\vhfcreate.htm
-old-project : hid
-ms.assetid : 11A98BBE-2609-4E55-8988-42620EB15281
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : VhfCreate, VhfCreate method [Human Input Devices], hid.vhfcreate, vhf/VhfCreate
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : vhf.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : VhfKm.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR, *PUSB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR
-req.product : Windows 10 or later.
+UID: NF:vhf.VhfCreate
+title: VhfCreate function
+author: windows-driver-content
+description: The HID source driver calls this method to create a virtual HID device.
+old-location: hid\vhfcreate.htm
+old-project: hid
+ms.assetid: 11A98BBE-2609-4E55-8988-42620EB15281
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: VhfCreate, VhfCreate method [Human Input Devices], hid.vhfcreate, vhf/VhfCreate
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: vhf.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: VhfKm.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	vhfKm.lib
+-	vhfKm.dll
+apiname:
+-	VhfCreate
+product: Windows
+targetos: Windows
+req.typenames: USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR, *PUSB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR
+req.product: Windows 10 or later.
 ---
 
 

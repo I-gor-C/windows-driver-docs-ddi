@@ -1,42 +1,47 @@
 ---
-UID : NF:poscx.PosCxInit
-title : PosCxInit function
-author : windows-driver-content
-description : PosCxInit is called to initialize the PosCx library's internal resources. The resources are tied to the device, and are released when the device goes away.
-old-location : pos\poscxinit.htm
-old-project : pos
-ms.assetid : 23FEA770-12E1-44EC-901D-5C660F5F054A
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : poscx/PosCxInit, PosCxInit function, PosCxInit, pos.poscxinit
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : poscx.h
-req.include-header : Poscx.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POS_CX_EVENT_PRIORITY
-req.product : Windows 10 or later.
+UID: NF:poscx.PosCxInit
+title: PosCxInit function
+author: windows-driver-content
+description: PosCxInit is called to initialize the PosCx library's internal resources. The resources are tied to the device, and are released when the device goes away.
+old-location: pos\poscxinit.htm
+old-project: pos
+ms.assetid: 23FEA770-12E1-44EC-901D-5C660F5F054A
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: poscx/PosCxInit, PosCxInit function, PosCxInit, pos.poscxinit
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: poscx.h
+req.include-header: Poscx.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	poscx.h
+apiname:
+-	PosCxInit
+product: Windows
+targetos: Windows
+req.typenames: POS_CX_EVENT_PRIORITY
+req.product: Windows 10 or later.
 ---
 
 

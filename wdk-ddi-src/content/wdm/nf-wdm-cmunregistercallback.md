@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.CmUnRegisterCallback
-title : CmUnRegisterCallback function
-author : windows-driver-content
-description : The CmUnRegisterCallback routine unregisters a RegistryCallback routine that a CmRegisterCallback or CmRegisterCallbackEx routine previously registered.
-old-location : kernel\cmunregistercallback.htm
-old-project : kernel
-ms.assetid : 6e291139-d7d3-4927-ad01-b09bddb0b945
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.cmunregistercallback, ConfigMgrRef_13cbc14e-4652-4a3d-a87e-f6eef883f912.xml, CmUnRegisterCallback routine [Kernel-Mode Driver Architecture], CmUnRegisterCallback, wdm/CmUnRegisterCallback
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows XP and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : IrqlExApcLte2, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.CmUnRegisterCallback
+title: CmUnRegisterCallback function
+author: windows-driver-content
+description: The CmUnRegisterCallback routine unregisters a RegistryCallback routine that a CmRegisterCallback or CmRegisterCallbackEx routine previously registered.
+old-location: kernel\cmunregistercallback.htm
+old-project: kernel
+ms.assetid: 6e291139-d7d3-4927-ad01-b09bddb0b945
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.cmunregistercallback, ConfigMgrRef_13cbc14e-4652-4a3d-a87e-f6eef883f912.xml, CmUnRegisterCallback routine [Kernel-Mode Driver Architecture], CmUnRegisterCallback, wdm/CmUnRegisterCallback
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows XP and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: IrqlExApcLte2, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	CmUnRegisterCallback
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

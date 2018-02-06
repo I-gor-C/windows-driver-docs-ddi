@@ -1,42 +1,47 @@
 ---
-UID : NS:prntfont._UNIDRVINFO
-title : "_UNIDRVINFO"
-author : windows-driver-content
-description : The UNIDRVINFO structure is used to specify printer-specific information within Unidrv font metrics files (.ufm files).
-old-location : print\unidrvinfo.htm
-old-project : print
-ms.assetid : f57514ed-33b2-4895-aaba-5866b6fc01d2
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : prntfont/PUNIDRVINFO, prntfont/UNIDRVINFO, PUNIDRVINFO structure pointer [Print Devices], *PUNIDRVINFO, print_unidrv-pscript_fonts_b956aa02-1966-47c6-aec1-8ef8b98f4e57.xml, _UNIDRVINFO, UNIDRVINFO, PUNIDRVINFO, UNIDRVINFO structure [Print Devices], print.unidrvinfo
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : prntfont.h
-req.include-header : Prntfont.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUNIDRVINFO, UNIDRVINFO"
-req.product : Windows 10 or later.
+UID: NS:prntfont._UNIDRVINFO
+title: "_UNIDRVINFO"
+author: windows-driver-content
+description: The UNIDRVINFO structure is used to specify printer-specific information within Unidrv font metrics files (.ufm files).
+old-location: print\unidrvinfo.htm
+old-project: print
+ms.assetid: f57514ed-33b2-4895-aaba-5866b6fc01d2
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: prntfont/PUNIDRVINFO, prntfont/UNIDRVINFO, PUNIDRVINFO structure pointer [Print Devices], *PUNIDRVINFO, print_unidrv-pscript_fonts_b956aa02-1966-47c6-aec1-8ef8b98f4e57.xml, _UNIDRVINFO, UNIDRVINFO, PUNIDRVINFO, UNIDRVINFO structure [Print Devices], print.unidrvinfo
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: prntfont.h
+req.include-header: Prntfont.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	prntfont.h
+apiname:
+-	UNIDRVINFO
+product: Windows
+targetos: Windows
+req.typenames: "*PUNIDRVINFO, UNIDRVINFO"
+req.product: Windows 10 or later.
 ---
 
 # _UNIDRVINFO structure

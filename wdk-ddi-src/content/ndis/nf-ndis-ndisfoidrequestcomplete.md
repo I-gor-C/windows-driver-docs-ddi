@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisFOidRequestComplete
-title : NdisFOidRequestComplete function
-author : windows-driver-content
-description : Filter drivers call the NdisFOidRequestComplete function to return the final status of an OID request for which the driver's FilterOidRequest function returned NDIS_STATUS_PENDING.
-old-location : netvista\ndisfoidrequestcomplete.htm
-old-project : netvista
-ms.assetid : 1d72e8e3-1053-4731-a16c-fc3e4f7460e9
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.ndisfoidrequestcomplete, NdisFOidRequestComplete function [Network Drivers Starting with Windows Vista], ndis_request_ref_df2bb357-d053-4f02-a828-46a72dc1fee7.xml, NdisFOidRequestComplete, ndis/NdisFOidRequestComplete
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_OID_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisFOidRequestComplete
+title: NdisFOidRequestComplete function
+author: windows-driver-content
+description: Filter drivers call the NdisFOidRequestComplete function to return the final status of an OID request for which the driver's FilterOidRequest function returned NDIS_STATUS_PENDING.
+old-location: netvista\ndisfoidrequestcomplete.htm
+old-project: netvista
+ms.assetid: 1d72e8e3-1053-4731-a16c-fc3e4f7460e9
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.ndisfoidrequestcomplete, NdisFOidRequestComplete function [Network Drivers Starting with Windows Vista], ndis_request_ref_df2bb357-d053-4f02-a828-46a72dc1fee7.xml, NdisFOidRequestComplete, ndis/NdisFOidRequestComplete
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_OID_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisFOidRequestComplete
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

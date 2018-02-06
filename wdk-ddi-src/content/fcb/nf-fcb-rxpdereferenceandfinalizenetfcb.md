@@ -1,41 +1,46 @@
 ---
-UID : NF:fcb.RxpDereferenceAndFinalizeNetFcb
-title : RxpDereferenceAndFinalizeNetFcb function
-author : windows-driver-content
-description : RxpDereferenceAndFinalizeNetFcb decrements the reference count and finalizes an FCB structure.
-old-location : ifsk\rxpdereferenceandfinalizenetfcb.htm
-old-project : ifsk
-ms.assetid : 954a4811-4515-4ed4-a4f1-df598d08fc77
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.rxpdereferenceandfinalizenetfcb, RxpDereferenceAndFinalizeNetFcb function [Installable File System Drivers], rxref_474f30d3-858e-4179-8236-3068a2325818.xml, RxpDereferenceAndFinalizeNetFcb, fcb/RxpDereferenceAndFinalizeNetFcb
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fcb.h
-req.include-header : Fcb.h
-req.target-type : Desktop
-req.target-min-winverclnt : The RxpDereferenceAndFinalizeNetFcb routine is only available on Windows Server 2003 Service Pack 1 (SP1) and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FA_ENTRY, *PFA_ENTRY
+UID: NF:fcb.RxpDereferenceAndFinalizeNetFcb
+title: RxpDereferenceAndFinalizeNetFcb function
+author: windows-driver-content
+description: RxpDereferenceAndFinalizeNetFcb decrements the reference count and finalizes an FCB structure.
+old-location: ifsk\rxpdereferenceandfinalizenetfcb.htm
+old-project: ifsk
+ms.assetid: 954a4811-4515-4ed4-a4f1-df598d08fc77
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.rxpdereferenceandfinalizenetfcb, RxpDereferenceAndFinalizeNetFcb function [Installable File System Drivers], rxref_474f30d3-858e-4179-8236-3068a2325818.xml, RxpDereferenceAndFinalizeNetFcb, fcb/RxpDereferenceAndFinalizeNetFcb
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fcb.h
+req.include-header: Fcb.h
+req.target-type: Desktop
+req.target-min-winverclnt: The RxpDereferenceAndFinalizeNetFcb routine is only available on Windows Server 2003 Service Pack 1 (SP1) and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	fcb.h
+apiname:
+-	RxpDereferenceAndFinalizeNetFcb
+product: Windows
+targetos: Windows
+req.typenames: FA_ENTRY, *PFA_ENTRY
 ---
 
 

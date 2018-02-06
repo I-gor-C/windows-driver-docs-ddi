@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dhal._D3DHAL_DP2ADDDIRTYRECT
-title : "_D3DHAL_DP2ADDDIRTYRECT"
-author : windows-driver-content
-description : DirectX 8.1 and later versions only. D3DHAL_DP2ADDDIRTYRECT is used to specify that a portion of a 2D resource--a 2D texture or cube texture--was dirtied in system memory. Therefore, this 2D texture must be reloaded into video memory before being used.
-old-location : display\d3dhal_dp2adddirtyrect.htm
-old-project : display
-ms.assetid : b3bddb3a-2a07-4ca8-8452-be20d983fe6f
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : LPD3DHAL_DP2ADDDIRTYRECT, D3DHAL_DP2ADDDIRTYRECT structure [Display Devices], d3dhal/LPD3DHAL_DP2ADDDIRTYRECT, d3dstrct_64c25041-cbd9-4073-a42a-e9fb304e0d65.xml, display.d3dhal_dp2adddirtyrect, *LPD3DHAL_DP2ADDDIRTYRECT, d3dhal/D3DHAL_DP2ADDDIRTYRECT, D3DHAL_DP2ADDDIRTYRECT, _D3DHAL_DP2ADDDIRTYRECT, LPD3DHAL_DP2ADDDIRTYRECT structure pointer [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dhal.h
-req.include-header : D3dhal.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DHAL_DP2ADDDIRTYRECT
+UID: NS:d3dhal._D3DHAL_DP2ADDDIRTYRECT
+title: "_D3DHAL_DP2ADDDIRTYRECT"
+author: windows-driver-content
+description: DirectX 8.1 and later versions only. D3DHAL_DP2ADDDIRTYRECT is used to specify that a portion of a 2D resource--a 2D texture or cube texture--was dirtied in system memory. Therefore, this 2D texture must be reloaded into video memory before being used.
+old-location: display\d3dhal_dp2adddirtyrect.htm
+old-project: display
+ms.assetid: b3bddb3a-2a07-4ca8-8452-be20d983fe6f
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: LPD3DHAL_DP2ADDDIRTYRECT, D3DHAL_DP2ADDDIRTYRECT structure [Display Devices], d3dhal/LPD3DHAL_DP2ADDDIRTYRECT, d3dstrct_64c25041-cbd9-4073-a42a-e9fb304e0d65.xml, display.d3dhal_dp2adddirtyrect, *LPD3DHAL_DP2ADDDIRTYRECT, d3dhal/D3DHAL_DP2ADDDIRTYRECT, D3DHAL_DP2ADDDIRTYRECT, _D3DHAL_DP2ADDDIRTYRECT, LPD3DHAL_DP2ADDDIRTYRECT structure pointer [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dhal.h
+req.include-header: D3dhal.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dhal.h
+apiname:
+-	D3DHAL_DP2ADDDIRTYRECT
+product: Windows
+targetos: Windows
+req.typenames: D3DHAL_DP2ADDDIRTYRECT
 ---
 
 # _D3DHAL_DP2ADDDIRTYRECT structure

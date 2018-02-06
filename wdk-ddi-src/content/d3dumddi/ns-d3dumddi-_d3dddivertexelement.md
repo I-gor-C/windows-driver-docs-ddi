@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._D3DDDIVERTEXELEMENT
-title : "_D3DDDIVERTEXELEMENT"
-author : windows-driver-content
-description : The D3DDDIVERTEXELEMENT structure describes an element in the array for a vertex shader declaration.
-old-location : display\d3dddivertexelement.htm
-old-project : display
-ms.assetid : acb0fc1d-e360-4cb9-9b3b-7d8d03146cfd
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DDDIVERTEXELEMENT, D3D_other_Structs_7f1e4f94-3964-4deb-b3b0-1b47f8953dfa.xml, _D3DDDIVERTEXELEMENT, display.d3dddivertexelement, d3dumddi/D3DDDIVERTEXELEMENT, D3DDDIVERTEXELEMENT structure [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDIVERTEXELEMENT
+UID: NS:d3dumddi._D3DDDIVERTEXELEMENT
+title: "_D3DDDIVERTEXELEMENT"
+author: windows-driver-content
+description: The D3DDDIVERTEXELEMENT structure describes an element in the array for a vertex shader declaration.
+old-location: display\d3dddivertexelement.htm
+old-project: display
+ms.assetid: acb0fc1d-e360-4cb9-9b3b-7d8d03146cfd
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DDDIVERTEXELEMENT, D3D_other_Structs_7f1e4f94-3964-4deb-b3b0-1b47f8953dfa.xml, _D3DDDIVERTEXELEMENT, display.d3dddivertexelement, d3dumddi/D3DDDIVERTEXELEMENT, D3DDDIVERTEXELEMENT structure [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	D3DDDIVERTEXELEMENT
+product: Windows
+targetos: Windows
+req.typenames: D3DDDIVERTEXELEMENT
 ---
 
 # _D3DDDIVERTEXELEMENT structure

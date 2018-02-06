@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisMIdleNotificationConfirm
-title : NdisMIdleNotificationConfirm function
-author : windows-driver-content
-description : Miniport drivers call NdisMIdleNotificationConfirm to notify NDIS that the idle network adapter can safely be suspended and transitioned to a low-power state.Miniport drivers call this function during an NDIS selective suspend operation.
-old-location : netvista\ndismidlenotificationconfirm.htm
-old-project : netvista
-ms.assetid : 726B392E-3C7F-4F55-B045-CE022C242F0A
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NdisMIdleNotificationConfirm function [Network Drivers Starting with Windows Vista], netvista.ndismidlenotificationconfirm, ndis/NdisMIdleNotificationConfirm, NdisMIdleNotificationConfirm
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported in NDIS 6.30 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisMIdleNotificationConfirm
+title: NdisMIdleNotificationConfirm function
+author: windows-driver-content
+description: Miniport drivers call NdisMIdleNotificationConfirm to notify NDIS that the idle network adapter can safely be suspended and transitioned to a low-power state.Miniport drivers call this function during an NDIS selective suspend operation.
+old-location: netvista\ndismidlenotificationconfirm.htm
+old-project: netvista
+ms.assetid: 726B392E-3C7F-4F55-B045-CE022C242F0A
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NdisMIdleNotificationConfirm function [Network Drivers Starting with Windows Vista], netvista.ndismidlenotificationconfirm, ndis/NdisMIdleNotificationConfirm, NdisMIdleNotificationConfirm
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported in NDIS 6.30 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisMIdleNotificationConfirm
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

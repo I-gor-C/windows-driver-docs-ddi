@@ -1,41 +1,46 @@
 ---
-UID : NF:hbaapi.HBA_SendRNID
-title : HBA_SendRNID function
-author : windows-driver-content
-description : The HBA_SendRNID routine sends a request for node identification data (RNID) to the indicated HBA, which in turn routes the request through the indicated port or node to the appropriate fabric configuration server.
-old-location : storage\hba_sendrnid.htm
-old-project : storage
-ms.assetid : c15d74c8-bc04-4d82-a729-6b13f778b8c7
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.hba_sendrnid, hbaapi/HBA_SendRNID, HBA_SendRNID routine [Storage Devices], fibreHBA_rtns_fd816d59-9c64-499e-a3bb-2a2d2427fbf9.xml, HBA_SendRNID
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : hbaapi.h
-req.include-header : Hbaapi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Hbaapi.lib
-req.dll : Hbaapi.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HBA_WWNTYPE
+UID: NF:hbaapi.HBA_SendRNID
+title: HBA_SendRNID function
+author: windows-driver-content
+description: The HBA_SendRNID routine sends a request for node identification data (RNID) to the indicated HBA, which in turn routes the request through the indicated port or node to the appropriate fabric configuration server.
+old-location: storage\hba_sendrnid.htm
+old-project: storage
+ms.assetid: c15d74c8-bc04-4d82-a729-6b13f778b8c7
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.hba_sendrnid, hbaapi/HBA_SendRNID, HBA_SendRNID routine [Storage Devices], fibreHBA_rtns_fd816d59-9c64-499e-a3bb-2a2d2427fbf9.xml, HBA_SendRNID
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: hbaapi.h
+req.include-header: Hbaapi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Hbaapi.lib
+req.dll: Hbaapi.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Hbaapi.dll
+apiname:
+-	HBA_SendRNID
+product: Windows
+targetos: Windows
+req.typenames: HBA_WWNTYPE
 ---
 
 

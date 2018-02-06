@@ -1,42 +1,50 @@
 ---
-UID : NF:wdfusb.WdfUsbTargetPipeConfigContinuousReader
-title : WdfUsbTargetPipeConfigContinuousReader function
-author : windows-driver-content
-description : The WdfUsbTargetPipeConfigContinuousReader method configures the framework to continuously read from a specified USB pipe.
-old-location : wdf\wdfusbtargetpipeconfigcontinuousreader.htm
-old-project : wdf
-ms.assetid : 56ed3c4f-bcfa-417d-a276-9934e3bc1666
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdfusb/WdfUsbTargetPipeConfigContinuousReader, wdf.wdfusbtargetpipeconfigcontinuousreader, PFN_WDFUSBTARGETPIPECONFIGCONTINUOUSREADER, DFUsbRef_80432bbe-cb71-4bd1-9c0b-a71ea1f5c809.xml, WdfUsbTargetPipeConfigContinuousReader, WdfUsbTargetPipeConfigContinuousReader method, kmdf.wdfusbtargetpipeconfigcontinuousreader
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfusb.h
-req.include-header : Wdfusb.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : DriverCreate, FailD0EntryIoTargetState, KmdfIrql, KmdfIrql2, UsbContReader, UsbKmdfIrql, UsbKmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfusb.WdfUsbTargetPipeConfigContinuousReader
+title: WdfUsbTargetPipeConfigContinuousReader function
+author: windows-driver-content
+description: The WdfUsbTargetPipeConfigContinuousReader method configures the framework to continuously read from a specified USB pipe.
+old-location: wdf\wdfusbtargetpipeconfigcontinuousreader.htm
+old-project: wdf
+ms.assetid: 56ed3c4f-bcfa-417d-a276-9934e3bc1666
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdfusb/WdfUsbTargetPipeConfigContinuousReader, wdf.wdfusbtargetpipeconfigcontinuousreader, PFN_WDFUSBTARGETPIPECONFIGCONTINUOUSREADER, DFUsbRef_80432bbe-cb71-4bd1-9c0b-a71ea1f5c809.xml, WdfUsbTargetPipeConfigContinuousReader, WdfUsbTargetPipeConfigContinuousReader method, kmdf.wdfusbtargetpipeconfigcontinuousreader
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfusb.h
+req.include-header: Wdfusb.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: DriverCreate, FailD0EntryIoTargetState, KmdfIrql, KmdfIrql2, UsbContReader, UsbKmdfIrql, UsbKmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+-	WUDFx02000.dll
+-	WUDFx02000.dll.dll
+apiname:
+-	WdfUsbTargetPipeConfigContinuousReader
+product: Windows
+targetos: Windows
+req.typenames: WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
+req.product: Windows 10 or later.
 ---
 
 

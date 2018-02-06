@@ -1,41 +1,46 @@
 ---
-UID : NC:parallel.PPARALLEL_QUERY_WAITERS_ROUTINE
-title : PPARALLEL_QUERY_WAITERS_ROUTINE
-author : windows-driver-content
-description : The PPARALLEL_QUERY_WAITERS_ROUTINE-typed callback routine returns the number of IOCTL_INTERNAL_PARALLEL_PORT_ALLOCATE and IOCTL_INTERNAL_SELECT_DEVICE requests that are queued on the work queue of a parallel port.
-old-location : parports\pparallel_query_waiters_routine.htm
-old-project : parports
-ms.assetid : 0fe598b9-2143-4981-b562-6b0f135ec770
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : parports.pparallel_query_waiters_routine, (*PPARALLEL_QUERY_WAITERS_ROUTINE) callback function [Parallel Ports], (*PPARALLEL_QUERY_WAITERS_ROUTINE), parallel/(*PPARALLEL_QUERY_WAITERS_ROUTINE), cisspd_d1e6d424-75ec-4cc1-b144-05900a24a684.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : parallel.h
-req.include-header : Parallel.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RILGBATOKEN, *LPRILGBATOKEN
+UID: NC:parallel.PPARALLEL_QUERY_WAITERS_ROUTINE
+title: PPARALLEL_QUERY_WAITERS_ROUTINE
+author: windows-driver-content
+description: The PPARALLEL_QUERY_WAITERS_ROUTINE-typed callback routine returns the number of IOCTL_INTERNAL_PARALLEL_PORT_ALLOCATE and IOCTL_INTERNAL_SELECT_DEVICE requests that are queued on the work queue of a parallel port.
+old-location: parports\pparallel_query_waiters_routine.htm
+old-project: parports
+ms.assetid: 0fe598b9-2143-4981-b562-6b0f135ec770
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: parports.pparallel_query_waiters_routine, (*PPARALLEL_QUERY_WAITERS_ROUTINE) callback function [Parallel Ports], (*PPARALLEL_QUERY_WAITERS_ROUTINE), parallel/(*PPARALLEL_QUERY_WAITERS_ROUTINE), cisspd_d1e6d424-75ec-4cc1-b144-05900a24a684.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: parallel.h
+req.include-header: Parallel.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	parallel.h
+apiname:
+-	(*PPARALLEL_QUERY_WAITERS_ROUTINE)
+product: Windows
+targetos: Windows
+req.typenames: RILGBATOKEN, *LPRILGBATOKEN
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:nfccx._NFC_CX_HARDWARE_EVENT
-title : "_NFC_CX_HARDWARE_EVENT"
-author : windows-driver-content
-description : The NFC_CX_HARDWARE_EVENT structure is an input parameter to NfcCxHardwareEvent.
-old-location : nfpdrivers\nfc_cx_hardware_event.htm
-old-project : nfpdrivers
-ms.assetid : FC7566C0-95FD-450C-897E-C57870386512
-ms.author : windowsdriverdev
-ms.date : 12/18/2017
-ms.keywords : "_NFC_CX_HARDWARE_EVENT, *PNFC_CX_HARDWARE_EVENT, nfccx/NFC_CX_HARDWARE_EVENT, PNFC_CX_HARDWARE_EVENT structure pointer [Near-Field Proximity Drivers], NFC_CX_HARDWARE_EVENT, PNFC_CX_HARDWARE_EVENT, nfccx/PNFC_CX_HARDWARE_EVENT, nfpdrivers.nfc_cx_hardware_event, NFC_CX_HARDWARE_EVENT structure [Near-Field Proximity Drivers]"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : nfccx.h
-req.include-header : Ncidef.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : None supported
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NFC_CX_HARDWARE_EVENT, *PNFC_CX_HARDWARE_EVENT
+UID: NS:nfccx._NFC_CX_HARDWARE_EVENT
+title: "_NFC_CX_HARDWARE_EVENT"
+author: windows-driver-content
+description: The NFC_CX_HARDWARE_EVENT structure is an input parameter to NfcCxHardwareEvent.
+old-location: nfpdrivers\nfc_cx_hardware_event.htm
+old-project: nfpdrivers
+ms.assetid: FC7566C0-95FD-450C-897E-C57870386512
+ms.author: windowsdriverdev
+ms.date: 12/18/2017
+ms.keywords: "_NFC_CX_HARDWARE_EVENT, *PNFC_CX_HARDWARE_EVENT, nfccx/NFC_CX_HARDWARE_EVENT, PNFC_CX_HARDWARE_EVENT structure pointer [Near-Field Proximity Drivers], NFC_CX_HARDWARE_EVENT, PNFC_CX_HARDWARE_EVENT, nfccx/PNFC_CX_HARDWARE_EVENT, nfpdrivers.nfc_cx_hardware_event, NFC_CX_HARDWARE_EVENT structure [Near-Field Proximity Drivers]"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: nfccx.h
+req.include-header: Ncidef.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: None supported
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	nfccx.h
+apiname:
+-	NFC_CX_HARDWARE_EVENT
+product: Windows
+targetos: Windows
+req.typenames: NFC_CX_HARDWARE_EVENT, *PNFC_CX_HARDWARE_EVENT
 ---
 
 # _NFC_CX_HARDWARE_EVENT structure

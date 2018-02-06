@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFDevice2.AssignSxWakeSettings
-title : IWDFDevice2::AssignSxWakeSettings method
-author : windows-driver-content
-description : The AssignSxWakeSettings method provides driver-supplied information about a device's ability to trigger a wake signal while both the device and the system are in a low-power state.
-old-location : wdf\iwdfdevice2_assignsxwakesettings.htm
-old-project : wdf
-ms.assetid : 32d3b680-298b-443e-a2c4-db8fc057bf75
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : IWDFDevice2::AssignSxWakeSettings, AssignSxWakeSettings method, umdf.iwdfdevice2_assignsxwakesettings, IWDFDevice2 interface, AssignSxWakeSettings method, AssignSxWakeSettings, wdf.iwdfdevice2_assignsxwakesettings, AssignSxWakeSettings method, IWDFDevice2 interface, wudfddi/IWDFDevice2::AssignSxWakeSettings, IWDFDevice2, UMDFDeviceObjectRef_7e411333-6c21-4ed6-af60-b78f3a32bd65.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.9
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFDevice2.AssignSxWakeSettings
+title: IWDFDevice2::AssignSxWakeSettings method
+author: windows-driver-content
+description: The AssignSxWakeSettings method provides driver-supplied information about a device's ability to trigger a wake signal while both the device and the system are in a low-power state.
+old-location: wdf\iwdfdevice2_assignsxwakesettings.htm
+old-project: wdf
+ms.assetid: 32d3b680-298b-443e-a2c4-db8fc057bf75
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: IWDFDevice2::AssignSxWakeSettings, AssignSxWakeSettings method, umdf.iwdfdevice2_assignsxwakesettings, IWDFDevice2 interface, AssignSxWakeSettings method, AssignSxWakeSettings, wdf.iwdfdevice2_assignsxwakesettings, AssignSxWakeSettings method, IWDFDevice2 interface, wudfddi/IWDFDevice2::AssignSxWakeSettings, IWDFDevice2, UMDFDeviceObjectRef_7e411333-6c21-4ed6-af60-b78f3a32bd65.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.9
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFDevice2.AssignSxWakeSettings
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

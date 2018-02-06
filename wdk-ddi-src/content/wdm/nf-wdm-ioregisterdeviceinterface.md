@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.IoRegisterDeviceInterface
-title : IoRegisterDeviceInterface function
-author : windows-driver-content
-description : The IoRegisterDeviceInterface routine registers a device interface class, if it has not been previously registered, and creates a new instance of the interface class, which a driver can subsequently enable for use by applications or other system components.
-old-location : kernel\ioregisterdeviceinterface.htm
-old-project : kernel
-ms.assetid : 4d0782c7-0516-4326-9994-7820446f2af6
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : IoRegisterDeviceInterface routine [Kernel-Mode Driver Architecture], kernel.ioregisterdeviceinterface, IoRegisterDeviceInterface, wdm/IoRegisterDeviceInterface, k104_4916c641-8510-425d-953f-68ed7a3f8976.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : IrqlIoPassive3, PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.IoRegisterDeviceInterface
+title: IoRegisterDeviceInterface function
+author: windows-driver-content
+description: The IoRegisterDeviceInterface routine registers a device interface class, if it has not been previously registered, and creates a new instance of the interface class, which a driver can subsequently enable for use by applications or other system components.
+old-location: kernel\ioregisterdeviceinterface.htm
+old-project: kernel
+ms.assetid: 4d0782c7-0516-4326-9994-7820446f2af6
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: IoRegisterDeviceInterface routine [Kernel-Mode Driver Architecture], kernel.ioregisterdeviceinterface, IoRegisterDeviceInterface, wdm/IoRegisterDeviceInterface, k104_4916c641-8510-425d-953f-68ed7a3f8976.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: IrqlIoPassive3, PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoRegisterDeviceInterface
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

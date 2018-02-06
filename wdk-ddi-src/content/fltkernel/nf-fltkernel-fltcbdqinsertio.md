@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltCbdqInsertIo
-title : FltCbdqInsertIo function
-author : windows-driver-content
-description : FltCbdqInsertIo inserts the callback data structure for an I/O operation into a minifilter driver's callback data queue.
-old-location : ifsk\fltcbdqinsertio.htm
-old-project : ifsk
-ms.assetid : d20d2626-89fb-4bc5-9309-88977b921078
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltCbdqInsertIo function [Installable File System Drivers], fltkernel/FltCbdqInsertIo, ifsk.fltcbdqinsertio, FltCbdqInsertIo, FltApiRef_a_to_d_d2635baa-958a-437b-88ca-9ee84df26d64.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltCbdqInsertIo
+title: FltCbdqInsertIo function
+author: windows-driver-content
+description: FltCbdqInsertIo inserts the callback data structure for an I/O operation into a minifilter driver's callback data queue.
+old-location: ifsk\fltcbdqinsertio.htm
+old-project: ifsk
+ms.assetid: d20d2626-89fb-4bc5-9309-88977b921078
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltCbdqInsertIo function [Installable File System Drivers], fltkernel/FltCbdqInsertIo, ifsk.fltcbdqinsertio, FltCbdqInsertIo, FltApiRef_a_to_d_d2635baa-958a-437b-88ca-9ee84df26d64.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	fltkernel.h
+apiname:
+-	FltCbdqInsertIo
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

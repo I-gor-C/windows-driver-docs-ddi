@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisMEnableVirtualization
-title : NdisMEnableVirtualization function
-author : windows-driver-content
-description : A miniport driver calls the NdisMEnableVirtualization function during the creation or deletion of a NIC switch on the network adapter.
-old-location : netvista\ndismenablevirtualization.htm
-old-project : netvista
-ms.assetid : 5a82dfe6-8844-4b18-8f54-7bf143fcd2ff
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : ndis/NdisMEnableVirtualization, netvista.ndismenablevirtualization, NdisMEnableVirtualization function [Network Drivers Starting with Windows Vista], NdisMEnableVirtualization
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported in NDIS 6.30 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisMEnableVirtualization
+title: NdisMEnableVirtualization function
+author: windows-driver-content
+description: A miniport driver calls the NdisMEnableVirtualization function during the creation or deletion of a NIC switch on the network adapter.
+old-location: netvista\ndismenablevirtualization.htm
+old-project: netvista
+ms.assetid: 5a82dfe6-8844-4b18-8f54-7bf143fcd2ff
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: ndis/NdisMEnableVirtualization, netvista.ndismenablevirtualization, NdisMEnableVirtualization function [Network Drivers Starting with Windows Vista], NdisMEnableVirtualization
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported in NDIS 6.30 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisMEnableVirtualization
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

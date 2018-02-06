@@ -1,42 +1,47 @@
 ---
-UID : NC:sercx.EVT_SERCX2_PIO_TRANSMIT_ENABLE_READY_NOTIFICATION
-title : EVT_SERCX2_PIO_TRANSMIT_ENABLE_READY_NOTIFICATION
-author : windows-driver-content
-description : The EvtSerCx2PioTransmitEnableReadyNotification event callback function is called by version 2 of the serial framework extension (SerCx2) to enable the serial controller driver to notify SerCx2 when the transmit FIFO in the serial controller is ready to accept more data.
-old-location : serports\evtsercx2piotransmitenablereadynotification.htm
-old-project : serports
-ms.assetid : 05E5F48B-4E82-4BC3-B6D1-7E9E3435BDB3
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : serports.evtsercx2piotransmitenablereadynotification, EvtSerCx2PioTransmitEnableReadyNotification callback function [Serial Ports], EvtSerCx2PioTransmitEnableReadyNotification, EVT_SERCX2_PIO_TRANSMIT_ENABLE_READY_NOTIFICATION, EVT_SERCX2_PIO_TRANSMIT_ENABLE_READY_NOTIFICATION, 2/EvtSerCx2PioTransmitEnableReadyNotification
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : sercx.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Available starting with Windows 8.1.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Called at IRQL <= DISPATCH_LEVEL.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SENSOR_VALUE_PAIR, *PSENSOR_VALUE_PAIR
-req.product : Windows 10 or later.
+UID: NC:sercx.EVT_SERCX2_PIO_TRANSMIT_ENABLE_READY_NOTIFICATION
+title: EVT_SERCX2_PIO_TRANSMIT_ENABLE_READY_NOTIFICATION
+author: windows-driver-content
+description: The EvtSerCx2PioTransmitEnableReadyNotification event callback function is called by version 2 of the serial framework extension (SerCx2) to enable the serial controller driver to notify SerCx2 when the transmit FIFO in the serial controller is ready to accept more data.
+old-location: serports\evtsercx2piotransmitenablereadynotification.htm
+old-project: serports
+ms.assetid: 05E5F48B-4E82-4BC3-B6D1-7E9E3435BDB3
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: serports.evtsercx2piotransmitenablereadynotification, EvtSerCx2PioTransmitEnableReadyNotification callback function [Serial Ports], EvtSerCx2PioTransmitEnableReadyNotification, EVT_SERCX2_PIO_TRANSMIT_ENABLE_READY_NOTIFICATION, EVT_SERCX2_PIO_TRANSMIT_ENABLE_READY_NOTIFICATION, 2/EvtSerCx2PioTransmitEnableReadyNotification
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: sercx.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Available starting with Windows 8.1.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Called at IRQL <= DISPATCH_LEVEL.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	2.0\Sercx.h
+apiname:
+-	EvtSerCx2PioTransmitEnableReadyNotification
+product: Windows
+targetos: Windows
+req.typenames: SENSOR_VALUE_PAIR, *PSENSOR_VALUE_PAIR
+req.product: Windows 10 or later.
 ---
 
 

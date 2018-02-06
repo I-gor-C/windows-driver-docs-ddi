@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugDataSpaces4.ReadMultiByteStringVirtualWide
-title : IDebugDataSpaces4::ReadMultiByteStringVirtualWide method
-author : windows-driver-content
-description : The ReadMultiByteStringVirtualWide method reads a null-terminated, multibyte string from the target and converts it to Unicode.
-old-location : debugger\readmultibytestringvirtualwide.htm
-old-project : debugger
-ms.assetid : 5429b533-1b85-426e-8540-6c72034d42dd
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : ReadMultiByteStringVirtualWide method [Windows Debugging], IDebugDataSpaces4 interface, IDebugDataSpaces4::ReadMultiByteStringVirtualWide, ReadMultiByteStringVirtualWide method [Windows Debugging], dbgeng/IDebugDataSpaces4::ReadMultiByteStringVirtualWide, IDebugDataSpaces4 interface [Windows Debugging], ReadMultiByteStringVirtualWide method, IDebugDataSpaces4, IDebugDataSpaces_c5a99b4a-a468-459e-acc1-f3a4f224f645.xml, ReadMultiByteStringVirtualWide, debugger.readmultibytestringvirtualwide
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h, Winnls.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugDataSpaces4.ReadMultiByteStringVirtualWide
+title: IDebugDataSpaces4::ReadMultiByteStringVirtualWide method
+author: windows-driver-content
+description: The ReadMultiByteStringVirtualWide method reads a null-terminated, multibyte string from the target and converts it to Unicode.
+old-location: debugger\readmultibytestringvirtualwide.htm
+old-project: debugger
+ms.assetid: 5429b533-1b85-426e-8540-6c72034d42dd
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: ReadMultiByteStringVirtualWide method [Windows Debugging], IDebugDataSpaces4 interface, IDebugDataSpaces4::ReadMultiByteStringVirtualWide, ReadMultiByteStringVirtualWide method [Windows Debugging], dbgeng/IDebugDataSpaces4::ReadMultiByteStringVirtualWide, IDebugDataSpaces4 interface [Windows Debugging], ReadMultiByteStringVirtualWide method, IDebugDataSpaces4, IDebugDataSpaces_c5a99b4a-a468-459e-acc1-f3a4f224f645.xml, ReadMultiByteStringVirtualWide, debugger.readmultibytestringvirtualwide
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h, Winnls.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugDataSpaces4.ReadMultiByteStringVirtualWide
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

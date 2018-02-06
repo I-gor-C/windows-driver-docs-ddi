@@ -1,41 +1,46 @@
 ---
-UID : NF:irb.AtaPortRequestPowerStateChange
-title : AtaPortRequestPowerStateChange function
-author : windows-driver-content
-description : The AtaPortRequestPowerStateChange routine requests a power state transition for the indicated device.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
-old-location : storage\ataportrequestpowerstatechange.htm
-old-project : storage
-ms.assetid : 37cf1552-2cbe-4b80-b220-cfa853674e1b
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ataportrequestpowerstatechange, AtaPortRequestPowerStateChange, AtaPortRequestPowerStateChange routine [Storage Devices], irb/AtaPortRequestPowerStateChange
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : irb.h
-req.include-header : Ata.h, Irb.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : IDE_POWER_STATE
+UID: NF:irb.AtaPortRequestPowerStateChange
+title: AtaPortRequestPowerStateChange function
+author: windows-driver-content
+description: The AtaPortRequestPowerStateChange routine requests a power state transition for the indicated device.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
+old-location: storage\ataportrequestpowerstatechange.htm
+old-project: storage
+ms.assetid: 37cf1552-2cbe-4b80-b220-cfa853674e1b
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ataportrequestpowerstatechange, AtaPortRequestPowerStateChange, AtaPortRequestPowerStateChange routine [Storage Devices], irb/AtaPortRequestPowerStateChange
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: irb.h
+req.include-header: Ata.h, Irb.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Irb.h
+apiname:
+-	AtaPortRequestPowerStateChange
+product: Windows
+targetos: Windows
+req.typenames: IDE_POWER_STATE
 ---
 
 

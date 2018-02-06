@@ -1,42 +1,47 @@
 ---
-UID : NF:wdfiotarget.WDF_IO_TARGET_OPEN_PARAMS_INIT_CREATE_BY_NAME
-title : WDF_IO_TARGET_OPEN_PARAMS_INIT_CREATE_BY_NAME function
-author : windows-driver-content
-description : The WDF_IO_TARGET_OPEN_PARAMS_INIT_CREATE_BY_NAME function initializes a driver's WDF_IO_TARGET_OPEN_PARAMS structure so the driver can open an I/O target by specifying the name of the device, file, or device interface.
-old-location : wdf\wdf_io_target_open_params_init_create_by_name.htm
-old-project : wdf
-ms.assetid : f6a6726a-83bc-4102-a6b6-74115ca4b889
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : kmdf.wdf_io_target_open_params_init_create_by_name, DFIOTargetRef_5ae50d6e-6e3b-484a-afe9-6198860180b7.xml, wdf.wdf_io_target_open_params_init_create_by_name, WDF_IO_TARGET_OPEN_PARAMS_INIT_CREATE_BY_NAME function, WDF_IO_TARGET_OPEN_PARAMS_INIT_CREATE_BY_NAME, wdfiotarget/WDF_IO_TARGET_OPEN_PARAMS_INIT_CREATE_BY_NAME
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfiotarget.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDF_IO_TARGET_STATE, WDF_IO_TARGET_STATE"
-req.product : Windows 10 or later.
+UID: NF:wdfiotarget.WDF_IO_TARGET_OPEN_PARAMS_INIT_CREATE_BY_NAME
+title: WDF_IO_TARGET_OPEN_PARAMS_INIT_CREATE_BY_NAME function
+author: windows-driver-content
+description: The WDF_IO_TARGET_OPEN_PARAMS_INIT_CREATE_BY_NAME function initializes a driver's WDF_IO_TARGET_OPEN_PARAMS structure so the driver can open an I/O target by specifying the name of the device, file, or device interface.
+old-location: wdf\wdf_io_target_open_params_init_create_by_name.htm
+old-project: wdf
+ms.assetid: f6a6726a-83bc-4102-a6b6-74115ca4b889
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: kmdf.wdf_io_target_open_params_init_create_by_name, DFIOTargetRef_5ae50d6e-6e3b-484a-afe9-6198860180b7.xml, wdf.wdf_io_target_open_params_init_create_by_name, WDF_IO_TARGET_OPEN_PARAMS_INIT_CREATE_BY_NAME function, WDF_IO_TARGET_OPEN_PARAMS_INIT_CREATE_BY_NAME, wdfiotarget/WDF_IO_TARGET_OPEN_PARAMS_INIT_CREATE_BY_NAME
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfiotarget.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfiotarget.h
+apiname:
+-	WDF_IO_TARGET_OPEN_PARAMS_INIT_CREATE_BY_NAME
+product: Windows
+targetos: Windows
+req.typenames: "*PWDF_IO_TARGET_STATE, WDF_IO_TARGET_STATE"
+req.product: Windows 10 or later.
 ---
 
 

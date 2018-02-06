@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisUnmapFile
-title : NdisUnmapFile function
-author : windows-driver-content
-description : The NdisUnmapFile function releases a virtual address mapping of a file previously set up with the NdisMapFile function.
-old-location : netvista\ndisunmapfile.htm
-old-project : netvista
-ms.assetid : 20ba1eef-2377-4e17-a2ff-002f1bbe15f0
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.ndisunmapfile, ndis_file_ref_5be88800-5866-4969-8534-2d76953bf4de.xml, NdisUnmapFile function [Network Drivers Starting with Windows Vista], ndis/NdisUnmapFile, NdisUnmapFile
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisUnmapFile (NDIS 5.1)) in Windows   Vista. Supported for NDIS 5.1 drivers (see    NdisUnmapFile (NDIS 5.1)) in Windows   XP.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_Miscellaneous_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisUnmapFile
+title: NdisUnmapFile function
+author: windows-driver-content
+description: The NdisUnmapFile function releases a virtual address mapping of a file previously set up with the NdisMapFile function.
+old-location: netvista\ndisunmapfile.htm
+old-project: netvista
+ms.assetid: 20ba1eef-2377-4e17-a2ff-002f1bbe15f0
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.ndisunmapfile, ndis_file_ref_5be88800-5866-4969-8534-2d76953bf4de.xml, NdisUnmapFile function [Network Drivers Starting with Windows Vista], ndis/NdisUnmapFile, NdisUnmapFile
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisUnmapFile (NDIS 5.1)) in Windows   Vista. Supported for NDIS 5.1 drivers (see    NdisUnmapFile (NDIS 5.1)) in Windows   XP.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_Miscellaneous_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisUnmapFile
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

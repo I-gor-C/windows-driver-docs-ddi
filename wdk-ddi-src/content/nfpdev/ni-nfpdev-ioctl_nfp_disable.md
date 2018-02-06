@@ -1,41 +1,46 @@
 ---
-UID : NI:nfpdev.IOCTL_NFP_DISABLE
-title : IOCTL_NFP_DISABLE
-author : windows-driver-content
-description : A client sends the IOCTL_NFP_DISABLE request to temporarily disable subscriptions, publications, and presence events.
-old-location : nfpdrivers\ioctl_nfp_disable.htm
-old-project : nfpdrivers
-ms.assetid : 5999EBAE-9B4A-469C-A8CE-E0A72B6F6A14
-ms.author : windowsdriverdev
-ms.date : 12/18/2017
-ms.keywords : nfpdrivers.ioctl_nfp_disable, IOCTL_NFP_DISABLE control code [Near-Field Proximity Drivers], IOCTL_NFP_DISABLE, nfpdev/IOCTL_NFP_DISABLE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : nfpdev.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SECURE_ELEMENT_TECH_ROUTING_INFO, *PSECURE_ELEMENT_TECH_ROUTING_INFO
+UID: NI:nfpdev.IOCTL_NFP_DISABLE
+title: IOCTL_NFP_DISABLE
+author: windows-driver-content
+description: A client sends the IOCTL_NFP_DISABLE request to temporarily disable subscriptions, publications, and presence events.
+old-location: nfpdrivers\ioctl_nfp_disable.htm
+old-project: nfpdrivers
+ms.assetid: 5999EBAE-9B4A-469C-A8CE-E0A72B6F6A14
+ms.author: windowsdriverdev
+ms.date: 12/18/2017
+ms.keywords: nfpdrivers.ioctl_nfp_disable, IOCTL_NFP_DISABLE control code [Near-Field Proximity Drivers], IOCTL_NFP_DISABLE, nfpdev/IOCTL_NFP_DISABLE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: nfpdev.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	nfpdev.h
+apiname:
+-	IOCTL_NFP_DISABLE
+product: Windows
+targetos: Windows
+req.typenames: SECURE_ELEMENT_TECH_ROUTING_INFO, *PSECURE_ELEMENT_TECH_ROUTING_INFO
 ---
 
 # IOCTL_NFP_DISABLE IOCTL

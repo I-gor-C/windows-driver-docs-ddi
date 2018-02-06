@@ -1,41 +1,49 @@
 ---
-UID : NF:d3dkmthk.D3DKMTCreateKeyedMutex
-title : D3DKMTCreateKeyedMutex function
-author : windows-driver-content
-description : The D3DKMTCreateKeyedMutex function creates a keyed mutex object.
-old-location : display\d3dkmtcreatekeyedmutex.htm
-old-project : display
-ms.assetid : ae9e4771-ba8d-4472-aeb8-04c3f3c59efa
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3dkmthk/D3DKMTCreateKeyedMutex, PFND3DKMT_CREATEKEYEDMUTEX, OpenGL_Functions_a8475da1-40bf-4669-9da8-f6bb09c3f905.xml, D3DKMTCreateKeyedMutex function [Display Devices], display.d3dkmtcreatekeyedmutex, D3DKMTCreateKeyedMutex
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Universal
-req.target-min-winverclnt : D3DKMTCreateKeyedMutex is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Gdi32.lib
-req.dll : Gdi32.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_DRIVERVERSION
+UID: NF:d3dkmthk.D3DKMTCreateKeyedMutex
+title: D3DKMTCreateKeyedMutex function
+author: windows-driver-content
+description: The D3DKMTCreateKeyedMutex function creates a keyed mutex object.
+old-location: display\d3dkmtcreatekeyedmutex.htm
+old-project: display
+ms.assetid: ae9e4771-ba8d-4472-aeb8-04c3f3c59efa
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3dkmthk/D3DKMTCreateKeyedMutex, PFND3DKMT_CREATEKEYEDMUTEX, OpenGL_Functions_a8475da1-40bf-4669-9da8-f6bb09c3f905.xml, D3DKMTCreateKeyedMutex function [Display Devices], display.d3dkmtcreatekeyedmutex, D3DKMTCreateKeyedMutex
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Universal
+req.target-min-winverclnt: D3DKMTCreateKeyedMutex is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Gdi32.lib
+req.dll: Gdi32.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Gdi32.dll
+-	API-MS-Win-dx-d3dkmt-l1-1-0.dll
+-	API-MS-Win-dx-d3dkmt-l1-1-1.dll
+-	API-MS-Win-DX-D3DKMT-L1-1-2.dll
+apiname:
+-	D3DKMTCreateKeyedMutex
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_DRIVERVERSION
 ---
 
 

@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisMCmOidRequest
-title : NdisMCmOidRequest function
-author : windows-driver-content
-description : The NdisMCmOidRequest function sends an OID request from a miniport call manager (MCM) driver to a CoNDIS client.
-old-location : netvista\ndismcmoidrequest.htm
-old-project : netvista
-ms.assetid : c5523dff-4957-4265-82ef-2fbc009e6bef
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : condis_request_ref_951cd477-8d0a-4882-921d-f394ac04f9cc.xml, NdisMCmOidRequest function [Network Drivers Starting with Windows Vista], netvista.ndismcmoidrequest, NdisMCmOidRequest, ndis/NdisMCmOidRequest
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_MCM_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisMCmOidRequest
+title: NdisMCmOidRequest function
+author: windows-driver-content
+description: The NdisMCmOidRequest function sends an OID request from a miniport call manager (MCM) driver to a CoNDIS client.
+old-location: netvista\ndismcmoidrequest.htm
+old-project: netvista
+ms.assetid: c5523dff-4957-4265-82ef-2fbc009e6bef
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: condis_request_ref_951cd477-8d0a-4882-921d-f394ac04f9cc.xml, NdisMCmOidRequest function [Network Drivers Starting with Windows Vista], netvista.ndismcmoidrequest, NdisMCmOidRequest, ndis/NdisMCmOidRequest
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_MCM_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisMCmOidRequest
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

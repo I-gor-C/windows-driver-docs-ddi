@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.KSAUDIO_POSITIONEX
-title : KSAUDIO_POSITIONEX
-author : windows-driver-content
-description : The KSAUDIO_POSITIONEX structure specifies the stream position and the associated timestamp information for a kernel streaming (KS)-based audio driver.
-old-location : audio\ksaudio_positionex.htm
-old-project : audio
-ms.assetid : 63cd938c-1ccd-4f67-a4eb-2898002ae762
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : "*PKSAUDIO_POSITIONEX, KSAUDIO_POSITIONEX structure [Audio Devices], ksmedia/PKSAUDIO_POSITIONEX, ksmedia/KSAUDIO_POSITIONEX, PKSAUDIO_POSITIONEX structure pointer [Audio Devices], audio.ksaudio_positionex, aud-prop_9a418d76-9a4f-4626-b6db-64ed4fcedb18.xml, KSAUDIO_POSITIONEX, PKSAUDIO_POSITIONEX"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KSAUDIO_POSITIONEX, *PKSAUDIO_POSITIONEX
+UID: NS:ksmedia.KSAUDIO_POSITIONEX
+title: KSAUDIO_POSITIONEX
+author: windows-driver-content
+description: The KSAUDIO_POSITIONEX structure specifies the stream position and the associated timestamp information for a kernel streaming (KS)-based audio driver.
+old-location: audio\ksaudio_positionex.htm
+old-project: audio
+ms.assetid: 63cd938c-1ccd-4f67-a4eb-2898002ae762
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: "*PKSAUDIO_POSITIONEX, KSAUDIO_POSITIONEX structure [Audio Devices], ksmedia/PKSAUDIO_POSITIONEX, ksmedia/KSAUDIO_POSITIONEX, PKSAUDIO_POSITIONEX structure pointer [Audio Devices], audio.ksaudio_positionex, aud-prop_9a418d76-9a4f-4626-b6db-64ed4fcedb18.xml, KSAUDIO_POSITIONEX, PKSAUDIO_POSITIONEX"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	KSAUDIO_POSITIONEX
+product: Windows
+targetos: Windows
+req.typenames: KSAUDIO_POSITIONEX, *PKSAUDIO_POSITIONEX
 ---
 
 # KSAUDIO_POSITIONEX structure

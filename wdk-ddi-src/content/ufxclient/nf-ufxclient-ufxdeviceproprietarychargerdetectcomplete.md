@@ -1,42 +1,47 @@
 ---
-UID : NF:ufxclient.UfxDeviceProprietaryChargerDetectComplete
-title : UfxDeviceProprietaryChargerDetectComplete function
-author : windows-driver-content
-description : Notifies UFX about a detected proprietary port/charger type.
-old-location : buses\ufxdeviceproprietarychargerdetectcomplete.htm
-old-project : usbref
-ms.assetid : 5E85D80B-4C0F-4C91-A1B5-565E09FD3743
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ufxclient/UfxDeviceProprietaryChargerDetectComplete, UfxDeviceProprietaryChargerDetectComplete method [Buses], UfxDeviceProprietaryChargerDetectComplete, buses.ufxdeviceproprietarychargerdetectcomplete
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ufxclient.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUFX_HARDWARE_FAILURE_CONTEXT, UFX_HARDWARE_FAILURE_CONTEXT"
-req.product : Windows 10 or later.
+UID: NF:ufxclient.UfxDeviceProprietaryChargerDetectComplete
+title: UfxDeviceProprietaryChargerDetectComplete function
+author: windows-driver-content
+description: Notifies UFX about a detected proprietary port/charger type.
+old-location: buses\ufxdeviceproprietarychargerdetectcomplete.htm
+old-project: usbref
+ms.assetid: 5E85D80B-4C0F-4C91-A1B5-565E09FD3743
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ufxclient/UfxDeviceProprietaryChargerDetectComplete, UfxDeviceProprietaryChargerDetectComplete method [Buses], UfxDeviceProprietaryChargerDetectComplete, buses.ufxdeviceproprietarychargerdetectcomplete
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ufxclient.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	ufxclient.h
+apiname:
+-	UfxDeviceProprietaryChargerDetectComplete
+product: Windows
+targetos: Windows
+req.typenames: "*PUFX_HARDWARE_FAILURE_CONTEXT, UFX_HARDWARE_FAILURE_CONTEXT"
+req.product: Windows 10 or later.
 ---
 
 

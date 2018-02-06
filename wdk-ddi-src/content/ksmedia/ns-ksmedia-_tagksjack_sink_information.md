@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia._tagKSJACK_SINK_INFORMATION
-title : "_tagKSJACK_SINK_INFORMATION"
-author : windows-driver-content
-description : The KSJACK_SINK_INFORMATION structure specifies information about a display-related digital audio device, such as an HDMI device or a display port.
-old-location : audio\ksjack_sink_information.htm
-old-project : audio
-ms.assetid : ec832068-9b5d-40ce-bafc-31642539e2d9
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : "*PKSJACK_SINK_INFORMATION, PKSJACK_SINK_INFORMATION structure pointer [Audio Devices], _tagKSJACK_SINK_INFORMATION, KSJACK_SINK_INFORMATION structure [Audio Devices], KSJACK_SINK_INFORMATION, aud-prop_e9bbfa8a-d002-400c-a35d-3da0a8026cd6.xml, ksmedia/KSJACK_SINK_INFORMATION, audio.ksjack_sink_information, ksmedia/PKSJACK_SINK_INFORMATION, PKSJACK_SINK_INFORMATION"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7 and later Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KSJACK_SINK_INFORMATION, *PKSJACK_SINK_INFORMATION
+UID: NS:ksmedia._tagKSJACK_SINK_INFORMATION
+title: "_tagKSJACK_SINK_INFORMATION"
+author: windows-driver-content
+description: The KSJACK_SINK_INFORMATION structure specifies information about a display-related digital audio device, such as an HDMI device or a display port.
+old-location: audio\ksjack_sink_information.htm
+old-project: audio
+ms.assetid: ec832068-9b5d-40ce-bafc-31642539e2d9
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: "*PKSJACK_SINK_INFORMATION, PKSJACK_SINK_INFORMATION structure pointer [Audio Devices], _tagKSJACK_SINK_INFORMATION, KSJACK_SINK_INFORMATION structure [Audio Devices], KSJACK_SINK_INFORMATION, aud-prop_e9bbfa8a-d002-400c-a35d-3da0a8026cd6.xml, ksmedia/KSJACK_SINK_INFORMATION, audio.ksjack_sink_information, ksmedia/PKSJACK_SINK_INFORMATION, PKSJACK_SINK_INFORMATION"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7 and later Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	KSJACK_SINK_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: KSJACK_SINK_INFORMATION, *PKSJACK_SINK_INFORMATION
 ---
 
 # _tagKSJACK_SINK_INFORMATION structure

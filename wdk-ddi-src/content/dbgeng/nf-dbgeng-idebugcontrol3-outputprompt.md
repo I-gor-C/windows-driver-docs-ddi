@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugControl3.OutputPrompt
-title : IDebugControl3::OutputPrompt method
-author : windows-driver-content
-description : The OutputPrompt method formats and sends a user prompt to the output callback objects.
-old-location : debugger\outputprompt.htm
-old-project : debugger
-ms.assetid : 463d6fbd-cbe4-4de1-a01a-52a5002f24b8
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : dbgeng/IDebugControl3::OutputPrompt, IDebugControl3::OutputPrompt, IDebugControl3 interface [Windows Debugging], OutputPrompt method, IDebugControl2 interface [Windows Debugging], OutputPrompt method, dbgeng/IDebugControl::OutputPrompt, IDebugControl::OutputPrompt, OutputPrompt method [Windows Debugging], IDebugControl2 interface, dbgeng/IDebugControl2::OutputPrompt, IDebugControl3, IDebugControl_bb972181-80f5-4c7a-8705-919273529eee.xml, OutputPrompt, OutputPrompt method [Windows Debugging], IDebugControl interface, IDebugControl2::OutputPrompt, OutputPrompt method [Windows Debugging], debugger.outputprompt, IDebugControl interface [Windows Debugging], OutputPrompt method, OutputPrompt method [Windows Debugging], IDebugControl3 interface
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl3.OutputPrompt
+title: IDebugControl3::OutputPrompt method
+author: windows-driver-content
+description: The OutputPrompt method formats and sends a user prompt to the output callback objects.
+old-location: debugger\outputprompt.htm
+old-project: debugger
+ms.assetid: 463d6fbd-cbe4-4de1-a01a-52a5002f24b8
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: dbgeng/IDebugControl3::OutputPrompt, IDebugControl3::OutputPrompt, IDebugControl3 interface [Windows Debugging], OutputPrompt method, IDebugControl2 interface [Windows Debugging], OutputPrompt method, dbgeng/IDebugControl::OutputPrompt, IDebugControl::OutputPrompt, OutputPrompt method [Windows Debugging], IDebugControl2 interface, dbgeng/IDebugControl2::OutputPrompt, IDebugControl3, IDebugControl_bb972181-80f5-4c7a-8705-919273529eee.xml, OutputPrompt, OutputPrompt method [Windows Debugging], IDebugControl interface, IDebugControl2::OutputPrompt, OutputPrompt method [Windows Debugging], debugger.outputprompt, IDebugControl interface [Windows Debugging], OutputPrompt method, OutputPrompt method [Windows Debugging], IDebugControl3 interface
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Dbgeng.h
+apiname:
+-	IDebugControl.OutputPrompt
+-	IDebugControl2.OutputPrompt
+-	IDebugControl3.OutputPrompt
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

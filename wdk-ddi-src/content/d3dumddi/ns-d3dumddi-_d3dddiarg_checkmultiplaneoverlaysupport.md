@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._D3DDDIARG_CHECKMULTIPLANEOVERLAYSUPPORT
-title : "_D3DDDIARG_CHECKMULTIPLANEOVERLAYSUPPORT"
-author : windows-driver-content
-description : Used in a call to the pfnCheckMultiPlaneOverlaySupport (D3D) function to check details on hardware support for multiplane overlays.
-old-location : display\d3dddiarg_checkmultiplaneoverlaysupport.htm
-old-project : display
-ms.assetid : e5b6c24a-a3a5-4736-b9ee-ebb992070a83
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.d3dddiarg_checkmultiplaneoverlaysupport, _D3DDDIARG_CHECKMULTIPLANEOVERLAYSUPPORT, D3DDDIARG_CHECKMULTIPLANEOVERLAYSUPPORT structure [Display Devices], D3DDDIARG_CHECKMULTIPLANEOVERLAYSUPPORT, d3dumddi/D3DDDIARG_CHECKMULTIPLANEOVERLAYSUPPORT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8.1
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDIARG_CHECKMULTIPLANEOVERLAYSUPPORT
+UID: NS:d3dumddi._D3DDDIARG_CHECKMULTIPLANEOVERLAYSUPPORT
+title: "_D3DDDIARG_CHECKMULTIPLANEOVERLAYSUPPORT"
+author: windows-driver-content
+description: Used in a call to the pfnCheckMultiPlaneOverlaySupport (D3D) function to check details on hardware support for multiplane overlays.
+old-location: display\d3dddiarg_checkmultiplaneoverlaysupport.htm
+old-project: display
+ms.assetid: e5b6c24a-a3a5-4736-b9ee-ebb992070a83
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.d3dddiarg_checkmultiplaneoverlaysupport, _D3DDDIARG_CHECKMULTIPLANEOVERLAYSUPPORT, D3DDDIARG_CHECKMULTIPLANEOVERLAYSUPPORT structure [Display Devices], D3DDDIARG_CHECKMULTIPLANEOVERLAYSUPPORT, d3dumddi/D3DDDIARG_CHECKMULTIPLANEOVERLAYSUPPORT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8.1
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	D3dumddi.h
+apiname:
+-	D3DDDIARG_CHECKMULTIPLANEOVERLAYSUPPORT
+product: Windows
+targetos: Windows
+req.typenames: D3DDDIARG_CHECKMULTIPLANEOVERLAYSUPPORT
 ---
 
 # _D3DDDIARG_CHECKMULTIPLANEOVERLAYSUPPORT structure

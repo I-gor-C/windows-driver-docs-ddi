@@ -1,41 +1,46 @@
 ---
-UID : NF:portcls.IMiniportWavePciStream.SetFormat
-title : IMiniportWavePciStream::SetFormat method
-author : windows-driver-content
-description : The SetFormat method sets the KS data format of the wave stream.
-old-location : audio\iminiportwavepcistream_setformat.htm
-old-project : audio
-ms.assetid : c8dfa58d-f38b-4ef1-9607-575191d8ddea
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : portcls/IMiniportWavePciStream::SetFormat, SetFormat method [Audio Devices], IMiniportWavePciStream interface, audmp-routines_7b5ce806-912e-4c30-9f3e-4a2b31a12864.xml, IMiniportWavePciStream::SetFormat, IMiniportWavePciStream, audio.iminiportwavepcistream_setformat, IMiniportWavePciStream interface [Audio Devices], SetFormat method, SetFormat, SetFormat method [Audio Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : portcls.h
-req.include-header : Portcls.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : portcls.h
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.IMiniportWavePciStream.SetFormat
+title: IMiniportWavePciStream::SetFormat method
+author: windows-driver-content
+description: The SetFormat method sets the KS data format of the wave stream.
+old-location: audio\iminiportwavepcistream_setformat.htm
+old-project: audio
+ms.assetid: c8dfa58d-f38b-4ef1-9607-575191d8ddea
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: portcls/IMiniportWavePciStream::SetFormat, SetFormat method [Audio Devices], IMiniportWavePciStream interface, audmp-routines_7b5ce806-912e-4c30-9f3e-4a2b31a12864.xml, IMiniportWavePciStream::SetFormat, IMiniportWavePciStream, audio.iminiportwavepcistream_setformat, IMiniportWavePciStream interface [Audio Devices], SetFormat method, SetFormat, SetFormat method [Audio Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: portcls.h
+req.include-header: Portcls.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: portcls.h
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	portcls.h
+apiname:
+-	IMiniportWavePciStream.SetFormat
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

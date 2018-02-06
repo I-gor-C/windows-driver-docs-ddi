@@ -1,41 +1,46 @@
 ---
-UID : NS:bdatypes._BDA_TEMPLATE_CONNECTION
-title : "_BDA_TEMPLATE_CONNECTION"
-author : windows-driver-content
-description : The BDA_TEMPLATE_CONNECTION structure describes the template for a BDA connection in terms of where it begins and ends.
-old-location : stream\bda_template_connection.htm
-old-project : stream
-ms.assetid : f3b5d06d-0557-49a8-9c0d-be964203108a
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : BDA_TEMPLATE_CONNECTION, bdaref_fbba4f2e-dd43-4f5c-b057-f1fbc52cfbe9.xml, stream.bda_template_connection, *PBDA_TEMPLATE_CONNECTION, PBDA_TEMPLATE_CONNECTION, bdatypes/BDA_TEMPLATE_CONNECTION, PBDA_TEMPLATE_CONNECTION structure pointer [Streaming Media Devices], _BDA_TEMPLATE_CONNECTION, BDA_TEMPLATE_CONNECTION structure [Streaming Media Devices], bdatypes/PBDA_TEMPLATE_CONNECTION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : bdatypes.h
-req.include-header : Bdatypes.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : BDA_TEMPLATE_CONNECTION, *PBDA_TEMPLATE_CONNECTION
+UID: NS:bdatypes._BDA_TEMPLATE_CONNECTION
+title: "_BDA_TEMPLATE_CONNECTION"
+author: windows-driver-content
+description: The BDA_TEMPLATE_CONNECTION structure describes the template for a BDA connection in terms of where it begins and ends.
+old-location: stream\bda_template_connection.htm
+old-project: stream
+ms.assetid: f3b5d06d-0557-49a8-9c0d-be964203108a
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: BDA_TEMPLATE_CONNECTION, bdaref_fbba4f2e-dd43-4f5c-b057-f1fbc52cfbe9.xml, stream.bda_template_connection, *PBDA_TEMPLATE_CONNECTION, PBDA_TEMPLATE_CONNECTION, bdatypes/BDA_TEMPLATE_CONNECTION, PBDA_TEMPLATE_CONNECTION structure pointer [Streaming Media Devices], _BDA_TEMPLATE_CONNECTION, BDA_TEMPLATE_CONNECTION structure [Streaming Media Devices], bdatypes/PBDA_TEMPLATE_CONNECTION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: bdatypes.h
+req.include-header: Bdatypes.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	bdatypes.h
+apiname:
+-	BDA_TEMPLATE_CONNECTION
+product: Windows
+targetos: Windows
+req.typenames: BDA_TEMPLATE_CONNECTION, *PBDA_TEMPLATE_CONNECTION
 ---
 
 # _BDA_TEMPLATE_CONNECTION structure

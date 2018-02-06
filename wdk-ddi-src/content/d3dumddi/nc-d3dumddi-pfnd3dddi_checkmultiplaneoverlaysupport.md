@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_CHECKMULTIPLANEOVERLAYSUPPORT
-title : PFND3DDDI_CHECKMULTIPLANEOVERLAYSUPPORT
-author : windows-driver-content
-description : Called by the Microsoft Direct3D runtime to check the details on hardware support for multiplane overlays.
-old-location : display\pfncheckmultiplaneoverlaysupport__d3d_.htm
-old-project : display
-ms.assetid : A439E695-D374-439A-8A69-6D4E247FF134
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.pfncheckmultiplaneoverlaysupport__d3d_, pfnCheckMultiPlaneOverlaySupport callback function [Display Devices], pfnCheckMultiPlaneOverlaySupport, PFND3DDDI_CHECKMULTIPLANEOVERLAYSUPPORT, PFND3DDDI_CHECKMULTIPLANEOVERLAYSUPPORT, d3dumddi/pfnCheckMultiPlaneOverlaySupport
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8.1
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_CHECKMULTIPLANEOVERLAYSUPPORT
+title: PFND3DDDI_CHECKMULTIPLANEOVERLAYSUPPORT
+author: windows-driver-content
+description: Called by the Microsoft Direct3D runtime to check the details on hardware support for multiplane overlays.
+old-location: display\pfncheckmultiplaneoverlaysupport__d3d_.htm
+old-project: display
+ms.assetid: A439E695-D374-439A-8A69-6D4E247FF134
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.pfncheckmultiplaneoverlaysupport__d3d_, pfnCheckMultiPlaneOverlaySupport callback function [Display Devices], pfnCheckMultiPlaneOverlaySupport, PFND3DDDI_CHECKMULTIPLANEOVERLAYSUPPORT, PFND3DDDI_CHECKMULTIPLANEOVERLAYSUPPORT, d3dumddi/pfnCheckMultiPlaneOverlaySupport
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8.1
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	D3dumddi.h
+apiname:
+-	pfnCheckMultiPlaneOverlaySupport
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

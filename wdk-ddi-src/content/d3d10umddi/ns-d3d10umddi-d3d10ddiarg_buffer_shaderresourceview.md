@@ -1,41 +1,46 @@
 ---
-UID : NS:d3d10umddi.D3D10DDIARG_BUFFER_SHADERRESOURCEVIEW
-title : D3D10DDIARG_BUFFER_SHADERRESOURCEVIEW
-author : windows-driver-content
-description : The D3D10DDIARG_BUFFER_SHADERRESOURCEVIEW structure describes a buffer that is used to create a shader resource view in a call to the CreateShaderResourceView function.
-old-location : display\d3d10ddiarg_buffer_shaderresourceview.htm
-old-project : display
-ms.assetid : 9144b167-7fa4-4854-bf0c-e98192f07db8
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.d3d10ddiarg_buffer_shaderresourceview, d3d10umddi/D3D10DDIARG_BUFFER_SHADERRESOURCEVIEW, UMDisplayDriver_Dx10param_Structs_76ff32e8-1460-45a7-a63d-3c18b75a860e.xml, D3D10DDIARG_BUFFER_SHADERRESOURCEVIEW, D3D10DDIARG_BUFFER_SHADERRESOURCEVIEW structure [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3D10DDIARG_BUFFER_SHADERRESOURCEVIEW
+UID: NS:d3d10umddi.D3D10DDIARG_BUFFER_SHADERRESOURCEVIEW
+title: D3D10DDIARG_BUFFER_SHADERRESOURCEVIEW
+author: windows-driver-content
+description: The D3D10DDIARG_BUFFER_SHADERRESOURCEVIEW structure describes a buffer that is used to create a shader resource view in a call to the CreateShaderResourceView function.
+old-location: display\d3d10ddiarg_buffer_shaderresourceview.htm
+old-project: display
+ms.assetid: 9144b167-7fa4-4854-bf0c-e98192f07db8
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.d3d10ddiarg_buffer_shaderresourceview, d3d10umddi/D3D10DDIARG_BUFFER_SHADERRESOURCEVIEW, UMDisplayDriver_Dx10param_Structs_76ff32e8-1460-45a7-a63d-3c18b75a860e.xml, D3D10DDIARG_BUFFER_SHADERRESOURCEVIEW, D3D10DDIARG_BUFFER_SHADERRESOURCEVIEW structure [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	D3D10DDIARG_BUFFER_SHADERRESOURCEVIEW
+product: Windows
+targetos: Windows
+req.typenames: D3D10DDIARG_BUFFER_SHADERRESOURCEVIEW
 ---
 
 # D3D10DDIARG_BUFFER_SHADERRESOURCEVIEW structure

@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugPlmClient3.QueryPlmPackageWide
-title : IDebugPlmClient3::QueryPlmPackageWide method
-author : windows-driver-content
-description : Query a Process Lifecycle Management (PLM) package.
-old-location : debugger\idebugplmclient3_queryplmpackagewide.htm
-old-project : debugger
-ms.assetid : 29BAAEF9-5B69-4723-BC23-A8B668E2A867
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugPlmClient3, QueryPlmPackageWide method [Windows Debugging], IDebugPlmClient3 interface, QueryPlmPackageWide, QueryPlmPackageWide method [Windows Debugging], IDebugPlmClient3::QueryPlmPackageWide, IDebugPlmClient3 interface [Windows Debugging], QueryPlmPackageWide method, dbgeng/IDebugPlmClient3::QueryPlmPackageWide, debugger.idebugplmclient3_queryplmpackagewide
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugPlmClient3.QueryPlmPackageWide
+title: IDebugPlmClient3::QueryPlmPackageWide method
+author: windows-driver-content
+description: Query a Process Lifecycle Management (PLM) package.
+old-location: debugger\idebugplmclient3_queryplmpackagewide.htm
+old-project: debugger
+ms.assetid: 29BAAEF9-5B69-4723-BC23-A8B668E2A867
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugPlmClient3, QueryPlmPackageWide method [Windows Debugging], IDebugPlmClient3 interface, QueryPlmPackageWide, QueryPlmPackageWide method [Windows Debugging], IDebugPlmClient3::QueryPlmPackageWide, IDebugPlmClient3 interface [Windows Debugging], QueryPlmPackageWide method, dbgeng/IDebugPlmClient3::QueryPlmPackageWide, debugger.idebugplmclient3_queryplmpackagewide
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugPlmClient3.QueryPlmPackageWide
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

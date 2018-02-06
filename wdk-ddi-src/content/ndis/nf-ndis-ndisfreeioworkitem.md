@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisFreeIoWorkItem
-title : NdisFreeIoWorkItem function
-author : windows-driver-content
-description : NDIS drivers call the NdisFreeIoWorkItem function to free a specified work item.
-old-location : netvista\ndisfreeioworkitem.htm
-old-project : netvista
-ms.assetid : ddc2f96b-fa2c-43c1-960f-7f8e06a5b22d
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : ndis_work_items_ref_50b3859f-f34b-4cae-b7ef-935f1aae82cb.xml, netvista.ndisfreeioworkitem, NdisFreeIoWorkItem, ndis/NdisFreeIoWorkItem, NdisFreeIoWorkItem function [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Init_NdisAllocateIoWorkItem, Irql_Miscellaneous_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisFreeIoWorkItem
+title: NdisFreeIoWorkItem function
+author: windows-driver-content
+description: NDIS drivers call the NdisFreeIoWorkItem function to free a specified work item.
+old-location: netvista\ndisfreeioworkitem.htm
+old-project: netvista
+ms.assetid: ddc2f96b-fa2c-43c1-960f-7f8e06a5b22d
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: ndis_work_items_ref_50b3859f-f34b-4cae-b7ef-935f1aae82cb.xml, netvista.ndisfreeioworkitem, NdisFreeIoWorkItem, ndis/NdisFreeIoWorkItem, NdisFreeIoWorkItem function [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Init_NdisAllocateIoWorkItem, Irql_Miscellaneous_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisFreeIoWorkItem
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

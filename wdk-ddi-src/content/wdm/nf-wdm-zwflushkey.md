@@ -1,42 +1,48 @@
 ---
-UID : NF:wdm.ZwFlushKey
-title : ZwFlushKey function
-author : windows-driver-content
-description : The ZwFlushKey routine forces a registry key to be committed to disk.
-old-location : kernel\zwflushkey.htm
-old-project : kernel
-ms.assetid : c5250b7d-a996-4591-b289-cfb1af00e7da
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : NtFlushKey, ZwFlushKey, k111_2831bd9f-93c1-4377-9f0e-26d4ef20e095.xml, kernel.zwflushkey, wdm/ZwFlushKey, ZwFlushKey routine [Kernel-Mode Driver Architecture], wdm/NtFlushKey
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 2000 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : IrqlZwPassive, ZwRegistryCreate, ZwRegistryOpen, HwStorPortProhibitedDDIs, ZwRegistryCreate(storport), ZwRegistryOpen(storport)
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ZwFlushKey
+title: ZwFlushKey function
+author: windows-driver-content
+description: The ZwFlushKey routine forces a registry key to be committed to disk.
+old-location: kernel\zwflushkey.htm
+old-project: kernel
+ms.assetid: c5250b7d-a996-4591-b289-cfb1af00e7da
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: NtFlushKey, ZwFlushKey, k111_2831bd9f-93c1-4377-9f0e-26d4ef20e095.xml, kernel.zwflushkey, wdm/ZwFlushKey, ZwFlushKey routine [Kernel-Mode Driver Architecture], wdm/NtFlushKey
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 2000 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: IrqlZwPassive, ZwRegistryCreate, ZwRegistryOpen, HwStorPortProhibitedDDIs, ZwRegistryCreate(storport), ZwRegistryOpen(storport)
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ZwFlushKey
+-	NtFlushKey
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

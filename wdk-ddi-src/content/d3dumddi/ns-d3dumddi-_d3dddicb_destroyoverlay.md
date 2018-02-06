@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._D3DDDICB_DESTROYOVERLAY
-title : "_D3DDDICB_DESTROYOVERLAY"
-author : windows-driver-content
-description : The D3DDDICB_DESTROYOVERLAY structure contains the handle to the overlay to destroy.
-old-location : display\d3dddicb_destroyoverlay.htm
-old-project : display
-ms.assetid : a7b57177-17d2-42d7-ac4a-3cbd74803d50
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3dumddi/D3DDDICB_DESTROYOVERLAY, D3D_param_Structs_7d32095a-c3ac-427a-8719-1125a85b9495.xml, display.d3dddicb_destroyoverlay, D3DDDICB_DESTROYOVERLAY structure [Display Devices], _D3DDDICB_DESTROYOVERLAY, D3DDDICB_DESTROYOVERLAY
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDICB_DESTROYOVERLAY
+UID: NS:d3dumddi._D3DDDICB_DESTROYOVERLAY
+title: "_D3DDDICB_DESTROYOVERLAY"
+author: windows-driver-content
+description: The D3DDDICB_DESTROYOVERLAY structure contains the handle to the overlay to destroy.
+old-location: display\d3dddicb_destroyoverlay.htm
+old-project: display
+ms.assetid: a7b57177-17d2-42d7-ac4a-3cbd74803d50
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3dumddi/D3DDDICB_DESTROYOVERLAY, D3D_param_Structs_7d32095a-c3ac-427a-8719-1125a85b9495.xml, display.d3dddicb_destroyoverlay, D3DDDICB_DESTROYOVERLAY structure [Display Devices], _D3DDDICB_DESTROYOVERLAY, D3DDDICB_DESTROYOVERLAY
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	D3DDDICB_DESTROYOVERLAY
+product: Windows
+targetos: Windows
+req.typenames: D3DDDICB_DESTROYOVERLAY
 ---
 
 # _D3DDDICB_DESTROYOVERLAY structure

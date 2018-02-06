@@ -1,41 +1,47 @@
 ---
-UID : NF:ntifs.SecMakeSPNEx
-title : SecMakeSPNEx function
-author : windows-driver-content
-description : SecMakeSPNEx creates a service provider name string that can be used when communicating with specific security service providers.
-old-location : ifsk\secmakespnex.htm
-old-project : ifsk
-ms.assetid : 5000be89-144c-405c-93ea-3e9372e0a677
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : SecMakeSPNEx, ksecddref_3c4441b9-ed78-473f-ac3c-35a644018499.xml, ifsk.secmakespnex, SecMakeSPNEx function [Installable File System Drivers], ntifs/SecMakeSPNEx
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h, FltKernel.h
-req.target-type : Universal
-req.target-min-winverclnt : This function is only available on Microsoft Windows XP and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ksecdd.lib
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.SecMakeSPNEx
+title: SecMakeSPNEx function
+author: windows-driver-content
+description: SecMakeSPNEx creates a service provider name string that can be used when communicating with specific security service providers.
+old-location: ifsk\secmakespnex.htm
+old-project: ifsk
+ms.assetid: 5000be89-144c-405c-93ea-3e9372e0a677
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: SecMakeSPNEx, ksecddref_3c4441b9-ed78-473f-ac3c-35a644018499.xml, ifsk.secmakespnex, SecMakeSPNEx function [Installable File System Drivers], ntifs/SecMakeSPNEx
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h, FltKernel.h
+req.target-type: Universal
+req.target-min-winverclnt: This function is only available on Microsoft Windows XP and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ksecdd.lib
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ksecdd.lib
+-	Ksecdd.dll
+apiname:
+-	SecMakeSPNEx
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

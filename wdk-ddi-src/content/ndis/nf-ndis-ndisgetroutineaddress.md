@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisGetRoutineAddress
-title : NdisGetRoutineAddress function
-author : windows-driver-content
-description : The NdisGetRoutineAddress function returns the address of a routine given the routine's name.
-old-location : netvista\ndisgetroutineaddress.htm
-old-project : netvista
-ms.assetid : 98257b56-e586-41e7-80c3-f9f96d471125
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NdisGetRoutineAddress function [Network Drivers Starting with Windows Vista], NdisGetRoutineAddress, ndis_sysinfo_ref_d2259157-f4fd-4fd8-b86e-f685ab4213d5.xml, ndis/NdisGetRoutineAddress, netvista.ndisgetroutineaddress
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisGetRoutineAddress (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisGetRoutineAddress (NDIS   5.1)) in Windows XP.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_Miscellaneous_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisGetRoutineAddress
+title: NdisGetRoutineAddress function
+author: windows-driver-content
+description: The NdisGetRoutineAddress function returns the address of a routine given the routine's name.
+old-location: netvista\ndisgetroutineaddress.htm
+old-project: netvista
+ms.assetid: 98257b56-e586-41e7-80c3-f9f96d471125
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NdisGetRoutineAddress function [Network Drivers Starting with Windows Vista], NdisGetRoutineAddress, ndis_sysinfo_ref_d2259157-f4fd-4fd8-b86e-f685ab4213d5.xml, ndis/NdisGetRoutineAddress, netvista.ndisgetroutineaddress
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisGetRoutineAddress (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisGetRoutineAddress (NDIS   5.1)) in Windows XP.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_Miscellaneous_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisGetRoutineAddress
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

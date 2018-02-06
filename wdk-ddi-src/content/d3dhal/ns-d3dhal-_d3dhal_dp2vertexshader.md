@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dhal._D3DHAL_DP2VERTEXSHADER
-title : "_D3DHAL_DP2VERTEXSHADER"
-author : windows-driver-content
-description : DirectX 8.0 and later versions only. The D3DHAL_DP2VERTEXSHADER structure sets the current vertex shader, or deletes a vertex shader, depending on the opcode received (D3DDP2OP_SETVERTEXSHADER or D3DDP2OP_DELETEVERTEXSHADER) by D3dDrawPrimitives2.
-old-location : display\d3dhal_dp2vertexshader.htm
-old-project : display
-ms.assetid : 9207768b-530a-49d5-999e-0e8eb6bd1fe5
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.d3dhal_dp2vertexshader, *LPD3DHAL_DP2VERTEXSHADER, d3dhal/LPD3DHAL_DP2VERTEXSHADER, d3dstrct_84401bfa-f79d-4128-9989-1223284f25b0.xml, D3DHAL_DP2VERTEXSHADER structure [Display Devices], _D3DHAL_DP2VERTEXSHADER, d3dhal/D3DHAL_DP2VERTEXSHADER, LPD3DHAL_DP2VERTEXSHADER structure pointer [Display Devices], D3DHAL_DP2VERTEXSHADER, LPD3DHAL_DP2VERTEXSHADER
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dhal.h
-req.include-header : D3dhal.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DHAL_DP2VERTEXSHADER
+UID: NS:d3dhal._D3DHAL_DP2VERTEXSHADER
+title: "_D3DHAL_DP2VERTEXSHADER"
+author: windows-driver-content
+description: DirectX 8.0 and later versions only. The D3DHAL_DP2VERTEXSHADER structure sets the current vertex shader, or deletes a vertex shader, depending on the opcode received (D3DDP2OP_SETVERTEXSHADER or D3DDP2OP_DELETEVERTEXSHADER) by D3dDrawPrimitives2.
+old-location: display\d3dhal_dp2vertexshader.htm
+old-project: display
+ms.assetid: 9207768b-530a-49d5-999e-0e8eb6bd1fe5
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.d3dhal_dp2vertexshader, *LPD3DHAL_DP2VERTEXSHADER, d3dhal/LPD3DHAL_DP2VERTEXSHADER, d3dstrct_84401bfa-f79d-4128-9989-1223284f25b0.xml, D3DHAL_DP2VERTEXSHADER structure [Display Devices], _D3DHAL_DP2VERTEXSHADER, d3dhal/D3DHAL_DP2VERTEXSHADER, LPD3DHAL_DP2VERTEXSHADER structure pointer [Display Devices], D3DHAL_DP2VERTEXSHADER, LPD3DHAL_DP2VERTEXSHADER
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dhal.h
+req.include-header: D3dhal.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dhal.h
+apiname:
+-	D3DHAL_DP2VERTEXSHADER
+product: Windows
+targetos: Windows
+req.typenames: D3DHAL_DP2VERTEXSHADER
 ---
 
 # _D3DHAL_DP2VERTEXSHADER structure

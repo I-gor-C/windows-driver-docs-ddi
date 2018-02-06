@@ -1,41 +1,46 @@
 ---
-UID : NF:hidsdi.HidD_GetSerialNumberString
-title : HidD_GetSerialNumberString function
-author : windows-driver-content
-description : The HidD_GetSerialNumberString routine returns the embedded string of a top-level collection that identifies the serial number of the collection's physical device.
-old-location : hid\hidd_getserialnumberstring.htm
-old-project : hid
-ms.assetid : 807f1432-1b2f-45fc-899c-b2920ea79f7a
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : hidsdi/HidD_GetSerialNumberString, hid.hidd_getserialnumberstring, HidD_GetSerialNumberString, HidD_GetSerialNumberString routine [Human Input Devices], hidfunc_b01ce302-052c-43f1-9b8f-6421ebb66954.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : hidsdi.h
-req.include-header : Hidsdi.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 2000 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Hid.lib
-req.dll : Hid.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PHID_MINIDRIVER_REGISTRATION, HID_MINIDRIVER_REGISTRATION"
+UID: NF:hidsdi.HidD_GetSerialNumberString
+title: HidD_GetSerialNumberString function
+author: windows-driver-content
+description: The HidD_GetSerialNumberString routine returns the embedded string of a top-level collection that identifies the serial number of the collection's physical device.
+old-location: hid\hidd_getserialnumberstring.htm
+old-project: hid
+ms.assetid: 807f1432-1b2f-45fc-899c-b2920ea79f7a
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: hidsdi/HidD_GetSerialNumberString, hid.hidd_getserialnumberstring, HidD_GetSerialNumberString, HidD_GetSerialNumberString routine [Human Input Devices], hidfunc_b01ce302-052c-43f1-9b8f-6421ebb66954.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: hidsdi.h
+req.include-header: Hidsdi.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 2000 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Hid.lib
+req.dll: Hid.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Hid.dll
+apiname:
+-	HidD_GetSerialNumberString
+product: Windows
+targetos: Windows
+req.typenames: "*PHID_MINIDRIVER_REGISTRATION, HID_MINIDRIVER_REGISTRATION"
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.PoRegisterPowerSettingCallback
-title : PoRegisterPowerSettingCallback function
-author : windows-driver-content
-description : The PoRegisterPowerSettingCallback routine registers a power-setting callback routine to receive notifications of changes in the specified power setting.
-old-location : kernel\poregisterpowersettingcallback.htm
-old-project : kernel
-ms.assetid : a4dd91c4-f6b1-4751-a2be-9b4872fa7bb2
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : PoRegisterPowerSettingCallback, portn_ddaef830-5cf5-4b7f-9fa6-e29a2b9f847f.xml, wdm/PoRegisterPowerSettingCallback, PoRegisterPowerSettingCallback routine [Kernel-Mode Driver Architecture], kernel.poregisterpowersettingcallback
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.PoRegisterPowerSettingCallback
+title: PoRegisterPowerSettingCallback function
+author: windows-driver-content
+description: The PoRegisterPowerSettingCallback routine registers a power-setting callback routine to receive notifications of changes in the specified power setting.
+old-location: kernel\poregisterpowersettingcallback.htm
+old-project: kernel
+ms.assetid: a4dd91c4-f6b1-4751-a2be-9b4872fa7bb2
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: PoRegisterPowerSettingCallback, portn_ddaef830-5cf5-4b7f-9fa6-e29a2b9f847f.xml, wdm/PoRegisterPowerSettingCallback, PoRegisterPowerSettingCallback routine [Kernel-Mode Driver Architecture], kernel.poregisterpowersettingcallback
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	PoRegisterPowerSettingCallback
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

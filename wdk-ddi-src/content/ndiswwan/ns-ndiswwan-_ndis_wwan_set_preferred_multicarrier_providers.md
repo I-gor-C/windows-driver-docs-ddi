@@ -1,41 +1,46 @@
 ---
-UID : NS:ndiswwan._NDIS_WWAN_SET_PREFERRED_MULTICARRIER_PROVIDERS
-title : "_NDIS_WWAN_SET_PREFERRED_MULTICARRIER_PROVIDERS"
-author : windows-driver-content
-description : The NDIS_WWAN_SET_PREFERRED_MULTICARRIER_PROVIDERS structure represents a list of preferred multicarrier providers associated with the MB device.
-old-location : netvista\ndis_wwan_set_preferred_multicarrier_providers.htm
-old-project : netvista
-ms.assetid : D57068D9-D671-4E56-ABD0-CD91BD91404D
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NDIS_WWAN_SET_PREFERRED_MULTICARRIER_PROVIDERS structure [Network Drivers Starting with Windows Vista], NDIS_WWAN_SET_PREFERRED_MULTICARRIER_PROVIDERS, netvista.ndis_wwan_set_preferred_multicarrier_providers, PNDIS_WWAN_SET_PREFERRED_MULTICARRIER_PROVIDERS, *PNDIS_WWAN_SET_PREFERRED_MULTICARRIER_PROVIDERS, ndiswwan/PNDIS_WWAN_SET_PREFERRED_MULTICARRIER_PROVIDERS, _NDIS_WWAN_SET_PREFERRED_MULTICARRIER_PROVIDERS, PNDIS_WWAN_SET_PREFERRED_MULTICARRIER_PROVIDERS structure pointer [Network Drivers Starting with Windows Vista], ndiswwan/NDIS_WWAN_SET_PREFERRED_MULTICARRIER_PROVIDERS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndiswwan.h
-req.include-header : Ndiswwan.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with  Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_WWAN_SET_PREFERRED_MULTICARRIER_PROVIDERS, *PNDIS_WWAN_SET_PREFERRED_MULTICARRIER_PROVIDERS
+UID: NS:ndiswwan._NDIS_WWAN_SET_PREFERRED_MULTICARRIER_PROVIDERS
+title: "_NDIS_WWAN_SET_PREFERRED_MULTICARRIER_PROVIDERS"
+author: windows-driver-content
+description: The NDIS_WWAN_SET_PREFERRED_MULTICARRIER_PROVIDERS structure represents a list of preferred multicarrier providers associated with the MB device.
+old-location: netvista\ndis_wwan_set_preferred_multicarrier_providers.htm
+old-project: netvista
+ms.assetid: D57068D9-D671-4E56-ABD0-CD91BD91404D
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NDIS_WWAN_SET_PREFERRED_MULTICARRIER_PROVIDERS structure [Network Drivers Starting with Windows Vista], NDIS_WWAN_SET_PREFERRED_MULTICARRIER_PROVIDERS, netvista.ndis_wwan_set_preferred_multicarrier_providers, PNDIS_WWAN_SET_PREFERRED_MULTICARRIER_PROVIDERS, *PNDIS_WWAN_SET_PREFERRED_MULTICARRIER_PROVIDERS, ndiswwan/PNDIS_WWAN_SET_PREFERRED_MULTICARRIER_PROVIDERS, _NDIS_WWAN_SET_PREFERRED_MULTICARRIER_PROVIDERS, PNDIS_WWAN_SET_PREFERRED_MULTICARRIER_PROVIDERS structure pointer [Network Drivers Starting with Windows Vista], ndiswwan/NDIS_WWAN_SET_PREFERRED_MULTICARRIER_PROVIDERS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndiswwan.h
+req.include-header: Ndiswwan.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with  Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndiswwan.h
+apiname:
+-	NDIS_WWAN_SET_PREFERRED_MULTICARRIER_PROVIDERS
+product: Windows
+targetos: Windows
+req.typenames: NDIS_WWAN_SET_PREFERRED_MULTICARRIER_PROVIDERS, *PNDIS_WWAN_SET_PREFERRED_MULTICARRIER_PROVIDERS
 ---
 
 # _NDIS_WWAN_SET_PREFERRED_MULTICARRIER_PROVIDERS structure

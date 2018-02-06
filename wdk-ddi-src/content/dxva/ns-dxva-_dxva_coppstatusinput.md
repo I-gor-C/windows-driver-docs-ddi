@@ -1,41 +1,46 @@
 ---
-UID : NS:dxva._DXVA_COPPStatusInput
-title : "_DXVA_COPPStatusInput"
-author : windows-driver-content
-description : The DXVA_COPPStatusInput structure describes a request for status on a protected video session that is associated with a DirectX VA COPP device.
-old-location : display\dxva_coppstatusinput.htm
-old-project : display
-ms.assetid : 693411e9-16d1-42eb-9848-d28876a91b38
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DXVA_COPPStatusInput, dxva/DXVA_COPPStatusInput, *LPDXVA_COPPStatusInput, DXVA_COPPStatusInput structure [Display Devices], _DXVA_COPPStatusInput, LPDXVA_COPPStatusInput, dxvaref_d6441478-0fb0-4643-97ec-dbd1ecd90e92.xml, display.dxva_coppstatusinput, LPDXVA_COPPStatusInput structure pointer [Display Devices], dxva/LPDXVA_COPPStatusInput
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : dxva.h
-req.include-header : Dxva.h
-req.target-type : Windows
-req.target-min-winverclnt : This structure applies only to Windows Server 2003 with SP1 and later, and Windows XP with SP2 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXVA_COPPStatusInput, *LPDXVA_COPPStatusInput
+UID: NS:dxva._DXVA_COPPStatusInput
+title: "_DXVA_COPPStatusInput"
+author: windows-driver-content
+description: The DXVA_COPPStatusInput structure describes a request for status on a protected video session that is associated with a DirectX VA COPP device.
+old-location: display\dxva_coppstatusinput.htm
+old-project: display
+ms.assetid: 693411e9-16d1-42eb-9848-d28876a91b38
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DXVA_COPPStatusInput, dxva/DXVA_COPPStatusInput, *LPDXVA_COPPStatusInput, DXVA_COPPStatusInput structure [Display Devices], _DXVA_COPPStatusInput, LPDXVA_COPPStatusInput, dxvaref_d6441478-0fb0-4643-97ec-dbd1ecd90e92.xml, display.dxva_coppstatusinput, LPDXVA_COPPStatusInput structure pointer [Display Devices], dxva/LPDXVA_COPPStatusInput
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: dxva.h
+req.include-header: Dxva.h
+req.target-type: Windows
+req.target-min-winverclnt: This structure applies only to Windows Server 2003 with SP1 and later, and Windows XP with SP2 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	dxva.h
+apiname:
+-	DXVA_COPPStatusInput
+product: Windows
+targetos: Windows
+req.typenames: DXVA_COPPStatusInput, *LPDXVA_COPPStatusInput
 ---
 
 # _DXVA_COPPStatusInput structure

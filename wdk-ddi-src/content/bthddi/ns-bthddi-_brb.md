@@ -1,41 +1,46 @@
 ---
-UID : NS:bthddi._BRB
-title : "_BRB"
-author : windows-driver-content
-description : Profile drivers use Bluetooth request blocks (BRBs), to send requests to the Bluetooth driver stack. The BRB structure defines the format for all supported commands that can be sent to a Bluetooth device.
-old-location : bltooth\brb.htm
-old-project : bltooth
-ms.assetid : b9fc6eb9-6793-442a-a736-18929df14f20
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : bth_structs_7ccc2ad1-dd10-4ae9-be41-fa79229b32aa.xml, bthddi/BRB, BRB structure [Bluetooth Devices], BRB, *PBRB, _BRB, bltooth.brb, PBRB structure pointer [Bluetooth Devices], bthddi/PBRB, PBRB
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : bthddi.h
-req.include-header : Bthddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Versions:\_Supported in Windows Vista, and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback   function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access   paged memory)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PBRB, BRB"
+UID: NS:bthddi._BRB
+title: "_BRB"
+author: windows-driver-content
+description: Profile drivers use Bluetooth request blocks (BRBs), to send requests to the Bluetooth driver stack. The BRB structure defines the format for all supported commands that can be sent to a Bluetooth device.
+old-location: bltooth\brb.htm
+old-project: bltooth
+ms.assetid: b9fc6eb9-6793-442a-a736-18929df14f20
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: bth_structs_7ccc2ad1-dd10-4ae9-be41-fa79229b32aa.xml, bthddi/BRB, BRB structure [Bluetooth Devices], BRB, *PBRB, _BRB, bltooth.brb, PBRB structure pointer [Bluetooth Devices], bthddi/PBRB, PBRB
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: bthddi.h
+req.include-header: Bthddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Versions:\_Supported in Windows Vista, and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback   function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access   paged memory)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	bthddi.h
+apiname:
+-	BRB
+product: Windows
+targetos: Windows
+req.typenames: "*PBRB, BRB"
 ---
 
 # _BRB structure

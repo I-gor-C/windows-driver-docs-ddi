@@ -1,42 +1,47 @@
 ---
-UID : NF:winsplp.InitializePrintProvidor
-title : InitializePrintProvidor function
-author : windows-driver-content
-description : Warning  Starting with Windows 10, the APIs which support third-party print providers are deprecated.
-old-location : print\initializeprintprovidor.htm
-old-project : print
-ms.assetid : 54a5009d-9893-4766-b9fd-7e7474b55949
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : print.initializeprintprovidor, winsplp/InitializePrintProvidor, spoolfnc_b67588a9-bccb-4181-8fd0-cbdc1b7af7c5.xml, InitializePrintProvidor function [Print Devices], InitializePrintProvidor
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : winsplp.h
-req.include-header : Winsplp.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NOTIFICATION_CONFIG_FLAGS
-req.product : Windows 10 or later.
+UID: NF:winsplp.InitializePrintProvidor
+title: InitializePrintProvidor function
+author: windows-driver-content
+description: Warning  Starting with Windows 10, the APIs which support third-party print providers are deprecated.
+old-location: print\initializeprintprovidor.htm
+old-project: print
+ms.assetid: 54a5009d-9893-4766-b9fd-7e7474b55949
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: print.initializeprintprovidor, winsplp/InitializePrintProvidor, spoolfnc_b67588a9-bccb-4181-8fd0-cbdc1b7af7c5.xml, InitializePrintProvidor function [Print Devices], InitializePrintProvidor
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: winsplp.h
+req.include-header: Winsplp.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	winsplp.h
+apiname:
+-	InitializePrintProvidor
+product: Windows
+targetos: Windows
+req.typenames: NOTIFICATION_CONFIG_FLAGS
+req.product: Windows 10 or later.
 ---
 
 

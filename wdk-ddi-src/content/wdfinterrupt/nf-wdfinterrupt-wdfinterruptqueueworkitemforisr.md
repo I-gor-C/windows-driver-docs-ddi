@@ -1,42 +1,50 @@
 ---
-UID : NF:wdfinterrupt.WdfInterruptQueueWorkItemForIsr
-title : WdfInterruptQueueWorkItemForIsr function
-author : windows-driver-content
-description : The WdfInterruptQueueWorkItemForIsr method queues a framework interrupt object's EvtInterruptWorkItem callback function for execution.
-old-location : wdf\wdfinterruptqueueworkitemforisr.htm
-old-project : wdf
-ms.assetid : 1E88E9D9-B564-43B4-9A83-F621FF23437F
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WdfInterruptQueueWorkItemForIsr, WdfInterruptQueueWorkItemForIsr method, wdfinterrupt/WdfInterruptQueueWorkItemForIsr, wdf.wdfinterruptqueueworkitemforisr, kmdf.wdfinterruptqueueworkitemforisr
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfinterrupt.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.11
-req.umdf-ver : 2.0
-req.ddi-compliance : DriverCreate
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll : 
-req.irql : "<=DIRQL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_INTERRUPT_PRIORITY, *PWDF_INTERRUPT_PRIORITY
-req.product : Windows 10 or later.
+UID: NF:wdfinterrupt.WdfInterruptQueueWorkItemForIsr
+title: WdfInterruptQueueWorkItemForIsr function
+author: windows-driver-content
+description: The WdfInterruptQueueWorkItemForIsr method queues a framework interrupt object's EvtInterruptWorkItem callback function for execution.
+old-location: wdf\wdfinterruptqueueworkitemforisr.htm
+old-project: wdf
+ms.assetid: 1E88E9D9-B564-43B4-9A83-F621FF23437F
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WdfInterruptQueueWorkItemForIsr, WdfInterruptQueueWorkItemForIsr method, wdfinterrupt/WdfInterruptQueueWorkItemForIsr, wdf.wdfinterruptqueueworkitemforisr, kmdf.wdfinterruptqueueworkitemforisr
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfinterrupt.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.11
+req.umdf-ver: 2.0
+req.ddi-compliance: DriverCreate
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll: 
+req.irql: "<=DIRQL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+-	WUDFx02000.dll
+-	WUDFx02000.dll.dll
+apiname:
+-	WdfInterruptQueueWorkItemForIsr
+product: Windows
+targetos: Windows
+req.typenames: WDF_INTERRUPT_PRIORITY, *PWDF_INTERRUPT_PRIORITY
+req.product: Windows 10 or later.
 ---
 
 

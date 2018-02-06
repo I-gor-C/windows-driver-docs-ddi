@@ -1,42 +1,47 @@
 ---
-UID : NF:spbcx.SPB_CONTROLLER_CONFIG_INIT
-title : SPB_CONTROLLER_CONFIG_INIT function
-author : windows-driver-content
-description : The SPB_CONTROLLER_CONFIG_INIT function initializes an SPB_CONTROLLER_CONFIG structure.
-old-location : spb\spb_controller_config_init.htm
-old-project : SPB
-ms.assetid : 78D46903-A13D-4BC2-803F-E1656A43E865
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : SPB_CONTROLLER_CONFIG_INIT, SPB_CONTROLLER_CONFIG_INIT function [Buses], SPB.spb_controller_config_init, spbcx/SPB_CONTROLLER_CONFIG_INIT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : spbcx.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : Any IRQL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SPB_REQUEST_TYPE, *PSPB_REQUEST_TYPE
-req.product : Windows 10 or later.
+UID: NF:spbcx.SPB_CONTROLLER_CONFIG_INIT
+title: SPB_CONTROLLER_CONFIG_INIT function
+author: windows-driver-content
+description: The SPB_CONTROLLER_CONFIG_INIT function initializes an SPB_CONTROLLER_CONFIG structure.
+old-location: spb\spb_controller_config_init.htm
+old-project: SPB
+ms.assetid: 78D46903-A13D-4BC2-803F-E1656A43E865
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: SPB_CONTROLLER_CONFIG_INIT, SPB_CONTROLLER_CONFIG_INIT function [Buses], SPB.spb_controller_config_init, spbcx/SPB_CONTROLLER_CONFIG_INIT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: spbcx.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: Any IRQL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Spbcx.h
+apiname:
+-	SPB_CONTROLLER_CONFIG_INIT
+product: Windows
+targetos: Windows
+req.typenames: SPB_REQUEST_TYPE, *PSPB_REQUEST_TYPE
+req.product: Windows 10 or later.
 ---
 
 

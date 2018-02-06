@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfusb.IWDFUsbTargetDevice.RetrieveDeviceInformation
-title : IWDFUsbTargetDevice::RetrieveDeviceInformation method
-author : windows-driver-content
-description : The RetrieveDeviceInformation method retrieves device information of the specified type.
-old-location : wdf\iwdfusbtargetdevice_retrievedeviceinformation.htm
-old-project : wdf
-ms.assetid : 04e3dfba-3313-4575-9956-5b1861b8212a
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RetrieveDeviceInformation method, IWDFUsbTargetDevice interface, RetrieveDeviceInformation method, IWDFUsbTargetDevice::RetrieveDeviceInformation, IWDFUsbTargetDevice interface, RetrieveDeviceInformation method, IWDFUsbTargetDevice, wdf.iwdfusbtargetdevice_retrievedeviceinformation, wudfusb/IWDFUsbTargetDevice::RetrieveDeviceInformation, RetrieveDeviceInformation, umdf.iwdfusbtargetdevice_retrievedeviceinformation, UMDFUSBref_3323b24f-da0c-4208-8f88-88d7198e805c.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfusb.h
-req.include-header : Wudfusb.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.5
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfusb.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
-req.product : Windows 10 or later.
+UID: NF:wudfusb.IWDFUsbTargetDevice.RetrieveDeviceInformation
+title: IWDFUsbTargetDevice::RetrieveDeviceInformation method
+author: windows-driver-content
+description: The RetrieveDeviceInformation method retrieves device information of the specified type.
+old-location: wdf\iwdfusbtargetdevice_retrievedeviceinformation.htm
+old-project: wdf
+ms.assetid: 04e3dfba-3313-4575-9956-5b1861b8212a
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: RetrieveDeviceInformation method, IWDFUsbTargetDevice interface, RetrieveDeviceInformation method, IWDFUsbTargetDevice::RetrieveDeviceInformation, IWDFUsbTargetDevice interface, RetrieveDeviceInformation method, IWDFUsbTargetDevice, wdf.iwdfusbtargetdevice_retrievedeviceinformation, wudfusb/IWDFUsbTargetDevice::RetrieveDeviceInformation, RetrieveDeviceInformation, umdf.iwdfusbtargetdevice_retrievedeviceinformation, UMDFUSBref_3323b24f-da0c-4208-8f88-88d7198e805c.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfusb.h
+req.include-header: Wudfusb.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.5
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfusb.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFUsbTargetDevice.RetrieveDeviceInformation
+product: Windows
+targetos: Windows
+req.typenames: WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisQueryNetBufferPhysicalCount
-title : NdisQueryNetBufferPhysicalCount function
-author : windows-driver-content
-description : The NdisQueryNetBufferPhysicalCount function returns the maximum number of physical breaks mapped by the buffer descriptors that are associated with the given NET_BUFFER structure.
-old-location : netvista\ndisquerynetbufferphysicalcount.htm
-old-project : netvista
-ms.assetid : 99869b20-3458-426a-ad64-c2cc54213290
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NdisQueryNetBufferPhysicalCount function [Network Drivers Starting with Windows Vista], NdisQueryNetBufferPhysicalCount, ndis/NdisQueryNetBufferPhysicalCount, netvista.ndisquerynetbufferphysicalcount, ndis_netbuf_functions_ref_d041f487-3273-402e-8726-d9a252b1dd45.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_NetBuffer_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisQueryNetBufferPhysicalCount
+title: NdisQueryNetBufferPhysicalCount function
+author: windows-driver-content
+description: The NdisQueryNetBufferPhysicalCount function returns the maximum number of physical breaks mapped by the buffer descriptors that are associated with the given NET_BUFFER structure.
+old-location: netvista\ndisquerynetbufferphysicalcount.htm
+old-project: netvista
+ms.assetid: 99869b20-3458-426a-ad64-c2cc54213290
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NdisQueryNetBufferPhysicalCount function [Network Drivers Starting with Windows Vista], NdisQueryNetBufferPhysicalCount, ndis/NdisQueryNetBufferPhysicalCount, netvista.ndisquerynetbufferphysicalcount, ndis_netbuf_functions_ref_d041f487-3273-402e-8726-d9a252b1dd45.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_NetBuffer_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisQueryNetBufferPhysicalCount
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

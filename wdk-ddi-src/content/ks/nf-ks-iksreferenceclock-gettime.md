@@ -1,41 +1,46 @@
 ---
-UID : NF:ks.IKsReferenceClock.GetTime
-title : IKsReferenceClock::GetTime method
-author : windows-driver-content
-description : The IKsReferenceClock::GetTime method queries the associated reference clock for the current time.
-old-location : stream\iksreferenceclock_gettime.htm
-old-project : stream
-ms.assetid : 3e5ff621-47ec-4ab7-bf8e-26bff57588f8
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : GetTime method [Streaming Media Devices], avintfc_54820682-eb28-4344-91d3-ee30ef2f7bd6.xml, IKsReferenceClock, IKsReferenceClock interface [Streaming Media Devices], GetTime method, IKsReferenceClock::GetTime, GetTime, ks/IKsReferenceClock::GetTime, stream.iksreferenceclock_gettime, GetTime method [Streaming Media Devices], IKsReferenceClock interface
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : ks.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.IKsReferenceClock.GetTime
+title: IKsReferenceClock::GetTime method
+author: windows-driver-content
+description: The IKsReferenceClock::GetTime method queries the associated reference clock for the current time.
+old-location: stream\iksreferenceclock_gettime.htm
+old-project: stream
+ms.assetid: 3e5ff621-47ec-4ab7-bf8e-26bff57588f8
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: GetTime method [Streaming Media Devices], avintfc_54820682-eb28-4344-91d3-ee30ef2f7bd6.xml, IKsReferenceClock, IKsReferenceClock interface [Streaming Media Devices], GetTime method, IKsReferenceClock::GetTime, GetTime, ks/IKsReferenceClock::GetTime, stream.iksreferenceclock_gettime, GetTime method [Streaming Media Devices], IKsReferenceClock interface
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: ks.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	ks.h
+apiname:
+-	IKsReferenceClock.GetTime
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

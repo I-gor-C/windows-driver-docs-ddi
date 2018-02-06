@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.FsRtlPrepareToReuseEcp
-title : FsRtlPrepareToReuseEcp function
-author : windows-driver-content
-description : The FsRtlPrepareToReuseEcp routine resets an extra create parameter (ECP) context structure, which prepares it for reuse.
-old-location : ifsk\fsrtlpreparetoreuseecp.htm
-old-project : ifsk
-ms.assetid : 88967BD6-C633-40D0-BE4F-2B08494EA5B0
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ntifs/FsRtlPrepareToReuseEcp, FsRtlPrepareToReuseEcp, ifsk.fsrtlpreparetoreuseecp, FsRtlPrepareToReuseEcp routine [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.FsRtlPrepareToReuseEcp
+title: FsRtlPrepareToReuseEcp function
+author: windows-driver-content
+description: The FsRtlPrepareToReuseEcp routine resets an extra create parameter (ECP) context structure, which prepares it for reuse.
+old-location: ifsk\fsrtlpreparetoreuseecp.htm
+old-project: ifsk
+ms.assetid: 88967BD6-C633-40D0-BE4F-2B08494EA5B0
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ntifs/FsRtlPrepareToReuseEcp, FsRtlPrepareToReuseEcp, ifsk.fsrtlpreparetoreuseecp, FsRtlPrepareToReuseEcp routine [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	FsRtlPrepareToReuseEcp
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

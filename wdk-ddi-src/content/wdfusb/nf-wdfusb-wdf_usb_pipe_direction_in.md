@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfusb.WDF_USB_PIPE_DIRECTION_IN
-title : WDF_USB_PIPE_DIRECTION_IN function
-author : windows-driver-content
-description : The WDF_USB_PIPE_DIRECTION_IN function determines whether a specified USB endpoint is an input endpoint.
-old-location : wdf\wdf_usb_pipe_direction_in.htm
-old-project : wdf
-ms.assetid : 3fca6d50-ac38-4edf-b24a-ea4fe5d8a4fd
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : DFUsbRef_e0e1b604-8973-4901-91ea-76fce4e69b7c.xml, wdfusb/WDF_USB_PIPE_DIRECTION_IN, WDF_USB_PIPE_DIRECTION_IN, kmdf.wdf_usb_pipe_direction_in, wdf.wdf_usb_pipe_direction_in, WDF_USB_PIPE_DIRECTION_IN function
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfusb.h
-req.include-header : Wdfusb.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : None
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfusb.WDF_USB_PIPE_DIRECTION_IN
+title: WDF_USB_PIPE_DIRECTION_IN function
+author: windows-driver-content
+description: The WDF_USB_PIPE_DIRECTION_IN function determines whether a specified USB endpoint is an input endpoint.
+old-location: wdf\wdf_usb_pipe_direction_in.htm
+old-project: wdf
+ms.assetid: 3fca6d50-ac38-4edf-b24a-ea4fe5d8a4fd
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: DFUsbRef_e0e1b604-8973-4901-91ea-76fce4e69b7c.xml, wdfusb/WDF_USB_PIPE_DIRECTION_IN, WDF_USB_PIPE_DIRECTION_IN, kmdf.wdf_usb_pipe_direction_in, wdf.wdf_usb_pipe_direction_in, WDF_USB_PIPE_DIRECTION_IN function
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfusb.h
+req.include-header: Wdfusb.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: None
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	None
+-	None.dll
+apiname:
+-	WDF_USB_PIPE_DIRECTION_IN
+product: Windows
+targetos: Windows
+req.typenames: WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
+req.product: Windows 10 or later.
 ---
 
 

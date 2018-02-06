@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFDevice2.AssignS0IdleSettings
-title : IWDFDevice2::AssignS0IdleSettings method
-author : windows-driver-content
-description : The AssignS0IdleSettings method provides driver-supplied information that the framework uses when a device is idle and the system is in its working (S0) state.
-old-location : wdf\iwdfdevice2_assigns0idlesettings.htm
-old-project : wdf
-ms.assetid : ffe91b9a-3b74-4dd9-b23d-096f1992485e
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : UMDFDeviceObjectRef_337ed405-40bd-4162-ad50-3ee59e4e6c73.xml, AssignS0IdleSettings method, IWDFDevice2 interface, AssignS0IdleSettings method, IWDFDevice2::AssignS0IdleSettings, wdf.iwdfdevice2_assigns0idlesettings, wudfddi/IWDFDevice2::AssignS0IdleSettings, umdf.iwdfdevice2_assigns0idlesettings, IWDFDevice2, AssignS0IdleSettings, IWDFDevice2 interface, AssignS0IdleSettings method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.9
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFDevice2.AssignS0IdleSettings
+title: IWDFDevice2::AssignS0IdleSettings method
+author: windows-driver-content
+description: The AssignS0IdleSettings method provides driver-supplied information that the framework uses when a device is idle and the system is in its working (S0) state.
+old-location: wdf\iwdfdevice2_assigns0idlesettings.htm
+old-project: wdf
+ms.assetid: ffe91b9a-3b74-4dd9-b23d-096f1992485e
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: UMDFDeviceObjectRef_337ed405-40bd-4162-ad50-3ee59e4e6c73.xml, AssignS0IdleSettings method, IWDFDevice2 interface, AssignS0IdleSettings method, IWDFDevice2::AssignS0IdleSettings, wdf.iwdfdevice2_assigns0idlesettings, wudfddi/IWDFDevice2::AssignS0IdleSettings, umdf.iwdfdevice2_assigns0idlesettings, IWDFDevice2, AssignS0IdleSettings, IWDFDevice2 interface, AssignS0IdleSettings method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.9
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFDevice2.AssignS0IdleSettings
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

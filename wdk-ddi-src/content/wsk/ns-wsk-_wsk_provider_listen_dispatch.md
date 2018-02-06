@@ -1,42 +1,47 @@
 ---
-UID : NS:wsk._WSK_PROVIDER_LISTEN_DISPATCH
-title : "_WSK_PROVIDER_LISTEN_DISPATCH"
-author : windows-driver-content
-description : The WSK_PROVIDER_LISTEN_DISPATCH structure specifies the WSK subsystem's table of functions for a listening socket.
-old-location : netvista\wsk_provider_listen_dispatch.htm
-old-project : netvista
-ms.assetid : 56df7cb9-9ae7-4249-9583-a9259e604238
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : wsk/WSK_PROVIDER_LISTEN_DISPATCH, PWSK_PROVIDER_LISTEN_DISPATCH, PWSK_PROVIDER_LISTEN_DISPATCH structure pointer [Network Drivers Starting with Windows Vista], wskref_f2c1b28d-48f5-4667-bb4e-8dd1d5f25916.xml, *PWSK_PROVIDER_LISTEN_DISPATCH, WSK_PROVIDER_LISTEN_DISPATCH, _WSK_PROVIDER_LISTEN_DISPATCH, WSK_PROVIDER_LISTEN_DISPATCH structure [Network Drivers Starting with Windows Vista], netvista.wsk_provider_listen_dispatch, wsk/PWSK_PROVIDER_LISTEN_DISPATCH
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wsk.h
-req.include-header : Wsk.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating   systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WSK_PROVIDER_LISTEN_DISPATCH, *PWSK_PROVIDER_LISTEN_DISPATCH
-req.product : Windows 10 or later.
+UID: NS:wsk._WSK_PROVIDER_LISTEN_DISPATCH
+title: "_WSK_PROVIDER_LISTEN_DISPATCH"
+author: windows-driver-content
+description: The WSK_PROVIDER_LISTEN_DISPATCH structure specifies the WSK subsystem's table of functions for a listening socket.
+old-location: netvista\wsk_provider_listen_dispatch.htm
+old-project: netvista
+ms.assetid: 56df7cb9-9ae7-4249-9583-a9259e604238
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: wsk/WSK_PROVIDER_LISTEN_DISPATCH, PWSK_PROVIDER_LISTEN_DISPATCH, PWSK_PROVIDER_LISTEN_DISPATCH structure pointer [Network Drivers Starting with Windows Vista], wskref_f2c1b28d-48f5-4667-bb4e-8dd1d5f25916.xml, *PWSK_PROVIDER_LISTEN_DISPATCH, WSK_PROVIDER_LISTEN_DISPATCH, _WSK_PROVIDER_LISTEN_DISPATCH, WSK_PROVIDER_LISTEN_DISPATCH structure [Network Drivers Starting with Windows Vista], netvista.wsk_provider_listen_dispatch, wsk/PWSK_PROVIDER_LISTEN_DISPATCH
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wsk.h
+req.include-header: Wsk.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wsk.h
+apiname:
+-	WSK_PROVIDER_LISTEN_DISPATCH
+product: Windows
+targetos: Windows
+req.typenames: WSK_PROVIDER_LISTEN_DISPATCH, *PWSK_PROVIDER_LISTEN_DISPATCH
+req.product: Windows 10 or later.
 ---
 
 # _WSK_PROVIDER_LISTEN_DISPATCH structure

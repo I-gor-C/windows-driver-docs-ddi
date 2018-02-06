@@ -1,42 +1,48 @@
 ---
-UID : NF:storport.StorPortGetActivityIdSrb
-title : StorPortGetActivityIdSrb function
-author : windows-driver-content
-description : Retrieves the Event Tracing for Windows (ETW) activity ID associated with a request block.
-old-location : storage\storportgetactivityidsrb.htm
-old-project : storage
-ms.assetid : 63E956F5-C87C-45AA-BE16-2AD07F3BA050
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : StorPortGetActivityIdSrb, StorPortGetActivityIdSrb routine [Storage Devices], storport/StorPortGetActivityIdSrb, storage.storportgetactivityidsrb
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Storport.lib
-req.dll : 
-req.irql : Any
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STOR_SPINLOCK
-req.product : Windows 10 or later.
+UID: NF:storport.StorPortGetActivityIdSrb
+title: StorPortGetActivityIdSrb function
+author: windows-driver-content
+description: Retrieves the Event Tracing for Windows (ETW) activity ID associated with a request block.
+old-location: storage\storportgetactivityidsrb.htm
+old-project: storage
+ms.assetid: 63E956F5-C87C-45AA-BE16-2AD07F3BA050
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: StorPortGetActivityIdSrb, StorPortGetActivityIdSrb routine [Storage Devices], storport/StorPortGetActivityIdSrb, storage.storportgetactivityidsrb
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Storport.lib
+req.dll: 
+req.irql: Any
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Storport.lib
+-	Storport.dll
+apiname:
+-	StorPortGetActivityIdSrb
+product: Windows
+targetos: Windows
+req.typenames: STOR_SPINLOCK
+req.product: Windows 10 or later.
 ---
 
 

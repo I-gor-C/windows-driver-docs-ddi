@@ -1,42 +1,47 @@
 ---
-UID : NC:wdfdevice.EVT_WDF_FILE_CLEANUP
-title : EVT_WDF_FILE_CLEANUP
-author : windows-driver-content
-description : A driver's EvtFileCleanup callback function handles operations that must be performed when an application is closing all accesses to a device.
-old-location : wdf\evtfilecleanup.htm
-old-project : wdf
-ms.assetid : 8ce3d316-3976-4af5-a0ae-af4e93f380a1
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.evtfilecleanup, EvtFileCleanup callback function, EvtFileCleanup, EVT_WDF_FILE_CLEANUP, EVT_WDF_FILE_CLEANUP, wdfdevice/EvtFileCleanup, DFDeviceObjectGeneralRef_e784bb8d-f1f3-48ac-94c5-d88f2517efd1.xml, kmdf.evtfilecleanup
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdfdevice.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_DEVICE_SHUTDOWN_FLAGS
-req.product : Windows 10 or later.
+UID: NC:wdfdevice.EVT_WDF_FILE_CLEANUP
+title: EVT_WDF_FILE_CLEANUP
+author: windows-driver-content
+description: A driver's EvtFileCleanup callback function handles operations that must be performed when an application is closing all accesses to a device.
+old-location: wdf\evtfilecleanup.htm
+old-project: wdf
+ms.assetid: 8ce3d316-3976-4af5-a0ae-af4e93f380a1
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.evtfilecleanup, EvtFileCleanup callback function, EvtFileCleanup, EVT_WDF_FILE_CLEANUP, EVT_WDF_FILE_CLEANUP, wdfdevice/EvtFileCleanup, DFDeviceObjectGeneralRef_e784bb8d-f1f3-48ac-94c5-d88f2517efd1.xml, kmdf.evtfilecleanup
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdfdevice.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Wdfdevice.h
+apiname:
+-	EvtFileCleanup
+product: Windows
+targetos: Windows
+req.typenames: WDF_DEVICE_SHUTDOWN_FLAGS
+req.product: Windows 10 or later.
 ---
 
 

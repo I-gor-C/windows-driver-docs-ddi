@@ -1,41 +1,46 @@
 ---
-UID : NS:1394._ADDRESS_OFFSET
-title : "_ADDRESS_OFFSET"
-author : windows-driver-content
-description : The ADDRESS_OFFSET structure specifies the 48-bit address within a device's IEEE 1394 address space.
-old-location : ieee\address_offset.htm
-old-project : IEEE
-ms.assetid : e1ee536f-40e4-48b7-b2d0-6ead22520ec8
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : PADDRESS_OFFSET, ADDRESS_OFFSET, PADDRESS_OFFSET structure pointer [Buses], *PADDRESS_OFFSET, 1394/ADDRESS_OFFSET, 1394stct_7b2efd3c-fcd3-4a01-8ece-8a70975787b1.xml, IEEE.address_offset, _ADDRESS_OFFSET, 1394/PADDRESS_OFFSET, ADDRESS_OFFSET structure [Buses]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : 1394.h
-req.include-header : 1394.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PADDRESS_OFFSET, ADDRESS_OFFSET"
+UID: NS:1394._ADDRESS_OFFSET
+title: "_ADDRESS_OFFSET"
+author: windows-driver-content
+description: The ADDRESS_OFFSET structure specifies the 48-bit address within a device's IEEE 1394 address space.
+old-location: ieee\address_offset.htm
+old-project: IEEE
+ms.assetid: e1ee536f-40e4-48b7-b2d0-6ead22520ec8
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: PADDRESS_OFFSET, ADDRESS_OFFSET, PADDRESS_OFFSET structure pointer [Buses], *PADDRESS_OFFSET, 1394/ADDRESS_OFFSET, 1394stct_7b2efd3c-fcd3-4a01-8ece-8a70975787b1.xml, IEEE.address_offset, _ADDRESS_OFFSET, 1394/PADDRESS_OFFSET, ADDRESS_OFFSET structure [Buses]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: 1394.h
+req.include-header: 1394.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	1394.h
+apiname:
+-	ADDRESS_OFFSET
+product: Windows
+targetos: Windows
+req.typenames: "*PADDRESS_OFFSET, ADDRESS_OFFSET"
 ---
 
 # _ADDRESS_OFFSET structure

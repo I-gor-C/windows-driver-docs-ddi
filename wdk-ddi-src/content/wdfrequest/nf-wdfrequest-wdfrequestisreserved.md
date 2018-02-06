@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfrequest.WdfRequestIsReserved
-title : WdfRequestIsReserved function
-author : windows-driver-content
-description : The WdfRequestIsReserved method determines whether a specified request object is one that the framework reserved to support guaranteed forward progress during low-memory situations.
-old-location : wdf\wdfrequestisreserved.htm
-old-project : wdf
-ms.assetid : 8cbf75c4-d54c-45e0-9abb-bef8e76fb9fe
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : DFRequestObjectRef_286c4c9a-cbec-48f1-9d78-516cbaab2d45.xml, PFN_WDFREQUESTISRESERVED, WdfRequestIsReserved method, kmdf.wdfrequestisreserved, wdf.wdfrequestisreserved, WdfRequestIsReserved, wdfrequest/WdfRequestIsReserved
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfrequest.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.9
-req.umdf-ver : 
-req.ddi-compliance : DriverCreate
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_REQUEST_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfrequest.WdfRequestIsReserved
+title: WdfRequestIsReserved function
+author: windows-driver-content
+description: The WdfRequestIsReserved method determines whether a specified request object is one that the framework reserved to support guaranteed forward progress during low-memory situations.
+old-location: wdf\wdfrequestisreserved.htm
+old-project: wdf
+ms.assetid: 8cbf75c4-d54c-45e0-9abb-bef8e76fb9fe
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: DFRequestObjectRef_286c4c9a-cbec-48f1-9d78-516cbaab2d45.xml, PFN_WDFREQUESTISRESERVED, WdfRequestIsReserved method, kmdf.wdfrequestisreserved, wdf.wdfrequestisreserved, WdfRequestIsReserved, wdfrequest/WdfRequestIsReserved
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfrequest.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.9
+req.umdf-ver: 
+req.ddi-compliance: DriverCreate
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfRequestIsReserved
+product: Windows
+targetos: Windows
+req.typenames: WDF_REQUEST_TYPE
+req.product: Windows 10 or later.
 ---
 
 

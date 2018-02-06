@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IObjectCleanup.OnCleanup
-title : IObjectCleanup::OnCleanup method
-author : windows-driver-content
-description : The OnCleanup method releases any references to a WDF object to prevent interface leakage.
-old-location : wdf\iobjectcleanup_oncleanup.htm
-old-project : wdf
-ms.assetid : 6b66c496-d1cc-4b7a-ae50-f18fffa7275a
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : OnCleanup, umdf.iobjectcleanup_oncleanup, UMDFBaseObjectRef_1798eedf-b083-487c-b137-24d9caf1e7a7.xml, OnCleanup method, IObjectCleanup interface, IObjectCleanup::OnCleanup, wudfddi/IObjectCleanup::OnCleanup, IObjectCleanup, IObjectCleanup interface, OnCleanup method, wdf.iobjectcleanup_oncleanup, OnCleanup method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IObjectCleanup.OnCleanup
+title: IObjectCleanup::OnCleanup method
+author: windows-driver-content
+description: The OnCleanup method releases any references to a WDF object to prevent interface leakage.
+old-location: wdf\iobjectcleanup_oncleanup.htm
+old-project: wdf
+ms.assetid: 6b66c496-d1cc-4b7a-ae50-f18fffa7275a
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: OnCleanup, umdf.iobjectcleanup_oncleanup, UMDFBaseObjectRef_1798eedf-b083-487c-b137-24d9caf1e7a7.xml, OnCleanup method, IObjectCleanup interface, IObjectCleanup::OnCleanup, wudfddi/IObjectCleanup::OnCleanup, IObjectCleanup, IObjectCleanup interface, OnCleanup method, wdf.iobjectcleanup_oncleanup, OnCleanup method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Wudfddi.h
+apiname:
+-	IObjectCleanup.OnCleanup
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

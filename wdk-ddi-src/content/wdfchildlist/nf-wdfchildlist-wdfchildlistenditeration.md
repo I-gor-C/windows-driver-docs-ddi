@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfchildlist.WdfChildListEndIteration
-title : WdfChildListEndIteration function
-author : windows-driver-content
-description : The WdfChildListEndIteration method processes modifications to a specified child list.
-old-location : wdf\wdfchildlistenditeration.htm
-old-project : wdf
-ms.assetid : f8dc1d77-d0c5-4112-939d-221955012de1
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : DFDeviceObjectChildListRef_24a52e50-851e-456f-b111-0b794e76acfb.xml, PFN_WDFCHILDLISTENDITERATION, WdfChildListEndIteration, wdf.wdfchildlistenditeration, wdfchildlist/WdfChildListEndIteration, WdfChildListEndIteration method, kmdf.wdfchildlistenditeration
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfchildlist.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_RETRIEVE_CHILD_FLAGS
-req.product : Windows 10 or later.
+UID: NF:wdfchildlist.WdfChildListEndIteration
+title: WdfChildListEndIteration function
+author: windows-driver-content
+description: The WdfChildListEndIteration method processes modifications to a specified child list.
+old-location: wdf\wdfchildlistenditeration.htm
+old-project: wdf
+ms.assetid: f8dc1d77-d0c5-4112-939d-221955012de1
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: DFDeviceObjectChildListRef_24a52e50-851e-456f-b111-0b794e76acfb.xml, PFN_WDFCHILDLISTENDITERATION, WdfChildListEndIteration, wdf.wdfchildlistenditeration, wdfchildlist/WdfChildListEndIteration, WdfChildListEndIteration method, kmdf.wdfchildlistenditeration
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfchildlist.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfChildListEndIteration
+product: Windows
+targetos: Windows
+req.typenames: WDF_RETRIEVE_CHILD_FLAGS
+req.product: Windows 10 or later.
 ---
 
 

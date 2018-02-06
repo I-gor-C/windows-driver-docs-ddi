@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisDirectOidRequest
-title : NdisDirectOidRequest function
-author : windows-driver-content
-description : The NdisDirectOidRequest function forwards a direct OID request to the underlying drivers to query the capabilities or status of an adapter or set the state of an adapter.
-old-location : netvista\ndisdirectoidrequest.htm
-old-project : netvista
-ms.assetid : 771e5761-beea-4a31-9ebe-d65e9157f1f4
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : ndis_request_direct_ref_3a98c424-2d24-4841-87a7-e782d4e6c79d.xml, ndis/NdisDirectOidRequest, NdisDirectOidRequest, netvista.ndisdirectoidrequest, NdisDirectOidRequest function [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported in NDIS 6.1 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisDirectOidRequest
+title: NdisDirectOidRequest function
+author: windows-driver-content
+description: The NdisDirectOidRequest function forwards a direct OID request to the underlying drivers to query the capabilities or status of an adapter or set the state of an adapter.
+old-location: netvista\ndisdirectoidrequest.htm
+old-project: netvista
+ms.assetid: 771e5761-beea-4a31-9ebe-d65e9157f1f4
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: ndis_request_direct_ref_3a98c424-2d24-4841-87a7-e782d4e6c79d.xml, ndis/NdisDirectOidRequest, NdisDirectOidRequest, netvista.ndisdirectoidrequest, NdisDirectOidRequest function [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported in NDIS 6.1 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisDirectOidRequest
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

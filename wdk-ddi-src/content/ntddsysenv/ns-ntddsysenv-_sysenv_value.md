@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddsysenv._SYSENV_VALUE
-title : "_SYSENV_VALUE"
-author : windows-driver-content
-description : Stores the value of a system environment variable using SysEnv device. This structure is used in the IOCTL_SYSENV_GET_VARIABLE request.
-old-location : kernel\sysenv_value.htm
-old-project : kernel
-ms.assetid : 4F79D820-29D4-4D38-A09C-8A5E968C1479
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : SYSENV_VALUE structure [Kernel-Mode Driver Architecture], _SYSENV_VALUE, ntddsysenv/SYSENV_VALUE, PSYSENV_VALUE structure pointer [Kernel-Mode Driver Architecture], ntddsysenv/PSYSENV_VALUE, PSYSENV_VALUE, *PSYSENV_VALUE, kernel.sysenv_value, SYSENV_VALUE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddsysenv.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SYSENV_VALUE, *PSYSENV_VALUE
+UID: NS:ntddsysenv._SYSENV_VALUE
+title: "_SYSENV_VALUE"
+author: windows-driver-content
+description: Stores the value of a system environment variable using SysEnv device. This structure is used in the IOCTL_SYSENV_GET_VARIABLE request.
+old-location: kernel\sysenv_value.htm
+old-project: kernel
+ms.assetid: 4F79D820-29D4-4D38-A09C-8A5E968C1479
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: SYSENV_VALUE structure [Kernel-Mode Driver Architecture], _SYSENV_VALUE, ntddsysenv/SYSENV_VALUE, PSYSENV_VALUE structure pointer [Kernel-Mode Driver Architecture], ntddsysenv/PSYSENV_VALUE, PSYSENV_VALUE, *PSYSENV_VALUE, kernel.sysenv_value, SYSENV_VALUE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddsysenv.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddsysenv.h
+apiname:
+-	SYSENV_VALUE
+product: Windows
+targetos: Windows
+req.typenames: SYSENV_VALUE, *PSYSENV_VALUE
 ---
 
 # _SYSENV_VALUE structure

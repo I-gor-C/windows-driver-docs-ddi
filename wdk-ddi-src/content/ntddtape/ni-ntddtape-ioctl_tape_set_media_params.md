@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddtape.IOCTL_TAPE_SET_MEDIA_PARAMS
-title : IOCTL_TAPE_SET_MEDIA_PARAMS
-author : windows-driver-content
-description : Resets the block size of the media in the drive.
-old-location : storage\ioctl_tape_set_media_params.htm
-old-project : storage
-ms.assetid : c1411e72-84b4-4021-bed6-17308415be3a
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_tape_set_media_params, IOCTL_TAPE_SET_MEDIA_PARAMS control code [Storage Devices], IOCTL_TAPE_SET_MEDIA_PARAMS, ntddtape/IOCTL_TAPE_SET_MEDIA_PARAMS, k307_c549601d-5c5e-452b-8880-844820207215.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddtape.h
-req.include-header : Ntddtape.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TAPE_DRIVE_PROBLEM_TYPE
+UID: NI:ntddtape.IOCTL_TAPE_SET_MEDIA_PARAMS
+title: IOCTL_TAPE_SET_MEDIA_PARAMS
+author: windows-driver-content
+description: Resets the block size of the media in the drive.
+old-location: storage\ioctl_tape_set_media_params.htm
+old-project: storage
+ms.assetid: c1411e72-84b4-4021-bed6-17308415be3a
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_tape_set_media_params, IOCTL_TAPE_SET_MEDIA_PARAMS control code [Storage Devices], IOCTL_TAPE_SET_MEDIA_PARAMS, ntddtape/IOCTL_TAPE_SET_MEDIA_PARAMS, k307_c549601d-5c5e-452b-8880-844820207215.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddtape.h
+req.include-header: Ntddtape.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddtape.h
+apiname:
+-	IOCTL_TAPE_SET_MEDIA_PARAMS
+product: Windows
+targetos: Windows
+req.typenames: TAPE_DRIVE_PROBLEM_TYPE
 ---
 
 # IOCTL_TAPE_SET_MEDIA_PARAMS IOCTL

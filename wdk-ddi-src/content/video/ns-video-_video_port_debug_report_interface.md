@@ -1,42 +1,47 @@
 ---
-UID : NS:video._VIDEO_PORT_DEBUG_REPORT_INTERFACE
-title : "_VIDEO_PORT_DEBUG_REPORT_INTERFACE"
-author : windows-driver-content
-description : The VIDEO_PORT_DEBUG_REPORT_INTERFACE structure holds pointers to the Debug Report functions, which are implemented by the video port driver.
-old-location : display\video_port_debug_report_interface.htm
-old-project : display
-ms.assetid : 11536f1e-523c-4796-a973-e53291c756a8
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : video/PVIDEO_PORT_DEBUG_REPORT_INTERFACE, PVIDEO_PORT_DEBUG_REPORT_INTERFACE, VIDEO_PORT_DEBUG_REPORT_INTERFACE structure [Display Devices], *PVIDEO_PORT_DEBUG_REPORT_INTERFACE, _VIDEO_PORT_DEBUG_REPORT_INTERFACE, video/VIDEO_PORT_DEBUG_REPORT_INTERFACE, VIDEO_PORT_DEBUG_REPORT_INTERFACE, Video_Structs_4db5be2e-169d-4487-b979-e75cd1b2cb18.xml, display.video_port_debug_report_interface, PVIDEO_PORT_DEBUG_REPORT_INTERFACE structure pointer [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PVIDEO_PORT_DEBUG_REPORT_INTERFACE, VIDEO_PORT_DEBUG_REPORT_INTERFACE"
-req.product : Windows 10 or later.
+UID: NS:video._VIDEO_PORT_DEBUG_REPORT_INTERFACE
+title: "_VIDEO_PORT_DEBUG_REPORT_INTERFACE"
+author: windows-driver-content
+description: The VIDEO_PORT_DEBUG_REPORT_INTERFACE structure holds pointers to the Debug Report functions, which are implemented by the video port driver.
+old-location: display\video_port_debug_report_interface.htm
+old-project: display
+ms.assetid: 11536f1e-523c-4796-a973-e53291c756a8
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: video/PVIDEO_PORT_DEBUG_REPORT_INTERFACE, PVIDEO_PORT_DEBUG_REPORT_INTERFACE, VIDEO_PORT_DEBUG_REPORT_INTERFACE structure [Display Devices], *PVIDEO_PORT_DEBUG_REPORT_INTERFACE, _VIDEO_PORT_DEBUG_REPORT_INTERFACE, video/VIDEO_PORT_DEBUG_REPORT_INTERFACE, VIDEO_PORT_DEBUG_REPORT_INTERFACE, Video_Structs_4db5be2e-169d-4487-b979-e75cd1b2cb18.xml, display.video_port_debug_report_interface, PVIDEO_PORT_DEBUG_REPORT_INTERFACE structure pointer [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	video.h
+apiname:
+-	VIDEO_PORT_DEBUG_REPORT_INTERFACE
+product: Windows
+targetos: Windows
+req.typenames: "*PVIDEO_PORT_DEBUG_REPORT_INTERFACE, VIDEO_PORT_DEBUG_REPORT_INTERFACE"
+req.product: Windows 10 or later.
 ---
 
 # _VIDEO_PORT_DEBUG_REPORT_INTERFACE structure

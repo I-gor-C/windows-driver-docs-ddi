@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugClient5.CreateProcessWide
-title : IDebugClient5::CreateProcessWide method
-author : windows-driver-content
-description : The CreateProcessWide method creates a process from the specified command line.
-old-location : debugger\createprocesswide.htm
-old-project : debugger
-ms.assetid : 2a45c971-3dad-47ad-a819-6f2c6e34ad37
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : debugger.createprocesswide, IDebugClient4 interface [Windows Debugging], CreateProcessWide method, dbgeng/IDebugClient3::CreateProcessWide, IDebugClient5::CreateProcessWide, dbgeng/IDebugClient4::CreateProcessWide, IDebugClient3::CreateProcessWide, IDebugClient3 interface [Windows Debugging], CreateProcessWide method, CreateProcessWide method [Windows Debugging], IDebugClient4 interface, dbgeng/IDebugClient5::CreateProcessWide, IDebugClient5 interface [Windows Debugging], CreateProcessWide method, CreateProcessWide, IDebugClient4::CreateProcessWide, CreateProcessWide method [Windows Debugging], IDebugClient5 interface, IDebugClient5, CreateProcessWide method [Windows Debugging], CreateProcessWide method [Windows Debugging], IDebugClient3 interface
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugClient5.CreateProcessWide
+title: IDebugClient5::CreateProcessWide method
+author: windows-driver-content
+description: The CreateProcessWide method creates a process from the specified command line.
+old-location: debugger\createprocesswide.htm
+old-project: debugger
+ms.assetid: 2a45c971-3dad-47ad-a819-6f2c6e34ad37
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: debugger.createprocesswide, IDebugClient4 interface [Windows Debugging], CreateProcessWide method, dbgeng/IDebugClient3::CreateProcessWide, IDebugClient5::CreateProcessWide, dbgeng/IDebugClient4::CreateProcessWide, IDebugClient3::CreateProcessWide, IDebugClient3 interface [Windows Debugging], CreateProcessWide method, CreateProcessWide method [Windows Debugging], IDebugClient4 interface, dbgeng/IDebugClient5::CreateProcessWide, IDebugClient5 interface [Windows Debugging], CreateProcessWide method, CreateProcessWide, IDebugClient4::CreateProcessWide, CreateProcessWide method [Windows Debugging], IDebugClient5 interface, IDebugClient5, CreateProcessWide method [Windows Debugging], CreateProcessWide method [Windows Debugging], IDebugClient3 interface
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugClient3.CreateProcessWide
+-	IDebugClient4.CreateProcessWide
+-	IDebugClient5.CreateProcessWide
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

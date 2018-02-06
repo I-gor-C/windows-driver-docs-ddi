@@ -1,42 +1,47 @@
 ---
-UID : NC:wdfusb.EVT_WDF_USB_READERS_FAILED
-title : EVT_WDF_USB_READERS_FAILED
-author : windows-driver-content
-description : A driver's EvtUsbTargetPipeReadersFailed event callback function informs the driver that a continuous reader has reported an error while processing a read request.
-old-location : wdf\evtusbtargetpipereadersfailed.htm
-old-project : wdf
-ms.assetid : a9e21f47-1a60-419a-839e-8869f9fd4dd7
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.evtusbtargetpipereadersfailed, EvtUsbTargetPipeReadersFailed callback function, EvtUsbTargetPipeReadersFailed, EVT_WDF_USB_READERS_FAILED, EVT_WDF_USB_READERS_FAILED, wdfusb/EvtUsbTargetPipeReadersFailed, DFUsbRef_ba1b1293-cdd5-481e-8dd1-3633eb9084b9.xml, kmdf.evtusbtargetpipereadersfailed
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdfusb.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDF_TRI_STATE, WDF_TRI_STATE"
-req.product : Windows 10 or later.
+UID: NC:wdfusb.EVT_WDF_USB_READERS_FAILED
+title: EVT_WDF_USB_READERS_FAILED
+author: windows-driver-content
+description: A driver's EvtUsbTargetPipeReadersFailed event callback function informs the driver that a continuous reader has reported an error while processing a read request.
+old-location: wdf\evtusbtargetpipereadersfailed.htm
+old-project: wdf
+ms.assetid: a9e21f47-1a60-419a-839e-8869f9fd4dd7
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.evtusbtargetpipereadersfailed, EvtUsbTargetPipeReadersFailed callback function, EvtUsbTargetPipeReadersFailed, EVT_WDF_USB_READERS_FAILED, EVT_WDF_USB_READERS_FAILED, wdfusb/EvtUsbTargetPipeReadersFailed, DFUsbRef_ba1b1293-cdd5-481e-8dd1-3633eb9084b9.xml, kmdf.evtusbtargetpipereadersfailed
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdfusb.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	WdfUsb.h
+apiname:
+-	EvtUsbTargetPipeReadersFailed
+product: Windows
+targetos: Windows
+req.typenames: "*PWDF_TRI_STATE, WDF_TRI_STATE"
+req.product: Windows 10 or later.
 ---
 
 

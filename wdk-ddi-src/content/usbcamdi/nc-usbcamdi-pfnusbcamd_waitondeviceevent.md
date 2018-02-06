@@ -1,42 +1,47 @@
 ---
-UID : NC:usbcamdi.PFNUSBCAMD_WaitOnDeviceEvent
-title : PFNUSBCAMD_WaitOnDeviceEvent
-author : windows-driver-content
-description : The USBCAMD_WaitOnDeviceEvent service is used to perform a read from the interrupt pipe if the camera has an interrupt pipe for external event notifications.
-old-location : stream\usbcamd_waitondeviceevent.htm
-old-project : stream
-ms.assetid : b9767479-3ad9-4b47-82d1-70b54329e7b8
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.usbcamd_waitondeviceevent, USBCAMD_WaitOnDeviceEvent routine [Streaming Media Devices], USBCAMD_WaitOnDeviceEvent, PFNUSBCAMD_WaitOnDeviceEvent, PFNUSBCAMD_WaitOnDeviceEvent, usbcamdi/USBCAMD_WaitOnDeviceEvent, usbcmdpr_854c2d35-c023-4d7a-8c2e-3e56d3150e41.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : usbcamdi.h
-req.include-header : Usbcamdi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUSB_BUS_INTERFACE_USBDI_V3, USB_BUS_INTERFACE_USBDI_V3"
-req.product : Windows 10 or later.
+UID: NC:usbcamdi.PFNUSBCAMD_WaitOnDeviceEvent
+title: PFNUSBCAMD_WaitOnDeviceEvent
+author: windows-driver-content
+description: The USBCAMD_WaitOnDeviceEvent service is used to perform a read from the interrupt pipe if the camera has an interrupt pipe for external event notifications.
+old-location: stream\usbcamd_waitondeviceevent.htm
+old-project: stream
+ms.assetid: b9767479-3ad9-4b47-82d1-70b54329e7b8
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.usbcamd_waitondeviceevent, USBCAMD_WaitOnDeviceEvent routine [Streaming Media Devices], USBCAMD_WaitOnDeviceEvent, PFNUSBCAMD_WaitOnDeviceEvent, PFNUSBCAMD_WaitOnDeviceEvent, usbcamdi/USBCAMD_WaitOnDeviceEvent, usbcmdpr_854c2d35-c023-4d7a-8c2e-3e56d3150e41.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: usbcamdi.h
+req.include-header: Usbcamdi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	usbcamdi.h
+apiname:
+-	USBCAMD_WaitOnDeviceEvent
+product: Windows
+targetos: Windows
+req.typenames: "*PUSB_BUS_INTERFACE_USBDI_V3, USB_BUS_INTERFACE_USBDI_V3"
+req.product: Windows 10 or later.
 ---
 
 

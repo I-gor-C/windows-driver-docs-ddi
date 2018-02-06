@@ -1,41 +1,46 @@
 ---
-UID : NN:portcls.IPortWaveCyclic
-title : IPortWaveCyclic
-author : windows-driver-content
-description : The IPortWaveCyclic interface is the WaveCyclic port driver's primary interface.
-old-location : audio\iportwavecyclic.htm
-old-project : audio
-ms.assetid : de241c4c-2012-4d57-b069-d169b1e0aec3
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : audio.iportwavecyclic, IPortWaveCyclic interface [Audio Devices], IPortWaveCyclic interface [Audio Devices], described, IPortWaveCyclic, portcls/IPortWaveCyclic, audmp-routines_079bd398-d9f2-4a35-9ee0-6ced8fecdeb4.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : portcls.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Portcls.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NN:portcls.IPortWaveCyclic
+title: IPortWaveCyclic
+author: windows-driver-content
+description: The IPortWaveCyclic interface is the WaveCyclic port driver's primary interface.
+old-location: audio\iportwavecyclic.htm
+old-project: audio
+ms.assetid: de241c4c-2012-4d57-b069-d169b1e0aec3
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: audio.iportwavecyclic, IPortWaveCyclic interface [Audio Devices], IPortWaveCyclic interface [Audio Devices], described, IPortWaveCyclic, portcls/IPortWaveCyclic, audmp-routines_079bd398-d9f2-4a35-9ee0-6ced8fecdeb4.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: portcls.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Portcls.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	portcls.h
+apiname:
+-	IPortWaveCyclic
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 # IPortWaveCyclic interface

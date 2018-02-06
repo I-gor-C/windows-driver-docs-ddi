@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_PRESENTMULTIPLANEOVERLAYCB
-title : PFND3DDDI_PRESENTMULTIPLANEOVERLAYCB
-author : windows-driver-content
-description : Copies content from a source multiplane overlay allocation to a destination allocation. Can be called by Windows Display Driver Model (WDDM) 1.3 or later user-mode display drivers.
-old-location : display\pfnpresentmultiplaneoverlaycb_d3d.htm
-old-project : display
-ms.assetid : f355c29a-8a8d-46aa-b3b3-c93c0afef266
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.pfnpresentmultiplaneoverlaycb_d3d, pfnPresentMultiPlaneOverlayCb callback function [Display Devices], pfnPresentMultiPlaneOverlayCb, PFND3DDDI_PRESENTMULTIPLANEOVERLAYCB, PFND3DDDI_PRESENTMULTIPLANEOVERLAYCB, d3dumddi/pfnPresentMultiPlaneOverlayCb
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8.1
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_PRESENTMULTIPLANEOVERLAYCB
+title: PFND3DDDI_PRESENTMULTIPLANEOVERLAYCB
+author: windows-driver-content
+description: Copies content from a source multiplane overlay allocation to a destination allocation. Can be called by Windows Display Driver Model (WDDM) 1.3 or later user-mode display drivers.
+old-location: display\pfnpresentmultiplaneoverlaycb_d3d.htm
+old-project: display
+ms.assetid: f355c29a-8a8d-46aa-b3b3-c93c0afef266
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.pfnpresentmultiplaneoverlaycb_d3d, pfnPresentMultiPlaneOverlayCb callback function [Display Devices], pfnPresentMultiPlaneOverlayCb, PFND3DDDI_PRESENTMULTIPLANEOVERLAYCB, PFND3DDDI_PRESENTMULTIPLANEOVERLAYCB, d3dumddi/pfnPresentMultiPlaneOverlayCb
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8.1
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	D3dumddi.h
+apiname:
+-	pfnPresentMultiPlaneOverlayCb
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NC:ntddpcm.PCMCIA_MODIFY_MEMORY_WINDOW
-title : PCMCIA_MODIFY_MEMORY_WINDOW
-author : windows-driver-content
-description : The PCMCIA_MODIFY_MEMORY_WINDOW interface routine sets the attributes of a memory window for a PCMCIA memory card. The memory window is mapped by the PCMCIA bus driver.
-old-location : pcmcia\pcmcia_modify_memory_window.htm
-old-project : PCMCIA
-ms.assetid : 01469cd7-a023-42b0-9306-fc390bf990e6
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : PCMCIA.pcmcia_modify_memory_window, ModifyMemoryWindow callback function [Buses], ModifyMemoryWindow, PCMCIA_MODIFY_MEMORY_WINDOW, PCMCIA_MODIFY_MEMORY_WINDOW, ntddpcm/ModifyMemoryWindow, memcdref_fdb376f2-4f80-4a35-ab23-f007bdc05cad.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ntddpcm.h
-req.include-header : Ntddpcm.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL (See Remarks section.)"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PAR_SET_INFORMATION, *PPAR_SET_INFORMATION
+UID: NC:ntddpcm.PCMCIA_MODIFY_MEMORY_WINDOW
+title: PCMCIA_MODIFY_MEMORY_WINDOW
+author: windows-driver-content
+description: The PCMCIA_MODIFY_MEMORY_WINDOW interface routine sets the attributes of a memory window for a PCMCIA memory card. The memory window is mapped by the PCMCIA bus driver.
+old-location: pcmcia\pcmcia_modify_memory_window.htm
+old-project: PCMCIA
+ms.assetid: 01469cd7-a023-42b0-9306-fc390bf990e6
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: PCMCIA.pcmcia_modify_memory_window, ModifyMemoryWindow callback function [Buses], ModifyMemoryWindow, PCMCIA_MODIFY_MEMORY_WINDOW, PCMCIA_MODIFY_MEMORY_WINDOW, ntddpcm/ModifyMemoryWindow, memcdref_fdb376f2-4f80-4a35-ab23-f007bdc05cad.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ntddpcm.h
+req.include-header: Ntddpcm.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL (See Remarks section.)"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	ntddpcm.h
+apiname:
+-	ModifyMemoryWindow
+product: Windows
+targetos: Windows
+req.typenames: PAR_SET_INFORMATION, *PPAR_SET_INFORMATION
 ---
 
 

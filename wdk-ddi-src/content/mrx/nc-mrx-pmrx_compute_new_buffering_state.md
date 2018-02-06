@@ -1,41 +1,46 @@
 ---
-UID : NC:mrx.PMRX_COMPUTE_NEW_BUFFERING_STATE
-title : PMRX_COMPUTE_NEW_BUFFERING_STATE
-author : windows-driver-content
-description : TheMRxComputeNewBufferingState routine is called by RDBSS to request that the network mini-redirector compute a new buffering state change.
-old-location : ifsk\mrxcomputenewbufferingstate.htm
-old-project : ifsk
-ms.assetid : d47cbcab-8682-4c7f-b651-3d1e0f78dc0c
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.mrxcomputenewbufferingstate, MRxComputeNewBufferingState routine [Installable File System Drivers], MRxComputeNewBufferingState, PMRX_COMPUTE_NEW_BUFFERING_STATE, PMRX_COMPUTE_NEW_BUFFERING_STATE, mrx/MRxComputeNewBufferingState, mrxref_294ad2d0-2454-437d-818a-6879361f97e5.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : mrx.h
-req.include-header : Mrx.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SetDSMCounters_IN, *PSetDSMCounters_IN
+UID: NC:mrx.PMRX_COMPUTE_NEW_BUFFERING_STATE
+title: PMRX_COMPUTE_NEW_BUFFERING_STATE
+author: windows-driver-content
+description: TheMRxComputeNewBufferingState routine is called by RDBSS to request that the network mini-redirector compute a new buffering state change.
+old-location: ifsk\mrxcomputenewbufferingstate.htm
+old-project: ifsk
+ms.assetid: d47cbcab-8682-4c7f-b651-3d1e0f78dc0c
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.mrxcomputenewbufferingstate, MRxComputeNewBufferingState routine [Installable File System Drivers], MRxComputeNewBufferingState, PMRX_COMPUTE_NEW_BUFFERING_STATE, PMRX_COMPUTE_NEW_BUFFERING_STATE, mrx/MRxComputeNewBufferingState, mrxref_294ad2d0-2454-437d-818a-6879361f97e5.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: mrx.h
+req.include-header: Mrx.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	mrx.h
+apiname:
+-	MRxComputeNewBufferingState
+product: Windows
+targetos: Windows
+req.typenames: SetDSMCounters_IN, *PSetDSMCounters_IN
 ---
 
 

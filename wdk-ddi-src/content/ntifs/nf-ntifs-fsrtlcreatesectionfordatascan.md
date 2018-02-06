@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.FsRtlCreateSectionForDataScan
-title : FsRtlCreateSectionForDataScan function
-author : windows-driver-content
-description : The FsRtlCreateSectionForDataScan routine creates a section object.
-old-location : ifsk\fsrtlcreatesectionfordatascan.htm
-old-project : ifsk
-ms.assetid : 2bf6fb1b-e2d6-496d-808e-e739951cc7c5
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ntifs/FsRtlCreateSectionForDataScan, FsRtlCreateSectionForDataScan, fsrtlref_5117d865-19da-4ec5-8b20-cccab94eb013.xml, ifsk.fsrtlcreatesectionfordatascan, FsRtlCreateSectionForDataScan routine [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : The FsRtlCreateSectionForDataScan routine is available on Microsoft Windows Server 2003 SP1 and later, the Update Rollup for Windows 2000 Service Pack 4 (SP4), and the Filter Manager Rollup for Windows XP Service Pack 2 (SP2).
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.FsRtlCreateSectionForDataScan
+title: FsRtlCreateSectionForDataScan function
+author: windows-driver-content
+description: The FsRtlCreateSectionForDataScan routine creates a section object.
+old-location: ifsk\fsrtlcreatesectionfordatascan.htm
+old-project: ifsk
+ms.assetid: 2bf6fb1b-e2d6-496d-808e-e739951cc7c5
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ntifs/FsRtlCreateSectionForDataScan, FsRtlCreateSectionForDataScan, fsrtlref_5117d865-19da-4ec5-8b20-cccab94eb013.xml, ifsk.fsrtlcreatesectionfordatascan, FsRtlCreateSectionForDataScan routine [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: The FsRtlCreateSectionForDataScan routine is available on Microsoft Windows Server 2003 SP1 and later, the Update Rollup for Windows 2000 Service Pack 4 (SP4), and the Filter Manager Rollup for Windows XP Service Pack 2 (SP2).
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	FsRtlCreateSectionForDataScan
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

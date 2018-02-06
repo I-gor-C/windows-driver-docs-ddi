@@ -1,41 +1,46 @@
 ---
-UID : NS:dxgiddi.DXGI_DDI_ARG_BLT1
-title : DXGI_DDI_ARG_BLT1
-author : windows-driver-content
-description : Describes the parameters of a bit-block transfer (bitblt) that include specifications for a source rectangle. Used by Windows Display Driver Model (WDDM) 1.2 and later user-mode display drivers.
-old-location : display\dxgi_ddi_arg_blt1.htm
-old-project : display
-ms.assetid : bc7c2693-6a18-4335-8921-363981a830f1
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgi_ddi_arg_blt1, DXGI_DDI_ARG_BLT1, DXGI_DDI_ARG_BLT1 structure [Display Devices], dxgiddi/DXGI_DDI_ARG_BLT1
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : dxgiddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8,WDDM 1.2 and later
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGI_DDI_ARG_BLT1
+UID: NS:dxgiddi.DXGI_DDI_ARG_BLT1
+title: DXGI_DDI_ARG_BLT1
+author: windows-driver-content
+description: Describes the parameters of a bit-block transfer (bitblt) that include specifications for a source rectangle. Used by Windows Display Driver Model (WDDM) 1.2 and later user-mode display drivers.
+old-location: display\dxgi_ddi_arg_blt1.htm
+old-project: display
+ms.assetid: bc7c2693-6a18-4335-8921-363981a830f1
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgi_ddi_arg_blt1, DXGI_DDI_ARG_BLT1, DXGI_DDI_ARG_BLT1 structure [Display Devices], dxgiddi/DXGI_DDI_ARG_BLT1
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: dxgiddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8,WDDM 1.2 and later
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Dxgiddi.h
+apiname:
+-	DXGI_DDI_ARG_BLT1
+product: Windows
+targetos: Windows
+req.typenames: DXGI_DDI_ARG_BLT1
 ---
 
 # DXGI_DDI_ARG_BLT1 structure

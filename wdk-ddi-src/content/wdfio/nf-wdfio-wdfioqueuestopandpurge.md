@@ -1,42 +1,50 @@
 ---
-UID : NF:wdfio.WdfIoQueueStopAndPurge
-title : WdfIoQueueStopAndPurge function
-author : windows-driver-content
-description : The WdfIoQueueStopAndPurge method prevents an I/O queue from delivering new requests and cancels existing unprocessed requests and driver-owned cancellable requests, but the queue receives and stores new requests.
-old-location : wdf\wdfioqueuestopandpurge.htm
-old-project : wdf
-ms.assetid : 3A9CF1BD-77F1-4F4C-AEB5-0E77B67C45D3
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WdfIoQueueStopAndPurge, kmdf.wdfioqueuestopandpurge, WdfIoQueueStopAndPurge method, wdf.wdfioqueuestopandpurge, wdfio/WdfIoQueueStopAndPurge, PFN_WDFIOQUEUESTOPANDPURGE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfio.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.11
-req.umdf-ver : 2.0
-req.ddi-compliance : ChangeQueueState, DriverCreate, EvtSurpriseRemoveNoSuspendQueue, NoCancelFromEvtSurpriseRemove
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_IO_QUEUE_STATE
-req.product : Windows 10 or later.
+UID: NF:wdfio.WdfIoQueueStopAndPurge
+title: WdfIoQueueStopAndPurge function
+author: windows-driver-content
+description: The WdfIoQueueStopAndPurge method prevents an I/O queue from delivering new requests and cancels existing unprocessed requests and driver-owned cancellable requests, but the queue receives and stores new requests.
+old-location: wdf\wdfioqueuestopandpurge.htm
+old-project: wdf
+ms.assetid: 3A9CF1BD-77F1-4F4C-AEB5-0E77B67C45D3
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WdfIoQueueStopAndPurge, kmdf.wdfioqueuestopandpurge, WdfIoQueueStopAndPurge method, wdf.wdfioqueuestopandpurge, wdfio/WdfIoQueueStopAndPurge, PFN_WDFIOQUEUESTOPANDPURGE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfio.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.11
+req.umdf-ver: 2.0
+req.ddi-compliance: ChangeQueueState, DriverCreate, EvtSurpriseRemoveNoSuspendQueue, NoCancelFromEvtSurpriseRemove
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+-	WUDFx02000.dll
+-	WUDFx02000.dll.dll
+apiname:
+-	WdfIoQueueStopAndPurge
+product: Windows
+targetos: Windows
+req.typenames: WDF_IO_QUEUE_STATE
+req.product: Windows 10 or later.
 ---
 
 

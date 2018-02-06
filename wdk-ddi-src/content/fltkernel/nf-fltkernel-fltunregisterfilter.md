@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltUnregisterFilter
-title : FltUnregisterFilter function
-author : windows-driver-content
-description : A registered minifilter driver calls FltUnregisterFilter to unregister itself so that the Filter Manager no longer calls it to process I/O operations.
-old-location : ifsk\fltunregisterfilter.htm
-old-project : ifsk
-ms.assetid : 5369566b-fa64-4aec-ad3e-1a129bcefdd6
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltUnregisterFilter function [Installable File System Drivers], FltUnregisterFilter, fltkernel/FltUnregisterFilter, FltApiRef_p_to_z_cedf94f0-1f4a-46cf-aa81-914ab30d2a98.xml, ifsk.fltunregisterfilter
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltUnregisterFilter
+title: FltUnregisterFilter function
+author: windows-driver-content
+description: A registered minifilter driver calls FltUnregisterFilter to unregister itself so that the Filter Manager no longer calls it to process I/O operations.
+old-location: ifsk\fltunregisterfilter.htm
+old-project: ifsk
+ms.assetid: 5369566b-fa64-4aec-ad3e-1a129bcefdd6
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltUnregisterFilter function [Installable File System Drivers], FltUnregisterFilter, fltkernel/FltUnregisterFilter, FltApiRef_p_to_z_cedf94f0-1f4a-46cf-aa81-914ab30d2a98.xml, ifsk.fltunregisterfilter
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltUnregisterFilter
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

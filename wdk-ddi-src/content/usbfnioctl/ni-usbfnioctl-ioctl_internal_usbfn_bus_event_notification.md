@@ -1,42 +1,47 @@
 ---
-UID : NI:usbfnioctl.IOCTL_INTERNAL_USBFN_BUS_EVENT_NOTIFICATION
-title : IOCTL_INTERNAL_USBFN_BUS_EVENT_NOTIFICATION
-author : windows-driver-content
-description : The USB class driver sends this request to prepare for notifications received from the USB function class extension (UFX) in response to an event on the bus, such as a change in the port type or a receipt of a non-standard setup packet.
-old-location : buses\ioctl_internal_usbfn_bus_event_notification.htm
-old-project : usbref
-ms.assetid : 737EDB43-FAFF-4EFD-A7A1-206D646F23E1
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : buses.ioctl_internal_usbfn_bus_event_notification, IOCTL_INTERNAL_USBFN_BUS_EVENT_NOTIFICATION control code [Buses], IOCTL_INTERNAL_USBFN_BUS_EVENT_NOTIFICATION, usbfnioctl/IOCTL_INTERNAL_USBFN_BUS_EVENT_NOTIFICATION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : usbfnioctl.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : USBFN_USB_STRING, *PUSBFN_USB_STRING
-req.product : Windows 10 or later.
+UID: NI:usbfnioctl.IOCTL_INTERNAL_USBFN_BUS_EVENT_NOTIFICATION
+title: IOCTL_INTERNAL_USBFN_BUS_EVENT_NOTIFICATION
+author: windows-driver-content
+description: The USB class driver sends this request to prepare for notifications received from the USB function class extension (UFX) in response to an event on the bus, such as a change in the port type or a receipt of a non-standard setup packet.
+old-location: buses\ioctl_internal_usbfn_bus_event_notification.htm
+old-project: usbref
+ms.assetid: 737EDB43-FAFF-4EFD-A7A1-206D646F23E1
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: buses.ioctl_internal_usbfn_bus_event_notification, IOCTL_INTERNAL_USBFN_BUS_EVENT_NOTIFICATION control code [Buses], IOCTL_INTERNAL_USBFN_BUS_EVENT_NOTIFICATION, usbfnioctl/IOCTL_INTERNAL_USBFN_BUS_EVENT_NOTIFICATION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: usbfnioctl.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	usbfnioctl.h
+apiname:
+-	IOCTL_INTERNAL_USBFN_BUS_EVENT_NOTIFICATION
+product: Windows
+targetos: Windows
+req.typenames: USBFN_USB_STRING, *PUSBFN_USB_STRING
+req.product: Windows 10 or later.
 ---
 
 # IOCTL_INTERNAL_USBFN_BUS_EVENT_NOTIFICATION IOCTL

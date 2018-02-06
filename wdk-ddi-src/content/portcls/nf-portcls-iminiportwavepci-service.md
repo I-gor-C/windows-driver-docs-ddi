@@ -1,41 +1,46 @@
 ---
-UID : NF:portcls.IMiniportWavePci.Service
-title : IMiniportWavePci::Service method
-author : windows-driver-content
-description : The Service method notifies the miniport driver of a request for service.
-old-location : audio\iminiportwavepci_service.htm
-old-project : audio
-ms.assetid : 1c30293f-1516-47a7-bb2c-29f9dc682777
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : IMiniportWavePci interface [Audio Devices], Service method, audmp-routines_837c6515-20a3-4b55-b930-24fc1b461ea6.xml, audio.iminiportwavepci_service, Service method [Audio Devices], IMiniportWavePci, IMiniportWavePci::Service, Service method [Audio Devices], IMiniportWavePci interface, portcls/IMiniportWavePci::Service, Service
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : portcls.h
-req.include-header : Portcls.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : portcls.h
-req.dll : 
-req.irql : DISPATCH_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.IMiniportWavePci.Service
+title: IMiniportWavePci::Service method
+author: windows-driver-content
+description: The Service method notifies the miniport driver of a request for service.
+old-location: audio\iminiportwavepci_service.htm
+old-project: audio
+ms.assetid: 1c30293f-1516-47a7-bb2c-29f9dc682777
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: IMiniportWavePci interface [Audio Devices], Service method, audmp-routines_837c6515-20a3-4b55-b930-24fc1b461ea6.xml, audio.iminiportwavepci_service, Service method [Audio Devices], IMiniportWavePci, IMiniportWavePci::Service, Service method [Audio Devices], IMiniportWavePci interface, portcls/IMiniportWavePci::Service, Service
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: portcls.h
+req.include-header: Portcls.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: portcls.h
+req.dll: 
+req.irql: DISPATCH_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	portcls.h
+apiname:
+-	IMiniportWavePci.Service
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

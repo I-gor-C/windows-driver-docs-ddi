@@ -1,42 +1,47 @@
 ---
-UID : NS:wmidata._WMI_CHANGER_PROBLEM_DEVICE_ERROR
-title : "_WMI_CHANGER_PROBLEM_DEVICE_ERROR"
-author : windows-driver-content
-description : When the ChangerPerformDiagnostics routine performs diagnostic tests on a changer device it returns the results in a WMI_CHANGER_PROBLEM_DEVICE_ERROR structure.
-old-location : storage\wmi_changer_problem_device_error.htm
-old-project : storage
-ms.assetid : c2c0f2eb-cb35-4f23-beb6-7f0eaeda845a
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : "*PWMI_CHANGER_PROBLEM_DEVICE_ERROR, storage.wmi_changer_problem_device_error, _WMI_CHANGER_PROBLEM_DEVICE_ERROR, PWMI_CHANGER_PROBLEM_DEVICE_ERROR, PWMI_CHANGER_PROBLEM_DEVICE_ERROR structure pointer [Storage Devices], wmidata/WMI_CHANGER_PROBLEM_DEVICE_ERROR, WMI_CHANGER_PROBLEM_DEVICE_ERROR structure [Storage Devices], wmidata/PWMI_CHANGER_PROBLEM_DEVICE_ERROR, structs-changer_0d8bac8e-b24c-4ff8-948e-0dd55b5624f0.xml, WMI_CHANGER_PROBLEM_DEVICE_ERROR"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wmidata.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WMI_CHANGER_PROBLEM_DEVICE_ERROR, *PWMI_CHANGER_PROBLEM_DEVICE_ERROR
-req.product : Windows 10 or later.
+UID: NS:wmidata._WMI_CHANGER_PROBLEM_DEVICE_ERROR
+title: "_WMI_CHANGER_PROBLEM_DEVICE_ERROR"
+author: windows-driver-content
+description: When the ChangerPerformDiagnostics routine performs diagnostic tests on a changer device it returns the results in a WMI_CHANGER_PROBLEM_DEVICE_ERROR structure.
+old-location: storage\wmi_changer_problem_device_error.htm
+old-project: storage
+ms.assetid: c2c0f2eb-cb35-4f23-beb6-7f0eaeda845a
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: "*PWMI_CHANGER_PROBLEM_DEVICE_ERROR, storage.wmi_changer_problem_device_error, _WMI_CHANGER_PROBLEM_DEVICE_ERROR, PWMI_CHANGER_PROBLEM_DEVICE_ERROR, PWMI_CHANGER_PROBLEM_DEVICE_ERROR structure pointer [Storage Devices], wmidata/WMI_CHANGER_PROBLEM_DEVICE_ERROR, WMI_CHANGER_PROBLEM_DEVICE_ERROR structure [Storage Devices], wmidata/PWMI_CHANGER_PROBLEM_DEVICE_ERROR, structs-changer_0d8bac8e-b24c-4ff8-948e-0dd55b5624f0.xml, WMI_CHANGER_PROBLEM_DEVICE_ERROR"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wmidata.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wmidata.h
+apiname:
+-	WMI_CHANGER_PROBLEM_DEVICE_ERROR
+product: Windows
+targetos: Windows
+req.typenames: WMI_CHANGER_PROBLEM_DEVICE_ERROR, *PWMI_CHANGER_PROBLEM_DEVICE_ERROR
+req.product: Windows 10 or later.
 ---
 
 # _WMI_CHANGER_PROBLEM_DEVICE_ERROR structure

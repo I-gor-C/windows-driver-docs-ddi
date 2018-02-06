@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugSymbols3.GetNameByOffsetWide
-title : IDebugSymbols3::GetNameByOffsetWide method
-author : windows-driver-content
-description : The GetNameByOffsetWide method returns the name of the symbol at the specified location in the target's virtual address space.
-old-location : debugger\getnamebyoffsetwide.htm
-old-project : debugger
-ms.assetid : 45a041c9-029a-4fa1-91c6-562e56a30b3e
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugSymbols3 interface [Windows Debugging], GetNameByOffsetWide method, GetNameByOffsetWide, IDebugSymbols3::GetNameByOffsetWide, debugger.getnamebyoffsetwide, GetNameByOffsetWide method [Windows Debugging], dbgeng/IDebugSymbols3::GetNameByOffsetWide, IDebugSymbols3, GetNameByOffsetWide method [Windows Debugging], IDebugSymbols3 interface
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSymbols3.GetNameByOffsetWide
+title: IDebugSymbols3::GetNameByOffsetWide method
+author: windows-driver-content
+description: The GetNameByOffsetWide method returns the name of the symbol at the specified location in the target's virtual address space.
+old-location: debugger\getnamebyoffsetwide.htm
+old-project: debugger
+ms.assetid: 45a041c9-029a-4fa1-91c6-562e56a30b3e
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugSymbols3 interface [Windows Debugging], GetNameByOffsetWide method, GetNameByOffsetWide, IDebugSymbols3::GetNameByOffsetWide, debugger.getnamebyoffsetwide, GetNameByOffsetWide method [Windows Debugging], dbgeng/IDebugSymbols3::GetNameByOffsetWide, IDebugSymbols3, GetNameByOffsetWide method [Windows Debugging], IDebugSymbols3 interface
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugSymbols3.GetNameByOffsetWide
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

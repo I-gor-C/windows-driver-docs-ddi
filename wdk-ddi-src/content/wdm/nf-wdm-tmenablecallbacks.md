@@ -1,42 +1,49 @@
 ---
-UID : NF:wdm.TmEnableCallbacks
-title : TmEnableCallbacks function
-author : windows-driver-content
-description : The TmEnableCallbacks routine enables a callback routine that receives transaction notifications.
-old-location : kernel\tmenablecallbacks.htm
-old-project : kernel
-ms.assetid : d3f79cda-349a-4a42-a2a9-d9be3a695c1c
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : TmEnableCallbacks routine [Kernel-Mode Driver Architecture], TmEnableCallbacks, wdm/TmEnableCallbacks, kernel.tmenablecallbacks, ktm_ref_0d901be3-7a5f-4296-b0fc-b8bdf84c43ec.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later operating system versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.TmEnableCallbacks
+title: TmEnableCallbacks function
+author: windows-driver-content
+description: The TmEnableCallbacks routine enables a callback routine that receives transaction notifications.
+old-location: kernel\tmenablecallbacks.htm
+old-project: kernel
+ms.assetid: d3f79cda-349a-4a42-a2a9-d9be3a695c1c
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: TmEnableCallbacks routine [Kernel-Mode Driver Architecture], TmEnableCallbacks, wdm/TmEnableCallbacks, kernel.tmenablecallbacks, ktm_ref_0d901be3-7a5f-4296-b0fc-b8bdf84c43ec.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later operating system versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+-	Ext-MS-Win-ntos-tm-l1-1-0.dll
+-	tm.sys
+apiname:
+-	TmEnableCallbacks
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

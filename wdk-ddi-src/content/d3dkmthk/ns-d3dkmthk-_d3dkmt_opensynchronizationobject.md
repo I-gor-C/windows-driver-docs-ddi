@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmthk._D3DKMT_OPENSYNCHRONIZATIONOBJECT
-title : "_D3DKMT_OPENSYNCHRONIZATIONOBJECT"
-author : windows-driver-content
-description : The D3DKMT_OPENSYNCHRONIZATIONOBJECT structure describes a synchronization object that the D3DKMTOpenSynchronizationObject function opens.
-old-location : display\d3dkmt_opensynchronizationobject.htm
-old-project : display
-ms.assetid : 58e71ce5-29d0-4ee2-8d91-02230021110d
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DKMT_OPENSYNCHRONIZATIONOBJECT, display.d3dkmt_opensynchronizationobject, d3dkmthk/D3DKMT_OPENSYNCHRONIZATIONOBJECT, _D3DKMT_OPENSYNCHRONIZATIONOBJECT, D3DKMT_OPENSYNCHRONIZATIONOBJECT structure [Display Devices], OpenGL_Structs_61f9f676-2b21-4cb3-8c6a-9f25ce3ac2bc.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Windows
-req.target-min-winverclnt : D3DKMT_OPENSYNCHRONIZATIONOBJECT is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_OPENSYNCHRONIZATIONOBJECT
+UID: NS:d3dkmthk._D3DKMT_OPENSYNCHRONIZATIONOBJECT
+title: "_D3DKMT_OPENSYNCHRONIZATIONOBJECT"
+author: windows-driver-content
+description: The D3DKMT_OPENSYNCHRONIZATIONOBJECT structure describes a synchronization object that the D3DKMTOpenSynchronizationObject function opens.
+old-location: display\d3dkmt_opensynchronizationobject.htm
+old-project: display
+ms.assetid: 58e71ce5-29d0-4ee2-8d91-02230021110d
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DKMT_OPENSYNCHRONIZATIONOBJECT, display.d3dkmt_opensynchronizationobject, d3dkmthk/D3DKMT_OPENSYNCHRONIZATIONOBJECT, _D3DKMT_OPENSYNCHRONIZATIONOBJECT, D3DKMT_OPENSYNCHRONIZATIONOBJECT structure [Display Devices], OpenGL_Structs_61f9f676-2b21-4cb3-8c6a-9f25ce3ac2bc.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Windows
+req.target-min-winverclnt: D3DKMT_OPENSYNCHRONIZATIONOBJECT is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmthk.h
+apiname:
+-	D3DKMT_OPENSYNCHRONIZATIONOBJECT
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_OPENSYNCHRONIZATIONOBJECT
 ---
 
 # _D3DKMT_OPENSYNCHRONIZATIONOBJECT structure

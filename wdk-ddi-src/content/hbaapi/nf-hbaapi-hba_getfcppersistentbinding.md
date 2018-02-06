@@ -1,41 +1,46 @@
 ---
-UID : NF:hbaapi.HBA_GetFcpPersistentBinding
-title : HBA_GetFcpPersistentBinding function
-author : windows-driver-content
-description : The HBA_GetFcpPersistentBinding routine retrieves the persistent bindings that are associated with the logical units that the HBA can enumerate.
-old-location : storage\hba_getfcppersistentbinding.htm
-old-project : storage
-ms.assetid : a17a6dfa-c067-4a85-8787-ffb4fb6cb7ad
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : HBA_GetFcpPersistentBinding, hbaapi/HBA_GetFcpPersistentBinding, fibreHBA_rtns_9ab54a28-f020-426e-9ea6-2aba3666884b.xml, storage.hba_getfcppersistentbinding, HBA_GetFcpPersistentBinding routine [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : hbaapi.h
-req.include-header : Hbaapi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Hbaapi.lib
-req.dll : Hbaapi.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HBA_WWNTYPE
+UID: NF:hbaapi.HBA_GetFcpPersistentBinding
+title: HBA_GetFcpPersistentBinding function
+author: windows-driver-content
+description: The HBA_GetFcpPersistentBinding routine retrieves the persistent bindings that are associated with the logical units that the HBA can enumerate.
+old-location: storage\hba_getfcppersistentbinding.htm
+old-project: storage
+ms.assetid: a17a6dfa-c067-4a85-8787-ffb4fb6cb7ad
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: HBA_GetFcpPersistentBinding, hbaapi/HBA_GetFcpPersistentBinding, fibreHBA_rtns_9ab54a28-f020-426e-9ea6-2aba3666884b.xml, storage.hba_getfcppersistentbinding, HBA_GetFcpPersistentBinding routine [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: hbaapi.h
+req.include-header: Hbaapi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Hbaapi.lib
+req.dll: Hbaapi.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Hbaapi.dll
+apiname:
+-	HBA_GetFcpPersistentBinding
+product: Windows
+targetos: Windows
+req.typenames: HBA_WWNTYPE
 ---
 
 

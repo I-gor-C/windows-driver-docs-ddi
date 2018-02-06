@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltIsIoRedirectionAllowed
-title : FltIsIoRedirectionAllowed function
-author : windows-driver-content
-description : The FltIsIoRedirectionAllowed routine determines whether I/O can be redirected from the specified source filter instance to another specified filter instance.
-old-location : ifsk\fltisioredirectionallowed.htm
-old-project : ifsk
-ms.assetid : 79a59e86-9ee2-4cfa-b495-5248f227d24b
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : fltkernel/FltIsIoRedirectionAllowed, ifsk.fltisioredirectionallowed, FltIsIoRedirectionAllowed routine [Installable File System Drivers], FltIsIoRedirectionAllowed
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : FltKernel.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 7 and later versions of the Windows operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltIsIoRedirectionAllowed
+title: FltIsIoRedirectionAllowed function
+author: windows-driver-content
+description: The FltIsIoRedirectionAllowed routine determines whether I/O can be redirected from the specified source filter instance to another specified filter instance.
+old-location: ifsk\fltisioredirectionallowed.htm
+old-project: ifsk
+ms.assetid: 79a59e86-9ee2-4cfa-b495-5248f227d24b
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: fltkernel/FltIsIoRedirectionAllowed, ifsk.fltisioredirectionallowed, FltIsIoRedirectionAllowed routine [Installable File System Drivers], FltIsIoRedirectionAllowed
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: FltKernel.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 7 and later versions of the Windows operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltIsIoRedirectionAllowed
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

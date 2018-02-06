@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dkmddi.DXGKDDI_PRESENTDISPLAYONLY
-title : DXGKDDI_PRESENTDISPLAYONLY
-author : windows-driver-content
-description : Presents the screen image to the display device of a kernel mode display-only driver (KMDOD).
-old-location : display\dxgkddipresentdisplayonly.htm
-old-project : display
-ms.assetid : b68839e3-ad82-4fcc-8e5a-02dea5db08d9
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkddipresentdisplayonly, DxgkDdiPresentDisplayOnly callback function [Display Devices], DxgkDdiPresentDisplayOnly, DXGKDDI_PRESENTDISPLAYONLY, DXGKDDI_PRESENTDISPLAYONLY, d3dkmddi/DxgkDdiPresentDisplayOnly
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dkmddi.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
+UID: NC:d3dkmddi.DXGKDDI_PRESENTDISPLAYONLY
+title: DXGKDDI_PRESENTDISPLAYONLY
+author: windows-driver-content
+description: Presents the screen image to the display device of a kernel mode display-only driver (KMDOD).
+old-location: display\dxgkddipresentdisplayonly.htm
+old-project: display
+ms.assetid: b68839e3-ad82-4fcc-8e5a-02dea5db08d9
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkddipresentdisplayonly, DxgkDdiPresentDisplayOnly callback function [Display Devices], DxgkDdiPresentDisplayOnly, DXGKDDI_PRESENTDISPLAYONLY, DXGKDDI_PRESENTDISPLAYONLY, d3dkmddi/DxgkDdiPresentDisplayOnly
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dkmddi.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	D3dkmddi.h
+apiname:
+-	DxgkDdiPresentDisplayOnly
+product: Windows
+targetos: Windows
+req.typenames: DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
 

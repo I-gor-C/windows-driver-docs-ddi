@@ -1,41 +1,46 @@
 ---
-UID : NC:pcivirt.SRIOV_QUERY_VF_LUID
-title : SRIOV_QUERY_VF_LUID
-author : windows-driver-content
-description : Gets the local unique identifier of the PCI Express SR-IOV Virtual Function (VF).
-old-location : pci\sriov_query_vf_luid.htm
-old-project : PCI
-ms.assetid : 17fe6e28-59ce-4678-8268-b49cef09a3db
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : PCI.sriov_query_vf_luid, SriovQueryVfLuid callback function [Buses], SriovQueryVfLuid, SRIOV_QUERY_VF_LUID, SRIOV_QUERY_VF_LUID, pcivirt/SriovQueryVfLuid, *PSRIOV_QUERY_VF_LUID callback function pointer [Buses], *PSRIOV_QUERY_VF_LUID
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : pcivirt.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PARCLASS_INFORMATION, *PPARCLASS_INFORMATION
+UID: NC:pcivirt.SRIOV_QUERY_VF_LUID
+title: SRIOV_QUERY_VF_LUID
+author: windows-driver-content
+description: Gets the local unique identifier of the PCI Express SR-IOV Virtual Function (VF).
+old-location: pci\sriov_query_vf_luid.htm
+old-project: PCI
+ms.assetid: 17fe6e28-59ce-4678-8268-b49cef09a3db
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: PCI.sriov_query_vf_luid, SriovQueryVfLuid callback function [Buses], SriovQueryVfLuid, SRIOV_QUERY_VF_LUID, SRIOV_QUERY_VF_LUID, pcivirt/SriovQueryVfLuid, *PSRIOV_QUERY_VF_LUID callback function pointer [Buses], *PSRIOV_QUERY_VF_LUID
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: pcivirt.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	pcivirt.h
+apiname:
+-	*PSRIOV_QUERY_VF_LUID
+product: Windows
+targetos: Windows
+req.typenames: PARCLASS_INFORMATION, *PPARCLASS_INFORMATION
 ---
 
 

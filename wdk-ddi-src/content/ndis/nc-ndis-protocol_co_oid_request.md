@@ -1,41 +1,46 @@
 ---
-UID : NC:ndis.PROTOCOL_CO_OID_REQUEST
-title : PROTOCOL_CO_OID_REQUEST
-author : windows-driver-content
-description : The ProtocolCoOidRequest function handles OID requests that CoNDIS clients or stand-alone call managers initiate by calls to the NdisCoOidRequest function or that a miniport call manager (MCM) driver initiates by calls to the NdisMCmOidRequest function.Note  You must declare the function by using the PROTOCOL_CO_OID_REQUEST type. For more information, see the following Examples section.
-old-location : netvista\protocolcooidrequest.htm
-old-project : netvista
-ms.assetid : 8247396f-8781-45da-aba1-a31a2a26a46f
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.protocolcooidrequest, ProtocolCoOidRequest callback function [Network Drivers Starting with Windows Vista], ProtocolCoOidRequest, PROTOCOL_CO_OID_REQUEST, PROTOCOL_CO_OID_REQUEST, ndis/ProtocolCoOidRequest, condis_request_ref_b02b012f-58cc-4dd6-be48-6e1cc4f00b24.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
+UID: NC:ndis.PROTOCOL_CO_OID_REQUEST
+title: PROTOCOL_CO_OID_REQUEST
+author: windows-driver-content
+description: The ProtocolCoOidRequest function handles OID requests that CoNDIS clients or stand-alone call managers initiate by calls to the NdisCoOidRequest function or that a miniport call manager (MCM) driver initiates by calls to the NdisMCmOidRequest function.Note  You must declare the function by using the PROTOCOL_CO_OID_REQUEST type. For more information, see the following Examples section.
+old-location: netvista\protocolcooidrequest.htm
+old-project: netvista
+ms.assetid: 8247396f-8781-45da-aba1-a31a2a26a46f
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.protocolcooidrequest, ProtocolCoOidRequest callback function [Network Drivers Starting with Windows Vista], ProtocolCoOidRequest, PROTOCOL_CO_OID_REQUEST, PROTOCOL_CO_OID_REQUEST, ndis/ProtocolCoOidRequest, condis_request_ref_b02b012f-58cc-4dd6-be48-6e1cc4f00b24.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ndis.h
+apiname:
+-	ProtocolCoOidRequest
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 

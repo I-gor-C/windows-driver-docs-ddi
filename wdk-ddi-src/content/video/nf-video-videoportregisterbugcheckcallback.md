@@ -1,42 +1,47 @@
 ---
-UID : NF:video.VideoPortRegisterBugcheckCallback
-title : VideoPortRegisterBugcheckCallback function
-author : windows-driver-content
-description : The VideoPortRegisterBugcheckCallback function allows a video miniport driver to register for, or hook, a callback that is invoked when a specified bug check occurs.
-old-location : display\videoportregisterbugcheckcallback.htm
-old-project : display
-ms.assetid : 55b2d603-f3ac-4a7a-91f5-83d908d1e14b
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : VideoPort_Functions_ba500792-836e-4181-983c-506bf5608a1c.xml, VideoPortRegisterBugcheckCallback, video/VideoPortRegisterBugcheckCallback, display.videoportregisterbugcheckcallback, VideoPortRegisterBugcheckCallback function [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows XP SP1 and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Videoprt.lib
-req.dll : Videoprt.sys
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_PORT_SERVICES
-req.product : Windows 10 or later.
+UID: NF:video.VideoPortRegisterBugcheckCallback
+title: VideoPortRegisterBugcheckCallback function
+author: windows-driver-content
+description: The VideoPortRegisterBugcheckCallback function allows a video miniport driver to register for, or hook, a callback that is invoked when a specified bug check occurs.
+old-location: display\videoportregisterbugcheckcallback.htm
+old-project: display
+ms.assetid: 55b2d603-f3ac-4a7a-91f5-83d908d1e14b
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: VideoPort_Functions_ba500792-836e-4181-983c-506bf5608a1c.xml, VideoPortRegisterBugcheckCallback, video/VideoPortRegisterBugcheckCallback, display.videoportregisterbugcheckcallback, VideoPortRegisterBugcheckCallback function [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows XP SP1 and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Videoprt.lib
+req.dll: Videoprt.sys
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Videoprt.sys
+apiname:
+-	VideoPortRegisterBugcheckCallback
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_PORT_SERVICES
+req.product: Windows 10 or later.
 ---
 
 

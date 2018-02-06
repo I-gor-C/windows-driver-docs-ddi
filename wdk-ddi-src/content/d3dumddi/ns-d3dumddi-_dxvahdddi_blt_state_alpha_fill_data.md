@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._DXVAHDDDI_BLT_STATE_ALPHA_FILL_DATA
-title : "_DXVAHDDDI_BLT_STATE_ALPHA_FILL_DATA"
-author : windows-driver-content
-description : The DXVAHDDDI_BLT_STATE_ALPHA_FILL_DATA structure describes data that specifies the alpha-fill mode of the output.
-old-location : display\dxvahdddi_blt_state_alpha_fill_data.htm
-old-project : display
-ms.assetid : 67fb316e-359f-4bf0-b061-a4b18e359f38
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DXVA2_Structs_0b64fc90-1ad4-4d38-9fda-68454167b9dd.xml, display.dxvahdddi_blt_state_alpha_fill_data, DXVAHDDDI_BLT_STATE_ALPHA_FILL_DATA, d3dumddi/DXVAHDDDI_BLT_STATE_ALPHA_FILL_DATA, _DXVAHDDDI_BLT_STATE_ALPHA_FILL_DATA, DXVAHDDDI_BLT_STATE_ALPHA_FILL_DATA structure [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : DXVAHDDDI_BLT_STATE_ALPHA_FILL_DATA is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXVAHDDDI_BLT_STATE_ALPHA_FILL_DATA
+UID: NS:d3dumddi._DXVAHDDDI_BLT_STATE_ALPHA_FILL_DATA
+title: "_DXVAHDDDI_BLT_STATE_ALPHA_FILL_DATA"
+author: windows-driver-content
+description: The DXVAHDDDI_BLT_STATE_ALPHA_FILL_DATA structure describes data that specifies the alpha-fill mode of the output.
+old-location: display\dxvahdddi_blt_state_alpha_fill_data.htm
+old-project: display
+ms.assetid: 67fb316e-359f-4bf0-b061-a4b18e359f38
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DXVA2_Structs_0b64fc90-1ad4-4d38-9fda-68454167b9dd.xml, display.dxvahdddi_blt_state_alpha_fill_data, DXVAHDDDI_BLT_STATE_ALPHA_FILL_DATA, d3dumddi/DXVAHDDDI_BLT_STATE_ALPHA_FILL_DATA, _DXVAHDDDI_BLT_STATE_ALPHA_FILL_DATA, DXVAHDDDI_BLT_STATE_ALPHA_FILL_DATA structure [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: DXVAHDDDI_BLT_STATE_ALPHA_FILL_DATA is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	DXVAHDDDI_BLT_STATE_ALPHA_FILL_DATA
+product: Windows
+targetos: Windows
+req.typenames: DXVAHDDDI_BLT_STATE_ALPHA_FILL_DATA
 ---
 
 # _DXVAHDDDI_BLT_STATE_ALPHA_FILL_DATA structure

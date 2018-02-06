@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddk._WHEA_PCIXBUS_ERROR_SECTION
-title : "_WHEA_PCIXBUS_ERROR_SECTION"
-author : windows-driver-content
-description : The WHEA_PCIXBUS_ERROR_SECTION structure describes PCI or PCI-X bus error data.
-old-location : whea\whea_pcixbus_error_section.htm
-old-project : whea
-ms.assetid : f79071e3-7146-49c4-a730-ee13fde4f0d4
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : whearef_6979fd7e-8c18-443b-b9be-1e78316dcd7d.xml, whea.whea_pcixbus_error_section, *PWHEA_PCIXBUS_ERROR_SECTION, ntddk/WHEA_PCIXBUS_ERROR_SECTION, _WHEA_PCIXBUS_ERROR_SECTION, WHEA_PCIXBUS_ERROR, PWHEA_PCIXBUS_ERROR_SECTION structure pointer [WHEA Drivers and Applications], PWHEA_PCIXBUS_ERROR_SECTION, WHEA_PCIXBUS_ERROR_SECTION, *PWHEA_PCIXBUS_ERROR, WHEA_PCIXBUS_ERROR_SECTION structure [WHEA Drivers and Applications], ntddk/PWHEA_PCIXBUS_ERROR_SECTION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_PCIXBUS_ERROR_SECTION, *PWHEA_PCIXBUS_ERROR_SECTION
+UID: NS:ntddk._WHEA_PCIXBUS_ERROR_SECTION
+title: "_WHEA_PCIXBUS_ERROR_SECTION"
+author: windows-driver-content
+description: The WHEA_PCIXBUS_ERROR_SECTION structure describes PCI or PCI-X bus error data.
+old-location: whea\whea_pcixbus_error_section.htm
+old-project: whea
+ms.assetid: f79071e3-7146-49c4-a730-ee13fde4f0d4
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: whearef_6979fd7e-8c18-443b-b9be-1e78316dcd7d.xml, whea.whea_pcixbus_error_section, *PWHEA_PCIXBUS_ERROR_SECTION, ntddk/WHEA_PCIXBUS_ERROR_SECTION, _WHEA_PCIXBUS_ERROR_SECTION, WHEA_PCIXBUS_ERROR, PWHEA_PCIXBUS_ERROR_SECTION structure pointer [WHEA Drivers and Applications], PWHEA_PCIXBUS_ERROR_SECTION, WHEA_PCIXBUS_ERROR_SECTION, *PWHEA_PCIXBUS_ERROR, WHEA_PCIXBUS_ERROR_SECTION structure [WHEA Drivers and Applications], ntddk/PWHEA_PCIXBUS_ERROR_SECTION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddk.h
+apiname:
+-	WHEA_PCIXBUS_ERROR_SECTION
+product: Windows
+targetos: Windows
+req.typenames: WHEA_PCIXBUS_ERROR_SECTION, *PWHEA_PCIXBUS_ERROR_SECTION
 ---
 
 # _WHEA_PCIXBUS_ERROR_SECTION structure

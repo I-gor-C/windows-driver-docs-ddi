@@ -1,42 +1,47 @@
 ---
-UID : NC:ucxusbdevice.EVT_UCX_USBDEVICE_SUSPEND
-title : EVT_UCX_USBDEVICE_SUSPEND
-author : windows-driver-content
-description : UCX invokes this callback function to send a device suspend state.
-old-location : buses\evt_ucx_usbdevice_suspend.htm
-old-project : usbref
-ms.assetid : 809F946C-DDD4-4C4D-9F0F-F2B4A4657D12
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : buses.evt_ucx_usbdevice_suspend, EvtUcxDeviceSuspend callback function [Buses], EvtUcxDeviceSuspend, EVT_UCX_USBDEVICE_SUSPEND, EVT_UCX_USBDEVICE_SUSPEND, ucxusbdevice/EvtUcxDeviceSuspend, *PFN_UCX_USBDEVICE_SUSPEND callback function [Buses], *PFN_UCX_USBDEVICE_SUSPEND
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ucxusbdevice.h
-req.include-header : Ucxclass.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10, version 1709
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSTREAM_INFO, STREAM_INFO"
-req.product : Windows 10 or later.
+UID: NC:ucxusbdevice.EVT_UCX_USBDEVICE_SUSPEND
+title: EVT_UCX_USBDEVICE_SUSPEND
+author: windows-driver-content
+description: UCX invokes this callback function to send a device suspend state.
+old-location: buses\evt_ucx_usbdevice_suspend.htm
+old-project: usbref
+ms.assetid: 809F946C-DDD4-4C4D-9F0F-F2B4A4657D12
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: buses.evt_ucx_usbdevice_suspend, EvtUcxDeviceSuspend callback function [Buses], EvtUcxDeviceSuspend, EVT_UCX_USBDEVICE_SUSPEND, EVT_UCX_USBDEVICE_SUSPEND, ucxusbdevice/EvtUcxDeviceSuspend, *PFN_UCX_USBDEVICE_SUSPEND callback function [Buses], *PFN_UCX_USBDEVICE_SUSPEND
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ucxusbdevice.h
+req.include-header: Ucxclass.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10, version 1709
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	ucxusbdevice.h
+apiname:
+-	*PFN_UCX_USBDEVICE_SUSPEND
+product: Windows
+targetos: Windows
+req.typenames: "*PSTREAM_INFO, STREAM_INFO"
+req.product: Windows 10 or later.
 ---
 
 

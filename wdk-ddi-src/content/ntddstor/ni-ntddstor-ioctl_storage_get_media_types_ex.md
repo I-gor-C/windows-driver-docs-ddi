@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddstor.IOCTL_STORAGE_GET_MEDIA_TYPES_EX
-title : IOCTL_STORAGE_GET_MEDIA_TYPES_EX
-author : windows-driver-content
-description : Returns information about the types of media supported by a device.
-old-location : storage\ioctl_storage_get_media_types_ex.htm
-old-project : storage
-ms.assetid : 706269d8-123b-48c6-83cb-8ae47fb92efc
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_storage_get_media_types_ex, IOCTL_STORAGE_GET_MEDIA_TYPES_EX control code [Storage Devices], IOCTL_STORAGE_GET_MEDIA_TYPES_EX, ntddstor/IOCTL_STORAGE_GET_MEDIA_TYPES_EX, k307_6dad39e5-7a8b-477d-a96d-5f00fe7fee7b.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddstor.h
-req.include-header : Ntddstor.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STORAGE_ZONE_CONDITION, *PSTORAGE_ZONE_CONDITION
+UID: NI:ntddstor.IOCTL_STORAGE_GET_MEDIA_TYPES_EX
+title: IOCTL_STORAGE_GET_MEDIA_TYPES_EX
+author: windows-driver-content
+description: Returns information about the types of media supported by a device.
+old-location: storage\ioctl_storage_get_media_types_ex.htm
+old-project: storage
+ms.assetid: 706269d8-123b-48c6-83cb-8ae47fb92efc
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_storage_get_media_types_ex, IOCTL_STORAGE_GET_MEDIA_TYPES_EX control code [Storage Devices], IOCTL_STORAGE_GET_MEDIA_TYPES_EX, ntddstor/IOCTL_STORAGE_GET_MEDIA_TYPES_EX, k307_6dad39e5-7a8b-477d-a96d-5f00fe7fee7b.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddstor.h
+req.include-header: Ntddstor.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddstor.h
+apiname:
+-	IOCTL_STORAGE_GET_MEDIA_TYPES_EX
+product: Windows
+targetos: Windows
+req.typenames: STORAGE_ZONE_CONDITION, *PSTORAGE_ZONE_CONDITION
 ---
 
 # IOCTL_STORAGE_GET_MEDIA_TYPES_EX IOCTL

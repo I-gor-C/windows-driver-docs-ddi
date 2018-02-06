@@ -1,41 +1,46 @@
 ---
-UID : NS:ks._KSSTREAM_POINTER
-title : "_KSSTREAM_POINTER"
-author : windows-driver-content
-description : The KSSTREAM_POINTER structure is the basic AVStream pointer into a stream.
-old-location : stream\ksstream_pointer.htm
-old-project : stream
-ms.assetid : 31cdb264-89a1-48dc-af0c-b18d4f077d0f
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KSSTREAM_POINTER structure [Streaming Media Devices], *PKSSTREAM_POINTER, stream.ksstream_pointer, avstruct_1856dc7a-3351-4a87-97a5-85b06d12ab30.xml, ks/KSSTREAM_POINTER, KSSTREAM_POINTER, _KSSTREAM_POINTER, PKSSTREAM_POINTER structure pointer [Streaming Media Devices], ks/PKSSTREAM_POINTER, PKSSTREAM_POINTER
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and in Microsoft DirectX 8.0 and later versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKSSTREAM_POINTER, KSSTREAM_POINTER"
+UID: NS:ks._KSSTREAM_POINTER
+title: "_KSSTREAM_POINTER"
+author: windows-driver-content
+description: The KSSTREAM_POINTER structure is the basic AVStream pointer into a stream.
+old-location: stream\ksstream_pointer.htm
+old-project: stream
+ms.assetid: 31cdb264-89a1-48dc-af0c-b18d4f077d0f
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KSSTREAM_POINTER structure [Streaming Media Devices], *PKSSTREAM_POINTER, stream.ksstream_pointer, avstruct_1856dc7a-3351-4a87-97a5-85b06d12ab30.xml, ks/KSSTREAM_POINTER, KSSTREAM_POINTER, _KSSTREAM_POINTER, PKSSTREAM_POINTER structure pointer [Streaming Media Devices], ks/PKSSTREAM_POINTER, PKSSTREAM_POINTER
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and in Microsoft DirectX 8.0 and later versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	KSSTREAM_POINTER
+product: Windows
+targetos: Windows
+req.typenames: "*PKSSTREAM_POINTER, KSSTREAM_POINTER"
 ---
 
 # _KSSTREAM_POINTER structure

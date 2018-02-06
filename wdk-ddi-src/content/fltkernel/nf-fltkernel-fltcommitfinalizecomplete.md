@@ -1,41 +1,47 @@
 ---
-UID : NF:fltkernel.FltCommitFinalizeComplete
-title : FltCommitFinalizeComplete function
-author : windows-driver-content
-description : The FltCommitFinalizeComplete routine acknowledges a TRANSACTION_NOTIFY_COMMIT_FINALIZE notification.
-old-location : ifsk\fltcommitfinalizecomplete.htm
-old-project : ifsk
-ms.assetid : e1bfef9f-87c8-49e0-bbc4-6bc5ea103758
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltCommitFinalizeComplete, FltApiRef_a_to_d_f2b874db-f5fb-405b-a3a5-b5877c88548d.xml, ifsk.fltcommitfinalizecomplete, fltkernel/FltCommitFinalizeComplete, FltCommitFinalizeComplete routine [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista Service Pack 1 (SP1) and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Fltmgr.lib
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltCommitFinalizeComplete
+title: FltCommitFinalizeComplete function
+author: windows-driver-content
+description: The FltCommitFinalizeComplete routine acknowledges a TRANSACTION_NOTIFY_COMMIT_FINALIZE notification.
+old-location: ifsk\fltcommitfinalizecomplete.htm
+old-project: ifsk
+ms.assetid: e1bfef9f-87c8-49e0-bbc4-6bc5ea103758
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltCommitFinalizeComplete, FltApiRef_a_to_d_f2b874db-f5fb-405b-a3a5-b5877c88548d.xml, ifsk.fltcommitfinalizecomplete, fltkernel/FltCommitFinalizeComplete, FltCommitFinalizeComplete routine [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista Service Pack 1 (SP1) and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Fltmgr.lib
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Fltmgr.lib
+-	Fltmgr.dll
+apiname:
+-	FltCommitFinalizeComplete
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

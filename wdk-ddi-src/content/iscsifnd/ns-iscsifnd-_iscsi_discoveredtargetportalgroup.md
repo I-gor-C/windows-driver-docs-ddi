@@ -1,41 +1,46 @@
 ---
-UID : NS:iscsifnd._ISCSI_DiscoveredTargetPortalGroup
-title : "_ISCSI_DiscoveredTargetPortalGroup"
-author : windows-driver-content
-description : The ISCSI_DiscoveredTargetPortalGroup structure contains information about a discovered target portal group.
-old-location : storage\iscsi_discoveredtargetportalgroup.htm
-old-project : storage
-ms.assetid : 5c90dbc2-f42a-4c04-8c77-0ef3a712416c
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : ISCSI_DiscoveredTargetPortalGroup, PISCSI_DiscoveredTargetPortalGroup, structs-iSCSI_aa46b46a-73cf-4d06-a5ff-9abc5794f965.xml, ISCSI_DiscoveredTargetPortalGroup structure [Storage Devices], iscsifnd/PISCSI_DiscoveredTargetPortalGroup, PISCSI_DiscoveredTargetPortalGroup structure pointer [Storage Devices], storage.iscsi_discoveredtargetportalgroup, _ISCSI_DiscoveredTargetPortalGroup, iscsifnd/ISCSI_DiscoveredTargetPortalGroup, *PISCSI_DiscoveredTargetPortalGroup
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : iscsifnd.h
-req.include-header : Iscsifnd.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PISCSI_DiscoveredTargetPortalGroup, ISCSI_DiscoveredTargetPortalGroup"
+UID: NS:iscsifnd._ISCSI_DiscoveredTargetPortalGroup
+title: "_ISCSI_DiscoveredTargetPortalGroup"
+author: windows-driver-content
+description: The ISCSI_DiscoveredTargetPortalGroup structure contains information about a discovered target portal group.
+old-location: storage\iscsi_discoveredtargetportalgroup.htm
+old-project: storage
+ms.assetid: 5c90dbc2-f42a-4c04-8c77-0ef3a712416c
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: ISCSI_DiscoveredTargetPortalGroup, PISCSI_DiscoveredTargetPortalGroup, structs-iSCSI_aa46b46a-73cf-4d06-a5ff-9abc5794f965.xml, ISCSI_DiscoveredTargetPortalGroup structure [Storage Devices], iscsifnd/PISCSI_DiscoveredTargetPortalGroup, PISCSI_DiscoveredTargetPortalGroup structure pointer [Storage Devices], storage.iscsi_discoveredtargetportalgroup, _ISCSI_DiscoveredTargetPortalGroup, iscsifnd/ISCSI_DiscoveredTargetPortalGroup, *PISCSI_DiscoveredTargetPortalGroup
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: iscsifnd.h
+req.include-header: Iscsifnd.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	iscsifnd.h
+apiname:
+-	ISCSI_DiscoveredTargetPortalGroup
+product: Windows
+targetos: Windows
+req.typenames: "*PISCSI_DiscoveredTargetPortalGroup, ISCSI_DiscoveredTargetPortalGroup"
 ---
 
 # _ISCSI_DiscoveredTargetPortalGroup structure

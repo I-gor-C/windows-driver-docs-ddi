@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltReferenceFileNameInformation
-title : FltReferenceFileNameInformation function
-author : windows-driver-content
-description : FltReferenceFileNameInformation increments the reference count on a file name information structure.
-old-location : ifsk\fltreferencefilenameinformation.htm
-old-project : ifsk
-ms.assetid : d2df37f3-78f7-4e44-9139-2c2e569bb48d
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.fltreferencefilenameinformation, fltkernel/FltReferenceFileNameInformation, FltReferenceFileNameInformation, FltApiRef_p_to_z_c6cfa7ad-ac72-45ad-9750-c466dd6ede6e.xml, FltReferenceFileNameInformation function [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltReferenceFileNameInformation
+title: FltReferenceFileNameInformation function
+author: windows-driver-content
+description: FltReferenceFileNameInformation increments the reference count on a file name information structure.
+old-location: ifsk\fltreferencefilenameinformation.htm
+old-project: ifsk
+ms.assetid: d2df37f3-78f7-4e44-9139-2c2e569bb48d
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.fltreferencefilenameinformation, fltkernel/FltReferenceFileNameInformation, FltReferenceFileNameInformation, FltApiRef_p_to_z_c6cfa7ad-ac72-45ad-9750-c466dd6ede6e.xml, FltReferenceFileNameInformation function [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltReferenceFileNameInformation
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

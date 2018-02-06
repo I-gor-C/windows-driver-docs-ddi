@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3D10DDI_RESOURCEUPDATESUBRESOURCEUP
-title : PFND3D10DDI_RESOURCEUPDATESUBRESOURCEUP
-author : windows-driver-content
-description : The DefaultConstantBufferUpdateSubresourceUP function updates a destination subresource region that stores constant buffers from a source system-memory region.
-old-location : display\defaultconstantbufferupdatesubresourceup.htm
-old-project : display
-ms.assetid : 80086f1a-75f8-464f-973e-9c1e67725933
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.defaultconstantbufferupdatesubresourceup, DefaultConstantBufferUpdateSubresourceUP callback function [Display Devices], DefaultConstantBufferUpdateSubresourceUP, PFND3D10DDI_RESOURCEUPDATESUBRESOURCEUP, PFND3D10DDI_RESOURCEUPDATESUBRESOURCEUP, d3d10umddi/DefaultConstantBufferUpdateSubresourceUP, UserModeDisplayDriverDx10_Functions_1868c778-0475-4113-8b24-caf7f9822775.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3D10DDI_RESOURCEUPDATESUBRESOURCEUP
+title: PFND3D10DDI_RESOURCEUPDATESUBRESOURCEUP
+author: windows-driver-content
+description: The DefaultConstantBufferUpdateSubresourceUP function updates a destination subresource region that stores constant buffers from a source system-memory region.
+old-location: display\defaultconstantbufferupdatesubresourceup.htm
+old-project: display
+ms.assetid: 80086f1a-75f8-464f-973e-9c1e67725933
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.defaultconstantbufferupdatesubresourceup, DefaultConstantBufferUpdateSubresourceUP callback function [Display Devices], DefaultConstantBufferUpdateSubresourceUP, PFND3D10DDI_RESOURCEUPDATESUBRESOURCEUP, PFND3D10DDI_RESOURCEUPDATESUBRESOURCEUP, d3d10umddi/DefaultConstantBufferUpdateSubresourceUP, UserModeDisplayDriverDx10_Functions_1868c778-0475-4113-8b24-caf7f9822775.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	DefaultConstantBufferUpdateSubresourceUP
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

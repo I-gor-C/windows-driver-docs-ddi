@@ -1,42 +1,47 @@
 ---
-UID : NF:wiautil.CWiauFormatConverter.IsFormatSupported
-title : CWiauFormatConverter::IsFormatSupported method
-author : windows-driver-content
-description : The CWiauFormatConverter::IsFormatSupported method verifies that GDI+ supports the image format that is to be converted.
-old-location : image\cwiauformatconverter_isformatsupported.htm
-old-project : image
-ms.assetid : 5bb69443-8ccd-4157-8815-fb3423b57e30
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : IsFormatSupported method [Imaging Devices], CWiauFormatConverter interface, CWiauFormatConverter::IsFormatSupported, CWiauFormatConverter interface [Imaging Devices], IsFormatSupported method, IsFormatSupported method [Imaging Devices], IsFormatSupported, wiautil/CWiauFormatConverter::IsFormatSupported, wiauFncs_894f0261-249e-4b7c-aaa1-43a52bd48fbf.xml, image.cwiauformatconverter_isformatsupported, CWiauFormatConverter
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wiautil.h
-req.include-header : Wiautil.h, Wiamindr.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows XP and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wiautil.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SKIP_AMOUNT
-req.product : Windows 10 or later.
+UID: NF:wiautil.CWiauFormatConverter.IsFormatSupported
+title: CWiauFormatConverter::IsFormatSupported method
+author: windows-driver-content
+description: The CWiauFormatConverter::IsFormatSupported method verifies that GDI+ supports the image format that is to be converted.
+old-location: image\cwiauformatconverter_isformatsupported.htm
+old-project: image
+ms.assetid: 5bb69443-8ccd-4157-8815-fb3423b57e30
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: IsFormatSupported method [Imaging Devices], CWiauFormatConverter interface, CWiauFormatConverter::IsFormatSupported, CWiauFormatConverter interface [Imaging Devices], IsFormatSupported method, IsFormatSupported method [Imaging Devices], IsFormatSupported, wiautil/CWiauFormatConverter::IsFormatSupported, wiauFncs_894f0261-249e-4b7c-aaa1-43a52bd48fbf.xml, image.cwiauformatconverter_isformatsupported, CWiauFormatConverter
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wiautil.h
+req.include-header: Wiautil.h, Wiamindr.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows XP and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wiautil.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Wiautil.h
+apiname:
+-	CWiauFormatConverter.IsFormatSupported
+product: Windows
+targetos: Windows
+req.typenames: SKIP_AMOUNT
+req.product: Windows 10 or later.
 ---
 
 

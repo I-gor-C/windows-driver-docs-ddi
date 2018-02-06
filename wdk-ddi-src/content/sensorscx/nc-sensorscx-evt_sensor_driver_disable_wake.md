@@ -1,42 +1,47 @@
 ---
-UID : NC:sensorscx.EVT_SENSOR_DRIVER_DISABLE_WAKE
-title : EVT_SENSOR_DRIVER_DISABLE_WAKE
-author : windows-driver-content
-description : Callback to disable wake for the sensor.
-old-location : sensors\evt_sensor_driver_disable_wake.htm
-old-project : sensors
-ms.assetid : 15873D33-1423-47D7-8CE6-F2012241B658
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : sensors.evt_sensor_driver_disable_wake, EVT_SENSOR_DRIVER_DISABLE_WAKE callback function [Sensor Devices], EVT_SENSOR_DRIVER_DISABLE_WAKE, sensorscx/EVT_SENSOR_DRIVER_DISABLE_WAKE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : sensorscx.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "_requires_same_"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SensorConnectionType
-req.product : Windows 10 or later.
+UID: NC:sensorscx.EVT_SENSOR_DRIVER_DISABLE_WAKE
+title: EVT_SENSOR_DRIVER_DISABLE_WAKE
+author: windows-driver-content
+description: Callback to disable wake for the sensor.
+old-location: sensors\evt_sensor_driver_disable_wake.htm
+old-project: sensors
+ms.assetid: 15873D33-1423-47D7-8CE6-F2012241B658
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: sensors.evt_sensor_driver_disable_wake, EVT_SENSOR_DRIVER_DISABLE_WAKE callback function [Sensor Devices], EVT_SENSOR_DRIVER_DISABLE_WAKE, sensorscx/EVT_SENSOR_DRIVER_DISABLE_WAKE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: sensorscx.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "_requires_same_"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	SensorsCx.h
+apiname:
+-	EVT_SENSOR_DRIVER_DISABLE_WAKE
+product: Windows
+targetos: Windows
+req.typenames: SensorConnectionType
+req.product: Windows 10 or later.
 ---
 
 

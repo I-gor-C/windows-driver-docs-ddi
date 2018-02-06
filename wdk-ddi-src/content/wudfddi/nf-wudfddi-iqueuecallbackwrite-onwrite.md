@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IQueueCallbackWrite.OnWrite
-title : IQueueCallbackWrite::OnWrite method
-author : windows-driver-content
-description : The OnWrite method is called to handle a write request when an application writes information to a device through the Microsoft Win32 WriteFile or WriteFileEx function.
-old-location : wdf\iqueuecallbackwrite_onwrite.htm
-old-project : wdf
-ms.assetid : a87a9976-f844-4e69-82d3-2d426e359763
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : IQueueCallbackWrite, OnWrite, wudfddi/IQueueCallbackWrite::OnWrite, IQueueCallbackWrite::OnWrite, IQueueCallbackWrite interface, OnWrite method, OnWrite method, OnWrite method, IQueueCallbackWrite interface, umdf.iqueuecallbackwrite_onwrite, UMDFQueueObjectRef_77d33d9d-856e-4b3b-818d-37b0ad6889a7.xml, wdf.iqueuecallbackwrite_onwrite
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IQueueCallbackWrite.OnWrite
+title: IQueueCallbackWrite::OnWrite method
+author: windows-driver-content
+description: The OnWrite method is called to handle a write request when an application writes information to a device through the Microsoft Win32 WriteFile or WriteFileEx function.
+old-location: wdf\iqueuecallbackwrite_onwrite.htm
+old-project: wdf
+ms.assetid: a87a9976-f844-4e69-82d3-2d426e359763
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: IQueueCallbackWrite, OnWrite, wudfddi/IQueueCallbackWrite::OnWrite, IQueueCallbackWrite::OnWrite, IQueueCallbackWrite interface, OnWrite method, OnWrite method, OnWrite method, IQueueCallbackWrite interface, umdf.iqueuecallbackwrite_onwrite, UMDFQueueObjectRef_77d33d9d-856e-4b3b-818d-37b0ad6889a7.xml, wdf.iqueuecallbackwrite_onwrite
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Wudfddi.h
+apiname:
+-	IQueueCallbackWrite.OnWrite
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

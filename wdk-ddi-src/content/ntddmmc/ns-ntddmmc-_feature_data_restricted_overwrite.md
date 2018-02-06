@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddmmc._FEATURE_DATA_RESTRICTED_OVERWRITE
-title : "_FEATURE_DATA_RESTRICTED_OVERWRITE"
-author : windows-driver-content
-description : The FEATURE_DATA_RESTRICTED_OVERWRITE structure holds information about the Restricted Overwrite feature.
-old-location : storage\feature_data_restricted_overwrite.htm
-old-project : storage
-ms.assetid : d9f3e892-1ed5-4030-a656-7d2d294b1c82
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : structs-CD-ROM_d2d9725b-16c9-4361-a2fc-90bdc2d7905c.xml, PFEATURE_DATA_RESTRICTED_OVERWRITE, _FEATURE_DATA_RESTRICTED_OVERWRITE, ntddmmc/PFEATURE_DATA_RESTRICTED_OVERWRITE, storage.feature_data_restricted_overwrite, FEATURE_DATA_RESTRICTED_OVERWRITE, PFEATURE_DATA_RESTRICTED_OVERWRITE structure pointer [Storage Devices], *PFEATURE_DATA_RESTRICTED_OVERWRITE, FEATURE_DATA_RESTRICTED_OVERWRITE structure [Storage Devices], ntddmmc/FEATURE_DATA_RESTRICTED_OVERWRITE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddmmc.h
-req.include-header : Ntddcdrm.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PFEATURE_DATA_RESTRICTED_OVERWRITE, FEATURE_DATA_RESTRICTED_OVERWRITE"
+UID: NS:ntddmmc._FEATURE_DATA_RESTRICTED_OVERWRITE
+title: "_FEATURE_DATA_RESTRICTED_OVERWRITE"
+author: windows-driver-content
+description: The FEATURE_DATA_RESTRICTED_OVERWRITE structure holds information about the Restricted Overwrite feature.
+old-location: storage\feature_data_restricted_overwrite.htm
+old-project: storage
+ms.assetid: d9f3e892-1ed5-4030-a656-7d2d294b1c82
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: structs-CD-ROM_d2d9725b-16c9-4361-a2fc-90bdc2d7905c.xml, PFEATURE_DATA_RESTRICTED_OVERWRITE, _FEATURE_DATA_RESTRICTED_OVERWRITE, ntddmmc/PFEATURE_DATA_RESTRICTED_OVERWRITE, storage.feature_data_restricted_overwrite, FEATURE_DATA_RESTRICTED_OVERWRITE, PFEATURE_DATA_RESTRICTED_OVERWRITE structure pointer [Storage Devices], *PFEATURE_DATA_RESTRICTED_OVERWRITE, FEATURE_DATA_RESTRICTED_OVERWRITE structure [Storage Devices], ntddmmc/FEATURE_DATA_RESTRICTED_OVERWRITE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddmmc.h
+req.include-header: Ntddcdrm.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddmmc.h
+apiname:
+-	FEATURE_DATA_RESTRICTED_OVERWRITE
+product: Windows
+targetos: Windows
+req.typenames: "*PFEATURE_DATA_RESTRICTED_OVERWRITE, FEATURE_DATA_RESTRICTED_OVERWRITE"
 ---
 
 # _FEATURE_DATA_RESTRICTED_OVERWRITE structure

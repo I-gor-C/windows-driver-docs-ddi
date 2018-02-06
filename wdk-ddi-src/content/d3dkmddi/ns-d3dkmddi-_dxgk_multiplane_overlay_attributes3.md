@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES3
-title : "_DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES3"
-author : windows-driver-content
-description : A structure containing the attributes used for the image in a multiplane overlay.
-old-location : display\dxgk_multiplane_overlay_attributes3.htm
-old-project : display
-ms.assetid : 0491AF42-53DF-4538-BE8A-AA5AA7B2C65E
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3dkmddi/DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES3, DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES3 structure [Display Devices], _DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES3, display.dxgk_multiplane_overlay_attributes3, DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES3
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES3
+UID: NS:d3dkmddi._DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES3
+title: "_DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES3"
+author: windows-driver-content
+description: A structure containing the attributes used for the image in a multiplane overlay.
+old-location: display\dxgk_multiplane_overlay_attributes3.htm
+old-project: display
+ms.assetid: 0491AF42-53DF-4538-BE8A-AA5AA7B2C65E
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3dkmddi/DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES3, DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES3 structure [Display Devices], _DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES3, display.dxgk_multiplane_overlay_attributes3, DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES3
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES3
+product: Windows
+targetos: Windows
+req.typenames: DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES3
 ---
 
 # _DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES3 structure

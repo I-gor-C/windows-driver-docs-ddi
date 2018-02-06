@@ -1,41 +1,46 @@
 ---
-UID : NF:ntddk.KeBugCheck
-title : KeBugCheck function
-author : windows-driver-content
-description : The KeBugCheck routine brings down the system in a controlled manner when the caller discovers an unrecoverable inconsistency that would corrupt the system if the caller continued to run.
-old-location : kernel\kebugcheck.htm
-old-project : kernel
-ms.assetid : 46337a5f-dc8a-42bc-a618-0d1440270f91
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ntddk/KeBugCheck, k105_0d6fece0-a301-44af-92b4-0ff735195c2b.xml, kernel.kebugcheck, KeBugCheck, KeBugCheck routine [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.KeBugCheck
+title: KeBugCheck function
+author: windows-driver-content
+description: The KeBugCheck routine brings down the system in a controlled manner when the caller discovers an unrecoverable inconsistency that would corrupt the system if the caller continued to run.
+old-location: kernel\kebugcheck.htm
+old-project: kernel
+ms.assetid: 46337a5f-dc8a-42bc-a618-0d1440270f91
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ntddk/KeBugCheck, k105_0d6fece0-a301-44af-92b4-0ff735195c2b.xml, kernel.kebugcheck, KeBugCheck, KeBugCheck routine [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	KeBugCheck
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

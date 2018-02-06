@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugControl3.OutputStackTrace
-title : IDebugControl3::OutputStackTrace method
-author : windows-driver-content
-description : The OutputStackTrace method outputs either the supplied stack frame or the current stack frames.
-old-location : debugger\outputstacktrace.htm
-old-project : debugger
-ms.assetid : 207f289c-347c-4ae7-9bbd-7c4a04d19e24
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : debugger.outputstacktrace, IDebugControl interface [Windows Debugging], OutputStackTrace method, dbgeng/IDebugControl::OutputStackTrace, OutputStackTrace method [Windows Debugging], IDebugControl2 interface, IDebugControl2 interface [Windows Debugging], OutputStackTrace method, dbgeng/IDebugControl2::OutputStackTrace, IDebugControl_07d53535-7d91-4771-84b1-f4ac4895a158.xml, OutputStackTrace method [Windows Debugging], IDebugControl3 interface, OutputStackTrace method [Windows Debugging], dbgeng/IDebugControl3::OutputStackTrace, IDebugControl3, IDebugControl::OutputStackTrace, OutputStackTrace method [Windows Debugging], IDebugControl interface, IDebugControl2::OutputStackTrace, IDebugControl3::OutputStackTrace, IDebugControl3 interface [Windows Debugging], OutputStackTrace method, OutputStackTrace
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl3.OutputStackTrace
+title: IDebugControl3::OutputStackTrace method
+author: windows-driver-content
+description: The OutputStackTrace method outputs either the supplied stack frame or the current stack frames.
+old-location: debugger\outputstacktrace.htm
+old-project: debugger
+ms.assetid: 207f289c-347c-4ae7-9bbd-7c4a04d19e24
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: debugger.outputstacktrace, IDebugControl interface [Windows Debugging], OutputStackTrace method, dbgeng/IDebugControl::OutputStackTrace, OutputStackTrace method [Windows Debugging], IDebugControl2 interface, IDebugControl2 interface [Windows Debugging], OutputStackTrace method, dbgeng/IDebugControl2::OutputStackTrace, IDebugControl_07d53535-7d91-4771-84b1-f4ac4895a158.xml, OutputStackTrace method [Windows Debugging], IDebugControl3 interface, OutputStackTrace method [Windows Debugging], dbgeng/IDebugControl3::OutputStackTrace, IDebugControl3, IDebugControl::OutputStackTrace, OutputStackTrace method [Windows Debugging], IDebugControl interface, IDebugControl2::OutputStackTrace, IDebugControl3::OutputStackTrace, IDebugControl3 interface [Windows Debugging], OutputStackTrace method, OutputStackTrace
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl.OutputStackTrace
+-	IDebugControl2.OutputStackTrace
+-	IDebugControl3.OutputStackTrace
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

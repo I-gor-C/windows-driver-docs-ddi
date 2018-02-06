@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmthk._D3DKMT_OPENNTHANDLEFROMNAME
-title : "_D3DKMT_OPENNTHANDLEFROMNAME"
-author : windows-driver-content
-description : Describes information that is required to open an NT handle to the process from a graphics adapter name.
-old-location : display\d3dkmt_opennthandlefromname.htm
-old-project : display
-ms.assetid : 34f70519-7905-4a16-bd07-db3592b05890
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.d3dkmt_opennthandlefromname, d3dkmthk/D3DKMT_OPENNTHANDLEFROMNAME, _D3DKMT_OPENNTHANDLEFROMNAME, D3DKMT_OPENNTHANDLEFROMNAME structure [Display Devices], D3DKMT_OPENNTHANDLEFROMNAME
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_OPENNTHANDLEFROMNAME
+UID: NS:d3dkmthk._D3DKMT_OPENNTHANDLEFROMNAME
+title: "_D3DKMT_OPENNTHANDLEFROMNAME"
+author: windows-driver-content
+description: Describes information that is required to open an NT handle to the process from a graphics adapter name.
+old-location: display\d3dkmt_opennthandlefromname.htm
+old-project: display
+ms.assetid: 34f70519-7905-4a16-bd07-db3592b05890
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.d3dkmt_opennthandlefromname, d3dkmthk/D3DKMT_OPENNTHANDLEFROMNAME, _D3DKMT_OPENNTHANDLEFROMNAME, D3DKMT_OPENNTHANDLEFROMNAME structure [Display Devices], D3DKMT_OPENNTHANDLEFROMNAME
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	D3dkmthk.h
+apiname:
+-	D3DKMT_OPENNTHANDLEFROMNAME
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_OPENNTHANDLEFROMNAME
 ---
 
 # _D3DKMT_OPENNTHANDLEFROMNAME structure

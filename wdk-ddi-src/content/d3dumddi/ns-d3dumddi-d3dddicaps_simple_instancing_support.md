@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi.D3DDDICAPS_SIMPLE_INSTANCING_SUPPORT
-title : D3DDDICAPS_SIMPLE_INSTANCING_SUPPORT
-author : windows-driver-content
-description : Describes whether simple instancing is supported.
-old-location : display\d3dddicaps_simple_instancing_support.htm
-old-project : display
-ms.assetid : CF75EBC8-D756-49B5-BC1F-1DBE8DC04137
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3dumddi/D3DDDICAPS_SIMPLE_INSTANCING_SUPPORT, display.d3dddicaps_simple_instancing_support, D3DDDICAPS_SIMPLE_INSTANCING_SUPPORT, D3DDDICAPS_SIMPLE_INSTANCING_SUPPORT structure [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8.1
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDICAPS_SIMPLE_INSTANCING_SUPPORT
+UID: NS:d3dumddi.D3DDDICAPS_SIMPLE_INSTANCING_SUPPORT
+title: D3DDDICAPS_SIMPLE_INSTANCING_SUPPORT
+author: windows-driver-content
+description: Describes whether simple instancing is supported.
+old-location: display\d3dddicaps_simple_instancing_support.htm
+old-project: display
+ms.assetid: CF75EBC8-D756-49B5-BC1F-1DBE8DC04137
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3dumddi/D3DDDICAPS_SIMPLE_INSTANCING_SUPPORT, display.d3dddicaps_simple_instancing_support, D3DDDICAPS_SIMPLE_INSTANCING_SUPPORT, D3DDDICAPS_SIMPLE_INSTANCING_SUPPORT structure [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8.1
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	D3dumddi.h
+apiname:
+-	D3DDDICAPS_SIMPLE_INSTANCING_SUPPORT
+product: Windows
+targetos: Windows
+req.typenames: D3DDDICAPS_SIMPLE_INSTANCING_SUPPORT
 ---
 
 # D3DDDICAPS_SIMPLE_INSTANCING_SUPPORT structure

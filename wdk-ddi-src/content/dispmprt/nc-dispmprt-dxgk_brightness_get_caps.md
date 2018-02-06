@@ -1,41 +1,46 @@
 ---
-UID : NC:dispmprt.DXGK_BRIGHTNESS_GET_CAPS
-title : DXGK_BRIGHTNESS_GET_CAPS
-author : windows-driver-content
-description : Retrieves brightness control capabilities of an integrated display panel.
-old-location : display\dxgkddigetbrightnesscaps.htm
-old-project : display
-ms.assetid : 3418dd2b-63cb-411f-9bae-390148885907
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkddigetbrightnesscaps, DxgkDdiGetBrightnessCaps callback function [Display Devices], DxgkDdiGetBrightnessCaps, DXGK_BRIGHTNESS_GET_CAPS, DXGK_BRIGHTNESS_GET_CAPS, dispmprt/DxgkDdiGetBrightnessCaps
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : dispmprt.h
-req.include-header : Dispmprt.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
+UID: NC:dispmprt.DXGK_BRIGHTNESS_GET_CAPS
+title: DXGK_BRIGHTNESS_GET_CAPS
+author: windows-driver-content
+description: Retrieves brightness control capabilities of an integrated display panel.
+old-location: display\dxgkddigetbrightnesscaps.htm
+old-project: display
+ms.assetid: 3418dd2b-63cb-411f-9bae-390148885907
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkddigetbrightnesscaps, DxgkDdiGetBrightnessCaps callback function [Display Devices], DxgkDdiGetBrightnessCaps, DXGK_BRIGHTNESS_GET_CAPS, DXGK_BRIGHTNESS_GET_CAPS, dispmprt/DxgkDdiGetBrightnessCaps
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: dispmprt.h
+req.include-header: Dispmprt.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Dispmprt.h
+apiname:
+-	DxgkDdiGetBrightnessCaps
+product: Windows
+targetos: Windows
+req.typenames: SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ---
 
 

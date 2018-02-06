@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFInterrupt.GetDevice
-title : IWDFInterrupt::GetDevice method
-author : windows-driver-content
-description : The GetDevice method returns the framework device object interface for this interrupt object.
-old-location : wdf\iwdfinterrupt_getdevice.htm
-old-project : wdf
-ms.assetid : 71C4E02F-B58A-46BA-A6A7-133D6CAF2A85
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.iwdfinterrupt_getdevice, GetDevice method, IWDFInterrupt, IWDFInterrupt interface, GetDevice method, umdf.iwdfinterrupt_getdevice, IWDFInterrupt::GetDevice, wudfddi/IWDFInterrupt::GetDevice, GetDevice method, IWDFInterrupt interface, GetDevice
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.11
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFInterrupt.GetDevice
+title: IWDFInterrupt::GetDevice method
+author: windows-driver-content
+description: The GetDevice method returns the framework device object interface for this interrupt object.
+old-location: wdf\iwdfinterrupt_getdevice.htm
+old-project: wdf
+ms.assetid: 71C4E02F-B58A-46BA-A6A7-133D6CAF2A85
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.iwdfinterrupt_getdevice, GetDevice method, IWDFInterrupt, IWDFInterrupt interface, GetDevice method, umdf.iwdfinterrupt_getdevice, IWDFInterrupt::GetDevice, wudfddi/IWDFInterrupt::GetDevice, GetDevice method, IWDFInterrupt interface, GetDevice
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.11
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFInterrupt.GetDevice
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

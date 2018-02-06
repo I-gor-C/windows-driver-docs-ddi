@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dhal._D3DHAL_DP2SETINDICES
-title : "_D3DHAL_DP2SETINDICES"
-author : windows-driver-content
-description : DirectX 8.0 and later versions only. The D3DHAL_DP2SETINDICES structure is used to set the current index buffer for D3dDrawPrimitives2.
-old-location : display\d3dhal_dp2setindices.htm
-old-project : display
-ms.assetid : ac1b7daf-803d-48a0-89de-4a438f3837f9
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : LPD3DHAL_DP2SETINDICES structure pointer [Display Devices], *LPD3DHAL_DP2SETINDICES, D3DHAL_DP2SETINDICES, d3dstrct_fd1eb5e4-28c8-45f9-90ba-b57970888717.xml, _D3DHAL_DP2SETINDICES, display.d3dhal_dp2setindices, D3DHAL_DP2SETINDICES structure [Display Devices], LPD3DHAL_DP2SETINDICES, d3dhal/LPD3DHAL_DP2SETINDICES, d3dhal/D3DHAL_DP2SETINDICES
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dhal.h
-req.include-header : D3dhal.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DHAL_DP2SETINDICES
+UID: NS:d3dhal._D3DHAL_DP2SETINDICES
+title: "_D3DHAL_DP2SETINDICES"
+author: windows-driver-content
+description: DirectX 8.0 and later versions only. The D3DHAL_DP2SETINDICES structure is used to set the current index buffer for D3dDrawPrimitives2.
+old-location: display\d3dhal_dp2setindices.htm
+old-project: display
+ms.assetid: ac1b7daf-803d-48a0-89de-4a438f3837f9
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: LPD3DHAL_DP2SETINDICES structure pointer [Display Devices], *LPD3DHAL_DP2SETINDICES, D3DHAL_DP2SETINDICES, d3dstrct_fd1eb5e4-28c8-45f9-90ba-b57970888717.xml, _D3DHAL_DP2SETINDICES, display.d3dhal_dp2setindices, D3DHAL_DP2SETINDICES structure [Display Devices], LPD3DHAL_DP2SETINDICES, d3dhal/LPD3DHAL_DP2SETINDICES, d3dhal/D3DHAL_DP2SETINDICES
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dhal.h
+req.include-header: D3dhal.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dhal.h
+apiname:
+-	D3DHAL_DP2SETINDICES
+product: Windows
+targetos: Windows
+req.typenames: D3DHAL_DP2SETINDICES
 ---
 
 # _D3DHAL_DP2SETINDICES structure

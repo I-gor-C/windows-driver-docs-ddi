@@ -1,41 +1,46 @@
 ---
-UID : NC:dispmprt.DXGKCB_MIRACAST_REPORT_CHUNK_INFO
-title : DXGKCB_MIRACAST_REPORT_CHUNK_INFO
-author : windows-driver-content
-description : Called by the display miniport driver to report info about an encode chunk.
-old-location : display\dxgkcbreportchunkinfo.htm
-old-project : display
-ms.assetid : 94A99749-EF80-4593-B03C-54A7AA2BDFC8
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkcbreportchunkinfo, DxgkCbReportChunkInfo callback function [Display Devices], DxgkCbReportChunkInfo, DXGKCB_MIRACAST_REPORT_CHUNK_INFO, DXGKCB_MIRACAST_REPORT_CHUNK_INFO, dispmprt/DxgkCbReportChunkInfo
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : dispmprt.h
-req.include-header : Dispmprt.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8.1
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Can be called at any IRQL level.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
+UID: NC:dispmprt.DXGKCB_MIRACAST_REPORT_CHUNK_INFO
+title: DXGKCB_MIRACAST_REPORT_CHUNK_INFO
+author: windows-driver-content
+description: Called by the display miniport driver to report info about an encode chunk.
+old-location: display\dxgkcbreportchunkinfo.htm
+old-project: display
+ms.assetid: 94A99749-EF80-4593-B03C-54A7AA2BDFC8
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkcbreportchunkinfo, DxgkCbReportChunkInfo callback function [Display Devices], DxgkCbReportChunkInfo, DXGKCB_MIRACAST_REPORT_CHUNK_INFO, DXGKCB_MIRACAST_REPORT_CHUNK_INFO, dispmprt/DxgkCbReportChunkInfo
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: dispmprt.h
+req.include-header: Dispmprt.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8.1
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Can be called at any IRQL level.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Dispmprt.h
+apiname:
+-	DxgkCbReportChunkInfo
+product: Windows
+targetos: Windows
+req.typenames: SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ---
 
 

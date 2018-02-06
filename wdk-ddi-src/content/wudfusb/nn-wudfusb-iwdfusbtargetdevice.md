@@ -1,42 +1,47 @@
 ---
-UID : NN:wudfusb.IWDFUsbTargetDevice
-title : IWDFUsbTargetDevice
-author : windows-driver-content
-description : The IWDFUsbTargetDevice interface exposes a USB device I/O target object.
-old-location : wdf\iwdfusbtargetdevice.htm
-old-project : wdf
-ms.assetid : 627a4633-6857-43a5-af2d-36e4e554ca83
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.iwdfusbtargetdevice, IWDFUsbTargetDevice interface, IWDFUsbTargetDevice interface, described, IWDFUsbTargetDevice, wudfusb/IWDFUsbTargetDevice, UMDFUSBref_4ff51830-55c1-4e2c-b095-8ca88bd2e56f.xml, umdf.iwdfusbtargetdevice
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : wudfusb.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.5
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfusb.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
-req.product : Windows 10 or later.
+UID: NN:wudfusb.IWDFUsbTargetDevice
+title: IWDFUsbTargetDevice
+author: windows-driver-content
+description: The IWDFUsbTargetDevice interface exposes a USB device I/O target object.
+old-location: wdf\iwdfusbtargetdevice.htm
+old-project: wdf
+ms.assetid: 627a4633-6857-43a5-af2d-36e4e554ca83
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.iwdfusbtargetdevice, IWDFUsbTargetDevice interface, IWDFUsbTargetDevice interface, described, IWDFUsbTargetDevice, wudfusb/IWDFUsbTargetDevice, UMDFUSBref_4ff51830-55c1-4e2c-b095-8ca88bd2e56f.xml, umdf.iwdfusbtargetdevice
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: wudfusb.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.5
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfusb.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFUsbTargetDevice
+product: Windows
+targetos: Windows
+req.typenames: WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
+req.product: Windows 10 or later.
 ---
 
 # IWDFUsbTargetDevice interface

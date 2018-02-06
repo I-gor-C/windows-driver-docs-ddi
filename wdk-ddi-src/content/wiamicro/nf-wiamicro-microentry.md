@@ -1,42 +1,47 @@
 ---
-UID : NF:wiamicro.MicroEntry
-title : MicroEntry function
-author : windows-driver-content
-description : The MicroEntry function responds to commands sent by the WIA Flatbed driver.
-old-location : image\microentry.htm
-old-project : image
-ms.assetid : 3e0c51af-ceb9-4c06-ab6a-ccc468997fdd
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : MicroEntry function [Imaging Devices], MicroEntry, MicroDrv_04aa15b3-5e4d-453d-b41a-a4de3c1228f7.xml, wiamicro/MicroEntry, image.microentry
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wiamicro.h
-req.include-header : Wiamicro.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Me and in Windows XP and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*LPDEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2, DEVICEDIALOGDATA2"
-req.product : Windows 10 or later.
+UID: NF:wiamicro.MicroEntry
+title: MicroEntry function
+author: windows-driver-content
+description: The MicroEntry function responds to commands sent by the WIA Flatbed driver.
+old-location: image\microentry.htm
+old-project: image
+ms.assetid: 3e0c51af-ceb9-4c06-ab6a-ccc468997fdd
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: MicroEntry function [Imaging Devices], MicroEntry, MicroDrv_04aa15b3-5e4d-453d-b41a-a4de3c1228f7.xml, wiamicro/MicroEntry, image.microentry
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wiamicro.h
+req.include-header: Wiamicro.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Me and in Windows XP and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wiamicro.h
+apiname:
+-	MicroEntry
+product: Windows
+targetos: Windows
+req.typenames: "*LPDEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2, DEVICEDIALOGDATA2"
+req.product: Windows 10 or later.
 ---
 
 

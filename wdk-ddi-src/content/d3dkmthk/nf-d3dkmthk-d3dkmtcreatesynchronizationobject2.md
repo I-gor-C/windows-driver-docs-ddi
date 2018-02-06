@@ -1,41 +1,49 @@
 ---
-UID : NF:d3dkmthk.D3DKMTCreateSynchronizationObject2
-title : D3DKMTCreateSynchronizationObject2 function
-author : windows-driver-content
-description : The D3DKMTCreateSynchronizationObject2 function creates a kernel-mode synchronization object.
-old-location : display\d3dkmtcreatesynchronizationobject2.htm
-old-project : display
-ms.assetid : 45849844-a466-4e62-957a-bfe33a464b5a
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DKMTCreateSynchronizationObject2, D3DKMTCreateSynchronizationObject2 function [Display Devices], display.d3dkmtcreatesynchronizationobject2, OpenGL_Functions_ba9aa4a0-19e6-40d2-8a17-d22c8756c555.xml, d3dkmthk/D3DKMTCreateSynchronizationObject2
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Universal
-req.target-min-winverclnt : D3DKMTCreateSynchronizationObject2 is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Gdi32.lib
-req.dll : Gdi32.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_DRIVERVERSION
+UID: NF:d3dkmthk.D3DKMTCreateSynchronizationObject2
+title: D3DKMTCreateSynchronizationObject2 function
+author: windows-driver-content
+description: The D3DKMTCreateSynchronizationObject2 function creates a kernel-mode synchronization object.
+old-location: display\d3dkmtcreatesynchronizationobject2.htm
+old-project: display
+ms.assetid: 45849844-a466-4e62-957a-bfe33a464b5a
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DKMTCreateSynchronizationObject2, D3DKMTCreateSynchronizationObject2 function [Display Devices], display.d3dkmtcreatesynchronizationobject2, OpenGL_Functions_ba9aa4a0-19e6-40d2-8a17-d22c8756c555.xml, d3dkmthk/D3DKMTCreateSynchronizationObject2
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Universal
+req.target-min-winverclnt: D3DKMTCreateSynchronizationObject2 is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Gdi32.lib
+req.dll: Gdi32.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Gdi32.dll
+-	API-MS-Win-dx-d3dkmt-l1-1-0.dll
+-	API-MS-Win-dx-d3dkmt-l1-1-1.dll
+-	API-MS-Win-DX-D3DKMT-L1-1-2.dll
+apiname:
+-	D3DKMTCreateSynchronizationObject2
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_DRIVERVERSION
 ---
 
 

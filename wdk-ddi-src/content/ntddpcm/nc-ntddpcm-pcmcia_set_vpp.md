@@ -1,41 +1,46 @@
 ---
-UID : NC:ntddpcm.PCMCIA_SET_VPP
-title : PCMCIA_SET_VPP
-author : windows-driver-content
-description : The PCMCIA_SET_VPP interface routine sets the power level of the Vpp PCMCIA pin (secondary power source).
-old-location : pcmcia\pcmcia_set_vpp.htm
-old-project : PCMCIA
-ms.assetid : 63c34784-6ea5-49e5-8ee7-79b70e5137f7
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : PCMCIA.pcmcia_set_vpp, SetVpp callback function [Buses], SetVpp, PCMCIA_SET_VPP, PCMCIA_SET_VPP, ntddpcm/SetVpp, memcdref_fe05cf85-9e4b-4267-9214-b8809e42cd5a.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ntddpcm.h
-req.include-header : Ntddpcm.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL (See Remarks section.)"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PAR_SET_INFORMATION, *PPAR_SET_INFORMATION
+UID: NC:ntddpcm.PCMCIA_SET_VPP
+title: PCMCIA_SET_VPP
+author: windows-driver-content
+description: The PCMCIA_SET_VPP interface routine sets the power level of the Vpp PCMCIA pin (secondary power source).
+old-location: pcmcia\pcmcia_set_vpp.htm
+old-project: PCMCIA
+ms.assetid: 63c34784-6ea5-49e5-8ee7-79b70e5137f7
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: PCMCIA.pcmcia_set_vpp, SetVpp callback function [Buses], SetVpp, PCMCIA_SET_VPP, PCMCIA_SET_VPP, ntddpcm/SetVpp, memcdref_fe05cf85-9e4b-4267-9214-b8809e42cd5a.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ntddpcm.h
+req.include-header: Ntddpcm.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL (See Remarks section.)"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	ntddpcm.h
+apiname:
+-	SetVpp
+product: Windows
+targetos: Windows
+req.typenames: PAR_SET_INFORMATION, *PPAR_SET_INFORMATION
 ---
 
 

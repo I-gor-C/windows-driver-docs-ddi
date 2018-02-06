@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_DXVAHD_VIDEOPROCESSBLTHD
-title : PFND3DDDI_DXVAHD_VIDEOPROCESSBLTHD
-author : windows-driver-content
-description : The VideoProcessBltHD function processes video input streams and composes to an output surface.
-old-location : display\videoprocessblthd.htm
-old-project : display
-ms.assetid : 62451fc4-92cc-4553-80cc-0843cf734a62
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.videoprocessblthd, VideoProcessBltHD callback function [Display Devices], VideoProcessBltHD, PFND3DDDI_DXVAHD_VIDEOPROCESSBLTHD, PFND3DDDI_DXVAHD_VIDEOPROCESSBLTHD, d3dumddi/VideoProcessBltHD, UserModeDisplayDriver_Functions_72b2babe-fc93-4960-93d3-6bc2022227c8.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : VideoProcessBltHD is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_DXVAHD_VIDEOPROCESSBLTHD
+title: PFND3DDDI_DXVAHD_VIDEOPROCESSBLTHD
+author: windows-driver-content
+description: The VideoProcessBltHD function processes video input streams and composes to an output surface.
+old-location: display\videoprocessblthd.htm
+old-project: display
+ms.assetid: 62451fc4-92cc-4553-80cc-0843cf734a62
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.videoprocessblthd, VideoProcessBltHD callback function [Display Devices], VideoProcessBltHD, PFND3DDDI_DXVAHD_VIDEOPROCESSBLTHD, PFND3DDDI_DXVAHD_VIDEOPROCESSBLTHD, d3dumddi/VideoProcessBltHD, UserModeDisplayDriver_Functions_72b2babe-fc93-4960-93d3-6bc2022227c8.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: VideoProcessBltHD is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	VideoProcessBltHD
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltGetStreamHandleContext
-title : FltGetStreamHandleContext function
-author : windows-driver-content
-description : The FltGetStreamHandleContext routine retrieves a context that was set for a stream handle by a given minifilter driver instance.
-old-location : ifsk\fltgetstreamhandlecontext.htm
-old-project : ifsk
-ms.assetid : c6e7c0d8-8005-4a40-a13b-ee58feeabbf0
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltGetStreamHandleContext routine [Installable File System Drivers], FltApiRef_e_to_o_4a329c48-3a48-47bc-b998-3aaee454fbef.xml, ifsk.fltgetstreamhandlecontext, FltGetStreamHandleContext, fltkernel/FltGetStreamHandleContext
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltGetStreamHandleContext
+title: FltGetStreamHandleContext function
+author: windows-driver-content
+description: The FltGetStreamHandleContext routine retrieves a context that was set for a stream handle by a given minifilter driver instance.
+old-location: ifsk\fltgetstreamhandlecontext.htm
+old-project: ifsk
+ms.assetid: c6e7c0d8-8005-4a40-a13b-ee58feeabbf0
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltGetStreamHandleContext routine [Installable File System Drivers], FltApiRef_e_to_o_4a329c48-3a48-47bc-b998-3aaee454fbef.xml, ifsk.fltgetstreamhandlecontext, FltGetStreamHandleContext, fltkernel/FltGetStreamHandleContext
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltGetStreamHandleContext
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

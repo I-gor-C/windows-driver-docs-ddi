@@ -1,12 +1,12 @@
 ---
-UID : NA:wdfpdo
-ms.assetid : ac342a18-24b7-36b8-9447-8ee711b42a24
-ms.author : windowsdriverdev
-ms.date : 01/18/18
-ms.keywords : 
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : portal
+UID: NA:wdfpdo
+ms.assetid: ac342a18-24b7-36b8-9447-8ee711b42a24
+ms.author: windowsdriverdev
+ms.date: 01/18/18
+ms.keywords: 
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: portal
 ---
 
 # wdfpdo.h header

@@ -1,41 +1,46 @@
 ---
-UID : NF:ntddk.PsFreeSiloContextSlot
-title : PsFreeSiloContextSlot function
-author : windows-driver-content
-description : This routine frees the specified slot and makes it available in the system. It undoes the effects of the PsAllocSiloContextSlot routine.
-old-location : kernel\psfreesilocontextslot.htm
-old-project : kernel
-ms.assetid : 659B92A6-8582-468F-8CDD-119832A95230
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.psfreesilocontextslot, PsFreeSiloContextSlot, PsFreeSiloContextSlot routine [Kernel-Mode Driver Architecture], ntddk/PsFreeSiloContextSlot
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntddk.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10, version 1607
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.PsFreeSiloContextSlot
+title: PsFreeSiloContextSlot function
+author: windows-driver-content
+description: This routine frees the specified slot and makes it available in the system. It undoes the effects of the PsAllocSiloContextSlot routine.
+old-location: kernel\psfreesilocontextslot.htm
+old-project: kernel
+ms.assetid: 659B92A6-8582-468F-8CDD-119832A95230
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.psfreesilocontextslot, PsFreeSiloContextSlot, PsFreeSiloContextSlot routine [Kernel-Mode Driver Architecture], ntddk/PsFreeSiloContextSlot
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntddk.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10, version 1607
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddk.h
+apiname:
+-	PsFreeSiloContextSlot
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

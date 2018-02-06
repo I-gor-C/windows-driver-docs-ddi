@@ -1,41 +1,46 @@
 ---
-UID : NE:fwpsk.FWPS_FIELDS_IPFORWARD_V4_
-title : FWPS_FIELDS_IPFORWARD_V4_
-author : windows-driver-content
-description : The FWPS_FIELDS_IPFORWARD_V4 enumeration type specifies the data field identifiers for the FWPS_LAYER_IPFORWARD_V4 and FWPS_LAYER_IPFORWARD_V4_DISCARD run-time filtering layers.
-old-location : netvista\fwps_fields_ipforward_v4.htm
-old-project : netvista
-ms.assetid : af915976-2a2c-4cf4-a3e0-60ddea8e172c
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : FWPS_FIELD_IPFORWARD_V4_FLAGS, FWPS_FIELD_IPFORWARD_V4_DESTINATION_SUB_INTERFACE_INDEX, fwpsk/FWPS_FIELD_IPFORWARD_V4_NEXTHOP_INTERFACE_PROFILE_ID, fwpsk/FWPS_FIELD_IPFORWARD_V4_IP_LOCAL_INTERFACE, FWPS_FIELDS_IPFORWARD_V4 enumeration [Network Drivers Starting with Windows Vista], fwpsk/FWPS_FIELD_IPFORWARD_V4_IP_FORWARD_INTERFACE, wfp_ref_5_const_3_data_fields_cff20018-8ff1-43dc-937d-92a1a91137e3.xml, FWPS_FIELD_IPFORWARD_V4_IP_PHYSICAL_NEXTHOP_INTERFACE, FWPS_FIELDS_IPFORWARD_V4, FWPS_FIELD_IPFORWARD_V4_ARRIVAL_INTERFACE_PROFILE_ID, fwpsk/FWPS_FIELD_IPFORWARD_V4_IP_SOURCE_ADDRESS, fwpsk/FWPS_FIELD_IPFORWARD_V4_MAX, fwpsk/FWPS_FIELD_IPFORWARD_V4_IP_PHYSICAL_ARRIVAL_INTERFACE, fwpsk/FWPS_FIELD_IPFORWARD_V4_DESTINATION_SUB_INTERFACE_INDEX, FWPS_FIELD_IPFORWARD_V4_IP_DESTINATION_ADDRESS, fwpsk/FWPS_FIELD_IPFORWARD_V4_SOURCE_INTERFACE_INDEX, FWPS_FIELD_IPFORWARD_V4_IP_PHYSICAL_ARRIVAL_INTERFACE, fwpsk/FWPS_FIELD_IPFORWARD_V4_ARRIVAL_INTERFACE_PROFILE_ID, fwpsk/FWPS_FIELD_IPFORWARD_V4_IP_DESTINATION_ADDRESS, fwpsk/FWPS_FIELDS_IPFORWARD_V4, FWPS_FIELD_IPFORWARD_V4_MAX, fwpsk/FWPS_FIELD_IPFORWARD_V4_DESTINATION_INTERFACE_INDEX, fwpsk/FWPS_FIELD_IPFORWARD_V4_IP_DESTINATION_ADDRESS_TYPE, fwpsk/FWPS_FIELD_IPFORWARD_V4_IP_PHYSICAL_NEXTHOP_INTERFACE, FWPS_FIELD_IPFORWARD_V4_DESTINATION_INTERFACE_INDEX, FWPS_FIELD_IPFORWARD_V4_NEXTHOP_INTERFACE_PROFILE_ID, fwpsk/FWPS_FIELD_IPFORWARD_V4_FLAGS, FWPS_FIELD_IPFORWARD_V4_IP_FORWARD_INTERFACE, FWPS_FIELD_IPFORWARD_V4_IP_DESTINATION_ADDRESS_TYPE, FWPS_FIELD_IPFORWARD_V4_IP_LOCAL_INTERFACE, FWPS_FIELD_IPFORWARD_V4_SOURCE_INTERFACE_INDEX, FWPS_FIELD_IPFORWARD_V4_SOURCE_SUB_INTERFACE_INDEX, FWPS_FIELDS_IPFORWARD_V4_, netvista.fwps_fields_ipforward_v4, fwpsk/FWPS_FIELD_IPFORWARD_V4_SOURCE_SUB_INTERFACE_INDEX, FWPS_FIELD_IPFORWARD_V4_IP_SOURCE_ADDRESS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : fwpsk.h
-req.include-header : Fwpsk.h
-req.target-type : Windows
-req.target-min-winverclnt : Unless otherwise noted, supported starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FWPS_FIELDS_IPFORWARD_V4
+UID: NE:fwpsk.FWPS_FIELDS_IPFORWARD_V4_
+title: FWPS_FIELDS_IPFORWARD_V4_
+author: windows-driver-content
+description: The FWPS_FIELDS_IPFORWARD_V4 enumeration type specifies the data field identifiers for the FWPS_LAYER_IPFORWARD_V4 and FWPS_LAYER_IPFORWARD_V4_DISCARD run-time filtering layers.
+old-location: netvista\fwps_fields_ipforward_v4.htm
+old-project: netvista
+ms.assetid: af915976-2a2c-4cf4-a3e0-60ddea8e172c
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: FWPS_FIELD_IPFORWARD_V4_FLAGS, FWPS_FIELD_IPFORWARD_V4_DESTINATION_SUB_INTERFACE_INDEX, fwpsk/FWPS_FIELD_IPFORWARD_V4_NEXTHOP_INTERFACE_PROFILE_ID, fwpsk/FWPS_FIELD_IPFORWARD_V4_IP_LOCAL_INTERFACE, FWPS_FIELDS_IPFORWARD_V4 enumeration [Network Drivers Starting with Windows Vista], fwpsk/FWPS_FIELD_IPFORWARD_V4_IP_FORWARD_INTERFACE, wfp_ref_5_const_3_data_fields_cff20018-8ff1-43dc-937d-92a1a91137e3.xml, FWPS_FIELD_IPFORWARD_V4_IP_PHYSICAL_NEXTHOP_INTERFACE, FWPS_FIELDS_IPFORWARD_V4, FWPS_FIELD_IPFORWARD_V4_ARRIVAL_INTERFACE_PROFILE_ID, fwpsk/FWPS_FIELD_IPFORWARD_V4_IP_SOURCE_ADDRESS, fwpsk/FWPS_FIELD_IPFORWARD_V4_MAX, fwpsk/FWPS_FIELD_IPFORWARD_V4_IP_PHYSICAL_ARRIVAL_INTERFACE, fwpsk/FWPS_FIELD_IPFORWARD_V4_DESTINATION_SUB_INTERFACE_INDEX, FWPS_FIELD_IPFORWARD_V4_IP_DESTINATION_ADDRESS, fwpsk/FWPS_FIELD_IPFORWARD_V4_SOURCE_INTERFACE_INDEX, FWPS_FIELD_IPFORWARD_V4_IP_PHYSICAL_ARRIVAL_INTERFACE, fwpsk/FWPS_FIELD_IPFORWARD_V4_ARRIVAL_INTERFACE_PROFILE_ID, fwpsk/FWPS_FIELD_IPFORWARD_V4_IP_DESTINATION_ADDRESS, fwpsk/FWPS_FIELDS_IPFORWARD_V4, FWPS_FIELD_IPFORWARD_V4_MAX, fwpsk/FWPS_FIELD_IPFORWARD_V4_DESTINATION_INTERFACE_INDEX, fwpsk/FWPS_FIELD_IPFORWARD_V4_IP_DESTINATION_ADDRESS_TYPE, fwpsk/FWPS_FIELD_IPFORWARD_V4_IP_PHYSICAL_NEXTHOP_INTERFACE, FWPS_FIELD_IPFORWARD_V4_DESTINATION_INTERFACE_INDEX, FWPS_FIELD_IPFORWARD_V4_NEXTHOP_INTERFACE_PROFILE_ID, fwpsk/FWPS_FIELD_IPFORWARD_V4_FLAGS, FWPS_FIELD_IPFORWARD_V4_IP_FORWARD_INTERFACE, FWPS_FIELD_IPFORWARD_V4_IP_DESTINATION_ADDRESS_TYPE, FWPS_FIELD_IPFORWARD_V4_IP_LOCAL_INTERFACE, FWPS_FIELD_IPFORWARD_V4_SOURCE_INTERFACE_INDEX, FWPS_FIELD_IPFORWARD_V4_SOURCE_SUB_INTERFACE_INDEX, FWPS_FIELDS_IPFORWARD_V4_, netvista.fwps_fields_ipforward_v4, fwpsk/FWPS_FIELD_IPFORWARD_V4_SOURCE_SUB_INTERFACE_INDEX, FWPS_FIELD_IPFORWARD_V4_IP_SOURCE_ADDRESS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: fwpsk.h
+req.include-header: Fwpsk.h
+req.target-type: Windows
+req.target-min-winverclnt: Unless otherwise noted, supported starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	fwpsk.h
+apiname:
+-	FWPS_FIELDS_IPFORWARD_V4
+product: Windows
+targetos: Windows
+req.typenames: FWPS_FIELDS_IPFORWARD_V4
 ---
 
 # FWPS_FIELDS_IPFORWARD_V4_ Enumeration
@@ -69,105 +74,105 @@ typedef enum FWPS_FIELDS_IPFORWARD_V4_ {
 ## Constants
 
 <table>
-
-<tr>
-<td>FWPS_FIELD_IPFORWARD_V4_ARRIVAL_INTERFACE_PROFILE_ID</td>
-<td>The profile identifier (network category) of the arrival interface. The possible network category
+            
+                <tr>
+                    <td>FWPS_FIELD_IPFORWARD_V4_ARRIVAL_INTERFACE_PROFILE_ID</td>
+                    <td>The profile identifier (network category) of the arrival interface. The possible network category
      values are: public (1), private (2), or domain (3).
      
 <div class="alert"><b>Note</b>  Supported starting with Windows 7.</div><div> </div></td>
-</tr>
-
-<tr>
-<td>FWPS_FIELD_IPFORWARD_V4_COMPARTMENT_ID</td>
-<td></td>
-</tr>
-
-<tr>
-<td>FWPS_FIELD_IPFORWARD_V4_DESTINATION_INTERFACE_INDEX</td>
-<td>The index of the destination network interface, as enumerated by the network stack.</td>
-</tr>
-
-<tr>
-<td>FWPS_FIELD_IPFORWARD_V4_DESTINATION_SUB_INTERFACE_INDEX</td>
-<td>The index of the destination logical network interface, as enumerated by the network stack.</td>
-</tr>
-
-<tr>
-<td>FWPS_FIELD_IPFORWARD_V4_FLAGS</td>
-<td>A bitwise OR of a combination of filtering condition flags. For information about the possible
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_IPFORWARD_V4_COMPARTMENT_ID</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_IPFORWARD_V4_DESTINATION_INTERFACE_INDEX</td>
+                    <td>The index of the destination network interface, as enumerated by the network stack.</td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_IPFORWARD_V4_DESTINATION_SUB_INTERFACE_INDEX</td>
+                    <td>The index of the destination logical network interface, as enumerated by the network stack.</td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_IPFORWARD_V4_FLAGS</td>
+                    <td>A bitwise OR of a combination of filtering condition flags. For information about the possible
      flags, see 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff549942">Filtering Condition Flags</a>.</td>
-</tr>
-
-<tr>
-<td>FWPS_FIELD_IPFORWARD_V4_IP_DESTINATION_ADDRESS</td>
-<td>The destination IP address.</td>
-</tr>
-
-<tr>
-<td>FWPS_FIELD_IPFORWARD_V4_IP_DESTINATION_ADDRESS_TYPE</td>
-<td>The destination IP address type. The possible values are defined by the 
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_IPFORWARD_V4_IP_DESTINATION_ADDRESS</td>
+                    <td>The destination IP address.</td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_IPFORWARD_V4_IP_DESTINATION_ADDRESS_TYPE</td>
+                    <td>The destination IP address type. The possible values are defined by the 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff568757">NL_ADDRESS_TYPE</a> enumeration.</td>
-</tr>
-
-<tr>
-<td>FWPS_FIELD_IPFORWARD_V4_IP_FORWARD_INTERFACE</td>
-<td>The LUID for the network interface on which the packet being forwarded is to be sent out.</td>
-</tr>
-
-<tr>
-<td>FWPS_FIELD_IPFORWARD_V4_IP_LOCAL_INTERFACE</td>
-<td>The locally unique identifier (<a href="..\igpupvdev\ns-igpupvdev-_luid.md">LUID</a>) for the network interface associated with the
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_IPFORWARD_V4_IP_FORWARD_INTERFACE</td>
+                    <td>The LUID for the network interface on which the packet being forwarded is to be sent out.</td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_IPFORWARD_V4_IP_LOCAL_INTERFACE</td>
+                    <td>The locally unique identifier (<a href="..\igpupvdev\ns-igpupvdev-_luid.md">LUID</a>) for the network interface associated with the
      local IP address.</td>
-</tr>
-
-<tr>
-<td>FWPS_FIELD_IPFORWARD_V4_IP_PHYSICAL_ARRIVAL_INTERFACE</td>
-<td>The 
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_IPFORWARD_V4_IP_PHYSICAL_ARRIVAL_INTERFACE</td>
+                    <td>The 
      <a href="..\igpupvdev\ns-igpupvdev-_luid.md">LUID</a> for the physical network interface that the
      packet first arrived on.
      
 <div class="alert"><b>Note</b>  Supported starting with Windows 7.</div><div> </div></td>
-</tr>
-
-<tr>
-<td>FWPS_FIELD_IPFORWARD_V4_IP_PHYSICAL_NEXTHOP_INTERFACE</td>
-<td>The 
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_IPFORWARD_V4_IP_PHYSICAL_NEXTHOP_INTERFACE</td>
+                    <td>The 
      <a href="..\igpupvdev\ns-igpupvdev-_luid.md">LUID</a> for the physical network interface that will be
      used to continue forwarding of the outbound packet.
      
 <div class="alert"><b>Note</b>  Supported starting with Windows 7.</div><div> </div></td>
-</tr>
-
-<tr>
-<td>FWPS_FIELD_IPFORWARD_V4_IP_SOURCE_ADDRESS</td>
-<td>The source IP address.</td>
-</tr>
-
-<tr>
-<td>FWPS_FIELD_IPFORWARD_V4_MAX</td>
-<td>The maximum value for this enumeration. This value might change in future versions of the NDIS
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_IPFORWARD_V4_IP_SOURCE_ADDRESS</td>
+                    <td>The source IP address.</td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_IPFORWARD_V4_MAX</td>
+                    <td>The maximum value for this enumeration. This value might change in future versions of the NDIS
      header files and binaries.</td>
-</tr>
-
-<tr>
-<td>FWPS_FIELD_IPFORWARD_V4_NEXTHOP_INTERFACE_PROFILE_ID</td>
-<td>The profile identifier (network category) of the next-hop interface. The possible network category
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_IPFORWARD_V4_NEXTHOP_INTERFACE_PROFILE_ID</td>
+                    <td>The profile identifier (network category) of the next-hop interface. The possible network category
      values are: public (1), private (2), or domain (3).
      
 <div class="alert"><b>Note</b>  Supported starting with Windows 7.</div><div> </div></td>
-</tr>
-
-<tr>
-<td>FWPS_FIELD_IPFORWARD_V4_SOURCE_INTERFACE_INDEX</td>
-<td>The index of the source network interface, as enumerated by the network stack.</td>
-</tr>
-
-<tr>
-<td>FWPS_FIELD_IPFORWARD_V4_SOURCE_SUB_INTERFACE_INDEX</td>
-<td>The index of the source logical network interface, as enumerated by the network stack.</td>
-</tr>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_IPFORWARD_V4_SOURCE_INTERFACE_INDEX</td>
+                    <td>The index of the source network interface, as enumerated by the network stack.</td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_IPFORWARD_V4_SOURCE_SUB_INTERFACE_INDEX</td>
+                    <td>The index of the source logical network interface, as enumerated by the network stack.</td>
+                </tr>
 </table>
 
 
@@ -177,9 +182,9 @@ typedef enum FWPS_FIELDS_IPFORWARD_V4_ {
 | **Windows version** | Unless otherwise noted, supported starting with Windows Vista. Unless otherwise noted, supported starting with Windows Vista. |
 | **Header** | fwpsk.h (include Fwpsk.h) |
 
-## See Also
+    ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568757">NL_ADDRESS_TYPE</a>
+        <a href="https://msdn.microsoft.com/library/windows/hardware/ff568757">NL_ADDRESS_TYPE</a>
 
 <a href="..\igpupvdev\ns-igpupvdev-_luid.md">LUID</a>
 

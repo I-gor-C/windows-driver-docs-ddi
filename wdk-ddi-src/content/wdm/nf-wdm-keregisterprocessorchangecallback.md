@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.KeRegisterProcessorChangeCallback
-title : KeRegisterProcessorChangeCallback function
-author : windows-driver-content
-description : The KeRegisterProcessorChangeCallback routine registers a callback function with the operating system so that the operating system will notify the driver when a new processor is added to the hardware partition.
-old-location : kernel\keregisterprocessorchangecallback.htm
-old-project : kernel
-ms.assetid : a10d54a2-39e4-4c90-ac91-28d31b3ebfb8
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : KeRegisterProcessorChangeCallback routine [Kernel-Mode Driver Architecture], KeRegisterProcessorChangeCallback, wdm/KeRegisterProcessorChangeCallback, k105_794d8039-ab35-46e9-8a0d-a38c034f0263.xml, kernel.keregisterprocessorchangecallback
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Server 2008 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.KeRegisterProcessorChangeCallback
+title: KeRegisterProcessorChangeCallback function
+author: windows-driver-content
+description: The KeRegisterProcessorChangeCallback routine registers a callback function with the operating system so that the operating system will notify the driver when a new processor is added to the hardware partition.
+old-location: kernel\keregisterprocessorchangecallback.htm
+old-project: kernel
+ms.assetid: a10d54a2-39e4-4c90-ac91-28d31b3ebfb8
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: KeRegisterProcessorChangeCallback routine [Kernel-Mode Driver Architecture], KeRegisterProcessorChangeCallback, wdm/KeRegisterProcessorChangeCallback, k105_794d8039-ab35-46e9-8a0d-a38c034f0263.xml, kernel.keregisterprocessorchangecallback
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Server 2008 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	KeRegisterProcessorChangeCallback
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NC:gpioclx.GPIO_CLIENT_PREPARE_CONTROLLER
-title : GPIO_CLIENT_PREPARE_CONTROLLER
-author : windows-driver-content
-description : The CLIENT_PrepareController event callback function performs any operations that are needed to make the general-purpose I/O (GPIO) controller ready to be accessed by the GPIO controller driver.
-old-location : gpio\client_preparecontroller.htm
-old-project : GPIO
-ms.assetid : FAB86862-C0A1-4FC1-A80F-44F235B9B37D
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : GPIO.client_preparecontroller, CLIENT_PrepareController callback function [Parallel Ports], CLIENT_PrepareController, GPIO_CLIENT_PREPARE_CONTROLLER, GPIO_CLIENT_PREPARE_CONTROLLER, gpioclx/CLIENT_PrepareController
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : gpioclx.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Supported starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Called at PASSIVE_LEVEL.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PGNSS_V2UPL_NI_INFO, GNSS_V2UPL_NI_INFO"
+UID: NC:gpioclx.GPIO_CLIENT_PREPARE_CONTROLLER
+title: GPIO_CLIENT_PREPARE_CONTROLLER
+author: windows-driver-content
+description: The CLIENT_PrepareController event callback function performs any operations that are needed to make the general-purpose I/O (GPIO) controller ready to be accessed by the GPIO controller driver.
+old-location: gpio\client_preparecontroller.htm
+old-project: GPIO
+ms.assetid: FAB86862-C0A1-4FC1-A80F-44F235B9B37D
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: GPIO.client_preparecontroller, CLIENT_PrepareController callback function [Parallel Ports], CLIENT_PrepareController, GPIO_CLIENT_PREPARE_CONTROLLER, GPIO_CLIENT_PREPARE_CONTROLLER, gpioclx/CLIENT_PrepareController
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: gpioclx.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Supported starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Called at PASSIVE_LEVEL.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Gpioclx.h
+apiname:
+-	CLIENT_PrepareController
+product: Windows
+targetos: Windows
+req.typenames: "*PGNSS_V2UPL_NI_INFO, GNSS_V2UPL_NI_INFO"
 ---
 
 

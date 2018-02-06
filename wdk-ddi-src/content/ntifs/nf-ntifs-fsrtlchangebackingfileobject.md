@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.FsRtlChangeBackingFileObject
-title : FsRtlChangeBackingFileObject function
-author : windows-driver-content
-description : The FsRtlChangeBackingFileObject routine replaces the current file object with a new file object.
-old-location : ifsk\fsrtlchangebackingfileobject.htm
-old-project : ifsk
-ms.assetid : a3ef4644-8e17-4f67-ba7f-61d62c534c26
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FsRtlChangeBackingFileObject, fsrtlref_4dd83ba3-8d9b-4c5b-a4ea-d7a0ceaaa9f2.xml, ifsk.fsrtlchangebackingfileobject, FsRtlChangeBackingFileObject routine [Installable File System Drivers], ntifs/FsRtlChangeBackingFileObject
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : The FsRtlChangeBackingFileObject routine is available starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.FsRtlChangeBackingFileObject
+title: FsRtlChangeBackingFileObject function
+author: windows-driver-content
+description: The FsRtlChangeBackingFileObject routine replaces the current file object with a new file object.
+old-location: ifsk\fsrtlchangebackingfileobject.htm
+old-project: ifsk
+ms.assetid: a3ef4644-8e17-4f67-ba7f-61d62c534c26
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FsRtlChangeBackingFileObject, fsrtlref_4dd83ba3-8d9b-4c5b-a4ea-d7a0ceaaa9f2.xml, ifsk.fsrtlchangebackingfileobject, FsRtlChangeBackingFileObject routine [Installable File System Drivers], ntifs/FsRtlChangeBackingFileObject
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: The FsRtlChangeBackingFileObject routine is available starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	FsRtlChangeBackingFileObject
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

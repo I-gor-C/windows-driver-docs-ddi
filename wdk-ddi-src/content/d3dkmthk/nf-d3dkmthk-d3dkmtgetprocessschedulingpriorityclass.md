@@ -1,41 +1,49 @@
 ---
-UID : NF:d3dkmthk.D3DKMTGetProcessSchedulingPriorityClass
-title : D3DKMTGetProcessSchedulingPriorityClass function
-author : windows-driver-content
-description : The D3DKMTGetProcessSchedulingPriorityClass function retrieves the scheduling priority for a process.
-old-location : display\d3dkmtgetprocessschedulingpriorityclass.htm
-old-project : display
-ms.assetid : 994df4be-d0ce-4f64-91f5-b5516ce947ec
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : OpenGL_Functions_7af39e72-516e-440a-b4be-f0b3f82156d0.xml, D3DKMTGetProcessSchedulingPriorityClass, display.d3dkmtgetprocessschedulingpriorityclass, D3DKMTGetProcessSchedulingPriorityClass function [Display Devices], d3dkmthk/D3DKMTGetProcessSchedulingPriorityClass
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Gdi32.lib
-req.dll : Gdi32.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_DRIVERVERSION
+UID: NF:d3dkmthk.D3DKMTGetProcessSchedulingPriorityClass
+title: D3DKMTGetProcessSchedulingPriorityClass function
+author: windows-driver-content
+description: The D3DKMTGetProcessSchedulingPriorityClass function retrieves the scheduling priority for a process.
+old-location: display\d3dkmtgetprocessschedulingpriorityclass.htm
+old-project: display
+ms.assetid: 994df4be-d0ce-4f64-91f5-b5516ce947ec
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: OpenGL_Functions_7af39e72-516e-440a-b4be-f0b3f82156d0.xml, D3DKMTGetProcessSchedulingPriorityClass, display.d3dkmtgetprocessschedulingpriorityclass, D3DKMTGetProcessSchedulingPriorityClass function [Display Devices], d3dkmthk/D3DKMTGetProcessSchedulingPriorityClass
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Gdi32.lib
+req.dll: Gdi32.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Gdi32.dll
+-	API-MS-Win-dx-d3dkmt-l1-1-0.dll
+-	API-MS-Win-dx-d3dkmt-l1-1-1.dll
+-	API-MS-Win-DX-D3DKMT-L1-1-2.dll
+apiname:
+-	D3DKMTGetProcessSchedulingPriorityClass
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_DRIVERVERSION
 ---
 
 

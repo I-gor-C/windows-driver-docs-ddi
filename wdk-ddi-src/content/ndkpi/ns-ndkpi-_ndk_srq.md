@@ -1,41 +1,46 @@
 ---
-UID : NS:ndkpi._NDK_SRQ
-title : "_NDK_SRQ"
-author : windows-driver-content
-description : The NDK_SRQ structure specifies the attributes of an NDK shared receive queue (SRQ) object.
-old-location : netvista\ndk_srq.htm
-old-project : netvista
-ms.assetid : BDD2E8A6-D233-4581-AC1D-B6E33919898E
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.ndk_srq, NDK_SRQ, PNDK_SRQ, ndkpi/PNDK_SRQ, PNDK_SRQ structure pointer [Network Drivers Starting with Windows Vista], NDK_SRQ structure [Network Drivers Starting with Windows Vista], _NDK_SRQ, ndkpi/NDK_SRQ
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndkpi.h
-req.include-header : Ndkpi.h
-req.target-type : Windows
-req.target-min-winverclnt : None supported,Supported in NDIS 6.30 and later.
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDK_SRQ
+UID: NS:ndkpi._NDK_SRQ
+title: "_NDK_SRQ"
+author: windows-driver-content
+description: The NDK_SRQ structure specifies the attributes of an NDK shared receive queue (SRQ) object.
+old-location: netvista\ndk_srq.htm
+old-project: netvista
+ms.assetid: BDD2E8A6-D233-4581-AC1D-B6E33919898E
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.ndk_srq, NDK_SRQ, PNDK_SRQ, ndkpi/PNDK_SRQ, PNDK_SRQ structure pointer [Network Drivers Starting with Windows Vista], NDK_SRQ structure [Network Drivers Starting with Windows Vista], _NDK_SRQ, ndkpi/NDK_SRQ
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndkpi.h
+req.include-header: Ndkpi.h
+req.target-type: Windows
+req.target-min-winverclnt: None supported,Supported in NDIS 6.30 and later.
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndkpi.h
+apiname:
+-	NDK_SRQ
+product: Windows
+targetos: Windows
+req.typenames: NDK_SRQ
 ---
 
 # _NDK_SRQ structure

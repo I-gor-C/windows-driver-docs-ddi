@@ -1,42 +1,47 @@
 ---
-UID : NS:wdm._FUNCTION_LEVEL_DEVICE_RESET_PARAMETERS
-title : "_FUNCTION_LEVEL_DEVICE_RESET_PARAMETERS"
-author : windows-driver-content
-description : The FUNCTION_LEVEL_DEVICE_RESET_PARAMETER structure is used as an argument to the DeviceReset routine of the GUID_DEVICE_RESET_INTERFACE_STANDARD interface.
-old-location : kernel\function_level_device_reset_parameters.htm
-old-project : kernel
-ms.assetid : A9DDBE59-A318-427C-9BB4-ECB770C9B949
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : PFUNCTION_LEVEL_DEVICE_RESET_PARAMETERS, FUNCTION_LEVEL_DEVICE_RESET_PARAMETERS, *PFUNCTION_LEVEL_DEVICE_RESET_PARAMETERS, _FUNCTION_LEVEL_DEVICE_RESET_PARAMETERS, kernel.function_level_device_reset_parameters, PFUNCTION_LEVEL_DEVICE_RESET_PARAMETERS structure pointer [Kernel-Mode Driver Architecture], FUNCTION_LEVEL_DEVICE_RESET_PARAMETERS structure [Kernel-Mode Driver Architecture], wdm/PFUNCTION_LEVEL_DEVICE_RESET_PARAMETERS, wdm/FUNCTION_LEVEL_DEVICE_RESET_PARAMETERS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FUNCTION_LEVEL_DEVICE_RESET_PARAMETERS, *PFUNCTION_LEVEL_DEVICE_RESET_PARAMETERS
-req.product : Windows 10 or later.
+UID: NS:wdm._FUNCTION_LEVEL_DEVICE_RESET_PARAMETERS
+title: "_FUNCTION_LEVEL_DEVICE_RESET_PARAMETERS"
+author: windows-driver-content
+description: The FUNCTION_LEVEL_DEVICE_RESET_PARAMETER structure is used as an argument to the DeviceReset routine of the GUID_DEVICE_RESET_INTERFACE_STANDARD interface.
+old-location: kernel\function_level_device_reset_parameters.htm
+old-project: kernel
+ms.assetid: A9DDBE59-A318-427C-9BB4-ECB770C9B949
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: PFUNCTION_LEVEL_DEVICE_RESET_PARAMETERS, FUNCTION_LEVEL_DEVICE_RESET_PARAMETERS, *PFUNCTION_LEVEL_DEVICE_RESET_PARAMETERS, _FUNCTION_LEVEL_DEVICE_RESET_PARAMETERS, kernel.function_level_device_reset_parameters, PFUNCTION_LEVEL_DEVICE_RESET_PARAMETERS structure pointer [Kernel-Mode Driver Architecture], FUNCTION_LEVEL_DEVICE_RESET_PARAMETERS structure [Kernel-Mode Driver Architecture], wdm/PFUNCTION_LEVEL_DEVICE_RESET_PARAMETERS, wdm/FUNCTION_LEVEL_DEVICE_RESET_PARAMETERS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	FUNCTION_LEVEL_DEVICE_RESET_PARAMETERS
+product: Windows
+targetos: Windows
+req.typenames: FUNCTION_LEVEL_DEVICE_RESET_PARAMETERS, *PFUNCTION_LEVEL_DEVICE_RESET_PARAMETERS
+req.product: Windows 10 or later.
 ---
 
 # _FUNCTION_LEVEL_DEVICE_RESET_PARAMETERS structure

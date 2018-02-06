@@ -1,42 +1,47 @@
 ---
-UID : NS:usbfnattach._USBFN_ON_ATTACH
-title : "_USBFN_ON_ATTACH"
-author : windows-driver-content
-description : Describes the detected port type and attach action.
-old-location : buses\usbfn_on_attach.htm
-old-project : usbref
-ms.assetid : 2CD75FA9-F77E-4AC5-870E-69CF05DB9312
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : PUSBFN_ON_ATTACH, *PUSBFN_ON_ATTACH, usbfnattach/USBFN_ON_ATTACH, USBFN_ON_ATTACH, PUSBFN_ON_ATTACH structure pointer [Buses], buses.usbfn_on_attach, _USBFN_ON_ATTACH, USBFN_ON_ATTACH structure [Buses], usbfnattach/PUSBFN_ON_ATTACH
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : usbfnattach.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUSBFN_ON_ATTACH, USBFN_ON_ATTACH"
-req.product : Windows 10 or later.
+UID: NS:usbfnattach._USBFN_ON_ATTACH
+title: "_USBFN_ON_ATTACH"
+author: windows-driver-content
+description: Describes the detected port type and attach action.
+old-location: buses\usbfn_on_attach.htm
+old-project: usbref
+ms.assetid: 2CD75FA9-F77E-4AC5-870E-69CF05DB9312
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: PUSBFN_ON_ATTACH, *PUSBFN_ON_ATTACH, usbfnattach/USBFN_ON_ATTACH, USBFN_ON_ATTACH, PUSBFN_ON_ATTACH structure pointer [Buses], buses.usbfn_on_attach, _USBFN_ON_ATTACH, USBFN_ON_ATTACH structure [Buses], usbfnattach/PUSBFN_ON_ATTACH
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: usbfnattach.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	usbfnattach.h
+apiname:
+-	USBFN_ON_ATTACH
+product: Windows
+targetos: Windows
+req.typenames: "*PUSBFN_ON_ATTACH, USBFN_ON_ATTACH"
+req.product: Windows 10 or later.
 ---
 
 # _USBFN_ON_ATTACH structure

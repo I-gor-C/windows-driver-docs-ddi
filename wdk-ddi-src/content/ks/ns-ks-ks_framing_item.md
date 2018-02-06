@@ -1,41 +1,46 @@
 ---
-UID : NS:ks.KS_FRAMING_ITEM
-title : KS_FRAMING_ITEM
-author : windows-driver-content
-description : The KS_FRAMING_ITEM structure is used to declare allocator requirements on a kernel-mode pin.
-old-location : stream\ks_framing_item.htm
-old-project : stream
-ms.assetid : cd7d4ef7-f8ad-467f-aa5b-28b131941094
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KS_FRAMING_ITEM structure [Streaming Media Devices], ks/KS_FRAMING_ITEM, KSALLOCATOR_FLAG_CAN_ALLOCATE, PKS_FRAMING_ITEM structure pointer [Streaming Media Devices], KSALLOCATOR_FLAG_DEVICE_SPECIFIC, ks/PKS_FRAMING_ITEM, stream.ks_framing_item, KSALLOCATOR_FLAG_INSIST_ON_FRAMESIZE_RATIO, ks-struct_8ddb4478-636f-4cd4-b4c1-663a20070cef.xml, KS_FRAMING_ITEM, *PKS_FRAMING_ITEM, PKS_FRAMING_ITEM, KSALLOCATOR_FLAG_PARTIAL_READ_SUPPORT, KSALLOCATOR_REQUIREMENTF_PREFERENCES_ONLY
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KS_FRAMING_ITEM, *PKS_FRAMING_ITEM
+UID: NS:ks.KS_FRAMING_ITEM
+title: KS_FRAMING_ITEM
+author: windows-driver-content
+description: The KS_FRAMING_ITEM structure is used to declare allocator requirements on a kernel-mode pin.
+old-location: stream\ks_framing_item.htm
+old-project: stream
+ms.assetid: cd7d4ef7-f8ad-467f-aa5b-28b131941094
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KS_FRAMING_ITEM structure [Streaming Media Devices], ks/KS_FRAMING_ITEM, KSALLOCATOR_FLAG_CAN_ALLOCATE, PKS_FRAMING_ITEM structure pointer [Streaming Media Devices], KSALLOCATOR_FLAG_DEVICE_SPECIFIC, ks/PKS_FRAMING_ITEM, stream.ks_framing_item, KSALLOCATOR_FLAG_INSIST_ON_FRAMESIZE_RATIO, ks-struct_8ddb4478-636f-4cd4-b4c1-663a20070cef.xml, KS_FRAMING_ITEM, *PKS_FRAMING_ITEM, PKS_FRAMING_ITEM, KSALLOCATOR_FLAG_PARTIAL_READ_SUPPORT, KSALLOCATOR_REQUIREMENTF_PREFERENCES_ONLY
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	KS_FRAMING_ITEM
+product: Windows
+targetos: Windows
+req.typenames: KS_FRAMING_ITEM, *PKS_FRAMING_ITEM
 ---
 
 # KS_FRAMING_ITEM structure

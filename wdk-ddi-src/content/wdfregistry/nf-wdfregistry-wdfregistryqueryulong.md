@@ -1,42 +1,50 @@
 ---
-UID : NF:wdfregistry.WdfRegistryQueryULong
-title : WdfRegistryQueryULong function
-author : windows-driver-content
-description : The WdfRegistryQueryULong method retrieves the unsigned long word (REG_DWORD) data that is currently assigned to a specified registry value and copies the data to a specified location.
-old-location : wdf\wdfregistryqueryulong.htm
-old-project : wdf
-ms.assetid : 54583406-9c60-4622-a78d-085c35ce7593
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : DFRegKeyObjectRef_537593c8-1f9c-4392-9228-6a0e5d89a964.xml, WdfRegistryQueryULong method, wdf.wdfregistryqueryulong, kmdf.wdfregistryqueryulong, wdfregistry/WdfRegistryQueryULong, PFN_WDFREGISTRYQUERYULONG, WdfRegistryQueryULong
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfregistry.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_QUERY_INTERFACE_CONFIG, *PWDF_QUERY_INTERFACE_CONFIG
-req.product : Windows 10 or later.
+UID: NF:wdfregistry.WdfRegistryQueryULong
+title: WdfRegistryQueryULong function
+author: windows-driver-content
+description: The WdfRegistryQueryULong method retrieves the unsigned long word (REG_DWORD) data that is currently assigned to a specified registry value and copies the data to a specified location.
+old-location: wdf\wdfregistryqueryulong.htm
+old-project: wdf
+ms.assetid: 54583406-9c60-4622-a78d-085c35ce7593
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: DFRegKeyObjectRef_537593c8-1f9c-4392-9228-6a0e5d89a964.xml, WdfRegistryQueryULong method, wdf.wdfregistryqueryulong, kmdf.wdfregistryqueryulong, wdfregistry/WdfRegistryQueryULong, PFN_WDFREGISTRYQUERYULONG, WdfRegistryQueryULong
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfregistry.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+-	WUDFx02000.dll
+-	WUDFx02000.dll.dll
+apiname:
+-	WdfRegistryQueryULong
+product: Windows
+targetos: Windows
+req.typenames: WDF_QUERY_INTERFACE_CONFIG, *PWDF_QUERY_INTERFACE_CONFIG
+req.product: Windows 10 or later.
 ---
 
 

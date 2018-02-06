@@ -1,42 +1,47 @@
 ---
-UID : NF:winddiui.DrvDevicePropertySheets
-title : DrvDevicePropertySheets function
-author : windows-driver-content
-description : A printer interface DLL's DrvDevicePropertySheets function is responsible for creating property sheet pages that describe a printer's properties.
-old-location : print\drvdevicepropertysheets.htm
-old-project : print
-ms.assetid : 46f39e36-8915-4ccf-97ef-45dbacdfbe0a
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : DrvDevicePropertySheets, DrvDevicePropertySheets function [Print Devices], winddiui/DrvDevicePropertySheets, print_interface-graphics_f7a16b0a-c0f3-48c8-83a0-ce44a80ff546.xml, print.drvdevicepropertysheets
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : winddiui.h
-req.include-header : Winddiui.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WINBIO_VERSION, *PWINBIO_VERSION
-req.product : Windows 10 or later.
+UID: NF:winddiui.DrvDevicePropertySheets
+title: DrvDevicePropertySheets function
+author: windows-driver-content
+description: A printer interface DLL's DrvDevicePropertySheets function is responsible for creating property sheet pages that describe a printer's properties.
+old-location: print\drvdevicepropertysheets.htm
+old-project: print
+ms.assetid: 46f39e36-8915-4ccf-97ef-45dbacdfbe0a
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: DrvDevicePropertySheets, DrvDevicePropertySheets function [Print Devices], winddiui/DrvDevicePropertySheets, print_interface-graphics_f7a16b0a-c0f3-48c8-83a0-ce44a80ff546.xml, print.drvdevicepropertysheets
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: winddiui.h
+req.include-header: Winddiui.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	winddiui.h
+apiname:
+-	DrvDevicePropertySheets
+product: Windows
+targetos: Windows
+req.typenames: WINBIO_VERSION, *PWINBIO_VERSION
+req.product: Windows 10 or later.
 ---
 
 

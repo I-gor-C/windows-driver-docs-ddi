@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltAllocateGenericWorkItem
-title : FltAllocateGenericWorkItem function
-author : windows-driver-content
-description : FltAllocateGenericWorkItem allocates a generic work item.
-old-location : ifsk\fltallocategenericworkitem.htm
-old-project : ifsk
-ms.assetid : 1be555a5-9fa7-4179-8a36-803b8792db86
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.fltallocategenericworkitem, FltApiRef_a_to_d_06bae00e-f41d-4cc9-8664-94e06d004458.xml, FltAllocateGenericWorkItem function [Installable File System Drivers], fltkernel/FltAllocateGenericWorkItem, FltAllocateGenericWorkItem
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltAllocateGenericWorkItem
+title: FltAllocateGenericWorkItem function
+author: windows-driver-content
+description: FltAllocateGenericWorkItem allocates a generic work item.
+old-location: ifsk\fltallocategenericworkitem.htm
+old-project: ifsk
+ms.assetid: 1be555a5-9fa7-4179-8a36-803b8792db86
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.fltallocategenericworkitem, FltApiRef_a_to_d_06bae00e-f41d-4cc9-8664-94e06d004458.xml, FltAllocateGenericWorkItem function [Installable File System Drivers], fltkernel/FltAllocateGenericWorkItem, FltAllocateGenericWorkItem
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltAllocateGenericWorkItem
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

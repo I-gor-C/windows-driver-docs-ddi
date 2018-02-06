@@ -1,41 +1,47 @@
 ---
-UID : NF:fltkernel.FltFlushBuffers
-title : FltFlushBuffers function
-author : windows-driver-content
-description : The FltFlushBuffers routine is used by the minifilter driver to send a flush request for a given file to the file system.
-old-location : ifsk\fltflushbuffers.htm
-old-project : ifsk
-ms.assetid : 269be3a9-7dd8-45e2-8687-99f8ca8f9b8b
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltFlushBuffers routine [Installable File System Drivers], ifsk.fltflushbuffers, fltkernel/FltFlushBuffers, FltFlushBuffers, FltApiRef_e_to_o_cd194ce5-6afd-49f2-84c5-aa93ede9309a.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltFlushBuffers
+title: FltFlushBuffers function
+author: windows-driver-content
+description: The FltFlushBuffers routine is used by the minifilter driver to send a flush request for a given file to the file system.
+old-location: ifsk\fltflushbuffers.htm
+old-project: ifsk
+ms.assetid: 269be3a9-7dd8-45e2-8687-99f8ca8f9b8b
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltFlushBuffers routine [Installable File System Drivers], ifsk.fltflushbuffers, fltkernel/FltFlushBuffers, FltFlushBuffers, FltApiRef_e_to_o_cd194ce5-6afd-49f2-84c5-aa93ede9309a.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	FltMgr.lib
+-	FltMgr.dll
+apiname:
+-	FltFlushBuffers
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

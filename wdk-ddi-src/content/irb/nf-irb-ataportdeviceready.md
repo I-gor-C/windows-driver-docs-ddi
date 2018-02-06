@@ -1,41 +1,46 @@
 ---
-UID : NF:irb.AtaPortDeviceReady
-title : AtaPortDeviceReady function
-author : windows-driver-content
-description : The AtaPortDeviceReady routine informs the port driver that the indicated device is ready to accept new requests.
-old-location : storage\ataportdeviceready.htm
-old-project : storage
-ms.assetid : 65cbed1a-35f9-44f7-941a-ffc87cc79649
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : atartns_28cebf8c-cdda-46f4-9785-184552630769.xml, AtaPortDeviceReady routine [Storage Devices], irb/AtaPortDeviceReady, AtaPortDeviceReady, storage.ataportdeviceready
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : irb.h
-req.include-header : Ata.h, Irb.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : IDE_POWER_STATE
+UID: NF:irb.AtaPortDeviceReady
+title: AtaPortDeviceReady function
+author: windows-driver-content
+description: The AtaPortDeviceReady routine informs the port driver that the indicated device is ready to accept new requests.
+old-location: storage\ataportdeviceready.htm
+old-project: storage
+ms.assetid: 65cbed1a-35f9-44f7-941a-ffc87cc79649
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: atartns_28cebf8c-cdda-46f4-9785-184552630769.xml, AtaPortDeviceReady routine [Storage Devices], irb/AtaPortDeviceReady, AtaPortDeviceReady, storage.ataportdeviceready
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: irb.h
+req.include-header: Ata.h, Irb.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	irb.h
+apiname:
+-	AtaPortDeviceReady
+product: Windows
+targetos: Windows
+req.typenames: IDE_POWER_STATE
 ---
 
 

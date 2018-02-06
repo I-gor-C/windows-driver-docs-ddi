@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.MmForceSectionClosed
-title : MmForceSectionClosed function
-author : windows-driver-content
-description : The MmForceSectionClosed routine deletes the data and image sections for a file that is no longer in use.
-old-location : ifsk\mmforcesectionclosed.htm
-old-project : ifsk
-ms.assetid : aa598c4b-e840-41cb-81a3-719a5b1ee48b
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ntifs/MmForceSectionClosed, mmref_d2466446-15b8-4152-a7ff-3ebe1f05cd68.xml, MmForceSectionClosed routine [Installable File System Drivers], ifsk.mmforcesectionclosed, MmForceSectionClosed
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "< DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.MmForceSectionClosed
+title: MmForceSectionClosed function
+author: windows-driver-content
+description: The MmForceSectionClosed routine deletes the data and image sections for a file that is no longer in use.
+old-location: ifsk\mmforcesectionclosed.htm
+old-project: ifsk
+ms.assetid: aa598c4b-e840-41cb-81a3-719a5b1ee48b
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ntifs/MmForceSectionClosed, mmref_d2466446-15b8-4152-a7ff-3ebe1f05cd68.xml, MmForceSectionClosed routine [Installable File System Drivers], ifsk.mmforcesectionclosed, MmForceSectionClosed
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "< DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	MmForceSectionClosed
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

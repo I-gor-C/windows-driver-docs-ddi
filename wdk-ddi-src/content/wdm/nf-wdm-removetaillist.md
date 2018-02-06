@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.RemoveTailList
-title : RemoveTailList function
-author : windows-driver-content
-description : The RemoveTailList routine removes an entry from the end of a doubly linked list of LIST_ENTRY structures.
-old-location : kernel\removetaillist.htm
-old-project : kernel
-ms.assetid : 67942bf7-28f6-4b2d-a880-9439afaf0bb2
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : RemoveTailList, kernel.removetaillist, k109_b9ce310f-ead1-46ee-a591-ae018f61f536.xml, wdm/RemoveTailList, RemoveTailList routine [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : Any level (See Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.RemoveTailList
+title: RemoveTailList function
+author: windows-driver-content
+description: The RemoveTailList routine removes an entry from the end of a doubly linked list of LIST_ENTRY structures.
+old-location: kernel\removetaillist.htm
+old-project: kernel
+ms.assetid: 67942bf7-28f6-4b2d-a880-9439afaf0bb2
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: RemoveTailList, kernel.removetaillist, k109_b9ce310f-ead1-46ee-a591-ae018f61f536.xml, wdm/RemoveTailList, RemoveTailList routine [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: Any level (See Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	RemoveTailList
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

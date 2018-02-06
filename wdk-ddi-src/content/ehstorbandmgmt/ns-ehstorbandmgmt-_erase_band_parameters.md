@@ -1,41 +1,46 @@
 ---
-UID : NS:ehstorbandmgmt._ERASE_BAND_PARAMETERS
-title : "_ERASE_BAND_PARAMETERS"
-author : windows-driver-content
-description : The ERASE_BAND_PARAMETERS structure contains the selection criteria for a band to erase. Additionally, a new authentication key can be set. This structure is input for an IOCTL_EHSTOR_BANDMGMT_ERASE_BAND request.
-old-location : storage\erase_band_parameters.htm
-old-project : storage
-ms.assetid : CD7388DD-84CD-4158-91F3-9DB0559DFC2F
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : ehstorbandmgmt/ERASE_BAND_PARAMETERS, PERASE_BAND_PARAMETERS structure pointer [Storage Devices], ehstorbandmgmt/PERASE_BAND_PARAMETERS, storage.erase_band_parameters, ERASEBAND_AUTHKEY_CACHING_ENABLED, _ERASE_BAND_PARAMETERS, ERASE_BAND_PARAMETERS, PERASE_BAND_PARAMETERS, *PERASE_BAND_PARAMETERS, ERASE_BAND_PARAMETERS structure [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ehstorbandmgmt.h
-req.include-header : EhStorBandMgmt.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows 8
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : ERASE_BAND_PARAMETERS, *PERASE_BAND_PARAMETERS
+UID: NS:ehstorbandmgmt._ERASE_BAND_PARAMETERS
+title: "_ERASE_BAND_PARAMETERS"
+author: windows-driver-content
+description: The ERASE_BAND_PARAMETERS structure contains the selection criteria for a band to erase. Additionally, a new authentication key can be set. This structure is input for an IOCTL_EHSTOR_BANDMGMT_ERASE_BAND request.
+old-location: storage\erase_band_parameters.htm
+old-project: storage
+ms.assetid: CD7388DD-84CD-4158-91F3-9DB0559DFC2F
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: ehstorbandmgmt/ERASE_BAND_PARAMETERS, PERASE_BAND_PARAMETERS structure pointer [Storage Devices], ehstorbandmgmt/PERASE_BAND_PARAMETERS, storage.erase_band_parameters, ERASEBAND_AUTHKEY_CACHING_ENABLED, _ERASE_BAND_PARAMETERS, ERASE_BAND_PARAMETERS, PERASE_BAND_PARAMETERS, *PERASE_BAND_PARAMETERS, ERASE_BAND_PARAMETERS structure [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ehstorbandmgmt.h
+req.include-header: EhStorBandMgmt.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows 8
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	EhStorBandMgmt.h
+apiname:
+-	ERASE_BAND_PARAMETERS
+product: Windows
+targetos: Windows
+req.typenames: ERASE_BAND_PARAMETERS, *PERASE_BAND_PARAMETERS
 ---
 
 # _ERASE_BAND_PARAMETERS structure

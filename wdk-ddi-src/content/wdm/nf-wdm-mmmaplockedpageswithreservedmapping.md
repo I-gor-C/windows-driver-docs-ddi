@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.MmMapLockedPagesWithReservedMapping
-title : MmMapLockedPagesWithReservedMapping function
-author : windows-driver-content
-description : The MmMapLockedPagesWithReservedMapping routine maps all or part of an address range that was previously reserved by the MmAllocateMappingAddress routine.
-old-location : kernel\mmmaplockedpageswithreservedmapping.htm
-old-project : kernel
-ms.assetid : 3fc01bc5-05eb-482f-b625-67061d26915a
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : MmMapLockedPagesWithReservedMapping, k106_32161803-dd44-4a5f-a5c0-da6b1a78982c.xml, kernel.mmmaplockedpageswithreservedmapping, MmMapLockedPagesWithReservedMapping routine [Kernel-Mode Driver Architecture], wdm/MmMapLockedPagesWithReservedMapping
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows XP and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.MmMapLockedPagesWithReservedMapping
+title: MmMapLockedPagesWithReservedMapping function
+author: windows-driver-content
+description: The MmMapLockedPagesWithReservedMapping routine maps all or part of an address range that was previously reserved by the MmAllocateMappingAddress routine.
+old-location: kernel\mmmaplockedpageswithreservedmapping.htm
+old-project: kernel
+ms.assetid: 3fc01bc5-05eb-482f-b625-67061d26915a
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: MmMapLockedPagesWithReservedMapping, k106_32161803-dd44-4a5f-a5c0-da6b1a78982c.xml, kernel.mmmaplockedpageswithreservedmapping, MmMapLockedPagesWithReservedMapping routine [Kernel-Mode Driver Architecture], wdm/MmMapLockedPagesWithReservedMapping
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows XP and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	MmMapLockedPagesWithReservedMapping
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

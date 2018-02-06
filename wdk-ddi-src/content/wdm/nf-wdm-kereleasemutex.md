@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.KeReleaseMutex
-title : KeReleaseMutex function
-author : windows-driver-content
-description : The KeReleaseMutex routine releases a mutex object, and specifies whether the caller is to call one of the KeWaitXxx routines as soon as KeReleaseMutex returns control.
-old-location : kernel\kereleasemutex.htm
-old-project : kernel
-ms.assetid : d220f913-6111-435d-b617-257edf2a9c68
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : KeReleaseMutex, wdm/KeReleaseMutex, KeReleaseMutex routine [Kernel-Mode Driver Architecture], kernel.kereleasemutex, k105_4237a9e6-715b-4e40-aab8-9b1458a220ae.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : IrqlKeDispatchLte, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.KeReleaseMutex
+title: KeReleaseMutex function
+author: windows-driver-content
+description: The KeReleaseMutex routine releases a mutex object, and specifies whether the caller is to call one of the KeWaitXxx routines as soon as KeReleaseMutex returns control.
+old-location: kernel\kereleasemutex.htm
+old-project: kernel
+ms.assetid: d220f913-6111-435d-b617-257edf2a9c68
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: KeReleaseMutex, wdm/KeReleaseMutex, KeReleaseMutex routine [Kernel-Mode Driver Architecture], kernel.kereleasemutex, k105_4237a9e6-715b-4e40-aab8-9b1458a220ae.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: IrqlKeDispatchLte, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	KeReleaseMutex
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

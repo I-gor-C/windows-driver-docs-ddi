@@ -1,41 +1,46 @@
 ---
-UID : NS:61883._OPCR
-title : "_OPCR"
-author : windows-driver-content
-description : The OPCR structure contains initialization values for an output plug.
-old-location : ieee\opcr.htm
-old-project : IEEE
-ms.assetid : fbd6fa74-eb39-4240-947e-1edec1365a83
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : IEEE.opcr, 61883/POPCR, _OPCR, OPCR, 61883/OPCR, POPCR, 61883_structures_271facde-3b80-421f-a3d2-1f0e9b8e1782.xml, *POPCR, POPCR structure pointer [Buses], OPCR structure [Buses]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : 61883.h
-req.include-header : 61883.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*POPCR, OPCR"
+UID: NS:61883._OPCR
+title: "_OPCR"
+author: windows-driver-content
+description: The OPCR structure contains initialization values for an output plug.
+old-location: ieee\opcr.htm
+old-project: IEEE
+ms.assetid: fbd6fa74-eb39-4240-947e-1edec1365a83
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: IEEE.opcr, 61883/POPCR, _OPCR, OPCR, 61883/OPCR, POPCR, 61883_structures_271facde-3b80-421f-a3d2-1f0e9b8e1782.xml, *POPCR, POPCR structure pointer [Buses], OPCR structure [Buses]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: 61883.h
+req.include-header: 61883.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	61883.h
+apiname:
+-	OPCR
+product: Windows
+targetos: Windows
+req.typenames: "*POPCR, OPCR"
 ---
 
 # _OPCR structure

@@ -1,42 +1,48 @@
 ---
-UID : NF:storport.StorPortNotification
-title : StorPortNotification function
-author : windows-driver-content
-description : The miniport driver uses the StorPortNotification routine to notify the Storport driver of certain events and conditions.
-old-location : storage\storportnotification.htm
-old-project : storage
-ms.assetid : 3f361f50-3ca2-4fb6-828c-27928b50cf55
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storprt_5915c32e-be1b-4786-b391-67be5e61760f.xml, storage.storportnotification, StorPortNotification routine [Storage Devices], storport/StorPortNotification, StorPortNotification
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : StorPortNotification2, StorPortStatusPending, StorPortTimer
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Storport.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STOR_SPINLOCK
-req.product : Windows 10 or later.
+UID: NF:storport.StorPortNotification
+title: StorPortNotification function
+author: windows-driver-content
+description: The miniport driver uses the StorPortNotification routine to notify the Storport driver of certain events and conditions.
+old-location: storage\storportnotification.htm
+old-project: storage
+ms.assetid: 3f361f50-3ca2-4fb6-828c-27928b50cf55
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storprt_5915c32e-be1b-4786-b391-67be5e61760f.xml, storage.storportnotification, StorPortNotification routine [Storage Devices], storport/StorPortNotification, StorPortNotification
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: StorPortNotification2, StorPortStatusPending, StorPortTimer
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Storport.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Storport.lib
+-	Storport.dll
+apiname:
+-	StorPortNotification
+product: Windows
+targetos: Windows
+req.typenames: STOR_SPINLOCK
+req.product: Windows 10 or later.
 ---
 
 

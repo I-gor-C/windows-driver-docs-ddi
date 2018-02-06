@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugControl3.WaitForEvent
-title : IDebugControl3::WaitForEvent method
-author : windows-driver-content
-description : The WaitForEvent method waits for an event that breaks into the debugger engine application.
-old-location : debugger\waitforevent.htm
-old-project : debugger
-ms.assetid : b7038bcf-2469-4d5f-ac73-0c7835da23c3
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugControl_19a7d8b3-1f16-400e-bf8f-c782d48b2cf5.xml, WaitForEvent method [Windows Debugging], IDebugControl2 interface, IDebugControl interface [Windows Debugging], WaitForEvent method, debugger.waitforevent, dbgeng/IDebugControl::WaitForEvent, IDebugControl2 interface [Windows Debugging], WaitForEvent method, IDebugControl3::WaitForEvent, IDebugControl3, WaitForEvent, dbgeng/IDebugControl3::WaitForEvent, dbgeng/IDebugControl2::WaitForEvent, WaitForEvent method [Windows Debugging], IDebugControl interface, WaitForEvent method [Windows Debugging], IDebugControl3 interface, IDebugControl3 interface [Windows Debugging], WaitForEvent method, WaitForEvent method [Windows Debugging], IDebugControl2::WaitForEvent, IDebugControl::WaitForEvent
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h, Winbase.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl3.WaitForEvent
+title: IDebugControl3::WaitForEvent method
+author: windows-driver-content
+description: The WaitForEvent method waits for an event that breaks into the debugger engine application.
+old-location: debugger\waitforevent.htm
+old-project: debugger
+ms.assetid: b7038bcf-2469-4d5f-ac73-0c7835da23c3
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugControl_19a7d8b3-1f16-400e-bf8f-c782d48b2cf5.xml, WaitForEvent method [Windows Debugging], IDebugControl2 interface, IDebugControl interface [Windows Debugging], WaitForEvent method, debugger.waitforevent, dbgeng/IDebugControl::WaitForEvent, IDebugControl2 interface [Windows Debugging], WaitForEvent method, IDebugControl3::WaitForEvent, IDebugControl3, WaitForEvent, dbgeng/IDebugControl3::WaitForEvent, dbgeng/IDebugControl2::WaitForEvent, WaitForEvent method [Windows Debugging], IDebugControl interface, WaitForEvent method [Windows Debugging], IDebugControl3 interface, IDebugControl3 interface [Windows Debugging], WaitForEvent method, WaitForEvent method [Windows Debugging], IDebugControl2::WaitForEvent, IDebugControl::WaitForEvent
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h, Winbase.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl.WaitForEvent
+-	IDebugControl2.WaitForEvent
+-	IDebugControl3.WaitForEvent
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugControl3.GetBreakpointParameters
-title : IDebugControl3::GetBreakpointParameters method
-author : windows-driver-content
-description : The GetBreakpointParameters method returns the parameters of one or more breakpoints.
-old-location : debugger\getbreakpointparameters.htm
-old-project : debugger
-ms.assetid : c4426dfa-7c14-4ef0-8660-855ee24ed7fe
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : GetBreakpointParameters method [Windows Debugging], IDebugControl interface, IDebugControl::GetBreakpointParameters, dbgeng/IDebugControl3::GetBreakpointParameters, dbgeng/IDebugControl2::GetBreakpointParameters, GetBreakpointParameters method [Windows Debugging], IDebugControl3 interface, IDebugControl3::GetBreakpointParameters, dbgeng/IDebugControl::GetBreakpointParameters, IDebugControl3, debugger.getbreakpointparameters, IDebugControl_7b2d9423-82db-4274-a1f7-eebcda92e6c3.xml, GetBreakpointParameters method [Windows Debugging], IDebugControl2 interface, IDebugControl2::GetBreakpointParameters, IDebugControl2 interface [Windows Debugging], GetBreakpointParameters method, GetBreakpointParameters, IDebugControl3 interface [Windows Debugging], GetBreakpointParameters method, IDebugControl interface [Windows Debugging], GetBreakpointParameters method, GetBreakpointParameters method [Windows Debugging]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h, Dbgeng.h, Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl3.GetBreakpointParameters
+title: IDebugControl3::GetBreakpointParameters method
+author: windows-driver-content
+description: The GetBreakpointParameters method returns the parameters of one or more breakpoints.
+old-location: debugger\getbreakpointparameters.htm
+old-project: debugger
+ms.assetid: c4426dfa-7c14-4ef0-8660-855ee24ed7fe
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: GetBreakpointParameters method [Windows Debugging], IDebugControl interface, IDebugControl::GetBreakpointParameters, dbgeng/IDebugControl3::GetBreakpointParameters, dbgeng/IDebugControl2::GetBreakpointParameters, GetBreakpointParameters method [Windows Debugging], IDebugControl3 interface, IDebugControl3::GetBreakpointParameters, dbgeng/IDebugControl::GetBreakpointParameters, IDebugControl3, debugger.getbreakpointparameters, IDebugControl_7b2d9423-82db-4274-a1f7-eebcda92e6c3.xml, GetBreakpointParameters method [Windows Debugging], IDebugControl2 interface, IDebugControl2::GetBreakpointParameters, IDebugControl2 interface [Windows Debugging], GetBreakpointParameters method, GetBreakpointParameters, IDebugControl3 interface [Windows Debugging], GetBreakpointParameters method, IDebugControl interface [Windows Debugging], GetBreakpointParameters method, GetBreakpointParameters method [Windows Debugging]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h, Dbgeng.h, Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl.GetBreakpointParameters
+-	IDebugControl2.GetBreakpointParameters
+-	IDebugControl3.GetBreakpointParameters
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

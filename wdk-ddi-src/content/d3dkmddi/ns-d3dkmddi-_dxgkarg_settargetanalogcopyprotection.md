@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGKARG_SETTARGETANALOGCOPYPROTECTION
-title : "_DXGKARG_SETTARGETANALOGCOPYPROTECTION"
-author : windows-driver-content
-description : Holds information to set analog copy protection on a display adapter's video present target.
-old-location : display\dxgkarg_settargetanalogcopyprotection.htm
-old-project : display
-ms.assetid : F5A853B2-4A8C-4929-AAEC-28844DEF0B29
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkarg_settargetanalogcopyprotection, _DXGKARG_SETTARGETANALOGCOPYPROTECTION, DXGKARG_SETTARGETANALOGCOPYPROTECTION, d3dkmddi/DXGKARG_SETTARGETANALOGCOPYPROTECTION, DXGKARG_SETTARGETANALOGCOPYPROTECTION structure [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGKARG_SETTARGETANALOGCOPYPROTECTION
+UID: NS:d3dkmddi._DXGKARG_SETTARGETANALOGCOPYPROTECTION
+title: "_DXGKARG_SETTARGETANALOGCOPYPROTECTION"
+author: windows-driver-content
+description: Holds information to set analog copy protection on a display adapter's video present target.
+old-location: display\dxgkarg_settargetanalogcopyprotection.htm
+old-project: display
+ms.assetid: F5A853B2-4A8C-4929-AAEC-28844DEF0B29
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkarg_settargetanalogcopyprotection, _DXGKARG_SETTARGETANALOGCOPYPROTECTION, DXGKARG_SETTARGETANALOGCOPYPROTECTION, d3dkmddi/DXGKARG_SETTARGETANALOGCOPYPROTECTION, DXGKARG_SETTARGETANALOGCOPYPROTECTION structure [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DXGKARG_SETTARGETANALOGCOPYPROTECTION
+product: Windows
+targetos: Windows
+req.typenames: DXGKARG_SETTARGETANALOGCOPYPROTECTION
 ---
 
 # _DXGKARG_SETTARGETANALOGCOPYPROTECTION structure

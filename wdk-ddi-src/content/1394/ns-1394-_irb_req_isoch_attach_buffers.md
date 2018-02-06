@@ -1,41 +1,46 @@
 ---
-UID : NS:1394._IRB_REQ_ISOCH_ATTACH_BUFFERS
-title : "_IRB_REQ_ISOCH_ATTACH_BUFFERS"
-author : windows-driver-content
-description : This structure contains the fields required for the 1394 bus driver to carry out a IsochAttachBuffers request.
-old-location : ieee\irb_req_isoch_attach_buffers.htm
-old-project : IEEE
-ms.assetid : 7EA6E82C-D803-48CD-9955-CF576BF978CA
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : "_IRB_REQ_ISOCH_ATTACH_BUFFERS, 1394/IRB_REQ_ISOCH_ATTACH_BUFFERS, IRB_REQ_ISOCH_ATTACH_BUFFERS, IEEE.irb_req_isoch_attach_buffers, IRB_REQ_ISOCH_ATTACH_BUFFERS structure [Buses]"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : 1394.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : IRB_REQ_ISOCH_ATTACH_BUFFERS
+UID: NS:1394._IRB_REQ_ISOCH_ATTACH_BUFFERS
+title: "_IRB_REQ_ISOCH_ATTACH_BUFFERS"
+author: windows-driver-content
+description: This structure contains the fields required for the 1394 bus driver to carry out a IsochAttachBuffers request.
+old-location: ieee\irb_req_isoch_attach_buffers.htm
+old-project: IEEE
+ms.assetid: 7EA6E82C-D803-48CD-9955-CF576BF978CA
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: "_IRB_REQ_ISOCH_ATTACH_BUFFERS, 1394/IRB_REQ_ISOCH_ATTACH_BUFFERS, IRB_REQ_ISOCH_ATTACH_BUFFERS, IEEE.irb_req_isoch_attach_buffers, IRB_REQ_ISOCH_ATTACH_BUFFERS structure [Buses]"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: 1394.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	1394.h
+apiname:
+-	IRB_REQ_ISOCH_ATTACH_BUFFERS
+product: Windows
+targetos: Windows
+req.typenames: IRB_REQ_ISOCH_ATTACH_BUFFERS
 ---
 
 # _IRB_REQ_ISOCH_ATTACH_BUFFERS structure

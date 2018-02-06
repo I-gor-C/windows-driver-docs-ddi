@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dkmddi.DXGKDDI_CANCELCOMMAND
-title : DXGKDDI_CANCELCOMMAND
-author : windows-driver-content
-description : Cleans up internal resources associated with a direct memory access (DMA) packet that was in the GPU scheduler's software queue but never reached the hardware queue because the device went into an error state.
-old-location : display\dxgkddicancelcommand.htm
-old-project : display
-ms.assetid : c290c313-14ee-4554-9bb1-8adec1892426
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkddicancelcommand, DxgkDdiCancelCommand callback function [Display Devices], DxgkDdiCancelCommand, DXGKDDI_CANCELCOMMAND, DXGKDDI_CANCELCOMMAND, d3dkmddi/DxgkDdiCancelCommand
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dkmddi.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
+UID: NC:d3dkmddi.DXGKDDI_CANCELCOMMAND
+title: DXGKDDI_CANCELCOMMAND
+author: windows-driver-content
+description: Cleans up internal resources associated with a direct memory access (DMA) packet that was in the GPU scheduler's software queue but never reached the hardware queue because the device went into an error state.
+old-location: display\dxgkddicancelcommand.htm
+old-project: display
+ms.assetid: c290c313-14ee-4554-9bb1-8adec1892426
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkddicancelcommand, DxgkDdiCancelCommand callback function [Display Devices], DxgkDdiCancelCommand, DXGKDDI_CANCELCOMMAND, DXGKDDI_CANCELCOMMAND, d3dkmddi/DxgkDdiCancelCommand
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dkmddi.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	D3dkmddi.h
+apiname:
+-	DxgkDdiCancelCommand
+product: Windows
+targetos: Windows
+req.typenames: DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
 

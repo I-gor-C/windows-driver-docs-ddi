@@ -1,41 +1,46 @@
 ---
-UID : NS:pepfx._PEP_SYSTEM_LATENCY
-title : "_PEP_SYSTEM_LATENCY"
-author : windows-driver-content
-description : The PEP_SYSTEM_LATENCY structure specifies the new value for the system latency tolerance.
-old-location : kernel\pep_system_latency.htm
-old-project : kernel
-ms.assetid : 083ACFD8-A8AE-4205-9E25-497D6A3ADBCD
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : PEP_SYSTEM_LATENCY, PPEP_SYSTEM_LATENCY structure pointer [Kernel-Mode Driver Architecture], kernel.pep_system_latency, PEP_SYSTEM_LATENCY structure [Kernel-Mode Driver Architecture], *PPEP_SYSTEM_LATENCY, PPEP_SYSTEM_LATENCY, pepfx/PPEP_SYSTEM_LATENCY, _PEP_SYSTEM_LATENCY, pepfx/PEP_SYSTEM_LATENCY
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : pepfx.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with Windows 10.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPEP_SYSTEM_LATENCY, PEP_SYSTEM_LATENCY"
+UID: NS:pepfx._PEP_SYSTEM_LATENCY
+title: "_PEP_SYSTEM_LATENCY"
+author: windows-driver-content
+description: The PEP_SYSTEM_LATENCY structure specifies the new value for the system latency tolerance.
+old-location: kernel\pep_system_latency.htm
+old-project: kernel
+ms.assetid: 083ACFD8-A8AE-4205-9E25-497D6A3ADBCD
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: PEP_SYSTEM_LATENCY, PPEP_SYSTEM_LATENCY structure pointer [Kernel-Mode Driver Architecture], kernel.pep_system_latency, PEP_SYSTEM_LATENCY structure [Kernel-Mode Driver Architecture], *PPEP_SYSTEM_LATENCY, PPEP_SYSTEM_LATENCY, pepfx/PPEP_SYSTEM_LATENCY, _PEP_SYSTEM_LATENCY, pepfx/PEP_SYSTEM_LATENCY
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: pepfx.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows 10.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	pepfx.h
+apiname:
+-	PEP_SYSTEM_LATENCY
+product: Windows
+targetos: Windows
+req.typenames: "*PPEP_SYSTEM_LATENCY, PEP_SYSTEM_LATENCY"
 ---
 
 # _PEP_SYSTEM_LATENCY structure

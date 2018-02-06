@@ -1,38 +1,38 @@
 ---
-UID : NF:wdm.EtwWriteString
-title : EtwWriteString function
-author : windows-driver-content
-description : The EventWriteString function is a tracing function that you can use when no sophisticated data is required. This function is similar to a debug print statement.
-old-location : devtest\etwwritestring.htm
-old-project : devtest
-ms.assetid : 25de7729-f43f-4d16-a379-e1cb1ab8616c
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : EtwWriteString
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.alt-api : EtwWriteString
-req.alt-loc : NtosKrnl.exe
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : Any level (See Comments section.)
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.EtwWriteString
+title: EtwWriteString function
+author: windows-driver-content
+description: The EventWriteString function is a tracing function that you can use when no sophisticated data is required. This function is similar to a debug print statement.
+old-location: devtest\etwwritestring.htm
+old-project: devtest
+ms.assetid: 25de7729-f43f-4d16-a379-e1cb1ab8616c
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: EtwWriteString
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.alt-api: EtwWriteString
+req.alt-loc: NtosKrnl.exe
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: Any level (See Comments section.)
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

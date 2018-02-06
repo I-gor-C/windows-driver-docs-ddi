@@ -1,42 +1,47 @@
 ---
-UID : NF:video.VideoPortMapBankedMemory
-title : VideoPortMapBankedMemory function
-author : windows-driver-content
-description : The VideoPortMapBankedMemory function is obsolete, and is supported only for Windows NT 4.0 and previous drivers.
-old-location : display\videoportmapbankedmemory.htm
-old-project : display
-ms.assetid : ee94d883-b4c4-4cd5-9b61-2e51810f8fc8
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : video/VideoPortMapBankedMemory, VideoPort_Functions_14384264-da80-4c16-8de9-af143ac6a014.xml, VideoPortMapBankedMemory, VideoPortMapBankedMemory function [Display Devices], display.videoportmapbankedmemory
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows 2000 and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Videoprt.lib
-req.dll : Videoprt.sys
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_PORT_SERVICES
-req.product : Windows 10 or later.
+UID: NF:video.VideoPortMapBankedMemory
+title: VideoPortMapBankedMemory function
+author: windows-driver-content
+description: The VideoPortMapBankedMemory function is obsolete, and is supported only for Windows NT 4.0 and previous drivers.
+old-location: display\videoportmapbankedmemory.htm
+old-project: display
+ms.assetid: ee94d883-b4c4-4cd5-9b61-2e51810f8fc8
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: video/VideoPortMapBankedMemory, VideoPort_Functions_14384264-da80-4c16-8de9-af143ac6a014.xml, VideoPortMapBankedMemory, VideoPortMapBankedMemory function [Display Devices], display.videoportmapbankedmemory
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows 2000 and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Videoprt.lib
+req.dll: Videoprt.sys
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Videoprt.sys
+apiname:
+-	VideoPortMapBankedMemory
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_PORT_SERVICES
+req.product: Windows 10 or later.
 ---
 
 

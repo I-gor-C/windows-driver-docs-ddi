@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFIoRequest2.GetRequestorMode
-title : IWDFIoRequest2::GetRequestorMode method
-author : windows-driver-content
-description : The GetRequestorMode method indicates whether an I/O request came from a kernel-mode driver or a user-mode component (either an application or a user-mode driver).
-old-location : wdf\iwdfiorequest2_getrequestormode.htm
-old-project : wdf
-ms.assetid : 8f918bc4-d2d0-4d5b-93c8-89f02c81a701
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.iwdfiorequest2_getrequestormode, GetRequestorMode method, IWDFIoRequest2 interface, IWDFIoRequest2, GetRequestorMode method, wudfddi/IWDFIoRequest2::GetRequestorMode, UMDFRequestObjectRef_ab2c358c-de7c-4bc3-b0cf-a598a1c69bd1.xml, umdf.iwdfiorequest2_getrequestormode, GetRequestorMode, IWDFIoRequest2::GetRequestorMode, IWDFIoRequest2 interface, GetRequestorMode method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.9
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFIoRequest2.GetRequestorMode
+title: IWDFIoRequest2::GetRequestorMode method
+author: windows-driver-content
+description: The GetRequestorMode method indicates whether an I/O request came from a kernel-mode driver or a user-mode component (either an application or a user-mode driver).
+old-location: wdf\iwdfiorequest2_getrequestormode.htm
+old-project: wdf
+ms.assetid: 8f918bc4-d2d0-4d5b-93c8-89f02c81a701
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.iwdfiorequest2_getrequestormode, GetRequestorMode method, IWDFIoRequest2 interface, IWDFIoRequest2, GetRequestorMode method, wudfddi/IWDFIoRequest2::GetRequestorMode, UMDFRequestObjectRef_ab2c358c-de7c-4bc3-b0cf-a598a1c69bd1.xml, umdf.iwdfiorequest2_getrequestormode, GetRequestorMode, IWDFIoRequest2::GetRequestorMode, IWDFIoRequest2 interface, GetRequestorMode method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.9
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFIoRequest2.GetRequestorMode
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

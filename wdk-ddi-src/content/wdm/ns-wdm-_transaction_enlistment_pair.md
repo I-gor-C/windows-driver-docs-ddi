@@ -1,42 +1,47 @@
 ---
-UID : NS:wdm._TRANSACTION_ENLISTMENT_PAIR
-title : "_TRANSACTION_ENLISTMENT_PAIR"
-author : windows-driver-content
-description : The TRANSACTION_ENLISTMENT_PAIR structure contains information about an enlistment that is associated with a transaction object.
-old-location : kernel\transaction_enlistment_pair.htm
-old-project : kernel
-ms.assetid : f8d49d61-f15e-4972-bcd2-d20f1be5786c
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.transaction_enlistment_pair, ktm_ref_5f4d1426-1829-4c3d-836f-8655b41d9c0c.xml, _TRANSACTION_ENLISTMENT_PAIR, TRANSACTION_ENLISTMENT_PAIR structure [Kernel-Mode Driver Architecture], PTRANSACTION_ENLISTMENT_PAIR, TRANSACTION_ENLISTMENT_PAIR, *PTRANSACTION_ENLISTMENT_PAIR, wdm/PTRANSACTION_ENLISTMENT_PAIR, wdm/TRANSACTION_ENLISTMENT_PAIR, PTRANSACTION_ENLISTMENT_PAIR structure pointer [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later operating system versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PTRANSACTION_ENLISTMENT_PAIR, TRANSACTION_ENLISTMENT_PAIR"
-req.product : Windows 10 or later.
+UID: NS:wdm._TRANSACTION_ENLISTMENT_PAIR
+title: "_TRANSACTION_ENLISTMENT_PAIR"
+author: windows-driver-content
+description: The TRANSACTION_ENLISTMENT_PAIR structure contains information about an enlistment that is associated with a transaction object.
+old-location: kernel\transaction_enlistment_pair.htm
+old-project: kernel
+ms.assetid: f8d49d61-f15e-4972-bcd2-d20f1be5786c
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.transaction_enlistment_pair, ktm_ref_5f4d1426-1829-4c3d-836f-8655b41d9c0c.xml, _TRANSACTION_ENLISTMENT_PAIR, TRANSACTION_ENLISTMENT_PAIR structure [Kernel-Mode Driver Architecture], PTRANSACTION_ENLISTMENT_PAIR, TRANSACTION_ENLISTMENT_PAIR, *PTRANSACTION_ENLISTMENT_PAIR, wdm/PTRANSACTION_ENLISTMENT_PAIR, wdm/TRANSACTION_ENLISTMENT_PAIR, PTRANSACTION_ENLISTMENT_PAIR structure pointer [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later operating system versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	TRANSACTION_ENLISTMENT_PAIR
+product: Windows
+targetos: Windows
+req.typenames: "*PTRANSACTION_ENLISTMENT_PAIR, TRANSACTION_ENLISTMENT_PAIR"
+req.product: Windows 10 or later.
 ---
 
 # _TRANSACTION_ENLISTMENT_PAIR structure

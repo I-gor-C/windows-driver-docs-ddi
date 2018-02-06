@@ -1,41 +1,46 @@
 ---
-UID : NF:ks.KsCreateAllocator2
-title : KsCreateAllocator2 function
-author : windows-driver-content
-description : Creates a handle to an allocator for the given sink connection handle. This function does not complete the IRP or set the status in the IRP.
-old-location : stream\kscreateallocator2.htm
-old-project : stream
-ms.assetid : f0efa17c-9318-46a4-bc08-d4d372cc07ba
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.kscreateallocator2, ks/KsCreateAllocator2, KsCreateAllocator2 function [Streaming Media Devices], KsCreateAllocator2
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsCreateAllocator2
+title: KsCreateAllocator2 function
+author: windows-driver-content
+description: Creates a handle to an allocator for the given sink connection handle. This function does not complete the IRP or set the status in the IRP.
+old-location: stream\kscreateallocator2.htm
+old-project: stream
+ms.assetid: f0efa17c-9318-46a4-bc08-d4d372cc07ba
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.kscreateallocator2, ks/KsCreateAllocator2, KsCreateAllocator2 function [Streaming Media Devices], KsCreateAllocator2
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ks.h
+apiname:
+-	KsCreateAllocator2
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

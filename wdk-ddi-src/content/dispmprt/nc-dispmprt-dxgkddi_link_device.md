@@ -1,41 +1,46 @@
 ---
-UID : NC:dispmprt.DXGKDDI_LINK_DEVICE
-title : DXGKDDI_LINK_DEVICE
-author : windows-driver-content
-description : The optional DxgkDdiLinkDevice function queries the display miniport driver for information on the linked adapter configuration.
-old-location : display\dxgkddilinkdevice.htm
-old-project : display
-ms.assetid : fb9b7c58-1c4f-42e4-a59f-4a529d3caca2
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkddilinkdevice, DxgkDdiLinkDevice callback function [Display Devices], DxgkDdiLinkDevice, DXGKDDI_LINK_DEVICE, DXGKDDI_LINK_DEVICE, dispmprt/DxgkDdiLinkDevice, DmFunctions_3dcba945-b441-49a2-9d1e-af0ff235136c.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : dispmprt.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
+UID: NC:dispmprt.DXGKDDI_LINK_DEVICE
+title: DXGKDDI_LINK_DEVICE
+author: windows-driver-content
+description: The optional DxgkDdiLinkDevice function queries the display miniport driver for information on the linked adapter configuration.
+old-location: display\dxgkddilinkdevice.htm
+old-project: display
+ms.assetid: fb9b7c58-1c4f-42e4-a59f-4a529d3caca2
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkddilinkdevice, DxgkDdiLinkDevice callback function [Display Devices], DxgkDdiLinkDevice, DXGKDDI_LINK_DEVICE, DXGKDDI_LINK_DEVICE, dispmprt/DxgkDdiLinkDevice, DmFunctions_3dcba945-b441-49a2-9d1e-af0ff235136c.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: dispmprt.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	dispmprt.h
+apiname:
+-	DxgkDdiLinkDevice
+product: Windows
+targetos: Windows
+req.typenames: SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ---
 
 

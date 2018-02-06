@@ -1,42 +1,47 @@
 ---
-UID : NF:rxce.RxCeTearDownAddress
-title : RxCeTearDownAddress function
-author : windows-driver-content
-description : RxCeTearDownAddress deregisters a transport address from a transport binding.
-old-location : ifsk\rxceteardownaddress.htm
-old-project : ifsk
-ms.assetid : 76fd7c35-fef1-43c2-aedd-d09d18ab27a4
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : RxCeTearDownAddress function [Installable File System Drivers], rxref_99fcdd00-8c1a-4a0b-8007-5b7f01a725bb.xml, rxce/RxCeTearDownAddress, ifsk.rxceteardownaddress, RxCeTearDownAddress
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : rxce.h
-req.include-header : Rxce.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*LPRILWRITEPHONEBOOKENTRYPARAMS, RILWRITEPHONEBOOKENTRYPARAMS"
-req.product : Windows 10 or later.
+UID: NF:rxce.RxCeTearDownAddress
+title: RxCeTearDownAddress function
+author: windows-driver-content
+description: RxCeTearDownAddress deregisters a transport address from a transport binding.
+old-location: ifsk\rxceteardownaddress.htm
+old-project: ifsk
+ms.assetid: 76fd7c35-fef1-43c2-aedd-d09d18ab27a4
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: RxCeTearDownAddress function [Installable File System Drivers], rxref_99fcdd00-8c1a-4a0b-8007-5b7f01a725bb.xml, rxce/RxCeTearDownAddress, ifsk.rxceteardownaddress, RxCeTearDownAddress
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: rxce.h
+req.include-header: Rxce.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	rxce.h
+apiname:
+-	RxCeTearDownAddress
+product: Windows
+targetos: Windows
+req.typenames: "*LPRILWRITEPHONEBOOKENTRYPARAMS, RILWRITEPHONEBOOKENTRYPARAMS"
+req.product: Windows 10 or later.
 ---
 
 

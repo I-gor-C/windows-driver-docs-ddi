@@ -1,41 +1,46 @@
 ---
-UID : NC:bthsdpddi.PBYTESWAPUINT128
-title : PBYTESWAPUINT128
-author : windows-driver-content
-description : The Bluetooth SdpByteSwapUint128 function is used to reverse the byte order of an unsigned 128-bit integer.
-old-location : bltooth\sdpbyteswapuint128.htm
-old-project : bltooth
-ms.assetid : 04a3400a-e526-47d2-a602-6ecaa7ee7fcf
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : bltooth.sdpbyteswapuint128, SdpByteSwapUint128 callback function [Bluetooth Devices], SdpByteSwapUint128, PBYTESWAPUINT128, PBYTESWAPUINT128, sdplib/SdpByteSwapUint128, bth_funcs_48f64465-c4dd-4cf2-8655-b55d5f0c89ba.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : bthsdpddi.h
-req.include-header : BthSdpddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Versions:\_Supported in Windows Vista, and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= PASSIVE_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PBTH_VENDOR_SPECIFIC_COMMAND, BTH_VENDOR_SPECIFIC_COMMAND"
+UID: NC:bthsdpddi.PBYTESWAPUINT128
+title: PBYTESWAPUINT128
+author: windows-driver-content
+description: The Bluetooth SdpByteSwapUint128 function is used to reverse the byte order of an unsigned 128-bit integer.
+old-location: bltooth\sdpbyteswapuint128.htm
+old-project: bltooth
+ms.assetid: 04a3400a-e526-47d2-a602-6ecaa7ee7fcf
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: bltooth.sdpbyteswapuint128, SdpByteSwapUint128 callback function [Bluetooth Devices], SdpByteSwapUint128, PBYTESWAPUINT128, PBYTESWAPUINT128, sdplib/SdpByteSwapUint128, bth_funcs_48f64465-c4dd-4cf2-8655-b55d5f0c89ba.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: bthsdpddi.h
+req.include-header: BthSdpddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Versions:\_Supported in Windows Vista, and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= PASSIVE_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	sdplib.h
+apiname:
+-	SdpByteSwapUint128
+product: Windows
+targetos: Windows
+req.typenames: "*PBTH_VENDOR_SPECIFIC_COMMAND, BTH_VENDOR_SPECIFIC_COMMAND"
 ---
 
 

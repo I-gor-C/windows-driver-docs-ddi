@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsAllocateExtraData
-title : KsAllocateExtraData function
-author : windows-driver-content
-description : The KsAllocateExtraData function is used with streaming IRPs to allocate a buffer to contain additional header data. A pointer to the allocated buffer is returned, and the buffer must eventually be freed by the caller.
-old-location : stream\ksallocateextradata.htm
-old-project : stream
-ms.assetid : dfeaca74-d34d-4128-bd76-3a1bf1b3f5d6
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KsAllocateExtraData, stream.ksallocateextradata, KsAllocateExtraData function [Streaming Media Devices], ks/KsAllocateExtraData, ksfunc_a6f4b047-cec7-4c0d-850f-c3d3b1d1e33e.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : "< DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsAllocateExtraData
+title: KsAllocateExtraData function
+author: windows-driver-content
+description: The KsAllocateExtraData function is used with streaming IRPs to allocate a buffer to contain additional header data. A pointer to the allocated buffer is returned, and the buffer must eventually be freed by the caller.
+old-location: stream\ksallocateextradata.htm
+old-project: stream
+ms.assetid: dfeaca74-d34d-4128-bd76-3a1bf1b3f5d6
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KsAllocateExtraData, stream.ksallocateextradata, KsAllocateExtraData function [Streaming Media Devices], ks/KsAllocateExtraData, ksfunc_a6f4b047-cec7-4c0d-850f-c3d3b1d1e33e.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: "< DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsAllocateExtraData
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

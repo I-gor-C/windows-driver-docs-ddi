@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dhal._D3DHAL_CLIPPEDTRIANGLEFAN
-title : "_D3DHAL_CLIPPEDTRIANGLEFAN"
-author : windows-driver-content
-description : DirectX 8.0 and later versions only.
-old-location : display\d3dhal_clippedtrianglefan.htm
-old-project : display
-ms.assetid : c169c483-ffad-470c-9adb-397e275341e3
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3dhal/D3DHAL_CLIPPEDTRIANGLEFAN, _D3DHAL_CLIPPEDTRIANGLEFAN, D3DHAL_CLIPPEDTRIANGLEFAN, d3dhal/LPD3DHAL_CLIPPEDTRIANGLEFAN, *LPD3DHAL_CLIPPEDTRIANGLEFAN, LPD3DHAL_CLIPPEDTRIANGLEFAN, display.d3dhal_clippedtrianglefan, D3DHAL_CLIPPEDTRIANGLEFAN structure [Display Devices], LPD3DHAL_CLIPPEDTRIANGLEFAN structure pointer [Display Devices], d3dstrct_443edf3e-a245-41c3-ba98-2ee9634363b9.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dhal.h
-req.include-header : D3dhal.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DHAL_CLIPPEDTRIANGLEFAN
+UID: NS:d3dhal._D3DHAL_CLIPPEDTRIANGLEFAN
+title: "_D3DHAL_CLIPPEDTRIANGLEFAN"
+author: windows-driver-content
+description: DirectX 8.0 and later versions only.
+old-location: display\d3dhal_clippedtrianglefan.htm
+old-project: display
+ms.assetid: c169c483-ffad-470c-9adb-397e275341e3
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3dhal/D3DHAL_CLIPPEDTRIANGLEFAN, _D3DHAL_CLIPPEDTRIANGLEFAN, D3DHAL_CLIPPEDTRIANGLEFAN, d3dhal/LPD3DHAL_CLIPPEDTRIANGLEFAN, *LPD3DHAL_CLIPPEDTRIANGLEFAN, LPD3DHAL_CLIPPEDTRIANGLEFAN, display.d3dhal_clippedtrianglefan, D3DHAL_CLIPPEDTRIANGLEFAN structure [Display Devices], LPD3DHAL_CLIPPEDTRIANGLEFAN structure pointer [Display Devices], d3dstrct_443edf3e-a245-41c3-ba98-2ee9634363b9.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dhal.h
+req.include-header: D3dhal.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dhal.h
+apiname:
+-	D3DHAL_CLIPPEDTRIANGLEFAN
+product: Windows
+targetos: Windows
+req.typenames: D3DHAL_CLIPPEDTRIANGLEFAN
 ---
 
 # _D3DHAL_CLIPPEDTRIANGLEFAN structure

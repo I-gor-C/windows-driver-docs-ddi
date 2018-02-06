@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.TRANSPORT_STATE
-title : TRANSPORT_STATE
-author : windows-driver-content
-description : The TRANSPORT_STATE structure
-old-location : stream\transport_state.htm
-old-project : stream
-ms.assetid : 373fb91d-e469-4136-b2e3-bf57016c0fd6
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.transport_state, vidcapstruct_5caaba9f-8a5c-4896-b181-c432a9678f58.xml, TRANSPORT_STATE structure [Streaming Media Devices], PTRANSPORT_STATE, *PTRANSPORT_STATE, ksmedia/TRANSPORT_STATE, PTRANSPORT_STATE structure pointer [Streaming Media Devices], TRANSPORT_STATE, ksmedia/PTRANSPORT_STATE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PTRANSPORT_STATE, TRANSPORT_STATE"
+UID: NS:ksmedia.TRANSPORT_STATE
+title: TRANSPORT_STATE
+author: windows-driver-content
+description: The TRANSPORT_STATE structure
+old-location: stream\transport_state.htm
+old-project: stream
+ms.assetid: 373fb91d-e469-4136-b2e3-bf57016c0fd6
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.transport_state, vidcapstruct_5caaba9f-8a5c-4896-b181-c432a9678f58.xml, TRANSPORT_STATE structure [Streaming Media Devices], PTRANSPORT_STATE, *PTRANSPORT_STATE, ksmedia/TRANSPORT_STATE, PTRANSPORT_STATE structure pointer [Streaming Media Devices], TRANSPORT_STATE, ksmedia/PTRANSPORT_STATE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	TRANSPORT_STATE
+product: Windows
+targetos: Windows
+req.typenames: "*PTRANSPORT_STATE, TRANSPORT_STATE"
 ---
 
 # TRANSPORT_STATE structure

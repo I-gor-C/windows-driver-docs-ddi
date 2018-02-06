@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.IoRegisterFsRegistrationChange
-title : IoRegisterFsRegistrationChange function
-author : windows-driver-content
-description : The IoRegisterFsRegistrationChange routine registers a file system filter driver's notification routine to be called whenever a file system registers or unregisters itself as an active file system.
-old-location : ifsk\ioregisterfsregistrationchange.htm
-old-project : ifsk
-ms.assetid : 132951ef-7bb3-417e-a7b7-eb21f08aa846
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : IoRegisterFsRegistrationChange routine [Installable File System Drivers], ifsk.ioregisterfsregistrationchange, ntifs/IoRegisterFsRegistrationChange, IoRegisterFsRegistrationChange, ioref_6b4dc0bd-0821-4016-8eb7-c448c0247785.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "< DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.IoRegisterFsRegistrationChange
+title: IoRegisterFsRegistrationChange function
+author: windows-driver-content
+description: The IoRegisterFsRegistrationChange routine registers a file system filter driver's notification routine to be called whenever a file system registers or unregisters itself as an active file system.
+old-location: ifsk\ioregisterfsregistrationchange.htm
+old-project: ifsk
+ms.assetid: 132951ef-7bb3-417e-a7b7-eb21f08aa846
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: IoRegisterFsRegistrationChange routine [Installable File System Drivers], ifsk.ioregisterfsregistrationchange, ntifs/IoRegisterFsRegistrationChange, IoRegisterFsRegistrationChange, ioref_6b4dc0bd-0821-4016-8eb7-c448c0247785.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "< DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoRegisterFsRegistrationChange
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

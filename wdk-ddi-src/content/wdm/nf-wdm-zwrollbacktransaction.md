@@ -1,42 +1,48 @@
 ---
-UID : NF:wdm.ZwRollbackTransaction
-title : ZwRollbackTransaction function
-author : windows-driver-content
-description : The ZwRollbackTransaction routine initiates a rollback operation for a specified transaction.
-old-location : kernel\zwrollbacktransaction.htm
-old-project : kernel
-ms.assetid : 865349bd-400d-4acf-a2f7-33da128702be
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/ZwRollbackTransaction, ktm_ref_c29e1cd7-ffe0-4dab-be7f-a50a1d430ae3.xml, kernel.zwrollbacktransaction, ZwRollbackTransaction, wdm/NtRollbackTransaction, ZwRollbackTransaction routine [Kernel-Mode Driver Architecture], NtRollbackTransaction
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later operating system versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ZwRollbackTransaction
+title: ZwRollbackTransaction function
+author: windows-driver-content
+description: The ZwRollbackTransaction routine initiates a rollback operation for a specified transaction.
+old-location: kernel\zwrollbacktransaction.htm
+old-project: kernel
+ms.assetid: 865349bd-400d-4acf-a2f7-33da128702be
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/ZwRollbackTransaction, ktm_ref_c29e1cd7-ffe0-4dab-be7f-a50a1d430ae3.xml, kernel.zwrollbacktransaction, ZwRollbackTransaction, wdm/NtRollbackTransaction, ZwRollbackTransaction routine [Kernel-Mode Driver Architecture], NtRollbackTransaction
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later operating system versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ZwRollbackTransaction
+-	NtRollbackTransaction
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

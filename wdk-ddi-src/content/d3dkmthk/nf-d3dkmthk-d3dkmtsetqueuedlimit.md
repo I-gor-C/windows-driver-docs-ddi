@@ -1,41 +1,49 @@
 ---
-UID : NF:d3dkmthk.D3DKMTSetQueuedLimit
-title : D3DKMTSetQueuedLimit function
-author : windows-driver-content
-description : The D3DKMTSetQueuedLimit function sets or retrieves the limit for the number of operations of the given type that can be queued for the given device.
-old-location : display\d3dkmtsetqueuedlimit.htm
-old-project : display
-ms.assetid : 184473e4-603f-40a0-a4ea-c15d5b0b0b35
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3dkmthk/D3DKMTSetQueuedLimit, OpenGL_Functions_22227369-eb8b-4ee0-a3d8-97eb0f469d94.xml, display.d3dkmtsetqueuedlimit, D3DKMTSetQueuedLimit, D3DKMTSetQueuedLimit function [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Gdi32.lib
-req.dll : Gdi32.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_DRIVERVERSION
+UID: NF:d3dkmthk.D3DKMTSetQueuedLimit
+title: D3DKMTSetQueuedLimit function
+author: windows-driver-content
+description: The D3DKMTSetQueuedLimit function sets or retrieves the limit for the number of operations of the given type that can be queued for the given device.
+old-location: display\d3dkmtsetqueuedlimit.htm
+old-project: display
+ms.assetid: 184473e4-603f-40a0-a4ea-c15d5b0b0b35
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3dkmthk/D3DKMTSetQueuedLimit, OpenGL_Functions_22227369-eb8b-4ee0-a3d8-97eb0f469d94.xml, display.d3dkmtsetqueuedlimit, D3DKMTSetQueuedLimit, D3DKMTSetQueuedLimit function [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Gdi32.lib
+req.dll: Gdi32.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Gdi32.dll
+-	API-MS-Win-dx-d3dkmt-l1-1-0.dll
+-	API-MS-Win-dx-d3dkmt-l1-1-1.dll
+-	API-MS-Win-DX-D3DKMT-L1-1-2.dll
+apiname:
+-	D3DKMTSetQueuedLimit
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_DRIVERVERSION
 ---
 
 

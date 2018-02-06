@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsDispatchInvalidDeviceRequest
-title : KsDispatchInvalidDeviceRequest function
-author : windows-driver-content
-description : The KsDispatchInvalidDeviceRequest function is used in KSDISPATCH_TABLE entries that are not handled and that need to return STATUS_INVALID_DEVICE_REQUEST.
-old-location : stream\ksdispatchinvaliddevicerequest.htm
-old-project : stream
-ms.assetid : 7c30bc5b-2bd5-4db9-acaf-0c0347035ae3
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ksfunc_9be97c86-7505-4192-8a61-8280fca7ba0c.xml, KsDispatchInvalidDeviceRequest, KsDispatchInvalidDeviceRequest function [Streaming Media Devices], ks/KsDispatchInvalidDeviceRequest, stream.ksdispatchinvaliddevicerequest
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsDispatchInvalidDeviceRequest
+title: KsDispatchInvalidDeviceRequest function
+author: windows-driver-content
+description: The KsDispatchInvalidDeviceRequest function is used in KSDISPATCH_TABLE entries that are not handled and that need to return STATUS_INVALID_DEVICE_REQUEST.
+old-location: stream\ksdispatchinvaliddevicerequest.htm
+old-project: stream
+ms.assetid: 7c30bc5b-2bd5-4db9-acaf-0c0347035ae3
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ksfunc_9be97c86-7505-4192-8a61-8280fca7ba0c.xml, KsDispatchInvalidDeviceRequest, KsDispatchInvalidDeviceRequest function [Streaming Media Devices], ks/KsDispatchInvalidDeviceRequest, stream.ksdispatchinvaliddevicerequest
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsDispatchInvalidDeviceRequest
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

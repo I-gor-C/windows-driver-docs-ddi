@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.tagKSCAMERA_EXTENDEDPROP_PHOTOMODE
-title : tagKSCAMERA_EXTENDEDPROP_PHOTOMODE
-author : windows-driver-content
-description : The KSCAMERA_EXTENDEDPROP_PHOTOMODE structure contains the property data for the history frame counts in photo mode.
-old-location : stream\kscamera_extendedprop_photomode.htm
-old-project : stream
-ms.assetid : 96F920FC-43CE-4ACC-B880-9AD03B5D6009
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ksmedia/KSCAMERA_EXTENDEDPROP_PHOTOMODE, stream.kscamera_extendedprop_photomode, ksmedia/PKSCAMERA_EXTENDEDPROP_PHOTOMODE, KSCAMERA_EXTENDEDPROP_PHOTOMODE structure [Streaming Media Devices], tagKSCAMERA_EXTENDEDPROP_PHOTOMODE, *PKSCAMERA_EXTENDEDPROP_PHOTOMODE, PKSCAMERA_EXTENDEDPROP_PHOTOMODE structure pointer [Streaming Media Devices], PKSCAMERA_EXTENDEDPROP_PHOTOMODE, KSCAMERA_EXTENDEDPROP_PHOTOMODE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8.1
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KSCAMERA_EXTENDEDPROP_PHOTOMODE, *PKSCAMERA_EXTENDEDPROP_PHOTOMODE
+UID: NS:ksmedia.tagKSCAMERA_EXTENDEDPROP_PHOTOMODE
+title: tagKSCAMERA_EXTENDEDPROP_PHOTOMODE
+author: windows-driver-content
+description: The KSCAMERA_EXTENDEDPROP_PHOTOMODE structure contains the property data for the history frame counts in photo mode.
+old-location: stream\kscamera_extendedprop_photomode.htm
+old-project: stream
+ms.assetid: 96F920FC-43CE-4ACC-B880-9AD03B5D6009
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ksmedia/KSCAMERA_EXTENDEDPROP_PHOTOMODE, stream.kscamera_extendedprop_photomode, ksmedia/PKSCAMERA_EXTENDEDPROP_PHOTOMODE, KSCAMERA_EXTENDEDPROP_PHOTOMODE structure [Streaming Media Devices], tagKSCAMERA_EXTENDEDPROP_PHOTOMODE, *PKSCAMERA_EXTENDEDPROP_PHOTOMODE, PKSCAMERA_EXTENDEDPROP_PHOTOMODE structure pointer [Streaming Media Devices], PKSCAMERA_EXTENDEDPROP_PHOTOMODE, KSCAMERA_EXTENDEDPROP_PHOTOMODE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8.1
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ksmedia.h
+apiname:
+-	KSCAMERA_EXTENDEDPROP_PHOTOMODE
+product: Windows
+targetos: Windows
+req.typenames: KSCAMERA_EXTENDEDPROP_PHOTOMODE, *PKSCAMERA_EXTENDEDPROP_PHOTOMODE
 ---
 
 # tagKSCAMERA_EXTENDEDPROP_PHOTOMODE structure

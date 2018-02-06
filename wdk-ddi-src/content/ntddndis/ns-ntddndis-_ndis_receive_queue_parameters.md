@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddndis._NDIS_RECEIVE_QUEUE_PARAMETERS
-title : "_NDIS_RECEIVE_QUEUE_PARAMETERS"
-author : windows-driver-content
-description : The NDIS_RECEIVE_QUEUE_PARAMETERS structure contains the configuration parameters of a receive queue.
-old-location : netvista\ndis_receive_queue_parameters.htm
-old-project : netvista
-ms.assetid : fba87554-766d-45e2-8257-584ee78dd873
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : ntddndis/PNDIS_RECEIVE_QUEUE_PARAMETERS, _NDIS_RECEIVE_QUEUE_PARAMETERS, ntddndis/NDIS_RECEIVE_QUEUE_PARAMETERS, virtual_machine_queue_ref_7c1b89fc-ccdb-4bf4-89ab-d2278be7355b.xml, NDIS_RECEIVE_QUEUE_PARAMETERS, PNDIS_RECEIVE_QUEUE_PARAMETERS, PNDIS_RECEIVE_QUEUE_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], NDIS_RECEIVE_QUEUE_PARAMETERS structure [Network Drivers Starting with Windows Vista], *PNDIS_RECEIVE_QUEUE_PARAMETERS, netvista.ndis_receive_queue_parameters
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.20 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PNDIS_RECEIVE_QUEUE_PARAMETERS, NDIS_RECEIVE_QUEUE_PARAMETERS"
+UID: NS:ntddndis._NDIS_RECEIVE_QUEUE_PARAMETERS
+title: "_NDIS_RECEIVE_QUEUE_PARAMETERS"
+author: windows-driver-content
+description: The NDIS_RECEIVE_QUEUE_PARAMETERS structure contains the configuration parameters of a receive queue.
+old-location: netvista\ndis_receive_queue_parameters.htm
+old-project: netvista
+ms.assetid: fba87554-766d-45e2-8257-584ee78dd873
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: ntddndis/PNDIS_RECEIVE_QUEUE_PARAMETERS, _NDIS_RECEIVE_QUEUE_PARAMETERS, ntddndis/NDIS_RECEIVE_QUEUE_PARAMETERS, virtual_machine_queue_ref_7c1b89fc-ccdb-4bf4-89ab-d2278be7355b.xml, NDIS_RECEIVE_QUEUE_PARAMETERS, PNDIS_RECEIVE_QUEUE_PARAMETERS, PNDIS_RECEIVE_QUEUE_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], NDIS_RECEIVE_QUEUE_PARAMETERS structure [Network Drivers Starting with Windows Vista], *PNDIS_RECEIVE_QUEUE_PARAMETERS, netvista.ndis_receive_queue_parameters
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.20 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddndis.h
+apiname:
+-	NDIS_RECEIVE_QUEUE_PARAMETERS
+product: Windows
+targetos: Windows
+req.typenames: "*PNDIS_RECEIVE_QUEUE_PARAMETERS, NDIS_RECEIVE_QUEUE_PARAMETERS"
 ---
 
 # _NDIS_RECEIVE_QUEUE_PARAMETERS structure

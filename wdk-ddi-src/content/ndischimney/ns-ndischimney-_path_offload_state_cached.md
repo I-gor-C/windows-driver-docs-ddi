@@ -1,41 +1,46 @@
 ---
-UID : NS:ndischimney._PATH_OFFLOAD_STATE_CACHED
-title : "_PATH_OFFLOAD_STATE_CACHED"
-author : windows-driver-content
-description : The PATH_OFFLOAD_STATE_CACHED structure contains the cached variable of a path state object.
-old-location : netvista\path_offload_state_cached.htm
-old-project : netvista
-ms.assetid : 5afd2499-3f47-481e-9d20-770842f79677
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : PATH_OFFLOAD_STATE_CACHED, ndischimney/PPATH_OFFLOAD_STATE_CACHED, ndischimney/PATH_OFFLOAD_STATE_CACHED, PPATH_OFFLOAD_STATE_CACHED structure pointer [Network Drivers Starting with Windows Vista], netvista.path_offload_state_cached, PATH_OFFLOAD_STATE_CACHED structure [Network Drivers Starting with Windows Vista], tcp_chim_struct_768560e8-d67c-42f3-aa43-78c48e198eef.xml, PPATH_OFFLOAD_STATE_CACHED, _PATH_OFFLOAD_STATE_CACHED, *PPATH_OFFLOAD_STATE_CACHED
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndischimney.h
-req.include-header : Ndischimney.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPATH_OFFLOAD_STATE_CACHED, PATH_OFFLOAD_STATE_CACHED"
+UID: NS:ndischimney._PATH_OFFLOAD_STATE_CACHED
+title: "_PATH_OFFLOAD_STATE_CACHED"
+author: windows-driver-content
+description: The PATH_OFFLOAD_STATE_CACHED structure contains the cached variable of a path state object.
+old-location: netvista\path_offload_state_cached.htm
+old-project: netvista
+ms.assetid: 5afd2499-3f47-481e-9d20-770842f79677
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: PATH_OFFLOAD_STATE_CACHED, ndischimney/PPATH_OFFLOAD_STATE_CACHED, ndischimney/PATH_OFFLOAD_STATE_CACHED, PPATH_OFFLOAD_STATE_CACHED structure pointer [Network Drivers Starting with Windows Vista], netvista.path_offload_state_cached, PATH_OFFLOAD_STATE_CACHED structure [Network Drivers Starting with Windows Vista], tcp_chim_struct_768560e8-d67c-42f3-aa43-78c48e198eef.xml, PPATH_OFFLOAD_STATE_CACHED, _PATH_OFFLOAD_STATE_CACHED, *PPATH_OFFLOAD_STATE_CACHED
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndischimney.h
+req.include-header: Ndischimney.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndischimney.h
+apiname:
+-	PATH_OFFLOAD_STATE_CACHED
+product: Windows
+targetos: Windows
+req.typenames: "*PPATH_OFFLOAD_STATE_CACHED, PATH_OFFLOAD_STATE_CACHED"
 ---
 
 # _PATH_OFFLOAD_STATE_CACHED structure

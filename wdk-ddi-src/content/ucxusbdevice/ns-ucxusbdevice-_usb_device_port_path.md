@@ -1,42 +1,47 @@
 ---
-UID : NS:ucxusbdevice._USB_DEVICE_PORT_PATH
-title : "_USB_DEVICE_PORT_PATH"
-author : windows-driver-content
-description : Contains the port path of a USB device.
-old-location : buses\_usb_device_port_path.htm
-old-project : usbref
-ms.assetid : 75C7DB08-F831-43ED-8373-F3F4C7AF89E8
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : "*PUSB_DEVICE_PORT_PATH, ucxusbdevice/P_USB_DEVICE_PORT_PATH, USB_DEVICE_PORT_PATH structure [Buses], P_USB_DEVICE_PORT_PATH, _USB_DEVICE_PORT_PATH, ucxusbdevice/_USB_DEVICE_PORT_PATH, USB_DEVICE_PORT_PATH, buses._usb_device_port_path, P_USB_DEVICE_PORT_PATH structure pointer [Buses]"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ucxusbdevice.h
-req.include-header : Ucxclass.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : USB_DEVICE_PORT_PATH, *PUSB_DEVICE_PORT_PATH
-req.product : Windows 10 or later.
+UID: NS:ucxusbdevice._USB_DEVICE_PORT_PATH
+title: "_USB_DEVICE_PORT_PATH"
+author: windows-driver-content
+description: Contains the port path of a USB device.
+old-location: buses\_usb_device_port_path.htm
+old-project: usbref
+ms.assetid: 75C7DB08-F831-43ED-8373-F3F4C7AF89E8
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: "*PUSB_DEVICE_PORT_PATH, ucxusbdevice/P_USB_DEVICE_PORT_PATH, USB_DEVICE_PORT_PATH structure [Buses], P_USB_DEVICE_PORT_PATH, _USB_DEVICE_PORT_PATH, ucxusbdevice/_USB_DEVICE_PORT_PATH, USB_DEVICE_PORT_PATH, buses._usb_device_port_path, P_USB_DEVICE_PORT_PATH structure pointer [Buses]"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ucxusbdevice.h
+req.include-header: Ucxclass.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ucxusbdevice.h
+apiname:
+-	USB_DEVICE_PORT_PATH
+product: Windows
+targetos: Windows
+req.typenames: USB_DEVICE_PORT_PATH, *PUSB_DEVICE_PORT_PATH
+req.product: Windows 10 or later.
 ---
 
 # _USB_DEVICE_PORT_PATH structure

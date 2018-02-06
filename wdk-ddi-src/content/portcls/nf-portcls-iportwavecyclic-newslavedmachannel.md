@@ -1,41 +1,46 @@
 ---
-UID : NF:portcls.IPortWaveCyclic.NewSlaveDmaChannel
-title : IPortWaveCyclic::NewSlaveDmaChannel method
-author : windows-driver-content
-description : The NewSlaveDmaChannel method creates a new instance of a subordinate DMA channel.
-old-location : audio\iportwavecyclic_newslavedmachannel.htm
-old-project : audio
-ms.assetid : 4d20bd03-9fde-4fcf-a90b-5933221cda93
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : IPortWaveCyclic::NewSlaveDmaChannel, portcls/IPortWaveCyclic::NewSlaveDmaChannel, audio.iportwavecyclic_newslavedmachannel, IPortWaveCyclic, IPortWaveCyclic interface [Audio Devices], NewSlaveDmaChannel method, NewSlaveDmaChannel, NewSlaveDmaChannel method [Audio Devices], IPortWaveCyclic interface, NewSlaveDmaChannel method [Audio Devices], audmp-routines_63146fe2-162d-4457-9dda-807f1d3931ac.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : portcls.h
-req.include-header : Portcls.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : portcls.h
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.IPortWaveCyclic.NewSlaveDmaChannel
+title: IPortWaveCyclic::NewSlaveDmaChannel method
+author: windows-driver-content
+description: The NewSlaveDmaChannel method creates a new instance of a subordinate DMA channel.
+old-location: audio\iportwavecyclic_newslavedmachannel.htm
+old-project: audio
+ms.assetid: 4d20bd03-9fde-4fcf-a90b-5933221cda93
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: IPortWaveCyclic::NewSlaveDmaChannel, portcls/IPortWaveCyclic::NewSlaveDmaChannel, audio.iportwavecyclic_newslavedmachannel, IPortWaveCyclic, IPortWaveCyclic interface [Audio Devices], NewSlaveDmaChannel method, NewSlaveDmaChannel, NewSlaveDmaChannel method [Audio Devices], IPortWaveCyclic interface, NewSlaveDmaChannel method [Audio Devices], audmp-routines_63146fe2-162d-4457-9dda-807f1d3931ac.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: portcls.h
+req.include-header: Portcls.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: portcls.h
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	portcls.h
+apiname:
+-	IPortWaveCyclic.NewSlaveDmaChannel
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

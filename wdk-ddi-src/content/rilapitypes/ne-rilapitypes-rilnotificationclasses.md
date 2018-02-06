@@ -1,42 +1,47 @@
 ---
-UID : NE:rilapitypes.RILNOTIFICATIONCLASSES
-title : RILNOTIFICATIONCLASSES
-author : windows-driver-content
-description : This enumeration describes the RILNOTIFICATIONCLASSES.
-old-location : netvista\rilnotificationclasses.htm
-old-project : netvista
-ms.assetid : f61fc609-40ca-40eb-a877-88c73cf3506e
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : RIL_NCLASS_FUNCRESULT, RILNOTIFICATIONCLASSES enumeration [Network Drivers Starting with Windows Vista], RIL_NCLASS_NOTIFICATIONS, rilapitypes/RIL_NCLASS_FUNCRESULT, netvista.rilnotificationclasses, RILNOTIFICATIONCLASSES, rilapitypes/RILNOTIFICATIONCLASSES, rilapitypes/RIL_NCLASS_NOTIFICATIONS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : rilapitypes.h
-req.include-header : Rilapitypes.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RILNOTIFICATIONCLASSES
-req.product : Windows 10 or later.
+UID: NE:rilapitypes.RILNOTIFICATIONCLASSES
+title: RILNOTIFICATIONCLASSES
+author: windows-driver-content
+description: This enumeration describes the RILNOTIFICATIONCLASSES.
+old-location: netvista\rilnotificationclasses.htm
+old-project: netvista
+ms.assetid: f61fc609-40ca-40eb-a877-88c73cf3506e
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: RIL_NCLASS_FUNCRESULT, RILNOTIFICATIONCLASSES enumeration [Network Drivers Starting with Windows Vista], RIL_NCLASS_NOTIFICATIONS, rilapitypes/RIL_NCLASS_FUNCRESULT, netvista.rilnotificationclasses, RILNOTIFICATIONCLASSES, rilapitypes/RILNOTIFICATIONCLASSES, rilapitypes/RIL_NCLASS_NOTIFICATIONS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: rilapitypes.h
+req.include-header: Rilapitypes.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	rilapitypes.h
+apiname:
+-	RILNOTIFICATIONCLASSES
+product: Windows
+targetos: Windows
+req.typenames: RILNOTIFICATIONCLASSES
+req.product: Windows 10 or later.
 ---
 
 # RILNOTIFICATIONCLASSES Enumeration
@@ -54,16 +59,16 @@ enum RILNOTIFICATIONCLASSES {
 ## Constants
 
 <table>
-
-<tr>
-<td>RIL_NCLASS_FUNCRESULT</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_NCLASS_NOTIFICATIONS</td>
-<td></td>
-</tr>
+            
+                <tr>
+                    <td>RIL_NCLASS_FUNCRESULT</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_NCLASS_NOTIFICATIONS</td>
+                    <td></td>
+                </tr>
 </table>
 
 
@@ -72,9 +77,9 @@ enum RILNOTIFICATIONCLASSES {
 | ---- |:---- |
 | **Header** | rilapitypes.h (include Rilapitypes.h) |
 
-## See Also
+    ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn946509">Cellular COM enumerations</a>
+        <a href="https://msdn.microsoft.com/library/windows/hardware/dn946509">Cellular COM enumerations</a>
 
  
 

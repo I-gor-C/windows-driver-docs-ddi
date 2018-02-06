@@ -1,42 +1,47 @@
 ---
-UID : NS:wdm._KBUGCHECK_ADD_PAGES
-title : "_KBUGCHECK_ADD_PAGES"
-author : windows-driver-content
-description : The KBUGCHECK_ADD_PAGES structure describes one or more pages of driver-supplied data to be written by a BugCheckAddPagesCallback callback routine to the crash dump file.
-old-location : kernel\kbugcheck_add_pages.htm
-old-project : kernel
-ms.assetid : 91d5b91b-6151-4da7-b0a8-74a2e99474b5
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : KBUGCHECK_ADD_PAGES, KBUGCHECK_ADD_PAGES structure [Kernel-Mode Driver Architecture], PKBUGCHECK_ADD_PAGES structure pointer [Kernel-Mode Driver Architecture], wdm/PKBUGCHECK_ADD_PAGES, PKBUGCHECK_ADD_PAGES, *PKBUGCHECK_ADD_PAGES, wdm/KBUGCHECK_ADD_PAGES, _KBUGCHECK_ADD_PAGES, kstruct_c_4d14d1f9-fada-4eaa-afc7-88228745fcc1.xml, kernel.kbugcheck_add_pages
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in Windows Server 2008 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKBUGCHECK_ADD_PAGES, KBUGCHECK_ADD_PAGES"
-req.product : Windows 10 or later.
+UID: NS:wdm._KBUGCHECK_ADD_PAGES
+title: "_KBUGCHECK_ADD_PAGES"
+author: windows-driver-content
+description: The KBUGCHECK_ADD_PAGES structure describes one or more pages of driver-supplied data to be written by a BugCheckAddPagesCallback callback routine to the crash dump file.
+old-location: kernel\kbugcheck_add_pages.htm
+old-project: kernel
+ms.assetid: 91d5b91b-6151-4da7-b0a8-74a2e99474b5
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: KBUGCHECK_ADD_PAGES, KBUGCHECK_ADD_PAGES structure [Kernel-Mode Driver Architecture], PKBUGCHECK_ADD_PAGES structure pointer [Kernel-Mode Driver Architecture], wdm/PKBUGCHECK_ADD_PAGES, PKBUGCHECK_ADD_PAGES, *PKBUGCHECK_ADD_PAGES, wdm/KBUGCHECK_ADD_PAGES, _KBUGCHECK_ADD_PAGES, kstruct_c_4d14d1f9-fada-4eaa-afc7-88228745fcc1.xml, kernel.kbugcheck_add_pages
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in Windows Server 2008 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	KBUGCHECK_ADD_PAGES
+product: Windows
+targetos: Windows
+req.typenames: "*PKBUGCHECK_ADD_PAGES, KBUGCHECK_ADD_PAGES"
+req.product: Windows 10 or later.
 ---
 
 # _KBUGCHECK_ADD_PAGES structure

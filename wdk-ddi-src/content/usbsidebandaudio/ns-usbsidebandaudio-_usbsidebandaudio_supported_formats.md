@@ -1,42 +1,46 @@
 ---
-UID : NS:usbsidebandaudio._USBSIDEBANDAUDIO_SUPPORTED_FORMATS
-title : "_USBSIDEBANDAUDIO_SUPPORTED_FORMATS"
-author : windows-driver-content
-description : TBD.
-old-location : audio\usbsidebandaudio_supported_formats.htm
-old-project : audio
-ms.assetid : 69D1C328-309B-41FC-8216-971A3C6D38AF
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : PUSBSIDEBANDAUDIO_SUPPORTED_FORMATS structure pointer [Audio Devices], PUSBSIDEBANDAUDIO_SUPPORTED_FORMATS, audio.usbsidebandaudio_supported_formats, usbsidebandaudio/USBSIDEBANDAUDIO_SUPPORTED_FORMATS, *PUSBSIDEBANDAUDIO_SUPPORTED_FORMATS, usbsidebandaudio/PUSBSIDEBANDAUDIO_SUPPORTED_FORMATS, _USBSIDEBANDAUDIO_SUPPORTED_FORMATS, USBSIDEBANDAUDIO_SUPPORTED_FORMATS, USBSIDEBANDAUDIO_SUPPORTED_FORMATS structure [Audio Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : usbsidebandaudio.h
-req.include-header : Usbsidebandaudio.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUSBSIDEBANDAUDIO_SUPPORTED_FORMATS, USBSIDEBANDAUDIO_SUPPORTED_FORMATS"
-req.product : Windows 10 or later.
+UID: NS:usbsidebandaudio._USBSIDEBANDAUDIO_SUPPORTED_FORMATS
+title: "_USBSIDEBANDAUDIO_SUPPORTED_FORMATS"
+author: windows-driver-content
+description: TBD.
+old-location: audio\usbsidebandaudio_supported_formats.htm
+old-project: audio
+ms.assetid: 69D1C328-309B-41FC-8216-971A3C6D38AF
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: PUSBSIDEBANDAUDIO_SUPPORTED_FORMATS structure pointer [Audio Devices], PUSBSIDEBANDAUDIO_SUPPORTED_FORMATS, audio.usbsidebandaudio_supported_formats, usbsidebandaudio/USBSIDEBANDAUDIO_SUPPORTED_FORMATS, *PUSBSIDEBANDAUDIO_SUPPORTED_FORMATS, usbsidebandaudio/PUSBSIDEBANDAUDIO_SUPPORTED_FORMATS, _USBSIDEBANDAUDIO_SUPPORTED_FORMATS, USBSIDEBANDAUDIO_SUPPORTED_FORMATS, USBSIDEBANDAUDIO_SUPPORTED_FORMATS structure [Audio Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: usbsidebandaudio.h
+req.include-header: Usbsidebandaudio.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	kbSyntax
+apitype:
+-	<TBD>
+apilocation:
+-
+apiname:
+-	USBSIDEBANDAUDIO_SUPPORTED_FORMATS
+product: Windows
+targetos: Windows
+req.typenames: "*PUSBSIDEBANDAUDIO_SUPPORTED_FORMATS, USBSIDEBANDAUDIO_SUPPORTED_FORMATS"
+req.product: Windows 10 or later.
 ---
 
 # _USBSIDEBANDAUDIO_SUPPORTED_FORMATS structure

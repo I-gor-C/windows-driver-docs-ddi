@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3DWDDM2_2DDI_SET_SHADERCACHE_SESSION
-title : PFND3DWDDM2_2DDI_SET_SHADERCACHE_SESSION
-author : windows-driver-content
-description : The pfnSetShaderCacheSession callback function sets a shader cache session.
-old-location : display\pfnd3dwddm2_2ddi_set_shadercache_session.htm
-old-project : display
-ms.assetid : 18BA159D-5E78-41AC-8CB8-97AEC2AE9592
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.pfnd3dwddm2_2ddi_set_shadercache_session, pfnSetShaderCacheSession callback function [Display Devices], pfnSetShaderCacheSession, PFND3DWDDM2_2DDI_SET_SHADERCACHE_SESSION, PFND3DWDDM2_2DDI_SET_SHADERCACHE_SESSION, d3d10umddi/pfnSetShaderCacheSession
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d12umddi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3DWDDM2_2DDI_SET_SHADERCACHE_SESSION
+title: PFND3DWDDM2_2DDI_SET_SHADERCACHE_SESSION
+author: windows-driver-content
+description: The pfnSetShaderCacheSession callback function sets a shader cache session.
+old-location: display\pfnd3dwddm2_2ddi_set_shadercache_session.htm
+old-project: display
+ms.assetid: 18BA159D-5E78-41AC-8CB8-97AEC2AE9592
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.pfnd3dwddm2_2ddi_set_shadercache_session, pfnSetShaderCacheSession callback function [Display Devices], pfnSetShaderCacheSession, PFND3DWDDM2_2DDI_SET_SHADERCACHE_SESSION, PFND3DWDDM2_2DDI_SET_SHADERCACHE_SESSION, d3d10umddi/pfnSetShaderCacheSession
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d12umddi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	pfnSetShaderCacheSession
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

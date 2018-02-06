@@ -1,42 +1,48 @@
 ---
-UID : NF:wmilib.WmiCompleteRequest
-title : WmiCompleteRequest function
-author : windows-driver-content
-description : The WmiCompleteRequest routine indicates that a driver has finished processing a WMI request in a DpWmiXxx routine.
-old-location : kernel\wmicompleterequest.htm
-old-project : kernel
-ms.assetid : c6377dcc-a83b-4766-b882-25d228a26efe
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.wmicompleterequest, k902_08bc200c-67e2-4806-b744-621f31ec6af3.xml, wmilib/WmiCompleteRequest, WmiCompleteRequest, WmiCompleteRequest routine [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wmilib.h
-req.include-header : Wmilib.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wmilib.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WMI_CHANGER_PROBLEM_DEVICE_ERROR, *PWMI_CHANGER_PROBLEM_DEVICE_ERROR
-req.product : Windows 10 or later.
+UID: NF:wmilib.WmiCompleteRequest
+title: WmiCompleteRequest function
+author: windows-driver-content
+description: The WmiCompleteRequest routine indicates that a driver has finished processing a WMI request in a DpWmiXxx routine.
+old-location: kernel\wmicompleterequest.htm
+old-project: kernel
+ms.assetid: c6377dcc-a83b-4766-b882-25d228a26efe
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.wmicompleterequest, k902_08bc200c-67e2-4806-b744-621f31ec6af3.xml, wmilib/WmiCompleteRequest, WmiCompleteRequest, WmiCompleteRequest routine [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wmilib.h
+req.include-header: Wmilib.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wmilib.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wmilib.lib
+-	Wmilib.dll
+apiname:
+-	WmiCompleteRequest
+product: Windows
+targetos: Windows
+req.typenames: WMI_CHANGER_PROBLEM_DEVICE_ERROR, *PWMI_CHANGER_PROBLEM_DEVICE_ERROR
+req.product: Windows 10 or later.
 ---
 
 

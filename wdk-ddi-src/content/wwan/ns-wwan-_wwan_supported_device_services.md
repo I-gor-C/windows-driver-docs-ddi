@@ -1,42 +1,47 @@
 ---
-UID : NS:wwan._WWAN_SUPPORTED_DEVICE_SERVICES
-title : "_WWAN_SUPPORTED_DEVICE_SERVICES"
-author : windows-driver-content
-description : The WWAN_SUPPORTED_DEVICE_SERVICES structure describes information about device services supported by the miniport driver.
-old-location : netvista\wwan_supported_device_services.htm
-old-project : netvista
-ms.assetid : CFCF122F-E971-4A6B-91C9-71A8030366A9
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : wwan/WWAN_SUPPORTED_DEVICE_SERVICES, wwan/PWWAN_SUPPORTED_DEVICE_SERVICES, _WWAN_SUPPORTED_DEVICE_SERVICES, *PWWAN_SUPPORTED_DEVICE_SERVICES, netvista.wwan_supported_device_services, PWWAN_SUPPORTED_DEVICE_SERVICES structure pointer [Network Drivers Starting with Windows Vista], WWAN_SUPPORTED_DEVICE_SERVICES structure [Network Drivers Starting with Windows Vista], PWWAN_SUPPORTED_DEVICE_SERVICES, WWAN_SUPPORTED_DEVICE_SERVICES
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wwan.h
-req.include-header : Wwan.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with  Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWWAN_SUPPORTED_DEVICE_SERVICES, WWAN_SUPPORTED_DEVICE_SERVICES"
-req.product : Windows 10 or later.
+UID: NS:wwan._WWAN_SUPPORTED_DEVICE_SERVICES
+title: "_WWAN_SUPPORTED_DEVICE_SERVICES"
+author: windows-driver-content
+description: The WWAN_SUPPORTED_DEVICE_SERVICES structure describes information about device services supported by the miniport driver.
+old-location: netvista\wwan_supported_device_services.htm
+old-project: netvista
+ms.assetid: CFCF122F-E971-4A6B-91C9-71A8030366A9
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: wwan/WWAN_SUPPORTED_DEVICE_SERVICES, wwan/PWWAN_SUPPORTED_DEVICE_SERVICES, _WWAN_SUPPORTED_DEVICE_SERVICES, *PWWAN_SUPPORTED_DEVICE_SERVICES, netvista.wwan_supported_device_services, PWWAN_SUPPORTED_DEVICE_SERVICES structure pointer [Network Drivers Starting with Windows Vista], WWAN_SUPPORTED_DEVICE_SERVICES structure [Network Drivers Starting with Windows Vista], PWWAN_SUPPORTED_DEVICE_SERVICES, WWAN_SUPPORTED_DEVICE_SERVICES
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wwan.h
+req.include-header: Wwan.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with  Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wwan.h
+apiname:
+-	WWAN_SUPPORTED_DEVICE_SERVICES
+product: Windows
+targetos: Windows
+req.typenames: "*PWWAN_SUPPORTED_DEVICE_SERVICES, WWAN_SUPPORTED_DEVICE_SERVICES"
+req.product: Windows 10 or later.
 ---
 
 # _WWAN_SUPPORTED_DEVICE_SERVICES structure

@@ -1,41 +1,46 @@
 ---
-UID : NI:hidclass.IOCTL_HID_SET_S0_IDLE_TIMEOUT
-title : IOCTL_HID_SET_S0_IDLE_TIMEOUT
-author : windows-driver-content
-description : The IOCTL_HID_SET_S0_IDLE_TIMEOUT request is used by a client to inform the HID class driver about the client's preferred idle timeout value.
-old-location : hid\ioctl_hid_set_s0_idle_timeout.htm
-old-project : hid
-ms.assetid : 9372E6D5-0E0B-4916-929D-73532FB6A5D6
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : hid.ioctl_hid_set_s0_idle_timeout, IOCTL_HID_SET_S0_IDLE_TIMEOUT control code [Human Input Devices], IOCTL_HID_SET_S0_IDLE_TIMEOUT, hidclass/IOCTL_HID_SET_S0_IDLE_TIMEOUT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : hidclass.h
-req.include-header : Hidclass.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HDAUDIO_STREAM_FORMAT, *PHDAUDIO_STREAM_FORMAT
+UID: NI:hidclass.IOCTL_HID_SET_S0_IDLE_TIMEOUT
+title: IOCTL_HID_SET_S0_IDLE_TIMEOUT
+author: windows-driver-content
+description: The IOCTL_HID_SET_S0_IDLE_TIMEOUT request is used by a client to inform the HID class driver about the client's preferred idle timeout value.
+old-location: hid\ioctl_hid_set_s0_idle_timeout.htm
+old-project: hid
+ms.assetid: 9372E6D5-0E0B-4916-929D-73532FB6A5D6
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: hid.ioctl_hid_set_s0_idle_timeout, IOCTL_HID_SET_S0_IDLE_TIMEOUT control code [Human Input Devices], IOCTL_HID_SET_S0_IDLE_TIMEOUT, hidclass/IOCTL_HID_SET_S0_IDLE_TIMEOUT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: hidclass.h
+req.include-header: Hidclass.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hidclass.h
+apiname:
+-	IOCTL_HID_SET_S0_IDLE_TIMEOUT
+product: Windows
+targetos: Windows
+req.typenames: HDAUDIO_STREAM_FORMAT, *PHDAUDIO_STREAM_FORMAT
 ---
 
 # IOCTL_HID_SET_S0_IDLE_TIMEOUT IOCTL

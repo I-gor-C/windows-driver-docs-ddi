@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.PoStartDeviceBusy
-title : PoStartDeviceBusy function
-author : windows-driver-content
-description : The PoStartDeviceBusy routine marks the start of a period of time in which the device is busy.
-old-location : kernel\postartdevicebusy.htm
-old-project : kernel
-ms.assetid : f3801fdf-c300-4863-afb9-49fad011dc4c
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : PoStartDeviceBusy, portn_b129df72-9d6a-46b7-99db-ad2e96cfeafe.xml, PoStartDeviceBusy routine [Kernel-Mode Driver Architecture], kernel.postartdevicebusy, wdm/PoStartDeviceBusy
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 7.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.PoStartDeviceBusy
+title: PoStartDeviceBusy function
+author: windows-driver-content
+description: The PoStartDeviceBusy routine marks the start of a period of time in which the device is busy.
+old-location: kernel\postartdevicebusy.htm
+old-project: kernel
+ms.assetid: f3801fdf-c300-4863-afb9-49fad011dc4c
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: PoStartDeviceBusy, portn_b129df72-9d6a-46b7-99db-ad2e96cfeafe.xml, PoStartDeviceBusy routine [Kernel-Mode Driver Architecture], kernel.postartdevicebusy, wdm/PoStartDeviceBusy
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 7.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	PoStartDeviceBusy
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

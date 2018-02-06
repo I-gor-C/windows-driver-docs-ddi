@@ -1,41 +1,49 @@
 ---
-UID : NF:irb.AtaPortGetPhysicalAddress
-title : AtaPortGetPhysicalAddress function
-author : windows-driver-content
-description : The AtaPortGetPhysicalAddress routine converts the virtual address range to the physical address range.
-old-location : storage\ataportgetphysicaladdress.htm
-old-project : storage
-ms.assetid : f6c595f2-a493-453a-a744-7ce6577ae29e
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : AtaPortGetPhysicalAddress routine [Storage Devices], storage.ataportgetphysicaladdress, AtaPortGetPhysicalAddress, atartns_8067117e-f163-4fe9-a3f4-24b32b5bcf63.xml, irb/AtaPortGetPhysicalAddress
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : irb.h
-req.include-header : Ata.h, Irb.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ataport.lib; Pciidex.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : IDE_POWER_STATE
+UID: NF:irb.AtaPortGetPhysicalAddress
+title: AtaPortGetPhysicalAddress function
+author: windows-driver-content
+description: The AtaPortGetPhysicalAddress routine converts the virtual address range to the physical address range.
+old-location: storage\ataportgetphysicaladdress.htm
+old-project: storage
+ms.assetid: f6c595f2-a493-453a-a744-7ce6577ae29e
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: AtaPortGetPhysicalAddress routine [Storage Devices], storage.ataportgetphysicaladdress, AtaPortGetPhysicalAddress, atartns_8067117e-f163-4fe9-a3f4-24b32b5bcf63.xml, irb/AtaPortGetPhysicalAddress
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: irb.h
+req.include-header: Ata.h, Irb.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ataport.lib; Pciidex.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ataport.lib
+-	ataport.dll
+-	pciidex.lib
+-	pciidex.dll
+apiname:
+-	AtaPortGetPhysicalAddress
+product: Windows
+targetos: Windows
+req.typenames: IDE_POWER_STATE
 ---
 
 

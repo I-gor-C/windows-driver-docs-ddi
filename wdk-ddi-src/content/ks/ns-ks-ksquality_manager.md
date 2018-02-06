@@ -1,41 +1,46 @@
 ---
-UID : NS:ks.KSQUALITY_MANAGER
-title : KSQUALITY_MANAGER
-author : windows-driver-content
-description : The KSQUALITY_MANAGER structure is used with the KSPROPERTY_STREAM_QUALITY property and contains the handle of the quality manager sink and a context to pass in the quality complaints.
-old-location : stream\ksquality_manager.htm
-old-project : stream
-ms.assetid : 33e66fa0-53d6-400a-a03b-6d7b3fd01ace
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : "*PKSQUALITY_MANAGER, KSQUALITY_MANAGER, ks-struct_97f36a6a-6d00-4cec-b13d-8f039b54c5a8.xml, PKSQUALITY_MANAGER, ks/PKSQUALITY_MANAGER, stream.ksquality_manager, ks/KSQUALITY_MANAGER, PKSQUALITY_MANAGER structure pointer [Streaming Media Devices], KSQUALITY_MANAGER structure [Streaming Media Devices]"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKSQUALITY_MANAGER, KSQUALITY_MANAGER"
+UID: NS:ks.KSQUALITY_MANAGER
+title: KSQUALITY_MANAGER
+author: windows-driver-content
+description: The KSQUALITY_MANAGER structure is used with the KSPROPERTY_STREAM_QUALITY property and contains the handle of the quality manager sink and a context to pass in the quality complaints.
+old-location: stream\ksquality_manager.htm
+old-project: stream
+ms.assetid: 33e66fa0-53d6-400a-a03b-6d7b3fd01ace
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: "*PKSQUALITY_MANAGER, KSQUALITY_MANAGER, ks-struct_97f36a6a-6d00-4cec-b13d-8f039b54c5a8.xml, PKSQUALITY_MANAGER, ks/PKSQUALITY_MANAGER, stream.ksquality_manager, ks/KSQUALITY_MANAGER, PKSQUALITY_MANAGER structure pointer [Streaming Media Devices], KSQUALITY_MANAGER structure [Streaming Media Devices]"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	KSQUALITY_MANAGER
+product: Windows
+targetos: Windows
+req.typenames: "*PKSQUALITY_MANAGER, KSQUALITY_MANAGER"
 ---
 
 # KSQUALITY_MANAGER structure

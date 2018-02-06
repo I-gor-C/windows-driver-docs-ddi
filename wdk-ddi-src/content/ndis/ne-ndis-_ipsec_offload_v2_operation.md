@@ -1,41 +1,46 @@
 ---
-UID : NE:ndis._IPSEC_OFFLOAD_V2_OPERATION
-title : "_IPSEC_OFFLOAD_V2_OPERATION"
-author : windows-driver-content
-description : The IPSEC_OFFLOAD_V2_OPERATION enumeration specifies the IPsec operation for which a security association (SA) is used.
-old-location : netvista\ipsec_offload_v2_operation.htm
-old-project : netvista
-ms.assetid : bb26c8af-1564-4cf8-ab40-b50b4811466d
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : ndis/PIPSEC_OFFLOAD_V2_OPERATION, ndis/IPsecOffloadV2Ah, PIPSEC_OFFLOAD_V2_OPERATION, task_offload_IPsecv2_ref_37a1424a-fe40-440d-a071-9483c5bcb516.xml, IPsecOffloadV2Ah, ndis/IPsecOffloadV2Max, IPSEC_OFFLOAD_V2_OPERATION, ndis/IPsecOffloadV2Esp, PIPSEC_OFFLOAD_V2_OPERATION enumeration pointer [Network Drivers Starting with Windows Vista], _IPSEC_OFFLOAD_V2_OPERATION, *PIPSEC_OFFLOAD_V2_OPERATION, IPSEC_OFFLOAD_V2_OPERATION enumeration [Network Drivers Starting with Windows Vista], netvista.ipsec_offload_v2_operation, IPsecOffloadV2Esp, IPsecOffloadV2Max, ndis/IPSEC_OFFLOAD_V2_OPERATION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.1 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PIPSEC_OFFLOAD_V2_OPERATION, IPSEC_OFFLOAD_V2_OPERATION"
+UID: NE:ndis._IPSEC_OFFLOAD_V2_OPERATION
+title: "_IPSEC_OFFLOAD_V2_OPERATION"
+author: windows-driver-content
+description: The IPSEC_OFFLOAD_V2_OPERATION enumeration specifies the IPsec operation for which a security association (SA) is used.
+old-location: netvista\ipsec_offload_v2_operation.htm
+old-project: netvista
+ms.assetid: bb26c8af-1564-4cf8-ab40-b50b4811466d
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: ndis/PIPSEC_OFFLOAD_V2_OPERATION, ndis/IPsecOffloadV2Ah, PIPSEC_OFFLOAD_V2_OPERATION, task_offload_IPsecv2_ref_37a1424a-fe40-440d-a071-9483c5bcb516.xml, IPsecOffloadV2Ah, ndis/IPsecOffloadV2Max, IPSEC_OFFLOAD_V2_OPERATION, ndis/IPsecOffloadV2Esp, PIPSEC_OFFLOAD_V2_OPERATION enumeration pointer [Network Drivers Starting with Windows Vista], _IPSEC_OFFLOAD_V2_OPERATION, *PIPSEC_OFFLOAD_V2_OPERATION, IPSEC_OFFLOAD_V2_OPERATION enumeration [Network Drivers Starting with Windows Vista], netvista.ipsec_offload_v2_operation, IPsecOffloadV2Esp, IPsecOffloadV2Max, ndis/IPSEC_OFFLOAD_V2_OPERATION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.1 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndis.h
+apiname:
+-	IPSEC_OFFLOAD_V2_OPERATION
+product: Windows
+targetos: Windows
+req.typenames: "*PIPSEC_OFFLOAD_V2_OPERATION, IPSEC_OFFLOAD_V2_OPERATION"
 ---
 
 # _IPSEC_OFFLOAD_V2_OPERATION Enumeration
@@ -56,26 +61,26 @@ typedef enum _IPSEC_OFFLOAD_V2_OPERATION {
 ## Constants
 
 <table>
-
-<tr>
-<td>IPsecOffloadV2Ah</td>
-<td>The SA is used for authentication (integrity checking).</td>
-</tr>
-
-<tr>
-<td>IPsecOffloadV2Esp</td>
-<td>The SA is used for encryption/decryption (confidentiality).</td>
-</tr>
-
-<tr>
-<td>IPsecOffloadV2Max</td>
-<td>Reserved for NDIS.</td>
-</tr>
+            
+                <tr>
+                    <td>IPsecOffloadV2Ah</td>
+                    <td>The SA is used for authentication (integrity checking).</td>
+                </tr>
+            
+                <tr>
+                    <td>IPsecOffloadV2Esp</td>
+                    <td>The SA is used for encryption/decryption (confidentiality).</td>
+                </tr>
+            
+                <tr>
+                    <td>IPsecOffloadV2Max</td>
+                    <td>Reserved for NDIS.</td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-The IPSEC_OFFLOAD_V2_OPERATION enumeration specifies the operation for which an SA is used in the 
+        The IPSEC_OFFLOAD_V2_OPERATION enumeration specifies the operation for which an SA is used in the 
     <b>Operation</b> member of the 
     <a href="..\ndis\ns-ndis-_ipsec_offload_v2_security_association.md">
     IPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION</a> structure.
@@ -86,9 +91,9 @@ The IPSEC_OFFLOAD_V2_OPERATION enumeration specifies the operation for which an 
 | **Windows version** | Supported in NDIS 6.1 and later. Supported in NDIS 6.1 and later. |
 | **Header** | ndis.h (include Ndis.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\ndis\ns-ndis-_ipsec_offload_v2_security_association.md">
+        <a href="..\ndis\ns-ndis-_ipsec_offload_v2_security_association.md">
    IPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION</a>
 
  

@@ -1,42 +1,47 @@
 ---
-UID : NF:video.VideoPortDDCMonitorHelper
-title : VideoPortDDCMonitorHelper function
-author : windows-driver-content
-description : Queries a monitor for EDID information using the DDC protocol.
-old-location : display\videoportddcmonitorhelper.htm
-old-project : display
-ms.assetid : 2e4bd9c7-73be-47bc-b4e7-daea7781c46b
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : VideoPort_Functions_dc0bda84-97c5-49ba-9084-04149f9be157.xml, VideoPortDDCMonitorHelper function [Display Devices], video/VideoPortDDCMonitorHelper, display.videoportddcmonitorhelper, VideoPortDDCMonitorHelper
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows 2000 and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Videoprt.lib
-req.dll : Videoprt.sys
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_PORT_SERVICES
-req.product : Windows 10 or later.
+UID: NF:video.VideoPortDDCMonitorHelper
+title: VideoPortDDCMonitorHelper function
+author: windows-driver-content
+description: Queries a monitor for EDID information using the DDC protocol.
+old-location: display\videoportddcmonitorhelper.htm
+old-project: display
+ms.assetid: 2e4bd9c7-73be-47bc-b4e7-daea7781c46b
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: VideoPort_Functions_dc0bda84-97c5-49ba-9084-04149f9be157.xml, VideoPortDDCMonitorHelper function [Display Devices], video/VideoPortDDCMonitorHelper, display.videoportddcmonitorhelper, VideoPortDDCMonitorHelper
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows 2000 and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Videoprt.lib
+req.dll: Videoprt.sys
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Videoprt.sys
+apiname:
+-	VideoPortDDCMonitorHelper
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_PORT_SERVICES
+req.product: Windows 10 or later.
 ---
 
 

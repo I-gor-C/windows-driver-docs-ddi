@@ -1,41 +1,46 @@
 ---
-UID : NS:ks.KSRELATIVEEVENT
-title : KSRELATIVEEVENT
-author : windows-driver-content
-description : The KSPROPERTY_CONNECTION_STARTAT property is passed a KSRELATIVEEVENT structure.
-old-location : stream\ksrelativeevent.htm
-old-project : stream
-ms.assetid : 4edb8b74-d5e5-49ee-85a7-9eb095f5a575
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ks/KSRELATIVEEVENT, KSRELATIVEEVENT, KSRELATIVEEVENT structure [Streaming Media Devices], ks-struct_d79f6a15-6e44-4d81-b4f1-c113cbc2ee79.xml, stream.ksrelativeevent
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KSRELATIVEEVENT
+UID: NS:ks.KSRELATIVEEVENT
+title: KSRELATIVEEVENT
+author: windows-driver-content
+description: The KSPROPERTY_CONNECTION_STARTAT property is passed a KSRELATIVEEVENT structure.
+old-location: stream\ksrelativeevent.htm
+old-project: stream
+ms.assetid: 4edb8b74-d5e5-49ee-85a7-9eb095f5a575
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ks/KSRELATIVEEVENT, KSRELATIVEEVENT, KSRELATIVEEVENT structure [Streaming Media Devices], ks-struct_d79f6a15-6e44-4d81-b4f1-c113cbc2ee79.xml, stream.ksrelativeevent
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	KSRELATIVEEVENT
+product: Windows
+targetos: Windows
+req.typenames: KSRELATIVEEVENT
 ---
 
 # KSRELATIVEEVENT structure

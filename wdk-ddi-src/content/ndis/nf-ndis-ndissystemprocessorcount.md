@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisSystemProcessorCount
-title : NdisSystemProcessorCount function
-author : windows-driver-content
-description : The NdisSystemProcessorCount function determines whether the caller is running on a uniprocessor or multiprocessor computer.
-old-location : netvista\ndissystemprocessorcount.htm
-old-project : netvista
-ms.assetid : 17c7b02d-3d32-4056-9baa-2fef74765da3
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NdisSystemProcessorCount function [Network Drivers Starting with Windows Vista], ndis_sysinfo_ref_2bec0b11-bc24-4c8d-9e78-ff94c7f1645f.xml, ndis/NdisSystemProcessorCount, netvista.ndissystemprocessorcount, NdisSystemProcessorCount
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported in NDIS 6.0 and 6.1. For NDIS 6.20 and later, use NdisGroupMaxProcessorCount.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_Miscellaneous_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisSystemProcessorCount
+title: NdisSystemProcessorCount function
+author: windows-driver-content
+description: The NdisSystemProcessorCount function determines whether the caller is running on a uniprocessor or multiprocessor computer.
+old-location: netvista\ndissystemprocessorcount.htm
+old-project: netvista
+ms.assetid: 17c7b02d-3d32-4056-9baa-2fef74765da3
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NdisSystemProcessorCount function [Network Drivers Starting with Windows Vista], ndis_sysinfo_ref_2bec0b11-bc24-4c8d-9e78-ff94c7f1645f.xml, ndis/NdisSystemProcessorCount, netvista.ndissystemprocessorcount, NdisSystemProcessorCount
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported in NDIS 6.0 and 6.1. For NDIS 6.20 and later, use NdisGroupMaxProcessorCount.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_Miscellaneous_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisSystemProcessorCount
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

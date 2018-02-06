@@ -1,41 +1,46 @@
 ---
-UID : NC:fwpsk.FWPS_VSWITCH_LIFETIME_EVENT_CALLBACK0
-title : FWPS_VSWITCH_LIFETIME_EVENT_CALLBACK0
-author : windows-driver-content
-description : The filter engine calls the vSwitchLifetimeNotifyFn (FWPS_VSWITCH_LIFETIME_EVENT_CALLBACK0) callout function to notify the callout driver about create and delete events for a virtual switch.Note  FWPS_VSWITCH_LIFETIME_EVENT_CALLBACK0 is a specific version of FWPS_VSWITCH_LIFETIME_EVENT_CALLBACK. See WFP Version-Independent Names and Targeting Specific Versions of Windows for more information.
-old-location : netvista\fwps_vswitch_lifetime_event_callback0.htm
-old-project : netvista
-ms.assetid : 6A2058FB-AE3D-48F0-B1D9-3B8894A5419E
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.fwps_vswitch_lifetime_event_callback0, vSwitchLifetimeNotifyFn callback function [Network Drivers Starting with Windows Vista], vSwitchLifetimeNotifyFn, FWPS_VSWITCH_LIFETIME_EVENT_CALLBACK0, FWPS_VSWITCH_LIFETIME_EVENT_CALLBACK0, fwpsk/vSwitchLifetimeNotifyFn
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : fwpsk.h
-req.include-header : Fwpsk.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : INSTANCE_PARTIAL_INFORMATION, PINSTANCE_PARTIAL_INFORMATION
+UID: NC:fwpsk.FWPS_VSWITCH_LIFETIME_EVENT_CALLBACK0
+title: FWPS_VSWITCH_LIFETIME_EVENT_CALLBACK0
+author: windows-driver-content
+description: The filter engine calls the vSwitchLifetimeNotifyFn (FWPS_VSWITCH_LIFETIME_EVENT_CALLBACK0) callout function to notify the callout driver about create and delete events for a virtual switch.Note  FWPS_VSWITCH_LIFETIME_EVENT_CALLBACK0 is a specific version of FWPS_VSWITCH_LIFETIME_EVENT_CALLBACK. See WFP Version-Independent Names and Targeting Specific Versions of Windows for more information.
+old-location: netvista\fwps_vswitch_lifetime_event_callback0.htm
+old-project: netvista
+ms.assetid: 6A2058FB-AE3D-48F0-B1D9-3B8894A5419E
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.fwps_vswitch_lifetime_event_callback0, vSwitchLifetimeNotifyFn callback function [Network Drivers Starting with Windows Vista], vSwitchLifetimeNotifyFn, FWPS_VSWITCH_LIFETIME_EVENT_CALLBACK0, FWPS_VSWITCH_LIFETIME_EVENT_CALLBACK0, fwpsk/vSwitchLifetimeNotifyFn
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: fwpsk.h
+req.include-header: Fwpsk.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	fwpsk.h
+apiname:
+-	vSwitchLifetimeNotifyFn
+product: Windows
+targetos: Windows
+req.typenames: INSTANCE_PARTIAL_INFORMATION, PINSTANCE_PARTIAL_INFORMATION
 ---
 
 

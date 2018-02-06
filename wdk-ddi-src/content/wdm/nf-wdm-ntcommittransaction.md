@@ -1,42 +1,48 @@
 ---
-UID : NF:wdm.NtCommitTransaction
-title : NtCommitTransaction function
-author : windows-driver-content
-description : The ZwCommitTransaction routine initiates a commit operation for a specified transaction.
-old-location : kernel\zwcommittransaction.htm
-old-project : kernel
-ms.assetid : 145646f3-ff90-41d6-bf76-947cdf93b489
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/NtCommitTransaction, NtCommitTransaction, wdm/ZwCommitTransaction, ktm_ref_bb49aa00-dbb3-4533-83c1-1cfc56073d8a.xml, kernel.zwcommittransaction, ZwCommitTransaction routine [Kernel-Mode Driver Architecture], ZwCommitTransaction
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.NtCommitTransaction
+title: NtCommitTransaction function
+author: windows-driver-content
+description: The ZwCommitTransaction routine initiates a commit operation for a specified transaction.
+old-location: kernel\zwcommittransaction.htm
+old-project: kernel
+ms.assetid: 145646f3-ff90-41d6-bf76-947cdf93b489
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/NtCommitTransaction, NtCommitTransaction, wdm/ZwCommitTransaction, ktm_ref_bb49aa00-dbb3-4533-83c1-1cfc56073d8a.xml, kernel.zwcommittransaction, ZwCommitTransaction routine [Kernel-Mode Driver Architecture], ZwCommitTransaction
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ZwCommitTransaction
+-	NtCommitTransaction
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

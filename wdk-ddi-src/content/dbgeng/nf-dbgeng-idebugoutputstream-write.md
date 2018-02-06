@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugOutputStream.Write
-title : IDebugOutputStream::Write method
-author : windows-driver-content
-description : Writes to the debug output stream.
-old-location : debugger\idebugoutputstream_write.htm
-old-project : debugger
-ms.assetid : CC609DA8-9778-4AFC-9205-5F68AF15927C
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugOutputStream, dbgeng/IDebugOutputStream::Write, Write, IDebugOutputStream interface [Windows Debugging], Write method, Write method [Windows Debugging], debugger.idebugoutputstream_write, IDebugOutputStream::Write, Write method [Windows Debugging], IDebugOutputStream interface
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugOutputStream.Write
+title: IDebugOutputStream::Write method
+author: windows-driver-content
+description: Writes to the debug output stream.
+old-location: debugger\idebugoutputstream_write.htm
+old-project: debugger
+ms.assetid: CC609DA8-9778-4AFC-9205-5F68AF15927C
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugOutputStream, dbgeng/IDebugOutputStream::Write, Write, IDebugOutputStream interface [Windows Debugging], Write method, Write method [Windows Debugging], debugger.idebugoutputstream_write, IDebugOutputStream::Write, Write method [Windows Debugging], IDebugOutputStream interface
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugOutputStream.Write
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

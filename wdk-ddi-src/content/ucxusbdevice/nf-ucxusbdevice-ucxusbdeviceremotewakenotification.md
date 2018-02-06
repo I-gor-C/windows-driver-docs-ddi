@@ -1,42 +1,47 @@
 ---
-UID : NF:ucxusbdevice.UcxUsbDeviceRemoteWakeNotification
-title : UcxUsbDeviceRemoteWakeNotification function
-author : windows-driver-content
-description : Notifies UCX that a remote wake signal from the device is received.
-old-location : buses\_ucxusbdeviceremotewakenotification.htm
-old-project : usbref
-ms.assetid : 0C95831F-2E20-461C-8478-9A40C1F063E2
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ucxusbdevice/UcxUsbDeviceRemoteWakeNotification, buses._ucxusbdeviceremotewakenotification, UcxUsbDeviceRemoteWakeNotification method [Buses], UcxUsbDeviceRemoteWakeNotification
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ucxusbdevice.h
-req.include-header : Ucxclass.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : UCX_USBDEVICE_CHARACTERISTIC_TYPE
-req.product : Windows 10 or later.
+UID: NF:ucxusbdevice.UcxUsbDeviceRemoteWakeNotification
+title: UcxUsbDeviceRemoteWakeNotification function
+author: windows-driver-content
+description: Notifies UCX that a remote wake signal from the device is received.
+old-location: buses\_ucxusbdeviceremotewakenotification.htm
+old-project: usbref
+ms.assetid: 0C95831F-2E20-461C-8478-9A40C1F063E2
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ucxusbdevice/UcxUsbDeviceRemoteWakeNotification, buses._ucxusbdeviceremotewakenotification, UcxUsbDeviceRemoteWakeNotification method [Buses], UcxUsbDeviceRemoteWakeNotification
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ucxusbdevice.h
+req.include-header: Ucxclass.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	ucxusbdevice.h
+apiname:
+-	UcxUsbDeviceRemoteWakeNotification
+product: Windows
+targetos: Windows
+req.typenames: UCX_USBDEVICE_CHARACTERISTIC_TYPE
+req.product: Windows 10 or later.
 ---
 
 

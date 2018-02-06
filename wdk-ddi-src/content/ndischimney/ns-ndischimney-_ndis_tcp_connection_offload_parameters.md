@@ -1,41 +1,46 @@
 ---
-UID : NS:ndischimney._NDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS
-title : "_NDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS"
-author : windows-driver-content
-description : The NDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS structure provides TCP chimney offload information in the OID_TCP_CONNECTION_OFFLOAD_PARAMETERS OIDs:
-old-location : netvista\ndis_tcp_connection_offload_parameters.htm
-old-project : netvista
-ms.assetid : f8d3f971-2abc-425d-9929-518f093262a7
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : ndischimney/PNDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS, tcp_chim_struct_481b5b2a-f226-4306-a2a9-640f711fb75b.xml, NDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS structure [Network Drivers Starting with Windows Vista], NDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS, *PNDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS, ndischimney/NDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS, PNDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS, _NDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS, netvista.ndis_tcp_connection_offload_parameters, PNDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndischimney.h
-req.include-header : Ndischimney.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PNDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS, NDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS"
+UID: NS:ndischimney._NDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS
+title: "_NDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS"
+author: windows-driver-content
+description: The NDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS structure provides TCP chimney offload information in the OID_TCP_CONNECTION_OFFLOAD_PARAMETERS OIDs:
+old-location: netvista\ndis_tcp_connection_offload_parameters.htm
+old-project: netvista
+ms.assetid: f8d3f971-2abc-425d-9929-518f093262a7
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: ndischimney/PNDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS, tcp_chim_struct_481b5b2a-f226-4306-a2a9-640f711fb75b.xml, NDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS structure [Network Drivers Starting with Windows Vista], NDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS, *PNDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS, ndischimney/NDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS, PNDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS, _NDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS, netvista.ndis_tcp_connection_offload_parameters, PNDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndischimney.h
+req.include-header: Ndischimney.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndischimney.h
+apiname:
+-	NDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS
+product: Windows
+targetos: Windows
+req.typenames: "*PNDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS, NDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS"
 ---
 
 # _NDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS structure

@@ -1,41 +1,46 @@
 ---
-UID : NF:ksproxy.IKsPin.KsIncrementPendingIoCount
-title : IKsPin::KsIncrementPendingIoCount method
-author : windows-driver-content
-description : The KsIncrementPendingIoCount method increments the number of input/output (I/O) operations that are in progress on a pin.
-old-location : stream\ikspin_ksincrementpendingiocount.htm
-old-project : stream
-ms.assetid : e79ae2ac-6636-491d-8c98-70a5ff3a23ef
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : IKsPin interface [Streaming Media Devices], KsIncrementPendingIoCount method, KsIncrementPendingIoCount method [Streaming Media Devices], IKsPin interface, ksproxy/IKsPin::KsIncrementPendingIoCount, KsIncrementPendingIoCount method [Streaming Media Devices], KsIncrementPendingIoCount, stream.ikspin_ksincrementpendingiocount, ksproxy_c654f701-d58e-4953-ad55-76d98096b7f0.xml, IKsPin::KsIncrementPendingIoCount, IKsPin
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : ksproxy.h
-req.include-header : Ksproxy.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : ksproxy.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PIPE_STATE
+UID: NF:ksproxy.IKsPin.KsIncrementPendingIoCount
+title: IKsPin::KsIncrementPendingIoCount method
+author: windows-driver-content
+description: The KsIncrementPendingIoCount method increments the number of input/output (I/O) operations that are in progress on a pin.
+old-location: stream\ikspin_ksincrementpendingiocount.htm
+old-project: stream
+ms.assetid: e79ae2ac-6636-491d-8c98-70a5ff3a23ef
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: IKsPin interface [Streaming Media Devices], KsIncrementPendingIoCount method, KsIncrementPendingIoCount method [Streaming Media Devices], IKsPin interface, ksproxy/IKsPin::KsIncrementPendingIoCount, KsIncrementPendingIoCount method [Streaming Media Devices], KsIncrementPendingIoCount, stream.ikspin_ksincrementpendingiocount, ksproxy_c654f701-d58e-4953-ad55-76d98096b7f0.xml, IKsPin::KsIncrementPendingIoCount, IKsPin
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: ksproxy.h
+req.include-header: Ksproxy.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: ksproxy.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	ksproxy.h
+apiname:
+-	IKsPin.KsIncrementPendingIoCount
+product: Windows
+targetos: Windows
+req.typenames: PIPE_STATE
 ---
 
 

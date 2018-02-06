@@ -1,42 +1,48 @@
 ---
-UID : NF:sensorsclassextension.ISensorDriver.OnClientConnect
-title : ISensorDriver::OnClientConnect method
-author : windows-driver-content
-description : The ISensorDriver::OnClientConnect method notifies the sensor driver that a client application has connected.
-old-location : sensors\isensordriver_onclientconnect.htm
-old-project : sensors
-ms.assetid : 0f64288b-5100-4529-af2f-3e867375da39
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : OnClientConnect, OnClientConnect method [Sensor Devices], sensors.isensordriver_onclientconnect, ISensorDriver, ISensorDriver::OnClientConnect
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : sensorsclassextension.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : SensorsClassExtension.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SensorConnectionType
-req.product : Windows 10 or later.
+UID: NF:sensorsclassextension.ISensorDriver.OnClientConnect
+title: ISensorDriver::OnClientConnect method
+author: windows-driver-content
+description: The ISensorDriver::OnClientConnect method notifies the sensor driver that a client application has connected.
+old-location: sensors\isensordriver_onclientconnect.htm
+old-project: sensors
+ms.assetid: 0f64288b-5100-4529-af2f-3e867375da39
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: OnClientConnect, OnClientConnect method [Sensor Devices], sensors.isensordriver_onclientconnect, ISensorDriver, ISensorDriver::OnClientConnect
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: sensorsclassextension.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: SensorsClassExtension.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	SensorsClassExtension.lib
+-	SensorsClassExtension.dll
+apiname:
+-	OnClientConnect
+product: Windows
+targetos: Windows
+req.typenames: SensorConnectionType
+req.product: Windows 10 or later.
 ---
 
 

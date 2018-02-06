@@ -1,41 +1,46 @@
 ---
-UID : NS:avc._AVCPRECONNECTINFO
-title : "_AVCPRECONNECTINFO"
-author : windows-driver-content
-description : The AVCPRECONNECTINFO structure is used to initialize a subunit driver and establish pin connections.
-old-location : stream\avcpreconnectinfo.htm
-old-project : stream
-ms.assetid : 828ce6cf-f47a-4487-8c45-887f2ace8202
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : PAVCPRECONNECTINFO, avcref_c38bc8dd-8218-40ea-95b6-c5376fa6273c.xml, *PAVCPRECONNECTINFO, PAVCPRECONNECTINFO structure pointer [Streaming Media Devices], avc/AVCPRECONNECTINFO, AVCPRECONNECTINFO structure [Streaming Media Devices], AVCPRECONNECTINFO, stream.avcpreconnectinfo, _AVCPRECONNECTINFO, avc/PAVCPRECONNECTINFO
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : avc.h
-req.include-header : Avc.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : AVCPRECONNECTINFO, *PAVCPRECONNECTINFO
+UID: NS:avc._AVCPRECONNECTINFO
+title: "_AVCPRECONNECTINFO"
+author: windows-driver-content
+description: The AVCPRECONNECTINFO structure is used to initialize a subunit driver and establish pin connections.
+old-location: stream\avcpreconnectinfo.htm
+old-project: stream
+ms.assetid: 828ce6cf-f47a-4487-8c45-887f2ace8202
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: PAVCPRECONNECTINFO, avcref_c38bc8dd-8218-40ea-95b6-c5376fa6273c.xml, *PAVCPRECONNECTINFO, PAVCPRECONNECTINFO structure pointer [Streaming Media Devices], avc/AVCPRECONNECTINFO, AVCPRECONNECTINFO structure [Streaming Media Devices], AVCPRECONNECTINFO, stream.avcpreconnectinfo, _AVCPRECONNECTINFO, avc/PAVCPRECONNECTINFO
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: avc.h
+req.include-header: Avc.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	avc.h
+apiname:
+-	AVCPRECONNECTINFO
+product: Windows
+targetos: Windows
+req.typenames: AVCPRECONNECTINFO, *PAVCPRECONNECTINFO
 ---
 
 # _AVCPRECONNECTINFO structure

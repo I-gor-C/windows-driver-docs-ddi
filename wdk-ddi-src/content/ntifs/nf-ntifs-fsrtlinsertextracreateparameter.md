@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.FsRtlInsertExtraCreateParameter
-title : FsRtlInsertExtraCreateParameter function
-author : windows-driver-content
-description : The FsRtlInsertExtraCreateParameter routine inserts an extra create parameter (ECP) context structure into an ECP list.
-old-location : ifsk\fsrtlinsertextracreateparameter.htm
-old-project : ifsk
-ms.assetid : 77ac37eb-9750-4c56-8e1c-41b8a1f50a61
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : fsrtlref_25aa9ff1-4921-4f96-98dc-04230d450e98.xml, FsRtlInsertExtraCreateParameter routine [Installable File System Drivers], ntifs/FsRtlInsertExtraCreateParameter, FsRtlInsertExtraCreateParameter, ifsk.fsrtlinsertextracreateparameter
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : The FltInsertExtraCreateParameter routine is available starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.FsRtlInsertExtraCreateParameter
+title: FsRtlInsertExtraCreateParameter function
+author: windows-driver-content
+description: The FsRtlInsertExtraCreateParameter routine inserts an extra create parameter (ECP) context structure into an ECP list.
+old-location: ifsk\fsrtlinsertextracreateparameter.htm
+old-project: ifsk
+ms.assetid: 77ac37eb-9750-4c56-8e1c-41b8a1f50a61
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: fsrtlref_25aa9ff1-4921-4f96-98dc-04230d450e98.xml, FsRtlInsertExtraCreateParameter routine [Installable File System Drivers], ntifs/FsRtlInsertExtraCreateParameter, FsRtlInsertExtraCreateParameter, ifsk.fsrtlinsertextracreateparameter
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: The FltInsertExtraCreateParameter routine is available starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	FsRtlInsertExtraCreateParameter
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

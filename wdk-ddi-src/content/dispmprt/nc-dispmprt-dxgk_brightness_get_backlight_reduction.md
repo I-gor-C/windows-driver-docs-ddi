@@ -1,41 +1,46 @@
 ---
-UID : NC:dispmprt.DXGK_BRIGHTNESS_GET_BACKLIGHT_REDUCTION
-title : DXGK_BRIGHTNESS_GET_BACKLIGHT_REDUCTION
-author : windows-driver-content
-description : Retrieves the current level of backlight reduction that is applied to the integrated display panel.
-old-location : display\dxgkddigetbacklightreduction.htm
-old-project : display
-ms.assetid : 018cb4a0-e71d-407e-8fe9-716312099b73
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkddigetbacklightreduction, DxgkDdiGetBacklightReduction callback function [Display Devices], DxgkDdiGetBacklightReduction, DXGK_BRIGHTNESS_GET_BACKLIGHT_REDUCTION, DXGK_BRIGHTNESS_GET_BACKLIGHT_REDUCTION, dispmprt/DxgkDdiGetBacklightReduction
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : dispmprt.h
-req.include-header : Dispmprt.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
+UID: NC:dispmprt.DXGK_BRIGHTNESS_GET_BACKLIGHT_REDUCTION
+title: DXGK_BRIGHTNESS_GET_BACKLIGHT_REDUCTION
+author: windows-driver-content
+description: Retrieves the current level of backlight reduction that is applied to the integrated display panel.
+old-location: display\dxgkddigetbacklightreduction.htm
+old-project: display
+ms.assetid: 018cb4a0-e71d-407e-8fe9-716312099b73
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkddigetbacklightreduction, DxgkDdiGetBacklightReduction callback function [Display Devices], DxgkDdiGetBacklightReduction, DXGK_BRIGHTNESS_GET_BACKLIGHT_REDUCTION, DXGK_BRIGHTNESS_GET_BACKLIGHT_REDUCTION, dispmprt/DxgkDdiGetBacklightReduction
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: dispmprt.h
+req.include-header: Dispmprt.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Dispmprt.h
+apiname:
+-	DxgkDdiGetBacklightReduction
+product: Windows
+targetos: Windows
+req.typenames: SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IPnpCallbackRemoteInterfaceNotification.OnRemoteInterfaceArrival
-title : IPnpCallbackRemoteInterfaceNotification::OnRemoteInterfaceArrival method
-author : windows-driver-content
-description : A driver's OnRemoteInterfaceArrival event callback function informs the driver when a device interface is available.
-old-location : wdf\ipnpcallbackremoteinterfacenotification_onremoteinterfacearrival.htm
-old-project : wdf
-ms.assetid : 19a0eec7-1a67-42ad-86d2-20566a2c1268
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.ipnpcallbackremoteinterfacenotification_onremoteinterfacearrival, IPnpCallbackRemoteInterfaceNotification, IPnpCallbackRemoteInterfaceNotification interface, OnRemoteInterfaceArrival method, OnRemoteInterfaceArrival method, IPnpCallbackRemoteInterfaceNotification interface, wudfddi/IPnpCallbackRemoteInterfaceNotification::OnRemoteInterfaceArrival, OnRemoteInterfaceArrival, umdf.ipnpcallbackremoteinterfacenotification_onremoteinterfacearrival, UMDFDeviceObjectRef_68b238b1-6614-4217-90ae-12ec291fa7ba.xml, OnRemoteInterfaceArrival method, IPnpCallbackRemoteInterfaceNotification::OnRemoteInterfaceArrival
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.9
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IPnpCallbackRemoteInterfaceNotification.OnRemoteInterfaceArrival
+title: IPnpCallbackRemoteInterfaceNotification::OnRemoteInterfaceArrival method
+author: windows-driver-content
+description: A driver's OnRemoteInterfaceArrival event callback function informs the driver when a device interface is available.
+old-location: wdf\ipnpcallbackremoteinterfacenotification_onremoteinterfacearrival.htm
+old-project: wdf
+ms.assetid: 19a0eec7-1a67-42ad-86d2-20566a2c1268
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.ipnpcallbackremoteinterfacenotification_onremoteinterfacearrival, IPnpCallbackRemoteInterfaceNotification, IPnpCallbackRemoteInterfaceNotification interface, OnRemoteInterfaceArrival method, OnRemoteInterfaceArrival method, IPnpCallbackRemoteInterfaceNotification interface, wudfddi/IPnpCallbackRemoteInterfaceNotification::OnRemoteInterfaceArrival, OnRemoteInterfaceArrival, umdf.ipnpcallbackremoteinterfacenotification_onremoteinterfacearrival, UMDFDeviceObjectRef_68b238b1-6614-4217-90ae-12ec291fa7ba.xml, OnRemoteInterfaceArrival method, IPnpCallbackRemoteInterfaceNotification::OnRemoteInterfaceArrival
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.9
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Wudfddi.h
+apiname:
+-	IPnpCallbackRemoteInterfaceNotification.OnRemoteInterfaceArrival
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

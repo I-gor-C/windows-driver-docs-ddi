@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.RtlSetAllBits
-title : RtlSetAllBits function
-author : windows-driver-content
-description : The RtlSetAllBits routine sets all bits in a given bitmap variable.
-old-location : kernel\rtlsetallbits.htm
-old-project : kernel
-ms.assetid : a379a910-4712-4d77-af52-614a1b9cc511
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : RtlSetAllBits routine [Kernel-Mode Driver Architecture], k109_e7f7eecf-e845-455b-a94d-eccad1ce448a.xml, kernel.rtlsetallbits, RtlSetAllBits, wdm/RtlSetAllBits
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL (See Remarks section)"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.RtlSetAllBits
+title: RtlSetAllBits function
+author: windows-driver-content
+description: The RtlSetAllBits routine sets all bits in a given bitmap variable.
+old-location: kernel\rtlsetallbits.htm
+old-project: kernel
+ms.assetid: a379a910-4712-4d77-af52-614a1b9cc511
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: RtlSetAllBits routine [Kernel-Mode Driver Architecture], k109_e7f7eecf-e845-455b-a94d-eccad1ce448a.xml, kernel.rtlsetallbits, RtlSetAllBits, wdm/RtlSetAllBits
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL (See Remarks section)"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	RtlSetAllBits
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

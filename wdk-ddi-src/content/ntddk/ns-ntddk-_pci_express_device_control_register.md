@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddk._PCI_EXPRESS_DEVICE_CONTROL_REGISTER
-title : "_PCI_EXPRESS_DEVICE_CONTROL_REGISTER"
-author : windows-driver-content
-description : The PCI_EXPRESS_DEVICE_CONTROL_REGISTER structure describes a PCI Express (PCIe) device control register of a PCIe capability structure.
-old-location : pci\pci_express_device_control_register.htm
-old-project : PCI
-ms.assetid : 888f88db-2149-4da2-acdb-4bf88a5362dd
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : PPCI_EXPRESS_DEVICE_CONTROL_REGISTER union pointer [Buses], PCI.pci_express_device_control_register, _PCI_EXPRESS_DEVICE_CONTROL_REGISTER, PCI_EXPRESS_DEVICE_CONTROL_REGISTER union [Buses], pci_struct_344c5f1d-566f-4755-ba52-57635c4fabfe.xml, ntddk/PCI_EXPRESS_DEVICE_CONTROL_REGISTER, *PPCI_EXPRESS_DEVICE_CONTROL_REGISTER, PPCI_EXPRESS_DEVICE_CONTROL_REGISTER, PCI_EXPRESS_DEVICE_CONTROL_REGISTER, ntddk/PPCI_EXPRESS_DEVICE_CONTROL_REGISTER
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPCI_EXPRESS_DEVICE_CONTROL_REGISTER, PCI_EXPRESS_DEVICE_CONTROL_REGISTER"
+UID: NS:ntddk._PCI_EXPRESS_DEVICE_CONTROL_REGISTER
+title: "_PCI_EXPRESS_DEVICE_CONTROL_REGISTER"
+author: windows-driver-content
+description: The PCI_EXPRESS_DEVICE_CONTROL_REGISTER structure describes a PCI Express (PCIe) device control register of a PCIe capability structure.
+old-location: pci\pci_express_device_control_register.htm
+old-project: PCI
+ms.assetid: 888f88db-2149-4da2-acdb-4bf88a5362dd
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: PPCI_EXPRESS_DEVICE_CONTROL_REGISTER union pointer [Buses], PCI.pci_express_device_control_register, _PCI_EXPRESS_DEVICE_CONTROL_REGISTER, PCI_EXPRESS_DEVICE_CONTROL_REGISTER union [Buses], pci_struct_344c5f1d-566f-4755-ba52-57635c4fabfe.xml, ntddk/PCI_EXPRESS_DEVICE_CONTROL_REGISTER, *PPCI_EXPRESS_DEVICE_CONTROL_REGISTER, PPCI_EXPRESS_DEVICE_CONTROL_REGISTER, PCI_EXPRESS_DEVICE_CONTROL_REGISTER, ntddk/PPCI_EXPRESS_DEVICE_CONTROL_REGISTER
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddk.h
+apiname:
+-	PCI_EXPRESS_DEVICE_CONTROL_REGISTER
+product: Windows
+targetos: Windows
+req.typenames: "*PPCI_EXPRESS_DEVICE_CONTROL_REGISTER, PCI_EXPRESS_DEVICE_CONTROL_REGISTER"
 ---
 
 # _PCI_EXPRESS_DEVICE_CONTROL_REGISTER structure

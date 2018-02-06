@@ -1,41 +1,46 @@
 ---
-UID : NI:gnssdriver.IOCTL_GNSS_LISTEN_BREADCRUMBING_ALERT
-title : IOCTL_GNSS_LISTEN_BREADCRUMBING_ALERT
-author : windows-driver-content
-description : The IOCTL_GNSS_LISTEN_BREADCRUMBING_ALERT control code is used to request alert information from GNSS_BREADCRUMBING_ALERT_DATA when the breadcrumbing buffer has reached a level at which OS read operations should be performed.
-old-location : sensors\ioctl_gnss_listen_breadcrumbing_alert_.htm
-old-project : sensors
-ms.assetid : 14D396B1-5F55-4902-8986-BD4CC5B2ACC4
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : sensors.ioctl_gnss_listen_breadcrumbing_alert_, IOCTL_GNSS_LISTEN_BREADCRUMBING_ALERT control code [Sensor Devices], IOCTL_GNSS_LISTEN_BREADCRUMBING_ALERT, gnssdriver/IOCTL_GNSS_LISTEN_BREADCRUMBING_ALERT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : gnssdriver.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : GNSS_SUPL_CERT_ACTION
+UID: NI:gnssdriver.IOCTL_GNSS_LISTEN_BREADCRUMBING_ALERT
+title: IOCTL_GNSS_LISTEN_BREADCRUMBING_ALERT
+author: windows-driver-content
+description: The IOCTL_GNSS_LISTEN_BREADCRUMBING_ALERT control code is used to request alert information from GNSS_BREADCRUMBING_ALERT_DATA when the breadcrumbing buffer has reached a level at which OS read operations should be performed.
+old-location: sensors\ioctl_gnss_listen_breadcrumbing_alert_.htm
+old-project: sensors
+ms.assetid: 14D396B1-5F55-4902-8986-BD4CC5B2ACC4
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: sensors.ioctl_gnss_listen_breadcrumbing_alert_, IOCTL_GNSS_LISTEN_BREADCRUMBING_ALERT control code [Sensor Devices], IOCTL_GNSS_LISTEN_BREADCRUMBING_ALERT, gnssdriver/IOCTL_GNSS_LISTEN_BREADCRUMBING_ALERT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: gnssdriver.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	gnssdriver.h
+apiname:
+-	IOCTL_GNSS_LISTEN_BREADCRUMBING_ALERT
+product: Windows
+targetos: Windows
+req.typenames: GNSS_SUPL_CERT_ACTION
 ---
 
 # IOCTL_GNSS_LISTEN_BREADCRUMBING_ALERT IOCTL

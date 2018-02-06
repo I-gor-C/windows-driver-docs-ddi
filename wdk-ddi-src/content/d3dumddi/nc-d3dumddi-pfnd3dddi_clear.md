@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_CLEAR
-title : PFND3DDDI_CLEAR
-author : windows-driver-content
-description : The Clear function performs hardware-assisted clearing on the rendering target, depth buffer, or stencil buffer.
-old-location : display\clear.htm
-old-project : display
-ms.assetid : 1cfb5f5b-8d46-4a38-8f16-b1cecaac948a
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.clear, Clear callback function [Display Devices], Clear, PFND3DDDI_CLEAR, PFND3DDDI_CLEAR, d3dumddi/Clear, UserModeDisplayDriver_Functions_fc47f935-b69f-4e51-be36-73f0b89f44cf.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_CLEAR
+title: PFND3DDDI_CLEAR
+author: windows-driver-content
+description: The Clear function performs hardware-assisted clearing on the rendering target, depth buffer, or stencil buffer.
+old-location: display\clear.htm
+old-project: display
+ms.assetid: 1cfb5f5b-8d46-4a38-8f16-b1cecaac948a
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.clear, Clear callback function [Display Devices], Clear, PFND3DDDI_CLEAR, PFND3DDDI_CLEAR, d3dumddi/Clear, UserModeDisplayDriver_Functions_fc47f935-b69f-4e51-be36-73f0b89f44cf.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	Clear
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

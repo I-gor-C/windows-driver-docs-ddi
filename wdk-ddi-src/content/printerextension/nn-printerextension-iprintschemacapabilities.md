@@ -1,42 +1,47 @@
 ---
-UID : NN:printerextension.IPrintSchemaCapabilities
-title : IPrintSchemaCapabilities
-author : windows-driver-content
-description : Provides the primary method to access PrintCapabilities.
-old-location : print\iprintschemacapabilities_interface.htm
-old-project : print
-ms.assetid : A148C1B4-99A3-4AF3-B2D6-73684978425F
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : print.iprintschemacapabilities_interface, IPrintSchemaCapabilities interface [Print Devices], IPrintSchemaCapabilities interface [Print Devices], described, IPrintSchemaCapabilities, printerextension/IPrintSchemaCapabilities
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : printerextension.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : printerextension.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PrintSchemaSelectionType
-req.product : Windows 10 or later.
+UID: NN:printerextension.IPrintSchemaCapabilities
+title: IPrintSchemaCapabilities
+author: windows-driver-content
+description: Provides the primary method to access PrintCapabilities.
+old-location: print\iprintschemacapabilities_interface.htm
+old-project: print
+ms.assetid: A148C1B4-99A3-4AF3-B2D6-73684978425F
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: print.iprintschemacapabilities_interface, IPrintSchemaCapabilities interface [Print Devices], IPrintSchemaCapabilities interface [Print Devices], described, IPrintSchemaCapabilities, printerextension/IPrintSchemaCapabilities
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: printerextension.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: printerextension.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Printerextension.h
+apiname:
+-	IPrintSchemaCapabilities
+product: Windows
+targetos: Windows
+req.typenames: PrintSchemaSelectionType
+req.product: Windows 10 or later.
 ---
 
 # IPrintSchemaCapabilities interface

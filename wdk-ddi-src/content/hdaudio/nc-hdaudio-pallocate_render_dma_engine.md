@@ -1,41 +1,46 @@
 ---
-UID : NC:hdaudio.PALLOCATE_RENDER_DMA_ENGINE
-title : PALLOCATE_RENDER_DMA_ENGINE
-author : windows-driver-content
-description : The AllocateRenderDmaEngine routine allocates a DMA engine for a render stream.The function pointer type for an AllocateRenderDmaEngine routine is defined as:
-old-location : audio\allocaterenderdmaengine.htm
-old-project : audio
-ms.assetid : fb2a64ca-7e8e-4352-86c6-b9500e535c75
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : audio.allocaterenderdmaengine, AllocateRenderDmaEngine callback function [Audio Devices], AllocateRenderDmaEngine, PALLOCATE_RENDER_DMA_ENGINE, PALLOCATE_RENDER_DMA_ENGINE, hdaudio/AllocateRenderDmaEngine, aud-prop2_69a03ff9-5eda-4f39-85cf-e4af523214e1.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : hdaudio.h
-req.include-header : Hdaudio.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT
+UID: NC:hdaudio.PALLOCATE_RENDER_DMA_ENGINE
+title: PALLOCATE_RENDER_DMA_ENGINE
+author: windows-driver-content
+description: The AllocateRenderDmaEngine routine allocates a DMA engine for a render stream.The function pointer type for an AllocateRenderDmaEngine routine is defined as:
+old-location: audio\allocaterenderdmaengine.htm
+old-project: audio
+ms.assetid: fb2a64ca-7e8e-4352-86c6-b9500e535c75
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: audio.allocaterenderdmaengine, AllocateRenderDmaEngine callback function [Audio Devices], AllocateRenderDmaEngine, PALLOCATE_RENDER_DMA_ENGINE, PALLOCATE_RENDER_DMA_ENGINE, hdaudio/AllocateRenderDmaEngine, aud-prop2_69a03ff9-5eda-4f39-85cf-e4af523214e1.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: hdaudio.h
+req.include-header: Hdaudio.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	hdaudio.h
+apiname:
+-	AllocateRenderDmaEngine
+product: Windows
+targetos: Windows
+req.typenames: SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT
 ---
 
 

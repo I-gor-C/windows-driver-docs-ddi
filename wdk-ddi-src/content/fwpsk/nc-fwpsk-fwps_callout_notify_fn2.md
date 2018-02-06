@@ -1,41 +1,46 @@
 ---
-UID : NC:fwpsk.FWPS_CALLOUT_NOTIFY_FN2
-title : FWPS_CALLOUT_NOTIFY_FN2
-author : windows-driver-content
-description : The filter engine calls a callout's notifyFn2 callout function to notify the callout driver about events that are associated with the callout.Note  notifyFn2 is the specific version of notifyFn used in Windows 8 and later.
-old-location : netvista\notifyfn2.htm
-old-project : netvista
-ms.assetid : c70c987b-5b4c-4ddd-8eb8-8c3c40003ab3
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.notifyfn2, notifyFn2 callback function [Network Drivers Starting with Windows Vista], notifyFn2, FWPS_CALLOUT_NOTIFY_FN2, FWPS_CALLOUT_NOTIFY_FN2, fwpsk/notifyFn2
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : fwpsk.h
-req.include-header : Fwpsk.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : INSTANCE_PARTIAL_INFORMATION, PINSTANCE_PARTIAL_INFORMATION
+UID: NC:fwpsk.FWPS_CALLOUT_NOTIFY_FN2
+title: FWPS_CALLOUT_NOTIFY_FN2
+author: windows-driver-content
+description: The filter engine calls a callout's notifyFn2 callout function to notify the callout driver about events that are associated with the callout.Note  notifyFn2 is the specific version of notifyFn used in Windows 8 and later.
+old-location: netvista\notifyfn2.htm
+old-project: netvista
+ms.assetid: c70c987b-5b4c-4ddd-8eb8-8c3c40003ab3
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.notifyfn2, notifyFn2 callback function [Network Drivers Starting with Windows Vista], notifyFn2, FWPS_CALLOUT_NOTIFY_FN2, FWPS_CALLOUT_NOTIFY_FN2, fwpsk/notifyFn2
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: fwpsk.h
+req.include-header: Fwpsk.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Fwpsk.h
+apiname:
+-	notifyFn2
+product: Windows
+targetos: Windows
+req.typenames: INSTANCE_PARTIAL_INFORMATION, PINSTANCE_PARTIAL_INFORMATION
 ---
 
 

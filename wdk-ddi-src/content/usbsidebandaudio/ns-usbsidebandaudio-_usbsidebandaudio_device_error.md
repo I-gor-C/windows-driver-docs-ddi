@@ -1,42 +1,46 @@
 ---
-UID : NS:usbsidebandaudio._USBSIDEBANDAUDIO_DEVICE_ERROR
-title : "_USBSIDEBANDAUDIO_DEVICE_ERROR"
-author : windows-driver-content
-description : TBD.
-old-location : audio\usbsidebandaudio_device_error.htm
-old-project : audio
-ms.assetid : EB5AFAF3-D75C-4B91-823C-E1C6784CB13B
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : PUSBSIDEBANDAUDIO_DEVICE_ERROR, USBSIDEBANDAUDIO_DEVICE_ERROR, *PUSBSIDEBANDAUDIO_DEVICE_ERROR, audio.usbsidebandaudio_device_error, _USBSIDEBANDAUDIO_DEVICE_ERROR, usbsidebandaudio/PUSBSIDEBANDAUDIO_DEVICE_ERROR, PUSBSIDEBANDAUDIO_DEVICE_ERROR structure pointer [Audio Devices], USBSIDEBANDAUDIO_DEVICE_ERROR structure [Audio Devices], usbsidebandaudio/USBSIDEBANDAUDIO_DEVICE_ERROR
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : usbsidebandaudio.h
-req.include-header : Usbsidebandaudio.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUSBSIDEBANDAUDIO_DEVICE_ERROR, USBSIDEBANDAUDIO_DEVICE_ERROR"
-req.product : Windows 10 or later.
+UID: NS:usbsidebandaudio._USBSIDEBANDAUDIO_DEVICE_ERROR
+title: "_USBSIDEBANDAUDIO_DEVICE_ERROR"
+author: windows-driver-content
+description: TBD.
+old-location: audio\usbsidebandaudio_device_error.htm
+old-project: audio
+ms.assetid: EB5AFAF3-D75C-4B91-823C-E1C6784CB13B
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: PUSBSIDEBANDAUDIO_DEVICE_ERROR, USBSIDEBANDAUDIO_DEVICE_ERROR, *PUSBSIDEBANDAUDIO_DEVICE_ERROR, audio.usbsidebandaudio_device_error, _USBSIDEBANDAUDIO_DEVICE_ERROR, usbsidebandaudio/PUSBSIDEBANDAUDIO_DEVICE_ERROR, PUSBSIDEBANDAUDIO_DEVICE_ERROR structure pointer [Audio Devices], USBSIDEBANDAUDIO_DEVICE_ERROR structure [Audio Devices], usbsidebandaudio/USBSIDEBANDAUDIO_DEVICE_ERROR
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: usbsidebandaudio.h
+req.include-header: Usbsidebandaudio.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	kbSyntax
+apitype:
+-	<TBD>
+apilocation:
+-
+apiname:
+-	USBSIDEBANDAUDIO_DEVICE_ERROR
+product: Windows
+targetos: Windows
+req.typenames: "*PUSBSIDEBANDAUDIO_DEVICE_ERROR, USBSIDEBANDAUDIO_DEVICE_ERROR"
+req.product: Windows 10 or later.
 ---
 
 # _USBSIDEBANDAUDIO_DEVICE_ERROR structure

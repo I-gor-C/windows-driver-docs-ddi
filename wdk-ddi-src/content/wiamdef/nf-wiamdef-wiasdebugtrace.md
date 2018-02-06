@@ -1,42 +1,47 @@
 ---
-UID : NF:wiamdef.wiasDebugTrace
-title : wiasDebugTrace function
-author : windows-driver-content
-description : This function prints a debug trace string in the Device Manager debug console.
-old-location : image\wiasdebugtrace.htm
-old-project : image
-ms.assetid : db39c7f6-d966-4538-8ee9-d3623995535c
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : wiasFncs_b6582555-3674-4261-a542-9a6388649bb0.xml, image.wiasdebugtrace, wiasDebugTrace, wiamdef/wiasDebugTrace, wiasDebugTrace function [Imaging Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wiamdef.h
-req.include-header : Wiamdef.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wiaservc.lib
-req.dll : Wiaservc.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*LPDEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2, DEVICEDIALOGDATA2"
-req.product : Windows 10 or later.
+UID: NF:wiamdef.wiasDebugTrace
+title: wiasDebugTrace function
+author: windows-driver-content
+description: This function prints a debug trace string in the Device Manager debug console.
+old-location: image\wiasdebugtrace.htm
+old-project: image
+ms.assetid: db39c7f6-d966-4538-8ee9-d3623995535c
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: wiasFncs_b6582555-3674-4261-a542-9a6388649bb0.xml, image.wiasdebugtrace, wiasDebugTrace, wiamdef/wiasDebugTrace, wiasDebugTrace function [Imaging Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wiamdef.h
+req.include-header: Wiamdef.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wiaservc.lib
+req.dll: Wiaservc.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Wiaservc.dll
+apiname:
+-	wiasDebugTrace
+product: Windows
+targetos: Windows
+req.typenames: "*LPDEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2, DEVICEDIALOGDATA2"
+req.product: Windows 10 or later.
 ---
 
 

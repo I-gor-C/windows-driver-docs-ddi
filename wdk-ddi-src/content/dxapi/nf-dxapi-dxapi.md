@@ -1,41 +1,47 @@
 ---
-UID : NF:dxapi.DxApi
-title : DxApi function
-author : windows-driver-content
-description : The DxApi function accepts commands from the hardware decoder's video capture driver to access the DxApi interface functions that are implemented in a video miniport driver.
-old-location : display\dxapi.htm
-old-project : display
-ms.assetid : c4b38376-b54f-4fbb-b305-5951a1ea76a1
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DxApi, ddfncs_b76158a1-30ff-4874-b527-a201c5a67fc5.xml, dxapi/DxApi, DxApi function [Display Devices], display.dxapi
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : dxapi.h
-req.include-header : Ddkmapi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Dxapi.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDRMRIGHTS, DRMRIGHTS"
+UID: NF:dxapi.DxApi
+title: DxApi function
+author: windows-driver-content
+description: The DxApi function accepts commands from the hardware decoder's video capture driver to access the DxApi interface functions that are implemented in a video miniport driver.
+old-location: display\dxapi.htm
+old-project: display
+ms.assetid: c4b38376-b54f-4fbb-b305-5951a1ea76a1
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DxApi, ddfncs_b76158a1-30ff-4874-b527-a201c5a67fc5.xml, dxapi/DxApi, DxApi function [Display Devices], display.dxapi
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: dxapi.h
+req.include-header: Ddkmapi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Dxapi.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Dxapi.lib
+-	Dxapi.dll
+apiname:
+-	DxApi
+product: Windows
+targetos: Windows
+req.typenames: "*PDRMRIGHTS, DRMRIGHTS"
 ---
 
 

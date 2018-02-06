@@ -1,42 +1,47 @@
 ---
-UID : NC:wdm.PCLFS_CLIENT_LOG_UNPINNED_CALLBACK
-title : PCLFS_CLIENT_LOG_UNPINNED_CALLBACK
-author : windows-driver-content
-description : The ClfsLogUnpinnedCallback function implements any actions that the client will take when a log that had previously been pinned becomes unpinned.
-old-location : kernel\clfslogunpinnedcallback.htm
-old-project : kernel
-ms.assetid : f28a1ad6-4946-4d1e-b430-2cdee3dfd835
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.clfslogunpinnedcallback, ClfsLogUnpinnedCallback, ClfsLogUnpinnedCallback callback function [Kernel-Mode Driver Architecture], ClfsLogUnpinnedCallback, PCLFS_CLIENT_LOG_UNPINNED_CALLBACK, PCLFS_CLIENT_LOG_UNPINNED_CALLBACK, wdm/ClfsLogUnpinnedCallback, Clfs_management_e82832a3-b4b9-48c7-a706-9d489a55f728.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported in Windows Server 2003 R2, Windows Vista, and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Called at IRQL <= APC_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
-req.product : Windows 10 or later.
+UID: NC:wdm.PCLFS_CLIENT_LOG_UNPINNED_CALLBACK
+title: PCLFS_CLIENT_LOG_UNPINNED_CALLBACK
+author: windows-driver-content
+description: The ClfsLogUnpinnedCallback function implements any actions that the client will take when a log that had previously been pinned becomes unpinned.
+old-location: kernel\clfslogunpinnedcallback.htm
+old-project: kernel
+ms.assetid: f28a1ad6-4946-4d1e-b430-2cdee3dfd835
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.clfslogunpinnedcallback, ClfsLogUnpinnedCallback, ClfsLogUnpinnedCallback callback function [Kernel-Mode Driver Architecture], ClfsLogUnpinnedCallback, PCLFS_CLIENT_LOG_UNPINNED_CALLBACK, PCLFS_CLIENT_LOG_UNPINNED_CALLBACK, wdm/ClfsLogUnpinnedCallback, Clfs_management_e82832a3-b4b9-48c7-a706-9d489a55f728.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported in Windows Server 2003 R2, Windows Vista, and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Called at IRQL <= APC_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Wdm.h
+apiname:
+-	ClfsLogUnpinnedCallback
+product: Windows
+targetos: Windows
+req.typenames: WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,47 @@
 ---
-UID : NF:ntstrsafe.RtlUnicodeStringCbCopyStringNEx
-title : RtlUnicodeStringCbCopyStringNEx function
-author : windows-driver-content
-description : The RtlUnicodeStringCbCopyStringNEx function copies a string into a UNICODE_STRING structure while limiting the size of the copied string.
-old-location : kernel\rtlunicodestringcbcopystringnex.htm
-old-project : kernel
-ms.assetid : 67c364a7-5cf7-424a-8ba3-ba9a11276f5d
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ntstrsafe/RtlUnicodeStringCbCopyStringNEx, RtlUnicodeStringCbCopyStringNEx function [Kernel-Mode Driver Architecture], safestrings_3b90a87b-c560-40e4-809a-c3d1dd1671e8.xml, RtlUnicodeStringCbCopyStringNEx, kernel.rtlunicodestringcbcopystringnex
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntstrsafe.h
-req.include-header : Ntstrsafe.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available starting with Windows XP with Service Pack 1 (SP1).
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ntstrsafe.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : BATTERY_REPORTING_SCALE, *PBATTERY_REPORTING_SCALE
+UID: NF:ntstrsafe.RtlUnicodeStringCbCopyStringNEx
+title: RtlUnicodeStringCbCopyStringNEx function
+author: windows-driver-content
+description: The RtlUnicodeStringCbCopyStringNEx function copies a string into a UNICODE_STRING structure while limiting the size of the copied string.
+old-location: kernel\rtlunicodestringcbcopystringnex.htm
+old-project: kernel
+ms.assetid: 67c364a7-5cf7-424a-8ba3-ba9a11276f5d
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ntstrsafe/RtlUnicodeStringCbCopyStringNEx, RtlUnicodeStringCbCopyStringNEx function [Kernel-Mode Driver Architecture], safestrings_3b90a87b-c560-40e4-809a-c3d1dd1671e8.xml, RtlUnicodeStringCbCopyStringNEx, kernel.rtlunicodestringcbcopystringnex
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntstrsafe.h
+req.include-header: Ntstrsafe.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available starting with Windows XP with Service Pack 1 (SP1).
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ntstrsafe.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ntstrsafe.lib
+-	Ntstrsafe.dll
+apiname:
+-	RtlUnicodeStringCbCopyStringNEx
+product: Windows
+targetos: Windows
+req.typenames: BATTERY_REPORTING_SCALE, *PBATTERY_REPORTING_SCALE
 ---
 
 

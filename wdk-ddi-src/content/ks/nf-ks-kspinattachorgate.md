@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsPinAttachOrGate
-title : KsPinAttachOrGate function
-author : windows-driver-content
-description : The KsPinAttachOrGate function connects Pin as an input to a previously initialized OR gate, and connects OrGate as an input to the relevant filter's AND gate.
-old-location : stream\kspinattachorgate.htm
-old-project : stream
-ms.assetid : 14fb5b30-7169-4d8a-ad72-d0ee86da7f98
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KsPinAttachOrGate function [Streaming Media Devices], KsPinAttachOrGate, avfunc_bcc291d4-ee61-4196-88df-b7aef567a06b.xml, ks/KsPinAttachOrGate, stream.kspinattachorgate
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL (See Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsPinAttachOrGate
+title: KsPinAttachOrGate function
+author: windows-driver-content
+description: The KsPinAttachOrGate function connects Pin as an input to a previously initialized OR gate, and connects OrGate as an input to the relevant filter's AND gate.
+old-location: stream\kspinattachorgate.htm
+old-project: stream
+ms.assetid: 14fb5b30-7169-4d8a-ad72-d0ee86da7f98
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KsPinAttachOrGate function [Streaming Media Devices], KsPinAttachOrGate, avfunc_bcc291d4-ee61-4196-88df-b7aef567a06b.xml, ks/KsPinAttachOrGate, stream.kspinattachorgate
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL (See Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsPinAttachOrGate
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

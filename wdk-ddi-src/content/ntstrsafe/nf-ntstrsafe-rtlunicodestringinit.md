@@ -1,41 +1,47 @@
 ---
-UID : NF:ntstrsafe.RtlUnicodeStringInit
-title : RtlUnicodeStringInit function
-author : windows-driver-content
-description : The RtlUnicodeStringInit function initializes a UNICODE_STRING structure.
-old-location : kernel\rtlunicodestringinit.htm
-old-project : kernel
-ms.assetid : 319d1d6e-a4a2-4c2c-9c30-948c5f03a2be
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : RtlUnicodeStringInit, safestrings_7540072b-061a-46be-a2ea-72c4da1790dd.xml, kernel.rtlunicodestringinit, ntstrsafe/RtlUnicodeStringInit, RtlUnicodeStringInit function [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntstrsafe.h
-req.include-header : Ntstrsafe.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available starting with Windows XP with Service Pack 1 (SP1).
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ntstrsafe.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : BATTERY_REPORTING_SCALE, *PBATTERY_REPORTING_SCALE
+UID: NF:ntstrsafe.RtlUnicodeStringInit
+title: RtlUnicodeStringInit function
+author: windows-driver-content
+description: The RtlUnicodeStringInit function initializes a UNICODE_STRING structure.
+old-location: kernel\rtlunicodestringinit.htm
+old-project: kernel
+ms.assetid: 319d1d6e-a4a2-4c2c-9c30-948c5f03a2be
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: RtlUnicodeStringInit, safestrings_7540072b-061a-46be-a2ea-72c4da1790dd.xml, kernel.rtlunicodestringinit, ntstrsafe/RtlUnicodeStringInit, RtlUnicodeStringInit function [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntstrsafe.h
+req.include-header: Ntstrsafe.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available starting with Windows XP with Service Pack 1 (SP1).
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ntstrsafe.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ntstrsafe.lib
+-	Ntstrsafe.dll
+apiname:
+-	RtlUnicodeStringInit
+product: Windows
+targetos: Windows
+req.typenames: BATTERY_REPORTING_SCALE, *PBATTERY_REPORTING_SCALE
 ---
 
 

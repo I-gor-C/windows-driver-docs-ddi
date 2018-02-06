@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_SETVERTEXSHADERFUNC
-title : PFND3DDDI_SETVERTEXSHADERFUNC
-author : windows-driver-content
-description : The SetVertexShaderFunc function sets the vertex shader code so that all of the subsequent drawing operations use that code.
-old-location : display\setvertexshaderfunc.htm
-old-project : display
-ms.assetid : 2cea4812-7eba-4558-9c2e-30de460be21f
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.setvertexshaderfunc, SetVertexShaderFunc callback function [Display Devices], SetVertexShaderFunc, PFND3DDDI_SETVERTEXSHADERFUNC, PFND3DDDI_SETVERTEXSHADERFUNC, d3dumddi/SetVertexShaderFunc, UserModeDisplayDriver_Functions_aeaa5094-5619-4cf5-b2c3-c4b6aeed9b33.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_SETVERTEXSHADERFUNC
+title: PFND3DDDI_SETVERTEXSHADERFUNC
+author: windows-driver-content
+description: The SetVertexShaderFunc function sets the vertex shader code so that all of the subsequent drawing operations use that code.
+old-location: display\setvertexshaderfunc.htm
+old-project: display
+ms.assetid: 2cea4812-7eba-4558-9c2e-30de460be21f
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.setvertexshaderfunc, SetVertexShaderFunc callback function [Display Devices], SetVertexShaderFunc, PFND3DDDI_SETVERTEXSHADERFUNC, PFND3DDDI_SETVERTEXSHADERFUNC, d3dumddi/SetVertexShaderFunc, UserModeDisplayDriver_Functions_aeaa5094-5619-4cf5-b2c3-c4b6aeed9b33.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	SetVertexShaderFunc
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

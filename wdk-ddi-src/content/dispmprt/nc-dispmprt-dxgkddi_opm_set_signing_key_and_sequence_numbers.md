@@ -1,41 +1,46 @@
 ---
-UID : NC:dispmprt.DXGKDDI_OPM_SET_SIGNING_KEY_AND_SEQUENCE_NUMBERS
-title : DXGKDDI_OPM_SET_SIGNING_KEY_AND_SEQUENCE_NUMBERS
-author : windows-driver-content
-description : The DxgkDdiOPMSetSigningKeyAndSequenceNumbers function sets the given protected output object's signing key and two sequence numbers.
-old-location : display\dxgkddiopmsetsigningkeyandsequencenumbers.htm
-old-project : display
-ms.assetid : 285521c7-4034-4db8-9441-6c4eaee27ee3
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkddiopmsetsigningkeyandsequencenumbers, DxgkDdiOPMSetSigningKeyAndSequenceNumbers callback function [Display Devices], DxgkDdiOPMSetSigningKeyAndSequenceNumbers, DXGKDDI_OPM_SET_SIGNING_KEY_AND_SEQUENCE_NUMBERS, DXGKDDI_OPM_SET_SIGNING_KEY_AND_SEQUENCE_NUMBERS, dispmprt/DxgkDdiOPMSetSigningKeyAndSequenceNumbers, Dm_Opm_functions_4ffbc6e2-7239-4c02-88be-aa6276629c7d.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : dispmprt.h
-req.include-header : Dispmprt.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
+UID: NC:dispmprt.DXGKDDI_OPM_SET_SIGNING_KEY_AND_SEQUENCE_NUMBERS
+title: DXGKDDI_OPM_SET_SIGNING_KEY_AND_SEQUENCE_NUMBERS
+author: windows-driver-content
+description: The DxgkDdiOPMSetSigningKeyAndSequenceNumbers function sets the given protected output object's signing key and two sequence numbers.
+old-location: display\dxgkddiopmsetsigningkeyandsequencenumbers.htm
+old-project: display
+ms.assetid: 285521c7-4034-4db8-9441-6c4eaee27ee3
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkddiopmsetsigningkeyandsequencenumbers, DxgkDdiOPMSetSigningKeyAndSequenceNumbers callback function [Display Devices], DxgkDdiOPMSetSigningKeyAndSequenceNumbers, DXGKDDI_OPM_SET_SIGNING_KEY_AND_SEQUENCE_NUMBERS, DXGKDDI_OPM_SET_SIGNING_KEY_AND_SEQUENCE_NUMBERS, dispmprt/DxgkDdiOPMSetSigningKeyAndSequenceNumbers, Dm_Opm_functions_4ffbc6e2-7239-4c02-88be-aa6276629c7d.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: dispmprt.h
+req.include-header: Dispmprt.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	dispmprt.h
+apiname:
+-	DxgkDdiOPMSetSigningKeyAndSequenceNumbers
+product: Windows
+targetos: Windows
+req.typenames: SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ---
 
 

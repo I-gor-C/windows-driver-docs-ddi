@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugAdvanced4.GetSymbolInformationWideEx
-title : IDebugAdvanced4::GetSymbolInformationWideEx method
-author : windows-driver-content
-description : The GetSymbolInformationWideEx method returns specified information about a symbol.
-old-location : debugger\getsymbolinformationwideex.htm
-old-project : debugger
-ms.assetid : E862C691-133F-4FA5-A698-09CD5D0E32B3
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugAdvanced4::GetSymbolInformationWideEx, dbgeng/IDebugAdvanced4::GetSymbolInformationWideEx, debugger.getsymbolinformationwideex, IDebugAdvanced4 interface [Windows Debugging], GetSymbolInformationWideEx method, GetSymbolInformationWideEx, IDebugAdvanced4, GetSymbolInformationWideEx method [Windows Debugging], IDebugAdvanced4 interface, GetSymbolInformationWideEx method [Windows Debugging]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugAdvanced4.GetSymbolInformationWideEx
+title: IDebugAdvanced4::GetSymbolInformationWideEx method
+author: windows-driver-content
+description: The GetSymbolInformationWideEx method returns specified information about a symbol.
+old-location: debugger\getsymbolinformationwideex.htm
+old-project: debugger
+ms.assetid: E862C691-133F-4FA5-A698-09CD5D0E32B3
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugAdvanced4::GetSymbolInformationWideEx, dbgeng/IDebugAdvanced4::GetSymbolInformationWideEx, debugger.getsymbolinformationwideex, IDebugAdvanced4 interface [Windows Debugging], GetSymbolInformationWideEx method, GetSymbolInformationWideEx, IDebugAdvanced4, GetSymbolInformationWideEx method [Windows Debugging], IDebugAdvanced4 interface, GetSymbolInformationWideEx method [Windows Debugging]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugAdvanced4.GetSymbolInformationWideEx
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

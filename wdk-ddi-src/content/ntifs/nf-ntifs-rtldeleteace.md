@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.RtlDeleteAce
-title : RtlDeleteAce function
-author : windows-driver-content
-description : The RtlDeleteAce routine deletes an access control entry (ACE) from a specified access control list (ACL).
-old-location : ifsk\rtldeleteace.htm
-old-project : ifsk
-ms.assetid : 2bf90d1d-887f-4d0c-8d79-e102a14dfe71
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : RtlDeleteAce, RtlDeleteAce routine [Installable File System Drivers], rtlref_68fe46f1-318a-48c6-9004-c338f52f41a5.xml, ifsk.rtldeleteace, ntifs/RtlDeleteAce
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : This routine is available on Microsoft Windows Server 2003 SP1 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.RtlDeleteAce
+title: RtlDeleteAce function
+author: windows-driver-content
+description: The RtlDeleteAce routine deletes an access control entry (ACE) from a specified access control list (ACL).
+old-location: ifsk\rtldeleteace.htm
+old-project: ifsk
+ms.assetid: 2bf90d1d-887f-4d0c-8d79-e102a14dfe71
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: RtlDeleteAce, RtlDeleteAce routine [Installable File System Drivers], rtlref_68fe46f1-318a-48c6-9004-c338f52f41a5.xml, ifsk.rtldeleteace, ntifs/RtlDeleteAce
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: This routine is available on Microsoft Windows Server 2003 SP1 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	RtlDeleteAce
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

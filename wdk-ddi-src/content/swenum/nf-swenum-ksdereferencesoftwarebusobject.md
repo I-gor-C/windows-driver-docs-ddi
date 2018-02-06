@@ -1,42 +1,48 @@
 ---
-UID : NF:swenum.KsDereferenceSoftwareBusObject
-title : KsDereferenceSoftwareBusObject function
-author : windows-driver-content
-description : The KsDereferenceSoftwareBusObject function decrements the reference count of the demand-load bus enumerator object's PDO.
-old-location : stream\ksdereferencesoftwarebusobject.htm
-old-project : stream
-ms.assetid : 11203a5d-1484-4a49-aedc-e11baf22cac9
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ksfunc_e9066001-173a-40e1-a933-2f646a21afad.xml, KsDereferenceSoftwareBusObject function [Streaming Media Devices], stream.ksdereferencesoftwarebusobject, swenum/KsDereferenceSoftwareBusObject, KsDereferenceSoftwareBusObject
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : swenum.h
-req.include-header : Swenum.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STREAM_TIME_REFERENCE, *PSTREAM_TIME_REFERENCE
-req.product : Windows 10 or later.
+UID: NF:swenum.KsDereferenceSoftwareBusObject
+title: KsDereferenceSoftwareBusObject function
+author: windows-driver-content
+description: The KsDereferenceSoftwareBusObject function decrements the reference count of the demand-load bus enumerator object's PDO.
+old-location: stream\ksdereferencesoftwarebusobject.htm
+old-project: stream
+ms.assetid: 11203a5d-1484-4a49-aedc-e11baf22cac9
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ksfunc_e9066001-173a-40e1-a933-2f646a21afad.xml, KsDereferenceSoftwareBusObject function [Streaming Media Devices], stream.ksdereferencesoftwarebusobject, swenum/KsDereferenceSoftwareBusObject, KsDereferenceSoftwareBusObject
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: swenum.h
+req.include-header: Swenum.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsDereferenceSoftwareBusObject
+product: Windows
+targetos: Windows
+req.typenames: STREAM_TIME_REFERENCE, *PSTREAM_TIME_REFERENCE
+req.product: Windows 10 or later.
 ---
 
 

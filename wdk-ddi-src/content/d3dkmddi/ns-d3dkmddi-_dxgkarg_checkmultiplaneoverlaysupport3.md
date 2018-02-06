@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT3
-title : "_DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT3"
-author : windows-driver-content
-description : Used in a call to the DxgkDdiCheckMultiPlaneOverlaySupport3 function to check details on hardware support for multi-plane overlays.
-old-location : display\dxgkarg_checkmultiplaneoverlaysupport3.htm
-old-project : display
-ms.assetid : 21FE4E54-5B7D-4068-AC83-A7AFFA739169
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT3, d3dkmddi/DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT3, display.dxgkarg_checkmultiplaneoverlaysupport3, DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT3 structure [Display Devices], _DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT3, *IN_OUT_PDXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT3
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT3
+UID: NS:d3dkmddi._DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT3
+title: "_DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT3"
+author: windows-driver-content
+description: Used in a call to the DxgkDdiCheckMultiPlaneOverlaySupport3 function to check details on hardware support for multi-plane overlays.
+old-location: display\dxgkarg_checkmultiplaneoverlaysupport3.htm
+old-project: display
+ms.assetid: 21FE4E54-5B7D-4068-AC83-A7AFFA739169
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT3, d3dkmddi/DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT3, display.dxgkarg_checkmultiplaneoverlaysupport3, DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT3 structure [Display Devices], _DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT3, *IN_OUT_PDXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT3
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT3
+product: Windows
+targetos: Windows
+req.typenames: DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT3
 ---
 
 # _DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT3 structure

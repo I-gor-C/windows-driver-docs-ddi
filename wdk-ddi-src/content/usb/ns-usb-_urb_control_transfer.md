@@ -1,42 +1,47 @@
 ---
-UID : NS:usb._URB_CONTROL_TRANSFER
-title : "_URB_CONTROL_TRANSFER"
-author : windows-driver-content
-description : The _URB_CONTROL_TRANSFER structure is used by USB client drivers to transfer data to or from a control pipe.
-old-location : buses\_urb_control_transfer.htm
-old-project : usbref
-ms.assetid : ee557112-ada3-4906-a8f3-e59b59ab2bc1
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : USBD_TRANSFER_DIRECTION_OUT, buses._urb_control_transfer, _URB_CONTROL_TRANSFER, _URB_CONTROL_TRANSFER structure [Buses], USBD_DEFAULT_PIPE_TRANSFER, usb/_URB_CONTROL_TRANSFER, USBD_TRANSFER_DIRECTION_IN, usbstrct_65d66cb6-2ce4-4eb2-ac3a-1cf68d3ad1b2.xml, USBD_SHORT_TRANSFER_OK
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : usb.h
-req.include-header : Usb.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
-req.product : Windows 10 or later.
+UID: NS:usb._URB_CONTROL_TRANSFER
+title: "_URB_CONTROL_TRANSFER"
+author: windows-driver-content
+description: The _URB_CONTROL_TRANSFER structure is used by USB client drivers to transfer data to or from a control pipe.
+old-location: buses\_urb_control_transfer.htm
+old-project: usbref
+ms.assetid: ee557112-ada3-4906-a8f3-e59b59ab2bc1
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: USBD_TRANSFER_DIRECTION_OUT, buses._urb_control_transfer, _URB_CONTROL_TRANSFER, _URB_CONTROL_TRANSFER structure [Buses], USBD_DEFAULT_PIPE_TRANSFER, usb/_URB_CONTROL_TRANSFER, USBD_TRANSFER_DIRECTION_IN, usbstrct_65d66cb6-2ce4-4eb2-ac3a-1cf68d3ad1b2.xml, USBD_SHORT_TRANSFER_OK
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: usb.h
+req.include-header: Usb.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	usb.h
+apiname:
+-	_URB_CONTROL_TRANSFER
+product: Windows
+targetos: Windows
+req.typenames: 
+req.product: Windows 10 or later.
 ---
 
 # _URB_CONTROL_TRANSFER structure

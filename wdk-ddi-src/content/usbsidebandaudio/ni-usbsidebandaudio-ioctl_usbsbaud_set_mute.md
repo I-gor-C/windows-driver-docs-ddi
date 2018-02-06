@@ -1,42 +1,47 @@
 ---
-UID : NI:usbsidebandaudio.IOCTL_USBSBAUD_SET_MUTE
-title : IOCTL_USBSBAUD_SET_MUTE
-author : windows-driver-content
-description : TBD
-old-location : audio\ioctl_usbsbaud_set_mute.htm
-old-project : audio
-ms.assetid : 13EC7C66-8E86-45D4-B11E-D9F8969BDE20
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : audio.ioctl_usbsbaud_set_mute, IOCTL_USBSBAUD_SET_MUTE control code [Audio Devices], IOCTL_USBSBAUD_SET_MUTE, usbsidebandaudio/IOCTL_USBSBAUD_SET_MUTE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : usbsidebandaudio.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUSBSCAN_TIMEOUT, USBSCAN_TIMEOUT"
-req.product : Windows 10 or later.
+UID: NI:usbsidebandaudio.IOCTL_USBSBAUD_SET_MUTE
+title: IOCTL_USBSBAUD_SET_MUTE
+author: windows-driver-content
+description: TBD
+old-location: audio\ioctl_usbsbaud_set_mute.htm
+old-project: audio
+ms.assetid: 13EC7C66-8E86-45D4-B11E-D9F8969BDE20
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: audio.ioctl_usbsbaud_set_mute, IOCTL_USBSBAUD_SET_MUTE control code [Audio Devices], IOCTL_USBSBAUD_SET_MUTE, usbsidebandaudio/IOCTL_USBSBAUD_SET_MUTE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: usbsidebandaudio.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	USBSidebandAudio.h
+apiname:
+-	IOCTL_USBSBAUD_SET_MUTE
+product: Windows
+targetos: Windows
+req.typenames: "*PUSBSCAN_TIMEOUT, USBSCAN_TIMEOUT"
+req.product: Windows 10 or later.
 ---
 
 # IOCTL_USBSBAUD_SET_MUTE IOCTL

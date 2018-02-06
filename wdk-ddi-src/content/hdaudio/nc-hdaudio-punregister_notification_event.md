@@ -1,41 +1,46 @@
 ---
-UID : NC:hdaudio.PUNREGISTER_NOTIFICATION_EVENT
-title : PUNREGISTER_NOTIFICATION_EVENT
-author : windows-driver-content
-description : The UnregisterNotificationEvent routine deletes the registration of an event that was previously registered by a call to RegisterNotificationEvent.The function pointer type for an UnregisterNotificationEvent routine is defined as follows.
-old-location : audio\unregisternotificationevent.htm
-old-project : audio
-ms.assetid : 525e2dd9-68e1-468d-895e-d9f57372d619
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : audio.unregisternotificationevent, UnregisterNotificationEvent callback function [Audio Devices], UnregisterNotificationEvent, PUNREGISTER_NOTIFICATION_EVENT, PUNREGISTER_NOTIFICATION_EVENT, hdaudio/UnregisterNotificationEvent, aud-prop2_3f7488ae-5744-422e-871f-54dc2fd63bc2.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : hdaudio.h
-req.include-header : Hdaudio.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT
+UID: NC:hdaudio.PUNREGISTER_NOTIFICATION_EVENT
+title: PUNREGISTER_NOTIFICATION_EVENT
+author: windows-driver-content
+description: The UnregisterNotificationEvent routine deletes the registration of an event that was previously registered by a call to RegisterNotificationEvent.The function pointer type for an UnregisterNotificationEvent routine is defined as follows.
+old-location: audio\unregisternotificationevent.htm
+old-project: audio
+ms.assetid: 525e2dd9-68e1-468d-895e-d9f57372d619
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: audio.unregisternotificationevent, UnregisterNotificationEvent callback function [Audio Devices], UnregisterNotificationEvent, PUNREGISTER_NOTIFICATION_EVENT, PUNREGISTER_NOTIFICATION_EVENT, hdaudio/UnregisterNotificationEvent, aud-prop2_3f7488ae-5744-422e-871f-54dc2fd63bc2.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: hdaudio.h
+req.include-header: Hdaudio.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Hdaudio.h
+apiname:
+-	UnregisterNotificationEvent
+product: Windows
+targetos: Windows
+req.typenames: SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:iscsidef._ISCSI_LoginOptions
-title : "_ISCSI_LoginOptions"
-author : windows-driver-content
-description : The ISCSI_LoginOptions structure defines the characteristics of a logon session. The LoginToTarget_IN routines use these defined characteristics while it logs into an iSCSI target.
-old-location : storage\iscsi_loginoptions.htm
-old-project : storage
-ms.assetid : 2440999a-e10c-4a27-b076-a0b640c2ca7f
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : "_ISCSI_LoginOptions, ISCSI_LoginOptions, structs-iSCSI_d6ba6d7e-95c3-42a4-bed9-c038c1702d59.xml, PISCSI_LoginOptions structure pointer [Storage Devices], PISCSI_LoginOptions, storage.iscsi_loginoptions, iscsidef/ISCSI_LoginOptions, *PISCSI_LoginOptions, iscsidef/PISCSI_LoginOptions, ISCSI_LoginOptions structure [Storage Devices]"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : iscsidef.h
-req.include-header : Iscsidef.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PISCSI_LoginOptions, ISCSI_LoginOptions"
+UID: NS:iscsidef._ISCSI_LoginOptions
+title: "_ISCSI_LoginOptions"
+author: windows-driver-content
+description: The ISCSI_LoginOptions structure defines the characteristics of a logon session. The LoginToTarget_IN routines use these defined characteristics while it logs into an iSCSI target.
+old-location: storage\iscsi_loginoptions.htm
+old-project: storage
+ms.assetid: 2440999a-e10c-4a27-b076-a0b640c2ca7f
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: "_ISCSI_LoginOptions, ISCSI_LoginOptions, structs-iSCSI_d6ba6d7e-95c3-42a4-bed9-c038c1702d59.xml, PISCSI_LoginOptions structure pointer [Storage Devices], PISCSI_LoginOptions, storage.iscsi_loginoptions, iscsidef/ISCSI_LoginOptions, *PISCSI_LoginOptions, iscsidef/PISCSI_LoginOptions, ISCSI_LoginOptions structure [Storage Devices]"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: iscsidef.h
+req.include-header: Iscsidef.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	iscsidef.h
+apiname:
+-	ISCSI_LoginOptions
+product: Windows
+targetos: Windows
+req.typenames: "*PISCSI_LoginOptions, ISCSI_LoginOptions"
 ---
 
 # _ISCSI_LoginOptions structure

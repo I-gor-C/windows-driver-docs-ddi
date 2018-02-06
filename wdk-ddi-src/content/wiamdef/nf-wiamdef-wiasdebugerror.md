@@ -1,42 +1,47 @@
 ---
-UID : NF:wiamdef.wiasDebugError
-title : wiasDebugError function
-author : windows-driver-content
-description : This function prints a debug error string in the Device Manager debug console. The output color is always red.
-old-location : image\wiasdebugerror.htm
-old-project : image
-ms.assetid : fcddc83d-5fb1-43ad-9abd-8d5e2549b580
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : image.wiasdebugerror, wiasFncs_0ccba388-a6ca-42b9-acd5-720b6763a202.xml, wiasDebugError function [Imaging Devices], wiamdef/wiasDebugError, wiasDebugError
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wiamdef.h
-req.include-header : Wiamdef.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wiaservc.lib
-req.dll : Wiaservc.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*LPDEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2, DEVICEDIALOGDATA2"
-req.product : Windows 10 or later.
+UID: NF:wiamdef.wiasDebugError
+title: wiasDebugError function
+author: windows-driver-content
+description: This function prints a debug error string in the Device Manager debug console. The output color is always red.
+old-location: image\wiasdebugerror.htm
+old-project: image
+ms.assetid: fcddc83d-5fb1-43ad-9abd-8d5e2549b580
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: image.wiasdebugerror, wiasFncs_0ccba388-a6ca-42b9-acd5-720b6763a202.xml, wiasDebugError function [Imaging Devices], wiamdef/wiasDebugError, wiasDebugError
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wiamdef.h
+req.include-header: Wiamdef.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wiaservc.lib
+req.dll: Wiaservc.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Wiaservc.dll
+apiname:
+-	wiasDebugError
+product: Windows
+targetos: Windows
+req.typenames: "*LPDEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2, DEVICEDIALOGDATA2"
+req.product: Windows 10 or later.
 ---
 
 

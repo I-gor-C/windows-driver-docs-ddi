@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.CcPurgeCacheSection
-title : CcPurgeCacheSection function
-author : windows-driver-content
-description : The CcPurgeCacheSection routine purges all or a portion of a cached file from the system cache.
-old-location : ifsk\ccpurgecachesection.htm
-old-project : ifsk
-ms.assetid : 7f9cff3b-0780-4fc4-8b1a-b0af0506712a
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ccref_587b0f92-f80a-42f2-b3bb-dae27208b796.xml, ifsk.ccpurgecachesection, CcPurgeCacheSection, ntifs/CcPurgeCacheSection, CcPurgeCacheSection routine [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "< DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.CcPurgeCacheSection
+title: CcPurgeCacheSection function
+author: windows-driver-content
+description: The CcPurgeCacheSection routine purges all or a portion of a cached file from the system cache.
+old-location: ifsk\ccpurgecachesection.htm
+old-project: ifsk
+ms.assetid: 7f9cff3b-0780-4fc4-8b1a-b0af0506712a
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ccref_587b0f92-f80a-42f2-b3bb-dae27208b796.xml, ifsk.ccpurgecachesection, CcPurgeCacheSection, ntifs/CcPurgeCacheSection, CcPurgeCacheSection routine [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "< DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	CcPurgeCacheSection
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

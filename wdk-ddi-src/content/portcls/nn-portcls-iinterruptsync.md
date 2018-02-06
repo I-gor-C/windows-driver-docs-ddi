@@ -1,41 +1,46 @@
 ---
-UID : NN:portcls.IInterruptSync
-title : IInterruptSync
-author : windows-driver-content
-description : The IInterruptSync interface represents an interrupt sync object that synchronizes the execution of a list of interrupt service routines (ISRs) with non-ISR routines.
-old-location : audio\iinterruptsync.htm
-old-project : audio
-ms.assetid : fffdee8e-6298-45b9-94ee-23426598fbee
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : audio.iinterruptsync, IInterruptSync interface [Audio Devices], IInterruptSync interface [Audio Devices], described, IInterruptSync, portcls/IInterruptSync, audmp-routines_5b5b2127-b0d5-48de-9840-2cdffa0bea6a.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : portcls.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Portcls.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NN:portcls.IInterruptSync
+title: IInterruptSync
+author: windows-driver-content
+description: The IInterruptSync interface represents an interrupt sync object that synchronizes the execution of a list of interrupt service routines (ISRs) with non-ISR routines.
+old-location: audio\iinterruptsync.htm
+old-project: audio
+ms.assetid: fffdee8e-6298-45b9-94ee-23426598fbee
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: audio.iinterruptsync, IInterruptSync interface [Audio Devices], IInterruptSync interface [Audio Devices], described, IInterruptSync, portcls/IInterruptSync, audmp-routines_5b5b2127-b0d5-48de-9840-2cdffa0bea6a.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: portcls.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Portcls.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	portcls.h
+apiname:
+-	IInterruptSync
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 # IInterruptSync interface

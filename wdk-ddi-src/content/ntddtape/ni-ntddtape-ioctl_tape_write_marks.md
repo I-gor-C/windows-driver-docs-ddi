@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddtape.IOCTL_TAPE_WRITE_MARKS
-title : IOCTL_TAPE_WRITE_MARKS
-author : windows-driver-content
-description : Writes one of setmarks, filemarks, short filemarks, or long filemarks to tape.
-old-location : storage\ioctl_tape_write_marks.htm
-old-project : storage
-ms.assetid : cc4dabe3-4e14-4495-89b4-37f1a31ea62d
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_tape_write_marks, IOCTL_TAPE_WRITE_MARKS control code [Storage Devices], IOCTL_TAPE_WRITE_MARKS, ntddtape/IOCTL_TAPE_WRITE_MARKS, k307_f1ba7d65-28cf-4a26-b385-462ca5018d88.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddtape.h
-req.include-header : Ntddtape.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TAPE_DRIVE_PROBLEM_TYPE
+UID: NI:ntddtape.IOCTL_TAPE_WRITE_MARKS
+title: IOCTL_TAPE_WRITE_MARKS
+author: windows-driver-content
+description: Writes one of setmarks, filemarks, short filemarks, or long filemarks to tape.
+old-location: storage\ioctl_tape_write_marks.htm
+old-project: storage
+ms.assetid: cc4dabe3-4e14-4495-89b4-37f1a31ea62d
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_tape_write_marks, IOCTL_TAPE_WRITE_MARKS control code [Storage Devices], IOCTL_TAPE_WRITE_MARKS, ntddtape/IOCTL_TAPE_WRITE_MARKS, k307_f1ba7d65-28cf-4a26-b385-462ca5018d88.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddtape.h
+req.include-header: Ntddtape.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddtape.h
+apiname:
+-	IOCTL_TAPE_WRITE_MARKS
+product: Windows
+targetos: Windows
+req.typenames: TAPE_DRIVE_PROBLEM_TYPE
 ---
 
 # IOCTL_TAPE_WRITE_MARKS IOCTL

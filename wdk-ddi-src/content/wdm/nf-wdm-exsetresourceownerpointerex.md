@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.ExSetResourceOwnerPointerEx
-title : ExSetResourceOwnerPointerEx function
-author : windows-driver-content
-description : The ExSetResourceOwnerPointerEx routine transfers the ownership of an executive resource from the calling thread to an owner pointer, which is a system address that identifies the resource owner.
-old-location : kernel\exsetresourceownerpointerex.htm
-old-project : kernel
-ms.assetid : 96293fbc-0c3c-4685-8708-dd84fcc2223e
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/ExSetResourceOwnerPointerEx, kernel.exsetresourceownerpointerex, ExSetResourceOwnerPointerEx, k102_2bcc65e9-00e7-4fc5-a1d6-1f797b2c6038.xml, ExSetResourceOwnerPointerEx routine [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 7 and later versions of the Windows operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ExSetResourceOwnerPointerEx
+title: ExSetResourceOwnerPointerEx function
+author: windows-driver-content
+description: The ExSetResourceOwnerPointerEx routine transfers the ownership of an executive resource from the calling thread to an owner pointer, which is a system address that identifies the resource owner.
+old-location: kernel\exsetresourceownerpointerex.htm
+old-project: kernel
+ms.assetid: 96293fbc-0c3c-4685-8708-dd84fcc2223e
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/ExSetResourceOwnerPointerEx, kernel.exsetresourceownerpointerex, ExSetResourceOwnerPointerEx, k102_2bcc65e9-00e7-4fc5-a1d6-1f797b2c6038.xml, ExSetResourceOwnerPointerEx routine [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 7 and later versions of the Windows operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ExSetResourceOwnerPointerEx
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisCopyReceiveNetBufferListInfo
-title : NdisCopyReceiveNetBufferListInfo function
-author : windows-driver-content
-description : Intermediate drivers call the NdisCopyReceiveNetBufferListInfo function to copy the NET_BUFFER_LIST information in a received NET_BUFFER_LIST structure.
-old-location : netvista\ndiscopyreceivenetbufferlistinfo.htm
-old-project : netvista
-ms.assetid : 94dc33f4-06ad-4b36-9150-6fb7d491a247
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.ndiscopyreceivenetbufferlistinfo, ndis/NdisCopyReceiveNetBufferListInfo, NdisCopyReceiveNetBufferListInfo function [Network Drivers Starting with Windows Vista], ndis_netbuf_functions_ref_c7980afc-64b0-4dc4-812e-1a89254df50a.xml, NdisCopyReceiveNetBufferListInfo
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_NetBuffer_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisCopyReceiveNetBufferListInfo
+title: NdisCopyReceiveNetBufferListInfo function
+author: windows-driver-content
+description: Intermediate drivers call the NdisCopyReceiveNetBufferListInfo function to copy the NET_BUFFER_LIST information in a received NET_BUFFER_LIST structure.
+old-location: netvista\ndiscopyreceivenetbufferlistinfo.htm
+old-project: netvista
+ms.assetid: 94dc33f4-06ad-4b36-9150-6fb7d491a247
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.ndiscopyreceivenetbufferlistinfo, ndis/NdisCopyReceiveNetBufferListInfo, NdisCopyReceiveNetBufferListInfo function [Network Drivers Starting with Windows Vista], ndis_netbuf_functions_ref_c7980afc-64b0-4dc4-812e-1a89254df50a.xml, NdisCopyReceiveNetBufferListInfo
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_NetBuffer_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisCopyReceiveNetBufferListInfo
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

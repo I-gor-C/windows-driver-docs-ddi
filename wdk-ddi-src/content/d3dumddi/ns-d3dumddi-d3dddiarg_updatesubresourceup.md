@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi.D3DDDIARG_UPDATESUBRESOURCEUP
-title : D3DDDIARG_UPDATESUBRESOURCEUP
-author : windows-driver-content
-description : Describes info that's used to update a destination subresource region from a source system-memory region. Used by Windows Display Driver Model (WDDM) 1.3 and later user-mode display drivers.
-old-location : display\d3dddiarg_updatesubresourceup.htm
-old-project : display
-ms.assetid : 27BE493F-8F70-4FBF-AA58-D6ACB27BFC2D
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DDDIARG_UPDATESUBRESOURCEUP, display.d3dddiarg_updatesubresourceup, d3dumddi/D3DDDIARG_UPDATESUBRESOURCEUP, D3DDDIARG_UPDATESUBRESOURCEUP structure [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8.1
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDIARG_UPDATESUBRESOURCEUP
+UID: NS:d3dumddi.D3DDDIARG_UPDATESUBRESOURCEUP
+title: D3DDDIARG_UPDATESUBRESOURCEUP
+author: windows-driver-content
+description: Describes info that's used to update a destination subresource region from a source system-memory region. Used by Windows Display Driver Model (WDDM) 1.3 and later user-mode display drivers.
+old-location: display\d3dddiarg_updatesubresourceup.htm
+old-project: display
+ms.assetid: 27BE493F-8F70-4FBF-AA58-D6ACB27BFC2D
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DDDIARG_UPDATESUBRESOURCEUP, display.d3dddiarg_updatesubresourceup, d3dumddi/D3DDDIARG_UPDATESUBRESOURCEUP, D3DDDIARG_UPDATESUBRESOURCEUP structure [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8.1
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	D3dumddi.h
+apiname:
+-	D3DDDIARG_UPDATESUBRESOURCEUP
+product: Windows
+targetos: Windows
+req.typenames: D3DDDIARG_UPDATESUBRESOURCEUP
 ---
 
 # D3DDDIARG_UPDATESUBRESOURCEUP structure

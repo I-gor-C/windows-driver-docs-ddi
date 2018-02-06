@@ -1,42 +1,47 @@
 ---
-UID : NF:wiautil.wiauPropsInPropSpec
-title : wiauPropsInPropSpec function
-author : windows-driver-content
-description : The wiauPropsInPropSpec function determines whether any of a list of property specification IDs is contained within an array of such values.
-old-location : image\wiaupropsinpropspec.htm
-old-project : image
-ms.assetid : c376297a-11a6-4e9f-b551-36a573cdb7e0
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : wiauPropsInPropSpec function [Imaging Devices], image.wiaupropsinpropspec, wiauPropsInPropSpec, wiautil/wiauPropsInPropSpec, wiauFncs_2490b5b3-8051-4711-b681-1aef18580182.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wiautil.h
-req.include-header : Wiautil.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows XP and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SKIP_AMOUNT
-req.product : Windows 10 or later.
+UID: NF:wiautil.wiauPropsInPropSpec
+title: wiauPropsInPropSpec function
+author: windows-driver-content
+description: The wiauPropsInPropSpec function determines whether any of a list of property specification IDs is contained within an array of such values.
+old-location: image\wiaupropsinpropspec.htm
+old-project: image
+ms.assetid: c376297a-11a6-4e9f-b551-36a573cdb7e0
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: wiauPropsInPropSpec function [Imaging Devices], image.wiaupropsinpropspec, wiauPropsInPropSpec, wiautil/wiauPropsInPropSpec, wiauFncs_2490b5b3-8051-4711-b681-1aef18580182.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wiautil.h
+req.include-header: Wiautil.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows XP and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wiautil.h
+apiname:
+-	wiauPropsInPropSpec
+product: Windows
+targetos: Windows
+req.typenames: SKIP_AMOUNT
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.ObQueryNameString
-title : ObQueryNameString function
-author : windows-driver-content
-description : The ObQueryNameString routine supplies the name, if there is one, of a given object to which the caller has a pointer.
-old-location : ifsk\obquerynamestring.htm
-old-project : ifsk
-ms.assetid : 3c540410-6478-4da1-8ef5-b6d21d322b32
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : obref_3d52f727-edc5-4bea-b7c1-24a3aced1079.xml, ifsk.obquerynamestring, ObQueryNameString routine [Installable File System Drivers], ObQueryNameString, ntifs/ObQueryNameString
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : FltKernel.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 2000 and later operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "< DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.ObQueryNameString
+title: ObQueryNameString function
+author: windows-driver-content
+description: The ObQueryNameString routine supplies the name, if there is one, of a given object to which the caller has a pointer.
+old-location: ifsk\obquerynamestring.htm
+old-project: ifsk
+ms.assetid: 3c540410-6478-4da1-8ef5-b6d21d322b32
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: obref_3d52f727-edc5-4bea-b7c1-24a3aced1079.xml, ifsk.obquerynamestring, ObQueryNameString routine [Installable File System Drivers], ObQueryNameString, ntifs/ObQueryNameString
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: FltKernel.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 2000 and later operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "< DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ObQueryNameString
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

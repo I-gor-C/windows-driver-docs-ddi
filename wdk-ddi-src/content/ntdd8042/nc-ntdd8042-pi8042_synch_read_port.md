@@ -1,41 +1,46 @@
 ---
-UID : NC:ntdd8042.PI8042_SYNCH_READ_PORT
-title : PI8042_SYNCH_READ_PORT
-author : windows-driver-content
-description : The PI8042_SYNCH_READ_PORT-typed callback routine does a synchronized read from an i8042 port. I8042prt supplies this callback.
-old-location : hid\pi8042_synch_read_port.htm
-old-project : hid
-ms.assetid : 970bb5ed-2ddd-4d91-a90f-3df3bb7fa3f9
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : hid.pi8042_synch_read_port, SynchReadPort callback function [Human Input Devices], SynchReadPort, PI8042_SYNCH_READ_PORT, PI8042_SYNCH_READ_PORT, ntdd8042/SynchReadPort, i8042ref_be606020-f80b-4347-883d-71378e5fa59d.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ntdd8042.h
-req.include-header : Ntdd8042.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : MSFC_VirtualFibrePortAttributes, *PMSFC_VirtualFibrePortAttributes
+UID: NC:ntdd8042.PI8042_SYNCH_READ_PORT
+title: PI8042_SYNCH_READ_PORT
+author: windows-driver-content
+description: The PI8042_SYNCH_READ_PORT-typed callback routine does a synchronized read from an i8042 port. I8042prt supplies this callback.
+old-location: hid\pi8042_synch_read_port.htm
+old-project: hid
+ms.assetid: 970bb5ed-2ddd-4d91-a90f-3df3bb7fa3f9
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: hid.pi8042_synch_read_port, SynchReadPort callback function [Human Input Devices], SynchReadPort, PI8042_SYNCH_READ_PORT, PI8042_SYNCH_READ_PORT, ntdd8042/SynchReadPort, i8042ref_be606020-f80b-4347-883d-71378e5fa59d.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ntdd8042.h
+req.include-header: Ntdd8042.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	ntdd8042.h
+apiname:
+-	SynchReadPort
+product: Windows
+targetos: Windows
+req.typenames: MSFC_VirtualFibrePortAttributes, *PMSFC_VirtualFibrePortAttributes
 ---
 
 

@@ -1,41 +1,47 @@
 ---
-UID : NF:fltkernel.FltDetachVolume
-title : FltDetachVolume function
-author : windows-driver-content
-description : FltDetachVolume detaches a minifilter driver instance from a volume.
-old-location : ifsk\fltdetachvolume.htm
-old-project : ifsk
-ms.assetid : 889750fc-69a9-4fe6-8905-6a7edc5c04fb
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltDetachVolume, FltDetachVolume function [Installable File System Drivers], fltkernel/FltDetachVolume, FltApiRef_a_to_d_2f7a4638-6f6d-4ac6-97b6-d547d64b56b6.xml, ifsk.fltdetachvolume
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltDetachVolume
+title: FltDetachVolume function
+author: windows-driver-content
+description: FltDetachVolume detaches a minifilter driver instance from a volume.
+old-location: ifsk\fltdetachvolume.htm
+old-project: ifsk
+ms.assetid: 889750fc-69a9-4fe6-8905-6a7edc5c04fb
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltDetachVolume, FltDetachVolume function [Installable File System Drivers], fltkernel/FltDetachVolume, FltApiRef_a_to_d_2f7a4638-6f6d-4ac6-97b6-d547d64b56b6.xml, ifsk.fltdetachvolume
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	FltMgr.lib
+-	FltMgr.dll
+apiname:
+-	FltDetachVolume
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

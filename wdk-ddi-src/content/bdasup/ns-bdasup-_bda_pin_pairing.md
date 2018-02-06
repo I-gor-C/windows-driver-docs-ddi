@@ -1,41 +1,46 @@
 ---
-UID : NS:bdasup._BDA_PIN_PAIRING
-title : "_BDA_PIN_PAIRING"
-author : windows-driver-content
-description : The BDA_PIN_PAIRING structure describes the topology between a pair of input and output pins.
-old-location : stream\bda_pin_pairing.htm
-old-project : stream
-ms.assetid : 0d05455d-32ea-4f88-8752-7f5fe40b8b29
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : "*PBDA_PIN_PAIRING, bdasup/BDA_PIN_PAIRING, BDA_PIN_PAIRING structure [Streaming Media Devices], PBDA_PIN_PAIRING, PBDA_PIN_PAIRING structure pointer [Streaming Media Devices], BDA_PIN_PAIRING, bdasup/PBDA_PIN_PAIRING, bdaref_b007d58d-86c0-4653-867a-78ef5be2f260.xml, stream.bda_pin_pairing, _BDA_PIN_PAIRING"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : bdasup.h
-req.include-header : Bdasup.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PBDA_PIN_PAIRING, BDA_PIN_PAIRING"
+UID: NS:bdasup._BDA_PIN_PAIRING
+title: "_BDA_PIN_PAIRING"
+author: windows-driver-content
+description: The BDA_PIN_PAIRING structure describes the topology between a pair of input and output pins.
+old-location: stream\bda_pin_pairing.htm
+old-project: stream
+ms.assetid: 0d05455d-32ea-4f88-8752-7f5fe40b8b29
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: "*PBDA_PIN_PAIRING, bdasup/BDA_PIN_PAIRING, BDA_PIN_PAIRING structure [Streaming Media Devices], PBDA_PIN_PAIRING, PBDA_PIN_PAIRING structure pointer [Streaming Media Devices], BDA_PIN_PAIRING, bdasup/PBDA_PIN_PAIRING, bdaref_b007d58d-86c0-4653-867a-78ef5be2f260.xml, stream.bda_pin_pairing, _BDA_PIN_PAIRING"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: bdasup.h
+req.include-header: Bdasup.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	bdasup.h
+apiname:
+-	BDA_PIN_PAIRING
+product: Windows
+targetos: Windows
+req.typenames: "*PBDA_PIN_PAIRING, BDA_PIN_PAIRING"
 ---
 
 # _BDA_PIN_PAIRING structure

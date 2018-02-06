@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.KeRundownQueue
-title : KeRundownQueue function
-author : windows-driver-content
-description : The KeRundownQueue routine cleans up a queue object, flushing any queued entries.
-old-location : ifsk\kerundownqueue.htm
-old-project : ifsk
-ms.assetid : fc496af8-0b4b-4de4-8890-f2290970ced5
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ntifs/KeRundownQueue, KeRundownQueue, KeRundownQueue routine [Installable File System Drivers], keref_d1ad3c47-a2e8-40d9-b59d-bcedd6e4314a.xml, ifsk.kerundownqueue
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.KeRundownQueue
+title: KeRundownQueue function
+author: windows-driver-content
+description: The KeRundownQueue routine cleans up a queue object, flushing any queued entries.
+old-location: ifsk\kerundownqueue.htm
+old-project: ifsk
+ms.assetid: fc496af8-0b4b-4de4-8890-f2290970ced5
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ntifs/KeRundownQueue, KeRundownQueue, KeRundownQueue routine [Installable File System Drivers], keref_d1ad3c47-a2e8-40d9-b59d-bcedd6e4314a.xml, ifsk.kerundownqueue
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	KeRundownQueue
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

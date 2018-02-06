@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_FLUSH
-title : PFND3DDDI_FLUSH
-author : windows-driver-content
-description : The Flush function submits outstanding hardware commands that are in the hardware command buffer to the display miniport driver.
-old-location : display\flush.htm
-old-project : display
-ms.assetid : 0c1a9a60-de17-41d1-b31d-c1d3c95d8121
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.flush, Flush callback function [Display Devices], Flush, PFND3DDDI_FLUSH, PFND3DDDI_FLUSH, d3dumddi/Flush, UserModeDisplayDriver_Functions_a39b804f-2f41-473f-8160-4c23655c24ec.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_FLUSH
+title: PFND3DDDI_FLUSH
+author: windows-driver-content
+description: The Flush function submits outstanding hardware commands that are in the hardware command buffer to the display miniport driver.
+old-location: display\flush.htm
+old-project: display
+ms.assetid: 0c1a9a60-de17-41d1-b31d-c1d3c95d8121
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.flush, Flush callback function [Display Devices], Flush, PFND3DDDI_FLUSH, PFND3DDDI_FLUSH, d3dumddi/Flush, UserModeDisplayDriver_Functions_a39b804f-2f41-473f-8160-4c23655c24ec.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	Flush
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

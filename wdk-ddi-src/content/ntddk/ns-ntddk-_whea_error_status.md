@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddk._WHEA_ERROR_STATUS
-title : "_WHEA_ERROR_STATUS"
-author : windows-driver-content
-description : The WHEA_ERROR_STATUS union describes generic error codes that are abstracted from the data contained in implementation-specific error registers.
-old-location : whea\whea_error_status.htm
-old-project : whea
-ms.assetid : 5b11112b-e900-4894-a9ce-6895a4fa1956
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : ntddk/PWHEA_ERROR_STATUS, WHEA_ERROR_STATUS union [WHEA Drivers and Applications], WHEA_ERROR_STATUS, *PWHEA_ERROR_STATUS, whea.whea_error_status, PWHEA_ERROR_STATUS union pointer [WHEA Drivers and Applications], whearef_3dc93951-2c79-4b1e-b5b0-53ede31c6f37.xml, PWHEA_ERROR_STATUS, ntddk/WHEA_ERROR_STATUS, _WHEA_ERROR_STATUS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_ERROR_STATUS, *PWHEA_ERROR_STATUS
+UID: NS:ntddk._WHEA_ERROR_STATUS
+title: "_WHEA_ERROR_STATUS"
+author: windows-driver-content
+description: The WHEA_ERROR_STATUS union describes generic error codes that are abstracted from the data contained in implementation-specific error registers.
+old-location: whea\whea_error_status.htm
+old-project: whea
+ms.assetid: 5b11112b-e900-4894-a9ce-6895a4fa1956
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: ntddk/PWHEA_ERROR_STATUS, WHEA_ERROR_STATUS union [WHEA Drivers and Applications], WHEA_ERROR_STATUS, *PWHEA_ERROR_STATUS, whea.whea_error_status, PWHEA_ERROR_STATUS union pointer [WHEA Drivers and Applications], whearef_3dc93951-2c79-4b1e-b5b0-53ede31c6f37.xml, PWHEA_ERROR_STATUS, ntddk/WHEA_ERROR_STATUS, _WHEA_ERROR_STATUS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddk.h
+apiname:
+-	WHEA_ERROR_STATUS
+product: Windows
+targetos: Windows
+req.typenames: WHEA_ERROR_STATUS, *PWHEA_ERROR_STATUS
 ---
 
 # _WHEA_ERROR_STATUS structure

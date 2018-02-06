@@ -1,41 +1,46 @@
 ---
-UID : NF:ntddk.IoIncrementKeepAliveCount
-title : IoIncrementKeepAliveCount function
-author : windows-driver-content
-description : The IoIncrementKeepAliveCount routine increments a reference count associated with an Windows app process on a specific device.
-old-location : kernel\ioincrementkeepalivecount.htm
-old-project : kernel
-ms.assetid : A80754BD-0F23-4EE9-898F-30743AA82C72
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ntddk/IoIncrementKeepAliveCount, IoIncrementKeepAliveCount routine [Kernel-Mode Driver Architecture], kernel.ioincrementkeepalivecount, IoIncrementKeepAliveCount
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ntoskrnl.lib
-req.dll : Ntoskrnl.exe
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.IoIncrementKeepAliveCount
+title: IoIncrementKeepAliveCount function
+author: windows-driver-content
+description: The IoIncrementKeepAliveCount routine increments a reference count associated with an Windows app process on a specific device.
+old-location: kernel\ioincrementkeepalivecount.htm
+old-project: kernel
+ms.assetid: A80754BD-0F23-4EE9-898F-30743AA82C72
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ntddk/IoIncrementKeepAliveCount, IoIncrementKeepAliveCount routine [Kernel-Mode Driver Architecture], kernel.ioincrementkeepalivecount, IoIncrementKeepAliveCount
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ntoskrnl.lib
+req.dll: Ntoskrnl.exe
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Ntoskrnl.exe
+apiname:
+-	IoIncrementKeepAliveCount
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

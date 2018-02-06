@@ -1,41 +1,46 @@
 ---
-UID : NC:dot11wdi.MINIPORT_WDI_ALLOCATE_ADAPTER
-title : MINIPORT_WDI_ALLOCATE_ADAPTER
-author : windows-driver-content
-description : The MiniportWdiAllocateAdapter handler function allocates a WDI miniport adapter.
-old-location : netvista\miniportwdiallocateadapter.htm
-old-project : netvista
-ms.assetid : 4CBC7230-6480-40C9-90B7-A286FCEB1FA8
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.miniportwdiallocateadapter, MiniportWdiAllocateAdapter callback function [Network Drivers Starting with Windows Vista], MiniportWdiAllocateAdapter, MINIPORT_WDI_ALLOCATE_ADAPTER, MINIPORT_WDI_ALLOCATE_ADAPTER, dot11wdi/MiniportWdiAllocateAdapter
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : dot11wdi.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SYNTH_STATS, *PSYNTH_STATS
+UID: NC:dot11wdi.MINIPORT_WDI_ALLOCATE_ADAPTER
+title: MINIPORT_WDI_ALLOCATE_ADAPTER
+author: windows-driver-content
+description: The MiniportWdiAllocateAdapter handler function allocates a WDI miniport adapter.
+old-location: netvista\miniportwdiallocateadapter.htm
+old-project: netvista
+ms.assetid: 4CBC7230-6480-40C9-90B7-A286FCEB1FA8
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.miniportwdiallocateadapter, MiniportWdiAllocateAdapter callback function [Network Drivers Starting with Windows Vista], MiniportWdiAllocateAdapter, MINIPORT_WDI_ALLOCATE_ADAPTER, MINIPORT_WDI_ALLOCATE_ADAPTER, dot11wdi/MiniportWdiAllocateAdapter
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: dot11wdi.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	dot11wdi.h
+apiname:
+-	MiniportWdiAllocateAdapter
+product: Windows
+targetos: Windows
+req.typenames: SYNTH_STATS, *PSYNTH_STATS
 ---
 
 

@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisMCmRegisterAddressFamilyEx
-title : NdisMCmRegisterAddressFamilyEx function
-author : windows-driver-content
-description : The NdisMCmRegisterAddressFamilyEx function registers an address family (AF) for communication between a miniport call manager (MCM) and CoNDIS clients.
-old-location : netvista\ndismcmregisteraddressfamilyex.htm
-old-project : netvista
-ms.assetid : f58a9c08-d2cf-48d1-98d1-68aecd3b7bd0
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : condis_mcm_ref_9e0ef0aa-0fa8-4f40-a225-8908099356bc.xml, NdisMCmRegisterAddressFamilyEx, ndis/NdisMCmRegisterAddressFamilyEx, netvista.ndismcmregisteraddressfamilyex, NdisMCmRegisterAddressFamilyEx function [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_MCM_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisMCmRegisterAddressFamilyEx
+title: NdisMCmRegisterAddressFamilyEx function
+author: windows-driver-content
+description: The NdisMCmRegisterAddressFamilyEx function registers an address family (AF) for communication between a miniport call manager (MCM) and CoNDIS clients.
+old-location: netvista\ndismcmregisteraddressfamilyex.htm
+old-project: netvista
+ms.assetid: f58a9c08-d2cf-48d1-98d1-68aecd3b7bd0
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: condis_mcm_ref_9e0ef0aa-0fa8-4f40-a225-8908099356bc.xml, NdisMCmRegisterAddressFamilyEx, ndis/NdisMCmRegisterAddressFamilyEx, netvista.ndismcmregisteraddressfamilyex, NdisMCmRegisterAddressFamilyEx function [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_MCM_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisMCmRegisterAddressFamilyEx
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

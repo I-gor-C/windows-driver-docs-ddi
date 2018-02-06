@@ -1,42 +1,47 @@
 ---
-UID : NE:rilapitypes.RILDEVICEINFORMATION
-title : RILDEVICEINFORMATION
-author : windows-driver-content
-description : This enumeration describes the RILDEVICEINFORMATION.
-old-location : netvista\rildeviceinformation.htm
-old-project : netvista
-ms.assetid : 1abba51c-1db9-4424-aa11-64d3fd116a79
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : RIL_DEVICEINFO_REVISION, RIL_DEVICEINFO_ARG_SMALLEST, RIL_DEVICEINFO_MANUFACTURER, rilapitypes/RIL_DEVICEINFO_SERIALNUMBER_GW, RIL_DEVICEINFO_ARG_LARGEST, RILDEVICEINFORMATION enumeration [Network Drivers Starting with Windows Vista], rilapitypes/RIL_DEVICEINFO_ARG_SMALLEST, RIL_DEVICEINFO_SERIALNUMBER_GW, netvista.rildeviceinformation, RIL_DEVICEINFO_MODEL, rilapitypes/RIL_DEVICEINFO_SERIALNUMBER_CDMA, rilapitypes/RILDEVICEINFORMATION, rilapitypes/RIL_DEVICEINFO_MANUFACTURER, rilapitypes/RIL_DEVICEINFO_MODEL, RIL_DEVICEINFO_SERIALNUMBER_CDMA, RILDEVICEINFORMATION, rilapitypes/RIL_DEVICEINFO_REVISION, rilapitypes/RIL_DEVICEINFO_ARG_LARGEST
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : rilapitypes.h
-req.include-header : Rilapitypes.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RILDEVICEINFORMATION
-req.product : Windows 10 or later.
+UID: NE:rilapitypes.RILDEVICEINFORMATION
+title: RILDEVICEINFORMATION
+author: windows-driver-content
+description: This enumeration describes the RILDEVICEINFORMATION.
+old-location: netvista\rildeviceinformation.htm
+old-project: netvista
+ms.assetid: 1abba51c-1db9-4424-aa11-64d3fd116a79
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: RIL_DEVICEINFO_REVISION, RIL_DEVICEINFO_ARG_SMALLEST, RIL_DEVICEINFO_MANUFACTURER, rilapitypes/RIL_DEVICEINFO_SERIALNUMBER_GW, RIL_DEVICEINFO_ARG_LARGEST, RILDEVICEINFORMATION enumeration [Network Drivers Starting with Windows Vista], rilapitypes/RIL_DEVICEINFO_ARG_SMALLEST, RIL_DEVICEINFO_SERIALNUMBER_GW, netvista.rildeviceinformation, RIL_DEVICEINFO_MODEL, rilapitypes/RIL_DEVICEINFO_SERIALNUMBER_CDMA, rilapitypes/RILDEVICEINFORMATION, rilapitypes/RIL_DEVICEINFO_MANUFACTURER, rilapitypes/RIL_DEVICEINFO_MODEL, RIL_DEVICEINFO_SERIALNUMBER_CDMA, RILDEVICEINFORMATION, rilapitypes/RIL_DEVICEINFO_REVISION, rilapitypes/RIL_DEVICEINFO_ARG_LARGEST
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: rilapitypes.h
+req.include-header: Rilapitypes.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	rilapitypes.h
+apiname:
+-	RILDEVICEINFORMATION
+product: Windows
+targetos: Windows
+req.typenames: RILDEVICEINFORMATION
+req.product: Windows 10 or later.
 ---
 
 # RILDEVICEINFORMATION Enumeration
@@ -59,51 +64,51 @@ enum RILDEVICEINFORMATION {
 ## Constants
 
 <table>
-
-<tr>
-<td>RIL_DEVICEINFO_ARG_LARGEST</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_DEVICEINFO_ARG_SMALLEST</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_DEVICEINFO_MANUFACTURER</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_DEVICEINFO_MAX</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_DEVICEINFO_MIN</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_DEVICEINFO_MODEL</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_DEVICEINFO_REVISION</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_DEVICEINFO_SERIALNUMBER_CDMA</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_DEVICEINFO_SERIALNUMBER_GW</td>
-<td></td>
-</tr>
+            
+                <tr>
+                    <td>RIL_DEVICEINFO_ARG_LARGEST</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_DEVICEINFO_ARG_SMALLEST</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_DEVICEINFO_MANUFACTURER</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_DEVICEINFO_MAX</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_DEVICEINFO_MIN</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_DEVICEINFO_MODEL</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_DEVICEINFO_REVISION</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_DEVICEINFO_SERIALNUMBER_CDMA</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_DEVICEINFO_SERIALNUMBER_GW</td>
+                    <td></td>
+                </tr>
 </table>
 
 
@@ -112,9 +117,9 @@ enum RILDEVICEINFORMATION {
 | ---- |:---- |
 | **Header** | rilapitypes.h (include Rilapitypes.h) |
 
-## See Also
+    ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn946509">Cellular COM enumerations</a>
+        <a href="https://msdn.microsoft.com/library/windows/hardware/dn946509">Cellular COM enumerations</a>
 
  
 

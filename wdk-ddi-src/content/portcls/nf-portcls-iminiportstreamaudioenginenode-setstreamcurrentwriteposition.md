@@ -1,41 +1,46 @@
 ---
-UID : NF:portcls.IMiniportStreamAudioEngineNode.SetStreamCurrentWritePosition
-title : IMiniportStreamAudioEngineNode::SetStreamCurrentWritePosition method
-author : windows-driver-content
-description : Sets the current cursor position in the audio data stream that is being captured from the endpoint.
-old-location : audio\iminiportstreamaudioenginenode_setstreamcurrentwriteposition.htm
-old-project : audio
-ms.assetid : A277FC29-AB92-4D67-9E53-F8E8B36053F9
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : SetStreamCurrentWritePosition, audio.iminiportstreamaudioenginenode_setstreamcurrentwriteposition, IMiniportStreamAudioEngineNode, IMiniportStreamAudioEngineNode interface [Audio Devices], SetStreamCurrentWritePosition method, portcls/IMiniportStreamAudioEngineNode::SetStreamCurrentWritePosition, SetStreamCurrentWritePosition method [Audio Devices], IMiniportStreamAudioEngineNode interface, SetStreamCurrentWritePosition method [Audio Devices], IMiniportStreamAudioEngineNode::SetStreamCurrentWritePosition
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : portcls.h
-req.include-header : 
-req.target-type : Universal
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : portcls.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.IMiniportStreamAudioEngineNode.SetStreamCurrentWritePosition
+title: IMiniportStreamAudioEngineNode::SetStreamCurrentWritePosition method
+author: windows-driver-content
+description: Sets the current cursor position in the audio data stream that is being captured from the endpoint.
+old-location: audio\iminiportstreamaudioenginenode_setstreamcurrentwriteposition.htm
+old-project: audio
+ms.assetid: A277FC29-AB92-4D67-9E53-F8E8B36053F9
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: SetStreamCurrentWritePosition, audio.iminiportstreamaudioenginenode_setstreamcurrentwriteposition, IMiniportStreamAudioEngineNode, IMiniportStreamAudioEngineNode interface [Audio Devices], SetStreamCurrentWritePosition method, portcls/IMiniportStreamAudioEngineNode::SetStreamCurrentWritePosition, SetStreamCurrentWritePosition method [Audio Devices], IMiniportStreamAudioEngineNode interface, SetStreamCurrentWritePosition method [Audio Devices], IMiniportStreamAudioEngineNode::SetStreamCurrentWritePosition
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: portcls.h
+req.include-header: 
+req.target-type: Universal
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: portcls.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Portcls.h
+apiname:
+-	IMiniportStreamAudioEngineNode.SetStreamCurrentWritePosition
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

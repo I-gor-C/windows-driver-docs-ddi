@@ -1,12 +1,12 @@
 ---
-UID : NA:upssvc
-ms.assetid : 56f0ed8e-9ec7-30ec-98d5-fabcd442174f
-ms.author : windowsdriverdev
-ms.date : 01/18/18
-ms.keywords : 
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : portal
+UID: NA:upssvc
+ms.assetid: 56f0ed8e-9ec7-30ec-98d5-fabcd442174f
+ms.author: windowsdriverdev
+ms.date: 01/18/18
+ms.keywords: 
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: portal
 ---
 
 # upssvc.h header

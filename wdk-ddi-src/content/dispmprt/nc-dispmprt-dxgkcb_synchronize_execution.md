@@ -1,41 +1,46 @@
 ---
-UID : NC:dispmprt.DXGKCB_SYNCHRONIZE_EXECUTION
-title : DXGKCB_SYNCHRONIZE_EXECUTION
-author : windows-driver-content
-description : The DxgkCbSynchronizeExecution function synchronizes a specified function, implemented by the display miniport driver, with the display miniport driver's DxgkDdiInterruptRoutine function.
-old-location : display\dxgkcbsynchronizeexecution.htm
-old-project : display
-ms.assetid : 9c659319-d0a5-43a7-b9a9-9fad18397a09
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkcbsynchronizeexecution, DxgkCbSynchronizeExecution callback function [Display Devices], DxgkCbSynchronizeExecution, DXGKCB_SYNCHRONIZE_EXECUTION, DXGKCB_SYNCHRONIZE_EXECUTION, dispmprt/DxgkCbSynchronizeExecution, DpFunctions_3d9aecd7-8082-4869-a0d1-4a6cdadc4839.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : dispmprt.h
-req.include-header : Dispmprt.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
+UID: NC:dispmprt.DXGKCB_SYNCHRONIZE_EXECUTION
+title: DXGKCB_SYNCHRONIZE_EXECUTION
+author: windows-driver-content
+description: The DxgkCbSynchronizeExecution function synchronizes a specified function, implemented by the display miniport driver, with the display miniport driver's DxgkDdiInterruptRoutine function.
+old-location: display\dxgkcbsynchronizeexecution.htm
+old-project: display
+ms.assetid: 9c659319-d0a5-43a7-b9a9-9fad18397a09
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkcbsynchronizeexecution, DxgkCbSynchronizeExecution callback function [Display Devices], DxgkCbSynchronizeExecution, DXGKCB_SYNCHRONIZE_EXECUTION, DXGKCB_SYNCHRONIZE_EXECUTION, dispmprt/DxgkCbSynchronizeExecution, DpFunctions_3d9aecd7-8082-4869-a0d1-4a6cdadc4839.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: dispmprt.h
+req.include-header: Dispmprt.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	dispmprt.h
+apiname:
+-	DxgkCbSynchronizeExecution
+product: Windows
+targetos: Windows
+req.typenames: SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NC:wdm.IO_CSQ_INSERT_IRP_EX
-title : IO_CSQ_INSERT_IRP_EX
-author : windows-driver-content
-description : The CsqInsertIrpEx routine is used by the system to insert an IRP into a driver-implemented, cancel-safe IRP queue.
-old-location : kernel\csqinsertirpex.htm
-old-project : kernel
-ms.assetid : 1e407bcc-0a2b-42fa-982d-8ab0f12f082b
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.csqinsertirpex, CsqInsertIrpEx routine [Kernel-Mode Driver Architecture], CsqInsertIrpEx, IO_CSQ_INSERT_IRP_EX, IO_CSQ_INSERT_IRP_EX, wdm/CsqInsertIrpEx, DrvrRtns_8914d2b4-6049-4d81-8f5f-4458b8bff2ed.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
-req.product : Windows 10 or later.
+UID: NC:wdm.IO_CSQ_INSERT_IRP_EX
+title: IO_CSQ_INSERT_IRP_EX
+author: windows-driver-content
+description: The CsqInsertIrpEx routine is used by the system to insert an IRP into a driver-implemented, cancel-safe IRP queue.
+old-location: kernel\csqinsertirpex.htm
+old-project: kernel
+ms.assetid: 1e407bcc-0a2b-42fa-982d-8ab0f12f082b
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.csqinsertirpex, CsqInsertIrpEx routine [Kernel-Mode Driver Architecture], CsqInsertIrpEx, IO_CSQ_INSERT_IRP_EX, IO_CSQ_INSERT_IRP_EX, wdm/CsqInsertIrpEx, DrvrRtns_8914d2b4-6049-4d81-8f5f-4458b8bff2ed.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Wdm.h
+apiname:
+-	CsqInsertIrpEx
+product: Windows
+targetos: Windows
+req.typenames: WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+req.product: Windows 10 or later.
 ---
 
 

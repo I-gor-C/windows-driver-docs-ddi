@@ -1,41 +1,46 @@
 ---
-UID : NF:fcb.RxCreateSrvOpen
-title : RxCreateSrvOpen function
-author : windows-driver-content
-description : RxCreateSrvOpen allocates, initializes, and inserts a new SRV_OPEN structure into the in-memory data structures used by RDBSS. If a new structure has to be allocated, it has space for an FOBX structure.
-old-location : ifsk\rxcreatesrvopen.htm
-old-project : ifsk
-ms.assetid : e2cb8b92-2894-4515-bdf1-944c7f6ed3b0
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : fcb/RxCreateSrvOpen, RxCreateSrvOpen, ifsk.rxcreatesrvopen, rxref_663bb1d7-f914-4571-9701-e21ccf548337.xml, RxCreateSrvOpen function [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fcb.h
-req.include-header : Mrxfcb.h, Fcb.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FA_ENTRY, *PFA_ENTRY
+UID: NF:fcb.RxCreateSrvOpen
+title: RxCreateSrvOpen function
+author: windows-driver-content
+description: RxCreateSrvOpen allocates, initializes, and inserts a new SRV_OPEN structure into the in-memory data structures used by RDBSS. If a new structure has to be allocated, it has space for an FOBX structure.
+old-location: ifsk\rxcreatesrvopen.htm
+old-project: ifsk
+ms.assetid: e2cb8b92-2894-4515-bdf1-944c7f6ed3b0
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: fcb/RxCreateSrvOpen, RxCreateSrvOpen, ifsk.rxcreatesrvopen, rxref_663bb1d7-f914-4571-9701-e21ccf548337.xml, RxCreateSrvOpen function [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fcb.h
+req.include-header: Mrxfcb.h, Fcb.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	fcb.h
+apiname:
+-	RxCreateSrvOpen
+product: Windows
+targetos: Windows
+req.typenames: FA_ENTRY, *PFA_ENTRY
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NS:ucxcontroller._UCX_CONTROLLER_TRANSPORT_CHARACTERISTICS
-title : "_UCX_CONTROLLER_TRANSPORT_CHARACTERISTICS"
-author : windows-driver-content
-description : Stores the transport characteristics at relevant points in time. This structure is used in the EVT_UCX_CONTROLLER_GET_TRANSPORT_CHARACTERISTICS callback function.
-old-location : buses\ucx_controller_transport_characteristics.htm
-old-project : usbref
-ms.assetid : 9F267427-8D70-45D5-A8E6-67A1C6B73CDB
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : "_UCX_CONTROLLER_TRANSPORT_CHARACTERISTICS, UCX_CONTROLLER_TRANSPORT_CHARACTERISTICS structure [Buses], ucxcontroller/PUCX_CONTROLLER_TRANSPORT_CHARACTERISTICS, *PUCX_CONTROLLER_TRANSPORT_CHARACTERISTICS, buses.ucx_controller_transport_characteristics, ucxcontroller/UCX_CONTROLLER_TRANSPORT_CHARACTERISTICS, PUCX_CONTROLLER_TRANSPORT_CHARACTERISTICS structure pointer [Buses], PUCX_CONTROLLER_TRANSPORT_CHARACTERISTICS, UCX_CONTROLLER_TRANSPORT_CHARACTERISTICS"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ucxcontroller.h
-req.include-header : Ucxclass.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10, version 1709
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUCX_CONTROLLER_TRANSPORT_CHARACTERISTICS, UCX_CONTROLLER_TRANSPORT_CHARACTERISTICS"
-req.product : Windows 10 or later.
+UID: NS:ucxcontroller._UCX_CONTROLLER_TRANSPORT_CHARACTERISTICS
+title: "_UCX_CONTROLLER_TRANSPORT_CHARACTERISTICS"
+author: windows-driver-content
+description: Stores the transport characteristics at relevant points in time. This structure is used in the EVT_UCX_CONTROLLER_GET_TRANSPORT_CHARACTERISTICS callback function.
+old-location: buses\ucx_controller_transport_characteristics.htm
+old-project: usbref
+ms.assetid: 9F267427-8D70-45D5-A8E6-67A1C6B73CDB
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: "_UCX_CONTROLLER_TRANSPORT_CHARACTERISTICS, UCX_CONTROLLER_TRANSPORT_CHARACTERISTICS structure [Buses], ucxcontroller/PUCX_CONTROLLER_TRANSPORT_CHARACTERISTICS, *PUCX_CONTROLLER_TRANSPORT_CHARACTERISTICS, buses.ucx_controller_transport_characteristics, ucxcontroller/UCX_CONTROLLER_TRANSPORT_CHARACTERISTICS, PUCX_CONTROLLER_TRANSPORT_CHARACTERISTICS structure pointer [Buses], PUCX_CONTROLLER_TRANSPORT_CHARACTERISTICS, UCX_CONTROLLER_TRANSPORT_CHARACTERISTICS"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ucxcontroller.h
+req.include-header: Ucxclass.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10, version 1709
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	UcxController.h
+apiname:
+-	UCX_CONTROLLER_TRANSPORT_CHARACTERISTICS
+product: Windows
+targetos: Windows
+req.typenames: "*PUCX_CONTROLLER_TRANSPORT_CHARACTERISTICS, UCX_CONTROLLER_TRANSPORT_CHARACTERISTICS"
+req.product: Windows 10 or later.
 ---
 
 # _UCX_CONTROLLER_TRANSPORT_CHARACTERISTICS structure

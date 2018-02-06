@@ -1,42 +1,47 @@
 ---
-UID : NS:prntfont._WIDTHTABLE
-title : "_WIDTHTABLE"
-author : windows-driver-content
-description : The WIDTHTABLE structure is used to define the contents of Unidrv font metrics files (.ufm files).
-old-location : print\widthtable.htm
-old-project : print
-ms.assetid : 6c7b35a2-f9fd-41a9-a353-ec8b78259bf0
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : print.widthtable, prntfont/WIDTHTABLE, WIDTHTABLE, PWIDTHTABLE structure pointer [Print Devices], print_unidrv-pscript_fonts_a09173f6-51f7-4523-8270-a0406999f776.xml, *PWIDTHTABLE, PWIDTHTABLE, WIDTHTABLE structure [Print Devices], prntfont/PWIDTHTABLE, _WIDTHTABLE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : prntfont.h
-req.include-header : Prntfont.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWIDTHTABLE, WIDTHTABLE"
-req.product : Windows 10 or later.
+UID: NS:prntfont._WIDTHTABLE
+title: "_WIDTHTABLE"
+author: windows-driver-content
+description: The WIDTHTABLE structure is used to define the contents of Unidrv font metrics files (.ufm files).
+old-location: print\widthtable.htm
+old-project: print
+ms.assetid: 6c7b35a2-f9fd-41a9-a353-ec8b78259bf0
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: print.widthtable, prntfont/WIDTHTABLE, WIDTHTABLE, PWIDTHTABLE structure pointer [Print Devices], print_unidrv-pscript_fonts_a09173f6-51f7-4523-8270-a0406999f776.xml, *PWIDTHTABLE, PWIDTHTABLE, WIDTHTABLE structure [Print Devices], prntfont/PWIDTHTABLE, _WIDTHTABLE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: prntfont.h
+req.include-header: Prntfont.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	prntfont.h
+apiname:
+-	WIDTHTABLE
+product: Windows
+targetos: Windows
+req.typenames: "*PWIDTHTABLE, WIDTHTABLE"
+req.product: Windows 10 or later.
 ---
 
 # _WIDTHTABLE structure

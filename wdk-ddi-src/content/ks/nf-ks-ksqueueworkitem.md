@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsQueueWorkItem
-title : KsQueueWorkItem function
-author : windows-driver-content
-description : The KsQueueWorkItem function queues the specified work item with a worker previous created by the KsRegisterWorker function.
-old-location : stream\ksqueueworkitem.htm
-old-project : stream
-ms.assetid : a700979e-aee4-4bce-8f98-b44b864fbb43
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KsQueueWorkItem, ks/KsQueueWorkItem, ksfunc_abb711a0-0862-4d91-b2e1-3af290f1112f.xml, KsQueueWorkItem function [Streaming Media Devices], stream.ksqueueworkitem
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsQueueWorkItem
+title: KsQueueWorkItem function
+author: windows-driver-content
+description: The KsQueueWorkItem function queues the specified work item with a worker previous created by the KsRegisterWorker function.
+old-location: stream\ksqueueworkitem.htm
+old-project: stream
+ms.assetid: a700979e-aee4-4bce-8f98-b44b864fbb43
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KsQueueWorkItem, ks/KsQueueWorkItem, ksfunc_abb711a0-0862-4d91-b2e1-3af290f1112f.xml, KsQueueWorkItem function [Streaming Media Devices], stream.ksqueueworkitem
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsQueueWorkItem
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

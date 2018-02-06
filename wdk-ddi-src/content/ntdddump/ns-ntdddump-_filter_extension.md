@@ -1,41 +1,46 @@
 ---
-UID : NS:ntdddump._FILTER_EXTENSION
-title : "_FILTER_EXTENSION"
-author : windows-driver-content
-description : The crash dump driver passes a pointer to a FILTER_EXTENSION structure when the filter driver callback routines are called.
-old-location : storage\filter_extension.htm
-old-project : storage
-ms.assetid : 1113e917-3273-4ba7-8702-fe90a22fb024
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : "*PFILTER_EXTENSION, PFILTER_EXTENSION structure pointer [Storage Devices], storage.filter_extension, PFILTER_EXTENSION, ntdddump/FILTER_EXTENSION, FILTER_EXTENSION structure [Storage Devices], ntdddump/PFILTER_EXTENSION, FILTER_EXTENSION, structs-filter_c9e640bb-9678-4e2f-9341-0d26b36e65e6.xml, _FILTER_EXTENSION"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntdddump.h
-req.include-header : Ntdddump.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows Vista and Windows Server 2008.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PFILTER_EXTENSION, FILTER_EXTENSION"
+UID: NS:ntdddump._FILTER_EXTENSION
+title: "_FILTER_EXTENSION"
+author: windows-driver-content
+description: The crash dump driver passes a pointer to a FILTER_EXTENSION structure when the filter driver callback routines are called.
+old-location: storage\filter_extension.htm
+old-project: storage
+ms.assetid: 1113e917-3273-4ba7-8702-fe90a22fb024
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: "*PFILTER_EXTENSION, PFILTER_EXTENSION structure pointer [Storage Devices], storage.filter_extension, PFILTER_EXTENSION, ntdddump/FILTER_EXTENSION, FILTER_EXTENSION structure [Storage Devices], ntdddump/PFILTER_EXTENSION, FILTER_EXTENSION, structs-filter_c9e640bb-9678-4e2f-9341-0d26b36e65e6.xml, _FILTER_EXTENSION"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntdddump.h
+req.include-header: Ntdddump.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows Vista and Windows Server 2008.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntdddump.h
+apiname:
+-	FILTER_EXTENSION
+product: Windows
+targetos: Windows
+req.typenames: "*PFILTER_EXTENSION, FILTER_EXTENSION"
 ---
 
 # _FILTER_EXTENSION structure

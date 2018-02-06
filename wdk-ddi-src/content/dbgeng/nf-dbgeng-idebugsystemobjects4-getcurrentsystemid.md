@@ -1,41 +1,47 @@
 ---
-UID : NF:dbgeng.IDebugSystemObjects4.GetCurrentSystemId
-title : IDebugSystemObjects4::GetCurrentSystemId method
-author : windows-driver-content
-description : The GetCurrentSystemId method returns the engine target ID for the current process.
-old-location : debugger\getcurrentsystemid.htm
-old-project : debugger
-ms.assetid : 2ff5091b-7cf8-4972-b87b-b18d25bb23e9
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : GetCurrentSystemId method [Windows Debugging], IDebugSystemObjects4 interface, IDebugSystemObjects4, IDebugSystemObjects3::GetCurrentSystemId, dbgeng/IDebugSystemObjects3::GetCurrentSystemId, GetCurrentSystemId method [Windows Debugging], dbgeng/IDebugSystemObjects4::GetCurrentSystemId, IDebugSystemObjects3 interface [Windows Debugging], GetCurrentSystemId method, IDebugSystemObjects4::GetCurrentSystemId, IDebugSystemObjects4 interface [Windows Debugging], GetCurrentSystemId method, IDebugSystemObjects_02c8ff30-b552-465a-9be3-4e0526e1d6e1.xml, GetCurrentSystemId, GetCurrentSystemId method [Windows Debugging], IDebugSystemObjects3 interface, debugger.getcurrentsystemid
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSystemObjects4.GetCurrentSystemId
+title: IDebugSystemObjects4::GetCurrentSystemId method
+author: windows-driver-content
+description: The GetCurrentSystemId method returns the engine target ID for the current process.
+old-location: debugger\getcurrentsystemid.htm
+old-project: debugger
+ms.assetid: 2ff5091b-7cf8-4972-b87b-b18d25bb23e9
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: GetCurrentSystemId method [Windows Debugging], IDebugSystemObjects4 interface, IDebugSystemObjects4, IDebugSystemObjects3::GetCurrentSystemId, dbgeng/IDebugSystemObjects3::GetCurrentSystemId, GetCurrentSystemId method [Windows Debugging], dbgeng/IDebugSystemObjects4::GetCurrentSystemId, IDebugSystemObjects3 interface [Windows Debugging], GetCurrentSystemId method, IDebugSystemObjects4::GetCurrentSystemId, IDebugSystemObjects4 interface [Windows Debugging], GetCurrentSystemId method, IDebugSystemObjects_02c8ff30-b552-465a-9be3-4e0526e1d6e1.xml, GetCurrentSystemId, GetCurrentSystemId method [Windows Debugging], IDebugSystemObjects3 interface, debugger.getcurrentsystemid
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugSystemObjects3.GetCurrentSystemId
+-	IDebugSystemObjects4.GetCurrentSystemId
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

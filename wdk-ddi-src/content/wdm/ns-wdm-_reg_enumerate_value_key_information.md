@@ -1,42 +1,47 @@
 ---
-UID : NS:wdm._REG_ENUMERATE_VALUE_KEY_INFORMATION
-title : "_REG_ENUMERATE_VALUE_KEY_INFORMATION"
-author : windows-driver-content
-description : The REG_ENUMERATE_VALUE_KEY_INFORMATION structure describes one value entry of a key whose value entries are being enumerated.
-old-location : kernel\reg_enumerate_value_key_information.htm
-old-project : kernel
-ms.assetid : 0d5566ca-b71c-429e-bb7d-db3eb09f0472
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : "*PREG_ENUMERATE_VALUE_KEY_INFORMATION, wdm/REG_ENUMERATE_VALUE_KEY_INFORMATION, kstruct_d_126313cd-66b7-4239-8c2a-23c475d575cf.xml, PREG_ENUMERATE_VALUE_KEY_INFORMATION, kernel.reg_enumerate_value_key_information, REG_ENUMERATE_VALUE_KEY_INFORMATION structure [Kernel-Mode Driver Architecture], wdm/PREG_ENUMERATE_VALUE_KEY_INFORMATION, PREG_ENUMERATE_VALUE_KEY_INFORMATION structure pointer [Kernel-Mode Driver Architecture], _REG_ENUMERATE_VALUE_KEY_INFORMATION, REG_ENUMERATE_VALUE_KEY_INFORMATION"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : Available on Microsoft Windows XP and later versions of the Windows operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : REG_ENUMERATE_VALUE_KEY_INFORMATION, *PREG_ENUMERATE_VALUE_KEY_INFORMATION
-req.product : Windows 10 or later.
+UID: NS:wdm._REG_ENUMERATE_VALUE_KEY_INFORMATION
+title: "_REG_ENUMERATE_VALUE_KEY_INFORMATION"
+author: windows-driver-content
+description: The REG_ENUMERATE_VALUE_KEY_INFORMATION structure describes one value entry of a key whose value entries are being enumerated.
+old-location: kernel\reg_enumerate_value_key_information.htm
+old-project: kernel
+ms.assetid: 0d5566ca-b71c-429e-bb7d-db3eb09f0472
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: "*PREG_ENUMERATE_VALUE_KEY_INFORMATION, wdm/REG_ENUMERATE_VALUE_KEY_INFORMATION, kstruct_d_126313cd-66b7-4239-8c2a-23c475d575cf.xml, PREG_ENUMERATE_VALUE_KEY_INFORMATION, kernel.reg_enumerate_value_key_information, REG_ENUMERATE_VALUE_KEY_INFORMATION structure [Kernel-Mode Driver Architecture], wdm/PREG_ENUMERATE_VALUE_KEY_INFORMATION, PREG_ENUMERATE_VALUE_KEY_INFORMATION structure pointer [Kernel-Mode Driver Architecture], _REG_ENUMERATE_VALUE_KEY_INFORMATION, REG_ENUMERATE_VALUE_KEY_INFORMATION"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: Available on Microsoft Windows XP and later versions of the Windows operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	REG_ENUMERATE_VALUE_KEY_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: REG_ENUMERATE_VALUE_KEY_INFORMATION, *PREG_ENUMERATE_VALUE_KEY_INFORMATION
+req.product: Windows 10 or later.
 ---
 
 # _REG_ENUMERATE_VALUE_KEY_INFORMATION structure

@@ -1,42 +1,47 @@
 ---
-UID : NE:wdm._D3COLD_LAST_TRANSITION_STATUS
-title : "_D3COLD_LAST_TRANSITION_STATUS"
-author : windows-driver-content
-description : The D3COLD_LAST_TRANSITION_STATUS enumeration indicates whether the most recent transition to the D3hot device power state was followed by a transition to the D3cold device power state.
-old-location : kernel\d3cold_last_transition_status.htm
-old-project : kernel
-ms.assetid : 21E89D92-9902-4785-B022-8D17268FE75F
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : "_D3COLD_LAST_TRANSITION_STATUS, D3COLD_LAST_TRANSITION_STATUS enumeration [Kernel-Mode Driver Architecture], wdm/LastDStateTransitionStatusUnknown, LastDStateTransitionStatusUnknown, D3COLD_LAST_TRANSITION_STATUS, kernel.d3cold_last_transition_status, LastDStateTransitionD3cold, LastDStateTransitionD3hot, wdm/LastDStateTransitionD3cold, wdm/D3COLD_LAST_TRANSITION_STATUS, wdm/LastDStateTransitionD3hot, *PD3COLD_LAST_TRANSITION_STATUS"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : wdm.h
-req.include-header : Wdm.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PD3COLD_LAST_TRANSITION_STATUS, D3COLD_LAST_TRANSITION_STATUS"
-req.product : Windows 10 or later.
+UID: NE:wdm._D3COLD_LAST_TRANSITION_STATUS
+title: "_D3COLD_LAST_TRANSITION_STATUS"
+author: windows-driver-content
+description: The D3COLD_LAST_TRANSITION_STATUS enumeration indicates whether the most recent transition to the D3hot device power state was followed by a transition to the D3cold device power state.
+old-location: kernel\d3cold_last_transition_status.htm
+old-project: kernel
+ms.assetid: 21E89D92-9902-4785-B022-8D17268FE75F
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: "_D3COLD_LAST_TRANSITION_STATUS, D3COLD_LAST_TRANSITION_STATUS enumeration [Kernel-Mode Driver Architecture], wdm/LastDStateTransitionStatusUnknown, LastDStateTransitionStatusUnknown, D3COLD_LAST_TRANSITION_STATUS, kernel.d3cold_last_transition_status, LastDStateTransitionD3cold, LastDStateTransitionD3hot, wdm/LastDStateTransitionD3cold, wdm/D3COLD_LAST_TRANSITION_STATUS, wdm/LastDStateTransitionD3hot, *PD3COLD_LAST_TRANSITION_STATUS"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: wdm.h
+req.include-header: Wdm.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	D3COLD_LAST_TRANSITION_STATUS
+product: Windows
+targetos: Windows
+req.typenames: "*PD3COLD_LAST_TRANSITION_STATUS, D3COLD_LAST_TRANSITION_STATUS"
+req.product: Windows 10 or later.
 ---
 
 # _D3COLD_LAST_TRANSITION_STATUS Enumeration
@@ -54,35 +59,35 @@ typedef enum _D3COLD_LAST_TRANSITION_STATUS {
 ## Constants
 
 <table>
-
-<tr>
-<td>LastDStateTransitionD3cold</td>
-<td>The most recent transition to the D3hot device power state was followed by a transition to the D3cold device power state.</td>
-</tr>
-
-<tr>
-<td>LastDStateTransitionD3hot</td>
-<td>The most recent transition to the D3hot device power state was not followed by a transition to the D3cold device power state.</td>
-</tr>
-
-<tr>
-<td>LastDStateTransitionStatusUnknown</td>
-<td>Information is not available from the bus driver or platform firmware about whether the most recent transition to D3hot was followed by a transition to D3cold.</td>
-</tr>
+            
+                <tr>
+                    <td>LastDStateTransitionD3cold</td>
+                    <td>The most recent transition to the D3hot device power state was followed by a transition to the D3cold device power state.</td>
+                </tr>
+            
+                <tr>
+                    <td>LastDStateTransitionD3hot</td>
+                    <td>The most recent transition to the D3hot device power state was not followed by a transition to the D3cold device power state.</td>
+                </tr>
+            
+                <tr>
+                    <td>LastDStateTransitionStatusUnknown</td>
+                    <td>Information is not available from the bus driver or platform firmware about whether the most recent transition to D3hot was followed by a transition to D3cold.</td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-The <i>LastTransitionStatus</i> parameter of the <a href="..\wdm\nc-wdm-get_d3cold_last_transition_status.md">GetLastTransitionStatus</a> routine is a pointer to a variable of type <b>D3COLD_LAST_TRANSITION_STATUS</b>.
+        The <i>LastTransitionStatus</i> parameter of the <a href="..\wdm\nc-wdm-get_d3cold_last_transition_status.md">GetLastTransitionStatus</a> routine is a pointer to a variable of type <b>D3COLD_LAST_TRANSITION_STATUS</b>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
 | **Header** | wdm.h (include Wdm.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\wdm\nc-wdm-get_d3cold_last_transition_status.md">GetLastTransitionStatus</a>
+        <a href="..\wdm\nc-wdm-get_d3cold_last_transition_status.md">GetLastTransitionStatus</a>
 
  
 

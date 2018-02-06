@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGK_SEGMENTFLAGS
-title : "_DXGK_SEGMENTFLAGS"
-author : windows-driver-content
-description : The DXGK_SEGMENTFLAGS structure identifies properties for a segment that the driver provides through a call to its DxgkDdiQueryAdapterInfo function.
-old-location : display\dxgk_segmentflags.htm
-old-project : display
-ms.assetid : 959dfdb2-cadf-427d-958a-33ce2a1610ae
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgk_segmentflags, DXGK_SEGMENTFLAGS structure [Display Devices], d3dkmddi/DXGK_SEGMENTFLAGS, _DXGK_SEGMENTFLAGS, DXGK_SEGMENTFLAGS, DmStructs_a7239928-eb4e-42d0-8ced-9e37d28e9464.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_SEGMENTFLAGS
+UID: NS:d3dkmddi._DXGK_SEGMENTFLAGS
+title: "_DXGK_SEGMENTFLAGS"
+author: windows-driver-content
+description: The DXGK_SEGMENTFLAGS structure identifies properties for a segment that the driver provides through a call to its DxgkDdiQueryAdapterInfo function.
+old-location: display\dxgk_segmentflags.htm
+old-project: display
+ms.assetid: 959dfdb2-cadf-427d-958a-33ce2a1610ae
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgk_segmentflags, DXGK_SEGMENTFLAGS structure [Display Devices], d3dkmddi/DXGK_SEGMENTFLAGS, _DXGK_SEGMENTFLAGS, DXGK_SEGMENTFLAGS, DmStructs_a7239928-eb4e-42d0-8ced-9e37d28e9464.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DXGK_SEGMENTFLAGS
+product: Windows
+targetos: Windows
+req.typenames: DXGK_SEGMENTFLAGS
 ---
 
 # _DXGK_SEGMENTFLAGS structure

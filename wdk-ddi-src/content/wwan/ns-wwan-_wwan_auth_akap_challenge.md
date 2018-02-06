@@ -1,42 +1,47 @@
 ---
-UID : NS:wwan._WWAN_AUTH_AKAP_CHALLENGE
-title : "_WWAN_AUTH_AKAP_CHALLENGE"
-author : windows-driver-content
-description : The WWAN_AUTH_AKAP_CHALLENGE structure represents an authentication challenge using the AKA' method.
-old-location : netvista\wwan_auth_akap_challenge.htm
-old-project : netvista
-ms.assetid : 0C1862D6-1252-4CF7-926A-C4647D545255
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : WWAN_AUTH_AKAP_CHALLENGE structure [Network Drivers Starting with Windows Vista], wwan/WWAN_AUTH_AKAP_CHALLENGE, netvista.wwan_auth_akap_challenge, PWWAN_AUTH_AKAP_CHALLENGE, wwan/PWWAN_AUTH_AKAP_CHALLENGE, *PWWAN_AUTH_AKAP_CHALLENGE, _WWAN_AUTH_AKAP_CHALLENGE, WWAN_AUTH_AKAP_CHALLENGE, PWWAN_AUTH_AKAP_CHALLENGE structure pointer [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wwan.h
-req.include-header : Wwan.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with  Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WWAN_AUTH_AKAP_CHALLENGE, *PWWAN_AUTH_AKAP_CHALLENGE
-req.product : Windows 10 or later.
+UID: NS:wwan._WWAN_AUTH_AKAP_CHALLENGE
+title: "_WWAN_AUTH_AKAP_CHALLENGE"
+author: windows-driver-content
+description: The WWAN_AUTH_AKAP_CHALLENGE structure represents an authentication challenge using the AKA' method.
+old-location: netvista\wwan_auth_akap_challenge.htm
+old-project: netvista
+ms.assetid: 0C1862D6-1252-4CF7-926A-C4647D545255
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: WWAN_AUTH_AKAP_CHALLENGE structure [Network Drivers Starting with Windows Vista], wwan/WWAN_AUTH_AKAP_CHALLENGE, netvista.wwan_auth_akap_challenge, PWWAN_AUTH_AKAP_CHALLENGE, wwan/PWWAN_AUTH_AKAP_CHALLENGE, *PWWAN_AUTH_AKAP_CHALLENGE, _WWAN_AUTH_AKAP_CHALLENGE, WWAN_AUTH_AKAP_CHALLENGE, PWWAN_AUTH_AKAP_CHALLENGE structure pointer [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wwan.h
+req.include-header: Wwan.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with  Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wwan.h
+apiname:
+-	WWAN_AUTH_AKAP_CHALLENGE
+product: Windows
+targetos: Windows
+req.typenames: WWAN_AUTH_AKAP_CHALLENGE, *PWWAN_AUTH_AKAP_CHALLENGE
+req.product: Windows 10 or later.
 ---
 
 # _WWAN_AUTH_AKAP_CHALLENGE structure

@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.RtlFillMemoryUlong
-title : RtlFillMemoryUlong function
-author : windows-driver-content
-description : The RtlFillMemoryUlong routine fills the specified range of memory with one or more repetitions of a ULONG value.
-old-location : ifsk\rtlfillmemoryulong.htm
-old-project : ifsk
-ms.assetid : a3758f32-daa9-4795-9a79-694b02da43cd
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.rtlfillmemoryulong, RtlFillMemoryUlong, RtlFillMemoryUlong routine [Installable File System Drivers], ntifs/RtlFillMemoryUlong, rtlref_11aa35b5-f5b5-459c-9996-e7dcb7741dd8.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.RtlFillMemoryUlong
+title: RtlFillMemoryUlong function
+author: windows-driver-content
+description: The RtlFillMemoryUlong routine fills the specified range of memory with one or more repetitions of a ULONG value.
+old-location: ifsk\rtlfillmemoryulong.htm
+old-project: ifsk
+ms.assetid: a3758f32-daa9-4795-9a79-694b02da43cd
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.rtlfillmemoryulong, RtlFillMemoryUlong, RtlFillMemoryUlong routine [Installable File System Drivers], ntifs/RtlFillMemoryUlong, rtlref_11aa35b5-f5b5-459c-9996-e7dcb7741dd8.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	RtlFillMemoryUlong
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

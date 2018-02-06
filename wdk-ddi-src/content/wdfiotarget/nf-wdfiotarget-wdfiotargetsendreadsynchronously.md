@@ -1,42 +1,50 @@
 ---
-UID : NF:wdfiotarget.WdfIoTargetSendReadSynchronously
-title : WdfIoTargetSendReadSynchronously function
-author : windows-driver-content
-description : The WdfIoTargetSendReadSynchronously method builds a read request and sends it synchronously to an I/O target.
-old-location : wdf\wdfiotargetsendreadsynchronously.htm
-old-project : wdf
-ms.assetid : bc6ceaac-883b-44af-8ac5-20145a5a6af9
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.wdfiotargetsendreadsynchronously, PFN_WDFIOTARGETSENDREADSYNCHRONOUSLY, kmdf.wdfiotargetsendreadsynchronously, DFIOTargetRef_91d200b2-9585-488f-9477-3b6e528e82cc.xml, WdfIoTargetSendReadSynchronously method, WdfIoTargetSendReadSynchronously, wdfiotarget/WdfIoTargetSendReadSynchronously
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfiotarget.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : DeferredRequestCompleted, DriverCreate, InternalIoctlReqs, IoctlReqs, KmdfIrql, KmdfIrql2, RequestCompleted, RequestCompletedLocal, SyncReqSend, WriteReqs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDF_IO_TARGET_STATE, WDF_IO_TARGET_STATE"
-req.product : Windows 10 or later.
+UID: NF:wdfiotarget.WdfIoTargetSendReadSynchronously
+title: WdfIoTargetSendReadSynchronously function
+author: windows-driver-content
+description: The WdfIoTargetSendReadSynchronously method builds a read request and sends it synchronously to an I/O target.
+old-location: wdf\wdfiotargetsendreadsynchronously.htm
+old-project: wdf
+ms.assetid: bc6ceaac-883b-44af-8ac5-20145a5a6af9
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.wdfiotargetsendreadsynchronously, PFN_WDFIOTARGETSENDREADSYNCHRONOUSLY, kmdf.wdfiotargetsendreadsynchronously, DFIOTargetRef_91d200b2-9585-488f-9477-3b6e528e82cc.xml, WdfIoTargetSendReadSynchronously method, WdfIoTargetSendReadSynchronously, wdfiotarget/WdfIoTargetSendReadSynchronously
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfiotarget.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: DeferredRequestCompleted, DriverCreate, InternalIoctlReqs, IoctlReqs, KmdfIrql, KmdfIrql2, RequestCompleted, RequestCompletedLocal, SyncReqSend, WriteReqs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+-	WUDFx02000.dll
+-	WUDFx02000.dll.dll
+apiname:
+-	WdfIoTargetSendReadSynchronously
+product: Windows
+targetos: Windows
+req.typenames: "*PWDF_IO_TARGET_STATE, WDF_IO_TARGET_STATE"
+req.product: Windows 10 or later.
 ---
 
 

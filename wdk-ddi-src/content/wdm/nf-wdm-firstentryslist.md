@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.FirstEntrySList
-title : FirstEntrySList function
-author : windows-driver-content
-description : The FirstEntrySList routine returns the first entry in a sequenced singly linked list.
-old-location : kernel\firstentryslist.htm
-old-project : kernel
-ms.assetid : 80444a10-91f3-44b5-ad20-3d3d8f49ca60
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : FirstEntrySList routine [Kernel-Mode Driver Architecture], FirstEntrySList, k109_0a6c7f88-35fa-4cc9-ac3d-03bf1e873cf3.xml, kernel.firstentryslist, wdm/FirstEntrySList
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntifs.h, Ntddk.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.FirstEntrySList
+title: FirstEntrySList function
+author: windows-driver-content
+description: The FirstEntrySList routine returns the first entry in a sequenced singly linked list.
+old-location: kernel\firstentryslist.htm
+old-project: kernel
+ms.assetid: 80444a10-91f3-44b5-ad20-3d3d8f49ca60
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: FirstEntrySList routine [Kernel-Mode Driver Architecture], FirstEntrySList, k109_0a6c7f88-35fa-4cc9-ac3d-03bf1e873cf3.xml, kernel.firstentryslist, wdm/FirstEntrySList
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntifs.h, Ntddk.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	FirstEntrySList
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

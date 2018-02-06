@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddk._PHYSICAL_COUNTER_RESOURCE_DESCRIPTOR
-title : "_PHYSICAL_COUNTER_RESOURCE_DESCRIPTOR"
-author : windows-driver-content
-description : The PHYSICAL_COUNTER_RESOURCE_DESCRIPTOR structure describes the counter resources available on the platform.
-old-location : kernel\physical_counter_resource_descriptor.htm
-old-project : kernel
-ms.assetid : 9b4c35a1-04b9-4d4d-9a57-2f5711ec7418
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.physical_counter_resource_descriptor, _PHYSICAL_COUNTER_RESOURCE_DESCRIPTOR, PHYSICAL_COUNTER_RESOURCE_DESCRIPTOR structure [Kernel-Mode Driver Architecture], ntddk/PHYSICAL_COUNTER_RESOURCE_DESCRIPTOR, PHYSICAL_COUNTER_RESOURCE_DESCRIPTOR, PPHYSICAL_COUNTER_RESOURCE_DESCRIPTOR, *PPHYSICAL_COUNTER_RESOURCE_DESCRIPTOR, ntddk/PPHYSICAL_COUNTER_RESOURCE_DESCRIPTOR, kstruct_c_d1ca3bce-f598-4c61-9832-defae021d224.xml, PPHYSICAL_COUNTER_RESOURCE_DESCRIPTOR structure pointer [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddk.h
-req.include-header : Ntddk.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in Windows 7 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPHYSICAL_COUNTER_RESOURCE_DESCRIPTOR, PHYSICAL_COUNTER_RESOURCE_DESCRIPTOR"
+UID: NS:ntddk._PHYSICAL_COUNTER_RESOURCE_DESCRIPTOR
+title: "_PHYSICAL_COUNTER_RESOURCE_DESCRIPTOR"
+author: windows-driver-content
+description: The PHYSICAL_COUNTER_RESOURCE_DESCRIPTOR structure describes the counter resources available on the platform.
+old-location: kernel\physical_counter_resource_descriptor.htm
+old-project: kernel
+ms.assetid: 9b4c35a1-04b9-4d4d-9a57-2f5711ec7418
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.physical_counter_resource_descriptor, _PHYSICAL_COUNTER_RESOURCE_DESCRIPTOR, PHYSICAL_COUNTER_RESOURCE_DESCRIPTOR structure [Kernel-Mode Driver Architecture], ntddk/PHYSICAL_COUNTER_RESOURCE_DESCRIPTOR, PHYSICAL_COUNTER_RESOURCE_DESCRIPTOR, PPHYSICAL_COUNTER_RESOURCE_DESCRIPTOR, *PPHYSICAL_COUNTER_RESOURCE_DESCRIPTOR, ntddk/PPHYSICAL_COUNTER_RESOURCE_DESCRIPTOR, kstruct_c_d1ca3bce-f598-4c61-9832-defae021d224.xml, PPHYSICAL_COUNTER_RESOURCE_DESCRIPTOR structure pointer [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddk.h
+req.include-header: Ntddk.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in Windows 7 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddk.h
+apiname:
+-	PHYSICAL_COUNTER_RESOURCE_DESCRIPTOR
+product: Windows
+targetos: Windows
+req.typenames: "*PPHYSICAL_COUNTER_RESOURCE_DESCRIPTOR, PHYSICAL_COUNTER_RESOURCE_DESCRIPTOR"
 ---
 
 # _PHYSICAL_COUNTER_RESOURCE_DESCRIPTOR structure

@@ -1,42 +1,47 @@
 ---
-UID : NS:wsk._WSK_BUF
-title : "_WSK_BUF"
-author : windows-driver-content
-description : The WSK_BUF structure defines a data buffer that is used for sending and receiving data over a socket.
-old-location : netvista\wsk_buf.htm
-old-project : netvista
-ms.assetid : bef653d3-5de3-4af3-8c1f-cff55619e2e9
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : wsk/WSK_BUF, PWSK_BUF, WSK_BUF, _WSK_BUF, netvista.wsk_buf, wskref_38d35e0c-e08d-4be7-b5c8-0559774d5de0.xml, *PWSK_BUF, wsk/PWSK_BUF, PWSK_BUF structure pointer [Network Drivers Starting with Windows Vista], WSK_BUF structure [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wsk.h
-req.include-header : Wsk.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating   systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWSK_BUF, WSK_BUF"
-req.product : Windows 10 or later.
+UID: NS:wsk._WSK_BUF
+title: "_WSK_BUF"
+author: windows-driver-content
+description: The WSK_BUF structure defines a data buffer that is used for sending and receiving data over a socket.
+old-location: netvista\wsk_buf.htm
+old-project: netvista
+ms.assetid: bef653d3-5de3-4af3-8c1f-cff55619e2e9
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: wsk/WSK_BUF, PWSK_BUF, WSK_BUF, _WSK_BUF, netvista.wsk_buf, wskref_38d35e0c-e08d-4be7-b5c8-0559774d5de0.xml, *PWSK_BUF, wsk/PWSK_BUF, PWSK_BUF structure pointer [Network Drivers Starting with Windows Vista], WSK_BUF structure [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wsk.h
+req.include-header: Wsk.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wsk.h
+apiname:
+-	WSK_BUF
+product: Windows
+targetos: Windows
+req.typenames: "*PWSK_BUF, WSK_BUF"
+req.product: Windows 10 or later.
 ---
 
 # _WSK_BUF structure

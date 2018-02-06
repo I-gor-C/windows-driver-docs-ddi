@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFDevice.CreateRequest
-title : IWDFDevice::CreateRequest method
-author : windows-driver-content
-description : The CreateRequest method creates an unformatted request object.
-old-location : wdf\iwdfdevice_createrequest.htm
-old-project : wdf
-ms.assetid : 031ce604-9d6f-4fdd-bacc-d1897f260a14
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : UMDFDeviceObjectRef_9eb18b05-e5fc-48cf-907b-ed7d188eac4b.xml, CreateRequest method, IWDFDevice interface, IWDFDevice interface, CreateRequest method, CreateRequest method, umdf.iwdfdevice_createrequest, CreateRequest, IWDFDevice::CreateRequest, IWDFDevice, wudfddi/IWDFDevice::CreateRequest, wdf.iwdfdevice_createrequest
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.5
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFDevice.CreateRequest
+title: IWDFDevice::CreateRequest method
+author: windows-driver-content
+description: The CreateRequest method creates an unformatted request object.
+old-location: wdf\iwdfdevice_createrequest.htm
+old-project: wdf
+ms.assetid: 031ce604-9d6f-4fdd-bacc-d1897f260a14
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: UMDFDeviceObjectRef_9eb18b05-e5fc-48cf-907b-ed7d188eac4b.xml, CreateRequest method, IWDFDevice interface, IWDFDevice interface, CreateRequest method, CreateRequest method, umdf.iwdfdevice_createrequest, CreateRequest, IWDFDevice::CreateRequest, IWDFDevice, wudfddi/IWDFDevice::CreateRequest, wdf.iwdfdevice_createrequest
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.5
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFDevice.CreateRequest
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

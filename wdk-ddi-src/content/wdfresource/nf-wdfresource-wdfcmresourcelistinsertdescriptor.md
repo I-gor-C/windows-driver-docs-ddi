@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfresource.WdfCmResourceListInsertDescriptor
-title : WdfCmResourceListInsertDescriptor function
-author : windows-driver-content
-description : The WdfCmResourceListInsertDescriptor method inserts a resource descriptor into a specified resource list.
-old-location : wdf\wdfcmresourcelistinsertdescriptor.htm
-old-project : wdf
-ms.assetid : 18406f06-d60c-401e-a745-54caf1d0c21d
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WdfCmResourceListInsertDescriptor, wdf.wdfcmresourcelistinsertdescriptor, WdfCmResourceListInsertDescriptor method, DFResourceObjectRef_f55c637b-3d8b-4467-9668-bd723bc0206e.xml, kmdf.wdfcmresourcelistinsertdescriptor, PFN_WDFCMRESOURCELISTINSERTDESCRIPTOR, wdfresource/WdfCmResourceListInsertDescriptor
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfresource.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_REQUEST_SEND_OPTIONS, *PWDF_REQUEST_SEND_OPTIONS
-req.product : Windows 10 or later.
+UID: NF:wdfresource.WdfCmResourceListInsertDescriptor
+title: WdfCmResourceListInsertDescriptor function
+author: windows-driver-content
+description: The WdfCmResourceListInsertDescriptor method inserts a resource descriptor into a specified resource list.
+old-location: wdf\wdfcmresourcelistinsertdescriptor.htm
+old-project: wdf
+ms.assetid: 18406f06-d60c-401e-a745-54caf1d0c21d
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WdfCmResourceListInsertDescriptor, wdf.wdfcmresourcelistinsertdescriptor, WdfCmResourceListInsertDescriptor method, DFResourceObjectRef_f55c637b-3d8b-4467-9668-bd723bc0206e.xml, kmdf.wdfcmresourcelistinsertdescriptor, PFN_WDFCMRESOURCELISTINSERTDESCRIPTOR, wdfresource/WdfCmResourceListInsertDescriptor
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfresource.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfCmResourceListInsertDescriptor
+product: Windows
+targetos: Windows
+req.typenames: WDF_REQUEST_SEND_OPTIONS, *PWDF_REQUEST_SEND_OPTIONS
+req.product: Windows 10 or later.
 ---
 
 

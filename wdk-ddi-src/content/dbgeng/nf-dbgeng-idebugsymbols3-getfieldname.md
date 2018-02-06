@@ -1,41 +1,47 @@
 ---
-UID : NF:dbgeng.IDebugSymbols3.GetFieldName
-title : IDebugSymbols3::GetFieldName method
-author : windows-driver-content
-description : The GetFieldName method returns the name of a field within a structure.
-old-location : debugger\getfieldname.htm
-old-project : debugger
-ms.assetid : 3fb9abdd-f2c0-41b4-8df9-2f7f5065f90c
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : GetFieldName method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols3::GetFieldName, IDebugSymbols3, IDebugSymbols3 interface [Windows Debugging], GetFieldName method, IDebugSymbols2::GetFieldName, IDebugSymbols2 interface [Windows Debugging], GetFieldName method, GetFieldName method [Windows Debugging], IDebugSymbols2 interface, dbgeng/IDebugSymbols3::GetFieldName, IDebugSymbols_9956ec9a-7914-46e4-9cec-49a22a0d184f.xml, GetFieldName method [Windows Debugging], GetFieldName, debugger.getfieldname, dbgeng/IDebugSymbols2::GetFieldName
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSymbols3.GetFieldName
+title: IDebugSymbols3::GetFieldName method
+author: windows-driver-content
+description: The GetFieldName method returns the name of a field within a structure.
+old-location: debugger\getfieldname.htm
+old-project: debugger
+ms.assetid: 3fb9abdd-f2c0-41b4-8df9-2f7f5065f90c
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: GetFieldName method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols3::GetFieldName, IDebugSymbols3, IDebugSymbols3 interface [Windows Debugging], GetFieldName method, IDebugSymbols2::GetFieldName, IDebugSymbols2 interface [Windows Debugging], GetFieldName method, GetFieldName method [Windows Debugging], IDebugSymbols2 interface, dbgeng/IDebugSymbols3::GetFieldName, IDebugSymbols_9956ec9a-7914-46e4-9cec-49a22a0d184f.xml, GetFieldName method [Windows Debugging], GetFieldName, debugger.getfieldname, dbgeng/IDebugSymbols2::GetFieldName
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugSymbols2.GetFieldName
+-	IDebugSymbols3.GetFieldName
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

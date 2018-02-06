@@ -1,42 +1,47 @@
 ---
-UID : NC:wdfdevice.EVT_WDFDEVICE_WDM_PRE_PO_FX_UNREGISTER_DEVICE
-title : EVT_WDFDEVICE_WDM_PRE_PO_FX_UNREGISTER_DEVICE
-author : windows-driver-content
-description : The EvtDeviceWdmPrePoFxUnregisterDevice callback function performs device-specific operations before the framework deletes a specified registration with the power framework.
-old-location : wdf\evtdevicewdmprepofxunregisterdevice.htm
-old-project : wdf
-ms.assetid : D663C47D-C59E-4210-84D8-9773A3003990
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.evtdevicewdmprepofxunregisterdevice, EvtDeviceWdmPrePoFxUnregisterDevice callback function, EvtDeviceWdmPrePoFxUnregisterDevice, EVT_WDFDEVICE_WDM_PRE_PO_FX_UNREGISTER_DEVICE, EVT_WDFDEVICE_WDM_PRE_PO_FX_UNREGISTER_DEVICE, wdfdevice/EvtDeviceWdmPrePoFxUnregisterDevice, kmdf.evtdevicewdmprepofxunregisterdevice
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdfdevice.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.11
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_DEVICE_SHUTDOWN_FLAGS
-req.product : Windows 10 or later.
+UID: NC:wdfdevice.EVT_WDFDEVICE_WDM_PRE_PO_FX_UNREGISTER_DEVICE
+title: EVT_WDFDEVICE_WDM_PRE_PO_FX_UNREGISTER_DEVICE
+author: windows-driver-content
+description: The EvtDeviceWdmPrePoFxUnregisterDevice callback function performs device-specific operations before the framework deletes a specified registration with the power framework.
+old-location: wdf\evtdevicewdmprepofxunregisterdevice.htm
+old-project: wdf
+ms.assetid: D663C47D-C59E-4210-84D8-9773A3003990
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.evtdevicewdmprepofxunregisterdevice, EvtDeviceWdmPrePoFxUnregisterDevice callback function, EvtDeviceWdmPrePoFxUnregisterDevice, EVT_WDFDEVICE_WDM_PRE_PO_FX_UNREGISTER_DEVICE, EVT_WDFDEVICE_WDM_PRE_PO_FX_UNREGISTER_DEVICE, wdfdevice/EvtDeviceWdmPrePoFxUnregisterDevice, kmdf.evtdevicewdmprepofxunregisterdevice
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdfdevice.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.11
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Wdfdevice.h
+apiname:
+-	EvtDeviceWdmPrePoFxUnregisterDevice
+product: Windows
+targetos: Windows
+req.typenames: WDF_DEVICE_SHUTDOWN_FLAGS
+req.product: Windows 10 or later.
 ---
 
 

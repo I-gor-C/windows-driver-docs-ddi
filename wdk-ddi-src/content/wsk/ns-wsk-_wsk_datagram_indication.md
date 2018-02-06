@@ -1,42 +1,47 @@
 ---
-UID : NS:wsk._WSK_DATAGRAM_INDICATION
-title : "_WSK_DATAGRAM_INDICATION"
-author : windows-driver-content
-description : The WSK_DATAGRAM_INDICATION structure describes a datagram that has been received on a datagram socket.
-old-location : netvista\wsk_datagram_indication.htm
-old-project : netvista
-ms.assetid : 061db3ca-80ed-419e-8cca-f49d1498b780
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : wskref_1e0fb168-6e03-4b73-8bb4-e3bce0c94b02.xml, wsk/WSK_DATAGRAM_INDICATION, PWSK_DATAGRAM_INDICATION structure pointer [Network Drivers Starting with Windows Vista], *PWSK_DATAGRAM_INDICATION, WSK_DATAGRAM_INDICATION, wsk/PWSK_DATAGRAM_INDICATION, WSK_DATAGRAM_INDICATION structure [Network Drivers Starting with Windows Vista], netvista.wsk_datagram_indication, _WSK_DATAGRAM_INDICATION, PWSK_DATAGRAM_INDICATION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wsk.h
-req.include-header : Wsk.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating   systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WSK_DATAGRAM_INDICATION, *PWSK_DATAGRAM_INDICATION
-req.product : Windows 10 or later.
+UID: NS:wsk._WSK_DATAGRAM_INDICATION
+title: "_WSK_DATAGRAM_INDICATION"
+author: windows-driver-content
+description: The WSK_DATAGRAM_INDICATION structure describes a datagram that has been received on a datagram socket.
+old-location: netvista\wsk_datagram_indication.htm
+old-project: netvista
+ms.assetid: 061db3ca-80ed-419e-8cca-f49d1498b780
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: wskref_1e0fb168-6e03-4b73-8bb4-e3bce0c94b02.xml, wsk/WSK_DATAGRAM_INDICATION, PWSK_DATAGRAM_INDICATION structure pointer [Network Drivers Starting with Windows Vista], *PWSK_DATAGRAM_INDICATION, WSK_DATAGRAM_INDICATION, wsk/PWSK_DATAGRAM_INDICATION, WSK_DATAGRAM_INDICATION structure [Network Drivers Starting with Windows Vista], netvista.wsk_datagram_indication, _WSK_DATAGRAM_INDICATION, PWSK_DATAGRAM_INDICATION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wsk.h
+req.include-header: Wsk.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wsk.h
+apiname:
+-	WSK_DATAGRAM_INDICATION
+product: Windows
+targetos: Windows
+req.typenames: WSK_DATAGRAM_INDICATION, *PWSK_DATAGRAM_INDICATION
+req.product: Windows 10 or later.
 ---
 
 # _WSK_DATAGRAM_INDICATION structure

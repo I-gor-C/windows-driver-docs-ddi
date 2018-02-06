@@ -1,42 +1,47 @@
 ---
-UID : NF:video.VideoPortReadPortUlong
-title : VideoPortReadPortUlong function
-author : windows-driver-content
-description : The VideoPortReadPortUlong function reads a ULONG value from a mapped I/O port.
-old-location : display\videoportreadportulong.htm
-old-project : display
-ms.assetid : 73402b35-85ce-4bb1-8ec5-619805d5a3e0
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : video/VideoPortReadPortUlong, display.videoportreadportulong, VideoPortReadPortUlong, VideoPort_Functions_347d0c32-a4b6-4061-bbd5-16325e0e3af6.xml, VideoPortReadPortUlong function [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows 2000 and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Videoprt.lib
-req.dll : Videoprt.sys
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_PORT_SERVICES
-req.product : Windows 10 or later.
+UID: NF:video.VideoPortReadPortUlong
+title: VideoPortReadPortUlong function
+author: windows-driver-content
+description: The VideoPortReadPortUlong function reads a ULONG value from a mapped I/O port.
+old-location: display\videoportreadportulong.htm
+old-project: display
+ms.assetid: 73402b35-85ce-4bb1-8ec5-619805d5a3e0
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: video/VideoPortReadPortUlong, display.videoportreadportulong, VideoPortReadPortUlong, VideoPort_Functions_347d0c32-a4b6-4061-bbd5-16325e0e3af6.xml, VideoPortReadPortUlong function [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows 2000 and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Videoprt.lib
+req.dll: Videoprt.sys
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Videoprt.sys
+apiname:
+-	VideoPortReadPortUlong
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_PORT_SERVICES
+req.product: Windows 10 or later.
 ---
 
 

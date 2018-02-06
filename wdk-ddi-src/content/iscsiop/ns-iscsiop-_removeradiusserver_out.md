@@ -1,41 +1,46 @@
 ---
-UID : NS:iscsiop._RemoveRADIUSServer_OUT
-title : "_RemoveRADIUSServer_OUT"
-author : windows-driver-content
-description : The RemoveiSNSServer_OUT structure holds the output data for the RemoveRADIUSServer method.
-old-location : storage\removeradiusserver_out.htm
-old-project : storage
-ms.assetid : da5be900-a362-4d74-9ac7-65b96f0348ce
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : PRemoveRADIUSServer_OUT structure pointer [Storage Devices], RemoveRADIUSServer_OUT structure [Storage Devices], PRemoveRADIUSServer_OUT, *PRemoveRADIUSServer_OUT, storage.removeradiusserver_out, structs-iSCSI_dea5813a-b7e8-4702-af57-f7a40360efb9.xml, iscsiop/PRemoveRADIUSServer_OUT, iscsiop/RemoveRADIUSServer_OUT, _RemoveRADIUSServer_OUT, RemoveRADIUSServer_OUT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : iscsiop.h
-req.include-header : Iscsiop.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PRemoveRADIUSServer_OUT, RemoveRADIUSServer_OUT"
+UID: NS:iscsiop._RemoveRADIUSServer_OUT
+title: "_RemoveRADIUSServer_OUT"
+author: windows-driver-content
+description: The RemoveiSNSServer_OUT structure holds the output data for the RemoveRADIUSServer method.
+old-location: storage\removeradiusserver_out.htm
+old-project: storage
+ms.assetid: da5be900-a362-4d74-9ac7-65b96f0348ce
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: PRemoveRADIUSServer_OUT structure pointer [Storage Devices], RemoveRADIUSServer_OUT structure [Storage Devices], PRemoveRADIUSServer_OUT, *PRemoveRADIUSServer_OUT, storage.removeradiusserver_out, structs-iSCSI_dea5813a-b7e8-4702-af57-f7a40360efb9.xml, iscsiop/PRemoveRADIUSServer_OUT, iscsiop/RemoveRADIUSServer_OUT, _RemoveRADIUSServer_OUT, RemoveRADIUSServer_OUT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: iscsiop.h
+req.include-header: Iscsiop.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	iscsiop.h
+apiname:
+-	RemoveRADIUSServer_OUT
+product: Windows
+targetos: Windows
+req.typenames: "*PRemoveRADIUSServer_OUT, RemoveRADIUSServer_OUT"
 ---
 
 # _RemoveRADIUSServer_OUT structure

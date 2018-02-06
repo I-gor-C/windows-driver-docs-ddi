@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.IsReparseTagMicrosoft
-title : IsReparseTagMicrosoft macro
-author : windows-driver-content
-description : The IsReparseTagMicrosoft macro determines whether a reparse point tag indicates a Microsoft reparse point.
-old-location : ifsk\isreparsetagmicrosoft.htm
-old-project : ifsk
-ms.assetid : 9c5abef5-36ff-4f10-8e4e-b8d36d995246
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ntifs/IsReparseTagMicrosoft, ifsk.isreparsetagmicrosoft, IsReparseTagMicrosoft function [Installable File System Drivers], IsReparseTagMicrosoft, ioref_ef573233-e933-490e-b762-1ce20343c65c.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : macro
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : ntifs.h
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.IsReparseTagMicrosoft
+title: IsReparseTagMicrosoft macro
+author: windows-driver-content
+description: The IsReparseTagMicrosoft macro determines whether a reparse point tag indicates a Microsoft reparse point.
+old-location: ifsk\isreparsetagmicrosoft.htm
+old-project: ifsk
+ms.assetid: 9c5abef5-36ff-4f10-8e4e-b8d36d995246
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ntifs/IsReparseTagMicrosoft, ifsk.isreparsetagmicrosoft, IsReparseTagMicrosoft function [Installable File System Drivers], IsReparseTagMicrosoft, ioref_ef573233-e933-490e-b762-1ce20343c65c.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: macro
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: ntifs.h
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntifs.h
+apiname:
+-	IsReparseTagMicrosoft
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

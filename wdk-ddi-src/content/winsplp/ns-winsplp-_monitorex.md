@@ -1,42 +1,47 @@
 ---
-UID : NS:winsplp._MONITOREX
-title : "_MONITOREX"
-author : windows-driver-content
-description : The MONITOREX structure is obsolete and supported for compatibility purposes only.
-old-location : print\monitorex.htm
-old-project : print
-ms.assetid : f03f72a8-8dc1-4e27-b89b-1afea16a177a
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : winsplp/LPMONITOREX, _MONITOREX, LPMONITOREX, MONITOREX, MONITOREX structure [Print Devices], print.monitorex, spoolfnc_4910913b-826e-4947-8186-7737d7b3c3fa.xml, *LPMONITOREX, winsplp/MONITOREX, LPMONITOREX structure pointer [Print Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : winsplp.h
-req.include-header : Winsplp.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*LPMONITOREX, MONITOREX"
-req.product : Windows 10 or later.
+UID: NS:winsplp._MONITOREX
+title: "_MONITOREX"
+author: windows-driver-content
+description: The MONITOREX structure is obsolete and supported for compatibility purposes only.
+old-location: print\monitorex.htm
+old-project: print
+ms.assetid: f03f72a8-8dc1-4e27-b89b-1afea16a177a
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: winsplp/LPMONITOREX, _MONITOREX, LPMONITOREX, MONITOREX, MONITOREX structure [Print Devices], print.monitorex, spoolfnc_4910913b-826e-4947-8186-7737d7b3c3fa.xml, *LPMONITOREX, winsplp/MONITOREX, LPMONITOREX structure pointer [Print Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: winsplp.h
+req.include-header: Winsplp.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	winsplp.h
+apiname:
+-	MONITOREX
+product: Windows
+targetos: Windows
+req.typenames: "*LPMONITOREX, MONITOREX"
+req.product: Windows 10 or later.
 ---
 
 # _MONITOREX structure

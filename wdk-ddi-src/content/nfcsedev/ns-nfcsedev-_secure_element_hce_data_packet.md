@@ -1,41 +1,46 @@
 ---
-UID : NS:nfcsedev._SECURE_ELEMENT_HCE_DATA_PACKET
-title : "_SECURE_ELEMENT_HCE_DATA_PACKET"
-author : windows-driver-content
-description : SECURE_ELEMENT_HCE_DATA_PACKET is an input buffer to IOCTL_NFCSE_HCE_REMOTE_SEND and output buffer for IOCTL_NFCSE_HCE_REMOTE_RECV.
-old-location : nfpdrivers\_secure_element_hce_data_packet.htm
-old-project : nfpdrivers
-ms.assetid : A287CBC7-BB22-487E-8E06-47702DF29DCE
-ms.author : windowsdriverdev
-ms.date : 12/18/2017
-ms.keywords : SECURE_ELEMENT_HCE_DATA_PACKET, _SECURE_ELEMENT_HCE_DATA_PACKET, nfpdrivers._secure_element_hce_data_packet, *PSECURE_ELEMENT_HCE_DATA_PACKET, PSECURE_ELEMENT_HCE_DATA_PACKET, nfcsedev/_SECURE_ELEMENT_HCE_DATA_PACKET, SECURE_ELEMENT_HCE_DATA_PACKET structure [Near-Field Proximity Drivers], PSECURE_ELEMENT_HCE_DATA_PACKET structure pointer [Near-Field Proximity Drivers], nfcsedev/PSECURE_ELEMENT_HCE_DATA_PACKET
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : nfcsedev.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSECURE_ELEMENT_HCE_DATA_PACKET, SECURE_ELEMENT_HCE_DATA_PACKET"
+UID: NS:nfcsedev._SECURE_ELEMENT_HCE_DATA_PACKET
+title: "_SECURE_ELEMENT_HCE_DATA_PACKET"
+author: windows-driver-content
+description: SECURE_ELEMENT_HCE_DATA_PACKET is an input buffer to IOCTL_NFCSE_HCE_REMOTE_SEND and output buffer for IOCTL_NFCSE_HCE_REMOTE_RECV.
+old-location: nfpdrivers\_secure_element_hce_data_packet.htm
+old-project: nfpdrivers
+ms.assetid: A287CBC7-BB22-487E-8E06-47702DF29DCE
+ms.author: windowsdriverdev
+ms.date: 12/18/2017
+ms.keywords: SECURE_ELEMENT_HCE_DATA_PACKET, _SECURE_ELEMENT_HCE_DATA_PACKET, nfpdrivers._secure_element_hce_data_packet, *PSECURE_ELEMENT_HCE_DATA_PACKET, PSECURE_ELEMENT_HCE_DATA_PACKET, nfcsedev/_SECURE_ELEMENT_HCE_DATA_PACKET, SECURE_ELEMENT_HCE_DATA_PACKET structure [Near-Field Proximity Drivers], PSECURE_ELEMENT_HCE_DATA_PACKET structure pointer [Near-Field Proximity Drivers], nfcsedev/PSECURE_ELEMENT_HCE_DATA_PACKET
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: nfcsedev.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	nfcsedev.h
+apiname:
+-	SECURE_ELEMENT_HCE_DATA_PACKET
+product: Windows
+targetos: Windows
+req.typenames: "*PSECURE_ELEMENT_HCE_DATA_PACKET, SECURE_ELEMENT_HCE_DATA_PACKET"
 ---
 
 # _SECURE_ELEMENT_HCE_DATA_PACKET structure

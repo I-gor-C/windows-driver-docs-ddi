@@ -1,42 +1,47 @@
 ---
-UID : NF:wiautil.CWiauFormatConverter.~CWiauFormatConverter
-title : CWiauFormatConverter::~CWiauFormatConverter method
-author : windows-driver-content
-description : The CWiauFormatConverter::~CWiauFormatConverter method is the destructor for the CWiauFormatConverter class.
-old-location : image\cwiauformatconverter__cwiauformatconverter.htm
-old-project : image
-ms.assetid : 2bdf9564-70b0-4936-95e5-4470b731ac3b
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : "~CWiauFormatConverter method [Imaging Devices], CWiauFormatConverter interface [Imaging Devices], ~CWiauFormatConverter method, wiauFncs_9e90093a-c28a-4cbb-a4be-55750e309940.xml, CWiauFormatConverter::~CWiauFormatConverter, ~CWiauFormatConverter, wiautil/CWiauFormatConverter::~CWiauFormatConverter, ~CWiauFormatConverter method [Imaging Devices], CWiauFormatConverter interface, image.cwiauformatconverter__cwiauformatconverter, CWiauFormatConverter"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wiautil.h
-req.include-header : Wiautil.h, Wiamindr.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows XP and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wiautil.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SKIP_AMOUNT
-req.product : Windows 10 or later.
+UID: NF:wiautil.CWiauFormatConverter.~CWiauFormatConverter
+title: CWiauFormatConverter::~CWiauFormatConverter method
+author: windows-driver-content
+description: The CWiauFormatConverter::~CWiauFormatConverter method is the destructor for the CWiauFormatConverter class.
+old-location: image\cwiauformatconverter__cwiauformatconverter.htm
+old-project: image
+ms.assetid: 2bdf9564-70b0-4936-95e5-4470b731ac3b
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: "~CWiauFormatConverter method [Imaging Devices], CWiauFormatConverter interface [Imaging Devices], ~CWiauFormatConverter method, wiauFncs_9e90093a-c28a-4cbb-a4be-55750e309940.xml, CWiauFormatConverter::~CWiauFormatConverter, ~CWiauFormatConverter, wiautil/CWiauFormatConverter::~CWiauFormatConverter, ~CWiauFormatConverter method [Imaging Devices], CWiauFormatConverter interface, image.cwiauformatconverter__cwiauformatconverter, CWiauFormatConverter"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wiautil.h
+req.include-header: Wiautil.h, Wiamindr.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows XP and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wiautil.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Wiautil.h
+apiname:
+-	CWiauFormatConverter.~CWiauFormatConverter
+product: Windows
+targetos: Windows
+req.typenames: SKIP_AMOUNT
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddcdrm._CDROM_SUB_Q_DATA_FORMAT
-title : "_CDROM_SUB_Q_DATA_FORMAT"
-author : windows-driver-content
-description : The CDROM_SUB_Q_DATA_FORMAT structure is used with device control IRPs of type IOCTL_CDROM_READ_Q_CHANNEL.
-old-location : storage\cdrom_sub_q_data_format.htm
-old-project : storage
-ms.assetid : 0eac3cc1-9c1c-4438-ab20-51c65018cea0
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : CDROM_SUB_Q_DATA_FORMAT structure [Storage Devices], PCDROM_SUB_Q_DATA_FORMAT, *PCDROM_SUB_Q_DATA_FORMAT, storage.cdrom_sub_q_data_format, ntddcdrm/CDROM_SUB_Q_DATA_FORMAT, CDROM_SUB_Q_DATA_FORMAT, ntddcdrm/PCDROM_SUB_Q_DATA_FORMAT, PCDROM_SUB_Q_DATA_FORMAT structure pointer [Storage Devices], _CDROM_SUB_Q_DATA_FORMAT, structs-CD-ROM_1448747c-8b9c-4ccb-8c91-0f8f567f0373.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddcdrm.h
-req.include-header : Ntddcdrm.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PCDROM_SUB_Q_DATA_FORMAT, CDROM_SUB_Q_DATA_FORMAT"
+UID: NS:ntddcdrm._CDROM_SUB_Q_DATA_FORMAT
+title: "_CDROM_SUB_Q_DATA_FORMAT"
+author: windows-driver-content
+description: The CDROM_SUB_Q_DATA_FORMAT structure is used with device control IRPs of type IOCTL_CDROM_READ_Q_CHANNEL.
+old-location: storage\cdrom_sub_q_data_format.htm
+old-project: storage
+ms.assetid: 0eac3cc1-9c1c-4438-ab20-51c65018cea0
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: CDROM_SUB_Q_DATA_FORMAT structure [Storage Devices], PCDROM_SUB_Q_DATA_FORMAT, *PCDROM_SUB_Q_DATA_FORMAT, storage.cdrom_sub_q_data_format, ntddcdrm/CDROM_SUB_Q_DATA_FORMAT, CDROM_SUB_Q_DATA_FORMAT, ntddcdrm/PCDROM_SUB_Q_DATA_FORMAT, PCDROM_SUB_Q_DATA_FORMAT structure pointer [Storage Devices], _CDROM_SUB_Q_DATA_FORMAT, structs-CD-ROM_1448747c-8b9c-4ccb-8c91-0f8f567f0373.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddcdrm.h
+req.include-header: Ntddcdrm.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddcdrm.h
+apiname:
+-	CDROM_SUB_Q_DATA_FORMAT
+product: Windows
+targetos: Windows
+req.typenames: "*PCDROM_SUB_Q_DATA_FORMAT, CDROM_SUB_Q_DATA_FORMAT"
 ---
 
 # _CDROM_SUB_Q_DATA_FORMAT structure

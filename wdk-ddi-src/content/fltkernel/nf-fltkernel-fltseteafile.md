@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltSetEaFile
-title : FltSetEaFile function
-author : windows-driver-content
-description : FltSetEaFile sets extended-attribute (EA) values for a file.
-old-location : ifsk\fltseteafile.htm
-old-project : ifsk
-ms.assetid : 06427ef2-43e9-46c1-92e5-ab1b6146cc43
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltSetEaFile, fltkernel/FltSetEaFile, FltSetEaFile function [Installable File System Drivers], ifsk.fltseteafile, FltApiRef_p_to_z_7e886e7f-a5f4-4a87-9322-7818e31c84af.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Microsoft Windows 2000 Update Rollup 1 for SP4, Windows XP SP3, Windows Server 2003 SP1, and later versions of the Windows operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltSetEaFile
+title: FltSetEaFile function
+author: windows-driver-content
+description: FltSetEaFile sets extended-attribute (EA) values for a file.
+old-location: ifsk\fltseteafile.htm
+old-project: ifsk
+ms.assetid: 06427ef2-43e9-46c1-92e5-ab1b6146cc43
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltSetEaFile, fltkernel/FltSetEaFile, FltSetEaFile function [Installable File System Drivers], ifsk.fltseteafile, FltApiRef_p_to_z_7e886e7f-a5f4-4a87-9322-7818e31c84af.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Microsoft Windows 2000 Update Rollup 1 for SP4, Windows XP SP3, Windows Server 2003 SP1, and later versions of the Windows operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltSetEaFile
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

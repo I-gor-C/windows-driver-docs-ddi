@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3D11DDI_RECYCLECREATECOMMANDLIST
-title : PFND3D11DDI_RECYCLECREATECOMMANDLIST
-author : windows-driver-content
-description : The RecycleCreateCommandList function creates a command list and makes a previously unused DDI handle completely valid again.
-old-location : display\recyclecreatecommandlist.htm
-old-project : display
-ms.assetid : c387545e-2891-401d-b7ca-ee7549a52603
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.recyclecreatecommandlist, RecycleCreateCommandList callback function [Display Devices], RecycleCreateCommandList, PFND3D11DDI_RECYCLECREATECOMMANDLIST, PFND3D11DDI_RECYCLECREATECOMMANDLIST, d3d10umddi/RecycleCreateCommandList, UserModeDisplayDriverDx11_Functions_ae724488-211a-4590-abcc-f2c8f954531e.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : RecycleCreateCommandList is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3D11DDI_RECYCLECREATECOMMANDLIST
+title: PFND3D11DDI_RECYCLECREATECOMMANDLIST
+author: windows-driver-content
+description: The RecycleCreateCommandList function creates a command list and makes a previously unused DDI handle completely valid again.
+old-location: display\recyclecreatecommandlist.htm
+old-project: display
+ms.assetid: c387545e-2891-401d-b7ca-ee7549a52603
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.recyclecreatecommandlist, RecycleCreateCommandList callback function [Display Devices], RecycleCreateCommandList, PFND3D11DDI_RECYCLECREATECOMMANDLIST, PFND3D11DDI_RECYCLECREATECOMMANDLIST, d3d10umddi/RecycleCreateCommandList, UserModeDisplayDriverDx11_Functions_ae724488-211a-4590-abcc-f2c8f954531e.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: RecycleCreateCommandList is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	RecycleCreateCommandList
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

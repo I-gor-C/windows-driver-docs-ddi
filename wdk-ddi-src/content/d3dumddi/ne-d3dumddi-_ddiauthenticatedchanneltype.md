@@ -1,41 +1,46 @@
 ---
-UID : NE:d3dumddi._DDIAUTHENTICATEDCHANNELTYPE
-title : "_DDIAUTHENTICATEDCHANNELTYPE"
-author : windows-driver-content
-description : The DDIAUTHENTICATEDCHANNELTYPE enumeration contains values that identify authenticated-channel types.
-old-location : display\ddiauthenticatedchanneltype.htm
-old-project : display
-ms.assetid : 431575b7-1173-448c-98a9-790bc2721da0
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DDIAUTHENTICATEDCHANNELTYPE enumeration [Display Devices], d3dumddi/DDIAUTHENTICATEDCHANNELTYPE, display.ddiauthenticatedchanneltype, DDIAUTHENTICATEDCHANNEL_DRIVER_SOFTWARE, DDIAUTHENTICATEDCHANNEL_DRIVER_HARDWARE, d3dumddi/DDIAUTHENTICATEDCHANNEL_DRIVER_SOFTWARE, DDIAUTHENTICATEDCHANNELTYPE, d3dumddi/DDIAUTHENTICATEDCHANNEL_DRIVER_HARDWARE, D3D_other_Structs_ac5c5f50-3e64-483f-86d1-a0cd99f0578b.xml, _DDIAUTHENTICATEDCHANNELTYPE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : DDIAUTHENTICATEDCHANNELTYPE is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DDIAUTHENTICATEDCHANNELTYPE
+UID: NE:d3dumddi._DDIAUTHENTICATEDCHANNELTYPE
+title: "_DDIAUTHENTICATEDCHANNELTYPE"
+author: windows-driver-content
+description: The DDIAUTHENTICATEDCHANNELTYPE enumeration contains values that identify authenticated-channel types.
+old-location: display\ddiauthenticatedchanneltype.htm
+old-project: display
+ms.assetid: 431575b7-1173-448c-98a9-790bc2721da0
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DDIAUTHENTICATEDCHANNELTYPE enumeration [Display Devices], d3dumddi/DDIAUTHENTICATEDCHANNELTYPE, display.ddiauthenticatedchanneltype, DDIAUTHENTICATEDCHANNEL_DRIVER_SOFTWARE, DDIAUTHENTICATEDCHANNEL_DRIVER_HARDWARE, d3dumddi/DDIAUTHENTICATEDCHANNEL_DRIVER_SOFTWARE, DDIAUTHENTICATEDCHANNELTYPE, d3dumddi/DDIAUTHENTICATEDCHANNEL_DRIVER_HARDWARE, D3D_other_Structs_ac5c5f50-3e64-483f-86d1-a0cd99f0578b.xml, _DDIAUTHENTICATEDCHANNELTYPE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: DDIAUTHENTICATEDCHANNELTYPE is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	DDIAUTHENTICATEDCHANNELTYPE
+product: Windows
+targetos: Windows
+req.typenames: DDIAUTHENTICATEDCHANNELTYPE
 ---
 
 # _DDIAUTHENTICATEDCHANNELTYPE Enumeration
@@ -52,21 +57,21 @@ typedef enum _DDIAUTHENTICATEDCHANNELTYPE {
 ## Constants
 
 <table>
-
-<tr>
-<td>DDIAUTHENTICATEDCHANNEL_DRIVER_HARDWARE</td>
-<td>The value specifies that the authenticated-channel type is hardware.</td>
-</tr>
-
-<tr>
-<td>DDIAUTHENTICATEDCHANNEL_DRIVER_SOFTWARE</td>
-<td>The value specifies that the authenticated-channel type is software.</td>
-</tr>
+            
+                <tr>
+                    <td>DDIAUTHENTICATEDCHANNEL_DRIVER_HARDWARE</td>
+                    <td>The value specifies that the authenticated-channel type is hardware.</td>
+                </tr>
+            
+                <tr>
+                    <td>DDIAUTHENTICATEDCHANNEL_DRIVER_SOFTWARE</td>
+                    <td>The value specifies that the authenticated-channel type is software.</td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-The user-mode display driver receives a DDIAUTHENTICATEDCHANNELTYPE-typed value in the <b>ChannelType</b> member of the <a href="..\d3dumddi\ns-d3dumddi-_ddicertificateinfo.md">DDICERTIFICATEINFO</a> structure. The <b>pInfo</b> member of the <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_getcaps.md">D3DDDIARG_GETCAPS</a> structure points to this DDICERTIFICATEINFO structure when the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getcaps.md">GetCaps</a> function is called with the D3DDDICAPS_GETCERTIFICATE value set in the <b>Type</b> member of D3DDDIARG_GETCAPS. 
+        The user-mode display driver receives a DDIAUTHENTICATEDCHANNELTYPE-typed value in the <b>ChannelType</b> member of the <a href="..\d3dumddi\ns-d3dumddi-_ddicertificateinfo.md">DDICERTIFICATEINFO</a> structure. The <b>pInfo</b> member of the <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_getcaps.md">D3DDDIARG_GETCAPS</a> structure points to this DDICERTIFICATEINFO structure when the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getcaps.md">GetCaps</a> function is called with the D3DDDICAPS_GETCERTIFICATE value set in the <b>Type</b> member of D3DDDIARG_GETCAPS. 
 
 The Microsoft Direct3D runtime specifies a DDIAUTHENTICATEDCHANNELTYPE-typed value in the <b>ChannelType</b> member of the <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_createauthenicatedchannel.md">D3DDDIARG_CREATEAUTHENTICATEDCHANNEL</a> structure that the <i>pData</i> parameter points to in a call to the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createauthenticatedchannel.md">CreateAuthenticatedChannel</a> function.
 
@@ -76,9 +81,9 @@ The Microsoft Direct3D runtime specifies a DDIAUTHENTICATEDCHANNELTYPE-typed val
 | **Windows version** | DDIAUTHENTICATEDCHANNELTYPE is supported beginning with the Windows 7 operating system. DDIAUTHENTICATEDCHANNELTYPE is supported beginning with the Windows 7 operating system. |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_createauthenicatedchannel.md">D3DDDIARG_CREATEAUTHENTICATEDCHANNEL</a>
+        <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_createauthenicatedchannel.md">D3DDDIARG_CREATEAUTHENTICATEDCHANNEL</a>
 
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getcaps.md">GetCaps</a>
 

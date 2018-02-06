@@ -1,41 +1,46 @@
 ---
-UID : NC:dbgeng.PDEBUG_EXTENSION_KNOWN_STRUCT_EX
-title : PDEBUG_EXTENSION_KNOWN_STRUCT_EX
-author : windows-driver-content
-description : The DebugExtensionKnownStructEx callback function is called by extensions in order to dump structures that are well known to them.
-old-location : debugger\debugextensionknownstructex.htm
-old-project : debugger
-ms.assetid : 830BCD4C-0C3A-45F8-84E9-4F8596B8E1E8
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : debugger.debugextensionknownstructex, DebugExtensionKnownStructEx, DebugExtensionKnownStructEx callback function [Windows Debugging], DebugExtensionKnownStructEx, PDEBUG_EXTENSION_KNOWN_STRUCT_EX, PDEBUG_EXTENSION_KNOWN_STRUCT_EX, dbgeng/DebugExtensionKnownStructEx
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NC:dbgeng.PDEBUG_EXTENSION_KNOWN_STRUCT_EX
+title: PDEBUG_EXTENSION_KNOWN_STRUCT_EX
+author: windows-driver-content
+description: The DebugExtensionKnownStructEx callback function is called by extensions in order to dump structures that are well known to them.
+old-location: debugger\debugextensionknownstructex.htm
+old-project: debugger
+ms.assetid: 830BCD4C-0C3A-45F8-84E9-4F8596B8E1E8
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: debugger.debugextensionknownstructex, DebugExtensionKnownStructEx, DebugExtensionKnownStructEx callback function [Windows Debugging], DebugExtensionKnownStructEx, PDEBUG_EXTENSION_KNOWN_STRUCT_EX, PDEBUG_EXTENSION_KNOWN_STRUCT_EX, dbgeng/DebugExtensionKnownStructEx
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Dbgeng.h
+apiname:
+-	DebugExtensionKnownStructEx
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

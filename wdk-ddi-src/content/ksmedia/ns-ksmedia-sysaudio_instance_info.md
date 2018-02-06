@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.SYSAUDIO_INSTANCE_INFO
-title : SYSAUDIO_INSTANCE_INFO
-author : windows-driver-content
-description : The SYSAUDIO_INSTANCE_INFO structure specifies which virtual audio device to open and includes flags for configuring that device.
-old-location : audio\sysaudio_instance_info.htm
-old-project : audio
-ms.assetid : 3468b29d-e62c-46b4-b95e-06df846ebd81
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : SYSAUDIO_INSTANCE_INFO, SYSAUDIO_INSTANCE_INFO structure [Audio Devices], PSYSAUDIO_INSTANCE_INFO structure pointer [Audio Devices], ksmedia/SYSAUDIO_INSTANCE_INFO, *PSYSAUDIO_INSTANCE_INFO, audio.sysaudio_instance_info, ksmedia/PSYSAUDIO_INSTANCE_INFO, PSYSAUDIO_INSTANCE_INFO, aud-prop_dd4269d6-0f6e-476a-a4d3-ea71f3b9a96a.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSYSAUDIO_INSTANCE_INFO, SYSAUDIO_INSTANCE_INFO"
+UID: NS:ksmedia.SYSAUDIO_INSTANCE_INFO
+title: SYSAUDIO_INSTANCE_INFO
+author: windows-driver-content
+description: The SYSAUDIO_INSTANCE_INFO structure specifies which virtual audio device to open and includes flags for configuring that device.
+old-location: audio\sysaudio_instance_info.htm
+old-project: audio
+ms.assetid: 3468b29d-e62c-46b4-b95e-06df846ebd81
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: SYSAUDIO_INSTANCE_INFO, SYSAUDIO_INSTANCE_INFO structure [Audio Devices], PSYSAUDIO_INSTANCE_INFO structure pointer [Audio Devices], ksmedia/SYSAUDIO_INSTANCE_INFO, *PSYSAUDIO_INSTANCE_INFO, audio.sysaudio_instance_info, ksmedia/PSYSAUDIO_INSTANCE_INFO, PSYSAUDIO_INSTANCE_INFO, aud-prop_dd4269d6-0f6e-476a-a4d3-ea71f3b9a96a.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	SYSAUDIO_INSTANCE_INFO
+product: Windows
+targetos: Windows
+req.typenames: "*PSYSAUDIO_INSTANCE_INFO, SYSAUDIO_INSTANCE_INFO"
 ---
 
 # SYSAUDIO_INSTANCE_INFO structure

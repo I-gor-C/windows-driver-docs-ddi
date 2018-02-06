@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._D3DDDICB_CREATECONTEXTVIRTUAL
-title : "_D3DDDICB_CREATECONTEXTVIRTUAL"
-author : windows-driver-content
-description : D3DDDICB_CREATECONTEXTVIRTUAL is used with pfnCreateContextVirtualCb to create contexts that support virtual addressing.
-old-location : display\d3dddicb_createcontextvirtual.htm
-old-project : display
-ms.assetid : 451D1CE2-A50D-4E42-BD93-879503EDE4B5
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3dumddi/D3DDDICB_CREATECONTEXTVIRTUAL, display.d3dddicb_createcontextvirtual, _D3DDDICB_CREATECONTEXTVIRTUAL, D3DDDICB_CREATECONTEXTVIRTUAL structure [Display Devices], D3DDDICB_CREATECONTEXTVIRTUAL
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDICB_CREATECONTEXTVIRTUAL
+UID: NS:d3dumddi._D3DDDICB_CREATECONTEXTVIRTUAL
+title: "_D3DDDICB_CREATECONTEXTVIRTUAL"
+author: windows-driver-content
+description: D3DDDICB_CREATECONTEXTVIRTUAL is used with pfnCreateContextVirtualCb to create contexts that support virtual addressing.
+old-location: display\d3dddicb_createcontextvirtual.htm
+old-project: display
+ms.assetid: 451D1CE2-A50D-4E42-BD93-879503EDE4B5
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3dumddi/D3DDDICB_CREATECONTEXTVIRTUAL, display.d3dddicb_createcontextvirtual, _D3DDDICB_CREATECONTEXTVIRTUAL, D3DDDICB_CREATECONTEXTVIRTUAL structure [Display Devices], D3DDDICB_CREATECONTEXTVIRTUAL
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	D3DDDICB_CREATECONTEXTVIRTUAL
+product: Windows
+targetos: Windows
+req.typenames: D3DDDICB_CREATECONTEXTVIRTUAL
 ---
 
 # _D3DDDICB_CREATECONTEXTVIRTUAL structure

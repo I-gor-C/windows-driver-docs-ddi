@@ -1,41 +1,47 @@
 ---
-UID : NF:dbgeng.IDebugRegisters2.OutputRegisters
-title : IDebugRegisters2::OutputRegisters method
-author : windows-driver-content
-description : The OutputRegisters method formats and sends the target's registers to the clients as output.
-old-location : debugger\outputregisters.htm
-old-project : debugger
-ms.assetid : d1354ab7-4d7d-4cc2-8e30-763d8b881a11
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : OutputRegisters method [Windows Debugging], IDebugRegisters2 interface, IDebugRegisters2::OutputRegisters, IDebugRegisters_65d62961-afc5-4609-86d2-c55757fe6ce1.xml, OutputRegisters method [Windows Debugging], IDebugRegisters interface, IDebugRegisters::OutputRegisters, IDebugRegisters2 interface [Windows Debugging], OutputRegisters method, dbgeng/IDebugRegisters2::OutputRegisters, debugger.outputregisters, IDebugRegisters2, IDebugRegisters interface [Windows Debugging], OutputRegisters method, OutputRegisters method [Windows Debugging], dbgeng/IDebugRegisters::OutputRegisters, OutputRegisters
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : DbgEng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugRegisters2.OutputRegisters
+title: IDebugRegisters2::OutputRegisters method
+author: windows-driver-content
+description: The OutputRegisters method formats and sends the target's registers to the clients as output.
+old-location: debugger\outputregisters.htm
+old-project: debugger
+ms.assetid: d1354ab7-4d7d-4cc2-8e30-763d8b881a11
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: OutputRegisters method [Windows Debugging], IDebugRegisters2 interface, IDebugRegisters2::OutputRegisters, IDebugRegisters_65d62961-afc5-4609-86d2-c55757fe6ce1.xml, OutputRegisters method [Windows Debugging], IDebugRegisters interface, IDebugRegisters::OutputRegisters, IDebugRegisters2 interface [Windows Debugging], OutputRegisters method, dbgeng/IDebugRegisters2::OutputRegisters, debugger.outputregisters, IDebugRegisters2, IDebugRegisters interface [Windows Debugging], OutputRegisters method, OutputRegisters method [Windows Debugging], dbgeng/IDebugRegisters::OutputRegisters, OutputRegisters
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: DbgEng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugRegisters.OutputRegisters
+-	IDebugRegisters2.OutputRegisters
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

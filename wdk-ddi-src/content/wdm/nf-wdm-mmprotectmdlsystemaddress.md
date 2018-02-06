@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.MmProtectMdlSystemAddress
-title : MmProtectMdlSystemAddress function
-author : windows-driver-content
-description : The MmProtectMdlSystemAddress routine sets the protection type for a memory address range.
-old-location : kernel\mmprotectmdlsystemaddress.htm
-old-project : kernel
-ms.assetid : e0ccc6e8-9351-4440-808b-e0b8eef48bc2
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.mmprotectmdlsystemaddress, MmProtectMdlSystemAddress, k106_b2a56ec8-cfee-4547-b1c2-6f817ecbfaad.xml, wdm/MmProtectMdlSystemAddress, MmProtectMdlSystemAddress routine [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows XP and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.MmProtectMdlSystemAddress
+title: MmProtectMdlSystemAddress function
+author: windows-driver-content
+description: The MmProtectMdlSystemAddress routine sets the protection type for a memory address range.
+old-location: kernel\mmprotectmdlsystemaddress.htm
+old-project: kernel
+ms.assetid: e0ccc6e8-9351-4440-808b-e0b8eef48bc2
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.mmprotectmdlsystemaddress, MmProtectMdlSystemAddress, k106_b2a56ec8-cfee-4547-b1c2-6f817ecbfaad.xml, wdm/MmProtectMdlSystemAddress, MmProtectMdlSystemAddress routine [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows XP and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	MmProtectMdlSystemAddress
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

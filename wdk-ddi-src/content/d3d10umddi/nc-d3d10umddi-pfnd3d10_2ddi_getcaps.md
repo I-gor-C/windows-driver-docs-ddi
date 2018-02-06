@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3D10_2DDI_GETCAPS
-title : PFND3D10_2DDI_GETCAPS
-author : windows-driver-content
-description : The GetCaps(D3D10_2) function queries for capabilities of the graphics adapter.
-old-location : display\getcaps_d3d10_2_.htm
-old-project : display
-ms.assetid : 83cd5f34-5f12-4ead-ad33-366fc3c6e804
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.getcaps_d3d10_2_, GetCaps callback function [Display Devices], GetCaps, PFND3D10_2DDI_GETCAPS, PFND3D10_2DDI_GETCAPS, d3d10umddi/GetCaps, UserModeDisplayDriverDx11_Functions_b0f0ebe4-205d-4eb5-ad35-e91dbcb21a1c.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : GetCaps(D3D10_2) is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3D10_2DDI_GETCAPS
+title: PFND3D10_2DDI_GETCAPS
+author: windows-driver-content
+description: The GetCaps(D3D10_2) function queries for capabilities of the graphics adapter.
+old-location: display\getcaps_d3d10_2_.htm
+old-project: display
+ms.assetid: 83cd5f34-5f12-4ead-ad33-366fc3c6e804
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.getcaps_d3d10_2_, GetCaps callback function [Display Devices], GetCaps, PFND3D10_2DDI_GETCAPS, PFND3D10_2DDI_GETCAPS, d3d10umddi/GetCaps, UserModeDisplayDriverDx11_Functions_b0f0ebe4-205d-4eb5-ad35-e91dbcb21a1c.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: GetCaps(D3D10_2) is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	GetCaps
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

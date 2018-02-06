@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFIoRequest.Complete
-title : IWDFIoRequest::Complete method
-author : windows-driver-content
-description : The Complete method completes an I/O request.
-old-location : wdf\iwdfiorequest_complete.htm
-old-project : wdf
-ms.assetid : 2fa389f8-8277-4795-a89e-ac5d92004310
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : Complete, wdf.iwdfiorequest_complete, IWDFIoRequest::Complete, IWDFIoRequest interface, Complete method, UMDFRequestObjectRef_2c1cf2cc-30a2-438c-8e5a-b918fbcd5eee.xml, wudfddi/IWDFIoRequest::Complete, Complete method, umdf.iwdfiorequest_complete, Complete method, IWDFIoRequest interface, IWDFIoRequest
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.5
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFIoRequest.Complete
+title: IWDFIoRequest::Complete method
+author: windows-driver-content
+description: The Complete method completes an I/O request.
+old-location: wdf\iwdfiorequest_complete.htm
+old-project: wdf
+ms.assetid: 2fa389f8-8277-4795-a89e-ac5d92004310
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: Complete, wdf.iwdfiorequest_complete, IWDFIoRequest::Complete, IWDFIoRequest interface, Complete method, UMDFRequestObjectRef_2c1cf2cc-30a2-438c-8e5a-b918fbcd5eee.xml, wudfddi/IWDFIoRequest::Complete, Complete method, umdf.iwdfiorequest_complete, Complete method, IWDFIoRequest interface, IWDFIoRequest
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.5
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFIoRequest.Complete
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

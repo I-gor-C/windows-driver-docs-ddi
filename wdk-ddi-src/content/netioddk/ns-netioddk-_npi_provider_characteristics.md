@@ -1,41 +1,46 @@
 ---
-UID : NS:netioddk._NPI_PROVIDER_CHARACTERISTICS
-title : "_NPI_PROVIDER_CHARACTERISTICS"
-author : windows-driver-content
-description : The NPI_PROVIDER_CHARACTERISTICS structure defines the characteristics of a provider module.
-old-location : netvista\npi_provider_characteristics.htm
-old-project : netvista
-ms.assetid : a83220e8-496c-4b83-b774-88ab1f017e8d
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netioddk/NPI_PROVIDER_CHARACTERISTICS, _NPI_PROVIDER_CHARACTERISTICS, PNPI_PROVIDER_CHARACTERISTICS structure pointer [Network Drivers Starting with Windows Vista], NPI_PROVIDER_CHARACTERISTICS, PNPI_PROVIDER_CHARACTERISTICS, nmrref_ceebed62-8102-41e3-af13-e663c1e8babb.xml, NPI_PROVIDER_CHARACTERISTICS structure [Network Drivers Starting with Windows Vista], netioddk/PNPI_PROVIDER_CHARACTERISTICS, netvista.npi_provider_characteristics
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : netioddk.h
-req.include-header : Wsk.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating   systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "< DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NPI_PROVIDER_CHARACTERISTICS
+UID: NS:netioddk._NPI_PROVIDER_CHARACTERISTICS
+title: "_NPI_PROVIDER_CHARACTERISTICS"
+author: windows-driver-content
+description: The NPI_PROVIDER_CHARACTERISTICS structure defines the characteristics of a provider module.
+old-location: netvista\npi_provider_characteristics.htm
+old-project: netvista
+ms.assetid: a83220e8-496c-4b83-b774-88ab1f017e8d
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netioddk/NPI_PROVIDER_CHARACTERISTICS, _NPI_PROVIDER_CHARACTERISTICS, PNPI_PROVIDER_CHARACTERISTICS structure pointer [Network Drivers Starting with Windows Vista], NPI_PROVIDER_CHARACTERISTICS, PNPI_PROVIDER_CHARACTERISTICS, nmrref_ceebed62-8102-41e3-af13-e663c1e8babb.xml, NPI_PROVIDER_CHARACTERISTICS structure [Network Drivers Starting with Windows Vista], netioddk/PNPI_PROVIDER_CHARACTERISTICS, netvista.npi_provider_characteristics
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: netioddk.h
+req.include-header: Wsk.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "< DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	netioddk.h
+apiname:
+-	NPI_PROVIDER_CHARACTERISTICS
+product: Windows
+targetos: Windows
+req.typenames: NPI_PROVIDER_CHARACTERISTICS
 ---
 
 # _NPI_PROVIDER_CHARACTERISTICS structure

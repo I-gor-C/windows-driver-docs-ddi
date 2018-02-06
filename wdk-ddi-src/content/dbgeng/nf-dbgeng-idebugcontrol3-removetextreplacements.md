@@ -1,41 +1,47 @@
 ---
-UID : NF:dbgeng.IDebugControl3.RemoveTextReplacements
-title : IDebugControl3::RemoveTextReplacements method
-author : windows-driver-content
-description : The RemoveTextReplacements method removes all user-named aliases.
-old-location : debugger\removetextreplacements.htm
-old-project : debugger
-ms.assetid : f753542a-c9e6-423f-80e4-c7e2e0f36a04
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugControl_ba950bc7-3ed5-4e2e-913d-c743e1190482.xml, debugger.removetextreplacements, IDebugControl3::RemoveTextReplacements, IDebugControl3, IDebugControl2 interface [Windows Debugging], RemoveTextReplacements method, RemoveTextReplacements, dbgeng/IDebugControl3::RemoveTextReplacements, RemoveTextReplacements method [Windows Debugging], RemoveTextReplacements method [Windows Debugging], IDebugControl3 interface, IDebugControl3 interface [Windows Debugging], RemoveTextReplacements method, IDebugControl2::RemoveTextReplacements, RemoveTextReplacements method [Windows Debugging], IDebugControl2 interface, dbgeng/IDebugControl2::RemoveTextReplacements
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl3.RemoveTextReplacements
+title: IDebugControl3::RemoveTextReplacements method
+author: windows-driver-content
+description: The RemoveTextReplacements method removes all user-named aliases.
+old-location: debugger\removetextreplacements.htm
+old-project: debugger
+ms.assetid: f753542a-c9e6-423f-80e4-c7e2e0f36a04
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugControl_ba950bc7-3ed5-4e2e-913d-c743e1190482.xml, debugger.removetextreplacements, IDebugControl3::RemoveTextReplacements, IDebugControl3, IDebugControl2 interface [Windows Debugging], RemoveTextReplacements method, RemoveTextReplacements, dbgeng/IDebugControl3::RemoveTextReplacements, RemoveTextReplacements method [Windows Debugging], RemoveTextReplacements method [Windows Debugging], IDebugControl3 interface, IDebugControl3 interface [Windows Debugging], RemoveTextReplacements method, IDebugControl2::RemoveTextReplacements, RemoveTextReplacements method [Windows Debugging], IDebugControl2 interface, dbgeng/IDebugControl2::RemoveTextReplacements
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Dbgeng.h
+apiname:
+-	IDebugControl2.RemoveTextReplacements
+-	IDebugControl3.RemoveTextReplacements
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

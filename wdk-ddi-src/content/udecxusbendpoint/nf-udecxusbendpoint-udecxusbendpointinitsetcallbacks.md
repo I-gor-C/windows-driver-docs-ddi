@@ -1,42 +1,48 @@
 ---
-UID : NF:udecxusbendpoint.UdecxUsbEndpointInitSetCallbacks
-title : UdecxUsbEndpointInitSetCallbacks function
-author : windows-driver-content
-description : Sets pointers to UDE client driver-implemented callback functions in the initialization parameters of the simple endpoint to create.
-old-location : buses\udecxusbendpointinitsetcallbacks.htm
-old-project : usbref
-ms.assetid : 0F6EBBDA-FA0B-4044-905B-535D4FFEC5D2
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : UdecxUsbEndpointInitSetCallbacks function [Buses], UdecxUsbEndpointInitSetCallbacks, buses.udecxusbendpointinitsetcallbacks, udecxusbendpoint/UdecxUsbEndpointInitSetCallbacks
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : udecxusbendpoint.h
-req.include-header : Udecx.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 1.15
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Udecxstub.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUDECX_USB_ENDPOINT_INIT_AND_METADATA, UDECX_USB_ENDPOINT_INIT_AND_METADATA"
-req.product : Windows 10 or later.
+UID: NF:udecxusbendpoint.UdecxUsbEndpointInitSetCallbacks
+title: UdecxUsbEndpointInitSetCallbacks function
+author: windows-driver-content
+description: Sets pointers to UDE client driver-implemented callback functions in the initialization parameters of the simple endpoint to create.
+old-location: buses\udecxusbendpointinitsetcallbacks.htm
+old-project: usbref
+ms.assetid: 0F6EBBDA-FA0B-4044-905B-535D4FFEC5D2
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: UdecxUsbEndpointInitSetCallbacks function [Buses], UdecxUsbEndpointInitSetCallbacks, buses.udecxusbendpointinitsetcallbacks, udecxusbendpoint/UdecxUsbEndpointInitSetCallbacks
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: udecxusbendpoint.h
+req.include-header: Udecx.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 1.15
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Udecxstub.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Udecxstub.lib
+-	Udecxstub.dll
+apiname:
+-	UdecxUsbEndpointInitSetCallbacks
+product: Windows
+targetos: Windows
+req.typenames: "*PUDECX_USB_ENDPOINT_INIT_AND_METADATA, UDECX_USB_ENDPOINT_INIT_AND_METADATA"
+req.product: Windows 10 or later.
 ---
 
 

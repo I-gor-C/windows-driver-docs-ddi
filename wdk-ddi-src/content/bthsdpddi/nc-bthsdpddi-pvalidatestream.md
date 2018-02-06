@@ -1,41 +1,46 @@
 ---
-UID : NC:bthsdpddi.PVALIDATESTREAM
-title : PVALIDATESTREAM
-author : windows-driver-content
-description : The Bluetooth SdpValidateStream function is used to parse a raw SDP record and determine if it contains errors.
-old-location : bltooth\sdpvalidatestream.htm
-old-project : bltooth
-ms.assetid : cd119590-b910-487f-b611-5ef59204a798
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : bltooth.sdpvalidatestream, SdpValidateStream callback function [Bluetooth Devices], SdpValidateStream, PVALIDATESTREAM, PVALIDATESTREAM, bthsdpddi/SdpValidateStream, bth_funcs_1ba1d0ff-b873-4a38-8c5d-71e8afa35861.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : bthsdpddi.h
-req.include-header : BthSdpddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Versions:\_Supported in Windows Vista, and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= PASSIVE_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PBTH_VENDOR_SPECIFIC_COMMAND, BTH_VENDOR_SPECIFIC_COMMAND"
+UID: NC:bthsdpddi.PVALIDATESTREAM
+title: PVALIDATESTREAM
+author: windows-driver-content
+description: The Bluetooth SdpValidateStream function is used to parse a raw SDP record and determine if it contains errors.
+old-location: bltooth\sdpvalidatestream.htm
+old-project: bltooth
+ms.assetid: cd119590-b910-487f-b611-5ef59204a798
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: bltooth.sdpvalidatestream, SdpValidateStream callback function [Bluetooth Devices], SdpValidateStream, PVALIDATESTREAM, PVALIDATESTREAM, bthsdpddi/SdpValidateStream, bth_funcs_1ba1d0ff-b873-4a38-8c5d-71e8afa35861.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: bthsdpddi.h
+req.include-header: BthSdpddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Versions:\_Supported in Windows Vista, and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= PASSIVE_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	BthSdpddi.h
+apiname:
+-	SdpValidateStream
+product: Windows
+targetos: Windows
+req.typenames: "*PBTH_VENDOR_SPECIFIC_COMMAND, BTH_VENDOR_SPECIFIC_COMMAND"
 ---
 
 

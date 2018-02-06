@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGK_GDIARG_TRANSPARENTBLT
-title : "_DXGK_GDIARG_TRANSPARENTBLT"
-author : windows-driver-content
-description : The DXGK_GDIARG_TRANSPARENTBLT structure describes the characteristics of a GDI hardware-accelerated bit-block transfer (bitblt) operation with transparency.
-old-location : display\dxgk_gdiarg_transparentblt.htm
-old-project : display
-ms.assetid : 2536fafc-3b62-42a6-8b53-60fa8d61d5a9
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgk_gdiarg_transparentblt, DXGK_GDIARG_TRANSPARENTBLT, DmStructs_bb046cac-9272-4bf2-a3a7-33cc7035f3fb.xml, d3dkmddi/DXGK_GDIARG_TRANSPARENTBLT, DXGK_GDIARG_TRANSPARENTBLT structure [Display Devices], _DXGK_GDIARG_TRANSPARENTBLT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7 and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_GDIARG_TRANSPARENTBLT
+UID: NS:d3dkmddi._DXGK_GDIARG_TRANSPARENTBLT
+title: "_DXGK_GDIARG_TRANSPARENTBLT"
+author: windows-driver-content
+description: The DXGK_GDIARG_TRANSPARENTBLT structure describes the characteristics of a GDI hardware-accelerated bit-block transfer (bitblt) operation with transparency.
+old-location: display\dxgk_gdiarg_transparentblt.htm
+old-project: display
+ms.assetid: 2536fafc-3b62-42a6-8b53-60fa8d61d5a9
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgk_gdiarg_transparentblt, DXGK_GDIARG_TRANSPARENTBLT, DmStructs_bb046cac-9272-4bf2-a3a7-33cc7035f3fb.xml, d3dkmddi/DXGK_GDIARG_TRANSPARENTBLT, DXGK_GDIARG_TRANSPARENTBLT structure [Display Devices], _DXGK_GDIARG_TRANSPARENTBLT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7 and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DXGK_GDIARG_TRANSPARENTBLT
+product: Windows
+targetos: Windows
+req.typenames: DXGK_GDIARG_TRANSPARENTBLT
 ---
 
 # _DXGK_GDIARG_TRANSPARENTBLT structure

@@ -1,41 +1,46 @@
 ---
-UID : NS:portcls._PCNOTIFICATION_BUFFER
-title : "_PCNOTIFICATION_BUFFER"
-author : windows-driver-content
-description : The notification buffer used by IPortClsNotifications.
-old-location : audio\pcnotification_buffer.htm
-old-project : audio
-ms.assetid : EEE091E4-29D1-4C6F-B543-C54736660CCA
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : PCNOTIFICATION_BUFFER, _PCNOTIFICATION_BUFFER, portcls/PPCNOTIFICATION_BUFFER, PCNOTIFICATION_BUFFER structure [Audio Devices], audio.pcnotification_buffer, PPCNOTIFICATION_BUFFER structure pointer [Audio Devices], PPCNOTIFICATION_BUFFER, portcls/PCNOTIFICATION_BUFFER, *PPCNOTIFICATION_BUFFER
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : portcls.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10, version 1703
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PCNOTIFICATION_BUFFER, *PPCNOTIFICATION_BUFFER
+UID: NS:portcls._PCNOTIFICATION_BUFFER
+title: "_PCNOTIFICATION_BUFFER"
+author: windows-driver-content
+description: The notification buffer used by IPortClsNotifications.
+old-location: audio\pcnotification_buffer.htm
+old-project: audio
+ms.assetid: EEE091E4-29D1-4C6F-B543-C54736660CCA
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: PCNOTIFICATION_BUFFER, _PCNOTIFICATION_BUFFER, portcls/PPCNOTIFICATION_BUFFER, PCNOTIFICATION_BUFFER structure [Audio Devices], audio.pcnotification_buffer, PPCNOTIFICATION_BUFFER structure pointer [Audio Devices], PPCNOTIFICATION_BUFFER, portcls/PCNOTIFICATION_BUFFER, *PPCNOTIFICATION_BUFFER
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: portcls.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10, version 1703
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Portcls.h
+apiname:
+-	PCNOTIFICATION_BUFFER
+product: Windows
+targetos: Windows
+req.typenames: PCNOTIFICATION_BUFFER, *PPCNOTIFICATION_BUFFER
 ---
 
 # _PCNOTIFICATION_BUFFER structure

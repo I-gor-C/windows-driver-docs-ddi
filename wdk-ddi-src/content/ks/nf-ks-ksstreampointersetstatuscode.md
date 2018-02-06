@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsStreamPointerSetStatusCode
-title : KsStreamPointerSetStatusCode function
-author : windows-driver-content
-description : The KsStreamPointerSetStatusCode function allows specification of a successful or unsuccessful error code with which to complete the given IRP.
-old-location : stream\ksstreampointersetstatuscode.htm
-old-project : stream
-ms.assetid : 88d554d9-55b7-42d4-b799-f8cb2029b1ae
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KsStreamPointerSetStatusCode function [Streaming Media Devices], KsStreamPointerSetStatusCode, avfunc_48c373d0-2d32-4ad3-b8de-3008e2e11f59.xml, stream.ksstreampointersetstatuscode, ks/KsStreamPointerSetStatusCode
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsStreamPointerSetStatusCode
+title: KsStreamPointerSetStatusCode function
+author: windows-driver-content
+description: The KsStreamPointerSetStatusCode function allows specification of a successful or unsuccessful error code with which to complete the given IRP.
+old-location: stream\ksstreampointersetstatuscode.htm
+old-project: stream
+ms.assetid: 88d554d9-55b7-42d4-b799-f8cb2029b1ae
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KsStreamPointerSetStatusCode function [Streaming Media Devices], KsStreamPointerSetStatusCode, avfunc_48c373d0-2d32-4ad3-b8de-3008e2e11f59.xml, stream.ksstreampointersetstatuscode, ks/KsStreamPointerSetStatusCode
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsStreamPointerSetStatusCode
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

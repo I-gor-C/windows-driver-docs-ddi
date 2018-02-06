@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi_hwaccess.READ_REGISTER_BUFFER_UCHAR
-title : READ_REGISTER_BUFFER_UCHAR function
-author : windows-driver-content
-description : The READ_REGISTER_BUFFER_UCHAR function reads a number of bytes from the specified register address into a buffer.
-old-location : wdf\read_register_buffer_uchar.htm
-old-project : wdf
-ms.assetid : E0358D5E-4C5A-408F-9548-98A006939F22
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wudfddi_hwaccess/READ_REGISTER_BUFFER_UCHAR, wdf.read_register_buffer_uchar, READ_REGISTER_BUFFER_UCHAR, umdf.read_register_buffer_uchar, READ_REGISTER_BUFFER_UCHAR function
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wudfddi_hwaccess.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.11
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : UMDF_IO_TARGET_OPEN_PARAMS, *PUMDF_IO_TARGET_OPEN_PARAMS
-req.product : Windows 10 or later.
+UID: NF:wudfddi_hwaccess.READ_REGISTER_BUFFER_UCHAR
+title: READ_REGISTER_BUFFER_UCHAR function
+author: windows-driver-content
+description: The READ_REGISTER_BUFFER_UCHAR function reads a number of bytes from the specified register address into a buffer.
+old-location: wdf\read_register_buffer_uchar.htm
+old-project: wdf
+ms.assetid: E0358D5E-4C5A-408F-9548-98A006939F22
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wudfddi_hwaccess/READ_REGISTER_BUFFER_UCHAR, wdf.read_register_buffer_uchar, READ_REGISTER_BUFFER_UCHAR, umdf.read_register_buffer_uchar, READ_REGISTER_BUFFER_UCHAR function
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wudfddi_hwaccess.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.11
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wudfddi_hwaccess.h
+apiname:
+-	READ_REGISTER_BUFFER_UCHAR
+product: Windows
+targetos: Windows
+req.typenames: UMDF_IO_TARGET_OPEN_PARAMS, *PUMDF_IO_TARGET_OPEN_PARAMS
+req.product: Windows 10 or later.
 ---
 
 

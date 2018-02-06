@@ -1,41 +1,46 @@
 ---
-UID : NE:dxva._DXVA_VideoTransferMatrix
-title : "_DXVA_VideoTransferMatrix"
-author : windows-driver-content
-description : The DXVA_VideoTransferMatrix enumeration type contains enumerators that identify the conversion matrix from Y'Cb'Cr' to R'G'B'.
-old-location : display\dxva_videotransfermatrix.htm
-old-project : display
-ms.assetid : 726ce165-fd07-4dd3-a004-8081481340a1
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : dxva/DXVA_VideoTransferMatrix, DXVA_VideoTransferMatrix_BT601, _DXVA_VideoTransferMatrix, dxva/DXVA_VideoTransferMatrix_BT601, dxva/DXVA_VideoTransferMatrixShift, DXVA_VideoTransferMatrix, DXVA_VideoTransferMatrix_SMPTE240M, dxva/DXVA_VideoTransferMatrix_SMPTE240M, DXVA_VideoTransferMatrix enumeration [Display Devices], DXVA_VideoTransferMatrixShift, DXVA_VideoTransferMatrix_Unknown, DXVA_VideoTransferMatrix_BT709, dxvaref_82624d1d-650f-41a2-a8d2-fb8c9936caab.xml, dxva/DXVA_VideoTransferMatrixMask, display.dxva_videotransfermatrix, DXVA_VideoTransferMatrixMask, dxva/DXVA_VideoTransferMatrix_Unknown, dxva/DXVA_VideoTransferMatrix_BT709
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : dxva.h
-req.include-header : Dxva.h
-req.target-type : Windows
-req.target-min-winverclnt : This enumeration type applies only to Windows Server 2003 with SP1 and later, and Windows XP with SP2 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXVA_VideoTransferMatrix
+UID: NE:dxva._DXVA_VideoTransferMatrix
+title: "_DXVA_VideoTransferMatrix"
+author: windows-driver-content
+description: The DXVA_VideoTransferMatrix enumeration type contains enumerators that identify the conversion matrix from Y'Cb'Cr' to R'G'B'.
+old-location: display\dxva_videotransfermatrix.htm
+old-project: display
+ms.assetid: 726ce165-fd07-4dd3-a004-8081481340a1
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: dxva/DXVA_VideoTransferMatrix, DXVA_VideoTransferMatrix_BT601, _DXVA_VideoTransferMatrix, dxva/DXVA_VideoTransferMatrix_BT601, dxva/DXVA_VideoTransferMatrixShift, DXVA_VideoTransferMatrix, DXVA_VideoTransferMatrix_SMPTE240M, dxva/DXVA_VideoTransferMatrix_SMPTE240M, DXVA_VideoTransferMatrix enumeration [Display Devices], DXVA_VideoTransferMatrixShift, DXVA_VideoTransferMatrix_Unknown, DXVA_VideoTransferMatrix_BT709, dxvaref_82624d1d-650f-41a2-a8d2-fb8c9936caab.xml, dxva/DXVA_VideoTransferMatrixMask, display.dxva_videotransfermatrix, DXVA_VideoTransferMatrixMask, dxva/DXVA_VideoTransferMatrix_Unknown, dxva/DXVA_VideoTransferMatrix_BT709
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: dxva.h
+req.include-header: Dxva.h
+req.target-type: Windows
+req.target-min-winverclnt: This enumeration type applies only to Windows Server 2003 with SP1 and later, and Windows XP with SP2 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	dxva.h
+apiname:
+-	DXVA_VideoTransferMatrix
+product: Windows
+targetos: Windows
+req.typenames: DXVA_VideoTransferMatrix
 ---
 
 # _DXVA_VideoTransferMatrix Enumeration
@@ -56,41 +61,41 @@ typedef enum _DXVA_VideoTransferMatrix {
 ## Constants
 
 <table>
-
-<tr>
-<td>DXVA_VideoTransferMatrix_BT601</td>
-<td>Specifies the BT601 transfer matrix.</td>
-</tr>
-
-<tr>
-<td>DXVA_VideoTransferMatrix_BT709</td>
-<td>Specifies the BT709 transfer matrix.</td>
-</tr>
-
-<tr>
-<td>DXVA_VideoTransferMatrix_SMPTE240M</td>
-<td>Specifies a HD video standard rarely used in Japan.</td>
-</tr>
-
-<tr>
-<td>DXVA_VideoTransferMatrix_Unknown</td>
-<td>Specifies that the video transfer matrix is not specified. The default is BT601 for standard definition (SD) video and BT709 for high definition (HD) video.</td>
-</tr>
-
-<tr>
-<td>DXVA_VideoTransferMatrixMask</td>
-<td>Specifies the video transfer matrix mask. 3 (0x00038000) bits of a DWORD can be used to specify video transfer matrix.</td>
-</tr>
-
-<tr>
-<td>DXVA_VideoTransferMatrixShift</td>
-<td>Specifies to shift bits by 15 positions (DXVA_ExtColorData_ShiftBase + 7, or 8 + 7).</td>
-</tr>
+            
+                <tr>
+                    <td>DXVA_VideoTransferMatrix_BT601</td>
+                    <td>Specifies the BT601 transfer matrix.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXVA_VideoTransferMatrix_BT709</td>
+                    <td>Specifies the BT709 transfer matrix.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXVA_VideoTransferMatrix_SMPTE240M</td>
+                    <td>Specifies a HD video standard rarely used in Japan.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXVA_VideoTransferMatrix_Unknown</td>
+                    <td>Specifies that the video transfer matrix is not specified. The default is BT601 for standard definition (SD) video and BT709 for high definition (HD) video.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXVA_VideoTransferMatrixMask</td>
+                    <td>Specifies the video transfer matrix mask. 3 (0x00038000) bits of a DWORD can be used to specify video transfer matrix.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXVA_VideoTransferMatrixShift</td>
+                    <td>Specifies to shift bits by 15 positions (DXVA_ExtColorData_ShiftBase + 7, or 8 + 7).</td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-One of the enumerators of DXVA_VideoTransferMatrix can be specified in the <b>VideoTransferMatrix</b> member of the <a href="..\dxva\ns-dxva-_dxva_extendedformat.md">DXVA_ExtendedFormat</a> structure.
+        One of the enumerators of DXVA_VideoTransferMatrix can be specified in the <b>VideoTransferMatrix</b> member of the <a href="..\dxva\ns-dxva-_dxva_extendedformat.md">DXVA_ExtendedFormat</a> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -98,9 +103,9 @@ One of the enumerators of DXVA_VideoTransferMatrix can be specified in the <b>Vi
 | **Windows version** | This enumeration type applies only to Windows Server 2003 with SP1 and later, and Windows XP with SP2 and later. This enumeration type applies only to Windows Server 2003 with SP1 and later, and Windows XP with SP2 and later. |
 | **Header** | dxva.h (include Dxva.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\dxva\ns-dxva-_dxva_extendedformat.md">DXVA_ExtendedFormat</a>
+        <a href="..\dxva\ns-dxva-_dxva_extendedformat.md">DXVA_ExtendedFormat</a>
 
  
 

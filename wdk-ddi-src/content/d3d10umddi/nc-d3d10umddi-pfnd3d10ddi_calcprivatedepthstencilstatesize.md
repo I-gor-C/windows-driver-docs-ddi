@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3D10DDI_CALCPRIVATEDEPTHSTENCILSTATESIZE
-title : PFND3D10DDI_CALCPRIVATEDEPTHSTENCILSTATESIZE
-author : windows-driver-content
-description : The CalcPrivateDepthStencilStateSize function determines the size of the user-mode display driver's private region of memory (that is, the size of internal driver structures, not the size of the resource video memory) for a depth stencil state.
-old-location : display\calcprivatedepthstencilstatesize.htm
-old-project : display
-ms.assetid : dcc02e1e-97e0-4ccd-8329-8219cad5d09a
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.calcprivatedepthstencilstatesize, CalcPrivateDepthStencilStateSize callback function [Display Devices], CalcPrivateDepthStencilStateSize, PFND3D10DDI_CALCPRIVATEDEPTHSTENCILSTATESIZE, PFND3D10DDI_CALCPRIVATEDEPTHSTENCILSTATESIZE, d3d10umddi/CalcPrivateDepthStencilStateSize, UserModeDisplayDriverDx10_Functions_9eb00c77-fbc0-443d-848b-b7e254de4efe.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3D10DDI_CALCPRIVATEDEPTHSTENCILSTATESIZE
+title: PFND3D10DDI_CALCPRIVATEDEPTHSTENCILSTATESIZE
+author: windows-driver-content
+description: The CalcPrivateDepthStencilStateSize function determines the size of the user-mode display driver's private region of memory (that is, the size of internal driver structures, not the size of the resource video memory) for a depth stencil state.
+old-location: display\calcprivatedepthstencilstatesize.htm
+old-project: display
+ms.assetid: dcc02e1e-97e0-4ccd-8329-8219cad5d09a
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.calcprivatedepthstencilstatesize, CalcPrivateDepthStencilStateSize callback function [Display Devices], CalcPrivateDepthStencilStateSize, PFND3D10DDI_CALCPRIVATEDEPTHSTENCILSTATESIZE, PFND3D10DDI_CALCPRIVATEDEPTHSTENCILSTATESIZE, d3d10umddi/CalcPrivateDepthStencilStateSize, UserModeDisplayDriverDx10_Functions_9eb00c77-fbc0-443d-848b-b7e254de4efe.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	CalcPrivateDepthStencilStateSize
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

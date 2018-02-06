@@ -1,42 +1,47 @@
 ---
-UID : NS:wwan._WWAN_DEVICE_SERVICE_SESSION_READ
-title : "_WWAN_DEVICE_SERVICE_SESSION_READ"
-author : windows-driver-content
-description : The WWAN_DEVICE_SERVICE_SESSION_READ structure represents data associated with a device service session read notification.
-old-location : netvista\wwan_device_service_session_read.htm
-old-project : netvista
-ms.assetid : 248C5386-B835-4806-8DD8-39327EDADA0C
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : PWWAN_DEVICE_SERVICE_SESSION_READ structure pointer [Network Drivers Starting with Windows Vista], WWAN_DEVICE_SERVICE_SESSION_READ, PWWAN_DEVICE_SERVICE_SESSION_READ, wwan/WWAN_DEVICE_SERVICE_SESSION_READ, wwan/PWWAN_DEVICE_SERVICE_SESSION_READ, _WWAN_DEVICE_SERVICE_SESSION_READ, WWAN_DEVICE_SERVICE_SESSION_READ structure [Network Drivers Starting with Windows Vista], netvista.wwan_device_service_session_read, *PWWAN_DEVICE_SERVICE_SESSION_READ
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wwan.h
-req.include-header : Wwan.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with  Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WWAN_DEVICE_SERVICE_SESSION_READ, *PWWAN_DEVICE_SERVICE_SESSION_READ
-req.product : Windows 10 or later.
+UID: NS:wwan._WWAN_DEVICE_SERVICE_SESSION_READ
+title: "_WWAN_DEVICE_SERVICE_SESSION_READ"
+author: windows-driver-content
+description: The WWAN_DEVICE_SERVICE_SESSION_READ structure represents data associated with a device service session read notification.
+old-location: netvista\wwan_device_service_session_read.htm
+old-project: netvista
+ms.assetid: 248C5386-B835-4806-8DD8-39327EDADA0C
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: PWWAN_DEVICE_SERVICE_SESSION_READ structure pointer [Network Drivers Starting with Windows Vista], WWAN_DEVICE_SERVICE_SESSION_READ, PWWAN_DEVICE_SERVICE_SESSION_READ, wwan/WWAN_DEVICE_SERVICE_SESSION_READ, wwan/PWWAN_DEVICE_SERVICE_SESSION_READ, _WWAN_DEVICE_SERVICE_SESSION_READ, WWAN_DEVICE_SERVICE_SESSION_READ structure [Network Drivers Starting with Windows Vista], netvista.wwan_device_service_session_read, *PWWAN_DEVICE_SERVICE_SESSION_READ
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wwan.h
+req.include-header: Wwan.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with  Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wwan.h
+apiname:
+-	WWAN_DEVICE_SERVICE_SESSION_READ
+product: Windows
+targetos: Windows
+req.typenames: WWAN_DEVICE_SERVICE_SESSION_READ, *PWWAN_DEVICE_SERVICE_SESSION_READ
+req.product: Windows 10 or later.
 ---
 
 # _WWAN_DEVICE_SERVICE_SESSION_READ structure

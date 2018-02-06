@@ -1,41 +1,46 @@
 ---
-UID : NS:hbapiwmi._SetBindingSupport_IN
-title : "_SetBindingSupport_IN"
-author : windows-driver-content
-description : The SetBindingSupport_IN structure is used to deliver input parameter data to the SetBindingSupport WMI method.
-old-location : storage\setbindingsupport_in.htm
-old-project : storage
-ms.assetid : bdcd6f76-9a45-4687-b3ab-ece3e9419c44
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : "*PSetBindingSupport_IN, SetBindingSupport_IN, hbapiwmi/SetBindingSupport_IN, _SetBindingSupport_IN, structs-Fibre_2545c261-7902-4fb8-9943-21087c281089.xml, PSetBindingSupport_IN, SetBindingSupport_IN structure [Storage Devices], storage.setbindingsupport_in, PSetBindingSupport_IN structure pointer [Storage Devices], hbapiwmi/PSetBindingSupport_IN"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : hbapiwmi.h
-req.include-header : Hbapiwmi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSetBindingSupport_IN, SetBindingSupport_IN"
+UID: NS:hbapiwmi._SetBindingSupport_IN
+title: "_SetBindingSupport_IN"
+author: windows-driver-content
+description: The SetBindingSupport_IN structure is used to deliver input parameter data to the SetBindingSupport WMI method.
+old-location: storage\setbindingsupport_in.htm
+old-project: storage
+ms.assetid: bdcd6f76-9a45-4687-b3ab-ece3e9419c44
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: "*PSetBindingSupport_IN, SetBindingSupport_IN, hbapiwmi/SetBindingSupport_IN, _SetBindingSupport_IN, structs-Fibre_2545c261-7902-4fb8-9943-21087c281089.xml, PSetBindingSupport_IN, SetBindingSupport_IN structure [Storage Devices], storage.setbindingsupport_in, PSetBindingSupport_IN structure pointer [Storage Devices], hbapiwmi/PSetBindingSupport_IN"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: hbapiwmi.h
+req.include-header: Hbapiwmi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hbapiwmi.h
+apiname:
+-	SetBindingSupport_IN
+product: Windows
+targetos: Windows
+req.typenames: "*PSetBindingSupport_IN, SetBindingSupport_IN"
 ---
 
 # _SetBindingSupport_IN structure

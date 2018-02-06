@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddndis._NDIS_RSS_PROCESSOR_INFO
-title : "_NDIS_RSS_PROCESSOR_INFO"
-author : windows-driver-content
-description : The NDIS_RSS_PROCESSOR_INFO structure specifies information about the CPU receive side scaling (RSS) processor set on the local computer.
-old-location : netvista\ndis_rss_processor_info.htm
-old-project : netvista
-ms.assetid : 7f40a815-0247-428c-a46f-d3cdbf7e8058
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : ndis_processor_group_ref_de5d0ed6-e4b3-4074-8816-8ab3c3ff0c4d.xml, PNDIS_RSS_PROCESSOR_INFO, ntddndis/PNDIS_RSS_PROCESSOR_INFO, NDIS_RSS_PROCESSOR_INFO, *PNDIS_RSS_PROCESSOR_INFO, _NDIS_RSS_PROCESSOR_INFO, PNDIS_RSS_PROCESSOR_INFO structure pointer [Network Drivers Starting with Windows Vista], ntddndis/NDIS_RSS_PROCESSOR_INFO, netvista.ndis_rss_processor_info, NDIS_RSS_PROCESSOR_INFO structure [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.20 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_RSS_PROCESSOR_INFO, *PNDIS_RSS_PROCESSOR_INFO
+UID: NS:ntddndis._NDIS_RSS_PROCESSOR_INFO
+title: "_NDIS_RSS_PROCESSOR_INFO"
+author: windows-driver-content
+description: The NDIS_RSS_PROCESSOR_INFO structure specifies information about the CPU receive side scaling (RSS) processor set on the local computer.
+old-location: netvista\ndis_rss_processor_info.htm
+old-project: netvista
+ms.assetid: 7f40a815-0247-428c-a46f-d3cdbf7e8058
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: ndis_processor_group_ref_de5d0ed6-e4b3-4074-8816-8ab3c3ff0c4d.xml, PNDIS_RSS_PROCESSOR_INFO, ntddndis/PNDIS_RSS_PROCESSOR_INFO, NDIS_RSS_PROCESSOR_INFO, *PNDIS_RSS_PROCESSOR_INFO, _NDIS_RSS_PROCESSOR_INFO, PNDIS_RSS_PROCESSOR_INFO structure pointer [Network Drivers Starting with Windows Vista], ntddndis/NDIS_RSS_PROCESSOR_INFO, netvista.ndis_rss_processor_info, NDIS_RSS_PROCESSOR_INFO structure [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.20 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddndis.h
+apiname:
+-	NDIS_RSS_PROCESSOR_INFO
+product: Windows
+targetos: Windows
+req.typenames: NDIS_RSS_PROCESSOR_INFO, *PNDIS_RSS_PROCESSOR_INFO
 ---
 
 # _NDIS_RSS_PROCESSOR_INFO structure

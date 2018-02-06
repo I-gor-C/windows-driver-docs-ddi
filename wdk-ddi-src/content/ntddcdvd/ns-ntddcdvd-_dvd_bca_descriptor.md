@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddcdvd._DVD_BCA_DESCRIPTOR
-title : "_DVD_BCA_DESCRIPTOR"
-author : windows-driver-content
-description : The DVD_BCA_DESCRIPTOR structure is used in conjunction with the IOCTL_DVD_READ_STRUCTURE request to retrieve a DVD burst cutting area (BCA) descriptor.
-old-location : storage\dvd_bca_descriptor.htm
-old-project : storage
-ms.assetid : a573beb8-7019-4605-ab37-5871f67c585d
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : "_DVD_BCA_DESCRIPTOR, storage.dvd_bca_descriptor, DVD_BCA_DESCRIPTOR, PDVD_BCA_DESCRIPTOR structure pointer [Storage Devices], structs-DVD_4bbbd075-9b9f-40a6-b52d-e96b8ad7118b.xml, *PDVD_BCA_DESCRIPTOR, ntddcdvd/PDVD_BCA_DESCRIPTOR, DVD_BCA_DESCRIPTOR structure [Storage Devices], ntddcdvd/DVD_BCA_DESCRIPTOR, PDVD_BCA_DESCRIPTOR"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddcdvd.h
-req.include-header : Ntddcdvd.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DVD_BCA_DESCRIPTOR, *PDVD_BCA_DESCRIPTOR
+UID: NS:ntddcdvd._DVD_BCA_DESCRIPTOR
+title: "_DVD_BCA_DESCRIPTOR"
+author: windows-driver-content
+description: The DVD_BCA_DESCRIPTOR structure is used in conjunction with the IOCTL_DVD_READ_STRUCTURE request to retrieve a DVD burst cutting area (BCA) descriptor.
+old-location: storage\dvd_bca_descriptor.htm
+old-project: storage
+ms.assetid: a573beb8-7019-4605-ab37-5871f67c585d
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: "_DVD_BCA_DESCRIPTOR, storage.dvd_bca_descriptor, DVD_BCA_DESCRIPTOR, PDVD_BCA_DESCRIPTOR structure pointer [Storage Devices], structs-DVD_4bbbd075-9b9f-40a6-b52d-e96b8ad7118b.xml, *PDVD_BCA_DESCRIPTOR, ntddcdvd/PDVD_BCA_DESCRIPTOR, DVD_BCA_DESCRIPTOR structure [Storage Devices], ntddcdvd/DVD_BCA_DESCRIPTOR, PDVD_BCA_DESCRIPTOR"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddcdvd.h
+req.include-header: Ntddcdvd.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddcdvd.h
+apiname:
+-	DVD_BCA_DESCRIPTOR
+product: Windows
+targetos: Windows
+req.typenames: DVD_BCA_DESCRIPTOR, *PDVD_BCA_DESCRIPTOR
 ---
 
 # _DVD_BCA_DESCRIPTOR structure

@@ -1,41 +1,46 @@
 ---
-UID : NS:gpioclx._GPIO_QUERY_ENABLED_INTERRUPTS_PARAMETERS
-title : "_GPIO_QUERY_ENABLED_INTERRUPTS_PARAMETERS"
-author : windows-driver-content
-description : The GPIO_QUERY_ENABLED_INTERRUPTS_PARAMETERS structure indicates which interrupt pins in a bank of general-purpose I/O (GPIO) pins are enabled.
-old-location : gpio\gpio_query_enabled_interrupts_parameters.htm
-old-project : GPIO
-ms.assetid : CC2EEF26-CCC0-4093-8A44-12FF1EDD2FF9
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : gpioclx/PGPIO_QUERY_ENABLED_INTERRUPTS_PARAMETERS, GPIO_QUERY_ENABLED_INTERRUPTS_PARAMETERS structure [Parallel Ports], PGPIO_QUERY_ENABLED_INTERRUPTS_PARAMETERS structure pointer [Parallel Ports], _GPIO_QUERY_ENABLED_INTERRUPTS_PARAMETERS, PGPIO_QUERY_ENABLED_INTERRUPTS_PARAMETERS, *PGPIO_QUERY_ENABLED_INTERRUPTS_PARAMETERS, GPIO.gpio_query_enabled_interrupts_parameters, GPIO_QUERY_ENABLED_INTERRUPTS_PARAMETERS, gpioclx/GPIO_QUERY_ENABLED_INTERRUPTS_PARAMETERS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : gpioclx.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with Windows 8.1.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : GPIO_QUERY_ENABLED_INTERRUPTS_PARAMETERS, *PGPIO_QUERY_ENABLED_INTERRUPTS_PARAMETERS
+UID: NS:gpioclx._GPIO_QUERY_ENABLED_INTERRUPTS_PARAMETERS
+title: "_GPIO_QUERY_ENABLED_INTERRUPTS_PARAMETERS"
+author: windows-driver-content
+description: The GPIO_QUERY_ENABLED_INTERRUPTS_PARAMETERS structure indicates which interrupt pins in a bank of general-purpose I/O (GPIO) pins are enabled.
+old-location: gpio\gpio_query_enabled_interrupts_parameters.htm
+old-project: GPIO
+ms.assetid: CC2EEF26-CCC0-4093-8A44-12FF1EDD2FF9
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: gpioclx/PGPIO_QUERY_ENABLED_INTERRUPTS_PARAMETERS, GPIO_QUERY_ENABLED_INTERRUPTS_PARAMETERS structure [Parallel Ports], PGPIO_QUERY_ENABLED_INTERRUPTS_PARAMETERS structure pointer [Parallel Ports], _GPIO_QUERY_ENABLED_INTERRUPTS_PARAMETERS, PGPIO_QUERY_ENABLED_INTERRUPTS_PARAMETERS, *PGPIO_QUERY_ENABLED_INTERRUPTS_PARAMETERS, GPIO.gpio_query_enabled_interrupts_parameters, GPIO_QUERY_ENABLED_INTERRUPTS_PARAMETERS, gpioclx/GPIO_QUERY_ENABLED_INTERRUPTS_PARAMETERS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: gpioclx.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows 8.1.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Gpioclx.h
+apiname:
+-	GPIO_QUERY_ENABLED_INTERRUPTS_PARAMETERS
+product: Windows
+targetos: Windows
+req.typenames: GPIO_QUERY_ENABLED_INTERRUPTS_PARAMETERS, *PGPIO_QUERY_ENABLED_INTERRUPTS_PARAMETERS
 ---
 
 # _GPIO_QUERY_ENABLED_INTERRUPTS_PARAMETERS structure

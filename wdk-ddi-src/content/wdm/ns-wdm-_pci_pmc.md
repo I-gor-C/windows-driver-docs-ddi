@@ -1,42 +1,47 @@
 ---
-UID : NS:wdm._PCI_PMC
-title : "_PCI_PMC"
-author : windows-driver-content
-description : The PCI_PMC structure is used to report the contents of the power management capabilities register.
-old-location : pci\pci_pmc.htm
-old-project : PCI
-ms.assetid : e6ec18a3-2da6-4b3a-afe3-17435463fd39
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : "*PPCI_PMC, PPCI_PMC structure pointer [Buses], wdm/PCI_PMC, _PCI_PMC, PCI_PMC, PCI.pci_pmc, PPCI_PMC, PCI_PMC structure [Buses], wdm/PPCI_PMC, pci_struct_5ac33692-66a0-4c2e-89dc-e5ace757e06b.xml"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : Wdm.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPCI_PMC, PCI_PMC"
-req.product : Windows 10 or later.
+UID: NS:wdm._PCI_PMC
+title: "_PCI_PMC"
+author: windows-driver-content
+description: The PCI_PMC structure is used to report the contents of the power management capabilities register.
+old-location: pci\pci_pmc.htm
+old-project: PCI
+ms.assetid: e6ec18a3-2da6-4b3a-afe3-17435463fd39
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: "*PPCI_PMC, PPCI_PMC structure pointer [Buses], wdm/PCI_PMC, _PCI_PMC, PCI_PMC, PCI.pci_pmc, PPCI_PMC, PCI_PMC structure [Buses], wdm/PPCI_PMC, pci_struct_5ac33692-66a0-4c2e-89dc-e5ace757e06b.xml"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: Wdm.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdm.h
+apiname:
+-	PCI_PMC
+product: Windows
+targetos: Windows
+req.typenames: "*PPCI_PMC, PCI_PMC"
+req.product: Windows 10 or later.
 ---
 
 # _PCI_PMC structure

@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisAdvanceNetBufferDataStart
-title : NdisAdvanceNetBufferDataStart function
-author : windows-driver-content
-description : Call the NdisAdvanceNetBufferDataStart function to release the used data space that was added with the NdisRetreatNetBufferDataStart function.
-old-location : netvista\ndisadvancenetbufferdatastart.htm
-old-project : netvista
-ms.assetid : 49b69282-137d-4bb5-92f5-4d27cedbb6d4
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.ndisadvancenetbufferdatastart, ndis_netbuf_functions_ref_b03aee2c-859d-425f-9b07-91b324505ff4.xml, NdisAdvanceNetBufferDataStart, ndis/NdisAdvanceNetBufferDataStart, NdisAdvanceNetBufferDataStart function [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_NetBuffer_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisAdvanceNetBufferDataStart
+title: NdisAdvanceNetBufferDataStart function
+author: windows-driver-content
+description: Call the NdisAdvanceNetBufferDataStart function to release the used data space that was added with the NdisRetreatNetBufferDataStart function.
+old-location: netvista\ndisadvancenetbufferdatastart.htm
+old-project: netvista
+ms.assetid: 49b69282-137d-4bb5-92f5-4d27cedbb6d4
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.ndisadvancenetbufferdatastart, ndis_netbuf_functions_ref_b03aee2c-859d-425f-9b07-91b324505ff4.xml, NdisAdvanceNetBufferDataStart, ndis/NdisAdvanceNetBufferDataStart, NdisAdvanceNetBufferDataStart function [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_NetBuffer_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisAdvanceNetBufferDataStart
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

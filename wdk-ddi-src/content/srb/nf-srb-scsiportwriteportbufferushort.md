@@ -1,42 +1,48 @@
 ---
-UID : NF:srb.ScsiPortWritePortBufferUshort
-title : ScsiPortWritePortBufferUshort function
-author : windows-driver-content
-description : The ScsiPortWritePortBufferUshort routine transfers a given number of USHORT values from a buffer to the HBA.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future.
-old-location : storage\scsiportwriteportbufferushort.htm
-old-project : storage
-ms.assetid : ca6bd14b-533d-4451-b54f-29bc566c968d
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : srb/ScsiPortWritePortBufferUshort, storage.scsiportwriteportbufferushort, ScsiPortWritePortBufferUshort routine [Storage Devices], ScsiPortWritePortBufferUshort, scsiprt_b04295df-d370-4015-a705-71652d4ab4f7.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : srb.h
-req.include-header : Miniport.h, Scsi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Scsiport.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SPB_CONTROLLER_CONFIG, *PSPB_CONTROLLER_CONFIG
-req.product : Windows 10 or later.
+UID: NF:srb.ScsiPortWritePortBufferUshort
+title: ScsiPortWritePortBufferUshort function
+author: windows-driver-content
+description: The ScsiPortWritePortBufferUshort routine transfers a given number of USHORT values from a buffer to the HBA.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future.
+old-location: storage\scsiportwriteportbufferushort.htm
+old-project: storage
+ms.assetid: ca6bd14b-533d-4451-b54f-29bc566c968d
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: srb/ScsiPortWritePortBufferUshort, storage.scsiportwriteportbufferushort, ScsiPortWritePortBufferUshort routine [Storage Devices], ScsiPortWritePortBufferUshort, scsiprt_b04295df-d370-4015-a705-71652d4ab4f7.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: srb.h
+req.include-header: Miniport.h, Scsi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Scsiport.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Scsiport.lib
+-	Scsiport.dll
+apiname:
+-	ScsiPortWritePortBufferUshort
+product: Windows
+targetos: Windows
+req.typenames: SPB_CONTROLLER_CONFIG, *PSPB_CONTROLLER_CONFIG
+req.product: Windows 10 or later.
 ---
 
 

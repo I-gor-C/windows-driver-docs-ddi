@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3D11DDI_CREATERESOURCE
-title : PFND3D11DDI_CREATERESOURCE
-author : windows-driver-content
-description : Creates a resource.
-old-location : display\createresource_d3d11_.htm
-old-project : display
-ms.assetid : 2dff9d2e-c497-422f-824b-a7101904fd67
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.createresource_d3d11_, CreateResource callback function [Display Devices], CreateResource, PFND3D11DDI_CREATERESOURCE, PFND3D11DDI_CREATERESOURCE, d3d10umddi/CreateResource, UserModeDisplayDriverDx11_Functions_3ac053d0-82dc-4bdf-af15-258af82c568b.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : CreateResource(D3D11) is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3D11DDI_CREATERESOURCE
+title: PFND3D11DDI_CREATERESOURCE
+author: windows-driver-content
+description: Creates a resource.
+old-location: display\createresource_d3d11_.htm
+old-project: display
+ms.assetid: 2dff9d2e-c497-422f-824b-a7101904fd67
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.createresource_d3d11_, CreateResource callback function [Display Devices], CreateResource, PFND3D11DDI_CREATERESOURCE, PFND3D11DDI_CREATERESOURCE, d3d10umddi/CreateResource, UserModeDisplayDriverDx11_Functions_3ac053d0-82dc-4bdf-af15-258af82c568b.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: CreateResource(D3D11) is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	CreateResource
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

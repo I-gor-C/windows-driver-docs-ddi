@@ -1,42 +1,47 @@
 ---
-UID : NF:winsplp.DeletePortUI
-title : DeletePortUI function
-author : windows-driver-content
-description : A port monitor UI DLL's DeletePortUI function deletes a printer port.
-old-location : print\deleteportui.htm
-old-project : print
-ms.assetid : a556ec29-9149-4185-b4b3-9aae803e62f7
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : pfnDeletePortUI function [Print Devices], spoolfnc_9b9b8660-cc30-49ea-aea1-163eef7ab973.xml, print.deleteportui, DeletePortUI, pfnDeletePortUI, winsplp/pfnDeletePortUI
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : winsplp.h
-req.include-header : Winsplp.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NOTIFICATION_CONFIG_FLAGS
-req.product : Windows 10 or later.
+UID: NF:winsplp.DeletePortUI
+title: DeletePortUI function
+author: windows-driver-content
+description: A port monitor UI DLL's DeletePortUI function deletes a printer port.
+old-location: print\deleteportui.htm
+old-project: print
+ms.assetid: a556ec29-9149-4185-b4b3-9aae803e62f7
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: pfnDeletePortUI function [Print Devices], spoolfnc_9b9b8660-cc30-49ea-aea1-163eef7ab973.xml, print.deleteportui, DeletePortUI, pfnDeletePortUI, winsplp/pfnDeletePortUI
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: winsplp.h
+req.include-header: Winsplp.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	winsplp.h
+apiname:
+-	pfnDeletePortUI
+product: Windows
+targetos: Windows
+req.typenames: NOTIFICATION_CONFIG_FLAGS
+req.product: Windows 10 or later.
 ---
 
 

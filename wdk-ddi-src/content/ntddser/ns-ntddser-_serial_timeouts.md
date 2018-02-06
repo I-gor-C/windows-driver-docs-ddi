@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddser._SERIAL_TIMEOUTS
-title : "_SERIAL_TIMEOUTS"
-author : windows-driver-content
-description : The SERIAL_TIMEOUTS structure specifies the time-out parameters for read and write operations by the serial port.
-old-location : serports\serial_timeouts.htm
-old-project : serports
-ms.assetid : 58DABEF8-5886-4575-BFB0-C10709BBACAE
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : SERIAL_TIMEOUTS structure [Serial Ports], *PSERIAL_TIMEOUTS, PSERIAL_TIMEOUTS structure pointer [Serial Ports], SERIAL_TIMEOUTS, ntddser/PSERIAL_TIMEOUTS, serports.serial_timeouts, _SERIAL_TIMEOUTS, PSERIAL_TIMEOUTS, ntddser/SERIAL_TIMEOUTS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddser.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SERIAL_TIMEOUTS, *PSERIAL_TIMEOUTS
+UID: NS:ntddser._SERIAL_TIMEOUTS
+title: "_SERIAL_TIMEOUTS"
+author: windows-driver-content
+description: The SERIAL_TIMEOUTS structure specifies the time-out parameters for read and write operations by the serial port.
+old-location: serports\serial_timeouts.htm
+old-project: serports
+ms.assetid: 58DABEF8-5886-4575-BFB0-C10709BBACAE
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: SERIAL_TIMEOUTS structure [Serial Ports], *PSERIAL_TIMEOUTS, PSERIAL_TIMEOUTS structure pointer [Serial Ports], SERIAL_TIMEOUTS, ntddser/PSERIAL_TIMEOUTS, serports.serial_timeouts, _SERIAL_TIMEOUTS, PSERIAL_TIMEOUTS, ntddser/SERIAL_TIMEOUTS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddser.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddser.h
+apiname:
+-	SERIAL_TIMEOUTS
+product: Windows
+targetos: Windows
+req.typenames: SERIAL_TIMEOUTS, *PSERIAL_TIMEOUTS
 ---
 
 # _SERIAL_TIMEOUTS structure

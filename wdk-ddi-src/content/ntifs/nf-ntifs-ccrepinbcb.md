@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.CcRepinBcb
-title : CcRepinBcb function
-author : windows-driver-content
-description : The CcRepinBcb routine pins a buffer control block (BCB) an additional time to prevent it from being freed by a subsequent call to CcUnpinData.
-old-location : ifsk\ccrepinbcb.htm
-old-project : ifsk
-ms.assetid : 81c2446e-8f11-4146-8da5-17fc451c2729
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : CcRepinBcb routine [Installable File System Drivers], ntifs/CcRepinBcb, CcRepinBcb, ifsk.ccrepinbcb, ccref_5aacfd67-3d6c-4be6-9bfa-5b85772ce32f.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.CcRepinBcb
+title: CcRepinBcb function
+author: windows-driver-content
+description: The CcRepinBcb routine pins a buffer control block (BCB) an additional time to prevent it from being freed by a subsequent call to CcUnpinData.
+old-location: ifsk\ccrepinbcb.htm
+old-project: ifsk
+ms.assetid: 81c2446e-8f11-4146-8da5-17fc451c2729
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: CcRepinBcb routine [Installable File System Drivers], ntifs/CcRepinBcb, CcRepinBcb, ifsk.ccrepinbcb, ccref_5aacfd67-3d6c-4be6-9bfa-5b85772ce32f.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	CcRepinBcb
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

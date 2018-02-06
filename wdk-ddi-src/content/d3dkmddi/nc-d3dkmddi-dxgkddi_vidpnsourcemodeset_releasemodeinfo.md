@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dkmddi.DXGKDDI_VIDPNSOURCEMODESET_RELEASEMODEINFO
-title : DXGKDDI_VIDPNSOURCEMODESET_RELEASEMODEINFO
-author : windows-driver-content
-description : The pfnReleaseModeInfo function releases a D3DKMDT_VIDPN_SOURCE_MODE structure that the VidPN manager previously provided to the display miniport driver.
-old-location : display\dxgk_vidpnsourcemodeset_interface_pfnreleasemodeinfo.htm
-old-project : display
-ms.assetid : 614283cc-90bf-44f2-bab2-1aeec5e7de01
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgk_vidpnsourcemodeset_interface_pfnreleasemodeinfo, pfnReleaseModeInfo callback function [Display Devices], pfnReleaseModeInfo, DXGKDDI_VIDPNSOURCEMODESET_RELEASEMODEINFO, DXGKDDI_VIDPNSOURCEMODESET_RELEASEMODEINFO, d3dkmddi/pfnReleaseModeInfo, VidPnFunctions_4516c897-bcf8-4a32-9517-45c86690d746.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
+UID: NC:d3dkmddi.DXGKDDI_VIDPNSOURCEMODESET_RELEASEMODEINFO
+title: DXGKDDI_VIDPNSOURCEMODESET_RELEASEMODEINFO
+author: windows-driver-content
+description: The pfnReleaseModeInfo function releases a D3DKMDT_VIDPN_SOURCE_MODE structure that the VidPN manager previously provided to the display miniport driver.
+old-location: display\dxgk_vidpnsourcemodeset_interface_pfnreleasemodeinfo.htm
+old-project: display
+ms.assetid: 614283cc-90bf-44f2-bab2-1aeec5e7de01
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgk_vidpnsourcemodeset_interface_pfnreleasemodeinfo, pfnReleaseModeInfo callback function [Display Devices], pfnReleaseModeInfo, DXGKDDI_VIDPNSOURCEMODESET_RELEASEMODEINFO, DXGKDDI_VIDPNSOURCEMODESET_RELEASEMODEINFO, d3dkmddi/pfnReleaseModeInfo, VidPnFunctions_4516c897-bcf8-4a32-9517-45c86690d746.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	pfnReleaseModeInfo
+product: Windows
+targetos: Windows
+req.typenames: DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
 

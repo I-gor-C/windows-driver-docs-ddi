@@ -1,41 +1,46 @@
 ---
-UID : NE:fwpsk.FWPS_FIELDS_ALE_CONNECT_REDIRECT_V6_
-title : FWPS_FIELDS_ALE_CONNECT_REDIRECT_V6_
-author : windows-driver-content
-description : The FWPS_FIELDS_ALE_CONNECT_REDIRECT_V6 enumeration type specifies the data field identifiers for the FWPS_LAYER_ALE_CONNECT_REDIRECT_V6 run-time filtering layer.
-old-location : netvista\fwps_fields_ale_connect_redirect_v6.htm
-old-project : netvista
-ms.assetid : 8d728b54-7848-468e-9491-47b09dfc69ff
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_IP_LOCAL_ADDRESS, FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_IP_PROTOCOL, FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_ALE_USER_ID, FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_IP_LOCAL_ADDRESS_TYPE, fwpsk/FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_IP_REMOTE_PORT, FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_ALE_ORIGINAL_APP_ID, FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_ALE_PACKAGE_ID, FWPS_FIELDS_ALE_CONNECT_REDIRECT_V6 enumeration [Network Drivers Starting with Windows Vista], FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_IP_LOCAL_PORT, FWPS_FIELDS_ALE_CONNECT_REDIRECT_V6, fwpsk/FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_ALE_ORIGINAL_APP_ID, FWPS_FIELDS_ALE_CONNECT_REDIRECT_V6_, FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_IP_REMOTE_ADDRESS, fwpsk/FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_FLAGS, fwpsk/FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_ALE_APP_ID, FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_IP_DESTINATION_ADDRESS_TYPE, fwpsk/FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_IP_PROTOCOL, fwpsk/FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_MAX, wfp_ref_5_const_3_data_fields_af380b4c-b918-42fb-9964-7afb02360e42.xml, fwpsk/FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_IP_LOCAL_PORT, fwpsk/FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_IP_DESTINATION_ADDRESS_TYPE, netvista.fwps_fields_ale_connect_redirect_v6, FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_FLAGS, FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_IP_REMOTE_PORT, FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_MAX, fwpsk/FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_IP_LOCAL_ADDRESS_TYPE, fwpsk/FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_ALE_USER_ID, fwpsk/FWPS_FIELDS_ALE_CONNECT_REDIRECT_V6, fwpsk/FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_IP_REMOTE_ADDRESS, fwpsk/FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_IP_LOCAL_ADDRESS, FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_ALE_APP_ID, fwpsk/FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_ALE_PACKAGE_ID
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : fwpsk.h
-req.include-header : Fwpsk.h
-req.target-type : Windows
-req.target-min-winverclnt : Unless otherwise noted, supported starting with  Windows 7.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FWPS_FIELDS_ALE_CONNECT_REDIRECT_V6
+UID: NE:fwpsk.FWPS_FIELDS_ALE_CONNECT_REDIRECT_V6_
+title: FWPS_FIELDS_ALE_CONNECT_REDIRECT_V6_
+author: windows-driver-content
+description: The FWPS_FIELDS_ALE_CONNECT_REDIRECT_V6 enumeration type specifies the data field identifiers for the FWPS_LAYER_ALE_CONNECT_REDIRECT_V6 run-time filtering layer.
+old-location: netvista\fwps_fields_ale_connect_redirect_v6.htm
+old-project: netvista
+ms.assetid: 8d728b54-7848-468e-9491-47b09dfc69ff
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_IP_LOCAL_ADDRESS, FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_IP_PROTOCOL, FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_ALE_USER_ID, FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_IP_LOCAL_ADDRESS_TYPE, fwpsk/FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_IP_REMOTE_PORT, FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_ALE_ORIGINAL_APP_ID, FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_ALE_PACKAGE_ID, FWPS_FIELDS_ALE_CONNECT_REDIRECT_V6 enumeration [Network Drivers Starting with Windows Vista], FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_IP_LOCAL_PORT, FWPS_FIELDS_ALE_CONNECT_REDIRECT_V6, fwpsk/FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_ALE_ORIGINAL_APP_ID, FWPS_FIELDS_ALE_CONNECT_REDIRECT_V6_, FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_IP_REMOTE_ADDRESS, fwpsk/FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_FLAGS, fwpsk/FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_ALE_APP_ID, FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_IP_DESTINATION_ADDRESS_TYPE, fwpsk/FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_IP_PROTOCOL, fwpsk/FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_MAX, wfp_ref_5_const_3_data_fields_af380b4c-b918-42fb-9964-7afb02360e42.xml, fwpsk/FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_IP_LOCAL_PORT, fwpsk/FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_IP_DESTINATION_ADDRESS_TYPE, netvista.fwps_fields_ale_connect_redirect_v6, FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_FLAGS, FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_IP_REMOTE_PORT, FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_MAX, fwpsk/FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_IP_LOCAL_ADDRESS_TYPE, fwpsk/FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_ALE_USER_ID, fwpsk/FWPS_FIELDS_ALE_CONNECT_REDIRECT_V6, fwpsk/FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_IP_REMOTE_ADDRESS, fwpsk/FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_IP_LOCAL_ADDRESS, FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_ALE_APP_ID, fwpsk/FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_ALE_PACKAGE_ID
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: fwpsk.h
+req.include-header: Fwpsk.h
+req.target-type: Windows
+req.target-min-winverclnt: Unless otherwise noted, supported starting with  Windows 7.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	fwpsk.h
+apiname:
+-	FWPS_FIELDS_ALE_CONNECT_REDIRECT_V6
+product: Windows
+targetos: Windows
+req.typenames: FWPS_FIELDS_ALE_CONNECT_REDIRECT_V6
 ---
 
 # FWPS_FIELDS_ALE_CONNECT_REDIRECT_V6_ Enumeration
@@ -67,93 +72,93 @@ typedef enum FWPS_FIELDS_ALE_CONNECT_REDIRECT_V6_ {
 ## Constants
 
 <table>
-
-<tr>
-<td>FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_ALE_APP_ID</td>
-<td>The full path of the application.</td>
-</tr>
-
-<tr>
-<td>FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_ALE_ORIGINAL_APP_ID</td>
-<td>The full path of the original application for proxy connections. If the application has not been proxied, this path is identical to the xxx_ALE_APP_ID.
+            
+                <tr>
+                    <td>FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_ALE_APP_ID</td>
+                    <td>The full path of the application.</td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_ALE_ORIGINAL_APP_ID</td>
+                    <td>The full path of the original application for proxy connections. If the application has not been proxied, this path is identical to the xxx_ALE_APP_ID.
 <div class="alert"><b>Note</b>  Supported starting with Windows 8.</div><div> </div></td>
-</tr>
-
-<tr>
-<td>FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_ALE_PACKAGE_ID</td>
-<td>The package identifier is a security identifier (SID) that identifies the associated AppContainer process. For more information about the SID structure, see the description for the SID structure in the Microsoft Windows SDK documentation.
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_ALE_PACKAGE_ID</td>
+                    <td>The package identifier is a security identifier (SID) that identifies the associated AppContainer process. For more information about the SID structure, see the description for the SID structure in the Microsoft Windows SDK documentation.
 <div class="alert"><b>Note</b>  Supported starting with Windows 8.</div><div> </div></td>
-</tr>
-
-<tr>
-<td>FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_ALE_SECURITY_ATTRIBUTE_FQBN_VALUE</td>
-<td></td>
-</tr>
-
-<tr>
-<td>FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_ALE_USER_ID</td>
-<td>The identifier of the local user.</td>
-</tr>
-
-<tr>
-<td>FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_COMPARTMENT_ID</td>
-<td></td>
-</tr>
-
-<tr>
-<td>FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_FLAGS</td>
-<td>A bitwise OR of a combination of filtering condition flags. For information about the possible
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_ALE_SECURITY_ATTRIBUTE_FQBN_VALUE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_ALE_USER_ID</td>
+                    <td>The identifier of the local user.</td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_COMPARTMENT_ID</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_FLAGS</td>
+                    <td>A bitwise OR of a combination of filtering condition flags. For information about the possible
      flags, see 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff549942">Filtering Condition Flags</a>.</td>
-</tr>
-
-<tr>
-<td>FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_IP_DESTINATION_ADDRESS_TYPE</td>
-<td>The destination IP address type. The possible values are defined by the 
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_IP_DESTINATION_ADDRESS_TYPE</td>
+                    <td>The destination IP address type. The possible values are defined by the 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff568757">NL_ADDRESS_TYPE</a> enumeration.</td>
-</tr>
-
-<tr>
-<td>FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_IP_LOCAL_ADDRESS</td>
-<td>The local IP address.</td>
-</tr>
-
-<tr>
-<td>FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_IP_LOCAL_ADDRESS_TYPE</td>
-<td>The local IP address type. The possible values are defined by the 
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_IP_LOCAL_ADDRESS</td>
+                    <td>The local IP address.</td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_IP_LOCAL_ADDRESS_TYPE</td>
+                    <td>The local IP address type. The possible values are defined by the 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff568757">NL_ADDRESS_TYPE</a> enumeration.</td>
-</tr>
-
-<tr>
-<td>FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_IP_LOCAL_PORT</td>
-<td>The local transport protocol port number.</td>
-</tr>
-
-<tr>
-<td>FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_IP_PROTOCOL</td>
-<td>The IP protocol number, as specified in RFC 1700.</td>
-</tr>
-
-<tr>
-<td>FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_IP_REMOTE_ADDRESS</td>
-<td>The remote IP address.</td>
-</tr>
-
-<tr>
-<td>FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_IP_REMOTE_PORT</td>
-<td>The remote transport protocol port number.</td>
-</tr>
-
-<tr>
-<td>FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_MAX</td>
-<td>The maximum value for this enumeration. This value might change in future versions of the NDIS
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_IP_LOCAL_PORT</td>
+                    <td>The local transport protocol port number.</td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_IP_PROTOCOL</td>
+                    <td>The IP protocol number, as specified in RFC 1700.</td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_IP_REMOTE_ADDRESS</td>
+                    <td>The remote IP address.</td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_IP_REMOTE_PORT</td>
+                    <td>The remote transport protocol port number.</td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_ALE_CONNECT_REDIRECT_V6_MAX</td>
+                    <td>The maximum value for this enumeration. This value might change in future versions of the NDIS
      header files and binaries.</td>
-</tr>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-The following macros in 
+        The following macros in 
     <i>Fwpsk.h</i> are defined with FWPS_FIELDS_ALE_CONNECT_REDIRECT_V6 enumeration
     values:
 <div class="code"><span codelanguage=""><table>
@@ -179,9 +184,9 @@ The following macros in
 | **Windows version** | Unless otherwise noted, supported starting with  Windows 7. Unless otherwise noted, supported starting with  Windows 7. |
 | **Header** | fwpsk.h (include Fwpsk.h) |
 
-## See Also
+    ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568757">NL_ADDRESS_TYPE</a>
+        <a href="https://msdn.microsoft.com/library/windows/hardware/ff568757">NL_ADDRESS_TYPE</a>
 
  
 

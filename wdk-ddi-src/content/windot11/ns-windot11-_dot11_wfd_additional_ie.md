@@ -1,42 +1,47 @@
 ---
-UID : NS:windot11._DOT11_WFD_ADDITIONAL_IE
-title : "_DOT11_WFD_ADDITIONAL_IE"
-author : windows-driver-content
-description : The DOT11_WFD_ADDITIONAL_IE structure represents an additional Information Element (IE) included in an OID_DOT11_WFD_ADDITIONAL_IE request. An additional IE contains both request and response data for probe and beacon operations.
-old-location : netvista\_dot11_wfd_additional_ie.htm
-old-project : netvista
-ms.assetid : F381C8DB-DC69-4820-BDCE-2F1DF3482FDD
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : DOT11_WFD_ADDITIONAL_IE, *PDOT11_WFD_ADDITIONAL_IE, windot11/PDOT11_WFD_ADDITIONAL_IE, _DOT11_WFD_ADDITIONAL_IE, PDOT11_WFD_ADDITIONAL_IE structure pointer [Network Drivers Starting with Windows Vista], PDOT11_WFD_ADDITIONAL_IE, windot11/ DOT11_WFD_ADDITIONAL_IE, netvista._dot11_wfd_additional_ie, DOT11_WFD_ADDITIONAL_IE structure [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : windot11.h
-req.include-header : Windot11.h
-req.target-type : Windows
-req.target-min-winverclnt : Versions:\_Supported in Windows 8
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDOT11_WFD_ADDITIONAL_IE, DOT11_WFD_ADDITIONAL_IE"
-req.product : Windows 10 or later.
+UID: NS:windot11._DOT11_WFD_ADDITIONAL_IE
+title: "_DOT11_WFD_ADDITIONAL_IE"
+author: windows-driver-content
+description: The DOT11_WFD_ADDITIONAL_IE structure represents an additional Information Element (IE) included in an OID_DOT11_WFD_ADDITIONAL_IE request. An additional IE contains both request and response data for probe and beacon operations.
+old-location: netvista\_dot11_wfd_additional_ie.htm
+old-project: netvista
+ms.assetid: F381C8DB-DC69-4820-BDCE-2F1DF3482FDD
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: DOT11_WFD_ADDITIONAL_IE, *PDOT11_WFD_ADDITIONAL_IE, windot11/PDOT11_WFD_ADDITIONAL_IE, _DOT11_WFD_ADDITIONAL_IE, PDOT11_WFD_ADDITIONAL_IE structure pointer [Network Drivers Starting with Windows Vista], PDOT11_WFD_ADDITIONAL_IE, windot11/ DOT11_WFD_ADDITIONAL_IE, netvista._dot11_wfd_additional_ie, DOT11_WFD_ADDITIONAL_IE structure [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: windot11.h
+req.include-header: Windot11.h
+req.target-type: Windows
+req.target-min-winverclnt: Versions:\_Supported in Windows 8
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Windot11.h
+apiname:
+-	DOT11_WFD_ADDITIONAL_IE
+product: Windows
+targetos: Windows
+req.typenames: "*PDOT11_WFD_ADDITIONAL_IE, DOT11_WFD_ADDITIONAL_IE"
+req.product: Windows 10 or later.
 ---
 
 # _DOT11_WFD_ADDITIONAL_IE structure

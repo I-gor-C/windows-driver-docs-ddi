@@ -1,41 +1,47 @@
 ---
-UID : NF:fltkernel.FltClearCancelCompletion
-title : FltClearCancelCompletion function
-author : windows-driver-content
-description : FltClearCancelCompletion clears a cancel routine that was specified for an I/O operation.
-old-location : ifsk\fltclearcancelcompletion.htm
-old-project : ifsk
-ms.assetid : 75c66cb7-3378-4951-9180-d1bd9f201a42
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltClearCancelCompletion, fltkernel/FltClearCancelCompletion, ifsk.fltclearcancelcompletion, FltClearCancelCompletion routine [Installable File System Drivers], FltApiRef_a_to_d_4dea0214-a0a2-45b8-b044-960881a8f065.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltClearCancelCompletion
+title: FltClearCancelCompletion function
+author: windows-driver-content
+description: FltClearCancelCompletion clears a cancel routine that was specified for an I/O operation.
+old-location: ifsk\fltclearcancelcompletion.htm
+old-project: ifsk
+ms.assetid: 75c66cb7-3378-4951-9180-d1bd9f201a42
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltClearCancelCompletion, fltkernel/FltClearCancelCompletion, ifsk.fltclearcancelcompletion, FltClearCancelCompletion routine [Installable File System Drivers], FltApiRef_a_to_d_4dea0214-a0a2-45b8-b044-960881a8f065.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	FltMgr.lib
+-	FltMgr.dll
+apiname:
+-	FltClearCancelCompletion
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

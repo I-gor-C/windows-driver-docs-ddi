@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltGetRequestorSessionId
-title : FltGetRequestorSessionId function
-author : windows-driver-content
-description : The FltGetRequestorSessionId routine returns the session ID of the process that originally requested the specified I/O operation.
-old-location : ifsk\fltgetrequestorsessionid.htm
-old-project : ifsk
-ms.assetid : 6a0eb588-fe64-4f36-8648-8e006e16704e
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltGetRequestorSessionId, FltGetRequestorSessionId routine [Installable File System Drivers], ifsk.fltgetrequestorsessionid, fltkernel/FltGetRequestorSessionId
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : FltKernel.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Microsoft Windows 7 and later versions of the Windows operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltGetRequestorSessionId
+title: FltGetRequestorSessionId function
+author: windows-driver-content
+description: The FltGetRequestorSessionId routine returns the session ID of the process that originally requested the specified I/O operation.
+old-location: ifsk\fltgetrequestorsessionid.htm
+old-project: ifsk
+ms.assetid: 6a0eb588-fe64-4f36-8648-8e006e16704e
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltGetRequestorSessionId, FltGetRequestorSessionId routine [Installable File System Drivers], ifsk.fltgetrequestorsessionid, fltkernel/FltGetRequestorSessionId
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: FltKernel.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Microsoft Windows 7 and later versions of the Windows operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltGetRequestorSessionId
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

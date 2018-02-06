@@ -1,42 +1,47 @@
 ---
-UID : NF:rxprocs.RxMapSystemBuffer
-title : RxMapSystemBuffer function
-author : windows-driver-content
-description : RxMapSystemBuffer returns the system buffer address from the IRP.
-old-location : ifsk\rxmapsystembuffer.htm
-old-project : ifsk
-ms.assetid : dc549e51-2f25-45b5-925f-3481294e0b35
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : RxMapSystemBuffer function [Installable File System Drivers], ifsk.rxmapsystembuffer, rxref_b9222b0a-25ca-4ad4-95b9-b9651c625a39.xml, RxMapSystemBuffer, rxprocs/RxMapSystemBuffer
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : rxprocs.h
-req.include-header : Rxcontx.h, Rxprocs.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RX_CONTEXT, *PRX_CONTEXT
-req.product : Windows 10 or later.
+UID: NF:rxprocs.RxMapSystemBuffer
+title: RxMapSystemBuffer function
+author: windows-driver-content
+description: RxMapSystemBuffer returns the system buffer address from the IRP.
+old-location: ifsk\rxmapsystembuffer.htm
+old-project: ifsk
+ms.assetid: dc549e51-2f25-45b5-925f-3481294e0b35
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: RxMapSystemBuffer function [Installable File System Drivers], ifsk.rxmapsystembuffer, rxref_b9222b0a-25ca-4ad4-95b9-b9651c625a39.xml, RxMapSystemBuffer, rxprocs/RxMapSystemBuffer
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: rxprocs.h
+req.include-header: Rxcontx.h, Rxprocs.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	rxprocs.h
+apiname:
+-	RxMapSystemBuffer
+product: Windows
+targetos: Windows
+req.typenames: RX_CONTEXT, *PRX_CONTEXT
+req.product: Windows 10 or later.
 ---
 
 

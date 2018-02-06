@@ -1,42 +1,48 @@
 ---
-UID : NF:wdm.PoFxPowerOnCrashdumpDevice
-title : PoFxPowerOnCrashdumpDevice function
-author : windows-driver-content
-description : The PoFxPowerOnCrashdumpDevice routine requests that a crash-dump device be turned on.
-old-location : kernel\pofxpoweroncrashdumpdevice.htm
-old-project : kernel
-ms.assetid : 41560DC4-EE5E-4756-8540-ACC19835A9DA
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : PoFxPowerOnCrashdumpDevice, wdm/PoFxPowerOnCrashdumpDevice, PoFxPowerOnCrashdumpDevice routine [Kernel-Mode Driver Architecture], kernel.pofxpoweroncrashdumpdevice
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Pepfx.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows 8.1.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ntoskrnl.lib
-req.dll : 
-req.irql : "<= HIGH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.PoFxPowerOnCrashdumpDevice
+title: PoFxPowerOnCrashdumpDevice function
+author: windows-driver-content
+description: The PoFxPowerOnCrashdumpDevice routine requests that a crash-dump device be turned on.
+old-location: kernel\pofxpoweroncrashdumpdevice.htm
+old-project: kernel
+ms.assetid: 41560DC4-EE5E-4756-8540-ACC19835A9DA
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: PoFxPowerOnCrashdumpDevice, wdm/PoFxPowerOnCrashdumpDevice, PoFxPowerOnCrashdumpDevice routine [Kernel-Mode Driver Architecture], kernel.pofxpoweroncrashdumpdevice
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Pepfx.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows 8.1.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ntoskrnl.lib
+req.dll: 
+req.irql: "<= HIGH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ntoskrnl.lib
+-	ntoskrnl.dll
+apiname:
+-	PoFxPowerOnCrashdumpDevice
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

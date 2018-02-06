@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfdmaenabler.WdfDmaEnablerConfigureSystemProfile
-title : WdfDmaEnablerConfigureSystemProfile function
-author : windows-driver-content
-description : The WdfDmaEnablerConfigureSystemProfile method configures the hardware-specific settings for a system-mode DMA enabler and completes the resource initialization.
-old-location : wdf\wdfdmaenablerconfiguresystemprofile.htm
-old-project : wdf
-ms.assetid : 3374EBB8-F43A-4A2A-92AC-623B39F5EFA0
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.wdfdmaenablerconfiguresystemprofile, WdfDmaEnablerConfigureSystemProfile method, wdfdmaenabler/WdfDmaEnablerConfigureSystemProfile, WdfDmaEnablerConfigureSystemProfile, kmdf.wdfdmaenablerconfiguresystemprofile, PFN_WDFDMAENABLERCONFIGURESYSTEMPROFILE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfdmaenabler.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : 
-req.kmdf-ver : 1.11
-req.umdf-ver : 
-req.ddi-compliance : DriverCreate
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_DMA_PROFILE
-req.product : Windows 10 or later.
+UID: NF:wdfdmaenabler.WdfDmaEnablerConfigureSystemProfile
+title: WdfDmaEnablerConfigureSystemProfile function
+author: windows-driver-content
+description: The WdfDmaEnablerConfigureSystemProfile method configures the hardware-specific settings for a system-mode DMA enabler and completes the resource initialization.
+old-location: wdf\wdfdmaenablerconfiguresystemprofile.htm
+old-project: wdf
+ms.assetid: 3374EBB8-F43A-4A2A-92AC-623B39F5EFA0
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.wdfdmaenablerconfiguresystemprofile, WdfDmaEnablerConfigureSystemProfile method, wdfdmaenabler/WdfDmaEnablerConfigureSystemProfile, WdfDmaEnablerConfigureSystemProfile, kmdf.wdfdmaenablerconfiguresystemprofile, PFN_WDFDMAENABLERCONFIGURESYSTEMPROFILE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfdmaenabler.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: 
+req.kmdf-ver: 1.11
+req.umdf-ver: 
+req.ddi-compliance: DriverCreate
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfDmaEnablerConfigureSystemProfile
+product: Windows
+targetos: Windows
+req.typenames: WDF_DMA_PROFILE
+req.product: Windows 10 or later.
 ---
 
 

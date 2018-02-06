@@ -1,41 +1,46 @@
 ---
-UID : NI:ntdddisk.IOCTL_DISK_PERFORMANCE_OFF
-title : IOCTL_DISK_PERFORMANCE_OFF
-author : windows-driver-content
-description : Disables the counters that were enabled by previous calls to IOCTL_DISK_PERFORMANCE. This request is available in Windows XP and later operating systems. Caller must be running at IRQL = PASSIVE_LEVEL.
-old-location : storage\ioctl_disk_performance_off.htm
-old-project : storage
-ms.assetid : 9a56ac86-2d39-4367-8e64-b6f6bc0da0ea
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_disk_performance_off, IOCTL_DISK_PERFORMANCE_OFF control code [Storage Devices], IOCTL_DISK_PERFORMANCE_OFF, ntdddisk/IOCTL_DISK_PERFORMANCE_OFF, k307_af1f6a33-e2e5-4ba0-96ad-f1d84c30ef76.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntdddisk.h
-req.include-header : Ntdddisk.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DETECTION_TYPE
+UID: NI:ntdddisk.IOCTL_DISK_PERFORMANCE_OFF
+title: IOCTL_DISK_PERFORMANCE_OFF
+author: windows-driver-content
+description: Disables the counters that were enabled by previous calls to IOCTL_DISK_PERFORMANCE. This request is available in Windows XP and later operating systems. Caller must be running at IRQL = PASSIVE_LEVEL.
+old-location: storage\ioctl_disk_performance_off.htm
+old-project: storage
+ms.assetid: 9a56ac86-2d39-4367-8e64-b6f6bc0da0ea
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_disk_performance_off, IOCTL_DISK_PERFORMANCE_OFF control code [Storage Devices], IOCTL_DISK_PERFORMANCE_OFF, ntdddisk/IOCTL_DISK_PERFORMANCE_OFF, k307_af1f6a33-e2e5-4ba0-96ad-f1d84c30ef76.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntdddisk.h
+req.include-header: Ntdddisk.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntdddisk.h
+apiname:
+-	IOCTL_DISK_PERFORMANCE_OFF
+product: Windows
+targetos: Windows
+req.typenames: DETECTION_TYPE
 ---
 
 # IOCTL_DISK_PERFORMANCE_OFF IOCTL

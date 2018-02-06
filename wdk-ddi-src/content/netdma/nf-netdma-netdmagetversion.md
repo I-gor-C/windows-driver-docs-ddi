@@ -1,41 +1,46 @@
 ---
-UID : NF:netdma.NetDmaGetVersion
-title : NetDmaGetVersion function
-author : windows-driver-content
-description : Note  The NetDMA interface is not supported in Windows 8 and later. The NetDmaGetVersion function returns the version of the NetDMA interface that the local computer supports.
-old-location : netvista\netdmagetversion.htm
-old-project : netvista
-ms.assetid : eec8ba30-0f9e-4487-ba0d-99587d97b44a
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.netdmagetversion, netdma/NetDmaGetVersion, netdma_ref_bb1adf18-d43d-4dc2-b780-1a1322014581.xml, NetDmaGetVersion function [Network Drivers Starting with Windows Vista], NetDmaGetVersion
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : netdma.h
-req.include-header : Netdma.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported for NetDMA 2.0 and NetDMA 1.1 drivers in Windows Server 2008.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NET_DMA_PNP_NOTIFICATION_CODE, *PNET_DMA_PNP_NOTIFICATION_CODE
+UID: NF:netdma.NetDmaGetVersion
+title: NetDmaGetVersion function
+author: windows-driver-content
+description: Note  The NetDMA interface is not supported in Windows 8 and later. The NetDmaGetVersion function returns the version of the NetDMA interface that the local computer supports.
+old-location: netvista\netdmagetversion.htm
+old-project: netvista
+ms.assetid: eec8ba30-0f9e-4487-ba0d-99587d97b44a
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.netdmagetversion, netdma/NetDmaGetVersion, netdma_ref_bb1adf18-d43d-4dc2-b780-1a1322014581.xml, NetDmaGetVersion function [Network Drivers Starting with Windows Vista], NetDmaGetVersion
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: netdma.h
+req.include-header: Netdma.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported for NetDMA 2.0 and NetDMA 1.1 drivers in Windows Server 2008.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	netdma.h
+apiname:
+-	NetDmaGetVersion
+product: Windows
+targetos: Windows
+req.typenames: NET_DMA_PNP_NOTIFICATION_CODE, *PNET_DMA_PNP_NOTIFICATION_CODE
 ---
 
 

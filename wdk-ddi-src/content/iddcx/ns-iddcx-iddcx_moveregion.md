@@ -1,41 +1,46 @@
 ---
-UID : NS:iddcx.IDDCX_MOVEREGION
-title : IDDCX_MOVEREGION
-author : windows-driver-content
-description : Gives information about the current move region.
-old-location : display\iddcx_moveregion.htm
-old-project : display
-ms.assetid : 28974c00-9225-4458-a198-beb4538e3a45
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.iddcx_moveregion, IDDCX_MOVEREGION, IDDCX_MOVEREGION structure [Display Devices], iddcx/IDDCX_MOVEREGION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : iddcx.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NS:iddcx.IDDCX_MOVEREGION
+title: IDDCX_MOVEREGION
+author: windows-driver-content
+description: Gives information about the current move region.
+old-location: display\iddcx_moveregion.htm
+old-project: display
+ms.assetid: 28974c00-9225-4458-a198-beb4538e3a45
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.iddcx_moveregion, IDDCX_MOVEREGION, IDDCX_MOVEREGION structure [Display Devices], iddcx/IDDCX_MOVEREGION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: iddcx.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	iddcx.h
+apiname:
+-	IDDCX_MOVEREGION
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 # IDDCX_MOVEREGION structure

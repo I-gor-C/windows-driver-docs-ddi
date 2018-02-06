@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia._DDPIXELFORMAT
-title : "_DDPIXELFORMAT"
-author : windows-driver-content
-description : The DDPIXELFORMAT structure describes the pixel format of a DirectDrawSurface object.
-old-location : display\ddpixelformat.htm
-old-project : display
-ms.assetid : bbc26c03-c154-4b1e-883e-2942b59ded02
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : ksmedia/LPDDPIXELFORMAT, _DDPIXELFORMAT, LPDDPIXELFORMAT structure pointer [Display Devices], display.ddpixelformat, LPDDPIXELFORMAT, DDPIXELFORMAT, DDPIXELFORMAT structure [Display Devices], *LPDDPIXELFORMAT, ksmedia/DDPIXELFORMAT, ddstrcts_861a4798-418e-492a-b4cb-c4f1ce794a71.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ddraw.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*LPDDPIXELFORMAT, DDPIXELFORMAT"
+UID: NS:ksmedia._DDPIXELFORMAT
+title: "_DDPIXELFORMAT"
+author: windows-driver-content
+description: The DDPIXELFORMAT structure describes the pixel format of a DirectDrawSurface object.
+old-location: display\ddpixelformat.htm
+old-project: display
+ms.assetid: bbc26c03-c154-4b1e-883e-2942b59ded02
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: ksmedia/LPDDPIXELFORMAT, _DDPIXELFORMAT, LPDDPIXELFORMAT structure pointer [Display Devices], display.ddpixelformat, LPDDPIXELFORMAT, DDPIXELFORMAT, DDPIXELFORMAT structure [Display Devices], *LPDDPIXELFORMAT, ksmedia/DDPIXELFORMAT, ddstrcts_861a4798-418e-492a-b4cb-c4f1ce794a71.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ddraw.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	DDPIXELFORMAT
+product: Windows
+targetos: Windows
+req.typenames: "*LPDDPIXELFORMAT, DDPIXELFORMAT"
 ---
 
 # _DDPIXELFORMAT structure

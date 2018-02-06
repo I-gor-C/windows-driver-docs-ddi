@@ -1,42 +1,48 @@
 ---
-UID : NF:ucmmanager.UcmConnectorTypeCDetach
-title : UcmConnectorTypeCDetach function
-author : windows-driver-content
-description : Notifies the USB connector manager framework extension (UcmCx) when the partner connector detaches from the specified Type-C connector.
-old-location : buses\ucmconnectortypecdetach.htm
-old-project : usbref
-ms.assetid : E89DC8B6-9379-4FE2-BF4C-897DA9DFA11C
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : UcmConnectorTypeCDetach method [Buses], buses.ucmconnectortypecdetach, UcmConnectorTypeCDetach, ucmmanager/UcmConnectorTypeCDetach
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ucmmanager.h
-req.include-header : Ucmcx.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 1.15
-req.umdf-ver : 2.15
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : UcmCxstub.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPORT_DATA_1, PORT_DATA_1"
-req.product : Windows 10 or later.
+UID: NF:ucmmanager.UcmConnectorTypeCDetach
+title: UcmConnectorTypeCDetach function
+author: windows-driver-content
+description: Notifies the USB connector manager framework extension (UcmCx) when the partner connector detaches from the specified Type-C connector.
+old-location: buses\ucmconnectortypecdetach.htm
+old-project: usbref
+ms.assetid: E89DC8B6-9379-4FE2-BF4C-897DA9DFA11C
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: UcmConnectorTypeCDetach method [Buses], buses.ucmconnectortypecdetach, UcmConnectorTypeCDetach, ucmmanager/UcmConnectorTypeCDetach
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ucmmanager.h
+req.include-header: Ucmcx.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 1.15
+req.umdf-ver: 2.15
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: UcmCxstub.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	UcmCxstub.lib
+-	UcmCxstub.dll
+apiname:
+-	UcmConnectorTypeCDetach
+product: Windows
+targetos: Windows
+req.typenames: "*PPORT_DATA_1, PORT_DATA_1"
+req.product: Windows 10 or later.
 ---
 
 

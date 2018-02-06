@@ -1,42 +1,47 @@
 ---
-UID : NS:wdm._TRANSACTION_PROPERTIES_INFORMATION
-title : "_TRANSACTION_PROPERTIES_INFORMATION"
-author : windows-driver-content
-description : The TRANSACTION_PROPERTIES_INFORMATION structure contains a transaction object's properties.
-old-location : kernel\transaction_properties_information.htm
-old-project : kernel
-ms.assetid : 76b0f102-0d09-4b16-b8e1-727a3a6e48c9
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/PTRANSACTION_PROPERTIES_INFORMATION, PTRANSACTION_PROPERTIES_INFORMATION structure pointer [Kernel-Mode Driver Architecture], PTRANSACTION_PROPERTIES_INFORMATION, wdm/TRANSACTION_PROPERTIES_INFORMATION, _TRANSACTION_PROPERTIES_INFORMATION, TRANSACTION_PROPERTIES_INFORMATION, kernel.transaction_properties_information, TRANSACTION_PROPERTIES_INFORMATION structure [Kernel-Mode Driver Architecture], *PTRANSACTION_PROPERTIES_INFORMATION, ktm_ref_bc17351c-f0ea-457e-968c-19785c0afd8d.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TRANSACTION_PROPERTIES_INFORMATION, *PTRANSACTION_PROPERTIES_INFORMATION
-req.product : Windows 10 or later.
+UID: NS:wdm._TRANSACTION_PROPERTIES_INFORMATION
+title: "_TRANSACTION_PROPERTIES_INFORMATION"
+author: windows-driver-content
+description: The TRANSACTION_PROPERTIES_INFORMATION structure contains a transaction object's properties.
+old-location: kernel\transaction_properties_information.htm
+old-project: kernel
+ms.assetid: 76b0f102-0d09-4b16-b8e1-727a3a6e48c9
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/PTRANSACTION_PROPERTIES_INFORMATION, PTRANSACTION_PROPERTIES_INFORMATION structure pointer [Kernel-Mode Driver Architecture], PTRANSACTION_PROPERTIES_INFORMATION, wdm/TRANSACTION_PROPERTIES_INFORMATION, _TRANSACTION_PROPERTIES_INFORMATION, TRANSACTION_PROPERTIES_INFORMATION, kernel.transaction_properties_information, TRANSACTION_PROPERTIES_INFORMATION structure [Kernel-Mode Driver Architecture], *PTRANSACTION_PROPERTIES_INFORMATION, ktm_ref_bc17351c-f0ea-457e-968c-19785c0afd8d.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	TRANSACTION_PROPERTIES_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: TRANSACTION_PROPERTIES_INFORMATION, *PTRANSACTION_PROPERTIES_INFORMATION
+req.product: Windows 10 or later.
 ---
 
 # _TRANSACTION_PROPERTIES_INFORMATION structure

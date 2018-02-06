@@ -1,41 +1,46 @@
 ---
-UID : NC:ndis.PROTOCOL_UNBIND_ADAPTER_EX
-title : PROTOCOL_UNBIND_ADAPTER_EX
-author : windows-driver-content
-description : NDIS calls a protocol driver's ProtocolUnbindAdapterEx function to request the driver to unbind from an underlying miniport adapter.Note  You must declare the function by using the PROTOCOL_UNBIND_ADAPTER_EX type.
-old-location : netvista\protocolunbindadapterex.htm
-old-project : netvista
-ms.assetid : 19fa7be2-acb9-42f6-bd9f-5be3e3c8b5fa
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.protocolunbindadapterex, ProtocolUnbindAdapterEx callback function [Network Drivers Starting with Windows Vista], ProtocolUnbindAdapterEx, PROTOCOL_UNBIND_ADAPTER_EX, PROTOCOL_UNBIND_ADAPTER_EX, ndis/ProtocolUnbindAdapterEx, protocol_functions_ref_e8d6b640-35e1-4824-9d7b-a7ebd6273764.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported for NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
+UID: NC:ndis.PROTOCOL_UNBIND_ADAPTER_EX
+title: PROTOCOL_UNBIND_ADAPTER_EX
+author: windows-driver-content
+description: NDIS calls a protocol driver's ProtocolUnbindAdapterEx function to request the driver to unbind from an underlying miniport adapter.Note  You must declare the function by using the PROTOCOL_UNBIND_ADAPTER_EX type.
+old-location: netvista\protocolunbindadapterex.htm
+old-project: netvista
+ms.assetid: 19fa7be2-acb9-42f6-bd9f-5be3e3c8b5fa
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.protocolunbindadapterex, ProtocolUnbindAdapterEx callback function [Network Drivers Starting with Windows Vista], ProtocolUnbindAdapterEx, PROTOCOL_UNBIND_ADAPTER_EX, PROTOCOL_UNBIND_ADAPTER_EX, ndis/ProtocolUnbindAdapterEx, protocol_functions_ref_e8d6b640-35e1-4824-9d7b-a7ebd6273764.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported for NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ndis.h
+apiname:
+-	ProtocolUnbindAdapterEx
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 

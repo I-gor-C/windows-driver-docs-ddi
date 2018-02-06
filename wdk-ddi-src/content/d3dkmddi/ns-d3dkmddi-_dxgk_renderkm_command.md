@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGK_RENDERKM_COMMAND
-title : "_DXGK_RENDERKM_COMMAND"
-author : windows-driver-content
-description : The DXGK_RENDERKM_COMMAND structure is used to construct a command buffer to control GDI hardware-accelerated rendering.
-old-location : display\dxgk_renderkm_command.htm
-old-project : display
-ms.assetid : 998bf0ca-c08d-41d9-ba3e-74a620ed51ae
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3dkmddi/DXGK_RENDERKM_COMMAND, DXGK_RENDERKM_COMMAND structure [Display Devices], DXGK_RENDERKM_COMMAND, _DXGK_RENDERKM_COMMAND, display.dxgk_renderkm_command, DmStructs_b23578a5-ae81-42c8-95ce-3ba9b4691d57.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7 and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_RENDERKM_COMMAND
+UID: NS:d3dkmddi._DXGK_RENDERKM_COMMAND
+title: "_DXGK_RENDERKM_COMMAND"
+author: windows-driver-content
+description: The DXGK_RENDERKM_COMMAND structure is used to construct a command buffer to control GDI hardware-accelerated rendering.
+old-location: display\dxgk_renderkm_command.htm
+old-project: display
+ms.assetid: 998bf0ca-c08d-41d9-ba3e-74a620ed51ae
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3dkmddi/DXGK_RENDERKM_COMMAND, DXGK_RENDERKM_COMMAND structure [Display Devices], DXGK_RENDERKM_COMMAND, _DXGK_RENDERKM_COMMAND, display.dxgk_renderkm_command, DmStructs_b23578a5-ae81-42c8-95ce-3ba9b4691d57.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7 and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DXGK_RENDERKM_COMMAND
+product: Windows
+targetos: Windows
+req.typenames: DXGK_RENDERKM_COMMAND
 ---
 
 # _DXGK_RENDERKM_COMMAND structure

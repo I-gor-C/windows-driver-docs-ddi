@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IQueueCallbackDefaultIoHandler.OnDefaultIoHandler
-title : IQueueCallbackDefaultIoHandler::OnDefaultIoHandler method
-author : windows-driver-content
-description : The OnDefaultIoHandler method handles I/O requests that no other method is registered to handle.
-old-location : wdf\iqueuecallbackdefaultiohandler_ondefaultiohandler.htm
-old-project : wdf
-ms.assetid : d0973dc9-58d6-486f-860e-a891600be73e
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wudfddi/IQueueCallbackDefaultIoHandler::OnDefaultIoHandler, umdf.iqueuecallbackdefaultiohandler_ondefaultiohandler, IQueueCallbackDefaultIoHandler::OnDefaultIoHandler, IQueueCallbackDefaultIoHandler, wdf.iqueuecallbackdefaultiohandler_ondefaultiohandler, OnDefaultIoHandler, IQueueCallbackDefaultIoHandler interface, OnDefaultIoHandler method, OnDefaultIoHandler method, IQueueCallbackDefaultIoHandler interface, UMDFQueueObjectRef_21f994ea-feca-4c50-aa83-401581713c3f.xml, OnDefaultIoHandler method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IQueueCallbackDefaultIoHandler.OnDefaultIoHandler
+title: IQueueCallbackDefaultIoHandler::OnDefaultIoHandler method
+author: windows-driver-content
+description: The OnDefaultIoHandler method handles I/O requests that no other method is registered to handle.
+old-location: wdf\iqueuecallbackdefaultiohandler_ondefaultiohandler.htm
+old-project: wdf
+ms.assetid: d0973dc9-58d6-486f-860e-a891600be73e
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wudfddi/IQueueCallbackDefaultIoHandler::OnDefaultIoHandler, umdf.iqueuecallbackdefaultiohandler_ondefaultiohandler, IQueueCallbackDefaultIoHandler::OnDefaultIoHandler, IQueueCallbackDefaultIoHandler, wdf.iqueuecallbackdefaultiohandler_ondefaultiohandler, OnDefaultIoHandler, IQueueCallbackDefaultIoHandler interface, OnDefaultIoHandler method, OnDefaultIoHandler method, IQueueCallbackDefaultIoHandler interface, UMDFQueueObjectRef_21f994ea-feca-4c50-aa83-401581713c3f.xml, OnDefaultIoHandler method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Wudfddi.h
+apiname:
+-	IQueueCallbackDefaultIoHandler.OnDefaultIoHandler
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,42 +1,50 @@
 ---
-UID : NF:wdfmemory.WdfMemoryCreate
-title : WdfMemoryCreate function
-author : windows-driver-content
-description : The WdfMemoryCreate method creates a framework memory object and allocates a memory buffer of a specified size.
-old-location : wdf\wdfmemorycreate.htm
-old-project : wdf
-ms.assetid : d2071ea0-737d-4a61-90d6-614d77983f0b
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WdfMemoryCreate, DFMemoryObjectRef_53623d93-01bb-4062-b066-e884beed3f32.xml, wdfmemory/WdfMemoryCreate, WdfMemoryCreate method, kmdf.wdfmemorycreate, wdf.wdfmemorycreate
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfmemory.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2, ParentObjectCheck
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll : 
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_MEMORY_DESCRIPTOR_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfmemory.WdfMemoryCreate
+title: WdfMemoryCreate function
+author: windows-driver-content
+description: The WdfMemoryCreate method creates a framework memory object and allocates a memory buffer of a specified size.
+old-location: wdf\wdfmemorycreate.htm
+old-project: wdf
+ms.assetid: d2071ea0-737d-4a61-90d6-614d77983f0b
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WdfMemoryCreate, DFMemoryObjectRef_53623d93-01bb-4062-b066-e884beed3f32.xml, wdfmemory/WdfMemoryCreate, WdfMemoryCreate method, kmdf.wdfmemorycreate, wdf.wdfmemorycreate
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfmemory.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2, ParentObjectCheck
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll: 
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+-	WUDFx02000.dll
+-	WUDFx02000.dll.dll
+apiname:
+-	WdfMemoryCreate
+product: Windows
+targetos: Windows
+req.typenames: WDF_MEMORY_DESCRIPTOR_TYPE
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,42 +1,48 @@
 ---
-UID : NF:storport.StorPortValidateRange
-title : StorPortValidateRange function
-author : windows-driver-content
-description : The StorPortValidateRange routine determines whether a specified range of I/O addresses is in use by another adapter. This routine is obsolete in Windows NT 4.0 and later operating systems.
-old-location : storage\storportvalidaterange.htm
-old-project : storage
-ms.assetid : 505d6986-c59d-46b3-8437-29fc6a808ccd
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : StorPortValidateRange routine [Storage Devices], storprt_7d3583a5-211d-414e-880d-31c04145d3ab.xml, storport/StorPortValidateRange, StorPortValidateRange, storage.storportvalidaterange
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : StorPortDeprecated
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Storport.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STOR_SPINLOCK
-req.product : Windows 10 or later.
+UID: NF:storport.StorPortValidateRange
+title: StorPortValidateRange function
+author: windows-driver-content
+description: The StorPortValidateRange routine determines whether a specified range of I/O addresses is in use by another adapter. This routine is obsolete in Windows NT 4.0 and later operating systems.
+old-location: storage\storportvalidaterange.htm
+old-project: storage
+ms.assetid: 505d6986-c59d-46b3-8437-29fc6a808ccd
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: StorPortValidateRange routine [Storage Devices], storprt_7d3583a5-211d-414e-880d-31c04145d3ab.xml, storport/StorPortValidateRange, StorPortValidateRange, storage.storportvalidaterange
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: StorPortDeprecated
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Storport.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Storport.lib
+-	Storport.dll
+apiname:
+-	StorPortValidateRange
+product: Windows
+targetos: Windows
+req.typenames: STOR_SPINLOCK
+req.product: Windows 10 or later.
 ---
 
 

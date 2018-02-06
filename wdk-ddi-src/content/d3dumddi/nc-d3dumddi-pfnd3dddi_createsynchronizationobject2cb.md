@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_CREATESYNCHRONIZATIONOBJECT2CB
-title : PFND3DDDI_CREATESYNCHRONIZATIONOBJECT2CB
-author : windows-driver-content
-description : Creates a GPU synchronization object that a device context can signal and wait for. Used by WDDM 1.2 and later user-mode display drivers.
-old-location : display\pfncreatesynchronizationobject2cb.htm
-old-project : display
-ms.assetid : 9B0F058C-B71F-4A4F-A053-F9381A5FD3A8
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.pfncreatesynchronizationobject2cb, pfnCreateSynchronizationObject2Cb callback function [Display Devices], pfnCreateSynchronizationObject2Cb, PFND3DDDI_CREATESYNCHRONIZATIONOBJECT2CB, PFND3DDDI_CREATESYNCHRONIZATIONOBJECT2CB, d3dumddi/pfnCreateSynchronizationObject2Cb
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_CREATESYNCHRONIZATIONOBJECT2CB
+title: PFND3DDDI_CREATESYNCHRONIZATIONOBJECT2CB
+author: windows-driver-content
+description: Creates a GPU synchronization object that a device context can signal and wait for. Used by WDDM 1.2 and later user-mode display drivers.
+old-location: display\pfncreatesynchronizationobject2cb.htm
+old-project: display
+ms.assetid: 9B0F058C-B71F-4A4F-A053-F9381A5FD3A8
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.pfncreatesynchronizationobject2cb, pfnCreateSynchronizationObject2Cb callback function [Display Devices], pfnCreateSynchronizationObject2Cb, PFND3DDDI_CREATESYNCHRONIZATIONOBJECT2CB, PFND3DDDI_CREATESYNCHRONIZATIONOBJECT2CB, d3dumddi/pfnCreateSynchronizationObject2Cb
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	pfnCreateSynchronizationObject2Cb
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

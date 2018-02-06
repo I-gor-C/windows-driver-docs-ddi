@@ -1,41 +1,47 @@
 ---
-UID : NF:ksproxy.KsGetMediaType
-title : KsGetMediaType function
-author : windows-driver-content
-description : The KsGetMediaType function retrieves information about a media type on a pin factory identifier.
-old-location : stream\ksgetmediatype.htm
-old-project : stream
-ms.assetid : 4b7aac38-ab29-4cac-a7f0-896423b17400
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ksproxy/KsGetMediaType, KsGetMediaType function [Streaming Media Devices], KsGetMediaType, stream.ksgetmediatype, ksproxy_6472bffc-0280-4954-80f5-7e2ae2b2f49b.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ksproxy.h
-req.include-header : Ksproxy.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ksproxy.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PIPE_STATE
+UID: NF:ksproxy.KsGetMediaType
+title: KsGetMediaType function
+author: windows-driver-content
+description: The KsGetMediaType function retrieves information about a media type on a pin factory identifier.
+old-location: stream\ksgetmediatype.htm
+old-project: stream
+ms.assetid: 4b7aac38-ab29-4cac-a7f0-896423b17400
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ksproxy/KsGetMediaType, KsGetMediaType function [Streaming Media Devices], KsGetMediaType, stream.ksgetmediatype, ksproxy_6472bffc-0280-4954-80f5-7e2ae2b2f49b.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ksproxy.h
+req.include-header: Ksproxy.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ksproxy.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ksproxy.lib
+-	Ksproxy.dll
+apiname:
+-	KsGetMediaType
+product: Windows
+targetos: Windows
+req.typenames: PIPE_STATE
 ---
 
 

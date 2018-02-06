@@ -1,42 +1,47 @@
 ---
-UID : NC:wdm.PREENUMERATE_SELF
-title : PREENUMERATE_SELF
-author : windows-driver-content
-description : A ReenumerateSelf routine requests that a bus driver reenumerate a child device.
-old-location : kernel\reenumerateself.htm
-old-project : kernel
-ms.assetid : ee669f35-87a5-4c5e-9936-b9135a1459e1
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.reenumerateself, ReenumerateSelf routine [Kernel-Mode Driver Architecture], ReenumerateSelf, PREENUMERATE_SELF, PREENUMERATE_SELF, wdm/ReenumerateSelf, drvr_interface_208efec1-4236-441b-a4b8-45a9539e4d84.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
-req.product : Windows 10 or later.
+UID: NC:wdm.PREENUMERATE_SELF
+title: PREENUMERATE_SELF
+author: windows-driver-content
+description: A ReenumerateSelf routine requests that a bus driver reenumerate a child device.
+old-location: kernel\reenumerateself.htm
+old-project: kernel
+ms.assetid: ee669f35-87a5-4c5e-9936-b9135a1459e1
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.reenumerateself, ReenumerateSelf routine [Kernel-Mode Driver Architecture], ReenumerateSelf, PREENUMERATE_SELF, PREENUMERATE_SELF, wdm/ReenumerateSelf, drvr_interface_208efec1-4236-441b-a4b8-45a9539e4d84.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	wdm.h
+apiname:
+-	ReenumerateSelf
+product: Windows
+targetos: Windows
+req.typenames: WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+req.product: Windows 10 or later.
 ---
 
 

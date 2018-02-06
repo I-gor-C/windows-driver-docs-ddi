@@ -1,41 +1,46 @@
 ---
-UID : NC:pepfx.POFXCALLBACKUPDATEPLATFORMIDLESTATE
-title : POFXCALLBACKUPDATEPLATFORMIDLESTATE
-author : windows-driver-content
-description : The UpdatePlatformIdleState routine is called by the platform extension plug-in (PEP) to update the properties of the specified platform idle state.
-old-location : kernel\updateplatformidlestate.htm
-old-project : kernel
-ms.assetid : A5E3C5DE-DD76-41CF-8A86-37F25A069E1C
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.updateplatformidlestate, UpdatePlatformIdleState, UpdatePlatformIdleState routine [Kernel-Mode Driver Architecture], UpdatePlatformIdleState, POFXCALLBACKUPDATEPLATFORMIDLESTATE, POFXCALLBACKUPDATEPLATFORMIDLESTATE, pepfx/UpdatePlatformIdleState
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : pepfx.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with Windows 10.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VPCI_PNP_ID, *PVPCI_PNP_ID
+UID: NC:pepfx.POFXCALLBACKUPDATEPLATFORMIDLESTATE
+title: POFXCALLBACKUPDATEPLATFORMIDLESTATE
+author: windows-driver-content
+description: The UpdatePlatformIdleState routine is called by the platform extension plug-in (PEP) to update the properties of the specified platform idle state.
+old-location: kernel\updateplatformidlestate.htm
+old-project: kernel
+ms.assetid: A5E3C5DE-DD76-41CF-8A86-37F25A069E1C
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.updateplatformidlestate, UpdatePlatformIdleState, UpdatePlatformIdleState routine [Kernel-Mode Driver Architecture], UpdatePlatformIdleState, POFXCALLBACKUPDATEPLATFORMIDLESTATE, POFXCALLBACKUPDATEPLATFORMIDLESTATE, pepfx/UpdatePlatformIdleState
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: pepfx.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows 10.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	pepfx.h
+apiname:
+-	UpdatePlatformIdleState
+product: Windows
+targetos: Windows
+req.typenames: VPCI_PNP_ID, *PVPCI_PNP_ID
 ---
 
 

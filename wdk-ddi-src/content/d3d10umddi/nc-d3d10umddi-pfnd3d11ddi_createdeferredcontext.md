@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3D11DDI_CREATEDEFERREDCONTEXT
-title : PFND3D11DDI_CREATEDEFERREDCONTEXT
-author : windows-driver-content
-description : The CreateDeferredContext function creates a deferred context.
-old-location : display\createdeferredcontext.htm
-old-project : display
-ms.assetid : 464a2291-55c8-4e51-ba08-219ce426d038
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.createdeferredcontext, CreateDeferredContext callback function [Display Devices], CreateDeferredContext, PFND3D11DDI_CREATEDEFERREDCONTEXT, PFND3D11DDI_CREATEDEFERREDCONTEXT, d3d10umddi/CreateDeferredContext, UserModeDisplayDriverDx11_Functions_8de581fa-3b85-4827-bf32-f0b96d011202.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : CreateDeferredContext is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3D11DDI_CREATEDEFERREDCONTEXT
+title: PFND3D11DDI_CREATEDEFERREDCONTEXT
+author: windows-driver-content
+description: The CreateDeferredContext function creates a deferred context.
+old-location: display\createdeferredcontext.htm
+old-project: display
+ms.assetid: 464a2291-55c8-4e51-ba08-219ce426d038
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.createdeferredcontext, CreateDeferredContext callback function [Display Devices], CreateDeferredContext, PFND3D11DDI_CREATEDEFERREDCONTEXT, PFND3D11DDI_CREATEDEFERREDCONTEXT, d3d10umddi/CreateDeferredContext, UserModeDisplayDriverDx11_Functions_8de581fa-3b85-4827-bf32-f0b96d011202.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: CreateDeferredContext is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	CreateDeferredContext
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

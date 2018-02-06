@@ -1,41 +1,46 @@
 ---
-UID : NS:dxgiddi.DXGI_DDI_BASE_FUNCTIONS
-title : DXGI_DDI_BASE_FUNCTIONS
-author : windows-driver-content
-description : The DXGI_DDI_BASE_FUNCTIONS structure contains functions that the user-mode display driver can implement to perform low-level tasks like presenting rendered frames to an output, controlling gamma, and managing a full-screen transition.
-old-location : display\dxgi_ddi_base_functions.htm
-old-project : display
-ms.assetid : c9fd9b21-4338-4633-903f-308763cbc301
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : UMDisplayDriver_Dx10param_Structs_f33992c1-f203-4058-a6c4-844b2ff8ffa9.xml, dxgiddi/DXGI_DDI_BASE_FUNCTIONS, display.dxgi_ddi_base_functions, DXGI_DDI_BASE_FUNCTIONS structure [Display Devices], DXGI_DDI_BASE_FUNCTIONS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : dxgiddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGI_DDI_BASE_FUNCTIONS
+UID: NS:dxgiddi.DXGI_DDI_BASE_FUNCTIONS
+title: DXGI_DDI_BASE_FUNCTIONS
+author: windows-driver-content
+description: The DXGI_DDI_BASE_FUNCTIONS structure contains functions that the user-mode display driver can implement to perform low-level tasks like presenting rendered frames to an output, controlling gamma, and managing a full-screen transition.
+old-location: display\dxgi_ddi_base_functions.htm
+old-project: display
+ms.assetid: c9fd9b21-4338-4633-903f-308763cbc301
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: UMDisplayDriver_Dx10param_Structs_f33992c1-f203-4058-a6c4-844b2ff8ffa9.xml, dxgiddi/DXGI_DDI_BASE_FUNCTIONS, display.dxgi_ddi_base_functions, DXGI_DDI_BASE_FUNCTIONS structure [Display Devices], DXGI_DDI_BASE_FUNCTIONS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: dxgiddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	dxgiddi.h
+apiname:
+-	DXGI_DDI_BASE_FUNCTIONS
+product: Windows
+targetos: Windows
+req.typenames: DXGI_DDI_BASE_FUNCTIONS
 ---
 
 # DXGI_DDI_BASE_FUNCTIONS structure

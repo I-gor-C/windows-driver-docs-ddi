@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddvol.IOCTL_VOLUME_GET_VOLUME_DISK_EXTENTS
-title : IOCTL_VOLUME_GET_VOLUME_DISK_EXTENTS
-author : windows-driver-content
-description : Returns the physical location(s) of a volume on one or more disks.
-old-location : storage\ioctl_volume_get_volume_disk_extents.htm
-old-project : storage
-ms.assetid : d831ea36-16ee-4723-95b1-f9903106b7c0
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_volume_get_volume_disk_extents, IOCTL_VOLUME_GET_VOLUME_DISK_EXTENTS control code [Storage Devices], IOCTL_VOLUME_GET_VOLUME_DISK_EXTENTS, ntddvol/IOCTL_VOLUME_GET_VOLUME_DISK_EXTENTS, k307_8f02f744-6892-4e3f-9b23-158370e6a1e9.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddvol.h
-req.include-header : Ntddvol.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Microsoft Windows 2000 for volumes on fixed disks, but not for volumes on removable media. Available for use with removable media in Microsoft Windows 2000 SP4 and Windows XP SP1.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_WIN32K_CALLBACKS_PARAMS, *PVIDEO_WIN32K_CALLBACKS_PARAMS
+UID: NI:ntddvol.IOCTL_VOLUME_GET_VOLUME_DISK_EXTENTS
+title: IOCTL_VOLUME_GET_VOLUME_DISK_EXTENTS
+author: windows-driver-content
+description: Returns the physical location(s) of a volume on one or more disks.
+old-location: storage\ioctl_volume_get_volume_disk_extents.htm
+old-project: storage
+ms.assetid: d831ea36-16ee-4723-95b1-f9903106b7c0
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_volume_get_volume_disk_extents, IOCTL_VOLUME_GET_VOLUME_DISK_EXTENTS control code [Storage Devices], IOCTL_VOLUME_GET_VOLUME_DISK_EXTENTS, ntddvol/IOCTL_VOLUME_GET_VOLUME_DISK_EXTENTS, k307_8f02f744-6892-4e3f-9b23-158370e6a1e9.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddvol.h
+req.include-header: Ntddvol.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Microsoft Windows 2000 for volumes on fixed disks, but not for volumes on removable media. Available for use with removable media in Microsoft Windows 2000 SP4 and Windows XP SP1.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddvol.h
+apiname:
+-	IOCTL_VOLUME_GET_VOLUME_DISK_EXTENTS
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_WIN32K_CALLBACKS_PARAMS, *PVIDEO_WIN32K_CALLBACKS_PARAMS
 ---
 
 # IOCTL_VOLUME_GET_VOLUME_DISK_EXTENTS IOCTL

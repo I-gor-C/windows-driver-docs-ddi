@@ -1,41 +1,46 @@
 ---
-UID : NS:ks.KSPROPERTY_POSITIONS
-title : KSPROPERTY_POSITIONS
-author : windows-driver-content
-description : The KSPROPERTY_POSITIONS structure specifies the current position and stop position, relative to the total duration of the stream.
-old-location : stream\ksproperty_positions.htm
-old-project : stream
-ms.assetid : 869d3a3f-e2f8-4c23-864b-d40f3e67a9ec
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : "*PKSPROPERTY_POSITIONS, ks/PKSPROPERTY_POSITIONS, ks/KSPROPERTY_POSITIONS, stream.ksproperty_positions, ks-struct_97829290-4c01-4a03-b56b-3e5915941094.xml, KSPROPERTY_POSITIONS structure [Streaming Media Devices], KSPROPERTY_POSITIONS, PKSPROPERTY_POSITIONS, PKSPROPERTY_POSITIONS structure pointer [Streaming Media Devices]"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKSPROPERTY_POSITIONS, KSPROPERTY_POSITIONS"
+UID: NS:ks.KSPROPERTY_POSITIONS
+title: KSPROPERTY_POSITIONS
+author: windows-driver-content
+description: The KSPROPERTY_POSITIONS structure specifies the current position and stop position, relative to the total duration of the stream.
+old-location: stream\ksproperty_positions.htm
+old-project: stream
+ms.assetid: 869d3a3f-e2f8-4c23-864b-d40f3e67a9ec
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: "*PKSPROPERTY_POSITIONS, ks/PKSPROPERTY_POSITIONS, ks/KSPROPERTY_POSITIONS, stream.ksproperty_positions, ks-struct_97829290-4c01-4a03-b56b-3e5915941094.xml, KSPROPERTY_POSITIONS structure [Streaming Media Devices], KSPROPERTY_POSITIONS, PKSPROPERTY_POSITIONS, PKSPROPERTY_POSITIONS structure pointer [Streaming Media Devices]"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	KSPROPERTY_POSITIONS
+product: Windows
+targetos: Windows
+req.typenames: "*PKSPROPERTY_POSITIONS, KSPROPERTY_POSITIONS"
 ---
 
 # KSPROPERTY_POSITIONS structure

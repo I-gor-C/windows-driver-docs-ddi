@@ -1,42 +1,47 @@
 ---
-UID : NF:video.VideoPortWaitForSingleObject
-title : VideoPortWaitForSingleObject function
-author : windows-driver-content
-description : The VideoPortWaitForSingleObject function puts the current thread into a wait state until the given dispatch object is set to the signaled state, or (optionally) until the wait times out.
-old-location : display\videoportwaitforsingleobject.htm
-old-project : display
-ms.assetid : 574aa79e-c8ef-44de-8d0b-a550698a32e0
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : VideoPortWaitForSingleObject function [Display Devices], display.videoportwaitforsingleobject, VideoPort_Functions_a1678f59-0c1c-4b0a-b1e6-2dbb71c8a7c2.xml, video/VideoPortWaitForSingleObject, VideoPortWaitForSingleObject
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows XP and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Videoprt.lib
-req.dll : Videoprt.sys
-req.irql : "<= DISPATCH_LEVEL (see Remarks section)"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_PORT_SERVICES
-req.product : Windows 10 or later.
+UID: NF:video.VideoPortWaitForSingleObject
+title: VideoPortWaitForSingleObject function
+author: windows-driver-content
+description: The VideoPortWaitForSingleObject function puts the current thread into a wait state until the given dispatch object is set to the signaled state, or (optionally) until the wait times out.
+old-location: display\videoportwaitforsingleobject.htm
+old-project: display
+ms.assetid: 574aa79e-c8ef-44de-8d0b-a550698a32e0
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: VideoPortWaitForSingleObject function [Display Devices], display.videoportwaitforsingleobject, VideoPort_Functions_a1678f59-0c1c-4b0a-b1e6-2dbb71c8a7c2.xml, video/VideoPortWaitForSingleObject, VideoPortWaitForSingleObject
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows XP and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Videoprt.lib
+req.dll: Videoprt.sys
+req.irql: "<= DISPATCH_LEVEL (see Remarks section)"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Videoprt.sys
+apiname:
+-	VideoPortWaitForSingleObject
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_PORT_SERVICES
+req.product: Windows 10 or later.
 ---
 
 

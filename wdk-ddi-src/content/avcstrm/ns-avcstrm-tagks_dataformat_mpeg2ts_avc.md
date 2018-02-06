@@ -1,41 +1,46 @@
 ---
-UID : NS:avcstrm.tagKS_DATAFORMAT_MPEG2TS_AVC
-title : tagKS_DATAFORMAT_MPEG2TS_AVC
-author : windows-driver-content
-description : The KS_DATAFORMAT_MPEG2TS_AVC structure stores the data format for an AV/C MPEG2 connection.
-old-location : stream\ks_dataformat_mpeg2ts_avc.htm
-old-project : stream
-ms.assetid : 17768308-d92d-4033-aee8-2d52ce1e51fd
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : tagKS_DATAFORMAT_MPEG2TS_AVC, stream.ks_dataformat_mpeg2ts_avc, avcsref_1c04182d-3d89-4db1-9b5f-7fdbc3e62c47.xml, avcstrm/PKS_DATAFORMAT_MPEG2TS_AVC, PKS_DATAFORMAT_MPEG2TS_AVC structure pointer [Streaming Media Devices], *PKS_DATAFORMAT_MPEG2TS_AVC, KS_DATAFORMAT_MPEG2TS_AVC, PKS_DATAFORMAT_MPEG2TS_AVC, KS_DATAFORMAT_MPEG2TS_AVC structure [Streaming Media Devices], avcstrm/KS_DATAFORMAT_MPEG2TS_AVC
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : avcstrm.h
-req.include-header : Avcstrm.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKS_DATAFORMAT_MPEG2TS_AVC, KS_DATAFORMAT_MPEG2TS_AVC"
+UID: NS:avcstrm.tagKS_DATAFORMAT_MPEG2TS_AVC
+title: tagKS_DATAFORMAT_MPEG2TS_AVC
+author: windows-driver-content
+description: The KS_DATAFORMAT_MPEG2TS_AVC structure stores the data format for an AV/C MPEG2 connection.
+old-location: stream\ks_dataformat_mpeg2ts_avc.htm
+old-project: stream
+ms.assetid: 17768308-d92d-4033-aee8-2d52ce1e51fd
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: tagKS_DATAFORMAT_MPEG2TS_AVC, stream.ks_dataformat_mpeg2ts_avc, avcsref_1c04182d-3d89-4db1-9b5f-7fdbc3e62c47.xml, avcstrm/PKS_DATAFORMAT_MPEG2TS_AVC, PKS_DATAFORMAT_MPEG2TS_AVC structure pointer [Streaming Media Devices], *PKS_DATAFORMAT_MPEG2TS_AVC, KS_DATAFORMAT_MPEG2TS_AVC, PKS_DATAFORMAT_MPEG2TS_AVC, KS_DATAFORMAT_MPEG2TS_AVC structure [Streaming Media Devices], avcstrm/KS_DATAFORMAT_MPEG2TS_AVC
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: avcstrm.h
+req.include-header: Avcstrm.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	avcstrm.h
+apiname:
+-	KS_DATAFORMAT_MPEG2TS_AVC
+product: Windows
+targetos: Windows
+req.typenames: "*PKS_DATAFORMAT_MPEG2TS_AVC, KS_DATAFORMAT_MPEG2TS_AVC"
 ---
 
 # tagKS_DATAFORMAT_MPEG2TS_AVC structure

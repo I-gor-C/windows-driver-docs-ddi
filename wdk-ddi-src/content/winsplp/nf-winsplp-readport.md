@@ -1,42 +1,47 @@
 ---
-UID : NF:winsplp.ReadPort
-title : ReadPort function
-author : windows-driver-content
-description : A port monitor's ReadPort function reads data from a printer port.
-old-location : print\readport.htm
-old-project : print
-ms.assetid : ab1fb259-edcb-4e19-9afb-18aa6688764a
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : winsplp/ReadPort, ReadPort, print.readport, spoolfnc_f4b817ce-afeb-4d3f-b8ce-e060b8de8143.xml, ReadPort function [Print Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : winsplp.h
-req.include-header : Winsplp.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NOTIFICATION_CONFIG_FLAGS
-req.product : Windows 10 or later.
+UID: NF:winsplp.ReadPort
+title: ReadPort function
+author: windows-driver-content
+description: A port monitor's ReadPort function reads data from a printer port.
+old-location: print\readport.htm
+old-project: print
+ms.assetid: ab1fb259-edcb-4e19-9afb-18aa6688764a
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: winsplp/ReadPort, ReadPort, print.readport, spoolfnc_f4b817ce-afeb-4d3f-b8ce-e060b8de8143.xml, ReadPort function [Print Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: winsplp.h
+req.include-header: Winsplp.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	winsplp.h
+apiname:
+-	ReadPort
+product: Windows
+targetos: Windows
+req.typenames: NOTIFICATION_CONFIG_FLAGS
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NF:rxce.RxCeBuildAddress
-title : RxCeBuildAddress function
-author : windows-driver-content
-description : RxCeBuildAddress associates a transport address with a transport binding.
-old-location : ifsk\rxcebuildaddress.htm
-old-project : ifsk
-ms.assetid : e8845b15-4427-45ea-9192-352d82c89c6a
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : rxce/RxCeBuildAddress, rxref_ee32329f-3111-4ee6-869f-2b8e21d6696c.xml, ifsk.rxcebuildaddress, RxCeBuildAddress, RxCeBuildAddress function [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : rxce.h
-req.include-header : Rxce.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*LPRILWRITEPHONEBOOKENTRYPARAMS, RILWRITEPHONEBOOKENTRYPARAMS"
-req.product : Windows 10 or later.
+UID: NF:rxce.RxCeBuildAddress
+title: RxCeBuildAddress function
+author: windows-driver-content
+description: RxCeBuildAddress associates a transport address with a transport binding.
+old-location: ifsk\rxcebuildaddress.htm
+old-project: ifsk
+ms.assetid: e8845b15-4427-45ea-9192-352d82c89c6a
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: rxce/RxCeBuildAddress, rxref_ee32329f-3111-4ee6-869f-2b8e21d6696c.xml, ifsk.rxcebuildaddress, RxCeBuildAddress, RxCeBuildAddress function [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: rxce.h
+req.include-header: Rxce.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	rxce.h
+apiname:
+-	RxCeBuildAddress
+product: Windows
+targetos: Windows
+req.typenames: "*LPRILWRITEPHONEBOOKENTRYPARAMS, RILWRITEPHONEBOOKENTRYPARAMS"
+req.product: Windows 10 or later.
 ---
 
 

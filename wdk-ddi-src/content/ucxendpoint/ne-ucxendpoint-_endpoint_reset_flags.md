@@ -1,42 +1,47 @@
 ---
-UID : NE:ucxendpoint._ENDPOINT_RESET_FLAGS
-title : "_ENDPOINT_RESET_FLAGS"
-author : windows-driver-content
-description : Defines parameters for a request to reset an endpoint.
-old-location : buses\endpoint_reset_flags.htm
-old-project : usbref
-ms.assetid : 3775836D-DC1E-47B4-8186-2AC329825FCE
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : FlagEndpointResetPreserveTransferState, ENDPOINT_RESET_FLAGS, ucxendpoint/ENDPOINT_RESET_FLAGS, _ENDPOINT_RESET_FLAGS, ucxendpoint/FlagEndpointResetPreserveTransferState, buses.endpoint_reset_flags, ENDPOINT_RESET_FLAGS enumeration [Buses]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : ucxendpoint.h
-req.include-header : Ucxclass.h, Ucxendpoint.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : DISPATCH_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : ENDPOINT_RESET_FLAGS
-req.product : Windows 10 or later.
+UID: NE:ucxendpoint._ENDPOINT_RESET_FLAGS
+title: "_ENDPOINT_RESET_FLAGS"
+author: windows-driver-content
+description: Defines parameters for a request to reset an endpoint.
+old-location: buses\endpoint_reset_flags.htm
+old-project: usbref
+ms.assetid: 3775836D-DC1E-47B4-8186-2AC329825FCE
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: FlagEndpointResetPreserveTransferState, ENDPOINT_RESET_FLAGS, ucxendpoint/ENDPOINT_RESET_FLAGS, _ENDPOINT_RESET_FLAGS, ucxendpoint/FlagEndpointResetPreserveTransferState, buses.endpoint_reset_flags, ENDPOINT_RESET_FLAGS enumeration [Buses]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: ucxendpoint.h
+req.include-header: Ucxclass.h, Ucxendpoint.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: DISPATCH_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ucxendpoint.h
+apiname:
+-	ENDPOINT_RESET_FLAGS
+product: Windows
+targetos: Windows
+req.typenames: ENDPOINT_RESET_FLAGS
+req.product: Windows 10 or later.
 ---
 
 # _ENDPOINT_RESET_FLAGS Enumeration
@@ -52,11 +57,11 @@ typedef enum _ENDPOINT_RESET_FLAGS {
 ## Constants
 
 <table>
-
-<tr>
-<td>FlagEndpointResetPreserveTransferState</td>
-<td>The transfer state must be preserved after the endpoint reset operation is complete.</td>
-</tr>
+            
+                <tr>
+                    <td>FlagEndpointResetPreserveTransferState</td>
+                    <td>The transfer state must be preserved after the endpoint reset operation is complete.</td>
+                </tr>
 </table>
 
 
@@ -65,9 +70,9 @@ typedef enum _ENDPOINT_RESET_FLAGS {
 | ---- |:---- |
 | **Header** | ucxendpoint.h (include Ucxclass.h, Ucxendpoint.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\ucxendpoint\nc-ucxendpoint-evt_ucx_endpoint_reset.md">EVT_UCX_ENDPOINT_RESET</a>
+        <a href="..\ucxendpoint\nc-ucxendpoint-evt_ucx_endpoint_reset.md">EVT_UCX_ENDPOINT_RESET</a>
 
 <a href="..\ucxendpoint\ns-ucxendpoint-_endpoint_reset.md">ENDPOINT_RESET</a>
 

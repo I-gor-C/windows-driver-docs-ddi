@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltGetVolumeInstanceFromName
-title : FltGetVolumeInstanceFromName function
-author : windows-driver-content
-description : The FltGetVolumeInstanceFromName routine returns an opaque instance pointer for the given minifilter driver instance on the given volume.
-old-location : ifsk\fltgetvolumeinstancefromname.htm
-old-project : ifsk
-ms.assetid : 25455faa-2197-4b2a-bce8-db9764153e51
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : fltkernel/FltGetVolumeInstanceFromName, FltGetVolumeInstanceFromName, FltApiRef_e_to_o_78e7987d-7f24-4c51-b263-502005595c6d.xml, ifsk.fltgetvolumeinstancefromname, FltGetVolumeInstanceFromName routine [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltGetVolumeInstanceFromName
+title: FltGetVolumeInstanceFromName function
+author: windows-driver-content
+description: The FltGetVolumeInstanceFromName routine returns an opaque instance pointer for the given minifilter driver instance on the given volume.
+old-location: ifsk\fltgetvolumeinstancefromname.htm
+old-project: ifsk
+ms.assetid: 25455faa-2197-4b2a-bce8-db9764153e51
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: fltkernel/FltGetVolumeInstanceFromName, FltGetVolumeInstanceFromName, FltApiRef_e_to_o_78e7987d-7f24-4c51-b263-502005595c6d.xml, ifsk.fltgetvolumeinstancefromname, FltGetVolumeInstanceFromName routine [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltGetVolumeInstanceFromName
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

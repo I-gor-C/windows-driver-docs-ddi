@@ -1,41 +1,46 @@
 ---
-UID : NF:ntddk.RtlLookupElementGenericTableFullAvl
-title : RtlLookupElementGenericTableFullAvl function
-author : windows-driver-content
-description : The RtlLookupElementGenericTableFullAvl routine searches a generic table for an element that matches the specified data.
-old-location : ifsk\rtllookupelementgenerictablefullavl.htm
-old-project : ifsk
-ms.assetid : fddb2e23-ddb3-48bc-a94e-0ca9a8580b78
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.rtllookupelementgenerictablefullavl, RtlLookupElementGenericTableFullAvl routine [Installable File System Drivers], ntddk/RtlLookupElementGenericTableFullAvl, rtlref_12eb0cb8-ea58-45a8-a88b-ceddc5af12c6.xml, RtlLookupElementGenericTableFullAvl
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntddk.h
-req.include-header : Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows XP.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "< DISPATCH_LEVEL (see Remarks section)"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.RtlLookupElementGenericTableFullAvl
+title: RtlLookupElementGenericTableFullAvl function
+author: windows-driver-content
+description: The RtlLookupElementGenericTableFullAvl routine searches a generic table for an element that matches the specified data.
+old-location: ifsk\rtllookupelementgenerictablefullavl.htm
+old-project: ifsk
+ms.assetid: fddb2e23-ddb3-48bc-a94e-0ca9a8580b78
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.rtllookupelementgenerictablefullavl, RtlLookupElementGenericTableFullAvl routine [Installable File System Drivers], ntddk/RtlLookupElementGenericTableFullAvl, rtlref_12eb0cb8-ea58-45a8-a88b-ceddc5af12c6.xml, RtlLookupElementGenericTableFullAvl
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntddk.h
+req.include-header: Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows XP.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "< DISPATCH_LEVEL (see Remarks section)"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	RtlLookupElementGenericTableFullAvl
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

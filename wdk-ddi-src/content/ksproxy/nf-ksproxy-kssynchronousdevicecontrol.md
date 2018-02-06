@@ -1,41 +1,47 @@
 ---
-UID : NF:ksproxy.KsSynchronousDeviceControl
-title : KsSynchronousDeviceControl function
-author : windows-driver-content
-description : The KsSynchronousDeviceControl function issues a synchronous device I/O control operation to the KS object that is specified by a file handle.
-old-location : stream\kssynchronousdevicecontrol.htm
-old-project : stream
-ms.assetid : 82c8f0c0-d9df-4f0d-8a45-dda8fa8a132a
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KsSynchronousDeviceControl function [Streaming Media Devices], ksproxy_5bfad2d0-2ee7-476d-a67b-e7c877505280.xml, stream.kssynchronousdevicecontrol, KsSynchronousDeviceControl, ksproxy/KsSynchronousDeviceControl
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ksproxy.h
-req.include-header : Ksproxy.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ksproxy.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PIPE_STATE
+UID: NF:ksproxy.KsSynchronousDeviceControl
+title: KsSynchronousDeviceControl function
+author: windows-driver-content
+description: The KsSynchronousDeviceControl function issues a synchronous device I/O control operation to the KS object that is specified by a file handle.
+old-location: stream\kssynchronousdevicecontrol.htm
+old-project: stream
+ms.assetid: 82c8f0c0-d9df-4f0d-8a45-dda8fa8a132a
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KsSynchronousDeviceControl function [Streaming Media Devices], ksproxy_5bfad2d0-2ee7-476d-a67b-e7c877505280.xml, stream.kssynchronousdevicecontrol, KsSynchronousDeviceControl, ksproxy/KsSynchronousDeviceControl
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ksproxy.h
+req.include-header: Ksproxy.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ksproxy.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ksproxy.lib
+-	Ksproxy.dll
+apiname:
+-	KsSynchronousDeviceControl
+product: Windows
+targetos: Windows
+req.typenames: PIPE_STATE
 ---
 
 

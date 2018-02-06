@@ -1,42 +1,47 @@
 ---
-UID : NF:wiamindr_lh.IWiaMiniDrv.drvLockWiaDevice
-title : IWiaMiniDrv::drvLockWiaDevice method
-author : windows-driver-content
-description : The IWiaMiniDrv::drvLockWiaDevice method locks the WIA hardware device so that only the current minidriver can access it.
-old-location : image\iwiaminidrv_drvlockwiadevice.htm
-old-project : image
-ms.assetid : 674e0a65-1763-41b0-896b-2ef9debc32a5
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : drvLockWiaDevice, IWiaMiniDrv::drvLockWiaDevice, IWiaMiniDrv, wiamindr_lh/IWiaMiniDrv::drvLockWiaDevice, image.iwiaminidrv_drvlockwiadevice, drvLockWiaDevice method [Imaging Devices], drvLockWiaDevice method [Imaging Devices], IWiaMiniDrv interface, IWiaMiniDrv interface [Imaging Devices], drvLockWiaDevice method, MiniDrv_5ae2a5c5-524c-46ce-8ae4-d8edd5d76fcc.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wiamindr_lh.h
-req.include-header : Wiamindr.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Me and in Windows XP and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wiamindr_lh.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SCANWINDOW, *PSCANWINDOW
-req.product : Windows 10 or later.
+UID: NF:wiamindr_lh.IWiaMiniDrv.drvLockWiaDevice
+title: IWiaMiniDrv::drvLockWiaDevice method
+author: windows-driver-content
+description: The IWiaMiniDrv::drvLockWiaDevice method locks the WIA hardware device so that only the current minidriver can access it.
+old-location: image\iwiaminidrv_drvlockwiadevice.htm
+old-project: image
+ms.assetid: 674e0a65-1763-41b0-896b-2ef9debc32a5
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: drvLockWiaDevice, IWiaMiniDrv::drvLockWiaDevice, IWiaMiniDrv, wiamindr_lh/IWiaMiniDrv::drvLockWiaDevice, image.iwiaminidrv_drvlockwiadevice, drvLockWiaDevice method [Imaging Devices], drvLockWiaDevice method [Imaging Devices], IWiaMiniDrv interface, IWiaMiniDrv interface [Imaging Devices], drvLockWiaDevice method, MiniDrv_5ae2a5c5-524c-46ce-8ae4-d8edd5d76fcc.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wiamindr_lh.h
+req.include-header: Wiamindr.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Me and in Windows XP and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wiamindr_lh.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	wiamindr_lh.h
+apiname:
+-	IWiaMiniDrv.drvLockWiaDevice
+product: Windows
+targetos: Windows
+req.typenames: SCANWINDOW, *PSCANWINDOW
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:dxva._DXVA_ConfigAlphaLoad
-title : "_DXVA_ConfigAlphaLoad"
-author : windows-driver-content
-description : The DXVA_ConfigAlphaLoad structure is sent by the host decoder to the accelerator to set the configuration for alpha-blend, texture-loading operations.
-old-location : display\dxva_configalphaload.htm
-old-project : display
-ms.assetid : 0754c362-57b8-40e8-a050-c9dded5180c1
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DXVA_ConfigAlphaLoad, dxva/DXVA_ConfigAlphaLoad, dxva/LPDXVA_ConfigAlphaLoad, LPDXVA_ConfigAlphaLoad, _DXVA_ConfigAlphaLoad, *LPDXVA_ConfigAlphaLoad, DXVA_ConfigAlphaLoad structure [Display Devices], LPDXVA_ConfigAlphaLoad structure pointer [Display Devices], dxvaref_c813af12-264d-44c6-bebb-1b93f20c545d.xml, display.dxva_configalphaload
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : dxva.h
-req.include-header : Dxva.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*LPDXVA_ConfigAlphaLoad, DXVA_ConfigAlphaLoad"
+UID: NS:dxva._DXVA_ConfigAlphaLoad
+title: "_DXVA_ConfigAlphaLoad"
+author: windows-driver-content
+description: The DXVA_ConfigAlphaLoad structure is sent by the host decoder to the accelerator to set the configuration for alpha-blend, texture-loading operations.
+old-location: display\dxva_configalphaload.htm
+old-project: display
+ms.assetid: 0754c362-57b8-40e8-a050-c9dded5180c1
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DXVA_ConfigAlphaLoad, dxva/DXVA_ConfigAlphaLoad, dxva/LPDXVA_ConfigAlphaLoad, LPDXVA_ConfigAlphaLoad, _DXVA_ConfigAlphaLoad, *LPDXVA_ConfigAlphaLoad, DXVA_ConfigAlphaLoad structure [Display Devices], LPDXVA_ConfigAlphaLoad structure pointer [Display Devices], dxvaref_c813af12-264d-44c6-bebb-1b93f20c545d.xml, display.dxva_configalphaload
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: dxva.h
+req.include-header: Dxva.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	dxva.h
+apiname:
+-	DXVA_ConfigAlphaLoad
+product: Windows
+targetos: Windows
+req.typenames: "*LPDXVA_ConfigAlphaLoad, DXVA_ConfigAlphaLoad"
 ---
 
 # _DXVA_ConfigAlphaLoad structure

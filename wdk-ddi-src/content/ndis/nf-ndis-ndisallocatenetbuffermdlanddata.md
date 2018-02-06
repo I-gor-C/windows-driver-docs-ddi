@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisAllocateNetBufferMdlAndData
-title : NdisAllocateNetBufferMdlAndData function
-author : windows-driver-content
-description : NDIS drivers call the NdisAllocateNetBufferMdlAndData function to allocate a NET_BUFFER structure along with the associated MDL and data.
-old-location : netvista\ndisallocatenetbuffermdlanddata.htm
-old-project : netvista
-ms.assetid : cfac9061-a685-4e67-aaa2-ca43b7e36cfa
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.ndisallocatenetbuffermdlanddata, ndis_netbuf_functions_ref_4f5d872d-11c1-4d75-889c-0c2157ce5f2e.xml, ndis/NdisAllocateNetBufferMdlAndData, NdisAllocateNetBufferMdlAndData, NdisAllocateNetBufferMdlAndData function [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_NetBuffer_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisAllocateNetBufferMdlAndData
+title: NdisAllocateNetBufferMdlAndData function
+author: windows-driver-content
+description: NDIS drivers call the NdisAllocateNetBufferMdlAndData function to allocate a NET_BUFFER structure along with the associated MDL and data.
+old-location: netvista\ndisallocatenetbuffermdlanddata.htm
+old-project: netvista
+ms.assetid: cfac9061-a685-4e67-aaa2-ca43b7e36cfa
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.ndisallocatenetbuffermdlanddata, ndis_netbuf_functions_ref_4f5d872d-11c1-4d75-889c-0c2157ce5f2e.xml, ndis/NdisAllocateNetBufferMdlAndData, NdisAllocateNetBufferMdlAndData, NdisAllocateNetBufferMdlAndData function [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_NetBuffer_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisAllocateNetBufferMdlAndData
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

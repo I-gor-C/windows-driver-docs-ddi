@@ -1,41 +1,46 @@
 ---
-UID : NC:ntddk.PSHED_PI_CLEAR_ERROR_RECORD
-title : PSHED_PI_CLEAR_ERROR_RECORD
-author : windows-driver-content
-description : A PSHED plug-in's ClearErrorRecord callback function clears the specified error record from the system's persistent data storage.
-old-location : whea\clearerrorrecord.htm
-old-project : whea
-ms.assetid : e9893f9c-7fbd-4a02-8c2d-d7c480ed5198
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : whea.clearerrorrecord, ClearErrorRecord callback function [WHEA Drivers and Applications], ClearErrorRecord, PSHED_PI_CLEAR_ERROR_RECORD, PSHED_PI_CLEAR_ERROR_RECORD, ntddk/ClearErrorRecord, whearef_1644b60c-c232-4cca-805b-d6a061425f61.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PFILTER_INITIALIZATION_DATA, FILTER_INITIALIZATION_DATA"
+UID: NC:ntddk.PSHED_PI_CLEAR_ERROR_RECORD
+title: PSHED_PI_CLEAR_ERROR_RECORD
+author: windows-driver-content
+description: A PSHED plug-in's ClearErrorRecord callback function clears the specified error record from the system's persistent data storage.
+old-location: whea\clearerrorrecord.htm
+old-project: whea
+ms.assetid: e9893f9c-7fbd-4a02-8c2d-d7c480ed5198
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: whea.clearerrorrecord, ClearErrorRecord callback function [WHEA Drivers and Applications], ClearErrorRecord, PSHED_PI_CLEAR_ERROR_RECORD, PSHED_PI_CLEAR_ERROR_RECORD, ntddk/ClearErrorRecord, whearef_1644b60c-c232-4cca-805b-d6a061425f61.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ntddk.h
+apiname:
+-	ClearErrorRecord
+product: Windows
+targetos: Windows
+req.typenames: "*PFILTER_INITIALIZATION_DATA, FILTER_INITIALIZATION_DATA"
 ---
 
 

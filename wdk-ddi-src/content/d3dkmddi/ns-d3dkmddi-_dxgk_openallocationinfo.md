@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGK_OPENALLOCATIONINFO
-title : "_DXGK_OPENALLOCATIONINFO"
-author : windows-driver-content
-description : The DXGK_OPENALLOCATIONINFO structure contains handles to nondevice-specific and device-specific allocations that the DxgkDdiOpenAllocation function associates.
-old-location : display\dxgk_openallocationinfo.htm
-old-project : display
-ms.assetid : e23b7e4e-e670-4421-aa2f-4389a74a7d6d
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgk_openallocationinfo, _DXGK_OPENALLOCATIONINFO, DXGK_OPENALLOCATIONINFO, DXGK_OPENALLOCATIONINFO structure [Display Devices], d3dkmddi/DXGK_OPENALLOCATIONINFO, DmStructs_e03247bd-d6b8-42df-ac22-79d906d7c852.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_OPENALLOCATIONINFO
+UID: NS:d3dkmddi._DXGK_OPENALLOCATIONINFO
+title: "_DXGK_OPENALLOCATIONINFO"
+author: windows-driver-content
+description: The DXGK_OPENALLOCATIONINFO structure contains handles to nondevice-specific and device-specific allocations that the DxgkDdiOpenAllocation function associates.
+old-location: display\dxgk_openallocationinfo.htm
+old-project: display
+ms.assetid: e23b7e4e-e670-4421-aa2f-4389a74a7d6d
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgk_openallocationinfo, _DXGK_OPENALLOCATIONINFO, DXGK_OPENALLOCATIONINFO, DXGK_OPENALLOCATIONINFO structure [Display Devices], d3dkmddi/DXGK_OPENALLOCATIONINFO, DmStructs_e03247bd-d6b8-42df-ac22-79d906d7c852.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DXGK_OPENALLOCATIONINFO
+product: Windows
+targetos: Windows
+req.typenames: DXGK_OPENALLOCATIONINFO
 ---
 
 # _DXGK_OPENALLOCATIONINFO structure

@@ -1,42 +1,47 @@
 ---
-UID : NE:printerextension.tagPrintJobStatus
-title : tagPrintJobStatus
-author : windows-driver-content
-description : This enumeration is a one-to-one mapping to the spooler flags suppled in the JOB_INFO_X structures.
-old-location : print\printjobstatus.htm
-old-project : print
-ms.assetid : 856FDAE1-C1D9-458D-B386-0A2D8612EA33
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : PrintJobStatus_Printing, tagPrintJobStatus, PrintJobStatus_BlockedDeviceQueue, printerextension/PrintJobStatus_Paused, printerextension/PrintJobStatus_Deleting, printerextension/PrintJobStatus_Printed, PrintJobStatus_Retained, PrintJobStatus_PaperOut, printerextension/PrintJobStatus, printerextension/PrintJobStatus_Spooling, PrintJobStatus_Deleted, printerextension/PrintJobStatus_Deleted, PrintJobStatus_Deleting, PrintJobStatus_Error, printerextension/PrintJobStatus_Error, PrintJobStatus_UserIntervention, printerextension/PrintJobStatus_PaperOut, print.printjobstatus, printerextension/PrintJobStatus_BlockedDeviceQueue, printerextension/PrintJobStatus_Restarted, printerextension/PrintJobStatus_Printing, PrintJobStatus_Spooling, PrintJobStatus_Offline, printerextension/PrintJobStatus_UserIntervention, PrintJobStatus_Paused, PrintJobStatus, printerextension/PrintJobStatus_Complete, PrintJobStatus_Restarted, printerextension/PrintJobStatus_Offline, PrintJobStatus_Complete, PrintJobStatus_Printed, printerextension/PrintJobStatus_Retained, PrintJobStatus enumeration [Print Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : printerextension.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8.1
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PrintJobStatus
-req.product : Windows 10 or later.
+UID: NE:printerextension.tagPrintJobStatus
+title: tagPrintJobStatus
+author: windows-driver-content
+description: This enumeration is a one-to-one mapping to the spooler flags suppled in the JOB_INFO_X structures.
+old-location: print\printjobstatus.htm
+old-project: print
+ms.assetid: 856FDAE1-C1D9-458D-B386-0A2D8612EA33
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: PrintJobStatus_Printing, tagPrintJobStatus, PrintJobStatus_BlockedDeviceQueue, printerextension/PrintJobStatus_Paused, printerextension/PrintJobStatus_Deleting, printerextension/PrintJobStatus_Printed, PrintJobStatus_Retained, PrintJobStatus_PaperOut, printerextension/PrintJobStatus, printerextension/PrintJobStatus_Spooling, PrintJobStatus_Deleted, printerextension/PrintJobStatus_Deleted, PrintJobStatus_Deleting, PrintJobStatus_Error, printerextension/PrintJobStatus_Error, PrintJobStatus_UserIntervention, printerextension/PrintJobStatus_PaperOut, print.printjobstatus, printerextension/PrintJobStatus_BlockedDeviceQueue, printerextension/PrintJobStatus_Restarted, printerextension/PrintJobStatus_Printing, PrintJobStatus_Spooling, PrintJobStatus_Offline, printerextension/PrintJobStatus_UserIntervention, PrintJobStatus_Paused, PrintJobStatus, printerextension/PrintJobStatus_Complete, PrintJobStatus_Restarted, printerextension/PrintJobStatus_Offline, PrintJobStatus_Complete, PrintJobStatus_Printed, printerextension/PrintJobStatus_Retained, PrintJobStatus enumeration [Print Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: printerextension.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8.1
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Printerextension.h
+apiname:
+-	PrintJobStatus
+product: Windows
+targetos: Windows
+req.typenames: PrintJobStatus
+req.product: Windows 10 or later.
 ---
 
 # tagPrintJobStatus Enumeration
@@ -67,81 +72,81 @@ typedef enum _PrintJobStatus {
 ## Constants
 
 <table>
-
-<tr>
-<td>PrintJobStatus_BlockedDeviceQueue</td>
-<td>The driver cannot print the job.</td>
-</tr>
-
-<tr>
-<td>PrintJobStatus_Complete</td>
-<td>The job data transfer to the printer is complete. Note that  the printing of the job may not yet be complete.</td>
-</tr>
-
-<tr>
-<td>PrintJobStatus_Deleted</td>
-<td>The job has been deleted.</td>
-</tr>
-
-<tr>
-<td>PrintJobStatus_Deleting</td>
-<td>The job is being deleted.</td>
-</tr>
-
-<tr>
-<td>PrintJobStatus_Error</td>
-<td>There is an error associated with the job.</td>
-</tr>
-
-<tr>
-<td>PrintJobStatus_Offline</td>
-<td>The printer is offline.</td>
-</tr>
-
-<tr>
-<td>PrintJobStatus_PaperOut</td>
-<td>The printer is out of paper.</td>
-</tr>
-
-<tr>
-<td>PrintJobStatus_Paused</td>
-<td>The job is paused.</td>
-</tr>
-
-<tr>
-<td>PrintJobStatus_Printed</td>
-<td>The job printing is completed.</td>
-</tr>
-
-<tr>
-<td>PrintJobStatus_Printing</td>
-<td>The job is printing.</td>
-</tr>
-
-<tr>
-<td>PrintJobStatus_Restarted</td>
-<td>The job has been restarted.</td>
-</tr>
-
-<tr>
-<td>PrintJobStatus_Retained</td>
-<td>The job has been retained in the print queue and cannot be deleted.</td>
-</tr>
-
-<tr>
-<td>PrintJobStatus_Spooling</td>
-<td>The job is spooling.</td>
-</tr>
-
-<tr>
-<td>PrintJobStatus_UserIntervention</td>
-<td>The printer has an error that requires intervention from the user.</td>
-</tr>
+            
+                <tr>
+                    <td>PrintJobStatus_BlockedDeviceQueue</td>
+                    <td>The driver cannot print the job.</td>
+                </tr>
+            
+                <tr>
+                    <td>PrintJobStatus_Complete</td>
+                    <td>The job data transfer to the printer is complete. Note that  the printing of the job may not yet be complete.</td>
+                </tr>
+            
+                <tr>
+                    <td>PrintJobStatus_Deleted</td>
+                    <td>The job has been deleted.</td>
+                </tr>
+            
+                <tr>
+                    <td>PrintJobStatus_Deleting</td>
+                    <td>The job is being deleted.</td>
+                </tr>
+            
+                <tr>
+                    <td>PrintJobStatus_Error</td>
+                    <td>There is an error associated with the job.</td>
+                </tr>
+            
+                <tr>
+                    <td>PrintJobStatus_Offline</td>
+                    <td>The printer is offline.</td>
+                </tr>
+            
+                <tr>
+                    <td>PrintJobStatus_PaperOut</td>
+                    <td>The printer is out of paper.</td>
+                </tr>
+            
+                <tr>
+                    <td>PrintJobStatus_Paused</td>
+                    <td>The job is paused.</td>
+                </tr>
+            
+                <tr>
+                    <td>PrintJobStatus_Printed</td>
+                    <td>The job printing is completed.</td>
+                </tr>
+            
+                <tr>
+                    <td>PrintJobStatus_Printing</td>
+                    <td>The job is printing.</td>
+                </tr>
+            
+                <tr>
+                    <td>PrintJobStatus_Restarted</td>
+                    <td>The job has been restarted.</td>
+                </tr>
+            
+                <tr>
+                    <td>PrintJobStatus_Retained</td>
+                    <td>The job has been retained in the print queue and cannot be deleted.</td>
+                </tr>
+            
+                <tr>
+                    <td>PrintJobStatus_Spooling</td>
+                    <td>The job is spooling.</td>
+                </tr>
+            
+                <tr>
+                    <td>PrintJobStatus_UserIntervention</td>
+                    <td>The printer has an error that requires intervention from the user.</td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-A <b>PrintJobStatus_Retained</b> flag can be raised for several reasons. For example, jobs could be kept in the queue if the administrator of the queue used the desktop print queue UI to set the “Keep Printed Jobs” feature to be on.
+        A <b>PrintJobStatus_Retained</b> flag can be raised for several reasons. For example, jobs could be kept in the queue if the administrator of the queue used the desktop print queue UI to set the “Keep Printed Jobs” feature to be on.
 
 It is possible for a job to have multiple  flag values specified simultaneously.
 
@@ -151,9 +156,9 @@ It is possible for a job to have multiple  flag values specified simultaneously.
 | **Windows version** | Windows 8.1 Windows 8.1 |
 | **Header** | printerextension.h |
 
-## See Also
+    ## See Also
 
-<a href="http://msdn.microsoft.com/en-us/library/windows/desktop/dd145019(v=vs.85).aspx">JOB_INFO_1</a>
+        <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/dd145019(v=vs.85).aspx">JOB_INFO_1</a>
 
 <a href="https://msdn.microsoft.com/3C806C3B-78A1-44B6-A9AC-E7258D216637">IPrintJob::Status</a>
 

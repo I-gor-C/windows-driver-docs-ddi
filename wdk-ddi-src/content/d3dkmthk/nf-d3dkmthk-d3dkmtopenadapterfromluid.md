@@ -1,41 +1,48 @@
 ---
-UID : NF:d3dkmthk.D3DKMTOpenAdapterFromLuid
-title : D3DKMTOpenAdapterFromLuid function
-author : windows-driver-content
-description : Maps a locally unique identifier (LUID) to a graphics adapter handle.
-old-location : display\d3dkmtopenadapterfromluid.htm
-old-project : display
-ms.assetid : 1007c8ba-c503-4522-aef8-23b89bec3d62
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DKMTOpenAdapterFromLuid, display.d3dkmtopenadapterfromluid, d3dkmthk/D3DKMTOpenAdapterFromLuid, D3DKMTOpenAdapterFromLuid function [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Universal
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : GDI32.lib
-req.dll : GDI32.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_DRIVERVERSION
+UID: NF:d3dkmthk.D3DKMTOpenAdapterFromLuid
+title: D3DKMTOpenAdapterFromLuid function
+author: windows-driver-content
+description: Maps a locally unique identifier (LUID) to a graphics adapter handle.
+old-location: display\d3dkmtopenadapterfromluid.htm
+old-project: display
+ms.assetid: 1007c8ba-c503-4522-aef8-23b89bec3d62
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DKMTOpenAdapterFromLuid, display.d3dkmtopenadapterfromluid, d3dkmthk/D3DKMTOpenAdapterFromLuid, D3DKMTOpenAdapterFromLuid function [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Universal
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: GDI32.lib
+req.dll: GDI32.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	GDI32.dll
+-	API-MS-Win-DX-D3DKMT-L1-1-1.dll
+-	API-MS-Win-DX-D3DKMT-L1-1-2.dll
+apiname:
+-	D3DKMTOpenAdapterFromLuid
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_DRIVERVERSION
 ---
 
 

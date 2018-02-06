@@ -1,42 +1,47 @@
 ---
-UID : NS:printoem._OEMUIOBJ
-title : "_OEMUIOBJ"
-author : windows-driver-content
-description : The OEMUIOBJ structure is used as an input argument to several of the methods exported by user interface plug-ins.
-old-location : print\oemuiobj.htm
-old-project : print
-ms.assetid : ba9252ec-3aef-4e8c-a335-bde33686beae
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : "*POEMUIOBJ, OEMUIOBJ structure [Print Devices], printoem/OEMUIOBJ, print_unidrv-pscript_ui_ce37eb2d-06c0-4bca-88f0-c5ab836c9fd3.xml, OEMUIOBJ, POEMUIOBJ, POEMUIOBJ structure pointer [Print Devices], print.oemuiobj, _OEMUIOBJ, printoem/POEMUIOBJ"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : printoem.h
-req.include-header : Printoem.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : OEMUIOBJ, *POEMUIOBJ
-req.product : Windows 10 or later.
+UID: NS:printoem._OEMUIOBJ
+title: "_OEMUIOBJ"
+author: windows-driver-content
+description: The OEMUIOBJ structure is used as an input argument to several of the methods exported by user interface plug-ins.
+old-location: print\oemuiobj.htm
+old-project: print
+ms.assetid: ba9252ec-3aef-4e8c-a335-bde33686beae
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: "*POEMUIOBJ, OEMUIOBJ structure [Print Devices], printoem/OEMUIOBJ, print_unidrv-pscript_ui_ce37eb2d-06c0-4bca-88f0-c5ab836c9fd3.xml, OEMUIOBJ, POEMUIOBJ, POEMUIOBJ structure pointer [Print Devices], print.oemuiobj, _OEMUIOBJ, printoem/POEMUIOBJ"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: printoem.h
+req.include-header: Printoem.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	printoem.h
+apiname:
+-	OEMUIOBJ
+product: Windows
+targetos: Windows
+req.typenames: OEMUIOBJ, *POEMUIOBJ
+req.product: Windows 10 or later.
 ---
 
 # _OEMUIOBJ structure

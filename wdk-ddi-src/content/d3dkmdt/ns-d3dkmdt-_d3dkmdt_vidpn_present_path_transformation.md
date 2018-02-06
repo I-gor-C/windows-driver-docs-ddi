@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmdt._D3DKMDT_VIDPN_PRESENT_PATH_TRANSFORMATION
-title : "_D3DKMDT_VIDPN_PRESENT_PATH_TRANSFORMATION"
-author : windows-driver-content
-description : The D3DKMDT_VIDPN_PRESENT_PATH_TRANSFORMATION structure contains information about the transformations (for example, rotation, scaling, centering) that are pinned and the transformations that are supported for a path in a video present network (VIDPN).
-old-location : display\d3dkmdt_vidpn_present_path_transformation.htm
-old-project : display
-ms.assetid : 7b2370c8-ea8a-4719-b88a-2401dbafb64c
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : "_D3DKMDT_VIDPN_PRESENT_PATH_TRANSFORMATION, d3dkmdt/D3DKMDT_VIDPN_PRESENT_PATH_TRANSFORMATION, D3DKMDT_VIDPN_PRESENT_PATH_TRANSFORMATION, display.d3dkmdt_vidpn_present_path_transformation, DmStructs_3c1dd0fd-471f-48e0-9df5-003f98237ac2.xml, D3DKMDT_VIDPN_PRESENT_PATH_TRANSFORMATION structure [Display Devices]"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmdt.h
-req.include-header : D3dkmdt.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMDT_VIDPN_PRESENT_PATH_TRANSFORMATION
+UID: NS:d3dkmdt._D3DKMDT_VIDPN_PRESENT_PATH_TRANSFORMATION
+title: "_D3DKMDT_VIDPN_PRESENT_PATH_TRANSFORMATION"
+author: windows-driver-content
+description: The D3DKMDT_VIDPN_PRESENT_PATH_TRANSFORMATION structure contains information about the transformations (for example, rotation, scaling, centering) that are pinned and the transformations that are supported for a path in a video present network (VIDPN).
+old-location: display\d3dkmdt_vidpn_present_path_transformation.htm
+old-project: display
+ms.assetid: 7b2370c8-ea8a-4719-b88a-2401dbafb64c
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: "_D3DKMDT_VIDPN_PRESENT_PATH_TRANSFORMATION, d3dkmdt/D3DKMDT_VIDPN_PRESENT_PATH_TRANSFORMATION, D3DKMDT_VIDPN_PRESENT_PATH_TRANSFORMATION, display.d3dkmdt_vidpn_present_path_transformation, DmStructs_3c1dd0fd-471f-48e0-9df5-003f98237ac2.xml, D3DKMDT_VIDPN_PRESENT_PATH_TRANSFORMATION structure [Display Devices]"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmdt.h
+req.include-header: D3dkmdt.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmdt.h
+apiname:
+-	D3DKMDT_VIDPN_PRESENT_PATH_TRANSFORMATION
+product: Windows
+targetos: Windows
+req.typenames: D3DKMDT_VIDPN_PRESENT_PATH_TRANSFORMATION
 ---
 
 # _D3DKMDT_VIDPN_PRESENT_PATH_TRANSFORMATION structure

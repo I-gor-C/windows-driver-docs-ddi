@@ -1,41 +1,46 @@
 ---
-UID : NS:dispmprt._DXGK_GENERIC_DESCRIPTOR
-title : "_DXGK_GENERIC_DESCRIPTOR"
-author : windows-driver-content
-description : The DXGK_GENERIC_DESCRIPTOR structure contains descriptive information about a child device of the display adapter.
-old-location : display\dxgk_generic_descriptor.htm
-old-project : display
-ms.assetid : 181df1a6-044d-406d-bc6d-1b35b3d744fc
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgk_generic_descriptor, dispmprt/DXGK_GENERIC_DESCRIPTOR, *PDXGK_GENERIC_DESCRIPTOR, dispmprt/PDXGK_GENERIC_DESCRIPTOR, PDXGK_GENERIC_DESCRIPTOR, DXGK_GENERIC_DESCRIPTOR structure [Display Devices], PDXGK_GENERIC_DESCRIPTOR structure pointer [Display Devices], _DXGK_GENERIC_DESCRIPTOR, DmStructs_f77c03e6-d887-43ba-9499-ce1740cb6c9e.xml, DXGK_GENERIC_DESCRIPTOR
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : dispmprt.h
-req.include-header : Dispmprt.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDXGK_GENERIC_DESCRIPTOR, DXGK_GENERIC_DESCRIPTOR"
+UID: NS:dispmprt._DXGK_GENERIC_DESCRIPTOR
+title: "_DXGK_GENERIC_DESCRIPTOR"
+author: windows-driver-content
+description: The DXGK_GENERIC_DESCRIPTOR structure contains descriptive information about a child device of the display adapter.
+old-location: display\dxgk_generic_descriptor.htm
+old-project: display
+ms.assetid: 181df1a6-044d-406d-bc6d-1b35b3d744fc
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgk_generic_descriptor, dispmprt/DXGK_GENERIC_DESCRIPTOR, *PDXGK_GENERIC_DESCRIPTOR, dispmprt/PDXGK_GENERIC_DESCRIPTOR, PDXGK_GENERIC_DESCRIPTOR, DXGK_GENERIC_DESCRIPTOR structure [Display Devices], PDXGK_GENERIC_DESCRIPTOR structure pointer [Display Devices], _DXGK_GENERIC_DESCRIPTOR, DmStructs_f77c03e6-d887-43ba-9499-ce1740cb6c9e.xml, DXGK_GENERIC_DESCRIPTOR
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: dispmprt.h
+req.include-header: Dispmprt.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	dispmprt.h
+apiname:
+-	DXGK_GENERIC_DESCRIPTOR
+product: Windows
+targetos: Windows
+req.typenames: "*PDXGK_GENERIC_DESCRIPTOR, DXGK_GENERIC_DESCRIPTOR"
 ---
 
 # _DXGK_GENERIC_DESCRIPTOR structure

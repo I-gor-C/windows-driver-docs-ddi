@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_VIDEOPROCESSENDFRAME
-title : PFND3DDDI_VIDEOPROCESSENDFRAME
-author : windows-driver-content
-description : The VideoProcessEndFrame function notifies the user-mode display driver that all of the data that is required to process the current frame was submitted.
-old-location : display\videoprocessendframe.htm
-old-project : display
-ms.assetid : a5be6834-bb27-4da0-8802-25a9ca58c101
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.videoprocessendframe, VideoProcessEndFrame callback function [Display Devices], VideoProcessEndFrame, PFND3DDDI_VIDEOPROCESSENDFRAME, PFND3DDDI_VIDEOPROCESSENDFRAME, d3dumddi/VideoProcessEndFrame, UserModeDisplayDriver_Functions_b7ef391b-90b5-49a6-880e-d0c4f287d0ad.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_VIDEOPROCESSENDFRAME
+title: PFND3DDDI_VIDEOPROCESSENDFRAME
+author: windows-driver-content
+description: The VideoProcessEndFrame function notifies the user-mode display driver that all of the data that is required to process the current frame was submitted.
+old-location: display\videoprocessendframe.htm
+old-project: display
+ms.assetid: a5be6834-bb27-4da0-8802-25a9ca58c101
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.videoprocessendframe, VideoProcessEndFrame callback function [Display Devices], VideoProcessEndFrame, PFND3DDDI_VIDEOPROCESSENDFRAME, PFND3DDDI_VIDEOPROCESSENDFRAME, d3dumddi/VideoProcessEndFrame, UserModeDisplayDriver_Functions_b7ef391b-90b5-49a6-880e-d0c4f287d0ad.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	VideoProcessEndFrame
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_GETCAPTUREALLOCATIONHANDLE
-title : PFND3DDDI_GETCAPTUREALLOCATIONHANDLE
-author : windows-driver-content
-description : The GetCaptureAllocationHandle function maps the given capture resource handle to a kernel-mode allocation handle.
-old-location : display\getcaptureallocationhandle.htm
-old-project : display
-ms.assetid : fb12a12b-6fb7-46d4-aa71-4c88d34d6ff9
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.getcaptureallocationhandle, GetCaptureAllocationHandle callback function [Display Devices], GetCaptureAllocationHandle, PFND3DDDI_GETCAPTUREALLOCATIONHANDLE, PFND3DDDI_GETCAPTUREALLOCATIONHANDLE, d3dumddi/GetCaptureAllocationHandle, UserModeDisplayDriver_Functions_839ce10f-1df9-4d62-a877-d64215b82370.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_GETCAPTUREALLOCATIONHANDLE
+title: PFND3DDDI_GETCAPTUREALLOCATIONHANDLE
+author: windows-driver-content
+description: The GetCaptureAllocationHandle function maps the given capture resource handle to a kernel-mode allocation handle.
+old-location: display\getcaptureallocationhandle.htm
+old-project: display
+ms.assetid: fb12a12b-6fb7-46d4-aa71-4c88d34d6ff9
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.getcaptureallocationhandle, GetCaptureAllocationHandle callback function [Display Devices], GetCaptureAllocationHandle, PFND3DDDI_GETCAPTUREALLOCATIONHANDLE, PFND3DDDI_GETCAPTUREALLOCATIONHANDLE, d3dumddi/GetCaptureAllocationHandle, UserModeDisplayDriver_Functions_839ce10f-1df9-4d62-a877-d64215b82370.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	GetCaptureAllocationHandle
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

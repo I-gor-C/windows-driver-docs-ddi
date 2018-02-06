@@ -1,42 +1,47 @@
 ---
-UID : NS:prntfont._WIDTHRUN
-title : "_WIDTHRUN"
-author : windows-driver-content
-description : The WIDTHRUN structure is used to define the contents of Unidrv font metrics files (.ufm files).
-old-location : print\widthrun.htm
-old-project : print
-ms.assetid : 18cc608e-b94d-4588-98e9-c22a7949a3b6
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : prntfont/PWIDTHRUN, prntfont/WIDTHRUN, *PWIDTHRUN, PWIDTHRUN, PWIDTHRUN structure pointer [Print Devices], print_unidrv-pscript_fonts_68b08066-7503-4496-bfab-001aba659926.xml, _WIDTHRUN, print.widthrun, WIDTHRUN, WIDTHRUN structure [Print Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : prntfont.h
-req.include-header : Prntfont.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WIDTHRUN, *PWIDTHRUN
-req.product : Windows 10 or later.
+UID: NS:prntfont._WIDTHRUN
+title: "_WIDTHRUN"
+author: windows-driver-content
+description: The WIDTHRUN structure is used to define the contents of Unidrv font metrics files (.ufm files).
+old-location: print\widthrun.htm
+old-project: print
+ms.assetid: 18cc608e-b94d-4588-98e9-c22a7949a3b6
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: prntfont/PWIDTHRUN, prntfont/WIDTHRUN, *PWIDTHRUN, PWIDTHRUN, PWIDTHRUN structure pointer [Print Devices], print_unidrv-pscript_fonts_68b08066-7503-4496-bfab-001aba659926.xml, _WIDTHRUN, print.widthrun, WIDTHRUN, WIDTHRUN structure [Print Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: prntfont.h
+req.include-header: Prntfont.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	prntfont.h
+apiname:
+-	WIDTHRUN
+product: Windows
+targetos: Windows
+req.typenames: WIDTHRUN, *PWIDTHRUN
+req.product: Windows 10 or later.
 ---
 
 # _WIDTHRUN structure

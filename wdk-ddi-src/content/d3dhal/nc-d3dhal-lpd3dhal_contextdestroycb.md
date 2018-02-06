@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dhal.LPD3DHAL_CONTEXTDESTROYCB
-title : LPD3DHAL_CONTEXTDESTROYCB
-author : windows-driver-content
-description : The D3dContextDestroy function deletes the specified context.
-old-location : display\d3dcontextdestroy.htm
-old-project : display
-ms.assetid : caed780c-06a1-4697-b102-bffb134ecf84
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.d3dcontextdestroy, D3dContextDestroy callback function [Display Devices], D3dContextDestroy, LPD3DHAL_CONTEXTDESTROYCB, LPD3DHAL_CONTEXTDESTROYCB, d3dhal/D3dContextDestroy, d3dfncs_95c72dbe-9292-4501-ae28-f76316ce01e5.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dhal.h
-req.include-header : D3dhal.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DTRANSFORMCAPS, *LPD3DTRANSFORMCAPS
+UID: NC:d3dhal.LPD3DHAL_CONTEXTDESTROYCB
+title: LPD3DHAL_CONTEXTDESTROYCB
+author: windows-driver-content
+description: The D3dContextDestroy function deletes the specified context.
+old-location: display\d3dcontextdestroy.htm
+old-project: display
+ms.assetid: caed780c-06a1-4697-b102-bffb134ecf84
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.d3dcontextdestroy, D3dContextDestroy callback function [Display Devices], D3dContextDestroy, LPD3DHAL_CONTEXTDESTROYCB, LPD3DHAL_CONTEXTDESTROYCB, d3dhal/D3dContextDestroy, d3dfncs_95c72dbe-9292-4501-ae28-f76316ce01e5.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dhal.h
+req.include-header: D3dhal.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dhal.h
+apiname:
+-	D3dContextDestroy
+product: Windows
+targetos: Windows
+req.typenames: D3DTRANSFORMCAPS, *LPD3DTRANSFORMCAPS
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NS:wdfusb._WDF_USB_DEVICE_INFORMATION
-title : "_WDF_USB_DEVICE_INFORMATION"
-author : windows-driver-content
-description : The WDF_USB_DEVICE_INFORMATION structure contains version and capability information for a USB device.
-old-location : wdf\wdf_usb_device_information.htm
-old-project : wdf
-ms.assetid : 5d212a29-22b9-408d-9562-b232fc91cc9f
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : kmdf.wdf_usb_device_information, wdf.wdf_usb_device_information, WDF_USB_DEVICE_INFORMATION, PWDF_USB_DEVICE_INFORMATION structure pointer, wdfusb/PWDF_USB_DEVICE_INFORMATION, WDF_USB_DEVICE_INFORMATION structure, wdfusb/WDF_USB_DEVICE_INFORMATION, _WDF_USB_DEVICE_INFORMATION, *PWDF_USB_DEVICE_INFORMATION, DFUsbRef_eb36dfae-7210-4949-acbf-7d0b0edf4061.xml, PWDF_USB_DEVICE_INFORMATION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdfusb.h
-req.include-header : Wdfusb.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_USB_DEVICE_INFORMATION, *PWDF_USB_DEVICE_INFORMATION
-req.product : Windows 10 or later.
+UID: NS:wdfusb._WDF_USB_DEVICE_INFORMATION
+title: "_WDF_USB_DEVICE_INFORMATION"
+author: windows-driver-content
+description: The WDF_USB_DEVICE_INFORMATION structure contains version and capability information for a USB device.
+old-location: wdf\wdf_usb_device_information.htm
+old-project: wdf
+ms.assetid: 5d212a29-22b9-408d-9562-b232fc91cc9f
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: kmdf.wdf_usb_device_information, wdf.wdf_usb_device_information, WDF_USB_DEVICE_INFORMATION, PWDF_USB_DEVICE_INFORMATION structure pointer, wdfusb/PWDF_USB_DEVICE_INFORMATION, WDF_USB_DEVICE_INFORMATION structure, wdfusb/WDF_USB_DEVICE_INFORMATION, _WDF_USB_DEVICE_INFORMATION, *PWDF_USB_DEVICE_INFORMATION, DFUsbRef_eb36dfae-7210-4949-acbf-7d0b0edf4061.xml, PWDF_USB_DEVICE_INFORMATION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdfusb.h
+req.include-header: Wdfusb.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfusb.h
+apiname:
+-	WDF_USB_DEVICE_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: WDF_USB_DEVICE_INFORMATION, *PWDF_USB_DEVICE_INFORMATION
+req.product: Windows 10 or later.
 ---
 
 # _WDF_USB_DEVICE_INFORMATION structure

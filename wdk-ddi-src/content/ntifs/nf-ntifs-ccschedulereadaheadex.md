@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.CcScheduleReadAheadEx
-title : CcScheduleReadAheadEx function
-author : windows-driver-content
-description : The CcScheduleReadAheadEx routine performs read-ahead (also called &#0034;lazy read&#0034;) on a cached file. The I/O byte count for the operation is charged to the issuing thread.
-old-location : ifsk\ccschedulereadaheadex.htm
-old-project : ifsk
-ms.assetid : 8549DAA9-3BD3-4CED-AC2A-EFADF317EF5A
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : CcScheduleReadAheadEx, ntifs/CcScheduleReadAheadEx, ifsk.ccschedulereadaheadex, CcScheduleReadAheadEx routine [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h, FltKernel.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.CcScheduleReadAheadEx
+title: CcScheduleReadAheadEx function
+author: windows-driver-content
+description: The CcScheduleReadAheadEx routine performs read-ahead (also called &#0034;lazy read&#0034;) on a cached file. The I/O byte count for the operation is charged to the issuing thread.
+old-location: ifsk\ccschedulereadaheadex.htm
+old-project: ifsk
+ms.assetid: 8549DAA9-3BD3-4CED-AC2A-EFADF317EF5A
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: CcScheduleReadAheadEx, ntifs/CcScheduleReadAheadEx, ifsk.ccschedulereadaheadex, CcScheduleReadAheadEx routine [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h, FltKernel.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	CcScheduleReadAheadEx
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

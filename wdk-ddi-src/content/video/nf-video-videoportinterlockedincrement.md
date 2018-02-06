@@ -1,42 +1,47 @@
 ---
-UID : NF:video.VideoPortInterlockedIncrement
-title : VideoPortInterlockedIncrement function
-author : windows-driver-content
-description : The VideoPortInterlockedIncrement function increments a caller-supplied variable as an atomic operation.
-old-location : display\videoportinterlockedincrement.htm
-old-project : display
-ms.assetid : d3507214-82bc-4d73-8562-2843d7876137
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : VideoPortInterlockedIncrement function [Display Devices], video/VideoPortInterlockedIncrement, VideoPortInterlockedIncrement, display.videoportinterlockedincrement, VideoPort_Functions_ae59ee02-e3b2-43f6-8b93-8fe6bcedf248.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows 2000 and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Videoprt.lib
-req.dll : Videoprt.sys
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_PORT_SERVICES
-req.product : Windows 10 or later.
+UID: NF:video.VideoPortInterlockedIncrement
+title: VideoPortInterlockedIncrement function
+author: windows-driver-content
+description: The VideoPortInterlockedIncrement function increments a caller-supplied variable as an atomic operation.
+old-location: display\videoportinterlockedincrement.htm
+old-project: display
+ms.assetid: d3507214-82bc-4d73-8562-2843d7876137
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: VideoPortInterlockedIncrement function [Display Devices], video/VideoPortInterlockedIncrement, VideoPortInterlockedIncrement, display.videoportinterlockedincrement, VideoPort_Functions_ae59ee02-e3b2-43f6-8b93-8fe6bcedf248.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows 2000 and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Videoprt.lib
+req.dll: Videoprt.sys
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Videoprt.sys
+apiname:
+-	VideoPortInterlockedIncrement
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_PORT_SERVICES
+req.product: Windows 10 or later.
 ---
 
 

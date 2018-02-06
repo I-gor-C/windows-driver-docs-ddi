@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d12umddi.PFND3D12DDI_ALLOCATE_CB_0022
-title : PFND3D12DDI_ALLOCATE_CB_0022
-author : windows-driver-content
-description : The pfnAllocateCb callback function controls heap allocation by using a D3D12DDICB_ALLOCATE_0022 value.
-old-location : display\pfnd3d12ddi_allocate_cb_0022.htm
-old-project : display
-ms.assetid : D0326C98-F187-4F62-AE60-60F0B38AB0D4
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.pfnd3d12ddi_allocate_cb_0022, pfnAllocateCb callback function [Display Devices], pfnAllocateCb, PFND3D12DDI_ALLOCATE_CB_0022, PFND3D12DDI_ALLOCATE_CB_0022, d3d12umddi/pfnAllocateCb
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d12umddi.h
-req.include-header : D3d12umddi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3D11_1DDI_GETCAPTUREHANDLEDATA
+UID: NC:d3d12umddi.PFND3D12DDI_ALLOCATE_CB_0022
+title: PFND3D12DDI_ALLOCATE_CB_0022
+author: windows-driver-content
+description: The pfnAllocateCb callback function controls heap allocation by using a D3D12DDICB_ALLOCATE_0022 value.
+old-location: display\pfnd3d12ddi_allocate_cb_0022.htm
+old-project: display
+ms.assetid: D0326C98-F187-4F62-AE60-60F0B38AB0D4
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.pfnd3d12ddi_allocate_cb_0022, pfnAllocateCb callback function [Display Devices], pfnAllocateCb, PFND3D12DDI_ALLOCATE_CB_0022, PFND3D12DDI_ALLOCATE_CB_0022, d3d12umddi/pfnAllocateCb
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d12umddi.h
+req.include-header: D3d12umddi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	D3d12umddi.h
+apiname:
+-	pfnAllocateCb
+product: Windows
+targetos: Windows
+req.typenames: D3D11_1DDI_GETCAPTUREHANDLEDATA
 ---
 
 

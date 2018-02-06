@@ -1,41 +1,46 @@
 ---
-UID : NS:dbgeng._DEBUG_BREAKPOINT_PARAMETERS
-title : "_DEBUG_BREAKPOINT_PARAMETERS"
-author : windows-driver-content
-description : The DEBUG_BREAKPOINT_PARAMETERS structure contains most of the parameters for describing a breakpoint.
-old-location : debugger\debug_breakpoint_parameters.htm
-old-project : debugger
-ms.assetid : e5c87c1c-8195-4476-84bc-5f18ad83d149
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : PDEBUG_BREAKPOINT_PARAMETERS, debugger.debug_breakpoint_parameters, DEBUG_BREAKPOINT_PARAMETERS, dbgeng/DEBUG_BREAKPOINT_PARAMETERS, DEBUG_BREAKPOINT_PARAMETERS structure [Windows Debugging], dbgeng/PDEBUG_BREAKPOINT_PARAMETERS, Structures_ad5f0e1f-7d6f-498d-80a0-1275ca3cb016.xml, *PDEBUG_BREAKPOINT_PARAMETERS, _DEBUG_BREAKPOINT_PARAMETERS, PDEBUG_BREAKPOINT_PARAMETERS structure pointer [Windows Debugging]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : dbgeng.h
-req.include-header : DbgEng.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DEBUG_BREAKPOINT_PARAMETERS, *PDEBUG_BREAKPOINT_PARAMETERS
+UID: NS:dbgeng._DEBUG_BREAKPOINT_PARAMETERS
+title: "_DEBUG_BREAKPOINT_PARAMETERS"
+author: windows-driver-content
+description: The DEBUG_BREAKPOINT_PARAMETERS structure contains most of the parameters for describing a breakpoint.
+old-location: debugger\debug_breakpoint_parameters.htm
+old-project: debugger
+ms.assetid: e5c87c1c-8195-4476-84bc-5f18ad83d149
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: PDEBUG_BREAKPOINT_PARAMETERS, debugger.debug_breakpoint_parameters, DEBUG_BREAKPOINT_PARAMETERS, dbgeng/DEBUG_BREAKPOINT_PARAMETERS, DEBUG_BREAKPOINT_PARAMETERS structure [Windows Debugging], dbgeng/PDEBUG_BREAKPOINT_PARAMETERS, Structures_ad5f0e1f-7d6f-498d-80a0-1275ca3cb016.xml, *PDEBUG_BREAKPOINT_PARAMETERS, _DEBUG_BREAKPOINT_PARAMETERS, PDEBUG_BREAKPOINT_PARAMETERS structure pointer [Windows Debugging]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: dbgeng.h
+req.include-header: DbgEng.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	DbgEng.h
+apiname:
+-	DEBUG_BREAKPOINT_PARAMETERS
+product: Windows
+targetos: Windows
+req.typenames: DEBUG_BREAKPOINT_PARAMETERS, *PDEBUG_BREAKPOINT_PARAMETERS
 ---
 
 # _DEBUG_BREAKPOINT_PARAMETERS structure

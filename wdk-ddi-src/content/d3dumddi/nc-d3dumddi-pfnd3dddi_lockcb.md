@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_LOCKCB
-title : PFND3DDDI_LOCKCB
-author : windows-driver-content
-description : The pfnLockCb function locks an allocation and obtains a pointer to the allocation from the display miniport driver or video memory manager.
-old-location : display\pfnlockcb.htm
-old-project : display
-ms.assetid : 69022797-432a-410b-8cbf-e1ef7111e7ea
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.pfnlockcb, pfnLockCb callback function [Display Devices], pfnLockCb, PFND3DDDI_LOCKCB, PFND3DDDI_LOCKCB, d3dumddi/pfnLockCb, D3Druntime_Functions_25ad9d8e-34e0-4b1e-9a3a-4d170322fbca.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_LOCKCB
+title: PFND3DDDI_LOCKCB
+author: windows-driver-content
+description: The pfnLockCb function locks an allocation and obtains a pointer to the allocation from the display miniport driver or video memory manager.
+old-location: display\pfnlockcb.htm
+old-project: display
+ms.assetid: 69022797-432a-410b-8cbf-e1ef7111e7ea
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.pfnlockcb, pfnLockCb callback function [Display Devices], pfnLockCb, PFND3DDDI_LOCKCB, PFND3DDDI_LOCKCB, d3dumddi/pfnLockCb, D3Druntime_Functions_25ad9d8e-34e0-4b1e-9a3a-4d170322fbca.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	pfnLockCb
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

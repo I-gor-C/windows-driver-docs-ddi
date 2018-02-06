@@ -1,41 +1,46 @@
 ---
-UID : NS:d3d10umddi.D3D11_1DDI_VIDEO_COLOR_YCbCrA
-title : D3D11_1DDI_VIDEO_COLOR_YCbCrA
-author : windows-driver-content
-description : Specifies a YCbCr color value.
-old-location : display\d3d11_1ddi_video_color_ycbcra.htm
-old-project : display
-ms.assetid : d6d8147e-8cc8-4c35-8031-bce2fa3ccd67
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3d10umddi/D3D11_1DDI_VIDEO_COLOR_YCbCrA, display.d3d11_1ddi_video_color_ycbcra, D3D11_1DDI_VIDEO_COLOR_YCbCrA structure [Display Devices], D3D11_1DDI_VIDEO_COLOR_YCbCrA
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3D11_1DDI_VIDEO_COLOR_YCbCrA
+UID: NS:d3d10umddi.D3D11_1DDI_VIDEO_COLOR_YCbCrA
+title: D3D11_1DDI_VIDEO_COLOR_YCbCrA
+author: windows-driver-content
+description: Specifies a YCbCr color value.
+old-location: display\d3d11_1ddi_video_color_ycbcra.htm
+old-project: display
+ms.assetid: d6d8147e-8cc8-4c35-8031-bce2fa3ccd67
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3d10umddi/D3D11_1DDI_VIDEO_COLOR_YCbCrA, display.d3d11_1ddi_video_color_ycbcra, D3D11_1DDI_VIDEO_COLOR_YCbCrA structure [Display Devices], D3D11_1DDI_VIDEO_COLOR_YCbCrA
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	D3d10umddi.h
+apiname:
+-	D3D11_1DDI_VIDEO_COLOR_YCbCrA
+product: Windows
+targetos: Windows
+req.typenames: D3D11_1DDI_VIDEO_COLOR_YCbCrA
 ---
 
 # D3D11_1DDI_VIDEO_COLOR_YCbCrA structure

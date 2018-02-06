@@ -1,41 +1,47 @@
 ---
-UID : NF:fltkernel.FltDeleteStreamContext
-title : FltDeleteStreamContext function
-author : windows-driver-content
-description : FltDeleteStreamContext removes a context that a given minifilter driver instance has set for a given stream and marks the context for deletion.
-old-location : ifsk\fltdeletestreamcontext.htm
-old-project : ifsk
-ms.assetid : 49f7d633-3e8b-4c9c-b14a-7ae8f997ad2f
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltDeleteStreamContext, FltDeleteStreamContext function [Installable File System Drivers], ifsk.fltdeletestreamcontext, FltApiRef_a_to_d_8339a254-56eb-4f75-b294-006286f3ff10.xml, fltkernel/FltDeleteStreamContext
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltDeleteStreamContext
+title: FltDeleteStreamContext function
+author: windows-driver-content
+description: FltDeleteStreamContext removes a context that a given minifilter driver instance has set for a given stream and marks the context for deletion.
+old-location: ifsk\fltdeletestreamcontext.htm
+old-project: ifsk
+ms.assetid: 49f7d633-3e8b-4c9c-b14a-7ae8f997ad2f
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltDeleteStreamContext, FltDeleteStreamContext function [Installable File System Drivers], ifsk.fltdeletestreamcontext, FltApiRef_a_to_d_8339a254-56eb-4f75-b294-006286f3ff10.xml, fltkernel/FltDeleteStreamContext
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	FltMgr.lib
+-	FltMgr.dll
+apiname:
+-	FltDeleteStreamContext
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

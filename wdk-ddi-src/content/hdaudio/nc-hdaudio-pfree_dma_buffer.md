@@ -1,41 +1,46 @@
 ---
-UID : NC:hdaudio.PFREE_DMA_BUFFER
-title : PFREE_DMA_BUFFER
-author : windows-driver-content
-description : The FreeDmaBuffer routine frees a DMA buffer that was previously allocated by a call to AllocateDmaBuffer.The function pointer type for a FreeDmaBuffer routine is defined as:
-old-location : audio\freedmabuffer.htm
-old-project : audio
-ms.assetid : 658e32d2-40e2-4479-8212-df7140fe6b74
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : audio.freedmabuffer, FreeDmaBuffer callback function [Audio Devices], FreeDmaBuffer, PFREE_DMA_BUFFER, PFREE_DMA_BUFFER, hdaudio/FreeDmaBuffer, aud-prop2_22e95124-bf77-40d9-9ad7-4edc394818df.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : hdaudio.h
-req.include-header : Hdaudio.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT
+UID: NC:hdaudio.PFREE_DMA_BUFFER
+title: PFREE_DMA_BUFFER
+author: windows-driver-content
+description: The FreeDmaBuffer routine frees a DMA buffer that was previously allocated by a call to AllocateDmaBuffer.The function pointer type for a FreeDmaBuffer routine is defined as:
+old-location: audio\freedmabuffer.htm
+old-project: audio
+ms.assetid: 658e32d2-40e2-4479-8212-df7140fe6b74
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: audio.freedmabuffer, FreeDmaBuffer callback function [Audio Devices], FreeDmaBuffer, PFREE_DMA_BUFFER, PFREE_DMA_BUFFER, hdaudio/FreeDmaBuffer, aud-prop2_22e95124-bf77-40d9-9ad7-4edc394818df.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: hdaudio.h
+req.include-header: Hdaudio.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	hdaudio.h
+apiname:
+-	FreeDmaBuffer
+product: Windows
+targetos: Windows
+req.typenames: SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT
 ---
 
 

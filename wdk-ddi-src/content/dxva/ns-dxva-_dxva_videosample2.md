@@ -1,41 +1,46 @@
 ---
-UID : NS:dxva._DXVA_VideoSample2
-title : "_DXVA_VideoSample2"
-author : windows-driver-content
-description : The DXVA_VideoSample2 structure is sent by the renderer to the driver to specify the format of a video sample.
-old-location : display\dxva_videosample2.htm
-old-project : display
-ms.assetid : 0a82d7b4-1cba-4dd4-b5e4-ec85505ee3e1
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxva_videosample2, *LPDXVA_VideoSample2, DXVA_VideoSample2, dxvaref_4329d0c7-5dc5-42fb-b3b8-f40dc004ac17.xml, LPDXVA_VideoSample2, dxva/LPDXVA_VideoSample2, dxva/DXVA_VideoSample2, LPDXVA_VideoSample2 structure pointer [Display Devices], DXVA_VideoSample2 structure [Display Devices], _DXVA_VideoSample2
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : dxva.h
-req.include-header : Dxva.h
-req.target-type : Windows
-req.target-min-winverclnt : This structure applies only to Windows Server 2003 with SP1 and later, and Windows XP with SP2 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXVA_VideoSample2, *LPDXVA_VideoSample2
+UID: NS:dxva._DXVA_VideoSample2
+title: "_DXVA_VideoSample2"
+author: windows-driver-content
+description: The DXVA_VideoSample2 structure is sent by the renderer to the driver to specify the format of a video sample.
+old-location: display\dxva_videosample2.htm
+old-project: display
+ms.assetid: 0a82d7b4-1cba-4dd4-b5e4-ec85505ee3e1
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxva_videosample2, *LPDXVA_VideoSample2, DXVA_VideoSample2, dxvaref_4329d0c7-5dc5-42fb-b3b8-f40dc004ac17.xml, LPDXVA_VideoSample2, dxva/LPDXVA_VideoSample2, dxva/DXVA_VideoSample2, LPDXVA_VideoSample2 structure pointer [Display Devices], DXVA_VideoSample2 structure [Display Devices], _DXVA_VideoSample2
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: dxva.h
+req.include-header: Dxva.h
+req.target-type: Windows
+req.target-min-winverclnt: This structure applies only to Windows Server 2003 with SP1 and later, and Windows XP with SP2 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	dxva.h
+apiname:
+-	DXVA_VideoSample2
+product: Windows
+targetos: Windows
+req.typenames: DXVA_VideoSample2, *LPDXVA_VideoSample2
 ---
 
 # _DXVA_VideoSample2 structure

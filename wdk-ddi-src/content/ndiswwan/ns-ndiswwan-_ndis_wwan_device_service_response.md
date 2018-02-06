@@ -1,41 +1,46 @@
 ---
-UID : NS:ndiswwan._NDIS_WWAN_DEVICE_SERVICE_RESPONSE
-title : "_NDIS_WWAN_DEVICE_SERVICE_RESPONSE"
-author : windows-driver-content
-description : The NDIS_WWAN_DEVICE_SERVICE_RESPONSE structure represents device service data from the transaction completion of a device service command.
-old-location : netvista\ndis_wwan_device_service_response.htm
-old-project : netvista
-ms.assetid : 65999499-C14C-45CC-B7A5-021750B1A728
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : PNDIS_WWAN_DEVICE_SERVICE_RESPONSE structure pointer [Network Drivers Starting with Windows Vista], ndiswwan/NDIS_WWAN_DEVICE_SERVICE_RESPONSE, NDIS_WWAN_DEVICE_SERVICE_RESPONSE structure [Network Drivers Starting with Windows Vista], ndiswwan/PNDIS_WWAN_DEVICE_SERVICE_RESPONSE, netvista.ndis_wwan_device_service_response, _NDIS_WWAN_DEVICE_SERVICE_RESPONSE, *PNDIS_WWAN_DEVICE_SERVICE_RESPONSE, NDIS_WWAN_DEVICE_SERVICE_RESPONSE, PNDIS_WWAN_DEVICE_SERVICE_RESPONSE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndiswwan.h
-req.include-header : Ndiswwan.h
-req.target-type : Windows
-req.target-min-winverclnt : Versions:\_Supported in Windows 8 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PNDIS_WWAN_DEVICE_SERVICE_RESPONSE, NDIS_WWAN_DEVICE_SERVICE_RESPONSE"
+UID: NS:ndiswwan._NDIS_WWAN_DEVICE_SERVICE_RESPONSE
+title: "_NDIS_WWAN_DEVICE_SERVICE_RESPONSE"
+author: windows-driver-content
+description: The NDIS_WWAN_DEVICE_SERVICE_RESPONSE structure represents device service data from the transaction completion of a device service command.
+old-location: netvista\ndis_wwan_device_service_response.htm
+old-project: netvista
+ms.assetid: 65999499-C14C-45CC-B7A5-021750B1A728
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: PNDIS_WWAN_DEVICE_SERVICE_RESPONSE structure pointer [Network Drivers Starting with Windows Vista], ndiswwan/NDIS_WWAN_DEVICE_SERVICE_RESPONSE, NDIS_WWAN_DEVICE_SERVICE_RESPONSE structure [Network Drivers Starting with Windows Vista], ndiswwan/PNDIS_WWAN_DEVICE_SERVICE_RESPONSE, netvista.ndis_wwan_device_service_response, _NDIS_WWAN_DEVICE_SERVICE_RESPONSE, *PNDIS_WWAN_DEVICE_SERVICE_RESPONSE, NDIS_WWAN_DEVICE_SERVICE_RESPONSE, PNDIS_WWAN_DEVICE_SERVICE_RESPONSE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndiswwan.h
+req.include-header: Ndiswwan.h
+req.target-type: Windows
+req.target-min-winverclnt: Versions:\_Supported in Windows 8 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndiswwan.h
+apiname:
+-	NDIS_WWAN_DEVICE_SERVICE_RESPONSE
+product: Windows
+targetos: Windows
+req.typenames: "*PNDIS_WWAN_DEVICE_SERVICE_RESPONSE, NDIS_WWAN_DEVICE_SERVICE_RESPONSE"
 ---
 
 # _NDIS_WWAN_DEVICE_SERVICE_RESPONSE structure

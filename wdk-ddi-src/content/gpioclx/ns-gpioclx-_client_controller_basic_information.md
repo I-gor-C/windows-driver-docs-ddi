@@ -1,41 +1,46 @@
 ---
-UID : NS:gpioclx._CLIENT_CONTROLLER_BASIC_INFORMATION
-title : "_CLIENT_CONTROLLER_BASIC_INFORMATION"
-author : windows-driver-content
-description : The CLIENT_CONTROLLER_BASIC_INFORMATION structure contains general-purpose I/O (GPIO) controller hardware attributes and configuration information.
-old-location : gpio\client_controller_basic_information.htm
-old-project : GPIO
-ms.assetid : CE92249C-99B5-411E-B0D7-C1FF4824949E
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : "*PCLIENT_CONTROLLER_BASIC_INFORMATION, PCLIENT_CONTROLLER_BASIC_INFORMATION, GPIO.client_controller_basic_information, PCLIENT_CONTROLLER_BASIC_INFORMATION structure pointer [Parallel Ports], CLIENT_CONTROLLER_BASIC_INFORMATION structure [Parallel Ports], gpioclx/PCLIENT_CONTROLLER_BASIC_INFORMATION, CLIENT_CONTROLLER_BASIC_INFORMATION, gpioclx/CLIENT_CONTROLLER_BASIC_INFORMATION, _CLIENT_CONTROLLER_BASIC_INFORMATION"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : gpioclx.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PCLIENT_CONTROLLER_BASIC_INFORMATION, CLIENT_CONTROLLER_BASIC_INFORMATION"
+UID: NS:gpioclx._CLIENT_CONTROLLER_BASIC_INFORMATION
+title: "_CLIENT_CONTROLLER_BASIC_INFORMATION"
+author: windows-driver-content
+description: The CLIENT_CONTROLLER_BASIC_INFORMATION structure contains general-purpose I/O (GPIO) controller hardware attributes and configuration information.
+old-location: gpio\client_controller_basic_information.htm
+old-project: GPIO
+ms.assetid: CE92249C-99B5-411E-B0D7-C1FF4824949E
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: "*PCLIENT_CONTROLLER_BASIC_INFORMATION, PCLIENT_CONTROLLER_BASIC_INFORMATION, GPIO.client_controller_basic_information, PCLIENT_CONTROLLER_BASIC_INFORMATION structure pointer [Parallel Ports], CLIENT_CONTROLLER_BASIC_INFORMATION structure [Parallel Ports], gpioclx/PCLIENT_CONTROLLER_BASIC_INFORMATION, CLIENT_CONTROLLER_BASIC_INFORMATION, gpioclx/CLIENT_CONTROLLER_BASIC_INFORMATION, _CLIENT_CONTROLLER_BASIC_INFORMATION"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: gpioclx.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Gpioclx.h
+apiname:
+-	CLIENT_CONTROLLER_BASIC_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: "*PCLIENT_CONTROLLER_BASIC_INFORMATION, CLIENT_CONTROLLER_BASIC_INFORMATION"
 ---
 
 # _CLIENT_CONTROLLER_BASIC_INFORMATION structure

@@ -1,12 +1,12 @@
 ---
-UID : NA:d3dumddi
-ms.assetid : 64c7511b-6379-3c2f-bd00-f08eab970dc2
-ms.author : windowsdriverdev
-ms.date : 01/18/18
-ms.keywords : 
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : portal
+UID: NA:d3dumddi
+ms.assetid: 64c7511b-6379-3c2f-bd00-f08eab970dc2
+ms.author: windowsdriverdev
+ms.date: 01/18/18
+ms.keywords: 
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: portal
 ---
 
 # d3dumddi.h header

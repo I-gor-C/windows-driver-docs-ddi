@@ -1,41 +1,46 @@
 ---
-UID : NC:dispmprt.DXGKCB_IS_DEVICE_PRESENT
-title : DXGKCB_IS_DEVICE_PRESENT
-author : windows-driver-content
-description : The DxgkCbIsDevicePresent function determines whether a specified PCI device is present.
-old-location : display\dxgkcbisdevicepresent.htm
-old-project : display
-ms.assetid : 82716a1a-e361-40ad-b3cd-bdcd3abc75f8
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkcbisdevicepresent, DxgkCbIsDevicePresent callback function [Display Devices], DxgkCbIsDevicePresent, DXGKCB_IS_DEVICE_PRESENT, DXGKCB_IS_DEVICE_PRESENT, dispmprt/DxgkCbIsDevicePresent, DpFunctions_0ef5f8dd-52b6-4bf6-a19b-f87043ff6d18.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : dispmprt.h
-req.include-header : Dispmprt.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
+UID: NC:dispmprt.DXGKCB_IS_DEVICE_PRESENT
+title: DXGKCB_IS_DEVICE_PRESENT
+author: windows-driver-content
+description: The DxgkCbIsDevicePresent function determines whether a specified PCI device is present.
+old-location: display\dxgkcbisdevicepresent.htm
+old-project: display
+ms.assetid: 82716a1a-e361-40ad-b3cd-bdcd3abc75f8
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkcbisdevicepresent, DxgkCbIsDevicePresent callback function [Display Devices], DxgkCbIsDevicePresent, DXGKCB_IS_DEVICE_PRESENT, DXGKCB_IS_DEVICE_PRESENT, dispmprt/DxgkCbIsDevicePresent, DpFunctions_0ef5f8dd-52b6-4bf6-a19b-f87043ff6d18.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: dispmprt.h
+req.include-header: Dispmprt.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	dispmprt.h
+apiname:
+-	DxgkCbIsDevicePresent
+product: Windows
+targetos: Windows
+req.typenames: SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ---
 
 

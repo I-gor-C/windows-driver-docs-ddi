@@ -1,42 +1,47 @@
 ---
-UID : NS:sensorsdef.SENSOR_COLLECTION_LIST
-title : SENSOR_COLLECTION_LIST
-author : windows-driver-content
-description : This structure contains a list of all SENSOR_VALUE_PAIR structures for each sensor. This structure is returned by calling ReadFile.
-old-location : sensors\sensor_collection_list.htm
-old-project : sensors
-ms.assetid : B842C707-C6E0-4C56-986E-35BFD32F265D
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : SENSOR_COLLECTION_LIST structure [Sensor Devices], *PSENSOR_COLLECTION_LIST, sensorsdef/SENSOR_COLLECTION_LIST, PSENSOR_COLLECTION_LIST, sensors.sensor_collection_list, SENSOR_COLLECTION_LIST, sensorsdef/PSENSOR_COLLECTION_LIST, PSENSOR_COLLECTION_LIST structure pointer [Sensor Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : sensorsdef.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8.1
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSENSOR_COLLECTION_LIST, SENSOR_COLLECTION_LIST"
-req.product : Windows 10 or later.
+UID: NS:sensorsdef.SENSOR_COLLECTION_LIST
+title: SENSOR_COLLECTION_LIST
+author: windows-driver-content
+description: This structure contains a list of all SENSOR_VALUE_PAIR structures for each sensor. This structure is returned by calling ReadFile.
+old-location: sensors\sensor_collection_list.htm
+old-project: sensors
+ms.assetid: B842C707-C6E0-4C56-986E-35BFD32F265D
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: SENSOR_COLLECTION_LIST structure [Sensor Devices], *PSENSOR_COLLECTION_LIST, sensorsdef/SENSOR_COLLECTION_LIST, PSENSOR_COLLECTION_LIST, sensors.sensor_collection_list, SENSOR_COLLECTION_LIST, sensorsdef/PSENSOR_COLLECTION_LIST, PSENSOR_COLLECTION_LIST structure pointer [Sensor Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: sensorsdef.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8.1
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Sensorsdef.h
+apiname:
+-	SENSOR_COLLECTION_LIST
+product: Windows
+targetos: Windows
+req.typenames: "*PSENSOR_COLLECTION_LIST, SENSOR_COLLECTION_LIST"
+req.product: Windows 10 or later.
 ---
 
 # SENSOR_COLLECTION_LIST structure

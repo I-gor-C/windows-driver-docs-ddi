@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.IoCreateStreamFileObject
-title : IoCreateStreamFileObject function
-author : windows-driver-content
-description : The IoCreateStreamFileObject routine creates a new stream file object.
-old-location : ifsk\iocreatestreamfileobject.htm
-old-project : ifsk
-ms.assetid : 4186a362-f75d-4633-b9eb-5b0810bf56dc
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ioref_b800437d-cde5-4605-955f-c14152aa0576.xml, ifsk.iocreatestreamfileobject, IoCreateStreamFileObject routine [Installable File System Drivers], ntifs/IoCreateStreamFileObject, IoCreateStreamFileObject
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.IoCreateStreamFileObject
+title: IoCreateStreamFileObject function
+author: windows-driver-content
+description: The IoCreateStreamFileObject routine creates a new stream file object.
+old-location: ifsk\iocreatestreamfileobject.htm
+old-project: ifsk
+ms.assetid: 4186a362-f75d-4633-b9eb-5b0810bf56dc
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ioref_b800437d-cde5-4605-955f-c14152aa0576.xml, ifsk.iocreatestreamfileobject, IoCreateStreamFileObject routine [Installable File System Drivers], ntifs/IoCreateStreamFileObject, IoCreateStreamFileObject
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoCreateStreamFileObject
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

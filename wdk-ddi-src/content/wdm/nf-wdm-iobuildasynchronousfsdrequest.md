@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.IoBuildAsynchronousFsdRequest
-title : IoBuildAsynchronousFsdRequest function
-author : windows-driver-content
-description : The IoBuildAsynchronousFsdRequest routine allocates and sets up an IRP to be sent to lower-level drivers.
-old-location : kernel\iobuildasynchronousfsdrequest.htm
-old-project : kernel
-ms.assetid : cb633146-c3ab-4a09-bbcd-5964ecbf6e44
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : k104_bbefd6f7-02b9-497d-9d9e-aef507436cd4.xml, wdm/IoBuildAsynchronousFsdRequest, IoBuildAsynchronousFsdRequest, IoBuildAsynchronousFsdRequest routine [Kernel-Mode Driver Architecture], kernel.iobuildasynchronousfsdrequest
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : ForwardedAtBadIrqlFsdAsync, IoBuildFsdComplete, IoBuildFsdForward, IoBuildFsdFree, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.IoBuildAsynchronousFsdRequest
+title: IoBuildAsynchronousFsdRequest function
+author: windows-driver-content
+description: The IoBuildAsynchronousFsdRequest routine allocates and sets up an IRP to be sent to lower-level drivers.
+old-location: kernel\iobuildasynchronousfsdrequest.htm
+old-project: kernel
+ms.assetid: cb633146-c3ab-4a09-bbcd-5964ecbf6e44
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: k104_bbefd6f7-02b9-497d-9d9e-aef507436cd4.xml, wdm/IoBuildAsynchronousFsdRequest, IoBuildAsynchronousFsdRequest, IoBuildAsynchronousFsdRequest routine [Kernel-Mode Driver Architecture], kernel.iobuildasynchronousfsdrequest
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: ForwardedAtBadIrqlFsdAsync, IoBuildFsdComplete, IoBuildFsdForward, IoBuildFsdFree, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoBuildAsynchronousFsdRequest
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NC:ndis.MINIPORT_CANCEL_DIRECT_OID_REQUEST
-title : MINIPORT_CANCEL_DIRECT_OID_REQUEST
-author : windows-driver-content
-description : NDIS calls a miniport driver's MiniportCancelDirectOidRequest function to cancel a direct OID request.
-old-location : netvista\miniportcanceldirectoidrequest.htm
-old-project : netvista
-ms.assetid : 88639bb4-89f3-4e7f-9cce-ea541224572d
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.miniportcanceldirectoidrequest, MiniportCancelDirectOidRequest callback function [Network Drivers Starting with Windows Vista], MiniportCancelDirectOidRequest, MINIPORT_CANCEL_DIRECT_OID_REQUEST, MINIPORT_CANCEL_DIRECT_OID_REQUEST, ndis/MiniportCancelDirectOidRequest, ndis_request_direct_ref_d98875f6-2607-4d82-ac0f-615a33c0b11e.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.1 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
+UID: NC:ndis.MINIPORT_CANCEL_DIRECT_OID_REQUEST
+title: MINIPORT_CANCEL_DIRECT_OID_REQUEST
+author: windows-driver-content
+description: NDIS calls a miniport driver's MiniportCancelDirectOidRequest function to cancel a direct OID request.
+old-location: netvista\miniportcanceldirectoidrequest.htm
+old-project: netvista
+ms.assetid: 88639bb4-89f3-4e7f-9cce-ea541224572d
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.miniportcanceldirectoidrequest, MiniportCancelDirectOidRequest callback function [Network Drivers Starting with Windows Vista], MiniportCancelDirectOidRequest, MINIPORT_CANCEL_DIRECT_OID_REQUEST, MINIPORT_CANCEL_DIRECT_OID_REQUEST, ndis/MiniportCancelDirectOidRequest, ndis_request_direct_ref_d98875f6-2607-4d82-ac0f-615a33c0b11e.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.1 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ndis.h
+apiname:
+-	MiniportCancelDirectOidRequest
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 

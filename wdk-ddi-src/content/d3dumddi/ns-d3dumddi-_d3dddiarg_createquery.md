@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._D3DDDIARG_CREATEQUERY
-title : "_D3DDDIARG_CREATEQUERY"
-author : windows-driver-content
-description : The D3DDDIARG_CREATEQUERY structure identifies a query to create.
-old-location : display\d3dddiarg_createquery.htm
-old-project : display
-ms.assetid : f80224c6-9046-4471-b6c6-eb14f02fc51f
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.d3dddiarg_createquery, D3DDDIARG_CREATEQUERY, _D3DDDIARG_CREATEQUERY, UMDisplayDriver_param_Structs_37293319-c280-4363-936a-65a8a5af4c45.xml, D3DDDIARG_CREATEQUERY structure [Display Devices], d3dumddi/D3DDDIARG_CREATEQUERY
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDIARG_CREATEQUERY
+UID: NS:d3dumddi._D3DDDIARG_CREATEQUERY
+title: "_D3DDDIARG_CREATEQUERY"
+author: windows-driver-content
+description: The D3DDDIARG_CREATEQUERY structure identifies a query to create.
+old-location: display\d3dddiarg_createquery.htm
+old-project: display
+ms.assetid: f80224c6-9046-4471-b6c6-eb14f02fc51f
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.d3dddiarg_createquery, D3DDDIARG_CREATEQUERY, _D3DDDIARG_CREATEQUERY, UMDisplayDriver_param_Structs_37293319-c280-4363-936a-65a8a5af4c45.xml, D3DDDIARG_CREATEQUERY structure [Display Devices], d3dumddi/D3DDDIARG_CREATEQUERY
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	D3DDDIARG_CREATEQUERY
+product: Windows
+targetos: Windows
+req.typenames: D3DDDIARG_CREATEQUERY
 ---
 
 # _D3DDDIARG_CREATEQUERY structure

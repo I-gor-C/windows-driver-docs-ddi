@@ -1,42 +1,47 @@
 ---
-UID : NF:vmbuskernelmodeclientlibapi.VmbServerChannelInitSetFlags
-title : VmbServerChannelInitSetFlags function
-author : windows-driver-content
-description : The VmbServerChannelInitSetFlags function sets flags unique to server channel endpoints.
-old-location : netvista\vmbserverchannelinitsetflags.htm
-old-project : netvista
-ms.assetid : F6DBD055-8B6F-4B2B-B584-3C06979DD6DF
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : VmbServerChannelInitSetFlags, vmbuskernelmodeclientlibapi/VmbServerChannelInitSetFlags, netvista.vmbserverchannelinitsetflags, VmbServerChannelInitSetFlags function [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : vmbuskernelmodeclientlibapi.h
-req.include-header : VmbusKernelModeClientLibApi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8.1
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 1.13
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PVIDEO_PORT_AGP_SERVICES, VIDEO_PORT_AGP_SERVICES"
-req.product : Windows 10 or later.
+UID: NF:vmbuskernelmodeclientlibapi.VmbServerChannelInitSetFlags
+title: VmbServerChannelInitSetFlags function
+author: windows-driver-content
+description: The VmbServerChannelInitSetFlags function sets flags unique to server channel endpoints.
+old-location: netvista\vmbserverchannelinitsetflags.htm
+old-project: netvista
+ms.assetid: F6DBD055-8B6F-4B2B-B584-3C06979DD6DF
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: VmbServerChannelInitSetFlags, vmbuskernelmodeclientlibapi/VmbServerChannelInitSetFlags, netvista.vmbserverchannelinitsetflags, VmbServerChannelInitSetFlags function [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: vmbuskernelmodeclientlibapi.h
+req.include-header: VmbusKernelModeClientLibApi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8.1
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 1.13
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	VmbusKernelModeClientLibApi.h
+apiname:
+-	VmbServerChannelInitSetFlags
+product: Windows
+targetos: Windows
+req.typenames: "*PVIDEO_PORT_AGP_SERVICES, VIDEO_PORT_AGP_SERVICES"
+req.product: Windows 10 or later.
 ---
 
 

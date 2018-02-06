@@ -1,41 +1,46 @@
 ---
-UID : NC:netdispumdddi.PFN_GET_NEXT_CHUNK_DATA
-title : PFN_GET_NEXT_CHUNK_DATA
-author : windows-driver-content
-description : Provides info about the next Miracast encode chunk that was reported to the Microsoft DirectX graphics kernel subsystem when the DXGK_INTERRUPT_TYPE interrupt type is DXGK_INTERRUPT_MICACAST_CHUNK_PROCESSING_COMPLETE.The data type of this function is PFN_GET_NEXT_CHUNK_DATA.
-old-location : display\getnextchunkdata.htm
-old-project : display
-ms.assetid : 24b1d89a-4200-41ec-aa73-15b37e4cca6d
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.getnextchunkdata, PFN_GET_NEXT_CHUNK_DATA, GetNextChunkData callback function [Display Devices], GetNextChunkData, PFN_GET_NEXT_CHUNK_DATA, PFN_GET_NEXT_CHUNK_DATA, netdispumdddi/GetNextChunkData
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : netdispumdddi.h
-req.include-header : Netdispumdddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8.1
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDK_SRQ_DISPATCH
+UID: NC:netdispumdddi.PFN_GET_NEXT_CHUNK_DATA
+title: PFN_GET_NEXT_CHUNK_DATA
+author: windows-driver-content
+description: Provides info about the next Miracast encode chunk that was reported to the Microsoft DirectX graphics kernel subsystem when the DXGK_INTERRUPT_TYPE interrupt type is DXGK_INTERRUPT_MICACAST_CHUNK_PROCESSING_COMPLETE.The data type of this function is PFN_GET_NEXT_CHUNK_DATA.
+old-location: display\getnextchunkdata.htm
+old-project: display
+ms.assetid: 24b1d89a-4200-41ec-aa73-15b37e4cca6d
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.getnextchunkdata, PFN_GET_NEXT_CHUNK_DATA, GetNextChunkData callback function [Display Devices], GetNextChunkData, PFN_GET_NEXT_CHUNK_DATA, PFN_GET_NEXT_CHUNK_DATA, netdispumdddi/GetNextChunkData
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: netdispumdddi.h
+req.include-header: Netdispumdddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8.1
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Netdispumdddi.h
+apiname:
+-	GetNextChunkData
+product: Windows
+targetos: Windows
+req.typenames: NDK_SRQ_DISPATCH
 ---
 
 

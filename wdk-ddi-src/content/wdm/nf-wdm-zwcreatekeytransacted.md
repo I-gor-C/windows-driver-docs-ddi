@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.ZwCreateKeyTransacted
-title : ZwCreateKeyTransacted function
-author : windows-driver-content
-description : The ZwCreateKeyTransacted routine creates a new registry key or opens an existing one, and it associates the key with a transaction.
-old-location : kernel\zwcreatekeytransacted.htm
-old-project : kernel
-ms.assetid : c0cf38f4-2820-4177-93e6-2e20524d0353
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/ZwCreateKeyTransacted, kernel.zwcreatekeytransacted, ZwCreateKeyTransacted, k111_7063495c-2357-4c51-b708-f72ed52bc166.xml, ZwCreateKeyTransacted routine [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ZwCreateKeyTransacted
+title: ZwCreateKeyTransacted function
+author: windows-driver-content
+description: The ZwCreateKeyTransacted routine creates a new registry key or opens an existing one, and it associates the key with a transaction.
+old-location: kernel\zwcreatekeytransacted.htm
+old-project: kernel
+ms.assetid: c0cf38f4-2820-4177-93e6-2e20524d0353
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/ZwCreateKeyTransacted, kernel.zwcreatekeytransacted, ZwCreateKeyTransacted, k111_7063495c-2357-4c51-b708-f72ed52bc166.xml, ZwCreateKeyTransacted routine [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ZwCreateKeyTransacted
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

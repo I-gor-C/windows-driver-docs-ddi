@@ -1,41 +1,49 @@
 ---
-UID : NF:d3dkmthk.D3DKMTDestroyKeyedMutex
-title : D3DKMTDestroyKeyedMutex function
-author : windows-driver-content
-description : The D3DKMTDestroyKeyedMutex function destroys a keyed mutex object.
-old-location : display\d3dkmtdestroykeyedmutex.htm
-old-project : display
-ms.assetid : 5905035f-25e1-49df-bf59-bef81e724c49
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DKMTDestroyKeyedMutex function [Display Devices], D3DKMTDestroyKeyedMutex, OpenGL_Functions_de5400f1-6ef8-431c-a838-8c82cb03d7f1.xml, d3dkmthk/D3DKMTDestroyKeyedMutex, display.d3dkmtdestroykeyedmutex
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Universal
-req.target-min-winverclnt : D3DKMTDestroyKeyedMutex is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Gdi32.lib
-req.dll : Gdi32.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_DRIVERVERSION
+UID: NF:d3dkmthk.D3DKMTDestroyKeyedMutex
+title: D3DKMTDestroyKeyedMutex function
+author: windows-driver-content
+description: The D3DKMTDestroyKeyedMutex function destroys a keyed mutex object.
+old-location: display\d3dkmtdestroykeyedmutex.htm
+old-project: display
+ms.assetid: 5905035f-25e1-49df-bf59-bef81e724c49
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DKMTDestroyKeyedMutex function [Display Devices], D3DKMTDestroyKeyedMutex, OpenGL_Functions_de5400f1-6ef8-431c-a838-8c82cb03d7f1.xml, d3dkmthk/D3DKMTDestroyKeyedMutex, display.d3dkmtdestroykeyedmutex
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Universal
+req.target-min-winverclnt: D3DKMTDestroyKeyedMutex is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Gdi32.lib
+req.dll: Gdi32.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Gdi32.dll
+-	API-MS-Win-dx-d3dkmt-l1-1-0.dll
+-	API-MS-Win-dx-d3dkmt-l1-1-1.dll
+-	API-MS-Win-DX-D3DKMT-L1-1-2.dll
+apiname:
+-	D3DKMTDestroyKeyedMutex
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_DRIVERVERSION
 ---
 
 

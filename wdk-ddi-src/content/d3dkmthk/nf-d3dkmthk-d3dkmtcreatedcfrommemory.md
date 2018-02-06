@@ -1,41 +1,49 @@
 ---
-UID : NF:d3dkmthk.D3DKMTCreateDCFromMemory
-title : D3DKMTCreateDCFromMemory function
-author : windows-driver-content
-description : The D3DKMTCreateDCFromMemory function creates a display context from a specified block of memory.
-old-location : display\d3dkmtcreatedcfrommemory.htm
-old-project : display
-ms.assetid : c02f53d9-7cf2-4420-9aea-4dba916be786
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DKMTCreateDCFromMemory, PFND3DKMT_CREATEDCFROMMEMORY, D3DKMTCreateDCFromMemory function [Display Devices], d3dkmthk/D3DKMTCreateDCFromMemory, OpenGL_Functions_676f0d3e-5a5a-48d5-9092-88ac897a73b8.xml, display.d3dkmtcreatedcfrommemory
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Gdi32.lib
-req.dll : Gdi32.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_DRIVERVERSION
+UID: NF:d3dkmthk.D3DKMTCreateDCFromMemory
+title: D3DKMTCreateDCFromMemory function
+author: windows-driver-content
+description: The D3DKMTCreateDCFromMemory function creates a display context from a specified block of memory.
+old-location: display\d3dkmtcreatedcfrommemory.htm
+old-project: display
+ms.assetid: c02f53d9-7cf2-4420-9aea-4dba916be786
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DKMTCreateDCFromMemory, PFND3DKMT_CREATEDCFROMMEMORY, D3DKMTCreateDCFromMemory function [Display Devices], d3dkmthk/D3DKMTCreateDCFromMemory, OpenGL_Functions_676f0d3e-5a5a-48d5-9092-88ac897a73b8.xml, display.d3dkmtcreatedcfrommemory
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Gdi32.lib
+req.dll: Gdi32.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Gdi32.dll
+-	API-MS-Win-dx-d3dkmt-l1-1-0.dll
+-	API-MS-Win-dx-d3dkmt-l1-1-1.dll
+-	API-MS-Win-DX-D3DKMT-L1-1-2.dll
+apiname:
+-	D3DKMTCreateDCFromMemory
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_DRIVERVERSION
 ---
 
 

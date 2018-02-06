@@ -1,42 +1,47 @@
 ---
-UID : NC:videoagp.PAGP_RESERVE_VIRTUAL
-title : PAGP_RESERVE_VIRTUAL
-author : windows-driver-content
-description : The AgpReserveVirtual function reserves a range of virtual addresses for AGP.
-old-location : display\agpreservevirtual.htm
-old-project : display
-ms.assetid : 966dfc6c-6830-4872-b411-2801e3a4b753
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.agpreservevirtual, AgpReserveVirtual callback function [Display Devices], AgpReserveVirtual, PAGP_RESERVE_VIRTUAL, PAGP_RESERVE_VIRTUAL, videoagp/AgpReserveVirtual, VideoPort_Functions_ed4d4e19-25f2-4169-a80e-8c57c80ffd2b.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : videoagp.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows 2000 and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VP_SCATTER_GATHER_LIST, *PVP_SCATTER_GATHER_LIST
-req.product : Windows 10 or later.
+UID: NC:videoagp.PAGP_RESERVE_VIRTUAL
+title: PAGP_RESERVE_VIRTUAL
+author: windows-driver-content
+description: The AgpReserveVirtual function reserves a range of virtual addresses for AGP.
+old-location: display\agpreservevirtual.htm
+old-project: display
+ms.assetid: 966dfc6c-6830-4872-b411-2801e3a4b753
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.agpreservevirtual, AgpReserveVirtual callback function [Display Devices], AgpReserveVirtual, PAGP_RESERVE_VIRTUAL, PAGP_RESERVE_VIRTUAL, videoagp/AgpReserveVirtual, VideoPort_Functions_ed4d4e19-25f2-4169-a80e-8c57c80ffd2b.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: videoagp.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows 2000 and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	videoagp.h
+apiname:
+-	AgpReserveVirtual
+product: Windows
+targetos: Windows
+req.typenames: VP_SCATTER_GATHER_LIST, *PVP_SCATTER_GATHER_LIST
+req.product: Windows 10 or later.
 ---
 
 

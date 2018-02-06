@@ -1,42 +1,47 @@
 ---
-UID : NS:winsplp._SPLCLIENT_INFO_2_V1
-title : "_SPLCLIENT_INFO_2_V1"
-author : windows-driver-content
-description : Contains the handle for the server-side printer that is used to make direct API calls from the client to the server without the overhead of the RPC.
-old-location : print\splclient_info_2_w2k.htm
-old-project : print
-ms.assetid : 713246FE-355B-4C01-A8DF-535BDBA0FCB8
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : print.splclient_info_2_w2k, *PSPLCLIENT_INFO_2, SPLCLIENT_INFO_2_W2K, winsplp/SPLCLIENT_INFO_2_W2K, *LPSPLCLIENT_INFO_2, SPLCLIENT_INFO_2, _SPLCLIENT_INFO_2_V1, SPLCLIENT_INFO_2_W2K structure [Print Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : winsplp.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SPLCLIENT_INFO_2_W2K
-req.product : Windows 10 or later.
+UID: NS:winsplp._SPLCLIENT_INFO_2_V1
+title: "_SPLCLIENT_INFO_2_V1"
+author: windows-driver-content
+description: Contains the handle for the server-side printer that is used to make direct API calls from the client to the server without the overhead of the RPC.
+old-location: print\splclient_info_2_w2k.htm
+old-project: print
+ms.assetid: 713246FE-355B-4C01-A8DF-535BDBA0FCB8
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: print.splclient_info_2_w2k, *PSPLCLIENT_INFO_2, SPLCLIENT_INFO_2_W2K, winsplp/SPLCLIENT_INFO_2_W2K, *LPSPLCLIENT_INFO_2, SPLCLIENT_INFO_2, _SPLCLIENT_INFO_2_V1, SPLCLIENT_INFO_2_W2K structure [Print Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: winsplp.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Winsplp.h
+apiname:
+-	SPLCLIENT_INFO_2_W2K
+product: Windows
+targetos: Windows
+req.typenames: SPLCLIENT_INFO_2_W2K
+req.product: Windows 10 or later.
 ---
 
 # _SPLCLIENT_INFO_2_V1 structure

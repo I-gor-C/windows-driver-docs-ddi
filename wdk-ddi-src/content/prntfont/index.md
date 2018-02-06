@@ -1,12 +1,12 @@
 ---
-UID : NA:prntfont
-ms.assetid : f5e425fd-5595-35f2-a035-642b39d97e9f
-ms.author : windowsdriverdev
-ms.date : 01/18/18
-ms.keywords : 
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : portal
+UID: NA:prntfont
+ms.assetid: f5e425fd-5595-35f2-a035-642b39d97e9f
+ms.author: windowsdriverdev
+ms.date: 01/18/18
+ms.keywords: 
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: portal
 ---
 
 # prntfont.h header

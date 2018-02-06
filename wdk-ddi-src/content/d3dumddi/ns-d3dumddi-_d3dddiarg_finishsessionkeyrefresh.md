@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._D3DDDIARG_FINISHSESSIONKEYREFRESH
-title : "_D3DDDIARG_FINISHSESSIONKEYREFRESH"
-author : windows-driver-content
-description : The D3DDDIARG_FINISHSESSIONKEYREFRESH structure contains the handle to an encryption session to end in a call to the FinishSessionKeyRefresh function.
-old-location : display\d3dddiarg_finishsessionkeyrefresh.htm
-old-project : display
-ms.assetid : 5d262012-c4f4-4f86-a3a2-48c2fd7d5216
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DDDIARG_FINISHSESSIONKEYREFRESH, d3dumddi/D3DDDIARG_FINISHSESSIONKEYREFRESH, _D3DDDIARG_FINISHSESSIONKEYREFRESH, display.d3dddiarg_finishsessionkeyrefresh, D3DDDIARG_FINISHSESSIONKEYREFRESH structure [Display Devices], UMDisplayDriver_param_Structs_ac18e377-42c2-4c4a-9625-1b0bf29375c2.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : D3DDDIARG_FINISHSESSIONKEYREFRESH is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDIARG_FINISHSESSIONKEYREFRESH
+UID: NS:d3dumddi._D3DDDIARG_FINISHSESSIONKEYREFRESH
+title: "_D3DDDIARG_FINISHSESSIONKEYREFRESH"
+author: windows-driver-content
+description: The D3DDDIARG_FINISHSESSIONKEYREFRESH structure contains the handle to an encryption session to end in a call to the FinishSessionKeyRefresh function.
+old-location: display\d3dddiarg_finishsessionkeyrefresh.htm
+old-project: display
+ms.assetid: 5d262012-c4f4-4f86-a3a2-48c2fd7d5216
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DDDIARG_FINISHSESSIONKEYREFRESH, d3dumddi/D3DDDIARG_FINISHSESSIONKEYREFRESH, _D3DDDIARG_FINISHSESSIONKEYREFRESH, display.d3dddiarg_finishsessionkeyrefresh, D3DDDIARG_FINISHSESSIONKEYREFRESH structure [Display Devices], UMDisplayDriver_param_Structs_ac18e377-42c2-4c4a-9625-1b0bf29375c2.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: D3DDDIARG_FINISHSESSIONKEYREFRESH is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	D3DDDIARG_FINISHSESSIONKEYREFRESH
+product: Windows
+targetos: Windows
+req.typenames: D3DDDIARG_FINISHSESSIONKEYREFRESH
 ---
 
 # _D3DDDIARG_FINISHSESSIONKEYREFRESH structure

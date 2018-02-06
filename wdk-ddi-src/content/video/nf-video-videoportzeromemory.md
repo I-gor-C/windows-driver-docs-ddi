@@ -1,42 +1,47 @@
 ---
-UID : NF:video.VideoPortZeroMemory
-title : VideoPortZeroMemory function
-author : windows-driver-content
-description : The VideoPortZeroMemory function fills a block of system memory with zeros.
-old-location : display\videoportzeromemory.htm
-old-project : display
-ms.assetid : 96827d2e-0fee-4276-a758-82f5b7383eec
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : video/VideoPortZeroMemory, VideoPortZeroMemory, VideoPortZeroMemory function [Display Devices], display.videoportzeromemory, VideoPort_Functions_518c5fa4-2011-47bd-a24c-0dff144dfa3a.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows 2000 and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Videoprt.lib
-req.dll : Videoprt.sys
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_PORT_SERVICES
-req.product : Windows 10 or later.
+UID: NF:video.VideoPortZeroMemory
+title: VideoPortZeroMemory function
+author: windows-driver-content
+description: The VideoPortZeroMemory function fills a block of system memory with zeros.
+old-location: display\videoportzeromemory.htm
+old-project: display
+ms.assetid: 96827d2e-0fee-4276-a758-82f5b7383eec
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: video/VideoPortZeroMemory, VideoPortZeroMemory, VideoPortZeroMemory function [Display Devices], display.videoportzeromemory, VideoPort_Functions_518c5fa4-2011-47bd-a24c-0dff144dfa3a.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows 2000 and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Videoprt.lib
+req.dll: Videoprt.sys
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Videoprt.sys
+apiname:
+-	VideoPortZeroMemory
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_PORT_SERVICES
+req.product: Windows 10 or later.
 ---
 
 

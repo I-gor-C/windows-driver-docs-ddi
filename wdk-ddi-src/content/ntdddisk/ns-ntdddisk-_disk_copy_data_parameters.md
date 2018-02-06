@@ -1,41 +1,46 @@
 ---
-UID : NS:ntdddisk._DISK_COPY_DATA_PARAMETERS
-title : "_DISK_COPY_DATA_PARAMETERS"
-author : windows-driver-content
-description : DISK_COPY_DATA_PARAMETERS is used with IOCTL_DISK_COPY_DATA to copy data from one area of the disk to another.
-old-location : storage\disk_copy_data_parameters.htm
-old-project : storage
-ms.assetid : 17d75b0e-2521-441f-99ea-75d2ea1d52b3
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : DISK_COPY_DATA_PARAMETERS structure [Storage Devices], storage.disk_copy_data_parameters, ntdddisk/PDISK_COPY_DATA_PARAMETERS, PDISK_COPY_DATA_PARAMETERS structure pointer [Storage Devices], structs-disk_3b1d751a-57a0-47a6-accd-f895fdb9bb61.xml, DISK_COPY_DATA_PARAMETERS, _DISK_COPY_DATA_PARAMETERS, *PDISK_COPY_DATA_PARAMETERS, ntdddisk/DISK_COPY_DATA_PARAMETERS, PDISK_COPY_DATA_PARAMETERS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntdddisk.h
-req.include-header : Ntdddisk.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DISK_COPY_DATA_PARAMETERS, *PDISK_COPY_DATA_PARAMETERS
+UID: NS:ntdddisk._DISK_COPY_DATA_PARAMETERS
+title: "_DISK_COPY_DATA_PARAMETERS"
+author: windows-driver-content
+description: DISK_COPY_DATA_PARAMETERS is used with IOCTL_DISK_COPY_DATA to copy data from one area of the disk to another.
+old-location: storage\disk_copy_data_parameters.htm
+old-project: storage
+ms.assetid: 17d75b0e-2521-441f-99ea-75d2ea1d52b3
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: DISK_COPY_DATA_PARAMETERS structure [Storage Devices], storage.disk_copy_data_parameters, ntdddisk/PDISK_COPY_DATA_PARAMETERS, PDISK_COPY_DATA_PARAMETERS structure pointer [Storage Devices], structs-disk_3b1d751a-57a0-47a6-accd-f895fdb9bb61.xml, DISK_COPY_DATA_PARAMETERS, _DISK_COPY_DATA_PARAMETERS, *PDISK_COPY_DATA_PARAMETERS, ntdddisk/DISK_COPY_DATA_PARAMETERS, PDISK_COPY_DATA_PARAMETERS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntdddisk.h
+req.include-header: Ntdddisk.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntdddisk.h
+apiname:
+-	DISK_COPY_DATA_PARAMETERS
+product: Windows
+targetos: Windows
+req.typenames: DISK_COPY_DATA_PARAMETERS, *PDISK_COPY_DATA_PARAMETERS
 ---
 
 # _DISK_COPY_DATA_PARAMETERS structure

@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmdt._D3DKMDT_MONITOR_SOURCE_MODE
-title : "_D3DKMDT_MONITOR_SOURCE_MODE"
-author : windows-driver-content
-description : The D3DKMDT_MONITOR_SOURCE_MODE structure contains information about a monitor source mode.
-old-location : display\d3dkmdt_monitor_source_mode.htm
-old-project : display
-ms.assetid : bccacf88-b66b-4d55-b3a8-9d9b8cfcede8
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : "_D3DKMDT_MONITOR_SOURCE_MODE, D3DKMDT_MONITOR_SOURCE_MODE, display.d3dkmdt_monitor_source_mode, d3dkmdt/D3DKMDT_MONITOR_SOURCE_MODE, DmStructs_165795ef-f70e-4f50-a35f-c6009c547be2.xml, D3DKMDT_MONITOR_SOURCE_MODE structure [Display Devices]"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmdt.h
-req.include-header : D3dkmdt.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMDT_MONITOR_SOURCE_MODE
+UID: NS:d3dkmdt._D3DKMDT_MONITOR_SOURCE_MODE
+title: "_D3DKMDT_MONITOR_SOURCE_MODE"
+author: windows-driver-content
+description: The D3DKMDT_MONITOR_SOURCE_MODE structure contains information about a monitor source mode.
+old-location: display\d3dkmdt_monitor_source_mode.htm
+old-project: display
+ms.assetid: bccacf88-b66b-4d55-b3a8-9d9b8cfcede8
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: "_D3DKMDT_MONITOR_SOURCE_MODE, D3DKMDT_MONITOR_SOURCE_MODE, display.d3dkmdt_monitor_source_mode, d3dkmdt/D3DKMDT_MONITOR_SOURCE_MODE, DmStructs_165795ef-f70e-4f50-a35f-c6009c547be2.xml, D3DKMDT_MONITOR_SOURCE_MODE structure [Display Devices]"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmdt.h
+req.include-header: D3dkmdt.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmdt.h
+apiname:
+-	D3DKMDT_MONITOR_SOURCE_MODE
+product: Windows
+targetos: Windows
+req.typenames: D3DKMDT_MONITOR_SOURCE_MODE
 ---
 
 # _D3DKMDT_MONITOR_SOURCE_MODE structure

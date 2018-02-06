@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsAddItemToObjectBag
-title : KsAddItemToObjectBag function
-author : windows-driver-content
-description : The KsAddItemToObjectBag function adds an object or block of memory to the given object bag.
-old-location : stream\ksadditemtoobjectbag.htm
-old-project : stream
-ms.assetid : 4c8b6252-8438-4cd1-81e0-02c260da0daf
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KsAddItemToObjectBag function [Streaming Media Devices], stream.ksadditemtoobjectbag, ks/KsAddItemToObjectBag, KsAddItemToObjectBag, avfunc_c7496331-05a5-4336-9c62-144e2db6e218.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsAddItemToObjectBag
+title: KsAddItemToObjectBag function
+author: windows-driver-content
+description: The KsAddItemToObjectBag function adds an object or block of memory to the given object bag.
+old-location: stream\ksadditemtoobjectbag.htm
+old-project: stream
+ms.assetid: 4c8b6252-8438-4cd1-81e0-02c260da0daf
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KsAddItemToObjectBag function [Streaming Media Devices], stream.ksadditemtoobjectbag, ks/KsAddItemToObjectBag, KsAddItemToObjectBag, avfunc_c7496331-05a5-4336-9c62-144e2db6e218.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsAddItemToObjectBag
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

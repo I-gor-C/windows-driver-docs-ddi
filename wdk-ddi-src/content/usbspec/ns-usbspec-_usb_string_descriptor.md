@@ -1,42 +1,47 @@
 ---
-UID : NS:usbspec._USB_STRING_DESCRIPTOR
-title : "_USB_STRING_DESCRIPTOR"
-author : windows-driver-content
-description : The USB_STRING_DESCRIPTOR structure is used by USB client drivers to hold a USB-defined string descriptor.
-old-location : buses\usb_string_descriptor.htm
-old-project : usbref
-ms.assetid : 20d76582-4138-4a45-940b-a8e9207946a5
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : PUSB_STRING_DESCRIPTOR, usbspec/PUSB_STRING_DESCRIPTOR, usbspec/USB_STRING_DESCRIPTOR, usbstrct_b0740c7e-9042-4426-be26-20b8620a0e7e.xml, _USB_STRING_DESCRIPTOR, buses.usb_string_descriptor, *PUSB_STRING_DESCRIPTOR, PUSB_STRING_DESCRIPTOR structure pointer [Buses], USB_STRING_DESCRIPTOR structure [Buses], USB_STRING_DESCRIPTOR
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : usbspec.h
-req.include-header : Usbioctl.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUSB_STRING_DESCRIPTOR, USB_STRING_DESCRIPTOR"
-req.product : Windows 10 or later.
+UID: NS:usbspec._USB_STRING_DESCRIPTOR
+title: "_USB_STRING_DESCRIPTOR"
+author: windows-driver-content
+description: The USB_STRING_DESCRIPTOR structure is used by USB client drivers to hold a USB-defined string descriptor.
+old-location: buses\usb_string_descriptor.htm
+old-project: usbref
+ms.assetid: 20d76582-4138-4a45-940b-a8e9207946a5
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: PUSB_STRING_DESCRIPTOR, usbspec/PUSB_STRING_DESCRIPTOR, usbspec/USB_STRING_DESCRIPTOR, usbstrct_b0740c7e-9042-4426-be26-20b8620a0e7e.xml, _USB_STRING_DESCRIPTOR, buses.usb_string_descriptor, *PUSB_STRING_DESCRIPTOR, PUSB_STRING_DESCRIPTOR structure pointer [Buses], USB_STRING_DESCRIPTOR structure [Buses], USB_STRING_DESCRIPTOR
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: usbspec.h
+req.include-header: Usbioctl.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	usbspec.h
+apiname:
+-	USB_STRING_DESCRIPTOR
+product: Windows
+targetos: Windows
+req.typenames: "*PUSB_STRING_DESCRIPTOR, USB_STRING_DESCRIPTOR"
+req.product: Windows 10 or later.
 ---
 
 # _USB_STRING_DESCRIPTOR structure

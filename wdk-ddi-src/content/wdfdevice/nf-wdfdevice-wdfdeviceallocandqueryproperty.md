@@ -1,42 +1,50 @@
 ---
-UID : NF:wdfdevice.WdfDeviceAllocAndQueryProperty
-title : WdfDeviceAllocAndQueryProperty function
-author : windows-driver-content
-description : The WdfDeviceAllocAndQueryProperty method allocates a buffer and retrieves a specified device property.
-old-location : wdf\wdfdeviceallocandqueryproperty.htm
-old-project : wdf
-ms.assetid : f921fee7-e2c0-4e0f-a78b-d2dff8af97a2
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : PFN_WDFDEVICEALLOCANDQUERYPROPERTY, kmdf.wdfdeviceallocandqueryproperty, WdfDeviceAllocAndQueryProperty method, wdfdevice/WdfDeviceAllocAndQueryProperty, DFDeviceObjectGeneralRef_d093b9da-de6b-467d-a6bd-c25d7a4145f8.xml, WdfDeviceAllocAndQueryProperty, wdf.wdfdeviceallocandqueryproperty
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfdevice.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_STATE_NOTIFICATION_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfdevice.WdfDeviceAllocAndQueryProperty
+title: WdfDeviceAllocAndQueryProperty function
+author: windows-driver-content
+description: The WdfDeviceAllocAndQueryProperty method allocates a buffer and retrieves a specified device property.
+old-location: wdf\wdfdeviceallocandqueryproperty.htm
+old-project: wdf
+ms.assetid: f921fee7-e2c0-4e0f-a78b-d2dff8af97a2
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: PFN_WDFDEVICEALLOCANDQUERYPROPERTY, kmdf.wdfdeviceallocandqueryproperty, WdfDeviceAllocAndQueryProperty method, wdfdevice/WdfDeviceAllocAndQueryProperty, DFDeviceObjectGeneralRef_d093b9da-de6b-467d-a6bd-c25d7a4145f8.xml, WdfDeviceAllocAndQueryProperty, wdf.wdfdeviceallocandqueryproperty
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfdevice.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+-	WUDFx02000.dll
+-	WUDFx02000.dll.dll
+apiname:
+-	WdfDeviceAllocAndQueryProperty
+product: Windows
+targetos: Windows
+req.typenames: WDF_STATE_NOTIFICATION_TYPE
+req.product: Windows 10 or later.
 ---
 
 

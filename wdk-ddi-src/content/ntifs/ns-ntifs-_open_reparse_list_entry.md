@@ -1,41 +1,46 @@
 ---
-UID : NS:ntifs._OPEN_REPARSE_LIST_ENTRY
-title : "_OPEN_REPARSE_LIST_ENTRY"
-author : windows-driver-content
-description : This structure supports callers opening specific reparse points without inhibiting reparse behavior for all classes of reparse points.
-old-location : ifsk\open_reparse_list_entry_.htm
-old-project : ifsk
-ms.assetid : A6D28F60-FA38-45EA-9E3C-D2E6F899333E
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : OPEN_REPARSE_POINT_VERSION_EX, ifsk.open_reparse_list_entry_, ntifs/POPEN_REPARSE_LIST_ENTRY, POPEN_REPARSE_LIST_ENTRY, OPEN_REPARSE_POINT_TAG_ENCOUNTERED, OPEN_REPARSE_POINT_REPARSE_IF_CHILD_NOT_EXISTS, _OPEN_REPARSE_LIST_ENTRY, OPEN_REPARSE_LIST_ENTRY structure [Installable File System Drivers], OPEN_REPARSE_LIST_ENTRY, OPEN_REPARSE_POINT_REPARSE_IF_DIRECTORY_FINAL_COMPONENT, OPEN_REPARSE_POINT_REPARSE_IF_CHILD_EXISTS, ntifs/OPEN_REPARSE_LIST_ENTRY, *POPEN_REPARSE_LIST_ENTRY, POPEN_REPARSE_LIST_ENTRY structure pointer [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntifs.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10, version 1607
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*POPEN_REPARSE_LIST_ENTRY, OPEN_REPARSE_LIST_ENTRY"
+UID: NS:ntifs._OPEN_REPARSE_LIST_ENTRY
+title: "_OPEN_REPARSE_LIST_ENTRY"
+author: windows-driver-content
+description: This structure supports callers opening specific reparse points without inhibiting reparse behavior for all classes of reparse points.
+old-location: ifsk\open_reparse_list_entry_.htm
+old-project: ifsk
+ms.assetid: A6D28F60-FA38-45EA-9E3C-D2E6F899333E
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: OPEN_REPARSE_POINT_VERSION_EX, ifsk.open_reparse_list_entry_, ntifs/POPEN_REPARSE_LIST_ENTRY, POPEN_REPARSE_LIST_ENTRY, OPEN_REPARSE_POINT_TAG_ENCOUNTERED, OPEN_REPARSE_POINT_REPARSE_IF_CHILD_NOT_EXISTS, _OPEN_REPARSE_LIST_ENTRY, OPEN_REPARSE_LIST_ENTRY structure [Installable File System Drivers], OPEN_REPARSE_LIST_ENTRY, OPEN_REPARSE_POINT_REPARSE_IF_DIRECTORY_FINAL_COMPONENT, OPEN_REPARSE_POINT_REPARSE_IF_CHILD_EXISTS, ntifs/OPEN_REPARSE_LIST_ENTRY, *POPEN_REPARSE_LIST_ENTRY, POPEN_REPARSE_LIST_ENTRY structure pointer [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntifs.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10, version 1607
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntifs.h
+apiname:
+-	OPEN_REPARSE_LIST_ENTRY
+product: Windows
+targetos: Windows
+req.typenames: "*POPEN_REPARSE_LIST_ENTRY, OPEN_REPARSE_LIST_ENTRY"
 ---
 
 # _OPEN_REPARSE_LIST_ENTRY structure

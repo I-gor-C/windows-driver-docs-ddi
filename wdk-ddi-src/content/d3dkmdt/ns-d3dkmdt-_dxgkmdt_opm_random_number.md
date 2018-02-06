@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmdt._DXGKMDT_OPM_RANDOM_NUMBER
-title : "_DXGKMDT_OPM_RANDOM_NUMBER"
-author : windows-driver-content
-description : The DXGKMDT_OPM_RANDOM_NUMBER structure contains a 128-bit cryptographically secure random number.
-old-location : display\dxgkmdt_opm_random_number.htm
-old-project : display
-ms.assetid : 40b3217f-2529-4551-ad72-7e1600b58351
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DXGKMDT_OPM_RANDOM_NUMBER structure [Display Devices], d3dkmdt/DXGKMDT_OPM_RANDOM_NUMBER, _DXGKMDT_OPM_RANDOM_NUMBER, PDXGKMDT_OPM_RANDOM_NUMBER structure pointer [Display Devices], *PDXGKMDT_OPM_RANDOM_NUMBER, display.dxgkmdt_opm_random_number, d3dkmdt/PDXGKMDT_OPM_RANDOM_NUMBER, DXGKMDT_OPM_RANDOM_NUMBER, PDXGKMDT_OPM_RANDOM_NUMBER, DmStructs_904ac539-a89e-4192-b520-29837016633d.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmdt.h
-req.include-header : D3dkmdt.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDXGKMDT_OPM_RANDOM_NUMBER, DXGKMDT_OPM_RANDOM_NUMBER"
+UID: NS:d3dkmdt._DXGKMDT_OPM_RANDOM_NUMBER
+title: "_DXGKMDT_OPM_RANDOM_NUMBER"
+author: windows-driver-content
+description: The DXGKMDT_OPM_RANDOM_NUMBER structure contains a 128-bit cryptographically secure random number.
+old-location: display\dxgkmdt_opm_random_number.htm
+old-project: display
+ms.assetid: 40b3217f-2529-4551-ad72-7e1600b58351
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DXGKMDT_OPM_RANDOM_NUMBER structure [Display Devices], d3dkmdt/DXGKMDT_OPM_RANDOM_NUMBER, _DXGKMDT_OPM_RANDOM_NUMBER, PDXGKMDT_OPM_RANDOM_NUMBER structure pointer [Display Devices], *PDXGKMDT_OPM_RANDOM_NUMBER, display.dxgkmdt_opm_random_number, d3dkmdt/PDXGKMDT_OPM_RANDOM_NUMBER, DXGKMDT_OPM_RANDOM_NUMBER, PDXGKMDT_OPM_RANDOM_NUMBER, DmStructs_904ac539-a89e-4192-b520-29837016633d.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmdt.h
+req.include-header: D3dkmdt.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmdt.h
+apiname:
+-	DXGKMDT_OPM_RANDOM_NUMBER
+product: Windows
+targetos: Windows
+req.typenames: "*PDXGKMDT_OPM_RANDOM_NUMBER, DXGKMDT_OPM_RANDOM_NUMBER"
 ---
 
 # _DXGKMDT_OPM_RANDOM_NUMBER structure

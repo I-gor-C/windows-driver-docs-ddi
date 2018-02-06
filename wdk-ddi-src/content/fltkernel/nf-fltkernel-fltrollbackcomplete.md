@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltRollbackComplete
-title : FltRollbackComplete function
-author : windows-driver-content
-description : The FltRollbackComplete routine acknowledges a TRANSACTION_NOTIFY_ROLLBACK notification.
-old-location : ifsk\fltrollbackcomplete.htm
-old-project : ifsk
-ms.assetid : 822d3ed1-66ce-48a8-924c-48e1082cbb25
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltApiRef_p_to_z_5a4ebf97-8580-437d-b34d-e873bad7161b.xml, ifsk.fltrollbackcomplete, fltkernel/FltRollbackComplete, FltRollbackComplete, FltRollbackComplete routine [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : This routine is available on Windows Vista and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Fltmgr.lib
-req.dll : Fltmgr.sys
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltRollbackComplete
+title: FltRollbackComplete function
+author: windows-driver-content
+description: The FltRollbackComplete routine acknowledges a TRANSACTION_NOTIFY_ROLLBACK notification.
+old-location: ifsk\fltrollbackcomplete.htm
+old-project: ifsk
+ms.assetid: 822d3ed1-66ce-48a8-924c-48e1082cbb25
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltApiRef_p_to_z_5a4ebf97-8580-437d-b34d-e873bad7161b.xml, ifsk.fltrollbackcomplete, fltkernel/FltRollbackComplete, FltRollbackComplete, FltRollbackComplete routine [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: This routine is available on Windows Vista and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Fltmgr.lib
+req.dll: Fltmgr.sys
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltRollbackComplete
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfusb.IWDFUsbTargetPipe.Flush
-title : IWDFUsbTargetPipe::Flush method
-author : windows-driver-content
-description : The Flush method discards any data that WinUsb saved when the device returned more data than the client requested.
-old-location : wdf\iwdfusbtargetpipe_flush.htm
-old-project : wdf
-ms.assetid : d8e5cbf7-62c7-458d-a527-2508a8a5d066
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : IWDFUsbTargetPipe, IWDFUsbTargetPipe interface, Flush method, wdf.iwdfusbtargetpipe_flush, IWDFUsbTargetPipe::Flush, Flush, Flush method, IWDFUsbTargetPipe interface, Flush method, umdf.iwdfusbtargetpipe_flush, wudfusb/IWDFUsbTargetPipe::Flush, UMDFUSBref_5a569ab8-ccbd-47cc-93a6-8e61f366e6ee.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfusb.h
-req.include-header : Wudfusb.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.5
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfusb.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
-req.product : Windows 10 or later.
+UID: NF:wudfusb.IWDFUsbTargetPipe.Flush
+title: IWDFUsbTargetPipe::Flush method
+author: windows-driver-content
+description: The Flush method discards any data that WinUsb saved when the device returned more data than the client requested.
+old-location: wdf\iwdfusbtargetpipe_flush.htm
+old-project: wdf
+ms.assetid: d8e5cbf7-62c7-458d-a527-2508a8a5d066
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: IWDFUsbTargetPipe, IWDFUsbTargetPipe interface, Flush method, wdf.iwdfusbtargetpipe_flush, IWDFUsbTargetPipe::Flush, Flush, Flush method, IWDFUsbTargetPipe interface, Flush method, umdf.iwdfusbtargetpipe_flush, wudfusb/IWDFUsbTargetPipe::Flush, UMDFUSBref_5a569ab8-ccbd-47cc-93a6-8e61f366e6ee.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfusb.h
+req.include-header: Wudfusb.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.5
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfusb.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFUsbTargetPipe.Flush
+product: Windows
+targetos: Windows
+req.typenames: WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
+req.product: Windows 10 or later.
 ---
 
 

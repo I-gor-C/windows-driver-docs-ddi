@@ -1,41 +1,46 @@
 ---
-UID : NS:fltkernel._FLT_VOLUME_PROPERTIES
-title : "_FLT_VOLUME_PROPERTIES"
-author : windows-driver-content
-description : The FLT_VOLUME_PROPERTIES structure is passed as a parameter to FltGetVolumeProperties.
-old-location : ifsk\flt_volume_properties.htm
-old-project : ifsk
-ms.assetid : e7be6cb6-a59d-4244-ba36-e7d5b36b1416
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : PFLT_VOLUME_PROPERTIES structure pointer [Installable File System Drivers], fltkernel/FLT_VOLUME_PROPERTIES, VOL_PROP_FL_DAX_VOLUME, _FLT_VOLUME_PROPERTIES, ifsk.flt_volume_properties, FLT_VOLUME_PROPERTIES structure [Installable File System Drivers], FLT_VOLUME_PROPERTIES, FltSystemStructures_9de12b81-e647-4dc7-8d4c-dd90070c7dfa.xml, PFLT_VOLUME_PROPERTIES, *PFLT_VOLUME_PROPERTIES, fltkernel/PFLT_VOLUME_PROPERTIES
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PFLT_VOLUME_PROPERTIES, FLT_VOLUME_PROPERTIES"
+UID: NS:fltkernel._FLT_VOLUME_PROPERTIES
+title: "_FLT_VOLUME_PROPERTIES"
+author: windows-driver-content
+description: The FLT_VOLUME_PROPERTIES structure is passed as a parameter to FltGetVolumeProperties.
+old-location: ifsk\flt_volume_properties.htm
+old-project: ifsk
+ms.assetid: e7be6cb6-a59d-4244-ba36-e7d5b36b1416
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: PFLT_VOLUME_PROPERTIES structure pointer [Installable File System Drivers], fltkernel/FLT_VOLUME_PROPERTIES, VOL_PROP_FL_DAX_VOLUME, _FLT_VOLUME_PROPERTIES, ifsk.flt_volume_properties, FLT_VOLUME_PROPERTIES structure [Installable File System Drivers], FLT_VOLUME_PROPERTIES, FltSystemStructures_9de12b81-e647-4dc7-8d4c-dd90070c7dfa.xml, PFLT_VOLUME_PROPERTIES, *PFLT_VOLUME_PROPERTIES, fltkernel/PFLT_VOLUME_PROPERTIES
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	fltkernel.h
+apiname:
+-	FLT_VOLUME_PROPERTIES
+product: Windows
+targetos: Windows
+req.typenames: "*PFLT_VOLUME_PROPERTIES, FLT_VOLUME_PROPERTIES"
 ---
 
 # _FLT_VOLUME_PROPERTIES structure

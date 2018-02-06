@@ -1,41 +1,46 @@
 ---
-UID : NS:ntifs._FILE_PIPE_INFORMATION
-title : "_FILE_PIPE_INFORMATION"
-author : windows-driver-content
-description : The FILE_PIPE_INFORMATION structure contains information about a named pipe that is not specific to the local or the remote end of the pipe.
-old-location : ifsk\file_pipe_information.htm
-old-project : ifsk
-ms.assetid : d38b9f36-27f1-47f1-a469-18ddb6f5b2c1
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FILE_PIPE_INFORMATION, ifsk.file_pipe_information, FILE_PIPE_INFORMATION structure [Installable File System Drivers], *PFILE_PIPE_INFORMATION, ntifs/PFILE_PIPE_INFORMATION, ntifs/FILE_PIPE_INFORMATION, _FILE_PIPE_INFORMATION, PFILE_PIPE_INFORMATION structure pointer [Installable File System Drivers], PFILE_PIPE_INFORMATION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntifs.h
-req.include-header : FltKernel.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 2000 and later versions of the Windows operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PFILE_PIPE_INFORMATION, FILE_PIPE_INFORMATION"
+UID: NS:ntifs._FILE_PIPE_INFORMATION
+title: "_FILE_PIPE_INFORMATION"
+author: windows-driver-content
+description: The FILE_PIPE_INFORMATION structure contains information about a named pipe that is not specific to the local or the remote end of the pipe.
+old-location: ifsk\file_pipe_information.htm
+old-project: ifsk
+ms.assetid: d38b9f36-27f1-47f1-a469-18ddb6f5b2c1
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FILE_PIPE_INFORMATION, ifsk.file_pipe_information, FILE_PIPE_INFORMATION structure [Installable File System Drivers], *PFILE_PIPE_INFORMATION, ntifs/PFILE_PIPE_INFORMATION, ntifs/FILE_PIPE_INFORMATION, _FILE_PIPE_INFORMATION, PFILE_PIPE_INFORMATION structure pointer [Installable File System Drivers], PFILE_PIPE_INFORMATION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntifs.h
+req.include-header: FltKernel.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 2000 and later versions of the Windows operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntifs.h
+apiname:
+-	FILE_PIPE_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: "*PFILE_PIPE_INFORMATION, FILE_PIPE_INFORMATION"
 ---
 
 # _FILE_PIPE_INFORMATION structure

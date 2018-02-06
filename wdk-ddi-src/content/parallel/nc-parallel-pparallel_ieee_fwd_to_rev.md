@@ -1,41 +1,46 @@
 ---
-UID : NC:parallel.PPARALLEL_IEEE_FWD_TO_REV
-title : PPARALLEL_IEEE_FWD_TO_REV
-author : windows-driver-content
-description : The PPARALLEL_IEEE_FWD_TO_REV-typed callback routine changes the transfer mode from forward to reverse. The system-supplied bus driver for parallel ports supplies this routine.
-old-location : parports\pparallel_ieee_fwd_to_rev.htm
-old-project : parports
-ms.assetid : cb7e01e3-7aff-436c-af82-bc7716d2fe1f
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : parports.pparallel_ieee_fwd_to_rev, PPARALLEL_IEEE_FWD_TO_REV function pointer [Parallel Ports], PPARALLEL_IEEE_FWD_TO_REV, parallel/PPARALLEL_IEEE_FWD_TO_REV, cisspd_a22a220b-a633-48b8-9e53-434f362d15f0.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : parallel.h
-req.include-header : Parallel.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RILGBATOKEN, *LPRILGBATOKEN
+UID: NC:parallel.PPARALLEL_IEEE_FWD_TO_REV
+title: PPARALLEL_IEEE_FWD_TO_REV
+author: windows-driver-content
+description: The PPARALLEL_IEEE_FWD_TO_REV-typed callback routine changes the transfer mode from forward to reverse. The system-supplied bus driver for parallel ports supplies this routine.
+old-location: parports\pparallel_ieee_fwd_to_rev.htm
+old-project: parports
+ms.assetid: cb7e01e3-7aff-436c-af82-bc7716d2fe1f
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: parports.pparallel_ieee_fwd_to_rev, PPARALLEL_IEEE_FWD_TO_REV function pointer [Parallel Ports], PPARALLEL_IEEE_FWD_TO_REV, parallel/PPARALLEL_IEEE_FWD_TO_REV, cisspd_a22a220b-a633-48b8-9e53-434f362d15f0.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: parallel.h
+req.include-header: Parallel.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	parallel.h
+apiname:
+-	PPARALLEL_IEEE_FWD_TO_REV
+product: Windows
+targetos: Windows
+req.typenames: RILGBATOKEN, *LPRILGBATOKEN
 ---
 
 

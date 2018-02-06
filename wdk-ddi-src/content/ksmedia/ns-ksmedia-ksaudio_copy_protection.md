@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.KSAUDIO_COPY_PROTECTION
-title : KSAUDIO_COPY_PROTECTION
-author : windows-driver-content
-description : The KSAUDIO_COPY_PROTECTION structure specifies the copy-protection status of an audio stream.
-old-location : audio\ksaudio_copy_protection.htm
-old-project : audio
-ms.assetid : 7dab0240-67c3-4412-a7a5-bb98d84c6bdd
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : audio.ksaudio_copy_protection, KSAUDIO_COPY_PROTECTION, ksmedia/PKSAUDIO_COPY_PROTECTION, ksmedia/KSAUDIO_COPY_PROTECTION, PKSAUDIO_COPY_PROTECTION, aud-prop_94eac763-0c97-406d-b255-686ac82f908c.xml, *PKSAUDIO_COPY_PROTECTION, KSAUDIO_COPY_PROTECTION structure [Audio Devices], PKSAUDIO_COPY_PROTECTION structure pointer [Audio Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KSAUDIO_COPY_PROTECTION, *PKSAUDIO_COPY_PROTECTION
+UID: NS:ksmedia.KSAUDIO_COPY_PROTECTION
+title: KSAUDIO_COPY_PROTECTION
+author: windows-driver-content
+description: The KSAUDIO_COPY_PROTECTION structure specifies the copy-protection status of an audio stream.
+old-location: audio\ksaudio_copy_protection.htm
+old-project: audio
+ms.assetid: 7dab0240-67c3-4412-a7a5-bb98d84c6bdd
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: audio.ksaudio_copy_protection, KSAUDIO_COPY_PROTECTION, ksmedia/PKSAUDIO_COPY_PROTECTION, ksmedia/KSAUDIO_COPY_PROTECTION, PKSAUDIO_COPY_PROTECTION, aud-prop_94eac763-0c97-406d-b255-686ac82f908c.xml, *PKSAUDIO_COPY_PROTECTION, KSAUDIO_COPY_PROTECTION structure [Audio Devices], PKSAUDIO_COPY_PROTECTION structure pointer [Audio Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	KSAUDIO_COPY_PROTECTION
+product: Windows
+targetos: Windows
+req.typenames: KSAUDIO_COPY_PROTECTION, *PKSAUDIO_COPY_PROTECTION
 ---
 
 # KSAUDIO_COPY_PROTECTION structure

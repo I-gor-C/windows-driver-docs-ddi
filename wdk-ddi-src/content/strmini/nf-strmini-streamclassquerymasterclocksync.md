@@ -1,42 +1,48 @@
 ---
-UID : NF:strmini.StreamClassQueryMasterClockSync
-title : StreamClassQueryMasterClockSync function
-author : windows-driver-content
-description : The minidriver may call the StreamClassQueryMasterClockSync routine to synchronously query a stream's master clock.
-old-location : stream\streamclassquerymasterclocksync.htm
-old-project : stream
-ms.assetid : db58103d-8862-4be1-bca2-9d59d392591c
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.streamclassquerymasterclocksync, StreamClassQueryMasterClockSync routine [Streaming Media Devices], strmini/StreamClassQueryMasterClockSync, strclass-routines_32944030-bbcb-4f21-98cd-09c77ad3cd53.xml, StreamClassQueryMasterClockSync
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : strmini.h
-req.include-header : Strmini.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Stream.lib
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL (See Remarks section)"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSTREAM_PRIORITY, STREAM_PRIORITY"
-req.product : Windows 10 or later.
+UID: NF:strmini.StreamClassQueryMasterClockSync
+title: StreamClassQueryMasterClockSync function
+author: windows-driver-content
+description: The minidriver may call the StreamClassQueryMasterClockSync routine to synchronously query a stream's master clock.
+old-location: stream\streamclassquerymasterclocksync.htm
+old-project: stream
+ms.assetid: db58103d-8862-4be1-bca2-9d59d392591c
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.streamclassquerymasterclocksync, StreamClassQueryMasterClockSync routine [Streaming Media Devices], strmini/StreamClassQueryMasterClockSync, strclass-routines_32944030-bbcb-4f21-98cd-09c77ad3cd53.xml, StreamClassQueryMasterClockSync
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: strmini.h
+req.include-header: Strmini.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Stream.lib
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL (See Remarks section)"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Stream.lib
+-	Stream.dll
+apiname:
+-	StreamClassQueryMasterClockSync
+product: Windows
+targetos: Windows
+req.typenames: "*PSTREAM_PRIORITY, STREAM_PRIORITY"
+req.product: Windows 10 or later.
 ---
 
 

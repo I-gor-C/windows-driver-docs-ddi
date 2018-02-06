@@ -1,42 +1,47 @@
 ---
-UID : NS:windot11._DOT11_SUPPORTED_DSSS_CHANNEL
-title : "_DOT11_SUPPORTED_DSSS_CHANNEL"
-author : windows-driver-content
-description : Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
-old-location : netvista\dot11_supported_dsss_channel.htm
-old-project : netvista
-ms.assetid : a8c3fe52-2e5f-4212-9b52-10240d1abb86
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : DOT11_SUPPORTED_DSSS_CHANNEL, Native_802.11_data_types_2c13b1f6-0b6e-4bc7-a51f-d9c49db8d3df.xml, windot11/PDOT11_SUPPORTED_DSSS_CHANNEL, *PDOT11_SUPPORTED_DSSS_CHANNEL, PDOT11_SUPPORTED_DSSS_CHANNEL, windot11/DOT11_SUPPORTED_DSSS_CHANNEL, PDOT11_SUPPORTED_DSSS_CHANNEL structure pointer [Network Drivers Starting with Windows Vista], _DOT11_SUPPORTED_DSSS_CHANNEL, netvista.dot11_supported_dsss_channel, DOT11_SUPPORTED_DSSS_CHANNEL structure [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : windot11.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7 and later versions of the Windows operating   systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT11_SUPPORTED_DSSS_CHANNEL, *PDOT11_SUPPORTED_DSSS_CHANNEL
-req.product : Windows 10 or later.
+UID: NS:windot11._DOT11_SUPPORTED_DSSS_CHANNEL
+title: "_DOT11_SUPPORTED_DSSS_CHANNEL"
+author: windows-driver-content
+description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+old-location: netvista\dot11_supported_dsss_channel.htm
+old-project: netvista
+ms.assetid: a8c3fe52-2e5f-4212-9b52-10240d1abb86
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: DOT11_SUPPORTED_DSSS_CHANNEL, Native_802.11_data_types_2c13b1f6-0b6e-4bc7-a51f-d9c49db8d3df.xml, windot11/PDOT11_SUPPORTED_DSSS_CHANNEL, *PDOT11_SUPPORTED_DSSS_CHANNEL, PDOT11_SUPPORTED_DSSS_CHANNEL, windot11/DOT11_SUPPORTED_DSSS_CHANNEL, PDOT11_SUPPORTED_DSSS_CHANNEL structure pointer [Network Drivers Starting with Windows Vista], _DOT11_SUPPORTED_DSSS_CHANNEL, netvista.dot11_supported_dsss_channel, DOT11_SUPPORTED_DSSS_CHANNEL structure [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: windot11.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7 and later versions of the Windows operating   systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	windot11.h
+apiname:
+-	DOT11_SUPPORTED_DSSS_CHANNEL
+product: Windows
+targetos: Windows
+req.typenames: DOT11_SUPPORTED_DSSS_CHANNEL, *PDOT11_SUPPORTED_DSSS_CHANNEL
+req.product: Windows 10 or later.
 ---
 
 # _DOT11_SUPPORTED_DSSS_CHANNEL structure

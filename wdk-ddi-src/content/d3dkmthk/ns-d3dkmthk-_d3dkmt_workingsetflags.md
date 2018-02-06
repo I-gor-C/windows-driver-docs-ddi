@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmthk._D3DKMT_WORKINGSETFLAGS
-title : "_D3DKMT_WORKINGSETFLAGS"
-author : windows-driver-content
-description : The D3DKMT_WORKINGSETFLAGS structure identifies working-set properties of the display miniport driver that the OpenGL installable client driver (ICD) obtains by calling the D3DKMTQueryAdapterInfo function.
-old-location : display\d3dkmt_workingsetflags.htm
-old-project : display
-ms.assetid : 05dddebc-2a30-4cc5-b905-9ee4ebf8d00e
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DKMT_WORKINGSETFLAGS structure [Display Devices], D3DKMT_WORKINGSETFLAGS, display.d3dkmt_workingsetflags, d3dkmthk/D3DKMT_WORKINGSETFLAGS, OpenGL_Structs_4ce8b8d1-7f35-45b4-8b01-154a9a8eda00.xml, _D3DKMT_WORKINGSETFLAGS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_WORKINGSETFLAGS
+UID: NS:d3dkmthk._D3DKMT_WORKINGSETFLAGS
+title: "_D3DKMT_WORKINGSETFLAGS"
+author: windows-driver-content
+description: The D3DKMT_WORKINGSETFLAGS structure identifies working-set properties of the display miniport driver that the OpenGL installable client driver (ICD) obtains by calling the D3DKMTQueryAdapterInfo function.
+old-location: display\d3dkmt_workingsetflags.htm
+old-project: display
+ms.assetid: 05dddebc-2a30-4cc5-b905-9ee4ebf8d00e
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DKMT_WORKINGSETFLAGS structure [Display Devices], D3DKMT_WORKINGSETFLAGS, display.d3dkmt_workingsetflags, d3dkmthk/D3DKMT_WORKINGSETFLAGS, OpenGL_Structs_4ce8b8d1-7f35-45b4-8b01-154a9a8eda00.xml, _D3DKMT_WORKINGSETFLAGS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmthk.h
+apiname:
+-	D3DKMT_WORKINGSETFLAGS
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_WORKINGSETFLAGS
 ---
 
 # _D3DKMT_WORKINGSETFLAGS structure

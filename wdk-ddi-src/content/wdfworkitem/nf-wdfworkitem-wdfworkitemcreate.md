@@ -1,42 +1,50 @@
 ---
-UID : NF:wdfworkitem.WdfWorkItemCreate
-title : WdfWorkItemCreate function
-author : windows-driver-content
-description : The WdfWorkItemCreate method creates a framework work-item object, which can subsequently be added to the system's work-item queue.
-old-location : wdf\wdfworkitemcreate.htm
-old-project : wdf
-ms.assetid : f5bb3af4-c687-47ad-88ce-d56067c78d6d
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdfworkitem/WdfWorkItemCreate, PFN_WDFWORKITEMCREATE, wdf.wdfworkitemcreate, kmdf.wdfworkitemcreate, DFWorkItemObjectRef_0041ea62-aa06-4e8b-8f84-807731ecc516.xml, WdfWorkItemCreate, WdfWorkItemCreate method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfworkitem.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDF_WMI_PROVIDER_CONFIG, WDF_WMI_PROVIDER_CONFIG"
-req.product : Windows 10 or later.
+UID: NF:wdfworkitem.WdfWorkItemCreate
+title: WdfWorkItemCreate function
+author: windows-driver-content
+description: The WdfWorkItemCreate method creates a framework work-item object, which can subsequently be added to the system's work-item queue.
+old-location: wdf\wdfworkitemcreate.htm
+old-project: wdf
+ms.assetid: f5bb3af4-c687-47ad-88ce-d56067c78d6d
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdfworkitem/WdfWorkItemCreate, PFN_WDFWORKITEMCREATE, wdf.wdfworkitemcreate, kmdf.wdfworkitemcreate, DFWorkItemObjectRef_0041ea62-aa06-4e8b-8f84-807731ecc516.xml, WdfWorkItemCreate, WdfWorkItemCreate method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfworkitem.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+-	WUDFx02000.dll
+-	WUDFx02000.dll.dll
+apiname:
+-	WdfWorkItemCreate
+product: Windows
+targetos: Windows
+req.typenames: "*PWDF_WMI_PROVIDER_CONFIG, WDF_WMI_PROVIDER_CONFIG"
+req.product: Windows 10 or later.
 ---
 
 

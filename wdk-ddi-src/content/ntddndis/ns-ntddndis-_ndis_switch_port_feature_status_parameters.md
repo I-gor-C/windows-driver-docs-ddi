@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddndis._NDIS_SWITCH_PORT_FEATURE_STATUS_PARAMETERS
-title : "_NDIS_SWITCH_PORT_FEATURE_STATUS_PARAMETERS"
-author : windows-driver-content
-description : The NDIS_SWITCH_PORT_FEATURE_STATUS_PARAMETERS structure specifies the parameters for the custom status information of a Hyper-V extensible switch port.
-old-location : netvista\ndis_switch_port_feature_status_parameters.htm
-old-project : netvista
-ms.assetid : 117ba27f-812a-406d-8120-99ba89551164
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : PNDIS_SWITCH_PORT_FEATURE_STATUS_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], _NDIS_SWITCH_PORT_FEATURE_STATUS_PARAMETERS, ntddndis/NDIS_SWITCH_PORT_FEATURE_STATUS_PARAMETERS, PNDIS_SWITCH_PORT_FEATURE_STATUS_PARAMETERS, *PNDIS_SWITCH_PORT_FEATURE_STATUS_PARAMETERS, NDIS_SWITCH_PORT_FEATURE_STATUS_PARAMETERS structure [Network Drivers Starting with Windows Vista], netvista.ndis_switch_port_feature_status_parameters, ntddndis/PNDIS_SWITCH_PORT_FEATURE_STATUS_PARAMETERS, NDIS_SWITCH_PORT_FEATURE_STATUS_PARAMETERS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.30 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PNDIS_SWITCH_PORT_FEATURE_STATUS_PARAMETERS, NDIS_SWITCH_PORT_FEATURE_STATUS_PARAMETERS"
+UID: NS:ntddndis._NDIS_SWITCH_PORT_FEATURE_STATUS_PARAMETERS
+title: "_NDIS_SWITCH_PORT_FEATURE_STATUS_PARAMETERS"
+author: windows-driver-content
+description: The NDIS_SWITCH_PORT_FEATURE_STATUS_PARAMETERS structure specifies the parameters for the custom status information of a Hyper-V extensible switch port.
+old-location: netvista\ndis_switch_port_feature_status_parameters.htm
+old-project: netvista
+ms.assetid: 117ba27f-812a-406d-8120-99ba89551164
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: PNDIS_SWITCH_PORT_FEATURE_STATUS_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], _NDIS_SWITCH_PORT_FEATURE_STATUS_PARAMETERS, ntddndis/NDIS_SWITCH_PORT_FEATURE_STATUS_PARAMETERS, PNDIS_SWITCH_PORT_FEATURE_STATUS_PARAMETERS, *PNDIS_SWITCH_PORT_FEATURE_STATUS_PARAMETERS, NDIS_SWITCH_PORT_FEATURE_STATUS_PARAMETERS structure [Network Drivers Starting with Windows Vista], netvista.ndis_switch_port_feature_status_parameters, ntddndis/PNDIS_SWITCH_PORT_FEATURE_STATUS_PARAMETERS, NDIS_SWITCH_PORT_FEATURE_STATUS_PARAMETERS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.30 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddndis.h
+apiname:
+-	NDIS_SWITCH_PORT_FEATURE_STATUS_PARAMETERS
+product: Windows
+targetos: Windows
+req.typenames: "*PNDIS_SWITCH_PORT_FEATURE_STATUS_PARAMETERS, NDIS_SWITCH_PORT_FEATURE_STATUS_PARAMETERS"
 ---
 
 # _NDIS_SWITCH_PORT_FEATURE_STATUS_PARAMETERS structure

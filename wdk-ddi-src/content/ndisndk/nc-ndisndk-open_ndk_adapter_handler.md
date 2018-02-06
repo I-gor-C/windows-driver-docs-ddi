@@ -1,41 +1,46 @@
 ---
-UID : NC:ndisndk.OPEN_NDK_ADAPTER_HANDLER
-title : OPEN_NDK_ADAPTER_HANDLER
-author : windows-driver-content
-description : The OpenNDKAdapterHandler (OPEN_NDK_ADAPTER_HANDLER) function opens an NDK adapter instance on an NDK-capable NDIS miniport adapter.
-old-location : netvista\open_ndk_adapter_handler.htm
-old-project : netvista
-ms.assetid : 85888B9A-669C-478F-9318-EE9821BC3AF3
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.open_ndk_adapter_handler, OpenNdkAdapterHandler callback function [Network Drivers Starting with Windows Vista], OpenNdkAdapterHandler, OPEN_NDK_ADAPTER_HANDLER, OPEN_NDK_ADAPTER_HANDLER, ndisndk/OpenNdkAdapterHandler
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ndisndk.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : None supported,Supported in NDIS 6.30 and later.
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TCP_OFFLOAD_STATS, *PTCP_OFFLOAD_STATS
+UID: NC:ndisndk.OPEN_NDK_ADAPTER_HANDLER
+title: OPEN_NDK_ADAPTER_HANDLER
+author: windows-driver-content
+description: The OpenNDKAdapterHandler (OPEN_NDK_ADAPTER_HANDLER) function opens an NDK adapter instance on an NDK-capable NDIS miniport adapter.
+old-location: netvista\open_ndk_adapter_handler.htm
+old-project: netvista
+ms.assetid: 85888B9A-669C-478F-9318-EE9821BC3AF3
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.open_ndk_adapter_handler, OpenNdkAdapterHandler callback function [Network Drivers Starting with Windows Vista], OpenNdkAdapterHandler, OPEN_NDK_ADAPTER_HANDLER, OPEN_NDK_ADAPTER_HANDLER, ndisndk/OpenNdkAdapterHandler
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ndisndk.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: None supported,Supported in NDIS 6.30 and later.
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	ndisndk.h
+apiname:
+-	OpenNdkAdapterHandler
+product: Windows
+targetos: Windows
+req.typenames: TCP_OFFLOAD_STATS, *PTCP_OFFLOAD_STATS
 ---
 
 

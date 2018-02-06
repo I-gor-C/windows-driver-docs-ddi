@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.RtlxUnicodeStringToAnsiSize
-title : RtlxUnicodeStringToAnsiSize function
-author : windows-driver-content
-description : The RtlxUnicodeStringToAnsiSize routine returns the number of bytes required for a null-terminated ANSI string that is equivalent to a specified Unicode string.
-old-location : kernel\rtlxunicodestringtoansisize.htm
-old-project : kernel
-ms.assetid : dff228e5-14ea-4ec0-a7f1-247137f9e70d
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : k109_f7d1f632-4350-4fb9-ac05-3c36c0d0446e.xml, RtlxUnicodeStringToAnsiSize routine [Kernel-Mode Driver Architecture], RtlxUnicodeStringToAnsiSize, wdm/RtlxUnicodeStringToAnsiSize, kernel.rtlxunicodestringtoansisize
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.RtlxUnicodeStringToAnsiSize
+title: RtlxUnicodeStringToAnsiSize function
+author: windows-driver-content
+description: The RtlxUnicodeStringToAnsiSize routine returns the number of bytes required for a null-terminated ANSI string that is equivalent to a specified Unicode string.
+old-location: kernel\rtlxunicodestringtoansisize.htm
+old-project: kernel
+ms.assetid: dff228e5-14ea-4ec0-a7f1-247137f9e70d
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: k109_f7d1f632-4350-4fb9-ac05-3c36c0d0446e.xml, RtlxUnicodeStringToAnsiSize routine [Kernel-Mode Driver Architecture], RtlxUnicodeStringToAnsiSize, wdm/RtlxUnicodeStringToAnsiSize, kernel.rtlxunicodestringtoansisize
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	RtlxUnicodeStringToAnsiSize
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

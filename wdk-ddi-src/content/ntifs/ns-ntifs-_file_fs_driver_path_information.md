@@ -1,41 +1,46 @@
 ---
-UID : NS:ntifs._FILE_FS_DRIVER_PATH_INFORMATION
-title : "_FILE_FS_DRIVER_PATH_INFORMATION"
-author : windows-driver-content
-description : The FILE_FS_DRIVER_PATH_INFORMATION structure is used to query whether a given driver is in the I/O path for a file system volume.
-old-location : ifsk\file_fs_driver_path_information.htm
-old-project : ifsk
-ms.assetid : 6149765b-cd2c-44f5-aa72-f4755e0b034c
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : PFILE_FS_DRIVER_PATH_INFORMATION structure pointer [Installable File System Drivers], *PFILE_FS_DRIVER_PATH_INFORMATION, ntifs/PFILE_FS_DRIVER_PATH_INFORMATION, FILE_FS_DRIVER_PATH_INFORMATION, ifsk.file_fs_driver_path_information, ntifs/FILE_FS_DRIVER_PATH_INFORMATION, FILE_FS_DRIVER_PATH_INFORMATION structure [Installable File System Drivers], fileinformationstructures_9d09c9ee-18a0-4230-af6b-0cddadbac901.xml, PFILE_FS_DRIVER_PATH_INFORMATION, _FILE_FS_DRIVER_PATH_INFORMATION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntifs.h
-req.include-header : Ntifs.h, Fltkernel.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FILE_FS_DRIVER_PATH_INFORMATION, *PFILE_FS_DRIVER_PATH_INFORMATION
+UID: NS:ntifs._FILE_FS_DRIVER_PATH_INFORMATION
+title: "_FILE_FS_DRIVER_PATH_INFORMATION"
+author: windows-driver-content
+description: The FILE_FS_DRIVER_PATH_INFORMATION structure is used to query whether a given driver is in the I/O path for a file system volume.
+old-location: ifsk\file_fs_driver_path_information.htm
+old-project: ifsk
+ms.assetid: 6149765b-cd2c-44f5-aa72-f4755e0b034c
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: PFILE_FS_DRIVER_PATH_INFORMATION structure pointer [Installable File System Drivers], *PFILE_FS_DRIVER_PATH_INFORMATION, ntifs/PFILE_FS_DRIVER_PATH_INFORMATION, FILE_FS_DRIVER_PATH_INFORMATION, ifsk.file_fs_driver_path_information, ntifs/FILE_FS_DRIVER_PATH_INFORMATION, FILE_FS_DRIVER_PATH_INFORMATION structure [Installable File System Drivers], fileinformationstructures_9d09c9ee-18a0-4230-af6b-0cddadbac901.xml, PFILE_FS_DRIVER_PATH_INFORMATION, _FILE_FS_DRIVER_PATH_INFORMATION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntifs.h
+req.include-header: Ntifs.h, Fltkernel.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntifs.h
+apiname:
+-	FILE_FS_DRIVER_PATH_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: FILE_FS_DRIVER_PATH_INFORMATION, *PFILE_FS_DRIVER_PATH_INFORMATION
 ---
 
 # _FILE_FS_DRIVER_PATH_INFORMATION structure

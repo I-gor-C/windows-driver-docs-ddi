@@ -1,41 +1,49 @@
 ---
-UID : NF:dbgeng.IDebugSystemObjects4.GetCurrentThreadId
-title : IDebugSystemObjects4::GetCurrentThreadId method
-author : windows-driver-content
-description : The GetCurrentThreadId method returns the engine thread ID for the current thread.
-old-location : debugger\getcurrentthreadid.htm
-old-project : debugger
-ms.assetid : 7062c962-2e82-40e3-81ea-97ac0948e501
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : GetCurrentThreadId, dbgeng/IDebugSystemObjects3::GetCurrentThreadId, dbgeng/IDebugSystemObjects4::GetCurrentThreadId, GetCurrentThreadId method [Windows Debugging], IDebugSystemObjects3 interface, GetCurrentThreadId method [Windows Debugging], IDebugSystemObjects2 interface, IDebugSystemObjects4::GetCurrentThreadId, IDebugSystemObjects2::GetCurrentThreadId, IDebugSystemObjects4 interface [Windows Debugging], GetCurrentThreadId method, debugger.getcurrentthreadid, GetCurrentThreadId method [Windows Debugging], IDebugSystemObjects4 interface, IDebugSystemObjects_e40e3ab8-b03d-4b1e-805b-ad8ba51ea1c5.xml, IDebugSystemObjects4, IDebugSystemObjects2 interface [Windows Debugging], GetCurrentThreadId method, IDebugSystemObjects3::GetCurrentThreadId, IDebugSystemObjects3 interface [Windows Debugging], GetCurrentThreadId method, IDebugSystemObjects interface [Windows Debugging], GetCurrentThreadId method, dbgeng/IDebugSystemObjects::GetCurrentThreadId, dbgeng/IDebugSystemObjects2::GetCurrentThreadId, GetCurrentThreadId method [Windows Debugging], IDebugSystemObjects interface, IDebugSystemObjects::GetCurrentThreadId, GetCurrentThreadId method [Windows Debugging]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSystemObjects4.GetCurrentThreadId
+title: IDebugSystemObjects4::GetCurrentThreadId method
+author: windows-driver-content
+description: The GetCurrentThreadId method returns the engine thread ID for the current thread.
+old-location: debugger\getcurrentthreadid.htm
+old-project: debugger
+ms.assetid: 7062c962-2e82-40e3-81ea-97ac0948e501
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: GetCurrentThreadId, dbgeng/IDebugSystemObjects3::GetCurrentThreadId, dbgeng/IDebugSystemObjects4::GetCurrentThreadId, GetCurrentThreadId method [Windows Debugging], IDebugSystemObjects3 interface, GetCurrentThreadId method [Windows Debugging], IDebugSystemObjects2 interface, IDebugSystemObjects4::GetCurrentThreadId, IDebugSystemObjects2::GetCurrentThreadId, IDebugSystemObjects4 interface [Windows Debugging], GetCurrentThreadId method, debugger.getcurrentthreadid, GetCurrentThreadId method [Windows Debugging], IDebugSystemObjects4 interface, IDebugSystemObjects_e40e3ab8-b03d-4b1e-805b-ad8ba51ea1c5.xml, IDebugSystemObjects4, IDebugSystemObjects2 interface [Windows Debugging], GetCurrentThreadId method, IDebugSystemObjects3::GetCurrentThreadId, IDebugSystemObjects3 interface [Windows Debugging], GetCurrentThreadId method, IDebugSystemObjects interface [Windows Debugging], GetCurrentThreadId method, dbgeng/IDebugSystemObjects::GetCurrentThreadId, dbgeng/IDebugSystemObjects2::GetCurrentThreadId, GetCurrentThreadId method [Windows Debugging], IDebugSystemObjects interface, IDebugSystemObjects::GetCurrentThreadId, GetCurrentThreadId method [Windows Debugging]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugSystemObjects.GetCurrentThreadId
+-	IDebugSystemObjects2.GetCurrentThreadId
+-	IDebugSystemObjects3.GetCurrentThreadId
+-	IDebugSystemObjects4.GetCurrentThreadId
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

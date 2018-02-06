@@ -1,41 +1,46 @@
 ---
-UID : NS:hbapiwmi._GetFcpPersistentBinding_IN
-title : "_GetFcpPersistentBinding_IN"
-author : windows-driver-content
-description : The GetFcpPersistentBinding_IN structure is used to pass input parameter data to the GetFcpPersistentBinding WMI method
-old-location : storage\getfcppersistentbinding_in.htm
-old-project : storage
-ms.assetid : b08354c8-ef4e-4330-8a3b-dcfe3a722a5d
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : GetFcpPersistentBinding_IN structure [Storage Devices], PGetFcpPersistentBinding_IN structure pointer [Storage Devices], GetFcpPersistentBinding_IN, storage.getfcppersistentbinding_in, _GetFcpPersistentBinding_IN, hbapiwmi/PGetFcpPersistentBinding_IN, *PGetFcpPersistentBinding_IN, hbapiwmi/GetFcpPersistentBinding_IN, PGetFcpPersistentBinding_IN, structs-Fibre_34b0e554-331b-4f99-ae8e-5c2e9855b641.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : hbapiwmi.h
-req.include-header : Hbapiwmi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : GetFcpPersistentBinding_IN, *PGetFcpPersistentBinding_IN
+UID: NS:hbapiwmi._GetFcpPersistentBinding_IN
+title: "_GetFcpPersistentBinding_IN"
+author: windows-driver-content
+description: The GetFcpPersistentBinding_IN structure is used to pass input parameter data to the GetFcpPersistentBinding WMI method
+old-location: storage\getfcppersistentbinding_in.htm
+old-project: storage
+ms.assetid: b08354c8-ef4e-4330-8a3b-dcfe3a722a5d
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: GetFcpPersistentBinding_IN structure [Storage Devices], PGetFcpPersistentBinding_IN structure pointer [Storage Devices], GetFcpPersistentBinding_IN, storage.getfcppersistentbinding_in, _GetFcpPersistentBinding_IN, hbapiwmi/PGetFcpPersistentBinding_IN, *PGetFcpPersistentBinding_IN, hbapiwmi/GetFcpPersistentBinding_IN, PGetFcpPersistentBinding_IN, structs-Fibre_34b0e554-331b-4f99-ae8e-5c2e9855b641.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: hbapiwmi.h
+req.include-header: Hbapiwmi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hbapiwmi.h
+apiname:
+-	GetFcpPersistentBinding_IN
+product: Windows
+targetos: Windows
+req.typenames: GetFcpPersistentBinding_IN, *PGetFcpPersistentBinding_IN
 ---
 
 # _GetFcpPersistentBinding_IN structure

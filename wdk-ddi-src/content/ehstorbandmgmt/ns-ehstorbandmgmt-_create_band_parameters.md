@@ -1,41 +1,46 @@
 ---
-UID : NS:ehstorbandmgmt._CREATE_BAND_PARAMETERS
-title : "_CREATE_BAND_PARAMETERS"
-author : windows-driver-content
-description : The parameters to create a band on a storage device for an IOCTL_EHSTOR_BANDMGMT_CREATE_BAND request are specified in a CREATE_BAND_PARAMETERS structure.
-old-location : storage\create_band_parameters.htm
-old-project : storage
-ms.assetid : DFDD92F8-95B7-40F7-950C-A105F035B2E9
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : ehstorbandmgmt/CREATE_BAND_PARAMETERS, CREATEBAND_AUTHKEY_CACHING_ENABLED, storage.create_band_parameters, *PCREATE_BAND_PARAMETERS, PCREATE_BAND_PARAMETERS, CREATE_BAND_PARAMETERS, _CREATE_BAND_PARAMETERS, CREATE_BAND_PARAMETERS structure [Storage Devices], ehstorbandmgmt/PCREATE_BAND_PARAMETERS, PCREATE_BAND_PARAMETERS structure pointer [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ehstorbandmgmt.h
-req.include-header : EhStorBandMgmt.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows 8
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PCREATE_BAND_PARAMETERS, CREATE_BAND_PARAMETERS"
+UID: NS:ehstorbandmgmt._CREATE_BAND_PARAMETERS
+title: "_CREATE_BAND_PARAMETERS"
+author: windows-driver-content
+description: The parameters to create a band on a storage device for an IOCTL_EHSTOR_BANDMGMT_CREATE_BAND request are specified in a CREATE_BAND_PARAMETERS structure.
+old-location: storage\create_band_parameters.htm
+old-project: storage
+ms.assetid: DFDD92F8-95B7-40F7-950C-A105F035B2E9
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: ehstorbandmgmt/CREATE_BAND_PARAMETERS, CREATEBAND_AUTHKEY_CACHING_ENABLED, storage.create_band_parameters, *PCREATE_BAND_PARAMETERS, PCREATE_BAND_PARAMETERS, CREATE_BAND_PARAMETERS, _CREATE_BAND_PARAMETERS, CREATE_BAND_PARAMETERS structure [Storage Devices], ehstorbandmgmt/PCREATE_BAND_PARAMETERS, PCREATE_BAND_PARAMETERS structure pointer [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ehstorbandmgmt.h
+req.include-header: EhStorBandMgmt.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows 8
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	EhStorBandMgmt.h
+apiname:
+-	CREATE_BAND_PARAMETERS
+product: Windows
+targetos: Windows
+req.typenames: "*PCREATE_BAND_PARAMETERS, CREATE_BAND_PARAMETERS"
 ---
 
 # _CREATE_BAND_PARAMETERS structure

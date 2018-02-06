@@ -1,42 +1,47 @@
 ---
-UID : NF:wdbgexts.WriteIoSpace
-title : WriteIoSpace function
-author : windows-driver-content
-description : The WriteIoSpace function writes to the system I/O locations.
-old-location : debugger\writeiospace.htm
-old-project : debugger
-ms.assetid : 4d1a3df6-2440-46b7-8e73-f017f5fcfa51
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : WriteIoSpace function [Windows Debugging], wdbgexts/WriteIoSpace, WdbgExts_Ref_1aa4429d-9d99-4c7c-8870-7a75ccaad6e5.xml, WriteIoSpace, debugger.writeiospace
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdbgexts.h
-req.include-header : Wdbgexts.h, Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXT_TDOP
-req.product : Windows 10 or later.
+UID: NF:wdbgexts.WriteIoSpace
+title: WriteIoSpace function
+author: windows-driver-content
+description: The WriteIoSpace function writes to the system I/O locations.
+old-location: debugger\writeiospace.htm
+old-project: debugger
+ms.assetid: 4d1a3df6-2440-46b7-8e73-f017f5fcfa51
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: WriteIoSpace function [Windows Debugging], wdbgexts/WriteIoSpace, WdbgExts_Ref_1aa4429d-9d99-4c7c-8870-7a75ccaad6e5.xml, WriteIoSpace, debugger.writeiospace
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdbgexts.h
+req.include-header: Wdbgexts.h, Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdbgexts.h
+apiname:
+-	WriteIoSpace
+product: Windows
+targetos: Windows
+req.typenames: EXT_TDOP
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,47 @@
 ---
-UID : NF:ntifs.SecLookupAccountName
-title : SecLookupAccountName function
-author : windows-driver-content
-description : SecLookupAccountName accepts an account as input and retrieves a security identifier (SID) for the account and the name of the domain on which the account was found.
-old-location : ifsk\seclookupaccountname.htm
-old-project : ifsk
-ms.assetid : 5b1c3cc4-6185-4299-86ed-662a2b445042
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.seclookupaccountname, SecLookupAccountName, ksecddref_1f4959e5-ea3b-440d-af1b-df05782eefce.xml, SecLookupAccountName function [Installable File System Drivers], ntifs/SecLookupAccountName
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : The SecLookupAccountName function is only available on Windows XP and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ksecdd.lib
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.SecLookupAccountName
+title: SecLookupAccountName function
+author: windows-driver-content
+description: SecLookupAccountName accepts an account as input and retrieves a security identifier (SID) for the account and the name of the domain on which the account was found.
+old-location: ifsk\seclookupaccountname.htm
+old-project: ifsk
+ms.assetid: 5b1c3cc4-6185-4299-86ed-662a2b445042
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.seclookupaccountname, SecLookupAccountName, ksecddref_1f4959e5-ea3b-440d-af1b-df05782eefce.xml, SecLookupAccountName function [Installable File System Drivers], ntifs/SecLookupAccountName
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: The SecLookupAccountName function is only available on Windows XP and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ksecdd.lib
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ksecdd.lib
+-	Ksecdd.dll
+apiname:
+-	SecLookupAccountName
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

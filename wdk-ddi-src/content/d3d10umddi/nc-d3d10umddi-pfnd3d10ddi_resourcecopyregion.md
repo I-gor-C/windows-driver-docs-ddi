@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3D10DDI_RESOURCECOPYREGION
-title : PFND3D10DDI_RESOURCECOPYREGION
-author : windows-driver-content
-description : The ResourceCopyRegion function copies a source subresource region to a location on a destination subresource.
-old-location : display\resourcecopyregion.htm
-old-project : display
-ms.assetid : e782dc8c-e34e-4f96-b6d9-c34d7843ed05
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.resourcecopyregion, ResourceCopyRegion callback function [Display Devices], ResourceCopyRegion, PFND3D10DDI_RESOURCECOPYREGION, PFND3D10DDI_RESOURCECOPYREGION, d3d10umddi/ResourceCopyRegion, UserModeDisplayDriverDx10_Functions_8b5cb003-4fa5-4d23-99c4-a8165253907c.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3D10DDI_RESOURCECOPYREGION
+title: PFND3D10DDI_RESOURCECOPYREGION
+author: windows-driver-content
+description: The ResourceCopyRegion function copies a source subresource region to a location on a destination subresource.
+old-location: display\resourcecopyregion.htm
+old-project: display
+ms.assetid: e782dc8c-e34e-4f96-b6d9-c34d7843ed05
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.resourcecopyregion, ResourceCopyRegion callback function [Display Devices], ResourceCopyRegion, PFND3D10DDI_RESOURCECOPYREGION, PFND3D10DDI_RESOURCECOPYREGION, d3d10umddi/ResourceCopyRegion, UserModeDisplayDriverDx10_Functions_8b5cb003-4fa5-4d23-99c4-a8165253907c.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	ResourceCopyRegion
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NC:mrx.PMRX_SRVCALL_WINNER_NOTIFY
-title : PMRX_SRVCALL_WINNER_NOTIFY
-author : windows-driver-content
-description : The MRxSrvCallWinnerNotify routine is called by RDBSS to notify a network mini-redirector that it was chosen when multiple redirectors could fulfill the request.
-old-location : ifsk\mrxsrvcallwinnernotify.htm
-old-project : ifsk
-ms.assetid : 6853b73e-5516-485e-ade4-54b7faf6bb1d
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.mrxsrvcallwinnernotify, MRxSrvCallWinnerNotify routine [Installable File System Drivers], MRxSrvCallWinnerNotify, PMRX_SRVCALL_WINNER_NOTIFY, PMRX_SRVCALL_WINNER_NOTIFY, mrx/MRxSrvCallWinnerNotify, mrxref_32054fb8-84ca-407a-ab65-90feee16041d.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : mrx.h
-req.include-header : Mrx.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SetDSMCounters_IN, *PSetDSMCounters_IN
+UID: NC:mrx.PMRX_SRVCALL_WINNER_NOTIFY
+title: PMRX_SRVCALL_WINNER_NOTIFY
+author: windows-driver-content
+description: The MRxSrvCallWinnerNotify routine is called by RDBSS to notify a network mini-redirector that it was chosen when multiple redirectors could fulfill the request.
+old-location: ifsk\mrxsrvcallwinnernotify.htm
+old-project: ifsk
+ms.assetid: 6853b73e-5516-485e-ade4-54b7faf6bb1d
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.mrxsrvcallwinnernotify, MRxSrvCallWinnerNotify routine [Installable File System Drivers], MRxSrvCallWinnerNotify, PMRX_SRVCALL_WINNER_NOTIFY, PMRX_SRVCALL_WINNER_NOTIFY, mrx/MRxSrvCallWinnerNotify, mrxref_32054fb8-84ca-407a-ab65-90feee16041d.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: mrx.h
+req.include-header: Mrx.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	mrx.h
+apiname:
+-	MRxSrvCallWinnerNotify
+product: Windows
+targetos: Windows
+req.typenames: SetDSMCounters_IN, *PSetDSMCounters_IN
 ---
 
 

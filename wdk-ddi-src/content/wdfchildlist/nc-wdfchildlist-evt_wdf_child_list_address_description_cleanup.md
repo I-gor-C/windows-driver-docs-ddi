@@ -1,42 +1,47 @@
 ---
-UID : NC:wdfchildlist.EVT_WDF_CHILD_LIST_ADDRESS_DESCRIPTION_CLEANUP
-title : EVT_WDF_CHILD_LIST_ADDRESS_DESCRIPTION_CLEANUP
-author : windows-driver-content
-description : A driver's EvtChildListAddressDescriptionCleanup event callback function frees any memory allocations for an address description that the driver's EvtChildListAddressDescriptionDuplicate callback function allocated.
-old-location : wdf\evtchildlistaddressdescriptioncleanup.htm
-old-project : wdf
-ms.assetid : 845c8c96-7d34-4273-963e-b7f644884f26
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.evtchildlistaddressdescriptioncleanup, EvtChildListAddressDescriptionCleanup callback function, EvtChildListAddressDescriptionCleanup, EVT_WDF_CHILD_LIST_ADDRESS_DESCRIPTION_CLEANUP, EVT_WDF_CHILD_LIST_ADDRESS_DESCRIPTION_CLEANUP, wdfchildlist/EvtChildListAddressDescriptionCleanup, DFDeviceObjectChildListRef_f28ee1b8-ff52-416e-9811-1eb46939505a.xml, kmdf.evtchildlistaddressdescriptioncleanup
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdfchildlist.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDBGEXTS_THREAD_OS_INFO, WDBGEXTS_THREAD_OS_INFO"
-req.product : Windows 10 or later.
+UID: NC:wdfchildlist.EVT_WDF_CHILD_LIST_ADDRESS_DESCRIPTION_CLEANUP
+title: EVT_WDF_CHILD_LIST_ADDRESS_DESCRIPTION_CLEANUP
+author: windows-driver-content
+description: A driver's EvtChildListAddressDescriptionCleanup event callback function frees any memory allocations for an address description that the driver's EvtChildListAddressDescriptionDuplicate callback function allocated.
+old-location: wdf\evtchildlistaddressdescriptioncleanup.htm
+old-project: wdf
+ms.assetid: 845c8c96-7d34-4273-963e-b7f644884f26
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.evtchildlistaddressdescriptioncleanup, EvtChildListAddressDescriptionCleanup callback function, EvtChildListAddressDescriptionCleanup, EVT_WDF_CHILD_LIST_ADDRESS_DESCRIPTION_CLEANUP, EVT_WDF_CHILD_LIST_ADDRESS_DESCRIPTION_CLEANUP, wdfchildlist/EvtChildListAddressDescriptionCleanup, DFDeviceObjectChildListRef_f28ee1b8-ff52-416e-9811-1eb46939505a.xml, kmdf.evtchildlistaddressdescriptioncleanup
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdfchildlist.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	WdfChildlist.h
+apiname:
+-	EvtChildListAddressDescriptionCleanup
+product: Windows
+targetos: Windows
+req.typenames: "*PWDBGEXTS_THREAD_OS_INFO, WDBGEXTS_THREAD_OS_INFO"
+req.product: Windows 10 or later.
 ---
 
 

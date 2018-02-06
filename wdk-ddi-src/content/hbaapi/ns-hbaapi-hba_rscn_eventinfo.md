@@ -1,41 +1,46 @@
 ---
-UID : NS:hbaapi.HBA_RSCN_EventInfo
-title : HBA_RSCN_EventInfo
-author : windows-driver-content
-description : The HBA_Link_EventInfo structure contains information about a WMI RSCN event associated with the fibre channel HBA API.
-old-location : storage\hba_rscn_eventinfo.htm
-old-project : storage
-ms.assetid : d726d974-a877-464d-9721-6caf8a8402bf
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : HBA_RSCN_EventInfo, HBA_RSCN_EVENTINFO, PHBA_RSCN_EVENTINFO, structs-Fibre_c0cb4c14-5ff5-44cb-abb4-08673227f193.xml, HBA_RSCN_EVENTINFO structure [Storage Devices], hbaapi/PHBA_RSCN_EVENTINFO, HBA_RSCN_EventInfo structure [Storage Devices], hbaapi/HBA_RSCN_EventInfo, storage.hba_rscn_eventinfo, *PHBA_RSCN_EVENTINFO, PHBA_RSCN_EVENTINFO structure pointer [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : hbaapi.h
-req.include-header : Hbaapi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PHBA_RSCN_EVENTINFO, HBA_RSCN_EVENTINFO"
+UID: NS:hbaapi.HBA_RSCN_EventInfo
+title: HBA_RSCN_EventInfo
+author: windows-driver-content
+description: The HBA_Link_EventInfo structure contains information about a WMI RSCN event associated with the fibre channel HBA API.
+old-location: storage\hba_rscn_eventinfo.htm
+old-project: storage
+ms.assetid: d726d974-a877-464d-9721-6caf8a8402bf
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: HBA_RSCN_EventInfo, HBA_RSCN_EVENTINFO, PHBA_RSCN_EVENTINFO, structs-Fibre_c0cb4c14-5ff5-44cb-abb4-08673227f193.xml, HBA_RSCN_EVENTINFO structure [Storage Devices], hbaapi/PHBA_RSCN_EVENTINFO, HBA_RSCN_EventInfo structure [Storage Devices], hbaapi/HBA_RSCN_EventInfo, storage.hba_rscn_eventinfo, *PHBA_RSCN_EVENTINFO, PHBA_RSCN_EVENTINFO structure pointer [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: hbaapi.h
+req.include-header: Hbaapi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hbaapi.h
+apiname:
+-	HBA_RSCN_EVENTINFO
+product: Windows
+targetos: Windows
+req.typenames: "*PHBA_RSCN_EVENTINFO, HBA_RSCN_EVENTINFO"
 ---
 
 # HBA_RSCN_EventInfo structure

@@ -1,41 +1,46 @@
 ---
-UID : NI:hpmi.IOCTL_HPMI_QUERY_CAPABILITIES
-title : IOCTL_HPMI_QUERY_CAPABILITIES
-author : windows-driver-content
-description : The IOCTL_HPMI_QUERY_CAPABILITIES command is sent to query features supported by HPMI and Windows services requested by HPMI. Windows will issue this IOCL to HPMI once after a new HPMI driver instance is discovered.
-old-location : powermeter\ioctl_hpmi_query_capabilities.htm
-old-project : powermeter
-ms.assetid : 2CCEDDB4-C91D-4E88-A01F-BB52F1686A95
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : powermeter.ioctl_hpmi_query_capabilities, IOCTL_HPMI_QUERY_CAPABILITIES control code [Power Metering and Budgeting Devices], IOCTL_HPMI_QUERY_CAPABILITIES, hpmi/IOCTL_HPMI_QUERY_CAPABILITIES
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : hpmi.h
-req.include-header : Hpmi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 10, version 1709 and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PHPMI_HINT_BOOL, HPMI_HINT_BOOL"
+UID: NI:hpmi.IOCTL_HPMI_QUERY_CAPABILITIES
+title: IOCTL_HPMI_QUERY_CAPABILITIES
+author: windows-driver-content
+description: The IOCTL_HPMI_QUERY_CAPABILITIES command is sent to query features supported by HPMI and Windows services requested by HPMI. Windows will issue this IOCL to HPMI once after a new HPMI driver instance is discovered.
+old-location: powermeter\ioctl_hpmi_query_capabilities.htm
+old-project: powermeter
+ms.assetid: 2CCEDDB4-C91D-4E88-A01F-BB52F1686A95
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: powermeter.ioctl_hpmi_query_capabilities, IOCTL_HPMI_QUERY_CAPABILITIES control code [Power Metering and Budgeting Devices], IOCTL_HPMI_QUERY_CAPABILITIES, hpmi/IOCTL_HPMI_QUERY_CAPABILITIES
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: hpmi.h
+req.include-header: Hpmi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 10, version 1709 and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hpmi.h
+apiname:
+-	IOCTL_HPMI_QUERY_CAPABILITIES
+product: Windows
+targetos: Windows
+req.typenames: "*PHPMI_HINT_BOOL, HPMI_HINT_BOOL"
 ---
 
 # IOCTL_HPMI_QUERY_CAPABILITIES IOCTL

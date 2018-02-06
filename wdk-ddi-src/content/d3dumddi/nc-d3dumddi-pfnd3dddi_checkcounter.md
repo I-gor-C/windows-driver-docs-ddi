@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_CHECKCOUNTER
-title : PFND3DDDI_CHECKCOUNTER
-author : windows-driver-content
-description : Called by the Microsoft Direct3D runtime to retrieve info that describes a counter. Must be implemented by Windows Display Driver Model (WDDM) 1.3 and later user-mode display drivers.
-old-location : display\pfncheckcounter.htm
-old-project : display
-ms.assetid : 3A8B040D-7B48-4CDB-985B-906AE1762E22
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.pfncheckcounter, D3DDDI_COUNTER_TYPE, pfnCheckCounter callback function [Display Devices], pfnCheckCounter, PFND3DDDI_CHECKCOUNTER, PFND3DDDI_CHECKCOUNTER, d3dumddi/pfnCheckCounter
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8.1
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_CHECKCOUNTER
+title: PFND3DDDI_CHECKCOUNTER
+author: windows-driver-content
+description: Called by the Microsoft Direct3D runtime to retrieve info that describes a counter. Must be implemented by Windows Display Driver Model (WDDM) 1.3 and later user-mode display drivers.
+old-location: display\pfncheckcounter.htm
+old-project: display
+ms.assetid: 3A8B040D-7B48-4CDB-985B-906AE1762E22
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.pfncheckcounter, D3DDDI_COUNTER_TYPE, pfnCheckCounter callback function [Display Devices], pfnCheckCounter, PFND3DDDI_CHECKCOUNTER, PFND3DDDI_CHECKCOUNTER, d3dumddi/pfnCheckCounter
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8.1
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	D3dumddi.h
+apiname:
+-	pfnCheckCounter
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

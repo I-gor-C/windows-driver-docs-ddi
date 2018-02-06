@@ -1,41 +1,47 @@
 ---
-UID : NF:fltkernel.FltAllocateCallbackData
-title : FltAllocateCallbackData function
-author : windows-driver-content
-description : FltAllocateCallbackData allocates a callback data structure that a minifilter driver can use to initiate an I/O request.
-old-location : ifsk\fltallocatecallbackdata.htm
-old-project : ifsk
-ms.assetid : a2afb8b8-b0e2-4d22-9d93-33ba2b2f8933
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.fltallocatecallbackdata, FltAllocateCallbackData, fltkernel/FltAllocateCallbackData, FltApiRef_a_to_d_74309bb1-841a-41a6-bd3e-71ed710bc727.xml, FltAllocateCallbackData routine [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltAllocateCallbackData
+title: FltAllocateCallbackData function
+author: windows-driver-content
+description: FltAllocateCallbackData allocates a callback data structure that a minifilter driver can use to initiate an I/O request.
+old-location: ifsk\fltallocatecallbackdata.htm
+old-project: ifsk
+ms.assetid: a2afb8b8-b0e2-4d22-9d93-33ba2b2f8933
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.fltallocatecallbackdata, FltAllocateCallbackData, fltkernel/FltAllocateCallbackData, FltApiRef_a_to_d_74309bb1-841a-41a6-bd3e-71ed710bc727.xml, FltAllocateCallbackData routine [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	FltMgr.lib
+-	FltMgr.dll
+apiname:
+-	FltAllocateCallbackData
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

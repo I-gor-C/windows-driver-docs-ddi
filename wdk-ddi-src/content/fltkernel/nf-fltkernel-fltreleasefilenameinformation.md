@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltReleaseFileNameInformation
-title : FltReleaseFileNameInformation function
-author : windows-driver-content
-description : FltReleaseFileNameInformation releases a file name information structure.
-old-location : ifsk\fltreleasefilenameinformation.htm
-old-project : ifsk
-ms.assetid : 352dbab6-76c3-4e67-a226-4c3d83fbb3b6
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltApiRef_p_to_z_c5266e1d-ab6a-406d-a319-2e9cc2f1acb4.xml, FltReleaseFileNameInformation, FltReleaseFileNameInformation function [Installable File System Drivers], ifsk.fltreleasefilenameinformation, fltkernel/FltReleaseFileNameInformation
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltReleaseFileNameInformation
+title: FltReleaseFileNameInformation function
+author: windows-driver-content
+description: FltReleaseFileNameInformation releases a file name information structure.
+old-location: ifsk\fltreleasefilenameinformation.htm
+old-project: ifsk
+ms.assetid: 352dbab6-76c3-4e67-a226-4c3d83fbb3b6
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltApiRef_p_to_z_c5266e1d-ab6a-406d-a319-2e9cc2f1acb4.xml, FltReleaseFileNameInformation, FltReleaseFileNameInformation function [Installable File System Drivers], ifsk.fltreleasefilenameinformation, fltkernel/FltReleaseFileNameInformation
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltReleaseFileNameInformation
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

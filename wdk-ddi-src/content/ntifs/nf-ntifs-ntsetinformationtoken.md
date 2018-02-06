@@ -1,41 +1,47 @@
 ---
-UID : NF:ntifs.NtSetInformationToken
-title : NtSetInformationToken function
-author : windows-driver-content
-description : The ZwSetInformationToken routine modifies information in a specified token. The calling process must have appropriate access rights to set the information.
-old-location : kernel\zwsetinformationtoken.htm
-old-project : kernel
-ms.assetid : fdb1245c-7804-4cb9-9632-bedb9f7f7b2b
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : NtSetInformationToken, ntifs/ZwSetInformationToken, k111_1122461b-dab8-4a40-8f05-db62ca25763b.xml, ZwSetInformationToken routine [Kernel-Mode Driver Architecture], kernel.zwsetinformationtoken, ZwSetInformationToken, ntifs/NtSetInformationToken
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 7 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.NtSetInformationToken
+title: NtSetInformationToken function
+author: windows-driver-content
+description: The ZwSetInformationToken routine modifies information in a specified token. The calling process must have appropriate access rights to set the information.
+old-location: kernel\zwsetinformationtoken.htm
+old-project: kernel
+ms.assetid: fdb1245c-7804-4cb9-9632-bedb9f7f7b2b
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: NtSetInformationToken, ntifs/ZwSetInformationToken, k111_1122461b-dab8-4a40-8f05-db62ca25763b.xml, ZwSetInformationToken routine [Kernel-Mode Driver Architecture], kernel.zwsetinformationtoken, ZwSetInformationToken, ntifs/NtSetInformationToken
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 7 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ZwSetInformationToken
+-	NtSetInformationToken
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

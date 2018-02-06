@@ -1,42 +1,48 @@
 ---
-UID : NF:wdm.RtlSetBits
-title : RtlSetBits function
-author : windows-driver-content
-description : The RtlSetBits routine sets all bits in a given range of a given bitmap variable.
-old-location : kernel\rtlsetbits.htm
-old-project : kernel
-ms.assetid : 63f796c1-033f-450a-a4da-527b8688448b
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : RtlSetBits, wdm/RtlSetBits, k109_aca53733-c7f0-4c1a-9334-b7e27b199299.xml, kernel.rtlsetbits, RtlSetBits routine [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe (kernel mode); Ntdll.dll (user mode)
-req.irql : "<= APC_LEVEL (See Remarks section)"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.RtlSetBits
+title: RtlSetBits function
+author: windows-driver-content
+description: The RtlSetBits routine sets all bits in a given range of a given bitmap variable.
+old-location: kernel\rtlsetbits.htm
+old-project: kernel
+ms.assetid: 63f796c1-033f-450a-a4da-527b8688448b
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: RtlSetBits, wdm/RtlSetBits, k109_aca53733-c7f0-4c1a-9334-b7e27b199299.xml, kernel.rtlsetbits, RtlSetBits routine [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe (kernel mode); Ntdll.dll (user mode)
+req.irql: "<= APC_LEVEL (See Remarks section)"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+-	Ntdll.dll
+apiname:
+-	RtlSetBits
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NE:ntddk._BUS_DATA_TYPE
-title : "_BUS_DATA_TYPE"
-author : windows-driver-content
-description : The BUS_DATA_TYPE enumeration indicates the type of bus configuration space.
-old-location : kernel\bus_data_type.htm
-old-project : kernel
-ms.assetid : a2a2e964-b9ae-4367-85de-f0ebe3c7a952
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : PNPISAConfiguration, ntddk/VMEConfiguration, ConfigurationSpaceUndefined, ntddk/SgiInternalConfiguration, VMEConfiguration, Cmos, ntddk/ConfigurationSpaceUndefined, MaximumBusDataType, ntddk/PNPISAConfiguration, kernel.bus_data_type, BUS_DATA_TYPE, ntddk/MPIConfiguration, PCIConfiguration, ntddk/BUS_DATA_TYPE, SgiInternalConfiguration, PBUS_DATA_TYPE, ntddk/Cmos, ntddk/PBUS_DATA_TYPE, ntddk/CbusConfiguration, *PBUS_DATA_TYPE, CbusConfiguration, MPIConfiguration, ntddk/MaximumBusDataType, sysenum_3f6df31a-39d8-463e-8d44-44e51cd9989d.xml, BUS_DATA_TYPE enumeration [Kernel-Mode Driver Architecture], ntddk/MPSAConfiguration, PBUS_DATA_TYPE enumeration pointer [Kernel-Mode Driver Architecture], EisaConfiguration, ntddk/NuBusConfiguration, PCMCIAConfiguration, _BUS_DATA_TYPE, Pos, ntddk/Pos, NuBusConfiguration, ntddk/EisaConfiguration, ntddk/PCIConfiguration, ntddk/PCMCIAConfiguration, MPSAConfiguration
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : BUS_DATA_TYPE, *PBUS_DATA_TYPE
+UID: NE:ntddk._BUS_DATA_TYPE
+title: "_BUS_DATA_TYPE"
+author: windows-driver-content
+description: The BUS_DATA_TYPE enumeration indicates the type of bus configuration space.
+old-location: kernel\bus_data_type.htm
+old-project: kernel
+ms.assetid: a2a2e964-b9ae-4367-85de-f0ebe3c7a952
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: PNPISAConfiguration, ntddk/VMEConfiguration, ConfigurationSpaceUndefined, ntddk/SgiInternalConfiguration, VMEConfiguration, Cmos, ntddk/ConfigurationSpaceUndefined, MaximumBusDataType, ntddk/PNPISAConfiguration, kernel.bus_data_type, BUS_DATA_TYPE, ntddk/MPIConfiguration, PCIConfiguration, ntddk/BUS_DATA_TYPE, SgiInternalConfiguration, PBUS_DATA_TYPE, ntddk/Cmos, ntddk/PBUS_DATA_TYPE, ntddk/CbusConfiguration, *PBUS_DATA_TYPE, CbusConfiguration, MPIConfiguration, ntddk/MaximumBusDataType, sysenum_3f6df31a-39d8-463e-8d44-44e51cd9989d.xml, BUS_DATA_TYPE enumeration [Kernel-Mode Driver Architecture], ntddk/MPSAConfiguration, PBUS_DATA_TYPE enumeration pointer [Kernel-Mode Driver Architecture], EisaConfiguration, ntddk/NuBusConfiguration, PCMCIAConfiguration, _BUS_DATA_TYPE, Pos, ntddk/Pos, NuBusConfiguration, ntddk/EisaConfiguration, ntddk/PCIConfiguration, ntddk/PCMCIAConfiguration, MPSAConfiguration
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddk.h
+apiname:
+-	BUS_DATA_TYPE
+product: Windows
+targetos: Windows
+req.typenames: BUS_DATA_TYPE, *PBUS_DATA_TYPE
 ---
 
 # _BUS_DATA_TYPE Enumeration
@@ -64,76 +69,76 @@ typedef enum _BUS_DATA_TYPE {
 ## Constants
 
 <table>
-
-<tr>
-<td>CbusConfiguration</td>
-<td>Indicates Cbus configuration space.</td>
-</tr>
-
-<tr>
-<td>Cmos</td>
-<td>Indicates CMOS data.</td>
-</tr>
-
-<tr>
-<td>ConfigurationSpaceUndefined</td>
-<td>Indicates that the type of bus configuration space is undefined.</td>
-</tr>
-
-<tr>
-<td>EisaConfiguration</td>
-<td>Indicates an EISA bus configuration space.</td>
-</tr>
-
-<tr>
-<td>MaximumBusDataType</td>
-<td>Indicates the upper limit of the bus configuration space types.</td>
-</tr>
-
-<tr>
-<td>MPIConfiguration</td>
-<td>Indicates MPI configuration space.</td>
-</tr>
-
-<tr>
-<td>MPSAConfiguration</td>
-<td>Indicates MPSA configuration space.</td>
-</tr>
-
-<tr>
-<td>NuBusConfiguration</td>
-<td>Indicates NuBus configuration space.</td>
-</tr>
-
-<tr>
-<td>PCIConfiguration</td>
-<td>Indicates PCI configuration space.</td>
-</tr>
-
-<tr>
-<td>PCMCIAConfiguration</td>
-<td>Indicates PCMCIA configuration space.</td>
-</tr>
-
-<tr>
-<td>PNPISAConfiguration</td>
-<td>Indicates PNPISA configuration space.</td>
-</tr>
-
-<tr>
-<td>Pos</td>
-<td>For internal use only.</td>
-</tr>
-
-<tr>
-<td>SgiInternalConfiguration</td>
-<td>Indicates SGI internal bus configuration space.</td>
-</tr>
-
-<tr>
-<td>VMEConfiguration</td>
-<td>Indicates VME configuration space.</td>
-</tr>
+            
+                <tr>
+                    <td>CbusConfiguration</td>
+                    <td>Indicates Cbus configuration space.</td>
+                </tr>
+            
+                <tr>
+                    <td>Cmos</td>
+                    <td>Indicates CMOS data.</td>
+                </tr>
+            
+                <tr>
+                    <td>ConfigurationSpaceUndefined</td>
+                    <td>Indicates that the type of bus configuration space is undefined.</td>
+                </tr>
+            
+                <tr>
+                    <td>EisaConfiguration</td>
+                    <td>Indicates an EISA bus configuration space.</td>
+                </tr>
+            
+                <tr>
+                    <td>MaximumBusDataType</td>
+                    <td>Indicates the upper limit of the bus configuration space types.</td>
+                </tr>
+            
+                <tr>
+                    <td>MPIConfiguration</td>
+                    <td>Indicates MPI configuration space.</td>
+                </tr>
+            
+                <tr>
+                    <td>MPSAConfiguration</td>
+                    <td>Indicates MPSA configuration space.</td>
+                </tr>
+            
+                <tr>
+                    <td>NuBusConfiguration</td>
+                    <td>Indicates NuBus configuration space.</td>
+                </tr>
+            
+                <tr>
+                    <td>PCIConfiguration</td>
+                    <td>Indicates PCI configuration space.</td>
+                </tr>
+            
+                <tr>
+                    <td>PCMCIAConfiguration</td>
+                    <td>Indicates PCMCIA configuration space.</td>
+                </tr>
+            
+                <tr>
+                    <td>PNPISAConfiguration</td>
+                    <td>Indicates PNPISA configuration space.</td>
+                </tr>
+            
+                <tr>
+                    <td>Pos</td>
+                    <td>For internal use only.</td>
+                </tr>
+            
+                <tr>
+                    <td>SgiInternalConfiguration</td>
+                    <td>Indicates SGI internal bus configuration space.</td>
+                </tr>
+            
+                <tr>
+                    <td>VMEConfiguration</td>
+                    <td>Indicates VME configuration space.</td>
+                </tr>
 </table>
 
 
@@ -142,9 +147,9 @@ typedef enum _BUS_DATA_TYPE {
 | ---- |:---- |
 | **Header** | ntddk.h (include Ntddk.h) |
 
-## See Also
+    ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546628">HalSetBusData</a>
+        <a href="https://msdn.microsoft.com/library/windows/hardware/ff546628">HalSetBusData</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff546633">HalSetBusDataByOffset</a>
 

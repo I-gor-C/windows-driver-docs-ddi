@@ -1,41 +1,46 @@
 ---
-UID : NC:ndkpi.NDK_FN_INVALIDATE
-title : NDK_FN_INVALIDATE
-author : windows-driver-content
-description : The NdkInvalidate (NDK_FN_INVALIDATE) function Invalidates a fast-register NDK memory region (MR) or memory window (MW).
-old-location : netvista\ndk_fn_invalidate.htm
-old-project : netvista
-ms.assetid : 79A39FEE-173F-4106-9759-97CF6BE5DA65
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.ndk_fn_invalidate, NdkInvalidate callback function [Network Drivers Starting with Windows Vista], NdkInvalidate, NDK_FN_INVALIDATE, NDK_FN_INVALIDATE, ndkpi/NdkInvalidate, NDK_OP_FLAG_SILENT_SUCCESS, NDK_OP_FLAG_READ_FENCE, NDK_OP_FLAG_DEFER
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ndkpi.h
-req.include-header : Ndkpi.h
-req.target-type : Windows
-req.target-min-winverclnt : None supported,Supported in NDIS 6.30 and later.
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_WWAN_VISIBLE_PROVIDERS, *PNDIS_WWAN_VISIBLE_PROVIDERS
+UID: NC:ndkpi.NDK_FN_INVALIDATE
+title: NDK_FN_INVALIDATE
+author: windows-driver-content
+description: The NdkInvalidate (NDK_FN_INVALIDATE) function Invalidates a fast-register NDK memory region (MR) or memory window (MW).
+old-location: netvista\ndk_fn_invalidate.htm
+old-project: netvista
+ms.assetid: 79A39FEE-173F-4106-9759-97CF6BE5DA65
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.ndk_fn_invalidate, NdkInvalidate callback function [Network Drivers Starting with Windows Vista], NdkInvalidate, NDK_FN_INVALIDATE, NDK_FN_INVALIDATE, ndkpi/NdkInvalidate, NDK_OP_FLAG_SILENT_SUCCESS, NDK_OP_FLAG_READ_FENCE, NDK_OP_FLAG_DEFER
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ndkpi.h
+req.include-header: Ndkpi.h
+req.target-type: Windows
+req.target-min-winverclnt: None supported,Supported in NDIS 6.30 and later.
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	ndkpi.h
+apiname:
+-	NdkInvalidate
+product: Windows
+targetos: Windows
+req.typenames: NDIS_WWAN_VISIBLE_PROVIDERS, *PNDIS_WWAN_VISIBLE_PROVIDERS
 ---
 
 

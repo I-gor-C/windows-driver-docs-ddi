@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsFilterCreatePinFactory
-title : KsFilterCreatePinFactory function
-author : windows-driver-content
-description : The KsFilterCreatePinFactory function creates a new pin factory on the specified filter.
-old-location : stream\ksfiltercreatepinfactory.htm
-old-project : stream
-ms.assetid : f4c8de23-dc92-41b0-82ee-2622d3942c0e
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : avfunc_845b66c4-755e-43db-afdc-db929b6bd1c6.xml, ks/KsFilterCreatePinFactory, KsFilterCreatePinFactory, stream.ksfiltercreatepinfactory, KsFilterCreatePinFactory function [Streaming Media Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsFilterCreatePinFactory
+title: KsFilterCreatePinFactory function
+author: windows-driver-content
+description: The KsFilterCreatePinFactory function creates a new pin factory on the specified filter.
+old-location: stream\ksfiltercreatepinfactory.htm
+old-project: stream
+ms.assetid: f4c8de23-dc92-41b0-82ee-2622d3942c0e
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: avfunc_845b66c4-755e-43db-afdc-db929b6bd1c6.xml, ks/KsFilterCreatePinFactory, KsFilterCreatePinFactory, stream.ksfiltercreatepinfactory, KsFilterCreatePinFactory function [Streaming Media Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsFilterCreatePinFactory
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

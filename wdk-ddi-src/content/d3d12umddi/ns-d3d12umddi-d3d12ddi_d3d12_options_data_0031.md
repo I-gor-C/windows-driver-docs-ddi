@@ -1,41 +1,46 @@
 ---
-UID : NS:d3d12umddi.D3D12DDI_D3D12_OPTIONS_DATA_0031
-title : D3D12DDI_D3D12_OPTIONS_DATA_0031
-author : windows-driver-content
-description : Display options data.
-old-location : display\d3d12ddi-d3d12-options-data-0031.htm
-old-project : display
-ms.assetid : 3e60f42a-ea95-4876-b370-5c2f0585dc97
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3d12umddi/D3D12DDI_D3D12_OPTIONS_DATA_0031, display.d3d12ddi-d3d12-options-data-0031, D3D12DDI_D3D12_OPTIONS_DATA_0031, D3D12DDI_D3D12_OPTIONS_DATA_0031 structure [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3d12umddi.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3D12DDI_D3D12_OPTIONS_DATA_0031
+UID: NS:d3d12umddi.D3D12DDI_D3D12_OPTIONS_DATA_0031
+title: D3D12DDI_D3D12_OPTIONS_DATA_0031
+author: windows-driver-content
+description: Display options data.
+old-location: display\d3d12ddi-d3d12-options-data-0031.htm
+old-project: display
+ms.assetid: 3e60f42a-ea95-4876-b370-5c2f0585dc97
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3d12umddi/D3D12DDI_D3D12_OPTIONS_DATA_0031, display.d3d12ddi-d3d12-options-data-0031, D3D12DDI_D3D12_OPTIONS_DATA_0031, D3D12DDI_D3D12_OPTIONS_DATA_0031 structure [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3d12umddi.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3d12umddi.h
+apiname:
+-	D3D12DDI_D3D12_OPTIONS_DATA_0031
+product: Windows
+targetos: Windows
+req.typenames: D3D12DDI_D3D12_OPTIONS_DATA_0031
 ---
 
 # D3D12DDI_D3D12_OPTIONS_DATA_0031 structure

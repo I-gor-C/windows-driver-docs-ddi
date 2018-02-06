@@ -1,42 +1,47 @@
 ---
-UID : NF:wdfusb.WDF_USB_DEVICE_INFORMATION_INIT
-title : WDF_USB_DEVICE_INFORMATION_INIT function
-author : windows-driver-content
-description : The WDF_USB_DEVICE_INFORMATION_INIT function initializes a driver's WDF_USB_DEVICE_INFORMATION structure.
-old-location : wdf\wdf_usb_device_information_init.htm
-old-project : wdf
-ms.assetid : 8f4931d7-6b5f-412f-ace9-32f20dfa7c90
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : DFUsbRef_ffde7966-f00b-4614-9845-aaebe2e0488b.xml, kmdf.wdf_usb_device_information_init, WDF_USB_DEVICE_INFORMATION_INIT, wdf.wdf_usb_device_information_init, WDF_USB_DEVICE_INFORMATION_INIT function, wdfusb/WDF_USB_DEVICE_INFORMATION_INIT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfusb.h
-req.include-header : Wdfusb.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfusb.WDF_USB_DEVICE_INFORMATION_INIT
+title: WDF_USB_DEVICE_INFORMATION_INIT function
+author: windows-driver-content
+description: The WDF_USB_DEVICE_INFORMATION_INIT function initializes a driver's WDF_USB_DEVICE_INFORMATION structure.
+old-location: wdf\wdf_usb_device_information_init.htm
+old-project: wdf
+ms.assetid: 8f4931d7-6b5f-412f-ace9-32f20dfa7c90
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: DFUsbRef_ffde7966-f00b-4614-9845-aaebe2e0488b.xml, kmdf.wdf_usb_device_information_init, WDF_USB_DEVICE_INFORMATION_INIT, wdf.wdf_usb_device_information_init, WDF_USB_DEVICE_INFORMATION_INIT function, wdfusb/WDF_USB_DEVICE_INFORMATION_INIT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfusb.h
+req.include-header: Wdfusb.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfusb.h
+apiname:
+-	WDF_USB_DEVICE_INFORMATION_INIT
+product: Windows
+targetos: Windows
+req.typenames: WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
+req.product: Windows 10 or later.
 ---
 
 

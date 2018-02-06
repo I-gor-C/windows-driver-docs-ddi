@@ -1,42 +1,47 @@
 ---
-UID : NF:storduid.CompareStorageDuids
-title : CompareStorageDuids function
-author : windows-driver-content
-description : The CompareStorageDuids routine compares two device unique identifiers (DUIDs) and reports whether they match or not.
-old-location : storage\comparestorageduids.htm
-old-project : storage
-ms.assetid : bf66a04d-0892-4813-9615-845054526125
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : CompareStorageDuids, CompareStorageDuids routine [Storage Devices], storertns-general_86f18b5a-ed33-48e8-b13c-76bd2422418d.xml, storduid/CompareStorageDuids, storage.comparestorageduids
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : storduid.h
-req.include-header : Storduid.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DUID_MATCH_STATUS
-req.product : Windows 10 or later.
+UID: NF:storduid.CompareStorageDuids
+title: CompareStorageDuids function
+author: windows-driver-content
+description: The CompareStorageDuids routine compares two device unique identifiers (DUIDs) and reports whether they match or not.
+old-location: storage\comparestorageduids.htm
+old-project: storage
+ms.assetid: bf66a04d-0892-4813-9615-845054526125
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: CompareStorageDuids, CompareStorageDuids routine [Storage Devices], storertns-general_86f18b5a-ed33-48e8-b13c-76bd2422418d.xml, storduid/CompareStorageDuids, storage.comparestorageduids
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: storduid.h
+req.include-header: Storduid.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	storduid.h
+apiname:
+-	CompareStorageDuids
+product: Windows
+targetos: Windows
+req.typenames: DUID_MATCH_STATUS
+req.product: Windows 10 or later.
 ---
 
 

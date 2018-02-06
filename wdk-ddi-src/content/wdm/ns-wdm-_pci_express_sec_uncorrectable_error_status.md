@@ -1,42 +1,47 @@
 ---
-UID : NS:wdm._PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_STATUS
-title : "_PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_STATUS"
-author : windows-driver-content
-description : The PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_STATUS structure describes a PCI Express (PCIe) secondary uncorrectable error status register of a PCIe advanced error reporting capability structure.
-old-location : pci\pci_express_sec_uncorrectable_error_status.htm
-old-project : PCI
-ms.assetid : 8f6b1764-e2c0-4c9e-a2ec-56cc19520d2e
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : wdm/PPCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_STATUS, pci_struct_cb52bea2-b001-47a7-bad9-9816787133d3.xml, PPCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_STATUS union pointer [Buses], PCI.pci_express_sec_uncorrectable_error_status, PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_STATUS, PPCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_STATUS, wdm/PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_STATUS, PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_STATUS union [Buses], _PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_STATUS, *PPCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_STATUS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : Ntddk.h, Wdm.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_STATUS, *PPCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_STATUS
-req.product : Windows 10 or later.
+UID: NS:wdm._PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_STATUS
+title: "_PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_STATUS"
+author: windows-driver-content
+description: The PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_STATUS structure describes a PCI Express (PCIe) secondary uncorrectable error status register of a PCIe advanced error reporting capability structure.
+old-location: pci\pci_express_sec_uncorrectable_error_status.htm
+old-project: PCI
+ms.assetid: 8f6b1764-e2c0-4c9e-a2ec-56cc19520d2e
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: wdm/PPCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_STATUS, pci_struct_cb52bea2-b001-47a7-bad9-9816787133d3.xml, PPCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_STATUS union pointer [Buses], PCI.pci_express_sec_uncorrectable_error_status, PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_STATUS, PPCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_STATUS, wdm/PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_STATUS, PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_STATUS union [Buses], _PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_STATUS, *PPCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_STATUS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: Ntddk.h, Wdm.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdm.h
+apiname:
+-	PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_STATUS
+product: Windows
+targetos: Windows
+req.typenames: PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_STATUS, *PPCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_STATUS
+req.product: Windows 10 or later.
 ---
 
 # _PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_STATUS structure

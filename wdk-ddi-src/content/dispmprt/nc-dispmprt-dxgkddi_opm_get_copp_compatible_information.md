@@ -1,41 +1,46 @@
 ---
-UID : NC:dispmprt.DXGKDDI_OPM_GET_COPP_COMPATIBLE_INFORMATION
-title : DXGKDDI_OPM_GET_COPP_COMPATIBLE_INFORMATION
-author : windows-driver-content
-description : The DxgkDdiOPMGetCOPPCompatibleInformation function retrieves information that is compatible with the Certified Output Protection Protocol (COPP) from the given protected output object.
-old-location : display\dxgkddiopmgetcoppcompatibleinformation.htm
-old-project : display
-ms.assetid : 9f15df1e-bdf5-4634-97f1-78515664b594
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkddiopmgetcoppcompatibleinformation, DxgkDdiOPMGetCOPPCompatibleInformation callback function [Display Devices], DxgkDdiOPMGetCOPPCompatibleInformation, DXGKDDI_OPM_GET_COPP_COMPATIBLE_INFORMATION, DXGKDDI_OPM_GET_COPP_COMPATIBLE_INFORMATION, dispmprt/DxgkDdiOPMGetCOPPCompatibleInformation, Dm_Opm_functions_7873b0b1-3983-49c4-8192-b0c59d5ae01c.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : dispmprt.h
-req.include-header : Dispmprt.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
+UID: NC:dispmprt.DXGKDDI_OPM_GET_COPP_COMPATIBLE_INFORMATION
+title: DXGKDDI_OPM_GET_COPP_COMPATIBLE_INFORMATION
+author: windows-driver-content
+description: The DxgkDdiOPMGetCOPPCompatibleInformation function retrieves information that is compatible with the Certified Output Protection Protocol (COPP) from the given protected output object.
+old-location: display\dxgkddiopmgetcoppcompatibleinformation.htm
+old-project: display
+ms.assetid: 9f15df1e-bdf5-4634-97f1-78515664b594
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkddiopmgetcoppcompatibleinformation, DxgkDdiOPMGetCOPPCompatibleInformation callback function [Display Devices], DxgkDdiOPMGetCOPPCompatibleInformation, DXGKDDI_OPM_GET_COPP_COMPATIBLE_INFORMATION, DXGKDDI_OPM_GET_COPP_COMPATIBLE_INFORMATION, dispmprt/DxgkDdiOPMGetCOPPCompatibleInformation, Dm_Opm_functions_7873b0b1-3983-49c4-8192-b0c59d5ae01c.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: dispmprt.h
+req.include-header: Dispmprt.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	dispmprt.h
+apiname:
+-	DxgkDdiOPMGetCOPPCompatibleInformation
+product: Windows
+targetos: Windows
+req.typenames: SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NF:prefix.RxPrefixTableLookupName
-title : RxPrefixTableLookupName function
-author : windows-driver-content
-description : RxPrefixTableLookupName looks up a name in a prefix table used to catalog SRV_CALL, NET_ROOT, and V_NET_ROOT names and converts the underlying pointer to a structure that contains the name.
-old-location : ifsk\rxprefixtablelookupname.htm
-old-project : ifsk
-ms.assetid : 20d61d23-4151-4a23-8963-6e38a08f391e
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : rxref_e46fe04e-07a6-4733-936e-e70a51009618.xml, prefix/RxPrefixTableLookupName, RxPrefixTableLookupName, ifsk.rxprefixtablelookupname, RxPrefixTableLookupName function [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : prefix.h
-req.include-header : Prefix.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SHIMOPTS, *PSHIMOPTS
-req.product : Windows 10 or later.
+UID: NF:prefix.RxPrefixTableLookupName
+title: RxPrefixTableLookupName function
+author: windows-driver-content
+description: RxPrefixTableLookupName looks up a name in a prefix table used to catalog SRV_CALL, NET_ROOT, and V_NET_ROOT names and converts the underlying pointer to a structure that contains the name.
+old-location: ifsk\rxprefixtablelookupname.htm
+old-project: ifsk
+ms.assetid: 20d61d23-4151-4a23-8963-6e38a08f391e
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: rxref_e46fe04e-07a6-4733-936e-e70a51009618.xml, prefix/RxPrefixTableLookupName, RxPrefixTableLookupName, ifsk.rxprefixtablelookupname, RxPrefixTableLookupName function [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: prefix.h
+req.include-header: Prefix.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	prefix.h
+apiname:
+-	RxPrefixTableLookupName
+product: Windows
+targetos: Windows
+req.typenames: SHIMOPTS, *PSHIMOPTS
+req.product: Windows 10 or later.
 ---
 
 

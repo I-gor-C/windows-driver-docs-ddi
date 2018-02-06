@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddtape.IOCTL_TAPE_GET_MEDIA_PARAMS
-title : IOCTL_TAPE_GET_MEDIA_PARAMS
-author : windows-driver-content
-description : Returns information about the media's total and remaining capacity, its block size, the number of partitions, and whether it is write-protected.
-old-location : storage\ioctl_tape_get_media_params.htm
-old-project : storage
-ms.assetid : 4fd09b30-d63b-4b7f-9f6c-ef028e5e549f
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_tape_get_media_params, IOCTL_TAPE_GET_MEDIA_PARAMS control code [Storage Devices], IOCTL_TAPE_GET_MEDIA_PARAMS, ntddtape/IOCTL_TAPE_GET_MEDIA_PARAMS, k307_c8991fab-1c8d-4792-9ecc-6bb7e4643e68.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddtape.h
-req.include-header : Ntddtape.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TAPE_DRIVE_PROBLEM_TYPE
+UID: NI:ntddtape.IOCTL_TAPE_GET_MEDIA_PARAMS
+title: IOCTL_TAPE_GET_MEDIA_PARAMS
+author: windows-driver-content
+description: Returns information about the media's total and remaining capacity, its block size, the number of partitions, and whether it is write-protected.
+old-location: storage\ioctl_tape_get_media_params.htm
+old-project: storage
+ms.assetid: 4fd09b30-d63b-4b7f-9f6c-ef028e5e549f
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_tape_get_media_params, IOCTL_TAPE_GET_MEDIA_PARAMS control code [Storage Devices], IOCTL_TAPE_GET_MEDIA_PARAMS, ntddtape/IOCTL_TAPE_GET_MEDIA_PARAMS, k307_c8991fab-1c8d-4792-9ecc-6bb7e4643e68.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddtape.h
+req.include-header: Ntddtape.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddtape.h
+apiname:
+-	IOCTL_TAPE_GET_MEDIA_PARAMS
+product: Windows
+targetos: Windows
+req.typenames: TAPE_DRIVE_PROBLEM_TYPE
 ---
 
 # IOCTL_TAPE_GET_MEDIA_PARAMS IOCTL

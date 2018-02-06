@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.tagKS_AMVPSIZE
-title : tagKS_AMVPSIZE
-author : windows-driver-content
-description : The KS_AMVPSIZE structure is used to describe the dimension of a video port (width by height).
-old-location : stream\ks_amvpsize.htm
-old-project : stream
-ms.assetid : 31430419-8f83-4f46-b398-841895f415d5
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KS_AMVPSIZE, tagKS_AMVPSIZE, KS_AMVPSIZE structure [Streaming Media Devices], PKS_AMVPSIZE, ksmedia/PKS_AMVPSIZE, PKS_AMVPSIZE structure pointer [Streaming Media Devices], *PKS_AMVPSIZE, ksmedia/KS_AMVPSIZE, stream.ks_amvpsize, dvdref_fa534150-3678-4def-945b-59d23ea84e83.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KS_AMVPSIZE, *PKS_AMVPSIZE
+UID: NS:ksmedia.tagKS_AMVPSIZE
+title: tagKS_AMVPSIZE
+author: windows-driver-content
+description: The KS_AMVPSIZE structure is used to describe the dimension of a video port (width by height).
+old-location: stream\ks_amvpsize.htm
+old-project: stream
+ms.assetid: 31430419-8f83-4f46-b398-841895f415d5
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KS_AMVPSIZE, tagKS_AMVPSIZE, KS_AMVPSIZE structure [Streaming Media Devices], PKS_AMVPSIZE, ksmedia/PKS_AMVPSIZE, PKS_AMVPSIZE structure pointer [Streaming Media Devices], *PKS_AMVPSIZE, ksmedia/KS_AMVPSIZE, stream.ks_amvpsize, dvdref_fa534150-3678-4def-945b-59d23ea84e83.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	KS_AMVPSIZE
+product: Windows
+targetos: Windows
+req.typenames: KS_AMVPSIZE, *PKS_AMVPSIZE
 ---
 
 # tagKS_AMVPSIZE structure

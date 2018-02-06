@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.KSPROPERTY_TVAUDIO_CAPS_S
-title : KSPROPERTY_TVAUDIO_CAPS_S
-author : windows-driver-content
-description : The KSPROPERTY_TVAUDIO_CAPS_S structure describes the capability of a TV audio device, such as stereo versus mono audio support and language capabilities.
-old-location : stream\ksproperty_tvaudio_caps_s.htm
-old-project : stream
-ms.assetid : 991208ee-d245-41d1-a5e6-0e79368e37a8
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ksmedia/PKSPROPERTY_TVAUDIO_CAPS_S, PKSPROPERTY_TVAUDIO_CAPS_S structure pointer [Streaming Media Devices], *PKSPROPERTY_TVAUDIO_CAPS_S, stream.ksproperty_tvaudio_caps_s, PKSPROPERTY_TVAUDIO_CAPS_S, ksmedia/KSPROPERTY_TVAUDIO_CAPS_S, KSPROPERTY_TVAUDIO_CAPS_S, vidcapstruct_dd4243d2-9778-4dae-99e2-0d32a73ab0d4.xml, KSPROPERTY_TVAUDIO_CAPS_S structure [Streaming Media Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKSPROPERTY_TVAUDIO_CAPS_S, KSPROPERTY_TVAUDIO_CAPS_S"
+UID: NS:ksmedia.KSPROPERTY_TVAUDIO_CAPS_S
+title: KSPROPERTY_TVAUDIO_CAPS_S
+author: windows-driver-content
+description: The KSPROPERTY_TVAUDIO_CAPS_S structure describes the capability of a TV audio device, such as stereo versus mono audio support and language capabilities.
+old-location: stream\ksproperty_tvaudio_caps_s.htm
+old-project: stream
+ms.assetid: 991208ee-d245-41d1-a5e6-0e79368e37a8
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ksmedia/PKSPROPERTY_TVAUDIO_CAPS_S, PKSPROPERTY_TVAUDIO_CAPS_S structure pointer [Streaming Media Devices], *PKSPROPERTY_TVAUDIO_CAPS_S, stream.ksproperty_tvaudio_caps_s, PKSPROPERTY_TVAUDIO_CAPS_S, ksmedia/KSPROPERTY_TVAUDIO_CAPS_S, KSPROPERTY_TVAUDIO_CAPS_S, vidcapstruct_dd4243d2-9778-4dae-99e2-0d32a73ab0d4.xml, KSPROPERTY_TVAUDIO_CAPS_S structure [Streaming Media Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	KSPROPERTY_TVAUDIO_CAPS_S
+product: Windows
+targetos: Windows
+req.typenames: "*PKSPROPERTY_TVAUDIO_CAPS_S, KSPROPERTY_TVAUDIO_CAPS_S"
 ---
 
 # KSPROPERTY_TVAUDIO_CAPS_S structure

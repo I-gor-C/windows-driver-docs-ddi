@@ -1,41 +1,46 @@
 ---
-UID : NC:ndis.MINIPORT_PAUSE
-title : MINIPORT_PAUSE
-author : windows-driver-content
-description : NDIS calls a miniport driver's MiniportPause function to stop the flow of network data through a specified miniport adapter.
-old-location : netvista\miniportpause.htm
-old-project : netvista
-ms.assetid : 047241a5-6f52-4a82-a334-8508f0de5e1a
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.miniportpause, MiniportPause callback function [Network Drivers Starting with Windows Vista], MiniportPause, MINIPORT_PAUSE, MINIPORT_PAUSE, ndis/MiniportPause, miniport_functions_ref_ff1257db-4c3e-4e0d-8d46-1736567339ba.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
+UID: NC:ndis.MINIPORT_PAUSE
+title: MINIPORT_PAUSE
+author: windows-driver-content
+description: NDIS calls a miniport driver's MiniportPause function to stop the flow of network data through a specified miniport adapter.
+old-location: netvista\miniportpause.htm
+old-project: netvista
+ms.assetid: 047241a5-6f52-4a82-a334-8508f0de5e1a
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.miniportpause, MiniportPause callback function [Network Drivers Starting with Windows Vista], MiniportPause, MINIPORT_PAUSE, MINIPORT_PAUSE, ndis/MiniportPause, miniport_functions_ref_ff1257db-4c3e-4e0d-8d46-1736567339ba.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ndis.h
+apiname:
+-	MiniportPause
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 

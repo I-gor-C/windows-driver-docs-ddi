@@ -1,42 +1,47 @@
 ---
-UID : NN:wia_lh.IWiaImageFilter
-title : IWiaImageFilter
-author : windows-driver-content
-description : The IWiaImageFilter interface is an extension interface implemented by image processing filter developers and called by Microsoft Windows Image Acquisition (WIA).
-old-location : image\iwiaimagefilter_interface.htm
-old-project : image
-ms.assetid : de74898b-ac04-468d-874d-7ca281e22a86
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : image.iwiaimagefilter_interface, IWiaImageFilter interface [Imaging Devices], IWiaImageFilter interface [Imaging Devices], described, IWiaImageFilter, wia_lh/IWiaImageFilter, IWiaErrorHandler_3922a578-25ee-448c-a0db-c339711ad2cb.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : wia_lh.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wia_lh.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : BMP_IMAGE_INFO, *PBMP_IMAGE_INFO
-req.product : Windows 10 or later.
+UID: NN:wia_lh.IWiaImageFilter
+title: IWiaImageFilter
+author: windows-driver-content
+description: The IWiaImageFilter interface is an extension interface implemented by image processing filter developers and called by Microsoft Windows Image Acquisition (WIA).
+old-location: image\iwiaimagefilter_interface.htm
+old-project: image
+ms.assetid: de74898b-ac04-468d-874d-7ca281e22a86
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: image.iwiaimagefilter_interface, IWiaImageFilter interface [Imaging Devices], IWiaImageFilter interface [Imaging Devices], described, IWiaImageFilter, wia_lh/IWiaImageFilter, IWiaErrorHandler_3922a578-25ee-448c-a0db-c339711ad2cb.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: wia_lh.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wia_lh.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	wia_lh.h
+apiname:
+-	IWiaImageFilter
+product: Windows
+targetos: Windows
+req.typenames: BMP_IMAGE_INFO, *PBMP_IMAGE_INFO
+req.product: Windows 10 or later.
 ---
 
 # IWiaImageFilter interface

@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisMRestartComplete
-title : NdisMRestartComplete function
-author : windows-driver-content
-description : A miniport driver must call the NdisMRestartComplete function to complete a restart operation if the driver returned NDIS_STATUS_PENDING from its MiniportRestart function.
-old-location : netvista\ndismrestartcomplete.htm
-old-project : netvista
-ms.assetid : f43137ed-2ea3-4b7c-8d61-bda76bcb5f34
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NdisMRestartComplete, netvista.ndismrestartcomplete, ndis/NdisMRestartComplete, miniport_ndis_functions_ref_ee1a63ca-c2c4-422b-8c8a-163785c58802.xml, NdisMRestartComplete function [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_Miniport_Driver_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisMRestartComplete
+title: NdisMRestartComplete function
+author: windows-driver-content
+description: A miniport driver must call the NdisMRestartComplete function to complete a restart operation if the driver returned NDIS_STATUS_PENDING from its MiniportRestart function.
+old-location: netvista\ndismrestartcomplete.htm
+old-project: netvista
+ms.assetid: f43137ed-2ea3-4b7c-8d61-bda76bcb5f34
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NdisMRestartComplete, netvista.ndismrestartcomplete, ndis/NdisMRestartComplete, miniport_ndis_functions_ref_ee1a63ca-c2c4-422b-8c8a-163785c58802.xml, NdisMRestartComplete function [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_Miniport_Driver_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisMRestartComplete
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

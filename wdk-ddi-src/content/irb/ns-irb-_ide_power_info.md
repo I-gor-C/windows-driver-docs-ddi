@@ -1,41 +1,46 @@
 ---
-UID : NS:irb._IDE_POWER_INFO
-title : "_IDE_POWER_INFO"
-author : windows-driver-content
-description : The POWER_CHANGE_INFO structure is used in conjunction with the IDE_REQUEST_BLOCK to request a power state change.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
-old-location : storage\power_change_info.htm
-old-project : storage
-ms.assetid : 10f6c449-f0f8-4261-825e-127c477c06eb
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : structs-ATA_b4b67f22-359b-4c12-ad21-7de1c39a8259.xml, *PIDE_POWER_INFO, irb/PIDE_POWER_INFO, IDE_POWER_INFO, IDE_POWER_INFO structure [Storage Devices], PIDE_POWER_INFO, storage.power_change_info, _IDE_POWER_INFO, POWER_CHANGE_INFO structure [Storage Devices], PIDE_POWER_INFO structure pointer [Storage Devices], irb/IDE_POWER_INFO, POWER_CHANGE_INFO
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : irb.h
-req.include-header : Irb.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : IDE_POWER_INFO, *PIDE_POWER_INFO
+UID: NS:irb._IDE_POWER_INFO
+title: "_IDE_POWER_INFO"
+author: windows-driver-content
+description: The POWER_CHANGE_INFO structure is used in conjunction with the IDE_REQUEST_BLOCK to request a power state change.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
+old-location: storage\power_change_info.htm
+old-project: storage
+ms.assetid: 10f6c449-f0f8-4261-825e-127c477c06eb
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: structs-ATA_b4b67f22-359b-4c12-ad21-7de1c39a8259.xml, *PIDE_POWER_INFO, irb/PIDE_POWER_INFO, IDE_POWER_INFO, IDE_POWER_INFO structure [Storage Devices], PIDE_POWER_INFO, storage.power_change_info, _IDE_POWER_INFO, POWER_CHANGE_INFO structure [Storage Devices], PIDE_POWER_INFO structure pointer [Storage Devices], irb/IDE_POWER_INFO, POWER_CHANGE_INFO
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: irb.h
+req.include-header: Irb.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	irb.h
+apiname:
+-	IDE_POWER_INFO
+product: Windows
+targetos: Windows
+req.typenames: IDE_POWER_INFO, *PIDE_POWER_INFO
 ---
 
 # _IDE_POWER_INFO structure

@@ -1,41 +1,46 @@
 ---
-UID : NI:lamp.IOCTL_LAMP_SET_INTENSITY_WHITE
-title : IOCTL_LAMP_SET_INTENSITY_WHITE
-author : windows-driver-content
-description : The IOCTL_LAMP_SET_INTENSITY_WHITE control code sets the lamp to the specified light intensity.
-old-location : stream\ioctl_lamp_set_intensity_white.htm
-old-project : stream
-ms.assetid : 78541C4C-AA0E-4C1F-A7B5-E2A39DF5E2CE
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.ioctl_lamp_set_intensity_white, IOCTL_LAMP_SET_INTENSITY_WHITE control code [Streaming Media Devices], IOCTL_LAMP_SET_INTENSITY_WHITE, lamp/IOCTL_LAMP_SET_INTENSITY_WHITE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : lamp.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : LAMP_MODE
+UID: NI:lamp.IOCTL_LAMP_SET_INTENSITY_WHITE
+title: IOCTL_LAMP_SET_INTENSITY_WHITE
+author: windows-driver-content
+description: The IOCTL_LAMP_SET_INTENSITY_WHITE control code sets the lamp to the specified light intensity.
+old-location: stream\ioctl_lamp_set_intensity_white.htm
+old-project: stream
+ms.assetid: 78541C4C-AA0E-4C1F-A7B5-E2A39DF5E2CE
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.ioctl_lamp_set_intensity_white, IOCTL_LAMP_SET_INTENSITY_WHITE control code [Streaming Media Devices], IOCTL_LAMP_SET_INTENSITY_WHITE, lamp/IOCTL_LAMP_SET_INTENSITY_WHITE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: lamp.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	lamp.h
+apiname:
+-	IOCTL_LAMP_SET_INTENSITY_WHITE
+product: Windows
+targetos: Windows
+req.typenames: LAMP_MODE
 ---
 
 # IOCTL_LAMP_SET_INTENSITY_WHITE IOCTL

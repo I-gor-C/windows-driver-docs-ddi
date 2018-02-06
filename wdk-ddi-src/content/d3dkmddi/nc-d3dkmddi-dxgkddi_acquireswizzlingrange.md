@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dkmddi.DXGKDDI_ACQUIRESWIZZLINGRANGE
-title : DXGKDDI_ACQUIRESWIZZLINGRANGE
-author : windows-driver-content
-description : The DxgkDdiAcquireSwizzlingRange function makes an allocation accessible through the central processing unit (CPU) aperture for the given segment.
-old-location : display\dxgkddiacquireswizzlingrange.htm
-old-project : display
-ms.assetid : f861e055-70db-4e0a-9c62-87e2d41f92ae
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkddiacquireswizzlingrange, DxgkDdiAcquireSwizzlingRange callback function [Display Devices], DxgkDdiAcquireSwizzlingRange, DXGKDDI_ACQUIRESWIZZLINGRANGE, DXGKDDI_ACQUIRESWIZZLINGRANGE, d3dkmddi/DxgkDdiAcquireSwizzlingRange, DmFunctions_6dd5b0ee-666c-45bf-ae39-05e37d74c137.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dkmddi.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
+UID: NC:d3dkmddi.DXGKDDI_ACQUIRESWIZZLINGRANGE
+title: DXGKDDI_ACQUIRESWIZZLINGRANGE
+author: windows-driver-content
+description: The DxgkDdiAcquireSwizzlingRange function makes an allocation accessible through the central processing unit (CPU) aperture for the given segment.
+old-location: display\dxgkddiacquireswizzlingrange.htm
+old-project: display
+ms.assetid: f861e055-70db-4e0a-9c62-87e2d41f92ae
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkddiacquireswizzlingrange, DxgkDdiAcquireSwizzlingRange callback function [Display Devices], DxgkDdiAcquireSwizzlingRange, DXGKDDI_ACQUIRESWIZZLINGRANGE, DXGKDDI_ACQUIRESWIZZLINGRANGE, d3dkmddi/DxgkDdiAcquireSwizzlingRange, DmFunctions_6dd5b0ee-666c-45bf-ae39-05e37d74c137.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dkmddi.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DxgkDdiAcquireSwizzlingRange
+product: Windows
+targetos: Windows
+req.typenames: DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
 

@@ -1,41 +1,47 @@
 ---
-UID : NF:dbgeng.IDebugControl3.GetTextReplacement
-title : IDebugControl3::GetTextReplacement method
-author : windows-driver-content
-description : The GetTextReplacement method returns the value of a user-named alias or an automatic alias.
-old-location : debugger\gettextreplacement.htm
-old-project : debugger
-ms.assetid : 8d5531ac-afa1-4928-8ea6-8be4663cf06a
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : dbgeng/IDebugControl2::GetTextReplacement, IDebugControl3, IDebugControl3 interface [Windows Debugging], GetTextReplacement method, GetTextReplacement method [Windows Debugging], IDebugControl3 interface, IDebugControl2 interface [Windows Debugging], GetTextReplacement method, IDebugControl3::GetTextReplacement, GetTextReplacement, GetTextReplacement method [Windows Debugging], GetTextReplacement method [Windows Debugging], IDebugControl2 interface, debugger.gettextreplacement, dbgeng/IDebugControl3::GetTextReplacement, IDebugControl_d21af006-aa5b-4faf-abba-3f28f338b6bd.xml, IDebugControl2::GetTextReplacement
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl3.GetTextReplacement
+title: IDebugControl3::GetTextReplacement method
+author: windows-driver-content
+description: The GetTextReplacement method returns the value of a user-named alias or an automatic alias.
+old-location: debugger\gettextreplacement.htm
+old-project: debugger
+ms.assetid: 8d5531ac-afa1-4928-8ea6-8be4663cf06a
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: dbgeng/IDebugControl2::GetTextReplacement, IDebugControl3, IDebugControl3 interface [Windows Debugging], GetTextReplacement method, GetTextReplacement method [Windows Debugging], IDebugControl3 interface, IDebugControl2 interface [Windows Debugging], GetTextReplacement method, IDebugControl3::GetTextReplacement, GetTextReplacement, GetTextReplacement method [Windows Debugging], GetTextReplacement method [Windows Debugging], IDebugControl2 interface, debugger.gettextreplacement, dbgeng/IDebugControl3::GetTextReplacement, IDebugControl_d21af006-aa5b-4faf-abba-3f28f338b6bd.xml, IDebugControl2::GetTextReplacement
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl2.GetTextReplacement
+-	IDebugControl3.GetTextReplacement
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

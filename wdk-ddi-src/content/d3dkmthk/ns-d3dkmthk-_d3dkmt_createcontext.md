@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmthk._D3DKMT_CREATECONTEXT
-title : "_D3DKMT_CREATECONTEXT"
-author : windows-driver-content
-description : The D3DKMT_CREATECONTEXT structure describes a kernel-mode device context to create.
-old-location : display\d3dkmt_createcontext.htm
-old-project : display
-ms.assetid : 867705b9-a721-48a6-b1bc-6a75d5a03a21
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : OpenGL_Structs_5a3cc128-be06-4189-a389-95813c2d3e28.xml, display.d3dkmt_createcontext, _D3DKMT_CREATECONTEXT, D3DKMT_CREATECONTEXT structure [Display Devices], d3dkmthk/D3DKMT_CREATECONTEXT, D3DKMT_CREATECONTEXT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_CREATECONTEXT
+UID: NS:d3dkmthk._D3DKMT_CREATECONTEXT
+title: "_D3DKMT_CREATECONTEXT"
+author: windows-driver-content
+description: The D3DKMT_CREATECONTEXT structure describes a kernel-mode device context to create.
+old-location: display\d3dkmt_createcontext.htm
+old-project: display
+ms.assetid: 867705b9-a721-48a6-b1bc-6a75d5a03a21
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: OpenGL_Structs_5a3cc128-be06-4189-a389-95813c2d3e28.xml, display.d3dkmt_createcontext, _D3DKMT_CREATECONTEXT, D3DKMT_CREATECONTEXT structure [Display Devices], d3dkmthk/D3DKMT_CREATECONTEXT, D3DKMT_CREATECONTEXT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmthk.h
+apiname:
+-	D3DKMT_CREATECONTEXT
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_CREATECONTEXT
 ---
 
 # _D3DKMT_CREATECONTEXT structure

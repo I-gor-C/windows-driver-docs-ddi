@@ -1,42 +1,47 @@
 ---
-UID : NS:wlclient._DOT11_PORT_STATE
-title : "_DOT11_PORT_STATE"
-author : windows-driver-content
-description : Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
-old-location : netvista\dot11_port_state.htm
-old-project : netvista
-ms.assetid : 09d36c81-d480-48c6-8633-c79061420217
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : DOT11_PORT_STATE, DOT11_PORT_STATE structure [Network Drivers Starting with Windows Vista], *PDOT11_PORT_STATE, netvista.dot11_port_state, PDOT11_PORT_STATE structure pointer [Network Drivers Starting with Windows Vista], Native_802.11_data_types_679b7f27-efba-43e8-9d20-7047c770b7db.xml, wlclient/PDOT11_PORT_STATE, _DOT11_PORT_STATE, PDOT11_PORT_STATE, wlclient/DOT11_PORT_STATE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wlclient.h
-req.include-header : Wlclient.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating   systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT11_PORT_STATE, *PDOT11_PORT_STATE
-req.product : Windows 10 or later.
+UID: NS:wlclient._DOT11_PORT_STATE
+title: "_DOT11_PORT_STATE"
+author: windows-driver-content
+description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+old-location: netvista\dot11_port_state.htm
+old-project: netvista
+ms.assetid: 09d36c81-d480-48c6-8633-c79061420217
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: DOT11_PORT_STATE, DOT11_PORT_STATE structure [Network Drivers Starting with Windows Vista], *PDOT11_PORT_STATE, netvista.dot11_port_state, PDOT11_PORT_STATE structure pointer [Network Drivers Starting with Windows Vista], Native_802.11_data_types_679b7f27-efba-43e8-9d20-7047c770b7db.xml, wlclient/PDOT11_PORT_STATE, _DOT11_PORT_STATE, PDOT11_PORT_STATE, wlclient/DOT11_PORT_STATE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wlclient.h
+req.include-header: Wlclient.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wlclient.h
+apiname:
+-	DOT11_PORT_STATE
+product: Windows
+targetos: Windows
+req.typenames: DOT11_PORT_STATE, *PDOT11_PORT_STATE
+req.product: Windows 10 or later.
 ---
 
 # _DOT11_PORT_STATE structure

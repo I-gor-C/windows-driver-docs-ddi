@@ -1,41 +1,46 @@
 ---
-UID : NS:61883._CMP_GET_PLUG_HANDLE
-title : "_CMP_GET_PLUG_HANDLE"
-author : windows-driver-content
-description : This structure is used in getting the handle of a plug.
-old-location : ieee\cmp_get_plug_handle.htm
-old-project : IEEE
-ms.assetid : 4EDEE2EE-7B42-4CC9-8CFC-4690193C5D4D
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : 61883/PCMP_GET_PLUG_HANDLE, IEEE.cmp_get_plug_handle, _CMP_GET_PLUG_HANDLE, CMP_GET_PLUG_HANDLE, PCMP_GET_PLUG_HANDLE, 61883/CMP_GET_PLUG_HANDLE, PCMP_GET_PLUG_HANDLE structure pointer [Buses], CMP_GET_PLUG_HANDLE structure [Buses], *PCMP_GET_PLUG_HANDLE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : 61883.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : CMP_GET_PLUG_HANDLE, *PCMP_GET_PLUG_HANDLE
+UID: NS:61883._CMP_GET_PLUG_HANDLE
+title: "_CMP_GET_PLUG_HANDLE"
+author: windows-driver-content
+description: This structure is used in getting the handle of a plug.
+old-location: ieee\cmp_get_plug_handle.htm
+old-project: IEEE
+ms.assetid: 4EDEE2EE-7B42-4CC9-8CFC-4690193C5D4D
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: 61883/PCMP_GET_PLUG_HANDLE, IEEE.cmp_get_plug_handle, _CMP_GET_PLUG_HANDLE, CMP_GET_PLUG_HANDLE, PCMP_GET_PLUG_HANDLE, 61883/CMP_GET_PLUG_HANDLE, PCMP_GET_PLUG_HANDLE structure pointer [Buses], CMP_GET_PLUG_HANDLE structure [Buses], *PCMP_GET_PLUG_HANDLE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: 61883.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	61883.h
+apiname:
+-	CMP_GET_PLUG_HANDLE
+product: Windows
+targetos: Windows
+req.typenames: CMP_GET_PLUG_HANDLE, *PCMP_GET_PLUG_HANDLE
 ---
 
 # _CMP_GET_PLUG_HANDLE structure

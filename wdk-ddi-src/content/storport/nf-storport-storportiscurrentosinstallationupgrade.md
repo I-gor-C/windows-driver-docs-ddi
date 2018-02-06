@@ -1,42 +1,47 @@
 ---
-UID : NF:storport.StorPortIsCurrentOsInstallationUpgrade
-title : StorPortIsCurrentOsInstallationUpgrade function
-author : windows-driver-content
-description : The StorPortIsCurrentOsInstallationUpgrade routine checks if the current installation of Windows is an upgrade from a previous version or not.
-old-location : storage\storportiscurrentosinstallationupgrade.htm
-old-project : storage
-ms.assetid : 68D944D9-1A52-4FB0-B2D7-9680AB1EDABB
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : StorPortIsCurrentOsInstallationUpgrade, storport/StorPortIsCurrentOsInstallationUpgrade, StorPortIsCurrentOsInstallationUpgrade routine [Storage Devices], storage.storportiscurrentosinstallationupgrade
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : storport.h
-req.include-header : 
-req.target-type : Universal
-req.target-min-winverclnt : Available in starting with Windows 8.1.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : IRQL == PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STOR_SPINLOCK
-req.product : Windows 10 or later.
+UID: NF:storport.StorPortIsCurrentOsInstallationUpgrade
+title: StorPortIsCurrentOsInstallationUpgrade function
+author: windows-driver-content
+description: The StorPortIsCurrentOsInstallationUpgrade routine checks if the current installation of Windows is an upgrade from a previous version or not.
+old-location: storage\storportiscurrentosinstallationupgrade.htm
+old-project: storage
+ms.assetid: 68D944D9-1A52-4FB0-B2D7-9680AB1EDABB
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: StorPortIsCurrentOsInstallationUpgrade, storport/StorPortIsCurrentOsInstallationUpgrade, StorPortIsCurrentOsInstallationUpgrade routine [Storage Devices], storage.storportiscurrentosinstallationupgrade
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: storport.h
+req.include-header: 
+req.target-type: Universal
+req.target-min-winverclnt: Available in starting with Windows 8.1.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: IRQL == PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	storport.h
+apiname:
+-	StorPortIsCurrentOsInstallationUpgrade
+product: Windows
+targetos: Windows
+req.typenames: STOR_SPINLOCK
+req.product: Windows 10 or later.
 ---
 
 

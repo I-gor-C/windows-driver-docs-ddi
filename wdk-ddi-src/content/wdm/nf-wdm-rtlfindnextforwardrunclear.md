@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.RtlFindNextForwardRunClear
-title : RtlFindNextForwardRunClear function
-author : windows-driver-content
-description : The RtlFindNextForwardRunClear routine searches a given bitmap variable for the next clear run of bits, starting from the specified index position.
-old-location : kernel\rtlfindnextforwardrunclear.htm
-old-project : kernel
-ms.assetid : d923c1a4-4715-4632-8c75-0e48dda9a210
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : k109_3625ede2-f1b5-495d-9b79-2063e0daa567.xml, RtlFindNextForwardRunClear, RtlFindNextForwardRunClear routine [Kernel-Mode Driver Architecture], kernel.rtlfindnextforwardrunclear, wdm/RtlFindNextForwardRunClear
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL (See Remarks section)"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.RtlFindNextForwardRunClear
+title: RtlFindNextForwardRunClear function
+author: windows-driver-content
+description: The RtlFindNextForwardRunClear routine searches a given bitmap variable for the next clear run of bits, starting from the specified index position.
+old-location: kernel\rtlfindnextforwardrunclear.htm
+old-project: kernel
+ms.assetid: d923c1a4-4715-4632-8c75-0e48dda9a210
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: k109_3625ede2-f1b5-495d-9b79-2063e0daa567.xml, RtlFindNextForwardRunClear, RtlFindNextForwardRunClear routine [Kernel-Mode Driver Architecture], kernel.rtlfindnextforwardrunclear, wdm/RtlFindNextForwardRunClear
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL (See Remarks section)"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	RtlFindNextForwardRunClear
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:d3d10umddi.D3D11_1_DDI_BLEND_DESC
-title : D3D11_1_DDI_BLEND_DESC
-author : windows-driver-content
-description : Describes a blend state. Used by Windows Display Driver Model (WDDM) 1.2 and later user-mode display drivers.
-old-location : display\d3d11_1_ddi_blend_desc.htm
-old-project : display
-ms.assetid : 1f633261-82b2-4346-b1c2-cd36228af5f4
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3d10umddi/D3D11_1_DDI_BLEND_DESC, D3D11_1_DDI_BLEND_DESC, D3D11_1_DDI_BLEND_DESC structure [Display Devices], display.d3d11_1_ddi_blend_desc
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3D11_1_DDI_BLEND_DESC
+UID: NS:d3d10umddi.D3D11_1_DDI_BLEND_DESC
+title: D3D11_1_DDI_BLEND_DESC
+author: windows-driver-content
+description: Describes a blend state. Used by Windows Display Driver Model (WDDM) 1.2 and later user-mode display drivers.
+old-location: display\d3d11_1_ddi_blend_desc.htm
+old-project: display
+ms.assetid: 1f633261-82b2-4346-b1c2-cd36228af5f4
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3d10umddi/D3D11_1_DDI_BLEND_DESC, D3D11_1_DDI_BLEND_DESC, D3D11_1_DDI_BLEND_DESC structure [Display Devices], display.d3d11_1_ddi_blend_desc
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	D3d10umddi.h
+apiname:
+-	D3D11_1_DDI_BLEND_DESC
+product: Windows
+targetos: Windows
+req.typenames: D3D11_1_DDI_BLEND_DESC
 ---
 
 # D3D11_1_DDI_BLEND_DESC structure

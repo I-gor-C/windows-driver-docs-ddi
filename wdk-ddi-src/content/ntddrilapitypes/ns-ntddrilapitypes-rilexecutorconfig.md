@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddrilapitypes.RILEXECUTORCONFIG
-title : RILEXECUTORCONFIG
-author : windows-driver-content
-description : This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
-old-location : netvista\rilexecutorconfig.htm
-old-project : netvista
-ms.assetid : d53c3df2-fd75-4008-a740-0afa293e36eb
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : RILEXECUTORCONFIG structure [Network Drivers Starting with Windows Vista], *LPRILEXECUTORCONFIG, RILEXECUTORCONFIG, netvista.rilexecutorconfig, ntddrilapitypes/RILEXECUTORCONFIG
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddrilapitypes.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RILEXECUTORCONFIG, *LPRILEXECUTORCONFIG
+UID: NS:ntddrilapitypes.RILEXECUTORCONFIG
+title: RILEXECUTORCONFIG
+author: windows-driver-content
+description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+old-location: netvista\rilexecutorconfig.htm
+old-project: netvista
+ms.assetid: d53c3df2-fd75-4008-a740-0afa293e36eb
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: RILEXECUTORCONFIG structure [Network Drivers Starting with Windows Vista], *LPRILEXECUTORCONFIG, RILEXECUTORCONFIG, netvista.rilexecutorconfig, ntddrilapitypes/RILEXECUTORCONFIG
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddrilapitypes.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddrilapitypes.h
+apiname:
+-	RILEXECUTORCONFIG
+product: Windows
+targetos: Windows
+req.typenames: RILEXECUTORCONFIG, *LPRILEXECUTORCONFIG
 ---
 
 # RILEXECUTORCONFIG structure

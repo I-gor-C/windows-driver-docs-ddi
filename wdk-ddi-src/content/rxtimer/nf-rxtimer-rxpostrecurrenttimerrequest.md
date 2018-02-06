@@ -1,42 +1,47 @@
 ---
-UID : NF:rxtimer.RxPostRecurrentTimerRequest
-title : RxPostRecurrentTimerRequest function
-author : windows-driver-content
-description : RxPostRecurrentTimerRequest initializes a recurrent timer request. The passed in pointer to a worker thread routine is called at regular intervals when the recurrent timer fires based on the input parameters to this routine.
-old-location : ifsk\rxpostrecurrenttimerrequest.htm
-old-project : ifsk
-ms.assetid : a44fb478-4f78-415e-b557-bf383199578c
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.rxpostrecurrenttimerrequest, RxPostRecurrentTimerRequest, rxtimer/RxPostRecurrentTimerRequest, rxref_64318843-28af-4351-9273-06061b94578f.xml, RxPostRecurrentTimerRequest routine [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : rxtimer.h
-req.include-header : Rxtimer.h, Rxworkq.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RX_CONTEXT, *PRX_CONTEXT
-req.product : Windows 10 or later.
+UID: NF:rxtimer.RxPostRecurrentTimerRequest
+title: RxPostRecurrentTimerRequest function
+author: windows-driver-content
+description: RxPostRecurrentTimerRequest initializes a recurrent timer request. The passed in pointer to a worker thread routine is called at regular intervals when the recurrent timer fires based on the input parameters to this routine.
+old-location: ifsk\rxpostrecurrenttimerrequest.htm
+old-project: ifsk
+ms.assetid: a44fb478-4f78-415e-b557-bf383199578c
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.rxpostrecurrenttimerrequest, RxPostRecurrentTimerRequest, rxtimer/RxPostRecurrentTimerRequest, rxref_64318843-28af-4351-9273-06061b94578f.xml, RxPostRecurrentTimerRequest routine [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: rxtimer.h
+req.include-header: Rxtimer.h, Rxworkq.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	rxtimer.h
+apiname:
+-	RxPostRecurrentTimerRequest
+product: Windows
+targetos: Windows
+req.typenames: RX_CONTEXT, *PRX_CONTEXT
+req.product: Windows 10 or later.
 ---
 
 

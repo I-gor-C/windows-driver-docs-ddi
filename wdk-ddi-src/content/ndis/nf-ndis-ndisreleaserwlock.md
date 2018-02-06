@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisReleaseRWLock
-title : NdisReleaseRWLock function
-author : windows-driver-content
-description : The NdisReleaseRWLock function releases a read/write lock that the caller uses to gain access to resources that are shared between driver threads.
-old-location : netvista\ndisreleaserwlock.htm
-old-project : netvista
-ms.assetid : e0859f3f-0acc-45b7-99b2-ef420cd06565
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NdisReleaseRWLock function [Network Drivers Starting with Windows Vista], ndis_processor_group_ref_bbc47204-3cf6-4154-bafc-23c14cff452b.xml, netvista.ndisreleaserwlock, ndis/NdisReleaseRWLock, NdisReleaseRWLock
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported in NDIS 6.20 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : DISPATCH_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisReleaseRWLock
+title: NdisReleaseRWLock function
+author: windows-driver-content
+description: The NdisReleaseRWLock function releases a read/write lock that the caller uses to gain access to resources that are shared between driver threads.
+old-location: netvista\ndisreleaserwlock.htm
+old-project: netvista
+ms.assetid: e0859f3f-0acc-45b7-99b2-ef420cd06565
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NdisReleaseRWLock function [Network Drivers Starting with Windows Vista], ndis_processor_group_ref_bbc47204-3cf6-4154-bafc-23c14cff452b.xml, netvista.ndisreleaserwlock, ndis/NdisReleaseRWLock, NdisReleaseRWLock
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported in NDIS 6.20 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: DISPATCH_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisReleaseRWLock
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

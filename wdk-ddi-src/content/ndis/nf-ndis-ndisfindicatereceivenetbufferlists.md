@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisFIndicateReceiveNetBufferLists
-title : NdisFIndicateReceiveNetBufferLists function
-author : windows-driver-content
-description : A filter driver calls NdisFIndicateReceiveNetBufferLists to indicate that it has received network data. For more information, see Receiving Data in a Filter Driver.
-old-location : netvista\ndisfindicatereceivenetbufferlists.htm
-old-project : netvista
-ms.assetid : ff2457bb-158a-411c-8c6b-7a7e402497ef
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : ndis/NdisFIndicateReceiveNetBufferLists, NdisFIndicateReceiveNetBufferLists, filter_ndis_functions_ref_b3c09e67-4d25-4e8f-89e2-d227cf0f10b8.xml, netvista.ndisfindicatereceivenetbufferlists, NdisFIndicateReceiveNetBufferLists function [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_Filter_Driver_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisFIndicateReceiveNetBufferLists
+title: NdisFIndicateReceiveNetBufferLists function
+author: windows-driver-content
+description: A filter driver calls NdisFIndicateReceiveNetBufferLists to indicate that it has received network data. For more information, see Receiving Data in a Filter Driver.
+old-location: netvista\ndisfindicatereceivenetbufferlists.htm
+old-project: netvista
+ms.assetid: ff2457bb-158a-411c-8c6b-7a7e402497ef
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: ndis/NdisFIndicateReceiveNetBufferLists, NdisFIndicateReceiveNetBufferLists, filter_ndis_functions_ref_b3c09e67-4d25-4e8f-89e2-d227cf0f10b8.xml, netvista.ndisfindicatereceivenetbufferlists, NdisFIndicateReceiveNetBufferLists function [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_Filter_Driver_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisFIndicateReceiveNetBufferLists
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:ntifs._WOF_VERSION_INFO
-title : "_WOF_VERSION_INFO"
-author : windows-driver-content
-description : The WOF_VERSION_INFO structure contains the version corresponding to the driver supporting a given provider.
-old-location : ifsk\wof_version_info.htm
-old-project : ifsk
-ms.assetid : 953F34FC-2E8F-4569-89B8-2F9541456F3B
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.wof_version_info, PWOF_VERSION_INFO, *PWOF_VERSION_INFO, ntifs/PWOF_VERSION_INFO, PWOF_VERSION_INFO structure pointer [Installable File System Drivers], WOF_VERSION_INFO structure [Installable File System Drivers], WOF_VERSION_INFO, ntifs/WOF_VERSION_INFO, _WOF_VERSION_INFO
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntifs.h
-req.include-header : Ntifs.h, Fltkernel.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows 10.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WOF_VERSION_INFO, *PWOF_VERSION_INFO
+UID: NS:ntifs._WOF_VERSION_INFO
+title: "_WOF_VERSION_INFO"
+author: windows-driver-content
+description: The WOF_VERSION_INFO structure contains the version corresponding to the driver supporting a given provider.
+old-location: ifsk\wof_version_info.htm
+old-project: ifsk
+ms.assetid: 953F34FC-2E8F-4569-89B8-2F9541456F3B
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.wof_version_info, PWOF_VERSION_INFO, *PWOF_VERSION_INFO, ntifs/PWOF_VERSION_INFO, PWOF_VERSION_INFO structure pointer [Installable File System Drivers], WOF_VERSION_INFO structure [Installable File System Drivers], WOF_VERSION_INFO, ntifs/WOF_VERSION_INFO, _WOF_VERSION_INFO
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntifs.h
+req.include-header: Ntifs.h, Fltkernel.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows 10.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntifs.h
+apiname:
+-	WOF_VERSION_INFO
+product: Windows
+targetos: Windows
+req.typenames: WOF_VERSION_INFO, *PWOF_VERSION_INFO
 ---
 
 # _WOF_VERSION_INFO structure

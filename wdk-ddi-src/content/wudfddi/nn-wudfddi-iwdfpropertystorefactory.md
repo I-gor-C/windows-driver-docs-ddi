@@ -1,42 +1,47 @@
 ---
-UID : NN:wudfddi.IWDFPropertyStoreFactory
-title : IWDFPropertyStoreFactory
-author : windows-driver-content
-description : The IWDFPropertyStoreFactory interface is a factory interface that is used to create a property store interface.
-old-location : wdf\iwdfpropertystorefactory.htm
-old-project : wdf
-ms.assetid : 41d77cf1-6f85-4f43-b2d8-1da4c9dac380
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.iwdfpropertystorefactory, IWDFPropertyStoreFactory interface, IWDFPropertyStoreFactory interface, described, IWDFPropertyStoreFactory, wudfddi/IWDFPropertyStoreFactory, UMDFDeviceObjectRef_07ada2e1-57a4-4b48-9145-fd38baef01cf.xml, umdf.iwdfpropertystorefactory
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : wudfddi.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.9
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NN:wudfddi.IWDFPropertyStoreFactory
+title: IWDFPropertyStoreFactory
+author: windows-driver-content
+description: The IWDFPropertyStoreFactory interface is a factory interface that is used to create a property store interface.
+old-location: wdf\iwdfpropertystorefactory.htm
+old-project: wdf
+ms.assetid: 41d77cf1-6f85-4f43-b2d8-1da4c9dac380
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.iwdfpropertystorefactory, IWDFPropertyStoreFactory interface, IWDFPropertyStoreFactory interface, described, IWDFPropertyStoreFactory, wudfddi/IWDFPropertyStoreFactory, UMDFDeviceObjectRef_07ada2e1-57a4-4b48-9145-fd38baef01cf.xml, umdf.iwdfpropertystorefactory
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: wudfddi.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.9
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFPropertyStoreFactory
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 # IWDFPropertyStoreFactory interface

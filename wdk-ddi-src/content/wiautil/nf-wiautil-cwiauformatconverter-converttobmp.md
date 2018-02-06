@@ -1,42 +1,47 @@
 ---
-UID : NF:wiautil.CWiauFormatConverter.ConvertToBmp
-title : CWiauFormatConverter::ConvertToBmp method
-author : windows-driver-content
-description : The CWiauFormatConverter::ConvertToBmp method converts an image to BMP format.
-old-location : image\cwiauformatconverter_converttobmp.htm
-old-project : image
-ms.assetid : 9ac85fe9-bc44-4a70-9619-bb13e878bb49
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : ConvertToBmp, image.cwiauformatconverter_converttobmp, wiautil/CWiauFormatConverter::ConvertToBmp, CWiauFormatConverter::ConvertToBmp, ConvertToBmp method [Imaging Devices], CWiauFormatConverter interface, CWiauFormatConverter interface [Imaging Devices], ConvertToBmp method, ConvertToBmp method [Imaging Devices], CWiauFormatConverter, wiauFncs_2c929e01-3e1f-4a07-9f2f-f50775b39017.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wiautil.h
-req.include-header : Wiautil.h, Wiamindr.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows XP and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wiautil.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SKIP_AMOUNT
-req.product : Windows 10 or later.
+UID: NF:wiautil.CWiauFormatConverter.ConvertToBmp
+title: CWiauFormatConverter::ConvertToBmp method
+author: windows-driver-content
+description: The CWiauFormatConverter::ConvertToBmp method converts an image to BMP format.
+old-location: image\cwiauformatconverter_converttobmp.htm
+old-project: image
+ms.assetid: 9ac85fe9-bc44-4a70-9619-bb13e878bb49
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: ConvertToBmp, image.cwiauformatconverter_converttobmp, wiautil/CWiauFormatConverter::ConvertToBmp, CWiauFormatConverter::ConvertToBmp, ConvertToBmp method [Imaging Devices], CWiauFormatConverter interface, CWiauFormatConverter interface [Imaging Devices], ConvertToBmp method, ConvertToBmp method [Imaging Devices], CWiauFormatConverter, wiauFncs_2c929e01-3e1f-4a07-9f2f-f50775b39017.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wiautil.h
+req.include-header: Wiautil.h, Wiamindr.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows XP and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wiautil.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Wiautil.h
+apiname:
+-	CWiauFormatConverter.ConvertToBmp
+product: Windows
+targetos: Windows
+req.typenames: SKIP_AMOUNT
+req.product: Windows 10 or later.
 ---
 
 

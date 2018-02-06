@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3D10DDI_STATE_GS_SAMPLER_CB
-title : PFND3D10DDI_STATE_GS_SAMPLER_CB
-author : windows-driver-content
-description : The pfnStateGsSamplerCb function causes the Microsoft Direct3D 10 runtime to refresh the geometry shader sample state.
-old-location : display\pfnstategssamplercb.htm
-old-project : display
-ms.assetid : 086c565e-2747-4bbe-a9e1-af38373c3232
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.pfnstategssamplercb, pfnStateGsSamplerCb callback function [Display Devices], pfnStateGsSamplerCb, PFND3D10DDI_STATE_GS_SAMPLER_CB, PFND3D10DDI_STATE_GS_SAMPLER_CB, d3d10umddi/pfnStateGsSamplerCb, d3d10state_functions_d68de9ea-b2c6-4026-9def-a0e2bda103ed.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3D10DDI_STATE_GS_SAMPLER_CB
+title: PFND3D10DDI_STATE_GS_SAMPLER_CB
+author: windows-driver-content
+description: The pfnStateGsSamplerCb function causes the Microsoft Direct3D 10 runtime to refresh the geometry shader sample state.
+old-location: display\pfnstategssamplercb.htm
+old-project: display
+ms.assetid: 086c565e-2747-4bbe-a9e1-af38373c3232
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.pfnstategssamplercb, pfnStateGsSamplerCb callback function [Display Devices], pfnStateGsSamplerCb, PFND3D10DDI_STATE_GS_SAMPLER_CB, PFND3D10DDI_STATE_GS_SAMPLER_CB, d3d10umddi/pfnStateGsSamplerCb, d3d10state_functions_d68de9ea-b2c6-4026-9def-a0e2bda103ed.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	pfnStateGsSamplerCb
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

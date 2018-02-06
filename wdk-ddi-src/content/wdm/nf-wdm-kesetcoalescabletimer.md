@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.KeSetCoalescableTimer
-title : KeSetCoalescableTimer function
-author : windows-driver-content
-description : The KeSetCoalescableTimer routine sets the initial expiration time and period of a timer object and specifies how much delay can be tolerated in the expiration times.
-old-location : kernel\kesetcoalescabletimer.htm
-old-project : kernel
-ms.assetid : e053c120-8c43-4714-acf1-0648958eabb8
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/KeSetCoalescableTimer, KeSetCoalescableTimer, kernel.kesetcoalescabletimer, KeSetCoalescableTimer routine [Kernel-Mode Driver Architecture], k105_3e45ae54-682d-47f6-a577-28277cee4829.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 7.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.KeSetCoalescableTimer
+title: KeSetCoalescableTimer function
+author: windows-driver-content
+description: The KeSetCoalescableTimer routine sets the initial expiration time and period of a timer object and specifies how much delay can be tolerated in the expiration times.
+old-location: kernel\kesetcoalescabletimer.htm
+old-project: kernel
+ms.assetid: e053c120-8c43-4714-acf1-0648958eabb8
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/KeSetCoalescableTimer, KeSetCoalescableTimer, kernel.kesetcoalescabletimer, KeSetCoalescableTimer routine [Kernel-Mode Driver Architecture], k105_3e45ae54-682d-47f6-a577-28277cee4829.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 7.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	KeSetCoalescableTimer
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

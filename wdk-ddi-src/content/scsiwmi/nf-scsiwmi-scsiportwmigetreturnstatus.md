@@ -1,42 +1,47 @@
 ---
-UID : NF:scsiwmi.ScsiPortWmiGetReturnStatus
-title : ScsiPortWmiGetReturnStatus macro
-author : windows-driver-content
-description : The ScsiPortWmiGetReturnStatus routine returns the status of a WMI SRB.
-old-location : storage\scsiportwmigetreturnstatus.htm
-old-project : storage
-ms.assetid : 79213f47-ba4c-41b0-b095-1b5c25c79456
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : scsiprt_cb3693a3-2fab-4d25-9c64-84327a7ef61c.xml, scsiwmi/ScsiPortWmiGetReturnStatus, storage.scsiportwmigetreturnstatus, ScsiPortWmiGetReturnStatus macro [Storage Devices], ScsiPortWmiGetReturnStatus
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : macro
-req.header : scsiwmi.h
-req.include-header : Miniport.h, Scsi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : scsiwmi.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SCSIWMI_ENABLE_DISABLE_CONTROL
-req.product : Windows 10 or later.
+UID: NF:scsiwmi.ScsiPortWmiGetReturnStatus
+title: ScsiPortWmiGetReturnStatus macro
+author: windows-driver-content
+description: The ScsiPortWmiGetReturnStatus routine returns the status of a WMI SRB.
+old-location: storage\scsiportwmigetreturnstatus.htm
+old-project: storage
+ms.assetid: 79213f47-ba4c-41b0-b095-1b5c25c79456
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: scsiprt_cb3693a3-2fab-4d25-9c64-84327a7ef61c.xml, scsiwmi/ScsiPortWmiGetReturnStatus, storage.scsiportwmigetreturnstatus, ScsiPortWmiGetReturnStatus macro [Storage Devices], ScsiPortWmiGetReturnStatus
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: macro
+req.header: scsiwmi.h
+req.include-header: Miniport.h, Scsi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: scsiwmi.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	scsiwmi.h
+apiname:
+-	ScsiPortWmiGetReturnStatus
+product: Windows
+targetos: Windows
+req.typenames: SCSIWMI_ENABLE_DISABLE_CONTROL
+req.product: Windows 10 or later.
 ---
 
 

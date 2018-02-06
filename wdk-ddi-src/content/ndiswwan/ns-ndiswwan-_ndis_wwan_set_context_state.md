@@ -1,41 +1,46 @@
 ---
-UID : NS:ndiswwan._NDIS_WWAN_SET_CONTEXT_STATE
-title : "_NDIS_WWAN_SET_CONTEXT_STATE"
-author : windows-driver-content
-description : The NDIS_WWAN_SET_CONTEXT_STATE structure represents the command to set the context state of the MB device.
-old-location : netvista\ndis_wwan_set_context_state.htm
-old-project : netvista
-ms.assetid : 8aadbfe0-e925-4c58-9ca0-d07dc40a0ff3
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : WwanRef_538105aa-7c75-4c30-96ed-4763cf59575d.xml, netvista.ndis_wwan_set_context_state, ndiswwan/PNDIS_WWAN_SET_CONTEXT_STATE, PNDIS_WWAN_SET_CONTEXT_STATE, *PNDIS_WWAN_SET_CONTEXT_STATE, _NDIS_WWAN_SET_CONTEXT_STATE, PNDIS_WWAN_SET_CONTEXT_STATE structure pointer [Network Drivers Starting with Windows Vista], ndiswwan/NDIS_WWAN_SET_CONTEXT_STATE, NDIS_WWAN_SET_CONTEXT_STATE, NDIS_WWAN_SET_CONTEXT_STATE structure [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndiswwan.h
-req.include-header : Ndiswwan.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_WWAN_SET_CONTEXT_STATE, *PNDIS_WWAN_SET_CONTEXT_STATE
+UID: NS:ndiswwan._NDIS_WWAN_SET_CONTEXT_STATE
+title: "_NDIS_WWAN_SET_CONTEXT_STATE"
+author: windows-driver-content
+description: The NDIS_WWAN_SET_CONTEXT_STATE structure represents the command to set the context state of the MB device.
+old-location: netvista\ndis_wwan_set_context_state.htm
+old-project: netvista
+ms.assetid: 8aadbfe0-e925-4c58-9ca0-d07dc40a0ff3
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: WwanRef_538105aa-7c75-4c30-96ed-4763cf59575d.xml, netvista.ndis_wwan_set_context_state, ndiswwan/PNDIS_WWAN_SET_CONTEXT_STATE, PNDIS_WWAN_SET_CONTEXT_STATE, *PNDIS_WWAN_SET_CONTEXT_STATE, _NDIS_WWAN_SET_CONTEXT_STATE, PNDIS_WWAN_SET_CONTEXT_STATE structure pointer [Network Drivers Starting with Windows Vista], ndiswwan/NDIS_WWAN_SET_CONTEXT_STATE, NDIS_WWAN_SET_CONTEXT_STATE, NDIS_WWAN_SET_CONTEXT_STATE structure [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndiswwan.h
+req.include-header: Ndiswwan.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndiswwan.h
+apiname:
+-	NDIS_WWAN_SET_CONTEXT_STATE
+product: Windows
+targetos: Windows
+req.typenames: NDIS_WWAN_SET_CONTEXT_STATE, *PNDIS_WWAN_SET_CONTEXT_STATE
 ---
 
 # _NDIS_WWAN_SET_CONTEXT_STATE structure

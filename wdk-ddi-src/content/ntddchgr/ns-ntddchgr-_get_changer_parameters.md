@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddchgr._GET_CHANGER_PARAMETERS
-title : "_GET_CHANGER_PARAMETERS"
-author : windows-driver-content
-description : Retrieves the characteristics of the changer.
-old-location : storage\get_changer_parameters.htm
-old-project : storage
-ms.assetid : c9a47406-5dd2-4cda-b241-3a439406ac75
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : structs-changer_5c639124-5fc3-4fe8-8289-3bc8408723e0.xml, storage.get_changer_parameters, *PGET_CHANGER_PARAMETERS, GET_CHANGER_PARAMETERS, PGET_CHANGER_PARAMETERS, ntddchgr/PGET_CHANGER_PARAMETERS, _GET_CHANGER_PARAMETERS, PGET_CHANGER_PARAMETERS structure pointer [Storage Devices], GET_CHANGER_PARAMETERS structure [Storage Devices], ntddchgr/GET_CHANGER_PARAMETERS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddchgr.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : GET_CHANGER_PARAMETERS, *PGET_CHANGER_PARAMETERS
+UID: NS:ntddchgr._GET_CHANGER_PARAMETERS
+title: "_GET_CHANGER_PARAMETERS"
+author: windows-driver-content
+description: Retrieves the characteristics of the changer.
+old-location: storage\get_changer_parameters.htm
+old-project: storage
+ms.assetid: c9a47406-5dd2-4cda-b241-3a439406ac75
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: structs-changer_5c639124-5fc3-4fe8-8289-3bc8408723e0.xml, storage.get_changer_parameters, *PGET_CHANGER_PARAMETERS, GET_CHANGER_PARAMETERS, PGET_CHANGER_PARAMETERS, ntddchgr/PGET_CHANGER_PARAMETERS, _GET_CHANGER_PARAMETERS, PGET_CHANGER_PARAMETERS structure pointer [Storage Devices], GET_CHANGER_PARAMETERS structure [Storage Devices], ntddchgr/GET_CHANGER_PARAMETERS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddchgr.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddchgr.h
+apiname:
+-	GET_CHANGER_PARAMETERS
+product: Windows
+targetos: Windows
+req.typenames: GET_CHANGER_PARAMETERS, *PGET_CHANGER_PARAMETERS
 ---
 
 # _GET_CHANGER_PARAMETERS structure

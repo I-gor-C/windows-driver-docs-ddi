@@ -1,41 +1,46 @@
 ---
-UID : NI:mountmgr.IOCTL_MOUNTMGR_VOLUME_MOUNT_POINT_DELETED
-title : IOCTL_MOUNTMGR_VOLUME_MOUNT_POINT_DELETED
-author : windows-driver-content
-description : The mount manager clients use this IOCTL to alert the mount manager that a volume mount point has been deleted so that the mount manager can replicate the database entry for the given mount point.
-old-location : storage\ioctl_mountmgr_volume_mount_point_deleted.htm
-old-project : storage
-ms.assetid : 8a436053-87c2-4fa2-9280-7035a990d0b4
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_mountmgr_volume_mount_point_deleted, IOCTL_MOUNTMGR_VOLUME_MOUNT_POINT_DELETED control code [Storage Devices], IOCTL_MOUNTMGR_VOLUME_MOUNT_POINT_DELETED, mountmgr/IOCTL_MOUNTMGR_VOLUME_MOUNT_POINT_DELETED, k307_fce8de67-6c3d-4e89-8259-a7058c968c62.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : mountmgr.h
-req.include-header : Mountmgr.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PMOUNTDEV_UNIQUE_ID, MOUNTDEV_UNIQUE_ID"
+UID: NI:mountmgr.IOCTL_MOUNTMGR_VOLUME_MOUNT_POINT_DELETED
+title: IOCTL_MOUNTMGR_VOLUME_MOUNT_POINT_DELETED
+author: windows-driver-content
+description: The mount manager clients use this IOCTL to alert the mount manager that a volume mount point has been deleted so that the mount manager can replicate the database entry for the given mount point.
+old-location: storage\ioctl_mountmgr_volume_mount_point_deleted.htm
+old-project: storage
+ms.assetid: 8a436053-87c2-4fa2-9280-7035a990d0b4
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_mountmgr_volume_mount_point_deleted, IOCTL_MOUNTMGR_VOLUME_MOUNT_POINT_DELETED control code [Storage Devices], IOCTL_MOUNTMGR_VOLUME_MOUNT_POINT_DELETED, mountmgr/IOCTL_MOUNTMGR_VOLUME_MOUNT_POINT_DELETED, k307_fce8de67-6c3d-4e89-8259-a7058c968c62.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: mountmgr.h
+req.include-header: Mountmgr.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Mountmgr.h
+apiname:
+-	IOCTL_MOUNTMGR_VOLUME_MOUNT_POINT_DELETED
+product: Windows
+targetos: Windows
+req.typenames: "*PMOUNTDEV_UNIQUE_ID, MOUNTDEV_UNIQUE_ID"
 ---
 
 # IOCTL_MOUNTMGR_VOLUME_MOUNT_POINT_DELETED IOCTL

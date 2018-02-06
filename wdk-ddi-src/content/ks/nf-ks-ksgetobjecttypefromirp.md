@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsGetObjectTypeFromIrp
-title : KsGetObjectTypeFromIrp function
-author : windows-driver-content
-description : The KsGetObjectTypeFromIrp function returns the AVStream object type that is associated with a given IRP.
-old-location : stream\ksgetobjecttypefromirp.htm
-old-project : stream
-ms.assetid : 4fe45811-a823-4cc6-bdc4-a1f2ac892d37
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KsGetObjectTypeFromIrp function [Streaming Media Devices], stream.ksgetobjecttypefromirp, KsGetObjectTypeFromIrp, avfunc_4021d1e6-6dcd-4c59-8863-0d0b5a8e922f.xml, ks/KsGetObjectTypeFromIrp
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsGetObjectTypeFromIrp
+title: KsGetObjectTypeFromIrp function
+author: windows-driver-content
+description: The KsGetObjectTypeFromIrp function returns the AVStream object type that is associated with a given IRP.
+old-location: stream\ksgetobjecttypefromirp.htm
+old-project: stream
+ms.assetid: 4fe45811-a823-4cc6-bdc4-a1f2ac892d37
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KsGetObjectTypeFromIrp function [Streaming Media Devices], stream.ksgetobjecttypefromirp, KsGetObjectTypeFromIrp, avfunc_4021d1e6-6dcd-4c59-8863-0d0b5a8e922f.xml, ks/KsGetObjectTypeFromIrp
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsGetObjectTypeFromIrp
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

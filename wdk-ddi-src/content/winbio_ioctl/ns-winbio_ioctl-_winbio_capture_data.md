@@ -1,42 +1,47 @@
 ---
-UID : NS:winbio_ioctl._WINBIO_CAPTURE_DATA
-title : "_WINBIO_CAPTURE_DATA"
-author : windows-driver-content
-description : The IOCTL_BIOMETRIC_CAPTURE_DATA IOCTL returns the WINBIO_CAPTURE_DATA structure as output.
-old-location : biometric\winbio_capture_data.htm
-old-project : biometric
-ms.assetid : 1d1df123-4c1a-498b-b629-ca63336a762b
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : biometric.winbio_capture_data, winbio_ioctl/WINBIO_CAPTURE_DATA, PWINBIO_CAPTURE_DATA, PWINBIO_CAPTURE_DATA structure pointer [Biometric Devices], biometric_ref_be8dfe0a-ed13-4b31-af93-8fde60a1640f.xml, _WINBIO_CAPTURE_DATA, *PWINBIO_CAPTURE_DATA, winbio_ioctl/PWINBIO_CAPTURE_DATA, WINBIO_CAPTURE_DATA, WINBIO_CAPTURE_DATA structure [Biometric Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : winbio_ioctl.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WINBIO_CAPTURE_DATA, *PWINBIO_CAPTURE_DATA
-req.product : Windows 10 or later.
+UID: NS:winbio_ioctl._WINBIO_CAPTURE_DATA
+title: "_WINBIO_CAPTURE_DATA"
+author: windows-driver-content
+description: The IOCTL_BIOMETRIC_CAPTURE_DATA IOCTL returns the WINBIO_CAPTURE_DATA structure as output.
+old-location: biometric\winbio_capture_data.htm
+old-project: biometric
+ms.assetid: 1d1df123-4c1a-498b-b629-ca63336a762b
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: biometric.winbio_capture_data, winbio_ioctl/WINBIO_CAPTURE_DATA, PWINBIO_CAPTURE_DATA, PWINBIO_CAPTURE_DATA structure pointer [Biometric Devices], biometric_ref_be8dfe0a-ed13-4b31-af93-8fde60a1640f.xml, _WINBIO_CAPTURE_DATA, *PWINBIO_CAPTURE_DATA, winbio_ioctl/PWINBIO_CAPTURE_DATA, WINBIO_CAPTURE_DATA, WINBIO_CAPTURE_DATA structure [Biometric Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: winbio_ioctl.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	winbio_ioctl.h
+apiname:
+-	WINBIO_CAPTURE_DATA
+product: Windows
+targetos: Windows
+req.typenames: WINBIO_CAPTURE_DATA, *PWINBIO_CAPTURE_DATA
+req.product: Windows 10 or later.
 ---
 
 # _WINBIO_CAPTURE_DATA structure

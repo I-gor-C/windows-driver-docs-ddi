@@ -1,38 +1,38 @@
 ---
-UID : NF:wdm.DbgBreakPoint
-title : DbgBreakPoint function
-author : windows-driver-content
-description : The DbgBreakPoint routine breaks into the kernel debugger.
-old-location : devtest\dbgbreakpoint.htm
-old-project : devtest
-ms.assetid : deeac910-2cc3-4a54-bf3b-aeb56d0004dc
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : DbgBreakPoint
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.alt-api : DbgBreakPoint
-req.alt-loc : NtDll.dll,NtosKrnl.exe
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtDll.lib (user mode); NtosKrnl.lib (kernel mode)
-req.dll : NtDll.dll (user mode); NtosKrnl.exe (kernel mode)
-req.irql : 
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.DbgBreakPoint
+title: DbgBreakPoint function
+author: windows-driver-content
+description: The DbgBreakPoint routine breaks into the kernel debugger.
+old-location: devtest\dbgbreakpoint.htm
+old-project: devtest
+ms.assetid: deeac910-2cc3-4a54-bf3b-aeb56d0004dc
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: DbgBreakPoint
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.alt-api: DbgBreakPoint
+req.alt-loc: NtDll.dll,NtosKrnl.exe
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtDll.lib (user mode); NtosKrnl.lib (kernel mode)
+req.dll: NtDll.dll (user mode); NtosKrnl.exe (kernel mode)
+req.irql: 
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

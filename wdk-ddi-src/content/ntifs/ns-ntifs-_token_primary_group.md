@@ -1,41 +1,46 @@
 ---
-UID : NS:ntifs._TOKEN_PRIMARY_GROUP
-title : "_TOKEN_PRIMARY_GROUP"
-author : windows-driver-content
-description : TOKEN_PRIMARY_GROUP specifies a group security identifier (SID) for an access token.
-old-location : ifsk\token_primary_group.htm
-old-project : ifsk
-ms.assetid : 9c9a7f63-7fe8-48a9-b4d0-10586e6b86bc
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : TOKEN_PRIMARY_GROUP structure [Installable File System Drivers], *PTOKEN_PRIMARY_GROUP, ntifs/TOKEN_PRIMARY_GROUP, PTOKEN_PRIMARY_GROUP structure pointer [Installable File System Drivers], securitystructures_8d3bc1f9-abc5-4ac3-8351-cf2c56db6a20.xml, TOKEN_PRIMARY_GROUP, PTOKEN_PRIMARY_GROUP, _TOKEN_PRIMARY_GROUP, ntifs/PTOKEN_PRIMARY_GROUP, ifsk.token_primary_group
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_PRIMARY_GROUP, *PTOKEN_PRIMARY_GROUP
+UID: NS:ntifs._TOKEN_PRIMARY_GROUP
+title: "_TOKEN_PRIMARY_GROUP"
+author: windows-driver-content
+description: TOKEN_PRIMARY_GROUP specifies a group security identifier (SID) for an access token.
+old-location: ifsk\token_primary_group.htm
+old-project: ifsk
+ms.assetid: 9c9a7f63-7fe8-48a9-b4d0-10586e6b86bc
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: TOKEN_PRIMARY_GROUP structure [Installable File System Drivers], *PTOKEN_PRIMARY_GROUP, ntifs/TOKEN_PRIMARY_GROUP, PTOKEN_PRIMARY_GROUP structure pointer [Installable File System Drivers], securitystructures_8d3bc1f9-abc5-4ac3-8351-cf2c56db6a20.xml, TOKEN_PRIMARY_GROUP, PTOKEN_PRIMARY_GROUP, _TOKEN_PRIMARY_GROUP, ntifs/PTOKEN_PRIMARY_GROUP, ifsk.token_primary_group
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntifs.h
+apiname:
+-	TOKEN_PRIMARY_GROUP
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_PRIMARY_GROUP, *PTOKEN_PRIMARY_GROUP
 ---
 
 # _TOKEN_PRIMARY_GROUP structure

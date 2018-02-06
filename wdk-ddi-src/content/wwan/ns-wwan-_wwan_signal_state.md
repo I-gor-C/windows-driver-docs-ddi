@@ -1,42 +1,47 @@
 ---
-UID : NS:wwan._WWAN_SIGNAL_STATE
-title : "_WWAN_SIGNAL_STATE"
-author : windows-driver-content
-description : The WWAN_SIGNAL_STATE structure represents the signal state of the MB device.
-old-location : netvista\wwan_signal_state.htm
-old-project : netvista
-ms.assetid : ba5632bb-c1d7-47b1-b6b4-88c67710149f
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : WwanRef_6a92457b-8b82-4956-9dce-98e5aeec9091.xml, PWWAN_SIGNAL_STATE, *PWWAN_SIGNAL_STATE, _WWAN_SIGNAL_STATE, PWWAN_SIGNAL_STATE structure pointer [Network Drivers Starting with Windows Vista], wwan/WWAN_SIGNAL_STATE, WWAN_SIGNAL_STATE, WWAN_SIGNAL_STATE structure [Network Drivers Starting with Windows Vista], wwan/PWWAN_SIGNAL_STATE, netvista.wwan_signal_state
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wwan.h
-req.include-header : Wwan.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWWAN_SIGNAL_STATE, WWAN_SIGNAL_STATE"
-req.product : Windows 10 or later.
+UID: NS:wwan._WWAN_SIGNAL_STATE
+title: "_WWAN_SIGNAL_STATE"
+author: windows-driver-content
+description: The WWAN_SIGNAL_STATE structure represents the signal state of the MB device.
+old-location: netvista\wwan_signal_state.htm
+old-project: netvista
+ms.assetid: ba5632bb-c1d7-47b1-b6b4-88c67710149f
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: WwanRef_6a92457b-8b82-4956-9dce-98e5aeec9091.xml, PWWAN_SIGNAL_STATE, *PWWAN_SIGNAL_STATE, _WWAN_SIGNAL_STATE, PWWAN_SIGNAL_STATE structure pointer [Network Drivers Starting with Windows Vista], wwan/WWAN_SIGNAL_STATE, WWAN_SIGNAL_STATE, WWAN_SIGNAL_STATE structure [Network Drivers Starting with Windows Vista], wwan/PWWAN_SIGNAL_STATE, netvista.wwan_signal_state
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wwan.h
+req.include-header: Wwan.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wwan.h
+apiname:
+-	WWAN_SIGNAL_STATE
+product: Windows
+targetos: Windows
+req.typenames: "*PWWAN_SIGNAL_STATE, WWAN_SIGNAL_STATE"
+req.product: Windows 10 or later.
 ---
 
 # _WWAN_SIGNAL_STATE structure

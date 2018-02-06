@@ -1,41 +1,46 @@
 ---
-UID : NS:pcivirt._MITIGABLE_DEVICE_INTERFACE
-title : "_MITIGABLE_DEVICE_INTERFACE"
-author : windows-driver-content
-description : Stores function pointers to callback functions implemented by the physical function (PF) driver for the mitigable device interface.
-old-location : pci\mitigable_device_interface.htm
-old-project : PCI
-ms.assetid : 1fac7c03-2a48-4b29-951d-c777fbec7dd3
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : pcivirt/MITIGABLE_DEVICE_INTERFACE, *PMITIGABLE_DEVICE_INTERFACE, MITIGABLE_DEVICE_INTERFACE structure [Buses], PCI.mitigable_device_interface, _MITIGABLE_DEVICE_INTERFACE, MITIGABLE_DEVICE_INTERFACE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : pcivirt.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PMITIGABLE_DEVICE_INTERFACE, MITIGABLE_DEVICE_INTERFACE"
+UID: NS:pcivirt._MITIGABLE_DEVICE_INTERFACE
+title: "_MITIGABLE_DEVICE_INTERFACE"
+author: windows-driver-content
+description: Stores function pointers to callback functions implemented by the physical function (PF) driver for the mitigable device interface.
+old-location: pci\mitigable_device_interface.htm
+old-project: PCI
+ms.assetid: 1fac7c03-2a48-4b29-951d-c777fbec7dd3
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: pcivirt/MITIGABLE_DEVICE_INTERFACE, *PMITIGABLE_DEVICE_INTERFACE, MITIGABLE_DEVICE_INTERFACE structure [Buses], PCI.mitigable_device_interface, _MITIGABLE_DEVICE_INTERFACE, MITIGABLE_DEVICE_INTERFACE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: pcivirt.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Pcivirt.h
+apiname:
+-	MITIGABLE_DEVICE_INTERFACE
+product: Windows
+targetos: Windows
+req.typenames: "*PMITIGABLE_DEVICE_INTERFACE, MITIGABLE_DEVICE_INTERFACE"
 ---
 
 # _MITIGABLE_DEVICE_INTERFACE structure

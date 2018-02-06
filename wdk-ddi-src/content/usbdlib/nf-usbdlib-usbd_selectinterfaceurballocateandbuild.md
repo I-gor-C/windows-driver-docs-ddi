@@ -1,42 +1,48 @@
 ---
-UID : NF:usbdlib.USBD_SelectInterfaceUrbAllocateAndBuild
-title : USBD_SelectInterfaceUrbAllocateAndBuild function
-author : windows-driver-content
-description : The USBD_SelectInterfaceUrbAllocateAndBuild routine allocates and formats a URB structure that is required for a request to select an interface or change its alternate setting.
-old-location : buses\usbd_selectinterfaceurballocateandbuild.htm
-old-project : usbref
-ms.assetid : D0B2E7EA-3D1F-4FD1-AB8D-EAB8406B9127
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : USBD_SelectInterfaceUrbAllocateAndBuild, buses.usbd_selectinterfaceurballocateandbuild, USBD_SelectInterfaceUrbAllocateAndBuild routine [Buses], usbdlib/USBD_SelectInterfaceUrbAllocateAndBuild
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : usbdlib.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Requires WDK for Windows 8. Targets Windows Vista and later versions of the Windows operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Usbdex.lib
-req.dll : 
-req.irql : DISPATCH_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : USBCAMD_DEVICE_DATA2, *PUSBCAMD_DEVICE_DATA2
-req.product : Windows 10 or later.
+UID: NF:usbdlib.USBD_SelectInterfaceUrbAllocateAndBuild
+title: USBD_SelectInterfaceUrbAllocateAndBuild function
+author: windows-driver-content
+description: The USBD_SelectInterfaceUrbAllocateAndBuild routine allocates and formats a URB structure that is required for a request to select an interface or change its alternate setting.
+old-location: buses\usbd_selectinterfaceurballocateandbuild.htm
+old-project: usbref
+ms.assetid: D0B2E7EA-3D1F-4FD1-AB8D-EAB8406B9127
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: USBD_SelectInterfaceUrbAllocateAndBuild, buses.usbd_selectinterfaceurballocateandbuild, USBD_SelectInterfaceUrbAllocateAndBuild routine [Buses], usbdlib/USBD_SelectInterfaceUrbAllocateAndBuild
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: usbdlib.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Requires WDK for Windows 8. Targets Windows Vista and later versions of the Windows operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Usbdex.lib
+req.dll: 
+req.irql: DISPATCH_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Usbdex.lib
+-	Usbdex.dll
+apiname:
+-	USBD_SelectInterfaceUrbAllocateAndBuild
+product: Windows
+targetos: Windows
+req.typenames: USBCAMD_DEVICE_DATA2, *PUSBCAMD_DEVICE_DATA2
+req.product: Windows 10 or later.
 ---
 
 

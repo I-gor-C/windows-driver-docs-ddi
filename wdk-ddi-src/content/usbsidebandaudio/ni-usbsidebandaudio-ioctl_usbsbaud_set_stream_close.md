@@ -1,42 +1,47 @@
 ---
-UID : NI:usbsidebandaudio.IOCTL_USBSBAUD_SET_STREAM_CLOSE
-title : IOCTL_USBSBAUD_SET_STREAM_CLOSE
-author : windows-driver-content
-description : TBD
-old-location : audio\ioctl_usbsbaud_set_stream_close.htm
-old-project : audio
-ms.assetid : 0D7B03AB-28D7-4B70-AE24-8CB60616768D
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : audio.ioctl_usbsbaud_set_stream_close, IOCTL_USBSBAUD_SET_STREAM_CLOSE control code [Audio Devices], IOCTL_USBSBAUD_SET_STREAM_CLOSE, usbsidebandaudio/IOCTL_USBSBAUD_SET_STREAM_CLOSE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : usbsidebandaudio.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUSBSCAN_TIMEOUT, USBSCAN_TIMEOUT"
-req.product : Windows 10 or later.
+UID: NI:usbsidebandaudio.IOCTL_USBSBAUD_SET_STREAM_CLOSE
+title: IOCTL_USBSBAUD_SET_STREAM_CLOSE
+author: windows-driver-content
+description: TBD
+old-location: audio\ioctl_usbsbaud_set_stream_close.htm
+old-project: audio
+ms.assetid: 0D7B03AB-28D7-4B70-AE24-8CB60616768D
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: audio.ioctl_usbsbaud_set_stream_close, IOCTL_USBSBAUD_SET_STREAM_CLOSE control code [Audio Devices], IOCTL_USBSBAUD_SET_STREAM_CLOSE, usbsidebandaudio/IOCTL_USBSBAUD_SET_STREAM_CLOSE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: usbsidebandaudio.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	USBSidebandAudio.h
+apiname:
+-	IOCTL_USBSBAUD_SET_STREAM_CLOSE
+product: Windows
+targetos: Windows
+req.typenames: "*PUSBSCAN_TIMEOUT, USBSCAN_TIMEOUT"
+req.product: Windows 10 or later.
 ---
 
 # IOCTL_USBSBAUD_SET_STREAM_CLOSE IOCTL

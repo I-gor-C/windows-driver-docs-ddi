@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFIoRequest.ForwardToIoQueue
-title : IWDFIoRequest::ForwardToIoQueue method
-author : windows-driver-content
-description : The ForwardToIoQueue method forwards (that is, requeues) an I/O request to one of the calling driver's I/O queues.
-old-location : wdf\iwdfiorequest_forwardtoioqueue.htm
-old-project : wdf
-ms.assetid : 07317157-1222-4b34-89f4-d546818e9851
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.iwdfiorequest_forwardtoioqueue, IWDFIoRequest::ForwardToIoQueue, ForwardToIoQueue method, IWDFIoRequest interface, ForwardToIoQueue method, UMDFRequestObjectRef_ae3c7113-1fac-4742-b53b-8230bf78b61a.xml, ForwardToIoQueue, umdf.iwdfiorequest_forwardtoioqueue, wudfddi/IWDFIoRequest::ForwardToIoQueue, IWDFIoRequest, ForwardToIoQueue method, IWDFIoRequest interface
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.5
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFIoRequest.ForwardToIoQueue
+title: IWDFIoRequest::ForwardToIoQueue method
+author: windows-driver-content
+description: The ForwardToIoQueue method forwards (that is, requeues) an I/O request to one of the calling driver's I/O queues.
+old-location: wdf\iwdfiorequest_forwardtoioqueue.htm
+old-project: wdf
+ms.assetid: 07317157-1222-4b34-89f4-d546818e9851
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.iwdfiorequest_forwardtoioqueue, IWDFIoRequest::ForwardToIoQueue, ForwardToIoQueue method, IWDFIoRequest interface, ForwardToIoQueue method, UMDFRequestObjectRef_ae3c7113-1fac-4742-b53b-8230bf78b61a.xml, ForwardToIoQueue, umdf.iwdfiorequest_forwardtoioqueue, wudfddi/IWDFIoRequest::ForwardToIoQueue, IWDFIoRequest, ForwardToIoQueue method, IWDFIoRequest interface
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.5
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFIoRequest.ForwardToIoQueue
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

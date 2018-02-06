@@ -1,42 +1,47 @@
 ---
-UID : NC:vmbuskernelmodeclientlibapi.EVT_VMB_PACKET_COMPLETION_ROUTINE
-title : EVT_VMB_PACKET_COMPLETION_ROUTINE
-author : windows-driver-content
-description : The EvtVmbPacketCompletionRoutine callback function is invoked when the transaction associated with a sent packet is complete.
-old-location : netvista\evt_vmb_packet_completion_routine.htm
-old-project : netvista
-ms.assetid : DEE6FBD6-4807-4216-9010-F59C9E08076B
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.evt_vmb_packet_completion_routine, EvtVmbPacketCompletionRoutine callback function [Network Drivers Starting with Windows Vista], EvtVmbPacketCompletionRoutine, EVT_VMB_PACKET_COMPLETION_ROUTINE, EVT_VMB_PACKET_COMPLETION_ROUTINE, vmbuskernelmodeclientlibapi/EvtVmbPacketCompletionRoutine, PFN_VMB_PACKET_COMPLETION_ROUTINE callback function pointer [Network Drivers Starting with Windows Vista], PFN_VMB_PACKET_COMPLETION_ROUTINE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : vmbuskernelmodeclientlibapi.h
-req.include-header : VmbusKernelModeClientLibApi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PVIDEO_PORT_AGP_SERVICES, VIDEO_PORT_AGP_SERVICES"
-req.product : Windows 10 or later.
+UID: NC:vmbuskernelmodeclientlibapi.EVT_VMB_PACKET_COMPLETION_ROUTINE
+title: EVT_VMB_PACKET_COMPLETION_ROUTINE
+author: windows-driver-content
+description: The EvtVmbPacketCompletionRoutine callback function is invoked when the transaction associated with a sent packet is complete.
+old-location: netvista\evt_vmb_packet_completion_routine.htm
+old-project: netvista
+ms.assetid: DEE6FBD6-4807-4216-9010-F59C9E08076B
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.evt_vmb_packet_completion_routine, EvtVmbPacketCompletionRoutine callback function [Network Drivers Starting with Windows Vista], EvtVmbPacketCompletionRoutine, EVT_VMB_PACKET_COMPLETION_ROUTINE, EVT_VMB_PACKET_COMPLETION_ROUTINE, vmbuskernelmodeclientlibapi/EvtVmbPacketCompletionRoutine, PFN_VMB_PACKET_COMPLETION_ROUTINE callback function pointer [Network Drivers Starting with Windows Vista], PFN_VMB_PACKET_COMPLETION_ROUTINE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: vmbuskernelmodeclientlibapi.h
+req.include-header: VmbusKernelModeClientLibApi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	VmbusKernelModeClientLibApi.h
+apiname:
+-	PFN_VMB_PACKET_COMPLETION_ROUTINE
+product: Windows
+targetos: Windows
+req.typenames: "*PVIDEO_PORT_AGP_SERVICES, VIDEO_PORT_AGP_SERVICES"
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NE:avc._tagAVC_FUNCTION
-title : "_tagAVC_FUNCTION"
-author : windows-driver-content
-description : The AVC_FUNCTION enumeration type is used to specify AV/C subunit functions.
-old-location : stream\avc_function.htm
-old-project : stream
-ms.assetid : 31451163-bc60-4c84-88a7-e11edea97436
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : AVC_FUNCTION, avc/AVC_FUNCTION_PEER_DO_LIST, avc/AVC_FUNCTION_GET_SUBUNIT_INFO, AVC_FUNCTION_GET_REQUEST, avc/AVC_FUNCTION, AVC_FUNCTION_SET_CONNECTINFO, avc/AVC_FUNCTION_GET_REQUEST, _tagAVC_FUNCTION, AVC_FUNCTION_FIND_PEER_DO, avc/AVC_FUNCTION_GET_CONNECTINFO, AVC_FUNCTION_GET_EXT_PLUG_COUNTS, AVC_FUNCTION_GET_UNIQUE_ID, avcref_aa8add30-67c7-469c-ab3d-9173e7b4b91e.xml, AVC_FUNCTION_GET_PIN_DESCRIPTOR, avc/AVC_FUNCTION_COMMAND, AVC_FUNCTION_GET_CONNECTINFO, stream.avc_function, AVC_FUNCTION_CLR_CONNECTINFO, avc/AVC_FUNCTION_GET_PIN_COUNT, AVC_FUNCTION enumeration [Streaming Media Devices], avc/AVC_FUNCTION_RELEASE, AVC_FUNCTION_ACQUIRE, avc/AVC_FUNCTION_GET_EXT_PLUG_COUNTS, avc/AVC_FUNCTION_GET_PIN_DESCRIPTOR, AVC_FUNCTION_SEND_RESPONSE, avc/AVC_FUNCTION_GET_UNIQUE_ID, avc/AVC_FUNCTION_SEND_RESPONSE, AVC_FUNCTION_GET_PIN_COUNT, AVC_FUNCTION_COMMAND, AVC_FUNCTION_RELEASE, AVC_FUNCTION_PEER_DO_LIST, avc/AVC_FUNCTION_FIND_PEER_DO, avc/AVC_FUNCTION_ACQUIRE, avc/AVC_FUNCTION_CLR_CONNECTINFO, AVC_FUNCTION_GET_SUBUNIT_INFO, avc/AVC_FUNCTION_SET_CONNECTINFO
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : avc.h
-req.include-header : Avc.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : AVC_FUNCTION
+UID: NE:avc._tagAVC_FUNCTION
+title: "_tagAVC_FUNCTION"
+author: windows-driver-content
+description: The AVC_FUNCTION enumeration type is used to specify AV/C subunit functions.
+old-location: stream\avc_function.htm
+old-project: stream
+ms.assetid: 31451163-bc60-4c84-88a7-e11edea97436
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: AVC_FUNCTION, avc/AVC_FUNCTION_PEER_DO_LIST, avc/AVC_FUNCTION_GET_SUBUNIT_INFO, AVC_FUNCTION_GET_REQUEST, avc/AVC_FUNCTION, AVC_FUNCTION_SET_CONNECTINFO, avc/AVC_FUNCTION_GET_REQUEST, _tagAVC_FUNCTION, AVC_FUNCTION_FIND_PEER_DO, avc/AVC_FUNCTION_GET_CONNECTINFO, AVC_FUNCTION_GET_EXT_PLUG_COUNTS, AVC_FUNCTION_GET_UNIQUE_ID, avcref_aa8add30-67c7-469c-ab3d-9173e7b4b91e.xml, AVC_FUNCTION_GET_PIN_DESCRIPTOR, avc/AVC_FUNCTION_COMMAND, AVC_FUNCTION_GET_CONNECTINFO, stream.avc_function, AVC_FUNCTION_CLR_CONNECTINFO, avc/AVC_FUNCTION_GET_PIN_COUNT, AVC_FUNCTION enumeration [Streaming Media Devices], avc/AVC_FUNCTION_RELEASE, AVC_FUNCTION_ACQUIRE, avc/AVC_FUNCTION_GET_EXT_PLUG_COUNTS, avc/AVC_FUNCTION_GET_PIN_DESCRIPTOR, AVC_FUNCTION_SEND_RESPONSE, avc/AVC_FUNCTION_GET_UNIQUE_ID, avc/AVC_FUNCTION_SEND_RESPONSE, AVC_FUNCTION_GET_PIN_COUNT, AVC_FUNCTION_COMMAND, AVC_FUNCTION_RELEASE, AVC_FUNCTION_PEER_DO_LIST, avc/AVC_FUNCTION_FIND_PEER_DO, avc/AVC_FUNCTION_ACQUIRE, avc/AVC_FUNCTION_CLR_CONNECTINFO, AVC_FUNCTION_GET_SUBUNIT_INFO, avc/AVC_FUNCTION_SET_CONNECTINFO
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: avc.h
+req.include-header: Avc.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	avc.h
+apiname:
+-	AVC_FUNCTION
+product: Windows
+targetos: Windows
+req.typenames: AVC_FUNCTION
 ---
 
 # _tagAVC_FUNCTION Enumeration
@@ -65,109 +70,109 @@ typedef enum _tagAVC_FUNCTION {
 ## Constants
 
 <table>
-
-<tr>
-<td>AVC_FUNCTION_ACQUIRE</td>
-<td>This value is a function code used to cause <i>avc.sys</i> to establish any connections suggested by cached AVCCONNECTINFO values. This function code uses the AVC_PIN_ID structure.
-
-This function code is available only to peer instances of <i>avc.sys</i>.</td>
-</tr>
-
-<tr>
-<td>AVC_FUNCTION_CLR_CONNECTINFO</td>
-<td>This value is a function code used to cause <i>avc.sys</i> to remove any cached AVCCONNECTINFO values. This function code uses the AVC_PIN_ID structure. 
+            
+                <tr>
+                    <td>AVC_FUNCTION_ACQUIRE</td>
+                    <td>This value is a function code used to cause <i>avc.sys</i> to establish any connections suggested by cached AVCCONNECTINFO values. This function code uses the AVC_PIN_ID structure.
 
 This function code is available only to peer instances of <i>avc.sys</i>.</td>
-</tr>
+                </tr>
+            
+                <tr>
+                    <td>AVC_FUNCTION_CLR_CONNECTINFO</td>
+                    <td>This value is a function code used to cause <i>avc.sys</i> to remove any cached AVCCONNECTINFO values. This function code uses the AVC_PIN_ID structure. 
 
-<tr>
-<td>AVC_FUNCTION_COMMAND</td>
-<td>This value is a function code used to send an AV/C request and receive a response as one operation. This function code uses the AVC_COMMAND_IRB structure.
+This function code is available only to peer instances of <i>avc.sys</i>.</td>
+                </tr>
+            
+                <tr>
+                    <td>AVC_FUNCTION_COMMAND</td>
+                    <td>This value is a function code used to send an AV/C request and receive a response as one operation. This function code uses the AVC_COMMAND_IRB structure.
 
 This function code is available to both peer and virtual instances of <i>avc.sys</i>.</td>
-</tr>
-
-<tr>
-<td>AVC_FUNCTION_FIND_PEER_DO</td>
-<td>This value is a function code used to locate a nonvirtual <i>avc.sys</i> instance. This function code uses the AVC_PEER_DO_LOCATOR structure.
-
-This function code is available to both peer and virtual instances of <i>avc.sys</i>.</td>
-</tr>
-
-<tr>
-<td>AVC_FUNCTION_GET_CONNECTINFO</td>
-<td>This value is a function code used to obtain the AVCPRECONNECTINFO structure for each pin ID. This function code uses the AVC_PRE_CONNECTINFO structure.
-
-This function code is available only to peer instances of <i>avc.sys</i>.</td>
-</tr>
-
-<tr>
-<td>AVC_FUNCTION_GET_EXT_PLUG_COUNTS</td>
-<td>This value is a function code used to cause <i>avc.sys</i> to obtain the external input and output plug counts. This function code uses the AVC_EXT_PLUG_COUNTS structure.
-
-This function code is available only to peer instances of <i>avc.sys</i>.</td>
-</tr>
-
-<tr>
-<td>AVC_FUNCTION_GET_PIN_COUNT</td>
-<td>This value is a function code used to obtain the number of pins supported by the underlying subunit device. This function code uses the AVC_PIN_COUNT structure.
-
-This function code is available only to peer instances of <i>avc.sys</i>.</td>
-</tr>
-
-<tr>
-<td>AVC_FUNCTION_GET_PIN_DESCRIPTOR</td>
-<td>This value is a function code used to obtain the pin descriptor for each pin ID. This function code uses the AVC_PIN_DESCRIPTOR structure.
-
-This function code is available only to peer instances of <i>avc.sys</i>.</td>
-</tr>
-
-<tr>
-<td>AVC_FUNCTION_GET_REQUEST</td>
-<td>This value is a function code used to register to receive AV/C unit and subunit requests. This function code uses the AVC_COMMAND_IRB structure.
+                </tr>
+            
+                <tr>
+                    <td>AVC_FUNCTION_FIND_PEER_DO</td>
+                    <td>This value is a function code used to locate a nonvirtual <i>avc.sys</i> instance. This function code uses the AVC_PEER_DO_LOCATOR structure.
 
 This function code is available to both peer and virtual instances of <i>avc.sys</i>.</td>
-</tr>
-
-<tr>
-<td>AVC_FUNCTION_GET_SUBUNIT_INFO</td>
-<td>This value is a function code used to obtain the subunit information of the target device. This function code uses the AVC_SUBUNIT_INFO_BLOCK structure.
-
-This function code is available to both peer and virtual instances of <i>avc.sys</i>.</td>
-</tr>
-
-<tr>
-<td>AVC_FUNCTION_GET_UNIQUE_ID</td>
-<td>This value is a function code used to obtain the unique ID of the AV/C unit. This function code uses the AVC_UNIQUE_ID structure.
+                </tr>
+            
+                <tr>
+                    <td>AVC_FUNCTION_GET_CONNECTINFO</td>
+                    <td>This value is a function code used to obtain the AVCPRECONNECTINFO structure for each pin ID. This function code uses the AVC_PRE_CONNECTINFO structure.
 
 This function code is available only to peer instances of <i>avc.sys</i>.</td>
-</tr>
-
-<tr>
-<td>AVC_FUNCTION_PEER_DO_LIST</td>
-<td>This value is a function code used to locate all nonvirtual <i>avc.sys</i> instances. This function code uses the AVC_PEER_DO_LIST structure.
-
-This function code is available to both peer and virtual instances of <i>avc.sys</i>.</td>
-</tr>
-
-<tr>
-<td>AVC_FUNCTION_RELEASE</td>
-<td>This value is a function code used to cause <i>avc.sys</i> to release any connections suggested by cached AVCCONNECTINFO values. This function code uses the AVC_PIN_ID structure.</td>
-</tr>
-
-<tr>
-<td>AVC_FUNCTION_SEND_RESPONSE</td>
-<td>This value is a function code used to cause <i>avc.sys</i> to respond to AV/C unit and subunit requests. This function code uses the AVC_COMMAND_IRB structure.
-
-This function code is available to both peer and virtual instances of <i>avc.sys</i>.</td>
-</tr>
-
-<tr>
-<td>AVC_FUNCTION_SET_CONNECTINFO</td>
-<td>This value is a function code used to set the AVCCONNECTINFO structure for each pin ID. This function code uses the AVC_SET_CONNECTINFO structure.
+                </tr>
+            
+                <tr>
+                    <td>AVC_FUNCTION_GET_EXT_PLUG_COUNTS</td>
+                    <td>This value is a function code used to cause <i>avc.sys</i> to obtain the external input and output plug counts. This function code uses the AVC_EXT_PLUG_COUNTS structure.
 
 This function code is available only to peer instances of <i>avc.sys</i>.</td>
-</tr>
+                </tr>
+            
+                <tr>
+                    <td>AVC_FUNCTION_GET_PIN_COUNT</td>
+                    <td>This value is a function code used to obtain the number of pins supported by the underlying subunit device. This function code uses the AVC_PIN_COUNT structure.
+
+This function code is available only to peer instances of <i>avc.sys</i>.</td>
+                </tr>
+            
+                <tr>
+                    <td>AVC_FUNCTION_GET_PIN_DESCRIPTOR</td>
+                    <td>This value is a function code used to obtain the pin descriptor for each pin ID. This function code uses the AVC_PIN_DESCRIPTOR structure.
+
+This function code is available only to peer instances of <i>avc.sys</i>.</td>
+                </tr>
+            
+                <tr>
+                    <td>AVC_FUNCTION_GET_REQUEST</td>
+                    <td>This value is a function code used to register to receive AV/C unit and subunit requests. This function code uses the AVC_COMMAND_IRB structure.
+
+This function code is available to both peer and virtual instances of <i>avc.sys</i>.</td>
+                </tr>
+            
+                <tr>
+                    <td>AVC_FUNCTION_GET_SUBUNIT_INFO</td>
+                    <td>This value is a function code used to obtain the subunit information of the target device. This function code uses the AVC_SUBUNIT_INFO_BLOCK structure.
+
+This function code is available to both peer and virtual instances of <i>avc.sys</i>.</td>
+                </tr>
+            
+                <tr>
+                    <td>AVC_FUNCTION_GET_UNIQUE_ID</td>
+                    <td>This value is a function code used to obtain the unique ID of the AV/C unit. This function code uses the AVC_UNIQUE_ID structure.
+
+This function code is available only to peer instances of <i>avc.sys</i>.</td>
+                </tr>
+            
+                <tr>
+                    <td>AVC_FUNCTION_PEER_DO_LIST</td>
+                    <td>This value is a function code used to locate all nonvirtual <i>avc.sys</i> instances. This function code uses the AVC_PEER_DO_LIST structure.
+
+This function code is available to both peer and virtual instances of <i>avc.sys</i>.</td>
+                </tr>
+            
+                <tr>
+                    <td>AVC_FUNCTION_RELEASE</td>
+                    <td>This value is a function code used to cause <i>avc.sys</i> to release any connections suggested by cached AVCCONNECTINFO values. This function code uses the AVC_PIN_ID structure.</td>
+                </tr>
+            
+                <tr>
+                    <td>AVC_FUNCTION_SEND_RESPONSE</td>
+                    <td>This value is a function code used to cause <i>avc.sys</i> to respond to AV/C unit and subunit requests. This function code uses the AVC_COMMAND_IRB structure.
+
+This function code is available to both peer and virtual instances of <i>avc.sys</i>.</td>
+                </tr>
+            
+                <tr>
+                    <td>AVC_FUNCTION_SET_CONNECTINFO</td>
+                    <td>This value is a function code used to set the AVCCONNECTINFO structure for each pin ID. This function code uses the AVC_SET_CONNECTINFO structure.
+
+This function code is available only to peer instances of <i>avc.sys</i>.</td>
+                </tr>
 </table>
 
 
@@ -176,9 +181,9 @@ This function code is available only to peer instances of <i>avc.sys</i>.</td>
 | ---- |:---- |
 | **Header** | avc.h (include Avc.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\avc\ns-avc-_avc_peer_do_locator.md">AVC_PEER_DO_LOCATOR</a>
+        <a href="..\avc\ns-avc-_avc_peer_do_locator.md">AVC_PEER_DO_LOCATOR</a>
 
 <a href="..\avc\ns-avc-_avc_setconnect_info.md">AVC_SETCONNECT_INFO</a>
 

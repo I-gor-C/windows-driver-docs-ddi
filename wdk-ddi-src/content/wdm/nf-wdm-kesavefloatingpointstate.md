@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.KeSaveFloatingPointState
-title : KeSaveFloatingPointState function
-author : windows-driver-content
-description : The KeSaveFloatingPointState routine saves the nonvolatile floating-point context so the caller can carry out floating-point operations.
-old-location : kernel\kesavefloatingpointstate.htm
-old-project : kernel
-ms.assetid : 2ab1b2dd-4848-4eb0-9836-e3be987535a6
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : k105_f004bc61-7a09-46d1-a9c3-dc2a76a03c43.xml, KeSaveFloatingPointState, wdm/KeSaveFloatingPointState, kernel.kesavefloatingpointstate, KeSaveFloatingPointState routine [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : IrqlKeDispatchLte, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.KeSaveFloatingPointState
+title: KeSaveFloatingPointState function
+author: windows-driver-content
+description: The KeSaveFloatingPointState routine saves the nonvolatile floating-point context so the caller can carry out floating-point operations.
+old-location: kernel\kesavefloatingpointstate.htm
+old-project: kernel
+ms.assetid: 2ab1b2dd-4848-4eb0-9836-e3be987535a6
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: k105_f004bc61-7a09-46d1-a9c3-dc2a76a03c43.xml, KeSaveFloatingPointState, wdm/KeSaveFloatingPointState, kernel.kesavefloatingpointstate, KeSaveFloatingPointState routine [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: IrqlKeDispatchLte, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	KeSaveFloatingPointState
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NN:dbgeng.IDebugDataSpaces2
-title : IDebugDataSpaces2
-author : windows-driver-content
-description : IDebugDataSpaces2 interface
-old-location : debugger\idebugdataspaces2.htm
-old-project : debugger
-ms.assetid : a8548f9c-5cb6-4a13-b37c-da28d316b8e1
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : debugger.idebugdataspaces2, IDebugDataSpaces2 interface [Windows Debugging], IDebugDataSpaces2 interface [Windows Debugging], described, IDebugDataSpaces2, dbgeng/IDebugDataSpaces2
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NN:dbgeng.IDebugDataSpaces2
+title: IDebugDataSpaces2
+author: windows-driver-content
+description: IDebugDataSpaces2 interface
+old-location: debugger\idebugdataspaces2.htm
+old-project: debugger
+ms.assetid: a8548f9c-5cb6-4a13-b37c-da28d316b8e1
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: debugger.idebugdataspaces2, IDebugDataSpaces2 interface [Windows Debugging], IDebugDataSpaces2 interface [Windows Debugging], described, IDebugDataSpaces2, dbgeng/IDebugDataSpaces2
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugDataSpaces2
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 # IDebugDataSpaces2 interface

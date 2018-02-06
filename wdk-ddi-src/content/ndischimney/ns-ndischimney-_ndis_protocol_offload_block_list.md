@@ -1,41 +1,46 @@
 ---
-UID : NS:ndischimney._NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST
-title : "_NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST"
-author : windows-driver-content
-description : The NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST structure.
-old-location : netvista\ndis_protocol_offload_block_list.htm
-old-project : netvista
-ms.assetid : 64febd55-1ab8-4e2e-b738-340167866333
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : PNDIS_PROTOCOL_OFFLOAD_BLOCK_LIST structure pointer [Network Drivers Starting with Windows Vista], ndischimney/PNDIS_PROTOCOL_OFFLOAD_BLOCK_LIST, netvista.ndis_protocol_offload_block_list, PNDIS_PROTOCOL_OFFLOAD_BLOCK_LIST, _NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST, *PNDIS_PROTOCOL_OFFLOAD_BLOCK_LIST, NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST, ndischimney/NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST, tcp_chim_struct_77380eae-055d-471e-a94a-67575124981b.xml, NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST structure [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndischimney.h
-req.include-header : Ndischimney.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST, *PNDIS_PROTOCOL_OFFLOAD_BLOCK_LIST
+UID: NS:ndischimney._NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST
+title: "_NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST"
+author: windows-driver-content
+description: The NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST structure.
+old-location: netvista\ndis_protocol_offload_block_list.htm
+old-project: netvista
+ms.assetid: 64febd55-1ab8-4e2e-b738-340167866333
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: PNDIS_PROTOCOL_OFFLOAD_BLOCK_LIST structure pointer [Network Drivers Starting with Windows Vista], ndischimney/PNDIS_PROTOCOL_OFFLOAD_BLOCK_LIST, netvista.ndis_protocol_offload_block_list, PNDIS_PROTOCOL_OFFLOAD_BLOCK_LIST, _NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST, *PNDIS_PROTOCOL_OFFLOAD_BLOCK_LIST, NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST, ndischimney/NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST, tcp_chim_struct_77380eae-055d-471e-a94a-67575124981b.xml, NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST structure [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndischimney.h
+req.include-header: Ndischimney.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndischimney.h
+apiname:
+-	NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST
+product: Windows
+targetos: Windows
+req.typenames: NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST, *PNDIS_PROTOCOL_OFFLOAD_BLOCK_LIST
 ---
 
 # _NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST structure

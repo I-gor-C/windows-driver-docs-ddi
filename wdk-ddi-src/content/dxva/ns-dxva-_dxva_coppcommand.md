@@ -1,41 +1,46 @@
 ---
-UID : NS:dxva._DXVA_COPPCommand
-title : "_DXVA_COPPCommand"
-author : windows-driver-content
-description : The DXVA_COPPCommand structure describes a command sent to a protected video session that is associated with a COPP DirectX VA device.
-old-location : display\dxva_coppcommand.htm
-old-project : display
-ms.assetid : 08c87f1f-ea50-4521-80a2-67369fc6598a
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : LPDXVA_COPPCommand structure pointer [Display Devices], _DXVA_COPPCommand, DXVA_COPPCommand, LPDXVA_COPPCommand, display.dxva_coppcommand, dxva/LPDXVA_COPPCommand, DXVA_COPPCommand structure [Display Devices], *LPDXVA_COPPCommand, dxva/DXVA_COPPCommand, dxvaref_e27ea691-6ae9-41fc-9649-670231cb5ce8.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : dxva.h
-req.include-header : Dxva.h
-req.target-type : Windows
-req.target-min-winverclnt : This structure applies only to Windows Server 2003 with SP1 and later, and Windows XP with SP2 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*LPDXVA_COPPCommand, DXVA_COPPCommand"
+UID: NS:dxva._DXVA_COPPCommand
+title: "_DXVA_COPPCommand"
+author: windows-driver-content
+description: The DXVA_COPPCommand structure describes a command sent to a protected video session that is associated with a COPP DirectX VA device.
+old-location: display\dxva_coppcommand.htm
+old-project: display
+ms.assetid: 08c87f1f-ea50-4521-80a2-67369fc6598a
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: LPDXVA_COPPCommand structure pointer [Display Devices], _DXVA_COPPCommand, DXVA_COPPCommand, LPDXVA_COPPCommand, display.dxva_coppcommand, dxva/LPDXVA_COPPCommand, DXVA_COPPCommand structure [Display Devices], *LPDXVA_COPPCommand, dxva/DXVA_COPPCommand, dxvaref_e27ea691-6ae9-41fc-9649-670231cb5ce8.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: dxva.h
+req.include-header: Dxva.h
+req.target-type: Windows
+req.target-min-winverclnt: This structure applies only to Windows Server 2003 with SP1 and later, and Windows XP with SP2 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	dxva.h
+apiname:
+-	DXVA_COPPCommand
+product: Windows
+targetos: Windows
+req.typenames: "*LPDXVA_COPPCommand, DXVA_COPPCommand"
 ---
 
 # _DXVA_COPPCommand structure

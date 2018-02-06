@@ -1,42 +1,47 @@
 ---
-UID : NE:wdfrequest._WDF_REQUEST_STOP_ACTION_FLAGS
-title : "_WDF_REQUEST_STOP_ACTION_FLAGS"
-author : windows-driver-content
-description : The WDF_REQUEST_STOP_ACTION_FLAGS enumeration type defines flags that the framework passes to a driver's EvtIoStop callback function.
-old-location : wdf\wdf_request_stop_action_flags.htm
-old-project : wdf
-ms.assetid : 01f95aee-60aa-4d6f-88a9-c0fa6ea6a09a
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : DFRequestObjectRef_e291c6a5-1e65-4505-9090-19e6ea66e7b3.xml, WdfRequestStopRequestCancelable, wdfrequest/WdfRequestStopRequestCancelable, wdfrequest/WdfRequestStopActionInvalid, WDF_REQUEST_STOP_ACTION_FLAGS enumeration, wdfrequest/WdfRequestStopActionSuspend, WdfRequestStopActionPurge, WdfRequestStopActionInvalid, _WDF_REQUEST_STOP_ACTION_FLAGS, kmdf.wdf_request_stop_action_flags, wdf.wdf_request_stop_action_flags, WdfRequestStopActionSuspend, WDF_REQUEST_STOP_ACTION_FLAGS, wdfrequest/WdfRequestStopActionPurge, wdfrequest/WDF_REQUEST_STOP_ACTION_FLAGS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : wdfrequest.h
-req.include-header : Wdf.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_REQUEST_STOP_ACTION_FLAGS
-req.product : Windows 10 or later.
+UID: NE:wdfrequest._WDF_REQUEST_STOP_ACTION_FLAGS
+title: "_WDF_REQUEST_STOP_ACTION_FLAGS"
+author: windows-driver-content
+description: The WDF_REQUEST_STOP_ACTION_FLAGS enumeration type defines flags that the framework passes to a driver's EvtIoStop callback function.
+old-location: wdf\wdf_request_stop_action_flags.htm
+old-project: wdf
+ms.assetid: 01f95aee-60aa-4d6f-88a9-c0fa6ea6a09a
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: DFRequestObjectRef_e291c6a5-1e65-4505-9090-19e6ea66e7b3.xml, WdfRequestStopRequestCancelable, wdfrequest/WdfRequestStopRequestCancelable, wdfrequest/WdfRequestStopActionInvalid, WDF_REQUEST_STOP_ACTION_FLAGS enumeration, wdfrequest/WdfRequestStopActionSuspend, WdfRequestStopActionPurge, WdfRequestStopActionInvalid, _WDF_REQUEST_STOP_ACTION_FLAGS, kmdf.wdf_request_stop_action_flags, wdf.wdf_request_stop_action_flags, WdfRequestStopActionSuspend, WDF_REQUEST_STOP_ACTION_FLAGS, wdfrequest/WdfRequestStopActionPurge, wdfrequest/WDF_REQUEST_STOP_ACTION_FLAGS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: wdfrequest.h
+req.include-header: Wdf.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfrequest.h
+apiname:
+-	WDF_REQUEST_STOP_ACTION_FLAGS
+product: Windows
+targetos: Windows
+req.typenames: WDF_REQUEST_STOP_ACTION_FLAGS
+req.product: Windows 10 or later.
 ---
 
 # _WDF_REQUEST_STOP_ACTION_FLAGS Enumeration
@@ -57,31 +62,31 @@ typedef enum _WDF_REQUEST_STOP_ACTION_FLAGS {
 ## Constants
 
 <table>
-
-<tr>
-<td>WdfRequestStopActionInvalid</td>
-<td>Reserved for internal use only.</td>
-</tr>
-
-<tr>
-<td>WdfRequestStopActionPurge</td>
-<td>The framework is stopping the I/O queue because the device is being removed.</td>
-</tr>
-
-<tr>
-<td>WdfRequestStopActionSuspend</td>
-<td>The framework is stopping the I/O queue because the device is leaving its working (D0) state.</td>
-</tr>
-
-<tr>
-<td>WdfRequestStopRequestCancelable</td>
-<td>The I/O request is cancelable.</td>
-</tr>
+            
+                <tr>
+                    <td>WdfRequestStopActionInvalid</td>
+                    <td>Reserved for internal use only.</td>
+                </tr>
+            
+                <tr>
+                    <td>WdfRequestStopActionPurge</td>
+                    <td>The framework is stopping the I/O queue because the device is being removed.</td>
+                </tr>
+            
+                <tr>
+                    <td>WdfRequestStopActionSuspend</td>
+                    <td>The framework is stopping the I/O queue because the device is leaving its working (D0) state.</td>
+                </tr>
+            
+                <tr>
+                    <td>WdfRequestStopRequestCancelable</td>
+                    <td>The I/O request is cancelable.</td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-When the framework calls a driver's <a href="..\wdfio\nc-wdfio-evt_wdf_io_queue_io_stop.md">EvtIoStop</a> callback function, it sets either the <b>WdfRequestStopActionSuspend</b> or <b>WdfRequestStopActionPurge</b> flag. If the request is cancelable, the framework also sets the <b>WdfRequestStopRequestCancelable</b> flag.
+        When the framework calls a driver's <a href="..\wdfio\nc-wdfio-evt_wdf_io_queue_io_stop.md">EvtIoStop</a> callback function, it sets either the <b>WdfRequestStopActionSuspend</b> or <b>WdfRequestStopActionPurge</b> flag. If the request is cancelable, the framework also sets the <b>WdfRequestStopRequestCancelable</b> flag.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -90,9 +95,9 @@ When the framework calls a driver's <a href="..\wdfio\nc-wdfio-evt_wdf_io_queue_
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfrequest.h (include Wdf.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\wdfio\nc-wdfio-evt_wdf_io_queue_io_stop.md">EvtIoStop</a>
+        <a href="..\wdfio\nc-wdfio-evt_wdf_io_queue_io_stop.md">EvtIoStop</a>
 
  
 

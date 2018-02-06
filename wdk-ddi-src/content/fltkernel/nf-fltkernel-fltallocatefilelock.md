@@ -1,41 +1,47 @@
 ---
-UID : NF:fltkernel.FltAllocateFileLock
-title : FltAllocateFileLock function
-author : windows-driver-content
-description : The FltAllocateFileLock routine allocates and initializes a new FILE_LOCK structure.
-old-location : ifsk\fltallocatefilelock.htm
-old-project : ifsk
-ms.assetid : f5a96fc2-e6b8-44df-a827-d10d693f6f2b
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : fltkernel/FltAllocateFileLock, FltApiRef_a_to_d_f59cead3-059a-4457-9339-c90cc007ca63.xml, ifsk.fltallocatefilelock, FltAllocateFileLock, FltAllocateFileLock routine [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with  Windows XP with SP2 or Windows Server 2003 with SP1.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltAllocateFileLock
+title: FltAllocateFileLock function
+author: windows-driver-content
+description: The FltAllocateFileLock routine allocates and initializes a new FILE_LOCK structure.
+old-location: ifsk\fltallocatefilelock.htm
+old-project: ifsk
+ms.assetid: f5a96fc2-e6b8-44df-a827-d10d693f6f2b
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: fltkernel/FltAllocateFileLock, FltApiRef_a_to_d_f59cead3-059a-4457-9339-c90cc007ca63.xml, ifsk.fltallocatefilelock, FltAllocateFileLock, FltAllocateFileLock routine [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with  Windows XP with SP2 or Windows Server 2003 with SP1.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	FltMgr.lib
+-	FltMgr.dll
+apiname:
+-	FltAllocateFileLock
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

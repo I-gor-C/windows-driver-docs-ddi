@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisFRestartComplete
-title : NdisFRestartComplete function
-author : windows-driver-content
-description : A filter driver must call the NdisFRestartComplete function to complete a restart operation if the driver returned NDIS_STATUS_PENDING from its FilterRestart function.
-old-location : netvista\ndisfrestartcomplete.htm
-old-project : netvista
-ms.assetid : 84685763-e7d8-4184-afa3-83efb4a0d3d7
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NdisFRestartComplete function [Network Drivers Starting with Windows Vista], NdisFRestartComplete, netvista.ndisfrestartcomplete, ndis/NdisFRestartComplete, filter_ndis_functions_ref_592af2b7-2172-4a8d-aa7b-315f7c321705.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_Filter_Driver_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisFRestartComplete
+title: NdisFRestartComplete function
+author: windows-driver-content
+description: A filter driver must call the NdisFRestartComplete function to complete a restart operation if the driver returned NDIS_STATUS_PENDING from its FilterRestart function.
+old-location: netvista\ndisfrestartcomplete.htm
+old-project: netvista
+ms.assetid: 84685763-e7d8-4184-afa3-83efb4a0d3d7
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NdisFRestartComplete function [Network Drivers Starting with Windows Vista], NdisFRestartComplete, netvista.ndisfrestartcomplete, ndis/NdisFRestartComplete, filter_ndis_functions_ref_592af2b7-2172-4a8d-aa7b-315f7c321705.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_Filter_Driver_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisFRestartComplete
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

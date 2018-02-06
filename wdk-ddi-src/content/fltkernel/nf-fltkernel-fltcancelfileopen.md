@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltCancelFileOpen
-title : FltCancelFileOpen function
-author : windows-driver-content
-description : A minifilter driver can use the FltCancelFileOpen routine to close a newly opened or created file.
-old-location : ifsk\fltcancelfileopen.htm
-old-project : ifsk
-ms.assetid : adc1a1fd-ddbc-4ed5-85e3-4d4e85d710b1
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.fltcancelfileopen, FltCancelFileOpen, fltkernel/FltCancelFileOpen, FltCancelFileOpen routine [Installable File System Drivers], FltApiRef_a_to_d_6000a551-04a6-47d6-b2d8-816decb93d89.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltCancelFileOpen
+title: FltCancelFileOpen function
+author: windows-driver-content
+description: A minifilter driver can use the FltCancelFileOpen routine to close a newly opened or created file.
+old-location: ifsk\fltcancelfileopen.htm
+old-project: ifsk
+ms.assetid: adc1a1fd-ddbc-4ed5-85e3-4d4e85d710b1
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.fltcancelfileopen, FltCancelFileOpen, fltkernel/FltCancelFileOpen, FltCancelFileOpen routine [Installable File System Drivers], FltApiRef_a_to_d_6000a551-04a6-47d6-b2d8-816decb93d89.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltCancelFileOpen
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

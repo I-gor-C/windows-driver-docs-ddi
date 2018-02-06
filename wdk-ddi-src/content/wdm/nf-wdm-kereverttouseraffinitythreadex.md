@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.KeRevertToUserAffinityThreadEx
-title : KeRevertToUserAffinityThreadEx function
-author : windows-driver-content
-description : The KeRevertToUserAffinityThreadEx routine restores the previous affinity of the current thread.
-old-location : kernel\kereverttouseraffinitythreadex.htm
-old-project : kernel
-ms.assetid : effda249-3ba0-40e9-914b-4dd33126518c
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/KeRevertToUserAffinityThreadEx, kernel.kereverttouseraffinitythreadex, k105_88dc65fe-5379-4b7c-bfa0-6f2bb943b7cc.xml, KeRevertToUserAffinityThreadEx routine [Kernel-Mode Driver Architecture], KeRevertToUserAffinityThreadEx
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= DISPATCH_LEVEL (see Remarks section)."
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.KeRevertToUserAffinityThreadEx
+title: KeRevertToUserAffinityThreadEx function
+author: windows-driver-content
+description: The KeRevertToUserAffinityThreadEx routine restores the previous affinity of the current thread.
+old-location: kernel\kereverttouseraffinitythreadex.htm
+old-project: kernel
+ms.assetid: effda249-3ba0-40e9-914b-4dd33126518c
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/KeRevertToUserAffinityThreadEx, kernel.kereverttouseraffinitythreadex, k105_88dc65fe-5379-4b7c-bfa0-6f2bb943b7cc.xml, KeRevertToUserAffinityThreadEx routine [Kernel-Mode Driver Architecture], KeRevertToUserAffinityThreadEx
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= DISPATCH_LEVEL (see Remarks section)."
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	KeRevertToUserAffinityThreadEx
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NC:wdfdevice.EVT_WDFDEVICE_WDM_IRP_PREPROCESS
-title : EVT_WDFDEVICE_WDM_IRP_PREPROCESS
-author : windows-driver-content
-description : A driver's EvtDeviceWdmIrpPreprocess event callback function receives an IRP before the framework processes the IRP.
-old-location : wdf\evtdevicewdmirppreprocess.htm
-old-project : wdf
-ms.assetid : aff9cb60-d61b-47a8-aae4-6ffd2a1b7a9a
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.evtdevicewdmirppreprocess, EvtDeviceWdmIrpPreprocess callback function, EvtDeviceWdmIrpPreprocess, EVT_WDFDEVICE_WDM_IRP_PREPROCESS, EVT_WDFDEVICE_WDM_IRP_PREPROCESS, wdfdevice/EvtDeviceWdmIrpPreprocess, DFDeviceObjectGeneralRef_7329adf6-5814-40cb-ac9b-a7fb67b5f05c.xml, kmdf.evtdevicewdmirppreprocess
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdfdevice.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_DEVICE_SHUTDOWN_FLAGS
-req.product : Windows 10 or later.
+UID: NC:wdfdevice.EVT_WDFDEVICE_WDM_IRP_PREPROCESS
+title: EVT_WDFDEVICE_WDM_IRP_PREPROCESS
+author: windows-driver-content
+description: A driver's EvtDeviceWdmIrpPreprocess event callback function receives an IRP before the framework processes the IRP.
+old-location: wdf\evtdevicewdmirppreprocess.htm
+old-project: wdf
+ms.assetid: aff9cb60-d61b-47a8-aae4-6ffd2a1b7a9a
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.evtdevicewdmirppreprocess, EvtDeviceWdmIrpPreprocess callback function, EvtDeviceWdmIrpPreprocess, EVT_WDFDEVICE_WDM_IRP_PREPROCESS, EVT_WDFDEVICE_WDM_IRP_PREPROCESS, wdfdevice/EvtDeviceWdmIrpPreprocess, DFDeviceObjectGeneralRef_7329adf6-5814-40cb-ac9b-a7fb67b5f05c.xml, kmdf.evtdevicewdmirppreprocess
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdfdevice.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Wdfdevice.h
+apiname:
+-	EvtDeviceWdmIrpPreprocess
+product: Windows
+targetos: Windows
+req.typenames: WDF_DEVICE_SHUTDOWN_FLAGS
+req.product: Windows 10 or later.
 ---
 
 

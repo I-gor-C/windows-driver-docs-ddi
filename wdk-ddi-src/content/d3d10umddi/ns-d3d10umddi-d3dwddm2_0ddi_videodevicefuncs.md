@@ -1,41 +1,46 @@
 ---
-UID : NS:d3d10umddi.D3DWDDM2_0DDI_VIDEODEVICEFUNCS
-title : D3DWDDM2_0DDI_VIDEODEVICEFUNCS
-author : windows-driver-content
-description : Specifies the video function table for the Microsoft Direct3D driver device object. Used only by Windows Display Driver Model (WDDM) 2.0 and later drivers.
-old-location : display\d3dwddm2_0ddi_videodevicefuncs.htm
-old-project : display
-ms.assetid : 59D06B73-413B-4595-841E-7E0A696A3AC2
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DWDDM2_0DDI_VIDEODEVICEFUNCS structure [Display Devices], d3d10umddi/D3DWDDM2_0DDI_VIDEODEVICEFUNCS, display.d3dwddm2_0ddi_videodevicefuncs, D3DWDDM2_0DDI_VIDEODEVICEFUNCS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DWDDM2_0DDI_VIDEODEVICEFUNCS
+UID: NS:d3d10umddi.D3DWDDM2_0DDI_VIDEODEVICEFUNCS
+title: D3DWDDM2_0DDI_VIDEODEVICEFUNCS
+author: windows-driver-content
+description: Specifies the video function table for the Microsoft Direct3D driver device object. Used only by Windows Display Driver Model (WDDM) 2.0 and later drivers.
+old-location: display\d3dwddm2_0ddi_videodevicefuncs.htm
+old-project: display
+ms.assetid: 59D06B73-413B-4595-841E-7E0A696A3AC2
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DWDDM2_0DDI_VIDEODEVICEFUNCS structure [Display Devices], d3d10umddi/D3DWDDM2_0DDI_VIDEODEVICEFUNCS, display.d3dwddm2_0ddi_videodevicefuncs, D3DWDDM2_0DDI_VIDEODEVICEFUNCS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	D3d10umddi.h
+apiname:
+-	D3DWDDM2_0DDI_VIDEODEVICEFUNCS
+product: Windows
+targetos: Windows
+req.typenames: D3DWDDM2_0DDI_VIDEODEVICEFUNCS
 ---
 
 # D3DWDDM2_0DDI_VIDEODEVICEFUNCS structure

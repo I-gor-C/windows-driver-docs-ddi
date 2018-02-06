@@ -1,41 +1,46 @@
 ---
-UID : NF:ntddk.RtlIsLeftChild
-title : RtlIsLeftChild macro
-author : windows-driver-content
-description : The RtlIsLeftChild routine determines whether a given splay link is the left child of a node in a splay link tree.
-old-location : ifsk\rtlisleftchild.htm
-old-project : ifsk
-ms.assetid : 6ccdcc68-f03f-4972-91de-c8ab7f4389fb
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : rtlref_2692597e-5133-48f2-b978-c8ac5f2280fe.xml, RtlIsLeftChild, ifsk.rtlisleftchild, RtlIsLeftChild routine [Installable File System Drivers], ntddk/RtlIsLeftChild
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : macro
-req.header : ntddk.h
-req.include-header : Ntddk.h, Ntifs.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : ntddk.h
-req.dll : 
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.RtlIsLeftChild
+title: RtlIsLeftChild macro
+author: windows-driver-content
+description: The RtlIsLeftChild routine determines whether a given splay link is the left child of a node in a splay link tree.
+old-location: ifsk\rtlisleftchild.htm
+old-project: ifsk
+ms.assetid: 6ccdcc68-f03f-4972-91de-c8ab7f4389fb
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: rtlref_2692597e-5133-48f2-b978-c8ac5f2280fe.xml, RtlIsLeftChild, ifsk.rtlisleftchild, RtlIsLeftChild routine [Installable File System Drivers], ntddk/RtlIsLeftChild
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: macro
+req.header: ntddk.h
+req.include-header: Ntddk.h, Ntifs.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: ntddk.h
+req.dll: 
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddk.h
+apiname:
+-	RtlIsLeftChild
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

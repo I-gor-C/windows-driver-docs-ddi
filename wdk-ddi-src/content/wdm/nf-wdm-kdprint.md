@@ -1,38 +1,38 @@
 ---
-UID : NF:wdm.KdPrint
-title : KdPrint macro
-author : windows-driver-content
-description : The KdPrint macro sends a message to the kernel debugger.
-old-location : devtest\kdprint.htm
-old-project : devtest
-ms.assetid : 4a2ab12b-ee89-462d-821a-0a2db20cc36c
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : KdPrint
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : macro
-req.header : wdm.h
-req.include-header : Wdm.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Microsoft Windows 2000 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.alt-api : KdPrint
-req.alt-loc : NtosKrnl.exe
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib (See DbgPrint.)
-req.dll : NtosKrnl.exe
-req.irql : 
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.KdPrint
+title: KdPrint macro
+author: windows-driver-content
+description: The KdPrint macro sends a message to the kernel debugger.
+old-location: devtest\kdprint.htm
+old-project: devtest
+ms.assetid: 4a2ab12b-ee89-462d-821a-0a2db20cc36c
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: KdPrint
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: macro
+req.header: wdm.h
+req.include-header: Wdm.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Microsoft Windows 2000 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.alt-api: KdPrint
+req.alt-loc: NtosKrnl.exe
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib (See DbgPrint.)
+req.dll: NtosKrnl.exe
+req.irql: 
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

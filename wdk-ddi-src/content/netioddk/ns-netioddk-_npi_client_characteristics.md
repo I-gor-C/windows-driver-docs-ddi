@@ -1,41 +1,46 @@
 ---
-UID : NS:netioddk._NPI_CLIENT_CHARACTERISTICS
-title : "_NPI_CLIENT_CHARACTERISTICS"
-author : windows-driver-content
-description : The NPI_CLIENT_CHARACTERISTICS structure defines the characteristics of a client module.
-old-location : netvista\npi_client_characteristics.htm
-old-project : netvista
-ms.assetid : 03d73a80-0860-4ec7-8eb1-5954f64b6026
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : PNPI_CLIENT_CHARACTERISTICS structure pointer [Network Drivers Starting with Windows Vista], PNPI_CLIENT_CHARACTERISTICS, NPI_CLIENT_CHARACTERISTICS structure [Network Drivers Starting with Windows Vista], nmrref_01bb300c-5e76-40e3-9358-a01e991ceecf.xml, NPI_CLIENT_CHARACTERISTICS, _NPI_CLIENT_CHARACTERISTICS, netioddk/PNPI_CLIENT_CHARACTERISTICS, netioddk/NPI_CLIENT_CHARACTERISTICS, netvista.npi_client_characteristics
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : netioddk.h
-req.include-header : Wsk.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating   systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "< DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NPI_CLIENT_CHARACTERISTICS
+UID: NS:netioddk._NPI_CLIENT_CHARACTERISTICS
+title: "_NPI_CLIENT_CHARACTERISTICS"
+author: windows-driver-content
+description: The NPI_CLIENT_CHARACTERISTICS structure defines the characteristics of a client module.
+old-location: netvista\npi_client_characteristics.htm
+old-project: netvista
+ms.assetid: 03d73a80-0860-4ec7-8eb1-5954f64b6026
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: PNPI_CLIENT_CHARACTERISTICS structure pointer [Network Drivers Starting with Windows Vista], PNPI_CLIENT_CHARACTERISTICS, NPI_CLIENT_CHARACTERISTICS structure [Network Drivers Starting with Windows Vista], nmrref_01bb300c-5e76-40e3-9358-a01e991ceecf.xml, NPI_CLIENT_CHARACTERISTICS, _NPI_CLIENT_CHARACTERISTICS, netioddk/PNPI_CLIENT_CHARACTERISTICS, netioddk/NPI_CLIENT_CHARACTERISTICS, netvista.npi_client_characteristics
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: netioddk.h
+req.include-header: Wsk.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "< DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	netioddk.h
+apiname:
+-	NPI_CLIENT_CHARACTERISTICS
+product: Windows
+targetos: Windows
+req.typenames: NPI_CLIENT_CHARACTERISTICS
 ---
 
 # _NPI_CLIENT_CHARACTERISTICS structure

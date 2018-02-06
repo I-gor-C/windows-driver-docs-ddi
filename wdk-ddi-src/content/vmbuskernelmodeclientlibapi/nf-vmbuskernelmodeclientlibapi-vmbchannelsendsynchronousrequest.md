@@ -1,42 +1,48 @@
 ---
-UID : NF:vmbuskernelmodeclientlibapi.VmbChannelSendSynchronousRequest
-title : VmbChannelSendSynchronousRequest function
-author : windows-driver-content
-description : The VmbChannelSendSynchronousRequest function sends a packet to the opposite endpoint and waits for a response.
-old-location : netvista\vmbchannelsendsynchronousrequest.htm
-old-project : netvista
-ms.assetid : 312DED8E-570E-4DEC-B084-36894970F49F
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : vmbuskernelmodeclientlibapi/VmbChannelSendSynchronousRequest, netvista.vmbchannelsendsynchronousrequest, VmbChannelSendSynchronousRequest, VmbChannelSendSynchronousRequest function [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : vmbuskernelmodeclientlibapi.h
-req.include-header : VmbusKernelModeClientLibApi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8.1
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 1.13
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Vmbkmcl.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PVIDEO_PORT_AGP_SERVICES, VIDEO_PORT_AGP_SERVICES"
-req.product : Windows 10 or later.
+UID: NF:vmbuskernelmodeclientlibapi.VmbChannelSendSynchronousRequest
+title: VmbChannelSendSynchronousRequest function
+author: windows-driver-content
+description: The VmbChannelSendSynchronousRequest function sends a packet to the opposite endpoint and waits for a response.
+old-location: netvista\vmbchannelsendsynchronousrequest.htm
+old-project: netvista
+ms.assetid: 312DED8E-570E-4DEC-B084-36894970F49F
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: vmbuskernelmodeclientlibapi/VmbChannelSendSynchronousRequest, netvista.vmbchannelsendsynchronousrequest, VmbChannelSendSynchronousRequest, VmbChannelSendSynchronousRequest function [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: vmbuskernelmodeclientlibapi.h
+req.include-header: VmbusKernelModeClientLibApi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8.1
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 1.13
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Vmbkmcl.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	vmbkmcl.lib
+-	vmbkmcl.dll
+apiname:
+-	VmbChannelSendSynchronousRequest
+product: Windows
+targetos: Windows
+req.typenames: "*PVIDEO_PORT_AGP_SERVICES, VIDEO_PORT_AGP_SERVICES"
+req.product: Windows 10 or later.
 ---
 
 

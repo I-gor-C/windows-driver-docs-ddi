@@ -1,41 +1,46 @@
 ---
-UID : NF:ntddk.IoCreateFileSpecifyDeviceObjectHint
-title : IoCreateFileSpecifyDeviceObjectHint function
-author : windows-driver-content
-description : The IoCreateFileSpecifyDeviceObjectHint routine is used by file system filter drivers to send a create request only to the filters below a specified device object and to the file system.
-old-location : ifsk\iocreatefilespecifydeviceobjecthint.htm
-old-project : ifsk
-ms.assetid : b7374625-6997-44db-b43b-748dab813fcd
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : IoCreateFileSpecifyDeviceObjectHint, IoCreateFileSpecifyDeviceObjectHint routine [Installable File System Drivers], ntddk/IoCreateFileSpecifyDeviceObjectHint, ifsk.iocreatefilespecifydeviceobjecthint, ioref_729440cd-ded3-40cf-a0c9-c10f523cd774.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntddk.h
-req.include-header : Ntddk.h, Ntifs.h, FltKernel.h
-req.target-type : Universal
-req.target-min-winverclnt : The IoCreateFileSpecifyDeviceObjectHint routine is available starting with Windows XP.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.IoCreateFileSpecifyDeviceObjectHint
+title: IoCreateFileSpecifyDeviceObjectHint function
+author: windows-driver-content
+description: The IoCreateFileSpecifyDeviceObjectHint routine is used by file system filter drivers to send a create request only to the filters below a specified device object and to the file system.
+old-location: ifsk\iocreatefilespecifydeviceobjecthint.htm
+old-project: ifsk
+ms.assetid: b7374625-6997-44db-b43b-748dab813fcd
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: IoCreateFileSpecifyDeviceObjectHint, IoCreateFileSpecifyDeviceObjectHint routine [Installable File System Drivers], ntddk/IoCreateFileSpecifyDeviceObjectHint, ifsk.iocreatefilespecifydeviceobjecthint, ioref_729440cd-ded3-40cf-a0c9-c10f523cd774.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntddk.h
+req.include-header: Ntddk.h, Ntifs.h, FltKernel.h
+req.target-type: Universal
+req.target-min-winverclnt: The IoCreateFileSpecifyDeviceObjectHint routine is available starting with Windows XP.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoCreateFileSpecifyDeviceObjectHint
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

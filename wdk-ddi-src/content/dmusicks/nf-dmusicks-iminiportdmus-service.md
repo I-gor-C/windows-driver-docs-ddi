@@ -1,41 +1,46 @@
 ---
-UID : NF:dmusicks.IMiniportDMus.Service
-title : IMiniportDMus::Service method
-author : windows-driver-content
-description : This method does not currently need to be implemented in the miniport driver. The Service method is currently unused.
-old-location : audio\iminiportdmus_service.htm
-old-project : audio
-ms.assetid : a3f8d3f2-180c-454b-8e15-57c479c00db9
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : Service method [Audio Devices], IMiniportDMus, Service, IMiniportDMus::Service, Service method [Audio Devices], IMiniportDMus interface, IMiniportDMus interface [Audio Devices], Service method, audmp-routines_0c872bc5-12b7-4e9d-b6ea-0da47cd41483.xml, audio.iminiportdmus_service, dmusicks/IMiniportDMus::Service
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dmusicks.h
-req.include-header : Dmusicks.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dmusicks.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DMUS_STREAM_TYPE
+UID: NF:dmusicks.IMiniportDMus.Service
+title: IMiniportDMus::Service method
+author: windows-driver-content
+description: This method does not currently need to be implemented in the miniport driver. The Service method is currently unused.
+old-location: audio\iminiportdmus_service.htm
+old-project: audio
+ms.assetid: a3f8d3f2-180c-454b-8e15-57c479c00db9
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: Service method [Audio Devices], IMiniportDMus, Service, IMiniportDMus::Service, Service method [Audio Devices], IMiniportDMus interface, IMiniportDMus interface [Audio Devices], Service method, audmp-routines_0c872bc5-12b7-4e9d-b6ea-0da47cd41483.xml, audio.iminiportdmus_service, dmusicks/IMiniportDMus::Service
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dmusicks.h
+req.include-header: Dmusicks.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dmusicks.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dmusicks.h
+apiname:
+-	IMiniportDMus.Service
+product: Windows
+targetos: Windows
+req.typenames: DMUS_STREAM_TYPE
 ---
 
 

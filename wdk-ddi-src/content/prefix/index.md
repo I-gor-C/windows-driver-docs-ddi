@@ -1,12 +1,12 @@
 ---
-UID : NA:prefix
-ms.assetid : 40e93800-fca3-3d55-8a33-71ad08228385
-ms.author : windowsdriverdev
-ms.date : 01/18/18
-ms.keywords : 
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : portal
+UID: NA:prefix
+ms.assetid: 40e93800-fca3-3d55-8a33-71ad08228385
+ms.author: windowsdriverdev
+ms.date: 01/18/18
+ms.keywords: 
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: portal
 ---
 
 # prefix.h header

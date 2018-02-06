@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3DWDDM1_3DDI_COPYTILES
-title : PFND3DWDDM1_3DDI_COPYTILES
-author : windows-driver-content
-description : Copies tiles from buffer to tiled resource or vice versa.
-old-location : display\copytiles.htm
-old-project : display
-ms.assetid : 8DA0FF6C-CA2C-4943-93C3-BFC3773617CC
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.copytiles, CopyTiles callback function [Display Devices], CopyTiles, PFND3DWDDM1_3DDI_COPYTILES, PFND3DWDDM1_3DDI_COPYTILES, d3d10umddi/CopyTiles
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8.1,WDDM 1.3
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3DWDDM1_3DDI_COPYTILES
+title: PFND3DWDDM1_3DDI_COPYTILES
+author: windows-driver-content
+description: Copies tiles from buffer to tiled resource or vice versa.
+old-location: display\copytiles.htm
+old-project: display
+ms.assetid: 8DA0FF6C-CA2C-4943-93C3-BFC3773617CC
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.copytiles, CopyTiles callback function [Display Devices], CopyTiles, PFND3DWDDM1_3DDI_COPYTILES, PFND3DWDDM1_3DDI_COPYTILES, d3d10umddi/CopyTiles
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8.1,WDDM 1.3
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	D3d10umddi.h
+apiname:
+-	CopyTiles
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

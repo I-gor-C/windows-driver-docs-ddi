@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfdmatransaction.WdfDmaTransactionGetRequest
-title : WdfDmaTransactionGetRequest function
-author : windows-driver-content
-description : The WdfDmaTransactionGetRequest method retrieves a handle to the framework request object that is associated with a specified DMA transaction.
-old-location : wdf\wdfdmatransactiongetrequest.htm
-old-project : wdf
-ms.assetid : 879bae2e-f608-4678-92ae-6100e59b6d52
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : kmdf.wdfdmatransactiongetrequest, wdf.wdfdmatransactiongetrequest, DFDmaObjectRef_2564dedd-7db9-4c5d-905d-0939dc8cf24b.xml, WdfDmaTransactionGetRequest, wdfdmatransaction/WdfDmaTransactionGetRequest, WdfDmaTransactionGetRequest method, PFN_WDFDMATRANSACTIONGETREQUEST
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfdmatransaction.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDF_DMA_SYSTEM_PROFILE_CONFIG, WDF_DMA_SYSTEM_PROFILE_CONFIG"
-req.product : Windows 10 or later.
+UID: NF:wdfdmatransaction.WdfDmaTransactionGetRequest
+title: WdfDmaTransactionGetRequest function
+author: windows-driver-content
+description: The WdfDmaTransactionGetRequest method retrieves a handle to the framework request object that is associated with a specified DMA transaction.
+old-location: wdf\wdfdmatransactiongetrequest.htm
+old-project: wdf
+ms.assetid: 879bae2e-f608-4678-92ae-6100e59b6d52
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: kmdf.wdfdmatransactiongetrequest, wdf.wdfdmatransactiongetrequest, DFDmaObjectRef_2564dedd-7db9-4c5d-905d-0939dc8cf24b.xml, WdfDmaTransactionGetRequest, wdfdmatransaction/WdfDmaTransactionGetRequest, WdfDmaTransactionGetRequest method, PFN_WDFDMATRANSACTIONGETREQUEST
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfdmatransaction.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfDmaTransactionGetRequest
+product: Windows
+targetos: Windows
+req.typenames: "*PWDF_DMA_SYSTEM_PROFILE_CONFIG, WDF_DMA_SYSTEM_PROFILE_CONFIG"
+req.product: Windows 10 or later.
 ---
 
 

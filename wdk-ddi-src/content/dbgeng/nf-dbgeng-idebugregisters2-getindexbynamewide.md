@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugRegisters2.GetIndexByNameWide
-title : IDebugRegisters2::GetIndexByNameWide method
-author : windows-driver-content
-description : The GetIndexByNameWide method returns the index of the named register.
-old-location : debugger\getindexbynamewide.htm
-old-project : debugger
-ms.assetid : eb6a50b4-275f-42c9-8121-17677971ebb2
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugRegisters2::GetIndexByNameWide, dbgeng/IDebugRegisters2::GetIndexByNameWide, IDebugRegisters2 interface [Windows Debugging], GetIndexByNameWide method, debugger.getindexbynamewide, IDebugRegisters2, GetIndexByNameWide method [Windows Debugging], IDebugRegisters2 interface, GetIndexByNameWide method [Windows Debugging], GetIndexByNameWide
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : DbgEng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugRegisters2.GetIndexByNameWide
+title: IDebugRegisters2::GetIndexByNameWide method
+author: windows-driver-content
+description: The GetIndexByNameWide method returns the index of the named register.
+old-location: debugger\getindexbynamewide.htm
+old-project: debugger
+ms.assetid: eb6a50b4-275f-42c9-8121-17677971ebb2
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugRegisters2::GetIndexByNameWide, dbgeng/IDebugRegisters2::GetIndexByNameWide, IDebugRegisters2 interface [Windows Debugging], GetIndexByNameWide method, debugger.getindexbynamewide, IDebugRegisters2, GetIndexByNameWide method [Windows Debugging], IDebugRegisters2 interface, GetIndexByNameWide method [Windows Debugging], GetIndexByNameWide
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: DbgEng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugRegisters2.GetIndexByNameWide
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

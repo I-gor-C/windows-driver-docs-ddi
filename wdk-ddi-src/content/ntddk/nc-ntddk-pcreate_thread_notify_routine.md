@@ -1,41 +1,46 @@
 ---
-UID : NC:ntddk.PCREATE_THREAD_NOTIFY_ROUTINE
-title : PCREATE_THREAD_NOTIFY_ROUTINE
-author : windows-driver-content
-description : A callback routine implemented by a driver to notify the caller when a thread is created or deleted.
-old-location : kernel\pcreate_thread_notify_routine.htm
-old-project : kernel
-ms.assetid : AAA62659-D12C-4EEC-8D74-6138B34128CE
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.pcreate_thread_notify_routine, SetCreateThreadNotifyRoutine callback function [Kernel-Mode Driver Architecture], SetCreateThreadNotifyRoutine, PCREATE_THREAD_NOTIFY_ROUTINE, PCREATE_THREAD_NOTIFY_ROUTINE, ntddk/SetCreateThreadNotifyRoutine
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<=APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PFILTER_INITIALIZATION_DATA, FILTER_INITIALIZATION_DATA"
+UID: NC:ntddk.PCREATE_THREAD_NOTIFY_ROUTINE
+title: PCREATE_THREAD_NOTIFY_ROUTINE
+author: windows-driver-content
+description: A callback routine implemented by a driver to notify the caller when a thread is created or deleted.
+old-location: kernel\pcreate_thread_notify_routine.htm
+old-project: kernel
+ms.assetid: AAA62659-D12C-4EEC-8D74-6138B34128CE
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.pcreate_thread_notify_routine, SetCreateThreadNotifyRoutine callback function [Kernel-Mode Driver Architecture], SetCreateThreadNotifyRoutine, PCREATE_THREAD_NOTIFY_ROUTINE, PCREATE_THREAD_NOTIFY_ROUTINE, ntddk/SetCreateThreadNotifyRoutine
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<=APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ntddk.h
+apiname:
+-	SetCreateThreadNotifyRoutine
+product: Windows
+targetos: Windows
+req.typenames: "*PFILTER_INITIALIZATION_DATA, FILTER_INITIALIZATION_DATA"
 ---
 
 

@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugControl3.SetCodeLevel
-title : IDebugControl3::SetCodeLevel method
-author : windows-driver-content
-description : The SetCodeLevel method sets the current code level and is mainly used when stepping through code.
-old-location : debugger\setcodelevel.htm
-old-project : debugger
-ms.assetid : b2f318d2-9ee2-4b4b-86ff-4561f1bbe084
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugControl3 interface [Windows Debugging], SetCodeLevel method, SetCodeLevel method [Windows Debugging], IDebugControl interface [Windows Debugging], SetCodeLevel method, SetCodeLevel method [Windows Debugging], IDebugControl3 interface, IDebugControl3, dbgeng/IDebugControl::SetCodeLevel, dbgeng/IDebugControl3::SetCodeLevel, IDebugControl2 interface [Windows Debugging], SetCodeLevel method, debugger.setcodelevel, dbgeng/IDebugControl2::SetCodeLevel, SetCodeLevel method [Windows Debugging], IDebugControl interface, SetCodeLevel, IDebugControl2::SetCodeLevel, IDebugControl3::SetCodeLevel, IDebugControl_40aa5eed-ef3f-4ec4-84eb-0cfec638bc4a.xml, SetCodeLevel method [Windows Debugging], IDebugControl2 interface, IDebugControl::SetCodeLevel
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl3.SetCodeLevel
+title: IDebugControl3::SetCodeLevel method
+author: windows-driver-content
+description: The SetCodeLevel method sets the current code level and is mainly used when stepping through code.
+old-location: debugger\setcodelevel.htm
+old-project: debugger
+ms.assetid: b2f318d2-9ee2-4b4b-86ff-4561f1bbe084
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugControl3 interface [Windows Debugging], SetCodeLevel method, SetCodeLevel method [Windows Debugging], IDebugControl interface [Windows Debugging], SetCodeLevel method, SetCodeLevel method [Windows Debugging], IDebugControl3 interface, IDebugControl3, dbgeng/IDebugControl::SetCodeLevel, dbgeng/IDebugControl3::SetCodeLevel, IDebugControl2 interface [Windows Debugging], SetCodeLevel method, debugger.setcodelevel, dbgeng/IDebugControl2::SetCodeLevel, SetCodeLevel method [Windows Debugging], IDebugControl interface, SetCodeLevel, IDebugControl2::SetCodeLevel, IDebugControl3::SetCodeLevel, IDebugControl_40aa5eed-ef3f-4ec4-84eb-0cfec638bc4a.xml, SetCodeLevel method [Windows Debugging], IDebugControl2 interface, IDebugControl::SetCodeLevel
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl.SetCodeLevel
+-	IDebugControl2.SetCodeLevel
+-	IDebugControl3.SetCodeLevel
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

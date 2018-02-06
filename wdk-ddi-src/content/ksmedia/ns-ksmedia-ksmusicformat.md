@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.KSMUSICFORMAT
-title : KSMUSICFORMAT
-author : windows-driver-content
-description : The KSMUSICFORMAT structure is used to send and receive information about MIDI data that is input from and output to WDM audio devices.
-old-location : audio\ksmusicformat.htm
-old-project : audio
-ms.assetid : 836e2eb5-b8cf-4c12-a855-f63709622c74
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : KSMUSICFORMAT structure [Audio Devices], aud-prop_04d08180-a7b6-4b88-aa9d-972e5dc237dd.xml, PKSMUSICFORMAT, ksmedia/KSMUSICFORMAT, ksmedia/PKSMUSICFORMAT, PKSMUSICFORMAT structure pointer [Audio Devices], KSMUSICFORMAT, *PKSMUSICFORMAT, audio.ksmusicformat
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KSMUSICFORMAT, *PKSMUSICFORMAT
+UID: NS:ksmedia.KSMUSICFORMAT
+title: KSMUSICFORMAT
+author: windows-driver-content
+description: The KSMUSICFORMAT structure is used to send and receive information about MIDI data that is input from and output to WDM audio devices.
+old-location: audio\ksmusicformat.htm
+old-project: audio
+ms.assetid: 836e2eb5-b8cf-4c12-a855-f63709622c74
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: KSMUSICFORMAT structure [Audio Devices], aud-prop_04d08180-a7b6-4b88-aa9d-972e5dc237dd.xml, PKSMUSICFORMAT, ksmedia/KSMUSICFORMAT, ksmedia/PKSMUSICFORMAT, PKSMUSICFORMAT structure pointer [Audio Devices], KSMUSICFORMAT, *PKSMUSICFORMAT, audio.ksmusicformat
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	KSMUSICFORMAT
+product: Windows
+targetos: Windows
+req.typenames: KSMUSICFORMAT, *PKSMUSICFORMAT
 ---
 
 # KSMUSICFORMAT structure

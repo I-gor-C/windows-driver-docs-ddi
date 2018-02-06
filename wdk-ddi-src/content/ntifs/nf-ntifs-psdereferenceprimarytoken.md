@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.PsDereferencePrimaryToken
-title : PsDereferencePrimaryToken function
-author : windows-driver-content
-description : The PsDereferencePrimaryToken routine decrements the reference count of a primary token.
-old-location : ifsk\psdereferenceprimarytoken.htm
-old-project : ifsk
-ms.assetid : cff4bd05-b70d-4c07-a6c0-7ee4287aeab0
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ntifs/PsDereferencePrimaryToken, PsDereferencePrimaryToken routine [Installable File System Drivers], psref_d3e4caeb-19a5-49d5-909a-5cb78a54f2e5.xml, PsDereferencePrimaryToken, ifsk.psdereferenceprimarytoken
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "< DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.PsDereferencePrimaryToken
+title: PsDereferencePrimaryToken function
+author: windows-driver-content
+description: The PsDereferencePrimaryToken routine decrements the reference count of a primary token.
+old-location: ifsk\psdereferenceprimarytoken.htm
+old-project: ifsk
+ms.assetid: cff4bd05-b70d-4c07-a6c0-7ee4287aeab0
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ntifs/PsDereferencePrimaryToken, PsDereferencePrimaryToken routine [Installable File System Drivers], psref_d3e4caeb-19a5-49d5-909a-5cb78a54f2e5.xml, PsDereferencePrimaryToken, ifsk.psdereferenceprimarytoken
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "< DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	PsDereferencePrimaryToken
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

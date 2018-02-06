@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltAllocateContext
-title : FltAllocateContext function
-author : windows-driver-content
-description : The FltAllocateContext routine allocates a context structure for a specified context type.
-old-location : ifsk\fltallocatecontext.htm
-old-project : ifsk
-ms.assetid : 34be4ca1-9484-41c5-9382-4785c36fca1a
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.fltallocatecontext, FltApiRef_a_to_d_dcc03d8c-1f61-4afb-8774-f98951ebfb1f.xml, FltAllocateContext routine [Installable File System Drivers], fltkernel/FltAllocateContext, FltAllocateContext
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltAllocateContext
+title: FltAllocateContext function
+author: windows-driver-content
+description: The FltAllocateContext routine allocates a context structure for a specified context type.
+old-location: ifsk\fltallocatecontext.htm
+old-project: ifsk
+ms.assetid: 34be4ca1-9484-41c5-9382-4785c36fca1a
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.fltallocatecontext, FltApiRef_a_to_d_dcc03d8c-1f61-4afb-8774-f98951ebfb1f.xml, FltAllocateContext routine [Installable File System Drivers], fltkernel/FltAllocateContext, FltAllocateContext
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltAllocateContext
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

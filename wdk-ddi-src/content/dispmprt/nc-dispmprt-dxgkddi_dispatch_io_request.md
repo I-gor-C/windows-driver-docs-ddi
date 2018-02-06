@@ -1,41 +1,46 @@
 ---
-UID : NC:dispmprt.DXGKDDI_DISPATCH_IO_REQUEST
-title : DXGKDDI_DISPATCH_IO_REQUEST
-author : windows-driver-content
-description : The DxgkDdiDispatchIoRequest function handles I/O control (IOCTL) requests.
-old-location : display\dxgkddidispatchiorequest.htm
-old-project : display
-ms.assetid : e1973aca-cbc2-4780-a3b5-7601e1cc6c90
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkddidispatchiorequest, DxgkDdiDispatchIoRequest callback function [Display Devices], DxgkDdiDispatchIoRequest, DXGKDDI_DISPATCH_IO_REQUEST, DXGKDDI_DISPATCH_IO_REQUEST, dispmprt/DxgkDdiDispatchIoRequest, DmFunctions_17ebc963-6659-4f1b-bd5a-f804c04be8b5.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : dispmprt.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
+UID: NC:dispmprt.DXGKDDI_DISPATCH_IO_REQUEST
+title: DXGKDDI_DISPATCH_IO_REQUEST
+author: windows-driver-content
+description: The DxgkDdiDispatchIoRequest function handles I/O control (IOCTL) requests.
+old-location: display\dxgkddidispatchiorequest.htm
+old-project: display
+ms.assetid: e1973aca-cbc2-4780-a3b5-7601e1cc6c90
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkddidispatchiorequest, DxgkDdiDispatchIoRequest callback function [Display Devices], DxgkDdiDispatchIoRequest, DXGKDDI_DISPATCH_IO_REQUEST, DXGKDDI_DISPATCH_IO_REQUEST, dispmprt/DxgkDdiDispatchIoRequest, DmFunctions_17ebc963-6659-4f1b-bd5a-f804c04be8b5.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: dispmprt.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	dispmprt.h
+apiname:
+-	DxgkDdiDispatchIoRequest
+product: Windows
+targetos: Windows
+req.typenames: SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NC:ks.PFNKSREMOVEEVENT
-title : PFNKSREMOVEEVENT
-author : windows-driver-content
-description : An AVStream minidriver's AVStrMiniRemoveEvent routine is called when a client requests to be removed from the notification queue for an event. This routine is optional.
-old-location : stream\avstrminiremoveevent.htm
-old-project : stream
-ms.assetid : dee4ce19-9dc8-4728-855b-eadb5bca0fc2
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.avstrminiremoveevent, AVStrMiniRemoveEvent, AVStrMiniRemoveEvent routine [Streaming Media Devices], AVStrMiniRemoveEvent, PFNKSREMOVEEVENT, PFNKSREMOVEEVENT, ks/AVStrMiniRemoveEvent, avstclbk_04bc810f-666a-4b24-9bc9-e203ebbbbf29.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KEYWORDSELECTOR
+UID: NC:ks.PFNKSREMOVEEVENT
+title: PFNKSREMOVEEVENT
+author: windows-driver-content
+description: An AVStream minidriver's AVStrMiniRemoveEvent routine is called when a client requests to be removed from the notification queue for an event. This routine is optional.
+old-location: stream\avstrminiremoveevent.htm
+old-project: stream
+ms.assetid: dee4ce19-9dc8-4728-855b-eadb5bca0fc2
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.avstrminiremoveevent, AVStrMiniRemoveEvent, AVStrMiniRemoveEvent routine [Streaming Media Devices], AVStrMiniRemoveEvent, PFNKSREMOVEEVENT, PFNKSREMOVEEVENT, ks/AVStrMiniRemoveEvent, avstclbk_04bc810f-666a-4b24-9bc9-e203ebbbbf29.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	ks.h
+apiname:
+-	AVStrMiniRemoveEvent
+product: Windows
+targetos: Windows
+req.typenames: KEYWORDSELECTOR
 ---
 
 

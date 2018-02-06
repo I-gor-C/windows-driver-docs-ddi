@@ -1,42 +1,47 @@
 ---
-UID : NF:upssvc.UPSWaitForStateChange
-title : UPSWaitForStateChange function
-author : windows-driver-content
-description : The UPSWaitForStateChange function waits until a specified UPS state changes, or until a time-out interval elapses.
-old-location : battery\upswaitforstatechange.htm
-old-project : battery
-ms.assetid : ac78dda4-6d14-441b-8e79-3245f7253875
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : upssvc/UPSWaitForStateChange, UPSWaitForStateChange, battery.upswaitforstatechange, UPS_fns_8921d5d9-c4d0-496f-b531-a697ac06da93.xml, UPSWaitForStateChange function [Battery Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : upssvc.h
-req.include-header : Upssvc.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : UMDETW_ALLOCATION_USAGE
-req.product : Windows 10 or later.
+UID: NF:upssvc.UPSWaitForStateChange
+title: UPSWaitForStateChange function
+author: windows-driver-content
+description: The UPSWaitForStateChange function waits until a specified UPS state changes, or until a time-out interval elapses.
+old-location: battery\upswaitforstatechange.htm
+old-project: battery
+ms.assetid: ac78dda4-6d14-441b-8e79-3245f7253875
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: upssvc/UPSWaitForStateChange, UPSWaitForStateChange, battery.upswaitforstatechange, UPS_fns_8921d5d9-c4d0-496f-b531-a697ac06da93.xml, UPSWaitForStateChange function [Battery Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: upssvc.h
+req.include-header: Upssvc.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	upssvc.h
+apiname:
+-	UPSWaitForStateChange
+product: Windows
+targetos: Windows
+req.typenames: UMDETW_ALLOCATION_USAGE
+req.product: Windows 10 or later.
 ---
 
 

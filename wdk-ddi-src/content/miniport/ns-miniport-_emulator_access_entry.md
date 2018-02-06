@@ -1,41 +1,46 @@
 ---
-UID : NS:miniport._EMULATOR_ACCESS_ENTRY
-title : "_EMULATOR_ACCESS_ENTRY"
-author : windows-driver-content
-description : The EMULATOR_ACCESS_ENTRY structure specifies an element in the EmulatorAccessEntries array set up in the VIDEO_PORT_CONFIG_INFO structure by drivers of VGA-compatible (SVGA) adapters on x86-based NT-based operating system platforms.
-old-location : display\emulator_access_entry.htm
-old-project : display
-ms.assetid : 966922b6-fa83-491e-bf03-848f798ebc69
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : PEMULATOR_ACCESS_ENTRY, EMULATOR_ACCESS_ENTRY structure [Display Devices], miniport/EMULATOR_ACCESS_ENTRY, miniport/PEMULATOR_ACCESS_ENTRY, _EMULATOR_ACCESS_ENTRY, EMULATOR_ACCESS_ENTRY, display.emulator_access_entry, *PEMULATOR_ACCESS_ENTRY, Video_Structs_8a00f589-ff5c-489b-b49b-abdcf9f42cf2.xml, PEMULATOR_ACCESS_ENTRY structure pointer [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : miniport.h
-req.include-header : Miniport.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PEMULATOR_ACCESS_ENTRY, EMULATOR_ACCESS_ENTRY"
+UID: NS:miniport._EMULATOR_ACCESS_ENTRY
+title: "_EMULATOR_ACCESS_ENTRY"
+author: windows-driver-content
+description: The EMULATOR_ACCESS_ENTRY structure specifies an element in the EmulatorAccessEntries array set up in the VIDEO_PORT_CONFIG_INFO structure by drivers of VGA-compatible (SVGA) adapters on x86-based NT-based operating system platforms.
+old-location: display\emulator_access_entry.htm
+old-project: display
+ms.assetid: 966922b6-fa83-491e-bf03-848f798ebc69
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: PEMULATOR_ACCESS_ENTRY, EMULATOR_ACCESS_ENTRY structure [Display Devices], miniport/EMULATOR_ACCESS_ENTRY, miniport/PEMULATOR_ACCESS_ENTRY, _EMULATOR_ACCESS_ENTRY, EMULATOR_ACCESS_ENTRY, display.emulator_access_entry, *PEMULATOR_ACCESS_ENTRY, Video_Structs_8a00f589-ff5c-489b-b49b-abdcf9f42cf2.xml, PEMULATOR_ACCESS_ENTRY structure pointer [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: miniport.h
+req.include-header: Miniport.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	miniport.h
+apiname:
+-	EMULATOR_ACCESS_ENTRY
+product: Windows
+targetos: Windows
+req.typenames: "*PEMULATOR_ACCESS_ENTRY, EMULATOR_ACCESS_ENTRY"
 ---
 
 # _EMULATOR_ACCESS_ENTRY structure

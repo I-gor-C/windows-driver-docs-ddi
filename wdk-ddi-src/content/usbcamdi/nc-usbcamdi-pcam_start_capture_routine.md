@@ -1,42 +1,47 @@
 ---
-UID : NC:usbcamdi.PCAM_START_CAPTURE_ROUTINE
-title : PCAM_START_CAPTURE_ROUTINE
-author : windows-driver-content
-description : A camera minidriver's CamStartCapture callback function selects the appropriate alternate setting within the USB video streaming interface and prepares the device to stream.
-old-location : stream\camstartcapture.htm
-old-project : stream
-ms.assetid : e929f8c1-fe36-4374-976f-b0bfb3e0b4a2
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.camstartcapture, CamStartCapture, CamStartCapture callback function [Streaming Media Devices], CamStartCapture, PCAM_START_CAPTURE_ROUTINE, PCAM_START_CAPTURE_ROUTINE, usbcamdi/CamStartCapture, usbcmdpr_c4887b29-94a3-498f-ad6a-4f6a58bb8345.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : usbcamdi.h
-req.include-header : Usbcamdi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUSB_BUS_INTERFACE_USBDI_V3, USB_BUS_INTERFACE_USBDI_V3"
-req.product : Windows 10 or later.
+UID: NC:usbcamdi.PCAM_START_CAPTURE_ROUTINE
+title: PCAM_START_CAPTURE_ROUTINE
+author: windows-driver-content
+description: A camera minidriver's CamStartCapture callback function selects the appropriate alternate setting within the USB video streaming interface and prepares the device to stream.
+old-location: stream\camstartcapture.htm
+old-project: stream
+ms.assetid: e929f8c1-fe36-4374-976f-b0bfb3e0b4a2
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.camstartcapture, CamStartCapture, CamStartCapture callback function [Streaming Media Devices], CamStartCapture, PCAM_START_CAPTURE_ROUTINE, PCAM_START_CAPTURE_ROUTINE, usbcamdi/CamStartCapture, usbcmdpr_c4887b29-94a3-498f-ad6a-4f6a58bb8345.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: usbcamdi.h
+req.include-header: Usbcamdi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	usbcamdi.h
+apiname:
+-	CamStartCapture
+product: Windows
+targetos: Windows
+req.typenames: "*PUSB_BUS_INTERFACE_USBDI_V3, USB_BUS_INTERFACE_USBDI_V3"
+req.product: Windows 10 or later.
 ---
 
 

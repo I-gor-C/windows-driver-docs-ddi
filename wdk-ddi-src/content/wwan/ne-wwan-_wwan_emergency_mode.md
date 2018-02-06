@@ -1,42 +1,47 @@
 ---
-UID : NE:wwan._WWAN_EMERGENCY_MODE
-title : "_WWAN_EMERGENCY_MODE"
-author : windows-driver-content
-description : The WWAN_EMERGENCY_MODE enumeration lists the different types of emergency modes that are supported by the MB device.
-old-location : netvista\wwan_emergency_mode.htm
-old-project : netvista
-ms.assetid : d901e763-5e1c-443d-ba9c-9d1e4413bd47
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : WwanEmergencyModeOff, WwanEmergencyModeOn, wwan/WwanEmergencyModeOff, PWWAN_EMERGENCY_MODE, WwanRef_8b2029ff-7d10-4f36-a4c0-6b41f464b726.xml, *PWWAN_EMERGENCY_MODE, wwan/WwanEmergencyModeOn, WwanEmergencyModeMax, WWAN_EMERGENCY_MODE, wwan/WWAN_EMERGENCY_MODE, netvista.wwan_emergency_mode, _WWAN_EMERGENCY_MODE, wwan/PWWAN_EMERGENCY_MODE, wwan/WwanEmergencyModeMax, WWAN_EMERGENCY_MODE enumeration [Network Drivers Starting with Windows Vista], PWWAN_EMERGENCY_MODE enumeration pointer [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : wwan.h
-req.include-header : Wwan.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWWAN_EMERGENCY_MODE, WWAN_EMERGENCY_MODE"
-req.product : Windows 10 or later.
+UID: NE:wwan._WWAN_EMERGENCY_MODE
+title: "_WWAN_EMERGENCY_MODE"
+author: windows-driver-content
+description: The WWAN_EMERGENCY_MODE enumeration lists the different types of emergency modes that are supported by the MB device.
+old-location: netvista\wwan_emergency_mode.htm
+old-project: netvista
+ms.assetid: d901e763-5e1c-443d-ba9c-9d1e4413bd47
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: WwanEmergencyModeOff, WwanEmergencyModeOn, wwan/WwanEmergencyModeOff, PWWAN_EMERGENCY_MODE, WwanRef_8b2029ff-7d10-4f36-a4c0-6b41f464b726.xml, *PWWAN_EMERGENCY_MODE, wwan/WwanEmergencyModeOn, WwanEmergencyModeMax, WWAN_EMERGENCY_MODE, wwan/WWAN_EMERGENCY_MODE, netvista.wwan_emergency_mode, _WWAN_EMERGENCY_MODE, wwan/PWWAN_EMERGENCY_MODE, wwan/WwanEmergencyModeMax, WWAN_EMERGENCY_MODE enumeration [Network Drivers Starting with Windows Vista], PWWAN_EMERGENCY_MODE enumeration pointer [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: wwan.h
+req.include-header: Wwan.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wwan.h
+apiname:
+-	WWAN_EMERGENCY_MODE
+product: Windows
+targetos: Windows
+req.typenames: "*PWWAN_EMERGENCY_MODE, WWAN_EMERGENCY_MODE"
+req.product: Windows 10 or later.
 ---
 
 # _WWAN_EMERGENCY_MODE Enumeration
@@ -55,21 +60,21 @@ typedef enum _WWAN_EMERGENCY_MODE {
 ## Constants
 
 <table>
-
-<tr>
-<td>WwanEmergencyModeMax</td>
-<td>The total number of supported emergency modes.</td>
-</tr>
-
-<tr>
-<td>WwanEmergencyModeOff</td>
-<td>The device is in normal mode.</td>
-</tr>
-
-<tr>
-<td>WwanEmergencyModeOn</td>
-<td>The device is in emergency mode. An example of an emergency mode function is a call to 911.</td>
-</tr>
+            
+                <tr>
+                    <td>WwanEmergencyModeMax</td>
+                    <td>The total number of supported emergency modes.</td>
+                </tr>
+            
+                <tr>
+                    <td>WwanEmergencyModeOff</td>
+                    <td>The device is in normal mode.</td>
+                </tr>
+            
+                <tr>
+                    <td>WwanEmergencyModeOn</td>
+                    <td>The device is in emergency mode. An example of an emergency mode function is a call to 911.</td>
+                </tr>
 </table>
 
 
@@ -79,9 +84,9 @@ typedef enum _WWAN_EMERGENCY_MODE {
 | **Windows version** | Available in Windows 7 and later versions of Windows. Available in Windows 7 and later versions of Windows. |
 | **Header** | wwan.h (include Wwan.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\wwan\ns-wwan-_wwan_ready_info.md">WWAN_READY_INFO</a>
+        <a href="..\wwan\ns-wwan-_wwan_ready_info.md">WWAN_READY_INFO</a>
 
  
 

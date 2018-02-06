@@ -1,42 +1,50 @@
 ---
-UID : NF:wdfiotarget.WdfIoTargetPurge
-title : WdfIoTargetPurge function
-author : windows-driver-content
-description : The WdfIoTargetPurge method cancels all I/O requests queued to a local, remote, or specialized I/O target and prevents any new I/O requests from being queued.
-old-location : wdf\wdfiotargetpurge.htm
-old-project : wdf
-ms.assetid : C79492C5-3872-4ED9-9AD7-ABE5C5732D41
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WdfIoTargetPurge method, kmdf.wdfiotargetpurge, WdfIoTargetPurge, wdf.wdfiotargetpurge, wdfiotarget/WdfIoTargetPurge
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfiotarget.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.11
-req.umdf-ver : 2.0
-req.ddi-compliance : DriverCreate
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll : 
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDF_IO_TARGET_STATE, WDF_IO_TARGET_STATE"
-req.product : Windows 10 or later.
+UID: NF:wdfiotarget.WdfIoTargetPurge
+title: WdfIoTargetPurge function
+author: windows-driver-content
+description: The WdfIoTargetPurge method cancels all I/O requests queued to a local, remote, or specialized I/O target and prevents any new I/O requests from being queued.
+old-location: wdf\wdfiotargetpurge.htm
+old-project: wdf
+ms.assetid: C79492C5-3872-4ED9-9AD7-ABE5C5732D41
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WdfIoTargetPurge method, kmdf.wdfiotargetpurge, WdfIoTargetPurge, wdf.wdfiotargetpurge, wdfiotarget/WdfIoTargetPurge
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfiotarget.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.11
+req.umdf-ver: 2.0
+req.ddi-compliance: DriverCreate
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll: 
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+-	WUDFx02000.dll
+-	WUDFx02000.dll.dll
+apiname:
+-	WdfIoTargetPurge
+product: Windows
+targetos: Windows
+req.typenames: "*PWDF_IO_TARGET_STATE, WDF_IO_TARGET_STATE"
+req.product: Windows 10 or later.
 ---
 
 

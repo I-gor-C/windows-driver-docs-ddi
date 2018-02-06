@@ -1,41 +1,46 @@
 ---
-UID : NS:ntifs._FILE_STREAM_INFORMATION
-title : "_FILE_STREAM_INFORMATION"
-author : windows-driver-content
-description : The FILE_STREAM_INFORMATION structure is used to enumerate the streams for a file.
-old-location : ifsk\file_stream_information.htm
-old-project : ifsk
-ms.assetid : 03472920-cb22-42e1-b0e5-488c0319fc03
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : "*PFILE_STREAM_INFORMATION, PFILE_STREAM_INFORMATION structure pointer [Installable File System Drivers], PFILE_STREAM_INFORMATION, FILE_STREAM_INFORMATION, FILE_STREAM_INFORMATION structure [Installable File System Drivers], fileinformationstructures_da535f6c-5769-4564-a2e7-e5a7ff952119.xml, _FILE_STREAM_INFORMATION, ntifs/PFILE_STREAM_INFORMATION, ntifs/FILE_STREAM_INFORMATION, ifsk.file_stream_information"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntifs.h
-req.include-header : Ntifs.h, Fltkernel.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PFILE_STREAM_INFORMATION, FILE_STREAM_INFORMATION"
+UID: NS:ntifs._FILE_STREAM_INFORMATION
+title: "_FILE_STREAM_INFORMATION"
+author: windows-driver-content
+description: The FILE_STREAM_INFORMATION structure is used to enumerate the streams for a file.
+old-location: ifsk\file_stream_information.htm
+old-project: ifsk
+ms.assetid: 03472920-cb22-42e1-b0e5-488c0319fc03
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: "*PFILE_STREAM_INFORMATION, PFILE_STREAM_INFORMATION structure pointer [Installable File System Drivers], PFILE_STREAM_INFORMATION, FILE_STREAM_INFORMATION, FILE_STREAM_INFORMATION structure [Installable File System Drivers], fileinformationstructures_da535f6c-5769-4564-a2e7-e5a7ff952119.xml, _FILE_STREAM_INFORMATION, ntifs/PFILE_STREAM_INFORMATION, ntifs/FILE_STREAM_INFORMATION, ifsk.file_stream_information"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntifs.h
+req.include-header: Ntifs.h, Fltkernel.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntifs.h
+apiname:
+-	FILE_STREAM_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: "*PFILE_STREAM_INFORMATION, FILE_STREAM_INFORMATION"
 ---
 
 # _FILE_STREAM_INFORMATION structure

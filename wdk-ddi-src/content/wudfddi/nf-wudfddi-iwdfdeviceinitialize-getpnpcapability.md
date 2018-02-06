@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFDeviceInitialize.GetPnpCapability
-title : IWDFDeviceInitialize::GetPnpCapability method
-author : windows-driver-content
-description : The GetPnpCapability method determines the state of the specified Plug and Play (PnP) capability.
-old-location : wdf\iwdfdeviceinitialize_getpnpcapability.htm
-old-project : wdf
-ms.assetid : 64f15528-e934-4bdd-a9f7-6790eef7c7c5
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : IWDFDeviceInitialize, GetPnpCapability, IWDFDeviceInitialize interface, GetPnpCapability method, UMDFDeviceObjectRef_1b66d13c-336f-4542-9f44-740679953603.xml, GetPnpCapability method, IWDFDeviceInitialize interface, IWDFDeviceInitialize::GetPnpCapability, GetPnpCapability method, umdf.iwdfdeviceinitialize_getpnpcapability, wdf.iwdfdeviceinitialize_getpnpcapability, wudfddi/IWDFDeviceInitialize::GetPnpCapability
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.5
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFDeviceInitialize.GetPnpCapability
+title: IWDFDeviceInitialize::GetPnpCapability method
+author: windows-driver-content
+description: The GetPnpCapability method determines the state of the specified Plug and Play (PnP) capability.
+old-location: wdf\iwdfdeviceinitialize_getpnpcapability.htm
+old-project: wdf
+ms.assetid: 64f15528-e934-4bdd-a9f7-6790eef7c7c5
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: IWDFDeviceInitialize, GetPnpCapability, IWDFDeviceInitialize interface, GetPnpCapability method, UMDFDeviceObjectRef_1b66d13c-336f-4542-9f44-740679953603.xml, GetPnpCapability method, IWDFDeviceInitialize interface, IWDFDeviceInitialize::GetPnpCapability, GetPnpCapability method, umdf.iwdfdeviceinitialize_getpnpcapability, wdf.iwdfdeviceinitialize_getpnpcapability, wudfddi/IWDFDeviceInitialize::GetPnpCapability
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.5
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFDeviceInitialize.GetPnpCapability
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

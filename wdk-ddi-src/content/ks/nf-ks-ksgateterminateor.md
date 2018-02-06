@@ -1,41 +1,46 @@
 ---
-UID : NF:ks.KsGateTerminateOr
-title : KsGateTerminateOr function
-author : windows-driver-content
-description : The KsGateTerminateOr function deletes an existing OR gate and removes an input from any attached AND gate.
-old-location : stream\ksgateterminateor.htm
-old-project : stream
-ms.assetid : 6d73ce17-1fbc-4d12-87f0-ac10889b85be
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : avfunc_b2bf57c5-4f08-456a-bbac-217531cf5bc3.xml, KsGateTerminateOr function [Streaming Media Devices], KsGateTerminateOr, stream.ksgateterminateor, ks/KsGateTerminateOr
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsGateTerminateOr
+title: KsGateTerminateOr function
+author: windows-driver-content
+description: The KsGateTerminateOr function deletes an existing OR gate and removes an input from any attached AND gate.
+old-location: stream\ksgateterminateor.htm
+old-project: stream
+ms.assetid: 6d73ce17-1fbc-4d12-87f0-ac10889b85be
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: avfunc_b2bf57c5-4f08-456a-bbac-217531cf5bc3.xml, KsGateTerminateOr function [Streaming Media Devices], KsGateTerminateOr, stream.ksgateterminateor, ks/KsGateTerminateOr
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	KsGateTerminateOr
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

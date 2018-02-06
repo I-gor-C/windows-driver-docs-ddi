@@ -1,42 +1,47 @@
 ---
-UID : NC:usbcamdi.PFNUSBCAMD_SetIsoPipeState
-title : PFNUSBCAMD_SetIsoPipeState
-author : windows-driver-content
-description : The USBCAMD_SetIsoPipeState service permits the camera minidriver to control the streaming state on the isochronous pipe.
-old-location : stream\usbcamd_setisopipestate.htm
-old-project : stream
-ms.assetid : 6170c69d-f73d-4ba4-b7de-06257c8dd83c
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.usbcamd_setisopipestate, USBCAMD_SetIsoPipeState routine [Streaming Media Devices], USBCAMD_SetIsoPipeState, PFNUSBCAMD_SetIsoPipeState, PFNUSBCAMD_SetIsoPipeState, usbcamdi/USBCAMD_SetIsoPipeState, usbcmdpr_6643c631-6892-4955-8a1f-ae152fd155e4.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : usbcamdi.h
-req.include-header : Usbcamdi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUSB_BUS_INTERFACE_USBDI_V3, USB_BUS_INTERFACE_USBDI_V3"
-req.product : Windows 10 or later.
+UID: NC:usbcamdi.PFNUSBCAMD_SetIsoPipeState
+title: PFNUSBCAMD_SetIsoPipeState
+author: windows-driver-content
+description: The USBCAMD_SetIsoPipeState service permits the camera minidriver to control the streaming state on the isochronous pipe.
+old-location: stream\usbcamd_setisopipestate.htm
+old-project: stream
+ms.assetid: 6170c69d-f73d-4ba4-b7de-06257c8dd83c
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.usbcamd_setisopipestate, USBCAMD_SetIsoPipeState routine [Streaming Media Devices], USBCAMD_SetIsoPipeState, PFNUSBCAMD_SetIsoPipeState, PFNUSBCAMD_SetIsoPipeState, usbcamdi/USBCAMD_SetIsoPipeState, usbcmdpr_6643c631-6892-4955-8a1f-ae152fd155e4.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: usbcamdi.h
+req.include-header: Usbcamdi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	usbcamdi.h
+apiname:
+-	USBCAMD_SetIsoPipeState
+product: Windows
+targetos: Windows
+req.typenames: "*PUSB_BUS_INTERFACE_USBDI_V3, USB_BUS_INTERFACE_USBDI_V3"
+req.product: Windows 10 or later.
 ---
 
 

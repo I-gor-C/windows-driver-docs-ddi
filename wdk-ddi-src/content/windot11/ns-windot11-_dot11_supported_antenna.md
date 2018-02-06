@@ -1,42 +1,47 @@
 ---
-UID : NS:windot11._DOT11_SUPPORTED_ANTENNA
-title : "_DOT11_SUPPORTED_ANTENNA"
-author : windows-driver-content
-description : Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
-old-location : netvista\dot11_supported_antenna.htm
-old-project : netvista
-ms.assetid : 55a9c9e0-24e2-436f-9132-77ae1bab7c2c
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : "*PDOT11_SUPPORTED_ANTENNA, PDOT11_SUPPORTED_ANTENNA structure pointer [Network Drivers Starting with Windows Vista], Native_802.11_data_types_b48dfe45-efbc-4f88-a754-3e1fba8e45f6.xml, windot11/DOT11_SUPPORTED_ANTENNA, netvista.dot11_supported_antenna, PDOT11_SUPPORTED_ANTENNA, _DOT11_SUPPORTED_ANTENNA, DOT11_SUPPORTED_ANTENNA, windot11/PDOT11_SUPPORTED_ANTENNA, DOT11_SUPPORTED_ANTENNA structure [Network Drivers Starting with Windows Vista]"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : windot11.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating   systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDOT11_SUPPORTED_ANTENNA, DOT11_SUPPORTED_ANTENNA"
-req.product : Windows 10 or later.
+UID: NS:windot11._DOT11_SUPPORTED_ANTENNA
+title: "_DOT11_SUPPORTED_ANTENNA"
+author: windows-driver-content
+description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+old-location: netvista\dot11_supported_antenna.htm
+old-project: netvista
+ms.assetid: 55a9c9e0-24e2-436f-9132-77ae1bab7c2c
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: "*PDOT11_SUPPORTED_ANTENNA, PDOT11_SUPPORTED_ANTENNA structure pointer [Network Drivers Starting with Windows Vista], Native_802.11_data_types_b48dfe45-efbc-4f88-a754-3e1fba8e45f6.xml, windot11/DOT11_SUPPORTED_ANTENNA, netvista.dot11_supported_antenna, PDOT11_SUPPORTED_ANTENNA, _DOT11_SUPPORTED_ANTENNA, DOT11_SUPPORTED_ANTENNA, windot11/PDOT11_SUPPORTED_ANTENNA, DOT11_SUPPORTED_ANTENNA structure [Network Drivers Starting with Windows Vista]"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: windot11.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	windot11.h
+apiname:
+-	DOT11_SUPPORTED_ANTENNA
+product: Windows
+targetos: Windows
+req.typenames: "*PDOT11_SUPPORTED_ANTENNA, DOT11_SUPPORTED_ANTENNA"
+req.product: Windows 10 or later.
 ---
 
 # _DOT11_SUPPORTED_ANTENNA structure

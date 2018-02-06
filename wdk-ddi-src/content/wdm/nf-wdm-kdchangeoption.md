@@ -1,38 +1,38 @@
 ---
-UID : NF:wdm.KdChangeOption
-title : KdChangeOption function
-author : windows-driver-content
-description : The KdChangeOption routine accesses and changes state in the kernel that is related to kernel debugging.
-old-location : devtest\kdchangeoption.htm
-old-project : devtest
-ms.assetid : 6f93b62b-6dc2-417b-9e1c-44be628c489c
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : KdChangeOption
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Microsoft Windows Server 2003 with Service Pack 1 (SP1) and later versions of Windows and Windows Server.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.alt-api : KdChangeOption
-req.alt-loc : NtosKrnl.exe
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : Any level
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.KdChangeOption
+title: KdChangeOption function
+author: windows-driver-content
+description: The KdChangeOption routine accesses and changes state in the kernel that is related to kernel debugging.
+old-location: devtest\kdchangeoption.htm
+old-project: devtest
+ms.assetid: 6f93b62b-6dc2-417b-9e1c-44be628c489c
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: KdChangeOption
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Microsoft Windows Server 2003 with Service Pack 1 (SP1) and later versions of Windows and Windows Server.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.alt-api: KdChangeOption
+req.alt-loc: NtosKrnl.exe
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: Any level
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

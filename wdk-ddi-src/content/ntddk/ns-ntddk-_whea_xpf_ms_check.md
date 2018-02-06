@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddk._WHEA_XPF_MS_CHECK
-title : "_WHEA_XPF_MS_CHECK"
-author : windows-driver-content
-description : The WHEA_XPF_MS_CHECK union describes microarchitecture-specific error information for an x86 or x64 processor.
-old-location : whea\whea_xpf_ms_check.htm
-old-project : whea
-ms.assetid : aa446b31-ac53-4623-bacd-72ab72e94618
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : WHEA_XPF_MS_CHECK, whearef_ebbe0f28-499b-41ad-9e2b-c533c391c154.xml, ntddk/PWHEA_XPF_MS_CHECK, _WHEA_XPF_MS_CHECK, WHEA_XPF_MS_CHECK union [WHEA Drivers and Applications], *PWHEA_XPF_MS_CHECK, PWHEA_XPF_MS_CHECK union pointer [WHEA Drivers and Applications], PWHEA_XPF_MS_CHECK, ntddk/WHEA_XPF_MS_CHECK, whea.whea_xpf_ms_check
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_XPF_MS_CHECK, *PWHEA_XPF_MS_CHECK
+UID: NS:ntddk._WHEA_XPF_MS_CHECK
+title: "_WHEA_XPF_MS_CHECK"
+author: windows-driver-content
+description: The WHEA_XPF_MS_CHECK union describes microarchitecture-specific error information for an x86 or x64 processor.
+old-location: whea\whea_xpf_ms_check.htm
+old-project: whea
+ms.assetid: aa446b31-ac53-4623-bacd-72ab72e94618
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: WHEA_XPF_MS_CHECK, whearef_ebbe0f28-499b-41ad-9e2b-c533c391c154.xml, ntddk/PWHEA_XPF_MS_CHECK, _WHEA_XPF_MS_CHECK, WHEA_XPF_MS_CHECK union [WHEA Drivers and Applications], *PWHEA_XPF_MS_CHECK, PWHEA_XPF_MS_CHECK union pointer [WHEA Drivers and Applications], PWHEA_XPF_MS_CHECK, ntddk/WHEA_XPF_MS_CHECK, whea.whea_xpf_ms_check
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddk.h
+apiname:
+-	WHEA_XPF_MS_CHECK
+product: Windows
+targetos: Windows
+req.typenames: WHEA_XPF_MS_CHECK, *PWHEA_XPF_MS_CHECK
 ---
 
 # _WHEA_XPF_MS_CHECK structure

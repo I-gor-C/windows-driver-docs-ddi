@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltGetContexts
-title : FltGetContexts function
-author : windows-driver-content
-description : The FltGetContexts routine retrieves a minifilter driver's contexts for the objects related to the current operation.
-old-location : ifsk\fltgetcontexts.htm
-old-project : ifsk
-ms.assetid : 886a0898-814b-4a24-bc83-c6e82e71dae2
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltGetContexts, FltGetContexts routine [Installable File System Drivers], ifsk.fltgetcontexts, FltApiRef_e_to_o_80c262c0-2587-4ca5-b397-674c0ba5f316.xml, fltkernel/FltGetContexts
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltGetContexts
+title: FltGetContexts function
+author: windows-driver-content
+description: The FltGetContexts routine retrieves a minifilter driver's contexts for the objects related to the current operation.
+old-location: ifsk\fltgetcontexts.htm
+old-project: ifsk
+ms.assetid: 886a0898-814b-4a24-bc83-c6e82e71dae2
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltGetContexts, FltGetContexts routine [Installable File System Drivers], ifsk.fltgetcontexts, FltApiRef_e_to_o_80c262c0-2587-4ca5-b397-674c0ba5f316.xml, fltkernel/FltGetContexts
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltGetContexts
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

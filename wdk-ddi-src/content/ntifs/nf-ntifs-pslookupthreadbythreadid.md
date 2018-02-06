@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.PsLookupThreadByThreadId
-title : PsLookupThreadByThreadId function
-author : windows-driver-content
-description : The PsLookupThreadByThreadId routine accepts the thread ID of a thread and returns a referenced pointer to the ETHREAD structure of the thread.
-old-location : ifsk\pslookupthreadbythreadid.htm
-old-project : ifsk
-ms.assetid : 4b61f480-6432-48db-9211-68a7d823d698
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : PsLookupThreadByThreadId routine [Installable File System Drivers], ifsk.pslookupthreadbythreadid, psref_36f0c499-8370-4257-849c-dc8bad2720cc.xml, ntifs/PsLookupThreadByThreadId, PsLookupThreadByThreadId
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.PsLookupThreadByThreadId
+title: PsLookupThreadByThreadId function
+author: windows-driver-content
+description: The PsLookupThreadByThreadId routine accepts the thread ID of a thread and returns a referenced pointer to the ETHREAD structure of the thread.
+old-location: ifsk\pslookupthreadbythreadid.htm
+old-project: ifsk
+ms.assetid: 4b61f480-6432-48db-9211-68a7d823d698
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: PsLookupThreadByThreadId routine [Installable File System Drivers], ifsk.pslookupthreadbythreadid, psref_36f0c499-8370-4257-849c-dc8bad2720cc.xml, ntifs/PsLookupThreadByThreadId, PsLookupThreadByThreadId
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	PsLookupThreadByThreadId
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

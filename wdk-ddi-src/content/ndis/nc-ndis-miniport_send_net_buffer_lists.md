@@ -1,41 +1,46 @@
 ---
-UID : NC:ndis.MINIPORT_SEND_NET_BUFFER_LISTS
-title : MINIPORT_SEND_NET_BUFFER_LISTS
-author : windows-driver-content
-description : NDIS calls the MiniportSendNetBufferLists function to transmit network data that is contained in a linked list of NET_BUFFER_LIST structures.
-old-location : netvista\miniportsendnetbufferlists.htm
-old-project : netvista
-ms.assetid : 0bd5966d-66a6-4548-8c84-7cedced2cf40
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.miniportsendnetbufferlists, MiniportSendNetBufferLists callback function [Network Drivers Starting with Windows Vista], MiniportSendNetBufferLists, MINIPORT_SEND_NET_BUFFER_LISTS, MINIPORT_SEND_NET_BUFFER_LISTS, ndis/MiniportSendNetBufferLists, ndis_sendrcv_ref_2af2df46-99cf-4bae-9dea-12358fb0b489.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : NdisTimedDataHang, NdisTimedDataSend
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
+UID: NC:ndis.MINIPORT_SEND_NET_BUFFER_LISTS
+title: MINIPORT_SEND_NET_BUFFER_LISTS
+author: windows-driver-content
+description: NDIS calls the MiniportSendNetBufferLists function to transmit network data that is contained in a linked list of NET_BUFFER_LIST structures.
+old-location: netvista\miniportsendnetbufferlists.htm
+old-project: netvista
+ms.assetid: 0bd5966d-66a6-4548-8c84-7cedced2cf40
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.miniportsendnetbufferlists, MiniportSendNetBufferLists callback function [Network Drivers Starting with Windows Vista], MiniportSendNetBufferLists, MINIPORT_SEND_NET_BUFFER_LISTS, MINIPORT_SEND_NET_BUFFER_LISTS, ndis/MiniportSendNetBufferLists, ndis_sendrcv_ref_2af2df46-99cf-4bae-9dea-12358fb0b489.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: NdisTimedDataHang, NdisTimedDataSend
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ndis.h
+apiname:
+-	MiniportSendNetBufferLists
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 

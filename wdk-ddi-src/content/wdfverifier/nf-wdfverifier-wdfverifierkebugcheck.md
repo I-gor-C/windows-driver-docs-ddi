@@ -1,42 +1,50 @@
 ---
-UID : NF:wdfverifier.WdfVerifierKeBugCheck
-title : WdfVerifierKeBugCheck function
-author : windows-driver-content
-description : The WdfVerifierKeBugCheck function creates a bug check.
-old-location : wdf\wdfverifierkebugcheck.htm
-old-project : wdf
-ms.assetid : 3fa8ea3d-cca0-402d-a3a8-1281ad4231d4
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdfverifier/WdfVerifierKeBugCheck, kmdf.wdfverifierkebugcheck, WdfVerifierKeBugCheck function, DFDebugRef_05774709-97ed-4fcc-b0b2-9fdac9a34094.xml, WdfVerifierKeBugCheck, wdf.wdfverifierkebugcheck
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfverifier.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : DriverCreate
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_USB_REQUEST_COMPLETION_PARAMS, *PWDF_USB_REQUEST_COMPLETION_PARAMS
-req.product : Windows 10 or later.
+UID: NF:wdfverifier.WdfVerifierKeBugCheck
+title: WdfVerifierKeBugCheck function
+author: windows-driver-content
+description: The WdfVerifierKeBugCheck function creates a bug check.
+old-location: wdf\wdfverifierkebugcheck.htm
+old-project: wdf
+ms.assetid: 3fa8ea3d-cca0-402d-a3a8-1281ad4231d4
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdfverifier/WdfVerifierKeBugCheck, kmdf.wdfverifierkebugcheck, WdfVerifierKeBugCheck function, DFDebugRef_05774709-97ed-4fcc-b0b2-9fdac9a34094.xml, WdfVerifierKeBugCheck, wdf.wdfverifierkebugcheck
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfverifier.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: DriverCreate
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+-	WUDFx02000.dll
+-	WUDFx02000.dll.dll
+apiname:
+-	WdfVerifierKeBugCheck
+product: Windows
+targetos: Windows
+req.typenames: WDF_USB_REQUEST_COMPLETION_PARAMS, *PWDF_USB_REQUEST_COMPLETION_PARAMS
+req.product: Windows 10 or later.
 ---
 
 

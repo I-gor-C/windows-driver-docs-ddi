@@ -1,42 +1,48 @@
 ---
-UID : NF:wdm.IoGetAffinityInterrupt
-title : IoGetAffinityInterrupt function
-author : windows-driver-content
-description : For more information, see the WdmlibIoGetAffinityInterrupt function.#define IoGetAffinityInterrupt WdmlibIoGetAffinityInterrupt
-old-location : kernel\iogetaffinityinterrupt.htm
-old-project : kernel
-ms.assetid : aec1ace6-9945-4e7a-b0f6-81591670ecfe
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/IoGetAffinityInterrupt, IoGetAffinityInterrupt routine [Kernel-Mode Driver Architecture], WdmlibIoGetAffinityInterrupt, kernel.iogetaffinityinterrupt, wdm/WdmlibIoGetAffinityInterrupt, IoGetAffinityInterrupt, k104_39247b69-50e1-4162-b26e-81b5358738de.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 7 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.IoGetAffinityInterrupt
+title: IoGetAffinityInterrupt function
+author: windows-driver-content
+description: For more information, see the WdmlibIoGetAffinityInterrupt function.#define IoGetAffinityInterrupt WdmlibIoGetAffinityInterrupt
+old-location: kernel\iogetaffinityinterrupt.htm
+old-project: kernel
+ms.assetid: aec1ace6-9945-4e7a-b0f6-81591670ecfe
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/IoGetAffinityInterrupt, IoGetAffinityInterrupt routine [Kernel-Mode Driver Architecture], WdmlibIoGetAffinityInterrupt, kernel.iogetaffinityinterrupt, wdm/WdmlibIoGetAffinityInterrupt, IoGetAffinityInterrupt, k104_39247b69-50e1-4162-b26e-81b5358738de.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 7 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoGetAffinityInterrupt
+-	WdmlibIoGetAffinityInterrupt
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

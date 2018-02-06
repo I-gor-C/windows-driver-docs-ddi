@@ -1,41 +1,46 @@
 ---
-UID : NF:portcls.IPortWavePciStream.ReleaseMapping
-title : IPortWavePciStream::ReleaseMapping method
-author : windows-driver-content
-description : The ReleaseMapping method releases a mapping that was obtained by a previous call to IPortWavePciStream::GetMapping.
-old-location : audio\iportwavepcistream_releasemapping.htm
-old-project : audio
-ms.assetid : c4464fba-cc23-47d2-87d6-82b3eba8ddbe
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : portcls/IPortWavePciStream::ReleaseMapping, ReleaseMapping, ReleaseMapping method [Audio Devices], IPortWavePciStream interface, audmp-routines_a4e274f7-02f8-4775-854f-befdc7dc6f03.xml, IPortWavePciStream, audio.iportwavepcistream_releasemapping, ReleaseMapping method [Audio Devices], IPortWavePciStream::ReleaseMapping, IPortWavePciStream interface [Audio Devices], ReleaseMapping method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : portcls.h
-req.include-header : Portcls.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : portcls.h
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.IPortWavePciStream.ReleaseMapping
+title: IPortWavePciStream::ReleaseMapping method
+author: windows-driver-content
+description: The ReleaseMapping method releases a mapping that was obtained by a previous call to IPortWavePciStream::GetMapping.
+old-location: audio\iportwavepcistream_releasemapping.htm
+old-project: audio
+ms.assetid: c4464fba-cc23-47d2-87d6-82b3eba8ddbe
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: portcls/IPortWavePciStream::ReleaseMapping, ReleaseMapping, ReleaseMapping method [Audio Devices], IPortWavePciStream interface, audmp-routines_a4e274f7-02f8-4775-854f-befdc7dc6f03.xml, IPortWavePciStream, audio.iportwavepcistream_releasemapping, ReleaseMapping method [Audio Devices], IPortWavePciStream::ReleaseMapping, IPortWavePciStream interface [Audio Devices], ReleaseMapping method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: portcls.h
+req.include-header: Portcls.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: portcls.h
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	portcls.h
+apiname:
+-	IPortWavePciStream.ReleaseMapping
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

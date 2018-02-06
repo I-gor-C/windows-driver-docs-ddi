@@ -1,42 +1,47 @@
 ---
-UID : NS:wiadef._WIA_BARCODE_INFO
-title : "_WIA_BARCODE_INFO"
-author : windows-driver-content
-description : The WIA_BARCODE_INFO structure stores information for one decoded barcode.
-old-location : image\wia_barcode_info.htm
-old-project : image
-ms.assetid : 2E659DDC-4012-4EA2-8E6C-033F2AB526B8
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : WIA_BARCODE_INFO structure [Imaging Devices], wiadef/WIA_BARCODE_INFO, WIA_BARCODE_INFO, _WIA_BARCODE_INFO, image.wia_barcode_info
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wiadef.h
-req.include-header : Wiadef.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WIA_BARCODE_INFO
-req.product : Windows 10 or later.
+UID: NS:wiadef._WIA_BARCODE_INFO
+title: "_WIA_BARCODE_INFO"
+author: windows-driver-content
+description: The WIA_BARCODE_INFO structure stores information for one decoded barcode.
+old-location: image\wia_barcode_info.htm
+old-project: image
+ms.assetid: 2E659DDC-4012-4EA2-8E6C-033F2AB526B8
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: WIA_BARCODE_INFO structure [Imaging Devices], wiadef/WIA_BARCODE_INFO, WIA_BARCODE_INFO, _WIA_BARCODE_INFO, image.wia_barcode_info
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wiadef.h
+req.include-header: Wiadef.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wiadef.h
+apiname:
+-	WIA_BARCODE_INFO
+product: Windows
+targetos: Windows
+req.typenames: WIA_BARCODE_INFO
+req.product: Windows 10 or later.
 ---
 
 # _WIA_BARCODE_INFO structure

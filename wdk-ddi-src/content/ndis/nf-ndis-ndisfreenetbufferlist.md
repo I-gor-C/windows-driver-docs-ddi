@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisFreeNetBufferList
-title : NdisFreeNetBufferList function
-author : windows-driver-content
-description : Call the NdisFreeNetBufferList function to free a NET_BUFFER_LIST structure that was previously allocated from a NET_BUFFER_LIST structure pool.
-old-location : netvista\ndisfreenetbufferlist.htm
-old-project : netvista
-ms.assetid : fddfe5f8-900a-4f4c-8c78-a106a4a54d88
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NdisFreeNetBufferList, ndis/NdisFreeNetBufferList, netvista.ndisfreenetbufferlist, NdisFreeNetBufferList function [Network Drivers Starting with Windows Vista], ndis_netbuf_functions_ref_202dda58-f8c4-442b-9c18-9c9b2b7708af.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_NetBuffer_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisFreeNetBufferList
+title: NdisFreeNetBufferList function
+author: windows-driver-content
+description: Call the NdisFreeNetBufferList function to free a NET_BUFFER_LIST structure that was previously allocated from a NET_BUFFER_LIST structure pool.
+old-location: netvista\ndisfreenetbufferlist.htm
+old-project: netvista
+ms.assetid: fddfe5f8-900a-4f4c-8c78-a106a4a54d88
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NdisFreeNetBufferList, ndis/NdisFreeNetBufferList, netvista.ndisfreenetbufferlist, NdisFreeNetBufferList function [Network Drivers Starting with Windows Vista], ndis_netbuf_functions_ref_202dda58-f8c4-442b-9c18-9c9b2b7708af.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_NetBuffer_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisFreeNetBufferList
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

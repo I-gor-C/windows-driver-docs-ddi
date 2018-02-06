@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugSymbols3.GetNextSymbolMatchWide
-title : IDebugSymbols3::GetNextSymbolMatchWide method
-author : windows-driver-content
-description : The GetNextSymbolMatchWide method returns the next symbol found in a symbol search.
-old-location : debugger\getnextsymbolmatchwide.htm
-old-project : debugger
-ms.assetid : 0400ff8c-a6d5-4fbf-b2fb-eb9fd7aabd7e
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : debugger.getnextsymbolmatchwide, dbgeng/IDebugSymbols3::GetNextSymbolMatchWide, GetNextSymbolMatchWide, IDebugSymbols3::GetNextSymbolMatchWide, IDebugSymbols3 interface [Windows Debugging], GetNextSymbolMatchWide method, GetNextSymbolMatchWide method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols3, GetNextSymbolMatchWide method [Windows Debugging]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSymbols3.GetNextSymbolMatchWide
+title: IDebugSymbols3::GetNextSymbolMatchWide method
+author: windows-driver-content
+description: The GetNextSymbolMatchWide method returns the next symbol found in a symbol search.
+old-location: debugger\getnextsymbolmatchwide.htm
+old-project: debugger
+ms.assetid: 0400ff8c-a6d5-4fbf-b2fb-eb9fd7aabd7e
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: debugger.getnextsymbolmatchwide, dbgeng/IDebugSymbols3::GetNextSymbolMatchWide, GetNextSymbolMatchWide, IDebugSymbols3::GetNextSymbolMatchWide, IDebugSymbols3 interface [Windows Debugging], GetNextSymbolMatchWide method, GetNextSymbolMatchWide method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols3, GetNextSymbolMatchWide method [Windows Debugging]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugSymbols3.GetNextSymbolMatchWide
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

@@ -1,41 +1,47 @@
 ---
-UID : NF:fltkernel.FltCheckOplockEx
-title : FltCheckOplockEx function
-author : windows-driver-content
-description : A minifilter driver calls the FltCheckOplockEx routine to synchronize the callback data structure for an IRP-based file I/O operation that has the current opportunistic lock (oplock) state of the file.
-old-location : ifsk\fltcheckoplockex.htm
-old-project : ifsk
-ms.assetid : 2af1f496-48cf-4f99-a22b-cf7d1837617e
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : fltkernel/FltCheckOplockEx, FltApiRef_a_to_d_3fd997bf-bfdb-4fdd-b6a2-3ade62e0368e.xml, ifsk.fltcheckoplockex, FltCheckOplockEx, FltCheckOplockEx routine [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : The FltCheckOplockEx routine is available starting with Windows 7.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltCheckOplockEx
+title: FltCheckOplockEx function
+author: windows-driver-content
+description: A minifilter driver calls the FltCheckOplockEx routine to synchronize the callback data structure for an IRP-based file I/O operation that has the current opportunistic lock (oplock) state of the file.
+old-location: ifsk\fltcheckoplockex.htm
+old-project: ifsk
+ms.assetid: 2af1f496-48cf-4f99-a22b-cf7d1837617e
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: fltkernel/FltCheckOplockEx, FltApiRef_a_to_d_3fd997bf-bfdb-4fdd-b6a2-3ade62e0368e.xml, ifsk.fltcheckoplockex, FltCheckOplockEx, FltCheckOplockEx routine [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: The FltCheckOplockEx routine is available starting with Windows 7.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	FltMgr.lib
+-	FltMgr.dll
+apiname:
+-	FltCheckOplockEx
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

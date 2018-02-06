@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGK_HISTORY_BUFFER_HEADER
-title : "_DXGK_HISTORY_BUFFER_HEADER"
-author : windows-driver-content
-description : Specifies how data is stored in a DXGK_HISTORY_BUFFER history buffer.
-old-location : display\dxgk_history_buffer_header.htm
-old-project : display
-ms.assetid : 246EBAFC-EBEB-4B58-83C1-731314CECF2E
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3dkmddi/DXGK_HISTORY_BUFFER_HEADER, DXGK_HISTORY_BUFFER_HEADER structure [Display Devices], DXGK_HISTORY_BUFFER_HEADER, _DXGK_HISTORY_BUFFER_HEADER, display.dxgk_history_buffer_header
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8.1,WDDM 1.3 and later
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_HISTORY_BUFFER_HEADER
+UID: NS:d3dkmddi._DXGK_HISTORY_BUFFER_HEADER
+title: "_DXGK_HISTORY_BUFFER_HEADER"
+author: windows-driver-content
+description: Specifies how data is stored in a DXGK_HISTORY_BUFFER history buffer.
+old-location: display\dxgk_history_buffer_header.htm
+old-project: display
+ms.assetid: 246EBAFC-EBEB-4B58-83C1-731314CECF2E
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3dkmddi/DXGK_HISTORY_BUFFER_HEADER, DXGK_HISTORY_BUFFER_HEADER structure [Display Devices], DXGK_HISTORY_BUFFER_HEADER, _DXGK_HISTORY_BUFFER_HEADER, display.dxgk_history_buffer_header
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8.1,WDDM 1.3 and later
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	D3dkmddi.h
+apiname:
+-	DXGK_HISTORY_BUFFER_HEADER
+product: Windows
+targetos: Windows
+req.typenames: DXGK_HISTORY_BUFFER_HEADER
 ---
 
 # _DXGK_HISTORY_BUFFER_HEADER structure

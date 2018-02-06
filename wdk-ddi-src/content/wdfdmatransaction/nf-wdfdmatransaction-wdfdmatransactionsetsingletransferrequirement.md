@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfdmatransaction.WdfDmaTransactionSetSingleTransferRequirement
-title : WdfDmaTransactionSetSingleTransferRequirement function
-author : windows-driver-content
-description : The WdfDmaTransactionSetSingleTransferRequirement method specifies that a DMA transaction must complete in a single transfer.
-old-location : wdf\wdfdmatransactionsetsingletransferrequirement.htm
-old-project : wdf
-ms.assetid : 988c7e70-3b2a-4a0f-91cf-dfab3ea07f05
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WdfDmaTransactionSetSingleTransferRequirement method, wdf.wdfdmatransactionsetsingletransferrequirement, WdfDmaTransactionSetSingleTransferRequirement, wdfdmatransaction/WdfDmaTransactionSetSingleTransferRequirement
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfdmatransaction.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.19
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDF_DMA_SYSTEM_PROFILE_CONFIG, WDF_DMA_SYSTEM_PROFILE_CONFIG"
-req.product : Windows 10 or later.
+UID: NF:wdfdmatransaction.WdfDmaTransactionSetSingleTransferRequirement
+title: WdfDmaTransactionSetSingleTransferRequirement function
+author: windows-driver-content
+description: The WdfDmaTransactionSetSingleTransferRequirement method specifies that a DMA transaction must complete in a single transfer.
+old-location: wdf\wdfdmatransactionsetsingletransferrequirement.htm
+old-project: wdf
+ms.assetid: 988c7e70-3b2a-4a0f-91cf-dfab3ea07f05
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WdfDmaTransactionSetSingleTransferRequirement method, wdf.wdfdmatransactionsetsingletransferrequirement, WdfDmaTransactionSetSingleTransferRequirement, wdfdmatransaction/WdfDmaTransactionSetSingleTransferRequirement
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfdmatransaction.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.19
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfDmaTransactionSetSingleTransferRequirement
+product: Windows
+targetos: Windows
+req.typenames: "*PWDF_DMA_SYSTEM_PROFILE_CONFIG, WDF_DMA_SYSTEM_PROFILE_CONFIG"
+req.product: Windows 10 or later.
 ---
 
 

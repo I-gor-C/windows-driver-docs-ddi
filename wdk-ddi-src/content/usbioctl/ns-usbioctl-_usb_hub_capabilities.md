@@ -1,42 +1,47 @@
 ---
-UID : NS:usbioctl._USB_HUB_CAPABILITIES
-title : "_USB_HUB_CAPABILITIES"
-author : windows-driver-content
-description : The USB_HUB_CAPABILITIES structure has been deprecated. Use USB_HUB_CAPABILITIES_EX instead.
-old-location : buses\usb_hub_capabilities.htm
-old-project : usbref
-ms.assetid : a87f747f-474d-401d-9757-0820680e5c8e
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : PUSB_HUB_CAPABILITIES, usbioctl/PUSB_HUB_CAPABILITIES, _USB_HUB_CAPABILITIES, usbioctl/USB_HUB_CAPABILITIES, PUSB_HUB_CAPABILITIES structure pointer [Buses], buses.usb_hub_capabilities, *PUSB_HUB_CAPABILITIES, USB_HUB_CAPABILITIES, usbstrct_b82d8bad-3ed4-40d1-a6c1-7ac416ebf157.xml, USB_HUB_CAPABILITIES structure [Buses]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : usbioctl.h
-req.include-header : Usbioctl.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUSB_HUB_CAPABILITIES, USB_HUB_CAPABILITIES"
-req.product : Windows 10 or later.
+UID: NS:usbioctl._USB_HUB_CAPABILITIES
+title: "_USB_HUB_CAPABILITIES"
+author: windows-driver-content
+description: The USB_HUB_CAPABILITIES structure has been deprecated. Use USB_HUB_CAPABILITIES_EX instead.
+old-location: buses\usb_hub_capabilities.htm
+old-project: usbref
+ms.assetid: a87f747f-474d-401d-9757-0820680e5c8e
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: PUSB_HUB_CAPABILITIES, usbioctl/PUSB_HUB_CAPABILITIES, _USB_HUB_CAPABILITIES, usbioctl/USB_HUB_CAPABILITIES, PUSB_HUB_CAPABILITIES structure pointer [Buses], buses.usb_hub_capabilities, *PUSB_HUB_CAPABILITIES, USB_HUB_CAPABILITIES, usbstrct_b82d8bad-3ed4-40d1-a6c1-7ac416ebf157.xml, USB_HUB_CAPABILITIES structure [Buses]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: usbioctl.h
+req.include-header: Usbioctl.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	usbioctl.h
+apiname:
+-	USB_HUB_CAPABILITIES
+product: Windows
+targetos: Windows
+req.typenames: "*PUSB_HUB_CAPABILITIES, USB_HUB_CAPABILITIES"
+req.product: Windows 10 or later.
 ---
 
 # _USB_HUB_CAPABILITIES structure

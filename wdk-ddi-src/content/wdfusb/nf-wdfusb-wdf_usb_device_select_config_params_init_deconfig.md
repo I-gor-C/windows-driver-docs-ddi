@@ -1,42 +1,47 @@
 ---
-UID : NF:wdfusb.WDF_USB_DEVICE_SELECT_CONFIG_PARAMS_INIT_DECONFIG
-title : WDF_USB_DEVICE_SELECT_CONFIG_PARAMS_INIT_DECONFIG function
-author : windows-driver-content
-description : The WDF_USB_DEVICE_SELECT_CONFIG_PARAMS_INIT_DECONFIG function initializes a WDF_USB_DEVICE_SELECT_CONFIG_PARAMS structure so that a driver can deconfigure a USB device.
-old-location : wdf\wdf_usb_device_select_config_params_init_deconfig.htm
-old-project : wdf
-ms.assetid : cc7ee273-e445-4cdb-b96d-b63db6e433de
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WDF_USB_DEVICE_SELECT_CONFIG_PARAMS_INIT_DECONFIG, WDF_USB_DEVICE_SELECT_CONFIG_PARAMS_INIT_DECONFIG function, wdf.wdf_usb_device_select_config_params_init_deconfig, DFUsbRef_9dcc7843-1cc0-4af0-9763-31fbac46ce41.xml, kmdf.wdf_usb_device_select_config_params_init_deconfig, wdfusb/WDF_USB_DEVICE_SELECT_CONFIG_PARAMS_INIT_DECONFIG
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfusb.h
-req.include-header : Wdfusb.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfusb.WDF_USB_DEVICE_SELECT_CONFIG_PARAMS_INIT_DECONFIG
+title: WDF_USB_DEVICE_SELECT_CONFIG_PARAMS_INIT_DECONFIG function
+author: windows-driver-content
+description: The WDF_USB_DEVICE_SELECT_CONFIG_PARAMS_INIT_DECONFIG function initializes a WDF_USB_DEVICE_SELECT_CONFIG_PARAMS structure so that a driver can deconfigure a USB device.
+old-location: wdf\wdf_usb_device_select_config_params_init_deconfig.htm
+old-project: wdf
+ms.assetid: cc7ee273-e445-4cdb-b96d-b63db6e433de
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WDF_USB_DEVICE_SELECT_CONFIG_PARAMS_INIT_DECONFIG, WDF_USB_DEVICE_SELECT_CONFIG_PARAMS_INIT_DECONFIG function, wdf.wdf_usb_device_select_config_params_init_deconfig, DFUsbRef_9dcc7843-1cc0-4af0-9763-31fbac46ce41.xml, kmdf.wdf_usb_device_select_config_params_init_deconfig, wdfusb/WDF_USB_DEVICE_SELECT_CONFIG_PARAMS_INIT_DECONFIG
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfusb.h
+req.include-header: Wdfusb.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfusb.h
+apiname:
+-	WDF_USB_DEVICE_SELECT_CONFIG_PARAMS_INIT_DECONFIG
+product: Windows
+targetos: Windows
+req.typenames: WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
+req.product: Windows 10 or later.
 ---
 
 

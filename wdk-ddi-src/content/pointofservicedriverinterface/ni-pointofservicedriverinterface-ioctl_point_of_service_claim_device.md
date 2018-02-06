@@ -1,41 +1,46 @@
 ---
-UID : NI:pointofservicedriverinterface.IOCTL_POINT_OF_SERVICE_CLAIM_DEVICE
-title : IOCTL_POINT_OF_SERVICE_CLAIM_DEVICE
-author : windows-driver-content
-description : The I/O control function claims the device for exclusive access.
-old-location : pos\ioctl_point_of_service_claim_device.htm
-old-project : pos
-ms.assetid : e9dfa630-d3ac-4228-ae2a-02ff5a0fd558
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : pos.ioctl_point_of_service_claim_device, IOCTL_POINT_OF_SERVICE_CLAIM_DEVICE control code, IOCTL_POINT_OF_SERVICE_CLAIM_DEVICE, pointofservicedriverinterface/IOCTL_POINT_OF_SERVICE_CLAIM_DEVICE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : pointofservicedriverinterface.h
-req.include-header : Pointofservicedriverinterface.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PosPropertyId
+UID: NI:pointofservicedriverinterface.IOCTL_POINT_OF_SERVICE_CLAIM_DEVICE
+title: IOCTL_POINT_OF_SERVICE_CLAIM_DEVICE
+author: windows-driver-content
+description: The I/O control function claims the device for exclusive access.
+old-location: pos\ioctl_point_of_service_claim_device.htm
+old-project: pos
+ms.assetid: e9dfa630-d3ac-4228-ae2a-02ff5a0fd558
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: pos.ioctl_point_of_service_claim_device, IOCTL_POINT_OF_SERVICE_CLAIM_DEVICE control code, IOCTL_POINT_OF_SERVICE_CLAIM_DEVICE, pointofservicedriverinterface/IOCTL_POINT_OF_SERVICE_CLAIM_DEVICE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: pointofservicedriverinterface.h
+req.include-header: Pointofservicedriverinterface.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	pointofservicedriverinterface.h
+apiname:
+-	IOCTL_POINT_OF_SERVICE_CLAIM_DEVICE
+product: Windows
+targetos: Windows
+req.typenames: PosPropertyId
 ---
 
 # IOCTL_POINT_OF_SERVICE_CLAIM_DEVICE IOCTL

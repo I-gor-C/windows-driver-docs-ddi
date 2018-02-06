@@ -1,41 +1,46 @@
 ---
-UID : NS:61883._CIP_ATTACH_FRAME
-title : "_CIP_ATTACH_FRAME"
-author : windows-driver-content
-description : This structure is used in an attach frame request.
-old-location : ieee\cip_attach_frame.htm
-old-project : IEEE
-ms.assetid : F7E283BB-B714-4CD4-AFF4-EFB62D82791D
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : 61883/CIP_ATTACH_FRAME, *PCIP_ATTACH_FRAME, IEEE.cip_attach_frame, 61883/PCIP_ATTACH_FRAME, _CIP_ATTACH_FRAME, PCIP_ATTACH_FRAME structure pointer [Buses], PCIP_ATTACH_FRAME, CIP_ATTACH_FRAME, CIP_ATTACH_FRAME structure [Buses]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : 61883.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : CIP_ATTACH_FRAME, *PCIP_ATTACH_FRAME
+UID: NS:61883._CIP_ATTACH_FRAME
+title: "_CIP_ATTACH_FRAME"
+author: windows-driver-content
+description: This structure is used in an attach frame request.
+old-location: ieee\cip_attach_frame.htm
+old-project: IEEE
+ms.assetid: F7E283BB-B714-4CD4-AFF4-EFB62D82791D
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: 61883/CIP_ATTACH_FRAME, *PCIP_ATTACH_FRAME, IEEE.cip_attach_frame, 61883/PCIP_ATTACH_FRAME, _CIP_ATTACH_FRAME, PCIP_ATTACH_FRAME structure pointer [Buses], PCIP_ATTACH_FRAME, CIP_ATTACH_FRAME, CIP_ATTACH_FRAME structure [Buses]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: 61883.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	61883.h
+apiname:
+-	CIP_ATTACH_FRAME
+product: Windows
+targetos: Windows
+req.typenames: CIP_ATTACH_FRAME, *PCIP_ATTACH_FRAME
 ---
 
 # _CIP_ATTACH_FRAME structure

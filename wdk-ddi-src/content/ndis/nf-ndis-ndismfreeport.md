@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisMFreePort
-title : NdisMFreePort function
-author : windows-driver-content
-description : The NdisMFreePort function frees an NDIS port that was previously allocated with the NdisMAllocatePort function.
-old-location : netvista\ndismfreeport.htm
-old-project : netvista
-ms.assetid : 38d53977-ada2-41b9-8b6a-a3bd691f4525
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : ndis/NdisMFreePort, netvista.ndismfreeport, NdisMFreePort, NdisMFreePort function [Network Drivers Starting with Windows Vista], ndis_ports_ref_b5b73dda-9bc0-4d7d-a265-d50d1436c8f4.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_Miniport_Driver_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisMFreePort
+title: NdisMFreePort function
+author: windows-driver-content
+description: The NdisMFreePort function frees an NDIS port that was previously allocated with the NdisMAllocatePort function.
+old-location: netvista\ndismfreeport.htm
+old-project: netvista
+ms.assetid: 38d53977-ada2-41b9-8b6a-a3bd691f4525
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: ndis/NdisMFreePort, netvista.ndismfreeport, NdisMFreePort, NdisMFreePort function [Network Drivers Starting with Windows Vista], ndis_ports_ref_b5b73dda-9bc0-4d7d-a265-d50d1436c8f4.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_Miniport_Driver_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisMFreePort
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

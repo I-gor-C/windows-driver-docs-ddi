@@ -1,41 +1,46 @@
 ---
-UID : NF:dmusicks.IAllocatorMXF.GetBufferSize
-title : IAllocatorMXF::GetBufferSize method
-author : windows-driver-content
-description : The GetBufferSize method gets the buffer size from the allocator.
-old-location : audio\iallocatormxf_getbuffersize.htm
-old-project : audio
-ms.assetid : b3a35769-a98a-40f5-bdc1-db964d2a967c
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : GetBufferSize, GetBufferSize method [Audio Devices], IAllocatorMXF::GetBufferSize, audmp-routines_5eb7fc90-4f40-4796-9c7c-2086689f1593.xml, IAllocatorMXF interface [Audio Devices], GetBufferSize method, dmusicks/IAllocatorMXF::GetBufferSize, GetBufferSize method [Audio Devices], IAllocatorMXF interface, audio.iallocatormxf_getbuffersize, IAllocatorMXF
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dmusicks.h
-req.include-header : Dmusicks.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dmusicks.h
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DMUS_STREAM_TYPE
+UID: NF:dmusicks.IAllocatorMXF.GetBufferSize
+title: IAllocatorMXF::GetBufferSize method
+author: windows-driver-content
+description: The GetBufferSize method gets the buffer size from the allocator.
+old-location: audio\iallocatormxf_getbuffersize.htm
+old-project: audio
+ms.assetid: b3a35769-a98a-40f5-bdc1-db964d2a967c
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: GetBufferSize, GetBufferSize method [Audio Devices], IAllocatorMXF::GetBufferSize, audmp-routines_5eb7fc90-4f40-4796-9c7c-2086689f1593.xml, IAllocatorMXF interface [Audio Devices], GetBufferSize method, dmusicks/IAllocatorMXF::GetBufferSize, GetBufferSize method [Audio Devices], IAllocatorMXF interface, audio.iallocatormxf_getbuffersize, IAllocatorMXF
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dmusicks.h
+req.include-header: Dmusicks.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dmusicks.h
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dmusicks.h
+apiname:
+-	IAllocatorMXF.GetBufferSize
+product: Windows
+targetos: Windows
+req.typenames: DMUS_STREAM_TYPE
 ---
 
 

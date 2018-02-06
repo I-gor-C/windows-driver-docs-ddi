@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_CREATECONTEXTVIRTUALCB
-title : PFND3DDDI_CREATECONTEXTVIRTUALCB
-author : windows-driver-content
-description : pfnCreateContextVirtualCb should be used with contexts that support virtual addressing.
-old-location : display\pfncreatecontextvirtualcb.htm
-old-project : display
-ms.assetid : 7787FEDF-E18C-4120-A073-A13933856F57
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.pfncreatecontextvirtualcb, pfnCreateContextVirtualCb callback function [Display Devices], pfnCreateContextVirtualCb, PFND3DDDI_CREATECONTEXTVIRTUALCB, PFND3DDDI_CREATECONTEXTVIRTUALCB, d3dumddi/pfnCreateContextVirtualCb
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_CREATECONTEXTVIRTUALCB
+title: PFND3DDDI_CREATECONTEXTVIRTUALCB
+author: windows-driver-content
+description: pfnCreateContextVirtualCb should be used with contexts that support virtual addressing.
+old-location: display\pfncreatecontextvirtualcb.htm
+old-project: display
+ms.assetid: 7787FEDF-E18C-4120-A073-A13933856F57
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.pfncreatecontextvirtualcb, pfnCreateContextVirtualCb callback function [Display Devices], pfnCreateContextVirtualCb, PFND3DDDI_CREATECONTEXTVIRTUALCB, PFND3DDDI_CREATECONTEXTVIRTUALCB, d3dumddi/pfnCreateContextVirtualCb
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	pfnCreateContextVirtualCb
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

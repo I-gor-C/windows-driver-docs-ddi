@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddndis._NDIS_NDK_CAPABILITIES
-title : "_NDIS_NDK_CAPABILITIES"
-author : windows-driver-content
-description : The NDIS_NDK_CAPABILITIES structure specifies the capabilities of an NDK adapter.
-old-location : netvista\ndis_ndk_capabilities.htm
-old-project : netvista
-ms.assetid : 4E8AD6FA-BB89-4CB0-A06E-7B4917390311
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : ntddndis/NDIS_NDK_CAPABILITIES, NDIS_NDK_CAPABILITIES structure [Network Drivers Starting with Windows Vista], netvista.ndis_ndk_capabilities, NDIS_NDK_CAPABILITIES, *PNDIS_NDK_CAPABILITIES, _NDIS_NDK_CAPABILITIES, PNDIS_NDK_CAPABILITIES structure pointer [Network Drivers Starting with Windows Vista], ntddndis/PNDIS_NDK_CAPABILITIES, PNDIS_NDK_CAPABILITIES
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : None supported,Supported in NDIS 6.30 and later.
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PNDIS_NDK_CAPABILITIES, NDIS_NDK_CAPABILITIES"
+UID: NS:ntddndis._NDIS_NDK_CAPABILITIES
+title: "_NDIS_NDK_CAPABILITIES"
+author: windows-driver-content
+description: The NDIS_NDK_CAPABILITIES structure specifies the capabilities of an NDK adapter.
+old-location: netvista\ndis_ndk_capabilities.htm
+old-project: netvista
+ms.assetid: 4E8AD6FA-BB89-4CB0-A06E-7B4917390311
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: ntddndis/NDIS_NDK_CAPABILITIES, NDIS_NDK_CAPABILITIES structure [Network Drivers Starting with Windows Vista], netvista.ndis_ndk_capabilities, NDIS_NDK_CAPABILITIES, *PNDIS_NDK_CAPABILITIES, _NDIS_NDK_CAPABILITIES, PNDIS_NDK_CAPABILITIES structure pointer [Network Drivers Starting with Windows Vista], ntddndis/PNDIS_NDK_CAPABILITIES, PNDIS_NDK_CAPABILITIES
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: None supported,Supported in NDIS 6.30 and later.
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddndis.h
+apiname:
+-	NDIS_NDK_CAPABILITIES
+product: Windows
+targetos: Windows
+req.typenames: "*PNDIS_NDK_CAPABILITIES, NDIS_NDK_CAPABILITIES"
 ---
 
 # _NDIS_NDK_CAPABILITIES structure

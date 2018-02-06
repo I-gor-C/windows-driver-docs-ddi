@@ -1,42 +1,48 @@
 ---
-UID : NF:wdm.PsQueryTotalCycleTimeProcess
-title : PsQueryTotalCycleTimeProcess function
-author : windows-driver-content
-description : The PsQueryTotalCycleTimeProcess routine returns the accumulated cycle time for the specified process.
-old-location : kernel\psquerytotalcycletimeprocess.htm
-old-project : kernel
-ms.assetid : 4DA34F96-A69A-46BE-B3D8-D542794052DE
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : PsQueryTotalCycleTimeProcess, wdm/PsQueryTotalCycleTimeProcess, PsQueryTotalCycleTimeProcess routine [Kernel-Mode Driver Architecture], kernel.psquerytotalcycletimeprocess
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : 
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 8 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ntoskrnl.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.PsQueryTotalCycleTimeProcess
+title: PsQueryTotalCycleTimeProcess function
+author: windows-driver-content
+description: The PsQueryTotalCycleTimeProcess routine returns the accumulated cycle time for the specified process.
+old-location: kernel\psquerytotalcycletimeprocess.htm
+old-project: kernel
+ms.assetid: 4DA34F96-A69A-46BE-B3D8-D542794052DE
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: PsQueryTotalCycleTimeProcess, wdm/PsQueryTotalCycleTimeProcess, PsQueryTotalCycleTimeProcess routine [Kernel-Mode Driver Architecture], kernel.psquerytotalcycletimeprocess
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: 
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 8 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ntoskrnl.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ntoskrnl.lib
+-	ntoskrnl.dll
+apiname:
+-	PsQueryTotalCycleTimeProcess
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

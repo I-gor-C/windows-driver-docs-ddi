@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dhal._D3DHAL_DP2INDEXEDLINELIST
-title : "_D3DHAL_DP2INDEXEDLINELIST"
-author : windows-driver-content
-description : D3DHAL_DP2INDEXEDLINELIST is parsed from the command buffer by the D3dDrawPrimitives2 callback when the D3DHAL_DP2COMMAND structure's bCommand member is set to D3DDP2OP_INDEXEDLINELIST, and is used to render the lines using vertex indices.
-old-location : display\d3dhal_dp2indexedlinelist.htm
-old-project : display
-ms.assetid : 6205df9f-a6b1-4dd1-97a8-5d0d57a7ddd1
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DHAL_DP2INDEXEDLINELIST structure [Display Devices], display.d3dhal_dp2indexedlinelist, LPD3DHAL_DP2INDEXEDLINELIST structure pointer [Display Devices], _D3DHAL_DP2INDEXEDLINELIST, d3dstrct_895bb4b6-3e98-4275-a61d-38d89ec23a6f.xml, d3dhal/LPD3DHAL_DP2INDEXEDLINELIST, D3DHAL_DP2INDEXEDLINELIST, d3dhal/D3DHAL_DP2INDEXEDLINELIST, *LPD3DHAL_DP2INDEXEDLINELIST, LPD3DHAL_DP2INDEXEDLINELIST
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dhal.h
-req.include-header : D3dhal.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DHAL_DP2INDEXEDLINELIST, *LPD3DHAL_DP2INDEXEDLINELIST
+UID: NS:d3dhal._D3DHAL_DP2INDEXEDLINELIST
+title: "_D3DHAL_DP2INDEXEDLINELIST"
+author: windows-driver-content
+description: D3DHAL_DP2INDEXEDLINELIST is parsed from the command buffer by the D3dDrawPrimitives2 callback when the D3DHAL_DP2COMMAND structure's bCommand member is set to D3DDP2OP_INDEXEDLINELIST, and is used to render the lines using vertex indices.
+old-location: display\d3dhal_dp2indexedlinelist.htm
+old-project: display
+ms.assetid: 6205df9f-a6b1-4dd1-97a8-5d0d57a7ddd1
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DHAL_DP2INDEXEDLINELIST structure [Display Devices], display.d3dhal_dp2indexedlinelist, LPD3DHAL_DP2INDEXEDLINELIST structure pointer [Display Devices], _D3DHAL_DP2INDEXEDLINELIST, d3dstrct_895bb4b6-3e98-4275-a61d-38d89ec23a6f.xml, d3dhal/LPD3DHAL_DP2INDEXEDLINELIST, D3DHAL_DP2INDEXEDLINELIST, d3dhal/D3DHAL_DP2INDEXEDLINELIST, *LPD3DHAL_DP2INDEXEDLINELIST, LPD3DHAL_DP2INDEXEDLINELIST
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dhal.h
+req.include-header: D3dhal.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dhal.h
+apiname:
+-	D3DHAL_DP2INDEXEDLINELIST
+product: Windows
+targetos: Windows
+req.typenames: D3DHAL_DP2INDEXEDLINELIST, *LPD3DHAL_DP2INDEXEDLINELIST
 ---
 
 # _D3DHAL_DP2INDEXEDLINELIST structure

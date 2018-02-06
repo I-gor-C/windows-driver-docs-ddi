@@ -1,41 +1,46 @@
 ---
-UID : NS:d3d10umddi.D3D11DDI_3DPIPELINESUPPORT_CAPS
-title : D3D11DDI_3DPIPELINESUPPORT_CAPS
-author : windows-driver-content
-description : The D3D11DDI_3DPIPELINESUPPORT_CAPS structure contains display device pipeline capabilities.
-old-location : display\d3d11ddi_3dpipelinesupport_caps.htm
-old-project : display
-ms.assetid : 69bafa36-2f99-4c6f-b5ed-99a7030b22e6
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : UMDisplayDriver_Dx11param_Structs_dc9a2de4-8fcf-4cd4-9c59-cc57941cab00.xml, display.d3d11ddi_3dpipelinesupport_caps, d3d10umddi/D3D11DDI_3DPIPELINESUPPORT_CAPS, D3D11DDI_3DPIPELINESUPPORT_CAPS, D3D11DDI_3DPIPELINESUPPORT_CAPS structure [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Windows
-req.target-min-winverclnt : D3D11DDI_3DPIPELINESUPPORT_CAPS is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3D11DDI_3DPIPELINESUPPORT_CAPS
+UID: NS:d3d10umddi.D3D11DDI_3DPIPELINESUPPORT_CAPS
+title: D3D11DDI_3DPIPELINESUPPORT_CAPS
+author: windows-driver-content
+description: The D3D11DDI_3DPIPELINESUPPORT_CAPS structure contains display device pipeline capabilities.
+old-location: display\d3d11ddi_3dpipelinesupport_caps.htm
+old-project: display
+ms.assetid: 69bafa36-2f99-4c6f-b5ed-99a7030b22e6
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: UMDisplayDriver_Dx11param_Structs_dc9a2de4-8fcf-4cd4-9c59-cc57941cab00.xml, display.d3d11ddi_3dpipelinesupport_caps, d3d10umddi/D3D11DDI_3DPIPELINESUPPORT_CAPS, D3D11DDI_3DPIPELINESUPPORT_CAPS, D3D11DDI_3DPIPELINESUPPORT_CAPS structure [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Windows
+req.target-min-winverclnt: D3D11DDI_3DPIPELINESUPPORT_CAPS is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	D3D11DDI_3DPIPELINESUPPORT_CAPS
+product: Windows
+targetos: Windows
+req.typenames: D3D11DDI_3DPIPELINESUPPORT_CAPS
 ---
 
 # D3D11DDI_3DPIPELINESUPPORT_CAPS structure

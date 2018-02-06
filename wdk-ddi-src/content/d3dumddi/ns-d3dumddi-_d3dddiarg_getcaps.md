@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._D3DDDIARG_GETCAPS
-title : "_D3DDDIARG_GETCAPS"
-author : windows-driver-content
-description : The D3DDDIARG_GETCAPS structure contains display device capabilities of a particular type.
-old-location : display\d3dddiarg_getcaps.htm
-old-project : display
-ms.assetid : 50063bd0-c9d4-4013-8f83-8f9d92aa87c0
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.d3dddiarg_getcaps, UMDisplayDriver_param_Structs_05260c15-4f63-4a85-b9c8-db53ed8135cd.xml, D3DDDIARG_GETCAPS, d3dumddi/D3DDDIARG_GETCAPS, _D3DDDIARG_GETCAPS, D3DDDIARG_GETCAPS structure [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDIARG_GETCAPS
+UID: NS:d3dumddi._D3DDDIARG_GETCAPS
+title: "_D3DDDIARG_GETCAPS"
+author: windows-driver-content
+description: The D3DDDIARG_GETCAPS structure contains display device capabilities of a particular type.
+old-location: display\d3dddiarg_getcaps.htm
+old-project: display
+ms.assetid: 50063bd0-c9d4-4013-8f83-8f9d92aa87c0
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.d3dddiarg_getcaps, UMDisplayDriver_param_Structs_05260c15-4f63-4a85-b9c8-db53ed8135cd.xml, D3DDDIARG_GETCAPS, d3dumddi/D3DDDIARG_GETCAPS, _D3DDDIARG_GETCAPS, D3DDDIARG_GETCAPS structure [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	D3DDDIARG_GETCAPS
+product: Windows
+targetos: Windows
+req.typenames: D3DDDIARG_GETCAPS
 ---
 
 # _D3DDDIARG_GETCAPS structure

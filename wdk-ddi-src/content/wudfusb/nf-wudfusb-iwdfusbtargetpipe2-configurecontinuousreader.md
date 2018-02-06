@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfusb.IWDFUsbTargetPipe2.ConfigureContinuousReader
-title : IWDFUsbTargetPipe2::ConfigureContinuousReader method
-author : windows-driver-content
-description : The ConfigureContinuousReader method configures the framework to continuously read from a USB pipe.
-old-location : wdf\iwdfusbtargetpipe2_configurecontinuousreader.htm
-old-project : wdf
-ms.assetid : accb2690-0ab7-4623-8493-545e6e722a7a
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : IWDFUsbTargetPipe2::ConfigureContinuousReader, ConfigureContinuousReader, wdf.iwdfusbtargetpipe2_configurecontinuousreader, UMDFUSBref_fbf1e16d-97a6-43c4-b667-a4715769009b.xml, IWDFUsbTargetPipe2, umdf.iwdfusbtargetpipe2_configurecontinuousreader, IWDFUsbTargetPipe2 interface, ConfigureContinuousReader method, ConfigureContinuousReader method, IWDFUsbTargetPipe2 interface, ConfigureContinuousReader method, wudfusb/IWDFUsbTargetPipe2::ConfigureContinuousReader
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfusb.h
-req.include-header : Wudfusb.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.9
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfusb.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
-req.product : Windows 10 or later.
+UID: NF:wudfusb.IWDFUsbTargetPipe2.ConfigureContinuousReader
+title: IWDFUsbTargetPipe2::ConfigureContinuousReader method
+author: windows-driver-content
+description: The ConfigureContinuousReader method configures the framework to continuously read from a USB pipe.
+old-location: wdf\iwdfusbtargetpipe2_configurecontinuousreader.htm
+old-project: wdf
+ms.assetid: accb2690-0ab7-4623-8493-545e6e722a7a
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: IWDFUsbTargetPipe2::ConfigureContinuousReader, ConfigureContinuousReader, wdf.iwdfusbtargetpipe2_configurecontinuousreader, UMDFUSBref_fbf1e16d-97a6-43c4-b667-a4715769009b.xml, IWDFUsbTargetPipe2, umdf.iwdfusbtargetpipe2_configurecontinuousreader, IWDFUsbTargetPipe2 interface, ConfigureContinuousReader method, ConfigureContinuousReader method, IWDFUsbTargetPipe2 interface, ConfigureContinuousReader method, wudfusb/IWDFUsbTargetPipe2::ConfigureContinuousReader
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfusb.h
+req.include-header: Wudfusb.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.9
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfusb.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFUsbTargetPipe2.ConfigureContinuousReader
+product: Windows
+targetos: Windows
+req.typenames: WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
+req.product: Windows 10 or later.
 ---
 
 

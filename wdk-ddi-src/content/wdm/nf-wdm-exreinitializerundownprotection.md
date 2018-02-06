@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.ExReInitializeRundownProtection
-title : ExReInitializeRundownProtection function
-author : windows-driver-content
-description : The ExReInitializeRundownProtection routine reinitializes an EX_RUNDOWN_REF structure after the associated object is run down.
-old-location : kernel\exreinitializerundownprotection.htm
-old-project : kernel
-ms.assetid : 41B7CE15-8702-49C8-9FD0-450DF6E4798C
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.exreinitializerundownprotection, wdm/ExReInitializeRundownProtection, ExReInitializeRundownProtection, ExReInitializeRundownProtection routine [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows XP.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ExReInitializeRundownProtection
+title: ExReInitializeRundownProtection function
+author: windows-driver-content
+description: The ExReInitializeRundownProtection routine reinitializes an EX_RUNDOWN_REF structure after the associated object is run down.
+old-location: kernel\exreinitializerundownprotection.htm
+old-project: kernel
+ms.assetid: 41B7CE15-8702-49C8-9FD0-450DF6E4798C
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.exreinitializerundownprotection, wdm/ExReInitializeRundownProtection, ExReInitializeRundownProtection, ExReInitializeRundownProtection routine [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows XP.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ExReInitializeRundownProtection
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

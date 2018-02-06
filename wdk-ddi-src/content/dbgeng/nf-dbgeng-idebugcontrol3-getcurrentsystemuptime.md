@@ -1,41 +1,47 @@
 ---
-UID : NF:dbgeng.IDebugControl3.GetCurrentSystemUpTime
-title : IDebugControl3::GetCurrentSystemUpTime method
-author : windows-driver-content
-description : The GetCurrentSystemUpTime method returns the number of seconds the current target's computer has been running since it was last started.
-old-location : debugger\getcurrentsystemuptime.htm
-old-project : debugger
-ms.assetid : 0009e11d-73d0-4ca2-afbc-5f2999e829ac
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : GetCurrentSystemUpTime method [Windows Debugging], IDebugControl3 interface, GetCurrentSystemUpTime method [Windows Debugging], dbgeng/IDebugControl2::GetCurrentSystemUpTime, GetCurrentSystemUpTime method [Windows Debugging], IDebugControl2 interface, GetCurrentSystemUpTime, IDebugControl_e10ddd31-60fe-4353-befe-45a04154615b.xml, IDebugControl2 interface [Windows Debugging], GetCurrentSystemUpTime method, IDebugControl3, debugger.getcurrentsystemuptime, IDebugControl3::GetCurrentSystemUpTime, IDebugControl3 interface [Windows Debugging], GetCurrentSystemUpTime method, IDebugControl2::GetCurrentSystemUpTime, dbgeng/IDebugControl3::GetCurrentSystemUpTime
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl3.GetCurrentSystemUpTime
+title: IDebugControl3::GetCurrentSystemUpTime method
+author: windows-driver-content
+description: The GetCurrentSystemUpTime method returns the number of seconds the current target's computer has been running since it was last started.
+old-location: debugger\getcurrentsystemuptime.htm
+old-project: debugger
+ms.assetid: 0009e11d-73d0-4ca2-afbc-5f2999e829ac
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: GetCurrentSystemUpTime method [Windows Debugging], IDebugControl3 interface, GetCurrentSystemUpTime method [Windows Debugging], dbgeng/IDebugControl2::GetCurrentSystemUpTime, GetCurrentSystemUpTime method [Windows Debugging], IDebugControl2 interface, GetCurrentSystemUpTime, IDebugControl_e10ddd31-60fe-4353-befe-45a04154615b.xml, IDebugControl2 interface [Windows Debugging], GetCurrentSystemUpTime method, IDebugControl3, debugger.getcurrentsystemuptime, IDebugControl3::GetCurrentSystemUpTime, IDebugControl3 interface [Windows Debugging], GetCurrentSystemUpTime method, IDebugControl2::GetCurrentSystemUpTime, dbgeng/IDebugControl3::GetCurrentSystemUpTime
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl2.GetCurrentSystemUpTime
+-	IDebugControl3.GetCurrentSystemUpTime
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

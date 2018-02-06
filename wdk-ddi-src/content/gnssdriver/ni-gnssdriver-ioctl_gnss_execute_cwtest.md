@@ -1,41 +1,46 @@
 ---
-UID : NI:gnssdriver.IOCTL_GNSS_EXECUTE_CWTEST
-title : IOCTL_GNSS_EXECUTE_CWTEST
-author : windows-driver-content
-description : The IOCTL_GNSS_EXECUTE_CWTEST control code is used by the GNSS manufacturing test application to start a carrier wave test and get the measurement. The test application must wait for the result before starting another iteration of the measurement.
-old-location : sensors\ioctl_gnss_execute_cwtest.htm
-old-project : sensors
-ms.assetid : 36AFBB03-9F01-4CA7-A5E8-C6F744984B6F
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : sensors.ioctl_gnss_execute_cwtest, IOCTL_GNSS_EXECUTE_CWTEST control code [Sensor Devices], IOCTL_GNSS_EXECUTE_CWTEST, gnssdriver/IOCTL_GNSS_EXECUTE_CWTEST
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : gnssdriver.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : GNSS_SUPL_CERT_ACTION
+UID: NI:gnssdriver.IOCTL_GNSS_EXECUTE_CWTEST
+title: IOCTL_GNSS_EXECUTE_CWTEST
+author: windows-driver-content
+description: The IOCTL_GNSS_EXECUTE_CWTEST control code is used by the GNSS manufacturing test application to start a carrier wave test and get the measurement. The test application must wait for the result before starting another iteration of the measurement.
+old-location: sensors\ioctl_gnss_execute_cwtest.htm
+old-project: sensors
+ms.assetid: 36AFBB03-9F01-4CA7-A5E8-C6F744984B6F
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: sensors.ioctl_gnss_execute_cwtest, IOCTL_GNSS_EXECUTE_CWTEST control code [Sensor Devices], IOCTL_GNSS_EXECUTE_CWTEST, gnssdriver/IOCTL_GNSS_EXECUTE_CWTEST
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: gnssdriver.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	gnssdriver.h
+apiname:
+-	IOCTL_GNSS_EXECUTE_CWTEST
+product: Windows
+targetos: Windows
+req.typenames: GNSS_SUPL_CERT_ACTION
 ---
 
 # IOCTL_GNSS_EXECUTE_CWTEST IOCTL

@@ -1,42 +1,48 @@
 ---
-UID : NF:sensorsclassextension.ISensorDriver.OnGetDataFields
-title : ISensorDriver::OnGetDataFields method
-author : windows-driver-content
-description : The ISensorDriver::OnGetDataFields method retrieves current sensor data.
-old-location : sensors\isensordriver_ongetdatafields.htm
-old-project : sensors
-ms.assetid : a9233a0f-ac80-46be-9abe-7b87d25736f9
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : ISensorDriver::OnGetDataFields, OnGetDataFields method [Sensor Devices], ISensorDriver, OnGetDataFields, sensors.isensordriver_ongetdatafields
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : sensorsclassextension.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : SensorsClassExtension.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SensorConnectionType
-req.product : Windows 10 or later.
+UID: NF:sensorsclassextension.ISensorDriver.OnGetDataFields
+title: ISensorDriver::OnGetDataFields method
+author: windows-driver-content
+description: The ISensorDriver::OnGetDataFields method retrieves current sensor data.
+old-location: sensors\isensordriver_ongetdatafields.htm
+old-project: sensors
+ms.assetid: a9233a0f-ac80-46be-9abe-7b87d25736f9
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: ISensorDriver::OnGetDataFields, OnGetDataFields method [Sensor Devices], ISensorDriver, OnGetDataFields, sensors.isensordriver_ongetdatafields
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: sensorsclassextension.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: SensorsClassExtension.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	SensorsClassExtension.lib
+-	SensorsClassExtension.dll
+apiname:
+-	OnGetDataFields
+product: Windows
+targetos: Windows
+req.typenames: SensorConnectionType
+req.product: Windows 10 or later.
 ---
 
 

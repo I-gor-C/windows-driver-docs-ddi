@@ -1,41 +1,46 @@
 ---
-UID : NC:hdaudio.PHDAUDIO_BDL_ISR
-title : PHDAUDIO_BDL_ISR
-author : windows-driver-content
-description : The HDAudioBdlIsr routine is the ISR that the HD Audio bus driver calls each time an IOC interrupt occurs on the stream. It is a function pointer of type PHDAUDIO_BDL_ISR, which is defined as:
-old-location : audio\phdaudio_bdl_isr.htm
-old-project : audio
-ms.assetid : 9DC36C2E-6609-46C8-870E-44845020A4B2
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : audio.phdaudio_bdl_isr, HDAudioBdlIsr callback function [Audio Devices], HDAudioBdlIsr, PHDAUDIO_BDL_ISR, PHDAUDIO_BDL_ISR, hdaudio/HDAudioBdlIsr
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : hdaudio.h
-req.include-header : Hdaudio.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : DIRQL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT
+UID: NC:hdaudio.PHDAUDIO_BDL_ISR
+title: PHDAUDIO_BDL_ISR
+author: windows-driver-content
+description: The HDAudioBdlIsr routine is the ISR that the HD Audio bus driver calls each time an IOC interrupt occurs on the stream. It is a function pointer of type PHDAUDIO_BDL_ISR, which is defined as:
+old-location: audio\phdaudio_bdl_isr.htm
+old-project: audio
+ms.assetid: 9DC36C2E-6609-46C8-870E-44845020A4B2
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: audio.phdaudio_bdl_isr, HDAudioBdlIsr callback function [Audio Devices], HDAudioBdlIsr, PHDAUDIO_BDL_ISR, PHDAUDIO_BDL_ISR, hdaudio/HDAudioBdlIsr
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: hdaudio.h
+req.include-header: Hdaudio.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: DIRQL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	hdaudio.h
+apiname:
+-	HDAudioBdlIsr
+product: Windows
+targetos: Windows
+req.typenames: SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT
 ---
 
 

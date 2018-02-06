@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmthk._D3DKMT_CREATEOVERLAY
-title : "_D3DKMT_CREATEOVERLAY"
-author : windows-driver-content
-description : The D3DKMT_CREATEOVERLAY structure describes overlay hardware.
-old-location : display\d3dkmt_createoverlay.htm
-old-project : display
-ms.assetid : b020b06c-72e2-4322-a5db-fcfc46db429e
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3dkmthk/D3DKMT_CREATEOVERLAY, display.d3dkmt_createoverlay, OpenGL_Structs_0e2cd78f-0999-48a3-8a7d-329ddb46b46f.xml, _D3DKMT_CREATEOVERLAY, D3DKMT_CREATEOVERLAY, D3DKMT_CREATEOVERLAY structure [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_CREATEOVERLAY
+UID: NS:d3dkmthk._D3DKMT_CREATEOVERLAY
+title: "_D3DKMT_CREATEOVERLAY"
+author: windows-driver-content
+description: The D3DKMT_CREATEOVERLAY structure describes overlay hardware.
+old-location: display\d3dkmt_createoverlay.htm
+old-project: display
+ms.assetid: b020b06c-72e2-4322-a5db-fcfc46db429e
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3dkmthk/D3DKMT_CREATEOVERLAY, display.d3dkmt_createoverlay, OpenGL_Structs_0e2cd78f-0999-48a3-8a7d-329ddb46b46f.xml, _D3DKMT_CREATEOVERLAY, D3DKMT_CREATEOVERLAY, D3DKMT_CREATEOVERLAY structure [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmthk.h
+apiname:
+-	D3DKMT_CREATEOVERLAY
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_CREATEOVERLAY
 ---
 
 # _D3DKMT_CREATEOVERLAY structure

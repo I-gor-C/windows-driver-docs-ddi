@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.IoWMIHandleToInstanceName
-title : IoWMIHandleToInstanceName function
-author : windows-driver-content
-description : The IoWMIHandleToInstanceName routine determines the instance name for the WMI class instance implemented by the driver that is specified by a file handle.
-old-location : kernel\iowmihandletoinstancename.htm
-old-project : kernel
-ms.assetid : e9d8fde5-81b7-480b-8d7c-0005fd1868fb
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : IoWMIHandleToInstanceName routine [Kernel-Mode Driver Architecture], IoWMIHandleToInstanceName, wdm/IoWMIHandleToInstanceName, k104_7d97f756-2f7f-4788-bcbc-368e08b6b86f.xml, kernel.iowmihandletoinstancename
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows XP and later versions of the Windows operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.IoWMIHandleToInstanceName
+title: IoWMIHandleToInstanceName function
+author: windows-driver-content
+description: The IoWMIHandleToInstanceName routine determines the instance name for the WMI class instance implemented by the driver that is specified by a file handle.
+old-location: kernel\iowmihandletoinstancename.htm
+old-project: kernel
+ms.assetid: e9d8fde5-81b7-480b-8d7c-0005fd1868fb
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: IoWMIHandleToInstanceName routine [Kernel-Mode Driver Architecture], IoWMIHandleToInstanceName, wdm/IoWMIHandleToInstanceName, k104_7d97f756-2f7f-4788-bcbc-368e08b6b86f.xml, kernel.iowmihandletoinstancename
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows XP and later versions of the Windows operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoWMIHandleToInstanceName
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

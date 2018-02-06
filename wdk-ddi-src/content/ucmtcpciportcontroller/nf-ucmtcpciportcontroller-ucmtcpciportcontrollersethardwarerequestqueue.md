@@ -1,42 +1,47 @@
 ---
-UID : NF:ucmtcpciportcontroller.UcmTcpciPortControllerSetHardwareRequestQueue
-title : UcmTcpciPortControllerSetHardwareRequestQueue function
-author : windows-driver-content
-description : Assigns a framework queue object to which the UcmTcpciCx dispatches hardware requests for the port controller.
-old-location : buses\ucmtcpciportcontrollersethardwarerequestqueue.htm
-old-project : usbref
-ms.assetid : 47142adb-4d22-41eb-b455-93409bbffffb
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : UcmTcpciPortControllerSetHardwareRequestQueue, UcmTcpciPortControllerSetHardwareRequestQueue method [Buses], buses.ucmtcpciportcontrollersethardwarerequestqueue, ucmtcpciportcontroller/UcmTcpciPortControllerSetHardwareRequestQueue
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ucmtcpciportcontroller.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : UCMTCPCI_PORT_CONTROLLER_ALERT_TYPE
-req.product : Windows 10 or later.
+UID: NF:ucmtcpciportcontroller.UcmTcpciPortControllerSetHardwareRequestQueue
+title: UcmTcpciPortControllerSetHardwareRequestQueue function
+author: windows-driver-content
+description: Assigns a framework queue object to which the UcmTcpciCx dispatches hardware requests for the port controller.
+old-location: buses\ucmtcpciportcontrollersethardwarerequestqueue.htm
+old-project: usbref
+ms.assetid: 47142adb-4d22-41eb-b455-93409bbffffb
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: UcmTcpciPortControllerSetHardwareRequestQueue, UcmTcpciPortControllerSetHardwareRequestQueue method [Buses], buses.ucmtcpciportcontrollersethardwarerequestqueue, ucmtcpciportcontroller/UcmTcpciPortControllerSetHardwareRequestQueue
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ucmtcpciportcontroller.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ucmtcpciportcontroller.h
+apiname:
+-	UcmTcpciPortControllerSetHardwareRequestQueue
+product: Windows
+targetos: Windows
+req.typenames: UCMTCPCI_PORT_CONTROLLER_ALERT_TYPE
+req.product: Windows 10 or later.
 ---
 
 

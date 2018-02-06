@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGK_VIDPNSOURCEMODESET_INTERFACE
-title : "_DXGK_VIDPNSOURCEMODESET_INTERFACE"
-author : windows-driver-content
-description : The DXGK_VIDPNSOURCEMODESET_INTERFACE structure contains pointers to functions that belong to the VidPn Source Mode Set interface, which is implemented by the video present network (VidPN) manager.
-old-location : display\dxgk_vidpnsourcemodeset_interface.htm
-old-project : display
-ms.assetid : c608643f-e791-44b8-8719-4e98e10fa7b0
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3dkmddi/DXGK_VIDPNSOURCEMODESET_INTERFACE, display.dxgk_vidpnsourcemodeset_interface, _DXGK_VIDPNSOURCEMODESET_INTERFACE, DXGK_VIDPNSOURCEMODESET_INTERFACE structure [Display Devices], DXGK_VIDPNSOURCEMODESET_INTERFACE, DmStructs_8e8b4b99-8121-4cff-9d1b-f88a9041e7cd.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_VIDPNSOURCEMODESET_INTERFACE
+UID: NS:d3dkmddi._DXGK_VIDPNSOURCEMODESET_INTERFACE
+title: "_DXGK_VIDPNSOURCEMODESET_INTERFACE"
+author: windows-driver-content
+description: The DXGK_VIDPNSOURCEMODESET_INTERFACE structure contains pointers to functions that belong to the VidPn Source Mode Set interface, which is implemented by the video present network (VidPN) manager.
+old-location: display\dxgk_vidpnsourcemodeset_interface.htm
+old-project: display
+ms.assetid: c608643f-e791-44b8-8719-4e98e10fa7b0
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3dkmddi/DXGK_VIDPNSOURCEMODESET_INTERFACE, display.dxgk_vidpnsourcemodeset_interface, _DXGK_VIDPNSOURCEMODESET_INTERFACE, DXGK_VIDPNSOURCEMODESET_INTERFACE structure [Display Devices], DXGK_VIDPNSOURCEMODESET_INTERFACE, DmStructs_8e8b4b99-8121-4cff-9d1b-f88a9041e7cd.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DXGK_VIDPNSOURCEMODESET_INTERFACE
+product: Windows
+targetos: Windows
+req.typenames: DXGK_VIDPNSOURCEMODESET_INTERFACE
 ---
 
 # _DXGK_VIDPNSOURCEMODESET_INTERFACE structure

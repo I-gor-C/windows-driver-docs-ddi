@@ -1,42 +1,47 @@
 ---
-UID : NF:wiamicro.Scan
-title : Scan function
-author : windows-driver-content
-description : The Scan function reads data from the device and returns the data to the WIA Flatbed driver.
-old-location : image\scan.htm
-old-project : image
-ms.assetid : 057b548a-d9e4-4db4-b34f-d867b7be3971
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : Scan function [Imaging Devices], Scan, image.scan, MicroDrv_ab289619-86b7-47fd-a5f5-e8533da4db31.xml, wiamicro/Scan
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wiamicro.h
-req.include-header : Wiamicro.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Me and in Windows XP and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*LPDEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2, DEVICEDIALOGDATA2"
-req.product : Windows 10 or later.
+UID: NF:wiamicro.Scan
+title: Scan function
+author: windows-driver-content
+description: The Scan function reads data from the device and returns the data to the WIA Flatbed driver.
+old-location: image\scan.htm
+old-project: image
+ms.assetid: 057b548a-d9e4-4db4-b34f-d867b7be3971
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: Scan function [Imaging Devices], Scan, image.scan, MicroDrv_ab289619-86b7-47fd-a5f5-e8533da4db31.xml, wiamicro/Scan
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wiamicro.h
+req.include-header: Wiamicro.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Me and in Windows XP and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	Scan
+product: Windows
+targetos: Windows
+req.typenames: "*LPDEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2, DEVICEDIALOGDATA2"
+req.product: Windows 10 or later.
 ---
 
 

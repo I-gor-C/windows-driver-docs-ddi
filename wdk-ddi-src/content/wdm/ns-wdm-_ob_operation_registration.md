@@ -1,42 +1,49 @@
 ---
-UID : NS:wdm._OB_OPERATION_REGISTRATION
-title : "_OB_OPERATION_REGISTRATION"
-author : windows-driver-content
-description : The OB_OPERATION_REGISTRATION structure specifies ObjectPreCallback and ObjectPostCallback callback routines and the types of operations that the routines are called for.
-old-location : kernel\ob_operation_registration.htm
-old-project : kernel
-ms.assetid : 06da3ec0-b8d3-4bd8-8270-ead38b7deada
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.ob_operation_registration, PsThreadType, OB_OPERATION_REGISTRATION structure [Kernel-Mode Driver Architecture], POB_OPERATION_REGISTRATION, wdm/OB_OPERATION_REGISTRATION, PsProcessType, _OB_OPERATION_REGISTRATION, POB_OPERATION_REGISTRATION structure pointer [Kernel-Mode Driver Architecture], kstruct_c_257b9aaa-a8cc-49b2-b51e-16fcf5eb8084.xml, OB_OPERATION_REGISTRATION, *POB_OPERATION_REGISTRATION, wdm/POB_OPERATION_REGISTRATION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows Server 2008.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*POB_OPERATION_REGISTRATION, OB_OPERATION_REGISTRATION"
-req.product : Windows 10 or later.
+UID: NS:wdm._OB_OPERATION_REGISTRATION
+title: "_OB_OPERATION_REGISTRATION"
+author: windows-driver-content
+description: The OB_OPERATION_REGISTRATION structure specifies ObjectPreCallback and ObjectPostCallback callback routines and the types of operations that the routines are called for.
+old-location: kernel\ob_operation_registration.htm
+old-project: kernel
+ms.assetid: 06da3ec0-b8d3-4bd8-8270-ead38b7deada
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.ob_operation_registration, PsThreadType, OB_OPERATION_REGISTRATION structure [Kernel-Mode Driver Architecture], POB_OPERATION_REGISTRATION, wdm/OB_OPERATION_REGISTRATION, PsProcessType, _OB_OPERATION_REGISTRATION, POB_OPERATION_REGISTRATION structure pointer [Kernel-Mode Driver Architecture], kstruct_c_257b9aaa-a8cc-49b2-b51e-16fcf5eb8084.xml, OB_OPERATION_REGISTRATION, *POB_OPERATION_REGISTRATION, wdm/POB_OPERATION_REGISTRATION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows Server 2008.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	OB_OPERATION_REGISTRATION
+-	PsProcessType
+-	PsThreadType
+product: Windows
+targetos: Windows
+req.typenames: "*POB_OPERATION_REGISTRATION, OB_OPERATION_REGISTRATION"
+req.product: Windows 10 or later.
 ---
 
 # _OB_OPERATION_REGISTRATION structure

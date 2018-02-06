@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGKARGCB_GETCAPTUREADDRESS
-title : "_DXGKARGCB_GETCAPTUREADDRESS"
-author : windows-driver-content
-description : The DXGKARGCB_GETCAPTUREADDRESS structure describes parameters for retrieving information about a capture buffer that is associated with an allocation.
-old-location : display\dxgkargcb_getcaptureaddress.htm
-old-project : display
-ms.assetid : 95f1bbf4-06d8-48b7-a983-bf0b65ec2da3
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DXGKARGCB_GETCAPTUREADDRESS structure [Display Devices], DmStructs_24ed27a0-7ad3-44d1-aa93-c22733ebfb34.xml, display.dxgkargcb_getcaptureaddress, _DXGKARGCB_GETCAPTUREADDRESS, DXGKARGCB_GETCAPTUREADDRESS, d3dkmddi/DXGKARGCB_GETCAPTUREADDRESS, *INOUT_PDXGKARGCB_GETCAPTUREADDRESS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGKARGCB_GETCAPTUREADDRESS
+UID: NS:d3dkmddi._DXGKARGCB_GETCAPTUREADDRESS
+title: "_DXGKARGCB_GETCAPTUREADDRESS"
+author: windows-driver-content
+description: The DXGKARGCB_GETCAPTUREADDRESS structure describes parameters for retrieving information about a capture buffer that is associated with an allocation.
+old-location: display\dxgkargcb_getcaptureaddress.htm
+old-project: display
+ms.assetid: 95f1bbf4-06d8-48b7-a983-bf0b65ec2da3
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DXGKARGCB_GETCAPTUREADDRESS structure [Display Devices], DmStructs_24ed27a0-7ad3-44d1-aa93-c22733ebfb34.xml, display.dxgkargcb_getcaptureaddress, _DXGKARGCB_GETCAPTUREADDRESS, DXGKARGCB_GETCAPTUREADDRESS, d3dkmddi/DXGKARGCB_GETCAPTUREADDRESS, *INOUT_PDXGKARGCB_GETCAPTUREADDRESS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DXGKARGCB_GETCAPTUREADDRESS
+product: Windows
+targetos: Windows
+req.typenames: DXGKARGCB_GETCAPTUREADDRESS
 ---
 
 # _DXGKARGCB_GETCAPTUREADDRESS structure

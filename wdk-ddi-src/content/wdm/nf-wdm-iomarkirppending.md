@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.IoMarkIrpPending
-title : IoMarkIrpPending function
-author : windows-driver-content
-description : The IoMarkIrpPending routine marks the specified IRP, indicating that a driver's dispatch routine subsequently returned STATUS_PENDING because further processing is required by other driver routines.
-old-location : kernel\iomarkirppending.htm
-old-project : kernel
-ms.assetid : 424d5ebd-c871-40d8-b5b7-3a4a04fe60fa
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/IoMarkIrpPending, IoMarkIrpPending, k104_478903ab-e597-4df6-a66e-e0c1fbea49d9.xml, IoMarkIrpPending routine [Kernel-Mode Driver Architecture], kernel.iomarkirppending
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : CompleteRequestStatusCheck, CompletionEventChecking, IrpCancelField, LowerDriverReturn, MarkDevicePower, MarkingInterlockedQueuedIrps, MarkingQueuedIrps, MarkIrpPending, MarkIrpPending2, MarkPower, MarkPowerDown, MarkQueryRelations, MarkStartDevice, PendedCompletedRequest3
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.IoMarkIrpPending
+title: IoMarkIrpPending function
+author: windows-driver-content
+description: The IoMarkIrpPending routine marks the specified IRP, indicating that a driver's dispatch routine subsequently returned STATUS_PENDING because further processing is required by other driver routines.
+old-location: kernel\iomarkirppending.htm
+old-project: kernel
+ms.assetid: 424d5ebd-c871-40d8-b5b7-3a4a04fe60fa
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/IoMarkIrpPending, IoMarkIrpPending, k104_478903ab-e597-4df6-a66e-e0c1fbea49d9.xml, IoMarkIrpPending routine [Kernel-Mode Driver Architecture], kernel.iomarkirppending
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: CompleteRequestStatusCheck, CompletionEventChecking, IrpCancelField, LowerDriverReturn, MarkDevicePower, MarkingInterlockedQueuedIrps, MarkingQueuedIrps, MarkIrpPending, MarkIrpPending2, MarkPower, MarkPowerDown, MarkQueryRelations, MarkStartDevice, PendedCompletedRequest3
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	IoMarkIrpPending
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

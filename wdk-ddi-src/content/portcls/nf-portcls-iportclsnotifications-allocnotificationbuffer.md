@@ -1,41 +1,47 @@
 ---
-UID : NF:portcls.IPortClsNotifications.AllocNotificationBuffer
-title : IPortClsNotifications::AllocNotificationBuffer method
-author : windows-driver-content
-description : Allocates a buffer of the specified size, in the specified memory pool, for use in sending notifications, to allow for communications between audio modules and UWP apps.
-old-location : audio\iportclsnotifications_allocnotification.htm
-old-project : audio
-ms.assetid : 23DBA3D8-FC27-4F5D-9F1C-A22B6C2856D2
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : AllocNotificationBuffer method [Audio Devices], AllocNotificationBuffer, portcls/IPortClsNotifications::AllocNotificationBuffer, IPortClsNotifications interface [Audio Devices], AllocNotificationBuffer method, IPortClsNotifications, IPortClsNotifications::AllocNotificationBuffer, AllocNotificationBuffer method [Audio Devices], IPortClsNotifications interface, audio.iportclsnotifications_allocnotification
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : portcls.h
-req.include-header : Portcls.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 10, version 1703 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Portcls.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL (see Remarks section)"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.IPortClsNotifications.AllocNotificationBuffer
+title: IPortClsNotifications::AllocNotificationBuffer method
+author: windows-driver-content
+description: Allocates a buffer of the specified size, in the specified memory pool, for use in sending notifications, to allow for communications between audio modules and UWP apps.
+old-location: audio\iportclsnotifications_allocnotification.htm
+old-project: audio
+ms.assetid: 23DBA3D8-FC27-4F5D-9F1C-A22B6C2856D2
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: AllocNotificationBuffer method [Audio Devices], AllocNotificationBuffer, portcls/IPortClsNotifications::AllocNotificationBuffer, IPortClsNotifications interface [Audio Devices], AllocNotificationBuffer method, IPortClsNotifications, IPortClsNotifications::AllocNotificationBuffer, AllocNotificationBuffer method [Audio Devices], IPortClsNotifications interface, audio.iportclsnotifications_allocnotification
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: portcls.h
+req.include-header: Portcls.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 10, version 1703 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Portcls.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL (see Remarks section)"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Portcls.lib
+-	Portcls.dll
+apiname:
+-	IPortClsNotifications.AllocNotificationBuffer
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:ntifs._TOKEN_OWNER
-title : "_TOKEN_OWNER"
-author : windows-driver-content
-description : TOKEN_OWNER contains the default owner security identifier (SID) that will be applied to newly created objects.
-old-location : ifsk\token_owner.htm
-old-project : ifsk
-ms.assetid : 25f4a9c2-7146-422c-bd55-2520e7d8619b
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : "_TOKEN_OWNER, *PTOKEN_OWNER, TOKEN_OWNER, PTOKEN_OWNER structure pointer [Installable File System Drivers], securitystructures_1be454bb-1b55-4fe5-bdbb-85bfcf9dc9c8.xml, ifsk.token_owner, ntifs/TOKEN_OWNER, ntifs/PTOKEN_OWNER, TOKEN_OWNER structure [Installable File System Drivers], PTOKEN_OWNER"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PTOKEN_OWNER, TOKEN_OWNER"
+UID: NS:ntifs._TOKEN_OWNER
+title: "_TOKEN_OWNER"
+author: windows-driver-content
+description: TOKEN_OWNER contains the default owner security identifier (SID) that will be applied to newly created objects.
+old-location: ifsk\token_owner.htm
+old-project: ifsk
+ms.assetid: 25f4a9c2-7146-422c-bd55-2520e7d8619b
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: "_TOKEN_OWNER, *PTOKEN_OWNER, TOKEN_OWNER, PTOKEN_OWNER structure pointer [Installable File System Drivers], securitystructures_1be454bb-1b55-4fe5-bdbb-85bfcf9dc9c8.xml, ifsk.token_owner, ntifs/TOKEN_OWNER, ntifs/PTOKEN_OWNER, TOKEN_OWNER structure [Installable File System Drivers], PTOKEN_OWNER"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntifs.h
+apiname:
+-	TOKEN_OWNER
+product: Windows
+targetos: Windows
+req.typenames: "*PTOKEN_OWNER, TOKEN_OWNER"
 ---
 
 # _TOKEN_OWNER structure

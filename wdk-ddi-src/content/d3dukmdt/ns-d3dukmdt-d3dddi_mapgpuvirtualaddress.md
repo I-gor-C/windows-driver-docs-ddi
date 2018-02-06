@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dukmdt.D3DDDI_MAPGPUVIRTUALADDRESS
-title : D3DDDI_MAPGPUVIRTUALADDRESS
-author : windows-driver-content
-description : D3DDDI_MAPGPUVIRTUALADDRESS is used with pfnMapGpuVirtualAddressCb to map a graphics processing unit (GPU) virtual address ranges to a specific allocation range or to put it to the Invalid or Zero state.
-old-location : display\d3dddi_mapgpuvirtualaddress.htm
-old-project : display
-ms.assetid : A23F5847-0DA9-4F3F-B1C1-DACCA35DBC53
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DDDI_MAPGPUVIRTUALADDRESS, display.d3dddi_mapgpuvirtualaddress, Execute, D3DDDI_MAPGPUVIRTUALADDRESS structure [Display Devices], Zero, Write, NoAccess, d3dukmdt/D3DDDI_MAPGPUVIRTUALADDRESS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dukmdt.h
-req.include-header : D3dumddi.h, D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDI_MAPGPUVIRTUALADDRESS
+UID: NS:d3dukmdt.D3DDDI_MAPGPUVIRTUALADDRESS
+title: D3DDDI_MAPGPUVIRTUALADDRESS
+author: windows-driver-content
+description: D3DDDI_MAPGPUVIRTUALADDRESS is used with pfnMapGpuVirtualAddressCb to map a graphics processing unit (GPU) virtual address ranges to a specific allocation range or to put it to the Invalid or Zero state.
+old-location: display\d3dddi_mapgpuvirtualaddress.htm
+old-project: display
+ms.assetid: A23F5847-0DA9-4F3F-B1C1-DACCA35DBC53
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DDDI_MAPGPUVIRTUALADDRESS, display.d3dddi_mapgpuvirtualaddress, Execute, D3DDDI_MAPGPUVIRTUALADDRESS structure [Display Devices], Zero, Write, NoAccess, d3dukmdt/D3DDDI_MAPGPUVIRTUALADDRESS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dukmdt.h
+req.include-header: D3dumddi.h, D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dukmdt.h
+apiname:
+-	D3DDDI_MAPGPUVIRTUALADDRESS
+product: Windows
+targetos: Windows
+req.typenames: D3DDDI_MAPGPUVIRTUALADDRESS
 ---
 
 # D3DDDI_MAPGPUVIRTUALADDRESS structure

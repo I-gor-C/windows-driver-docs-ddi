@@ -1,41 +1,47 @@
 ---
-UID : NF:minitape.TapeClassCompareMemory
-title : TapeClassCompareMemory function
-author : windows-driver-content
-description : The TapeClassCompareMemory routine compares two memory buffers and returns the number of bytes that are equivalent.
-old-location : storage\tapeclasscomparememory.htm
-old-project : storage
-ms.assetid : dfff350c-ff76-49d3-b4ba-a5a51fabd419
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : minitape/TapeClassCompareMemory, tapeclas_77631fdd-b72a-4569-8066-54f260cb4d9a.xml, storage.tapeclasscomparememory, TapeClassCompareMemory routine [Storage Devices], TapeClassCompareMemory
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : minitape.h
-req.include-header : Minitape.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Tape.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TAPE_STATUS, *PTAPE_STATUS
+UID: NF:minitape.TapeClassCompareMemory
+title: TapeClassCompareMemory function
+author: windows-driver-content
+description: The TapeClassCompareMemory routine compares two memory buffers and returns the number of bytes that are equivalent.
+old-location: storage\tapeclasscomparememory.htm
+old-project: storage
+ms.assetid: dfff350c-ff76-49d3-b4ba-a5a51fabd419
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: minitape/TapeClassCompareMemory, tapeclas_77631fdd-b72a-4569-8066-54f260cb4d9a.xml, storage.tapeclasscomparememory, TapeClassCompareMemory routine [Storage Devices], TapeClassCompareMemory
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: minitape.h
+req.include-header: Minitape.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Tape.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Tape.lib
+-	Tape.dll
+apiname:
+-	TapeClassCompareMemory
+product: Windows
+targetos: Windows
+req.typenames: TAPE_STATUS, *PTAPE_STATUS
 ---
 
 

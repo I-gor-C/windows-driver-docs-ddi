@@ -1,41 +1,46 @@
 ---
-UID : NS:61883._CIP_TALK
-title : "_CIP_TALK"
-author : windows-driver-content
-description : This structure is used to begin transmission.
-old-location : ieee\cip_talk.htm
-old-project : IEEE
-ms.assetid : DD5EB79D-122B-4D17-9109-37473AC49C4A
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : PCIP_TALK structure pointer [Buses], PCIP_TALK, 61883/CIP_TALK, *PCIP_TALK, CIP_TALK, _CIP_TALK, 61883/PCIP_TALK, CIP_TALK structure [Buses], IEEE.cip_talk
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : 61883.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : CIP_TALK, *PCIP_TALK
+UID: NS:61883._CIP_TALK
+title: "_CIP_TALK"
+author: windows-driver-content
+description: This structure is used to begin transmission.
+old-location: ieee\cip_talk.htm
+old-project: IEEE
+ms.assetid: DD5EB79D-122B-4D17-9109-37473AC49C4A
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: PCIP_TALK structure pointer [Buses], PCIP_TALK, 61883/CIP_TALK, *PCIP_TALK, CIP_TALK, _CIP_TALK, 61883/PCIP_TALK, CIP_TALK structure [Buses], IEEE.cip_talk
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: 61883.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	61883.h
+apiname:
+-	CIP_TALK
+product: Windows
+targetos: Windows
+req.typenames: CIP_TALK, *PCIP_TALK
 ---
 
 # _CIP_TALK structure

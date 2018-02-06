@@ -1,42 +1,47 @@
 ---
-UID : NN:printerextension.IPrinterQueueViewEvent
-title : IPrinterQueueViewEvent
-author : windows-driver-content
-description : Provides the signature of the event handler.
-old-location : print\iprinterqueueviewevent.htm
-old-project : print
-ms.assetid : 23951787-C147-43A6-99D6-71AC037F6A43
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : print.iprinterqueueviewevent, IPrinterQueueViewEvent interface [Print Devices], IPrinterQueueViewEvent interface [Print Devices], described, IPrinterQueueViewEvent, printerextension/IPrinterQueueViewEvent
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : printerextension.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8.1
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : printerextension.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PrintSchemaSelectionType
-req.product : Windows 10 or later.
+UID: NN:printerextension.IPrinterQueueViewEvent
+title: IPrinterQueueViewEvent
+author: windows-driver-content
+description: Provides the signature of the event handler.
+old-location: print\iprinterqueueviewevent.htm
+old-project: print
+ms.assetid: 23951787-C147-43A6-99D6-71AC037F6A43
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: print.iprinterqueueviewevent, IPrinterQueueViewEvent interface [Print Devices], IPrinterQueueViewEvent interface [Print Devices], described, IPrinterQueueViewEvent, printerextension/IPrinterQueueViewEvent
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: printerextension.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8.1
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: printerextension.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Printerextension.h
+apiname:
+-	IPrinterQueueViewEvent
+product: Windows
+targetos: Windows
+req.typenames: PrintSchemaSelectionType
+req.product: Windows 10 or later.
 ---
 
 # IPrinterQueueViewEvent interface

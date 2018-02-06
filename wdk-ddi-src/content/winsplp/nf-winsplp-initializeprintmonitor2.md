@@ -1,42 +1,47 @@
 ---
-UID : NF:winsplp.InitializePrintMonitor2
-title : InitializePrintMonitor2 function
-author : windows-driver-content
-description : A print monitor's InitializePrintMonitor2 function initializes a print monitor for use with clustered print servers.
-old-location : print\initializeprintmonitor2.htm
-old-project : print
-ms.assetid : 73348405-0cc1-412a-b9b1-cfcc300190d7
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : print.initializeprintmonitor2, InitializePrintMonitor2 function [Print Devices], winsplp/InitializePrintMonitor2, spoolfnc_34b0ce7d-8bb5-4cb1-9539-cd3b1b0113f4.xml, InitializePrintMonitor2
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : winsplp.h
-req.include-header : Winsplp.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NOTIFICATION_CONFIG_FLAGS
-req.product : Windows 10 or later.
+UID: NF:winsplp.InitializePrintMonitor2
+title: InitializePrintMonitor2 function
+author: windows-driver-content
+description: A print monitor's InitializePrintMonitor2 function initializes a print monitor for use with clustered print servers.
+old-location: print\initializeprintmonitor2.htm
+old-project: print
+ms.assetid: 73348405-0cc1-412a-b9b1-cfcc300190d7
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: print.initializeprintmonitor2, InitializePrintMonitor2 function [Print Devices], winsplp/InitializePrintMonitor2, spoolfnc_34b0ce7d-8bb5-4cb1-9539-cd3b1b0113f4.xml, InitializePrintMonitor2
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: winsplp.h
+req.include-header: Winsplp.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	winsplp.h
+apiname:
+-	InitializePrintMonitor2
+product: Windows
+targetos: Windows
+req.typenames: NOTIFICATION_CONFIG_FLAGS
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmthk._D3DKMT_CREATEKEYEDMUTEX2
-title : "_D3DKMT_CREATEKEYEDMUTEX2"
-author : windows-driver-content
-description : Describes a keyed mutex that the D3DKMTCreateKeyedMutex2 function creates that includes private data.
-old-location : display\d3dkmt_createkeyedmutex2.htm
-old-project : display
-ms.assetid : 6c4c07ff-5e37-4094-9dc3-57082dec8edf
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : "_D3DKMT_CREATEKEYEDMUTEX2, d3dkmthk/D3DKMT_CREATEKEYEDMUTEX2, D3DKMT_CREATEKEYEDMUTEX2 structure [Display Devices], D3DKMT_CREATEKEYEDMUTEX2, display.d3dkmt_createkeyedmutex2"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_CREATEKEYEDMUTEX2
+UID: NS:d3dkmthk._D3DKMT_CREATEKEYEDMUTEX2
+title: "_D3DKMT_CREATEKEYEDMUTEX2"
+author: windows-driver-content
+description: Describes a keyed mutex that the D3DKMTCreateKeyedMutex2 function creates that includes private data.
+old-location: display\d3dkmt_createkeyedmutex2.htm
+old-project: display
+ms.assetid: 6c4c07ff-5e37-4094-9dc3-57082dec8edf
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: "_D3DKMT_CREATEKEYEDMUTEX2, d3dkmthk/D3DKMT_CREATEKEYEDMUTEX2, D3DKMT_CREATEKEYEDMUTEX2 structure [Display Devices], D3DKMT_CREATEKEYEDMUTEX2, display.d3dkmt_createkeyedmutex2"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	D3dkmthk.h
+apiname:
+-	D3DKMT_CREATEKEYEDMUTEX2
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_CREATEKEYEDMUTEX2
 ---
 
 # _D3DKMT_CREATEKEYEDMUTEX2 structure

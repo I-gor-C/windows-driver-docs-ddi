@@ -1,41 +1,46 @@
 ---
-UID : NE:ntddcdrm._TRACK_MODE_TYPE
-title : "_TRACK_MODE_TYPE"
-author : windows-driver-content
-description : The TRACK_MODE_TYPE enumeration type is used in conjunction with the IOCTL_CDROM_RAW_READ request and the RAW_READ_INFO structure to read data from a CD-ROM in raw mode.
-old-location : storage\track_mode_type.htm
-old-project : storage
-ms.assetid : ea7d7b5a-625f-41f7-b3fd-96a6bf338db9
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : ntddcdrm/XAForm2, TRACK_MODE_TYPE enumeration [Storage Devices], RawWithC2, structs-CD-ROM_41364f33-e1bf-48ac-abb6-4cacf5283f9f.xml, PTRACK_MODE_TYPE, XAForm2, PTRACK_MODE_TYPE enumeration pointer [Storage Devices], *PTRACK_MODE_TYPE, ntddcdrm/YellowMode2, ntddcdrm/RawWithC2AndSubCode, ntddcdrm/TRACK_MODE_TYPE, ntddcdrm/PTRACK_MODE_TYPE, TRACK_MODE_TYPE, ntddcdrm/RawWithSubCode, CDDA, _TRACK_MODE_TYPE, storage.track_mode_type, ntddcdrm/CDDA, RawWithC2AndSubCode, RawWithSubCode, YellowMode2, ntddcdrm/RawWithC2
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : ntddcdrm.h
-req.include-header : Ntddcdrm.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PTRACK_MODE_TYPE, TRACK_MODE_TYPE"
+UID: NE:ntddcdrm._TRACK_MODE_TYPE
+title: "_TRACK_MODE_TYPE"
+author: windows-driver-content
+description: The TRACK_MODE_TYPE enumeration type is used in conjunction with the IOCTL_CDROM_RAW_READ request and the RAW_READ_INFO structure to read data from a CD-ROM in raw mode.
+old-location: storage\track_mode_type.htm
+old-project: storage
+ms.assetid: ea7d7b5a-625f-41f7-b3fd-96a6bf338db9
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: ntddcdrm/XAForm2, TRACK_MODE_TYPE enumeration [Storage Devices], RawWithC2, structs-CD-ROM_41364f33-e1bf-48ac-abb6-4cacf5283f9f.xml, PTRACK_MODE_TYPE, XAForm2, PTRACK_MODE_TYPE enumeration pointer [Storage Devices], *PTRACK_MODE_TYPE, ntddcdrm/YellowMode2, ntddcdrm/RawWithC2AndSubCode, ntddcdrm/TRACK_MODE_TYPE, ntddcdrm/PTRACK_MODE_TYPE, TRACK_MODE_TYPE, ntddcdrm/RawWithSubCode, CDDA, _TRACK_MODE_TYPE, storage.track_mode_type, ntddcdrm/CDDA, RawWithC2AndSubCode, RawWithSubCode, YellowMode2, ntddcdrm/RawWithC2
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: ntddcdrm.h
+req.include-header: Ntddcdrm.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddcdrm.h
+apiname:
+-	TRACK_MODE_TYPE
+product: Windows
+targetos: Windows
+req.typenames: "*PTRACK_MODE_TYPE, TRACK_MODE_TYPE"
 ---
 
 # _TRACK_MODE_TYPE Enumeration
@@ -56,36 +61,36 @@ typedef enum _TRACK_MODE_TYPE {
 ## Constants
 
 <table>
-
-<tr>
-<td>CDDA</td>
-<td>Indicates that digital audio information mode should be used. For more information, see the IEC 908:1987 specification.</td>
-</tr>
-
-<tr>
-<td>RawWithC2</td>
-<td>CD_RAW_SECTOR_WITH_C2_SIZE per sector</td>
-</tr>
-
-<tr>
-<td>RawWithC2AndSubCode</td>
-<td>CD_RAW_SECTOR_WITH_C2_AND_SUBCODE_SIZE per sector</td>
-</tr>
-
-<tr>
-<td>RawWithSubCode</td>
-<td>CD_RAW_SECTOR_WITH_SUBCODE_SIZE per sector</td>
-</tr>
-
-<tr>
-<td>XAForm2</td>
-<td>Indicates that compact disc read-only memory extended architecture mode should be used. For more information see the specification for CD-ROM XA published by NV Philips and Sony Corporation.</td>
-</tr>
-
-<tr>
-<td>YellowMode2</td>
-<td>Indicates that CD-ROM mode should be used. This mode is used with read-only 120 mm Optical Data Discs (CD-ROM). For more information, see the ISO/IEC 10149 specification.</td>
-</tr>
+            
+                <tr>
+                    <td>CDDA</td>
+                    <td>Indicates that digital audio information mode should be used. For more information, see the IEC 908:1987 specification.</td>
+                </tr>
+            
+                <tr>
+                    <td>RawWithC2</td>
+                    <td>CD_RAW_SECTOR_WITH_C2_SIZE per sector</td>
+                </tr>
+            
+                <tr>
+                    <td>RawWithC2AndSubCode</td>
+                    <td>CD_RAW_SECTOR_WITH_C2_AND_SUBCODE_SIZE per sector</td>
+                </tr>
+            
+                <tr>
+                    <td>RawWithSubCode</td>
+                    <td>CD_RAW_SECTOR_WITH_SUBCODE_SIZE per sector</td>
+                </tr>
+            
+                <tr>
+                    <td>XAForm2</td>
+                    <td>Indicates that compact disc read-only memory extended architecture mode should be used. For more information see the specification for CD-ROM XA published by NV Philips and Sony Corporation.</td>
+                </tr>
+            
+                <tr>
+                    <td>YellowMode2</td>
+                    <td>Indicates that CD-ROM mode should be used. This mode is used with read-only 120 mm Optical Data Discs (CD-ROM). For more information, see the ISO/IEC 10149 specification.</td>
+                </tr>
 </table>
 
 
@@ -94,9 +99,9 @@ typedef enum _TRACK_MODE_TYPE {
 | ---- |:---- |
 | **Header** | ntddcdrm.h (include Ntddcdrm.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\ntddcdrm\ni-ntddcdrm-ioctl_cdrom_raw_read.md">IOCTL_CDROM_RAW_READ</a>
+        <a href="..\ntddcdrm\ni-ntddcdrm-ioctl_cdrom_raw_read.md">IOCTL_CDROM_RAW_READ</a>
 
 <a href="..\ntddcdrm\ns-ntddcdrm-__raw_read_info.md">RAW_READ_INFO</a>
 

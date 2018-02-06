@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmthk._D3DKMT_SETGAMMARAMP
-title : "_D3DKMT_SETGAMMARAMP"
-author : windows-driver-content
-description : The D3DKMT_SETGAMMARAMP structure describes parameters for setting the gamma ramp.
-old-location : display\d3dkmt_setgammaramp.htm
-old-project : display
-ms.assetid : aeab6bf1-bb6f-427e-a566-942b3fb061b2
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : OpenGL_Structs_3f9b4d19-5367-43bb-94a7-288d375412d7.xml, d3dkmthk/D3DKMT_SETGAMMARAMP, D3DKMT_SETGAMMARAMP, _D3DKMT_SETGAMMARAMP, display.d3dkmt_setgammaramp, D3DKMT_SETGAMMARAMP structure [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_SETGAMMARAMP
+UID: NS:d3dkmthk._D3DKMT_SETGAMMARAMP
+title: "_D3DKMT_SETGAMMARAMP"
+author: windows-driver-content
+description: The D3DKMT_SETGAMMARAMP structure describes parameters for setting the gamma ramp.
+old-location: display\d3dkmt_setgammaramp.htm
+old-project: display
+ms.assetid: aeab6bf1-bb6f-427e-a566-942b3fb061b2
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: OpenGL_Structs_3f9b4d19-5367-43bb-94a7-288d375412d7.xml, d3dkmthk/D3DKMT_SETGAMMARAMP, D3DKMT_SETGAMMARAMP, _D3DKMT_SETGAMMARAMP, display.d3dkmt_setgammaramp, D3DKMT_SETGAMMARAMP structure [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmthk.h
+apiname:
+-	D3DKMT_SETGAMMARAMP
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_SETGAMMARAMP
 ---
 
 # _D3DKMT_SETGAMMARAMP structure

@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddser._SERIAL_BAUD_RATE
-title : "_SERIAL_BAUD_RATE"
-author : windows-driver-content
-description : The SERIAL_BAUD_RATE structure specifies the baud rate at which a serial port is currently configured to transmit and receive data.
-old-location : serports\serial_baud_rate.htm
-old-project : serports
-ms.assetid : 1534B7AC-8968-4AE2-A871-D8F4D4E45CA1
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : SERIAL_BAUD_RATE structure [Serial Ports], ntddser/SERIAL_BAUD_RATE, SERIAL_BAUD_RATE, ntddser/PSERIAL_BAUD_RATE, serports.serial_baud_rate, *PSERIAL_BAUD_RATE, PSERIAL_BAUD_RATE, PSERIAL_BAUD_RATE structure pointer [Serial Ports], _SERIAL_BAUD_RATE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddser.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SERIAL_BAUD_RATE, *PSERIAL_BAUD_RATE
+UID: NS:ntddser._SERIAL_BAUD_RATE
+title: "_SERIAL_BAUD_RATE"
+author: windows-driver-content
+description: The SERIAL_BAUD_RATE structure specifies the baud rate at which a serial port is currently configured to transmit and receive data.
+old-location: serports\serial_baud_rate.htm
+old-project: serports
+ms.assetid: 1534B7AC-8968-4AE2-A871-D8F4D4E45CA1
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: SERIAL_BAUD_RATE structure [Serial Ports], ntddser/SERIAL_BAUD_RATE, SERIAL_BAUD_RATE, ntddser/PSERIAL_BAUD_RATE, serports.serial_baud_rate, *PSERIAL_BAUD_RATE, PSERIAL_BAUD_RATE, PSERIAL_BAUD_RATE structure pointer [Serial Ports], _SERIAL_BAUD_RATE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddser.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddser.h
+apiname:
+-	SERIAL_BAUD_RATE
+product: Windows
+targetos: Windows
+req.typenames: SERIAL_BAUD_RATE, *PSERIAL_BAUD_RATE
 ---
 
 # _SERIAL_BAUD_RATE structure

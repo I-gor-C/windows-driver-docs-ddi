@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IPnpCallback.OnD0Exit
-title : IPnpCallback::OnD0Exit method
-author : windows-driver-content
-description : The OnD0Exit method notifies a driver when a device exits the D0 power state so that the driver can perform necessary operations, such as disabling the device.
-old-location : wdf\ipnpcallback_ond0exit.htm
-old-project : wdf
-ms.assetid : 39eedeca-269d-4966-be1f-7cc5c9228a5c
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : IPnpCallback interface, OnD0Exit method, wudfddi/IPnpCallback::OnD0Exit, IPnpCallback::OnD0Exit, OnD0Exit method, IPnpCallback interface, IPnpCallback, OnD0Exit method, wdf.ipnpcallback_ond0exit, OnD0Exit, umdf.ipnpcallback_ond0exit, UMDFDeviceObjectRef_4c9ce2f7-92c8-4e0b-80fe-cfb06d1be83a.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IPnpCallback.OnD0Exit
+title: IPnpCallback::OnD0Exit method
+author: windows-driver-content
+description: The OnD0Exit method notifies a driver when a device exits the D0 power state so that the driver can perform necessary operations, such as disabling the device.
+old-location: wdf\ipnpcallback_ond0exit.htm
+old-project: wdf
+ms.assetid: 39eedeca-269d-4966-be1f-7cc5c9228a5c
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: IPnpCallback interface, OnD0Exit method, wudfddi/IPnpCallback::OnD0Exit, IPnpCallback::OnD0Exit, OnD0Exit method, IPnpCallback interface, IPnpCallback, OnD0Exit method, wdf.ipnpcallback_ond0exit, OnD0Exit, umdf.ipnpcallback_ond0exit, UMDFDeviceObjectRef_4c9ce2f7-92c8-4e0b-80fe-cfb06d1be83a.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Wudfddi.h
+apiname:
+-	IPnpCallback.OnD0Exit
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NS:winddiui._ATTRIBUTE_INFO_3
-title : "_ATTRIBUTE_INFO_3"
-author : windows-driver-content
-description : The ATTRIBUTE_INFO_3 structure is used as a parameter for a printer interface DLL's DrvQueryJobAttributes function. All member values are function-supplied.
-old-location : print\attribute_info_3.htm
-old-project : print
-ms.assetid : a9299c25-4210-4161-bfd6-8a13113b93e1
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : print_interface-graphics_473dca69-31fc-410d-a9d6-cfa5241f2c5b.xml, PATTRIBUTE_INFO_3 structure pointer [Print Devices], ATTRIBUTE_INFO_3, winddiui/PATTRIBUTE_INFO_3, *PATTRIBUTE_INFO_3, PATTRIBUTE_INFO_3, winddiui/ATTRIBUTE_INFO_3, _ATTRIBUTE_INFO_3, print.attribute_info_3, ATTRIBUTE_INFO_3 structure [Print Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : winddiui.h
-req.include-header : Winddiui.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PATTRIBUTE_INFO_3, ATTRIBUTE_INFO_3"
-req.product : Windows 10 or later.
+UID: NS:winddiui._ATTRIBUTE_INFO_3
+title: "_ATTRIBUTE_INFO_3"
+author: windows-driver-content
+description: The ATTRIBUTE_INFO_3 structure is used as a parameter for a printer interface DLL's DrvQueryJobAttributes function. All member values are function-supplied.
+old-location: print\attribute_info_3.htm
+old-project: print
+ms.assetid: a9299c25-4210-4161-bfd6-8a13113b93e1
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: print_interface-graphics_473dca69-31fc-410d-a9d6-cfa5241f2c5b.xml, PATTRIBUTE_INFO_3 structure pointer [Print Devices], ATTRIBUTE_INFO_3, winddiui/PATTRIBUTE_INFO_3, *PATTRIBUTE_INFO_3, PATTRIBUTE_INFO_3, winddiui/ATTRIBUTE_INFO_3, _ATTRIBUTE_INFO_3, print.attribute_info_3, ATTRIBUTE_INFO_3 structure [Print Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: winddiui.h
+req.include-header: Winddiui.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	winddiui.h
+apiname:
+-	ATTRIBUTE_INFO_3
+product: Windows
+targetos: Windows
+req.typenames: "*PATTRIBUTE_INFO_3, ATTRIBUTE_INFO_3"
+req.product: Windows 10 or later.
 ---
 
 # _ATTRIBUTE_INFO_3 structure

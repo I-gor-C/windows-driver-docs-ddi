@@ -1,42 +1,47 @@
 ---
-UID : NN:wudfddi.IQueueCallbackStateChange
-title : IQueueCallbackStateChange
-author : windows-driver-content
-description : An I/O queue object raises an event when it changes state. A driver can consume the event by registering the IQueueCallbackStateChange interface.
-old-location : wdf\iqueuecallbackstatechange.htm
-old-project : wdf
-ms.assetid : 39c66462-015d-49ba-9a37-0b3b928e5fbf
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.iqueuecallbackstatechange, IQueueCallbackStateChange interface, IQueueCallbackStateChange interface, described, IQueueCallbackStateChange, wudfddi/IQueueCallbackStateChange, UMDFQueueObjectRef_57a57868-6a9d-42b3-8c74-ceb6c4be03c3.xml, umdf.iqueuecallbackstatechange
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : wudfddi.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NN:wudfddi.IQueueCallbackStateChange
+title: IQueueCallbackStateChange
+author: windows-driver-content
+description: An I/O queue object raises an event when it changes state. A driver can consume the event by registering the IQueueCallbackStateChange interface.
+old-location: wdf\iqueuecallbackstatechange.htm
+old-project: wdf
+ms.assetid: 39c66462-015d-49ba-9a37-0b3b928e5fbf
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.iqueuecallbackstatechange, IQueueCallbackStateChange interface, IQueueCallbackStateChange interface, described, IQueueCallbackStateChange, wudfddi/IQueueCallbackStateChange, UMDFQueueObjectRef_57a57868-6a9d-42b3-8c74-ceb6c4be03c3.xml, umdf.iqueuecallbackstatechange
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: wudfddi.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	wudfddi.h
+apiname:
+-	IQueueCallbackStateChange
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 # IQueueCallbackStateChange interface

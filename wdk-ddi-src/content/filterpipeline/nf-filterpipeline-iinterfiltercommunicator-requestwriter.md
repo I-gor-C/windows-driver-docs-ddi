@@ -1,41 +1,46 @@
 ---
-UID : NF:filterpipeline.IInterFilterCommunicator.RequestWriter
-title : IInterFilterCommunicator::RequestWriter method
-author : windows-driver-content
-description : The RequestWriter method retrieves the writer interface for an IInterFilterCommunicator object.
-old-location : print\iinterfiltercommunicator_requestwriter.htm
-old-project : print
-ms.assetid : 1f0684f0-e15e-491f-ba09-314f831d7ba9
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : RequestWriter method [Print Devices], print.iinterfiltercommunicator_requestwriter, IInterFilterCommunicator::RequestWriter, filterpipeline_b2f3eac2-d759-45b4-818b-4d828c5aeedc.xml, RequestWriter, IInterFilterCommunicator interface [Print Devices], RequestWriter method, filterpipeline/IInterFilterCommunicator::RequestWriter, IInterFilterCommunicator, RequestWriter method [Print Devices], IInterFilterCommunicator interface
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : filterpipeline.h
-req.include-header : Filterpipeline.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : Filterpipeline.idl
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : filterpipeline.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:filterpipeline.IInterFilterCommunicator.RequestWriter
+title: IInterFilterCommunicator::RequestWriter method
+author: windows-driver-content
+description: The RequestWriter method retrieves the writer interface for an IInterFilterCommunicator object.
+old-location: print\iinterfiltercommunicator_requestwriter.htm
+old-project: print
+ms.assetid: 1f0684f0-e15e-491f-ba09-314f831d7ba9
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: RequestWriter method [Print Devices], print.iinterfiltercommunicator_requestwriter, IInterFilterCommunicator::RequestWriter, filterpipeline_b2f3eac2-d759-45b4-818b-4d828c5aeedc.xml, RequestWriter, IInterFilterCommunicator interface [Print Devices], RequestWriter method, filterpipeline/IInterFilterCommunicator::RequestWriter, IInterFilterCommunicator, RequestWriter method [Print Devices], IInterFilterCommunicator interface
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: filterpipeline.h
+req.include-header: Filterpipeline.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: Filterpipeline.idl
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: filterpipeline.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	filterpipeline.h
+apiname:
+-	IInterFilterCommunicator.RequestWriter
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

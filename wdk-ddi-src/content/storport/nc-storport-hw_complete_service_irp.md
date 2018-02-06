@@ -1,42 +1,47 @@
 ---
-UID : NC:storport.HW_COMPLETE_SERVICE_IRP
-title : HW_COMPLETE_SERVICE_IRP
-author : windows-driver-content
-description : The HwStorCompleteServiceIrp routine is called when the virtual adapter is being removed. When this happens, the Storport virtual miniport can complete any reverse-callback IRPs received in HwStorCompleteServiceIrp.
-old-location : storage\hwstorcompleteserviceirp.htm
-old-project : storage
-ms.assetid : 1a6a6073-27ec-43c0-b5ec-37ef4177fa54
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.hwstorcompleteserviceirp, HwStorCompleteServiceIrp routine [Storage Devices], HwStorCompleteServiceIrp, HW_COMPLETE_SERVICE_IRP, HW_COMPLETE_SERVICE_IRP, storport/HwStorCompleteServiceIrp, storvmini_57cddd18-134c-4ecc-9180-4c4b3ff3903d.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSTORAGE_DEVICE_UNIQUE_IDENTIFIER, STORAGE_DEVICE_UNIQUE_IDENTIFIER"
-req.product : Windows 10 or later.
+UID: NC:storport.HW_COMPLETE_SERVICE_IRP
+title: HW_COMPLETE_SERVICE_IRP
+author: windows-driver-content
+description: The HwStorCompleteServiceIrp routine is called when the virtual adapter is being removed. When this happens, the Storport virtual miniport can complete any reverse-callback IRPs received in HwStorCompleteServiceIrp.
+old-location: storage\hwstorcompleteserviceirp.htm
+old-project: storage
+ms.assetid: 1a6a6073-27ec-43c0-b5ec-37ef4177fa54
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.hwstorcompleteserviceirp, HwStorCompleteServiceIrp routine [Storage Devices], HwStorCompleteServiceIrp, HW_COMPLETE_SERVICE_IRP, HW_COMPLETE_SERVICE_IRP, storport/HwStorCompleteServiceIrp, storvmini_57cddd18-134c-4ecc-9180-4c4b3ff3903d.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Storport.h
+apiname:
+-	HwStorCompleteServiceIrp
+product: Windows
+targetos: Windows
+req.typenames: "*PSTORAGE_DEVICE_UNIQUE_IDENTIFIER, STORAGE_DEVICE_UNIQUE_IDENTIFIER"
+req.product: Windows 10 or later.
 ---
 
 

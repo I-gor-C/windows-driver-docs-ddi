@@ -1,41 +1,46 @@
 ---
-UID : NS:61883._SET_FCP_NOTIFY
-title : "_SET_FCP_NOTIFY"
-author : windows-driver-content
-description : This structure is used for FCP notification.
-old-location : ieee\set_fcp_notify.htm
-old-project : IEEE
-ms.assetid : 94A966C4-9FFA-4937-B7D8-D1A3608E4A7F
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : "_SET_FCP_NOTIFY, IEEE.set_fcp_notify, 61883/SET_FCP_NOTIFY, PSET_FCP_NOTIFY, SET_FCP_NOTIFY, SET_FCP_NOTIFY structure [Buses], *PSET_FCP_NOTIFY, PSET_FCP_NOTIFY structure pointer [Buses], 61883/PSET_FCP_NOTIFY"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : 61883.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SET_FCP_NOTIFY, *PSET_FCP_NOTIFY
+UID: NS:61883._SET_FCP_NOTIFY
+title: "_SET_FCP_NOTIFY"
+author: windows-driver-content
+description: This structure is used for FCP notification.
+old-location: ieee\set_fcp_notify.htm
+old-project: IEEE
+ms.assetid: 94A966C4-9FFA-4937-B7D8-D1A3608E4A7F
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: "_SET_FCP_NOTIFY, IEEE.set_fcp_notify, 61883/SET_FCP_NOTIFY, PSET_FCP_NOTIFY, SET_FCP_NOTIFY, SET_FCP_NOTIFY structure [Buses], *PSET_FCP_NOTIFY, PSET_FCP_NOTIFY structure pointer [Buses], 61883/PSET_FCP_NOTIFY"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: 61883.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	61883.h
+apiname:
+-	SET_FCP_NOTIFY
+product: Windows
+targetos: Windows
+req.typenames: SET_FCP_NOTIFY, *PSET_FCP_NOTIFY
 ---
 
 # _SET_FCP_NOTIFY structure

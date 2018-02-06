@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.tagKS_VIDEOINFO
-title : tagKS_VIDEOINFO
-author : windows-driver-content
-description : The KS_VIDEOINFO structure describes the bitmap and color information for a video stream.
-old-location : stream\ks_videoinfo.htm
-old-project : stream
-ms.assetid : e588a844-0b20-418c-9c65-e85f3a992d5c
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : vidcapstruct_66265491-9578-4165-941b-432184388ea2.xml, *PKS_VIDEOINFO, PKS_VIDEOINFO structure pointer [Streaming Media Devices], KS_VIDEOINFO, stream.ks_videoinfo, ksmedia/PKS_VIDEOINFO, tagKS_VIDEOINFO, PKS_VIDEOINFO, KS_VIDEOINFO structure [Streaming Media Devices], ksmedia/KS_VIDEOINFO
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKS_VIDEOINFO, KS_VIDEOINFO"
+UID: NS:ksmedia.tagKS_VIDEOINFO
+title: tagKS_VIDEOINFO
+author: windows-driver-content
+description: The KS_VIDEOINFO structure describes the bitmap and color information for a video stream.
+old-location: stream\ks_videoinfo.htm
+old-project: stream
+ms.assetid: e588a844-0b20-418c-9c65-e85f3a992d5c
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: vidcapstruct_66265491-9578-4165-941b-432184388ea2.xml, *PKS_VIDEOINFO, PKS_VIDEOINFO structure pointer [Streaming Media Devices], KS_VIDEOINFO, stream.ks_videoinfo, ksmedia/PKS_VIDEOINFO, tagKS_VIDEOINFO, PKS_VIDEOINFO, KS_VIDEOINFO structure [Streaming Media Devices], ksmedia/KS_VIDEOINFO
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	KS_VIDEOINFO
+product: Windows
+targetos: Windows
+req.typenames: "*PKS_VIDEOINFO, KS_VIDEOINFO"
 ---
 
 # tagKS_VIDEOINFO structure

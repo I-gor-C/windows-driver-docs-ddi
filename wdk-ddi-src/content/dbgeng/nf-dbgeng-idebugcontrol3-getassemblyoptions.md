@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugControl3.GetAssemblyOptions
-title : IDebugControl3::GetAssemblyOptions method
-author : windows-driver-content
-description : The GetAssemblyOptions method returns the assembly and disassembly options that affect how the debugger engine assembles and disassembles processor instructions for the target.
-old-location : debugger\getassemblyoptions.htm
-old-project : debugger
-ms.assetid : 8a3e82e0-4ff3-43ab-954e-a7473de51e5a
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : GetAssemblyOptions method [Windows Debugging], IDebugControl3, debugger.getassemblyoptions, IDebugControl3::GetAssemblyOptions, IDebugControl3 interface [Windows Debugging], GetAssemblyOptions method, IDebugControl_600ee4dc-0a79-42a9-a394-2ff053874f00.xml, GetAssemblyOptions, GetAssemblyOptions method [Windows Debugging], IDebugControl3 interface, dbgeng/IDebugControl3::GetAssemblyOptions
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl3.GetAssemblyOptions
+title: IDebugControl3::GetAssemblyOptions method
+author: windows-driver-content
+description: The GetAssemblyOptions method returns the assembly and disassembly options that affect how the debugger engine assembles and disassembles processor instructions for the target.
+old-location: debugger\getassemblyoptions.htm
+old-project: debugger
+ms.assetid: 8a3e82e0-4ff3-43ab-954e-a7473de51e5a
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: GetAssemblyOptions method [Windows Debugging], IDebugControl3, debugger.getassemblyoptions, IDebugControl3::GetAssemblyOptions, IDebugControl3 interface [Windows Debugging], GetAssemblyOptions method, IDebugControl_600ee4dc-0a79-42a9-a394-2ff053874f00.xml, GetAssemblyOptions, GetAssemblyOptions method [Windows Debugging], IDebugControl3 interface, dbgeng/IDebugControl3::GetAssemblyOptions
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl3.GetAssemblyOptions
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddndis._NDIS_IPSEC_OFFLOAD_V1
-title : "_NDIS_IPSEC_OFFLOAD_V1"
-author : windows-driver-content
-description : The NDIS_IPSEC_OFFLOAD_V1 structure provides Internet protocol security (IPsec) task offload information in the NDIS_OFFLOAD structure.Note  NDIS_IPSEC_OFFLOAD_V1 is only for NDIS 6.0.
-old-location : netvista\ndis_ipsec_offload_v1.htm
-old-project : netvista
-ms.assetid : 8ec0a052-2327-41e5-a9fa-83bcac9566f7
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : IPSEC_TPT_UDPESP_ENCAPTYPE_OTHER, IPSEC_TPT_UDPESP_ENCAPTYPE_IKE, _NDIS_IPSEC_OFFLOAD_V1, NDIS_IPSEC_OFFLOAD_V1 structure [Network Drivers Starting with Windows Vista], tcpip_offload_ref_8e1eae6b-44e5-425b-8312-ec890b8eb757.xml, ntddndis/NDIS_IPSEC_OFFLOAD_V1, NDIS_IPSEC_OFFLOAD_V1, *PNDIS_IPSEC_OFFLOAD_V1, PNDIS_IPSEC_OFFLOAD_V1, IPSEC_TUN_UDPESP_ENCAPTYPE_IKE, netvista.ndis_ipsec_offload_v1, IPSEC_TPTOVERTUN_UDPESP_ENCAPTYPE_OTHER, ntddndis/PNDIS_IPSEC_OFFLOAD_V1, PNDIS_IPSEC_OFFLOAD_V1 structure pointer [Network Drivers Starting with Windows Vista], IPSEC_TPT_UDPESP_OVER_PURE_TUN_ENCAPTYPE_IKE, IPSEC_TPT_UDPESP_OVER_PURE_TUN_ENCAPTYPE_OTHER, IPSEC_TPTOVERTUN_UDPESP_ENCAPTYPE_IKE, IPSEC_TUN_UDPESP_ENCAPTYPE_OTHER
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.0.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PNDIS_IPSEC_OFFLOAD_V1, NDIS_IPSEC_OFFLOAD_V1"
+UID: NS:ntddndis._NDIS_IPSEC_OFFLOAD_V1
+title: "_NDIS_IPSEC_OFFLOAD_V1"
+author: windows-driver-content
+description: The NDIS_IPSEC_OFFLOAD_V1 structure provides Internet protocol security (IPsec) task offload information in the NDIS_OFFLOAD structure.Note  NDIS_IPSEC_OFFLOAD_V1 is only for NDIS 6.0.
+old-location: netvista\ndis_ipsec_offload_v1.htm
+old-project: netvista
+ms.assetid: 8ec0a052-2327-41e5-a9fa-83bcac9566f7
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: IPSEC_TPT_UDPESP_ENCAPTYPE_OTHER, IPSEC_TPT_UDPESP_ENCAPTYPE_IKE, _NDIS_IPSEC_OFFLOAD_V1, NDIS_IPSEC_OFFLOAD_V1 structure [Network Drivers Starting with Windows Vista], tcpip_offload_ref_8e1eae6b-44e5-425b-8312-ec890b8eb757.xml, ntddndis/NDIS_IPSEC_OFFLOAD_V1, NDIS_IPSEC_OFFLOAD_V1, *PNDIS_IPSEC_OFFLOAD_V1, PNDIS_IPSEC_OFFLOAD_V1, IPSEC_TUN_UDPESP_ENCAPTYPE_IKE, netvista.ndis_ipsec_offload_v1, IPSEC_TPTOVERTUN_UDPESP_ENCAPTYPE_OTHER, ntddndis/PNDIS_IPSEC_OFFLOAD_V1, PNDIS_IPSEC_OFFLOAD_V1 structure pointer [Network Drivers Starting with Windows Vista], IPSEC_TPT_UDPESP_OVER_PURE_TUN_ENCAPTYPE_IKE, IPSEC_TPT_UDPESP_OVER_PURE_TUN_ENCAPTYPE_OTHER, IPSEC_TPTOVERTUN_UDPESP_ENCAPTYPE_IKE, IPSEC_TUN_UDPESP_ENCAPTYPE_OTHER
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.0.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddndis.h
+apiname:
+-	NDIS_IPSEC_OFFLOAD_V1
+product: Windows
+targetos: Windows
+req.typenames: "*PNDIS_IPSEC_OFFLOAD_V1, NDIS_IPSEC_OFFLOAD_V1"
 ---
 
 # _NDIS_IPSEC_OFFLOAD_V1 structure

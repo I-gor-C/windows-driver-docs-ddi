@@ -1,41 +1,47 @@
 ---
-UID : NF:fltkernel.FltAcquirePushLockShared
-title : FltAcquirePushLockShared macro
-author : windows-driver-content
-description : The FltAcquirePushLockShared routine acquires the given push lock for shared access by the calling thread.
-old-location : ifsk\fltacquirepushlockshared.htm
-old-project : ifsk
-ms.assetid : ee85e9fb-2112-4b36-af7f-7d142159bd2d
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltAcquirePushLockShared, FltAcquirePushLockShared routine [Installable File System Drivers], ifsk.fltacquirepushlockshared, FltApiRef_a_to_d_329cb1e6-2fb5-45fa-a533-71a60ce341cf.xml, fltkernel/FltAcquirePushLockShared
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : macro
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltAcquirePushLockShared
+title: FltAcquirePushLockShared macro
+author: windows-driver-content
+description: The FltAcquirePushLockShared routine acquires the given push lock for shared access by the calling thread.
+old-location: ifsk\fltacquirepushlockshared.htm
+old-project: ifsk
+ms.assetid: ee85e9fb-2112-4b36-af7f-7d142159bd2d
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltAcquirePushLockShared, FltAcquirePushLockShared routine [Installable File System Drivers], ifsk.fltacquirepushlockshared, FltApiRef_a_to_d_329cb1e6-2fb5-45fa-a533-71a60ce341cf.xml, fltkernel/FltAcquirePushLockShared
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: macro
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	FltMgr.lib
+-	FltMgr.dll
+apiname:
+-	FltAcquirePushLockShared
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

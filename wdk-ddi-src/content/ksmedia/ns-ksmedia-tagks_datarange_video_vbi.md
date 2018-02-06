@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.tagKS_DATARANGE_VIDEO_VBI
-title : tagKS_DATARANGE_VIDEO_VBI
-author : windows-driver-content
-description : The KS_DATARANGE_VIDEO_VBI structure describes a range of data formats containing vertical blanking interval (VBI) data.
-old-location : stream\ks_datarange_video_vbi.htm
-old-project : stream
-ms.assetid : 83801ea2-1beb-4b73-8906-ffefee67a2ac
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ksmedia/PKS_DATARANGE_VIDEO_VBI, KS_DATARANGE_VIDEO_VBI structure [Streaming Media Devices], vidcapstruct_79d2aa9b-f3b9-4faf-b06e-6048686602a5.xml, PKS_DATARANGE_VIDEO_VBI, tagKS_DATARANGE_VIDEO_VBI, PKS_DATARANGE_VIDEO_VBI structure pointer [Streaming Media Devices], stream.ks_datarange_video_vbi, *PKS_DATARANGE_VIDEO_VBI, ksmedia/KS_DATARANGE_VIDEO_VBI, KS_DATARANGE_VIDEO_VBI
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KS_DATARANGE_VIDEO_VBI, *PKS_DATARANGE_VIDEO_VBI
+UID: NS:ksmedia.tagKS_DATARANGE_VIDEO_VBI
+title: tagKS_DATARANGE_VIDEO_VBI
+author: windows-driver-content
+description: The KS_DATARANGE_VIDEO_VBI structure describes a range of data formats containing vertical blanking interval (VBI) data.
+old-location: stream\ks_datarange_video_vbi.htm
+old-project: stream
+ms.assetid: 83801ea2-1beb-4b73-8906-ffefee67a2ac
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ksmedia/PKS_DATARANGE_VIDEO_VBI, KS_DATARANGE_VIDEO_VBI structure [Streaming Media Devices], vidcapstruct_79d2aa9b-f3b9-4faf-b06e-6048686602a5.xml, PKS_DATARANGE_VIDEO_VBI, tagKS_DATARANGE_VIDEO_VBI, PKS_DATARANGE_VIDEO_VBI structure pointer [Streaming Media Devices], stream.ks_datarange_video_vbi, *PKS_DATARANGE_VIDEO_VBI, ksmedia/KS_DATARANGE_VIDEO_VBI, KS_DATARANGE_VIDEO_VBI
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	KS_DATARANGE_VIDEO_VBI
+product: Windows
+targetos: Windows
+req.typenames: KS_DATARANGE_VIDEO_VBI, *PKS_DATARANGE_VIDEO_VBI
 ---
 
 # tagKS_DATARANGE_VIDEO_VBI structure

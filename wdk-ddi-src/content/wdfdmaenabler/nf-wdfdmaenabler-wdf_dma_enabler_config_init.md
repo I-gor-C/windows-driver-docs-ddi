@@ -1,42 +1,47 @@
 ---
-UID : NF:wdfdmaenabler.WDF_DMA_ENABLER_CONFIG_INIT
-title : WDF_DMA_ENABLER_CONFIG_INIT function
-author : windows-driver-content
-description : The WDF_DMA_ENABLER_CONFIG_INIT function initializes a driver's WDF_DMA_ENABLER_CONFIG structure.
-old-location : wdf\wdf_dma_enabler_config_init.htm
-old-project : wdf
-ms.assetid : b01efb50-a3b2-4ffd-83e6-daa0ebbc6484
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WDF_DMA_ENABLER_CONFIG_INIT function, DFDmaObjectRef_2d577e59-2038-4850-a67c-6e7f3b795387.xml, kmdf.wdf_dma_enabler_config_init, WDF_DMA_ENABLER_CONFIG_INIT, wdfdmaenabler/WDF_DMA_ENABLER_CONFIG_INIT, wdf.wdf_dma_enabler_config_init
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfdmaenabler.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_DMA_PROFILE
-req.product : Windows 10 or later.
+UID: NF:wdfdmaenabler.WDF_DMA_ENABLER_CONFIG_INIT
+title: WDF_DMA_ENABLER_CONFIG_INIT function
+author: windows-driver-content
+description: The WDF_DMA_ENABLER_CONFIG_INIT function initializes a driver's WDF_DMA_ENABLER_CONFIG structure.
+old-location: wdf\wdf_dma_enabler_config_init.htm
+old-project: wdf
+ms.assetid: b01efb50-a3b2-4ffd-83e6-daa0ebbc6484
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WDF_DMA_ENABLER_CONFIG_INIT function, DFDmaObjectRef_2d577e59-2038-4850-a67c-6e7f3b795387.xml, kmdf.wdf_dma_enabler_config_init, WDF_DMA_ENABLER_CONFIG_INIT, wdfdmaenabler/WDF_DMA_ENABLER_CONFIG_INIT, wdf.wdf_dma_enabler_config_init
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfdmaenabler.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfdmaenabler.h
+apiname:
+-	WDF_DMA_ENABLER_CONFIG_INIT
+product: Windows
+targetos: Windows
+req.typenames: WDF_DMA_PROFILE
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisInitAnsiString
-title : NdisInitAnsiString macro
-author : windows-driver-content
-description : The NdisInitAnsiString function initializes a counted ANSI string.
-old-location : netvista\ndisinitansistring.htm
-old-project : netvista
-ms.assetid : e8209781-36b1-4008-94bb-82bdb16f20bf
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NdisInitAnsiString macro [Network Drivers Starting with Windows Vista], ndis_string_ref_2d47b8b6-3b3e-48ca-a2be-ee1bca117ef6.xml, netvista.ndisinitansistring, NdisInitAnsiString, ndis/NdisInitAnsiString
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : macro
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported for existing drivers in  NDIS 6.0 and later, but new drivers should use RtlInitString instead.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_Miscellaneous_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : See Remarks section
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisInitAnsiString
+title: NdisInitAnsiString macro
+author: windows-driver-content
+description: The NdisInitAnsiString function initializes a counted ANSI string.
+old-location: netvista\ndisinitansistring.htm
+old-project: netvista
+ms.assetid: e8209781-36b1-4008-94bb-82bdb16f20bf
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NdisInitAnsiString macro [Network Drivers Starting with Windows Vista], ndis_string_ref_2d47b8b6-3b3e-48ca-a2be-ee1bca117ef6.xml, netvista.ndisinitansistring, NdisInitAnsiString, ndis/NdisInitAnsiString
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: macro
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported for existing drivers in  NDIS 6.0 and later, but new drivers should use RtlInitString instead.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_Miscellaneous_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: See Remarks section
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisInitAnsiString
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

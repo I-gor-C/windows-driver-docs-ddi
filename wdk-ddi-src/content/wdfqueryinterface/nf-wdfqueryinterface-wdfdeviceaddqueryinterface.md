@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfqueryinterface.WdfDeviceAddQueryInterface
-title : WdfDeviceAddQueryInterface function
-author : windows-driver-content
-description : The WdfDeviceAddQueryInterface method creates a driver-defined interface that other drivers can query and use.
-old-location : wdf\wdfdeviceaddqueryinterface.htm
-old-project : wdf
-ms.assetid : 6e811b5e-bd2a-473b-8e5c-52bfbd9b8f7c
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WdfDeviceAddQueryInterface, DFDeviceObjectDriverDefIntRef_6d1dbdca-5adf-4641-91c9-7c59e2af6869.xml, PFN_WDFDEVICEADDQUERYINTERFACE, kmdf.wdfdeviceaddqueryinterface, wdfqueryinterface/WdfDeviceAddQueryInterface, wdf.wdfdeviceaddqueryinterface, WdfDeviceAddQueryInterface method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfqueryinterface.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_PDO_EVENT_CALLBACKS, *PWDF_PDO_EVENT_CALLBACKS
-req.product : Windows 10 or later.
+UID: NF:wdfqueryinterface.WdfDeviceAddQueryInterface
+title: WdfDeviceAddQueryInterface function
+author: windows-driver-content
+description: The WdfDeviceAddQueryInterface method creates a driver-defined interface that other drivers can query and use.
+old-location: wdf\wdfdeviceaddqueryinterface.htm
+old-project: wdf
+ms.assetid: 6e811b5e-bd2a-473b-8e5c-52bfbd9b8f7c
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WdfDeviceAddQueryInterface, DFDeviceObjectDriverDefIntRef_6d1dbdca-5adf-4641-91c9-7c59e2af6869.xml, PFN_WDFDEVICEADDQUERYINTERFACE, kmdf.wdfdeviceaddqueryinterface, wdfqueryinterface/WdfDeviceAddQueryInterface, wdf.wdfdeviceaddqueryinterface, WdfDeviceAddQueryInterface method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfqueryinterface.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfDeviceAddQueryInterface
+product: Windows
+targetos: Windows
+req.typenames: WDF_PDO_EVENT_CALLBACKS, *PWDF_PDO_EVENT_CALLBACKS
+req.product: Windows 10 or later.
 ---
 
 

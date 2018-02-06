@@ -1,42 +1,47 @@
 ---
-UID : NS:wmistr.tagWNODE_EVENT_REFERENCE
-title : tagWNODE_EVENT_REFERENCE
-author : windows-driver-content
-description : The WNODE_EVENT_REFERENCE structure contains information that WMI can use to query for an event that exceeds the event size limit set in the registry.
-old-location : kernel\wnode_event_reference.htm
-old-project : kernel
-ms.assetid : 9dfe75e5-301e-4378-a2ad-f43676d8c208
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : PWNODE_EVENT_REFERENCE, tagWNODE_EVENT_REFERENCE, WNODE_EVENT_REFERENCE structure [Kernel-Mode Driver Architecture], wmistr/WNODE_EVENT_REFERENCE, *PWNODE_EVENT_REFERENCE, WNODE_EVENT_REFERENCE, wmistr/PWNODE_EVENT_REFERENCE, kernel.wnode_event_reference, kstruct_d_cf8551b3-5506-4c02-b56a-a4836429d5e1.xml, PWNODE_EVENT_REFERENCE structure pointer [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wmistr.h
-req.include-header : Wmistr.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WNODE_EVENT_REFERENCE, *PWNODE_EVENT_REFERENCE
-req.product : Windows 10 or later.
+UID: NS:wmistr.tagWNODE_EVENT_REFERENCE
+title: tagWNODE_EVENT_REFERENCE
+author: windows-driver-content
+description: The WNODE_EVENT_REFERENCE structure contains information that WMI can use to query for an event that exceeds the event size limit set in the registry.
+old-location: kernel\wnode_event_reference.htm
+old-project: kernel
+ms.assetid: 9dfe75e5-301e-4378-a2ad-f43676d8c208
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: PWNODE_EVENT_REFERENCE, tagWNODE_EVENT_REFERENCE, WNODE_EVENT_REFERENCE structure [Kernel-Mode Driver Architecture], wmistr/WNODE_EVENT_REFERENCE, *PWNODE_EVENT_REFERENCE, WNODE_EVENT_REFERENCE, wmistr/PWNODE_EVENT_REFERENCE, kernel.wnode_event_reference, kstruct_d_cf8551b3-5506-4c02-b56a-a4836429d5e1.xml, PWNODE_EVENT_REFERENCE structure pointer [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wmistr.h
+req.include-header: Wmistr.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wmistr.h
+apiname:
+-	WNODE_EVENT_REFERENCE
+product: Windows
+targetos: Windows
+req.typenames: WNODE_EVENT_REFERENCE, *PWNODE_EVENT_REFERENCE
+req.product: Windows 10 or later.
 ---
 
 # tagWNODE_EVENT_REFERENCE structure

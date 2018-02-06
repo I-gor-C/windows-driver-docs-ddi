@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.MmSizeOfMdl
-title : MmSizeOfMdl function
-author : windows-driver-content
-description : The MmSizeOfMdl routine returns the number of bytes to allocate for an MDL describing a given address range.
-old-location : kernel\mmsizeofmdl.htm
-old-project : kernel
-ms.assetid : 83e7d4be-df76-4dc8-a8e2-91d279127ef1
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/MmSizeOfMdl, MmSizeOfMdl, MmSizeOfMdl routine [Kernel-Mode Driver Architecture], kernel.mmsizeofmdl, k106_7cddc848-8b01-4a6a-b5b1-977f2386fc21.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.MmSizeOfMdl
+title: MmSizeOfMdl function
+author: windows-driver-content
+description: The MmSizeOfMdl routine returns the number of bytes to allocate for an MDL describing a given address range.
+old-location: kernel\mmsizeofmdl.htm
+old-project: kernel
+ms.assetid: 83e7d4be-df76-4dc8-a8e2-91d279127ef1
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/MmSizeOfMdl, MmSizeOfMdl, MmSizeOfMdl routine [Kernel-Mode Driver Architecture], kernel.mmsizeofmdl, k106_7cddc848-8b01-4a6a-b5b1-977f2386fc21.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	MmSizeOfMdl
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

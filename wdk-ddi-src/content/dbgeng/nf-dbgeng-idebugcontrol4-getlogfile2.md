@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugControl4.GetLogFile2
-title : IDebugControl4::GetLogFile2 method
-author : windows-driver-content
-description : The GetLogFile2 method returns the name of the currently open log file.
-old-location : debugger\getlogfile2.htm
-old-project : debugger
-ms.assetid : 77ab08ce-96c5-4330-aab2-1bf4ab23cfc4
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugControl4 interface [Windows Debugging], GetLogFile2 method, GetLogFile2 method [Windows Debugging], IDebugControl4 interface, debugger.getlogfile2, GetLogFile2 method [Windows Debugging], IDebugControl_9822bd84-b8ee-4d36-a66f-e38567d23646.xml, IDebugControl4::GetLogFile2, GetLogFile2, IDebugControl4, dbgeng/IDebugControl4::GetLogFile2
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl4.GetLogFile2
+title: IDebugControl4::GetLogFile2 method
+author: windows-driver-content
+description: The GetLogFile2 method returns the name of the currently open log file.
+old-location: debugger\getlogfile2.htm
+old-project: debugger
+ms.assetid: 77ab08ce-96c5-4330-aab2-1bf4ab23cfc4
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugControl4 interface [Windows Debugging], GetLogFile2 method, GetLogFile2 method [Windows Debugging], IDebugControl4 interface, debugger.getlogfile2, GetLogFile2 method [Windows Debugging], IDebugControl_9822bd84-b8ee-4d36-a66f-e38567d23646.xml, IDebugControl4::GetLogFile2, GetLogFile2, IDebugControl4, dbgeng/IDebugControl4::GetLogFile2
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl4.GetLogFile2
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

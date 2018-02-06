@@ -1,42 +1,47 @@
 ---
-UID : NS:printoem._DRVPROCS
-title : "_DRVPROCS"
-author : windows-driver-content
-description : The DRVPROCS structure is obsolete and is not used with the COM interfaces for Microsoft printer drivers.
-old-location : print\drvprocs.htm
-old-project : print
-ms.assetid : fcdfb7ba-cbb4-454b-b366-82d0c95b4afd
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : print_unidrv-pscript_rendering_63cf2b11-04c8-43f3-951b-5755764059f9.xml, DRVPROCS, PDRVPROCS, printoem/PDRVPROCS, PDRVPROCS structure pointer [Print Devices], print.drvprocs, _DRVPROCS, printoem/DRVPROCS, DRVPROCS structure [Print Devices], *PDRVPROCS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : printoem.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DRVPROCS, *PDRVPROCS
-req.product : Windows 10 or later.
+UID: NS:printoem._DRVPROCS
+title: "_DRVPROCS"
+author: windows-driver-content
+description: The DRVPROCS structure is obsolete and is not used with the COM interfaces for Microsoft printer drivers.
+old-location: print\drvprocs.htm
+old-project: print
+ms.assetid: fcdfb7ba-cbb4-454b-b366-82d0c95b4afd
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: print_unidrv-pscript_rendering_63cf2b11-04c8-43f3-951b-5755764059f9.xml, DRVPROCS, PDRVPROCS, printoem/PDRVPROCS, PDRVPROCS structure pointer [Print Devices], print.drvprocs, _DRVPROCS, printoem/DRVPROCS, DRVPROCS structure [Print Devices], *PDRVPROCS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: printoem.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	printoem.h
+apiname:
+-	DRVPROCS
+product: Windows
+targetos: Windows
+req.typenames: DRVPROCS, *PDRVPROCS
+req.product: Windows 10 or later.
 ---
 
 # _DRVPROCS structure

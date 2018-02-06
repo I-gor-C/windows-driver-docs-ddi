@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGK_ENUM_PIVOT
-title : "_DXGK_ENUM_PIVOT"
-author : windows-driver-content
-description : The DXGK_ENUM_PIVOT structure identifies either a video present source or a video present target as the enumeration pivot in a call to DxgkDdiEnumVidPnCofuncModality.
-old-location : display\dxgk_enum_pivot.htm
-old-project : display
-ms.assetid : f2a234f3-aec9-4fe5-b720-bed9747d5a7f
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DmStructs_7a6fa02d-2223-4052-9911-cf9be1ab931a.xml, DXGK_ENUM_PIVOT structure [Display Devices], _DXGK_ENUM_PIVOT, display.dxgk_enum_pivot, DXGK_ENUM_PIVOT, d3dkmddi/DXGK_ENUM_PIVOT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_ENUM_PIVOT
+UID: NS:d3dkmddi._DXGK_ENUM_PIVOT
+title: "_DXGK_ENUM_PIVOT"
+author: windows-driver-content
+description: The DXGK_ENUM_PIVOT structure identifies either a video present source or a video present target as the enumeration pivot in a call to DxgkDdiEnumVidPnCofuncModality.
+old-location: display\dxgk_enum_pivot.htm
+old-project: display
+ms.assetid: f2a234f3-aec9-4fe5-b720-bed9747d5a7f
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DmStructs_7a6fa02d-2223-4052-9911-cf9be1ab931a.xml, DXGK_ENUM_PIVOT structure [Display Devices], _DXGK_ENUM_PIVOT, display.dxgk_enum_pivot, DXGK_ENUM_PIVOT, d3dkmddi/DXGK_ENUM_PIVOT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DXGK_ENUM_PIVOT
+product: Windows
+targetos: Windows
+req.typenames: DXGK_ENUM_PIVOT
 ---
 
 # _DXGK_ENUM_PIVOT structure

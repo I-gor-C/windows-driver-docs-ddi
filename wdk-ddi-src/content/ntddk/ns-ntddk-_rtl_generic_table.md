@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddk._RTL_GENERIC_TABLE
-title : "_RTL_GENERIC_TABLE"
-author : windows-driver-content
-description : The RTL_GENERIC_TABLE structure contains file system-specific data for a splay tree.
-old-location : ifsk\rtl_generic_table.htm
-old-project : ifsk
-ms.assetid : 0e5dba1b-8b0d-470a-8ead-4c022e9da7fe
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.rtl_generic_table, RTL_GENERIC_TABLE structure [Installable File System Drivers], PRTL_GENERIC_TABLE, PRTL_GENERIC_TABLE structure pointer [Installable File System Drivers], _RTL_GENERIC_TABLE, ntddk/PRTL_GENERIC_TABLE, othersystemstructures_ce9bd546-d224-429d-8835-be3d5ecb1a52.xml, RTL_GENERIC_TABLE, ntddk/RTL_GENERIC_TABLE, *PRTL_GENERIC_TABLE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Windows
-req.target-min-winverclnt : This structure is available on Windows 2000 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RTL_GENERIC_TABLE
+UID: NS:ntddk._RTL_GENERIC_TABLE
+title: "_RTL_GENERIC_TABLE"
+author: windows-driver-content
+description: The RTL_GENERIC_TABLE structure contains file system-specific data for a splay tree.
+old-location: ifsk\rtl_generic_table.htm
+old-project: ifsk
+ms.assetid: 0e5dba1b-8b0d-470a-8ead-4c022e9da7fe
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.rtl_generic_table, RTL_GENERIC_TABLE structure [Installable File System Drivers], PRTL_GENERIC_TABLE, PRTL_GENERIC_TABLE structure pointer [Installable File System Drivers], _RTL_GENERIC_TABLE, ntddk/PRTL_GENERIC_TABLE, othersystemstructures_ce9bd546-d224-429d-8835-be3d5ecb1a52.xml, RTL_GENERIC_TABLE, ntddk/RTL_GENERIC_TABLE, *PRTL_GENERIC_TABLE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Windows
+req.target-min-winverclnt: This structure is available on Windows 2000 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddk.h
+apiname:
+-	RTL_GENERIC_TABLE
+product: Windows
+targetos: Windows
+req.typenames: RTL_GENERIC_TABLE
 ---
 
 # _RTL_GENERIC_TABLE structure

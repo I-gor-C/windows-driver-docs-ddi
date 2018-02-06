@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisRetreatNetBufferListDataStart
-title : NdisRetreatNetBufferListDataStart function
-author : windows-driver-content
-description : Call the NdisRetreatNetBufferListDataStart function to increase the used data space in all the NET_BUFFER structures in a NET_BUFFER_LIST structure.
-old-location : netvista\ndisretreatnetbufferlistdatastart.htm
-old-project : netvista
-ms.assetid : 76a1294f-d098-4751-9b59-923993379c6e
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : ndis_netbuf_functions_ref_9a59d1c8-f5b1-490b-b091-84c709b82605.xml, NdisRetreatNetBufferListDataStart function [Network Drivers Starting with Windows Vista], NdisRetreatNetBufferListDataStart, netvista.ndisretreatnetbufferlistdatastart, ndis/NdisRetreatNetBufferListDataStart
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_NetBuffer_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisRetreatNetBufferListDataStart
+title: NdisRetreatNetBufferListDataStart function
+author: windows-driver-content
+description: Call the NdisRetreatNetBufferListDataStart function to increase the used data space in all the NET_BUFFER structures in a NET_BUFFER_LIST structure.
+old-location: netvista\ndisretreatnetbufferlistdatastart.htm
+old-project: netvista
+ms.assetid: 76a1294f-d098-4751-9b59-923993379c6e
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: ndis_netbuf_functions_ref_9a59d1c8-f5b1-490b-b091-84c709b82605.xml, NdisRetreatNetBufferListDataStart function [Network Drivers Starting with Windows Vista], NdisRetreatNetBufferListDataStart, netvista.ndisretreatnetbufferlistdatastart, ndis/NdisRetreatNetBufferListDataStart
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_NetBuffer_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisRetreatNetBufferListDataStart
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

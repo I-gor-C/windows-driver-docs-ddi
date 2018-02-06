@@ -1,41 +1,46 @@
 ---
-UID : NC:ndis.PROTOCOL_CL_CALL_CONNECTED
-title : PROTOCOL_CL_CALL_CONNECTED
-author : windows-driver-content
-description : The ProtocolClCallConnected function is used by connection-oriented NDIS clients that accept incoming calls.
-old-location : netvista\protocolclcallconnected.htm
-old-project : netvista
-ms.assetid : 675b2066-6a65-47cf-bde7-3c843f97c960
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.protocolclcallconnected, ProtocolClCallConnected callback function [Network Drivers Starting with Windows Vista], ProtocolClCallConnected, PROTOCOL_CL_CALL_CONNECTED, PROTOCOL_CL_CALL_CONNECTED, ndis/ProtocolClCallConnected, condis_client_ref_ddc435b4-ff27-4ced-b513-9bba45302496.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see    ProtocolClCallConnected (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    ProtocolClCallConnected (NDIS   5.1)) in Windows XP.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
+UID: NC:ndis.PROTOCOL_CL_CALL_CONNECTED
+title: PROTOCOL_CL_CALL_CONNECTED
+author: windows-driver-content
+description: The ProtocolClCallConnected function is used by connection-oriented NDIS clients that accept incoming calls.
+old-location: netvista\protocolclcallconnected.htm
+old-project: netvista
+ms.assetid: 675b2066-6a65-47cf-bde7-3c843f97c960
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.protocolclcallconnected, ProtocolClCallConnected callback function [Network Drivers Starting with Windows Vista], ProtocolClCallConnected, PROTOCOL_CL_CALL_CONNECTED, PROTOCOL_CL_CALL_CONNECTED, ndis/ProtocolClCallConnected, condis_client_ref_ddc435b4-ff27-4ced-b513-9bba45302496.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    ProtocolClCallConnected (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    ProtocolClCallConnected (NDIS   5.1)) in Windows XP.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ndis.h
+apiname:
+-	ProtocolClCallConnected
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 

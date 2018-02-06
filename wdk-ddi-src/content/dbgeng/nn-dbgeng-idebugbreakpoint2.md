@@ -1,41 +1,46 @@
 ---
-UID : NN:dbgeng.IDebugBreakpoint2
-title : IDebugBreakpoint2
-author : windows-driver-content
-description : IDebugBreakpoint2 interface
-old-location : debugger\idebugbreakpoint2.htm
-old-project : debugger
-ms.assetid : 097c10e1-fd83-4a3d-8193-873644370e35
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : debugger.idebugbreakpoint2, IDebugBreakpoint2 interface [Windows Debugging], IDebugBreakpoint2 interface [Windows Debugging], described, IDebugBreakpoint2, dbgeng/IDebugBreakpoint2
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NN:dbgeng.IDebugBreakpoint2
+title: IDebugBreakpoint2
+author: windows-driver-content
+description: IDebugBreakpoint2 interface
+old-location: debugger\idebugbreakpoint2.htm
+old-project: debugger
+ms.assetid: 097c10e1-fd83-4a3d-8193-873644370e35
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: debugger.idebugbreakpoint2, IDebugBreakpoint2 interface [Windows Debugging], IDebugBreakpoint2 interface [Windows Debugging], described, IDebugBreakpoint2, dbgeng/IDebugBreakpoint2
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugBreakpoint2
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 # IDebugBreakpoint2 interface

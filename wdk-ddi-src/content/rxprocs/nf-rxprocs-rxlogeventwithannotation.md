@@ -1,42 +1,47 @@
 ---
-UID : NF:rxprocs.RxLogEventWithAnnotation
-title : RxLogEventWithAnnotation function
-author : windows-driver-content
-description : RxLogEventWithAnnotation allocates an I/O error log structure, fills it in with information, and writes the entry to the I/O error log.
-old-location : ifsk\rxlogeventwithannotation.htm
-old-project : ifsk
-ms.assetid : cb8b757a-cff5-41cf-8155-2c45a8a35f00
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : RxLogEventWithAnnotation, ifsk.rxlogeventwithannotation, rxref_9c7d3613-cf3b-4de9-bfcb-a1dbe9213834.xml, rxprocs/RxLogEventWithAnnotation, RxLogEventWithAnnotation function [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : rxprocs.h
-req.include-header : Rxprocs.h, Rxstruc.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RX_CONTEXT, *PRX_CONTEXT
-req.product : Windows 10 or later.
+UID: NF:rxprocs.RxLogEventWithAnnotation
+title: RxLogEventWithAnnotation function
+author: windows-driver-content
+description: RxLogEventWithAnnotation allocates an I/O error log structure, fills it in with information, and writes the entry to the I/O error log.
+old-location: ifsk\rxlogeventwithannotation.htm
+old-project: ifsk
+ms.assetid: cb8b757a-cff5-41cf-8155-2c45a8a35f00
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: RxLogEventWithAnnotation, ifsk.rxlogeventwithannotation, rxref_9c7d3613-cf3b-4de9-bfcb-a1dbe9213834.xml, rxprocs/RxLogEventWithAnnotation, RxLogEventWithAnnotation function [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: rxprocs.h
+req.include-header: Rxprocs.h, Rxstruc.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	rxprocs.h
+apiname:
+-	RxLogEventWithAnnotation
+product: Windows
+targetos: Windows
+req.typenames: RX_CONTEXT, *PRX_CONTEXT
+req.product: Windows 10 or later.
 ---
 
 

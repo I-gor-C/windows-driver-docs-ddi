@@ -1,42 +1,47 @@
 ---
-UID : NS:windot11._DOT11_RECEIVED_INVITATION_RESPONSE_PARAMETERS
-title : "_DOT11_RECEIVED_INVITATION_RESPONSE_PARAMETERS"
-author : windows-driver-content
-description : The parameters for a received invitation response are specified in a DOT11_RECEIVED_INVITATION_RESPONSE_PARAMETERS structure. This structure is sent with an NDIS_STATUS_DOT11_WFD_RECEIVED_INVITATION_RESPONSE indication.
-old-location : netvista\_dot11_received_invitation_response_parameters.htm
-old-project : netvista
-ms.assetid : 9DAFC0E0-A3F9-4EF1-8FD1-3213AA1CBD18
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : PDOT11_RECEIVED_INVITATION_RESPONSE_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], windot11/PDOT11_RECEIVED_INVITATION_RESPONSE_PARAMETERS, PDOT11_RECEIVED_INVITATION_RESPONSE_PARAMETERS, _DOT11_RECEIVED_INVITATION_RESPONSE_PARAMETERS, *PDOT11_RECEIVED_INVITATION_RESPONSE_PARAMETERS, windot11/DOT11_RECEIVED_INVITATION_RESPONSE_PARAMETERS, DOT11_RECEIVED_INVITATION_RESPONSE_PARAMETERS, netvista._dot11_received_invitation_response_parameters, DOT11_RECEIVED_INVITATION_RESPONSE_PARAMETERS structure [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : windot11.h
-req.include-header : Windot11.h
-req.target-type : Windows
-req.target-min-winverclnt : Versions:\_Supported in Windows 8
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDOT11_RECEIVED_INVITATION_RESPONSE_PARAMETERS, DOT11_RECEIVED_INVITATION_RESPONSE_PARAMETERS"
-req.product : Windows 10 or later.
+UID: NS:windot11._DOT11_RECEIVED_INVITATION_RESPONSE_PARAMETERS
+title: "_DOT11_RECEIVED_INVITATION_RESPONSE_PARAMETERS"
+author: windows-driver-content
+description: The parameters for a received invitation response are specified in a DOT11_RECEIVED_INVITATION_RESPONSE_PARAMETERS structure. This structure is sent with an NDIS_STATUS_DOT11_WFD_RECEIVED_INVITATION_RESPONSE indication.
+old-location: netvista\_dot11_received_invitation_response_parameters.htm
+old-project: netvista
+ms.assetid: 9DAFC0E0-A3F9-4EF1-8FD1-3213AA1CBD18
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: PDOT11_RECEIVED_INVITATION_RESPONSE_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], windot11/PDOT11_RECEIVED_INVITATION_RESPONSE_PARAMETERS, PDOT11_RECEIVED_INVITATION_RESPONSE_PARAMETERS, _DOT11_RECEIVED_INVITATION_RESPONSE_PARAMETERS, *PDOT11_RECEIVED_INVITATION_RESPONSE_PARAMETERS, windot11/DOT11_RECEIVED_INVITATION_RESPONSE_PARAMETERS, DOT11_RECEIVED_INVITATION_RESPONSE_PARAMETERS, netvista._dot11_received_invitation_response_parameters, DOT11_RECEIVED_INVITATION_RESPONSE_PARAMETERS structure [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: windot11.h
+req.include-header: Windot11.h
+req.target-type: Windows
+req.target-min-winverclnt: Versions:\_Supported in Windows 8
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Windot11.h
+apiname:
+-	DOT11_RECEIVED_INVITATION_RESPONSE_PARAMETERS
+product: Windows
+targetos: Windows
+req.typenames: "*PDOT11_RECEIVED_INVITATION_RESPONSE_PARAMETERS, DOT11_RECEIVED_INVITATION_RESPONSE_PARAMETERS"
+req.product: Windows 10 or later.
 ---
 
 # _DOT11_RECEIVED_INVITATION_RESPONSE_PARAMETERS structure

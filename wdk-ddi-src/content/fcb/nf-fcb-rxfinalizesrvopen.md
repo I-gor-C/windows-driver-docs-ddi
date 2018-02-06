@@ -1,41 +1,46 @@
 ---
-UID : NF:fcb.RxFinalizeSrvOpen
-title : RxFinalizeSrvOpen function
-author : windows-driver-content
-description : RxFinalizeSrvOpen finalizes the given SRV_OPEN structure. The caller must have an exclusive lock on the FCB associated with the SRV_OPEN and either a shared or exclusive lock on the table lock of the NET_ROOT associated with the FCB.
-old-location : ifsk\rxfinalizesrvopen.htm
-old-project : ifsk
-ms.assetid : 9a756606-90df-4bb8-a87a-f000616812fa
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.rxfinalizesrvopen, fcb/RxFinalizeSrvOpen, RxFinalizeSrvOpen function [Installable File System Drivers], RxFinalizeSrvOpen, rxref_0665a600-9a4c-4674-87bd-f9758b579cee.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fcb.h
-req.include-header : Mrxfcb.h, Fcb.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FA_ENTRY, *PFA_ENTRY
+UID: NF:fcb.RxFinalizeSrvOpen
+title: RxFinalizeSrvOpen function
+author: windows-driver-content
+description: RxFinalizeSrvOpen finalizes the given SRV_OPEN structure. The caller must have an exclusive lock on the FCB associated with the SRV_OPEN and either a shared or exclusive lock on the table lock of the NET_ROOT associated with the FCB.
+old-location: ifsk\rxfinalizesrvopen.htm
+old-project: ifsk
+ms.assetid: 9a756606-90df-4bb8-a87a-f000616812fa
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.rxfinalizesrvopen, fcb/RxFinalizeSrvOpen, RxFinalizeSrvOpen function [Installable File System Drivers], RxFinalizeSrvOpen, rxref_0665a600-9a4c-4674-87bd-f9758b579cee.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fcb.h
+req.include-header: Mrxfcb.h, Fcb.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	fcb.h
+apiname:
+-	RxFinalizeSrvOpen
+product: Windows
+targetos: Windows
+req.typenames: FA_ENTRY, *PFA_ENTRY
 ---
 
 

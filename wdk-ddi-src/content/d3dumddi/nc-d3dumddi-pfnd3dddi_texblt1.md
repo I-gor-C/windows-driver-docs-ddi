@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_TEXBLT1
-title : PFND3DDDI_TEXBLT1
-author : windows-driver-content
-description : Performs a bit-block transfer (bitblt) operation from a source texture to a destination texture, including all of the sublevels of the source texture. Implemented by Windows Display Driver Model (WDDM) 1.2 or later user-mode display drivers.
-old-location : display\texblt1.htm
-old-project : display
-ms.assetid : 63EE8130-47E5-4976-8A72-1B11136B1192
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.texblt1, TexBlt1 callback function [Display Devices], TexBlt1, PFND3DDDI_TEXBLT1, PFND3DDDI_TEXBLT1, d3dumddi/TexBlt1
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_TEXBLT1
+title: PFND3DDDI_TEXBLT1
+author: windows-driver-content
+description: Performs a bit-block transfer (bitblt) operation from a source texture to a destination texture, including all of the sublevels of the source texture. Implemented by Windows Display Driver Model (WDDM) 1.2 or later user-mode display drivers.
+old-location: display\texblt1.htm
+old-project: display
+ms.assetid: 63EE8130-47E5-4976-8A72-1B11136B1192
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.texblt1, TexBlt1 callback function [Display Devices], TexBlt1, PFND3DDDI_TEXBLT1, PFND3DDDI_TEXBLT1, d3dumddi/TexBlt1
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	TexBlt1
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NE:rilapitypes.RILUICCFILELOCKSTATUSPARAMMASK
-title : RILUICCFILELOCKSTATUSPARAMMASK
-author : windows-driver-content
-description : This enumeration describes the RILUICCFILELOCKSTATUSPARAMMASK.
-old-location : netvista\riluiccfilelockstatusparammask.htm
-old-project : netvista
-ms.assetid : 341e11bb-957b-4745-9892-f1274ff97f44
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : rilapitypes/RIL_PARAM_UFLS_ACCESSCONDITION, netvista.riluiccfilelockstatusparammask, RIL_PARAM_UFLS_PINREFERENCE, rilapitypes/RIL_PARAM_UFLS_PINREFERENCE, rilapitypes/RIL_PARAM_UFLS_ALL, RILUICCFILELOCKSTATUSPARAMMASK enumeration [Network Drivers Starting with Windows Vista], RILUICCFILELOCKSTATUSPARAMMASK, RIL_PARAM_UFLS_ACCESSCONDITION, rilapitypes/RILUICCFILELOCKSTATUSPARAMMASK, RIL_PARAM_UFLS_ALL
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : rilapitypes.h
-req.include-header : Rilapitypes.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RILUICCFILELOCKSTATUSPARAMMASK
-req.product : Windows 10 or later.
+UID: NE:rilapitypes.RILUICCFILELOCKSTATUSPARAMMASK
+title: RILUICCFILELOCKSTATUSPARAMMASK
+author: windows-driver-content
+description: This enumeration describes the RILUICCFILELOCKSTATUSPARAMMASK.
+old-location: netvista\riluiccfilelockstatusparammask.htm
+old-project: netvista
+ms.assetid: 341e11bb-957b-4745-9892-f1274ff97f44
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: rilapitypes/RIL_PARAM_UFLS_ACCESSCONDITION, netvista.riluiccfilelockstatusparammask, RIL_PARAM_UFLS_PINREFERENCE, rilapitypes/RIL_PARAM_UFLS_PINREFERENCE, rilapitypes/RIL_PARAM_UFLS_ALL, RILUICCFILELOCKSTATUSPARAMMASK enumeration [Network Drivers Starting with Windows Vista], RILUICCFILELOCKSTATUSPARAMMASK, RIL_PARAM_UFLS_ACCESSCONDITION, rilapitypes/RILUICCFILELOCKSTATUSPARAMMASK, RIL_PARAM_UFLS_ALL
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: rilapitypes.h
+req.include-header: Rilapitypes.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	rilapitypes.h
+apiname:
+-	RILUICCFILELOCKSTATUSPARAMMASK
+product: Windows
+targetos: Windows
+req.typenames: RILUICCFILELOCKSTATUSPARAMMASK
+req.product: Windows 10 or later.
 ---
 
 # RILUICCFILELOCKSTATUSPARAMMASK Enumeration
@@ -55,21 +60,21 @@ enum RILUICCFILELOCKSTATUSPARAMMASK {
 ## Constants
 
 <table>
-
-<tr>
-<td>RIL_PARAM_UFLS_ACCESSCONDITION</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_PARAM_UFLS_ALL</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_PARAM_UFLS_PINREFERENCE</td>
-<td></td>
-</tr>
+            
+                <tr>
+                    <td>RIL_PARAM_UFLS_ACCESSCONDITION</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_UFLS_ALL</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_UFLS_PINREFERENCE</td>
+                    <td></td>
+                </tr>
 </table>
 
 
@@ -78,9 +83,9 @@ enum RILUICCFILELOCKSTATUSPARAMMASK {
 | ---- |:---- |
 | **Header** | rilapitypes.h (include Rilapitypes.h) |
 
-## See Also
+    ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn946509">Cellular COM enumerations</a>
+        <a href="https://msdn.microsoft.com/library/windows/hardware/dn946509">Cellular COM enumerations</a>
 
  
 

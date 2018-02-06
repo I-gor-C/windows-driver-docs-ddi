@@ -1,41 +1,46 @@
 ---
-UID : NF:portcls.IMiniportTopology.Init
-title : IMiniportTopology::Init method
-author : windows-driver-content
-description : The Init method initializes the topology miniport object.
-old-location : audio\iminiporttopology_init.htm
-old-project : audio
-ms.assetid : c8c53792-8c1a-466a-9f0f-8c12f9e7b50e
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : portcls/IMiniportTopology::Init, Init, IMiniportTopology interface [Audio Devices], Init method, Init method [Audio Devices], Init method [Audio Devices], IMiniportTopology interface, IMiniportTopology, audio.iminiporttopology_init, audmp-routines_c87a11c3-aed3-4516-b3bf-5d32423fa293.xml, IMiniportTopology::Init
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : portcls.h
-req.include-header : Portcls.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : portcls.h
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.IMiniportTopology.Init
+title: IMiniportTopology::Init method
+author: windows-driver-content
+description: The Init method initializes the topology miniport object.
+old-location: audio\iminiporttopology_init.htm
+old-project: audio
+ms.assetid: c8c53792-8c1a-466a-9f0f-8c12f9e7b50e
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: portcls/IMiniportTopology::Init, Init, IMiniportTopology interface [Audio Devices], Init method, Init method [Audio Devices], Init method [Audio Devices], IMiniportTopology interface, IMiniportTopology, audio.iminiporttopology_init, audmp-routines_c87a11c3-aed3-4516-b3bf-5d32423fa293.xml, IMiniportTopology::Init
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: portcls.h
+req.include-header: Portcls.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: portcls.h
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	portcls.h
+apiname:
+-	IMiniportTopology.Init
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

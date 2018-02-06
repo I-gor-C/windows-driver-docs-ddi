@@ -1,42 +1,47 @@
 ---
-UID : NS:wlanihv._DOT11EXT_IHV_UI_REQUEST
-title : "_DOT11EXT_IHV_UI_REQUEST"
-author : windows-driver-content
-description : Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
-old-location : netvista\dot11ext_ihv_ui_request.htm
-old-project : netvista
-ms.assetid : 028e3445-320a-41c8-9577-219f9fbabe40
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : "*PDOT11EXT_IHV_UI_REQUEST, Native_802.11_data_types_2d145576-2a7d-4fff-ae75-a99e27ebbb18.xml, DOT11EXT_IHV_UI_REQUEST, netvista.dot11ext_ihv_ui_request, wlanihv/PDOT11EXT_IHV_UI_REQUEST, PDOT11EXT_IHV_UI_REQUEST structure pointer [Network Drivers Starting with Windows Vista], wlanihv/DOT11EXT_IHV_UI_REQUEST, DOT11EXT_IHV_UI_REQUEST structure [Network Drivers Starting with Windows Vista], _DOT11EXT_IHV_UI_REQUEST, PDOT11EXT_IHV_UI_REQUEST"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wlanihv.h
-req.include-header : Wlanihv.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating   systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT11EXT_IHV_UI_REQUEST, *PDOT11EXT_IHV_UI_REQUEST
-req.product : Windows 10 or later.
+UID: NS:wlanihv._DOT11EXT_IHV_UI_REQUEST
+title: "_DOT11EXT_IHV_UI_REQUEST"
+author: windows-driver-content
+description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+old-location: netvista\dot11ext_ihv_ui_request.htm
+old-project: netvista
+ms.assetid: 028e3445-320a-41c8-9577-219f9fbabe40
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: "*PDOT11EXT_IHV_UI_REQUEST, Native_802.11_data_types_2d145576-2a7d-4fff-ae75-a99e27ebbb18.xml, DOT11EXT_IHV_UI_REQUEST, netvista.dot11ext_ihv_ui_request, wlanihv/PDOT11EXT_IHV_UI_REQUEST, PDOT11EXT_IHV_UI_REQUEST structure pointer [Network Drivers Starting with Windows Vista], wlanihv/DOT11EXT_IHV_UI_REQUEST, DOT11EXT_IHV_UI_REQUEST structure [Network Drivers Starting with Windows Vista], _DOT11EXT_IHV_UI_REQUEST, PDOT11EXT_IHV_UI_REQUEST"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wlanihv.h
+req.include-header: Wlanihv.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wlanihv.h
+apiname:
+-	DOT11EXT_IHV_UI_REQUEST
+product: Windows
+targetos: Windows
+req.typenames: DOT11EXT_IHV_UI_REQUEST, *PDOT11EXT_IHV_UI_REQUEST
+req.product: Windows 10 or later.
 ---
 
 # _DOT11EXT_IHV_UI_REQUEST structure

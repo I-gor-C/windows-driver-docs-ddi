@@ -1,42 +1,47 @@
 ---
-UID : NS:wiamicro._SCANINFO
-title : "_SCANINFO"
-author : windows-driver-content
-description : The SCANINFO structure is used to store and communicate information about a scan acquisition.
-old-location : image\scaninfo.htm
-old-project : image
-ms.assetid : 58a0cc96-7180-4823-a4af-bf2d5fa49474
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : MicroDrv_42f31c58-206a-468e-98ff-794c69b82457.xml, *PSCANINFO, SCANINFO, image.scaninfo, PSCANINFO structure pointer [Imaging Devices], _SCANINFO, PSCANINFO, wiamicro/SCANINFO, wiamicro/PSCANINFO, SCANINFO structure [Imaging Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wiamicro.h
-req.include-header : Wiamicro.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Me and in Windows XP and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SCANINFO, *PSCANINFO
-req.product : Windows 10 or later.
+UID: NS:wiamicro._SCANINFO
+title: "_SCANINFO"
+author: windows-driver-content
+description: The SCANINFO structure is used to store and communicate information about a scan acquisition.
+old-location: image\scaninfo.htm
+old-project: image
+ms.assetid: 58a0cc96-7180-4823-a4af-bf2d5fa49474
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: MicroDrv_42f31c58-206a-468e-98ff-794c69b82457.xml, *PSCANINFO, SCANINFO, image.scaninfo, PSCANINFO structure pointer [Imaging Devices], _SCANINFO, PSCANINFO, wiamicro/SCANINFO, wiamicro/PSCANINFO, SCANINFO structure [Imaging Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wiamicro.h
+req.include-header: Wiamicro.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Me and in Windows XP and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wiamicro.h
+apiname:
+-	SCANINFO
+product: Windows
+targetos: Windows
+req.typenames: SCANINFO, *PSCANINFO
+req.product: Windows 10 or later.
 ---
 
 # _SCANINFO structure

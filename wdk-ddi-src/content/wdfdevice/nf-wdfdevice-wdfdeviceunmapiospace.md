@@ -1,42 +1,47 @@
 ---
-UID : NF:wdfdevice.WdfDeviceUnmapIoSpace
-title : WdfDeviceUnmapIoSpace function
-author : windows-driver-content
-description : The WdfDeviceUnmapIoSpace function unmaps a specified range of physical addresses previously mapped by the WdfDeviceMapIoSpace function.
-old-location : wdf\wdfdeviceunmapiospace.htm
-old-project : wdf
-ms.assetid : C8963667-D2FB-4360-A523-33429D6FBF1B
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WdfDeviceUnmapIoSpace function, PFN_WDFDEVICEUNMAPIOSPACE, WdfDeviceUnmapIoSpace, wdfdevice/WdfDeviceUnmapIoSpace, wdf.wdfdeviceunmapiospace
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfdevice.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : Windows 8.1
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : WUDFx02000.lib
-req.dll : WUDFx02000.dll
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_STATE_NOTIFICATION_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfdevice.WdfDeviceUnmapIoSpace
+title: WdfDeviceUnmapIoSpace function
+author: windows-driver-content
+description: The WdfDeviceUnmapIoSpace function unmaps a specified range of physical addresses previously mapped by the WdfDeviceMapIoSpace function.
+old-location: wdf\wdfdeviceunmapiospace.htm
+old-project: wdf
+ms.assetid: C8963667-D2FB-4360-A523-33429D6FBF1B
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WdfDeviceUnmapIoSpace function, PFN_WDFDEVICEUNMAPIOSPACE, WdfDeviceUnmapIoSpace, wdfdevice/WdfDeviceUnmapIoSpace, wdf.wdfdeviceunmapiospace
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfdevice.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: Windows 8.1
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: WUDFx02000.lib
+req.dll: WUDFx02000.dll
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	WUDFx02000.dll
+apiname:
+-	WdfDeviceUnmapIoSpace
+product: Windows
+targetos: Windows
+req.typenames: WDF_STATE_NOTIFICATION_TYPE
+req.product: Windows 10 or later.
 ---
 
 

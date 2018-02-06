@@ -1,41 +1,46 @@
 ---
-UID : NF:netdma.NetDmaIsr
-title : NetDmaIsr function
-author : windows-driver-content
-description : The NetDmaIsr function notifies the NetDMA interface that a DMA transfer interrupt has occurred on a DMA channel.
-old-location : netvista\netdmaisr.htm
-old-project : netvista
-ms.assetid : 81aa5707-b614-429b-bd8e-0204eec74e0f
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netdma/NetDmaIsr, NetDmaIsr, netdma_ref_5a9b1659-b106-4eed-931d-f2ad8b2476e9.xml, netvista.netdmaisr, NetDmaIsr function [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : netdma.h
-req.include-header : Netdma.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported for NetDMA 1.0 drivers in Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : DEVICE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NET_DMA_PNP_NOTIFICATION_CODE, *PNET_DMA_PNP_NOTIFICATION_CODE
+UID: NF:netdma.NetDmaIsr
+title: NetDmaIsr function
+author: windows-driver-content
+description: The NetDmaIsr function notifies the NetDMA interface that a DMA transfer interrupt has occurred on a DMA channel.
+old-location: netvista\netdmaisr.htm
+old-project: netvista
+ms.assetid: 81aa5707-b614-429b-bd8e-0204eec74e0f
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netdma/NetDmaIsr, NetDmaIsr, netdma_ref_5a9b1659-b106-4eed-931d-f2ad8b2476e9.xml, netvista.netdmaisr, NetDmaIsr function [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: netdma.h
+req.include-header: Netdma.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported for NetDMA 1.0 drivers in Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: DEVICE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	netdma.h
+apiname:
+-	NetDmaIsr
+product: Windows
+targetos: Windows
+req.typenames: NET_DMA_PNP_NOTIFICATION_CODE, *PNET_DMA_PNP_NOTIFICATION_CODE
 ---
 
 

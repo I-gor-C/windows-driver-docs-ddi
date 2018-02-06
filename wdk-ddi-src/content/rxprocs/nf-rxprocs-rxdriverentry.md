@@ -1,42 +1,47 @@
 ---
-UID : NF:rxprocs.RxDriverEntry
-title : RxDriverEntry function
-author : windows-driver-content
-description : RxDriverEntry is called by a monolithic network mini-redirector driver from its DriverEntry routine to initialize the RDBSS static library.
-old-location : ifsk\rxdriverentry.htm
-old-project : ifsk
-ms.assetid : f100f872-6db2-4b6d-a9c0-abbbfee0a621
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : rxprocs/RxDriverEntry, RxDriverEntry, rxref_a882d71c-b6c3-4454-a45b-37b312af2069.xml, RxDriverEntry routine [Installable File System Drivers], ifsk.rxdriverentry
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : rxprocs.h
-req.include-header : Rxprocs.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RX_CONTEXT, *PRX_CONTEXT
-req.product : Windows 10 or later.
+UID: NF:rxprocs.RxDriverEntry
+title: RxDriverEntry function
+author: windows-driver-content
+description: RxDriverEntry is called by a monolithic network mini-redirector driver from its DriverEntry routine to initialize the RDBSS static library.
+old-location: ifsk\rxdriverentry.htm
+old-project: ifsk
+ms.assetid: f100f872-6db2-4b6d-a9c0-abbbfee0a621
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: rxprocs/RxDriverEntry, RxDriverEntry, rxref_a882d71c-b6c3-4454-a45b-37b312af2069.xml, RxDriverEntry routine [Installable File System Drivers], ifsk.rxdriverentry
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: rxprocs.h
+req.include-header: Rxprocs.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	rxprocs.h
+apiname:
+-	RxDriverEntry
+product: Windows
+targetos: Windows
+req.typenames: RX_CONTEXT, *PRX_CONTEXT
+req.product: Windows 10 or later.
 ---
 
 

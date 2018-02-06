@@ -1,41 +1,46 @@
 ---
-UID : NF:ksproxy.IKsPinPipe.KsSetPipeAllocatorFlag
-title : IKsPinPipe::KsSetPipeAllocatorFlag method
-author : windows-driver-content
-description : Not recommended for application use.
-old-location : stream\ikspinpipe_kssetpipeallocatorflag.htm
-old-project : stream
-ms.assetid : 0587E952-8B51-44C3-8E23-2981C00ADB43
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KsSetPipeAllocatorFlag method [Streaming Media Devices], IKsPinPipe, IKsPinPipe interface [Streaming Media Devices], KsSetPipeAllocatorFlag method, IKsPinPipe::KsSetPipeAllocatorFlag, KsSetPipeAllocatorFlag method [Streaming Media Devices], IKsPinPipe interface, ksproxy/IKsPinPipe::KsSetPipeAllocatorFlag, KsSetPipeAllocatorFlag, stream.ikspinpipe_kssetpipeallocatorflag
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : ksproxy.h
-req.include-header : Ksproxy.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : ksproxy.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PIPE_STATE
+UID: NF:ksproxy.IKsPinPipe.KsSetPipeAllocatorFlag
+title: IKsPinPipe::KsSetPipeAllocatorFlag method
+author: windows-driver-content
+description: Not recommended for application use.
+old-location: stream\ikspinpipe_kssetpipeallocatorflag.htm
+old-project: stream
+ms.assetid: 0587E952-8B51-44C3-8E23-2981C00ADB43
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KsSetPipeAllocatorFlag method [Streaming Media Devices], IKsPinPipe, IKsPinPipe interface [Streaming Media Devices], KsSetPipeAllocatorFlag method, IKsPinPipe::KsSetPipeAllocatorFlag, KsSetPipeAllocatorFlag method [Streaming Media Devices], IKsPinPipe interface, ksproxy/IKsPinPipe::KsSetPipeAllocatorFlag, KsSetPipeAllocatorFlag, stream.ikspinpipe_kssetpipeallocatorflag
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: ksproxy.h
+req.include-header: Ksproxy.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: ksproxy.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	ksproxy.h
+apiname:
+-	IKsPinPipe.KsSetPipeAllocatorFlag
+product: Windows
+targetos: Windows
+req.typenames: PIPE_STATE
 ---
 
 

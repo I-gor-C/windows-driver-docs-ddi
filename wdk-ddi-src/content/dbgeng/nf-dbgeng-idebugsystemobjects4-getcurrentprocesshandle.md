@@ -1,41 +1,49 @@
 ---
-UID : NF:dbgeng.IDebugSystemObjects4.GetCurrentProcessHandle
-title : IDebugSystemObjects4::GetCurrentProcessHandle method
-author : windows-driver-content
-description : The GetCurrentProcessHandle method returns the system handle for the current process.
-old-location : debugger\getcurrentprocesshandle2.htm
-old-project : debugger
-ms.assetid : 87f60064-5722-4b4e-af9b-f1d9009a7551
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : GetCurrentProcessHandle method [Windows Debugging], IDebugSystemObjects4 interface, GetCurrentProcessHandle method [Windows Debugging], IDebugSystemObjects3 interface, IDebugSystemObjects4::GetCurrentProcessHandle, IDebugSystemObjects_480199cd-20d9-467c-a5c3-42d221f44509.xml, IDebugSystemObjects::GetCurrentProcessHandle, dbgeng/IDebugSystemObjects4::GetCurrentProcessHandle, IDebugSystemObjects3::GetCurrentProcessHandle, GetCurrentProcessHandle, IDebugSystemObjects interface [Windows Debugging], GetCurrentProcessHandle method, dbgeng/IDebugSystemObjects::GetCurrentProcessHandle, IDebugSystemObjects4 interface [Windows Debugging], GetCurrentProcessHandle method, GetCurrentProcessHandle method [Windows Debugging], IDebugSystemObjects2 interface, IDebugSystemObjects4, IDebugSystemObjects3 interface [Windows Debugging], GetCurrentProcessHandle method, dbgeng/IDebugSystemObjects3::GetCurrentProcessHandle, dbgeng/IDebugSystemObjects2::GetCurrentProcessHandle, GetCurrentProcessHandle method [Windows Debugging], debugger.getcurrentprocesshandle2, GetCurrentProcessHandle method [Windows Debugging], IDebugSystemObjects interface, IDebugSystemObjects2::GetCurrentProcessHandle, IDebugSystemObjects2 interface [Windows Debugging], GetCurrentProcessHandle method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSystemObjects4.GetCurrentProcessHandle
+title: IDebugSystemObjects4::GetCurrentProcessHandle method
+author: windows-driver-content
+description: The GetCurrentProcessHandle method returns the system handle for the current process.
+old-location: debugger\getcurrentprocesshandle2.htm
+old-project: debugger
+ms.assetid: 87f60064-5722-4b4e-af9b-f1d9009a7551
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: GetCurrentProcessHandle method [Windows Debugging], IDebugSystemObjects4 interface, GetCurrentProcessHandle method [Windows Debugging], IDebugSystemObjects3 interface, IDebugSystemObjects4::GetCurrentProcessHandle, IDebugSystemObjects_480199cd-20d9-467c-a5c3-42d221f44509.xml, IDebugSystemObjects::GetCurrentProcessHandle, dbgeng/IDebugSystemObjects4::GetCurrentProcessHandle, IDebugSystemObjects3::GetCurrentProcessHandle, GetCurrentProcessHandle, IDebugSystemObjects interface [Windows Debugging], GetCurrentProcessHandle method, dbgeng/IDebugSystemObjects::GetCurrentProcessHandle, IDebugSystemObjects4 interface [Windows Debugging], GetCurrentProcessHandle method, GetCurrentProcessHandle method [Windows Debugging], IDebugSystemObjects2 interface, IDebugSystemObjects4, IDebugSystemObjects3 interface [Windows Debugging], GetCurrentProcessHandle method, dbgeng/IDebugSystemObjects3::GetCurrentProcessHandle, dbgeng/IDebugSystemObjects2::GetCurrentProcessHandle, GetCurrentProcessHandle method [Windows Debugging], debugger.getcurrentprocesshandle2, GetCurrentProcessHandle method [Windows Debugging], IDebugSystemObjects interface, IDebugSystemObjects2::GetCurrentProcessHandle, IDebugSystemObjects2 interface [Windows Debugging], GetCurrentProcessHandle method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugSystemObjects.GetCurrentProcessHandle
+-	IDebugSystemObjects2.GetCurrentProcessHandle
+-	IDebugSystemObjects3.GetCurrentProcessHandle
+-	IDebugSystemObjects4.GetCurrentProcessHandle
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

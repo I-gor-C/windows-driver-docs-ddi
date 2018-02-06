@@ -1,42 +1,47 @@
 ---
-UID : NS:winspool._BINARY_CONTAINER
-title : "_BINARY_CONTAINER"
-author : windows-driver-content
-description : The BINARY_CONTAINER structure is a container for binary data.
-old-location : print\binary_container.htm
-old-project : print
-ms.assetid : bac960c5-7c29-4550-9b82-5adb6a0cc243
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : winspool/BINARY_CONTAINER, _BINARY_CONTAINER, spoolfnc_a034cd3e-8afb-4a15-9640-06d693fd150c.xml, winspool/PBINARY_CONTAINER, print.binary_container, PBINARY_CONTAINER structure pointer [Print Devices], PBINARY_CONTAINER, *PBINARY_CONTAINER, BINARY_CONTAINER structure [Print Devices], BINARY_CONTAINER
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : winspool.h
-req.include-header : Winspool.h
-req.target-type : Windows
-req.target-min-winverclnt : This structure is available in Windows XP and later operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PBINARY_CONTAINER, BINARY_CONTAINER"
-req.product : Windows 10 or later.
+UID: NS:winspool._BINARY_CONTAINER
+title: "_BINARY_CONTAINER"
+author: windows-driver-content
+description: The BINARY_CONTAINER structure is a container for binary data.
+old-location: print\binary_container.htm
+old-project: print
+ms.assetid: bac960c5-7c29-4550-9b82-5adb6a0cc243
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: winspool/BINARY_CONTAINER, _BINARY_CONTAINER, spoolfnc_a034cd3e-8afb-4a15-9640-06d693fd150c.xml, winspool/PBINARY_CONTAINER, print.binary_container, PBINARY_CONTAINER structure pointer [Print Devices], PBINARY_CONTAINER, *PBINARY_CONTAINER, BINARY_CONTAINER structure [Print Devices], BINARY_CONTAINER
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: winspool.h
+req.include-header: Winspool.h
+req.target-type: Windows
+req.target-min-winverclnt: This structure is available in Windows XP and later operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	winspool.h
+apiname:
+-	BINARY_CONTAINER
+product: Windows
+targetos: Windows
+req.typenames: "*PBINARY_CONTAINER, BINARY_CONTAINER"
+req.product: Windows 10 or later.
 ---
 
 # _BINARY_CONTAINER structure

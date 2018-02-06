@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfcommonbuffer.WdfCommonBufferGetAlignedVirtualAddress
-title : WdfCommonBufferGetAlignedVirtualAddress function
-author : windows-driver-content
-description : The WdfCommonBufferGetAlignedVirtualAddress method returns the virtual address that is associated with a specified common buffer.
-old-location : wdf\wdfcommonbuffergetalignedvirtualaddress.htm
-old-project : wdf
-ms.assetid : 6874a1bc-e16e-4052-85a4-dba617a69ccd
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : PFN_WDFCOMMONBUFFERGETALIGNEDVIRTUALADDRESS, wdfcommonbuffer/WdfCommonBufferGetAlignedVirtualAddress, DFCommonBufferObjectRef_469df6c0-51ef-480a-93fe-dee452eaf216.xml, WdfCommonBufferGetAlignedVirtualAddress method, kmdf.wdfcommonbuffergetalignedvirtualaddress, wdf.wdfcommonbuffergetalignedvirtualaddress, WdfCommonBufferGetAlignedVirtualAddress
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfcommonbuffer.h
-req.include-header : WdfCommonBuffer.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDF_CHILD_RETRIEVE_INFO, WDF_CHILD_RETRIEVE_INFO"
-req.product : Windows 10 or later.
+UID: NF:wdfcommonbuffer.WdfCommonBufferGetAlignedVirtualAddress
+title: WdfCommonBufferGetAlignedVirtualAddress function
+author: windows-driver-content
+description: The WdfCommonBufferGetAlignedVirtualAddress method returns the virtual address that is associated with a specified common buffer.
+old-location: wdf\wdfcommonbuffergetalignedvirtualaddress.htm
+old-project: wdf
+ms.assetid: 6874a1bc-e16e-4052-85a4-dba617a69ccd
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: PFN_WDFCOMMONBUFFERGETALIGNEDVIRTUALADDRESS, wdfcommonbuffer/WdfCommonBufferGetAlignedVirtualAddress, DFCommonBufferObjectRef_469df6c0-51ef-480a-93fe-dee452eaf216.xml, WdfCommonBufferGetAlignedVirtualAddress method, kmdf.wdfcommonbuffergetalignedvirtualaddress, wdf.wdfcommonbuffergetalignedvirtualaddress, WdfCommonBufferGetAlignedVirtualAddress
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfcommonbuffer.h
+req.include-header: WdfCommonBuffer.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfCommonBufferGetAlignedVirtualAddress
+product: Windows
+targetos: Windows
+req.typenames: "*PWDF_CHILD_RETRIEVE_INFO, WDF_CHILD_RETRIEVE_INFO"
+req.product: Windows 10 or later.
 ---
 
 

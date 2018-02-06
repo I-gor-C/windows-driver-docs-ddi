@@ -1,41 +1,47 @@
 ---
-UID : NF:portcls.PcGetTimeInterval
-title : PcGetTimeInterval function
-author : windows-driver-content
-description : The PcGetTimeInterval function returns the time elapsed since a specified time. Time is measured in 100-nanosecond units.
-old-location : audio\pcgettimeinterval.htm
-old-project : audio
-ms.assetid : 22afd9b9-9bed-45b0-afd8-1a5a34b9e6ad
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : PcGetTimeInterval, portcls/PcGetTimeInterval, PcGetTimeInterval function [Audio Devices], audpc-routines_a68c0cf5-01b7-4e01-a719-f0bdea2d367f.xml, audio.pcgettimeinterval
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : portcls.h
-req.include-header : Portcls.h
-req.target-type : Universal
-req.target-min-winverclnt : The PortCls system driver implements the PcGetTimeInterval function in Microsoft Windows 98/Me and in Windows 2000 and later operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Portcls.lib
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.PcGetTimeInterval
+title: PcGetTimeInterval function
+author: windows-driver-content
+description: The PcGetTimeInterval function returns the time elapsed since a specified time. Time is measured in 100-nanosecond units.
+old-location: audio\pcgettimeinterval.htm
+old-project: audio
+ms.assetid: 22afd9b9-9bed-45b0-afd8-1a5a34b9e6ad
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: PcGetTimeInterval, portcls/PcGetTimeInterval, PcGetTimeInterval function [Audio Devices], audpc-routines_a68c0cf5-01b7-4e01-a719-f0bdea2d367f.xml, audio.pcgettimeinterval
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: portcls.h
+req.include-header: Portcls.h
+req.target-type: Universal
+req.target-min-winverclnt: The PortCls system driver implements the PcGetTimeInterval function in Microsoft Windows 98/Me and in Windows 2000 and later operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Portcls.lib
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Portcls.lib
+-	Portcls.dll
+apiname:
+-	PcGetTimeInterval
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

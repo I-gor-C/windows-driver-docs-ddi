@@ -1,41 +1,46 @@
 ---
-UID : NS:gnssdriver.GNSS_AGNSS_INJECTBLOB
-title : GNSS_AGNSS_INJECTBLOB
-author : windows-driver-content
-description : This structure defines the format for AGNSS extended ephemeris injection.
-old-location : sensors\gnss_agnss_injectblob.htm
-old-project : sensors
-ms.assetid : DAC91C40-C9B3-433C-AA64-CE4C021CD8C5
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : gnssdriver/GNSS_AGNSS_INJECTBLOB, *PGNSS_AGNSS_INJECTBLOB, GNSS_AGNSS_INJECTBLOB structure [Sensor Devices], GNSS_AGNSS_INJECTBLOB, gnssdriver/PGNSS_AGNSS_INJECTBLOB, PGNSS_AGNSS_INJECTBLOB, sensors.gnss_agnss_injectblob, PGNSS_AGNSS_INJECTBLOB structure pointer [Sensor Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : gnssdriver.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PGNSS_AGNSS_INJECTBLOB, GNSS_AGNSS_INJECTBLOB"
+UID: NS:gnssdriver.GNSS_AGNSS_INJECTBLOB
+title: GNSS_AGNSS_INJECTBLOB
+author: windows-driver-content
+description: This structure defines the format for AGNSS extended ephemeris injection.
+old-location: sensors\gnss_agnss_injectblob.htm
+old-project: sensors
+ms.assetid: DAC91C40-C9B3-433C-AA64-CE4C021CD8C5
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: gnssdriver/GNSS_AGNSS_INJECTBLOB, *PGNSS_AGNSS_INJECTBLOB, GNSS_AGNSS_INJECTBLOB structure [Sensor Devices], GNSS_AGNSS_INJECTBLOB, gnssdriver/PGNSS_AGNSS_INJECTBLOB, PGNSS_AGNSS_INJECTBLOB, sensors.gnss_agnss_injectblob, PGNSS_AGNSS_INJECTBLOB structure pointer [Sensor Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: gnssdriver.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	gnssdriver.h
+apiname:
+-	GNSS_AGNSS_INJECTBLOB
+product: Windows
+targetos: Windows
+req.typenames: "*PGNSS_AGNSS_INJECTBLOB, GNSS_AGNSS_INJECTBLOB"
 ---
 
 # GNSS_AGNSS_INJECTBLOB structure

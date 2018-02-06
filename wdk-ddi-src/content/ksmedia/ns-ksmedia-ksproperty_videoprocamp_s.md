@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.KSPROPERTY_VIDEOPROCAMP_S
-title : KSPROPERTY_VIDEOPROCAMP_S
-author : windows-driver-content
-description : The KSPROPERTY_VIDEOPROCAMP_S structure describes filter-based property settings in the PROPSETID_VIDCAP_VIDEOPROCAMP property set.
-old-location : stream\ksproperty_videoprocamp_s.htm
-old-project : stream
-ms.assetid : e8b9c381-2159-4cb2-92e2-11c1d3698f2d
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ksmedia/KSPROPERTY_VIDEOPROCAMP_S, stream.ksproperty_videoprocamp_s, vidcapstruct_4ec1fd8e-6ea5-4560-a528-e6cd2023ec87.xml, KSPROPERTY_VIDEOPROCAMP_S, PKSPROPERTY_VIDEOPROCAMP_S, PKSPROPERTY_VIDEOPROCAMP_S structure pointer [Streaming Media Devices], KSPROPERTY_VIDEOPROCAMP_S structure [Streaming Media Devices], ksmedia/PKSPROPERTY_VIDEOPROCAMP_S, *PKSPROPERTY_VIDEOPROCAMP_S
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKSPROPERTY_VIDEOPROCAMP_S, KSPROPERTY_VIDEOPROCAMP_S"
+UID: NS:ksmedia.KSPROPERTY_VIDEOPROCAMP_S
+title: KSPROPERTY_VIDEOPROCAMP_S
+author: windows-driver-content
+description: The KSPROPERTY_VIDEOPROCAMP_S structure describes filter-based property settings in the PROPSETID_VIDCAP_VIDEOPROCAMP property set.
+old-location: stream\ksproperty_videoprocamp_s.htm
+old-project: stream
+ms.assetid: e8b9c381-2159-4cb2-92e2-11c1d3698f2d
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ksmedia/KSPROPERTY_VIDEOPROCAMP_S, stream.ksproperty_videoprocamp_s, vidcapstruct_4ec1fd8e-6ea5-4560-a528-e6cd2023ec87.xml, KSPROPERTY_VIDEOPROCAMP_S, PKSPROPERTY_VIDEOPROCAMP_S, PKSPROPERTY_VIDEOPROCAMP_S structure pointer [Streaming Media Devices], KSPROPERTY_VIDEOPROCAMP_S structure [Streaming Media Devices], ksmedia/PKSPROPERTY_VIDEOPROCAMP_S, *PKSPROPERTY_VIDEOPROCAMP_S
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	KSPROPERTY_VIDEOPROCAMP_S
+product: Windows
+targetos: Windows
+req.typenames: "*PKSPROPERTY_VIDEOPROCAMP_S, KSPROPERTY_VIDEOPROCAMP_S"
 ---
 
 # KSPROPERTY_VIDEOPROCAMP_S structure

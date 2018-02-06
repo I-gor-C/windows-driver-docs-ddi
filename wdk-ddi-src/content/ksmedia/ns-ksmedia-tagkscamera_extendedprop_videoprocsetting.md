@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.tagKSCAMERA_EXTENDEDPROP_VIDEOPROCSETTING
-title : tagKSCAMERA_EXTENDEDPROP_VIDEOPROCSETTING
-author : windows-driver-content
-description : The KSCAMERA_EXTENDEDPROP_VIDEOPROCSETTING is a property payload structure for video processing settings related to white balance, exposure mode, and focus mode.
-old-location : stream\kscamera_extendedprop_videoprocsetting.htm
-old-project : stream
-ms.assetid : D4239E72-C57A-45BC-881C-08FF6263874E
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KSCAMERA_EXTENDEDPROP_WBPRESET_DAYLIGHT, KSCAMERA_EXTENDEDPROP_WBPRESET_TUNGSTEN, *PKSCAMERA_EXTENDEDPROP_VIDEOPROCSETTING, KSCAMERA_EXTENDEDPROP_WHITEBALANCE_TEMPERATURE, KSCAMERA_EXTENDEDPROP_WBPRESET_FLUORESCENT, KSCAMERA_EXTENDEDPROP_WBPRESET_CANDLELIGHT, ksmedia/PKSCAMERA_EXTENDEDPROP_VIDEOPROCSETTING, KSCAMERA_EXTENDEDPROP_VIDEOPROCSETTING structure [Streaming Media Devices], stream.kscamera_extendedprop_videoprocsetting, PKSCAMERA_EXTENDEDPROP_VIDEOPROCSETTING structure pointer [Streaming Media Devices], ksmedia/KSCAMERA_EXTENDEDPROP_VIDEOPROCSETTING, KSCAMERA_EXTENDEDPROP_WBPRESET_CLOUDY, KSCAMERA_EXTENDEDPROP_WBPRESET_FLASH, tagKSCAMERA_EXTENDEDPROP_VIDEOPROCSETTING, KSCAMERA_EXTENDEDPROP_WHITEBALANCE_PRESET, KSCAMERA_EXTENDEDPROP_VIDEOPROCSETTING, PKSCAMERA_EXTENDEDPROP_VIDEOPROCSETTING
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows 8.1.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKSCAMERA_EXTENDEDPROP_VIDEOPROCSETTING, KSCAMERA_EXTENDEDPROP_VIDEOPROCSETTING"
+UID: NS:ksmedia.tagKSCAMERA_EXTENDEDPROP_VIDEOPROCSETTING
+title: tagKSCAMERA_EXTENDEDPROP_VIDEOPROCSETTING
+author: windows-driver-content
+description: The KSCAMERA_EXTENDEDPROP_VIDEOPROCSETTING is a property payload structure for video processing settings related to white balance, exposure mode, and focus mode.
+old-location: stream\kscamera_extendedprop_videoprocsetting.htm
+old-project: stream
+ms.assetid: D4239E72-C57A-45BC-881C-08FF6263874E
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KSCAMERA_EXTENDEDPROP_WBPRESET_DAYLIGHT, KSCAMERA_EXTENDEDPROP_WBPRESET_TUNGSTEN, *PKSCAMERA_EXTENDEDPROP_VIDEOPROCSETTING, KSCAMERA_EXTENDEDPROP_WHITEBALANCE_TEMPERATURE, KSCAMERA_EXTENDEDPROP_WBPRESET_FLUORESCENT, KSCAMERA_EXTENDEDPROP_WBPRESET_CANDLELIGHT, ksmedia/PKSCAMERA_EXTENDEDPROP_VIDEOPROCSETTING, KSCAMERA_EXTENDEDPROP_VIDEOPROCSETTING structure [Streaming Media Devices], stream.kscamera_extendedprop_videoprocsetting, PKSCAMERA_EXTENDEDPROP_VIDEOPROCSETTING structure pointer [Streaming Media Devices], ksmedia/KSCAMERA_EXTENDEDPROP_VIDEOPROCSETTING, KSCAMERA_EXTENDEDPROP_WBPRESET_CLOUDY, KSCAMERA_EXTENDEDPROP_WBPRESET_FLASH, tagKSCAMERA_EXTENDEDPROP_VIDEOPROCSETTING, KSCAMERA_EXTENDEDPROP_WHITEBALANCE_PRESET, KSCAMERA_EXTENDEDPROP_VIDEOPROCSETTING, PKSCAMERA_EXTENDEDPROP_VIDEOPROCSETTING
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows 8.1.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ksmedia.h
+apiname:
+-	KSCAMERA_EXTENDEDPROP_VIDEOPROCSETTING
+product: Windows
+targetos: Windows
+req.typenames: "*PKSCAMERA_EXTENDEDPROP_VIDEOPROCSETTING, KSCAMERA_EXTENDEDPROP_VIDEOPROCSETTING"
 ---
 
 # tagKSCAMERA_EXTENDEDPROP_VIDEOPROCSETTING structure

@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfcommonbuffer.WdfCommonBufferGetAlignedLogicalAddress
-title : WdfCommonBufferGetAlignedLogicalAddress function
-author : windows-driver-content
-description : The WdfCommonBufferGetAlignedLogicalAddress method returns the logical address that is associated with a specified common buffer.
-old-location : wdf\wdfcommonbuffergetalignedlogicaladdress.htm
-old-project : wdf
-ms.assetid : 6222db07-5aba-467c-94a5-18493dfb1524
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.wdfcommonbuffergetalignedlogicaladdress, WdfCommonBufferGetAlignedLogicalAddress, wdfcommonbuffer/WdfCommonBufferGetAlignedLogicalAddress, WdfCommonBufferGetAlignedLogicalAddress method, PFN_WDFCOMMONBUFFERGETALIGNEDLOGICALADDRESS, kmdf.wdfcommonbuffergetalignedlogicaladdress, DFCommonBufferObjectRef_8381c500-1cd1-4271-9679-33a213a2307f.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfcommonbuffer.h
-req.include-header : WdfCommonBuffer.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDF_CHILD_RETRIEVE_INFO, WDF_CHILD_RETRIEVE_INFO"
-req.product : Windows 10 or later.
+UID: NF:wdfcommonbuffer.WdfCommonBufferGetAlignedLogicalAddress
+title: WdfCommonBufferGetAlignedLogicalAddress function
+author: windows-driver-content
+description: The WdfCommonBufferGetAlignedLogicalAddress method returns the logical address that is associated with a specified common buffer.
+old-location: wdf\wdfcommonbuffergetalignedlogicaladdress.htm
+old-project: wdf
+ms.assetid: 6222db07-5aba-467c-94a5-18493dfb1524
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.wdfcommonbuffergetalignedlogicaladdress, WdfCommonBufferGetAlignedLogicalAddress, wdfcommonbuffer/WdfCommonBufferGetAlignedLogicalAddress, WdfCommonBufferGetAlignedLogicalAddress method, PFN_WDFCOMMONBUFFERGETALIGNEDLOGICALADDRESS, kmdf.wdfcommonbuffergetalignedlogicaladdress, DFCommonBufferObjectRef_8381c500-1cd1-4271-9679-33a213a2307f.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfcommonbuffer.h
+req.include-header: WdfCommonBuffer.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfCommonBufferGetAlignedLogicalAddress
+product: Windows
+targetos: Windows
+req.typenames: "*PWDF_CHILD_RETRIEVE_INFO, WDF_CHILD_RETRIEVE_INFO"
+req.product: Windows 10 or later.
 ---
 
 

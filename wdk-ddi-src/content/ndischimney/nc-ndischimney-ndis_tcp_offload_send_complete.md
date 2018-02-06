@@ -1,41 +1,46 @@
 ---
-UID : NC:ndischimney.NDIS_TCP_OFFLOAD_SEND_COMPLETE
-title : NDIS_TCP_OFFLOAD_SEND_COMPLETE
-author : windows-driver-content
-description : An offload target calls the NdisTcpOffloadSendComplete function to complete one or more send requests that were made to the MiniportTcpOffloadSend function of the offload target.
-old-location : netvista\ndistcpoffloadsendcomplete.htm
-old-project : netvista
-ms.assetid : 1689b6f9-88f3-456f-9a7c-c6b4e76cb336
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.ndistcpoffloadsendcomplete, NdisTcpOffloadSendComplete callback function [Network Drivers Starting with Windows Vista], NdisTcpOffloadSendComplete, NDIS_TCP_OFFLOAD_SEND_COMPLETE, NDIS_TCP_OFFLOAD_SEND_COMPLETE, ndischimney/NdisTcpOffloadSendComplete, tcp_chim_ndis_func_8893982f-08b9-4963-8a52-533a8ee94cde.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ndischimney.h
-req.include-header : Ndischimney.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PD_BUFFER_VIRTUAL_SUBNET_INFO
+UID: NC:ndischimney.NDIS_TCP_OFFLOAD_SEND_COMPLETE
+title: NDIS_TCP_OFFLOAD_SEND_COMPLETE
+author: windows-driver-content
+description: An offload target calls the NdisTcpOffloadSendComplete function to complete one or more send requests that were made to the MiniportTcpOffloadSend function of the offload target.
+old-location: netvista\ndistcpoffloadsendcomplete.htm
+old-project: netvista
+ms.assetid: 1689b6f9-88f3-456f-9a7c-c6b4e76cb336
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.ndistcpoffloadsendcomplete, NdisTcpOffloadSendComplete callback function [Network Drivers Starting with Windows Vista], NdisTcpOffloadSendComplete, NDIS_TCP_OFFLOAD_SEND_COMPLETE, NDIS_TCP_OFFLOAD_SEND_COMPLETE, ndischimney/NdisTcpOffloadSendComplete, tcp_chim_ndis_func_8893982f-08b9-4963-8a52-533a8ee94cde.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ndischimney.h
+req.include-header: Ndischimney.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	ndischimney.h
+apiname:
+-	NdisTcpOffloadSendComplete
+product: Windows
+targetos: Windows
+req.typenames: PD_BUFFER_VIRTUAL_SUBNET_INFO
 ---
 
 

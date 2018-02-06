@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddcdrm._SUB_Q_CURRENT_POSITION
-title : "_SUB_Q_CURRENT_POSITION"
-author : windows-driver-content
-description : The SUB_Q_CURRENT_POSITION structure contains position information and is used in conjunction with SUB_Q_CHANNEL_DATA.
-old-location : storage\sub_q_current_position.htm
-old-project : storage
-ms.assetid : 816baec4-3dd0-4025-ba34-035bf6f241d3
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : PSUB_Q_CURRENT_POSITION, _SUB_Q_CURRENT_POSITION, storage.sub_q_current_position, PSUB_Q_CURRENT_POSITION structure pointer [Storage Devices], SUB_Q_CURRENT_POSITION structure [Storage Devices], ntddcdrm/SUB_Q_CURRENT_POSITION, ntddcdrm/PSUB_Q_CURRENT_POSITION, SUB_Q_CURRENT_POSITION, structs-CD-ROM_f9833ad0-bb9c-418e-8e98-2c2f790a0e7e.xml, *PSUB_Q_CURRENT_POSITION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddcdrm.h
-req.include-header : Ntddcdrm.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSUB_Q_CURRENT_POSITION, SUB_Q_CURRENT_POSITION"
+UID: NS:ntddcdrm._SUB_Q_CURRENT_POSITION
+title: "_SUB_Q_CURRENT_POSITION"
+author: windows-driver-content
+description: The SUB_Q_CURRENT_POSITION structure contains position information and is used in conjunction with SUB_Q_CHANNEL_DATA.
+old-location: storage\sub_q_current_position.htm
+old-project: storage
+ms.assetid: 816baec4-3dd0-4025-ba34-035bf6f241d3
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: PSUB_Q_CURRENT_POSITION, _SUB_Q_CURRENT_POSITION, storage.sub_q_current_position, PSUB_Q_CURRENT_POSITION structure pointer [Storage Devices], SUB_Q_CURRENT_POSITION structure [Storage Devices], ntddcdrm/SUB_Q_CURRENT_POSITION, ntddcdrm/PSUB_Q_CURRENT_POSITION, SUB_Q_CURRENT_POSITION, structs-CD-ROM_f9833ad0-bb9c-418e-8e98-2c2f790a0e7e.xml, *PSUB_Q_CURRENT_POSITION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddcdrm.h
+req.include-header: Ntddcdrm.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddcdrm.h
+apiname:
+-	SUB_Q_CURRENT_POSITION
+product: Windows
+targetos: Windows
+req.typenames: "*PSUB_Q_CURRENT_POSITION, SUB_Q_CURRENT_POSITION"
 ---
 
 # _SUB_Q_CURRENT_POSITION structure

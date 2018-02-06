@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dkmddi.DXGKDDI_QUERYDEPENDENTENGINEGROUP
-title : DXGKDDI_QUERYDEPENDENTENGINEGROUP
-author : windows-driver-content
-description : Called by the display port driver's GPU scheduler to query dependencies of nodes in a physical display adapter.
-old-location : display\dxgkddiquerydependentenginegroup.htm
-old-project : display
-ms.assetid : 42040ffc-40a3-4794-805c-7a165c47c8c9
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkddiquerydependentenginegroup, DxgkDdiQueryDependentEngineGroup callback function [Display Devices], DxgkDdiQueryDependentEngineGroup, DXGKDDI_QUERYDEPENDENTENGINEGROUP, DXGKDDI_QUERYDEPENDENTENGINEGROUP, d3dkmddi/DxgkDdiQueryDependentEngineGroup
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dkmddi.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
+UID: NC:d3dkmddi.DXGKDDI_QUERYDEPENDENTENGINEGROUP
+title: DXGKDDI_QUERYDEPENDENTENGINEGROUP
+author: windows-driver-content
+description: Called by the display port driver's GPU scheduler to query dependencies of nodes in a physical display adapter.
+old-location: display\dxgkddiquerydependentenginegroup.htm
+old-project: display
+ms.assetid: 42040ffc-40a3-4794-805c-7a165c47c8c9
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkddiquerydependentenginegroup, DxgkDdiQueryDependentEngineGroup callback function [Display Devices], DxgkDdiQueryDependentEngineGroup, DXGKDDI_QUERYDEPENDENTENGINEGROUP, DXGKDDI_QUERYDEPENDENTENGINEGROUP, d3dkmddi/DxgkDdiQueryDependentEngineGroup
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dkmddi.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	D3dkmddi.h
+apiname:
+-	DxgkDdiQueryDependentEngineGroup
+product: Windows
+targetos: Windows
+req.typenames: DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
 

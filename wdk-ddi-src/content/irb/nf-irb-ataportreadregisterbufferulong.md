@@ -1,41 +1,49 @@
 ---
-UID : NF:irb.AtaPortReadRegisterBufferUlong
-title : AtaPortReadRegisterBufferUlong function
-author : windows-driver-content
-description : The AtaPortReadRegisterBufferUlong routine transfers a specified number of ULONG values from the HBA to a buffer.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
-old-location : storage\ataportreadregisterbufferulong.htm
-old-project : storage
-ms.assetid : 50baeaa1-5671-4f6d-83cd-f03cca18b18b
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : irb/AtaPortReadRegisterBufferUlong, storage.ataportreadregisterbufferulong, AtaPortReadRegisterBufferUlong, atartns_2e57cb04-ad9c-47fd-b4a5-9f9aa433c8ad.xml, AtaPortReadRegisterBufferUlong routine [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : irb.h
-req.include-header : Ata.h, Irb.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ataport.lib; Pciidex.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : IDE_POWER_STATE
+UID: NF:irb.AtaPortReadRegisterBufferUlong
+title: AtaPortReadRegisterBufferUlong function
+author: windows-driver-content
+description: The AtaPortReadRegisterBufferUlong routine transfers a specified number of ULONG values from the HBA to a buffer.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
+old-location: storage\ataportreadregisterbufferulong.htm
+old-project: storage
+ms.assetid: 50baeaa1-5671-4f6d-83cd-f03cca18b18b
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: irb/AtaPortReadRegisterBufferUlong, storage.ataportreadregisterbufferulong, AtaPortReadRegisterBufferUlong, atartns_2e57cb04-ad9c-47fd-b4a5-9f9aa433c8ad.xml, AtaPortReadRegisterBufferUlong routine [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: irb.h
+req.include-header: Ata.h, Irb.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ataport.lib; Pciidex.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ataport.lib
+-	ataport.dll
+-	pciidex.lib
+-	pciidex.dll
+apiname:
+-	AtaPortReadRegisterBufferUlong
+product: Windows
+targetos: Windows
+req.typenames: IDE_POWER_STATE
 ---
 
 

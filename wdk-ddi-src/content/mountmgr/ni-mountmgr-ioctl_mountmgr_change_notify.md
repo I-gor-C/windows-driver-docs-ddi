@@ -1,41 +1,46 @@
 ---
-UID : NI:mountmgr.IOCTL_MOUNTMGR_CHANGE_NOTIFY
-title : IOCTL_MOUNTMGR_CHANGE_NOTIFY
-author : windows-driver-content
-description : Clients send this IOCTL to the mount manager to be informed whenever there is a change in the mount manager's persistent symbolic link name database.
-old-location : storage\ioctl_mountmgr_change_notify.htm
-old-project : storage
-ms.assetid : ad6ab15b-6789-4ee8-ba99-9eaa6eec070a
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_mountmgr_change_notify, IOCTL_MOUNTMGR_CHANGE_NOTIFY control code [Storage Devices], IOCTL_MOUNTMGR_CHANGE_NOTIFY, mountmgr/IOCTL_MOUNTMGR_CHANGE_NOTIFY, k307_009033eb-e845-4967-9ef1-30f11bfa3253.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : mountmgr.h
-req.include-header : Mountmgr.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PMOUNTDEV_UNIQUE_ID, MOUNTDEV_UNIQUE_ID"
+UID: NI:mountmgr.IOCTL_MOUNTMGR_CHANGE_NOTIFY
+title: IOCTL_MOUNTMGR_CHANGE_NOTIFY
+author: windows-driver-content
+description: Clients send this IOCTL to the mount manager to be informed whenever there is a change in the mount manager's persistent symbolic link name database.
+old-location: storage\ioctl_mountmgr_change_notify.htm
+old-project: storage
+ms.assetid: ad6ab15b-6789-4ee8-ba99-9eaa6eec070a
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_mountmgr_change_notify, IOCTL_MOUNTMGR_CHANGE_NOTIFY control code [Storage Devices], IOCTL_MOUNTMGR_CHANGE_NOTIFY, mountmgr/IOCTL_MOUNTMGR_CHANGE_NOTIFY, k307_009033eb-e845-4967-9ef1-30f11bfa3253.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: mountmgr.h
+req.include-header: Mountmgr.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Mountmgr.h
+apiname:
+-	IOCTL_MOUNTMGR_CHANGE_NOTIFY
+product: Windows
+targetos: Windows
+req.typenames: "*PMOUNTDEV_UNIQUE_ID, MOUNTDEV_UNIQUE_ID"
 ---
 
 # IOCTL_MOUNTMGR_CHANGE_NOTIFY IOCTL

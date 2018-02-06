@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dhal.LPD3DHAL_VALIDATETEXTURESTAGESTATECB
-title : LPD3DHAL_VALIDATETEXTURESTAGESTATECB
-author : windows-driver-content
-description : The D3dValidateTextureStageState function returns the number of passes where the hardware can perform the blending operations specified in the current state.
-old-location : display\d3dvalidatetexturestagestate.htm
-old-project : display
-ms.assetid : 6376842f-ebf5-43b0-81d8-fc5b15f595ab
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.d3dvalidatetexturestagestate, D3dValidateTextureStageState callback function [Display Devices], D3dValidateTextureStageState, LPD3DHAL_VALIDATETEXTURESTAGESTATECB, LPD3DHAL_VALIDATETEXTURESTAGESTATECB, d3dhal/D3dValidateTextureStageState, d3dfncs_f83c205a-4cad-4365-beee-442a66e2c67a.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dhal.h
-req.include-header : D3dhal.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DTRANSFORMCAPS, *LPD3DTRANSFORMCAPS
+UID: NC:d3dhal.LPD3DHAL_VALIDATETEXTURESTAGESTATECB
+title: LPD3DHAL_VALIDATETEXTURESTAGESTATECB
+author: windows-driver-content
+description: The D3dValidateTextureStageState function returns the number of passes where the hardware can perform the blending operations specified in the current state.
+old-location: display\d3dvalidatetexturestagestate.htm
+old-project: display
+ms.assetid: 6376842f-ebf5-43b0-81d8-fc5b15f595ab
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.d3dvalidatetexturestagestate, D3dValidateTextureStageState callback function [Display Devices], D3dValidateTextureStageState, LPD3DHAL_VALIDATETEXTURESTAGESTATECB, LPD3DHAL_VALIDATETEXTURESTAGESTATECB, d3dhal/D3dValidateTextureStageState, d3dfncs_f83c205a-4cad-4365-beee-442a66e2c67a.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dhal.h
+req.include-header: D3dhal.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dhal.h
+apiname:
+-	D3dValidateTextureStageState
+product: Windows
+targetos: Windows
+req.typenames: D3DTRANSFORMCAPS, *LPD3DTRANSFORMCAPS
 ---
 
 

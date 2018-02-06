@@ -1,41 +1,49 @@
 ---
-UID : NF:d3dkmthk.D3DKMTWaitForSynchronizationObjectFromGpu
-title : D3DKMTWaitForSynchronizationObjectFromGpu function
-author : windows-driver-content
-description : D3DKMTWaitForSynchronizationObjectFromGpu waits for a monitored fence to reach a certain value before processing subsequent context commands.
-old-location : display\d3dkmtwaitforsynchronizationobjectfromgpu.htm
-old-project : display
-ms.assetid : 93705446-8B87-46DD-9CFE-DD0473DEE6B6
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DKMTWaitForSynchronizationObjectFromGpu, display.d3dkmtwaitforsynchronizationobjectfromgpu, D3DKMTWaitForSynchronizationObjectFromGpu function [Display Devices], d3dkmthk/D3DKMTWaitForSynchronizationObjectFromGpu
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Universal
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : GDI32.lib
-req.dll : GDI32.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_DRIVERVERSION
+UID: NF:d3dkmthk.D3DKMTWaitForSynchronizationObjectFromGpu
+title: D3DKMTWaitForSynchronizationObjectFromGpu function
+author: windows-driver-content
+description: D3DKMTWaitForSynchronizationObjectFromGpu waits for a monitored fence to reach a certain value before processing subsequent context commands.
+old-location: display\d3dkmtwaitforsynchronizationobjectfromgpu.htm
+old-project: display
+ms.assetid: 93705446-8B87-46DD-9CFE-DD0473DEE6B6
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DKMTWaitForSynchronizationObjectFromGpu, display.d3dkmtwaitforsynchronizationobjectfromgpu, D3DKMTWaitForSynchronizationObjectFromGpu function [Display Devices], d3dkmthk/D3DKMTWaitForSynchronizationObjectFromGpu
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Universal
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: GDI32.lib
+req.dll: GDI32.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	GDI32.dll
+-	API-MS-Win-DX-D3DKMT-L1-1-1.dll
+-	GDI32.dll
+-	API-MS-Win-DX-D3DKMT-L1-1-2.dll
+apiname:
+-	D3DKMTWaitForSynchronizationObjectFromGpu
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_DRIVERVERSION
 ---
 
 

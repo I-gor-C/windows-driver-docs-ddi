@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddcdrm._CDROM_PLAY_AUDIO_MSF
-title : "_CDROM_PLAY_AUDIO_MSF"
-author : windows-driver-content
-description : Device control IRPs with a control code of IOCTL_CDROM_PLAY_AUDIO_MSF use this structure to play an audio CD.
-old-location : storage\cdrom_play_audio_msf.htm
-old-project : storage
-ms.assetid : 73589397-9b2b-4d49-9860-cb2eb6a26632
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.cdrom_play_audio_msf, _CDROM_PLAY_AUDIO_MSF, CDROM_PLAY_AUDIO_MSF structure [Storage Devices], ntddcdrm/CDROM_PLAY_AUDIO_MSF, PCDROM_PLAY_AUDIO_MSF structure pointer [Storage Devices], *PCDROM_PLAY_AUDIO_MSF, ntddcdrm/PCDROM_PLAY_AUDIO_MSF, PCDROM_PLAY_AUDIO_MSF, CDROM_PLAY_AUDIO_MSF, structs-CD-ROM_27bfe732-1972-4101-baa1-e9d520c3dfcf.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddcdrm.h
-req.include-header : Ntddcdrm.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : CDROM_PLAY_AUDIO_MSF, *PCDROM_PLAY_AUDIO_MSF
+UID: NS:ntddcdrm._CDROM_PLAY_AUDIO_MSF
+title: "_CDROM_PLAY_AUDIO_MSF"
+author: windows-driver-content
+description: Device control IRPs with a control code of IOCTL_CDROM_PLAY_AUDIO_MSF use this structure to play an audio CD.
+old-location: storage\cdrom_play_audio_msf.htm
+old-project: storage
+ms.assetid: 73589397-9b2b-4d49-9860-cb2eb6a26632
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.cdrom_play_audio_msf, _CDROM_PLAY_AUDIO_MSF, CDROM_PLAY_AUDIO_MSF structure [Storage Devices], ntddcdrm/CDROM_PLAY_AUDIO_MSF, PCDROM_PLAY_AUDIO_MSF structure pointer [Storage Devices], *PCDROM_PLAY_AUDIO_MSF, ntddcdrm/PCDROM_PLAY_AUDIO_MSF, PCDROM_PLAY_AUDIO_MSF, CDROM_PLAY_AUDIO_MSF, structs-CD-ROM_27bfe732-1972-4101-baa1-e9d520c3dfcf.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddcdrm.h
+req.include-header: Ntddcdrm.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddcdrm.h
+apiname:
+-	CDROM_PLAY_AUDIO_MSF
+product: Windows
+targetos: Windows
+req.typenames: CDROM_PLAY_AUDIO_MSF, *PCDROM_PLAY_AUDIO_MSF
 ---
 
 # _CDROM_PLAY_AUDIO_MSF structure

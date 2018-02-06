@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGKARG_ISSUPPORTEDVIDPN
-title : "_DXGKARG_ISSUPPORTEDVIDPN"
-author : windows-driver-content
-description : The DXGKARG_ISSUPPORTEDVIDPN structure contains arguments for the DxgkDdiIsSupportedVidPn function. The DxgkDdiIsSupportedVidPn function determines whether a specified video present network (VidPN) is supported on a display adapter.
-old-location : display\dxgkarg_issupportedvidpn.htm
-old-project : display
-ms.assetid : 37f9f40d-6d32-4eeb-8161-282a84ee89dc
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DXGKARG_ISSUPPORTEDVIDPN, DXGKARG_ISSUPPORTEDVIDPN structure [Display Devices], display.dxgkarg_issupportedvidpn, _DXGKARG_ISSUPPORTEDVIDPN, d3dkmddi/DXGKARG_ISSUPPORTEDVIDPN, *INOUT_PDXGKARG_ISSUPPORTEDVIDPN, DmStructs_03198868-50e6-47a1-9119-0fa3bff21ec0.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGKARG_ISSUPPORTEDVIDPN
+UID: NS:d3dkmddi._DXGKARG_ISSUPPORTEDVIDPN
+title: "_DXGKARG_ISSUPPORTEDVIDPN"
+author: windows-driver-content
+description: The DXGKARG_ISSUPPORTEDVIDPN structure contains arguments for the DxgkDdiIsSupportedVidPn function. The DxgkDdiIsSupportedVidPn function determines whether a specified video present network (VidPN) is supported on a display adapter.
+old-location: display\dxgkarg_issupportedvidpn.htm
+old-project: display
+ms.assetid: 37f9f40d-6d32-4eeb-8161-282a84ee89dc
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DXGKARG_ISSUPPORTEDVIDPN, DXGKARG_ISSUPPORTEDVIDPN structure [Display Devices], display.dxgkarg_issupportedvidpn, _DXGKARG_ISSUPPORTEDVIDPN, d3dkmddi/DXGKARG_ISSUPPORTEDVIDPN, *INOUT_PDXGKARG_ISSUPPORTEDVIDPN, DmStructs_03198868-50e6-47a1-9119-0fa3bff21ec0.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DXGKARG_ISSUPPORTEDVIDPN
+product: Windows
+targetos: Windows
+req.typenames: DXGKARG_ISSUPPORTEDVIDPN
 ---
 
 # _DXGKARG_ISSUPPORTEDVIDPN structure

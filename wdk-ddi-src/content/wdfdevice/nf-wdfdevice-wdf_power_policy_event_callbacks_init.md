@@ -1,42 +1,47 @@
 ---
-UID : NF:wdfdevice.WDF_POWER_POLICY_EVENT_CALLBACKS_INIT
-title : WDF_POWER_POLICY_EVENT_CALLBACKS_INIT function
-author : windows-driver-content
-description : The WDF_POWER_POLICY_EVENT_CALLBACKS_INIT function initializes a driver's WDF_POWER_POLICY_EVENT_CALLBACKS structure.
-old-location : wdf\wdf_power_policy_event_callbacks_init.htm
-old-project : wdf
-ms.assetid : 09ab4995-58be-4d87-adf7-e843e637ac09
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : DFDeviceObjectGeneralRef_46bebe7b-91e3-4ad3-b535-233d6c40622e.xml, WDF_POWER_POLICY_EVENT_CALLBACKS_INIT function, WDF_POWER_POLICY_EVENT_CALLBACKS_INIT, wdfdevice/WDF_POWER_POLICY_EVENT_CALLBACKS_INIT, wdf.wdf_power_policy_event_callbacks_init, kmdf.wdf_power_policy_event_callbacks_init
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfdevice.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_STATE_NOTIFICATION_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfdevice.WDF_POWER_POLICY_EVENT_CALLBACKS_INIT
+title: WDF_POWER_POLICY_EVENT_CALLBACKS_INIT function
+author: windows-driver-content
+description: The WDF_POWER_POLICY_EVENT_CALLBACKS_INIT function initializes a driver's WDF_POWER_POLICY_EVENT_CALLBACKS structure.
+old-location: wdf\wdf_power_policy_event_callbacks_init.htm
+old-project: wdf
+ms.assetid: 09ab4995-58be-4d87-adf7-e843e637ac09
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: DFDeviceObjectGeneralRef_46bebe7b-91e3-4ad3-b535-233d6c40622e.xml, WDF_POWER_POLICY_EVENT_CALLBACKS_INIT function, WDF_POWER_POLICY_EVENT_CALLBACKS_INIT, wdfdevice/WDF_POWER_POLICY_EVENT_CALLBACKS_INIT, wdf.wdf_power_policy_event_callbacks_init, kmdf.wdf_power_policy_event_callbacks_init
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfdevice.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfdevice.h
+apiname:
+-	WDF_POWER_POLICY_EVENT_CALLBACKS_INIT
+product: Windows
+targetos: Windows
+req.typenames: WDF_STATE_NOTIFICATION_TYPE
+req.product: Windows 10 or later.
 ---
 
 

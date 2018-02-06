@@ -1,42 +1,47 @@
 ---
-UID : NC:wdfpdo.EVT_WDF_DEVICE_ENABLE_WAKE_AT_BUS
-title : EVT_WDF_DEVICE_ENABLE_WAKE_AT_BUS
-author : windows-driver-content
-description : A bus driver's EvtDeviceEnableWakeAtBus event callback function performs bus-level operations that enable one of the bus's devices to trigger a wake-up signal on the bus.
-old-location : wdf\evtdeviceenablewakeatbus.htm
-old-project : wdf
-ms.assetid : 902c9bdc-d83a-4bc2-802c-1aaba43c9e2e
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.evtdeviceenablewakeatbus, EvtDeviceEnableWakeAtBus callback function, EvtDeviceEnableWakeAtBus, EVT_WDF_DEVICE_ENABLE_WAKE_AT_BUS, EVT_WDF_DEVICE_ENABLE_WAKE_AT_BUS, wdfpdo/EvtDeviceEnableWakeAtBus, DFDeviceObjectFdoPdoRef_c418526b-2cf2-4193-b75c-f6af5d669433.xml, kmdf.evtdeviceenablewakeatbus
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdfpdo.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDF_OBJECT_CONTEXT_TYPE_INFO, WDF_OBJECT_CONTEXT_TYPE_INFO"
-req.product : Windows 10 or later.
+UID: NC:wdfpdo.EVT_WDF_DEVICE_ENABLE_WAKE_AT_BUS
+title: EVT_WDF_DEVICE_ENABLE_WAKE_AT_BUS
+author: windows-driver-content
+description: A bus driver's EvtDeviceEnableWakeAtBus event callback function performs bus-level operations that enable one of the bus's devices to trigger a wake-up signal on the bus.
+old-location: wdf\evtdeviceenablewakeatbus.htm
+old-project: wdf
+ms.assetid: 902c9bdc-d83a-4bc2-802c-1aaba43c9e2e
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.evtdeviceenablewakeatbus, EvtDeviceEnableWakeAtBus callback function, EvtDeviceEnableWakeAtBus, EVT_WDF_DEVICE_ENABLE_WAKE_AT_BUS, EVT_WDF_DEVICE_ENABLE_WAKE_AT_BUS, wdfpdo/EvtDeviceEnableWakeAtBus, DFDeviceObjectFdoPdoRef_c418526b-2cf2-4193-b75c-f6af5d669433.xml, kmdf.evtdeviceenablewakeatbus
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdfpdo.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Wdfpdo.h
+apiname:
+-	EvtDeviceEnableWakeAtBus
+product: Windows
+targetos: Windows
+req.typenames: "*PWDF_OBJECT_CONTEXT_TYPE_INFO, WDF_OBJECT_CONTEXT_TYPE_INFO"
+req.product: Windows 10 or later.
 ---
 
 

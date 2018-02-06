@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.WmiTraceMessageVa
-title : WmiTraceMessageVa function
-author : windows-driver-content
-description : The WmiTraceMessageVa routine adds a message to the output log of a WPP software tracing session.
-old-location : kernel\wmitracemessageva.htm
-old-project : kernel
-ms.assetid : 57f8006c-defe-4975-9d21-0eaecae5a873
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : WmiTraceMessageVa routine [Kernel-Mode Driver Architecture], WmiTraceMessageVa, kernel.wmitracemessageva, wdm/WmiTraceMessageVa, k902_c9c7dd80-d7a8-4b53-bcf1-f64c822e9e6d.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows XP and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.WmiTraceMessageVa
+title: WmiTraceMessageVa function
+author: windows-driver-content
+description: The WmiTraceMessageVa routine adds a message to the output log of a WPP software tracing session.
+old-location: kernel\wmitracemessageva.htm
+old-project: kernel
+ms.assetid: 57f8006c-defe-4975-9d21-0eaecae5a873
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: WmiTraceMessageVa routine [Kernel-Mode Driver Architecture], WmiTraceMessageVa, kernel.wmitracemessageva, wdm/WmiTraceMessageVa, k902_c9c7dd80-d7a8-4b53-bcf1-f64c822e9e6d.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows XP and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	WmiTraceMessageVa
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

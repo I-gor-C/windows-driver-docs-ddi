@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsPinGetAndGate
-title : KsPinGetAndGate function
-author : windows-driver-content
-description : The KsPinGetAndGate function returns the processing control gate for Pin.
-old-location : stream\kspingetandgate.htm
-old-project : stream
-ms.assetid : abd4da69-c0c3-442f-af58-e77362c637da
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ks/KsPinGetAndGate, avfunc_a4159ef9-1a69-4716-96ce-4fabd1ee6218.xml, stream.kspingetandgate, KsPinGetAndGate function [Streaming Media Devices], KsPinGetAndGate
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsPinGetAndGate
+title: KsPinGetAndGate function
+author: windows-driver-content
+description: The KsPinGetAndGate function returns the processing control gate for Pin.
+old-location: stream\kspingetandgate.htm
+old-project: stream
+ms.assetid: abd4da69-c0c3-442f-af58-e77362c637da
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ks/KsPinGetAndGate, avfunc_a4159ef9-1a69-4716-96ce-4fabd1ee6218.xml, stream.kspingetandgate, KsPinGetAndGate function [Streaming Media Devices], KsPinGetAndGate
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsPinGetAndGate
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisCoOidRequestComplete
-title : NdisCoOidRequestComplete function
-author : windows-driver-content
-description : The NdisCoOidRequestComplete function returns the final status of an OID request that a CoNDIS client's or stand-alone call manager's ProtocolCoOidRequest function previously returned NDIS_STATUS_PENDING for.
-old-location : netvista\ndiscooidrequestcomplete.htm
-old-project : netvista
-ms.assetid : ba4a22a1-ad48-43f1-96f5-dee5d76e49cb
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NdisCoOidRequestComplete, ndis/NdisCoOidRequestComplete, condis_request_ref_29e0ae37-d6e6-4c75-b0fa-a6f84494f4a6.xml, netvista.ndiscooidrequestcomplete, NdisCoOidRequestComplete function [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_Connection_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisCoOidRequestComplete
+title: NdisCoOidRequestComplete function
+author: windows-driver-content
+description: The NdisCoOidRequestComplete function returns the final status of an OID request that a CoNDIS client's or stand-alone call manager's ProtocolCoOidRequest function previously returned NDIS_STATUS_PENDING for.
+old-location: netvista\ndiscooidrequestcomplete.htm
+old-project: netvista
+ms.assetid: ba4a22a1-ad48-43f1-96f5-dee5d76e49cb
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NdisCoOidRequestComplete, ndis/NdisCoOidRequestComplete, condis_request_ref_29e0ae37-d6e6-4c75-b0fa-a6f84494f4a6.xml, netvista.ndiscooidrequestcomplete, NdisCoOidRequestComplete function [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_Connection_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisCoOidRequestComplete
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

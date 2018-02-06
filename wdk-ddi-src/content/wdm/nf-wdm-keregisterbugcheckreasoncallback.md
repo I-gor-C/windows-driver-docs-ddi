@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.KeRegisterBugCheckReasonCallback
-title : KeRegisterBugCheckReasonCallback function
-author : windows-driver-content
-description : The KeRegisterBugCheckReasonCallback routine registers a BugCheckDumpIoCallback, BugCheckSecondaryDumpDataCallback, or BugCheckAddPagesCallback routine, which executes when the operating system issues a bug check.
-old-location : kernel\keregisterbugcheckreasoncallback.htm
-old-project : kernel
-ms.assetid : 01528aa0-c580-4527-a64d-83f4ed39a471
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : k105_6b2fbc25-072d-470f-9860-e820e60cdf90.xml, wdm/KeRegisterBugCheckReasonCallback, KeRegisterBugCheckReasonCallback routine [Kernel-Mode Driver Architecture], KeRegisterBugCheckReasonCallback, kernel.keregisterbugcheckreasoncallback
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows XP Service Pack 1 (SP1), Windows Server 2003, and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.KeRegisterBugCheckReasonCallback
+title: KeRegisterBugCheckReasonCallback function
+author: windows-driver-content
+description: The KeRegisterBugCheckReasonCallback routine registers a BugCheckDumpIoCallback, BugCheckSecondaryDumpDataCallback, or BugCheckAddPagesCallback routine, which executes when the operating system issues a bug check.
+old-location: kernel\keregisterbugcheckreasoncallback.htm
+old-project: kernel
+ms.assetid: 01528aa0-c580-4527-a64d-83f4ed39a471
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: k105_6b2fbc25-072d-470f-9860-e820e60cdf90.xml, wdm/KeRegisterBugCheckReasonCallback, KeRegisterBugCheckReasonCallback routine [Kernel-Mode Driver Architecture], KeRegisterBugCheckReasonCallback, kernel.keregisterbugcheckreasoncallback
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows XP Service Pack 1 (SP1), Windows Server 2003, and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	KeRegisterBugCheckReasonCallback
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

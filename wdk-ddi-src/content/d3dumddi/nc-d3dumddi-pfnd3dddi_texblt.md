@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_TEXBLT
-title : PFND3DDDI_TEXBLT
-author : windows-driver-content
-description : The TexBlt function performs a bit-block transfer (bitblt) operation from a source texture to a destination texture, including all of the sublevels of the source texture.
-old-location : display\texblt.htm
-old-project : display
-ms.assetid : 1ddfd822-7a43-4976-a153-ba862d6dfd82
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.texblt, TexBlt callback function [Display Devices], TexBlt, PFND3DDDI_TEXBLT, PFND3DDDI_TEXBLT, d3dumddi/TexBlt, UserModeDisplayDriver_Functions_1d3c2c6d-849d-46c2-9934-f3c4e5720edf.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_TEXBLT
+title: PFND3DDDI_TEXBLT
+author: windows-driver-content
+description: The TexBlt function performs a bit-block transfer (bitblt) operation from a source texture to a destination texture, including all of the sublevels of the source texture.
+old-location: display\texblt.htm
+old-project: display
+ms.assetid: 1ddfd822-7a43-4976-a153-ba862d6dfd82
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.texblt, TexBlt callback function [Display Devices], TexBlt, PFND3DDDI_TEXBLT, PFND3DDDI_TEXBLT, d3dumddi/TexBlt, UserModeDisplayDriver_Functions_1d3c2c6d-849d-46c2-9934-f3c4e5720edf.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	TexBlt
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

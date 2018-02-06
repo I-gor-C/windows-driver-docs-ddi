@@ -1,41 +1,46 @@
 ---
-UID : NS:dispmprt._DXGK_VIDEO_OUTPUT_CAPABILITIES
-title : "_DXGK_VIDEO_OUTPUT_CAPABILITIES"
-author : windows-driver-content
-description : The DXGK_VIDEO_OUTPUT_CAPABILITIES structure contains information about the capabilities of a video output on a display adapter.
-old-location : display\dxgk_video_output_capabilities.htm
-old-project : display
-ms.assetid : a673bcea-1a56-48dc-9c63-67583e953571
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DXGK_VIDEO_OUTPUT_CAPABILITIES structure [Display Devices], dispmprt/PDXGK_VIDEO_OUTPUT_CAPABILITIES, _DXGK_VIDEO_OUTPUT_CAPABILITIES, DXGK_VIDEO_OUTPUT_CAPABILITIES, *PDXGK_VIDEO_OUTPUT_CAPABILITIES, display.dxgk_video_output_capabilities, DmStructs_018a3f8f-c9bd-4000-b27d-b3dc3e46f14a.xml, dispmprt/DXGK_VIDEO_OUTPUT_CAPABILITIES, PDXGK_VIDEO_OUTPUT_CAPABILITIES, PDXGK_VIDEO_OUTPUT_CAPABILITIES structure pointer [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : dispmprt.h
-req.include-header : Dispmprt.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_VIDEO_OUTPUT_CAPABILITIES, *PDXGK_VIDEO_OUTPUT_CAPABILITIES
+UID: NS:dispmprt._DXGK_VIDEO_OUTPUT_CAPABILITIES
+title: "_DXGK_VIDEO_OUTPUT_CAPABILITIES"
+author: windows-driver-content
+description: The DXGK_VIDEO_OUTPUT_CAPABILITIES structure contains information about the capabilities of a video output on a display adapter.
+old-location: display\dxgk_video_output_capabilities.htm
+old-project: display
+ms.assetid: a673bcea-1a56-48dc-9c63-67583e953571
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DXGK_VIDEO_OUTPUT_CAPABILITIES structure [Display Devices], dispmprt/PDXGK_VIDEO_OUTPUT_CAPABILITIES, _DXGK_VIDEO_OUTPUT_CAPABILITIES, DXGK_VIDEO_OUTPUT_CAPABILITIES, *PDXGK_VIDEO_OUTPUT_CAPABILITIES, display.dxgk_video_output_capabilities, DmStructs_018a3f8f-c9bd-4000-b27d-b3dc3e46f14a.xml, dispmprt/DXGK_VIDEO_OUTPUT_CAPABILITIES, PDXGK_VIDEO_OUTPUT_CAPABILITIES, PDXGK_VIDEO_OUTPUT_CAPABILITIES structure pointer [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: dispmprt.h
+req.include-header: Dispmprt.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	dispmprt.h
+apiname:
+-	DXGK_VIDEO_OUTPUT_CAPABILITIES
+product: Windows
+targetos: Windows
+req.typenames: DXGK_VIDEO_OUTPUT_CAPABILITIES, *PDXGK_VIDEO_OUTPUT_CAPABILITIES
 ---
 
 # _DXGK_VIDEO_OUTPUT_CAPABILITIES structure

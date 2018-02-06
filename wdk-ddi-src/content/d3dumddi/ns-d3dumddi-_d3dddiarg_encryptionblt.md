@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._D3DDDIARG_ENCRYPTIONBLT
-title : "_D3DDDIARG_ENCRYPTIONBLT"
-author : windows-driver-content
-description : The D3DDDIARG_ENCRYPTIONBLT structure describes the parameters of an encrypted bit-block transfer (bitblt) in a call to the EncryptionBlt function.
-old-location : display\d3dddiarg_encryptionblt.htm
-old-project : display
-ms.assetid : 0c163ae6-5f45-4570-bdbb-8ad34ad5f0dc
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DDDIARG_ENCRYPTIONBLT, UMDisplayDriver_param_Structs_b76b39b2-87b0-453d-b6c5-e59b38249684.xml, display.d3dddiarg_encryptionblt, D3DDDIARG_ENCRYPTIONBLT structure [Display Devices], _D3DDDIARG_ENCRYPTIONBLT, d3dumddi/D3DDDIARG_ENCRYPTIONBLT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : D3DDDIARG_ENCRYPTIONBLT is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDIARG_ENCRYPTIONBLT
+UID: NS:d3dumddi._D3DDDIARG_ENCRYPTIONBLT
+title: "_D3DDDIARG_ENCRYPTIONBLT"
+author: windows-driver-content
+description: The D3DDDIARG_ENCRYPTIONBLT structure describes the parameters of an encrypted bit-block transfer (bitblt) in a call to the EncryptionBlt function.
+old-location: display\d3dddiarg_encryptionblt.htm
+old-project: display
+ms.assetid: 0c163ae6-5f45-4570-bdbb-8ad34ad5f0dc
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DDDIARG_ENCRYPTIONBLT, UMDisplayDriver_param_Structs_b76b39b2-87b0-453d-b6c5-e59b38249684.xml, display.d3dddiarg_encryptionblt, D3DDDIARG_ENCRYPTIONBLT structure [Display Devices], _D3DDDIARG_ENCRYPTIONBLT, d3dumddi/D3DDDIARG_ENCRYPTIONBLT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: D3DDDIARG_ENCRYPTIONBLT is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	D3DDDIARG_ENCRYPTIONBLT
+product: Windows
+targetos: Windows
+req.typenames: D3DDDIARG_ENCRYPTIONBLT
 ---
 
 # _D3DDDIARG_ENCRYPTIONBLT structure

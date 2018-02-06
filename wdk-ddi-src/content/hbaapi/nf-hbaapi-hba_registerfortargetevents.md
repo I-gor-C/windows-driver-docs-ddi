@@ -1,41 +1,46 @@
 ---
-UID : NF:hbaapi.HBA_RegisterForTargetEvents
-title : HBA_RegisterForTargetEvents function
-author : windows-driver-content
-description : The HBA_RegisterForTargetEvents routine registers for target events with a specified target or with all targets associated with an adapter.
-old-location : storage\hba_registerfortargetevents.htm
-old-project : storage
-ms.assetid : a06f6757-e125-4f80-9594-a60fa1fef6e4
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.hba_registerfortargetevents, HBA_RegisterForTargetEvents routine [Storage Devices], hbaapi/HBA_RegisterForTargetEvents, HBA_RegisterForTargetEvents, fibreHBA_rtns_511fff45-f98b-4dbe-a74c-d577497f4e8c.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : hbaapi.h
-req.include-header : Hbaapi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Hbaapi.lib
-req.dll : Hbaapi.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HBA_WWNTYPE
+UID: NF:hbaapi.HBA_RegisterForTargetEvents
+title: HBA_RegisterForTargetEvents function
+author: windows-driver-content
+description: The HBA_RegisterForTargetEvents routine registers for target events with a specified target or with all targets associated with an adapter.
+old-location: storage\hba_registerfortargetevents.htm
+old-project: storage
+ms.assetid: a06f6757-e125-4f80-9594-a60fa1fef6e4
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.hba_registerfortargetevents, HBA_RegisterForTargetEvents routine [Storage Devices], hbaapi/HBA_RegisterForTargetEvents, HBA_RegisterForTargetEvents, fibreHBA_rtns_511fff45-f98b-4dbe-a74c-d577497f4e8c.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: hbaapi.h
+req.include-header: Hbaapi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Hbaapi.lib
+req.dll: Hbaapi.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Hbaapi.dll
+apiname:
+-	HBA_RegisterForTargetEvents
+product: Windows
+targetos: Windows
+req.typenames: HBA_WWNTYPE
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NC:fltkernel.PFLT_GET_OPERATION_STATUS_CALLBACK
-title : PFLT_GET_OPERATION_STATUS_CALLBACK
-author : windows-driver-content
-description : A minifilter driver can register a routine of type PFLT_GET_OPERATION_STATUS_CALLBACK as the minifilter driver's OperationStatusCallback routine.
-old-location : ifsk\PFLT_GET_OPERATION_STATUS_CALLBACK.htm
-old-project : ifsk
-ms.assetid : f3fedf69-260c-4117-b302-db3ce6b182a0
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.PFLT_GET_OPERATION_STATUS_CALLBACK, OperationStatusCallback routine [Installable File System Drivers], OperationStatusCallback, PFLT_GET_OPERATION_STATUS_CALLBACK, PFLT_GET_OPERATION_STATUS_CALLBACK, fltkernel/OperationStatusCallback
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : fltkernel.h
-req.include-header : FltKernel.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Microsoft Windows 2000 Update Rollup 1 for SP4, Windows XP SP2, Windows Server 2003 SP1, and later operating systems. Not available in Windows 2000 SP4 and earlier operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NC:fltkernel.PFLT_GET_OPERATION_STATUS_CALLBACK
+title: PFLT_GET_OPERATION_STATUS_CALLBACK
+author: windows-driver-content
+description: A minifilter driver can register a routine of type PFLT_GET_OPERATION_STATUS_CALLBACK as the minifilter driver's OperationStatusCallback routine.
+old-location: ifsk\PFLT_GET_OPERATION_STATUS_CALLBACK.htm
+old-project: ifsk
+ms.assetid: f3fedf69-260c-4117-b302-db3ce6b182a0
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.PFLT_GET_OPERATION_STATUS_CALLBACK, OperationStatusCallback routine [Installable File System Drivers], OperationStatusCallback, PFLT_GET_OPERATION_STATUS_CALLBACK, PFLT_GET_OPERATION_STATUS_CALLBACK, fltkernel/OperationStatusCallback
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: fltkernel.h
+req.include-header: FltKernel.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Microsoft Windows 2000 Update Rollup 1 for SP4, Windows XP SP2, Windows Server 2003 SP1, and later operating systems. Not available in Windows 2000 SP4 and earlier operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	FltKernel.h
+apiname:
+-	OperationStatusCallback
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

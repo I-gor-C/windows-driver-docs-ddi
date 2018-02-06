@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.CcIsThereDirtyData
-title : CcIsThereDirtyData function
-author : windows-driver-content
-description : The CcIsThereDirtyData routine determines whether a mounted volume contains any files that have dirty data in the system cache.
-old-location : ifsk\ccistheredirtydata.htm
-old-project : ifsk
-ms.assetid : 592c7f8d-0a39-45af-a9b8-14ddd55e2835
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ntifs/CcIsThereDirtyData, CcIsThereDirtyData, ccref_86c4a327-a13e-49b3-89d1-abf976973000.xml, ifsk.ccistheredirtydata, CcIsThereDirtyData routine [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.CcIsThereDirtyData
+title: CcIsThereDirtyData function
+author: windows-driver-content
+description: The CcIsThereDirtyData routine determines whether a mounted volume contains any files that have dirty data in the system cache.
+old-location: ifsk\ccistheredirtydata.htm
+old-project: ifsk
+ms.assetid: 592c7f8d-0a39-45af-a9b8-14ddd55e2835
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ntifs/CcIsThereDirtyData, CcIsThereDirtyData, ccref_86c4a327-a13e-49b3-89d1-abf976973000.xml, ifsk.ccistheredirtydata, CcIsThereDirtyData routine [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	CcIsThereDirtyData
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

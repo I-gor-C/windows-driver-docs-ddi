@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmthk._D3DKMT_WAITFORSYNCHRONIZATIONOBJECT2
-title : "_D3DKMT_WAITFORSYNCHRONIZATIONOBJECT2"
-author : windows-driver-content
-description : The D3DKMT_WAITFORSYNCHRONIZATIONOBJECT2 structure contains information about the synchronization events that the D3DKMTWaitForSynchronizationObject2 function waits for to occur.
-old-location : display\d3dkmt_waitforsynchronizationobject2.htm
-old-project : display
-ms.assetid : 934bfe32-b54b-477c-a5f8-714caa97f233
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DKMT_WAITFORSYNCHRONIZATIONOBJECT2, _D3DKMT_WAITFORSYNCHRONIZATIONOBJECT2, OpenGL_Structs_fb1ca5e1-799c-49c7-844d-25954fd0db64.xml, display.d3dkmt_waitforsynchronizationobject2, d3dkmthk/D3DKMT_WAITFORSYNCHRONIZATIONOBJECT2, D3DKMT_WAITFORSYNCHRONIZATIONOBJECT2 structure [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Windows
-req.target-min-winverclnt : D3DKMT_WAITFORSYNCHRONIZATIONOBJECT2 is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_WAITFORSYNCHRONIZATIONOBJECT2
+UID: NS:d3dkmthk._D3DKMT_WAITFORSYNCHRONIZATIONOBJECT2
+title: "_D3DKMT_WAITFORSYNCHRONIZATIONOBJECT2"
+author: windows-driver-content
+description: The D3DKMT_WAITFORSYNCHRONIZATIONOBJECT2 structure contains information about the synchronization events that the D3DKMTWaitForSynchronizationObject2 function waits for to occur.
+old-location: display\d3dkmt_waitforsynchronizationobject2.htm
+old-project: display
+ms.assetid: 934bfe32-b54b-477c-a5f8-714caa97f233
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DKMT_WAITFORSYNCHRONIZATIONOBJECT2, _D3DKMT_WAITFORSYNCHRONIZATIONOBJECT2, OpenGL_Structs_fb1ca5e1-799c-49c7-844d-25954fd0db64.xml, display.d3dkmt_waitforsynchronizationobject2, d3dkmthk/D3DKMT_WAITFORSYNCHRONIZATIONOBJECT2, D3DKMT_WAITFORSYNCHRONIZATIONOBJECT2 structure [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Windows
+req.target-min-winverclnt: D3DKMT_WAITFORSYNCHRONIZATIONOBJECT2 is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmthk.h
+apiname:
+-	D3DKMT_WAITFORSYNCHRONIZATIONOBJECT2
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_WAITFORSYNCHRONIZATIONOBJECT2
 ---
 
 # _D3DKMT_WAITFORSYNCHRONIZATIONOBJECT2 structure

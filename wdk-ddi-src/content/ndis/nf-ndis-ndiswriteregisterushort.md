@@ -1,41 +1,46 @@
 ---
-UID : NF:ndis.NdisWriteRegisterUshort
-title : NdisWriteRegisterUshort macro
-author : windows-driver-content
-description : NdisWriteRegisterUshort is called by the miniport driver to write a USHORT to a memory-mapped device register.
-old-location : netvista\ndiswriteregisterushort.htm
-old-project : netvista
-ms.assetid : 676beebf-4c22-4eb5-bfad-a6f66f3a95be
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : miniport_register_ref_a2e4ab78-aab2-4076-8f66-4e48a60b5beb.xml, NdisWriteRegisterUshort, netvista.ndiswriteregisterushort, ndis/NdisWriteRegisterUshort, NdisWriteRegisterUshort macro [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : macro
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisWriteRegisterUshort (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisWriteRegisterUshort (NDIS   5.1)) in Windows XP.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : ndis.h
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisWriteRegisterUshort
+title: NdisWriteRegisterUshort macro
+author: windows-driver-content
+description: NdisWriteRegisterUshort is called by the miniport driver to write a USHORT to a memory-mapped device register.
+old-location: netvista\ndiswriteregisterushort.htm
+old-project: netvista
+ms.assetid: 676beebf-4c22-4eb5-bfad-a6f66f3a95be
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: miniport_register_ref_a2e4ab78-aab2-4076-8f66-4e48a60b5beb.xml, NdisWriteRegisterUshort, netvista.ndiswriteregisterushort, ndis/NdisWriteRegisterUshort, NdisWriteRegisterUshort macro [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: macro
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisWriteRegisterUshort (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisWriteRegisterUshort (NDIS   5.1)) in Windows XP.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: ndis.h
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndis.h
+apiname:
+-	NdisWriteRegisterUshort
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

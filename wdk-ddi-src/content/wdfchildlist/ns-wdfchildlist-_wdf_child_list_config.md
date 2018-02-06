@@ -1,42 +1,47 @@
 ---
-UID : NS:wdfchildlist._WDF_CHILD_LIST_CONFIG
-title : "_WDF_CHILD_LIST_CONFIG"
-author : windows-driver-content
-description : The WDF_CHILD_LIST_CONFIG structure contains configuration information for a list of child devices.
-old-location : wdf\wdf_child_list_config.htm
-old-project : wdf
-ms.assetid : d0a392f4-c7c3-4b61-960c-b94f9605f5a4
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdfchildlist/PWDF_CHILD_LIST_CONFIG, wdf.wdf_child_list_config, DFDeviceObjectChildListRef_9666f463-1673-4208-9745-e1d12b523569.xml, *PWDF_CHILD_LIST_CONFIG, kmdf.wdf_child_list_config, _WDF_CHILD_LIST_CONFIG, PWDF_CHILD_LIST_CONFIG structure pointer, WDF_CHILD_LIST_CONFIG, wdfchildlist/WDF_CHILD_LIST_CONFIG, PWDF_CHILD_LIST_CONFIG, WDF_CHILD_LIST_CONFIG structure
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdfchildlist.h
-req.include-header : Wdf.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_CHILD_LIST_CONFIG, *PWDF_CHILD_LIST_CONFIG
-req.product : Windows 10 or later.
+UID: NS:wdfchildlist._WDF_CHILD_LIST_CONFIG
+title: "_WDF_CHILD_LIST_CONFIG"
+author: windows-driver-content
+description: The WDF_CHILD_LIST_CONFIG structure contains configuration information for a list of child devices.
+old-location: wdf\wdf_child_list_config.htm
+old-project: wdf
+ms.assetid: d0a392f4-c7c3-4b61-960c-b94f9605f5a4
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdfchildlist/PWDF_CHILD_LIST_CONFIG, wdf.wdf_child_list_config, DFDeviceObjectChildListRef_9666f463-1673-4208-9745-e1d12b523569.xml, *PWDF_CHILD_LIST_CONFIG, kmdf.wdf_child_list_config, _WDF_CHILD_LIST_CONFIG, PWDF_CHILD_LIST_CONFIG structure pointer, WDF_CHILD_LIST_CONFIG, wdfchildlist/WDF_CHILD_LIST_CONFIG, PWDF_CHILD_LIST_CONFIG, WDF_CHILD_LIST_CONFIG structure
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdfchildlist.h
+req.include-header: Wdf.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfchildlist.h
+apiname:
+-	WDF_CHILD_LIST_CONFIG
+product: Windows
+targetos: Windows
+req.typenames: WDF_CHILD_LIST_CONFIG, *PWDF_CHILD_LIST_CONFIG
+req.product: Windows 10 or later.
 ---
 
 # _WDF_CHILD_LIST_CONFIG structure

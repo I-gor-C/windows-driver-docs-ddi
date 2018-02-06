@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltFindExtraCreateParameter
-title : FltFindExtraCreateParameter function
-author : windows-driver-content
-description : The FltFindExtraCreateParameter routine searches a given ECP list for an ECP context structure of a given type and returns a pointer to this structure if it is found.
-old-location : ifsk\fltfindextracreateparameter.htm
-old-project : ifsk
-ms.assetid : bfa38f16-55cf-40a9-b271-65d784d5156e
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : fltkernel/FltFindExtraCreateParameter, FltFindExtraCreateParameter routine [Installable File System Drivers], ifsk.fltfindextracreateparameter, FltFindExtraCreateParameter, FltApiRef_e_to_o_6f7f8d49-a0b3-4a32-9a51-d31ab84baf8a.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : This routine is available starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltFindExtraCreateParameter
+title: FltFindExtraCreateParameter function
+author: windows-driver-content
+description: The FltFindExtraCreateParameter routine searches a given ECP list for an ECP context structure of a given type and returns a pointer to this structure if it is found.
+old-location: ifsk\fltfindextracreateparameter.htm
+old-project: ifsk
+ms.assetid: bfa38f16-55cf-40a9-b271-65d784d5156e
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: fltkernel/FltFindExtraCreateParameter, FltFindExtraCreateParameter routine [Installable File System Drivers], ifsk.fltfindextracreateparameter, FltFindExtraCreateParameter, FltApiRef_e_to_o_6f7f8d49-a0b3-4a32-9a51-d31ab84baf8a.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: This routine is available starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltFindExtraCreateParameter
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

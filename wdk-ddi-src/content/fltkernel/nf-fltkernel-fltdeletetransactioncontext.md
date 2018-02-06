@@ -1,41 +1,47 @@
 ---
-UID : NF:fltkernel.FltDeleteTransactionContext
-title : FltDeleteTransactionContext function
-author : windows-driver-content
-description : The FltDeleteTransactionContext routine removes a context from a given transaction and marks the context for deletion.
-old-location : ifsk\fltdeletetransactioncontext.htm
-old-project : ifsk
-ms.assetid : 120285ff-1cb4-4570-a1e7-0a7d22b43560
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltDeleteTransactionContext, FltDeleteTransactionContext routine [Installable File System Drivers], FltApiRef_a_to_d_785d668e-0232-4937-996e-846e459db2c5.xml, ifsk.fltdeletetransactioncontext, fltkernel/FltDeleteTransactionContext
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltDeleteTransactionContext
+title: FltDeleteTransactionContext function
+author: windows-driver-content
+description: The FltDeleteTransactionContext routine removes a context from a given transaction and marks the context for deletion.
+old-location: ifsk\fltdeletetransactioncontext.htm
+old-project: ifsk
+ms.assetid: 120285ff-1cb4-4570-a1e7-0a7d22b43560
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltDeleteTransactionContext, FltDeleteTransactionContext routine [Installable File System Drivers], FltApiRef_a_to_d_785d668e-0232-4937-996e-846e459db2c5.xml, ifsk.fltdeletetransactioncontext, fltkernel/FltDeleteTransactionContext
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	FltMgr.lib
+-	FltMgr.dll
+apiname:
+-	FltDeleteTransactionContext
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

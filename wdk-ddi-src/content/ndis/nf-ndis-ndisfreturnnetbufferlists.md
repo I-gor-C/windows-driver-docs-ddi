@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisFReturnNetBufferLists
-title : NdisFReturnNetBufferLists function
-author : windows-driver-content
-description : Filter drivers call NdisFReturnNetBufferLists to release the ownership of one or more NET_BUFFER_LIST structures and their associated NET_BUFFER structures.
-old-location : netvista\ndisfreturnnetbufferlists.htm
-old-project : netvista
-ms.assetid : 083cf25d-7436-4c4e-b29a-c9a2702b136d
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.ndisfreturnnetbufferlists, filter_ndis_functions_ref_3473c0c3-077c-4df7-b9d4-8392cf1ed918.xml, NdisFReturnNetBufferLists, ndis/NdisFReturnNetBufferLists, NdisFReturnNetBufferLists function [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_Filter_Driver_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisFReturnNetBufferLists
+title: NdisFReturnNetBufferLists function
+author: windows-driver-content
+description: Filter drivers call NdisFReturnNetBufferLists to release the ownership of one or more NET_BUFFER_LIST structures and their associated NET_BUFFER structures.
+old-location: netvista\ndisfreturnnetbufferlists.htm
+old-project: netvista
+ms.assetid: 083cf25d-7436-4c4e-b29a-c9a2702b136d
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.ndisfreturnnetbufferlists, filter_ndis_functions_ref_3473c0c3-077c-4df7-b9d4-8392cf1ed918.xml, NdisFReturnNetBufferLists, ndis/NdisFReturnNetBufferLists, NdisFReturnNetBufferLists function [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_Filter_Driver_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisFReturnNetBufferLists
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

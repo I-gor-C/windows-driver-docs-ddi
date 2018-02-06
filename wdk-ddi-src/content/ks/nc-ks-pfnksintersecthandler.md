@@ -1,41 +1,46 @@
 ---
-UID : NC:ks.PFNKSINTERSECTHANDLER
-title : PFNKSINTERSECTHANDLER
-author : windows-driver-content
-description : A streaming minidriver's KStrIntersectHandler routine is called to compare a data range to determine if there is an intersection, and if so, the data format of the intersection.
-old-location : stream\kstrintersecthandler.htm
-old-project : stream
-ms.assetid : ec4ca8b0-5386-4a03-8cf8-46852c168732
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.kstrintersecthandler, KStrIntersectHandler, KStrIntersectHandler routine [Streaming Media Devices], KStrIntersectHandler, PFNKSINTERSECTHANDLER, PFNKSINTERSECTHANDLER, ks/KStrIntersectHandler, ksfunc_25fa087e-9d66-4479-aa4c-632a63ee6779.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KEYWORDSELECTOR
+UID: NC:ks.PFNKSINTERSECTHANDLER
+title: PFNKSINTERSECTHANDLER
+author: windows-driver-content
+description: A streaming minidriver's KStrIntersectHandler routine is called to compare a data range to determine if there is an intersection, and if so, the data format of the intersection.
+old-location: stream\kstrintersecthandler.htm
+old-project: stream
+ms.assetid: ec4ca8b0-5386-4a03-8cf8-46852c168732
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.kstrintersecthandler, KStrIntersectHandler, KStrIntersectHandler routine [Streaming Media Devices], KStrIntersectHandler, PFNKSINTERSECTHANDLER, PFNKSINTERSECTHANDLER, ks/KStrIntersectHandler, ksfunc_25fa087e-9d66-4479-aa4c-632a63ee6779.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	ks.h
+apiname:
+-	KStrIntersectHandler
+product: Windows
+targetos: Windows
+req.typenames: KEYWORDSELECTOR
 ---
 
 

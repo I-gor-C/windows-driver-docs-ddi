@@ -1,42 +1,48 @@
 ---
-UID : NF:storport.StorPortWriteRegisterUlong
-title : StorPortWriteRegisterUlong function
-author : windows-driver-content
-description : The StorPortWriteRegisterUlong routine transfers a ULONG value to the indicated HBA register address.
-old-location : storage\storportwriteregisterulong.htm
-old-project : storage
-ms.assetid : 12ed5f88-26af-43a4-82c7-5f36d9388cc8
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storport/StorPortWriteRegisterUlong, StorPortWriteRegisterUlong routine [Storage Devices], storprt_64890de0-32e7-4e07-bcbc-35a11acd6896.xml, StorPortWriteRegisterUlong, storage.storportwriteregisterulong
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Storport.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STOR_SPINLOCK
-req.product : Windows 10 or later.
+UID: NF:storport.StorPortWriteRegisterUlong
+title: StorPortWriteRegisterUlong function
+author: windows-driver-content
+description: The StorPortWriteRegisterUlong routine transfers a ULONG value to the indicated HBA register address.
+old-location: storage\storportwriteregisterulong.htm
+old-project: storage
+ms.assetid: 12ed5f88-26af-43a4-82c7-5f36d9388cc8
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storport/StorPortWriteRegisterUlong, StorPortWriteRegisterUlong routine [Storage Devices], storprt_64890de0-32e7-4e07-bcbc-35a11acd6896.xml, StorPortWriteRegisterUlong, storage.storportwriteregisterulong
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Storport.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Storport.lib
+-	Storport.dll
+apiname:
+-	StorPortWriteRegisterUlong
+product: Windows
+targetos: Windows
+req.typenames: STOR_SPINLOCK
+req.product: Windows 10 or later.
 ---
 
 

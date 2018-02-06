@@ -1,41 +1,46 @@
 ---
-UID : NC:netdma.DMA_CHANNELS_CPU_AFFINITY_HANDLER
-title : DMA_CHANNELS_CPU_AFFINITY_HANDLER
-author : windows-driver-content
-description : The ProviderSetDmaChannelCpuAffinity function sets the CPU affinities for the DMA channels that are associated with a DMA provider.
-old-location : netvista\providersetdmachannelcpuaffinity.htm
-old-project : netvista
-ms.assetid : a53d8798-63fa-4b16-bda2-880ca3521d03
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.providersetdmachannelcpuaffinity, ProviderSetDmaChannelCpuAffinity callback function [Network Drivers Starting with Windows Vista], ProviderSetDmaChannelCpuAffinity, DMA_CHANNELS_CPU_AFFINITY_HANDLER, DMA_CHANNELS_CPU_AFFINITY_HANDLER, netdma/ProviderSetDmaChannelCpuAffinity, netdma_ref_bda3a4d0-7039-4f29-b75c-1e7e4a8f2131.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : netdma.h
-req.include-header : Netdma.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported for NetDMA 1.0 drivers in Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : MIRACAST_DRIVER_INTERFACE, *PMIRACAST_DRIVER_INTERFACE
+UID: NC:netdma.DMA_CHANNELS_CPU_AFFINITY_HANDLER
+title: DMA_CHANNELS_CPU_AFFINITY_HANDLER
+author: windows-driver-content
+description: The ProviderSetDmaChannelCpuAffinity function sets the CPU affinities for the DMA channels that are associated with a DMA provider.
+old-location: netvista\providersetdmachannelcpuaffinity.htm
+old-project: netvista
+ms.assetid: a53d8798-63fa-4b16-bda2-880ca3521d03
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.providersetdmachannelcpuaffinity, ProviderSetDmaChannelCpuAffinity callback function [Network Drivers Starting with Windows Vista], ProviderSetDmaChannelCpuAffinity, DMA_CHANNELS_CPU_AFFINITY_HANDLER, DMA_CHANNELS_CPU_AFFINITY_HANDLER, netdma/ProviderSetDmaChannelCpuAffinity, netdma_ref_bda3a4d0-7039-4f29-b75c-1e7e4a8f2131.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: netdma.h
+req.include-header: Netdma.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported for NetDMA 1.0 drivers in Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	netdma.h
+apiname:
+-	ProviderSetDmaChannelCpuAffinity
+product: Windows
+targetos: Windows
+req.typenames: MIRACAST_DRIVER_INTERFACE, *PMIRACAST_DRIVER_INTERFACE
 ---
 
 

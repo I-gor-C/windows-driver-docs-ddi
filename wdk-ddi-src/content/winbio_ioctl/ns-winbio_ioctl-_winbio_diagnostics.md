@@ -1,42 +1,47 @@
 ---
-UID : NS:winbio_ioctl._WINBIO_DIAGNOSTICS
-title : "_WINBIO_DIAGNOSTICS"
-author : windows-driver-content
-description : The IOCTL_BIOMETRIC_GET_SENSOR_STATUS IOCTL returns the WINBIO_DIAGNOSTICS structure as output.
-old-location : biometric\winbio_diagnostics.htm
-old-project : biometric
-ms.assetid : 06f6abf1-9b44-4cf3-96d3-2017e0f6adda
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : PWINBIO_DIAGNOSTICS structure pointer [Biometric Devices], biometric_ref_eca83e57-bec6-4d83-8596-978b73eed6de.xml, _WINBIO_DIAGNOSTICS, WINBIO_DIAGNOSTICS, winbio_ioctl/WINBIO_DIAGNOSTICS, WINBIO_DIAGNOSTICS structure [Biometric Devices], biometric.winbio_diagnostics, *PWINBIO_DIAGNOSTICS, winbio_ioctl/PWINBIO_DIAGNOSTICS, PWINBIO_DIAGNOSTICS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : winbio_ioctl.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWINBIO_DIAGNOSTICS, WINBIO_DIAGNOSTICS"
-req.product : Windows 10 or later.
+UID: NS:winbio_ioctl._WINBIO_DIAGNOSTICS
+title: "_WINBIO_DIAGNOSTICS"
+author: windows-driver-content
+description: The IOCTL_BIOMETRIC_GET_SENSOR_STATUS IOCTL returns the WINBIO_DIAGNOSTICS structure as output.
+old-location: biometric\winbio_diagnostics.htm
+old-project: biometric
+ms.assetid: 06f6abf1-9b44-4cf3-96d3-2017e0f6adda
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: PWINBIO_DIAGNOSTICS structure pointer [Biometric Devices], biometric_ref_eca83e57-bec6-4d83-8596-978b73eed6de.xml, _WINBIO_DIAGNOSTICS, WINBIO_DIAGNOSTICS, winbio_ioctl/WINBIO_DIAGNOSTICS, WINBIO_DIAGNOSTICS structure [Biometric Devices], biometric.winbio_diagnostics, *PWINBIO_DIAGNOSTICS, winbio_ioctl/PWINBIO_DIAGNOSTICS, PWINBIO_DIAGNOSTICS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: winbio_ioctl.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	winbio_ioctl.h
+apiname:
+-	WINBIO_DIAGNOSTICS
+product: Windows
+targetos: Windows
+req.typenames: "*PWINBIO_DIAGNOSTICS, WINBIO_DIAGNOSTICS"
+req.product: Windows 10 or later.
 ---
 
 # _WINBIO_DIAGNOSTICS structure

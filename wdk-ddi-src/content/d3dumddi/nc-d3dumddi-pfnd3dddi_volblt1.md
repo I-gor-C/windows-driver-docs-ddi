@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_VOLBLT1
-title : PFND3DDDI_VOLBLT1
-author : windows-driver-content
-description : Performs a bit-block transfer (bitblt) operation from a source volume texture to a destination volume texture. Implemented by Windows Display Driver Model (WDDM) 1.2 or later user-mode display drivers.
-old-location : display\volblt1.htm
-old-project : display
-ms.assetid : 81B9AB74-9CD1-4181-BE13-32D519069FD4
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.volblt1, VolBlt1 callback function [Display Devices], VolBlt1, PFND3DDDI_VOLBLT1, PFND3DDDI_VOLBLT1, d3dumddi/VolBlt1
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_VOLBLT1
+title: PFND3DDDI_VOLBLT1
+author: windows-driver-content
+description: Performs a bit-block transfer (bitblt) operation from a source volume texture to a destination volume texture. Implemented by Windows Display Driver Model (WDDM) 1.2 or later user-mode display drivers.
+old-location: display\volblt1.htm
+old-project: display
+ms.assetid: 81B9AB74-9CD1-4181-BE13-32D519069FD4
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.volblt1, VolBlt1 callback function [Display Devices], VolBlt1, PFND3DDDI_VOLBLT1, PFND3DDDI_VOLBLT1, d3dumddi/VolBlt1
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	VolBlt1
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

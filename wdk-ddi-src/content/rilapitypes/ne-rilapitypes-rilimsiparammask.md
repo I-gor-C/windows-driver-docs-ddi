@@ -1,42 +1,47 @@
 ---
-UID : NE:rilapitypes.RILIMSIPARAMMASK
-title : RILIMSIPARAMMASK
-author : windows-driver-content
-description : This enumeration describes the RILIMSIPARAMMASK.
-old-location : netvista\rilimsiparammask.htm
-old-project : netvista
-ms.assetid : 8fe1ecda-4b2f-4a6f-b02c-7e50630614eb
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : rilapitypes/RIL_PARAM_IMSI_MNC, RIL_PARAM_IMSI_IMSI, RIL_PARAM_IMSI_ALL, RILIMSIPARAMMASK enumeration [Network Drivers Starting with Windows Vista], rilapitypes/RIL_PARAM_IMSI_IMSI, rilapitypes/RIL_PARAM_IMSI_MCC, rilapitypes/RIL_PARAM_IMSI_ALL, RILIMSIPARAMMASK, netvista.rilimsiparammask, rilapitypes/RILIMSIPARAMMASK, RIL_PARAM_IMSI_MNC, RIL_PARAM_IMSI_MCC
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : rilapitypes.h
-req.include-header : Rilapitypes.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RILIMSIPARAMMASK
-req.product : Windows 10 or later.
+UID: NE:rilapitypes.RILIMSIPARAMMASK
+title: RILIMSIPARAMMASK
+author: windows-driver-content
+description: This enumeration describes the RILIMSIPARAMMASK.
+old-location: netvista\rilimsiparammask.htm
+old-project: netvista
+ms.assetid: 8fe1ecda-4b2f-4a6f-b02c-7e50630614eb
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: rilapitypes/RIL_PARAM_IMSI_MNC, RIL_PARAM_IMSI_IMSI, RIL_PARAM_IMSI_ALL, RILIMSIPARAMMASK enumeration [Network Drivers Starting with Windows Vista], rilapitypes/RIL_PARAM_IMSI_IMSI, rilapitypes/RIL_PARAM_IMSI_MCC, rilapitypes/RIL_PARAM_IMSI_ALL, RILIMSIPARAMMASK, netvista.rilimsiparammask, rilapitypes/RILIMSIPARAMMASK, RIL_PARAM_IMSI_MNC, RIL_PARAM_IMSI_MCC
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: rilapitypes.h
+req.include-header: Rilapitypes.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	rilapitypes.h
+apiname:
+-	RILIMSIPARAMMASK
+product: Windows
+targetos: Windows
+req.typenames: RILIMSIPARAMMASK
+req.product: Windows 10 or later.
 ---
 
 # RILIMSIPARAMMASK Enumeration
@@ -56,26 +61,26 @@ enum RILIMSIPARAMMASK {
 ## Constants
 
 <table>
-
-<tr>
-<td>RIL_PARAM_IMSI_ALL</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_PARAM_IMSI_IMSI</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_PARAM_IMSI_MCC</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_PARAM_IMSI_MNC</td>
-<td></td>
-</tr>
+            
+                <tr>
+                    <td>RIL_PARAM_IMSI_ALL</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_IMSI_IMSI</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_IMSI_MCC</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_IMSI_MNC</td>
+                    <td></td>
+                </tr>
 </table>
 
 
@@ -84,9 +89,9 @@ enum RILIMSIPARAMMASK {
 | ---- |:---- |
 | **Header** | rilapitypes.h (include Rilapitypes.h) |
 
-## See Also
+    ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn946509">Cellular COM enumerations</a>
+        <a href="https://msdn.microsoft.com/library/windows/hardware/dn946509">Cellular COM enumerations</a>
 
  
 

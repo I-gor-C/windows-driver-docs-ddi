@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfinstaller.WdfPreDeviceInstallEx
-title : WdfPreDeviceInstallEx function
-author : windows-driver-content
-description : The co-installer's WdfPreDeviceInstallEx function performs any operations that the co-installer might require before a non-Plug and Play (PnP) driver's installer creates the driver's kernel-mode service.
-old-location : wdf\wdfpredeviceinstallex.htm
-old-project : wdf
-ms.assetid : 99de930a-0d01-4177-b0d9-4692cc570303
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : kmdf.wdfpredeviceinstallex, WdfPreDeviceInstallEx function, PFN_WDFPREDEVICEINSTALLEX, DFCoinstallerRef_0142df49-f344-47f7-bcd1-6e37e5d439fe.xml, WdfPreDeviceInstallEx, wdfinstaller/WdfPreDeviceInstallEx, wdf.wdfpredeviceinstallex
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfinstaller.h
-req.include-header : Wdfinstaller.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.9
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : N/A (Exported by the KMDF co-installer library. For information about the co-installer library's filename, see Using the KMDF Co-installer.)
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_FILE_INFORMATION_CLASS, *PWDF_FILE_INFORMATION_CLASS
-req.product : Windows 10 or later.
+UID: NF:wdfinstaller.WdfPreDeviceInstallEx
+title: WdfPreDeviceInstallEx function
+author: windows-driver-content
+description: The co-installer's WdfPreDeviceInstallEx function performs any operations that the co-installer might require before a non-Plug and Play (PnP) driver's installer creates the driver's kernel-mode service.
+old-location: wdf\wdfpredeviceinstallex.htm
+old-project: wdf
+ms.assetid: 99de930a-0d01-4177-b0d9-4692cc570303
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: kmdf.wdfpredeviceinstallex, WdfPreDeviceInstallEx function, PFN_WDFPREDEVICEINSTALLEX, DFCoinstallerRef_0142df49-f344-47f7-bcd1-6e37e5d439fe.xml, WdfPreDeviceInstallEx, wdfinstaller/WdfPreDeviceInstallEx, wdf.wdfpredeviceinstallex
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfinstaller.h
+req.include-header: Wdfinstaller.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.9
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: N/A (Exported by the KMDF co-installer library. For information about the co-installer library's filename, see Using the KMDF Co-installer.)
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	N/A
+-	N/A.dll
+apiname:
+-	WdfPreDeviceInstallEx
+product: Windows
+targetos: Windows
+req.typenames: WDF_FILE_INFORMATION_CLASS, *PWDF_FILE_INFORMATION_CLASS
+req.product: Windows 10 or later.
 ---
 
 

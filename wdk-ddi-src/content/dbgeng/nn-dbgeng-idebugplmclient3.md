@@ -1,41 +1,46 @@
 ---
-UID : NN:dbgeng.IDebugPlmClient3
-title : IDebugPlmClient3
-author : windows-driver-content
-description : This interface supports Process Lifecycle Management (PLM) for the debug client.
-old-location : debugger\idebugplmclient3.htm
-old-project : debugger
-ms.assetid : 5B0580FF-0829-406A-B511-C0CD91A08D5F
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : debugger.idebugplmclient3, IDebugPlmClient3 interface [Windows Debugging], IDebugPlmClient3 interface [Windows Debugging], described, IDebugPlmClient3, dbgeng/IDebugPlmClient3
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NN:dbgeng.IDebugPlmClient3
+title: IDebugPlmClient3
+author: windows-driver-content
+description: This interface supports Process Lifecycle Management (PLM) for the debug client.
+old-location: debugger\idebugplmclient3.htm
+old-project: debugger
+ms.assetid: 5B0580FF-0829-406A-B511-C0CD91A08D5F
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: debugger.idebugplmclient3, IDebugPlmClient3 interface [Windows Debugging], IDebugPlmClient3 interface [Windows Debugging], described, IDebugPlmClient3, dbgeng/IDebugPlmClient3
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugPlmClient3
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 # IDebugPlmClient3 interface

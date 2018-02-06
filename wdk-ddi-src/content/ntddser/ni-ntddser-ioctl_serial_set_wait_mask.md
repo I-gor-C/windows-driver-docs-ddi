@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddser.IOCTL_SERIAL_SET_WAIT_MASK
-title : IOCTL_SERIAL_SET_WAIT_MASK
-author : windows-driver-content
-description : The IOCTL_SERIAL_SET_WAIT_MASK request configures the serial controller driver to notify a client after the occurrence of any one of a specified set of wait events.
-old-location : serports\ioctl_serial_set_wait_mask.htm
-old-project : serports
-ms.assetid : 78d7fca7-d705-407f-95f1-670a417e2202
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : serports.ioctl_serial_set_wait_mask, IOCTL_SERIAL_SET_WAIT_MASK control code [Serial Ports], IOCTL_SERIAL_SET_WAIT_MASK, ntddser/IOCTL_SERIAL_SET_WAIT_MASK, serref_8aa3f08e-f48b-44b2-91aa-849890097cef.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddser.h
-req.include-header : Ntddser.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SD_REQUEST_FUNCTION
+UID: NI:ntddser.IOCTL_SERIAL_SET_WAIT_MASK
+title: IOCTL_SERIAL_SET_WAIT_MASK
+author: windows-driver-content
+description: The IOCTL_SERIAL_SET_WAIT_MASK request configures the serial controller driver to notify a client after the occurrence of any one of a specified set of wait events.
+old-location: serports\ioctl_serial_set_wait_mask.htm
+old-project: serports
+ms.assetid: 78d7fca7-d705-407f-95f1-670a417e2202
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: serports.ioctl_serial_set_wait_mask, IOCTL_SERIAL_SET_WAIT_MASK control code [Serial Ports], IOCTL_SERIAL_SET_WAIT_MASK, ntddser/IOCTL_SERIAL_SET_WAIT_MASK, serref_8aa3f08e-f48b-44b2-91aa-849890097cef.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddser.h
+req.include-header: Ntddser.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddser.h
+apiname:
+-	IOCTL_SERIAL_SET_WAIT_MASK
+product: Windows
+targetos: Windows
+req.typenames: SD_REQUEST_FUNCTION
 ---
 
 # IOCTL_SERIAL_SET_WAIT_MASK IOCTL

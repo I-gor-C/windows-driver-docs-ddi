@@ -1,42 +1,47 @@
 ---
-UID : NS:wdm._OSVERSIONINFOEXW
-title : "_OSVERSIONINFOEXW"
-author : windows-driver-content
-description : The RTL_OSVERSIONINFOEXW structure contains operating system version information.
-old-location : kernel\rtl_osversioninfoexw.htm
-old-project : kernel
-ms.assetid : 88471e00-4913-44fd-b9f4-960ec46fb75a
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : "*POSVERSIONINFOEXW, *PRTL_OSVERSIONINFOEXW, OSVERSIONINFOEXW, wdm/RTL_OSVERSIONINFOEXW, PRTL_OSVERSIONINFOEXW, kstruct_d_a7e48147-5619-4ab4-b83a-18139aa0a2c5.xml, OSVERSIONINFOEX, RTL_OSVERSIONINFOEXW structure [Kernel-Mode Driver Architecture], kernel.rtl_osversioninfoexw, wdm/PRTL_OSVERSIONINFOEXW, _OSVERSIONINFOEXW, PRTL_OSVERSIONINFOEXW structure pointer [Kernel-Mode Driver Architecture], *LPOSVERSIONINFOEXW, RTL_OSVERSIONINFOEXW"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : Ntddk.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*LPOSVERSIONINFOEXW, OSVERSIONINFOEXW, RTL_OSVERSIONINFOEXW, *PRTL_OSVERSIONINFOEXW, *POSVERSIONINFOEXW"
-req.product : Windows 10 or later.
+UID: NS:wdm._OSVERSIONINFOEXW
+title: "_OSVERSIONINFOEXW"
+author: windows-driver-content
+description: The RTL_OSVERSIONINFOEXW structure contains operating system version information.
+old-location: kernel\rtl_osversioninfoexw.htm
+old-project: kernel
+ms.assetid: 88471e00-4913-44fd-b9f4-960ec46fb75a
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: "*POSVERSIONINFOEXW, *PRTL_OSVERSIONINFOEXW, OSVERSIONINFOEXW, wdm/RTL_OSVERSIONINFOEXW, PRTL_OSVERSIONINFOEXW, kstruct_d_a7e48147-5619-4ab4-b83a-18139aa0a2c5.xml, OSVERSIONINFOEX, RTL_OSVERSIONINFOEXW structure [Kernel-Mode Driver Architecture], kernel.rtl_osversioninfoexw, wdm/PRTL_OSVERSIONINFOEXW, _OSVERSIONINFOEXW, PRTL_OSVERSIONINFOEXW structure pointer [Kernel-Mode Driver Architecture], *LPOSVERSIONINFOEXW, RTL_OSVERSIONINFOEXW"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: Ntddk.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdm.h
+apiname:
+-	RTL_OSVERSIONINFOEXW
+product: Windows
+targetos: Windows
+req.typenames: "*LPOSVERSIONINFOEXW, OSVERSIONINFOEXW, RTL_OSVERSIONINFOEXW, *PRTL_OSVERSIONINFOEXW, *POSVERSIONINFOEXW"
+req.product: Windows 10 or later.
 ---
 
 # _OSVERSIONINFOEXW structure

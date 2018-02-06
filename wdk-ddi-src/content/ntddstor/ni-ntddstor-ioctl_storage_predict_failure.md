@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddstor.IOCTL_STORAGE_PREDICT_FAILURE
-title : IOCTL_STORAGE_PREDICT_FAILURE
-author : windows-driver-content
-description : Polls for a prediction of device failure.
-old-location : storage\ioctl_storage_predict_failure.htm
-old-project : storage
-ms.assetid : 56e178d9-e6bb-43d4-b062-da4e699c4efc
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_storage_predict_failure, IOCTL_STORAGE_PREDICT_FAILURE control code [Storage Devices], IOCTL_STORAGE_PREDICT_FAILURE, ntddstor/IOCTL_STORAGE_PREDICT_FAILURE, k307_396b070a-af8a-4271-9d17-efb385869570.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddstor.h
-req.include-header : Ntddstor.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STORAGE_ZONE_CONDITION, *PSTORAGE_ZONE_CONDITION
+UID: NI:ntddstor.IOCTL_STORAGE_PREDICT_FAILURE
+title: IOCTL_STORAGE_PREDICT_FAILURE
+author: windows-driver-content
+description: Polls for a prediction of device failure.
+old-location: storage\ioctl_storage_predict_failure.htm
+old-project: storage
+ms.assetid: 56e178d9-e6bb-43d4-b062-da4e699c4efc
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_storage_predict_failure, IOCTL_STORAGE_PREDICT_FAILURE control code [Storage Devices], IOCTL_STORAGE_PREDICT_FAILURE, ntddstor/IOCTL_STORAGE_PREDICT_FAILURE, k307_396b070a-af8a-4271-9d17-efb385869570.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddstor.h
+req.include-header: Ntddstor.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddstor.h
+apiname:
+-	IOCTL_STORAGE_PREDICT_FAILURE
+product: Windows
+targetos: Windows
+req.typenames: STORAGE_ZONE_CONDITION, *PSTORAGE_ZONE_CONDITION
 ---
 
 # IOCTL_STORAGE_PREDICT_FAILURE IOCTL

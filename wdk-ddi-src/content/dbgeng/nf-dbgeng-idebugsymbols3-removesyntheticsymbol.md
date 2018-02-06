@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugSymbols3.RemoveSyntheticSymbol
-title : IDebugSymbols3::RemoveSyntheticSymbol method
-author : windows-driver-content
-description : The RemoveSyntheticSymbol method removes a synthetic symbol from a module in the current process.
-old-location : debugger\removesyntheticsymbol.htm
-old-project : debugger
-ms.assetid : 07825be3-84a1-4aab-a9f0-22a45f636a04
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugSymbols3 interface [Windows Debugging], RemoveSyntheticSymbol method, IDebugSymbols_dc1ccbc7-17e4-4424-8a3d-fbb7f16d3c3b.xml, RemoveSyntheticSymbol method [Windows Debugging], IDebugSymbols3 interface, RemoveSyntheticSymbol method [Windows Debugging], IDebugSymbols3::RemoveSyntheticSymbol, RemoveSyntheticSymbol, dbgeng/IDebugSymbols3::RemoveSyntheticSymbol, IDebugSymbols3, debugger.removesyntheticsymbol
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSymbols3.RemoveSyntheticSymbol
+title: IDebugSymbols3::RemoveSyntheticSymbol method
+author: windows-driver-content
+description: The RemoveSyntheticSymbol method removes a synthetic symbol from a module in the current process.
+old-location: debugger\removesyntheticsymbol.htm
+old-project: debugger
+ms.assetid: 07825be3-84a1-4aab-a9f0-22a45f636a04
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugSymbols3 interface [Windows Debugging], RemoveSyntheticSymbol method, IDebugSymbols_dc1ccbc7-17e4-4424-8a3d-fbb7f16d3c3b.xml, RemoveSyntheticSymbol method [Windows Debugging], IDebugSymbols3 interface, RemoveSyntheticSymbol method [Windows Debugging], IDebugSymbols3::RemoveSyntheticSymbol, RemoveSyntheticSymbol, dbgeng/IDebugSymbols3::RemoveSyntheticSymbol, IDebugSymbols3, debugger.removesyntheticsymbol
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugSymbols3.RemoveSyntheticSymbol
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

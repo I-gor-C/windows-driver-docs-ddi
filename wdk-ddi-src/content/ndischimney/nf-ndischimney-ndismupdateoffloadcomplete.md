@@ -1,41 +1,46 @@
 ---
-UID : NF:ndischimney.NdisMUpdateOffloadComplete
-title : NdisMUpdateOffloadComplete function
-author : windows-driver-content
-description : An offload target calls the NdisMUpdateOffloadComplete function to complete an update offload operation that was initiated by a previous call to the MiniportUpdateOffload function of the offload target.
-old-location : netvista\ndismupdateoffloadcomplete.htm
-old-project : netvista
-ms.assetid : aa2c549c-eb16-4d59-9280-1913c8c0266a
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NdisMUpdateOffloadComplete, tcp_chim_ndis_func_c525f7d7-2a4d-47ef-8337-85551fb1f7ab.xml, netvista.ndismupdateoffloadcomplete, ndischimney/NdisMUpdateOffloadComplete, NdisMUpdateOffloadComplete function [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndischimney.h
-req.include-header : Ndischimney.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PD_BUFFER_VIRTUAL_SUBNET_INFO
+UID: NF:ndischimney.NdisMUpdateOffloadComplete
+title: NdisMUpdateOffloadComplete function
+author: windows-driver-content
+description: An offload target calls the NdisMUpdateOffloadComplete function to complete an update offload operation that was initiated by a previous call to the MiniportUpdateOffload function of the offload target.
+old-location: netvista\ndismupdateoffloadcomplete.htm
+old-project: netvista
+ms.assetid: aa2c549c-eb16-4d59-9280-1913c8c0266a
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NdisMUpdateOffloadComplete, tcp_chim_ndis_func_c525f7d7-2a4d-47ef-8337-85551fb1f7ab.xml, netvista.ndismupdateoffloadcomplete, ndischimney/NdisMUpdateOffloadComplete, NdisMUpdateOffloadComplete function [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndischimney.h
+req.include-header: Ndischimney.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndischimney.h
+apiname:
+-	NdisMUpdateOffloadComplete
+product: Windows
+targetos: Windows
+req.typenames: PD_BUFFER_VIRTUAL_SUBNET_INFO
 ---
 
 

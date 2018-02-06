@@ -1,41 +1,49 @@
 ---
-UID : NF:ntstrsafe.RtlStringCbCopyExA
-title : RtlStringCbCopyExA function
-author : windows-driver-content
-description : The RtlStringCbCopyExW and RtlStringCbCopyExA functions copy a byte-counted string into a buffer.
-old-location : kernel\rtlstringcbcopyex.htm
-old-project : kernel
-ms.assetid : 92a22ad9-f450-4156-a5e9-c765f94c2dbf
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : RtlStringCbCopyEx, RtlStringCbCopyExA, kernel.rtlstringcbcopyex, STRSAFE_NO_TRUNCATION, STRSAFE_IGNORE_NULLS, RtlStringCbCopyExW function [Kernel-Mode Driver Architecture], STRSAFE_NULL_ON_FAILURE, RtlStringCbCopyExW, ntstrsafe/RtlStringCbCopyExW, STRSAFE_FILL_ON_FAILURE, STRSAFE_FILL_BEHIND_NULL, ntstrsafe/RtlStringCbCopyExA, safestrings_f0187c41-23b0-491b-9154-ff8778b06418.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntstrsafe.h
-req.include-header : Ntstrsafe.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows XP with Service Pack 1 (SP1) and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : RtlStringCbCopyExW (Unicode) and RtlStringCbCopyExA (ANSI)
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ntstrsafe.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : BATTERY_REPORTING_SCALE, *PBATTERY_REPORTING_SCALE
+UID: NF:ntstrsafe.RtlStringCbCopyExA
+title: RtlStringCbCopyExA function
+author: windows-driver-content
+description: The RtlStringCbCopyExW and RtlStringCbCopyExA functions copy a byte-counted string into a buffer.
+old-location: kernel\rtlstringcbcopyex.htm
+old-project: kernel
+ms.assetid: 92a22ad9-f450-4156-a5e9-c765f94c2dbf
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: RtlStringCbCopyEx, RtlStringCbCopyExA, kernel.rtlstringcbcopyex, STRSAFE_NO_TRUNCATION, STRSAFE_IGNORE_NULLS, RtlStringCbCopyExW function [Kernel-Mode Driver Architecture], STRSAFE_NULL_ON_FAILURE, RtlStringCbCopyExW, ntstrsafe/RtlStringCbCopyExW, STRSAFE_FILL_ON_FAILURE, STRSAFE_FILL_BEHIND_NULL, ntstrsafe/RtlStringCbCopyExA, safestrings_f0187c41-23b0-491b-9154-ff8778b06418.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntstrsafe.h
+req.include-header: Ntstrsafe.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows XP with Service Pack 1 (SP1) and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: RtlStringCbCopyExW (Unicode) and RtlStringCbCopyExA (ANSI)
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ntstrsafe.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ntstrsafe.lib
+-	Ntstrsafe.dll
+apiname:
+-	RtlStringCbCopyExW
+-	RtlStringCbCopyExA
+-	RtlStringCbCopyExW
+product: Windows
+targetos: Windows
+req.typenames: BATTERY_REPORTING_SCALE, *PBATTERY_REPORTING_SCALE
 ---
 
 

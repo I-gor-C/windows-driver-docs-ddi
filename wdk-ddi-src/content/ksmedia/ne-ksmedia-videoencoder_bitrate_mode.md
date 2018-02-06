@@ -1,41 +1,46 @@
 ---
-UID : NE:ksmedia.VIDEOENCODER_BITRATE_MODE
-title : VIDEOENCODER_BITRATE_MODE
-author : windows-driver-content
-description : The VIDEOENCODER_BITRATE_MODE enumeration describes the bit rate encoding modes supported by the device.
-old-location : stream\videoencoder_bitrate_mode.htm
-old-project : stream
-ms.assetid : f941269b-65f3-4245-994f-0a4f6356cf88
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ksmedia/VIDEOENCODER_BITRATE_MODE, VIDEOENCODER_BITRATE_MODE, ksmedia/VariableBitRatePeak, ksmedia/ConstantBitRate, stream.videoencoder_bitrate_mode, encoderef_9d060a81-91a8-4e1a-9043-17cbb179b386.xml, ksmedia/VariableBitRateAverage, VIDEOENCODER_BITRATE_MODE enumeration [Streaming Media Devices], VariableBitRateAverage, ConstantBitRate, VariableBitRatePeak
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEOENCODER_BITRATE_MODE
+UID: NE:ksmedia.VIDEOENCODER_BITRATE_MODE
+title: VIDEOENCODER_BITRATE_MODE
+author: windows-driver-content
+description: The VIDEOENCODER_BITRATE_MODE enumeration describes the bit rate encoding modes supported by the device.
+old-location: stream\videoencoder_bitrate_mode.htm
+old-project: stream
+ms.assetid: f941269b-65f3-4245-994f-0a4f6356cf88
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ksmedia/VIDEOENCODER_BITRATE_MODE, VIDEOENCODER_BITRATE_MODE, ksmedia/VariableBitRatePeak, ksmedia/ConstantBitRate, stream.videoencoder_bitrate_mode, encoderef_9d060a81-91a8-4e1a-9043-17cbb179b386.xml, ksmedia/VariableBitRateAverage, VIDEOENCODER_BITRATE_MODE enumeration [Streaming Media Devices], VariableBitRateAverage, ConstantBitRate, VariableBitRatePeak
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	VIDEOENCODER_BITRATE_MODE
+product: Windows
+targetos: Windows
+req.typenames: VIDEOENCODER_BITRATE_MODE
 ---
 
 # VIDEOENCODER_BITRATE_MODE Enumeration
@@ -53,26 +58,26 @@ typedef enum  {
 ## Constants
 
 <table>
-
-<tr>
-<td>ConstantBitRate</td>
-<td>Specifies that the encoding bit rate is constant.</td>
-</tr>
-
-<tr>
-<td>VariableBitRateAverage</td>
-<td>Specifies that the encoding bit rate is variable, with the specified bit rate used as a guaranteed average over a specified window. The default window size is considered to be 5 minutes. That is, this guarantees that the average bit rate over the window period (5 minutes) will not exceed that specified in <a href="https://msdn.microsoft.com/library/windows/hardware/ff559520">ENCAPIPARAM_BITRATE</a>.</td>
-</tr>
-
-<tr>
-<td>VariableBitRatePeak</td>
-<td>Specifies that the encoding bit rate is variable with the specified bit rate used as an average with a peak not to exceed the specified peak bit rate over a specified window. The default window size is considered to be 500ms (classically one GOP). That is, this bit rate is "constant quality" − the bit rate is expected to average around <a href="https://msdn.microsoft.com/library/windows/hardware/ff559520">ENCAPIPARAM_BITRATE</a> but may spike above this. It cannot exceed the bit rate specified in <a href="https://msdn.microsoft.com/library/windows/hardware/ff559529">ENCAPIPARAM_PEAK_BITRATE</a>.</td>
-</tr>
+            
+                <tr>
+                    <td>ConstantBitRate</td>
+                    <td>Specifies that the encoding bit rate is constant.</td>
+                </tr>
+            
+                <tr>
+                    <td>VariableBitRateAverage</td>
+                    <td>Specifies that the encoding bit rate is variable, with the specified bit rate used as a guaranteed average over a specified window. The default window size is considered to be 5 minutes. That is, this guarantees that the average bit rate over the window period (5 minutes) will not exceed that specified in <a href="https://msdn.microsoft.com/library/windows/hardware/ff559520">ENCAPIPARAM_BITRATE</a>.</td>
+                </tr>
+            
+                <tr>
+                    <td>VariableBitRatePeak</td>
+                    <td>Specifies that the encoding bit rate is variable with the specified bit rate used as an average with a peak not to exceed the specified peak bit rate over a specified window. The default window size is considered to be 500ms (classically one GOP). That is, this bit rate is "constant quality" − the bit rate is expected to average around <a href="https://msdn.microsoft.com/library/windows/hardware/ff559520">ENCAPIPARAM_BITRATE</a> but may spike above this. It cannot exceed the bit rate specified in <a href="https://msdn.microsoft.com/library/windows/hardware/ff559529">ENCAPIPARAM_PEAK_BITRATE</a>.</td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-For all three modes, <a href="https://msdn.microsoft.com/library/windows/hardware/ff559520">ENCAPIPARAM_BITRATE</a> must be set to the expected average bit rate over a 5 minute period.
+        For all three modes, <a href="https://msdn.microsoft.com/library/windows/hardware/ff559520">ENCAPIPARAM_BITRATE</a> must be set to the expected average bit rate over a 5 minute period.
 
 When <b>VariableBitRatePeak</b> mode is used, the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559529">ENCAPIPARAM_PEAK_BITRATE</a> must also be set to the peak bit rate, which the VBR encoder must not exceed over a 500ms period (typically one GOP for MPEG-2 video).
 
@@ -81,9 +86,9 @@ When <b>VariableBitRatePeak</b> mode is used, the <a href="https://msdn.microsof
 | ---- |:---- |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
-## See Also
+    ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559529">ENCAPIPARAM_PEAK_BITRATE</a>
+        <a href="https://msdn.microsoft.com/library/windows/hardware/ff559529">ENCAPIPARAM_PEAK_BITRATE</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff559520">ENCAPIPARAM_BITRATE</a>
 

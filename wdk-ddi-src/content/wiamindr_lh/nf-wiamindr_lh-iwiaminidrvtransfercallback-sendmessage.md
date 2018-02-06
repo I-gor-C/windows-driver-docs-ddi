@@ -1,42 +1,47 @@
 ---
-UID : NF:wiamindr_lh.IWiaMiniDrvTransferCallback.SendMessage
-title : IWiaMiniDrvTransferCallback::SendMessage method
-author : windows-driver-content
-description : Periodically called by the WIA mini-driver during a data transfer, to update the WIA application client about the progress and status of the transfer.
-old-location : image\iwiaminidrvtransfercallback_sendmessage.htm
-old-project : image
-ms.assetid : 9C4800E6-0F5F-4895-AD19-635C7F784462
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : IWiaMiniDrvTransferCallback::SendMessage, image.iwiaminidrvtransfercallback_sendmessage, SendMessage method [Imaging Devices], IWiaMiniDrvTransferCallback interface, SendMessage method [Imaging Devices], IWiaMiniDrvTransferCallback interface [Imaging Devices], SendMessage method, IWiaMiniDrvTransferCallback, wiamindr_lh/IWiaMiniDrvTransferCallback::SendMessage, SendMessage
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wiamindr_lh.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wiamindr_lh.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SCANWINDOW, *PSCANWINDOW
-req.product : Windows 10 or later.
+UID: NF:wiamindr_lh.IWiaMiniDrvTransferCallback.SendMessage
+title: IWiaMiniDrvTransferCallback::SendMessage method
+author: windows-driver-content
+description: Periodically called by the WIA mini-driver during a data transfer, to update the WIA application client about the progress and status of the transfer.
+old-location: image\iwiaminidrvtransfercallback_sendmessage.htm
+old-project: image
+ms.assetid: 9C4800E6-0F5F-4895-AD19-635C7F784462
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: IWiaMiniDrvTransferCallback::SendMessage, image.iwiaminidrvtransfercallback_sendmessage, SendMessage method [Imaging Devices], IWiaMiniDrvTransferCallback interface, SendMessage method [Imaging Devices], IWiaMiniDrvTransferCallback interface [Imaging Devices], SendMessage method, IWiaMiniDrvTransferCallback, wiamindr_lh/IWiaMiniDrvTransferCallback::SendMessage, SendMessage
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wiamindr_lh.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wiamindr_lh.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Wiamindr_lh.h
+apiname:
+-	IWiaMiniDrvTransferCallback.SendMessage
+product: Windows
+targetos: Windows
+req.typenames: SCANWINDOW, *PSCANWINDOW
+req.product: Windows 10 or later.
 ---
 
 

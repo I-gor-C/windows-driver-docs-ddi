@@ -1,42 +1,47 @@
 ---
-UID : NC:wdfusb.EVT_WDF_USB_READER_COMPLETION_ROUTINE
-title : EVT_WDF_USB_READER_COMPLETION_ROUTINE
-author : windows-driver-content
-description : A driver's EvtUsbTargetPipeReadComplete event callback function informs the driver that a continuous reader has successfully completed a read request.
-old-location : wdf\evtusbtargetpipereadcomplete.htm
-old-project : wdf
-ms.assetid : da762d78-6d73-4ab9-83a8-297c6f48855b
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.evtusbtargetpipereadcomplete, EvtUsbTargetPipeReadComplete callback function, EvtUsbTargetPipeReadComplete, EVT_WDF_USB_READER_COMPLETION_ROUTINE, EVT_WDF_USB_READER_COMPLETION_ROUTINE, wdfusb/EvtUsbTargetPipeReadComplete, DFUsbRef_6c37ab84-2c88-41d5-8a63-3e74207083ed.xml, kmdf.evtusbtargetpipereadcomplete
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdfusb.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL  (See Remarks section.)"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDF_TRI_STATE, WDF_TRI_STATE"
-req.product : Windows 10 or later.
+UID: NC:wdfusb.EVT_WDF_USB_READER_COMPLETION_ROUTINE
+title: EVT_WDF_USB_READER_COMPLETION_ROUTINE
+author: windows-driver-content
+description: A driver's EvtUsbTargetPipeReadComplete event callback function informs the driver that a continuous reader has successfully completed a read request.
+old-location: wdf\evtusbtargetpipereadcomplete.htm
+old-project: wdf
+ms.assetid: da762d78-6d73-4ab9-83a8-297c6f48855b
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.evtusbtargetpipereadcomplete, EvtUsbTargetPipeReadComplete callback function, EvtUsbTargetPipeReadComplete, EVT_WDF_USB_READER_COMPLETION_ROUTINE, EVT_WDF_USB_READER_COMPLETION_ROUTINE, wdfusb/EvtUsbTargetPipeReadComplete, DFUsbRef_6c37ab84-2c88-41d5-8a63-3e74207083ed.xml, kmdf.evtusbtargetpipereadcomplete
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdfusb.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL  (See Remarks section.)"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	WdfUsb.h
+apiname:
+-	EvtUsbTargetPipeReadComplete
+product: Windows
+targetos: Windows
+req.typenames: "*PWDF_TRI_STATE, WDF_TRI_STATE"
+req.product: Windows 10 or later.
 ---
 
 

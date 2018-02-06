@@ -1,41 +1,46 @@
 ---
-UID : NS:gpioclx._CLIENT_CONTROLLER_QUERY_SET_INFORMATION_INPUT
-title : "_CLIENT_CONTROLLER_QUERY_SET_INFORMATION_INPUT"
-author : windows-driver-content
-description : The CLIENT_CONTROLLER_QUERY_SET_INFORMATION_INPUT structure contains a request for the hardware attributes of the general-purpose I/O (GPIO) controller.
-old-location : gpio\client_controller_query_set_information_input.htm
-old-project : GPIO
-ms.assetid : C4AA60FF-03AD-444F-B897-654B787B5F86
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : "*PCLIENT_CONTROLLER_QUERY_SET_INFORMATION_INPUT, GPIO.client_controller_query_set_information_input, PCLIENT_CONTROLLER_QUERY_SET_INFORMATION_INPUT structure pointer [Parallel Ports], CLIENT_CONTROLLER_QUERY_SET_INFORMATION_INPUT structure [Parallel Ports], PCLIENT_CONTROLLER_QUERY_SET_INFORMATION_INPUT, _CLIENT_CONTROLLER_QUERY_SET_INFORMATION_INPUT, CLIENT_CONTROLLER_QUERY_SET_INFORMATION_INPUT, gpioclx/CLIENT_CONTROLLER_QUERY_SET_INFORMATION_INPUT, gpioclx/PCLIENT_CONTROLLER_QUERY_SET_INFORMATION_INPUT"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : gpioclx.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : CLIENT_CONTROLLER_QUERY_SET_INFORMATION_INPUT, *PCLIENT_CONTROLLER_QUERY_SET_INFORMATION_INPUT
+UID: NS:gpioclx._CLIENT_CONTROLLER_QUERY_SET_INFORMATION_INPUT
+title: "_CLIENT_CONTROLLER_QUERY_SET_INFORMATION_INPUT"
+author: windows-driver-content
+description: The CLIENT_CONTROLLER_QUERY_SET_INFORMATION_INPUT structure contains a request for the hardware attributes of the general-purpose I/O (GPIO) controller.
+old-location: gpio\client_controller_query_set_information_input.htm
+old-project: GPIO
+ms.assetid: C4AA60FF-03AD-444F-B897-654B787B5F86
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: "*PCLIENT_CONTROLLER_QUERY_SET_INFORMATION_INPUT, GPIO.client_controller_query_set_information_input, PCLIENT_CONTROLLER_QUERY_SET_INFORMATION_INPUT structure pointer [Parallel Ports], CLIENT_CONTROLLER_QUERY_SET_INFORMATION_INPUT structure [Parallel Ports], PCLIENT_CONTROLLER_QUERY_SET_INFORMATION_INPUT, _CLIENT_CONTROLLER_QUERY_SET_INFORMATION_INPUT, CLIENT_CONTROLLER_QUERY_SET_INFORMATION_INPUT, gpioclx/CLIENT_CONTROLLER_QUERY_SET_INFORMATION_INPUT, gpioclx/PCLIENT_CONTROLLER_QUERY_SET_INFORMATION_INPUT"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: gpioclx.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Gpioclx.h
+apiname:
+-	CLIENT_CONTROLLER_QUERY_SET_INFORMATION_INPUT
+product: Windows
+targetos: Windows
+req.typenames: CLIENT_CONTROLLER_QUERY_SET_INFORMATION_INPUT, *PCLIENT_CONTROLLER_QUERY_SET_INFORMATION_INPUT
 ---
 
 # _CLIENT_CONTROLLER_QUERY_SET_INFORMATION_INPUT structure

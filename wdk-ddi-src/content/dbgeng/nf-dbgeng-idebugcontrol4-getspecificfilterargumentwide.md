@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugControl4.GetSpecificFilterArgumentWide
-title : IDebugControl4::GetSpecificFilterArgumentWide method
-author : windows-driver-content
-description : The GetSpecificFilterArgumentWide method returns the value of filter argument for thespecific filters that have an argument.
-old-location : debugger\getspecificfilterargumentwide.htm
-old-project : debugger
-ms.assetid : 61537680-0453-4484-b07a-e0d90b45c412
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : debugger.getspecificfilterargumentwide, IDebugControl4 interface [Windows Debugging], GetSpecificFilterArgumentWide method, IDebugControl4::GetSpecificFilterArgumentWide, GetSpecificFilterArgumentWide method [Windows Debugging], dbgeng/IDebugControl4::GetSpecificFilterArgumentWide, GetSpecificFilterArgumentWide method [Windows Debugging], IDebugControl4 interface, IDebugControl4, GetSpecificFilterArgumentWide
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl4.GetSpecificFilterArgumentWide
+title: IDebugControl4::GetSpecificFilterArgumentWide method
+author: windows-driver-content
+description: The GetSpecificFilterArgumentWide method returns the value of filter argument for thespecific filters that have an argument.
+old-location: debugger\getspecificfilterargumentwide.htm
+old-project: debugger
+ms.assetid: 61537680-0453-4484-b07a-e0d90b45c412
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: debugger.getspecificfilterargumentwide, IDebugControl4 interface [Windows Debugging], GetSpecificFilterArgumentWide method, IDebugControl4::GetSpecificFilterArgumentWide, GetSpecificFilterArgumentWide method [Windows Debugging], dbgeng/IDebugControl4::GetSpecificFilterArgumentWide, GetSpecificFilterArgumentWide method [Windows Debugging], IDebugControl4 interface, IDebugControl4, GetSpecificFilterArgumentWide
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl4.GetSpecificFilterArgumentWide
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

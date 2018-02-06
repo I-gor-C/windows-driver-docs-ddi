@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGKARG_CREATEPROCESS
-title : "_DXGKARG_CREATEPROCESS"
-author : windows-driver-content
-description : DXGKARG_CREATEPROCESS is used with DxgkDdiCreateProcess to create a kernel mode driver object for a Microsoft DirectX graphics kernel process object.
-old-location : display\dxgkarg_createprocess.htm
-old-project : display
-ms.assetid : F4FDF254-1C36-43DC-B1FD-376AD7658E61
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : "*INOUT_PDXGKARG_CREATEPROCESS, d3dkmddi/DXGKARG_CREATEPROCESS, DXGKARG_CREATEPROCESS structure [Display Devices], DXGKARG_CREATEPROCESS, _DXGKARG_CREATEPROCESS, display.dxgkarg_createprocess"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGKARG_CREATEPROCESS
+UID: NS:d3dkmddi._DXGKARG_CREATEPROCESS
+title: "_DXGKARG_CREATEPROCESS"
+author: windows-driver-content
+description: DXGKARG_CREATEPROCESS is used with DxgkDdiCreateProcess to create a kernel mode driver object for a Microsoft DirectX graphics kernel process object.
+old-location: display\dxgkarg_createprocess.htm
+old-project: display
+ms.assetid: F4FDF254-1C36-43DC-B1FD-376AD7658E61
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: "*INOUT_PDXGKARG_CREATEPROCESS, d3dkmddi/DXGKARG_CREATEPROCESS, DXGKARG_CREATEPROCESS structure [Display Devices], DXGKARG_CREATEPROCESS, _DXGKARG_CREATEPROCESS, display.dxgkarg_createprocess"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DXGKARG_CREATEPROCESS
+product: Windows
+targetos: Windows
+req.typenames: DXGKARG_CREATEPROCESS
 ---
 
 # _DXGKARG_CREATEPROCESS structure

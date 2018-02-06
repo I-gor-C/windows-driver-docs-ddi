@@ -1,42 +1,47 @@
 ---
-UID : NF:video.VideoPortWritePortUshort
-title : VideoPortWritePortUshort function
-author : windows-driver-content
-description : The VideoPortWritePortUshort function writes a USHORT value to a mapped I/O port.
-old-location : display\videoportwriteportushort.htm
-old-project : display
-ms.assetid : c0431b2a-c075-48e4-9476-42c42a86f8ed
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : VideoPortWritePortUshort, display.videoportwriteportushort, video/VideoPortWritePortUshort, VideoPort_Functions_919dd8ab-f319-4071-b375-b269823adb31.xml, VideoPortWritePortUshort function [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows 2000 and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Videoprt.lib
-req.dll : Videoprt.sys
-req.irql : Any level (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_PORT_SERVICES
-req.product : Windows 10 or later.
+UID: NF:video.VideoPortWritePortUshort
+title: VideoPortWritePortUshort function
+author: windows-driver-content
+description: The VideoPortWritePortUshort function writes a USHORT value to a mapped I/O port.
+old-location: display\videoportwriteportushort.htm
+old-project: display
+ms.assetid: c0431b2a-c075-48e4-9476-42c42a86f8ed
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: VideoPortWritePortUshort, display.videoportwriteportushort, video/VideoPortWritePortUshort, VideoPort_Functions_919dd8ab-f319-4071-b375-b269823adb31.xml, VideoPortWritePortUshort function [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows 2000 and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Videoprt.lib
+req.dll: Videoprt.sys
+req.irql: Any level (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Videoprt.sys
+apiname:
+-	VideoPortWritePortUshort
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_PORT_SERVICES
+req.product: Windows 10 or later.
 ---
 
 

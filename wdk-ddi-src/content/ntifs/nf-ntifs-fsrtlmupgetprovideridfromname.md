@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.FsRtlMupGetProviderIdFromName
-title : FsRtlMupGetProviderIdFromName function
-author : windows-driver-content
-description : The FsRtlMupGetProviderIdFromName routine gets the provider identifier of a network redirector that is registered with the multiple UNC provider (MUP) from the device name of the network redirector.
-old-location : ifsk\fsrtlmupgetprovideridfromname.htm
-old-project : ifsk
-ms.assetid : a572398c-1755-4fc6-844b-85059d4d02cb
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.fsrtlmupgetprovideridfromname, ntifs/FsRtlMupGetProviderIdFromName, FsRtlMupGetProviderIdFromName, fsrtlref_40c084cd-454c-4e09-afc1-fca3a78bf614.xml, FsRtlMupGetProviderIdFromName routine [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : The FsRtlMupGetProviderIdFromName function is available in Windows Vista and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.FsRtlMupGetProviderIdFromName
+title: FsRtlMupGetProviderIdFromName function
+author: windows-driver-content
+description: The FsRtlMupGetProviderIdFromName routine gets the provider identifier of a network redirector that is registered with the multiple UNC provider (MUP) from the device name of the network redirector.
+old-location: ifsk\fsrtlmupgetprovideridfromname.htm
+old-project: ifsk
+ms.assetid: a572398c-1755-4fc6-844b-85059d4d02cb
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.fsrtlmupgetprovideridfromname, ntifs/FsRtlMupGetProviderIdFromName, FsRtlMupGetProviderIdFromName, fsrtlref_40c084cd-454c-4e09-afc1-fca3a78bf614.xml, FsRtlMupGetProviderIdFromName routine [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: The FsRtlMupGetProviderIdFromName function is available in Windows Vista and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	FsRtlMupGetProviderIdFromName
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

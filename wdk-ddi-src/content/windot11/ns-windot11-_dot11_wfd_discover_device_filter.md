@@ -1,42 +1,47 @@
 ---
-UID : NS:windot11._DOT11_WFD_DISCOVER_DEVICE_FILTER
-title : "_DOT11_WFD_DISCOVER_DEVICE_FILTER"
-author : windows-driver-content
-description : The DOT11_WFD_DISCOVER _DEVICE_FILTER structure describes a P2P device and Group Owner filter when responding to OID_DOT11_WFD_DISCOVERY_REQUEST requests.
-old-location : netvista\dot11_wfd_discover_device_filter.htm
-old-project : netvista
-ms.assetid : B8AA23C6-EFFC-47C3-9AD2-72421463CDBA
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : "_DOT11_WFD_DISCOVER_DEVICE_FILTER, windot11/DOT11_WFD_DISCOVER_DEVICE_FILTER, netvista.dot11_wfd_discover_device_filter, *PDOT11_WFD_DISCOVER_DEVICE_FILTER, PDOT11_WFD_DISCOVER_DEVICE_FILTER structure pointer [Network Drivers Starting with Windows Vista], PDOT11_WFD_DISCOVER_DEVICE_FILTER, DOT11_WFD_DISCOVER_DEVICE_FILTER structure [Network Drivers Starting with Windows Vista], DOT11_WFD_DISCOVER_DEVICE_FILTER, windot11/PDOT11_WFD_DISCOVER_DEVICE_FILTER"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : windot11.h
-req.include-header : Windot11.h
-req.target-type : Windows
-req.target-min-winverclnt : Versions:\_Supported in Windows 8
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDOT11_WFD_DISCOVER_DEVICE_FILTER, DOT11_WFD_DISCOVER_DEVICE_FILTER"
-req.product : Windows 10 or later.
+UID: NS:windot11._DOT11_WFD_DISCOVER_DEVICE_FILTER
+title: "_DOT11_WFD_DISCOVER_DEVICE_FILTER"
+author: windows-driver-content
+description: The DOT11_WFD_DISCOVER _DEVICE_FILTER structure describes a P2P device and Group Owner filter when responding to OID_DOT11_WFD_DISCOVERY_REQUEST requests.
+old-location: netvista\dot11_wfd_discover_device_filter.htm
+old-project: netvista
+ms.assetid: B8AA23C6-EFFC-47C3-9AD2-72421463CDBA
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: "_DOT11_WFD_DISCOVER_DEVICE_FILTER, windot11/DOT11_WFD_DISCOVER_DEVICE_FILTER, netvista.dot11_wfd_discover_device_filter, *PDOT11_WFD_DISCOVER_DEVICE_FILTER, PDOT11_WFD_DISCOVER_DEVICE_FILTER structure pointer [Network Drivers Starting with Windows Vista], PDOT11_WFD_DISCOVER_DEVICE_FILTER, DOT11_WFD_DISCOVER_DEVICE_FILTER structure [Network Drivers Starting with Windows Vista], DOT11_WFD_DISCOVER_DEVICE_FILTER, windot11/PDOT11_WFD_DISCOVER_DEVICE_FILTER"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: windot11.h
+req.include-header: Windot11.h
+req.target-type: Windows
+req.target-min-winverclnt: Versions:\_Supported in Windows 8
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Windot11.h
+apiname:
+-	DOT11_WFD_DISCOVER_DEVICE_FILTER
+product: Windows
+targetos: Windows
+req.typenames: "*PDOT11_WFD_DISCOVER_DEVICE_FILTER, DOT11_WFD_DISCOVER_DEVICE_FILTER"
+req.product: Windows 10 or later.
 ---
 
 # _DOT11_WFD_DISCOVER_DEVICE_FILTER structure

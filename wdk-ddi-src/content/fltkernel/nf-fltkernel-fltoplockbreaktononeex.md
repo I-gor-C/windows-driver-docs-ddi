@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltOplockBreakToNoneEx
-title : FltOplockBreakToNoneEx function
-author : windows-driver-content
-description : The FltOplockBreakToNoneEx routine breaks all opportunistic locks (oplocks) immediately without regard for any oplock key.
-old-location : ifsk\fltoplockbreaktononeex.htm
-old-project : ifsk
-ms.assetid : 748951e3-9642-4c98-a3b0-5f6b18519bd4
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltOplockBreakToNoneEx, ifsk.fltoplockbreaktononeex, FltOplockBreakToNoneEx routine [Installable File System Drivers], fltkernel/FltOplockBreakToNoneEx, FltApiRef_e_to_o_7111d712-59f1-4c71-b02c-9bb415aa118f.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : The FltOplockBreakToNoneEx routine is available starting with Windows 7.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltOplockBreakToNoneEx
+title: FltOplockBreakToNoneEx function
+author: windows-driver-content
+description: The FltOplockBreakToNoneEx routine breaks all opportunistic locks (oplocks) immediately without regard for any oplock key.
+old-location: ifsk\fltoplockbreaktononeex.htm
+old-project: ifsk
+ms.assetid: 748951e3-9642-4c98-a3b0-5f6b18519bd4
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltOplockBreakToNoneEx, ifsk.fltoplockbreaktononeex, FltOplockBreakToNoneEx routine [Installable File System Drivers], fltkernel/FltOplockBreakToNoneEx, FltApiRef_e_to_o_7111d712-59f1-4c71-b02c-9bb415aa118f.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: The FltOplockBreakToNoneEx routine is available starting with Windows 7.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltOplockBreakToNoneEx
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

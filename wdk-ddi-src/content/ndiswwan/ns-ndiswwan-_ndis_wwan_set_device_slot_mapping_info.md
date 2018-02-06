@@ -1,41 +1,46 @@
 ---
-UID : NS:ndiswwan._NDIS_WWAN_SET_DEVICE_SLOT_MAPPING_INFO
-title : "_NDIS_WWAN_SET_DEVICE_SLOT_MAPPING_INFO"
-author : windows-driver-content
-description : The NDIS_WWAN_SET_DEVICE_SLOT_MAPPING_INFO structure sets the executor-to-slot mapping relationship of the MB device.
-old-location : netvista\ndis_wwan_set_device_slot_mappings.htm
-old-project : netvista
-ms.assetid : 5DAE5A36-1A2B-46DF-8CF1-FAC8B98460A8
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : "*PNDIS_WWAN_SET_DEVICE_SLOT_MAPPING_INFO, PNDIS_WWAN_SET_DEVICE_SLOT_MAPPING_INFO, _NDIS_WWAN_SET_DEVICE_SLOT_MAPPING_INFO, NDIS_WWAN_SET_DEVICE_SLOT_MAPPING_INFO structure [Network Drivers Starting with Windows Vista], netvista.ndis_wwan_set_device_slot_mappings, NDIS_WWAN_SET_DEVICE_SLOT_MAPPING_INFO, PNDIS_WWAN_SET_DEVICE_SLOT_MAPPING_INFO structure pointer [Network Drivers Starting with Windows Vista], ndiswwan/PNDIS_WWAN_SET_DEVICE_SLOT_MAPPING_INFO, ndiswwan/NDIS_WWAN_SET_DEVICE_SLOT_MAPPING_INFO"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndiswwan.h
-req.include-header : Ndiswwan.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10, version 1703
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PNDIS_WWAN_SET_DEVICE_SLOT_MAPPING_INFO, NDIS_WWAN_SET_DEVICE_SLOT_MAPPING_INFO"
+UID: NS:ndiswwan._NDIS_WWAN_SET_DEVICE_SLOT_MAPPING_INFO
+title: "_NDIS_WWAN_SET_DEVICE_SLOT_MAPPING_INFO"
+author: windows-driver-content
+description: The NDIS_WWAN_SET_DEVICE_SLOT_MAPPING_INFO structure sets the executor-to-slot mapping relationship of the MB device.
+old-location: netvista\ndis_wwan_set_device_slot_mappings.htm
+old-project: netvista
+ms.assetid: 5DAE5A36-1A2B-46DF-8CF1-FAC8B98460A8
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: "*PNDIS_WWAN_SET_DEVICE_SLOT_MAPPING_INFO, PNDIS_WWAN_SET_DEVICE_SLOT_MAPPING_INFO, _NDIS_WWAN_SET_DEVICE_SLOT_MAPPING_INFO, NDIS_WWAN_SET_DEVICE_SLOT_MAPPING_INFO structure [Network Drivers Starting with Windows Vista], netvista.ndis_wwan_set_device_slot_mappings, NDIS_WWAN_SET_DEVICE_SLOT_MAPPING_INFO, PNDIS_WWAN_SET_DEVICE_SLOT_MAPPING_INFO structure pointer [Network Drivers Starting with Windows Vista], ndiswwan/PNDIS_WWAN_SET_DEVICE_SLOT_MAPPING_INFO, ndiswwan/NDIS_WWAN_SET_DEVICE_SLOT_MAPPING_INFO"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndiswwan.h
+req.include-header: Ndiswwan.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10, version 1703
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndiswwan.h
+apiname:
+-	NDIS_WWAN_SET_DEVICE_SLOT_MAPPING_INFO
+product: Windows
+targetos: Windows
+req.typenames: "*PNDIS_WWAN_SET_DEVICE_SLOT_MAPPING_INFO, NDIS_WWAN_SET_DEVICE_SLOT_MAPPING_INFO"
 ---
 
 # _NDIS_WWAN_SET_DEVICE_SLOT_MAPPING_INFO structure

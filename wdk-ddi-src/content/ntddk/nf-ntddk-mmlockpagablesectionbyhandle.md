@@ -1,41 +1,46 @@
 ---
-UID : NF:ntddk.MmLockPagableSectionByHandle
-title : MmLockPagableSectionByHandle function
-author : windows-driver-content
-description : The MmLockPagableSectionByHandle routine locks a pageable code or data section into system memory by incrementing the reference count on the handle to the section.
-old-location : kernel\mmlockpagablesectionbyhandle.htm
-old-project : kernel
-ms.assetid : d2e50d98-1c25-4ed6-98eb-0fb7e71fda55
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ntddk/MmLockPagableSectionByHandle, k106_9c5e1e9c-8382-4082-a3ac-5985224c8b2a.xml, MmLockPagableSectionByHandle, kernel.mmlockpagablesectionbyhandle, MmLockPagableSectionByHandle routine [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : IrqlMmApcLte, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.MmLockPagableSectionByHandle
+title: MmLockPagableSectionByHandle function
+author: windows-driver-content
+description: The MmLockPagableSectionByHandle routine locks a pageable code or data section into system memory by incrementing the reference count on the handle to the section.
+old-location: kernel\mmlockpagablesectionbyhandle.htm
+old-project: kernel
+ms.assetid: d2e50d98-1c25-4ed6-98eb-0fb7e71fda55
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ntddk/MmLockPagableSectionByHandle, k106_9c5e1e9c-8382-4082-a3ac-5985224c8b2a.xml, MmLockPagableSectionByHandle, kernel.mmlockpagablesectionbyhandle, MmLockPagableSectionByHandle routine [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: IrqlMmApcLte, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	MmLockPagableSectionByHandle
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

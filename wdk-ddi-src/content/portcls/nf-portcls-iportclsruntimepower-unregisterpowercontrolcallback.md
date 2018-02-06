@@ -1,41 +1,46 @@
 ---
-UID : NF:portcls.IPortClsRuntimePower.UnregisterPowerControlCallback
-title : IPortClsRuntimePower::UnregisterPowerControlCallback method
-author : windows-driver-content
-description : The port class driver (PortCls) uses the UnregisterPowerControlCallback method to unregister a power control callback.
-old-location : audio\iportclsruntimepower_unregisterpowercontrolcallback.htm
-old-project : audio
-ms.assetid : F7E83587-0499-4D56-8D34-5513454FFEE2
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : UnregisterPowerControlCallback method [Audio Devices], IPortClsRuntimePower, portcls/IPortClsRuntimePower::UnregisterPowerControlCallback, UnregisterPowerControlCallback, audio.iportclsruntimepower_unregisterpowercontrolcallback, IPortClsRuntimePower interface [Audio Devices], UnregisterPowerControlCallback method, UnregisterPowerControlCallback method [Audio Devices], IPortClsRuntimePower interface, IPortClsRuntimePower::UnregisterPowerControlCallback
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : portcls.h
-req.include-header : 
-req.target-type : Universal
-req.target-min-winverclnt : Windows 7
-req.target-min-winversvr : Windows Server 2003
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : portcls.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.IPortClsRuntimePower.UnregisterPowerControlCallback
+title: IPortClsRuntimePower::UnregisterPowerControlCallback method
+author: windows-driver-content
+description: The port class driver (PortCls) uses the UnregisterPowerControlCallback method to unregister a power control callback.
+old-location: audio\iportclsruntimepower_unregisterpowercontrolcallback.htm
+old-project: audio
+ms.assetid: F7E83587-0499-4D56-8D34-5513454FFEE2
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: UnregisterPowerControlCallback method [Audio Devices], IPortClsRuntimePower, portcls/IPortClsRuntimePower::UnregisterPowerControlCallback, UnregisterPowerControlCallback, audio.iportclsruntimepower_unregisterpowercontrolcallback, IPortClsRuntimePower interface [Audio Devices], UnregisterPowerControlCallback method, UnregisterPowerControlCallback method [Audio Devices], IPortClsRuntimePower interface, IPortClsRuntimePower::UnregisterPowerControlCallback
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: portcls.h
+req.include-header: 
+req.target-type: Universal
+req.target-min-winverclnt: Windows 7
+req.target-min-winversvr: Windows Server 2003
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: portcls.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Portcls.h
+apiname:
+-	IPortClsRuntimePower.UnregisterPowerControlCallback
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

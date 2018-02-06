@@ -1,42 +1,47 @@
 ---
-UID : NN:wudfddi.IWDFFileHandleTargetFactory
-title : IWDFFileHandleTargetFactory
-author : windows-driver-content
-description : The IWDFFileHandleTargetFactory interface is a factory interface that is used to create a file-handle-based target device object.
-old-location : wdf\iwdffilehandletargetfactory.htm
-old-project : wdf
-ms.assetid : b4754176-53a2-4ee4-a441-5d9a4a4a17e2
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.iwdffilehandletargetfactory, IWDFFileHandleTargetFactory interface, IWDFFileHandleTargetFactory interface, described, IWDFFileHandleTargetFactory, wudfddi/IWDFFileHandleTargetFactory, UMDFDeviceObjectRef_01a7fcc5-c259-4bad-b44c-9a20eeae1751.xml, umdf.iwdffilehandletargetfactory
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.5
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NN:wudfddi.IWDFFileHandleTargetFactory
+title: IWDFFileHandleTargetFactory
+author: windows-driver-content
+description: The IWDFFileHandleTargetFactory interface is a factory interface that is used to create a file-handle-based target device object.
+old-location: wdf\iwdffilehandletargetfactory.htm
+old-project: wdf
+ms.assetid: b4754176-53a2-4ee4-a441-5d9a4a4a17e2
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.iwdffilehandletargetfactory, IWDFFileHandleTargetFactory interface, IWDFFileHandleTargetFactory interface, described, IWDFFileHandleTargetFactory, wudfddi/IWDFFileHandleTargetFactory, UMDFDeviceObjectRef_01a7fcc5-c259-4bad-b44c-9a20eeae1751.xml, umdf.iwdffilehandletargetfactory
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.5
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFFileHandleTargetFactory
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 # IWDFFileHandleTargetFactory interface

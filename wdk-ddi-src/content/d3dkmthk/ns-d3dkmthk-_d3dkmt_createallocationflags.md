@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmthk._D3DKMT_CREATEALLOCATIONFLAGS
-title : "_D3DKMT_CREATEALLOCATIONFLAGS"
-author : windows-driver-content
-description : The D3DKMT_CREATEALLOCATIONFLAGS structure identifies how to create an allocation in a call to the D3DKMTCreateAllocation function.
-old-location : display\d3dkmt_createallocationflags.htm
-old-project : display
-ms.assetid : ddcb8222-808b-4dfe-9303-a588b3522ebe
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DKMT_CREATEALLOCATIONFLAGS structure [Display Devices], D3DKMT_CREATEALLOCATIONFLAGS, OpenGL_Structs_0b22984b-feef-4975-b7d9-596427c82b2b.xml, d3dkmthk/D3DKMT_CREATEALLOCATIONFLAGS, _D3DKMT_CREATEALLOCATIONFLAGS, display.d3dkmt_createallocationflags
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_CREATEALLOCATIONFLAGS
+UID: NS:d3dkmthk._D3DKMT_CREATEALLOCATIONFLAGS
+title: "_D3DKMT_CREATEALLOCATIONFLAGS"
+author: windows-driver-content
+description: The D3DKMT_CREATEALLOCATIONFLAGS structure identifies how to create an allocation in a call to the D3DKMTCreateAllocation function.
+old-location: display\d3dkmt_createallocationflags.htm
+old-project: display
+ms.assetid: ddcb8222-808b-4dfe-9303-a588b3522ebe
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DKMT_CREATEALLOCATIONFLAGS structure [Display Devices], D3DKMT_CREATEALLOCATIONFLAGS, OpenGL_Structs_0b22984b-feef-4975-b7d9-596427c82b2b.xml, d3dkmthk/D3DKMT_CREATEALLOCATIONFLAGS, _D3DKMT_CREATEALLOCATIONFLAGS, display.d3dkmt_createallocationflags
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmthk.h
+apiname:
+-	D3DKMT_CREATEALLOCATIONFLAGS
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_CREATEALLOCATIONFLAGS
 ---
 
 # _D3DKMT_CREATEALLOCATIONFLAGS structure

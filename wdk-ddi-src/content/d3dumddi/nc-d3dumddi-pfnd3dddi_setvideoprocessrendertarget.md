@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_SETVIDEOPROCESSRENDERTARGET
-title : PFND3DDDI_SETVIDEOPROCESSRENDERTARGET
-author : windows-driver-content
-description : The SetVideoProcessRenderTarget function sets the render target surface that is used for video processing.
-old-location : display\setvideoprocessrendertarget.htm
-old-project : display
-ms.assetid : 8aa7e23e-f52e-4252-9f22-56ce523f6cba
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.setvideoprocessrendertarget, SetVideoProcessRenderTarget callback function [Display Devices], SetVideoProcessRenderTarget, PFND3DDDI_SETVIDEOPROCESSRENDERTARGET, PFND3DDDI_SETVIDEOPROCESSRENDERTARGET, d3dumddi/SetVideoProcessRenderTarget, UserModeDisplayDriver_Functions_8ce2d981-2c69-45e9-a2e2-eba9026be1a0.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_SETVIDEOPROCESSRENDERTARGET
+title: PFND3DDDI_SETVIDEOPROCESSRENDERTARGET
+author: windows-driver-content
+description: The SetVideoProcessRenderTarget function sets the render target surface that is used for video processing.
+old-location: display\setvideoprocessrendertarget.htm
+old-project: display
+ms.assetid: 8aa7e23e-f52e-4252-9f22-56ce523f6cba
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.setvideoprocessrendertarget, SetVideoProcessRenderTarget callback function [Display Devices], SetVideoProcessRenderTarget, PFND3DDDI_SETVIDEOPROCESSRENDERTARGET, PFND3DDDI_SETVIDEOPROCESSRENDERTARGET, d3dumddi/SetVideoProcessRenderTarget, UserModeDisplayDriver_Functions_8ce2d981-2c69-45e9-a2e2-eba9026be1a0.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	SetVideoProcessRenderTarget
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

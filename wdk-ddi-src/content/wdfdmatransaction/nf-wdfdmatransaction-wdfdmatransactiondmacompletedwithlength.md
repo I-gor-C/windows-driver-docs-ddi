@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfdmatransaction.WdfDmaTransactionDmaCompletedWithLength
-title : WdfDmaTransactionDmaCompletedWithLength function
-author : windows-driver-content
-description : The WdfDmaTransactionDmaCompletedWithLength method notifies the framework that a device's DMA transfer operation is complete and supplies the length of the completed transfer.
-old-location : wdf\wdfdmatransactiondmacompletedwithlength.htm
-old-project : wdf
-ms.assetid : 7f436ac1-1e36-449c-a23f-b5729e5a20c2
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WdfDmaTransactionDmaCompletedWithLength method, kmdf.wdfdmatransactiondmacompletedwithlength, wdf.wdfdmatransactiondmacompletedwithlength, PFN_WDFDMATRANSACTIONDMACOMPLETEDWITHLENGTH, wdfdmatransaction/WdfDmaTransactionDmaCompletedWithLength, WdfDmaTransactionDmaCompletedWithLength, DFDmaObjectRef_b04fb6c6-98ce-4d3b-8bc9-10a29f6bde46.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfdmatransaction.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDF_DMA_SYSTEM_PROFILE_CONFIG, WDF_DMA_SYSTEM_PROFILE_CONFIG"
-req.product : Windows 10 or later.
+UID: NF:wdfdmatransaction.WdfDmaTransactionDmaCompletedWithLength
+title: WdfDmaTransactionDmaCompletedWithLength function
+author: windows-driver-content
+description: The WdfDmaTransactionDmaCompletedWithLength method notifies the framework that a device's DMA transfer operation is complete and supplies the length of the completed transfer.
+old-location: wdf\wdfdmatransactiondmacompletedwithlength.htm
+old-project: wdf
+ms.assetid: 7f436ac1-1e36-449c-a23f-b5729e5a20c2
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WdfDmaTransactionDmaCompletedWithLength method, kmdf.wdfdmatransactiondmacompletedwithlength, wdf.wdfdmatransactiondmacompletedwithlength, PFN_WDFDMATRANSACTIONDMACOMPLETEDWITHLENGTH, wdfdmatransaction/WdfDmaTransactionDmaCompletedWithLength, WdfDmaTransactionDmaCompletedWithLength, DFDmaObjectRef_b04fb6c6-98ce-4d3b-8bc9-10a29f6bde46.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfdmatransaction.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfDmaTransactionDmaCompletedWithLength
+product: Windows
+targetos: Windows
+req.typenames: "*PWDF_DMA_SYSTEM_PROFILE_CONFIG, WDF_DMA_SYSTEM_PROFILE_CONFIG"
+req.product: Windows 10 or later.
 ---
 
 

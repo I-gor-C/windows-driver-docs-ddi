@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddndis._NDIS_SWITCH_PROPERTY_ENUM_INFO
-title : "_NDIS_SWITCH_PROPERTY_ENUM_INFO"
-author : windows-driver-content
-description : The NDIS_SWITCH_PROPERTY_ENUM_INFO structure specifies information about a profile property for the Hyper-V extensible switch.
-old-location : netvista\ndis_switch_property_enum_info.htm
-old-project : netvista
-ms.assetid : 1b990bc5-3ff4-4e37-b011-258c4dbe8f22
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : PNDIS_SWITCH_PROPERTY_ENUM_INFO structure pointer [Network Drivers Starting with Windows Vista], _NDIS_SWITCH_PROPERTY_ENUM_INFO, NDIS_SWITCH_PROPERTY_ENUM_INFO structure [Network Drivers Starting with Windows Vista], ntddndis/NDIS_SWITCH_PROPERTY_ENUM_INFO, PNDIS_SWITCH_PROPERTY_ENUM_INFO, ntddndis/PNDIS_SWITCH_PROPERTY_ENUM_INFO, NDIS_SWITCH_PROPERTY_ENUM_INFO, *PNDIS_SWITCH_PROPERTY_ENUM_INFO, netvista.ndis_switch_property_enum_info
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.30 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SWITCH_PROPERTY_ENUM_INFO, *PNDIS_SWITCH_PROPERTY_ENUM_INFO
+UID: NS:ntddndis._NDIS_SWITCH_PROPERTY_ENUM_INFO
+title: "_NDIS_SWITCH_PROPERTY_ENUM_INFO"
+author: windows-driver-content
+description: The NDIS_SWITCH_PROPERTY_ENUM_INFO structure specifies information about a profile property for the Hyper-V extensible switch.
+old-location: netvista\ndis_switch_property_enum_info.htm
+old-project: netvista
+ms.assetid: 1b990bc5-3ff4-4e37-b011-258c4dbe8f22
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: PNDIS_SWITCH_PROPERTY_ENUM_INFO structure pointer [Network Drivers Starting with Windows Vista], _NDIS_SWITCH_PROPERTY_ENUM_INFO, NDIS_SWITCH_PROPERTY_ENUM_INFO structure [Network Drivers Starting with Windows Vista], ntddndis/NDIS_SWITCH_PROPERTY_ENUM_INFO, PNDIS_SWITCH_PROPERTY_ENUM_INFO, ntddndis/PNDIS_SWITCH_PROPERTY_ENUM_INFO, NDIS_SWITCH_PROPERTY_ENUM_INFO, *PNDIS_SWITCH_PROPERTY_ENUM_INFO, netvista.ndis_switch_property_enum_info
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.30 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddndis.h
+apiname:
+-	NDIS_SWITCH_PROPERTY_ENUM_INFO
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SWITCH_PROPERTY_ENUM_INFO, *PNDIS_SWITCH_PROPERTY_ENUM_INFO
 ---
 
 # _NDIS_SWITCH_PROPERTY_ENUM_INFO structure

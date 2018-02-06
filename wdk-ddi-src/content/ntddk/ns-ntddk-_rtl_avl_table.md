@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddk._RTL_AVL_TABLE
-title : "_RTL_AVL_TABLE"
-author : windows-driver-content
-description : The RTL_AVL_TABLE structure contains file system-specific data for an Adelson-Velsky/Landis (AVL) tree.
-old-location : ifsk\rtl_avl_table.htm
-old-project : ifsk
-ms.assetid : 115d9489-f9f5-4dd2-bf09-33e8fd640743
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : RTL_AVL_TABLE structure [Installable File System Drivers], ntddk/RTL_AVL_TABLE, PRTL_AVL_TABLE structure pointer [Installable File System Drivers], ntddk/PRTL_AVL_TABLE, RTL_AVL_TABLE, othersystemstructures_15c34a0b-0bca-4c5f-82d9-0320ef0d33ad.xml, *PRTL_AVL_TABLE, ifsk.rtl_avl_table, PRTL_AVL_TABLE, _RTL_AVL_TABLE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Windows
-req.target-min-winverclnt : This structure is available on Windows XP and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RTL_AVL_TABLE
+UID: NS:ntddk._RTL_AVL_TABLE
+title: "_RTL_AVL_TABLE"
+author: windows-driver-content
+description: The RTL_AVL_TABLE structure contains file system-specific data for an Adelson-Velsky/Landis (AVL) tree.
+old-location: ifsk\rtl_avl_table.htm
+old-project: ifsk
+ms.assetid: 115d9489-f9f5-4dd2-bf09-33e8fd640743
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: RTL_AVL_TABLE structure [Installable File System Drivers], ntddk/RTL_AVL_TABLE, PRTL_AVL_TABLE structure pointer [Installable File System Drivers], ntddk/PRTL_AVL_TABLE, RTL_AVL_TABLE, othersystemstructures_15c34a0b-0bca-4c5f-82d9-0320ef0d33ad.xml, *PRTL_AVL_TABLE, ifsk.rtl_avl_table, PRTL_AVL_TABLE, _RTL_AVL_TABLE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Windows
+req.target-min-winverclnt: This structure is available on Windows XP and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddk.h
+apiname:
+-	RTL_AVL_TABLE
+product: Windows
+targetos: Windows
+req.typenames: RTL_AVL_TABLE
 ---
 
 # _RTL_AVL_TABLE structure

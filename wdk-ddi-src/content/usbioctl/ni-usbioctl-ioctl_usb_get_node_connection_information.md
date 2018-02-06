@@ -1,42 +1,47 @@
 ---
-UID : NI:usbioctl.IOCTL_USB_GET_NODE_CONNECTION_INFORMATION
-title : IOCTL_USB_GET_NODE_CONNECTION_INFORMATION
-author : windows-driver-content
-description : The IOCTL_USB_GET_NODE_CONNECTION_INFORMATION request retrieves information about the indicated USB port and the device that is attached to the port, if there is one.Client drivers must send this IOCTL at an IRQL of PASSIVE_LEVEL.IOCTL_USB_GET_NODE_CONNECTION_INFORMATION is a user-mode I/O control request. This request targets the USB hub device (GUID_DEVINTERFACE_USB_HUB). Do not send this request to the root hub.
-old-location : buses\ioctl_usb_get_node_connection_information.htm
-old-project : usbref
-ms.assetid : abbd1f03-cf9e-449b-b261-2a751997fed0
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : buses.ioctl_usb_get_node_connection_information, IOCTL_USB_GET_NODE_CONNECTION_INFORMATION control code [Buses], IOCTL_USB_GET_NODE_CONNECTION_INFORMATION, usbioctl/IOCTL_USB_GET_NODE_CONNECTION_INFORMATION, usbirp_b71c24bb-6e3b-468f-851d-a934a764fbe1.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : usbioctl.h
-req.include-header : Usbioctl.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : USB_HUB_TYPE
-req.product : Windows 10 or later.
+UID: NI:usbioctl.IOCTL_USB_GET_NODE_CONNECTION_INFORMATION
+title: IOCTL_USB_GET_NODE_CONNECTION_INFORMATION
+author: windows-driver-content
+description: The IOCTL_USB_GET_NODE_CONNECTION_INFORMATION request retrieves information about the indicated USB port and the device that is attached to the port, if there is one.Client drivers must send this IOCTL at an IRQL of PASSIVE_LEVEL.IOCTL_USB_GET_NODE_CONNECTION_INFORMATION is a user-mode I/O control request. This request targets the USB hub device (GUID_DEVINTERFACE_USB_HUB). Do not send this request to the root hub.
+old-location: buses\ioctl_usb_get_node_connection_information.htm
+old-project: usbref
+ms.assetid: abbd1f03-cf9e-449b-b261-2a751997fed0
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: buses.ioctl_usb_get_node_connection_information, IOCTL_USB_GET_NODE_CONNECTION_INFORMATION control code [Buses], IOCTL_USB_GET_NODE_CONNECTION_INFORMATION, usbioctl/IOCTL_USB_GET_NODE_CONNECTION_INFORMATION, usbirp_b71c24bb-6e3b-468f-851d-a934a764fbe1.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: usbioctl.h
+req.include-header: Usbioctl.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Usbioctl.h
+apiname:
+-	IOCTL_USB_GET_NODE_CONNECTION_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: USB_HUB_TYPE
+req.product: Windows 10 or later.
 ---
 
 # IOCTL_USB_GET_NODE_CONNECTION_INFORMATION IOCTL

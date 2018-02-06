@@ -1,42 +1,47 @@
 ---
-UID : NE:ucmtypes._UCM_CHARGING_STATE
-title : "_UCM_CHARGING_STATE"
-author : windows-driver-content
-description : Defines the charging state of a Type-C connector.
-old-location : buses\ucm_charging_state.htm
-old-project : usbref
-ms.assetid : DDC3532A-0084-4C56-B540-C638AB7F7080
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : UcmChargingStateNominalCharging, UcmChargingStateTrickleCharging, UcmChargingStateInvalid, UcmChargingStateSlowCharging, ucmtypes/UcmChargingStateInvalid, ucmtypes/UcmChargingStateNotCharging, ucmtypes/UcmChargingStateNominalCharging, ucmtypes/UcmChargingStateSlowCharging, buses.ucm_charging_state, ucmtypes/ UcmChargingStateTrickleCharging, UcmChargingStateNotCharging, _UCM_CHARGING_STATE, UCM_CHARGING_STATE enumeration [Buses], ucmtypes/UCM_CHARGING_STATE, *PUCM_CHARGING_STATE, UCM_CHARGING_STATE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : ucmtypes.h
-req.include-header : Ucmcx.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 1.15
-req.umdf-ver : 2.15
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUCM_CHARGING_STATE, UCM_CHARGING_STATE"
-req.product : Windows 10 or later.
+UID: NE:ucmtypes._UCM_CHARGING_STATE
+title: "_UCM_CHARGING_STATE"
+author: windows-driver-content
+description: Defines the charging state of a Type-C connector.
+old-location: buses\ucm_charging_state.htm
+old-project: usbref
+ms.assetid: DDC3532A-0084-4C56-B540-C638AB7F7080
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: UcmChargingStateNominalCharging, UcmChargingStateTrickleCharging, UcmChargingStateInvalid, UcmChargingStateSlowCharging, ucmtypes/UcmChargingStateInvalid, ucmtypes/UcmChargingStateNotCharging, ucmtypes/UcmChargingStateNominalCharging, ucmtypes/UcmChargingStateSlowCharging, buses.ucm_charging_state, ucmtypes/ UcmChargingStateTrickleCharging, UcmChargingStateNotCharging, _UCM_CHARGING_STATE, UCM_CHARGING_STATE enumeration [Buses], ucmtypes/UCM_CHARGING_STATE, *PUCM_CHARGING_STATE, UCM_CHARGING_STATE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: ucmtypes.h
+req.include-header: Ucmcx.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 1.15
+req.umdf-ver: 2.15
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ucmtypes.h
+apiname:
+-	UCM_CHARGING_STATE
+product: Windows
+targetos: Windows
+req.typenames: "*PUCM_CHARGING_STATE, UCM_CHARGING_STATE"
+req.product: Windows 10 or later.
 ---
 
 # _UCM_CHARGING_STATE Enumeration
@@ -57,31 +62,31 @@ typedef enum _UCM_CHARGING_STATE {
 ## Constants
 
 <table>
-
-<tr>
-<td>UcmChargingStateInvalid</td>
-<td>Indicates the charging state is invalid.</td>
-</tr>
-
-<tr>
-<td>UcmChargingStateNominalCharging</td>
-<td>Indicates the port is drawing a nominal charge.</td>
-</tr>
-
-<tr>
-<td>UcmChargingStateNotCharging</td>
-<td>Indicates the port is not drawing a charge.</td>
-</tr>
-
-<tr>
-<td>UcmChargingStateSlowCharging</td>
-<td>Indicates the port is drawing a slow charge.</td>
-</tr>
-
-<tr>
-<td>UcmChargingStateTrickleCharging</td>
-<td>Indicates the port is drawing a trickle charge.</td>
-</tr>
+            
+                <tr>
+                    <td>UcmChargingStateInvalid</td>
+                    <td>Indicates the charging state is invalid.</td>
+                </tr>
+            
+                <tr>
+                    <td>UcmChargingStateNominalCharging</td>
+                    <td>Indicates the port is drawing a nominal charge.</td>
+                </tr>
+            
+                <tr>
+                    <td>UcmChargingStateNotCharging</td>
+                    <td>Indicates the port is not drawing a charge.</td>
+                </tr>
+            
+                <tr>
+                    <td>UcmChargingStateSlowCharging</td>
+                    <td>Indicates the port is drawing a slow charge.</td>
+                </tr>
+            
+                <tr>
+                    <td>UcmChargingStateTrickleCharging</td>
+                    <td>Indicates the port is drawing a trickle charge.</td>
+                </tr>
 </table>
 
 
@@ -93,9 +98,9 @@ typedef enum _UCM_CHARGING_STATE {
 | **Minimum UMDF version** | 2.15 |
 | **Header** | ucmtypes.h (include Ucmcx.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\ucmmanager\nf-ucmmanager-ucmconnectortypecattach.md">UcmConnectorTypeCAttach</a>
+        <a href="..\ucmmanager\nf-ucmmanager-ucmconnectortypecattach.md">UcmConnectorTypeCAttach</a>
 
 <a href="..\ucmmanager\nf-ucmmanager-ucmconnectorpdconnectionstatechanged.md">UcmConnectorPdConnectionStateChanged</a>
 

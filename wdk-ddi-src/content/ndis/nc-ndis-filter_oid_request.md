@@ -1,41 +1,46 @@
 ---
-UID : NC:ndis.FILTER_OID_REQUEST
-title : FILTER_OID_REQUEST
-author : windows-driver-content
-description : NDIS calls a filter driver's FilterOidRequest function to process an OID request that is associated with the specified filter module.Note  You must declare the function by using the FILTER_OID_REQUEST type.
-old-location : netvista\filteroidrequest.htm
-old-project : netvista
-ms.assetid : 238bfa21-a971-4fe4-a774-6ba834efc3c5
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.filteroidrequest, FilterOidRequest callback function [Network Drivers Starting with Windows Vista], FilterOidRequest, FILTER_OID_REQUEST, FILTER_OID_REQUEST, ndis/FilterOidRequest, ndis_request_ref_51917752-44c8-4065-a26c-fc466de932bf.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
+UID: NC:ndis.FILTER_OID_REQUEST
+title: FILTER_OID_REQUEST
+author: windows-driver-content
+description: NDIS calls a filter driver's FilterOidRequest function to process an OID request that is associated with the specified filter module.Note  You must declare the function by using the FILTER_OID_REQUEST type.
+old-location: netvista\filteroidrequest.htm
+old-project: netvista
+ms.assetid: 238bfa21-a971-4fe4-a774-6ba834efc3c5
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.filteroidrequest, FilterOidRequest callback function [Network Drivers Starting with Windows Vista], FilterOidRequest, FILTER_OID_REQUEST, FILTER_OID_REQUEST, ndis/FilterOidRequest, ndis_request_ref_51917752-44c8-4065-a26c-fc466de932bf.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ndis.h
+apiname:
+-	FilterOidRequest
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 

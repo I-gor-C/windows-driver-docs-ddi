@@ -1,41 +1,46 @@
 ---
-UID : NC:netdma.DMA_CHANNEL_FREE_HANDLER
-title : DMA_CHANNEL_FREE_HANDLER
-author : windows-driver-content
-description : The ProviderFreeDmaChannel function frees a DMA channel that the ProviderAllocateDmaChannel function previously allocated.
-old-location : netvista\providerfreedmachannel.htm
-old-project : netvista
-ms.assetid : 5bbe432d-f236-46ec-8e78-788bd676b852
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.providerfreedmachannel, ProviderFreeDmaChannel callback function [Network Drivers Starting with Windows Vista], ProviderFreeDmaChannel, DMA_CHANNEL_FREE_HANDLER, DMA_CHANNEL_FREE_HANDLER, netdma/ProviderFreeDmaChannel, netdma_ref_d81eae9f-e306-4ac7-a4ce-3e4831b45c39.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : netdma.h
-req.include-header : Netdma.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported for NetDMA 1.0 drivers in Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : MIRACAST_DRIVER_INTERFACE, *PMIRACAST_DRIVER_INTERFACE
+UID: NC:netdma.DMA_CHANNEL_FREE_HANDLER
+title: DMA_CHANNEL_FREE_HANDLER
+author: windows-driver-content
+description: The ProviderFreeDmaChannel function frees a DMA channel that the ProviderAllocateDmaChannel function previously allocated.
+old-location: netvista\providerfreedmachannel.htm
+old-project: netvista
+ms.assetid: 5bbe432d-f236-46ec-8e78-788bd676b852
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.providerfreedmachannel, ProviderFreeDmaChannel callback function [Network Drivers Starting with Windows Vista], ProviderFreeDmaChannel, DMA_CHANNEL_FREE_HANDLER, DMA_CHANNEL_FREE_HANDLER, netdma/ProviderFreeDmaChannel, netdma_ref_d81eae9f-e306-4ac7-a4ce-3e4831b45c39.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: netdma.h
+req.include-header: Netdma.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported for NetDMA 1.0 drivers in Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	netdma.h
+apiname:
+-	ProviderFreeDmaChannel
+product: Windows
+targetos: Windows
+req.typenames: MIRACAST_DRIVER_INTERFACE, *PMIRACAST_DRIVER_INTERFACE
 ---
 
 

@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfiotarget.WdfIoTargetWdmGetTargetDeviceObject
-title : WdfIoTargetWdmGetTargetDeviceObject function
-author : windows-driver-content
-description : The WdfIoTargetWdmGetTargetDeviceObject method returns a pointer to the Windows Driver Model (WDM) device object that is associated with a specified local or remote I/O target.
-old-location : wdf\wdfiotargetwdmgettargetdeviceobject.htm
-old-project : wdf
-ms.assetid : 199c2fd6-ecff-4b72-b55d-086687989485
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.wdfiotargetwdmgettargetdeviceobject, WdfIoTargetWdmGetTargetDeviceObject, WdfIoTargetWdmGetTargetDeviceObject method, wdfiotarget/WdfIoTargetWdmGetTargetDeviceObject, kmdf.wdfiotargetwdmgettargetdeviceobject, DFIOTargetRef_82d5005b-ced0-4ae5-8a73-8714d2895ead.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfiotarget.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDF_IO_TARGET_STATE, WDF_IO_TARGET_STATE"
-req.product : Windows 10 or later.
+UID: NF:wdfiotarget.WdfIoTargetWdmGetTargetDeviceObject
+title: WdfIoTargetWdmGetTargetDeviceObject function
+author: windows-driver-content
+description: The WdfIoTargetWdmGetTargetDeviceObject method returns a pointer to the Windows Driver Model (WDM) device object that is associated with a specified local or remote I/O target.
+old-location: wdf\wdfiotargetwdmgettargetdeviceobject.htm
+old-project: wdf
+ms.assetid: 199c2fd6-ecff-4b72-b55d-086687989485
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.wdfiotargetwdmgettargetdeviceobject, WdfIoTargetWdmGetTargetDeviceObject, WdfIoTargetWdmGetTargetDeviceObject method, wdfiotarget/WdfIoTargetWdmGetTargetDeviceObject, kmdf.wdfiotargetwdmgettargetdeviceobject, DFIOTargetRef_82d5005b-ced0-4ae5-8a73-8714d2895ead.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfiotarget.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfIoTargetWdmGetTargetDeviceObject
+product: Windows
+targetos: Windows
+req.typenames: "*PWDF_IO_TARGET_STATE, WDF_IO_TARGET_STATE"
+req.product: Windows 10 or later.
 ---
 
 

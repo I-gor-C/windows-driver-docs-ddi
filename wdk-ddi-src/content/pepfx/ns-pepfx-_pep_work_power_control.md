@@ -1,41 +1,46 @@
 ---
-UID : NS:pepfx._PEP_WORK_POWER_CONTROL
-title : "_PEP_WORK_POWER_CONTROL"
-author : windows-driver-content
-description : The PEP_WORK_POWER_CONTROL structure contains the parameters for a power control request that the platform extension plug-in (PEP) sends directly to a processor driver.
-old-location : kernel\pep_work_power_control.htm
-old-project : kernel
-ms.assetid : 84258422-A2AE-449F-97C8-41336FEA5D8B
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : pepfx/PEP_WORK_POWER_CONTROL, PPEP_WORK_POWER_CONTROL structure pointer [Kernel-Mode Driver Architecture], PPEP_WORK_POWER_CONTROL, kernel.pep_work_power_control, PEP_WORK_POWER_CONTROL structure [Kernel-Mode Driver Architecture], _PEP_WORK_POWER_CONTROL, PEP_WORK_POWER_CONTROL, *PPEP_WORK_POWER_CONTROL, pepfx/PPEP_WORK_POWER_CONTROL
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : pepfx.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with Windows 10.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PEP_WORK_POWER_CONTROL, *PPEP_WORK_POWER_CONTROL
+UID: NS:pepfx._PEP_WORK_POWER_CONTROL
+title: "_PEP_WORK_POWER_CONTROL"
+author: windows-driver-content
+description: The PEP_WORK_POWER_CONTROL structure contains the parameters for a power control request that the platform extension plug-in (PEP) sends directly to a processor driver.
+old-location: kernel\pep_work_power_control.htm
+old-project: kernel
+ms.assetid: 84258422-A2AE-449F-97C8-41336FEA5D8B
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: pepfx/PEP_WORK_POWER_CONTROL, PPEP_WORK_POWER_CONTROL structure pointer [Kernel-Mode Driver Architecture], PPEP_WORK_POWER_CONTROL, kernel.pep_work_power_control, PEP_WORK_POWER_CONTROL structure [Kernel-Mode Driver Architecture], _PEP_WORK_POWER_CONTROL, PEP_WORK_POWER_CONTROL, *PPEP_WORK_POWER_CONTROL, pepfx/PPEP_WORK_POWER_CONTROL
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: pepfx.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows 10.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	pepfx.h
+apiname:
+-	PEP_WORK_POWER_CONTROL
+product: Windows
+targetos: Windows
+req.typenames: PEP_WORK_POWER_CONTROL, *PPEP_WORK_POWER_CONTROL
 ---
 
 # _PEP_WORK_POWER_CONTROL structure

@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.PoCreatePowerRequest
-title : PoCreatePowerRequest function
-author : windows-driver-content
-description : The PoCreatePowerRequest routine creates a power request object.
-old-location : kernel\pocreatepowerrequest.htm
-old-project : kernel
-ms.assetid : 67986bf8-b070-44e9-95a2-eea35100b0e7
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : PoCreatePowerRequest routine [Kernel-Mode Driver Architecture], PoCreatePowerRequest, wdm/PoCreatePowerRequest, portn_059f00e2-74ea-4c61-8fcd-6b257c084161.xml, kernel.pocreatepowerrequest
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 7.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.PoCreatePowerRequest
+title: PoCreatePowerRequest function
+author: windows-driver-content
+description: The PoCreatePowerRequest routine creates a power request object.
+old-location: kernel\pocreatepowerrequest.htm
+old-project: kernel
+ms.assetid: 67986bf8-b070-44e9-95a2-eea35100b0e7
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: PoCreatePowerRequest routine [Kernel-Mode Driver Architecture], PoCreatePowerRequest, wdm/PoCreatePowerRequest, portn_059f00e2-74ea-4c61-8fcd-6b257c084161.xml, kernel.pocreatepowerrequest
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 7.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	PoCreatePowerRequest
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

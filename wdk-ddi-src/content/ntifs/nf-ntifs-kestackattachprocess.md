@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.KeStackAttachProcess
-title : KeStackAttachProcess function
-author : windows-driver-content
-description : The KeStackAttachProcess routine attaches the current thread to the address space of the target process.
-old-location : ifsk\kestackattachprocess.htm
-old-project : ifsk
-ms.assetid : 52ac1410-8f8f-405a-9c81-a534c3cfbf51
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KeStackAttachProcess, keref_de4fc228-753f-4077-8372-e5330c96d317.xml, KeStackAttachProcess routine [Installable File System Drivers], ntifs/KeStackAttachProcess, ifsk.kestackattachprocess
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h, Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : This routine is available on Microsoft Windows 2000 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "< DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.KeStackAttachProcess
+title: KeStackAttachProcess function
+author: windows-driver-content
+description: The KeStackAttachProcess routine attaches the current thread to the address space of the target process.
+old-location: ifsk\kestackattachprocess.htm
+old-project: ifsk
+ms.assetid: 52ac1410-8f8f-405a-9c81-a534c3cfbf51
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KeStackAttachProcess, keref_de4fc228-753f-4077-8372-e5330c96d317.xml, KeStackAttachProcess routine [Installable File System Drivers], ntifs/KeStackAttachProcess, ifsk.kestackattachprocess
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h, Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: This routine is available on Microsoft Windows 2000 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "< DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	KeStackAttachProcess
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

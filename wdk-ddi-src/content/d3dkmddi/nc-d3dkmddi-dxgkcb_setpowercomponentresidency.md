@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dkmddi.DXGKCB_SETPOWERCOMPONENTRESIDENCY
-title : DXGKCB_SETPOWERCOMPONENTRESIDENCY
-author : windows-driver-content
-description : Called by the display miniport driver to set the expected residency for a power component of type DXGK_POWER_COMPONENT_OTHER.
-old-location : display\dxgkcbsetpowercomponentresidency.htm
-old-project : display
-ms.assetid : 9D567380-2E77-4A63-8674-E19A13C7B8BC
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkcbsetpowercomponentresidency, DxgkCbSetPowerComponentResidency callback function [Display Devices], DxgkCbSetPowerComponentResidency, DXGKCB_SETPOWERCOMPONENTRESIDENCY, DXGKCB_SETPOWERCOMPONENTRESIDENCY, d3dkmddi/DxgkCbSetPowerComponentResidency
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
+UID: NC:d3dkmddi.DXGKCB_SETPOWERCOMPONENTRESIDENCY
+title: DXGKCB_SETPOWERCOMPONENTRESIDENCY
+author: windows-driver-content
+description: Called by the display miniport driver to set the expected residency for a power component of type DXGK_POWER_COMPONENT_OTHER.
+old-location: display\dxgkcbsetpowercomponentresidency.htm
+old-project: display
+ms.assetid: 9D567380-2E77-4A63-8674-E19A13C7B8BC
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkcbsetpowercomponentresidency, DxgkCbSetPowerComponentResidency callback function [Display Devices], DxgkCbSetPowerComponentResidency, DXGKCB_SETPOWERCOMPONENTRESIDENCY, DXGKCB_SETPOWERCOMPONENTRESIDENCY, d3dkmddi/DxgkCbSetPowerComponentResidency
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	D3dkmddi.h
+apiname:
+-	DxgkCbSetPowerComponentResidency
+product: Windows
+targetos: Windows
+req.typenames: DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NS:wiadef._WIA_BARCODES
-title : "_WIA_BARCODES"
-author : windows-driver-content
-description : The WIA_BARCODES structure stores header information for the barcode metadata report of one scan job (one call to IWiaMiniDrv::drvAcquireItemData).
-old-location : image\wia_barcodes.htm
-old-project : image
-ms.assetid : 2B89FF49-4376-49A7-B7CC-1C67D89C7E7A
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : WIA_BARCODES, image.wia_barcodes, WIA_BARCODES structure [Imaging Devices], wiadef/WIA_BARCODES, _WIA_BARCODES
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wiadef.h
-req.include-header : Wiadef.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WIA_BARCODES
-req.product : Windows 10 or later.
+UID: NS:wiadef._WIA_BARCODES
+title: "_WIA_BARCODES"
+author: windows-driver-content
+description: The WIA_BARCODES structure stores header information for the barcode metadata report of one scan job (one call to IWiaMiniDrv::drvAcquireItemData).
+old-location: image\wia_barcodes.htm
+old-project: image
+ms.assetid: 2B89FF49-4376-49A7-B7CC-1C67D89C7E7A
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: WIA_BARCODES, image.wia_barcodes, WIA_BARCODES structure [Imaging Devices], wiadef/WIA_BARCODES, _WIA_BARCODES
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wiadef.h
+req.include-header: Wiadef.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wiadef.h
+apiname:
+-	WIA_BARCODES
+product: Windows
+targetos: Windows
+req.typenames: WIA_BARCODES
+req.product: Windows 10 or later.
 ---
 
 # _WIA_BARCODES structure

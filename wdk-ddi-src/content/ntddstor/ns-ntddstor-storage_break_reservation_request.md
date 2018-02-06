@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddstor.STORAGE_BREAK_RESERVATION_REQUEST
-title : STORAGE_BREAK_RESERVATION_REQUEST
-author : windows-driver-content
-description : The STORAGE_BREAK_RESERVATION_REQUEST structure is used in conjunction with the IOCTL_STORAGE_BREAK_RESERVATION request to free a disk resource that was previously reserved.
-old-location : storage\storage_break_reservation_request.htm
-old-project : storage
-ms.assetid : 06de4432-9437-4275-8d1e-606f209e1468
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : "*PSTORAGE_BREAK_RESERVATION_REQUEST, STORAGE_BREAK_RESERVATION_REQUEST, STORAGE_BREAK_RESERVATION_REQUEST structure [Storage Devices], PSTORAGE_BREAK_RESERVATION_REQUEST structure pointer [Storage Devices], ntddstor/STORAGE_BREAK_RESERVATION_REQUEST, storage.storage_break_reservation_request, ntddstor/PSTORAGE_BREAK_RESERVATION_REQUEST, PSTORAGE_BREAK_RESERVATION_REQUEST, structs-general_f902ea12-3b3d-4eb7-9ac2-9a5abfabe13c.xml"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddstor.h
-req.include-header : Ntddstor.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSTORAGE_BREAK_RESERVATION_REQUEST, STORAGE_BREAK_RESERVATION_REQUEST"
+UID: NS:ntddstor.STORAGE_BREAK_RESERVATION_REQUEST
+title: STORAGE_BREAK_RESERVATION_REQUEST
+author: windows-driver-content
+description: The STORAGE_BREAK_RESERVATION_REQUEST structure is used in conjunction with the IOCTL_STORAGE_BREAK_RESERVATION request to free a disk resource that was previously reserved.
+old-location: storage\storage_break_reservation_request.htm
+old-project: storage
+ms.assetid: 06de4432-9437-4275-8d1e-606f209e1468
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: "*PSTORAGE_BREAK_RESERVATION_REQUEST, STORAGE_BREAK_RESERVATION_REQUEST, STORAGE_BREAK_RESERVATION_REQUEST structure [Storage Devices], PSTORAGE_BREAK_RESERVATION_REQUEST structure pointer [Storage Devices], ntddstor/STORAGE_BREAK_RESERVATION_REQUEST, storage.storage_break_reservation_request, ntddstor/PSTORAGE_BREAK_RESERVATION_REQUEST, PSTORAGE_BREAK_RESERVATION_REQUEST, structs-general_f902ea12-3b3d-4eb7-9ac2-9a5abfabe13c.xml"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddstor.h
+req.include-header: Ntddstor.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddstor.h
+apiname:
+-	STORAGE_BREAK_RESERVATION_REQUEST
+product: Windows
+targetos: Windows
+req.typenames: "*PSTORAGE_BREAK_RESERVATION_REQUEST, STORAGE_BREAK_RESERVATION_REQUEST"
 ---
 
 # STORAGE_BREAK_RESERVATION_REQUEST structure

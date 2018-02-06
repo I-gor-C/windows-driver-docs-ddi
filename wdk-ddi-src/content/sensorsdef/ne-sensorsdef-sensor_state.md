@@ -1,42 +1,47 @@
 ---
-UID : NE:sensorsdef.SENSOR_STATE
-title : SENSOR_STATE
-author : windows-driver-content
-description : This enumeration represents the valid states of a sensor.
-old-location : sensors\sensor_state.htm
-old-project : sensors
-ms.assetid : F1E869AE-2FAF-402F-9C50-58D81E0EFF69
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : sensorsdef/SENSOR_STATE, sensorsdef/SensorState_Active, SENSOR_STATE, sensorsdef/SensorState_Error, sensorsdef/SensorState_Initializing, SensorState_Active, SensorState_Error, sensors.sensor_state, SensorState_Initializing, SensorState_Idle, SENSOR_STATE enumeration [Sensor Devices], sensorsdef/SensorState_Idle
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : sensorsdef.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8.1
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SENSOR_STATE
-req.product : Windows 10 or later.
+UID: NE:sensorsdef.SENSOR_STATE
+title: SENSOR_STATE
+author: windows-driver-content
+description: This enumeration represents the valid states of a sensor.
+old-location: sensors\sensor_state.htm
+old-project: sensors
+ms.assetid: F1E869AE-2FAF-402F-9C50-58D81E0EFF69
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: sensorsdef/SENSOR_STATE, sensorsdef/SensorState_Active, SENSOR_STATE, sensorsdef/SensorState_Error, sensorsdef/SensorState_Initializing, SensorState_Active, SensorState_Error, sensors.sensor_state, SensorState_Initializing, SensorState_Idle, SENSOR_STATE enumeration [Sensor Devices], sensorsdef/SensorState_Idle
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: sensorsdef.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8.1
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Sensorsdef.h
+apiname:
+-	SENSOR_STATE
+product: Windows
+targetos: Windows
+req.typenames: SENSOR_STATE
+req.product: Windows 10 or later.
 ---
 
 # SENSOR_STATE Enumeration
@@ -55,26 +60,26 @@ typedef enum _SENSOR_STATE {
 ## Constants
 
 <table>
-
-<tr>
-<td>SensorState_Active</td>
-<td>Indicates that the sensor is active.</td>
-</tr>
-
-<tr>
-<td>SensorState_Error</td>
-<td>Indicates that the sensor is in an error state.</td>
-</tr>
-
-<tr>
-<td>SensorState_Idle</td>
-<td>Indicates that the sensor is idle</td>
-</tr>
-
-<tr>
-<td>SensorState_Initializing</td>
-<td>Indicates that the sensor is initializing.</td>
-</tr>
+            
+                <tr>
+                    <td>SensorState_Active</td>
+                    <td>Indicates that the sensor is active.</td>
+                </tr>
+            
+                <tr>
+                    <td>SensorState_Error</td>
+                    <td>Indicates that the sensor is in an error state.</td>
+                </tr>
+            
+                <tr>
+                    <td>SensorState_Idle</td>
+                    <td>Indicates that the sensor is idle</td>
+                </tr>
+            
+                <tr>
+                    <td>SensorState_Initializing</td>
+                    <td>Indicates that the sensor is initializing.</td>
+                </tr>
 </table>
 
 

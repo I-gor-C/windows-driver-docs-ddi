@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.IoCsqInitializeEx
-title : IoCsqInitializeEx function
-author : windows-driver-content
-description : The IoCsqInitializeEx routine initializes the dispatch table for a cancel-safe IRP queue.
-old-location : kernel\iocsqinitializeex.htm
-old-project : kernel
-ms.assetid : 9f6501c2-a708-4583-a821-e1b8264ff0af
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.iocsqinitializeex, wdm/IoCsqInitializeEx, IoCsqInitializeEx, k104_68bf2330-ba47-4896-8052-41afee2d887e.xml, IoCsqInitializeEx routine [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Server 2003 and later versions of the Windows operating system. The routine is also available in the Csq.lib library that ships with the Windows Driver Kit (WDK) and the Driver Development Kit (DDK) for Windows Server 2003. Drivers that must also work on Windows XP, Windows 2000, and Windows 98/Me can instead link to Csq.lib to use the routine.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.IoCsqInitializeEx
+title: IoCsqInitializeEx function
+author: windows-driver-content
+description: The IoCsqInitializeEx routine initializes the dispatch table for a cancel-safe IRP queue.
+old-location: kernel\iocsqinitializeex.htm
+old-project: kernel
+ms.assetid: 9f6501c2-a708-4583-a821-e1b8264ff0af
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.iocsqinitializeex, wdm/IoCsqInitializeEx, IoCsqInitializeEx, k104_68bf2330-ba47-4896-8052-41afee2d887e.xml, IoCsqInitializeEx routine [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Server 2003 and later versions of the Windows operating system. The routine is also available in the Csq.lib library that ships with the Windows Driver Kit (WDK) and the Driver Development Kit (DDK) for Windows Server 2003. Drivers that must also work on Windows XP, Windows 2000, and Windows 98/Me can instead link to Csq.lib to use the routine.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoCsqInitializeEx
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:bthxddi._BTHX_CAPABILITIES
-title : "_BTHX_CAPABILITIES"
-author : windows-driver-content
-description : The BTHX_CAPABILITIES structure describes the capabilities of the Bluetooth Extensible Transport Driver.
-old-location : bltooth\bthx_capabilities.htm
-old-project : bltooth
-ms.assetid : BEC06C82-E103-4255-ACDD-9FB28E8E2DE5
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : BTHX_CAPABILITIES, PBTHX_CAPABILITIES structure pointer [Bluetooth Devices], BTHX_CAPABILITIES structure [Bluetooth Devices], _BTHX_CAPABILITIES, *PBTHX_CAPABILITIES, PBTHX_CAPABILITIES, bltooth.bthx_capabilities, bthxddi/BTHX_CAPABILITIES, bthxddi/PBTHX_CAPABILITIES
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : bthxddi.h
-req.include-header : BthXDDI.h
-req.target-type : Windows
-req.target-min-winverclnt : Versions:\_Supported starting with  Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PBTHX_CAPABILITIES, BTHX_CAPABILITIES"
+UID: NS:bthxddi._BTHX_CAPABILITIES
+title: "_BTHX_CAPABILITIES"
+author: windows-driver-content
+description: The BTHX_CAPABILITIES structure describes the capabilities of the Bluetooth Extensible Transport Driver.
+old-location: bltooth\bthx_capabilities.htm
+old-project: bltooth
+ms.assetid: BEC06C82-E103-4255-ACDD-9FB28E8E2DE5
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: BTHX_CAPABILITIES, PBTHX_CAPABILITIES structure pointer [Bluetooth Devices], BTHX_CAPABILITIES structure [Bluetooth Devices], _BTHX_CAPABILITIES, *PBTHX_CAPABILITIES, PBTHX_CAPABILITIES, bltooth.bthx_capabilities, bthxddi/BTHX_CAPABILITIES, bthxddi/PBTHX_CAPABILITIES
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: bthxddi.h
+req.include-header: BthXDDI.h
+req.target-type: Windows
+req.target-min-winverclnt: Versions:\_Supported starting with  Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	BthXDDI.h
+apiname:
+-	BTHX_CAPABILITIES
+product: Windows
+targetos: Windows
+req.typenames: "*PBTHX_CAPABILITIES, BTHX_CAPABILITIES"
 ---
 
 # _BTHX_CAPABILITIES structure

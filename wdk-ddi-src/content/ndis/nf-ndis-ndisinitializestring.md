@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisInitializeString
-title : NdisInitializeString function
-author : windows-driver-content
-description : The NdisInitializeString function allocates storage for and initializes a counted string in the system-default character set.
-old-location : netvista\ndisinitializestring.htm
-old-project : netvista
-ms.assetid : c6945d7d-5152-4968-a628-7850b8083a82
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : ndis_string_ref_886eff5e-5f5a-49f2-91d3-e87128cf0542.xml, NdisInitializeString, NdisInitializeString function [Network Drivers Starting with Windows Vista], netvista.ndisinitializestring, ndis/NdisInitializeString
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported for existing drivers in  NDIS 6.0 and later, but new drivers should use RtlInitUnicodeString  or RTL_CONSTANT_STRING or   DECLARE_CONST_UNICODE_STRING (see ntdef.h) instead.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_Miscellaneous_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisInitializeString
+title: NdisInitializeString function
+author: windows-driver-content
+description: The NdisInitializeString function allocates storage for and initializes a counted string in the system-default character set.
+old-location: netvista\ndisinitializestring.htm
+old-project: netvista
+ms.assetid: c6945d7d-5152-4968-a628-7850b8083a82
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: ndis_string_ref_886eff5e-5f5a-49f2-91d3-e87128cf0542.xml, NdisInitializeString, NdisInitializeString function [Network Drivers Starting with Windows Vista], netvista.ndisinitializestring, ndis/NdisInitializeString
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported for existing drivers in  NDIS 6.0 and later, but new drivers should use RtlInitUnicodeString  or RTL_CONSTANT_STRING or   DECLARE_CONST_UNICODE_STRING (see ntdef.h) instead.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_Miscellaneous_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisInitializeString
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

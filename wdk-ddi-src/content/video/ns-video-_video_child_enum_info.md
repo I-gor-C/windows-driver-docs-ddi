@@ -1,42 +1,47 @@
 ---
-UID : NS:video._VIDEO_CHILD_ENUM_INFO
-title : "_VIDEO_CHILD_ENUM_INFO"
-author : windows-driver-content
-description : Describes the child device to be enumerated by the miniport driver. All members are set by the video port driver.
-old-location : display\video_child_enum_info.htm
-old-project : display
-ms.assetid : ce3b17e9-bcbd-46a4-b379-472abfdb4c2a
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : PVIDEO_CHILD_ENUM_INFO, *PVIDEO_CHILD_ENUM_INFO, display.video_child_enum_info, VIDEO_CHILD_ENUM_INFO structure [Display Devices], VIDEO_CHILD_ENUM_INFO, Video_Structs_13176852-07dc-4b7e-9e3a-c9ed9c2a3879.xml, video/VIDEO_CHILD_ENUM_INFO, PVIDEO_CHILD_ENUM_INFO structure pointer [Display Devices], _VIDEO_CHILD_ENUM_INFO, video/PVIDEO_CHILD_ENUM_INFO
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PVIDEO_CHILD_ENUM_INFO, VIDEO_CHILD_ENUM_INFO"
-req.product : Windows 10 or later.
+UID: NS:video._VIDEO_CHILD_ENUM_INFO
+title: "_VIDEO_CHILD_ENUM_INFO"
+author: windows-driver-content
+description: Describes the child device to be enumerated by the miniport driver. All members are set by the video port driver.
+old-location: display\video_child_enum_info.htm
+old-project: display
+ms.assetid: ce3b17e9-bcbd-46a4-b379-472abfdb4c2a
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: PVIDEO_CHILD_ENUM_INFO, *PVIDEO_CHILD_ENUM_INFO, display.video_child_enum_info, VIDEO_CHILD_ENUM_INFO structure [Display Devices], VIDEO_CHILD_ENUM_INFO, Video_Structs_13176852-07dc-4b7e-9e3a-c9ed9c2a3879.xml, video/VIDEO_CHILD_ENUM_INFO, PVIDEO_CHILD_ENUM_INFO structure pointer [Display Devices], _VIDEO_CHILD_ENUM_INFO, video/PVIDEO_CHILD_ENUM_INFO
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	video.h
+apiname:
+-	VIDEO_CHILD_ENUM_INFO
+product: Windows
+targetos: Windows
+req.typenames: "*PVIDEO_CHILD_ENUM_INFO, VIDEO_CHILD_ENUM_INFO"
+req.product: Windows 10 or later.
 ---
 
 # _VIDEO_CHILD_ENUM_INFO structure

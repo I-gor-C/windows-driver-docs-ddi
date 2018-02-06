@@ -1,41 +1,46 @@
 ---
-UID : NC:ntddk.PSHED_PI_FINALIZE_ERROR_RECORD
-title : PSHED_PI_FINALIZE_ERROR_RECORD
-author : windows-driver-content
-description : A PSHED plug-in's FinalizeErrorRecord callback function adds supplementary error record sections to an error record that more fully describe the error condition.
-old-location : whea\finalizeerrorrecord.htm
-old-project : whea
-ms.assetid : 68461243-ddf4-4883-84d2-4c105f1634b2
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : whea.finalizeerrorrecord, FinalizeErrorRecord callback function [WHEA Drivers and Applications], FinalizeErrorRecord, PSHED_PI_FINALIZE_ERROR_RECORD, PSHED_PI_FINALIZE_ERROR_RECORD, ntddk/FinalizeErrorRecord, whearef_fac1a23e-6b56-4b04-8930-e5f12f5c84a8.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= HIGH_LEVEL (See Remarks section)"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PFILTER_INITIALIZATION_DATA, FILTER_INITIALIZATION_DATA"
+UID: NC:ntddk.PSHED_PI_FINALIZE_ERROR_RECORD
+title: PSHED_PI_FINALIZE_ERROR_RECORD
+author: windows-driver-content
+description: A PSHED plug-in's FinalizeErrorRecord callback function adds supplementary error record sections to an error record that more fully describe the error condition.
+old-location: whea\finalizeerrorrecord.htm
+old-project: whea
+ms.assetid: 68461243-ddf4-4883-84d2-4c105f1634b2
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: whea.finalizeerrorrecord, FinalizeErrorRecord callback function [WHEA Drivers and Applications], FinalizeErrorRecord, PSHED_PI_FINALIZE_ERROR_RECORD, PSHED_PI_FINALIZE_ERROR_RECORD, ntddk/FinalizeErrorRecord, whearef_fac1a23e-6b56-4b04-8930-e5f12f5c84a8.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= HIGH_LEVEL (See Remarks section)"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ntddk.h
+apiname:
+-	FinalizeErrorRecord
+product: Windows
+targetos: Windows
+req.typenames: "*PFILTER_INITIALIZATION_DATA, FILTER_INITIALIZATION_DATA"
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddndis._NDIS_LINK_STATE
-title : "_NDIS_LINK_STATE"
-author : windows-driver-content
-description : The NDIS_LINK_STATE structure specifies the current link state of a miniport adapter.
-old-location : netvista\ndis_link_state.htm
-old-project : netvista
-ms.assetid : 01d74e69-55fe-4e2e-94ab-7676f9e33403
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NDIS_LINK_STATE structure [Network Drivers Starting with Windows Vista], *PNDIS_LINK_STATE, _NDIS_LINK_STATE, NDIS_LINK_STATE, ntddndis/PNDIS_LINK_STATE, PNDIS_LINK_STATE, ntddndis/NDIS_LINK_STATE, PNDIS_LINK_STATE structure pointer [Network Drivers Starting with Windows Vista], netvista.ndis_link_state
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_LINK_STATE, *PNDIS_LINK_STATE
+UID: NS:ntddndis._NDIS_LINK_STATE
+title: "_NDIS_LINK_STATE"
+author: windows-driver-content
+description: The NDIS_LINK_STATE structure specifies the current link state of a miniport adapter.
+old-location: netvista\ndis_link_state.htm
+old-project: netvista
+ms.assetid: 01d74e69-55fe-4e2e-94ab-7676f9e33403
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NDIS_LINK_STATE structure [Network Drivers Starting with Windows Vista], *PNDIS_LINK_STATE, _NDIS_LINK_STATE, NDIS_LINK_STATE, ntddndis/PNDIS_LINK_STATE, PNDIS_LINK_STATE, ntddndis/NDIS_LINK_STATE, PNDIS_LINK_STATE structure pointer [Network Drivers Starting with Windows Vista], netvista.ndis_link_state
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddndis.h
+apiname:
+-	NDIS_LINK_STATE
+product: Windows
+targetos: Windows
+req.typenames: NDIS_LINK_STATE, *PNDIS_LINK_STATE
 ---
 
 # _NDIS_LINK_STATE structure

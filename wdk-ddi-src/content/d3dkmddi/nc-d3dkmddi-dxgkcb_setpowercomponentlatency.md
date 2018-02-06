@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dkmddi.DXGKCB_SETPOWERCOMPONENTLATENCY
-title : DXGKCB_SETPOWERCOMPONENTLATENCY
-author : windows-driver-content
-description : Called by the display miniport driver to set the latency tolerance for a power component of type DXGK_POWER_COMPONENT_OTHER.
-old-location : display\dxgkcbsetpowercomponentlatency.htm
-old-project : display
-ms.assetid : 8FF86746-15A2-4BDF-98AF-23B5F9960DB9
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkcbsetpowercomponentlatency, DxgkCbSetPowerComponentLatency callback function [Display Devices], DxgkCbSetPowerComponentLatency, DXGKCB_SETPOWERCOMPONENTLATENCY, DXGKCB_SETPOWERCOMPONENTLATENCY, d3dkmddi/DxgkCbSetPowerComponentLatency
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
+UID: NC:d3dkmddi.DXGKCB_SETPOWERCOMPONENTLATENCY
+title: DXGKCB_SETPOWERCOMPONENTLATENCY
+author: windows-driver-content
+description: Called by the display miniport driver to set the latency tolerance for a power component of type DXGK_POWER_COMPONENT_OTHER.
+old-location: display\dxgkcbsetpowercomponentlatency.htm
+old-project: display
+ms.assetid: 8FF86746-15A2-4BDF-98AF-23B5F9960DB9
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkcbsetpowercomponentlatency, DxgkCbSetPowerComponentLatency callback function [Display Devices], DxgkCbSetPowerComponentLatency, DXGKCB_SETPOWERCOMPONENTLATENCY, DXGKCB_SETPOWERCOMPONENTLATENCY, d3dkmddi/DxgkCbSetPowerComponentLatency
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	D3dkmddi.h
+apiname:
+-	DxgkCbSetPowerComponentLatency
+product: Windows
+targetos: Windows
+req.typenames: DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
 

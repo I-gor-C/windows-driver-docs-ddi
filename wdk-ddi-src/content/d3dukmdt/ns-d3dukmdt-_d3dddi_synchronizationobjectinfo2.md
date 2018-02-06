@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dukmdt._D3DDDI_SYNCHRONIZATIONOBJECTINFO2
-title : "_D3DDDI_SYNCHRONIZATIONOBJECTINFO2"
-author : windows-driver-content
-description : The D3DDDI_SYNCHRONIZATIONOBJECTINFO2 structure contains information about a second-generation synchronization object.
-old-location : display\d3dddi_synchronizationobjectinfo2.htm
-old-project : display
-ms.assetid : dc1c6a67-320c-41f8-91ad-cdbcde191a81
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DDDI_SYNCHRONIZATIONOBJECTINFO2 structure [Display Devices], _D3DDDI_SYNCHRONIZATIONOBJECTINFO2, D3D_other_Structs_0efa3a96-3e04-4232-bf7a-53c3f038d6ec.xml, d3dukmdt/D3DDDI_SYNCHRONIZATIONOBJECTINFO2, D3DDDI_SYNCHRONIZATIONOBJECTINFO2, display.d3dddi_synchronizationobjectinfo2
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dukmdt.h
-req.include-header : D3dumddi.h, D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : D3DDDI_SYNCHRONIZATIONOBJECTINFO2 is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDI_SYNCHRONIZATIONOBJECTINFO2
+UID: NS:d3dukmdt._D3DDDI_SYNCHRONIZATIONOBJECTINFO2
+title: "_D3DDDI_SYNCHRONIZATIONOBJECTINFO2"
+author: windows-driver-content
+description: The D3DDDI_SYNCHRONIZATIONOBJECTINFO2 structure contains information about a second-generation synchronization object.
+old-location: display\d3dddi_synchronizationobjectinfo2.htm
+old-project: display
+ms.assetid: dc1c6a67-320c-41f8-91ad-cdbcde191a81
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DDDI_SYNCHRONIZATIONOBJECTINFO2 structure [Display Devices], _D3DDDI_SYNCHRONIZATIONOBJECTINFO2, D3D_other_Structs_0efa3a96-3e04-4232-bf7a-53c3f038d6ec.xml, d3dukmdt/D3DDDI_SYNCHRONIZATIONOBJECTINFO2, D3DDDI_SYNCHRONIZATIONOBJECTINFO2, display.d3dddi_synchronizationobjectinfo2
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dukmdt.h
+req.include-header: D3dumddi.h, D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: D3DDDI_SYNCHRONIZATIONOBJECTINFO2 is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dukmdt.h
+apiname:
+-	D3DDDI_SYNCHRONIZATIONOBJECTINFO2
+product: Windows
+targetos: Windows
+req.typenames: D3DDDI_SYNCHRONIZATIONOBJECTINFO2
 ---
 
 # _D3DDDI_SYNCHRONIZATIONOBJECTINFO2 structure

@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3D10DDI_STATE_OM_DEPTHSTATE_CB
-title : PFND3D10DDI_STATE_OM_DEPTHSTATE_CB
-author : windows-driver-content
-description : The pfnStateOmDepthStateCb function causes the Microsoft Direct3D 10 runtime to refresh the output merger depth state.
-old-location : display\pfnstateomdepthstatecb.htm
-old-project : display
-ms.assetid : caa8ea5b-7167-444a-9d81-6e4ea9375dd6
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.pfnstateomdepthstatecb, pfnStateOmDepthStateCb callback function [Display Devices], pfnStateOmDepthStateCb, PFND3D10DDI_STATE_OM_DEPTHSTATE_CB, PFND3D10DDI_STATE_OM_DEPTHSTATE_CB, d3d10umddi/pfnStateOmDepthStateCb, d3d10state_functions_85bda608-2aa7-4756-9901-4f568b87ca6b.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3D10DDI_STATE_OM_DEPTHSTATE_CB
+title: PFND3D10DDI_STATE_OM_DEPTHSTATE_CB
+author: windows-driver-content
+description: The pfnStateOmDepthStateCb function causes the Microsoft Direct3D 10 runtime to refresh the output merger depth state.
+old-location: display\pfnstateomdepthstatecb.htm
+old-project: display
+ms.assetid: caa8ea5b-7167-444a-9d81-6e4ea9375dd6
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.pfnstateomdepthstatecb, pfnStateOmDepthStateCb callback function [Display Devices], pfnStateOmDepthStateCb, PFND3D10DDI_STATE_OM_DEPTHSTATE_CB, PFND3D10DDI_STATE_OM_DEPTHSTATE_CB, d3d10umddi/pfnStateOmDepthStateCb, d3d10state_functions_85bda608-2aa7-4756-9901-4f568b87ca6b.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	pfnStateOmDepthStateCb
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

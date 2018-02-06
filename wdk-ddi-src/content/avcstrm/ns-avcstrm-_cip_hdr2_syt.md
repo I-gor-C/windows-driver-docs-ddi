@@ -1,41 +1,46 @@
 ---
-UID : NS:avcstrm._CIP_HDR2_SYT
-title : "_CIP_HDR2_SYT"
-author : windows-driver-content
-description : The CIP_HDR2_SYT structure describes the second quadlet of a CIP header pair for a DV format stream.
-old-location : stream\cip_hdr2_syt.htm
-old-project : stream
-ms.assetid : e66b721f-4cc0-4d35-9e24-6d7dd4029ea4
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : CIP_HDR2_SYT, avcstrm/CIP_HDR2_SYT, _CIP_HDR2_SYT, avcsref_1ea551ca-5d40-4bc3-bc54-b736fd6a2b23.xml, *PCIP_HDR2_SYT, CIP_HDR2_SYT structure [Streaming Media Devices], PCIP_HDR2_SYT, stream.cip_hdr2_syt, PCIP_HDR2_SYT structure pointer [Streaming Media Devices], avcstrm/PCIP_HDR2_SYT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : avcstrm.h
-req.include-header : Avcstrm.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : CIP_HDR2_SYT, *PCIP_HDR2_SYT
+UID: NS:avcstrm._CIP_HDR2_SYT
+title: "_CIP_HDR2_SYT"
+author: windows-driver-content
+description: The CIP_HDR2_SYT structure describes the second quadlet of a CIP header pair for a DV format stream.
+old-location: stream\cip_hdr2_syt.htm
+old-project: stream
+ms.assetid: e66b721f-4cc0-4d35-9e24-6d7dd4029ea4
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: CIP_HDR2_SYT, avcstrm/CIP_HDR2_SYT, _CIP_HDR2_SYT, avcsref_1ea551ca-5d40-4bc3-bc54-b736fd6a2b23.xml, *PCIP_HDR2_SYT, CIP_HDR2_SYT structure [Streaming Media Devices], PCIP_HDR2_SYT, stream.cip_hdr2_syt, PCIP_HDR2_SYT structure pointer [Streaming Media Devices], avcstrm/PCIP_HDR2_SYT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: avcstrm.h
+req.include-header: Avcstrm.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	avcstrm.h
+apiname:
+-	CIP_HDR2_SYT
+product: Windows
+targetos: Windows
+req.typenames: CIP_HDR2_SYT, *PCIP_HDR2_SYT
 ---
 
 # _CIP_HDR2_SYT structure

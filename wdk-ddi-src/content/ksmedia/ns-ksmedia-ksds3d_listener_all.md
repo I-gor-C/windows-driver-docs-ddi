@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.KSDS3D_LISTENER_ALL
-title : KSDS3D_LISTENER_ALL
-author : windows-driver-content
-description : The KSDS3D_LISTENER_ALL structure specifies all the properties of the DirectSound 3D listener. This structure is used to get or set the data value for the KSPROPERTY_DIRECTSOUND3DLISTENER_ALL property.
-old-location : audio\ksds3d_listener_all.htm
-old-project : audio
-ms.assetid : 6bff18d1-77bf-49c0-af9c-aa1abbfbfa53
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : "*PKSDS3D_LISTENER_ALL, ksmedia/PKSDS3D_LISTENER_ALL, KSDS3D_LISTENER_ALL, aud-prop_1fd24ba2-9b2d-4ee2-b40c-eb7812597da0.xml, PKSDS3D_LISTENER_ALL structure pointer [Audio Devices], PKSDS3D_LISTENER_ALL, audio.ksds3d_listener_all, ksmedia/KSDS3D_LISTENER_ALL, KSDS3D_LISTENER_ALL structure [Audio Devices]"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKSDS3D_LISTENER_ALL, KSDS3D_LISTENER_ALL"
+UID: NS:ksmedia.KSDS3D_LISTENER_ALL
+title: KSDS3D_LISTENER_ALL
+author: windows-driver-content
+description: The KSDS3D_LISTENER_ALL structure specifies all the properties of the DirectSound 3D listener. This structure is used to get or set the data value for the KSPROPERTY_DIRECTSOUND3DLISTENER_ALL property.
+old-location: audio\ksds3d_listener_all.htm
+old-project: audio
+ms.assetid: 6bff18d1-77bf-49c0-af9c-aa1abbfbfa53
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: "*PKSDS3D_LISTENER_ALL, ksmedia/PKSDS3D_LISTENER_ALL, KSDS3D_LISTENER_ALL, aud-prop_1fd24ba2-9b2d-4ee2-b40c-eb7812597da0.xml, PKSDS3D_LISTENER_ALL structure pointer [Audio Devices], PKSDS3D_LISTENER_ALL, audio.ksds3d_listener_all, ksmedia/KSDS3D_LISTENER_ALL, KSDS3D_LISTENER_ALL structure [Audio Devices]"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	KSDS3D_LISTENER_ALL
+product: Windows
+targetos: Windows
+req.typenames: "*PKSDS3D_LISTENER_ALL, KSDS3D_LISTENER_ALL"
 ---
 
 # KSDS3D_LISTENER_ALL structure

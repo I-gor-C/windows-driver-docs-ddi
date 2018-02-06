@@ -1,41 +1,47 @@
 ---
-UID : NF:fwpsk.FwpsDereferenceNetBufferList0
-title : FwpsDereferenceNetBufferList0 function
-author : windows-driver-content
-description : The FwpsDereferenceNetBufferList0 function decrements the reference count for a NET_BUFFER_LIST structure that a callout driver had acquired earlier using the FwpsReferenceNetBufferList0 function.Note  FwpsDereferenceNetBufferList0 is a specific version of FwpsDereferenceNetBufferList. See WFP Version-Independent Names and Targeting Specific Versions of Windows for more information.
-old-location : netvista\fwpsdereferencenetbufferlist0.htm
-old-project : netvista
-ms.assetid : e327fe9d-9425-4cc3-9552-88e9c4c3bdbe
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : FwpsDereferenceNetBufferList0, netvista.fwpsdereferencenetbufferlist0, wfp_ref_2_funct_3_fwps_D-H_c55180f3-4575-4279-8481-99b17215fc11.xml, fwpsk/FwpsDereferenceNetBufferList0, FwpsDereferenceNetBufferList0 function [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fwpsk.h
-req.include-header : Fwpsk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Fwpkclnt.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FWPS_VSWITCH_EVENT_TYPE
+UID: NF:fwpsk.FwpsDereferenceNetBufferList0
+title: FwpsDereferenceNetBufferList0 function
+author: windows-driver-content
+description: The FwpsDereferenceNetBufferList0 function decrements the reference count for a NET_BUFFER_LIST structure that a callout driver had acquired earlier using the FwpsReferenceNetBufferList0 function.Note  FwpsDereferenceNetBufferList0 is a specific version of FwpsDereferenceNetBufferList. See WFP Version-Independent Names and Targeting Specific Versions of Windows for more information.
+old-location: netvista\fwpsdereferencenetbufferlist0.htm
+old-project: netvista
+ms.assetid: e327fe9d-9425-4cc3-9552-88e9c4c3bdbe
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: FwpsDereferenceNetBufferList0, netvista.fwpsdereferencenetbufferlist0, wfp_ref_2_funct_3_fwps_D-H_c55180f3-4575-4279-8481-99b17215fc11.xml, fwpsk/FwpsDereferenceNetBufferList0, FwpsDereferenceNetBufferList0 function [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fwpsk.h
+req.include-header: Fwpsk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Fwpkclnt.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	fwpkclnt.lib
+-	fwpkclnt.dll
+apiname:
+-	FwpsDereferenceNetBufferList0
+product: Windows
+targetos: Windows
+req.typenames: FWPS_VSWITCH_EVENT_TYPE
 ---
 
 

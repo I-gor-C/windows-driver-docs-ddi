@@ -1,41 +1,46 @@
 ---
-UID : NI:ntifs.IOCTL_VOLSNAP_FLUSH_AND_HOLD_WRITES
-title : IOCTL_VOLSNAP_FLUSH_AND_HOLD_WRITES
-author : windows-driver-content
-description : The IOCTL_VOLSNAP_FLUSH_AND_HOLD_WRITES control code is sent to force a flush of a file system before a volume shadow copy occurs.
-old-location : ifsk\ioctl_volsnap_flush_and_hold_writes.htm
-old-project : ifsk
-ms.assetid : c9189ca4-8b0e-470b-b027-f629ed243534
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.ioctl_volsnap_flush_and_hold_writes, IOCTL_VOLSNAP_FLUSH_AND_HOLD_WRITES control code [Installable File System Drivers], IOCTL_VOLSNAP_FLUSH_AND_HOLD_WRITES, ntifs/IOCTL_VOLSNAP_FLUSH_AND_HOLD_WRITES, ioctl_ref_f21aed38-5d6d-4b8c-ac8a-6cd1738a3de7.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntifs.h
-req.include-header : Ntifs.h, Fltkernel.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NI:ntifs.IOCTL_VOLSNAP_FLUSH_AND_HOLD_WRITES
+title: IOCTL_VOLSNAP_FLUSH_AND_HOLD_WRITES
+author: windows-driver-content
+description: The IOCTL_VOLSNAP_FLUSH_AND_HOLD_WRITES control code is sent to force a flush of a file system before a volume shadow copy occurs.
+old-location: ifsk\ioctl_volsnap_flush_and_hold_writes.htm
+old-project: ifsk
+ms.assetid: c9189ca4-8b0e-470b-b027-f629ed243534
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.ioctl_volsnap_flush_and_hold_writes, IOCTL_VOLSNAP_FLUSH_AND_HOLD_WRITES control code [Installable File System Drivers], IOCTL_VOLSNAP_FLUSH_AND_HOLD_WRITES, ntifs/IOCTL_VOLSNAP_FLUSH_AND_HOLD_WRITES, ioctl_ref_f21aed38-5d6d-4b8c-ac8a-6cd1738a3de7.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntifs.h
+req.include-header: Ntifs.h, Fltkernel.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntifs.h
+apiname:
+-	IOCTL_VOLSNAP_FLUSH_AND_HOLD_WRITES
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 # IOCTL_VOLSNAP_FLUSH_AND_HOLD_WRITES IOCTL

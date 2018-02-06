@@ -1,41 +1,46 @@
 ---
-UID : NF:irb.AtaPortBusChangeDetected
-title : AtaPortBusChangeDetected function
-author : windows-driver-content
-description : The AtaPortBusChangeDetected routine notifies the port driver of changes in the device configuration on the indicated channel.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
-old-location : storage\ataportbuschangedetected.htm
-old-project : storage
-ms.assetid : e5a3d4dc-7446-49c1-985a-9d3a9d43dc15
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : AtaPortBusChangeDetected routine [Storage Devices], AtaPortBusChangeDetected, storage.ataportbuschangedetected, irb/AtaPortBusChangeDetected
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : irb.h
-req.include-header : Ata.h, Irb.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : IDE_POWER_STATE
+UID: NF:irb.AtaPortBusChangeDetected
+title: AtaPortBusChangeDetected function
+author: windows-driver-content
+description: The AtaPortBusChangeDetected routine notifies the port driver of changes in the device configuration on the indicated channel.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
+old-location: storage\ataportbuschangedetected.htm
+old-project: storage
+ms.assetid: e5a3d4dc-7446-49c1-985a-9d3a9d43dc15
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: AtaPortBusChangeDetected routine [Storage Devices], AtaPortBusChangeDetected, storage.ataportbuschangedetected, irb/AtaPortBusChangeDetected
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: irb.h
+req.include-header: Ata.h, Irb.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Irb.h
+apiname:
+-	AtaPortBusChangeDetected
+product: Windows
+targetos: Windows
+req.typenames: IDE_POWER_STATE
 ---
 
 

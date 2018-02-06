@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.ExReleaseSpinLockShared
-title : ExReleaseSpinLockShared function
-author : windows-driver-content
-description : The ExReleaseSpinLockShared routine releases ownership of a spin lock that the caller previously acquired for shared access, and restores the IRQL to its original value.
-old-location : kernel\exreleasespinlockshared_.htm
-old-project : kernel
-ms.assetid : D79FD160-1A03-43F0-B9AB-D74C6176565A
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ExReleaseSpinLockShared, wdm/ExReleaseSpinLockShared, kernel.exreleasespinlockshared_, ExReleaseSpinLockShared routine [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : 
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows Vista with SP1.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : DISPATCH_LEVEL (See Remarks.)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ExReleaseSpinLockShared
+title: ExReleaseSpinLockShared function
+author: windows-driver-content
+description: The ExReleaseSpinLockShared routine releases ownership of a spin lock that the caller previously acquired for shared access, and restores the IRQL to its original value.
+old-location: kernel\exreleasespinlockshared_.htm
+old-project: kernel
+ms.assetid: D79FD160-1A03-43F0-B9AB-D74C6176565A
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ExReleaseSpinLockShared, wdm/ExReleaseSpinLockShared, kernel.exreleasespinlockshared_, ExReleaseSpinLockShared routine [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: 
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows Vista with SP1.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: DISPATCH_LEVEL (See Remarks.)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	ExReleaseSpinLockShared
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

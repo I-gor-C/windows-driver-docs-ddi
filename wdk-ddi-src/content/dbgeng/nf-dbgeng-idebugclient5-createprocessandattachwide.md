@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugClient5.CreateProcessAndAttachWide
-title : IDebugClient5::CreateProcessAndAttachWide method
-author : windows-driver-content
-description : The CreateProcessAndAttachWide method creates a process from a specified command line, then attach to another user-mode process.
-old-location : debugger\createprocessandattachwide.htm
-old-project : debugger
-ms.assetid : ceaadcca-e206-402b-8aff-62aca483fb64
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugClient4::CreateProcessAndAttachWide, CreateProcessAndAttachWide method [Windows Debugging], IDebugClient3 interface, CreateProcessAndAttachWide method [Windows Debugging], IDebugClient4 interface, debugger.createprocessandattachwide, dbgeng/IDebugClient4::CreateProcessAndAttachWide, CreateProcessAndAttachWide method [Windows Debugging], IDebugClient5 interface, CreateProcessAndAttachWide, IDebugClient5 interface [Windows Debugging], CreateProcessAndAttachWide method, IDebugClient3::CreateProcessAndAttachWide, CreateProcessAndAttachWide method [Windows Debugging], IDebugClient3 interface [Windows Debugging], CreateProcessAndAttachWide method, dbgeng/IDebugClient5::CreateProcessAndAttachWide, IDebugClient5::CreateProcessAndAttachWide, IDebugClient4 interface [Windows Debugging], CreateProcessAndAttachWide method, IDebugClient5, dbgeng/IDebugClient3::CreateProcessAndAttachWide
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugClient5.CreateProcessAndAttachWide
+title: IDebugClient5::CreateProcessAndAttachWide method
+author: windows-driver-content
+description: The CreateProcessAndAttachWide method creates a process from a specified command line, then attach to another user-mode process.
+old-location: debugger\createprocessandattachwide.htm
+old-project: debugger
+ms.assetid: ceaadcca-e206-402b-8aff-62aca483fb64
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugClient4::CreateProcessAndAttachWide, CreateProcessAndAttachWide method [Windows Debugging], IDebugClient3 interface, CreateProcessAndAttachWide method [Windows Debugging], IDebugClient4 interface, debugger.createprocessandattachwide, dbgeng/IDebugClient4::CreateProcessAndAttachWide, CreateProcessAndAttachWide method [Windows Debugging], IDebugClient5 interface, CreateProcessAndAttachWide, IDebugClient5 interface [Windows Debugging], CreateProcessAndAttachWide method, IDebugClient3::CreateProcessAndAttachWide, CreateProcessAndAttachWide method [Windows Debugging], IDebugClient3 interface [Windows Debugging], CreateProcessAndAttachWide method, dbgeng/IDebugClient5::CreateProcessAndAttachWide, IDebugClient5::CreateProcessAndAttachWide, IDebugClient4 interface [Windows Debugging], CreateProcessAndAttachWide method, IDebugClient5, dbgeng/IDebugClient3::CreateProcessAndAttachWide
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugClient3.CreateProcessAndAttachWide
+-	IDebugClient4.CreateProcessAndAttachWide
+-	IDebugClient5.CreateProcessAndAttachWide
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

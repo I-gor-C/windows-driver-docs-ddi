@@ -1,41 +1,46 @@
 ---
-UID : NS:pepfx._PEP_PPM_QUERY_COORDINATED_DEPENDENCY
-title : "_PEP_PPM_QUERY_COORDINATED_DEPENDENCY"
-author : windows-driver-content
-description : The PEP_PPM_QUERY_COORDINATED_DEPENDENCY structure describes dependencies for coordinated idle states.
-old-location : kernel\pep_ppm_query_coordinated_dependency.htm
-old-project : kernel
-ms.assetid : B7E857ED-66FF-4A4D-849B-A15663106507
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : pepfx/PPEP_PPM_QUERY_COORDINATED_DEPENDENCY, PEP_PPM_QUERY_COORDINATED_DEPENDENCY, PPEP_PPM_QUERY_COORDINATED_DEPENDENCY structure pointer [Kernel-Mode Driver Architecture], _PEP_PPM_QUERY_COORDINATED_DEPENDENCY, *PPEP_PPM_QUERY_COORDINATED_DEPENDENCY, pepfx/PEP_PPM_QUERY_COORDINATED_DEPENDENCY, PEP_PPM_QUERY_COORDINATED_DEPENDENCY structure [Kernel-Mode Driver Architecture], kernel.pep_ppm_query_coordinated_dependency, PPEP_PPM_QUERY_COORDINATED_DEPENDENCY
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : pepfx.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with Windows 10.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PEP_PPM_QUERY_COORDINATED_DEPENDENCY, *PPEP_PPM_QUERY_COORDINATED_DEPENDENCY
+UID: NS:pepfx._PEP_PPM_QUERY_COORDINATED_DEPENDENCY
+title: "_PEP_PPM_QUERY_COORDINATED_DEPENDENCY"
+author: windows-driver-content
+description: The PEP_PPM_QUERY_COORDINATED_DEPENDENCY structure describes dependencies for coordinated idle states.
+old-location: kernel\pep_ppm_query_coordinated_dependency.htm
+old-project: kernel
+ms.assetid: B7E857ED-66FF-4A4D-849B-A15663106507
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: pepfx/PPEP_PPM_QUERY_COORDINATED_DEPENDENCY, PEP_PPM_QUERY_COORDINATED_DEPENDENCY, PPEP_PPM_QUERY_COORDINATED_DEPENDENCY structure pointer [Kernel-Mode Driver Architecture], _PEP_PPM_QUERY_COORDINATED_DEPENDENCY, *PPEP_PPM_QUERY_COORDINATED_DEPENDENCY, pepfx/PEP_PPM_QUERY_COORDINATED_DEPENDENCY, PEP_PPM_QUERY_COORDINATED_DEPENDENCY structure [Kernel-Mode Driver Architecture], kernel.pep_ppm_query_coordinated_dependency, PPEP_PPM_QUERY_COORDINATED_DEPENDENCY
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: pepfx.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows 10.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	pepfx.h
+apiname:
+-	PEP_PPM_QUERY_COORDINATED_DEPENDENCY
+product: Windows
+targetos: Windows
+req.typenames: PEP_PPM_QUERY_COORDINATED_DEPENDENCY, *PPEP_PPM_QUERY_COORDINATED_DEPENDENCY
 ---
 
 # _PEP_PPM_QUERY_COORDINATED_DEPENDENCY structure

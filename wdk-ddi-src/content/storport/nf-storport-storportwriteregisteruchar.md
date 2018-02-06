@@ -1,42 +1,48 @@
 ---
-UID : NF:storport.StorPortWriteRegisterUchar
-title : StorPortWriteRegisterUchar function
-author : windows-driver-content
-description : The StorPortWriteRegisterBufferUshort routine transfers a given number of character values from a buffer to the indicated HBA register address.
-old-location : storage\storportwriteregisteruchar.htm
-old-project : storage
-ms.assetid : 731ae55e-8cfb-4b76-b811-dbdabd8dd067
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.storportwriteregisteruchar, StorPortWriteRegisterUchar routine [Storage Devices], StorPortWriteRegisterUchar, storport/StorPortWriteRegisterUchar, storprt_5c7a4209-e917-4a68-94f7-7b3b3fcc634e.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Storport.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STOR_SPINLOCK
-req.product : Windows 10 or later.
+UID: NF:storport.StorPortWriteRegisterUchar
+title: StorPortWriteRegisterUchar function
+author: windows-driver-content
+description: The StorPortWriteRegisterBufferUshort routine transfers a given number of character values from a buffer to the indicated HBA register address.
+old-location: storage\storportwriteregisteruchar.htm
+old-project: storage
+ms.assetid: 731ae55e-8cfb-4b76-b811-dbdabd8dd067
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.storportwriteregisteruchar, StorPortWriteRegisterUchar routine [Storage Devices], StorPortWriteRegisterUchar, storport/StorPortWriteRegisterUchar, storprt_5c7a4209-e917-4a68-94f7-7b3b3fcc634e.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Storport.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Storport.lib
+-	Storport.dll
+apiname:
+-	StorPortWriteRegisterUchar
+product: Windows
+targetos: Windows
+req.typenames: STOR_SPINLOCK
+req.product: Windows 10 or later.
 ---
 
 

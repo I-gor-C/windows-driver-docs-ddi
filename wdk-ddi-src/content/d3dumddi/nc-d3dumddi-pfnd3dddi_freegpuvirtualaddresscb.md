@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_FREEGPUVIRTUALADDRESSCB
-title : PFND3DDDI_FREEGPUVIRTUALADDRESSCB
-author : windows-driver-content
-description : pfnFreeGpuVirtualAddressCb releases a range of graphics processing unit (GPU) virtual addresses that was previously reserved or mapped.
-old-location : display\pfnfreegpuvirtualaddresscb.htm
-old-project : display
-ms.assetid : 92F2A43C-699B-4580-8A56-472D837A76E2
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.pfnfreegpuvirtualaddresscb, pfnFreeGpuVirtualAddressCb callback function [Display Devices], pfnFreeGpuVirtualAddressCb, PFND3DDDI_FREEGPUVIRTUALADDRESSCB, PFND3DDDI_FREEGPUVIRTUALADDRESSCB, d3dumddi/pfnFreeGpuVirtualAddressCb
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_FREEGPUVIRTUALADDRESSCB
+title: PFND3DDDI_FREEGPUVIRTUALADDRESSCB
+author: windows-driver-content
+description: pfnFreeGpuVirtualAddressCb releases a range of graphics processing unit (GPU) virtual addresses that was previously reserved or mapped.
+old-location: display\pfnfreegpuvirtualaddresscb.htm
+old-project: display
+ms.assetid: 92F2A43C-699B-4580-8A56-472D837A76E2
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.pfnfreegpuvirtualaddresscb, pfnFreeGpuVirtualAddressCb callback function [Display Devices], pfnFreeGpuVirtualAddressCb, PFND3DDDI_FREEGPUVIRTUALADDRESSCB, PFND3DDDI_FREEGPUVIRTUALADDRESSCB, d3dumddi/pfnFreeGpuVirtualAddressCb
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	pfnFreeGpuVirtualAddressCb
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NE:dxva._DXVA_DeinterlaceTech
-title : "_DXVA_DeinterlaceTech"
-author : windows-driver-content
-description : The DXVA_DeinterlaceTech enumeration identifies the underlying technology used to implement a particular deinterlace algorithm.
-old-location : display\dxva_deinterlacetech.htm
-old-project : display
-ms.assetid : 06d6b4db-293d-409e-a725-bb86bc6b3d11
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : dxva/DXVA_DeinterlaceTech_PixelAdaptive, dxva/DXVA_DeinterlaceTech_MedianFiltering, dxvaref_ce829a5b-1e09-43e6-b90c-f7501476f280.xml, DXVA_DeinterlaceTech_BOBVerticalStretch4Tap, dxva/DXVA_DeinterlaceTech_BOBVerticalStretch4Tap, dxva/DXVA_DeinterlaceTech_Unknown, dxva/DXVA_DeinterlaceTech_FieldAdaptive, DXVA_DeinterlaceTech_BOBLineReplicate, DXVA_DeinterlaceTech_FieldAdaptive, DXVA_DeinterlaceTech_EdgeFiltering, DXVA_DeinterlaceTech_MedianFiltering, DXVA_DeinterlaceTech, dxva/DXVA_DeinterlaceTech_BOBVerticalStretch, dxva/DXVA_DeinterlaceTech, dxva/DXVA_DeinterlaceTech_MotionVectorSteered, dxva/DXVA_DeinterlaceTech_BOBLineReplicate, DXVA_DeinterlaceTech enumeration [Display Devices], dxva/DXVA_DeinterlaceTech_EdgeFiltering, DXVA_DeinterlaceTech_BOBVerticalStretch, DXVA_DeinterlaceTech_Unknown, display.dxva_deinterlacetech, _DXVA_DeinterlaceTech, DXVA_DeinterlaceTech_PixelAdaptive, DXVA_DeinterlaceTech_MotionVectorSteered
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : dxva.h
-req.include-header : Dxva.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXVA_DeinterlaceTech
+UID: NE:dxva._DXVA_DeinterlaceTech
+title: "_DXVA_DeinterlaceTech"
+author: windows-driver-content
+description: The DXVA_DeinterlaceTech enumeration identifies the underlying technology used to implement a particular deinterlace algorithm.
+old-location: display\dxva_deinterlacetech.htm
+old-project: display
+ms.assetid: 06d6b4db-293d-409e-a725-bb86bc6b3d11
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: dxva/DXVA_DeinterlaceTech_PixelAdaptive, dxva/DXVA_DeinterlaceTech_MedianFiltering, dxvaref_ce829a5b-1e09-43e6-b90c-f7501476f280.xml, DXVA_DeinterlaceTech_BOBVerticalStretch4Tap, dxva/DXVA_DeinterlaceTech_BOBVerticalStretch4Tap, dxva/DXVA_DeinterlaceTech_Unknown, dxva/DXVA_DeinterlaceTech_FieldAdaptive, DXVA_DeinterlaceTech_BOBLineReplicate, DXVA_DeinterlaceTech_FieldAdaptive, DXVA_DeinterlaceTech_EdgeFiltering, DXVA_DeinterlaceTech_MedianFiltering, DXVA_DeinterlaceTech, dxva/DXVA_DeinterlaceTech_BOBVerticalStretch, dxva/DXVA_DeinterlaceTech, dxva/DXVA_DeinterlaceTech_MotionVectorSteered, dxva/DXVA_DeinterlaceTech_BOBLineReplicate, DXVA_DeinterlaceTech enumeration [Display Devices], dxva/DXVA_DeinterlaceTech_EdgeFiltering, DXVA_DeinterlaceTech_BOBVerticalStretch, DXVA_DeinterlaceTech_Unknown, display.dxva_deinterlacetech, _DXVA_DeinterlaceTech, DXVA_DeinterlaceTech_PixelAdaptive, DXVA_DeinterlaceTech_MotionVectorSteered
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: dxva.h
+req.include-header: Dxva.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	dxva.h
+apiname:
+-	DXVA_DeinterlaceTech
+product: Windows
+targetos: Windows
+req.typenames: DXVA_DeinterlaceTech
 ---
 
 # _DXVA_DeinterlaceTech Enumeration
@@ -59,51 +64,51 @@ typedef enum _DXVA_DeinterlaceTech {
 ## Constants
 
 <table>
-
-<tr>
-<td>DXVA_DeinterlaceTech_BOBLineReplicate</td>
-<td>Indicates that the algorithm creates the missing lines by repeating the line either above or below it. This method looks jagged and is not recommended.</td>
-</tr>
-
-<tr>
-<td>DXVA_DeinterlaceTech_BOBVerticalStretch</td>
-<td>Specifies an algorithm that creates the missing lines by vertically stretching each video field by a factor of two. Vertical adjustments are made to ensure that the resulting image does not move up and down.</td>
-</tr>
-
-<tr>
-<td>DXVA_DeinterlaceTech_BOBVerticalStretch4Tap</td>
-<td>Creates the missing lines by vertically stretching each video field by a factor of two, using a 4-tap filter.</td>
-</tr>
-
-<tr>
-<td>DXVA_DeinterlaceTech_EdgeFiltering</td>
-<td>Specifies that pixels in the missing line are recreated by an edge filter. In this process, spatial directional filters are applied to determine the orientation of edges in the picture content, and missing pixels are created by filtering along (rather than across) the detected edges.</td>
-</tr>
-
-<tr>
-<td>DXVA_DeinterlaceTech_FieldAdaptive</td>
-<td>Specifies that pixels in the missing line are recreated by switching on a field-by-field basis between either spatial or temporal interpolation, depending on the amount of motion.</td>
-</tr>
-
-<tr>
-<td>DXVA_DeinterlaceTech_MedianFiltering</td>
-<td>Specifies that the pixels in the missing line are recreated by a median filtering operation.</td>
-</tr>
-
-<tr>
-<td>DXVA_DeinterlaceTech_MotionVectorSteered</td>
-<td>Identifies objects within a sequence of video fields. The missing pixels are recreated after first aligning the movement axis of the individual objects in the scene to make them parallel with the time axis.</td>
-</tr>
-
-<tr>
-<td>DXVA_DeinterlaceTech_PixelAdaptive</td>
-<td>Specifies that pixels in the missing line are recreated by switching on a pixel-by-pixel basis between either spatial or temporal interpolation, depending on the amount of motion.</td>
-</tr>
-
-<tr>
-<td>DXVA_DeinterlaceTech_Unknown</td>
-<td>Indicates that the algorithm is unknown or proprietary to the hardware manufacturer.</td>
-</tr>
+            
+                <tr>
+                    <td>DXVA_DeinterlaceTech_BOBLineReplicate</td>
+                    <td>Indicates that the algorithm creates the missing lines by repeating the line either above or below it. This method looks jagged and is not recommended.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXVA_DeinterlaceTech_BOBVerticalStretch</td>
+                    <td>Specifies an algorithm that creates the missing lines by vertically stretching each video field by a factor of two. Vertical adjustments are made to ensure that the resulting image does not move up and down.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXVA_DeinterlaceTech_BOBVerticalStretch4Tap</td>
+                    <td>Creates the missing lines by vertically stretching each video field by a factor of two, using a 4-tap filter.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXVA_DeinterlaceTech_EdgeFiltering</td>
+                    <td>Specifies that pixels in the missing line are recreated by an edge filter. In this process, spatial directional filters are applied to determine the orientation of edges in the picture content, and missing pixels are created by filtering along (rather than across) the detected edges.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXVA_DeinterlaceTech_FieldAdaptive</td>
+                    <td>Specifies that pixels in the missing line are recreated by switching on a field-by-field basis between either spatial or temporal interpolation, depending on the amount of motion.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXVA_DeinterlaceTech_MedianFiltering</td>
+                    <td>Specifies that the pixels in the missing line are recreated by a median filtering operation.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXVA_DeinterlaceTech_MotionVectorSteered</td>
+                    <td>Identifies objects within a sequence of video fields. The missing pixels are recreated after first aligning the movement axis of the individual objects in the scene to make them parallel with the time axis.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXVA_DeinterlaceTech_PixelAdaptive</td>
+                    <td>Specifies that pixels in the missing line are recreated by switching on a pixel-by-pixel basis between either spatial or temporal interpolation, depending on the amount of motion.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXVA_DeinterlaceTech_Unknown</td>
+                    <td>Indicates that the algorithm is unknown or proprietary to the hardware manufacturer.</td>
+                </tr>
 </table>
 
 
@@ -112,9 +117,9 @@ typedef enum _DXVA_DeinterlaceTech {
 | ---- |:---- |
 | **Header** | dxva.h (include Dxva.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\dxva\ns-dxva-_dxva_deinterlacecaps.md">DXVA_DeinterlaceCaps</a>
+        <a href="..\dxva\ns-dxva-_dxva_deinterlacecaps.md">DXVA_DeinterlaceCaps</a>
 
  
 

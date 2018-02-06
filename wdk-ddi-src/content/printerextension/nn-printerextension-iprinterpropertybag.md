@@ -1,42 +1,47 @@
 ---
-UID : NN:printerextension.IPrinterPropertyBag
-title : IPrinterPropertyBag
-author : windows-driver-content
-description : Provides strongly-typed get and set methods.
-old-location : print\iprinterpropertybag_interface.htm
-old-project : print
-ms.assetid : 421397FF-4956-4052-B63D-32F8E79A22D0
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : print.iprinterpropertybag_interface, IPrinterPropertyBag interface [Print Devices], IPrinterPropertyBag interface [Print Devices], described, IPrinterPropertyBag, printerextension/IPrinterPropertyBag
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : printerextension.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : printerextension.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PrintSchemaSelectionType
-req.product : Windows 10 or later.
+UID: NN:printerextension.IPrinterPropertyBag
+title: IPrinterPropertyBag
+author: windows-driver-content
+description: Provides strongly-typed get and set methods.
+old-location: print\iprinterpropertybag_interface.htm
+old-project: print
+ms.assetid: 421397FF-4956-4052-B63D-32F8E79A22D0
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: print.iprinterpropertybag_interface, IPrinterPropertyBag interface [Print Devices], IPrinterPropertyBag interface [Print Devices], described, IPrinterPropertyBag, printerextension/IPrinterPropertyBag
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: printerextension.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: printerextension.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Printerextension.h
+apiname:
+-	IPrinterPropertyBag
+product: Windows
+targetos: Windows
+req.typenames: PrintSchemaSelectionType
+req.product: Windows 10 or later.
 ---
 
 # IPrinterPropertyBag interface

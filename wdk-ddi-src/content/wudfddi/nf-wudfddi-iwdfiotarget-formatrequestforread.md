@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFIoTarget.FormatRequestForRead
-title : IWDFIoTarget::FormatRequestForRead method
-author : windows-driver-content
-description : The FormatRequestForRead method formats an I/O request object for a read operation.
-old-location : wdf\iwdfiotarget_formatrequestforread.htm
-old-project : wdf
-ms.assetid : 8a1b61c8-8b85-4224-ae20-3788eb0babe4
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : FormatRequestForRead method, IWDFIoTarget interface, IWDFIoTarget interface, FormatRequestForRead method, FormatRequestForRead method, UMDFIoTargetObjectRef_49d4b6d7-0cd7-4d8a-9b16-7ecc89f82f1e.xml, IWDFIoTarget, umdf.iwdfiotarget_formatrequestforread, FormatRequestForRead, wudfddi/IWDFIoTarget::FormatRequestForRead, wdf.iwdfiotarget_formatrequestforread, IWDFIoTarget::FormatRequestForRead
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.5
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFIoTarget.FormatRequestForRead
+title: IWDFIoTarget::FormatRequestForRead method
+author: windows-driver-content
+description: The FormatRequestForRead method formats an I/O request object for a read operation.
+old-location: wdf\iwdfiotarget_formatrequestforread.htm
+old-project: wdf
+ms.assetid: 8a1b61c8-8b85-4224-ae20-3788eb0babe4
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: FormatRequestForRead method, IWDFIoTarget interface, IWDFIoTarget interface, FormatRequestForRead method, FormatRequestForRead method, UMDFIoTargetObjectRef_49d4b6d7-0cd7-4d8a-9b16-7ecc89f82f1e.xml, IWDFIoTarget, umdf.iwdfiotarget_formatrequestforread, FormatRequestForRead, wudfddi/IWDFIoTarget::FormatRequestForRead, wdf.iwdfiotarget_formatrequestforread, IWDFIoTarget::FormatRequestForRead
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.5
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFIoTarget.FormatRequestForRead
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

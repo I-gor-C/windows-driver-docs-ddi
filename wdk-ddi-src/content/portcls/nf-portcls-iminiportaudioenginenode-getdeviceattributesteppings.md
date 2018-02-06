@@ -1,41 +1,46 @@
 ---
-UID : NF:portcls.IMiniportAudioEngineNode.GetDeviceAttributeSteppings
-title : IMiniportAudioEngineNode::GetDeviceAttributeSteppings method
-author : windows-driver-content
-description : Gets the allowed stepping value for the audio device attribute.
-old-location : audio\iminiportaudioenginenode_getdeviceattributesteppings.htm
-old-project : audio
-ms.assetid : 7AF6C9AF-8955-4F09-A42C-097B4AD1CD3A
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : IMiniportAudioEngineNode interface [Audio Devices], GetDeviceAttributeSteppings method, GetDeviceAttributeSteppings method [Audio Devices], IMiniportAudioEngineNode::GetDeviceAttributeSteppings, GetDeviceAttributeSteppings method [Audio Devices], IMiniportAudioEngineNode interface, portcls/IMiniportAudioEngineNode::GetDeviceAttributeSteppings, GetDeviceAttributeSteppings, IMiniportAudioEngineNode, audio.iminiportaudioenginenode_getdeviceattributesteppings
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : portcls.h
-req.include-header : 
-req.target-type : Universal
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : portcls.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.IMiniportAudioEngineNode.GetDeviceAttributeSteppings
+title: IMiniportAudioEngineNode::GetDeviceAttributeSteppings method
+author: windows-driver-content
+description: Gets the allowed stepping value for the audio device attribute.
+old-location: audio\iminiportaudioenginenode_getdeviceattributesteppings.htm
+old-project: audio
+ms.assetid: 7AF6C9AF-8955-4F09-A42C-097B4AD1CD3A
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: IMiniportAudioEngineNode interface [Audio Devices], GetDeviceAttributeSteppings method, GetDeviceAttributeSteppings method [Audio Devices], IMiniportAudioEngineNode::GetDeviceAttributeSteppings, GetDeviceAttributeSteppings method [Audio Devices], IMiniportAudioEngineNode interface, portcls/IMiniportAudioEngineNode::GetDeviceAttributeSteppings, GetDeviceAttributeSteppings, IMiniportAudioEngineNode, audio.iminiportaudioenginenode_getdeviceattributesteppings
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: portcls.h
+req.include-header: 
+req.target-type: Universal
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: portcls.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Portcls.h
+apiname:
+-	IMiniportAudioEngineNode.GetDeviceAttributeSteppings
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

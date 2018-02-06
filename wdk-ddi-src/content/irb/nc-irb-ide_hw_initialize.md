@@ -1,41 +1,46 @@
 ---
-UID : NC:irb.IDE_HW_INITIALIZE
-title : IDE_HW_INITIALIZE
-author : windows-driver-content
-description : The IdeHwInitialize miniport driver routine configures the indicated device.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
-old-location : storage\idehwinitialize.htm
-old-project : storage
-ms.assetid : 5665ff0a-3cbf-4ac5-adf7-5b383bac5117
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.idehwinitialize, IdeHwInitialize routine [Storage Devices], IdeHwInitialize, IDE_HW_INITIALIZE, IDE_HW_INITIALIZE, irb/IdeHwInitialize, atartns_dcb52bc9-05c9-436f-a2b2-f9c1b68d1d33.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : irb.h
-req.include-header : Irb.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : LUID
+UID: NC:irb.IDE_HW_INITIALIZE
+title: IDE_HW_INITIALIZE
+author: windows-driver-content
+description: The IdeHwInitialize miniport driver routine configures the indicated device.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
+old-location: storage\idehwinitialize.htm
+old-project: storage
+ms.assetid: 5665ff0a-3cbf-4ac5-adf7-5b383bac5117
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.idehwinitialize, IdeHwInitialize routine [Storage Devices], IdeHwInitialize, IDE_HW_INITIALIZE, IDE_HW_INITIALIZE, irb/IdeHwInitialize, atartns_dcb52bc9-05c9-436f-a2b2-f9c1b68d1d33.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: irb.h
+req.include-header: Irb.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	irb.h
+apiname:
+-	IdeHwInitialize
+product: Windows
+targetos: Windows
+req.typenames: LUID
 ---
 
 

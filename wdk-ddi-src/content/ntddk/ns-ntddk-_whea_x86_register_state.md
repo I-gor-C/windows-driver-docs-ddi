@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddk._WHEA_X86_REGISTER_STATE
-title : "_WHEA_X86_REGISTER_STATE"
-author : windows-driver-content
-description : The WHEA_X86_REGISTER_STATE structure describes the state of an x86 processor's registers.
-old-location : whea\whea_x86_register_state.htm
-old-project : whea
-ms.assetid : 64079b03-9771-4940-a19e-a29389cbf2fe
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : whearef_330404b2-bd6e-4220-97c6-8bacc803eb78.xml, ntddk/WHEA_X86_REGISTER_STATE, *PWHEA_X86_REGISTER_STATE, whea.whea_x86_register_state, ntddk/PWHEA_X86_REGISTER_STATE, PWHEA_X86_REGISTER_STATE structure pointer [WHEA Drivers and Applications], WHEA_X86_REGISTER_STATE structure [WHEA Drivers and Applications], WHEA_X86_REGISTER_STATE, PWHEA_X86_REGISTER_STATE, _WHEA_X86_REGISTER_STATE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWHEA_X86_REGISTER_STATE, WHEA_X86_REGISTER_STATE"
+UID: NS:ntddk._WHEA_X86_REGISTER_STATE
+title: "_WHEA_X86_REGISTER_STATE"
+author: windows-driver-content
+description: The WHEA_X86_REGISTER_STATE structure describes the state of an x86 processor's registers.
+old-location: whea\whea_x86_register_state.htm
+old-project: whea
+ms.assetid: 64079b03-9771-4940-a19e-a29389cbf2fe
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: whearef_330404b2-bd6e-4220-97c6-8bacc803eb78.xml, ntddk/WHEA_X86_REGISTER_STATE, *PWHEA_X86_REGISTER_STATE, whea.whea_x86_register_state, ntddk/PWHEA_X86_REGISTER_STATE, PWHEA_X86_REGISTER_STATE structure pointer [WHEA Drivers and Applications], WHEA_X86_REGISTER_STATE structure [WHEA Drivers and Applications], WHEA_X86_REGISTER_STATE, PWHEA_X86_REGISTER_STATE, _WHEA_X86_REGISTER_STATE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddk.h
+apiname:
+-	WHEA_X86_REGISTER_STATE
+product: Windows
+targetos: Windows
+req.typenames: "*PWHEA_X86_REGISTER_STATE, WHEA_X86_REGISTER_STATE"
 ---
 
 # _WHEA_X86_REGISTER_STATE structure

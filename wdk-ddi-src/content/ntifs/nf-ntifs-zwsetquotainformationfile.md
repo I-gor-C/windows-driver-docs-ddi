@@ -1,41 +1,47 @@
 ---
-UID : NF:ntifs.ZwSetQuotaInformationFile
-title : ZwSetQuotaInformationFile function
-author : windows-driver-content
-description : The ZwSetQuotaInformationFile routine changes quota entries for the volume associated with the FileHandle parameter. All of the quota entries in the specified buffer are applied to the volume.
-old-location : kernel\zwsetquotainformationfile.htm
-old-project : kernel
-ms.assetid : 40c7a74c-eace-4d01-8a55-2c3c8bace8fb
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : k111_87b6e79e-ecd9-47ff-8f0c-7502fc82b8af.xml, ntifs/NtSetQuotaInformationFile, ntifs/ZwSetQuotaInformationFile, kernel.zwsetquotainformationfile, NtSetQuotaInformationFile, ZwSetQuotaInformationFile, ZwSetQuotaInformationFile routine [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h, FltKernel.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 7 and later versions of Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.ZwSetQuotaInformationFile
+title: ZwSetQuotaInformationFile function
+author: windows-driver-content
+description: The ZwSetQuotaInformationFile routine changes quota entries for the volume associated with the FileHandle parameter. All of the quota entries in the specified buffer are applied to the volume.
+old-location: kernel\zwsetquotainformationfile.htm
+old-project: kernel
+ms.assetid: 40c7a74c-eace-4d01-8a55-2c3c8bace8fb
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: k111_87b6e79e-ecd9-47ff-8f0c-7502fc82b8af.xml, ntifs/NtSetQuotaInformationFile, ntifs/ZwSetQuotaInformationFile, kernel.zwsetquotainformationfile, NtSetQuotaInformationFile, ZwSetQuotaInformationFile, ZwSetQuotaInformationFile routine [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h, FltKernel.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 7 and later versions of Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ZwSetQuotaInformationFile
+-	NtSetQuotaInformationFile
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

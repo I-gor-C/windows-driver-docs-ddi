@@ -1,41 +1,46 @@
 ---
-UID : NF:ks.KsDeviceRegisterAggregatedClientUnknown
-title : KsDeviceRegisterAggregatedClientUnknown function
-author : windows-driver-content
-description : This inline function is a wrapper for KsRegisterAggregatedClientUnknown.
-old-location : stream\ksdeviceregisteraggregatedclientunknown.htm
-old-project : stream
-ms.assetid : d4d3f653-cfdc-4567-97bc-def26484ed9f
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : avfunc_3e7aa517-80e8-498c-939d-1769393479fb.xml, stream.ksdeviceregisteraggregatedclientunknown, ks/KsDeviceRegisterAggregatedClientUnknown, KsDeviceRegisterAggregatedClientUnknown, KsDeviceRegisterAggregatedClientUnknown function [Streaming Media Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsDeviceRegisterAggregatedClientUnknown
+title: KsDeviceRegisterAggregatedClientUnknown function
+author: windows-driver-content
+description: This inline function is a wrapper for KsRegisterAggregatedClientUnknown.
+old-location: stream\ksdeviceregisteraggregatedclientunknown.htm
+old-project: stream
+ms.assetid: d4d3f653-cfdc-4567-97bc-def26484ed9f
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: avfunc_3e7aa517-80e8-498c-939d-1769393479fb.xml, stream.ksdeviceregisteraggregatedclientunknown, ks/KsDeviceRegisterAggregatedClientUnknown, KsDeviceRegisterAggregatedClientUnknown, KsDeviceRegisterAggregatedClientUnknown function [Streaming Media Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	KsDeviceRegisterAggregatedClientUnknown
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NC:ndis.MINIPORT_SHUTDOWN
-title : MINIPORT_SHUTDOWN
-author : windows-driver-content
-description : NDIS calls a miniport driver's MiniportShutdownEx function when the system is shutting down.
-old-location : netvista\miniportshutdownex.htm
-old-project : netvista
-ms.assetid : 7c88ff02-e791-4642-ad40-78f2ef2cba7d
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.miniportshutdownex, MiniportShutdownEx callback function [Network Drivers Starting with Windows Vista], MiniportShutdownEx, MINIPORT_SHUTDOWN, MINIPORT_SHUTDOWN, ndis/MiniportShutdownEx, miniport_functions_ref_1ef84db9-b4af-4e59-9bb8-6f467a0866d5.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : See Remarks section
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
+UID: NC:ndis.MINIPORT_SHUTDOWN
+title: MINIPORT_SHUTDOWN
+author: windows-driver-content
+description: NDIS calls a miniport driver's MiniportShutdownEx function when the system is shutting down.
+old-location: netvista\miniportshutdownex.htm
+old-project: netvista
+ms.assetid: 7c88ff02-e791-4642-ad40-78f2ef2cba7d
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.miniportshutdownex, MiniportShutdownEx callback function [Network Drivers Starting with Windows Vista], MiniportShutdownEx, MINIPORT_SHUTDOWN, MINIPORT_SHUTDOWN, ndis/MiniportShutdownEx, miniport_functions_ref_1ef84db9-b4af-4e59-9bb8-6f467a0866d5.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: See Remarks section
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ndis.h
+apiname:
+-	MiniportShutdownEx
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 

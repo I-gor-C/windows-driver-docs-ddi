@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugRegisters2.GetFrameOffset2
-title : IDebugRegisters2::GetFrameOffset2 method
-author : windows-driver-content
-description : The GetFrameOffset2 method returns the location of the stack frame for the current function.
-old-location : debugger\getframeoffset2.htm
-old-project : debugger
-ms.assetid : e0ab18ea-4447-4eee-bdf3-d251d4d4952f
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugRegisters2 interface [Windows Debugging], GetFrameOffset2 method, IDebugRegisters2::GetFrameOffset2, GetFrameOffset2, debugger.getframeoffset2, IDebugRegisters_9b3855a5-d5e4-4485-81f3-1584b707f73a.xml, IDebugRegisters2, dbgeng/IDebugRegisters2::GetFrameOffset2, GetFrameOffset2 method [Windows Debugging], IDebugRegisters2 interface, GetFrameOffset2 method [Windows Debugging]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : DbgEng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugRegisters2.GetFrameOffset2
+title: IDebugRegisters2::GetFrameOffset2 method
+author: windows-driver-content
+description: The GetFrameOffset2 method returns the location of the stack frame for the current function.
+old-location: debugger\getframeoffset2.htm
+old-project: debugger
+ms.assetid: e0ab18ea-4447-4eee-bdf3-d251d4d4952f
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugRegisters2 interface [Windows Debugging], GetFrameOffset2 method, IDebugRegisters2::GetFrameOffset2, GetFrameOffset2, debugger.getframeoffset2, IDebugRegisters_9b3855a5-d5e4-4485-81f3-1584b707f73a.xml, IDebugRegisters2, dbgeng/IDebugRegisters2::GetFrameOffset2, GetFrameOffset2 method [Windows Debugging], IDebugRegisters2 interface, GetFrameOffset2 method [Windows Debugging]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: DbgEng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugRegisters2.GetFrameOffset2
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

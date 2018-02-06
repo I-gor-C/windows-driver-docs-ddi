@@ -1,41 +1,46 @@
 ---
-UID : NI:pmi.IOCTL_PMI_GET_CONFIGURATION
-title : IOCTL_PMI_GET_CONFIGURATION
-author : windows-driver-content
-description : The IOCTL_PMI_GET_CONFIGURATION request returns information about the current configuration of a power meter.
-old-location : powermeter\ioctl_pmi_get_configuration.htm
-old-project : powermeter
-ms.assetid : 957a2658-dddc-4529-8697-5fa44fcb96c2
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : powermeter.ioctl_pmi_get_configuration, IOCTL_PMI_GET_CONFIGURATION control code [Power Metering and Budgeting Devices], IOCTL_PMI_GET_CONFIGURATION, pmi/IOCTL_PMI_GET_CONFIGURATION, PowerMeterRef_7d1f1fbc-cd7a-4885-8d41-8f42c4659de7.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : pmi.h
-req.include-header : Pmi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7, Windows Server 2008 R2, and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PMI_MEASUREMENT_UNIT
+UID: NI:pmi.IOCTL_PMI_GET_CONFIGURATION
+title: IOCTL_PMI_GET_CONFIGURATION
+author: windows-driver-content
+description: The IOCTL_PMI_GET_CONFIGURATION request returns information about the current configuration of a power meter.
+old-location: powermeter\ioctl_pmi_get_configuration.htm
+old-project: powermeter
+ms.assetid: 957a2658-dddc-4529-8697-5fa44fcb96c2
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: powermeter.ioctl_pmi_get_configuration, IOCTL_PMI_GET_CONFIGURATION control code [Power Metering and Budgeting Devices], IOCTL_PMI_GET_CONFIGURATION, pmi/IOCTL_PMI_GET_CONFIGURATION, PowerMeterRef_7d1f1fbc-cd7a-4885-8d41-8f42c4659de7.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: pmi.h
+req.include-header: Pmi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7, Windows Server 2008 R2, and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Pmi.h
+apiname:
+-	IOCTL_PMI_GET_CONFIGURATION
+product: Windows
+targetos: Windows
+req.typenames: PMI_MEASUREMENT_UNIT
 ---
 
 # IOCTL_PMI_GET_CONFIGURATION IOCTL

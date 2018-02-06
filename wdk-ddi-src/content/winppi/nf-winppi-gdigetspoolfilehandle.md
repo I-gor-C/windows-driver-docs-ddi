@@ -1,42 +1,49 @@
 ---
-UID : NF:winppi.GdiGetSpoolFileHandle
-title : GdiGetSpoolFileHandle function
-author : windows-driver-content
-description : The GdiGetSpoolFileHandle function returns a handle to a print job's EMF file.
-old-location : print\gdigetspoolfilehandle.htm
-old-project : print
-ms.assetid : c820ee94-29c2-4478-884c-49dd68cd713a
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : GdiGetSpoolFileHandle, GdiGetSpoolFileHandle function [Print Devices], gdifnc_f7231fd8-33b0-4047-90ba-e5e2c9c37814.xml, winppi/GdiGetSpoolFileHandle, print.gdigetspoolfilehandle
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : winppi.h
-req.include-header : Winppi.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Gdi32.Lib
-req.dll : Gdi32.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDOT11_WPS_DEVICE_NAME, DOT11_WPS_DEVICE_NAME"
-req.product : Windows 10 or later.
+UID: NF:winppi.GdiGetSpoolFileHandle
+title: GdiGetSpoolFileHandle function
+author: windows-driver-content
+description: The GdiGetSpoolFileHandle function returns a handle to a print job's EMF file.
+old-location: print\gdigetspoolfilehandle.htm
+old-project: print
+ms.assetid: c820ee94-29c2-4478-884c-49dd68cd713a
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: GdiGetSpoolFileHandle, GdiGetSpoolFileHandle function [Print Devices], gdifnc_f7231fd8-33b0-4047-90ba-e5e2c9c37814.xml, winppi/GdiGetSpoolFileHandle, print.gdigetspoolfilehandle
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: winppi.h
+req.include-header: Winppi.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Gdi32.Lib
+req.dll: Gdi32.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Gdi32.dll
+-	Ext-MS-Win-GDI-Internal-Desktop-L1-1-0.dll
+-	GDI32Full.dll
+apiname:
+-	GdiGetSpoolFileHandle
+product: Windows
+targetos: Windows
+req.typenames: "*PDOT11_WPS_DEVICE_NAME, DOT11_WPS_DEVICE_NAME"
+req.product: Windows 10 or later.
 ---
 
 

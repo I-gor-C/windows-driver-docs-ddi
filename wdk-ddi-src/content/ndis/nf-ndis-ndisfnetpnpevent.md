@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisFNetPnPEvent
-title : NdisFNetPnPEvent function
-author : windows-driver-content
-description : A filter driver can call the NdisFNetPnPEvent function to forward a network Plug and Play (PnP) or Power Management event to overlying drivers.
-old-location : netvista\ndisfnetpnpevent.htm
-old-project : netvista
-ms.assetid : 383f9dcb-68ba-4323-b25f-668169043f35
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NdisFNetPnPEvent function [Network Drivers Starting with Windows Vista], NdisFNetPnPEvent, ndis/NdisFNetPnPEvent, netvista.ndisfnetpnpevent, filter_ndis_functions_ref_36921970-788b-4b5e-9cf0-c54f8dcdeef2.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_Filter_Driver_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisFNetPnPEvent
+title: NdisFNetPnPEvent function
+author: windows-driver-content
+description: A filter driver can call the NdisFNetPnPEvent function to forward a network Plug and Play (PnP) or Power Management event to overlying drivers.
+old-location: netvista\ndisfnetpnpevent.htm
+old-project: netvista
+ms.assetid: 383f9dcb-68ba-4323-b25f-668169043f35
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NdisFNetPnPEvent function [Network Drivers Starting with Windows Vista], NdisFNetPnPEvent, ndis/NdisFNetPnPEvent, netvista.ndisfnetpnpevent, filter_ndis_functions_ref_36921970-788b-4b5e-9cf0-c54f8dcdeef2.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_Filter_Driver_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisFNetPnPEvent
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

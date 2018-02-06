@@ -1,42 +1,47 @@
 ---
-UID : NI:usbfnioctl.IOCTL_INTERNAL_USBFN_SET_POWER_FILTER_EXIT_LPM
-title : IOCTL_INTERNAL_USBFN_SET_POWER_FILTER_EXIT_LPM
-author : windows-driver-content
-description : Do not use.
-old-location : buses\ioctl_internal_usbfn_set_power_filter_exit_lpm.htm
-old-project : usbref
-ms.assetid : 2A3A1723-989E-44FD-9727-7A01218652D1
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : buses.ioctl_internal_usbfn_set_power_filter_exit_lpm, IOCTL_INTERNAL_USBFN_SET_POWER_FILTER_EXIT_LPM control code [Buses], IOCTL_INTERNAL_USBFN_SET_POWER_FILTER_EXIT_LPM, usbfnioctl/IOCTL_INTERNAL_USBFN_SET_POWER_FILTER_EXIT_LPM
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : usbfnioctl.h
-req.include-header : Usbfnioctl.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : USBFN_USB_STRING, *PUSBFN_USB_STRING
-req.product : Windows 10 or later.
+UID: NI:usbfnioctl.IOCTL_INTERNAL_USBFN_SET_POWER_FILTER_EXIT_LPM
+title: IOCTL_INTERNAL_USBFN_SET_POWER_FILTER_EXIT_LPM
+author: windows-driver-content
+description: Do not use.
+old-location: buses\ioctl_internal_usbfn_set_power_filter_exit_lpm.htm
+old-project: usbref
+ms.assetid: 2A3A1723-989E-44FD-9727-7A01218652D1
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: buses.ioctl_internal_usbfn_set_power_filter_exit_lpm, IOCTL_INTERNAL_USBFN_SET_POWER_FILTER_EXIT_LPM control code [Buses], IOCTL_INTERNAL_USBFN_SET_POWER_FILTER_EXIT_LPM, usbfnioctl/IOCTL_INTERNAL_USBFN_SET_POWER_FILTER_EXIT_LPM
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: usbfnioctl.h
+req.include-header: Usbfnioctl.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	usbfnioctl.h
+apiname:
+-	IOCTL_INTERNAL_USBFN_SET_POWER_FILTER_EXIT_LPM
+product: Windows
+targetos: Windows
+req.typenames: USBFN_USB_STRING, *PUSBFN_USB_STRING
+req.product: Windows 10 or later.
 ---
 
 # IOCTL_INTERNAL_USBFN_SET_POWER_FILTER_EXIT_LPM IOCTL

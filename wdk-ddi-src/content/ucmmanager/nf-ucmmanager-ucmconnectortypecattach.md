@@ -1,42 +1,48 @@
 ---
-UID : NF:ucmmanager.UcmConnectorTypeCAttach
-title : UcmConnectorTypeCAttach function
-author : windows-driver-content
-description : Notifies the USB connector manager framework extension (UcmCx) when a partner connector is attached.
-old-location : buses\ucmconnectortypecattach.htm
-old-project : usbref
-ms.assetid : D778E6B6-B245-41D5-B25B-1CF183146BA9
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ucmmanager/UcmConnectorTypeCAttach, buses.ucmconnectortypecattach, UcmConnectorTypeCAttach, UcmConnectorTypeCAttach method [Buses]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ucmmanager.h
-req.include-header : Ucmcx.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 1.15
-req.umdf-ver : 2.15
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : UcmCxstub.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPORT_DATA_1, PORT_DATA_1"
-req.product : Windows 10 or later.
+UID: NF:ucmmanager.UcmConnectorTypeCAttach
+title: UcmConnectorTypeCAttach function
+author: windows-driver-content
+description: Notifies the USB connector manager framework extension (UcmCx) when a partner connector is attached.
+old-location: buses\ucmconnectortypecattach.htm
+old-project: usbref
+ms.assetid: D778E6B6-B245-41D5-B25B-1CF183146BA9
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ucmmanager/UcmConnectorTypeCAttach, buses.ucmconnectortypecattach, UcmConnectorTypeCAttach, UcmConnectorTypeCAttach method [Buses]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ucmmanager.h
+req.include-header: Ucmcx.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 1.15
+req.umdf-ver: 2.15
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: UcmCxstub.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	UcmCxstub.lib
+-	UcmCxstub.dll
+apiname:
+-	UcmConnectorTypeCAttach
+product: Windows
+targetos: Windows
+req.typenames: "*PPORT_DATA_1, PORT_DATA_1"
+req.product: Windows 10 or later.
 ---
 
 

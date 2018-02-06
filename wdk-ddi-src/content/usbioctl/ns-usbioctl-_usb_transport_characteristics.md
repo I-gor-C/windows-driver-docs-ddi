@@ -1,42 +1,47 @@
 ---
-UID : NS:usbioctl._USB_TRANSPORT_CHARACTERISTICS
-title : "_USB_TRANSPORT_CHARACTERISTICS"
-author : windows-driver-content
-description : Stores the transport characteristics at relevant points in time. This structure is used in the IOCTL_USB_GET_TRANSPORT_CHARACTERISTICS request.
-old-location : buses\usb_transport_characteristics.htm
-old-project : usbref
-ms.assetid : 56394A88-7231-4693-8DD1-C5C7586E490C
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : PUSB_TRANSPORT_CHARACTERISTICS, USB_TRANSPORT_CHARACTERISTICS, buses.usb_transport_characteristics, _USB_TRANSPORT_CHARACTERISTICS, usbioctl/PUSB_TRANSPORT_CHARACTERISTICS, USB_TRANSPORT_CHARACTERISTICS structure [Buses], PUSB_TRANSPORT_CHARACTERISTICS structure pointer [Buses], *PUSB_TRANSPORT_CHARACTERISTICS, usbioctl/USB_TRANSPORT_CHARACTERISTICS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : usbioctl.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10, version 1709
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUSB_TRANSPORT_CHARACTERISTICS, USB_TRANSPORT_CHARACTERISTICS"
-req.product : Windows 10 or later.
+UID: NS:usbioctl._USB_TRANSPORT_CHARACTERISTICS
+title: "_USB_TRANSPORT_CHARACTERISTICS"
+author: windows-driver-content
+description: Stores the transport characteristics at relevant points in time. This structure is used in the IOCTL_USB_GET_TRANSPORT_CHARACTERISTICS request.
+old-location: buses\usb_transport_characteristics.htm
+old-project: usbref
+ms.assetid: 56394A88-7231-4693-8DD1-C5C7586E490C
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: PUSB_TRANSPORT_CHARACTERISTICS, USB_TRANSPORT_CHARACTERISTICS, buses.usb_transport_characteristics, _USB_TRANSPORT_CHARACTERISTICS, usbioctl/PUSB_TRANSPORT_CHARACTERISTICS, USB_TRANSPORT_CHARACTERISTICS structure [Buses], PUSB_TRANSPORT_CHARACTERISTICS structure pointer [Buses], *PUSB_TRANSPORT_CHARACTERISTICS, usbioctl/USB_TRANSPORT_CHARACTERISTICS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: usbioctl.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10, version 1709
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Usbioctl.h
+apiname:
+-	USB_TRANSPORT_CHARACTERISTICS
+product: Windows
+targetos: Windows
+req.typenames: "*PUSB_TRANSPORT_CHARACTERISTICS, USB_TRANSPORT_CHARACTERISTICS"
+req.product: Windows 10 or later.
 ---
 
 # _USB_TRANSPORT_CHARACTERISTICS structure

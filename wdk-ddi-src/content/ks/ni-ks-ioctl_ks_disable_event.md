@@ -1,41 +1,46 @@
 ---
-UID : NI:ks.IOCTL_KS_DISABLE_EVENT
-title : IOCTL_KS_DISABLE_EVENT
-author : windows-driver-content
-description : An application can use IOCTL_KS_DISABLE_EVENT to rescind a previous request notification. The application specifies IOCTL_KS_DISABLE_EVENT in the IoControl parameter of a call to KsSynchronousDeviceControl.
-old-location : stream\ioctl_ks_disable_event.htm
-old-project : stream
-ms.assetid : 4e451d0c-6548-4735-833a-3972cf5e59c6
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.ioctl_ks_disable_event, IOCTL_KS_DISABLE_EVENT control code [Streaming Media Devices], IOCTL_KS_DISABLE_EVENT, ks/IOCTL_KS_DISABLE_EVENT, ks-ioctl_8b6cd750-3003-49b2-9b91-3edc1da6cf11.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NI:ks.IOCTL_KS_DISABLE_EVENT
+title: IOCTL_KS_DISABLE_EVENT
+author: windows-driver-content
+description: An application can use IOCTL_KS_DISABLE_EVENT to rescind a previous request notification. The application specifies IOCTL_KS_DISABLE_EVENT in the IoControl parameter of a call to KsSynchronousDeviceControl.
+old-location: stream\ioctl_ks_disable_event.htm
+old-project: stream
+ms.assetid: 4e451d0c-6548-4735-833a-3972cf5e59c6
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.ioctl_ks_disable_event, IOCTL_KS_DISABLE_EVENT control code [Streaming Media Devices], IOCTL_KS_DISABLE_EVENT, ks/IOCTL_KS_DISABLE_EVENT, ks-ioctl_8b6cd750-3003-49b2-9b91-3edc1da6cf11.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	IOCTL_KS_DISABLE_EVENT
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 # IOCTL_KS_DISABLE_EVENT IOCTL

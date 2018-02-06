@@ -1,42 +1,47 @@
 ---
-UID : NS:wdm._REG_UNLOAD_KEY_INFORMATION
-title : "_REG_UNLOAD_KEY_INFORMATION"
-author : windows-driver-content
-description : The REG_UNLOAD_KEY_INFORMATION structure contains information that a driver's RegistryCallback routine can use when a registry hive is unloaded.
-old-location : kernel\reg_unload_key_information.htm
-old-project : kernel
-ms.assetid : 171d712d-89e0-44f4-aa52-b9048c20abf2
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : "_REG_UNLOAD_KEY_INFORMATION, REG_UNLOAD_KEY_INFORMATION, PREG_UNLOAD_KEY_INFORMATION, REG_UNLOAD_KEY_INFORMATION structure [Kernel-Mode Driver Architecture], kernel.reg_unload_key_information, wdm/REG_UNLOAD_KEY_INFORMATION, kstruct_d_3a289907-a70f-4245-a54c-5df9a71da3e6.xml, PREG_UNLOAD_KEY_INFORMATION structure pointer [Kernel-Mode Driver Architecture], wdm/PREG_UNLOAD_KEY_INFORMATION, *PREG_UNLOAD_KEY_INFORMATION"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : REG_UNLOAD_KEY_INFORMATION, *PREG_UNLOAD_KEY_INFORMATION
-req.product : Windows 10 or later.
+UID: NS:wdm._REG_UNLOAD_KEY_INFORMATION
+title: "_REG_UNLOAD_KEY_INFORMATION"
+author: windows-driver-content
+description: The REG_UNLOAD_KEY_INFORMATION structure contains information that a driver's RegistryCallback routine can use when a registry hive is unloaded.
+old-location: kernel\reg_unload_key_information.htm
+old-project: kernel
+ms.assetid: 171d712d-89e0-44f4-aa52-b9048c20abf2
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: "_REG_UNLOAD_KEY_INFORMATION, REG_UNLOAD_KEY_INFORMATION, PREG_UNLOAD_KEY_INFORMATION, REG_UNLOAD_KEY_INFORMATION structure [Kernel-Mode Driver Architecture], kernel.reg_unload_key_information, wdm/REG_UNLOAD_KEY_INFORMATION, kstruct_d_3a289907-a70f-4245-a54c-5df9a71da3e6.xml, PREG_UNLOAD_KEY_INFORMATION structure pointer [Kernel-Mode Driver Architecture], wdm/PREG_UNLOAD_KEY_INFORMATION, *PREG_UNLOAD_KEY_INFORMATION"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	REG_UNLOAD_KEY_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: REG_UNLOAD_KEY_INFORMATION, *PREG_UNLOAD_KEY_INFORMATION
+req.product: Windows 10 or later.
 ---
 
 # _REG_UNLOAD_KEY_INFORMATION structure

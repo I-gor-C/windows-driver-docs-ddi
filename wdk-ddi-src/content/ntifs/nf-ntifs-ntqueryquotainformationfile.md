@@ -1,41 +1,47 @@
 ---
-UID : NF:ntifs.NtQueryQuotaInformationFile
-title : NtQueryQuotaInformationFile function
-author : windows-driver-content
-description : The ZwQueryQuotaInformationFile routine retrieves quota entries associated with the volume specified by the FileHandle parameter.
-old-location : kernel\zwqueryquotainformationfile.htm
-old-project : kernel
-ms.assetid : 572477c7-8588-415e-b66f-adab977ab373
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.zwqueryquotainformationfile, ZwQueryQuotaInformationFile, ntifs/ZwQueryQuotaInformationFile, ZwQueryQuotaInformationFile routine [Kernel-Mode Driver Architecture], k111_226a807c-d14d-403f-bbef-f5b4e6491039.xml, NtQueryQuotaInformationFile, ntifs/NtQueryQuotaInformationFile
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h, FltKernel.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 7 and later versions of Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.NtQueryQuotaInformationFile
+title: NtQueryQuotaInformationFile function
+author: windows-driver-content
+description: The ZwQueryQuotaInformationFile routine retrieves quota entries associated with the volume specified by the FileHandle parameter.
+old-location: kernel\zwqueryquotainformationfile.htm
+old-project: kernel
+ms.assetid: 572477c7-8588-415e-b66f-adab977ab373
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.zwqueryquotainformationfile, ZwQueryQuotaInformationFile, ntifs/ZwQueryQuotaInformationFile, ZwQueryQuotaInformationFile routine [Kernel-Mode Driver Architecture], k111_226a807c-d14d-403f-bbef-f5b4e6491039.xml, NtQueryQuotaInformationFile, ntifs/NtQueryQuotaInformationFile
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h, FltKernel.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 7 and later versions of Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ZwQueryQuotaInformationFile
+-	NtQueryQuotaInformationFile
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dkmddi.DXGKDDI_VIDPNTARGETMODESET_ACQUIREPINNEDMODEINFO
-title : DXGKDDI_VIDPNTARGETMODESET_ACQUIREPINNEDMODEINFO
-author : windows-driver-content
-description : The pfnAcquirePinnedModeInfo function returns a descriptor of the pinned mode in a specified VidPN target mode set.
-old-location : display\dxgk_vidpntargetmodeset_interface_pfnacquirepinnedmodeinfo.htm
-old-project : display
-ms.assetid : 0a321ee2-f246-498d-b658-a01e275644be
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgk_vidpntargetmodeset_interface_pfnacquirepinnedmodeinfo, pfnAcquirePinnedModeInfo callback function [Display Devices], pfnAcquirePinnedModeInfo, DXGKDDI_VIDPNTARGETMODESET_ACQUIREPINNEDMODEINFO, DXGKDDI_VIDPNTARGETMODESET_ACQUIREPINNEDMODEINFO, d3dkmddi/pfnAcquirePinnedModeInfo, VidPnFunctions_81cb0000-6d1d-448f-8e4a-ca5df30d97ea.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
+UID: NC:d3dkmddi.DXGKDDI_VIDPNTARGETMODESET_ACQUIREPINNEDMODEINFO
+title: DXGKDDI_VIDPNTARGETMODESET_ACQUIREPINNEDMODEINFO
+author: windows-driver-content
+description: The pfnAcquirePinnedModeInfo function returns a descriptor of the pinned mode in a specified VidPN target mode set.
+old-location: display\dxgk_vidpntargetmodeset_interface_pfnacquirepinnedmodeinfo.htm
+old-project: display
+ms.assetid: 0a321ee2-f246-498d-b658-a01e275644be
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgk_vidpntargetmodeset_interface_pfnacquirepinnedmodeinfo, pfnAcquirePinnedModeInfo callback function [Display Devices], pfnAcquirePinnedModeInfo, DXGKDDI_VIDPNTARGETMODESET_ACQUIREPINNEDMODEINFO, DXGKDDI_VIDPNTARGETMODESET_ACQUIREPINNEDMODEINFO, d3dkmddi/pfnAcquirePinnedModeInfo, VidPnFunctions_81cb0000-6d1d-448f-8e4a-ca5df30d97ea.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	pfnAcquirePinnedModeInfo
+product: Windows
+targetos: Windows
+req.typenames: DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:dispmprt._DXGK_TIMED_OPERATION
-title : "_DXGK_TIMED_OPERATION"
-author : windows-driver-content
-description : The DXGK_TIMED_OPERATION structure describes a timed operation, which is used in the Timed Operation Interface.
-old-location : display\dxgk_timed_operation.htm
-old-project : display
-ms.assetid : 6b377ba5-cd3b-433e-bd9c-315203c3bc69
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DXGK_TIMED_OPERATION, DmStructs_1d58055e-2e81-4a42-b596-390752f0db84.xml, DXGK_TIMED_OPERATION structure [Display Devices], display.dxgk_timed_operation, *PDXGK_TIMED_OPERATION, PDXGK_TIMED_OPERATION structure pointer [Display Devices], _DXGK_TIMED_OPERATION, dispmprt/DXGK_TIMED_OPERATION, PDXGK_TIMED_OPERATION, dispmprt/PDXGK_TIMED_OPERATION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : dispmprt.h
-req.include-header : Dispmprt.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDXGK_TIMED_OPERATION, DXGK_TIMED_OPERATION"
+UID: NS:dispmprt._DXGK_TIMED_OPERATION
+title: "_DXGK_TIMED_OPERATION"
+author: windows-driver-content
+description: The DXGK_TIMED_OPERATION structure describes a timed operation, which is used in the Timed Operation Interface.
+old-location: display\dxgk_timed_operation.htm
+old-project: display
+ms.assetid: 6b377ba5-cd3b-433e-bd9c-315203c3bc69
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DXGK_TIMED_OPERATION, DmStructs_1d58055e-2e81-4a42-b596-390752f0db84.xml, DXGK_TIMED_OPERATION structure [Display Devices], display.dxgk_timed_operation, *PDXGK_TIMED_OPERATION, PDXGK_TIMED_OPERATION structure pointer [Display Devices], _DXGK_TIMED_OPERATION, dispmprt/DXGK_TIMED_OPERATION, PDXGK_TIMED_OPERATION, dispmprt/PDXGK_TIMED_OPERATION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: dispmprt.h
+req.include-header: Dispmprt.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	dispmprt.h
+apiname:
+-	DXGK_TIMED_OPERATION
+product: Windows
+targetos: Windows
+req.typenames: "*PDXGK_TIMED_OPERATION, DXGK_TIMED_OPERATION"
 ---
 
 # _DXGK_TIMED_OPERATION structure

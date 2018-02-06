@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfdevice.WdfDeviceWdmGetAttachedDevice
-title : WdfDeviceWdmGetAttachedDevice function
-author : windows-driver-content
-description : The WdfDeviceWdmGetAttachedDevice method returns the next-lower WDM device object in the device stack.
-old-location : wdf\wdfdevicewdmgetattacheddevice.htm
-old-project : wdf
-ms.assetid : 216fe649-18c0-4782-8040-21ce87fbd888
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WdfDeviceWdmGetAttachedDevice method, wdfdevice/WdfDeviceWdmGetAttachedDevice, kmdf.wdfdevicewdmgetattacheddevice, WdfDeviceWdmGetAttachedDevice, PFN_WDFDEVICEWDMGETATTACHEDDEVICE, DFDeviceObjectGeneralRef_cfd9610b-28f6-4c5c-a532-9c5fae3576fc.xml, wdf.wdfdevicewdmgetattacheddevice
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfdevice.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_STATE_NOTIFICATION_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfdevice.WdfDeviceWdmGetAttachedDevice
+title: WdfDeviceWdmGetAttachedDevice function
+author: windows-driver-content
+description: The WdfDeviceWdmGetAttachedDevice method returns the next-lower WDM device object in the device stack.
+old-location: wdf\wdfdevicewdmgetattacheddevice.htm
+old-project: wdf
+ms.assetid: 216fe649-18c0-4782-8040-21ce87fbd888
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WdfDeviceWdmGetAttachedDevice method, wdfdevice/WdfDeviceWdmGetAttachedDevice, kmdf.wdfdevicewdmgetattacheddevice, WdfDeviceWdmGetAttachedDevice, PFN_WDFDEVICEWDMGETATTACHEDDEVICE, DFDeviceObjectGeneralRef_cfd9610b-28f6-4c5c-a532-9c5fae3576fc.xml, wdf.wdfdevicewdmgetattacheddevice
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfdevice.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfDeviceWdmGetAttachedDevice
+product: Windows
+targetos: Windows
+req.typenames: WDF_STATE_NOTIFICATION_TYPE
+req.product: Windows 10 or later.
 ---
 
 

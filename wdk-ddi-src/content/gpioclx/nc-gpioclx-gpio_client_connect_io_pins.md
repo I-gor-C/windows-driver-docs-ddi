@@ -1,41 +1,46 @@
 ---
-UID : NC:gpioclx.GPIO_CLIENT_CONNECT_IO_PINS
-title : GPIO_CLIENT_CONNECT_IO_PINS
-author : windows-driver-content
-description : The CLIENT_ConnectIoPins event callback function opens a logical connection to a set of general-purpose I/O (GPIO) pins and configures these pins for data read or write operations.
-old-location : gpio\client_connectiopins.htm
-old-project : GPIO
-ms.assetid : 9DE89026-872C-4537-BD99-131320B3C258
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : GPIO.client_connectiopins, CLIENT_ConnectIoPins callback function [Parallel Ports], CLIENT_ConnectIoPins, GPIO_CLIENT_CONNECT_IO_PINS, GPIO_CLIENT_CONNECT_IO_PINS, gpioclx/CLIENT_ConnectIoPins
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : gpioclx.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Supported starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Called at PASSIVE_LEVEL.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PGNSS_V2UPL_NI_INFO, GNSS_V2UPL_NI_INFO"
+UID: NC:gpioclx.GPIO_CLIENT_CONNECT_IO_PINS
+title: GPIO_CLIENT_CONNECT_IO_PINS
+author: windows-driver-content
+description: The CLIENT_ConnectIoPins event callback function opens a logical connection to a set of general-purpose I/O (GPIO) pins and configures these pins for data read or write operations.
+old-location: gpio\client_connectiopins.htm
+old-project: GPIO
+ms.assetid: 9DE89026-872C-4537-BD99-131320B3C258
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: GPIO.client_connectiopins, CLIENT_ConnectIoPins callback function [Parallel Ports], CLIENT_ConnectIoPins, GPIO_CLIENT_CONNECT_IO_PINS, GPIO_CLIENT_CONNECT_IO_PINS, gpioclx/CLIENT_ConnectIoPins
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: gpioclx.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Supported starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Called at PASSIVE_LEVEL.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Gpioclx.h
+apiname:
+-	CLIENT_ConnectIoPins
+product: Windows
+targetos: Windows
+req.typenames: "*PGNSS_V2UPL_NI_INFO, GNSS_V2UPL_NI_INFO"
 ---
 
 

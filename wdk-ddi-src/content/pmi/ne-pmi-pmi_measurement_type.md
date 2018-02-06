@@ -1,41 +1,46 @@
 ---
-UID : NE:pmi.PMI_MEASUREMENT_TYPE
-title : PMI_MEASUREMENT_TYPE
-author : windows-driver-content
-description : The PMI_MEASUREMENT_TYPE enumeration defines the source of the PMI measurement data.
-old-location : powermeter\pmi_measurement_type.htm
-old-project : powermeter
-ms.assetid : 7a075d95-3bc6-4869-bcd6-1bce6df43384
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : pmi/PmiMeasurementTypeInput, pmi/PmiMeasurementTypeOutput, PmiMeasurementTypeMax, pmi/PmiMeasurementTypeMax, pmi/PMI_MEASUREMENT_TYPE, PowerMeterRef_2156ee1f-16d6-4021-865e-ce6482a53f66.xml, powermeter.pmi_measurement_type, PMI_MEASUREMENT_TYPE, PmiMeasurementTypeOutput, PmiMeasurementTypeInput, PMI_MEASUREMENT_TYPE enumeration [Power Metering and Budgeting Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : pmi.h
-req.include-header : Pmi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7, Windows Server 2008 R2, and later versions of the Windows operating systems
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PMI_MEASUREMENT_TYPE
+UID: NE:pmi.PMI_MEASUREMENT_TYPE
+title: PMI_MEASUREMENT_TYPE
+author: windows-driver-content
+description: The PMI_MEASUREMENT_TYPE enumeration defines the source of the PMI measurement data.
+old-location: powermeter\pmi_measurement_type.htm
+old-project: powermeter
+ms.assetid: 7a075d95-3bc6-4869-bcd6-1bce6df43384
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: pmi/PmiMeasurementTypeInput, pmi/PmiMeasurementTypeOutput, PmiMeasurementTypeMax, pmi/PmiMeasurementTypeMax, pmi/PMI_MEASUREMENT_TYPE, PowerMeterRef_2156ee1f-16d6-4021-865e-ce6482a53f66.xml, powermeter.pmi_measurement_type, PMI_MEASUREMENT_TYPE, PmiMeasurementTypeOutput, PmiMeasurementTypeInput, PMI_MEASUREMENT_TYPE enumeration [Power Metering and Budgeting Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: pmi.h
+req.include-header: Pmi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7, Windows Server 2008 R2, and later versions of the Windows operating systems
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	pmi.h
+apiname:
+-	PMI_MEASUREMENT_TYPE
+product: Windows
+targetos: Windows
+req.typenames: PMI_MEASUREMENT_TYPE
 ---
 
 # PMI_MEASUREMENT_TYPE Enumeration
@@ -53,26 +58,26 @@ typedef enum  {
 ## Constants
 
 <table>
-
-<tr>
-<td>PmiMeasurementTypeInput</td>
-<td>The PMI measurement data is based on input power.</td>
-</tr>
-
-<tr>
-<td>PmiMeasurementTypeMax</td>
-<td>The maximum types of PMI measurement data.</td>
-</tr>
-
-<tr>
-<td>PmiMeasurementTypeOutput</td>
-<td>The PMI measurement data is based on output power.</td>
-</tr>
+            
+                <tr>
+                    <td>PmiMeasurementTypeInput</td>
+                    <td>The PMI measurement data is based on input power.</td>
+                </tr>
+            
+                <tr>
+                    <td>PmiMeasurementTypeMax</td>
+                    <td>The maximum types of PMI measurement data.</td>
+                </tr>
+            
+                <tr>
+                    <td>PmiMeasurementTypeOutput</td>
+                    <td>The PMI measurement data is based on output power.</td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-The <b>MeasurementType</b> member of the <a href="..\pmi\ns-pmi-_pmi_reported_capabilities.md">PMI_REPORTED_CAPABILITIES</a> structure specifies the type of PMI measurement data reported by a power meter. This structure is returned through a successful completion of an <a href="..\pmi\ni-pmi-ioctl_pmi_get_capabilities.md">IOCTL_PMI_GET_CAPABILITIES</a> request.
+        The <b>MeasurementType</b> member of the <a href="..\pmi\ns-pmi-_pmi_reported_capabilities.md">PMI_REPORTED_CAPABILITIES</a> structure specifies the type of PMI measurement data reported by a power meter. This structure is returned through a successful completion of an <a href="..\pmi\ni-pmi-ioctl_pmi_get_capabilities.md">IOCTL_PMI_GET_CAPABILITIES</a> request.
 
 PMI measurement data is returned through a query request of <a href="..\pmi\ni-pmi-ioctl_pmi_get_measurement.md">IOCTL_PMI_GET_MEASUREMENT</a>.
 
@@ -82,9 +87,9 @@ PMI measurement data is returned through a query request of <a href="..\pmi\ni-p
 | **Windows version** | Available in Windows 7, Windows Server 2008 R2, and later versions of the Windows operating systems Available in Windows 7, Windows Server 2008 R2, and later versions of the Windows operating systems |
 | **Header** | pmi.h (include Pmi.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\pmi\ni-pmi-ioctl_pmi_get_measurement.md">IOCTL_PMI_GET_MEASUREMENT</a>
+        <a href="..\pmi\ni-pmi-ioctl_pmi_get_measurement.md">IOCTL_PMI_GET_MEASUREMENT</a>
 
 <a href="..\pmi\ni-pmi-ioctl_pmi_get_capabilities.md">IOCTL_PMI_GET_CAPABILITIES</a>
 

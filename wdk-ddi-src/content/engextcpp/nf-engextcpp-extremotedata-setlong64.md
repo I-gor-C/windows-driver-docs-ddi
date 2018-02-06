@@ -1,41 +1,46 @@
 ---
-UID : NF:engextcpp.ExtRemoteData.SetLong64
-title : ExtRemoteData::SetLong64 method
-author : windows-driver-content
-description : The ExtRemoteData class provides a wrapper around a small section of a target's memory. ExtRemoteData automatically retrieves the memory and provides a number of convenience methods.
-old-location : debugger\extremotedata.htm
-old-project : debugger
-ms.assetid : d645867c-3264-45ae-b0bd-4d21e388fb97
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : Clear, ExtRemoteData::SetDouble, debugger.extremotedata, ExtRemoteData::SetChar, SetLong64, engextcpp/ExtRemoteData, SetData, ExtRemoteData::SetFloat, SetChar, ExtRemoteData::SetLong64, ExtRemoteData, ExtRemoteData::SetData, ExtRemoteData::Clear, EngExtCpp_Ref_e84c03ce-1156-481b-a429-f0a918797565.xml, SetLong, ExtRemoteData class [Windows Debugging], SetBoolean, ExtRemoteData::SetBoolean, ExtRemoteData::SetLong, ExtRemoteData class [Windows Debugging], described, SetDouble, SetFloat
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : engextcpp.hpp
-req.include-header : Engextcpp.hpp
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : engextcpp.hpp
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SILO_DRIVER_CAPABILITIES, *PSILO_DRIVER_CAPABILITIES
+UID: NF:engextcpp.ExtRemoteData.SetLong64
+title: ExtRemoteData::SetLong64 method
+author: windows-driver-content
+description: The ExtRemoteData class provides a wrapper around a small section of a target's memory. ExtRemoteData automatically retrieves the memory and provides a number of convenience methods.
+old-location: debugger\extremotedata.htm
+old-project: debugger
+ms.assetid: d645867c-3264-45ae-b0bd-4d21e388fb97
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: Clear, ExtRemoteData::SetDouble, debugger.extremotedata, ExtRemoteData::SetChar, SetLong64, engextcpp/ExtRemoteData, SetData, ExtRemoteData::SetFloat, SetChar, ExtRemoteData::SetLong64, ExtRemoteData, ExtRemoteData::SetData, ExtRemoteData::Clear, EngExtCpp_Ref_e84c03ce-1156-481b-a429-f0a918797565.xml, SetLong, ExtRemoteData class [Windows Debugging], SetBoolean, ExtRemoteData::SetBoolean, ExtRemoteData::SetLong, ExtRemoteData class [Windows Debugging], described, SetDouble, SetFloat
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: engextcpp.hpp
+req.include-header: Engextcpp.hpp
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: engextcpp.hpp
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	engextcpp.hpp
+apiname:
+-	ExtRemoteData
+product: Windows
+targetos: Windows
+req.typenames: SILO_DRIVER_CAPABILITIES, *PSILO_DRIVER_CAPABILITIES
 ---
 
 

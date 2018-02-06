@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsUnserializeObjectPropertiesFromRegistry
-title : KsUnserializeObjectPropertiesFromRegistry function
-author : windows-driver-content
-description : The KsUnserializeObjectPropertiesFromRegistry function, when given a destination object and a registry path, enumerates the named values and applies them as serialized data to the specified property sets listed in the serialized data.
-old-location : stream\ksunserializeobjectpropertiesfromregistry.htm
-old-project : stream
-ms.assetid : e08ddef7-5942-4943-9dbe-9658279892f0
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KsUnserializeObjectPropertiesFromRegistry function [Streaming Media Devices], ks/KsUnserializeObjectPropertiesFromRegistry, stream.ksunserializeobjectpropertiesfromregistry, ksfunc_09710ce5-9236-47cc-84b2-4ced36aa654b.xml, KsUnserializeObjectPropertiesFromRegistry
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsUnserializeObjectPropertiesFromRegistry
+title: KsUnserializeObjectPropertiesFromRegistry function
+author: windows-driver-content
+description: The KsUnserializeObjectPropertiesFromRegistry function, when given a destination object and a registry path, enumerates the named values and applies them as serialized data to the specified property sets listed in the serialized data.
+old-location: stream\ksunserializeobjectpropertiesfromregistry.htm
+old-project: stream
+ms.assetid: e08ddef7-5942-4943-9dbe-9658279892f0
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KsUnserializeObjectPropertiesFromRegistry function [Streaming Media Devices], ks/KsUnserializeObjectPropertiesFromRegistry, stream.ksunserializeobjectpropertiesfromregistry, ksfunc_09710ce5-9236-47cc-84b2-4ced36aa654b.xml, KsUnserializeObjectPropertiesFromRegistry
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsUnserializeObjectPropertiesFromRegistry
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

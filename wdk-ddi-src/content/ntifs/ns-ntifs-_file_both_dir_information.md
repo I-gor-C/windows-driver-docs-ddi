@@ -1,41 +1,46 @@
 ---
-UID : NS:ntifs._FILE_BOTH_DIR_INFORMATION
-title : "_FILE_BOTH_DIR_INFORMATION"
-author : windows-driver-content
-description : The FILE_BOTH_DIR_INFORMATION structure is used to query detailed information for the files in a directory.
-old-location : ifsk\file_both_dir_information.htm
-old-project : ifsk
-ms.assetid : 892b8eda-0b8e-40ab-940b-a0a423aaa5b8
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FILE_BOTH_DIR_INFORMATION structure [Installable File System Drivers], ntifs/FILE_BOTH_DIR_INFORMATION, FILE_BOTH_DIR_INFORMATION, PFILE_BOTH_DIR_INFORMATION structure pointer [Installable File System Drivers], *PFILE_BOTH_DIR_INFORMATION, ntifs/PFILE_BOTH_DIR_INFORMATION, PFILE_BOTH_DIR_INFORMATION, ifsk.file_both_dir_information, _FILE_BOTH_DIR_INFORMATION, fileinformationstructures_6e3069a3-7938-4c57-b741-594c3b70a986.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntifs.h
-req.include-header : Ntifs.h, Fltkernel.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FILE_BOTH_DIR_INFORMATION, *PFILE_BOTH_DIR_INFORMATION
+UID: NS:ntifs._FILE_BOTH_DIR_INFORMATION
+title: "_FILE_BOTH_DIR_INFORMATION"
+author: windows-driver-content
+description: The FILE_BOTH_DIR_INFORMATION structure is used to query detailed information for the files in a directory.
+old-location: ifsk\file_both_dir_information.htm
+old-project: ifsk
+ms.assetid: 892b8eda-0b8e-40ab-940b-a0a423aaa5b8
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FILE_BOTH_DIR_INFORMATION structure [Installable File System Drivers], ntifs/FILE_BOTH_DIR_INFORMATION, FILE_BOTH_DIR_INFORMATION, PFILE_BOTH_DIR_INFORMATION structure pointer [Installable File System Drivers], *PFILE_BOTH_DIR_INFORMATION, ntifs/PFILE_BOTH_DIR_INFORMATION, PFILE_BOTH_DIR_INFORMATION, ifsk.file_both_dir_information, _FILE_BOTH_DIR_INFORMATION, fileinformationstructures_6e3069a3-7938-4c57-b741-594c3b70a986.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntifs.h
+req.include-header: Ntifs.h, Fltkernel.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntifs.h
+apiname:
+-	FILE_BOTH_DIR_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: FILE_BOTH_DIR_INFORMATION, *PFILE_BOTH_DIR_INFORMATION
 ---
 
 # _FILE_BOTH_DIR_INFORMATION structure

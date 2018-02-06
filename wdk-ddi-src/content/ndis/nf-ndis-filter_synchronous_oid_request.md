@@ -1,41 +1,46 @@
 ---
-UID : NF:ndis.FILTER_SYNCHRONOUS_OID_REQUEST
-title : FILTER_SYNCHRONOUS_OID_REQUEST function
-author : windows-driver-content
-description : This callback function is reserved.
-old-location : netvista\filter_synchronous_oid_request.htm
-old-project : netvista
-ms.assetid : AC84B27B-6FBF-429D-A8FA-F3C8F583F738
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : FilterSynchronousOidRequest function [Network Drivers Starting with Windows Vista], FilterSynchronousOidRequest, netvista.filter_synchronous_oid_request, FILTER_SYNCHRONOUS_OID_REQUEST, ndis/FilterSynchronousOidRequest
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10, version 1709
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.FILTER_SYNCHRONOUS_OID_REQUEST
+title: FILTER_SYNCHRONOUS_OID_REQUEST function
+author: windows-driver-content
+description: This callback function is reserved.
+old-location: netvista\filter_synchronous_oid_request.htm
+old-project: netvista
+ms.assetid: AC84B27B-6FBF-429D-A8FA-F3C8F583F738
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: FilterSynchronousOidRequest function [Network Drivers Starting with Windows Vista], FilterSynchronousOidRequest, netvista.filter_synchronous_oid_request, FILTER_SYNCHRONOUS_OID_REQUEST, ndis/FilterSynchronousOidRequest
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10, version 1709
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ndis.h
+apiname:
+-	FilterSynchronousOidRequest
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

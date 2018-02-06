@@ -1,41 +1,46 @@
 ---
-UID : NC:ndisndk.CLOSE_NDK_ADAPTER_HANDLER
-title : CLOSE_NDK_ADAPTER_HANDLER
-author : windows-driver-content
-description : The CloseNDKAdapterHandler (CLOSE_NDK_ADAPTER_HANDLER) function closes an NDK adapter instance on an NDK-capable NDIS miniport adapter.
-old-location : netvista\close_ndk_adapter_handler.htm
-old-project : netvista
-ms.assetid : 9D5980F1-A244-4C5C-B032-68C10BF9D6E7
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.close_ndk_adapter_handler, CloseNdkAdapterHandler callback function [Network Drivers Starting with Windows Vista], CloseNdkAdapterHandler, CLOSE_NDK_ADAPTER_HANDLER, CLOSE_NDK_ADAPTER_HANDLER, ndisndk/CloseNdkAdapterHandler
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ndisndk.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : None supported
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TCP_OFFLOAD_STATS, *PTCP_OFFLOAD_STATS
+UID: NC:ndisndk.CLOSE_NDK_ADAPTER_HANDLER
+title: CLOSE_NDK_ADAPTER_HANDLER
+author: windows-driver-content
+description: The CloseNDKAdapterHandler (CLOSE_NDK_ADAPTER_HANDLER) function closes an NDK adapter instance on an NDK-capable NDIS miniport adapter.
+old-location: netvista\close_ndk_adapter_handler.htm
+old-project: netvista
+ms.assetid: 9D5980F1-A244-4C5C-B032-68C10BF9D6E7
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.close_ndk_adapter_handler, CloseNdkAdapterHandler callback function [Network Drivers Starting with Windows Vista], CloseNdkAdapterHandler, CLOSE_NDK_ADAPTER_HANDLER, CLOSE_NDK_ADAPTER_HANDLER, ndisndk/CloseNdkAdapterHandler
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ndisndk.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: None supported
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	ndisndk.h
+apiname:
+-	CloseNdkAdapterHandler
+product: Windows
+targetos: Windows
+req.typenames: TCP_OFFLOAD_STATS, *PTCP_OFFLOAD_STATS
 ---
 
 

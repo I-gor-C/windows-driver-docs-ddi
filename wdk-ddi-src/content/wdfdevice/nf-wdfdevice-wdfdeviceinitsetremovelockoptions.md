@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfdevice.WdfDeviceInitSetRemoveLockOptions
-title : WdfDeviceInitSetRemoveLockOptions function
-author : windows-driver-content
-description : The WdfDeviceInitSetRemoveLockOptions method causes the framework to acquire a remove lock before delivering an IRP of any type to the driver.
-old-location : wdf\wdfdeviceinitsetremovelockoptions.htm
-old-project : wdf
-ms.assetid : 0BCF4141-BE4E-42C0-8986-BE039B27F5D5
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : kmdf.wdfdeviceinitsetremovelockoptions, WdfDeviceInitSetRemoveLockOptions method, WdfDeviceInitSetRemoveLockOptions, PFN_WDFDEVICEINITSETREMOVELOCKOPTIONS, wdfdevice/WdfDeviceInitSetRemoveLockOptions, wdf.wdfdeviceinitsetremovelockoptions
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfdevice.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.11
-req.umdf-ver : 
-req.ddi-compliance : DriverCreate
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_STATE_NOTIFICATION_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfdevice.WdfDeviceInitSetRemoveLockOptions
+title: WdfDeviceInitSetRemoveLockOptions function
+author: windows-driver-content
+description: The WdfDeviceInitSetRemoveLockOptions method causes the framework to acquire a remove lock before delivering an IRP of any type to the driver.
+old-location: wdf\wdfdeviceinitsetremovelockoptions.htm
+old-project: wdf
+ms.assetid: 0BCF4141-BE4E-42C0-8986-BE039B27F5D5
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: kmdf.wdfdeviceinitsetremovelockoptions, WdfDeviceInitSetRemoveLockOptions method, WdfDeviceInitSetRemoveLockOptions, PFN_WDFDEVICEINITSETREMOVELOCKOPTIONS, wdfdevice/WdfDeviceInitSetRemoveLockOptions, wdf.wdfdeviceinitsetremovelockoptions
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfdevice.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.11
+req.umdf-ver: 
+req.ddi-compliance: DriverCreate
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfDeviceInitSetRemoveLockOptions
+product: Windows
+targetos: Windows
+req.typenames: WDF_STATE_NOTIFICATION_TYPE
+req.product: Windows 10 or later.
 ---
 
 

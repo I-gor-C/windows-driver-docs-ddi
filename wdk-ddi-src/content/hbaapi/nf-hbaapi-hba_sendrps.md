@@ -1,41 +1,46 @@
 ---
-UID : NF:hbaapi.HBA_SendRPS
-title : HBA_SendRPS function
-author : windows-driver-content
-description : The HBA_SendRPS routine sends a read port status block (RPS) request to the indicated agent port or domain controller.
-old-location : storage\hba_sendrps.htm
-old-project : storage
-ms.assetid : 6a79896a-0591-40dd-8e2d-6e3796556564
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : fibreHBA_rtns_753d25be-cb77-4e65-ab1b-1f2b77d65ec8.xml, HBA_SendRPS routine [Storage Devices], HBA_SendRPS, hbaapi/HBA_SendRPS, storage.hba_sendrps
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : hbaapi.h
-req.include-header : Hbaapi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Hbaapi.lib
-req.dll : Hbaapi.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HBA_WWNTYPE
+UID: NF:hbaapi.HBA_SendRPS
+title: HBA_SendRPS function
+author: windows-driver-content
+description: The HBA_SendRPS routine sends a read port status block (RPS) request to the indicated agent port or domain controller.
+old-location: storage\hba_sendrps.htm
+old-project: storage
+ms.assetid: 6a79896a-0591-40dd-8e2d-6e3796556564
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: fibreHBA_rtns_753d25be-cb77-4e65-ab1b-1f2b77d65ec8.xml, HBA_SendRPS routine [Storage Devices], HBA_SendRPS, hbaapi/HBA_SendRPS, storage.hba_sendrps
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: hbaapi.h
+req.include-header: Hbaapi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Hbaapi.lib
+req.dll: Hbaapi.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Hbaapi.dll
+apiname:
+-	HBA_SendRPS
+product: Windows
+targetos: Windows
+req.typenames: HBA_WWNTYPE
 ---
 
 

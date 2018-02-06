@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsDefaultDeviceIoCompletion
-title : KsDefaultDeviceIoCompletion function
-author : windows-driver-content
-description : The KsDefaultDeviceIoCompletion function is used to return a default response and to complete any device I/O control.
-old-location : stream\ksdefaultdeviceiocompletion.htm
-old-project : stream
-ms.assetid : 6e466815-aef4-4602-b3cf-66b47b2e3f3b
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KsDefaultDeviceIoCompletion function [Streaming Media Devices], ks/KsDefaultDeviceIoCompletion, KsDefaultDeviceIoCompletion, ksfunc_ae9df7be-800d-4f4a-a8d9-f39e09653e98.xml, stream.ksdefaultdeviceiocompletion
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsDefaultDeviceIoCompletion
+title: KsDefaultDeviceIoCompletion function
+author: windows-driver-content
+description: The KsDefaultDeviceIoCompletion function is used to return a default response and to complete any device I/O control.
+old-location: stream\ksdefaultdeviceiocompletion.htm
+old-project: stream
+ms.assetid: 6e466815-aef4-4602-b3cf-66b47b2e3f3b
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KsDefaultDeviceIoCompletion function [Streaming Media Devices], ks/KsDefaultDeviceIoCompletion, KsDefaultDeviceIoCompletion, ksfunc_ae9df7be-800d-4f4a-a8d9-f39e09653e98.xml, stream.ksdefaultdeviceiocompletion
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsDefaultDeviceIoCompletion
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

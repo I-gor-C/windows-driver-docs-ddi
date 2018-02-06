@@ -1,42 +1,47 @@
 ---
-UID : NN:wudfusb.IUsbTargetPipeContinuousReaderCallbackReadComplete
-title : IUsbTargetPipeContinuousReaderCallbackReadComplete
-author : windows-driver-content
-description : IUsbTargetPipeContinuousReaderCallbackReadComplete is a driver-supplied interface.
-old-location : wdf\iusbtargetpipecontinuousreadercallbackreadcomplete.htm
-old-project : wdf
-ms.assetid : 953048ab-872c-4b94-8aef-bcfcb86ea4d8
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.iusbtargetpipecontinuousreadercallbackreadcomplete, IUsbTargetPipeContinuousReaderCallbackReadComplete interface, IUsbTargetPipeContinuousReaderCallbackReadComplete interface, described, IUsbTargetPipeContinuousReaderCallbackReadComplete, wudfusb/IUsbTargetPipeContinuousReaderCallbackReadComplete, UMDFUSBref_bb387411-90fe-4347-910f-4c0fa535a309.xml, umdf.iusbtargetpipecontinuousreadercallbackreadcomplete
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : wudfusb.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfusb.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
-req.product : Windows 10 or later.
+UID: NN:wudfusb.IUsbTargetPipeContinuousReaderCallbackReadComplete
+title: IUsbTargetPipeContinuousReaderCallbackReadComplete
+author: windows-driver-content
+description: IUsbTargetPipeContinuousReaderCallbackReadComplete is a driver-supplied interface.
+old-location: wdf\iusbtargetpipecontinuousreadercallbackreadcomplete.htm
+old-project: wdf
+ms.assetid: 953048ab-872c-4b94-8aef-bcfcb86ea4d8
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.iusbtargetpipecontinuousreadercallbackreadcomplete, IUsbTargetPipeContinuousReaderCallbackReadComplete interface, IUsbTargetPipeContinuousReaderCallbackReadComplete interface, described, IUsbTargetPipeContinuousReaderCallbackReadComplete, wudfusb/IUsbTargetPipeContinuousReaderCallbackReadComplete, UMDFUSBref_bb387411-90fe-4347-910f-4c0fa535a309.xml, umdf.iusbtargetpipecontinuousreadercallbackreadcomplete
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: wudfusb.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfusb.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	wudfusb.h
+apiname:
+-	IUsbTargetPipeContinuousReaderCallbackReadComplete
+product: Windows
+targetos: Windows
+req.typenames: WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
+req.product: Windows 10 or later.
 ---
 
 # IUsbTargetPipeContinuousReaderCallbackReadComplete interface

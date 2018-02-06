@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddpar.IOCTL_PAR_SET_READ_ADDRESS
-title : IOCTL_PAR_SET_READ_ADDRESS
-author : windows-driver-content
-description : The IOCTL_PAR_SET_READ_ADDRESS request sets an extended capabilities port (ECP) or enhanced parallel port (EPP) read address (channel) for a parallel device.
-old-location : parports\ioctl_par_set_read_address.htm
-old-project : parports
-ms.assetid : d6ea5ac7-d324-4986-bbfb-4decd278acf7
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : parports.ioctl_par_set_read_address, IOCTL_PAR_SET_READ_ADDRESS control code [Parallel Ports], IOCTL_PAR_SET_READ_ADDRESS, ntddpar/IOCTL_PAR_SET_READ_ADDRESS, cisspd_91a85f87-e3c1-4ccb-aeab-13a484c75224.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddpar.h
-req.include-header : Ntddpar.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*POFFLOAD_SECURITY_ASSOCIATION, OFFLOAD_SECURITY_ASSOCIATION"
+UID: NI:ntddpar.IOCTL_PAR_SET_READ_ADDRESS
+title: IOCTL_PAR_SET_READ_ADDRESS
+author: windows-driver-content
+description: The IOCTL_PAR_SET_READ_ADDRESS request sets an extended capabilities port (ECP) or enhanced parallel port (EPP) read address (channel) for a parallel device.
+old-location: parports\ioctl_par_set_read_address.htm
+old-project: parports
+ms.assetid: d6ea5ac7-d324-4986-bbfb-4decd278acf7
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: parports.ioctl_par_set_read_address, IOCTL_PAR_SET_READ_ADDRESS control code [Parallel Ports], IOCTL_PAR_SET_READ_ADDRESS, ntddpar/IOCTL_PAR_SET_READ_ADDRESS, cisspd_91a85f87-e3c1-4ccb-aeab-13a484c75224.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddpar.h
+req.include-header: Ntddpar.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddpar.h
+apiname:
+-	IOCTL_PAR_SET_READ_ADDRESS
+product: Windows
+targetos: Windows
+req.typenames: "*POFFLOAD_SECURITY_ASSOCIATION, OFFLOAD_SECURITY_ASSOCIATION"
 ---
 
 # IOCTL_PAR_SET_READ_ADDRESS IOCTL

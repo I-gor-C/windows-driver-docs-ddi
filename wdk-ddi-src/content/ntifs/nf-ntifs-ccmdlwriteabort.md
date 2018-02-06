@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.CcMdlWriteAbort
-title : CcMdlWriteAbort function
-author : windows-driver-content
-description : The CcMdlWriteAbort routine frees memory descriptor lists (MDL) created by an earlier call to CcPrepareMdlWrite.
-old-location : ifsk\ccmdlwriteabort.htm
-old-project : ifsk
-ms.assetid : 32b6fc14-dbaa-41d7-a1a7-a805b9a8795a
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ntifs/CcMdlWriteAbort, CcMdlWriteAbort routine [Installable File System Drivers], ifsk.ccmdlwriteabort, CcMdlWriteAbort, ccref_517f25ce-d707-4611-af24-c66010b0d89e.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available on Microsoft Windows XP and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.CcMdlWriteAbort
+title: CcMdlWriteAbort function
+author: windows-driver-content
+description: The CcMdlWriteAbort routine frees memory descriptor lists (MDL) created by an earlier call to CcPrepareMdlWrite.
+old-location: ifsk\ccmdlwriteabort.htm
+old-project: ifsk
+ms.assetid: 32b6fc14-dbaa-41d7-a1a7-a805b9a8795a
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ntifs/CcMdlWriteAbort, CcMdlWriteAbort routine [Installable File System Drivers], ifsk.ccmdlwriteabort, CcMdlWriteAbort, ccref_517f25ce-d707-4611-af24-c66010b0d89e.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available on Microsoft Windows XP and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	CcMdlWriteAbort
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

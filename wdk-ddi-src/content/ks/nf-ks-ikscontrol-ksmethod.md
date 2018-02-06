@@ -1,41 +1,46 @@
 ---
-UID : NF:ks.IKsControl.KsMethod
-title : IKsControl::KsMethod method
-author : windows-driver-content
-description : The IKsControl::KsMethod method sends a method to a KS object, together with any other defined support operations available on a method set.
-old-location : stream\ikscontrol_ksmethod2.htm
-old-project : stream
-ms.assetid : 75100366-ba79-4ff2-b8e0-64c5c3f5f3b9
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KsMethod method [Streaming Media Devices], KsMethod, avintfc_6cf0dd96-36e2-4d0a-8bb8-f2f49ab9eb1f.xml, KsMethod method [Streaming Media Devices], IKsControl interface, IKsControl::KsMethod, IKsControl interface [Streaming Media Devices], KsMethod method, IKsControl, stream.ikscontrol_ksmethod2, ks/IKsControl::KsMethod
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : DesktopMobile
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : ks.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.IKsControl.KsMethod
+title: IKsControl::KsMethod method
+author: windows-driver-content
+description: The IKsControl::KsMethod method sends a method to a KS object, together with any other defined support operations available on a method set.
+old-location: stream\ikscontrol_ksmethod2.htm
+old-project: stream
+ms.assetid: 75100366-ba79-4ff2-b8e0-64c5c3f5f3b9
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KsMethod method [Streaming Media Devices], KsMethod, avintfc_6cf0dd96-36e2-4d0a-8bb8-f2f49ab9eb1f.xml, KsMethod method [Streaming Media Devices], IKsControl interface, IKsControl::KsMethod, IKsControl interface [Streaming Media Devices], KsMethod method, IKsControl, stream.ikscontrol_ksmethod2, ks/IKsControl::KsMethod
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: DesktopMobile
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: ks.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	ks.h
+apiname:
+-	IKsControl.KsMethod
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

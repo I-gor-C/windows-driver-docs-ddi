@@ -1,41 +1,46 @@
 ---
-UID : NS:ntifs._WOF_EXTERNAL_FILE_ID
-title : "_WOF_EXTERNAL_FILE_ID"
-author : windows-driver-content
-description : The WOF_EXTERNAL_FILE_ID structure contains a file ID that is used to open a handle to a mini-filter or driver.
-old-location : ifsk\wof_external_file_id.htm
-old-project : ifsk
-ms.assetid : 5C208DF7-C6CB-419D-B775-74E09DC4D448
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ntifs/WOF_EXTERNAL_FILE_ID, WOF_EXTERNAL_FILE_ID structure [Installable File System Drivers], WOF_EXTERNAL_FILE_ID, ifsk.wof_external_file_id, PWOF_EXTERNAL_FILE_ID structure pointer [Installable File System Drivers], PWOF_EXTERNAL_FILE_ID, *PWOF_EXTERNAL_FILE_ID, ntifs/PWOF_EXTERNAL_FILE_ID, _WOF_EXTERNAL_FILE_ID
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntifs.h
-req.include-header : Windows.h, WinIoCtl.h, Ntifs.h, Windows.h, WinIoCtl.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows 10.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WOF_EXTERNAL_FILE_ID, *PWOF_EXTERNAL_FILE_ID
+UID: NS:ntifs._WOF_EXTERNAL_FILE_ID
+title: "_WOF_EXTERNAL_FILE_ID"
+author: windows-driver-content
+description: The WOF_EXTERNAL_FILE_ID structure contains a file ID that is used to open a handle to a mini-filter or driver.
+old-location: ifsk\wof_external_file_id.htm
+old-project: ifsk
+ms.assetid: 5C208DF7-C6CB-419D-B775-74E09DC4D448
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ntifs/WOF_EXTERNAL_FILE_ID, WOF_EXTERNAL_FILE_ID structure [Installable File System Drivers], WOF_EXTERNAL_FILE_ID, ifsk.wof_external_file_id, PWOF_EXTERNAL_FILE_ID structure pointer [Installable File System Drivers], PWOF_EXTERNAL_FILE_ID, *PWOF_EXTERNAL_FILE_ID, ntifs/PWOF_EXTERNAL_FILE_ID, _WOF_EXTERNAL_FILE_ID
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntifs.h
+req.include-header: Windows.h, WinIoCtl.h, Ntifs.h, Windows.h, WinIoCtl.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows 10.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntifs.h
+apiname:
+-	WOF_EXTERNAL_FILE_ID
+product: Windows
+targetos: Windows
+req.typenames: WOF_EXTERNAL_FILE_ID, *PWOF_EXTERNAL_FILE_ID
 ---
 
 # _WOF_EXTERNAL_FILE_ID structure

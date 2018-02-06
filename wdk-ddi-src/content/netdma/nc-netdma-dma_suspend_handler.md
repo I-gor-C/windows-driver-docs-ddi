@@ -1,41 +1,46 @@
 ---
-UID : NC:netdma.DMA_SUSPEND_HANDLER
-title : DMA_SUSPEND_HANDLER
-author : windows-driver-content
-description : The ProviderSuspendDma function suspends the DMA transfers that are currently in progress on a DMA channel.
-old-location : netvista\providersuspenddma.htm
-old-project : netvista
-ms.assetid : b020b0c6-eb69-44d0-a374-b39eb2f536f1
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.providersuspenddma, ProviderSuspendDma callback function [Network Drivers Starting with Windows Vista], ProviderSuspendDma, DMA_SUSPEND_HANDLER, DMA_SUSPEND_HANDLER, netdma/ProviderSuspendDma, netdma_ref_f194d9b0-083c-46a1-9e39-aa33c62af512.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : netdma.h
-req.include-header : Netdma.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported for NetDMA 1.0 drivers in Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : MIRACAST_DRIVER_INTERFACE, *PMIRACAST_DRIVER_INTERFACE
+UID: NC:netdma.DMA_SUSPEND_HANDLER
+title: DMA_SUSPEND_HANDLER
+author: windows-driver-content
+description: The ProviderSuspendDma function suspends the DMA transfers that are currently in progress on a DMA channel.
+old-location: netvista\providersuspenddma.htm
+old-project: netvista
+ms.assetid: b020b0c6-eb69-44d0-a374-b39eb2f536f1
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.providersuspenddma, ProviderSuspendDma callback function [Network Drivers Starting with Windows Vista], ProviderSuspendDma, DMA_SUSPEND_HANDLER, DMA_SUSPEND_HANDLER, netdma/ProviderSuspendDma, netdma_ref_f194d9b0-083c-46a1-9e39-aa33c62af512.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: netdma.h
+req.include-header: Netdma.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported for NetDMA 1.0 drivers in Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	netdma.h
+apiname:
+-	ProviderSuspendDma
+product: Windows
+targetos: Windows
+req.typenames: MIRACAST_DRIVER_INTERFACE, *PMIRACAST_DRIVER_INTERFACE
 ---
 
 

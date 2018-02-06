@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFIoRequest3.SetActivityId
-title : IWDFIoRequest3::SetActivityId method
-author : windows-driver-content
-description : The SetActivityId method associates an activity identifier with an I/O request.
-old-location : wdf\iwdfiorequest3_setactivityid.htm
-old-project : wdf
-ms.assetid : 57CB3CED-FE46-4A74-9E23-82640B7EF1DC
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : SetActivityId method, IWDFIoRequest3::SetActivityId, IWDFIoRequest3, SetActivityId method, IWDFIoRequest3 interface, IWDFIoRequest3 interface, SetActivityId method, umdf.iwdfiorequest3_setactivityid, SetActivityId, wdf.iwdfiorequest3_setactivityid, wudfddi/IWDFIoRequest3::SetActivityId
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.11
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFIoRequest3.SetActivityId
+title: IWDFIoRequest3::SetActivityId method
+author: windows-driver-content
+description: The SetActivityId method associates an activity identifier with an I/O request.
+old-location: wdf\iwdfiorequest3_setactivityid.htm
+old-project: wdf
+ms.assetid: 57CB3CED-FE46-4A74-9E23-82640B7EF1DC
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: SetActivityId method, IWDFIoRequest3::SetActivityId, IWDFIoRequest3, SetActivityId method, IWDFIoRequest3 interface, IWDFIoRequest3 interface, SetActivityId method, umdf.iwdfiorequest3_setactivityid, SetActivityId, wdf.iwdfiorequest3_setactivityid, wudfddi/IWDFIoRequest3::SetActivityId
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.11
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFIoRequest3.SetActivityId
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

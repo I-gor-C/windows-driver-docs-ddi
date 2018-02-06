@@ -1,41 +1,46 @@
 ---
-UID : NS:ntdddisk._SENDCMDOUTPARAMS
-title : "_SENDCMDOUTPARAMS"
-author : windows-driver-content
-description : The SENDCMDOUTPARAMS structure is used in conjunction with the SMART_SEND_DRIVE_COMMAND request to retrieve data returned by a Self-Monitoring Analysis and Reporting Technology (SMART) command.
-old-location : storage\sendcmdoutparams.htm
-old-project : storage
-ms.assetid : e9fb6d5c-258c-46eb-ba3a-3f10008fdf68
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : PSENDCMDOUTPARAMS structure pointer [Storage Devices], LPSENDCMDOUTPARAMS, _SENDCMDOUTPARAMS, ntdddisk/LPSENDCMDOUTPARAMS, LPSENDCMDOUTPARAMS structure pointer [Storage Devices], *LPSENDCMDOUTPARAMS, storage.sendcmdoutparams, PSENDCMDOUTPARAMS, ntdddisk/PSENDCMDOUTPARAMS, *PSENDCMDOUTPARAMS, SENDCMDOUTPARAMS, structs-IDE_d1a70016-0e77-465a-9368-665975369bdc.xml, ntdddisk/SENDCMDOUTPARAMS, SENDCMDOUTPARAMS structure [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntdddisk.h
-req.include-header : Ntdddisk.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SENDCMDOUTPARAMS, *PSENDCMDOUTPARAMS, *LPSENDCMDOUTPARAMS
+UID: NS:ntdddisk._SENDCMDOUTPARAMS
+title: "_SENDCMDOUTPARAMS"
+author: windows-driver-content
+description: The SENDCMDOUTPARAMS structure is used in conjunction with the SMART_SEND_DRIVE_COMMAND request to retrieve data returned by a Self-Monitoring Analysis and Reporting Technology (SMART) command.
+old-location: storage\sendcmdoutparams.htm
+old-project: storage
+ms.assetid: e9fb6d5c-258c-46eb-ba3a-3f10008fdf68
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: PSENDCMDOUTPARAMS structure pointer [Storage Devices], LPSENDCMDOUTPARAMS, _SENDCMDOUTPARAMS, ntdddisk/LPSENDCMDOUTPARAMS, LPSENDCMDOUTPARAMS structure pointer [Storage Devices], *LPSENDCMDOUTPARAMS, storage.sendcmdoutparams, PSENDCMDOUTPARAMS, ntdddisk/PSENDCMDOUTPARAMS, *PSENDCMDOUTPARAMS, SENDCMDOUTPARAMS, structs-IDE_d1a70016-0e77-465a-9368-665975369bdc.xml, ntdddisk/SENDCMDOUTPARAMS, SENDCMDOUTPARAMS structure [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntdddisk.h
+req.include-header: Ntdddisk.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntdddisk.h
+apiname:
+-	SENDCMDOUTPARAMS
+product: Windows
+targetos: Windows
+req.typenames: SENDCMDOUTPARAMS, *PSENDCMDOUTPARAMS, *LPSENDCMDOUTPARAMS
 ---
 
 # _SENDCMDOUTPARAMS structure

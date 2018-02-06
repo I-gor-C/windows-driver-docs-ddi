@@ -1,41 +1,46 @@
 ---
-UID : NS:ntdddisk._DISK_DETECTION_INFO
-title : "_DISK_DETECTION_INFO"
-author : windows-driver-content
-description : The DISK_DETECTION_INFO structure contains the detected drive parameters that are supplied by an x86 PC BIOS on boot.
-old-location : storage\disk_detection_info.htm
-old-project : storage
-ms.assetid : 67a508cf-79c4-4c86-9ad3-fa7cca99cf5f
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : DISK_DETECTION_INFO, _DISK_DETECTION_INFO, PDISK_DETECTION_INFO structure pointer [Storage Devices], DISK_DETECTION_INFO structure [Storage Devices], ntdddisk/DISK_DETECTION_INFO, storage.disk_detection_info, ntdddisk/PDISK_DETECTION_INFO, structs-disk_04ca1cb1-3995-47d9-9b5a-0e54ea98dbd6.xml, *PDISK_DETECTION_INFO, PDISK_DETECTION_INFO
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntdddisk.h
-req.include-header : Ntdddisk.h, Ntddk.h, Ntdddisk.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDISK_DETECTION_INFO, DISK_DETECTION_INFO"
+UID: NS:ntdddisk._DISK_DETECTION_INFO
+title: "_DISK_DETECTION_INFO"
+author: windows-driver-content
+description: The DISK_DETECTION_INFO structure contains the detected drive parameters that are supplied by an x86 PC BIOS on boot.
+old-location: storage\disk_detection_info.htm
+old-project: storage
+ms.assetid: 67a508cf-79c4-4c86-9ad3-fa7cca99cf5f
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: DISK_DETECTION_INFO, _DISK_DETECTION_INFO, PDISK_DETECTION_INFO structure pointer [Storage Devices], DISK_DETECTION_INFO structure [Storage Devices], ntdddisk/DISK_DETECTION_INFO, storage.disk_detection_info, ntdddisk/PDISK_DETECTION_INFO, structs-disk_04ca1cb1-3995-47d9-9b5a-0e54ea98dbd6.xml, *PDISK_DETECTION_INFO, PDISK_DETECTION_INFO
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntdddisk.h
+req.include-header: Ntdddisk.h, Ntddk.h, Ntdddisk.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntdddisk.h
+apiname:
+-	DISK_DETECTION_INFO
+product: Windows
+targetos: Windows
+req.typenames: "*PDISK_DETECTION_INFO, DISK_DETECTION_INFO"
 ---
 
 # _DISK_DETECTION_INFO structure

@@ -1,41 +1,49 @@
 ---
-UID : NF:irb.AtaPortReadRegisterUshort
-title : AtaPortReadRegisterUshort function
-author : windows-driver-content
-description : The AtaPortReadRegisterUshort routine reads a USHORT value from the HBA.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
-old-location : storage\ataportreadregisterushort.htm
-old-project : storage
-ms.assetid : a0a9792c-a2a1-4079-9e1c-c41c5b872fa0
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ataportreadregisterushort, AtaPortReadRegisterUshort routine [Storage Devices], irb/AtaPortReadRegisterUshort, atartns_4173b6fd-0784-4279-ae9e-d51469a000c6.xml, AtaPortReadRegisterUshort
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : irb.h
-req.include-header : Ata.h, Irb.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ataport.lib; Pciidex.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : IDE_POWER_STATE
+UID: NF:irb.AtaPortReadRegisterUshort
+title: AtaPortReadRegisterUshort function
+author: windows-driver-content
+description: The AtaPortReadRegisterUshort routine reads a USHORT value from the HBA.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
+old-location: storage\ataportreadregisterushort.htm
+old-project: storage
+ms.assetid: a0a9792c-a2a1-4079-9e1c-c41c5b872fa0
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ataportreadregisterushort, AtaPortReadRegisterUshort routine [Storage Devices], irb/AtaPortReadRegisterUshort, atartns_4173b6fd-0784-4279-ae9e-d51469a000c6.xml, AtaPortReadRegisterUshort
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: irb.h
+req.include-header: Ata.h, Irb.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ataport.lib; Pciidex.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ataport.lib
+-	ataport.dll
+-	pciidex.lib
+-	pciidex.dll
+apiname:
+-	AtaPortReadRegisterUshort
+product: Windows
+targetos: Windows
+req.typenames: IDE_POWER_STATE
 ---
 
 

@@ -1,41 +1,47 @@
 ---
-UID : NF:fltkernel.FltCreateFileEx2
-title : FltCreateFileEx2 function
-author : windows-driver-content
-description : Minifilter drivers call FltCreateFileEx2 to create a new file or open an existing file. This routine also includes an optional create context parameter.
-old-location : ifsk\fltcreatefileex2.htm
-old-project : ifsk
-ms.assetid : e662472d-4d72-449e-91d7-119bd59e0943
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltCreateFileEx2 routine [Installable File System Drivers], fltkernel/FltCreateFileEx2, FltCreateFileEx2, FltApiRef_a_to_d_21436e16-822a-4250-abac-10346593435f.xml, ifsk.fltcreatefileex2
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : FltKernel.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Fltmgr.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltCreateFileEx2
+title: FltCreateFileEx2 function
+author: windows-driver-content
+description: Minifilter drivers call FltCreateFileEx2 to create a new file or open an existing file. This routine also includes an optional create context parameter.
+old-location: ifsk\fltcreatefileex2.htm
+old-project: ifsk
+ms.assetid: e662472d-4d72-449e-91d7-119bd59e0943
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltCreateFileEx2 routine [Installable File System Drivers], fltkernel/FltCreateFileEx2, FltCreateFileEx2, FltApiRef_a_to_d_21436e16-822a-4250-abac-10346593435f.xml, ifsk.fltcreatefileex2
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: FltKernel.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Fltmgr.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Fltmgr.lib
+-	Fltmgr.dll
+apiname:
+-	FltCreateFileEx2
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

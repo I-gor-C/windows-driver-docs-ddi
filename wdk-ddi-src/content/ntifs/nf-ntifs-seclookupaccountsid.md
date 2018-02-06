@@ -1,41 +1,47 @@
 ---
-UID : NF:ntifs.SecLookupAccountSid
-title : SecLookupAccountSid function
-author : windows-driver-content
-description : SecLookupAccountSid accepts a security identifier (SID) as input. It retrieves the name of the account for this SID and the name of the first domain on which this SID is found.
-old-location : ifsk\seclookupaccountsid.htm
-old-project : ifsk
-ms.assetid : 7237a041-46e0-4211-97c1-96d309ada602
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : SecLookupAccountSid, ksecddref_ba65e59c-5c9a-47bb-bf2c-9b3b8c727bb6.xml, ifsk.seclookupaccountsid, SecLookupAccountSid function [Installable File System Drivers], ntifs/SecLookupAccountSid
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : This SecLookupAccountSid function is only available on Windows XP and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ksecdd.lib
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.SecLookupAccountSid
+title: SecLookupAccountSid function
+author: windows-driver-content
+description: SecLookupAccountSid accepts a security identifier (SID) as input. It retrieves the name of the account for this SID and the name of the first domain on which this SID is found.
+old-location: ifsk\seclookupaccountsid.htm
+old-project: ifsk
+ms.assetid: 7237a041-46e0-4211-97c1-96d309ada602
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: SecLookupAccountSid, ksecddref_ba65e59c-5c9a-47bb-bf2c-9b3b8c727bb6.xml, ifsk.seclookupaccountsid, SecLookupAccountSid function [Installable File System Drivers], ntifs/SecLookupAccountSid
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: This SecLookupAccountSid function is only available on Windows XP and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ksecdd.lib
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ksecdd.lib
+-	Ksecdd.dll
+apiname:
+-	SecLookupAccountSid
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

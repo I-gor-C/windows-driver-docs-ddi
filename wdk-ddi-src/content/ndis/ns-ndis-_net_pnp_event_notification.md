@@ -1,41 +1,46 @@
 ---
-UID : NS:ndis._NET_PNP_EVENT_NOTIFICATION
-title : "_NET_PNP_EVENT_NOTIFICATION"
-author : windows-driver-content
-description : The NET_PNP_EVENT_NOTIFICATION structure describes a network Plug and Play (PnP) event, an NDIS PnP event, or a power management event.
-old-location : netvista\net_pnp_event_notification.htm
-old-project : netvista
-ms.assetid : 58d3baf3-a1fa-42ae-b795-2774a148aeda
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : "*PNET_PNP_EVENT_NOTIFICATION, NET_PNP_EVENT_NOTIFICATION structure [Network Drivers Starting with Windows Vista], PNET_PNP_EVENT_NOTIFICATION structure pointer [Network Drivers Starting with Windows Vista], NET_PNP_EVENT_NOTIFICATION, _NET_PNP_EVENT_NOTIFICATION, netvista.net_pnp_event_notification, protocol_structures_ref_48e5c834-8115-4a76-bf0d-bcbea8866d20.xml, PNET_PNP_EVENT_NOTIFICATION, ndis/PNET_PNP_EVENT_NOTIFICATION, ndis/NET_PNP_EVENT_NOTIFICATION"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : See Remarks section
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PNET_PNP_EVENT_NOTIFICATION, NET_PNP_EVENT_NOTIFICATION"
+UID: NS:ndis._NET_PNP_EVENT_NOTIFICATION
+title: "_NET_PNP_EVENT_NOTIFICATION"
+author: windows-driver-content
+description: The NET_PNP_EVENT_NOTIFICATION structure describes a network Plug and Play (PnP) event, an NDIS PnP event, or a power management event.
+old-location: netvista\net_pnp_event_notification.htm
+old-project: netvista
+ms.assetid: 58d3baf3-a1fa-42ae-b795-2774a148aeda
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: "*PNET_PNP_EVENT_NOTIFICATION, NET_PNP_EVENT_NOTIFICATION structure [Network Drivers Starting with Windows Vista], PNET_PNP_EVENT_NOTIFICATION structure pointer [Network Drivers Starting with Windows Vista], NET_PNP_EVENT_NOTIFICATION, _NET_PNP_EVENT_NOTIFICATION, netvista.net_pnp_event_notification, protocol_structures_ref_48e5c834-8115-4a76-bf0d-bcbea8866d20.xml, PNET_PNP_EVENT_NOTIFICATION, ndis/PNET_PNP_EVENT_NOTIFICATION, ndis/NET_PNP_EVENT_NOTIFICATION"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: See Remarks section
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndis.h
+apiname:
+-	NET_PNP_EVENT_NOTIFICATION
+product: Windows
+targetos: Windows
+req.typenames: "*PNET_PNP_EVENT_NOTIFICATION, NET_PNP_EVENT_NOTIFICATION"
 ---
 
 # _NET_PNP_EVENT_NOTIFICATION structure

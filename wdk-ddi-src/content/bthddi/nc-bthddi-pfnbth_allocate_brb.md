@@ -1,41 +1,46 @@
 ---
-UID : NC:bthddi.PFNBTH_ALLOCATE_BRB
-title : PFNBTH_ALLOCATE_BRB
-author : windows-driver-content
-description : The BthAllocateBrb function allocates a Bluetooth request block (BRB) of the specified type.
-old-location : bltooth\bthallocatebrb.htm
-old-project : bltooth
-ms.assetid : e1ac9d4c-75e2-4d37-86d7-3c3f1486222e
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : bltooth.bthallocatebrb, BthAllocateBrb callback function [Bluetooth Devices], BthAllocateBrb, PFNBTH_ALLOCATE_BRB, PFNBTH_ALLOCATE_BRB, bthddi/BthAllocateBrb, bth_funcs_db0aa96f-62de-40f5-bcce-2aa7e930af3d.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : bthddi.h
-req.include-header : Bthddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Versions:\_Supported in Windows Vista, and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PMPEG2_TRANSPORT_STRIDE, MPEG2_TRANSPORT_STRIDE"
+UID: NC:bthddi.PFNBTH_ALLOCATE_BRB
+title: PFNBTH_ALLOCATE_BRB
+author: windows-driver-content
+description: The BthAllocateBrb function allocates a Bluetooth request block (BRB) of the specified type.
+old-location: bltooth\bthallocatebrb.htm
+old-project: bltooth
+ms.assetid: e1ac9d4c-75e2-4d37-86d7-3c3f1486222e
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: bltooth.bthallocatebrb, BthAllocateBrb callback function [Bluetooth Devices], BthAllocateBrb, PFNBTH_ALLOCATE_BRB, PFNBTH_ALLOCATE_BRB, bthddi/BthAllocateBrb, bth_funcs_db0aa96f-62de-40f5-bcce-2aa7e930af3d.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: bthddi.h
+req.include-header: Bthddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Versions:\_Supported in Windows Vista, and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	bthddi.h
+apiname:
+-	BthAllocateBrb
+product: Windows
+targetos: Windows
+req.typenames: "*PMPEG2_TRANSPORT_STRIDE, MPEG2_TRANSPORT_STRIDE"
 ---
 
 

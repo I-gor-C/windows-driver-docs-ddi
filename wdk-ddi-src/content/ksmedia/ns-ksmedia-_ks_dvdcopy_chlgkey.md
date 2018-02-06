@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia._KS_DVDCOPY_CHLGKEY
-title : "_KS_DVDCOPY_CHLGKEY"
-author : windows-driver-content
-description : The KS_DVDCOPY_CHLGKEY structure is used to describe the challenge key information for the DVD copyright protection authentication process.
-old-location : stream\ks_dvdcopy_chlgkey.htm
-old-project : stream
-ms.assetid : 10be15fc-ca0e-40d4-8fe9-9682478f5c5b
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KS_DVDCOPY_CHLGKEY structure [Streaming Media Devices], ksmedia/KS_DVDCOPY_CHLGKEY, KS_DVDCOPY_CHLGKEY, PKS_DVDCOPY_CHLGKEY structure pointer [Streaming Media Devices], PKS_DVDCOPY_CHLGKEY, _KS_DVDCOPY_CHLGKEY, stream.ks_dvdcopy_chlgkey, ksmedia/PKS_DVDCOPY_CHLGKEY, dvdref_af25bbe5-5caf-4cd7-be78-1d905a50ef82.xml, *PKS_DVDCOPY_CHLGKEY
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KS_DVDCOPY_CHLGKEY, *PKS_DVDCOPY_CHLGKEY
+UID: NS:ksmedia._KS_DVDCOPY_CHLGKEY
+title: "_KS_DVDCOPY_CHLGKEY"
+author: windows-driver-content
+description: The KS_DVDCOPY_CHLGKEY structure is used to describe the challenge key information for the DVD copyright protection authentication process.
+old-location: stream\ks_dvdcopy_chlgkey.htm
+old-project: stream
+ms.assetid: 10be15fc-ca0e-40d4-8fe9-9682478f5c5b
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KS_DVDCOPY_CHLGKEY structure [Streaming Media Devices], ksmedia/KS_DVDCOPY_CHLGKEY, KS_DVDCOPY_CHLGKEY, PKS_DVDCOPY_CHLGKEY structure pointer [Streaming Media Devices], PKS_DVDCOPY_CHLGKEY, _KS_DVDCOPY_CHLGKEY, stream.ks_dvdcopy_chlgkey, ksmedia/PKS_DVDCOPY_CHLGKEY, dvdref_af25bbe5-5caf-4cd7-be78-1d905a50ef82.xml, *PKS_DVDCOPY_CHLGKEY
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	KS_DVDCOPY_CHLGKEY
+product: Windows
+targetos: Windows
+req.typenames: KS_DVDCOPY_CHLGKEY, *PKS_DVDCOPY_CHLGKEY
 ---
 
 # _KS_DVDCOPY_CHLGKEY structure

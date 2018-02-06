@@ -1,42 +1,47 @@
 ---
-UID : NI:usbscan.IOCTL_GET_USB_DESCRIPTOR
-title : IOCTL_GET_USB_DESCRIPTOR
-author : windows-driver-content
-description : Returns a specified USB Descriptor.
-old-location : image\ioctl_get_usb_descriptor.htm
-old-project : image
-ms.assetid : a5490a2a-d406-4029-b8be-446236a936bb
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : image.ioctl_get_usb_descriptor, IOCTL_GET_USB_DESCRIPTOR control code [Imaging Devices], IOCTL_GET_USB_DESCRIPTOR, usbscan/IOCTL_GET_USB_DESCRIPTOR, stifnc_9d8ca100-d268-4e51-88fb-925e0a029ece.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : usbscan.h
-req.include-header : Usbscan.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RAW_PIPE_TYPE
-req.product : Windows 10 or later.
+UID: NI:usbscan.IOCTL_GET_USB_DESCRIPTOR
+title: IOCTL_GET_USB_DESCRIPTOR
+author: windows-driver-content
+description: Returns a specified USB Descriptor.
+old-location: image\ioctl_get_usb_descriptor.htm
+old-project: image
+ms.assetid: a5490a2a-d406-4029-b8be-446236a936bb
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: image.ioctl_get_usb_descriptor, IOCTL_GET_USB_DESCRIPTOR control code [Imaging Devices], IOCTL_GET_USB_DESCRIPTOR, usbscan/IOCTL_GET_USB_DESCRIPTOR, stifnc_9d8ca100-d268-4e51-88fb-925e0a029ece.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: usbscan.h
+req.include-header: Usbscan.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Usbscan.h
+apiname:
+-	IOCTL_GET_USB_DESCRIPTOR
+product: Windows
+targetos: Windows
+req.typenames: RAW_PIPE_TYPE
+req.product: Windows 10 or later.
 ---
 
 # IOCTL_GET_USB_DESCRIPTOR IOCTL

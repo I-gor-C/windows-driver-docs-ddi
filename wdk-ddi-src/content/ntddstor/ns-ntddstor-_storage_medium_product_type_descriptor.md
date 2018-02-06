@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddstor._STORAGE_MEDIUM_PRODUCT_TYPE_DESCRIPTOR
-title : "_STORAGE_MEDIUM_PRODUCT_TYPE_DESCRIPTOR"
-author : windows-driver-content
-description : Used in conjunction with the IOCTL_STORAGE_QUERY_PROPERTY request to describe the product type of a storage device.
-old-location : storage\storage_medium_product_type_descriptor.htm
-old-project : storage
-ms.assetid : AC0C09DF-EFD4-457B-8ABC-C60890D3AF6A
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : ntddstor/STORAGE_MEDIUM_PRODUCT_TYPE_DESCRIPTOR, ntddstor/PSTORAGE_MEDIUM_PRODUCT_TYPE_DESCRIPTOR, PSTORAGE_MEDIUM_PRODUCT_TYPE_DESCRIPTOR, storage.storage_medium_product_type_descriptor, STORAGE_MEDIUM_PRODUCT_TYPE_DESCRIPTOR, _STORAGE_MEDIUM_PRODUCT_TYPE_DESCRIPTOR, STORAGE_MEDIUM_PRODUCT_TYPE_DESCRIPTOR structure [Storage Devices], PSTORAGE_MEDIUM_PRODUCT_TYPE_DESCRIPTOR structure pointer [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddstor.h
-req.include-header : Ntddstor.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8.1
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PSTORAGE_MEDIUM_PRODUCT_TYPE_DESCRIPTOR, STORAGE_MEDIUM_PRODUCT_TYPE_DESCRIPTOR
+UID: NS:ntddstor._STORAGE_MEDIUM_PRODUCT_TYPE_DESCRIPTOR
+title: "_STORAGE_MEDIUM_PRODUCT_TYPE_DESCRIPTOR"
+author: windows-driver-content
+description: Used in conjunction with the IOCTL_STORAGE_QUERY_PROPERTY request to describe the product type of a storage device.
+old-location: storage\storage_medium_product_type_descriptor.htm
+old-project: storage
+ms.assetid: AC0C09DF-EFD4-457B-8ABC-C60890D3AF6A
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: ntddstor/STORAGE_MEDIUM_PRODUCT_TYPE_DESCRIPTOR, ntddstor/PSTORAGE_MEDIUM_PRODUCT_TYPE_DESCRIPTOR, PSTORAGE_MEDIUM_PRODUCT_TYPE_DESCRIPTOR, storage.storage_medium_product_type_descriptor, STORAGE_MEDIUM_PRODUCT_TYPE_DESCRIPTOR, _STORAGE_MEDIUM_PRODUCT_TYPE_DESCRIPTOR, STORAGE_MEDIUM_PRODUCT_TYPE_DESCRIPTOR structure [Storage Devices], PSTORAGE_MEDIUM_PRODUCT_TYPE_DESCRIPTOR structure pointer [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddstor.h
+req.include-header: Ntddstor.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8.1
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddstor.h
+apiname:
+-	STORAGE_MEDIUM_PRODUCT_TYPE_DESCRIPTOR
+product: Windows
+targetos: Windows
+req.typenames: PSTORAGE_MEDIUM_PRODUCT_TYPE_DESCRIPTOR, STORAGE_MEDIUM_PRODUCT_TYPE_DESCRIPTOR
 ---
 
 # _STORAGE_MEDIUM_PRODUCT_TYPE_DESCRIPTOR structure

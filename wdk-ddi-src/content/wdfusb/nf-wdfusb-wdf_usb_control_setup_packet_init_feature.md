@@ -1,42 +1,47 @@
 ---
-UID : NF:wdfusb.WDF_USB_CONTROL_SETUP_PACKET_INIT_FEATURE
-title : WDF_USB_CONTROL_SETUP_PACKET_INIT_FEATURE function
-author : windows-driver-content
-description : The WDF_USB_CONTROL_SETUP_PACKET_INIT_FEATURE function initializes a WDF_USB_CONTROL_SETUP_PACKET structure for a USB control transfer that sets or clears a device feature.
-old-location : wdf\wdf_usb_control_setup_packet_init_feature.htm
-old-project : wdf
-ms.assetid : ef3f7b9f-8b4b-4d47-8457-17452e3e918a
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : DFUsbRef_becbf646-e647-4337-a1cb-05a72c3dd215.xml, kmdf.wdf_usb_control_setup_packet_init_feature, WDF_USB_CONTROL_SETUP_PACKET_INIT_FEATURE function, WDF_USB_CONTROL_SETUP_PACKET_INIT_FEATURE, wdfusb/WDF_USB_CONTROL_SETUP_PACKET_INIT_FEATURE, wdf.wdf_usb_control_setup_packet_init_feature
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfusb.h
-req.include-header : Wdfusb.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfusb.WDF_USB_CONTROL_SETUP_PACKET_INIT_FEATURE
+title: WDF_USB_CONTROL_SETUP_PACKET_INIT_FEATURE function
+author: windows-driver-content
+description: The WDF_USB_CONTROL_SETUP_PACKET_INIT_FEATURE function initializes a WDF_USB_CONTROL_SETUP_PACKET structure for a USB control transfer that sets or clears a device feature.
+old-location: wdf\wdf_usb_control_setup_packet_init_feature.htm
+old-project: wdf
+ms.assetid: ef3f7b9f-8b4b-4d47-8457-17452e3e918a
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: DFUsbRef_becbf646-e647-4337-a1cb-05a72c3dd215.xml, kmdf.wdf_usb_control_setup_packet_init_feature, WDF_USB_CONTROL_SETUP_PACKET_INIT_FEATURE function, WDF_USB_CONTROL_SETUP_PACKET_INIT_FEATURE, wdfusb/WDF_USB_CONTROL_SETUP_PACKET_INIT_FEATURE, wdf.wdf_usb_control_setup_packet_init_feature
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfusb.h
+req.include-header: Wdfusb.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfusb.h
+apiname:
+-	WDF_USB_CONTROL_SETUP_PACKET_INIT_FEATURE
+product: Windows
+targetos: Windows
+req.typenames: WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
+req.product: Windows 10 or later.
 ---
 
 

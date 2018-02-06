@@ -1,42 +1,47 @@
 ---
-UID : NF:scsiwmi.ScsiPortWmiFireLogicalUnitEvent
-title : ScsiPortWmiFireLogicalUnitEvent function
-author : windows-driver-content
-description : The ScsiPortWmiFireLogicalUnitEvent routine sends an event associated with a logical unit to the port driver for delivery to WMI data consumers that have requested notification of the event.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. Instead, we recommend using the Storport driver and Storport miniport driver models.
-old-location : storage\scsiportwmifirelogicalunitevent.htm
-old-project : storage
-ms.assetid : f8bfc6cb-78d4-482b-b08b-0d86631ce979
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : scsiprt_67f96e3c-cc69-44a7-b324-a247a9a928cc.xml, scsiwmi/ScsiPortWmiFireLogicalUnitEvent, ScsiPortWmiFireLogicalUnitEvent, ScsiPortWmiFireLogicalUnitEvent routine [Storage Devices], storage.scsiportwmifirelogicalunitevent
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : scsiwmi.h
-req.include-header : Miniport.h, Scsi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SCSIWMI_ENABLE_DISABLE_CONTROL
-req.product : Windows 10 or later.
+UID: NF:scsiwmi.ScsiPortWmiFireLogicalUnitEvent
+title: ScsiPortWmiFireLogicalUnitEvent function
+author: windows-driver-content
+description: The ScsiPortWmiFireLogicalUnitEvent routine sends an event associated with a logical unit to the port driver for delivery to WMI data consumers that have requested notification of the event.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. Instead, we recommend using the Storport driver and Storport miniport driver models.
+old-location: storage\scsiportwmifirelogicalunitevent.htm
+old-project: storage
+ms.assetid: f8bfc6cb-78d4-482b-b08b-0d86631ce979
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: scsiprt_67f96e3c-cc69-44a7-b324-a247a9a928cc.xml, scsiwmi/ScsiPortWmiFireLogicalUnitEvent, ScsiPortWmiFireLogicalUnitEvent, ScsiPortWmiFireLogicalUnitEvent routine [Storage Devices], storage.scsiportwmifirelogicalunitevent
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: scsiwmi.h
+req.include-header: Miniport.h, Scsi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	scsiwmi.h
+apiname:
+-	ScsiPortWmiFireLogicalUnitEvent
+product: Windows
+targetos: Windows
+req.typenames: SCSIWMI_ENABLE_DISABLE_CONTROL
+req.product: Windows 10 or later.
 ---
 
 

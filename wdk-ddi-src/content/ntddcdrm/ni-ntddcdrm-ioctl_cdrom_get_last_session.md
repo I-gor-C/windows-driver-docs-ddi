@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddcdrm.IOCTL_CDROM_GET_LAST_SESSION
-title : IOCTL_CDROM_GET_LAST_SESSION
-author : windows-driver-content
-description : Queries the device for the first complete session number, the last complete session number, and the last complete session starting address.
-old-location : storage\ioctl_cdrom_get_last_session.htm
-old-project : storage
-ms.assetid : a05da124-f486-4658-87d8-6c1b423694b3
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_cdrom_get_last_session, IOCTL_CDROM_GET_LAST_SESSION control code [Storage Devices], IOCTL_CDROM_GET_LAST_SESSION, ntddcdrm/IOCTL_CDROM_GET_LAST_SESSION, k307_f2597708-18cf-4f97-87f8-2d1c2e9a75ea.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddcdrm.h
-req.include-header : Ntddcdrm.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WRITE_ROTATION, *PWRITE_ROTATION
+UID: NI:ntddcdrm.IOCTL_CDROM_GET_LAST_SESSION
+title: IOCTL_CDROM_GET_LAST_SESSION
+author: windows-driver-content
+description: Queries the device for the first complete session number, the last complete session number, and the last complete session starting address.
+old-location: storage\ioctl_cdrom_get_last_session.htm
+old-project: storage
+ms.assetid: a05da124-f486-4658-87d8-6c1b423694b3
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_cdrom_get_last_session, IOCTL_CDROM_GET_LAST_SESSION control code [Storage Devices], IOCTL_CDROM_GET_LAST_SESSION, ntddcdrm/IOCTL_CDROM_GET_LAST_SESSION, k307_f2597708-18cf-4f97-87f8-2d1c2e9a75ea.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddcdrm.h
+req.include-header: Ntddcdrm.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddcdrm.h
+apiname:
+-	IOCTL_CDROM_GET_LAST_SESSION
+product: Windows
+targetos: Windows
+req.typenames: WRITE_ROTATION, *PWRITE_ROTATION
 ---
 
 # IOCTL_CDROM_GET_LAST_SESSION IOCTL

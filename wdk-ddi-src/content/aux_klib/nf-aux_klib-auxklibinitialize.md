@@ -1,41 +1,47 @@
 ---
-UID : NF:aux_klib.AuxKlibInitialize
-title : AuxKlibInitialize function
-author : windows-driver-content
-description : The AuxKlibInitialize routine initializes the Auxiliary Kernel-Mode Library.
-old-location : kernel\auxklibinitialize.htm
-old-project : kernel
-ms.assetid : 7e15cbe1-17f7-4df7-9273-9a365d309d03
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : aux_klib/AuxKlibInitialize, AuxKlibInitialize, aux_klib_d83fd3ae-3a26-4798-9ef8-1530adb78543.xml, AuxKlibInitialize routine [Kernel-Mode Driver Architecture], kernel.auxklibinitialize
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : aux_klib.h
-req.include-header : Aux_klib.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Aux_Klib.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : REPORT_ZONES_EXT_DATA, *PREPORT_ZONES_EXT_DATA
+UID: NF:aux_klib.AuxKlibInitialize
+title: AuxKlibInitialize function
+author: windows-driver-content
+description: The AuxKlibInitialize routine initializes the Auxiliary Kernel-Mode Library.
+old-location: kernel\auxklibinitialize.htm
+old-project: kernel
+ms.assetid: 7e15cbe1-17f7-4df7-9273-9a365d309d03
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: aux_klib/AuxKlibInitialize, AuxKlibInitialize, aux_klib_d83fd3ae-3a26-4798-9ef8-1530adb78543.xml, AuxKlibInitialize routine [Kernel-Mode Driver Architecture], kernel.auxklibinitialize
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: aux_klib.h
+req.include-header: Aux_klib.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Aux_Klib.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Aux_Klib.lib
+-	Aux_Klib.dll
+apiname:
+-	AuxKlibInitialize
+product: Windows
+targetos: Windows
+req.typenames: REPORT_ZONES_EXT_DATA, *PREPORT_ZONES_EXT_DATA
 ---
 
 

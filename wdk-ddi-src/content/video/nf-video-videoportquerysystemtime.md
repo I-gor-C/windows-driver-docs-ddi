@@ -1,42 +1,47 @@
 ---
-UID : NF:video.VideoPortQuerySystemTime
-title : VideoPortQuerySystemTime function
-author : windows-driver-content
-description : The VideoPortQuerySystemTime function obtains the current system time.
-old-location : display\videoportquerysystemtime.htm
-old-project : display
-ms.assetid : d9b54710-6ad2-4959-9172-76c90468d343
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : VideoPort_Functions_18c4e015-b294-40e0-8aef-7642d3a9cb27.xml, display.videoportquerysystemtime, VideoPortQuerySystemTime function [Display Devices], VideoPortQuerySystemTime, video/VideoPortQuerySystemTime
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows XP and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Videoprt.lib
-req.dll : Videoprt.sys
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_PORT_SERVICES
-req.product : Windows 10 or later.
+UID: NF:video.VideoPortQuerySystemTime
+title: VideoPortQuerySystemTime function
+author: windows-driver-content
+description: The VideoPortQuerySystemTime function obtains the current system time.
+old-location: display\videoportquerysystemtime.htm
+old-project: display
+ms.assetid: d9b54710-6ad2-4959-9172-76c90468d343
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: VideoPort_Functions_18c4e015-b294-40e0-8aef-7642d3a9cb27.xml, display.videoportquerysystemtime, VideoPortQuerySystemTime function [Display Devices], VideoPortQuerySystemTime, video/VideoPortQuerySystemTime
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows XP and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Videoprt.lib
+req.dll: Videoprt.sys
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Videoprt.sys
+apiname:
+-	VideoPortQuerySystemTime
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_PORT_SERVICES
+req.product: Windows 10 or later.
 ---
 
 

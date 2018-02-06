@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltReuseCallbackData
-title : FltReuseCallbackData function
-author : windows-driver-content
-description : The FltReuseCallbackData routine reinitializes a callback data structure so that it can be reused.
-old-location : ifsk\fltreusecallbackdata.htm
-old-project : ifsk
-ms.assetid : c8671ba7-6128-4f0f-b5b1-32ce35e31168
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : fltkernel/FltReuseCallbackData, FltApiRef_p_to_z_a412f56d-8cee-40de-93fb-1c007fe87c3c.xml, FltReuseCallbackData routine [Installable File System Drivers], ifsk.fltreusecallbackdata, FltReuseCallbackData
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltReuseCallbackData
+title: FltReuseCallbackData function
+author: windows-driver-content
+description: The FltReuseCallbackData routine reinitializes a callback data structure so that it can be reused.
+old-location: ifsk\fltreusecallbackdata.htm
+old-project: ifsk
+ms.assetid: c8671ba7-6128-4f0f-b5b1-32ce35e31168
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: fltkernel/FltReuseCallbackData, FltApiRef_p_to_z_a412f56d-8cee-40de-93fb-1c007fe87c3c.xml, FltReuseCallbackData routine [Installable File System Drivers], ifsk.fltreusecallbackdata, FltReuseCallbackData
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltReuseCallbackData
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

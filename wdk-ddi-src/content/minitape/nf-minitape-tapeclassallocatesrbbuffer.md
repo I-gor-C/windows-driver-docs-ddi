@@ -1,41 +1,47 @@
 ---
-UID : NF:minitape.TapeClassAllocateSrbBuffer
-title : TapeClassAllocateSrbBuffer function
-author : windows-driver-content
-description : The TapeClassAllocateSrbBuffer routine allocates an Srb-&gt;DataBuffer.
-old-location : storage\tapeclassallocatesrbbuffer.htm
-old-project : storage
-ms.assetid : f6762d9b-5a3d-49a3-b954-48e4e4a9eacb
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : tapeclas_77717175-fd25-4cbe-8baf-8c326a5ec152.xml, TapeClassAllocateSrbBuffer routine [Storage Devices], TapeClassAllocateSrbBuffer, storage.tapeclassallocatesrbbuffer, minitape/TapeClassAllocateSrbBuffer
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : minitape.h
-req.include-header : Minitape.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Tape.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TAPE_STATUS, *PTAPE_STATUS
+UID: NF:minitape.TapeClassAllocateSrbBuffer
+title: TapeClassAllocateSrbBuffer function
+author: windows-driver-content
+description: The TapeClassAllocateSrbBuffer routine allocates an Srb-&gt;DataBuffer.
+old-location: storage\tapeclassallocatesrbbuffer.htm
+old-project: storage
+ms.assetid: f6762d9b-5a3d-49a3-b954-48e4e4a9eacb
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: tapeclas_77717175-fd25-4cbe-8baf-8c326a5ec152.xml, TapeClassAllocateSrbBuffer routine [Storage Devices], TapeClassAllocateSrbBuffer, storage.tapeclassallocatesrbbuffer, minitape/TapeClassAllocateSrbBuffer
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: minitape.h
+req.include-header: Minitape.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Tape.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Tape.lib
+-	Tape.dll
+apiname:
+-	TapeClassAllocateSrbBuffer
+product: Windows
+targetos: Windows
+req.typenames: TAPE_STATUS, *PTAPE_STATUS
 ---
 
 

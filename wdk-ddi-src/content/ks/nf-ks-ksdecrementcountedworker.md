@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsDecrementCountedWorker
-title : KsDecrementCountedWorker function
-author : windows-driver-content
-description : Decrements the current worker count of a worker previous created by KsRegisterCountedWorker. This should be called after each task within a worker has been completed.
-old-location : stream\ksdecrementcountedworker.htm
-old-project : stream
-ms.assetid : 2b38e4df-e5b6-480b-bd4e-62e059e26411
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KsDecrementCountedWorker function [Streaming Media Devices], KsDecrementCountedWorker, ksfunc_7ddba520-3deb-4160-87e1-a12d2210b5da.xml, stream.ksdecrementcountedworker, ks/KsDecrementCountedWorker
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsDecrementCountedWorker
+title: KsDecrementCountedWorker function
+author: windows-driver-content
+description: Decrements the current worker count of a worker previous created by KsRegisterCountedWorker. This should be called after each task within a worker has been completed.
+old-location: stream\ksdecrementcountedworker.htm
+old-project: stream
+ms.assetid: 2b38e4df-e5b6-480b-bd4e-62e059e26411
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KsDecrementCountedWorker function [Streaming Media Devices], KsDecrementCountedWorker, ksfunc_7ddba520-3deb-4160-87e1-a12d2210b5da.xml, stream.ksdecrementcountedworker, ks/KsDecrementCountedWorker
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsDecrementCountedWorker
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

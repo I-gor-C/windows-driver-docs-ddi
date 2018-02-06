@@ -1,41 +1,46 @@
 ---
-UID : NS:ks.KSEVENT_TIME_INTERVAL
-title : KSEVENT_TIME_INTERVAL
-author : windows-driver-content
-description : The KSEVENT_TIME_INTERVAL structure is used in various events within the KSEVENTSETID_Clock event set.
-old-location : stream\ksevent_time_interval.htm
-old-project : stream
-ms.assetid : 61699da0-2c34-44cb-8e1a-b266acfc7878
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ks-struct_690ec7fd-ea7c-4a47-8351-779aa2cf8e2c.xml, ks/PKSEVENT_TIME_INTERVAL, PKSEVENT_TIME_INTERVAL structure pointer [Streaming Media Devices], KSEVENT_TIME_INTERVAL structure [Streaming Media Devices], ks/KSEVENT_TIME_INTERVAL, KSEVENT_TIME_INTERVAL, *PKSEVENT_TIME_INTERVAL, PKSEVENT_TIME_INTERVAL, stream.ksevent_time_interval
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKSEVENT_TIME_INTERVAL, KSEVENT_TIME_INTERVAL"
+UID: NS:ks.KSEVENT_TIME_INTERVAL
+title: KSEVENT_TIME_INTERVAL
+author: windows-driver-content
+description: The KSEVENT_TIME_INTERVAL structure is used in various events within the KSEVENTSETID_Clock event set.
+old-location: stream\ksevent_time_interval.htm
+old-project: stream
+ms.assetid: 61699da0-2c34-44cb-8e1a-b266acfc7878
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ks-struct_690ec7fd-ea7c-4a47-8351-779aa2cf8e2c.xml, ks/PKSEVENT_TIME_INTERVAL, PKSEVENT_TIME_INTERVAL structure pointer [Streaming Media Devices], KSEVENT_TIME_INTERVAL structure [Streaming Media Devices], ks/KSEVENT_TIME_INTERVAL, KSEVENT_TIME_INTERVAL, *PKSEVENT_TIME_INTERVAL, PKSEVENT_TIME_INTERVAL, stream.ksevent_time_interval
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	KSEVENT_TIME_INTERVAL
+product: Windows
+targetos: Windows
+req.typenames: "*PKSEVENT_TIME_INTERVAL, KSEVENT_TIME_INTERVAL"
 ---
 
 # KSEVENT_TIME_INTERVAL structure

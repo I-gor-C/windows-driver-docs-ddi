@@ -1,42 +1,47 @@
 ---
-UID : NE:storport.PSTOR_POWER_ACTION
-title : "*PSTOR_POWER_ACTION"
-author : windows-driver-content
-description : The STOR_POWER_ACTION enumerator indicates the power state that the system is about to enter during a power transition.
-old-location : storage\stor_power_action.htm
-old-project : storage
-ms.assetid : ffc7c1ec-faec-4383-ab69-844cf68d054f
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : StorPowerActionShutdownOff, PSTOR_POWER_ACTION, StorPowerActionHibernate, StorPowerActionWarmEject, StorPowerActionNone, storport/StorPowerActionWarmEject, storport/StorPowerActionSleep, storport/StorPowerActionReserved, storport/STOR_POWER_ACTION, PSTOR_POWER_ACTION enumeration pointer [Storage Devices], storport/PSTOR_POWER_ACTION, StorPowerActionReserved, storport/StorPowerActionNone, StorPowerActionShutdownReset, structs-storport_53754a67-bd34-4f06-92ba-2f45d7fa66a9.xml, storage.stor_power_action, StorPowerActionShutdown, STOR_POWER_ACTION, storport/StorPowerActionShutdown, *PSTOR_POWER_ACTION, STOR_POWER_ACTION enumeration [Storage Devices], storport/StorPowerActionShutdownOff, StorPowerActionSleep, storport/StorPowerActionShutdownReset, storport/StorPowerActionHibernate
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSTOR_POWER_ACTION, STOR_POWER_ACTION"
-req.product : Windows 10 or later.
+UID: NE:storport.PSTOR_POWER_ACTION
+title: "*PSTOR_POWER_ACTION"
+author: windows-driver-content
+description: The STOR_POWER_ACTION enumerator indicates the power state that the system is about to enter during a power transition.
+old-location: storage\stor_power_action.htm
+old-project: storage
+ms.assetid: ffc7c1ec-faec-4383-ab69-844cf68d054f
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: StorPowerActionShutdownOff, PSTOR_POWER_ACTION, StorPowerActionHibernate, StorPowerActionWarmEject, StorPowerActionNone, storport/StorPowerActionWarmEject, storport/StorPowerActionSleep, storport/StorPowerActionReserved, storport/STOR_POWER_ACTION, PSTOR_POWER_ACTION enumeration pointer [Storage Devices], storport/PSTOR_POWER_ACTION, StorPowerActionReserved, storport/StorPowerActionNone, StorPowerActionShutdownReset, structs-storport_53754a67-bd34-4f06-92ba-2f45d7fa66a9.xml, storage.stor_power_action, StorPowerActionShutdown, STOR_POWER_ACTION, storport/StorPowerActionShutdown, *PSTOR_POWER_ACTION, STOR_POWER_ACTION enumeration [Storage Devices], storport/StorPowerActionShutdownOff, StorPowerActionSleep, storport/StorPowerActionShutdownReset, storport/StorPowerActionHibernate
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	storport.h
+apiname:
+-	STOR_POWER_ACTION
+product: Windows
+targetos: Windows
+req.typenames: "*PSTOR_POWER_ACTION, STOR_POWER_ACTION"
+req.product: Windows 10 or later.
 ---
 
 # *PSTOR_POWER_ACTION Enumeration
@@ -59,46 +64,46 @@ typedef enum  {
 ## Constants
 
 <table>
-
-<tr>
-<td>StorPowerActionHibernate</td>
-<td>The system is entering hibernation.</td>
-</tr>
-
-<tr>
-<td>StorPowerActionNone</td>
-<td>No system shutdown is about to occur.</td>
-</tr>
-
-<tr>
-<td>StorPowerActionReserved</td>
-<td>Reserved.</td>
-</tr>
-
-<tr>
-<td>StorPowerActionShutdown</td>
-<td>The system is shutting down, but the type of shutdown is not known.</td>
-</tr>
-
-<tr>
-<td>StorPowerActionShutdownOff</td>
-<td>The system is shutting down and powering off.</td>
-</tr>
-
-<tr>
-<td>StorPowerActionShutdownReset</td>
-<td>The system is shutting down and resetting.</td>
-</tr>
-
-<tr>
-<td>StorPowerActionSleep</td>
-<td>The system is entering standby.</td>
-</tr>
-
-<tr>
-<td>StorPowerActionWarmEject</td>
-<td>The system is preparing for ejection.</td>
-</tr>
+            
+                <tr>
+                    <td>StorPowerActionHibernate</td>
+                    <td>The system is entering hibernation.</td>
+                </tr>
+            
+                <tr>
+                    <td>StorPowerActionNone</td>
+                    <td>No system shutdown is about to occur.</td>
+                </tr>
+            
+                <tr>
+                    <td>StorPowerActionReserved</td>
+                    <td>Reserved.</td>
+                </tr>
+            
+                <tr>
+                    <td>StorPowerActionShutdown</td>
+                    <td>The system is shutting down, but the type of shutdown is not known.</td>
+                </tr>
+            
+                <tr>
+                    <td>StorPowerActionShutdownOff</td>
+                    <td>The system is shutting down and powering off.</td>
+                </tr>
+            
+                <tr>
+                    <td>StorPowerActionShutdownReset</td>
+                    <td>The system is shutting down and resetting.</td>
+                </tr>
+            
+                <tr>
+                    <td>StorPowerActionSleep</td>
+                    <td>The system is entering standby.</td>
+                </tr>
+            
+                <tr>
+                    <td>StorPowerActionWarmEject</td>
+                    <td>The system is preparing for ejection.</td>
+                </tr>
 </table>
 
 
@@ -107,9 +112,9 @@ typedef enum  {
 | ---- |:---- |
 | **Header** | storport.h (include Storport.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\storport\ns-storport-_scsi_power_request_block.md">SCSI_POWER_REQUEST_BLOCK</a>
+        <a href="..\storport\ns-storport-_scsi_power_request_block.md">SCSI_POWER_REQUEST_BLOCK</a>
 
  
 

@@ -1,41 +1,46 @@
 ---
-UID : NF:ksproxy.IKsInterfaceHandler.KsCompleteIo
-title : IKsInterfaceHandler::KsCompleteIo method
-author : windows-driver-content
-description : The KsCompleteIo method cleans up extended headers and releases media samples after input and output (I/O) complete.
-old-location : stream\iksinterfacehandler_kscompleteio.htm
-old-project : stream
-ms.assetid : 2ff69f59-5fbd-43fd-afe5-9717d7928d2a
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KsCompleteIo, ksproxy_3f49ef68-7608-4348-ba18-ffd3bb0e7808.xml, ksproxy/IKsInterfaceHandler::KsCompleteIo, stream.iksinterfacehandler_kscompleteio, KsCompleteIo method [Streaming Media Devices], IKsInterfaceHandler, IKsInterfaceHandler interface [Streaming Media Devices], KsCompleteIo method, IKsInterfaceHandler::KsCompleteIo, KsCompleteIo method [Streaming Media Devices], IKsInterfaceHandler interface
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : ksproxy.h
-req.include-header : Ksproxy.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : ksproxy.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PIPE_STATE
+UID: NF:ksproxy.IKsInterfaceHandler.KsCompleteIo
+title: IKsInterfaceHandler::KsCompleteIo method
+author: windows-driver-content
+description: The KsCompleteIo method cleans up extended headers and releases media samples after input and output (I/O) complete.
+old-location: stream\iksinterfacehandler_kscompleteio.htm
+old-project: stream
+ms.assetid: 2ff69f59-5fbd-43fd-afe5-9717d7928d2a
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KsCompleteIo, ksproxy_3f49ef68-7608-4348-ba18-ffd3bb0e7808.xml, ksproxy/IKsInterfaceHandler::KsCompleteIo, stream.iksinterfacehandler_kscompleteio, KsCompleteIo method [Streaming Media Devices], IKsInterfaceHandler, IKsInterfaceHandler interface [Streaming Media Devices], KsCompleteIo method, IKsInterfaceHandler::KsCompleteIo, KsCompleteIo method [Streaming Media Devices], IKsInterfaceHandler interface
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: ksproxy.h
+req.include-header: Ksproxy.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: ksproxy.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	ksproxy.h
+apiname:
+-	IKsInterfaceHandler.KsCompleteIo
+product: Windows
+targetos: Windows
+req.typenames: PIPE_STATE
 ---
 
 

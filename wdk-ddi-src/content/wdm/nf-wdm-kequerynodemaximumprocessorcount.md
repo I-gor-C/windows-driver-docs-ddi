@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.KeQueryNodeMaximumProcessorCount
-title : KeQueryNodeMaximumProcessorCount function
-author : windows-driver-content
-description : The KeQueryNodeMaximumProcessorCount routine returns the maximum number of logical processors that a specified node in a non-uniform memory access (NUMA) multiprocessor system can contain.
-old-location : kernel\kequerynodemaximumprocessorcount.htm
-old-project : kernel
-ms.assetid : 56688002-d481-45a6-bfb0-e7761f9ae055
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.kequerynodemaximumprocessorcount, KeQueryNodeMaximumProcessorCount routine [Kernel-Mode Driver Architecture], wdm/KeQueryNodeMaximumProcessorCount, KeQueryNodeMaximumProcessorCount, k105_15c5df15-b04a-41bd-9aec-2e402e2824a9.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 7 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.KeQueryNodeMaximumProcessorCount
+title: KeQueryNodeMaximumProcessorCount function
+author: windows-driver-content
+description: The KeQueryNodeMaximumProcessorCount routine returns the maximum number of logical processors that a specified node in a non-uniform memory access (NUMA) multiprocessor system can contain.
+old-location: kernel\kequerynodemaximumprocessorcount.htm
+old-project: kernel
+ms.assetid: 56688002-d481-45a6-bfb0-e7761f9ae055
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.kequerynodemaximumprocessorcount, KeQueryNodeMaximumProcessorCount routine [Kernel-Mode Driver Architecture], wdm/KeQueryNodeMaximumProcessorCount, KeQueryNodeMaximumProcessorCount, k105_15c5df15-b04a-41bd-9aec-2e402e2824a9.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 7 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	KeQueryNodeMaximumProcessorCount
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

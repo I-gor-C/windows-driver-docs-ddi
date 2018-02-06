@@ -1,42 +1,47 @@
 ---
-UID : NF:wdfdevice.WDF_IO_TYPE_CONFIG_INIT
-title : WDF_IO_TYPE_CONFIG_INIT function
-author : windows-driver-content
-description : The WDF_IO_TYPE_CONFIG_INIT function initializes a driver's WDF_IO_TYPE_CONFIG structure.
-old-location : wdf\wdf_io_type_config_init.htm
-old-project : wdf
-ms.assetid : 45D60409-EAE5-43A0-9E90-0B2F9FC31840
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WDF_IO_TYPE_CONFIG_INIT, wdfdevice/WDF_IO_TYPE_CONFIG_INIT, WDF_IO_TYPE_CONFIG_INIT function, wdf.wdf_io_type_config_init
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfdevice.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.13
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_STATE_NOTIFICATION_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfdevice.WDF_IO_TYPE_CONFIG_INIT
+title: WDF_IO_TYPE_CONFIG_INIT function
+author: windows-driver-content
+description: The WDF_IO_TYPE_CONFIG_INIT function initializes a driver's WDF_IO_TYPE_CONFIG structure.
+old-location: wdf\wdf_io_type_config_init.htm
+old-project: wdf
+ms.assetid: 45D60409-EAE5-43A0-9E90-0B2F9FC31840
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WDF_IO_TYPE_CONFIG_INIT, wdfdevice/WDF_IO_TYPE_CONFIG_INIT, WDF_IO_TYPE_CONFIG_INIT function, wdf.wdf_io_type_config_init
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfdevice.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.13
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfdevice.h
+apiname:
+-	WDF_IO_TYPE_CONFIG_INIT
+product: Windows
+targetos: Windows
+req.typenames: WDF_STATE_NOTIFICATION_TYPE
+req.product: Windows 10 or later.
 ---
 
 

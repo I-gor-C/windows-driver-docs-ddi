@@ -1,41 +1,46 @@
 ---
-UID : NS:ks.KSPIN_CONNECT
-title : KSPIN_CONNECT
-author : windows-driver-content
-description : Clients use the KSPIN_CONNECT structure to describe the connection they request from a driver in a KsCreatePin call.
-old-location : stream\kspin_connect.htm
-old-project : stream
-ms.assetid : 62ce7a36-87ce-40d1-bdd4-8a4f4bc60b00
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KSPIN_CONNECT structure [Streaming Media Devices], PKSPIN_CONNECT structure pointer [Streaming Media Devices], PKSPIN_CONNECT, *PKSPIN_CONNECT, KSPIN_CONNECT, ks-struct_07642f18-c766-4649-b97a-12582aa0fffb.xml, stream.kspin_connect, ks/PKSPIN_CONNECT, ks/KSPIN_CONNECT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKSPIN_CONNECT, KSPIN_CONNECT"
+UID: NS:ks.KSPIN_CONNECT
+title: KSPIN_CONNECT
+author: windows-driver-content
+description: Clients use the KSPIN_CONNECT structure to describe the connection they request from a driver in a KsCreatePin call.
+old-location: stream\kspin_connect.htm
+old-project: stream
+ms.assetid: 62ce7a36-87ce-40d1-bdd4-8a4f4bc60b00
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KSPIN_CONNECT structure [Streaming Media Devices], PKSPIN_CONNECT structure pointer [Streaming Media Devices], PKSPIN_CONNECT, *PKSPIN_CONNECT, KSPIN_CONNECT, ks-struct_07642f18-c766-4649-b97a-12582aa0fffb.xml, stream.kspin_connect, ks/PKSPIN_CONNECT, ks/KSPIN_CONNECT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	KSPIN_CONNECT
+product: Windows
+targetos: Windows
+req.typenames: "*PKSPIN_CONNECT, KSPIN_CONNECT"
 ---
 
 # KSPIN_CONNECT structure

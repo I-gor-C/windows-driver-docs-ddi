@@ -1,41 +1,46 @@
 ---
-UID : NF:namcache.RxNameCacheInitialize
-title : RxNameCacheInitialize function
-author : windows-driver-content
-description : RxNameCacheInitialize initializes a name cache (NAME_CACHE_CONTROL structure).
-old-location : ifsk\rxnamecacheinitialize.htm
-old-project : ifsk
-ms.assetid : 2a124a6e-30ff-4c0d-9a09-8cf43e65a657
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : RxNameCacheInitialize, ifsk.rxnamecacheinitialize, rxref_1a97be61-3797-49f0-ad90-e426e43505c1.xml, namcache/RxNameCacheInitialize, RxNameCacheInitialize function [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : namcache.h
-req.include-header : Namcache.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
+UID: NF:namcache.RxNameCacheInitialize
+title: RxNameCacheInitialize function
+author: windows-driver-content
+description: RxNameCacheInitialize initializes a name cache (NAME_CACHE_CONTROL structure).
+old-location: ifsk\rxnamecacheinitialize.htm
+old-project: ifsk
+ms.assetid: 2a124a6e-30ff-4c0d-9a09-8cf43e65a657
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: RxNameCacheInitialize, ifsk.rxnamecacheinitialize, rxref_1a97be61-3797-49f0-ad90-e426e43505c1.xml, namcache/RxNameCacheInitialize, RxNameCacheInitialize function [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: namcache.h
+req.include-header: Namcache.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	namcache.h
+apiname:
+-	RxNameCacheInitialize
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 

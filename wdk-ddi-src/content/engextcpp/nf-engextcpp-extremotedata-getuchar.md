@@ -1,41 +1,46 @@
 ---
-UID : NF:engextcpp.ExtRemoteData.GetUchar
-title : ExtRemoteData::GetUchar method
-author : windows-driver-content
-description : The GetUChar method returns a UCHAR version of the ExtRemoteData object, which represents the contents of the target's memory.
-old-location : debugger\extremotedata_getuchar.htm
-old-project : debugger
-ms.assetid : 2c4b7f40-210a-44fa-b7d4-150355d6b75b
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : GetUchar method [Windows Debugging], ExtRemoteData class, ExtRemoteData, debugger.extremotedata_getuchar, EngExtCpp_Ref_687a7887-560a-4565-8417-ec46cc1ee254.xml, ExtRemoteData::GetUchar, GetUchar method [Windows Debugging], ExtRemoteData class [Windows Debugging], GetUchar method, GetUchar
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : engextcpp.hpp
-req.include-header : Engextcpp.hpp
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : engextcpp.hpp
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SILO_DRIVER_CAPABILITIES, *PSILO_DRIVER_CAPABILITIES
+UID: NF:engextcpp.ExtRemoteData.GetUchar
+title: ExtRemoteData::GetUchar method
+author: windows-driver-content
+description: The GetUChar method returns a UCHAR version of the ExtRemoteData object, which represents the contents of the target's memory.
+old-location: debugger\extremotedata_getuchar.htm
+old-project: debugger
+ms.assetid: 2c4b7f40-210a-44fa-b7d4-150355d6b75b
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: GetUchar method [Windows Debugging], ExtRemoteData class, ExtRemoteData, debugger.extremotedata_getuchar, EngExtCpp_Ref_687a7887-560a-4565-8417-ec46cc1ee254.xml, ExtRemoteData::GetUchar, GetUchar method [Windows Debugging], ExtRemoteData class [Windows Debugging], GetUchar method, GetUchar
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: engextcpp.hpp
+req.include-header: Engextcpp.hpp
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: engextcpp.hpp
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	engextcpp.hpp
+apiname:
+-	ExtRemoteData.GetUchar
+product: Windows
+targetos: Windows
+req.typenames: SILO_DRIVER_CAPABILITIES, *PSILO_DRIVER_CAPABILITIES
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NS:ucxusbdevice._USBDEVICE_RESET
-title : "_USBDEVICE_RESET"
-author : windows-driver-content
-description : Contains parameters for a request to reset the specified device. This structure is passed by UCX in request parameters (Parameters.Others.Arg1) of a framework request object of the EVT_UCX_USBDEVICE_RESET callback function.
-old-location : buses\_usbdevice_reset.htm
-old-project : usbref
-ms.assetid : 4C07239D-89AE-4A9F-B7EB-CFFE6D47F10B
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ucxusbdevice/_USBDEVICE_RESET, USBDEVICE_RESET structure [Buses], P_USBDEVICE_RESET, P_USBDEVICE_RESET structure pointer [Buses], *PUSBDEVICE_RESET, USBDEVICE_RESET, ucxusbdevice/P_USBDEVICE_RESET, _USBDEVICE_RESET, buses._usbdevice_reset
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ucxusbdevice.h
-req.include-header : Ucxclass.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUSBDEVICE_RESET, USBDEVICE_RESET"
-req.product : Windows 10 or later.
+UID: NS:ucxusbdevice._USBDEVICE_RESET
+title: "_USBDEVICE_RESET"
+author: windows-driver-content
+description: Contains parameters for a request to reset the specified device. This structure is passed by UCX in request parameters (Parameters.Others.Arg1) of a framework request object of the EVT_UCX_USBDEVICE_RESET callback function.
+old-location: buses\_usbdevice_reset.htm
+old-project: usbref
+ms.assetid: 4C07239D-89AE-4A9F-B7EB-CFFE6D47F10B
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ucxusbdevice/_USBDEVICE_RESET, USBDEVICE_RESET structure [Buses], P_USBDEVICE_RESET, P_USBDEVICE_RESET structure pointer [Buses], *PUSBDEVICE_RESET, USBDEVICE_RESET, ucxusbdevice/P_USBDEVICE_RESET, _USBDEVICE_RESET, buses._usbdevice_reset
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ucxusbdevice.h
+req.include-header: Ucxclass.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ucxusbdevice.h
+apiname:
+-	USBDEVICE_RESET
+product: Windows
+targetos: Windows
+req.typenames: "*PUSBDEVICE_RESET, USBDEVICE_RESET"
+req.product: Windows 10 or later.
 ---
 
 # _USBDEVICE_RESET structure

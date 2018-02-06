@@ -1,42 +1,47 @@
 ---
-UID : NF:winsplp.ClosePort
-title : ClosePort function
-author : windows-driver-content
-description : A language or port monitor's ClosePort function closes a printer port.
-old-location : print\closeport.htm
-old-project : print
-ms.assetid : 1d63f36d-4c62-40e9-b3c0-f6d847340b07
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : winsplp/ClosePort, print.closeport, ClosePort function [Print Devices], ClosePort, spoolfnc_fdd98daa-d14c-4534-a8c6-0070ccbbc3fe.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : winsplp.h
-req.include-header : Winsplp.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NOTIFICATION_CONFIG_FLAGS
-req.product : Windows 10 or later.
+UID: NF:winsplp.ClosePort
+title: ClosePort function
+author: windows-driver-content
+description: A language or port monitor's ClosePort function closes a printer port.
+old-location: print\closeport.htm
+old-project: print
+ms.assetid: 1d63f36d-4c62-40e9-b3c0-f6d847340b07
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: winsplp/ClosePort, print.closeport, ClosePort function [Print Devices], ClosePort, spoolfnc_fdd98daa-d14c-4534-a8c6-0070ccbbc3fe.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: winsplp.h
+req.include-header: Winsplp.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	winsplp.h
+apiname:
+-	ClosePort
+product: Windows
+targetos: Windows
+req.typenames: NOTIFICATION_CONFIG_FLAGS
+req.product: Windows 10 or later.
 ---
 
 

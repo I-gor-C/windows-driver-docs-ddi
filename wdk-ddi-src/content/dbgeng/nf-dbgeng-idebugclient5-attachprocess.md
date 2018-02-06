@@ -1,41 +1,50 @@
 ---
-UID : NF:dbgeng.IDebugClient5.AttachProcess
-title : IDebugClient5::AttachProcess method
-author : windows-driver-content
-description : The AttachProcess method connects the debugger engine to a user-modeprocess.
-old-location : debugger\attachprocess.htm
-old-project : debugger
-ms.assetid : 0787da49-23e0-43e3-bb32-1221db32a449
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugClient5 interface [Windows Debugging], AttachProcess method, dbgeng/IDebugClient3::AttachProcess, dbgeng/IDebugClient4::AttachProcess, debugger.attachprocess, AttachProcess method [Windows Debugging], IDebugClient2 interface, IDebugClient3 interface [Windows Debugging], AttachProcess method, AttachProcess method [Windows Debugging], IDebugClient interface, IDebugClient_032236c1-3072-4226-919b-3f6f95635a20.xml, IDebugClient4::AttachProcess, IDebugClient5::AttachProcess, IDebugClient::AttachProcess, AttachProcess method [Windows Debugging], IDebugClient3 interface, dbgeng/IDebugClient::AttachProcess, AttachProcess method [Windows Debugging], IDebugClient5 interface, dbgeng/IDebugClient5::AttachProcess, AttachProcess method [Windows Debugging], IDebugClient interface [Windows Debugging], AttachProcess method, IDebugClient4 interface [Windows Debugging], AttachProcess method, IDebugClient2::AttachProcess, AttachProcess method [Windows Debugging], IDebugClient4 interface, IDebugClient2 interface [Windows Debugging], AttachProcess method, IDebugClient3::AttachProcess, AttachProcess, dbgeng/IDebugClient2::AttachProcess, IDebugClient5
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugClient5.AttachProcess
+title: IDebugClient5::AttachProcess method
+author: windows-driver-content
+description: The AttachProcess method connects the debugger engine to a user-modeprocess.
+old-location: debugger\attachprocess.htm
+old-project: debugger
+ms.assetid: 0787da49-23e0-43e3-bb32-1221db32a449
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugClient5 interface [Windows Debugging], AttachProcess method, dbgeng/IDebugClient3::AttachProcess, dbgeng/IDebugClient4::AttachProcess, debugger.attachprocess, AttachProcess method [Windows Debugging], IDebugClient2 interface, IDebugClient3 interface [Windows Debugging], AttachProcess method, AttachProcess method [Windows Debugging], IDebugClient interface, IDebugClient_032236c1-3072-4226-919b-3f6f95635a20.xml, IDebugClient4::AttachProcess, IDebugClient5::AttachProcess, IDebugClient::AttachProcess, AttachProcess method [Windows Debugging], IDebugClient3 interface, dbgeng/IDebugClient::AttachProcess, AttachProcess method [Windows Debugging], IDebugClient5 interface, dbgeng/IDebugClient5::AttachProcess, AttachProcess method [Windows Debugging], IDebugClient interface [Windows Debugging], AttachProcess method, IDebugClient4 interface [Windows Debugging], AttachProcess method, IDebugClient2::AttachProcess, AttachProcess method [Windows Debugging], IDebugClient4 interface, IDebugClient2 interface [Windows Debugging], AttachProcess method, IDebugClient3::AttachProcess, AttachProcess, dbgeng/IDebugClient2::AttachProcess, IDebugClient5
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugClient.AttachProcess
+-	IDebugClient2.AttachProcess
+-	IDebugClient3.AttachProcess
+-	IDebugClient4.AttachProcess
+-	IDebugClient5.AttachProcess
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

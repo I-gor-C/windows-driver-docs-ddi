@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.IoSizeofWorkItem
-title : IoSizeofWorkItem function
-author : windows-driver-content
-description : The IoSizeofWorkItem routine returns the size, in bytes, of an IO_WORKITEM structure.
-old-location : kernel\iosizeofworkitem.htm
-old-project : kernel
-ms.assetid : 389f0776-1010-4f3c-b5c5-b8807ff07130
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/IoSizeofWorkItem, kernel.iosizeofworkitem, IoSizeofWorkItem routine [Kernel-Mode Driver Architecture], k104_9f2b3349-cd46-48ec-bcff-10e91bd522b5.xml, IoSizeofWorkItem
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.IoSizeofWorkItem
+title: IoSizeofWorkItem function
+author: windows-driver-content
+description: The IoSizeofWorkItem routine returns the size, in bytes, of an IO_WORKITEM structure.
+old-location: kernel\iosizeofworkitem.htm
+old-project: kernel
+ms.assetid: 389f0776-1010-4f3c-b5c5-b8807ff07130
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/IoSizeofWorkItem, kernel.iosizeofworkitem, IoSizeofWorkItem routine [Kernel-Mode Driver Architecture], k104_9f2b3349-cd46-48ec-bcff-10e91bd522b5.xml, IoSizeofWorkItem
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoSizeofWorkItem
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

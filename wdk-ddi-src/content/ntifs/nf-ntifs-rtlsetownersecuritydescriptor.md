@@ -1,41 +1,47 @@
 ---
-UID : NF:ntifs.RtlSetOwnerSecurityDescriptor
-title : RtlSetOwnerSecurityDescriptor function
-author : windows-driver-content
-description : The RtlSetOwnerSecurityDescriptor routine sets the owner information of an absolute-format security descriptor. It replaces any owner information that is already present in the security descriptor.
-old-location : ifsk\rtlsetownersecuritydescriptor.htm
-old-project : ifsk
-ms.assetid : 43392c57-8fe9-4219-9f00-ac73c83c3abc
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ntifs/RtlSetOwnerSecurityDescriptor, rtlref_c8ec0e44-dadc-42ad-9947-2ecb5ec4aa57.xml, RtlSetOwnerSecurityDescriptor routine [Installable File System Drivers], ifsk.rtlsetownersecuritydescriptor, RtlSetOwnerSecurityDescriptor
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe (kernel mode); Ntdll.dll (user mode)
-req.irql : "< DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.RtlSetOwnerSecurityDescriptor
+title: RtlSetOwnerSecurityDescriptor function
+author: windows-driver-content
+description: The RtlSetOwnerSecurityDescriptor routine sets the owner information of an absolute-format security descriptor. It replaces any owner information that is already present in the security descriptor.
+old-location: ifsk\rtlsetownersecuritydescriptor.htm
+old-project: ifsk
+ms.assetid: 43392c57-8fe9-4219-9f00-ac73c83c3abc
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ntifs/RtlSetOwnerSecurityDescriptor, rtlref_c8ec0e44-dadc-42ad-9947-2ecb5ec4aa57.xml, RtlSetOwnerSecurityDescriptor routine [Installable File System Drivers], ifsk.rtlsetownersecuritydescriptor, RtlSetOwnerSecurityDescriptor
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe (kernel mode); Ntdll.dll (user mode)
+req.irql: "< DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+-	Ntdll.dll
+apiname:
+-	RtlSetOwnerSecurityDescriptor
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

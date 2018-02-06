@@ -1,42 +1,47 @@
 ---
-UID : NS:storport._SRBEX_DATA_BIDIRECTIONAL
-title : "_SRBEX_DATA_BIDIRECTIONAL"
-author : windows-driver-content
-description : The SRBEX_DATA_BIDIRECTIONAL structure contains the extended SRB data for bi-directional transfer commands.
-old-location : storage\srbex_data_bidirectional.htm
-old-project : storage
-ms.assetid : B61247DC-8AC3-4A96-985B-A4CAC232555E
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : PSRBEX_DATA_BIDIRECTIONAL structure pointer [Storage Devices], _SRBEX_DATA_BIDIRECTIONAL, *PSRBEX_DATA_BIDIRECTIONAL, SRBEX_DATA_BIDIRECTIONAL structure [Storage Devices], PSRBEX_DATA_BIDIRECTIONAL, storport/PSRBEX_DATA_BIDIRECTIONAL, SRBEX_DATA_BIDIRECTIONAL, storport/SRBEX_DATA_BIDIRECTIONAL, storage.srbex_data_bidirectional
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : storport.h
-req.include-header : Storport.h, Srb.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSRBEX_DATA_BIDIRECTIONAL, SRBEX_DATA_BIDIRECTIONAL"
-req.product : Windows 10 or later.
+UID: NS:storport._SRBEX_DATA_BIDIRECTIONAL
+title: "_SRBEX_DATA_BIDIRECTIONAL"
+author: windows-driver-content
+description: The SRBEX_DATA_BIDIRECTIONAL structure contains the extended SRB data for bi-directional transfer commands.
+old-location: storage\srbex_data_bidirectional.htm
+old-project: storage
+ms.assetid: B61247DC-8AC3-4A96-985B-A4CAC232555E
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: PSRBEX_DATA_BIDIRECTIONAL structure pointer [Storage Devices], _SRBEX_DATA_BIDIRECTIONAL, *PSRBEX_DATA_BIDIRECTIONAL, SRBEX_DATA_BIDIRECTIONAL structure [Storage Devices], PSRBEX_DATA_BIDIRECTIONAL, storport/PSRBEX_DATA_BIDIRECTIONAL, SRBEX_DATA_BIDIRECTIONAL, storport/SRBEX_DATA_BIDIRECTIONAL, storage.srbex_data_bidirectional
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: storport.h
+req.include-header: Storport.h, Srb.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Storport.h
+apiname:
+-	SRBEX_DATA_BIDIRECTIONAL
+product: Windows
+targetos: Windows
+req.typenames: "*PSRBEX_DATA_BIDIRECTIONAL, SRBEX_DATA_BIDIRECTIONAL"
+req.product: Windows 10 or later.
 ---
 
 # _SRBEX_DATA_BIDIRECTIONAL structure

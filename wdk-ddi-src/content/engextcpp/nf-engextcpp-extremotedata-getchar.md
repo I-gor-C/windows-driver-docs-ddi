@@ -1,41 +1,46 @@
 ---
-UID : NF:engextcpp.ExtRemoteData.GetChar
-title : ExtRemoteData::GetChar method
-author : windows-driver-content
-description : The GetChar method returns a CHAR version of the ExtRemoteData object, which represents the contents of the target's memory.
-old-location : debugger\extremotedata_getchar.htm
-old-project : debugger
-ms.assetid : bf916e7c-f03b-4d02-8260-bc90e8957cc9
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : EngExtCpp_Ref_98ced053-a952-4c9f-af2b-0aab9d20e311.xml, ExtRemoteData, debugger.extremotedata_getchar, GetChar, GetChar method [Windows Debugging], ExtRemoteData class, GetChar method [Windows Debugging], ExtRemoteData class [Windows Debugging], GetChar method, ExtRemoteData::GetChar
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : engextcpp.hpp
-req.include-header : Engextcpp.hpp
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : engextcpp.hpp
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SILO_DRIVER_CAPABILITIES, *PSILO_DRIVER_CAPABILITIES
+UID: NF:engextcpp.ExtRemoteData.GetChar
+title: ExtRemoteData::GetChar method
+author: windows-driver-content
+description: The GetChar method returns a CHAR version of the ExtRemoteData object, which represents the contents of the target's memory.
+old-location: debugger\extremotedata_getchar.htm
+old-project: debugger
+ms.assetid: bf916e7c-f03b-4d02-8260-bc90e8957cc9
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: EngExtCpp_Ref_98ced053-a952-4c9f-af2b-0aab9d20e311.xml, ExtRemoteData, debugger.extremotedata_getchar, GetChar, GetChar method [Windows Debugging], ExtRemoteData class, GetChar method [Windows Debugging], ExtRemoteData class [Windows Debugging], GetChar method, ExtRemoteData::GetChar
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: engextcpp.hpp
+req.include-header: Engextcpp.hpp
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: engextcpp.hpp
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	engextcpp.hpp
+apiname:
+-	ExtRemoteData.GetChar
+product: Windows
+targetos: Windows
+req.typenames: SILO_DRIVER_CAPABILITIES, *PSILO_DRIVER_CAPABILITIES
 ---
 
 

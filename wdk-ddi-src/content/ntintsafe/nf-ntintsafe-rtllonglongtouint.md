@@ -1,41 +1,46 @@
 ---
-UID : NF:ntintsafe.RtlLongLongToUInt
-title : RtlLongLongToUInt function
-author : windows-driver-content
-description : Converts a value of type LONGLONG to a value of type UINT.
-old-location : kernel\rtllonglongtouint.htm
-old-project : kernel
-ms.assetid : 81B87CA6-01D8-4D54-87A6-6311260C06CB
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : RtlLongLongToUInt, ntintsafe/RtlLongLongToUInt, kernel.rtllonglongtouint, RtlLongLongToUInt function [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntintsafe.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PUBLIC_OBJECT_TYPE_INFORMATION, *PPUBLIC_OBJECT_TYPE_INFORMATION
+UID: NF:ntintsafe.RtlLongLongToUInt
+title: RtlLongLongToUInt function
+author: windows-driver-content
+description: Converts a value of type LONGLONG to a value of type UINT.
+old-location: kernel\rtllonglongtouint.htm
+old-project: kernel
+ms.assetid: 81B87CA6-01D8-4D54-87A6-6311260C06CB
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: RtlLongLongToUInt, ntintsafe/RtlLongLongToUInt, kernel.rtllonglongtouint, RtlLongLongToUInt function [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntintsafe.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntintsafe.h
+apiname:
+-	RtlLongLongToUInt
+product: Windows
+targetos: Windows
+req.typenames: PUBLIC_OBJECT_TYPE_INFORMATION, *PPUBLIC_OBJECT_TYPE_INFORMATION
 ---
 
 

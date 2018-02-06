@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._DXVAHDDDI_STREAM_DATA
-title : "_DXVAHDDDI_STREAM_DATA"
-author : windows-driver-content
-description : The DXVAHDDDI_STREAM_DATA structure describes an input stream that is processed.
-old-location : display\dxvahdddi_stream_data.htm
-old-project : display
-ms.assetid : 3b8fc849-8794-4dab-af28-a1c0dfd859d3
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DXVA2_Structs_d7fc6fd4-0b17-49b3-bb42-0e0c8f3cc124.xml, DXVAHDDDI_STREAM_DATA, DXVAHDDDI_STREAM_DATA structure [Display Devices], display.dxvahdddi_stream_data, _DXVAHDDDI_STREAM_DATA, d3dumddi/DXVAHDDDI_STREAM_DATA
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : DXVAHDDDI_STREAM_DATA is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXVAHDDDI_STREAM_DATA
+UID: NS:d3dumddi._DXVAHDDDI_STREAM_DATA
+title: "_DXVAHDDDI_STREAM_DATA"
+author: windows-driver-content
+description: The DXVAHDDDI_STREAM_DATA structure describes an input stream that is processed.
+old-location: display\dxvahdddi_stream_data.htm
+old-project: display
+ms.assetid: 3b8fc849-8794-4dab-af28-a1c0dfd859d3
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DXVA2_Structs_d7fc6fd4-0b17-49b3-bb42-0e0c8f3cc124.xml, DXVAHDDDI_STREAM_DATA, DXVAHDDDI_STREAM_DATA structure [Display Devices], display.dxvahdddi_stream_data, _DXVAHDDDI_STREAM_DATA, d3dumddi/DXVAHDDDI_STREAM_DATA
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: DXVAHDDDI_STREAM_DATA is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	DXVAHDDDI_STREAM_DATA
+product: Windows
+targetos: Windows
+req.typenames: DXVAHDDDI_STREAM_DATA
 ---
 
 # _DXVAHDDDI_STREAM_DATA structure

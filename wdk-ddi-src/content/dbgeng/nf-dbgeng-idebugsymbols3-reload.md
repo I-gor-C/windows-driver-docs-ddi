@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugSymbols3.Reload
-title : IDebugSymbols3::Reload method
-author : windows-driver-content
-description : The Reload method deletes the engine's symbol information for the specified module and reload these symbols as needed.
-old-location : debugger\reload.htm
-old-project : debugger
-ms.assetid : f739d5b8-80be-40e3-9139-93342c4fe458
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : Reload method [Windows Debugging], IDebugSymbols interface, IDebugSymbols2::Reload, Reload, Reload method [Windows Debugging], IDebugSymbols3 interface, Reload method [Windows Debugging], IDebugSymbols2 interface, IDebugSymbols3::Reload, dbgeng/IDebugSymbols3::Reload, IDebugSymbols_ec5df701-b081-45c4-b2e4-10c101ce69a4.xml, Reload method [Windows Debugging], dbgeng/IDebugSymbols::Reload, IDebugSymbols interface [Windows Debugging], Reload method, IDebugSymbols::Reload, IDebugSymbols2 interface [Windows Debugging], Reload method, dbgeng/IDebugSymbols2::Reload, debugger.reload, IDebugSymbols3, IDebugSymbols3 interface [Windows Debugging], Reload method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSymbols3.Reload
+title: IDebugSymbols3::Reload method
+author: windows-driver-content
+description: The Reload method deletes the engine's symbol information for the specified module and reload these symbols as needed.
+old-location: debugger\reload.htm
+old-project: debugger
+ms.assetid: f739d5b8-80be-40e3-9139-93342c4fe458
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: Reload method [Windows Debugging], IDebugSymbols interface, IDebugSymbols2::Reload, Reload, Reload method [Windows Debugging], IDebugSymbols3 interface, Reload method [Windows Debugging], IDebugSymbols2 interface, IDebugSymbols3::Reload, dbgeng/IDebugSymbols3::Reload, IDebugSymbols_ec5df701-b081-45c4-b2e4-10c101ce69a4.xml, Reload method [Windows Debugging], dbgeng/IDebugSymbols::Reload, IDebugSymbols interface [Windows Debugging], Reload method, IDebugSymbols::Reload, IDebugSymbols2 interface [Windows Debugging], Reload method, dbgeng/IDebugSymbols2::Reload, debugger.reload, IDebugSymbols3, IDebugSymbols3 interface [Windows Debugging], Reload method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugSymbols.Reload
+-	IDebugSymbols2.Reload
+-	IDebugSymbols3.Reload
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

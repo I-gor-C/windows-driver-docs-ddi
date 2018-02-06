@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddndis._NDIS_PM_WAKE_PACKET
-title : "_NDIS_PM_WAKE_PACKET"
-author : windows-driver-content
-description : The NDIS_PM_WAKE_PACKET structure describes a network packet (known as a wake packet) that caused the network adapter to generate a wake-up event.
-old-location : netvista\ndis_pm_wake_packet.htm
-old-project : netvista
-ms.assetid : b3d7adcf-79cd-42f4-ada2-c57de6310020
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : PNDIS_PM_WAKE_PACKET, NDIS_PM_WAKE_PACKET structure [Network Drivers Starting with Windows Vista], ntddndis/NDIS_PM_WAKE_PACKET, ntddndis/PNDIS_PM_WAKE_PACKET, _NDIS_PM_WAKE_PACKET, netvista.ndis_pm_wake_packet, *PNDIS_PM_WAKE_PACKET, PNDIS_PM_WAKE_PACKET structure pointer [Network Drivers Starting with Windows Vista], NDIS_PM_WAKE_PACKET
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.30 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PNDIS_PM_WAKE_PACKET, NDIS_PM_WAKE_PACKET"
+UID: NS:ntddndis._NDIS_PM_WAKE_PACKET
+title: "_NDIS_PM_WAKE_PACKET"
+author: windows-driver-content
+description: The NDIS_PM_WAKE_PACKET structure describes a network packet (known as a wake packet) that caused the network adapter to generate a wake-up event.
+old-location: netvista\ndis_pm_wake_packet.htm
+old-project: netvista
+ms.assetid: b3d7adcf-79cd-42f4-ada2-c57de6310020
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: PNDIS_PM_WAKE_PACKET, NDIS_PM_WAKE_PACKET structure [Network Drivers Starting with Windows Vista], ntddndis/NDIS_PM_WAKE_PACKET, ntddndis/PNDIS_PM_WAKE_PACKET, _NDIS_PM_WAKE_PACKET, netvista.ndis_pm_wake_packet, *PNDIS_PM_WAKE_PACKET, PNDIS_PM_WAKE_PACKET structure pointer [Network Drivers Starting with Windows Vista], NDIS_PM_WAKE_PACKET
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.30 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddndis.h
+apiname:
+-	NDIS_PM_WAKE_PACKET
+product: Windows
+targetos: Windows
+req.typenames: "*PNDIS_PM_WAKE_PACKET, NDIS_PM_WAKE_PACKET"
 ---
 
 # _NDIS_PM_WAKE_PACKET structure

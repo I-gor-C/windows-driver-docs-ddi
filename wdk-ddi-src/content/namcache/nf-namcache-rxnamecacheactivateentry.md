@@ -1,41 +1,46 @@
 ---
-UID : NF:namcache.RxNameCacheActivateEntry
-title : RxNameCacheActivateEntry function
-author : windows-driver-content
-description : RxNameCacheActivateEntry takes a name cache entry and updates the expiration time and the network mini-redirector context. It then puts the name cache entry on the active list.
-old-location : ifsk\rxnamecacheactivateentry.htm
-old-project : ifsk
-ms.assetid : 6ebd4b00-ec25-4383-beba-0478b3241f09
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : namcache/RxNameCacheActivateEntry, RxNameCacheActivateEntry function [Installable File System Drivers], RxNameCacheActivateEntry, rxref_f8bd601f-32b7-4164-beb5-c020f3670fe7.xml, ifsk.rxnamecacheactivateentry
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : namcache.h
-req.include-header : Namcache.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
+UID: NF:namcache.RxNameCacheActivateEntry
+title: RxNameCacheActivateEntry function
+author: windows-driver-content
+description: RxNameCacheActivateEntry takes a name cache entry and updates the expiration time and the network mini-redirector context. It then puts the name cache entry on the active list.
+old-location: ifsk\rxnamecacheactivateentry.htm
+old-project: ifsk
+ms.assetid: 6ebd4b00-ec25-4383-beba-0478b3241f09
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: namcache/RxNameCacheActivateEntry, RxNameCacheActivateEntry function [Installable File System Drivers], RxNameCacheActivateEntry, rxref_f8bd601f-32b7-4164-beb5-c020f3670fe7.xml, ifsk.rxnamecacheactivateentry
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: namcache.h
+req.include-header: Namcache.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	namcache.h
+apiname:
+-	RxNameCacheActivateEntry
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.IoGetDeviceNumaNode
-title : IoGetDeviceNumaNode function
-author : windows-driver-content
-description : The IoGetDeviceNumaNode routine gets the node number of a device.
-old-location : kernel\iogetdevicenumanode.htm
-old-project : kernel
-ms.assetid : a36e9d57-c820-43db-a6e0-e935bffca254
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.iogetdevicenumanode, IoGetDeviceNumaNode, wdm/IoGetDeviceNumaNode, k104_5a8419d1-9b77-4461-bdc4-9cf5022fb508.xml, IoGetDeviceNumaNode routine [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 7 and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.IoGetDeviceNumaNode
+title: IoGetDeviceNumaNode function
+author: windows-driver-content
+description: The IoGetDeviceNumaNode routine gets the node number of a device.
+old-location: kernel\iogetdevicenumanode.htm
+old-project: kernel
+ms.assetid: a36e9d57-c820-43db-a6e0-e935bffca254
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.iogetdevicenumanode, IoGetDeviceNumaNode, wdm/IoGetDeviceNumaNode, k104_5a8419d1-9b77-4461-bdc4-9cf5022fb508.xml, IoGetDeviceNumaNode routine [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 7 and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoGetDeviceNumaNode
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NF:ntddk.IoGetPagingIoPriority
-title : IoGetPagingIoPriority function
-author : windows-driver-content
-description : The IoGetPagingIoPriority routine indicates the priority level of a paging I/O request.
-old-location : kernel\iogetpagingiopriority.htm
-old-project : kernel
-ms.assetid : 3b0f4fc9-58fd-46ba-be17-2e1b36b16caa
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.iogetpagingiopriority, k104_cde35790-d059-44bb-85c5-abde7cb36319.xml, IoGetPagingIoPriority routine [Kernel-Mode Driver Architecture], wdm/IoGetPagingIoPriority, IoGetPagingIoPriority
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntddk.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Microsoft Windows Server 2003 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.IoGetPagingIoPriority
+title: IoGetPagingIoPriority function
+author: windows-driver-content
+description: The IoGetPagingIoPriority routine indicates the priority level of a paging I/O request.
+old-location: kernel\iogetpagingiopriority.htm
+old-project: kernel
+ms.assetid: 3b0f4fc9-58fd-46ba-be17-2e1b36b16caa
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.iogetpagingiopriority, k104_cde35790-d059-44bb-85c5-abde7cb36319.xml, IoGetPagingIoPriority routine [Kernel-Mode Driver Architecture], wdm/IoGetPagingIoPriority, IoGetPagingIoPriority
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntddk.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Microsoft Windows Server 2003 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoGetPagingIoPriority
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

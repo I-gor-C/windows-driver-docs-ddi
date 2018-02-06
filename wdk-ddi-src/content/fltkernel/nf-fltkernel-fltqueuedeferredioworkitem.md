@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltQueueDeferredIoWorkItem
-title : FltQueueDeferredIoWorkItem function
-author : windows-driver-content
-description : The FltQueueDeferredIoWorkItem routine posts an IRP-based I/O operation to a work queue.
-old-location : ifsk\fltqueuedeferredioworkitem.htm
-old-project : ifsk
-ms.assetid : c6a51b9b-544e-4595-842a-76c667928350
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltQueueDeferredIoWorkItem routine [Installable File System Drivers], fltkernel/FltQueueDeferredIoWorkItem, FltApiRef_p_to_z_df42429d-485c-4c28-a9e7-b334d7ad52d7.xml, ifsk.fltqueuedeferredioworkitem, FltQueueDeferredIoWorkItem
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : This routine is available in Microsoft Windows 2000 and later versions of all Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Fltmgr.lib
-req.dll : Fltmgr.sys
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltQueueDeferredIoWorkItem
+title: FltQueueDeferredIoWorkItem function
+author: windows-driver-content
+description: The FltQueueDeferredIoWorkItem routine posts an IRP-based I/O operation to a work queue.
+old-location: ifsk\fltqueuedeferredioworkitem.htm
+old-project: ifsk
+ms.assetid: c6a51b9b-544e-4595-842a-76c667928350
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltQueueDeferredIoWorkItem routine [Installable File System Drivers], fltkernel/FltQueueDeferredIoWorkItem, FltApiRef_p_to_z_df42429d-485c-4c28-a9e7-b334d7ad52d7.xml, ifsk.fltqueuedeferredioworkitem, FltQueueDeferredIoWorkItem
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: This routine is available in Microsoft Windows 2000 and later versions of all Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Fltmgr.lib
+req.dll: Fltmgr.sys
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltQueueDeferredIoWorkItem
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

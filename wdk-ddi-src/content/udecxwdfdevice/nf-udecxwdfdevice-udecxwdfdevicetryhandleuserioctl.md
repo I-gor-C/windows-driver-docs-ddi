@@ -1,42 +1,48 @@
 ---
-UID : NF:udecxwdfdevice.UdecxWdfDeviceTryHandleUserIoctl
-title : UdecxWdfDeviceTryHandleUserIoctl function
-author : windows-driver-content
-description : Attempts to handle an IOCTL request sent by a user-mode software.
-old-location : buses\udecxwdfdevicetryhandleuserioctl.htm
-old-project : usbref
-ms.assetid : CC199F5C-BF05-4F1F-BEE4-8693F9156D8A
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : udecxwdfdevice/UdecxWdfDeviceTryHandleUserIoctl, UdecxWdfDeviceTryHandleUserIoctl function [Buses], UdecxWdfDeviceTryHandleUserIoctl, buses.udecxwdfdevicetryhandleuserioctl
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : udecxwdfdevice.h
-req.include-header : Udecx.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 1.15
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Udecxstub.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUDECX_WDF_DEVICE_RESET_ACTION, UDECX_WDF_DEVICE_RESET_ACTION"
-req.product : Windows 10 or later.
+UID: NF:udecxwdfdevice.UdecxWdfDeviceTryHandleUserIoctl
+title: UdecxWdfDeviceTryHandleUserIoctl function
+author: windows-driver-content
+description: Attempts to handle an IOCTL request sent by a user-mode software.
+old-location: buses\udecxwdfdevicetryhandleuserioctl.htm
+old-project: usbref
+ms.assetid: CC199F5C-BF05-4F1F-BEE4-8693F9156D8A
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: udecxwdfdevice/UdecxWdfDeviceTryHandleUserIoctl, UdecxWdfDeviceTryHandleUserIoctl function [Buses], UdecxWdfDeviceTryHandleUserIoctl, buses.udecxwdfdevicetryhandleuserioctl
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: udecxwdfdevice.h
+req.include-header: Udecx.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 1.15
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Udecxstub.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Udecxstub.lib
+-	Udecxstub.dll
+apiname:
+-	UdecxWdfDeviceTryHandleUserIoctl
+product: Windows
+targetos: Windows
+req.typenames: "*PUDECX_WDF_DEVICE_RESET_ACTION, UDECX_WDF_DEVICE_RESET_ACTION"
+req.product: Windows 10 or later.
 ---
 
 

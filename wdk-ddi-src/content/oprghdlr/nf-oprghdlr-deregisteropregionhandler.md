@@ -1,41 +1,47 @@
 ---
-UID : NF:oprghdlr.DeRegisterOpRegionHandler
-title : DeRegisterOpRegionHandler function
-author : windows-driver-content
-description : The DeRegisterOpRegionHandler routine deregisters an operation region handler with the ACPI driver.
-old-location : acpi\deregisteropregionhandler.htm
-old-project : acpi
-ms.assetid : b50a63cd-69eb-46a8-9d0b-660795c7047f
-ms.author : windowsdriverdev
-ms.date : 12/31/2017
-ms.keywords : DeRegisterOpRegionHandler routine [ACPI Devices], acpi.deregisteropregionhandler, opregref_e991e152-6162-4d45-9418-282afb447d18.xml, oprghdlr/DeRegisterOpRegionHandler, DeRegisterOpRegionHandler
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : oprghdlr.h
-req.include-header : Oprghdlr.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Oprghdlr.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RILGBATOKEN, *LPRILGBATOKEN
+UID: NF:oprghdlr.DeRegisterOpRegionHandler
+title: DeRegisterOpRegionHandler function
+author: windows-driver-content
+description: The DeRegisterOpRegionHandler routine deregisters an operation region handler with the ACPI driver.
+old-location: acpi\deregisteropregionhandler.htm
+old-project: acpi
+ms.assetid: b50a63cd-69eb-46a8-9d0b-660795c7047f
+ms.author: windowsdriverdev
+ms.date: 12/31/2017
+ms.keywords: DeRegisterOpRegionHandler routine [ACPI Devices], acpi.deregisteropregionhandler, opregref_e991e152-6162-4d45-9418-282afb447d18.xml, oprghdlr/DeRegisterOpRegionHandler, DeRegisterOpRegionHandler
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: oprghdlr.h
+req.include-header: Oprghdlr.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Oprghdlr.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Oprghdlr.lib
+-	Oprghdlr.dll
+apiname:
+-	DeRegisterOpRegionHandler
+product: Windows
+targetos: Windows
+req.typenames: RILGBATOKEN, *LPRILGBATOKEN
 ---
 
 

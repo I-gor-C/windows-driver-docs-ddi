@@ -1,42 +1,47 @@
 ---
-UID : NS:wdm._DEVICE_CAPABILITIES
-title : "_DEVICE_CAPABILITIES"
-author : windows-driver-content
-description : A DEVICE_CAPABILITIES structure describes PnP and power capabilities of a device. This structure is returned in response to an IRP_MN_QUERY_CAPABILITIES IRP.
-old-location : kernel\device_capabilities.htm
-old-project : kernel
-ms.assetid : 1edae050-8e72-42e7-9dc9-8f449699969c
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : DEVICE_CAPABILITIES, kernel.device_capabilities, DEVICE_CAPABILITIES structure [Kernel-Mode Driver Architecture], PDEVICE_CAPABILITIES structure pointer [Kernel-Mode Driver Architecture], PDEVICE_CAPABILITIES, _DEVICE_CAPABILITIES, wdm/DEVICE_CAPABILITIES, kstruct_a_53ec6d40-84a0-45f6-a78c-73fcc3c12e11.xml, wdm/PDEVICE_CAPABILITIES
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DEVICE_CAPABILITIES, PDEVICE_CAPABILITIES
-req.product : Windows 10 or later.
+UID: NS:wdm._DEVICE_CAPABILITIES
+title: "_DEVICE_CAPABILITIES"
+author: windows-driver-content
+description: A DEVICE_CAPABILITIES structure describes PnP and power capabilities of a device. This structure is returned in response to an IRP_MN_QUERY_CAPABILITIES IRP.
+old-location: kernel\device_capabilities.htm
+old-project: kernel
+ms.assetid: 1edae050-8e72-42e7-9dc9-8f449699969c
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: DEVICE_CAPABILITIES, kernel.device_capabilities, DEVICE_CAPABILITIES structure [Kernel-Mode Driver Architecture], PDEVICE_CAPABILITIES structure pointer [Kernel-Mode Driver Architecture], PDEVICE_CAPABILITIES, _DEVICE_CAPABILITIES, wdm/DEVICE_CAPABILITIES, kstruct_a_53ec6d40-84a0-45f6-a78c-73fcc3c12e11.xml, wdm/PDEVICE_CAPABILITIES
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	DEVICE_CAPABILITIES
+product: Windows
+targetos: Windows
+req.typenames: DEVICE_CAPABILITIES, PDEVICE_CAPABILITIES
+req.product: Windows 10 or later.
 ---
 
 # _DEVICE_CAPABILITIES structure

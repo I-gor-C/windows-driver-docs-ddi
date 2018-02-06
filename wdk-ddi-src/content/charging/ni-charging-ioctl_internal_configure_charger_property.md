@@ -1,41 +1,46 @@
 ---
-UID : NI:charging.IOCTL_INTERNAL_CONFIGURE_CHARGER_PROPERTY
-title : IOCTL_INTERNAL_CONFIGURE_CHARGER_PROPERTY
-author : windows-driver-content
-description : The IOCTL_INTERNAL_CONFIGURE_CHARGER_PROPERTY control code is sent from a configurable charger to a device that handles configurable chargers. It configures charger properties.
-old-location : battery\ioctl_internal_configure_charger_property.htm
-old-project : battery
-ms.assetid : B4D10667-29D6-45BF-87CA-D2F59DF78797
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : battery.ioctl_internal_configure_charger_property, IOCTL_INTERNAL_CONFIGURE_CHARGER_PROPERTY control code [Battery Devices], IOCTL_INTERNAL_CONFIGURE_CHARGER_PROPERTY, charging/IOCTL_INTERNAL_CONFIGURE_CHARGER_PROPERTY
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : charging.h
-req.include-header : Charging.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10 and later operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWERSOURCEID, *PPOWERSOURCEID
+UID: NI:charging.IOCTL_INTERNAL_CONFIGURE_CHARGER_PROPERTY
+title: IOCTL_INTERNAL_CONFIGURE_CHARGER_PROPERTY
+author: windows-driver-content
+description: The IOCTL_INTERNAL_CONFIGURE_CHARGER_PROPERTY control code is sent from a configurable charger to a device that handles configurable chargers. It configures charger properties.
+old-location: battery\ioctl_internal_configure_charger_property.htm
+old-project: battery
+ms.assetid: B4D10667-29D6-45BF-87CA-D2F59DF78797
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: battery.ioctl_internal_configure_charger_property, IOCTL_INTERNAL_CONFIGURE_CHARGER_PROPERTY control code [Battery Devices], IOCTL_INTERNAL_CONFIGURE_CHARGER_PROPERTY, charging/IOCTL_INTERNAL_CONFIGURE_CHARGER_PROPERTY
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: charging.h
+req.include-header: Charging.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10 and later operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	charging.h
+apiname:
+-	IOCTL_INTERNAL_CONFIGURE_CHARGER_PROPERTY
+product: Windows
+targetos: Windows
+req.typenames: POWERSOURCEID, *PPOWERSOURCEID
 ---
 
 # IOCTL_INTERNAL_CONFIGURE_CHARGER_PROPERTY IOCTL

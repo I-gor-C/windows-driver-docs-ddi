@@ -1,42 +1,47 @@
 ---
-UID : NF:wdfrequest.WDF_REQUEST_FORWARD_OPTIONS_INIT
-title : WDF_REQUEST_FORWARD_OPTIONS_INIT function
-author : windows-driver-content
-description : The WDF_REQUEST_FORWARD_OPTIONS_INIT function initializes a WDF_REQUEST_FORWARD_OPTIONS structure.
-old-location : wdf\wdf_request_forward_options_init.htm
-old-project : wdf
-ms.assetid : 301b4b63-0337-4f78-a4f8-6b2d2b168663
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.wdf_request_forward_options_init, WDF_REQUEST_FORWARD_OPTIONS_INIT, wdfrequest/WDF_REQUEST_FORWARD_OPTIONS_INIT, DFRequestObjectRef_ade75e55-accb-4fe0-a1be-b5acd9e4c34b.xml, WDF_REQUEST_FORWARD_OPTIONS_INIT function, kmdf.wdf_request_forward_options_init
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfrequest.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.9
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_REQUEST_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfrequest.WDF_REQUEST_FORWARD_OPTIONS_INIT
+title: WDF_REQUEST_FORWARD_OPTIONS_INIT function
+author: windows-driver-content
+description: The WDF_REQUEST_FORWARD_OPTIONS_INIT function initializes a WDF_REQUEST_FORWARD_OPTIONS structure.
+old-location: wdf\wdf_request_forward_options_init.htm
+old-project: wdf
+ms.assetid: 301b4b63-0337-4f78-a4f8-6b2d2b168663
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.wdf_request_forward_options_init, WDF_REQUEST_FORWARD_OPTIONS_INIT, wdfrequest/WDF_REQUEST_FORWARD_OPTIONS_INIT, DFRequestObjectRef_ade75e55-accb-4fe0-a1be-b5acd9e4c34b.xml, WDF_REQUEST_FORWARD_OPTIONS_INIT function, kmdf.wdf_request_forward_options_init
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfrequest.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.9
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfrequest.h
+apiname:
+-	WDF_REQUEST_FORWARD_OPTIONS_INIT
+product: Windows
+targetos: Windows
+req.typenames: WDF_REQUEST_TYPE
+req.product: Windows 10 or later.
 ---
 
 

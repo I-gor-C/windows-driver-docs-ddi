@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGK_SEGMENTDESCRIPTOR3
-title : "_DXGK_SEGMENTDESCRIPTOR3"
-author : windows-driver-content
-description : Contains information about a driver-supported segment that is composed of both BIOS-reserved memory (which is purged during a transition to a low-power state) and driver-reserved memory.
-old-location : display\dxgk_segmentdescriptor3.htm
-old-project : display
-ms.assetid : c304fd47-a9c7-46bd-819f-6751eba25459
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DXGK_SEGMENTDESCRIPTOR3, display.dxgk_segmentdescriptor3, _DXGK_SEGMENTDESCRIPTOR3, DXGK_SEGMENTDESCRIPTOR3 structure [Display Devices], d3dkmddi/DXGK_SEGMENTDESCRIPTOR3
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_SEGMENTDESCRIPTOR3
+UID: NS:d3dkmddi._DXGK_SEGMENTDESCRIPTOR3
+title: "_DXGK_SEGMENTDESCRIPTOR3"
+author: windows-driver-content
+description: Contains information about a driver-supported segment that is composed of both BIOS-reserved memory (which is purged during a transition to a low-power state) and driver-reserved memory.
+old-location: display\dxgk_segmentdescriptor3.htm
+old-project: display
+ms.assetid: c304fd47-a9c7-46bd-819f-6751eba25459
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DXGK_SEGMENTDESCRIPTOR3, display.dxgk_segmentdescriptor3, _DXGK_SEGMENTDESCRIPTOR3, DXGK_SEGMENTDESCRIPTOR3 structure [Display Devices], d3dkmddi/DXGK_SEGMENTDESCRIPTOR3
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	D3dkmddi.h
+apiname:
+-	DXGK_SEGMENTDESCRIPTOR3
+product: Windows
+targetos: Windows
+req.typenames: DXGK_SEGMENTDESCRIPTOR3
 ---
 
 # _DXGK_SEGMENTDESCRIPTOR3 structure

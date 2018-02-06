@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFInterrupt.QueueWorkItemForIsr
-title : IWDFInterrupt::QueueWorkItemForIsr method
-author : windows-driver-content
-description : The QueueWorkItemForIsr method queues a work item to process interrupt-related work outside of the interrupt service routine.
-old-location : wdf\iwdfinterrupt_queueworkitemforisr.htm
-old-project : wdf
-ms.assetid : 5C6DC011-4032-4DB6-AE17-88E510DF9A3A
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : QueueWorkItemForIsr method, IWDFInterrupt interface, IWDFInterrupt::QueueWorkItemForIsr, QueueWorkItemForIsr, IWDFInterrupt interface, QueueWorkItemForIsr method, wudfddi/IWDFInterrupt::QueueWorkItemForIsr, IWDFInterrupt, wdf.iwdfinterrupt_queueworkitemforisr, QueueWorkItemForIsr method, umdf.iwdfinterrupt_queueworkitemforisr
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.11
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFInterrupt.QueueWorkItemForIsr
+title: IWDFInterrupt::QueueWorkItemForIsr method
+author: windows-driver-content
+description: The QueueWorkItemForIsr method queues a work item to process interrupt-related work outside of the interrupt service routine.
+old-location: wdf\iwdfinterrupt_queueworkitemforisr.htm
+old-project: wdf
+ms.assetid: 5C6DC011-4032-4DB6-AE17-88E510DF9A3A
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: QueueWorkItemForIsr method, IWDFInterrupt interface, IWDFInterrupt::QueueWorkItemForIsr, QueueWorkItemForIsr, IWDFInterrupt interface, QueueWorkItemForIsr method, wudfddi/IWDFInterrupt::QueueWorkItemForIsr, IWDFInterrupt, wdf.iwdfinterrupt_queueworkitemforisr, QueueWorkItemForIsr method, umdf.iwdfinterrupt_queueworkitemforisr
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.11
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFInterrupt.QueueWorkItemForIsr
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

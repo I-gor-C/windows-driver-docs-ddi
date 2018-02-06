@@ -1,42 +1,47 @@
 ---
-UID : NI:usbscan.IOCTL_RESET_PIPE
-title : IOCTL_RESET_PIPE
-author : windows-driver-content
-description : Resets the specified USB transfer pipe that is associated with the specified device handle.
-old-location : image\ioctl_reset_pipe.htm
-old-project : image
-ms.assetid : aeca126a-449a-4a10-a4ce-1cd3939ac076
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : image.ioctl_reset_pipe, IOCTL_RESET_PIPE control code [Imaging Devices], IOCTL_RESET_PIPE, usbscan/IOCTL_RESET_PIPE, stifnc_907d0aea-158a-4219-9235-85a16d6da30f.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : usbscan.h
-req.include-header : Usbscan.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RAW_PIPE_TYPE
-req.product : Windows 10 or later.
+UID: NI:usbscan.IOCTL_RESET_PIPE
+title: IOCTL_RESET_PIPE
+author: windows-driver-content
+description: Resets the specified USB transfer pipe that is associated with the specified device handle.
+old-location: image\ioctl_reset_pipe.htm
+old-project: image
+ms.assetid: aeca126a-449a-4a10-a4ce-1cd3939ac076
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: image.ioctl_reset_pipe, IOCTL_RESET_PIPE control code [Imaging Devices], IOCTL_RESET_PIPE, usbscan/IOCTL_RESET_PIPE, stifnc_907d0aea-158a-4219-9235-85a16d6da30f.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: usbscan.h
+req.include-header: Usbscan.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Usbscan.h
+apiname:
+-	IOCTL_RESET_PIPE
+product: Windows
+targetos: Windows
+req.typenames: RAW_PIPE_TYPE
+req.product: Windows 10 or later.
 ---
 
 # IOCTL_RESET_PIPE IOCTL

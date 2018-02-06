@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGKARG_FORMATHISTORYBUFFER
-title : "_DXGKARG_FORMATHISTORYBUFFER"
-author : windows-driver-content
-description : Contains info for the display miniport driver to format a history buffer.
-old-location : display\dxgkarg_formathistorybuffer.htm
-old-project : display
-ms.assetid : 40E00234-C22B-4F86-AC5D-197223298FD7
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DXGKARG_FORMATHISTORYBUFFER, display.dxgkarg_formathistorybuffer, _DXGKARG_FORMATHISTORYBUFFER, DXGKARG_FORMATHISTORYBUFFER structure [Display Devices], d3dkmddi/DXGKARG_FORMATHISTORYBUFFER
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8.1,WDDM 1.3 and later
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGKARG_FORMATHISTORYBUFFER
+UID: NS:d3dkmddi._DXGKARG_FORMATHISTORYBUFFER
+title: "_DXGKARG_FORMATHISTORYBUFFER"
+author: windows-driver-content
+description: Contains info for the display miniport driver to format a history buffer.
+old-location: display\dxgkarg_formathistorybuffer.htm
+old-project: display
+ms.assetid: 40E00234-C22B-4F86-AC5D-197223298FD7
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DXGKARG_FORMATHISTORYBUFFER, display.dxgkarg_formathistorybuffer, _DXGKARG_FORMATHISTORYBUFFER, DXGKARG_FORMATHISTORYBUFFER structure [Display Devices], d3dkmddi/DXGKARG_FORMATHISTORYBUFFER
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8.1,WDDM 1.3 and later
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	D3dkmddi.h
+apiname:
+-	DXGKARG_FORMATHISTORYBUFFER
+product: Windows
+targetos: Windows
+req.typenames: DXGKARG_FORMATHISTORYBUFFER
 ---
 
 # _DXGKARG_FORMATHISTORYBUFFER structure

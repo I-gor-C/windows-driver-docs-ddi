@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfcore.WDF_ABS_TIMEOUT_IN_MS
-title : WDF_ABS_TIMEOUT_IN_MS function
-author : windows-driver-content
-description : The WDF_ABS_TIMEOUT_IN_MS function converts a specified number of milliseconds to an absolute time value.
-old-location : wdf\wdf_abs_timeout_in_ms.htm
-old-project : wdf
-ms.assetid : 271d2b39-53a3-454b-97d0-0bace8504b48
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.wdf_abs_timeout_in_ms, WDF_ABS_TIMEOUT_IN_MS, WDF_ABS_TIMEOUT_IN_MS function, wdfcore/WDF_ABS_TIMEOUT_IN_MS, kmdf.wdf_abs_timeout_in_ms, DFTimerObjectRef_6ebc68ca-16c5-4948-ac68-d9247b8074f3.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfcore.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : None
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_DEVICE_SHUTDOWN_FLAGS
-req.product : Windows 10 or later.
+UID: NF:wdfcore.WDF_ABS_TIMEOUT_IN_MS
+title: WDF_ABS_TIMEOUT_IN_MS function
+author: windows-driver-content
+description: The WDF_ABS_TIMEOUT_IN_MS function converts a specified number of milliseconds to an absolute time value.
+old-location: wdf\wdf_abs_timeout_in_ms.htm
+old-project: wdf
+ms.assetid: 271d2b39-53a3-454b-97d0-0bace8504b48
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.wdf_abs_timeout_in_ms, WDF_ABS_TIMEOUT_IN_MS, WDF_ABS_TIMEOUT_IN_MS function, wdfcore/WDF_ABS_TIMEOUT_IN_MS, kmdf.wdf_abs_timeout_in_ms, DFTimerObjectRef_6ebc68ca-16c5-4948-ac68-d9247b8074f3.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfcore.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: None
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	None
+-	None.dll
+apiname:
+-	WDF_ABS_TIMEOUT_IN_MS
+product: Windows
+targetos: Windows
+req.typenames: WDF_DEVICE_SHUTDOWN_FLAGS
+req.product: Windows 10 or later.
 ---
 
 

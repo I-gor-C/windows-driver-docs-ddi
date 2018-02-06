@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.FsRtlLookupPerFileContext
-title : FsRtlLookupPerFileContext function
-author : windows-driver-content
-description : The FsRtlLookupPerFileContext routine returns a pointer to a FSRTL_PER_FILE_CONTEXT object that is associated with a specified file.
-old-location : ifsk\fsrtllookupperfilecontext.htm
-old-project : ifsk
-ms.assetid : b15598bd-8362-44f1-83ce-b4282d6604b0
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : fsrtlref_ab859bb7-ea43-4d55-ab37-feebddd270ff.xml, ntifs/FsRtlLookupPerFileContext, FsRtlLookupPerFileContext, ifsk.fsrtllookupperfilecontext, FsRtlLookupPerFileContext routine [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : FltKernel.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<=  APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.FsRtlLookupPerFileContext
+title: FsRtlLookupPerFileContext function
+author: windows-driver-content
+description: The FsRtlLookupPerFileContext routine returns a pointer to a FSRTL_PER_FILE_CONTEXT object that is associated with a specified file.
+old-location: ifsk\fsrtllookupperfilecontext.htm
+old-project: ifsk
+ms.assetid: b15598bd-8362-44f1-83ce-b4282d6604b0
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: fsrtlref_ab859bb7-ea43-4d55-ab37-feebddd270ff.xml, ntifs/FsRtlLookupPerFileContext, FsRtlLookupPerFileContext, ifsk.fsrtllookupperfilecontext, FsRtlLookupPerFileContext routine [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: FltKernel.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<=  APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	FsRtlLookupPerFileContext
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:iscsimgt._MSiSCSI_InitiatorSessionInfo
-title : "_MSiSCSI_InitiatorSessionInfo"
-author : windows-driver-content
-description : The MSiSCSI_InitiatorSessionInfo structure contains information about a collection of sessions that belong to the indicated HBA initiator.
-old-location : storage\msiscsi_initiatorsessioninfo.htm
-old-project : storage
-ms.assetid : 0406efa5-26ad-4a3d-829b-d9b03b7c3b26
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : MSiSCSI_InitiatorSessionInfo, iscsimgt/PMSiSCSI_InitiatorSessionInfo, PMSiSCSI_InitiatorSessionInfo structure pointer [Storage Devices], storage.msiscsi_initiatorsessioninfo, PMSiSCSI_InitiatorSessionInfo, structs-iSCSI_a3ebb8e8-47ff-4482-b896-7b310216bdf1.xml, iscsimgt/MSiSCSI_InitiatorSessionInfo, _MSiSCSI_InitiatorSessionInfo, MSiSCSI_InitiatorSessionInfo structure [Storage Devices], *PMSiSCSI_InitiatorSessionInfo
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : iscsimgt.h
-req.include-header : Iscsimgt.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : MSiSCSI_InitiatorSessionInfo, *PMSiSCSI_InitiatorSessionInfo
+UID: NS:iscsimgt._MSiSCSI_InitiatorSessionInfo
+title: "_MSiSCSI_InitiatorSessionInfo"
+author: windows-driver-content
+description: The MSiSCSI_InitiatorSessionInfo structure contains information about a collection of sessions that belong to the indicated HBA initiator.
+old-location: storage\msiscsi_initiatorsessioninfo.htm
+old-project: storage
+ms.assetid: 0406efa5-26ad-4a3d-829b-d9b03b7c3b26
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: MSiSCSI_InitiatorSessionInfo, iscsimgt/PMSiSCSI_InitiatorSessionInfo, PMSiSCSI_InitiatorSessionInfo structure pointer [Storage Devices], storage.msiscsi_initiatorsessioninfo, PMSiSCSI_InitiatorSessionInfo, structs-iSCSI_a3ebb8e8-47ff-4482-b896-7b310216bdf1.xml, iscsimgt/MSiSCSI_InitiatorSessionInfo, _MSiSCSI_InitiatorSessionInfo, MSiSCSI_InitiatorSessionInfo structure [Storage Devices], *PMSiSCSI_InitiatorSessionInfo
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: iscsimgt.h
+req.include-header: Iscsimgt.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	iscsimgt.h
+apiname:
+-	MSiSCSI_InitiatorSessionInfo
+product: Windows
+targetos: Windows
+req.typenames: MSiSCSI_InitiatorSessionInfo, *PMSiSCSI_InitiatorSessionInfo
 ---
 
 # _MSiSCSI_InitiatorSessionInfo structure

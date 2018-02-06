@@ -1,41 +1,46 @@
 ---
-UID : NF:extsfns.IDebugFailureAnalysis2.Get
-title : IDebugFailureAnalysis2::Get method
-author : windows-driver-content
-description : The Get method searches a DebugFailureAnalysis object for the first FA entry that has a specified tag.
-old-location : debugger\idebugfailureanalysis2_get.htm
-old-project : debugger
-ms.assetid : 5F43909E-56D0-43F8-A24E-04981614C683
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugFailureAnalysis2, IDebugFailureAnalysis2 interface [Windows Debugging], Get method, IDebugFailureAnalysis2::Get, Get, debugger.idebugfailureanalysis2_get, extsfns/IDebugFailureAnalysis2::Get, Get method [Windows Debugging], IDebugFailureAnalysis2 interface, Get method [Windows Debugging]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : extsfns.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : extsfns.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FA_EXTENSION_PLUGIN_PHASE
+UID: NF:extsfns.IDebugFailureAnalysis2.Get
+title: IDebugFailureAnalysis2::Get method
+author: windows-driver-content
+description: The Get method searches a DebugFailureAnalysis object for the first FA entry that has a specified tag.
+old-location: debugger\idebugfailureanalysis2_get.htm
+old-project: debugger
+ms.assetid: 5F43909E-56D0-43F8-A24E-04981614C683
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugFailureAnalysis2, IDebugFailureAnalysis2 interface [Windows Debugging], Get method, IDebugFailureAnalysis2::Get, Get, debugger.idebugfailureanalysis2_get, extsfns/IDebugFailureAnalysis2::Get, Get method [Windows Debugging], IDebugFailureAnalysis2 interface, Get method [Windows Debugging]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: extsfns.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: extsfns.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	extsfns.h
+apiname:
+-	IDebugFailureAnalysis2.Get
+product: Windows
+targetos: Windows
+req.typenames: FA_EXTENSION_PLUGIN_PHASE
 ---
 
 

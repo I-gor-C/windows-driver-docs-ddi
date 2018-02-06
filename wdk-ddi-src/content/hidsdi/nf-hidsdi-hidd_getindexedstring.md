@@ -1,41 +1,46 @@
 ---
-UID : NF:hidsdi.HidD_GetIndexedString
-title : HidD_GetIndexedString function
-author : windows-driver-content
-description : The HidD_GetIndexedString routine returns a specified embedded string from a top-level collection.
-old-location : hid\hidd_getindexedstring.htm
-old-project : hid
-ms.assetid : 4d500597-8ac7-41ea-aa2a-6e8d559e0282
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : hidsdi/HidD_GetIndexedString, hid.hidd_getindexedstring, HidD_GetIndexedString, hidfunc_49698b0b-18d1-41aa-b64c-185307fb2100.xml, HidD_GetIndexedString routine [Human Input Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : hidsdi.h
-req.include-header : Hidsdi.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 2000 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Hid.lib
-req.dll : Hid.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PHID_MINIDRIVER_REGISTRATION, HID_MINIDRIVER_REGISTRATION"
+UID: NF:hidsdi.HidD_GetIndexedString
+title: HidD_GetIndexedString function
+author: windows-driver-content
+description: The HidD_GetIndexedString routine returns a specified embedded string from a top-level collection.
+old-location: hid\hidd_getindexedstring.htm
+old-project: hid
+ms.assetid: 4d500597-8ac7-41ea-aa2a-6e8d559e0282
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: hidsdi/HidD_GetIndexedString, hid.hidd_getindexedstring, HidD_GetIndexedString, hidfunc_49698b0b-18d1-41aa-b64c-185307fb2100.xml, HidD_GetIndexedString routine [Human Input Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: hidsdi.h
+req.include-header: Hidsdi.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 2000 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Hid.lib
+req.dll: Hid.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Hid.dll
+apiname:
+-	HidD_GetIndexedString
+product: Windows
+targetos: Windows
+req.typenames: "*PHID_MINIDRIVER_REGISTRATION, HID_MINIDRIVER_REGISTRATION"
 ---
 
 

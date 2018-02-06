@@ -1,41 +1,46 @@
 ---
-UID : NS:61883._CMP_CONNECT_VER2
-title : "_CMP_CONNECT_VER2"
-author : windows-driver-content
-description : This structure contains information for a connection request. The request attempts to make a connection to a plug control register on the local host.
-old-location : ieee\cmp_connect_ver2.htm
-old-project : IEEE
-ms.assetid : 2A2C1478-0512-4F84-90B9-B9C62B5D44DA
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : 61883/CMP_CONNECT_VER2, 61883/PCMP_CONNECT_VER2, *PCMP_CONNECT_VER2, CMP_CONNECT_VER2, PCMP_CONNECT_VER2 structure pointer, IEEE.cmp_connect_ver2, *PCMP_CONNECT, CMP_CONNECT, PCMP_CONNECT_VER2, CMP_CONNECT_VER2 structure, _CMP_CONNECT_VER2
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : 61883.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PCMP_CONNECT_VER2, CMP_CONNECT_VER2"
+UID: NS:61883._CMP_CONNECT_VER2
+title: "_CMP_CONNECT_VER2"
+author: windows-driver-content
+description: This structure contains information for a connection request. The request attempts to make a connection to a plug control register on the local host.
+old-location: ieee\cmp_connect_ver2.htm
+old-project: IEEE
+ms.assetid: 2A2C1478-0512-4F84-90B9-B9C62B5D44DA
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: 61883/CMP_CONNECT_VER2, 61883/PCMP_CONNECT_VER2, *PCMP_CONNECT_VER2, CMP_CONNECT_VER2, PCMP_CONNECT_VER2 structure pointer, IEEE.cmp_connect_ver2, *PCMP_CONNECT, CMP_CONNECT, PCMP_CONNECT_VER2, CMP_CONNECT_VER2 structure, _CMP_CONNECT_VER2
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: 61883.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	61883.h
+apiname:
+-	CMP_CONNECT_VER2
+product: Windows
+targetos: Windows
+req.typenames: "*PCMP_CONNECT_VER2, CMP_CONNECT_VER2"
 ---
 
 # _CMP_CONNECT_VER2 structure

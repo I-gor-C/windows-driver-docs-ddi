@@ -1,41 +1,47 @@
 ---
-UID : NF:mcd.ChangerClassInitialize
-title : ChangerClassInitialize function
-author : windows-driver-content
-description : The ChangerClassInitialize routine initializes the driver.
-old-location : storage\changerclassinitialize.htm
-old-project : storage
-ms.assetid : b19f85f7-fe51-4539-8c36-e3c6a299faad
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.changerclassinitialize, ChangerClassInitialize, mcd/ChangerClassInitialize, chgrclas_f0aa8547-be16-44aa-bd15-a4828d7f57f5.xml, ChangerClassInitialize routine [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : mcd.h
-req.include-header : Mcd.h, Ntddchgr.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Mcd.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : LAMP_INTENSITY_WHITE
+UID: NF:mcd.ChangerClassInitialize
+title: ChangerClassInitialize function
+author: windows-driver-content
+description: The ChangerClassInitialize routine initializes the driver.
+old-location: storage\changerclassinitialize.htm
+old-project: storage
+ms.assetid: b19f85f7-fe51-4539-8c36-e3c6a299faad
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.changerclassinitialize, ChangerClassInitialize, mcd/ChangerClassInitialize, chgrclas_f0aa8547-be16-44aa-bd15-a4828d7f57f5.xml, ChangerClassInitialize routine [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: mcd.h
+req.include-header: Mcd.h, Ntddchgr.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Mcd.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Mcd.lib
+-	Mcd.dll
+apiname:
+-	ChangerClassInitialize
+product: Windows
+targetos: Windows
+req.typenames: LAMP_INTENSITY_WHITE
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugControl4.OutputPromptWide
-title : IDebugControl4::OutputPromptWide method
-author : windows-driver-content
-description : The OutputPromptWide method formats and sends a user prompt to the output callback objects.
-old-location : debugger\outputpromptwide.htm
-old-project : debugger
-ms.assetid : c9b2eecf-fa9d-442e-9875-d068add25289
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : OutputPromptWide, IDebugControl4 interface [Windows Debugging], OutputPromptWide method, IDebugControl4::OutputPromptWide, dbgeng/IDebugControl4::OutputPromptWide, debugger.outputpromptwide, OutputPromptWide method [Windows Debugging], IDebugControl4, OutputPromptWide method [Windows Debugging], IDebugControl4 interface
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl4.OutputPromptWide
+title: IDebugControl4::OutputPromptWide method
+author: windows-driver-content
+description: The OutputPromptWide method formats and sends a user prompt to the output callback objects.
+old-location: debugger\outputpromptwide.htm
+old-project: debugger
+ms.assetid: c9b2eecf-fa9d-442e-9875-d068add25289
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: OutputPromptWide, IDebugControl4 interface [Windows Debugging], OutputPromptWide method, IDebugControl4::OutputPromptWide, dbgeng/IDebugControl4::OutputPromptWide, debugger.outputpromptwide, OutputPromptWide method [Windows Debugging], IDebugControl4, OutputPromptWide method [Windows Debugging], IDebugControl4 interface
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Dbgeng.h
+apiname:
+-	IDebugControl4.OutputPromptWide
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

@@ -1,41 +1,50 @@
 ---
-UID : NF:dbgeng.IDebugClient5.GetProcessOptions
-title : IDebugClient5::GetProcessOptions method
-author : windows-driver-content
-description : The GetProcessOptions method retrieves the process options affecting the current process.
-old-location : debugger\getprocessoptions.htm
-old-project : debugger
-ms.assetid : ff2d4da4-5a10-4196-92bd-ac4b244a2257
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : dbgeng/IDebugClient2::GetProcessOptions, GetProcessOptions method [Windows Debugging], IDebugClient4 interface, IDebugClient::GetProcessOptions, IDebugClient5::GetProcessOptions, dbgeng/IDebugClient4::GetProcessOptions, IDebugClient_5d54bc2a-5691-4a3a-b3c9-92fc577cdabb.xml, debugger.getprocessoptions, GetProcessOptions method [Windows Debugging], IDebugClient interface, IDebugClient interface [Windows Debugging], GetProcessOptions method, IDebugClient3 interface [Windows Debugging], GetProcessOptions method, GetProcessOptions method [Windows Debugging], IDebugClient5 interface, IDebugClient3::GetProcessOptions, IDebugClient4 interface [Windows Debugging], GetProcessOptions method, GetProcessOptions method [Windows Debugging], IDebugClient3 interface, GetProcessOptions, IDebugClient2 interface [Windows Debugging], GetProcessOptions method, IDebugClient2::GetProcessOptions, dbgeng/IDebugClient5::GetProcessOptions, IDebugClient5 interface [Windows Debugging], GetProcessOptions method, GetProcessOptions method [Windows Debugging], IDebugClient2 interface, IDebugClient4::GetProcessOptions, dbgeng/IDebugClient3::GetProcessOptions, GetProcessOptions method [Windows Debugging], dbgeng/IDebugClient::GetProcessOptions, IDebugClient5
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugClient5.GetProcessOptions
+title: IDebugClient5::GetProcessOptions method
+author: windows-driver-content
+description: The GetProcessOptions method retrieves the process options affecting the current process.
+old-location: debugger\getprocessoptions.htm
+old-project: debugger
+ms.assetid: ff2d4da4-5a10-4196-92bd-ac4b244a2257
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: dbgeng/IDebugClient2::GetProcessOptions, GetProcessOptions method [Windows Debugging], IDebugClient4 interface, IDebugClient::GetProcessOptions, IDebugClient5::GetProcessOptions, dbgeng/IDebugClient4::GetProcessOptions, IDebugClient_5d54bc2a-5691-4a3a-b3c9-92fc577cdabb.xml, debugger.getprocessoptions, GetProcessOptions method [Windows Debugging], IDebugClient interface, IDebugClient interface [Windows Debugging], GetProcessOptions method, IDebugClient3 interface [Windows Debugging], GetProcessOptions method, GetProcessOptions method [Windows Debugging], IDebugClient5 interface, IDebugClient3::GetProcessOptions, IDebugClient4 interface [Windows Debugging], GetProcessOptions method, GetProcessOptions method [Windows Debugging], IDebugClient3 interface, GetProcessOptions, IDebugClient2 interface [Windows Debugging], GetProcessOptions method, IDebugClient2::GetProcessOptions, dbgeng/IDebugClient5::GetProcessOptions, IDebugClient5 interface [Windows Debugging], GetProcessOptions method, GetProcessOptions method [Windows Debugging], IDebugClient2 interface, IDebugClient4::GetProcessOptions, dbgeng/IDebugClient3::GetProcessOptions, GetProcessOptions method [Windows Debugging], dbgeng/IDebugClient::GetProcessOptions, IDebugClient5
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugClient.GetProcessOptions
+-	IDebugClient2.GetProcessOptions
+-	IDebugClient3.GetProcessOptions
+-	IDebugClient4.GetProcessOptions
+-	IDebugClient5.GetProcessOptions
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

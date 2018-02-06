@@ -1,41 +1,46 @@
 ---
-UID : NI:nfcsedev.IOCTL_NFCSE_GET_NEXT_EVENT
-title : IOCTL_NFCSE_GET_NEXT_EVENT
-author : windows-driver-content
-description : The IOCTL_NFCSE_GET_NEXT_EVENT control code returns the next event available in the buffer, or if there are no more buffered events remains pending until a secure element event is available. The event details must then be returned to the caller.
-old-location : nfpdrivers\ioctl_nfcse_get_next_event.htm
-old-project : nfpdrivers
-ms.assetid : B142BB21-D70E-4BA2-B2C1-60468FA8378E
-ms.author : windowsdriverdev
-ms.date : 12/18/2017
-ms.keywords : nfpdrivers.ioctl_nfcse_get_next_event, IOCTL_NFCSE_GET_NEXT_EVENT, _IOCTL_NFCSE_GET_NEXT_EVENT, IOCTL_NFCSE_GET_NEXT_EVENT control code [Near-Field Proximity Drivers], IOCTL_NFCSE_GET_NEXT_EVENT, nfcsedev/IOCTL_NFCSE_GET_NEXT_EVENT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : nfcsedev.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSECURE_ELEMENT_TYPE, SECURE_ELEMENT_TYPE"
+UID: NI:nfcsedev.IOCTL_NFCSE_GET_NEXT_EVENT
+title: IOCTL_NFCSE_GET_NEXT_EVENT
+author: windows-driver-content
+description: The IOCTL_NFCSE_GET_NEXT_EVENT control code returns the next event available in the buffer, or if there are no more buffered events remains pending until a secure element event is available. The event details must then be returned to the caller.
+old-location: nfpdrivers\ioctl_nfcse_get_next_event.htm
+old-project: nfpdrivers
+ms.assetid: B142BB21-D70E-4BA2-B2C1-60468FA8378E
+ms.author: windowsdriverdev
+ms.date: 12/18/2017
+ms.keywords: nfpdrivers.ioctl_nfcse_get_next_event, IOCTL_NFCSE_GET_NEXT_EVENT, _IOCTL_NFCSE_GET_NEXT_EVENT, IOCTL_NFCSE_GET_NEXT_EVENT control code [Near-Field Proximity Drivers], IOCTL_NFCSE_GET_NEXT_EVENT, nfcsedev/IOCTL_NFCSE_GET_NEXT_EVENT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: nfcsedev.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	nfcsedev.h
+apiname:
+-	IOCTL_NFCSE_GET_NEXT_EVENT
+product: Windows
+targetos: Windows
+req.typenames: "*PSECURE_ELEMENT_TYPE, SECURE_ELEMENT_TYPE"
 ---
 
 # IOCTL_NFCSE_GET_NEXT_EVENT IOCTL

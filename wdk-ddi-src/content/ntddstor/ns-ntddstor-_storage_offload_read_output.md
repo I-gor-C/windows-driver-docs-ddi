@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddstor._STORAGE_OFFLOAD_READ_OUTPUT
-title : "_STORAGE_OFFLOAD_READ_OUTPUT"
-author : windows-driver-content
-description : The STORAGE_OFFLOAD_READ_OUTPUT structure is the output of an IOCTL_STORAGE_MANAGE_DATA_SET_ATTRIBUTES control code request when the Action member of DEVICE_MANAGE_DATA_SET_ATTRIBUTES is set to DeviceDsmAction_OffloadRead.
-old-location : storage\storage_offload_read_output.htm
-old-project : storage
-ms.assetid : 3C94D493-8033-4344-BC45-A2274E5A8963
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : PSTORAGE_OFFLOAD_READ_OUTPUT, _STORAGE_OFFLOAD_READ_OUTPUT, ntddstor/STORAGE_OFFLOAD_READ_OUTPUT, ntddstor/PSTORAGE_OFFLOAD_READ_OUTPUT, PSTORAGE_OFFLOAD_READ_OUTPUT structure pointer [Storage Devices], STORAGE_OFFLOAD_READ_OUTPUT structure [Storage Devices], storage.storage_offload_read_output, *PSTORAGE_OFFLOAD_READ_OUTPUT, STORAGE_OFFLOAD_READ_OUTPUT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddstor.h
-req.include-header : Ntddstor.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 8 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STORAGE_OFFLOAD_READ_OUTPUT, *PSTORAGE_OFFLOAD_READ_OUTPUT
+UID: NS:ntddstor._STORAGE_OFFLOAD_READ_OUTPUT
+title: "_STORAGE_OFFLOAD_READ_OUTPUT"
+author: windows-driver-content
+description: The STORAGE_OFFLOAD_READ_OUTPUT structure is the output of an IOCTL_STORAGE_MANAGE_DATA_SET_ATTRIBUTES control code request when the Action member of DEVICE_MANAGE_DATA_SET_ATTRIBUTES is set to DeviceDsmAction_OffloadRead.
+old-location: storage\storage_offload_read_output.htm
+old-project: storage
+ms.assetid: 3C94D493-8033-4344-BC45-A2274E5A8963
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: PSTORAGE_OFFLOAD_READ_OUTPUT, _STORAGE_OFFLOAD_READ_OUTPUT, ntddstor/STORAGE_OFFLOAD_READ_OUTPUT, ntddstor/PSTORAGE_OFFLOAD_READ_OUTPUT, PSTORAGE_OFFLOAD_READ_OUTPUT structure pointer [Storage Devices], STORAGE_OFFLOAD_READ_OUTPUT structure [Storage Devices], storage.storage_offload_read_output, *PSTORAGE_OFFLOAD_READ_OUTPUT, STORAGE_OFFLOAD_READ_OUTPUT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddstor.h
+req.include-header: Ntddstor.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 8 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddstor.h
+apiname:
+-	STORAGE_OFFLOAD_READ_OUTPUT
+product: Windows
+targetos: Windows
+req.typenames: STORAGE_OFFLOAD_READ_OUTPUT, *PSTORAGE_OFFLOAD_READ_OUTPUT
 ---
 
 # _STORAGE_OFFLOAD_READ_OUTPUT structure

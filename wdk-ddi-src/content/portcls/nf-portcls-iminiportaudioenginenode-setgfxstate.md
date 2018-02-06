@@ -1,41 +1,46 @@
 ---
-UID : NF:portcls.IMiniportAudioEngineNode.SetGfxState
-title : IMiniportAudioEngineNode::SetGfxState method
-author : windows-driver-content
-description : Sets the state of the global effects (GFX) node in the audio engine.
-old-location : audio\iminiportaudioenginenode_setgfxstate.htm
-old-project : audio
-ms.assetid : B073D354-14FB-477E-BBD7-8BD282696EF4
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : SetGfxState, IMiniportAudioEngineNode interface [Audio Devices], SetGfxState method, portcls/IMiniportAudioEngineNode::SetGfxState, SetGfxState method [Audio Devices], IMiniportAudioEngineNode interface, IMiniportAudioEngineNode::SetGfxState, audio.iminiportaudioenginenode_setgfxstate, IMiniportAudioEngineNode, SetGfxState method [Audio Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : portcls.h
-req.include-header : 
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : portcls.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.IMiniportAudioEngineNode.SetGfxState
+title: IMiniportAudioEngineNode::SetGfxState method
+author: windows-driver-content
+description: Sets the state of the global effects (GFX) node in the audio engine.
+old-location: audio\iminiportaudioenginenode_setgfxstate.htm
+old-project: audio
+ms.assetid: B073D354-14FB-477E-BBD7-8BD282696EF4
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: SetGfxState, IMiniportAudioEngineNode interface [Audio Devices], SetGfxState method, portcls/IMiniportAudioEngineNode::SetGfxState, SetGfxState method [Audio Devices], IMiniportAudioEngineNode interface, IMiniportAudioEngineNode::SetGfxState, audio.iminiportaudioenginenode_setgfxstate, IMiniportAudioEngineNode, SetGfxState method [Audio Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: portcls.h
+req.include-header: 
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: portcls.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	portcls.h
+apiname:
+-	IMiniportAudioEngineNode.SetGfxState
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

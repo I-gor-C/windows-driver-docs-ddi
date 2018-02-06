@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.CcUninitializeCacheMap
-title : CcUninitializeCacheMap function
-author : windows-driver-content
-description : The CcUninitializeCacheMap routine stops the caching of a cached file.
-old-location : ifsk\ccuninitializecachemap.htm
-old-project : ifsk
-ms.assetid : 00e5abd6-c2d7-4408-aaf4-27a67dd3ee51
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : CcUninitializeCacheMap routine [Installable File System Drivers], CcUninitializeCacheMap, ntifs/CcUninitializeCacheMap, ccref_737f8e52-0bb4-4dfd-8516-16de77410b9a.xml, ifsk.ccuninitializecachemap
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.CcUninitializeCacheMap
+title: CcUninitializeCacheMap function
+author: windows-driver-content
+description: The CcUninitializeCacheMap routine stops the caching of a cached file.
+old-location: ifsk\ccuninitializecachemap.htm
+old-project: ifsk
+ms.assetid: 00e5abd6-c2d7-4408-aaf4-27a67dd3ee51
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: CcUninitializeCacheMap routine [Installable File System Drivers], CcUninitializeCacheMap, ntifs/CcUninitializeCacheMap, ccref_737f8e52-0bb4-4dfd-8516-16de77410b9a.xml, ifsk.ccuninitializecachemap
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	CcUninitializeCacheMap
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugControl4.GetEventFilterCommandWide
-title : IDebugControl4::GetEventFilterCommandWide method
-author : windows-driver-content
-description : The GetEventFilterCommandWide method returns the debugger command that the engine will execute when a specified event occurs.
-old-location : debugger\geteventfiltercommandwide.htm
-old-project : debugger
-ms.assetid : a565627a-4a70-4255-9a88-c39a3db11d25
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : debugger.geteventfiltercommandwide, GetEventFilterCommandWide method [Windows Debugging], IDebugControl4 interface [Windows Debugging], GetEventFilterCommandWide method, dbgeng/IDebugControl4::GetEventFilterCommandWide, GetEventFilterCommandWide, IDebugControl4::GetEventFilterCommandWide, GetEventFilterCommandWide method [Windows Debugging], IDebugControl4 interface, IDebugControl4
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl4.GetEventFilterCommandWide
+title: IDebugControl4::GetEventFilterCommandWide method
+author: windows-driver-content
+description: The GetEventFilterCommandWide method returns the debugger command that the engine will execute when a specified event occurs.
+old-location: debugger\geteventfiltercommandwide.htm
+old-project: debugger
+ms.assetid: a565627a-4a70-4255-9a88-c39a3db11d25
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: debugger.geteventfiltercommandwide, GetEventFilterCommandWide method [Windows Debugging], IDebugControl4 interface [Windows Debugging], GetEventFilterCommandWide method, dbgeng/IDebugControl4::GetEventFilterCommandWide, GetEventFilterCommandWide, IDebugControl4::GetEventFilterCommandWide, GetEventFilterCommandWide method [Windows Debugging], IDebugControl4 interface, IDebugControl4
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl4.GetEventFilterCommandWide
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

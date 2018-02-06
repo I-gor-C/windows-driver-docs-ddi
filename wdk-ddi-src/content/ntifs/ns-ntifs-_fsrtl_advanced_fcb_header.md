@@ -1,41 +1,46 @@
 ---
-UID : NS:ntifs._FSRTL_ADVANCED_FCB_HEADER
-title : "_FSRTL_ADVANCED_FCB_HEADER"
-author : windows-driver-content
-description : The FSRTL_ADVANCED_FCB_HEADER structure contains context information that a file system maintains about a file.
-old-location : ifsk\fsrtl_advanced_fcb_header.htm
-old-project : ifsk
-ms.assetid : 7816c937-109c-40a8-8b67-04413b00e5fd
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : "*PFSRTL_ADVANCED_FCB_HEADER, *PFSRTL_UNC_PROVIDER_REGISTRATION, FSRTL_ADVANCED_FCB_HEADER structure [Installable File System Drivers], _FSRTL_ADVANCED_FCB_HEADER, FSRTL_UNC_PROVIDER_REGISTRATION, ifsk.fsrtl_advanced_fcb_header, FSRTL_ADVANCED_FCB_HEADER, ntifs/FSRTL_ADVANCED_FCB_HEADER, PFSRTL_ADVANCED_FCB_HEADER, PFSRTL_ADVANCED_FCB_HEADER structure pointer [Installable File System Drivers], ntifs/PFSRTL_ADVANCED_FCB_HEADER, contextstructures_cede2315-2c72-496f-a192-3ef25a8b0516.xml"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntifs.h
-req.include-header : Ntifs.h, Fltkernel.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PFSRTL_UNC_PROVIDER_REGISTRATION, FSRTL_ADVANCED_FCB_HEADER, FSRTL_UNC_PROVIDER_REGISTRATION"
+UID: NS:ntifs._FSRTL_ADVANCED_FCB_HEADER
+title: "_FSRTL_ADVANCED_FCB_HEADER"
+author: windows-driver-content
+description: The FSRTL_ADVANCED_FCB_HEADER structure contains context information that a file system maintains about a file.
+old-location: ifsk\fsrtl_advanced_fcb_header.htm
+old-project: ifsk
+ms.assetid: 7816c937-109c-40a8-8b67-04413b00e5fd
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: "*PFSRTL_ADVANCED_FCB_HEADER, *PFSRTL_UNC_PROVIDER_REGISTRATION, FSRTL_ADVANCED_FCB_HEADER structure [Installable File System Drivers], _FSRTL_ADVANCED_FCB_HEADER, FSRTL_UNC_PROVIDER_REGISTRATION, ifsk.fsrtl_advanced_fcb_header, FSRTL_ADVANCED_FCB_HEADER, ntifs/FSRTL_ADVANCED_FCB_HEADER, PFSRTL_ADVANCED_FCB_HEADER, PFSRTL_ADVANCED_FCB_HEADER structure pointer [Installable File System Drivers], ntifs/PFSRTL_ADVANCED_FCB_HEADER, contextstructures_cede2315-2c72-496f-a192-3ef25a8b0516.xml"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntifs.h
+req.include-header: Ntifs.h, Fltkernel.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntifs.h
+apiname:
+-	FSRTL_ADVANCED_FCB_HEADER
+product: Windows
+targetos: Windows
+req.typenames: "*PFSRTL_UNC_PROVIDER_REGISTRATION, FSRTL_ADVANCED_FCB_HEADER, FSRTL_UNC_PROVIDER_REGISTRATION"
 ---
 
 # _FSRTL_ADVANCED_FCB_HEADER structure

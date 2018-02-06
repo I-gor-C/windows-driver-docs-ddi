@@ -1,42 +1,47 @@
 ---
-UID : NC:wmilib.WMI_FUNCTION_CONTROL_CALLBACK
-title : WMI_FUNCTION_CONTROL_CALLBACK
-author : windows-driver-content
-description : The DpWmiFunctionControl routine enables or disables notification of events, and enables or disables data collection for data blocks that the driver registered as expensive to collect. This routine is optional.
-old-location : kernel\dpwmifunctioncontrol.htm
-old-project : kernel
-ms.assetid : c1480927-eefa-4078-a866-68dc1b7c5e9c
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.dpwmifunctioncontrol, DpWmiFunctionControl, DpWmiFunctionControl callback function [Kernel-Mode Driver Architecture], DpWmiFunctionControl, WMI_FUNCTION_CONTROL_CALLBACK, WMI_FUNCTION_CONTROL_CALLBACK, wmilib/DpWmiFunctionControl, k903_d43ba720-8de2-411d-ae6c-3ba6b7bfe3ca.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wmilib.h
-req.include-header : Wmilib.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Called at PASSIVE_LEVEL.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WMI_CHANGER_PROBLEM_DEVICE_ERROR, *PWMI_CHANGER_PROBLEM_DEVICE_ERROR
-req.product : Windows 10 or later.
+UID: NC:wmilib.WMI_FUNCTION_CONTROL_CALLBACK
+title: WMI_FUNCTION_CONTROL_CALLBACK
+author: windows-driver-content
+description: The DpWmiFunctionControl routine enables or disables notification of events, and enables or disables data collection for data blocks that the driver registered as expensive to collect. This routine is optional.
+old-location: kernel\dpwmifunctioncontrol.htm
+old-project: kernel
+ms.assetid: c1480927-eefa-4078-a866-68dc1b7c5e9c
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.dpwmifunctioncontrol, DpWmiFunctionControl, DpWmiFunctionControl callback function [Kernel-Mode Driver Architecture], DpWmiFunctionControl, WMI_FUNCTION_CONTROL_CALLBACK, WMI_FUNCTION_CONTROL_CALLBACK, wmilib/DpWmiFunctionControl, k903_d43ba720-8de2-411d-ae6c-3ba6b7bfe3ca.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wmilib.h
+req.include-header: Wmilib.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Called at PASSIVE_LEVEL.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Wmilib.h
+apiname:
+-	DpWmiFunctionControl
+product: Windows
+targetos: Windows
+req.typenames: WMI_CHANGER_PROBLEM_DEVICE_ERROR, *PWMI_CHANGER_PROBLEM_DEVICE_ERROR
+req.product: Windows 10 or later.
 ---
 
 

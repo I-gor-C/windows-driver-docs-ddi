@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.FsRtlGetSectorSizeInformation
-title : FsRtlGetSectorSizeInformation function
-author : windows-driver-content
-description : The FsRtlGetSectorSizeInformation routine retrieves the physical and logical sector size information for a storage volume.
-old-location : ifsk\fsrtlgetsectorsizeinformation.htm
-old-project : ifsk
-ms.assetid : 337E5450-8C90-48B7-B344-FB9420498D4F
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.fsrtlgetsectorsizeinformation, FsRtlGetSectorSizeInformation routine [Installable File System Drivers], FsRtlGetSectorSizeInformation, ntifs/FsRtlGetSectorSizeInformation
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.FsRtlGetSectorSizeInformation
+title: FsRtlGetSectorSizeInformation function
+author: windows-driver-content
+description: The FsRtlGetSectorSizeInformation routine retrieves the physical and logical sector size information for a storage volume.
+old-location: ifsk\fsrtlgetsectorsizeinformation.htm
+old-project: ifsk
+ms.assetid: 337E5450-8C90-48B7-B344-FB9420498D4F
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.fsrtlgetsectorsizeinformation, FsRtlGetSectorSizeInformation routine [Installable File System Drivers], FsRtlGetSectorSizeInformation, ntifs/FsRtlGetSectorSizeInformation
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	FsRtlGetSectorSizeInformation
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

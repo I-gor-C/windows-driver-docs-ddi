@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddcdvd.IOCTL_DVD_READ_STRUCTURE
-title : IOCTL_DVD_READ_STRUCTURE
-author : windows-driver-content
-description : Returns information about a DVD disc, such as a layer descriptor, copyright information, or manufacturer-specific information.
-old-location : storage\ioctl_dvd_read_structure.htm
-old-project : storage
-ms.assetid : 64cf4d53-5d03-43bc-b295-37ecf67b4d2a
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_dvd_read_structure, IOCTL_DVD_READ_STRUCTURE control code [Storage Devices], IOCTL_DVD_READ_STRUCTURE, ntddcdvd/IOCTL_DVD_READ_STRUCTURE, k307_eafb209e-3aed-4471-a4e0-a0e52ce4c462.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddcdvd.h
-req.include-header : Ntddcdvd.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DVD_STRUCTURE_FORMAT, *PDVD_STRUCTURE_FORMAT
+UID: NI:ntddcdvd.IOCTL_DVD_READ_STRUCTURE
+title: IOCTL_DVD_READ_STRUCTURE
+author: windows-driver-content
+description: Returns information about a DVD disc, such as a layer descriptor, copyright information, or manufacturer-specific information.
+old-location: storage\ioctl_dvd_read_structure.htm
+old-project: storage
+ms.assetid: 64cf4d53-5d03-43bc-b295-37ecf67b4d2a
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_dvd_read_structure, IOCTL_DVD_READ_STRUCTURE control code [Storage Devices], IOCTL_DVD_READ_STRUCTURE, ntddcdvd/IOCTL_DVD_READ_STRUCTURE, k307_eafb209e-3aed-4471-a4e0-a0e52ce4c462.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddcdvd.h
+req.include-header: Ntddcdvd.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddcdvd.h
+apiname:
+-	IOCTL_DVD_READ_STRUCTURE
+product: Windows
+targetos: Windows
+req.typenames: DVD_STRUCTURE_FORMAT, *PDVD_STRUCTURE_FORMAT
 ---
 
 # IOCTL_DVD_READ_STRUCTURE IOCTL

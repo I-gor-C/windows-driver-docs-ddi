@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.IoAllocateWorkItem
-title : IoAllocateWorkItem function
-author : windows-driver-content
-description : The IoAllocateWorkItem routine allocates a work item.
-old-location : kernel\ioallocateworkitem.htm
-old-project : kernel
-ms.assetid : 950e31ff-2e8e-4dd3-9d6c-d3d86fd69472
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : k104_6cb480b8-6cf9-4c68-953e-8a1c8153087a.xml, IoAllocateWorkItem routine [Kernel-Mode Driver Architecture], kernel.ioallocateworkitem, IoAllocateWorkItem, wdm/IoAllocateWorkItem
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 2000 and later versions of the Windows operating system, and in Windows Me. This routine is not available in Windows 98.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.IoAllocateWorkItem
+title: IoAllocateWorkItem function
+author: windows-driver-content
+description: The IoAllocateWorkItem routine allocates a work item.
+old-location: kernel\ioallocateworkitem.htm
+old-project: kernel
+ms.assetid: 950e31ff-2e8e-4dd3-9d6c-d3d86fd69472
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: k104_6cb480b8-6cf9-4c68-953e-8a1c8153087a.xml, IoAllocateWorkItem routine [Kernel-Mode Driver Architecture], kernel.ioallocateworkitem, IoAllocateWorkItem, wdm/IoAllocateWorkItem
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 2000 and later versions of the Windows operating system, and in Windows Me. This routine is not available in Windows 98.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoAllocateWorkItem
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:hpmi._HPMI_BATTERY_UTILIZATION_HINT
-title : "_HPMI_BATTERY_UTILIZATION_HINT"
-author : windows-driver-content
-description : This hint indicates if the OEM Battery Manager should attempt to save as much charge as possible in the non-hot swappable batteries (i.e.
-old-location : powermeter\hpmi_battery_utilization_hint.htm
-old-project : powermeter
-ms.assetid : A974998F-C9AF-496E-88B1-510413C17C4A
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : PHPMI_BATTERY_UTILIZATION_HINT, *PHPMI_BATTERY_UTILIZATION_HINT, PHPMI_BATTERY_UTILIZATION_HINT structure pointer [Power Metering and Budgeting Devices], _HPMI_BATTERY_UTILIZATION_HINT, hpmi/PHPMI_BATTERY_UTILIZATION_HINT, hpmi/HPMI_BATTERY_UTILIZATION_HINT, HPMI_BATTERY_UTILIZATION_HINT structure [Power Metering and Budgeting Devices], HPMI_BATTERY_UTILIZATION_HINT, powermeter.hpmi_battery_utilization_hint
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : hpmi.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 10, version 1709 and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PHPMI_BATTERY_UTILIZATION_HINT, HPMI_BATTERY_UTILIZATION_HINT"
+UID: NS:hpmi._HPMI_BATTERY_UTILIZATION_HINT
+title: "_HPMI_BATTERY_UTILIZATION_HINT"
+author: windows-driver-content
+description: This hint indicates if the OEM Battery Manager should attempt to save as much charge as possible in the non-hot swappable batteries (i.e.
+old-location: powermeter\hpmi_battery_utilization_hint.htm
+old-project: powermeter
+ms.assetid: A974998F-C9AF-496E-88B1-510413C17C4A
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: PHPMI_BATTERY_UTILIZATION_HINT, *PHPMI_BATTERY_UTILIZATION_HINT, PHPMI_BATTERY_UTILIZATION_HINT structure pointer [Power Metering and Budgeting Devices], _HPMI_BATTERY_UTILIZATION_HINT, hpmi/PHPMI_BATTERY_UTILIZATION_HINT, hpmi/HPMI_BATTERY_UTILIZATION_HINT, HPMI_BATTERY_UTILIZATION_HINT structure [Power Metering and Budgeting Devices], HPMI_BATTERY_UTILIZATION_HINT, powermeter.hpmi_battery_utilization_hint
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: hpmi.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 10, version 1709 and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hpmi.h
+apiname:
+-	HPMI_BATTERY_UTILIZATION_HINT
+product: Windows
+targetos: Windows
+req.typenames: "*PHPMI_BATTERY_UTILIZATION_HINT, HPMI_BATTERY_UTILIZATION_HINT"
 ---
 
 # _HPMI_BATTERY_UTILIZATION_HINT structure

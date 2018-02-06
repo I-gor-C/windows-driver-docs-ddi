@@ -1,42 +1,50 @@
 ---
-UID : NF:wdfregistry.WdfRegistryQueryUnicodeString
-title : WdfRegistryQueryUnicodeString function
-author : windows-driver-content
-description : The WdfRegistryQueryUnicodeString method retrieves the string data that is currently assigned to a specified registry string value and copies the string to a specified UNICODE_STRING structure.
-old-location : wdf\wdfregistryqueryunicodestring.htm
-old-project : wdf
-ms.assetid : efbe5526-274b-416b-8e5c-8b18fe754b43
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.wdfregistryqueryunicodestring, WdfRegistryQueryUnicodeString, wdfregistry/WdfRegistryQueryUnicodeString, WdfRegistryQueryUnicodeString method, DFRegKeyObjectRef_3301cdb3-8fe5-4094-8fc2-717467802680.xml, PFN_WDFREGISTRYQUERYUNICODESTRING, kmdf.wdfregistryqueryunicodestring
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfregistry.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_QUERY_INTERFACE_CONFIG, *PWDF_QUERY_INTERFACE_CONFIG
-req.product : Windows 10 or later.
+UID: NF:wdfregistry.WdfRegistryQueryUnicodeString
+title: WdfRegistryQueryUnicodeString function
+author: windows-driver-content
+description: The WdfRegistryQueryUnicodeString method retrieves the string data that is currently assigned to a specified registry string value and copies the string to a specified UNICODE_STRING structure.
+old-location: wdf\wdfregistryqueryunicodestring.htm
+old-project: wdf
+ms.assetid: efbe5526-274b-416b-8e5c-8b18fe754b43
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.wdfregistryqueryunicodestring, WdfRegistryQueryUnicodeString, wdfregistry/WdfRegistryQueryUnicodeString, WdfRegistryQueryUnicodeString method, DFRegKeyObjectRef_3301cdb3-8fe5-4094-8fc2-717467802680.xml, PFN_WDFREGISTRYQUERYUNICODESTRING, kmdf.wdfregistryqueryunicodestring
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfregistry.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+-	WUDFx02000.dll
+-	WUDFx02000.dll.dll
+apiname:
+-	WdfRegistryQueryUnicodeString
+product: Windows
+targetos: Windows
+req.typenames: WDF_QUERY_INTERFACE_CONFIG, *PWDF_QUERY_INTERFACE_CONFIG
+req.product: Windows 10 or later.
 ---
 
 

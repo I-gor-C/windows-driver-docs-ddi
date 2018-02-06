@@ -1,42 +1,47 @@
 ---
-UID : NF:storport.StorPortInitializePoFxPower
-title : StorPortInitializePoFxPower function
-author : windows-driver-content
-description : A miniport driver calls StorPortInitializePoFxPower to register a storage device with the power management framework (PoFx).
-old-location : storage\storportinitializepofxpower.htm
-old-project : storage
-ms.assetid : 154EAF9B-4B30-4124-B31D-6C7D09B52674
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.storportinitializepofxpower, StorPortInitializePoFxPower routine [Storage Devices], storport/StorPortInitializePoFxPower, StorPortInitializePoFxPower
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : storport.h
-req.include-header : 
-req.target-type : Universal
-req.target-min-winverclnt : Available in starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STOR_SPINLOCK
-req.product : Windows 10 or later.
+UID: NF:storport.StorPortInitializePoFxPower
+title: StorPortInitializePoFxPower function
+author: windows-driver-content
+description: A miniport driver calls StorPortInitializePoFxPower to register a storage device with the power management framework (PoFx).
+old-location: storage\storportinitializepofxpower.htm
+old-project: storage
+ms.assetid: 154EAF9B-4B30-4124-B31D-6C7D09B52674
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.storportinitializepofxpower, StorPortInitializePoFxPower routine [Storage Devices], storport/StorPortInitializePoFxPower, StorPortInitializePoFxPower
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: storport.h
+req.include-header: 
+req.target-type: Universal
+req.target-min-winverclnt: Available in starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	storport.h
+apiname:
+-	StorPortInitializePoFxPower
+product: Windows
+targetos: Windows
+req.typenames: STOR_SPINLOCK
+req.product: Windows 10 or later.
 ---
 
 

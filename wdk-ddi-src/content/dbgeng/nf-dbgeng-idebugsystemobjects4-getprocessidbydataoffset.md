@@ -1,41 +1,49 @@
 ---
-UID : NF:dbgeng.IDebugSystemObjects4.GetProcessIdByDataOffset
-title : IDebugSystemObjects4::GetProcessIdByDataOffset method
-author : windows-driver-content
-description : The GetProcessIdByDataOffset method returns the engine process ID for the specified process. The process is specified by its data offset.
-old-location : debugger\getprocessidbydataoffset.htm
-old-project : debugger
-ms.assetid : a2c094f4-f54d-4c3c-95e7-75df717db8cc
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : dbgeng/IDebugSystemObjects::GetProcessIdByDataOffset, IDebugSystemObjects3 interface [Windows Debugging], GetProcessIdByDataOffset method, IDebugSystemObjects4::GetProcessIdByDataOffset, GetProcessIdByDataOffset method [Windows Debugging], IDebugSystemObjects2 interface, GetProcessIdByDataOffset method [Windows Debugging], IDebugSystemObjects3 interface, dbgeng/IDebugSystemObjects3::GetProcessIdByDataOffset, GetProcessIdByDataOffset method [Windows Debugging], IDebugSystemObjects4 interface, dbgeng/IDebugSystemObjects2::GetProcessIdByDataOffset, dbgeng/IDebugSystemObjects4::GetProcessIdByDataOffset, IDebugSystemObjects_8c7f276b-9a12-41ac-8c56-4e37b68d491d.xml, IDebugSystemObjects interface [Windows Debugging], GetProcessIdByDataOffset method, IDebugSystemObjects4, GetProcessIdByDataOffset, IDebugSystemObjects3::GetProcessIdByDataOffset, debugger.getprocessidbydataoffset, IDebugSystemObjects2::GetProcessIdByDataOffset, GetProcessIdByDataOffset method [Windows Debugging], GetProcessIdByDataOffset method [Windows Debugging], IDebugSystemObjects interface, IDebugSystemObjects2 interface [Windows Debugging], GetProcessIdByDataOffset method, IDebugSystemObjects::GetProcessIdByDataOffset, IDebugSystemObjects4 interface [Windows Debugging], GetProcessIdByDataOffset method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSystemObjects4.GetProcessIdByDataOffset
+title: IDebugSystemObjects4::GetProcessIdByDataOffset method
+author: windows-driver-content
+description: The GetProcessIdByDataOffset method returns the engine process ID for the specified process. The process is specified by its data offset.
+old-location: debugger\getprocessidbydataoffset.htm
+old-project: debugger
+ms.assetid: a2c094f4-f54d-4c3c-95e7-75df717db8cc
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: dbgeng/IDebugSystemObjects::GetProcessIdByDataOffset, IDebugSystemObjects3 interface [Windows Debugging], GetProcessIdByDataOffset method, IDebugSystemObjects4::GetProcessIdByDataOffset, GetProcessIdByDataOffset method [Windows Debugging], IDebugSystemObjects2 interface, GetProcessIdByDataOffset method [Windows Debugging], IDebugSystemObjects3 interface, dbgeng/IDebugSystemObjects3::GetProcessIdByDataOffset, GetProcessIdByDataOffset method [Windows Debugging], IDebugSystemObjects4 interface, dbgeng/IDebugSystemObjects2::GetProcessIdByDataOffset, dbgeng/IDebugSystemObjects4::GetProcessIdByDataOffset, IDebugSystemObjects_8c7f276b-9a12-41ac-8c56-4e37b68d491d.xml, IDebugSystemObjects interface [Windows Debugging], GetProcessIdByDataOffset method, IDebugSystemObjects4, GetProcessIdByDataOffset, IDebugSystemObjects3::GetProcessIdByDataOffset, debugger.getprocessidbydataoffset, IDebugSystemObjects2::GetProcessIdByDataOffset, GetProcessIdByDataOffset method [Windows Debugging], GetProcessIdByDataOffset method [Windows Debugging], IDebugSystemObjects interface, IDebugSystemObjects2 interface [Windows Debugging], GetProcessIdByDataOffset method, IDebugSystemObjects::GetProcessIdByDataOffset, IDebugSystemObjects4 interface [Windows Debugging], GetProcessIdByDataOffset method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugSystemObjects.GetProcessIdByDataOffset
+-	IDebugSystemObjects2.GetProcessIdByDataOffset
+-	IDebugSystemObjects3.GetProcessIdByDataOffset
+-	IDebugSystemObjects4.GetProcessIdByDataOffset
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

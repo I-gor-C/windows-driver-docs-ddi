@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.IoSetDeviceInterfacePropertyData
-title : IoSetDeviceInterfacePropertyData function
-author : windows-driver-content
-description : The IoSetDeviceInterfacePropertyData routine modifies the current value of a device interface property.
-old-location : kernel\iosetdeviceinterfacepropertydata.htm
-old-project : kernel
-ms.assetid : 346F6FEC-7E06-4DF0-A304-88BD830C591B
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.iosetdeviceinterfacepropertydata, IoSetDeviceInterfacePropertyData routine [Kernel-Mode Driver Architecture], wdm/IoSetDeviceInterfacePropertyData, IoSetDeviceInterfacePropertyData
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available for Windows 8 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.IoSetDeviceInterfacePropertyData
+title: IoSetDeviceInterfacePropertyData function
+author: windows-driver-content
+description: The IoSetDeviceInterfacePropertyData routine modifies the current value of a device interface property.
+old-location: kernel\iosetdeviceinterfacepropertydata.htm
+old-project: kernel
+ms.assetid: 346F6FEC-7E06-4DF0-A304-88BD830C591B
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.iosetdeviceinterfacepropertydata, IoSetDeviceInterfacePropertyData routine [Kernel-Mode Driver Architecture], wdm/IoSetDeviceInterfacePropertyData, IoSetDeviceInterfacePropertyData
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available for Windows 8 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoSetDeviceInterfacePropertyData
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

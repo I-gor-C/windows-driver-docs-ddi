@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGKARG_OPENALLOCATION
-title : "_DXGKARG_OPENALLOCATION"
-author : windows-driver-content
-description : The DXGKARG_OPENALLOCATION structure describes allocations that the display miniport driver should open.
-old-location : display\dxgkarg_openallocation.htm
-old-project : display
-ms.assetid : cddb85c7-137c-4ceb-b53c-170ce020cea1
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DmStructs_442924a2-c130-487c-acdb-62a2b6e9f219.xml, DXGKARG_OPENALLOCATION structure [Display Devices], _DXGKARG_OPENALLOCATION, d3dkmddi/DXGKARG_OPENALLOCATION, display.dxgkarg_openallocation, DXGKARG_OPENALLOCATION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available beginning with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGKARG_OPENALLOCATION
+UID: NS:d3dkmddi._DXGKARG_OPENALLOCATION
+title: "_DXGKARG_OPENALLOCATION"
+author: windows-driver-content
+description: The DXGKARG_OPENALLOCATION structure describes allocations that the display miniport driver should open.
+old-location: display\dxgkarg_openallocation.htm
+old-project: display
+ms.assetid: cddb85c7-137c-4ceb-b53c-170ce020cea1
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DmStructs_442924a2-c130-487c-acdb-62a2b6e9f219.xml, DXGKARG_OPENALLOCATION structure [Display Devices], _DXGKARG_OPENALLOCATION, d3dkmddi/DXGKARG_OPENALLOCATION, display.dxgkarg_openallocation, DXGKARG_OPENALLOCATION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available beginning with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DXGKARG_OPENALLOCATION
+product: Windows
+targetos: Windows
+req.typenames: DXGKARG_OPENALLOCATION
 ---
 
 # _DXGKARG_OPENALLOCATION structure

@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfminiport.WdfDriverMiniportUnload
-title : WdfDriverMiniportUnload function
-author : windows-driver-content
-description : The WdfDriverMiniportUnload method deletes a specified miniport driver's framework driver object.
-old-location : wdf\wdfdriverminiportunload.htm
-old-project : wdf
-ms.assetid : 57220a12-e53d-482a-afb6-09bfbbf0d870
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WdfDriverMiniportUnload, DFDriverObjectRef_aac24375-fae4-4310-b273-d3d2f4c13d69.xml, wdf.wdfdriverminiportunload, WdfDriverMiniportUnload method, wdfminiport/WdfDriverMiniportUnload, kmdf.wdfdriverminiportunload
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfminiport.h
-req.include-header : Wdfminiport.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : DriverCreate
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDF_MEMORY_DESCRIPTOR, WDF_MEMORY_DESCRIPTOR"
-req.product : Windows 10 or later.
+UID: NF:wdfminiport.WdfDriverMiniportUnload
+title: WdfDriverMiniportUnload function
+author: windows-driver-content
+description: The WdfDriverMiniportUnload method deletes a specified miniport driver's framework driver object.
+old-location: wdf\wdfdriverminiportunload.htm
+old-project: wdf
+ms.assetid: 57220a12-e53d-482a-afb6-09bfbbf0d870
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WdfDriverMiniportUnload, DFDriverObjectRef_aac24375-fae4-4310-b273-d3d2f4c13d69.xml, wdf.wdfdriverminiportunload, WdfDriverMiniportUnload method, wdfminiport/WdfDriverMiniportUnload, kmdf.wdfdriverminiportunload
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfminiport.h
+req.include-header: Wdfminiport.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: DriverCreate
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfDriverMiniportUnload
+product: Windows
+targetos: Windows
+req.typenames: "*PWDF_MEMORY_DESCRIPTOR, WDF_MEMORY_DESCRIPTOR"
+req.product: Windows 10 or later.
 ---
 
 

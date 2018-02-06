@@ -1,41 +1,46 @@
 ---
-UID : NS:hbapiwmi._RemoveTarget_OUT
-title : "_RemoveTarget_OUT"
-author : windows-driver-content
-description : The RemoveTarget_OUT structure is used by an HBA miniport driver to report the output parameter data of the RemoveTarget WMI method to the WMI client.
-old-location : storage\removetarget_out.htm
-old-project : storage
-ms.assetid : 176dbb0c-227e-48b2-956c-9e2b42f4c68b
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : RemoveTarget_OUT, PRemoveTarget_OUT, _RemoveTarget_OUT, hbapiwmi/PRemoveTarget_OUT, PRemoveTarget_OUT structure pointer [Storage Devices], hbapiwmi/RemoveTarget_OUT, storage.removetarget_out, *PRemoveTarget_OUT, structs-Fibre_0cab8f87-0c96-4e03-bfd9-495e245850ca.xml, RemoveTarget_OUT structure [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : hbapiwmi.h
-req.include-header : Hbapiwmi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PRemoveTarget_OUT, RemoveTarget_OUT"
+UID: NS:hbapiwmi._RemoveTarget_OUT
+title: "_RemoveTarget_OUT"
+author: windows-driver-content
+description: The RemoveTarget_OUT structure is used by an HBA miniport driver to report the output parameter data of the RemoveTarget WMI method to the WMI client.
+old-location: storage\removetarget_out.htm
+old-project: storage
+ms.assetid: 176dbb0c-227e-48b2-956c-9e2b42f4c68b
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: RemoveTarget_OUT, PRemoveTarget_OUT, _RemoveTarget_OUT, hbapiwmi/PRemoveTarget_OUT, PRemoveTarget_OUT structure pointer [Storage Devices], hbapiwmi/RemoveTarget_OUT, storage.removetarget_out, *PRemoveTarget_OUT, structs-Fibre_0cab8f87-0c96-4e03-bfd9-495e245850ca.xml, RemoveTarget_OUT structure [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: hbapiwmi.h
+req.include-header: Hbapiwmi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hbapiwmi.h
+apiname:
+-	RemoveTarget_OUT
+product: Windows
+targetos: Windows
+req.typenames: "*PRemoveTarget_OUT, RemoveTarget_OUT"
 ---
 
 # _RemoveTarget_OUT structure

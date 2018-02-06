@@ -1,41 +1,47 @@
 ---
-UID : NF:ntstrsafe.RtlUnicodeStringCchCopyNEx
-title : RtlUnicodeStringCchCopyNEx function
-author : windows-driver-content
-description : The RtlUnicodeStringCchCopyNEx function copies a string from one UNICODE_STRING structure to another while limiting the size of the copied string.
-old-location : kernel\rtlunicodestringcchcopynex.htm
-old-project : kernel
-ms.assetid : c7ed5af4-7731-4f1d-8802-a932c26d276a
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : RtlUnicodeStringCchCopyNEx function [Kernel-Mode Driver Architecture], ntstrsafe/RtlUnicodeStringCchCopyNEx, kernel.rtlunicodestringcchcopynex, RtlUnicodeStringCchCopyNEx, safestrings_e87c890a-b794-41c0-b506-b2b29902339c.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntstrsafe.h
-req.include-header : Ntstrsafe.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available starting with Windows XP with Service Pack 1 (SP1).
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ntstrsafe.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : BATTERY_REPORTING_SCALE, *PBATTERY_REPORTING_SCALE
+UID: NF:ntstrsafe.RtlUnicodeStringCchCopyNEx
+title: RtlUnicodeStringCchCopyNEx function
+author: windows-driver-content
+description: The RtlUnicodeStringCchCopyNEx function copies a string from one UNICODE_STRING structure to another while limiting the size of the copied string.
+old-location: kernel\rtlunicodestringcchcopynex.htm
+old-project: kernel
+ms.assetid: c7ed5af4-7731-4f1d-8802-a932c26d276a
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: RtlUnicodeStringCchCopyNEx function [Kernel-Mode Driver Architecture], ntstrsafe/RtlUnicodeStringCchCopyNEx, kernel.rtlunicodestringcchcopynex, RtlUnicodeStringCchCopyNEx, safestrings_e87c890a-b794-41c0-b506-b2b29902339c.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntstrsafe.h
+req.include-header: Ntstrsafe.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available starting with Windows XP with Service Pack 1 (SP1).
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ntstrsafe.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ntstrsafe.lib
+-	Ntstrsafe.dll
+apiname:
+-	RtlUnicodeStringCchCopyNEx
+product: Windows
+targetos: Windows
+req.typenames: BATTERY_REPORTING_SCALE, *PBATTERY_REPORTING_SCALE
 ---
 
 

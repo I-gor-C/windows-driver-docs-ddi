@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.RtlEqualMemory
-title : RtlEqualMemory macro
-author : windows-driver-content
-description : The RtlEqualMemory routine compares two blocks of memory to determine whether the specified number of bytes are identical.
-old-location : kernel\rtlequalmemory.htm
-old-project : kernel
-ms.assetid : 43695fa9-32e1-4bd5-b146-88d6d03fe9fb
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : RtlEqualMemory routine [Kernel-Mode Driver Architecture], RtlEqualMemory, wdm/RtlEqualMemory, k109_a75dfbc8-12af-4f95-9ba0-b7752b796e55.xml, kernel.rtlequalmemory
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : macro
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wdm.h
-req.dll : 
-req.irql : Any level (See Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.RtlEqualMemory
+title: RtlEqualMemory macro
+author: windows-driver-content
+description: The RtlEqualMemory routine compares two blocks of memory to determine whether the specified number of bytes are identical.
+old-location: kernel\rtlequalmemory.htm
+old-project: kernel
+ms.assetid: 43695fa9-32e1-4bd5-b146-88d6d03fe9fb
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: RtlEqualMemory routine [Kernel-Mode Driver Architecture], RtlEqualMemory, wdm/RtlEqualMemory, k109_a75dfbc8-12af-4f95-9ba0-b7752b796e55.xml, kernel.rtlequalmemory
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: macro
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wdm.h
+req.dll: 
+req.irql: Any level (See Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	RtlEqualMemory
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

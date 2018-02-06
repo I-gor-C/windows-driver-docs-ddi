@@ -1,41 +1,46 @@
 ---
-UID : NF:ntddk.PsGetProcessCreateTimeQuadPart
-title : PsGetProcessCreateTimeQuadPart function
-author : windows-driver-content
-description : The PsGetProcessCreateTimeQuadPart routine returns a LONGLONG value that represents the time at which the process was created.
-old-location : kernel\psgetprocesscreatetimequadpart.htm
-old-project : kernel
-ms.assetid : d202b6d9-9964-4c95-acd3-f641e8f9d879
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : PsGetProcessCreateTimeQuadPart routine [Kernel-Mode Driver Architecture], PsGetProcessCreateTimeQuadPart, ntddk/PsGetProcessCreateTimeQuadPart, kernel.psgetprocesscreatetimequadpart, k108_57bcfbb5-501b-41bf-964c-14c2b90548ea.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntddk.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows XP and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ntoskrnl.lib
-req.dll : Ntoskrnl.exe
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.PsGetProcessCreateTimeQuadPart
+title: PsGetProcessCreateTimeQuadPart function
+author: windows-driver-content
+description: The PsGetProcessCreateTimeQuadPart routine returns a LONGLONG value that represents the time at which the process was created.
+old-location: kernel\psgetprocesscreatetimequadpart.htm
+old-project: kernel
+ms.assetid: d202b6d9-9964-4c95-acd3-f641e8f9d879
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: PsGetProcessCreateTimeQuadPart routine [Kernel-Mode Driver Architecture], PsGetProcessCreateTimeQuadPart, ntddk/PsGetProcessCreateTimeQuadPart, kernel.psgetprocesscreatetimequadpart, k108_57bcfbb5-501b-41bf-964c-14c2b90548ea.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntddk.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows XP and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ntoskrnl.lib
+req.dll: Ntoskrnl.exe
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Ntoskrnl.exe
+apiname:
+-	PsGetProcessCreateTimeQuadPart
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

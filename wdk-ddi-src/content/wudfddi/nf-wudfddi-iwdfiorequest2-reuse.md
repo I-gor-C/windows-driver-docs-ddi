@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFIoRequest2.Reuse
-title : IWDFIoRequest2::Reuse method
-author : windows-driver-content
-description : The Reuse method reinitializes a framework request object so that it can be reused.
-old-location : wdf\iwdfiorequest2_reuse.htm
-old-project : wdf
-ms.assetid : 21d04633-3b68-4c89-a0b9-81507a1bb6d3
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wudfddi/IWDFIoRequest2::Reuse, IWDFIoRequest2, Reuse method, umdf.iwdfiorequest2_reuse, Reuse, UMDFRequestObjectRef_887853e7-3603-4793-b1b2-0b72e63b0d5a.xml, wdf.iwdfiorequest2_reuse, IWDFIoRequest2::Reuse, IWDFIoRequest2 interface, Reuse method, Reuse method, IWDFIoRequest2 interface
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.9
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFIoRequest2.Reuse
+title: IWDFIoRequest2::Reuse method
+author: windows-driver-content
+description: The Reuse method reinitializes a framework request object so that it can be reused.
+old-location: wdf\iwdfiorequest2_reuse.htm
+old-project: wdf
+ms.assetid: 21d04633-3b68-4c89-a0b9-81507a1bb6d3
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wudfddi/IWDFIoRequest2::Reuse, IWDFIoRequest2, Reuse method, umdf.iwdfiorequest2_reuse, Reuse, UMDFRequestObjectRef_887853e7-3603-4793-b1b2-0b72e63b0d5a.xml, wdf.iwdfiorequest2_reuse, IWDFIoRequest2::Reuse, IWDFIoRequest2 interface, Reuse method, Reuse method, IWDFIoRequest2 interface
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.9
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFIoRequest2.Reuse
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

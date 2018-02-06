@@ -1,42 +1,47 @@
 ---
-UID : NS:wdm._REG_QUERY_MULTIPLE_VALUE_KEY_INFORMATION
-title : "_REG_QUERY_MULTIPLE_VALUE_KEY_INFORMATION"
-author : windows-driver-content
-description : The REG_QUERY_MULTIPLE_VALUE_KEY_INFORMATION structure describes the multiple value entries that are being retrieved for a key.
-old-location : kernel\reg_query_multiple_value_key_information.htm
-old-project : kernel
-ms.assetid : 764045c0-9057-4abc-a1bd-8713797082c6
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : REG_QUERY_MULTIPLE_VALUE_KEY_INFORMATION, REG_QUERY_MULTIPLE_VALUE_KEY_INFORMATION structure [Kernel-Mode Driver Architecture], PREG_QUERY_MULTIPLE_VALUE_KEY_INFORMATION, _REG_QUERY_MULTIPLE_VALUE_KEY_INFORMATION, *PREG_QUERY_MULTIPLE_VALUE_KEY_INFORMATION, PREG_QUERY_MULTIPLE_VALUE_KEY_INFORMATION structure pointer [Kernel-Mode Driver Architecture], kstruct_d_b61ed5ad-3ac8-4db4-abe9-5670b4c8d997.xml, wdm/PREG_QUERY_MULTIPLE_VALUE_KEY_INFORMATION, wdm/REG_QUERY_MULTIPLE_VALUE_KEY_INFORMATION, kernel.reg_query_multiple_value_key_information
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : Available on Microsoft Windows XP and later versions of the Windows operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : REG_QUERY_MULTIPLE_VALUE_KEY_INFORMATION, *PREG_QUERY_MULTIPLE_VALUE_KEY_INFORMATION
-req.product : Windows 10 or later.
+UID: NS:wdm._REG_QUERY_MULTIPLE_VALUE_KEY_INFORMATION
+title: "_REG_QUERY_MULTIPLE_VALUE_KEY_INFORMATION"
+author: windows-driver-content
+description: The REG_QUERY_MULTIPLE_VALUE_KEY_INFORMATION structure describes the multiple value entries that are being retrieved for a key.
+old-location: kernel\reg_query_multiple_value_key_information.htm
+old-project: kernel
+ms.assetid: 764045c0-9057-4abc-a1bd-8713797082c6
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: REG_QUERY_MULTIPLE_VALUE_KEY_INFORMATION, REG_QUERY_MULTIPLE_VALUE_KEY_INFORMATION structure [Kernel-Mode Driver Architecture], PREG_QUERY_MULTIPLE_VALUE_KEY_INFORMATION, _REG_QUERY_MULTIPLE_VALUE_KEY_INFORMATION, *PREG_QUERY_MULTIPLE_VALUE_KEY_INFORMATION, PREG_QUERY_MULTIPLE_VALUE_KEY_INFORMATION structure pointer [Kernel-Mode Driver Architecture], kstruct_d_b61ed5ad-3ac8-4db4-abe9-5670b4c8d997.xml, wdm/PREG_QUERY_MULTIPLE_VALUE_KEY_INFORMATION, wdm/REG_QUERY_MULTIPLE_VALUE_KEY_INFORMATION, kernel.reg_query_multiple_value_key_information
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: Available on Microsoft Windows XP and later versions of the Windows operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdm.h
+apiname:
+-	REG_QUERY_MULTIPLE_VALUE_KEY_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: REG_QUERY_MULTIPLE_VALUE_KEY_INFORMATION, *PREG_QUERY_MULTIPLE_VALUE_KEY_INFORMATION
+req.product: Windows 10 or later.
 ---
 
 # _REG_QUERY_MULTIPLE_VALUE_KEY_INFORMATION structure

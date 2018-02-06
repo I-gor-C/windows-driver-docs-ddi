@@ -1,42 +1,47 @@
 ---
-UID : NN:wia_lh.IWiaLog
-title : IWiaLog
-author : windows-driver-content
-description : The IWiaLog interface provides methods to enable minidrivers to log trace, error, and warning messages to the diagnostic log file Wiaservc.log.
-old-location : image\iwialog_interface.htm
-old-project : image
-ms.assetid : b56cb3f0-1053-4104-b223-e7448a832f33
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : image.iwialog_interface, IWiaLog interface [Imaging Devices], IWiaLog interface [Imaging Devices], described, IWiaLog, wia_lh/IWiaLog, IWiaLog_0284e394-6bc5-40b8-8174-0041bfc0d5dd.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : wia_lh.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wia_lh.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : BMP_IMAGE_INFO, *PBMP_IMAGE_INFO
-req.product : Windows 10 or later.
+UID: NN:wia_lh.IWiaLog
+title: IWiaLog
+author: windows-driver-content
+description: The IWiaLog interface provides methods to enable minidrivers to log trace, error, and warning messages to the diagnostic log file Wiaservc.log.
+old-location: image\iwialog_interface.htm
+old-project: image
+ms.assetid: b56cb3f0-1053-4104-b223-e7448a832f33
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: image.iwialog_interface, IWiaLog interface [Imaging Devices], IWiaLog interface [Imaging Devices], described, IWiaLog, wia_lh/IWiaLog, IWiaLog_0284e394-6bc5-40b8-8174-0041bfc0d5dd.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: wia_lh.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wia_lh.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	wia_lh.h
+apiname:
+-	IWiaLog
+product: Windows
+targetos: Windows
+req.typenames: BMP_IMAGE_INFO, *PBMP_IMAGE_INFO
+req.product: Windows 10 or later.
 ---
 
 # IWiaLog interface

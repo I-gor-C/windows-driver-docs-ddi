@@ -1,42 +1,47 @@
 ---
-UID : NS:wwan._WWAN_PROVIDER
-title : "_WWAN_PROVIDER"
-author : windows-driver-content
-description : The WWAN_PROVIDER structure represents details about a network provider.
-old-location : netvista\wwan_provider.htm
-old-project : netvista
-ms.assetid : 2bca3123-3ac4-44fe-8d47-051314ef3cb7
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : PWWAN_PROVIDER structure pointer [Network Drivers Starting with Windows Vista], wwan/PWWAN_PROVIDER, PWWAN_PROVIDER, WWAN_PROVIDER, netvista.wwan_provider, *PWWAN_PROVIDER, _WWAN_PROVIDER, WWAN_PROVIDER structure [Network Drivers Starting with Windows Vista], wwan/WWAN_PROVIDER, WwanRef_a76aa69a-8c66-40a4-bda0-5ce66cc57790.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wwan.h
-req.include-header : Wwan.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WWAN_PROVIDER, *PWWAN_PROVIDER
-req.product : Windows 10 or later.
+UID: NS:wwan._WWAN_PROVIDER
+title: "_WWAN_PROVIDER"
+author: windows-driver-content
+description: The WWAN_PROVIDER structure represents details about a network provider.
+old-location: netvista\wwan_provider.htm
+old-project: netvista
+ms.assetid: 2bca3123-3ac4-44fe-8d47-051314ef3cb7
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: PWWAN_PROVIDER structure pointer [Network Drivers Starting with Windows Vista], wwan/PWWAN_PROVIDER, PWWAN_PROVIDER, WWAN_PROVIDER, netvista.wwan_provider, *PWWAN_PROVIDER, _WWAN_PROVIDER, WWAN_PROVIDER structure [Network Drivers Starting with Windows Vista], wwan/WWAN_PROVIDER, WwanRef_a76aa69a-8c66-40a4-bda0-5ce66cc57790.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wwan.h
+req.include-header: Wwan.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wwan.h
+apiname:
+-	WWAN_PROVIDER
+product: Windows
+targetos: Windows
+req.typenames: WWAN_PROVIDER, *PWWAN_PROVIDER
+req.product: Windows 10 or later.
 ---
 
 # _WWAN_PROVIDER structure

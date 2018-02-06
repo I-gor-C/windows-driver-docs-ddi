@@ -1,41 +1,46 @@
 ---
-UID : NS:iscsimgt._MSiSCSI_QueryLBPolicy
-title : "_MSiSCSI_QueryLBPolicy"
-author : windows-driver-content
-description : This MSiSCSI_QueryLBPolicy method returns the MCS load balancing policy for each information if any that has been set across different iSCSI session.
-old-location : storage\msiscsi_querylbpolicy.htm
-old-project : storage
-ms.assetid : da45810a-12f2-4242-8428-a1717ecf8af3
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : iscsimgt/PMSiSCSI_QueryLBPolicy, structs-iSCSI_d978106a-8fb4-4b42-8277-8ac767c54d06.xml, MSiSCSI_QueryLBPolicy structure [Storage Devices], _MSiSCSI_QueryLBPolicy, storage.msiscsi_querylbpolicy, iscsimgt/MSiSCSI_QueryLBPolicy, *PMSiSCSI_QueryLBPolicy, MSiSCSI_QueryLBPolicy, PMSiSCSI_QueryLBPolicy structure pointer [Storage Devices], PMSiSCSI_QueryLBPolicy
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : iscsimgt.h
-req.include-header : Iscsimgt.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : MSiSCSI_QueryLBPolicy, *PMSiSCSI_QueryLBPolicy
+UID: NS:iscsimgt._MSiSCSI_QueryLBPolicy
+title: "_MSiSCSI_QueryLBPolicy"
+author: windows-driver-content
+description: This MSiSCSI_QueryLBPolicy method returns the MCS load balancing policy for each information if any that has been set across different iSCSI session.
+old-location: storage\msiscsi_querylbpolicy.htm
+old-project: storage
+ms.assetid: da45810a-12f2-4242-8428-a1717ecf8af3
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: iscsimgt/PMSiSCSI_QueryLBPolicy, structs-iSCSI_d978106a-8fb4-4b42-8277-8ac767c54d06.xml, MSiSCSI_QueryLBPolicy structure [Storage Devices], _MSiSCSI_QueryLBPolicy, storage.msiscsi_querylbpolicy, iscsimgt/MSiSCSI_QueryLBPolicy, *PMSiSCSI_QueryLBPolicy, MSiSCSI_QueryLBPolicy, PMSiSCSI_QueryLBPolicy structure pointer [Storage Devices], PMSiSCSI_QueryLBPolicy
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: iscsimgt.h
+req.include-header: Iscsimgt.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	iscsimgt.h
+apiname:
+-	MSiSCSI_QueryLBPolicy
+product: Windows
+targetos: Windows
+req.typenames: MSiSCSI_QueryLBPolicy, *PMSiSCSI_QueryLBPolicy
 ---
 
 # _MSiSCSI_QueryLBPolicy structure

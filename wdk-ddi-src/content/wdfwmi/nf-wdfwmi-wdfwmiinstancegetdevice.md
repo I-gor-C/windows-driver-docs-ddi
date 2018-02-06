@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfwmi.WdfWmiInstanceGetDevice
-title : WdfWmiInstanceGetDevice function
-author : windows-driver-content
-description : The WdfWmiInstanceGetDevice method returns a handle to the framework device object that is associated with a specified WMI instance object.
-old-location : wdf\wdfwmiinstancegetdevice.htm
-old-project : wdf
-ms.assetid : 4ebc90e0-328b-4830-9942-027d3f19d186
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WdfWmiInstanceGetDevice method, wdf.wdfwmiinstancegetdevice, wdfwmi/WdfWmiInstanceGetDevice, WdfWmiInstanceGetDevice, kmdf.wdfwmiinstancegetdevice, PFN_WDFWMIINSTANCEGETDEVICE, DFWMIRef_adc116bf-d2bc-41b0-8d1d-5cc90440d778.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfwmi.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_WMI_PROVIDER_FLAGS
-req.product : Windows 10 or later.
+UID: NF:wdfwmi.WdfWmiInstanceGetDevice
+title: WdfWmiInstanceGetDevice function
+author: windows-driver-content
+description: The WdfWmiInstanceGetDevice method returns a handle to the framework device object that is associated with a specified WMI instance object.
+old-location: wdf\wdfwmiinstancegetdevice.htm
+old-project: wdf
+ms.assetid: 4ebc90e0-328b-4830-9942-027d3f19d186
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WdfWmiInstanceGetDevice method, wdf.wdfwmiinstancegetdevice, wdfwmi/WdfWmiInstanceGetDevice, WdfWmiInstanceGetDevice, kmdf.wdfwmiinstancegetdevice, PFN_WDFWMIINSTANCEGETDEVICE, DFWMIRef_adc116bf-d2bc-41b0-8d1d-5cc90440d778.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfwmi.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfWmiInstanceGetDevice
+product: Windows
+targetos: Windows
+req.typenames: WDF_WMI_PROVIDER_FLAGS
+req.product: Windows 10 or later.
 ---
 
 

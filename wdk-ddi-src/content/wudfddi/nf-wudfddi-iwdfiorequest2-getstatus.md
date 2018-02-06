@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFIoRequest2.GetStatus
-title : IWDFIoRequest2::GetStatus method
-author : windows-driver-content
-description : The GetStatus method returns the status of an I/O request.
-old-location : wdf\iwdfiorequest2_getstatus.htm
-old-project : wdf
-ms.assetid : 20b10edb-3294-4cc7-91bc-07df565a9cf2
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.iwdfiorequest2_getstatus, UMDFRequestObjectRef_c2efd103-5295-494f-8938-95cf0d76fc3e.xml, IWDFIoRequest2::GetStatus, IWDFIoRequest2, GetStatus method, IWDFIoRequest2 interface, wudfddi/IWDFIoRequest2::GetStatus, GetStatus, GetStatus method, IWDFIoRequest2 interface, GetStatus method, umdf.iwdfiorequest2_getstatus
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.9
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFIoRequest2.GetStatus
+title: IWDFIoRequest2::GetStatus method
+author: windows-driver-content
+description: The GetStatus method returns the status of an I/O request.
+old-location: wdf\iwdfiorequest2_getstatus.htm
+old-project: wdf
+ms.assetid: 20b10edb-3294-4cc7-91bc-07df565a9cf2
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.iwdfiorequest2_getstatus, UMDFRequestObjectRef_c2efd103-5295-494f-8938-95cf0d76fc3e.xml, IWDFIoRequest2::GetStatus, IWDFIoRequest2, GetStatus method, IWDFIoRequest2 interface, wudfddi/IWDFIoRequest2::GetStatus, GetStatus, GetStatus method, IWDFIoRequest2 interface, GetStatus method, umdf.iwdfiorequest2_getstatus
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.9
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFIoRequest2.GetStatus
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

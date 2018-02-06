@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_CONFIGUREAUTHENICATEDCHANNEL
-title : PFND3DDDI_CONFIGUREAUTHENICATEDCHANNEL
-author : windows-driver-content
-description : The ConfigureAuthenticatedChannel function sets state within an authenticated channel.
-old-location : display\configureauthenticatedchannel.htm
-old-project : display
-ms.assetid : 95485e96-fa4f-4c88-b88b-97b79f507abd
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.configureauthenticatedchannel, ConfigureAuthenticatedChannel callback function [Display Devices], ConfigureAuthenticatedChannel, PFND3DDDI_CONFIGUREAUTHENICATEDCHANNEL, PFND3DDDI_CONFIGUREAUTHENICATEDCHANNEL, d3dumddi/ConfigureAuthenticatedChannel, UserModeDisplayDriver_Functions_183c7dec-91c3-4929-a86d-c648d1b59ceb.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : ConfigureAuthenticatedChannel is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_CONFIGUREAUTHENICATEDCHANNEL
+title: PFND3DDDI_CONFIGUREAUTHENICATEDCHANNEL
+author: windows-driver-content
+description: The ConfigureAuthenticatedChannel function sets state within an authenticated channel.
+old-location: display\configureauthenticatedchannel.htm
+old-project: display
+ms.assetid: 95485e96-fa4f-4c88-b88b-97b79f507abd
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.configureauthenticatedchannel, ConfigureAuthenticatedChannel callback function [Display Devices], ConfigureAuthenticatedChannel, PFND3DDDI_CONFIGUREAUTHENICATEDCHANNEL, PFND3DDDI_CONFIGUREAUTHENICATEDCHANNEL, d3dumddi/ConfigureAuthenticatedChannel, UserModeDisplayDriver_Functions_183c7dec-91c3-4929-a86d-c648d1b59ceb.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: ConfigureAuthenticatedChannel is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	ConfigureAuthenticatedChannel
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugControl3.GetSupportedProcessorTypes
-title : IDebugControl3::GetSupportedProcessorTypes method
-author : windows-driver-content
-description : The GetSupportedProcessorTypes method returns the processor types supported by the debugger engine.
-old-location : debugger\getsupportedprocessortypes.htm
-old-project : debugger
-ms.assetid : b1a69c60-67e8-46b0-8f2e-7da2c4860ea6
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugControl2 interface [Windows Debugging], GetSupportedProcessorTypes method, GetSupportedProcessorTypes method [Windows Debugging], dbgeng/IDebugControl::GetSupportedProcessorTypes, GetSupportedProcessorTypes method [Windows Debugging], IDebugControl interface, GetSupportedProcessorTypes method [Windows Debugging], IDebugControl2 interface, GetSupportedProcessorTypes method [Windows Debugging], IDebugControl3 interface, IDebugControl::GetSupportedProcessorTypes, IDebugControl interface [Windows Debugging], GetSupportedProcessorTypes method, IDebugControl3, IDebugControl_555eef6a-df68-4f94-9cfa-dc31aee27014.xml, IDebugControl2::GetSupportedProcessorTypes, IDebugControl3 interface [Windows Debugging], GetSupportedProcessorTypes method, IDebugControl3::GetSupportedProcessorTypes, debugger.getsupportedprocessortypes, dbgeng/IDebugControl2::GetSupportedProcessorTypes, GetSupportedProcessorTypes, dbgeng/IDebugControl3::GetSupportedProcessorTypes
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl3.GetSupportedProcessorTypes
+title: IDebugControl3::GetSupportedProcessorTypes method
+author: windows-driver-content
+description: The GetSupportedProcessorTypes method returns the processor types supported by the debugger engine.
+old-location: debugger\getsupportedprocessortypes.htm
+old-project: debugger
+ms.assetid: b1a69c60-67e8-46b0-8f2e-7da2c4860ea6
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugControl2 interface [Windows Debugging], GetSupportedProcessorTypes method, GetSupportedProcessorTypes method [Windows Debugging], dbgeng/IDebugControl::GetSupportedProcessorTypes, GetSupportedProcessorTypes method [Windows Debugging], IDebugControl interface, GetSupportedProcessorTypes method [Windows Debugging], IDebugControl2 interface, GetSupportedProcessorTypes method [Windows Debugging], IDebugControl3 interface, IDebugControl::GetSupportedProcessorTypes, IDebugControl interface [Windows Debugging], GetSupportedProcessorTypes method, IDebugControl3, IDebugControl_555eef6a-df68-4f94-9cfa-dc31aee27014.xml, IDebugControl2::GetSupportedProcessorTypes, IDebugControl3 interface [Windows Debugging], GetSupportedProcessorTypes method, IDebugControl3::GetSupportedProcessorTypes, debugger.getsupportedprocessortypes, dbgeng/IDebugControl2::GetSupportedProcessorTypes, GetSupportedProcessorTypes, dbgeng/IDebugControl3::GetSupportedProcessorTypes
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl.GetSupportedProcessorTypes
+-	IDebugControl2.GetSupportedProcessorTypes
+-	IDebugControl3.GetSupportedProcessorTypes
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

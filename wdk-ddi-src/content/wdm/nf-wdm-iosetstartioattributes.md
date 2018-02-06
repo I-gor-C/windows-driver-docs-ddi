@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.IoSetStartIoAttributes
-title : IoSetStartIoAttributes function
-author : windows-driver-content
-description : The IoSetStartIoAttributes routine sets attributes for the driver's StartIo routine.
-old-location : kernel\iosetstartioattributes.htm
-old-project : kernel
-ms.assetid : 47ae3578-231c-49c8-a851-9f165db27fb1
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.iosetstartioattributes, k104_cf8613cc-f891-45f7-816c-224b3294f8dd.xml, wdm/IoSetStartIoAttributes, IoSetStartIoAttributes, IoSetStartIoAttributes routine [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available for Microsoft Windows XP and later versions of the Windows operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : StartIoCancel, StartIoRecursion, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.IoSetStartIoAttributes
+title: IoSetStartIoAttributes function
+author: windows-driver-content
+description: The IoSetStartIoAttributes routine sets attributes for the driver's StartIo routine.
+old-location: kernel\iosetstartioattributes.htm
+old-project: kernel
+ms.assetid: 47ae3578-231c-49c8-a851-9f165db27fb1
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.iosetstartioattributes, k104_cf8613cc-f891-45f7-816c-224b3294f8dd.xml, wdm/IoSetStartIoAttributes, IoSetStartIoAttributes, IoSetStartIoAttributes routine [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available for Microsoft Windows XP and later versions of the Windows operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: StartIoCancel, StartIoRecursion, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoSetStartIoAttributes
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

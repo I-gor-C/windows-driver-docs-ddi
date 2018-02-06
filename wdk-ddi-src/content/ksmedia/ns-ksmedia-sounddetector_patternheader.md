@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.SOUNDDETECTOR_PATTERNHEADER
-title : SOUNDDETECTOR_PATTERNHEADER
-author : windows-driver-content
-description : The SOUNDDETECTOR_PATTERNHEADER structure specifies the pattern header for the sound detector in the KSPROPERTY_SOUNDDETECTOR_PATTERNS property.
-old-location : audio\sounddetector_patternheader.htm
-old-project : audio
-ms.assetid : 43172627-2A05-44AD-8B39-8FC384F9F44E
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : SOUNDDETECTOR_PATTERNHEADER structure [Audio Devices], audio.sounddetector_patternheader, SOUNDDETECTOR_PATTERNHEADER, ksmedia/SOUNDDETECTOR_PATTERNHEADER
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SOUNDDETECTOR_PATTERNHEADER
+UID: NS:ksmedia.SOUNDDETECTOR_PATTERNHEADER
+title: SOUNDDETECTOR_PATTERNHEADER
+author: windows-driver-content
+description: The SOUNDDETECTOR_PATTERNHEADER structure specifies the pattern header for the sound detector in the KSPROPERTY_SOUNDDETECTOR_PATTERNS property.
+old-location: audio\sounddetector_patternheader.htm
+old-project: audio
+ms.assetid: 43172627-2A05-44AD-8B39-8FC384F9F44E
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: SOUNDDETECTOR_PATTERNHEADER structure [Audio Devices], audio.sounddetector_patternheader, SOUNDDETECTOR_PATTERNHEADER, ksmedia/SOUNDDETECTOR_PATTERNHEADER
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	SOUNDDETECTOR_PATTERNHEADER
+product: Windows
+targetos: Windows
+req.typenames: SOUNDDETECTOR_PATTERNHEADER
 ---
 
 # SOUNDDETECTOR_PATTERNHEADER structure

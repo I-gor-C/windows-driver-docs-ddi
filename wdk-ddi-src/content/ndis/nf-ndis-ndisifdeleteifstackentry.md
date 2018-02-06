@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisIfDeleteIfStackEntry
-title : NdisIfDeleteIfStackEntry function
-author : windows-driver-content
-description : The NdisIfDeleteIfStackEntry function deletes information about the ordering of two network interfaces in the NDIS interface stack.
-old-location : netvista\ndisifdeleteifstackentry.htm
-old-project : netvista
-ms.assetid : 02b4a485-d44b-458c-89f5-1807500b6db8
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NdisIfDeleteIfStackEntry, NdisIfDeleteIfStackEntry function [Network Drivers Starting with Windows Vista], netvista.ndisifdeleteifstackentry, net_if_functions_ref_dc4a2189-1dc6-43c5-8cef-baf5907d3d60.xml, ndis/NdisIfDeleteIfStackEntry
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_Interfaces_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisIfDeleteIfStackEntry
+title: NdisIfDeleteIfStackEntry function
+author: windows-driver-content
+description: The NdisIfDeleteIfStackEntry function deletes information about the ordering of two network interfaces in the NDIS interface stack.
+old-location: netvista\ndisifdeleteifstackentry.htm
+old-project: netvista
+ms.assetid: 02b4a485-d44b-458c-89f5-1807500b6db8
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NdisIfDeleteIfStackEntry, NdisIfDeleteIfStackEntry function [Network Drivers Starting with Windows Vista], netvista.ndisifdeleteifstackentry, net_if_functions_ref_dc4a2189-1dc6-43c5-8cef-baf5907d3d60.xml, ndis/NdisIfDeleteIfStackEntry
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_Interfaces_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisIfDeleteIfStackEntry
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

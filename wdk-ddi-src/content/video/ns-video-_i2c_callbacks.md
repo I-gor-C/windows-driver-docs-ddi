@@ -1,42 +1,47 @@
 ---
-UID : NS:video._I2C_CALLBACKS
-title : "_I2C_CALLBACKS"
-author : windows-driver-content
-description : The I2C_CALLBACKS structure contains pointers to functions, implemented by the video miniport driver, that read from and write to the serial data and serial clock lines of the I2C bus.
-old-location : display\i2c_callbacks.htm
-old-project : display
-ms.assetid : fc67ef79-41c8-414c-aaa9-ef8a80edd696
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : Video_Structs_fc21393a-6df2-4b4f-89be-2d3ac46dfcd7.xml, I2C_CALLBACKS structure [Display Devices], video/I2C_CALLBACKS, *PI2C_CALLBACKS, I2C_CALLBACKS, PI2C_CALLBACKS, PI2C_CALLBACKS structure pointer [Display Devices], _I2C_CALLBACKS, video/PI2C_CALLBACKS, display.i2c_callbacks
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PI2C_CALLBACKS, I2C_CALLBACKS"
-req.product : Windows 10 or later.
+UID: NS:video._I2C_CALLBACKS
+title: "_I2C_CALLBACKS"
+author: windows-driver-content
+description: The I2C_CALLBACKS structure contains pointers to functions, implemented by the video miniport driver, that read from and write to the serial data and serial clock lines of the I2C bus.
+old-location: display\i2c_callbacks.htm
+old-project: display
+ms.assetid: fc67ef79-41c8-414c-aaa9-ef8a80edd696
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: Video_Structs_fc21393a-6df2-4b4f-89be-2d3ac46dfcd7.xml, I2C_CALLBACKS structure [Display Devices], video/I2C_CALLBACKS, *PI2C_CALLBACKS, I2C_CALLBACKS, PI2C_CALLBACKS, PI2C_CALLBACKS structure pointer [Display Devices], _I2C_CALLBACKS, video/PI2C_CALLBACKS, display.i2c_callbacks
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	video.h
+apiname:
+-	I2C_CALLBACKS
+product: Windows
+targetos: Windows
+req.typenames: "*PI2C_CALLBACKS, I2C_CALLBACKS"
+req.product: Windows 10 or later.
 ---
 
 # _I2C_CALLBACKS structure

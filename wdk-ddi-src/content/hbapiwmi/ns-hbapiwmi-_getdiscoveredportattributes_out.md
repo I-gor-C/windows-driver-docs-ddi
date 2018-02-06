@@ -1,41 +1,46 @@
 ---
-UID : NS:hbapiwmi._GetDiscoveredPortAttributes_OUT
-title : "_GetDiscoveredPortAttributes_OUT"
-author : windows-driver-content
-description : The GetDiscoveredPortAttributes_OUT structure is used to report the output parameter data of the GetDiscoveredPortAttributes WMI method to the WMI client.
-old-location : storage\getdiscoveredportattributes_out.htm
-old-project : storage
-ms.assetid : 7a6ae185-2f91-4285-b540-61130aef464c
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : GetDiscoveredPortAttributes_OUT structure [Storage Devices], hbapiwmi/GetDiscoveredPortAttributes_OUT, _GetDiscoveredPortAttributes_OUT, GetDiscoveredPortAttributes_OUT, PGetDiscoveredPortAttributes_OUT structure pointer [Storage Devices], *PGetDiscoveredPortAttributes_OUT, structs-Fibre_611d9a0e-b0dc-472e-9bec-3902412e8ec4.xml, storage.getdiscoveredportattributes_out, hbapiwmi/PGetDiscoveredPortAttributes_OUT, PGetDiscoveredPortAttributes_OUT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : hbapiwmi.h
-req.include-header : Hbapiwmi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : GetDiscoveredPortAttributes_OUT, *PGetDiscoveredPortAttributes_OUT
+UID: NS:hbapiwmi._GetDiscoveredPortAttributes_OUT
+title: "_GetDiscoveredPortAttributes_OUT"
+author: windows-driver-content
+description: The GetDiscoveredPortAttributes_OUT structure is used to report the output parameter data of the GetDiscoveredPortAttributes WMI method to the WMI client.
+old-location: storage\getdiscoveredportattributes_out.htm
+old-project: storage
+ms.assetid: 7a6ae185-2f91-4285-b540-61130aef464c
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: GetDiscoveredPortAttributes_OUT structure [Storage Devices], hbapiwmi/GetDiscoveredPortAttributes_OUT, _GetDiscoveredPortAttributes_OUT, GetDiscoveredPortAttributes_OUT, PGetDiscoveredPortAttributes_OUT structure pointer [Storage Devices], *PGetDiscoveredPortAttributes_OUT, structs-Fibre_611d9a0e-b0dc-472e-9bec-3902412e8ec4.xml, storage.getdiscoveredportattributes_out, hbapiwmi/PGetDiscoveredPortAttributes_OUT, PGetDiscoveredPortAttributes_OUT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: hbapiwmi.h
+req.include-header: Hbapiwmi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hbapiwmi.h
+apiname:
+-	GetDiscoveredPortAttributes_OUT
+product: Windows
+targetos: Windows
+req.typenames: GetDiscoveredPortAttributes_OUT, *PGetDiscoveredPortAttributes_OUT
 ---
 
 # _GetDiscoveredPortAttributes_OUT structure

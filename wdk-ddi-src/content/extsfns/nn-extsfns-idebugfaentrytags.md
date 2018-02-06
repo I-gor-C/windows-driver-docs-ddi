@@ -1,41 +1,46 @@
 ---
-UID : NN:extsfns.IDebugFAEntryTags
-title : IDebugFAEntryTags
-author : windows-driver-content
-description : When the !analyze debugger command runs, the analysis engine can load and run extension analysis plug-ins.
-old-location : debugger\idebugfaentrytags.htm
-old-project : debugger
-ms.assetid : B52DFB0E-0035-40C2-B2F5-5E16B16931C2
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : debugger.idebugfaentrytags, IDebugFAEntryTags interface [Windows Debugging], IDebugFAEntryTags interface [Windows Debugging], described, IDebugFAEntryTags, extsfns/IDebugFAEntryTags
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : extsfns.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : extsfns.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FA_EXTENSION_PLUGIN_PHASE
+UID: NN:extsfns.IDebugFAEntryTags
+title: IDebugFAEntryTags
+author: windows-driver-content
+description: When the !analyze debugger command runs, the analysis engine can load and run extension analysis plug-ins.
+old-location: debugger\idebugfaentrytags.htm
+old-project: debugger
+ms.assetid: B52DFB0E-0035-40C2-B2F5-5E16B16931C2
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: debugger.idebugfaentrytags, IDebugFAEntryTags interface [Windows Debugging], IDebugFAEntryTags interface [Windows Debugging], described, IDebugFAEntryTags, extsfns/IDebugFAEntryTags
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: extsfns.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: extsfns.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	extsfns.h
+apiname:
+-	IDebugFAEntryTags
+product: Windows
+targetos: Windows
+req.typenames: FA_EXTENSION_PLUGIN_PHASE
 ---
 
 # IDebugFAEntryTags interface

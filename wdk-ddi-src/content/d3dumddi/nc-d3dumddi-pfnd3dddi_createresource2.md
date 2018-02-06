@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_CREATERESOURCE2
-title : PFND3DDDI_CREATERESOURCE2
-author : windows-driver-content
-description : Creates a resource. Implemented by Windows Display Driver Model (WDDM) 1.2 and later user-mode display drivers.
-old-location : display\createresource2.htm
-old-project : display
-ms.assetid : a8326707-cffc-4a20-ad3d-c7862661f513
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.createresource2, CreateResource2 callback function [Display Devices], CreateResource2, PFND3DDDI_CREATERESOURCE2, PFND3DDDI_CREATERESOURCE2, d3dumddi/CreateResource2
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_CREATERESOURCE2
+title: PFND3DDDI_CREATERESOURCE2
+author: windows-driver-content
+description: Creates a resource. Implemented by Windows Display Driver Model (WDDM) 1.2 and later user-mode display drivers.
+old-location: display\createresource2.htm
+old-project: display
+ms.assetid: a8326707-cffc-4a20-ad3d-c7862661f513
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.createresource2, CreateResource2 callback function [Display Devices], CreateResource2, PFND3DDDI_CREATERESOURCE2, PFND3DDDI_CREATERESOURCE2, d3dumddi/CreateResource2
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	D3dumddi.h
+apiname:
+-	CreateResource2
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NF:video.VideoPortReadRegisterBufferUlong
-title : VideoPortReadRegisterBufferUlong function
-author : windows-driver-content
-description : The VideoPortReadRegisterBufferUlong function reads a number of ULONG values from a mapped device memory range and writes them into a buffer.
-old-location : display\videoportreadregisterbufferulong.htm
-old-project : display
-ms.assetid : ebef1d9f-9559-436c-b425-92ccf3bbf203
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : VideoPortReadRegisterBufferUlong function [Display Devices], VideoPortReadRegisterBufferUlong, VideoPort_Functions_69ff5729-b386-4527-8bca-adc70e2d467d.xml, video/VideoPortReadRegisterBufferUlong, display.videoportreadregisterbufferulong
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows 2000 and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Videoprt.lib
-req.dll : Videoprt.sys
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_PORT_SERVICES
-req.product : Windows 10 or later.
+UID: NF:video.VideoPortReadRegisterBufferUlong
+title: VideoPortReadRegisterBufferUlong function
+author: windows-driver-content
+description: The VideoPortReadRegisterBufferUlong function reads a number of ULONG values from a mapped device memory range and writes them into a buffer.
+old-location: display\videoportreadregisterbufferulong.htm
+old-project: display
+ms.assetid: ebef1d9f-9559-436c-b425-92ccf3bbf203
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: VideoPortReadRegisterBufferUlong function [Display Devices], VideoPortReadRegisterBufferUlong, VideoPort_Functions_69ff5729-b386-4527-8bca-adc70e2d467d.xml, video/VideoPortReadRegisterBufferUlong, display.videoportreadregisterbufferulong
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows 2000 and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Videoprt.lib
+req.dll: Videoprt.sys
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Videoprt.sys
+apiname:
+-	VideoPortReadRegisterBufferUlong
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_PORT_SERVICES
+req.product: Windows 10 or later.
 ---
 
 

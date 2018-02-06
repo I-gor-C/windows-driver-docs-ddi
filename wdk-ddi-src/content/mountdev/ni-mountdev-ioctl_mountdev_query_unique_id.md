@@ -1,41 +1,46 @@
 ---
-UID : NI:mountdev.IOCTL_MOUNTDEV_QUERY_UNIQUE_ID
-title : IOCTL_MOUNTDEV_QUERY_UNIQUE_ID
-author : windows-driver-content
-description : Support for this IOCTL by mount manager clients is mandatory.
-old-location : storage\ioctl_mountdev_query_unique_id.htm
-old-project : storage
-ms.assetid : 866b9383-d73d-4be1-a4de-b78c9558c3ce
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_mountdev_query_unique_id, IOCTL_MOUNTDEV_QUERY_UNIQUE_ID control code [Storage Devices], IOCTL_MOUNTDEV_QUERY_UNIQUE_ID, mountdev/IOCTL_MOUNTDEV_QUERY_UNIQUE_ID, k307_5dd8b350-65b5-4f59-b96f-cae11fe7fb5b.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : mountdev.h
-req.include-header : Mountdev.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PZONE_DESCRIPTIOR, ZONE_DESCRIPTIOR"
+UID: NI:mountdev.IOCTL_MOUNTDEV_QUERY_UNIQUE_ID
+title: IOCTL_MOUNTDEV_QUERY_UNIQUE_ID
+author: windows-driver-content
+description: Support for this IOCTL by mount manager clients is mandatory.
+old-location: storage\ioctl_mountdev_query_unique_id.htm
+old-project: storage
+ms.assetid: 866b9383-d73d-4be1-a4de-b78c9558c3ce
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_mountdev_query_unique_id, IOCTL_MOUNTDEV_QUERY_UNIQUE_ID control code [Storage Devices], IOCTL_MOUNTDEV_QUERY_UNIQUE_ID, mountdev/IOCTL_MOUNTDEV_QUERY_UNIQUE_ID, k307_5dd8b350-65b5-4f59-b96f-cae11fe7fb5b.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: mountdev.h
+req.include-header: Mountdev.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Mountdev.h
+apiname:
+-	IOCTL_MOUNTDEV_QUERY_UNIQUE_ID
+product: Windows
+targetos: Windows
+req.typenames: "*PZONE_DESCRIPTIOR, ZONE_DESCRIPTIOR"
 ---
 
 # IOCTL_MOUNTDEV_QUERY_UNIQUE_ID IOCTL

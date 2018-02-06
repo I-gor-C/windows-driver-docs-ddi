@@ -1,42 +1,47 @@
 ---
-UID : NF:wiautil.wiauDbgTrace
-title : wiauDbgTrace function
-author : windows-driver-content
-description : The wiauDbgTrace function logs a trace message.
-old-location : image\wiaudbgtrace.htm
-old-project : image
-ms.assetid : c3cdb5c9-b43d-443b-8d04-d30eb74f39da
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : wiauDbgTrace function [Imaging Devices], wiauFncs_5c66ac77-5db3-489c-b7fc-84393e9105dd.xml, wiauDbgTrace, wiautil/wiauDbgTrace, image.wiaudbgtrace
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wiautil.h
-req.include-header : Wiautil.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows XP and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SKIP_AMOUNT
-req.product : Windows 10 or later.
+UID: NF:wiautil.wiauDbgTrace
+title: wiauDbgTrace function
+author: windows-driver-content
+description: The wiauDbgTrace function logs a trace message.
+old-location: image\wiaudbgtrace.htm
+old-project: image
+ms.assetid: c3cdb5c9-b43d-443b-8d04-d30eb74f39da
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: wiauDbgTrace function [Imaging Devices], wiauFncs_5c66ac77-5db3-489c-b7fc-84393e9105dd.xml, wiauDbgTrace, wiautil/wiauDbgTrace, image.wiaudbgtrace
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wiautil.h
+req.include-header: Wiautil.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows XP and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wiautil.h
+apiname:
+-	wiauDbgTrace
+product: Windows
+targetos: Windows
+req.typenames: SKIP_AMOUNT
+req.product: Windows 10 or later.
 ---
 
 

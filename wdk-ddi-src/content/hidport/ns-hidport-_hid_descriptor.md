@@ -1,41 +1,46 @@
 ---
-UID : NS:hidport._HID_DESCRIPTOR
-title : "_HID_DESCRIPTOR"
-author : windows-driver-content
-description : The HID_DESCRIPTOR structure represents a HID descriptor for a HIDClass device.
-old-location : hid\hid_descriptor.htm
-old-project : hid
-ms.assetid : 80a6a5d8-b13a-418d-a4bd-941d3a913c1e
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : "*PHID_DESCRIPTOR, PHID_DESCRIPTOR structure pointer [Human Input Devices], PHID_DESCRIPTOR, hidport/PHID_DESCRIPTOR, HID_DESCRIPTOR structure [Human Input Devices], hidstrct_07b2c0af-449d-484e-8aa8-9d7e3909d113.xml, hidport/HID_DEVICE_ATTRIBUTES, hid.hid_descriptor, HID_DESCRIPTOR, _HID_DESCRIPTOR"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : hidport.h
-req.include-header : Hidport.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HID_DESCRIPTOR, *PHID_DESCRIPTOR
+UID: NS:hidport._HID_DESCRIPTOR
+title: "_HID_DESCRIPTOR"
+author: windows-driver-content
+description: The HID_DESCRIPTOR structure represents a HID descriptor for a HIDClass device.
+old-location: hid\hid_descriptor.htm
+old-project: hid
+ms.assetid: 80a6a5d8-b13a-418d-a4bd-941d3a913c1e
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: "*PHID_DESCRIPTOR, PHID_DESCRIPTOR structure pointer [Human Input Devices], PHID_DESCRIPTOR, hidport/PHID_DESCRIPTOR, HID_DESCRIPTOR structure [Human Input Devices], hidstrct_07b2c0af-449d-484e-8aa8-9d7e3909d113.xml, hidport/HID_DEVICE_ATTRIBUTES, hid.hid_descriptor, HID_DESCRIPTOR, _HID_DESCRIPTOR"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: hidport.h
+req.include-header: Hidport.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hidport.h
+apiname:
+-	HID_DESCRIPTOR
+product: Windows
+targetos: Windows
+req.typenames: HID_DESCRIPTOR, *PHID_DESCRIPTOR
 ---
 
 # _HID_DESCRIPTOR structure

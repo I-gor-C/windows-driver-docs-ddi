@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmdt._DXGKMDT_OPM_ACP_AND_CGMSA_SIGNALING
-title : "_DXGKMDT_OPM_ACP_AND_CGMSA_SIGNALING"
-author : windows-driver-content
-description : The DXGKMDT_OPM_ACP_AND_CGMSA_SIGNALING structure describes how the signal that goes through the physical connector that is associated with the protected output object is protected.
-old-location : display\dxgkmdt_opm_acp_and_cgmsa_signaling.htm
-old-project : display
-ms.assetid : edc0472c-d222-49f5-9d26-6b7e8c032031
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : "_DXGKMDT_OPM_ACP_AND_CGMSA_SIGNALING, DXGKMDT_OPM_ACP_AND_CGMSA_SIGNALING structure [Display Devices], DXGKMDT_OPM_ACP_AND_CGMSA_SIGNALING, d3dkmdt/DXGKMDT_OPM_ACP_AND_CGMSA_SIGNALING, DmStructs_0d89c3c0-96f1-4b88-8c79-a33ad8246e4a.xml, display.dxgkmdt_opm_acp_and_cgmsa_signaling"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmdt.h
-req.include-header : D3dkmdt.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGKMDT_OPM_ACP_AND_CGMSA_SIGNALING
+UID: NS:d3dkmdt._DXGKMDT_OPM_ACP_AND_CGMSA_SIGNALING
+title: "_DXGKMDT_OPM_ACP_AND_CGMSA_SIGNALING"
+author: windows-driver-content
+description: The DXGKMDT_OPM_ACP_AND_CGMSA_SIGNALING structure describes how the signal that goes through the physical connector that is associated with the protected output object is protected.
+old-location: display\dxgkmdt_opm_acp_and_cgmsa_signaling.htm
+old-project: display
+ms.assetid: edc0472c-d222-49f5-9d26-6b7e8c032031
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: "_DXGKMDT_OPM_ACP_AND_CGMSA_SIGNALING, DXGKMDT_OPM_ACP_AND_CGMSA_SIGNALING structure [Display Devices], DXGKMDT_OPM_ACP_AND_CGMSA_SIGNALING, d3dkmdt/DXGKMDT_OPM_ACP_AND_CGMSA_SIGNALING, DmStructs_0d89c3c0-96f1-4b88-8c79-a33ad8246e4a.xml, display.dxgkmdt_opm_acp_and_cgmsa_signaling"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmdt.h
+req.include-header: D3dkmdt.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmdt.h
+apiname:
+-	DXGKMDT_OPM_ACP_AND_CGMSA_SIGNALING
+product: Windows
+targetos: Windows
+req.typenames: DXGKMDT_OPM_ACP_AND_CGMSA_SIGNALING
 ---
 
 # _DXGKMDT_OPM_ACP_AND_CGMSA_SIGNALING structure

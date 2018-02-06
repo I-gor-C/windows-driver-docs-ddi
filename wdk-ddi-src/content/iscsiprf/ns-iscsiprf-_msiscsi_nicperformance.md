@@ -1,41 +1,46 @@
 ---
-UID : NS:iscsiprf._MSiSCSI_NICPerformance
-title : "_MSiSCSI_NICPerformance"
-author : windows-driver-content
-description : The MSiSCSI_NICPerformance structure can be used by an iSCSI initiator to report statistics for a network interface card (NIC) port.
-old-location : storage\msiscsi_nicperformance.htm
-old-project : storage
-ms.assetid : 921e6e44-adc2-4257-b11e-941121f5bfd7
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : "*PMSiSCSI_NICPerformance, PMSiSCSI_NICPerformance, _MSiSCSI_NICPerformance, MSiSCSI_NICPerformance, storage.msiscsi_nicperformance, PMSiSCSI_NICPerformance structure pointer [Storage Devices], iscsiprf/MSiSCSI_NICPerformance, iscsiprf/PMSiSCSI_NICPerformance, structs-iSCSI_a4d4dddd-24f6-4aa5-9b2c-61c0f1604fdb.xml, MSiSCSI_NICPerformance structure [Storage Devices]"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : iscsiprf.h
-req.include-header : Iscsiprf.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PMSiSCSI_NICPerformance, MSiSCSI_NICPerformance"
+UID: NS:iscsiprf._MSiSCSI_NICPerformance
+title: "_MSiSCSI_NICPerformance"
+author: windows-driver-content
+description: The MSiSCSI_NICPerformance structure can be used by an iSCSI initiator to report statistics for a network interface card (NIC) port.
+old-location: storage\msiscsi_nicperformance.htm
+old-project: storage
+ms.assetid: 921e6e44-adc2-4257-b11e-941121f5bfd7
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: "*PMSiSCSI_NICPerformance, PMSiSCSI_NICPerformance, _MSiSCSI_NICPerformance, MSiSCSI_NICPerformance, storage.msiscsi_nicperformance, PMSiSCSI_NICPerformance structure pointer [Storage Devices], iscsiprf/MSiSCSI_NICPerformance, iscsiprf/PMSiSCSI_NICPerformance, structs-iSCSI_a4d4dddd-24f6-4aa5-9b2c-61c0f1604fdb.xml, MSiSCSI_NICPerformance structure [Storage Devices]"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: iscsiprf.h
+req.include-header: Iscsiprf.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	iscsiprf.h
+apiname:
+-	MSiSCSI_NICPerformance
+product: Windows
+targetos: Windows
+req.typenames: "*PMSiSCSI_NICPerformance, MSiSCSI_NICPerformance"
 ---
 
 # _MSiSCSI_NICPerformance structure

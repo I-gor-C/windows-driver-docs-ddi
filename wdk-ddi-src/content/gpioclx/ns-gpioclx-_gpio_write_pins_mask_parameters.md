@@ -1,41 +1,46 @@
 ---
-UID : NS:gpioclx._GPIO_WRITE_PINS_MASK_PARAMETERS
-title : "_GPIO_WRITE_PINS_MASK_PARAMETERS"
-author : windows-driver-content
-description : The GPIO_WRITE_PINS_MASK_PARAMETERS structure describes a write operation on a bank of general-purpose I/O (GPIO) pins.
-old-location : gpio\gpio_write_pins_mask_parameters.htm
-old-project : GPIO
-ms.assetid : 5861FC4E-9902-4839-9829-B04F6AED61FE
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : GPIO_WRITE_PINS_MASK_PARAMETERS structure [Parallel Ports], GPIO_WRITE_PINS_MASK_PARAMETERS, _GPIO_WRITE_PINS_MASK_PARAMETERS, gpioclx/PGPIO_WRITE_PINS_MASK_PARAMETERS, GPIO.gpio_write_pins_mask_parameters, gpioclx/GPIO_WRITE_PINS_MASK_PARAMETERS, *PGPIO_WRITE_PINS_MASK_PARAMETERS, PGPIO_WRITE_PINS_MASK_PARAMETERS structure pointer [Parallel Ports], PGPIO_WRITE_PINS_MASK_PARAMETERS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : gpioclx.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : GPIO_WRITE_PINS_MASK_PARAMETERS, *PGPIO_WRITE_PINS_MASK_PARAMETERS
+UID: NS:gpioclx._GPIO_WRITE_PINS_MASK_PARAMETERS
+title: "_GPIO_WRITE_PINS_MASK_PARAMETERS"
+author: windows-driver-content
+description: The GPIO_WRITE_PINS_MASK_PARAMETERS structure describes a write operation on a bank of general-purpose I/O (GPIO) pins.
+old-location: gpio\gpio_write_pins_mask_parameters.htm
+old-project: GPIO
+ms.assetid: 5861FC4E-9902-4839-9829-B04F6AED61FE
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: GPIO_WRITE_PINS_MASK_PARAMETERS structure [Parallel Ports], GPIO_WRITE_PINS_MASK_PARAMETERS, _GPIO_WRITE_PINS_MASK_PARAMETERS, gpioclx/PGPIO_WRITE_PINS_MASK_PARAMETERS, GPIO.gpio_write_pins_mask_parameters, gpioclx/GPIO_WRITE_PINS_MASK_PARAMETERS, *PGPIO_WRITE_PINS_MASK_PARAMETERS, PGPIO_WRITE_PINS_MASK_PARAMETERS structure pointer [Parallel Ports], PGPIO_WRITE_PINS_MASK_PARAMETERS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: gpioclx.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Gpioclx.h
+apiname:
+-	GPIO_WRITE_PINS_MASK_PARAMETERS
+product: Windows
+targetos: Windows
+req.typenames: GPIO_WRITE_PINS_MASK_PARAMETERS, *PGPIO_WRITE_PINS_MASK_PARAMETERS
 ---
 
 # _GPIO_WRITE_PINS_MASK_PARAMETERS structure

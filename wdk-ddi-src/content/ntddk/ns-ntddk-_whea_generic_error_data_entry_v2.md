@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddk._WHEA_GENERIC_ERROR_DATA_ENTRY_V2
-title : "_WHEA_GENERIC_ERROR_DATA_ENTRY_V2"
-author : windows-driver-content
-description : The WHEA_GENERIC_ERROR_DATA_ENTRY structure describes an error data section in a generic error status block.
-old-location : whea\whea_generic_error_data_entry.htm
-old-project : whea
-ms.assetid : 86834d99-34bd-487a-bbd4-4c0143d849a0
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : WHEA_GENERIC_ERROR_DATA_ENTRY_V2, WHEA_GENERIC_ERROR_DATA_ENTRY structure [WHEA Drivers and Applications], WHEA_GENERIC_ERROR_DATA_ENTRY, _WHEA_GENERIC_ERROR_DATA_ENTRY_V2, whea.whea_generic_error_data_entry, PWHEA_GENERIC_ERROR_DATA_ENTRY structure pointer [WHEA Drivers and Applications], *PWHEA_GENERIC_ERROR_DATA_ENTRY, PWHEA_GENERIC_ERROR_DATA_ENTRY, ntddk/WHEA_GENERIC_ERROR_DATA_ENTRY, whearef_9e532654-fd5a-4936-8465-f9d6f9eafad2.xml, *PWHEA_GENERIC_ERROR_DATA_ENTRY_V2, ntddk/PWHEA_GENERIC_ERROR_DATA_ENTRY
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWHEA_GENERIC_ERROR_DATA_ENTRY_V2, *PWHEA_GENERIC_ERROR_DATA_ENTRY, WHEA_GENERIC_ERROR_DATA_ENTRY_V2, WHEA_GENERIC_ERROR_DATA_ENTRY"
+UID: NS:ntddk._WHEA_GENERIC_ERROR_DATA_ENTRY_V2
+title: "_WHEA_GENERIC_ERROR_DATA_ENTRY_V2"
+author: windows-driver-content
+description: The WHEA_GENERIC_ERROR_DATA_ENTRY structure describes an error data section in a generic error status block.
+old-location: whea\whea_generic_error_data_entry.htm
+old-project: whea
+ms.assetid: 86834d99-34bd-487a-bbd4-4c0143d849a0
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: WHEA_GENERIC_ERROR_DATA_ENTRY_V2, WHEA_GENERIC_ERROR_DATA_ENTRY structure [WHEA Drivers and Applications], WHEA_GENERIC_ERROR_DATA_ENTRY, _WHEA_GENERIC_ERROR_DATA_ENTRY_V2, whea.whea_generic_error_data_entry, PWHEA_GENERIC_ERROR_DATA_ENTRY structure pointer [WHEA Drivers and Applications], *PWHEA_GENERIC_ERROR_DATA_ENTRY, PWHEA_GENERIC_ERROR_DATA_ENTRY, ntddk/WHEA_GENERIC_ERROR_DATA_ENTRY, whearef_9e532654-fd5a-4936-8465-f9d6f9eafad2.xml, *PWHEA_GENERIC_ERROR_DATA_ENTRY_V2, ntddk/PWHEA_GENERIC_ERROR_DATA_ENTRY
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddk.h
+apiname:
+-	WHEA_GENERIC_ERROR_DATA_ENTRY
+product: Windows
+targetos: Windows
+req.typenames: "*PWHEA_GENERIC_ERROR_DATA_ENTRY_V2, *PWHEA_GENERIC_ERROR_DATA_ENTRY, WHEA_GENERIC_ERROR_DATA_ENTRY_V2, WHEA_GENERIC_ERROR_DATA_ENTRY"
 ---
 
 # _WHEA_GENERIC_ERROR_DATA_ENTRY_V2 structure

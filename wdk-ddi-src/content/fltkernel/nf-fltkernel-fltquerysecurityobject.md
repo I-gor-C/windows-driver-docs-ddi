@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltQuerySecurityObject
-title : FltQuerySecurityObject function
-author : windows-driver-content
-description : FltQuerySecurityObject retrieves a copy of an object's security descriptor.
-old-location : ifsk\fltquerysecurityobject.htm
-old-project : ifsk
-ms.assetid : 388dc11d-79cc-4e6b-bce0-b99cca556342
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltApiRef_p_to_z_6fa8f026-1268-4a97-b1e3-a2773e0a1784.xml, FltQuerySecurityObject, ifsk.fltquerysecurityobject, FltQuerySecurityObject function [Installable File System Drivers], fltkernel/FltQuerySecurityObject
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltQuerySecurityObject
+title: FltQuerySecurityObject function
+author: windows-driver-content
+description: FltQuerySecurityObject retrieves a copy of an object's security descriptor.
+old-location: ifsk\fltquerysecurityobject.htm
+old-project: ifsk
+ms.assetid: 388dc11d-79cc-4e6b-bce0-b99cca556342
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltApiRef_p_to_z_6fa8f026-1268-4a97-b1e3-a2773e0a1784.xml, FltQuerySecurityObject, ifsk.fltquerysecurityobject, FltQuerySecurityObject function [Installable File System Drivers], fltkernel/FltQuerySecurityObject
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltQuerySecurityObject
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

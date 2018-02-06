@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_FLIPOVERLAYCB
-title : PFND3DDDI_FLIPOVERLAYCB
-author : windows-driver-content
-description : The pfnFlipOverlayCb function changes the allocation to display on the overlay or indicates to display the other field of the currently displaying allocation, when deinterlacing an interleaved resource.
-old-location : display\pfnflipoverlaycb.htm
-old-project : display
-ms.assetid : 91e4876a-82c0-4e74-84c8-4b7a6abe0756
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.pfnflipoverlaycb, pfnFlipOverlayCb callback function [Display Devices], pfnFlipOverlayCb, PFND3DDDI_FLIPOVERLAYCB, PFND3DDDI_FLIPOVERLAYCB, d3dumddi/pfnFlipOverlayCb, D3Druntime_Functions_68f39dc6-3dd7-4742-81c9-f23874c6c38f.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_FLIPOVERLAYCB
+title: PFND3DDDI_FLIPOVERLAYCB
+author: windows-driver-content
+description: The pfnFlipOverlayCb function changes the allocation to display on the overlay or indicates to display the other field of the currently displaying allocation, when deinterlacing an interleaved resource.
+old-location: display\pfnflipoverlaycb.htm
+old-project: display
+ms.assetid: 91e4876a-82c0-4e74-84c8-4b7a6abe0756
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.pfnflipoverlaycb, pfnFlipOverlayCb callback function [Display Devices], pfnFlipOverlayCb, PFND3DDDI_FLIPOVERLAYCB, PFND3DDDI_FLIPOVERLAYCB, d3dumddi/pfnFlipOverlayCb, D3Druntime_Functions_68f39dc6-3dd7-4742-81c9-f23874c6c38f.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	pfnFlipOverlayCb
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NI:nfpdev.IOCTL_NFP_GET_KILO_BYTES_PER_SECOND
-title : IOCTL_NFP_GET_KILO_BYTES_PER_SECOND
-author : windows-driver-content
-description : A client sends the IOCTL_NFP_GET_KILO_BYTES_PER_SECOND request to any generic handle, one that is non-published and non-subscribed, to the provider device.
-old-location : nfpdrivers\ioctl_nfp_get_kilo_bytes_per_second.htm
-old-project : nfpdrivers
-ms.assetid : 7FAF7D15-1D3A-4F90-BD98-344ECF294E0F
-ms.author : windowsdriverdev
-ms.date : 12/18/2017
-ms.keywords : nfpdrivers.ioctl_nfp_get_kilo_bytes_per_second, IOCTL_NFP_GET_KILO_BYTES_PER_SECOND, _IOCTL_NFP_GET_KILO_BYTES_PER_SECOND, IOCTL_NFP_GET_KILO_BYTES_PER_SECOND control code [Near-Field Proximity Drivers], IOCTL_NFP_GET_KILO_BYTES_PER_SECOND, nfpdev/IOCTL_NFP_GET_KILO_BYTES_PER_SECOND
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : nfpdev.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SECURE_ELEMENT_TECH_ROUTING_INFO, *PSECURE_ELEMENT_TECH_ROUTING_INFO
+UID: NI:nfpdev.IOCTL_NFP_GET_KILO_BYTES_PER_SECOND
+title: IOCTL_NFP_GET_KILO_BYTES_PER_SECOND
+author: windows-driver-content
+description: A client sends the IOCTL_NFP_GET_KILO_BYTES_PER_SECOND request to any generic handle, one that is non-published and non-subscribed, to the provider device.
+old-location: nfpdrivers\ioctl_nfp_get_kilo_bytes_per_second.htm
+old-project: nfpdrivers
+ms.assetid: 7FAF7D15-1D3A-4F90-BD98-344ECF294E0F
+ms.author: windowsdriverdev
+ms.date: 12/18/2017
+ms.keywords: nfpdrivers.ioctl_nfp_get_kilo_bytes_per_second, IOCTL_NFP_GET_KILO_BYTES_PER_SECOND, _IOCTL_NFP_GET_KILO_BYTES_PER_SECOND, IOCTL_NFP_GET_KILO_BYTES_PER_SECOND control code [Near-Field Proximity Drivers], IOCTL_NFP_GET_KILO_BYTES_PER_SECOND, nfpdev/IOCTL_NFP_GET_KILO_BYTES_PER_SECOND
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: nfpdev.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	nfpdev.h
+apiname:
+-	IOCTL_NFP_GET_KILO_BYTES_PER_SECOND
+product: Windows
+targetos: Windows
+req.typenames: SECURE_ELEMENT_TECH_ROUTING_INFO, *PSECURE_ELEMENT_TECH_ROUTING_INFO
 ---
 
 # IOCTL_NFP_GET_KILO_BYTES_PER_SECOND IOCTL

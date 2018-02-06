@@ -1,41 +1,46 @@
 ---
-UID : NS:ndiswwan._NDIS_WWAN_PCO_STATUS
-title : "_NDIS_WWAN_PCO_STATUS"
-author : windows-driver-content
-description : The NDIS_WWAN_PCO_STATUS structure represents the Protocol Configuration Option (PCO) status of the modem.
-old-location : netvista\ndis_wwan_pco_status.htm
-old-project : netvista
-ms.assetid : C71187C5-74B6-450A-8461-BB9FDF60DB8D
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NDIS_WWAN_PCO_STATUS structure [Network Drivers Starting with Windows Vista], ndiswwan/NDIS_WWAN_PCO_STATUS, ndiswwan/PNDIS_WWAN_PCO_STATUS, *PNDIS_WWAN_PCO_STATUS, NDIS_WWAN_PCO_STATUS, _NDIS_WWAN_PCO_STATUS, PNDIS_WWAN_PCO_STATUS, netvista.ndis_wwan_pco_status, PNDIS_WWAN_PCO_STATUS structure pointer [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndiswwan.h
-req.include-header : Ndiswwan.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10, version 1709
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PNDIS_WWAN_PCO_STATUS, NDIS_WWAN_PCO_STATUS"
+UID: NS:ndiswwan._NDIS_WWAN_PCO_STATUS
+title: "_NDIS_WWAN_PCO_STATUS"
+author: windows-driver-content
+description: The NDIS_WWAN_PCO_STATUS structure represents the Protocol Configuration Option (PCO) status of the modem.
+old-location: netvista\ndis_wwan_pco_status.htm
+old-project: netvista
+ms.assetid: C71187C5-74B6-450A-8461-BB9FDF60DB8D
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NDIS_WWAN_PCO_STATUS structure [Network Drivers Starting with Windows Vista], ndiswwan/NDIS_WWAN_PCO_STATUS, ndiswwan/PNDIS_WWAN_PCO_STATUS, *PNDIS_WWAN_PCO_STATUS, NDIS_WWAN_PCO_STATUS, _NDIS_WWAN_PCO_STATUS, PNDIS_WWAN_PCO_STATUS, netvista.ndis_wwan_pco_status, PNDIS_WWAN_PCO_STATUS structure pointer [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndiswwan.h
+req.include-header: Ndiswwan.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10, version 1709
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndiswwan.h
+apiname:
+-	NDIS_WWAN_PCO_STATUS
+product: Windows
+targetos: Windows
+req.typenames: "*PNDIS_WWAN_PCO_STATUS, NDIS_WWAN_PCO_STATUS"
 ---
 
 # _NDIS_WWAN_PCO_STATUS structure

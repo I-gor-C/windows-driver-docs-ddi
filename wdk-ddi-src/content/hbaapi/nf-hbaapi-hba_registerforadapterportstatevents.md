@@ -1,41 +1,46 @@
 ---
-UID : NF:hbaapi.HBA_RegisterForAdapterPortStatEvents
-title : HBA_RegisterForAdapterPortStatEvents function
-author : windows-driver-content
-description : The HBA_RegisterForAdapterPortStatEvents routine registers the indicated user callback routine to call when a port statistics event occurs.
-old-location : storage\hba_registerforadapterportstatevents.htm
-old-project : storage
-ms.assetid : 82598ba4-6e01-44eb-9359-4b85e8f7980c
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : HBA_RegisterForAdapterPortStatEvents routine [Storage Devices], hbaapi/HBA_RegisterForAdapterPortStatEvents, HBA_RegisterForAdapterPortStatEvents, storage.hba_registerforadapterportstatevents, fibreHBA_rtns_38f8ecc4-4c08-4707-98f1-076602ecae27.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : hbaapi.h
-req.include-header : Hbaapi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Hbaapi.lib
-req.dll : Hbaapi.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HBA_WWNTYPE
+UID: NF:hbaapi.HBA_RegisterForAdapterPortStatEvents
+title: HBA_RegisterForAdapterPortStatEvents function
+author: windows-driver-content
+description: The HBA_RegisterForAdapterPortStatEvents routine registers the indicated user callback routine to call when a port statistics event occurs.
+old-location: storage\hba_registerforadapterportstatevents.htm
+old-project: storage
+ms.assetid: 82598ba4-6e01-44eb-9359-4b85e8f7980c
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: HBA_RegisterForAdapterPortStatEvents routine [Storage Devices], hbaapi/HBA_RegisterForAdapterPortStatEvents, HBA_RegisterForAdapterPortStatEvents, storage.hba_registerforadapterportstatevents, fibreHBA_rtns_38f8ecc4-4c08-4707-98f1-076602ecae27.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: hbaapi.h
+req.include-header: Hbaapi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Hbaapi.lib
+req.dll: Hbaapi.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Hbaapi.dll
+apiname:
+-	HBA_RegisterForAdapterPortStatEvents
+product: Windows
+targetos: Windows
+req.typenames: HBA_WWNTYPE
 ---
 
 

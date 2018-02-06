@@ -1,41 +1,46 @@
 ---
-UID : NF:iddcx.IddCxMonitorArrival
-title : IddCxMonitorArrival function
-author : windows-driver-content
-description : An OS callback function the driver calls to report a monitor arrival on the WDDM graphics adapter.
-old-location : display\iddcxmonitorarrival.htm
-old-project : display
-ms.assetid : e73a8111-9e54-4040-a38a-441948e10212
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : iddcx/IddCxMonitorArrival, IddCxMonitorArrival, IddCxMonitorArrival method [Display Devices], display.iddcxmonitorarrival
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : iddcx.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "_Must_inspect_result_"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:iddcx.IddCxMonitorArrival
+title: IddCxMonitorArrival function
+author: windows-driver-content
+description: An OS callback function the driver calls to report a monitor arrival on the WDDM graphics adapter.
+old-location: display\iddcxmonitorarrival.htm
+old-project: display
+ms.assetid: e73a8111-9e54-4040-a38a-441948e10212
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: iddcx/IddCxMonitorArrival, IddCxMonitorArrival, IddCxMonitorArrival method [Display Devices], display.iddcxmonitorarrival
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: iddcx.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "_Must_inspect_result_"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	iddcx.h
+apiname:
+-	IddCxMonitorArrival
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisClModifyCallQoS
-title : NdisClModifyCallQoS function
-author : windows-driver-content
-description : NdisClModifyCallQoS requests a change in the quality of service on a connection.
-old-location : netvista\ndisclmodifycallqos.htm
-old-project : netvista
-ms.assetid : c31449a6-e275-480c-83ea-8575fda73cd9
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : condis_client_ref_55b0158f-e91e-4be8-818b-ade726db0f61.xml, NdisClModifyCallQoS function [Network Drivers Starting with Windows Vista], netvista.ndisclmodifycallqos, ndis/NdisClModifyCallQoS, NdisClModifyCallQoS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisClModifyCallQoS (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisClModifyCallQoS (NDIS   5.1)) in Windows XP.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_Protocol_Driver_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisClModifyCallQoS
+title: NdisClModifyCallQoS function
+author: windows-driver-content
+description: NdisClModifyCallQoS requests a change in the quality of service on a connection.
+old-location: netvista\ndisclmodifycallqos.htm
+old-project: netvista
+ms.assetid: c31449a6-e275-480c-83ea-8575fda73cd9
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: condis_client_ref_55b0158f-e91e-4be8-818b-ade726db0f61.xml, NdisClModifyCallQoS function [Network Drivers Starting with Windows Vista], netvista.ndisclmodifycallqos, ndis/NdisClModifyCallQoS, NdisClModifyCallQoS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisClModifyCallQoS (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisClModifyCallQoS (NDIS   5.1)) in Windows XP.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_Protocol_Driver_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisClModifyCallQoS
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

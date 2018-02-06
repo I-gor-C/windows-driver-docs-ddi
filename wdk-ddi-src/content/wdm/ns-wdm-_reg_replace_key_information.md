@@ -1,42 +1,47 @@
 ---
-UID : NS:wdm._REG_REPLACE_KEY_INFORMATION
-title : "_REG_REPLACE_KEY_INFORMATION"
-author : windows-driver-content
-description : The REG_REPLACE_KEY_INFORMATION structure describes the metadata that is about to be replaced for a key.
-old-location : kernel\reg_replace_key_information.htm
-old-project : kernel
-ms.assetid : bbe60db6-85ae-480c-8852-80935a52697e
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/PREG_REPLACE_KEY_INFORMATION, wdm/REG_REPLACE_KEY_INFORMATION, PREG_REPLACE_KEY_INFORMATION, kernel.reg_replace_key_information, REG_REPLACE_KEY_INFORMATION structure [Kernel-Mode Driver Architecture], _REG_REPLACE_KEY_INFORMATION, kstruct_d_29e33c32-67fc-48e0-a976-9830278009bc.xml, REG_REPLACE_KEY_INFORMATION, *PREG_REPLACE_KEY_INFORMATION, PREG_REPLACE_KEY_INFORMATION structure pointer [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : Available on Windows Vista SP2 and later versions of the Windows operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : REG_REPLACE_KEY_INFORMATION, *PREG_REPLACE_KEY_INFORMATION
-req.product : Windows 10 or later.
+UID: NS:wdm._REG_REPLACE_KEY_INFORMATION
+title: "_REG_REPLACE_KEY_INFORMATION"
+author: windows-driver-content
+description: The REG_REPLACE_KEY_INFORMATION structure describes the metadata that is about to be replaced for a key.
+old-location: kernel\reg_replace_key_information.htm
+old-project: kernel
+ms.assetid: bbe60db6-85ae-480c-8852-80935a52697e
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/PREG_REPLACE_KEY_INFORMATION, wdm/REG_REPLACE_KEY_INFORMATION, PREG_REPLACE_KEY_INFORMATION, kernel.reg_replace_key_information, REG_REPLACE_KEY_INFORMATION structure [Kernel-Mode Driver Architecture], _REG_REPLACE_KEY_INFORMATION, kstruct_d_29e33c32-67fc-48e0-a976-9830278009bc.xml, REG_REPLACE_KEY_INFORMATION, *PREG_REPLACE_KEY_INFORMATION, PREG_REPLACE_KEY_INFORMATION structure pointer [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: Available on Windows Vista SP2 and later versions of the Windows operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	REG_REPLACE_KEY_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: REG_REPLACE_KEY_INFORMATION, *PREG_REPLACE_KEY_INFORMATION
+req.product: Windows 10 or later.
 ---
 
 # _REG_REPLACE_KEY_INFORMATION structure

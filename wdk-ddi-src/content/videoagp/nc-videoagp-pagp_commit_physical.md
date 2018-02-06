@@ -1,42 +1,47 @@
 ---
-UID : NC:videoagp.PAGP_COMMIT_PHYSICAL
-title : PAGP_COMMIT_PHYSICAL
-author : windows-driver-content
-description : The AgpCommitPhysical function maps system (physical) memory to the specified range of AGP-decodable physical addresses.
-old-location : display\agpcommitphysical.htm
-old-project : display
-ms.assetid : 3c3a6936-7435-4a42-99e6-2c048613af23
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.agpcommitphysical, AgpCommitPhysical callback function [Display Devices], AgpCommitPhysical, PAGP_COMMIT_PHYSICAL, PAGP_COMMIT_PHYSICAL, videoagp/AgpCommitPhysical, VideoPort_Functions_11f78058-194b-4407-b98b-1ae7cd0028f7.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : videoagp.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows 2000 and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VP_SCATTER_GATHER_LIST, *PVP_SCATTER_GATHER_LIST
-req.product : Windows 10 or later.
+UID: NC:videoagp.PAGP_COMMIT_PHYSICAL
+title: PAGP_COMMIT_PHYSICAL
+author: windows-driver-content
+description: The AgpCommitPhysical function maps system (physical) memory to the specified range of AGP-decodable physical addresses.
+old-location: display\agpcommitphysical.htm
+old-project: display
+ms.assetid: 3c3a6936-7435-4a42-99e6-2c048613af23
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.agpcommitphysical, AgpCommitPhysical callback function [Display Devices], AgpCommitPhysical, PAGP_COMMIT_PHYSICAL, PAGP_COMMIT_PHYSICAL, videoagp/AgpCommitPhysical, VideoPort_Functions_11f78058-194b-4407-b98b-1ae7cd0028f7.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: videoagp.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows 2000 and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	videoagp.h
+apiname:
+-	AgpCommitPhysical
+product: Windows
+targetos: Windows
+req.typenames: VP_SCATTER_GATHER_LIST, *PVP_SCATTER_GATHER_LIST
+req.product: Windows 10 or later.
 ---
 
 

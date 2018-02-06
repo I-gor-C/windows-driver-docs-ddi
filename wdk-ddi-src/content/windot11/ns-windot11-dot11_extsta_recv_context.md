@@ -1,42 +1,47 @@
 ---
-UID : NS:windot11.DOT11_EXTSTA_RECV_CONTEXT
-title : DOT11_EXTSTA_RECV_CONTEXT
-author : windows-driver-content
-description : Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
-old-location : netvista\dot11_extsta_recv_context.htm
-old-project : netvista
-ms.assetid : 517be11b-a15d-43ac-aefd-f425fa6f63e7
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : DOT11_EXTSTA_RECV_CONTEXT, PDOT11_EXTSTA_RECV_CONTEXT structure pointer [Network Drivers Starting with Windows Vista], *PDOT11_EXTAP_RECV_CONTEXT, DOT11_EXTSTA_RECV_CONTEXT structure [Network Drivers Starting with Windows Vista], Native_802.11_data_types_c3f69d82-f4b2-4a2a-b864-9b4eebc9e3ff.xml, *PDOT11_EXTSTA_RECV_CONTEXT, windot11/DOT11_EXTSTA_RECV_CONTEXT, DOT11_EXTAP_RECV_CONTEXT, netvista.dot11_extsta_recv_context, PDOT11_EXTSTA_RECV_CONTEXT, windot11/PDOT11_EXTSTA_RECV_CONTEXT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : windot11.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating   systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDOT11_EXTSTA_RECV_CONTEXT, DOT11_EXTSTA_RECV_CONTEXT, DOT11_EXTAP_RECV_CONTEXT, *PDOT11_EXTAP_RECV_CONTEXT"
-req.product : Windows 10 or later.
+UID: NS:windot11.DOT11_EXTSTA_RECV_CONTEXT
+title: DOT11_EXTSTA_RECV_CONTEXT
+author: windows-driver-content
+description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+old-location: netvista\dot11_extsta_recv_context.htm
+old-project: netvista
+ms.assetid: 517be11b-a15d-43ac-aefd-f425fa6f63e7
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: DOT11_EXTSTA_RECV_CONTEXT, PDOT11_EXTSTA_RECV_CONTEXT structure pointer [Network Drivers Starting with Windows Vista], *PDOT11_EXTAP_RECV_CONTEXT, DOT11_EXTSTA_RECV_CONTEXT structure [Network Drivers Starting with Windows Vista], Native_802.11_data_types_c3f69d82-f4b2-4a2a-b864-9b4eebc9e3ff.xml, *PDOT11_EXTSTA_RECV_CONTEXT, windot11/DOT11_EXTSTA_RECV_CONTEXT, DOT11_EXTAP_RECV_CONTEXT, netvista.dot11_extsta_recv_context, PDOT11_EXTSTA_RECV_CONTEXT, windot11/PDOT11_EXTSTA_RECV_CONTEXT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: windot11.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	windot11.h
+apiname:
+-	DOT11_EXTSTA_RECV_CONTEXT
+product: Windows
+targetos: Windows
+req.typenames: "*PDOT11_EXTSTA_RECV_CONTEXT, DOT11_EXTSTA_RECV_CONTEXT, DOT11_EXTAP_RECV_CONTEXT, *PDOT11_EXTAP_RECV_CONTEXT"
+req.product: Windows 10 or later.
 ---
 
 # DOT11_EXTSTA_RECV_CONTEXT structure

@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfwmi.WdfWmiProviderGetTracingHandle
-title : WdfWmiProviderGetTracingHandle function
-author : windows-driver-content
-description : The WdfWmiProviderGetTracingHandle method returns a handle to the event logger of a WPP software tracing session.
-old-location : wdf\wdfwmiprovidergettracinghandle.htm
-old-project : wdf
-ms.assetid : 44ab1cf3-abd3-4100-a6ad-51f2322881b1
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.wdfwmiprovidergettracinghandle, WdfWmiProviderGetTracingHandle method, DFWMIRef_eea0d3ab-8fb8-4053-8260-e5c396a06524.xml, kmdf.wdfwmiprovidergettracinghandle, wdfwmi/WdfWmiProviderGetTracingHandle, WdfWmiProviderGetTracingHandle, PFN_WDFWMIPROVIDERGETTRACINGHANDLE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfwmi.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_WMI_PROVIDER_FLAGS
-req.product : Windows 10 or later.
+UID: NF:wdfwmi.WdfWmiProviderGetTracingHandle
+title: WdfWmiProviderGetTracingHandle function
+author: windows-driver-content
+description: The WdfWmiProviderGetTracingHandle method returns a handle to the event logger of a WPP software tracing session.
+old-location: wdf\wdfwmiprovidergettracinghandle.htm
+old-project: wdf
+ms.assetid: 44ab1cf3-abd3-4100-a6ad-51f2322881b1
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.wdfwmiprovidergettracinghandle, WdfWmiProviderGetTracingHandle method, DFWMIRef_eea0d3ab-8fb8-4053-8260-e5c396a06524.xml, kmdf.wdfwmiprovidergettracinghandle, wdfwmi/WdfWmiProviderGetTracingHandle, WdfWmiProviderGetTracingHandle, PFN_WDFWMIPROVIDERGETTRACINGHANDLE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfwmi.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfWmiProviderGetTracingHandle
+product: Windows
+targetos: Windows
+req.typenames: WDF_WMI_PROVIDER_FLAGS
+req.product: Windows 10 or later.
 ---
 
 

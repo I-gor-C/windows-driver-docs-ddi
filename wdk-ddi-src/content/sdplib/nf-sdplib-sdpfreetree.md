@@ -1,42 +1,47 @@
 ---
-UID : NF:sdplib.SdpFreeTree
-title : SdpFreeTree function
-author : windows-driver-content
-description : The Bluetooth SdpFreeTree function is used to free the memory allocated for the tree-based representation of an SDP record.
-old-location : bltooth\sdpfreetree.htm
-old-project : bltooth
-ms.assetid : 7d3f743e-2422-474d-aaad-4386e0dc100a
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : bth_funcs_526ed9cd-2c07-4c1f-a420-dec6fe930e44.xml, SdpFreeTree, bltooth.sdpfreetree, sdplib/SdpFreeTree, SdpFreeTree function [Bluetooth Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : sdplib.h
-req.include-header : BthSdpddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Versions:\_Supported in Windows Vista, and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= PASSIVE_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SDCMD_DESCRIPTOR, *PSDCMD_DESCRIPTOR
-req.product : Windows 10 or later.
+UID: NF:sdplib.SdpFreeTree
+title: SdpFreeTree function
+author: windows-driver-content
+description: The Bluetooth SdpFreeTree function is used to free the memory allocated for the tree-based representation of an SDP record.
+old-location: bltooth\sdpfreetree.htm
+old-project: bltooth
+ms.assetid: 7d3f743e-2422-474d-aaad-4386e0dc100a
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: bth_funcs_526ed9cd-2c07-4c1f-a420-dec6fe930e44.xml, SdpFreeTree, bltooth.sdpfreetree, sdplib/SdpFreeTree, SdpFreeTree function [Bluetooth Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: sdplib.h
+req.include-header: BthSdpddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Versions:\_Supported in Windows Vista, and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= PASSIVE_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	sdplib.h
+apiname:
+-	SdpFreeTree
+product: Windows
+targetos: Windows
+req.typenames: SDCMD_DESCRIPTOR, *PSDCMD_DESCRIPTOR
+req.product: Windows 10 or later.
 ---
 
 

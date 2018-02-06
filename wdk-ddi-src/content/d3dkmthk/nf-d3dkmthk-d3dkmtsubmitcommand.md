@@ -1,41 +1,49 @@
 ---
-UID : NF:d3dkmthk.D3DKMTSubmitCommand
-title : D3DKMTSubmitCommand function
-author : windows-driver-content
-description : D3DKMTSubmitCommand is used to submit command buffers on contexts that support graphics processing unit (GPU) virtual addressing.
-old-location : display\d3dkmtsubmitcommand.htm
-old-project : display
-ms.assetid : E726B4AC-F003-45B3-B467-F123DBE60D87
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3dkmthk/D3DKMTSubmitCommand, D3DKMTSubmitCommand function [Display Devices], display.d3dkmtsubmitcommand, D3DKMTSubmitCommand
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Universal
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : GDI32.lib
-req.dll : GDI32.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_DRIVERVERSION
+UID: NF:d3dkmthk.D3DKMTSubmitCommand
+title: D3DKMTSubmitCommand function
+author: windows-driver-content
+description: D3DKMTSubmitCommand is used to submit command buffers on contexts that support graphics processing unit (GPU) virtual addressing.
+old-location: display\d3dkmtsubmitcommand.htm
+old-project: display
+ms.assetid: E726B4AC-F003-45B3-B467-F123DBE60D87
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3dkmthk/D3DKMTSubmitCommand, D3DKMTSubmitCommand function [Display Devices], display.d3dkmtsubmitcommand, D3DKMTSubmitCommand
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Universal
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: GDI32.lib
+req.dll: GDI32.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	GDI32.dll
+-	API-MS-Win-DX-D3DKMT-L1-1-1.dll
+-	GDI32.dll
+-	API-MS-Win-DX-D3DKMT-L1-1-2.dll
+apiname:
+-	D3DKMTSubmitCommand
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_DRIVERVERSION
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddk._PCI_EXPRESS_ROOT_CONTROL_REGISTER
-title : "_PCI_EXPRESS_ROOT_CONTROL_REGISTER"
-author : windows-driver-content
-description : The PCI_EXPRESS_ROOT_CONTROL_REGISTER structure describes a PCI Express (PCIe) root control register of a PCIe capability structure.
-old-location : pci\pci_express_root_control_register.htm
-old-project : PCI
-ms.assetid : 0f2c321c-f03b-4655-bbd1-25fcc6c52cfa
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : PCI_EXPRESS_ROOT_CONTROL_REGISTER, PPCI_EXPRESS_ROOT_CONTROL_REGISTER, ntddk/PCI_EXPRESS_ROOT_CONTROL_REGISTER, _PCI_EXPRESS_ROOT_CONTROL_REGISTER, PCI.pci_express_root_control_register, PCI_EXPRESS_ROOT_CONTROL_REGISTER union [Buses], ntddk/PPCI_EXPRESS_ROOT_CONTROL_REGISTER, *PPCI_EXPRESS_ROOT_CONTROL_REGISTER, pci_struct_ef335e30-c046-4066-8411-27bf96cbcd08.xml, PPCI_EXPRESS_ROOT_CONTROL_REGISTER union pointer [Buses]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPCI_EXPRESS_ROOT_CONTROL_REGISTER, PCI_EXPRESS_ROOT_CONTROL_REGISTER"
+UID: NS:ntddk._PCI_EXPRESS_ROOT_CONTROL_REGISTER
+title: "_PCI_EXPRESS_ROOT_CONTROL_REGISTER"
+author: windows-driver-content
+description: The PCI_EXPRESS_ROOT_CONTROL_REGISTER structure describes a PCI Express (PCIe) root control register of a PCIe capability structure.
+old-location: pci\pci_express_root_control_register.htm
+old-project: PCI
+ms.assetid: 0f2c321c-f03b-4655-bbd1-25fcc6c52cfa
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: PCI_EXPRESS_ROOT_CONTROL_REGISTER, PPCI_EXPRESS_ROOT_CONTROL_REGISTER, ntddk/PCI_EXPRESS_ROOT_CONTROL_REGISTER, _PCI_EXPRESS_ROOT_CONTROL_REGISTER, PCI.pci_express_root_control_register, PCI_EXPRESS_ROOT_CONTROL_REGISTER union [Buses], ntddk/PPCI_EXPRESS_ROOT_CONTROL_REGISTER, *PPCI_EXPRESS_ROOT_CONTROL_REGISTER, pci_struct_ef335e30-c046-4066-8411-27bf96cbcd08.xml, PPCI_EXPRESS_ROOT_CONTROL_REGISTER union pointer [Buses]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddk.h
+apiname:
+-	PCI_EXPRESS_ROOT_CONTROL_REGISTER
+product: Windows
+targetos: Windows
+req.typenames: "*PPCI_EXPRESS_ROOT_CONTROL_REGISTER, PCI_EXPRESS_ROOT_CONTROL_REGISTER"
 ---
 
 # _PCI_EXPRESS_ROOT_CONTROL_REGISTER structure

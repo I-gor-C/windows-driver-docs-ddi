@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.ExRegisterCallback
-title : ExRegisterCallback function
-author : windows-driver-content
-description : The ExRegisterCallback routine registers a given callback routine with a given callback object.
-old-location : kernel\exregistercallback.htm
-old-project : kernel
-ms.assetid : 4537447a-17d5-4431-929c-7a8fda0f2986
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.exregistercallback, wdm/ExRegisterCallback, ExRegisterCallback routine [Kernel-Mode Driver Architecture], ExRegisterCallback, k102_db841434-fe00-448d-b5bb-2c35d1ad0ec4.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : IrqlExApcLte2, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ExRegisterCallback
+title: ExRegisterCallback function
+author: windows-driver-content
+description: The ExRegisterCallback routine registers a given callback routine with a given callback object.
+old-location: kernel\exregistercallback.htm
+old-project: kernel
+ms.assetid: 4537447a-17d5-4431-929c-7a8fda0f2986
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.exregistercallback, wdm/ExRegisterCallback, ExRegisterCallback routine [Kernel-Mode Driver Architecture], ExRegisterCallback, k102_db841434-fe00-448d-b5bb-2c35d1ad0ec4.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: IrqlExApcLte2, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ExRegisterCallback
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

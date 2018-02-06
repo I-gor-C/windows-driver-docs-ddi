@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltSendMessage
-title : FltSendMessage function
-author : windows-driver-content
-description : FltSendMessage sends a message to a waiting user-mode application on behalf of a minifilter driver or a minifilter driver instance.
-old-location : ifsk\fltsendmessage.htm
-old-project : ifsk
-ms.assetid : 83e8389f-1960-4fe0-9a33-526311ecba82
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltSendMessage, FltApiRef_p_to_z_17d1087d-2a25-4c72-aed4-9246b4610b8b.xml, ifsk.fltsendmessage, fltkernel/FltSendMessage, FltSendMessage function [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : FltKernel.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Microsoft Windows 2000 Update Rollup 1 for SP4, Windows XP SP2, Windows Server 2003 SP1, and later operating systems. Not available in Windows 2000 SP4 and earlier operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltSendMessage
+title: FltSendMessage function
+author: windows-driver-content
+description: FltSendMessage sends a message to a waiting user-mode application on behalf of a minifilter driver or a minifilter driver instance.
+old-location: ifsk\fltsendmessage.htm
+old-project: ifsk
+ms.assetid: 83e8389f-1960-4fe0-9a33-526311ecba82
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltSendMessage, FltApiRef_p_to_z_17d1087d-2a25-4c72-aed4-9246b4610b8b.xml, ifsk.fltsendmessage, fltkernel/FltSendMessage, FltSendMessage function [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: FltKernel.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Microsoft Windows 2000 Update Rollup 1 for SP4, Windows XP SP2, Windows Server 2003 SP1, and later operating systems. Not available in Windows 2000 SP4 and earlier operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltSendMessage
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

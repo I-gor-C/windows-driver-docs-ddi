@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dhal._D3DHAL_DP2STATESET
-title : "_D3DHAL_DP2STATESET"
-author : windows-driver-content
-description : The D3DHAL_DP2STATESET structure is used to inform the driver about stateset operations to perform.
-old-location : display\d3dhal_dp2stateset.htm
-old-project : display
-ms.assetid : 3405cca6-8d65-4879-98e8-3cd8f66003a5
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : LPD3DHAL_DP2STATESET structure pointer [Display Devices], d3dhal/LPD3DHAL_DP2STATESET, _D3DHAL_DP2STATESET, *LPD3DHAL_DP2STATESET, LPD3DHAL_DP2STATESET, D3DHAL_DP2STATESET structure [Display Devices], d3dstrct_5aa94d41-9558-4d2d-ae6c-fb9d6e347fa5.xml, D3DHAL_DP2STATESET, display.d3dhal_dp2stateset, d3dhal/D3DHAL_DP2STATESET
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dhal.h
-req.include-header : D3dhal.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DHAL_DP2STATESET
+UID: NS:d3dhal._D3DHAL_DP2STATESET
+title: "_D3DHAL_DP2STATESET"
+author: windows-driver-content
+description: The D3DHAL_DP2STATESET structure is used to inform the driver about stateset operations to perform.
+old-location: display\d3dhal_dp2stateset.htm
+old-project: display
+ms.assetid: 3405cca6-8d65-4879-98e8-3cd8f66003a5
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: LPD3DHAL_DP2STATESET structure pointer [Display Devices], d3dhal/LPD3DHAL_DP2STATESET, _D3DHAL_DP2STATESET, *LPD3DHAL_DP2STATESET, LPD3DHAL_DP2STATESET, D3DHAL_DP2STATESET structure [Display Devices], d3dstrct_5aa94d41-9558-4d2d-ae6c-fb9d6e347fa5.xml, D3DHAL_DP2STATESET, display.d3dhal_dp2stateset, d3dhal/D3DHAL_DP2STATESET
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dhal.h
+req.include-header: D3dhal.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dhal.h
+apiname:
+-	D3DHAL_DP2STATESET
+product: Windows
+targetos: Windows
+req.typenames: D3DHAL_DP2STATESET
 ---
 
 # _D3DHAL_DP2STATESET structure

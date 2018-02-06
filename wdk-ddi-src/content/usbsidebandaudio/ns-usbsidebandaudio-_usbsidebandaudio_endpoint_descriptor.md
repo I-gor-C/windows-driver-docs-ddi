@@ -1,42 +1,46 @@
 ---
-UID : NS:usbsidebandaudio._USBSIDEBANDAUDIO_ENDPOINT_DESCRIPTOR
-title : "_USBSIDEBANDAUDIO_ENDPOINT_DESCRIPTOR"
-author : windows-driver-content
-description : TBD.
-old-location : audio\usbsidebandaudio_endpoint_descriptor.htm
-old-project : audio
-ms.assetid : 552986F7-AEE9-4CBF-A932-629885F99487
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : usbsidebandaudio/USBSIDEBANDAUDIO_ENDPOINT_DESCRIPTOR, USBSIDEBANDAUDIO_ENDPOINT_DESCRIPTOR, PUSBSIDEBANDAUDIO_ENDPOINT_DESCRIPTOR structure pointer [Audio Devices], PUSBSIDEBANDAUDIO_ENDPOINT_DESCRIPTOR, *PUSBSIDEBANDAUDIO_ENDPOINT_DESCRIPTOR, usbsidebandaudio/PUSBSIDEBANDAUDIO_ENDPOINT_DESCRIPTOR, audio.usbsidebandaudio_endpoint_descriptor, USBSIDEBANDAUDIO_ENDPOINT_DESCRIPTOR structure [Audio Devices], _USBSIDEBANDAUDIO_ENDPOINT_DESCRIPTOR
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : usbsidebandaudio.h
-req.include-header : Usbsidebandaudio.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUSBSIDEBANDAUDIO_ENDPOINT_DESCRIPTOR, USBSIDEBANDAUDIO_ENDPOINT_DESCRIPTOR"
-req.product : Windows 10 or later.
+UID: NS:usbsidebandaudio._USBSIDEBANDAUDIO_ENDPOINT_DESCRIPTOR
+title: "_USBSIDEBANDAUDIO_ENDPOINT_DESCRIPTOR"
+author: windows-driver-content
+description: TBD.
+old-location: audio\usbsidebandaudio_endpoint_descriptor.htm
+old-project: audio
+ms.assetid: 552986F7-AEE9-4CBF-A932-629885F99487
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: usbsidebandaudio/USBSIDEBANDAUDIO_ENDPOINT_DESCRIPTOR, USBSIDEBANDAUDIO_ENDPOINT_DESCRIPTOR, PUSBSIDEBANDAUDIO_ENDPOINT_DESCRIPTOR structure pointer [Audio Devices], PUSBSIDEBANDAUDIO_ENDPOINT_DESCRIPTOR, *PUSBSIDEBANDAUDIO_ENDPOINT_DESCRIPTOR, usbsidebandaudio/PUSBSIDEBANDAUDIO_ENDPOINT_DESCRIPTOR, audio.usbsidebandaudio_endpoint_descriptor, USBSIDEBANDAUDIO_ENDPOINT_DESCRIPTOR structure [Audio Devices], _USBSIDEBANDAUDIO_ENDPOINT_DESCRIPTOR
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: usbsidebandaudio.h
+req.include-header: Usbsidebandaudio.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	kbSyntax
+apitype:
+-	<TBD>
+apilocation:
+-
+apiname:
+-	USBSIDEBANDAUDIO_ENDPOINT_DESCRIPTOR
+product: Windows
+targetos: Windows
+req.typenames: "*PUSBSIDEBANDAUDIO_ENDPOINT_DESCRIPTOR, USBSIDEBANDAUDIO_ENDPOINT_DESCRIPTOR"
+req.product: Windows 10 or later.
 ---
 
 # _USBSIDEBANDAUDIO_ENDPOINT_DESCRIPTOR structure

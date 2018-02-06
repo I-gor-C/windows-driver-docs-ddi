@@ -1,41 +1,46 @@
 ---
-UID : NF:ntintsafe.RtlLongPtrToInt8
-title : RtlLongPtrToInt8 function
-author : windows-driver-content
-description : Converts a value of type LONG_PTR to a value of type INT8.
-old-location : kernel\rtllongptrtoint8.htm
-old-project : kernel
-ms.assetid : 1C8FA483-3713-464E-91B7-0A8D754F5D16
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ntintsafe/RtlLongPtrToInt8, RtlLongPtrToInt8 function [Kernel-Mode Driver Architecture], kernel.rtllongptrtoint8, RtlLongPtrToInt8
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntintsafe.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PUBLIC_OBJECT_TYPE_INFORMATION, *PPUBLIC_OBJECT_TYPE_INFORMATION
+UID: NF:ntintsafe.RtlLongPtrToInt8
+title: RtlLongPtrToInt8 function
+author: windows-driver-content
+description: Converts a value of type LONG_PTR to a value of type INT8.
+old-location: kernel\rtllongptrtoint8.htm
+old-project: kernel
+ms.assetid: 1C8FA483-3713-464E-91B7-0A8D754F5D16
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ntintsafe/RtlLongPtrToInt8, RtlLongPtrToInt8 function [Kernel-Mode Driver Architecture], kernel.rtllongptrtoint8, RtlLongPtrToInt8
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntintsafe.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntintsafe.h
+apiname:
+-	RtlLongPtrToInt8
+product: Windows
+targetos: Windows
+req.typenames: PUBLIC_OBJECT_TYPE_INFORMATION, *PPUBLIC_OBJECT_TYPE_INFORMATION
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia._KS_DVDCOPY_SET_COPY_STATE
-title : "_KS_DVDCOPY_SET_COPY_STATE"
-author : windows-driver-content
-description : The KS_DVDCOPY_SET_COPY_STATE structure is used to specify the copyright protection state of the DVD decoder stream.
-old-location : stream\ks_dvdcopy_set_copy_state.htm
-old-project : stream
-ms.assetid : e4f637b7-52ce-4ec8-8348-0b65a7f788ad
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KS_DVDCOPY_SET_COPY_STATE structure [Streaming Media Devices], PKS_DVDCOPY_SET_COPY_STATE structure pointer [Streaming Media Devices], dvdref_215efe26-9ca5-4f3b-836f-86a682cd88f8.xml, ksmedia/PKS_DVDCOPY_SET_COPY_STATE, *PKS_DVDCOPY_SET_COPY_STATE, _KS_DVDCOPY_SET_COPY_STATE, stream.ks_dvdcopy_set_copy_state, ksmedia/KS_DVDCOPY_SET_COPY_STATE, PKS_DVDCOPY_SET_COPY_STATE, KS_DVDCOPY_SET_COPY_STATE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKS_DVDCOPY_SET_COPY_STATE, KS_DVDCOPY_SET_COPY_STATE"
+UID: NS:ksmedia._KS_DVDCOPY_SET_COPY_STATE
+title: "_KS_DVDCOPY_SET_COPY_STATE"
+author: windows-driver-content
+description: The KS_DVDCOPY_SET_COPY_STATE structure is used to specify the copyright protection state of the DVD decoder stream.
+old-location: stream\ks_dvdcopy_set_copy_state.htm
+old-project: stream
+ms.assetid: e4f637b7-52ce-4ec8-8348-0b65a7f788ad
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KS_DVDCOPY_SET_COPY_STATE structure [Streaming Media Devices], PKS_DVDCOPY_SET_COPY_STATE structure pointer [Streaming Media Devices], dvdref_215efe26-9ca5-4f3b-836f-86a682cd88f8.xml, ksmedia/PKS_DVDCOPY_SET_COPY_STATE, *PKS_DVDCOPY_SET_COPY_STATE, _KS_DVDCOPY_SET_COPY_STATE, stream.ks_dvdcopy_set_copy_state, ksmedia/KS_DVDCOPY_SET_COPY_STATE, PKS_DVDCOPY_SET_COPY_STATE, KS_DVDCOPY_SET_COPY_STATE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	KS_DVDCOPY_SET_COPY_STATE
+product: Windows
+targetos: Windows
+req.typenames: "*PKS_DVDCOPY_SET_COPY_STATE, KS_DVDCOPY_SET_COPY_STATE"
 ---
 
 # _KS_DVDCOPY_SET_COPY_STATE structure

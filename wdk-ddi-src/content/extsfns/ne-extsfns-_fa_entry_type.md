@@ -1,41 +1,46 @@
 ---
-UID : NE:extsfns._FA_ENTRY_TYPE
-title : "_FA_ENTRY_TYPE"
-author : windows-driver-content
-description : A DebugFailureAnalysis object has a collection of failure analysis entries (FA entries).
-old-location : debugger\fa_entry_type.htm
-old-project : debugger
-ms.assetid : 49E0D15E-4214-421F-9C3F-E7C7A481CA10
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : extsfns/DEBUG_FA_ENTRY_NO_TYPE, extsfns/DEBUG_FA_ENTRY_ARRAY, _FA_ENTRY_TYPE, extsfns/DEBUG_FA_ENTRY_ANSI_STRING, DEBUG_FA_ENTRY_ULONG64, DEBUG_FA_ENTRY_NO_TYPE, extsfns/DEBUG_FA_ENTRY_STRUCTURED_DATA, debugger.fa_entry_type, DEBUG_FA_ENTRY_ARRAY, DEBUG_FA_ENTRY_ULONG, extsfns/DEBUG_FA_ENTRY_EXTENSION_CMD, FA_ENTRY_TYPE, extsfns/DEBUG_FA_ENTRY_ULONG, extsfns/DEBUG_FA_ENTRY_ULONG64, extsfns/DEBUG_FA_ENTRY_POINTER, extsfns/FA_ENTRY_TYPE, DEBUG_FA_ENTRY_EXTENSION_CMD, DEBUG_FA_ENTRY_INSTRUCTION_OFFSET, extsfns/DEBUG_FA_ENTRY_UNICODE_STRING, DEBUG_FA_ENTRY_STRUCTURED_DATA, extsfns/DEBUG_FA_ENTRY_INSTRUCTION_OFFSET, DEBUG_FA_ENTRY_POINTER, DEBUG_FA_ENTRY_UNICODE_STRING, FA_ENTRY_TYPE enumeration [Windows Debugging], DEBUG_FA_ENTRY_ANSI_STRING
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : extsfns.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FA_ENTRY_TYPE
+UID: NE:extsfns._FA_ENTRY_TYPE
+title: "_FA_ENTRY_TYPE"
+author: windows-driver-content
+description: A DebugFailureAnalysis object has a collection of failure analysis entries (FA entries).
+old-location: debugger\fa_entry_type.htm
+old-project: debugger
+ms.assetid: 49E0D15E-4214-421F-9C3F-E7C7A481CA10
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: extsfns/DEBUG_FA_ENTRY_NO_TYPE, extsfns/DEBUG_FA_ENTRY_ARRAY, _FA_ENTRY_TYPE, extsfns/DEBUG_FA_ENTRY_ANSI_STRING, DEBUG_FA_ENTRY_ULONG64, DEBUG_FA_ENTRY_NO_TYPE, extsfns/DEBUG_FA_ENTRY_STRUCTURED_DATA, debugger.fa_entry_type, DEBUG_FA_ENTRY_ARRAY, DEBUG_FA_ENTRY_ULONG, extsfns/DEBUG_FA_ENTRY_EXTENSION_CMD, FA_ENTRY_TYPE, extsfns/DEBUG_FA_ENTRY_ULONG, extsfns/DEBUG_FA_ENTRY_ULONG64, extsfns/DEBUG_FA_ENTRY_POINTER, extsfns/FA_ENTRY_TYPE, DEBUG_FA_ENTRY_EXTENSION_CMD, DEBUG_FA_ENTRY_INSTRUCTION_OFFSET, extsfns/DEBUG_FA_ENTRY_UNICODE_STRING, DEBUG_FA_ENTRY_STRUCTURED_DATA, extsfns/DEBUG_FA_ENTRY_INSTRUCTION_OFFSET, DEBUG_FA_ENTRY_POINTER, DEBUG_FA_ENTRY_UNICODE_STRING, FA_ENTRY_TYPE enumeration [Windows Debugging], DEBUG_FA_ENTRY_ANSI_STRING
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: extsfns.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	extsfns.h
+apiname:
+-	FA_ENTRY_TYPE
+product: Windows
+targetos: Windows
+req.typenames: FA_ENTRY_TYPE
 ---
 
 # _FA_ENTRY_TYPE Enumeration
@@ -62,61 +67,61 @@ typedef enum _FA_ENTRY_TYPE {
 ## Constants
 
 <table>
-
-<tr>
-<td>DEBUG_FA_ENTRY_ANSI_STRING</td>
-<td>The data block holds a null-terminated string. The <b>DataSize</b> member of the <a href="..\extsfns\ns-extsfns-_fa_entry.md">FA_ENTRY</a> structure holds the size of the string including the null terminator.</td>
-</tr>
-
-<tr>
-<td>DEBUG_FA_ENTRY_ANSI_STRINGs</td>
-<td></td>
-</tr>
-
-<tr>
-<td>DEBUG_FA_ENTRY_ARRAY</td>
-<td>A bitwise OR of this value and one of the basic types indicates an array. For example, if the data type is <b>DEBUG_FA_ENTRY_ARRAY | DEBUG_FA_ENTRY_POINTER</b>, the data block holds an array of pointers.</td>
-</tr>
-
-<tr>
-<td>DEBUG_FA_ENTRY_EXTENSION_CMD</td>
-<td>The data block holds a null-terminated string that is a debugger command. An example of a debugger command string is "!analyze -v".</td>
-</tr>
-
-<tr>
-<td>DEBUG_FA_ENTRY_INSTRUCTION_OFFSET</td>
-<td>The data block holds a 64-bit instruction offset.</td>
-</tr>
-
-<tr>
-<td>DEBUG_FA_ENTRY_NO_TYPE</td>
-<td>There is no data type associated with the tag, and there is no data block.</td>
-</tr>
-
-<tr>
-<td>DEBUG_FA_ENTRY_POINTER</td>
-<td>The data block holds a 64-bit pointer.</td>
-</tr>
-
-<tr>
-<td>DEBUG_FA_ENTRY_STRUCTURED_DATA</td>
-<td>The data block holds a  pointer to an  <a href="..\extsfns\nn-extsfns-idebugfailureanalysis2.md">IDebugFailureAnalysis2</a> interface.</td>
-</tr>
-
-<tr>
-<td>DEBUG_FA_ENTRY_ULONG</td>
-<td>The data block holds a <b>ULONG</b> value.</td>
-</tr>
-
-<tr>
-<td>DEBUG_FA_ENTRY_ULONG64</td>
-<td>The data block holds a <b>ULONG64</b> value.</td>
-</tr>
-
-<tr>
-<td>DEBUG_FA_ENTRY_UNICODE_STRING</td>
-<td>The data block holds a null-terminated Unicode string. The <b>DataSize</b> member of the <a href="..\extsfns\ns-extsfns-_fa_entry.md">FA_ENTRY</a> structure holds the size of the Unicode string including the null terminator.</td>
-</tr>
+            
+                <tr>
+                    <td>DEBUG_FA_ENTRY_ANSI_STRING</td>
+                    <td>The data block holds a null-terminated string. The <b>DataSize</b> member of the <a href="..\extsfns\ns-extsfns-_fa_entry.md">FA_ENTRY</a> structure holds the size of the string including the null terminator.</td>
+                </tr>
+            
+                <tr>
+                    <td>DEBUG_FA_ENTRY_ANSI_STRINGs</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>DEBUG_FA_ENTRY_ARRAY</td>
+                    <td>A bitwise OR of this value and one of the basic types indicates an array. For example, if the data type is <b>DEBUG_FA_ENTRY_ARRAY | DEBUG_FA_ENTRY_POINTER</b>, the data block holds an array of pointers.</td>
+                </tr>
+            
+                <tr>
+                    <td>DEBUG_FA_ENTRY_EXTENSION_CMD</td>
+                    <td>The data block holds a null-terminated string that is a debugger command. An example of a debugger command string is "!analyze -v".</td>
+                </tr>
+            
+                <tr>
+                    <td>DEBUG_FA_ENTRY_INSTRUCTION_OFFSET</td>
+                    <td>The data block holds a 64-bit instruction offset.</td>
+                </tr>
+            
+                <tr>
+                    <td>DEBUG_FA_ENTRY_NO_TYPE</td>
+                    <td>There is no data type associated with the tag, and there is no data block.</td>
+                </tr>
+            
+                <tr>
+                    <td>DEBUG_FA_ENTRY_POINTER</td>
+                    <td>The data block holds a 64-bit pointer.</td>
+                </tr>
+            
+                <tr>
+                    <td>DEBUG_FA_ENTRY_STRUCTURED_DATA</td>
+                    <td>The data block holds a  pointer to an  <a href="..\extsfns\nn-extsfns-idebugfailureanalysis2.md">IDebugFailureAnalysis2</a> interface.</td>
+                </tr>
+            
+                <tr>
+                    <td>DEBUG_FA_ENTRY_ULONG</td>
+                    <td>The data block holds a <b>ULONG</b> value.</td>
+                </tr>
+            
+                <tr>
+                    <td>DEBUG_FA_ENTRY_ULONG64</td>
+                    <td>The data block holds a <b>ULONG64</b> value.</td>
+                </tr>
+            
+                <tr>
+                    <td>DEBUG_FA_ENTRY_UNICODE_STRING</td>
+                    <td>The data block holds a null-terminated Unicode string. The <b>DataSize</b> member of the <a href="..\extsfns\ns-extsfns-_fa_entry.md">FA_ENTRY</a> structure holds the size of the Unicode string including the null terminator.</td>
+                </tr>
 </table>
 
 
@@ -125,9 +130,9 @@ typedef enum _FA_ENTRY_TYPE {
 | ---- |:---- |
 | **Header** | extsfns.h |
 
-## See Also
+    ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/jj991807">Failure Analysis Entries</a>
+        <a href="https://msdn.microsoft.com/library/windows/hardware/jj991807">Failure Analysis Entries</a>
 
 <a href="https://msdn.microsoft.com/7648F789-85D5-4247-90DD-2EAA43543483">Writing an Analysis Extension Plug-in to Extend !analyze</a>
 

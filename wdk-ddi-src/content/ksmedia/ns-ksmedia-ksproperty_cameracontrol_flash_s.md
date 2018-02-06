@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.KSPROPERTY_CAMERACONTROL_FLASH_S
-title : KSPROPERTY_CAMERACONTROL_FLASH_S
-author : windows-driver-content
-description : Describes flash control properties in the PROPSETID_VIDCAP_CAMERACONTROL_FLASH camera control property set. This structure specifies property values that are used by applications to configure the camera's flash.
-old-location : stream\ksproperty_cameracontrol_flash_s.htm
-old-project : stream
-ms.assetid : 5d02c019-9a4a-458a-8361-7597bb1fe1a2
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : PKSPROPERTY_CAMERACONTROL_FLASH_S structure pointer [Streaming Media Devices], KSPROPERTY_CAMERACONTROL_FLASH_FLAGS_AUTO, KSPROPERTY_CAMERACONTROL_FLASH_FLAGS_MANUAL, KSPROPERTY_CAMERACONTROL_FLASH_S, ksmedia/KSPROPERTY_CAMERACONTROL_FLASH_S, KSPROPERTY_CAMERACONTROL_FLASH_S structure [Streaming Media Devices], PKSPROPERTY_CAMERACONTROL_FLASH_S, KSPROPERTY_CAMERACONTROL_FLASH_OFF, KSPROPERTY_CAMERACONTROL_FLASH_AUTO, KSPROPERTY_CAMERACONTROL_FLASH_ON, *PKSPROPERTY_CAMERACONTROL_FLASH_S, stream.ksproperty_cameracontrol_flash_s, ksmedia/PKSPROPERTY_CAMERACONTROL_FLASH_S
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KSPROPERTY_CAMERACONTROL_FLASH_S, *PKSPROPERTY_CAMERACONTROL_FLASH_S
+UID: NS:ksmedia.KSPROPERTY_CAMERACONTROL_FLASH_S
+title: KSPROPERTY_CAMERACONTROL_FLASH_S
+author: windows-driver-content
+description: Describes flash control properties in the PROPSETID_VIDCAP_CAMERACONTROL_FLASH camera control property set. This structure specifies property values that are used by applications to configure the camera's flash.
+old-location: stream\ksproperty_cameracontrol_flash_s.htm
+old-project: stream
+ms.assetid: 5d02c019-9a4a-458a-8361-7597bb1fe1a2
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: PKSPROPERTY_CAMERACONTROL_FLASH_S structure pointer [Streaming Media Devices], KSPROPERTY_CAMERACONTROL_FLASH_FLAGS_AUTO, KSPROPERTY_CAMERACONTROL_FLASH_FLAGS_MANUAL, KSPROPERTY_CAMERACONTROL_FLASH_S, ksmedia/KSPROPERTY_CAMERACONTROL_FLASH_S, KSPROPERTY_CAMERACONTROL_FLASH_S structure [Streaming Media Devices], PKSPROPERTY_CAMERACONTROL_FLASH_S, KSPROPERTY_CAMERACONTROL_FLASH_OFF, KSPROPERTY_CAMERACONTROL_FLASH_AUTO, KSPROPERTY_CAMERACONTROL_FLASH_ON, *PKSPROPERTY_CAMERACONTROL_FLASH_S, stream.ksproperty_cameracontrol_flash_s, ksmedia/PKSPROPERTY_CAMERACONTROL_FLASH_S
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ksmedia.h
+apiname:
+-	KSPROPERTY_CAMERACONTROL_FLASH_S
+product: Windows
+targetos: Windows
+req.typenames: KSPROPERTY_CAMERACONTROL_FLASH_S, *PKSPROPERTY_CAMERACONTROL_FLASH_S
 ---
 
 # KSPROPERTY_CAMERACONTROL_FLASH_S structure

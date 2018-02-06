@@ -1,42 +1,48 @@
 ---
-UID : NF:storport.StorPortCompleteRequest
-title : StorPortCompleteRequest function
-author : windows-driver-content
-description : The StorPortCompleteRequest routine completes all outstanding requests setting the SRB status value to SrbStatus.
-old-location : storage\storportcompleterequest.htm
-old-project : storage
-ms.assetid : 20ee0633-a743-46e8-a094-37099b8e4427
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storprt_c91d5dfe-31de-4804-a0be-c2bab228fbb9.xml, StorPortCompleteRequest, StorPortCompleteRequest routine [Storage Devices], storport/StorPortCompleteRequest, storage.storportcompleterequest
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : StorPortCompleteRequest, StorPortDDIsPortOnly
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Storport.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STOR_SPINLOCK
-req.product : Windows 10 or later.
+UID: NF:storport.StorPortCompleteRequest
+title: StorPortCompleteRequest function
+author: windows-driver-content
+description: The StorPortCompleteRequest routine completes all outstanding requests setting the SRB status value to SrbStatus.
+old-location: storage\storportcompleterequest.htm
+old-project: storage
+ms.assetid: 20ee0633-a743-46e8-a094-37099b8e4427
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storprt_c91d5dfe-31de-4804-a0be-c2bab228fbb9.xml, StorPortCompleteRequest, StorPortCompleteRequest routine [Storage Devices], storport/StorPortCompleteRequest, storage.storportcompleterequest
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: StorPortCompleteRequest, StorPortDDIsPortOnly
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Storport.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Storport.lib
+-	Storport.dll
+apiname:
+-	StorPortCompleteRequest
+product: Windows
+targetos: Windows
+req.typenames: STOR_SPINLOCK
+req.product: Windows 10 or later.
 ---
 
 

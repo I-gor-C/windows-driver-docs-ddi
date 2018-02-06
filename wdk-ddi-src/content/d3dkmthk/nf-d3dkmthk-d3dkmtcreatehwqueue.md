@@ -1,41 +1,46 @@
 ---
-UID : NF:d3dkmthk.D3DKMTCreateHwQueue
-title : D3DKMTCreateHwQueue function
-author : windows-driver-content
-description : Used to create a new hardware queue.
-old-location : display\d3dkmtcreatehwqueue.htm
-old-project : display
-ms.assetid : FD4E892F-DDC6-449A-B77F-6C7F8240E467
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DKMTCreateHwQueue, D3DKMTCreateHwQueue method [Display Devices], display.d3dkmtcreatehwqueue, d3dkmthk/D3DKMTCreateHwQueue
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : d3dkmthk.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_DRIVERVERSION
+UID: NF:d3dkmthk.D3DKMTCreateHwQueue
+title: D3DKMTCreateHwQueue function
+author: windows-driver-content
+description: Used to create a new hardware queue.
+old-location: display\d3dkmtcreatehwqueue.htm
+old-project: display
+ms.assetid: FD4E892F-DDC6-449A-B77F-6C7F8240E467
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DKMTCreateHwQueue, D3DKMTCreateHwQueue method [Display Devices], display.d3dkmtcreatehwqueue, d3dkmthk/D3DKMTCreateHwQueue
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: d3dkmthk.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmthk.h
+apiname:
+-	D3DKMTCreateHwQueue
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_DRIVERVERSION
 ---
 
 

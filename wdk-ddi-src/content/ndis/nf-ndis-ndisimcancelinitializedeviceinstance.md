@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisIMCancelInitializeDeviceInstance
-title : NdisIMCancelInitializeDeviceInstance function
-author : windows-driver-content
-description : The NdisIMCancelInitializeDeviceInstance function cancels a preceding call to the NdisIMInitializeDeviceInstanceEx function.
-old-location : netvista\ndisimcancelinitializedeviceinstance.htm
-old-project : netvista
-ms.assetid : 809ffee1-b087-4bf0-ba8a-1ac0b2d02f2f
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NdisIMCancelInitializeDeviceInstance function [Network Drivers Starting with Windows Vista], netvista.ndisimcancelinitializedeviceinstance, ndis/NdisIMCancelInitializeDeviceInstance, NdisIMCancelInitializeDeviceInstance, intermediate_ref_4cdce462-8c79-46ad-aa3e-68a0f9b72ef1.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see       NdisIMCancelInitializeDeviceInstance (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers   (see       NdisIMCancelInitializeDeviceInstance (NDIS 5.1)) in Windows XP.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_IM_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisIMCancelInitializeDeviceInstance
+title: NdisIMCancelInitializeDeviceInstance function
+author: windows-driver-content
+description: The NdisIMCancelInitializeDeviceInstance function cancels a preceding call to the NdisIMInitializeDeviceInstanceEx function.
+old-location: netvista\ndisimcancelinitializedeviceinstance.htm
+old-project: netvista
+ms.assetid: 809ffee1-b087-4bf0-ba8a-1ac0b2d02f2f
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NdisIMCancelInitializeDeviceInstance function [Network Drivers Starting with Windows Vista], netvista.ndisimcancelinitializedeviceinstance, ndis/NdisIMCancelInitializeDeviceInstance, NdisIMCancelInitializeDeviceInstance, intermediate_ref_4cdce462-8c79-46ad-aa3e-68a0f9b72ef1.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see       NdisIMCancelInitializeDeviceInstance (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers   (see       NdisIMCancelInitializeDeviceInstance (NDIS 5.1)) in Windows XP.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_IM_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisIMCancelInitializeDeviceInstance
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

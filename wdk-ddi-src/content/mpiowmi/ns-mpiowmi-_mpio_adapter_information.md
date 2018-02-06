@@ -1,41 +1,46 @@
 ---
-UID : NS:mpiowmi._MPIO_ADAPTER_INFORMATION
-title : "_MPIO_ADAPTER_INFORMATION"
-author : windows-driver-content
-description : The MPIO_ADAPTER_INFORMATION structure contains information that pertains to MPIO's view of a path.
-old-location : storage\mpio_adapter_information.htm
-old-project : storage
-ms.assetid : bcf159a7-75a5-46aa-897a-2c5eb00f51d8
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : MPIO_ADAPTER_INFORMATION, mpiowmi/PMPIO_ADAPTER_INFORMATION, storage.mpio_adapter_information, MPIO_ADAPTER_INFORMATION structure [Storage Devices], PMPIO_ADAPTER_INFORMATION, mpiowmi/MPIO_ADAPTER_INFORMATION, structs-scsibus_bcdbb143-5a91-4a69-83e5-82e32c23b404.xml, *PMPIO_ADAPTER_INFORMATION, _MPIO_ADAPTER_INFORMATION, PMPIO_ADAPTER_INFORMATION structure pointer [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : mpiowmi.h
-req.include-header : Mpiowmi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PMPIO_ADAPTER_INFORMATION, MPIO_ADAPTER_INFORMATION"
+UID: NS:mpiowmi._MPIO_ADAPTER_INFORMATION
+title: "_MPIO_ADAPTER_INFORMATION"
+author: windows-driver-content
+description: The MPIO_ADAPTER_INFORMATION structure contains information that pertains to MPIO's view of a path.
+old-location: storage\mpio_adapter_information.htm
+old-project: storage
+ms.assetid: bcf159a7-75a5-46aa-897a-2c5eb00f51d8
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: MPIO_ADAPTER_INFORMATION, mpiowmi/PMPIO_ADAPTER_INFORMATION, storage.mpio_adapter_information, MPIO_ADAPTER_INFORMATION structure [Storage Devices], PMPIO_ADAPTER_INFORMATION, mpiowmi/MPIO_ADAPTER_INFORMATION, structs-scsibus_bcdbb143-5a91-4a69-83e5-82e32c23b404.xml, *PMPIO_ADAPTER_INFORMATION, _MPIO_ADAPTER_INFORMATION, PMPIO_ADAPTER_INFORMATION structure pointer [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: mpiowmi.h
+req.include-header: Mpiowmi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	mpiowmi.h
+apiname:
+-	MPIO_ADAPTER_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: "*PMPIO_ADAPTER_INFORMATION, MPIO_ADAPTER_INFORMATION"
 ---
 
 # _MPIO_ADAPTER_INFORMATION structure

@@ -1,41 +1,46 @@
 ---
-UID : NC:dot11wdi.NDIS_WDI_PEER_DELETE_IND
-title : NDIS_WDI_PEER_DELETE_IND
-author : windows-driver-content
-description : The NdisWdiPeerDeleteIndication callback function initiates the removal of the association of between a peer ID and a peer MAC address.
-old-location : netvista\ndiswdipeerdeleteindication.htm
-old-project : netvista
-ms.assetid : A13F2A98-BADA-43B8-A24B-0749C5558C35
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.ndiswdipeerdeleteindication, NdisWdiPeerDeleteIndication callback function [Network Drivers Starting with Windows Vista], NdisWdiPeerDeleteIndication, NDIS_WDI_PEER_DELETE_IND, NDIS_WDI_PEER_DELETE_IND, dot11wdi/NdisWdiPeerDeleteIndication
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : dot11wdi.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SYNTH_STATS, *PSYNTH_STATS
+UID: NC:dot11wdi.NDIS_WDI_PEER_DELETE_IND
+title: NDIS_WDI_PEER_DELETE_IND
+author: windows-driver-content
+description: The NdisWdiPeerDeleteIndication callback function initiates the removal of the association of between a peer ID and a peer MAC address.
+old-location: netvista\ndiswdipeerdeleteindication.htm
+old-project: netvista
+ms.assetid: A13F2A98-BADA-43B8-A24B-0749C5558C35
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.ndiswdipeerdeleteindication, NdisWdiPeerDeleteIndication callback function [Network Drivers Starting with Windows Vista], NdisWdiPeerDeleteIndication, NDIS_WDI_PEER_DELETE_IND, NDIS_WDI_PEER_DELETE_IND, dot11wdi/NdisWdiPeerDeleteIndication
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: dot11wdi.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	dot11wdi.h
+apiname:
+-	NdisWdiPeerDeleteIndication
+product: Windows
+targetos: Windows
+req.typenames: SYNTH_STATS, *PSYNTH_STATS
 ---
 
 

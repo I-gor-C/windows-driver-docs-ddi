@@ -1,41 +1,46 @@
 ---
-UID : NS:dbgeng._DEBUG_OFFSET_REGION
-title : "_DEBUG_OFFSET_REGION"
-author : windows-driver-content
-description : Defines a debug offset region.
-old-location : debugger\debug_offset_region.htm
-old-project : debugger
-ms.assetid : 7116B31A-D584-4B9D-AFB4-5B15B659BE54
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : DEBUG_OFFSET_REGION structure [Windows Debugging], PDEBUG_OFFSET_REGION structure pointer [Windows Debugging], debugger.debug_offset_region, PDEBUG_OFFSET_REGION, DEBUG_OFFSET_REGION, dbgeng/DEBUG_OFFSET_REGION, dbgeng/PDEBUG_OFFSET_REGION, *PDEBUG_OFFSET_REGION, _DEBUG_OFFSET_REGION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : dbgeng.h
-req.include-header : DbgEng.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDEBUG_OFFSET_REGION, DEBUG_OFFSET_REGION"
+UID: NS:dbgeng._DEBUG_OFFSET_REGION
+title: "_DEBUG_OFFSET_REGION"
+author: windows-driver-content
+description: Defines a debug offset region.
+old-location: debugger\debug_offset_region.htm
+old-project: debugger
+ms.assetid: 7116B31A-D584-4B9D-AFB4-5B15B659BE54
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: DEBUG_OFFSET_REGION structure [Windows Debugging], PDEBUG_OFFSET_REGION structure pointer [Windows Debugging], debugger.debug_offset_region, PDEBUG_OFFSET_REGION, DEBUG_OFFSET_REGION, dbgeng/DEBUG_OFFSET_REGION, dbgeng/PDEBUG_OFFSET_REGION, *PDEBUG_OFFSET_REGION, _DEBUG_OFFSET_REGION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: dbgeng.h
+req.include-header: DbgEng.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	DbgEng.h
+apiname:
+-	DEBUG_OFFSET_REGION
+product: Windows
+targetos: Windows
+req.typenames: "*PDEBUG_OFFSET_REGION, DEBUG_OFFSET_REGION"
 ---
 
 # _DEBUG_OFFSET_REGION structure

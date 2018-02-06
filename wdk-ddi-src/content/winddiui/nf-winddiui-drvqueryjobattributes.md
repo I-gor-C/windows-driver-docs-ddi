@@ -1,42 +1,47 @@
 ---
-UID : NF:winddiui.DrvQueryJobAttributes
-title : DrvQueryJobAttributes function
-author : windows-driver-content
-description : The DrvQueryJobAttributes function allows a printer interface DLL to specify support for such capabilities as printing multiple document pages on a physical page (&#0034;N-up&#0034; printing), printing multiple copies of each page, collating pages, and printing pages in reverse order.
-old-location : print\drvqueryjobattributes.htm
-old-project : print
-ms.assetid : 71e07572-bb15-4838-94d1-e07a3305ab82
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : DrvQueryJobAttributes function [Print Devices], winddiui/DrvQueryJobAttributes, print.drvqueryjobattributes, print_interface-graphics_3fc2f9a4-bfe5-4323-a73e-6ac3ca9cf217.xml, DrvQueryJobAttributes
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : winddiui.h
-req.include-header : Winddiui.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WINBIO_VERSION, *PWINBIO_VERSION
-req.product : Windows 10 or later.
+UID: NF:winddiui.DrvQueryJobAttributes
+title: DrvQueryJobAttributes function
+author: windows-driver-content
+description: The DrvQueryJobAttributes function allows a printer interface DLL to specify support for such capabilities as printing multiple document pages on a physical page (&#0034;N-up&#0034; printing), printing multiple copies of each page, collating pages, and printing pages in reverse order.
+old-location: print\drvqueryjobattributes.htm
+old-project: print
+ms.assetid: 71e07572-bb15-4838-94d1-e07a3305ab82
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: DrvQueryJobAttributes function [Print Devices], winddiui/DrvQueryJobAttributes, print.drvqueryjobattributes, print_interface-graphics_3fc2f9a4-bfe5-4323-a73e-6ac3ca9cf217.xml, DrvQueryJobAttributes
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: winddiui.h
+req.include-header: Winddiui.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	winddiui.h
+apiname:
+-	DrvQueryJobAttributes
+product: Windows
+targetos: Windows
+req.typenames: WINBIO_VERSION, *PWINBIO_VERSION
+req.product: Windows 10 or later.
 ---
 
 

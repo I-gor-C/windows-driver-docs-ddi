@@ -1,41 +1,47 @@
 ---
-UID : NF:portcls.PcRegisterSubdevice
-title : PcRegisterSubdevice function
-author : windows-driver-content
-description : The PcRegisterSubdevice function registers a subdevice to make it available for use by clients.
-old-location : audio\pcregistersubdevice.htm
-old-project : audio
-ms.assetid : 97461adf-053b-484b-9425-b23ac6deb1bd
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : PcRegisterSubdevice, portcls/PcRegisterSubdevice, audio.pcregistersubdevice, PcRegisterSubdevice function [Audio Devices], audpc-routines_ba884bcc-8193-4434-9747-d2bce0156eb8.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : portcls.h
-req.include-header : Portcls.h
-req.target-type : Universal
-req.target-min-winverclnt : The PortCls system driver implements the PcRegisterSubdevice function in Microsoft Windows 98/Me and in Windows 2000 and later operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Portcls.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.PcRegisterSubdevice
+title: PcRegisterSubdevice function
+author: windows-driver-content
+description: The PcRegisterSubdevice function registers a subdevice to make it available for use by clients.
+old-location: audio\pcregistersubdevice.htm
+old-project: audio
+ms.assetid: 97461adf-053b-484b-9425-b23ac6deb1bd
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: PcRegisterSubdevice, portcls/PcRegisterSubdevice, audio.pcregistersubdevice, PcRegisterSubdevice function [Audio Devices], audpc-routines_ba884bcc-8193-4434-9747-d2bce0156eb8.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: portcls.h
+req.include-header: Portcls.h
+req.target-type: Universal
+req.target-min-winverclnt: The PortCls system driver implements the PcRegisterSubdevice function in Microsoft Windows 98/Me and in Windows 2000 and later operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Portcls.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Portcls.lib
+-	Portcls.dll
+apiname:
+-	PcRegisterSubdevice
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

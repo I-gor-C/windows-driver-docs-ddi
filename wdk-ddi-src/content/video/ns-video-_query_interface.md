@@ -1,42 +1,47 @@
 ---
-UID : NS:video._QUERY_INTERFACE
-title : "_QUERY_INTERFACE"
-author : windows-driver-content
-description : The QUERY_INTERFACE structure describes the interface being requested.
-old-location : display\query_interface.htm
-old-project : display
-ms.assetid : 0d813870-10bd-4b41-9f36-1cb45c462697
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : QUERY_INTERFACE structure [Display Devices], video/QUERY_INTERFACE, PQUERY_INTERFACE, Video_Structs_facaef96-c0d9-4695-8541-65e5e430f182.xml, *PQUERY_INTERFACE, display.query_interface, _QUERY_INTERFACE, PQUERY_INTERFACE structure pointer [Display Devices], video/PQUERY_INTERFACE, QUERY_INTERFACE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PQUERY_INTERFACE, QUERY_INTERFACE"
-req.product : Windows 10 or later.
+UID: NS:video._QUERY_INTERFACE
+title: "_QUERY_INTERFACE"
+author: windows-driver-content
+description: The QUERY_INTERFACE structure describes the interface being requested.
+old-location: display\query_interface.htm
+old-project: display
+ms.assetid: 0d813870-10bd-4b41-9f36-1cb45c462697
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: QUERY_INTERFACE structure [Display Devices], video/QUERY_INTERFACE, PQUERY_INTERFACE, Video_Structs_facaef96-c0d9-4695-8541-65e5e430f182.xml, *PQUERY_INTERFACE, display.query_interface, _QUERY_INTERFACE, PQUERY_INTERFACE structure pointer [Display Devices], video/PQUERY_INTERFACE, QUERY_INTERFACE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	video.h
+apiname:
+-	QUERY_INTERFACE
+product: Windows
+targetos: Windows
+req.typenames: "*PQUERY_INTERFACE, QUERY_INTERFACE"
+req.product: Windows 10 or later.
 ---
 
 # _QUERY_INTERFACE structure

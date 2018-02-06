@@ -1,41 +1,47 @@
 ---
-UID : NF:ntifs.NtCreateFile
-title : NtCreateFile function
-author : windows-driver-content
-description : The ZwCreateFile routine creates a new file or opens an existing file.
-old-location : kernel\zwcreatefile.htm
-old-project : kernel
-ms.assetid : c40b99be-5627-44f3-9853-c3ae31a8035c
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : NtCreateFile, k111_80b1882a-8617-45d4-a783-dbc3bfc9aad4.xml, wdm/NtCreateFile, ZwCreateFile routine [Kernel-Mode Driver Architecture], wdm/ZwCreateFile, ZwCreateFile, kernel.zwcreatefile
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.NtCreateFile
+title: NtCreateFile function
+author: windows-driver-content
+description: The ZwCreateFile routine creates a new file or opens an existing file.
+old-location: kernel\zwcreatefile.htm
+old-project: kernel
+ms.assetid: c40b99be-5627-44f3-9853-c3ae31a8035c
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: NtCreateFile, k111_80b1882a-8617-45d4-a783-dbc3bfc9aad4.xml, wdm/NtCreateFile, ZwCreateFile routine [Kernel-Mode Driver Architecture], wdm/ZwCreateFile, ZwCreateFile, kernel.zwcreatefile
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ZwCreateFile
+-	NtCreateFile
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NC:dispmprt.DXGKCB_MIRACAST_SEND_MESSAGE
-title : DXGKCB_MIRACAST_SEND_MESSAGE
-author : windows-driver-content
-description : Sends an asynchronous message to the user-mode display driver.
-old-location : display\dxgkcbmiracastsendmessage.htm
-old-project : display
-ms.assetid : E8C3B9E3-854C-488D-809B-0F0893591352
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkcbmiracastsendmessage, DxgkCbMiracastSendMessage callback function [Display Devices], DxgkCbMiracastSendMessage, DXGKCB_MIRACAST_SEND_MESSAGE, DXGKCB_MIRACAST_SEND_MESSAGE, dispmprt/DxgkCbMiracastSendMessage
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : dispmprt.h
-req.include-header : Dispmprt.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8.1
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
+UID: NC:dispmprt.DXGKCB_MIRACAST_SEND_MESSAGE
+title: DXGKCB_MIRACAST_SEND_MESSAGE
+author: windows-driver-content
+description: Sends an asynchronous message to the user-mode display driver.
+old-location: display\dxgkcbmiracastsendmessage.htm
+old-project: display
+ms.assetid: E8C3B9E3-854C-488D-809B-0F0893591352
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkcbmiracastsendmessage, DxgkCbMiracastSendMessage callback function [Display Devices], DxgkCbMiracastSendMessage, DXGKCB_MIRACAST_SEND_MESSAGE, DXGKCB_MIRACAST_SEND_MESSAGE, dispmprt/DxgkCbMiracastSendMessage
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: dispmprt.h
+req.include-header: Dispmprt.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8.1
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Dispmprt.h
+apiname:
+-	DxgkCbMiracastSendMessage
+product: Windows
+targetos: Windows
+req.typenames: SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._D3DDDIARG_GETCAPTUREALLOCATIONHANDLE
-title : "_D3DDDIARG_GETCAPTUREALLOCATIONHANDLE"
-author : windows-driver-content
-description : The D3DDDIARG_GETCAPTUREALLOCATIONHANDLE structure describes the parameters for retrieving an allocation handle from a capture resource handle.
-old-location : display\d3dddiarg_getcaptureallocationhandle.htm
-old-project : display
-ms.assetid : 588ebf7a-db83-4eb8-8403-04b215bed12b
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.d3dddiarg_getcaptureallocationhandle, d3dumddi/D3DDDIARG_GETCAPTUREALLOCATIONHANDLE, UMDisplayDriver_param_Structs_8fece49c-e3e6-4683-b4af-517da6f73cc7.xml, D3DDDIARG_GETCAPTUREALLOCATIONHANDLE, D3DDDIARG_GETCAPTUREALLOCATIONHANDLE structure [Display Devices], _D3DDDIARG_GETCAPTUREALLOCATIONHANDLE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDIARG_GETCAPTUREALLOCATIONHANDLE
+UID: NS:d3dumddi._D3DDDIARG_GETCAPTUREALLOCATIONHANDLE
+title: "_D3DDDIARG_GETCAPTUREALLOCATIONHANDLE"
+author: windows-driver-content
+description: The D3DDDIARG_GETCAPTUREALLOCATIONHANDLE structure describes the parameters for retrieving an allocation handle from a capture resource handle.
+old-location: display\d3dddiarg_getcaptureallocationhandle.htm
+old-project: display
+ms.assetid: 588ebf7a-db83-4eb8-8403-04b215bed12b
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.d3dddiarg_getcaptureallocationhandle, d3dumddi/D3DDDIARG_GETCAPTUREALLOCATIONHANDLE, UMDisplayDriver_param_Structs_8fece49c-e3e6-4683-b4af-517da6f73cc7.xml, D3DDDIARG_GETCAPTUREALLOCATIONHANDLE, D3DDDIARG_GETCAPTUREALLOCATIONHANDLE structure [Display Devices], _D3DDDIARG_GETCAPTUREALLOCATIONHANDLE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	D3DDDIARG_GETCAPTUREALLOCATIONHANDLE
+product: Windows
+targetos: Windows
+req.typenames: D3DDDIARG_GETCAPTUREALLOCATIONHANDLE
 ---
 
 # _D3DDDIARG_GETCAPTUREALLOCATIONHANDLE structure

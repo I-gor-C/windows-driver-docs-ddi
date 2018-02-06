@@ -1,41 +1,46 @@
 ---
-UID : NC:ntddk.PCREATE_PROCESS_NOTIFY_ROUTINE_EX
-title : PCREATE_PROCESS_NOTIFY_ROUTINE_EX
-author : windows-driver-content
-description : A callback routine implemented by a driver to notify the caller when a process is created or exits.
-old-location : kernel\pcreate_process_notify_routine_ex.htm
-old-project : kernel
-ms.assetid : 071BD24F-AA58-4A39-8059-CEF6D7105DB6
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.pcreate_process_notify_routine_ex, SetCreateProcessNotifyRoutineEx callback function [Kernel-Mode Driver Architecture], SetCreateProcessNotifyRoutineEx, PCREATE_PROCESS_NOTIFY_ROUTINE_EX, PCREATE_PROCESS_NOTIFY_ROUTINE_EX, ntddk/SetCreateProcessNotifyRoutineEx
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PFILTER_INITIALIZATION_DATA, FILTER_INITIALIZATION_DATA"
+UID: NC:ntddk.PCREATE_PROCESS_NOTIFY_ROUTINE_EX
+title: PCREATE_PROCESS_NOTIFY_ROUTINE_EX
+author: windows-driver-content
+description: A callback routine implemented by a driver to notify the caller when a process is created or exits.
+old-location: kernel\pcreate_process_notify_routine_ex.htm
+old-project: kernel
+ms.assetid: 071BD24F-AA58-4A39-8059-CEF6D7105DB6
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.pcreate_process_notify_routine_ex, SetCreateProcessNotifyRoutineEx callback function [Kernel-Mode Driver Architecture], SetCreateProcessNotifyRoutineEx, PCREATE_PROCESS_NOTIFY_ROUTINE_EX, PCREATE_PROCESS_NOTIFY_ROUTINE_EX, ntddk/SetCreateProcessNotifyRoutineEx
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ntddk.h
+apiname:
+-	SetCreateProcessNotifyRoutineEx
+product: Windows
+targetos: Windows
+req.typenames: "*PFILTER_INITIALIZATION_DATA, FILTER_INITIALIZATION_DATA"
 ---
 
 

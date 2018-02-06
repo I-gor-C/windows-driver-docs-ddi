@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddstor._STORAGE_IDENTIFIER
-title : "_STORAGE_IDENTIFIER"
-author : windows-driver-content
-description : The STORAGE_IDENTIFIER structure represents a SCSI identification descriptor.
-old-location : storage\storage_identifier.htm
-old-project : storage
-ms.assetid : f2b0610a-dffa-48fb-bc5a-355fa9f05770
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : PSTORAGE_IDENTIFIER, ntddstor/PSTORAGE_IDENTIFIER, PSTORAGE_IDENTIFIER structure pointer [Storage Devices], structs-general_29c666d7-3e61-44fe-a36e-979418dbb958.xml, storage.storage_identifier, ntddstor/STORAGE_IDENTIFIER, _STORAGE_IDENTIFIER, *PSTORAGE_IDENTIFIER, STORAGE_IDENTIFIER structure [Storage Devices], STORAGE_IDENTIFIER
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddstor.h
-req.include-header : Ntddstor.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSTORAGE_IDENTIFIER, STORAGE_IDENTIFIER"
+UID: NS:ntddstor._STORAGE_IDENTIFIER
+title: "_STORAGE_IDENTIFIER"
+author: windows-driver-content
+description: The STORAGE_IDENTIFIER structure represents a SCSI identification descriptor.
+old-location: storage\storage_identifier.htm
+old-project: storage
+ms.assetid: f2b0610a-dffa-48fb-bc5a-355fa9f05770
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: PSTORAGE_IDENTIFIER, ntddstor/PSTORAGE_IDENTIFIER, PSTORAGE_IDENTIFIER structure pointer [Storage Devices], structs-general_29c666d7-3e61-44fe-a36e-979418dbb958.xml, storage.storage_identifier, ntddstor/STORAGE_IDENTIFIER, _STORAGE_IDENTIFIER, *PSTORAGE_IDENTIFIER, STORAGE_IDENTIFIER structure [Storage Devices], STORAGE_IDENTIFIER
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddstor.h
+req.include-header: Ntddstor.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddstor.h
+apiname:
+-	STORAGE_IDENTIFIER
+product: Windows
+targetos: Windows
+req.typenames: "*PSTORAGE_IDENTIFIER, STORAGE_IDENTIFIER"
 ---
 
 # _STORAGE_IDENTIFIER structure

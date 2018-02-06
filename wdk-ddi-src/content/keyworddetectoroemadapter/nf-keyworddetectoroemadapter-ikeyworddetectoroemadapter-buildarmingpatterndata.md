@@ -1,41 +1,46 @@
 ---
-UID : NF:keyworddetectoroemadapter.IKeywordDetectorOemAdapter.BuildArmingPatternData
-title : IKeywordDetectorOemAdapter::BuildArmingPatternData method
-author : windows-driver-content
-description : The BuildArmingPatternData method is called by the operating system to build OEM-specific pattern data that includes any keyword and user-specific model data for detection.
-old-location : audio\ikeyworddetectoroemadapter_buildarmingpatterndata.htm
-old-project : audio
-ms.assetid : F74DC3C3-C182-4BBA-93C8-95A73C58CFEF
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : IKeywordDetectorOemAdapter, IKeywordDetectorOemAdapter::BuildArmingPatternData, BuildArmingPatternData method [Audio Devices], IKeywordDetectorOemAdapter interface, IKeywordDetectorOemAdapter interface [Audio Devices], BuildArmingPatternData method, BuildArmingPatternData method [Audio Devices], BuildArmingPatternData, keyworddetectoroemadapter/IKeywordDetectorOemAdapter::BuildArmingPatternData, audio.ikeyworddetectoroemadapter_buildarmingpatterndata
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : keyworddetectoroemadapter.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : KeywordDetectorOemAdapter.idl
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : keyworddetectoroemadapter.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KEYWORDID
+UID: NF:keyworddetectoroemadapter.IKeywordDetectorOemAdapter.BuildArmingPatternData
+title: IKeywordDetectorOemAdapter::BuildArmingPatternData method
+author: windows-driver-content
+description: The BuildArmingPatternData method is called by the operating system to build OEM-specific pattern data that includes any keyword and user-specific model data for detection.
+old-location: audio\ikeyworddetectoroemadapter_buildarmingpatterndata.htm
+old-project: audio
+ms.assetid: F74DC3C3-C182-4BBA-93C8-95A73C58CFEF
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: IKeywordDetectorOemAdapter, IKeywordDetectorOemAdapter::BuildArmingPatternData, BuildArmingPatternData method [Audio Devices], IKeywordDetectorOemAdapter interface, IKeywordDetectorOemAdapter interface [Audio Devices], BuildArmingPatternData method, BuildArmingPatternData method [Audio Devices], BuildArmingPatternData, keyworddetectoroemadapter/IKeywordDetectorOemAdapter::BuildArmingPatternData, audio.ikeyworddetectoroemadapter_buildarmingpatterndata
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: keyworddetectoroemadapter.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: KeywordDetectorOemAdapter.idl
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: keyworddetectoroemadapter.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	KeywordDetectorOemAdapter.h
+apiname:
+-	IKeywordDetectorOemAdapter.BuildArmingPatternData
+product: Windows
+targetos: Windows
+req.typenames: KEYWORDID
 ---
 
 

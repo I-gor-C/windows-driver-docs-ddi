@@ -1,41 +1,46 @@
 ---
-UID : NC:netdispumdddi.QUERY_MIRACAST_DRIVER_INTERFACE
-title : QUERY_MIRACAST_DRIVER_INTERFACE
-author : windows-driver-content
-description : Called by the operating system to query the Miracast user-mode driver interface, MIRACAST_DRIVER_INTERFACE.
-old-location : display\querymiracastdriverinterface.htm
-old-project : display
-ms.assetid : a8833f8c-7e3f-422c-922e-e75476358ee9
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.querymiracastdriverinterface, QueryMiracastDriverInterface callback function [Display Devices], QueryMiracastDriverInterface, QUERY_MIRACAST_DRIVER_INTERFACE, QUERY_MIRACAST_DRIVER_INTERFACE, netdispumdddi/QueryMiracastDriverInterface, display.query_miracast_driver_interface
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : netdispumdddi.h
-req.include-header : Netdispumdddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8.1
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDK_SRQ_DISPATCH
+UID: NC:netdispumdddi.QUERY_MIRACAST_DRIVER_INTERFACE
+title: QUERY_MIRACAST_DRIVER_INTERFACE
+author: windows-driver-content
+description: Called by the operating system to query the Miracast user-mode driver interface, MIRACAST_DRIVER_INTERFACE.
+old-location: display\querymiracastdriverinterface.htm
+old-project: display
+ms.assetid: a8833f8c-7e3f-422c-922e-e75476358ee9
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.querymiracastdriverinterface, QueryMiracastDriverInterface callback function [Display Devices], QueryMiracastDriverInterface, QUERY_MIRACAST_DRIVER_INTERFACE, QUERY_MIRACAST_DRIVER_INTERFACE, netdispumdddi/QueryMiracastDriverInterface, display.query_miracast_driver_interface
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: netdispumdddi.h
+req.include-header: Netdispumdddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8.1
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Netdispumdddi.h
+apiname:
+-	QueryMiracastDriverInterface
+product: Windows
+targetos: Windows
+req.typenames: NDK_SRQ_DISPATCH
 ---
 
 

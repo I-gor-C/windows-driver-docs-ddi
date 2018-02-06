@@ -1,41 +1,46 @@
 ---
-UID : NI:ehstorioctl.IOCTL_EHSTOR_DEVICE_GET_AUTHZ_STATE
-title : IOCTL_EHSTOR_DEVICE_GET_AUTHZ_STATE
-author : windows-driver-content
-description : This IOCTL is used to inform the owning driver for the IEEE 1667 device PDOs that the authorization state has changed.
-old-location : storage\ioctl_ehstor_device_get_authz_state.htm
-old-project : storage
-ms.assetid : 20322156-316B-4FE5-A804-14506C8CEB49
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_ehstor_device_get_authz_state, IOCTL_EHSTOR_DEVICE_GET_AUTHZ_STATE control code [Storage Devices], IOCTL_EHSTOR_DEVICE_GET_AUTHZ_STATE, ehstorioctl/IOCTL_EHSTOR_DEVICE_GET_AUTHZ_STATE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ehstorioctl.h
-req.include-header : EhStorIoctl.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PDO_TYPE
+UID: NI:ehstorioctl.IOCTL_EHSTOR_DEVICE_GET_AUTHZ_STATE
+title: IOCTL_EHSTOR_DEVICE_GET_AUTHZ_STATE
+author: windows-driver-content
+description: This IOCTL is used to inform the owning driver for the IEEE 1667 device PDOs that the authorization state has changed.
+old-location: storage\ioctl_ehstor_device_get_authz_state.htm
+old-project: storage
+ms.assetid: 20322156-316B-4FE5-A804-14506C8CEB49
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_ehstor_device_get_authz_state, IOCTL_EHSTOR_DEVICE_GET_AUTHZ_STATE control code [Storage Devices], IOCTL_EHSTOR_DEVICE_GET_AUTHZ_STATE, ehstorioctl/IOCTL_EHSTOR_DEVICE_GET_AUTHZ_STATE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ehstorioctl.h
+req.include-header: EhStorIoctl.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	EhStorIoctl.h
+apiname:
+-	IOCTL_EHSTOR_DEVICE_GET_AUTHZ_STATE
+product: Windows
+targetos: Windows
+req.typenames: PDO_TYPE
 ---
 
 # IOCTL_EHSTOR_DEVICE_GET_AUTHZ_STATE IOCTL

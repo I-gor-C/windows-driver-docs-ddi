@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugClient5.AttachKernelWide
-title : IDebugClient5::AttachKernelWide method
-author : windows-driver-content
-description : The AttachKernelWide method connects the debugger engine to a kernel target.
-old-location : debugger\attachkernelwide.htm
-old-project : debugger
-ms.assetid : 02ddcd45-4848-402b-a0fa-5223b8fde52e
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : dbgeng/IDebugClient5::AttachKernelWide, IDebugClient5 interface [Windows Debugging], AttachKernelWide method, AttachKernelWide method [Windows Debugging], AttachKernelWide method [Windows Debugging], IDebugClient5 interface, IDebugClient5::AttachKernelWide, AttachKernelWide, IDebugClient5, debugger.attachkernelwide
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugClient5.AttachKernelWide
+title: IDebugClient5::AttachKernelWide method
+author: windows-driver-content
+description: The AttachKernelWide method connects the debugger engine to a kernel target.
+old-location: debugger\attachkernelwide.htm
+old-project: debugger
+ms.assetid: 02ddcd45-4848-402b-a0fa-5223b8fde52e
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: dbgeng/IDebugClient5::AttachKernelWide, IDebugClient5 interface [Windows Debugging], AttachKernelWide method, AttachKernelWide method [Windows Debugging], AttachKernelWide method [Windows Debugging], IDebugClient5 interface, IDebugClient5::AttachKernelWide, AttachKernelWide, IDebugClient5, debugger.attachkernelwide
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugClient5.AttachKernelWide
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

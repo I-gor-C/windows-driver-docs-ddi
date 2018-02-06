@@ -1,41 +1,46 @@
 ---
-UID : NS:1394._GET_LOCAL_HOST_INFO2
-title : "_GET_LOCAL_HOST_INFO2"
-author : windows-driver-content
-description : The GET_LOCAL_HOST_INFO2 structure contains the data returned by a REQUEST_GET_LOCAL_HOST_INFO request using u.GetLocalHostInformation.nLevel GET_HOST_CAPABILITIES.
-old-location : ieee\get_local_host_info2.htm
-old-project : IEEE
-ms.assetid : 39cb4015-7745-4d13-bb31-76378b217cfd
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : IEEE.get_local_host_info2, 1394/PGET_LOCAL_HOST_INFO2, PGET_LOCAL_HOST_INFO2 structure pointer [Buses], 1394/GET_LOCAL_HOST_INFO2, PGET_LOCAL_HOST_INFO2, GET_LOCAL_HOST_INFO2 structure [Buses], GET_LOCAL_HOST_INFO2, _GET_LOCAL_HOST_INFO2, *PGET_LOCAL_HOST_INFO2, 1394stct_06c8c818-409c-41eb-b501-6e55b0cf50ff.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : 1394.h
-req.include-header : 1394.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PGET_LOCAL_HOST_INFO2, GET_LOCAL_HOST_INFO2"
+UID: NS:1394._GET_LOCAL_HOST_INFO2
+title: "_GET_LOCAL_HOST_INFO2"
+author: windows-driver-content
+description: The GET_LOCAL_HOST_INFO2 structure contains the data returned by a REQUEST_GET_LOCAL_HOST_INFO request using u.GetLocalHostInformation.nLevel GET_HOST_CAPABILITIES.
+old-location: ieee\get_local_host_info2.htm
+old-project: IEEE
+ms.assetid: 39cb4015-7745-4d13-bb31-76378b217cfd
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: IEEE.get_local_host_info2, 1394/PGET_LOCAL_HOST_INFO2, PGET_LOCAL_HOST_INFO2 structure pointer [Buses], 1394/GET_LOCAL_HOST_INFO2, PGET_LOCAL_HOST_INFO2, GET_LOCAL_HOST_INFO2 structure [Buses], GET_LOCAL_HOST_INFO2, _GET_LOCAL_HOST_INFO2, *PGET_LOCAL_HOST_INFO2, 1394stct_06c8c818-409c-41eb-b501-6e55b0cf50ff.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: 1394.h
+req.include-header: 1394.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	1394.h
+apiname:
+-	GET_LOCAL_HOST_INFO2
+product: Windows
+targetos: Windows
+req.typenames: "*PGET_LOCAL_HOST_INFO2, GET_LOCAL_HOST_INFO2"
 ---
 
 # _GET_LOCAL_HOST_INFO2 structure

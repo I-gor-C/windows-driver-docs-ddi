@@ -1,41 +1,46 @@
 ---
-UID : NC:mrx.PMRX_FORCECLOSED_CALLDOWN
-title : PMRX_FORCECLOSED_CALLDOWN
-author : windows-driver-content
-description : The MRxForceClosed routine is called by RDBSS to request that a network mini-redirector force a close. This routine is called when the condition of the SRV_OPEN structure is not good or the SRV_OPEN structure is marked as closed.
-old-location : ifsk\mrxforceclosed.htm
-old-project : ifsk
-ms.assetid : 81cbde46-e538-47dd-8b4a-e80dfb5e5b65
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.mrxforceclosed, MRxForceClosed routine [Installable File System Drivers], MRxForceClosed, PMRX_FORCECLOSED_CALLDOWN, PMRX_FORCECLOSED_CALLDOWN, mrx/MRxForceClosed, mrxref_4ebb7c98-0f0f-402e-b6f7-53e75c5cac54.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : mrx.h
-req.include-header : Mrx.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SetDSMCounters_IN, *PSetDSMCounters_IN
+UID: NC:mrx.PMRX_FORCECLOSED_CALLDOWN
+title: PMRX_FORCECLOSED_CALLDOWN
+author: windows-driver-content
+description: The MRxForceClosed routine is called by RDBSS to request that a network mini-redirector force a close. This routine is called when the condition of the SRV_OPEN structure is not good or the SRV_OPEN structure is marked as closed.
+old-location: ifsk\mrxforceclosed.htm
+old-project: ifsk
+ms.assetid: 81cbde46-e538-47dd-8b4a-e80dfb5e5b65
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.mrxforceclosed, MRxForceClosed routine [Installable File System Drivers], MRxForceClosed, PMRX_FORCECLOSED_CALLDOWN, PMRX_FORCECLOSED_CALLDOWN, mrx/MRxForceClosed, mrxref_4ebb7c98-0f0f-402e-b6f7-53e75c5cac54.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: mrx.h
+req.include-header: Mrx.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	mrx.h
+apiname:
+-	MRxForceClosed
+product: Windows
+targetos: Windows
+req.typenames: SetDSMCounters_IN, *PSetDSMCounters_IN
 ---
 
 

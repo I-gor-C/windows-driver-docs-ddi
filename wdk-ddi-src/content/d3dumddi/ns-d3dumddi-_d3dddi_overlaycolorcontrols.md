@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._D3DDDI_OVERLAYCOLORCONTROLS
-title : "_D3DDDI_OVERLAYCOLORCONTROLS"
-author : windows-driver-content
-description : The D3DDDI_OVERLAYCOLORCONTROLS structure describes color-control settings for an overlay.
-old-location : display\d3dddi_overlaycolorcontrols.htm
-old-project : display
-ms.assetid : 201fd9e8-74c3-4da0-b01d-f43f9aec4894
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DDDI_OVERLAYCOLORCONTROLS structure [Display Devices], _D3DDDI_OVERLAYCOLORCONTROLS, d3dumddi/D3DDDI_OVERLAYCOLORCONTROLS, D3D_other_Structs_276dd56c-35ba-4ee4-97d7-adb8dfd59c7f.xml, display.d3dddi_overlaycolorcontrols, D3DDDI_OVERLAYCOLORCONTROLS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDI_OVERLAYCOLORCONTROLS
+UID: NS:d3dumddi._D3DDDI_OVERLAYCOLORCONTROLS
+title: "_D3DDDI_OVERLAYCOLORCONTROLS"
+author: windows-driver-content
+description: The D3DDDI_OVERLAYCOLORCONTROLS structure describes color-control settings for an overlay.
+old-location: display\d3dddi_overlaycolorcontrols.htm
+old-project: display
+ms.assetid: 201fd9e8-74c3-4da0-b01d-f43f9aec4894
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DDDI_OVERLAYCOLORCONTROLS structure [Display Devices], _D3DDDI_OVERLAYCOLORCONTROLS, d3dumddi/D3DDDI_OVERLAYCOLORCONTROLS, D3D_other_Structs_276dd56c-35ba-4ee4-97d7-adb8dfd59c7f.xml, display.d3dddi_overlaycolorcontrols, D3DDDI_OVERLAYCOLORCONTROLS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	D3DDDI_OVERLAYCOLORCONTROLS
+product: Windows
+targetos: Windows
+req.typenames: D3DDDI_OVERLAYCOLORCONTROLS
 ---
 
 # _D3DDDI_OVERLAYCOLORCONTROLS structure

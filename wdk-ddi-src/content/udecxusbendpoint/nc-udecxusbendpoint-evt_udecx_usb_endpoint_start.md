@@ -1,42 +1,47 @@
 ---
-UID : NC:udecxusbendpoint.EVT_UDECX_USB_ENDPOINT_START
-title : EVT_UDECX_USB_ENDPOINT_START
-author : windows-driver-content
-description : The USB device emulation class extension (UdeCx) invokes this callback function to start processing I/O requests on the specified endpoint of the virtual USB device.
-old-location : buses\evt_udecx_usb_endpoint_start.htm
-old-project : usbref
-ms.assetid : 3F58B6FF-65C5-4B28-81DD-3726B6695BF7
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : buses.evt_udecx_usb_endpoint_start, EvtUsbEndpointStart callback function [Buses], EvtUsbEndpointStart, EVT_UDECX_USB_ENDPOINT_START, EVT_UDECX_USB_ENDPOINT_START, udecxusbendpoint/EvtUsbEndpointStart
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : udecxusbendpoint.h
-req.include-header : Udecx.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 1.15
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUDECX_USB_ENDPOINT_INIT_AND_METADATA, UDECX_USB_ENDPOINT_INIT_AND_METADATA"
-req.product : Windows 10 or later.
+UID: NC:udecxusbendpoint.EVT_UDECX_USB_ENDPOINT_START
+title: EVT_UDECX_USB_ENDPOINT_START
+author: windows-driver-content
+description: The USB device emulation class extension (UdeCx) invokes this callback function to start processing I/O requests on the specified endpoint of the virtual USB device.
+old-location: buses\evt_udecx_usb_endpoint_start.htm
+old-project: usbref
+ms.assetid: 3F58B6FF-65C5-4B28-81DD-3726B6695BF7
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: buses.evt_udecx_usb_endpoint_start, EvtUsbEndpointStart callback function [Buses], EvtUsbEndpointStart, EVT_UDECX_USB_ENDPOINT_START, EVT_UDECX_USB_ENDPOINT_START, udecxusbendpoint/EvtUsbEndpointStart
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: udecxusbendpoint.h
+req.include-header: Udecx.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 1.15
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	UdecxUsbEndpoint.h
+apiname:
+-	EvtUsbEndpointStart
+product: Windows
+targetos: Windows
+req.typenames: "*PUDECX_USB_ENDPOINT_INIT_AND_METADATA, UDECX_USB_ENDPOINT_INIT_AND_METADATA"
+req.product: Windows 10 or later.
 ---
 
 

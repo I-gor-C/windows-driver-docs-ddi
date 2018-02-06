@@ -1,42 +1,47 @@
 ---
-UID : NF:wiamindr_lh.IWiaMiniDrv.drvDeleteItem
-title : IWiaMiniDrv::drvDeleteItem method
-author : windows-driver-content
-description : The IWiaMiniDrv::drvDeleteItem method deletes the current driver item.
-old-location : image\iwiaminidrv_drvdeleteitem.htm
-old-project : image
-ms.assetid : 616a0edd-d769-411d-bc94-57ba18a00c4d
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : wiamindr_lh/IWiaMiniDrv::drvDeleteItem, IWiaMiniDrv interface [Imaging Devices], drvDeleteItem method, IWiaMiniDrv, drvDeleteItem, drvDeleteItem method [Imaging Devices], image.iwiaminidrv_drvdeleteitem, drvDeleteItem method [Imaging Devices], IWiaMiniDrv interface, MiniDrv_7e3949ae-f170-4ccc-a139-fecaf2e97e41.xml, IWiaMiniDrv::drvDeleteItem
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wiamindr_lh.h
-req.include-header : Wiamindr.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Me and in Windows XP and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wiamindr_lh.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SCANWINDOW, *PSCANWINDOW
-req.product : Windows 10 or later.
+UID: NF:wiamindr_lh.IWiaMiniDrv.drvDeleteItem
+title: IWiaMiniDrv::drvDeleteItem method
+author: windows-driver-content
+description: The IWiaMiniDrv::drvDeleteItem method deletes the current driver item.
+old-location: image\iwiaminidrv_drvdeleteitem.htm
+old-project: image
+ms.assetid: 616a0edd-d769-411d-bc94-57ba18a00c4d
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: wiamindr_lh/IWiaMiniDrv::drvDeleteItem, IWiaMiniDrv interface [Imaging Devices], drvDeleteItem method, IWiaMiniDrv, drvDeleteItem, drvDeleteItem method [Imaging Devices], image.iwiaminidrv_drvdeleteitem, drvDeleteItem method [Imaging Devices], IWiaMiniDrv interface, MiniDrv_7e3949ae-f170-4ccc-a139-fecaf2e97e41.xml, IWiaMiniDrv::drvDeleteItem
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wiamindr_lh.h
+req.include-header: Wiamindr.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Me and in Windows XP and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wiamindr_lh.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	wiamindr_lh.h
+apiname:
+-	IWiaMiniDrv.drvDeleteItem
+product: Windows
+targetos: Windows
+req.typenames: SCANWINDOW, *PSCANWINDOW
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddcdrm._CDROM_EXCLUSIVE_LOCK_STATE
-title : "_CDROM_EXCLUSIVE_LOCK_STATE"
-author : windows-driver-content
-description : The CDROM_EXCLUSIVE_LOCK_STATE structure is used by the CD-ROM class driver to report the exclusive access state of a CD-ROM device.
-old-location : storage\cdrom_exclusive_lock_state.htm
-old-project : storage
-ms.assetid : ea5e60d9-d167-4ad9-bef4-2ebb6c63184d
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : "*PCDROM_EXCLUSIVE_LOCK_STATE, ntddcdrm/CDROM_EXCLUSIVE_LOCK_STATE, ntddcdrm/PCDROM_EXCLUSIVE_LOCK_STATE, PCDROM_EXCLUSIVE_LOCK_STATE structure pointer [Storage Devices], CDROM_EXCLUSIVE_LOCK_STATE, storage.cdrom_exclusive_lock_state, PCDROM_EXCLUSIVE_LOCK_STATE, structs-CD-ROM_eeca8064-e141-4398-819e-451a80aca4c3.xml, CDROM_EXCLUSIVE_LOCK_STATE structure [Storage Devices], _CDROM_EXCLUSIVE_LOCK_STATE"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddcdrm.h
-req.include-header : Ntddcdrm.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PCDROM_EXCLUSIVE_LOCK_STATE, CDROM_EXCLUSIVE_LOCK_STATE"
+UID: NS:ntddcdrm._CDROM_EXCLUSIVE_LOCK_STATE
+title: "_CDROM_EXCLUSIVE_LOCK_STATE"
+author: windows-driver-content
+description: The CDROM_EXCLUSIVE_LOCK_STATE structure is used by the CD-ROM class driver to report the exclusive access state of a CD-ROM device.
+old-location: storage\cdrom_exclusive_lock_state.htm
+old-project: storage
+ms.assetid: ea5e60d9-d167-4ad9-bef4-2ebb6c63184d
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: "*PCDROM_EXCLUSIVE_LOCK_STATE, ntddcdrm/CDROM_EXCLUSIVE_LOCK_STATE, ntddcdrm/PCDROM_EXCLUSIVE_LOCK_STATE, PCDROM_EXCLUSIVE_LOCK_STATE structure pointer [Storage Devices], CDROM_EXCLUSIVE_LOCK_STATE, storage.cdrom_exclusive_lock_state, PCDROM_EXCLUSIVE_LOCK_STATE, structs-CD-ROM_eeca8064-e141-4398-819e-451a80aca4c3.xml, CDROM_EXCLUSIVE_LOCK_STATE structure [Storage Devices], _CDROM_EXCLUSIVE_LOCK_STATE"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddcdrm.h
+req.include-header: Ntddcdrm.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddcdrm.h
+apiname:
+-	CDROM_EXCLUSIVE_LOCK_STATE
+product: Windows
+targetos: Windows
+req.typenames: "*PCDROM_EXCLUSIVE_LOCK_STATE, CDROM_EXCLUSIVE_LOCK_STATE"
 ---
 
 # _CDROM_EXCLUSIVE_LOCK_STATE structure

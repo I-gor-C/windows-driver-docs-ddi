@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisFSendNetBufferListsComplete
-title : NdisFSendNetBufferListsComplete function
-author : windows-driver-content
-description : Filter drivers call the NdisFSendNetBufferListsComplete function to return a linked list of NET_BUFFER_LIST structures to an overlying driver and to return the final status of a send request.
-old-location : netvista\ndisfsendnetbufferlistscomplete.htm
-old-project : netvista
-ms.assetid : 5a9008eb-86ad-4e3c-85a2-c8fd1b8fb4cb
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.ndisfsendnetbufferlistscomplete, filter_ndis_functions_ref_376e31a2-453d-490e-83bb-b91b728f701f.xml, ndis/NdisFSendNetBufferListsComplete, NdisFSendNetBufferListsComplete, NdisFSendNetBufferListsComplete function [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_Filter_Driver_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisFSendNetBufferListsComplete
+title: NdisFSendNetBufferListsComplete function
+author: windows-driver-content
+description: Filter drivers call the NdisFSendNetBufferListsComplete function to return a linked list of NET_BUFFER_LIST structures to an overlying driver and to return the final status of a send request.
+old-location: netvista\ndisfsendnetbufferlistscomplete.htm
+old-project: netvista
+ms.assetid: 5a9008eb-86ad-4e3c-85a2-c8fd1b8fb4cb
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.ndisfsendnetbufferlistscomplete, filter_ndis_functions_ref_376e31a2-453d-490e-83bb-b91b728f701f.xml, ndis/NdisFSendNetBufferListsComplete, NdisFSendNetBufferListsComplete, NdisFSendNetBufferListsComplete function [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_Filter_Driver_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisFSendNetBufferListsComplete
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

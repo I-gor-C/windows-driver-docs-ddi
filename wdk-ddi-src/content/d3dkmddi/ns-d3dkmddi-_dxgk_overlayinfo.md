@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGK_OVERLAYINFO
-title : "_DXGK_OVERLAYINFO"
-author : windows-driver-content
-description : The DXGK_OVERLAYINFO structure describes parameters that are required to create or modify an overlay.
-old-location : display\dxgk_overlayinfo.htm
-old-project : display
-ms.assetid : 7c2a7484-452f-4801-b650-3d8221740892
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3dkmddi/DXGK_OVERLAYINFO, _DXGK_OVERLAYINFO, DmStructs_232178f2-9a25-40aa-8604-0414128c1a91.xml, DXGK_OVERLAYINFO structure [Display Devices], DXGK_OVERLAYINFO, display.dxgk_overlayinfo
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_OVERLAYINFO
+UID: NS:d3dkmddi._DXGK_OVERLAYINFO
+title: "_DXGK_OVERLAYINFO"
+author: windows-driver-content
+description: The DXGK_OVERLAYINFO structure describes parameters that are required to create or modify an overlay.
+old-location: display\dxgk_overlayinfo.htm
+old-project: display
+ms.assetid: 7c2a7484-452f-4801-b650-3d8221740892
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3dkmddi/DXGK_OVERLAYINFO, _DXGK_OVERLAYINFO, DmStructs_232178f2-9a25-40aa-8604-0414128c1a91.xml, DXGK_OVERLAYINFO structure [Display Devices], DXGK_OVERLAYINFO, display.dxgk_overlayinfo
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DXGK_OVERLAYINFO
+product: Windows
+targetos: Windows
+req.typenames: DXGK_OVERLAYINFO
 ---
 
 # _DXGK_OVERLAYINFO structure

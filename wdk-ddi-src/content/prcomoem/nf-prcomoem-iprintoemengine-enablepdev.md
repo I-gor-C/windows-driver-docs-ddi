@@ -1,42 +1,47 @@
 ---
-UID : NF:prcomoem.IPrintOemEngine.EnablePDEV
-title : IPrintOemEngine::EnablePDEV method
-author : windows-driver-content
-description : "."
-old-location : print\iprintoemengine_enablepdev.htm
-old-project : print
-ms.assetid : F84B7A8F-5B75-4E2F-93EB-AFFE24637647
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : EnablePDEV method [Print Devices], IPrintOemEngine interface, IPrintOemEngine interface [Print Devices], EnablePDEV method, EnablePDEV, print.iprintoemengine_enablepdev, IPrintOemEngine, prcomoem/IPrintOemEngine::EnablePDEV, IPrintOemEngine::EnablePDEV, EnablePDEV method [Print Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : prcomoem.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : prcomoem.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : OEMPTOPTS, *POEMPTOPTS
-req.product : Windows 10 or later.
+UID: NF:prcomoem.IPrintOemEngine.EnablePDEV
+title: IPrintOemEngine::EnablePDEV method
+author: windows-driver-content
+description: "."
+old-location: print\iprintoemengine_enablepdev.htm
+old-project: print
+ms.assetid: F84B7A8F-5B75-4E2F-93EB-AFFE24637647
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: EnablePDEV method [Print Devices], IPrintOemEngine interface, IPrintOemEngine interface [Print Devices], EnablePDEV method, EnablePDEV, print.iprintoemengine_enablepdev, IPrintOemEngine, prcomoem/IPrintOemEngine::EnablePDEV, IPrintOemEngine::EnablePDEV, EnablePDEV method [Print Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: prcomoem.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: prcomoem.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Prcomoem.h
+apiname:
+-	IPrintOemEngine.EnablePDEV
+product: Windows
+targetos: Windows
+req.typenames: OEMPTOPTS, *POEMPTOPTS
+req.product: Windows 10 or later.
 ---
 
 

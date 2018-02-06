@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltInitializeFileLock
-title : FltInitializeFileLock function
-author : windows-driver-content
-description : The FltInitializeFileLock routine initializes an opaque FILE_LOCK structure that the caller has allocated from paged pool.
-old-location : ifsk\fltinitializefilelock.htm
-old-project : ifsk
-ms.assetid : 84bfec05-9d77-433e-bec2-ad188269fc61
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.fltinitializefilelock, FltInitializeFileLock, FltInitializeFileLock routine [Installable File System Drivers], FltApiRef_e_to_o_8e2110a7-bc7b-4a98-b094-c6a7a12e7900.xml, fltkernel/FltInitializeFileLock
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with  Windows XP with SP2 or Windows Server 2003 with SP1.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltInitializeFileLock
+title: FltInitializeFileLock function
+author: windows-driver-content
+description: The FltInitializeFileLock routine initializes an opaque FILE_LOCK structure that the caller has allocated from paged pool.
+old-location: ifsk\fltinitializefilelock.htm
+old-project: ifsk
+ms.assetid: 84bfec05-9d77-433e-bec2-ad188269fc61
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.fltinitializefilelock, FltInitializeFileLock, FltInitializeFileLock routine [Installable File System Drivers], FltApiRef_e_to_o_8e2110a7-bc7b-4a98-b094-c6a7a12e7900.xml, fltkernel/FltInitializeFileLock
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with  Windows XP with SP2 or Windows Server 2003 with SP1.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltInitializeFileLock
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

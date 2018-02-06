@@ -1,42 +1,48 @@
 ---
-UID : NF:wdm.ClfsLsnLess
-title : ClfsLsnLess function
-author : windows-driver-content
-description : The ClfsLsnLess routine determines whether one LSN is less than another LSN. The two LSNs must be from the same stream.
-old-location : kernel\clfslsnless.htm
-old-project : kernel
-ms.assetid : fbdf6e86-35a1-48a8-966a-0e5472466da2
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : Clfs_5e0196f1-8244-4cf9-aa36-7359e52ff43b.xml, wdm/ClfsLsnLess, kernel.clfslsnless, ClfsLsnLess, ClfsLsnLess routine [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Clfs.lib
-req.dll : Clfs.sys
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ClfsLsnLess
+title: ClfsLsnLess function
+author: windows-driver-content
+description: The ClfsLsnLess routine determines whether one LSN is less than another LSN. The two LSNs must be from the same stream.
+old-location: kernel\clfslsnless.htm
+old-project: kernel
+ms.assetid: fbdf6e86-35a1-48a8-966a-0e5472466da2
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: Clfs_5e0196f1-8244-4cf9-aa36-7359e52ff43b.xml, wdm/ClfsLsnLess, kernel.clfslsnless, ClfsLsnLess, ClfsLsnLess routine [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Clfs.lib
+req.dll: Clfs.sys
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Clfs.sys
+-	Ext-MS-Win-fs-clfs-l1-1-0.dll
+apiname:
+-	ClfsLsnLess
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

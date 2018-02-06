@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsStreamPointerGetIrp
-title : KsStreamPointerGetIrp function
-author : windows-driver-content
-description : The KsStreamPointerGetIrp function returns the IRP associated with the frame that is referenced by the given stream pointer.
-old-location : stream\ksstreampointergetirp.htm
-old-project : stream
-ms.assetid : 3ed4ed2f-66be-4429-b2d6-2d9d3f9bcf3e
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KsStreamPointerGetIrp, KsStreamPointerGetIrp function [Streaming Media Devices], stream.ksstreampointergetirp, avfunc_57ecd1af-c967-473c-b475-1d91bc42f2eb.xml, ks/KsStreamPointerGetIrp
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsStreamPointerGetIrp
+title: KsStreamPointerGetIrp function
+author: windows-driver-content
+description: The KsStreamPointerGetIrp function returns the IRP associated with the frame that is referenced by the given stream pointer.
+old-location: stream\ksstreampointergetirp.htm
+old-project: stream
+ms.assetid: 3ed4ed2f-66be-4429-b2d6-2d9d3f9bcf3e
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KsStreamPointerGetIrp, KsStreamPointerGetIrp function [Streaming Media Devices], stream.ksstreampointergetirp, avfunc_57ecd1af-c967-473c-b475-1d91bc42f2eb.xml, ks/KsStreamPointerGetIrp
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsStreamPointerGetIrp
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

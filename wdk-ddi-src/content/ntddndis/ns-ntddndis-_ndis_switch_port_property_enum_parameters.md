@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddndis._NDIS_SWITCH_PORT_PROPERTY_ENUM_PARAMETERS
-title : "_NDIS_SWITCH_PORT_PROPERTY_ENUM_PARAMETERS"
-author : windows-driver-content
-description : The NDIS_SWITCH_PORT_PROPERTY_ENUM_PARAMETERS structure specifies an array of policy properties for a Hyper-V extensible switch port. Each element in the array is formatted as an NDIS_SWITCH_PORT_PROPERTY_ENUM_INFO structure.
-old-location : netvista\ndis_switch_port_property_enum_parameters.htm
-old-project : netvista
-ms.assetid : 026b86e0-dd71-4073-93f0-2f93777b1af1
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : ntddndis/PNDIS_SWITCH_PORT_PROPERTY_ENUM_PARAMETERS, *PNDIS_SWITCH_PORT_PROPERTY_ENUM_PARAMETERS, netvista.ndis_switch_port_property_enum_parameters, NDIS_SWITCH_PORT_PROPERTY_ENUM_PARAMETERS, NDIS_SWITCH_PORT_PROPERTY_ENUM_PARAMETERS structure [Network Drivers Starting with Windows Vista], PNDIS_SWITCH_PORT_PROPERTY_ENUM_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], _NDIS_SWITCH_PORT_PROPERTY_ENUM_PARAMETERS, PNDIS_SWITCH_PORT_PROPERTY_ENUM_PARAMETERS, ntddndis/NDIS_SWITCH_PORT_PROPERTY_ENUM_PARAMETERS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.30 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SWITCH_PORT_PROPERTY_ENUM_PARAMETERS, *PNDIS_SWITCH_PORT_PROPERTY_ENUM_PARAMETERS
+UID: NS:ntddndis._NDIS_SWITCH_PORT_PROPERTY_ENUM_PARAMETERS
+title: "_NDIS_SWITCH_PORT_PROPERTY_ENUM_PARAMETERS"
+author: windows-driver-content
+description: The NDIS_SWITCH_PORT_PROPERTY_ENUM_PARAMETERS structure specifies an array of policy properties for a Hyper-V extensible switch port. Each element in the array is formatted as an NDIS_SWITCH_PORT_PROPERTY_ENUM_INFO structure.
+old-location: netvista\ndis_switch_port_property_enum_parameters.htm
+old-project: netvista
+ms.assetid: 026b86e0-dd71-4073-93f0-2f93777b1af1
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: ntddndis/PNDIS_SWITCH_PORT_PROPERTY_ENUM_PARAMETERS, *PNDIS_SWITCH_PORT_PROPERTY_ENUM_PARAMETERS, netvista.ndis_switch_port_property_enum_parameters, NDIS_SWITCH_PORT_PROPERTY_ENUM_PARAMETERS, NDIS_SWITCH_PORT_PROPERTY_ENUM_PARAMETERS structure [Network Drivers Starting with Windows Vista], PNDIS_SWITCH_PORT_PROPERTY_ENUM_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], _NDIS_SWITCH_PORT_PROPERTY_ENUM_PARAMETERS, PNDIS_SWITCH_PORT_PROPERTY_ENUM_PARAMETERS, ntddndis/NDIS_SWITCH_PORT_PROPERTY_ENUM_PARAMETERS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.30 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddndis.h
+apiname:
+-	NDIS_SWITCH_PORT_PROPERTY_ENUM_PARAMETERS
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SWITCH_PORT_PROPERTY_ENUM_PARAMETERS, *PNDIS_SWITCH_PORT_PROPERTY_ENUM_PARAMETERS
 ---
 
 # _NDIS_SWITCH_PORT_PROPERTY_ENUM_PARAMETERS structure

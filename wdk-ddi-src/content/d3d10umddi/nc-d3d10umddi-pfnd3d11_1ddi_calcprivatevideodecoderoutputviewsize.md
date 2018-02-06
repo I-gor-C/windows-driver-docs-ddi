@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3D11_1DDI_CALCPRIVATEVIDEODECODEROUTPUTVIEWSIZE
-title : PFND3D11_1DDI_CALCPRIVATEVIDEODECODEROUTPUTVIEWSIZE
-author : windows-driver-content
-description : Returns the number of bytes that the driver requires to store private data for the video decoder view state.
-old-location : display\calcprivatevideodecoderoutputviewsize.htm
-old-project : display
-ms.assetid : d8daa501-13cf-4fba-ab98-b1a2d0325ce1
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.calcprivatevideodecoderoutputviewsize, CalcPrivateVideoDecoderOutputViewSize callback function [Display Devices], CalcPrivateVideoDecoderOutputViewSize, PFND3D11_1DDI_CALCPRIVATEVIDEODECODEROUTPUTVIEWSIZE, PFND3D11_1DDI_CALCPRIVATEVIDEODECODEROUTPUTVIEWSIZE, d3d10umddi/CalcPrivateVideoDecoderOutputViewSize
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3D11_1DDI_CALCPRIVATEVIDEODECODEROUTPUTVIEWSIZE
+title: PFND3D11_1DDI_CALCPRIVATEVIDEODECODEROUTPUTVIEWSIZE
+author: windows-driver-content
+description: Returns the number of bytes that the driver requires to store private data for the video decoder view state.
+old-location: display\calcprivatevideodecoderoutputviewsize.htm
+old-project: display
+ms.assetid: d8daa501-13cf-4fba-ab98-b1a2d0325ce1
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.calcprivatevideodecoderoutputviewsize, CalcPrivateVideoDecoderOutputViewSize callback function [Display Devices], CalcPrivateVideoDecoderOutputViewSize, PFND3D11_1DDI_CALCPRIVATEVIDEODECODEROUTPUTVIEWSIZE, PFND3D11_1DDI_CALCPRIVATEVIDEODECODEROUTPUTVIEWSIZE, d3d10umddi/CalcPrivateVideoDecoderOutputViewSize
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	D3d10umddi.h
+apiname:
+-	CalcPrivateVideoDecoderOutputViewSize
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmthk._D3DKMT_RENDER
-title : "_D3DKMT_RENDER"
-author : windows-driver-content
-description : The D3DKMT_RENDER structure describes the current command buffer to be rendered.
-old-location : display\d3dkmt_render.htm
-old-project : display
-ms.assetid : 8e45c4cb-3635-403b-8a91-71af6605c3be
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.d3dkmt_render, d3dkmthk/D3DKMT_RENDER, OpenGL_Structs_9da3b8d2-479c-4d6d-ba5c-70aa171121e3.xml, D3DKMT_RENDER, _D3DKMT_RENDER, D3DKMT_RENDER structure [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_RENDER
+UID: NS:d3dkmthk._D3DKMT_RENDER
+title: "_D3DKMT_RENDER"
+author: windows-driver-content
+description: The D3DKMT_RENDER structure describes the current command buffer to be rendered.
+old-location: display\d3dkmt_render.htm
+old-project: display
+ms.assetid: 8e45c4cb-3635-403b-8a91-71af6605c3be
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.d3dkmt_render, d3dkmthk/D3DKMT_RENDER, OpenGL_Structs_9da3b8d2-479c-4d6d-ba5c-70aa171121e3.xml, D3DKMT_RENDER, _D3DKMT_RENDER, D3DKMT_RENDER structure [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmthk.h
+apiname:
+-	D3DKMT_RENDER
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_RENDER
 ---
 
 # _D3DKMT_RENDER structure

@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfcontrol.WdfControlDeviceInitSetShutdownNotification
-title : WdfControlDeviceInitSetShutdownNotification function
-author : windows-driver-content
-description : The WdfControlDeviceInitSetShutdownNotification method sets shutdown notification information for a control device object.
-old-location : wdf\wdfcontroldeviceinitsetshutdownnotification.htm
-old-project : wdf
-ms.assetid : 43a5a017-f5de-4906-acbb-96419b4a3f1c
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WdfControlDeviceInitSetShutdownNotification method, wdf.wdfcontroldeviceinitsetshutdownnotification, wdfcontrol/WdfControlDeviceInitSetShutdownNotification, kmdf.wdfcontroldeviceinitsetshutdownnotification, PFN_WDFCONTROLDEVICEINITSETSHUTDOWNNOTIFICATION, WdfControlDeviceInitSetShutdownNotification, DFDeviceObjectControllerDevObjRef_ee736de4-6e27-46d9-8f83-40d7368c960a.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfcontrol.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : ControlDeviceInitAPI, DriverCreate, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_DEVICE_SHUTDOWN_FLAGS
-req.product : Windows 10 or later.
+UID: NF:wdfcontrol.WdfControlDeviceInitSetShutdownNotification
+title: WdfControlDeviceInitSetShutdownNotification function
+author: windows-driver-content
+description: The WdfControlDeviceInitSetShutdownNotification method sets shutdown notification information for a control device object.
+old-location: wdf\wdfcontroldeviceinitsetshutdownnotification.htm
+old-project: wdf
+ms.assetid: 43a5a017-f5de-4906-acbb-96419b4a3f1c
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WdfControlDeviceInitSetShutdownNotification method, wdf.wdfcontroldeviceinitsetshutdownnotification, wdfcontrol/WdfControlDeviceInitSetShutdownNotification, kmdf.wdfcontroldeviceinitsetshutdownnotification, PFN_WDFCONTROLDEVICEINITSETSHUTDOWNNOTIFICATION, WdfControlDeviceInitSetShutdownNotification, DFDeviceObjectControllerDevObjRef_ee736de4-6e27-46d9-8f83-40d7368c960a.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfcontrol.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: ControlDeviceInitAPI, DriverCreate, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfControlDeviceInitSetShutdownNotification
+product: Windows
+targetos: Windows
+req.typenames: WDF_DEVICE_SHUTDOWN_FLAGS
+req.product: Windows 10 or later.
 ---
 
 

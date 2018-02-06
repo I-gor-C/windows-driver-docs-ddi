@@ -1,41 +1,46 @@
 ---
-UID : NS:ksproxy._KSSTREAM_SEGMENT
-title : "_KSSTREAM_SEGMENT"
-author : windows-driver-content
-description : The KSSTREAM_SEGMENT structure contains information that describes an I/O operation occurring on a stream.
-old-location : stream\ksstream_segment.htm
-old-project : stream
-ms.assetid : 433b1346-f0f1-46f7-a1d8-e6397b2f7f05
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ksproxy/KSSTREAM_SEGMENT, *PKSSTREAM_SEGMENT, _KSSTREAM_SEGMENT, KSSTREAM_SEGMENT structure [Streaming Media Devices], ksproxy_ce88ef52-d88e-4dc8-952d-53dce519518f.xml, stream.ksstream_segment, KSSTREAM_SEGMENT, ksproxy/PKSSTREAM_SEGMENT, PKSSTREAM_SEGMENT, PKSSTREAM_SEGMENT structure pointer [Streaming Media Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksproxy.h
-req.include-header : Ksproxy.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKSSTREAM_SEGMENT, KSSTREAM_SEGMENT"
+UID: NS:ksproxy._KSSTREAM_SEGMENT
+title: "_KSSTREAM_SEGMENT"
+author: windows-driver-content
+description: The KSSTREAM_SEGMENT structure contains information that describes an I/O operation occurring on a stream.
+old-location: stream\ksstream_segment.htm
+old-project: stream
+ms.assetid: 433b1346-f0f1-46f7-a1d8-e6397b2f7f05
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ksproxy/KSSTREAM_SEGMENT, *PKSSTREAM_SEGMENT, _KSSTREAM_SEGMENT, KSSTREAM_SEGMENT structure [Streaming Media Devices], ksproxy_ce88ef52-d88e-4dc8-952d-53dce519518f.xml, stream.ksstream_segment, KSSTREAM_SEGMENT, ksproxy/PKSSTREAM_SEGMENT, PKSSTREAM_SEGMENT, PKSSTREAM_SEGMENT structure pointer [Streaming Media Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksproxy.h
+req.include-header: Ksproxy.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksproxy.h
+apiname:
+-	KSSTREAM_SEGMENT
+product: Windows
+targetos: Windows
+req.typenames: "*PKSSTREAM_SEGMENT, KSSTREAM_SEGMENT"
 ---
 
 # _KSSTREAM_SEGMENT structure

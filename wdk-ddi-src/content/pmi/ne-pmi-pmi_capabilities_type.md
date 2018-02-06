@@ -1,41 +1,46 @@
 ---
-UID : NE:pmi.PMI_CAPABILITIES_TYPE
-title : PMI_CAPABILITIES_TYPE
-author : windows-driver-content
-description : The PMI_CAPABILITIES_TYPE enumeration defines the type of capabilities data that is referenced by the Capability member of the PMI_CAPABILITIES structure.
-old-location : powermeter\pmi_capabilities_type.htm
-old-project : powermeter
-ms.assetid : 6857f85b-c79a-4e80-a63f-1414aff61d1f
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : PmiCapabilitiesMax, PmiMeteredHardware, pmi/PmiCapabilitiesMax, PmiReportedCapabilities, PMI_CAPABILITIES_TYPE enumeration [Power Metering and Budgeting Devices], pmi/PmiMeteredHardware, pmi/PmiReportedCapabilities, powermeter.pmi_capabilities_type, PMI_CAPABILITIES_TYPE, pmi/PMI_CAPABILITIES_TYPE, PowerMeterRef_4b81a5dd-357b-4a02-acc6-3a0538cbeffb.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : pmi.h
-req.include-header : Pmi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7, Windows Server 2008 R2, and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PMI_CAPABILITIES_TYPE
+UID: NE:pmi.PMI_CAPABILITIES_TYPE
+title: PMI_CAPABILITIES_TYPE
+author: windows-driver-content
+description: The PMI_CAPABILITIES_TYPE enumeration defines the type of capabilities data that is referenced by the Capability member of the PMI_CAPABILITIES structure.
+old-location: powermeter\pmi_capabilities_type.htm
+old-project: powermeter
+ms.assetid: 6857f85b-c79a-4e80-a63f-1414aff61d1f
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: PmiCapabilitiesMax, PmiMeteredHardware, pmi/PmiCapabilitiesMax, PmiReportedCapabilities, PMI_CAPABILITIES_TYPE enumeration [Power Metering and Budgeting Devices], pmi/PmiMeteredHardware, pmi/PmiReportedCapabilities, powermeter.pmi_capabilities_type, PMI_CAPABILITIES_TYPE, pmi/PMI_CAPABILITIES_TYPE, PowerMeterRef_4b81a5dd-357b-4a02-acc6-3a0538cbeffb.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: pmi.h
+req.include-header: Pmi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7, Windows Server 2008 R2, and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	pmi.h
+apiname:
+-	PMI_CAPABILITIES_TYPE
+product: Windows
+targetos: Windows
+req.typenames: PMI_CAPABILITIES_TYPE
 ---
 
 # PMI_CAPABILITIES_TYPE Enumeration
@@ -53,26 +58,26 @@ typedef enum  {
 ## Constants
 
 <table>
-
-<tr>
-<td>PmiCapabilitiesMax</td>
-<td>The maximum number of PMI capability structures.</td>
-</tr>
-
-<tr>
-<td>PmiMeteredHardware</td>
-<td>The PMI capabilities data, formatted as a <a href="..\pmi\ns-pmi-_pmi_metered_hardware_information.md">PMI_METERED_HARDWARE_INFORMATION</a> structure, specifies the hardware devices that the power meter provides measurement data to.</td>
-</tr>
-
-<tr>
-<td>PmiReportedCapabilities</td>
-<td>The PMI capabilities data, formatted as a <a href="..\pmi\ns-pmi-_pmi_reported_capabilities.md">PMI_REPORTED_CAPABILITIES</a> structure, specifies the power capabilities of the power meter.</td>
-</tr>
+            
+                <tr>
+                    <td>PmiCapabilitiesMax</td>
+                    <td>The maximum number of PMI capability structures.</td>
+                </tr>
+            
+                <tr>
+                    <td>PmiMeteredHardware</td>
+                    <td>The PMI capabilities data, formatted as a <a href="..\pmi\ns-pmi-_pmi_metered_hardware_information.md">PMI_METERED_HARDWARE_INFORMATION</a> structure, specifies the hardware devices that the power meter provides measurement data to.</td>
+                </tr>
+            
+                <tr>
+                    <td>PmiReportedCapabilities</td>
+                    <td>The PMI capabilities data, formatted as a <a href="..\pmi\ns-pmi-_pmi_reported_capabilities.md">PMI_REPORTED_CAPABILITIES</a> structure, specifies the power capabilities of the power meter.</td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-The <b>CapabilityType</b> member of the <a href="..\pmi\ns-pmi-_pmi_capabilities.md">PMI_CAPABILITIES</a> structure contains information about the type of PMI capability data that is referenced by the <b>Capabilities</b> member of that structure. This structure is returned through a successful completion of an <a href="..\pmi\ni-pmi-ioctl_pmi_get_capabilities.md">IOCTL_PMI_GET_CAPABILITIES</a> IOCTL request.
+        The <b>CapabilityType</b> member of the <a href="..\pmi\ns-pmi-_pmi_capabilities.md">PMI_CAPABILITIES</a> structure contains information about the type of PMI capability data that is referenced by the <b>Capabilities</b> member of that structure. This structure is returned through a successful completion of an <a href="..\pmi\ni-pmi-ioctl_pmi_get_capabilities.md">IOCTL_PMI_GET_CAPABILITIES</a> IOCTL request.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -80,9 +85,9 @@ The <b>CapabilityType</b> member of the <a href="..\pmi\ns-pmi-_pmi_capabilities
 | **Windows version** | Available in Windows 7, Windows Server 2008 R2, and later versions of the Windows operating systems. Available in Windows 7, Windows Server 2008 R2, and later versions of the Windows operating systems. |
 | **Header** | pmi.h (include Pmi.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\pmi\ns-pmi-_pmi_metered_hardware_information.md">PMI_METERED_HARDWARE_INFORMATION</a>
+        <a href="..\pmi\ns-pmi-_pmi_metered_hardware_information.md">PMI_METERED_HARDWARE_INFORMATION</a>
 
 <a href="..\pmi\ni-pmi-ioctl_pmi_get_capabilities.md">IOCTL_PMI_GET_CAPABILITIES</a>
 

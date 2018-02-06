@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddk._BDCB_STATUS_UPDATE_CONTEXT
-title : "_BDCB_STATUS_UPDATE_CONTEXT"
-author : windows-driver-content
-description : The BDCB_STATUS_UPDATE_CONTEXT structure describes a status update provided by Windows to a boot-start driver's BOOT_DRIVER_CALLBACK_FUNCTION routine.
-old-location : kernel\bdcb_status_update_context.htm
-old-project : kernel
-ms.assetid : 5DB29B81-2D7A-44FA-B5A9-FEF87C6A926D
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : BDCB_STATUS_UPDATE_CONTEXT, ntddk/PBDCB_STATUS_UPDATE_CONTEXT, BDCB_STATUS_UPDATE_CONTEXT structure [Kernel-Mode Driver Architecture], *PBDCB_STATUS_UPDATE_CONTEXT, ntddk/BDCB_STATUS_UPDATE_CONTEXT, _BDCB_STATUS_UPDATE_CONTEXT, PBDCB_STATUS_UPDATE_CONTEXT structure pointer [Kernel-Mode Driver Architecture], kernel.bdcb_status_update_context, PBDCB_STATUS_UPDATE_CONTEXT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with  Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PBDCB_STATUS_UPDATE_CONTEXT, BDCB_STATUS_UPDATE_CONTEXT"
+UID: NS:ntddk._BDCB_STATUS_UPDATE_CONTEXT
+title: "_BDCB_STATUS_UPDATE_CONTEXT"
+author: windows-driver-content
+description: The BDCB_STATUS_UPDATE_CONTEXT structure describes a status update provided by Windows to a boot-start driver's BOOT_DRIVER_CALLBACK_FUNCTION routine.
+old-location: kernel\bdcb_status_update_context.htm
+old-project: kernel
+ms.assetid: 5DB29B81-2D7A-44FA-B5A9-FEF87C6A926D
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: BDCB_STATUS_UPDATE_CONTEXT, ntddk/PBDCB_STATUS_UPDATE_CONTEXT, BDCB_STATUS_UPDATE_CONTEXT structure [Kernel-Mode Driver Architecture], *PBDCB_STATUS_UPDATE_CONTEXT, ntddk/BDCB_STATUS_UPDATE_CONTEXT, _BDCB_STATUS_UPDATE_CONTEXT, PBDCB_STATUS_UPDATE_CONTEXT structure pointer [Kernel-Mode Driver Architecture], kernel.bdcb_status_update_context, PBDCB_STATUS_UPDATE_CONTEXT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with  Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddk.h
+apiname:
+-	BDCB_STATUS_UPDATE_CONTEXT
+product: Windows
+targetos: Windows
+req.typenames: "*PBDCB_STATUS_UPDATE_CONTEXT, BDCB_STATUS_UPDATE_CONTEXT"
 ---
 
 # _BDCB_STATUS_UPDATE_CONTEXT structure

@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFDeviceInitialize2.SetIoTypePreference
-title : IWDFDeviceInitialize2::SetIoTypePreference method
-author : windows-driver-content
-description : The SetIoTypePreference method specifies your preferences for how UMDF and the driver access the data buffers of a device's I/O requests.
-old-location : wdf\iwdfdeviceinitialize2_setiotypepreference.htm
-old-project : wdf
-ms.assetid : 7d79f34d-42aa-4ac7-a63d-2f17ee0dfcf0
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wudfddi/IWDFDeviceInitialize2::SetIoTypePreference, IWDFDeviceInitialize2, IWDFDeviceInitialize2::SetIoTypePreference, SetIoTypePreference, UMDFDeviceObjectRef_33317875-3e52-47fc-9d6b-0e886f802dde.xml, SetIoTypePreference method, wdf.iwdfdeviceinitialize2_setiotypepreference, umdf.iwdfdeviceinitialize2_setiotypepreference, SetIoTypePreference method, IWDFDeviceInitialize2 interface, IWDFDeviceInitialize2 interface, SetIoTypePreference method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.9
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFDeviceInitialize2.SetIoTypePreference
+title: IWDFDeviceInitialize2::SetIoTypePreference method
+author: windows-driver-content
+description: The SetIoTypePreference method specifies your preferences for how UMDF and the driver access the data buffers of a device's I/O requests.
+old-location: wdf\iwdfdeviceinitialize2_setiotypepreference.htm
+old-project: wdf
+ms.assetid: 7d79f34d-42aa-4ac7-a63d-2f17ee0dfcf0
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wudfddi/IWDFDeviceInitialize2::SetIoTypePreference, IWDFDeviceInitialize2, IWDFDeviceInitialize2::SetIoTypePreference, SetIoTypePreference, UMDFDeviceObjectRef_33317875-3e52-47fc-9d6b-0e886f802dde.xml, SetIoTypePreference method, wdf.iwdfdeviceinitialize2_setiotypepreference, umdf.iwdfdeviceinitialize2_setiotypepreference, SetIoTypePreference method, IWDFDeviceInitialize2 interface, IWDFDeviceInitialize2 interface, SetIoTypePreference method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.9
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFDeviceInitialize2.SetIoTypePreference
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

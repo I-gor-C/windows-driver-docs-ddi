@@ -1,41 +1,46 @@
 ---
-UID : NS:ndis._NDIS_OID_REQUEST
-title : "_NDIS_OID_REQUEST"
-author : windows-driver-content
-description : To query or set OID information, NDIS submits NDIS_OID_REQUEST structures to filter drivers and miniport drivers.
-old-location : netvista\ndis_oid_request.htm
-old-project : netvista
-ms.assetid : 3a5e151d-2a2d-4477-a736-8a5f3d3820a2
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : ndis/PNDIS_OID_REQUEST, ndis/NDIS_OID_REQUEST, _NDIS_OID_REQUEST, PNDIS_OID_REQUEST, netvista.ndis_oid_request, ndis_request_ref_c431d090-b403-40a7-90de-5f47ca6213f4.xml, PNDIS_OID_REQUEST structure pointer [Network Drivers Starting with Windows Vista], NDIS_OID_REQUEST structure [Network Drivers Starting with Windows Vista], *PNDIS_OID_REQUEST, NDIS_OID_REQUEST
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : See Remarks section
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_OID_REQUEST, *PNDIS_OID_REQUEST
+UID: NS:ndis._NDIS_OID_REQUEST
+title: "_NDIS_OID_REQUEST"
+author: windows-driver-content
+description: To query or set OID information, NDIS submits NDIS_OID_REQUEST structures to filter drivers and miniport drivers.
+old-location: netvista\ndis_oid_request.htm
+old-project: netvista
+ms.assetid: 3a5e151d-2a2d-4477-a736-8a5f3d3820a2
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: ndis/PNDIS_OID_REQUEST, ndis/NDIS_OID_REQUEST, _NDIS_OID_REQUEST, PNDIS_OID_REQUEST, netvista.ndis_oid_request, ndis_request_ref_c431d090-b403-40a7-90de-5f47ca6213f4.xml, PNDIS_OID_REQUEST structure pointer [Network Drivers Starting with Windows Vista], NDIS_OID_REQUEST structure [Network Drivers Starting with Windows Vista], *PNDIS_OID_REQUEST, NDIS_OID_REQUEST
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: See Remarks section
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndis.h
+apiname:
+-	NDIS_OID_REQUEST
+product: Windows
+targetos: Windows
+req.typenames: NDIS_OID_REQUEST, *PNDIS_OID_REQUEST
 ---
 
 # _NDIS_OID_REQUEST structure

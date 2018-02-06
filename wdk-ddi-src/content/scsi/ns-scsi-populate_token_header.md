@@ -1,42 +1,47 @@
 ---
-UID : NS:scsi.POPULATE_TOKEN_HEADER
-title : POPULATE_TOKEN_HEADER
-author : windows-driver-content
-description : A populate token parameter list starts with a POPULATE_TOKEN_HEADER structure. This is the header for the parameters in a command data block (CDB) of the POPULATE TOKEN command.
-old-location : storage\populate_token_header.htm
-old-project : storage
-ms.assetid : 897C74A3-041D-487E-8891-7161B76ABAA1
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : PPOPULATE_TOKEN_HEADER structure pointer [Storage Devices], PPOPULATE_TOKEN_HEADER, POPULATE_TOKEN_HEADER structure [Storage Devices], scsi/POPULATE_TOKEN_HEADER, scsi/PPOPULATE_TOKEN_HEADER, storage.populate_token_header, POPULATE_TOKEN_HEADER, *PPOPULATE_TOKEN_HEADER
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : scsi.h
-req.include-header : Scsi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POPULATE_TOKEN_HEADER, *PPOPULATE_TOKEN_HEADER
-req.product : Windows 10 or later.
+UID: NS:scsi.POPULATE_TOKEN_HEADER
+title: POPULATE_TOKEN_HEADER
+author: windows-driver-content
+description: A populate token parameter list starts with a POPULATE_TOKEN_HEADER structure. This is the header for the parameters in a command data block (CDB) of the POPULATE TOKEN command.
+old-location: storage\populate_token_header.htm
+old-project: storage
+ms.assetid: 897C74A3-041D-487E-8891-7161B76ABAA1
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: PPOPULATE_TOKEN_HEADER structure pointer [Storage Devices], PPOPULATE_TOKEN_HEADER, POPULATE_TOKEN_HEADER structure [Storage Devices], scsi/POPULATE_TOKEN_HEADER, scsi/PPOPULATE_TOKEN_HEADER, storage.populate_token_header, POPULATE_TOKEN_HEADER, *PPOPULATE_TOKEN_HEADER
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: scsi.h
+req.include-header: Scsi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	scsi.h
+apiname:
+-	POPULATE_TOKEN_HEADER
+product: Windows
+targetos: Windows
+req.typenames: POPULATE_TOKEN_HEADER, *PPOPULATE_TOKEN_HEADER
+req.product: Windows 10 or later.
 ---
 
 # POPULATE_TOKEN_HEADER structure

@@ -1,42 +1,47 @@
 ---
-UID : NS:wdm._CLS_WRITE_ENTRY
-title : "_CLS_WRITE_ENTRY"
-author : windows-driver-content
-description : The CLFS_WRITE_ENTRY structure holds the address and size of a buffer that contains one unit of data to be written to a Common Log File System (CLFS) stream.
-old-location : kernel\clfs_write_entry.htm
-old-project : kernel
-ms.assetid : 4b008fc7-35fe-40f9-8475-1a2ac04edb58
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : PPCLS_WRITE_ENTRY, _CLS_WRITE_ENTRY, PCLFS_WRITE_ENTRY structure pointer [Kernel-Mode Driver Architecture], wdm/PCLS_WRITE_ENTRY, CLFS_WRITE_ENTRY, CLS_WRITE_ENTRY, PPCLFS_WRITE_ENTRY structure pointer [Kernel-Mode Driver Architecture], PPCLS_WRITE_ENTRY structure pointer [Kernel-Mode Driver Architecture], kstruct_a_331b7685-f256-4071-8edf-e517afc2b8cc.xml, wdm/CLFS_WRITE_ENTRY, PPCLFS_WRITE_ENTRY, *PCLS_WRITE_ENTRY, CLS_WRITE_ENTRY structure [Kernel-Mode Driver Architecture], wdm/PPCLFS_WRITE_ENTRY, kernel.clfs_write_entry, PCLFS_WRITE_ENTRY, CLFS_WRITE_ENTRY structure [Kernel-Mode Driver Architecture], wdm/PPCLS_WRITE_ENTRY, PCLS_WRITE_ENTRY, *PCLFS_WRITE_ENTRY, PCLS_WRITE_ENTRY structure pointer [Kernel-Mode Driver Architecture], wdm/CLS_WRITE_ENTRY, wdm/PCLFS_WRITE_ENTRY
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : Wdm.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PPCLS_WRITE_ENTRY, CLS_WRITE_ENTRY, *PCLS_WRITE_ENTRY
-req.product : Windows 10 or later.
+UID: NS:wdm._CLS_WRITE_ENTRY
+title: "_CLS_WRITE_ENTRY"
+author: windows-driver-content
+description: The CLFS_WRITE_ENTRY structure holds the address and size of a buffer that contains one unit of data to be written to a Common Log File System (CLFS) stream.
+old-location: kernel\clfs_write_entry.htm
+old-project: kernel
+ms.assetid: 4b008fc7-35fe-40f9-8475-1a2ac04edb58
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: PPCLS_WRITE_ENTRY, _CLS_WRITE_ENTRY, PCLFS_WRITE_ENTRY structure pointer [Kernel-Mode Driver Architecture], wdm/PCLS_WRITE_ENTRY, CLFS_WRITE_ENTRY, CLS_WRITE_ENTRY, PPCLFS_WRITE_ENTRY structure pointer [Kernel-Mode Driver Architecture], PPCLS_WRITE_ENTRY structure pointer [Kernel-Mode Driver Architecture], kstruct_a_331b7685-f256-4071-8edf-e517afc2b8cc.xml, wdm/CLFS_WRITE_ENTRY, PPCLFS_WRITE_ENTRY, *PCLS_WRITE_ENTRY, CLS_WRITE_ENTRY structure [Kernel-Mode Driver Architecture], wdm/PPCLFS_WRITE_ENTRY, kernel.clfs_write_entry, PCLFS_WRITE_ENTRY, CLFS_WRITE_ENTRY structure [Kernel-Mode Driver Architecture], wdm/PPCLS_WRITE_ENTRY, PCLS_WRITE_ENTRY, *PCLFS_WRITE_ENTRY, PCLS_WRITE_ENTRY structure pointer [Kernel-Mode Driver Architecture], wdm/CLS_WRITE_ENTRY, wdm/PCLFS_WRITE_ENTRY
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: Wdm.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdm.h
+apiname:
+-	CLS_WRITE_ENTRY
+product: Windows
+targetos: Windows
+req.typenames: PPCLS_WRITE_ENTRY, CLS_WRITE_ENTRY, *PCLS_WRITE_ENTRY
+req.product: Windows 10 or later.
 ---
 
 # _CLS_WRITE_ENTRY structure

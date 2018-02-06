@@ -1,42 +1,47 @@
 ---
-UID : NS:wwan._WWAN_TDSCDMA_MRL_INFO
-title : "_WWAN_TDSCDMA_MRL_INFO"
-author : windows-driver-content
-description : The WWAN_TDSCDMA_MRL_INFO structure represents information about a neighboring TDSCDMA cell.
-old-location : netvista\wwan_tdscdma_mrl_info.htm
-old-project : netvista
-ms.assetid : 4EA0AE24-E4B0-49E0-8C50-44F6890C5C52
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : WWAN_TDSCDMA_MRL_INFO structure [Network Drivers Starting with Windows Vista], netvista.wwan_tdscdma_mrl_info, _WWAN_TDSCDMA_MRL_INFO, wwan/WWAN_TDSCDMA_MRL_INFO, PWWAN_TDSCDMA_MRL_INFO structure pointer [Network Drivers Starting with Windows Vista], wwan/PWWAN_TDSCDMA_MRL_INFO, *PWWAN_TDSCDMA_MRL_INFO, WWAN_TDSCDMA_MRL_INFO, PWWAN_TDSCDMA_MRL_INFO
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wwan.h
-req.include-header : Wwan.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10, version 1709
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WWAN_TDSCDMA_MRL_INFO, *PWWAN_TDSCDMA_MRL_INFO
-req.product : Windows 10 or later.
+UID: NS:wwan._WWAN_TDSCDMA_MRL_INFO
+title: "_WWAN_TDSCDMA_MRL_INFO"
+author: windows-driver-content
+description: The WWAN_TDSCDMA_MRL_INFO structure represents information about a neighboring TDSCDMA cell.
+old-location: netvista\wwan_tdscdma_mrl_info.htm
+old-project: netvista
+ms.assetid: 4EA0AE24-E4B0-49E0-8C50-44F6890C5C52
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: WWAN_TDSCDMA_MRL_INFO structure [Network Drivers Starting with Windows Vista], netvista.wwan_tdscdma_mrl_info, _WWAN_TDSCDMA_MRL_INFO, wwan/WWAN_TDSCDMA_MRL_INFO, PWWAN_TDSCDMA_MRL_INFO structure pointer [Network Drivers Starting with Windows Vista], wwan/PWWAN_TDSCDMA_MRL_INFO, *PWWAN_TDSCDMA_MRL_INFO, WWAN_TDSCDMA_MRL_INFO, PWWAN_TDSCDMA_MRL_INFO
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wwan.h
+req.include-header: Wwan.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10, version 1709
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wwan.h
+apiname:
+-	WWAN_TDSCDMA_MRL_INFO
+product: Windows
+targetos: Windows
+req.typenames: WWAN_TDSCDMA_MRL_INFO, *PWWAN_TDSCDMA_MRL_INFO
+req.product: Windows 10 or later.
 ---
 
 # _WWAN_TDSCDMA_MRL_INFO structure

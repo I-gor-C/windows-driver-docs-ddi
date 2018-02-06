@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddndis._NDIS_ISOLATION_NAME
-title : "_NDIS_ISOLATION_NAME"
-author : windows-driver-content
-description : The NDIS_ISOLATION_NAME structure contains an NDIS isolation name for a VM network adapter.
-old-location : netvista\ndis_isolation_name.htm
-old-project : netvista
-ms.assetid : 4712F853-8819-476C-8AD9-426EA5A0802E
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : ntddndis/NDIS_ISOLATION_NAME, NDIS_ISOLATION_NAME structure [Network Drivers Starting with Windows Vista], netvista.ndis_isolation_name, *PNDIS_ROUTING_DOMAIN_NAME, *PNDIS_ISOLATION_ID_NAME, NDIS_ROUTING_DOMAIN_NAME, _NDIS_ISOLATION_NAME, NDIS_ISOLATION_NAME, NDIS_ISOLATION_ID_NAME
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.40 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_ISOLATION_NAME
+UID: NS:ntddndis._NDIS_ISOLATION_NAME
+title: "_NDIS_ISOLATION_NAME"
+author: windows-driver-content
+description: The NDIS_ISOLATION_NAME structure contains an NDIS isolation name for a VM network adapter.
+old-location: netvista\ndis_isolation_name.htm
+old-project: netvista
+ms.assetid: 4712F853-8819-476C-8AD9-426EA5A0802E
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: ntddndis/NDIS_ISOLATION_NAME, NDIS_ISOLATION_NAME structure [Network Drivers Starting with Windows Vista], netvista.ndis_isolation_name, *PNDIS_ROUTING_DOMAIN_NAME, *PNDIS_ISOLATION_ID_NAME, NDIS_ROUTING_DOMAIN_NAME, _NDIS_ISOLATION_NAME, NDIS_ISOLATION_NAME, NDIS_ISOLATION_ID_NAME
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.40 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddndis.h
+apiname:
+-	NDIS_ISOLATION_NAME
+product: Windows
+targetos: Windows
+req.typenames: NDIS_ISOLATION_NAME
 ---
 
 # _NDIS_ISOLATION_NAME structure

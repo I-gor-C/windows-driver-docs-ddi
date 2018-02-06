@@ -1,41 +1,46 @@
 ---
-UID : NF:portcls.IServiceGroup.RemoveMember
-title : IServiceGroup::RemoveMember method
-author : windows-driver-content
-description : The RemoveMember method removes the specified member from the service group.
-old-location : audio\iservicegroup_removemember.htm
-old-project : audio
-ms.assetid : f257c861-036b-44d1-9f99-dc5c0ab6e715
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : IServiceGroup interface [Audio Devices], RemoveMember method, RemoveMember method [Audio Devices], IServiceGroup interface, audmp-routines_0b3fd59f-9233-4344-aa0c-f58505eee693.xml, portcls/IServiceGroup::RemoveMember, IServiceGroup, RemoveMember, IServiceGroup::RemoveMember, audio.iservicegroup_removemember, RemoveMember method [Audio Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : portcls.h
-req.include-header : Portcls.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : portcls.h
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.IServiceGroup.RemoveMember
+title: IServiceGroup::RemoveMember method
+author: windows-driver-content
+description: The RemoveMember method removes the specified member from the service group.
+old-location: audio\iservicegroup_removemember.htm
+old-project: audio
+ms.assetid: f257c861-036b-44d1-9f99-dc5c0ab6e715
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: IServiceGroup interface [Audio Devices], RemoveMember method, RemoveMember method [Audio Devices], IServiceGroup interface, audmp-routines_0b3fd59f-9233-4344-aa0c-f58505eee693.xml, portcls/IServiceGroup::RemoveMember, IServiceGroup, RemoveMember, IServiceGroup::RemoveMember, audio.iservicegroup_removemember, RemoveMember method [Audio Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: portcls.h
+req.include-header: Portcls.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: portcls.h
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	portcls.h
+apiname:
+-	IServiceGroup.RemoveMember
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

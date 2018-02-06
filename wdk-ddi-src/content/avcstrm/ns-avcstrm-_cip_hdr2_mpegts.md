@@ -1,41 +1,46 @@
 ---
-UID : NS:avcstrm._CIP_HDR2_MPEGTS
-title : "_CIP_HDR2_MPEGTS"
-author : windows-driver-content
-description : The CIP_HDR2_MPEGTS structure describes the second quadlet of a CIP header pair for an MPEGTS format stream.
-old-location : stream\cip_hdr2_mpegts.htm
-old-project : stream
-ms.assetid : e1f46926-8c2b-46ff-9adb-5332fba17e3b
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : avcsref_80577192-cbb5-401a-a840-5970841111ab.xml, CIP_HDR2_MPEGTS structure [Streaming Media Devices], avcstrm/CIP_HDR2_MPEGTS, _CIP_HDR2_MPEGTS, CIP_HDR2_MPEGTS, PCIP_HDR2_MPEGTS structure pointer [Streaming Media Devices], avcstrm/PCIP_HDR2_MPEGTS, *PCIP_HDR2_MPEGTS, PCIP_HDR2_MPEGTS, stream.cip_hdr2_mpegts
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : avcstrm.h
-req.include-header : Avcstrm.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PCIP_HDR2_MPEGTS, CIP_HDR2_MPEGTS"
+UID: NS:avcstrm._CIP_HDR2_MPEGTS
+title: "_CIP_HDR2_MPEGTS"
+author: windows-driver-content
+description: The CIP_HDR2_MPEGTS structure describes the second quadlet of a CIP header pair for an MPEGTS format stream.
+old-location: stream\cip_hdr2_mpegts.htm
+old-project: stream
+ms.assetid: e1f46926-8c2b-46ff-9adb-5332fba17e3b
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: avcsref_80577192-cbb5-401a-a840-5970841111ab.xml, CIP_HDR2_MPEGTS structure [Streaming Media Devices], avcstrm/CIP_HDR2_MPEGTS, _CIP_HDR2_MPEGTS, CIP_HDR2_MPEGTS, PCIP_HDR2_MPEGTS structure pointer [Streaming Media Devices], avcstrm/PCIP_HDR2_MPEGTS, *PCIP_HDR2_MPEGTS, PCIP_HDR2_MPEGTS, stream.cip_hdr2_mpegts
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: avcstrm.h
+req.include-header: Avcstrm.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	avcstrm.h
+apiname:
+-	CIP_HDR2_MPEGTS
+product: Windows
+targetos: Windows
+req.typenames: "*PCIP_HDR2_MPEGTS, CIP_HDR2_MPEGTS"
 ---
 
 # _CIP_HDR2_MPEGTS structure

@@ -1,41 +1,47 @@
 ---
-UID : NF:bdasup.BdaFilterFactoryUpdateCacheData
-title : BdaFilterFactoryUpdateCacheData function
-author : windows-driver-content
-description : The BdaFilterFactoryUpdateCacheData function updates the pin data cache for an instance of a filter.
-old-location : stream\bdafilterfactoryupdatecachedata.htm
-old-project : stream
-ms.assetid : c4b8220a-bd54-4e41-a00e-3750a3f03cae
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : bdasup/BdaFilterFactoryUpdateCacheData, BdaFilterFactoryUpdateCacheData function [Streaming Media Devices], BdaFilterFactoryUpdateCacheData, bdaref_b384500e-7b80-4413-a950-f7cf7aed3f54.xml, stream.bdafilterfactoryupdatecachedata
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : bdasup.h
-req.include-header : Bdasup.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available on Microsoft Windows XP and later operating systems. This routine is available on the Windows 2000 platform only if Microsoft DirectX 9.0 and later is installed on that platform.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Bdasup.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KSP_BDA_NODE_PIN, *PKSP_BDA_NODE_PIN
+UID: NF:bdasup.BdaFilterFactoryUpdateCacheData
+title: BdaFilterFactoryUpdateCacheData function
+author: windows-driver-content
+description: The BdaFilterFactoryUpdateCacheData function updates the pin data cache for an instance of a filter.
+old-location: stream\bdafilterfactoryupdatecachedata.htm
+old-project: stream
+ms.assetid: c4b8220a-bd54-4e41-a00e-3750a3f03cae
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: bdasup/BdaFilterFactoryUpdateCacheData, BdaFilterFactoryUpdateCacheData function [Streaming Media Devices], BdaFilterFactoryUpdateCacheData, bdaref_b384500e-7b80-4413-a950-f7cf7aed3f54.xml, stream.bdafilterfactoryupdatecachedata
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: bdasup.h
+req.include-header: Bdasup.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available on Microsoft Windows XP and later operating systems. This routine is available on the Windows 2000 platform only if Microsoft DirectX 9.0 and later is installed on that platform.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Bdasup.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Bdasup.lib
+-	Bdasup.dll
+apiname:
+-	BdaFilterFactoryUpdateCacheData
+product: Windows
+targetos: Windows
+req.typenames: KSP_BDA_NODE_PIN, *PKSP_BDA_NODE_PIN
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltGetNextExtraCreateParameter
-title : FltGetNextExtraCreateParameter function
-author : windows-driver-content
-description : The FltGetNextExtraCreateParameter routine returns a pointer to the next (or first) extra create parameter context structure (ECP) in a given ECP list.
-old-location : ifsk\fltgetnextextracreateparameter.htm
-old-project : ifsk
-ms.assetid : 8eae5ac8-9da5-475f-8fbb-5e118bad4e67
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.fltgetnextextracreateparameter, FltGetNextExtraCreateParameter routine [Installable File System Drivers], fltkernel/FltGetNextExtraCreateParameter, FltGetNextExtraCreateParameter, FltApiRef_e_to_o_c458316b-2dd7-4ff2-a59f-a6dfbd659f47.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : This routine is available starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltGetNextExtraCreateParameter
+title: FltGetNextExtraCreateParameter function
+author: windows-driver-content
+description: The FltGetNextExtraCreateParameter routine returns a pointer to the next (or first) extra create parameter context structure (ECP) in a given ECP list.
+old-location: ifsk\fltgetnextextracreateparameter.htm
+old-project: ifsk
+ms.assetid: 8eae5ac8-9da5-475f-8fbb-5e118bad4e67
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.fltgetnextextracreateparameter, FltGetNextExtraCreateParameter routine [Installable File System Drivers], fltkernel/FltGetNextExtraCreateParameter, FltGetNextExtraCreateParameter, FltApiRef_e_to_o_c458316b-2dd7-4ff2-a59f-a6dfbd659f47.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: This routine is available starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltGetNextExtraCreateParameter
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:ndis._NDIS_PD_QUEUE
-title : "_NDIS_PD_QUEUE"
-author : windows-driver-content
-description : This structure represents a provider's receive or transmit queue.
-old-location : netvista\ndis_pd_queue.htm
-old-project : netvista
-ms.assetid : 5405A9A6-243B-4E80-85D7-46C6FCC8339F
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : PNDIS_PD_QUEUE, NDIS_PD_QUEUE, netvista.ndis_pd_queue, _NDIS_PD_QUEUE, ndis/PNDIS_PD_QUEUE, NDIS_PD_QUEUE structure [Network Drivers Starting with Windows Vista], PNDIS_PD_QUEUE structure pointer [Network Drivers Starting with Windows Vista], ndis/NDIS_PD_QUEUE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndis.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : See Remarks section
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_PD_QUEUE
+UID: NS:ndis._NDIS_PD_QUEUE
+title: "_NDIS_PD_QUEUE"
+author: windows-driver-content
+description: This structure represents a provider's receive or transmit queue.
+old-location: netvista\ndis_pd_queue.htm
+old-project: netvista
+ms.assetid: 5405A9A6-243B-4E80-85D7-46C6FCC8339F
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: PNDIS_PD_QUEUE, NDIS_PD_QUEUE, netvista.ndis_pd_queue, _NDIS_PD_QUEUE, ndis/PNDIS_PD_QUEUE, NDIS_PD_QUEUE structure [Network Drivers Starting with Windows Vista], PNDIS_PD_QUEUE structure pointer [Network Drivers Starting with Windows Vista], ndis/NDIS_PD_QUEUE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndis.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: See Remarks section
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ndis.h
+apiname:
+-	NDIS_PD_QUEUE
+product: Windows
+targetos: Windows
+req.typenames: NDIS_PD_QUEUE
 ---
 
 # _NDIS_PD_QUEUE structure

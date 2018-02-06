@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddk._WHEA_XPF_CONTEXT_INFO
-title : "_WHEA_XPF_CONTEXT_INFO"
-author : windows-driver-content
-description : The WHEA_XPF_CONTEXT_INFO structure describes processor context information for an x86 or x64 processor.
-old-location : whea\whea_xpf_context_info.htm
-old-project : whea
-ms.assetid : 044af92b-b77c-415c-9ca5-4436bfe497e5
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : ntddk/PWHEA_XPF_CONTEXT_INFO, WHEA_XPF_CONTEXT_INFO structure [WHEA Drivers and Applications], _WHEA_XPF_CONTEXT_INFO, PWHEA_XPF_CONTEXT_INFO structure pointer [WHEA Drivers and Applications], ntddk/WHEA_XPF_CONTEXT_INFO, PWHEA_XPF_CONTEXT_INFO, whea.whea_xpf_context_info, WHEA_XPF_CONTEXT_INFO, whearef_3e1bae81-9b21-4b0c-bd86-b957afb95713.xml, *PWHEA_XPF_CONTEXT_INFO
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWHEA_XPF_CONTEXT_INFO, WHEA_XPF_CONTEXT_INFO"
+UID: NS:ntddk._WHEA_XPF_CONTEXT_INFO
+title: "_WHEA_XPF_CONTEXT_INFO"
+author: windows-driver-content
+description: The WHEA_XPF_CONTEXT_INFO structure describes processor context information for an x86 or x64 processor.
+old-location: whea\whea_xpf_context_info.htm
+old-project: whea
+ms.assetid: 044af92b-b77c-415c-9ca5-4436bfe497e5
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: ntddk/PWHEA_XPF_CONTEXT_INFO, WHEA_XPF_CONTEXT_INFO structure [WHEA Drivers and Applications], _WHEA_XPF_CONTEXT_INFO, PWHEA_XPF_CONTEXT_INFO structure pointer [WHEA Drivers and Applications], ntddk/WHEA_XPF_CONTEXT_INFO, PWHEA_XPF_CONTEXT_INFO, whea.whea_xpf_context_info, WHEA_XPF_CONTEXT_INFO, whearef_3e1bae81-9b21-4b0c-bd86-b957afb95713.xml, *PWHEA_XPF_CONTEXT_INFO
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddk.h
+apiname:
+-	WHEA_XPF_CONTEXT_INFO
+product: Windows
+targetos: Windows
+req.typenames: "*PWHEA_XPF_CONTEXT_INFO, WHEA_XPF_CONTEXT_INFO"
 ---
 
 # _WHEA_XPF_CONTEXT_INFO structure

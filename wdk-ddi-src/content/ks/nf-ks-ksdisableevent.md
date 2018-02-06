@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsDisableEvent
-title : KsDisableEvent function
-author : windows-driver-content
-description : The KsDisableEvent function disables events requested through IOCTL_KS_DISABLE_EVENT.
-old-location : stream\ksdisableevent.htm
-old-project : stream
-ms.assetid : 4af94bc4-9df3-4b37-a810-303748cc4b75
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ksfunc_e430d502-c847-43ee-bdea-d53200f45e53.xml, KsDisableEvent, stream.ksdisableevent, ks/KsDisableEvent, KsDisableEvent function [Streaming Media Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsDisableEvent
+title: KsDisableEvent function
+author: windows-driver-content
+description: The KsDisableEvent function disables events requested through IOCTL_KS_DISABLE_EVENT.
+old-location: stream\ksdisableevent.htm
+old-project: stream
+ms.assetid: 4af94bc4-9df3-4b37-a810-303748cc4b75
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ksfunc_e430d502-c847-43ee-bdea-d53200f45e53.xml, KsDisableEvent, stream.ksdisableevent, ks/KsDisableEvent, KsDisableEvent function [Streaming Media Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsDisableEvent
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

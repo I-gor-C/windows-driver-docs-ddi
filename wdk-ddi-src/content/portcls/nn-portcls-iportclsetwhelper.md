@@ -1,41 +1,46 @@
 ---
-UID : NN:portcls.IPortClsEtwHelper
-title : IPortClsEtwHelper
-author : windows-driver-content
-description : The IPortClsEtwHelper interface allows an audio miniport driver to access the Event Tracing for Windows (ETW) helper functions.
-old-location : audio\iportclsetwhelper.htm
-old-project : audio
-ms.assetid : 7BF9E3AB-D508-4FB8-8C47-C0B338933A56
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : audio.iportclsetwhelper, IPortClsEtwHelper interface [Audio Devices], IPortClsEtwHelper interface [Audio Devices], described, IPortClsEtwHelper, portcls/IPortClsEtwHelper
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : portcls.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Portcls.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NN:portcls.IPortClsEtwHelper
+title: IPortClsEtwHelper
+author: windows-driver-content
+description: The IPortClsEtwHelper interface allows an audio miniport driver to access the Event Tracing for Windows (ETW) helper functions.
+old-location: audio\iportclsetwhelper.htm
+old-project: audio
+ms.assetid: 7BF9E3AB-D508-4FB8-8C47-C0B338933A56
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: audio.iportclsetwhelper, IPortClsEtwHelper interface [Audio Devices], IPortClsEtwHelper interface [Audio Devices], described, IPortClsEtwHelper, portcls/IPortClsEtwHelper
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: portcls.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Portcls.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Portcls.h
+apiname:
+-	IPortClsEtwHelper
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 # IPortClsEtwHelper interface

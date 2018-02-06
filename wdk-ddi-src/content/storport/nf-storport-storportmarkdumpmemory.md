@@ -1,42 +1,47 @@
 ---
-UID : NF:storport.StorPortMarkDumpMemory
-title : StorPortMarkDumpMemory function
-author : windows-driver-content
-description : A miniport should mark memory used for the dump file or the hibernation file.
-old-location : storage\storportmarkdumpmemory.htm
-old-project : storage
-ms.assetid : DE17FF55-A573-41FE-8979-1DB32AD5B7C0
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : StorPortMarkDumpMemory, StorPortMarkDumpMemory routine [Storage Devices], MARK_DUMP_MEMORY_FLAG_PHYSICAL_ADDRESS, storage.storportmarkdumpmemory, storport/StorPortMarkDumpMemory
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : Any
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STOR_SPINLOCK
-req.product : Windows 10 or later.
+UID: NF:storport.StorPortMarkDumpMemory
+title: StorPortMarkDumpMemory function
+author: windows-driver-content
+description: A miniport should mark memory used for the dump file or the hibernation file.
+old-location: storage\storportmarkdumpmemory.htm
+old-project: storage
+ms.assetid: DE17FF55-A573-41FE-8979-1DB32AD5B7C0
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: StorPortMarkDumpMemory, StorPortMarkDumpMemory routine [Storage Devices], MARK_DUMP_MEMORY_FLAG_PHYSICAL_ADDRESS, storage.storportmarkdumpmemory, storport/StorPortMarkDumpMemory
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: Any
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Storport.h
+apiname:
+-	StorPortMarkDumpMemory
+product: Windows
+targetos: Windows
+req.typenames: STOR_SPINLOCK
+req.product: Windows 10 or later.
 ---
 
 

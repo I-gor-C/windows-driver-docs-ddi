@@ -1,41 +1,46 @@
 ---
-UID : NS:ntifs._FILE_PIPE_LOCAL_INFORMATION
-title : "_FILE_PIPE_LOCAL_INFORMATION"
-author : windows-driver-content
-description : The FILE_PIPE_LOCAL_INFORMATION structure contains information about the local end of a named pipe.
-old-location : ifsk\file_pipe_local_information.htm
-old-project : ifsk
-ms.assetid : 7ca66b75-e5ff-46a6-8a40-47aa53bf0f6f
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ntifs/PFILE_PIPE_LOCAL_INFORMATION, PFILE_PIPE_LOCAL_INFORMATION, ifsk.file_pipe_local_information, *PFILE_PIPE_LOCAL_INFORMATION, FILE_PIPE_LOCAL_INFORMATION structure [Installable File System Drivers], FILE_PIPE_LOCAL_INFORMATION, ntifs/FILE_PIPE_LOCAL_INFORMATION, _FILE_PIPE_LOCAL_INFORMATION, PFILE_PIPE_LOCAL_INFORMATION structure pointer [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntifs.h
-req.include-header : FltKernel.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 2000 and later versions of the Windows operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FILE_PIPE_LOCAL_INFORMATION, *PFILE_PIPE_LOCAL_INFORMATION
+UID: NS:ntifs._FILE_PIPE_LOCAL_INFORMATION
+title: "_FILE_PIPE_LOCAL_INFORMATION"
+author: windows-driver-content
+description: The FILE_PIPE_LOCAL_INFORMATION structure contains information about the local end of a named pipe.
+old-location: ifsk\file_pipe_local_information.htm
+old-project: ifsk
+ms.assetid: 7ca66b75-e5ff-46a6-8a40-47aa53bf0f6f
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ntifs/PFILE_PIPE_LOCAL_INFORMATION, PFILE_PIPE_LOCAL_INFORMATION, ifsk.file_pipe_local_information, *PFILE_PIPE_LOCAL_INFORMATION, FILE_PIPE_LOCAL_INFORMATION structure [Installable File System Drivers], FILE_PIPE_LOCAL_INFORMATION, ntifs/FILE_PIPE_LOCAL_INFORMATION, _FILE_PIPE_LOCAL_INFORMATION, PFILE_PIPE_LOCAL_INFORMATION structure pointer [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntifs.h
+req.include-header: FltKernel.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 2000 and later versions of the Windows operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntifs.h
+apiname:
+-	FILE_PIPE_LOCAL_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: FILE_PIPE_LOCAL_INFORMATION, *PFILE_PIPE_LOCAL_INFORMATION
 ---
 
 # _FILE_PIPE_LOCAL_INFORMATION structure

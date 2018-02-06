@@ -1,42 +1,47 @@
 ---
-UID : NS:wwan._WWAN_SET_SMS_CONFIGURATION
-title : "_WWAN_SET_SMS_CONFIGURATION"
-author : windows-driver-content
-description : The WWAN_SET_SMS_CONFIGURATION structure represents how MB devices support SMS configuration.
-old-location : netvista\wwan_set_sms_configuration.htm
-old-project : netvista
-ms.assetid : c3739a08-f4ea-4cc5-8f62-7d4a5cd3ed43
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : "_WWAN_SET_SMS_CONFIGURATION, wwan/PWWAN_SET_SMS_CONFIGURATION, WWAN_SET_SMS_CONFIGURATION structure [Network Drivers Starting with Windows Vista], PWWAN_SET_SMS_CONFIGURATION structure pointer [Network Drivers Starting with Windows Vista], *PWWAN_SET_SMS_CONFIGURATION, WwanRef_2a344216-b18f-41d6-8a11-dac6cb24de69.xml, netvista.wwan_set_sms_configuration, wwan/WWAN_SET_SMS_CONFIGURATION, PWWAN_SET_SMS_CONFIGURATION, WWAN_SET_SMS_CONFIGURATION"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wwan.h
-req.include-header : Wwan.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WWAN_SET_SMS_CONFIGURATION, *PWWAN_SET_SMS_CONFIGURATION
-req.product : Windows 10 or later.
+UID: NS:wwan._WWAN_SET_SMS_CONFIGURATION
+title: "_WWAN_SET_SMS_CONFIGURATION"
+author: windows-driver-content
+description: The WWAN_SET_SMS_CONFIGURATION structure represents how MB devices support SMS configuration.
+old-location: netvista\wwan_set_sms_configuration.htm
+old-project: netvista
+ms.assetid: c3739a08-f4ea-4cc5-8f62-7d4a5cd3ed43
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: "_WWAN_SET_SMS_CONFIGURATION, wwan/PWWAN_SET_SMS_CONFIGURATION, WWAN_SET_SMS_CONFIGURATION structure [Network Drivers Starting with Windows Vista], PWWAN_SET_SMS_CONFIGURATION structure pointer [Network Drivers Starting with Windows Vista], *PWWAN_SET_SMS_CONFIGURATION, WwanRef_2a344216-b18f-41d6-8a11-dac6cb24de69.xml, netvista.wwan_set_sms_configuration, wwan/WWAN_SET_SMS_CONFIGURATION, PWWAN_SET_SMS_CONFIGURATION, WWAN_SET_SMS_CONFIGURATION"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wwan.h
+req.include-header: Wwan.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wwan.h
+apiname:
+-	WWAN_SET_SMS_CONFIGURATION
+product: Windows
+targetos: Windows
+req.typenames: WWAN_SET_SMS_CONFIGURATION, *PWWAN_SET_SMS_CONFIGURATION
+req.product: Windows 10 or later.
 ---
 
 # _WWAN_SET_SMS_CONFIGURATION structure

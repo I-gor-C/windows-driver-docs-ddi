@@ -1,41 +1,47 @@
 ---
-UID : NF:portcls.PcRegisterPhysicalConnection
-title : PcRegisterPhysicalConnection function
-author : windows-driver-content
-description : The PcRegisterPhysicalConnection function registers a physical connection between two audio adapter filters that are instantiated by the same adapter driver.
-old-location : audio\pcregisterphysicalconnection.htm
-old-project : audio
-ms.assetid : f8ab3914-c83e-4bfd-94b5-f4c409236b95
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : PcRegisterPhysicalConnection, PcRegisterPhysicalConnection function [Audio Devices], portcls/PcRegisterPhysicalConnection, audio.pcregisterphysicalconnection, audpc-routines_d806f159-7b56-428c-8780-f95d3c5f3b14.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : portcls.h
-req.include-header : Portcls.h
-req.target-type : Universal
-req.target-min-winverclnt : The PortCls system driver implements the PcRegisterPhysicalConnection function in Microsoft Windows 98/Me and in Windows 2000 and later operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Portcls.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.PcRegisterPhysicalConnection
+title: PcRegisterPhysicalConnection function
+author: windows-driver-content
+description: The PcRegisterPhysicalConnection function registers a physical connection between two audio adapter filters that are instantiated by the same adapter driver.
+old-location: audio\pcregisterphysicalconnection.htm
+old-project: audio
+ms.assetid: f8ab3914-c83e-4bfd-94b5-f4c409236b95
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: PcRegisterPhysicalConnection, PcRegisterPhysicalConnection function [Audio Devices], portcls/PcRegisterPhysicalConnection, audio.pcregisterphysicalconnection, audpc-routines_d806f159-7b56-428c-8780-f95d3c5f3b14.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: portcls.h
+req.include-header: Portcls.h
+req.target-type: Universal
+req.target-min-winverclnt: The PortCls system driver implements the PcRegisterPhysicalConnection function in Microsoft Windows 98/Me and in Windows 2000 and later operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Portcls.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Portcls.lib
+-	Portcls.dll
+apiname:
+-	PcRegisterPhysicalConnection
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

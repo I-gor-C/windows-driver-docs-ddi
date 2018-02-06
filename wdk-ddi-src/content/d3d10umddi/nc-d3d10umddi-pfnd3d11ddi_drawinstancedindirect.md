@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3D11DDI_DRAWINSTANCEDINDIRECT
-title : PFND3D11DDI_DRAWINSTANCEDINDIRECT
-author : windows-driver-content
-description : The DrawInstancedIndirect function draws particular instances of non-indexed primitives.
-old-location : display\drawinstancedindirect.htm
-old-project : display
-ms.assetid : 99520dae-3934-496f-80bf-e5b306554415
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.drawinstancedindirect, DrawInstancedIndirect callback function [Display Devices], DrawInstancedIndirect, PFND3D11DDI_DRAWINSTANCEDINDIRECT, PFND3D11DDI_DRAWINSTANCEDINDIRECT, d3d10umddi/DrawInstancedIndirect, UserModeDisplayDriverDx11_Functions_40c5a4c2-55dd-4ec1-ae2e-99fbe6ce11a9.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : DrawInstancedIndirect is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3D11DDI_DRAWINSTANCEDINDIRECT
+title: PFND3D11DDI_DRAWINSTANCEDINDIRECT
+author: windows-driver-content
+description: The DrawInstancedIndirect function draws particular instances of non-indexed primitives.
+old-location: display\drawinstancedindirect.htm
+old-project: display
+ms.assetid: 99520dae-3934-496f-80bf-e5b306554415
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.drawinstancedindirect, DrawInstancedIndirect callback function [Display Devices], DrawInstancedIndirect, PFND3D11DDI_DRAWINSTANCEDINDIRECT, PFND3D11DDI_DRAWINSTANCEDINDIRECT, d3d10umddi/DrawInstancedIndirect, UserModeDisplayDriverDx11_Functions_40c5a4c2-55dd-4ec1-ae2e-99fbe6ce11a9.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: DrawInstancedIndirect is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	DrawInstancedIndirect
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

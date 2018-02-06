@@ -1,42 +1,47 @@
 ---
-UID : NS:smclib._SCARD_CARD_CAPABILITIES
-title : "_SCARD_CARD_CAPABILITIES"
-author : windows-driver-content
-description : The SCARD_CARD_CAPABILITIES structure declaration defines the data that is stored in the CardCapabilites member of the SMARTCARD_EXTENSION structure and holds all information that is specific to the particular smart card that is currently used.
-old-location : smartcrd\scard_card_capabilities.htm
-old-project : smartcrd
-ms.assetid : 8cc223be-a692-4141-81f6-4cca9e2fccf1
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : PSCARD_CARD_CAPABILITIES structure pointer [Smart Card Reader Devices], *PSCARD_CARD_CAPABILITIES, smartcrd.scard_card_capabilities, scstruct_b60c574d-a6db-4d15-a974-dc15ba375b5b.xml, smclib/PSCARD_CARD_CAPABILITIES, PSCARD_CARD_CAPABILITIES, smclib/SCARD_CARD_CAPABILITIES, SCARD_CARD_CAPABILITIES structure [Smart Card Reader Devices], SCARD_CARD_CAPABILITIES, _SCARD_CARD_CAPABILITIES
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : smclib.h
-req.include-header : Smclib.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSCARD_CARD_CAPABILITIES, SCARD_CARD_CAPABILITIES"
-req.product : Windows 10 or later.
+UID: NS:smclib._SCARD_CARD_CAPABILITIES
+title: "_SCARD_CARD_CAPABILITIES"
+author: windows-driver-content
+description: The SCARD_CARD_CAPABILITIES structure declaration defines the data that is stored in the CardCapabilites member of the SMARTCARD_EXTENSION structure and holds all information that is specific to the particular smart card that is currently used.
+old-location: smartcrd\scard_card_capabilities.htm
+old-project: smartcrd
+ms.assetid: 8cc223be-a692-4141-81f6-4cca9e2fccf1
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: PSCARD_CARD_CAPABILITIES structure pointer [Smart Card Reader Devices], *PSCARD_CARD_CAPABILITIES, smartcrd.scard_card_capabilities, scstruct_b60c574d-a6db-4d15-a974-dc15ba375b5b.xml, smclib/PSCARD_CARD_CAPABILITIES, PSCARD_CARD_CAPABILITIES, smclib/SCARD_CARD_CAPABILITIES, SCARD_CARD_CAPABILITIES structure [Smart Card Reader Devices], SCARD_CARD_CAPABILITIES, _SCARD_CARD_CAPABILITIES
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: smclib.h
+req.include-header: Smclib.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	smclib.h
+apiname:
+-	SCARD_CARD_CAPABILITIES
+product: Windows
+targetos: Windows
+req.typenames: "*PSCARD_CARD_CAPABILITIES, SCARD_CARD_CAPABILITIES"
+req.product: Windows 10 or later.
 ---
 
 # _SCARD_CARD_CAPABILITIES structure

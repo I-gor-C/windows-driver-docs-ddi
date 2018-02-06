@@ -1,41 +1,46 @@
 ---
-UID : NS:pepfx._PEP_PPM_QUERY_DOMAIN_INFO
-title : "_PEP_PPM_QUERY_DOMAIN_INFO"
-author : windows-driver-content
-description : Used in the PEP_NOTIFY_PPM_QUERY_DOMAIN_INFO notification that queries for information about a performance domain. .
-old-location : kernel\pep_ppm_query_domain_info.htm
-old-project : kernel
-ms.assetid : c608dac0-bb2a-4d89-a2f8-1017254c8a6c
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.pep_ppm_query_domain_info, _PEP_PPM_QUERY_DOMAIN_INFO, *PPEP_PPM_QUERY_DOMAIN_INFO, PEP_PPM_QUERY_DOMAIN_INFO structure [Kernel-Mode Driver Architecture], pepfx/PEP_PPM_QUERY_DOMAIN_INFO, PEP_PPM_QUERY_DOMAIN_INFO
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : pepfx.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10, version 1709
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PEP_PPM_QUERY_DOMAIN_INFO, *PPEP_PPM_QUERY_DOMAIN_INFO
+UID: NS:pepfx._PEP_PPM_QUERY_DOMAIN_INFO
+title: "_PEP_PPM_QUERY_DOMAIN_INFO"
+author: windows-driver-content
+description: Used in the PEP_NOTIFY_PPM_QUERY_DOMAIN_INFO notification that queries for information about a performance domain. .
+old-location: kernel\pep_ppm_query_domain_info.htm
+old-project: kernel
+ms.assetid: c608dac0-bb2a-4d89-a2f8-1017254c8a6c
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.pep_ppm_query_domain_info, _PEP_PPM_QUERY_DOMAIN_INFO, *PPEP_PPM_QUERY_DOMAIN_INFO, PEP_PPM_QUERY_DOMAIN_INFO structure [Kernel-Mode Driver Architecture], pepfx/PEP_PPM_QUERY_DOMAIN_INFO, PEP_PPM_QUERY_DOMAIN_INFO
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: pepfx.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10, version 1709
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Pepfx.h
+apiname:
+-	PEP_PPM_QUERY_DOMAIN_INFO
+product: Windows
+targetos: Windows
+req.typenames: PEP_PPM_QUERY_DOMAIN_INFO, *PPEP_PPM_QUERY_DOMAIN_INFO
 ---
 
 # _PEP_PPM_QUERY_DOMAIN_INFO structure

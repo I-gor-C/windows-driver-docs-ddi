@@ -1,41 +1,46 @@
 ---
-UID : NE:fwpsk.FWPS_FIELDS_ALE_RESOURCE_RELEASE_V6_
-title : FWPS_FIELDS_ALE_RESOURCE_RELEASE_V6_
-author : windows-driver-content
-description : The FWPS_FIELDS_ALE_RESOURCE_RELEASE_V6 enumeration type specifies the data field identifiers for the FWPS_LAYER_ALE_RESOURCE_RELEASE_V6 run-time filtering layer.
-old-location : netvista\fwps_fields_ale_resource_release_v6.htm
-old-project : netvista
-ms.assetid : be821aed-2606-497e-8a93-4cad983cc17f
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.fwps_fields_ale_resource_release_v6, fwpsk/FWPS_FIELDS_ALE_RESOURCE_RELEASE_V6, FWPS_FIELD_ALE_RESOURCE_RELEASE_V6_MAX, FWPS_FIELD_ALE_RESOURCE_RELEASE_V6_IP_LOCAL_ADDRESS_TYPE, FWPS_FIELD_ALE_RESOURCE_RELEASE_V6_IP_LOCAL_INTERFACE, fwpsk/FWPS_FIELD_ALE_RESOURCE_RELEASE_V6_IP_LOCAL_INTERFACE, FWPS_FIELDS_ALE_RESOURCE_RELEASE_V6_, FWPS_FIELDS_ALE_RESOURCE_RELEASE_V6 enumeration [Network Drivers Starting with Windows Vista], FWPS_FIELD_ALE_RESOURCE_RELEASE_V6_FLAGS, wfp_ref_5_const_3_data_fields_9f6f966e-3799-4c75-bfcb-0a3e711e3aea.xml, fwpsk/FWPS_FIELD_ALE_RESOURCE_RELEASE_V6_IP_LOCAL_PORT, FWPS_FIELD_ALE_RESOURCE_RELEASE_V6_ALE_APP_ID, fwpsk/FWPS_FIELD_ALE_RESOURCE_RELEASE_V6_FLAGS, FWPS_FIELD_ALE_RESOURCE_RELEASE_V6_IP_LOCAL_ADDRESS, fwpsk/FWPS_FIELD_ALE_RESOURCE_RELEASE_V6_IP_PROTOCOL, fwpsk/FWPS_FIELD_ALE_RESOURCE_RELEASE_V6_IP_LOCAL_ADDRESS, fwpsk/FWPS_FIELD_ALE_RESOURCE_RELEASE_V6_ALE_APP_ID, fwpsk/FWPS_FIELD_ALE_RESOURCE_RELEASE_V6_MAX, FWPS_FIELD_ALE_RESOURCE_RELEASE_V6_ALE_USER_ID, fwpsk/FWPS_FIELD_ALE_RESOURCE_RELEASE_V6_ALE_USER_ID, FWPS_FIELD_ALE_RESOURCE_RELEASE_V6_IP_LOCAL_PORT, fwpsk/FWPS_FIELD_ALE_RESOURCE_RELEASE_V6_IP_LOCAL_ADDRESS_TYPE, FWPS_FIELD_ALE_RESOURCE_RELEASE_V6_ALE_PACKAGE_ID, fwpsk/FWPS_FIELD_ALE_RESOURCE_RELEASE_V6_ALE_PACKAGE_ID, FWPS_FIELDS_ALE_RESOURCE_RELEASE_V6, FWPS_FIELD_ALE_RESOURCE_RELEASE_V6_IP_PROTOCOL
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : fwpsk.h
-req.include-header : Fwpsk.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with Windows 7.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FWPS_FIELDS_ALE_RESOURCE_RELEASE_V6
+UID: NE:fwpsk.FWPS_FIELDS_ALE_RESOURCE_RELEASE_V6_
+title: FWPS_FIELDS_ALE_RESOURCE_RELEASE_V6_
+author: windows-driver-content
+description: The FWPS_FIELDS_ALE_RESOURCE_RELEASE_V6 enumeration type specifies the data field identifiers for the FWPS_LAYER_ALE_RESOURCE_RELEASE_V6 run-time filtering layer.
+old-location: netvista\fwps_fields_ale_resource_release_v6.htm
+old-project: netvista
+ms.assetid: be821aed-2606-497e-8a93-4cad983cc17f
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.fwps_fields_ale_resource_release_v6, fwpsk/FWPS_FIELDS_ALE_RESOURCE_RELEASE_V6, FWPS_FIELD_ALE_RESOURCE_RELEASE_V6_MAX, FWPS_FIELD_ALE_RESOURCE_RELEASE_V6_IP_LOCAL_ADDRESS_TYPE, FWPS_FIELD_ALE_RESOURCE_RELEASE_V6_IP_LOCAL_INTERFACE, fwpsk/FWPS_FIELD_ALE_RESOURCE_RELEASE_V6_IP_LOCAL_INTERFACE, FWPS_FIELDS_ALE_RESOURCE_RELEASE_V6_, FWPS_FIELDS_ALE_RESOURCE_RELEASE_V6 enumeration [Network Drivers Starting with Windows Vista], FWPS_FIELD_ALE_RESOURCE_RELEASE_V6_FLAGS, wfp_ref_5_const_3_data_fields_9f6f966e-3799-4c75-bfcb-0a3e711e3aea.xml, fwpsk/FWPS_FIELD_ALE_RESOURCE_RELEASE_V6_IP_LOCAL_PORT, FWPS_FIELD_ALE_RESOURCE_RELEASE_V6_ALE_APP_ID, fwpsk/FWPS_FIELD_ALE_RESOURCE_RELEASE_V6_FLAGS, FWPS_FIELD_ALE_RESOURCE_RELEASE_V6_IP_LOCAL_ADDRESS, fwpsk/FWPS_FIELD_ALE_RESOURCE_RELEASE_V6_IP_PROTOCOL, fwpsk/FWPS_FIELD_ALE_RESOURCE_RELEASE_V6_IP_LOCAL_ADDRESS, fwpsk/FWPS_FIELD_ALE_RESOURCE_RELEASE_V6_ALE_APP_ID, fwpsk/FWPS_FIELD_ALE_RESOURCE_RELEASE_V6_MAX, FWPS_FIELD_ALE_RESOURCE_RELEASE_V6_ALE_USER_ID, fwpsk/FWPS_FIELD_ALE_RESOURCE_RELEASE_V6_ALE_USER_ID, FWPS_FIELD_ALE_RESOURCE_RELEASE_V6_IP_LOCAL_PORT, fwpsk/FWPS_FIELD_ALE_RESOURCE_RELEASE_V6_IP_LOCAL_ADDRESS_TYPE, FWPS_FIELD_ALE_RESOURCE_RELEASE_V6_ALE_PACKAGE_ID, fwpsk/FWPS_FIELD_ALE_RESOURCE_RELEASE_V6_ALE_PACKAGE_ID, FWPS_FIELDS_ALE_RESOURCE_RELEASE_V6, FWPS_FIELD_ALE_RESOURCE_RELEASE_V6_IP_PROTOCOL
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: fwpsk.h
+req.include-header: Fwpsk.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows 7.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	fwpsk.h
+apiname:
+-	FWPS_FIELDS_ALE_RESOURCE_RELEASE_V6
+product: Windows
+targetos: Windows
+req.typenames: FWPS_FIELDS_ALE_RESOURCE_RELEASE_V6
 ---
 
 # FWPS_FIELDS_ALE_RESOURCE_RELEASE_V6_ Enumeration
@@ -64,72 +69,72 @@ typedef enum FWPS_FIELDS_ALE_RESOURCE_RELEASE_V6_ {
 ## Constants
 
 <table>
-
-<tr>
-<td>FWPS_FIELD_ALE_RESOURCE_RELEASE_V6_ALE_APP_ID</td>
-<td>The full path of the application.</td>
-</tr>
-
-<tr>
-<td>FWPS_FIELD_ALE_RESOURCE_RELEASE_V6_ALE_PACKAGE_ID</td>
-<td>The package identifier is a security identifier (SID) that identifies the associated AppContainer process. For more information about the SID structure, see the description for the SID structure in the Microsoft Windows SDK documentation.
+            
+                <tr>
+                    <td>FWPS_FIELD_ALE_RESOURCE_RELEASE_V6_ALE_APP_ID</td>
+                    <td>The full path of the application.</td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_ALE_RESOURCE_RELEASE_V6_ALE_PACKAGE_ID</td>
+                    <td>The package identifier is a security identifier (SID) that identifies the associated AppContainer process. For more information about the SID structure, see the description for the SID structure in the Microsoft Windows SDK documentation.
 <div class="alert"><b>Note</b>  Supported starting with Windows 8.</div><div> </div></td>
-</tr>
-
-<tr>
-<td>FWPS_FIELD_ALE_RESOURCE_RELEASE_V6_ALE_SECURITY_ATTRIBUTE_FQBN_VALUE</td>
-<td></td>
-</tr>
-
-<tr>
-<td>FWPS_FIELD_ALE_RESOURCE_RELEASE_V6_ALE_USER_ID</td>
-<td>The identifier of the local user.</td>
-</tr>
-
-<tr>
-<td>FWPS_FIELD_ALE_RESOURCE_RELEASE_V6_COMPARTMENT_ID</td>
-<td></td>
-</tr>
-
-<tr>
-<td>FWPS_FIELD_ALE_RESOURCE_RELEASE_V6_FLAGS</td>
-<td>A bitwise OR of a combination of filtering condition flags. For information about the possible
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_ALE_RESOURCE_RELEASE_V6_ALE_SECURITY_ATTRIBUTE_FQBN_VALUE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_ALE_RESOURCE_RELEASE_V6_ALE_USER_ID</td>
+                    <td>The identifier of the local user.</td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_ALE_RESOURCE_RELEASE_V6_COMPARTMENT_ID</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_ALE_RESOURCE_RELEASE_V6_FLAGS</td>
+                    <td>A bitwise OR of a combination of filtering condition flags. For information about the possible
      flags, see 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff549942">Filtering Condition Flags</a>.</td>
-</tr>
-
-<tr>
-<td>FWPS_FIELD_ALE_RESOURCE_RELEASE_V6_IP_LOCAL_ADDRESS</td>
-<td>The local IP address.</td>
-</tr>
-
-<tr>
-<td>FWPS_FIELD_ALE_RESOURCE_RELEASE_V6_IP_LOCAL_ADDRESS_TYPE</td>
-<td>The local IP address type. The possible values are defined by the 
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_ALE_RESOURCE_RELEASE_V6_IP_LOCAL_ADDRESS</td>
+                    <td>The local IP address.</td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_ALE_RESOURCE_RELEASE_V6_IP_LOCAL_ADDRESS_TYPE</td>
+                    <td>The local IP address type. The possible values are defined by the 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff568757">NL_ADDRESS_TYPE</a> enumeration.</td>
-</tr>
-
-<tr>
-<td>FWPS_FIELD_ALE_RESOURCE_RELEASE_V6_IP_LOCAL_INTERFACE</td>
-<td>The locally unique identifier (<a href="..\igpupvdev\ns-igpupvdev-_luid.md">LUID</a>) for the network interface associated with the
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_ALE_RESOURCE_RELEASE_V6_IP_LOCAL_INTERFACE</td>
+                    <td>The locally unique identifier (<a href="..\igpupvdev\ns-igpupvdev-_luid.md">LUID</a>) for the network interface associated with the
      local IP address.</td>
-</tr>
-
-<tr>
-<td>FWPS_FIELD_ALE_RESOURCE_RELEASE_V6_IP_LOCAL_PORT</td>
-<td>The local transport protocol port number.</td>
-</tr>
-
-<tr>
-<td>FWPS_FIELD_ALE_RESOURCE_RELEASE_V6_IP_PROTOCOL</td>
-<td>The IP protocol number, as specified in RFC 1700.</td>
-</tr>
-
-<tr>
-<td>FWPS_FIELD_ALE_RESOURCE_RELEASE_V6_MAX</td>
-<td>The maximum value for this enumeration. This value might change in future versions of the NDIS
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_ALE_RESOURCE_RELEASE_V6_IP_LOCAL_PORT</td>
+                    <td>The local transport protocol port number.</td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_ALE_RESOURCE_RELEASE_V6_IP_PROTOCOL</td>
+                    <td>The IP protocol number, as specified in RFC 1700.</td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_ALE_RESOURCE_RELEASE_V6_MAX</td>
+                    <td>The maximum value for this enumeration. This value might change in future versions of the NDIS
      header files and binaries.</td>
-</tr>
+                </tr>
 </table>
 
 
@@ -139,9 +144,9 @@ typedef enum FWPS_FIELDS_ALE_RESOURCE_RELEASE_V6_ {
 | **Windows version** | Supported starting with Windows 7. Supported starting with Windows 7. |
 | **Header** | fwpsk.h (include Fwpsk.h) |
 
-## See Also
+    ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568757">NL_ADDRESS_TYPE</a>
+        <a href="https://msdn.microsoft.com/library/windows/hardware/ff568757">NL_ADDRESS_TYPE</a>
 
 <a href="..\igpupvdev\ns-igpupvdev-_luid.md">LUID</a>
 

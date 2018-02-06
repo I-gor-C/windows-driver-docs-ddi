@@ -1,42 +1,47 @@
 ---
-UID : NC:wlanihv.DOT11EXTIHV_CREATE_DISCOVERY_PROFILES
-title : DOT11EXTIHV_CREATE_DISCOVERY_PROFILES
-author : windows-driver-content
-description : Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
-old-location : netvista\dot11extihvcreatediscoveryprofiles.htm
-old-project : netvista
-ms.assetid : e741bfa7-eb97-4f94-beb4-545d7bedcea8
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.dot11extihvcreatediscoveryprofiles, Dot11ExtIhvCreateDiscoveryProfiles callback function [Network Drivers Starting with Windows Vista], Dot11ExtIhvCreateDiscoveryProfiles, DOT11EXTIHV_CREATE_DISCOVERY_PROFILES, DOT11EXTIHV_CREATE_DISCOVERY_PROFILES, wlanihv/Dot11ExtIhvCreateDiscoveryProfiles, Native_802.11_IHV_Ext_fadde2b4-2a9d-4c6b-8a92-e044bab5c544.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wlanihv.h
-req.include-header : Wlanihv.h, Winclient.h, L2cmn.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating   systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDRIVER_INFO_8W, DRIVER_INFO_8W, *LPDRIVER_INFO_8W"
-req.product : Windows 10 or later.
+UID: NC:wlanihv.DOT11EXTIHV_CREATE_DISCOVERY_PROFILES
+title: DOT11EXTIHV_CREATE_DISCOVERY_PROFILES
+author: windows-driver-content
+description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+old-location: netvista\dot11extihvcreatediscoveryprofiles.htm
+old-project: netvista
+ms.assetid: e741bfa7-eb97-4f94-beb4-545d7bedcea8
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.dot11extihvcreatediscoveryprofiles, Dot11ExtIhvCreateDiscoveryProfiles callback function [Network Drivers Starting with Windows Vista], Dot11ExtIhvCreateDiscoveryProfiles, DOT11EXTIHV_CREATE_DISCOVERY_PROFILES, DOT11EXTIHV_CREATE_DISCOVERY_PROFILES, wlanihv/Dot11ExtIhvCreateDiscoveryProfiles, Native_802.11_IHV_Ext_fadde2b4-2a9d-4c6b-8a92-e044bab5c544.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wlanihv.h
+req.include-header: Wlanihv.h, Winclient.h, L2cmn.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	wlanihv.h
+apiname:
+-	Dot11ExtIhvCreateDiscoveryProfiles
+product: Windows
+targetos: Windows
+req.typenames: "*PDRIVER_INFO_8W, DRIVER_INFO_8W, *LPDRIVER_INFO_8W"
+req.product: Windows 10 or later.
 ---
 
 

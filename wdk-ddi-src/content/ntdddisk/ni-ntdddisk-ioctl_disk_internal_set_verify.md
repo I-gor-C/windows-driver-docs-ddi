@@ -1,41 +1,46 @@
 ---
-UID : NI:ntdddisk.IOCTL_DISK_INTERNAL_SET_VERIFY
-title : IOCTL_DISK_INTERNAL_SET_VERIFY
-author : windows-driver-content
-description : Allows a driver to set the verify bit on a disk device object if the mode of the caller is kernel mode.
-old-location : storage\ioctl_disk_internal_set_verify.htm
-old-project : storage
-ms.assetid : ddfca68f-142e-4e6a-9307-04a3136a4135
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_disk_internal_set_verify, IOCTL_DISK_INTERNAL_SET_VERIFY control code [Storage Devices], IOCTL_DISK_INTERNAL_SET_VERIFY, ntdddisk/IOCTL_DISK_INTERNAL_SET_VERIFY, k307_d97d4ec3-63c0-4041-9953-8727b1b82e66.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntdddisk.h
-req.include-header : Ntdddisk.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DETECTION_TYPE
+UID: NI:ntdddisk.IOCTL_DISK_INTERNAL_SET_VERIFY
+title: IOCTL_DISK_INTERNAL_SET_VERIFY
+author: windows-driver-content
+description: Allows a driver to set the verify bit on a disk device object if the mode of the caller is kernel mode.
+old-location: storage\ioctl_disk_internal_set_verify.htm
+old-project: storage
+ms.assetid: ddfca68f-142e-4e6a-9307-04a3136a4135
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_disk_internal_set_verify, IOCTL_DISK_INTERNAL_SET_VERIFY control code [Storage Devices], IOCTL_DISK_INTERNAL_SET_VERIFY, ntdddisk/IOCTL_DISK_INTERNAL_SET_VERIFY, k307_d97d4ec3-63c0-4041-9953-8727b1b82e66.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntdddisk.h
+req.include-header: Ntdddisk.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntdddisk.h
+apiname:
+-	IOCTL_DISK_INTERNAL_SET_VERIFY
+product: Windows
+targetos: Windows
+req.typenames: DETECTION_TYPE
 ---
 
 # IOCTL_DISK_INTERNAL_SET_VERIFY IOCTL

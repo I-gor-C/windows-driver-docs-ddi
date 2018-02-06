@@ -1,42 +1,48 @@
 ---
-UID : NF:wdm.ClfsAlignReservedLog
-title : ClfsAlignReservedLog function
-author : windows-driver-content
-description : The ClfsAlignReservedLog routine calculates the size of the space that must be reserved for a specified set of records. The size calculation includes the space required for headers and the space required for sector alignment.
-old-location : kernel\clfsalignreservedlog.htm
-old-project : kernel
-ms.assetid : b79f58bb-af94-4143-9e30-6f50d85cbb3d
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ClfsAlignReservedLog routine [Kernel-Mode Driver Architecture], Clfs_68de31de-d1f9-4948-ab15-bf8678aebcf2.xml, wdm/ClfsAlignReservedLog, ClfsAlignReservedLog, kernel.clfsalignreservedlog
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Clfs.lib
-req.dll : Clfs.sys
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ClfsAlignReservedLog
+title: ClfsAlignReservedLog function
+author: windows-driver-content
+description: The ClfsAlignReservedLog routine calculates the size of the space that must be reserved for a specified set of records. The size calculation includes the space required for headers and the space required for sector alignment.
+old-location: kernel\clfsalignreservedlog.htm
+old-project: kernel
+ms.assetid: b79f58bb-af94-4143-9e30-6f50d85cbb3d
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ClfsAlignReservedLog routine [Kernel-Mode Driver Architecture], Clfs_68de31de-d1f9-4948-ab15-bf8678aebcf2.xml, wdm/ClfsAlignReservedLog, ClfsAlignReservedLog, kernel.clfsalignreservedlog
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Clfs.lib
+req.dll: Clfs.sys
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Clfs.sys
+-	Ext-MS-Win-fs-clfs-l1-1-0.dll
+apiname:
+-	ClfsAlignReservedLog
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

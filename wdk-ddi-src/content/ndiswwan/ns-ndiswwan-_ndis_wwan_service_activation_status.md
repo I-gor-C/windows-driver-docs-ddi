@@ -1,41 +1,46 @@
 ---
-UID : NS:ndiswwan._NDIS_WWAN_SERVICE_ACTIVATION_STATUS
-title : "_NDIS_WWAN_SERVICE_ACTIVATION_STATUS"
-author : windows-driver-content
-description : The NDIS_WWAN_SERVICE_ACTIVATION_STATUS structure represents the status of service activation on the MB device.
-old-location : netvista\ndis_wwan_service_activation_status.htm
-old-project : netvista
-ms.assetid : 669ef35f-0e59-4ec3-b6cc-5cb2156b51a2
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : PNDIS_WWAN_SERVICE_ACTIVATION_STATUS, netvista.ndis_wwan_service_activation_status, _NDIS_WWAN_SERVICE_ACTIVATION_STATUS, *PNDIS_WWAN_SERVICE_ACTIVATION_STATUS, ndiswwan/PNDIS_WWAN_SERVICE_ACTIVATION_STATUS, ndiswwan/NDIS_WWAN_SERVICE_ACTIVATION_STATUS, WwanRef_a1bda142-c89f-4323-a114-0c44948f61b5.xml, NDIS_WWAN_SERVICE_ACTIVATION_STATUS structure [Network Drivers Starting with Windows Vista], NDIS_WWAN_SERVICE_ACTIVATION_STATUS, PNDIS_WWAN_SERVICE_ACTIVATION_STATUS structure pointer [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndiswwan.h
-req.include-header : Ndiswwan.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_WWAN_SERVICE_ACTIVATION_STATUS, *PNDIS_WWAN_SERVICE_ACTIVATION_STATUS
+UID: NS:ndiswwan._NDIS_WWAN_SERVICE_ACTIVATION_STATUS
+title: "_NDIS_WWAN_SERVICE_ACTIVATION_STATUS"
+author: windows-driver-content
+description: The NDIS_WWAN_SERVICE_ACTIVATION_STATUS structure represents the status of service activation on the MB device.
+old-location: netvista\ndis_wwan_service_activation_status.htm
+old-project: netvista
+ms.assetid: 669ef35f-0e59-4ec3-b6cc-5cb2156b51a2
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: PNDIS_WWAN_SERVICE_ACTIVATION_STATUS, netvista.ndis_wwan_service_activation_status, _NDIS_WWAN_SERVICE_ACTIVATION_STATUS, *PNDIS_WWAN_SERVICE_ACTIVATION_STATUS, ndiswwan/PNDIS_WWAN_SERVICE_ACTIVATION_STATUS, ndiswwan/NDIS_WWAN_SERVICE_ACTIVATION_STATUS, WwanRef_a1bda142-c89f-4323-a114-0c44948f61b5.xml, NDIS_WWAN_SERVICE_ACTIVATION_STATUS structure [Network Drivers Starting with Windows Vista], NDIS_WWAN_SERVICE_ACTIVATION_STATUS, PNDIS_WWAN_SERVICE_ACTIVATION_STATUS structure pointer [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndiswwan.h
+req.include-header: Ndiswwan.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndiswwan.h
+apiname:
+-	NDIS_WWAN_SERVICE_ACTIVATION_STATUS
+product: Windows
+targetos: Windows
+req.typenames: NDIS_WWAN_SERVICE_ACTIVATION_STATUS, *PNDIS_WWAN_SERVICE_ACTIVATION_STATUS
 ---
 
 # _NDIS_WWAN_SERVICE_ACTIVATION_STATUS structure

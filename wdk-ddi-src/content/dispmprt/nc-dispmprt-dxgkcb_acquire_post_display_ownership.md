@@ -1,41 +1,46 @@
 ---
-UID : NC:dispmprt.DXGKCB_ACQUIRE_POST_DISPLAY_OWNERSHIP
-title : DXGKCB_ACQUIRE_POST_DISPLAY_OWNERSHIP
-author : windows-driver-content
-description : Called by a Windows Display Driver Model (WDDM) 1.2 or later display miniport driver to obtain the display information from the current power-on self-test (POST) display device or the previously running WDDM driver.
-old-location : display\DxgkCbAcquirePostDisplayOwnership.htm
-old-project : display
-ms.assetid : 6454adb3-c958-467b-acbc-b8937b98cd57
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.DxgkCbAcquirePostDisplayOwnership, DxgkCbAcquirePostDisplayOwnership callback function [Display Devices], DxgkCbAcquirePostDisplayOwnership, DXGKCB_ACQUIRE_POST_DISPLAY_OWNERSHIP, DXGKCB_ACQUIRE_POST_DISPLAY_OWNERSHIP, dispmprt/DxgkCbAcquirePostDisplayOwnership
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : dispmprt.h
-req.include-header : Dispmprt.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
+UID: NC:dispmprt.DXGKCB_ACQUIRE_POST_DISPLAY_OWNERSHIP
+title: DXGKCB_ACQUIRE_POST_DISPLAY_OWNERSHIP
+author: windows-driver-content
+description: Called by a Windows Display Driver Model (WDDM) 1.2 or later display miniport driver to obtain the display information from the current power-on self-test (POST) display device or the previously running WDDM driver.
+old-location: display\DxgkCbAcquirePostDisplayOwnership.htm
+old-project: display
+ms.assetid: 6454adb3-c958-467b-acbc-b8937b98cd57
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.DxgkCbAcquirePostDisplayOwnership, DxgkCbAcquirePostDisplayOwnership callback function [Display Devices], DxgkCbAcquirePostDisplayOwnership, DXGKCB_ACQUIRE_POST_DISPLAY_OWNERSHIP, DXGKCB_ACQUIRE_POST_DISPLAY_OWNERSHIP, dispmprt/DxgkCbAcquirePostDisplayOwnership
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: dispmprt.h
+req.include-header: Dispmprt.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	dispmprt.h
+apiname:
+-	DxgkCbAcquirePostDisplayOwnership
+product: Windows
+targetos: Windows
+req.typenames: SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ---
 
 

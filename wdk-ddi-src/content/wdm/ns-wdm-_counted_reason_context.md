@@ -1,42 +1,47 @@
 ---
-UID : NS:wdm._COUNTED_REASON_CONTEXT
-title : "_COUNTED_REASON_CONTEXT"
-author : windows-driver-content
-description : The COUNTED_REASON_CONTEXT structure contains one or more strings that give reasons for a power request.
-old-location : kernel\counted_reason_context.htm
-old-project : kernel
-ms.assetid : beb17d50-d99a-4baf-99bd-9f42fbea0478
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : COUNTED_REASON_CONTEXT structure [Kernel-Mode Driver Architecture], COUNTED_REASON_CONTEXT, wdm/PCOUNTED_REASON_CONTEXT, *PCOUNTED_REASON_CONTEXT, PCOUNTED_REASON_CONTEXT structure pointer [Kernel-Mode Driver Architecture], PCOUNTED_REASON_CONTEXT, _COUNTED_REASON_CONTEXT, kernel.counted_reason_context, wdm/COUNTED_REASON_CONTEXT, kstruct_a_52baf683-dfd2-4004-abed-e9ae6221c342.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in Windows 7 and later versions of the Windows operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PCOUNTED_REASON_CONTEXT, COUNTED_REASON_CONTEXT"
-req.product : Windows 10 or later.
+UID: NS:wdm._COUNTED_REASON_CONTEXT
+title: "_COUNTED_REASON_CONTEXT"
+author: windows-driver-content
+description: The COUNTED_REASON_CONTEXT structure contains one or more strings that give reasons for a power request.
+old-location: kernel\counted_reason_context.htm
+old-project: kernel
+ms.assetid: beb17d50-d99a-4baf-99bd-9f42fbea0478
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: COUNTED_REASON_CONTEXT structure [Kernel-Mode Driver Architecture], COUNTED_REASON_CONTEXT, wdm/PCOUNTED_REASON_CONTEXT, *PCOUNTED_REASON_CONTEXT, PCOUNTED_REASON_CONTEXT structure pointer [Kernel-Mode Driver Architecture], PCOUNTED_REASON_CONTEXT, _COUNTED_REASON_CONTEXT, kernel.counted_reason_context, wdm/COUNTED_REASON_CONTEXT, kstruct_a_52baf683-dfd2-4004-abed-e9ae6221c342.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in Windows 7 and later versions of the Windows operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdm.h
+apiname:
+-	COUNTED_REASON_CONTEXT
+product: Windows
+targetos: Windows
+req.typenames: "*PCOUNTED_REASON_CONTEXT, COUNTED_REASON_CONTEXT"
+req.product: Windows 10 or later.
 ---
 
 # _COUNTED_REASON_CONTEXT structure

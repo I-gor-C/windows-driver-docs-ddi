@@ -1,42 +1,47 @@
 ---
-UID : NC:wdfrequest.EVT_WDF_REQUEST_COMPLETION_ROUTINE
-title : EVT_WDF_REQUEST_COMPLETION_ROUTINE
-author : windows-driver-content
-description : A driver's CompletionRoutine event callback function executes when another driver completes a specified I/O request.
-old-location : wdf\completionroutine.htm
-old-project : wdf
-ms.assetid : 7d3eb4d6-9fc7-4924-9b95-f5824713049b
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.completionroutine, CompletionRoutine callback function, CompletionRoutine, EVT_WDF_REQUEST_COMPLETION_ROUTINE, EVT_WDF_REQUEST_COMPLETION_ROUTINE, wdfrequest/CompletionRoutine, DFRequestObjectRef_5eed5273-6939-4a56-846a-ee80c92c005a.xml, kmdf.completionroutine
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdfrequest.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_QUERY_INTERFACE_CONFIG, *PWDF_QUERY_INTERFACE_CONFIG
-req.product : Windows 10 or later.
+UID: NC:wdfrequest.EVT_WDF_REQUEST_COMPLETION_ROUTINE
+title: EVT_WDF_REQUEST_COMPLETION_ROUTINE
+author: windows-driver-content
+description: A driver's CompletionRoutine event callback function executes when another driver completes a specified I/O request.
+old-location: wdf\completionroutine.htm
+old-project: wdf
+ms.assetid: 7d3eb4d6-9fc7-4924-9b95-f5824713049b
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.completionroutine, CompletionRoutine callback function, CompletionRoutine, EVT_WDF_REQUEST_COMPLETION_ROUTINE, EVT_WDF_REQUEST_COMPLETION_ROUTINE, wdfrequest/CompletionRoutine, DFRequestObjectRef_5eed5273-6939-4a56-846a-ee80c92c005a.xml, kmdf.completionroutine
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdfrequest.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Wdfrequest.h
+apiname:
+-	CompletionRoutine
+product: Windows
+targetos: Windows
+req.typenames: WDF_QUERY_INTERFACE_CONFIG, *PWDF_QUERY_INTERFACE_CONFIG
+req.product: Windows 10 or later.
 ---
 
 

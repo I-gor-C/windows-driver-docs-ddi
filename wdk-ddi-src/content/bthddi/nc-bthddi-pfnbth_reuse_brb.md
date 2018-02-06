@@ -1,41 +1,46 @@
 ---
-UID : NC:bthddi.PFNBTH_REUSE_BRB
-title : PFNBTH_REUSE_BRB
-author : windows-driver-content
-description : The BthReuseBrb function reinitializes a Bluetooth request block (BRB) to be reused.
-old-location : bltooth\bthreusebrb.htm
-old-project : bltooth
-ms.assetid : cdf156a1-1556-441a-ae3d-9a49daf47990
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : bltooth.bthreusebrb, BthReuseBrb callback function [Bluetooth Devices], BthReuseBrb, PFNBTH_REUSE_BRB, PFNBTH_REUSE_BRB, bthddi/BthReuseBrb, bth_funcs_118c4022-448d-4970-ba70-34dcbc488d13.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : bthddi.h
-req.include-header : Bthddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Versions:\_Supported in Windows Vista, and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PMPEG2_TRANSPORT_STRIDE, MPEG2_TRANSPORT_STRIDE"
+UID: NC:bthddi.PFNBTH_REUSE_BRB
+title: PFNBTH_REUSE_BRB
+author: windows-driver-content
+description: The BthReuseBrb function reinitializes a Bluetooth request block (BRB) to be reused.
+old-location: bltooth\bthreusebrb.htm
+old-project: bltooth
+ms.assetid: cdf156a1-1556-441a-ae3d-9a49daf47990
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: bltooth.bthreusebrb, BthReuseBrb callback function [Bluetooth Devices], BthReuseBrb, PFNBTH_REUSE_BRB, PFNBTH_REUSE_BRB, bthddi/BthReuseBrb, bth_funcs_118c4022-448d-4970-ba70-34dcbc488d13.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: bthddi.h
+req.include-header: Bthddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Versions:\_Supported in Windows Vista, and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	bthddi.h
+apiname:
+-	BthReuseBrb
+product: Windows
+targetos: Windows
+req.typenames: "*PMPEG2_TRANSPORT_STRIDE, MPEG2_TRANSPORT_STRIDE"
 ---
 
 

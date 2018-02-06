@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddk._TXN_PARAMETER_BLOCK
-title : "_TXN_PARAMETER_BLOCK"
-author : windows-driver-content
-description : The TXN_PARAMETER_BLOCK structure contains information about a transacted file operation.
-old-location : ifsk\txn_parameter_block.htm
-old-project : ifsk
-ms.assetid : 973f440a-ba17-466a-a9f4-f21c07e854d8
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : "_TXN_PARAMETER_BLOCK, PTXN_PARAMETER_BLOCK, TXN_PARAMETER_BLOCK, ntddk/_TXN_PARAMETER_BLOCK, fileinformationstructures_fd9a870c-f8bf-4a9d-8f7c-1dfbdcbab7aa.xml, ifsk.txn_parameter_block, TXN_PARAMETER_BLOCK structure [Installable File System Drivers], ntddk/PTXN_PARAMETER_BLOCK, PTXN_PARAMETER_BLOCK structure pointer [Installable File System Drivers], *PTXN_PARAMETER_BLOCK"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddk.h
-req.include-header : Ntddk.h, Ntifs.h, FltKernel.h
-req.target-type : Windows
-req.target-min-winverclnt : The TXN_PARAMETER_BLOCK structure is available on Windows Vista and later Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PTXN_PARAMETER_BLOCK, TXN_PARAMETER_BLOCK"
+UID: NS:ntddk._TXN_PARAMETER_BLOCK
+title: "_TXN_PARAMETER_BLOCK"
+author: windows-driver-content
+description: The TXN_PARAMETER_BLOCK structure contains information about a transacted file operation.
+old-location: ifsk\txn_parameter_block.htm
+old-project: ifsk
+ms.assetid: 973f440a-ba17-466a-a9f4-f21c07e854d8
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: "_TXN_PARAMETER_BLOCK, PTXN_PARAMETER_BLOCK, TXN_PARAMETER_BLOCK, ntddk/_TXN_PARAMETER_BLOCK, fileinformationstructures_fd9a870c-f8bf-4a9d-8f7c-1dfbdcbab7aa.xml, ifsk.txn_parameter_block, TXN_PARAMETER_BLOCK structure [Installable File System Drivers], ntddk/PTXN_PARAMETER_BLOCK, PTXN_PARAMETER_BLOCK structure pointer [Installable File System Drivers], *PTXN_PARAMETER_BLOCK"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddk.h
+req.include-header: Ntddk.h, Ntifs.h, FltKernel.h
+req.target-type: Windows
+req.target-min-winverclnt: The TXN_PARAMETER_BLOCK structure is available on Windows Vista and later Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddk.h
+apiname:
+-	TXN_PARAMETER_BLOCK
+product: Windows
+targetos: Windows
+req.typenames: "*PTXN_PARAMETER_BLOCK, TXN_PARAMETER_BLOCK"
 ---
 
 # _TXN_PARAMETER_BLOCK structure

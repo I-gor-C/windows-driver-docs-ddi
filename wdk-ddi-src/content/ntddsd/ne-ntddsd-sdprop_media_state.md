@@ -1,41 +1,46 @@
 ---
-UID : NE:ntddsd.SDPROP_MEDIA_STATE
-title : SDPROP_MEDIA_STATE
-author : windows-driver-content
-description : The SDPROP_MEDIA_STATE enumeration lists the values associated with the media states property.
-old-location : sd\sdprop_media_state.htm
-old-project : SD
-ms.assetid : b59fd639-f2e2-4765-bcc7-01934df3a0bc
-ms.author : windowsdriverdev
-ms.date : 12/18/2017
-ms.keywords : SDPMS_MEDIA_INSERTED, sd-structs_a2064f73-cec7-4703-95ec-8ab8adc0b4b2.xml, SDPROP_MEDIA_STATE enumeration [Buses], SDPROP_MEDIA_STATE, ntddsd/SDPROP_MEDIA_STATE, ntddsd/SDPMS_MEDIA_INSERTED, SDPMS_NO_MEDIA, SD.sdprop_media_state, ntddsd/SDPMS_NO_MEDIA
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : ntddsd.h
-req.include-header : Ntddsd.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SDPROP_MEDIA_STATE
+UID: NE:ntddsd.SDPROP_MEDIA_STATE
+title: SDPROP_MEDIA_STATE
+author: windows-driver-content
+description: The SDPROP_MEDIA_STATE enumeration lists the values associated with the media states property.
+old-location: sd\sdprop_media_state.htm
+old-project: SD
+ms.assetid: b59fd639-f2e2-4765-bcc7-01934df3a0bc
+ms.author: windowsdriverdev
+ms.date: 12/18/2017
+ms.keywords: SDPMS_MEDIA_INSERTED, sd-structs_a2064f73-cec7-4703-95ec-8ab8adc0b4b2.xml, SDPROP_MEDIA_STATE enumeration [Buses], SDPROP_MEDIA_STATE, ntddsd/SDPROP_MEDIA_STATE, ntddsd/SDPMS_MEDIA_INSERTED, SDPMS_NO_MEDIA, SD.sdprop_media_state, ntddsd/SDPMS_NO_MEDIA
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: ntddsd.h
+req.include-header: Ntddsd.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddsd.h
+apiname:
+-	SDPROP_MEDIA_STATE
+product: Windows
+targetos: Windows
+req.typenames: SDPROP_MEDIA_STATE
 ---
 
 # SDPROP_MEDIA_STATE Enumeration
@@ -52,16 +57,16 @@ typedef enum  {
 ## Constants
 
 <table>
-
-<tr>
-<td>SDPMS_MEDIA_INSERTED</td>
-<td>Indicates that the media is inserted.</td>
-</tr>
-
-<tr>
-<td>SDPMS_NO_MEDIA</td>
-<td>Indicates that the media is not present.</td>
-</tr>
+            
+                <tr>
+                    <td>SDPMS_MEDIA_INSERTED</td>
+                    <td>Indicates that the media is inserted.</td>
+                </tr>
+            
+                <tr>
+                    <td>SDPMS_NO_MEDIA</td>
+                    <td>Indicates that the media is not present.</td>
+                </tr>
 </table>
 
 
@@ -70,9 +75,9 @@ typedef enum  {
 | ---- |:---- |
 | **Header** | ntddsd.h (include Ntddsd.h) |
 
-## See Also
+    ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537909">SdBusSubmitRequest</a>
+        <a href="https://msdn.microsoft.com/library/windows/hardware/ff537909">SdBusSubmitRequest</a>
 
 <a href="https://msdn.microsoft.com/09b30bf0-fe85-4ad5-bd3e-113ed3a093ac">SDBUS_REQUEST_PACKET</a>
 

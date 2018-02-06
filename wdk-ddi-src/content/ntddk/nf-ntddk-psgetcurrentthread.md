@@ -1,41 +1,46 @@
 ---
-UID : NF:ntddk.PsGetCurrentThread
-title : PsGetCurrentThread function
-author : windows-driver-content
-description : The PsGetCurrentThread routine identifies the current thread.
-old-location : kernel\psgetcurrentthread.htm
-old-project : kernel
-ms.assetid : 132b30fe-21ef-48dc-8c69-02ccac563b87
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : PsGetCurrentThread, k108_75fb6f47-8a13-4f2c-9b94-a8b7125bbcb6.xml, kernel.psgetcurrentthread, wdm/PsGetCurrentThread, PsGetCurrentThread routine [Kernel-Mode Driver Architecture], ExGetCurrentResourceThread
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntddk.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.PsGetCurrentThread
+title: PsGetCurrentThread function
+author: windows-driver-content
+description: The PsGetCurrentThread routine identifies the current thread.
+old-location: kernel\psgetcurrentthread.htm
+old-project: kernel
+ms.assetid: 132b30fe-21ef-48dc-8c69-02ccac563b87
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: PsGetCurrentThread, k108_75fb6f47-8a13-4f2c-9b94-a8b7125bbcb6.xml, kernel.psgetcurrentthread, wdm/PsGetCurrentThread, PsGetCurrentThread routine [Kernel-Mode Driver Architecture], ExGetCurrentResourceThread
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntddk.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	PsGetCurrentThread
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

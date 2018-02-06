@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.PoFxUnregisterDevice
-title : PoFxUnregisterDevice function
-author : windows-driver-content
-description : The PoFxUnregisterDevice routine removes the registration of a device from the power management framework (PoFx).
-old-location : kernel\pofxunregisterdevice.htm
-old-project : kernel
-ms.assetid : FC4B1B4D-31D8-4E63-A3A5-07A1099997A8
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : PoFxUnregisterDevice, PoFxUnregisterDevice routine [Kernel-Mode Driver Architecture], wdm/PoFxUnregisterDevice, kernel.pofxunregisterdevice
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : 
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ntoskrnl.lib
-req.dll : Ntoskrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.PoFxUnregisterDevice
+title: PoFxUnregisterDevice function
+author: windows-driver-content
+description: The PoFxUnregisterDevice routine removes the registration of a device from the power management framework (PoFx).
+old-location: kernel\pofxunregisterdevice.htm
+old-project: kernel
+ms.assetid: FC4B1B4D-31D8-4E63-A3A5-07A1099997A8
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: PoFxUnregisterDevice, PoFxUnregisterDevice routine [Kernel-Mode Driver Architecture], wdm/PoFxUnregisterDevice, kernel.pofxunregisterdevice
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: 
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ntoskrnl.lib
+req.dll: Ntoskrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Ntoskrnl.exe
+apiname:
+-	PoFxUnregisterDevice
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

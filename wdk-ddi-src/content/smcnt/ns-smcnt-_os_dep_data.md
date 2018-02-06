@@ -1,42 +1,47 @@
 ---
-UID : NS:smcnt._OS_DEP_DATA
-title : "_OS_DEP_DATA"
-author : windows-driver-content
-description : The OS_DEP_DATA structure defines the data that is stored in the OsData member of the SMARTCARD_EXTENSION structure, which holds smart card information that is specific to the operating system.
-old-location : smartcrd\os_dep_data__wdm_.htm
-old-project : smartcrd
-ms.assetid : 76f6f0d1-cb2f-4cda-aeb0-7421e18e3c27
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : POS_DEP_DATA, POS_DEP_DATA structure pointer [Smart Card Reader Devices], scstruct_f7288ef8-a011-44c0-ab86-db7cc6d1a985.xml, OS_DEP_DATA (WDM) structure [Smart Card Reader Devices], smartcrd.os_dep_data__wdm_, OS_DEP_DATA structure [Smart Card Reader Devices], smcnt/OS_DEP_DATA, *POS_DEP_DATA, smcnt/POS_DEP_DATA, _OS_DEP_DATA, OS_DEP_DATA, OS_DEP_DATA (WDM)
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : smcnt.h
-req.include-header : Smcnt.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : OS_DEP_DATA, *POS_DEP_DATA
-req.product : Windows 10 or later.
+UID: NS:smcnt._OS_DEP_DATA
+title: "_OS_DEP_DATA"
+author: windows-driver-content
+description: The OS_DEP_DATA structure defines the data that is stored in the OsData member of the SMARTCARD_EXTENSION structure, which holds smart card information that is specific to the operating system.
+old-location: smartcrd\os_dep_data__wdm_.htm
+old-project: smartcrd
+ms.assetid: 76f6f0d1-cb2f-4cda-aeb0-7421e18e3c27
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: POS_DEP_DATA, POS_DEP_DATA structure pointer [Smart Card Reader Devices], scstruct_f7288ef8-a011-44c0-ab86-db7cc6d1a985.xml, OS_DEP_DATA (WDM) structure [Smart Card Reader Devices], smartcrd.os_dep_data__wdm_, OS_DEP_DATA structure [Smart Card Reader Devices], smcnt/OS_DEP_DATA, *POS_DEP_DATA, smcnt/POS_DEP_DATA, _OS_DEP_DATA, OS_DEP_DATA, OS_DEP_DATA (WDM)
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: smcnt.h
+req.include-header: Smcnt.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	smcnt.h
+apiname:
+-	OS_DEP_DATA
+product: Windows
+targetos: Windows
+req.typenames: OS_DEP_DATA, *POS_DEP_DATA
+req.product: Windows 10 or later.
 ---
 
 # _OS_DEP_DATA structure

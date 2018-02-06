@@ -1,42 +1,47 @@
 ---
-UID : NF:printerextension.IPrinterPropertyBag.GetString
-title : IPrinterPropertyBag::GetString method
-author : windows-driver-content
-description : Reads a string property.
-old-location : print\iprinterpropertybag_getstring.htm
-old-project : print
-ms.assetid : AFC51731-2F30-4214-90EE-A05D48F68530
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : GetString, print.iprinterpropertybag_getstring, IPrinterPropertyBag interface [Print Devices], GetString method, IPrinterPropertyBag::GetString, IPrinterPropertyBag, GetString method [Print Devices], printerextension/IPrinterPropertyBag::GetString, GetString method [Print Devices], IPrinterPropertyBag interface
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : printerextension.h
-req.include-header : Printerextension.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : printerextension.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PrintSchemaSelectionType
-req.product : Windows 10 or later.
+UID: NF:printerextension.IPrinterPropertyBag.GetString
+title: IPrinterPropertyBag::GetString method
+author: windows-driver-content
+description: Reads a string property.
+old-location: print\iprinterpropertybag_getstring.htm
+old-project: print
+ms.assetid: AFC51731-2F30-4214-90EE-A05D48F68530
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: GetString, print.iprinterpropertybag_getstring, IPrinterPropertyBag interface [Print Devices], GetString method, IPrinterPropertyBag::GetString, IPrinterPropertyBag, GetString method [Print Devices], printerextension/IPrinterPropertyBag::GetString, GetString method [Print Devices], IPrinterPropertyBag interface
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: printerextension.h
+req.include-header: Printerextension.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: printerextension.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Printerextension.h
+apiname:
+-	IPrinterPropertyBag.GetString
+product: Windows
+targetos: Windows
+req.typenames: PrintSchemaSelectionType
+req.product: Windows 10 or later.
 ---
 
 

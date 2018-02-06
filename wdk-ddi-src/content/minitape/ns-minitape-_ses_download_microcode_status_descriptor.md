@@ -1,41 +1,46 @@
 ---
-UID : NS:minitape._SES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR
-title : "_SES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR"
-author : windows-driver-content
-description : The SES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR structure specifies the status and additional status of a download microcode.
-old-location : storage\ses_download_microcode_status_descriptor.htm
-old-project : storage
-ms.assetid : af686e7a-9426-4151-8ac4-d95ae1689b4c
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : PSES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR structure pointer [Storage Devices], *PSES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR, SES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR, PSES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR, SES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR structure [Storage Devices], _SES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR, scsi/PSES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR, storage.ses_download_microcode_status_descriptor, scsi/SES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : minitape.h
-req.include-header : Minitape.h, Storport.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 10, version 1709 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR, SES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR"
+UID: NS:minitape._SES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR
+title: "_SES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR"
+author: windows-driver-content
+description: The SES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR structure specifies the status and additional status of a download microcode.
+old-location: storage\ses_download_microcode_status_descriptor.htm
+old-project: storage
+ms.assetid: af686e7a-9426-4151-8ac4-d95ae1689b4c
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: PSES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR structure pointer [Storage Devices], *PSES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR, SES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR, PSES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR, SES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR structure [Storage Devices], _SES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR, scsi/PSES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR, storage.ses_download_microcode_status_descriptor, scsi/SES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: minitape.h
+req.include-header: Minitape.h, Storport.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 10, version 1709 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	scsi.h
+apiname:
+-	SES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR
+product: Windows
+targetos: Windows
+req.typenames: "*PSES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR, SES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR"
 ---
 
 # _SES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR structure

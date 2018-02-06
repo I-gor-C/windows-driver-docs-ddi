@@ -1,42 +1,50 @@
 ---
-UID : NF:wdfusb.WdfUsbInterfaceGetConfiguredPipe
-title : WdfUsbInterfaceGetConfiguredPipe function
-author : windows-driver-content
-description : The WdfUsbInterfaceGetConfiguredPipe method returns a handle to the framework pipe object that is associated with a specified USB device interface and pipe index. Optionally, the method also returns information about the pipe.
-old-location : wdf\wdfusbinterfacegetconfiguredpipe.htm
-old-project : wdf
-ms.assetid : 0836a969-e484-485f-9b65-202c177b4f43
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : PFN_WDFUSBINTERFACEGETCONFIGUREDPIPE, WdfUsbInterfaceGetConfiguredPipe method, wdfusb/WdfUsbInterfaceGetConfiguredPipe, WdfUsbInterfaceGetConfiguredPipe, wdf.wdfusbinterfacegetconfiguredpipe, kmdf.wdfusbinterfacegetconfiguredpipe, DFUsbRef_65a97d99-39c5-4750-95e1-6c9c20c169bb.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfusb.h
-req.include-header : Wdfusb.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2, UsbKmdfIrql, UsbKmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfusb.WdfUsbInterfaceGetConfiguredPipe
+title: WdfUsbInterfaceGetConfiguredPipe function
+author: windows-driver-content
+description: The WdfUsbInterfaceGetConfiguredPipe method returns a handle to the framework pipe object that is associated with a specified USB device interface and pipe index. Optionally, the method also returns information about the pipe.
+old-location: wdf\wdfusbinterfacegetconfiguredpipe.htm
+old-project: wdf
+ms.assetid: 0836a969-e484-485f-9b65-202c177b4f43
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: PFN_WDFUSBINTERFACEGETCONFIGUREDPIPE, WdfUsbInterfaceGetConfiguredPipe method, wdfusb/WdfUsbInterfaceGetConfiguredPipe, WdfUsbInterfaceGetConfiguredPipe, wdf.wdfusbinterfacegetconfiguredpipe, kmdf.wdfusbinterfacegetconfiguredpipe, DFUsbRef_65a97d99-39c5-4750-95e1-6c9c20c169bb.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfusb.h
+req.include-header: Wdfusb.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2, UsbKmdfIrql, UsbKmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+-	WUDFx02000.dll
+-	WUDFx02000.dll.dll
+apiname:
+-	WdfUsbInterfaceGetConfiguredPipe
+product: Windows
+targetos: Windows
+req.typenames: WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
+req.product: Windows 10 or later.
 ---
 
 

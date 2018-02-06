@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.KeRegisterNmiCallback
-title : KeRegisterNmiCallback function
-author : windows-driver-content
-description : The KeRegisterNmiCallback routine registers a routine to be called whenever a nonmaskable interrupt (NMI) occurs.
-old-location : kernel\keregisternmicallback.htm
-old-project : kernel
-ms.assetid : 46e666a6-be4c-40fb-b9e1-00ced9fb4d05
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : k105_4abdb9bc-8548-42f3-8305-c116ce15e0a4.xml, KeRegisterNmiCallback, kernel.keregisternmicallback, KeRegisterNmiCallback routine [Kernel-Mode Driver Architecture], wdm/KeRegisterNmiCallback
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows  Server 2003 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : IrqlKeApcLte2, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL (see Remarks section)"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.KeRegisterNmiCallback
+title: KeRegisterNmiCallback function
+author: windows-driver-content
+description: The KeRegisterNmiCallback routine registers a routine to be called whenever a nonmaskable interrupt (NMI) occurs.
+old-location: kernel\keregisternmicallback.htm
+old-project: kernel
+ms.assetid: 46e666a6-be4c-40fb-b9e1-00ced9fb4d05
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: k105_4abdb9bc-8548-42f3-8305-c116ce15e0a4.xml, KeRegisterNmiCallback, kernel.keregisternmicallback, KeRegisterNmiCallback routine [Kernel-Mode Driver Architecture], wdm/KeRegisterNmiCallback
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows  Server 2003 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: IrqlKeApcLte2, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL (see Remarks section)"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	KeRegisterNmiCallback
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

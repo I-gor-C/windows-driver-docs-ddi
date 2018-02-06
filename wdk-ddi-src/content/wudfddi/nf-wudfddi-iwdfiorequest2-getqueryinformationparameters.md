@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFIoRequest2.GetQueryInformationParameters
-title : IWDFIoRequest2::GetQueryInformationParameters method
-author : windows-driver-content
-description : The GetQueryInformationParameters method retrieves parameters that are associated with a WdfRequestQueryInformation-typed I/O request.
-old-location : wdf\iwdfiorequest2_getqueryinformationparameters.htm
-old-project : wdf
-ms.assetid : e189d2f6-ef1c-45ed-8b55-8aae0661a426
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : IWDFIoRequest2::GetQueryInformationParameters, GetQueryInformationParameters method, IWDFIoRequest2 interface, UMDFRequestObjectRef_595d2b4c-1286-4243-b440-0efaae03980d.xml, IWDFIoRequest2, GetQueryInformationParameters method, IWDFIoRequest2 interface, GetQueryInformationParameters method, wudfddi/IWDFIoRequest2::GetQueryInformationParameters, GetQueryInformationParameters, umdf.iwdfiorequest2_getqueryinformationparameters, wdf.iwdfiorequest2_getqueryinformationparameters
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.9
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFIoRequest2.GetQueryInformationParameters
+title: IWDFIoRequest2::GetQueryInformationParameters method
+author: windows-driver-content
+description: The GetQueryInformationParameters method retrieves parameters that are associated with a WdfRequestQueryInformation-typed I/O request.
+old-location: wdf\iwdfiorequest2_getqueryinformationparameters.htm
+old-project: wdf
+ms.assetid: e189d2f6-ef1c-45ed-8b55-8aae0661a426
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: IWDFIoRequest2::GetQueryInformationParameters, GetQueryInformationParameters method, IWDFIoRequest2 interface, UMDFRequestObjectRef_595d2b4c-1286-4243-b440-0efaae03980d.xml, IWDFIoRequest2, GetQueryInformationParameters method, IWDFIoRequest2 interface, GetQueryInformationParameters method, wudfddi/IWDFIoRequest2::GetQueryInformationParameters, GetQueryInformationParameters, umdf.iwdfiorequest2_getqueryinformationparameters, wdf.iwdfiorequest2_getqueryinformationparameters
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.9
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFIoRequest2.GetQueryInformationParameters
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

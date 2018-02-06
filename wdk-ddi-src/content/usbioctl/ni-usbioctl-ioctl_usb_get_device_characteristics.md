@@ -1,42 +1,47 @@
 ---
-UID : NI:usbioctl.IOCTL_USB_GET_DEVICE_CHARACTERISTICS
-title : IOCTL_USB_GET_DEVICE_CHARACTERISTICS
-author : windows-driver-content
-description : The client driver sends this request to determine general characteristics about a USB device, such as maximum send and receive delays for any request.
-old-location : buses\_ioctl_usb_get_device_characteristics.htm
-old-project : usbref
-ms.assetid : FEEF13FE-E7CF-4513-8E16-B1E46283883C
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : buses._ioctl_usb_get_device_characteristics, IOCTL_USB_GET_DEVICE_CHARACTERISTICS control code [Buses], IOCTL_USB_GET_DEVICE_CHARACTERISTICS, usbioctl/ IOCTL_USB_GET_DEVICE_CHARACTERISTICS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : usbioctl.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : USB_HUB_TYPE
-req.product : Windows 10 or later.
+UID: NI:usbioctl.IOCTL_USB_GET_DEVICE_CHARACTERISTICS
+title: IOCTL_USB_GET_DEVICE_CHARACTERISTICS
+author: windows-driver-content
+description: The client driver sends this request to determine general characteristics about a USB device, such as maximum send and receive delays for any request.
+old-location: buses\_ioctl_usb_get_device_characteristics.htm
+old-project: usbref
+ms.assetid: FEEF13FE-E7CF-4513-8E16-B1E46283883C
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: buses._ioctl_usb_get_device_characteristics, IOCTL_USB_GET_DEVICE_CHARACTERISTICS control code [Buses], IOCTL_USB_GET_DEVICE_CHARACTERISTICS, usbioctl/ IOCTL_USB_GET_DEVICE_CHARACTERISTICS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: usbioctl.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Usbioctl.h
+apiname:
+-	IOCTL_USB_GET_DEVICE_CHARACTERISTICS
+product: Windows
+targetos: Windows
+req.typenames: USB_HUB_TYPE
+req.product: Windows 10 or later.
 ---
 
 # IOCTL_USB_GET_DEVICE_CHARACTERISTICS IOCTL

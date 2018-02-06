@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddcdvd.IOCTL_DVD_GET_REGION
-title : IOCTL_DVD_GET_REGION
-author : windows-driver-content
-description : Returns Region Playback Control (RPC) information for a DVD device, such as whether the player supports the RPC2 standard, the current region code of the player, and the remaining number of times the player's region code can be changed by the user.
-old-location : storage\ioctl_dvd_get_region.htm
-old-project : storage
-ms.assetid : 2c3d6962-1d72-47e7-aa7c-226e5a3aa3d4
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_dvd_get_region, IOCTL_DVD_GET_REGION control code [Storage Devices], IOCTL_DVD_GET_REGION, ntddcdvd/IOCTL_DVD_GET_REGION, k307_74494f73-c80e-4ca6-adec-03d4ca6d335e.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddcdvd.h
-req.include-header : Ntddcdvd.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DVD_STRUCTURE_FORMAT, *PDVD_STRUCTURE_FORMAT
+UID: NI:ntddcdvd.IOCTL_DVD_GET_REGION
+title: IOCTL_DVD_GET_REGION
+author: windows-driver-content
+description: Returns Region Playback Control (RPC) information for a DVD device, such as whether the player supports the RPC2 standard, the current region code of the player, and the remaining number of times the player's region code can be changed by the user.
+old-location: storage\ioctl_dvd_get_region.htm
+old-project: storage
+ms.assetid: 2c3d6962-1d72-47e7-aa7c-226e5a3aa3d4
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_dvd_get_region, IOCTL_DVD_GET_REGION control code [Storage Devices], IOCTL_DVD_GET_REGION, ntddcdvd/IOCTL_DVD_GET_REGION, k307_74494f73-c80e-4ca6-adec-03d4ca6d335e.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddcdvd.h
+req.include-header: Ntddcdvd.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddcdvd.h
+apiname:
+-	IOCTL_DVD_GET_REGION
+product: Windows
+targetos: Windows
+req.typenames: DVD_STRUCTURE_FORMAT, *PDVD_STRUCTURE_FORMAT
 ---
 
 # IOCTL_DVD_GET_REGION IOCTL

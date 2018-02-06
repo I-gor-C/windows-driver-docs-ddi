@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsAcquireResetValue
-title : KsAcquireResetValue function
-author : windows-driver-content
-description : The KsAcquireResetValue function retrieves the current reset state from an IOCTL_KS_RESET_STATE IRP.
-old-location : stream\ksacquireresetvalue.htm
-old-project : stream
-ms.assetid : 80a990e3-3637-4837-8800-42d5848e01cf
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KsAcquireResetValue, KsAcquireResetValue function [Streaming Media Devices], stream.ksacquireresetvalue, ksfunc_fbfd5f64-6842-4559-9829-05797fda4fa2.xml, ks/KsAcquireResetValue
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsAcquireResetValue
+title: KsAcquireResetValue function
+author: windows-driver-content
+description: The KsAcquireResetValue function retrieves the current reset state from an IOCTL_KS_RESET_STATE IRP.
+old-location: stream\ksacquireresetvalue.htm
+old-project: stream
+ms.assetid: 80a990e3-3637-4837-8800-42d5848e01cf
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KsAcquireResetValue, KsAcquireResetValue function [Streaming Media Devices], stream.ksacquireresetvalue, ksfunc_fbfd5f64-6842-4559-9829-05797fda4fa2.xml, ks/KsAcquireResetValue
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsAcquireResetValue
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugOutputCallbacks2.GetInterestMask
-title : IDebugOutputCallbacks2::GetInterestMask method
-author : windows-driver-content
-description : Allows the callback object to describe which kinds of output notifications it wants to receive.
-old-location : debugger\idebugoutputcallbacks2_getinterestmask.htm
-old-project : debugger
-ms.assetid : BA710D92-63F4-4B4B-868A-58074FC052E9
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugOutputCallbacks2, dbgeng/IDebugOutputCallbacks2::GetInterestMask, GetInterestMask, IDebugOutputCallbacks2 interface [Windows Debugging], GetInterestMask method, GetInterestMask method [Windows Debugging], GetInterestMask method [Windows Debugging], IDebugOutputCallbacks2 interface, IDebugOutputCallbacks2::GetInterestMask, DEBUG_OUTCBI_EXPLICIT_FLUSH, DEBUG_OUTCBI_ANY_FORMAT, DEBUG_OUTCBI_TEXT, DEBUG_OUTCBI_DML, debugger.idebugoutputcallbacks2_getinterestmask
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugOutputCallbacks2.GetInterestMask
+title: IDebugOutputCallbacks2::GetInterestMask method
+author: windows-driver-content
+description: Allows the callback object to describe which kinds of output notifications it wants to receive.
+old-location: debugger\idebugoutputcallbacks2_getinterestmask.htm
+old-project: debugger
+ms.assetid: BA710D92-63F4-4B4B-868A-58074FC052E9
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugOutputCallbacks2, dbgeng/IDebugOutputCallbacks2::GetInterestMask, GetInterestMask, IDebugOutputCallbacks2 interface [Windows Debugging], GetInterestMask method, GetInterestMask method [Windows Debugging], GetInterestMask method [Windows Debugging], IDebugOutputCallbacks2 interface, IDebugOutputCallbacks2::GetInterestMask, DEBUG_OUTCBI_EXPLICIT_FLUSH, DEBUG_OUTCBI_ANY_FORMAT, DEBUG_OUTCBI_TEXT, DEBUG_OUTCBI_DML, debugger.idebugoutputcallbacks2_getinterestmask
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugOutputCallbacks2.GetInterestMask
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

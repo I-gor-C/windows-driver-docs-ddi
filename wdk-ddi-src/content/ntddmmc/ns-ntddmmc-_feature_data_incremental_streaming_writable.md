@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddmmc._FEATURE_DATA_INCREMENTAL_STREAMING_WRITABLE
-title : "_FEATURE_DATA_INCREMENTAL_STREAMING_WRITABLE"
-author : windows-driver-content
-description : The FEATURE_DATA_INCREMENTAL_STREAMING_WRITABLE structure contains information about the Incremental Streaming Writable feature.
-old-location : storage\feature_data_incremental_streaming_writable.htm
-old-project : storage
-ms.assetid : 5e3918a4-8cc6-45b9-acb1-3a2b2088d4b9
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : FEATURE_DATA_INCREMENTAL_STREAMING_WRITABLE structure [Storage Devices], _FEATURE_DATA_INCREMENTAL_STREAMING_WRITABLE, *PFEATURE_DATA_INCREMENTAL_STREAMING_WRITABLE, structs-CD-ROM_ad0cd0d4-fa5d-4ad4-82d9-7945eaa2a2cd.xml, FEATURE_DATA_INCREMENTAL_STREAMING_WRITABLE, ntddmmc/FEATURE_DATA_INCREMENTAL_STREAMING_WRITABLE, ntddmmc/PFEATURE_DATA_INCREMENTAL_STREAMING_WRITABLE, PFEATURE_DATA_INCREMENTAL_STREAMING_WRITABLE, PFEATURE_DATA_INCREMENTAL_STREAMING_WRITABLE structure pointer [Storage Devices], storage.feature_data_incremental_streaming_writable
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddmmc.h
-req.include-header : Ntddcdrm.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FEATURE_DATA_INCREMENTAL_STREAMING_WRITABLE, *PFEATURE_DATA_INCREMENTAL_STREAMING_WRITABLE
+UID: NS:ntddmmc._FEATURE_DATA_INCREMENTAL_STREAMING_WRITABLE
+title: "_FEATURE_DATA_INCREMENTAL_STREAMING_WRITABLE"
+author: windows-driver-content
+description: The FEATURE_DATA_INCREMENTAL_STREAMING_WRITABLE structure contains information about the Incremental Streaming Writable feature.
+old-location: storage\feature_data_incremental_streaming_writable.htm
+old-project: storage
+ms.assetid: 5e3918a4-8cc6-45b9-acb1-3a2b2088d4b9
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: FEATURE_DATA_INCREMENTAL_STREAMING_WRITABLE structure [Storage Devices], _FEATURE_DATA_INCREMENTAL_STREAMING_WRITABLE, *PFEATURE_DATA_INCREMENTAL_STREAMING_WRITABLE, structs-CD-ROM_ad0cd0d4-fa5d-4ad4-82d9-7945eaa2a2cd.xml, FEATURE_DATA_INCREMENTAL_STREAMING_WRITABLE, ntddmmc/FEATURE_DATA_INCREMENTAL_STREAMING_WRITABLE, ntddmmc/PFEATURE_DATA_INCREMENTAL_STREAMING_WRITABLE, PFEATURE_DATA_INCREMENTAL_STREAMING_WRITABLE, PFEATURE_DATA_INCREMENTAL_STREAMING_WRITABLE structure pointer [Storage Devices], storage.feature_data_incremental_streaming_writable
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddmmc.h
+req.include-header: Ntddcdrm.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddmmc.h
+apiname:
+-	FEATURE_DATA_INCREMENTAL_STREAMING_WRITABLE
+product: Windows
+targetos: Windows
+req.typenames: FEATURE_DATA_INCREMENTAL_STREAMING_WRITABLE, *PFEATURE_DATA_INCREMENTAL_STREAMING_WRITABLE
 ---
 
 # _FEATURE_DATA_INCREMENTAL_STREAMING_WRITABLE structure

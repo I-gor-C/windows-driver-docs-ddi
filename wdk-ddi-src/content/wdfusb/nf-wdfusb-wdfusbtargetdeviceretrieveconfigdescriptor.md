@@ -1,42 +1,50 @@
 ---
-UID : NF:wdfusb.WdfUsbTargetDeviceRetrieveConfigDescriptor
-title : WdfUsbTargetDeviceRetrieveConfigDescriptor function
-author : windows-driver-content
-description : The WdfUsbTargetDeviceRetrieveConfigDescriptor method retrieves the USB configuration descriptor for the USB device that is associated with a specified framework USB device object.
-old-location : wdf\wdfusbtargetdeviceretrieveconfigdescriptor.htm
-old-project : wdf
-ms.assetid : 4d22384d-757a-499d-a82c-ae846a6372cc
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : kmdf.wdfusbtargetdeviceretrieveconfigdescriptor, WdfUsbTargetDeviceRetrieveConfigDescriptor, PFN_WDFUSBTARGETDEVICERETRIEVECONFIGDESCRIPTOR, wdf.wdfusbtargetdeviceretrieveconfigdescriptor, wdfusb/WdfUsbTargetDeviceRetrieveConfigDescriptor, DFUsbRef_6c3748fe-16c0-4151-8cbd-42c5882475eb.xml, WdfUsbTargetDeviceRetrieveConfigDescriptor method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfusb.h
-req.include-header : Wdfusb.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2, UsbKmdfIrql, UsbKmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfusb.WdfUsbTargetDeviceRetrieveConfigDescriptor
+title: WdfUsbTargetDeviceRetrieveConfigDescriptor function
+author: windows-driver-content
+description: The WdfUsbTargetDeviceRetrieveConfigDescriptor method retrieves the USB configuration descriptor for the USB device that is associated with a specified framework USB device object.
+old-location: wdf\wdfusbtargetdeviceretrieveconfigdescriptor.htm
+old-project: wdf
+ms.assetid: 4d22384d-757a-499d-a82c-ae846a6372cc
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: kmdf.wdfusbtargetdeviceretrieveconfigdescriptor, WdfUsbTargetDeviceRetrieveConfigDescriptor, PFN_WDFUSBTARGETDEVICERETRIEVECONFIGDESCRIPTOR, wdf.wdfusbtargetdeviceretrieveconfigdescriptor, wdfusb/WdfUsbTargetDeviceRetrieveConfigDescriptor, DFUsbRef_6c3748fe-16c0-4151-8cbd-42c5882475eb.xml, WdfUsbTargetDeviceRetrieveConfigDescriptor method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfusb.h
+req.include-header: Wdfusb.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2, UsbKmdfIrql, UsbKmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+-	WUDFx02000.dll
+-	WUDFx02000.dll.dll
+apiname:
+-	WdfUsbTargetDeviceRetrieveConfigDescriptor
+product: Windows
+targetos: Windows
+req.typenames: WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
+req.product: Windows 10 or later.
 ---
 
 

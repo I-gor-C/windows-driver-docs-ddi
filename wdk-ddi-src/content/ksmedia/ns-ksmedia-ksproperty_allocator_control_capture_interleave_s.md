@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.KSPROPERTY_ALLOCATOR_CONTROL_CAPTURE_INTERLEAVE_S
-title : KSPROPERTY_ALLOCATOR_CONTROL_CAPTURE_INTERLEAVE_S
-author : windows-driver-content
-description : The KSPROPERTY_ALLOCATOR_CONTROL_CAPTURE_INTERLEAVE_S structure specifies if interleaved capture is possible.
-old-location : stream\ksproperty_allocator_control_capture_interleave_s.htm
-old-project : stream
-ms.assetid : e3885241-c6a4-417f-a7cf-38d221307f8e
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : "*PKSPROPERTY_ALLOCATOR_CONTROL_CAPTURE_INTERLEAVE_S, KSPROPERTY_ALLOCATOR_CONTROL_CAPTURE_INTERLEAVE_S, PKSPROPERTY_ALLOCATOR_CONTROL_CAPTURE_INTERLEAVE_S, ksmedia/KSPROPERTY_ALLOCATOR_CONTROL_CAPTURE_INTERLEAVE_S, stream.ksproperty_allocator_control_capture_interleave_s, KSPROPERTY_ALLOCATOR_CONTROL_CAPTURE_INTERLEAVE_S structure [Streaming Media Devices], ksmedia/PKSPROPERTY_ALLOCATOR_CONTROL_CAPTURE_INTERLEAVE_S, vidcapstruct_d012cbc9-457f-4689-943a-5dcf5eb33c46.xml, PKSPROPERTY_ALLOCATOR_CONTROL_CAPTURE_INTERLEAVE_S structure pointer [Streaming Media Devices]"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKSPROPERTY_ALLOCATOR_CONTROL_CAPTURE_INTERLEAVE_S, KSPROPERTY_ALLOCATOR_CONTROL_CAPTURE_INTERLEAVE_S"
+UID: NS:ksmedia.KSPROPERTY_ALLOCATOR_CONTROL_CAPTURE_INTERLEAVE_S
+title: KSPROPERTY_ALLOCATOR_CONTROL_CAPTURE_INTERLEAVE_S
+author: windows-driver-content
+description: The KSPROPERTY_ALLOCATOR_CONTROL_CAPTURE_INTERLEAVE_S structure specifies if interleaved capture is possible.
+old-location: stream\ksproperty_allocator_control_capture_interleave_s.htm
+old-project: stream
+ms.assetid: e3885241-c6a4-417f-a7cf-38d221307f8e
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: "*PKSPROPERTY_ALLOCATOR_CONTROL_CAPTURE_INTERLEAVE_S, KSPROPERTY_ALLOCATOR_CONTROL_CAPTURE_INTERLEAVE_S, PKSPROPERTY_ALLOCATOR_CONTROL_CAPTURE_INTERLEAVE_S, ksmedia/KSPROPERTY_ALLOCATOR_CONTROL_CAPTURE_INTERLEAVE_S, stream.ksproperty_allocator_control_capture_interleave_s, KSPROPERTY_ALLOCATOR_CONTROL_CAPTURE_INTERLEAVE_S structure [Streaming Media Devices], ksmedia/PKSPROPERTY_ALLOCATOR_CONTROL_CAPTURE_INTERLEAVE_S, vidcapstruct_d012cbc9-457f-4689-943a-5dcf5eb33c46.xml, PKSPROPERTY_ALLOCATOR_CONTROL_CAPTURE_INTERLEAVE_S structure pointer [Streaming Media Devices]"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	KSPROPERTY_ALLOCATOR_CONTROL_CAPTURE_INTERLEAVE_S
+product: Windows
+targetos: Windows
+req.typenames: "*PKSPROPERTY_ALLOCATOR_CONTROL_CAPTURE_INTERLEAVE_S, KSPROPERTY_ALLOCATOR_CONTROL_CAPTURE_INTERLEAVE_S"
 ---
 
 # KSPROPERTY_ALLOCATOR_CONTROL_CAPTURE_INTERLEAVE_S structure

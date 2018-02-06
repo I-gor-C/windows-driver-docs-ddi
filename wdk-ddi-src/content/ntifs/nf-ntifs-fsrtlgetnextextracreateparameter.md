@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.FsRtlGetNextExtraCreateParameter
-title : FsRtlGetNextExtraCreateParameter function
-author : windows-driver-content
-description : The FsRtlGetNextExtraCreateParameter routine returns a pointer to the next (or first) extra create parameter (ECP) context structure in a given ECP list.
-old-location : ifsk\fsrtlgetnextextracreateparameter.htm
-old-project : ifsk
-ms.assetid : b9dd2890-4b2d-4fe1-88bb-30d94ff36c44
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : fsrtlref_096516d0-6888-4dfa-98b3-b7b67794bf08.xml, FsRtlGetNextExtraCreateParameter, FsRtlGetNextExtraCreateParameter routine [Installable File System Drivers], ntifs/FsRtlGetNextExtraCreateParameter, ifsk.fsrtlgetnextextracreateparameter
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : The FsRtlGetNextExtraCreateParameter routine is available starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.FsRtlGetNextExtraCreateParameter
+title: FsRtlGetNextExtraCreateParameter function
+author: windows-driver-content
+description: The FsRtlGetNextExtraCreateParameter routine returns a pointer to the next (or first) extra create parameter (ECP) context structure in a given ECP list.
+old-location: ifsk\fsrtlgetnextextracreateparameter.htm
+old-project: ifsk
+ms.assetid: b9dd2890-4b2d-4fe1-88bb-30d94ff36c44
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: fsrtlref_096516d0-6888-4dfa-98b3-b7b67794bf08.xml, FsRtlGetNextExtraCreateParameter, FsRtlGetNextExtraCreateParameter routine [Installable File System Drivers], ntifs/FsRtlGetNextExtraCreateParameter, ifsk.fsrtlgetnextextracreateparameter
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: The FsRtlGetNextExtraCreateParameter routine is available starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	FsRtlGetNextExtraCreateParameter
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

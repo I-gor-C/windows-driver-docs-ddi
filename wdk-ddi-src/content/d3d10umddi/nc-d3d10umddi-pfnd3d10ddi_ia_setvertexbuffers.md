@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3D10DDI_IA_SETVERTEXBUFFERS
-title : PFND3D10DDI_IA_SETVERTEXBUFFERS
-author : windows-driver-content
-description : The IaSetVertexBuffers function sets vertex buffers for an input assembler.
-old-location : display\iasetvertexbuffers.htm
-old-project : display
-ms.assetid : 3d5a7ea1-08c2-4594-93bc-97b985cd16dc
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.iasetvertexbuffers, IaSetVertexBuffers callback function [Display Devices], IaSetVertexBuffers, PFND3D10DDI_IA_SETVERTEXBUFFERS, PFND3D10DDI_IA_SETVERTEXBUFFERS, d3d10umddi/IaSetVertexBuffers, UserModeDisplayDriverDx10_Functions_12104a04-1497-42c6-a5e1-6573b33a43d3.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3D10DDI_IA_SETVERTEXBUFFERS
+title: PFND3D10DDI_IA_SETVERTEXBUFFERS
+author: windows-driver-content
+description: The IaSetVertexBuffers function sets vertex buffers for an input assembler.
+old-location: display\iasetvertexbuffers.htm
+old-project: display
+ms.assetid: 3d5a7ea1-08c2-4594-93bc-97b985cd16dc
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.iasetvertexbuffers, IaSetVertexBuffers callback function [Display Devices], IaSetVertexBuffers, PFND3D10DDI_IA_SETVERTEXBUFFERS, PFND3D10DDI_IA_SETVERTEXBUFFERS, d3d10umddi/IaSetVertexBuffers, UserModeDisplayDriverDx10_Functions_12104a04-1497-42c6-a5e1-6573b33a43d3.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	IaSetVertexBuffers
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

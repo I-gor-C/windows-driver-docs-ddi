@@ -1,42 +1,47 @@
 ---
-UID : NC:wdm.IO_CSQ_COMPLETE_CANCELED_IRP
-title : IO_CSQ_COMPLETE_CANCELED_IRP
-author : windows-driver-content
-description : The CsqCompleteCanceledIrp routine is used by the system to signal to the driver that it can complete a canceled IRP.
-old-location : kernel\csqcompletecanceledirp.htm
-old-project : kernel
-ms.assetid : ed2f8529-dfc7-4db5-b90c-c0bf8840dc70
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.csqcompletecanceledirp, CsqCompleteCanceledIrp routine [Kernel-Mode Driver Architecture], CsqCompleteCanceledIrp, IO_CSQ_COMPLETE_CANCELED_IRP, IO_CSQ_COMPLETE_CANCELED_IRP, wdm/CsqCompleteCanceledIrp, DrvrRtns_07239a13-c445-4f75-8765-ff5806515ecb.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
-req.product : Windows 10 or later.
+UID: NC:wdm.IO_CSQ_COMPLETE_CANCELED_IRP
+title: IO_CSQ_COMPLETE_CANCELED_IRP
+author: windows-driver-content
+description: The CsqCompleteCanceledIrp routine is used by the system to signal to the driver that it can complete a canceled IRP.
+old-location: kernel\csqcompletecanceledirp.htm
+old-project: kernel
+ms.assetid: ed2f8529-dfc7-4db5-b90c-c0bf8840dc70
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.csqcompletecanceledirp, CsqCompleteCanceledIrp routine [Kernel-Mode Driver Architecture], CsqCompleteCanceledIrp, IO_CSQ_COMPLETE_CANCELED_IRP, IO_CSQ_COMPLETE_CANCELED_IRP, wdm/CsqCompleteCanceledIrp, DrvrRtns_07239a13-c445-4f75-8765-ff5806515ecb.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Wdm.h
+apiname:
+-	CsqCompleteCanceledIrp
+product: Windows
+targetos: Windows
+req.typenames: WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+req.product: Windows 10 or later.
 ---
 
 

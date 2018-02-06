@@ -1,12 +1,12 @@
 ---
-UID : NA:sdplib
-ms.assetid : d5daf162-7204-3a25-aff6-0e76f58d3a9f
-ms.author : windowsdriverdev
-ms.date : 01/18/18
-ms.keywords : 
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : portal
+UID: NA:sdplib
+ms.assetid: d5daf162-7204-3a25-aff6-0e76f58d3a9f
+ms.author: windowsdriverdev
+ms.date: 01/18/18
+ms.keywords: 
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: portal
 ---
 
 # sdplib.h header

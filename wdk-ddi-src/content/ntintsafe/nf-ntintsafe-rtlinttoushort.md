@@ -1,41 +1,46 @@
 ---
-UID : NF:ntintsafe.RtlIntToUShort
-title : RtlIntToUShort function
-author : windows-driver-content
-description : Converts a value of type INT to a value of type USHORT.
-old-location : kernel\rtlinttoushort.htm
-old-project : kernel
-ms.assetid : 52571477-80F5-4848-8BCC-AFA70140FABE
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : RtlIntToUShort function [Kernel-Mode Driver Architecture], ntintsafe/RtlIntToUShort, RtlIntToUShort, kernel.rtlinttoushort
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntintsafe.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PUBLIC_OBJECT_TYPE_INFORMATION, *PPUBLIC_OBJECT_TYPE_INFORMATION
+UID: NF:ntintsafe.RtlIntToUShort
+title: RtlIntToUShort function
+author: windows-driver-content
+description: Converts a value of type INT to a value of type USHORT.
+old-location: kernel\rtlinttoushort.htm
+old-project: kernel
+ms.assetid: 52571477-80F5-4848-8BCC-AFA70140FABE
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: RtlIntToUShort function [Kernel-Mode Driver Architecture], ntintsafe/RtlIntToUShort, RtlIntToUShort, kernel.rtlinttoushort
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntintsafe.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntintsafe.h
+apiname:
+-	RtlIntToUShort
+product: Windows
+targetos: Windows
+req.typenames: PUBLIC_OBJECT_TYPE_INFORMATION, *PPUBLIC_OBJECT_TYPE_INFORMATION
 ---
 
 

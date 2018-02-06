@@ -1,42 +1,47 @@
 ---
-UID : NC:ucxusbdevice.EVT_UCX_USBDEVICE_ENDPOINT_ADD
-title : EVT_UCX_USBDEVICE_ENDPOINT_ADD
-author : windows-driver-content
-description : The client driver's implementation that UCX calls to add a new endpoint for a USB device.
-old-location : buses\evt_ucx_usbdevice_endpoint_add.htm
-old-project : usbref
-ms.assetid : 1cbafa33-e957-4865-9d4f-26f12827a941
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : buses.evt_ucx_usbdevice_endpoint_add, EvtUcxUsbDeviceEndpointAdd callback function [Buses], EvtUcxUsbDeviceEndpointAdd, EVT_UCX_USBDEVICE_ENDPOINT_ADD, EVT_UCX_USBDEVICE_ENDPOINT_ADD, ucxusbdevice/EvtUcxUsbDeviceEndpointAdd, PEVT_UCX_USBDEVICE_ENDPOINT_ADD callback function pointer [Buses], PEVT_UCX_USBDEVICE_ENDPOINT_ADD
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ucxusbdevice.h
-req.include-header : Ucxclass.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSTREAM_INFO, STREAM_INFO"
-req.product : Windows 10 or later.
+UID: NC:ucxusbdevice.EVT_UCX_USBDEVICE_ENDPOINT_ADD
+title: EVT_UCX_USBDEVICE_ENDPOINT_ADD
+author: windows-driver-content
+description: The client driver's implementation that UCX calls to add a new endpoint for a USB device.
+old-location: buses\evt_ucx_usbdevice_endpoint_add.htm
+old-project: usbref
+ms.assetid: 1cbafa33-e957-4865-9d4f-26f12827a941
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: buses.evt_ucx_usbdevice_endpoint_add, EvtUcxUsbDeviceEndpointAdd callback function [Buses], EvtUcxUsbDeviceEndpointAdd, EVT_UCX_USBDEVICE_ENDPOINT_ADD, EVT_UCX_USBDEVICE_ENDPOINT_ADD, ucxusbdevice/EvtUcxUsbDeviceEndpointAdd, PEVT_UCX_USBDEVICE_ENDPOINT_ADD callback function pointer [Buses], PEVT_UCX_USBDEVICE_ENDPOINT_ADD
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ucxusbdevice.h
+req.include-header: Ucxclass.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	ucxusbdevice.h
+apiname:
+-	PEVT_UCX_USBDEVICE_ENDPOINT_ADD
+product: Windows
+targetos: Windows
+req.typenames: "*PSTREAM_INFO, STREAM_INFO"
+req.product: Windows 10 or later.
 ---
 
 

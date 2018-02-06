@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3D10DDI_CALCPRIVATESHADERRESOURCEVIEWSIZE
-title : PFND3D10DDI_CALCPRIVATESHADERRESOURCEVIEWSIZE
-author : windows-driver-content
-description : The CalcPrivateShaderResourceViewSize function determines the size of the user-mode display driver's private region of memory (that is, the size of internal driver structures, not the size of the resource video memory) for a shader resource view.
-old-location : display\calcprivateshaderresourceviewsize.htm
-old-project : display
-ms.assetid : 2abf5ca9-974b-40d7-b71c-43c4fb33dd7c
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.calcprivateshaderresourceviewsize, CalcPrivateShaderResourceViewSize callback function [Display Devices], CalcPrivateShaderResourceViewSize, PFND3D10DDI_CALCPRIVATESHADERRESOURCEVIEWSIZE, PFND3D10DDI_CALCPRIVATESHADERRESOURCEVIEWSIZE, d3d10umddi/CalcPrivateShaderResourceViewSize, UserModeDisplayDriverDx10_Functions_57360213-38f5-45aa-aadb-0bcdb674aec1.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3D10DDI_CALCPRIVATESHADERRESOURCEVIEWSIZE
+title: PFND3D10DDI_CALCPRIVATESHADERRESOURCEVIEWSIZE
+author: windows-driver-content
+description: The CalcPrivateShaderResourceViewSize function determines the size of the user-mode display driver's private region of memory (that is, the size of internal driver structures, not the size of the resource video memory) for a shader resource view.
+old-location: display\calcprivateshaderresourceviewsize.htm
+old-project: display
+ms.assetid: 2abf5ca9-974b-40d7-b71c-43c4fb33dd7c
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.calcprivateshaderresourceviewsize, CalcPrivateShaderResourceViewSize callback function [Display Devices], CalcPrivateShaderResourceViewSize, PFND3D10DDI_CALCPRIVATESHADERRESOURCEVIEWSIZE, PFND3D10DDI_CALCPRIVATESHADERRESOURCEVIEWSIZE, d3d10umddi/CalcPrivateShaderResourceViewSize, UserModeDisplayDriverDx10_Functions_57360213-38f5-45aa-aadb-0bcdb674aec1.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	CalcPrivateShaderResourceViewSize
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

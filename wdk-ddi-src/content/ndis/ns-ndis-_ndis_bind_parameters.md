@@ -1,41 +1,46 @@
 ---
-UID : NS:ndis._NDIS_BIND_PARAMETERS
-title : "_NDIS_BIND_PARAMETERS"
-author : windows-driver-content
-description : NDIS initializes an NDIS_BIND_PARAMETERS structure with information that defines the characteristics of a binding and passes it to a protocol driver.
-old-location : netvista\ndis_bind_parameters.htm
-old-project : netvista
-ms.assetid : 0a4866a8-a2f2-447b-8aa9-73203b7fc4bb
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : ndis/NDIS_BIND_PARAMETERS, ndis/PNDIS_BIND_PARAMETERS, protocol_structures_ref_25c90ff2-4a09-41f2-8b66-666a91dbfe17.xml, *PNDIS_BIND_PARAMETERS, PNDIS_BIND_PARAMETERS, NDIS_BIND_PARAMETERS structure [Network Drivers Starting with Windows Vista], PNDIS_BIND_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], netvista.ndis_bind_parameters, NDIS_BIND_PARAMETERS, _NDIS_BIND_PARAMETERS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : See Remarks section
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PNDIS_BIND_PARAMETERS, NDIS_BIND_PARAMETERS"
+UID: NS:ndis._NDIS_BIND_PARAMETERS
+title: "_NDIS_BIND_PARAMETERS"
+author: windows-driver-content
+description: NDIS initializes an NDIS_BIND_PARAMETERS structure with information that defines the characteristics of a binding and passes it to a protocol driver.
+old-location: netvista\ndis_bind_parameters.htm
+old-project: netvista
+ms.assetid: 0a4866a8-a2f2-447b-8aa9-73203b7fc4bb
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: ndis/NDIS_BIND_PARAMETERS, ndis/PNDIS_BIND_PARAMETERS, protocol_structures_ref_25c90ff2-4a09-41f2-8b66-666a91dbfe17.xml, *PNDIS_BIND_PARAMETERS, PNDIS_BIND_PARAMETERS, NDIS_BIND_PARAMETERS structure [Network Drivers Starting with Windows Vista], PNDIS_BIND_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], netvista.ndis_bind_parameters, NDIS_BIND_PARAMETERS, _NDIS_BIND_PARAMETERS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: See Remarks section
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndis.h
+apiname:
+-	NDIS_BIND_PARAMETERS
+product: Windows
+targetos: Windows
+req.typenames: "*PNDIS_BIND_PARAMETERS, NDIS_BIND_PARAMETERS"
 ---
 
 # _NDIS_BIND_PARAMETERS structure

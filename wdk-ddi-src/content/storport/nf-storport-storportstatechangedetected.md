@@ -1,42 +1,47 @@
 ---
-UID : NF:storport.StorPortStateChangeDetected
-title : StorPortStateChangeDetected function
-author : windows-driver-content
-description : Notifies the Storport port driver of a state change for a logical unit number (LUN), host bus adapter (HBA) port, or target device.
-old-location : storage\storportstatechangedetected.htm
-old-project : storage
-ms.assetid : 3E5E9C4E-5B82-4656-BDF2-23A9A8D40ADF
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : STATE_CHANGE_BUS, StorPortStateChangeDetected, StorPortStateChangeDetected routine [Storage Devices], STATE_CHANGE_TARGET, STATE_CHANGE_LUN, storport/StorPortStateChangeDetected, ATTRIBUTE_VM_PASSTHROUGH_LUN, storage.storportstatechangedetected
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 8 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : Any
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STOR_SPINLOCK
-req.product : Windows 10 or later.
+UID: NF:storport.StorPortStateChangeDetected
+title: StorPortStateChangeDetected function
+author: windows-driver-content
+description: Notifies the Storport port driver of a state change for a logical unit number (LUN), host bus adapter (HBA) port, or target device.
+old-location: storage\storportstatechangedetected.htm
+old-project: storage
+ms.assetid: 3E5E9C4E-5B82-4656-BDF2-23A9A8D40ADF
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: STATE_CHANGE_BUS, StorPortStateChangeDetected, StorPortStateChangeDetected routine [Storage Devices], STATE_CHANGE_TARGET, STATE_CHANGE_LUN, storport/StorPortStateChangeDetected, ATTRIBUTE_VM_PASSTHROUGH_LUN, storage.storportstatechangedetected
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 8 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: Any
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	storport.h
+apiname:
+-	StorPortStateChangeDetected
+product: Windows
+targetos: Windows
+req.typenames: STOR_SPINLOCK
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmdt._DISPLAYID_DETAILED_TIMING_TYPE_I
-title : "_DISPLAYID_DETAILED_TIMING_TYPE_I"
-author : windows-driver-content
-description : The DISPLAYID_DETAILED_TIMING_TYPE_I structure specifies an additional target mode set for a video present target.
-old-location : display\displayid_detailed_timing_type_i.htm
-old-project : display
-ms.assetid : 7b3fa3a4-a77a-4c5f-b157-1fbdc3a7be33
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3dkmdt/DISPLAYID_DETAILED_TIMING_TYPE_I, DISPLAYID_DETAILED_TIMING_TYPE_I structure [Display Devices], DmStructs_75d5fd93-c7ae-4a57-9843-427c53a9416f.xml, display.displayid_detailed_timing_type_i, _DISPLAYID_DETAILED_TIMING_TYPE_I, DISPLAYID_DETAILED_TIMING_TYPE_I
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmdt.h
-req.include-header : D3dkmdt.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7 and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DISPLAYID_DETAILED_TIMING_TYPE_I
+UID: NS:d3dkmdt._DISPLAYID_DETAILED_TIMING_TYPE_I
+title: "_DISPLAYID_DETAILED_TIMING_TYPE_I"
+author: windows-driver-content
+description: The DISPLAYID_DETAILED_TIMING_TYPE_I structure specifies an additional target mode set for a video present target.
+old-location: display\displayid_detailed_timing_type_i.htm
+old-project: display
+ms.assetid: 7b3fa3a4-a77a-4c5f-b157-1fbdc3a7be33
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3dkmdt/DISPLAYID_DETAILED_TIMING_TYPE_I, DISPLAYID_DETAILED_TIMING_TYPE_I structure [Display Devices], DmStructs_75d5fd93-c7ae-4a57-9843-427c53a9416f.xml, display.displayid_detailed_timing_type_i, _DISPLAYID_DETAILED_TIMING_TYPE_I, DISPLAYID_DETAILED_TIMING_TYPE_I
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmdt.h
+req.include-header: D3dkmdt.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7 and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmdt.h
+apiname:
+-	DISPLAYID_DETAILED_TIMING_TYPE_I
+product: Windows
+targetos: Windows
+req.typenames: DISPLAYID_DETAILED_TIMING_TYPE_I
 ---
 
 # _DISPLAYID_DETAILED_TIMING_TYPE_I structure

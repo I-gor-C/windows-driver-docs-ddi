@@ -1,42 +1,47 @@
 ---
-UID : NE:windot11.DOT11_DIRECTION
-title : DOT11_DIRECTION
-author : windows-driver-content
-description : Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
-old-location : netvista\dot11_direction.htm
-old-project : netvista
-ms.assetid : 83a83af9-314a-49c1-b241-a0ef0716f83a
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : Native_802.11_data_types_aef66faf-de2c-42f1-a213-ed12ea7ef583.xml, DOT11_DIRECTION, DOT11_DIR_OUTBOUND, windot11/DOT11_DIR_OUTBOUND, windot11/PDOT11_DIRECTION, windot11/DOT11_DIRECTION, PDOT11_DIRECTION, PDOT11_DIRECTION enumeration pointer [Network Drivers Starting with Windows Vista], DOT11_DIR_BOTH, windot11/DOT11_DIR_BOTH, DOT11_DIRECTION enumeration [Network Drivers Starting with Windows Vista], windot11/DOT11_DIR_INBOUND, *PDOT11_DIRECTION, netvista.dot11_direction, DOT11_DIR_INBOUND
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : windot11.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating   systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT11_DIRECTION, *PDOT11_DIRECTION
-req.product : Windows 10 or later.
+UID: NE:windot11.DOT11_DIRECTION
+title: DOT11_DIRECTION
+author: windows-driver-content
+description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+old-location: netvista\dot11_direction.htm
+old-project: netvista
+ms.assetid: 83a83af9-314a-49c1-b241-a0ef0716f83a
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: Native_802.11_data_types_aef66faf-de2c-42f1-a213-ed12ea7ef583.xml, DOT11_DIRECTION, DOT11_DIR_OUTBOUND, windot11/DOT11_DIR_OUTBOUND, windot11/PDOT11_DIRECTION, windot11/DOT11_DIRECTION, PDOT11_DIRECTION, PDOT11_DIRECTION enumeration pointer [Network Drivers Starting with Windows Vista], DOT11_DIR_BOTH, windot11/DOT11_DIR_BOTH, DOT11_DIRECTION enumeration [Network Drivers Starting with Windows Vista], windot11/DOT11_DIR_INBOUND, *PDOT11_DIRECTION, netvista.dot11_direction, DOT11_DIR_INBOUND
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: windot11.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	windot11.h
+apiname:
+-	DOT11_DIRECTION
+product: Windows
+targetos: Windows
+req.typenames: DOT11_DIRECTION, *PDOT11_DIRECTION
+req.product: Windows 10 or later.
 ---
 
 # DOT11_DIRECTION Enumeration
@@ -55,24 +60,24 @@ typedef enum DOT11_DIRECTION {
 ## Constants
 
 <table>
-
-<tr>
-<td>DOT11_DIR_BOTH</td>
-<td>The 802.11 station uses the cipher key for packets received from or transmitted to the AP or peer
+            
+                <tr>
+                    <td>DOT11_DIR_BOTH</td>
+                    <td>The 802.11 station uses the cipher key for packets received from or transmitted to the AP or peer
      station.</td>
-</tr>
-
-<tr>
-<td>DOT11_DIR_INBOUND</td>
-<td>The 802.11 station uses the cipher key to decrypt packets received from the access point (AP) or
+                </tr>
+            
+                <tr>
+                    <td>DOT11_DIR_INBOUND</td>
+                    <td>The 802.11 station uses the cipher key to decrypt packets received from the access point (AP) or
      peer station.</td>
-</tr>
-
-<tr>
-<td>DOT11_DIR_OUTBOUND</td>
-<td>The 802.11 station uses the cipher key to encrypt packets transmitted to the AP or peer
+                </tr>
+            
+                <tr>
+                    <td>DOT11_DIR_OUTBOUND</td>
+                    <td>The 802.11 station uses the cipher key to encrypt packets transmitted to the AP or peer
      station.</td>
-</tr>
+                </tr>
 </table>
 
 
@@ -82,9 +87,9 @@ typedef enum DOT11_DIRECTION {
 | **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems. Available in Windows Vista and later versions of the Windows operating   systems. |
 | **Header** | windot11.h (include Ndis.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\windot11\ns-windot11-dot11_cipher_key_mapping_key_value.md">
+        <a href="..\windot11\ns-windot11-dot11_cipher_key_mapping_key_value.md">
    DOT11_CIPHER_KEY_MAPPING_KEY_VALUE</a>
 
 <a href="..\wlanihv\nc-wlanihv-dot11ext_set_default_key.md">Dot11ExtSetDefaultKey</a>

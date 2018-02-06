@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugClient5.GetNumberOutputCallbacks
-title : IDebugClient5::GetNumberOutputCallbacks method
-author : windows-driver-content
-description : The GetNumberOutputCallbacks method returns the number of output callbacks registered over all clients.
-old-location : debugger\getnumberoutputcallbacks.htm
-old-project : debugger
-ms.assetid : 20bc6141-8c4a-4a98-acb3-506840893db6
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugClient5 interface [Windows Debugging], GetNumberOutputCallbacks method, debugger.getnumberoutputcallbacks, GetNumberOutputCallbacks method [Windows Debugging], IDebugClient5 interface, GetNumberOutputCallbacks, dbgeng/IDebugClient5::GetNumberOutputCallbacks, IDebugClient_ce6e107b-a356-434a-81d7-eccb8495289d.xml, IDebugClient5, GetNumberOutputCallbacks method [Windows Debugging], IDebugClient5::GetNumberOutputCallbacks
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugClient5.GetNumberOutputCallbacks
+title: IDebugClient5::GetNumberOutputCallbacks method
+author: windows-driver-content
+description: The GetNumberOutputCallbacks method returns the number of output callbacks registered over all clients.
+old-location: debugger\getnumberoutputcallbacks.htm
+old-project: debugger
+ms.assetid: 20bc6141-8c4a-4a98-acb3-506840893db6
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugClient5 interface [Windows Debugging], GetNumberOutputCallbacks method, debugger.getnumberoutputcallbacks, GetNumberOutputCallbacks method [Windows Debugging], IDebugClient5 interface, GetNumberOutputCallbacks, dbgeng/IDebugClient5::GetNumberOutputCallbacks, IDebugClient_ce6e107b-a356-434a-81d7-eccb8495289d.xml, IDebugClient5, GetNumberOutputCallbacks method [Windows Debugging], IDebugClient5::GetNumberOutputCallbacks
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugClient5.GetNumberOutputCallbacks
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

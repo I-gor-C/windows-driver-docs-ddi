@@ -1,41 +1,47 @@
 ---
-UID : NF:dbgeng.IDebugControl3.GetDumpFormatFlags
-title : IDebugControl3::GetDumpFormatFlags method
-author : windows-driver-content
-description : The GetDumpFormatFlags method returns the flags that describe what information is available in a dump file target.
-old-location : debugger\getdumpformatflags.htm
-old-project : debugger
-ms.assetid : 86070c36-6702-42c8-b4fe-b3ef15ba418f
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugControl3 interface [Windows Debugging], GetDumpFormatFlags method, IDebugControl_fc8bec39-ffc3-46bd-9d18-954f0420906f.xml, IDebugControl2::GetDumpFormatFlags, IDebugControl3, IDebugControl3::GetDumpFormatFlags, GetDumpFormatFlags method [Windows Debugging], dbgeng/IDebugControl2::GetDumpFormatFlags, IDebugControl2 interface [Windows Debugging], GetDumpFormatFlags method, GetDumpFormatFlags method [Windows Debugging], IDebugControl2 interface, GetDumpFormatFlags, debugger.getdumpformatflags, dbgeng/IDebugControl3::GetDumpFormatFlags, GetDumpFormatFlags method [Windows Debugging], IDebugControl3 interface
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl3.GetDumpFormatFlags
+title: IDebugControl3::GetDumpFormatFlags method
+author: windows-driver-content
+description: The GetDumpFormatFlags method returns the flags that describe what information is available in a dump file target.
+old-location: debugger\getdumpformatflags.htm
+old-project: debugger
+ms.assetid: 86070c36-6702-42c8-b4fe-b3ef15ba418f
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugControl3 interface [Windows Debugging], GetDumpFormatFlags method, IDebugControl_fc8bec39-ffc3-46bd-9d18-954f0420906f.xml, IDebugControl2::GetDumpFormatFlags, IDebugControl3, IDebugControl3::GetDumpFormatFlags, GetDumpFormatFlags method [Windows Debugging], dbgeng/IDebugControl2::GetDumpFormatFlags, IDebugControl2 interface [Windows Debugging], GetDumpFormatFlags method, GetDumpFormatFlags method [Windows Debugging], IDebugControl2 interface, GetDumpFormatFlags, debugger.getdumpformatflags, dbgeng/IDebugControl3::GetDumpFormatFlags, GetDumpFormatFlags method [Windows Debugging], IDebugControl3 interface
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl2.GetDumpFormatFlags
+-	IDebugControl3.GetDumpFormatFlags
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

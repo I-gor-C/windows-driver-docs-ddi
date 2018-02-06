@@ -1,41 +1,46 @@
 ---
-UID : NC:ndis.PROTOCOL_BIND_ADAPTER_EX
-title : PROTOCOL_BIND_ADAPTER_EX
-author : windows-driver-content
-description : NDIS calls a protocol driver's ProtocolBindAdapterEx function to request the driver to bind to a miniport adapter.Note  You must declare the function by using the PROTOCOL_BIND_ADAPTER_EX type.
-old-location : netvista\protocolbindadapterex.htm
-old-project : netvista
-ms.assetid : 1958722e-012e-4110-a82c-751744bcf9b5
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.protocolbindadapterex, ProtocolBindAdapterEx callback function [Network Drivers Starting with Windows Vista], ProtocolBindAdapterEx, PROTOCOL_BIND_ADAPTER_EX, PROTOCOL_BIND_ADAPTER_EX, ndis/ProtocolBindAdapterEx, protocol_functions_ref_82268bd4-3e45-48ba-8b80-df47fbde11e1.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
+UID: NC:ndis.PROTOCOL_BIND_ADAPTER_EX
+title: PROTOCOL_BIND_ADAPTER_EX
+author: windows-driver-content
+description: NDIS calls a protocol driver's ProtocolBindAdapterEx function to request the driver to bind to a miniport adapter.Note  You must declare the function by using the PROTOCOL_BIND_ADAPTER_EX type.
+old-location: netvista\protocolbindadapterex.htm
+old-project: netvista
+ms.assetid: 1958722e-012e-4110-a82c-751744bcf9b5
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.protocolbindadapterex, ProtocolBindAdapterEx callback function [Network Drivers Starting with Windows Vista], ProtocolBindAdapterEx, PROTOCOL_BIND_ADAPTER_EX, PROTOCOL_BIND_ADAPTER_EX, ndis/ProtocolBindAdapterEx, protocol_functions_ref_82268bd4-3e45-48ba-8b80-df47fbde11e1.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ndis.h
+apiname:
+-	ProtocolBindAdapterEx
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 

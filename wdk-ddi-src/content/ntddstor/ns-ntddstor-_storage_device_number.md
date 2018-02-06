@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddstor._STORAGE_DEVICE_NUMBER
-title : "_STORAGE_DEVICE_NUMBER"
-author : windows-driver-content
-description : The STORAGE_DEVICE_NUMBER structure is used in conjunction with the IOCTL_STORAGE_GET_DEVICE_NUMBER request to retrieve the FILE_DEVICE_XXX device type, the device number, and, for a device that can be partitioned, the partition number assigned to a device by the driver when the device is started.
-old-location : storage\storage_device_number.htm
-old-project : storage
-ms.assetid : 3efed879-bde4-44ea-9af5-fc35a2ac27fc
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.storage_device_number, structs-general_e5b6df4e-787c-415b-82ed-14dffa34a95e.xml, _STORAGE_DEVICE_NUMBER, STORAGE_DEVICE_NUMBER, *PSTORAGE_DEVICE_NUMBER, STORAGE_DEVICE_NUMBER structure [Storage Devices], PSTORAGE_DEVICE_NUMBER, ntddstor/PSTORAGE_DEVICE_NUMBER, ntddstor/STORAGE_DEVICE_NUMBER, PSTORAGE_DEVICE_NUMBER structure pointer [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddstor.h
-req.include-header : Ntddstor.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STORAGE_DEVICE_NUMBER, *PSTORAGE_DEVICE_NUMBER
+UID: NS:ntddstor._STORAGE_DEVICE_NUMBER
+title: "_STORAGE_DEVICE_NUMBER"
+author: windows-driver-content
+description: The STORAGE_DEVICE_NUMBER structure is used in conjunction with the IOCTL_STORAGE_GET_DEVICE_NUMBER request to retrieve the FILE_DEVICE_XXX device type, the device number, and, for a device that can be partitioned, the partition number assigned to a device by the driver when the device is started.
+old-location: storage\storage_device_number.htm
+old-project: storage
+ms.assetid: 3efed879-bde4-44ea-9af5-fc35a2ac27fc
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.storage_device_number, structs-general_e5b6df4e-787c-415b-82ed-14dffa34a95e.xml, _STORAGE_DEVICE_NUMBER, STORAGE_DEVICE_NUMBER, *PSTORAGE_DEVICE_NUMBER, STORAGE_DEVICE_NUMBER structure [Storage Devices], PSTORAGE_DEVICE_NUMBER, ntddstor/PSTORAGE_DEVICE_NUMBER, ntddstor/STORAGE_DEVICE_NUMBER, PSTORAGE_DEVICE_NUMBER structure pointer [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddstor.h
+req.include-header: Ntddstor.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddstor.h
+apiname:
+-	STORAGE_DEVICE_NUMBER
+product: Windows
+targetos: Windows
+req.typenames: STORAGE_DEVICE_NUMBER, *PSTORAGE_DEVICE_NUMBER
 ---
 
 # _STORAGE_DEVICE_NUMBER structure

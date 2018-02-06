@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3D10DDI_DRAW
-title : PFND3D10DDI_DRAW
-author : windows-driver-content
-description : The Draw function draws nonindexed primitives.
-old-location : display\draw.htm
-old-project : display
-ms.assetid : 7a6f1d56-12be-4185-97bf-06f265ee6fe3
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.draw, Draw callback function [Display Devices], Draw, PFND3D10DDI_DRAW, PFND3D10DDI_DRAW, d3d10umddi/Draw, UserModeDisplayDriverDx10_Functions_aec9f82d-41e9-41bc-b8e7-c07c531caf4c.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3D10DDI_DRAW
+title: PFND3D10DDI_DRAW
+author: windows-driver-content
+description: The Draw function draws nonindexed primitives.
+old-location: display\draw.htm
+old-project: display
+ms.assetid: 7a6f1d56-12be-4185-97bf-06f265ee6fe3
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.draw, Draw callback function [Display Devices], Draw, PFND3D10DDI_DRAW, PFND3D10DDI_DRAW, d3d10umddi/Draw, UserModeDisplayDriverDx10_Functions_aec9f82d-41e9-41bc-b8e7-c07c531caf4c.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	Draw
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

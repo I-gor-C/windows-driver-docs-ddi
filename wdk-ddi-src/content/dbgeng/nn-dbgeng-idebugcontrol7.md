@@ -1,41 +1,46 @@
 ---
-UID : NN:dbgeng.IDebugControl7
-title : IDebugControl7
-author : windows-driver-content
-description : "."
-old-location : debugger\idebugcontrol7.htm
-old-project : debugger
-ms.assetid : 44B8C5DF-D25F-4688-8EDB-135B63802BB6
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : debugger.idebugcontrol7, IDebugControl7 interface [Windows Debugging], IDebugControl7 interface [Windows Debugging], described, IDebugControl7, dbgeng/IDebugControl7
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NN:dbgeng.IDebugControl7
+title: IDebugControl7
+author: windows-driver-content
+description: "."
+old-location: debugger\idebugcontrol7.htm
+old-project: debugger
+ms.assetid: 44B8C5DF-D25F-4688-8EDB-135B63802BB6
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: debugger.idebugcontrol7, IDebugControl7 interface [Windows Debugging], IDebugControl7 interface [Windows Debugging], described, IDebugControl7, dbgeng/IDebugControl7
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl7
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 # IDebugControl7 interface

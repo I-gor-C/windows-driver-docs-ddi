@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugSymbols3.CreateSymbolGroup
-title : IDebugSymbols3::CreateSymbolGroup method
-author : windows-driver-content
-description : The CreateSymbolGroup method creates a new symbol group.
-old-location : debugger\createsymbolgroup.htm
-old-project : debugger
-ms.assetid : f55aa290-5e57-48d8-9454-370c494bbd65
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : dbgeng/IDebugSymbols::CreateSymbolGroup, CreateSymbolGroup method [Windows Debugging], IDebugSymbols interface, dbgeng/IDebugSymbols2::CreateSymbolGroup, dbgeng/IDebugSymbols3::CreateSymbolGroup, debugger.createsymbolgroup, IDebugSymbols2 interface [Windows Debugging], CreateSymbolGroup method, CreateSymbolGroup method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols3, IDebugSymbols::CreateSymbolGroup, IDebugSymbols3 interface [Windows Debugging], CreateSymbolGroup method, IDebugSymbols3::CreateSymbolGroup, CreateSymbolGroup method [Windows Debugging], IDebugSymbols2 interface, IDebugSymbols interface [Windows Debugging], CreateSymbolGroup method, IDebugSymbols2::CreateSymbolGroup, CreateSymbolGroup, IDebugSymbols_fe8b31b2-0c5c-4dde-9d60-a353893e3f65.xml, CreateSymbolGroup method [Windows Debugging]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSymbols3.CreateSymbolGroup
+title: IDebugSymbols3::CreateSymbolGroup method
+author: windows-driver-content
+description: The CreateSymbolGroup method creates a new symbol group.
+old-location: debugger\createsymbolgroup.htm
+old-project: debugger
+ms.assetid: f55aa290-5e57-48d8-9454-370c494bbd65
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: dbgeng/IDebugSymbols::CreateSymbolGroup, CreateSymbolGroup method [Windows Debugging], IDebugSymbols interface, dbgeng/IDebugSymbols2::CreateSymbolGroup, dbgeng/IDebugSymbols3::CreateSymbolGroup, debugger.createsymbolgroup, IDebugSymbols2 interface [Windows Debugging], CreateSymbolGroup method, CreateSymbolGroup method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols3, IDebugSymbols::CreateSymbolGroup, IDebugSymbols3 interface [Windows Debugging], CreateSymbolGroup method, IDebugSymbols3::CreateSymbolGroup, CreateSymbolGroup method [Windows Debugging], IDebugSymbols2 interface, IDebugSymbols interface [Windows Debugging], CreateSymbolGroup method, IDebugSymbols2::CreateSymbolGroup, CreateSymbolGroup, IDebugSymbols_fe8b31b2-0c5c-4dde-9d60-a353893e3f65.xml, CreateSymbolGroup method [Windows Debugging]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Dbgeng.h
+apiname:
+-	IDebugSymbols.CreateSymbolGroup
+-	IDebugSymbols2.CreateSymbolGroup
+-	IDebugSymbols3.CreateSymbolGroup
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

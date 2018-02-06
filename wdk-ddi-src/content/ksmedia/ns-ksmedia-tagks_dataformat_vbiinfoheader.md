@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.tagKS_DATAFORMAT_VBIINFOHEADER
-title : tagKS_DATAFORMAT_VBIINFOHEADER
-author : windows-driver-content
-description : The KS_DATAFORMAT_VBIINFOHEADER structure describes a vertical blanking interval (VBI) stream.
-old-location : stream\ks_dataformat_vbiinfoheader.htm
-old-project : stream
-ms.assetid : 597b081f-d2ff-4e20-b352-2082f1ef4d45
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.ks_dataformat_vbiinfoheader, ksmedia/PKS_DATAFORMAT_VBIINFOHEADER, *PKS_DATAFORMAT_VBIINFOHEADER, vidcapstruct_67cdb187-7d2b-464b-a871-6b2f18a9839f.xml, tagKS_DATAFORMAT_VBIINFOHEADER, PKS_DATAFORMAT_VBIINFOHEADER structure pointer [Streaming Media Devices], PKS_DATAFORMAT_VBIINFOHEADER, KS_DATAFORMAT_VBIINFOHEADER structure [Streaming Media Devices], KS_DATAFORMAT_VBIINFOHEADER, ksmedia/KS_DATAFORMAT_VBIINFOHEADER
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKS_DATAFORMAT_VBIINFOHEADER, KS_DATAFORMAT_VBIINFOHEADER"
+UID: NS:ksmedia.tagKS_DATAFORMAT_VBIINFOHEADER
+title: tagKS_DATAFORMAT_VBIINFOHEADER
+author: windows-driver-content
+description: The KS_DATAFORMAT_VBIINFOHEADER structure describes a vertical blanking interval (VBI) stream.
+old-location: stream\ks_dataformat_vbiinfoheader.htm
+old-project: stream
+ms.assetid: 597b081f-d2ff-4e20-b352-2082f1ef4d45
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.ks_dataformat_vbiinfoheader, ksmedia/PKS_DATAFORMAT_VBIINFOHEADER, *PKS_DATAFORMAT_VBIINFOHEADER, vidcapstruct_67cdb187-7d2b-464b-a871-6b2f18a9839f.xml, tagKS_DATAFORMAT_VBIINFOHEADER, PKS_DATAFORMAT_VBIINFOHEADER structure pointer [Streaming Media Devices], PKS_DATAFORMAT_VBIINFOHEADER, KS_DATAFORMAT_VBIINFOHEADER structure [Streaming Media Devices], KS_DATAFORMAT_VBIINFOHEADER, ksmedia/KS_DATAFORMAT_VBIINFOHEADER
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	KS_DATAFORMAT_VBIINFOHEADER
+product: Windows
+targetos: Windows
+req.typenames: "*PKS_DATAFORMAT_VBIINFOHEADER, KS_DATAFORMAT_VBIINFOHEADER"
 ---
 
 # tagKS_DATAFORMAT_VBIINFOHEADER structure

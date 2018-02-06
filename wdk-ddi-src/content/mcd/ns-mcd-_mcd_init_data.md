@@ -1,41 +1,46 @@
 ---
-UID : NS:mcd._MCD_INIT_DATA
-title : "_MCD_INIT_DATA"
-author : windows-driver-content
-description : The changer miniclass driver fills the MCD_INIT_DATA structure with pointers to its internal command processing routines and passes them to the changer class driver.
-old-location : storage\mcd_init_data.htm
-old-project : storage
-ms.assetid : 4fc4c36f-a2ad-4b9f-a30b-e7ed600c38e9
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : mcd/PMCD_INIT_DATA, structs-changer_f8810f4b-8465-4751-a885-cc68a88e45fb.xml, PMCD_INIT_DATA, *PMCD_INIT_DATA, _MCD_INIT_DATA, MCD_INIT_DATA structure [Storage Devices], storage.mcd_init_data, PMCD_INIT_DATA structure pointer [Storage Devices], MCD_INIT_DATA, mcd/MCD_INIT_DATA
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : mcd.h
-req.include-header : Mcd.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PMCD_INIT_DATA, MCD_INIT_DATA"
+UID: NS:mcd._MCD_INIT_DATA
+title: "_MCD_INIT_DATA"
+author: windows-driver-content
+description: The changer miniclass driver fills the MCD_INIT_DATA structure with pointers to its internal command processing routines and passes them to the changer class driver.
+old-location: storage\mcd_init_data.htm
+old-project: storage
+ms.assetid: 4fc4c36f-a2ad-4b9f-a30b-e7ed600c38e9
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: mcd/PMCD_INIT_DATA, structs-changer_f8810f4b-8465-4751-a885-cc68a88e45fb.xml, PMCD_INIT_DATA, *PMCD_INIT_DATA, _MCD_INIT_DATA, MCD_INIT_DATA structure [Storage Devices], storage.mcd_init_data, PMCD_INIT_DATA structure pointer [Storage Devices], MCD_INIT_DATA, mcd/MCD_INIT_DATA
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: mcd.h
+req.include-header: Mcd.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	mcd.h
+apiname:
+-	MCD_INIT_DATA
+product: Windows
+targetos: Windows
+req.typenames: "*PMCD_INIT_DATA, MCD_INIT_DATA"
 ---
 
 # _MCD_INIT_DATA structure

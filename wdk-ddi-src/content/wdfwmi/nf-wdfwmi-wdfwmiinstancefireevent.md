@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfwmi.WdfWmiInstanceFireEvent
-title : WdfWmiInstanceFireEvent function
-author : windows-driver-content
-description : The WdfWmiInstanceFireEvent method sends a WMI event to WMI clients that have registered to receive event notification.
-old-location : wdf\wdfwmiinstancefireevent.htm
-old-project : wdf
-ms.assetid : 7bef79ab-78d6-47b6-a3f4-d9733ffcb53d
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WdfWmiInstanceFireEvent method, wdf.wdfwmiinstancefireevent, kmdf.wdfwmiinstancefireevent, wdfwmi/WdfWmiInstanceFireEvent, PFN_WDFWMIINSTANCEFIREEVENT, WdfWmiInstanceFireEvent, DFWMIRef_1062330c-9a9b-4bd3-a039-e1373c07ceee.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfwmi.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_WMI_PROVIDER_FLAGS
-req.product : Windows 10 or later.
+UID: NF:wdfwmi.WdfWmiInstanceFireEvent
+title: WdfWmiInstanceFireEvent function
+author: windows-driver-content
+description: The WdfWmiInstanceFireEvent method sends a WMI event to WMI clients that have registered to receive event notification.
+old-location: wdf\wdfwmiinstancefireevent.htm
+old-project: wdf
+ms.assetid: 7bef79ab-78d6-47b6-a3f4-d9733ffcb53d
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WdfWmiInstanceFireEvent method, wdf.wdfwmiinstancefireevent, kmdf.wdfwmiinstancefireevent, wdfwmi/WdfWmiInstanceFireEvent, PFN_WDFWMIINSTANCEFIREEVENT, WdfWmiInstanceFireEvent, DFWMIRef_1062330c-9a9b-4bd3-a039-e1373c07ceee.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfwmi.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfWmiInstanceFireEvent
+product: Windows
+targetos: Windows
+req.typenames: WDF_WMI_PROVIDER_FLAGS
+req.product: Windows 10 or later.
 ---
 
 

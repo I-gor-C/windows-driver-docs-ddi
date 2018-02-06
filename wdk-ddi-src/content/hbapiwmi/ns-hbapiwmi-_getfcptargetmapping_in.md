@@ -1,41 +1,46 @@
 ---
-UID : NS:hbapiwmi._GetFcpTargetMapping_IN
-title : "_GetFcpTargetMapping_IN"
-author : windows-driver-content
-description : The GetFcpTargetMapping_IN structure is used to report the output parameter data of the GetFcpTargetMapping WMI method to the WMI client.
-old-location : storage\getfcptargetmapping_in.htm
-old-project : storage
-ms.assetid : a07a97ea-17f0-4e24-89c5-1b24600ac497
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : "*PGetFcpTargetMapping_IN, PGetFcpTargetMapping_IN structure pointer [Storage Devices], _GetFcpTargetMapping_IN, storage.getfcptargetmapping_in, GetFcpTargetMapping_IN structure [Storage Devices], structs-Fibre_1c84c265-fc0a-4d56-bdb9-7a10ef80b707.xml, PGetFcpTargetMapping_IN, hbapiwmi/PGetFcpTargetMapping_IN, GetFcpTargetMapping_IN, hbapiwmi/GetFcpTargetMapping_IN"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : hbapiwmi.h
-req.include-header : Hbapiwmi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : GetFcpTargetMapping_IN, *PGetFcpTargetMapping_IN
+UID: NS:hbapiwmi._GetFcpTargetMapping_IN
+title: "_GetFcpTargetMapping_IN"
+author: windows-driver-content
+description: The GetFcpTargetMapping_IN structure is used to report the output parameter data of the GetFcpTargetMapping WMI method to the WMI client.
+old-location: storage\getfcptargetmapping_in.htm
+old-project: storage
+ms.assetid: a07a97ea-17f0-4e24-89c5-1b24600ac497
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: "*PGetFcpTargetMapping_IN, PGetFcpTargetMapping_IN structure pointer [Storage Devices], _GetFcpTargetMapping_IN, storage.getfcptargetmapping_in, GetFcpTargetMapping_IN structure [Storage Devices], structs-Fibre_1c84c265-fc0a-4d56-bdb9-7a10ef80b707.xml, PGetFcpTargetMapping_IN, hbapiwmi/PGetFcpTargetMapping_IN, GetFcpTargetMapping_IN, hbapiwmi/GetFcpTargetMapping_IN"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: hbapiwmi.h
+req.include-header: Hbapiwmi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hbapiwmi.h
+apiname:
+-	GetFcpTargetMapping_IN
+product: Windows
+targetos: Windows
+req.typenames: GetFcpTargetMapping_IN, *PGetFcpTargetMapping_IN
 ---
 
 # _GetFcpTargetMapping_IN structure

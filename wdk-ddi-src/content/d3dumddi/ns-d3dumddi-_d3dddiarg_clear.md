@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._D3DDDIARG_CLEAR
-title : "_D3DDDIARG_CLEAR"
-author : windows-driver-content
-description : The D3DDDIARG_CLEAR structure describes the parameters of a hardware-assisted clearing operation.
-old-location : display\d3dddiarg_clear.htm
-old-project : display
-ms.assetid : f437f94c-075e-43e6-bf28-0e7c7bd78c5a
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3dumddi/D3DDDIARG_CLEAR, UMDisplayDriver_param_Structs_64efff84-8fe3-40d4-b823-27e4a235fd86.xml, D3DDDIARG_CLEAR, display.d3dddiarg_clear, _D3DDDIARG_CLEAR, D3DDDIARG_CLEAR structure [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDIARG_CLEAR
+UID: NS:d3dumddi._D3DDDIARG_CLEAR
+title: "_D3DDDIARG_CLEAR"
+author: windows-driver-content
+description: The D3DDDIARG_CLEAR structure describes the parameters of a hardware-assisted clearing operation.
+old-location: display\d3dddiarg_clear.htm
+old-project: display
+ms.assetid: f437f94c-075e-43e6-bf28-0e7c7bd78c5a
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3dumddi/D3DDDIARG_CLEAR, UMDisplayDriver_param_Structs_64efff84-8fe3-40d4-b823-27e4a235fd86.xml, D3DDDIARG_CLEAR, display.d3dddiarg_clear, _D3DDDIARG_CLEAR, D3DDDIARG_CLEAR structure [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	D3DDDIARG_CLEAR
+product: Windows
+targetos: Windows
+req.typenames: D3DDDIARG_CLEAR
 ---
 
 # _D3DDDIARG_CLEAR structure

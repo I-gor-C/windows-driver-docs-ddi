@@ -1,42 +1,47 @@
 ---
-UID : NF:ucxusbdevice.UcxUsbDeviceInitSetEventCallbacks
-title : UcxUsbDeviceInitSetEventCallbacks function
-author : windows-driver-content
-description : Initializes a UCXUSBDEVICE_INIT structure with client driver's event callback functions.
-old-location : buses\_ucxusbdeviceinitseteventcallbacks.htm
-old-project : usbref
-ms.assetid : 913F96FD-9C51-4A45-86A9-8830E1A395EE
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : buses._ucxusbdeviceinitseteventcallbacks, UcxUsbDeviceInitSetEventCallbacks, UcxUsbDeviceInitSetEventCallbacks method [Buses]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ucxusbdevice.h
-req.include-header : Ucxclass.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : UCX_USBDEVICE_CHARACTERISTIC_TYPE
-req.product : Windows 10 or later.
+UID: NF:ucxusbdevice.UcxUsbDeviceInitSetEventCallbacks
+title: UcxUsbDeviceInitSetEventCallbacks function
+author: windows-driver-content
+description: Initializes a UCXUSBDEVICE_INIT structure with client driver's event callback functions.
+old-location: buses\_ucxusbdeviceinitseteventcallbacks.htm
+old-project: usbref
+ms.assetid: 913F96FD-9C51-4A45-86A9-8830E1A395EE
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: buses._ucxusbdeviceinitseteventcallbacks, UcxUsbDeviceInitSetEventCallbacks, UcxUsbDeviceInitSetEventCallbacks method [Buses]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ucxusbdevice.h
+req.include-header: Ucxclass.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	ucxusbdevice.h
+apiname:
+-	UcxUsbDeviceInitSetEventCallbacks
+product: Windows
+targetos: Windows
+req.typenames: UCX_USBDEVICE_CHARACTERISTIC_TYPE
+req.product: Windows 10 or later.
 ---
 
 

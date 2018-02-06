@@ -1,42 +1,48 @@
 ---
-UID : NF:storport.StorPortGetScatterGatherList
-title : StorPortGetScatterGatherList function
-author : windows-driver-content
-description : The StorPortGetScatterGatherList routine retrieves the associated scatter/gather list for the specified SCSI request block (SRB).
-old-location : storage\storportgetscattergatherlist.htm
-old-project : storage
-ms.assetid : ddb7052d-b9f3-40f6-b00a-6bf52f010cdc
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : StorPortGetScatterGatherList routine [Storage Devices], storage.storportgetscattergatherlist, storprt_1736d395-ccc8-42ec-8d84-a9d3b7656996.xml, StorPortGetScatterGatherList, storport/StorPortGetScatterGatherList
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Storport.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STOR_SPINLOCK
-req.product : Windows 10 or later.
+UID: NF:storport.StorPortGetScatterGatherList
+title: StorPortGetScatterGatherList function
+author: windows-driver-content
+description: The StorPortGetScatterGatherList routine retrieves the associated scatter/gather list for the specified SCSI request block (SRB).
+old-location: storage\storportgetscattergatherlist.htm
+old-project: storage
+ms.assetid: ddb7052d-b9f3-40f6-b00a-6bf52f010cdc
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: StorPortGetScatterGatherList routine [Storage Devices], storage.storportgetscattergatherlist, storprt_1736d395-ccc8-42ec-8d84-a9d3b7656996.xml, StorPortGetScatterGatherList, storport/StorPortGetScatterGatherList
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Storport.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Storport.lib
+-	Storport.dll
+apiname:
+-	StorPortGetScatterGatherList
+product: Windows
+targetos: Windows
+req.typenames: STOR_SPINLOCK
+req.product: Windows 10 or later.
 ---
 
 

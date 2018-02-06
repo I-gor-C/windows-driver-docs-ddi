@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugSymbols3.GetFieldOffsetWide
-title : IDebugSymbols3::GetFieldOffsetWide method
-author : windows-driver-content
-description : The GetFieldOffsetWide method returns the offset of a field from the base address of an instance of a type.
-old-location : debugger\getfieldoffsetwide.htm
-old-project : debugger
-ms.assetid : 4a9b90dd-72b2-4625-8b73-bc0dca6ba905
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : dbgeng/IDebugSymbols3::GetFieldOffsetWide, GetFieldOffsetWide, IDebugSymbols3, IDebugSymbols3::GetFieldOffsetWide, GetFieldOffsetWide method [Windows Debugging], IDebugSymbols3 interface, debugger.getfieldoffsetwide, GetFieldOffsetWide method [Windows Debugging], IDebugSymbols3 interface [Windows Debugging], GetFieldOffsetWide method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSymbols3.GetFieldOffsetWide
+title: IDebugSymbols3::GetFieldOffsetWide method
+author: windows-driver-content
+description: The GetFieldOffsetWide method returns the offset of a field from the base address of an instance of a type.
+old-location: debugger\getfieldoffsetwide.htm
+old-project: debugger
+ms.assetid: 4a9b90dd-72b2-4625-8b73-bc0dca6ba905
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: dbgeng/IDebugSymbols3::GetFieldOffsetWide, GetFieldOffsetWide, IDebugSymbols3, IDebugSymbols3::GetFieldOffsetWide, GetFieldOffsetWide method [Windows Debugging], IDebugSymbols3 interface, debugger.getfieldoffsetwide, GetFieldOffsetWide method [Windows Debugging], IDebugSymbols3 interface [Windows Debugging], GetFieldOffsetWide method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugSymbols3.GetFieldOffsetWide
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

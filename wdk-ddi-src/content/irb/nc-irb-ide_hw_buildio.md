@@ -1,41 +1,46 @@
 ---
-UID : NC:irb.IDE_HW_BUILDIO
-title : IDE_HW_BUILDIO
-author : windows-driver-content
-description : The IdeHwBuildIo miniport driver routine is called one time for every incoming I/O request.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
-old-location : storage\idehwbuildio.htm
-old-project : storage
-ms.assetid : 057fb78f-6f1c-4b16-b9fa-6fcff299a90d
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.idehwbuildio, IdeHwBuildIo routine [Storage Devices], IdeHwBuildIo, IDE_HW_BUILDIO, IDE_HW_BUILDIO, irb/IdeHwBuildIo, atartns_9111d60c-e0e1-4c5c-aacf-2af56fcf7338.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : irb.h
-req.include-header : Irb.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : LUID
+UID: NC:irb.IDE_HW_BUILDIO
+title: IDE_HW_BUILDIO
+author: windows-driver-content
+description: The IdeHwBuildIo miniport driver routine is called one time for every incoming I/O request.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
+old-location: storage\idehwbuildio.htm
+old-project: storage
+ms.assetid: 057fb78f-6f1c-4b16-b9fa-6fcff299a90d
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.idehwbuildio, IdeHwBuildIo routine [Storage Devices], IdeHwBuildIo, IDE_HW_BUILDIO, IDE_HW_BUILDIO, irb/IdeHwBuildIo, atartns_9111d60c-e0e1-4c5c-aacf-2af56fcf7338.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: irb.h
+req.include-header: Irb.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	irb.h
+apiname:
+-	IdeHwBuildIo
+product: Windows
+targetos: Windows
+req.typenames: LUID
 ---
 
 

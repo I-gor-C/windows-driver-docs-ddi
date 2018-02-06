@@ -1,42 +1,48 @@
 ---
-UID : NF:storport.StorPortReadRegisterUlong
-title : StorPortReadRegisterUlong function
-author : windows-driver-content
-description : The StorPortReadRegisterUlong routine reads a value from a specified register address.
-old-location : storage\storportreadregisterulong.htm
-old-project : storage
-ms.assetid : 308e6401-9726-4333-bde8-1aec9558c5fb
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.storportreadregisterulong, storport/StorPortReadRegisterUlong, StorPortReadRegisterUlong routine [Storage Devices], storprt_dd719ccb-d625-4820-a371-dff748037a99.xml, StorPortReadRegisterUlong
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Storport.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STOR_SPINLOCK
-req.product : Windows 10 or later.
+UID: NF:storport.StorPortReadRegisterUlong
+title: StorPortReadRegisterUlong function
+author: windows-driver-content
+description: The StorPortReadRegisterUlong routine reads a value from a specified register address.
+old-location: storage\storportreadregisterulong.htm
+old-project: storage
+ms.assetid: 308e6401-9726-4333-bde8-1aec9558c5fb
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.storportreadregisterulong, storport/StorPortReadRegisterUlong, StorPortReadRegisterUlong routine [Storage Devices], storprt_dd719ccb-d625-4820-a371-dff748037a99.xml, StorPortReadRegisterUlong
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Storport.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Storport.lib
+-	Storport.dll
+apiname:
+-	StorPortReadRegisterUlong
+product: Windows
+targetos: Windows
+req.typenames: STOR_SPINLOCK
+req.product: Windows 10 or later.
 ---
 
 

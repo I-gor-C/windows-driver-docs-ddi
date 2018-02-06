@@ -1,42 +1,47 @@
 ---
-UID : NE:windot11._DOT11_PHY_TYPE
-title : "_DOT11_PHY_TYPE"
-author : windows-driver-content
-description : Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
-old-location : netvista\dot11_phy_type.htm
-old-project : netvista
-ms.assetid : 45ef8085-512e-4f9b-a7ea-e4f445555cf8
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : windot11/DOT11_PHY_TYPE, windot11/dot11_phy_type_hrdsss, dot11_phy_type_ht, windot11/dot11_phy_type_IHV_end, dot11_phy_type_fhss, windot11/PDOT11_PHY_TYPE, _DOT11_PHY_TYPE, dot11_phy_type_ofdm, dot11_phy_type_IHV_start, dot11_phy_type_dsss, windot11/dot11_phy_type_ofdm, dot11_phy_type_hrdsss, windot11/dot11_phy_type_irbaseband, dot11_phy_type_vht, windot11/dot11_phy_type_IHV_start, windot11/dot11_phy_type_any, PDOT11_PHY_TYPE, dot11_phy_type_erp, windot11/dot11_phy_type_erp, windot11/dot11_phy_type_dsss, windot11/dot11_phy_type_unknown, windot11/dot11_phy_type_ht, DOT11_PHY_TYPE enumeration [Network Drivers Starting with Windows Vista], dot11_phy_type_unknown, windot11/dot11_phy_type_fhss, netvista.dot11_phy_type, dot11_phy_type_any, DOT11_PHY_TYPE, Native_802.11_data_types_814496a3-4f7e-44a0-925c-0dbf64eb3f72.xml, PDOT11_PHY_TYPE enumeration pointer [Network Drivers Starting with Windows Vista], *PDOT11_PHY_TYPE, dot11_phy_type_irbaseband, dot11_phy_type_IHV_end, windot11/dot11_phy_type_vht
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : windot11.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating   systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT11_PHY_TYPE, *PDOT11_PHY_TYPE
-req.product : Windows 10 or later.
+UID: NE:windot11._DOT11_PHY_TYPE
+title: "_DOT11_PHY_TYPE"
+author: windows-driver-content
+description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+old-location: netvista\dot11_phy_type.htm
+old-project: netvista
+ms.assetid: 45ef8085-512e-4f9b-a7ea-e4f445555cf8
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: windot11/DOT11_PHY_TYPE, windot11/dot11_phy_type_hrdsss, dot11_phy_type_ht, windot11/dot11_phy_type_IHV_end, dot11_phy_type_fhss, windot11/PDOT11_PHY_TYPE, _DOT11_PHY_TYPE, dot11_phy_type_ofdm, dot11_phy_type_IHV_start, dot11_phy_type_dsss, windot11/dot11_phy_type_ofdm, dot11_phy_type_hrdsss, windot11/dot11_phy_type_irbaseband, dot11_phy_type_vht, windot11/dot11_phy_type_IHV_start, windot11/dot11_phy_type_any, PDOT11_PHY_TYPE, dot11_phy_type_erp, windot11/dot11_phy_type_erp, windot11/dot11_phy_type_dsss, windot11/dot11_phy_type_unknown, windot11/dot11_phy_type_ht, DOT11_PHY_TYPE enumeration [Network Drivers Starting with Windows Vista], dot11_phy_type_unknown, windot11/dot11_phy_type_fhss, netvista.dot11_phy_type, dot11_phy_type_any, DOT11_PHY_TYPE, Native_802.11_data_types_814496a3-4f7e-44a0-925c-0dbf64eb3f72.xml, PDOT11_PHY_TYPE enumeration pointer [Network Drivers Starting with Windows Vista], *PDOT11_PHY_TYPE, dot11_phy_type_irbaseband, dot11_phy_type_IHV_end, windot11/dot11_phy_type_vht
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: windot11.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	windot11.h
+apiname:
+-	DOT11_PHY_TYPE
+product: Windows
+targetos: Windows
+req.typenames: DOT11_PHY_TYPE, *PDOT11_PHY_TYPE
+req.product: Windows 10 or later.
 ---
 
 # _DOT11_PHY_TYPE Enumeration
@@ -63,94 +68,94 @@ typedef enum _DOT11_PHY_TYPE {
 ## Constants
 
 <table>
-
-<tr>
-<td>dot11_phy_type_any</td>
-<td>Specifies an unknown or uninitialized PHY type.</td>
-</tr>
-
-<tr>
-<td>dot11_phy_type_dmg</td>
-<td></td>
-</tr>
-
-<tr>
-<td>dot11_phy_type_dsss</td>
-<td>Specifies a direct sequence spread spectrum (DSSS) PHY.</td>
-</tr>
-
-<tr>
-<td>dot11_phy_type_erp</td>
-<td>Specifies an extended-rate 802.11g PHY (ERP).</td>
-</tr>
-
-<tr>
-<td>dot11_phy_type_fhss</td>
-<td>Specifies a frequency-hopping spread-spectrum (FHSS) PHY.</td>
-</tr>
-
-<tr>
-<td>dot11_phy_type_hrdsss</td>
-<td>Specifies a high-rate DSSS (HRDSSS) 802.11b PHY.</td>
-</tr>
-
-<tr>
-<td>dot11_phy_type_ht</td>
-<td>Specifies a high-throughput (HT) 802.11n PHY. Each 802.11n PHY, whether dual-band or not, is
+            
+                <tr>
+                    <td>dot11_phy_type_any</td>
+                    <td>Specifies an unknown or uninitialized PHY type.</td>
+                </tr>
+            
+                <tr>
+                    <td>dot11_phy_type_dmg</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>dot11_phy_type_dsss</td>
+                    <td>Specifies a direct sequence spread spectrum (DSSS) PHY.</td>
+                </tr>
+            
+                <tr>
+                    <td>dot11_phy_type_erp</td>
+                    <td>Specifies an extended-rate 802.11g PHY (ERP).</td>
+                </tr>
+            
+                <tr>
+                    <td>dot11_phy_type_fhss</td>
+                    <td>Specifies a frequency-hopping spread-spectrum (FHSS) PHY.</td>
+                </tr>
+            
+                <tr>
+                    <td>dot11_phy_type_hrdsss</td>
+                    <td>Specifies a high-rate DSSS (HRDSSS) 802.11b PHY.</td>
+                </tr>
+            
+                <tr>
+                    <td>dot11_phy_type_ht</td>
+                    <td>Specifies a high-throughput (HT) 802.11n PHY. Each 802.11n PHY, whether dual-band or not, is
      specified as this PHY type.</td>
-</tr>
-
-<tr>
-<td>dot11_phy_type_IHV_end</td>
-<td>Specifies the end of the range that is used to define proprietary PHY types that are developed by
+                </tr>
+            
+                <tr>
+                    <td>dot11_phy_type_IHV_end</td>
+                    <td>Specifies the end of the range that is used to define proprietary PHY types that are developed by
      an IHV.
      
 
 The 
      <b>dot11_phy_type_IHV_end</b> enumerator value is valid only when the miniport driver is operating in
      ExtSTA mode.</td>
-</tr>
-
-<tr>
-<td>dot11_phy_type_IHV_start</td>
-<td>Specifies the start of the range that is used to define proprietary PHY types that are developed
+                </tr>
+            
+                <tr>
+                    <td>dot11_phy_type_IHV_start</td>
+                    <td>Specifies the start of the range that is used to define proprietary PHY types that are developed
      by an independent hardware vendor (IHV).
      
 
 The 
      <b>dot11_phy_type_IHV_start</b> enumerator value is valid only when the miniport driver is operating in
      Extensible Station (ExtSTA) mode.</td>
-</tr>
-
-<tr>
-<td>dot11_phy_type_irbaseband</td>
-<td>Specifies an infrared (IR) baseband PHY.</td>
-</tr>
-
-<tr>
-<td>dot11_phy_type_ofdm</td>
-<td>Specifies an orthogonal frequency division multiplexing (OFDM) 802.11a PHY.</td>
-</tr>
-
-<tr>
-<td>dot11_phy_type_unknown</td>
-<td>Specifies an unknown or uninitialized PHY type.</td>
-</tr>
-
-<tr>
-<td>dot11_phy_type_vht</td>
-<td>Specifies a very high-throughput (VHT) 802.11ac PHY.</td>
-</tr>
-
-<tr>
-<td>v1_enum</td>
-<td></td>
-</tr>
+                </tr>
+            
+                <tr>
+                    <td>dot11_phy_type_irbaseband</td>
+                    <td>Specifies an infrared (IR) baseband PHY.</td>
+                </tr>
+            
+                <tr>
+                    <td>dot11_phy_type_ofdm</td>
+                    <td>Specifies an orthogonal frequency division multiplexing (OFDM) 802.11a PHY.</td>
+                </tr>
+            
+                <tr>
+                    <td>dot11_phy_type_unknown</td>
+                    <td>Specifies an unknown or uninitialized PHY type.</td>
+                </tr>
+            
+                <tr>
+                    <td>dot11_phy_type_vht</td>
+                    <td>Specifies a very high-throughput (VHT) 802.11ac PHY.</td>
+                </tr>
+            
+                <tr>
+                    <td>v1_enum</td>
+                    <td></td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-An IHV can assign a value for its proprietary PHY types from 
+        An IHV can assign a value for its proprietary PHY types from 
     <b>dot11_phy_type_IHV_start</b> through 
     <b>dot11_phy_type_IHV_end</b>. The IHV must assign a unique number from this range for each of its
     proprietary PHY types.
@@ -161,9 +166,9 @@ An IHV can assign a value for its proprietary PHY types from
 | **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems. Available in Windows Vista and later versions of the Windows operating   systems. |
 | **Header** | windot11.h (include Ndis.h) |
 
-## See Also
+    ## See Also
 
-<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-dot11-supported-phy-types">OID_DOT11_SUPPORTED_PHY_TYPES</a>
+        <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-dot11-supported-phy-types">OID_DOT11_SUPPORTED_PHY_TYPES</a>
 
 <a href="..\windot11\ns-windot11-dot11_association_completion_parameters.md">
    DOT11_ASSOCIATION_COMPLETION_PARAMETERS</a>

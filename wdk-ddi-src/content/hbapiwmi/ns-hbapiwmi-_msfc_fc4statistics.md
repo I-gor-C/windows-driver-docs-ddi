@@ -1,41 +1,46 @@
 ---
-UID : NS:hbapiwmi._MSFC_FC4STATISTICS
-title : "_MSFC_FC4STATISTICS"
-author : windows-driver-content
-description : The MSFC_FC4STATISTICS structure is used in conjunction with the GetFC4Statistics WMI method to report traffic statistics on a port of type Nx_Port for the indicated FC-4 protocol.
-old-location : storage\msfc_fc4statistics.htm
-old-project : storage
-ms.assetid : a46a9aff-9bc9-4328-85b2-90f8f80b2e65
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.msfc_fc4statistics, MSFC_FC4STATISTICS, *PMSFC_FC4STATISTICS, MSFC_FC4STATISTICS structure [Storage Devices], hbapiwmi/PMSFC_FC4STATISTICS, _MSFC_FC4STATISTICS, structs-Fibre_aad92cde-3922-49dd-8473-fefff79e5e2b.xml, PMSFC_FC4STATISTICS structure pointer [Storage Devices], hbapiwmi/MSFC_FC4STATISTICS, PMSFC_FC4STATISTICS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : hbapiwmi.h
-req.include-header : Hbapiwmi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : MSFC_FC4STATISTICS, *PMSFC_FC4STATISTICS
+UID: NS:hbapiwmi._MSFC_FC4STATISTICS
+title: "_MSFC_FC4STATISTICS"
+author: windows-driver-content
+description: The MSFC_FC4STATISTICS structure is used in conjunction with the GetFC4Statistics WMI method to report traffic statistics on a port of type Nx_Port for the indicated FC-4 protocol.
+old-location: storage\msfc_fc4statistics.htm
+old-project: storage
+ms.assetid: a46a9aff-9bc9-4328-85b2-90f8f80b2e65
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.msfc_fc4statistics, MSFC_FC4STATISTICS, *PMSFC_FC4STATISTICS, MSFC_FC4STATISTICS structure [Storage Devices], hbapiwmi/PMSFC_FC4STATISTICS, _MSFC_FC4STATISTICS, structs-Fibre_aad92cde-3922-49dd-8473-fefff79e5e2b.xml, PMSFC_FC4STATISTICS structure pointer [Storage Devices], hbapiwmi/MSFC_FC4STATISTICS, PMSFC_FC4STATISTICS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: hbapiwmi.h
+req.include-header: Hbapiwmi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hbapiwmi.h
+apiname:
+-	MSFC_FC4STATISTICS
+product: Windows
+targetos: Windows
+req.typenames: MSFC_FC4STATISTICS, *PMSFC_FC4STATISTICS
 ---
 
 # _MSFC_FC4STATISTICS structure

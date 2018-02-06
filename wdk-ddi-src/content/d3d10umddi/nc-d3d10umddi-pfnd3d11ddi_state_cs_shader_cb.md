@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3D11DDI_STATE_CS_SHADER_CB
-title : PFND3D11DDI_STATE_CS_SHADER_CB
-author : windows-driver-content
-description : The pfnStateCsShaderCb function causes the Microsoft Direct3D 11 runtime to refresh the compute shader.
-old-location : display\pfnstatecsshadercb.htm
-old-project : display
-ms.assetid : ae06ffb3-3ed5-4117-8373-e41a45be37d1
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.pfnstatecsshadercb, pfnStateCsShaderCb callback function [Display Devices], pfnStateCsShaderCb, PFND3D11DDI_STATE_CS_SHADER_CB, PFND3D11DDI_STATE_CS_SHADER_CB, d3d10umddi/pfnStateCsShaderCb, d3d11state_functions_8292f8aa-d925-4dc9-9d9c-ccbe10d7e15f.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : pfnStateCsShaderCb is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3D11DDI_STATE_CS_SHADER_CB
+title: PFND3D11DDI_STATE_CS_SHADER_CB
+author: windows-driver-content
+description: The pfnStateCsShaderCb function causes the Microsoft Direct3D 11 runtime to refresh the compute shader.
+old-location: display\pfnstatecsshadercb.htm
+old-project: display
+ms.assetid: ae06ffb3-3ed5-4117-8373-e41a45be37d1
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.pfnstatecsshadercb, pfnStateCsShaderCb callback function [Display Devices], pfnStateCsShaderCb, PFND3D11DDI_STATE_CS_SHADER_CB, PFND3D11DDI_STATE_CS_SHADER_CB, d3d10umddi/pfnStateCsShaderCb, d3d11state_functions_8292f8aa-d925-4dc9-9d9c-ccbe10d7e15f.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: pfnStateCsShaderCb is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	pfnStateCsShaderCb
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

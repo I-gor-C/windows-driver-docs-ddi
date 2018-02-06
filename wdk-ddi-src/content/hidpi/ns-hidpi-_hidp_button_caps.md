@@ -1,41 +1,46 @@
 ---
-UID : NS:hidpi._HIDP_BUTTON_CAPS
-title : "_HIDP_BUTTON_CAPS"
-author : windows-driver-content
-description : The HIDP_BUTTON_CAPS structure contains information about the capability of a HID control button usage (or a set of buttons associated with a usage range).
-old-location : hid\hidp_button_caps.htm
-old-project : hid
-ms.assetid : d3d77679-6749-4ef5-a8f2-91639587144a
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : "_HIDP_BUTTON_CAPS, PHIDP_BUTTON_CAPS structure pointer [Human Input Devices], hidpi/PHIDP_BUTTON_CAPS, HIDP_BUTTON_CAPS, hidpi/HIDP_BUTTON_CAPS, hid.hidp_button_caps, PHIDP_BUTTON_CAPS, HIDP_BUTTON_CAPS structure [Human Input Devices], *PHIDP_BUTTON_CAPS, hidstrct_0fa7f0ef-afc7-482a-bcf0-c8c78c3d18f7.xml"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : hidpi.h
-req.include-header : Hidpi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HIDP_BUTTON_CAPS, *PHIDP_BUTTON_CAPS
+UID: NS:hidpi._HIDP_BUTTON_CAPS
+title: "_HIDP_BUTTON_CAPS"
+author: windows-driver-content
+description: The HIDP_BUTTON_CAPS structure contains information about the capability of a HID control button usage (or a set of buttons associated with a usage range).
+old-location: hid\hidp_button_caps.htm
+old-project: hid
+ms.assetid: d3d77679-6749-4ef5-a8f2-91639587144a
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: "_HIDP_BUTTON_CAPS, PHIDP_BUTTON_CAPS structure pointer [Human Input Devices], hidpi/PHIDP_BUTTON_CAPS, HIDP_BUTTON_CAPS, hidpi/HIDP_BUTTON_CAPS, hid.hidp_button_caps, PHIDP_BUTTON_CAPS, HIDP_BUTTON_CAPS structure [Human Input Devices], *PHIDP_BUTTON_CAPS, hidstrct_0fa7f0ef-afc7-482a-bcf0-c8c78c3d18f7.xml"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: hidpi.h
+req.include-header: Hidpi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hidpi.h
+apiname:
+-	HIDP_BUTTON_CAPS
+product: Windows
+targetos: Windows
+req.typenames: HIDP_BUTTON_CAPS, *PHIDP_BUTTON_CAPS
 ---
 
 # _HIDP_BUTTON_CAPS structure

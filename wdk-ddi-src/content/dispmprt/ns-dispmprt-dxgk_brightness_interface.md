@@ -1,41 +1,46 @@
 ---
-UID : NS:dispmprt.DXGK_BRIGHTNESS_INTERFACE
-title : DXGK_BRIGHTNESS_INTERFACE
-author : windows-driver-content
-description : The DXGK_BRIGHTNESS_INTERFACE structure contains pointers to functions in the Panel Brightness Control Interface, which is implemented by the display miniport driver.
-old-location : display\dxgk_brightness_interface.htm
-old-project : display
-ms.assetid : 8fa7908c-7ed4-4f85-846c-71fc5c7dc035
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : dispmprt/DXGK_BRIGHTNESS_INTERFACE, display.dxgk_brightness_interface, PDXGK_BRIGHTNESS_INTERFACE structure pointer [Display Devices], *PDXGK_BRIGHTNESS_INTERFACE, DXGK_BRIGHTNESS_INTERFACE structure [Display Devices], DXGK_BRIGHTNESS_INTERFACE, PDXGK_BRIGHTNESS_INTERFACE, dispmprt/PDXGK_BRIGHTNESS_INTERFACE, DmStructs_f750f3c3-0754-49b9-8ad5-cd93f84697c4.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : dispmprt.h
-req.include-header : Dispmprt.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDXGK_BRIGHTNESS_INTERFACE, DXGK_BRIGHTNESS_INTERFACE"
+UID: NS:dispmprt.DXGK_BRIGHTNESS_INTERFACE
+title: DXGK_BRIGHTNESS_INTERFACE
+author: windows-driver-content
+description: The DXGK_BRIGHTNESS_INTERFACE structure contains pointers to functions in the Panel Brightness Control Interface, which is implemented by the display miniport driver.
+old-location: display\dxgk_brightness_interface.htm
+old-project: display
+ms.assetid: 8fa7908c-7ed4-4f85-846c-71fc5c7dc035
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: dispmprt/DXGK_BRIGHTNESS_INTERFACE, display.dxgk_brightness_interface, PDXGK_BRIGHTNESS_INTERFACE structure pointer [Display Devices], *PDXGK_BRIGHTNESS_INTERFACE, DXGK_BRIGHTNESS_INTERFACE structure [Display Devices], DXGK_BRIGHTNESS_INTERFACE, PDXGK_BRIGHTNESS_INTERFACE, dispmprt/PDXGK_BRIGHTNESS_INTERFACE, DmStructs_f750f3c3-0754-49b9-8ad5-cd93f84697c4.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: dispmprt.h
+req.include-header: Dispmprt.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	dispmprt.h
+apiname:
+-	DXGK_BRIGHTNESS_INTERFACE
+product: Windows
+targetos: Windows
+req.typenames: "*PDXGK_BRIGHTNESS_INTERFACE, DXGK_BRIGHTNESS_INTERFACE"
 ---
 
 # DXGK_BRIGHTNESS_INTERFACE structure

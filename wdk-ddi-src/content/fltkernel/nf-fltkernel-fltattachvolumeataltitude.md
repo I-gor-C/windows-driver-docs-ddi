@@ -1,41 +1,47 @@
 ---
-UID : NF:fltkernel.FltAttachVolumeAtAltitude
-title : FltAttachVolumeAtAltitude function
-author : windows-driver-content
-description : FltAttachVolumeAtAltitude is a debugging support routine that attaches a minifilter driver instance to a volume at a specified altitude, overriding any settings in the minifilter driver's INF file.
-old-location : ifsk\fltattachvolumeataltitude.htm
-old-project : ifsk
-ms.assetid : d6e6f66a-77ed-4c1c-92d5-97a806cfbd68
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltAttachVolumeAtAltitude, FltAttachVolumeAtAltitude routine [Installable File System Drivers], ifsk.fltattachvolumeataltitude, FltApiRef_a_to_d_5a0e9e03-7d81-4894-9430-fed1c32181b6.xml, fltkernel/FltAttachVolumeAtAltitude
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltAttachVolumeAtAltitude
+title: FltAttachVolumeAtAltitude function
+author: windows-driver-content
+description: FltAttachVolumeAtAltitude is a debugging support routine that attaches a minifilter driver instance to a volume at a specified altitude, overriding any settings in the minifilter driver's INF file.
+old-location: ifsk\fltattachvolumeataltitude.htm
+old-project: ifsk
+ms.assetid: d6e6f66a-77ed-4c1c-92d5-97a806cfbd68
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltAttachVolumeAtAltitude, FltAttachVolumeAtAltitude routine [Installable File System Drivers], ifsk.fltattachvolumeataltitude, FltApiRef_a_to_d_5a0e9e03-7d81-4894-9430-fed1c32181b6.xml, fltkernel/FltAttachVolumeAtAltitude
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	FltMgr.lib
+-	FltMgr.dll
+apiname:
+-	FltAttachVolumeAtAltitude
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

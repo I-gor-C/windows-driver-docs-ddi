@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._D3DDDIBOX
-title : "_D3DDDIBOX"
-author : windows-driver-content
-description : Describes the bounds of a volume texture.
-old-location : display\d3dddibox.htm
-old-project : display
-ms.assetid : 3CE49C9F-EFFC-4F43-A939-623B28FD5EFB
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3dumddi/D3DDDIBOX, D3DDDIBOX structure [Display Devices], _D3DDDIBOX, display.d3dddibox, D3DDDIBOX
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDIBOX
+UID: NS:d3dumddi._D3DDDIBOX
+title: "_D3DDDIBOX"
+author: windows-driver-content
+description: Describes the bounds of a volume texture.
+old-location: display\d3dddibox.htm
+old-project: display
+ms.assetid: 3CE49C9F-EFFC-4F43-A939-623B28FD5EFB
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3dumddi/D3DDDIBOX, D3DDDIBOX structure [Display Devices], _D3DDDIBOX, display.d3dddibox, D3DDDIBOX
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	D3dumddi.h
+apiname:
+-	D3DDDIBOX
+product: Windows
+targetos: Windows
+req.typenames: D3DDDIBOX
 ---
 
 # _D3DDDIBOX structure

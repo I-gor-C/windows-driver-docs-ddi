@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddstor._STORAGE_DEVICE_POWER_CAP
-title : "_STORAGE_DEVICE_POWER_CAP"
-author : windows-driver-content
-description : This structure is used as an input and output buffer for the IOCTL_STORAGE_DEVICE_POWER_CAP.
-old-location : storage\storage_device_power_cap.htm
-old-project : storage
-ms.assetid : B13D311F-FFC4-4A40-AF0C-6E7115174FD1
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : ntddstor/PSTORAGE_DEVICE_POWER_CAP, *PSTORAGE_DEVICE_POWER_CAP, STORAGE_DEVICE_POWER_CAP structure [Storage Devices], storage.storage_device_power_cap, ntddstor/STORAGE_DEVICE_POWER_CAP, STORAGE_DEVICE_POWER_CAP, PSTORAGE_DEVICE_POWER_CAP structure pointer [Storage Devices], _STORAGE_DEVICE_POWER_CAP, PSTORAGE_DEVICE_POWER_CAP
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddstor.h
-req.include-header : Ntddstor.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSTORAGE_DEVICE_POWER_CAP, STORAGE_DEVICE_POWER_CAP"
+UID: NS:ntddstor._STORAGE_DEVICE_POWER_CAP
+title: "_STORAGE_DEVICE_POWER_CAP"
+author: windows-driver-content
+description: This structure is used as an input and output buffer for the IOCTL_STORAGE_DEVICE_POWER_CAP.
+old-location: storage\storage_device_power_cap.htm
+old-project: storage
+ms.assetid: B13D311F-FFC4-4A40-AF0C-6E7115174FD1
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: ntddstor/PSTORAGE_DEVICE_POWER_CAP, *PSTORAGE_DEVICE_POWER_CAP, STORAGE_DEVICE_POWER_CAP structure [Storage Devices], storage.storage_device_power_cap, ntddstor/STORAGE_DEVICE_POWER_CAP, STORAGE_DEVICE_POWER_CAP, PSTORAGE_DEVICE_POWER_CAP structure pointer [Storage Devices], _STORAGE_DEVICE_POWER_CAP, PSTORAGE_DEVICE_POWER_CAP
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddstor.h
+req.include-header: Ntddstor.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddstor.h
+apiname:
+-	STORAGE_DEVICE_POWER_CAP
+product: Windows
+targetos: Windows
+req.typenames: "*PSTORAGE_DEVICE_POWER_CAP, STORAGE_DEVICE_POWER_CAP"
 ---
 
 # _STORAGE_DEVICE_POWER_CAP structure

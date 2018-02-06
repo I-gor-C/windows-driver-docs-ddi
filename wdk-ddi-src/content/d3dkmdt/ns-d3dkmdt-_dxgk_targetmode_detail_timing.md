@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmdt._DXGK_TARGETMODE_DETAIL_TIMING
-title : "_DXGK_TARGETMODE_DETAIL_TIMING"
-author : windows-driver-content
-description : The DXGK_TARGETMODE_DETAIL_TIMING structure describes a video present target's additional timing modes that are compatible with the display device.
-old-location : display\dxgk_targetmode_detail_timing.htm
-old-project : display
-ms.assetid : bf5e53fa-bafd-4325-be8e-97d1c6aa334e
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3dkmdt/DXGK_TARGETMODE_DETAIL_TIMING, DXGK_TARGETMODE_DETAIL_TIMING structure [Display Devices], DXGK_TARGETMODE_DETAIL_TIMING, display.dxgk_targetmode_detail_timing, _DXGK_TARGETMODE_DETAIL_TIMING, DmStructs_e09b214e-5cd4-430e-b5ba-ece083bbb71c.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmdt.h
-req.include-header : D3dkmdt.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7 and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_TARGETMODE_DETAIL_TIMING
+UID: NS:d3dkmdt._DXGK_TARGETMODE_DETAIL_TIMING
+title: "_DXGK_TARGETMODE_DETAIL_TIMING"
+author: windows-driver-content
+description: The DXGK_TARGETMODE_DETAIL_TIMING structure describes a video present target's additional timing modes that are compatible with the display device.
+old-location: display\dxgk_targetmode_detail_timing.htm
+old-project: display
+ms.assetid: bf5e53fa-bafd-4325-be8e-97d1c6aa334e
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3dkmdt/DXGK_TARGETMODE_DETAIL_TIMING, DXGK_TARGETMODE_DETAIL_TIMING structure [Display Devices], DXGK_TARGETMODE_DETAIL_TIMING, display.dxgk_targetmode_detail_timing, _DXGK_TARGETMODE_DETAIL_TIMING, DmStructs_e09b214e-5cd4-430e-b5ba-ece083bbb71c.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmdt.h
+req.include-header: D3dkmdt.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7 and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmdt.h
+apiname:
+-	DXGK_TARGETMODE_DETAIL_TIMING
+product: Windows
+targetos: Windows
+req.typenames: DXGK_TARGETMODE_DETAIL_TIMING
 ---
 
 # _DXGK_TARGETMODE_DETAIL_TIMING structure

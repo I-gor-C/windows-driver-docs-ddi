@@ -1,41 +1,46 @@
 ---
-UID : NF:portcls.IMiniportAudioEngineNode.GetSupportedDeviceFormats
-title : IMiniportAudioEngineNode::GetSupportedDeviceFormats method
-author : windows-driver-content
-description : Gets the supported audio data formats for the audio device.
-old-location : audio\iminiportaudioenginenode_getsupporteddeviceformats.htm
-old-project : audio
-ms.assetid : 2B27E92C-8781-4499-A1E0-7C1BBFFAA2DF
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : IMiniportAudioEngineNode interface [Audio Devices], GetSupportedDeviceFormats method, GetSupportedDeviceFormats method [Audio Devices], IMiniportAudioEngineNode interface, GetSupportedDeviceFormats method [Audio Devices], portcls/IMiniportAudioEngineNode::GetSupportedDeviceFormats, IMiniportAudioEngineNode::GetSupportedDeviceFormats, audio.iminiportaudioenginenode_getsupporteddeviceformats, IMiniportAudioEngineNode, GetSupportedDeviceFormats
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : portcls.h
-req.include-header : 
-req.target-type : Universal
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : portcls.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.IMiniportAudioEngineNode.GetSupportedDeviceFormats
+title: IMiniportAudioEngineNode::GetSupportedDeviceFormats method
+author: windows-driver-content
+description: Gets the supported audio data formats for the audio device.
+old-location: audio\iminiportaudioenginenode_getsupporteddeviceformats.htm
+old-project: audio
+ms.assetid: 2B27E92C-8781-4499-A1E0-7C1BBFFAA2DF
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: IMiniportAudioEngineNode interface [Audio Devices], GetSupportedDeviceFormats method, GetSupportedDeviceFormats method [Audio Devices], IMiniportAudioEngineNode interface, GetSupportedDeviceFormats method [Audio Devices], portcls/IMiniportAudioEngineNode::GetSupportedDeviceFormats, IMiniportAudioEngineNode::GetSupportedDeviceFormats, audio.iminiportaudioenginenode_getsupporteddeviceformats, IMiniportAudioEngineNode, GetSupportedDeviceFormats
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: portcls.h
+req.include-header: 
+req.target-type: Universal
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: portcls.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Portcls.h
+apiname:
+-	IMiniportAudioEngineNode.GetSupportedDeviceFormats
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

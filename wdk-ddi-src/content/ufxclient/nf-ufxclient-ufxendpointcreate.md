@@ -1,42 +1,47 @@
 ---
-UID : NF:ufxclient.UfxEndpointCreate
-title : UfxEndpointCreate function
-author : windows-driver-content
-description : Creates an endpoint object.
-old-location : buses\ufxendpointcreate.htm
-old-project : usbref
-ms.assetid : 060CADB7-AAC9-401A-9198-FC306CE74A34
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : UfxEndpointCreate, UfxEndpointCreate method [Buses], ufxclient/UfxEndpointCreate, buses.ufxendpointcreate
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ufxclient.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUFX_HARDWARE_FAILURE_CONTEXT, UFX_HARDWARE_FAILURE_CONTEXT"
-req.product : Windows 10 or later.
+UID: NF:ufxclient.UfxEndpointCreate
+title: UfxEndpointCreate function
+author: windows-driver-content
+description: Creates an endpoint object.
+old-location: buses\ufxendpointcreate.htm
+old-project: usbref
+ms.assetid: 060CADB7-AAC9-401A-9198-FC306CE74A34
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: UfxEndpointCreate, UfxEndpointCreate method [Buses], ufxclient/UfxEndpointCreate, buses.ufxendpointcreate
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ufxclient.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	ufxclient.h
+apiname:
+-	UfxEndpointCreate
+product: Windows
+targetos: Windows
+req.typenames: "*PUFX_HARDWARE_FAILURE_CONTEXT, UFX_HARDWARE_FAILURE_CONTEXT"
+req.product: Windows 10 or later.
 ---
 
 

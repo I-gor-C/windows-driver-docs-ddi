@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugSystemObjects3.GetCurrentSystemServer
-title : IDebugSystemObjects3::GetCurrentSystemServer method
-author : windows-driver-content
-description : Gets the server for the current process.
-old-location : debugger\idebugsystemobjects3_getcurrentsystemserver.htm
-old-project : debugger
-ms.assetid : 7956E4F6-7FB5-4349-81D2-4953108557D2
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugSystemObjects3, dbgeng/IDebugSystemObjects3::GetCurrentSystemServer, GetCurrentSystemServer method [Windows Debugging], GetCurrentSystemServer method [Windows Debugging], IDebugSystemObjects3 interface, IDebugSystemObjects3 interface [Windows Debugging], GetCurrentSystemServer method, IDebugSystemObjects3::GetCurrentSystemServer, debugger.idebugsystemobjects3_getcurrentsystemserver, GetCurrentSystemServer
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSystemObjects3.GetCurrentSystemServer
+title: IDebugSystemObjects3::GetCurrentSystemServer method
+author: windows-driver-content
+description: Gets the server for the current process.
+old-location: debugger\idebugsystemobjects3_getcurrentsystemserver.htm
+old-project: debugger
+ms.assetid: 7956E4F6-7FB5-4349-81D2-4953108557D2
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugSystemObjects3, dbgeng/IDebugSystemObjects3::GetCurrentSystemServer, GetCurrentSystemServer method [Windows Debugging], GetCurrentSystemServer method [Windows Debugging], IDebugSystemObjects3 interface, IDebugSystemObjects3 interface [Windows Debugging], GetCurrentSystemServer method, IDebugSystemObjects3::GetCurrentSystemServer, debugger.idebugsystemobjects3_getcurrentsystemserver, GetCurrentSystemServer
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Dbgeng.h
+apiname:
+-	IDebugSystemObjects3.GetCurrentSystemServer
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

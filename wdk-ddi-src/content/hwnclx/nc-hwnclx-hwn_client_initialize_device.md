@@ -1,41 +1,46 @@
 ---
-UID : NC:hwnclx.HWN_CLIENT_INITIALIZE_DEVICE
-title : HWN_CLIENT_INITIALIZE_DEVICE
-author : windows-driver-content
-description : Implemented by the client driver and is invoked as a result of a call to EVT_WDF_DEVICE_PREPARE_HARDWARE.
-old-location : gpiobtn\hwn_client_initialize_device.htm
-old-project : gpiobtn
-ms.assetid : d08b2435-fb6f-49cd-8da3-c49676623357
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : gpiobtn.hwn_client_initialize_device, HwnClientInitializeDevice callback function, HwnClientInitializeDevice, HWN_CLIENT_INITIALIZE_DEVICE, HWN_CLIENT_INITIALIZE_DEVICE, hwnclx/HwnClientInitializeDevice, *PHWN_CLIENT_INITIALIZE_DEVICE callback function pointer, *PHWN_CLIENT_INITIALIZE_DEVICE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : hwnclx.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10, version 1709
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HPMI_QUERY_CAPABILITIES_RESPONSE, *PHPMI_QUERY_CAPABILITIES_RESPONSE
+UID: NC:hwnclx.HWN_CLIENT_INITIALIZE_DEVICE
+title: HWN_CLIENT_INITIALIZE_DEVICE
+author: windows-driver-content
+description: Implemented by the client driver and is invoked as a result of a call to EVT_WDF_DEVICE_PREPARE_HARDWARE.
+old-location: gpiobtn\hwn_client_initialize_device.htm
+old-project: gpiobtn
+ms.assetid: d08b2435-fb6f-49cd-8da3-c49676623357
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: gpiobtn.hwn_client_initialize_device, HwnClientInitializeDevice callback function, HwnClientInitializeDevice, HWN_CLIENT_INITIALIZE_DEVICE, HWN_CLIENT_INITIALIZE_DEVICE, hwnclx/HwnClientInitializeDevice, *PHWN_CLIENT_INITIALIZE_DEVICE callback function pointer, *PHWN_CLIENT_INITIALIZE_DEVICE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: hwnclx.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10, version 1709
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Hwnclx.h
+apiname:
+-	*PHWN_CLIENT_INITIALIZE_DEVICE
+product: Windows
+targetos: Windows
+req.typenames: HPMI_QUERY_CAPABILITIES_RESPONSE, *PHPMI_QUERY_CAPABILITIES_RESPONSE
 ---
 
 

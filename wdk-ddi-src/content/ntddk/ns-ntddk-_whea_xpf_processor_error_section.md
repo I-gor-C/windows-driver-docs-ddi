@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddk._WHEA_XPF_PROCESSOR_ERROR_SECTION
-title : "_WHEA_XPF_PROCESSOR_ERROR_SECTION"
-author : windows-driver-content
-description : The WHEA_XPF_PROCESSOR_ERROR_SECTION structure describes processor error data that is specific to the x86/x64 processor architecture.
-old-location : whea\whea_xpf_processor_error_section.htm
-old-project : whea
-ms.assetid : e994c778-4a1b-4c7d-a9fb-4481d9edda0d
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : "_WHEA_XPF_PROCESSOR_ERROR_SECTION, WHEA_XPF_PROCESSOR_ERROR_SECTION structure [WHEA Drivers and Applications], WHEA_XPF_PROCESSOR_ERROR, whearef_e3338334-dc16-4242-9c30-0daaab2df957.xml, PWHEA_XPF_PROCESSOR_ERROR_SECTION structure pointer [WHEA Drivers and Applications], *PWHEA_XPF_PROCESSOR_ERROR, WHEA_XPF_PROCESSOR_ERROR_SECTION, ntddk/WHEA_XPF_PROCESSOR_ERROR_SECTION, PWHEA_XPF_PROCESSOR_ERROR_SECTION, ntddk/PWHEA_XPF_PROCESSOR_ERROR_SECTION, whea.whea_xpf_processor_error_section, *PWHEA_XPF_PROCESSOR_ERROR_SECTION"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_XPF_PROCESSOR_ERROR_SECTION, *PWHEA_XPF_PROCESSOR_ERROR_SECTION
+UID: NS:ntddk._WHEA_XPF_PROCESSOR_ERROR_SECTION
+title: "_WHEA_XPF_PROCESSOR_ERROR_SECTION"
+author: windows-driver-content
+description: The WHEA_XPF_PROCESSOR_ERROR_SECTION structure describes processor error data that is specific to the x86/x64 processor architecture.
+old-location: whea\whea_xpf_processor_error_section.htm
+old-project: whea
+ms.assetid: e994c778-4a1b-4c7d-a9fb-4481d9edda0d
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: "_WHEA_XPF_PROCESSOR_ERROR_SECTION, WHEA_XPF_PROCESSOR_ERROR_SECTION structure [WHEA Drivers and Applications], WHEA_XPF_PROCESSOR_ERROR, whearef_e3338334-dc16-4242-9c30-0daaab2df957.xml, PWHEA_XPF_PROCESSOR_ERROR_SECTION structure pointer [WHEA Drivers and Applications], *PWHEA_XPF_PROCESSOR_ERROR, WHEA_XPF_PROCESSOR_ERROR_SECTION, ntddk/WHEA_XPF_PROCESSOR_ERROR_SECTION, PWHEA_XPF_PROCESSOR_ERROR_SECTION, ntddk/PWHEA_XPF_PROCESSOR_ERROR_SECTION, whea.whea_xpf_processor_error_section, *PWHEA_XPF_PROCESSOR_ERROR_SECTION"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddk.h
+apiname:
+-	WHEA_XPF_PROCESSOR_ERROR_SECTION
+product: Windows
+targetos: Windows
+req.typenames: WHEA_XPF_PROCESSOR_ERROR_SECTION, *PWHEA_XPF_PROCESSOR_ERROR_SECTION
 ---
 
 # _WHEA_XPF_PROCESSOR_ERROR_SECTION structure

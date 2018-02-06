@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.PsGetProcessExitTime
-title : PsGetProcessExitTime function
-author : windows-driver-content
-description : The PsGetProcessExitTime routine returns the exit time for the current process.
-old-location : ifsk\psgetprocessexittime.htm
-old-project : ifsk
-ms.assetid : 2d98e2f5-0dc4-4490-a039-eb57f0e5fa87
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : PsGetProcessExitTime, psref_a3867d14-4a6b-4560-a580-cdc00075b185.xml, PsGetProcessExitTime routine [Installable File System Drivers], ntifs/PsGetProcessExitTime, ifsk.psgetprocessexittime
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.PsGetProcessExitTime
+title: PsGetProcessExitTime function
+author: windows-driver-content
+description: The PsGetProcessExitTime routine returns the exit time for the current process.
+old-location: ifsk\psgetprocessexittime.htm
+old-project: ifsk
+ms.assetid: 2d98e2f5-0dc4-4490-a039-eb57f0e5fa87
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: PsGetProcessExitTime, psref_a3867d14-4a6b-4560-a580-cdc00075b185.xml, PsGetProcessExitTime routine [Installable File System Drivers], ntifs/PsGetProcessExitTime, ifsk.psgetprocessexittime
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	PsGetProcessExitTime
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

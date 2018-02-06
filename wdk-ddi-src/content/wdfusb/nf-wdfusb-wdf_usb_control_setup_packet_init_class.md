@@ -1,42 +1,47 @@
 ---
-UID : NF:wdfusb.WDF_USB_CONTROL_SETUP_PACKET_INIT_CLASS
-title : WDF_USB_CONTROL_SETUP_PACKET_INIT_CLASS function
-author : windows-driver-content
-description : The WDF_USB_CONTROL_SETUP_PACKET_INIT_CLASS function initializes a WDF_USB_CONTROL_SETUP_PACKET structure for a device class-specific USB control transfer.
-old-location : wdf\wdf_usb_control_setup_packet_init_class.htm
-old-project : wdf
-ms.assetid : c44e16f1-2ecd-4dad-b3c3-c6b6a3dcbb84
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WDF_USB_CONTROL_SETUP_PACKET_INIT_CLASS, wdfusb/WDF_USB_CONTROL_SETUP_PACKET_INIT_CLASS, kmdf.wdf_usb_control_setup_packet_init_class, WDF_USB_CONTROL_SETUP_PACKET_INIT_CLASS function, wdf.wdf_usb_control_setup_packet_init_class, DFUsbRef_840aad44-522b-426d-ad95-457dee6c44dd.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfusb.h
-req.include-header : Wdfusb.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfusb.WDF_USB_CONTROL_SETUP_PACKET_INIT_CLASS
+title: WDF_USB_CONTROL_SETUP_PACKET_INIT_CLASS function
+author: windows-driver-content
+description: The WDF_USB_CONTROL_SETUP_PACKET_INIT_CLASS function initializes a WDF_USB_CONTROL_SETUP_PACKET structure for a device class-specific USB control transfer.
+old-location: wdf\wdf_usb_control_setup_packet_init_class.htm
+old-project: wdf
+ms.assetid: c44e16f1-2ecd-4dad-b3c3-c6b6a3dcbb84
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WDF_USB_CONTROL_SETUP_PACKET_INIT_CLASS, wdfusb/WDF_USB_CONTROL_SETUP_PACKET_INIT_CLASS, kmdf.wdf_usb_control_setup_packet_init_class, WDF_USB_CONTROL_SETUP_PACKET_INIT_CLASS function, wdf.wdf_usb_control_setup_packet_init_class, DFUsbRef_840aad44-522b-426d-ad95-457dee6c44dd.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfusb.h
+req.include-header: Wdfusb.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfusb.h
+apiname:
+-	WDF_USB_CONTROL_SETUP_PACKET_INIT_CLASS
+product: Windows
+targetos: Windows
+req.typenames: WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
+req.product: Windows 10 or later.
 ---
 
 

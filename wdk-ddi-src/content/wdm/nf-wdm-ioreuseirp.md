@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.IoReuseIrp
-title : IoReuseIrp function
-author : windows-driver-content
-description : The IoReuseIrp routine reinitializes an IRP so that it can be reused.
-old-location : kernel\ioreuseirp.htm
-old-project : kernel
-ms.assetid : 18ad2c76-110f-45a9-986b-67e7c81f256f
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/IoReuseIrp, k104_548c8bd2-bc09-4ee6-b373-d244f1f11daa.xml, IoReuseIrp, IoReuseIrp routine [Kernel-Mode Driver Architecture], kernel.ioreuseirp
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Ntddk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : IoReuseIrp, IoReuseIrp2, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.IoReuseIrp
+title: IoReuseIrp function
+author: windows-driver-content
+description: The IoReuseIrp routine reinitializes an IRP so that it can be reused.
+old-location: kernel\ioreuseirp.htm
+old-project: kernel
+ms.assetid: 18ad2c76-110f-45a9-986b-67e7c81f256f
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/IoReuseIrp, k104_548c8bd2-bc09-4ee6-b373-d244f1f11daa.xml, IoReuseIrp, IoReuseIrp routine [Kernel-Mode Driver Architecture], kernel.ioreuseirp
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Ntddk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: IoReuseIrp, IoReuseIrp2, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoReuseIrp
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

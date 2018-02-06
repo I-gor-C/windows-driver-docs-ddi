@@ -1,41 +1,47 @@
 ---
-UID : NF:fltkernel.FltFreeCallbackData
-title : FltFreeCallbackData function
-author : windows-driver-content
-description : The FltFreeCallbackData routine frees a callback data structure allocated by the FltAllocateCallbackData routine.
-old-location : ifsk\fltfreecallbackdata.htm
-old-project : ifsk
-ms.assetid : 45cf398f-f7f0-4eb1-b490-4123c6c9f6fa
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.fltfreecallbackdata, FltFreeCallbackData, FltFreeCallbackData routine [Installable File System Drivers], FltApiRef_e_to_o_1ad2fa09-dd36-4178-a422-a6a1f3854182.xml, fltkernel/FltFreeCallbackData
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltFreeCallbackData
+title: FltFreeCallbackData function
+author: windows-driver-content
+description: The FltFreeCallbackData routine frees a callback data structure allocated by the FltAllocateCallbackData routine.
+old-location: ifsk\fltfreecallbackdata.htm
+old-project: ifsk
+ms.assetid: 45cf398f-f7f0-4eb1-b490-4123c6c9f6fa
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.fltfreecallbackdata, FltFreeCallbackData, FltFreeCallbackData routine [Installable File System Drivers], FltApiRef_e_to_o_1ad2fa09-dd36-4178-a422-a6a1f3854182.xml, fltkernel/FltFreeCallbackData
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	FltMgr.lib
+-	FltMgr.dll
+apiname:
+-	FltFreeCallbackData
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

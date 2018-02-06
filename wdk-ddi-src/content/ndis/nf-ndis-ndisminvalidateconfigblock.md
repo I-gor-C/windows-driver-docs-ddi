@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisMInvalidateConfigBlock
-title : NdisMInvalidateConfigBlock function
-author : windows-driver-content
-description : A miniport driver calls the NdisMInvalidateConfigBlock function to notify NDIS that the data for one or more Virtual Function (VF) configuration blocks has been changed.
-old-location : netvista\ndisminvalidateconfigblock.htm
-old-project : netvista
-ms.assetid : 26D07A41-C431-41F1-9F5E-880B48CC2F0B
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NdisMInvalidateConfigBlock function [Network Drivers Starting with Windows Vista], ndis/NdisMInvalidateConfigBlock, NdisMInvalidateConfigBlock, netvista.ndisminvalidateconfigblock
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : None supported,Supported in NDIS 6.30 and later.
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisMInvalidateConfigBlock
+title: NdisMInvalidateConfigBlock function
+author: windows-driver-content
+description: A miniport driver calls the NdisMInvalidateConfigBlock function to notify NDIS that the data for one or more Virtual Function (VF) configuration blocks has been changed.
+old-location: netvista\ndisminvalidateconfigblock.htm
+old-project: netvista
+ms.assetid: 26D07A41-C431-41F1-9F5E-880B48CC2F0B
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NdisMInvalidateConfigBlock function [Network Drivers Starting with Windows Vista], ndis/NdisMInvalidateConfigBlock, NdisMInvalidateConfigBlock, netvista.ndisminvalidateconfigblock
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: None supported,Supported in NDIS 6.30 and later.
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisMInvalidateConfigBlock
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

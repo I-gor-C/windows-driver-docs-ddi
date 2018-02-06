@@ -1,41 +1,46 @@
 ---
-UID : NF:portcls.IMiniportMidiStream.Write
-title : IMiniportMidiStream::Write method
-author : windows-driver-content
-description : The Write method writes data to an outgoing MIDI stream.
-old-location : audio\iminiportmidistream_write.htm
-old-project : audio
-ms.assetid : 6ff4e4d7-3ba4-4e4b-98fa-62f269aee69f
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : Write method [Audio Devices], IMiniportMidiStream, audmp-routines_523fd287-5380-4259-ba2c-4d9adef4fe4b.xml, Write, Write method [Audio Devices], IMiniportMidiStream interface, IMiniportMidiStream interface [Audio Devices], Write method, IMiniportMidiStream::Write, portcls/IMiniportMidiStream::Write, audio.iminiportmidistream_write
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : portcls.h
-req.include-header : Portcls.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : portcls.h
-req.dll : 
-req.irql : DISPATCH_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.IMiniportMidiStream.Write
+title: IMiniportMidiStream::Write method
+author: windows-driver-content
+description: The Write method writes data to an outgoing MIDI stream.
+old-location: audio\iminiportmidistream_write.htm
+old-project: audio
+ms.assetid: 6ff4e4d7-3ba4-4e4b-98fa-62f269aee69f
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: Write method [Audio Devices], IMiniportMidiStream, audmp-routines_523fd287-5380-4259-ba2c-4d9adef4fe4b.xml, Write, Write method [Audio Devices], IMiniportMidiStream interface, IMiniportMidiStream interface [Audio Devices], Write method, IMiniportMidiStream::Write, portcls/IMiniportMidiStream::Write, audio.iminiportmidistream_write
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: portcls.h
+req.include-header: Portcls.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: portcls.h
+req.dll: 
+req.irql: DISPATCH_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	portcls.h
+apiname:
+-	IMiniportMidiStream.Write
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

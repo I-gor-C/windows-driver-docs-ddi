@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.IoCheckShareAccess
-title : IoCheckShareAccess function
-author : windows-driver-content
-description : The IoCheckShareAccess routine is called by file system drivers (FSDs) or other highest-level drivers to check whether shared access to a file object is permitted.
-old-location : kernel\iocheckshareaccess.htm
-old-project : kernel
-ms.assetid : a249c76b-7389-467f-bfb0-befe06df2fa4
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : k104_0411033a-da5d-4803-a970-f6e7289a6200.xml, wdm/IoCheckShareAccess, IoCheckShareAccess routine [Kernel-Mode Driver Architecture], kernel.iocheckshareaccess, IoCheckShareAccess
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : IrqlIoPassive2, PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.IoCheckShareAccess
+title: IoCheckShareAccess function
+author: windows-driver-content
+description: The IoCheckShareAccess routine is called by file system drivers (FSDs) or other highest-level drivers to check whether shared access to a file object is permitted.
+old-location: kernel\iocheckshareaccess.htm
+old-project: kernel
+ms.assetid: a249c76b-7389-467f-bfb0-befe06df2fa4
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: k104_0411033a-da5d-4803-a970-f6e7289a6200.xml, wdm/IoCheckShareAccess, IoCheckShareAccess routine [Kernel-Mode Driver Architecture], kernel.iocheckshareaccess, IoCheckShareAccess
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: IrqlIoPassive2, PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoCheckShareAccess
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

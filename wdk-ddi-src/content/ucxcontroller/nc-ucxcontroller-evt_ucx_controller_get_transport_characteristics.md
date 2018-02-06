@@ -1,42 +1,47 @@
 ---
-UID : NC:ucxcontroller.EVT_UCX_CONTROLLER_GET_TRANSPORT_CHARACTERISTICS
-title : EVT_UCX_CONTROLLER_GET_TRANSPORT_CHARACTERISTICS
-author : windows-driver-content
-description : UCX invokes this callback to retrieve the host controller characteristics.
-old-location : buses\evt_ucx_controller_get_transport_characteristics.htm
-old-project : usbref
-ms.assetid : 4394199C-6644-4E11-BDAF-625C2F94DEE8
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : buses.evt_ucx_controller_get_transport_characteristics, EvUcxControllerGetTransportCharacteristics callback function [Buses], EvUcxControllerGetTransportCharacteristics, EVT_UCX_CONTROLLER_GET_TRANSPORT_CHARACTERISTICS, EVT_UCX_CONTROLLER_GET_TRANSPORT_CHARACTERISTICS, ucxcontroller/EvUcxControllerGetTransportCharacteristics, *PFN_UCX_CONTROLLER_GET_TRANSPORT_CHARACTERISTICS callback function pointer [Buses], *PFN_UCX_CONTROLLER_GET_TRANSPORT_CHARACTERISTICS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ucxcontroller.h
-req.include-header : Ucxclass.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10, version 1709
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUCM_PD_REQUEST_DATA_OBJECT, UCM_PD_REQUEST_DATA_OBJECT"
-req.product : Windows 10 or later.
+UID: NC:ucxcontroller.EVT_UCX_CONTROLLER_GET_TRANSPORT_CHARACTERISTICS
+title: EVT_UCX_CONTROLLER_GET_TRANSPORT_CHARACTERISTICS
+author: windows-driver-content
+description: UCX invokes this callback to retrieve the host controller characteristics.
+old-location: buses\evt_ucx_controller_get_transport_characteristics.htm
+old-project: usbref
+ms.assetid: 4394199C-6644-4E11-BDAF-625C2F94DEE8
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: buses.evt_ucx_controller_get_transport_characteristics, EvUcxControllerGetTransportCharacteristics callback function [Buses], EvUcxControllerGetTransportCharacteristics, EVT_UCX_CONTROLLER_GET_TRANSPORT_CHARACTERISTICS, EVT_UCX_CONTROLLER_GET_TRANSPORT_CHARACTERISTICS, ucxcontroller/EvUcxControllerGetTransportCharacteristics, *PFN_UCX_CONTROLLER_GET_TRANSPORT_CHARACTERISTICS callback function pointer [Buses], *PFN_UCX_CONTROLLER_GET_TRANSPORT_CHARACTERISTICS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ucxcontroller.h
+req.include-header: Ucxclass.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10, version 1709
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	UcxController.h
+apiname:
+-	*PFN_UCX_CONTROLLER_GET_TRANSPORT_CHARACTERISTICS
+product: Windows
+targetos: Windows
+req.typenames: "*PUCM_PD_REQUEST_DATA_OBJECT, UCM_PD_REQUEST_DATA_OBJECT"
+req.product: Windows 10 or later.
 ---
 
 

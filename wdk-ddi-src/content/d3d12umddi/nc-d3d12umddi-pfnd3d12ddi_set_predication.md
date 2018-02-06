@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d12umddi.PFND3D12DDI_SET_PREDICATION
-title : PFND3D12DDI_SET_PREDICATION
-author : windows-driver-content
-description : The pfnSetPredication callback function denotes that subsequent video operations and resource manipulation commands are not actually performed if the resulting predicate data of the predicate is equal to the operation specified.
-old-location : display\pfnd3d12ddi_set_predication.htm
-old-project : display
-ms.assetid : C5830688-4FC6-4D3F-82EB-15354B28C5F1
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.pfnd3d12ddi_set_predication, pfnSetPredication callback function [Display Devices], pfnSetPredication, PFND3D12DDI_SET_PREDICATION, PFND3D12DDI_SET_PREDICATION, d3d12umddi/pfnSetPredication
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d12umddi.h
-req.include-header : D3d12umddi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3D11_1DDI_GETCAPTUREHANDLEDATA
+UID: NC:d3d12umddi.PFND3D12DDI_SET_PREDICATION
+title: PFND3D12DDI_SET_PREDICATION
+author: windows-driver-content
+description: The pfnSetPredication callback function denotes that subsequent video operations and resource manipulation commands are not actually performed if the resulting predicate data of the predicate is equal to the operation specified.
+old-location: display\pfnd3d12ddi_set_predication.htm
+old-project: display
+ms.assetid: C5830688-4FC6-4D3F-82EB-15354B28C5F1
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.pfnd3d12ddi_set_predication, pfnSetPredication callback function [Display Devices], pfnSetPredication, PFND3D12DDI_SET_PREDICATION, PFND3D12DDI_SET_PREDICATION, d3d12umddi/pfnSetPredication
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d12umddi.h
+req.include-header: D3d12umddi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	D3d12umddi.h
+apiname:
+-	pfnSetPredication
+product: Windows
+targetos: Windows
+req.typenames: D3D11_1DDI_GETCAPTUREHANDLEDATA
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:ks._KSDEVICE_DESCRIPTOR
-title : "_KSDEVICE_DESCRIPTOR"
-author : windows-driver-content
-description : The KSDEVICE_DESCRIPTOR structure describes the characteristics of a particular device.
-old-location : stream\ksdevice_descriptor.htm
-old-project : stream
-ms.assetid : dc68f6d8-a2d5-4940-a708-fe761c3a8a0d
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ks/KSDEVICE_DESCRIPTOR, avstruct_b51d9c2c-278f-4357-b84a-da6959ea9959.xml, PKSDEVICE_DESCRIPTOR structure pointer [Streaming Media Devices], _KSDEVICE_DESCRIPTOR, KSDEVICE_DESCRIPTOR, PKSDEVICE_DESCRIPTOR, ks/PKSDEVICE_DESCRIPTOR, KSDEVICE_DESCRIPTOR structure [Streaming Media Devices], stream.ksdevice_descriptor, *PKSDEVICE_DESCRIPTOR
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and in Microsoft DirectX 8.0 and later versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KSDEVICE_DESCRIPTOR, *PKSDEVICE_DESCRIPTOR
+UID: NS:ks._KSDEVICE_DESCRIPTOR
+title: "_KSDEVICE_DESCRIPTOR"
+author: windows-driver-content
+description: The KSDEVICE_DESCRIPTOR structure describes the characteristics of a particular device.
+old-location: stream\ksdevice_descriptor.htm
+old-project: stream
+ms.assetid: dc68f6d8-a2d5-4940-a708-fe761c3a8a0d
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ks/KSDEVICE_DESCRIPTOR, avstruct_b51d9c2c-278f-4357-b84a-da6959ea9959.xml, PKSDEVICE_DESCRIPTOR structure pointer [Streaming Media Devices], _KSDEVICE_DESCRIPTOR, KSDEVICE_DESCRIPTOR, PKSDEVICE_DESCRIPTOR, ks/PKSDEVICE_DESCRIPTOR, KSDEVICE_DESCRIPTOR structure [Streaming Media Devices], stream.ksdevice_descriptor, *PKSDEVICE_DESCRIPTOR
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and in Microsoft DirectX 8.0 and later versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	KSDEVICE_DESCRIPTOR
+product: Windows
+targetos: Windows
+req.typenames: KSDEVICE_DESCRIPTOR, *PKSDEVICE_DESCRIPTOR
 ---
 
 # _KSDEVICE_DESCRIPTOR structure

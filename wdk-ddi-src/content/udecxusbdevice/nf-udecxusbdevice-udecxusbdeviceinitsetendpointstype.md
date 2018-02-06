@@ -1,42 +1,48 @@
 ---
-UID : NF:udecxusbdevice.UdecxUsbDeviceInitSetEndpointsType
-title : UdecxUsbDeviceInitSetEndpointsType function
-author : windows-driver-content
-description : Indicates the type of endpoint (simple or dynamic) in the initialization parameters that the client driver uses to create the virtual USB device.
-old-location : buses\udecxusbdeviceinitsetendpointstype.htm
-old-project : usbref
-ms.assetid : 44760191-77DD-40A9-AA11-AE8AB55AB307
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : UdecxUsbDeviceInitSetEndpointsType function [Buses], UdecxUsbDeviceInitSetEndpointsType, buses.udecxusbdeviceinitsetendpointstype, udecxusbdevice/UdecxUsbDeviceInitSetEndpointsType
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : udecxusbdevice.h
-req.include-header : Udecx.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 1.15
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Udecxstub.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUDECX_USB_DEVICE_WAKE_SETTING, UDECX_USB_DEVICE_WAKE_SETTING"
-req.product : Windows 10 or later.
+UID: NF:udecxusbdevice.UdecxUsbDeviceInitSetEndpointsType
+title: UdecxUsbDeviceInitSetEndpointsType function
+author: windows-driver-content
+description: Indicates the type of endpoint (simple or dynamic) in the initialization parameters that the client driver uses to create the virtual USB device.
+old-location: buses\udecxusbdeviceinitsetendpointstype.htm
+old-project: usbref
+ms.assetid: 44760191-77DD-40A9-AA11-AE8AB55AB307
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: UdecxUsbDeviceInitSetEndpointsType function [Buses], UdecxUsbDeviceInitSetEndpointsType, buses.udecxusbdeviceinitsetendpointstype, udecxusbdevice/UdecxUsbDeviceInitSetEndpointsType
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: udecxusbdevice.h
+req.include-header: Udecx.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 1.15
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Udecxstub.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Udecxstub.lib
+-	Udecxstub.dll
+apiname:
+-	UdecxUsbDeviceInitSetEndpointsType
+product: Windows
+targetos: Windows
+req.typenames: "*PUDECX_USB_DEVICE_WAKE_SETTING, UDECX_USB_DEVICE_WAKE_SETTING"
+req.product: Windows 10 or later.
 ---
 
 

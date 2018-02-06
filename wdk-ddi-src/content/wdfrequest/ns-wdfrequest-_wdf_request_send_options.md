@@ -1,42 +1,47 @@
 ---
-UID : NS:wdfrequest._WDF_REQUEST_SEND_OPTIONS
-title : "_WDF_REQUEST_SEND_OPTIONS"
-author : windows-driver-content
-description : The WDF_REQUEST_SEND_OPTIONS structure specifies options that are associated with sending an I/O request to an I/O target.
-old-location : wdf\wdf_request_send_options.htm
-old-project : wdf
-ms.assetid : 0d561e0f-ca7e-44ed-9025-1a6513e4cd28
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : kmdf.wdf_request_send_options, PWDF_REQUEST_SEND_OPTIONS, wdfrequest/WDF_REQUEST_SEND_OPTIONS, PWDF_REQUEST_SEND_OPTIONS structure pointer, wdfrequest/PWDF_REQUEST_SEND_OPTIONS, WDF_REQUEST_SEND_OPTIONS, DFRequestObjectRef_3fc871af-dae6-454f-8ff8-35a8b0c5ae9a.xml, *PWDF_REQUEST_SEND_OPTIONS, WDF_REQUEST_SEND_OPTIONS structure, wdf.wdf_request_send_options, _WDF_REQUEST_SEND_OPTIONS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdfrequest.h
-req.include-header : Wdf.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_REQUEST_SEND_OPTIONS, *PWDF_REQUEST_SEND_OPTIONS
-req.product : Windows 10 or later.
+UID: NS:wdfrequest._WDF_REQUEST_SEND_OPTIONS
+title: "_WDF_REQUEST_SEND_OPTIONS"
+author: windows-driver-content
+description: The WDF_REQUEST_SEND_OPTIONS structure specifies options that are associated with sending an I/O request to an I/O target.
+old-location: wdf\wdf_request_send_options.htm
+old-project: wdf
+ms.assetid: 0d561e0f-ca7e-44ed-9025-1a6513e4cd28
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: kmdf.wdf_request_send_options, PWDF_REQUEST_SEND_OPTIONS, wdfrequest/WDF_REQUEST_SEND_OPTIONS, PWDF_REQUEST_SEND_OPTIONS structure pointer, wdfrequest/PWDF_REQUEST_SEND_OPTIONS, WDF_REQUEST_SEND_OPTIONS, DFRequestObjectRef_3fc871af-dae6-454f-8ff8-35a8b0c5ae9a.xml, *PWDF_REQUEST_SEND_OPTIONS, WDF_REQUEST_SEND_OPTIONS structure, wdf.wdf_request_send_options, _WDF_REQUEST_SEND_OPTIONS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdfrequest.h
+req.include-header: Wdf.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfrequest.h
+apiname:
+-	WDF_REQUEST_SEND_OPTIONS
+product: Windows
+targetos: Windows
+req.typenames: WDF_REQUEST_SEND_OPTIONS, *PWDF_REQUEST_SEND_OPTIONS
+req.product: Windows 10 or later.
 ---
 
 # _WDF_REQUEST_SEND_OPTIONS structure

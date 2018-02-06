@@ -1,42 +1,47 @@
 ---
-UID : NS:storduid._STORAGE_DEVICE_LAYOUT_SIGNATURE
-title : "_STORAGE_DEVICE_LAYOUT_SIGNATURE"
-author : windows-driver-content
-description : The STORAGE_DEVICE_LAYOUT_SIGNATURE structure defines a device layout structure.
-old-location : storage\storage_device_layout_signature.htm
-old-project : storage
-ms.assetid : 3c433fe5-1782-4a00-aa7b-1558b0f56080
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.storage_device_layout_signature, *PSTORAGE_DEVICE_LAYOUT_SIGNATURE, structs-general_0392587a-aab6-4f49-bb7e-3ebf8acc87bb.xml, storduid/PSTORAGE_DEVICE_LAYOUT_SIGNATURE, PSTORAGE_DEVICE_LAYOUT_SIGNATURE, PSTORAGE_DEVICE_LAYOUT_SIGNATURE structure pointer [Storage Devices], _STORAGE_DEVICE_LAYOUT_SIGNATURE, storduid/STORAGE_DEVICE_LAYOUT_SIGNATURE, STORAGE_DEVICE_LAYOUT_SIGNATURE structure [Storage Devices], STORAGE_DEVICE_LAYOUT_SIGNATURE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : storduid.h
-req.include-header : Storduid.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSTORAGE_DEVICE_LAYOUT_SIGNATURE, STORAGE_DEVICE_LAYOUT_SIGNATURE"
-req.product : Windows 10 or later.
+UID: NS:storduid._STORAGE_DEVICE_LAYOUT_SIGNATURE
+title: "_STORAGE_DEVICE_LAYOUT_SIGNATURE"
+author: windows-driver-content
+description: The STORAGE_DEVICE_LAYOUT_SIGNATURE structure defines a device layout structure.
+old-location: storage\storage_device_layout_signature.htm
+old-project: storage
+ms.assetid: 3c433fe5-1782-4a00-aa7b-1558b0f56080
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.storage_device_layout_signature, *PSTORAGE_DEVICE_LAYOUT_SIGNATURE, structs-general_0392587a-aab6-4f49-bb7e-3ebf8acc87bb.xml, storduid/PSTORAGE_DEVICE_LAYOUT_SIGNATURE, PSTORAGE_DEVICE_LAYOUT_SIGNATURE, PSTORAGE_DEVICE_LAYOUT_SIGNATURE structure pointer [Storage Devices], _STORAGE_DEVICE_LAYOUT_SIGNATURE, storduid/STORAGE_DEVICE_LAYOUT_SIGNATURE, STORAGE_DEVICE_LAYOUT_SIGNATURE structure [Storage Devices], STORAGE_DEVICE_LAYOUT_SIGNATURE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: storduid.h
+req.include-header: Storduid.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	storduid.h
+apiname:
+-	STORAGE_DEVICE_LAYOUT_SIGNATURE
+product: Windows
+targetos: Windows
+req.typenames: "*PSTORAGE_DEVICE_LAYOUT_SIGNATURE, STORAGE_DEVICE_LAYOUT_SIGNATURE"
+req.product: Windows 10 or later.
 ---
 
 # _STORAGE_DEVICE_LAYOUT_SIGNATURE structure

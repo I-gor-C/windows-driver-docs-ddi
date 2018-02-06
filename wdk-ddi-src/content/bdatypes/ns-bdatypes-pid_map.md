@@ -1,41 +1,46 @@
 ---
-UID : NS:bdatypes.PID_MAP
-title : PID_MAP
-author : windows-driver-content
-description : The PID_MAP structure describes a group of packets in the output stream of a packet identifier (PID) filter. This group consists of packets that are identified with an identical PID and contain particular media content.
-old-location : stream\pid_map.htm
-old-project : stream
-ms.assetid : f71045e8-2928-40b8-b8f7-bc954a753aff
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : PID_MAP structure [Streaming Media Devices], bdaref_54fdf358-1957-4e84-a5a4-9929395f105b.xml, stream.pid_map, PID_MAP, bdatypes/PID_MAP
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : bdatypes.h
-req.include-header : Bdatypes.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PID_MAP
+UID: NS:bdatypes.PID_MAP
+title: PID_MAP
+author: windows-driver-content
+description: The PID_MAP structure describes a group of packets in the output stream of a packet identifier (PID) filter. This group consists of packets that are identified with an identical PID and contain particular media content.
+old-location: stream\pid_map.htm
+old-project: stream
+ms.assetid: f71045e8-2928-40b8-b8f7-bc954a753aff
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: PID_MAP structure [Streaming Media Devices], bdaref_54fdf358-1957-4e84-a5a4-9929395f105b.xml, stream.pid_map, PID_MAP, bdatypes/PID_MAP
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: bdatypes.h
+req.include-header: Bdatypes.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	bdatypes.h
+apiname:
+-	PID_MAP
+product: Windows
+targetos: Windows
+req.typenames: PID_MAP
 ---
 
 # PID_MAP structure

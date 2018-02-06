@@ -1,42 +1,47 @@
 ---
-UID : NS:winsplp._MONITOR
-title : "_MONITOR"
-author : windows-driver-content
-description : The MONITOR structure is obsolete and is supported only for compatibility reasons.
-old-location : print\monitor.htm
-old-project : print
-ms.assetid : 0b0dc06f-51c2-429f-a9bb-079f8a61411d
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : "_MONITOR, winsplp/MONITOR, MONITOR structure [Print Devices], *LPMONITOR, print.monitor, MONITOR, winsplp/LPMONITOR, spoolfnc_c7b3aeed-d00f-4728-967d-bbe1a8512a42.xml, LPMONITOR structure pointer [Print Devices], LPMONITOR"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : winsplp.h
-req.include-header : Winsplp.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*LPMONITOR, MONITOR"
-req.product : Windows 10 or later.
+UID: NS:winsplp._MONITOR
+title: "_MONITOR"
+author: windows-driver-content
+description: The MONITOR structure is obsolete and is supported only for compatibility reasons.
+old-location: print\monitor.htm
+old-project: print
+ms.assetid: 0b0dc06f-51c2-429f-a9bb-079f8a61411d
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: "_MONITOR, winsplp/MONITOR, MONITOR structure [Print Devices], *LPMONITOR, print.monitor, MONITOR, winsplp/LPMONITOR, spoolfnc_c7b3aeed-d00f-4728-967d-bbe1a8512a42.xml, LPMONITOR structure pointer [Print Devices], LPMONITOR"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: winsplp.h
+req.include-header: Winsplp.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	winsplp.h
+apiname:
+-	MONITOR
+product: Windows
+targetos: Windows
+req.typenames: "*LPMONITOR, MONITOR"
+req.product: Windows 10 or later.
 ---
 
 # _MONITOR structure

@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugSymbols3.OutputSymbolByOffset
-title : IDebugSymbols3::OutputSymbolByOffset method
-author : windows-driver-content
-description : The OutputSymbolByOffset method looks up a symbol by address and prints the symbol name and other symbol information to the debugger console.
-old-location : debugger\outputsymbolbyoffset.htm
-old-project : debugger
-ms.assetid : a9b3ac31-2001-45cc-a917-de687419b561
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : OutputSymbolByOffset method [Windows Debugging], IDebugSymbols3 interface, OutputSymbolByOffset method [Windows Debugging], OutputSymbolByOffset, dbgeng/IDebugSymbols3::OutputSymbolByOffset, IDebugSymbols3, debugger.outputsymbolbyoffset, IDebugSymbols3::OutputSymbolByOffset, IDebugSymbols_45f0a841-85cf-4be8-82bc-e962b5af2f5d.xml, IDebugSymbols3 interface [Windows Debugging], OutputSymbolByOffset method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSymbols3.OutputSymbolByOffset
+title: IDebugSymbols3::OutputSymbolByOffset method
+author: windows-driver-content
+description: The OutputSymbolByOffset method looks up a symbol by address and prints the symbol name and other symbol information to the debugger console.
+old-location: debugger\outputsymbolbyoffset.htm
+old-project: debugger
+ms.assetid: a9b3ac31-2001-45cc-a917-de687419b561
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: OutputSymbolByOffset method [Windows Debugging], IDebugSymbols3 interface, OutputSymbolByOffset method [Windows Debugging], OutputSymbolByOffset, dbgeng/IDebugSymbols3::OutputSymbolByOffset, IDebugSymbols3, debugger.outputsymbolbyoffset, IDebugSymbols3::OutputSymbolByOffset, IDebugSymbols_45f0a841-85cf-4be8-82bc-e962b5af2f5d.xml, IDebugSymbols3 interface [Windows Debugging], OutputSymbolByOffset method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugSymbols3.OutputSymbolByOffset
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

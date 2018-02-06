@@ -1,42 +1,47 @@
 ---
-UID : NF:wiautil.wiauStrW2C
-title : wiauStrW2C function
-author : windows-driver-content
-description : The wiauStrW2C function converts a Unicode string to an ANSI character string.
-old-location : image\wiaustrw2c.htm
-old-project : image
-ms.assetid : 53657c26-5007-4c8e-aadf-5d464f1222d2
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : wiauFncs_e97643cb-071d-48bb-82b9-98244bd4284b.xml, wiauStrW2C function [Imaging Devices], image.wiaustrw2c, wiautil/wiauStrW2C, wiauStrW2C
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wiautil.h
-req.include-header : Wiautil.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows XP and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SKIP_AMOUNT
-req.product : Windows 10 or later.
+UID: NF:wiautil.wiauStrW2C
+title: wiauStrW2C function
+author: windows-driver-content
+description: The wiauStrW2C function converts a Unicode string to an ANSI character string.
+old-location: image\wiaustrw2c.htm
+old-project: image
+ms.assetid: 53657c26-5007-4c8e-aadf-5d464f1222d2
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: wiauFncs_e97643cb-071d-48bb-82b9-98244bd4284b.xml, wiauStrW2C function [Imaging Devices], image.wiaustrw2c, wiautil/wiauStrW2C, wiauStrW2C
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wiautil.h
+req.include-header: Wiautil.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows XP and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wiautil.h
+apiname:
+-	wiauStrW2C
+product: Windows
+targetos: Windows
+req.typenames: SKIP_AMOUNT
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,47 @@
 ---
-UID : NF:fwpmk.FwpmEngineOpen0
-title : FwpmEngineOpen0 function
-author : windows-driver-content
-description : The FwpmEngineOpen0 function opens a session to the filter engine.Note  FwpmEngineOpen0 is a specific version of FwpmEngineOpen.
-old-location : netvista\fwpmengineopen0.htm
-old-project : netvista
-ms.assetid : 4d805ffe-7cf9-4cbc-9077-e191ddc24ecd
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : fwpmk/FwpmEngineOpen0, FwpmEngineOpen0, wfp_ref_2_funct_2_fwpm_29969a12-e73c-4b61-b940-e0da4b0be737.xml, FwpmEngineOpen0 function [Network Drivers Starting with Windows Vista], netvista.fwpmengineopen0
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fwpmk.h
-req.include-header : Fwpmk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Fwpkclnt.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : INSTANCE_PARTIAL_INFORMATION, PINSTANCE_PARTIAL_INFORMATION
+UID: NF:fwpmk.FwpmEngineOpen0
+title: FwpmEngineOpen0 function
+author: windows-driver-content
+description: The FwpmEngineOpen0 function opens a session to the filter engine.Note  FwpmEngineOpen0 is a specific version of FwpmEngineOpen.
+old-location: netvista\fwpmengineopen0.htm
+old-project: netvista
+ms.assetid: 4d805ffe-7cf9-4cbc-9077-e191ddc24ecd
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: fwpmk/FwpmEngineOpen0, FwpmEngineOpen0, wfp_ref_2_funct_2_fwpm_29969a12-e73c-4b61-b940-e0da4b0be737.xml, FwpmEngineOpen0 function [Network Drivers Starting with Windows Vista], netvista.fwpmengineopen0
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fwpmk.h
+req.include-header: Fwpmk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Fwpkclnt.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	fwpkclnt.lib
+-	fwpkclnt.dll
+apiname:
+-	FwpmEngineOpen0
+product: Windows
+targetos: Windows
+req.typenames: INSTANCE_PARTIAL_INFORMATION, PINSTANCE_PARTIAL_INFORMATION
 ---
 
 

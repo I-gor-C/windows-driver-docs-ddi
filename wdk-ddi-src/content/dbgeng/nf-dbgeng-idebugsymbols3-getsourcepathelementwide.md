@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugSymbols3.GetSourcePathElementWide
-title : IDebugSymbols3::GetSourcePathElementWide method
-author : windows-driver-content
-description : The GetSourcePathElementWide method returns an element from the source path.
-old-location : debugger\getsourcepathelementwide.htm
-old-project : debugger
-ms.assetid : 724ee7a6-a0ef-440b-a0d4-5eecda77338a
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : GetSourcePathElementWide method [Windows Debugging], GetSourcePathElementWide, GetSourcePathElementWide method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols3 interface [Windows Debugging], GetSourcePathElementWide method, IDebugSymbols3::GetSourcePathElementWide, dbgeng/IDebugSymbols3::GetSourcePathElementWide, IDebugSymbols3, debugger.getsourcepathelementwide
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSymbols3.GetSourcePathElementWide
+title: IDebugSymbols3::GetSourcePathElementWide method
+author: windows-driver-content
+description: The GetSourcePathElementWide method returns an element from the source path.
+old-location: debugger\getsourcepathelementwide.htm
+old-project: debugger
+ms.assetid: 724ee7a6-a0ef-440b-a0d4-5eecda77338a
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: GetSourcePathElementWide method [Windows Debugging], GetSourcePathElementWide, GetSourcePathElementWide method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols3 interface [Windows Debugging], GetSourcePathElementWide method, IDebugSymbols3::GetSourcePathElementWide, dbgeng/IDebugSymbols3::GetSourcePathElementWide, IDebugSymbols3, debugger.getsourcepathelementwide
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugSymbols3.GetSourcePathElementWide
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

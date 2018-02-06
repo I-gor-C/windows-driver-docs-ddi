@@ -1,42 +1,47 @@
 ---
-UID : NS:video._VIDEO_ACCESS_RANGE
-title : "_VIDEO_ACCESS_RANGE"
-author : windows-driver-content
-description : The VIDEO_ACCESS_RANGE structure defines a device I/O port or memory range for the video adapter.
-old-location : display\video_access_range.htm
-old-project : display
-ms.assetid : 200c957d-2ba4-488b-afd7-609c13543a7a
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : Video_Structs_b5c6bb55-a4a4-41be-879c-de6f71abe988.xml, VIDEO_ACCESS_RANGE, *PVIDEO_ACCESS_RANGE, PVIDEO_ACCESS_RANGE, _VIDEO_ACCESS_RANGE, video/PVIDEO_ACCESS_RANGE, display.video_access_range, video/VIDEO_ACCESS_RANGE, PVIDEO_ACCESS_RANGE structure pointer [Display Devices], VIDEO_ACCESS_RANGE structure [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_ACCESS_RANGE, *PVIDEO_ACCESS_RANGE
-req.product : Windows 10 or later.
+UID: NS:video._VIDEO_ACCESS_RANGE
+title: "_VIDEO_ACCESS_RANGE"
+author: windows-driver-content
+description: The VIDEO_ACCESS_RANGE structure defines a device I/O port or memory range for the video adapter.
+old-location: display\video_access_range.htm
+old-project: display
+ms.assetid: 200c957d-2ba4-488b-afd7-609c13543a7a
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: Video_Structs_b5c6bb55-a4a4-41be-879c-de6f71abe988.xml, VIDEO_ACCESS_RANGE, *PVIDEO_ACCESS_RANGE, PVIDEO_ACCESS_RANGE, _VIDEO_ACCESS_RANGE, video/PVIDEO_ACCESS_RANGE, display.video_access_range, video/VIDEO_ACCESS_RANGE, PVIDEO_ACCESS_RANGE structure pointer [Display Devices], VIDEO_ACCESS_RANGE structure [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	video.h
+apiname:
+-	VIDEO_ACCESS_RANGE
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_ACCESS_RANGE, *PVIDEO_ACCESS_RANGE
+req.product: Windows 10 or later.
 ---
 
 # _VIDEO_ACCESS_RANGE structure

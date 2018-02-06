@@ -1,42 +1,47 @@
 ---
-UID : NF:wdfdevice.WdfDeviceAssignInterfaceProperty
-title : WdfDeviceAssignInterfaceProperty function
-author : windows-driver-content
-description : The WdfDeviceAssignInterfaceProperty method modifies the current value of a device interface property.
-old-location : wdf\wdfdeviceassigninterfaceproperty.htm
-old-project : wdf
-ms.assetid : 49608EE6-1666-4430-AD22-9627EEF6F223
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WdfDeviceAssignInterfaceProperty, WdfDeviceAssignInterfaceProperty method, PFN_WDFDEVICEASSIGNINTERFACEPROPERTY, wdf.wdfdeviceassigninterfaceproperty, wdfdevice/WdfDeviceAssignInterfaceProperty
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfdevice.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : Windows 8.1
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : WUDFx02000.lib
-req.dll : WUDFx02000.dll; TBD
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_STATE_NOTIFICATION_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfdevice.WdfDeviceAssignInterfaceProperty
+title: WdfDeviceAssignInterfaceProperty function
+author: windows-driver-content
+description: The WdfDeviceAssignInterfaceProperty method modifies the current value of a device interface property.
+old-location: wdf\wdfdeviceassigninterfaceproperty.htm
+old-project: wdf
+ms.assetid: 49608EE6-1666-4430-AD22-9627EEF6F223
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WdfDeviceAssignInterfaceProperty, WdfDeviceAssignInterfaceProperty method, PFN_WDFDEVICEASSIGNINTERFACEPROPERTY, wdf.wdfdeviceassigninterfaceproperty, wdfdevice/WdfDeviceAssignInterfaceProperty
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfdevice.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: Windows 8.1
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: WUDFx02000.lib
+req.dll: WUDFx02000.dll; TBD
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	WUDFx02000.dll
+apiname:
+-	WdfDeviceAssignInterfaceProperty
+product: Windows
+targetos: Windows
+req.typenames: WDF_STATE_NOTIFICATION_TYPE
+req.product: Windows 10 or later.
 ---
 
 

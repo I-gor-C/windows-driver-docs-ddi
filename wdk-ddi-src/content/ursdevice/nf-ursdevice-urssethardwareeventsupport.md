@@ -1,42 +1,48 @@
 ---
-UID : NF:ursdevice.UrsSetHardwareEventSupport
-title : UrsSetHardwareEventSupport function
-author : windows-driver-content
-description : Indicates the client driver's support for reporting new hardware events.
-old-location : buses\urssethardwareeventsupport.htm
-old-project : usbref
-ms.assetid : 905BA306-29A5-4AAB-BA30-6B459E0062F6
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : UrsSetHardwareEventSupport, buses.urssethardwareeventsupport, ursdevice/UrsSetHardwareEventSupport, UrsSetHardwareEventSupport function [Buses]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ursdevice.h
-req.include-header : Urscx.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 1.15
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Urscxstub.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : UMDETW_ALLOCATION_USAGE
-req.product : Windows 10 or later.
+UID: NF:ursdevice.UrsSetHardwareEventSupport
+title: UrsSetHardwareEventSupport function
+author: windows-driver-content
+description: Indicates the client driver's support for reporting new hardware events.
+old-location: buses\urssethardwareeventsupport.htm
+old-project: usbref
+ms.assetid: 905BA306-29A5-4AAB-BA30-6B459E0062F6
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: UrsSetHardwareEventSupport, buses.urssethardwareeventsupport, ursdevice/UrsSetHardwareEventSupport, UrsSetHardwareEventSupport function [Buses]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ursdevice.h
+req.include-header: Urscx.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 1.15
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Urscxstub.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Urscxstub.lib
+-	Urscxstub.dll
+apiname:
+-	UrsSetHardwareEventSupport
+product: Windows
+targetos: Windows
+req.typenames: UMDETW_ALLOCATION_USAGE
+req.product: Windows 10 or later.
 ---
 
 

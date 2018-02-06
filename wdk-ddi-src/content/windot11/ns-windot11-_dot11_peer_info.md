@@ -1,42 +1,47 @@
 ---
-UID : NS:windot11._DOT11_PEER_INFO
-title : "_DOT11_PEER_INFO"
-author : windows-driver-content
-description : Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
-old-location : netvista\dot11_peer_info.htm
-old-project : netvista
-ms.assetid : f1d5bbd9-45e3-4802-ab9b-77ff6bdcd6ec
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : "*PDOT11_PEER_INFO, PDOT11_PEER_INFO, Native_802.11_data_types_411bca70-e6de-4dc0-8326-76f5eb5c6a86.xml, _DOT11_PEER_INFO, windot11/PDOT11_PEER_INFO, netvista.dot11_peer_info, DOT11_PEER_INFO structure [Network Drivers Starting with Windows Vista], DOT11_PEER_INFO, windot11/DOT11_PEER_INFO, PDOT11_PEER_INFO structure pointer [Network Drivers Starting with Windows Vista]"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : windot11.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7 and later versions of the Windows operating   systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT11_PEER_INFO, *PDOT11_PEER_INFO
-req.product : Windows 10 or later.
+UID: NS:windot11._DOT11_PEER_INFO
+title: "_DOT11_PEER_INFO"
+author: windows-driver-content
+description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+old-location: netvista\dot11_peer_info.htm
+old-project: netvista
+ms.assetid: f1d5bbd9-45e3-4802-ab9b-77ff6bdcd6ec
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: "*PDOT11_PEER_INFO, PDOT11_PEER_INFO, Native_802.11_data_types_411bca70-e6de-4dc0-8326-76f5eb5c6a86.xml, _DOT11_PEER_INFO, windot11/PDOT11_PEER_INFO, netvista.dot11_peer_info, DOT11_PEER_INFO structure [Network Drivers Starting with Windows Vista], DOT11_PEER_INFO, windot11/DOT11_PEER_INFO, PDOT11_PEER_INFO structure pointer [Network Drivers Starting with Windows Vista]"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: windot11.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7 and later versions of the Windows operating   systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	windot11.h
+apiname:
+-	DOT11_PEER_INFO
+product: Windows
+targetos: Windows
+req.typenames: DOT11_PEER_INFO, *PDOT11_PEER_INFO
+req.product: Windows 10 or later.
 ---
 
 # _DOT11_PEER_INFO structure

@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddchgr._CHANGER_ELEMENT
-title : "_CHANGER_ELEMENT"
-author : windows-driver-content
-description : The CHANGER_ELEMENT structure contains a description of a changer element.
-old-location : storage\changer_element.htm
-old-project : storage
-ms.assetid : 85035147-0ae8-482a-9a12-1e4e53ae1969
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : structs-changer_b1685d99-20ff-495d-a9e3-c63571559106.xml, *PCHANGER_ELEMENT, ntddchgr/PCHANGER_ELEMENT, _CHANGER_ELEMENT, ntddchgr/CHANGER_ELEMENT, PCHANGER_ELEMENT, PCHANGER_ELEMENT structure pointer [Storage Devices], CHANGER_ELEMENT structure [Storage Devices], CHANGER_ELEMENT, storage.changer_element
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddchgr.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PCHANGER_ELEMENT, CHANGER_ELEMENT"
+UID: NS:ntddchgr._CHANGER_ELEMENT
+title: "_CHANGER_ELEMENT"
+author: windows-driver-content
+description: The CHANGER_ELEMENT structure contains a description of a changer element.
+old-location: storage\changer_element.htm
+old-project: storage
+ms.assetid: 85035147-0ae8-482a-9a12-1e4e53ae1969
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: structs-changer_b1685d99-20ff-495d-a9e3-c63571559106.xml, *PCHANGER_ELEMENT, ntddchgr/PCHANGER_ELEMENT, _CHANGER_ELEMENT, ntddchgr/CHANGER_ELEMENT, PCHANGER_ELEMENT, PCHANGER_ELEMENT structure pointer [Storage Devices], CHANGER_ELEMENT structure [Storage Devices], CHANGER_ELEMENT, storage.changer_element
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddchgr.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddchgr.h
+apiname:
+-	CHANGER_ELEMENT
+product: Windows
+targetos: Windows
+req.typenames: "*PCHANGER_ELEMENT, CHANGER_ELEMENT"
 ---
 
 # _CHANGER_ELEMENT structure

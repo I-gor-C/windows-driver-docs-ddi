@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.KSDATAFORMAT_DSOUND
-title : KSDATAFORMAT_DSOUND
-author : windows-driver-content
-description : The KSDATAFORMAT_DSOUND structure provides detailed information about a DirectSound audio stream.
-old-location : audio\ksdataformat_dsound.htm
-old-project : audio
-ms.assetid : 2b620e4f-8c26-479a-8b06-4e558b0813e5
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : ksmedia/KSDATAFORMAT_DSOUND, PKSDATAFORMAT_DSOUND, aud-prop_2e782d9c-dfeb-4797-b902-e32e947d2542.xml, PKSDATAFORMAT_DSOUND structure pointer [Audio Devices], KSDATAFORMAT_DSOUND, audio.ksdataformat_dsound, ksmedia/PKSDATAFORMAT_DSOUND, *PKSDATAFORMAT_DSOUND, KSDATAFORMAT_DSOUND structure [Audio Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKSDATAFORMAT_DSOUND, KSDATAFORMAT_DSOUND"
+UID: NS:ksmedia.KSDATAFORMAT_DSOUND
+title: KSDATAFORMAT_DSOUND
+author: windows-driver-content
+description: The KSDATAFORMAT_DSOUND structure provides detailed information about a DirectSound audio stream.
+old-location: audio\ksdataformat_dsound.htm
+old-project: audio
+ms.assetid: 2b620e4f-8c26-479a-8b06-4e558b0813e5
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: ksmedia/KSDATAFORMAT_DSOUND, PKSDATAFORMAT_DSOUND, aud-prop_2e782d9c-dfeb-4797-b902-e32e947d2542.xml, PKSDATAFORMAT_DSOUND structure pointer [Audio Devices], KSDATAFORMAT_DSOUND, audio.ksdataformat_dsound, ksmedia/PKSDATAFORMAT_DSOUND, *PKSDATAFORMAT_DSOUND, KSDATAFORMAT_DSOUND structure [Audio Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	KSDATAFORMAT_DSOUND
+product: Windows
+targetos: Windows
+req.typenames: "*PKSDATAFORMAT_DSOUND, KSDATAFORMAT_DSOUND"
 ---
 
 # KSDATAFORMAT_DSOUND structure

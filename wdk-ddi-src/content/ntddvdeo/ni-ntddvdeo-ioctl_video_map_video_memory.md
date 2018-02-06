@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddvdeo.IOCTL_VIDEO_MAP_VIDEO_MEMORY
-title : IOCTL_VIDEO_MAP_VIDEO_MEMORY
-author : windows-driver-content
-description : Maps the video hardware frame buffer and video RAM into the virtual address space of the requester.
-old-location : display\ioctl_video_map_video_memory.htm
-old-project : display
-ms.assetid : 9e17502a-b5bf-4f17-8e74-1974f7e65e01
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.ioctl_video_map_video_memory, IOCTL_VIDEO_MAP_VIDEO_MEMORY control code [Display Devices], IOCTL_VIDEO_MAP_VIDEO_MEMORY, ntddvdeo/IOCTL_VIDEO_MAP_VIDEO_MEMORY, Video_IOCTLs_8a343fc8-9ebe-4079-a175-94d39222adee.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddvdeo.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TAPE_WRITE_MARKS, *PTAPE_WRITE_MARKS
+UID: NI:ntddvdeo.IOCTL_VIDEO_MAP_VIDEO_MEMORY
+title: IOCTL_VIDEO_MAP_VIDEO_MEMORY
+author: windows-driver-content
+description: Maps the video hardware frame buffer and video RAM into the virtual address space of the requester.
+old-location: display\ioctl_video_map_video_memory.htm
+old-project: display
+ms.assetid: 9e17502a-b5bf-4f17-8e74-1974f7e65e01
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.ioctl_video_map_video_memory, IOCTL_VIDEO_MAP_VIDEO_MEMORY control code [Display Devices], IOCTL_VIDEO_MAP_VIDEO_MEMORY, ntddvdeo/IOCTL_VIDEO_MAP_VIDEO_MEMORY, Video_IOCTLs_8a343fc8-9ebe-4079-a175-94d39222adee.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddvdeo.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddvdeo.h
+apiname:
+-	IOCTL_VIDEO_MAP_VIDEO_MEMORY
+product: Windows
+targetos: Windows
+req.typenames: TAPE_WRITE_MARKS, *PTAPE_WRITE_MARKS
 ---
 
 # IOCTL_VIDEO_MAP_VIDEO_MEMORY IOCTL

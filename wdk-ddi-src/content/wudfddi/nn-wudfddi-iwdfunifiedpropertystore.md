@@ -1,42 +1,47 @@
 ---
-UID : NN:wudfddi.IWDFUnifiedPropertyStore
-title : IWDFUnifiedPropertyStore
-author : windows-driver-content
-description : The IWDFUnifiedPropertyStore interface exposes a unified property store.
-old-location : wdf\iwdfunifiedpropertystore.htm
-old-project : wdf
-ms.assetid : F039450D-3B66-4891-9078-7058E889C2F0
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.iwdfunifiedpropertystore, IWDFUnifiedPropertyStore interface, IWDFUnifiedPropertyStore interface, described, IWDFUnifiedPropertyStore, wudfddi/IWDFUnifiedPropertyStore, umdf.iwdfunifiedpropertystore
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : wudfddi.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.11
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NN:wudfddi.IWDFUnifiedPropertyStore
+title: IWDFUnifiedPropertyStore
+author: windows-driver-content
+description: The IWDFUnifiedPropertyStore interface exposes a unified property store.
+old-location: wdf\iwdfunifiedpropertystore.htm
+old-project: wdf
+ms.assetid: F039450D-3B66-4891-9078-7058E889C2F0
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.iwdfunifiedpropertystore, IWDFUnifiedPropertyStore interface, IWDFUnifiedPropertyStore interface, described, IWDFUnifiedPropertyStore, wudfddi/IWDFUnifiedPropertyStore, umdf.iwdfunifiedpropertystore
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: wudfddi.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.11
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFUnifiedPropertyStore
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 # IWDFUnifiedPropertyStore interface

@@ -1,42 +1,48 @@
 ---
-UID : NF:wdm.RtlCreateSecurityDescriptor
-title : RtlCreateSecurityDescriptor function
-author : windows-driver-content
-description : The RtlCreateSecurityDescriptor routine initializes a new absolute-format security descriptor. On return, the security descriptor is initialized with no system ACL, no discretionary ACL, no owner, no primary group, and all control flags set to zero.
-old-location : kernel\rtlcreatesecuritydescriptor.htm
-old-project : kernel
-ms.assetid : f9e08a57-c9dd-4703-b29d-c169ba77f194
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : RtlCreateSecurityDescriptor routine [Kernel-Mode Driver Architecture], RtlCreateSecurityDescriptor, k109_3e7817b3-76e0-4acb-b8a3-af78219ffb85.xml, wdm/RtlCreateSecurityDescriptor, kernel.rtlcreatesecuritydescriptor
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 2000 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe (kernel mode); Ntdll.dll (user mode)
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.RtlCreateSecurityDescriptor
+title: RtlCreateSecurityDescriptor function
+author: windows-driver-content
+description: The RtlCreateSecurityDescriptor routine initializes a new absolute-format security descriptor. On return, the security descriptor is initialized with no system ACL, no discretionary ACL, no owner, no primary group, and all control flags set to zero.
+old-location: kernel\rtlcreatesecuritydescriptor.htm
+old-project: kernel
+ms.assetid: f9e08a57-c9dd-4703-b29d-c169ba77f194
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: RtlCreateSecurityDescriptor routine [Kernel-Mode Driver Architecture], RtlCreateSecurityDescriptor, k109_3e7817b3-76e0-4acb-b8a3-af78219ffb85.xml, wdm/RtlCreateSecurityDescriptor, kernel.rtlcreatesecuritydescriptor
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 2000 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe (kernel mode); Ntdll.dll (user mode)
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+-	Ntdll.dll
+apiname:
+-	RtlCreateSecurityDescriptor
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

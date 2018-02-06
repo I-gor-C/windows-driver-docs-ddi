@@ -1,41 +1,46 @@
 ---
-UID : NS:hbapiwmi._GetFCPStatistics_IN
-title : "_GetFCPStatistics_IN"
-author : windows-driver-content
-description : The GetFCPStatistics_IN structure is used to deliver input parameter data to the GetFCPStatistics WMI method.
-old-location : storage\getfcpstatistics_in.htm
-old-project : storage
-ms.assetid : f6cb4532-fc66-45e7-a779-0981465d69fc
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : PGetFCPStatistics_IN structure pointer [Storage Devices], hbapiwmi/PGetFCPStatistics_IN, structs-Fibre_409be852-67ff-45c4-bce1-291076c1a70b.xml, PGetFCPStatistics_IN, _GetFCPStatistics_IN, GetFCPStatistics_IN structure [Storage Devices], *PGetFCPStatistics_IN, GetFCPStatistics_IN, hbapiwmi/GetFCPStatistics_IN, storage.getfcpstatistics_in
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : hbapiwmi.h
-req.include-header : Hbapiwmi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : GetFCPStatistics_IN, *PGetFCPStatistics_IN
+UID: NS:hbapiwmi._GetFCPStatistics_IN
+title: "_GetFCPStatistics_IN"
+author: windows-driver-content
+description: The GetFCPStatistics_IN structure is used to deliver input parameter data to the GetFCPStatistics WMI method.
+old-location: storage\getfcpstatistics_in.htm
+old-project: storage
+ms.assetid: f6cb4532-fc66-45e7-a779-0981465d69fc
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: PGetFCPStatistics_IN structure pointer [Storage Devices], hbapiwmi/PGetFCPStatistics_IN, structs-Fibre_409be852-67ff-45c4-bce1-291076c1a70b.xml, PGetFCPStatistics_IN, _GetFCPStatistics_IN, GetFCPStatistics_IN structure [Storage Devices], *PGetFCPStatistics_IN, GetFCPStatistics_IN, hbapiwmi/GetFCPStatistics_IN, storage.getfcpstatistics_in
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: hbapiwmi.h
+req.include-header: Hbapiwmi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hbapiwmi.h
+apiname:
+-	GetFCPStatistics_IN
+product: Windows
+targetos: Windows
+req.typenames: GetFCPStatistics_IN, *PGetFCPStatistics_IN
 ---
 
 # _GetFCPStatistics_IN structure

@@ -1,41 +1,46 @@
 ---
-UID : NS:dxva._DXVA_ConfigPictureDecode
-title : "_DXVA_ConfigPictureDecode"
-author : windows-driver-content
-description : The DXVA_ConfigPictureDecode structure is sent by the host decoder to the accelerator to set the configuration for compressed picture decoding.
-old-location : display\dxva_configpicturedecode.htm
-old-project : display
-ms.assetid : b36c2901-33ca-4c76-98d0-8dbe6551226b
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : "_DXVA_ConfigPictureDecode, dxvaref_857a5bfe-282a-49c2-8db6-a0fde8e26a61.xml, DXVA_ConfigPictureDecode structure [Display Devices], display.dxva_configpicturedecode, LPDXVA_ConfigPictureDecode, *LPDXVA_ConfigPictureDecode, dxva/DXVA_ConfigPictureDecode, DXVA_ConfigPictureDecode, LPDXVA_ConfigPictureDecode structure pointer [Display Devices], dxva/LPDXVA_ConfigPictureDecode"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : dxva.h
-req.include-header : Dxva.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXVA_ConfigPictureDecode, *LPDXVA_ConfigPictureDecode
+UID: NS:dxva._DXVA_ConfigPictureDecode
+title: "_DXVA_ConfigPictureDecode"
+author: windows-driver-content
+description: The DXVA_ConfigPictureDecode structure is sent by the host decoder to the accelerator to set the configuration for compressed picture decoding.
+old-location: display\dxva_configpicturedecode.htm
+old-project: display
+ms.assetid: b36c2901-33ca-4c76-98d0-8dbe6551226b
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: "_DXVA_ConfigPictureDecode, dxvaref_857a5bfe-282a-49c2-8db6-a0fde8e26a61.xml, DXVA_ConfigPictureDecode structure [Display Devices], display.dxva_configpicturedecode, LPDXVA_ConfigPictureDecode, *LPDXVA_ConfigPictureDecode, dxva/DXVA_ConfigPictureDecode, DXVA_ConfigPictureDecode, LPDXVA_ConfigPictureDecode structure pointer [Display Devices], dxva/LPDXVA_ConfigPictureDecode"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: dxva.h
+req.include-header: Dxva.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	dxva.h
+apiname:
+-	DXVA_ConfigPictureDecode
+product: Windows
+targetos: Windows
+req.typenames: DXVA_ConfigPictureDecode, *LPDXVA_ConfigPictureDecode
 ---
 
 # _DXVA_ConfigPictureDecode structure

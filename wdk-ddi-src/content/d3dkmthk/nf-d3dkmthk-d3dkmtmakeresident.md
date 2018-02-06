@@ -1,41 +1,49 @@
 ---
-UID : NF:d3dkmthk.D3DKMTMakeResident
-title : D3DKMTMakeResident function
-author : windows-driver-content
-description : D3DKMTMakeResident is used to add a resource to the device residency list and increment the residency reference count on this allocation.
-old-location : display\d3dkmtmakeresident.htm
-old-project : display
-ms.assetid : 5F4E17CB-3B8B-4BBA-A819-B8E28183F1CB
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.d3dkmtmakeresident, d3dkmthk/D3DKMTMakeResident, D3DKMTMakeResident, D3DKMTMakeResident function [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Universal
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : GDI32.lib
-req.dll : GDI32.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_DRIVERVERSION
+UID: NF:d3dkmthk.D3DKMTMakeResident
+title: D3DKMTMakeResident function
+author: windows-driver-content
+description: D3DKMTMakeResident is used to add a resource to the device residency list and increment the residency reference count on this allocation.
+old-location: display\d3dkmtmakeresident.htm
+old-project: display
+ms.assetid: 5F4E17CB-3B8B-4BBA-A819-B8E28183F1CB
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.d3dkmtmakeresident, d3dkmthk/D3DKMTMakeResident, D3DKMTMakeResident, D3DKMTMakeResident function [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Universal
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: GDI32.lib
+req.dll: GDI32.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	GDI32.dll
+-	API-MS-Win-DX-D3DKMT-L1-1-1.dll
+-	GDI32.dll
+-	API-MS-Win-DX-D3DKMT-L1-1-2.dll
+apiname:
+-	D3DKMTMakeResident
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_DRIVERVERSION
 ---
 
 

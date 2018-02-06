@@ -1,42 +1,47 @@
 ---
-UID : NE:usb._USBD_PIPE_TYPE
-title : "_USBD_PIPE_TYPE"
-author : windows-driver-content
-description : The USBD_PIPE_TYPE enumerator indicates the type of pipe.
-old-location : buses\usbd_pipe_type.htm
-old-project : usbref
-ms.assetid : 4522a7d0-d297-4668-bb4e-e4ceae18f52a
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : usb/UsbdPipeTypeControl, buses.usbd_pipe_type, UsbdPipeTypeIsochronous, USBD_PIPE_TYPE enumeration [Buses], UsbdPipeTypeControl, _USBD_PIPE_TYPE, UsbdPipeTypeBulk, usb/UsbdPipeTypeBulk, usb/UsbdPipeTypeInterrupt, usb/USBD_PIPE_TYPE, usbstrct_a1fda372-f509-4667-a615-b68936b0a42b.xml, USBD_PIPE_TYPE, UsbdPipeTypeInterrupt, usb/UsbdPipeTypeIsochronous
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : usb.h
-req.include-header : Usb.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : USBD_PIPE_TYPE
-req.product : Windows 10 or later.
+UID: NE:usb._USBD_PIPE_TYPE
+title: "_USBD_PIPE_TYPE"
+author: windows-driver-content
+description: The USBD_PIPE_TYPE enumerator indicates the type of pipe.
+old-location: buses\usbd_pipe_type.htm
+old-project: usbref
+ms.assetid: 4522a7d0-d297-4668-bb4e-e4ceae18f52a
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: usb/UsbdPipeTypeControl, buses.usbd_pipe_type, UsbdPipeTypeIsochronous, USBD_PIPE_TYPE enumeration [Buses], UsbdPipeTypeControl, _USBD_PIPE_TYPE, UsbdPipeTypeBulk, usb/UsbdPipeTypeBulk, usb/UsbdPipeTypeInterrupt, usb/USBD_PIPE_TYPE, usbstrct_a1fda372-f509-4667-a615-b68936b0a42b.xml, USBD_PIPE_TYPE, UsbdPipeTypeInterrupt, usb/UsbdPipeTypeIsochronous
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: usb.h
+req.include-header: Usb.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	usb.h
+apiname:
+-	USBD_PIPE_TYPE
+product: Windows
+targetos: Windows
+req.typenames: USBD_PIPE_TYPE
+req.product: Windows 10 or later.
 ---
 
 # _USBD_PIPE_TYPE Enumeration
@@ -55,26 +60,26 @@ typedef enum _USBD_PIPE_TYPE {
 ## Constants
 
 <table>
-
-<tr>
-<td>UsbdPipeTypeBulk</td>
-<td>Indicates that the pipe is a bulk transfer pipe.</td>
-</tr>
-
-<tr>
-<td>UsbdPipeTypeControl</td>
-<td>Indicates that the pipe is a control pipe.</td>
-</tr>
-
-<tr>
-<td>UsbdPipeTypeInterrupt</td>
-<td>Indicates that the pipe is a interrupt pipe.</td>
-</tr>
-
-<tr>
-<td>UsbdPipeTypeIsochronous</td>
-<td>Indicates that the pipe is an isochronous transfer pipe.</td>
-</tr>
+            
+                <tr>
+                    <td>UsbdPipeTypeBulk</td>
+                    <td>Indicates that the pipe is a bulk transfer pipe.</td>
+                </tr>
+            
+                <tr>
+                    <td>UsbdPipeTypeControl</td>
+                    <td>Indicates that the pipe is a control pipe.</td>
+                </tr>
+            
+                <tr>
+                    <td>UsbdPipeTypeInterrupt</td>
+                    <td>Indicates that the pipe is a interrupt pipe.</td>
+                </tr>
+            
+                <tr>
+                    <td>UsbdPipeTypeIsochronous</td>
+                    <td>Indicates that the pipe is an isochronous transfer pipe.</td>
+                </tr>
 </table>
 
 
@@ -83,9 +88,9 @@ typedef enum _USBD_PIPE_TYPE {
 | ---- |:---- |
 | **Header** | usb.h (include Usb.h) |
 
-## See Also
+    ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539322">USB Constants and Enumerations</a>
+        <a href="https://msdn.microsoft.com/library/windows/hardware/ff539322">USB Constants and Enumerations</a>
 
  
 

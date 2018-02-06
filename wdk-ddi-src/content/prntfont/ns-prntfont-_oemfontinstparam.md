@@ -1,42 +1,47 @@
 ---
-UID : NS:prntfont._OEMFONTINSTPARAM
-title : "_OEMFONTINSTPARAM"
-author : windows-driver-content
-description : The OEMFONTINSTPARAM structure is used as an input parameter to a user interface plug-in's IPrintOemUI::FontInstallerDlgProc method.
-old-location : print\oemfontinstparam.htm
-old-project : print
-ms.assetid : cdd3ed28-a077-4b89-9222-ba282b9c7205
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : POEMFONTINSTPARAM structure pointer [Print Devices], OEMFONTINSTPARAM, POEMFONTINSTPARAM, OEMFONTINSTPARAM structure [Print Devices], prntfont/OEMFONTINSTPARAM, print_unidrv-pscript_ui_d306ca78-7f06-4ccf-a501-7470f33f96cb.xml, *POEMFONTINSTPARAM, print.oemfontinstparam, _OEMFONTINSTPARAM, prntfont/POEMFONTINSTPARAM
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : prntfont.h
-req.include-header : Printoem.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : OEMFONTINSTPARAM, *POEMFONTINSTPARAM
-req.product : Windows 10 or later.
+UID: NS:prntfont._OEMFONTINSTPARAM
+title: "_OEMFONTINSTPARAM"
+author: windows-driver-content
+description: The OEMFONTINSTPARAM structure is used as an input parameter to a user interface plug-in's IPrintOemUI::FontInstallerDlgProc method.
+old-location: print\oemfontinstparam.htm
+old-project: print
+ms.assetid: cdd3ed28-a077-4b89-9222-ba282b9c7205
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: POEMFONTINSTPARAM structure pointer [Print Devices], OEMFONTINSTPARAM, POEMFONTINSTPARAM, OEMFONTINSTPARAM structure [Print Devices], prntfont/OEMFONTINSTPARAM, print_unidrv-pscript_ui_d306ca78-7f06-4ccf-a501-7470f33f96cb.xml, *POEMFONTINSTPARAM, print.oemfontinstparam, _OEMFONTINSTPARAM, prntfont/POEMFONTINSTPARAM
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: prntfont.h
+req.include-header: Printoem.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	prntfont.h
+apiname:
+-	OEMFONTINSTPARAM
+product: Windows
+targetos: Windows
+req.typenames: OEMFONTINSTPARAM, *POEMFONTINSTPARAM
+req.product: Windows 10 or later.
 ---
 
 # _OEMFONTINSTPARAM structure

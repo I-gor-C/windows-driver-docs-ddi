@@ -1,41 +1,46 @@
 ---
-UID : NC:dot11wdi.NDIS_WDI_PEER_CREATE_IND
-title : NDIS_WDI_PEER_CREATE_IND
-author : windows-driver-content
-description : The NdisWdiPeerCreateIndication callback function specifies a peer ID to associate with a peer MAC address.
-old-location : netvista\ndiswdipeercreateindication.htm
-old-project : netvista
-ms.assetid : 58B60160-FE04-4EDE-900F-244D0F76E50D
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.ndiswdipeercreateindication, NdisWdiPeerCreateIndication callback function [Network Drivers Starting with Windows Vista], NdisWdiPeerCreateIndication, NDIS_WDI_PEER_CREATE_IND, NDIS_WDI_PEER_CREATE_IND, dot11wdi/NdisWdiPeerCreateIndication
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : dot11wdi.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SYNTH_STATS, *PSYNTH_STATS
+UID: NC:dot11wdi.NDIS_WDI_PEER_CREATE_IND
+title: NDIS_WDI_PEER_CREATE_IND
+author: windows-driver-content
+description: The NdisWdiPeerCreateIndication callback function specifies a peer ID to associate with a peer MAC address.
+old-location: netvista\ndiswdipeercreateindication.htm
+old-project: netvista
+ms.assetid: 58B60160-FE04-4EDE-900F-244D0F76E50D
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.ndiswdipeercreateindication, NdisWdiPeerCreateIndication callback function [Network Drivers Starting with Windows Vista], NdisWdiPeerCreateIndication, NDIS_WDI_PEER_CREATE_IND, NDIS_WDI_PEER_CREATE_IND, dot11wdi/NdisWdiPeerCreateIndication
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: dot11wdi.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	dot11wdi.h
+apiname:
+-	NdisWdiPeerCreateIndication
+product: Windows
+targetos: Windows
+req.typenames: SYNTH_STATS, *PSYNTH_STATS
 ---
 
 

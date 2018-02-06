@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltInitExtraCreateParameterLookasideList
-title : FltInitExtraCreateParameterLookasideList function
-author : windows-driver-content
-description : The FltInitExtraCreateParameterLookasideList routine initializes a paged or non-paged pool lookaside list used for the allocation of one or more extra create parameter context structures (ECPs) of fixed size.
-old-location : ifsk\fltinitextracreateparameterlookasidelist.htm
-old-project : ifsk
-ms.assetid : bec492df-86ac-4e1b-8623-5656aa20c4c5
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : fltkernel/FltInitExtraCreateParameterLookasideList, ifsk.fltinitextracreateparameterlookasidelist, FltInitExtraCreateParameterLookasideList, FltApiRef_e_to_o_b9cff240-0f03-4756-86d0-a44612df8e58.xml, FltInitExtraCreateParameterLookasideList routine [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : The FltInitExtraCreateParameterLookasideList routine is available starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltInitExtraCreateParameterLookasideList
+title: FltInitExtraCreateParameterLookasideList function
+author: windows-driver-content
+description: The FltInitExtraCreateParameterLookasideList routine initializes a paged or non-paged pool lookaside list used for the allocation of one or more extra create parameter context structures (ECPs) of fixed size.
+old-location: ifsk\fltinitextracreateparameterlookasidelist.htm
+old-project: ifsk
+ms.assetid: bec492df-86ac-4e1b-8623-5656aa20c4c5
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: fltkernel/FltInitExtraCreateParameterLookasideList, ifsk.fltinitextracreateparameterlookasidelist, FltInitExtraCreateParameterLookasideList, FltApiRef_e_to_o_b9cff240-0f03-4756-86d0-a44612df8e58.xml, FltInitExtraCreateParameterLookasideList routine [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: The FltInitExtraCreateParameterLookasideList routine is available starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltInitExtraCreateParameterLookasideList
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

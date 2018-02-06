@@ -1,41 +1,46 @@
 ---
-UID : NC:ndis.MINIPORT_PNP_IRP
-title : MINIPORT_PNP_IRP
-author : windows-driver-content
-description : The MiniportPnpIrp function enables a miniport driver to optionally manage its Plug and Play (PnP) resources.
-old-location : netvista\miniportstartdevice.htm
-old-project : netvista
-ms.assetid : ccccb2c5-16ba-4463-bb35-1dc3dcc61a2f
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.miniportstartdevice, MiniportPnpIrp callback function [Network Drivers Starting with Windows Vista], MiniportPnpIrp, MINIPORT_PNP_IRP, MINIPORT_PNP_IRP, ndis/MiniportPnpIrp, (*MINIPORT_PNP_IRP_HANDLER) callback function [Network Drivers Starting with Windows Vista], (*MINIPORT_PNP_IRP_HANDLER), ndis_msix_ref_421866fc-9921-4101-87b5-3d48e064f855.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
+UID: NC:ndis.MINIPORT_PNP_IRP
+title: MINIPORT_PNP_IRP
+author: windows-driver-content
+description: The MiniportPnpIrp function enables a miniport driver to optionally manage its Plug and Play (PnP) resources.
+old-location: netvista\miniportstartdevice.htm
+old-project: netvista
+ms.assetid: ccccb2c5-16ba-4463-bb35-1dc3dcc61a2f
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.miniportstartdevice, MiniportPnpIrp callback function [Network Drivers Starting with Windows Vista], MiniportPnpIrp, MINIPORT_PNP_IRP, MINIPORT_PNP_IRP, ndis/MiniportPnpIrp, (*MINIPORT_PNP_IRP_HANDLER) callback function [Network Drivers Starting with Windows Vista], (*MINIPORT_PNP_IRP_HANDLER), ndis_msix_ref_421866fc-9921-4101-87b5-3d48e064f855.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ndis.h
+apiname:
+-	(*MINIPORT_PNP_IRP_HANDLER)
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NF:printerextension.IPrinterPropertyBag.GetReadStream
-title : IPrinterPropertyBag::GetReadStream method
-author : windows-driver-content
-description : Gets a stream in order to read from a stream property.
-old-location : print\iprinterpropertybag_getreadstream.htm
-old-project : print
-ms.assetid : BDA58F6A-A245-4616-866C-6D1734EFB469
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : GetReadStream method [Print Devices], IPrinterPropertyBag interface, GetReadStream method [Print Devices], IPrinterPropertyBag, GetReadStream, IPrinterPropertyBag interface [Print Devices], GetReadStream method, print.iprinterpropertybag_getreadstream, IPrinterPropertyBag::GetReadStream, printerextension/IPrinterPropertyBag::GetReadStream
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : printerextension.h
-req.include-header : Printerextension.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : printerextension.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PrintSchemaSelectionType
-req.product : Windows 10 or later.
+UID: NF:printerextension.IPrinterPropertyBag.GetReadStream
+title: IPrinterPropertyBag::GetReadStream method
+author: windows-driver-content
+description: Gets a stream in order to read from a stream property.
+old-location: print\iprinterpropertybag_getreadstream.htm
+old-project: print
+ms.assetid: BDA58F6A-A245-4616-866C-6D1734EFB469
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: GetReadStream method [Print Devices], IPrinterPropertyBag interface, GetReadStream method [Print Devices], IPrinterPropertyBag, GetReadStream, IPrinterPropertyBag interface [Print Devices], GetReadStream method, print.iprinterpropertybag_getreadstream, IPrinterPropertyBag::GetReadStream, printerextension/IPrinterPropertyBag::GetReadStream
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: printerextension.h
+req.include-header: Printerextension.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: printerextension.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Printerextension.h
+apiname:
+-	IPrinterPropertyBag.GetReadStream
+product: Windows
+targetos: Windows
+req.typenames: PrintSchemaSelectionType
+req.product: Windows 10 or later.
 ---
 
 

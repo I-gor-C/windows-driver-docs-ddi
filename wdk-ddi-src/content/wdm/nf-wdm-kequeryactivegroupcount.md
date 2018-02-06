@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.KeQueryActiveGroupCount
-title : KeQueryActiveGroupCount function
-author : windows-driver-content
-description : The KeQueryActiveGroupCount routine returns the number of active processor groups in a multiprocessor system.
-old-location : kernel\kequeryactivegroupcount.htm
-old-project : kernel
-ms.assetid : a5447dd8-6a4f-4686-b4e3-7deb4b61ff92
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.kequeryactivegroupcount, k105_29b5c7ca-1596-4a3e-8cda-20c6ccec4ebb.xml, KeQueryActiveGroupCount, wdm/KeQueryActiveGroupCount, KeQueryActiveGroupCount routine [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Ntddk.h, Wdm.h, Ntddk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 7.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.KeQueryActiveGroupCount
+title: KeQueryActiveGroupCount function
+author: windows-driver-content
+description: The KeQueryActiveGroupCount routine returns the number of active processor groups in a multiprocessor system.
+old-location: kernel\kequeryactivegroupcount.htm
+old-project: kernel
+ms.assetid: a5447dd8-6a4f-4686-b4e3-7deb4b61ff92
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.kequeryactivegroupcount, k105_29b5c7ca-1596-4a3e-8cda-20c6ccec4ebb.xml, KeQueryActiveGroupCount, wdm/KeQueryActiveGroupCount, KeQueryActiveGroupCount routine [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Ntddk.h, Wdm.h, Ntddk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 7.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	KeQueryActiveGroupCount
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

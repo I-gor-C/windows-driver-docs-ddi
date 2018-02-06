@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddk._WHEA_PROCESSOR_FAMILY_INFO
-title : "_WHEA_PROCESSOR_FAMILY_INFO"
-author : windows-driver-content
-description : The WHEA_PROCESSOR_FAMILY_INFO union describes the processor family information for an x86 or x64 processor.
-old-location : whea\whea_processor_family_info.htm
-old-project : whea
-ms.assetid : cc20c2d6-c76b-4f72-9762-23b9aa5fe946
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : ntddk/PWHEA_PROCESSOR_FAMILY_INFO, whearef_f15c7bb5-aee5-4a59-9869-285828d92b5e.xml, PWHEA_PROCESSOR_FAMILY_INFO, _WHEA_PROCESSOR_FAMILY_INFO, *PWHEA_PROCESSOR_FAMILY_INFO, whea.whea_processor_family_info, PWHEA_PROCESSOR_FAMILY_INFO union pointer [WHEA Drivers and Applications], ntddk/WHEA_PROCESSOR_FAMILY_INFO, WHEA_PROCESSOR_FAMILY_INFO union [WHEA Drivers and Applications], WHEA_PROCESSOR_FAMILY_INFO
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_PROCESSOR_FAMILY_INFO, *PWHEA_PROCESSOR_FAMILY_INFO
+UID: NS:ntddk._WHEA_PROCESSOR_FAMILY_INFO
+title: "_WHEA_PROCESSOR_FAMILY_INFO"
+author: windows-driver-content
+description: The WHEA_PROCESSOR_FAMILY_INFO union describes the processor family information for an x86 or x64 processor.
+old-location: whea\whea_processor_family_info.htm
+old-project: whea
+ms.assetid: cc20c2d6-c76b-4f72-9762-23b9aa5fe946
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: ntddk/PWHEA_PROCESSOR_FAMILY_INFO, whearef_f15c7bb5-aee5-4a59-9869-285828d92b5e.xml, PWHEA_PROCESSOR_FAMILY_INFO, _WHEA_PROCESSOR_FAMILY_INFO, *PWHEA_PROCESSOR_FAMILY_INFO, whea.whea_processor_family_info, PWHEA_PROCESSOR_FAMILY_INFO union pointer [WHEA Drivers and Applications], ntddk/WHEA_PROCESSOR_FAMILY_INFO, WHEA_PROCESSOR_FAMILY_INFO union [WHEA Drivers and Applications], WHEA_PROCESSOR_FAMILY_INFO
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddk.h
+apiname:
+-	WHEA_PROCESSOR_FAMILY_INFO
+product: Windows
+targetos: Windows
+req.typenames: WHEA_PROCESSOR_FAMILY_INFO, *PWHEA_PROCESSOR_FAMILY_INFO
 ---
 
 # _WHEA_PROCESSOR_FAMILY_INFO structure

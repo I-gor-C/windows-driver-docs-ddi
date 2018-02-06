@@ -1,38 +1,38 @@
 ---
-UID : NF:wdm.DbgBreakPointWithStatus
-title : DbgBreakPointWithStatus function
-author : windows-driver-content
-description : The DbgBreakPointWithStatus routine breaks into the kernel debugger and sends the value of Status to the debugger.
-old-location : devtest\dbgbreakpointwithstatus.htm
-old-project : devtest
-ms.assetid : d508c9de-5fae-47c1-88fa-df9048662419
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : DbgBreakPointWithStatus
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Microsoft Windows 2000 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.alt-api : DbgBreakPointWithStatus
-req.alt-loc : NtosKrnl.exe
-req.ddi-compliance : DebugBreakUsage
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ntdll.lib (user mode); NtosKrnl.lib (kernel mode)
-req.dll : NtosKrnl.exe
-req.irql : 
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.DbgBreakPointWithStatus
+title: DbgBreakPointWithStatus function
+author: windows-driver-content
+description: The DbgBreakPointWithStatus routine breaks into the kernel debugger and sends the value of Status to the debugger.
+old-location: devtest\dbgbreakpointwithstatus.htm
+old-project: devtest
+ms.assetid: d508c9de-5fae-47c1-88fa-df9048662419
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: DbgBreakPointWithStatus
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Microsoft Windows 2000 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.alt-api: DbgBreakPointWithStatus
+req.alt-loc: NtosKrnl.exe
+req.ddi-compliance: DebugBreakUsage
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ntdll.lib (user mode); NtosKrnl.lib (kernel mode)
+req.dll: NtosKrnl.exe
+req.irql: 
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

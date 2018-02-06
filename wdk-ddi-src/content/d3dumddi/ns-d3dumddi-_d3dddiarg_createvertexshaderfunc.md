@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._D3DDDIARG_CREATEVERTEXSHADERFUNC
-title : "_D3DDDIARG_CREATEVERTEXSHADERFUNC"
-author : windows-driver-content
-description : The D3DDDIARG_CREATEVERTEXSHADERFUNC structure specifies a shader handle to associate with vertex shader code.
-old-location : display\d3dddiarg_createvertexshaderfunc.htm
-old-project : display
-ms.assetid : 2517b7a9-76f5-46f6-9225-18081cd1d357
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3dumddi/D3DDDIARG_CREATEVERTEXSHADERFUNC, _D3DDDIARG_CREATEVERTEXSHADERFUNC, D3DDDIARG_CREATEVERTEXSHADERFUNC structure [Display Devices], D3DDDIARG_CREATEVERTEXSHADERFUNC, UMDisplayDriver_param_Structs_cbcea02a-d591-4226-8896-f8392c4b67de.xml, display.d3dddiarg_createvertexshaderfunc
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDIARG_CREATEVERTEXSHADERFUNC
+UID: NS:d3dumddi._D3DDDIARG_CREATEVERTEXSHADERFUNC
+title: "_D3DDDIARG_CREATEVERTEXSHADERFUNC"
+author: windows-driver-content
+description: The D3DDDIARG_CREATEVERTEXSHADERFUNC structure specifies a shader handle to associate with vertex shader code.
+old-location: display\d3dddiarg_createvertexshaderfunc.htm
+old-project: display
+ms.assetid: 2517b7a9-76f5-46f6-9225-18081cd1d357
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3dumddi/D3DDDIARG_CREATEVERTEXSHADERFUNC, _D3DDDIARG_CREATEVERTEXSHADERFUNC, D3DDDIARG_CREATEVERTEXSHADERFUNC structure [Display Devices], D3DDDIARG_CREATEVERTEXSHADERFUNC, UMDisplayDriver_param_Structs_cbcea02a-d591-4226-8896-f8392c4b67de.xml, display.d3dddiarg_createvertexshaderfunc
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	D3DDDIARG_CREATEVERTEXSHADERFUNC
+product: Windows
+targetos: Windows
+req.typenames: D3DDDIARG_CREATEVERTEXSHADERFUNC
 ---
 
 # _D3DDDIARG_CREATEVERTEXSHADERFUNC structure

@@ -1,41 +1,46 @@
 ---
-UID : NS:ks.KSERROR
-title : KSERROR
-author : windows-driver-content
-description : The KSERROR structure is used to report streaming errors in both kernel and user mode to their respective quality managers.
-old-location : stream\kserror.htm
-old-project : stream
-ms.assetid : c475810c-505e-446a-9b98-d512e745b6ce
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ks/PKSERROR, KSERROR, stream.kserror, *PKSERROR, ks/KSERROR, PKSERROR, PKSERROR structure pointer [Streaming Media Devices], ks-struct_86211cee-a711-4a84-b8ea-6de2d9ef81f6.xml, KSERROR structure [Streaming Media Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKSERROR, KSERROR"
+UID: NS:ks.KSERROR
+title: KSERROR
+author: windows-driver-content
+description: The KSERROR structure is used to report streaming errors in both kernel and user mode to their respective quality managers.
+old-location: stream\kserror.htm
+old-project: stream
+ms.assetid: c475810c-505e-446a-9b98-d512e745b6ce
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ks/PKSERROR, KSERROR, stream.kserror, *PKSERROR, ks/KSERROR, PKSERROR, PKSERROR structure pointer [Streaming Media Devices], ks-struct_86211cee-a711-4a84-b8ea-6de2d9ef81f6.xml, KSERROR structure [Streaming Media Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	KSERROR
+product: Windows
+targetos: Windows
+req.typenames: "*PKSERROR, KSERROR"
 ---
 
 # KSERROR structure

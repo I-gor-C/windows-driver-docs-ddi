@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGK_PHYSICALADAPTERCAPS
-title : "_DXGK_PHYSICALADAPTERCAPS"
-author : windows-driver-content
-description : The DXGK_PHYSICALADAPTERCAPS structure is used to report details of a physical adapter.
-old-location : display\dxgk_physicaladaptercaps.htm
-old-project : display
-ms.assetid : 8D075473-605F-4B75-BB02-5B182EEB3B5F
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : Flags.VPRPagingContextRequired, DXGK_PHYSICALADAPTERCAPS, d3dkmddi/DXGK_PHYSICALADAPTERCAPS, _DXGK_PHYSICALADAPTERCAPS, display.dxgk_physicaladaptercaps, Flags.IoMmuSupported, DXGK_PHYSICALADAPTERCAPS structure [Display Devices], Flags.GpuMmuSupported, Flags.MovePagingSupported
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PHYSICALADAPTERCAPS
+UID: NS:d3dkmddi._DXGK_PHYSICALADAPTERCAPS
+title: "_DXGK_PHYSICALADAPTERCAPS"
+author: windows-driver-content
+description: The DXGK_PHYSICALADAPTERCAPS structure is used to report details of a physical adapter.
+old-location: display\dxgk_physicaladaptercaps.htm
+old-project: display
+ms.assetid: 8D075473-605F-4B75-BB02-5B182EEB3B5F
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: Flags.VPRPagingContextRequired, DXGK_PHYSICALADAPTERCAPS, d3dkmddi/DXGK_PHYSICALADAPTERCAPS, _DXGK_PHYSICALADAPTERCAPS, display.dxgk_physicaladaptercaps, Flags.IoMmuSupported, DXGK_PHYSICALADAPTERCAPS structure [Display Devices], Flags.GpuMmuSupported, Flags.MovePagingSupported
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DXGK_PHYSICALADAPTERCAPS
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PHYSICALADAPTERCAPS
 ---
 
 # _DXGK_PHYSICALADAPTERCAPS structure

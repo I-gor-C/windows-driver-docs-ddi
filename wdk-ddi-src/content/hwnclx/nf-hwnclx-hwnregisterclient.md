@@ -1,41 +1,47 @@
 ---
-UID : NF:hwnclx.HwNRegisterClient
-title : HwNRegisterClient function
-author : windows-driver-content
-description : Registers the hardware notification client driver and its callback functions with the class extension.
-old-location : gpiobtn\hwnregisterclient.htm
-old-project : gpiobtn
-ms.assetid : 69de1551-e41f-4d18-89db-28d190676922
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : hwnclx/HwNRegisterClient, HwNRegisterClient, gpiobtn.hwnregisterclient, HwNRegisterClient function
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : hwnclx.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10, version 1709
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Mshwnclxstub.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HWN_CLX_EXPORT_INDEX, *PHWN_CLX_EXPORT_INDEX
+UID: NF:hwnclx.HwNRegisterClient
+title: HwNRegisterClient function
+author: windows-driver-content
+description: Registers the hardware notification client driver and its callback functions with the class extension.
+old-location: gpiobtn\hwnregisterclient.htm
+old-project: gpiobtn
+ms.assetid: 69de1551-e41f-4d18-89db-28d190676922
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: hwnclx/HwNRegisterClient, HwNRegisterClient, gpiobtn.hwnregisterclient, HwNRegisterClient function
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: hwnclx.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10, version 1709
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Mshwnclxstub.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Mshwnclxstub.lib
+-	Mshwnclxstub.dll
+apiname:
+-	HwNRegisterClient
+product: Windows
+targetos: Windows
+req.typenames: HWN_CLX_EXPORT_INDEX, *PHWN_CLX_EXPORT_INDEX
 ---
 
 

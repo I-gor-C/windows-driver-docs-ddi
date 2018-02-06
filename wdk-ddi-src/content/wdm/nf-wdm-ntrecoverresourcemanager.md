@@ -1,42 +1,48 @@
 ---
-UID : NF:wdm.NtRecoverResourceManager
-title : NtRecoverResourceManager function
-author : windows-driver-content
-description : The ZwRecoverResourceManager routine tries to recover the transaction that is associated with each enlistment of a specified resource manager object.
-old-location : kernel\zwrecoverresourcemanager.htm
-old-project : kernel
-ms.assetid : 976ea17c-db43-487d-a378-3d65d12ddc98
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ZwRecoverResourceManager, ZwRecoverResourceManager routine [Kernel-Mode Driver Architecture], ktm_ref_88d3ee88-7520-4942-95cc-38e53ab14044.xml, NtRecoverResourceManager, wdm/NtRecoverResourceManager, kernel.zwrecoverresourcemanager, wdm/ZwRecoverResourceManager
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later operating system versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.NtRecoverResourceManager
+title: NtRecoverResourceManager function
+author: windows-driver-content
+description: The ZwRecoverResourceManager routine tries to recover the transaction that is associated with each enlistment of a specified resource manager object.
+old-location: kernel\zwrecoverresourcemanager.htm
+old-project: kernel
+ms.assetid: 976ea17c-db43-487d-a378-3d65d12ddc98
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ZwRecoverResourceManager, ZwRecoverResourceManager routine [Kernel-Mode Driver Architecture], ktm_ref_88d3ee88-7520-4942-95cc-38e53ab14044.xml, NtRecoverResourceManager, wdm/NtRecoverResourceManager, kernel.zwrecoverresourcemanager, wdm/ZwRecoverResourceManager
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later operating system versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ZwRecoverResourceManager
+-	NtRecoverResourceManager
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

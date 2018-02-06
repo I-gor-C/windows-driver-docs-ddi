@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddmmc._FEATURE_DATA_CORE
-title : "_FEATURE_DATA_CORE"
-author : windows-driver-content
-description : The FEATURE_DATA_CORE structure holds data for the Core feature descriptor.
-old-location : storage\feature_data_core.htm
-old-project : storage
-ms.assetid : cd8e989a-1030-4f37-bb39-38974764ccb2
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : ntddmmc/PFEATURE_DATA_CORE, ntddmmc/FEATURE_DATA_CORE, FEATURE_DATA_CORE, *PFEATURE_DATA_CORE, structs-CD-ROM_1b2608f2-398d-4733-b319-a92d932504e7.xml, FEATURE_DATA_CORE structure [Storage Devices], _FEATURE_DATA_CORE, PFEATURE_DATA_CORE, PFEATURE_DATA_CORE structure pointer [Storage Devices], storage.feature_data_core
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddmmc.h
-req.include-header : Ntddcdrm.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PFEATURE_DATA_CORE, FEATURE_DATA_CORE"
+UID: NS:ntddmmc._FEATURE_DATA_CORE
+title: "_FEATURE_DATA_CORE"
+author: windows-driver-content
+description: The FEATURE_DATA_CORE structure holds data for the Core feature descriptor.
+old-location: storage\feature_data_core.htm
+old-project: storage
+ms.assetid: cd8e989a-1030-4f37-bb39-38974764ccb2
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: ntddmmc/PFEATURE_DATA_CORE, ntddmmc/FEATURE_DATA_CORE, FEATURE_DATA_CORE, *PFEATURE_DATA_CORE, structs-CD-ROM_1b2608f2-398d-4733-b319-a92d932504e7.xml, FEATURE_DATA_CORE structure [Storage Devices], _FEATURE_DATA_CORE, PFEATURE_DATA_CORE, PFEATURE_DATA_CORE structure pointer [Storage Devices], storage.feature_data_core
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddmmc.h
+req.include-header: Ntddcdrm.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddmmc.h
+apiname:
+-	FEATURE_DATA_CORE
+product: Windows
+targetos: Windows
+req.typenames: "*PFEATURE_DATA_CORE, FEATURE_DATA_CORE"
 ---
 
 # _FEATURE_DATA_CORE structure

@@ -1,41 +1,46 @@
 ---
-UID : NS:aux_klib._KBUGCHECK_DATA
-title : "_KBUGCHECK_DATA"
-author : windows-driver-content
-description : The KBUGCHECK_DATA structure contains bug check parameters.
-old-location : kernel\kbugcheck_data.htm
-old-project : kernel
-ms.assetid : 9fecf57b-e77a-458e-80ce-118eed2d48b4
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : "_KBUGCHECK_DATA, aux_klib/PKBUGCHECK_DATA, aux_klib_ced3c2df-3d09-45d8-8ae8-049d2bc46160.xml, KBUGCHECK_DATA, KBUGCHECK_DATA structure [Kernel-Mode Driver Architecture], *PKBUGCHECK_DATA, PKBUGCHECK_DATA structure pointer [Kernel-Mode Driver Architecture], PKBUGCHECK_DATA, aux_klib/KBUGCHECK_DATA, kernel.kbugcheck_data"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : aux_klib.h
-req.include-header : Aux_klib.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KBUGCHECK_DATA, *PKBUGCHECK_DATA
+UID: NS:aux_klib._KBUGCHECK_DATA
+title: "_KBUGCHECK_DATA"
+author: windows-driver-content
+description: The KBUGCHECK_DATA structure contains bug check parameters.
+old-location: kernel\kbugcheck_data.htm
+old-project: kernel
+ms.assetid: 9fecf57b-e77a-458e-80ce-118eed2d48b4
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: "_KBUGCHECK_DATA, aux_klib/PKBUGCHECK_DATA, aux_klib_ced3c2df-3d09-45d8-8ae8-049d2bc46160.xml, KBUGCHECK_DATA, KBUGCHECK_DATA structure [Kernel-Mode Driver Architecture], *PKBUGCHECK_DATA, PKBUGCHECK_DATA structure pointer [Kernel-Mode Driver Architecture], PKBUGCHECK_DATA, aux_klib/KBUGCHECK_DATA, kernel.kbugcheck_data"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: aux_klib.h
+req.include-header: Aux_klib.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	aux_klib.h
+apiname:
+-	KBUGCHECK_DATA
+product: Windows
+targetos: Windows
+req.typenames: KBUGCHECK_DATA, *PKBUGCHECK_DATA
 ---
 
 # _KBUGCHECK_DATA structure

@@ -1,41 +1,46 @@
 ---
-UID : NC:hdaudio.PSET_DMA_ENGINE_STATE
-title : PSET_DMA_ENGINE_STATE
-author : windows-driver-content
-description : The SetDmaEngineState routine sets the state of one or more DMA engines to the Running, Stopped, Paused, or Reset state.The function pointer type for a SetDmaEngineState routine is defined as:
-old-location : audio\setdmaenginestate.htm
-old-project : audio
-ms.assetid : 05cfb827-e143-4d77-b378-e02dd381e429
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : audio.setdmaenginestate, SetDmaEngineState callback function [Audio Devices], SetDmaEngineState, PSET_DMA_ENGINE_STATE, PSET_DMA_ENGINE_STATE, hdaudio/SetDmaEngineState, aud-prop2_a1455dc1-3ed9-43c3-a5b6-af321c26eefe.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : hdaudio.h
-req.include-header : Hdaudio.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT
+UID: NC:hdaudio.PSET_DMA_ENGINE_STATE
+title: PSET_DMA_ENGINE_STATE
+author: windows-driver-content
+description: The SetDmaEngineState routine sets the state of one or more DMA engines to the Running, Stopped, Paused, or Reset state.The function pointer type for a SetDmaEngineState routine is defined as:
+old-location: audio\setdmaenginestate.htm
+old-project: audio
+ms.assetid: 05cfb827-e143-4d77-b378-e02dd381e429
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: audio.setdmaenginestate, SetDmaEngineState callback function [Audio Devices], SetDmaEngineState, PSET_DMA_ENGINE_STATE, PSET_DMA_ENGINE_STATE, hdaudio/SetDmaEngineState, aud-prop2_a1455dc1-3ed9-43c3-a5b6-af321c26eefe.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: hdaudio.h
+req.include-header: Hdaudio.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	hdaudio.h
+apiname:
+-	SetDmaEngineState
+product: Windows
+targetos: Windows
+req.typenames: SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT
 ---
 
 

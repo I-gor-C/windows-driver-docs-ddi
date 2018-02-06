@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.PsReferenceImpersonationToken
-title : PsReferenceImpersonationToken function
-author : windows-driver-content
-description : The PsReferenceImpersonationToken routine increments the reference count of the impersonation token for the specified thread.
-old-location : ifsk\psreferenceimpersonationtoken.htm
-old-project : ifsk
-ms.assetid : c72f48a8-ba51-423f-9105-7d78521dcae2
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : PsReferenceImpersonationToken routine [Installable File System Drivers], psref_150f4e7c-56c2-4108-b5c9-0882f9027252.xml, PsReferenceImpersonationToken, ifsk.psreferenceimpersonationtoken, ntifs/PsReferenceImpersonationToken
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : FltKernel.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.PsReferenceImpersonationToken
+title: PsReferenceImpersonationToken function
+author: windows-driver-content
+description: The PsReferenceImpersonationToken routine increments the reference count of the impersonation token for the specified thread.
+old-location: ifsk\psreferenceimpersonationtoken.htm
+old-project: ifsk
+ms.assetid: c72f48a8-ba51-423f-9105-7d78521dcae2
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: PsReferenceImpersonationToken routine [Installable File System Drivers], psref_150f4e7c-56c2-4108-b5c9-0882f9027252.xml, PsReferenceImpersonationToken, ifsk.psreferenceimpersonationtoken, ntifs/PsReferenceImpersonationToken
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: FltKernel.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	PsReferenceImpersonationToken
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

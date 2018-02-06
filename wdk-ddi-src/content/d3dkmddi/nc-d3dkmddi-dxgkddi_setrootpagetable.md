@@ -1,41 +1,47 @@
 ---
-UID : NC:d3dkmddi.DXGKDDI_SETROOTPAGETABLE
-title : DXGKDDI_SETROOTPAGETABLE
-author : windows-driver-content
-description : DxgkDdiSetRootPageTable sets the root page table for the given context. This function is used to notify a context when its associated root page table is resized or moved in memory.
-old-location : display\dxgkddisetrootpagetable.htm
-old-project : display
-ms.assetid : BC9E7A2D-690D-4EC2-8D16-22C5FEBA574A
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkddisetrootpagetable, DxgkDdiSetRootPageTable callback function [Display Devices], DxgkDdiSetRootPageTable, DXGKDDI_SETROOTPAGETABLE, DXGKDDI_SETROOTPAGETABLE, dispmprt/DxgkDdiSetRootPageTable, d3dkmddi/DxgkDdiSetRootPageTable
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dkmddi.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
+UID: NC:d3dkmddi.DXGKDDI_SETROOTPAGETABLE
+title: DXGKDDI_SETROOTPAGETABLE
+author: windows-driver-content
+description: DxgkDdiSetRootPageTable sets the root page table for the given context. This function is used to notify a context when its associated root page table is resized or moved in memory.
+old-location: display\dxgkddisetrootpagetable.htm
+old-project: display
+ms.assetid: BC9E7A2D-690D-4EC2-8D16-22C5FEBA574A
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkddisetrootpagetable, DxgkDdiSetRootPageTable callback function [Display Devices], DxgkDdiSetRootPageTable, DXGKDDI_SETROOTPAGETABLE, DXGKDDI_SETROOTPAGETABLE, dispmprt/DxgkDdiSetRootPageTable, d3dkmddi/DxgkDdiSetRootPageTable
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dkmddi.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	dispmprt.h
+-	d3dkmddi.h
+apiname:
+-	DxgkDdiSetRootPageTable
+product: Windows
+targetos: Windows
+req.typenames: DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
 

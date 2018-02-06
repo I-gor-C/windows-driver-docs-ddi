@@ -1,41 +1,46 @@
 ---
-UID : NF:mcd.ChangerAdditionalExtensionSize
-title : ChangerAdditionalExtensionSize function
-author : windows-driver-content
-description : ChangerAdditionalExtensionSize indicates the number of bytes the changer miniclass driver requires to store device-specific information in the device extension.
-old-location : storage\changeradditionalextensionsize.htm
-old-project : storage
-ms.assetid : d9bcbad5-ce2c-4968-9544-4fb024b1e933
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : chgrmini_22c1f2f6-d441-4208-b104-46711c4204cd.xml, ChangerAdditionalExtensionSize, ChangerAdditionalExtensionSize function [Storage Devices], storage.changeradditionalextensionsize, mcd/ChangerAdditionalExtensionSize
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : mcd.h
-req.include-header : Mcd.h, Ntddchgr.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : LAMP_INTENSITY_WHITE
+UID: NF:mcd.ChangerAdditionalExtensionSize
+title: ChangerAdditionalExtensionSize function
+author: windows-driver-content
+description: ChangerAdditionalExtensionSize indicates the number of bytes the changer miniclass driver requires to store device-specific information in the device extension.
+old-location: storage\changeradditionalextensionsize.htm
+old-project: storage
+ms.assetid: d9bcbad5-ce2c-4968-9544-4fb024b1e933
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: chgrmini_22c1f2f6-d441-4208-b104-46711c4204cd.xml, ChangerAdditionalExtensionSize, ChangerAdditionalExtensionSize function [Storage Devices], storage.changeradditionalextensionsize, mcd/ChangerAdditionalExtensionSize
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: mcd.h
+req.include-header: Mcd.h, Ntddchgr.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	mcd.h
+apiname:
+-	ChangerAdditionalExtensionSize
+product: Windows
+targetos: Windows
+req.typenames: LAMP_INTENSITY_WHITE
 ---
 
 

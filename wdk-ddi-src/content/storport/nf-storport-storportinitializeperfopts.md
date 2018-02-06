@@ -1,42 +1,47 @@
 ---
-UID : NF:storport.StorPortInitializePerfOpts
-title : StorPortInitializePerfOpts function
-author : windows-driver-content
-description : The StorPortInitializePerfOpts function initializes the performance optimizations that both the miniport driver and the Storport driver support using a PERF_CONFIGURATION_DATA structure.
-old-location : storage\storportinitializeperfopts.htm
-old-project : storage
-ms.assetid : fbaf864c-d499-456c-be3b-b486c637877e
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.storportinitializeperfopts, storprt_84998f54-51fe-40fd-a8cc-ba0367a592ce.xml, storport/StorPortInitializePerfOpts, StorPortInitializePerfOpts, StorPortInitializePerfOpts function [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : StorPortPerfOpts
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STOR_SPINLOCK
-req.product : Windows 10 or later.
+UID: NF:storport.StorPortInitializePerfOpts
+title: StorPortInitializePerfOpts function
+author: windows-driver-content
+description: The StorPortInitializePerfOpts function initializes the performance optimizations that both the miniport driver and the Storport driver support using a PERF_CONFIGURATION_DATA structure.
+old-location: storage\storportinitializeperfopts.htm
+old-project: storage
+ms.assetid: fbaf864c-d499-456c-be3b-b486c637877e
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.storportinitializeperfopts, storprt_84998f54-51fe-40fd-a8cc-ba0367a592ce.xml, storport/StorPortInitializePerfOpts, StorPortInitializePerfOpts, StorPortInitializePerfOpts function [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: StorPortPerfOpts
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Storport.h
+apiname:
+-	StorPortInitializePerfOpts
+product: Windows
+targetos: Windows
+req.typenames: STOR_SPINLOCK
+req.product: Windows 10 or later.
 ---
 
 

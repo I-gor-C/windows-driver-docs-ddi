@@ -1,42 +1,47 @@
 ---
-UID : NC:video.PVIDEO_HW_INITIALIZE
-title : PVIDEO_HW_INITIALIZE
-author : windows-driver-content
-description : HwVidInitialize performs the first initialization of the adapter, after the HAL has given up control of the video hardware to the video port driver.
-old-location : display\hwvidinitialize.htm
-old-project : display
-ms.assetid : 0e43de21-59e5-4368-8ea2-34fa52e99950
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.hwvidinitialize, HwVidInitialize callback function [Display Devices], HwVidInitialize, PVIDEO_HW_INITIALIZE, PVIDEO_HW_INITIALIZE, video/HwVidInitialize, VideoMiniport_Functions_7c9d848d-8129-45cc-91f0-7f66f536e7a6.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VHF_CONFIG, *PVHF_CONFIG
-req.product : Windows 10 or later.
+UID: NC:video.PVIDEO_HW_INITIALIZE
+title: PVIDEO_HW_INITIALIZE
+author: windows-driver-content
+description: HwVidInitialize performs the first initialization of the adapter, after the HAL has given up control of the video hardware to the video port driver.
+old-location: display\hwvidinitialize.htm
+old-project: display
+ms.assetid: 0e43de21-59e5-4368-8ea2-34fa52e99950
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.hwvidinitialize, HwVidInitialize callback function [Display Devices], HwVidInitialize, PVIDEO_HW_INITIALIZE, PVIDEO_HW_INITIALIZE, video/HwVidInitialize, VideoMiniport_Functions_7c9d848d-8129-45cc-91f0-7f66f536e7a6.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	video.h
+apiname:
+-	HwVidInitialize
+product: Windows
+targetos: Windows
+req.typenames: VHF_CONFIG, *PVHF_CONFIG
+req.product: Windows 10 or later.
 ---
 
 

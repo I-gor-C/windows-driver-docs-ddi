@@ -1,42 +1,47 @@
 ---
-UID : NI:usbioctl.IOCTL_USB_GET_PORT_CONNECTOR_PROPERTIES
-title : IOCTL_USB_GET_PORT_CONNECTOR_PROPERTIES
-author : windows-driver-content
-description : The IOCTL_USB_GET_PORT_CONNECTOR_PROPERTIES I/O control request is sent by an application to retrieve information about a specific port on a USB hub.
-old-location : buses\ioctl_usb_get_port_connector_properties.htm
-old-project : usbref
-ms.assetid : 23B2A4AF-1255-4332-83A9-EEEB0007B966
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : buses.ioctl_usb_get_port_connector_properties, IOCTL_USB_GET_PORT_CONNECTOR_PROPERTIES control code [Buses], IOCTL_USB_GET_PORT_CONNECTOR_PROPERTIES, usbioctl/IOCTL_USB_GET_PORT_CONNECTOR_PROPERTIES
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : usbioctl.h
-req.include-header : Usbioctl.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : None supported
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : USB_HUB_TYPE
-req.product : Windows 10 or later.
+UID: NI:usbioctl.IOCTL_USB_GET_PORT_CONNECTOR_PROPERTIES
+title: IOCTL_USB_GET_PORT_CONNECTOR_PROPERTIES
+author: windows-driver-content
+description: The IOCTL_USB_GET_PORT_CONNECTOR_PROPERTIES I/O control request is sent by an application to retrieve information about a specific port on a USB hub.
+old-location: buses\ioctl_usb_get_port_connector_properties.htm
+old-project: usbref
+ms.assetid: 23B2A4AF-1255-4332-83A9-EEEB0007B966
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: buses.ioctl_usb_get_port_connector_properties, IOCTL_USB_GET_PORT_CONNECTOR_PROPERTIES control code [Buses], IOCTL_USB_GET_PORT_CONNECTOR_PROPERTIES, usbioctl/IOCTL_USB_GET_PORT_CONNECTOR_PROPERTIES
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: usbioctl.h
+req.include-header: Usbioctl.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: None supported
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Usbioctl.h
+apiname:
+-	IOCTL_USB_GET_PORT_CONNECTOR_PROPERTIES
+product: Windows
+targetos: Windows
+req.typenames: USB_HUB_TYPE
+req.product: Windows 10 or later.
 ---
 
 # IOCTL_USB_GET_PORT_CONNECTOR_PROPERTIES IOCTL

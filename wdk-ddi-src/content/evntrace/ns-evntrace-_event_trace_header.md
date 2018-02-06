@@ -1,41 +1,46 @@
 ---
-UID : NS:evntrace._EVENT_TRACE_HEADER
-title : "_EVENT_TRACE_HEADER"
-author : windows-driver-content
-description : The EVENT_TRACE_HEADER structure is used to pass a WMI event to the WMI event logger.
-old-location : kernel\event_trace_header.htm
-old-project : kernel
-ms.assetid : faddcf82-1025-458f-ab33-c96cd5699ca5
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : PEVENT_TRACE_HEADER, _EVENT_TRACE_HEADER, kstruct_a_9a7cc863-6913-427c-8756-4c62c20f5b60.xml, evntrace/PEVENT_TRACE_HEADER, kernel.event_trace_header, EVENT_TRACE_HEADER, EVENT_TRACE_HEADER structure [Kernel-Mode Driver Architecture], PEVENT_TRACE_HEADER structure pointer [Kernel-Mode Driver Architecture], *PEVENT_TRACE_HEADER, evntrace/EVENT_TRACE_HEADER
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : evntrace.h
-req.include-header : Wdm.h, Ntddk.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EVENT_TRACE_HEADER, *PEVENT_TRACE_HEADER
+UID: NS:evntrace._EVENT_TRACE_HEADER
+title: "_EVENT_TRACE_HEADER"
+author: windows-driver-content
+description: The EVENT_TRACE_HEADER structure is used to pass a WMI event to the WMI event logger.
+old-location: kernel\event_trace_header.htm
+old-project: kernel
+ms.assetid: faddcf82-1025-458f-ab33-c96cd5699ca5
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: PEVENT_TRACE_HEADER, _EVENT_TRACE_HEADER, kstruct_a_9a7cc863-6913-427c-8756-4c62c20f5b60.xml, evntrace/PEVENT_TRACE_HEADER, kernel.event_trace_header, EVENT_TRACE_HEADER, EVENT_TRACE_HEADER structure [Kernel-Mode Driver Architecture], PEVENT_TRACE_HEADER structure pointer [Kernel-Mode Driver Architecture], *PEVENT_TRACE_HEADER, evntrace/EVENT_TRACE_HEADER
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: evntrace.h
+req.include-header: Wdm.h, Ntddk.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Evntrace.h
+apiname:
+-	EVENT_TRACE_HEADER
+product: Windows
+targetos: Windows
+req.typenames: EVENT_TRACE_HEADER, *PEVENT_TRACE_HEADER
 ---
 
 # _EVENT_TRACE_HEADER structure

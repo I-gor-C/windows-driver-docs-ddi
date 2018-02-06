@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.CcCopyWrite
-title : CcCopyWrite function
-author : windows-driver-content
-description : The CcCopyWrite routine copies data from a user buffer to a cached file.
-old-location : ifsk\cccopywrite.htm
-old-project : ifsk
-ms.assetid : 100fec4a-eebe-4a4d-b322-09afbe68ec5c
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : CcCopyWrite routine [Installable File System Drivers], ifsk.cccopywrite, ccref_97ca67a6-e212-42bb-8998-be458c792f7b.xml, ntifs/CcCopyWrite, CcCopyWrite
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h, FltKernel.h
-req.target-type : Universal
-req.target-min-winverclnt : Available on Microsoft Windows 2000 and later Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.CcCopyWrite
+title: CcCopyWrite function
+author: windows-driver-content
+description: The CcCopyWrite routine copies data from a user buffer to a cached file.
+old-location: ifsk\cccopywrite.htm
+old-project: ifsk
+ms.assetid: 100fec4a-eebe-4a4d-b322-09afbe68ec5c
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: CcCopyWrite routine [Installable File System Drivers], ifsk.cccopywrite, ccref_97ca67a6-e212-42bb-8998-be458c792f7b.xml, ntifs/CcCopyWrite, CcCopyWrite
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h, FltKernel.h
+req.target-type: Universal
+req.target-min-winverclnt: Available on Microsoft Windows 2000 and later Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	CcCopyWrite
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

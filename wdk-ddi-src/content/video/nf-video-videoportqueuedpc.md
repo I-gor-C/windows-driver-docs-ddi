@@ -1,42 +1,47 @@
 ---
-UID : NF:video.VideoPortQueueDpc
-title : VideoPortQueueDpc function
-author : windows-driver-content
-description : The VideoPortQueueDpc function allows a miniport driver to queue a DPC.
-old-location : display\videoportqueuedpc.htm
-old-project : display
-ms.assetid : 9715ff37-397b-4102-a363-443b8076f881
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : VideoPortQueueDpc, display.videoportqueuedpc, video/VideoPortQueueDpc, VideoPortQueueDpc function [Display Devices], VideoPort_Functions_133e8c8b-e445-4f83-ad93-7eb560047f3f.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows 2000 and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Videoprt.lib
-req.dll : Videoprt.sys
-req.irql : ">= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_PORT_SERVICES
-req.product : Windows 10 or later.
+UID: NF:video.VideoPortQueueDpc
+title: VideoPortQueueDpc function
+author: windows-driver-content
+description: The VideoPortQueueDpc function allows a miniport driver to queue a DPC.
+old-location: display\videoportqueuedpc.htm
+old-project: display
+ms.assetid: 9715ff37-397b-4102-a363-443b8076f881
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: VideoPortQueueDpc, display.videoportqueuedpc, video/VideoPortQueueDpc, VideoPortQueueDpc function [Display Devices], VideoPort_Functions_133e8c8b-e445-4f83-ad93-7eb560047f3f.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows 2000 and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Videoprt.lib
+req.dll: Videoprt.sys
+req.irql: ">= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Videoprt.sys
+apiname:
+-	VideoPortQueueDpc
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_PORT_SERVICES
+req.product: Windows 10 or later.
 ---
 
 

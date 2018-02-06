@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3D10DDI_SHADERRESOURCEVIEWREADAFTERWRITEHAZARD
-title : PFND3D10DDI_SHADERRESOURCEVIEWREADAFTERWRITEHAZARD
-author : windows-driver-content
-description : The ShaderResourceViewReadAfterWriteHazard function informs the user-mode display driver that the specified resource was used as an output from the graphics processing unit (GPU) and that the resource will be used as an input to the GPU.
-old-location : display\shaderresourceviewreadafterwritehazard.htm
-old-project : display
-ms.assetid : bb391154-a9ff-4032-b86e-81fa4ea2e37c
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.shaderresourceviewreadafterwritehazard, ShaderResourceViewReadAfterWriteHazard callback function [Display Devices], ShaderResourceViewReadAfterWriteHazard, PFND3D10DDI_SHADERRESOURCEVIEWREADAFTERWRITEHAZARD, PFND3D10DDI_SHADERRESOURCEVIEWREADAFTERWRITEHAZARD, d3d10umddi/ShaderResourceViewReadAfterWriteHazard, UserModeDisplayDriverDx10_Functions_fa240239-13b6-43b1-a5c7-137d3d793e0c.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3D10DDI_SHADERRESOURCEVIEWREADAFTERWRITEHAZARD
+title: PFND3D10DDI_SHADERRESOURCEVIEWREADAFTERWRITEHAZARD
+author: windows-driver-content
+description: The ShaderResourceViewReadAfterWriteHazard function informs the user-mode display driver that the specified resource was used as an output from the graphics processing unit (GPU) and that the resource will be used as an input to the GPU.
+old-location: display\shaderresourceviewreadafterwritehazard.htm
+old-project: display
+ms.assetid: bb391154-a9ff-4032-b86e-81fa4ea2e37c
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.shaderresourceviewreadafterwritehazard, ShaderResourceViewReadAfterWriteHazard callback function [Display Devices], ShaderResourceViewReadAfterWriteHazard, PFND3D10DDI_SHADERRESOURCEVIEWREADAFTERWRITEHAZARD, PFND3D10DDI_SHADERRESOURCEVIEWREADAFTERWRITEHAZARD, d3d10umddi/ShaderResourceViewReadAfterWriteHazard, UserModeDisplayDriverDx10_Functions_fa240239-13b6-43b1-a5c7-137d3d793e0c.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	ShaderResourceViewReadAfterWriteHazard
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

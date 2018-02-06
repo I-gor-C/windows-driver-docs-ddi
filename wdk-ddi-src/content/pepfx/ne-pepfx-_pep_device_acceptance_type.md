@@ -1,41 +1,46 @@
 ---
-UID : NE:pepfx._PEP_DEVICE_ACCEPTANCE_TYPE
-title : "_PEP_DEVICE_ACCEPTANCE_TYPE"
-author : windows-driver-content
-description : The PEP_DEVICE_ACCEPTANCE_TYPE enumeration indicates whether a PEP accepts ownership of a device.
-old-location : kernel\pep_device_acceptance_type.htm
-old-project : kernel
-ms.assetid : 72D0BEC2-F5D5-4045-AD63-F263993817B0
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : pepfx/PEP_DEVICE_ACCEPTANCE_TYPE, pepfx/PepDeviceAcceptedMax, *PPEP_DEVICE_ACCEPTANCE_TYPE, PEP_DEVICE_ACCEPTANCE_TYPE, PepDeviceNotAccepted, pepfx/PepDeviceAccepted, PepDeviceAcceptedReserved, kernel.pep_device_acceptance_type, PepDeviceAcceptedMax, pepfx/PepDeviceAcceptedReserved, pepfx/PepDeviceNotAccepted, PepDeviceAccepted, PEP_DEVICE_ACCEPTANCE_TYPE enumeration [Kernel-Mode Driver Architecture], _PEP_DEVICE_ACCEPTANCE_TYPE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : pepfx.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with Windows 10.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : See Remarks.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPEP_DEVICE_ACCEPTANCE_TYPE, PEP_DEVICE_ACCEPTANCE_TYPE"
+UID: NE:pepfx._PEP_DEVICE_ACCEPTANCE_TYPE
+title: "_PEP_DEVICE_ACCEPTANCE_TYPE"
+author: windows-driver-content
+description: The PEP_DEVICE_ACCEPTANCE_TYPE enumeration indicates whether a PEP accepts ownership of a device.
+old-location: kernel\pep_device_acceptance_type.htm
+old-project: kernel
+ms.assetid: 72D0BEC2-F5D5-4045-AD63-F263993817B0
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: pepfx/PEP_DEVICE_ACCEPTANCE_TYPE, pepfx/PepDeviceAcceptedMax, *PPEP_DEVICE_ACCEPTANCE_TYPE, PEP_DEVICE_ACCEPTANCE_TYPE, PepDeviceNotAccepted, pepfx/PepDeviceAccepted, PepDeviceAcceptedReserved, kernel.pep_device_acceptance_type, PepDeviceAcceptedMax, pepfx/PepDeviceAcceptedReserved, pepfx/PepDeviceNotAccepted, PepDeviceAccepted, PEP_DEVICE_ACCEPTANCE_TYPE enumeration [Kernel-Mode Driver Architecture], _PEP_DEVICE_ACCEPTANCE_TYPE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: pepfx.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows 10.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: See Remarks.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	pepfx.h
+apiname:
+-	PEP_DEVICE_ACCEPTANCE_TYPE
+product: Windows
+targetos: Windows
+req.typenames: "*PPEP_DEVICE_ACCEPTANCE_TYPE, PEP_DEVICE_ACCEPTANCE_TYPE"
 ---
 
 # _PEP_DEVICE_ACCEPTANCE_TYPE Enumeration
@@ -54,26 +59,26 @@ typedef enum _PEP_DEVICE_ACCEPTANCE_TYPE {
 ## Constants
 
 <table>
-
-<tr>
-<td>PepDeviceAccepted</td>
-<td>The PEP claims ownership of this device.</td>
-</tr>
-
-<tr>
-<td>PepDeviceAceptedMax</td>
-<td></td>
-</tr>
-
-<tr>
-<td>PepDeviceNotAccepted</td>
-<td>The PEP does not claim ownership of this device.</td>
-</tr>
+            
+                <tr>
+                    <td>PepDeviceAccepted</td>
+                    <td>The PEP claims ownership of this device.</td>
+                </tr>
+            
+                <tr>
+                    <td>PepDeviceAceptedMax</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>PepDeviceNotAccepted</td>
+                    <td>The PEP does not claim ownership of this device.</td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-This enumeration is used by <b>DeviceAccepted</b> member of the <a href="..\pepfx\ns-pepfx-_pep_register_device_v2.md">PEP_REGISTER_DEVICE_V2</a> structure to indicate whether a PEP accepts ownership of a device.
+        This enumeration is used by <b>DeviceAccepted</b> member of the <a href="..\pepfx\ns-pepfx-_pep_register_device_v2.md">PEP_REGISTER_DEVICE_V2</a> structure to indicate whether a PEP accepts ownership of a device.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -81,9 +86,9 @@ This enumeration is used by <b>DeviceAccepted</b> member of the <a href="..\pepf
 | **Windows version** | Supported starting with Windows 10. Supported starting with Windows 10. |
 | **Header** | pepfx.h |
 
-## See Also
+    ## See Also
 
-<a href="..\pepfx\ns-pepfx-_pep_register_device_v2.md">PEP_REGISTER_DEVICE_V2</a>
+        <a href="..\pepfx\ns-pepfx-_pep_register_device_v2.md">PEP_REGISTER_DEVICE_V2</a>
 
  
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:dbgeng._DEBUG_EXCEPTION_FILTER_PARAMETERS
-title : "_DEBUG_EXCEPTION_FILTER_PARAMETERS"
-author : windows-driver-content
-description : The DEBUG_EXCEPTION_FILTER_PARAMETERS structure contains the parameters for an exception filter.
-old-location : debugger\debug_exception_filter_parameters.htm
-old-project : debugger
-ms.assetid : 26a101c5-0866-44e3-948b-8d3ca4dd9d00
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : debugger.debug_exception_filter_parameters, DEBUG_EXCEPTION_FILTER_PARAMETERS, PDEBUG_EXCEPTION_FILTER_PARAMETERS, _DEBUG_EXCEPTION_FILTER_PARAMETERS, *PDEBUG_EXCEPTION_FILTER_PARAMETERS, Structures_f3f2b1ac-e10c-439e-9de9-6b4161bf3c28.xml, DEBUG_EXCEPTION_FILTER_PARAMETERS structure [Windows Debugging], dbgeng/DEBUG_EXCEPTION_FILTER_PARAMETERS, dbgeng/PDEBUG_EXCEPTION_FILTER_PARAMETERS, PDEBUG_EXCEPTION_FILTER_PARAMETERS structure pointer [Windows Debugging]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : dbgeng.h
-req.include-header : DbgEng.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDEBUG_EXCEPTION_FILTER_PARAMETERS, DEBUG_EXCEPTION_FILTER_PARAMETERS"
+UID: NS:dbgeng._DEBUG_EXCEPTION_FILTER_PARAMETERS
+title: "_DEBUG_EXCEPTION_FILTER_PARAMETERS"
+author: windows-driver-content
+description: The DEBUG_EXCEPTION_FILTER_PARAMETERS structure contains the parameters for an exception filter.
+old-location: debugger\debug_exception_filter_parameters.htm
+old-project: debugger
+ms.assetid: 26a101c5-0866-44e3-948b-8d3ca4dd9d00
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: debugger.debug_exception_filter_parameters, DEBUG_EXCEPTION_FILTER_PARAMETERS, PDEBUG_EXCEPTION_FILTER_PARAMETERS, _DEBUG_EXCEPTION_FILTER_PARAMETERS, *PDEBUG_EXCEPTION_FILTER_PARAMETERS, Structures_f3f2b1ac-e10c-439e-9de9-6b4161bf3c28.xml, DEBUG_EXCEPTION_FILTER_PARAMETERS structure [Windows Debugging], dbgeng/DEBUG_EXCEPTION_FILTER_PARAMETERS, dbgeng/PDEBUG_EXCEPTION_FILTER_PARAMETERS, PDEBUG_EXCEPTION_FILTER_PARAMETERS structure pointer [Windows Debugging]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: dbgeng.h
+req.include-header: DbgEng.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	DbgEng.h
+apiname:
+-	DEBUG_EXCEPTION_FILTER_PARAMETERS
+product: Windows
+targetos: Windows
+req.typenames: "*PDEBUG_EXCEPTION_FILTER_PARAMETERS, DEBUG_EXCEPTION_FILTER_PARAMETERS"
 ---
 
 # _DEBUG_EXCEPTION_FILTER_PARAMETERS structure

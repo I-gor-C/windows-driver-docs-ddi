@@ -1,41 +1,46 @@
 ---
-UID : NS:compstui._EXTCHKBOX
-title : "_EXTCHKBOX"
-author : windows-driver-content
-description : The EXTCHKBOX structure is used by CPSUI applications (including printer interface DLLs) for specifying an extended check box, which can be added to a property sheet page option.
-old-location : print\extchkbox.htm
-old-project : print
-ms.assetid : b3b82474-d4e5-467c-93dc-30edac189c66
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : PEXTCHKBOX, _EXTCHKBOX, compstui/PEXTCHKBOX, EXTCHKBOX, cpsuifnc_3d620423-7173-4a78-b087-f8f269c5715d.xml, *PEXTCHKBOX, compstui/EXTCHKBOX, print.extchkbox, PEXTCHKBOX structure pointer [Print Devices], EXTCHKBOX structure [Print Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : compstui.h
-req.include-header : Compstui.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXTCHKBOX, *PEXTCHKBOX
+UID: NS:compstui._EXTCHKBOX
+title: "_EXTCHKBOX"
+author: windows-driver-content
+description: The EXTCHKBOX structure is used by CPSUI applications (including printer interface DLLs) for specifying an extended check box, which can be added to a property sheet page option.
+old-location: print\extchkbox.htm
+old-project: print
+ms.assetid: b3b82474-d4e5-467c-93dc-30edac189c66
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: PEXTCHKBOX, _EXTCHKBOX, compstui/PEXTCHKBOX, EXTCHKBOX, cpsuifnc_3d620423-7173-4a78-b087-f8f269c5715d.xml, *PEXTCHKBOX, compstui/EXTCHKBOX, print.extchkbox, PEXTCHKBOX structure pointer [Print Devices], EXTCHKBOX structure [Print Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: compstui.h
+req.include-header: Compstui.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	compstui.h
+apiname:
+-	EXTCHKBOX
+product: Windows
+targetos: Windows
+req.typenames: EXTCHKBOX, *PEXTCHKBOX
 ---
 
 # _EXTCHKBOX structure

@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfresource.WdfIoResourceRequirementsListGetIoResList
-title : WdfIoResourceRequirementsListGetIoResList function
-author : windows-driver-content
-description : The WdfIoResourceRequirementsListGetIoResList method returns a handle to the framework resource-range-list object that represents a specified logical configuration in a specified resource requirements list.
-old-location : wdf\wdfioresourcerequirementslistgetioreslist.htm
-old-project : wdf
-ms.assetid : b15c0ccf-0863-4415-b31f-b4217f249feb
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.wdfioresourcerequirementslistgetioreslist, wdfresource/WdfIoResourceRequirementsListGetIoResList, DFResourceObjectRef_a90ce2a4-5690-49c8-ac63-6ccf89f4e5f3.xml, PFN_WDFIORESOURCEREQUIREMENTSLISTGETIORESLIST, WdfIoResourceRequirementsListGetIoResList method, WdfIoResourceRequirementsListGetIoResList, kmdf.wdfioresourcerequirementslistgetioreslist
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfresource.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_REQUEST_SEND_OPTIONS, *PWDF_REQUEST_SEND_OPTIONS
-req.product : Windows 10 or later.
+UID: NF:wdfresource.WdfIoResourceRequirementsListGetIoResList
+title: WdfIoResourceRequirementsListGetIoResList function
+author: windows-driver-content
+description: The WdfIoResourceRequirementsListGetIoResList method returns a handle to the framework resource-range-list object that represents a specified logical configuration in a specified resource requirements list.
+old-location: wdf\wdfioresourcerequirementslistgetioreslist.htm
+old-project: wdf
+ms.assetid: b15c0ccf-0863-4415-b31f-b4217f249feb
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.wdfioresourcerequirementslistgetioreslist, wdfresource/WdfIoResourceRequirementsListGetIoResList, DFResourceObjectRef_a90ce2a4-5690-49c8-ac63-6ccf89f4e5f3.xml, PFN_WDFIORESOURCEREQUIREMENTSLISTGETIORESLIST, WdfIoResourceRequirementsListGetIoResList method, WdfIoResourceRequirementsListGetIoResList, kmdf.wdfioresourcerequirementslistgetioreslist
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfresource.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfIoResourceRequirementsListGetIoResList
+product: Windows
+targetos: Windows
+req.typenames: WDF_REQUEST_SEND_OPTIONS, *PWDF_REQUEST_SEND_OPTIONS
+req.product: Windows 10 or later.
 ---
 
 

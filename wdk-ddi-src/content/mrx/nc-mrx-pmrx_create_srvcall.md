@@ -1,41 +1,46 @@
 ---
-UID : NC:mrx.PMRX_CREATE_SRVCALL
-title : PMRX_CREATE_SRVCALL
-author : windows-driver-content
-description : The MRxCreateSrvCall routine is called by RDBSS to request that the network mini-redirector create an SRV_CALL structure and establish connection with a server.
-old-location : ifsk\mrxcreatesrvcall.htm
-old-project : ifsk
-ms.assetid : 2f6325e1-4ede-41e5-87d3-833c6b52157a
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.mrxcreatesrvcall, MRxCreateSrvCall routine [Installable File System Drivers], MRxCreateSrvCall, PMRX_CREATE_SRVCALL, PMRX_CREATE_SRVCALL, mrx/MRxCreateSrvCall, mrxref_bc85d9c3-6d64-4510-ae94-0ec858c49110.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : mrx.h
-req.include-header : Mrx.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SetDSMCounters_IN, *PSetDSMCounters_IN
+UID: NC:mrx.PMRX_CREATE_SRVCALL
+title: PMRX_CREATE_SRVCALL
+author: windows-driver-content
+description: The MRxCreateSrvCall routine is called by RDBSS to request that the network mini-redirector create an SRV_CALL structure and establish connection with a server.
+old-location: ifsk\mrxcreatesrvcall.htm
+old-project: ifsk
+ms.assetid: 2f6325e1-4ede-41e5-87d3-833c6b52157a
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.mrxcreatesrvcall, MRxCreateSrvCall routine [Installable File System Drivers], MRxCreateSrvCall, PMRX_CREATE_SRVCALL, PMRX_CREATE_SRVCALL, mrx/MRxCreateSrvCall, mrxref_bc85d9c3-6d64-4510-ae94-0ec858c49110.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: mrx.h
+req.include-header: Mrx.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	mrx.h
+apiname:
+-	MRxCreateSrvCall
+product: Windows
+targetos: Windows
+req.typenames: SetDSMCounters_IN, *PSetDSMCounters_IN
 ---
 
 

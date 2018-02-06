@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmdt._D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION
-title : "_D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION"
-author : windows-driver-content
-description : The D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION structure contains information about the copy protection that is supported (as well as the copy protection that is currently active) on a particular VidPN present path.
-old-location : display\d3dkmdt_vidpn_present_path_copyprotection.htm
-old-project : display
-ms.assetid : 661e70c6-d99e-4c5a-ad88-3dd854747de4
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : "_D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION, DmStructs_512b61d6-627d-4423-93ba-0f28ac340e51.xml, D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION structure [Display Devices], display.d3dkmdt_vidpn_present_path_copyprotection, D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION, d3dkmdt/D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmdt.h
-req.include-header : D3dkmdt.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION
+UID: NS:d3dkmdt._D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION
+title: "_D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION"
+author: windows-driver-content
+description: The D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION structure contains information about the copy protection that is supported (as well as the copy protection that is currently active) on a particular VidPN present path.
+old-location: display\d3dkmdt_vidpn_present_path_copyprotection.htm
+old-project: display
+ms.assetid: 661e70c6-d99e-4c5a-ad88-3dd854747de4
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: "_D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION, DmStructs_512b61d6-627d-4423-93ba-0f28ac340e51.xml, D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION structure [Display Devices], display.d3dkmdt_vidpn_present_path_copyprotection, D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION, d3dkmdt/D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmdt.h
+req.include-header: D3dkmdt.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmdt.h
+apiname:
+-	D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION
+product: Windows
+targetos: Windows
+req.typenames: D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION
 ---
 
 # _D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION structure

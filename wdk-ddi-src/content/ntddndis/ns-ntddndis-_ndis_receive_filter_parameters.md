@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddndis._NDIS_RECEIVE_FILTER_PARAMETERS
-title : "_NDIS_RECEIVE_FILTER_PARAMETERS"
-author : windows-driver-content
-description : The NDIS_RECEIVE_FILTER_PARAMETERS structure specifies the parameters for an NDIS receive filter.
-old-location : netvista\ndis_receive_filter_parameters.htm
-old-project : netvista
-ms.assetid : 39dc6b3a-f24d-4f1a-96f8-416fbcb3f894
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : PNDIS_RECEIVE_FILTER_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], netvista.ndis_receive_filter_parameters, *PNDIS_RECEIVE_FILTER_PARAMETERS, NDIS_RECEIVE_FILTER_PARAMETERS, _NDIS_RECEIVE_FILTER_PARAMETERS, PNDIS_RECEIVE_FILTER_PARAMETERS, ntddndis/PNDIS_RECEIVE_FILTER_PARAMETERS, ntddndis/NDIS_RECEIVE_FILTER_PARAMETERS, NDIS_RECEIVE_FILTER_PACKET_ENCAPSULATION_GRE, virtual_machine_queue_ref_abdd073b-8e49-4d6d-9bd6-1eca198dbd2d.xml, NDIS_RECEIVE_FILTER_PARAMETERS structure [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.20 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PNDIS_RECEIVE_FILTER_PARAMETERS, NDIS_RECEIVE_FILTER_PARAMETERS"
+UID: NS:ntddndis._NDIS_RECEIVE_FILTER_PARAMETERS
+title: "_NDIS_RECEIVE_FILTER_PARAMETERS"
+author: windows-driver-content
+description: The NDIS_RECEIVE_FILTER_PARAMETERS structure specifies the parameters for an NDIS receive filter.
+old-location: netvista\ndis_receive_filter_parameters.htm
+old-project: netvista
+ms.assetid: 39dc6b3a-f24d-4f1a-96f8-416fbcb3f894
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: PNDIS_RECEIVE_FILTER_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], netvista.ndis_receive_filter_parameters, *PNDIS_RECEIVE_FILTER_PARAMETERS, NDIS_RECEIVE_FILTER_PARAMETERS, _NDIS_RECEIVE_FILTER_PARAMETERS, PNDIS_RECEIVE_FILTER_PARAMETERS, ntddndis/PNDIS_RECEIVE_FILTER_PARAMETERS, ntddndis/NDIS_RECEIVE_FILTER_PARAMETERS, NDIS_RECEIVE_FILTER_PACKET_ENCAPSULATION_GRE, virtual_machine_queue_ref_abdd073b-8e49-4d6d-9bd6-1eca198dbd2d.xml, NDIS_RECEIVE_FILTER_PARAMETERS structure [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.20 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddndis.h
+apiname:
+-	NDIS_RECEIVE_FILTER_PARAMETERS
+product: Windows
+targetos: Windows
+req.typenames: "*PNDIS_RECEIVE_FILTER_PARAMETERS, NDIS_RECEIVE_FILTER_PARAMETERS"
 ---
 
 # _NDIS_RECEIVE_FILTER_PARAMETERS structure

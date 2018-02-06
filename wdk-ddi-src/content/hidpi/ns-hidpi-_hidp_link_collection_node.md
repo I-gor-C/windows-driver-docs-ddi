@@ -1,41 +1,46 @@
 ---
-UID : NS:hidpi._HIDP_LINK_COLLECTION_NODE
-title : "_HIDP_LINK_COLLECTION_NODE"
-author : windows-driver-content
-description : The HIDP_LINK_COLLECTION_NODE structure contains information about a link collection in a top-level collection's link collection array.
-old-location : hid\hidp_link_collection_node.htm
-old-project : hid
-ms.assetid : 66ffd219-4a62-404d-ba51-4a91eccfcf96
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : "_HIDP_LINK_COLLECTION_NODE, hid.hidp_link_collection_node, PHIDP_LINK_COLLECTION_NODE structure pointer [Human Input Devices], hidpi/PHIDP_LINK_COLLECTION_NODE, hidstrct_8d1c79e1-c19d-4896-9572-cae49a06304a.xml, hidpi/HIDP_LINK_COLLECTION_NODE, HIDP_LINK_COLLECTION_NODE structure [Human Input Devices], *PHIDP_LINK_COLLECTION_NODE, PHIDP_LINK_COLLECTION_NODE, HIDP_LINK_COLLECTION_NODE"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : hidpi.h
-req.include-header : Hidpi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PHIDP_LINK_COLLECTION_NODE, HIDP_LINK_COLLECTION_NODE"
+UID: NS:hidpi._HIDP_LINK_COLLECTION_NODE
+title: "_HIDP_LINK_COLLECTION_NODE"
+author: windows-driver-content
+description: The HIDP_LINK_COLLECTION_NODE structure contains information about a link collection in a top-level collection's link collection array.
+old-location: hid\hidp_link_collection_node.htm
+old-project: hid
+ms.assetid: 66ffd219-4a62-404d-ba51-4a91eccfcf96
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: "_HIDP_LINK_COLLECTION_NODE, hid.hidp_link_collection_node, PHIDP_LINK_COLLECTION_NODE structure pointer [Human Input Devices], hidpi/PHIDP_LINK_COLLECTION_NODE, hidstrct_8d1c79e1-c19d-4896-9572-cae49a06304a.xml, hidpi/HIDP_LINK_COLLECTION_NODE, HIDP_LINK_COLLECTION_NODE structure [Human Input Devices], *PHIDP_LINK_COLLECTION_NODE, PHIDP_LINK_COLLECTION_NODE, HIDP_LINK_COLLECTION_NODE"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: hidpi.h
+req.include-header: Hidpi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hidpi.h
+apiname:
+-	HIDP_LINK_COLLECTION_NODE
+product: Windows
+targetos: Windows
+req.typenames: "*PHIDP_LINK_COLLECTION_NODE, HIDP_LINK_COLLECTION_NODE"
 ---
 
 # _HIDP_LINK_COLLECTION_NODE structure

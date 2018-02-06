@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugControl3.GetTextMacro
-title : IDebugControl3::GetTextMacro method
-author : windows-driver-content
-description : The GetTextMacro method returns the value of a fixed-name alias.
-old-location : debugger\gettextmacro.htm
-old-project : debugger
-ms.assetid : 980bcf7b-8e4a-4516-ab71-af60a1d8e99c
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : GetTextMacro, IDebugControl2 interface [Windows Debugging], GetTextMacro method, dbgeng/IDebugControl3::GetTextMacro, GetTextMacro method [Windows Debugging], IDebugControl2 interface, IDebugControl3 interface [Windows Debugging], GetTextMacro method, GetTextMacro method [Windows Debugging], IDebugControl interface, IDebugControl::GetTextMacro, IDebugControl3, IDebugControl3::GetTextMacro, dbgeng/IDebugControl::GetTextMacro, dbgeng/IDebugControl2::GetTextMacro, IDebugControl_b6408c67-fb45-4a11-94b4-24099f406a8a.xml, IDebugControl2::GetTextMacro, debugger.gettextmacro, GetTextMacro method [Windows Debugging], IDebugControl interface [Windows Debugging], GetTextMacro method, GetTextMacro method [Windows Debugging], IDebugControl3 interface
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl3.GetTextMacro
+title: IDebugControl3::GetTextMacro method
+author: windows-driver-content
+description: The GetTextMacro method returns the value of a fixed-name alias.
+old-location: debugger\gettextmacro.htm
+old-project: debugger
+ms.assetid: 980bcf7b-8e4a-4516-ab71-af60a1d8e99c
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: GetTextMacro, IDebugControl2 interface [Windows Debugging], GetTextMacro method, dbgeng/IDebugControl3::GetTextMacro, GetTextMacro method [Windows Debugging], IDebugControl2 interface, IDebugControl3 interface [Windows Debugging], GetTextMacro method, GetTextMacro method [Windows Debugging], IDebugControl interface, IDebugControl::GetTextMacro, IDebugControl3, IDebugControl3::GetTextMacro, dbgeng/IDebugControl::GetTextMacro, dbgeng/IDebugControl2::GetTextMacro, IDebugControl_b6408c67-fb45-4a11-94b4-24099f406a8a.xml, IDebugControl2::GetTextMacro, debugger.gettextmacro, GetTextMacro method [Windows Debugging], IDebugControl interface [Windows Debugging], GetTextMacro method, GetTextMacro method [Windows Debugging], IDebugControl3 interface
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl.GetTextMacro
+-	IDebugControl2.GetTextMacro
+-	IDebugControl3.GetTextMacro
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

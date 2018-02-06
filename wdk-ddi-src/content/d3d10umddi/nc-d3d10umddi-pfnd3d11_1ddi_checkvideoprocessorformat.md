@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3D11_1DDI_CHECKVIDEOPROCESSORFORMAT
-title : PFND3D11_1DDI_CHECKVIDEOPROCESSORFORMAT
-author : windows-driver-content
-description : Queries whether the video processor supports a specified video format.
-old-location : display\checkvideoprocessorformat.htm
-old-project : display
-ms.assetid : f5f18a53-d121-445a-86b7-649624a2f175
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.checkvideoprocessorformat, CheckVideoProcessorFormat callback function [Display Devices], CheckVideoProcessorFormat, PFND3D11_1DDI_CHECKVIDEOPROCESSORFORMAT, PFND3D11_1DDI_CHECKVIDEOPROCESSORFORMAT, d3d10umddi/CheckVideoProcessorFormat
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3D11_1DDI_CHECKVIDEOPROCESSORFORMAT
+title: PFND3D11_1DDI_CHECKVIDEOPROCESSORFORMAT
+author: windows-driver-content
+description: Queries whether the video processor supports a specified video format.
+old-location: display\checkvideoprocessorformat.htm
+old-project: display
+ms.assetid: f5f18a53-d121-445a-86b7-649624a2f175
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.checkvideoprocessorformat, CheckVideoProcessorFormat callback function [Display Devices], CheckVideoProcessorFormat, PFND3D11_1DDI_CHECKVIDEOPROCESSORFORMAT, PFND3D11_1DDI_CHECKVIDEOPROCESSORFORMAT, d3d10umddi/CheckVideoProcessorFormat
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	D3d10umddi.h
+apiname:
+-	CheckVideoProcessorFormat
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

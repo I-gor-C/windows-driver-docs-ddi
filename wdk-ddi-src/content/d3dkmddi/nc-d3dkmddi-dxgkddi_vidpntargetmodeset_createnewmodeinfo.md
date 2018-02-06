@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dkmddi.DXGKDDI_VIDPNTARGETMODESET_CREATENEWMODEINFO
-title : DXGKDDI_VIDPNTARGETMODESET_CREATENEWMODEINFO
-author : windows-driver-content
-description : The pfnCreateNewModeInfo function returns a pointer to a D3DKMDT_VIDPN_TARGET_MODE structure that the display miniport driver populates before calling pfnAddMode.
-old-location : display\dxgk_vidpntargetmodeset_interface_pfncreatenewmodeinfo.htm
-old-project : display
-ms.assetid : ebb37681-fa03-49f5-968b-87c9ff4ebae9
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgk_vidpntargetmodeset_interface_pfncreatenewmodeinfo, pfnCreateNewModeInfo callback function [Display Devices], pfnCreateNewModeInfo, DXGKDDI_VIDPNTARGETMODESET_CREATENEWMODEINFO, DXGKDDI_VIDPNTARGETMODESET_CREATENEWMODEINFO, d3dkmddi/pfnCreateNewModeInfo, VidPnFunctions_96744b7d-68a5-4ea6-840b-eed33b627ec2.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
+UID: NC:d3dkmddi.DXGKDDI_VIDPNTARGETMODESET_CREATENEWMODEINFO
+title: DXGKDDI_VIDPNTARGETMODESET_CREATENEWMODEINFO
+author: windows-driver-content
+description: The pfnCreateNewModeInfo function returns a pointer to a D3DKMDT_VIDPN_TARGET_MODE structure that the display miniport driver populates before calling pfnAddMode.
+old-location: display\dxgk_vidpntargetmodeset_interface_pfncreatenewmodeinfo.htm
+old-project: display
+ms.assetid: ebb37681-fa03-49f5-968b-87c9ff4ebae9
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgk_vidpntargetmodeset_interface_pfncreatenewmodeinfo, pfnCreateNewModeInfo callback function [Display Devices], pfnCreateNewModeInfo, DXGKDDI_VIDPNTARGETMODESET_CREATENEWMODEINFO, DXGKDDI_VIDPNTARGETMODESET_CREATENEWMODEINFO, d3dkmddi/pfnCreateNewModeInfo, VidPnFunctions_96744b7d-68a5-4ea6-840b-eed33b627ec2.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	pfnCreateNewModeInfo
+product: Windows
+targetos: Windows
+req.typenames: DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NF:ndischimney.NdisMGetOffloadHandlers
-title : NdisMGetOffloadHandlers function
-author : windows-driver-content
-description : This function obtains the entry points of the NDIS functions for a particular chimney type.
-old-location : netvista\ndismgetoffloadhandlers.htm
-old-project : netvista
-ms.assetid : a78acf5d-07ec-487c-97bd-daca8d08863c
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NdisMGetOffloadHandlers, ndischimney/NdisMGetOffloadHandlers, NdisMGetOffloadHandlers function [Network Drivers Starting with Windows Vista], tcp_chim_ndis_func_6cfee4fb-432c-4f03-b28d-947dbc95ae48.xml, netvista.ndismgetoffloadhandlers
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndischimney.h
-req.include-header : Ndischimney.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PD_BUFFER_VIRTUAL_SUBNET_INFO
+UID: NF:ndischimney.NdisMGetOffloadHandlers
+title: NdisMGetOffloadHandlers function
+author: windows-driver-content
+description: This function obtains the entry points of the NDIS functions for a particular chimney type.
+old-location: netvista\ndismgetoffloadhandlers.htm
+old-project: netvista
+ms.assetid: a78acf5d-07ec-487c-97bd-daca8d08863c
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NdisMGetOffloadHandlers, ndischimney/NdisMGetOffloadHandlers, NdisMGetOffloadHandlers function [Network Drivers Starting with Windows Vista], tcp_chim_ndis_func_6cfee4fb-432c-4f03-b28d-947dbc95ae48.xml, netvista.ndismgetoffloadhandlers
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndischimney.h
+req.include-header: Ndischimney.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndischimney.h
+apiname:
+-	NdisMGetOffloadHandlers
+product: Windows
+targetos: Windows
+req.typenames: PD_BUFFER_VIRTUAL_SUBNET_INFO
 ---
 
 

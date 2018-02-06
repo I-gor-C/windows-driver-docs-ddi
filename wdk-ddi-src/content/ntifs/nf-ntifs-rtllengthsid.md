@@ -1,41 +1,47 @@
 ---
-UID : NF:ntifs.RtlLengthSid
-title : RtlLengthSid function
-author : windows-driver-content
-description : The RtlLengthSid routine returns the length, in bytes, of a valid security identifier (SID).
-old-location : ifsk\rtllengthsid.htm
-old-project : ifsk
-ms.assetid : 5d96061d-f1a2-4e45-b76e-5ada61d8accd
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ntifs/RtlLengthSid, RtlLengthSid, ifsk.rtllengthsid, RtlLengthSid routine [Installable File System Drivers], rtlref_8bbf6a04-413c-4f50-9f51-1ddd8bce58ff.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.RtlLengthSid
+title: RtlLengthSid function
+author: windows-driver-content
+description: The RtlLengthSid routine returns the length, in bytes, of a valid security identifier (SID).
+old-location: ifsk\rtllengthsid.htm
+old-project: ifsk
+ms.assetid: 5d96061d-f1a2-4e45-b76e-5ada61d8accd
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ntifs/RtlLengthSid, RtlLengthSid, ifsk.rtllengthsid, RtlLengthSid routine [Installable File System Drivers], rtlref_8bbf6a04-413c-4f50-9f51-1ddd8bce58ff.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+-	ntdll.dll
+apiname:
+-	RtlLengthSid
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

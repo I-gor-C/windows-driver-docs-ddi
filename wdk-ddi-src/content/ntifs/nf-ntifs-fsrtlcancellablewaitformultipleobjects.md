@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.FsRtlCancellableWaitForMultipleObjects
-title : FsRtlCancellableWaitForMultipleObjects function
-author : windows-driver-content
-description : The FsRtlCancellableWaitForMultipleObjects routine executes a cancelable wait operation (a wait that can be terminated) on one or more dispatcher objects.
-old-location : ifsk\fsrtlcancellablewaitformultipleobjects.htm
-old-project : ifsk
-ms.assetid : 9fb5805c-bb12-41ba-8c72-526b4193b6b5
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FsRtlCancellableWaitForMultipleObjects routine [Installable File System Drivers], fsrtlref_8a221e67-4344-401f-9e56-8fac66bb03b7.xml, ntifs/FsRtlCancellableWaitForMultipleObjects, FsRtlCancellableWaitForMultipleObjects, ifsk.fsrtlcancellablewaitformultipleobjects
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : This routine is available starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.FsRtlCancellableWaitForMultipleObjects
+title: FsRtlCancellableWaitForMultipleObjects function
+author: windows-driver-content
+description: The FsRtlCancellableWaitForMultipleObjects routine executes a cancelable wait operation (a wait that can be terminated) on one or more dispatcher objects.
+old-location: ifsk\fsrtlcancellablewaitformultipleobjects.htm
+old-project: ifsk
+ms.assetid: 9fb5805c-bb12-41ba-8c72-526b4193b6b5
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FsRtlCancellableWaitForMultipleObjects routine [Installable File System Drivers], fsrtlref_8a221e67-4344-401f-9e56-8fac66bb03b7.xml, ntifs/FsRtlCancellableWaitForMultipleObjects, FsRtlCancellableWaitForMultipleObjects, ifsk.fsrtlcancellablewaitformultipleobjects
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: This routine is available starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	FsRtlCancellableWaitForMultipleObjects
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

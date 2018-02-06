@@ -1,41 +1,46 @@
 ---
-UID : NS:acpiioct._ACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING_V1
-title : "_ACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING_V1"
-author : windows-driver-content
-description : The ACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING structure is used as input to an IOCTL_ACPI_EVAL_METHOD request and to an IOCTL_ACPI_ASYNC_EVAL_METHOD request. The structure supplies the name of a control method and an input argument that is an ASCII string.
-old-location : acpi\acpi_eval_input_buffer_simple_string.htm
-old-project : acpi
-ms.assetid : f8f5db79-d1ea-4ce8-b941-49ef7518b941
-ms.author : windowsdriverdev
-ms.date : 12/31/2017
-ms.keywords : acpiioct/ACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING_V1, acpiioct/PACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING_V1, acpi-meth-eval-ref_e7f8f5c8-9aef-488b-b041-2dc9d2f1a280.xml, PACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING_V1 structure pointer [ACPI Devices], ACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING_V1 structure [ACPI Devices], PACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING_V1, _ACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING_V1, ACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING, ACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING_V1, *PACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING_V1, *PACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING, acpi.acpi_eval_input_buffer_simple_string
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : acpiioct.h
-req.include-header : Acpiioct.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 2000 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING, *PACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING_V1, ACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING_V1, ACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING"
+UID: NS:acpiioct._ACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING_V1
+title: "_ACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING_V1"
+author: windows-driver-content
+description: The ACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING structure is used as input to an IOCTL_ACPI_EVAL_METHOD request and to an IOCTL_ACPI_ASYNC_EVAL_METHOD request. The structure supplies the name of a control method and an input argument that is an ASCII string.
+old-location: acpi\acpi_eval_input_buffer_simple_string.htm
+old-project: acpi
+ms.assetid: f8f5db79-d1ea-4ce8-b941-49ef7518b941
+ms.author: windowsdriverdev
+ms.date: 12/31/2017
+ms.keywords: acpiioct/ACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING_V1, acpiioct/PACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING_V1, acpi-meth-eval-ref_e7f8f5c8-9aef-488b-b041-2dc9d2f1a280.xml, PACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING_V1 structure pointer [ACPI Devices], ACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING_V1 structure [ACPI Devices], PACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING_V1, _ACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING_V1, ACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING, ACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING_V1, *PACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING_V1, *PACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING, acpi.acpi_eval_input_buffer_simple_string
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: acpiioct.h
+req.include-header: Acpiioct.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 2000 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Acpiioct.h
+apiname:
+-	ACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING_V1
+product: Windows
+targetos: Windows
+req.typenames: "*PACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING, *PACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING_V1, ACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING_V1, ACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING"
 ---
 
 # _ACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING_V1 structure

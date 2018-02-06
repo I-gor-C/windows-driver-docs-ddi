@@ -1,42 +1,50 @@
 ---
-UID : NF:wdfusb.WdfUsbTargetPipeWriteSynchronously
-title : WdfUsbTargetPipeWriteSynchronously function
-author : windows-driver-content
-description : The WdfUsbTargetPipeWriteSynchronously method builds a write request and sends it synchronously to a specified USB output pipe.
-old-location : wdf\wdfusbtargetpipewritesynchronously.htm
-old-project : wdf
-ms.assetid : 5513a245-0417-42f7-9c01-99b8bd5745eb
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WdfUsbTargetPipeWriteSynchronously method, DFUsbRef_9d78fb7e-eaf6-4d86-8376-4c68a1ab6ab9.xml, kmdf.wdfusbtargetpipewritesynchronously, WdfUsbTargetPipeWriteSynchronously, wdfusb/WdfUsbTargetPipeWriteSynchronously, PFN_WDFUSBTARGETPIPEWRITESYNCHRONOUSLY, wdf.wdfusbtargetpipewritesynchronously
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfusb.h
-req.include-header : Wdfusb.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : DriverCreate, InternalIoctlReqs, IoctlReqs, KmdfIrql, KmdfIrql2, ReadReqs, SyncReqSend, UsbKmdfIrql, UsbKmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfusb.WdfUsbTargetPipeWriteSynchronously
+title: WdfUsbTargetPipeWriteSynchronously function
+author: windows-driver-content
+description: The WdfUsbTargetPipeWriteSynchronously method builds a write request and sends it synchronously to a specified USB output pipe.
+old-location: wdf\wdfusbtargetpipewritesynchronously.htm
+old-project: wdf
+ms.assetid: 5513a245-0417-42f7-9c01-99b8bd5745eb
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WdfUsbTargetPipeWriteSynchronously method, DFUsbRef_9d78fb7e-eaf6-4d86-8376-4c68a1ab6ab9.xml, kmdf.wdfusbtargetpipewritesynchronously, WdfUsbTargetPipeWriteSynchronously, wdfusb/WdfUsbTargetPipeWriteSynchronously, PFN_WDFUSBTARGETPIPEWRITESYNCHRONOUSLY, wdf.wdfusbtargetpipewritesynchronously
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfusb.h
+req.include-header: Wdfusb.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: DriverCreate, InternalIoctlReqs, IoctlReqs, KmdfIrql, KmdfIrql2, ReadReqs, SyncReqSend, UsbKmdfIrql, UsbKmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+-	WUDFx02000.dll
+-	WUDFx02000.dll.dll
+apiname:
+-	WdfUsbTargetPipeWriteSynchronously
+product: Windows
+targetos: Windows
+req.typenames: WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
+req.product: Windows 10 or later.
 ---
 
 

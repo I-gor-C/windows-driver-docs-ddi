@@ -1,42 +1,47 @@
 ---
-UID : NF:storport.StorPortInitializeWorker
-title : StorPortInitializeWorker function
-author : windows-driver-content
-description : Creates a new Storport work item that runs in a system worker thread.
-old-location : storage\storportinitializeworker.htm
-old-project : storage
-ms.assetid : 4472A092-B2F4-4220-9685-6BE4FF0A83DB
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : StorPortInitializeWorker routine [Storage Devices], storport/StorPortInitializeWorker, StorPortInitializeWorker, storage.storportinitializeworker
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 8 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STOR_SPINLOCK
-req.product : Windows 10 or later.
+UID: NF:storport.StorPortInitializeWorker
+title: StorPortInitializeWorker function
+author: windows-driver-content
+description: Creates a new Storport work item that runs in a system worker thread.
+old-location: storage\storportinitializeworker.htm
+old-project: storage
+ms.assetid: 4472A092-B2F4-4220-9685-6BE4FF0A83DB
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: StorPortInitializeWorker routine [Storage Devices], storport/StorPortInitializeWorker, StorPortInitializeWorker, storage.storportinitializeworker
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 8 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	storport.h
+apiname:
+-	StorPortInitializeWorker
+product: Windows
+targetos: Windows
+req.typenames: STOR_SPINLOCK
+req.product: Windows 10 or later.
 ---
 
 

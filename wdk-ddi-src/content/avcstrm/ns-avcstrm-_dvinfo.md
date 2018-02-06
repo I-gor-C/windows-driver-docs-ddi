@@ -1,41 +1,46 @@
 ---
-UID : NS:avcstrm._DVINFO
-title : "_DVINFO"
-author : windows-driver-content
-description : The DVINFO structure describes a DV stream format including its default streaming source information and stream control information.
-old-location : stream\dvinfo.htm
-old-project : stream
-ms.assetid : 3afd372f-556f-4c3a-804b-9bf7a8c9a438
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : "_DVINFO, *PDVINFO, avcsref_9e5ce103-400a-4cfd-b160-5eb99906a80d.xml, PDVINFO, avcstrm/DVINFO, avcstrm/PDVINFO, DVINFO, DVINFO structure [Streaming Media Devices], stream.dvinfo, PDVINFO structure pointer [Streaming Media Devices]"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : avcstrm.h
-req.include-header : Avcstrm.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DVINFO, *PDVINFO
+UID: NS:avcstrm._DVINFO
+title: "_DVINFO"
+author: windows-driver-content
+description: The DVINFO structure describes a DV stream format including its default streaming source information and stream control information.
+old-location: stream\dvinfo.htm
+old-project: stream
+ms.assetid: 3afd372f-556f-4c3a-804b-9bf7a8c9a438
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: "_DVINFO, *PDVINFO, avcsref_9e5ce103-400a-4cfd-b160-5eb99906a80d.xml, PDVINFO, avcstrm/DVINFO, avcstrm/PDVINFO, DVINFO, DVINFO structure [Streaming Media Devices], stream.dvinfo, PDVINFO structure pointer [Streaming Media Devices]"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: avcstrm.h
+req.include-header: Avcstrm.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	avcstrm.h
+apiname:
+-	DVINFO
+product: Windows
+targetos: Windows
+req.typenames: DVINFO, *PDVINFO
 ---
 
 # _DVINFO structure

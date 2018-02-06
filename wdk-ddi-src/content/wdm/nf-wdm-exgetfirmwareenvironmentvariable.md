@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.ExGetFirmwareEnvironmentVariable
-title : ExGetFirmwareEnvironmentVariable function
-author : windows-driver-content
-description : The ExGetFirmwareEnvironmentVariable routine gets the value of the specified system firmware environment variable.
-old-location : kernel\exgetfirmwareenvironmentvariable.htm
-old-project : kernel
-ms.assetid : 5AD76955-A44C-4231-9394-0B6595CFB33D
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ExGetFirmwareEnvironmentVariable routine [Kernel-Mode Driver Architecture], ExGetFirmwareEnvironmentVariable, wdm/ExGetFirmwareEnvironmentVariable, kernel.exgetfirmwareenvironmentvariable
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ExGetFirmwareEnvironmentVariable
+title: ExGetFirmwareEnvironmentVariable function
+author: windows-driver-content
+description: The ExGetFirmwareEnvironmentVariable routine gets the value of the specified system firmware environment variable.
+old-location: kernel\exgetfirmwareenvironmentvariable.htm
+old-project: kernel
+ms.assetid: 5AD76955-A44C-4231-9394-0B6595CFB33D
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ExGetFirmwareEnvironmentVariable routine [Kernel-Mode Driver Architecture], ExGetFirmwareEnvironmentVariable, wdm/ExGetFirmwareEnvironmentVariable, kernel.exgetfirmwareenvironmentvariable
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ExGetFirmwareEnvironmentVariable
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

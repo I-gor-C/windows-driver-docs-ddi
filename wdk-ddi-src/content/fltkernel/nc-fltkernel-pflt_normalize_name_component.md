@@ -1,41 +1,46 @@
 ---
-UID : NC:fltkernel.PFLT_NORMALIZE_NAME_COMPONENT
-title : PFLT_NORMALIZE_NAME_COMPONENT
-author : windows-driver-content
-description : A minifilter driver that provides file names for the filter manager's name cache can register a routine of type PFLT_NORMALIZE_NAME_COMPONENT as the minifilter driver's NormalizeNameComponentCallback routine.
-old-location : ifsk\pflt_normalize_name_component.htm
-old-project : ifsk
-ms.assetid : 7050e872-3976-4842-9d16-50caf415acbc
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.pflt_normalize_name_component, NormalizeNameComponentCallback routine [Installable File System Drivers], NormalizeNameComponentCallback, PFLT_NORMALIZE_NAME_COMPONENT, PFLT_NORMALIZE_NAME_COMPONENT, fltkernel/NormalizeNameComponentCallback, FltCallbacks_674b1fbb-234b-4505-931e-8148e2f23d1b.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NC:fltkernel.PFLT_NORMALIZE_NAME_COMPONENT
+title: PFLT_NORMALIZE_NAME_COMPONENT
+author: windows-driver-content
+description: A minifilter driver that provides file names for the filter manager's name cache can register a routine of type PFLT_NORMALIZE_NAME_COMPONENT as the minifilter driver's NormalizeNameComponentCallback routine.
+old-location: ifsk\pflt_normalize_name_component.htm
+old-project: ifsk
+ms.assetid: 7050e872-3976-4842-9d16-50caf415acbc
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.pflt_normalize_name_component, NormalizeNameComponentCallback routine [Installable File System Drivers], NormalizeNameComponentCallback, PFLT_NORMALIZE_NAME_COMPONENT, PFLT_NORMALIZE_NAME_COMPONENT, fltkernel/NormalizeNameComponentCallback, FltCallbacks_674b1fbb-234b-4505-931e-8148e2f23d1b.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	fltkernel.h
+apiname:
+-	NormalizeNameComponentCallback
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

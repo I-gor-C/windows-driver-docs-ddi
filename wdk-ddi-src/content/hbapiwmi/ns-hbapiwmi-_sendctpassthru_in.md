@@ -1,41 +1,46 @@
 ---
-UID : NS:hbapiwmi._SendCTPassThru_IN
-title : "_SendCTPassThru_IN"
-author : windows-driver-content
-description : The SendCTPassThru_IN structure is used to deliver input parameter data to the SendCTPassThru WMI method.
-old-location : storage\sendctpassthru_in.htm
-old-project : storage
-ms.assetid : 5a3e06f5-f7f7-4e89-b78e-d6658c34ba9e
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : hbapiwmi/PSendCTPassThru_IN, SendCTPassThru_IN, PSendCTPassThru_IN, _SendCTPassThru_IN, hbapiwmi/SendCTPassThru_IN, SendCTPassThru_IN structure [Storage Devices], *PSendCTPassThru_IN, PSendCTPassThru_IN structure pointer [Storage Devices], storage.sendctpassthru_in, structs-Fibre_f95be355-7a10-483c-83cb-058812977a91.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : hbapiwmi.h
-req.include-header : Hbapiwmi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SendCTPassThru_IN, *PSendCTPassThru_IN
+UID: NS:hbapiwmi._SendCTPassThru_IN
+title: "_SendCTPassThru_IN"
+author: windows-driver-content
+description: The SendCTPassThru_IN structure is used to deliver input parameter data to the SendCTPassThru WMI method.
+old-location: storage\sendctpassthru_in.htm
+old-project: storage
+ms.assetid: 5a3e06f5-f7f7-4e89-b78e-d6658c34ba9e
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: hbapiwmi/PSendCTPassThru_IN, SendCTPassThru_IN, PSendCTPassThru_IN, _SendCTPassThru_IN, hbapiwmi/SendCTPassThru_IN, SendCTPassThru_IN structure [Storage Devices], *PSendCTPassThru_IN, PSendCTPassThru_IN structure pointer [Storage Devices], storage.sendctpassthru_in, structs-Fibre_f95be355-7a10-483c-83cb-058812977a91.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: hbapiwmi.h
+req.include-header: Hbapiwmi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hbapiwmi.h
+apiname:
+-	SendCTPassThru_IN
+product: Windows
+targetos: Windows
+req.typenames: SendCTPassThru_IN, *PSendCTPassThru_IN
 ---
 
 # _SendCTPassThru_IN structure

@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugControl3.RemoveAssemblyOptions
-title : IDebugControl3::RemoveAssemblyOptions method
-author : windows-driver-content
-description : The RemoveAssemblyOptions method turns off some of the assembly and disassembly options.
-old-location : debugger\removeassemblyoptions.htm
-old-project : debugger
-ms.assetid : 0352b418-26ee-4f35-a171-1b456a115014
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : debugger.removeassemblyoptions, IDebugControl3::RemoveAssemblyOptions, IDebugControl_8d971b27-ff9f-4097-a96a-68dabf08b200.xml, IDebugControl3, RemoveAssemblyOptions, RemoveAssemblyOptions method [Windows Debugging], IDebugControl3 interface, dbgeng/IDebugControl3::RemoveAssemblyOptions, RemoveAssemblyOptions method [Windows Debugging], IDebugControl3 interface [Windows Debugging], RemoveAssemblyOptions method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl3.RemoveAssemblyOptions
+title: IDebugControl3::RemoveAssemblyOptions method
+author: windows-driver-content
+description: The RemoveAssemblyOptions method turns off some of the assembly and disassembly options.
+old-location: debugger\removeassemblyoptions.htm
+old-project: debugger
+ms.assetid: 0352b418-26ee-4f35-a171-1b456a115014
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: debugger.removeassemblyoptions, IDebugControl3::RemoveAssemblyOptions, IDebugControl_8d971b27-ff9f-4097-a96a-68dabf08b200.xml, IDebugControl3, RemoveAssemblyOptions, RemoveAssemblyOptions method [Windows Debugging], IDebugControl3 interface, dbgeng/IDebugControl3::RemoveAssemblyOptions, RemoveAssemblyOptions method [Windows Debugging], IDebugControl3 interface [Windows Debugging], RemoveAssemblyOptions method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl3.RemoveAssemblyOptions
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

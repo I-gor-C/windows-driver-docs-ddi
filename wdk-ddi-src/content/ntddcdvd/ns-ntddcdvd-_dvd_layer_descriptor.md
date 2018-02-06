@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddcdvd._DVD_LAYER_DESCRIPTOR
-title : "_DVD_LAYER_DESCRIPTOR"
-author : windows-driver-content
-description : The DVD_LAYER_DESCRIPTOR structure is used in conjunction with the IOCTL_DVD_READ_STRUCTURE request to retrieve a DVD layer descriptor.
-old-location : storage\dvd_layer_descriptor.htm
-old-project : storage
-ms.assetid : dd981cc1-ab82-49de-8cf1-ba2b7451c7ef
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : PDVD_LAYER_DESCRIPTOR structure pointer [Storage Devices], DVD_LAYER_DESCRIPTOR structure [Storage Devices], ntddcdvd/PDVD_LAYER_DESCRIPTOR, storage.dvd_layer_descriptor, structs-DVD_94f08da1-fe98-47cd-989a-b3f574874d6b.xml, DVD_LAYER_DESCRIPTOR, ntddcdvd/DVD_LAYER_DESCRIPTOR, PDVD_LAYER_DESCRIPTOR, *PDVD_LAYER_DESCRIPTOR, _DVD_LAYER_DESCRIPTOR
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddcdvd.h
-req.include-header : Ntddcdvd.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDVD_LAYER_DESCRIPTOR, DVD_LAYER_DESCRIPTOR"
+UID: NS:ntddcdvd._DVD_LAYER_DESCRIPTOR
+title: "_DVD_LAYER_DESCRIPTOR"
+author: windows-driver-content
+description: The DVD_LAYER_DESCRIPTOR structure is used in conjunction with the IOCTL_DVD_READ_STRUCTURE request to retrieve a DVD layer descriptor.
+old-location: storage\dvd_layer_descriptor.htm
+old-project: storage
+ms.assetid: dd981cc1-ab82-49de-8cf1-ba2b7451c7ef
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: PDVD_LAYER_DESCRIPTOR structure pointer [Storage Devices], DVD_LAYER_DESCRIPTOR structure [Storage Devices], ntddcdvd/PDVD_LAYER_DESCRIPTOR, storage.dvd_layer_descriptor, structs-DVD_94f08da1-fe98-47cd-989a-b3f574874d6b.xml, DVD_LAYER_DESCRIPTOR, ntddcdvd/DVD_LAYER_DESCRIPTOR, PDVD_LAYER_DESCRIPTOR, *PDVD_LAYER_DESCRIPTOR, _DVD_LAYER_DESCRIPTOR
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddcdvd.h
+req.include-header: Ntddcdvd.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddcdvd.h
+apiname:
+-	DVD_LAYER_DESCRIPTOR
+product: Windows
+targetos: Windows
+req.typenames: "*PDVD_LAYER_DESCRIPTOR, DVD_LAYER_DESCRIPTOR"
 ---
 
 # _DVD_LAYER_DESCRIPTOR structure

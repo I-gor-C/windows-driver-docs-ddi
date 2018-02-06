@@ -1,41 +1,46 @@
 ---
-UID : NF:ndis.NdisMCmMakeCallComplete
-title : NdisMCmMakeCallComplete macro
-author : windows-driver-content
-description : NdisMCmMakeCallComplete returns the final status of a client's request, for which the MCM driver previously returned NDIS_STATUS_PENDING, to make an outgoing call.
-old-location : netvista\ndismcmmakecallcomplete.htm
-old-project : netvista
-ms.assetid : b518f36e-5937-4a74-a1d4-9e1709750843
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NdisMCmMakeCallComplete, ndis/NdisMCmMakeCallComplete, condis_mcm_ref_685b4f14-92ef-4c46-a11f-19b34d59734c.xml, netvista.ndismcmmakecallcomplete, NdisMCmMakeCallComplete macro [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : macro
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisMCmMakeCallComplete (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisMCmMakeCallComplete (NDIS   5.1)) in Windows XP.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_MCM_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : ndis.h
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisMCmMakeCallComplete
+title: NdisMCmMakeCallComplete macro
+author: windows-driver-content
+description: NdisMCmMakeCallComplete returns the final status of a client's request, for which the MCM driver previously returned NDIS_STATUS_PENDING, to make an outgoing call.
+old-location: netvista\ndismcmmakecallcomplete.htm
+old-project: netvista
+ms.assetid: b518f36e-5937-4a74-a1d4-9e1709750843
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NdisMCmMakeCallComplete, ndis/NdisMCmMakeCallComplete, condis_mcm_ref_685b4f14-92ef-4c46-a11f-19b34d59734c.xml, netvista.ndismcmmakecallcomplete, NdisMCmMakeCallComplete macro [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: macro
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisMCmMakeCallComplete (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisMCmMakeCallComplete (NDIS   5.1)) in Windows XP.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_MCM_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: ndis.h
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndis.h
+apiname:
+-	NdisMCmMakeCallComplete
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

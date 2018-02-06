@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddk._RTL_SPLAY_LINKS
-title : "_RTL_SPLAY_LINKS"
-author : windows-driver-content
-description : The RTL_SPLAY_LINKS structure is an opaque structure and is used by the system to represent a splay link tree node.
-old-location : ifsk\rtl_splay_links.htm
-old-project : ifsk
-ms.assetid : b035b101-2667-4962-ae49-781ddd30e0be
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : RTL_SPLAY_LINKS, ntddk/PRTL_SPLAY_LINKS, PRTL_SPLAY_LINKS, othersystemstructures_3a91f0e3-8f7c-4f45-8707-2392d2637cf4.xml, ntddk/RTL_SPLAY_LINKS, RTL_SPLAY_LINKS structure [Installable File System Drivers], ifsk.rtl_splay_links, _RTL_SPLAY_LINKS, *PRTL_SPLAY_LINKS, PRTL_SPLAY_LINKS structure pointer [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddk.h
-req.include-header : Fltkernel.h, Ntifs.h, Ntddk.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in all supported versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RTL_SPLAY_LINKS
+UID: NS:ntddk._RTL_SPLAY_LINKS
+title: "_RTL_SPLAY_LINKS"
+author: windows-driver-content
+description: The RTL_SPLAY_LINKS structure is an opaque structure and is used by the system to represent a splay link tree node.
+old-location: ifsk\rtl_splay_links.htm
+old-project: ifsk
+ms.assetid: b035b101-2667-4962-ae49-781ddd30e0be
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: RTL_SPLAY_LINKS, ntddk/PRTL_SPLAY_LINKS, PRTL_SPLAY_LINKS, othersystemstructures_3a91f0e3-8f7c-4f45-8707-2392d2637cf4.xml, ntddk/RTL_SPLAY_LINKS, RTL_SPLAY_LINKS structure [Installable File System Drivers], ifsk.rtl_splay_links, _RTL_SPLAY_LINKS, *PRTL_SPLAY_LINKS, PRTL_SPLAY_LINKS structure pointer [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddk.h
+req.include-header: Fltkernel.h, Ntifs.h, Ntddk.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in all supported versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddk.h
+apiname:
+-	RTL_SPLAY_LINKS
+product: Windows
+targetos: Windows
+req.typenames: RTL_SPLAY_LINKS
 ---
 
 # _RTL_SPLAY_LINKS structure

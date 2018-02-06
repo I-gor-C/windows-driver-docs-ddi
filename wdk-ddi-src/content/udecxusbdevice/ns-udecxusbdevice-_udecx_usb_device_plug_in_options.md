@@ -1,42 +1,47 @@
 ---
-UID : NS:udecxusbdevice._UDECX_USB_DEVICE_PLUG_IN_OPTIONS
-title : "_UDECX_USB_DEVICE_PLUG_IN_OPTIONS"
-author : windows-driver-content
-description : Contains the port numbers to which a virtual USB device is connected. Initialize this structure by calling the UDECX_USB_DEVICE_PLUG_IN_OPTIONS_INIT method.
-old-location : buses\udecx_usb_device_plug_in_options.htm
-old-project : usbref
-ms.assetid : D09A124A-82F6-4B0A-B60F-E60EB54B0EC1
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : PUDECX_USB_DEVICE_PLUG_IN_OPTIONS structure pointer [Buses], PUDECX_USB_DEVICE_PLUG_IN_OPTIONS, UDECX_USB_DEVICE_PLUG_IN_OPTIONS, udecxusbdevice/ PUDECX_USB_DEVICE_PLUG_IN_OPTIONS, UDECX_USB_DEVICE_PLUG_IN_OPTIONS structure [Buses], udecxusbdevice/UDECX_USB_DEVICE_PLUG_IN_OPTIONS, *PUDECX_USB_DEVICE_PLUG_IN_OPTIONS, buses.udecx_usb_device_plug_in_options, _UDECX_USB_DEVICE_PLUG_IN_OPTIONS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : udecxusbdevice.h
-req.include-header : Udecx.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUDECX_USB_DEVICE_PLUG_IN_OPTIONS, UDECX_USB_DEVICE_PLUG_IN_OPTIONS"
-req.product : Windows 10 or later.
+UID: NS:udecxusbdevice._UDECX_USB_DEVICE_PLUG_IN_OPTIONS
+title: "_UDECX_USB_DEVICE_PLUG_IN_OPTIONS"
+author: windows-driver-content
+description: Contains the port numbers to which a virtual USB device is connected. Initialize this structure by calling the UDECX_USB_DEVICE_PLUG_IN_OPTIONS_INIT method.
+old-location: buses\udecx_usb_device_plug_in_options.htm
+old-project: usbref
+ms.assetid: D09A124A-82F6-4B0A-B60F-E60EB54B0EC1
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: PUDECX_USB_DEVICE_PLUG_IN_OPTIONS structure pointer [Buses], PUDECX_USB_DEVICE_PLUG_IN_OPTIONS, UDECX_USB_DEVICE_PLUG_IN_OPTIONS, udecxusbdevice/ PUDECX_USB_DEVICE_PLUG_IN_OPTIONS, UDECX_USB_DEVICE_PLUG_IN_OPTIONS structure [Buses], udecxusbdevice/UDECX_USB_DEVICE_PLUG_IN_OPTIONS, *PUDECX_USB_DEVICE_PLUG_IN_OPTIONS, buses.udecx_usb_device_plug_in_options, _UDECX_USB_DEVICE_PLUG_IN_OPTIONS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: udecxusbdevice.h
+req.include-header: Udecx.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	UdecxUsbDevice.h
+apiname:
+-	UDECX_USB_DEVICE_PLUG_IN_OPTIONS
+product: Windows
+targetos: Windows
+req.typenames: "*PUDECX_USB_DEVICE_PLUG_IN_OPTIONS, UDECX_USB_DEVICE_PLUG_IN_OPTIONS"
+req.product: Windows 10 or later.
 ---
 
 # _UDECX_USB_DEVICE_PLUG_IN_OPTIONS structure

@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfinstaller.WdfPreDeviceRemove
-title : WdfPreDeviceRemove function
-author : windows-driver-content
-description : The co-installer's WdfPreDeviceRemove function performs any operations that the co-installer might require before a non-Plug and Play (PnP) driver's installer deletes the driver's kernel-mode service.
-old-location : wdf\wdfpredeviceremove.htm
-old-project : wdf
-ms.assetid : 8cde623d-a255-45ff-ab1e-bdd0c14a02a0
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdfinstaller/WdfPreDeviceRemove, WdfPreDeviceRemove, wdf.wdfpredeviceremove, DFCoinstallerRef_6eeb3b62-08ef-4d17-a6af-9945a3737f0d.xml, WdfPreDeviceRemove function, kmdf.wdfpredeviceremove, PFN_WDFPREDEVICEREMOVE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfinstaller.h
-req.include-header : Wdfinstaller.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : N/A (Exported by the KMDF co-installer library. For information about the co-installer library's filename, see Using the KMDF Co-installer.)
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_FILE_INFORMATION_CLASS, *PWDF_FILE_INFORMATION_CLASS
-req.product : Windows 10 or later.
+UID: NF:wdfinstaller.WdfPreDeviceRemove
+title: WdfPreDeviceRemove function
+author: windows-driver-content
+description: The co-installer's WdfPreDeviceRemove function performs any operations that the co-installer might require before a non-Plug and Play (PnP) driver's installer deletes the driver's kernel-mode service.
+old-location: wdf\wdfpredeviceremove.htm
+old-project: wdf
+ms.assetid: 8cde623d-a255-45ff-ab1e-bdd0c14a02a0
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdfinstaller/WdfPreDeviceRemove, WdfPreDeviceRemove, wdf.wdfpredeviceremove, DFCoinstallerRef_6eeb3b62-08ef-4d17-a6af-9945a3737f0d.xml, WdfPreDeviceRemove function, kmdf.wdfpredeviceremove, PFN_WDFPREDEVICEREMOVE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfinstaller.h
+req.include-header: Wdfinstaller.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: N/A (Exported by the KMDF co-installer library. For information about the co-installer library's filename, see Using the KMDF Co-installer.)
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	N/A
+-	N/A.dll
+apiname:
+-	WdfPreDeviceRemove
+product: Windows
+targetos: Windows
+req.typenames: WDF_FILE_INFORMATION_CLASS, *PWDF_FILE_INFORMATION_CLASS
+req.product: Windows 10 or later.
 ---
 
 

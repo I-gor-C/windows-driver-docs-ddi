@@ -1,41 +1,46 @@
 ---
-UID : NS:ntifs._WIM_PROVIDER_ADD_OVERLAY_INPUT
-title : "_WIM_PROVIDER_ADD_OVERLAY_INPUT"
-author : windows-driver-content
-description : A new Windows Image File (WIM) data source is added to the WIM provider with the WIM_PROVIDER_ADD_OVERLAY_INPUT structure.
-old-location : ifsk\wim_provider_add_overlay_input.htm
-old-project : ifsk
-ms.assetid : 75C95941-367D-4A7F-A121-AF2BF9EFE28E
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ntifs/PWIM_PROVIDER_ADD_OVERLAY_INPUT, WIM_PROVIDER_ADD_OVERLAY_INPUT structure [Installable File System Drivers], ntifs/WIM_PROVIDER_ADD_OVERLAY_INPUT, WIM_PROVIDER_ADD_OVERLAY_INPUT, *PWIM_PROVIDER_ADD_OVERLAY_INPUT, _WIM_PROVIDER_ADD_OVERLAY_INPUT, WIM_BOOT_OS_WIM, PWIM_PROVIDER_ADD_OVERLAY_INPUT, ifsk.wim_provider_add_overlay_input, PWIM_PROVIDER_ADD_OVERLAY_INPUT structure pointer [Installable File System Drivers], WIM_BOOT_NOT_OS_WIM
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntifs.h
-req.include-header : Ntifs.h, Fltkernel.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows 8.1 Update.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWIM_PROVIDER_ADD_OVERLAY_INPUT, WIM_PROVIDER_ADD_OVERLAY_INPUT"
+UID: NS:ntifs._WIM_PROVIDER_ADD_OVERLAY_INPUT
+title: "_WIM_PROVIDER_ADD_OVERLAY_INPUT"
+author: windows-driver-content
+description: A new Windows Image File (WIM) data source is added to the WIM provider with the WIM_PROVIDER_ADD_OVERLAY_INPUT structure.
+old-location: ifsk\wim_provider_add_overlay_input.htm
+old-project: ifsk
+ms.assetid: 75C95941-367D-4A7F-A121-AF2BF9EFE28E
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ntifs/PWIM_PROVIDER_ADD_OVERLAY_INPUT, WIM_PROVIDER_ADD_OVERLAY_INPUT structure [Installable File System Drivers], ntifs/WIM_PROVIDER_ADD_OVERLAY_INPUT, WIM_PROVIDER_ADD_OVERLAY_INPUT, *PWIM_PROVIDER_ADD_OVERLAY_INPUT, _WIM_PROVIDER_ADD_OVERLAY_INPUT, WIM_BOOT_OS_WIM, PWIM_PROVIDER_ADD_OVERLAY_INPUT, ifsk.wim_provider_add_overlay_input, PWIM_PROVIDER_ADD_OVERLAY_INPUT structure pointer [Installable File System Drivers], WIM_BOOT_NOT_OS_WIM
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntifs.h
+req.include-header: Ntifs.h, Fltkernel.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows 8.1 Update.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntifs.h
+apiname:
+-	WIM_PROVIDER_ADD_OVERLAY_INPUT
+product: Windows
+targetos: Windows
+req.typenames: "*PWIM_PROVIDER_ADD_OVERLAY_INPUT, WIM_PROVIDER_ADD_OVERLAY_INPUT"
 ---
 
 # _WIM_PROVIDER_ADD_OVERLAY_INPUT structure

@@ -1,42 +1,47 @@
 ---
-UID : NF:winsplp.SpoolerCopyFileEvent
-title : SpoolerCopyFileEvent function
-author : windows-driver-content
-description : A Point and Print DLL's SpoolerCopyFileEvent function receives notifications of events associated with copying print queue-associated files to a print client, when the client connects to a print server.
-old-location : print\spoolercopyfileevent.htm
-old-project : print
-ms.assetid : 39e9b596-7726-439c-8ad9-a987fdfd3860
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : poprfnc_e85f9707-18cf-4cd5-aece-ebcd5fd09270.xml, SpoolerCopyFileEvent function [Print Devices], winsplp/SpoolerCopyFileEvent, print.spoolercopyfileevent, SpoolerCopyFileEvent
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : winsplp.h
-req.include-header : Winsplp.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Mscms.lib
-req.dll : Mscms.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NOTIFICATION_CONFIG_FLAGS
-req.product : Windows 10 or later.
+UID: NF:winsplp.SpoolerCopyFileEvent
+title: SpoolerCopyFileEvent function
+author: windows-driver-content
+description: A Point and Print DLL's SpoolerCopyFileEvent function receives notifications of events associated with copying print queue-associated files to a print client, when the client connects to a print server.
+old-location: print\spoolercopyfileevent.htm
+old-project: print
+ms.assetid: 39e9b596-7726-439c-8ad9-a987fdfd3860
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: poprfnc_e85f9707-18cf-4cd5-aece-ebcd5fd09270.xml, SpoolerCopyFileEvent function [Print Devices], winsplp/SpoolerCopyFileEvent, print.spoolercopyfileevent, SpoolerCopyFileEvent
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: winsplp.h
+req.include-header: Winsplp.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Mscms.lib
+req.dll: Mscms.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Mscms.dll
+apiname:
+-	SpoolerCopyFileEvent
+product: Windows
+targetos: Windows
+req.typenames: NOTIFICATION_CONFIG_FLAGS
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NF:ks.KsDeviceGetFirstChildFilterFactory
-title : KsDeviceGetFirstChildFilterFactory function
-author : windows-driver-content
-description : The KsDeviceGetFirstChildFilterFactory function returns the first child filter factory belonging to a given AVStream device.
-old-location : stream\ksdevicegetfirstchildfilterfactory.htm
-old-project : stream
-ms.assetid : af388fd1-c95b-42ae-9d18-5fb416c28bc1
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ks/KsDeviceGetFirstChildFilterFactory, avfunc_99fdc67f-eca0-460d-b1fb-d9881bd6e4c9.xml, KsDeviceGetFirstChildFilterFactory, stream.ksdevicegetfirstchildfilterfactory, KsDeviceGetFirstChildFilterFactory function [Streaming Media Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsDeviceGetFirstChildFilterFactory
+title: KsDeviceGetFirstChildFilterFactory function
+author: windows-driver-content
+description: The KsDeviceGetFirstChildFilterFactory function returns the first child filter factory belonging to a given AVStream device.
+old-location: stream\ksdevicegetfirstchildfilterfactory.htm
+old-project: stream
+ms.assetid: af388fd1-c95b-42ae-9d18-5fb416c28bc1
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ks/KsDeviceGetFirstChildFilterFactory, avfunc_99fdc67f-eca0-460d-b1fb-d9881bd6e4c9.xml, KsDeviceGetFirstChildFilterFactory, stream.ksdevicegetfirstchildfilterfactory, KsDeviceGetFirstChildFilterFactory function [Streaming Media Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	KsDeviceGetFirstChildFilterFactory
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3D10DDI_CREATEDEVICE
-title : PFND3D10DDI_CREATEDEVICE
-author : windows-driver-content
-description : The CreateDevice(D3D10) function creates a graphics context that is referenced in subsequent calls.
-old-location : display\createdevice_d3d10_.htm
-old-project : display
-ms.assetid : c69eedb1-c975-412c-aa9f-cf64a702f937
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.createdevice_d3d10_, CreateDevice callback function [Display Devices], CreateDevice, PFND3D10DDI_CREATEDEVICE, PFND3D10DDI_CREATEDEVICE, d3d10umddi/CreateDevice, UserModeDisplayDriverDx10_Functions_4d3d9d4c-e03b-46a9-a62a-cb49f071c0a2.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3D10DDI_CREATEDEVICE
+title: PFND3D10DDI_CREATEDEVICE
+author: windows-driver-content
+description: The CreateDevice(D3D10) function creates a graphics context that is referenced in subsequent calls.
+old-location: display\createdevice_d3d10_.htm
+old-project: display
+ms.assetid: c69eedb1-c975-412c-aa9f-cf64a702f937
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.createdevice_d3d10_, CreateDevice callback function [Display Devices], CreateDevice, PFND3D10DDI_CREATEDEVICE, PFND3D10DDI_CREATEDEVICE, d3d10umddi/CreateDevice, UserModeDisplayDriverDx10_Functions_4d3d9d4c-e03b-46a9-a62a-cb49f071c0a2.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	CreateDevice
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

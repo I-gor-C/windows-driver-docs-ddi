@@ -1,41 +1,46 @@
 ---
-UID : NC:ndis.PROTOCOL_CM_MODIFY_QOS_CALL
-title : PROTOCOL_CM_MODIFY_QOS_CALL
-author : windows-driver-content
-description : The ProtocolCmModifyCallQoS function is required.
-old-location : netvista\protocolcmmodifycallqos.htm
-old-project : netvista
-ms.assetid : 24523677-9f5a-4109-8484-95883a4d1bbf
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.protocolcmmodifycallqos, ProtocolCmModifyCallQoS callback function [Network Drivers Starting with Windows Vista], ProtocolCmModifyCallQoS, PROTOCOL_CM_MODIFY_QOS_CALL, PROTOCOL_CM_MODIFY_QOS_CALL, ndis/ProtocolCmModifyCallQoS, condis_call_manager_ref_208d4e81-1f4f-46e9-9b78-7724504b68bc.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see    ProtocolCmModifyCallQoS (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    ProtocolCmModifyCallQoS (NDIS   5.1)) in Windows XP.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
+UID: NC:ndis.PROTOCOL_CM_MODIFY_QOS_CALL
+title: PROTOCOL_CM_MODIFY_QOS_CALL
+author: windows-driver-content
+description: The ProtocolCmModifyCallQoS function is required.
+old-location: netvista\protocolcmmodifycallqos.htm
+old-project: netvista
+ms.assetid: 24523677-9f5a-4109-8484-95883a4d1bbf
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.protocolcmmodifycallqos, ProtocolCmModifyCallQoS callback function [Network Drivers Starting with Windows Vista], ProtocolCmModifyCallQoS, PROTOCOL_CM_MODIFY_QOS_CALL, PROTOCOL_CM_MODIFY_QOS_CALL, ndis/ProtocolCmModifyCallQoS, condis_call_manager_ref_208d4e81-1f4f-46e9-9b78-7724504b68bc.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    ProtocolCmModifyCallQoS (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    ProtocolCmModifyCallQoS (NDIS   5.1)) in Windows XP.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ndis.h
+apiname:
+-	ProtocolCmModifyCallQoS
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 

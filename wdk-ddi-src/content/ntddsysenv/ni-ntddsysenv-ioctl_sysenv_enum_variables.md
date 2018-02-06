@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddsysenv.IOCTL_SYSENV_ENUM_VARIABLES
-title : IOCTL_SYSENV_ENUM_VARIABLES
-author : windows-driver-content
-description : Returns information about system environment variables using SysEnv device.
-old-location : kernel\ioctl_ioctl_sysenv_enum_variables.htm
-old-project : kernel
-ms.assetid : 605CA19C-048A-4FBA-8568-7B1867C99210
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.ioctl_ioctl_sysenv_enum_variables, IOCTL_SYSENV_ENUM_VARIABLES control code [Kernel-Mode Driver Architecture], IOCTL_SYSENV_ENUM_VARIABLES, ntddsysenv/IOCTL_SYSENV_ENUM_VARIABLES
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddsysenv.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STORAGE_ZONE_GROUP, *PSTORAGE_ZONE_GROUP
+UID: NI:ntddsysenv.IOCTL_SYSENV_ENUM_VARIABLES
+title: IOCTL_SYSENV_ENUM_VARIABLES
+author: windows-driver-content
+description: Returns information about system environment variables using SysEnv device.
+old-location: kernel\ioctl_ioctl_sysenv_enum_variables.htm
+old-project: kernel
+ms.assetid: 605CA19C-048A-4FBA-8568-7B1867C99210
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.ioctl_ioctl_sysenv_enum_variables, IOCTL_SYSENV_ENUM_VARIABLES control code [Kernel-Mode Driver Architecture], IOCTL_SYSENV_ENUM_VARIABLES, ntddsysenv/IOCTL_SYSENV_ENUM_VARIABLES
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddsysenv.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddsysenv.h
+apiname:
+-	IOCTL_SYSENV_ENUM_VARIABLES
+product: Windows
+targetos: Windows
+req.typenames: STORAGE_ZONE_GROUP, *PSTORAGE_ZONE_GROUP
 ---
 
 # IOCTL_SYSENV_ENUM_VARIABLES IOCTL

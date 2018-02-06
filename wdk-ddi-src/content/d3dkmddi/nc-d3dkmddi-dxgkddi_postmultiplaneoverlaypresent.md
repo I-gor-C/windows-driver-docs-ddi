@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dkmddi.DXGKDDI_POSTMULTIPLANEOVERLAYPRESENT
-title : DXGKDDI_POSTMULTIPLANEOVERLAYPRESENT
-author : windows-driver-content
-description : Called after a new multi-plane overlay configuration has taken effect, allowing the driver to optimize hardware state. Optional for Windows Display Driver Model (WDDM) 2.0 or later drivers that support multi-plane overlays.
-old-location : display\dxgkddi_postmultiplaneoverlaypresent.htm
-old-project : display
-ms.assetid : C420DDE8-73D4-4D43-861C-A7B31B4C7DEC
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkddi_postmultiplaneoverlaypresent, DXGKDDI_POSTMULTIPLANEOVERLAYPRESENT callback function [Display Devices], DXGKDDI_POSTMULTIPLANEOVERLAYPRESENT, d3dkmddi/DXGKDDI_POSTMULTIPLANEOVERLAYPRESENT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dkmddi.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
+UID: NC:d3dkmddi.DXGKDDI_POSTMULTIPLANEOVERLAYPRESENT
+title: DXGKDDI_POSTMULTIPLANEOVERLAYPRESENT
+author: windows-driver-content
+description: Called after a new multi-plane overlay configuration has taken effect, allowing the driver to optimize hardware state. Optional for Windows Display Driver Model (WDDM) 2.0 or later drivers that support multi-plane overlays.
+old-location: display\dxgkddi_postmultiplaneoverlaypresent.htm
+old-project: display
+ms.assetid: C420DDE8-73D4-4D43-861C-A7B31B4C7DEC
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkddi_postmultiplaneoverlaypresent, DXGKDDI_POSTMULTIPLANEOVERLAYPRESENT callback function [Display Devices], DXGKDDI_POSTMULTIPLANEOVERLAYPRESENT, d3dkmddi/DXGKDDI_POSTMULTIPLANEOVERLAYPRESENT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dkmddi.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DXGKDDI_POSTMULTIPLANEOVERLAYPRESENT
+product: Windows
+targetos: Windows
+req.typenames: DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
 

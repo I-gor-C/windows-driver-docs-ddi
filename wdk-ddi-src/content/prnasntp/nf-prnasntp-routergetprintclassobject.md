@@ -1,42 +1,47 @@
 ---
-UID : NF:prnasntp.RouterGetPrintClassObject
-title : RouterGetPrintClassObject function
-author : windows-driver-content
-description : The RouterGetPrintClassObject function enumerates the list of print providers, searching for the print provider with the specified name and interface ID.
-old-location : print\routergetprintclassobject.htm
-old-project : print
-ms.assetid : e2df591d-59bd-4aae-ac1b-8fdf01da3ea7
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : spoolfnc_ffe877d1-cb3e-49f5-a5b5-5da7c5cb9148.xml, RouterGetPrintClassObject, prnasntp/RouterGetPrintClassObject, RouterGetPrintClassObject function [Print Devices], print.routergetprintclassobject
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : prnasntp.h
-req.include-header : Prnasntp.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Spoolss.lib
-req.dll : Spoolss.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : USERDATA, *PUSERDATA
-req.product : Windows 10 or later.
+UID: NF:prnasntp.RouterGetPrintClassObject
+title: RouterGetPrintClassObject function
+author: windows-driver-content
+description: The RouterGetPrintClassObject function enumerates the list of print providers, searching for the print provider with the specified name and interface ID.
+old-location: print\routergetprintclassobject.htm
+old-project: print
+ms.assetid: e2df591d-59bd-4aae-ac1b-8fdf01da3ea7
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: spoolfnc_ffe877d1-cb3e-49f5-a5b5-5da7c5cb9148.xml, RouterGetPrintClassObject, prnasntp/RouterGetPrintClassObject, RouterGetPrintClassObject function [Print Devices], print.routergetprintclassobject
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: prnasntp.h
+req.include-header: Prnasntp.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Spoolss.lib
+req.dll: Spoolss.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Spoolss.dll
+apiname:
+-	RouterGetPrintClassObject
+product: Windows
+targetos: Windows
+req.typenames: USERDATA, *PUSERDATA
+req.product: Windows 10 or later.
 ---
 
 

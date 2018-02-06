@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisInitializeEvent
-title : NdisInitializeEvent function
-author : windows-driver-content
-description : The NdisInitializeEvent function sets up an event object during driver initialization to be used subsequently as a synchronization mechanism.
-old-location : netvista\ndisinitializeevent.htm
-old-project : netvista
-ms.assetid : 7f7eac7e-f512-4446-a83b-92d313c14420
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NdisInitializeEvent function [Network Drivers Starting with Windows Vista], ndis_event_ref_35523d4a-3084-43ea-9dc0-6e9017b9ed22.xml, ndis/NdisInitializeEvent, NdisInitializeEvent, netvista.ndisinitializeevent
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisInitializeEvent (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisInitializeEvent (NDIS   5.1)) in Windows XP.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisInitializeEvent
+title: NdisInitializeEvent function
+author: windows-driver-content
+description: The NdisInitializeEvent function sets up an event object during driver initialization to be used subsequently as a synchronization mechanism.
+old-location: netvista\ndisinitializeevent.htm
+old-project: netvista
+ms.assetid: 7f7eac7e-f512-4446-a83b-92d313c14420
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NdisInitializeEvent function [Network Drivers Starting with Windows Vista], ndis_event_ref_35523d4a-3084-43ea-9dc0-6e9017b9ed22.xml, ndis/NdisInitializeEvent, NdisInitializeEvent, netvista.ndisinitializeevent
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisInitializeEvent (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisInitializeEvent (NDIS   5.1)) in Windows XP.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisInitializeEvent
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

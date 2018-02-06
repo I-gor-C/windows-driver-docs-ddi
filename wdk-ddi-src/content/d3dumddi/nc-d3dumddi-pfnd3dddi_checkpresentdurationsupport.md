@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_CHECKPRESENTDURATIONSUPPORT
-title : PFND3DDDI_CHECKPRESENTDURATIONSUPPORT
-author : windows-driver-content
-description : Called by the Microsoft Direct3D runtime to request that the user-mode display driver get hardware device capabilities for seamlessly switching to a new monitor refresh rate.
-old-location : display\checkpresentdurationsupport.htm
-old-project : display
-ms.assetid : 4D3FC503-A502-41D3-AB76-5A2BEBE4C551
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.checkpresentdurationsupport, CheckPresentDurationSupport callback function [Display Devices], CheckPresentDurationSupport, PFND3DDDI_CHECKPRESENTDURATIONSUPPORT, PFND3DDDI_CHECKPRESENTDURATIONSUPPORT, d3dumddi/CheckPresentDurationSupport
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8.1,WDDM 1.3 and later
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_CHECKPRESENTDURATIONSUPPORT
+title: PFND3DDDI_CHECKPRESENTDURATIONSUPPORT
+author: windows-driver-content
+description: Called by the Microsoft Direct3D runtime to request that the user-mode display driver get hardware device capabilities for seamlessly switching to a new monitor refresh rate.
+old-location: display\checkpresentdurationsupport.htm
+old-project: display
+ms.assetid: 4D3FC503-A502-41D3-AB76-5A2BEBE4C551
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.checkpresentdurationsupport, CheckPresentDurationSupport callback function [Display Devices], CheckPresentDurationSupport, PFND3DDDI_CHECKPRESENTDURATIONSUPPORT, PFND3DDDI_CHECKPRESENTDURATIONSUPPORT, d3dumddi/CheckPresentDurationSupport
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8.1,WDDM 1.3 and later
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	D3dumddi.h
+apiname:
+-	CheckPresentDurationSupport
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

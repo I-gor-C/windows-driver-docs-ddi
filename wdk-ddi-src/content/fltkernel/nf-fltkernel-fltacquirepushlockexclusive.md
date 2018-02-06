@@ -1,41 +1,47 @@
 ---
-UID : NF:fltkernel.FltAcquirePushLockExclusive
-title : FltAcquirePushLockExclusive macro
-author : windows-driver-content
-description : The FltAcquirePushLockExclusive routine acquires the given push lock for exclusive access by the calling thread.
-old-location : ifsk\fltacquirepushlockexclusive.htm
-old-project : ifsk
-ms.assetid : 98c916c4-49b0-47f5-acb1-ab1586d7a897
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltAcquirePushLockExclusive routine [Installable File System Drivers], ifsk.fltacquirepushlockexclusive, FltAcquirePushLockExclusive, FltApiRef_a_to_d_0f7b3360-aea2-42a8-bcc0-299d1915e4e0.xml, fltkernel/FltAcquirePushLockExclusive
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : macro
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltAcquirePushLockExclusive
+title: FltAcquirePushLockExclusive macro
+author: windows-driver-content
+description: The FltAcquirePushLockExclusive routine acquires the given push lock for exclusive access by the calling thread.
+old-location: ifsk\fltacquirepushlockexclusive.htm
+old-project: ifsk
+ms.assetid: 98c916c4-49b0-47f5-acb1-ab1586d7a897
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltAcquirePushLockExclusive routine [Installable File System Drivers], ifsk.fltacquirepushlockexclusive, FltAcquirePushLockExclusive, FltApiRef_a_to_d_0f7b3360-aea2-42a8-bcc0-299d1915e4e0.xml, fltkernel/FltAcquirePushLockExclusive
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: macro
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	FltMgr.lib
+-	FltMgr.dll
+apiname:
+-	FltAcquirePushLockExclusive
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

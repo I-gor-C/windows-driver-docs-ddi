@@ -1,41 +1,47 @@
 ---
-UID : NF:hidpi.HidP_SetUsageValueArray
-title : HidP_SetUsageValueArray function
-author : windows-driver-content
-description : The HidP_SetUsageValueArray routine sets a HID control usage value array in a specified HID report.
-old-location : hid\hidp_setusagevaluearray.htm
-old-project : hid
-ms.assetid : 8c18c224-6d55-405d-87ec-cca99d702713
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : hid.hidp_setusagevaluearray, hidfunc_08ebfd84-e1da-4eb8-8741-ec2b16b488c9.xml, HidP_SetUsageValueArray, HidP_SetUsageValueArray routine [Human Input Devices], hidpi/HidP_SetUsageValueArray
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : hidpi.h
-req.include-header : Hidpi.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 2000 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Hidparse.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HIDP_REPORT_TYPE
+UID: NF:hidpi.HidP_SetUsageValueArray
+title: HidP_SetUsageValueArray function
+author: windows-driver-content
+description: The HidP_SetUsageValueArray routine sets a HID control usage value array in a specified HID report.
+old-location: hid\hidp_setusagevaluearray.htm
+old-project: hid
+ms.assetid: 8c18c224-6d55-405d-87ec-cca99d702713
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: hid.hidp_setusagevaluearray, hidfunc_08ebfd84-e1da-4eb8-8741-ec2b16b488c9.xml, HidP_SetUsageValueArray, HidP_SetUsageValueArray routine [Human Input Devices], hidpi/HidP_SetUsageValueArray
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: hidpi.h
+req.include-header: Hidpi.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 2000 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Hidparse.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Hidparse.lib
+-	Hidparse.dll
+apiname:
+-	HidP_SetUsageValueArray
+product: Windows
+targetos: Windows
+req.typenames: HIDP_REPORT_TYPE
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NF:ntddk.RtlFreeNonVolatileToken
-title : RtlFreeNonVolatileToken function
-author : windows-driver-content
-description : The routine RtlFreeNonVolatileToken is a cleanup function for the opaque NvToken which is given by a successful call to RtlGetNonVolatileToken.
-old-location : ifsk\rtlfreenonvolatiletoken.htm
-old-project : ifsk
-ms.assetid : 8E083814-7408-47D2-A811-2DCBDCD13097
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : RtlFreeNonVolatileToken, ifsk.rtlfreenonvolatiletoken, ntddk/RtlFreeNonVolatileToken, RtlFreeNonVolatileToken routine [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntddk.h
-req.include-header : Winnt.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10, version 1703
-req.target-min-winversvr : None supported
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.RtlFreeNonVolatileToken
+title: RtlFreeNonVolatileToken function
+author: windows-driver-content
+description: The routine RtlFreeNonVolatileToken is a cleanup function for the opaque NvToken which is given by a successful call to RtlGetNonVolatileToken.
+old-location: ifsk\rtlfreenonvolatiletoken.htm
+old-project: ifsk
+ms.assetid: 8E083814-7408-47D2-A811-2DCBDCD13097
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: RtlFreeNonVolatileToken, ifsk.rtlfreenonvolatiletoken, ntddk/RtlFreeNonVolatileToken, RtlFreeNonVolatileToken routine [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntddk.h
+req.include-header: Winnt.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10, version 1703
+req.target-min-winversvr: None supported
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddk.h
+apiname:
+-	RtlFreeNonVolatileToken
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

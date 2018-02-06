@@ -1,41 +1,46 @@
 ---
-UID : NC:ndis.PROTOCOL_CL_NOTIFY_CLOSE_AF
-title : PROTOCOL_CL_NOTIFY_CLOSE_AF
-author : windows-driver-content
-description : The ProtocolClNotifyCloseAf function notifies a CoNDIS client that the client should close the associated address family (AF).Note  You must declare the function by using the PROTOCOL_CL_NOTIFY_CLOSE_AF type.
-old-location : netvista\protocolclnotifycloseaf.htm
-old-project : netvista
-ms.assetid : 0f595daa-9822-4ca6-8f25-e6f82030d4ea
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.protocolclnotifycloseaf, ProtocolClNotifyCloseAf callback function [Network Drivers Starting with Windows Vista], ProtocolClNotifyCloseAf, PROTOCOL_CL_NOTIFY_CLOSE_AF, PROTOCOL_CL_NOTIFY_CLOSE_AF, ndis/ProtocolClNotifyCloseAf, condis_client_ref_0b778346-7d48-4d72-807d-16d8be2da913.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
+UID: NC:ndis.PROTOCOL_CL_NOTIFY_CLOSE_AF
+title: PROTOCOL_CL_NOTIFY_CLOSE_AF
+author: windows-driver-content
+description: The ProtocolClNotifyCloseAf function notifies a CoNDIS client that the client should close the associated address family (AF).Note  You must declare the function by using the PROTOCOL_CL_NOTIFY_CLOSE_AF type.
+old-location: netvista\protocolclnotifycloseaf.htm
+old-project: netvista
+ms.assetid: 0f595daa-9822-4ca6-8f25-e6f82030d4ea
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.protocolclnotifycloseaf, ProtocolClNotifyCloseAf callback function [Network Drivers Starting with Windows Vista], ProtocolClNotifyCloseAf, PROTOCOL_CL_NOTIFY_CLOSE_AF, PROTOCOL_CL_NOTIFY_CLOSE_AF, ndis/ProtocolClNotifyCloseAf, condis_client_ref_0b778346-7d48-4d72-807d-16d8be2da913.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ndis.h
+apiname:
+-	ProtocolClNotifyCloseAf
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 

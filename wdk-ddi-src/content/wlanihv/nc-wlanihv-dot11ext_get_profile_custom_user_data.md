@@ -1,42 +1,47 @@
 ---
-UID : NC:wlanihv.DOT11EXT_GET_PROFILE_CUSTOM_USER_DATA
-title : DOT11EXT_GET_PROFILE_CUSTOM_USER_DATA
-author : windows-driver-content
-description : Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
-old-location : netvista\dot11extgetprofilecustomuserdata.htm
-old-project : netvista
-ms.assetid : 1a88138f-aada-410a-a985-249de793aa51
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.dot11extgetprofilecustomuserdata, Dot11ExtGetProfileCustomUserData callback function [Network Drivers Starting with Windows Vista], Dot11ExtGetProfileCustomUserData, DOT11EXT_GET_PROFILE_CUSTOM_USER_DATA, DOT11EXT_GET_PROFILE_CUSTOM_USER_DATA, wlanihv/Dot11ExtGetProfileCustomUserData, Native_802.11_IHV_Ext_ee7fad1d-d3c2-400d-bf87-b2bdccd61f58.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wlanihv.h
-req.include-header : Wlanihv.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating   systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDRIVER_INFO_8W, DRIVER_INFO_8W, *LPDRIVER_INFO_8W"
-req.product : Windows 10 or later.
+UID: NC:wlanihv.DOT11EXT_GET_PROFILE_CUSTOM_USER_DATA
+title: DOT11EXT_GET_PROFILE_CUSTOM_USER_DATA
+author: windows-driver-content
+description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+old-location: netvista\dot11extgetprofilecustomuserdata.htm
+old-project: netvista
+ms.assetid: 1a88138f-aada-410a-a985-249de793aa51
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.dot11extgetprofilecustomuserdata, Dot11ExtGetProfileCustomUserData callback function [Network Drivers Starting with Windows Vista], Dot11ExtGetProfileCustomUserData, DOT11EXT_GET_PROFILE_CUSTOM_USER_DATA, DOT11EXT_GET_PROFILE_CUSTOM_USER_DATA, wlanihv/Dot11ExtGetProfileCustomUserData, Native_802.11_IHV_Ext_ee7fad1d-d3c2-400d-bf87-b2bdccd61f58.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wlanihv.h
+req.include-header: Wlanihv.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	wlanihv.h
+apiname:
+-	Dot11ExtGetProfileCustomUserData
+product: Windows
+targetos: Windows
+req.typenames: "*PDRIVER_INFO_8W, DRIVER_INFO_8W, *LPDRIVER_INFO_8W"
+req.product: Windows 10 or later.
 ---
 
 

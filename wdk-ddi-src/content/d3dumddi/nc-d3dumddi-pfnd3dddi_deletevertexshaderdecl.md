@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_DELETEVERTEXSHADERDECL
-title : PFND3DDDI_DELETEVERTEXSHADERDECL
-author : windows-driver-content
-description : The DeleteVertexShaderDecl function cleans up driver-side resources that are associated with the vertex shader declaration.
-old-location : display\deletevertexshaderdecl.htm
-old-project : display
-ms.assetid : 8c16cd27-83f9-4474-9031-edfea0ba665b
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.deletevertexshaderdecl, DeleteVertexShaderDecl callback function [Display Devices], DeleteVertexShaderDecl, PFND3DDDI_DELETEVERTEXSHADERDECL, PFND3DDDI_DELETEVERTEXSHADERDECL, d3dumddi/DeleteVertexShaderDecl, UserModeDisplayDriver_Functions_b62ed121-1403-4a6e-8854-6f2dfba6fac6.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_DELETEVERTEXSHADERDECL
+title: PFND3DDDI_DELETEVERTEXSHADERDECL
+author: windows-driver-content
+description: The DeleteVertexShaderDecl function cleans up driver-side resources that are associated with the vertex shader declaration.
+old-location: display\deletevertexshaderdecl.htm
+old-project: display
+ms.assetid: 8c16cd27-83f9-4474-9031-edfea0ba665b
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.deletevertexshaderdecl, DeleteVertexShaderDecl callback function [Display Devices], DeleteVertexShaderDecl, PFND3DDDI_DELETEVERTEXSHADERDECL, PFND3DDDI_DELETEVERTEXSHADERDECL, d3dumddi/DeleteVertexShaderDecl, UserModeDisplayDriver_Functions_b62ed121-1403-4a6e-8854-6f2dfba6fac6.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	DeleteVertexShaderDecl
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

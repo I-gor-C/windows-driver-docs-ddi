@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IQueueCallbackDeviceIoControl.OnDeviceIoControl
-title : IQueueCallbackDeviceIoControl::OnDeviceIoControl method
-author : windows-driver-content
-description : The OnDeviceIoControl method is called to handle a device I/O control request when an application performs a specific operation on a device through the Microsoft Win32 OnDeviceIoControl function.
-old-location : wdf\iqueuecallbackdeviceiocontrol_ondeviceiocontrol.htm
-old-project : wdf
-ms.assetid : ed0eac1a-8e41-44c3-a538-9ec48492425f
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : UMDFQueueObjectRef_2dd692cd-27fb-41fc-ab9d-2bb9db9b32bb.xml, wudfddi/IQueueCallbackDeviceIoControl::OnDeviceIoControl, IQueueCallbackDeviceIoControl, IQueueCallbackDeviceIoControl::OnDeviceIoControl, wdf.iqueuecallbackdeviceiocontrol_ondeviceiocontrol, OnDeviceIoControl method, umdf.iqueuecallbackdeviceiocontrol_ondeviceiocontrol, OnDeviceIoControl method, IQueueCallbackDeviceIoControl interface, OnDeviceIoControl, IQueueCallbackDeviceIoControl interface, OnDeviceIoControl method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IQueueCallbackDeviceIoControl.OnDeviceIoControl
+title: IQueueCallbackDeviceIoControl::OnDeviceIoControl method
+author: windows-driver-content
+description: The OnDeviceIoControl method is called to handle a device I/O control request when an application performs a specific operation on a device through the Microsoft Win32 OnDeviceIoControl function.
+old-location: wdf\iqueuecallbackdeviceiocontrol_ondeviceiocontrol.htm
+old-project: wdf
+ms.assetid: ed0eac1a-8e41-44c3-a538-9ec48492425f
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: UMDFQueueObjectRef_2dd692cd-27fb-41fc-ab9d-2bb9db9b32bb.xml, wudfddi/IQueueCallbackDeviceIoControl::OnDeviceIoControl, IQueueCallbackDeviceIoControl, IQueueCallbackDeviceIoControl::OnDeviceIoControl, wdf.iqueuecallbackdeviceiocontrol_ondeviceiocontrol, OnDeviceIoControl method, umdf.iqueuecallbackdeviceiocontrol_ondeviceiocontrol, OnDeviceIoControl method, IQueueCallbackDeviceIoControl interface, OnDeviceIoControl, IQueueCallbackDeviceIoControl interface, OnDeviceIoControl method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Wudfddi.h
+apiname:
+-	IQueueCallbackDeviceIoControl.OnDeviceIoControl
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

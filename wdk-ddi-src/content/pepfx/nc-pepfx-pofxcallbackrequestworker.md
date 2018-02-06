@@ -1,41 +1,46 @@
 ---
-UID : NC:pepfx.POFXCALLBACKREQUESTWORKER
-title : POFXCALLBACKREQUESTWORKER
-author : windows-driver-content
-description : The RequestWorker routine is called by a platform extension plug-in (PEP) to inform the Windows power management framework (PoFx) that the platform extension plug-in (PEP) has a work request to submit on behalf of the specified device.
-old-location : kernel\requestworker.htm
-old-project : kernel
-ms.assetid : A77277D2-B644-469D-A668-78C23BF41367
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.requestworker, RequestWorker, RequestWorker routine [Kernel-Mode Driver Architecture], RequestWorker, POFXCALLBACKREQUESTWORKER, POFXCALLBACKREQUESTWORKER, pepfx/RequestWorker
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : pepfx.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with Windows 10.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VPCI_PNP_ID, *PVPCI_PNP_ID
+UID: NC:pepfx.POFXCALLBACKREQUESTWORKER
+title: POFXCALLBACKREQUESTWORKER
+author: windows-driver-content
+description: The RequestWorker routine is called by a platform extension plug-in (PEP) to inform the Windows power management framework (PoFx) that the platform extension plug-in (PEP) has a work request to submit on behalf of the specified device.
+old-location: kernel\requestworker.htm
+old-project: kernel
+ms.assetid: A77277D2-B644-469D-A668-78C23BF41367
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.requestworker, RequestWorker, RequestWorker routine [Kernel-Mode Driver Architecture], RequestWorker, POFXCALLBACKREQUESTWORKER, POFXCALLBACKREQUESTWORKER, pepfx/RequestWorker
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: pepfx.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows 10.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	pepfx.h
+apiname:
+-	RequestWorker
+product: Windows
+targetos: Windows
+req.typenames: VPCI_PNP_ID, *PVPCI_PNP_ID
 ---
 
 

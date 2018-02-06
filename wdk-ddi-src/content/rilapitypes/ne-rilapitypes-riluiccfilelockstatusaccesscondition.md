@@ -1,42 +1,47 @@
 ---
-UID : NE:rilapitypes.RILUICCFILELOCKSTATUSACCESSCONDITION
-title : RILUICCFILELOCKSTATUSACCESSCONDITION
-author : windows-driver-content
-description : This enumeration describes the RILUICCFILELOCKSTATUSACCESSCONDITION.
-old-location : netvista\riluiccfilelockstatusaccesscondition.htm
-old-project : netvista
-ms.assetid : 994bfab2-6bab-4aeb-87a9-a5b825efcb23
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : rilapitypes/RIL_UICCFILEACCESSCONDITION_RFU4, rilapitypes/RIL_UICCFILEACCESSCONDITION_ADM6, RIL_UICCFILEACCESSCONDITION_PIN1, rilapitypes/RIL_UICCFILEACCESSCONDITION_NEV, RIL_UICCFILEACCESSCONDITION_PIN2, RILUICCFILELOCKSTATUSACCESSCONDITION, RIL_UICCFILEACCESSCONDITION_ADM6, rilapitypes/RILUICCFILELOCKSTATUSACCESSCONDITION, rilapitypes/RIL_UICCFILEACCESSCONDITION_PIN1, RILUICCFILELOCKSTATUSACCESSCONDITION enumeration [Network Drivers Starting with Windows Vista], RIL_UICCFILEACCESSCONDITION_ALW, rilapitypes/RIL_UICCFILEACCESSCONDITION_ALW, RIL_UICCFILEACCESSCONDITION_RFU3, RIL_UICCFILEACCESSCONDITION_ADM5, rilapitypes/RIL_UICCFILEACCESSCONDITION_ADM5, RIL_UICCFILEACCESSCONDITION_NEV, rilapitypes/RIL_UICCFILEACCESSCONDITION_RFU3, netvista.riluiccfilelockstatusaccesscondition, rilapitypes/RIL_UICCFILEACCESSCONDITION_PIN2, RIL_UICCFILEACCESSCONDITION_RFU4
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : rilapitypes.h
-req.include-header : Rilapitypes.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RILUICCFILELOCKSTATUSACCESSCONDITION
-req.product : Windows 10 or later.
+UID: NE:rilapitypes.RILUICCFILELOCKSTATUSACCESSCONDITION
+title: RILUICCFILELOCKSTATUSACCESSCONDITION
+author: windows-driver-content
+description: This enumeration describes the RILUICCFILELOCKSTATUSACCESSCONDITION.
+old-location: netvista\riluiccfilelockstatusaccesscondition.htm
+old-project: netvista
+ms.assetid: 994bfab2-6bab-4aeb-87a9-a5b825efcb23
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: rilapitypes/RIL_UICCFILEACCESSCONDITION_RFU4, rilapitypes/RIL_UICCFILEACCESSCONDITION_ADM6, RIL_UICCFILEACCESSCONDITION_PIN1, rilapitypes/RIL_UICCFILEACCESSCONDITION_NEV, RIL_UICCFILEACCESSCONDITION_PIN2, RILUICCFILELOCKSTATUSACCESSCONDITION, RIL_UICCFILEACCESSCONDITION_ADM6, rilapitypes/RILUICCFILELOCKSTATUSACCESSCONDITION, rilapitypes/RIL_UICCFILEACCESSCONDITION_PIN1, RILUICCFILELOCKSTATUSACCESSCONDITION enumeration [Network Drivers Starting with Windows Vista], RIL_UICCFILEACCESSCONDITION_ALW, rilapitypes/RIL_UICCFILEACCESSCONDITION_ALW, RIL_UICCFILEACCESSCONDITION_RFU3, RIL_UICCFILEACCESSCONDITION_ADM5, rilapitypes/RIL_UICCFILEACCESSCONDITION_ADM5, RIL_UICCFILEACCESSCONDITION_NEV, rilapitypes/RIL_UICCFILEACCESSCONDITION_RFU3, netvista.riluiccfilelockstatusaccesscondition, rilapitypes/RIL_UICCFILEACCESSCONDITION_PIN2, RIL_UICCFILEACCESSCONDITION_RFU4
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: rilapitypes.h
+req.include-header: Rilapitypes.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	rilapitypes.h
+apiname:
+-	RILUICCFILELOCKSTATUSACCESSCONDITION
+product: Windows
+targetos: Windows
+req.typenames: RILUICCFILELOCKSTATUSACCESSCONDITION
+req.product: Windows 10 or later.
 ---
 
 # RILUICCFILELOCKSTATUSACCESSCONDITION Enumeration
@@ -60,51 +65,51 @@ enum RILUICCFILELOCKSTATUSACCESSCONDITION {
 ## Constants
 
 <table>
-
-<tr>
-<td>RIL_UICCFILEACCESSCONDITION_ADM5</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_UICCFILEACCESSCONDITION_ADM6</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_UICCFILEACCESSCONDITION_ALW</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_UICCFILEACCESSCONDITION_MAX</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_UICCFILEACCESSCONDITION_NEV</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_UICCFILEACCESSCONDITION_PIN1</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_UICCFILEACCESSCONDITION_PIN2</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_UICCFILEACCESSCONDITION_RFU3</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_UICCFILEACCESSCONDITION_RFU4</td>
-<td></td>
-</tr>
+            
+                <tr>
+                    <td>RIL_UICCFILEACCESSCONDITION_ADM5</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_UICCFILEACCESSCONDITION_ADM6</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_UICCFILEACCESSCONDITION_ALW</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_UICCFILEACCESSCONDITION_MAX</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_UICCFILEACCESSCONDITION_NEV</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_UICCFILEACCESSCONDITION_PIN1</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_UICCFILEACCESSCONDITION_PIN2</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_UICCFILEACCESSCONDITION_RFU3</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_UICCFILEACCESSCONDITION_RFU4</td>
+                    <td></td>
+                </tr>
 </table>
 
 
@@ -113,9 +118,9 @@ enum RILUICCFILELOCKSTATUSACCESSCONDITION {
 | ---- |:---- |
 | **Header** | rilapitypes.h (include Rilapitypes.h) |
 
-## See Also
+    ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn946509">Cellular COM enumerations</a>
+        <a href="https://msdn.microsoft.com/library/windows/hardware/dn946509">Cellular COM enumerations</a>
 
  
 

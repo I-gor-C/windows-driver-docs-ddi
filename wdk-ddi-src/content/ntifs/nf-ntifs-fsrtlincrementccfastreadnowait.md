@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.FsRtlIncrementCcFastReadNoWait
-title : FsRtlIncrementCcFastReadNoWait function
-author : windows-driver-content
-description : The FsRtlIncrementCcFastReadNoWait routine increments the CcFastReadNoWait performance counter in a per processor control block of cache manager system counters.
-old-location : ifsk\fsrtlincrementccfastreadnowait.htm
-old-project : ifsk
-ms.assetid : 14a1b22a-5d1b-4da6-9610-396fa128ce01
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : fsrtlref_f72704ce-84b6-4201-a727-b97fd70accfd.xml, ifsk.fsrtlincrementccfastreadnowait, FsRtlIncrementCcFastReadNoWait routine [Installable File System Drivers], FsRtlIncrementCcFastReadNoWait, ntifs/FsRtlIncrementCcFastReadNoWait
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : This routine is available on Microsoft Windows XP and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.FsRtlIncrementCcFastReadNoWait
+title: FsRtlIncrementCcFastReadNoWait function
+author: windows-driver-content
+description: The FsRtlIncrementCcFastReadNoWait routine increments the CcFastReadNoWait performance counter in a per processor control block of cache manager system counters.
+old-location: ifsk\fsrtlincrementccfastreadnowait.htm
+old-project: ifsk
+ms.assetid: 14a1b22a-5d1b-4da6-9610-396fa128ce01
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: fsrtlref_f72704ce-84b6-4201-a727-b97fd70accfd.xml, ifsk.fsrtlincrementccfastreadnowait, FsRtlIncrementCcFastReadNoWait routine [Installable File System Drivers], FsRtlIncrementCcFastReadNoWait, ntifs/FsRtlIncrementCcFastReadNoWait
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: This routine is available on Microsoft Windows XP and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	FsRtlIncrementCcFastReadNoWait
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

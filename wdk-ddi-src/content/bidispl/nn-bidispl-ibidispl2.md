@@ -1,41 +1,46 @@
 ---
-UID : NN:bidispl.IBidiSpl2
-title : IBidiSpl2
-author : windows-driver-content
-description : The IBidiSpl2 interface enables an application or other objects to send one or more bidi requests using one of the Bidi Request Schemas and receive information formatted as one of the Bidi Response Schemas.
-old-location : print\ibidispl2.htm
-old-project : print
-ms.assetid : 90e8a390-7d30-4bcf-8c81-438c86529ceb
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : print.ibidispl2, IBidiSpl2 interface [Print Devices], IBidiSpl2 interface [Print Devices], described, IBidiSpl2, bidispl/IBidiSpl2, _win32_IBidiSpl2, gdi.ibidispl2
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : bidispl.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows Vista
-req.target-min-winversvr : Windows Server 2008
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : bidispl.h
-req.dll : Bidispl.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PMPEG2_TRANSPORT_STRIDE, MPEG2_TRANSPORT_STRIDE"
+UID: NN:bidispl.IBidiSpl2
+title: IBidiSpl2
+author: windows-driver-content
+description: The IBidiSpl2 interface enables an application or other objects to send one or more bidi requests using one of the Bidi Request Schemas and receive information formatted as one of the Bidi Response Schemas.
+old-location: print\ibidispl2.htm
+old-project: print
+ms.assetid: 90e8a390-7d30-4bcf-8c81-438c86529ceb
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: print.ibidispl2, IBidiSpl2 interface [Print Devices], IBidiSpl2 interface [Print Devices], described, IBidiSpl2, bidispl/IBidiSpl2, _win32_IBidiSpl2, gdi.ibidispl2
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: bidispl.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows Vista
+req.target-min-winversvr: Windows Server 2008
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: bidispl.h
+req.dll: Bidispl.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Bidispl.h
+apiname:
+-	IBidiSpl2
+product: Windows
+targetos: Windows
+req.typenames: "*PMPEG2_TRANSPORT_STRIDE, MPEG2_TRANSPORT_STRIDE"
 ---
 
 # IBidiSpl2 interface

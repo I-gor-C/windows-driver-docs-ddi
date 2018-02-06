@@ -1,42 +1,47 @@
 ---
-UID : NF:wia_lh.IWiaSegmentationFilter.DetectRegions
-title : IWiaSegmentationFilter::DetectRegions method
-author : windows-driver-content
-description : The IWiaSegmentationFilter::DetectRegions method determines the subregions of an image laid out on the flatbed platen so that each subregion can be acquired into a separate image item.
-old-location : image\iwiasegmentationfilter_detectregions.htm
-old-project : image
-ms.assetid : 53ad769e-38b5-463d-9fa0-053c2215cc81
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : IWiaSegmentationFilter::DetectRegions, iwiasegmentationfilter_d819daf8-a36c-448c-a566-bb3c864cea40.xml, IWiaSegmentationFilter, DetectRegions method [Imaging Devices], DetectRegions method [Imaging Devices], IWiaSegmentationFilter interface, wia_lh/IWiaSegmentationFilter::DetectRegions, IWiaSegmentationFilter interface [Imaging Devices], DetectRegions method, image.iwiasegmentationfilter_detectregions, DetectRegions
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wia_lh.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wia_lh.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : BMP_IMAGE_INFO, *PBMP_IMAGE_INFO
-req.product : Windows 10 or later.
+UID: NF:wia_lh.IWiaSegmentationFilter.DetectRegions
+title: IWiaSegmentationFilter::DetectRegions method
+author: windows-driver-content
+description: The IWiaSegmentationFilter::DetectRegions method determines the subregions of an image laid out on the flatbed platen so that each subregion can be acquired into a separate image item.
+old-location: image\iwiasegmentationfilter_detectregions.htm
+old-project: image
+ms.assetid: 53ad769e-38b5-463d-9fa0-053c2215cc81
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: IWiaSegmentationFilter::DetectRegions, iwiasegmentationfilter_d819daf8-a36c-448c-a566-bb3c864cea40.xml, IWiaSegmentationFilter, DetectRegions method [Imaging Devices], DetectRegions method [Imaging Devices], IWiaSegmentationFilter interface, wia_lh/IWiaSegmentationFilter::DetectRegions, IWiaSegmentationFilter interface [Imaging Devices], DetectRegions method, image.iwiasegmentationfilter_detectregions, DetectRegions
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wia_lh.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wia_lh.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	wia_lh.h
+apiname:
+-	IWiaSegmentationFilter.DetectRegions
+product: Windows
+targetos: Windows
+req.typenames: BMP_IMAGE_INFO, *PBMP_IMAGE_INFO
+req.product: Windows 10 or later.
 ---
 
 

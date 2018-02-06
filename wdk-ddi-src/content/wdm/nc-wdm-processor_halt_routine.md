@@ -1,42 +1,47 @@
 ---
-UID : NC:wdm.PROCESSOR_HALT_ROUTINE
-title : PROCESSOR_HALT_ROUTINE
-author : windows-driver-content
-description : A Halt callback routine transitions the processor to an idle state.
-old-location : kernel\halt.htm
-old-project : kernel
-ms.assetid : 425239C1-4FBE-4703-B7DB-9DCC17562A6C
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.halt, Halt routine [Kernel-Mode Driver Architecture], Halt, PROCESSOR_HALT_ROUTINE, PROCESSOR_HALT_ROUTINE, wdm/Halt
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdm.h
-req.include-header : Pepfx.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with Windows 10.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : See Remarks.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
-req.product : Windows 10 or later.
+UID: NC:wdm.PROCESSOR_HALT_ROUTINE
+title: PROCESSOR_HALT_ROUTINE
+author: windows-driver-content
+description: A Halt callback routine transitions the processor to an idle state.
+old-location: kernel\halt.htm
+old-project: kernel
+ms.assetid: 425239C1-4FBE-4703-B7DB-9DCC17562A6C
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.halt, Halt routine [Kernel-Mode Driver Architecture], Halt, PROCESSOR_HALT_ROUTINE, PROCESSOR_HALT_ROUTINE, wdm/Halt
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdm.h
+req.include-header: Pepfx.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows 10.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: See Remarks.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	wdm.h
+apiname:
+-	Halt
+product: Windows
+targetos: Windows
+req.typenames: WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+req.product: Windows 10 or later.
 ---
 
 

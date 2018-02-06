@@ -1,41 +1,46 @@
 ---
-UID : NF:ntddk.IoSetHardErrorOrVerifyDevice
-title : IoSetHardErrorOrVerifyDevice function
-author : windows-driver-content
-description : Lower-level drivers call the IoSetHardErrorOrVerifyDevice routine to identify a removable media device that has encountered an error, so that a file system driver can prompt the user to verify that the medium is valid.
-old-location : kernel\iosetharderrororverifydevice.htm
-old-project : kernel
-ms.assetid : 67f41d3e-d306-400b-9970-88c62f0f7a7f
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : IoSetHardErrorOrVerifyDevice routine [Kernel-Mode Driver Architecture], ntddk/IoSetHardErrorOrVerifyDevice, IoSetHardErrorOrVerifyDevice, k104_60c33e0c-64d3-404b-85a3-57e7da269404.xml, kernel.iosetharderrororverifydevice
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.IoSetHardErrorOrVerifyDevice
+title: IoSetHardErrorOrVerifyDevice function
+author: windows-driver-content
+description: Lower-level drivers call the IoSetHardErrorOrVerifyDevice routine to identify a removable media device that has encountered an error, so that a file system driver can prompt the user to verify that the medium is valid.
+old-location: kernel\iosetharderrororverifydevice.htm
+old-project: kernel
+ms.assetid: 67f41d3e-d306-400b-9970-88c62f0f7a7f
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: IoSetHardErrorOrVerifyDevice routine [Kernel-Mode Driver Architecture], ntddk/IoSetHardErrorOrVerifyDevice, IoSetHardErrorOrVerifyDevice, k104_60c33e0c-64d3-404b-85a3-57e7da269404.xml, kernel.iosetharderrororverifydevice
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoSetHardErrorOrVerifyDevice
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

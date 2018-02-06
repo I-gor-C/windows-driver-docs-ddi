@@ -1,42 +1,48 @@
 ---
-UID : NF:wdffdo.WdfFdoInitSetDefaultChildListConfig
-title : WdfFdoInitSetDefaultChildListConfig function
-author : windows-driver-content
-description : The WdfFdoInitSetDefaultChildListConfig method configures a bus driver's default child list.
-old-location : wdf\wdffdoinitsetdefaultchildlistconfig.htm
-old-project : wdf
-ms.assetid : 656a0c58-dd12-4417-a781-464d1670592c
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WdfFdoInitSetDefaultChildListConfig method, DFDeviceObjectFdoPdoRef_676a2185-db9b-498e-84e3-52b8ac32584c.xml, wdf.wdffdoinitsetdefaultchildlistconfig, WdfFdoInitSetDefaultChildListConfig, PFN_WDFFDOINITSETDEFAULTCHILDLISTCONFIG, kmdf.wdffdoinitsetdefaultchildlistconfig, wdffdo/WdfFdoInitSetDefaultChildListConfig
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdffdo.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : ChildListConfiguration, DeviceInitAPI, DriverCreate, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_DRIVER_VERSION_AVAILABLE_PARAMS, *PWDF_DRIVER_VERSION_AVAILABLE_PARAMS
-req.product : Windows 10 or later.
+UID: NF:wdffdo.WdfFdoInitSetDefaultChildListConfig
+title: WdfFdoInitSetDefaultChildListConfig function
+author: windows-driver-content
+description: The WdfFdoInitSetDefaultChildListConfig method configures a bus driver's default child list.
+old-location: wdf\wdffdoinitsetdefaultchildlistconfig.htm
+old-project: wdf
+ms.assetid: 656a0c58-dd12-4417-a781-464d1670592c
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WdfFdoInitSetDefaultChildListConfig method, DFDeviceObjectFdoPdoRef_676a2185-db9b-498e-84e3-52b8ac32584c.xml, wdf.wdffdoinitsetdefaultchildlistconfig, WdfFdoInitSetDefaultChildListConfig, PFN_WDFFDOINITSETDEFAULTCHILDLISTCONFIG, kmdf.wdffdoinitsetdefaultchildlistconfig, wdffdo/WdfFdoInitSetDefaultChildListConfig
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdffdo.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: ChildListConfiguration, DeviceInitAPI, DriverCreate, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfFdoInitSetDefaultChildListConfig
+product: Windows
+targetos: Windows
+req.typenames: WDF_DRIVER_VERSION_AVAILABLE_PARAMS, *PWDF_DRIVER_VERSION_AVAILABLE_PARAMS
+req.product: Windows 10 or later.
 ---
 
 

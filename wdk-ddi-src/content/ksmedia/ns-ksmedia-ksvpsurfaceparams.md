@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.KSVPSURFACEPARAMS
-title : KSVPSURFACEPARAMS
-author : windows-driver-content
-description : The KSVPSURFACEPARAMS structure is used to describe the surface parameters of a video port surface.
-old-location : stream\ksvpsurfaceparams.htm
-old-project : stream
-ms.assetid : 8a1ce43d-ba2c-489c-b37f-d98b9cf1d6b0
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.ksvpsurfaceparams, PKSVPSURFACEPARAMS structure pointer [Streaming Media Devices], dvdref_676b0467-3a23-4aac-8f72-7fd53ef399dd.xml, PKSVPSURFACEPARAMS, KSVPSURFACEPARAMS, *PKSVPSURFACEPARAMS, ksmedia/KSVPSURFACEPARAMS, ksmedia/PKSVPSURFACEPARAMS, KSVPSURFACEPARAMS structure [Streaming Media Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KSVPSURFACEPARAMS, *PKSVPSURFACEPARAMS
+UID: NS:ksmedia.KSVPSURFACEPARAMS
+title: KSVPSURFACEPARAMS
+author: windows-driver-content
+description: The KSVPSURFACEPARAMS structure is used to describe the surface parameters of a video port surface.
+old-location: stream\ksvpsurfaceparams.htm
+old-project: stream
+ms.assetid: 8a1ce43d-ba2c-489c-b37f-d98b9cf1d6b0
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.ksvpsurfaceparams, PKSVPSURFACEPARAMS structure pointer [Streaming Media Devices], dvdref_676b0467-3a23-4aac-8f72-7fd53ef399dd.xml, PKSVPSURFACEPARAMS, KSVPSURFACEPARAMS, *PKSVPSURFACEPARAMS, ksmedia/KSVPSURFACEPARAMS, ksmedia/PKSVPSURFACEPARAMS, KSVPSURFACEPARAMS structure [Streaming Media Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	KSVPSURFACEPARAMS
+product: Windows
+targetos: Windows
+req.typenames: KSVPSURFACEPARAMS, *PKSVPSURFACEPARAMS
 ---
 
 # KSVPSURFACEPARAMS structure

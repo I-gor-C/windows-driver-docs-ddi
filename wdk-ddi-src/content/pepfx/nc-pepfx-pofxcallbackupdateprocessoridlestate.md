@@ -1,41 +1,46 @@
 ---
-UID : NC:pepfx.POFXCALLBACKUPDATEPROCESSORIDLESTATE
-title : POFXCALLBACKUPDATEPROCESSORIDLESTATE
-author : windows-driver-content
-description : The UpdateProcessorIdleState routine is called by the platform extension plug-in (PEP) to update the properties of the specified processor idle state.
-old-location : kernel\updateprocessoridlestate.htm
-old-project : kernel
-ms.assetid : 023A2637-A79A-4ADE-B54C-646CBDDF08B8
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.updateprocessoridlestate, UpdateProcessorIdleState, UpdateProcessorIdleState routine [Kernel-Mode Driver Architecture], UpdateProcessorIdleState, POFXCALLBACKUPDATEPROCESSORIDLESTATE, POFXCALLBACKUPDATEPROCESSORIDLESTATE, pepfx/UpdateProcessorIdleState
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : pepfx.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with Windows 10.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VPCI_PNP_ID, *PVPCI_PNP_ID
+UID: NC:pepfx.POFXCALLBACKUPDATEPROCESSORIDLESTATE
+title: POFXCALLBACKUPDATEPROCESSORIDLESTATE
+author: windows-driver-content
+description: The UpdateProcessorIdleState routine is called by the platform extension plug-in (PEP) to update the properties of the specified processor idle state.
+old-location: kernel\updateprocessoridlestate.htm
+old-project: kernel
+ms.assetid: 023A2637-A79A-4ADE-B54C-646CBDDF08B8
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.updateprocessoridlestate, UpdateProcessorIdleState, UpdateProcessorIdleState routine [Kernel-Mode Driver Architecture], UpdateProcessorIdleState, POFXCALLBACKUPDATEPROCESSORIDLESTATE, POFXCALLBACKUPDATEPROCESSORIDLESTATE, pepfx/UpdateProcessorIdleState
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: pepfx.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows 10.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	pepfx.h
+apiname:
+-	UpdateProcessorIdleState
+product: Windows
+targetos: Windows
+req.typenames: VPCI_PNP_ID, *PVPCI_PNP_ID
 ---
 
 

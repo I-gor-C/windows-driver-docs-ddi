@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltCloseCommunicationPort
-title : FltCloseCommunicationPort function
-author : windows-driver-content
-description : FltCloseCommunicationPort closes a minifilter driver's communication server port.
-old-location : ifsk\fltclosecommunicationport.htm
-old-project : ifsk
-ms.assetid : e3ab0d74-2c97-43da-8bee-82caa3d91c98
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.fltclosecommunicationport, fltkernel/FltCloseCommunicationPort, FltApiRef_a_to_d_d55f3e54-9c1c-4fd0-92e6-1e950c2a4637.xml, FltCloseCommunicationPort function [Installable File System Drivers], FltCloseCommunicationPort
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Fltmgr.lib
-req.dll : Fltmgr.sys
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltCloseCommunicationPort
+title: FltCloseCommunicationPort function
+author: windows-driver-content
+description: FltCloseCommunicationPort closes a minifilter driver's communication server port.
+old-location: ifsk\fltclosecommunicationport.htm
+old-project: ifsk
+ms.assetid: e3ab0d74-2c97-43da-8bee-82caa3d91c98
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.fltclosecommunicationport, fltkernel/FltCloseCommunicationPort, FltApiRef_a_to_d_d55f3e54-9c1c-4fd0-92e6-1e950c2a4637.xml, FltCloseCommunicationPort function [Installable File System Drivers], FltCloseCommunicationPort
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Fltmgr.lib
+req.dll: Fltmgr.sys
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltCloseCommunicationPort
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

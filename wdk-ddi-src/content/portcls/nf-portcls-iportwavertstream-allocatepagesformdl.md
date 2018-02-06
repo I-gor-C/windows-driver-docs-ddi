@@ -1,41 +1,46 @@
 ---
-UID : NF:portcls.IPortWaveRTStream.AllocatePagesForMdl
-title : IPortWaveRTStream::AllocatePagesForMdl method
-author : windows-driver-content
-description : The AllocatePagesForMdl method allocates a list of nonpaged physical memory pages and returns a pointer to a memory descriptor list (MDL) that describes them.
-old-location : audio\iportwavertstream_allocatepagesformdl.htm
-old-project : audio
-ms.assetid : 44839b9e-f206-49e6-a9f6-14e79d1e0ae2
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : IPortWaveRTStream, IPortWaveRTStream::AllocatePagesForMdl, IPortWaveRTStream interface [Audio Devices], AllocatePagesForMdl method, audio.iportwavertstream_allocatepagesformdl, audmp-routines_2722e5c2-7fd2-4b72-acbf-474313bca229.xml, AllocatePagesForMdl method [Audio Devices], IPortWaveRTStream interface, AllocatePagesForMdl method [Audio Devices], AllocatePagesForMdl, portcls/IPortWaveRTStream::AllocatePagesForMdl
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : portcls.h
-req.include-header : 
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : portcls.h
-req.dll : 
-req.irql : Passive level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.IPortWaveRTStream.AllocatePagesForMdl
+title: IPortWaveRTStream::AllocatePagesForMdl method
+author: windows-driver-content
+description: The AllocatePagesForMdl method allocates a list of nonpaged physical memory pages and returns a pointer to a memory descriptor list (MDL) that describes them.
+old-location: audio\iportwavertstream_allocatepagesformdl.htm
+old-project: audio
+ms.assetid: 44839b9e-f206-49e6-a9f6-14e79d1e0ae2
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: IPortWaveRTStream, IPortWaveRTStream::AllocatePagesForMdl, IPortWaveRTStream interface [Audio Devices], AllocatePagesForMdl method, audio.iportwavertstream_allocatepagesformdl, audmp-routines_2722e5c2-7fd2-4b72-acbf-474313bca229.xml, AllocatePagesForMdl method [Audio Devices], IPortWaveRTStream interface, AllocatePagesForMdl method [Audio Devices], AllocatePagesForMdl, portcls/IPortWaveRTStream::AllocatePagesForMdl
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: portcls.h
+req.include-header: 
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: portcls.h
+req.dll: 
+req.irql: Passive level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Portcls.h
+apiname:
+-	IPortWaveRTStream.AllocatePagesForMdl
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

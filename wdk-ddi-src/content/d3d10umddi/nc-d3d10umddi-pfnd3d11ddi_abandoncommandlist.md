@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3D11DDI_ABANDONCOMMANDLIST
-title : PFND3D11DDI_ABANDONCOMMANDLIST
-author : windows-driver-content
-description : The AbandonCommandList function abandons the command list.
-old-location : display\abandoncommandlist.htm
-old-project : display
-ms.assetid : fc8347da-25ac-47ea-b482-61b7873ca5bc
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.abandoncommandlist, AbandonCommandList callback function [Display Devices], AbandonCommandList, PFND3D11DDI_ABANDONCOMMANDLIST, PFND3D11DDI_ABANDONCOMMANDLIST, d3d10umddi/AbandonCommandList, UserModeDisplayDriverDx11_Functions_1f9b5b27-499e-41a0-adf3-7b1c2f0021c7.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : AbandonCommandList is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3D11DDI_ABANDONCOMMANDLIST
+title: PFND3D11DDI_ABANDONCOMMANDLIST
+author: windows-driver-content
+description: The AbandonCommandList function abandons the command list.
+old-location: display\abandoncommandlist.htm
+old-project: display
+ms.assetid: fc8347da-25ac-47ea-b482-61b7873ca5bc
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.abandoncommandlist, AbandonCommandList callback function [Display Devices], AbandonCommandList, PFND3D11DDI_ABANDONCOMMANDLIST, PFND3D11DDI_ABANDONCOMMANDLIST, d3d10umddi/AbandonCommandList, UserModeDisplayDriverDx11_Functions_1f9b5b27-499e-41a0-adf3-7b1c2f0021c7.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: AbandonCommandList is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	AbandonCommandList
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

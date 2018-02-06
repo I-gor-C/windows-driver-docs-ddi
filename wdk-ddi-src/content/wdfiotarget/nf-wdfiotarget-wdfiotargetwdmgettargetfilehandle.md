@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfiotarget.WdfIoTargetWdmGetTargetFileHandle
-title : WdfIoTargetWdmGetTargetFileHandle function
-author : windows-driver-content
-description : The WdfIoTargetWdmGetTargetFileHandle method returns a handle to the file that is associated with a specified remote I/O target.
-old-location : wdf\wdfiotargetwdmgettargetfilehandle.htm
-old-project : wdf
-ms.assetid : 3312e6ca-bf2c-4a53-bd86-d36d708ed596
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdfiotarget/WdfIoTargetWdmGetTargetFileHandle, DFIOTargetRef_a3147001-4aa4-4fc2-8000-c6b1fcc4e972.xml, WdfIoTargetWdmGetTargetFileHandle method, PFN_WDFIOTARGETWDMGETTARGETFILEHANDLE, kmdf.wdfiotargetwdmgettargetfilehandle, WdfIoTargetWdmGetTargetFileHandle, wdf.wdfiotargetwdmgettargetfilehandle
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfiotarget.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.15
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDF_IO_TARGET_STATE, WDF_IO_TARGET_STATE"
-req.product : Windows 10 or later.
+UID: NF:wdfiotarget.WdfIoTargetWdmGetTargetFileHandle
+title: WdfIoTargetWdmGetTargetFileHandle function
+author: windows-driver-content
+description: The WdfIoTargetWdmGetTargetFileHandle method returns a handle to the file that is associated with a specified remote I/O target.
+old-location: wdf\wdfiotargetwdmgettargetfilehandle.htm
+old-project: wdf
+ms.assetid: 3312e6ca-bf2c-4a53-bd86-d36d708ed596
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdfiotarget/WdfIoTargetWdmGetTargetFileHandle, DFIOTargetRef_a3147001-4aa4-4fc2-8000-c6b1fcc4e972.xml, WdfIoTargetWdmGetTargetFileHandle method, PFN_WDFIOTARGETWDMGETTARGETFILEHANDLE, kmdf.wdfiotargetwdmgettargetfilehandle, WdfIoTargetWdmGetTargetFileHandle, wdf.wdfiotargetwdmgettargetfilehandle
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfiotarget.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.15
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfIoTargetWdmGetTargetFileHandle
+product: Windows
+targetos: Windows
+req.typenames: "*PWDF_IO_TARGET_STATE, WDF_IO_TARGET_STATE"
+req.product: Windows 10 or later.
 ---
 
 

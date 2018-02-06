@@ -1,42 +1,47 @@
 ---
-UID : NS:winsplp._PRINTPROVIDOR
-title : "_PRINTPROVIDOR"
-author : windows-driver-content
-description : Warning  Starting with Windows 10, the APIs which support third-party print providers are deprecated.
-old-location : print\printprovidor.htm
-old-project : print
-ms.assetid : c030cb9d-23c0-4d0e-970f-f447e9af7528
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : winsplp/LPPRINTPROVIDOR, PRINTPROVIDOR, LPPRINTPROVIDOR, spoolfnc_4fb8242e-e0a0-47e5-b01f-2a20932d4d84.xml, LPPRINTPROVIDOR structure pointer [Print Devices], winsplp/PRINTPROVIDOR, *LPPRINTPROVIDOR, _PRINTPROVIDOR, PRINTPROVIDOR structure [Print Devices], print.printprovidor
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : winsplp.h
-req.include-header : Winsplp.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PRINTPROVIDOR, *LPPRINTPROVIDOR
-req.product : Windows 10 or later.
+UID: NS:winsplp._PRINTPROVIDOR
+title: "_PRINTPROVIDOR"
+author: windows-driver-content
+description: Warning  Starting with Windows 10, the APIs which support third-party print providers are deprecated.
+old-location: print\printprovidor.htm
+old-project: print
+ms.assetid: c030cb9d-23c0-4d0e-970f-f447e9af7528
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: winsplp/LPPRINTPROVIDOR, PRINTPROVIDOR, LPPRINTPROVIDOR, spoolfnc_4fb8242e-e0a0-47e5-b01f-2a20932d4d84.xml, LPPRINTPROVIDOR structure pointer [Print Devices], winsplp/PRINTPROVIDOR, *LPPRINTPROVIDOR, _PRINTPROVIDOR, PRINTPROVIDOR structure [Print Devices], print.printprovidor
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: winsplp.h
+req.include-header: Winsplp.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	winsplp.h
+apiname:
+-	PRINTPROVIDOR
+product: Windows
+targetos: Windows
+req.typenames: PRINTPROVIDOR, *LPPRINTPROVIDOR
+req.product: Windows 10 or later.
 ---
 
 # _PRINTPROVIDOR structure

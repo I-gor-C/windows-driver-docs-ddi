@@ -1,42 +1,47 @@
 ---
-UID : NF:storport.StorPortInitializeSListHead
-title : StorPortInitializeSListHead function
-author : windows-driver-content
-description : Initializes the head of a Storport managed singly linked list.
-old-location : storage\storportinitializeslisthead.htm
-old-project : storage
-ms.assetid : E8EF5995-67AE-4F34-B885-CBADDF3D151F
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : StorPortInitializeSListHead routine [Storage Devices], storport/StorPortInitializeSListHead, StorPortInitializeSListHead, storage.storportinitializeslisthead
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STOR_SPINLOCK
-req.product : Windows 10 or later.
+UID: NF:storport.StorPortInitializeSListHead
+title: StorPortInitializeSListHead function
+author: windows-driver-content
+description: Initializes the head of a Storport managed singly linked list.
+old-location: storage\storportinitializeslisthead.htm
+old-project: storage
+ms.assetid: E8EF5995-67AE-4F34-B885-CBADDF3D151F
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: StorPortInitializeSListHead routine [Storage Devices], storport/StorPortInitializeSListHead, StorPortInitializeSListHead, storage.storportinitializeslisthead
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	storport.h
+apiname:
+-	StorPortInitializeSListHead
+product: Windows
+targetos: Windows
+req.typenames: STOR_SPINLOCK
+req.product: Windows 10 or later.
 ---
 
 

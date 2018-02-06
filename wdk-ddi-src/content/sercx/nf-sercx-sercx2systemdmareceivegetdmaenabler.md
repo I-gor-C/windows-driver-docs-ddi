@@ -1,42 +1,47 @@
 ---
-UID : NF:sercx.SerCx2SystemDmaReceiveGetDmaEnabler
-title : SerCx2SystemDmaReceiveGetDmaEnabler function
-author : windows-driver-content
-description : The SerCx2SystemDmaReceiveGetDmaEnabler method gets the DMA enabler for the system DMA controller that is used for system-DMA-receive transactions.
-old-location : serports\sercx2systemdmareceivegetdmaenabler.htm
-old-project : serports
-ms.assetid : 0C1CEDD8-EA78-4188-AD05-99608B400C84
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : serports.sercx2systemdmareceivegetdmaenabler, 2/SerCx2SystemDmaReceiveGetDmaEnabler, SerCx2SystemDmaReceiveGetDmaEnabler method [Serial Ports], SerCx2SystemDmaReceiveGetDmaEnabler
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : sercx.h
-req.include-header : 
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 8.1.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSERCX_STATUS, SERCX_STATUS"
-req.product : Windows 10 or later.
+UID: NF:sercx.SerCx2SystemDmaReceiveGetDmaEnabler
+title: SerCx2SystemDmaReceiveGetDmaEnabler function
+author: windows-driver-content
+description: The SerCx2SystemDmaReceiveGetDmaEnabler method gets the DMA enabler for the system DMA controller that is used for system-DMA-receive transactions.
+old-location: serports\sercx2systemdmareceivegetdmaenabler.htm
+old-project: serports
+ms.assetid: 0C1CEDD8-EA78-4188-AD05-99608B400C84
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: serports.sercx2systemdmareceivegetdmaenabler, 2/SerCx2SystemDmaReceiveGetDmaEnabler, SerCx2SystemDmaReceiveGetDmaEnabler method [Serial Ports], SerCx2SystemDmaReceiveGetDmaEnabler
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: sercx.h
+req.include-header: 
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 8.1.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	2.0\Sercx.h
+apiname:
+-	SerCx2SystemDmaReceiveGetDmaEnabler
+product: Windows
+targetos: Windows
+req.typenames: "*PSERCX_STATUS, SERCX_STATUS"
+req.product: Windows 10 or later.
 ---
 
 

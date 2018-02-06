@@ -1,42 +1,47 @@
 ---
-UID : NE:wudfddi_types._WDF_IO_QUEUE_DISPATCH_TYPE
-title : "_WDF_IO_QUEUE_DISPATCH_TYPE"
-author : windows-driver-content
-description : The WDF_IO_QUEUE_DISPATCH_TYPE enumeration contains values that identify how a driver must receive requests from an I/O queue.
-old-location : wdf\wdf_io_queue_dispatch_type_umdf.htm
-old-project : wdf
-ms.assetid : 40f4cd91-ba84-426c-b248-6027d1e8d1a4
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WdfIoQueueDispatchSequential, wudfddi_types/WDF_IO_QUEUE_DISPATCH_TYPE, wdf.wdf_io_queue_dispatch_type_umdf, wudfddi_types/WdfIoQueueDispatchMaximum, umdfstructs_7f7744f6-7f47-4e8e-a74d-fb0217a59f34.xml, _WDF_IO_QUEUE_DISPATCH_TYPE, wudfddi_types/WdfIoQueueDispatchParallel, WdfIoQueueDispatchMaximum, wudfddi_types/WdfIoQueueDispatchSequential, WdfIoQueueDispatchManual, WdfIoQueueDispatchParallel, WDF_IO_QUEUE_DISPATCH_TYPE enumeration, umdf.wdf_io_queue_dispatch_type, wudfddi_types/WdfIoQueueDispatchManual, WDF_IO_QUEUE_DISPATCH_TYPE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : wudfddi_types.h
-req.include-header : Wudfddi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_IO_QUEUE_DISPATCH_TYPE
-req.product : Windows 10 or later.
+UID: NE:wudfddi_types._WDF_IO_QUEUE_DISPATCH_TYPE
+title: "_WDF_IO_QUEUE_DISPATCH_TYPE"
+author: windows-driver-content
+description: The WDF_IO_QUEUE_DISPATCH_TYPE enumeration contains values that identify how a driver must receive requests from an I/O queue.
+old-location: wdf\wdf_io_queue_dispatch_type_umdf.htm
+old-project: wdf
+ms.assetid: 40f4cd91-ba84-426c-b248-6027d1e8d1a4
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WdfIoQueueDispatchSequential, wudfddi_types/WDF_IO_QUEUE_DISPATCH_TYPE, wdf.wdf_io_queue_dispatch_type_umdf, wudfddi_types/WdfIoQueueDispatchMaximum, umdfstructs_7f7744f6-7f47-4e8e-a74d-fb0217a59f34.xml, _WDF_IO_QUEUE_DISPATCH_TYPE, wudfddi_types/WdfIoQueueDispatchParallel, WdfIoQueueDispatchMaximum, wudfddi_types/WdfIoQueueDispatchSequential, WdfIoQueueDispatchManual, WdfIoQueueDispatchParallel, WDF_IO_QUEUE_DISPATCH_TYPE enumeration, umdf.wdf_io_queue_dispatch_type, wudfddi_types/WdfIoQueueDispatchManual, WDF_IO_QUEUE_DISPATCH_TYPE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: wudfddi_types.h
+req.include-header: Wudfddi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wudfddi_types.h
+apiname:
+-	WDF_IO_QUEUE_DISPATCH_TYPE
+product: Windows
+targetos: Windows
+req.typenames: WDF_IO_QUEUE_DISPATCH_TYPE
+req.product: Windows 10 or later.
 ---
 
 # _WDF_IO_QUEUE_DISPATCH_TYPE Enumeration
@@ -58,26 +63,26 @@ typedef enum _WDF_IO_QUEUE_DISPATCH_TYPE {
 ## Constants
 
 <table>
-
-<tr>
-<td>WdfIoQueueDispatchManual</td>
-<td>The framework places requests into the queue but does not deliver them to the driver. The driver must call the <a href="https://msdn.microsoft.com/library/windows/hardware/ff558967">IWDFIoQueue::RetrieveNextRequest</a> method to retrieve a request from the queue.</td>
-</tr>
-
-<tr>
-<td>WdfIoQueueDispatchMaximum</td>
-<td>Valid enumeration values were exceeded.</td>
-</tr>
-
-<tr>
-<td>WdfIoQueueDispatchParallel</td>
-<td>The framework presents requests to the driver's I/O queue callback functions as soon as the requests are available.</td>
-</tr>
-
-<tr>
-<td>WdfIoQueueDispatchSequential</td>
-<td>The I/O queue's requests are presented to the driver's I/O queue callback functions one at a time. The framework delivers the next request after the driver calls the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559070">IWDFIoRequest::Complete</a> method to complete the current request.</td>
-</tr>
+            
+                <tr>
+                    <td>WdfIoQueueDispatchManual</td>
+                    <td>The framework places requests into the queue but does not deliver them to the driver. The driver must call the <a href="https://msdn.microsoft.com/library/windows/hardware/ff558967">IWDFIoQueue::RetrieveNextRequest</a> method to retrieve a request from the queue.</td>
+                </tr>
+            
+                <tr>
+                    <td>WdfIoQueueDispatchMaximum</td>
+                    <td>Valid enumeration values were exceeded.</td>
+                </tr>
+            
+                <tr>
+                    <td>WdfIoQueueDispatchParallel</td>
+                    <td>The framework presents requests to the driver's I/O queue callback functions as soon as the requests are available.</td>
+                </tr>
+            
+                <tr>
+                    <td>WdfIoQueueDispatchSequential</td>
+                    <td>The I/O queue's requests are presented to the driver's I/O queue callback functions one at a time. The framework delivers the next request after the driver calls the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559070">IWDFIoRequest::Complete</a> method to complete the current request.</td>
+                </tr>
 </table>
 
 
@@ -86,9 +91,9 @@ typedef enum _WDF_IO_QUEUE_DISPATCH_TYPE {
 | ---- |:---- |
 | **Header** | wudfddi_types.h (include Wudfddi.h) |
 
-## See Also
+    ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559070">IWDFIoRequest::Complete</a>
+        <a href="https://msdn.microsoft.com/library/windows/hardware/ff559070">IWDFIoRequest::Complete</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff558967">IWDFIoQueue::RetrieveNextRequest</a>
 

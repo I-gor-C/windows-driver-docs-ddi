@@ -1,42 +1,47 @@
 ---
-UID : NS:usb._USBD_PIPE_INFORMATION
-title : "_USBD_PIPE_INFORMATION"
-author : windows-driver-content
-description : The USBD_PIPE_INFORMATION structure is used by USB client drivers to hold information about a pipe from a specific interface.
-old-location : buses\usbd_pipe_information.htm
-old-project : usbref
-ms.assetid : 92e4e960-fd74-42e1-8448-a07676507427
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : usb/USBD_PIPE_INFORMATION, *PUSBD_PIPE_INFORMATION, PUSBD_PIPE_INFORMATION, usb/PUSBD_PIPE_INFORMATION, buses.usbd_pipe_information, PUSBD_PIPE_INFORMATION structure pointer [Buses], usbstrct_79d986fc-2853-4179-8a41-cc438582b317.xml, USBD_PIPE_INFORMATION, USBD_PIPE_INFORMATION structure [Buses], _USBD_PIPE_INFORMATION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : usb.h
-req.include-header : Usb.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : USBD_PIPE_INFORMATION, *PUSBD_PIPE_INFORMATION
-req.product : Windows 10 or later.
+UID: NS:usb._USBD_PIPE_INFORMATION
+title: "_USBD_PIPE_INFORMATION"
+author: windows-driver-content
+description: The USBD_PIPE_INFORMATION structure is used by USB client drivers to hold information about a pipe from a specific interface.
+old-location: buses\usbd_pipe_information.htm
+old-project: usbref
+ms.assetid: 92e4e960-fd74-42e1-8448-a07676507427
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: usb/USBD_PIPE_INFORMATION, *PUSBD_PIPE_INFORMATION, PUSBD_PIPE_INFORMATION, usb/PUSBD_PIPE_INFORMATION, buses.usbd_pipe_information, PUSBD_PIPE_INFORMATION structure pointer [Buses], usbstrct_79d986fc-2853-4179-8a41-cc438582b317.xml, USBD_PIPE_INFORMATION, USBD_PIPE_INFORMATION structure [Buses], _USBD_PIPE_INFORMATION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: usb.h
+req.include-header: Usb.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	usb.h
+apiname:
+-	USBD_PIPE_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: USBD_PIPE_INFORMATION, *PUSBD_PIPE_INFORMATION
+req.product: Windows 10 or later.
 ---
 
 # _USBD_PIPE_INFORMATION structure

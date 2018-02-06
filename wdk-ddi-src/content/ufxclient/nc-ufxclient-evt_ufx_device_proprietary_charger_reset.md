@@ -1,42 +1,47 @@
 ---
-UID : NC:ufxclient.EVT_UFX_DEVICE_PROPRIETARY_CHARGER_RESET
-title : EVT_UFX_DEVICE_PROPRIETARY_CHARGER_RESET
-author : windows-driver-content
-description : The client driver's implementation to resets proprietary charger.
-old-location : buses\evt_ufx_device_proprietary_charger_reset.htm
-old-project : usbref
-ms.assetid : 103E60D4-4640-430D-A4AE-E03D8B6E7031
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : buses.evt_ufx_device_proprietary_charger_reset, EvtUfxDeviceProprietaryChargerReset callback function [Buses], EvtUfxDeviceProprietaryChargerReset, EVT_UFX_DEVICE_PROPRIETARY_CHARGER_RESET, EVT_UFX_DEVICE_PROPRIETARY_CHARGER_RESET, ufxclient/EvtUfxDeviceProprietaryChargerReset, PFN_UFX_DEVICE_PROPRIETARY_CHARGER_RESET callback function pointer [Buses], PFN_UFX_DEVICE_PROPRIETARY_CHARGER_RESET
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ufxclient.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUFX_HARDWARE_FAILURE_CONTEXT, UFX_HARDWARE_FAILURE_CONTEXT"
-req.product : Windows 10 or later.
+UID: NC:ufxclient.EVT_UFX_DEVICE_PROPRIETARY_CHARGER_RESET
+title: EVT_UFX_DEVICE_PROPRIETARY_CHARGER_RESET
+author: windows-driver-content
+description: The client driver's implementation to resets proprietary charger.
+old-location: buses\evt_ufx_device_proprietary_charger_reset.htm
+old-project: usbref
+ms.assetid: 103E60D4-4640-430D-A4AE-E03D8B6E7031
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: buses.evt_ufx_device_proprietary_charger_reset, EvtUfxDeviceProprietaryChargerReset callback function [Buses], EvtUfxDeviceProprietaryChargerReset, EVT_UFX_DEVICE_PROPRIETARY_CHARGER_RESET, EVT_UFX_DEVICE_PROPRIETARY_CHARGER_RESET, ufxclient/EvtUfxDeviceProprietaryChargerReset, PFN_UFX_DEVICE_PROPRIETARY_CHARGER_RESET callback function pointer [Buses], PFN_UFX_DEVICE_PROPRIETARY_CHARGER_RESET
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ufxclient.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ufxclient.h
+apiname:
+-	PFN_UFX_DEVICE_PROPRIETARY_CHARGER_RESET
+product: Windows
+targetos: Windows
+req.typenames: "*PUFX_HARDWARE_FAILURE_CONTEXT, UFX_HARDWARE_FAILURE_CONTEXT"
+req.product: Windows 10 or later.
 ---
 
 

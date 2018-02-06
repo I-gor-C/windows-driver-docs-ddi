@@ -1,42 +1,47 @@
 ---
-UID : NS:wdm._TRANSACTIONMANAGER_LOGPATH_INFORMATION
-title : "_TRANSACTIONMANAGER_LOGPATH_INFORMATION"
-author : windows-driver-content
-description : The TRANSACTIONMANAGER_LOGPATH_INFORMATION structure contains information about a transaction manager object.
-old-location : kernel\transactionmanager_logpath_information.htm
-old-project : kernel
-ms.assetid : 53d7e8a9-fc89-4b11-8bbb-e9b5b0504f5e
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.transactionmanager_logpath_information, TRANSACTIONMANAGER_LOGPATH_INFORMATION structure [Kernel-Mode Driver Architecture], PTRANSACTIONMANAGER_LOGPATH_INFORMATION, TRANSACTIONMANAGER_LOGPATH_INFORMATION, wdm/PTRANSACTIONMANAGER_LOGPATH_INFORMATION, ktm_ref_2e3d26b5-525c-4953-a871-7eb6535d926e.xml, PTRANSACTIONMANAGER_LOGPATH_INFORMATION structure pointer [Kernel-Mode Driver Architecture], wdm/TRANSACTIONMANAGER_LOGPATH_INFORMATION, _TRANSACTIONMANAGER_LOGPATH_INFORMATION, *PTRANSACTIONMANAGER_LOGPATH_INFORMATION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later operating system versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TRANSACTIONMANAGER_LOGPATH_INFORMATION, *PTRANSACTIONMANAGER_LOGPATH_INFORMATION
-req.product : Windows 10 or later.
+UID: NS:wdm._TRANSACTIONMANAGER_LOGPATH_INFORMATION
+title: "_TRANSACTIONMANAGER_LOGPATH_INFORMATION"
+author: windows-driver-content
+description: The TRANSACTIONMANAGER_LOGPATH_INFORMATION structure contains information about a transaction manager object.
+old-location: kernel\transactionmanager_logpath_information.htm
+old-project: kernel
+ms.assetid: 53d7e8a9-fc89-4b11-8bbb-e9b5b0504f5e
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.transactionmanager_logpath_information, TRANSACTIONMANAGER_LOGPATH_INFORMATION structure [Kernel-Mode Driver Architecture], PTRANSACTIONMANAGER_LOGPATH_INFORMATION, TRANSACTIONMANAGER_LOGPATH_INFORMATION, wdm/PTRANSACTIONMANAGER_LOGPATH_INFORMATION, ktm_ref_2e3d26b5-525c-4953-a871-7eb6535d926e.xml, PTRANSACTIONMANAGER_LOGPATH_INFORMATION structure pointer [Kernel-Mode Driver Architecture], wdm/TRANSACTIONMANAGER_LOGPATH_INFORMATION, _TRANSACTIONMANAGER_LOGPATH_INFORMATION, *PTRANSACTIONMANAGER_LOGPATH_INFORMATION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later operating system versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	TRANSACTIONMANAGER_LOGPATH_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: TRANSACTIONMANAGER_LOGPATH_INFORMATION, *PTRANSACTIONMANAGER_LOGPATH_INFORMATION
+req.product: Windows 10 or later.
 ---
 
 # _TRANSACTIONMANAGER_LOGPATH_INFORMATION structure

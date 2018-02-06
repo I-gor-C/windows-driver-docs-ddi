@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmthk._D3DKMT_OPENRESOURCE
-title : "_D3DKMT_OPENRESOURCE"
-author : windows-driver-content
-description : The D3DKMT_OPENRESOURCE structure describes parameters for opening a resource.
-old-location : display\d3dkmt_openresource.htm
-old-project : display
-ms.assetid : 5ff63606-ced1-4482-b967-41db4746ac1d
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.d3dkmt_openresource, D3DKMT_OPENRESOURCE, D3DKMT_OPENRESOURCE structure [Display Devices], OpenGL_Structs_b069a94a-b78c-4fbf-b78d-7c5b0d025655.xml, d3dkmthk/D3DKMT_OPENRESOURCE, _D3DKMT_OPENRESOURCE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_OPENRESOURCE
+UID: NS:d3dkmthk._D3DKMT_OPENRESOURCE
+title: "_D3DKMT_OPENRESOURCE"
+author: windows-driver-content
+description: The D3DKMT_OPENRESOURCE structure describes parameters for opening a resource.
+old-location: display\d3dkmt_openresource.htm
+old-project: display
+ms.assetid: 5ff63606-ced1-4482-b967-41db4746ac1d
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.d3dkmt_openresource, D3DKMT_OPENRESOURCE, D3DKMT_OPENRESOURCE structure [Display Devices], OpenGL_Structs_b069a94a-b78c-4fbf-b78d-7c5b0d025655.xml, d3dkmthk/D3DKMT_OPENRESOURCE, _D3DKMT_OPENRESOURCE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmthk.h
+apiname:
+-	D3DKMT_OPENRESOURCE
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_OPENRESOURCE
 ---
 
 # _D3DKMT_OPENRESOURCE structure

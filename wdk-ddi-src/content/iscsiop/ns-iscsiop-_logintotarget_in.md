@@ -1,41 +1,46 @@
 ---
-UID : NS:iscsiop._LoginToTarget_IN
-title : "_LoginToTarget_IN"
-author : windows-driver-content
-description : The LoginToTarget_IN structure holds the input data for the LoginToTarget method, which is used to login to a target.
-old-location : storage\logintotarget_in.htm
-old-project : storage
-ms.assetid : f25b503b-0182-452d-8561-b3c82f595f81
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : PLoginToTarget_IN structure pointer [Storage Devices], LoginToTarget_IN, _LoginToTarget_IN, iscsiop/LoginToTarget_IN, PLoginToTarget_IN, LoginToTarget_IN structure [Storage Devices], iscsiop/PLoginToTarget_IN, storage.logintotarget_in, structs-iSCSI_b6201f88-03aa-41bf-a92b-eb9e95103911.xml, *PLoginToTarget_IN
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : iscsiop.h
-req.include-header : Iscsiop.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PLoginToTarget_IN, LoginToTarget_IN"
+UID: NS:iscsiop._LoginToTarget_IN
+title: "_LoginToTarget_IN"
+author: windows-driver-content
+description: The LoginToTarget_IN structure holds the input data for the LoginToTarget method, which is used to login to a target.
+old-location: storage\logintotarget_in.htm
+old-project: storage
+ms.assetid: f25b503b-0182-452d-8561-b3c82f595f81
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: PLoginToTarget_IN structure pointer [Storage Devices], LoginToTarget_IN, _LoginToTarget_IN, iscsiop/LoginToTarget_IN, PLoginToTarget_IN, LoginToTarget_IN structure [Storage Devices], iscsiop/PLoginToTarget_IN, storage.logintotarget_in, structs-iSCSI_b6201f88-03aa-41bf-a92b-eb9e95103911.xml, *PLoginToTarget_IN
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: iscsiop.h
+req.include-header: Iscsiop.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	iscsiop.h
+apiname:
+-	LoginToTarget_IN
+product: Windows
+targetos: Windows
+req.typenames: "*PLoginToTarget_IN, LoginToTarget_IN"
 ---
 
 # _LoginToTarget_IN structure

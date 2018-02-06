@@ -1,41 +1,46 @@
 ---
-UID : NS:gnssdriver.GNSS_FIXSESSION_PARAM
-title : GNSS_FIXSESSION_PARAM
-author : windows-driver-content
-description : This structure defines the parameters used by the GNSS adapter to start a fix session.
-old-location : sensors\gnss_fixsession_param.htm
-old-project : sensors
-ms.assetid : D51126FD-0448-487A-BD4E-170901E90B1E
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : sensors.gnss_fixsession_param, sensors.gnss_fixsesson_param, gnssdriver/GNSS_FIXSESSION_PARAM, GNSS_FIXSESSION_PARAM structure [Sensor Devices], GNSS_FIXSESSION_PARAM, PGNSS_FIXSESSION_PARAM structure pointer [Sensor Devices], PGNSS_FIXSESSION_PARAM, gnssdriver/PGNSS_FIXSESSION_PARAM, *PGNSS_FIXSESSION_PARAM
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : gnssdriver.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PGNSS_FIXSESSION_PARAM, GNSS_FIXSESSION_PARAM"
+UID: NS:gnssdriver.GNSS_FIXSESSION_PARAM
+title: GNSS_FIXSESSION_PARAM
+author: windows-driver-content
+description: This structure defines the parameters used by the GNSS adapter to start a fix session.
+old-location: sensors\gnss_fixsession_param.htm
+old-project: sensors
+ms.assetid: D51126FD-0448-487A-BD4E-170901E90B1E
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: sensors.gnss_fixsession_param, sensors.gnss_fixsesson_param, gnssdriver/GNSS_FIXSESSION_PARAM, GNSS_FIXSESSION_PARAM structure [Sensor Devices], GNSS_FIXSESSION_PARAM, PGNSS_FIXSESSION_PARAM structure pointer [Sensor Devices], PGNSS_FIXSESSION_PARAM, gnssdriver/PGNSS_FIXSESSION_PARAM, *PGNSS_FIXSESSION_PARAM
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: gnssdriver.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	gnssdriver.h
+apiname:
+-	GNSS_FIXSESSION_PARAM
+product: Windows
+targetos: Windows
+req.typenames: "*PGNSS_FIXSESSION_PARAM, GNSS_FIXSESSION_PARAM"
 ---
 
 # GNSS_FIXSESSION_PARAM structure

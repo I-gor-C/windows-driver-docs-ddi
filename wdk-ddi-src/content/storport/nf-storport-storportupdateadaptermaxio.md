@@ -1,42 +1,47 @@
 ---
-UID : NF:storport.StorPortUpdateAdapterMaxIO
-title : StorPortUpdateAdapterMaxIO function
-author : windows-driver-content
-description : This function can be called by a miniport to update the maximum IO's supported by an adapter. This function is valid during HwInitialize/HwPassiveInitRoutine callback and has effect only during adapter initialization.
-old-location : storage\storportupdateadaptermaxio.htm
-old-project : storage
-ms.assetid : BB18925D-ACFA-426D-ADD3-33C1D8A99396
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : StorPortUpdateAdapterMaxIO, storport/StorPortUpdateAdapterMaxIO, storage.storportupdateadaptermaxio, StorPortUpdateAdapterMaxIO function [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : storport.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows 10, version 1709.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STOR_SPINLOCK
-req.product : Windows 10 or later.
+UID: NF:storport.StorPortUpdateAdapterMaxIO
+title: StorPortUpdateAdapterMaxIO function
+author: windows-driver-content
+description: This function can be called by a miniport to update the maximum IO's supported by an adapter. This function is valid during HwInitialize/HwPassiveInitRoutine callback and has effect only during adapter initialization.
+old-location: storage\storportupdateadaptermaxio.htm
+old-project: storage
+ms.assetid: BB18925D-ACFA-426D-ADD3-33C1D8A99396
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: StorPortUpdateAdapterMaxIO, storport/StorPortUpdateAdapterMaxIO, storage.storportupdateadaptermaxio, StorPortUpdateAdapterMaxIO function [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: storport.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows 10, version 1709.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Storport.h
+apiname:
+-	StorPortUpdateAdapterMaxIO
+product: Windows
+targetos: Windows
+req.typenames: STOR_SPINLOCK
+req.product: Windows 10 or later.
 ---
 
 

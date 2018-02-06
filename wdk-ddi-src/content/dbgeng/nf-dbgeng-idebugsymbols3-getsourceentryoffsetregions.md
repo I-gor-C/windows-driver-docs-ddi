@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugSymbols3.GetSourceEntryOffsetRegions
-title : IDebugSymbols3::GetSourceEntryOffsetRegions method
-author : windows-driver-content
-description : Returns all memory regions known to be associated with a source entry.
-old-location : debugger\idebugsymbols3_getsourceentryoffsetregions.htm
-old-project : debugger
-ms.assetid : A39FF088-1AA3-4E2F-8EF6-AD7F79FBBC92
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugSymbols3::GetSourceEntryOffsetRegions, IDebugSymbols3, debugger.idebugsymbols3_getsourceentryoffsetregions, IDebugSymbols3 interface [Windows Debugging], GetSourceEntryOffsetRegions method, GetSourceEntryOffsetRegions, dbgeng/IDebugSymbols3::GetSourceEntryOffsetRegions, GetSourceEntryOffsetRegions method [Windows Debugging], IDebugSymbols3 interface, GetSourceEntryOffsetRegions method [Windows Debugging]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSymbols3.GetSourceEntryOffsetRegions
+title: IDebugSymbols3::GetSourceEntryOffsetRegions method
+author: windows-driver-content
+description: Returns all memory regions known to be associated with a source entry.
+old-location: debugger\idebugsymbols3_getsourceentryoffsetregions.htm
+old-project: debugger
+ms.assetid: A39FF088-1AA3-4E2F-8EF6-AD7F79FBBC92
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugSymbols3::GetSourceEntryOffsetRegions, IDebugSymbols3, debugger.idebugsymbols3_getsourceentryoffsetregions, IDebugSymbols3 interface [Windows Debugging], GetSourceEntryOffsetRegions method, GetSourceEntryOffsetRegions, dbgeng/IDebugSymbols3::GetSourceEntryOffsetRegions, GetSourceEntryOffsetRegions method [Windows Debugging], IDebugSymbols3 interface, GetSourceEntryOffsetRegions method [Windows Debugging]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Dbgeng.h
+apiname:
+-	IDebugSymbols3.GetSourceEntryOffsetRegions
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi_hwaccess.READ_REGISTER_ULONG
-title : READ_REGISTER_ULONG function
-author : windows-driver-content
-description : The READ_REGISTER_ULONG function reads a ULONG value from the specified register address.
-old-location : wdf\read_register_ulong.htm
-old-project : wdf
-ms.assetid : F10D3091-BA9D-47FF-A457-380D86D9F205
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : READ_REGISTER_ULONG, READ_REGISTER_ULONG function, wudfddi_hwaccess/READ_REGISTER_ULONG, wdf.read_register_ulong, umdf.read_register_ulong
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wudfddi_hwaccess.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.11
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : UMDF_IO_TARGET_OPEN_PARAMS, *PUMDF_IO_TARGET_OPEN_PARAMS
-req.product : Windows 10 or later.
+UID: NF:wudfddi_hwaccess.READ_REGISTER_ULONG
+title: READ_REGISTER_ULONG function
+author: windows-driver-content
+description: The READ_REGISTER_ULONG function reads a ULONG value from the specified register address.
+old-location: wdf\read_register_ulong.htm
+old-project: wdf
+ms.assetid: F10D3091-BA9D-47FF-A457-380D86D9F205
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: READ_REGISTER_ULONG, READ_REGISTER_ULONG function, wudfddi_hwaccess/READ_REGISTER_ULONG, wdf.read_register_ulong, umdf.read_register_ulong
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wudfddi_hwaccess.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.11
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wudfddi_hwaccess.h
+apiname:
+-	READ_REGISTER_ULONG
+product: Windows
+targetos: Windows
+req.typenames: UMDF_IO_TARGET_OPEN_PARAMS, *PUMDF_IO_TARGET_OPEN_PARAMS
+req.product: Windows 10 or later.
 ---
 
 

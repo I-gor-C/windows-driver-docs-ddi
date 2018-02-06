@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.FsRtlAcknowledgeEcp
-title : FsRtlAcknowledgeEcp function
-author : windows-driver-content
-description : The FsRtlAcknowledgeEcp routine marks an extra create parameter (ECP) context structure as acknowledged.
-old-location : ifsk\fsrtlacknowledgeecp.htm
-old-project : ifsk
-ms.assetid : 1f91c2ef-300d-43f5-8d2c-d4f2fd326915
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : fsrtlref_2c3b8577-e61e-4ff3-9443-b3838077d762.xml, FsRtlAcknowledgeEcp routine [Installable File System Drivers], FsRtlAcknowledgeEcp, ifsk.fsrtlacknowledgeecp, ntifs/FsRtlAcknowledgeEcp
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.FsRtlAcknowledgeEcp
+title: FsRtlAcknowledgeEcp function
+author: windows-driver-content
+description: The FsRtlAcknowledgeEcp routine marks an extra create parameter (ECP) context structure as acknowledged.
+old-location: ifsk\fsrtlacknowledgeecp.htm
+old-project: ifsk
+ms.assetid: 1f91c2ef-300d-43f5-8d2c-d4f2fd326915
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: fsrtlref_2c3b8577-e61e-4ff3-9443-b3838077d762.xml, FsRtlAcknowledgeEcp routine [Installable File System Drivers], FsRtlAcknowledgeEcp, ifsk.fsrtlacknowledgeecp, ntifs/FsRtlAcknowledgeEcp
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	FsRtlAcknowledgeEcp
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

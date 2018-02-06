@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddscsi._NV_FEATURE_PARAMETER
-title : "_NV_FEATURE_PARAMETER"
-author : windows-driver-content
-description : The NV_FEATURE_PARAMETER structure is used in conjunction with the IOCTL_SCSI_MINIPORT_NVCACHE request to get NV Cache Manager feature support information from the device.
-old-location : storage\nv_feature_parameter.htm
-old-project : storage
-ms.assetid : 06b07b50-577c-4762-aea6-38bd1ada8973
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : ntddscsi/NV_FEATURE_PARAMETER, storage.nv_feature_parameter, PNV_FEATURE_PARAMETER, PNV_FEATURE_PARAMETER structure pointer [Storage Devices], NV_FEATURE_PARAMETER, *PNV_FEATURE_PARAMETER, structs-nvcache_ac844d4b-783b-4248-8699-353eef5a3d52.xml, _NV_FEATURE_PARAMETER, ntddscsi/PNV_FEATURE_PARAMETER, NV_FEATURE_PARAMETER structure [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddscsi.h
-req.include-header : Ntddscsi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PNV_FEATURE_PARAMETER, NV_FEATURE_PARAMETER"
+UID: NS:ntddscsi._NV_FEATURE_PARAMETER
+title: "_NV_FEATURE_PARAMETER"
+author: windows-driver-content
+description: The NV_FEATURE_PARAMETER structure is used in conjunction with the IOCTL_SCSI_MINIPORT_NVCACHE request to get NV Cache Manager feature support information from the device.
+old-location: storage\nv_feature_parameter.htm
+old-project: storage
+ms.assetid: 06b07b50-577c-4762-aea6-38bd1ada8973
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: ntddscsi/NV_FEATURE_PARAMETER, storage.nv_feature_parameter, PNV_FEATURE_PARAMETER, PNV_FEATURE_PARAMETER structure pointer [Storage Devices], NV_FEATURE_PARAMETER, *PNV_FEATURE_PARAMETER, structs-nvcache_ac844d4b-783b-4248-8699-353eef5a3d52.xml, _NV_FEATURE_PARAMETER, ntddscsi/PNV_FEATURE_PARAMETER, NV_FEATURE_PARAMETER structure [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddscsi.h
+req.include-header: Ntddscsi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddscsi.h
+apiname:
+-	NV_FEATURE_PARAMETER
+product: Windows
+targetos: Windows
+req.typenames: "*PNV_FEATURE_PARAMETER, NV_FEATURE_PARAMETER"
 ---
 
 # _NV_FEATURE_PARAMETER structure

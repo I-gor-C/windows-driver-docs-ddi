@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisMRegisterDmaChannel
-title : NdisMRegisterDmaChannel function
-author : windows-driver-content
-description : The NdisMRegisterDmaChannel function claims a system DMA controller channel during initialization for DMA operations on a subordinate NIC or on an ISA bus-master NIC.
-old-location : netvista\ndismregisterdmachannel.htm
-old-project : netvista
-ms.assetid : 32e92f77-8f45-408b-a284-c00d3b5bd1b4
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : dma_ref_c0361623-95c8-4218-b848-8da949f22033.xml, ndis/NdisMRegisterDmaChannel, NdisMRegisterDmaChannel, netvista.ndismregisterdmachannel, NdisMRegisterDmaChannel function [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisMRegisterDmaChannel (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisMRegisterDmaChannel (NDIS   5.1)) in Windows XP.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_Miniport_Driver_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisMRegisterDmaChannel
+title: NdisMRegisterDmaChannel function
+author: windows-driver-content
+description: The NdisMRegisterDmaChannel function claims a system DMA controller channel during initialization for DMA operations on a subordinate NIC or on an ISA bus-master NIC.
+old-location: netvista\ndismregisterdmachannel.htm
+old-project: netvista
+ms.assetid: 32e92f77-8f45-408b-a284-c00d3b5bd1b4
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: dma_ref_c0361623-95c8-4218-b848-8da949f22033.xml, ndis/NdisMRegisterDmaChannel, NdisMRegisterDmaChannel, netvista.ndismregisterdmachannel, NdisMRegisterDmaChannel function [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisMRegisterDmaChannel (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisMRegisterDmaChannel (NDIS   5.1)) in Windows XP.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_Miniport_Driver_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisMRegisterDmaChannel
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

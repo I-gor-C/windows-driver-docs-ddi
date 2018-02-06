@@ -1,41 +1,46 @@
 ---
-UID : NS:dbgeng._DEBUG_STACK_FRAME
-title : "_DEBUG_STACK_FRAME"
-author : windows-driver-content
-description : The DEBUG_STACK_FRAME structure describes a stack frame and the address of the current instruction for the stack frame.
-old-location : debugger\debug_stack_frame.htm
-old-project : debugger
-ms.assetid : e3ab83cf-96ed-468d-895f-23b90951cfb5
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : DEBUG_STACK_FRAME, PDEBUG_STACK_FRAME, debugger.debug_stack_frame, *PDEBUG_STACK_FRAME, Structures_219fad76-6f80-429d-b0ff-0f5443a9263b.xml, dbgeng/DEBUG_STACK_FRAME, _DEBUG_STACK_FRAME, PDEBUG_STACK_FRAME structure pointer [Windows Debugging], DEBUG_STACK_FRAME structure [Windows Debugging], dbgeng/PDEBUG_STACK_FRAME
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : dbgeng.h
-req.include-header : DbgEng.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DEBUG_STACK_FRAME, *PDEBUG_STACK_FRAME
+UID: NS:dbgeng._DEBUG_STACK_FRAME
+title: "_DEBUG_STACK_FRAME"
+author: windows-driver-content
+description: The DEBUG_STACK_FRAME structure describes a stack frame and the address of the current instruction for the stack frame.
+old-location: debugger\debug_stack_frame.htm
+old-project: debugger
+ms.assetid: e3ab83cf-96ed-468d-895f-23b90951cfb5
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: DEBUG_STACK_FRAME, PDEBUG_STACK_FRAME, debugger.debug_stack_frame, *PDEBUG_STACK_FRAME, Structures_219fad76-6f80-429d-b0ff-0f5443a9263b.xml, dbgeng/DEBUG_STACK_FRAME, _DEBUG_STACK_FRAME, PDEBUG_STACK_FRAME structure pointer [Windows Debugging], DEBUG_STACK_FRAME structure [Windows Debugging], dbgeng/PDEBUG_STACK_FRAME
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: dbgeng.h
+req.include-header: DbgEng.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	DbgEng.h
+apiname:
+-	DEBUG_STACK_FRAME
+product: Windows
+targetos: Windows
+req.typenames: DEBUG_STACK_FRAME, *PDEBUG_STACK_FRAME
 ---
 
 # _DEBUG_STACK_FRAME structure

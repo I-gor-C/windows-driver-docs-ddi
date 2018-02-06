@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.FsRtlInsertPerStreamContext
-title : FsRtlInsertPerStreamContext function
-author : windows-driver-content
-description : The FsRtlInsertPerStreamContext routine associates a file system filter driver's per-stream context structure with a file stream.
-old-location : ifsk\fsrtlinsertperstreamcontext.htm
-old-project : ifsk
-ms.assetid : d1592021-7765-4553-bcb0-9124af44123f
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FsRtlInsertPerStreamContext routine [Installable File System Drivers], ntifs/FsRtlInsertPerStreamContext, FsRtlInsertPerStreamContext, ifsk.fsrtlinsertperstreamcontext, fsrtlref_91ced881-cdb2-41ca-b569-992d6b43e2f4.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : This routine is available on Update Rollup for Windows 2000 Service Pack 4 (SP4) and on Windows XP and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.FsRtlInsertPerStreamContext
+title: FsRtlInsertPerStreamContext function
+author: windows-driver-content
+description: The FsRtlInsertPerStreamContext routine associates a file system filter driver's per-stream context structure with a file stream.
+old-location: ifsk\fsrtlinsertperstreamcontext.htm
+old-project: ifsk
+ms.assetid: d1592021-7765-4553-bcb0-9124af44123f
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FsRtlInsertPerStreamContext routine [Installable File System Drivers], ntifs/FsRtlInsertPerStreamContext, FsRtlInsertPerStreamContext, ifsk.fsrtlinsertperstreamcontext, fsrtlref_91ced881-cdb2-41ca-b569-992d6b43e2f4.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: This routine is available on Update Rollup for Windows 2000 Service Pack 4 (SP4) and on Windows XP and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	FsRtlInsertPerStreamContext
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

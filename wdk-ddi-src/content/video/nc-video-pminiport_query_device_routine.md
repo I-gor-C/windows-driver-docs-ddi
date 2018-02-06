@@ -1,42 +1,47 @@
 ---
-UID : NC:video.PMINIPORT_QUERY_DEVICE_ROUTINE
-title : PMINIPORT_QUERY_DEVICE_ROUTINE
-author : windows-driver-content
-description : HwVidQueryDeviceCallback uses the specified configuration data to configure its adapter, and, possibly, to fill in missing configuration information in the VIDEO_PORT_CONFIG_INFO structure.
-old-location : display\hwvidquerydevicecallback.htm
-old-project : display
-ms.assetid : 81c3f484-427e-43b8-b7dd-12017533560b
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.hwvidquerydevicecallback, HwVidQueryDeviceCallback callback function [Display Devices], HwVidQueryDeviceCallback, PMINIPORT_QUERY_DEVICE_ROUTINE, PMINIPORT_QUERY_DEVICE_ROUTINE, video/HwVidQueryDeviceCallback, VideoMiniport_Functions_9da236b0-f97f-410d-a0e7-c65499d7db8b.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VHF_CONFIG, *PVHF_CONFIG
-req.product : Windows 10 or later.
+UID: NC:video.PMINIPORT_QUERY_DEVICE_ROUTINE
+title: PMINIPORT_QUERY_DEVICE_ROUTINE
+author: windows-driver-content
+description: HwVidQueryDeviceCallback uses the specified configuration data to configure its adapter, and, possibly, to fill in missing configuration information in the VIDEO_PORT_CONFIG_INFO structure.
+old-location: display\hwvidquerydevicecallback.htm
+old-project: display
+ms.assetid: 81c3f484-427e-43b8-b7dd-12017533560b
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.hwvidquerydevicecallback, HwVidQueryDeviceCallback callback function [Display Devices], HwVidQueryDeviceCallback, PMINIPORT_QUERY_DEVICE_ROUTINE, PMINIPORT_QUERY_DEVICE_ROUTINE, video/HwVidQueryDeviceCallback, VideoMiniport_Functions_9da236b0-f97f-410d-a0e7-c65499d7db8b.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	video.h
+apiname:
+-	HwVidQueryDeviceCallback
+product: Windows
+targetos: Windows
+req.typenames: VHF_CONFIG, *PVHF_CONFIG
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NF:ndis.NdisMCmAddPartyComplete
-title : NdisMCmAddPartyComplete macro
-author : windows-driver-content
-description : NdisMCmAddPartyComplete returns the final status of a client's request, for which the MCM driver previously returned NDIS_STATUS_PENDING, to add a party on an established multipoint VC.
-old-location : netvista\ndismcmaddpartycomplete.htm
-old-project : netvista
-ms.assetid : 5bbcd552-00c2-4085-8222-c514eb92e654
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NdisMCmAddPartyComplete, condis_mcm_ref_929fb1d1-4d15-4d2d-be4b-a6845674f7e6.xml, NdisMCmAddPartyComplete macro [Network Drivers Starting with Windows Vista], netvista.ndismcmaddpartycomplete, ndis/NdisMCmAddPartyComplete
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : macro
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisMCmAddPartyComplete (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisMCmAddPartyComplete (NDIS   5.1)) in Windows XP.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_MCM_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : ndis.h
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisMCmAddPartyComplete
+title: NdisMCmAddPartyComplete macro
+author: windows-driver-content
+description: NdisMCmAddPartyComplete returns the final status of a client's request, for which the MCM driver previously returned NDIS_STATUS_PENDING, to add a party on an established multipoint VC.
+old-location: netvista\ndismcmaddpartycomplete.htm
+old-project: netvista
+ms.assetid: 5bbcd552-00c2-4085-8222-c514eb92e654
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NdisMCmAddPartyComplete, condis_mcm_ref_929fb1d1-4d15-4d2d-be4b-a6845674f7e6.xml, NdisMCmAddPartyComplete macro [Network Drivers Starting with Windows Vista], netvista.ndismcmaddpartycomplete, ndis/NdisMCmAddPartyComplete
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: macro
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisMCmAddPartyComplete (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisMCmAddPartyComplete (NDIS   5.1)) in Windows XP.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_MCM_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: ndis.h
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndis.h
+apiname:
+-	NdisMCmAddPartyComplete
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

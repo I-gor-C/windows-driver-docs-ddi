@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugSymbols3.GetNearNameByOffset
-title : IDebugSymbols3::GetNearNameByOffset method
-author : windows-driver-content
-description : The GetNearNameByOffset method returns the name of a symbol that is located near the specified location.
-old-location : debugger\getnearnamebyoffset.htm
-old-project : debugger
-ms.assetid : bcda26ae-484e-41b9-b86a-552b5cecb9a7
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : GetNearNameByOffset method [Windows Debugging], IDebugSymbols2 interface, dbgeng/IDebugSymbols3::GetNearNameByOffset, dbgeng/IDebugSymbols::GetNearNameByOffset, IDebugSymbols2 interface [Windows Debugging], GetNearNameByOffset method, GetNearNameByOffset method [Windows Debugging], IDebugSymbols interface, IDebugSymbols interface [Windows Debugging], GetNearNameByOffset method, debugger.getnearnamebyoffset, dbgeng/IDebugSymbols2::GetNearNameByOffset, IDebugSymbols2::GetNearNameByOffset, IDebugSymbols3::GetNearNameByOffset, IDebugSymbols::GetNearNameByOffset, IDebugSymbols3 interface [Windows Debugging], GetNearNameByOffset method, GetNearNameByOffset, GetNearNameByOffset method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols3, GetNearNameByOffset method [Windows Debugging], IDebugSymbols_cdd9bec8-6fe8-4523-ac98-df3ce90fd073.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSymbols3.GetNearNameByOffset
+title: IDebugSymbols3::GetNearNameByOffset method
+author: windows-driver-content
+description: The GetNearNameByOffset method returns the name of a symbol that is located near the specified location.
+old-location: debugger\getnearnamebyoffset.htm
+old-project: debugger
+ms.assetid: bcda26ae-484e-41b9-b86a-552b5cecb9a7
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: GetNearNameByOffset method [Windows Debugging], IDebugSymbols2 interface, dbgeng/IDebugSymbols3::GetNearNameByOffset, dbgeng/IDebugSymbols::GetNearNameByOffset, IDebugSymbols2 interface [Windows Debugging], GetNearNameByOffset method, GetNearNameByOffset method [Windows Debugging], IDebugSymbols interface, IDebugSymbols interface [Windows Debugging], GetNearNameByOffset method, debugger.getnearnamebyoffset, dbgeng/IDebugSymbols2::GetNearNameByOffset, IDebugSymbols2::GetNearNameByOffset, IDebugSymbols3::GetNearNameByOffset, IDebugSymbols::GetNearNameByOffset, IDebugSymbols3 interface [Windows Debugging], GetNearNameByOffset method, GetNearNameByOffset, GetNearNameByOffset method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols3, GetNearNameByOffset method [Windows Debugging], IDebugSymbols_cdd9bec8-6fe8-4523-ac98-df3ce90fd073.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugSymbols.GetNearNameByOffset
+-	IDebugSymbols2.GetNearNameByOffset
+-	IDebugSymbols3.GetNearNameByOffset
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

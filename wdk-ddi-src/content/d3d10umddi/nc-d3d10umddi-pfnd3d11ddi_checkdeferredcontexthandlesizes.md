@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3D11DDI_CHECKDEFERREDCONTEXTHANDLESIZES
-title : PFND3D11DDI_CHECKDEFERREDCONTEXTHANDLESIZES
-author : windows-driver-content
-description : The CheckDeferredContextHandleSizes function verifies the sizes of the driver-private memory spaces that hold the handle data of deferred context handles.
-old-location : display\checkdeferredcontexthandlesizes.htm
-old-project : display
-ms.assetid : 0ddaec86-79e6-4d09-8403-6588b35f8b0f
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.checkdeferredcontexthandlesizes, CheckDeferredContextHandleSizes callback function [Display Devices], CheckDeferredContextHandleSizes, PFND3D11DDI_CHECKDEFERREDCONTEXTHANDLESIZES, PFND3D11DDI_CHECKDEFERREDCONTEXTHANDLESIZES, d3d10umddi/CheckDeferredContextHandleSizes, UserModeDisplayDriverDx11_Functions_f96ddf8f-1b3c-4840-b76c-2386dfb582f8.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : CheckDeferredContextHandleSizes is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3D11DDI_CHECKDEFERREDCONTEXTHANDLESIZES
+title: PFND3D11DDI_CHECKDEFERREDCONTEXTHANDLESIZES
+author: windows-driver-content
+description: The CheckDeferredContextHandleSizes function verifies the sizes of the driver-private memory spaces that hold the handle data of deferred context handles.
+old-location: display\checkdeferredcontexthandlesizes.htm
+old-project: display
+ms.assetid: 0ddaec86-79e6-4d09-8403-6588b35f8b0f
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.checkdeferredcontexthandlesizes, CheckDeferredContextHandleSizes callback function [Display Devices], CheckDeferredContextHandleSizes, PFND3D11DDI_CHECKDEFERREDCONTEXTHANDLESIZES, PFND3D11DDI_CHECKDEFERREDCONTEXTHANDLESIZES, d3d10umddi/CheckDeferredContextHandleSizes, UserModeDisplayDriverDx11_Functions_f96ddf8f-1b3c-4840-b76c-2386dfb582f8.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: CheckDeferredContextHandleSizes is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	CheckDeferredContextHandleSizes
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

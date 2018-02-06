@@ -1,42 +1,47 @@
 ---
-UID : NS:windot11.DOT11_CIPHER_ALGORITHM_LIST
-title : DOT11_CIPHER_ALGORITHM_LIST
-author : windows-driver-content
-description : Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
-old-location : netvista\dot11_cipher_algorithm_list.htm
-old-project : netvista
-ms.assetid : b6d96a82-f744-4663-8373-886f4245c106
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : PDOT11_CIPHER_ALGORITHM_LIST, DOT11_CIPHER_ALGORITHM_LIST structure [Network Drivers Starting with Windows Vista], DOT11_CIPHER_ALGORITHM_LIST, netvista.dot11_cipher_algorithm_list, windot11/PDOT11_CIPHER_ALGORITHM_LIST, windot11/DOT11_CIPHER_ALGORITHM_LIST, PDOT11_CIPHER_ALGORITHM_LIST structure pointer [Network Drivers Starting with Windows Vista], *PDOT11_CIPHER_ALGORITHM_LIST, Native_802.11_data_types_704d7a5a-0cf5-459f-af0c-06dfdc936a9e.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : windot11.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDOT11_CIPHER_ALGORITHM_LIST, DOT11_CIPHER_ALGORITHM_LIST"
-req.product : Windows 10 or later.
+UID: NS:windot11.DOT11_CIPHER_ALGORITHM_LIST
+title: DOT11_CIPHER_ALGORITHM_LIST
+author: windows-driver-content
+description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+old-location: netvista\dot11_cipher_algorithm_list.htm
+old-project: netvista
+ms.assetid: b6d96a82-f744-4663-8373-886f4245c106
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: PDOT11_CIPHER_ALGORITHM_LIST, DOT11_CIPHER_ALGORITHM_LIST structure [Network Drivers Starting with Windows Vista], DOT11_CIPHER_ALGORITHM_LIST, netvista.dot11_cipher_algorithm_list, windot11/PDOT11_CIPHER_ALGORITHM_LIST, windot11/DOT11_CIPHER_ALGORITHM_LIST, PDOT11_CIPHER_ALGORITHM_LIST structure pointer [Network Drivers Starting with Windows Vista], *PDOT11_CIPHER_ALGORITHM_LIST, Native_802.11_data_types_704d7a5a-0cf5-459f-af0c-06dfdc936a9e.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: windot11.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	windot11.h
+apiname:
+-	DOT11_CIPHER_ALGORITHM_LIST
+product: Windows
+targetos: Windows
+req.typenames: "*PDOT11_CIPHER_ALGORITHM_LIST, DOT11_CIPHER_ALGORITHM_LIST"
+req.product: Windows 10 or later.
 ---
 
 # DOT11_CIPHER_ALGORITHM_LIST structure

@@ -1,41 +1,46 @@
 ---
-UID : NF:ks.KsFilterReleaseControl
-title : KsFilterReleaseControl function
-author : windows-driver-content
-description : The KsFilterReleaseControl function releases the control mutex for the AVStream filter specified by Filter.
-old-location : stream\ksfilterreleasecontrol.htm
-old-project : stream
-ms.assetid : 4f868e88-ef5c-4fad-be53-2b5116a6385b
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.ksfilterreleasecontrol, KsFilterReleaseControl function [Streaming Media Devices], KsFilterReleaseControl, avfunc_ca99338c-1cae-4ef4-8ef5-76ee368ae1d6.xml, ks/KsFilterReleaseControl
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsFilterReleaseControl
+title: KsFilterReleaseControl function
+author: windows-driver-content
+description: The KsFilterReleaseControl function releases the control mutex for the AVStream filter specified by Filter.
+old-location: stream\ksfilterreleasecontrol.htm
+old-project: stream
+ms.assetid: 4f868e88-ef5c-4fad-be53-2b5116a6385b
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.ksfilterreleasecontrol, KsFilterReleaseControl function [Streaming Media Devices], KsFilterReleaseControl, avfunc_ca99338c-1cae-4ef4-8ef5-76ee368ae1d6.xml, ks/KsFilterReleaseControl
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	KsFilterReleaseControl
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

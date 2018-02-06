@@ -1,41 +1,46 @@
 ---
-UID : NE:ntddstor._STORAGE_PROTOCOL_ATA_DATA_TYPE
-title : "_STORAGE_PROTOCOL_ATA_DATA_TYPE"
-author : windows-driver-content
-description : The ATA protocol data type.
-old-location : storage\storage_protocol_ata_data_type.htm
-old-project : storage
-ms.assetid : 4B42E143-17F5-4841-A9EA-C225B167E242
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : "*PSTORAGE_PROTOCOL_ATA_DATA_TYPE, ntddstor/AtaDataTypeLogPage, storage.storage_protocol_ata_data_type, STORAGE_PROTOCOL_ATA_DATA_TYPE enumeration [Storage Devices], AtaDataTypeLogPage, PSTORAGE_PROTOCOL_ATA_DATA_TYPE enumeration pointer [Storage Devices], _STORAGE_PROTOCOL_ATA_DATA_TYPE, AtaDataTypeUnknown, PSTORAGE_PROTOCOL_ATA_DATA_TYPE, ntddstor/PSTORAGE_PROTOCOL_ATA_DATA_TYPE, ntddstor/STORAGE_PROTOCOL_ATA_DATA_TYPE, ntddstor/AtaDataTypeIdentify, AtaDataTypeIdentify, STORAGE_PROTOCOL_ATA_DATA_TYPE, ntddstor/AtaDataTypeUnknown"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : ntddstor.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSTORAGE_PROTOCOL_ATA_DATA_TYPE, STORAGE_PROTOCOL_ATA_DATA_TYPE"
+UID: NE:ntddstor._STORAGE_PROTOCOL_ATA_DATA_TYPE
+title: "_STORAGE_PROTOCOL_ATA_DATA_TYPE"
+author: windows-driver-content
+description: The ATA protocol data type.
+old-location: storage\storage_protocol_ata_data_type.htm
+old-project: storage
+ms.assetid: 4B42E143-17F5-4841-A9EA-C225B167E242
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: "*PSTORAGE_PROTOCOL_ATA_DATA_TYPE, ntddstor/AtaDataTypeLogPage, storage.storage_protocol_ata_data_type, STORAGE_PROTOCOL_ATA_DATA_TYPE enumeration [Storage Devices], AtaDataTypeLogPage, PSTORAGE_PROTOCOL_ATA_DATA_TYPE enumeration pointer [Storage Devices], _STORAGE_PROTOCOL_ATA_DATA_TYPE, AtaDataTypeUnknown, PSTORAGE_PROTOCOL_ATA_DATA_TYPE, ntddstor/PSTORAGE_PROTOCOL_ATA_DATA_TYPE, ntddstor/STORAGE_PROTOCOL_ATA_DATA_TYPE, ntddstor/AtaDataTypeIdentify, AtaDataTypeIdentify, STORAGE_PROTOCOL_ATA_DATA_TYPE, ntddstor/AtaDataTypeUnknown"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: ntddstor.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddstor.h
+apiname:
+-	STORAGE_PROTOCOL_ATA_DATA_TYPE
+product: Windows
+targetos: Windows
+req.typenames: "*PSTORAGE_PROTOCOL_ATA_DATA_TYPE, STORAGE_PROTOCOL_ATA_DATA_TYPE"
 ---
 
 # _STORAGE_PROTOCOL_ATA_DATA_TYPE Enumeration
@@ -54,26 +59,26 @@ typedef enum _STORAGE_PROTOCOL_ATA_DATA_TYPE {
 ## Constants
 
 <table>
-
-<tr>
-<td>AtaDataTypeIdentify</td>
-<td>Identify device data type.</td>
-</tr>
-
-<tr>
-<td>AtaDataTypeLogPage</td>
-<td>Log page data type.</td>
-</tr>
-
-<tr>
-<td>AtaDataTypeUnknown</td>
-<td>Unknown data type.</td>
-</tr>
+            
+                <tr>
+                    <td>AtaDataTypeIdentify</td>
+                    <td>Identify device data type.</td>
+                </tr>
+            
+                <tr>
+                    <td>AtaDataTypeLogPage</td>
+                    <td>Log page data type.</td>
+                </tr>
+            
+                <tr>
+                    <td>AtaDataTypeUnknown</td>
+                    <td>Unknown data type.</td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-When using <a href="..\ntddstor\ni-ntddstor-ioctl_storage_query_property.md">IOCTL_STORAGE_QUERY_PROPERTY</a> to retrieve protocol-specific information in the <a href="..\ntddstor\ns-ntddstor-_storage_protocol_data_descriptor.md">STORAGE_PROTOCOL_DATA_DESCRIPTOR</a>, configure the <a href="..\ntddstor\ns-ntddstor-_storage_property_query.md">STORAGE_PROPERTY_QUERY</a> structure as follows:
+        When using <a href="..\ntddstor\ni-ntddstor-ioctl_storage_query_property.md">IOCTL_STORAGE_QUERY_PROPERTY</a> to retrieve protocol-specific information in the <a href="..\ntddstor\ns-ntddstor-_storage_protocol_data_descriptor.md">STORAGE_PROTOCOL_DATA_DESCRIPTOR</a>, configure the <a href="..\ntddstor\ns-ntddstor-_storage_property_query.md">STORAGE_PROPERTY_QUERY</a> structure as follows:
 <ul>
 <li>
 Allocate a buffer that can contains both a <a href="..\ntddstor\ns-ntddstor-_storage_property_query.md">STORAGE_PROPERTY_QUERY</a> and a <a href="..\ntddstor\ns-ntddstor-_storage_protocol_specific_data.md">STORAGE_PROTOCOL_SPECIFIC_DATA</a> structure.

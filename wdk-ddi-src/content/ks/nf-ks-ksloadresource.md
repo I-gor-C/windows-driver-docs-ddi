@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsLoadResource
-title : KsLoadResource function
-author : windows-driver-content
-description : Copies (loads) a resource from the given image.
-old-location : stream\ksloadresource.htm
-old-project : stream
-ms.assetid : a7b9dcca-ce89-4fde-9e58-3c4a675227bc
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ksfunc_d966a58a-b0f0-411f-a19c-1db726efc56e.xml, ks/KsLoadResource, KsLoadResource, stream.ksloadresource, KsLoadResource function [Streaming Media Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsLoadResource
+title: KsLoadResource function
+author: windows-driver-content
+description: Copies (loads) a resource from the given image.
+old-location: stream\ksloadresource.htm
+old-project: stream
+ms.assetid: a7b9dcca-ce89-4fde-9e58-3c4a675227bc
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ksfunc_d966a58a-b0f0-411f-a19c-1db726efc56e.xml, ks/KsLoadResource, KsLoadResource, stream.ksloadresource, KsLoadResource function [Streaming Media Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsLoadResource
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

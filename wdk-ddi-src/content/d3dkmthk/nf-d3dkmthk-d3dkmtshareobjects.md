@@ -1,41 +1,49 @@
 ---
-UID : NF:d3dkmthk.D3DKMTShareObjects
-title : D3DKMTShareObjects function
-author : windows-driver-content
-description : Shares resource objects that were created with the D3DKMTCreateAllocation, D3DKMTCreateKeyedMutex2, and D3DKMTCreateSynchronizationObject2 functions.
-old-location : display\d3dkmtshareobjects.htm
-old-project : display
-ms.assetid : 853c4e73-b571-4b68-8690-bbef7a726c8e
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DKMTShareObjects function [Display Devices], D3DKMTShareObjects, display.d3dkmtshareobjects, d3dkmthk/D3DKMTShareObjects
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Universal
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : GDI32.lib
-req.dll : GDI32.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_DRIVERVERSION
+UID: NF:d3dkmthk.D3DKMTShareObjects
+title: D3DKMTShareObjects function
+author: windows-driver-content
+description: Shares resource objects that were created with the D3DKMTCreateAllocation, D3DKMTCreateKeyedMutex2, and D3DKMTCreateSynchronizationObject2 functions.
+old-location: display\d3dkmtshareobjects.htm
+old-project: display
+ms.assetid: 853c4e73-b571-4b68-8690-bbef7a726c8e
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DKMTShareObjects function [Display Devices], D3DKMTShareObjects, display.d3dkmtshareobjects, d3dkmthk/D3DKMTShareObjects
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Universal
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: GDI32.lib
+req.dll: GDI32.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	GDI32.dll
+-	API-MS-Win-dx-d3dkmt-l1-1-0.dll
+-	API-MS-Win-dx-d3dkmt-l1-1-1.dll
+-	API-MS-Win-DX-D3DKMT-L1-1-2.dll
+apiname:
+-	D3DKMTShareObjects
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_DRIVERVERSION
 ---
 
 

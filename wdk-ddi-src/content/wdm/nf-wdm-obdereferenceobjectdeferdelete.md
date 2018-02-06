@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.ObDereferenceObjectDeferDelete
-title : ObDereferenceObjectDeferDelete function
-author : windows-driver-content
-description : The ObDereferenceObjectDeferDelete routine decrements the reference count for the given object, checks for object retention, and avoids deadlocks.
-old-location : kernel\obdereferenceobjectdeferdelete.htm
-old-project : kernel
-ms.assetid : 6b20db9e-807d-40f5-844f-f9726e3a854f
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/ObDereferenceObjectDeferDelete, kernel.obdereferenceobjectdeferdelete, ObDereferenceObjectDeferDelete routine [Kernel-Mode Driver Architecture], ObDereferenceObjectDeferDelete, k107_d20a8bd1-feff-4c48-8c6f-ccf8a119281b.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Fltkernel.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later versions of Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ObDereferenceObjectDeferDelete
+title: ObDereferenceObjectDeferDelete function
+author: windows-driver-content
+description: The ObDereferenceObjectDeferDelete routine decrements the reference count for the given object, checks for object retention, and avoids deadlocks.
+old-location: kernel\obdereferenceobjectdeferdelete.htm
+old-project: kernel
+ms.assetid: 6b20db9e-807d-40f5-844f-f9726e3a854f
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/ObDereferenceObjectDeferDelete, kernel.obdereferenceobjectdeferdelete, ObDereferenceObjectDeferDelete routine [Kernel-Mode Driver Architecture], ObDereferenceObjectDeferDelete, k107_d20a8bd1-feff-4c48-8c6f-ccf8a119281b.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Fltkernel.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later versions of Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ObDereferenceObjectDeferDelete
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,47 @@
 ---
-UID : NF:fltkernel.FltAttachVolume
-title : FltAttachVolume function
-author : windows-driver-content
-description : FltAttachVolume creates a new minifilter driver instance and attaches it to the given volume.
-old-location : ifsk\fltattachvolume.htm
-old-project : ifsk
-ms.assetid : da85c8d6-a74c-4a87-88b3-fb6dc01dd0f9
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.fltattachvolume, FltApiRef_a_to_d_f4ac8b0d-55c2-45b1-8f3b-3a09bee7bb23.xml, FltAttachVolume, FltAttachVolume function [Installable File System Drivers], fltkernel/FltAttachVolume
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltAttachVolume
+title: FltAttachVolume function
+author: windows-driver-content
+description: FltAttachVolume creates a new minifilter driver instance and attaches it to the given volume.
+old-location: ifsk\fltattachvolume.htm
+old-project: ifsk
+ms.assetid: da85c8d6-a74c-4a87-88b3-fb6dc01dd0f9
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.fltattachvolume, FltApiRef_a_to_d_f4ac8b0d-55c2-45b1-8f3b-3a09bee7bb23.xml, FltAttachVolume, FltAttachVolume function [Installable File System Drivers], fltkernel/FltAttachVolume
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	FltMgr.lib
+-	FltMgr.dll
+apiname:
+-	FltAttachVolume
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

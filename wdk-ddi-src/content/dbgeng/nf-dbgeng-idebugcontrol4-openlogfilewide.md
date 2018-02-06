@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugControl4.OpenLogFileWide
-title : IDebugControl4::OpenLogFileWide method
-author : windows-driver-content
-description : The OpenLogFileWide method opens a log file that will receive output from the client objects.
-old-location : debugger\openlogfilewide.htm
-old-project : debugger
-ms.assetid : 1e69812e-077e-476f-a253-f0c39575eb32
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : OpenLogFileWide method [Windows Debugging], OpenLogFileWide method [Windows Debugging], IDebugControl4 interface, OpenLogFileWide, dbgeng/IDebugControl4::OpenLogFileWide, debugger.openlogfilewide, IDebugControl4::OpenLogFileWide, IDebugControl4 interface [Windows Debugging], OpenLogFileWide method, IDebugControl4
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl4.OpenLogFileWide
+title: IDebugControl4::OpenLogFileWide method
+author: windows-driver-content
+description: The OpenLogFileWide method opens a log file that will receive output from the client objects.
+old-location: debugger\openlogfilewide.htm
+old-project: debugger
+ms.assetid: 1e69812e-077e-476f-a253-f0c39575eb32
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: OpenLogFileWide method [Windows Debugging], OpenLogFileWide method [Windows Debugging], IDebugControl4 interface, OpenLogFileWide, dbgeng/IDebugControl4::OpenLogFileWide, debugger.openlogfilewide, IDebugControl4::OpenLogFileWide, IDebugControl4 interface [Windows Debugging], OpenLogFileWide method, IDebugControl4
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl4.OpenLogFileWide
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.RtlUpcaseUnicodeStringToCountedOemString
-title : RtlUpcaseUnicodeStringToCountedOemString function
-author : windows-driver-content
-description : The RtlUpcaseUnicodeStringToCountedOemString routine translates a given Unicode source string into an uppercase counted OEM string using the current system OEM code page.
-old-location : ifsk\rtlupcaseunicodestringtocountedoemstring.htm
-old-project : ifsk
-ms.assetid : c1e466d7-892f-4049-a6c2-60ab8f960acb
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : RtlUpcaseUnicodeStringToCountedOemString routine [Installable File System Drivers], RtlUpcaseUnicodeStringToCountedOemString, ifsk.rtlupcaseunicodestringtocountedoemstring, rtlref_54925045-9df1-41ef-9878-030f30e2a0f1.xml, ntifs/RtlUpcaseUnicodeStringToCountedOemString
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "< DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.RtlUpcaseUnicodeStringToCountedOemString
+title: RtlUpcaseUnicodeStringToCountedOemString function
+author: windows-driver-content
+description: The RtlUpcaseUnicodeStringToCountedOemString routine translates a given Unicode source string into an uppercase counted OEM string using the current system OEM code page.
+old-location: ifsk\rtlupcaseunicodestringtocountedoemstring.htm
+old-project: ifsk
+ms.assetid: c1e466d7-892f-4049-a6c2-60ab8f960acb
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: RtlUpcaseUnicodeStringToCountedOemString routine [Installable File System Drivers], RtlUpcaseUnicodeStringToCountedOemString, ifsk.rtlupcaseunicodestringtocountedoemstring, rtlref_54925045-9df1-41ef-9878-030f30e2a0f1.xml, ntifs/RtlUpcaseUnicodeStringToCountedOemString
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "< DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	RtlUpcaseUnicodeStringToCountedOemString
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

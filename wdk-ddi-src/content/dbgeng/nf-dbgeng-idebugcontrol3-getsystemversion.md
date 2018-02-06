@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugControl3.GetSystemVersion
-title : IDebugControl3::GetSystemVersion method
-author : windows-driver-content
-description : The GetSystemVersion method returns information that identifies the operating system on the computer that is running the current target.
-old-location : debugger\getsystemversion.htm
-old-project : debugger
-ms.assetid : 9418ac12-3de0-4477-a725-437700c4d83c
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugControl3 interface [Windows Debugging], GetSystemVersion method, dbgeng/IDebugControl2::GetSystemVersion, IDebugControl3::GetSystemVersion, dbgeng/IDebugControl3::GetSystemVersion, IDebugControl3, debugger.getsystemversion, GetSystemVersion method [Windows Debugging], IDebugControl2 interface, IDebugControl interface [Windows Debugging], GetSystemVersion method, IDebugControl::GetSystemVersion, dbgeng/IDebugControl::GetSystemVersion, IDebugControl2::GetSystemVersion, GetSystemVersion, GetSystemVersion method [Windows Debugging], IDebugControl interface, GetSystemVersion method [Windows Debugging], IDebugControl_92a4c34c-aa39-43e5-ad31-0ce26e45c246.xml, IDebugControl2 interface [Windows Debugging], GetSystemVersion method, GetSystemVersion method [Windows Debugging], IDebugControl3 interface
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h, Ntddk.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl3.GetSystemVersion
+title: IDebugControl3::GetSystemVersion method
+author: windows-driver-content
+description: The GetSystemVersion method returns information that identifies the operating system on the computer that is running the current target.
+old-location: debugger\getsystemversion.htm
+old-project: debugger
+ms.assetid: 9418ac12-3de0-4477-a725-437700c4d83c
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugControl3 interface [Windows Debugging], GetSystemVersion method, dbgeng/IDebugControl2::GetSystemVersion, IDebugControl3::GetSystemVersion, dbgeng/IDebugControl3::GetSystemVersion, IDebugControl3, debugger.getsystemversion, GetSystemVersion method [Windows Debugging], IDebugControl2 interface, IDebugControl interface [Windows Debugging], GetSystemVersion method, IDebugControl::GetSystemVersion, dbgeng/IDebugControl::GetSystemVersion, IDebugControl2::GetSystemVersion, GetSystemVersion, GetSystemVersion method [Windows Debugging], IDebugControl interface, GetSystemVersion method [Windows Debugging], IDebugControl_92a4c34c-aa39-43e5-ad31-0ce26e45c246.xml, IDebugControl2 interface [Windows Debugging], GetSystemVersion method, GetSystemVersion method [Windows Debugging], IDebugControl3 interface
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h, Ntddk.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl.GetSystemVersion
+-	IDebugControl2.GetSystemVersion
+-	IDebugControl3.GetSystemVersion
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

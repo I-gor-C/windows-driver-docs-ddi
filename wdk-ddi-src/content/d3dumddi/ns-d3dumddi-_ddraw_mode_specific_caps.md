@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._DDRAW_MODE_SPECIFIC_CAPS
-title : "_DDRAW_MODE_SPECIFIC_CAPS"
-author : windows-driver-content
-description : The DDRAW_MODE_SPECIFIC_CAPS structure describes Microsoft DirectDraw capabilities that are specific to a particular display device (head) on the graphics card.
-old-location : display\ddraw_mode_specific_caps.htm
-old-project : display
-ms.assetid : 4434e2cb-af36-446b-b84e-f303ba315cd3
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DDRAW_MODE_SPECIFIC_CAPS structure [Display Devices], D3D_other_Structs_21634851-4693-46c9-b742-f2001e63f349.xml, DDRAW_MODE_SPECIFIC_CAPS, display.ddraw_mode_specific_caps, d3dumddi/DDRAW_MODE_SPECIFIC_CAPS, _DDRAW_MODE_SPECIFIC_CAPS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DDRAW_MODE_SPECIFIC_CAPS
+UID: NS:d3dumddi._DDRAW_MODE_SPECIFIC_CAPS
+title: "_DDRAW_MODE_SPECIFIC_CAPS"
+author: windows-driver-content
+description: The DDRAW_MODE_SPECIFIC_CAPS structure describes Microsoft DirectDraw capabilities that are specific to a particular display device (head) on the graphics card.
+old-location: display\ddraw_mode_specific_caps.htm
+old-project: display
+ms.assetid: 4434e2cb-af36-446b-b84e-f303ba315cd3
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DDRAW_MODE_SPECIFIC_CAPS structure [Display Devices], D3D_other_Structs_21634851-4693-46c9-b742-f2001e63f349.xml, DDRAW_MODE_SPECIFIC_CAPS, display.ddraw_mode_specific_caps, d3dumddi/DDRAW_MODE_SPECIFIC_CAPS, _DDRAW_MODE_SPECIFIC_CAPS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	DDRAW_MODE_SPECIFIC_CAPS
+product: Windows
+targetos: Windows
+req.typenames: DDRAW_MODE_SPECIFIC_CAPS
 ---
 
 # _DDRAW_MODE_SPECIFIC_CAPS structure

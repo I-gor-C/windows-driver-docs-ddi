@@ -1,42 +1,47 @@
 ---
-UID : NE:rilapitypes.RILPHONEBOOKINFOPARAMMASK
-title : RILPHONEBOOKINFOPARAMMASK
-author : windows-driver-content
-description : This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
-old-location : netvista\rilphonebookinfoparammask_2.htm
-old-project : netvista
-ms.assetid : 5c56186c-44a7-4948-a74a-9337dd47d0a7
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : RIL_PARAM_PBI_MAXSNELENGTH, RIL_PARAM_PBI_MAXGROUPS, rilapitypes/RIL_PARAM_PBI_USEDAAS, rilapitypes/RIL_PARAM_PBI_MAXEMAILLENGTH, rilapitypes/RIL_PARAM_PBI_TOTALGAS, rilapitypes/RIL_PARAM_PBI_TOTAL, RIL_PARAM_PBI_MAXANR, RIL_PARAM_PBI_ADDRESSLENGTH, RIL_PARAM_PBI_TEXTLENGTH, RIL_PARAM_PBI_TOTALGAS, rilapitypes/RIL_PARAM_PBI_MAXSNELENGTH, rilapitypes/RIL_PARAM_PBI_ADDRESSLENGTH, rilapitypes/RIL_PARAM_PBI_MAXANR, RIL_PARAM_PBI_MAXANRLENGTH, rilapitypes/RIL_PARAM_PBI_MAXGASLENGTH, rilapitypes/RIL_PARAM_PBI_MAXAASTEXTLENGTH, rilapitypes/RIL_PARAM_PBI_MAXGROUPS, rilapitypes/RILPHONEBOOKINFOPARAMMASK, rilapitypes/RIL_PARAM_PBI_MAXANRLENGTH, RIL_PARAM_PBI_ALL, RILPHONEBOOKINFOPARAMMASK, RILPHONEBOOKINFOPARAMMASK enumeration [Network Drivers Starting with Windows Vista], RIL_PARAM_PBI_MAXEMAILLENGTH, RIL_PARAM_PBI_MAXAASTEXTLENGTH, RIL_PARAM_PBI_TOTALAAS, netvista.rilphonebookinfoparammask_2, RIL_PARAM_PBI_USEDGAS, rilapitypes/RIL_PARAM_PBI_ALL, rilapitypes/RIL_PARAM_PBI_TOTALAAS, RIL_PARAM_PBI_USEDAAS, RIL_PARAM_PBI_MAXEMAILS, rilapitypes/RIL_PARAM_PBI_MAXEMAILS, RIL_PARAM_PBI_MAXGASLENGTH, rilapitypes/RIL_PARAM_PBI_TEXTLENGTH, rilapitypes/RIL_PARAM_PBI_USEDGAS, RIL_PARAM_PBI_TOTAL
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : rilapitypes.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RILPHONEBOOKINFOPARAMMASK
-req.product : Windows 10 or later.
+UID: NE:rilapitypes.RILPHONEBOOKINFOPARAMMASK
+title: RILPHONEBOOKINFOPARAMMASK
+author: windows-driver-content
+description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+old-location: netvista\rilphonebookinfoparammask_2.htm
+old-project: netvista
+ms.assetid: 5c56186c-44a7-4948-a74a-9337dd47d0a7
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: RIL_PARAM_PBI_MAXSNELENGTH, RIL_PARAM_PBI_MAXGROUPS, rilapitypes/RIL_PARAM_PBI_USEDAAS, rilapitypes/RIL_PARAM_PBI_MAXEMAILLENGTH, rilapitypes/RIL_PARAM_PBI_TOTALGAS, rilapitypes/RIL_PARAM_PBI_TOTAL, RIL_PARAM_PBI_MAXANR, RIL_PARAM_PBI_ADDRESSLENGTH, RIL_PARAM_PBI_TEXTLENGTH, RIL_PARAM_PBI_TOTALGAS, rilapitypes/RIL_PARAM_PBI_MAXSNELENGTH, rilapitypes/RIL_PARAM_PBI_ADDRESSLENGTH, rilapitypes/RIL_PARAM_PBI_MAXANR, RIL_PARAM_PBI_MAXANRLENGTH, rilapitypes/RIL_PARAM_PBI_MAXGASLENGTH, rilapitypes/RIL_PARAM_PBI_MAXAASTEXTLENGTH, rilapitypes/RIL_PARAM_PBI_MAXGROUPS, rilapitypes/RILPHONEBOOKINFOPARAMMASK, rilapitypes/RIL_PARAM_PBI_MAXANRLENGTH, RIL_PARAM_PBI_ALL, RILPHONEBOOKINFOPARAMMASK, RILPHONEBOOKINFOPARAMMASK enumeration [Network Drivers Starting with Windows Vista], RIL_PARAM_PBI_MAXEMAILLENGTH, RIL_PARAM_PBI_MAXAASTEXTLENGTH, RIL_PARAM_PBI_TOTALAAS, netvista.rilphonebookinfoparammask_2, RIL_PARAM_PBI_USEDGAS, rilapitypes/RIL_PARAM_PBI_ALL, rilapitypes/RIL_PARAM_PBI_TOTALAAS, RIL_PARAM_PBI_USEDAAS, RIL_PARAM_PBI_MAXEMAILS, rilapitypes/RIL_PARAM_PBI_MAXEMAILS, RIL_PARAM_PBI_MAXGASLENGTH, rilapitypes/RIL_PARAM_PBI_TEXTLENGTH, rilapitypes/RIL_PARAM_PBI_USEDGAS, RIL_PARAM_PBI_TOTAL
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: rilapitypes.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	rilapitypes.h
+apiname:
+-	RILPHONEBOOKINFOPARAMMASK
+product: Windows
+targetos: Windows
+req.typenames: RILPHONEBOOKINFOPARAMMASK
+req.product: Windows 10 or later.
 ---
 
 # RILPHONEBOOKINFOPARAMMASK Enumeration
@@ -67,91 +72,91 @@ typedef enum _RILPHONEBOOKINFOPARAMMASK {
 ## Constants
 
 <table>
-
-<tr>
-<td>RIL_PARAM_PBI_ADDRESSLENGTH</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_PARAM_PBI_ALL</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_PARAM_PBI_MAXAASTEXTLENGTH</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_PARAM_PBI_MAXANR</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_PARAM_PBI_MAXANRLENGTH</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_PARAM_PBI_MAXEMAILLENGTH</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_PARAM_PBI_MAXEMAILS</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_PARAM_PBI_MAXGASLENGTH</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_PARAM_PBI_MAXGROUPS</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_PARAM_PBI_MAXSNELENGTH</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_PARAM_PBI_TEXTLENGTH</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_PARAM_PBI_TOTAL</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_PARAM_PBI_TOTALAAS</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_PARAM_PBI_TOTALGAS</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_PARAM_PBI_USED</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_PARAM_PBI_USEDAAS</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_PARAM_PBI_USEDGAS</td>
-<td></td>
-</tr>
+            
+                <tr>
+                    <td>RIL_PARAM_PBI_ADDRESSLENGTH</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_PBI_ALL</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_PBI_MAXAASTEXTLENGTH</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_PBI_MAXANR</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_PBI_MAXANRLENGTH</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_PBI_MAXEMAILLENGTH</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_PBI_MAXEMAILS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_PBI_MAXGASLENGTH</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_PBI_MAXGROUPS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_PBI_MAXSNELENGTH</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_PBI_TEXTLENGTH</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_PBI_TOTAL</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_PBI_TOTALAAS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_PBI_TOTALGAS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_PBI_USED</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_PBI_USEDAAS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_PBI_USEDGAS</td>
+                    <td></td>
+                </tr>
 </table>
 
 

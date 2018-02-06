@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmthk._D3DKMT_WAITFORIDLE
-title : "_D3DKMT_WAITFORIDLE"
-author : windows-driver-content
-description : The D3DKMT_WAITFORIDLE structure specifies a display device to wait for an idle condition.
-old-location : display\d3dkmt_waitforidle.htm
-old-project : display
-ms.assetid : 0f590f5f-5ffe-4d83-86b0-e8dd0bfa5b8f
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : OpenGL_Structs_99c47b61-1104-476f-bf7e-312d7cd0ec02.xml, d3dkmthk/D3DKMT_WAITFORIDLE, _D3DKMT_WAITFORIDLE, D3DKMT_WAITFORIDLE structure [Display Devices], display.d3dkmt_waitforidle, D3DKMT_WAITFORIDLE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_WAITFORIDLE
+UID: NS:d3dkmthk._D3DKMT_WAITFORIDLE
+title: "_D3DKMT_WAITFORIDLE"
+author: windows-driver-content
+description: The D3DKMT_WAITFORIDLE structure specifies a display device to wait for an idle condition.
+old-location: display\d3dkmt_waitforidle.htm
+old-project: display
+ms.assetid: 0f590f5f-5ffe-4d83-86b0-e8dd0bfa5b8f
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: OpenGL_Structs_99c47b61-1104-476f-bf7e-312d7cd0ec02.xml, d3dkmthk/D3DKMT_WAITFORIDLE, _D3DKMT_WAITFORIDLE, D3DKMT_WAITFORIDLE structure [Display Devices], display.d3dkmt_waitforidle, D3DKMT_WAITFORIDLE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmthk.h
+apiname:
+-	D3DKMT_WAITFORIDLE
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_WAITFORIDLE
 ---
 
 # _D3DKMT_WAITFORIDLE structure

@@ -1,41 +1,46 @@
 ---
-UID : NC:netdispumdddi.PFN_DESTROY_MIRACAST_CONTEXT
-title : PFN_DESTROY_MIRACAST_CONTEXT
-author : windows-driver-content
-description : Called by the operating system to destroy a user-mode Miracast context.
-old-location : display\destroymiracastcontext.htm
-old-project : display
-ms.assetid : 1b155e15-1e4e-45bb-98cc-f1c19923ed2c
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.destroymiracastcontext, DestroyMiracastContext callback function [Display Devices], DestroyMiracastContext, PFN_DESTROY_MIRACAST_CONTEXT, PFN_DESTROY_MIRACAST_CONTEXT, netdispumdddi/DestroyMiracastContext
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : netdispumdddi.h
-req.include-header : Netdispumdddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8.1
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDK_SRQ_DISPATCH
+UID: NC:netdispumdddi.PFN_DESTROY_MIRACAST_CONTEXT
+title: PFN_DESTROY_MIRACAST_CONTEXT
+author: windows-driver-content
+description: Called by the operating system to destroy a user-mode Miracast context.
+old-location: display\destroymiracastcontext.htm
+old-project: display
+ms.assetid: 1b155e15-1e4e-45bb-98cc-f1c19923ed2c
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.destroymiracastcontext, DestroyMiracastContext callback function [Display Devices], DestroyMiracastContext, PFN_DESTROY_MIRACAST_CONTEXT, PFN_DESTROY_MIRACAST_CONTEXT, netdispumdddi/DestroyMiracastContext
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: netdispumdddi.h
+req.include-header: Netdispumdddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8.1
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Netdispumdddi.h
+apiname:
+-	DestroyMiracastContext
+product: Windows
+targetos: Windows
+req.typenames: NDK_SRQ_DISPATCH
 ---
 
 

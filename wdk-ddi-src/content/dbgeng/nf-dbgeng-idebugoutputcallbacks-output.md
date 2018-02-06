@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugOutputCallbacks.Output
-title : IDebugOutputCallbacks::Output method
-author : windows-driver-content
-description : The Output callback method is called by the engine to send output from the client to the IDebugOutputCallbacks object that is registered with the client.
-old-location : debugger\idebugoutputcallbacks_output.htm
-old-project : debugger
-ms.assetid : 6d0352ae-0376-4992-89ef-90702591042e
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugOutputCallbacks::Output, dbgeng/IDebugOutputCallbacks::Output, Output method [Windows Debugging], IDebugOutputCallbacks, ComCallbacks_9b5e22d8-aa8d-498e-b3b5-ad6d73462db4.xml, debugger.idebugoutputcallbacks_output, IDebugOutputCallbacks interface [Windows Debugging], Output method, Output, Output method [Windows Debugging], IDebugOutputCallbacks interface
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugOutputCallbacks.Output
+title: IDebugOutputCallbacks::Output method
+author: windows-driver-content
+description: The Output callback method is called by the engine to send output from the client to the IDebugOutputCallbacks object that is registered with the client.
+old-location: debugger\idebugoutputcallbacks_output.htm
+old-project: debugger
+ms.assetid: 6d0352ae-0376-4992-89ef-90702591042e
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugOutputCallbacks::Output, dbgeng/IDebugOutputCallbacks::Output, Output method [Windows Debugging], IDebugOutputCallbacks, ComCallbacks_9b5e22d8-aa8d-498e-b3b5-ad6d73462db4.xml, debugger.idebugoutputcallbacks_output, IDebugOutputCallbacks interface [Windows Debugging], Output method, Output, Output method [Windows Debugging], IDebugOutputCallbacks interface
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugOutputCallbacks.Output
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

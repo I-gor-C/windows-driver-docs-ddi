@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFDevice.ConfigureRequestDispatching
-title : IWDFDevice::ConfigureRequestDispatching method
-author : windows-driver-content
-description : The ConfigureRequestDispatching method configures the queuing of I/O requests of the specified type to the specified I/O queue.
-old-location : wdf\iwdfdevice_configurerequestdispatching.htm
-old-project : wdf
-ms.assetid : b3318695-e9f2-480a-9133-9008ef0002b7
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : UMDFDeviceObjectRef_1fbf31c6-856c-45d2-aa86-3b36372821c8.xml, ConfigureRequestDispatching method, IWDFDevice interface, IWDFDevice interface, ConfigureRequestDispatching method, wudfddi/IWDFDevice::ConfigureRequestDispatching, umdf.iwdfdevice_configurerequestdispatching, wdf.iwdfdevice_configurerequestdispatching, IWDFDevice, ConfigureRequestDispatching, ConfigureRequestDispatching method, IWDFDevice::ConfigureRequestDispatching
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.5
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFDevice.ConfigureRequestDispatching
+title: IWDFDevice::ConfigureRequestDispatching method
+author: windows-driver-content
+description: The ConfigureRequestDispatching method configures the queuing of I/O requests of the specified type to the specified I/O queue.
+old-location: wdf\iwdfdevice_configurerequestdispatching.htm
+old-project: wdf
+ms.assetid: b3318695-e9f2-480a-9133-9008ef0002b7
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: UMDFDeviceObjectRef_1fbf31c6-856c-45d2-aa86-3b36372821c8.xml, ConfigureRequestDispatching method, IWDFDevice interface, IWDFDevice interface, ConfigureRequestDispatching method, wudfddi/IWDFDevice::ConfigureRequestDispatching, umdf.iwdfdevice_configurerequestdispatching, wdf.iwdfdevice_configurerequestdispatching, IWDFDevice, ConfigureRequestDispatching, ConfigureRequestDispatching method, IWDFDevice::ConfigureRequestDispatching
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.5
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFDevice.ConfigureRequestDispatching
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

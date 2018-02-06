@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.KSPROPERTY_EXTXPORT_S
-title : KSPROPERTY_EXTXPORT_S
-author : windows-driver-content
-description : The KSPROPERTY_EXTXPORT_S structure describes an external transport and its capabilities.
-old-location : stream\ksproperty_extxport_s.htm
-old-project : stream
-ms.assetid : 01132969-b459-4110-a067-fda6c7ee5510
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ksmedia/PKSPROPERTY_EXTXPORT_S, *PKSPROPERTY_EXTXPORT_S, KSPROPERTY_EXTXPORT_S structure [Streaming Media Devices], vidcapstruct_9cd12be8-0378-481b-80e3-81b3decc1823.xml, stream.ksproperty_extxport_s, KSPROPERTY_EXTXPORT_S, PKSPROPERTY_EXTXPORT_S, ksmedia/KSPROPERTY_EXTXPORT_S, PKSPROPERTY_EXTXPORT_S structure pointer [Streaming Media Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKSPROPERTY_EXTXPORT_S, KSPROPERTY_EXTXPORT_S"
+UID: NS:ksmedia.KSPROPERTY_EXTXPORT_S
+title: KSPROPERTY_EXTXPORT_S
+author: windows-driver-content
+description: The KSPROPERTY_EXTXPORT_S structure describes an external transport and its capabilities.
+old-location: stream\ksproperty_extxport_s.htm
+old-project: stream
+ms.assetid: 01132969-b459-4110-a067-fda6c7ee5510
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ksmedia/PKSPROPERTY_EXTXPORT_S, *PKSPROPERTY_EXTXPORT_S, KSPROPERTY_EXTXPORT_S structure [Streaming Media Devices], vidcapstruct_9cd12be8-0378-481b-80e3-81b3decc1823.xml, stream.ksproperty_extxport_s, KSPROPERTY_EXTXPORT_S, PKSPROPERTY_EXTXPORT_S, ksmedia/KSPROPERTY_EXTXPORT_S, PKSPROPERTY_EXTXPORT_S structure pointer [Streaming Media Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	KSPROPERTY_EXTXPORT_S
+product: Windows
+targetos: Windows
+req.typenames: "*PKSPROPERTY_EXTXPORT_S, KSPROPERTY_EXTXPORT_S"
 ---
 
 # KSPROPERTY_EXTXPORT_S structure

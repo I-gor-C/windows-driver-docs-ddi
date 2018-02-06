@@ -1,42 +1,48 @@
 ---
-UID : NF:sensorsclassextension.ISensorClassExtension.PostStateChange
-title : ISensorClassExtension::PostStateChange method
-author : windows-driver-content
-description : The ISensorClassExtension::PostStateChange method notifies the sensor class extension about a change in the operational state of the sensor.
-old-location : sensors\isensorclassextension_poststatechange.htm
-old-project : sensors
-ms.assetid : ae3bc846-df63-4186-9554-f4600e1f2066
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : PostStateChange, sensors.isensorclassextension_poststatechange, PostStateChange method [Sensor Devices], ISensorClassExtension interface [Sensor Devices], PostStateChange method, sensorsclassextension/ISensorClassExtension::PostStateChange, ISensorClassExtension::PostStateChange, ISensorClassExtension, PostStateChange method [Sensor Devices], ISensorClassExtension interface, Sensor_IFaces_b6cc2565-ed4f-48cb-83ea-8d03322c2670.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : sensorsclassextension.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 7,Available in Windows 7.
-req.target-min-winversvr : None supported
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : SensorsClassExtension.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SensorConnectionType
-req.product : Windows 10 or later.
+UID: NF:sensorsclassextension.ISensorClassExtension.PostStateChange
+title: ISensorClassExtension::PostStateChange method
+author: windows-driver-content
+description: The ISensorClassExtension::PostStateChange method notifies the sensor class extension about a change in the operational state of the sensor.
+old-location: sensors\isensorclassextension_poststatechange.htm
+old-project: sensors
+ms.assetid: ae3bc846-df63-4186-9554-f4600e1f2066
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: PostStateChange, sensors.isensorclassextension_poststatechange, PostStateChange method [Sensor Devices], ISensorClassExtension interface [Sensor Devices], PostStateChange method, sensorsclassextension/ISensorClassExtension::PostStateChange, ISensorClassExtension::PostStateChange, ISensorClassExtension, PostStateChange method [Sensor Devices], ISensorClassExtension interface, Sensor_IFaces_b6cc2565-ed4f-48cb-83ea-8d03322c2670.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: sensorsclassextension.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 7,Available in Windows 7.
+req.target-min-winversvr: None supported
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: SensorsClassExtension.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	SensorsClassExtension.lib
+-	SensorsClassExtension.dll
+apiname:
+-	ISensorClassExtension.PostStateChange
+product: Windows
+targetos: Windows
+req.typenames: SensorConnectionType
+req.product: Windows 10 or later.
 ---
 
 

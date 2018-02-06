@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugControl3.SetTextMacro
-title : IDebugControl3::SetTextMacro method
-author : windows-driver-content
-description : The SetTextMacro method sets the value of a fixed-name alias.
-old-location : debugger\settextmacro.htm
-old-project : debugger
-ms.assetid : 8319ab12-bb23-4de4-b3dc-afd3cd13d03e
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugControl2::SetTextMacro, dbgeng/IDebugControl::SetTextMacro, debugger.settextmacro, IDebugControl_5eac09ea-004d-4231-b865-d191790880fc.xml, SetTextMacro, SetTextMacro method [Windows Debugging], SetTextMacro method [Windows Debugging], IDebugControl2 interface, dbgeng/IDebugControl2::SetTextMacro, IDebugControl3, IDebugControl3::SetTextMacro, dbgeng/IDebugControl3::SetTextMacro, IDebugControl interface [Windows Debugging], SetTextMacro method, SetTextMacro method [Windows Debugging], IDebugControl3 interface, SetTextMacro method [Windows Debugging], IDebugControl interface, IDebugControl::SetTextMacro, IDebugControl3 interface [Windows Debugging], SetTextMacro method, IDebugControl2 interface [Windows Debugging], SetTextMacro method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl3.SetTextMacro
+title: IDebugControl3::SetTextMacro method
+author: windows-driver-content
+description: The SetTextMacro method sets the value of a fixed-name alias.
+old-location: debugger\settextmacro.htm
+old-project: debugger
+ms.assetid: 8319ab12-bb23-4de4-b3dc-afd3cd13d03e
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugControl2::SetTextMacro, dbgeng/IDebugControl::SetTextMacro, debugger.settextmacro, IDebugControl_5eac09ea-004d-4231-b865-d191790880fc.xml, SetTextMacro, SetTextMacro method [Windows Debugging], SetTextMacro method [Windows Debugging], IDebugControl2 interface, dbgeng/IDebugControl2::SetTextMacro, IDebugControl3, IDebugControl3::SetTextMacro, dbgeng/IDebugControl3::SetTextMacro, IDebugControl interface [Windows Debugging], SetTextMacro method, SetTextMacro method [Windows Debugging], IDebugControl3 interface, SetTextMacro method [Windows Debugging], IDebugControl interface, IDebugControl::SetTextMacro, IDebugControl3 interface [Windows Debugging], SetTextMacro method, IDebugControl2 interface [Windows Debugging], SetTextMacro method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl.SetTextMacro
+-	IDebugControl2.SetTextMacro
+-	IDebugControl3.SetTextMacro
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

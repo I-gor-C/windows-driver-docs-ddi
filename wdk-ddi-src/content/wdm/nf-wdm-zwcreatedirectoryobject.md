@@ -1,42 +1,48 @@
 ---
-UID : NF:wdm.ZwCreateDirectoryObject
-title : ZwCreateDirectoryObject function
-author : windows-driver-content
-description : The ZwCreateDirectoryObject routine creates or opens an object-directory object.
-old-location : kernel\zwcreatedirectoryobject.htm
-old-project : kernel
-ms.assetid : 45e4a08d-9615-410a-8f78-a8157802813f
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : k111_b1b0f371-6699-42f6-b86d-a0fb57983d9f.xml, NtCreateDirectoryObject, wdm/NtCreateDirectoryObject, ZwCreateDirectoryObject routine [Kernel-Mode Driver Architecture], ZwCreateDirectoryObject, wdm/ZwCreateDirectoryObject, kernel.zwcreatedirectoryobject
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ZwCreateDirectoryObject
+title: ZwCreateDirectoryObject function
+author: windows-driver-content
+description: The ZwCreateDirectoryObject routine creates or opens an object-directory object.
+old-location: kernel\zwcreatedirectoryobject.htm
+old-project: kernel
+ms.assetid: 45e4a08d-9615-410a-8f78-a8157802813f
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: k111_b1b0f371-6699-42f6-b86d-a0fb57983d9f.xml, NtCreateDirectoryObject, wdm/NtCreateDirectoryObject, ZwCreateDirectoryObject routine [Kernel-Mode Driver Architecture], ZwCreateDirectoryObject, wdm/ZwCreateDirectoryObject, kernel.zwcreatedirectoryobject
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ZwCreateDirectoryObject
+-	NtCreateDirectoryObject
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,47 @@
 ---
-UID : NF:fltkernel.FltEnumerateInstances
-title : FltEnumerateInstances function
-author : windows-driver-content
-description : The FltEnumerateInstances routine enumerates minifilter driver instances for a given minifilter driver or volume.
-old-location : ifsk\fltenumerateinstances.htm
-old-project : ifsk
-ms.assetid : d09b95d9-4b45-4da5-9c61-8e30ed4fa1d5
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltEnumerateInstances, FltEnumerateInstances routine [Installable File System Drivers], fltkernel/FltEnumerateInstances, ifsk.fltenumerateinstances, FltApiRef_e_to_o_3875fd52-c8b1-4d79-9f90-83297dbbb44c.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltEnumerateInstances
+title: FltEnumerateInstances function
+author: windows-driver-content
+description: The FltEnumerateInstances routine enumerates minifilter driver instances for a given minifilter driver or volume.
+old-location: ifsk\fltenumerateinstances.htm
+old-project: ifsk
+ms.assetid: d09b95d9-4b45-4da5-9c61-8e30ed4fa1d5
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltEnumerateInstances, FltEnumerateInstances routine [Installable File System Drivers], fltkernel/FltEnumerateInstances, ifsk.fltenumerateinstances, FltApiRef_e_to_o_3875fd52-c8b1-4d79-9f90-83297dbbb44c.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	FltMgr.lib
+-	FltMgr.dll
+apiname:
+-	FltEnumerateInstances
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

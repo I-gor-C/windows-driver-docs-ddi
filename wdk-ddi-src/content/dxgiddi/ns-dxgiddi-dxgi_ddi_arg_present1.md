@@ -1,41 +1,46 @@
 ---
-UID : NS:dxgiddi.DXGI_DDI_ARG_PRESENT1
-title : DXGI_DDI_ARG_PRESENT1
-author : windows-driver-content
-description : Describes a resource to display. Used with the pfnPresent1(DXGI) function by Windows Display Driver Model (WDDM) 1.3 and later user-mode display drivers.
-old-location : display\dxgi_ddi_arg_present1.htm
-old-project : display
-ms.assetid : F8575652-CA6D-472E-A314-91B07C48558B
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : dxgiddi/DXGI_DDI_ARG_PRESENT1, DXGI_DDI_ARG_PRESENT1, DXGI_DDI_ARG_PRESENT1 structure [Display Devices], display.dxgi_ddi_arg_present1
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : dxgiddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8.1,WDDM 1.3 and later
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGI_DDI_ARG_PRESENT1
+UID: NS:dxgiddi.DXGI_DDI_ARG_PRESENT1
+title: DXGI_DDI_ARG_PRESENT1
+author: windows-driver-content
+description: Describes a resource to display. Used with the pfnPresent1(DXGI) function by Windows Display Driver Model (WDDM) 1.3 and later user-mode display drivers.
+old-location: display\dxgi_ddi_arg_present1.htm
+old-project: display
+ms.assetid: F8575652-CA6D-472E-A314-91B07C48558B
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: dxgiddi/DXGI_DDI_ARG_PRESENT1, DXGI_DDI_ARG_PRESENT1, DXGI_DDI_ARG_PRESENT1 structure [Display Devices], display.dxgi_ddi_arg_present1
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: dxgiddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8.1,WDDM 1.3 and later
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Dxgiddi.h
+apiname:
+-	DXGI_DDI_ARG_PRESENT1
+product: Windows
+targetos: Windows
+req.typenames: DXGI_DDI_ARG_PRESENT1
 ---
 
 # DXGI_DDI_ARG_PRESENT1 structure

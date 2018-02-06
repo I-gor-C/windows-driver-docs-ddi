@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._DXVAHDDDI_STREAM_STATE_ASPECT_RATIO_DATA
-title : "_DXVAHDDDI_STREAM_STATE_ASPECT_RATIO_DATA"
-author : windows-driver-content
-description : The DXVAHDDDI_STREAM_STATE_ASPECT_RATIO_DATA structure describes stream-state data that specifies the pixel aspect ratio.
-old-location : display\dxvahdddi_stream_state_aspect_ratio_data.htm
-old-project : display
-ms.assetid : 12d33e2d-63d3-4cc8-9b50-5156132b2e72
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DXVAHDDDI_STREAM_STATE_ASPECT_RATIO_DATA structure [Display Devices], display.dxvahdddi_stream_state_aspect_ratio_data, DXVA2_Structs_daab6809-2f81-4892-9f56-c57254047627.xml, _DXVAHDDDI_STREAM_STATE_ASPECT_RATIO_DATA, DXVAHDDDI_STREAM_STATE_ASPECT_RATIO_DATA, d3dumddi/DXVAHDDDI_STREAM_STATE_ASPECT_RATIO_DATA
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : DXVAHDDDI_STREAM_STATE_ASPECT_RATIO_DATA is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXVAHDDDI_STREAM_STATE_ASPECT_RATIO_DATA
+UID: NS:d3dumddi._DXVAHDDDI_STREAM_STATE_ASPECT_RATIO_DATA
+title: "_DXVAHDDDI_STREAM_STATE_ASPECT_RATIO_DATA"
+author: windows-driver-content
+description: The DXVAHDDDI_STREAM_STATE_ASPECT_RATIO_DATA structure describes stream-state data that specifies the pixel aspect ratio.
+old-location: display\dxvahdddi_stream_state_aspect_ratio_data.htm
+old-project: display
+ms.assetid: 12d33e2d-63d3-4cc8-9b50-5156132b2e72
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DXVAHDDDI_STREAM_STATE_ASPECT_RATIO_DATA structure [Display Devices], display.dxvahdddi_stream_state_aspect_ratio_data, DXVA2_Structs_daab6809-2f81-4892-9f56-c57254047627.xml, _DXVAHDDDI_STREAM_STATE_ASPECT_RATIO_DATA, DXVAHDDDI_STREAM_STATE_ASPECT_RATIO_DATA, d3dumddi/DXVAHDDDI_STREAM_STATE_ASPECT_RATIO_DATA
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: DXVAHDDDI_STREAM_STATE_ASPECT_RATIO_DATA is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	DXVAHDDDI_STREAM_STATE_ASPECT_RATIO_DATA
+product: Windows
+targetos: Windows
+req.typenames: DXVAHDDDI_STREAM_STATE_ASPECT_RATIO_DATA
 ---
 
 # _DXVAHDDDI_STREAM_STATE_ASPECT_RATIO_DATA structure

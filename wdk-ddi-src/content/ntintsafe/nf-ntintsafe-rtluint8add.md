@@ -1,41 +1,46 @@
 ---
-UID : NF:ntintsafe.RtlUInt8Add
-title : RtlUInt8Add function
-author : windows-driver-content
-description : Adds two values of type UINT8.
-old-location : kernel\rtluint8add.htm
-old-project : kernel
-ms.assetid : E93C8C7A-13E5-4089-931C-C56055FA3C90
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : RtlUInt8Add, RtlUInt8Add function [Kernel-Mode Driver Architecture], kernel.rtluint8add, ntintsafe/RtlUInt8Add
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntintsafe.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PUBLIC_OBJECT_TYPE_INFORMATION, *PPUBLIC_OBJECT_TYPE_INFORMATION
+UID: NF:ntintsafe.RtlUInt8Add
+title: RtlUInt8Add function
+author: windows-driver-content
+description: Adds two values of type UINT8.
+old-location: kernel\rtluint8add.htm
+old-project: kernel
+ms.assetid: E93C8C7A-13E5-4089-931C-C56055FA3C90
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: RtlUInt8Add, RtlUInt8Add function [Kernel-Mode Driver Architecture], kernel.rtluint8add, ntintsafe/RtlUInt8Add
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntintsafe.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntintsafe.h
+apiname:
+-	RtlUInt8Add
+product: Windows
+targetos: Windows
+req.typenames: PUBLIC_OBJECT_TYPE_INFORMATION, *PPUBLIC_OBJECT_TYPE_INFORMATION
 ---
 
 

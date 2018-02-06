@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddcdrm._CDROM_TOC_SESSION_DATA
-title : "_CDROM_TOC_SESSION_DATA"
-author : windows-driver-content
-description : Device control IRPs with a control code of IOCTL_CDROM_READ_TOC_EX and a format of CDROM_READ_TOC_EX_FORMAT_SESSION return their output data in this structure followed by a series of TRACK_DATA structures.
-old-location : storage\cdrom_toc_session_data.htm
-old-project : storage
-ms.assetid : ba039a22-b1af-4ade-bd99-b7296be4dd42
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : "_CDROM_TOC_SESSION_DATA, ntddcdrm/CDROM_TOC_SESSION_DATA, CDROM_TOC_SESSION_DATA, *PCDROM_TOC_SESSION_DATA, PCDROM_TOC_SESSION_DATA, storage.cdrom_toc_session_data, structs-CD-ROM_b3bb7380-ca50-4340-bf90-4b6e231bcdbc.xml, PCDROM_TOC_SESSION_DATA structure pointer [Storage Devices], CDROM_TOC_SESSION_DATA structure [Storage Devices], ntddcdrm/PCDROM_TOC_SESSION_DATA"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddcdrm.h
-req.include-header : Ntddcdrm.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PCDROM_TOC_SESSION_DATA, CDROM_TOC_SESSION_DATA"
+UID: NS:ntddcdrm._CDROM_TOC_SESSION_DATA
+title: "_CDROM_TOC_SESSION_DATA"
+author: windows-driver-content
+description: Device control IRPs with a control code of IOCTL_CDROM_READ_TOC_EX and a format of CDROM_READ_TOC_EX_FORMAT_SESSION return their output data in this structure followed by a series of TRACK_DATA structures.
+old-location: storage\cdrom_toc_session_data.htm
+old-project: storage
+ms.assetid: ba039a22-b1af-4ade-bd99-b7296be4dd42
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: "_CDROM_TOC_SESSION_DATA, ntddcdrm/CDROM_TOC_SESSION_DATA, CDROM_TOC_SESSION_DATA, *PCDROM_TOC_SESSION_DATA, PCDROM_TOC_SESSION_DATA, storage.cdrom_toc_session_data, structs-CD-ROM_b3bb7380-ca50-4340-bf90-4b6e231bcdbc.xml, PCDROM_TOC_SESSION_DATA structure pointer [Storage Devices], CDROM_TOC_SESSION_DATA structure [Storage Devices], ntddcdrm/PCDROM_TOC_SESSION_DATA"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddcdrm.h
+req.include-header: Ntddcdrm.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddcdrm.h
+apiname:
+-	CDROM_TOC_SESSION_DATA
+product: Windows
+targetos: Windows
+req.typenames: "*PCDROM_TOC_SESSION_DATA, CDROM_TOC_SESSION_DATA"
 ---
 
 # _CDROM_TOC_SESSION_DATA structure

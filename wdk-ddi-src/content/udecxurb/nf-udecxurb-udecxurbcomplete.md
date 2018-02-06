@@ -1,42 +1,48 @@
 ---
-UID : NF:udecxurb.UdecxUrbComplete
-title : UdecxUrbComplete function
-author : windows-driver-content
-description : Completes the URB request with a USB-specific completion status code.
-old-location : buses\udecxurbcomplete.htm
-old-project : usbref
-ms.assetid : F0B014F3-AE40-466B-BD9A-0D01DF70DCFF
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : UdecxUrbComplete, buses.udecxurbcomplete, UdecxUrbComplete function [Buses], udecxurb/UdecxUrbComplete
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : udecxurb.h
-req.include-header : Udecx.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 1.15
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Udecxstub.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : USB_DEVICE_PORT_PATH, *PUSB_DEVICE_PORT_PATH
-req.product : Windows 10 or later.
+UID: NF:udecxurb.UdecxUrbComplete
+title: UdecxUrbComplete function
+author: windows-driver-content
+description: Completes the URB request with a USB-specific completion status code.
+old-location: buses\udecxurbcomplete.htm
+old-project: usbref
+ms.assetid: F0B014F3-AE40-466B-BD9A-0D01DF70DCFF
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: UdecxUrbComplete, buses.udecxurbcomplete, UdecxUrbComplete function [Buses], udecxurb/UdecxUrbComplete
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: udecxurb.h
+req.include-header: Udecx.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 1.15
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Udecxstub.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Udecxstub.lib
+-	Udecxstub.dll
+apiname:
+-	UdecxUrbComplete
+product: Windows
+targetos: Windows
+req.typenames: USB_DEVICE_PORT_PATH, *PUSB_DEVICE_PORT_PATH
+req.product: Windows 10 or later.
 ---
 
 

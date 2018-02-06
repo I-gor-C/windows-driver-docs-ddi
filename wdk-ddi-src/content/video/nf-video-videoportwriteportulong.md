@@ -1,42 +1,47 @@
 ---
-UID : NF:video.VideoPortWritePortUlong
-title : VideoPortWritePortUlong function
-author : windows-driver-content
-description : The VideoPortWritePortUlong function writes a ULONG value to a mapped I/O port.
-old-location : display\videoportwriteportulong.htm
-old-project : display
-ms.assetid : 395e4a37-ea14-4dc0-926d-2b2336aa5221
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : VideoPortWritePortUlong function [Display Devices], VideoPortWritePortUlong, display.videoportwriteportulong, video/VideoPortWritePortUlong, VideoPort_Functions_83cb0bbd-0dba-4cd6-b9f5-b8b0091371cd.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows 2000 and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Videoprt.lib
-req.dll : Videoprt.sys
-req.irql : Any level (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_PORT_SERVICES
-req.product : Windows 10 or later.
+UID: NF:video.VideoPortWritePortUlong
+title: VideoPortWritePortUlong function
+author: windows-driver-content
+description: The VideoPortWritePortUlong function writes a ULONG value to a mapped I/O port.
+old-location: display\videoportwriteportulong.htm
+old-project: display
+ms.assetid: 395e4a37-ea14-4dc0-926d-2b2336aa5221
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: VideoPortWritePortUlong function [Display Devices], VideoPortWritePortUlong, display.videoportwriteportulong, video/VideoPortWritePortUlong, VideoPort_Functions_83cb0bbd-0dba-4cd6-b9f5-b8b0091371cd.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows 2000 and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Videoprt.lib
+req.dll: Videoprt.sys
+req.irql: Any level (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Videoprt.sys
+apiname:
+-	VideoPortWritePortUlong
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_PORT_SERVICES
+req.product: Windows 10 or later.
 ---
 
 

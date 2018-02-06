@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3D10DDI_DESTROYSHADER
-title : PFND3D10DDI_DESTROYSHADER
-author : windows-driver-content
-description : The DestroyShader function destroys the specified shader object. The shader object can be destoyed only if it is not currently bound to a display device.
-old-location : display\destroyshader.htm
-old-project : display
-ms.assetid : 51a3e5aa-0f17-49a6-824d-7cfe8e0a1ded
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.destroyshader, DestroyShader callback function [Display Devices], DestroyShader, PFND3D10DDI_DESTROYSHADER, PFND3D10DDI_DESTROYSHADER, d3d10umddi/DestroyShader, UserModeDisplayDriverDx10_Functions_798387e4-b7c1-4b03-bef7-1dad6931b432.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3D10DDI_DESTROYSHADER
+title: PFND3D10DDI_DESTROYSHADER
+author: windows-driver-content
+description: The DestroyShader function destroys the specified shader object. The shader object can be destoyed only if it is not currently bound to a display device.
+old-location: display\destroyshader.htm
+old-project: display
+ms.assetid: 51a3e5aa-0f17-49a6-824d-7cfe8e0a1ded
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.destroyshader, DestroyShader callback function [Display Devices], DestroyShader, PFND3D10DDI_DESTROYSHADER, PFND3D10DDI_DESTROYSHADER, d3d10umddi/DestroyShader, UserModeDisplayDriverDx10_Functions_798387e4-b7c1-4b03-bef7-1dad6931b432.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	DestroyShader
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

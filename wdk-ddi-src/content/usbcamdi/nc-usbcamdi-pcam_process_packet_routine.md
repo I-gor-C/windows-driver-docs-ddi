@@ -1,42 +1,47 @@
 ---
-UID : NC:usbcamdi.PCAM_PROCESS_PACKET_ROUTINE
-title : PCAM_PROCESS_PACKET_ROUTINE
-author : windows-driver-content
-description : A camera minidriver's CamProcessUSBPacket callback function processes a USB packet.
-old-location : stream\camprocessusbpacket.htm
-old-project : stream
-ms.assetid : 2b83d1b1-82f6-455b-b22a-ae9433dd9f27
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.camprocessusbpacket, CamProcessUSBPacket, CamProcessUSBPacket callback function [Streaming Media Devices], CamProcessUSBPacket, PCAM_PROCESS_PACKET_ROUTINE, PCAM_PROCESS_PACKET_ROUTINE, usbcamdi/CamProcessUSBPacket, usbcmdpr_7eeca66e-b106-4cb0-b0c3-d7d07d82d841.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : usbcamdi.h
-req.include-header : Usbcamdi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : DISPATCH_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUSB_BUS_INTERFACE_USBDI_V3, USB_BUS_INTERFACE_USBDI_V3"
-req.product : Windows 10 or later.
+UID: NC:usbcamdi.PCAM_PROCESS_PACKET_ROUTINE
+title: PCAM_PROCESS_PACKET_ROUTINE
+author: windows-driver-content
+description: A camera minidriver's CamProcessUSBPacket callback function processes a USB packet.
+old-location: stream\camprocessusbpacket.htm
+old-project: stream
+ms.assetid: 2b83d1b1-82f6-455b-b22a-ae9433dd9f27
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.camprocessusbpacket, CamProcessUSBPacket, CamProcessUSBPacket callback function [Streaming Media Devices], CamProcessUSBPacket, PCAM_PROCESS_PACKET_ROUTINE, PCAM_PROCESS_PACKET_ROUTINE, usbcamdi/CamProcessUSBPacket, usbcmdpr_7eeca66e-b106-4cb0-b0c3-d7d07d82d841.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: usbcamdi.h
+req.include-header: Usbcamdi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: DISPATCH_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	usbcamdi.h
+apiname:
+-	CamProcessUSBPacket
+product: Windows
+targetos: Windows
+req.typenames: "*PUSB_BUS_INTERFACE_USBDI_V3, USB_BUS_INTERFACE_USBDI_V3"
+req.product: Windows 10 or later.
 ---
 
 

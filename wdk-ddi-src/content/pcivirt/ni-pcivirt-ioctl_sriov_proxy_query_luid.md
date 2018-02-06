@@ -1,41 +1,46 @@
 ---
-UID : NI:pcivirt.IOCTL_SRIOV_PROXY_QUERY_LUID
-title : IOCTL_SRIOV_PROXY_QUERY_LUID
-author : windows-driver-content
-description : This request supplies the local unique identifier of the SR_IOV device implementing the interface.
-old-location : pci\ioctl-sriov-proxy-query-luid.htm
-old-project : PCI
-ms.assetid : 9f10ed34-f718-4c35-9b6f-29554bf30a0f
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : PCI.ioctl-sriov-proxy-query-luid, IOCTL_SRIOV_PROXY_QUERY_LUID control code [Buses], IOCTL_SRIOV_PROXY_QUERY_LUID, pcivirt/IOCTL_SRIOV_PROXY_QUERY_LUID
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : pcivirt.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SRIOV_PF_EVENT, *PSRIOV_PF_EVENT
+UID: NI:pcivirt.IOCTL_SRIOV_PROXY_QUERY_LUID
+title: IOCTL_SRIOV_PROXY_QUERY_LUID
+author: windows-driver-content
+description: This request supplies the local unique identifier of the SR_IOV device implementing the interface.
+old-location: pci\ioctl-sriov-proxy-query-luid.htm
+old-project: PCI
+ms.assetid: 9f10ed34-f718-4c35-9b6f-29554bf30a0f
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: PCI.ioctl-sriov-proxy-query-luid, IOCTL_SRIOV_PROXY_QUERY_LUID control code [Buses], IOCTL_SRIOV_PROXY_QUERY_LUID, pcivirt/IOCTL_SRIOV_PROXY_QUERY_LUID
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: pcivirt.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Pcivirt.h
+apiname:
+-	IOCTL_SRIOV_PROXY_QUERY_LUID
+product: Windows
+targetos: Windows
+req.typenames: SRIOV_PF_EVENT, *PSRIOV_PF_EVENT
 ---
 
 # IOCTL_SRIOV_PROXY_QUERY_LUID IOCTL

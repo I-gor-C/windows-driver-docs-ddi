@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddcdrm.IOCTL_CDROM_ENABLE_STREAMING
-title : IOCTL_CDROM_ENABLE_STREAMING
-author : windows-driver-content
-description : Enables or disables CDROM streaming mode on a per-handle basis for raw read and write requests.
-old-location : storage\ioctl_cdrom_enable_streaming.htm
-old-project : storage
-ms.assetid : DC31EABA-CE58-4B6F-ADCD-0BF72A92C6AB
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_cdrom_enable_streaming, IOCTL_CDROM_ENABLE_STREAMING control code [Storage Devices], IOCTL_CDROM_ENABLE_STREAMING, ntddcdrm/IOCTL_CDROM_ENABLE_STREAMING
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddcdrm.h
-req.include-header : Winioctl.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WRITE_ROTATION, *PWRITE_ROTATION
+UID: NI:ntddcdrm.IOCTL_CDROM_ENABLE_STREAMING
+title: IOCTL_CDROM_ENABLE_STREAMING
+author: windows-driver-content
+description: Enables or disables CDROM streaming mode on a per-handle basis for raw read and write requests.
+old-location: storage\ioctl_cdrom_enable_streaming.htm
+old-project: storage
+ms.assetid: DC31EABA-CE58-4B6F-ADCD-0BF72A92C6AB
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_cdrom_enable_streaming, IOCTL_CDROM_ENABLE_STREAMING control code [Storage Devices], IOCTL_CDROM_ENABLE_STREAMING, ntddcdrm/IOCTL_CDROM_ENABLE_STREAMING
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddcdrm.h
+req.include-header: Winioctl.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddcdrm.h
+apiname:
+-	IOCTL_CDROM_ENABLE_STREAMING
+product: Windows
+targetos: Windows
+req.typenames: WRITE_ROTATION, *PWRITE_ROTATION
 ---
 
 # IOCTL_CDROM_ENABLE_STREAMING IOCTL

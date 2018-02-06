@@ -1,41 +1,46 @@
 ---
-UID : NS:1394._IRB_REQ_SET_LOCAL_HOST_PROPERTIES
-title : "_IRB_REQ_SET_LOCAL_HOST_PROPERTIES"
-author : windows-driver-content
-description : This structure contains the fields required to carry out a SetLocalHostProperties request.
-old-location : ieee\irb_req_set_local_host_properties.htm
-old-project : IEEE
-ms.assetid : 59C1BBEF-ECC8-4852-B2E2-75751B5B25B2
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : IEEE.irb_req_set_local_host_properties, IRB_REQ_SET_LOCAL_HOST_PROPERTIES, IRB_REQ_SET_LOCAL_HOST_PROPERTIES structure [Buses], _IRB_REQ_SET_LOCAL_HOST_PROPERTIES, 1394/IRB_REQ_SET_LOCAL_HOST_PROPERTIES
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : 1394.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : IRB_REQ_SET_LOCAL_HOST_PROPERTIES
+UID: NS:1394._IRB_REQ_SET_LOCAL_HOST_PROPERTIES
+title: "_IRB_REQ_SET_LOCAL_HOST_PROPERTIES"
+author: windows-driver-content
+description: This structure contains the fields required to carry out a SetLocalHostProperties request.
+old-location: ieee\irb_req_set_local_host_properties.htm
+old-project: IEEE
+ms.assetid: 59C1BBEF-ECC8-4852-B2E2-75751B5B25B2
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: IEEE.irb_req_set_local_host_properties, IRB_REQ_SET_LOCAL_HOST_PROPERTIES, IRB_REQ_SET_LOCAL_HOST_PROPERTIES structure [Buses], _IRB_REQ_SET_LOCAL_HOST_PROPERTIES, 1394/IRB_REQ_SET_LOCAL_HOST_PROPERTIES
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: 1394.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	1394.h
+apiname:
+-	IRB_REQ_SET_LOCAL_HOST_PROPERTIES
+product: Windows
+targetos: Windows
+req.typenames: IRB_REQ_SET_LOCAL_HOST_PROPERTIES
 ---
 
 # _IRB_REQ_SET_LOCAL_HOST_PROPERTIES structure

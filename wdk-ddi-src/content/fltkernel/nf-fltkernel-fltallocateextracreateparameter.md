@@ -1,41 +1,47 @@
 ---
-UID : NF:fltkernel.FltAllocateExtraCreateParameter
-title : FltAllocateExtraCreateParameter function
-author : windows-driver-content
-description : The FltAllocateExtraCreateParameter routine allocates paged memory pool for a user-defined extra create parameter (ECP) context structure and generates a pointer to that structure.
-old-location : ifsk\fltallocateextracreateparameter.htm
-old-project : ifsk
-ms.assetid : 85751db5-7a73-4aa5-baf8-0173e9a8f495
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltAllocateExtraCreateParameter, FltApiRef_a_to_d_937e6c81-7251-4f94-a868-88f65e219c73.xml, ifsk.fltallocateextracreateparameter, fltkernel/FltAllocateExtraCreateParameter, FltAllocateExtraCreateParameter routine [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltAllocateExtraCreateParameter
+title: FltAllocateExtraCreateParameter function
+author: windows-driver-content
+description: The FltAllocateExtraCreateParameter routine allocates paged memory pool for a user-defined extra create parameter (ECP) context structure and generates a pointer to that structure.
+old-location: ifsk\fltallocateextracreateparameter.htm
+old-project: ifsk
+ms.assetid: 85751db5-7a73-4aa5-baf8-0173e9a8f495
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltAllocateExtraCreateParameter, FltApiRef_a_to_d_937e6c81-7251-4f94-a868-88f65e219c73.xml, ifsk.fltallocateextracreateparameter, fltkernel/FltAllocateExtraCreateParameter, FltAllocateExtraCreateParameter routine [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	FltMgr.lib
+-	FltMgr.dll
+apiname:
+-	FltAllocateExtraCreateParameter
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NF:ndis.NdisFreeString
-title : NdisFreeString macro
-author : windows-driver-content
-description : The NdisFreeString function releases storage that was allocated by NdisInitializeString for a buffered string.
-old-location : netvista\ndisfreestring.htm
-old-project : netvista
-ms.assetid : 62b4318a-b883-44fc-a2a5-86a7a884f039
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : ndis/NdisFreeString, NdisFreeString, NdisFreeString macro [Network Drivers Starting with Windows Vista], netvista.ndisfreestring, ndis_string_ref_fbe6ac9f-c6a6-457e-a427-71e9739f3809.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : macro
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported for existing drivers in  NDIS 6.0 and later, but new drivers should use RtlFreeAnsiString or RtlFreeUnicodeString  instead.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_Miscellaneous_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : ndis.h
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisFreeString
+title: NdisFreeString macro
+author: windows-driver-content
+description: The NdisFreeString function releases storage that was allocated by NdisInitializeString for a buffered string.
+old-location: netvista\ndisfreestring.htm
+old-project: netvista
+ms.assetid: 62b4318a-b883-44fc-a2a5-86a7a884f039
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: ndis/NdisFreeString, NdisFreeString, NdisFreeString macro [Network Drivers Starting with Windows Vista], netvista.ndisfreestring, ndis_string_ref_fbe6ac9f-c6a6-457e-a427-71e9739f3809.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: macro
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported for existing drivers in  NDIS 6.0 and later, but new drivers should use RtlFreeAnsiString or RtlFreeUnicodeString  instead.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_Miscellaneous_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: ndis.h
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndis.h
+apiname:
+-	NdisFreeString
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

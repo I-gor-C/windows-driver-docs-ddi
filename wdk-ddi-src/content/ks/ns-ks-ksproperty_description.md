@@ -1,41 +1,46 @@
 ---
-UID : NS:ks.KSPROPERTY_DESCRIPTION
-title : KSPROPERTY_DESCRIPTION
-author : windows-driver-content
-description : The KSPROPERTY_DESCRIPTION structure specifies the size and type of values contained in a specific property.
-old-location : stream\ksproperty_description.htm
-old-project : stream
-ms.assetid : d3d59dca-7214-493c-bb70-4391696fe017
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KSPROPERTY_DESCRIPTION structure [Streaming Media Devices], PKSPROPERTY_DESCRIPTION, KSPROPERTY_DESCRIPTION, stream.ksproperty_description, ks-struct_37ee8090-f90e-40a9-8731-3521d1d3a157.xml, ks/KSPROPERTY_DESCRIPTION, PKSPROPERTY_DESCRIPTION structure pointer [Streaming Media Devices], *PKSPROPERTY_DESCRIPTION, ks/PKSPROPERTY_DESCRIPTION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KSPROPERTY_DESCRIPTION, *PKSPROPERTY_DESCRIPTION
+UID: NS:ks.KSPROPERTY_DESCRIPTION
+title: KSPROPERTY_DESCRIPTION
+author: windows-driver-content
+description: The KSPROPERTY_DESCRIPTION structure specifies the size and type of values contained in a specific property.
+old-location: stream\ksproperty_description.htm
+old-project: stream
+ms.assetid: d3d59dca-7214-493c-bb70-4391696fe017
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KSPROPERTY_DESCRIPTION structure [Streaming Media Devices], PKSPROPERTY_DESCRIPTION, KSPROPERTY_DESCRIPTION, stream.ksproperty_description, ks-struct_37ee8090-f90e-40a9-8731-3521d1d3a157.xml, ks/KSPROPERTY_DESCRIPTION, PKSPROPERTY_DESCRIPTION structure pointer [Streaming Media Devices], *PKSPROPERTY_DESCRIPTION, ks/PKSPROPERTY_DESCRIPTION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	KSPROPERTY_DESCRIPTION
+product: Windows
+targetos: Windows
+req.typenames: KSPROPERTY_DESCRIPTION, *PKSPROPERTY_DESCRIPTION
 ---
 
 # KSPROPERTY_DESCRIPTION structure

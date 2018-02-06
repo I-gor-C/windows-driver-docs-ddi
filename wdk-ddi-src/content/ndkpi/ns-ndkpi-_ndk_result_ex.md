@@ -1,41 +1,46 @@
 ---
-UID : NS:ndkpi._NDK_RESULT_EX
-title : "_NDK_RESULT_EX"
-author : windows-driver-content
-description : The NDK_RESULT_EX structure returns the results for an NDK request operation. It is identical to the NDK_RESULT structure, except that it has additional Type and TypeSpecificCompletionOutput members.
-old-location : netvista\ndk_result_ex.htm
-old-project : netvista
-ms.assetid : C79BF9FC-4836-48AD-8E9F-41278BB01E11
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NDK_RESULT_EX structure [Network Drivers Starting with Windows Vista], ndkpi/PNDK_RESULT_EX, PNDK_RESULT_EX, PNDK_RESULT_EX structure pointer [Network Drivers Starting with Windows Vista], NDK_RESULT_EX, _NDK_RESULT_EX, netvista.ndk_result_ex, ndkpi/NDK_RESULT_EX
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndkpi.h
-req.include-header : Ndkpi.h
-req.target-type : Windows
-req.target-min-winverclnt : None supported,Supported in NDIS 6.40 and later.
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDK_RESULT_EX
+UID: NS:ndkpi._NDK_RESULT_EX
+title: "_NDK_RESULT_EX"
+author: windows-driver-content
+description: The NDK_RESULT_EX structure returns the results for an NDK request operation. It is identical to the NDK_RESULT structure, except that it has additional Type and TypeSpecificCompletionOutput members.
+old-location: netvista\ndk_result_ex.htm
+old-project: netvista
+ms.assetid: C79BF9FC-4836-48AD-8E9F-41278BB01E11
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NDK_RESULT_EX structure [Network Drivers Starting with Windows Vista], ndkpi/PNDK_RESULT_EX, PNDK_RESULT_EX, PNDK_RESULT_EX structure pointer [Network Drivers Starting with Windows Vista], NDK_RESULT_EX, _NDK_RESULT_EX, netvista.ndk_result_ex, ndkpi/NDK_RESULT_EX
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndkpi.h
+req.include-header: Ndkpi.h
+req.target-type: Windows
+req.target-min-winverclnt: None supported,Supported in NDIS 6.40 and later.
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndkpi.h
+apiname:
+-	NDK_RESULT_EX
+product: Windows
+targetos: Windows
+req.typenames: NDK_RESULT_EX
 ---
 
 # _NDK_RESULT_EX structure

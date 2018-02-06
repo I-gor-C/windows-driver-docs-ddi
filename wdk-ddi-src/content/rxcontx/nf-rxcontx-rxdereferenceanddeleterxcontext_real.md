@@ -1,42 +1,47 @@
 ---
-UID : NF:rxcontx.RxDereferenceAndDeleteRxContext_Real
-title : RxDereferenceAndDeleteRxContext_Real function
-author : windows-driver-content
-description : RxDereferenceAndDeleteRxContext_Real dereferences an RX_CONTEXT data structure and if the ReferenceCount member goes to zero, then it deallocates and removes the specified RX_CONTEXT structure from the RDBSS in-memory data structures.
-old-location : ifsk\rxdereferenceanddeleterxcontext_real.htm
-old-project : ifsk
-ms.assetid : a2a2bb57-6f5c-4bc9-8564-ab0db2efd872
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : rxcontx/RxDereferenceAndDeleteRxContext_Real, rxref_d3ea173c-343f-4fbf-b07b-be17816e1b2e.xml, ifsk.rxdereferenceanddeleterxcontext_real, RxDereferenceAndDeleteRxContext_Real, RxDereferenceAndDeleteRxContext_Real function [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : rxcontx.h
-req.include-header : Rxprocs.h  rxcontx.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*LPRILWRITEPHONEBOOKENTRYPARAMS, RILWRITEPHONEBOOKENTRYPARAMS"
-req.product : Windows 10 or later.
+UID: NF:rxcontx.RxDereferenceAndDeleteRxContext_Real
+title: RxDereferenceAndDeleteRxContext_Real function
+author: windows-driver-content
+description: RxDereferenceAndDeleteRxContext_Real dereferences an RX_CONTEXT data structure and if the ReferenceCount member goes to zero, then it deallocates and removes the specified RX_CONTEXT structure from the RDBSS in-memory data structures.
+old-location: ifsk\rxdereferenceanddeleterxcontext_real.htm
+old-project: ifsk
+ms.assetid: a2a2bb57-6f5c-4bc9-8564-ab0db2efd872
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: rxcontx/RxDereferenceAndDeleteRxContext_Real, rxref_d3ea173c-343f-4fbf-b07b-be17816e1b2e.xml, ifsk.rxdereferenceanddeleterxcontext_real, RxDereferenceAndDeleteRxContext_Real, RxDereferenceAndDeleteRxContext_Real function [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: rxcontx.h
+req.include-header: Rxprocs.h  rxcontx.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	rxcontx.h
+apiname:
+-	RxDereferenceAndDeleteRxContext_Real
+product: Windows
+targetos: Windows
+req.typenames: "*LPRILWRITEPHONEBOOKENTRYPARAMS, RILWRITEPHONEBOOKENTRYPARAMS"
+req.product: Windows 10 or later.
 ---
 
 

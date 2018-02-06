@@ -1,42 +1,47 @@
 ---
-UID : NS:wiamindr_lh._MINIDRV_TRANSFER_CONTEXT
-title : "_MINIDRV_TRANSFER_CONTEXT"
-author : windows-driver-content
-description : The MINIDRV_TRANSFER_CONTEXT structure is used to store image and other information needed for a memory-callback data transfer or a file data transfer.
-old-location : image\minidrv_transfer_context.htm
-old-project : image
-ms.assetid : 26583873-4f84-4254-86c1-2063df85000c
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : image.minidrv_transfer_context, MINIDRV_TRANSFER_CONTEXT structure [Imaging Devices], PMINIDRV_TRANSFER_CONTEXT structure pointer [Imaging Devices], PMINIDRV_TRANSFER_CONTEXT, wiastrct_36e477d2-73a8-41b7-af46-82fb7c6f0bca.xml, wiamindr_lh/MINIDRV_TRANSFER_CONTEXT, MINIDRV_TRANSFER_CONTEXT, *PMINIDRV_TRANSFER_CONTEXT, wiamindr_lh/PMINIDRV_TRANSFER_CONTEXT, _MINIDRV_TRANSFER_CONTEXT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wiamindr_lh.h
-req.include-header : Wiamindr.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Me and in Windows XP and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PMINIDRV_TRANSFER_CONTEXT, MINIDRV_TRANSFER_CONTEXT"
-req.product : Windows 10 or later.
+UID: NS:wiamindr_lh._MINIDRV_TRANSFER_CONTEXT
+title: "_MINIDRV_TRANSFER_CONTEXT"
+author: windows-driver-content
+description: The MINIDRV_TRANSFER_CONTEXT structure is used to store image and other information needed for a memory-callback data transfer or a file data transfer.
+old-location: image\minidrv_transfer_context.htm
+old-project: image
+ms.assetid: 26583873-4f84-4254-86c1-2063df85000c
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: image.minidrv_transfer_context, MINIDRV_TRANSFER_CONTEXT structure [Imaging Devices], PMINIDRV_TRANSFER_CONTEXT structure pointer [Imaging Devices], PMINIDRV_TRANSFER_CONTEXT, wiastrct_36e477d2-73a8-41b7-af46-82fb7c6f0bca.xml, wiamindr_lh/MINIDRV_TRANSFER_CONTEXT, MINIDRV_TRANSFER_CONTEXT, *PMINIDRV_TRANSFER_CONTEXT, wiamindr_lh/PMINIDRV_TRANSFER_CONTEXT, _MINIDRV_TRANSFER_CONTEXT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wiamindr_lh.h
+req.include-header: Wiamindr.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Me and in Windows XP and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wiamindr_lh.h
+apiname:
+-	MINIDRV_TRANSFER_CONTEXT
+product: Windows
+targetos: Windows
+req.typenames: "*PMINIDRV_TRANSFER_CONTEXT, MINIDRV_TRANSFER_CONTEXT"
+req.product: Windows 10 or later.
 ---
 
 # _MINIDRV_TRANSFER_CONTEXT structure

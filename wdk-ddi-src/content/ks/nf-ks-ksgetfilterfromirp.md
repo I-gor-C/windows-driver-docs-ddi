@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsGetFilterFromIrp
-title : KsGetFilterFromIrp function
-author : windows-driver-content
-description : The KsGetFilterFromIrp function returns the AVStream filter object associated with a given IRP.
-old-location : stream\ksgetfilterfromirp.htm
-old-project : stream
-ms.assetid : 00c90dbf-bb44-4cba-97b3-170765a2eba7
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : avfunc_223d8c62-c585-4749-a087-19cfa48824f3.xml, ks/KsGetFilterFromIrp, KsGetFilterFromIrp, KsGetFilterFromIrp function [Streaming Media Devices], stream.ksgetfilterfromirp
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsGetFilterFromIrp
+title: KsGetFilterFromIrp function
+author: windows-driver-content
+description: The KsGetFilterFromIrp function returns the AVStream filter object associated with a given IRP.
+old-location: stream\ksgetfilterfromirp.htm
+old-project: stream
+ms.assetid: 00c90dbf-bb44-4cba-97b3-170765a2eba7
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: avfunc_223d8c62-c585-4749-a087-19cfa48824f3.xml, ks/KsGetFilterFromIrp, KsGetFilterFromIrp, KsGetFilterFromIrp function [Streaming Media Devices], stream.ksgetfilterfromirp
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsGetFilterFromIrp
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:bthioctl._BTH_VENDOR_PATTERN
-title : "_BTH_VENDOR_PATTERN"
-author : windows-driver-content
-description : The BTH_VENDOR_PATTERN structure specifies a vendor pattern.
-old-location : bltooth\bth_vendor_pattern.htm
-old-project : bltooth
-ms.assetid : 694020c6-dd0a-46c7-9122-cd86ce28d03a
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : PBTH_VENDOR_PATTERN, bthioctl/PBTH_VENDOR_PATTERN, bth_ref_e5c1f867-d585-4c90-bfe1-7b3c4a6e1582.xml, BTH_VENDOR_PATTERN structure [Bluetooth Devices], BTH_VENDOR_PATTERN, *PBTH_VENDOR_PATTERN, bthioctl/BTH_VENDOR_PATTERN, _BTH_VENDOR_PATTERN, PBTH_VENDOR_PATTERN structure pointer [Bluetooth Devices], bltooth.bth_vendor_pattern
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : bthioctl.h
-req.include-header : Bthioctl.h
-req.target-type : Windows
-req.target-min-winverclnt : Versions:\_Available in Windows Vista, and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= PASSIVE_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : BTH_VENDOR_PATTERN, *PBTH_VENDOR_PATTERN
+UID: NS:bthioctl._BTH_VENDOR_PATTERN
+title: "_BTH_VENDOR_PATTERN"
+author: windows-driver-content
+description: The BTH_VENDOR_PATTERN structure specifies a vendor pattern.
+old-location: bltooth\bth_vendor_pattern.htm
+old-project: bltooth
+ms.assetid: 694020c6-dd0a-46c7-9122-cd86ce28d03a
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: PBTH_VENDOR_PATTERN, bthioctl/PBTH_VENDOR_PATTERN, bth_ref_e5c1f867-d585-4c90-bfe1-7b3c4a6e1582.xml, BTH_VENDOR_PATTERN structure [Bluetooth Devices], BTH_VENDOR_PATTERN, *PBTH_VENDOR_PATTERN, bthioctl/BTH_VENDOR_PATTERN, _BTH_VENDOR_PATTERN, PBTH_VENDOR_PATTERN structure pointer [Bluetooth Devices], bltooth.bth_vendor_pattern
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: bthioctl.h
+req.include-header: Bthioctl.h
+req.target-type: Windows
+req.target-min-winverclnt: Versions:\_Available in Windows Vista, and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= PASSIVE_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	bthioctl.h
+apiname:
+-	BTH_VENDOR_PATTERN
+product: Windows
+targetos: Windows
+req.typenames: BTH_VENDOR_PATTERN, *PBTH_VENDOR_PATTERN
 ---
 
 # _BTH_VENDOR_PATTERN structure

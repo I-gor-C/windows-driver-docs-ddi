@@ -1,41 +1,46 @@
 ---
-UID : NS:avc._AVCCONNECTINFO
-title : "_AVCCONNECTINFO"
-author : windows-driver-content
-description : The AVCCONNECTINFO structure is used to initialize a subunit driver and establish pin connections.
-old-location : stream\avcconnectinfo.htm
-old-project : stream
-ms.assetid : ed6e01f0-fa30-4a42-8271-70afb2fde8c9
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : PAVCCONNECTINFO structure pointer [Streaming Media Devices], AVCCONNECTINFO, AVCCONNECTINFO structure [Streaming Media Devices], PAVCCONNECTINFO, avc/PAVCCONNECTINFO, avcref_41c8705a-5735-4ab2-87f0-02b55b128c23.xml, *PAVCCONNECTINFO, avc/AVCCONNECTINFO, stream.avcconnectinfo, _AVCCONNECTINFO
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : avc.h
-req.include-header : Avc.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PAVCCONNECTINFO, AVCCONNECTINFO"
+UID: NS:avc._AVCCONNECTINFO
+title: "_AVCCONNECTINFO"
+author: windows-driver-content
+description: The AVCCONNECTINFO structure is used to initialize a subunit driver and establish pin connections.
+old-location: stream\avcconnectinfo.htm
+old-project: stream
+ms.assetid: ed6e01f0-fa30-4a42-8271-70afb2fde8c9
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: PAVCCONNECTINFO structure pointer [Streaming Media Devices], AVCCONNECTINFO, AVCCONNECTINFO structure [Streaming Media Devices], PAVCCONNECTINFO, avc/PAVCCONNECTINFO, avcref_41c8705a-5735-4ab2-87f0-02b55b128c23.xml, *PAVCCONNECTINFO, avc/AVCCONNECTINFO, stream.avcconnectinfo, _AVCCONNECTINFO
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: avc.h
+req.include-header: Avc.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	avc.h
+apiname:
+-	AVCCONNECTINFO
+product: Windows
+targetos: Windows
+req.typenames: "*PAVCCONNECTINFO, AVCCONNECTINFO"
 ---
 
 # _AVCCONNECTINFO structure

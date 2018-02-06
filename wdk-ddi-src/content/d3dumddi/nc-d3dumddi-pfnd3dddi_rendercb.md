@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_RENDERCB
-title : PFND3DDDI_RENDERCB
-author : windows-driver-content
-description : The pfnRenderCb function submits the current command buffer for rendering to the display miniport driver.
-old-location : display\pfnrendercb.htm
-old-project : display
-ms.assetid : f242162e-6237-469c-b178-5a51dcf69e32
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.pfnrendercb, pfnRenderCb callback function [Display Devices], pfnRenderCb, PFND3DDDI_RENDERCB, PFND3DDDI_RENDERCB, d3dumddi/pfnRenderCb, D3Druntime_Functions_487738b4-19e4-464f-80cc-d3b83eef1c6f.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_RENDERCB
+title: PFND3DDDI_RENDERCB
+author: windows-driver-content
+description: The pfnRenderCb function submits the current command buffer for rendering to the display miniport driver.
+old-location: display\pfnrendercb.htm
+old-project: display
+ms.assetid: f242162e-6237-469c-b178-5a51dcf69e32
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.pfnrendercb, pfnRenderCb callback function [Display Devices], pfnRenderCb, PFND3DDDI_RENDERCB, PFND3DDDI_RENDERCB, d3dumddi/pfnRenderCb, D3Druntime_Functions_487738b4-19e4-464f-80cc-d3b83eef1c6f.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	pfnRenderCb
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

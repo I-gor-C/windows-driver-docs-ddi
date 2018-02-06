@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.tagKSCAMERA_MAXVIDEOFPS_FORPHOTORES
-title : tagKSCAMERA_MAXVIDEOFPS_FORPHOTORES
-author : windows-driver-content
-description : The KSCAMERA_MAXVIDEOFPS_FORPHOTORES structure contains the property data for maximum frame rate at a particular resolution for a camera supporting preview and capture.
-old-location : stream\kscamera_maxvideofps_forphotores.htm
-old-project : stream
-ms.assetid : 4230F7E1-DC36-4265-9E82-907EE82E9DFF
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.kscamera_maxvideofps_forphotores, *PKSCAMERA_MAXVIDEOFPS_FORPHOTORES, tagKSCAMERA_MAXVIDEOFPS_FORPHOTORES, ksmedia/PKSCAMERA_MAXVIDEOFPS_FORPHOTORES, KSCAMERA_MAXVIDEOFPS_FORPHOTORES, PKSCAMERA_MAXVIDEOFPS_FORPHOTORES, PKSCAMERA_MAXVIDEOFPS_FORPHOTORES structure pointer [Streaming Media Devices], KSCAMERA_MAXVIDEOFPS_FORPHOTORES structure [Streaming Media Devices], ksmedia/KSCAMERA_MAXVIDEOFPS_FORPHOTORES
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8.1
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KSCAMERA_MAXVIDEOFPS_FORPHOTORES, *PKSCAMERA_MAXVIDEOFPS_FORPHOTORES
+UID: NS:ksmedia.tagKSCAMERA_MAXVIDEOFPS_FORPHOTORES
+title: tagKSCAMERA_MAXVIDEOFPS_FORPHOTORES
+author: windows-driver-content
+description: The KSCAMERA_MAXVIDEOFPS_FORPHOTORES structure contains the property data for maximum frame rate at a particular resolution for a camera supporting preview and capture.
+old-location: stream\kscamera_maxvideofps_forphotores.htm
+old-project: stream
+ms.assetid: 4230F7E1-DC36-4265-9E82-907EE82E9DFF
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.kscamera_maxvideofps_forphotores, *PKSCAMERA_MAXVIDEOFPS_FORPHOTORES, tagKSCAMERA_MAXVIDEOFPS_FORPHOTORES, ksmedia/PKSCAMERA_MAXVIDEOFPS_FORPHOTORES, KSCAMERA_MAXVIDEOFPS_FORPHOTORES, PKSCAMERA_MAXVIDEOFPS_FORPHOTORES, PKSCAMERA_MAXVIDEOFPS_FORPHOTORES structure pointer [Streaming Media Devices], KSCAMERA_MAXVIDEOFPS_FORPHOTORES structure [Streaming Media Devices], ksmedia/KSCAMERA_MAXVIDEOFPS_FORPHOTORES
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8.1
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ksmedia.h
+apiname:
+-	KSCAMERA_MAXVIDEOFPS_FORPHOTORES
+product: Windows
+targetos: Windows
+req.typenames: KSCAMERA_MAXVIDEOFPS_FORPHOTORES, *PKSCAMERA_MAXVIDEOFPS_FORPHOTORES
 ---
 
 # tagKSCAMERA_MAXVIDEOFPS_FORPHOTORES structure

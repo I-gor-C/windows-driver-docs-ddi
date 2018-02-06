@@ -1,41 +1,47 @@
 ---
-UID : NF:drmk.DrmDestroyContent
-title : DrmDestroyContent function
-author : windows-driver-content
-description : The DrmDestroyContent function deletes a DRM content ID that was created by DrmCreateContentMixed.
-old-location : audio\drmdestroycontent.htm
-old-project : audio
-ms.assetid : 197f74f8-050e-4b0b-a95d-f640c565c17e
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : drmk/DrmDestroyContent, aud-prop2_cfaec95c-a7e5-4488-a56d-323ebc577d90.xml, DrmDestroyContent function [Audio Devices], DrmDestroyContent, audio.drmdestroycontent
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : drmk.h
-req.include-header : Drmk.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Drmk.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDI_TX_METADATA, *PWDI_TX_METADATA
+UID: NF:drmk.DrmDestroyContent
+title: DrmDestroyContent function
+author: windows-driver-content
+description: The DrmDestroyContent function deletes a DRM content ID that was created by DrmCreateContentMixed.
+old-location: audio\drmdestroycontent.htm
+old-project: audio
+ms.assetid: 197f74f8-050e-4b0b-a95d-f640c565c17e
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: drmk/DrmDestroyContent, aud-prop2_cfaec95c-a7e5-4488-a56d-323ebc577d90.xml, DrmDestroyContent function [Audio Devices], DrmDestroyContent, audio.drmdestroycontent
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: drmk.h
+req.include-header: Drmk.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Drmk.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Drmk.lib
+-	Drmk.dll
+apiname:
+-	DrmDestroyContent
+product: Windows
+targetos: Windows
+req.typenames: WDI_TX_METADATA, *PWDI_TX_METADATA
 ---
 
 

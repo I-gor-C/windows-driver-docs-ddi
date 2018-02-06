@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.IoEnumerateDeviceObjectList
-title : IoEnumerateDeviceObjectList function
-author : windows-driver-content
-description : The IoEnumerateDeviceObjectList routine enumerates a driver's device object list.
-old-location : ifsk\ioenumeratedeviceobjectlist.htm
-old-project : ifsk
-ms.assetid : ce6cec58-2122-49c3-8c5c-172df2c4dd04
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : IoEnumerateDeviceObjectList, ioref_5bfd9f2c-73c0-4f69-8a5e-4cc105c2f92a.xml, ntifs/IoEnumerateDeviceObjectList, IoEnumerateDeviceObjectList routine [Installable File System Drivers], ifsk.ioenumeratedeviceobjectlist
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : This routine is available on Update Rollup for Windows 2000 Service Pack 4 (SP4) and on Windows XP and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.IoEnumerateDeviceObjectList
+title: IoEnumerateDeviceObjectList function
+author: windows-driver-content
+description: The IoEnumerateDeviceObjectList routine enumerates a driver's device object list.
+old-location: ifsk\ioenumeratedeviceobjectlist.htm
+old-project: ifsk
+ms.assetid: ce6cec58-2122-49c3-8c5c-172df2c4dd04
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: IoEnumerateDeviceObjectList, ioref_5bfd9f2c-73c0-4f69-8a5e-4cc105c2f92a.xml, ntifs/IoEnumerateDeviceObjectList, IoEnumerateDeviceObjectList routine [Installable File System Drivers], ifsk.ioenumeratedeviceobjectlist
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: This routine is available on Update Rollup for Windows 2000 Service Pack 4 (SP4) and on Windows XP and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoEnumerateDeviceObjectList
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

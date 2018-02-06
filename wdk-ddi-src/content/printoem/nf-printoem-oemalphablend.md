@@ -1,42 +1,47 @@
 ---
-UID : NF:printoem.OEMAlphaBlend
-title : OEMAlphaBlend function
-author : windows-driver-content
-description : OEMAlphaBlend function
-old-location : print\oemalphablend.htm
-old-project : print
-ms.assetid : c5c7cabe-7ac9-42f7-92e3-2c1c319ce80e
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : printoem/OEMAlphaBlend, OEMAlphaBlend function [Print Devices], OEMAlphaBlend, print_unidrv-pscript_rendering_135f0675-e5ff-4e8f-94ad-1ea656cc4c46.xml, print.oemalphablend
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : printoem.h
-req.include-header : Printoem.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STDVARIABLEINDEX
-req.product : Windows 10 or later.
+UID: NF:printoem.OEMAlphaBlend
+title: OEMAlphaBlend function
+author: windows-driver-content
+description: OEMAlphaBlend function
+old-location: print\oemalphablend.htm
+old-project: print
+ms.assetid: c5c7cabe-7ac9-42f7-92e3-2c1c319ce80e
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: printoem/OEMAlphaBlend, OEMAlphaBlend function [Print Devices], OEMAlphaBlend, print_unidrv-pscript_rendering_135f0675-e5ff-4e8f-94ad-1ea656cc4c46.xml, print.oemalphablend
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: printoem.h
+req.include-header: Printoem.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	printoem.h
+apiname:
+-	OEMAlphaBlend
+product: Windows
+targetos: Windows
+req.typenames: STDVARIABLEINDEX
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:ndischimney._TCP_OFFLOAD_STATE_CONST
-title : "_TCP_OFFLOAD_STATE_CONST"
-author : windows-driver-content
-description : The TCP_OFFLOAD_STATE_CONST structure contains the constant variables of a TCP connection state object.
-old-location : netvista\tcp_offload_state_const.htm
-old-project : netvista
-ms.assetid : 3e80f963-a494-475a-a246-abe5674dbcb6
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : ndischimney/PTCP_OFFLOAD_STATE_CONST, *PTCP_OFFLOAD_STATE_CONST, TCP_OFFLOAD_STATE_CONST, PTCP_OFFLOAD_STATE_CONST, ndischimney/TCP_OFFLOAD_STATE_CONST, TCP_OFFLOAD_STATE_CONST structure [Network Drivers Starting with Windows Vista], tcp_chim_struct_d6f90719-24f7-49d1-9253-5d5db776f192.xml, netvista.tcp_offload_state_const, PTCP_OFFLOAD_STATE_CONST structure pointer [Network Drivers Starting with Windows Vista], _TCP_OFFLOAD_STATE_CONST
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndischimney.h
-req.include-header : Ndischimney.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PTCP_OFFLOAD_STATE_CONST, TCP_OFFLOAD_STATE_CONST"
+UID: NS:ndischimney._TCP_OFFLOAD_STATE_CONST
+title: "_TCP_OFFLOAD_STATE_CONST"
+author: windows-driver-content
+description: The TCP_OFFLOAD_STATE_CONST structure contains the constant variables of a TCP connection state object.
+old-location: netvista\tcp_offload_state_const.htm
+old-project: netvista
+ms.assetid: 3e80f963-a494-475a-a246-abe5674dbcb6
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: ndischimney/PTCP_OFFLOAD_STATE_CONST, *PTCP_OFFLOAD_STATE_CONST, TCP_OFFLOAD_STATE_CONST, PTCP_OFFLOAD_STATE_CONST, ndischimney/TCP_OFFLOAD_STATE_CONST, TCP_OFFLOAD_STATE_CONST structure [Network Drivers Starting with Windows Vista], tcp_chim_struct_d6f90719-24f7-49d1-9253-5d5db776f192.xml, netvista.tcp_offload_state_const, PTCP_OFFLOAD_STATE_CONST structure pointer [Network Drivers Starting with Windows Vista], _TCP_OFFLOAD_STATE_CONST
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndischimney.h
+req.include-header: Ndischimney.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndischimney.h
+apiname:
+-	TCP_OFFLOAD_STATE_CONST
+product: Windows
+targetos: Windows
+req.typenames: "*PTCP_OFFLOAD_STATE_CONST, TCP_OFFLOAD_STATE_CONST"
 ---
 
 # _TCP_OFFLOAD_STATE_CONST structure

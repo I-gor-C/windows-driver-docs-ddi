@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddmmc._FEATURE_DATA_DVD_RW_RESTRICTED_OVERWRITE
-title : "_FEATURE_DATA_DVD_RW_RESTRICTED_OVERWRITE"
-author : windows-driver-content
-description : The FEATURE_DATA_DVD_RW_RESTRICTED_OVERWRITE structure contains information for the Restricted Overwrite feature.
-old-location : storage\feature_data_dvd_rw_restricted_overwrite.htm
-old-project : storage
-ms.assetid : 1669872a-4306-4773-bd7e-6f481c5e689d
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : ntddmmc/FEATURE_DATA_DVD_RW_RESTRICTED_OVERWRITE, FEATURE_DATA_DVD_RW_RESTRICTED_OVERWRITE, FEATURE_DATA_DVD_RW_RESTRICTED_OVERWRITE structure [Storage Devices], structs-CD-ROM_b6d53c83-8d7d-4fc1-9e42-b173219961a4.xml, PFEATURE_DATA_DVD_RW_RESTRICTED_OVERWRITE structure pointer [Storage Devices], _FEATURE_DATA_DVD_RW_RESTRICTED_OVERWRITE, PFEATURE_DATA_DVD_RW_RESTRICTED_OVERWRITE, ntddmmc/PFEATURE_DATA_DVD_RW_RESTRICTED_OVERWRITE, storage.feature_data_dvd_rw_restricted_overwrite, *PFEATURE_DATA_DVD_RW_RESTRICTED_OVERWRITE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddmmc.h
-req.include-header : Ntddcdrm.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PFEATURE_DATA_DVD_RW_RESTRICTED_OVERWRITE, FEATURE_DATA_DVD_RW_RESTRICTED_OVERWRITE"
+UID: NS:ntddmmc._FEATURE_DATA_DVD_RW_RESTRICTED_OVERWRITE
+title: "_FEATURE_DATA_DVD_RW_RESTRICTED_OVERWRITE"
+author: windows-driver-content
+description: The FEATURE_DATA_DVD_RW_RESTRICTED_OVERWRITE structure contains information for the Restricted Overwrite feature.
+old-location: storage\feature_data_dvd_rw_restricted_overwrite.htm
+old-project: storage
+ms.assetid: 1669872a-4306-4773-bd7e-6f481c5e689d
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: ntddmmc/FEATURE_DATA_DVD_RW_RESTRICTED_OVERWRITE, FEATURE_DATA_DVD_RW_RESTRICTED_OVERWRITE, FEATURE_DATA_DVD_RW_RESTRICTED_OVERWRITE structure [Storage Devices], structs-CD-ROM_b6d53c83-8d7d-4fc1-9e42-b173219961a4.xml, PFEATURE_DATA_DVD_RW_RESTRICTED_OVERWRITE structure pointer [Storage Devices], _FEATURE_DATA_DVD_RW_RESTRICTED_OVERWRITE, PFEATURE_DATA_DVD_RW_RESTRICTED_OVERWRITE, ntddmmc/PFEATURE_DATA_DVD_RW_RESTRICTED_OVERWRITE, storage.feature_data_dvd_rw_restricted_overwrite, *PFEATURE_DATA_DVD_RW_RESTRICTED_OVERWRITE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddmmc.h
+req.include-header: Ntddcdrm.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddmmc.h
+apiname:
+-	FEATURE_DATA_DVD_RW_RESTRICTED_OVERWRITE
+product: Windows
+targetos: Windows
+req.typenames: "*PFEATURE_DATA_DVD_RW_RESTRICTED_OVERWRITE, FEATURE_DATA_DVD_RW_RESTRICTED_OVERWRITE"
 ---
 
 # _FEATURE_DATA_DVD_RW_RESTRICTED_OVERWRITE structure

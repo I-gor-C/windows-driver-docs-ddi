@@ -1,41 +1,46 @@
 ---
-UID : NF:engextcpp.ExtRemoteData.Read
-title : ExtRemoteData::Read method
-author : windows-driver-content
-description : The Read method reads the contents of the target's memory, represented by the ExtRemoteData object, and then caches the data.
-old-location : debugger\extremotedata_read.htm
-old-project : debugger
-ms.assetid : 3068cbcf-c15b-43e1-bd53-857efea65d83
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : ExtRemoteData class [Windows Debugging], Read method, ExtRemoteData, Read, debugger.extremotedata_read, Read method [Windows Debugging], ExtRemoteData class, Read method [Windows Debugging], EngExtCpp_Ref_69230a7b-f83c-46fc-88c4-134b506540af.xml, ExtRemoteData::Read
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : engextcpp.hpp
-req.include-header : Engextcpp.hpp
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : engextcpp.hpp
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SILO_DRIVER_CAPABILITIES, *PSILO_DRIVER_CAPABILITIES
+UID: NF:engextcpp.ExtRemoteData.Read
+title: ExtRemoteData::Read method
+author: windows-driver-content
+description: The Read method reads the contents of the target's memory, represented by the ExtRemoteData object, and then caches the data.
+old-location: debugger\extremotedata_read.htm
+old-project: debugger
+ms.assetid: 3068cbcf-c15b-43e1-bd53-857efea65d83
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: ExtRemoteData class [Windows Debugging], Read method, ExtRemoteData, Read, debugger.extremotedata_read, Read method [Windows Debugging], ExtRemoteData class, Read method [Windows Debugging], EngExtCpp_Ref_69230a7b-f83c-46fc-88c4-134b506540af.xml, ExtRemoteData::Read
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: engextcpp.hpp
+req.include-header: Engextcpp.hpp
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: engextcpp.hpp
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	engextcpp.hpp
+apiname:
+-	ExtRemoteData.Read
+product: Windows
+targetos: Windows
+req.typenames: SILO_DRIVER_CAPABILITIES, *PSILO_DRIVER_CAPABILITIES
 ---
 
 

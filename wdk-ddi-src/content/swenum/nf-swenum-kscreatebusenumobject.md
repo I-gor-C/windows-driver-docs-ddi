@@ -1,42 +1,48 @@
 ---
-UID : NF:swenum.KsCreateBusEnumObject
-title : KsCreateBusEnumObject function
-author : windows-driver-content
-description : The KsCreateBusEnumObject function creates a demand-load bus enumerator object and initializes it for use with the demand-load bus enumerator services.
-old-location : stream\kscreatebusenumobject.htm
-old-project : stream
-ms.assetid : bb117f9d-a288-4db6-8f28-96ab5152289c
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : swenum/KsCreateBusEnumObject, ksfunc_c2f2d2fb-fea1-40af-8a0b-358b96bae705.xml, KsCreateBusEnumObject, KsCreateBusEnumObject function [Streaming Media Devices], stream.kscreatebusenumobject
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : swenum.h
-req.include-header : Swenum.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STREAM_TIME_REFERENCE, *PSTREAM_TIME_REFERENCE
-req.product : Windows 10 or later.
+UID: NF:swenum.KsCreateBusEnumObject
+title: KsCreateBusEnumObject function
+author: windows-driver-content
+description: The KsCreateBusEnumObject function creates a demand-load bus enumerator object and initializes it for use with the demand-load bus enumerator services.
+old-location: stream\kscreatebusenumobject.htm
+old-project: stream
+ms.assetid: bb117f9d-a288-4db6-8f28-96ab5152289c
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: swenum/KsCreateBusEnumObject, ksfunc_c2f2d2fb-fea1-40af-8a0b-358b96bae705.xml, KsCreateBusEnumObject, KsCreateBusEnumObject function [Streaming Media Devices], stream.kscreatebusenumobject
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: swenum.h
+req.include-header: Swenum.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsCreateBusEnumObject
+product: Windows
+targetos: Windows
+req.typenames: STREAM_TIME_REFERENCE, *PSTREAM_TIME_REFERENCE
+req.product: Windows 10 or later.
 ---
 
 

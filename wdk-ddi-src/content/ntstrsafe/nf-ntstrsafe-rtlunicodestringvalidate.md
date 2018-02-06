@@ -1,41 +1,47 @@
 ---
-UID : NF:ntstrsafe.RtlUnicodeStringValidate
-title : RtlUnicodeStringValidate function
-author : windows-driver-content
-description : The RtlUnicodeStringValidate function validates the contents of a UNICODE_STRING structure.
-old-location : kernel\rtlunicodestringvalidate.htm
-old-project : kernel
-ms.assetid : 7c4f452e-df7b-401b-a62e-20e0b2164172
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ntstrsafe/RtlUnicodeStringValidate, RtlUnicodeStringValidate, safestrings_65cec2b6-a948-423e-b7e3-786ae2a9ab1a.xml, RtlUnicodeStringValidate function [Kernel-Mode Driver Architecture], kernel.rtlunicodestringvalidate
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntstrsafe.h
-req.include-header : Ntstrsafe.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows XP with Service Pack 1 (SP1) and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ntstrsafe.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : BATTERY_REPORTING_SCALE, *PBATTERY_REPORTING_SCALE
+UID: NF:ntstrsafe.RtlUnicodeStringValidate
+title: RtlUnicodeStringValidate function
+author: windows-driver-content
+description: The RtlUnicodeStringValidate function validates the contents of a UNICODE_STRING structure.
+old-location: kernel\rtlunicodestringvalidate.htm
+old-project: kernel
+ms.assetid: 7c4f452e-df7b-401b-a62e-20e0b2164172
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ntstrsafe/RtlUnicodeStringValidate, RtlUnicodeStringValidate, safestrings_65cec2b6-a948-423e-b7e3-786ae2a9ab1a.xml, RtlUnicodeStringValidate function [Kernel-Mode Driver Architecture], kernel.rtlunicodestringvalidate
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntstrsafe.h
+req.include-header: Ntstrsafe.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows XP with Service Pack 1 (SP1) and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ntstrsafe.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ntstrsafe.lib
+-	Ntstrsafe.dll
+apiname:
+-	RtlUnicodeStringValidate
+product: Windows
+targetos: Windows
+req.typenames: BATTERY_REPORTING_SCALE, *PBATTERY_REPORTING_SCALE
 ---
 
 

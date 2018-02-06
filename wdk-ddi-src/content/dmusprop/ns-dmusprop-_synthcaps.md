@@ -1,41 +1,46 @@
 ---
-UID : NS:dmusprop._SYNTHCAPS
-title : "_SYNTHCAPS"
-author : windows-driver-content
-description : The SYNTHCAPS structure specifies the capabilities of a synthesizer.
-old-location : audio\synthcaps.htm
-old-project : audio
-ms.assetid : d9d7327f-a413-4828-b204-e08198d0fe9e
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : aud-prop_609e484a-6bcb-4ea2-9ca5-fa640c4d9ba8.xml, SYNTHCAPS structure [Audio Devices], audio.synthcaps, dmusprop/SYNTHCAPS, _SYNTHCAPS, PSYNTHCAPS structure pointer [Audio Devices], PSYNTHCAPS, dmusprop/PSYNTHCAPS, SYNTHCAPS, *PSYNTHCAPS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : dmusprop.h
-req.include-header : Dmusprop.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SYNTHCAPS, *PSYNTHCAPS
+UID: NS:dmusprop._SYNTHCAPS
+title: "_SYNTHCAPS"
+author: windows-driver-content
+description: The SYNTHCAPS structure specifies the capabilities of a synthesizer.
+old-location: audio\synthcaps.htm
+old-project: audio
+ms.assetid: d9d7327f-a413-4828-b204-e08198d0fe9e
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: aud-prop_609e484a-6bcb-4ea2-9ca5-fa640c4d9ba8.xml, SYNTHCAPS structure [Audio Devices], audio.synthcaps, dmusprop/SYNTHCAPS, _SYNTHCAPS, PSYNTHCAPS structure pointer [Audio Devices], PSYNTHCAPS, dmusprop/PSYNTHCAPS, SYNTHCAPS, *PSYNTHCAPS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: dmusprop.h
+req.include-header: Dmusprop.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	dmusprop.h
+apiname:
+-	SYNTHCAPS
+product: Windows
+targetos: Windows
+req.typenames: SYNTHCAPS, *PSYNTHCAPS
 ---
 
 # _SYNTHCAPS structure

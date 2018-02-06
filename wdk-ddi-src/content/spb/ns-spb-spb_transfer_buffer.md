@@ -1,42 +1,47 @@
 ---
-UID : NS:spb.SPB_TRANSFER_BUFFER
-title : SPB_TRANSFER_BUFFER
-author : windows-driver-content
-description : The SPB_TRANSFER_BUFFER structure describes the data buffer for an individual transfer in an I/O transfer sequence.
-old-location : spb\spb_transfer_buffer.htm
-old-project : SPB
-ms.assetid : E9C5B866-1EB0-4043-B22F-DF2F4CFAE64C
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : spb/SPB_TRANSFER_BUFFER, PSPB_TRANSFER_BUFFER, PSPB_TRANSFER_BUFFER structure pointer [Buses], SPB_TRANSFER_BUFFER, SPB.spb_transfer_buffer, spb/PSPB_TRANSFER_BUFFER, SPB_TRANSFER_BUFFER structure [Buses], *PSPB_TRANSFER_BUFFER
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : spb.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SPB_TRANSFER_BUFFER, *PSPB_TRANSFER_BUFFER
-req.product : Windows 10 or later.
+UID: NS:spb.SPB_TRANSFER_BUFFER
+title: SPB_TRANSFER_BUFFER
+author: windows-driver-content
+description: The SPB_TRANSFER_BUFFER structure describes the data buffer for an individual transfer in an I/O transfer sequence.
+old-location: spb\spb_transfer_buffer.htm
+old-project: SPB
+ms.assetid: E9C5B866-1EB0-4043-B22F-DF2F4CFAE64C
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: spb/SPB_TRANSFER_BUFFER, PSPB_TRANSFER_BUFFER, PSPB_TRANSFER_BUFFER structure pointer [Buses], SPB_TRANSFER_BUFFER, SPB.spb_transfer_buffer, spb/PSPB_TRANSFER_BUFFER, SPB_TRANSFER_BUFFER structure [Buses], *PSPB_TRANSFER_BUFFER
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: spb.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Spb.h
+apiname:
+-	SPB_TRANSFER_BUFFER
+product: Windows
+targetos: Windows
+req.typenames: SPB_TRANSFER_BUFFER, *PSPB_TRANSFER_BUFFER
+req.product: Windows 10 or later.
 ---
 
 # SPB_TRANSFER_BUFFER structure

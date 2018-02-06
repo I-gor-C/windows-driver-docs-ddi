@@ -1,42 +1,47 @@
 ---
-UID : NE:wdfdevice._WDF_SPECIAL_FILE_TYPE
-title : "_WDF_SPECIAL_FILE_TYPE"
-author : windows-driver-content
-description : The WDF_SPECIAL_FILE_TYPE enumeration identifies special file types that a device can support.
-old-location : wdf\wdf_special_file_type.htm
-old-project : wdf
-ms.assetid : 3879570f-e083-4eaf-aa5b-9b78d8f826c1
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WDF_SPECIAL_FILE_TYPE enumeration, wdfdevice/PWDF_SPECIAL_FILE_TYPE, wdfdevice/WDF_SPECIAL_FILE_TYPE, wdfdevice/WdfSpecialFileMax, DFDeviceObjectGeneralRef_66afb20c-b1d5-480a-b4bb-48b6e092fe5e.xml, wdfdevice/WdfSpecialFileUndefined, _WDF_SPECIAL_FILE_TYPE, WDF_SPECIAL_FILE_TYPE, WdfSpecialFileMax, WdfSpecialFileDump, PWDF_SPECIAL_FILE_TYPE, wdfdevice/WdfSpecialFileDump, wdf.wdf_special_file_type, wdfdevice/WdfSpecialFileHibernation, WdfSpecialFileUndefined, wdfdevice/WdfSpecialFilePaging, PWDF_SPECIAL_FILE_TYPE enumeration pointer, kmdf.wdf_special_file_type, WdfSpecialFileBoot, wdfdevice/WdfSpecialFileBoot, WdfSpecialFilePaging, WdfSpecialFileHibernation, *PWDF_SPECIAL_FILE_TYPE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : wdfdevice.h
-req.include-header : Wdf.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_SPECIAL_FILE_TYPE, *PWDF_SPECIAL_FILE_TYPE
-req.product : Windows 10 or later.
+UID: NE:wdfdevice._WDF_SPECIAL_FILE_TYPE
+title: "_WDF_SPECIAL_FILE_TYPE"
+author: windows-driver-content
+description: The WDF_SPECIAL_FILE_TYPE enumeration identifies special file types that a device can support.
+old-location: wdf\wdf_special_file_type.htm
+old-project: wdf
+ms.assetid: 3879570f-e083-4eaf-aa5b-9b78d8f826c1
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WDF_SPECIAL_FILE_TYPE enumeration, wdfdevice/PWDF_SPECIAL_FILE_TYPE, wdfdevice/WDF_SPECIAL_FILE_TYPE, wdfdevice/WdfSpecialFileMax, DFDeviceObjectGeneralRef_66afb20c-b1d5-480a-b4bb-48b6e092fe5e.xml, wdfdevice/WdfSpecialFileUndefined, _WDF_SPECIAL_FILE_TYPE, WDF_SPECIAL_FILE_TYPE, WdfSpecialFileMax, WdfSpecialFileDump, PWDF_SPECIAL_FILE_TYPE, wdfdevice/WdfSpecialFileDump, wdf.wdf_special_file_type, wdfdevice/WdfSpecialFileHibernation, WdfSpecialFileUndefined, wdfdevice/WdfSpecialFilePaging, PWDF_SPECIAL_FILE_TYPE enumeration pointer, kmdf.wdf_special_file_type, WdfSpecialFileBoot, wdfdevice/WdfSpecialFileBoot, WdfSpecialFilePaging, WdfSpecialFileHibernation, *PWDF_SPECIAL_FILE_TYPE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: wdfdevice.h
+req.include-header: Wdf.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfdevice.h
+apiname:
+-	WDF_SPECIAL_FILE_TYPE
+product: Windows
+targetos: Windows
+req.typenames: WDF_SPECIAL_FILE_TYPE, *PWDF_SPECIAL_FILE_TYPE
+req.product: Windows 10 or later.
 ---
 
 # _WDF_SPECIAL_FILE_TYPE Enumeration
@@ -59,41 +64,41 @@ typedef enum _WDF_SPECIAL_FILE_TYPE {
 ## Constants
 
 <table>
-
-<tr>
-<td>WdfSpecialFileBoot</td>
-<td>The device supports boot files. This constant is available in version 1.11 and later versions of KMDF.</td>
-</tr>
-
-<tr>
-<td>WdfSpecialFileDump</td>
-<td>The device supports dump files.</td>
-</tr>
-
-<tr>
-<td>WdfSpecialFileHibernation</td>
-<td>The device supports hibernation files.</td>
-</tr>
-
-<tr>
-<td>WdfSpecialFileMax</td>
-<td>For internal use only.</td>
-</tr>
-
-<tr>
-<td>WdfSpecialFilePaging</td>
-<td>The device supports paging files.</td>
-</tr>
-
-<tr>
-<td>WdfSpecialFileUndefined</td>
-<td>For internal use only.</td>
-</tr>
+            
+                <tr>
+                    <td>WdfSpecialFileBoot</td>
+                    <td>The device supports boot files. This constant is available in version 1.11 and later versions of KMDF.</td>
+                </tr>
+            
+                <tr>
+                    <td>WdfSpecialFileDump</td>
+                    <td>The device supports dump files.</td>
+                </tr>
+            
+                <tr>
+                    <td>WdfSpecialFileHibernation</td>
+                    <td>The device supports hibernation files.</td>
+                </tr>
+            
+                <tr>
+                    <td>WdfSpecialFileMax</td>
+                    <td>For internal use only.</td>
+                </tr>
+            
+                <tr>
+                    <td>WdfSpecialFilePaging</td>
+                    <td>The device supports paging files.</td>
+                </tr>
+            
+                <tr>
+                    <td>WdfSpecialFileUndefined</td>
+                    <td>For internal use only.</td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-For more information, see <a href="https://msdn.microsoft.com/350e715f-be36-4999-99a2-6175d9763b3f">Supporting Special Files</a>.
+        For more information, see <a href="https://msdn.microsoft.com/350e715f-be36-4999-99a2-6175d9763b3f">Supporting Special Files</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -101,9 +106,9 @@ For more information, see <a href="https://msdn.microsoft.com/350e715f-be36-4999
 | **Minimum KMDF version** | 1.0 |
 | **Header** | wdfdevice.h (include Wdf.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\wdfdevice\nf-wdfdevice-wdfdevicesetspecialfilesupport.md">WdfDeviceSetSpecialFileSupport</a>
+        <a href="..\wdfdevice\nf-wdfdevice-wdfdevicesetspecialfilesupport.md">WdfDeviceSetSpecialFileSupport</a>
 
  
 

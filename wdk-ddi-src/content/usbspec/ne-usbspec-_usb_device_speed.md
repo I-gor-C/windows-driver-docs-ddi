@@ -1,42 +1,47 @@
 ---
-UID : NE:usbspec._USB_DEVICE_SPEED
-title : "_USB_DEVICE_SPEED"
-author : windows-driver-content
-description : The USB_DEVICE_SPEED enumeration defines constants for USB device speeds.
-old-location : buses\usb_device_speed.htm
-old-project : usbref
-ms.assetid : e7c50bac-96ca-446d-a865-4ad87ad5b295
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : UsbSuperSpeed, UsbHighSpeed, usbspec/UsbSuperSpeed, _USB_DEVICE_SPEED, USB_DEVICE_SPEED enumeration [Buses], usbspec/UsbLowSpeed, USB_DEVICE_SPEED, buses.usb_device_speed, UsbLowSpeed, usbspec/UsbFullSpeed, usbstrct_c458b58d-fcfa-4082-bbcf-34e22d504ab9.xml, UsbFullSpeed, usbspec/USB_DEVICE_SPEED, usbspec/UsbHighSpeed
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : usbspec.h
-req.include-header : Usbspec.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : USB_DEVICE_SPEED
-req.product : Windows 10 or later.
+UID: NE:usbspec._USB_DEVICE_SPEED
+title: "_USB_DEVICE_SPEED"
+author: windows-driver-content
+description: The USB_DEVICE_SPEED enumeration defines constants for USB device speeds.
+old-location: buses\usb_device_speed.htm
+old-project: usbref
+ms.assetid: e7c50bac-96ca-446d-a865-4ad87ad5b295
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: UsbSuperSpeed, UsbHighSpeed, usbspec/UsbSuperSpeed, _USB_DEVICE_SPEED, USB_DEVICE_SPEED enumeration [Buses], usbspec/UsbLowSpeed, USB_DEVICE_SPEED, buses.usb_device_speed, UsbLowSpeed, usbspec/UsbFullSpeed, usbstrct_c458b58d-fcfa-4082-bbcf-34e22d504ab9.xml, UsbFullSpeed, usbspec/USB_DEVICE_SPEED, usbspec/UsbHighSpeed
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: usbspec.h
+req.include-header: Usbspec.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Usbspec.h
+apiname:
+-	USB_DEVICE_SPEED
+product: Windows
+targetos: Windows
+req.typenames: USB_DEVICE_SPEED
+req.product: Windows 10 or later.
 ---
 
 # _USB_DEVICE_SPEED Enumeration
@@ -55,26 +60,26 @@ typedef enum  {
 ## Constants
 
 <table>
-
-<tr>
-<td>UsbFullSpeed</td>
-<td>Indicates a full-speed USB 1.1-compliant device.</td>
-</tr>
-
-<tr>
-<td>UsbHighSpeed</td>
-<td>Indicates a high-speed USB 2.0-compliant device.</td>
-</tr>
-
-<tr>
-<td>UsbLowSpeed</td>
-<td>Indicates a low-speed USB 1.1-compliant device.</td>
-</tr>
-
-<tr>
-<td>UsbSuperSpeed</td>
-<td>Indicates a SuperSpeed USB 3.0-compliant device.</td>
-</tr>
+            
+                <tr>
+                    <td>UsbFullSpeed</td>
+                    <td>Indicates a full-speed USB 1.1-compliant device.</td>
+                </tr>
+            
+                <tr>
+                    <td>UsbHighSpeed</td>
+                    <td>Indicates a high-speed USB 2.0-compliant device.</td>
+                </tr>
+            
+                <tr>
+                    <td>UsbLowSpeed</td>
+                    <td>Indicates a low-speed USB 1.1-compliant device.</td>
+                </tr>
+            
+                <tr>
+                    <td>UsbSuperSpeed</td>
+                    <td>Indicates a SuperSpeed USB 3.0-compliant device.</td>
+                </tr>
 </table>
 
 
@@ -83,9 +88,9 @@ typedef enum  {
 | ---- |:---- |
 | **Header** | usbspec.h (include Usbspec.h) |
 
-## See Also
+    ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539322">USB Constants and Enumerations</a>
+        <a href="https://msdn.microsoft.com/library/windows/hardware/ff539322">USB Constants and Enumerations</a>
 
  
 

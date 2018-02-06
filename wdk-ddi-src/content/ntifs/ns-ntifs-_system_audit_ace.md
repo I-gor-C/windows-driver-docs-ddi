@@ -1,41 +1,46 @@
 ---
-UID : NS:ntifs._SYSTEM_AUDIT_ACE
-title : "_SYSTEM_AUDIT_ACE"
-author : windows-driver-content
-description : The SYSTEM_AUDIT_ACE structure defines an access-control entry (ACE) for the system access-control list (ACL) specifying what types of access cause system-level notifications.
-old-location : ifsk\system_audit_ace.htm
-old-project : ifsk
-ms.assetid : 03806d36-0066-4603-ba53-10149778b4e7
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : securitystructures_f47f7528-0214-4efc-9ec8-0f799d643299.xml, ifsk.system_audit_ace, PSYSTEM_AUDIT_ACE structure pointer [Installable File System Drivers], *PSYSTEM_AUDIT_ACE, ntifs/PSYSTEM_AUDIT_ACE, SYSTEM_AUDIT_ACE structure [Installable File System Drivers], ntifs/SYSTEM_AUDIT_ACE, _SYSTEM_AUDIT_ACE, PSYSTEM_AUDIT_ACE, SYSTEM_AUDIT_ACE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SYSTEM_AUDIT_ACE
+UID: NS:ntifs._SYSTEM_AUDIT_ACE
+title: "_SYSTEM_AUDIT_ACE"
+author: windows-driver-content
+description: The SYSTEM_AUDIT_ACE structure defines an access-control entry (ACE) for the system access-control list (ACL) specifying what types of access cause system-level notifications.
+old-location: ifsk\system_audit_ace.htm
+old-project: ifsk
+ms.assetid: 03806d36-0066-4603-ba53-10149778b4e7
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: securitystructures_f47f7528-0214-4efc-9ec8-0f799d643299.xml, ifsk.system_audit_ace, PSYSTEM_AUDIT_ACE structure pointer [Installable File System Drivers], *PSYSTEM_AUDIT_ACE, ntifs/PSYSTEM_AUDIT_ACE, SYSTEM_AUDIT_ACE structure [Installable File System Drivers], ntifs/SYSTEM_AUDIT_ACE, _SYSTEM_AUDIT_ACE, PSYSTEM_AUDIT_ACE, SYSTEM_AUDIT_ACE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntifs.h
+apiname:
+-	SYSTEM_AUDIT_ACE
+product: Windows
+targetos: Windows
+req.typenames: SYSTEM_AUDIT_ACE
 ---
 
 # _SYSTEM_AUDIT_ACE structure

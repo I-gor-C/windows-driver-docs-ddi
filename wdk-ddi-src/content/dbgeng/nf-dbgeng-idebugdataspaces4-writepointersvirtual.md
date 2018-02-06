@@ -1,41 +1,49 @@
 ---
-UID : NF:dbgeng.IDebugDataSpaces4.WritePointersVirtual
-title : IDebugDataSpaces4::WritePointersVirtual method
-author : windows-driver-content
-description : The WritePointersVirtual method is a convenience method for writing pointers to the target's virtual address space.
-old-location : debugger\writepointersvirtual.htm
-old-project : debugger
-ms.assetid : b6bde54b-262a-4431-8f85-63f9c66463c4
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugDataSpaces2 interface [Windows Debugging], WritePointersVirtual method, IDebugDataSpaces interface [Windows Debugging], WritePointersVirtual method, WritePointersVirtual, IDebugDataSpaces4 interface [Windows Debugging], WritePointersVirtual method, dbgeng/IDebugDataSpaces4::WritePointersVirtual, IDebugDataSpaces3::WritePointersVirtual, dbgeng/IDebugDataSpaces::WritePointersVirtual, WritePointersVirtual method [Windows Debugging], IDebugDataSpaces interface, WritePointersVirtual method [Windows Debugging], IDebugDataSpaces_da1045b5-8b82-4412-8e83-58c285dccce0.xml, IDebugDataSpaces::WritePointersVirtual, WritePointersVirtual method [Windows Debugging], IDebugDataSpaces3 interface, WritePointersVirtual method [Windows Debugging], IDebugDataSpaces4 interface, IDebugDataSpaces2::WritePointersVirtual, IDebugDataSpaces4, IDebugDataSpaces4::WritePointersVirtual, dbgeng/IDebugDataSpaces3::WritePointersVirtual, IDebugDataSpaces3 interface [Windows Debugging], WritePointersVirtual method, dbgeng/IDebugDataSpaces2::WritePointersVirtual, debugger.writepointersvirtual, WritePointersVirtual method [Windows Debugging], IDebugDataSpaces2 interface
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugDataSpaces4.WritePointersVirtual
+title: IDebugDataSpaces4::WritePointersVirtual method
+author: windows-driver-content
+description: The WritePointersVirtual method is a convenience method for writing pointers to the target's virtual address space.
+old-location: debugger\writepointersvirtual.htm
+old-project: debugger
+ms.assetid: b6bde54b-262a-4431-8f85-63f9c66463c4
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugDataSpaces2 interface [Windows Debugging], WritePointersVirtual method, IDebugDataSpaces interface [Windows Debugging], WritePointersVirtual method, WritePointersVirtual, IDebugDataSpaces4 interface [Windows Debugging], WritePointersVirtual method, dbgeng/IDebugDataSpaces4::WritePointersVirtual, IDebugDataSpaces3::WritePointersVirtual, dbgeng/IDebugDataSpaces::WritePointersVirtual, WritePointersVirtual method [Windows Debugging], IDebugDataSpaces interface, WritePointersVirtual method [Windows Debugging], IDebugDataSpaces_da1045b5-8b82-4412-8e83-58c285dccce0.xml, IDebugDataSpaces::WritePointersVirtual, WritePointersVirtual method [Windows Debugging], IDebugDataSpaces3 interface, WritePointersVirtual method [Windows Debugging], IDebugDataSpaces4 interface, IDebugDataSpaces2::WritePointersVirtual, IDebugDataSpaces4, IDebugDataSpaces4::WritePointersVirtual, dbgeng/IDebugDataSpaces3::WritePointersVirtual, IDebugDataSpaces3 interface [Windows Debugging], WritePointersVirtual method, dbgeng/IDebugDataSpaces2::WritePointersVirtual, debugger.writepointersvirtual, WritePointersVirtual method [Windows Debugging], IDebugDataSpaces2 interface
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugDataSpaces.WritePointersVirtual
+-	IDebugDataSpaces2.WritePointersVirtual
+-	IDebugDataSpaces3.WritePointersVirtual
+-	IDebugDataSpaces4.WritePointersVirtual
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

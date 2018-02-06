@@ -1,41 +1,46 @@
 ---
-UID : NS:ndkpi._NDK_ADAPTER_DISPATCH
-title : "_NDK_ADAPTER_DISPATCH"
-author : windows-driver-content
-description : The NDK_ADAPTER_DISPATCH structure specifies dispatch function entry points for the NDK adapter object.
-old-location : netvista\ndk_adapter_dispatch.htm
-old-project : netvista
-ms.assetid : 61C425CB-4900-4EB2-8D33-FF235BC03929
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : "_NDK_ADAPTER_DISPATCH, PNDK_ADAPTER_DISPATCH, PNDK_ADAPTER_DISPATCH structure pointer [Network Drivers Starting with Windows Vista], NDK_ADAPTER_DISPATCH, ndkpi/NDK_ADAPTER_DISPATCH, NDK_ADAPTER_DISPATCH structure [Network Drivers Starting with Windows Vista], ndkpi/PNDK_ADAPTER_DISPATCH, netvista.ndk_adapter_dispatch"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndkpi.h
-req.include-header : Ndkpi.h
-req.target-type : Windows
-req.target-min-winverclnt : None supported,Supported in NDIS 6.30 and later.
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDK_ADAPTER_DISPATCH
+UID: NS:ndkpi._NDK_ADAPTER_DISPATCH
+title: "_NDK_ADAPTER_DISPATCH"
+author: windows-driver-content
+description: The NDK_ADAPTER_DISPATCH structure specifies dispatch function entry points for the NDK adapter object.
+old-location: netvista\ndk_adapter_dispatch.htm
+old-project: netvista
+ms.assetid: 61C425CB-4900-4EB2-8D33-FF235BC03929
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: "_NDK_ADAPTER_DISPATCH, PNDK_ADAPTER_DISPATCH, PNDK_ADAPTER_DISPATCH structure pointer [Network Drivers Starting with Windows Vista], NDK_ADAPTER_DISPATCH, ndkpi/NDK_ADAPTER_DISPATCH, NDK_ADAPTER_DISPATCH structure [Network Drivers Starting with Windows Vista], ndkpi/PNDK_ADAPTER_DISPATCH, netvista.ndk_adapter_dispatch"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndkpi.h
+req.include-header: Ndkpi.h
+req.target-type: Windows
+req.target-min-winverclnt: None supported,Supported in NDIS 6.30 and later.
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndkpi.h
+apiname:
+-	NDK_ADAPTER_DISPATCH
+product: Windows
+targetos: Windows
+req.typenames: NDK_ADAPTER_DISPATCH
 ---
 
 # _NDK_ADAPTER_DISPATCH structure

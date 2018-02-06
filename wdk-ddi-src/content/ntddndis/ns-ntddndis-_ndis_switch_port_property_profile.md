@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddndis._NDIS_SWITCH_PORT_PROPERTY_PROFILE
-title : "_NDIS_SWITCH_PORT_PROPERTY_PROFILE"
-author : windows-driver-content
-description : The NDIS_SWITCH_PORT_PROPERTY_PROFILE structure specifies a policy property for a Hyper-V extensible switch port that the extensible switch extension saves in its own policy store instead of in the Hyper-V policy store.
-old-location : netvista\ndis_switch_port_property_profile.htm
-old-project : netvista
-ms.assetid : DFB7239F-4A6B-4C98-884E-FAC1A0DE2024
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : PNDIS_SWITCH_PORT_PROPERTY_PROFILE structure pointer [Network Drivers Starting with Windows Vista], netvista.ndis_switch_port_property_profile, *PNDIS_SWITCH_PORT_PROPERTY_PROFILE, _NDIS_SWITCH_PORT_PROPERTY_PROFILE, ntddndis/NDIS_SWITCH_PORT_PROPERTY_PROFILE, PNDIS_SWITCH_PORT_PROPERTY_PROFILE, NDIS_SWITCH_PORT_PROPERTY_PROFILE, ntddndis/PNDIS_SWITCH_PORT_PROPERTY_PROFILE, NDIS_SWITCH_PORT_PROPERTY_PROFILE structure [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.30 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PNDIS_SWITCH_PORT_PROPERTY_PROFILE, NDIS_SWITCH_PORT_PROPERTY_PROFILE"
+UID: NS:ntddndis._NDIS_SWITCH_PORT_PROPERTY_PROFILE
+title: "_NDIS_SWITCH_PORT_PROPERTY_PROFILE"
+author: windows-driver-content
+description: The NDIS_SWITCH_PORT_PROPERTY_PROFILE structure specifies a policy property for a Hyper-V extensible switch port that the extensible switch extension saves in its own policy store instead of in the Hyper-V policy store.
+old-location: netvista\ndis_switch_port_property_profile.htm
+old-project: netvista
+ms.assetid: DFB7239F-4A6B-4C98-884E-FAC1A0DE2024
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: PNDIS_SWITCH_PORT_PROPERTY_PROFILE structure pointer [Network Drivers Starting with Windows Vista], netvista.ndis_switch_port_property_profile, *PNDIS_SWITCH_PORT_PROPERTY_PROFILE, _NDIS_SWITCH_PORT_PROPERTY_PROFILE, ntddndis/NDIS_SWITCH_PORT_PROPERTY_PROFILE, PNDIS_SWITCH_PORT_PROPERTY_PROFILE, NDIS_SWITCH_PORT_PROPERTY_PROFILE, ntddndis/PNDIS_SWITCH_PORT_PROPERTY_PROFILE, NDIS_SWITCH_PORT_PROPERTY_PROFILE structure [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.30 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddndis.h
+apiname:
+-	NDIS_SWITCH_PORT_PROPERTY_PROFILE
+product: Windows
+targetos: Windows
+req.typenames: "*PNDIS_SWITCH_PORT_PROPERTY_PROFILE, NDIS_SWITCH_PORT_PROPERTY_PROFILE"
 ---
 
 # _NDIS_SWITCH_PORT_PROPERTY_PROFILE structure

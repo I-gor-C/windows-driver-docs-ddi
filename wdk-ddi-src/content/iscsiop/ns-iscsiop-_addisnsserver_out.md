@@ -1,41 +1,46 @@
 ---
-UID : NS:iscsiop._AddiSNSServer_OUT
-title : "_AddiSNSServer_OUT"
-author : windows-driver-content
-description : The AddiSNSServer_OUT structure holds the output data for the user-mode AddISNSServer method.
-old-location : storage\addisnsserver_out.htm
-old-project : storage
-ms.assetid : f1c02d19-9e96-4fd6-b950-ae02b6f3bba4
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : PAddiSNSServer_OUT, iscsiop/PAddiSNSServer_OUT, storage.addisnsserver_out, *PAddiSNSServer_OUT, structs-iSCSI_d1d3f4d6-6c48-4f6d-bc5e-9449a4b87d2b.xml, iscsiop/AddiSNSServer_OUT, PAddiSNSServer_OUT structure pointer [Storage Devices], _AddiSNSServer_OUT, AddiSNSServer_OUT structure [Storage Devices], AddiSNSServer_OUT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : iscsiop.h
-req.include-header : Iscsiop.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PAddiSNSServer_OUT, AddiSNSServer_OUT"
+UID: NS:iscsiop._AddiSNSServer_OUT
+title: "_AddiSNSServer_OUT"
+author: windows-driver-content
+description: The AddiSNSServer_OUT structure holds the output data for the user-mode AddISNSServer method.
+old-location: storage\addisnsserver_out.htm
+old-project: storage
+ms.assetid: f1c02d19-9e96-4fd6-b950-ae02b6f3bba4
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: PAddiSNSServer_OUT, iscsiop/PAddiSNSServer_OUT, storage.addisnsserver_out, *PAddiSNSServer_OUT, structs-iSCSI_d1d3f4d6-6c48-4f6d-bc5e-9449a4b87d2b.xml, iscsiop/AddiSNSServer_OUT, PAddiSNSServer_OUT structure pointer [Storage Devices], _AddiSNSServer_OUT, AddiSNSServer_OUT structure [Storage Devices], AddiSNSServer_OUT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: iscsiop.h
+req.include-header: Iscsiop.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	iscsiop.h
+apiname:
+-	AddiSNSServer_OUT
+product: Windows
+targetos: Windows
+req.typenames: "*PAddiSNSServer_OUT, AddiSNSServer_OUT"
 ---
 
 # _AddiSNSServer_OUT structure

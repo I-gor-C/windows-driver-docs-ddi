@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.PushEntryList
-title : PushEntryList function
-author : windows-driver-content
-description : The PushEntryList routine inserts an entry at the beginning of a singly linked list of SINGLE_LIST_ENTRY structures.
-old-location : kernel\pushentrylist.htm
-old-project : kernel
-ms.assetid : 19f387d3-6c00-4c71-8114-61c53654613c
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : PushEntryList, k109_17626baa-0fb7-4492-9e9c-a25b78b808fb.xml, kernel.pushentrylist, PushEntryList routine [Kernel-Mode Driver Architecture], wdm/PushEntryList
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : Any level (See Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.PushEntryList
+title: PushEntryList function
+author: windows-driver-content
+description: The PushEntryList routine inserts an entry at the beginning of a singly linked list of SINGLE_LIST_ENTRY structures.
+old-location: kernel\pushentrylist.htm
+old-project: kernel
+ms.assetid: 19f387d3-6c00-4c71-8114-61c53654613c
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: PushEntryList, k109_17626baa-0fb7-4492-9e9c-a25b78b808fb.xml, kernel.pushentrylist, PushEntryList routine [Kernel-Mode Driver Architecture], wdm/PushEntryList
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: Any level (See Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	PushEntryList
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3D10DDI_CALCPRIVATERASTERIZERSTATESIZE
-title : PFND3D10DDI_CALCPRIVATERASTERIZERSTATESIZE
-author : windows-driver-content
-description : The CalcPrivateRasterizerStateSize function determines the size of the user-mode display driver's private region of memory (that is, the size of internal driver structures, not the size of the resource video memory) for a rasterizer state.
-old-location : display\calcprivaterasterizerstatesize.htm
-old-project : display
-ms.assetid : 8b10b2b8-21b0-451c-9a85-353222d9c288
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.calcprivaterasterizerstatesize, CalcPrivateRasterizerStateSize callback function [Display Devices], CalcPrivateRasterizerStateSize, PFND3D10DDI_CALCPRIVATERASTERIZERSTATESIZE, PFND3D10DDI_CALCPRIVATERASTERIZERSTATESIZE, d3d10umddi/CalcPrivateRasterizerStateSize, UserModeDisplayDriverDx10_Functions_b5ff2557-347f-4cf5-962b-f41b097de388.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3D10DDI_CALCPRIVATERASTERIZERSTATESIZE
+title: PFND3D10DDI_CALCPRIVATERASTERIZERSTATESIZE
+author: windows-driver-content
+description: The CalcPrivateRasterizerStateSize function determines the size of the user-mode display driver's private region of memory (that is, the size of internal driver structures, not the size of the resource video memory) for a rasterizer state.
+old-location: display\calcprivaterasterizerstatesize.htm
+old-project: display
+ms.assetid: 8b10b2b8-21b0-451c-9a85-353222d9c288
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.calcprivaterasterizerstatesize, CalcPrivateRasterizerStateSize callback function [Display Devices], CalcPrivateRasterizerStateSize, PFND3D10DDI_CALCPRIVATERASTERIZERSTATESIZE, PFND3D10DDI_CALCPRIVATERASTERIZERSTATESIZE, d3d10umddi/CalcPrivateRasterizerStateSize, UserModeDisplayDriverDx10_Functions_b5ff2557-347f-4cf5-962b-f41b097de388.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	CalcPrivateRasterizerStateSize
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

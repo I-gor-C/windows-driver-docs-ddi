@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltGetTransactionContext
-title : FltGetTransactionContext function
-author : windows-driver-content
-description : The FltGetTransactionContext routine retrieves a context that was set for a transaction by a given minifilter driver.
-old-location : ifsk\fltgettransactioncontext.htm
-old-project : ifsk
-ms.assetid : fcd41baf-43ff-4f3a-8211-9fb5cb1cd2fd
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltGetTransactionContext routine [Installable File System Drivers], ifsk.fltgettransactioncontext, FltGetTransactionContext, fltkernel/FltGetTransactionContext, FltApiRef_e_to_o_11458006-a870-473b-9d1b-ab7a97af09b3.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : FltMgr.sys
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltGetTransactionContext
+title: FltGetTransactionContext function
+author: windows-driver-content
+description: The FltGetTransactionContext routine retrieves a context that was set for a transaction by a given minifilter driver.
+old-location: ifsk\fltgettransactioncontext.htm
+old-project: ifsk
+ms.assetid: fcd41baf-43ff-4f3a-8211-9fb5cb1cd2fd
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltGetTransactionContext routine [Installable File System Drivers], ifsk.fltgettransactioncontext, FltGetTransactionContext, fltkernel/FltGetTransactionContext, FltApiRef_e_to_o_11458006-a870-473b-9d1b-ab7a97af09b3.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: FltMgr.sys
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	FltMgr.sys
+apiname:
+-	FltGetTransactionContext
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

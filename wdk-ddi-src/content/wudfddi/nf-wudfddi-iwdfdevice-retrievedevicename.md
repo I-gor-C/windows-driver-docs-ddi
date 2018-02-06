@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFDevice.RetrieveDeviceName
-title : IWDFDevice::RetrieveDeviceName method
-author : windows-driver-content
-description : The RetrieveDeviceName method retrieves the name of an underlying kernel-mode device.
-old-location : wdf\iwdfdevice_retrievedevicename.htm
-old-project : wdf
-ms.assetid : 75304f5d-8a07-4db5-9f20-5764ff5d2ef6
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : IWDFDevice interface, RetrieveDeviceName method, wudfddi/IWDFDevice::RetrieveDeviceName, umdf.iwdfdevice_retrievedevicename, IWDFDevice::RetrieveDeviceName, RetrieveDeviceName, RetrieveDeviceName method, IWDFDevice interface, IWDFDevice, wdf.iwdfdevice_retrievedevicename, RetrieveDeviceName method, UMDFDeviceObjectRef_6d24ee3e-719a-4408-90ea-89cc9315b8cb.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.5
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFDevice.RetrieveDeviceName
+title: IWDFDevice::RetrieveDeviceName method
+author: windows-driver-content
+description: The RetrieveDeviceName method retrieves the name of an underlying kernel-mode device.
+old-location: wdf\iwdfdevice_retrievedevicename.htm
+old-project: wdf
+ms.assetid: 75304f5d-8a07-4db5-9f20-5764ff5d2ef6
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: IWDFDevice interface, RetrieveDeviceName method, wudfddi/IWDFDevice::RetrieveDeviceName, umdf.iwdfdevice_retrievedevicename, IWDFDevice::RetrieveDeviceName, RetrieveDeviceName, RetrieveDeviceName method, IWDFDevice interface, IWDFDevice, wdf.iwdfdevice_retrievedevicename, RetrieveDeviceName method, UMDFDeviceObjectRef_6d24ee3e-719a-4408-90ea-89cc9315b8cb.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.5
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFDevice.RetrieveDeviceName
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

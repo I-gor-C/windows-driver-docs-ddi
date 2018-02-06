@@ -1,41 +1,46 @@
 ---
-UID : NS:iscsiop._RemoveiSNSServer_IN
-title : "_RemoveiSNSServer_IN"
-author : windows-driver-content
-description : The RemoveiSNSServer_IN structure holds the input data for the user-mode RemoveISNSServer method, which is used to remove an iSNS server entry.
-old-location : storage\removeisnsserver_in.htm
-old-project : storage
-ms.assetid : 10e72834-4866-42f2-842e-0a30278acab8
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : PRemoveiSNSServer_IN, iscsiop/RemoveiSNSServer_IN, structs-iSCSI_b79fe0e4-386c-4b5c-9b43-ef8fdb7f4b6a.xml, iscsiop/PRemoveiSNSServer_IN, RemoveiSNSServer_IN structure [Storage Devices], PRemoveiSNSServer_IN structure pointer [Storage Devices], *PRemoveiSNSServer_IN, _RemoveiSNSServer_IN, storage.removeisnsserver_in, RemoveiSNSServer_IN
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : iscsiop.h
-req.include-header : Iscsiop.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PRemoveiSNSServer_IN, RemoveiSNSServer_IN"
+UID: NS:iscsiop._RemoveiSNSServer_IN
+title: "_RemoveiSNSServer_IN"
+author: windows-driver-content
+description: The RemoveiSNSServer_IN structure holds the input data for the user-mode RemoveISNSServer method, which is used to remove an iSNS server entry.
+old-location: storage\removeisnsserver_in.htm
+old-project: storage
+ms.assetid: 10e72834-4866-42f2-842e-0a30278acab8
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: PRemoveiSNSServer_IN, iscsiop/RemoveiSNSServer_IN, structs-iSCSI_b79fe0e4-386c-4b5c-9b43-ef8fdb7f4b6a.xml, iscsiop/PRemoveiSNSServer_IN, RemoveiSNSServer_IN structure [Storage Devices], PRemoveiSNSServer_IN structure pointer [Storage Devices], *PRemoveiSNSServer_IN, _RemoveiSNSServer_IN, storage.removeisnsserver_in, RemoveiSNSServer_IN
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: iscsiop.h
+req.include-header: Iscsiop.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	iscsiop.h
+apiname:
+-	RemoveiSNSServer_IN
+product: Windows
+targetos: Windows
+req.typenames: "*PRemoveiSNSServer_IN, RemoveiSNSServer_IN"
 ---
 
 # _RemoveiSNSServer_IN structure

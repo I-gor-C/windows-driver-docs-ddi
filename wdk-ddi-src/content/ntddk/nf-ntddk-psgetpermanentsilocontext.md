@@ -1,41 +1,46 @@
 ---
-UID : NF:ntddk.PsGetPermanentSiloContext
-title : PsGetPermanentSiloContext function
-author : windows-driver-content
-description : This routine retrieves an object that was inserted in the Silo without incrementing the reference count.
-old-location : kernel\psgetpermanentsilocontext.htm
-old-project : kernel
-ms.assetid : C1AEFC8F-6488-4582-9835-DAD07D4ACB17
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.psgetpermanentsilocontext, ntddk/PsGetPermanentSiloContext, PsGetPermanentSiloContext, PsGetPermanentSiloContext routine [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntddk.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10, version 1607
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.PsGetPermanentSiloContext
+title: PsGetPermanentSiloContext function
+author: windows-driver-content
+description: This routine retrieves an object that was inserted in the Silo without incrementing the reference count.
+old-location: kernel\psgetpermanentsilocontext.htm
+old-project: kernel
+ms.assetid: C1AEFC8F-6488-4582-9835-DAD07D4ACB17
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.psgetpermanentsilocontext, ntddk/PsGetPermanentSiloContext, PsGetPermanentSiloContext, PsGetPermanentSiloContext routine [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntddk.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10, version 1607
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddk.h
+apiname:
+-	PsGetPermanentSiloContext
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

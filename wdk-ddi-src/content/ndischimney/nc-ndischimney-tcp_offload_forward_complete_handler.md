@@ -1,41 +1,46 @@
 ---
-UID : NC:ndischimney.TCP_OFFLOAD_FORWARD_COMPLETE_HANDLER
-title : TCP_OFFLOAD_FORWARD_COMPLETE_HANDLER
-author : windows-driver-content
-description : NDIS calls a protocol or intermediate driver's ProtocolTcpOffloadForwardComplete function to complete a forward operation that the driver previously initiated by calling the NdisOffloadTcpForward function.
-old-location : netvista\protocoltcpoffloadforwardcomplete.htm
-old-project : netvista
-ms.assetid : 02a11841-d98a-4c74-8922-458826e2911e
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.protocoltcpoffloadforwardcomplete, ProtocolTcpOffloadForwardComplete callback function [Network Drivers Starting with Windows Vista], ProtocolTcpOffloadForwardComplete, TCP_OFFLOAD_FORWARD_COMPLETE_HANDLER, TCP_OFFLOAD_FORWARD_COMPLETE_HANDLER, ndischimney/ProtocolTcpOffloadForwardComplete, tcp_chim_protocol_func_18981e3f-fec9-483d-b60e-54017ebd57d1.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ndischimney.h
-req.include-header : Ndischimney.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PD_BUFFER_VIRTUAL_SUBNET_INFO
+UID: NC:ndischimney.TCP_OFFLOAD_FORWARD_COMPLETE_HANDLER
+title: TCP_OFFLOAD_FORWARD_COMPLETE_HANDLER
+author: windows-driver-content
+description: NDIS calls a protocol or intermediate driver's ProtocolTcpOffloadForwardComplete function to complete a forward operation that the driver previously initiated by calling the NdisOffloadTcpForward function.
+old-location: netvista\protocoltcpoffloadforwardcomplete.htm
+old-project: netvista
+ms.assetid: 02a11841-d98a-4c74-8922-458826e2911e
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.protocoltcpoffloadforwardcomplete, ProtocolTcpOffloadForwardComplete callback function [Network Drivers Starting with Windows Vista], ProtocolTcpOffloadForwardComplete, TCP_OFFLOAD_FORWARD_COMPLETE_HANDLER, TCP_OFFLOAD_FORWARD_COMPLETE_HANDLER, ndischimney/ProtocolTcpOffloadForwardComplete, tcp_chim_protocol_func_18981e3f-fec9-483d-b60e-54017ebd57d1.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ndischimney.h
+req.include-header: Ndischimney.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ndischimney.h
+apiname:
+-	ProtocolTcpOffloadForwardComplete
+product: Windows
+targetos: Windows
+req.typenames: PD_BUFFER_VIRTUAL_SUBNET_INFO
 ---
 
 

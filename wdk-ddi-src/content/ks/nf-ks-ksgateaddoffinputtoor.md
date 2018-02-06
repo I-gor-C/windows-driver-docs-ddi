@@ -1,41 +1,46 @@
 ---
-UID : NF:ks.KsGateAddOffInputToOr
-title : KsGateAddOffInputToOr function
-author : windows-driver-content
-description : The KsGateAddOffInputToOr function adds a new input in the OFF state to a given OR gate.
-old-location : stream\ksgateaddoffinputtoor.htm
-old-project : stream
-ms.assetid : 93d5076c-d8db-4b4b-b390-5f9072d2ae63
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : avfunc_abee7d7c-388b-4a48-a573-6b46a1c9dc46.xml, KsGateAddOffInputToOr, KsGateAddOffInputToOr function [Streaming Media Devices], ks/KsGateAddOffInputToOr, stream.ksgateaddoffinputtoor
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsGateAddOffInputToOr
+title: KsGateAddOffInputToOr function
+author: windows-driver-content
+description: The KsGateAddOffInputToOr function adds a new input in the OFF state to a given OR gate.
+old-location: stream\ksgateaddoffinputtoor.htm
+old-project: stream
+ms.assetid: 93d5076c-d8db-4b4b-b390-5f9072d2ae63
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: avfunc_abee7d7c-388b-4a48-a573-6b46a1c9dc46.xml, KsGateAddOffInputToOr, KsGateAddOffInputToOr function [Streaming Media Devices], ks/KsGateAddOffInputToOr, stream.ksgateaddoffinputtoor
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	KsGateAddOffInputToOr
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

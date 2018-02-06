@@ -1,41 +1,46 @@
 ---
-UID : NF:portcls.IRegistryKey.NewSubKey
-title : IRegistryKey::NewSubKey method
-author : windows-driver-content
-description : The NewSubKey method either creates a new registry subkey or opens an existing subkey under the key represented by the IRegistryKey object.
-old-location : audio\iregistrykey_newsubkey.htm
-old-project : audio
-ms.assetid : 39b352ba-4b6f-4d9c-baf5-a479d8c74ae0
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : NewSubKey method [Audio Devices], audio.iregistrykey_newsubkey, portcls/IRegistryKey::NewSubKey, NewSubKey method [Audio Devices], IRegistryKey interface, IRegistryKey, IRegistryKey interface [Audio Devices], NewSubKey method, IRegistryKey::NewSubKey, audmp-routines_8a9e8a73-551d-46d4-90a8-f24183c38d8d.xml, NewSubKey
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : portcls.h
-req.include-header : Portcls.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : portcls.h
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.IRegistryKey.NewSubKey
+title: IRegistryKey::NewSubKey method
+author: windows-driver-content
+description: The NewSubKey method either creates a new registry subkey or opens an existing subkey under the key represented by the IRegistryKey object.
+old-location: audio\iregistrykey_newsubkey.htm
+old-project: audio
+ms.assetid: 39b352ba-4b6f-4d9c-baf5-a479d8c74ae0
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: NewSubKey method [Audio Devices], audio.iregistrykey_newsubkey, portcls/IRegistryKey::NewSubKey, NewSubKey method [Audio Devices], IRegistryKey interface, IRegistryKey, IRegistryKey interface [Audio Devices], NewSubKey method, IRegistryKey::NewSubKey, audmp-routines_8a9e8a73-551d-46d4-90a8-f24183c38d8d.xml, NewSubKey
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: portcls.h
+req.include-header: Portcls.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: portcls.h
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	portcls.h
+apiname:
+-	IRegistryKey.NewSubKey
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

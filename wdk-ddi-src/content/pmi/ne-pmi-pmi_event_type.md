@@ -1,41 +1,46 @@
 ---
-UID : NE:pmi.PMI_EVENT_TYPE
-title : PMI_EVENT_TYPE
-author : windows-driver-content
-description : The PMI_EVENT_TYPE enumeration defines the type of PMI power meter event that is returned through the successful completion of an IOCTL_PMI_REGISTER_EVENT_NOTIFY request.
-old-location : powermeter\pmi_event_type.htm
-old-project : powermeter
-ms.assetid : c2a8422d-15f0-45df-bc54-946fb3d11a22
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : pmi/PmiCapabilitiesChangedEvent, PmiConfigurationChangedEvent, PmiCapabilitiesChangedEvent, PmiThresholdEvent, pmi/PmiConfigurationChangedEvent, pmi/PMI_EVENT_TYPE, PmiEventMax, powermeter.pmi_event_type, PmiAveragingIntervalChangedEvent, pmi/PmiEventMax, PowerMeterRef_86ff4160-2977-4b72-a37f-72779df2d5dc.xml, PMI_EVENT_TYPE, pmi/PmiAveragingIntervalChangedEvent, PMI_EVENT_TYPE enumeration [Power Metering and Budgeting Devices], pmi/PmiThresholdEvent, PmiBudgetEvent, pmi/PmiBudgetEvent
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : pmi.h
-req.include-header : Pmi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7, Windows Server 2008 R2, and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PMI_EVENT_TYPE
+UID: NE:pmi.PMI_EVENT_TYPE
+title: PMI_EVENT_TYPE
+author: windows-driver-content
+description: The PMI_EVENT_TYPE enumeration defines the type of PMI power meter event that is returned through the successful completion of an IOCTL_PMI_REGISTER_EVENT_NOTIFY request.
+old-location: powermeter\pmi_event_type.htm
+old-project: powermeter
+ms.assetid: c2a8422d-15f0-45df-bc54-946fb3d11a22
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: pmi/PmiCapabilitiesChangedEvent, PmiConfigurationChangedEvent, PmiCapabilitiesChangedEvent, PmiThresholdEvent, pmi/PmiConfigurationChangedEvent, pmi/PMI_EVENT_TYPE, PmiEventMax, powermeter.pmi_event_type, PmiAveragingIntervalChangedEvent, pmi/PmiEventMax, PowerMeterRef_86ff4160-2977-4b72-a37f-72779df2d5dc.xml, PMI_EVENT_TYPE, pmi/PmiAveragingIntervalChangedEvent, PMI_EVENT_TYPE enumeration [Power Metering and Budgeting Devices], pmi/PmiThresholdEvent, PmiBudgetEvent, pmi/PmiBudgetEvent
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: pmi.h
+req.include-header: Pmi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7, Windows Server 2008 R2, and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	pmi.h
+apiname:
+-	PMI_EVENT_TYPE
+product: Windows
+targetos: Windows
+req.typenames: PMI_EVENT_TYPE
 ---
 
 # PMI_EVENT_TYPE Enumeration
@@ -56,41 +61,41 @@ typedef enum  {
 ## Constants
 
 <table>
-
-<tr>
-<td>PmiAveragingIntervalChangedEvent</td>
-<td>The event was caused because the interval, during which the power meter averages power measurement data, was changed.</td>
-</tr>
-
-<tr>
-<td>PmiBudgetEvent</td>
-<td>The event was caused because the power budget exceeded or fell below the configured budget of the power meter.</td>
-</tr>
-
-<tr>
-<td>PmiCapabilitiesChangedEvent</td>
-<td>The event was caused by a change in the PMI capabilities of the power meter.</td>
-</tr>
-
-<tr>
-<td>PmiConfigurationChangedEvent</td>
-<td>The event was caused by a change in the PMI configuration of the power meter.</td>
-</tr>
-
-<tr>
-<td>PmiEventMax</td>
-<td>The maximum number of PMI event types.</td>
-</tr>
-
-<tr>
-<td>PmiThresholdEvent</td>
-<td>The event was caused because the power level exceeded a configured threshold of the power meter.</td>
-</tr>
+            
+                <tr>
+                    <td>PmiAveragingIntervalChangedEvent</td>
+                    <td>The event was caused because the interval, during which the power meter averages power measurement data, was changed.</td>
+                </tr>
+            
+                <tr>
+                    <td>PmiBudgetEvent</td>
+                    <td>The event was caused because the power budget exceeded or fell below the configured budget of the power meter.</td>
+                </tr>
+            
+                <tr>
+                    <td>PmiCapabilitiesChangedEvent</td>
+                    <td>The event was caused by a change in the PMI capabilities of the power meter.</td>
+                </tr>
+            
+                <tr>
+                    <td>PmiConfigurationChangedEvent</td>
+                    <td>The event was caused by a change in the PMI configuration of the power meter.</td>
+                </tr>
+            
+                <tr>
+                    <td>PmiEventMax</td>
+                    <td>The maximum number of PMI event types.</td>
+                </tr>
+            
+                <tr>
+                    <td>PmiThresholdEvent</td>
+                    <td>The event was caused because the power level exceeded a configured threshold of the power meter.</td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-The <b>EventType</b> member of the <a href="..\pmi\ns-pmi-_pmi_event.md">PMI_EVENT</a> structure contains information about the type of PMI event data that is referenced by the <b>Event</b> member of that structure. This structure is returned through a successful completion of an <a href="..\pmi\ni-pmi-ioctl_pmi_register_event_notify.md">IOCTL_PMI_REGISTER_EVENT_NOTIFY</a> request.
+        The <b>EventType</b> member of the <a href="..\pmi\ns-pmi-_pmi_event.md">PMI_EVENT</a> structure contains information about the type of PMI event data that is referenced by the <b>Event</b> member of that structure. This structure is returned through a successful completion of an <a href="..\pmi\ni-pmi-ioctl_pmi_register_event_notify.md">IOCTL_PMI_REGISTER_EVENT_NOTIFY</a> request.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -98,9 +103,9 @@ The <b>EventType</b> member of the <a href="..\pmi\ns-pmi-_pmi_event.md">PMI_EVE
 | **Windows version** | Available in Windows 7, Windows Server 2008 R2, and later versions of the Windows operating systems. Available in Windows 7, Windows Server 2008 R2, and later versions of the Windows operating systems. |
 | **Header** | pmi.h (include Pmi.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\pmi\ni-pmi-ioctl_pmi_register_event_notify.md">IOCTL_PMI_REGISTER_EVENT_NOTIFY</a>
+        <a href="..\pmi\ni-pmi-ioctl_pmi_register_event_notify.md">IOCTL_PMI_REGISTER_EVENT_NOTIFY</a>
 
 <a href="..\pmi\ns-pmi-_pmi_event.md">PMI_EVENT</a>
 

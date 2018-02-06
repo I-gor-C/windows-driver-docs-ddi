@@ -1,42 +1,49 @@
 ---
-UID : NF:wdm.TmRollbackComplete
-title : TmRollbackComplete function
-author : windows-driver-content
-description : The TmRollbackComplete routine notifies KTM that the calling resource manager has finished rolling back a transaction's data.
-old-location : kernel\tmrollbackcomplete.htm
-old-project : kernel
-ms.assetid : 626bae87-8e5c-4d2a-8942-bddb2f6baa6b
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/TmRollbackComplete, TmRollbackComplete routine [Kernel-Mode Driver Architecture], ktm_ref_57ef03c4-5d49-4871-a1ef-c6083c9680a8.xml, TmRollbackComplete, kernel.tmrollbackcomplete
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later operating system versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.TmRollbackComplete
+title: TmRollbackComplete function
+author: windows-driver-content
+description: The TmRollbackComplete routine notifies KTM that the calling resource manager has finished rolling back a transaction's data.
+old-location: kernel\tmrollbackcomplete.htm
+old-project: kernel
+ms.assetid: 626bae87-8e5c-4d2a-8942-bddb2f6baa6b
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/TmRollbackComplete, TmRollbackComplete routine [Kernel-Mode Driver Architecture], ktm_ref_57ef03c4-5d49-4871-a1ef-c6083c9680a8.xml, TmRollbackComplete, kernel.tmrollbackcomplete
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later operating system versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+-	Ext-MS-Win-ntos-tm-l1-1-0.dll
+-	tm.sys
+apiname:
+-	TmRollbackComplete
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

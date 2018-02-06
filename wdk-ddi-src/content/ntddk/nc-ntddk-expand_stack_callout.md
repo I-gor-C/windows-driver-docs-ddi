@@ -1,41 +1,46 @@
 ---
-UID : NC:ntddk.EXPAND_STACK_CALLOUT
-title : EXPAND_STACK_CALLOUT
-author : windows-driver-content
-description : The ExpandedStackCall routine executes with a guaranteed stack size.
-old-location : kernel\expandedstackcall.htm
-old-project : kernel
-ms.assetid : ca9af049-f183-458c-b43f-891678a7be5e
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.expandedstackcall, ExpandedStackCall routine [Kernel-Mode Driver Architecture], ExpandedStackCall, EXPAND_STACK_CALLOUT, EXPAND_STACK_CALLOUT, ntddk/ExpandedStackCall, DrvrRtns_2b43fd11-2258-4b8d-adb7-58dcc5d37897.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ntddk.h
-req.include-header : Ntddk.h, Ntifs.h
-req.target-type : Desktop
-req.target-min-winverclnt : Drivers can implement ExpandedStackCall routines on Windows Server 2003 for an x64-based processor, and on Windows Vista and later versions of Windows for all processors.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PFILTER_INITIALIZATION_DATA, FILTER_INITIALIZATION_DATA"
+UID: NC:ntddk.EXPAND_STACK_CALLOUT
+title: EXPAND_STACK_CALLOUT
+author: windows-driver-content
+description: The ExpandedStackCall routine executes with a guaranteed stack size.
+old-location: kernel\expandedstackcall.htm
+old-project: kernel
+ms.assetid: ca9af049-f183-458c-b43f-891678a7be5e
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.expandedstackcall, ExpandedStackCall routine [Kernel-Mode Driver Architecture], ExpandedStackCall, EXPAND_STACK_CALLOUT, EXPAND_STACK_CALLOUT, ntddk/ExpandedStackCall, DrvrRtns_2b43fd11-2258-4b8d-adb7-58dcc5d37897.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ntddk.h
+req.include-header: Ntddk.h, Ntifs.h
+req.target-type: Desktop
+req.target-min-winverclnt: Drivers can implement ExpandedStackCall routines on Windows Server 2003 for an x64-based processor, and on Windows Vista and later versions of Windows for all processors.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ntddk.h
+apiname:
+-	ExpandedStackCall
+product: Windows
+targetos: Windows
+req.typenames: "*PFILTER_INITIALIZATION_DATA, FILTER_INITIALIZATION_DATA"
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NE:rilapitypes.RILADDRESSTYPE
-title : RILADDRESSTYPE
-author : windows-driver-content
-description : This enumeration describes the RILADDRESSTYPE.
-old-location : netvista\riladdresstype.htm
-old-project : netvista
-ms.assetid : a9fe509e-ef15-49ac-beca-339e3582d16e
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : RIL_ADDRTYPE_NETWKSPECIFIC, rilapitypes/RIL_ADDRTYPE_NETWKSPECIFIC, rilapitypes/RIL_ADDRTYPE_SUBSCRIBER, RIL_ADDRTYPE_EMAIL, rilapitypes/RIL_ADDRTYPE_IP, RIL_ADDRTYPE_ABBREV, rilapitypes/RIL_ADDRTYPE_EMAIL, RIL_ADDRTYPE_INTERNATIONAL, RILADDRESSTYPE, rilapitypes/RILADDRESSTYPE, rilapitypes/RIL_ADDRTYPE_NATIONAL, netvista.riladdresstype, rilapitypes/RIL_ADDRTYPE_ABBREV, rilapitypes/RIL_ADDRTYPE_UNKNOWN, RIL_ADDRTYPE_ALPHANUM, RIL_ADDRTYPE_IP, RIL_ADDRTYPE_NATIONAL, RIL_ADDRTYPE_SUBSCRIBER, RIL_ADDRTYPE_UNKNOWN, RILADDRESSTYPE enumeration [Network Drivers Starting with Windows Vista], rilapitypes/RIL_ADDRTYPE_ALPHANUM, rilapitypes/RIL_ADDRTYPE_INTERNATIONAL
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : rilapitypes.h
-req.include-header : Rilapitypes.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RILADDRESSTYPE
-req.product : Windows 10 or later.
+UID: NE:rilapitypes.RILADDRESSTYPE
+title: RILADDRESSTYPE
+author: windows-driver-content
+description: This enumeration describes the RILADDRESSTYPE.
+old-location: netvista\riladdresstype.htm
+old-project: netvista
+ms.assetid: a9fe509e-ef15-49ac-beca-339e3582d16e
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: RIL_ADDRTYPE_NETWKSPECIFIC, rilapitypes/RIL_ADDRTYPE_NETWKSPECIFIC, rilapitypes/RIL_ADDRTYPE_SUBSCRIBER, RIL_ADDRTYPE_EMAIL, rilapitypes/RIL_ADDRTYPE_IP, RIL_ADDRTYPE_ABBREV, rilapitypes/RIL_ADDRTYPE_EMAIL, RIL_ADDRTYPE_INTERNATIONAL, RILADDRESSTYPE, rilapitypes/RILADDRESSTYPE, rilapitypes/RIL_ADDRTYPE_NATIONAL, netvista.riladdresstype, rilapitypes/RIL_ADDRTYPE_ABBREV, rilapitypes/RIL_ADDRTYPE_UNKNOWN, RIL_ADDRTYPE_ALPHANUM, RIL_ADDRTYPE_IP, RIL_ADDRTYPE_NATIONAL, RIL_ADDRTYPE_SUBSCRIBER, RIL_ADDRTYPE_UNKNOWN, RILADDRESSTYPE enumeration [Network Drivers Starting with Windows Vista], rilapitypes/RIL_ADDRTYPE_ALPHANUM, rilapitypes/RIL_ADDRTYPE_INTERNATIONAL
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: rilapitypes.h
+req.include-header: Rilapitypes.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	rilapitypes.h
+apiname:
+-	RILADDRESSTYPE
+product: Windows
+targetos: Windows
+req.typenames: RILADDRESSTYPE
+req.product: Windows 10 or later.
 ---
 
 # RILADDRESSTYPE Enumeration
@@ -61,61 +66,61 @@ enum RILADDRESSTYPE {
 ## Constants
 
 <table>
-
-<tr>
-<td>RIL_ADDRTYPE_ABBREV</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_ADDRTYPE_ALPHANUM</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_ADDRTYPE_EMAIL</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_ADDRTYPE_INTERNATIONAL</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_ADDRTYPE_IP</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_ADDRTYPE_MAX</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_ADDRTYPE_NATIONAL</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_ADDRTYPE_NETWKSPECIFIC</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_ADDRTYPE_SUBSCRIBER</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_ADDRTYPE_UNKNOWN</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_ADDRTYPE_URI</td>
-<td></td>
-</tr>
+            
+                <tr>
+                    <td>RIL_ADDRTYPE_ABBREV</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_ADDRTYPE_ALPHANUM</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_ADDRTYPE_EMAIL</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_ADDRTYPE_INTERNATIONAL</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_ADDRTYPE_IP</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_ADDRTYPE_MAX</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_ADDRTYPE_NATIONAL</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_ADDRTYPE_NETWKSPECIFIC</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_ADDRTYPE_SUBSCRIBER</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_ADDRTYPE_UNKNOWN</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_ADDRTYPE_URI</td>
+                    <td></td>
+                </tr>
 </table>
 
 
@@ -124,9 +129,9 @@ enum RILADDRESSTYPE {
 | ---- |:---- |
 | **Header** | rilapitypes.h (include Rilapitypes.h) |
 
-## See Also
+    ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn946509">Cellular COM enumerations</a>
+        <a href="https://msdn.microsoft.com/library/windows/hardware/dn946509">Cellular COM enumerations</a>
 
  
 

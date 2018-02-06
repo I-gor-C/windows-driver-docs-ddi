@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._D3DDDIARG_TEXTURESTAGESTATE
-title : "_D3DDDIARG_TEXTURESTAGESTATE"
-author : windows-driver-content
-description : The D3DDDIARG_TEXTURESTAGESTATE structure describes how to update a texture at a particular stage in a multiple-texture group.
-old-location : display\d3dddiarg_texturestagestate.htm
-old-project : display
-ms.assetid : 4810ec13-ec58-4ed6-ae4f-6690bd72cd8a
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DDDIARG_TEXTURESTAGESTATE structure [Display Devices], UMDisplayDriver_param_Structs_320d722f-2fbb-4fca-a06c-02e1be6e0190.xml, d3dumddi/D3DDDIARG_TEXTURESTAGESTATE, display.d3dddiarg_texturestagestate, _D3DDDIARG_TEXTURESTAGESTATE, D3DDDIARG_TEXTURESTAGESTATE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDIARG_TEXTURESTAGESTATE
+UID: NS:d3dumddi._D3DDDIARG_TEXTURESTAGESTATE
+title: "_D3DDDIARG_TEXTURESTAGESTATE"
+author: windows-driver-content
+description: The D3DDDIARG_TEXTURESTAGESTATE structure describes how to update a texture at a particular stage in a multiple-texture group.
+old-location: display\d3dddiarg_texturestagestate.htm
+old-project: display
+ms.assetid: 4810ec13-ec58-4ed6-ae4f-6690bd72cd8a
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DDDIARG_TEXTURESTAGESTATE structure [Display Devices], UMDisplayDriver_param_Structs_320d722f-2fbb-4fca-a06c-02e1be6e0190.xml, d3dumddi/D3DDDIARG_TEXTURESTAGESTATE, display.d3dddiarg_texturestagestate, _D3DDDIARG_TEXTURESTAGESTATE, D3DDDIARG_TEXTURESTAGESTATE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	D3DDDIARG_TEXTURESTAGESTATE
+product: Windows
+targetos: Windows
+req.typenames: D3DDDIARG_TEXTURESTAGESTATE
 ---
 
 # _D3DDDIARG_TEXTURESTAGESTATE structure

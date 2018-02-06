@@ -1,41 +1,46 @@
 ---
-UID : NS:hbapiwmi._MSFC_TargetEvent
-title : "_MSFC_TargetEvent"
-author : windows-driver-content
-description : A WMI provider uses the MSFC_TargetEvent structure to report port events for the indicated adapter.
-old-location : storage\msfc_targetevent.htm
-old-project : storage
-ms.assetid : e34e505c-74b1-45e4-9d9f-ba7cae111156
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : hbapiwmi/PMSFC_TargetEvent, structs-Fibre_3f8b9bd0-29b2-43f3-85ae-47324d168956.xml, PMSFC_TargetEvent structure pointer [Storage Devices], storage.msfc_targetevent, _MSFC_TargetEvent, MSFC_TargetEvent structure [Storage Devices], PMSFC_TargetEvent, MSFC_TargetEvent, hbapiwmi/MSFC_TargetEvent, *PMSFC_TargetEvent
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : hbapiwmi.h
-req.include-header : Hbapiwmi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : MSFC_TargetEvent, *PMSFC_TargetEvent
+UID: NS:hbapiwmi._MSFC_TargetEvent
+title: "_MSFC_TargetEvent"
+author: windows-driver-content
+description: A WMI provider uses the MSFC_TargetEvent structure to report port events for the indicated adapter.
+old-location: storage\msfc_targetevent.htm
+old-project: storage
+ms.assetid: e34e505c-74b1-45e4-9d9f-ba7cae111156
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: hbapiwmi/PMSFC_TargetEvent, structs-Fibre_3f8b9bd0-29b2-43f3-85ae-47324d168956.xml, PMSFC_TargetEvent structure pointer [Storage Devices], storage.msfc_targetevent, _MSFC_TargetEvent, MSFC_TargetEvent structure [Storage Devices], PMSFC_TargetEvent, MSFC_TargetEvent, hbapiwmi/MSFC_TargetEvent, *PMSFC_TargetEvent
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: hbapiwmi.h
+req.include-header: Hbapiwmi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hbapiwmi.h
+apiname:
+-	MSFC_TargetEvent
+product: Windows
+targetos: Windows
+req.typenames: MSFC_TargetEvent, *PMSFC_TargetEvent
 ---
 
 # _MSFC_TargetEvent structure

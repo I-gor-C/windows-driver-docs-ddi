@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisCmDropPartyComplete
-title : NdisCmDropPartyComplete function
-author : windows-driver-content
-description : NdisCmDropPartyComplete returns the final status of a client's request, for which the call manager previously returned NDIS_STATUS_PENDING, to remove a party from a multipoint VC.
-old-location : netvista\ndiscmdroppartycomplete.htm
-old-project : netvista
-ms.assetid : 5f4743f6-42b7-4cc0-8dd8-16230b30bb8a
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NdisCmDropPartyComplete, netvista.ndiscmdroppartycomplete, condis_call_manager_ref_d1773adc-25ef-4544-8ccf-70fe676a862d.xml, NdisCmDropPartyComplete function [Network Drivers Starting with Windows Vista], ndis/NdisCmDropPartyComplete
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisCmDropPartyComplete (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisCmDropPartyComplete (NDIS   5.1)) in Windows XP.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_CallManager_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisCmDropPartyComplete
+title: NdisCmDropPartyComplete function
+author: windows-driver-content
+description: NdisCmDropPartyComplete returns the final status of a client's request, for which the call manager previously returned NDIS_STATUS_PENDING, to remove a party from a multipoint VC.
+old-location: netvista\ndiscmdroppartycomplete.htm
+old-project: netvista
+ms.assetid: 5f4743f6-42b7-4cc0-8dd8-16230b30bb8a
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NdisCmDropPartyComplete, netvista.ndiscmdroppartycomplete, condis_call_manager_ref_d1773adc-25ef-4544-8ccf-70fe676a862d.xml, NdisCmDropPartyComplete function [Network Drivers Starting with Windows Vista], ndis/NdisCmDropPartyComplete
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisCmDropPartyComplete (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisCmDropPartyComplete (NDIS   5.1)) in Windows XP.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_CallManager_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisCmDropPartyComplete
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

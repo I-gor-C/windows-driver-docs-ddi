@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.RtlOemToUnicodeN
-title : RtlOemToUnicodeN function
-author : windows-driver-content
-description : The RtlOemToUnicodeN routine translates the specified source string into a Unicode string, using the current system OEM code page.
-old-location : ifsk\rtloemtounicoden.htm
-old-project : ifsk
-ms.assetid : fe00b980-4bb5-4ad7-84c0-99d47d2f7c51
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : RtlOemToUnicodeN routine [Installable File System Drivers], RtlOemToUnicodeN, ntifs/RtlOemToUnicodeN, rtlref_7159eedf-5a97-4dc5-a9e8-c4a7f2ac2ee2.xml, ifsk.rtloemtounicoden
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "< DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.RtlOemToUnicodeN
+title: RtlOemToUnicodeN function
+author: windows-driver-content
+description: The RtlOemToUnicodeN routine translates the specified source string into a Unicode string, using the current system OEM code page.
+old-location: ifsk\rtloemtounicoden.htm
+old-project: ifsk
+ms.assetid: fe00b980-4bb5-4ad7-84c0-99d47d2f7c51
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: RtlOemToUnicodeN routine [Installable File System Drivers], RtlOemToUnicodeN, ntifs/RtlOemToUnicodeN, rtlref_7159eedf-5a97-4dc5-a9e8-c4a7f2ac2ee2.xml, ifsk.rtloemtounicoden
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "< DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	RtlOemToUnicodeN
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

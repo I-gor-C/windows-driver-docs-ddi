@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.WRITE_REGISTER_BUFFER_UCHAR
-title : WRITE_REGISTER_BUFFER_UCHAR function
-author : windows-driver-content
-description : The WRITE_REGISTER_BUFFER_UCHAR routine writes a number of bytes from a buffer to the specified register.
-old-location : kernel\write_register_buffer_uchar.htm
-old-project : kernel
-ms.assetid : 4cb90f37-c7ce-4f78-9e68-cbe4aaf6ea72
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : WRITE_REGISTER_BUFFER_UCHAR, kernel.write_register_buffer_uchar, wdm/WRITE_REGISTER_BUFFER_UCHAR, k103_29b68153-db95-4017-ab96-d05e6c984503.xml, WRITE_REGISTER_BUFFER_UCHAR routine [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : Any level (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.WRITE_REGISTER_BUFFER_UCHAR
+title: WRITE_REGISTER_BUFFER_UCHAR function
+author: windows-driver-content
+description: The WRITE_REGISTER_BUFFER_UCHAR routine writes a number of bytes from a buffer to the specified register.
+old-location: kernel\write_register_buffer_uchar.htm
+old-project: kernel
+ms.assetid: 4cb90f37-c7ce-4f78-9e68-cbe4aaf6ea72
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: WRITE_REGISTER_BUFFER_UCHAR, kernel.write_register_buffer_uchar, wdm/WRITE_REGISTER_BUFFER_UCHAR, k103_29b68153-db95-4017-ab96-d05e6c984503.xml, WRITE_REGISTER_BUFFER_UCHAR routine [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: Any level (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	WRITE_REGISTER_BUFFER_UCHAR
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

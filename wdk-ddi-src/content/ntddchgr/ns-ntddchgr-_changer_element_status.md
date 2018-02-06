@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddchgr._CHANGER_ELEMENT_STATUS
-title : "_CHANGER_ELEMENT_STATUS"
-author : windows-driver-content
-description : The ChangerGetElementStatus routine returns status information in this structure.
-old-location : storage\changer_element_status.htm
-old-project : storage
-ms.assetid : 3debcf76-bb84-48ec-933e-03e099ad764f
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : CHANGER_ELEMENT_STATUS structure [Storage Devices], PCHANGER_ELEMENT_STATUS structure pointer [Storage Devices], PCHANGER_ELEMENT_STATUS, *PCHANGER_ELEMENT_STATUS, storage.changer_element_status, ntddchgr/CHANGER_ELEMENT_STATUS, _CHANGER_ELEMENT_STATUS, CHANGER_ELEMENT_STATUS, structs-changer_6dd054a8-1224-42f1-ab26-29b2c108ce27.xml, ntddchgr/PCHANGER_ELEMENT_STATUS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddchgr.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PCHANGER_ELEMENT_STATUS, CHANGER_ELEMENT_STATUS"
+UID: NS:ntddchgr._CHANGER_ELEMENT_STATUS
+title: "_CHANGER_ELEMENT_STATUS"
+author: windows-driver-content
+description: The ChangerGetElementStatus routine returns status information in this structure.
+old-location: storage\changer_element_status.htm
+old-project: storage
+ms.assetid: 3debcf76-bb84-48ec-933e-03e099ad764f
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: CHANGER_ELEMENT_STATUS structure [Storage Devices], PCHANGER_ELEMENT_STATUS structure pointer [Storage Devices], PCHANGER_ELEMENT_STATUS, *PCHANGER_ELEMENT_STATUS, storage.changer_element_status, ntddchgr/CHANGER_ELEMENT_STATUS, _CHANGER_ELEMENT_STATUS, CHANGER_ELEMENT_STATUS, structs-changer_6dd054a8-1224-42f1-ab26-29b2c108ce27.xml, ntddchgr/PCHANGER_ELEMENT_STATUS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddchgr.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddchgr.h
+apiname:
+-	CHANGER_ELEMENT_STATUS
+product: Windows
+targetos: Windows
+req.typenames: "*PCHANGER_ELEMENT_STATUS, CHANGER_ELEMENT_STATUS"
 ---
 
 # _CHANGER_ELEMENT_STATUS structure

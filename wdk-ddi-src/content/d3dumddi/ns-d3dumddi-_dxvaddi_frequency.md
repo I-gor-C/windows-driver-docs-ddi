@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._DXVADDI_FREQUENCY
-title : "_DXVADDI_FREQUENCY"
-author : windows-driver-content
-description : The DXVADDI_FREQUENCY structure describes the video frame rate in Hertz (Hz). For example, NTSC TV is 60000 over 1001.
-old-location : display\dxvaddi_frequency.htm
-old-project : display
-ms.assetid : 5bfb02f6-4482-4260-827f-54c5f74b6b46
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DXVA2_Structs_bf2ee217-d321-4302-8bd3-1621081fdb09.xml, DXVADDI_FREQUENCY structure [Display Devices], d3dumddi/DXVADDI_FREQUENCY, display.dxvaddi_frequency, _DXVADDI_FREQUENCY, DXVADDI_FREQUENCY
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXVADDI_FREQUENCY
+UID: NS:d3dumddi._DXVADDI_FREQUENCY
+title: "_DXVADDI_FREQUENCY"
+author: windows-driver-content
+description: The DXVADDI_FREQUENCY structure describes the video frame rate in Hertz (Hz). For example, NTSC TV is 60000 over 1001.
+old-location: display\dxvaddi_frequency.htm
+old-project: display
+ms.assetid: 5bfb02f6-4482-4260-827f-54c5f74b6b46
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DXVA2_Structs_bf2ee217-d321-4302-8bd3-1621081fdb09.xml, DXVADDI_FREQUENCY structure [Display Devices], d3dumddi/DXVADDI_FREQUENCY, display.dxvaddi_frequency, _DXVADDI_FREQUENCY, DXVADDI_FREQUENCY
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	DXVADDI_FREQUENCY
+product: Windows
+targetos: Windows
+req.typenames: DXVADDI_FREQUENCY
 ---
 
 # _DXVADDI_FREQUENCY structure

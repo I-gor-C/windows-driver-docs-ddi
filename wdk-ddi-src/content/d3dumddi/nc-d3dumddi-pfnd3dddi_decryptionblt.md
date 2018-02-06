@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_DECRYPTIONBLT
-title : PFND3DDDI_DECRYPTIONBLT
-author : windows-driver-content
-description : The DecryptionBlt function writes data to a protected surface.
-old-location : display\decryptionblt.htm
-old-project : display
-ms.assetid : 1bfe2b9c-90f6-48bf-b0b3-30788ef94110
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.decryptionblt, DecryptionBlt callback function [Display Devices], DecryptionBlt, PFND3DDDI_DECRYPTIONBLT, PFND3DDDI_DECRYPTIONBLT, d3dumddi/DecryptionBlt, UserModeDisplayDriver_Functions_6c7efbab-8c07-4953-80cc-4d18080c12cc.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : DecryptionBlt is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_DECRYPTIONBLT
+title: PFND3DDDI_DECRYPTIONBLT
+author: windows-driver-content
+description: The DecryptionBlt function writes data to a protected surface.
+old-location: display\decryptionblt.htm
+old-project: display
+ms.assetid: 1bfe2b9c-90f6-48bf-b0b3-30788ef94110
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.decryptionblt, DecryptionBlt callback function [Display Devices], DecryptionBlt, PFND3DDDI_DECRYPTIONBLT, PFND3DDDI_DECRYPTIONBLT, d3dumddi/DecryptionBlt, UserModeDisplayDriver_Functions_6c7efbab-8c07-4953-80cc-4d18080c12cc.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: DecryptionBlt is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	DecryptionBlt
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

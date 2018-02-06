@@ -1,41 +1,46 @@
 ---
-UID : NS:hbapiwmi._SM_SendRNID_OUT
-title : "_SM_SendRNID_OUT"
-author : windows-driver-content
-description : The SM_SendRNID_OUT structure is used to receive output parameters from the SM_SendRNID method.
-old-location : storage\sm_sendrnid_out.htm
-old-project : storage
-ms.assetid : 177ffc7d-697d-47c5-9692-19cba6734077
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : PSM_SendRNID_OUT, _SM_SendRNID_OUT, SM_SendRNID_OUT structure [Storage Devices], storage.sm_sendrnid_out, PSM_SendRNID_OUT structure pointer [Storage Devices], *PSM_SendRNID_OUT, hbapiwmi/SM_SendRNID_OUT, hbapiwmi/PSM_SendRNID_OUT, structs-Fibre_9e6a1fff-df92-4d26-af84-b99b9feecbef.xml, SM_SendRNID_OUT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : hbapiwmi.h
-req.include-header : Hbapiwmi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSM_SendRNID_OUT, SM_SendRNID_OUT"
+UID: NS:hbapiwmi._SM_SendRNID_OUT
+title: "_SM_SendRNID_OUT"
+author: windows-driver-content
+description: The SM_SendRNID_OUT structure is used to receive output parameters from the SM_SendRNID method.
+old-location: storage\sm_sendrnid_out.htm
+old-project: storage
+ms.assetid: 177ffc7d-697d-47c5-9692-19cba6734077
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: PSM_SendRNID_OUT, _SM_SendRNID_OUT, SM_SendRNID_OUT structure [Storage Devices], storage.sm_sendrnid_out, PSM_SendRNID_OUT structure pointer [Storage Devices], *PSM_SendRNID_OUT, hbapiwmi/SM_SendRNID_OUT, hbapiwmi/PSM_SendRNID_OUT, structs-Fibre_9e6a1fff-df92-4d26-af84-b99b9feecbef.xml, SM_SendRNID_OUT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: hbapiwmi.h
+req.include-header: Hbapiwmi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hbapiwmi.h
+apiname:
+-	SM_SendRNID_OUT
+product: Windows
+targetos: Windows
+req.typenames: "*PSM_SendRNID_OUT, SM_SendRNID_OUT"
 ---
 
 # _SM_SendRNID_OUT structure

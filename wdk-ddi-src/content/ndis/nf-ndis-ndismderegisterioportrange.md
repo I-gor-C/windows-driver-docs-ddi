@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisMDeregisterIoPortRange
-title : NdisMDeregisterIoPortRange function
-author : windows-driver-content
-description : NdisMDeregisterIoPortRange releases a mapping that was set up with NdisMRegisterIoPortRange during driver initialization.
-old-location : netvista\ndismderegisterioportrange.htm
-old-project : netvista
-ms.assetid : b5b6a608-af1f-4030-b83a-a6f64ff3a264
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : miniport_port_io_ref_3ec72b06-3f52-46b9-b699-774a7df4a658.xml, ndis/NdisMDeregisterIoPortRange, netvista.ndismderegisterioportrange, NdisMDeregisterIoPortRange function [Network Drivers Starting with Windows Vista], NdisMDeregisterIoPortRange
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisMDeregisterIoPortRange   (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisMDeregisterIoPortRange   (NDIS 5.1)) in Windows XP.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_Miniport_Driver_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisMDeregisterIoPortRange
+title: NdisMDeregisterIoPortRange function
+author: windows-driver-content
+description: NdisMDeregisterIoPortRange releases a mapping that was set up with NdisMRegisterIoPortRange during driver initialization.
+old-location: netvista\ndismderegisterioportrange.htm
+old-project: netvista
+ms.assetid: b5b6a608-af1f-4030-b83a-a6f64ff3a264
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: miniport_port_io_ref_3ec72b06-3f52-46b9-b699-774a7df4a658.xml, ndis/NdisMDeregisterIoPortRange, netvista.ndismderegisterioportrange, NdisMDeregisterIoPortRange function [Network Drivers Starting with Windows Vista], NdisMDeregisterIoPortRange
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisMDeregisterIoPortRange   (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisMDeregisterIoPortRange   (NDIS 5.1)) in Windows XP.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_Miniport_Driver_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisMDeregisterIoPortRange
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

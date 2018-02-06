@@ -1,41 +1,46 @@
 ---
-UID : NC:ks.PFNKSDEVICEPNPSTART
-title : PFNKSDEVICEPNPSTART
-author : windows-driver-content
-description : An AVStream minidriver's AVStrMiniDeviceStart routine is called when an IRP_MN_START_DEVICE request is sent for a specified device.
-old-location : stream\avstrminidevicestart.htm
-old-project : stream
-ms.assetid : 5a09a8b1-7a20-42e3-a58d-ecd4e7a0558e
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.avstrminidevicestart, AVStrMiniDeviceStart, AVStrMiniDeviceStart routine [Streaming Media Devices], AVStrMiniDeviceStart, PFNKSDEVICEPNPSTART, PFNKSDEVICEPNPSTART, ks/AVStrMiniDeviceStart, avstclbk_b9fd90e7-3d9b-47a3-86c4-8df35f000269.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KEYWORDSELECTOR
+UID: NC:ks.PFNKSDEVICEPNPSTART
+title: PFNKSDEVICEPNPSTART
+author: windows-driver-content
+description: An AVStream minidriver's AVStrMiniDeviceStart routine is called when an IRP_MN_START_DEVICE request is sent for a specified device.
+old-location: stream\avstrminidevicestart.htm
+old-project: stream
+ms.assetid: 5a09a8b1-7a20-42e3-a58d-ecd4e7a0558e
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.avstrminidevicestart, AVStrMiniDeviceStart, AVStrMiniDeviceStart routine [Streaming Media Devices], AVStrMiniDeviceStart, PFNKSDEVICEPNPSTART, PFNKSDEVICEPNPSTART, ks/AVStrMiniDeviceStart, avstclbk_b9fd90e7-3d9b-47a3-86c4-8df35f000269.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	ks.h
+apiname:
+-	AVStrMiniDeviceStart
+product: Windows
+targetos: Windows
+req.typenames: KEYWORDSELECTOR
 ---
 
 

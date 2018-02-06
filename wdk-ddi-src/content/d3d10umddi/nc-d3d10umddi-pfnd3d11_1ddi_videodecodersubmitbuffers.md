@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3D11_1DDI_VIDEODECODERSUBMITBUFFERS
-title : PFND3D11_1DDI_VIDEODECODERSUBMITBUFFERS
-author : windows-driver-content
-description : Submits one or more video frame buffers for DirectX Video Acceleration (DXVA) decoding.
-old-location : display\videodecodersubmitbuffers.htm
-old-project : display
-ms.assetid : fc1644d8-9058-4100-8e3e-f4727af89773
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.videodecodersubmitbuffers, pfnVideoDecoderSubmitBuffers callback function [Display Devices], pfnVideoDecoderSubmitBuffers, PFND3D11_1DDI_VIDEODECODERSUBMITBUFFERS, PFND3D11_1DDI_VIDEODECODERSUBMITBUFFERS, d3d10umddi/pfnVideoDecoderSubmitBuffers
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3D11_1DDI_VIDEODECODERSUBMITBUFFERS
+title: PFND3D11_1DDI_VIDEODECODERSUBMITBUFFERS
+author: windows-driver-content
+description: Submits one or more video frame buffers for DirectX Video Acceleration (DXVA) decoding.
+old-location: display\videodecodersubmitbuffers.htm
+old-project: display
+ms.assetid: fc1644d8-9058-4100-8e3e-f4727af89773
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.videodecodersubmitbuffers, pfnVideoDecoderSubmitBuffers callback function [Display Devices], pfnVideoDecoderSubmitBuffers, PFND3D11_1DDI_VIDEODECODERSUBMITBUFFERS, PFND3D11_1DDI_VIDEODECODERSUBMITBUFFERS, d3d10umddi/pfnVideoDecoderSubmitBuffers
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	D3d10umddi.h
+apiname:
+-	pfnVideoDecoderSubmitBuffers
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

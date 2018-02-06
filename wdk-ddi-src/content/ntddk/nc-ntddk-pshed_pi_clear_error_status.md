@@ -1,41 +1,46 @@
 ---
-UID : NC:ntddk.PSHED_PI_CLEAR_ERROR_STATUS
-title : PSHED_PI_CLEAR_ERROR_STATUS
-author : windows-driver-content
-description : A PSHED plug-in's ClearErrorStatus callback function clears any platform-specific error status registers for a corrected hardware error condition.
-old-location : whea\clearerrorstatus.htm
-old-project : whea
-ms.assetid : 8b29edf3-be7f-4a8d-af96-2b1e985ba061
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : whea.clearerrorstatus, ClearErrorStatus callback function [WHEA Drivers and Applications], ClearErrorStatus, PSHED_PI_CLEAR_ERROR_STATUS, PSHED_PI_CLEAR_ERROR_STATUS, ntddk/ClearErrorStatus, whearef_022b6321-f051-4d35-ad0c-e6528d03a411.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= HIGH_LEVEL (See Remarks section)"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PFILTER_INITIALIZATION_DATA, FILTER_INITIALIZATION_DATA"
+UID: NC:ntddk.PSHED_PI_CLEAR_ERROR_STATUS
+title: PSHED_PI_CLEAR_ERROR_STATUS
+author: windows-driver-content
+description: A PSHED plug-in's ClearErrorStatus callback function clears any platform-specific error status registers for a corrected hardware error condition.
+old-location: whea\clearerrorstatus.htm
+old-project: whea
+ms.assetid: 8b29edf3-be7f-4a8d-af96-2b1e985ba061
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: whea.clearerrorstatus, ClearErrorStatus callback function [WHEA Drivers and Applications], ClearErrorStatus, PSHED_PI_CLEAR_ERROR_STATUS, PSHED_PI_CLEAR_ERROR_STATUS, ntddk/ClearErrorStatus, whearef_022b6321-f051-4d35-ad0c-e6528d03a411.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= HIGH_LEVEL (See Remarks section)"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ntddk.h
+apiname:
+-	ClearErrorStatus
+product: Windows
+targetos: Windows
+req.typenames: "*PFILTER_INITIALIZATION_DATA, FILTER_INITIALIZATION_DATA"
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NF:ndis.NdisInterlockedPushEntrySList
-title : NdisInterlockedPushEntrySList macro
-author : windows-driver-content
-description : The NdisInterlockedPushEntrySList function inserts an entry at the head of a sequenced, singly linked list.
-old-location : netvista\ndisinterlockedpushentryslist.htm
-old-project : netvista
-ms.assetid : 155604e9-45f6-4dd2-9373-90f689713c1a
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.ndisinterlockedpushentryslist, NdisInterlockedPushEntrySList macro [Network Drivers Starting with Windows Vista], ndis/NdisInterlockedPushEntrySList, NdisInterlockedPushEntrySList, ndis_interlocked_ref_ee1513c8-bb1a-4f3e-981b-7c448b3d1e41.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : macro
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see       NdisInterlockedPushEntrySList (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see       NdisInterlockedPushEntrySList (NDIS 5.1)) in Windows XP.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : ndis.h
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisInterlockedPushEntrySList
+title: NdisInterlockedPushEntrySList macro
+author: windows-driver-content
+description: The NdisInterlockedPushEntrySList function inserts an entry at the head of a sequenced, singly linked list.
+old-location: netvista\ndisinterlockedpushentryslist.htm
+old-project: netvista
+ms.assetid: 155604e9-45f6-4dd2-9373-90f689713c1a
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.ndisinterlockedpushentryslist, NdisInterlockedPushEntrySList macro [Network Drivers Starting with Windows Vista], ndis/NdisInterlockedPushEntrySList, NdisInterlockedPushEntrySList, ndis_interlocked_ref_ee1513c8-bb1a-4f3e-981b-7c448b3d1e41.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: macro
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see       NdisInterlockedPushEntrySList (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see       NdisInterlockedPushEntrySList (NDIS 5.1)) in Windows XP.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: ndis.h
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndis.h
+apiname:
+-	NdisInterlockedPushEntrySList
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

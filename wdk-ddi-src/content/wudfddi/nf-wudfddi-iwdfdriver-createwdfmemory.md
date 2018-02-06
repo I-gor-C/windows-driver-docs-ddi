@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFDriver.CreateWdfMemory
-title : IWDFDriver::CreateWdfMemory method
-author : windows-driver-content
-description : The CreateWdfMemory method creates a framework memory object and allocates, for the memory object, a data buffer of the specified nonzero size.
-old-location : wdf\iwdfdriver_createwdfmemory.htm
-old-project : wdf
-ms.assetid : 2ea754db-3bed-48d9-825f-7ee7b5e169b7
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : UMDFDriverObjectRef_903775e8-0752-435b-96d9-fa1317f63289.xml, CreateWdfMemory method, umdf.iwdfdriver_createwdfmemory, IWDFDriver, IWDFDriver::CreateWdfMemory, CreateWdfMemory, CreateWdfMemory method, IWDFDriver interface, IWDFDriver interface, CreateWdfMemory method, wudfddi/IWDFDriver::CreateWdfMemory, wdf.iwdfdriver_createwdfmemory
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.5
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFDriver.CreateWdfMemory
+title: IWDFDriver::CreateWdfMemory method
+author: windows-driver-content
+description: The CreateWdfMemory method creates a framework memory object and allocates, for the memory object, a data buffer of the specified nonzero size.
+old-location: wdf\iwdfdriver_createwdfmemory.htm
+old-project: wdf
+ms.assetid: 2ea754db-3bed-48d9-825f-7ee7b5e169b7
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: UMDFDriverObjectRef_903775e8-0752-435b-96d9-fa1317f63289.xml, CreateWdfMemory method, umdf.iwdfdriver_createwdfmemory, IWDFDriver, IWDFDriver::CreateWdfMemory, CreateWdfMemory, CreateWdfMemory method, IWDFDriver interface, IWDFDriver interface, CreateWdfMemory method, wudfddi/IWDFDriver::CreateWdfMemory, wdf.iwdfdriver_createwdfmemory
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.5
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFDriver.CreateWdfMemory
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

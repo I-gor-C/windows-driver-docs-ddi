@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dhal._D3DHAL_DP2PIXELSHADER
-title : "_D3DHAL_DP2PIXELSHADER"
-author : windows-driver-content
-description : DirectX 8.0 and later versions only. The D3DHAL_DP2PIXELSHADER structure is used to set the current pixel shader, or delete a pixel shader, depending on the opcode received (D3DDP2OP_SETPIXELSHADER or D3DDP2OP_DELETEPIXELSHADER) by D3dDrawPrimitives2.
-old-location : display\d3dhal_dp2pixelshader.htm
-old-project : display
-ms.assetid : 820e7667-3adf-49c9-ab44-303f6ea7f4b2
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : LPD3DHAL_DP2PIXELSHADER structure pointer [Display Devices], d3dhal/D3DHAL_DP2PIXELSHADER, LPD3DHAL_DP2PIXELSHADER, _D3DHAL_DP2PIXELSHADER, d3dstrct_f9a920b0-9018-4b87-ab28-d0b50753195b.xml, D3DHAL_DP2PIXELSHADER, display.d3dhal_dp2pixelshader, D3DHAL_DP2PIXELSHADER structure [Display Devices], *LPD3DHAL_DP2PIXELSHADER, d3dhal/LPD3DHAL_DP2PIXELSHADER
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dhal.h
-req.include-header : D3dhal.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DHAL_DP2PIXELSHADER
+UID: NS:d3dhal._D3DHAL_DP2PIXELSHADER
+title: "_D3DHAL_DP2PIXELSHADER"
+author: windows-driver-content
+description: DirectX 8.0 and later versions only. The D3DHAL_DP2PIXELSHADER structure is used to set the current pixel shader, or delete a pixel shader, depending on the opcode received (D3DDP2OP_SETPIXELSHADER or D3DDP2OP_DELETEPIXELSHADER) by D3dDrawPrimitives2.
+old-location: display\d3dhal_dp2pixelshader.htm
+old-project: display
+ms.assetid: 820e7667-3adf-49c9-ab44-303f6ea7f4b2
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: LPD3DHAL_DP2PIXELSHADER structure pointer [Display Devices], d3dhal/D3DHAL_DP2PIXELSHADER, LPD3DHAL_DP2PIXELSHADER, _D3DHAL_DP2PIXELSHADER, d3dstrct_f9a920b0-9018-4b87-ab28-d0b50753195b.xml, D3DHAL_DP2PIXELSHADER, display.d3dhal_dp2pixelshader, D3DHAL_DP2PIXELSHADER structure [Display Devices], *LPD3DHAL_DP2PIXELSHADER, d3dhal/LPD3DHAL_DP2PIXELSHADER
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dhal.h
+req.include-header: D3dhal.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dhal.h
+apiname:
+-	D3DHAL_DP2PIXELSHADER
+product: Windows
+targetos: Windows
+req.typenames: D3DHAL_DP2PIXELSHADER
 ---
 
 # _D3DHAL_DP2PIXELSHADER structure

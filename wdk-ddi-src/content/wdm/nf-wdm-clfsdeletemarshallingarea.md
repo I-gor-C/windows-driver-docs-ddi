@@ -1,42 +1,48 @@
 ---
-UID : NF:wdm.ClfsDeleteMarshallingArea
-title : ClfsDeleteMarshallingArea function
-author : windows-driver-content
-description : The ClfsDeleteMarshallingArea routine deletes a marshalling area.
-old-location : kernel\clfsdeletemarshallingarea.htm
-old-project : kernel
-ms.assetid : 8aa7aec3-85d7-40a2-a63d-bee8c5ce1ff9
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.clfsdeletemarshallingarea, wdm/ClfsDeleteMarshallingArea, ClfsDeleteMarshallingArea, Clfs_a015edd3-4625-4b24-995f-75217a711528.xml, ClfsDeleteMarshallingArea routine [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Clfs.lib
-req.dll : Clfs.sys
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ClfsDeleteMarshallingArea
+title: ClfsDeleteMarshallingArea function
+author: windows-driver-content
+description: The ClfsDeleteMarshallingArea routine deletes a marshalling area.
+old-location: kernel\clfsdeletemarshallingarea.htm
+old-project: kernel
+ms.assetid: 8aa7aec3-85d7-40a2-a63d-bee8c5ce1ff9
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.clfsdeletemarshallingarea, wdm/ClfsDeleteMarshallingArea, ClfsDeleteMarshallingArea, Clfs_a015edd3-4625-4b24-995f-75217a711528.xml, ClfsDeleteMarshallingArea routine [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Clfs.lib
+req.dll: Clfs.sys
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Clfs.sys
+-	Ext-MS-Win-fs-clfs-l1-1-0.dll
+apiname:
+-	ClfsDeleteMarshallingArea
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

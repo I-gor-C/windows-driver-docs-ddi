@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFNamedPropertyStore.GetNamedValue
-title : IWDFNamedPropertyStore::GetNamedValue method
-author : windows-driver-content
-description : The GetNamedValue method retrieves the value of a property.
-old-location : wdf\iwdfnamedpropertystore_getnamedvalue.htm
-old-project : wdf
-ms.assetid : 9581e3af-f7f8-4365-8bb2-daedcb7a3280
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wudfddi/IWDFNamedPropertyStore::GetNamedValue, wdf.iwdfnamedpropertystore_getnamedvalue, IWDFNamedPropertyStore, GetNamedValue, umdf.iwdfnamedpropertystore_getnamedvalue, GetNamedValue method, IWDFNamedPropertyStore interface, IWDFNamedPropertyStore interface, GetNamedValue method, IWDFNamedPropertyStore::GetNamedValue, GetNamedValue method, UMDFPropertyStoreObjectRef_ba3dd45a-7045-4798-81c6-35cb1a743cc4.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.5
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFNamedPropertyStore.GetNamedValue
+title: IWDFNamedPropertyStore::GetNamedValue method
+author: windows-driver-content
+description: The GetNamedValue method retrieves the value of a property.
+old-location: wdf\iwdfnamedpropertystore_getnamedvalue.htm
+old-project: wdf
+ms.assetid: 9581e3af-f7f8-4365-8bb2-daedcb7a3280
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wudfddi/IWDFNamedPropertyStore::GetNamedValue, wdf.iwdfnamedpropertystore_getnamedvalue, IWDFNamedPropertyStore, GetNamedValue, umdf.iwdfnamedpropertystore_getnamedvalue, GetNamedValue method, IWDFNamedPropertyStore interface, IWDFNamedPropertyStore interface, GetNamedValue method, IWDFNamedPropertyStore::GetNamedValue, GetNamedValue method, UMDFPropertyStoreObjectRef_ba3dd45a-7045-4798-81c6-35cb1a743cc4.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.5
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFNamedPropertyStore.GetNamedValue
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

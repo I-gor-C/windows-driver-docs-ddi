@@ -1,41 +1,46 @@
 ---
-UID : NS:iscsiprf._MSiSCSI_SessionStatistics
-title : "_MSiSCSI_SessionStatistics"
-author : windows-driver-content
-description : The MSiSCSI_SessionStatistics structure is used by iSCSI initiators to report session statistics.
-old-location : storage\msiscsi_sessionstatistics.htm
-old-project : storage
-ms.assetid : 04ceffce-cd5f-4e62-98cb-450e8552a811
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : "*PMSiSCSI_SessionStatistics, MSiSCSI_SessionStatistics structure [Storage Devices], PMSiSCSI_SessionStatistics structure pointer [Storage Devices], structs-iSCSI_90b593e8-cda5-4b61-860b-b17394f90891.xml, iscsiprf/PMSiSCSI_SessionStatistics, iscsiprf/MSiSCSI_SessionStatistics, storage.msiscsi_sessionstatistics, PMSiSCSI_SessionStatistics, _MSiSCSI_SessionStatistics, MSiSCSI_SessionStatistics"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : iscsiprf.h
-req.include-header : Iscsiprf.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : MSiSCSI_SessionStatistics, *PMSiSCSI_SessionStatistics
+UID: NS:iscsiprf._MSiSCSI_SessionStatistics
+title: "_MSiSCSI_SessionStatistics"
+author: windows-driver-content
+description: The MSiSCSI_SessionStatistics structure is used by iSCSI initiators to report session statistics.
+old-location: storage\msiscsi_sessionstatistics.htm
+old-project: storage
+ms.assetid: 04ceffce-cd5f-4e62-98cb-450e8552a811
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: "*PMSiSCSI_SessionStatistics, MSiSCSI_SessionStatistics structure [Storage Devices], PMSiSCSI_SessionStatistics structure pointer [Storage Devices], structs-iSCSI_90b593e8-cda5-4b61-860b-b17394f90891.xml, iscsiprf/PMSiSCSI_SessionStatistics, iscsiprf/MSiSCSI_SessionStatistics, storage.msiscsi_sessionstatistics, PMSiSCSI_SessionStatistics, _MSiSCSI_SessionStatistics, MSiSCSI_SessionStatistics"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: iscsiprf.h
+req.include-header: Iscsiprf.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	iscsiprf.h
+apiname:
+-	MSiSCSI_SessionStatistics
+product: Windows
+targetos: Windows
+req.typenames: MSiSCSI_SessionStatistics, *PMSiSCSI_SessionStatistics
 ---
 
 # _MSiSCSI_SessionStatistics structure

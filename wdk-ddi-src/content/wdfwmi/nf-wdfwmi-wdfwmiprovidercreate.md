@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfwmi.WdfWmiProviderCreate
-title : WdfWmiProviderCreate function
-author : windows-driver-content
-description : The WdfWmiProviderCreate method creates a WMI provider object that represents a WMI data block.
-old-location : wdf\wdfwmiprovidercreate.htm
-old-project : wdf
-ms.assetid : 07aed86f-870e-431b-b1bb-403395c35946
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.wdfwmiprovidercreate, kmdf.wdfwmiprovidercreate, DFWMIRef_f1b26bb3-d191-4f2b-9289-c76ef93769b5.xml, WdfWmiProviderCreate method, wdfwmi/WdfWmiProviderCreate, PFN_WDFWMIPROVIDERCREATE, WdfWmiProviderCreate
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfwmi.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_WMI_PROVIDER_FLAGS
-req.product : Windows 10 or later.
+UID: NF:wdfwmi.WdfWmiProviderCreate
+title: WdfWmiProviderCreate function
+author: windows-driver-content
+description: The WdfWmiProviderCreate method creates a WMI provider object that represents a WMI data block.
+old-location: wdf\wdfwmiprovidercreate.htm
+old-project: wdf
+ms.assetid: 07aed86f-870e-431b-b1bb-403395c35946
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.wdfwmiprovidercreate, kmdf.wdfwmiprovidercreate, DFWMIRef_f1b26bb3-d191-4f2b-9289-c76ef93769b5.xml, WdfWmiProviderCreate method, wdfwmi/WdfWmiProviderCreate, PFN_WDFWMIPROVIDERCREATE, WdfWmiProviderCreate
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfwmi.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfWmiProviderCreate
+product: Windows
+targetos: Windows
+req.typenames: WDF_WMI_PROVIDER_FLAGS
+req.product: Windows 10 or later.
 ---
 
 

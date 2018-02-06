@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3D11_1DDI_VIDEOPROCESSORBLT
-title : PFND3D11_1DDI_VIDEOPROCESSORBLT
-author : windows-driver-content
-description : Performs a video processing operation on one or more input samples and writes the result to a Direct3D surface.
-old-location : display\videoprocessorblt.htm
-old-project : display
-ms.assetid : 7a3e17cb-0397-4051-8443-fb2edf3b4cff
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.videoprocessorblt, pfnVideoProcessorBlt callback function [Display Devices], pfnVideoProcessorBlt, PFND3D11_1DDI_VIDEOPROCESSORBLT, PFND3D11_1DDI_VIDEOPROCESSORBLT, d3d10umddi/pfnVideoProcessorBlt
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3D11_1DDI_VIDEOPROCESSORBLT
+title: PFND3D11_1DDI_VIDEOPROCESSORBLT
+author: windows-driver-content
+description: Performs a video processing operation on one or more input samples and writes the result to a Direct3D surface.
+old-location: display\videoprocessorblt.htm
+old-project: display
+ms.assetid: 7a3e17cb-0397-4051-8443-fb2edf3b4cff
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.videoprocessorblt, pfnVideoProcessorBlt callback function [Display Devices], pfnVideoProcessorBlt, PFND3D11_1DDI_VIDEOPROCESSORBLT, PFND3D11_1DDI_VIDEOPROCESSORBLT, d3d10umddi/pfnVideoProcessorBlt
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	D3d10umddi.h
+apiname:
+-	pfnVideoProcessorBlt
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

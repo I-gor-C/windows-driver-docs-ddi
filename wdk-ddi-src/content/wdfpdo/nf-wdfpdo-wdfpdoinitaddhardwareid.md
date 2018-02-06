@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfpdo.WdfPdoInitAddHardwareID
-title : WdfPdoInitAddHardwareID function
-author : windows-driver-content
-description : The WdfPdoInitAddHardwareID method adds a hardware ID to the list of hardware IDs for a child device.
-old-location : wdf\wdfpdoinitaddhardwareid.htm
-old-project : wdf
-ms.assetid : 2b5c853d-8548-419e-bd41-be9e8364fb57
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : kmdf.wdfpdoinitaddhardwareid, WdfPdoInitAddHardwareID, wdf.wdfpdoinitaddhardwareid, PFN_WDFPDOINITADDHARDWAREID, DFDeviceObjectFdoPdoRef_f06f24ea-f0f8-4ce7-8b70-725de7b5c970.xml, wdfpdo/WdfPdoInitAddHardwareID, WdfPdoInitAddHardwareID method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfpdo.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : ChildDeviceInitAPI, DriverCreate, InitFreeDeviceCallback, InitFreeDeviceCreate, InitFreeNull, KmdfIrql, KmdfIrql2, PdoDeviceInitAPI, PdoInitFreeDeviceCallback, PdoInitFreeDeviceCreate
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDF_OBJECT_CONTEXT_TYPE_INFO, WDF_OBJECT_CONTEXT_TYPE_INFO"
-req.product : Windows 10 or later.
+UID: NF:wdfpdo.WdfPdoInitAddHardwareID
+title: WdfPdoInitAddHardwareID function
+author: windows-driver-content
+description: The WdfPdoInitAddHardwareID method adds a hardware ID to the list of hardware IDs for a child device.
+old-location: wdf\wdfpdoinitaddhardwareid.htm
+old-project: wdf
+ms.assetid: 2b5c853d-8548-419e-bd41-be9e8364fb57
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: kmdf.wdfpdoinitaddhardwareid, WdfPdoInitAddHardwareID, wdf.wdfpdoinitaddhardwareid, PFN_WDFPDOINITADDHARDWAREID, DFDeviceObjectFdoPdoRef_f06f24ea-f0f8-4ce7-8b70-725de7b5c970.xml, wdfpdo/WdfPdoInitAddHardwareID, WdfPdoInitAddHardwareID method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfpdo.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: ChildDeviceInitAPI, DriverCreate, InitFreeDeviceCallback, InitFreeDeviceCreate, InitFreeNull, KmdfIrql, KmdfIrql2, PdoDeviceInitAPI, PdoInitFreeDeviceCallback, PdoInitFreeDeviceCreate
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfPdoInitAddHardwareID
+product: Windows
+targetos: Windows
+req.typenames: "*PWDF_OBJECT_CONTEXT_TYPE_INFO, WDF_OBJECT_CONTEXT_TYPE_INFO"
+req.product: Windows 10 or later.
 ---
 
 

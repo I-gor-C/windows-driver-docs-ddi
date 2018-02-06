@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGKARG_RELEASESWIZZLINGRANGE
-title : "_DXGKARG_RELEASESWIZZLINGRANGE"
-author : windows-driver-content
-description : The DXGKARG_RELEASESWIZZLINGRANGE structure describes parameters for releasing a swizzling range.
-old-location : display\dxgkarg_releaseswizzlingrange.htm
-old-project : display
-ms.assetid : f7d1af11-c360-4f7f-a47a-cf7a182b2b78
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DmStructs_7ed7a86e-7376-47a8-8198-9c991005fd0a.xml, DXGKARG_RELEASESWIZZLINGRANGE structure [Display Devices], d3dkmddi/DXGKARG_RELEASESWIZZLINGRANGE, DXGKARG_RELEASESWIZZLINGRANGE, _DXGKARG_RELEASESWIZZLINGRANGE, display.dxgkarg_releaseswizzlingrange
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGKARG_RELEASESWIZZLINGRANGE
+UID: NS:d3dkmddi._DXGKARG_RELEASESWIZZLINGRANGE
+title: "_DXGKARG_RELEASESWIZZLINGRANGE"
+author: windows-driver-content
+description: The DXGKARG_RELEASESWIZZLINGRANGE structure describes parameters for releasing a swizzling range.
+old-location: display\dxgkarg_releaseswizzlingrange.htm
+old-project: display
+ms.assetid: f7d1af11-c360-4f7f-a47a-cf7a182b2b78
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DmStructs_7ed7a86e-7376-47a8-8198-9c991005fd0a.xml, DXGKARG_RELEASESWIZZLINGRANGE structure [Display Devices], d3dkmddi/DXGKARG_RELEASESWIZZLINGRANGE, DXGKARG_RELEASESWIZZLINGRANGE, _DXGKARG_RELEASESWIZZLINGRANGE, display.dxgkarg_releaseswizzlingrange
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DXGKARG_RELEASESWIZZLINGRANGE
+product: Windows
+targetos: Windows
+req.typenames: DXGKARG_RELEASESWIZZLINGRANGE
 ---
 
 # _DXGKARG_RELEASESWIZZLINGRANGE structure

@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.tagKS_BITMAPINFOHEADER
-title : tagKS_BITMAPINFOHEADER
-author : windows-driver-content
-description : The KS_BITMAPINFOHEADER structure describes details about the video stream, such as image dimensions and pixel depth.
-old-location : stream\ks_bitmapinfoheader.htm
-old-project : stream
-ms.assetid : 77101494-97bb-4049-8c6c-cdb4ee82f312
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : "*PKS_BITMAPINFOHEADER, ksmedia/KS_BITMAPINFOHEADER, vidcapstruct_14e65a26-c943-4fad-949a-87aaf584e50c.xml, ksmedia/PKS_BITMAPINFOHEADER, PKS_BITMAPINFOHEADER, stream.ks_bitmapinfoheader, PKS_BITMAPINFOHEADER structure pointer [Streaming Media Devices], tagKS_BITMAPINFOHEADER, KS_BITMAPINFOHEADER, KS_BITMAPINFOHEADER structure [Streaming Media Devices]"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKS_BITMAPINFOHEADER, KS_BITMAPINFOHEADER"
+UID: NS:ksmedia.tagKS_BITMAPINFOHEADER
+title: tagKS_BITMAPINFOHEADER
+author: windows-driver-content
+description: The KS_BITMAPINFOHEADER structure describes details about the video stream, such as image dimensions and pixel depth.
+old-location: stream\ks_bitmapinfoheader.htm
+old-project: stream
+ms.assetid: 77101494-97bb-4049-8c6c-cdb4ee82f312
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: "*PKS_BITMAPINFOHEADER, ksmedia/KS_BITMAPINFOHEADER, vidcapstruct_14e65a26-c943-4fad-949a-87aaf584e50c.xml, ksmedia/PKS_BITMAPINFOHEADER, PKS_BITMAPINFOHEADER, stream.ks_bitmapinfoheader, PKS_BITMAPINFOHEADER structure pointer [Streaming Media Devices], tagKS_BITMAPINFOHEADER, KS_BITMAPINFOHEADER, KS_BITMAPINFOHEADER structure [Streaming Media Devices]"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	KS_BITMAPINFOHEADER
+product: Windows
+targetos: Windows
+req.typenames: "*PKS_BITMAPINFOHEADER, KS_BITMAPINFOHEADER"
 ---
 
 # tagKS_BITMAPINFOHEADER structure

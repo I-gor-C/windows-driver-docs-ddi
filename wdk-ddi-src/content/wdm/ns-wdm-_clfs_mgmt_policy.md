@@ -1,42 +1,47 @@
 ---
-UID : NS:wdm._CLFS_MGMT_POLICY
-title : "_CLFS_MGMT_POLICY"
-author : windows-driver-content
-description : The CLFS_MGMT_POLICY structure holds a description of a policy for managing a CLFS log.
-old-location : kernel\clfs_mgmt_policy.htm
-old-project : kernel
-ms.assetid : 6765ced9-e21f-4bd9-bb2b-45df1d6dba75
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : CLFS_MGMT_POLICY structure [Kernel-Mode Driver Architecture], kernel.clfs_mgmt_policy, wdm/CLFS_MGMT_POLICY, _CLFS_MGMT_POLICY, *PCLFS_MGMT_POLICY, wdm/PCLFS_MGMT_POLICY, PCLFS_MGMT_POLICY, kstruct_a_12bfc6be-5318-49df-b74a-251c40c0b916.xml, CLFS_MGMT_POLICY, PCLFS_MGMT_POLICY structure pointer [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : CLFS_MGMT_POLICY, *PCLFS_MGMT_POLICY
-req.product : Windows 10 or later.
+UID: NS:wdm._CLFS_MGMT_POLICY
+title: "_CLFS_MGMT_POLICY"
+author: windows-driver-content
+description: The CLFS_MGMT_POLICY structure holds a description of a policy for managing a CLFS log.
+old-location: kernel\clfs_mgmt_policy.htm
+old-project: kernel
+ms.assetid: 6765ced9-e21f-4bd9-bb2b-45df1d6dba75
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: CLFS_MGMT_POLICY structure [Kernel-Mode Driver Architecture], kernel.clfs_mgmt_policy, wdm/CLFS_MGMT_POLICY, _CLFS_MGMT_POLICY, *PCLFS_MGMT_POLICY, wdm/PCLFS_MGMT_POLICY, PCLFS_MGMT_POLICY, kstruct_a_12bfc6be-5318-49df-b74a-251c40c0b916.xml, CLFS_MGMT_POLICY, PCLFS_MGMT_POLICY structure pointer [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	CLFS_MGMT_POLICY
+product: Windows
+targetos: Windows
+req.typenames: CLFS_MGMT_POLICY, *PCLFS_MGMT_POLICY
+req.product: Windows 10 or later.
 ---
 
 # _CLFS_MGMT_POLICY structure

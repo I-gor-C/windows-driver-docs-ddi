@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugControl4.GetExpressionSyntaxNamesWide
-title : IDebugControl4::GetExpressionSyntaxNamesWide method
-author : windows-driver-content
-description : The GetExpressionSyntaxNamesWide method returns the full and abbreviated names of an expression syntax.
-old-location : debugger\getexpressionsyntaxnameswide.htm
-old-project : debugger
-ms.assetid : 4d381718-366b-483b-804d-b12b31832b35
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : GetExpressionSyntaxNamesWide method [Windows Debugging], IDebugControl4 interface [Windows Debugging], GetExpressionSyntaxNamesWide method, debugger.getexpressionsyntaxnameswide, IDebugControl4::GetExpressionSyntaxNamesWide, GetExpressionSyntaxNamesWide, dbgeng/IDebugControl4::GetExpressionSyntaxNamesWide, GetExpressionSyntaxNamesWide method [Windows Debugging], IDebugControl4 interface, IDebugControl4
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl4.GetExpressionSyntaxNamesWide
+title: IDebugControl4::GetExpressionSyntaxNamesWide method
+author: windows-driver-content
+description: The GetExpressionSyntaxNamesWide method returns the full and abbreviated names of an expression syntax.
+old-location: debugger\getexpressionsyntaxnameswide.htm
+old-project: debugger
+ms.assetid: 4d381718-366b-483b-804d-b12b31832b35
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: GetExpressionSyntaxNamesWide method [Windows Debugging], IDebugControl4 interface [Windows Debugging], GetExpressionSyntaxNamesWide method, debugger.getexpressionsyntaxnameswide, IDebugControl4::GetExpressionSyntaxNamesWide, GetExpressionSyntaxNamesWide, dbgeng/IDebugControl4::GetExpressionSyntaxNamesWide, GetExpressionSyntaxNamesWide method [Windows Debugging], IDebugControl4 interface, IDebugControl4
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl4.GetExpressionSyntaxNamesWide
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

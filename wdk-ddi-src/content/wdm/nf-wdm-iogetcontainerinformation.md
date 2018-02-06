@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.IoGetContainerInformation
-title : IoGetContainerInformation function
-author : windows-driver-content
-description : The IoGetContainerInformation routine provides information about the current state of a user session.
-old-location : kernel\iogetcontainerinformation.htm
-old-project : kernel
-ms.assetid : 34612bc5-bed5-4645-8619-64ae2a603d1e
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : IoGetContainerInformation routine [Kernel-Mode Driver Architecture], IoGetContainerInformation, kernel.iogetcontainerinformation, wdm/IoGetContainerInformation, k104_f139cf99-fd05-4f89-ac6e-ac9c88cc97b4.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h, Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 7 and later versions of the Windows operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.IoGetContainerInformation
+title: IoGetContainerInformation function
+author: windows-driver-content
+description: The IoGetContainerInformation routine provides information about the current state of a user session.
+old-location: kernel\iogetcontainerinformation.htm
+old-project: kernel
+ms.assetid: 34612bc5-bed5-4645-8619-64ae2a603d1e
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: IoGetContainerInformation routine [Kernel-Mode Driver Architecture], IoGetContainerInformation, kernel.iogetcontainerinformation, wdm/IoGetContainerInformation, k104_f139cf99-fd05-4f89-ac6e-ac9c88cc97b4.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h, Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 7 and later versions of the Windows operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoGetContainerInformation
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

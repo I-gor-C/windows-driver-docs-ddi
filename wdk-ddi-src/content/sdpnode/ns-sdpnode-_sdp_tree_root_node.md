@@ -1,42 +1,47 @@
 ---
-UID : NS:sdpnode._SDP_TREE_ROOT_NODE
-title : "_SDP_TREE_ROOT_NODE"
-author : windows-driver-content
-description : The SDP_TREE_ROOT_NODE structure is the root element of a tree-based representation of an SDP record.
-old-location : bltooth\sdp_tree_root_node.htm
-old-project : bltooth
-ms.assetid : bde75364-387b-4f57-8942-1cf32652c02d
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : SDP_TREE_ROOT_NODE structure [Bluetooth Devices], _SDP_TREE_ROOT_NODE, *PSDP_TREE_ROOT_NODE, PSDP_TREE_ROOT_NODE, bth_structs_b2bdb873-03b0-4c3a-910c-06277f6be663.xml, sdpnode/PSDP_TREE_ROOT_NODE, bltooth.sdp_tree_root_node, sdpnode/SDP_TREE_ROOT_NODE, PSDP_TREE_ROOT_NODE structure pointer [Bluetooth Devices], SDP_TREE_ROOT_NODE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : sdpnode.h
-req.include-header : Sdpnode.h
-req.target-type : Windows
-req.target-min-winverclnt : Versions:\_Supported in Windows Vista, and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= PASSIVE_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SDP_TREE_ROOT_NODE, *PSDP_TREE_ROOT_NODE
-req.product : Windows 10 or later.
+UID: NS:sdpnode._SDP_TREE_ROOT_NODE
+title: "_SDP_TREE_ROOT_NODE"
+author: windows-driver-content
+description: The SDP_TREE_ROOT_NODE structure is the root element of a tree-based representation of an SDP record.
+old-location: bltooth\sdp_tree_root_node.htm
+old-project: bltooth
+ms.assetid: bde75364-387b-4f57-8942-1cf32652c02d
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: SDP_TREE_ROOT_NODE structure [Bluetooth Devices], _SDP_TREE_ROOT_NODE, *PSDP_TREE_ROOT_NODE, PSDP_TREE_ROOT_NODE, bth_structs_b2bdb873-03b0-4c3a-910c-06277f6be663.xml, sdpnode/PSDP_TREE_ROOT_NODE, bltooth.sdp_tree_root_node, sdpnode/SDP_TREE_ROOT_NODE, PSDP_TREE_ROOT_NODE structure pointer [Bluetooth Devices], SDP_TREE_ROOT_NODE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: sdpnode.h
+req.include-header: Sdpnode.h
+req.target-type: Windows
+req.target-min-winverclnt: Versions:\_Supported in Windows Vista, and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= PASSIVE_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	sdpnode.h
+apiname:
+-	SDP_TREE_ROOT_NODE
+product: Windows
+targetos: Windows
+req.typenames: SDP_TREE_ROOT_NODE, *PSDP_TREE_ROOT_NODE
+req.product: Windows 10 or later.
 ---
 
 # _SDP_TREE_ROOT_NODE structure

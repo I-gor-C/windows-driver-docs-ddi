@@ -1,41 +1,47 @@
 ---
-UID : NF:portcls.PcForwardContentToFileObject
-title : PcForwardContentToFileObject function
-author : windows-driver-content
-description : The PcForwardContentToFileObject function is obsolete and is maintained only to support existing drivers.
-old-location : audio\pcforwardcontenttofileobject.htm
-old-project : audio
-ms.assetid : 3cad8e61-e016-415a-9aa9-1169267dc729
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : PcForwardContentToFileObject, audio.pcforwardcontenttofileobject, audpc-routines_2560382f-57c9-4d3c-9ba0-330374e18663.xml, portcls/PcForwardContentToFileObject, PcForwardContentToFileObject function [Audio Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : portcls.h
-req.include-header : Portcls.h
-req.target-type : Universal
-req.target-min-winverclnt : The PortCls system driver implements the PcForwardContentToFileObject function in Microsoft Windows XP and later operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Portcls.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.PcForwardContentToFileObject
+title: PcForwardContentToFileObject function
+author: windows-driver-content
+description: The PcForwardContentToFileObject function is obsolete and is maintained only to support existing drivers.
+old-location: audio\pcforwardcontenttofileobject.htm
+old-project: audio
+ms.assetid: 3cad8e61-e016-415a-9aa9-1169267dc729
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: PcForwardContentToFileObject, audio.pcforwardcontenttofileobject, audpc-routines_2560382f-57c9-4d3c-9ba0-330374e18663.xml, portcls/PcForwardContentToFileObject, PcForwardContentToFileObject function [Audio Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: portcls.h
+req.include-header: Portcls.h
+req.target-type: Universal
+req.target-min-winverclnt: The PortCls system driver implements the PcForwardContentToFileObject function in Microsoft Windows XP and later operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Portcls.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Portcls.lib
+-	Portcls.dll
+apiname:
+-	PcForwardContentToFileObject
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

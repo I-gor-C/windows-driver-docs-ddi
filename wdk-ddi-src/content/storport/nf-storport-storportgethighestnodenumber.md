@@ -1,42 +1,47 @@
 ---
-UID : NF:storport.StorPortGetHighestNodeNumber
-title : StorPortGetHighestNodeNumber function
-author : windows-driver-content
-description : The StorPortGetHighestNodeNumber routine returns the largest possible node number on the system.
-old-location : storage\storportgethighestnodenumber.htm
-old-project : storage
-ms.assetid : 3e0b85f9-b6e4-4d53-b8dc-7f51e0f74be3
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.storportgethighestnodenumber, StorPortGetHighestNodeNumber, storprt_e9e942e1-6de3-4170-87ec-00660ce9925a.xml, StorPortGetHighestNodeNumber routine [Storage Devices], storport/StorPortGetHighestNodeNumber
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 7 and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : StorPortIrql
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STOR_SPINLOCK
-req.product : Windows 10 or later.
+UID: NF:storport.StorPortGetHighestNodeNumber
+title: StorPortGetHighestNodeNumber function
+author: windows-driver-content
+description: The StorPortGetHighestNodeNumber routine returns the largest possible node number on the system.
+old-location: storage\storportgethighestnodenumber.htm
+old-project: storage
+ms.assetid: 3e0b85f9-b6e4-4d53-b8dc-7f51e0f74be3
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.storportgethighestnodenumber, StorPortGetHighestNodeNumber, storprt_e9e942e1-6de3-4170-87ec-00660ce9925a.xml, StorPortGetHighestNodeNumber routine [Storage Devices], storport/StorPortGetHighestNodeNumber
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 7 and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: StorPortIrql
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	storport.h
+apiname:
+-	StorPortGetHighestNodeNumber
+product: Windows
+targetos: Windows
+req.typenames: STOR_SPINLOCK
+req.product: Windows 10 or later.
 ---
 
 

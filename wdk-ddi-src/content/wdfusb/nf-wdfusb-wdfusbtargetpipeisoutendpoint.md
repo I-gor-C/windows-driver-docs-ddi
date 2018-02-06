@@ -1,42 +1,50 @@
 ---
-UID : NF:wdfusb.WdfUsbTargetPipeIsOutEndpoint
-title : WdfUsbTargetPipeIsOutEndpoint function
-author : windows-driver-content
-description : The WdfUsbTargetPipeIsOutEndpoint method determines whether a specified USB pipe is connected to an output endpoint.
-old-location : wdf\wdfusbtargetpipeisoutendpoint.htm
-old-project : wdf
-ms.assetid : 803d282b-f6eb-4cd3-91b3-899f983c9dc5
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.wdfusbtargetpipeisoutendpoint, DFUsbRef_19c3e865-4f6c-4950-93af-46a8b97ec6b9.xml, wdfusb/WdfUsbTargetPipeIsOutEndpoint, PFN_WDFUSBTARGETPIPEISOUTENDPOINT, WdfUsbTargetPipeIsOutEndpoint method, kmdf.wdfusbtargetpipeisoutendpoint, WdfUsbTargetPipeIsOutEndpoint
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfusb.h
-req.include-header : Wdfusb.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2, UsbKmdfIrql, UsbKmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfusb.WdfUsbTargetPipeIsOutEndpoint
+title: WdfUsbTargetPipeIsOutEndpoint function
+author: windows-driver-content
+description: The WdfUsbTargetPipeIsOutEndpoint method determines whether a specified USB pipe is connected to an output endpoint.
+old-location: wdf\wdfusbtargetpipeisoutendpoint.htm
+old-project: wdf
+ms.assetid: 803d282b-f6eb-4cd3-91b3-899f983c9dc5
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.wdfusbtargetpipeisoutendpoint, DFUsbRef_19c3e865-4f6c-4950-93af-46a8b97ec6b9.xml, wdfusb/WdfUsbTargetPipeIsOutEndpoint, PFN_WDFUSBTARGETPIPEISOUTENDPOINT, WdfUsbTargetPipeIsOutEndpoint method, kmdf.wdfusbtargetpipeisoutendpoint, WdfUsbTargetPipeIsOutEndpoint
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfusb.h
+req.include-header: Wdfusb.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2, UsbKmdfIrql, UsbKmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+-	WUDFx02000.dll
+-	WUDFx02000.dll.dll
+apiname:
+-	WdfUsbTargetPipeIsOutEndpoint
+product: Windows
+targetos: Windows
+req.typenames: WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
+req.product: Windows 10 or later.
 ---
 
 

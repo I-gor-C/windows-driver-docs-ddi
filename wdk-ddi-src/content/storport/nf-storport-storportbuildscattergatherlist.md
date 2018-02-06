@@ -1,42 +1,47 @@
 ---
-UID : NF:storport.StorPortBuildScatterGatherList
-title : StorPortBuildScatterGatherList function
-author : windows-driver-content
-description : The StorPortBuildScatterGatherList routine creates a scatter/gather list for the specified data buffer.
-old-location : storage\storportbuildscattergatherlist.htm
-old-project : storage
-ms.assetid : cdea67aa-14fa-45c1-8af0-8db48042b1b2
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storport/StorPortBuildScatterGatherList, StorPortBuildScatterGatherList, storprt_ed0a920c-d8f4-44f2-a262-5a74470ec67a.xml, StorPortBuildScatterGatherList routine [Storage Devices], storage.storportbuildscattergatherlist
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : DISPATCH_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STOR_SPINLOCK
-req.product : Windows 10 or later.
+UID: NF:storport.StorPortBuildScatterGatherList
+title: StorPortBuildScatterGatherList function
+author: windows-driver-content
+description: The StorPortBuildScatterGatherList routine creates a scatter/gather list for the specified data buffer.
+old-location: storage\storportbuildscattergatherlist.htm
+old-project: storage
+ms.assetid: cdea67aa-14fa-45c1-8af0-8db48042b1b2
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storport/StorPortBuildScatterGatherList, StorPortBuildScatterGatherList, storprt_ed0a920c-d8f4-44f2-a262-5a74470ec67a.xml, StorPortBuildScatterGatherList routine [Storage Devices], storage.storportbuildscattergatherlist
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: DISPATCH_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	storport.h
+apiname:
+-	StorPortBuildScatterGatherList
+product: Windows
+targetos: Windows
+req.typenames: STOR_SPINLOCK
+req.product: Windows 10 or later.
 ---
 
 

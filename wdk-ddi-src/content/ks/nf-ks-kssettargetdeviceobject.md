@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsSetTargetDeviceObject
-title : KsSetTargetDeviceObject function
-author : windows-driver-content
-description : The KsSetTargetDeviceObject function sets the target device object of an object. The function adds the object header to a list of object headers that have target devices.
-old-location : stream\kssettargetdeviceobject.htm
-old-project : stream
-ms.assetid : 0d90f70d-8cbe-4c95-ae54-494ff404631a
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ksfunc_f5e0140d-a6f3-49a1-a319-f55bdd5f0734.xml, ks/KsSetTargetDeviceObject, KsSetTargetDeviceObject function [Streaming Media Devices], stream.kssettargetdeviceobject, KsSetTargetDeviceObject
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsSetTargetDeviceObject
+title: KsSetTargetDeviceObject function
+author: windows-driver-content
+description: The KsSetTargetDeviceObject function sets the target device object of an object. The function adds the object header to a list of object headers that have target devices.
+old-location: stream\kssettargetdeviceobject.htm
+old-project: stream
+ms.assetid: 0d90f70d-8cbe-4c95-ae54-494ff404631a
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ksfunc_f5e0140d-a6f3-49a1-a319-f55bdd5f0734.xml, ks/KsSetTargetDeviceObject, KsSetTargetDeviceObject function [Streaming Media Devices], stream.kssettargetdeviceobject, KsSetTargetDeviceObject
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsSetTargetDeviceObject
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

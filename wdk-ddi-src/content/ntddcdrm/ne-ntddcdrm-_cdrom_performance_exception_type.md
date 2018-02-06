@@ -1,41 +1,46 @@
 ---
-UID : NE:ntddcdrm._CDROM_PERFORMANCE_EXCEPTION_TYPE
-title : "_CDROM_PERFORMANCE_EXCEPTION_TYPE"
-author : windows-driver-content
-description : The CDROM_PERFORMANCE_EXCEPTION_TYPE enumeration defines the exceptional conditions for performance data.
-old-location : storage\cdrom_performance_exception_type.htm
-old-project : storage
-ms.assetid : 4AD156F8-911F-4D70-8B0E-8BB0D0747470
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : ntddcdrm/CdromNominalPerformance, ntddcdrm/CdromEntirePerformanceList, _CDROM_PERFORMANCE_EXCEPTION_TYPE, CdromPerformanceExceptionsOnly, ntddcdrm/ CdromPerformanceExceptionsOnly, ntddcdrm/PCDROM_PERFORMANCE_EXCEPTION_TYPE, CdromEntirePerformanceList, storage.cdrom_performance_exception_type, ntddcdrm/CDROM_PERFORMANCE_EXCEPTION_TYPE, PCDROM_PERFORMANCE_EXCEPTION_TYPE enumeration pointer [Storage Devices], PCDROM_PERFORMANCE_EXCEPTION_TYPE, CDROM_PERFORMANCE_EXCEPTION_TYPE enumeration [Storage Devices], CdromNominalPerformance, *PCDROM_PERFORMANCE_EXCEPTION_TYPE, CDROM_PERFORMANCE_EXCEPTION_TYPE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : ntddcdrm.h
-req.include-header : Ntddcdrm.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : CDROM_PERFORMANCE_EXCEPTION_TYPE, *PCDROM_PERFORMANCE_EXCEPTION_TYPE
+UID: NE:ntddcdrm._CDROM_PERFORMANCE_EXCEPTION_TYPE
+title: "_CDROM_PERFORMANCE_EXCEPTION_TYPE"
+author: windows-driver-content
+description: The CDROM_PERFORMANCE_EXCEPTION_TYPE enumeration defines the exceptional conditions for performance data.
+old-location: storage\cdrom_performance_exception_type.htm
+old-project: storage
+ms.assetid: 4AD156F8-911F-4D70-8B0E-8BB0D0747470
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: ntddcdrm/CdromNominalPerformance, ntddcdrm/CdromEntirePerformanceList, _CDROM_PERFORMANCE_EXCEPTION_TYPE, CdromPerformanceExceptionsOnly, ntddcdrm/ CdromPerformanceExceptionsOnly, ntddcdrm/PCDROM_PERFORMANCE_EXCEPTION_TYPE, CdromEntirePerformanceList, storage.cdrom_performance_exception_type, ntddcdrm/CDROM_PERFORMANCE_EXCEPTION_TYPE, PCDROM_PERFORMANCE_EXCEPTION_TYPE enumeration pointer [Storage Devices], PCDROM_PERFORMANCE_EXCEPTION_TYPE, CDROM_PERFORMANCE_EXCEPTION_TYPE enumeration [Storage Devices], CdromNominalPerformance, *PCDROM_PERFORMANCE_EXCEPTION_TYPE, CDROM_PERFORMANCE_EXCEPTION_TYPE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: ntddcdrm.h
+req.include-header: Ntddcdrm.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddcdrm.h
+apiname:
+-	CDROM_PERFORMANCE_EXCEPTION_TYPE
+product: Windows
+targetos: Windows
+req.typenames: CDROM_PERFORMANCE_EXCEPTION_TYPE, *PCDROM_PERFORMANCE_EXCEPTION_TYPE
 ---
 
 # _CDROM_PERFORMANCE_EXCEPTION_TYPE Enumeration
@@ -53,21 +58,21 @@ typedef enum _CDROM_PERFORMANCE_EXCEPTION_TYPE {
 ## Constants
 
 <table>
-
-<tr>
-<td>CdromEntirePerformanceList</td>
-<td>Requests the entire performance list, as qualified by the <b>StartingLba</b> field of the <a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_performance_request.md">CDROM_PERFORMANCE_REQUEST</a> structure.</td>
-</tr>
-
-<tr>
-<td>CdromNominalPerformance</td>
-<td>Requests nominal performance parameters.</td>
-</tr>
-
-<tr>
-<td>CdromPerformanceExceptionsOnly</td>
-<td>Requests only performance exceptions that cause the performance to fall outside the nominal.</td>
-</tr>
+            
+                <tr>
+                    <td>CdromEntirePerformanceList</td>
+                    <td>Requests the entire performance list, as qualified by the <b>StartingLba</b> field of the <a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_performance_request.md">CDROM_PERFORMANCE_REQUEST</a> structure.</td>
+                </tr>
+            
+                <tr>
+                    <td>CdromNominalPerformance</td>
+                    <td>Requests nominal performance parameters.</td>
+                </tr>
+            
+                <tr>
+                    <td>CdromPerformanceExceptionsOnly</td>
+                    <td>Requests only performance exceptions that cause the performance to fall outside the nominal.</td>
+                </tr>
 </table>
 
 
@@ -76,9 +81,9 @@ typedef enum _CDROM_PERFORMANCE_EXCEPTION_TYPE {
 | ---- |:---- |
 | **Header** | ntddcdrm.h (include Ntddcdrm.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_performance_request.md">CDROM_PERFORMANCE_REQUEST</a>
+        <a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_performance_request.md">CDROM_PERFORMANCE_REQUEST</a>
 
 <a href="..\ntddcdrm\ni-ntddcdrm-ioctl_cdrom_get_performance.md">IOCTL_CDROM_GET_PERFORMANCE</a>
 

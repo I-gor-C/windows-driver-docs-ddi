@@ -1,42 +1,47 @@
 ---
-UID : NS:wdm._REENUMERATE_SELF_INTERFACE_STANDARD
-title : "_REENUMERATE_SELF_INTERFACE_STANDARD"
-author : windows-driver-content
-description : The REENUMERATE_SELF_INTERFACE_STANDARD interface structure enables a driver to request that its parent bus driver reenumerate the driver's device. This structure defines the GUID_REENUMERATE_SELF_INTERFACE_STANDARD interface.
-old-location : kernel\reenumerate_self_interface_standard.htm
-old-project : kernel
-ms.assetid : f44a57e9-4536-46a7-a80e-d4bbbb2a9ad5
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/REENUMERATE_SELF_INTERFACE_STANDARD, PREENUMERATE_SELF_INTERFACE_STANDARD, *PREENUMERATE_SELF_INTERFACE_STANDARD, drvr_interface_6e913216-4d26-4c59-b040-854f5aac2a9a.xml, PREENUMERATE_SELF_INTERFACE_STANDARD structure pointer [Kernel-Mode Driver Architecture], _REENUMERATE_SELF_INTERFACE_STANDARD, wdm/PREENUMERATE_SELF_INTERFACE_STANDARD, REENUMERATE_SELF_INTERFACE_STANDARD structure [Kernel-Mode Driver Architecture], REENUMERATE_SELF_INTERFACE_STANDARD, kernel.reenumerate_self_interface_standard
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : REENUMERATE_SELF_INTERFACE_STANDARD, *PREENUMERATE_SELF_INTERFACE_STANDARD
-req.product : Windows 10 or later.
+UID: NS:wdm._REENUMERATE_SELF_INTERFACE_STANDARD
+title: "_REENUMERATE_SELF_INTERFACE_STANDARD"
+author: windows-driver-content
+description: The REENUMERATE_SELF_INTERFACE_STANDARD interface structure enables a driver to request that its parent bus driver reenumerate the driver's device. This structure defines the GUID_REENUMERATE_SELF_INTERFACE_STANDARD interface.
+old-location: kernel\reenumerate_self_interface_standard.htm
+old-project: kernel
+ms.assetid: f44a57e9-4536-46a7-a80e-d4bbbb2a9ad5
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/REENUMERATE_SELF_INTERFACE_STANDARD, PREENUMERATE_SELF_INTERFACE_STANDARD, *PREENUMERATE_SELF_INTERFACE_STANDARD, drvr_interface_6e913216-4d26-4c59-b040-854f5aac2a9a.xml, PREENUMERATE_SELF_INTERFACE_STANDARD structure pointer [Kernel-Mode Driver Architecture], _REENUMERATE_SELF_INTERFACE_STANDARD, wdm/PREENUMERATE_SELF_INTERFACE_STANDARD, REENUMERATE_SELF_INTERFACE_STANDARD structure [Kernel-Mode Driver Architecture], REENUMERATE_SELF_INTERFACE_STANDARD, kernel.reenumerate_self_interface_standard
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	REENUMERATE_SELF_INTERFACE_STANDARD
+product: Windows
+targetos: Windows
+req.typenames: REENUMERATE_SELF_INTERFACE_STANDARD, *PREENUMERATE_SELF_INTERFACE_STANDARD
+req.product: Windows 10 or later.
 ---
 
 # _REENUMERATE_SELF_INTERFACE_STANDARD structure

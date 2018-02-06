@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_RESOLVESHAREDRESOURCE
-title : PFND3DDDI_RESOLVESHAREDRESOURCE
-author : windows-driver-content
-description : The ResolveSharedResource function informs a user-mode display driver that ownership of a shared surface changed or that a surface is being used for GDI interoperation.
-old-location : display\resolvesharedresource.htm
-old-project : display
-ms.assetid : 8ad9130e-bade-4fd2-b345-b6361fd001ef
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.resolvesharedresource, ResolveSharedResource callback function [Display Devices], ResolveSharedResource, PFND3DDDI_RESOLVESHAREDRESOURCE, PFND3DDDI_RESOLVESHAREDRESOURCE, d3dumddi/ResolveSharedResource, UserModeDisplayDriver_Functions_d1818521-a7ef-4daf-8bd7-47103bba2755.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : ResolveSharedResource is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_RESOLVESHAREDRESOURCE
+title: PFND3DDDI_RESOLVESHAREDRESOURCE
+author: windows-driver-content
+description: The ResolveSharedResource function informs a user-mode display driver that ownership of a shared surface changed or that a surface is being used for GDI interoperation.
+old-location: display\resolvesharedresource.htm
+old-project: display
+ms.assetid: 8ad9130e-bade-4fd2-b345-b6361fd001ef
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.resolvesharedresource, ResolveSharedResource callback function [Display Devices], ResolveSharedResource, PFND3DDDI_RESOLVESHAREDRESOURCE, PFND3DDDI_RESOLVESHAREDRESOURCE, d3dumddi/ResolveSharedResource, UserModeDisplayDriver_Functions_d1818521-a7ef-4daf-8bd7-47103bba2755.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: ResolveSharedResource is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	ResolveSharedResource
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

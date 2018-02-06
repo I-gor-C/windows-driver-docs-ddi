@@ -1,41 +1,46 @@
 ---
-UID : NS:engextcpp.ExtKnownStruct
-title : ExtKnownStruct
-author : windows-driver-content
-description : The ExtKnownStruct structure is used to specify how a target's structure can be formatted for output.
-old-location : debugger\extknownstruct.htm
-old-project : debugger
-ms.assetid : 95bf9a47-e121-4432-a28f-5476467f1823
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : ExtKnownStruct, engextcpp/ExtKnownStruct, ExtKnownStruct structure [Windows Debugging], EngExtCpp_Ref_b59346d2-06da-4112-9bed-ce64de0f2807.xml, debugger.extknownstruct
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : engextcpp.hpp
-req.include-header : Engextcpp.hpp
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NS:engextcpp.ExtKnownStruct
+title: ExtKnownStruct
+author: windows-driver-content
+description: The ExtKnownStruct structure is used to specify how a target's structure can be formatted for output.
+old-location: debugger\extknownstruct.htm
+old-project: debugger
+ms.assetid: 95bf9a47-e121-4432-a28f-5476467f1823
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: ExtKnownStruct, engextcpp/ExtKnownStruct, ExtKnownStruct structure [Windows Debugging], EngExtCpp_Ref_b59346d2-06da-4112-9bed-ce64de0f2807.xml, debugger.extknownstruct
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: engextcpp.hpp
+req.include-header: Engextcpp.hpp
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Engextcpp.hpp
+apiname:
+-	ExtKnownStruct
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 # ExtKnownStruct structure

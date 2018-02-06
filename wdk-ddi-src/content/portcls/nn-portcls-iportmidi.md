@@ -1,41 +1,46 @@
 ---
-UID : NN:portcls.IPortMidi
-title : IPortMidi
-author : windows-driver-content
-description : The IPortMidi interface is the MIDI port driver's primary interface.
-old-location : audio\iportmidi.htm
-old-project : audio
-ms.assetid : e5403377-fd24-4fd5-8158-194f30238c44
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : audio.iportmidi, IPortMidi interface [Audio Devices], IPortMidi interface [Audio Devices], described, IPortMidi, portcls/IPortMidi, audmp-routines_52a1c6a3-7658-4c69-a4c9-6d965a1d99c9.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : portcls.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Portcls.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NN:portcls.IPortMidi
+title: IPortMidi
+author: windows-driver-content
+description: The IPortMidi interface is the MIDI port driver's primary interface.
+old-location: audio\iportmidi.htm
+old-project: audio
+ms.assetid: e5403377-fd24-4fd5-8158-194f30238c44
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: audio.iportmidi, IPortMidi interface [Audio Devices], IPortMidi interface [Audio Devices], described, IPortMidi, portcls/IPortMidi, audmp-routines_52a1c6a3-7658-4c69-a4c9-6d965a1d99c9.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: portcls.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Portcls.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	portcls.h
+apiname:
+-	IPortMidi
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 # IPortMidi interface

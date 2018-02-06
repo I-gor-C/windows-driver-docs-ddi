@@ -1,41 +1,46 @@
 ---
-UID : NS:61883._CIP_NOTIFY_INFO
-title : "_CIP_NOTIFY_INFO"
-author : windows-driver-content
-description : The CIP_NOTIFY_INFO structure contains information about the frame.
-old-location : ieee\cip_notify_info.htm
-old-project : IEEE
-ms.assetid : 60b0d44b-0178-43ce-a1ad-7f5825bed3ba
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : CIP_NOTIFY_INFO structure [Buses], 61883/PCIP_NOTIFY_INFO, 61883/CIP_NOTIFY_INFO, _CIP_NOTIFY_INFO, CIP_NOTIFY_INFO, *PCIP_NOTIFY_INFO, IEEE.cip_notify_info, PCIP_NOTIFY_INFO, PCIP_NOTIFY_INFO structure pointer [Buses], 61883_structures_383bc74c-1168-4478-8284-b2724f9ec654.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : 61883.h
-req.include-header : 61883.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PCIP_NOTIFY_INFO, CIP_NOTIFY_INFO"
+UID: NS:61883._CIP_NOTIFY_INFO
+title: "_CIP_NOTIFY_INFO"
+author: windows-driver-content
+description: The CIP_NOTIFY_INFO structure contains information about the frame.
+old-location: ieee\cip_notify_info.htm
+old-project: IEEE
+ms.assetid: 60b0d44b-0178-43ce-a1ad-7f5825bed3ba
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: CIP_NOTIFY_INFO structure [Buses], 61883/PCIP_NOTIFY_INFO, 61883/CIP_NOTIFY_INFO, _CIP_NOTIFY_INFO, CIP_NOTIFY_INFO, *PCIP_NOTIFY_INFO, IEEE.cip_notify_info, PCIP_NOTIFY_INFO, PCIP_NOTIFY_INFO structure pointer [Buses], 61883_structures_383bc74c-1168-4478-8284-b2724f9ec654.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: 61883.h
+req.include-header: 61883.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	61883.h
+apiname:
+-	CIP_NOTIFY_INFO
+product: Windows
+targetos: Windows
+req.typenames: "*PCIP_NOTIFY_INFO, CIP_NOTIFY_INFO"
 ---
 
 # _CIP_NOTIFY_INFO structure

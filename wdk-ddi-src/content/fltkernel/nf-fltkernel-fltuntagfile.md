@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltUntagFile
-title : FltUntagFile function
-author : windows-driver-content
-description : FltUntagFile removes a reparse point from a file or directory.
-old-location : ifsk\fltuntagfile.htm
-old-project : ifsk
-ms.assetid : 728a9879-681b-4244-b931-7945a05e3d40
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltUntagFile function [Installable File System Drivers], FltApiRef_p_to_z_c1e51b69-c780-46bd-b3f0-b78cdc9c3b3f.xml, FltUntagFile, ifsk.fltuntagfile, fltkernel/FltUntagFile
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltUntagFile
+title: FltUntagFile function
+author: windows-driver-content
+description: FltUntagFile removes a reparse point from a file or directory.
+old-location: ifsk\fltuntagfile.htm
+old-project: ifsk
+ms.assetid: 728a9879-681b-4244-b931-7945a05e3d40
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltUntagFile function [Installable File System Drivers], FltApiRef_p_to_z_c1e51b69-c780-46bd-b3f0-b78cdc9c3b3f.xml, FltUntagFile, ifsk.fltuntagfile, fltkernel/FltUntagFile
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltUntagFile
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

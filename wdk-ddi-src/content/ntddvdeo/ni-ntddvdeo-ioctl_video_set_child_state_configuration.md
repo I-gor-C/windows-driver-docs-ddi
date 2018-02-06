@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddvdeo.IOCTL_VIDEO_SET_CHILD_STATE_CONFIGURATION
-title : IOCTL_VIDEO_SET_CHILD_STATE_CONFIGURATION
-author : windows-driver-content
-description : Performs a display device switch, a state change in which the video signal going to one display device is sent to another, possibly different type of display device.
-old-location : display\ioctl_video_set_child_state_configuration.htm
-old-project : display
-ms.assetid : ae70c0e5-0ce0-4e44-983c-9bc0f9a1f600
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.ioctl_video_set_child_state_configuration, IOCTL_VIDEO_SET_CHILD_STATE_CONFIGURATION control code [Display Devices], IOCTL_VIDEO_SET_CHILD_STATE_CONFIGURATION, ntddvdeo/IOCTL_VIDEO_SET_CHILD_STATE_CONFIGURATION, Video_IOCTLs_bd76ef78-623a-4f72-b0fd-1ac70b211a98.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddvdeo.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TAPE_WRITE_MARKS, *PTAPE_WRITE_MARKS
+UID: NI:ntddvdeo.IOCTL_VIDEO_SET_CHILD_STATE_CONFIGURATION
+title: IOCTL_VIDEO_SET_CHILD_STATE_CONFIGURATION
+author: windows-driver-content
+description: Performs a display device switch, a state change in which the video signal going to one display device is sent to another, possibly different type of display device.
+old-location: display\ioctl_video_set_child_state_configuration.htm
+old-project: display
+ms.assetid: ae70c0e5-0ce0-4e44-983c-9bc0f9a1f600
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.ioctl_video_set_child_state_configuration, IOCTL_VIDEO_SET_CHILD_STATE_CONFIGURATION control code [Display Devices], IOCTL_VIDEO_SET_CHILD_STATE_CONFIGURATION, ntddvdeo/IOCTL_VIDEO_SET_CHILD_STATE_CONFIGURATION, Video_IOCTLs_bd76ef78-623a-4f72-b0fd-1ac70b211a98.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddvdeo.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddvdeo.h
+apiname:
+-	IOCTL_VIDEO_SET_CHILD_STATE_CONFIGURATION
+product: Windows
+targetos: Windows
+req.typenames: TAPE_WRITE_MARKS, *PTAPE_WRITE_MARKS
 ---
 
 # IOCTL_VIDEO_SET_CHILD_STATE_CONFIGURATION IOCTL

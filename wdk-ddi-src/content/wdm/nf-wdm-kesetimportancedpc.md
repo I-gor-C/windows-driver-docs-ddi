@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.KeSetImportanceDpc
-title : KeSetImportanceDpc function
-author : windows-driver-content
-description : The KeSetImportanceDpc routine specifies how soon the DPC routine is run.
-old-location : kernel\kesetimportancedpc.htm
-old-project : kernel
-ms.assetid : 0feb053b-6b58-4b26-8549-a6cf3996a3e6
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.kesetimportancedpc, k105_dc95afd2-5be3-4d48-a99f-0a9f2d8dab9b.xml, wdm/KeSetImportanceDpc, KeSetImportanceDpc, KeSetImportanceDpc routine [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.KeSetImportanceDpc
+title: KeSetImportanceDpc function
+author: windows-driver-content
+description: The KeSetImportanceDpc routine specifies how soon the DPC routine is run.
+old-location: kernel\kesetimportancedpc.htm
+old-project: kernel
+ms.assetid: 0feb053b-6b58-4b26-8549-a6cf3996a3e6
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.kesetimportancedpc, k105_dc95afd2-5be3-4d48-a99f-0a9f2d8dab9b.xml, wdm/KeSetImportanceDpc, KeSetImportanceDpc, KeSetImportanceDpc routine [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	KeSetImportanceDpc
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NC:dbgeng.PDEBUG_EXTENSION_UNLOAD
-title : PDEBUG_EXTENSION_UNLOAD
-author : windows-driver-content
-description : The DebugExtensionUnload callback function unloads the debug extension.
-old-location : debugger\debugextensionunload.htm
-old-project : debugger
-ms.assetid : 8F83F94E-CF4F-4709-A860-DDF1850A7264
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : debugger.debugextensionunload, DebugExtensionUnload, DebugExtensionUnload callback function [Windows Debugging], DebugExtensionUnload, PDEBUG_EXTENSION_UNLOAD, PDEBUG_EXTENSION_UNLOAD, dbgeng/DebugExtensionUnload
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NC:dbgeng.PDEBUG_EXTENSION_UNLOAD
+title: PDEBUG_EXTENSION_UNLOAD
+author: windows-driver-content
+description: The DebugExtensionUnload callback function unloads the debug extension.
+old-location: debugger\debugextensionunload.htm
+old-project: debugger
+ms.assetid: 8F83F94E-CF4F-4709-A860-DDF1850A7264
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: debugger.debugextensionunload, DebugExtensionUnload, DebugExtensionUnload callback function [Windows Debugging], DebugExtensionUnload, PDEBUG_EXTENSION_UNLOAD, PDEBUG_EXTENSION_UNLOAD, dbgeng/DebugExtensionUnload
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Dbgeng.h
+apiname:
+-	DebugExtensionUnload
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

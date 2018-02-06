@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dhal._D3DHAL_DP2CLEAR
-title : "_D3DHAL_DP2CLEAR"
-author : windows-driver-content
-description : D3DHAL_DP2CLEAR contains all of the information that the driver needs to perform hardware-assisted clearing on the rendering target, depth buffer or stencil buffer.
-old-location : display\d3dhal_dp2clear.htm
-old-project : display
-ms.assetid : 8cd81cae-8d6b-48d8-afdc-87e3a81653f4
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : "*LPD3DHAL_DP2CLEAR, d3dhal/LPD3DHAL_DP2CLEAR, D3DHAL_DP2CLEAR structure [Display Devices], d3dhal/D3DHAL_DP2CLEAR, _D3DHAL_DP2CLEAR, D3DHAL_DP2CLEAR, d3dstrct_2caf8fa1-61b4-4659-af20-a72d6b36173a.xml, LPD3DHAL_DP2CLEAR, LPD3DHAL_DP2CLEAR structure pointer [Display Devices], display.d3dhal_dp2clear"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dhal.h
-req.include-header : D3dhal.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DHAL_DP2CLEAR
+UID: NS:d3dhal._D3DHAL_DP2CLEAR
+title: "_D3DHAL_DP2CLEAR"
+author: windows-driver-content
+description: D3DHAL_DP2CLEAR contains all of the information that the driver needs to perform hardware-assisted clearing on the rendering target, depth buffer or stencil buffer.
+old-location: display\d3dhal_dp2clear.htm
+old-project: display
+ms.assetid: 8cd81cae-8d6b-48d8-afdc-87e3a81653f4
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: "*LPD3DHAL_DP2CLEAR, d3dhal/LPD3DHAL_DP2CLEAR, D3DHAL_DP2CLEAR structure [Display Devices], d3dhal/D3DHAL_DP2CLEAR, _D3DHAL_DP2CLEAR, D3DHAL_DP2CLEAR, d3dstrct_2caf8fa1-61b4-4659-af20-a72d6b36173a.xml, LPD3DHAL_DP2CLEAR, LPD3DHAL_DP2CLEAR structure pointer [Display Devices], display.d3dhal_dp2clear"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dhal.h
+req.include-header: D3dhal.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dhal.h
+apiname:
+-	D3DHAL_DP2CLEAR
+product: Windows
+targetos: Windows
+req.typenames: D3DHAL_DP2CLEAR
 ---
 
 # _D3DHAL_DP2CLEAR structure

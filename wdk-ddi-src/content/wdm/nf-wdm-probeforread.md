@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.ProbeForRead
-title : ProbeForRead function
-author : windows-driver-content
-description : The ProbeForRead routine checks that a user-mode buffer actually resides in the user portion of the address space, and is correctly aligned.
-old-location : kernel\probeforread.htm
-old-project : kernel
-ms.assetid : 86b09f5c-6527-447e-b383-b97d45a57ce7
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ProbeForRead, ProbeForRead routine [Kernel-Mode Driver Architecture], k102_a0260886-9f28-408e-91a1-fde07974ef9b.xml, kernel.probeforread, wdm/ProbeForRead
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : IrqlExApcLte2, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ProbeForRead
+title: ProbeForRead function
+author: windows-driver-content
+description: The ProbeForRead routine checks that a user-mode buffer actually resides in the user portion of the address space, and is correctly aligned.
+old-location: kernel\probeforread.htm
+old-project: kernel
+ms.assetid: 86b09f5c-6527-447e-b383-b97d45a57ce7
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ProbeForRead, ProbeForRead routine [Kernel-Mode Driver Architecture], k102_a0260886-9f28-408e-91a1-fde07974ef9b.xml, kernel.probeforread, wdm/ProbeForRead
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: IrqlExApcLte2, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ProbeForRead
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

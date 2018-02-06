@@ -1,41 +1,46 @@
 ---
-UID : NF:mrx.RxFsdDispatch
-title : RxFsdDispatch function
-author : windows-driver-content
-description : RxFsdDispatch implements the file system driver (FSD) dispatch for RDBSS to process an I/O request packet (IRP).
-old-location : ifsk\rxfsddispatch.htm
-old-project : ifsk
-ms.assetid : 92b9b22a-0fe7-4c95-a4fc-5f5f5558b4cf
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : RxFsdDispatch, ifsk.rxfsddispatch, mrx/RxFsdDispatch, rxref_23ec1489-9629-4aef-b0b0-d844364b67a7.xml, RxFsdDispatch routine [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : mrx.h
-req.include-header : Mrx.h, Rxstruc.h, Struchdr.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SetDSMCounters_IN, *PSetDSMCounters_IN
+UID: NF:mrx.RxFsdDispatch
+title: RxFsdDispatch function
+author: windows-driver-content
+description: RxFsdDispatch implements the file system driver (FSD) dispatch for RDBSS to process an I/O request packet (IRP).
+old-location: ifsk\rxfsddispatch.htm
+old-project: ifsk
+ms.assetid: 92b9b22a-0fe7-4c95-a4fc-5f5f5558b4cf
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: RxFsdDispatch, ifsk.rxfsddispatch, mrx/RxFsdDispatch, rxref_23ec1489-9629-4aef-b0b0-d844364b67a7.xml, RxFsdDispatch routine [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: mrx.h
+req.include-header: Mrx.h, Rxstruc.h, Struchdr.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	mrx.h
+apiname:
+-	RxFsdDispatch
+product: Windows
+targetos: Windows
+req.typenames: SetDSMCounters_IN, *PSetDSMCounters_IN
 ---
 
 

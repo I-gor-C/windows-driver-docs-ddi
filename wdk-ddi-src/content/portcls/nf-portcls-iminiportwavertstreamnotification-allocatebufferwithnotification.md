@@ -1,41 +1,46 @@
 ---
-UID : NF:portcls.IMiniportWaveRTStreamNotification.AllocateBufferWithNotification
-title : IMiniportWaveRTStreamNotification::AllocateBufferWithNotification method
-author : windows-driver-content
-description : The AllocateAudioBufferWithNotification method allocates a cyclic buffer for audio data when you want to implement DMA-driven event notification. If you do not want event notification, you must use IMiniportWaveRTStream::AllocateAudioBuffer.
-old-location : audio\iminiportwavertstreamnotification_allocatebufferwithnotification.htm
-old-project : audio
-ms.assetid : df1da549-1677-42ef-9644-3d9c5df66894
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : AllocateBufferWithNotification method [Audio Devices], AllocateBufferWithNotification method [Audio Devices], IMiniportWaveRTStreamNotification interface, IMiniportWaveRTStreamNotification, AllocateBufferWithNotification, IMiniportWaveRTStreamNotification interface [Audio Devices], AllocateBufferWithNotification method, audio.iminiportwavertstreamnotification_allocatebufferwithnotification, portcls/IMiniportWaveRTStreamNotification::AllocateBufferWithNotification, audmp-routines_84faf4d3-ee36-4996-8de2-0f89b41c18fe.xml, IMiniportWaveRTStreamNotification::AllocateBufferWithNotification
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : portcls.h
-req.include-header : 
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : portcls.h
-req.dll : 
-req.irql : Passive level.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.IMiniportWaveRTStreamNotification.AllocateBufferWithNotification
+title: IMiniportWaveRTStreamNotification::AllocateBufferWithNotification method
+author: windows-driver-content
+description: The AllocateAudioBufferWithNotification method allocates a cyclic buffer for audio data when you want to implement DMA-driven event notification. If you do not want event notification, you must use IMiniportWaveRTStream::AllocateAudioBuffer.
+old-location: audio\iminiportwavertstreamnotification_allocatebufferwithnotification.htm
+old-project: audio
+ms.assetid: df1da549-1677-42ef-9644-3d9c5df66894
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: AllocateBufferWithNotification method [Audio Devices], AllocateBufferWithNotification method [Audio Devices], IMiniportWaveRTStreamNotification interface, IMiniportWaveRTStreamNotification, AllocateBufferWithNotification, IMiniportWaveRTStreamNotification interface [Audio Devices], AllocateBufferWithNotification method, audio.iminiportwavertstreamnotification_allocatebufferwithnotification, portcls/IMiniportWaveRTStreamNotification::AllocateBufferWithNotification, audmp-routines_84faf4d3-ee36-4996-8de2-0f89b41c18fe.xml, IMiniportWaveRTStreamNotification::AllocateBufferWithNotification
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: portcls.h
+req.include-header: 
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: portcls.h
+req.dll: 
+req.irql: Passive level.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	portcls.h
+apiname:
+-	IMiniportWaveRTStreamNotification.AllocateBufferWithNotification
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

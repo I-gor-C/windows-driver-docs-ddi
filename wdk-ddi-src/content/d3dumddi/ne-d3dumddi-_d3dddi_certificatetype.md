@@ -1,41 +1,46 @@
 ---
-UID : NE:d3dumddi._D3DDDI_CERTIFICATETYPE
-title : "_D3DDDI_CERTIFICATETYPE"
-author : windows-driver-content
-description : The D3DDDI_CERTIFICATETYPE enumeration contains values that identify certificate types.
-old-location : display\d3dddi_certificatetype.htm
-old-project : display
-ms.assetid : 0e3835af-0ccf-4f41-96e3-beff5fdecd36
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DDDI_CERTIFICATETYPE, d3dumddi/D3DDDI_CERTTYPE_AUTHENTICATED_CHANNEL, D3D_other_Structs_88de08de-61df-4401-9a7c-8cace88a545a.xml, display.d3dddi_certificatetype, D3DDDI_CERTIFICATETYPE enumeration [Display Devices], D3DDDI_CERTTYPE_CRYPTOSESSION, d3dumddi/D3DDDI_CERTTYPE_CRYPTOSESSION, D3DDDI_CERTTYPE_AUTHENTICATED_CHANNEL, _D3DDDI_CERTIFICATETYPE, d3dumddi/D3DDDI_CERTIFICATETYPE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : D3DDDI_CERTIFICATETYPE is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDI_CERTIFICATETYPE
+UID: NE:d3dumddi._D3DDDI_CERTIFICATETYPE
+title: "_D3DDDI_CERTIFICATETYPE"
+author: windows-driver-content
+description: The D3DDDI_CERTIFICATETYPE enumeration contains values that identify certificate types.
+old-location: display\d3dddi_certificatetype.htm
+old-project: display
+ms.assetid: 0e3835af-0ccf-4f41-96e3-beff5fdecd36
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DDDI_CERTIFICATETYPE, d3dumddi/D3DDDI_CERTTYPE_AUTHENTICATED_CHANNEL, D3D_other_Structs_88de08de-61df-4401-9a7c-8cace88a545a.xml, display.d3dddi_certificatetype, D3DDDI_CERTIFICATETYPE enumeration [Display Devices], D3DDDI_CERTTYPE_CRYPTOSESSION, d3dumddi/D3DDDI_CERTTYPE_CRYPTOSESSION, D3DDDI_CERTTYPE_AUTHENTICATED_CHANNEL, _D3DDDI_CERTIFICATETYPE, d3dumddi/D3DDDI_CERTIFICATETYPE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: D3DDDI_CERTIFICATETYPE is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	D3DDDI_CERTIFICATETYPE
+product: Windows
+targetos: Windows
+req.typenames: D3DDDI_CERTIFICATETYPE
 ---
 
 # _D3DDDI_CERTIFICATETYPE Enumeration
@@ -52,21 +57,21 @@ typedef enum _D3DDDI_CERTIFICATETYPE {
 ## Constants
 
 <table>
-
-<tr>
-<td>D3DDDI_CERTTYPE_AUTHENTICATED_CHANNEL</td>
-<td>The value specifies that the certificate type is an authenticated channel.</td>
-</tr>
-
-<tr>
-<td>D3DDDI_CERTTYPE_CRYPTOSESSION</td>
-<td>The value specifies that the certificate type is an encryption session.</td>
-</tr>
+            
+                <tr>
+                    <td>D3DDDI_CERTTYPE_AUTHENTICATED_CHANNEL</td>
+                    <td>The value specifies that the certificate type is an authenticated channel.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DDDI_CERTTYPE_CRYPTOSESSION</td>
+                    <td>The value specifies that the certificate type is an encryption session.</td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-The user-mode display driver receives a D3DDDI_CERTIFICATETYPE-typed value in the <b>CertificateType</b> member of the <a href="..\d3dumddi\ns-d3dumddi-_ddicertificateinfo.md">DDICERTIFICATEINFO</a> structure. The <b>pInfo</b> member of the <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_getcaps.md">D3DDDIARG_GETCAPS</a> structure points to DDICERTIFICATEINFO when the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getcaps.md">GetCaps</a> function is called with the D3DDDICAPS_GETCERTIFICATE value set in the <b>Type</b> member of D3DDDIARG_GETCAPS.
+        The user-mode display driver receives a D3DDDI_CERTIFICATETYPE-typed value in the <b>CertificateType</b> member of the <a href="..\d3dumddi\ns-d3dumddi-_ddicertificateinfo.md">DDICERTIFICATEINFO</a> structure. The <b>pInfo</b> member of the <a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_getcaps.md">D3DDDIARG_GETCAPS</a> structure points to DDICERTIFICATEINFO when the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getcaps.md">GetCaps</a> function is called with the D3DDDICAPS_GETCERTIFICATE value set in the <b>Type</b> member of D3DDDIARG_GETCAPS.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -74,9 +79,9 @@ The user-mode display driver receives a D3DDDI_CERTIFICATETYPE-typed value in th
 | **Windows version** | D3DDDI_CERTIFICATETYPE is supported beginning with the Windows 7 operating system. D3DDDI_CERTIFICATETYPE is supported beginning with the Windows 7 operating system. |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\d3dumddi\ns-d3dumddi-_ddicertificateinfo.md">DDICERTIFICATEINFO</a>
+        <a href="..\d3dumddi\ns-d3dumddi-_ddicertificateinfo.md">DDICERTIFICATEINFO</a>
 
 <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getcaps.md">GetCaps</a>
 

@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_UNLOCKCB
-title : PFND3DDDI_UNLOCKCB
-author : windows-driver-content
-description : The pfnUnlockCb function unlocks an allocation that was locked by a call to the pfnLockCb function.
-old-location : display\pfnunlockcb.htm
-old-project : display
-ms.assetid : 6684f350-da27-478d-ab7b-36e395f7df8d
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.pfnunlockcb, pfnUnlockCb callback function [Display Devices], pfnUnlockCb, PFND3DDDI_UNLOCKCB, PFND3DDDI_UNLOCKCB, d3dumddi/pfnUnlockCb, D3Druntime_Functions_8911e13b-cbfc-4620-bdb2-0dd6a558e88c.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_UNLOCKCB
+title: PFND3DDDI_UNLOCKCB
+author: windows-driver-content
+description: The pfnUnlockCb function unlocks an allocation that was locked by a call to the pfnLockCb function.
+old-location: display\pfnunlockcb.htm
+old-project: display
+ms.assetid: 6684f350-da27-478d-ab7b-36e395f7df8d
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.pfnunlockcb, pfnUnlockCb callback function [Display Devices], pfnUnlockCb, PFND3DDDI_UNLOCKCB, PFND3DDDI_UNLOCKCB, d3dumddi/pfnUnlockCb, D3Druntime_Functions_8911e13b-cbfc-4620-bdb2-0dd6a558e88c.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	pfnUnlockCb
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

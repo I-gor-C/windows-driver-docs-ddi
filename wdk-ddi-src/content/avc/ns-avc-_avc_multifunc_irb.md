@@ -1,41 +1,46 @@
 ---
-UID : NS:avc._AVC_MULTIFUNC_IRB
-title : "_AVC_MULTIFUNC_IRB"
-author : windows-driver-content
-description : The AVC_MULTIFUNC_IRB structure contains other AV/C related structures in a union.
-old-location : stream\avc_multifunc_irb.htm
-old-project : stream
-ms.assetid : cd8090b1-47d7-4d82-86b3-757b0642c5fe
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : PAVC_MULTIFUNC_IRB, AVC_MULTIFUNC_IRB, avcref_99cf5d79-48d7-4b86-80a7-9de22cc2f29e.xml, PAVC_MULTIFUNC_IRB structure pointer [Streaming Media Devices], avc/PAVC_MULTIFUNC_IRB, stream.avc_multifunc_irb, *PAVC_MULTIFUNC_IRB, AVC_MULTIFUNC_IRB structure [Streaming Media Devices], avc/AVC_MULTIFUNC_IRB, _AVC_MULTIFUNC_IRB
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : avc.h
-req.include-header : Avc.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PAVC_MULTIFUNC_IRB, AVC_MULTIFUNC_IRB"
+UID: NS:avc._AVC_MULTIFUNC_IRB
+title: "_AVC_MULTIFUNC_IRB"
+author: windows-driver-content
+description: The AVC_MULTIFUNC_IRB structure contains other AV/C related structures in a union.
+old-location: stream\avc_multifunc_irb.htm
+old-project: stream
+ms.assetid: cd8090b1-47d7-4d82-86b3-757b0642c5fe
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: PAVC_MULTIFUNC_IRB, AVC_MULTIFUNC_IRB, avcref_99cf5d79-48d7-4b86-80a7-9de22cc2f29e.xml, PAVC_MULTIFUNC_IRB structure pointer [Streaming Media Devices], avc/PAVC_MULTIFUNC_IRB, stream.avc_multifunc_irb, *PAVC_MULTIFUNC_IRB, AVC_MULTIFUNC_IRB structure [Streaming Media Devices], avc/AVC_MULTIFUNC_IRB, _AVC_MULTIFUNC_IRB
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: avc.h
+req.include-header: Avc.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	avc.h
+apiname:
+-	AVC_MULTIFUNC_IRB
+product: Windows
+targetos: Windows
+req.typenames: "*PAVC_MULTIFUNC_IRB, AVC_MULTIFUNC_IRB"
 ---
 
 # _AVC_MULTIFUNC_IRB structure

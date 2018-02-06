@@ -1,41 +1,46 @@
 ---
-UID : NC:dispmprt.DXGKDDI_SETTARGETADJUSTEDCOLORIMETRY
-title : DXGKDDI_SETTARGETADJUSTEDCOLORIMETRY
-author : windows-driver-content
-description : Reports the colorimetry values selected by the OS for a target.
-old-location : display\dxgkddi_settargetadjustedcolorimetry.htm
-old-project : display
-ms.assetid : C37E0DE1-E849-440F-A11A-BB0E3F50BDFA
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkddi_settargetadjustedcolorimetry, DXGKDDI_SETTARGETADJUSTEDCOLORIMETRY callback function [Display Devices], DXGKDDI_SETTARGETADJUSTEDCOLORIMETRY, dispmprt/DXGKDDI_SETTARGETADJUSTEDCOLORIMETRY
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : dispmprt.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
+UID: NC:dispmprt.DXGKDDI_SETTARGETADJUSTEDCOLORIMETRY
+title: DXGKDDI_SETTARGETADJUSTEDCOLORIMETRY
+author: windows-driver-content
+description: Reports the colorimetry values selected by the OS for a target.
+old-location: display\dxgkddi_settargetadjustedcolorimetry.htm
+old-project: display
+ms.assetid: C37E0DE1-E849-440F-A11A-BB0E3F50BDFA
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkddi_settargetadjustedcolorimetry, DXGKDDI_SETTARGETADJUSTEDCOLORIMETRY callback function [Display Devices], DXGKDDI_SETTARGETADJUSTEDCOLORIMETRY, dispmprt/DXGKDDI_SETTARGETADJUSTEDCOLORIMETRY
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: dispmprt.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	dispmprt.h
+apiname:
+-	DXGKDDI_SETTARGETADJUSTEDCOLORIMETRY
+product: Windows
+targetos: Windows
+req.typenames: SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ---
 
 

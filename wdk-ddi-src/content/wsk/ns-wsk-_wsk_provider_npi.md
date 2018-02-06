@@ -1,42 +1,47 @@
 ---
-UID : NS:wsk._WSK_PROVIDER_NPI
-title : "_WSK_PROVIDER_NPI"
-author : windows-driver-content
-description : The WSK_PROVIDER_NPI structure identifies a provider Network Programming Interface (NPI) implemented by the WSK subsystem.
-old-location : netvista\wsk_provider_npi.htm
-old-project : netvista
-ms.assetid : 471689f4-d1f6-4785-82df-313fe2ca627a
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : "*PWSK_PROVIDER_NPI, PWSK_PROVIDER_NPI structure pointer [Network Drivers Starting with Windows Vista], _WSK_PROVIDER_NPI, netvista.wsk_provider_npi, wsk/WSK_PROVIDER_NPI, PWSK_PROVIDER_NPI, WSK_PROVIDER_NPI structure [Network Drivers Starting with Windows Vista], wskref_cbed200a-9ed1-4cd6-b6be-220799cbae1c.xml, wsk/PWSK_PROVIDER_NPI, WSK_PROVIDER_NPI"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wsk.h
-req.include-header : Wsk.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating   systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWSK_PROVIDER_NPI, WSK_PROVIDER_NPI"
-req.product : Windows 10 or later.
+UID: NS:wsk._WSK_PROVIDER_NPI
+title: "_WSK_PROVIDER_NPI"
+author: windows-driver-content
+description: The WSK_PROVIDER_NPI structure identifies a provider Network Programming Interface (NPI) implemented by the WSK subsystem.
+old-location: netvista\wsk_provider_npi.htm
+old-project: netvista
+ms.assetid: 471689f4-d1f6-4785-82df-313fe2ca627a
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: "*PWSK_PROVIDER_NPI, PWSK_PROVIDER_NPI structure pointer [Network Drivers Starting with Windows Vista], _WSK_PROVIDER_NPI, netvista.wsk_provider_npi, wsk/WSK_PROVIDER_NPI, PWSK_PROVIDER_NPI, WSK_PROVIDER_NPI structure [Network Drivers Starting with Windows Vista], wskref_cbed200a-9ed1-4cd6-b6be-220799cbae1c.xml, wsk/PWSK_PROVIDER_NPI, WSK_PROVIDER_NPI"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wsk.h
+req.include-header: Wsk.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wsk.h
+apiname:
+-	WSK_PROVIDER_NPI
+product: Windows
+targetos: Windows
+req.typenames: "*PWSK_PROVIDER_NPI, WSK_PROVIDER_NPI"
+req.product: Windows 10 or later.
 ---
 
 # _WSK_PROVIDER_NPI structure

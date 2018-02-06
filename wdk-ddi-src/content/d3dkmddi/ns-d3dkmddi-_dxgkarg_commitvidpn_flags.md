@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGKARG_COMMITVIDPN_FLAGS
-title : "_DXGKARG_COMMITVIDPN_FLAGS"
-author : windows-driver-content
-description : The DXGKARG_COMMITVIDPN_FLAGS structure identifies details about a call to the DxgkDdiCommitVidPn function.
-old-location : display\dxgkarg_commitvidpn_flags.htm
-old-project : display
-ms.assetid : 02fe4216-101e-4ba7-88df-029f8bba9c17
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3dkmddi/DXGKARG_COMMITVIDPN_FLAGS, DXGKARG_COMMITVIDPN_FLAGS structure [Display Devices], _DXGKARG_COMMITVIDPN_FLAGS, DXGKARG_COMMITVIDPN_FLAGS, DmStructs_267e916a-7058-4ce7-892d-9ed9d6f74bce.xml, display.dxgkarg_commitvidpn_flags
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGKARG_COMMITVIDPN_FLAGS
+UID: NS:d3dkmddi._DXGKARG_COMMITVIDPN_FLAGS
+title: "_DXGKARG_COMMITVIDPN_FLAGS"
+author: windows-driver-content
+description: The DXGKARG_COMMITVIDPN_FLAGS structure identifies details about a call to the DxgkDdiCommitVidPn function.
+old-location: display\dxgkarg_commitvidpn_flags.htm
+old-project: display
+ms.assetid: 02fe4216-101e-4ba7-88df-029f8bba9c17
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3dkmddi/DXGKARG_COMMITVIDPN_FLAGS, DXGKARG_COMMITVIDPN_FLAGS structure [Display Devices], _DXGKARG_COMMITVIDPN_FLAGS, DXGKARG_COMMITVIDPN_FLAGS, DmStructs_267e916a-7058-4ce7-892d-9ed9d6f74bce.xml, display.dxgkarg_commitvidpn_flags
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DXGKARG_COMMITVIDPN_FLAGS
+product: Windows
+targetos: Windows
+req.typenames: DXGKARG_COMMITVIDPN_FLAGS
 ---
 
 # _DXGKARG_COMMITVIDPN_FLAGS structure

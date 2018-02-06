@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_DECODEENDFRAME
-title : PFND3DDDI_DECODEENDFRAME
-author : windows-driver-content
-description : The DecodeEndFrame function notifies the user-mode display driver that all of the data that was required to decode the current frame was submitted.
-old-location : display\decodeendframe.htm
-old-project : display
-ms.assetid : 6e8d3280-6ddc-4593-9208-c4f0c9ff254c
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.decodeendframe, DecodeEndFrame callback function [Display Devices], DecodeEndFrame, PFND3DDDI_DECODEENDFRAME, PFND3DDDI_DECODEENDFRAME, d3dumddi/DecodeEndFrame, UserModeDisplayDriver_Functions_c80e307b-2b64-4b43-84c3-cae711e8282f.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_DECODEENDFRAME
+title: PFND3DDDI_DECODEENDFRAME
+author: windows-driver-content
+description: The DecodeEndFrame function notifies the user-mode display driver that all of the data that was required to decode the current frame was submitted.
+old-location: display\decodeendframe.htm
+old-project: display
+ms.assetid: 6e8d3280-6ddc-4593-9208-c4f0c9ff254c
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.decodeendframe, DecodeEndFrame callback function [Display Devices], DecodeEndFrame, PFND3DDDI_DECODEENDFRAME, PFND3DDDI_DECODEENDFRAME, d3dumddi/DecodeEndFrame, UserModeDisplayDriver_Functions_c80e307b-2b64-4b43-84c3-cae711e8282f.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	DecodeEndFrame
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

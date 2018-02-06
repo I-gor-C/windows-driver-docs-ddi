@@ -1,42 +1,47 @@
 ---
-UID : NI:usbioctl.IOCTL_INTERNAL_USB_SUBMIT_URB
-title : IOCTL_INTERNAL_USB_SUBMIT_URB
-author : windows-driver-content
-description : The IOCTL_INTERNAL_USB_SUBMIT_URB I/O control request is used by drivers to submit an URB to the bus driver. IOCTL_INTERNAL_USB_SUBMIT_URB is a kernel-mode I/O control request. This request targets the USB hub PDO.
-old-location : buses\ioctl_internal_usb_submit_urb.htm
-old-project : usbref
-ms.assetid : ea4e1550-7972-4fc8-ac65-e6b4bba82f15
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : buses.ioctl_internal_usb_submit_urb, IOCTL_INTERNAL_USB_SUBMIT_URB control code [Buses], IOCTL_INTERNAL_USB_SUBMIT_URB, usbioctl/IOCTL_INTERNAL_USB_SUBMIT_URB, usbirp_2df110d3-a22d-4074-b14f-125afd943afa.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : usbioctl.h
-req.include-header : Usbioctl.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : USB_HUB_TYPE
-req.product : Windows 10 or later.
+UID: NI:usbioctl.IOCTL_INTERNAL_USB_SUBMIT_URB
+title: IOCTL_INTERNAL_USB_SUBMIT_URB
+author: windows-driver-content
+description: The IOCTL_INTERNAL_USB_SUBMIT_URB I/O control request is used by drivers to submit an URB to the bus driver. IOCTL_INTERNAL_USB_SUBMIT_URB is a kernel-mode I/O control request. This request targets the USB hub PDO.
+old-location: buses\ioctl_internal_usb_submit_urb.htm
+old-project: usbref
+ms.assetid: ea4e1550-7972-4fc8-ac65-e6b4bba82f15
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: buses.ioctl_internal_usb_submit_urb, IOCTL_INTERNAL_USB_SUBMIT_URB control code [Buses], IOCTL_INTERNAL_USB_SUBMIT_URB, usbioctl/IOCTL_INTERNAL_USB_SUBMIT_URB, usbirp_2df110d3-a22d-4074-b14f-125afd943afa.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: usbioctl.h
+req.include-header: Usbioctl.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Usbioctl.h
+apiname:
+-	IOCTL_INTERNAL_USB_SUBMIT_URB
+product: Windows
+targetos: Windows
+req.typenames: USB_HUB_TYPE
+req.product: Windows 10 or later.
 ---
 
 # IOCTL_INTERNAL_USB_SUBMIT_URB IOCTL

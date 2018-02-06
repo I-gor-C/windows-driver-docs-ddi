@@ -1,42 +1,47 @@
 ---
-UID : NF:sensorscx.SensorsCxSensorCreate
-title : SensorsCxSensorCreate function
-author : windows-driver-content
-description : This function creates an instance of a sensor in the class extension.
-old-location : sensors\sensorscxsensorcreate.htm
-old-project : sensors
-ms.assetid : A365381B-3456-47B6-93C7-81C8963CB183
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : sensorscx/SensorsCxSensorCreate, SensorsCxSensorCreate, SensorsCxSensorCreate function [Sensor Devices], sensors.sensorscxsensorcreate
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : sensorscx.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SensorConnectionType
-req.product : Windows 10 or later.
+UID: NF:sensorscx.SensorsCxSensorCreate
+title: SensorsCxSensorCreate function
+author: windows-driver-content
+description: This function creates an instance of a sensor in the class extension.
+old-location: sensors\sensorscxsensorcreate.htm
+old-project: sensors
+ms.assetid: A365381B-3456-47B6-93C7-81C8963CB183
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: sensorscx/SensorsCxSensorCreate, SensorsCxSensorCreate, SensorsCxSensorCreate function [Sensor Devices], sensors.sensorscxsensorcreate
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: sensorscx.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	SensorsCx.h
+apiname:
+-	SensorsCxSensorCreate
+product: Windows
+targetos: Windows
+req.typenames: SensorConnectionType
+req.product: Windows 10 or later.
 ---
 
 

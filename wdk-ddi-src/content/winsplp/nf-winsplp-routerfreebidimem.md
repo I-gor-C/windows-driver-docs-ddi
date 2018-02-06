@@ -1,42 +1,47 @@
 ---
-UID : NF:winsplp.RouterFreeBidiMem
-title : RouterFreeBidiMem function
-author : windows-driver-content
-description : RouterFreeBidiMem frees a block of memory that was previously allocated by RouterAllocBidiMem.
-old-location : print\routerfreebidimem.htm
-old-project : print
-ms.assetid : 946b1630-844a-43ac-8c26-fdfa2ee7866a
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : winsplp/RouterFreeBidiMem, RouterFreeBidiMem, spoolfnc_cc4cfcb8-c020-4112-9774-a2961e8a4ba2.xml, RouterFreeBidiMem function [Print Devices], print.routerfreebidimem
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : winsplp.h
-req.include-header : Winsplp.h
-req.target-type : Desktop
-req.target-min-winverclnt : This function is available in Windows XP and later operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Spoolss.lib
-req.dll : Spoolss.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NOTIFICATION_CONFIG_FLAGS
-req.product : Windows 10 or later.
+UID: NF:winsplp.RouterFreeBidiMem
+title: RouterFreeBidiMem function
+author: windows-driver-content
+description: RouterFreeBidiMem frees a block of memory that was previously allocated by RouterAllocBidiMem.
+old-location: print\routerfreebidimem.htm
+old-project: print
+ms.assetid: 946b1630-844a-43ac-8c26-fdfa2ee7866a
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: winsplp/RouterFreeBidiMem, RouterFreeBidiMem, spoolfnc_cc4cfcb8-c020-4112-9774-a2961e8a4ba2.xml, RouterFreeBidiMem function [Print Devices], print.routerfreebidimem
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: winsplp.h
+req.include-header: Winsplp.h
+req.target-type: Desktop
+req.target-min-winverclnt: This function is available in Windows XP and later operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Spoolss.lib
+req.dll: Spoolss.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Spoolss.dll
+apiname:
+-	RouterFreeBidiMem
+product: Windows
+targetos: Windows
+req.typenames: NOTIFICATION_CONFIG_FLAGS
+req.product: Windows 10 or later.
 ---
 
 

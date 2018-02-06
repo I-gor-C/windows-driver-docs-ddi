@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.PsReferencePrimaryToken
-title : PsReferencePrimaryToken function
-author : windows-driver-content
-description : The PsReferencePrimaryToken routine increments the reference count of the primary token for the specified process.
-old-location : ifsk\psreferenceprimarytoken.htm
-old-project : ifsk
-ms.assetid : 8ff1add9-4b9e-42dd-b3e2-53d891788d43
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ntifs/PsReferencePrimaryToken, PsReferencePrimaryToken routine [Installable File System Drivers], PsReferencePrimaryToken, psref_021aea60-1707-4817-9169-95a3dc79adb6.xml, ifsk.psreferenceprimarytoken
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : FltKernel.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.PsReferencePrimaryToken
+title: PsReferencePrimaryToken function
+author: windows-driver-content
+description: The PsReferencePrimaryToken routine increments the reference count of the primary token for the specified process.
+old-location: ifsk\psreferenceprimarytoken.htm
+old-project: ifsk
+ms.assetid: 8ff1add9-4b9e-42dd-b3e2-53d891788d43
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ntifs/PsReferencePrimaryToken, PsReferencePrimaryToken routine [Installable File System Drivers], PsReferencePrimaryToken, psref_021aea60-1707-4817-9169-95a3dc79adb6.xml, ifsk.psreferenceprimarytoken
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: FltKernel.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	PsReferencePrimaryToken
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

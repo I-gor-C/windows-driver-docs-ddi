@@ -1,41 +1,46 @@
 ---
-UID : NS:hidsdi._HIDD_ATTRIBUTES
-title : "_HIDD_ATTRIBUTES"
-author : windows-driver-content
-description : The HIDD_ATTRIBUTES structure contains vendor information about a HIDClass device.
-old-location : hid\hidd_attributes.htm
-old-project : hid
-ms.assetid : 31bfa863-459f-4fb2-af41-2d40d0396dd7
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : hidstrct_450ed87e-655a-414d-b24a-8b1aec7564b8.xml, hidsdi/HIDD_ATTRIBUTES, hid.hidd_attributes, HIDD_ATTRIBUTES, _HIDD_ATTRIBUTES, PHIDD_ATTRIBUTES, hidsdi/PHIDD_ATTRIBUTES, HIDD_ATTRIBUTES structure [Human Input Devices], *PHIDD_ATTRIBUTES, PHIDD_ATTRIBUTES structure pointer [Human Input Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : hidsdi.h
-req.include-header : Hidsdi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HIDD_ATTRIBUTES, *PHIDD_ATTRIBUTES
+UID: NS:hidsdi._HIDD_ATTRIBUTES
+title: "_HIDD_ATTRIBUTES"
+author: windows-driver-content
+description: The HIDD_ATTRIBUTES structure contains vendor information about a HIDClass device.
+old-location: hid\hidd_attributes.htm
+old-project: hid
+ms.assetid: 31bfa863-459f-4fb2-af41-2d40d0396dd7
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: hidstrct_450ed87e-655a-414d-b24a-8b1aec7564b8.xml, hidsdi/HIDD_ATTRIBUTES, hid.hidd_attributes, HIDD_ATTRIBUTES, _HIDD_ATTRIBUTES, PHIDD_ATTRIBUTES, hidsdi/PHIDD_ATTRIBUTES, HIDD_ATTRIBUTES structure [Human Input Devices], *PHIDD_ATTRIBUTES, PHIDD_ATTRIBUTES structure pointer [Human Input Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: hidsdi.h
+req.include-header: Hidsdi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hidsdi.h
+apiname:
+-	HIDD_ATTRIBUTES
+product: Windows
+targetos: Windows
+req.typenames: HIDD_ATTRIBUTES, *PHIDD_ATTRIBUTES
 ---
 
 # _HIDD_ATTRIBUTES structure

@@ -1,41 +1,46 @@
 ---
-UID : NC:ndis.MINIPORT_ADD_DEVICE
-title : MINIPORT_ADD_DEVICE
-author : windows-driver-content
-description : The MiniportAddDevice function enables a miniport driver to establish a context area for an added device.
-old-location : netvista\miniportadddevice.htm
-old-project : netvista
-ms.assetid : 50e04b5a-e430-484c-aabb-cc7b9ecb53b0
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.miniportadddevice, MiniportAddDevice callback function [Network Drivers Starting with Windows Vista], MiniportAddDevice, MINIPORT_ADD_DEVICE, MINIPORT_ADD_DEVICE, ndis/MiniportAddDevice, ndis_msix_ref_60df66e2-2e17-4bd1-8793-8310326d883d.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
+UID: NC:ndis.MINIPORT_ADD_DEVICE
+title: MINIPORT_ADD_DEVICE
+author: windows-driver-content
+description: The MiniportAddDevice function enables a miniport driver to establish a context area for an added device.
+old-location: netvista\miniportadddevice.htm
+old-project: netvista
+ms.assetid: 50e04b5a-e430-484c-aabb-cc7b9ecb53b0
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.miniportadddevice, MiniportAddDevice callback function [Network Drivers Starting with Windows Vista], MiniportAddDevice, MINIPORT_ADD_DEVICE, MINIPORT_ADD_DEVICE, ndis/MiniportAddDevice, ndis_msix_ref_60df66e2-2e17-4bd1-8793-8310326d883d.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ndis.h
+apiname:
+-	MiniportAddDevice
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.CmCallbackReleaseKeyObjectIDEx
-title : CmCallbackReleaseKeyObjectIDEx function
-author : windows-driver-content
-description : The CmCallbackReleaseKeyObjectIDEx routine frees an object name string obtained from the CmCallbackGetKeyObjectIDEx routine.
-old-location : kernel\cmcallbackreleasekeyobjectidex.htm
-old-project : kernel
-ms.assetid : 3361DAEF-AC2A-401B-80E8-0220F191587C
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : CmCallbackReleaseKeyObjectIDEx routine [Kernel-Mode Driver Architecture], wdm/CmCallbackReleaseKeyObjectIDEx, CmCallbackReleaseKeyObjectIDEx, kernel.cmcallbackreleasekeyobjectidex
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.CmCallbackReleaseKeyObjectIDEx
+title: CmCallbackReleaseKeyObjectIDEx function
+author: windows-driver-content
+description: The CmCallbackReleaseKeyObjectIDEx routine frees an object name string obtained from the CmCallbackGetKeyObjectIDEx routine.
+old-location: kernel\cmcallbackreleasekeyobjectidex.htm
+old-project: kernel
+ms.assetid: 3361DAEF-AC2A-401B-80E8-0220F191587C
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: CmCallbackReleaseKeyObjectIDEx routine [Kernel-Mode Driver Architecture], wdm/CmCallbackReleaseKeyObjectIDEx, CmCallbackReleaseKeyObjectIDEx, kernel.cmcallbackreleasekeyobjectidex
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	CmCallbackReleaseKeyObjectIDEx
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

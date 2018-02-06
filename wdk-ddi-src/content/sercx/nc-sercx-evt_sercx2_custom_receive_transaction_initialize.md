@@ -1,42 +1,47 @@
 ---
-UID : NC:sercx.EVT_SERCX2_CUSTOM_RECEIVE_TRANSACTION_INITIALIZE
-title : EVT_SERCX2_CUSTOM_RECEIVE_TRANSACTION_INITIALIZE
-author : windows-driver-content
-description : The EvtSerCx2CustomReceiveTransactionInitialize event callback function is called by version 2 of the serial framework extension (SerCx2) to prepare the serial controller hardware to perform a new custom-receive transaction.
-old-location : serports\evtsercx2customreceivetransactioninitialize.htm
-old-project : serports
-ms.assetid : B3C23236-2A35-456A-B461-AEC688ACA5B7
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : serports.evtsercx2customreceivetransactioninitialize, EvtSerCx2CustomReceiveTransactionInitialize callback function [Serial Ports], EvtSerCx2CustomReceiveTransactionInitialize, EVT_SERCX2_CUSTOM_RECEIVE_TRANSACTION_INITIALIZE, EVT_SERCX2_CUSTOM_RECEIVE_TRANSACTION_INITIALIZE, 2/EvtSerCx2CustomReceiveTransactionInitialize
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : sercx.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Available starting with Windows 8.1.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Called at IRQL <= DISPATCH_LEVEL.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SENSOR_VALUE_PAIR, *PSENSOR_VALUE_PAIR
-req.product : Windows 10 or later.
+UID: NC:sercx.EVT_SERCX2_CUSTOM_RECEIVE_TRANSACTION_INITIALIZE
+title: EVT_SERCX2_CUSTOM_RECEIVE_TRANSACTION_INITIALIZE
+author: windows-driver-content
+description: The EvtSerCx2CustomReceiveTransactionInitialize event callback function is called by version 2 of the serial framework extension (SerCx2) to prepare the serial controller hardware to perform a new custom-receive transaction.
+old-location: serports\evtsercx2customreceivetransactioninitialize.htm
+old-project: serports
+ms.assetid: B3C23236-2A35-456A-B461-AEC688ACA5B7
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: serports.evtsercx2customreceivetransactioninitialize, EvtSerCx2CustomReceiveTransactionInitialize callback function [Serial Ports], EvtSerCx2CustomReceiveTransactionInitialize, EVT_SERCX2_CUSTOM_RECEIVE_TRANSACTION_INITIALIZE, EVT_SERCX2_CUSTOM_RECEIVE_TRANSACTION_INITIALIZE, 2/EvtSerCx2CustomReceiveTransactionInitialize
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: sercx.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Available starting with Windows 8.1.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Called at IRQL <= DISPATCH_LEVEL.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	2.0\Sercx.h
+apiname:
+-	EvtSerCx2CustomReceiveTransactionInitialize
+product: Windows
+targetos: Windows
+req.typenames: SENSOR_VALUE_PAIR, *PSENSOR_VALUE_PAIR
+req.product: Windows 10 or later.
 ---
 
 

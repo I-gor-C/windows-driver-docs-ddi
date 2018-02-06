@@ -1,42 +1,47 @@
 ---
-UID : NC:sercx.EVT_SERCX2_SYSTEM_DMA_RECEIVE_ENABLE_NEW_DATA_NOTIFICATION
-title : EVT_SERCX2_SYSTEM_DMA_RECEIVE_ENABLE_NEW_DATA_NOTIFICATION
-author : windows-driver-content
-description : The EvtSerCx2SystemDmaReceiveEnableNewDataNotification event callback function is called by version 2 of the serial framework extension (SerCx2) to enable the serial controller driver to notify SerCx2 when the serial controller receives new data.
-old-location : serports\evtsercx2systemdmareceiveenablenewdatanotification.htm
-old-project : serports
-ms.assetid : E2B7FE14-1D06-48E7-95FB-C103358340EA
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : serports.evtsercx2systemdmareceiveenablenewdatanotification, EvtSerCx2SystemDmaReceiveEnableNewDataNotification callback function [Serial Ports], EvtSerCx2SystemDmaReceiveEnableNewDataNotification, EVT_SERCX2_SYSTEM_DMA_RECEIVE_ENABLE_NEW_DATA_NOTIFICATION, EVT_SERCX2_SYSTEM_DMA_RECEIVE_ENABLE_NEW_DATA_NOTIFICATION, 2/EvtSerCx2SystemDmaReceiveEnableNewDataNotification
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : sercx.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Available starting with Windows 8.1.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Called at IRQL <= DISPATCH_LEVEL.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SENSOR_VALUE_PAIR, *PSENSOR_VALUE_PAIR
-req.product : Windows 10 or later.
+UID: NC:sercx.EVT_SERCX2_SYSTEM_DMA_RECEIVE_ENABLE_NEW_DATA_NOTIFICATION
+title: EVT_SERCX2_SYSTEM_DMA_RECEIVE_ENABLE_NEW_DATA_NOTIFICATION
+author: windows-driver-content
+description: The EvtSerCx2SystemDmaReceiveEnableNewDataNotification event callback function is called by version 2 of the serial framework extension (SerCx2) to enable the serial controller driver to notify SerCx2 when the serial controller receives new data.
+old-location: serports\evtsercx2systemdmareceiveenablenewdatanotification.htm
+old-project: serports
+ms.assetid: E2B7FE14-1D06-48E7-95FB-C103358340EA
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: serports.evtsercx2systemdmareceiveenablenewdatanotification, EvtSerCx2SystemDmaReceiveEnableNewDataNotification callback function [Serial Ports], EvtSerCx2SystemDmaReceiveEnableNewDataNotification, EVT_SERCX2_SYSTEM_DMA_RECEIVE_ENABLE_NEW_DATA_NOTIFICATION, EVT_SERCX2_SYSTEM_DMA_RECEIVE_ENABLE_NEW_DATA_NOTIFICATION, 2/EvtSerCx2SystemDmaReceiveEnableNewDataNotification
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: sercx.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Available starting with Windows 8.1.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Called at IRQL <= DISPATCH_LEVEL.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	2.0\Sercx.h
+apiname:
+-	EvtSerCx2SystemDmaReceiveEnableNewDataNotification
+product: Windows
+targetos: Windows
+req.typenames: SENSOR_VALUE_PAIR, *PSENSOR_VALUE_PAIR
+req.product: Windows 10 or later.
 ---
 
 

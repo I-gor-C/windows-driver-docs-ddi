@@ -1,42 +1,48 @@
 ---
-UID : NF:wdm.RtlStringFromGUID
-title : RtlStringFromGUID function
-author : windows-driver-content
-description : The RtlStringFromGUID routine converts a given GUID from binary format into a Unicode string.
-old-location : kernel\rtlstringfromguid.htm
-old-project : kernel
-ms.assetid : 89a3ca92-7c8a-40e3-a818-0127af6f2e91
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/RtlStringFromGUID, RtlStringFromGUID, k109_8a3ac592-7ade-48fc-9536-d8a6c84fb033.xml, kernel.rtlstringfromguid, RtlStringFromGUID routine [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe (kernel mode); Ntdll.dll (user mode)
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.RtlStringFromGUID
+title: RtlStringFromGUID function
+author: windows-driver-content
+description: The RtlStringFromGUID routine converts a given GUID from binary format into a Unicode string.
+old-location: kernel\rtlstringfromguid.htm
+old-project: kernel
+ms.assetid: 89a3ca92-7c8a-40e3-a818-0127af6f2e91
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/RtlStringFromGUID, RtlStringFromGUID, k109_8a3ac592-7ade-48fc-9536-d8a6c84fb033.xml, kernel.rtlstringfromguid, RtlStringFromGUID routine [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe (kernel mode); Ntdll.dll (user mode)
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+-	Ntdll.dll
+apiname:
+-	RtlStringFromGUID
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

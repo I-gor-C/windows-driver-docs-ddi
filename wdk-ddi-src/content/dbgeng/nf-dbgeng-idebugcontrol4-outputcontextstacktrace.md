@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugControl4.OutputContextStackTrace
-title : IDebugControl4::OutputContextStackTrace method
-author : windows-driver-content
-description : The OutputContextStackTrace method prints the call stack specified by an array of stack frames and corresponding register contexts.
-old-location : debugger\outputcontextstacktrace.htm
-old-project : debugger
-ms.assetid : da3d19ab-258d-4214-8674-b35fec06534b
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugControl4::OutputContextStackTrace, debugger.outputcontextstacktrace, dbgeng/IDebugControl4::OutputContextStackTrace, IDebugControl_6d7b3f4e-9b64-41f5-8d26-ba745fae5d43.xml, IDebugControl4 interface [Windows Debugging], OutputContextStackTrace method, OutputContextStackTrace method [Windows Debugging], IDebugControl4 interface, OutputContextStackTrace method [Windows Debugging], IDebugControl4, OutputContextStackTrace
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h, Ntddk.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl4.OutputContextStackTrace
+title: IDebugControl4::OutputContextStackTrace method
+author: windows-driver-content
+description: The OutputContextStackTrace method prints the call stack specified by an array of stack frames and corresponding register contexts.
+old-location: debugger\outputcontextstacktrace.htm
+old-project: debugger
+ms.assetid: da3d19ab-258d-4214-8674-b35fec06534b
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugControl4::OutputContextStackTrace, debugger.outputcontextstacktrace, dbgeng/IDebugControl4::OutputContextStackTrace, IDebugControl_6d7b3f4e-9b64-41f5-8d26-ba745fae5d43.xml, IDebugControl4 interface [Windows Debugging], OutputContextStackTrace method, OutputContextStackTrace method [Windows Debugging], IDebugControl4 interface, OutputContextStackTrace method [Windows Debugging], IDebugControl4, OutputContextStackTrace
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h, Ntddk.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl4.OutputContextStackTrace
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

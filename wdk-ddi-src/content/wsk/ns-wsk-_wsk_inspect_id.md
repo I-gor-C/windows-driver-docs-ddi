@@ -1,42 +1,47 @@
 ---
-UID : NS:wsk._WSK_INSPECT_ID
-title : "_WSK_INSPECT_ID"
-author : windows-driver-content
-description : The WSK_INSPECT_ID structure specifies an identifier for an incoming connection request on a listening socket.
-old-location : netvista\wsk_inspect_id.htm
-old-project : netvista
-ms.assetid : 54578dc5-a88f-4649-adbd-6a5e1e31e7b3
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : "*PWSK_INSPECT_ID, netvista.wsk_inspect_id, PWSK_INSPECT_ID structure pointer [Network Drivers Starting with Windows Vista], WSK_INSPECT_ID structure [Network Drivers Starting with Windows Vista], PWSK_INSPECT_ID, wsk/WSK_INSPECT_ID, _WSK_INSPECT_ID, wsk/PWSK_INSPECT_ID, WSK_INSPECT_ID, wskref_7e500c2a-23ce-4193-b8a5-fbf416a9659d.xml"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wsk.h
-req.include-header : Wsk.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating   systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WSK_INSPECT_ID, *PWSK_INSPECT_ID
-req.product : Windows 10 or later.
+UID: NS:wsk._WSK_INSPECT_ID
+title: "_WSK_INSPECT_ID"
+author: windows-driver-content
+description: The WSK_INSPECT_ID structure specifies an identifier for an incoming connection request on a listening socket.
+old-location: netvista\wsk_inspect_id.htm
+old-project: netvista
+ms.assetid: 54578dc5-a88f-4649-adbd-6a5e1e31e7b3
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: "*PWSK_INSPECT_ID, netvista.wsk_inspect_id, PWSK_INSPECT_ID structure pointer [Network Drivers Starting with Windows Vista], WSK_INSPECT_ID structure [Network Drivers Starting with Windows Vista], PWSK_INSPECT_ID, wsk/WSK_INSPECT_ID, _WSK_INSPECT_ID, wsk/PWSK_INSPECT_ID, WSK_INSPECT_ID, wskref_7e500c2a-23ce-4193-b8a5-fbf416a9659d.xml"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wsk.h
+req.include-header: Wsk.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wsk.h
+apiname:
+-	WSK_INSPECT_ID
+product: Windows
+targetos: Windows
+req.typenames: WSK_INSPECT_ID, *PWSK_INSPECT_ID
+req.product: Windows 10 or later.
 ---
 
 # _WSK_INSPECT_ID structure

@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.InterlockedAnd
-title : InterlockedAnd function
-author : windows-driver-content
-description : The InterlockedAnd macro atomically computes a bitwise AND operation.
-old-location : kernel\interlockedand.htm
-old-project : kernel
-ms.assetid : 3b1ff981-7f87-4a47-81a3-3e323459c333
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : InterlockedAnd, wdm/InterlockedAnd, k102_839df216-b391-436b-9e33-d60dfbb5dbe9.xml, InterlockedAnd function [Kernel-Mode Driver Architecture], kernel.interlockedand
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.InterlockedAnd
+title: InterlockedAnd function
+author: windows-driver-content
+description: The InterlockedAnd macro atomically computes a bitwise AND operation.
+old-location: kernel\interlockedand.htm
+old-project: kernel
+ms.assetid: 3b1ff981-7f87-4a47-81a3-3e323459c333
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: InterlockedAnd, wdm/InterlockedAnd, k102_839df216-b391-436b-9e33-d60dfbb5dbe9.xml, InterlockedAnd function [Kernel-Mode Driver Architecture], kernel.interlockedand
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdm.h
+apiname:
+-	InterlockedAnd
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

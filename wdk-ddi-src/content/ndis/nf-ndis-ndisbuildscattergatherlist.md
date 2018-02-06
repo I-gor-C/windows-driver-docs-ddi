@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisBuildScatterGatherList
-title : NdisBuildScatterGatherList function
-author : windows-driver-content
-description : The NdisBuildScatterGatherList function builds a scatter/gather list by using the specified parameters.
-old-location : netvista\ndisbuildscattergatherlist.htm
-old-project : netvista
-ms.assetid : 439d68ec-9d27-484b-b6a3-9bae732d142e
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NdisBuildScatterGatherList, NdisBuildScatterGatherList function [Network Drivers Starting with Windows Vista], ndis_shared_memory_ref_a0497f0f-75af-4813-81c9-544c02a7b372.xml, ndis/NdisBuildScatterGatherList, netvista.ndisbuildscattergatherlist
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported in NDIS 6.20 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : "= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisBuildScatterGatherList
+title: NdisBuildScatterGatherList function
+author: windows-driver-content
+description: The NdisBuildScatterGatherList function builds a scatter/gather list by using the specified parameters.
+old-location: netvista\ndisbuildscattergatherlist.htm
+old-project: netvista
+ms.assetid: 439d68ec-9d27-484b-b6a3-9bae732d142e
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NdisBuildScatterGatherList, NdisBuildScatterGatherList function [Network Drivers Starting with Windows Vista], ndis_shared_memory_ref_a0497f0f-75af-4813-81c9-544c02a7b372.xml, ndis/NdisBuildScatterGatherList, netvista.ndisbuildscattergatherlist
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported in NDIS 6.20 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: "= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisBuildScatterGatherList
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

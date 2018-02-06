@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dkmddi.DXGKDDI_VIDPNTOPOLOGY_UPDATEPATHSUPPORTINFO
-title : DXGKDDI_VIDPNTOPOLOGY_UPDATEPATHSUPPORTINFO
-author : windows-driver-content
-description : The pfnUpdatePathSupportInfo function updates the transformation and copy protection support of a particular path in a specified VidPN topology.
-old-location : display\dxgk_vidpntopology_interface_pfnupdatepathsupportinfo.htm
-old-project : display
-ms.assetid : affe9ab2-49ef-4284-b441-49c311158827
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgk_vidpntopology_interface_pfnupdatepathsupportinfo, pfnUpdatePathSupportInfo callback function [Display Devices], pfnUpdatePathSupportInfo, DXGKDDI_VIDPNTOPOLOGY_UPDATEPATHSUPPORTINFO, DXGKDDI_VIDPNTOPOLOGY_UPDATEPATHSUPPORTINFO, d3dkmddi/pfnUpdatePathSupportInfo, VidPnFunctions_6944a007-1a0a-41fc-b137-92307c532cca.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
+UID: NC:d3dkmddi.DXGKDDI_VIDPNTOPOLOGY_UPDATEPATHSUPPORTINFO
+title: DXGKDDI_VIDPNTOPOLOGY_UPDATEPATHSUPPORTINFO
+author: windows-driver-content
+description: The pfnUpdatePathSupportInfo function updates the transformation and copy protection support of a particular path in a specified VidPN topology.
+old-location: display\dxgk_vidpntopology_interface_pfnupdatepathsupportinfo.htm
+old-project: display
+ms.assetid: affe9ab2-49ef-4284-b441-49c311158827
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgk_vidpntopology_interface_pfnupdatepathsupportinfo, pfnUpdatePathSupportInfo callback function [Display Devices], pfnUpdatePathSupportInfo, DXGKDDI_VIDPNTOPOLOGY_UPDATEPATHSUPPORTINFO, DXGKDDI_VIDPNTOPOLOGY_UPDATEPATHSUPPORTINFO, d3dkmddi/pfnUpdatePathSupportInfo, VidPnFunctions_6944a007-1a0a-41fc-b137-92307c532cca.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	pfnUpdatePathSupportInfo
+product: Windows
+targetos: Windows
+req.typenames: DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
 

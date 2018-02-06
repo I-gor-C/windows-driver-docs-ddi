@@ -1,41 +1,46 @@
 ---
-UID : NS:nfccx._NFCCX_DRIVER_GLOBALS
-title : "_NFCCX_DRIVER_GLOBALS"
-author : windows-driver-content
-description : "."
-old-location : nfpdrivers\nfccx_driver_globals.htm
-old-project : nfpdrivers
-ms.assetid : 3B84B227-7155-4FA2-A224-1317D103F5C3
-ms.author : windowsdriverdev
-ms.date : 12/18/2017
-ms.keywords : "_NFCCX_DRIVER_GLOBALS, nfccx/PNFCCX_DRIVER_GLOBALS, nfpdrivers.nfccx_driver_globals, PNFCCX_DRIVER_GLOBALS, NFCCX_DRIVER_GLOBALS structure [Near-Field Proximity Drivers], NFCCX_DRIVER_GLOBALS, *PNFCCX_DRIVER_GLOBALS, nfccx/NFCCX_DRIVER_GLOBALS, PNFCCX_DRIVER_GLOBALS structure pointer [Near-Field Proximity Drivers]"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : nfccx.h
-req.include-header : Ncidef.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : None supported
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NFCCX_DRIVER_GLOBALS, *PNFCCX_DRIVER_GLOBALS
+UID: NS:nfccx._NFCCX_DRIVER_GLOBALS
+title: "_NFCCX_DRIVER_GLOBALS"
+author: windows-driver-content
+description: "."
+old-location: nfpdrivers\nfccx_driver_globals.htm
+old-project: nfpdrivers
+ms.assetid: 3B84B227-7155-4FA2-A224-1317D103F5C3
+ms.author: windowsdriverdev
+ms.date: 12/18/2017
+ms.keywords: "_NFCCX_DRIVER_GLOBALS, nfccx/PNFCCX_DRIVER_GLOBALS, nfpdrivers.nfccx_driver_globals, PNFCCX_DRIVER_GLOBALS, NFCCX_DRIVER_GLOBALS structure [Near-Field Proximity Drivers], NFCCX_DRIVER_GLOBALS, *PNFCCX_DRIVER_GLOBALS, nfccx/NFCCX_DRIVER_GLOBALS, PNFCCX_DRIVER_GLOBALS structure pointer [Near-Field Proximity Drivers]"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: nfccx.h
+req.include-header: Ncidef.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: None supported
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	nfccx.h
+apiname:
+-	NFCCX_DRIVER_GLOBALS
+product: Windows
+targetos: Windows
+req.typenames: NFCCX_DRIVER_GLOBALS, *PNFCCX_DRIVER_GLOBALS
 ---
 
 # _NFCCX_DRIVER_GLOBALS structure

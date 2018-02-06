@@ -1,42 +1,47 @@
 ---
-UID : NS:rilapitypes.RILSUBSCRIBERINFO
-title : RILSUBSCRIBERINFO
-author : windows-driver-content
-description : This structure represents RILSUBSCRIBERINFO.
-old-location : netvista\rilsubscriberinfo.htm
-old-project : netvista
-ms.assetid : b05a38c6-afc5-4dc1-8e51-ecf9d47e144e
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : rilapitypes/RILSUBSCRIBERINFO, RILSUBSCRIBERINFO, netvista.rilsubscriberinfo, *LPRILSUBSCRIBERINFO, RILSUBSCRIBERINFO structure [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : rilapitypes.h
-req.include-header : Rilapitypes.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RILSUBSCRIBERINFO, *LPRILSUBSCRIBERINFO
-req.product : Windows 10 or later.
+UID: NS:rilapitypes.RILSUBSCRIBERINFO
+title: RILSUBSCRIBERINFO
+author: windows-driver-content
+description: This structure represents RILSUBSCRIBERINFO.
+old-location: netvista\rilsubscriberinfo.htm
+old-project: netvista
+ms.assetid: b05a38c6-afc5-4dc1-8e51-ecf9d47e144e
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: rilapitypes/RILSUBSCRIBERINFO, RILSUBSCRIBERINFO, netvista.rilsubscriberinfo, *LPRILSUBSCRIBERINFO, RILSUBSCRIBERINFO structure [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: rilapitypes.h
+req.include-header: Rilapitypes.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	rilapitypes.h
+apiname:
+-	RILSUBSCRIBERINFO
+product: Windows
+targetos: Windows
+req.typenames: RILSUBSCRIBERINFO, *LPRILSUBSCRIBERINFO
+req.product: Windows 10 or later.
 ---
 
 # RILSUBSCRIBERINFO structure

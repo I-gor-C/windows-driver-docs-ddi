@@ -1,42 +1,47 @@
 ---
-UID : NS:wwan._WWAN_USSD_EVENT
-title : "_WWAN_USSD_EVENT"
-author : windows-driver-content
-description : The WWAN_USSD_REQUEST structure describes an Unstructured Supplementary Service Data (USSD) event.
-old-location : netvista\wwan_ussd_event.htm
-old-project : netvista
-ms.assetid : 5E90FB65-AF23-47C0-B0E9-2B6EF353D095
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : WWAN_USSD_EVENT, netvista.wwan_ussd_event, wwan/PWWAN_USSD_EVENT, *PWWAN_USSD_EVENT, WWAN_USSD_EVENT structure [Network Drivers Starting with Windows Vista], wwan/WWAN_USSD_EVENT, PWWAN_USSD_EVENT structure pointer [Network Drivers Starting with Windows Vista], _WWAN_USSD_EVENT, PWWAN_USSD_EVENT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wwan.h
-req.include-header : Wwan.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with  Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWWAN_USSD_EVENT, WWAN_USSD_EVENT"
-req.product : Windows 10 or later.
+UID: NS:wwan._WWAN_USSD_EVENT
+title: "_WWAN_USSD_EVENT"
+author: windows-driver-content
+description: The WWAN_USSD_REQUEST structure describes an Unstructured Supplementary Service Data (USSD) event.
+old-location: netvista\wwan_ussd_event.htm
+old-project: netvista
+ms.assetid: 5E90FB65-AF23-47C0-B0E9-2B6EF353D095
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: WWAN_USSD_EVENT, netvista.wwan_ussd_event, wwan/PWWAN_USSD_EVENT, *PWWAN_USSD_EVENT, WWAN_USSD_EVENT structure [Network Drivers Starting with Windows Vista], wwan/WWAN_USSD_EVENT, PWWAN_USSD_EVENT structure pointer [Network Drivers Starting with Windows Vista], _WWAN_USSD_EVENT, PWWAN_USSD_EVENT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wwan.h
+req.include-header: Wwan.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with  Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wwan.h
+apiname:
+-	WWAN_USSD_EVENT
+product: Windows
+targetos: Windows
+req.typenames: "*PWWAN_USSD_EVENT, WWAN_USSD_EVENT"
+req.product: Windows 10 or later.
 ---
 
 # _WWAN_USSD_EVENT structure

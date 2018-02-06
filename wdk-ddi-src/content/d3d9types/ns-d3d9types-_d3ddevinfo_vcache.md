@@ -1,41 +1,46 @@
 ---
-UID : NS:d3d9types._D3DDEVINFO_VCACHE
-title : "_D3DDEVINFO_VCACHE"
-author : windows-driver-content
-description : DirectX 8.1 and later versions only. The D3DDEVINFO_VCACHE structure describes vertex-cache information of a device.
-old-location : display\d3ddevinfo_vcache.htm
-old-project : display
-ms.assetid : 3c20b757-c27c-446c-a138-066fc57ec1bc
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DDEVINFO_VCACHE structure [Display Devices], LPD3DDEVINFO_VCACHE structure pointer [Display Devices], d3dstrct_19dad044-1780-4c89-a518-328f0dfa3a26.xml, display.d3ddevinfo_vcache, d3d9types/LPD3DDEVINFO_VCACHE, LPD3DDEVINFO_VCACHE, *LPD3DDEVINFO_VCACHE, _D3DDEVINFO_VCACHE, D3DDEVINFO_VCACHE, d3d9types/D3DDEVINFO_VCACHE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3d9types.h
-req.include-header : D3d9types.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*LPD3DDEVINFO_VCACHE, D3DDEVINFO_VCACHE"
+UID: NS:d3d9types._D3DDEVINFO_VCACHE
+title: "_D3DDEVINFO_VCACHE"
+author: windows-driver-content
+description: DirectX 8.1 and later versions only. The D3DDEVINFO_VCACHE structure describes vertex-cache information of a device.
+old-location: display\d3ddevinfo_vcache.htm
+old-project: display
+ms.assetid: 3c20b757-c27c-446c-a138-066fc57ec1bc
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DDEVINFO_VCACHE structure [Display Devices], LPD3DDEVINFO_VCACHE structure pointer [Display Devices], d3dstrct_19dad044-1780-4c89-a518-328f0dfa3a26.xml, display.d3ddevinfo_vcache, d3d9types/LPD3DDEVINFO_VCACHE, LPD3DDEVINFO_VCACHE, *LPD3DDEVINFO_VCACHE, _D3DDEVINFO_VCACHE, D3DDEVINFO_VCACHE, d3d9types/D3DDEVINFO_VCACHE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3d9types.h
+req.include-header: D3d9types.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3d9types.h
+apiname:
+-	D3DDEVINFO_VCACHE
+product: Windows
+targetos: Windows
+req.typenames: "*LPD3DDEVINFO_VCACHE, D3DDEVINFO_VCACHE"
 ---
 
 # _D3DDEVINFO_VCACHE structure

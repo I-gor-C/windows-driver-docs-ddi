@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.CcGetFlushedValidData
-title : CcGetFlushedValidData function
-author : windows-driver-content
-description : The CcGetFlushedValidData routine determines how much of a cached file has been flushed to disk.
-old-location : ifsk\ccgetflushedvaliddata.htm
-old-project : ifsk
-ms.assetid : a0e3700a-768f-4025-b5f2-715e25e1d10d
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ccref_021f04d4-537c-49a3-bfac-8eeea908c100.xml, ntifs/CcGetFlushedValidData, ifsk.ccgetflushedvaliddata, CcGetFlushedValidData routine [Installable File System Drivers], CcGetFlushedValidData
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available on Microsoft Windows 2000 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.CcGetFlushedValidData
+title: CcGetFlushedValidData function
+author: windows-driver-content
+description: The CcGetFlushedValidData routine determines how much of a cached file has been flushed to disk.
+old-location: ifsk\ccgetflushedvaliddata.htm
+old-project: ifsk
+ms.assetid: a0e3700a-768f-4025-b5f2-715e25e1d10d
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ccref_021f04d4-537c-49a3-bfac-8eeea908c100.xml, ntifs/CcGetFlushedValidData, ifsk.ccgetflushedvaliddata, CcGetFlushedValidData routine [Installable File System Drivers], CcGetFlushedValidData
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available on Microsoft Windows 2000 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	CcGetFlushedValidData
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

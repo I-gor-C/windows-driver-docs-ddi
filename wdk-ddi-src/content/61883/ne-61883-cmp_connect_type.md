@@ -1,41 +1,46 @@
 ---
-UID : NE:61883.CMP_CONNECT_TYPE
-title : CMP_CONNECT_TYPE
-author : windows-driver-content
-description : This enumeration specifies a connection type.
-old-location : ieee\cmp_connect_type.htm
-old-project : IEEE
-ms.assetid : 8C206071-2616-4BFB-B7CA-E872CC8D5405
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : CMP_PointToPoint, CMP_CONNECT_TYPE enumeration [Buses], CMP_Broadcast, CMP_CONNECT_TYPE, 61883/CMP_CONNECT_TYPE, 61883/CMP_PointToPoint, IEEE.cmp_connect_type, 61883/CMP_Broadcast
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : 61883.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : CMP_CONNECT_TYPE
+UID: NE:61883.CMP_CONNECT_TYPE
+title: CMP_CONNECT_TYPE
+author: windows-driver-content
+description: This enumeration specifies a connection type.
+old-location: ieee\cmp_connect_type.htm
+old-project: IEEE
+ms.assetid: 8C206071-2616-4BFB-B7CA-E872CC8D5405
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: CMP_PointToPoint, CMP_CONNECT_TYPE enumeration [Buses], CMP_Broadcast, CMP_CONNECT_TYPE, 61883/CMP_CONNECT_TYPE, 61883/CMP_PointToPoint, IEEE.cmp_connect_type, 61883/CMP_Broadcast
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: 61883.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	61883.h
+apiname:
+-	CMP_CONNECT_TYPE
+product: Windows
+targetos: Windows
+req.typenames: CMP_CONNECT_TYPE
 ---
 
 # CMP_CONNECT_TYPE Enumeration
@@ -52,16 +57,16 @@ typedef enum  {
 ## Constants
 
 <table>
-
-<tr>
-<td>CMP_Broadcast</td>
-<td>Indicates that this is a broadcast connection.</td>
-</tr>
-
-<tr>
-<td>CMP_PointToPoint</td>
-<td>Indicates that this is a point-to-point connection.</td>
-</tr>
+            
+                <tr>
+                    <td>CMP_Broadcast</td>
+                    <td>Indicates that this is a broadcast connection.</td>
+                </tr>
+            
+                <tr>
+                    <td>CMP_PointToPoint</td>
+                    <td>Indicates that this is a point-to-point connection.</td>
+                </tr>
 </table>
 
 
@@ -70,9 +75,9 @@ typedef enum  {
 | ---- |:---- |
 | **Header** | 61883.h |
 
-## See Also
+    ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537008">AV_61883_REQUEST</a>
+        <a href="https://msdn.microsoft.com/library/windows/hardware/ff537008">AV_61883_REQUEST</a>
 
  
 

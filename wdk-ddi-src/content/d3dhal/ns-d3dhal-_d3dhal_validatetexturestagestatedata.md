@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dhal._D3DHAL_VALIDATETEXTURESTAGESTATEDATA
-title : "_D3DHAL_VALIDATETEXTURESTAGESTATEDATA"
-author : windows-driver-content
-description : The D3DHAL_VALIDATETEXTURESTAGESTATEDATA structure contains the information required for the driver to determine and return its ability to support multitexturing using the current state.
-old-location : display\d3dhal_validatetexturestagestatedata.htm
-old-project : display
-ms.assetid : 25534f3b-5da8-47e0-a956-6d1849c40a3d
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DHAL_VALIDATETEXTURESTAGESTATEDATA structure [Display Devices], _D3DHAL_VALIDATETEXTURESTAGESTATEDATA, display.d3dhal_validatetexturestagestatedata, d3dhal/D3DHAL_VALIDATETEXTURESTAGESTATEDATA, d3dhal/LPD3DHAL_VALIDATETEXTURESTAGESTATEDATA, LPD3DHAL_VALIDATETEXTURESTAGESTATEDATA, *LPD3DHAL_VALIDATETEXTURESTAGESTATEDATA, d3dstrct_1f23a380-4c92-44c1-a2ae-7e0558fad221.xml, D3DHAL_VALIDATETEXTURESTAGESTATEDATA, LPD3DHAL_VALIDATETEXTURESTAGESTATEDATA structure pointer [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dhal.h
-req.include-header : D3dhal.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DHAL_VALIDATETEXTURESTAGESTATEDATA
+UID: NS:d3dhal._D3DHAL_VALIDATETEXTURESTAGESTATEDATA
+title: "_D3DHAL_VALIDATETEXTURESTAGESTATEDATA"
+author: windows-driver-content
+description: The D3DHAL_VALIDATETEXTURESTAGESTATEDATA structure contains the information required for the driver to determine and return its ability to support multitexturing using the current state.
+old-location: display\d3dhal_validatetexturestagestatedata.htm
+old-project: display
+ms.assetid: 25534f3b-5da8-47e0-a956-6d1849c40a3d
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DHAL_VALIDATETEXTURESTAGESTATEDATA structure [Display Devices], _D3DHAL_VALIDATETEXTURESTAGESTATEDATA, display.d3dhal_validatetexturestagestatedata, d3dhal/D3DHAL_VALIDATETEXTURESTAGESTATEDATA, d3dhal/LPD3DHAL_VALIDATETEXTURESTAGESTATEDATA, LPD3DHAL_VALIDATETEXTURESTAGESTATEDATA, *LPD3DHAL_VALIDATETEXTURESTAGESTATEDATA, d3dstrct_1f23a380-4c92-44c1-a2ae-7e0558fad221.xml, D3DHAL_VALIDATETEXTURESTAGESTATEDATA, LPD3DHAL_VALIDATETEXTURESTAGESTATEDATA structure pointer [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dhal.h
+req.include-header: D3dhal.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dhal.h
+apiname:
+-	D3DHAL_VALIDATETEXTURESTAGESTATEDATA
+product: Windows
+targetos: Windows
+req.typenames: D3DHAL_VALIDATETEXTURESTAGESTATEDATA
 ---
 
 # _D3DHAL_VALIDATETEXTURESTAGESTATEDATA structure

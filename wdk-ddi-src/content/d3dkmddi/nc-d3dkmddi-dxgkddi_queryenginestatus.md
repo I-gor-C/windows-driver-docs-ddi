@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dkmddi.DXGKDDI_QUERYENGINESTATUS
-title : DXGKDDI_QUERYENGINESTATUS
-author : windows-driver-content
-description : The display port driver's GPU scheduler calls this function to determine the progress of a node within an active physical display adapter (engine).
-old-location : display\dxgkddiqueryenginestatus.htm
-old-project : display
-ms.assetid : 87c99fcb-d25a-41b1-a1f3-9cf9ab7b141e
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkddiqueryenginestatus, DxgkDdiQueryEngineStatus callback function [Display Devices], DxgkDdiQueryEngineStatus, DXGKDDI_QUERYENGINESTATUS, DXGKDDI_QUERYENGINESTATUS, d3dkmddi/DxgkDdiQueryEngineStatus
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dkmddi.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
+UID: NC:d3dkmddi.DXGKDDI_QUERYENGINESTATUS
+title: DXGKDDI_QUERYENGINESTATUS
+author: windows-driver-content
+description: The display port driver's GPU scheduler calls this function to determine the progress of a node within an active physical display adapter (engine).
+old-location: display\dxgkddiqueryenginestatus.htm
+old-project: display
+ms.assetid: 87c99fcb-d25a-41b1-a1f3-9cf9ab7b141e
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkddiqueryenginestatus, DxgkDdiQueryEngineStatus callback function [Display Devices], DxgkDdiQueryEngineStatus, DXGKDDI_QUERYENGINESTATUS, DXGKDDI_QUERYENGINESTATUS, d3dkmddi/DxgkDdiQueryEngineStatus
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dkmddi.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	D3dkmddi.h
+apiname:
+-	DxgkDdiQueryEngineStatus
+product: Windows
+targetos: Windows
+req.typenames: DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
 

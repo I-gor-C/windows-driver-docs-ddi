@@ -1,42 +1,47 @@
 ---
-UID : NS:srb._SRBEX_DATA_WMI
-title : "_SRBEX_DATA_WMI"
-author : windows-driver-content
-description : The SRBEX_DATA_WMI structure contains the request data for an extended WMI SRB.
-old-location : storage\srbex_data_wmi.htm
-old-project : storage
-ms.assetid : 3FFBF258-50C3-4D2D-AFC8-184D2FF85EE4
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.srbex_data_wmi, storport/PSRBEX_DATA_WMI, SRBEX_DATA_WMI structure [Storage Devices], SRBEX_DATA_WMI, _SRBEX_DATA_WMI, storport/SRBEX_DATA_WMI, PSRBEX_DATA_WMI structure pointer [Storage Devices], PSRBEX_DATA_WMI, *PSRBEX_DATA_WMI
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : srb.h
-req.include-header : Storport.h, Srb.h
-req.target-type : Windows
-req.target-min-winverclnt : Available  starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SRBEX_DATA_WMI, *PSRBEX_DATA_WMI
-req.product : Windows 10 or later.
+UID: NS:srb._SRBEX_DATA_WMI
+title: "_SRBEX_DATA_WMI"
+author: windows-driver-content
+description: The SRBEX_DATA_WMI structure contains the request data for an extended WMI SRB.
+old-location: storage\srbex_data_wmi.htm
+old-project: storage
+ms.assetid: 3FFBF258-50C3-4D2D-AFC8-184D2FF85EE4
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.srbex_data_wmi, storport/PSRBEX_DATA_WMI, SRBEX_DATA_WMI structure [Storage Devices], SRBEX_DATA_WMI, _SRBEX_DATA_WMI, storport/SRBEX_DATA_WMI, PSRBEX_DATA_WMI structure pointer [Storage Devices], PSRBEX_DATA_WMI, *PSRBEX_DATA_WMI
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: srb.h
+req.include-header: Storport.h, Srb.h
+req.target-type: Windows
+req.target-min-winverclnt: Available  starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Storport.h
+apiname:
+-	SRBEX_DATA_WMI
+product: Windows
+targetos: Windows
+req.typenames: SRBEX_DATA_WMI, *PSRBEX_DATA_WMI
+req.product: Windows 10 or later.
 ---
 
 # _SRBEX_DATA_WMI structure

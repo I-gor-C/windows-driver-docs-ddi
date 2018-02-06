@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisIfAllocateNetLuidIndex
-title : NdisIfAllocateNetLuidIndex function
-author : windows-driver-content
-description : The NdisIfAllocateNetLuidIndex function allocates a NET_LUID index for an NDIS network interface provider.
-old-location : netvista\ndisifallocatenetluidindex.htm
-old-project : netvista
-ms.assetid : bc62da04-242a-4d9a-8a85-2342a1b3e628
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NdisIfAllocateNetLuidIndex, ndis/NdisIfAllocateNetLuidIndex, net_if_functions_ref_3ffcc5c8-7475-475d-8732-dc59ee632285.xml, netvista.ndisifallocatenetluidindex, NdisIfAllocateNetLuidIndex function [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_Interfaces_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisIfAllocateNetLuidIndex
+title: NdisIfAllocateNetLuidIndex function
+author: windows-driver-content
+description: The NdisIfAllocateNetLuidIndex function allocates a NET_LUID index for an NDIS network interface provider.
+old-location: netvista\ndisifallocatenetluidindex.htm
+old-project: netvista
+ms.assetid: bc62da04-242a-4d9a-8a85-2342a1b3e628
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NdisIfAllocateNetLuidIndex, ndis/NdisIfAllocateNetLuidIndex, net_if_functions_ref_3ffcc5c8-7475-475d-8732-dc59ee632285.xml, netvista.ndisifallocatenetluidindex, NdisIfAllocateNetLuidIndex function [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_Interfaces_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisIfAllocateNetLuidIndex
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

@@ -1,42 +1,50 @@
 ---
-UID : NF:wdfio.WdfIoQueueFindRequest
-title : WdfIoQueueFindRequest function
-author : windows-driver-content
-description : The WdfIoQueueFindRequest method locates the next request in an I/O queue, or the next request that matches specified criteria, but does not grant ownership of the request to the driver.
-old-location : wdf\wdfioqueuefindrequest.htm
-old-project : wdf
-ms.assetid : 379fc7ec-577a-48a4-83b0-4be4e8cfe1bf
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WdfIoQueueFindRequest, DFQueueObjectRef_c0d57542-6256-4502-ad31-8b388857296f.xml, wdf.wdfioqueuefindrequest, WdfIoQueueFindRequest method, PFN_WDFIOQUEUEFINDREQUEST, wdfio/WdfIoQueueFindRequest, kmdf.wdfioqueuefindrequest
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfio.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2, wdfioqueuefindrequestfailed, wdfioqueueretrievefoundrequest, wdfioqueueretrievenextrequest
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_IO_QUEUE_STATE
-req.product : Windows 10 or later.
+UID: NF:wdfio.WdfIoQueueFindRequest
+title: WdfIoQueueFindRequest function
+author: windows-driver-content
+description: The WdfIoQueueFindRequest method locates the next request in an I/O queue, or the next request that matches specified criteria, but does not grant ownership of the request to the driver.
+old-location: wdf\wdfioqueuefindrequest.htm
+old-project: wdf
+ms.assetid: 379fc7ec-577a-48a4-83b0-4be4e8cfe1bf
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WdfIoQueueFindRequest, DFQueueObjectRef_c0d57542-6256-4502-ad31-8b388857296f.xml, wdf.wdfioqueuefindrequest, WdfIoQueueFindRequest method, PFN_WDFIOQUEUEFINDREQUEST, wdfio/WdfIoQueueFindRequest, kmdf.wdfioqueuefindrequest
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfio.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2, wdfioqueuefindrequestfailed, wdfioqueueretrievefoundrequest, wdfioqueueretrievenextrequest
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+-	WUDFx02000.dll
+-	WUDFx02000.dll.dll
+apiname:
+-	WdfIoQueueFindRequest
+product: Windows
+targetos: Windows
+req.typenames: WDF_IO_QUEUE_STATE
+req.product: Windows 10 or later.
 ---
 
 

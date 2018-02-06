@@ -1,41 +1,46 @@
 ---
-UID : NF:portcls.PcRemoveStreamResource
-title : PcRemoveStreamResource function
-author : windows-driver-content
-description : PcRemoveStreamResource removes an existing stream resource.
-old-location : audio\pcremovestreamresource.htm
-old-project : audio
-ms.assetid : D923DA5C-0169-475D-8C0C-6A99EB06ECE0
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : PcRemoveStreamResource function [Audio Devices], portcls/PcRemoveStreamResource, PcRemoveStreamResource, audio.pcremovestreamresource
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : portcls.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Portcls.lib
-req.dll : NA
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.PcRemoveStreamResource
+title: PcRemoveStreamResource function
+author: windows-driver-content
+description: PcRemoveStreamResource removes an existing stream resource.
+old-location: audio\pcremovestreamresource.htm
+old-project: audio
+ms.assetid: D923DA5C-0169-475D-8C0C-6A99EB06ECE0
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: PcRemoveStreamResource function [Audio Devices], portcls/PcRemoveStreamResource, PcRemoveStreamResource, audio.pcremovestreamresource
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: portcls.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Portcls.lib
+req.dll: NA
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NA
+apiname:
+-	PcRemoveStreamResource
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

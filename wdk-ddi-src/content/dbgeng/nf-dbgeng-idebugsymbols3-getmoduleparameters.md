@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugSymbols3.GetModuleParameters
-title : IDebugSymbols3::GetModuleParameters method
-author : windows-driver-content
-description : The GetModuleParameters method returns parameters for modules in the target.
-old-location : debugger\getmoduleparameters.htm
-old-project : debugger
-ms.assetid : f744cd2e-a4ec-43be-a5cc-9135a73bce80
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : GetModuleParameters method [Windows Debugging], IDebugSymbols3 interface, dbgeng/IDebugSymbols3::GetModuleParameters, IDebugSymbols3::GetModuleParameters, IDebugSymbols::GetModuleParameters, IDebugSymbols2::GetModuleParameters, IDebugSymbols_0a78fd64-15b7-4032-83a8-9867037e5081.xml, IDebugSymbols2 interface [Windows Debugging], GetModuleParameters method, GetModuleParameters method [Windows Debugging], IDebugSymbols2 interface, IDebugSymbols3 interface [Windows Debugging], GetModuleParameters method, dbgeng/IDebugSymbols::GetModuleParameters, GetModuleParameters, GetModuleParameters method [Windows Debugging], dbgeng/IDebugSymbols2::GetModuleParameters, IDebugSymbols3, debugger.getmoduleparameters, IDebugSymbols interface [Windows Debugging], GetModuleParameters method, GetModuleParameters method [Windows Debugging], IDebugSymbols interface
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSymbols3.GetModuleParameters
+title: IDebugSymbols3::GetModuleParameters method
+author: windows-driver-content
+description: The GetModuleParameters method returns parameters for modules in the target.
+old-location: debugger\getmoduleparameters.htm
+old-project: debugger
+ms.assetid: f744cd2e-a4ec-43be-a5cc-9135a73bce80
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: GetModuleParameters method [Windows Debugging], IDebugSymbols3 interface, dbgeng/IDebugSymbols3::GetModuleParameters, IDebugSymbols3::GetModuleParameters, IDebugSymbols::GetModuleParameters, IDebugSymbols2::GetModuleParameters, IDebugSymbols_0a78fd64-15b7-4032-83a8-9867037e5081.xml, IDebugSymbols2 interface [Windows Debugging], GetModuleParameters method, GetModuleParameters method [Windows Debugging], IDebugSymbols2 interface, IDebugSymbols3 interface [Windows Debugging], GetModuleParameters method, dbgeng/IDebugSymbols::GetModuleParameters, GetModuleParameters, GetModuleParameters method [Windows Debugging], dbgeng/IDebugSymbols2::GetModuleParameters, IDebugSymbols3, debugger.getmoduleparameters, IDebugSymbols interface [Windows Debugging], GetModuleParameters method, GetModuleParameters method [Windows Debugging], IDebugSymbols interface
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugSymbols.GetModuleParameters
+-	IDebugSymbols2.GetModuleParameters
+-	IDebugSymbols3.GetModuleParameters
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

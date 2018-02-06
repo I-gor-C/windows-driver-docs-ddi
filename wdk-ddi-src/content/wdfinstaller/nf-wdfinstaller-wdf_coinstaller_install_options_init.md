@@ -1,42 +1,47 @@
 ---
-UID : NF:wdfinstaller.WDF_COINSTALLER_INSTALL_OPTIONS_INIT
-title : WDF_COINSTALLER_INSTALL_OPTIONS_INIT function
-author : windows-driver-content
-description : The WDF_COINSTALLER_INSTALL_OPTIONS_INIT function initializes a WDF_COINSTALLER_INSTALL_OPTIONS structure.
-old-location : wdf\wdf_coinstaller_install_options_init.htm
-old-project : wdf
-ms.assetid : 65fd2c27-7d9e-4dad-adef-8cb2bea9d9f2
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdfinstaller/WDF_COINSTALLER_INSTALL_OPTIONS_INIT, wdf.wdf_coinstaller_install_options_init, WDF_COINSTALLER_INSTALL_OPTIONS_INIT, WDF_COINSTALLER_INSTALL_OPTIONS_INIT function, kmdf.wdf_coinstaller_install_options_init, DFCoinstallerRef_7a993590-87f2-4613-93d4-ffbc76672d8e.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfinstaller.h
-req.include-header : Wdfinstaller.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.9
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_FILE_INFORMATION_CLASS, *PWDF_FILE_INFORMATION_CLASS
-req.product : Windows 10 or later.
+UID: NF:wdfinstaller.WDF_COINSTALLER_INSTALL_OPTIONS_INIT
+title: WDF_COINSTALLER_INSTALL_OPTIONS_INIT function
+author: windows-driver-content
+description: The WDF_COINSTALLER_INSTALL_OPTIONS_INIT function initializes a WDF_COINSTALLER_INSTALL_OPTIONS structure.
+old-location: wdf\wdf_coinstaller_install_options_init.htm
+old-project: wdf
+ms.assetid: 65fd2c27-7d9e-4dad-adef-8cb2bea9d9f2
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdfinstaller/WDF_COINSTALLER_INSTALL_OPTIONS_INIT, wdf.wdf_coinstaller_install_options_init, WDF_COINSTALLER_INSTALL_OPTIONS_INIT, WDF_COINSTALLER_INSTALL_OPTIONS_INIT function, kmdf.wdf_coinstaller_install_options_init, DFCoinstallerRef_7a993590-87f2-4613-93d4-ffbc76672d8e.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfinstaller.h
+req.include-header: Wdfinstaller.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.9
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfinstaller.h
+apiname:
+-	WDF_COINSTALLER_INSTALL_OPTIONS_INIT
+product: Windows
+targetos: Windows
+req.typenames: WDF_FILE_INFORMATION_CLASS, *PWDF_FILE_INFORMATION_CLASS
+req.product: Windows 10 or later.
 ---
 
 

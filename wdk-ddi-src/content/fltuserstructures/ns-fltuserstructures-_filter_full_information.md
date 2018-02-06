@@ -1,41 +1,46 @@
 ---
-UID : NS:fltuserstructures._FILTER_FULL_INFORMATION
-title : "_FILTER_FULL_INFORMATION"
-author : windows-driver-content
-description : The FILTER_FULL_INFORMATION structure contains full information for a minifilter driver.
-old-location : ifsk\filter_full_information.htm
-old-project : ifsk
-ms.assetid : fb592350-76e2-4655-b6db-854fd48aa827
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FILTER_FULL_INFORMATION, fltuserstructures/FILTER_FULL_INFORMATION, ifsk.filter_full_information, PFILTER_FULL_INFORMATION, _FILTER_FULL_INFORMATION, *PFILTER_FULL_INFORMATION, PFILTER_FULL_INFORMATION structure pointer [Installable File System Drivers], FltSystemStructures_e72c2545-4938-4a3e-b3c8-95fd7f46239a.xml, fltuserstructures/PFILTER_FULL_INFORMATION, FILTER_FULL_INFORMATION structure [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : fltuserstructures.h
-req.include-header : FltUser.h, FltKernel.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PFILTER_FULL_INFORMATION, FILTER_FULL_INFORMATION"
+UID: NS:fltuserstructures._FILTER_FULL_INFORMATION
+title: "_FILTER_FULL_INFORMATION"
+author: windows-driver-content
+description: The FILTER_FULL_INFORMATION structure contains full information for a minifilter driver.
+old-location: ifsk\filter_full_information.htm
+old-project: ifsk
+ms.assetid: fb592350-76e2-4655-b6db-854fd48aa827
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FILTER_FULL_INFORMATION, fltuserstructures/FILTER_FULL_INFORMATION, ifsk.filter_full_information, PFILTER_FULL_INFORMATION, _FILTER_FULL_INFORMATION, *PFILTER_FULL_INFORMATION, PFILTER_FULL_INFORMATION structure pointer [Installable File System Drivers], FltSystemStructures_e72c2545-4938-4a3e-b3c8-95fd7f46239a.xml, fltuserstructures/PFILTER_FULL_INFORMATION, FILTER_FULL_INFORMATION structure [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: fltuserstructures.h
+req.include-header: FltUser.h, FltKernel.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	fltuserstructures.h
+apiname:
+-	FILTER_FULL_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: "*PFILTER_FULL_INFORMATION, FILTER_FULL_INFORMATION"
 ---
 
 # _FILTER_FULL_INFORMATION structure

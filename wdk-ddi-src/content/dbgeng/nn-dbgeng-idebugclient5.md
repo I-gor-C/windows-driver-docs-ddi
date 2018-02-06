@@ -1,41 +1,55 @@
 ---
-UID : NN:dbgeng.IDebugClient5
-title : IDebugClient5
-author : windows-driver-content
-description : IDebugClient5 interface
-old-location : debugger\idebugclient5.htm
-old-project : debugger
-ms.assetid : 4230fbc2-524a-44b1-a090-011e334629a7
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : debugger.idebugclient5, IDebugClient5 interface [Windows Debugging], IDebugClient5 interface [Windows Debugging], described, IDebugClient5, dbgeng/IDebugClient5
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NN:dbgeng.IDebugClient5
+title: IDebugClient5
+author: windows-driver-content
+description: IDebugClient5 interface
+old-location: debugger\idebugclient5.htm
+old-project: debugger
+ms.assetid: 4230fbc2-524a-44b1-a090-011e334629a7
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: debugger.idebugclient5, IDebugClient5 interface [Windows Debugging], IDebugClient5 interface [Windows Debugging], described, IDebugClient5, dbgeng/IDebugClient5
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugClient5
+-	IDebugClient5.GetOutputLinePrefixWide
+-	IDebugClient5.SetOutputLinePrefixWide
+-	IDebugClient5.PushOutputLinePrefix
+-	IDebugClient5.PushOutputLinePrefixWide
+-	IDebugClient5.PopOutputLinePrefix
+-	IDebugClient5.GetQuitLockString
+-	IDebugClient5.SetQuitLockString
+-	IDebugClient5.GetQuitLockStringWide
+-	IDebugClient5.SetQuitLockStringWide
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 # IDebugClient5 interface

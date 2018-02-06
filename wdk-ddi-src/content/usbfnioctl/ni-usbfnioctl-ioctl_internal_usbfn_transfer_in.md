@@ -1,42 +1,47 @@
 ---
-UID : NI:usbfnioctl.IOCTL_INTERNAL_USBFN_TRANSFER_IN
-title : IOCTL_INTERNAL_USBFN_TRANSFER_IN
-author : windows-driver-content
-description : The class driver sends this request to initiate a data transfer to the host on the specified pipe.
-old-location : buses\_ioctl_internal_usbfn_transfer_in.htm
-old-project : usbref
-ms.assetid : 53F895F8-596D-464C-866E-67028CF644E4
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : buses._ioctl_internal_usbfn_transfer_in, IOCTL_INTERNAL_USBFN_TRANSFER_IN control code [Buses], IOCTL_INTERNAL_USBFN_TRANSFER_IN, usbfnioctl/IOCTL_INTERNAL_USBFN_TRANSFER_IN
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : usbfnioctl.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : USBFN_USB_STRING, *PUSBFN_USB_STRING
-req.product : Windows 10 or later.
+UID: NI:usbfnioctl.IOCTL_INTERNAL_USBFN_TRANSFER_IN
+title: IOCTL_INTERNAL_USBFN_TRANSFER_IN
+author: windows-driver-content
+description: The class driver sends this request to initiate a data transfer to the host on the specified pipe.
+old-location: buses\_ioctl_internal_usbfn_transfer_in.htm
+old-project: usbref
+ms.assetid: 53F895F8-596D-464C-866E-67028CF644E4
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: buses._ioctl_internal_usbfn_transfer_in, IOCTL_INTERNAL_USBFN_TRANSFER_IN control code [Buses], IOCTL_INTERNAL_USBFN_TRANSFER_IN, usbfnioctl/IOCTL_INTERNAL_USBFN_TRANSFER_IN
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: usbfnioctl.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	usbfnioctl.h
+apiname:
+-	IOCTL_INTERNAL_USBFN_TRANSFER_IN
+product: Windows
+targetos: Windows
+req.typenames: USBFN_USB_STRING, *PUSBFN_USB_STRING
+req.product: Windows 10 or later.
 ---
 
 # IOCTL_INTERNAL_USBFN_TRANSFER_IN IOCTL

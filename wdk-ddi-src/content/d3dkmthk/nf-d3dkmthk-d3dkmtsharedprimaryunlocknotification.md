@@ -1,41 +1,49 @@
 ---
-UID : NF:d3dkmthk.D3DKMTSharedPrimaryUnLockNotification
-title : D3DKMTSharedPrimaryUnLockNotification function
-author : windows-driver-content
-description : The D3DKMTSharedPrimaryUnLockNotification function notifies the operating system that a shared primary surface was unlocked.
-old-location : display\d3dkmtsharedprimaryunlocknotification.htm
-old-project : display
-ms.assetid : 1d602d09-cd80-4079-9132-1caced4d1eee
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DKMTSharedPrimaryUnLockNotification, D3DKMTSharedPrimaryUnLockNotification function [Display Devices], d3dkmthk/D3DKMTSharedPrimaryUnLockNotification, OpenGL_Functions_311a1879-e3f7-44e2-aa1a-0c070e45bf85.xml, display.d3dkmtsharedprimaryunlocknotification
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Gdi32.lib
-req.dll : Gdi32.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_DRIVERVERSION
+UID: NF:d3dkmthk.D3DKMTSharedPrimaryUnLockNotification
+title: D3DKMTSharedPrimaryUnLockNotification function
+author: windows-driver-content
+description: The D3DKMTSharedPrimaryUnLockNotification function notifies the operating system that a shared primary surface was unlocked.
+old-location: display\d3dkmtsharedprimaryunlocknotification.htm
+old-project: display
+ms.assetid: 1d602d09-cd80-4079-9132-1caced4d1eee
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DKMTSharedPrimaryUnLockNotification, D3DKMTSharedPrimaryUnLockNotification function [Display Devices], d3dkmthk/D3DKMTSharedPrimaryUnLockNotification, OpenGL_Functions_311a1879-e3f7-44e2-aa1a-0c070e45bf85.xml, display.d3dkmtsharedprimaryunlocknotification
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Gdi32.lib
+req.dll: Gdi32.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Gdi32.dll
+-	API-MS-Win-dx-d3dkmt-l1-1-0.dll
+-	API-MS-Win-dx-d3dkmt-l1-1-1.dll
+-	API-MS-Win-DX-D3DKMT-L1-1-2.dll
+apiname:
+-	D3DKMTSharedPrimaryUnLockNotification
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_DRIVERVERSION
 ---
 
 

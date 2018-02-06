@@ -1,42 +1,47 @@
 ---
-UID : NF:rxcontx.RxPrepareContextForReuse
-title : RxPrepareContextForReuse function
-author : windows-driver-content
-description : RxPrepareContextForReuse prepares an RX_CONTEXT data structure for reuse by resetting all of the operation-specific allocations and acquisitions that have been made (the ReferenceCount member to the RX_CONTEXT structure is set to zero).
-old-location : ifsk\rxpreparecontextforreuse.htm
-old-project : ifsk
-ms.assetid : 16b4bd82-0ffc-40c7-8cd2-f73a2a588ac8
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : RxPrepareContextForReuse function [Installable File System Drivers], rxref_34eae0cd-faff-47e7-8313-aca1361edc68.xml, rxcontx/RxPrepareContextForReuse, RxPrepareContextForReuse, ifsk.rxpreparecontextforreuse
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : rxcontx.h
-req.include-header : Rxprocs.h  rxcontx.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*LPRILWRITEPHONEBOOKENTRYPARAMS, RILWRITEPHONEBOOKENTRYPARAMS"
-req.product : Windows 10 or later.
+UID: NF:rxcontx.RxPrepareContextForReuse
+title: RxPrepareContextForReuse function
+author: windows-driver-content
+description: RxPrepareContextForReuse prepares an RX_CONTEXT data structure for reuse by resetting all of the operation-specific allocations and acquisitions that have been made (the ReferenceCount member to the RX_CONTEXT structure is set to zero).
+old-location: ifsk\rxpreparecontextforreuse.htm
+old-project: ifsk
+ms.assetid: 16b4bd82-0ffc-40c7-8cd2-f73a2a588ac8
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: RxPrepareContextForReuse function [Installable File System Drivers], rxref_34eae0cd-faff-47e7-8313-aca1361edc68.xml, rxcontx/RxPrepareContextForReuse, RxPrepareContextForReuse, ifsk.rxpreparecontextforreuse
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: rxcontx.h
+req.include-header: Rxprocs.h  rxcontx.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	rxcontx.h
+apiname:
+-	RxPrepareContextForReuse
+product: Windows
+targetos: Windows
+req.typenames: "*LPRILWRITEPHONEBOOKENTRYPARAMS, RILWRITEPHONEBOOKENTRYPARAMS"
+req.product: Windows 10 or later.
 ---
 
 

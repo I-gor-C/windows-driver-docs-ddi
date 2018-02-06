@@ -1,41 +1,46 @@
 ---
-UID : NC:ndis.FILTER_DEVICE_PNP_EVENT_NOTIFY
-title : FILTER_DEVICE_PNP_EVENT_NOTIFY
-author : windows-driver-content
-description : NDIS calls a filter driver's FilterDevicePnPEventNotify function to notify the driver of device Plug and Play (PnP) and Power Management events.Note  You must declare the function by using the FILTER_DEVICE_PNP_EVENT_NOTIFY type.
-old-location : netvista\filterdevicepnpeventnotify.htm
-old-project : netvista
-ms.assetid : dea4ab30-ba1d-4c9c-9f00-e48cc3cc0b46
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.filterdevicepnpeventnotify, FilterDevicePnPEventNotify callback function [Network Drivers Starting with Windows Vista], FilterDevicePnPEventNotify, FILTER_DEVICE_PNP_EVENT_NOTIFY, FILTER_DEVICE_PNP_EVENT_NOTIFY, ndis/FilterDevicePnPEventNotify, filter_functions_ref_3e688903-ea36-44b3-bd06-533f7e573478.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
+UID: NC:ndis.FILTER_DEVICE_PNP_EVENT_NOTIFY
+title: FILTER_DEVICE_PNP_EVENT_NOTIFY
+author: windows-driver-content
+description: NDIS calls a filter driver's FilterDevicePnPEventNotify function to notify the driver of device Plug and Play (PnP) and Power Management events.Note  You must declare the function by using the FILTER_DEVICE_PNP_EVENT_NOTIFY type.
+old-location: netvista\filterdevicepnpeventnotify.htm
+old-project: netvista
+ms.assetid: dea4ab30-ba1d-4c9c-9f00-e48cc3cc0b46
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.filterdevicepnpeventnotify, FilterDevicePnPEventNotify callback function [Network Drivers Starting with Windows Vista], FilterDevicePnPEventNotify, FILTER_DEVICE_PNP_EVENT_NOTIFY, FILTER_DEVICE_PNP_EVENT_NOTIFY, ndis/FilterDevicePnPEventNotify, filter_functions_ref_3e688903-ea36-44b3-bd06-533f7e573478.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ndis.h
+apiname:
+-	FilterDevicePnPEventNotify
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 

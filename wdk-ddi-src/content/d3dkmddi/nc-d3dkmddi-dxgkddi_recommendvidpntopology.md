@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dkmddi.DXGKDDI_RECOMMENDVIDPNTOPOLOGY
-title : DXGKDDI_RECOMMENDVIDPNTOPOLOGY
-author : windows-driver-content
-description : The DxgkDdiRecommendVidPnTopology function creates the topology of a specified VidPN or augments the topology with a new path to video present targets.
-old-location : display\dxgkddirecommendvidpntopology.htm
-old-project : display
-ms.assetid : a7c31d2c-3893-4d25-837d-d4650aeb1cd1
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkddirecommendvidpntopology, DxgkDdiRecommendVidPnTopology callback function [Display Devices], DxgkDdiRecommendVidPnTopology, DXGKDDI_RECOMMENDVIDPNTOPOLOGY, DXGKDDI_RECOMMENDVIDPNTOPOLOGY, d3dkmddi/DxgkDdiRecommendVidPnTopology, DmFunctions_8036db05-72c0-4b67-9151-a33da1df4fb8.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dkmddi.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
+UID: NC:d3dkmddi.DXGKDDI_RECOMMENDVIDPNTOPOLOGY
+title: DXGKDDI_RECOMMENDVIDPNTOPOLOGY
+author: windows-driver-content
+description: The DxgkDdiRecommendVidPnTopology function creates the topology of a specified VidPN or augments the topology with a new path to video present targets.
+old-location: display\dxgkddirecommendvidpntopology.htm
+old-project: display
+ms.assetid: a7c31d2c-3893-4d25-837d-d4650aeb1cd1
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkddirecommendvidpntopology, DxgkDdiRecommendVidPnTopology callback function [Display Devices], DxgkDdiRecommendVidPnTopology, DXGKDDI_RECOMMENDVIDPNTOPOLOGY, DXGKDDI_RECOMMENDVIDPNTOPOLOGY, d3dkmddi/DxgkDdiRecommendVidPnTopology, DmFunctions_8036db05-72c0-4b67-9151-a33da1df4fb8.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dkmddi.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DxgkDdiRecommendVidPnTopology
+product: Windows
+targetos: Windows
+req.typenames: DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
 

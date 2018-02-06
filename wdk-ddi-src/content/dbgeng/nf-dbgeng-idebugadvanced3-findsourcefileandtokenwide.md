@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugAdvanced3.FindSourceFileAndTokenWide
-title : IDebugAdvanced3::FindSourceFileAndTokenWide method
-author : windows-driver-content
-description : The FindSourceFileAndTokenWide method returns the filename of a source file on the source path or return the value of a variable associated with a file token.
-old-location : debugger\findsourcefileandtokenwide.htm
-old-project : debugger
-ms.assetid : f406e755-dc46-4228-b70f-3520d3cb46a3
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : debugger.findsourcefileandtokenwide, IDebugAdvanced3, FindSourceFileAndTokenWide, dbgeng/IDebugAdvanced3::FindSourceFileAndTokenWide, IDebugAdvanced3::FindSourceFileAndTokenWide, FindSourceFileAndTokenWide method [Windows Debugging], IDebugAdvanced3 interface, FindSourceFileAndTokenWide method [Windows Debugging], IDebugAdvanced3 interface [Windows Debugging], FindSourceFileAndTokenWide method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugAdvanced3.FindSourceFileAndTokenWide
+title: IDebugAdvanced3::FindSourceFileAndTokenWide method
+author: windows-driver-content
+description: The FindSourceFileAndTokenWide method returns the filename of a source file on the source path or return the value of a variable associated with a file token.
+old-location: debugger\findsourcefileandtokenwide.htm
+old-project: debugger
+ms.assetid: f406e755-dc46-4228-b70f-3520d3cb46a3
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: debugger.findsourcefileandtokenwide, IDebugAdvanced3, FindSourceFileAndTokenWide, dbgeng/IDebugAdvanced3::FindSourceFileAndTokenWide, IDebugAdvanced3::FindSourceFileAndTokenWide, FindSourceFileAndTokenWide method [Windows Debugging], IDebugAdvanced3 interface, FindSourceFileAndTokenWide method [Windows Debugging], IDebugAdvanced3 interface [Windows Debugging], FindSourceFileAndTokenWide method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugAdvanced3.FindSourceFileAndTokenWide
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

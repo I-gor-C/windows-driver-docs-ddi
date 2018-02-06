@@ -1,42 +1,47 @@
 ---
-UID : NE:wudfddi_types._WDF_PROPERTY_STORE_DISPOSITION
-title : "_WDF_PROPERTY_STORE_DISPOSITION"
-author : windows-driver-content
-description : The WDF_PROPERTY_STORE_DISPOSITION enumeration contains values that indicate whether a registry value was created or already existed when a driver obtained a property store interface.
-old-location : wdf\wdf_property_store_disposition.htm
-old-project : wdf
-ms.assetid : 107b55f5-0c06-45cc-9cbb-ba9e2fbca1e4
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : umdfstructs_a25f5c08-88c9-41c0-9bab-023ea91d0a22.xml, umdf.wdf_property_store_disposition, WDF_PROPERTY_STORE_DISPOSITION enumeration, WDF_PROPERTY_STORE_DISPOSITION, wudfddi_types/OpenedExistingStore, wudfddi_types/CreatedNewStore, wudfddi_types/WDF_PROPERTY_STORE_DISPOSITION, CreatedNewStore, wdf.wdf_property_store_disposition, _WDF_PROPERTY_STORE_DISPOSITION, OpenedExistingStore
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : wudfddi_types.h
-req.include-header : Wudfddi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_PROPERTY_STORE_DISPOSITION
-req.product : Windows 10 or later.
+UID: NE:wudfddi_types._WDF_PROPERTY_STORE_DISPOSITION
+title: "_WDF_PROPERTY_STORE_DISPOSITION"
+author: windows-driver-content
+description: The WDF_PROPERTY_STORE_DISPOSITION enumeration contains values that indicate whether a registry value was created or already existed when a driver obtained a property store interface.
+old-location: wdf\wdf_property_store_disposition.htm
+old-project: wdf
+ms.assetid: 107b55f5-0c06-45cc-9cbb-ba9e2fbca1e4
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: umdfstructs_a25f5c08-88c9-41c0-9bab-023ea91d0a22.xml, umdf.wdf_property_store_disposition, WDF_PROPERTY_STORE_DISPOSITION enumeration, WDF_PROPERTY_STORE_DISPOSITION, wudfddi_types/OpenedExistingStore, wudfddi_types/CreatedNewStore, wudfddi_types/WDF_PROPERTY_STORE_DISPOSITION, CreatedNewStore, wdf.wdf_property_store_disposition, _WDF_PROPERTY_STORE_DISPOSITION, OpenedExistingStore
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: wudfddi_types.h
+req.include-header: Wudfddi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wudfddi_types.h
+apiname:
+-	WDF_PROPERTY_STORE_DISPOSITION
+product: Windows
+targetos: Windows
+req.typenames: WDF_PROPERTY_STORE_DISPOSITION
+req.product: Windows 10 or later.
 ---
 
 # _WDF_PROPERTY_STORE_DISPOSITION Enumeration
@@ -55,30 +60,30 @@ typedef enum _WDF_PROPERTY_STORE_DISPOSITION {
 ## Constants
 
 <table>
-
-<tr>
-<td>CreatedNewStore</td>
-<td>The device property store (registry value) was created.</td>
-</tr>
-
-<tr>
-<td>OpenedExistingStore</td>
-<td>The device property store already exists.</td>
-</tr>
+            
+                <tr>
+                    <td>CreatedNewStore</td>
+                    <td>The device property store (registry value) was created.</td>
+                </tr>
+            
+                <tr>
+                    <td>OpenedExistingStore</td>
+                    <td>The device property store already exists.</td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-The <b>WDF_PROPERTY_STORE_DISPOSITION</b> enumeration is used as output from the <a href="https://msdn.microsoft.com/library/windows/hardware/ff558842">IWDFDevice::RetrieveDevicePropertyStore</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff556982">IWDFDeviceInitialize::RetrieveDevicePropertyStore</a>, and <a href="https://msdn.microsoft.com/library/windows/hardware/ff560228">IWDFPropertyStoreFactory::RetrieveDevicePropertyStore</a> methods.
+        The <b>WDF_PROPERTY_STORE_DISPOSITION</b> enumeration is used as output from the <a href="https://msdn.microsoft.com/library/windows/hardware/ff558842">IWDFDevice::RetrieveDevicePropertyStore</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff556982">IWDFDeviceInitialize::RetrieveDevicePropertyStore</a>, and <a href="https://msdn.microsoft.com/library/windows/hardware/ff560228">IWDFPropertyStoreFactory::RetrieveDevicePropertyStore</a> methods.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
 | **Header** | wudfddi_types.h (include Wudfddi.h) |
 
-## See Also
+    ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560228">IWDFPropertyStoreFactory::RetrieveDevicePropertyStore</a>
+        <a href="https://msdn.microsoft.com/library/windows/hardware/ff560228">IWDFPropertyStoreFactory::RetrieveDevicePropertyStore</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff558842">IWDFDevice::RetrieveDevicePropertyStore</a>
 

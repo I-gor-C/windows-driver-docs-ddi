@@ -1,42 +1,47 @@
 ---
-UID : NF:sercx.SerCx2SystemDmaReceiveInitializeTransactionComplete
-title : SerCx2SystemDmaReceiveInitializeTransactionComplete function
-author : windows-driver-content
-description : The SerCx2SystemDmaReceiveInitializeTransactionComplete method notifies version 2 of the serial framework extension (SerCx2) that the serial driver has finished initializing the serial controller hardware in preparation for a new system-DMA-receive transaction.
-old-location : serports\sercx2systemdmareceiveinitializetransactioncomplete.htm
-old-project : serports
-ms.assetid : B65DC4AD-FB24-4F1D-A1E9-F9B38160908E
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : SerCx2SystemDmaReceiveInitializeTransactionComplete, serports.sercx2systemdmareceiveinitializetransactioncomplete, SerCx2SystemDmaReceiveInitializeTransactionComplete method [Serial Ports], 2/SerCx2SystemDmaReceiveInitializeTransactionComplete
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : sercx.h
-req.include-header : 
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 8.1.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSERCX_STATUS, SERCX_STATUS"
-req.product : Windows 10 or later.
+UID: NF:sercx.SerCx2SystemDmaReceiveInitializeTransactionComplete
+title: SerCx2SystemDmaReceiveInitializeTransactionComplete function
+author: windows-driver-content
+description: The SerCx2SystemDmaReceiveInitializeTransactionComplete method notifies version 2 of the serial framework extension (SerCx2) that the serial driver has finished initializing the serial controller hardware in preparation for a new system-DMA-receive transaction.
+old-location: serports\sercx2systemdmareceiveinitializetransactioncomplete.htm
+old-project: serports
+ms.assetid: B65DC4AD-FB24-4F1D-A1E9-F9B38160908E
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: SerCx2SystemDmaReceiveInitializeTransactionComplete, serports.sercx2systemdmareceiveinitializetransactioncomplete, SerCx2SystemDmaReceiveInitializeTransactionComplete method [Serial Ports], 2/SerCx2SystemDmaReceiveInitializeTransactionComplete
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: sercx.h
+req.include-header: 
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 8.1.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	2.0\Sercx.h
+apiname:
+-	SerCx2SystemDmaReceiveInitializeTransactionComplete
+product: Windows
+targetos: Windows
+req.typenames: "*PSERCX_STATUS, SERCX_STATUS"
+req.product: Windows 10 or later.
 ---
 
 

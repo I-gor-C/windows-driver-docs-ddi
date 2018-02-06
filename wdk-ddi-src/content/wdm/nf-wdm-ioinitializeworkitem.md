@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.IoInitializeWorkItem
-title : IoInitializeWorkItem function
-author : windows-driver-content
-description : The IoInitializeWorkItem routine initializes a work item that the caller has already allocated.
-old-location : kernel\ioinitializeworkitem.htm
-old-project : kernel
-ms.assetid : b7f4370e-75db-4238-8e23-9e48028a03f5
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : k104_06024bfe-5558-4039-a9b1-327895ba9b74.xml, IoInitializeWorkItem routine [Kernel-Mode Driver Architecture], kernel.ioinitializeworkitem, wdm/IoInitializeWorkItem, IoInitializeWorkItem
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.IoInitializeWorkItem
+title: IoInitializeWorkItem function
+author: windows-driver-content
+description: The IoInitializeWorkItem routine initializes a work item that the caller has already allocated.
+old-location: kernel\ioinitializeworkitem.htm
+old-project: kernel
+ms.assetid: b7f4370e-75db-4238-8e23-9e48028a03f5
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: k104_06024bfe-5558-4039-a9b1-327895ba9b74.xml, IoInitializeWorkItem routine [Kernel-Mode Driver Architecture], kernel.ioinitializeworkitem, wdm/IoInitializeWorkItem, IoInitializeWorkItem
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoInitializeWorkItem
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

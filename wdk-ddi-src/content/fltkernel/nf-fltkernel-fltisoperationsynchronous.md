@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltIsOperationSynchronous
-title : FltIsOperationSynchronous function
-author : windows-driver-content
-description : The FltIsOperationSynchronous routine determines whether a given callback data structure (FLT_CALLBACK_DATA) represents a synchronous or asynchronous I/O operation.
-old-location : ifsk\fltisoperationsynchronous.htm
-old-project : ifsk
-ms.assetid : 44594383-9f07-4b6a-8ea3-eaf84c9fefda
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltIsOperationSynchronous routine [Installable File System Drivers], FltApiRef_e_to_o_f80a8dfd-53b1-42cf-9d7c-18fc4af6ff4e.xml, ifsk.fltisoperationsynchronous, fltkernel/FltIsOperationSynchronous, FltIsOperationSynchronous
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltIsOperationSynchronous
+title: FltIsOperationSynchronous function
+author: windows-driver-content
+description: The FltIsOperationSynchronous routine determines whether a given callback data structure (FLT_CALLBACK_DATA) represents a synchronous or asynchronous I/O operation.
+old-location: ifsk\fltisoperationsynchronous.htm
+old-project: ifsk
+ms.assetid: 44594383-9f07-4b6a-8ea3-eaf84c9fefda
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltIsOperationSynchronous routine [Installable File System Drivers], FltApiRef_e_to_o_f80a8dfd-53b1-42cf-9d7c-18fc4af6ff4e.xml, ifsk.fltisoperationsynchronous, fltkernel/FltIsOperationSynchronous, FltIsOperationSynchronous
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltIsOperationSynchronous
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

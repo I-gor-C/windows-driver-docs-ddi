@@ -1,42 +1,47 @@
 ---
-UID : NC:wdm.GET_VIRTUAL_FUNCTION_PROBED_BARS
-title : GET_VIRTUAL_FUNCTION_PROBED_BARS
-author : windows-driver-content
-description : The GetVirtualFunctionProbedBars routine returns the values of the PCI Express (PCIe) Base Address Registers (BARs) of a device that supports the single root I/O virtualization (SR-IOV) interface.
-old-location : pci\getvirtualfunctionprobedbars.htm
-old-project : PCI
-ms.assetid : 02A86A3E-D543-4F0F-9985-7D42F381F8F1
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : PCI.getvirtualfunctionprobedbars, GetVirtualFunctionProbedBars routine, GetVirtualFunctionProbedBars, GET_VIRTUAL_FUNCTION_PROBED_BARS, GET_VIRTUAL_FUNCTION_PROBED_BARS, wdm/GetVirtualFunctionProbedBars
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdm.h
-req.include-header : Wdm.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported in Windows Server 2012 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
-req.product : Windows 10 or later.
+UID: NC:wdm.GET_VIRTUAL_FUNCTION_PROBED_BARS
+title: GET_VIRTUAL_FUNCTION_PROBED_BARS
+author: windows-driver-content
+description: The GetVirtualFunctionProbedBars routine returns the values of the PCI Express (PCIe) Base Address Registers (BARs) of a device that supports the single root I/O virtualization (SR-IOV) interface.
+old-location: pci\getvirtualfunctionprobedbars.htm
+old-project: PCI
+ms.assetid: 02A86A3E-D543-4F0F-9985-7D42F381F8F1
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: PCI.getvirtualfunctionprobedbars, GetVirtualFunctionProbedBars routine, GetVirtualFunctionProbedBars, GET_VIRTUAL_FUNCTION_PROBED_BARS, GET_VIRTUAL_FUNCTION_PROBED_BARS, wdm/GetVirtualFunctionProbedBars
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdm.h
+req.include-header: Wdm.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported in Windows Server 2012 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Wdm.h
+apiname:
+-	GetVirtualFunctionProbedBars
+product: Windows
+targetos: Windows
+req.typenames: WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+req.product: Windows 10 or later.
 ---
 
 

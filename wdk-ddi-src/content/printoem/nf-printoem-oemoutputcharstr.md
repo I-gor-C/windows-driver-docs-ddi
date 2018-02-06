@@ -1,42 +1,47 @@
 ---
-UID : NF:printoem.OEMOutputCharStr
-title : OEMOutputCharStr function
-author : windows-driver-content
-description : OEMOutputCharStr function
-old-location : print\oemoutputcharstr.htm
-old-project : print
-ms.assetid : ac23ec89-b455-4bfd-93a5-2294d8b8ffc2
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : print_obsoletefunctions_250a623a-d7ce-48ba-9163-c24f52eb687d.xml, print.oemoutputcharstr, OEMOutputCharStr function [Print Devices], OEMOutputCharStr, printoem/OEMOutputCharStr
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : printoem.h
-req.include-header : Printoem.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STDVARIABLEINDEX
-req.product : Windows 10 or later.
+UID: NF:printoem.OEMOutputCharStr
+title: OEMOutputCharStr function
+author: windows-driver-content
+description: OEMOutputCharStr function
+old-location: print\oemoutputcharstr.htm
+old-project: print
+ms.assetid: ac23ec89-b455-4bfd-93a5-2294d8b8ffc2
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: print_obsoletefunctions_250a623a-d7ce-48ba-9163-c24f52eb687d.xml, print.oemoutputcharstr, OEMOutputCharStr function [Print Devices], OEMOutputCharStr, printoem/OEMOutputCharStr
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: printoem.h
+req.include-header: Printoem.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	printoem.h
+apiname:
+-	OEMOutputCharStr
+product: Windows
+targetos: Windows
+req.typenames: STDVARIABLEINDEX
+req.product: Windows 10 or later.
 ---
 
 

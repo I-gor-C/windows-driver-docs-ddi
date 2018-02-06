@@ -1,41 +1,46 @@
 ---
-UID : NS:mountmgr._MOUNTMGR_MOUNT_POINTS
-title : "_MOUNTMGR_MOUNT_POINTS"
-author : windows-driver-content
-description : The MOUNTMGR_MOUNT_POINTS structure is used by mount manager to send a client the list of mount points associated with a device.
-old-location : storage\mountmgr_mount_points.htm
-old-project : storage
-ms.assetid : e85c0d92-d989-4afc-8516-c63535d2c728
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : MOUNTMGR_MOUNT_POINTS structure [Storage Devices], structs-mntmgr_844fdf51-1324-4b1d-b68f-abba5f471652.xml, mountmgr/MOUNTMGR_MOUNT_POINTS, *PMOUNTMGR_MOUNT_POINTS, mountmgr/PMOUNTMGR_MOUNT_POINTS, PMOUNTMGR_MOUNT_POINTS structure pointer [Storage Devices], MOUNTMGR_MOUNT_POINTS, PMOUNTMGR_MOUNT_POINTS, storage.mountmgr_mount_points, _MOUNTMGR_MOUNT_POINTS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : mountmgr.h
-req.include-header : Mountmgr.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : MOUNTMGR_MOUNT_POINTS, *PMOUNTMGR_MOUNT_POINTS
+UID: NS:mountmgr._MOUNTMGR_MOUNT_POINTS
+title: "_MOUNTMGR_MOUNT_POINTS"
+author: windows-driver-content
+description: The MOUNTMGR_MOUNT_POINTS structure is used by mount manager to send a client the list of mount points associated with a device.
+old-location: storage\mountmgr_mount_points.htm
+old-project: storage
+ms.assetid: e85c0d92-d989-4afc-8516-c63535d2c728
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: MOUNTMGR_MOUNT_POINTS structure [Storage Devices], structs-mntmgr_844fdf51-1324-4b1d-b68f-abba5f471652.xml, mountmgr/MOUNTMGR_MOUNT_POINTS, *PMOUNTMGR_MOUNT_POINTS, mountmgr/PMOUNTMGR_MOUNT_POINTS, PMOUNTMGR_MOUNT_POINTS structure pointer [Storage Devices], MOUNTMGR_MOUNT_POINTS, PMOUNTMGR_MOUNT_POINTS, storage.mountmgr_mount_points, _MOUNTMGR_MOUNT_POINTS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: mountmgr.h
+req.include-header: Mountmgr.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	mountmgr.h
+apiname:
+-	MOUNTMGR_MOUNT_POINTS
+product: Windows
+targetos: Windows
+req.typenames: MOUNTMGR_MOUNT_POINTS, *PMOUNTMGR_MOUNT_POINTS
 ---
 
 # _MOUNTMGR_MOUNT_POINTS structure

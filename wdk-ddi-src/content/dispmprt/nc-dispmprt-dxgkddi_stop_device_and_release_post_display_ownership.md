@@ -1,41 +1,46 @@
 ---
-UID : NC:dispmprt.DXGKDDI_STOP_DEVICE_AND_RELEASE_POST_DISPLAY_OWNERSHIP
-title : DXGKDDI_STOP_DEVICE_AND_RELEASE_POST_DISPLAY_OWNERSHIP
-author : windows-driver-content
-description : Called by the operating system to request the display miniport driver to reset the display device and to release ownership of the current power-on self-test (POST) device.
-old-location : display\dxgkddireleasepostdisplayownership.htm
-old-project : display
-ms.assetid : 6AF170BF-C422-4340-8935-31A4D4F3EFA5
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkddireleasepostdisplayownership, DxgkDdiStopDeviceAndReleasePostDisplayOwnership callback function [Display Devices], DxgkDdiStopDeviceAndReleasePostDisplayOwnership, DXGKDDI_STOP_DEVICE_AND_RELEASE_POST_DISPLAY_OWNERSHIP, DXGKDDI_STOP_DEVICE_AND_RELEASE_POST_DISPLAY_OWNERSHIP, dispmprt/DxgkDdiStopDeviceAndReleasePostDisplayOwnership
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : dispmprt.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
+UID: NC:dispmprt.DXGKDDI_STOP_DEVICE_AND_RELEASE_POST_DISPLAY_OWNERSHIP
+title: DXGKDDI_STOP_DEVICE_AND_RELEASE_POST_DISPLAY_OWNERSHIP
+author: windows-driver-content
+description: Called by the operating system to request the display miniport driver to reset the display device and to release ownership of the current power-on self-test (POST) device.
+old-location: display\dxgkddireleasepostdisplayownership.htm
+old-project: display
+ms.assetid: 6AF170BF-C422-4340-8935-31A4D4F3EFA5
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkddireleasepostdisplayownership, DxgkDdiStopDeviceAndReleasePostDisplayOwnership callback function [Display Devices], DxgkDdiStopDeviceAndReleasePostDisplayOwnership, DXGKDDI_STOP_DEVICE_AND_RELEASE_POST_DISPLAY_OWNERSHIP, DXGKDDI_STOP_DEVICE_AND_RELEASE_POST_DISPLAY_OWNERSHIP, dispmprt/DxgkDdiStopDeviceAndReleasePostDisplayOwnership
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: dispmprt.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	dispmprt.h
+apiname:
+-	DxgkDdiStopDeviceAndReleasePostDisplayOwnership
+product: Windows
+targetos: Windows
+req.typenames: SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ---
 
 

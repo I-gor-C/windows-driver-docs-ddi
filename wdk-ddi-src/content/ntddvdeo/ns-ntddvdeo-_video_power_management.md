@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddvdeo._VIDEO_POWER_MANAGEMENT
-title : "_VIDEO_POWER_MANAGEMENT"
-author : windows-driver-content
-description : The VIDEO_POWER_MANAGEMENT structure contains information required by the miniport driver to perform power management.
-old-location : display\video_power_management.htm
-old-project : display
-ms.assetid : 9522c504-9bdb-4388-b047-340a211463dd
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : PVIDEO_POWER_MANAGEMENT, Video_Structs_d179543a-6712-4c33-a945-7bbf8a5bc1ed.xml, ntddvdeo/VIDEO_POWER_MANAGEMENT, ntddvdeo/PVIDEO_POWER_MANAGEMENT, VIDEO_POWER_MANAGEMENT structure [Display Devices], _VIDEO_POWER_MANAGEMENT, VIDEO_POWER_MANAGEMENT, *PVIDEO_POWER_MANAGEMENT, display.video_power_management, PVIDEO_POWER_MANAGEMENT structure pointer [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddvdeo.h
-req.include-header : Ntddvdeo.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PVIDEO_POWER_MANAGEMENT, VIDEO_POWER_MANAGEMENT"
+UID: NS:ntddvdeo._VIDEO_POWER_MANAGEMENT
+title: "_VIDEO_POWER_MANAGEMENT"
+author: windows-driver-content
+description: The VIDEO_POWER_MANAGEMENT structure contains information required by the miniport driver to perform power management.
+old-location: display\video_power_management.htm
+old-project: display
+ms.assetid: 9522c504-9bdb-4388-b047-340a211463dd
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: PVIDEO_POWER_MANAGEMENT, Video_Structs_d179543a-6712-4c33-a945-7bbf8a5bc1ed.xml, ntddvdeo/VIDEO_POWER_MANAGEMENT, ntddvdeo/PVIDEO_POWER_MANAGEMENT, VIDEO_POWER_MANAGEMENT structure [Display Devices], _VIDEO_POWER_MANAGEMENT, VIDEO_POWER_MANAGEMENT, *PVIDEO_POWER_MANAGEMENT, display.video_power_management, PVIDEO_POWER_MANAGEMENT structure pointer [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddvdeo.h
+req.include-header: Ntddvdeo.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddvdeo.h
+apiname:
+-	VIDEO_POWER_MANAGEMENT
+product: Windows
+targetos: Windows
+req.typenames: "*PVIDEO_POWER_MANAGEMENT, VIDEO_POWER_MANAGEMENT"
 ---
 
 # _VIDEO_POWER_MANAGEMENT structure

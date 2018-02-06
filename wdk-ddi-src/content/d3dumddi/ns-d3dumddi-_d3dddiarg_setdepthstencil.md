@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._D3DDDIARG_SETDEPTHSTENCIL
-title : "_D3DDDIARG_SETDEPTHSTENCIL"
-author : windows-driver-content
-description : The D3DDDIARG_SETDEPTHSTENCIL structure specifies a depth buffer.
-old-location : display\d3dddiarg_setdepthstencil.htm
-old-project : display
-ms.assetid : 9d0e9762-060e-40bb-9914-3577a086e8e0
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DDDIARG_SETDEPTHSTENCIL structure [Display Devices], _D3DDDIARG_SETDEPTHSTENCIL, display.d3dddiarg_setdepthstencil, d3dumddi/D3DDDIARG_SETDEPTHSTENCIL, UMDisplayDriver_param_Structs_8e3b527c-b594-4bed-9fe1-c8f3a410746d.xml, D3DDDIARG_SETDEPTHSTENCIL
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDIARG_SETDEPTHSTENCIL
+UID: NS:d3dumddi._D3DDDIARG_SETDEPTHSTENCIL
+title: "_D3DDDIARG_SETDEPTHSTENCIL"
+author: windows-driver-content
+description: The D3DDDIARG_SETDEPTHSTENCIL structure specifies a depth buffer.
+old-location: display\d3dddiarg_setdepthstencil.htm
+old-project: display
+ms.assetid: 9d0e9762-060e-40bb-9914-3577a086e8e0
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DDDIARG_SETDEPTHSTENCIL structure [Display Devices], _D3DDDIARG_SETDEPTHSTENCIL, display.d3dddiarg_setdepthstencil, d3dumddi/D3DDDIARG_SETDEPTHSTENCIL, UMDisplayDriver_param_Structs_8e3b527c-b594-4bed-9fe1-c8f3a410746d.xml, D3DDDIARG_SETDEPTHSTENCIL
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	D3DDDIARG_SETDEPTHSTENCIL
+product: Windows
+targetos: Windows
+req.typenames: D3DDDIARG_SETDEPTHSTENCIL
 ---
 
 # _D3DDDIARG_SETDEPTHSTENCIL structure

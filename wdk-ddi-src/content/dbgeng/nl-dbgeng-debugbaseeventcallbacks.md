@@ -1,41 +1,46 @@
 ---
-UID : NL:dbgeng.DebugBaseEventCallbacks
-title : DebugBaseEventCallbacks
-author : windows-driver-content
-description : The DebugBaseEventCallbacks class provides a base implementation of the IDebugEventCallbacks interface.
-old-location : debugger\debugbaseeventcallbacks.htm
-old-project : debugger
-ms.assetid : B0422248-2F5F-4AE6-93C9-D96B5E4A1B5A
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : debugger.debugbaseeventcallbacks, DebugBaseEventCallbacks class [Windows Debugging], DebugBaseEventCallbacks class [Windows Debugging], described, DebugBaseEventCallbacks, dbgeng/DebugBaseEventCallbacks
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : class
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NL:dbgeng.DebugBaseEventCallbacks
+title: DebugBaseEventCallbacks
+author: windows-driver-content
+description: The DebugBaseEventCallbacks class provides a base implementation of the IDebugEventCallbacks interface.
+old-location: debugger\debugbaseeventcallbacks.htm
+old-project: debugger
+ms.assetid: B0422248-2F5F-4AE6-93C9-D96B5E4A1B5A
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: debugger.debugbaseeventcallbacks, DebugBaseEventCallbacks class [Windows Debugging], DebugBaseEventCallbacks class [Windows Debugging], described, DebugBaseEventCallbacks, dbgeng/DebugBaseEventCallbacks
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: class
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	DebugBaseEventCallbacks
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 # DebugBaseEventCallbacks Class

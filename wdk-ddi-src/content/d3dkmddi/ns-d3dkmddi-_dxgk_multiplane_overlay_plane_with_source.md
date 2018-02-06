@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGK_MULTIPLANE_OVERLAY_PLANE_WITH_SOURCE
-title : "_DXGK_MULTIPLANE_OVERLAY_PLANE_WITH_SOURCE"
-author : windows-driver-content
-description : DXGK_MULTIPLANE_OVERLAY_PLANE_WITH_SOURCE describes the multi-plane overlay plane attributes, allocation, and video present network source identification number.
-old-location : display\dxgk_multiplane_overlay_plane_with_source.htm
-old-project : display
-ms.assetid : 358C060B-23A0-4F02-A5D3-07ADC3435849
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DXGK_MULTIPLANE_OVERLAY_PLANE_WITH_SOURCE, d3dkmddi/DXGK_MULTIPLANE_OVERLAY_PLANE_WITH_SOURCE, DXGK_MULTIPLANE_OVERLAY_PLANE_WITH_SOURCE structure [Display Devices], display.dxgk_multiplane_overlay_plane_with_source, _DXGK_MULTIPLANE_OVERLAY_PLANE_WITH_SOURCE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_MULTIPLANE_OVERLAY_PLANE_WITH_SOURCE
+UID: NS:d3dkmddi._DXGK_MULTIPLANE_OVERLAY_PLANE_WITH_SOURCE
+title: "_DXGK_MULTIPLANE_OVERLAY_PLANE_WITH_SOURCE"
+author: windows-driver-content
+description: DXGK_MULTIPLANE_OVERLAY_PLANE_WITH_SOURCE describes the multi-plane overlay plane attributes, allocation, and video present network source identification number.
+old-location: display\dxgk_multiplane_overlay_plane_with_source.htm
+old-project: display
+ms.assetid: 358C060B-23A0-4F02-A5D3-07ADC3435849
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DXGK_MULTIPLANE_OVERLAY_PLANE_WITH_SOURCE, d3dkmddi/DXGK_MULTIPLANE_OVERLAY_PLANE_WITH_SOURCE, DXGK_MULTIPLANE_OVERLAY_PLANE_WITH_SOURCE structure [Display Devices], display.dxgk_multiplane_overlay_plane_with_source, _DXGK_MULTIPLANE_OVERLAY_PLANE_WITH_SOURCE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DXGK_MULTIPLANE_OVERLAY_PLANE_WITH_SOURCE
+product: Windows
+targetos: Windows
+req.typenames: DXGK_MULTIPLANE_OVERLAY_PLANE_WITH_SOURCE
 ---
 
 # _DXGK_MULTIPLANE_OVERLAY_PLANE_WITH_SOURCE structure

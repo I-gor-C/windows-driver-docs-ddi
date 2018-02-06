@@ -1,42 +1,47 @@
 ---
-UID : NF:wdbgexts.WriteIoSpaceEx64
-title : WriteIoSpaceEx64 function
-author : windows-driver-content
-description : The WriteIoSpaceEx64 function is an extended version of WriteIoSpace64.
-old-location : debugger\writeiospaceex64.htm
-old-project : debugger
-ms.assetid : 4fc874ab-b31d-41ae-baeb-18819c4e3970
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : WriteIoSpaceEx64 function [Windows Debugging], WriteIoSpaceEx64, debugger.writeiospaceex64, WdbgExts_Ref_378f5c2e-fcbc-4401-8527-f6e98bfa6257.xml, wdbgexts/WriteIoSpaceEx64
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdbgexts.h
-req.include-header : Wdbgexts.h, Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXT_TDOP
-req.product : Windows 10 or later.
+UID: NF:wdbgexts.WriteIoSpaceEx64
+title: WriteIoSpaceEx64 function
+author: windows-driver-content
+description: The WriteIoSpaceEx64 function is an extended version of WriteIoSpace64.
+old-location: debugger\writeiospaceex64.htm
+old-project: debugger
+ms.assetid: 4fc874ab-b31d-41ae-baeb-18819c4e3970
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: WriteIoSpaceEx64 function [Windows Debugging], WriteIoSpaceEx64, debugger.writeiospaceex64, WdbgExts_Ref_378f5c2e-fcbc-4401-8527-f6e98bfa6257.xml, wdbgexts/WriteIoSpaceEx64
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdbgexts.h
+req.include-header: Wdbgexts.h, Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdbgexts.h
+apiname:
+-	WriteIoSpaceEx64
+product: Windows
+targetos: Windows
+req.typenames: EXT_TDOP
+req.product: Windows 10 or later.
 ---
 
 

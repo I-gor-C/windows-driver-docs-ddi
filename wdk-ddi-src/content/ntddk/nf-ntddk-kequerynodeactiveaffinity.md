@@ -1,41 +1,46 @@
 ---
-UID : NF:ntddk.KeQueryNodeActiveAffinity
-title : KeQueryNodeActiveAffinity function
-author : windows-driver-content
-description : The KeQueryNodeActiveAffinity routine gets the current processor affinity of a specified node in a multiprocessor system that has a non-uniform memory access (NUMA) architecture.
-old-location : kernel\kequerynodeactiveaffinity.htm
-old-project : kernel
-ms.assetid : 49d4c9c7-217f-41b7-b870-886dd78e04a9
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : KeQueryNodeActiveAffinity, KeQueryNodeActiveAffinity routine [Kernel-Mode Driver Architecture], wdm/KeQueryNodeActiveAffinity, kernel.kequerynodeactiveaffinity, k105_05e2547a-e13e-4ade-9139-29690a72e9ed.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntddk.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 7 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.KeQueryNodeActiveAffinity
+title: KeQueryNodeActiveAffinity function
+author: windows-driver-content
+description: The KeQueryNodeActiveAffinity routine gets the current processor affinity of a specified node in a multiprocessor system that has a non-uniform memory access (NUMA) architecture.
+old-location: kernel\kequerynodeactiveaffinity.htm
+old-project: kernel
+ms.assetid: 49d4c9c7-217f-41b7-b870-886dd78e04a9
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: KeQueryNodeActiveAffinity, KeQueryNodeActiveAffinity routine [Kernel-Mode Driver Architecture], wdm/KeQueryNodeActiveAffinity, kernel.kequerynodeactiveaffinity, k105_05e2547a-e13e-4ade-9139-29690a72e9ed.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntddk.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 7 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	KeQueryNodeActiveAffinity
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

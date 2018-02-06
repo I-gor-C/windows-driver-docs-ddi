@@ -1,42 +1,47 @@
 ---
-UID : NC:wsk.PFN_WSK_CLIENT_EVENT
-title : PFN_WSK_CLIENT_EVENT
-author : windows-driver-content
-description : The WskClientEvent event callback function notifies a WSK application about events that are not specific to a particular socket.
-old-location : netvista\wskclientevent.htm
-old-project : netvista
-ms.assetid : 5511f540-4448-4cbe-849a-b1712453fae1
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.wskclientevent, WskClientEvent callback function [Network Drivers Starting with Windows Vista], WskClientEvent, PFN_WSK_CLIENT_EVENT, PFN_WSK_CLIENT_EVENT, wsk/WskClientEvent, wskref_c9f563f1-19c1-4f8d-ab44-04eedd74763f.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wsk.h
-req.include-header : Wsk.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating   systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WNODE_HEADER, *PWNODE_HEADER
-req.product : Windows 10 or later.
+UID: NC:wsk.PFN_WSK_CLIENT_EVENT
+title: PFN_WSK_CLIENT_EVENT
+author: windows-driver-content
+description: The WskClientEvent event callback function notifies a WSK application about events that are not specific to a particular socket.
+old-location: netvista\wskclientevent.htm
+old-project: netvista
+ms.assetid: 5511f540-4448-4cbe-849a-b1712453fae1
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.wskclientevent, WskClientEvent callback function [Network Drivers Starting with Windows Vista], WskClientEvent, PFN_WSK_CLIENT_EVENT, PFN_WSK_CLIENT_EVENT, wsk/WskClientEvent, wskref_c9f563f1-19c1-4f8d-ab44-04eedd74763f.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wsk.h
+req.include-header: Wsk.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	wsk.h
+apiname:
+-	WskClientEvent
+product: Windows
+targetos: Windows
+req.typenames: WNODE_HEADER, *PWNODE_HEADER
+req.product: Windows 10 or later.
 ---
 
 

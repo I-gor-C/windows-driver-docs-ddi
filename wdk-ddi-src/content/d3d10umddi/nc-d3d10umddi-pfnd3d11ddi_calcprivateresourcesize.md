@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3D11DDI_CALCPRIVATERESOURCESIZE
-title : PFND3D11DDI_CALCPRIVATERESOURCESIZE
-author : windows-driver-content
-description : The CalcPrivateResourceSize(D3D11) function determines the size of the user-mode display driver's private region of memory (that is, the size of internal driver structures, not the size of the resource video memory).
-old-location : display\calcprivateresourcesize_d3d11_.htm
-old-project : display
-ms.assetid : 3b3a2571-012e-4acd-b836-f52e7b88a2fb
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.calcprivateresourcesize_d3d11_, CalcPrivateResourceSize callback function [Display Devices], CalcPrivateResourceSize, PFND3D11DDI_CALCPRIVATERESOURCESIZE, PFND3D11DDI_CALCPRIVATERESOURCESIZE, d3d10umddi/CalcPrivateResourceSize, UserModeDisplayDriverDx11_Functions_85fd70d1-91ec-4b9d-b379-18b5d3d43e67.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : CalcPrivateResourceSize(D3D11) is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3D11DDI_CALCPRIVATERESOURCESIZE
+title: PFND3D11DDI_CALCPRIVATERESOURCESIZE
+author: windows-driver-content
+description: The CalcPrivateResourceSize(D3D11) function determines the size of the user-mode display driver's private region of memory (that is, the size of internal driver structures, not the size of the resource video memory).
+old-location: display\calcprivateresourcesize_d3d11_.htm
+old-project: display
+ms.assetid: 3b3a2571-012e-4acd-b836-f52e7b88a2fb
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.calcprivateresourcesize_d3d11_, CalcPrivateResourceSize callback function [Display Devices], CalcPrivateResourceSize, PFND3D11DDI_CALCPRIVATERESOURCESIZE, PFND3D11DDI_CALCPRIVATERESOURCESIZE, d3d10umddi/CalcPrivateResourceSize, UserModeDisplayDriverDx11_Functions_85fd70d1-91ec-4b9d-b379-18b5d3d43e67.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: CalcPrivateResourceSize(D3D11) is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	CalcPrivateResourceSize
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

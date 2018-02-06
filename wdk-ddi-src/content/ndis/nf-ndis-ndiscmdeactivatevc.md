@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisCmDeactivateVc
-title : NdisCmDeactivateVc function
-author : windows-driver-content
-description : NdisCmDeactivateVc notifies NDIS and the underlying miniport driver that there will be no further transfers on a particular active VC.
-old-location : netvista\ndiscmdeactivatevc.htm
-old-project : netvista
-ms.assetid : 141830de-e113-4f42-91f8-8f1cdbf3e32c
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NdisCmDeactivateVc, netvista.ndiscmdeactivatevc, condis_call_manager_ref_3d365bcf-91cc-4724-a4af-77e9bea6fe0c.xml, ndis/NdisCmDeactivateVc, NdisCmDeactivateVc function [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisCmDeactivateVc (NDIS 5.1))   in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisCmDeactivateVc (NDIS 5.1))   in Windows XP.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_CallManager_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisCmDeactivateVc
+title: NdisCmDeactivateVc function
+author: windows-driver-content
+description: NdisCmDeactivateVc notifies NDIS and the underlying miniport driver that there will be no further transfers on a particular active VC.
+old-location: netvista\ndiscmdeactivatevc.htm
+old-project: netvista
+ms.assetid: 141830de-e113-4f42-91f8-8f1cdbf3e32c
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NdisCmDeactivateVc, netvista.ndiscmdeactivatevc, condis_call_manager_ref_3d365bcf-91cc-4724-a4af-77e9bea6fe0c.xml, ndis/NdisCmDeactivateVc, NdisCmDeactivateVc function [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisCmDeactivateVc (NDIS 5.1))   in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisCmDeactivateVc (NDIS 5.1))   in Windows XP.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_CallManager_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisCmDeactivateVc
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

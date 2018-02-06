@@ -1,42 +1,47 @@
 ---
-UID : NS:wwan._WWAN_CONTEXT
-title : "_WWAN_CONTEXT"
-author : windows-driver-content
-description : The WWAN_CONTEXT structure represents a provisioned context that is supported by the MB device.
-old-location : netvista\wwan_context.htm
-old-project : netvista
-ms.assetid : 81687237-7b24-439f-b706-e0bf95b4de68
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : WWAN_CONTEXT, WwanRef_6700da85-2a7a-4712-86e8-fb40e11e42a1.xml, _WWAN_CONTEXT, wwan/PWWAN_CONTEXT, netvista.wwan_context, PWWAN_CONTEXT, *PWWAN_CONTEXT, WWAN_CONTEXT structure [Network Drivers Starting with Windows Vista], wwan/WWAN_CONTEXT, PWWAN_CONTEXT structure pointer [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wwan.h
-req.include-header : Wwan.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WWAN_CONTEXT, *PWWAN_CONTEXT
-req.product : Windows 10 or later.
+UID: NS:wwan._WWAN_CONTEXT
+title: "_WWAN_CONTEXT"
+author: windows-driver-content
+description: The WWAN_CONTEXT structure represents a provisioned context that is supported by the MB device.
+old-location: netvista\wwan_context.htm
+old-project: netvista
+ms.assetid: 81687237-7b24-439f-b706-e0bf95b4de68
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: WWAN_CONTEXT, WwanRef_6700da85-2a7a-4712-86e8-fb40e11e42a1.xml, _WWAN_CONTEXT, wwan/PWWAN_CONTEXT, netvista.wwan_context, PWWAN_CONTEXT, *PWWAN_CONTEXT, WWAN_CONTEXT structure [Network Drivers Starting with Windows Vista], wwan/WWAN_CONTEXT, PWWAN_CONTEXT structure pointer [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wwan.h
+req.include-header: Wwan.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wwan.h
+apiname:
+-	WWAN_CONTEXT
+product: Windows
+targetos: Windows
+req.typenames: WWAN_CONTEXT, *PWWAN_CONTEXT
+req.product: Windows 10 or later.
 ---
 
 # _WWAN_CONTEXT structure

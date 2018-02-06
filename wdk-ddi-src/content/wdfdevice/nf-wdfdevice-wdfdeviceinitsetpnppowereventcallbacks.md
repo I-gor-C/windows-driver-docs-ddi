@@ -1,42 +1,50 @@
 ---
-UID : NF:wdfdevice.WdfDeviceInitSetPnpPowerEventCallbacks
-title : WdfDeviceInitSetPnpPowerEventCallbacks function
-author : windows-driver-content
-description : The WdfDeviceInitSetPnpPowerEventCallbacks method registers a driver's Plug and Play and power management event callback functions.
-old-location : wdf\wdfdeviceinitsetpnppowereventcallbacks.htm
-old-project : wdf
-ms.assetid : ace53515-0e8a-487d-abf7-caaa09478ed5
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WdfDeviceInitSetPnpPowerEventCallbacks, wdf.wdfdeviceinitsetpnppowereventcallbacks, DFDeviceObjectGeneralRef_6a2f152e-b1ee-492e-a986-9c1ea925ff24.xml, wdfdevice/WdfDeviceInitSetPnpPowerEventCallbacks, kmdf.wdfdeviceinitsetpnppowereventcallbacks, WdfDeviceInitSetPnpPowerEventCallbacks method, PFN_WDFDEVICEINITSETPNPPOWEREVENTCALLBACKS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfdevice.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : ChildDeviceInitAPI, DeviceInitAPI, DriverCreate, DrvAckIoStop, KmdfIrql, KmdfIrql2, PdoDeviceInitAPI
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_STATE_NOTIFICATION_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfdevice.WdfDeviceInitSetPnpPowerEventCallbacks
+title: WdfDeviceInitSetPnpPowerEventCallbacks function
+author: windows-driver-content
+description: The WdfDeviceInitSetPnpPowerEventCallbacks method registers a driver's Plug and Play and power management event callback functions.
+old-location: wdf\wdfdeviceinitsetpnppowereventcallbacks.htm
+old-project: wdf
+ms.assetid: ace53515-0e8a-487d-abf7-caaa09478ed5
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WdfDeviceInitSetPnpPowerEventCallbacks, wdf.wdfdeviceinitsetpnppowereventcallbacks, DFDeviceObjectGeneralRef_6a2f152e-b1ee-492e-a986-9c1ea925ff24.xml, wdfdevice/WdfDeviceInitSetPnpPowerEventCallbacks, kmdf.wdfdeviceinitsetpnppowereventcallbacks, WdfDeviceInitSetPnpPowerEventCallbacks method, PFN_WDFDEVICEINITSETPNPPOWEREVENTCALLBACKS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfdevice.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: ChildDeviceInitAPI, DeviceInitAPI, DriverCreate, DrvAckIoStop, KmdfIrql, KmdfIrql2, PdoDeviceInitAPI
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+-	WUDFx02000.dll
+-	WUDFx02000.dll.dll
+apiname:
+-	WdfDeviceInitSetPnpPowerEventCallbacks
+product: Windows
+targetos: Windows
+req.typenames: WDF_STATE_NOTIFICATION_TYPE
+req.product: Windows 10 or later.
 ---
 
 

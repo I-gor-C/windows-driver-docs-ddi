@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFIoRequest3.GetUserModeDriverInitiatedIo
-title : IWDFIoRequest3::GetUserModeDriverInitiatedIo method
-author : windows-driver-content
-description : The GetUserModeDriverInitiatedIo method determines whether an I/O request is marked as initiated by a UMDF driver.
-old-location : wdf\iwdfiorequest3_getusermodedriverinitiatedio.htm
-old-project : wdf
-ms.assetid : 41C4E9D2-DC1B-4DFC-8C15-E9C21515B5F0
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : GetUserModeDriverInitiatedIo method, GetUserModeDriverInitiatedIo, IWDFIoRequest3, wudfddi/IWDFIoRequest3::GetUserModeDriverInitiatedIo, GetUserModeDriverInitiatedIo method, IWDFIoRequest3 interface, IWDFIoRequest3 interface, GetUserModeDriverInitiatedIo method, umdf.iwdfiorequest3_getusermodedriverinitiatedio, IWDFIoRequest3::GetUserModeDriverInitiatedIo, wdf.iwdfiorequest3_getusermodedriverinitiatedio
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.11
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFIoRequest3.GetUserModeDriverInitiatedIo
+title: IWDFIoRequest3::GetUserModeDriverInitiatedIo method
+author: windows-driver-content
+description: The GetUserModeDriverInitiatedIo method determines whether an I/O request is marked as initiated by a UMDF driver.
+old-location: wdf\iwdfiorequest3_getusermodedriverinitiatedio.htm
+old-project: wdf
+ms.assetid: 41C4E9D2-DC1B-4DFC-8C15-E9C21515B5F0
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: GetUserModeDriverInitiatedIo method, GetUserModeDriverInitiatedIo, IWDFIoRequest3, wudfddi/IWDFIoRequest3::GetUserModeDriverInitiatedIo, GetUserModeDriverInitiatedIo method, IWDFIoRequest3 interface, IWDFIoRequest3 interface, GetUserModeDriverInitiatedIo method, umdf.iwdfiorequest3_getusermodedriverinitiatedio, IWDFIoRequest3::GetUserModeDriverInitiatedIo, wdf.iwdfiorequest3_getusermodedriverinitiatedio
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.11
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFIoRequest3.GetUserModeDriverInitiatedIo
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3D11DDI_DESTROYUNORDEREDACCESSVIEW
-title : PFND3D11DDI_DESTROYUNORDEREDACCESSVIEW
-author : windows-driver-content
-description : Destroys an unordered access view.
-old-location : display\destroyunorderedaccessview.htm
-old-project : display
-ms.assetid : 1bce3519-f333-4b47-b29b-bde1b5c3005c
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.destroyunorderedaccessview, DestroyUnorderedAccessView callback function [Display Devices], DestroyUnorderedAccessView, PFND3D11DDI_DESTROYUNORDEREDACCESSVIEW, PFND3D11DDI_DESTROYUNORDEREDACCESSVIEW, d3d10umddi/DestroyUnorderedAccessView, UserModeDisplayDriverDx11_Functions_65ca10d0-2325-40f6-befa-8ad6ea5f0efd.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : DestroyUnorderedAccessView is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3D11DDI_DESTROYUNORDEREDACCESSVIEW
+title: PFND3D11DDI_DESTROYUNORDEREDACCESSVIEW
+author: windows-driver-content
+description: Destroys an unordered access view.
+old-location: display\destroyunorderedaccessview.htm
+old-project: display
+ms.assetid: 1bce3519-f333-4b47-b29b-bde1b5c3005c
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.destroyunorderedaccessview, DestroyUnorderedAccessView callback function [Display Devices], DestroyUnorderedAccessView, PFND3D11DDI_DESTROYUNORDEREDACCESSVIEW, PFND3D11DDI_DESTROYUNORDEREDACCESSVIEW, d3d10umddi/DestroyUnorderedAccessView, UserModeDisplayDriverDx11_Functions_65ca10d0-2325-40f6-befa-8ad6ea5f0efd.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: DestroyUnorderedAccessView is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	DestroyUnorderedAccessView
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

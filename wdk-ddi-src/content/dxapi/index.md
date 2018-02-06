@@ -1,12 +1,12 @@
 ---
-UID : NA:dxapi
-ms.assetid : e45b4941-1567-3e35-b90e-c4b63e233061
-ms.author : windowsdriverdev
-ms.date : 01/18/18
-ms.keywords : 
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : portal
+UID: NA:dxapi
+ms.assetid: e45b4941-1567-3e35-b90e-c4b63e233061
+ms.author: windowsdriverdev
+ms.date: 01/18/18
+ms.keywords: 
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: portal
 ---
 
 # dxapi.h header

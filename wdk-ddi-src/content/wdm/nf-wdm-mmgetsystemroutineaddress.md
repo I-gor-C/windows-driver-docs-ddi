@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.MmGetSystemRoutineAddress
-title : MmGetSystemRoutineAddress function
-author : windows-driver-content
-description : The MmGetSystemRoutineAddress routine returns a pointer to a function specified by SystemRoutineName.
-old-location : kernel\mmgetsystemroutineaddress.htm
-old-project : kernel
-ms.assetid : 87e20abc-eb65-40c0-943e-eb194022a2de
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/MmGetSystemRoutineAddress, kernel.mmgetsystemroutineaddress, MmGetSystemRoutineAddress routine [Kernel-Mode Driver Architecture], k106_4cd56243-e8f4-428a-95f2-4e7a1d2a7396.xml, MmGetSystemRoutineAddress
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.MmGetSystemRoutineAddress
+title: MmGetSystemRoutineAddress function
+author: windows-driver-content
+description: The MmGetSystemRoutineAddress routine returns a pointer to a function specified by SystemRoutineName.
+old-location: kernel\mmgetsystemroutineaddress.htm
+old-project: kernel
+ms.assetid: 87e20abc-eb65-40c0-943e-eb194022a2de
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/MmGetSystemRoutineAddress, kernel.mmgetsystemroutineaddress, MmGetSystemRoutineAddress routine [Kernel-Mode Driver Architecture], k106_4cd56243-e8f4-428a-95f2-4e7a1d2a7396.xml, MmGetSystemRoutineAddress
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	MmGetSystemRoutineAddress
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

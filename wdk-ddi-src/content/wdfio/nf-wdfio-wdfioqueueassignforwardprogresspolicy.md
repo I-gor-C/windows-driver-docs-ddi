@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfio.WdfIoQueueAssignForwardProgressPolicy
-title : WdfIoQueueAssignForwardProgressPolicy function
-author : windows-driver-content
-description : The WdfIoQueueAssignForwardProgressPolicy method enables the framework's ability to guarantee forward progress for a specified I/O queue.
-old-location : wdf\wdfioqueueassignforwardprogresspolicy.htm
-old-project : wdf
-ms.assetid : 9512ecf2-ca59-4df8-bb60-c644444bc6fa
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.wdfioqueueassignforwardprogresspolicy, DFQueueObjectRef_cd40c10b-367c-403a-8002-39662120f697.xml, WdfIoQueueAssignForwardProgressPolicy method, wdfio/WdfIoQueueAssignForwardProgressPolicy, kmdf.wdfioqueueassignforwardprogresspolicy, PFN_WDFIOQUEUEASSIGNFORWARDPROGRESSPOLICY, WdfIoQueueAssignForwardProgressPolicy
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfio.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.9
-req.umdf-ver : 
-req.ddi-compliance : DriverCreate
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_IO_QUEUE_STATE
-req.product : Windows 10 or later.
+UID: NF:wdfio.WdfIoQueueAssignForwardProgressPolicy
+title: WdfIoQueueAssignForwardProgressPolicy function
+author: windows-driver-content
+description: The WdfIoQueueAssignForwardProgressPolicy method enables the framework's ability to guarantee forward progress for a specified I/O queue.
+old-location: wdf\wdfioqueueassignforwardprogresspolicy.htm
+old-project: wdf
+ms.assetid: 9512ecf2-ca59-4df8-bb60-c644444bc6fa
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.wdfioqueueassignforwardprogresspolicy, DFQueueObjectRef_cd40c10b-367c-403a-8002-39662120f697.xml, WdfIoQueueAssignForwardProgressPolicy method, wdfio/WdfIoQueueAssignForwardProgressPolicy, kmdf.wdfioqueueassignforwardprogresspolicy, PFN_WDFIOQUEUEASSIGNFORWARDPROGRESSPOLICY, WdfIoQueueAssignForwardProgressPolicy
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfio.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.9
+req.umdf-ver: 
+req.ddi-compliance: DriverCreate
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfIoQueueAssignForwardProgressPolicy
+product: Windows
+targetos: Windows
+req.typenames: WDF_IO_QUEUE_STATE
+req.product: Windows 10 or later.
 ---
 
 

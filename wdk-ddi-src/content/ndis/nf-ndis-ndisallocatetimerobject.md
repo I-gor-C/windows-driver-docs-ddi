@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisAllocateTimerObject
-title : NdisAllocateTimerObject function
-author : windows-driver-content
-description : The NdisAllocateTimerObject function allocates and initializes a timer object for use with subsequent NdisXxx timer functions.
-old-location : netvista\ndisallocatetimerobject.htm
-old-project : netvista
-ms.assetid : feb5e4cf-7e23-434e-9dc5-bb445a6f5606
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.ndisallocatetimerobject, NdisAllocateTimerObject, ndis_timer_ref_38e524b5-9210-4c60-b9ea-66fc23593dad.xml, ndis/NdisAllocateTimerObject, NdisAllocateTimerObject function [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_Timer_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisAllocateTimerObject
+title: NdisAllocateTimerObject function
+author: windows-driver-content
+description: The NdisAllocateTimerObject function allocates and initializes a timer object for use with subsequent NdisXxx timer functions.
+old-location: netvista\ndisallocatetimerobject.htm
+old-project: netvista
+ms.assetid: feb5e4cf-7e23-434e-9dc5-bb445a6f5606
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.ndisallocatetimerobject, NdisAllocateTimerObject, ndis_timer_ref_38e524b5-9210-4c60-b9ea-66fc23593dad.xml, ndis/NdisAllocateTimerObject, NdisAllocateTimerObject function [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_Timer_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisAllocateTimerObject
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

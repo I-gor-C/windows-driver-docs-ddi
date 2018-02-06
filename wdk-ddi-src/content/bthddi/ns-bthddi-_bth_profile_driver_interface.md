@@ -1,41 +1,46 @@
 ---
-UID : NS:bthddi._BTH_PROFILE_DRIVER_INTERFACE
-title : "_BTH_PROFILE_DRIVER_INTERFACE"
-author : windows-driver-content
-description : The BTH_PROFILE_DRIVER_INTERFACE structure provides functions to allocate, free, initialize, and reuse BRBs, and to determine the currently installed Bluetooth version.
-old-location : bltooth\bth_profile_driver_interface.htm
-old-project : bltooth
-ms.assetid : d4aa5fa9-966c-49c5-b41c-ca963a201e21
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : BTH_PROFILE_DRIVER_INTERFACE, PBTH_PROFILE_DRIVER_INTERFACE structure pointer [Bluetooth Devices], *PBTH_PROFILE_DRIVER_INTERFACE, bltooth.bth_profile_driver_interface, bthddi/PBTH_PROFILE_DRIVER_INTERFACE, bth_structs_0df6b87d-3846-49ed-9614-e83f2e828e7d.xml, BTH_PROFILE_DRIVER_INTERFACE structure [Bluetooth Devices], _BTH_PROFILE_DRIVER_INTERFACE, PBTH_PROFILE_DRIVER_INTERFACE, bthddi/BTH_PROFILE_DRIVER_INTERFACE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : bthddi.h
-req.include-header : Bthddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Versions:\_Supported in Windows Vista, and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback   function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access   paged memory)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PBTH_PROFILE_DRIVER_INTERFACE, BTH_PROFILE_DRIVER_INTERFACE"
+UID: NS:bthddi._BTH_PROFILE_DRIVER_INTERFACE
+title: "_BTH_PROFILE_DRIVER_INTERFACE"
+author: windows-driver-content
+description: The BTH_PROFILE_DRIVER_INTERFACE structure provides functions to allocate, free, initialize, and reuse BRBs, and to determine the currently installed Bluetooth version.
+old-location: bltooth\bth_profile_driver_interface.htm
+old-project: bltooth
+ms.assetid: d4aa5fa9-966c-49c5-b41c-ca963a201e21
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: BTH_PROFILE_DRIVER_INTERFACE, PBTH_PROFILE_DRIVER_INTERFACE structure pointer [Bluetooth Devices], *PBTH_PROFILE_DRIVER_INTERFACE, bltooth.bth_profile_driver_interface, bthddi/PBTH_PROFILE_DRIVER_INTERFACE, bth_structs_0df6b87d-3846-49ed-9614-e83f2e828e7d.xml, BTH_PROFILE_DRIVER_INTERFACE structure [Bluetooth Devices], _BTH_PROFILE_DRIVER_INTERFACE, PBTH_PROFILE_DRIVER_INTERFACE, bthddi/BTH_PROFILE_DRIVER_INTERFACE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: bthddi.h
+req.include-header: Bthddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Versions:\_Supported in Windows Vista, and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback   function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access   paged memory)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	bthddi.h
+apiname:
+-	BTH_PROFILE_DRIVER_INTERFACE
+product: Windows
+targetos: Windows
+req.typenames: "*PBTH_PROFILE_DRIVER_INTERFACE, BTH_PROFILE_DRIVER_INTERFACE"
 ---
 
 # _BTH_PROFILE_DRIVER_INTERFACE structure

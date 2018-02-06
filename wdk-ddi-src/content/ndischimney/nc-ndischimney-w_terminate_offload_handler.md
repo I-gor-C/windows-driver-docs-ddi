@@ -1,41 +1,46 @@
 ---
-UID : NC:ndischimney.W_TERMINATE_OFFLOAD_HANDLER
-title : W_TERMINATE_OFFLOAD_HANDLER
-author : windows-driver-content
-description : The MiniportTerminateOffload function terminates the offload of one or more state objects.
-old-location : netvista\miniportterminateoffload.htm
-old-project : netvista
-ms.assetid : 1b808e3c-2d64-44c9-88d3-0a0311e1dc99
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.miniportterminateoffload, MiniportTerminateOffload callback function [Network Drivers Starting with Windows Vista], MiniportTerminateOffload, W_TERMINATE_OFFLOAD_HANDLER, W_TERMINATE_OFFLOAD_HANDLER, ndischimney/MiniportTerminateOffload, tcp_chim_miniport_func_73171220-b803-4d9e-bf13-fe4daebbe5dc.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ndischimney.h
-req.include-header : Ndischimney.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PD_BUFFER_VIRTUAL_SUBNET_INFO
+UID: NC:ndischimney.W_TERMINATE_OFFLOAD_HANDLER
+title: W_TERMINATE_OFFLOAD_HANDLER
+author: windows-driver-content
+description: The MiniportTerminateOffload function terminates the offload of one or more state objects.
+old-location: netvista\miniportterminateoffload.htm
+old-project: netvista
+ms.assetid: 1b808e3c-2d64-44c9-88d3-0a0311e1dc99
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.miniportterminateoffload, MiniportTerminateOffload callback function [Network Drivers Starting with Windows Vista], MiniportTerminateOffload, W_TERMINATE_OFFLOAD_HANDLER, W_TERMINATE_OFFLOAD_HANDLER, ndischimney/MiniportTerminateOffload, tcp_chim_miniport_func_73171220-b803-4d9e-bf13-fe4daebbe5dc.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ndischimney.h
+req.include-header: Ndischimney.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ndischimney.h
+apiname:
+-	MiniportTerminateOffload
+product: Windows
+targetos: Windows
+req.typenames: PD_BUFFER_VIRTUAL_SUBNET_INFO
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NC:video.PVIDEO_READ_CLOCK_LINE
-title : PVIDEO_READ_CLOCK_LINE
-author : windows-driver-content
-description : ReadClockLine reads a single data bit from the I2C serial clock line.
-old-location : display\readclockline.htm
-old-project : display
-ms.assetid : 1051a234-ef63-454e-8957-292e86f4efcd
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.readclockline, ReadClockLine callback function [Display Devices], ReadClockLine, PVIDEO_READ_CLOCK_LINE, PVIDEO_READ_CLOCK_LINE, video/ReadClockLine, VideoMiniport_Functions_5e7bcadb-43ea-4a1b-81b7-666cabd66aa0.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VHF_CONFIG, *PVHF_CONFIG
-req.product : Windows 10 or later.
+UID: NC:video.PVIDEO_READ_CLOCK_LINE
+title: PVIDEO_READ_CLOCK_LINE
+author: windows-driver-content
+description: ReadClockLine reads a single data bit from the I2C serial clock line.
+old-location: display\readclockline.htm
+old-project: display
+ms.assetid: 1051a234-ef63-454e-8957-292e86f4efcd
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.readclockline, ReadClockLine callback function [Display Devices], ReadClockLine, PVIDEO_READ_CLOCK_LINE, PVIDEO_READ_CLOCK_LINE, video/ReadClockLine, VideoMiniport_Functions_5e7bcadb-43ea-4a1b-81b7-666cabd66aa0.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	video.h
+apiname:
+-	ReadClockLine
+product: Windows
+targetos: Windows
+req.typenames: VHF_CONFIG, *PVHF_CONFIG
+req.product: Windows 10 or later.
 ---
 
 

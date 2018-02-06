@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddmmc._FEATURE_DATA_POWER_MANAGEMENT
-title : "_FEATURE_DATA_POWER_MANAGEMENT"
-author : windows-driver-content
-description : The FEATURE_DATA_POWER_MANAGEMENT structure holds information about the Power Management feature.
-old-location : storage\feature_data_power_management.htm
-old-project : storage
-ms.assetid : 0b3f23d1-1081-4fb9-86af-6dbf7bfeb3b7
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : "*PFEATURE_DATA_POWER_MANAGEMENT, FEATURE_DATA_POWER_MANAGEMENT structure [Storage Devices], PFEATURE_DATA_POWER_MANAGEMENT structure pointer [Storage Devices], PFEATURE_DATA_POWER_MANAGEMENT, FEATURE_DATA_POWER_MANAGEMENT, storage.feature_data_power_management, ntddmmc/PFEATURE_DATA_POWER_MANAGEMENT, ntddmmc/FEATURE_DATA_POWER_MANAGEMENT, structs-CD-ROM_b2dfa21c-3dd3-40fd-9605-05c36c4b9fc8.xml, _FEATURE_DATA_POWER_MANAGEMENT"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddmmc.h
-req.include-header : Ntddcdrm.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FEATURE_DATA_POWER_MANAGEMENT, *PFEATURE_DATA_POWER_MANAGEMENT
+UID: NS:ntddmmc._FEATURE_DATA_POWER_MANAGEMENT
+title: "_FEATURE_DATA_POWER_MANAGEMENT"
+author: windows-driver-content
+description: The FEATURE_DATA_POWER_MANAGEMENT structure holds information about the Power Management feature.
+old-location: storage\feature_data_power_management.htm
+old-project: storage
+ms.assetid: 0b3f23d1-1081-4fb9-86af-6dbf7bfeb3b7
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: "*PFEATURE_DATA_POWER_MANAGEMENT, FEATURE_DATA_POWER_MANAGEMENT structure [Storage Devices], PFEATURE_DATA_POWER_MANAGEMENT structure pointer [Storage Devices], PFEATURE_DATA_POWER_MANAGEMENT, FEATURE_DATA_POWER_MANAGEMENT, storage.feature_data_power_management, ntddmmc/PFEATURE_DATA_POWER_MANAGEMENT, ntddmmc/FEATURE_DATA_POWER_MANAGEMENT, structs-CD-ROM_b2dfa21c-3dd3-40fd-9605-05c36c4b9fc8.xml, _FEATURE_DATA_POWER_MANAGEMENT"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddmmc.h
+req.include-header: Ntddcdrm.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddmmc.h
+apiname:
+-	FEATURE_DATA_POWER_MANAGEMENT
+product: Windows
+targetos: Windows
+req.typenames: FEATURE_DATA_POWER_MANAGEMENT, *PFEATURE_DATA_POWER_MANAGEMENT
 ---
 
 # _FEATURE_DATA_POWER_MANAGEMENT structure

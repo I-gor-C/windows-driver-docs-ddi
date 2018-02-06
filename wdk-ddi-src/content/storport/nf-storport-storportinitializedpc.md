@@ -1,42 +1,47 @@
 ---
-UID : NF:storport.StorPortInitializeDpc
-title : StorPortInitializeDpc function
-author : windows-driver-content
-description : The StorPortInitializeDpc routine initializes a StorPort DPC.
-old-location : storage\storportinitializedpc.htm
-old-project : storage
-ms.assetid : 0a67304f-c746-46c1-87c4-5d027219e41f
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storprt_984c8e07-f6c8-452f-a333-dd23a0fdf9f7.xml, storport/StorPortInitializeDpc, StorPortInitializeDpc, StorPortInitializeDpc routine [Storage Devices], storage.storportinitializedpc
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STOR_SPINLOCK
-req.product : Windows 10 or later.
+UID: NF:storport.StorPortInitializeDpc
+title: StorPortInitializeDpc function
+author: windows-driver-content
+description: The StorPortInitializeDpc routine initializes a StorPort DPC.
+old-location: storage\storportinitializedpc.htm
+old-project: storage
+ms.assetid: 0a67304f-c746-46c1-87c4-5d027219e41f
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storprt_984c8e07-f6c8-452f-a333-dd23a0fdf9f7.xml, storport/StorPortInitializeDpc, StorPortInitializeDpc, StorPortInitializeDpc routine [Storage Devices], storage.storportinitializedpc
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	storport.h
+apiname:
+-	StorPortInitializeDpc
+product: Windows
+targetos: Windows
+req.typenames: STOR_SPINLOCK
+req.product: Windows 10 or later.
 ---
 
 

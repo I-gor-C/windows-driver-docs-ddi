@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.KeGetCurrentThread
-title : KeGetCurrentThread function
-author : windows-driver-content
-description : The KeGetCurrentThread routine identifies the current thread.
-old-location : kernel\kegetcurrentthread.htm
-old-project : kernel
-ms.assetid : 0fbc9f6d-698b-4fa5-86c4-3f6ef0cc50fb
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : k105_fa2d3ae9-9ac8-4c50-bf51-5d6751a2b81e.xml, KeGetCurrentThread, KeGetCurrentThread routine [Kernel-Mode Driver Architecture], kernel.kegetcurrentthread, wdm/KeGetCurrentThread
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.KeGetCurrentThread
+title: KeGetCurrentThread function
+author: windows-driver-content
+description: The KeGetCurrentThread routine identifies the current thread.
+old-location: kernel\kegetcurrentthread.htm
+old-project: kernel
+ms.assetid: 0fbc9f6d-698b-4fa5-86c4-3f6ef0cc50fb
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: k105_fa2d3ae9-9ac8-4c50-bf51-5d6751a2b81e.xml, KeGetCurrentThread, KeGetCurrentThread routine [Kernel-Mode Driver Architecture], kernel.kegetcurrentthread, wdm/KeGetCurrentThread
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	KeGetCurrentThread
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

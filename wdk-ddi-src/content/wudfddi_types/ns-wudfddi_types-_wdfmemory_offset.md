@@ -1,42 +1,47 @@
 ---
-UID : NS:wudfddi_types._WDFMEMORY_OFFSET
-title : "_WDFMEMORY_OFFSET"
-author : windows-driver-content
-description : The WDFMEMORY_OFFSET structure describes the location and size of information that is accessed within a memory block.
-old-location : wdf\wdfmemory_offset_umdf.htm
-old-project : wdf
-ms.assetid : 960710f7-15b1-4815-a33a-0e903d0a4193
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : "_WDFMEMORY_OFFSET, umdf.wdfmemory_offset, *PWDFMEMORY_OFFSET, wudfddi_types/WDFMEMORY_OFFSET, umdfstructs_919b5e02-39d3-4f06-867d-43133c008e85.xml, wudfddi_types/PWDFMEMORY_OFFSET, PWDFMEMORY_OFFSET structure pointer, PWDFMEMORY_OFFSET, WDFMEMORY_OFFSET structure, WDFMEMORY_OFFSET, wdf.wdfmemory_offset_umdf"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wudfddi_types.h
-req.include-header : Wudfddi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDFMEMORY_OFFSET, WDFMEMORY_OFFSET"
-req.product : Windows 10 or later.
+UID: NS:wudfddi_types._WDFMEMORY_OFFSET
+title: "_WDFMEMORY_OFFSET"
+author: windows-driver-content
+description: The WDFMEMORY_OFFSET structure describes the location and size of information that is accessed within a memory block.
+old-location: wdf\wdfmemory_offset_umdf.htm
+old-project: wdf
+ms.assetid: 960710f7-15b1-4815-a33a-0e903d0a4193
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: "_WDFMEMORY_OFFSET, umdf.wdfmemory_offset, *PWDFMEMORY_OFFSET, wudfddi_types/WDFMEMORY_OFFSET, umdfstructs_919b5e02-39d3-4f06-867d-43133c008e85.xml, wudfddi_types/PWDFMEMORY_OFFSET, PWDFMEMORY_OFFSET structure pointer, PWDFMEMORY_OFFSET, WDFMEMORY_OFFSET structure, WDFMEMORY_OFFSET, wdf.wdfmemory_offset_umdf"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wudfddi_types.h
+req.include-header: Wudfddi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wudfddi_types.h
+apiname:
+-	WDFMEMORY_OFFSET
+product: Windows
+targetos: Windows
+req.typenames: "*PWDFMEMORY_OFFSET, WDFMEMORY_OFFSET"
+req.product: Windows 10 or later.
 ---
 
 # _WDFMEMORY_OFFSET structure

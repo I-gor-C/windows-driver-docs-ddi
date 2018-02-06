@@ -1,42 +1,47 @@
 ---
-UID : NC:sercx.EVT_SERCX2_PIO_TRANSMIT_CANCEL_READY_NOTIFICATION
-title : EVT_SERCX2_PIO_TRANSMIT_CANCEL_READY_NOTIFICATION
-author : windows-driver-content
-description : The EvtSerCx2PioTransmitCancelReadyNotification event callback function is called by version 2 of the serial framework extension (SerCx2) to cancel a ready notification that SerCx2 enabled in a previous call to the EvtSerCx2PioTransmitEnableReadyNotification event callback function.
-old-location : serports\evtsercx2piotransmitcancelreadynotification.htm
-old-project : serports
-ms.assetid : 2483F6A6-67FE-4C75-9872-53F66B4BD658
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : serports.evtsercx2piotransmitcancelreadynotification, EvtSerCx2PioTransmitCancelReadyNotification callback function [Serial Ports], EvtSerCx2PioTransmitCancelReadyNotification, EVT_SERCX2_PIO_TRANSMIT_CANCEL_READY_NOTIFICATION, EVT_SERCX2_PIO_TRANSMIT_CANCEL_READY_NOTIFICATION, 2/EvtSerCx2PioTransmitCancelReadyNotification
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : sercx.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Available starting with Windows 8.1.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Called at IRQL <= DISPATCH_LEVEL.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SENSOR_VALUE_PAIR, *PSENSOR_VALUE_PAIR
-req.product : Windows 10 or later.
+UID: NC:sercx.EVT_SERCX2_PIO_TRANSMIT_CANCEL_READY_NOTIFICATION
+title: EVT_SERCX2_PIO_TRANSMIT_CANCEL_READY_NOTIFICATION
+author: windows-driver-content
+description: The EvtSerCx2PioTransmitCancelReadyNotification event callback function is called by version 2 of the serial framework extension (SerCx2) to cancel a ready notification that SerCx2 enabled in a previous call to the EvtSerCx2PioTransmitEnableReadyNotification event callback function.
+old-location: serports\evtsercx2piotransmitcancelreadynotification.htm
+old-project: serports
+ms.assetid: 2483F6A6-67FE-4C75-9872-53F66B4BD658
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: serports.evtsercx2piotransmitcancelreadynotification, EvtSerCx2PioTransmitCancelReadyNotification callback function [Serial Ports], EvtSerCx2PioTransmitCancelReadyNotification, EVT_SERCX2_PIO_TRANSMIT_CANCEL_READY_NOTIFICATION, EVT_SERCX2_PIO_TRANSMIT_CANCEL_READY_NOTIFICATION, 2/EvtSerCx2PioTransmitCancelReadyNotification
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: sercx.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Available starting with Windows 8.1.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Called at IRQL <= DISPATCH_LEVEL.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	2.0\Sercx.h
+apiname:
+-	EvtSerCx2PioTransmitCancelReadyNotification
+product: Windows
+targetos: Windows
+req.typenames: SENSOR_VALUE_PAIR, *PSENSOR_VALUE_PAIR
+req.product: Windows 10 or later.
 ---
 
 

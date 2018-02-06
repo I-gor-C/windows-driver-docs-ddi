@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dkmddi.DXGKDDI_SUBMITCOMMANDVIRTUAL
-title : DXGKDDI_SUBMITCOMMANDVIRTUAL
-author : windows-driver-content
-description : DxgkDdiSubmitCommandVirtual is used to submit a direct memory access (DMA) buffer to a context that supports virtual addressing.
-old-location : display\dxgkddisubmitcommandvirtual.htm
-old-project : display
-ms.assetid : 7A55FB51-BDC2-4215-895E-3250579BEAF0
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkddisubmitcommandvirtual, DxgkDdiSubmitCommandVirtual callback function [Display Devices], DxgkDdiSubmitCommandVirtual, DXGKDDI_SUBMITCOMMANDVIRTUAL, DXGKDDI_SUBMITCOMMANDVIRTUAL, d3dkmddi/DxgkDdiSubmitCommandVirtual
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dkmddi.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
+UID: NC:d3dkmddi.DXGKDDI_SUBMITCOMMANDVIRTUAL
+title: DXGKDDI_SUBMITCOMMANDVIRTUAL
+author: windows-driver-content
+description: DxgkDdiSubmitCommandVirtual is used to submit a direct memory access (DMA) buffer to a context that supports virtual addressing.
+old-location: display\dxgkddisubmitcommandvirtual.htm
+old-project: display
+ms.assetid: 7A55FB51-BDC2-4215-895E-3250579BEAF0
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkddisubmitcommandvirtual, DxgkDdiSubmitCommandVirtual callback function [Display Devices], DxgkDdiSubmitCommandVirtual, DXGKDDI_SUBMITCOMMANDVIRTUAL, DXGKDDI_SUBMITCOMMANDVIRTUAL, d3dkmddi/DxgkDdiSubmitCommandVirtual
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dkmddi.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DxgkDdiSubmitCommandVirtual
+product: Windows
+targetos: Windows
+req.typenames: DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NE:wwan._WWAN_MODEM_CONFIG_STATE
-title : "_WWAN_MODEM_CONFIG_STATE"
-author : windows-driver-content
-description : The WWAN_MODEM_CONFIG_STATE enumeration lists definitions used by the modem to inform the OS about its modem configuration state.
-old-location : netvista\wwan_modem_config_state.htm
-old-project : netvista
-ms.assetid : A22EA7A7-2C28-4117-A2B8-A7D3D4C9F11B
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : "_WWAN_MODEM_CONFIG_STATE, wwan/WWAN_MODEM_CONFIG_STATE, PWWAN_MODEM_CONFIG_STATE enumeration pointer [Network Drivers Starting with Windows Vista], WWAN_MODEM_CONFIG_STATE, WwanModemConfigStateActivated, wwan/WwanModemConfigStateActivated, PWWAN_MODEM_CONFIG_STATE, wwan/WwanModemConfigStatePending, WwanModemConfigStateUnknown, WwanModemConfigStateMax, WWAN_MODEM_CONFIG_STATE enumeration [Network Drivers Starting with Windows Vista], wwan/PWWAN_MODEM_CONFIG_STATE, netvista.wwan_modem_config_state, wwan/WwanModemConfigStateUnknown, *PWWAN_MODEM_CONFIG_STATE, WwanModemConfigStatePending, wwan/WwanModemConfigStateMax"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : wwan.h
-req.include-header : Wwan.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10, version 1709
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WWAN_MODEM_CONFIG_STATE, *PWWAN_MODEM_CONFIG_STATE
-req.product : Windows 10 or later.
+UID: NE:wwan._WWAN_MODEM_CONFIG_STATE
+title: "_WWAN_MODEM_CONFIG_STATE"
+author: windows-driver-content
+description: The WWAN_MODEM_CONFIG_STATE enumeration lists definitions used by the modem to inform the OS about its modem configuration state.
+old-location: netvista\wwan_modem_config_state.htm
+old-project: netvista
+ms.assetid: A22EA7A7-2C28-4117-A2B8-A7D3D4C9F11B
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: "_WWAN_MODEM_CONFIG_STATE, wwan/WWAN_MODEM_CONFIG_STATE, PWWAN_MODEM_CONFIG_STATE enumeration pointer [Network Drivers Starting with Windows Vista], WWAN_MODEM_CONFIG_STATE, WwanModemConfigStateActivated, wwan/WwanModemConfigStateActivated, PWWAN_MODEM_CONFIG_STATE, wwan/WwanModemConfigStatePending, WwanModemConfigStateUnknown, WwanModemConfigStateMax, WWAN_MODEM_CONFIG_STATE enumeration [Network Drivers Starting with Windows Vista], wwan/PWWAN_MODEM_CONFIG_STATE, netvista.wwan_modem_config_state, wwan/WwanModemConfigStateUnknown, *PWWAN_MODEM_CONFIG_STATE, WwanModemConfigStatePending, wwan/WwanModemConfigStateMax"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: wwan.h
+req.include-header: Wwan.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10, version 1709
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wwan.h
+apiname:
+-	WWAN_MODEM_CONFIG_STATE
+product: Windows
+targetos: Windows
+req.typenames: WWAN_MODEM_CONFIG_STATE, *PWWAN_MODEM_CONFIG_STATE
+req.product: Windows 10 or later.
 ---
 
 # _WWAN_MODEM_CONFIG_STATE Enumeration
@@ -55,27 +60,27 @@ typedef enum _WWAN_MODEM_CONFIG_STATE {
 ## Constants
 
 <table>
-
-<tr>
-<td>WwanModemConfigStateActivated</td>
-<td>The modem has completed its configuration and modem subcomponents are aware of the new configuration.</td>
-</tr>
-
-<tr>
-<td>WwanModemConfigStateMax</td>
-<td>The maximum value for this enumeration. This value might change in future versions of the NDIS
+            
+                <tr>
+                    <td>WwanModemConfigStateActivated</td>
+                    <td>The modem has completed its configuration and modem subcomponents are aware of the new configuration.</td>
+                </tr>
+            
+                <tr>
+                    <td>WwanModemConfigStateMax</td>
+                    <td>The maximum value for this enumeration. This value might change in future versions of the NDIS
      header files and binaries.</td>
-</tr>
-
-<tr>
-<td>WwanModemConfigStatePending</td>
-<td>The modem is currently selecting the best suitable configuration file that matches the UICC info.</td>
-</tr>
-
-<tr>
-<td>WwanModemConfigStateUnknown</td>
-<td>The modem configuration state is currently not available.</td>
-</tr>
+                </tr>
+            
+                <tr>
+                    <td>WwanModemConfigStatePending</td>
+                    <td>The modem is currently selecting the best suitable configuration file that matches the UICC info.</td>
+                </tr>
+            
+                <tr>
+                    <td>WwanModemConfigStateUnknown</td>
+                    <td>The modem configuration state is currently not available.</td>
+                </tr>
 </table>
 
 
@@ -85,9 +90,9 @@ typedef enum _WWAN_MODEM_CONFIG_STATE {
 | **Windows version** | Windows 10, version 1709 Windows 10, version 1709 |
 | **Header** | wwan.h (include Wwan.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\wwan\ns-wwan-_wwan_modem_config_status.md">WWAN_MODEM_CONFIG_STATUS</a>
+        <a href="..\wwan\ns-wwan-_wwan_modem_config_status.md">WWAN_MODEM_CONFIG_STATUS</a>
 
  
 

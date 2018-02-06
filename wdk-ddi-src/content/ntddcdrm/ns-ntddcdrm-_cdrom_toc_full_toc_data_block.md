@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddcdrm._CDROM_TOC_FULL_TOC_DATA_BLOCK
-title : "_CDROM_TOC_FULL_TOC_DATA_BLOCK"
-author : windows-driver-content
-description : The CDROM_TOC_FULL_TOC_DATA_BLOCK structure contains track descriptor data used in conjunction with the data from the CDROM_TOC_FULL_TOC_DATA structure.
-old-location : storage\cdrom_toc_full_toc_data_block.htm
-old-project : storage
-ms.assetid : 8d6d1283-b64e-4c3b-8a45-376cfe76a19d
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : "*PCDROM_TOC_FULL_TOC_DATA_BLOCK, PCDROM_TOC_FULL_TOC_DATA_BLOCK, ntddcdrm/CDROM_TOC_FULL_TOC_DATA_BLOCK, ntddcdrm/PCDROM_TOC_FULL_TOC_DATA_BLOCK, CDROM_TOC_FULL_TOC_DATA_BLOCK, structs-CD-ROM_c55aee22-f6ca-4567-82c6-7bb960f4976a.xml, storage.cdrom_toc_full_toc_data_block, _CDROM_TOC_FULL_TOC_DATA_BLOCK, PCDROM_TOC_FULL_TOC_DATA_BLOCK structure pointer [Storage Devices], CDROM_TOC_FULL_TOC_DATA_BLOCK structure [Storage Devices]"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddcdrm.h
-req.include-header : Ntddcdrm.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : CDROM_TOC_FULL_TOC_DATA_BLOCK, *PCDROM_TOC_FULL_TOC_DATA_BLOCK
+UID: NS:ntddcdrm._CDROM_TOC_FULL_TOC_DATA_BLOCK
+title: "_CDROM_TOC_FULL_TOC_DATA_BLOCK"
+author: windows-driver-content
+description: The CDROM_TOC_FULL_TOC_DATA_BLOCK structure contains track descriptor data used in conjunction with the data from the CDROM_TOC_FULL_TOC_DATA structure.
+old-location: storage\cdrom_toc_full_toc_data_block.htm
+old-project: storage
+ms.assetid: 8d6d1283-b64e-4c3b-8a45-376cfe76a19d
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: "*PCDROM_TOC_FULL_TOC_DATA_BLOCK, PCDROM_TOC_FULL_TOC_DATA_BLOCK, ntddcdrm/CDROM_TOC_FULL_TOC_DATA_BLOCK, ntddcdrm/PCDROM_TOC_FULL_TOC_DATA_BLOCK, CDROM_TOC_FULL_TOC_DATA_BLOCK, structs-CD-ROM_c55aee22-f6ca-4567-82c6-7bb960f4976a.xml, storage.cdrom_toc_full_toc_data_block, _CDROM_TOC_FULL_TOC_DATA_BLOCK, PCDROM_TOC_FULL_TOC_DATA_BLOCK structure pointer [Storage Devices], CDROM_TOC_FULL_TOC_DATA_BLOCK structure [Storage Devices]"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddcdrm.h
+req.include-header: Ntddcdrm.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddcdrm.h
+apiname:
+-	CDROM_TOC_FULL_TOC_DATA_BLOCK
+product: Windows
+targetos: Windows
+req.typenames: CDROM_TOC_FULL_TOC_DATA_BLOCK, *PCDROM_TOC_FULL_TOC_DATA_BLOCK
 ---
 
 # _CDROM_TOC_FULL_TOC_DATA_BLOCK structure

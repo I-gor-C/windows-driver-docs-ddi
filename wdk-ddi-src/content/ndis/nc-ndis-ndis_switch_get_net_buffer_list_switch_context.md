@@ -1,41 +1,46 @@
 ---
-UID : NC:ndis.NDIS_SWITCH_GET_NET_BUFFER_LIST_SWITCH_CONTEXT
-title : NDIS_SWITCH_GET_NET_BUFFER_LIST_SWITCH_CONTEXT
-author : windows-driver-content
-description : The Hyper-V extensible switch extension calls the GetNetBufferListSwitchContext function to retrieve the switch context previously set on the NET_BUFFER_LIST.
-old-location : netvista\getnetbufferlistswitchcontext.htm
-old-project : netvista
-ms.assetid : 68270219-7003-489B-8362-8D6867D571FD
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.getnetbufferlistswitchcontext, GetNetBufferListSwitchContext callback function [Network Drivers Starting with Windows Vista], GetNetBufferListSwitchContext, NDIS_SWITCH_GET_NET_BUFFER_LIST_SWITCH_CONTEXT, NDIS_SWITCH_GET_NET_BUFFER_LIST_SWITCH_CONTEXT, ndis/GetNetBufferListSwitchContext
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported in NDIS 6.30 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
+UID: NC:ndis.NDIS_SWITCH_GET_NET_BUFFER_LIST_SWITCH_CONTEXT
+title: NDIS_SWITCH_GET_NET_BUFFER_LIST_SWITCH_CONTEXT
+author: windows-driver-content
+description: The Hyper-V extensible switch extension calls the GetNetBufferListSwitchContext function to retrieve the switch context previously set on the NET_BUFFER_LIST.
+old-location: netvista\getnetbufferlistswitchcontext.htm
+old-project: netvista
+ms.assetid: 68270219-7003-489B-8362-8D6867D571FD
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.getnetbufferlistswitchcontext, GetNetBufferListSwitchContext callback function [Network Drivers Starting with Windows Vista], GetNetBufferListSwitchContext, NDIS_SWITCH_GET_NET_BUFFER_LIST_SWITCH_CONTEXT, NDIS_SWITCH_GET_NET_BUFFER_LIST_SWITCH_CONTEXT, ndis/GetNetBufferListSwitchContext
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported in NDIS 6.30 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ndis.h
+apiname:
+-	GetNetBufferListSwitchContext
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 

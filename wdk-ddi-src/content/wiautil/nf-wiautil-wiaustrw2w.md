@@ -1,42 +1,47 @@
 ---
-UID : NF:wiautil.wiauStrW2W
-title : wiauStrW2W function
-author : windows-driver-content
-description : The wiauStrW2W function copies a Unicode string to another Unicode string.
-old-location : image\wiaustrw2w.htm
-old-project : image
-ms.assetid : 84f6d47f-bd14-4df4-b4fa-e58412daba6f
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : image.wiaustrw2w, wiauStrW2W function [Imaging Devices], wiautil/wiauStrW2W, wiauStrW2W, wiauFncs_4778241e-19d0-40e1-ae24-e58e950ba540.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wiautil.h
-req.include-header : Wiautil.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows XP and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SKIP_AMOUNT
-req.product : Windows 10 or later.
+UID: NF:wiautil.wiauStrW2W
+title: wiauStrW2W function
+author: windows-driver-content
+description: The wiauStrW2W function copies a Unicode string to another Unicode string.
+old-location: image\wiaustrw2w.htm
+old-project: image
+ms.assetid: 84f6d47f-bd14-4df4-b4fa-e58412daba6f
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: image.wiaustrw2w, wiauStrW2W function [Imaging Devices], wiautil/wiauStrW2W, wiauStrW2W, wiauFncs_4778241e-19d0-40e1-ae24-e58e950ba540.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wiautil.h
+req.include-header: Wiautil.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows XP and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wiautil.h
+apiname:
+-	wiauStrW2W
+product: Windows
+targetos: Windows
+req.typenames: SKIP_AMOUNT
+req.product: Windows 10 or later.
 ---
 
 

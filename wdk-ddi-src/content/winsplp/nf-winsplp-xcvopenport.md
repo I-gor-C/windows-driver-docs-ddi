@@ -1,42 +1,47 @@
 ---
-UID : NF:winsplp.XcvOpenPort
-title : XcvOpenPort function
-author : windows-driver-content
-description : A port monitor server DLL's XcvOpenPort function opens a port for configuration operations.
-old-location : print\xcvopenport.htm
-old-project : print
-ms.assetid : ba0f5820-08eb-40c7-9593-7434ee0e29c6
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : spoolfnc_d2e14d20-1b34-49f5-a627-7b08ccc79ccf.xml, XcvOpenPort, winsplp/XcvOpenPort, XcvOpenPort function [Print Devices], print.xcvopenport
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : winsplp.h
-req.include-header : Winsplp.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NOTIFICATION_CONFIG_FLAGS
-req.product : Windows 10 or later.
+UID: NF:winsplp.XcvOpenPort
+title: XcvOpenPort function
+author: windows-driver-content
+description: A port monitor server DLL's XcvOpenPort function opens a port for configuration operations.
+old-location: print\xcvopenport.htm
+old-project: print
+ms.assetid: ba0f5820-08eb-40c7-9593-7434ee0e29c6
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: spoolfnc_d2e14d20-1b34-49f5-a627-7b08ccc79ccf.xml, XcvOpenPort, winsplp/XcvOpenPort, XcvOpenPort function [Print Devices], print.xcvopenport
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: winsplp.h
+req.include-header: Winsplp.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Winsplp.h
+apiname:
+-	XcvOpenPort
+product: Windows
+targetos: Windows
+req.typenames: NOTIFICATION_CONFIG_FLAGS
+req.product: Windows 10 or later.
 ---
 
 

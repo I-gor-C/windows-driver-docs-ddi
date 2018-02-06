@@ -1,41 +1,46 @@
 ---
-UID : NC:irb.IDE_ADAPTER_CONTROL
-title : IDE_ADAPTER_CONTROL
-author : windows-driver-content
-description : The AtaAdapterControl miniport driver routine is called to perform Plug and Play (PnP) and Power Management operations on the HBA.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
-old-location : storage\ataadaptercontrol.htm
-old-project : storage
-ms.assetid : 50125022-7450-4582-b98d-1d597e4e96d4
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ataadaptercontrol, AtaAdapterControl routine [Storage Devices], AtaAdapterControl, IDE_ADAPTER_CONTROL, IDE_ADAPTER_CONTROL, irb/AtaAdapterControl, atartns_6460976d-3415-4cda-b128-f74baefd075f.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : irb.h
-req.include-header : Irb.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : LUID
+UID: NC:irb.IDE_ADAPTER_CONTROL
+title: IDE_ADAPTER_CONTROL
+author: windows-driver-content
+description: The AtaAdapterControl miniport driver routine is called to perform Plug and Play (PnP) and Power Management operations on the HBA.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
+old-location: storage\ataadaptercontrol.htm
+old-project: storage
+ms.assetid: 50125022-7450-4582-b98d-1d597e4e96d4
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ataadaptercontrol, AtaAdapterControl routine [Storage Devices], AtaAdapterControl, IDE_ADAPTER_CONTROL, IDE_ADAPTER_CONTROL, irb/AtaAdapterControl, atartns_6460976d-3415-4cda-b128-f74baefd075f.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: irb.h
+req.include-header: Irb.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	irb.h
+apiname:
+-	AtaAdapterControl
+product: Windows
+targetos: Windows
+req.typenames: LUID
 ---
 
 

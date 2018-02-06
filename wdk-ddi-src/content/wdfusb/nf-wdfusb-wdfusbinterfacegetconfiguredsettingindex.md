@@ -1,42 +1,50 @@
 ---
-UID : NF:wdfusb.WdfUsbInterfaceGetConfiguredSettingIndex
-title : WdfUsbInterfaceGetConfiguredSettingIndex function
-author : windows-driver-content
-description : The WdfUsbInterfaceGetConfiguredSettingIndex method returns the alternate setting index that is currently selected for a specified USB device interface.
-old-location : wdf\wdfusbinterfacegetconfiguredsettingindex.htm
-old-project : wdf
-ms.assetid : ca8f1fae-1655-4e0d-baa4-133f11cf246f
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdfusb/WdfUsbInterfaceGetConfiguredSettingIndex, WdfUsbInterfaceGetConfiguredSettingIndex method, kmdf.wdfusbinterfacegetconfiguredsettingindex, WdfUsbInterfaceGetConfiguredSettingIndex, PFN_WDFUSBINTERFACEGETCONFIGUREDSETTINGINDEX, wdf.wdfusbinterfacegetconfiguredsettingindex, DFUsbRef_720a2078-a35c-491b-a8d1-7a2b3d5c88f1.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfusb.h
-req.include-header : Wdfusb.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2, UsbKmdfIrql, UsbKmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfusb.WdfUsbInterfaceGetConfiguredSettingIndex
+title: WdfUsbInterfaceGetConfiguredSettingIndex function
+author: windows-driver-content
+description: The WdfUsbInterfaceGetConfiguredSettingIndex method returns the alternate setting index that is currently selected for a specified USB device interface.
+old-location: wdf\wdfusbinterfacegetconfiguredsettingindex.htm
+old-project: wdf
+ms.assetid: ca8f1fae-1655-4e0d-baa4-133f11cf246f
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdfusb/WdfUsbInterfaceGetConfiguredSettingIndex, WdfUsbInterfaceGetConfiguredSettingIndex method, kmdf.wdfusbinterfacegetconfiguredsettingindex, WdfUsbInterfaceGetConfiguredSettingIndex, PFN_WDFUSBINTERFACEGETCONFIGUREDSETTINGINDEX, wdf.wdfusbinterfacegetconfiguredsettingindex, DFUsbRef_720a2078-a35c-491b-a8d1-7a2b3d5c88f1.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfusb.h
+req.include-header: Wdfusb.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2, UsbKmdfIrql, UsbKmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+-	WUDFx02000.dll
+-	WUDFx02000.dll.dll
+apiname:
+-	WdfUsbInterfaceGetConfiguredSettingIndex
+product: Windows
+targetos: Windows
+req.typenames: WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
+req.product: Windows 10 or later.
 ---
 
 

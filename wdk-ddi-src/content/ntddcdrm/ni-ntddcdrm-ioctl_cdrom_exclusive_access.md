@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddcdrm.IOCTL_CDROM_EXCLUSIVE_ACCESS
-title : IOCTL_CDROM_EXCLUSIVE_ACCESS
-author : windows-driver-content
-description : The IOCTL_CDROM_EXCLUSIVE_ACCESS request instructs the CD-ROM class driver to:Report the access state of a CD-ROM device.
-old-location : storage\ioctl_cdrom_exclusive_access.htm
-old-project : storage
-ms.assetid : 449936d8-9257-4044-a38f-e68d8e8d5c68
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_cdrom_exclusive_access, IOCTL_CDROM_EXCLUSIVE_ACCESS control code [Storage Devices], IOCTL_CDROM_EXCLUSIVE_ACCESS, ntddcdrm/IOCTL_CDROM_EXCLUSIVE_ACCESS, k307_d22cebb2-93c2-4eb8-9c2f-6c6c559ee020.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddcdrm.h
-req.include-header : Ntddcdrm.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WRITE_ROTATION, *PWRITE_ROTATION
+UID: NI:ntddcdrm.IOCTL_CDROM_EXCLUSIVE_ACCESS
+title: IOCTL_CDROM_EXCLUSIVE_ACCESS
+author: windows-driver-content
+description: The IOCTL_CDROM_EXCLUSIVE_ACCESS request instructs the CD-ROM class driver to:Report the access state of a CD-ROM device.
+old-location: storage\ioctl_cdrom_exclusive_access.htm
+old-project: storage
+ms.assetid: 449936d8-9257-4044-a38f-e68d8e8d5c68
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_cdrom_exclusive_access, IOCTL_CDROM_EXCLUSIVE_ACCESS control code [Storage Devices], IOCTL_CDROM_EXCLUSIVE_ACCESS, ntddcdrm/IOCTL_CDROM_EXCLUSIVE_ACCESS, k307_d22cebb2-93c2-4eb8-9c2f-6c6c559ee020.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddcdrm.h
+req.include-header: Ntddcdrm.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddcdrm.h
+apiname:
+-	IOCTL_CDROM_EXCLUSIVE_ACCESS
+product: Windows
+targetos: Windows
+req.typenames: WRITE_ROTATION, *PWRITE_ROTATION
 ---
 
 # IOCTL_CDROM_EXCLUSIVE_ACCESS IOCTL

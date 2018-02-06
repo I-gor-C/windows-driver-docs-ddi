@@ -1,41 +1,46 @@
 ---
-UID : NF:icm.WcsGetUsePerUserProfiles
-title : WcsGetUsePerUserProfiles function
-author : windows-driver-content
-description : The WcsGetUsePerUserProfiles function determines whether the user has chosen to use a per-user profile association list for the specified device.
-old-location : print\wcsgetuseperuserprofiles.htm
-old-project : print
-ms.assetid : 6a970bec-c773-498e-b93a-2bd9f625e194
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : icm/WcsGetUsePerUserProfiles, colorfnc_b80783e5-17c0-4069-90ba-71ea82a2d7d5.xml, print.wcsgetuseperuserprofiles, WcsGetUsePerUserProfiles function [Print Devices], WcsGetUsePerUserProfiles
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : icm.h
-req.include-header : 
-req.target-type : Universal
-req.target-min-winverclnt : Included in Windows Vista and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Mscms.lib
-req.dll : Mscms.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WCS_PROFILE_MANAGEMENT_SCOPE
+UID: NF:icm.WcsGetUsePerUserProfiles
+title: WcsGetUsePerUserProfiles function
+author: windows-driver-content
+description: The WcsGetUsePerUserProfiles function determines whether the user has chosen to use a per-user profile association list for the specified device.
+old-location: print\wcsgetuseperuserprofiles.htm
+old-project: print
+ms.assetid: 6a970bec-c773-498e-b93a-2bd9f625e194
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: icm/WcsGetUsePerUserProfiles, colorfnc_b80783e5-17c0-4069-90ba-71ea82a2d7d5.xml, print.wcsgetuseperuserprofiles, WcsGetUsePerUserProfiles function [Print Devices], WcsGetUsePerUserProfiles
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: icm.h
+req.include-header: 
+req.target-type: Universal
+req.target-min-winverclnt: Included in Windows Vista and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Mscms.lib
+req.dll: Mscms.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Mscms.dll
+apiname:
+-	WcsGetUsePerUserProfiles
+product: Windows
+targetos: Windows
+req.typenames: WCS_PROFILE_MANAGEMENT_SCOPE
 ---
 
 

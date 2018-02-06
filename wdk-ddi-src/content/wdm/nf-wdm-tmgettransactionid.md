@@ -1,42 +1,49 @@
 ---
-UID : NF:wdm.TmGetTransactionId
-title : TmGetTransactionId function
-author : windows-driver-content
-description : The TmGetTransactionId routine retrieves a transaction object's unit of work (UOW) identifier.
-old-location : kernel\tmgettransactionid.htm
-old-project : kernel
-ms.assetid : 8ff4dd86-d828-4e1d-bde5-ab312187a8d7
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : TmGetTransactionId routine [Kernel-Mode Driver Architecture], TmGetTransactionId, wdm/TmGetTransactionId, ktm_ref_cbb12580-5399-4d81-ab6c-9d0235208681.xml, kernel.tmgettransactionid
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later operating system versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.TmGetTransactionId
+title: TmGetTransactionId function
+author: windows-driver-content
+description: The TmGetTransactionId routine retrieves a transaction object's unit of work (UOW) identifier.
+old-location: kernel\tmgettransactionid.htm
+old-project: kernel
+ms.assetid: 8ff4dd86-d828-4e1d-bde5-ab312187a8d7
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: TmGetTransactionId routine [Kernel-Mode Driver Architecture], TmGetTransactionId, wdm/TmGetTransactionId, ktm_ref_cbb12580-5399-4d81-ab6c-9d0235208681.xml, kernel.tmgettransactionid
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later operating system versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+-	Ext-MS-Win-ntos-tm-l1-1-0.dll
+-	tm.sys
+apiname:
+-	TmGetTransactionId
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddmmc._GET_CONFIGURATION_IOCTL_INPUT
-title : "_GET_CONFIGURATION_IOCTL_INPUT"
-author : windows-driver-content
-description : The GET_CONFIGURATION_IOCTL_INPUT structure is used in conjunction with the IOCTL_CDROM_GET_CONFIGURATION request to specify the sort of feature data that the request retrieves.
-old-location : storage\get_configuration_ioctl_input.htm
-old-project : storage
-ms.assetid : 6b8d9cbf-bb05-40a1-9129-52510befebe3
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : "*PGET_CONFIGURATION_IOCTL_INPUT, PGET_CONFIGURATION_IOCTL_INPUT structure pointer [Storage Devices], PGET_CONFIGURATION_IOCTL_INPUT, structs-CD-ROM_1bac7730-693e-4d41-b672-260f83765e35.xml, ntddmmc/PGET_CONFIGURATION_IOCTL_INPUT, ntddmmc/GET_CONFIGURATION_IOCTL_INPUT, GET_CONFIGURATION_IOCTL_INPUT, GET_CONFIGURATION_IOCTL_INPUT structure [Storage Devices], _GET_CONFIGURATION_IOCTL_INPUT, storage.get_configuration_ioctl_input"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddmmc.h
-req.include-header : Ntddcdrm.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : GET_CONFIGURATION_IOCTL_INPUT, *PGET_CONFIGURATION_IOCTL_INPUT
+UID: NS:ntddmmc._GET_CONFIGURATION_IOCTL_INPUT
+title: "_GET_CONFIGURATION_IOCTL_INPUT"
+author: windows-driver-content
+description: The GET_CONFIGURATION_IOCTL_INPUT structure is used in conjunction with the IOCTL_CDROM_GET_CONFIGURATION request to specify the sort of feature data that the request retrieves.
+old-location: storage\get_configuration_ioctl_input.htm
+old-project: storage
+ms.assetid: 6b8d9cbf-bb05-40a1-9129-52510befebe3
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: "*PGET_CONFIGURATION_IOCTL_INPUT, PGET_CONFIGURATION_IOCTL_INPUT structure pointer [Storage Devices], PGET_CONFIGURATION_IOCTL_INPUT, structs-CD-ROM_1bac7730-693e-4d41-b672-260f83765e35.xml, ntddmmc/PGET_CONFIGURATION_IOCTL_INPUT, ntddmmc/GET_CONFIGURATION_IOCTL_INPUT, GET_CONFIGURATION_IOCTL_INPUT, GET_CONFIGURATION_IOCTL_INPUT structure [Storage Devices], _GET_CONFIGURATION_IOCTL_INPUT, storage.get_configuration_ioctl_input"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddmmc.h
+req.include-header: Ntddcdrm.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddmmc.h
+apiname:
+-	GET_CONFIGURATION_IOCTL_INPUT
+product: Windows
+targetos: Windows
+req.typenames: GET_CONFIGURATION_IOCTL_INPUT, *PGET_CONFIGURATION_IOCTL_INPUT
 ---
 
 # _GET_CONFIGURATION_IOCTL_INPUT structure

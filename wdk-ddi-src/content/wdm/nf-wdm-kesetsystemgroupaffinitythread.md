@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.KeSetSystemGroupAffinityThread
-title : KeSetSystemGroupAffinityThread function
-author : windows-driver-content
-description : The KeSetSystemGroupAffinityThread routine changes the group number and affinity mask of the calling thread.
-old-location : kernel\kesetsystemgroupaffinitythread.htm
-old-project : kernel
-ms.assetid : 8ccc097d-f997-43c1-a068-f2f532afa0d6
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : KeSetSystemGroupAffinityThread, wdm/KeSetSystemGroupAffinityThread, kernel.kesetsystemgroupaffinitythread, k105_3930c7d1-9295-4f62-867e-5e68729c45f3.xml, KeSetSystemGroupAffinityThread routine [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Wdm.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 7.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= DISPATCH_LEVEL (see Remarks section)."
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.KeSetSystemGroupAffinityThread
+title: KeSetSystemGroupAffinityThread function
+author: windows-driver-content
+description: The KeSetSystemGroupAffinityThread routine changes the group number and affinity mask of the calling thread.
+old-location: kernel\kesetsystemgroupaffinitythread.htm
+old-project: kernel
+ms.assetid: 8ccc097d-f997-43c1-a068-f2f532afa0d6
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: KeSetSystemGroupAffinityThread, wdm/KeSetSystemGroupAffinityThread, kernel.kesetsystemgroupaffinitythread, k105_3930c7d1-9295-4f62-867e-5e68729c45f3.xml, KeSetSystemGroupAffinityThread routine [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Wdm.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 7.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= DISPATCH_LEVEL (see Remarks section)."
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	KeSetSystemGroupAffinityThread
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

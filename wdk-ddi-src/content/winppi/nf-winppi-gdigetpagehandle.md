@@ -1,42 +1,49 @@
 ---
-UID : NF:winppi.GdiGetPageHandle
-title : GdiGetPageHandle function
-author : windows-driver-content
-description : The GdiGetPageHandle function returns a handle to the specified page within a print job.
-old-location : print\gdigetpagehandle.htm
-old-project : print
-ms.assetid : 7eaed9d2-20fa-4cf1-b924-fbe1443535e9
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : GdiGetPageHandle, GdiGetPageHandle function [Print Devices], winppi/GdiGetPageHandle, print.gdigetpagehandle, gdifnc_3a8cdbd2-c73f-4b24-b984-9237b20327e1.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : winppi.h
-req.include-header : Winppi.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Gdi32.Lib
-req.dll : Gdi32.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDOT11_WPS_DEVICE_NAME, DOT11_WPS_DEVICE_NAME"
-req.product : Windows 10 or later.
+UID: NF:winppi.GdiGetPageHandle
+title: GdiGetPageHandle function
+author: windows-driver-content
+description: The GdiGetPageHandle function returns a handle to the specified page within a print job.
+old-location: print\gdigetpagehandle.htm
+old-project: print
+ms.assetid: 7eaed9d2-20fa-4cf1-b924-fbe1443535e9
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: GdiGetPageHandle, GdiGetPageHandle function [Print Devices], winppi/GdiGetPageHandle, print.gdigetpagehandle, gdifnc_3a8cdbd2-c73f-4b24-b984-9237b20327e1.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: winppi.h
+req.include-header: Winppi.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Gdi32.Lib
+req.dll: Gdi32.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Gdi32.dll
+-	Ext-MS-Win-GDI-Internal-Desktop-L1-1-0.dll
+-	GDI32Full.dll
+apiname:
+-	GdiGetPageHandle
+product: Windows
+targetos: Windows
+req.typenames: "*PDOT11_WPS_DEVICE_NAME, DOT11_WPS_DEVICE_NAME"
+req.product: Windows 10 or later.
 ---
 
 

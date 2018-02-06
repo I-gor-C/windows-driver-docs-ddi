@@ -1,41 +1,46 @@
 ---
-UID : NI:ehstorbandmgmt.IOCTL_EHSTOR_TCGDRV_RELINQUISH_SILO
-title : IOCTL_EHSTOR_TCGDRV_RELINQUISH_SILO
-author : windows-driver-content
-description : The IOCTL_EHSTOR_TCGDRV_RELINQUISH_SILO request relinquishes control of band management by the Trusted Computing Group (TCG) Storage Silo driver.
-old-location : storage\ioctl_ehstor_tcgdrv_relinquish_silo.htm
-old-project : storage
-ms.assetid : 4D3DA81A-D79A-4299-A743-AFB0118DDF3F
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_ehstor_tcgdrv_relinquish_silo, IOCTL_EHSTOR_TCGDRV_RELINQUISH_SILO control code [Storage Devices], IOCTL_EHSTOR_TCGDRV_RELINQUISH_SILO, ehstorbandmgmt/IOCTL_EHSTOR_TCGDRV_RELINQUISH_SILO
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ehstorbandmgmt.h
-req.include-header : EhStorBandMgmt.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows 8
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXVA_VideoSample32
+UID: NI:ehstorbandmgmt.IOCTL_EHSTOR_TCGDRV_RELINQUISH_SILO
+title: IOCTL_EHSTOR_TCGDRV_RELINQUISH_SILO
+author: windows-driver-content
+description: The IOCTL_EHSTOR_TCGDRV_RELINQUISH_SILO request relinquishes control of band management by the Trusted Computing Group (TCG) Storage Silo driver.
+old-location: storage\ioctl_ehstor_tcgdrv_relinquish_silo.htm
+old-project: storage
+ms.assetid: 4D3DA81A-D79A-4299-A743-AFB0118DDF3F
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_ehstor_tcgdrv_relinquish_silo, IOCTL_EHSTOR_TCGDRV_RELINQUISH_SILO control code [Storage Devices], IOCTL_EHSTOR_TCGDRV_RELINQUISH_SILO, ehstorbandmgmt/IOCTL_EHSTOR_TCGDRV_RELINQUISH_SILO
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ehstorbandmgmt.h
+req.include-header: EhStorBandMgmt.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows 8
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	EhStorBandMgmt.h
+apiname:
+-	IOCTL_EHSTOR_TCGDRV_RELINQUISH_SILO
+product: Windows
+targetos: Windows
+req.typenames: DXVA_VideoSample32
 ---
 
 # IOCTL_EHSTOR_TCGDRV_RELINQUISH_SILO IOCTL

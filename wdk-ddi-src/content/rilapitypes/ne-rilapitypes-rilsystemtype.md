@@ -1,42 +1,47 @@
 ---
-UID : NE:rilapitypes.RILSYSTEMTYPE
-title : RILSYSTEMTYPE
-author : windows-driver-content
-description : This enumeration represents RILSYSTEMTYPE.
-old-location : netvista\rilsystemtype.htm
-old-project : netvista
-ms.assetid : 5a95969c-d7cd-4afa-affa-7095979ee56b
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : RIL_SYSTEMTYPE_ALL, rilapitypes/RIL_SYSTEMTYPE_UMTS, rilapitypes/RIL_SYSTEMTYPE_GSM, RIL_SYSTEMTYPE_CDMA, RIL_SYSTEMTYPE_GSMUMTS, RIL_SYSTEMTYPE_TDSCDMA, rilapitypes/RIL_SYSTEMTYPE_ALL, rilapitypes/RIL_SYSTEMTYPE_EVDO, RIL_SYSTEMTYPE_EVDO, RILSYSTEMTYPE, rilapitypes/RIL_SYSTEMTYPE_TDSCDMA, RILSYSTEMTYPE enumeration [Network Drivers Starting with Windows Vista], rilapitypes/RIL_SYSTEMTYPE_GSMUMTS, RIL_SYSTEMTYPE_GSM, RIL_SYSTEMTYPE_NONE, rilapitypes/RIL_SYSTEMTYPE_LTE, netvista.rilsystemtype, rilapitypes/RIL_SYSTEMTYPE_1XRTT, rilapitypes/RIL_SYSTEMTYPE_CDMA, RIL_SYSTEMTYPE_1XRTT, RIL_SYSTEMTYPE_LTE, rilapitypes/RIL_SYSTEMTYPE_NONE, rilapitypes/RILSYSTEMTYPE, RIL_SYSTEMTYPE_UMTS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : rilapitypes.h
-req.include-header : Rilapitypes.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RILSYSTEMTYPE
-req.product : Windows 10 or later.
+UID: NE:rilapitypes.RILSYSTEMTYPE
+title: RILSYSTEMTYPE
+author: windows-driver-content
+description: This enumeration represents RILSYSTEMTYPE.
+old-location: netvista\rilsystemtype.htm
+old-project: netvista
+ms.assetid: 5a95969c-d7cd-4afa-affa-7095979ee56b
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: RIL_SYSTEMTYPE_ALL, rilapitypes/RIL_SYSTEMTYPE_UMTS, rilapitypes/RIL_SYSTEMTYPE_GSM, RIL_SYSTEMTYPE_CDMA, RIL_SYSTEMTYPE_GSMUMTS, RIL_SYSTEMTYPE_TDSCDMA, rilapitypes/RIL_SYSTEMTYPE_ALL, rilapitypes/RIL_SYSTEMTYPE_EVDO, RIL_SYSTEMTYPE_EVDO, RILSYSTEMTYPE, rilapitypes/RIL_SYSTEMTYPE_TDSCDMA, RILSYSTEMTYPE enumeration [Network Drivers Starting with Windows Vista], rilapitypes/RIL_SYSTEMTYPE_GSMUMTS, RIL_SYSTEMTYPE_GSM, RIL_SYSTEMTYPE_NONE, rilapitypes/RIL_SYSTEMTYPE_LTE, netvista.rilsystemtype, rilapitypes/RIL_SYSTEMTYPE_1XRTT, rilapitypes/RIL_SYSTEMTYPE_CDMA, RIL_SYSTEMTYPE_1XRTT, RIL_SYSTEMTYPE_LTE, rilapitypes/RIL_SYSTEMTYPE_NONE, rilapitypes/RILSYSTEMTYPE, RIL_SYSTEMTYPE_UMTS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: rilapitypes.h
+req.include-header: Rilapitypes.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	rilapitypes.h
+apiname:
+-	RILSYSTEMTYPE
+product: Windows
+targetos: Windows
+req.typenames: RILSYSTEMTYPE
+req.product: Windows 10 or later.
 ---
 
 # RILSYSTEMTYPE Enumeration
@@ -62,71 +67,71 @@ enum RILSYSTEMTYPE {
 ## Constants
 
 <table>
-
-<tr>
-<td>RIL_SYSTEMTYPE_1XRTT</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_SYSTEMTYPE_3GPP</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_SYSTEMTYPE_ALL</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_SYSTEMTYPE_CDMA</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_SYSTEMTYPE_EVDO</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_SYSTEMTYPE_GSM</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_SYSTEMTYPE_GSMTDS</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_SYSTEMTYPE_GSMUMTS</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_SYSTEMTYPE_GSMUMTSTDS</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_SYSTEMTYPE_LTE</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_SYSTEMTYPE_NONE</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_SYSTEMTYPE_TDSCDMA</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_SYSTEMTYPE_UMTS</td>
-<td></td>
-</tr>
+            
+                <tr>
+                    <td>RIL_SYSTEMTYPE_1XRTT</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_SYSTEMTYPE_3GPP</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_SYSTEMTYPE_ALL</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_SYSTEMTYPE_CDMA</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_SYSTEMTYPE_EVDO</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_SYSTEMTYPE_GSM</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_SYSTEMTYPE_GSMTDS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_SYSTEMTYPE_GSMUMTS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_SYSTEMTYPE_GSMUMTSTDS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_SYSTEMTYPE_LTE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_SYSTEMTYPE_NONE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_SYSTEMTYPE_TDSCDMA</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_SYSTEMTYPE_UMTS</td>
+                    <td></td>
+                </tr>
 </table>
 
 
@@ -135,9 +140,9 @@ enum RILSYSTEMTYPE {
 | ---- |:---- |
 | **Header** | rilapitypes.h (include Rilapitypes.h) |
 
-## See Also
+    ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn946511">Cellular COM structures</a>
+        <a href="https://msdn.microsoft.com/library/windows/hardware/dn946511">Cellular COM structures</a>
 
  
 

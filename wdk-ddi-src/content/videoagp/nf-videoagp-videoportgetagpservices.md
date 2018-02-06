@@ -1,42 +1,47 @@
 ---
-UID : NF:videoagp.VideoPortGetAgpServices
-title : VideoPortGetAgpServices function
-author : windows-driver-content
-description : The VideoPortGetAgpServices function is obsolete and is supported only for backward compatibility with existing drivers.
-old-location : display\videoportgetagpservices.htm
-old-project : display
-ms.assetid : 3b01831d-d429-4dc5-9b12-a0e1fc58634d
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : VideoPortGetAgpServices function [Display Devices], display.videoportgetagpservices, VideoPort_Functions_498a8f06-f24e-4116-90df-30360fa111a1.xml, videoagp/VideoPortGetAgpServices, VideoPortGetAgpServices
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : videoagp.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows 2000 and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Videoprt.lib
-req.dll : Videoprt.sys
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VP_SCATTER_GATHER_LIST, *PVP_SCATTER_GATHER_LIST
-req.product : Windows 10 or later.
+UID: NF:videoagp.VideoPortGetAgpServices
+title: VideoPortGetAgpServices function
+author: windows-driver-content
+description: The VideoPortGetAgpServices function is obsolete and is supported only for backward compatibility with existing drivers.
+old-location: display\videoportgetagpservices.htm
+old-project: display
+ms.assetid: 3b01831d-d429-4dc5-9b12-a0e1fc58634d
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: VideoPortGetAgpServices function [Display Devices], display.videoportgetagpservices, VideoPort_Functions_498a8f06-f24e-4116-90df-30360fa111a1.xml, videoagp/VideoPortGetAgpServices, VideoPortGetAgpServices
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: videoagp.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows 2000 and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Videoprt.lib
+req.dll: Videoprt.sys
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Videoprt.sys
+apiname:
+-	VideoPortGetAgpServices
+product: Windows
+targetos: Windows
+req.typenames: VP_SCATTER_GATHER_LIST, *PVP_SCATTER_GATHER_LIST
+req.product: Windows 10 or later.
 ---
 
 

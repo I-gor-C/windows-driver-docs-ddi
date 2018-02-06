@@ -1,41 +1,49 @@
 ---
-UID : NF:d3dkmthk.D3DKMTQueryRemoteVidPnSourceFromGdiDisplayName
-title : D3DKMTQueryRemoteVidPnSourceFromGdiDisplayName function
-author : windows-driver-content
-description : Maps a GDI display name to a remote video present network (VidPN) source ID that is needed for a call to the D3DKMTOutputDuplPresent function.
-old-location : display\d3dkmtqueryremotevidpnsourcefromgdidisplayname.htm
-old-project : display
-ms.assetid : 3606d5f4-760f-4ba1-84ea-218b6c2a2e20
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DKMTQueryRemoteVidPnSourceFromGdiDisplayName function [Display Devices], display.d3dkmtqueryremotevidpnsourcefromgdidisplayname, PFND3DKMT_QUERYREMOTEVIDPNSOURCEFROMGDIDISPLAYNAME, D3DKMTQueryRemoteVidPnSourceFromGdiDisplayName, d3dkmthk/D3DKMTQueryRemoteVidPnSourceFromGdiDisplayName
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Universal
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Gdi32.lib
-req.dll : Gdi32.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_DRIVERVERSION
+UID: NF:d3dkmthk.D3DKMTQueryRemoteVidPnSourceFromGdiDisplayName
+title: D3DKMTQueryRemoteVidPnSourceFromGdiDisplayName function
+author: windows-driver-content
+description: Maps a GDI display name to a remote video present network (VidPN) source ID that is needed for a call to the D3DKMTOutputDuplPresent function.
+old-location: display\d3dkmtqueryremotevidpnsourcefromgdidisplayname.htm
+old-project: display
+ms.assetid: 3606d5f4-760f-4ba1-84ea-218b6c2a2e20
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DKMTQueryRemoteVidPnSourceFromGdiDisplayName function [Display Devices], display.d3dkmtqueryremotevidpnsourcefromgdidisplayname, PFND3DKMT_QUERYREMOTEVIDPNSOURCEFROMGDIDISPLAYNAME, D3DKMTQueryRemoteVidPnSourceFromGdiDisplayName, d3dkmthk/D3DKMTQueryRemoteVidPnSourceFromGdiDisplayName
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Universal
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Gdi32.lib
+req.dll: Gdi32.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Gdi32.dll
+-	API-MS-Win-dx-d3dkmt-l1-1-0.dll
+-	API-MS-Win-dx-d3dkmt-l1-1-1.dll
+-	API-MS-Win-DX-D3DKMT-L1-1-2.dll
+apiname:
+-	D3DKMTQueryRemoteVidPnSourceFromGdiDisplayName
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_DRIVERVERSION
 ---
 
 

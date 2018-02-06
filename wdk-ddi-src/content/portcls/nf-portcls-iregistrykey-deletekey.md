@@ -1,41 +1,46 @@
 ---
-UID : NF:portcls.IRegistryKey.DeleteKey
-title : IRegistryKey::DeleteKey method
-author : windows-driver-content
-description : The DeleteKey method deletes the registry key.
-old-location : audio\iregistrykey_deletekey.htm
-old-project : audio
-ms.assetid : 2930b049-7572-4ee5-bef1-fd4485e5f644
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : audmp-routines_b5556b44-0bf4-47d2-8bbd-65d12c393341.xml, IRegistryKey, DeleteKey method [Audio Devices], IRegistryKey interface, DeleteKey method [Audio Devices], IRegistryKey interface [Audio Devices], DeleteKey method, portcls/IRegistryKey::DeleteKey, IRegistryKey::DeleteKey, audio.iregistrykey_deletekey, DeleteKey
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : portcls.h
-req.include-header : Portcls.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : portcls.h
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.IRegistryKey.DeleteKey
+title: IRegistryKey::DeleteKey method
+author: windows-driver-content
+description: The DeleteKey method deletes the registry key.
+old-location: audio\iregistrykey_deletekey.htm
+old-project: audio
+ms.assetid: 2930b049-7572-4ee5-bef1-fd4485e5f644
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: audmp-routines_b5556b44-0bf4-47d2-8bbd-65d12c393341.xml, IRegistryKey, DeleteKey method [Audio Devices], IRegistryKey interface, DeleteKey method [Audio Devices], IRegistryKey interface [Audio Devices], DeleteKey method, portcls/IRegistryKey::DeleteKey, IRegistryKey::DeleteKey, audio.iregistrykey_deletekey, DeleteKey
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: portcls.h
+req.include-header: Portcls.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: portcls.h
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	portcls.h
+apiname:
+-	IRegistryKey.DeleteKey
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

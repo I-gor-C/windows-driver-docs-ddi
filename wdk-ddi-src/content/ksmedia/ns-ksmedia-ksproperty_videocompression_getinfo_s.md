@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.KSPROPERTY_VIDEOCOMPRESSION_GETINFO_S
-title : KSPROPERTY_VIDEOCOMPRESSION_GETINFO_S
-author : windows-driver-content
-description : The KSPROPERTY_VIDEOCOMPRESSION_GETINFO_S structure describes information about the video compression capabilities supported by a device.
-old-location : stream\ksproperty_videocompression_getinfo_s.htm
-old-project : stream
-ms.assetid : a34f051e-9769-427e-b1a7-2718a023e9d1
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : PKSPROPERTY_VIDEOCOMPRESSION_GETINFO_S, KSPROPERTY_VIDEOCOMPRESSION_GETINFO_S structure [Streaming Media Devices], stream.ksproperty_videocompression_getinfo_s, KSPROPERTY_VIDEOCOMPRESSION_GETINFO_S, ksmedia/KSPROPERTY_VIDEOCOMPRESSION_GETINFO_S, *PKSPROPERTY_VIDEOCOMPRESSION_GETINFO_S, ksmedia/PKSPROPERTY_VIDEOCOMPRESSION_GETINFO_S, vidcapstruct_28f47a4f-d28e-40b4-acc5-42835ec89b40.xml, PKSPROPERTY_VIDEOCOMPRESSION_GETINFO_S structure pointer [Streaming Media Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KSPROPERTY_VIDEOCOMPRESSION_GETINFO_S, *PKSPROPERTY_VIDEOCOMPRESSION_GETINFO_S
+UID: NS:ksmedia.KSPROPERTY_VIDEOCOMPRESSION_GETINFO_S
+title: KSPROPERTY_VIDEOCOMPRESSION_GETINFO_S
+author: windows-driver-content
+description: The KSPROPERTY_VIDEOCOMPRESSION_GETINFO_S structure describes information about the video compression capabilities supported by a device.
+old-location: stream\ksproperty_videocompression_getinfo_s.htm
+old-project: stream
+ms.assetid: a34f051e-9769-427e-b1a7-2718a023e9d1
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: PKSPROPERTY_VIDEOCOMPRESSION_GETINFO_S, KSPROPERTY_VIDEOCOMPRESSION_GETINFO_S structure [Streaming Media Devices], stream.ksproperty_videocompression_getinfo_s, KSPROPERTY_VIDEOCOMPRESSION_GETINFO_S, ksmedia/KSPROPERTY_VIDEOCOMPRESSION_GETINFO_S, *PKSPROPERTY_VIDEOCOMPRESSION_GETINFO_S, ksmedia/PKSPROPERTY_VIDEOCOMPRESSION_GETINFO_S, vidcapstruct_28f47a4f-d28e-40b4-acc5-42835ec89b40.xml, PKSPROPERTY_VIDEOCOMPRESSION_GETINFO_S structure pointer [Streaming Media Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	KSPROPERTY_VIDEOCOMPRESSION_GETINFO_S
+product: Windows
+targetos: Windows
+req.typenames: KSPROPERTY_VIDEOCOMPRESSION_GETINFO_S, *PKSPROPERTY_VIDEOCOMPRESSION_GETINFO_S
 ---
 
 # KSPROPERTY_VIDEOCOMPRESSION_GETINFO_S structure

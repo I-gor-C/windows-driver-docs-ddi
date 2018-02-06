@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddstor._STORAGE_TEMPERATURE_THRESHOLD
-title : "_STORAGE_TEMPERATURE_THRESHOLD"
-author : windows-driver-content
-description : This structure is used to set the over or under temperature threshold of a storage device (via IOCTL_STORAGE_SET_TEMPERATURE_THRESHOLD).
-old-location : storage\storage_temperature_threshold.htm
-old-project : storage
-ms.assetid : 19096AD2-5149-4AE1-94CD-9004ED8C24DC
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : ntddstor/PSTORAGE_TEMPERATURE_THRESHOLD, storage.storage_temperature_threshold, PSTORAGE_TEMPERATURE_THRESHOLD structure pointer [Storage Devices], *PSTORAGE_TEMPERATURE_THRESHOLD, STORAGE_TEMPERATURE_THRESHOLD, ntddstor/STORAGE_TEMPERATURE_THRESHOLD, STORAGE_TEMPERATURE_THRESHOLD structure [Storage Devices], PSTORAGE_TEMPERATURE_THRESHOLD, _STORAGE_TEMPERATURE_THRESHOLD
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddstor.h
-req.include-header : Ntddstor.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STORAGE_TEMPERATURE_THRESHOLD, *PSTORAGE_TEMPERATURE_THRESHOLD
+UID: NS:ntddstor._STORAGE_TEMPERATURE_THRESHOLD
+title: "_STORAGE_TEMPERATURE_THRESHOLD"
+author: windows-driver-content
+description: This structure is used to set the over or under temperature threshold of a storage device (via IOCTL_STORAGE_SET_TEMPERATURE_THRESHOLD).
+old-location: storage\storage_temperature_threshold.htm
+old-project: storage
+ms.assetid: 19096AD2-5149-4AE1-94CD-9004ED8C24DC
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: ntddstor/PSTORAGE_TEMPERATURE_THRESHOLD, storage.storage_temperature_threshold, PSTORAGE_TEMPERATURE_THRESHOLD structure pointer [Storage Devices], *PSTORAGE_TEMPERATURE_THRESHOLD, STORAGE_TEMPERATURE_THRESHOLD, ntddstor/STORAGE_TEMPERATURE_THRESHOLD, STORAGE_TEMPERATURE_THRESHOLD structure [Storage Devices], PSTORAGE_TEMPERATURE_THRESHOLD, _STORAGE_TEMPERATURE_THRESHOLD
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddstor.h
+req.include-header: Ntddstor.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddstor.h
+apiname:
+-	STORAGE_TEMPERATURE_THRESHOLD
+product: Windows
+targetos: Windows
+req.typenames: STORAGE_TEMPERATURE_THRESHOLD, *PSTORAGE_TEMPERATURE_THRESHOLD
 ---
 
 # _STORAGE_TEMPERATURE_THRESHOLD structure

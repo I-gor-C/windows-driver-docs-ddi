@@ -1,41 +1,46 @@
 ---
-UID : NN:portcls.IMiniport
-title : IMiniport
-author : windows-driver-content
-description : The IMiniport interface is the generic miniport interface that all miniport objects support. IMiniport inherits from the IUnknown interface.
-old-location : audio\iminiport.htm
-old-project : audio
-ms.assetid : 981a3560-473a-40b2-a1dc-4ab9dc618e67
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : audio.iminiport, IMiniport interface [Audio Devices], IMiniport interface [Audio Devices], described, IMiniport, portcls/IMiniport, audmp-routines_8ecaedd2-12d2-420f-a5e7-0f71451cf989.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : portcls.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Portcls.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NN:portcls.IMiniport
+title: IMiniport
+author: windows-driver-content
+description: The IMiniport interface is the generic miniport interface that all miniport objects support. IMiniport inherits from the IUnknown interface.
+old-location: audio\iminiport.htm
+old-project: audio
+ms.assetid: 981a3560-473a-40b2-a1dc-4ab9dc618e67
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: audio.iminiport, IMiniport interface [Audio Devices], IMiniport interface [Audio Devices], described, IMiniport, portcls/IMiniport, audmp-routines_8ecaedd2-12d2-420f-a5e7-0f71451cf989.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: portcls.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Portcls.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	portcls.h
+apiname:
+-	IMiniport
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 # IMiniport interface

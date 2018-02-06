@@ -1,42 +1,48 @@
 ---
-UID : NF:wdm.ZwRollbackComplete
-title : ZwRollbackComplete function
-author : windows-driver-content
-description : The ZwRollbackComplete routine notifies KTM that the calling resource manager has finished rolling back a transaction's data.
-old-location : kernel\zwrollbackcomplete.htm
-old-project : kernel
-ms.assetid : 4b6d6791-6c13-49ee-a588-a0ed514279b2
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ZwRollbackComplete routine [Kernel-Mode Driver Architecture], kernel.zwrollbackcomplete, wdm/ZwRollbackComplete, wdm/NtRollbackComplete, ZwRollbackComplete, NtRollbackComplete, ktm_ref_0e759f02-d2c1-4759-a5bc-3c3ceca8186c.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later operating system versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ZwRollbackComplete
+title: ZwRollbackComplete function
+author: windows-driver-content
+description: The ZwRollbackComplete routine notifies KTM that the calling resource manager has finished rolling back a transaction's data.
+old-location: kernel\zwrollbackcomplete.htm
+old-project: kernel
+ms.assetid: 4b6d6791-6c13-49ee-a588-a0ed514279b2
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ZwRollbackComplete routine [Kernel-Mode Driver Architecture], kernel.zwrollbackcomplete, wdm/ZwRollbackComplete, wdm/NtRollbackComplete, ZwRollbackComplete, NtRollbackComplete, ktm_ref_0e759f02-d2c1-4759-a5bc-3c3ceca8186c.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later operating system versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ZwRollbackComplete
+-	NtRollbackComplete
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmthk._D3DKMT_FENCE_PRESENTHISTORYTOKEN
-title : "_D3DKMT_FENCE_PRESENTHISTORYTOKEN"
-author : windows-driver-content
-description : The D3DKMT_FENCE_PRESENTHISTORYTOKEN structure identifies a fence present-history operation.
-old-location : display\d3dkmt_fence_presenthistorytoken.htm
-old-project : display
-ms.assetid : a27371cf-08d2-4502-b766-3b9c60272080
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : OpenGL_Structs_eaaa4933-1089-4698-9812-05ff6521f431.xml, display.d3dkmt_fence_presenthistorytoken, _D3DKMT_FENCE_PRESENTHISTORYTOKEN, D3DKMT_FENCE_PRESENTHISTORYTOKEN, D3DKMT_FENCE_PRESENTHISTORYTOKEN structure [Display Devices], d3dkmthk/D3DKMT_FENCE_PRESENTHISTORYTOKEN
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Windows
-req.target-min-winverclnt : D3DKMT_FENCE_PRESENTHISTORYTOKEN is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_FENCE_PRESENTHISTORYTOKEN
+UID: NS:d3dkmthk._D3DKMT_FENCE_PRESENTHISTORYTOKEN
+title: "_D3DKMT_FENCE_PRESENTHISTORYTOKEN"
+author: windows-driver-content
+description: The D3DKMT_FENCE_PRESENTHISTORYTOKEN structure identifies a fence present-history operation.
+old-location: display\d3dkmt_fence_presenthistorytoken.htm
+old-project: display
+ms.assetid: a27371cf-08d2-4502-b766-3b9c60272080
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: OpenGL_Structs_eaaa4933-1089-4698-9812-05ff6521f431.xml, display.d3dkmt_fence_presenthistorytoken, _D3DKMT_FENCE_PRESENTHISTORYTOKEN, D3DKMT_FENCE_PRESENTHISTORYTOKEN, D3DKMT_FENCE_PRESENTHISTORYTOKEN structure [Display Devices], d3dkmthk/D3DKMT_FENCE_PRESENTHISTORYTOKEN
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Windows
+req.target-min-winverclnt: D3DKMT_FENCE_PRESENTHISTORYTOKEN is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmthk.h
+apiname:
+-	D3DKMT_FENCE_PRESENTHISTORYTOKEN
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_FENCE_PRESENTHISTORYTOKEN
 ---
 
 # _D3DKMT_FENCE_PRESENTHISTORYTOKEN structure

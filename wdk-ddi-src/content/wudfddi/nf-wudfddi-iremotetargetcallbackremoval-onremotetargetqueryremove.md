@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IRemoteTargetCallbackRemoval.OnRemoteTargetQueryRemove
-title : IRemoteTargetCallbackRemoval::OnRemoteTargetQueryRemove method
-author : windows-driver-content
-description : A UMDF-based driver's OnRemoteTargetQueryRemove event callback function determines whether a remote I/O target's device can be stopped and removed.
-old-location : wdf\iremotetargetcallbackremoval_onremotetargetqueryremove.htm
-old-project : wdf
-ms.assetid : 10a9510a-a11c-46fa-adb8-b122f6c571f4
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : UMDFIoTargetObjectRef_7cdc408d-7527-4af9-9fef-d8ccb9c1d4c3.xml, IRemoteTargetCallbackRemoval, IRemoteTargetCallbackRemoval interface, OnRemoteTargetQueryRemove method, umdf.iremotetargetcallbackremoval_onremotetargetqueryremove, OnRemoteTargetQueryRemove method, IRemoteTargetCallbackRemoval interface, IRemoteTargetCallbackRemoval::OnRemoteTargetQueryRemove, OnRemoteTargetQueryRemove, wdf.iremotetargetcallbackremoval_onremotetargetqueryremove, OnRemoteTargetQueryRemove method, wudfddi/IRemoteTargetCallbackRemoval::OnRemoteTargetQueryRemove
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.9
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IRemoteTargetCallbackRemoval.OnRemoteTargetQueryRemove
+title: IRemoteTargetCallbackRemoval::OnRemoteTargetQueryRemove method
+author: windows-driver-content
+description: A UMDF-based driver's OnRemoteTargetQueryRemove event callback function determines whether a remote I/O target's device can be stopped and removed.
+old-location: wdf\iremotetargetcallbackremoval_onremotetargetqueryremove.htm
+old-project: wdf
+ms.assetid: 10a9510a-a11c-46fa-adb8-b122f6c571f4
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: UMDFIoTargetObjectRef_7cdc408d-7527-4af9-9fef-d8ccb9c1d4c3.xml, IRemoteTargetCallbackRemoval, IRemoteTargetCallbackRemoval interface, OnRemoteTargetQueryRemove method, umdf.iremotetargetcallbackremoval_onremotetargetqueryremove, OnRemoteTargetQueryRemove method, IRemoteTargetCallbackRemoval interface, IRemoteTargetCallbackRemoval::OnRemoteTargetQueryRemove, OnRemoteTargetQueryRemove, wdf.iremotetargetcallbackremoval_onremotetargetqueryremove, OnRemoteTargetQueryRemove method, wudfddi/IRemoteTargetCallbackRemoval::OnRemoteTargetQueryRemove
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.9
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Wudfddi.h
+apiname:
+-	IRemoteTargetCallbackRemoval.OnRemoteTargetQueryRemove
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

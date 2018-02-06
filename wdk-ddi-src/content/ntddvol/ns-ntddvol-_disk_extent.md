@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddvol._DISK_EXTENT
-title : "_DISK_EXTENT"
-author : windows-driver-content
-description : The DISK_EXTENT structure contains information defining the location and length of a volume extent on a disk.
-old-location : storage\disk_extent.htm
-old-project : storage
-ms.assetid : 74ffdfba-1b80-479d-9637-43222a438fa9
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.disk_extent, ntddvol/DISK_EXTENT, ntddvol/PDISK_EXTENT, PDISK_EXTENT, DISK_EXTENT, *PDISK_EXTENT, _DISK_EXTENT, DISK_EXTENT structure [Storage Devices], structs-disk_2874d2a7-dc4e-46e6-9d43-2374e82c857b.xml, PDISK_EXTENT structure pointer [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddvol.h
-req.include-header : Ntddvol.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDISK_EXTENT, DISK_EXTENT"
+UID: NS:ntddvol._DISK_EXTENT
+title: "_DISK_EXTENT"
+author: windows-driver-content
+description: The DISK_EXTENT structure contains information defining the location and length of a volume extent on a disk.
+old-location: storage\disk_extent.htm
+old-project: storage
+ms.assetid: 74ffdfba-1b80-479d-9637-43222a438fa9
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.disk_extent, ntddvol/DISK_EXTENT, ntddvol/PDISK_EXTENT, PDISK_EXTENT, DISK_EXTENT, *PDISK_EXTENT, _DISK_EXTENT, DISK_EXTENT structure [Storage Devices], structs-disk_2874d2a7-dc4e-46e6-9d43-2374e82c857b.xml, PDISK_EXTENT structure pointer [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddvol.h
+req.include-header: Ntddvol.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddvol.h
+apiname:
+-	DISK_EXTENT
+product: Windows
+targetos: Windows
+req.typenames: "*PDISK_EXTENT, DISK_EXTENT"
 ---
 
 # _DISK_EXTENT structure

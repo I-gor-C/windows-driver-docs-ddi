@@ -1,41 +1,47 @@
 ---
-UID : NF:fwpsk.FwpsAllocateCloneNetBufferList0
-title : FwpsAllocateCloneNetBufferList0 function
-author : windows-driver-content
-description : The FwpsAllocateCloneNetBufferList0 function allocates a NET_BUFFER_LIST structure that is a clone of an existing NET_BUFFER_LIST structure.Note  FwpsAllocateCloneNetBufferList0 is a specific version of FwpsAllocateCloneNetBufferList.
-old-location : netvista\fwpsallocateclonenetbufferlist0.htm
-old-project : netvista
-ms.assetid : 72759748-fac6-45b9-9a81-ab71e6e7c3ef
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : wfp_ref_2_funct_3_fwps_A-B_1b361080-1a63-485a-89fc-05ef6b0cb1df.xml, FwpsAllocateCloneNetBufferList0 function [Network Drivers Starting with Windows Vista], netvista.fwpsallocateclonenetbufferlist0, FwpsAllocateCloneNetBufferList0, fwpsk/FwpsAllocateCloneNetBufferList0
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fwpsk.h
-req.include-header : Fwpsk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Fwpkclnt.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FWPS_VSWITCH_EVENT_TYPE
+UID: NF:fwpsk.FwpsAllocateCloneNetBufferList0
+title: FwpsAllocateCloneNetBufferList0 function
+author: windows-driver-content
+description: The FwpsAllocateCloneNetBufferList0 function allocates a NET_BUFFER_LIST structure that is a clone of an existing NET_BUFFER_LIST structure.Note  FwpsAllocateCloneNetBufferList0 is a specific version of FwpsAllocateCloneNetBufferList.
+old-location: netvista\fwpsallocateclonenetbufferlist0.htm
+old-project: netvista
+ms.assetid: 72759748-fac6-45b9-9a81-ab71e6e7c3ef
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: wfp_ref_2_funct_3_fwps_A-B_1b361080-1a63-485a-89fc-05ef6b0cb1df.xml, FwpsAllocateCloneNetBufferList0 function [Network Drivers Starting with Windows Vista], netvista.fwpsallocateclonenetbufferlist0, FwpsAllocateCloneNetBufferList0, fwpsk/FwpsAllocateCloneNetBufferList0
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fwpsk.h
+req.include-header: Fwpsk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Fwpkclnt.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	fwpkclnt.lib
+-	fwpkclnt.dll
+apiname:
+-	FwpsAllocateCloneNetBufferList0
+product: Windows
+targetos: Windows
+req.typenames: FWPS_VSWITCH_EVENT_TYPE
 ---
 
 

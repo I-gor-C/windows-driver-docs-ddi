@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.KSPROPERTY_CAMERACONTROL_NODE_S2
-title : KSPROPERTY_CAMERACONTROL_NODE_S2
-author : windows-driver-content
-description : The KSPROPERTY_CAMERACONTROL_NODE_S2 structure describes node-based properties in the PROPSETID_VIDCAP_CAMERACONTROL property set that use two values at the same time. This structure specifies property values in requests to the USB video class driver.
-old-location : stream\ksproperty_cameracontrol_node_s2.htm
-old-project : stream
-ms.assetid : 0d3ed82e-3565-4b0b-bca9-1d0b91732d18
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : PKSPROPERTY_CAMERACONTROL_NODE_S2, ksmedia/KSPROPERTY_CAMERACONTROL_NODE_S2, stream.ksproperty_cameracontrol_node_s2, PKSPROPERTY_CAMERACONTROL_NODE_S2 structure pointer [Streaming Media Devices], ksmedia/PKSPROPERTY_CAMERACONTROL_NODE_S2, *PKSPROPERTY_CAMERACONTROL_NODE_S2, KSPROPERTY_CAMERACONTROL_NODE_S2, vidcapstruct_fda6afc4-4b0a-4161-9502-1b335b1022e2.xml, KSPROPERTY_CAMERACONTROL_NODE_S2 structure [Streaming Media Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KSPROPERTY_CAMERACONTROL_NODE_S2, *PKSPROPERTY_CAMERACONTROL_NODE_S2
+UID: NS:ksmedia.KSPROPERTY_CAMERACONTROL_NODE_S2
+title: KSPROPERTY_CAMERACONTROL_NODE_S2
+author: windows-driver-content
+description: The KSPROPERTY_CAMERACONTROL_NODE_S2 structure describes node-based properties in the PROPSETID_VIDCAP_CAMERACONTROL property set that use two values at the same time. This structure specifies property values in requests to the USB video class driver.
+old-location: stream\ksproperty_cameracontrol_node_s2.htm
+old-project: stream
+ms.assetid: 0d3ed82e-3565-4b0b-bca9-1d0b91732d18
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: PKSPROPERTY_CAMERACONTROL_NODE_S2, ksmedia/KSPROPERTY_CAMERACONTROL_NODE_S2, stream.ksproperty_cameracontrol_node_s2, PKSPROPERTY_CAMERACONTROL_NODE_S2 structure pointer [Streaming Media Devices], ksmedia/PKSPROPERTY_CAMERACONTROL_NODE_S2, *PKSPROPERTY_CAMERACONTROL_NODE_S2, KSPROPERTY_CAMERACONTROL_NODE_S2, vidcapstruct_fda6afc4-4b0a-4161-9502-1b335b1022e2.xml, KSPROPERTY_CAMERACONTROL_NODE_S2 structure [Streaming Media Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	KSPROPERTY_CAMERACONTROL_NODE_S2
+product: Windows
+targetos: Windows
+req.typenames: KSPROPERTY_CAMERACONTROL_NODE_S2, *PKSPROPERTY_CAMERACONTROL_NODE_S2
 ---
 
 # KSPROPERTY_CAMERACONTROL_NODE_S2 structure

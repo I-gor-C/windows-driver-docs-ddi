@@ -1,42 +1,50 @@
 ---
-UID : NF:wdfinterrupt.WdfInterruptSetPolicy
-title : WdfInterruptSetPolicy function
-author : windows-driver-content
-description : The WdfInterruptSetPolicy method specifies the interrupt priority, processor affinity, and affinity policy for a specified interrupt.
-old-location : wdf\wdfinterruptsetpolicy.htm
-old-project : wdf
-ms.assetid : f61bef13-d9b5-4e6a-8657-995a1fcbf7b1
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : kmdf.wdfinterruptsetpolicy, WdfInterruptSetPolicy method, wdf.wdfinterruptsetpolicy, DFInterruptObjectRef_86b7a562-3aee-4c0b-9a68-f98a2b76588f.xml, PFN_WDFINTERRUPTSETPOLICY, wdfinterrupt/WdfInterruptSetPolicy, WdfInterruptSetPolicy
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfinterrupt.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : DriverCreate
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_INTERRUPT_PRIORITY, *PWDF_INTERRUPT_PRIORITY
-req.product : Windows 10 or later.
+UID: NF:wdfinterrupt.WdfInterruptSetPolicy
+title: WdfInterruptSetPolicy function
+author: windows-driver-content
+description: The WdfInterruptSetPolicy method specifies the interrupt priority, processor affinity, and affinity policy for a specified interrupt.
+old-location: wdf\wdfinterruptsetpolicy.htm
+old-project: wdf
+ms.assetid: f61bef13-d9b5-4e6a-8657-995a1fcbf7b1
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: kmdf.wdfinterruptsetpolicy, WdfInterruptSetPolicy method, wdf.wdfinterruptsetpolicy, DFInterruptObjectRef_86b7a562-3aee-4c0b-9a68-f98a2b76588f.xml, PFN_WDFINTERRUPTSETPOLICY, wdfinterrupt/WdfInterruptSetPolicy, WdfInterruptSetPolicy
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfinterrupt.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: DriverCreate
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+-	WUDFx02000.dll
+-	WUDFx02000.dll.dll
+apiname:
+-	WdfInterruptSetPolicy
+product: Windows
+targetos: Windows
+req.typenames: WDF_INTERRUPT_PRIORITY, *PWDF_INTERRUPT_PRIORITY
+req.product: Windows 10 or later.
 ---
 
 

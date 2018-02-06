@@ -1,42 +1,47 @@
 ---
-UID : NC:wdm.SET_D3COLD_SUPPORT
-title : SET_D3COLD_SUPPORT
-author : windows-driver-content
-description : The SetD3ColdSupport routine enables or disables transitions to the D3cold device power state.
-old-location : kernel\setd3coldsupport.htm
-old-project : kernel
-ms.assetid : 423C621D-0AE3-468A-94A0-AA3922B410F0
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.setd3coldsupport, SetD3ColdSupport routine [Kernel-Mode Driver Architecture], SetD3ColdSupport, SET_D3COLD_SUPPORT, SET_D3COLD_SUPPORT, wdm/SetD3ColdSupport
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdm.h
-req.include-header : Wdm.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
-req.product : Windows 10 or later.
+UID: NC:wdm.SET_D3COLD_SUPPORT
+title: SET_D3COLD_SUPPORT
+author: windows-driver-content
+description: The SetD3ColdSupport routine enables or disables transitions to the D3cold device power state.
+old-location: kernel\setd3coldsupport.htm
+old-project: kernel
+ms.assetid: 423C621D-0AE3-468A-94A0-AA3922B410F0
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.setd3coldsupport, SetD3ColdSupport routine [Kernel-Mode Driver Architecture], SetD3ColdSupport, SET_D3COLD_SUPPORT, SET_D3COLD_SUPPORT, wdm/SetD3ColdSupport
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdm.h
+req.include-header: Wdm.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Wdm.h
+apiname:
+-	SetD3ColdSupport
+product: Windows
+targetos: Windows
+req.typenames: WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+req.product: Windows 10 or later.
 ---
 
 

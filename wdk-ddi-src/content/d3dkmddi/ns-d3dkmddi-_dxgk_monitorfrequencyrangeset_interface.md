@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGK_MONITORFREQUENCYRANGESET_INTERFACE
-title : "_DXGK_MONITORFREQUENCYRANGESET_INTERFACE"
-author : windows-driver-content
-description : The DXGK_MONITORFREQUENCYRANGESET_INTERFACE structure contains pointers to functions that belong to the Monitor Frequency Range Set interface, which is implemented by the video present network (VidPN) manager.
-old-location : display\dxgk_monitorfrequencyrangeset_interface.htm
-old-project : display
-ms.assetid : 4a973ecd-341f-4766-9fed-f56e55f8deae
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DXGK_MONITORFREQUENCYRANGESET_INTERFACE, DXGK_MONITORFREQUENCYRANGESET_INTERFACE structure [Display Devices], _DXGK_MONITORFREQUENCYRANGESET_INTERFACE, display.dxgk_monitorfrequencyrangeset_interface, d3dkmddi/DXGK_MONITORFREQUENCYRANGESET_INTERFACE, DmStructs_7ff19615-df83-4d5e-91c2-8a94a1cfeea3.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_MONITORFREQUENCYRANGESET_INTERFACE
+UID: NS:d3dkmddi._DXGK_MONITORFREQUENCYRANGESET_INTERFACE
+title: "_DXGK_MONITORFREQUENCYRANGESET_INTERFACE"
+author: windows-driver-content
+description: The DXGK_MONITORFREQUENCYRANGESET_INTERFACE structure contains pointers to functions that belong to the Monitor Frequency Range Set interface, which is implemented by the video present network (VidPN) manager.
+old-location: display\dxgk_monitorfrequencyrangeset_interface.htm
+old-project: display
+ms.assetid: 4a973ecd-341f-4766-9fed-f56e55f8deae
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DXGK_MONITORFREQUENCYRANGESET_INTERFACE, DXGK_MONITORFREQUENCYRANGESET_INTERFACE structure [Display Devices], _DXGK_MONITORFREQUENCYRANGESET_INTERFACE, display.dxgk_monitorfrequencyrangeset_interface, d3dkmddi/DXGK_MONITORFREQUENCYRANGESET_INTERFACE, DmStructs_7ff19615-df83-4d5e-91c2-8a94a1cfeea3.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DXGK_MONITORFREQUENCYRANGESET_INTERFACE
+product: Windows
+targetos: Windows
+req.typenames: DXGK_MONITORFREQUENCYRANGESET_INTERFACE
 ---
 
 # _DXGK_MONITORFREQUENCYRANGESET_INTERFACE structure

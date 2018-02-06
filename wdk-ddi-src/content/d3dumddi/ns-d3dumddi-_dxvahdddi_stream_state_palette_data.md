@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._DXVAHDDDI_STREAM_STATE_PALETTE_DATA
-title : "_DXVAHDDDI_STREAM_STATE_PALETTE_DATA"
-author : windows-driver-content
-description : The DXVAHDDDI_STREAM_STATE_PALETTE_DATA structure describes stream-state data that specifies the palette entries of the input.
-old-location : display\dxvahdddi_stream_state_palette_data.htm
-old-project : display
-ms.assetid : b71f3793-7856-4558-b205-7facf6d83a8c
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DXVAHDDDI_STREAM_STATE_PALETTE_DATA, display.dxvahdddi_stream_state_palette_data, DXVA2_Structs_4b156a58-d13f-4ffc-8ad0-3bdbb5dc7386.xml, _DXVAHDDDI_STREAM_STATE_PALETTE_DATA, DXVAHDDDI_STREAM_STATE_PALETTE_DATA structure [Display Devices], d3dumddi/DXVAHDDDI_STREAM_STATE_PALETTE_DATA
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : DXVAHDDDI_STREAM_STATE_PALETTE_DATA is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXVAHDDDI_STREAM_STATE_PALETTE_DATA
+UID: NS:d3dumddi._DXVAHDDDI_STREAM_STATE_PALETTE_DATA
+title: "_DXVAHDDDI_STREAM_STATE_PALETTE_DATA"
+author: windows-driver-content
+description: The DXVAHDDDI_STREAM_STATE_PALETTE_DATA structure describes stream-state data that specifies the palette entries of the input.
+old-location: display\dxvahdddi_stream_state_palette_data.htm
+old-project: display
+ms.assetid: b71f3793-7856-4558-b205-7facf6d83a8c
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DXVAHDDDI_STREAM_STATE_PALETTE_DATA, display.dxvahdddi_stream_state_palette_data, DXVA2_Structs_4b156a58-d13f-4ffc-8ad0-3bdbb5dc7386.xml, _DXVAHDDDI_STREAM_STATE_PALETTE_DATA, DXVAHDDDI_STREAM_STATE_PALETTE_DATA structure [Display Devices], d3dumddi/DXVAHDDDI_STREAM_STATE_PALETTE_DATA
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: DXVAHDDDI_STREAM_STATE_PALETTE_DATA is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	DXVAHDDDI_STREAM_STATE_PALETTE_DATA
+product: Windows
+targetos: Windows
+req.typenames: DXVAHDDDI_STREAM_STATE_PALETTE_DATA
 ---
 
 # _DXVAHDDDI_STREAM_STATE_PALETTE_DATA structure

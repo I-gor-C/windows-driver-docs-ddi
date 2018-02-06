@@ -1,41 +1,46 @@
 ---
-UID : NS:fltkernel._FLT_RELATED_OBJECTS
-title : "_FLT_RELATED_OBJECTS"
-author : windows-driver-content
-description : The FLT_RELATED_OBJECTS structure contains opaque pointers for the objects associated with an operation.
-old-location : ifsk\flt_related_objects.htm
-old-project : ifsk
-ms.assetid : dd1730f5-58ff-4d0d-9a00-17cd1fe36c5f
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltSystemStructures_24fcdf06-9d2e-41bf-89f8-08cb37782089.xml, PFLT_RELATED_OBJECTS, PFLT_RELATED_OBJECTS structure pointer [Installable File System Drivers], fltkernel/FLT_RELATED_OBJECTS, *PFLT_RELATED_OBJECTS, FLT_RELATED_OBJECTS structure [Installable File System Drivers], ifsk.flt_related_objects, FLT_RELATED_OBJECTS, _FLT_RELATED_OBJECTS, fltkernel/PFLT_RELATED_OBJECTS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PFLT_RELATED_OBJECTS, FLT_RELATED_OBJECTS"
+UID: NS:fltkernel._FLT_RELATED_OBJECTS
+title: "_FLT_RELATED_OBJECTS"
+author: windows-driver-content
+description: The FLT_RELATED_OBJECTS structure contains opaque pointers for the objects associated with an operation.
+old-location: ifsk\flt_related_objects.htm
+old-project: ifsk
+ms.assetid: dd1730f5-58ff-4d0d-9a00-17cd1fe36c5f
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltSystemStructures_24fcdf06-9d2e-41bf-89f8-08cb37782089.xml, PFLT_RELATED_OBJECTS, PFLT_RELATED_OBJECTS structure pointer [Installable File System Drivers], fltkernel/FLT_RELATED_OBJECTS, *PFLT_RELATED_OBJECTS, FLT_RELATED_OBJECTS structure [Installable File System Drivers], ifsk.flt_related_objects, FLT_RELATED_OBJECTS, _FLT_RELATED_OBJECTS, fltkernel/PFLT_RELATED_OBJECTS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	fltkernel.h
+apiname:
+-	FLT_RELATED_OBJECTS
+product: Windows
+targetos: Windows
+req.typenames: "*PFLT_RELATED_OBJECTS, FLT_RELATED_OBJECTS"
 ---
 
 # _FLT_RELATED_OBJECTS structure

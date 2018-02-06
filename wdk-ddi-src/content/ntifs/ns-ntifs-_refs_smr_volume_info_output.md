@@ -1,41 +1,46 @@
 ---
-UID : NS:ntifs._REFS_SMR_VOLUME_INFO_OUTPUT
-title : "_REFS_SMR_VOLUME_INFO_OUTPUT"
-author : windows-driver-content
-description : The REFS_SMR_VOLUME_INFO_OUTPUT structure describes a Shingled Magnetic Recording (SMR) volume's current state on space and garbage collection activities.
-old-location : ifsk\refs_smr_volume_info_output.htm
-old-project : ifsk
-ms.assetid : 0DCBAF5F-AEBC-4C4B-9DBD-F7A6FD6C7712
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : PREFS_SMR_VOLUME_INFO_OUTPUT structure pointer [Installable File System Drivers], ntifs/REFS_SMR_VOLUME_INFO_OUTPUT, PREFS_SMR_VOLUME_INFO_OUTPUT, _REFS_SMR_VOLUME_INFO_OUTPUT, REFS_SMR_VOLUME_INFO_OUTPUT, REFS_SMR_VOLUME_INFO_OUTPUT structure [Installable File System Drivers], ifsk.refs_smr_volume_info_output, ntifs/PREFS_SMR_VOLUME_INFO_OUTPUT, *PREFS_SMR_VOLUME_INFO_OUTPUT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows 10, version 1709.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PREFS_SMR_VOLUME_INFO_OUTPUT, REFS_SMR_VOLUME_INFO_OUTPUT"
+UID: NS:ntifs._REFS_SMR_VOLUME_INFO_OUTPUT
+title: "_REFS_SMR_VOLUME_INFO_OUTPUT"
+author: windows-driver-content
+description: The REFS_SMR_VOLUME_INFO_OUTPUT structure describes a Shingled Magnetic Recording (SMR) volume's current state on space and garbage collection activities.
+old-location: ifsk\refs_smr_volume_info_output.htm
+old-project: ifsk
+ms.assetid: 0DCBAF5F-AEBC-4C4B-9DBD-F7A6FD6C7712
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: PREFS_SMR_VOLUME_INFO_OUTPUT structure pointer [Installable File System Drivers], ntifs/REFS_SMR_VOLUME_INFO_OUTPUT, PREFS_SMR_VOLUME_INFO_OUTPUT, _REFS_SMR_VOLUME_INFO_OUTPUT, REFS_SMR_VOLUME_INFO_OUTPUT, REFS_SMR_VOLUME_INFO_OUTPUT structure [Installable File System Drivers], ifsk.refs_smr_volume_info_output, ntifs/PREFS_SMR_VOLUME_INFO_OUTPUT, *PREFS_SMR_VOLUME_INFO_OUTPUT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows 10, version 1709.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntifs.h
+apiname:
+-	REFS_SMR_VOLUME_INFO_OUTPUT
+product: Windows
+targetos: Windows
+req.typenames: "*PREFS_SMR_VOLUME_INFO_OUTPUT, REFS_SMR_VOLUME_INFO_OUTPUT"
 ---
 
 # _REFS_SMR_VOLUME_INFO_OUTPUT structure

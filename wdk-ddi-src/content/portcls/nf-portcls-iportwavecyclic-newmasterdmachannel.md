@@ -1,41 +1,46 @@
 ---
-UID : NF:portcls.IPortWaveCyclic.NewMasterDmaChannel
-title : IPortWaveCyclic::NewMasterDmaChannel method
-author : windows-driver-content
-description : The NewMasterDmaChannel method creates a new instance of a bus-master DMA channel.
-old-location : audio\iportwavecyclic_newmasterdmachannel.htm
-old-project : audio
-ms.assetid : bbd2b6e2-e332-49ae-aa18-490fd5631479
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : NewMasterDmaChannel method [Audio Devices], NewMasterDmaChannel method [Audio Devices], IPortWaveCyclic interface, IPortWaveCyclic interface [Audio Devices], NewMasterDmaChannel method, NewMasterDmaChannel, IPortWaveCyclic, audmp-routines_831f81bd-545d-47e5-ae1a-8ecaa631497c.xml, IPortWaveCyclic::NewMasterDmaChannel, audio.iportwavecyclic_newmasterdmachannel, portcls/IPortWaveCyclic::NewMasterDmaChannel
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : portcls.h
-req.include-header : Portcls.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : portcls.h
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.IPortWaveCyclic.NewMasterDmaChannel
+title: IPortWaveCyclic::NewMasterDmaChannel method
+author: windows-driver-content
+description: The NewMasterDmaChannel method creates a new instance of a bus-master DMA channel.
+old-location: audio\iportwavecyclic_newmasterdmachannel.htm
+old-project: audio
+ms.assetid: bbd2b6e2-e332-49ae-aa18-490fd5631479
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: NewMasterDmaChannel method [Audio Devices], NewMasterDmaChannel method [Audio Devices], IPortWaveCyclic interface, IPortWaveCyclic interface [Audio Devices], NewMasterDmaChannel method, NewMasterDmaChannel, IPortWaveCyclic, audmp-routines_831f81bd-545d-47e5-ae1a-8ecaa631497c.xml, IPortWaveCyclic::NewMasterDmaChannel, audio.iportwavecyclic_newmasterdmachannel, portcls/IPortWaveCyclic::NewMasterDmaChannel
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: portcls.h
+req.include-header: Portcls.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: portcls.h
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	portcls.h
+apiname:
+-	IPortWaveCyclic.NewMasterDmaChannel
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

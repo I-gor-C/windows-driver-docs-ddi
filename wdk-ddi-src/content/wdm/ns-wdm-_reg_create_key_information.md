@@ -1,42 +1,47 @@
 ---
-UID : NS:wdm._REG_CREATE_KEY_INFORMATION
-title : "_REG_CREATE_KEY_INFORMATION"
-author : windows-driver-content
-description : The REG_CREATE_KEY_INFORMATION structure contains information that a driver's RegistryCallback routine can use when a registry key that is being created.
-old-location : kernel\reg_create_key_information.htm
-old-project : kernel
-ms.assetid : 5609a2c4-71db-432a-8a39-e407130a6e4c
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kstruct_d_08c0de2c-94fb-4c4f-888c-e3485f213224.xml, *PREG_OPEN_KEY_INFORMATION, wdm/PREG_CREATE_KEY_INFORMATION, PREG_OPEN_KEY_INFORMATION structure pointer [Kernel-Mode Driver Architecture], PREG_OPEN_KEY_INFORMATION, wdm/PREG_OPEN_KEY_INFORMATION, REG_CREATE_KEY_INFORMATION, PREG_CREATE_KEY_INFORMATION structure pointer [Kernel-Mode Driver Architecture], kernel.reg_create_key_information, REG_CREATE_KEY_INFORMATION structure [Kernel-Mode Driver Architecture], wdm/REG_OPEN_KEY_INFORMATION, REG_OPEN_KEY_INFORMATION structure [Kernel-Mode Driver Architecture], _REG_CREATE_KEY_INFORMATION, PREG_CREATE_KEY_INFORMATION, wdm/REG_CREATE_KEY_INFORMATION, REG_OPEN_KEY_INFORMATION, *PREG_CREATE_KEY_INFORMATION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows Server 2003, but some structure members are available only in Windows Vista and later versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PREG_OPEN_KEY_INFORMATION, REG_OPEN_KEY_INFORMATION, *PREG_CREATE_KEY_INFORMATION, REG_CREATE_KEY_INFORMATION"
-req.product : Windows 10 or later.
+UID: NS:wdm._REG_CREATE_KEY_INFORMATION
+title: "_REG_CREATE_KEY_INFORMATION"
+author: windows-driver-content
+description: The REG_CREATE_KEY_INFORMATION structure contains information that a driver's RegistryCallback routine can use when a registry key that is being created.
+old-location: kernel\reg_create_key_information.htm
+old-project: kernel
+ms.assetid: 5609a2c4-71db-432a-8a39-e407130a6e4c
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kstruct_d_08c0de2c-94fb-4c4f-888c-e3485f213224.xml, *PREG_OPEN_KEY_INFORMATION, wdm/PREG_CREATE_KEY_INFORMATION, PREG_OPEN_KEY_INFORMATION structure pointer [Kernel-Mode Driver Architecture], PREG_OPEN_KEY_INFORMATION, wdm/PREG_OPEN_KEY_INFORMATION, REG_CREATE_KEY_INFORMATION, PREG_CREATE_KEY_INFORMATION structure pointer [Kernel-Mode Driver Architecture], kernel.reg_create_key_information, REG_CREATE_KEY_INFORMATION structure [Kernel-Mode Driver Architecture], wdm/REG_OPEN_KEY_INFORMATION, REG_OPEN_KEY_INFORMATION structure [Kernel-Mode Driver Architecture], _REG_CREATE_KEY_INFORMATION, PREG_CREATE_KEY_INFORMATION, wdm/REG_CREATE_KEY_INFORMATION, REG_OPEN_KEY_INFORMATION, *PREG_CREATE_KEY_INFORMATION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows Server 2003, but some structure members are available only in Windows Vista and later versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	REG_CREATE_KEY_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: "*PREG_OPEN_KEY_INFORMATION, REG_OPEN_KEY_INFORMATION, *PREG_CREATE_KEY_INFORMATION, REG_CREATE_KEY_INFORMATION"
+req.product: Windows 10 or later.
 ---
 
 # _REG_CREATE_KEY_INFORMATION structure

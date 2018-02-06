@@ -1,41 +1,46 @@
 ---
-UID : NC:hwnclx.HWN_CLIENT_GET_STATE
-title : HWN_CLIENT_GET_STATE
-author : windows-driver-content
-description : Implemented by the client driver to get hardware notification component state. It is invoked when a user requests status information.
-old-location : gpiobtn\hwn_client_get_state.htm
-old-project : gpiobtn
-ms.assetid : c472b4bf-4c7f-4c30-ad03-2017d26d52b4
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : gpiobtn.hwn_client_get_state, HwnClientGetState callback function, HwnClientGetState, HWN_CLIENT_GET_STATE, HWN_CLIENT_GET_STATE, hwnclx/HwnClientGetState, *PHWN_CLIENT_GET_STATE callback function pointer, *PHWN_CLIENT_GET_STATE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : hwnclx.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10, version 1709
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HPMI_QUERY_CAPABILITIES_RESPONSE, *PHPMI_QUERY_CAPABILITIES_RESPONSE
+UID: NC:hwnclx.HWN_CLIENT_GET_STATE
+title: HWN_CLIENT_GET_STATE
+author: windows-driver-content
+description: Implemented by the client driver to get hardware notification component state. It is invoked when a user requests status information.
+old-location: gpiobtn\hwn_client_get_state.htm
+old-project: gpiobtn
+ms.assetid: c472b4bf-4c7f-4c30-ad03-2017d26d52b4
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: gpiobtn.hwn_client_get_state, HwnClientGetState callback function, HwnClientGetState, HWN_CLIENT_GET_STATE, HWN_CLIENT_GET_STATE, hwnclx/HwnClientGetState, *PHWN_CLIENT_GET_STATE callback function pointer, *PHWN_CLIENT_GET_STATE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: hwnclx.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10, version 1709
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Hwnclx.h
+apiname:
+-	*PHWN_CLIENT_GET_STATE
+product: Windows
+targetos: Windows
+req.typenames: HPMI_QUERY_CAPABILITIES_RESPONSE, *PHPMI_QUERY_CAPABILITIES_RESPONSE
 ---
 
 

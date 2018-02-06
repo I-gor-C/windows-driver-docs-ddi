@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltSetTransactionContext
-title : FltSetTransactionContext function
-author : windows-driver-content
-description : The FltSetTransactionContext routine sets a context on a transaction.
-old-location : ifsk\fltsettransactioncontext.htm
-old-project : ifsk
-ms.assetid : bb68ee38-1726-4493-9c3b-71a1352dd9f2
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltSetTransactionContext, FltSetTransactionContext routine [Installable File System Drivers], FltApiRef_p_to_z_ac2c79a4-ca14-417d-a394-24a38d89f3bf.xml, FLT_SET_CONTEXT_REPLACE_IF_EXISTS, ifsk.fltsettransactioncontext, FLT_SET_CONTEXT_KEEP_IF_EXISTS, fltkernel/FltSetTransactionContext
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : Available and supported in Windows Vista and later operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : FltMgr.sys
-req.irql : "<= APC_LEVEL."
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltSetTransactionContext
+title: FltSetTransactionContext function
+author: windows-driver-content
+description: The FltSetTransactionContext routine sets a context on a transaction.
+old-location: ifsk\fltsettransactioncontext.htm
+old-project: ifsk
+ms.assetid: bb68ee38-1726-4493-9c3b-71a1352dd9f2
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltSetTransactionContext, FltSetTransactionContext routine [Installable File System Drivers], FltApiRef_p_to_z_ac2c79a4-ca14-417d-a394-24a38d89f3bf.xml, FLT_SET_CONTEXT_REPLACE_IF_EXISTS, ifsk.fltsettransactioncontext, FLT_SET_CONTEXT_KEEP_IF_EXISTS, fltkernel/FltSetTransactionContext
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: Available and supported in Windows Vista and later operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: FltMgr.sys
+req.irql: "<= APC_LEVEL."
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	FltMgr.sys
+apiname:
+-	FltSetTransactionContext
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.ExInitializeLookasideListEx
-title : ExInitializeLookasideListEx function
-author : windows-driver-content
-description : The ExInitializeLookasideListEx routine initializes a lookaside list.
-old-location : kernel\exinitializelookasidelistex.htm
-old-project : kernel
-ms.assetid : 2f6072d2-808b-452f-a789-0c6f63195440
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ExInitializeLookasideListEx, wdm/ExInitializeLookasideListEx, k102_1ceb4bd5-41cb-4f77-b435-a8bf922afbc2.xml, kernel.exinitializelookasidelistex, ExInitializeLookasideListEx routine [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= DISPATCH_LEVEL (see Remarks section)"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ExInitializeLookasideListEx
+title: ExInitializeLookasideListEx function
+author: windows-driver-content
+description: The ExInitializeLookasideListEx routine initializes a lookaside list.
+old-location: kernel\exinitializelookasidelistex.htm
+old-project: kernel
+ms.assetid: 2f6072d2-808b-452f-a789-0c6f63195440
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ExInitializeLookasideListEx, wdm/ExInitializeLookasideListEx, k102_1ceb4bd5-41cb-4f77-b435-a8bf922afbc2.xml, kernel.exinitializelookasidelistex, ExInitializeLookasideListEx routine [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= DISPATCH_LEVEL (see Remarks section)"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ExInitializeLookasideListEx
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

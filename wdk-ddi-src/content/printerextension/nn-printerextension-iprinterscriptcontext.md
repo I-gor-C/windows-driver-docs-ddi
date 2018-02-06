@@ -1,42 +1,47 @@
 ---
-UID : NN:printerextension.IPrinterScriptContext
-title : IPrinterScriptContext
-author : windows-driver-content
-description : Passed to all third-party constraints JavaScript functions, and provides access to relevant objects.
-old-location : print\iprinterscriptcontext.htm
-old-project : print
-ms.assetid : B44B47EA-6848-430E-9C10-F6DD460C2304
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : print.iprinterscriptcontext, IPrinterScriptContext interface [Print Devices], IPrinterScriptContext interface [Print Devices], described, IPrinterScriptContext, printerextension/IPrinterScriptContext
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : printerextension.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : printerextension.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PrintSchemaSelectionType
-req.product : Windows 10 or later.
+UID: NN:printerextension.IPrinterScriptContext
+title: IPrinterScriptContext
+author: windows-driver-content
+description: Passed to all third-party constraints JavaScript functions, and provides access to relevant objects.
+old-location: print\iprinterscriptcontext.htm
+old-project: print
+ms.assetid: B44B47EA-6848-430E-9C10-F6DD460C2304
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: print.iprinterscriptcontext, IPrinterScriptContext interface [Print Devices], IPrinterScriptContext interface [Print Devices], described, IPrinterScriptContext, printerextension/IPrinterScriptContext
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: printerextension.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: printerextension.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Printerextension.h
+apiname:
+-	IPrinterScriptContext
+product: Windows
+targetos: Windows
+req.typenames: PrintSchemaSelectionType
+req.product: Windows 10 or later.
 ---
 
 # IPrinterScriptContext interface

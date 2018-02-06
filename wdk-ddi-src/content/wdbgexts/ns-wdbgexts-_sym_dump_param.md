@@ -1,42 +1,47 @@
 ---
-UID : NS:wdbgexts._SYM_DUMP_PARAM
-title : "_SYM_DUMP_PARAM"
-author : windows-driver-content
-description : The IG_DUMP_SYMBOL_INFO Ioctl operation provides information about the type of a symbol.
-old-location : debugger\ig_dump_symbol_info.htm
-old-project : debugger
-ms.assetid : 5a00f401-89e5-4863-ab14-a8ab7eec1869
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : SYM_DUMP_PARAM, _SYM_DUMP_PARAM, debugger.ig_dump_symbol_info, wdbgexts/SYM_DUMP_PARAM, PSYM_DUMP_PARAM, PSYM_DUMP_PARAM structure pointer [Windows Debugging], WdbgExts_Ref_22e264c9-ed41-4257-a192-7b3f6d4ffdea.xml, *PSYM_DUMP_PARAM, wdbgexts/PSYM_DUMP_PARAM, SYM_DUMP_PARAM structure [Windows Debugging]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdbgexts.h
-req.include-header : Wdbgexts.h, Dbgeng.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSYM_DUMP_PARAM, SYM_DUMP_PARAM"
-req.product : Windows 10 or later.
+UID: NS:wdbgexts._SYM_DUMP_PARAM
+title: "_SYM_DUMP_PARAM"
+author: windows-driver-content
+description: The IG_DUMP_SYMBOL_INFO Ioctl operation provides information about the type of a symbol.
+old-location: debugger\ig_dump_symbol_info.htm
+old-project: debugger
+ms.assetid: 5a00f401-89e5-4863-ab14-a8ab7eec1869
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: SYM_DUMP_PARAM, _SYM_DUMP_PARAM, debugger.ig_dump_symbol_info, wdbgexts/SYM_DUMP_PARAM, PSYM_DUMP_PARAM, PSYM_DUMP_PARAM structure pointer [Windows Debugging], WdbgExts_Ref_22e264c9-ed41-4257-a192-7b3f6d4ffdea.xml, *PSYM_DUMP_PARAM, wdbgexts/PSYM_DUMP_PARAM, SYM_DUMP_PARAM structure [Windows Debugging]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdbgexts.h
+req.include-header: Wdbgexts.h, Dbgeng.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdbgexts.h
+apiname:
+-	SYM_DUMP_PARAM
+product: Windows
+targetos: Windows
+req.typenames: "*PSYM_DUMP_PARAM, SYM_DUMP_PARAM"
+req.product: Windows 10 or later.
 ---
 
 # _SYM_DUMP_PARAM structure

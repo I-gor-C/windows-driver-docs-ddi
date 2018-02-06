@@ -1,41 +1,46 @@
 ---
-UID : NI:hidport.IOCTL_HID_DEACTIVATE_DEVICE
-title : IOCTL_HID_DEACTIVATE_DEVICE
-author : windows-driver-content
-description : The IOCTL_HID_DEACTIVATE_DEVICE request deactivates a HIDClass device, which causes it to stop operations and terminate all outstanding I/O requests.
-old-location : hid\ioctl_hid_deactivate_device.htm
-old-project : hid
-ms.assetid : 87af450c-0f62-481d-8c7d-24c77f221fc5
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : hid.ioctl_hid_deactivate_device, IOCTL_HID_DEACTIVATE_DEVICE control code [Human Input Devices], IOCTL_HID_DEACTIVATE_DEVICE, hidport/IOCTL_HID_DEACTIVATE_DEVICE, hidioreq_35c75bec-696b-4043-bdb4-2425ff0ad6db.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : hidport.h
-req.include-header : Hidport.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : USAGE_AND_PAGE, *PUSAGE_AND_PAGE
+UID: NI:hidport.IOCTL_HID_DEACTIVATE_DEVICE
+title: IOCTL_HID_DEACTIVATE_DEVICE
+author: windows-driver-content
+description: The IOCTL_HID_DEACTIVATE_DEVICE request deactivates a HIDClass device, which causes it to stop operations and terminate all outstanding I/O requests.
+old-location: hid\ioctl_hid_deactivate_device.htm
+old-project: hid
+ms.assetid: 87af450c-0f62-481d-8c7d-24c77f221fc5
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: hid.ioctl_hid_deactivate_device, IOCTL_HID_DEACTIVATE_DEVICE control code [Human Input Devices], IOCTL_HID_DEACTIVATE_DEVICE, hidport/IOCTL_HID_DEACTIVATE_DEVICE, hidioreq_35c75bec-696b-4043-bdb4-2425ff0ad6db.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: hidport.h
+req.include-header: Hidport.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hidport.h
+apiname:
+-	IOCTL_HID_DEACTIVATE_DEVICE
+product: Windows
+targetos: Windows
+req.typenames: USAGE_AND_PAGE, *PUSAGE_AND_PAGE
 ---
 
 # IOCTL_HID_DEACTIVATE_DEVICE IOCTL

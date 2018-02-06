@@ -1,41 +1,46 @@
 ---
-UID : NS:hbapiwmi._ScsiReportLuns_OUT
-title : "_ScsiReportLuns_OUT"
-author : windows-driver-content
-description : The ScsiReportLuns_OUT structure is used to report the output parameter data of the ScsiReportLuns WMI method to the WMI client.
-old-location : storage\scsireportluns_out2.htm
-old-project : storage
-ms.assetid : 93663b88-e750-4280-b5c1-798cc0f848b7
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : hbapiwmi/ScsiReportLuns_OUT, PScsiReportLuns_OUT, ScsiReportLuns_OUT structure [Storage Devices], structs-Fibre_3c117d4b-f151-45af-84bb-ef6f800967aa.xml, ScsiReportLuns_OUT, *PScsiReportLuns_OUT, _ScsiReportLuns_OUT, hbapiwmi/PScsiReportLuns_OUT, storage.scsireportluns_out2, PScsiReportLuns_OUT structure pointer [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : hbapiwmi.h
-req.include-header : Hbapiwmi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PScsiReportLuns_OUT, ScsiReportLuns_OUT"
+UID: NS:hbapiwmi._ScsiReportLuns_OUT
+title: "_ScsiReportLuns_OUT"
+author: windows-driver-content
+description: The ScsiReportLuns_OUT structure is used to report the output parameter data of the ScsiReportLuns WMI method to the WMI client.
+old-location: storage\scsireportluns_out2.htm
+old-project: storage
+ms.assetid: 93663b88-e750-4280-b5c1-798cc0f848b7
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: hbapiwmi/ScsiReportLuns_OUT, PScsiReportLuns_OUT, ScsiReportLuns_OUT structure [Storage Devices], structs-Fibre_3c117d4b-f151-45af-84bb-ef6f800967aa.xml, ScsiReportLuns_OUT, *PScsiReportLuns_OUT, _ScsiReportLuns_OUT, hbapiwmi/PScsiReportLuns_OUT, storage.scsireportluns_out2, PScsiReportLuns_OUT structure pointer [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: hbapiwmi.h
+req.include-header: Hbapiwmi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Hbapiwmi.h
+apiname:
+-	ScsiReportLuns_OUT
+product: Windows
+targetos: Windows
+req.typenames: "*PScsiReportLuns_OUT, ScsiReportLuns_OUT"
 ---
 
 # _ScsiReportLuns_OUT structure

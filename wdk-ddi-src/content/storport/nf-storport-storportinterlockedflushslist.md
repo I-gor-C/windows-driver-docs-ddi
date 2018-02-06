@@ -1,42 +1,47 @@
 ---
-UID : NF:storport.StorPortInterlockedFlushSList
-title : StorPortInterlockedFlushSList function
-author : windows-driver-content
-description : Removes all items from a Storport managed singly linked list. Access to the list is synchronized on a multiprocessor system.
-old-location : storage\storportinterlockedflushslist.htm
-old-project : storage
-ms.assetid : C686ABA7-BC44-45CE-A35B-63E76961A032
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : StorPortInterlockedFlushSList routine [Storage Devices], StorPortInterlockedFlushSList, storport/StorPortInterlockedFlushSList, storage.storportinterlockedflushslist
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STOR_SPINLOCK
-req.product : Windows 10 or later.
+UID: NF:storport.StorPortInterlockedFlushSList
+title: StorPortInterlockedFlushSList function
+author: windows-driver-content
+description: Removes all items from a Storport managed singly linked list. Access to the list is synchronized on a multiprocessor system.
+old-location: storage\storportinterlockedflushslist.htm
+old-project: storage
+ms.assetid: C686ABA7-BC44-45CE-A35B-63E76961A032
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: StorPortInterlockedFlushSList routine [Storage Devices], StorPortInterlockedFlushSList, storport/StorPortInterlockedFlushSList, storage.storportinterlockedflushslist
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	storport.h
+apiname:
+-	StorPortInterlockedFlushSList
+product: Windows
+targetos: Windows
+req.typenames: STOR_SPINLOCK
+req.product: Windows 10 or later.
 ---
 
 

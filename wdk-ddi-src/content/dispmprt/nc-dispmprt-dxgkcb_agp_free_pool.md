@@ -1,41 +1,46 @@
 ---
-UID : NC:dispmprt.DXGKCB_AGP_FREE_POOL
-title : DXGKCB_AGP_FREE_POOL
-author : windows-driver-content
-description : The AgpFreePool function frees AGP memory that was previously allocated by AgpAllocatePool.
-old-location : display\agpfreepool.htm
-old-project : display
-ms.assetid : 6d4e957e-ad9c-45da-8d1d-0ef5f108c692
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.agpfreepool, AgpFreePool callback function [Display Devices], AgpFreePool, DXGKCB_AGP_FREE_POOL, DXGKCB_AGP_FREE_POOL, dispmprt/AgpFreePool, DpFunctions_ffe16de5-aa04-4f4b-bae5-de5b25682f65.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : dispmprt.h
-req.include-header : Dispmprt.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
+UID: NC:dispmprt.DXGKCB_AGP_FREE_POOL
+title: DXGKCB_AGP_FREE_POOL
+author: windows-driver-content
+description: The AgpFreePool function frees AGP memory that was previously allocated by AgpAllocatePool.
+old-location: display\agpfreepool.htm
+old-project: display
+ms.assetid: 6d4e957e-ad9c-45da-8d1d-0ef5f108c692
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.agpfreepool, AgpFreePool callback function [Display Devices], AgpFreePool, DXGKCB_AGP_FREE_POOL, DXGKCB_AGP_FREE_POOL, dispmprt/AgpFreePool, DpFunctions_ffe16de5-aa04-4f4b-bae5-de5b25682f65.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: dispmprt.h
+req.include-header: Dispmprt.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	dispmprt.h
+apiname:
+-	AgpFreePool
+product: Windows
+targetos: Windows
+req.typenames: SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ---
 
 

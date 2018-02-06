@@ -1,42 +1,48 @@
 ---
-UID : NF:srb.ScsiPortGetPhysicalAddress
-title : ScsiPortGetPhysicalAddress function
-author : windows-driver-content
-description : The ScsiPortGetPhysicalAddress routine converts a given virtual address range to a physical address range for a DMA operation.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future.
-old-location : storage\scsiportgetphysicaladdress.htm
-old-project : storage
-ms.assetid : 4a0d0b10-9773-40d7-962c-cf2acffcee47
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.scsiportgetphysicaladdress, ScsiPortGetPhysicalAddress, srb/ScsiPortGetPhysicalAddress, ScsiPortGetPhysicalAddress routine [Storage Devices], scsiprt_946bea8c-eb6d-4614-9dc0-004ee2501457.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : srb.h
-req.include-header : Miniport.h, Scsi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Scsiport.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SPB_CONTROLLER_CONFIG, *PSPB_CONTROLLER_CONFIG
-req.product : Windows 10 or later.
+UID: NF:srb.ScsiPortGetPhysicalAddress
+title: ScsiPortGetPhysicalAddress function
+author: windows-driver-content
+description: The ScsiPortGetPhysicalAddress routine converts a given virtual address range to a physical address range for a DMA operation.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future.
+old-location: storage\scsiportgetphysicaladdress.htm
+old-project: storage
+ms.assetid: 4a0d0b10-9773-40d7-962c-cf2acffcee47
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.scsiportgetphysicaladdress, ScsiPortGetPhysicalAddress, srb/ScsiPortGetPhysicalAddress, ScsiPortGetPhysicalAddress routine [Storage Devices], scsiprt_946bea8c-eb6d-4614-9dc0-004ee2501457.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: srb.h
+req.include-header: Miniport.h, Scsi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Scsiport.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Scsiport.lib
+-	Scsiport.dll
+apiname:
+-	ScsiPortGetPhysicalAddress
+product: Windows
+targetos: Windows
+req.typenames: SPB_CONTROLLER_CONFIG, *PSPB_CONTROLLER_CONFIG
+req.product: Windows 10 or later.
 ---
 
 

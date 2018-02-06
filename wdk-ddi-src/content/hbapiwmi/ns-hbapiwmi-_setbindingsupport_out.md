@@ -1,41 +1,46 @@
 ---
-UID : NS:hbapiwmi._SetBindingSupport_OUT
-title : "_SetBindingSupport_OUT"
-author : windows-driver-content
-description : The SetBindingSupport_OUT structure is used to report the output parameter data of the SetBindingSupport WMI method to the WMI client.
-old-location : storage\setbindingsupport_out.htm
-old-project : storage
-ms.assetid : f2b37780-0b33-4af9-9634-571b49be5791
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : hbapiwmi/PSetBindingSupport_OUT, SetBindingSupport_OUT, hbapiwmi/SetBindingSupport_OUT, PSetBindingSupport_OUT, structs-Fibre_95e0c3db-69d5-406f-98ea-6554eed922ef.xml, SetBindingSupport_OUT structure [Storage Devices], PSetBindingSupport_OUT structure pointer [Storage Devices], _SetBindingSupport_OUT, storage.setbindingsupport_out, *PSetBindingSupport_OUT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : hbapiwmi.h
-req.include-header : Hbapiwmi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SetBindingSupport_OUT, *PSetBindingSupport_OUT
+UID: NS:hbapiwmi._SetBindingSupport_OUT
+title: "_SetBindingSupport_OUT"
+author: windows-driver-content
+description: The SetBindingSupport_OUT structure is used to report the output parameter data of the SetBindingSupport WMI method to the WMI client.
+old-location: storage\setbindingsupport_out.htm
+old-project: storage
+ms.assetid: f2b37780-0b33-4af9-9634-571b49be5791
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: hbapiwmi/PSetBindingSupport_OUT, SetBindingSupport_OUT, hbapiwmi/SetBindingSupport_OUT, PSetBindingSupport_OUT, structs-Fibre_95e0c3db-69d5-406f-98ea-6554eed922ef.xml, SetBindingSupport_OUT structure [Storage Devices], PSetBindingSupport_OUT structure pointer [Storage Devices], _SetBindingSupport_OUT, storage.setbindingsupport_out, *PSetBindingSupport_OUT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: hbapiwmi.h
+req.include-header: Hbapiwmi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hbapiwmi.h
+apiname:
+-	SetBindingSupport_OUT
+product: Windows
+targetos: Windows
+req.typenames: SetBindingSupport_OUT, *PSetBindingSupport_OUT
 ---
 
 # _SetBindingSupport_OUT structure

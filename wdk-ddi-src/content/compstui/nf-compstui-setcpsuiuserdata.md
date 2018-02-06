@@ -1,41 +1,46 @@
 ---
-UID : NF:compstui.SetCPSUIUserData
-title : SetCPSUIUserData function
-author : windows-driver-content
-description : CPSUI's SetCPSUIUserData function allows CPSUI applications (including printer interface DLLs) to associate nondisplayed data with a property sheet dialog box.
-old-location : print\setcpsuiuserdata.htm
-old-project : print
-ms.assetid : 35119100-adf9-4376-bb1a-7317733fbcc5
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : print.setcpsuiuserdata, cpsuifnc_d2f38387-ece5-4894-86d5-0ef66f62a72c.xml, SetCPSUIUserData function [Print Devices], SetCPSUIUserData, compstui/SetCPSUIUserData
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : compstui.h
-req.include-header : Compstui.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Compstui.lib
-req.dll : Compstui.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPOWERSOURCEUPDATEEX, POWERSOURCEUPDATEEX"
+UID: NF:compstui.SetCPSUIUserData
+title: SetCPSUIUserData function
+author: windows-driver-content
+description: CPSUI's SetCPSUIUserData function allows CPSUI applications (including printer interface DLLs) to associate nondisplayed data with a property sheet dialog box.
+old-location: print\setcpsuiuserdata.htm
+old-project: print
+ms.assetid: 35119100-adf9-4376-bb1a-7317733fbcc5
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: print.setcpsuiuserdata, cpsuifnc_d2f38387-ece5-4894-86d5-0ef66f62a72c.xml, SetCPSUIUserData function [Print Devices], SetCPSUIUserData, compstui/SetCPSUIUserData
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: compstui.h
+req.include-header: Compstui.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Compstui.lib
+req.dll: Compstui.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Compstui.dll
+apiname:
+-	SetCPSUIUserData
+product: Windows
+targetos: Windows
+req.typenames: "*PPOWERSOURCEUPDATEEX, POWERSOURCEUPDATEEX"
 ---
 
 

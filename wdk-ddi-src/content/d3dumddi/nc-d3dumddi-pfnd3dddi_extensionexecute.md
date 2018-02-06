@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_EXTENSIONEXECUTE
-title : PFND3DDDI_EXTENSIONEXECUTE
-author : windows-driver-content
-description : The ExtensionExecute function performs an operation by using the given Microsoft DirectX Video Accelerator (VA) extension device.
-old-location : display\extensionexecute.htm
-old-project : display
-ms.assetid : a3f73651-bfff-48fa-aa61-477b8af7fa07
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.extensionexecute, ExtensionExecute callback function [Display Devices], ExtensionExecute, PFND3DDDI_EXTENSIONEXECUTE, PFND3DDDI_EXTENSIONEXECUTE, d3dumddi/ExtensionExecute, UserModeDisplayDriver_Functions_2972e743-bdb5-41ab-92ff-986b8335883b.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_EXTENSIONEXECUTE
+title: PFND3DDDI_EXTENSIONEXECUTE
+author: windows-driver-content
+description: The ExtensionExecute function performs an operation by using the given Microsoft DirectX Video Accelerator (VA) extension device.
+old-location: display\extensionexecute.htm
+old-project: display
+ms.assetid: a3f73651-bfff-48fa-aa61-477b8af7fa07
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.extensionexecute, ExtensionExecute callback function [Display Devices], ExtensionExecute, PFND3DDDI_EXTENSIONEXECUTE, PFND3DDDI_EXTENSIONEXECUTE, d3dumddi/ExtensionExecute, UserModeDisplayDriver_Functions_2972e743-bdb5-41ab-92ff-986b8335883b.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	ExtensionExecute
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

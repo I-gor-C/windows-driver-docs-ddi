@@ -1,41 +1,46 @@
 ---
-UID : NC:netdispumdddi.PFN_REGISTER_DATARATE_NOTIFICATIONS
-title : PFN_REGISTER_DATARATE_NOTIFICATIONS
-author : windows-driver-content
-description : Called by the user-mode driver to register with the operating system to receive network quality of service (QoS) notifications and the current network bandwidth of the Miracast connection.The data type of this function is PFN_REGISTER_DATARATE_NOTIFICATIONS.
-old-location : display\registerfordataratenotifications.htm
-old-project : display
-ms.assetid : 81500bb9-27f1-4688-b244-37dfd766f3c8
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.registerfordataratenotifications, PFN_REGISTER_DATARATE_NOTIFICATIONS, RegisterForDataRateNotifications callback function [Display Devices], RegisterForDataRateNotifications, PFN_REGISTER_DATARATE_NOTIFICATIONS, PFN_REGISTER_DATARATE_NOTIFICATIONS, netdispumdddi/RegisterForDataRateNotifications
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : netdispumdddi.h
-req.include-header : Netdispumdddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8.1
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDK_SRQ_DISPATCH
+UID: NC:netdispumdddi.PFN_REGISTER_DATARATE_NOTIFICATIONS
+title: PFN_REGISTER_DATARATE_NOTIFICATIONS
+author: windows-driver-content
+description: Called by the user-mode driver to register with the operating system to receive network quality of service (QoS) notifications and the current network bandwidth of the Miracast connection.The data type of this function is PFN_REGISTER_DATARATE_NOTIFICATIONS.
+old-location: display\registerfordataratenotifications.htm
+old-project: display
+ms.assetid: 81500bb9-27f1-4688-b244-37dfd766f3c8
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.registerfordataratenotifications, PFN_REGISTER_DATARATE_NOTIFICATIONS, RegisterForDataRateNotifications callback function [Display Devices], RegisterForDataRateNotifications, PFN_REGISTER_DATARATE_NOTIFICATIONS, PFN_REGISTER_DATARATE_NOTIFICATIONS, netdispumdddi/RegisterForDataRateNotifications
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: netdispumdddi.h
+req.include-header: Netdispumdddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8.1
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Netdispumdddi.h
+apiname:
+-	RegisterForDataRateNotifications
+product: Windows
+targetos: Windows
+req.typenames: NDK_SRQ_DISPATCH
 ---
 
 

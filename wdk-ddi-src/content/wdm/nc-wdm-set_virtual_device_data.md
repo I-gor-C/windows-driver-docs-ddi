@@ -1,42 +1,47 @@
 ---
-UID : NC:wdm.SET_VIRTUAL_DEVICE_DATA
-title : SET_VIRTUAL_DEVICE_DATA
-author : windows-driver-content
-description : The SetVirtualFunctionData routine writes data to the PCI Express (PCIe) configuration space of a virtual function (VF) on a device that supports the single root I/O virtualization (SR-IOV) interface.
-old-location : pci\setvirtualfunctiondata.htm
-old-project : PCI
-ms.assetid : 12CC6973-E691-425E-A8E8-839F83116D29
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : PCI.setvirtualfunctiondata, SetVirtualFunctionData routine, SetVirtualFunctionData, SET_VIRTUAL_DEVICE_DATA, SET_VIRTUAL_DEVICE_DATA, wdm/SetVirtualFunctionData
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdm.h
-req.include-header : Wdm.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported in Windows Server 2012 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
-req.product : Windows 10 or later.
+UID: NC:wdm.SET_VIRTUAL_DEVICE_DATA
+title: SET_VIRTUAL_DEVICE_DATA
+author: windows-driver-content
+description: The SetVirtualFunctionData routine writes data to the PCI Express (PCIe) configuration space of a virtual function (VF) on a device that supports the single root I/O virtualization (SR-IOV) interface.
+old-location: pci\setvirtualfunctiondata.htm
+old-project: PCI
+ms.assetid: 12CC6973-E691-425E-A8E8-839F83116D29
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: PCI.setvirtualfunctiondata, SetVirtualFunctionData routine, SetVirtualFunctionData, SET_VIRTUAL_DEVICE_DATA, SET_VIRTUAL_DEVICE_DATA, wdm/SetVirtualFunctionData
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdm.h
+req.include-header: Wdm.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported in Windows Server 2012 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Wdm.h
+apiname:
+-	SetVirtualFunctionData
+product: Windows
+targetos: Windows
+req.typenames: WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+req.product: Windows 10 or later.
 ---
 
 

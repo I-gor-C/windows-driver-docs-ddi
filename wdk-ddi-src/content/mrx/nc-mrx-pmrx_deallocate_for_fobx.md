@@ -1,41 +1,46 @@
 ---
-UID : NC:mrx.PMRX_DEALLOCATE_FOR_FOBX
-title : PMRX_DEALLOCATE_FOR_FOBX
-author : windows-driver-content
-description : The MRxDeallocateForFobx routine is called by RDBSS to request that the network mini-redirector deallocate an FOBX structure. This call is in response to a request to close a file system object.
-old-location : ifsk\mrxdeallocateforfobx.htm
-old-project : ifsk
-ms.assetid : 3b33df22-7757-4270-8cb0-59e8f5d5a80a
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.mrxdeallocateforfobx, MRxDeallocateForFobx routine [Installable File System Drivers], MRxDeallocateForFobx, PMRX_DEALLOCATE_FOR_FOBX, PMRX_DEALLOCATE_FOR_FOBX, mrx/MRxDeallocateForFobx, mrxref_2b2fa1f1-19f9-4a9b-9105-7c5946428b88.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : mrx.h
-req.include-header : Mrx.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SetDSMCounters_IN, *PSetDSMCounters_IN
+UID: NC:mrx.PMRX_DEALLOCATE_FOR_FOBX
+title: PMRX_DEALLOCATE_FOR_FOBX
+author: windows-driver-content
+description: The MRxDeallocateForFobx routine is called by RDBSS to request that the network mini-redirector deallocate an FOBX structure. This call is in response to a request to close a file system object.
+old-location: ifsk\mrxdeallocateforfobx.htm
+old-project: ifsk
+ms.assetid: 3b33df22-7757-4270-8cb0-59e8f5d5a80a
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.mrxdeallocateforfobx, MRxDeallocateForFobx routine [Installable File System Drivers], MRxDeallocateForFobx, PMRX_DEALLOCATE_FOR_FOBX, PMRX_DEALLOCATE_FOR_FOBX, mrx/MRxDeallocateForFobx, mrxref_2b2fa1f1-19f9-4a9b-9105-7c5946428b88.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: mrx.h
+req.include-header: Mrx.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	mrx.h
+apiname:
+-	MRxDeallocateForFobx
+product: Windows
+targetos: Windows
+req.typenames: SetDSMCounters_IN, *PSetDSMCounters_IN
 ---
 
 

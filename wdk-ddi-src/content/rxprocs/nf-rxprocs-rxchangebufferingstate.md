@@ -1,42 +1,47 @@
 ---
-UID : NF:rxprocs.RxChangeBufferingState
-title : RxChangeBufferingState function
-author : windows-driver-content
-description : RxChangeBufferingState is called to process a buffering state change request.
-old-location : ifsk\rxchangebufferingstate.htm
-old-project : ifsk
-ms.assetid : 83e181cd-bbec-4142-8d97-4f67285b6bb4
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : RxChangeBufferingState, rxprocs/RxChangeBufferingState, ifsk.rxchangebufferingstate, rxref_be2316b0-d89d-4f61-bd09-05d631d1cfdd.xml, RxChangeBufferingState function [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : rxprocs.h
-req.include-header : Rxprocs.h, Struchdr.h, Fcb.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RX_CONTEXT, *PRX_CONTEXT
-req.product : Windows 10 or later.
+UID: NF:rxprocs.RxChangeBufferingState
+title: RxChangeBufferingState function
+author: windows-driver-content
+description: RxChangeBufferingState is called to process a buffering state change request.
+old-location: ifsk\rxchangebufferingstate.htm
+old-project: ifsk
+ms.assetid: 83e181cd-bbec-4142-8d97-4f67285b6bb4
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: RxChangeBufferingState, rxprocs/RxChangeBufferingState, ifsk.rxchangebufferingstate, rxref_be2316b0-d89d-4f61-bd09-05d631d1cfdd.xml, RxChangeBufferingState function [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: rxprocs.h
+req.include-header: Rxprocs.h, Struchdr.h, Fcb.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	rxprocs.h
+apiname:
+-	RxChangeBufferingState
+product: Windows
+targetos: Windows
+req.typenames: RX_CONTEXT, *PRX_CONTEXT
+req.product: Windows 10 or later.
 ---
 
 

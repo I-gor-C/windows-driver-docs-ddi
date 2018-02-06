@@ -1,41 +1,46 @@
 ---
-UID : NS:61883._UNIT_DIAG_LEVEL
-title : "_UNIT_DIAG_LEVEL"
-author : windows-driver-content
-description : The UNIT_DDI_VERSION structure is used in conjunction with the Av61883_GetUnitInfo request to retrieve the current diag level
-old-location : ieee\unit_diag_level.htm
-old-project : IEEE
-ms.assetid : 2759486f-7eaa-4af4-b9a9-2e44354f411b
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : UNIT_DIAG_LEVEL structure [Buses], PUNIT_DIAG_LEVEL, 61883/PUNIT_DIAG_LEVEL, *PUNIT_DIAG_LEVEL, _UNIT_DIAG_LEVEL, 61883/UNIT_DIAG_LEVEL, UNIT_DIAG_LEVEL, PUNIT_DIAG_LEVEL structure pointer [Buses], IEEE.unit_diag_level, 61883_structures_02b60b1d-45d1-474b-901c-4346b23c8d25.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : 61883.h
-req.include-header : 61883.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUNIT_DIAG_LEVEL, UNIT_DIAG_LEVEL"
+UID: NS:61883._UNIT_DIAG_LEVEL
+title: "_UNIT_DIAG_LEVEL"
+author: windows-driver-content
+description: The UNIT_DDI_VERSION structure is used in conjunction with the Av61883_GetUnitInfo request to retrieve the current diag level
+old-location: ieee\unit_diag_level.htm
+old-project: IEEE
+ms.assetid: 2759486f-7eaa-4af4-b9a9-2e44354f411b
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: UNIT_DIAG_LEVEL structure [Buses], PUNIT_DIAG_LEVEL, 61883/PUNIT_DIAG_LEVEL, *PUNIT_DIAG_LEVEL, _UNIT_DIAG_LEVEL, 61883/UNIT_DIAG_LEVEL, UNIT_DIAG_LEVEL, PUNIT_DIAG_LEVEL structure pointer [Buses], IEEE.unit_diag_level, 61883_structures_02b60b1d-45d1-474b-901c-4346b23c8d25.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: 61883.h
+req.include-header: 61883.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	61883.h
+apiname:
+-	UNIT_DIAG_LEVEL
+product: Windows
+targetos: Windows
+req.typenames: "*PUNIT_DIAG_LEVEL, UNIT_DIAG_LEVEL"
 ---
 
 # _UNIT_DIAG_LEVEL structure

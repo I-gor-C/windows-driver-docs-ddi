@@ -1,41 +1,47 @@
 ---
-UID : NF:ntstrsafe.RtlUnicodeStringCchCatStringN
-title : RtlUnicodeStringCchCatStringN function
-author : windows-driver-content
-description : The RtlUnicodeStringCchCatStringN function concatenates two strings when the destination string is contained in a UNICODE_STRING structure, while limiting the size of the appended string.
-old-location : kernel\rtlunicodestringcchcatstringn.htm
-old-project : kernel
-ms.assetid : fb36bc6f-ea9d-4433-a004-3d7db64fcb06
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : RtlUnicodeStringCchCatStringN function [Kernel-Mode Driver Architecture], safestrings_7873a766-38f3-4e51-bde0-81fbf1f2dda6.xml, kernel.rtlunicodestringcchcatstringn, RtlUnicodeStringCchCatStringN, ntstrsafe/RtlUnicodeStringCchCatStringN
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntstrsafe.h
-req.include-header : Ntstrsafe.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows XP with Service Pack 1 (SP1) and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ntstrsafe.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : BATTERY_REPORTING_SCALE, *PBATTERY_REPORTING_SCALE
+UID: NF:ntstrsafe.RtlUnicodeStringCchCatStringN
+title: RtlUnicodeStringCchCatStringN function
+author: windows-driver-content
+description: The RtlUnicodeStringCchCatStringN function concatenates two strings when the destination string is contained in a UNICODE_STRING structure, while limiting the size of the appended string.
+old-location: kernel\rtlunicodestringcchcatstringn.htm
+old-project: kernel
+ms.assetid: fb36bc6f-ea9d-4433-a004-3d7db64fcb06
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: RtlUnicodeStringCchCatStringN function [Kernel-Mode Driver Architecture], safestrings_7873a766-38f3-4e51-bde0-81fbf1f2dda6.xml, kernel.rtlunicodestringcchcatstringn, RtlUnicodeStringCchCatStringN, ntstrsafe/RtlUnicodeStringCchCatStringN
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntstrsafe.h
+req.include-header: Ntstrsafe.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows XP with Service Pack 1 (SP1) and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ntstrsafe.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ntstrsafe.lib
+-	Ntstrsafe.dll
+apiname:
+-	RtlUnicodeStringCchCatStringN
+product: Windows
+targetos: Windows
+req.typenames: BATTERY_REPORTING_SCALE, *PBATTERY_REPORTING_SCALE
 ---
 
 

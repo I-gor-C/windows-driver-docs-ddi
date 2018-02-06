@@ -1,42 +1,47 @@
 ---
-UID : NF:video.VideoPortDeleteSpinLock
-title : VideoPortDeleteSpinLock function
-author : windows-driver-content
-description : The VideoPortDeleteSpinLock function deletes a given spin lock.
-old-location : display\videoportdeletespinlock.htm
-old-project : display
-ms.assetid : 74845e4d-0fa1-4625-96a7-2fddec8b901d
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : video/VideoPortDeleteSpinLock, VideoPort_Functions_d98d74d6-bf9c-441b-95e3-a3455927dd45.xml, VideoPortDeleteSpinLock function [Display Devices], display.videoportdeletespinlock, VideoPortDeleteSpinLock
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows XP and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Videoprt.lib
-req.dll : Videoprt.sys
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_PORT_SERVICES
-req.product : Windows 10 or later.
+UID: NF:video.VideoPortDeleteSpinLock
+title: VideoPortDeleteSpinLock function
+author: windows-driver-content
+description: The VideoPortDeleteSpinLock function deletes a given spin lock.
+old-location: display\videoportdeletespinlock.htm
+old-project: display
+ms.assetid: 74845e4d-0fa1-4625-96a7-2fddec8b901d
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: video/VideoPortDeleteSpinLock, VideoPort_Functions_d98d74d6-bf9c-441b-95e3-a3455927dd45.xml, VideoPortDeleteSpinLock function [Display Devices], display.videoportdeletespinlock, VideoPortDeleteSpinLock
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows XP and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Videoprt.lib
+req.dll: Videoprt.sys
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Videoprt.sys
+apiname:
+-	VideoPortDeleteSpinLock
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_PORT_SERVICES
+req.product: Windows 10 or later.
 ---
 
 

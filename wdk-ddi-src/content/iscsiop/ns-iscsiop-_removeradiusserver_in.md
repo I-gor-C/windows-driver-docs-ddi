@@ -1,41 +1,46 @@
 ---
-UID : NS:iscsiop._RemoveRADIUSServer_IN
-title : "_RemoveRADIUSServer_IN"
-author : windows-driver-content
-description : The RemoveRADIUSServer_IN structure holds the input data for the user-mode RemoveRADIUSServer method, which is used to remove a RADIUS server entry.
-old-location : storage\removeradiusserver_in.htm
-old-project : storage
-ms.assetid : 600916e1-37c2-4766-93d9-b7d32a542542
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : RemoveRADIUSServer_IN, iscsiop/RemoveRADIUSServer_IN, structs-iSCSI_e85b2fed-4691-43c4-b71a-a81905c79564.xml, RemoveRADIUSServer_IN structure [Storage Devices], iscsiop/PRemoveRADIUSServer_IN, *PRemoveRADIUSServer_IN, PRemoveRADIUSServer_IN, storage.removeradiusserver_in, _RemoveRADIUSServer_IN, PRemoveRADIUSServer_IN structure pointer [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : iscsiop.h
-req.include-header : Iscsiop.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PRemoveRADIUSServer_IN, RemoveRADIUSServer_IN"
+UID: NS:iscsiop._RemoveRADIUSServer_IN
+title: "_RemoveRADIUSServer_IN"
+author: windows-driver-content
+description: The RemoveRADIUSServer_IN structure holds the input data for the user-mode RemoveRADIUSServer method, which is used to remove a RADIUS server entry.
+old-location: storage\removeradiusserver_in.htm
+old-project: storage
+ms.assetid: 600916e1-37c2-4766-93d9-b7d32a542542
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: RemoveRADIUSServer_IN, iscsiop/RemoveRADIUSServer_IN, structs-iSCSI_e85b2fed-4691-43c4-b71a-a81905c79564.xml, RemoveRADIUSServer_IN structure [Storage Devices], iscsiop/PRemoveRADIUSServer_IN, *PRemoveRADIUSServer_IN, PRemoveRADIUSServer_IN, storage.removeradiusserver_in, _RemoveRADIUSServer_IN, PRemoveRADIUSServer_IN structure pointer [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: iscsiop.h
+req.include-header: Iscsiop.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	iscsiop.h
+apiname:
+-	RemoveRADIUSServer_IN
+product: Windows
+targetos: Windows
+req.typenames: "*PRemoveRADIUSServer_IN, RemoveRADIUSServer_IN"
 ---
 
 # _RemoveRADIUSServer_IN structure

@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltGetTunneledName
-title : FltGetTunneledName function
-author : windows-driver-content
-description : The FltGetTunneledName routine retrieves the tunneled name for a file, given the normalized name returned for the file by a previous call to FltGetFileNameInformation, FltGetFileNameInformationUnsafe, or FltGetDestinationFileNameInformation.
-old-location : ifsk\fltgettunneledname.htm
-old-project : ifsk
-ms.assetid : 760ee574-5ca5-4db1-8b47-009a12398076
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltGetTunneledName routine [Installable File System Drivers], FltApiRef_e_to_o_5a952e3d-25d1-48e7-b91b-9891a446d53b.xml, FltGetTunneledName, ifsk.fltgettunneledname, fltkernel/FltGetTunneledName
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltGetTunneledName
+title: FltGetTunneledName function
+author: windows-driver-content
+description: The FltGetTunneledName routine retrieves the tunneled name for a file, given the normalized name returned for the file by a previous call to FltGetFileNameInformation, FltGetFileNameInformationUnsafe, or FltGetDestinationFileNameInformation.
+old-location: ifsk\fltgettunneledname.htm
+old-project: ifsk
+ms.assetid: 760ee574-5ca5-4db1-8b47-009a12398076
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltGetTunneledName routine [Installable File System Drivers], FltApiRef_e_to_o_5a952e3d-25d1-48e7-b91b-9891a446d53b.xml, FltGetTunneledName, ifsk.fltgettunneledname, fltkernel/FltGetTunneledName
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltGetTunneledName
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

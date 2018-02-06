@@ -1,42 +1,47 @@
 ---
-UID : NF:wiamdef.wiasWritePageBufToFile
-title : wiasWritePageBufToFile function
-author : windows-driver-content
-description : The wiasWritePageBufToFile function writes the contents of a temporary page buffer to an image file.
-old-location : image\wiaswritepagebuftofile.htm
-old-project : image
-ms.assetid : aa04ef8c-5b69-4d7e-8af4-8cbdb680a23a
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : wiasFncs_1d5b96b4-4737-481a-ae6a-e1ec4e8affef.xml, wiamdef/wiasWritePageBufToFile, wiasWritePageBufToFile, image.wiaswritepagebuftofile, wiasWritePageBufToFile function [Imaging Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wiamdef.h
-req.include-header : Wiamdef.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wiaservc.lib
-req.dll : Wiaservc.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*LPDEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2, DEVICEDIALOGDATA2"
-req.product : Windows 10 or later.
+UID: NF:wiamdef.wiasWritePageBufToFile
+title: wiasWritePageBufToFile function
+author: windows-driver-content
+description: The wiasWritePageBufToFile function writes the contents of a temporary page buffer to an image file.
+old-location: image\wiaswritepagebuftofile.htm
+old-project: image
+ms.assetid: aa04ef8c-5b69-4d7e-8af4-8cbdb680a23a
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: wiasFncs_1d5b96b4-4737-481a-ae6a-e1ec4e8affef.xml, wiamdef/wiasWritePageBufToFile, wiasWritePageBufToFile, image.wiaswritepagebuftofile, wiasWritePageBufToFile function [Imaging Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wiamdef.h
+req.include-header: Wiamdef.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wiaservc.lib
+req.dll: Wiaservc.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Wiaservc.dll
+apiname:
+-	wiasWritePageBufToFile
+product: Windows
+targetos: Windows
+req.typenames: "*LPDEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2, DEVICEDIALOGDATA2"
+req.product: Windows 10 or later.
 ---
 
 

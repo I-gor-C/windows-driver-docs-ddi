@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddstor._DEVICE_COPY_OFFLOAD_DESCRIPTOR
-title : "_DEVICE_COPY_OFFLOAD_DESCRIPTOR"
-author : windows-driver-content
-description : Used in conjunction with the IOCTL_STORAGE_QUERY_PROPERTY request to describe the copy offload capabilities of a storage device.
-old-location : storage\device_copy_offload_descriptor.htm
-old-project : storage
-ms.assetid : 192684D1-3D01-4EAA-989F-2E21E7187B3B
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : "*PDEVICE_COPY_OFFLOAD_DESCRIPTOR, ntddstor/PDEVICE_COPY_OFFLOAD_DESCRIPTOR, PDEVICE_COPY_OFFLOAD_DESCRIPTOR structure pointer [Storage Devices], PDEVICE_COPY_OFFLOAD_DESCRIPTOR, DEVICE_COPY_OFFLOAD_DESCRIPTOR, storage.device_copy_offload_descriptor, DEVICE_COPY_OFFLOAD_DESCRIPTOR structure [Storage Devices], ntddstor/DEVICE_COPY_OFFLOAD_DESCRIPTOR, _DEVICE_COPY_OFFLOAD_DESCRIPTOR"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddstor.h
-req.include-header : Ntddstor.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDEVICE_COPY_OFFLOAD_DESCRIPTOR, DEVICE_COPY_OFFLOAD_DESCRIPTOR"
+UID: NS:ntddstor._DEVICE_COPY_OFFLOAD_DESCRIPTOR
+title: "_DEVICE_COPY_OFFLOAD_DESCRIPTOR"
+author: windows-driver-content
+description: Used in conjunction with the IOCTL_STORAGE_QUERY_PROPERTY request to describe the copy offload capabilities of a storage device.
+old-location: storage\device_copy_offload_descriptor.htm
+old-project: storage
+ms.assetid: 192684D1-3D01-4EAA-989F-2E21E7187B3B
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: "*PDEVICE_COPY_OFFLOAD_DESCRIPTOR, ntddstor/PDEVICE_COPY_OFFLOAD_DESCRIPTOR, PDEVICE_COPY_OFFLOAD_DESCRIPTOR structure pointer [Storage Devices], PDEVICE_COPY_OFFLOAD_DESCRIPTOR, DEVICE_COPY_OFFLOAD_DESCRIPTOR, storage.device_copy_offload_descriptor, DEVICE_COPY_OFFLOAD_DESCRIPTOR structure [Storage Devices], ntddstor/DEVICE_COPY_OFFLOAD_DESCRIPTOR, _DEVICE_COPY_OFFLOAD_DESCRIPTOR"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddstor.h
+req.include-header: Ntddstor.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddstor.h
+apiname:
+-	DEVICE_COPY_OFFLOAD_DESCRIPTOR
+product: Windows
+targetos: Windows
+req.typenames: "*PDEVICE_COPY_OFFLOAD_DESCRIPTOR, DEVICE_COPY_OFFLOAD_DESCRIPTOR"
 ---
 
 # _DEVICE_COPY_OFFLOAD_DESCRIPTOR structure

@@ -1,41 +1,46 @@
 ---
-UID : NS:dot11wdi._WDI_TXRX_TARGET_CAPABILITIES
-title : "_WDI_TXRX_TARGET_CAPABILITIES"
-author : windows-driver-content
-description : The WDI_TXRX_CAPABILITIES structure defines the target capabilities.
-old-location : netvista\wdi_txrx_capabilities.htm
-old-project : netvista
-ms.assetid : 7a1d3ffd-6f5e-429d-8c2f-a141f98ccad8
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : WDI_TXRX_CAPABILITIES structure [Network Drivers Starting with Windows Vista], netvista.wifi_txrx_target_capabilities, dot11wdi/PWDI_TXRX_CAPABILITIES, WDI_TXRX_CAPABILITIES, _WDI_TXRX_TARGET_CAPABILITIES, *PWDI_TXRX_CAPABILITIES, netvista.wdi_txrx_capabilities, PWDI_TXRX_CAPABILITIES structure pointer [Network Drivers Starting with Windows Vista], dot11wdi/WDI_TXRX_TARGET_CAPABILITIES, PWDI_TXRX_CAPABILITIES, netvista.wdi_txrx_target_capabilities
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : dot11wdi.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDI_TXRX_CAPABILITIES, *PWDI_TXRX_CAPABILITIES
+UID: NS:dot11wdi._WDI_TXRX_TARGET_CAPABILITIES
+title: "_WDI_TXRX_TARGET_CAPABILITIES"
+author: windows-driver-content
+description: The WDI_TXRX_CAPABILITIES structure defines the target capabilities.
+old-location: netvista\wdi_txrx_capabilities.htm
+old-project: netvista
+ms.assetid: 7a1d3ffd-6f5e-429d-8c2f-a141f98ccad8
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: WDI_TXRX_CAPABILITIES structure [Network Drivers Starting with Windows Vista], netvista.wifi_txrx_target_capabilities, dot11wdi/PWDI_TXRX_CAPABILITIES, WDI_TXRX_CAPABILITIES, _WDI_TXRX_TARGET_CAPABILITIES, *PWDI_TXRX_CAPABILITIES, netvista.wdi_txrx_capabilities, PWDI_TXRX_CAPABILITIES structure pointer [Network Drivers Starting with Windows Vista], dot11wdi/WDI_TXRX_TARGET_CAPABILITIES, PWDI_TXRX_CAPABILITIES, netvista.wdi_txrx_target_capabilities
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: dot11wdi.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	dot11wdi.h
+apiname:
+-	WDI_TXRX_CAPABILITIES
+product: Windows
+targetos: Windows
+req.typenames: WDI_TXRX_CAPABILITIES, *PWDI_TXRX_CAPABILITIES
 ---
 
 # _WDI_TXRX_TARGET_CAPABILITIES structure

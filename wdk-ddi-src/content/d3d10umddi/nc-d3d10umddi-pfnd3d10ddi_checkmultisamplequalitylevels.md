@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3D10DDI_CHECKMULTISAMPLEQUALITYLEVELS
-title : PFND3D10DDI_CHECKMULTISAMPLEQUALITYLEVELS
-author : windows-driver-content
-description : The CheckMultisampleQualityLevels function retrieves the number of quality levels that the device supports for the specified number of samples.
-old-location : display\checkmultisamplequalitylevels.htm
-old-project : display
-ms.assetid : 2b6a0ab8-f197-48c3-baf2-305b77b7e8b5
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.checkmultisamplequalitylevels, CheckMultisampleQualityLevels callback function [Display Devices], CheckMultisampleQualityLevels, PFND3D10DDI_CHECKMULTISAMPLEQUALITYLEVELS, PFND3D10DDI_CHECKMULTISAMPLEQUALITYLEVELS, d3d10umddi/CheckMultisampleQualityLevels, UserModeDisplayDriverDx10_Functions_d19bc4c0-49ba-4e1c-b19e-667905ceb391.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3D10DDI_CHECKMULTISAMPLEQUALITYLEVELS
+title: PFND3D10DDI_CHECKMULTISAMPLEQUALITYLEVELS
+author: windows-driver-content
+description: The CheckMultisampleQualityLevels function retrieves the number of quality levels that the device supports for the specified number of samples.
+old-location: display\checkmultisamplequalitylevels.htm
+old-project: display
+ms.assetid: 2b6a0ab8-f197-48c3-baf2-305b77b7e8b5
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.checkmultisamplequalitylevels, CheckMultisampleQualityLevels callback function [Display Devices], CheckMultisampleQualityLevels, PFND3D10DDI_CHECKMULTISAMPLEQUALITYLEVELS, PFND3D10DDI_CHECKMULTISAMPLEQUALITYLEVELS, d3d10umddi/CheckMultisampleQualityLevels, UserModeDisplayDriverDx10_Functions_d19bc4c0-49ba-4e1c-b19e-667905ceb391.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	CheckMultisampleQualityLevels
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

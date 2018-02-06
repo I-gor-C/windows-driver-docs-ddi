@@ -1,42 +1,47 @@
 ---
-UID : NS:wdm._PO_FX_COMPONENT_IDLE_STATE
-title : "_PO_FX_COMPONENT_IDLE_STATE"
-author : windows-driver-content
-description : The PO_FX_COMPONENT_IDLE_STATE structure specifies the attributes of an Fx power state of a component in a device.
-old-location : kernel\po_fx_component_idle_state.htm
-old-project : kernel
-ms.assetid : 4F0BF45D-F854-480C-B0AC-8134C6BF3266
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : PPO_FX_COMPONENT_IDLE_STATE, wdm/PPO_FX_COMPONENT_IDLE_STATE, *PPO_FX_COMPONENT_IDLE_STATE, PPO_FX_COMPONENT_IDLE_STATE structure pointer [Kernel-Mode Driver Architecture], _PO_FX_COMPONENT_IDLE_STATE, PO_FX_COMPONENT_IDLE_STATE, wdm/PO_FX_COMPONENT_IDLE_STATE, PO_FX_COMPONENT_IDLE_STATE structure [Kernel-Mode Driver Architecture], kernel.po_fx_component_idle_state
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPO_FX_COMPONENT_IDLE_STATE, PO_FX_COMPONENT_IDLE_STATE"
-req.product : Windows 10 or later.
+UID: NS:wdm._PO_FX_COMPONENT_IDLE_STATE
+title: "_PO_FX_COMPONENT_IDLE_STATE"
+author: windows-driver-content
+description: The PO_FX_COMPONENT_IDLE_STATE structure specifies the attributes of an Fx power state of a component in a device.
+old-location: kernel\po_fx_component_idle_state.htm
+old-project: kernel
+ms.assetid: 4F0BF45D-F854-480C-B0AC-8134C6BF3266
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: PPO_FX_COMPONENT_IDLE_STATE, wdm/PPO_FX_COMPONENT_IDLE_STATE, *PPO_FX_COMPONENT_IDLE_STATE, PPO_FX_COMPONENT_IDLE_STATE structure pointer [Kernel-Mode Driver Architecture], _PO_FX_COMPONENT_IDLE_STATE, PO_FX_COMPONENT_IDLE_STATE, wdm/PO_FX_COMPONENT_IDLE_STATE, PO_FX_COMPONENT_IDLE_STATE structure [Kernel-Mode Driver Architecture], kernel.po_fx_component_idle_state
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	PO_FX_COMPONENT_IDLE_STATE
+product: Windows
+targetos: Windows
+req.typenames: "*PPO_FX_COMPONENT_IDLE_STATE, PO_FX_COMPONENT_IDLE_STATE"
+req.product: Windows 10 or later.
 ---
 
 # _PO_FX_COMPONENT_IDLE_STATE structure

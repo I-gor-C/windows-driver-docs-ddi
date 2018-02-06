@@ -1,42 +1,47 @@
 ---
-UID : NC:ucxroothub.EVT_UCX_ROOTHUB_GET_INFO
-title : EVT_UCX_ROOTHUB_GET_INFO
-author : windows-driver-content
-description : The client driver's implementation that UCX calls when it receives a request for information about the root hub.
-old-location : buses\evt_ucx_roothub_get_info.htm
-old-project : usbref
-ms.assetid : b882b401-f806-4334-a8c5-fa65382fb9d3
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : buses.evt_ucx_roothub_get_info, EvtUcxRootHubGetInfo callback function [Buses], EvtUcxRootHubGetInfo, EVT_UCX_ROOTHUB_GET_INFO, EVT_UCX_ROOTHUB_GET_INFO, ucxroothub/EvtUcxRootHubGetInfo, PEVT_UCX_ROOTHUB_GET_INFO callback function pointer [Buses], PEVT_UCX_ROOTHUB_GET_INFO
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ucxroothub.h
-req.include-header : Ucxclass.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : DISPATCH_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUCX_ENDPOINT_ISOCH_TRANSFER_PATH_DELAYS, UCX_ENDPOINT_ISOCH_TRANSFER_PATH_DELAYS"
-req.product : Windows 10 or later.
+UID: NC:ucxroothub.EVT_UCX_ROOTHUB_GET_INFO
+title: EVT_UCX_ROOTHUB_GET_INFO
+author: windows-driver-content
+description: The client driver's implementation that UCX calls when it receives a request for information about the root hub.
+old-location: buses\evt_ucx_roothub_get_info.htm
+old-project: usbref
+ms.assetid: b882b401-f806-4334-a8c5-fa65382fb9d3
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: buses.evt_ucx_roothub_get_info, EvtUcxRootHubGetInfo callback function [Buses], EvtUcxRootHubGetInfo, EVT_UCX_ROOTHUB_GET_INFO, EVT_UCX_ROOTHUB_GET_INFO, ucxroothub/EvtUcxRootHubGetInfo, PEVT_UCX_ROOTHUB_GET_INFO callback function pointer [Buses], PEVT_UCX_ROOTHUB_GET_INFO
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ucxroothub.h
+req.include-header: Ucxclass.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: DISPATCH_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	ucxroothub.h
+apiname:
+-	PEVT_UCX_ROOTHUB_GET_INFO
+product: Windows
+targetos: Windows
+req.typenames: "*PUCX_ENDPOINT_ISOCH_TRANSFER_PATH_DELAYS, UCX_ENDPOINT_ISOCH_TRANSFER_PATH_DELAYS"
+req.product: Windows 10 or later.
 ---
 
 

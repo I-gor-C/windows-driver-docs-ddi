@@ -1,41 +1,46 @@
 ---
-UID : NS:dxgiddi._DXGI_DDI_ARG_OFFERRESOURCES
-title : "_DXGI_DDI_ARG_OFFERRESOURCES"
-author : windows-driver-content
-description : Describes video memory resources that the user-mode display driver offers for reuse. Used with the pfnOfferResources function. Used with the pfnReclaimResources function by Windows Display Driver Model (WDDM) 1.2 and later user-mode display drivers.
-old-location : display\dxgi_ddi_arg_offerresources.htm
-old-project : display
-ms.assetid : 54d53a48-b2e2-43f6-9e6d-c35c732b07d9
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : dxgiddi/DXGI_DDI_ARG_OFFERRESOURCES, _DXGI_DDI_ARG_OFFERRESOURCES, DXGI_DDI_ARG_OFFERRESOURCES structure [Display Devices], display.dxgi_ddi_arg_offerresources, DXGI_DDI_ARG_OFFERRESOURCES
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : dxgiddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8,WDDM 1.2 and later
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGI_DDI_ARG_OFFERRESOURCES
+UID: NS:dxgiddi._DXGI_DDI_ARG_OFFERRESOURCES
+title: "_DXGI_DDI_ARG_OFFERRESOURCES"
+author: windows-driver-content
+description: Describes video memory resources that the user-mode display driver offers for reuse. Used with the pfnOfferResources function. Used with the pfnReclaimResources function by Windows Display Driver Model (WDDM) 1.2 and later user-mode display drivers.
+old-location: display\dxgi_ddi_arg_offerresources.htm
+old-project: display
+ms.assetid: 54d53a48-b2e2-43f6-9e6d-c35c732b07d9
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: dxgiddi/DXGI_DDI_ARG_OFFERRESOURCES, _DXGI_DDI_ARG_OFFERRESOURCES, DXGI_DDI_ARG_OFFERRESOURCES structure [Display Devices], display.dxgi_ddi_arg_offerresources, DXGI_DDI_ARG_OFFERRESOURCES
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: dxgiddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8,WDDM 1.2 and later
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Dxgiddi.h
+apiname:
+-	DXGI_DDI_ARG_OFFERRESOURCES
+product: Windows
+targetos: Windows
+req.typenames: DXGI_DDI_ARG_OFFERRESOURCES
 ---
 
 # _DXGI_DDI_ARG_OFFERRESOURCES structure

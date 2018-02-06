@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisUnbindAdapter
-title : NdisUnbindAdapter function
-author : windows-driver-content
-description : Protocol drivers call the NdisUnbindAdapter function to request NDIS to close a binding to an underlying miniport adapter.
-old-location : netvista\ndisunbindadapter.htm
-old-project : netvista
-ms.assetid : 47aacc23-f7d1-4c14-9541-3207debef327
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NdisUnbindAdapter, ndis/NdisUnbindAdapter, protocol_ndis_functions_ref_99324c18-23da-4ed1-9ccc-ab73ac342c50.xml, netvista.ndisunbindadapter, NdisUnbindAdapter function [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_Protocol_Driver_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisUnbindAdapter
+title: NdisUnbindAdapter function
+author: windows-driver-content
+description: Protocol drivers call the NdisUnbindAdapter function to request NDIS to close a binding to an underlying miniport adapter.
+old-location: netvista\ndisunbindadapter.htm
+old-project: netvista
+ms.assetid: 47aacc23-f7d1-4c14-9541-3207debef327
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NdisUnbindAdapter, ndis/NdisUnbindAdapter, protocol_ndis_functions_ref_99324c18-23da-4ed1-9ccc-ab73ac342c50.xml, netvista.ndisunbindadapter, NdisUnbindAdapter function [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_Protocol_Driver_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisUnbindAdapter
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

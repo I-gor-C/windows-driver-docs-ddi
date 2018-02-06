@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFInterrupt.Disable
-title : IWDFInterrupt::Disable method
-author : windows-driver-content
-description : The Disable method disables a specified device interrupt by calling the driver's OnInterruptDisable callback function.
-old-location : wdf\iwdfinterrupt_disable.htm
-old-project : wdf
-ms.assetid : D87C868D-9538-4752-AEBD-2A15E53628CF
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.iwdfinterrupt_disable, Disable method, umdf.iwdfinterrupt_disable, IWDFInterrupt, wudfddi/IWDFInterrupt::Disable, IWDFInterrupt::Disable, Disable method, IWDFInterrupt interface, Disable, IWDFInterrupt interface, Disable method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.11
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFInterrupt.Disable
+title: IWDFInterrupt::Disable method
+author: windows-driver-content
+description: The Disable method disables a specified device interrupt by calling the driver's OnInterruptDisable callback function.
+old-location: wdf\iwdfinterrupt_disable.htm
+old-project: wdf
+ms.assetid: D87C868D-9538-4752-AEBD-2A15E53628CF
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.iwdfinterrupt_disable, Disable method, umdf.iwdfinterrupt_disable, IWDFInterrupt, wudfddi/IWDFInterrupt::Disable, IWDFInterrupt::Disable, Disable method, IWDFInterrupt interface, Disable, IWDFInterrupt interface, Disable method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.11
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFInterrupt.Disable
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

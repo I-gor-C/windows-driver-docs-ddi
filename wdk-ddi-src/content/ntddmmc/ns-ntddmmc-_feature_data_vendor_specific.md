@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddmmc._FEATURE_DATA_VENDOR_SPECIFIC
-title : "_FEATURE_DATA_VENDOR_SPECIFIC"
-author : windows-driver-content
-description : The FEATURE_DATA_VENDOR_SPECIFIC structure holds information about a vendor-specific feature.
-old-location : storage\feature_data_vendor_specific.htm
-old-project : storage
-ms.assetid : 151e6456-4c1f-453b-9eb6-a139e0f93d6e
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : "*PFEATURE_DATA_VENDOR_SPECIFIC, PFEATURE_DATA_VENDOR_SPECIFIC structure pointer [Storage Devices], PFEATURE_DATA_VENDOR_SPECIFIC, structs-CD-ROM_976446aa-d4d1-468b-a617-901d612b1a7e.xml, storage.feature_data_vendor_specific, ntddmmc/FEATURE_DATA_VENDOR_SPECIFIC, _FEATURE_DATA_VENDOR_SPECIFIC, ntddmmc/PFEATURE_DATA_VENDOR_SPECIFIC, FEATURE_DATA_VENDOR_SPECIFIC, FEATURE_DATA_VENDOR_SPECIFIC structure [Storage Devices]"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddmmc.h
-req.include-header : Ntddcdrm.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PFEATURE_DATA_VENDOR_SPECIFIC, FEATURE_DATA_VENDOR_SPECIFIC"
+UID: NS:ntddmmc._FEATURE_DATA_VENDOR_SPECIFIC
+title: "_FEATURE_DATA_VENDOR_SPECIFIC"
+author: windows-driver-content
+description: The FEATURE_DATA_VENDOR_SPECIFIC structure holds information about a vendor-specific feature.
+old-location: storage\feature_data_vendor_specific.htm
+old-project: storage
+ms.assetid: 151e6456-4c1f-453b-9eb6-a139e0f93d6e
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: "*PFEATURE_DATA_VENDOR_SPECIFIC, PFEATURE_DATA_VENDOR_SPECIFIC structure pointer [Storage Devices], PFEATURE_DATA_VENDOR_SPECIFIC, structs-CD-ROM_976446aa-d4d1-468b-a617-901d612b1a7e.xml, storage.feature_data_vendor_specific, ntddmmc/FEATURE_DATA_VENDOR_SPECIFIC, _FEATURE_DATA_VENDOR_SPECIFIC, ntddmmc/PFEATURE_DATA_VENDOR_SPECIFIC, FEATURE_DATA_VENDOR_SPECIFIC, FEATURE_DATA_VENDOR_SPECIFIC structure [Storage Devices]"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddmmc.h
+req.include-header: Ntddcdrm.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddmmc.h
+apiname:
+-	FEATURE_DATA_VENDOR_SPECIFIC
+product: Windows
+targetos: Windows
+req.typenames: "*PFEATURE_DATA_VENDOR_SPECIFIC, FEATURE_DATA_VENDOR_SPECIFIC"
 ---
 
 # _FEATURE_DATA_VENDOR_SPECIFIC structure

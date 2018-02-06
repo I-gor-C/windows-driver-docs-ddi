@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmthk._D3DKMT_GETSCANLINE
-title : "_D3DKMT_GETSCANLINE"
-author : windows-driver-content
-description : The D3DKMT_GETSCANLINE structure contains information about a video present source's vertical blanking status.
-old-location : display\d3dkmt_getscanline.htm
-old-project : display
-ms.assetid : af06c31e-0c4f-4e2a-8d19-84c1c63d6bd0
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : "_D3DKMT_GETSCANLINE, OpenGL_Structs_1e99e2c0-2215-43ed-9dc4-657f30903637.xml, D3DKMT_GETSCANLINE, d3dkmthk/D3DKMT_GETSCANLINE, display.d3dkmt_getscanline, D3DKMT_GETSCANLINE structure [Display Devices]"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_GETSCANLINE
+UID: NS:d3dkmthk._D3DKMT_GETSCANLINE
+title: "_D3DKMT_GETSCANLINE"
+author: windows-driver-content
+description: The D3DKMT_GETSCANLINE structure contains information about a video present source's vertical blanking status.
+old-location: display\d3dkmt_getscanline.htm
+old-project: display
+ms.assetid: af06c31e-0c4f-4e2a-8d19-84c1c63d6bd0
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: "_D3DKMT_GETSCANLINE, OpenGL_Structs_1e99e2c0-2215-43ed-9dc4-657f30903637.xml, D3DKMT_GETSCANLINE, d3dkmthk/D3DKMT_GETSCANLINE, display.d3dkmt_getscanline, D3DKMT_GETSCANLINE structure [Display Devices]"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmthk.h
+apiname:
+-	D3DKMT_GETSCANLINE
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_GETSCANLINE
 ---
 
 # _D3DKMT_GETSCANLINE structure

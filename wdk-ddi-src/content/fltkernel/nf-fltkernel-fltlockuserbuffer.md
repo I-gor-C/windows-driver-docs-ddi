@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltLockUserBuffer
-title : FltLockUserBuffer function
-author : windows-driver-content
-description : The FltLockUserBuffer routine locks the user buffer for a given I/O operation.
-old-location : ifsk\fltlockuserbuffer.htm
-old-project : ifsk
-ms.assetid : ab8e873b-b16d-45fc-b732-6d390ae60ce9
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltLockUserBuffer, FltApiRef_e_to_o_7d39ba00-c97d-4adb-a0e1-a019ca4056b0.xml, ifsk.fltlockuserbuffer, FltLockUserBuffer routine [Installable File System Drivers], fltkernel/FltLockUserBuffer
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltLockUserBuffer
+title: FltLockUserBuffer function
+author: windows-driver-content
+description: The FltLockUserBuffer routine locks the user buffer for a given I/O operation.
+old-location: ifsk\fltlockuserbuffer.htm
+old-project: ifsk
+ms.assetid: ab8e873b-b16d-45fc-b732-6d390ae60ce9
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltLockUserBuffer, FltApiRef_e_to_o_7d39ba00-c97d-4adb-a0e1-a019ca4056b0.xml, ifsk.fltlockuserbuffer, FltLockUserBuffer routine [Installable File System Drivers], fltkernel/FltLockUserBuffer
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltLockUserBuffer
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

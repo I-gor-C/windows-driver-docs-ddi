@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.PoStartNextPowerIrp
-title : PoStartNextPowerIrp function
-author : windows-driver-content
-description : The PoStartNextPowerIrp routine signals the power manager that the driver is ready to handle the next power IRP. (Windows Server 2003, Windows XP, and Windows 2000 only.).
-old-location : kernel\postartnextpowerirp.htm
-old-project : kernel
-ms.assetid : 92754668-5327-4e37-9da1-cc1870f923c5
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : PoStartNextPowerIrp routine [Kernel-Mode Driver Architecture], wdm/PoStartNextPowerIrp, kernel.postartnextpowerirp, PoStartNextPowerIrp, portn_3e23c20a-d35e-45cd-a2da-3dbc0f249548.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.PoStartNextPowerIrp
+title: PoStartNextPowerIrp function
+author: windows-driver-content
+description: The PoStartNextPowerIrp routine signals the power manager that the driver is ready to handle the next power IRP. (Windows Server 2003, Windows XP, and Windows 2000 only.).
+old-location: kernel\postartnextpowerirp.htm
+old-project: kernel
+ms.assetid: 92754668-5327-4e37-9da1-cc1870f923c5
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: PoStartNextPowerIrp routine [Kernel-Mode Driver Architecture], wdm/PoStartNextPowerIrp, kernel.postartnextpowerirp, PoStartNextPowerIrp, portn_3e23c20a-d35e-45cd-a2da-3dbc0f249548.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	PoStartNextPowerIrp
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGK_BUILDPAGINGBUFFER_UPDATEPAGETABLE
-title : "_DXGK_BUILDPAGINGBUFFER_UPDATEPAGETABLE"
-author : windows-driver-content
-description : DXGK_BUILDPAGINGBUFFER_UPDATEPAGETABLE is used as part of a page table update operation.
-old-location : display\dxgk_buildpagingbuffer_updatepagetable.htm
-old-project : display
-ms.assetid : 734B2E28-75F8-49AE-AAAB-EB0C037C6432
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgk_buildpagingbuffer_updatepagetable, d3dkmddi/DXGK_BUILDPAGINGBUFFER_UPDATEPAGETABLE, _DXGK_BUILDPAGINGBUFFER_UPDATEPAGETABLE, DXGK_BUILDPAGINGBUFFER_UPDATEPAGETABLE structure [Display Devices], DXGK_BUILDPAGINGBUFFER_UPDATEPAGETABLE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_BUILDPAGINGBUFFER_UPDATEPAGETABLE
+UID: NS:d3dkmddi._DXGK_BUILDPAGINGBUFFER_UPDATEPAGETABLE
+title: "_DXGK_BUILDPAGINGBUFFER_UPDATEPAGETABLE"
+author: windows-driver-content
+description: DXGK_BUILDPAGINGBUFFER_UPDATEPAGETABLE is used as part of a page table update operation.
+old-location: display\dxgk_buildpagingbuffer_updatepagetable.htm
+old-project: display
+ms.assetid: 734B2E28-75F8-49AE-AAAB-EB0C037C6432
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgk_buildpagingbuffer_updatepagetable, d3dkmddi/DXGK_BUILDPAGINGBUFFER_UPDATEPAGETABLE, _DXGK_BUILDPAGINGBUFFER_UPDATEPAGETABLE, DXGK_BUILDPAGINGBUFFER_UPDATEPAGETABLE structure [Display Devices], DXGK_BUILDPAGINGBUFFER_UPDATEPAGETABLE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DXGK_BUILDPAGINGBUFFER_UPDATEPAGETABLE
+product: Windows
+targetos: Windows
+req.typenames: DXGK_BUILDPAGINGBUFFER_UPDATEPAGETABLE
 ---
 
 # _DXGK_BUILDPAGINGBUFFER_UPDATEPAGETABLE structure

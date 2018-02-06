@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.KeQueryPriorityThread
-title : KeQueryPriorityThread function
-author : windows-driver-content
-description : The KeQueryPriorityThread routine returns the current priority of a particular thread.
-old-location : kernel\kequeryprioritythread.htm
-old-project : kernel
-ms.assetid : 69a8ad3f-641d-4aaf-9184-e56dee6ca347
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : KeQueryPriorityThread routine [Kernel-Mode Driver Architecture], k105_6a330d84-aa5a-4822-a4d3-7b68aa9e8882.xml, wdm/KeQueryPriorityThread, kernel.kequeryprioritythread, KeQueryPriorityThread
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.KeQueryPriorityThread
+title: KeQueryPriorityThread function
+author: windows-driver-content
+description: The KeQueryPriorityThread routine returns the current priority of a particular thread.
+old-location: kernel\kequeryprioritythread.htm
+old-project: kernel
+ms.assetid: 69a8ad3f-641d-4aaf-9184-e56dee6ca347
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: KeQueryPriorityThread routine [Kernel-Mode Driver Architecture], k105_6a330d84-aa5a-4822-a4d3-7b68aa9e8882.xml, wdm/KeQueryPriorityThread, kernel.kequeryprioritythread, KeQueryPriorityThread
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	KeQueryPriorityThread
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

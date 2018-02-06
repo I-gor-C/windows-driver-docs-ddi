@@ -1,41 +1,46 @@
 ---
-UID : NC:dispmprt.DXGK_BRIGHTNESS_GET_POSSIBLE
-title : DXGK_BRIGHTNESS_GET_POSSIBLE
-author : windows-driver-content
-description : The DxgkDdiGetPossibleBrightness function retrieves the brightness levels that an integrated display panel supports.
-old-location : display\dxgkddigetpossiblebrightness.htm
-old-project : display
-ms.assetid : aed565f5-a9c1-4130-a192-68bb699b4bd1
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkddigetpossiblebrightness, DxgkDdiGetPossibleBrightness callback function [Display Devices], DxgkDdiGetPossibleBrightness, DXGK_BRIGHTNESS_GET_POSSIBLE, DXGK_BRIGHTNESS_GET_POSSIBLE, dispmprt/DxgkDdiGetPossibleBrightness, DmFunctions_b14a6b62-e156-4548-9a0d-0a256cf84069.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : dispmprt.h
-req.include-header : Dispmprt.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
+UID: NC:dispmprt.DXGK_BRIGHTNESS_GET_POSSIBLE
+title: DXGK_BRIGHTNESS_GET_POSSIBLE
+author: windows-driver-content
+description: The DxgkDdiGetPossibleBrightness function retrieves the brightness levels that an integrated display panel supports.
+old-location: display\dxgkddigetpossiblebrightness.htm
+old-project: display
+ms.assetid: aed565f5-a9c1-4130-a192-68bb699b4bd1
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkddigetpossiblebrightness, DxgkDdiGetPossibleBrightness callback function [Display Devices], DxgkDdiGetPossibleBrightness, DXGK_BRIGHTNESS_GET_POSSIBLE, DXGK_BRIGHTNESS_GET_POSSIBLE, dispmprt/DxgkDdiGetPossibleBrightness, DmFunctions_b14a6b62-e156-4548-9a0d-0a256cf84069.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: dispmprt.h
+req.include-header: Dispmprt.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	dispmprt.h
+apiname:
+-	DxgkDdiGetPossibleBrightness
+product: Windows
+targetos: Windows
+req.typenames: SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ---
 
 

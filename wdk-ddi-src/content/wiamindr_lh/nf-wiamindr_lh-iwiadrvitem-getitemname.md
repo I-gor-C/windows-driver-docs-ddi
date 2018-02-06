@@ -1,42 +1,47 @@
 ---
-UID : NF:wiamindr_lh.IWiaDrvItem.GetItemName
-title : IWiaDrvItem::GetItemName method
-author : windows-driver-content
-description : The IWiaDrvItem::GetItemName method gets the current IWiaDrvItem item name, not including path information.
-old-location : image\iwiadrvitem_getitemname.htm
-old-project : image
-ms.assetid : 1e731975-13f8-4b5d-93de-714f62e9591f
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : IWiaDrvItem::GetItemName, DrvItem_18b6c67e-9d95-45d4-844f-90fcb5c277bd.xml, GetItemName method [Imaging Devices], image.iwiadrvitem_getitemname, IWiaDrvItem, GetItemName, IWiaDrvItem interface [Imaging Devices], GetItemName method, GetItemName method [Imaging Devices], IWiaDrvItem interface, wiamindr_lh/IWiaDrvItem::GetItemName
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wiamindr_lh.h
-req.include-header : Wiamindr.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Me and in Windows XP and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wiamindr_lh.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SCANWINDOW, *PSCANWINDOW
-req.product : Windows 10 or later.
+UID: NF:wiamindr_lh.IWiaDrvItem.GetItemName
+title: IWiaDrvItem::GetItemName method
+author: windows-driver-content
+description: The IWiaDrvItem::GetItemName method gets the current IWiaDrvItem item name, not including path information.
+old-location: image\iwiadrvitem_getitemname.htm
+old-project: image
+ms.assetid: 1e731975-13f8-4b5d-93de-714f62e9591f
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: IWiaDrvItem::GetItemName, DrvItem_18b6c67e-9d95-45d4-844f-90fcb5c277bd.xml, GetItemName method [Imaging Devices], image.iwiadrvitem_getitemname, IWiaDrvItem, GetItemName, IWiaDrvItem interface [Imaging Devices], GetItemName method, GetItemName method [Imaging Devices], IWiaDrvItem interface, wiamindr_lh/IWiaDrvItem::GetItemName
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wiamindr_lh.h
+req.include-header: Wiamindr.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Me and in Windows XP and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wiamindr_lh.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	wiamindr_lh.h
+apiname:
+-	IWiaDrvItem.GetItemName
+product: Windows
+targetos: Windows
+req.typenames: SCANWINDOW, *PSCANWINDOW
+req.product: Windows 10 or later.
 ---
 
 

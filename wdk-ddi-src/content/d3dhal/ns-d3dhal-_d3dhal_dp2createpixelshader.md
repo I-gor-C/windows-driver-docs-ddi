@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dhal._D3DHAL_DP2CREATEPIXELSHADER
-title : "_D3DHAL_DP2CREATEPIXELSHADER"
-author : windows-driver-content
-description : DirectX 8.0 and later versions only. The D3DHAL_DP2CREATEPIXELSHADER structure is used to create a pixel shader when a D3DDP2OP_CREATEPIXELSHADER opcode is received by D3dDrawPrimitives2.
-old-location : display\d3dhal_dp2createpixelshader.htm
-old-project : display
-ms.assetid : aa3a7f17-7210-458f-979b-1da455790e4a
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : "*LPD3DHAL_DP2CREATEPIXELSHADER, D3DHAL_DP2CREATEPIXELSHADER, d3dstrct_b17c15ca-697a-407b-b304-ac52ccf6ce6e.xml, D3DHAL_DP2CREATEPIXELSHADER structure [Display Devices], _D3DHAL_DP2CREATEPIXELSHADER, d3dhal/LPD3DHAL_DP2CREATEPIXELSHADER, display.d3dhal_dp2createpixelshader, LPD3DHAL_DP2CREATEPIXELSHADER, d3dhal/D3DHAL_DP2CREATEPIXELSHADER, LPD3DHAL_DP2CREATEPIXELSHADER structure pointer [Display Devices]"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dhal.h
-req.include-header : D3dhal.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DHAL_DP2CREATEPIXELSHADER
+UID: NS:d3dhal._D3DHAL_DP2CREATEPIXELSHADER
+title: "_D3DHAL_DP2CREATEPIXELSHADER"
+author: windows-driver-content
+description: DirectX 8.0 and later versions only. The D3DHAL_DP2CREATEPIXELSHADER structure is used to create a pixel shader when a D3DDP2OP_CREATEPIXELSHADER opcode is received by D3dDrawPrimitives2.
+old-location: display\d3dhal_dp2createpixelshader.htm
+old-project: display
+ms.assetid: aa3a7f17-7210-458f-979b-1da455790e4a
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: "*LPD3DHAL_DP2CREATEPIXELSHADER, D3DHAL_DP2CREATEPIXELSHADER, d3dstrct_b17c15ca-697a-407b-b304-ac52ccf6ce6e.xml, D3DHAL_DP2CREATEPIXELSHADER structure [Display Devices], _D3DHAL_DP2CREATEPIXELSHADER, d3dhal/LPD3DHAL_DP2CREATEPIXELSHADER, display.d3dhal_dp2createpixelshader, LPD3DHAL_DP2CREATEPIXELSHADER, d3dhal/D3DHAL_DP2CREATEPIXELSHADER, LPD3DHAL_DP2CREATEPIXELSHADER structure pointer [Display Devices]"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dhal.h
+req.include-header: D3dhal.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dhal.h
+apiname:
+-	D3DHAL_DP2CREATEPIXELSHADER
+product: Windows
+targetos: Windows
+req.typenames: D3DHAL_DP2CREATEPIXELSHADER
 ---
 
 # _D3DHAL_DP2CREATEPIXELSHADER structure

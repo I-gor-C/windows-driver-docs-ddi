@@ -1,41 +1,46 @@
 ---
-UID : NS:dxva._DXVA_COPPStatusData
-title : "_DXVA_COPPStatusData"
-author : windows-driver-content
-description : The DXVA_COPPStatusData structure contains the status information returned from a query on a protected video session that is associated with a DirectX VA COPP device.
-old-location : display\dxva_coppstatusdata.htm
-old-project : display
-ms.assetid : f459cfa7-9fda-4b46-9fc9-05bdc9e5c964
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DXVA_COPPStatusData structure [Display Devices], dxvaref_76d7144b-c4a7-4530-bf35-be9b9955c9d6.xml, dxva/DXVA_COPPStatusData, _DXVA_COPPStatusData, display.dxva_coppstatusdata, DXVA_COPPStatusData
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : dxva.h
-req.include-header : Dxva.h
-req.target-type : Windows
-req.target-min-winverclnt : This structure applies only to Windows Server 2003 with SP1 and later, and Windows XP with SP2 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXVA_COPPStatusData
+UID: NS:dxva._DXVA_COPPStatusData
+title: "_DXVA_COPPStatusData"
+author: windows-driver-content
+description: The DXVA_COPPStatusData structure contains the status information returned from a query on a protected video session that is associated with a DirectX VA COPP device.
+old-location: display\dxva_coppstatusdata.htm
+old-project: display
+ms.assetid: f459cfa7-9fda-4b46-9fc9-05bdc9e5c964
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DXVA_COPPStatusData structure [Display Devices], dxvaref_76d7144b-c4a7-4530-bf35-be9b9955c9d6.xml, dxva/DXVA_COPPStatusData, _DXVA_COPPStatusData, display.dxva_coppstatusdata, DXVA_COPPStatusData
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: dxva.h
+req.include-header: Dxva.h
+req.target-type: Windows
+req.target-min-winverclnt: This structure applies only to Windows Server 2003 with SP1 and later, and Windows XP with SP2 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	dxva.h
+apiname:
+-	DXVA_COPPStatusData
+product: Windows
+targetos: Windows
+req.typenames: DXVA_COPPStatusData
 ---
 
 # _DXVA_COPPStatusData structure

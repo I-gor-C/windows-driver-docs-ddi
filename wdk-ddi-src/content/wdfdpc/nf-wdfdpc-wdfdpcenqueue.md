@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfdpc.WdfDpcEnqueue
-title : WdfDpcEnqueue function
-author : windows-driver-content
-description : The WdfDpcEnqueue method schedules the execution of a DPC object's EvtDpcFunc callback function.
-old-location : wdf\wdfdpcenqueue.htm
-old-project : wdf
-ms.assetid : 08bc78de-ba04-4845-9d22-c06cd5684f7f
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : kmdf.wdfdpcenqueue, wdfdpc/WdfDpcEnqueue, wdf.wdfdpcenqueue, DFDpcObjectRef_76e257ac-ac8b-4724-8a24-6828bfe93e74.xml, WdfDpcEnqueue method, PFN_WDFDPCENQUEUE, WdfDpcEnqueue
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfdpc.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDF_DMA_SYSTEM_PROFILE_CONFIG, WDF_DMA_SYSTEM_PROFILE_CONFIG"
-req.product : Windows 10 or later.
+UID: NF:wdfdpc.WdfDpcEnqueue
+title: WdfDpcEnqueue function
+author: windows-driver-content
+description: The WdfDpcEnqueue method schedules the execution of a DPC object's EvtDpcFunc callback function.
+old-location: wdf\wdfdpcenqueue.htm
+old-project: wdf
+ms.assetid: 08bc78de-ba04-4845-9d22-c06cd5684f7f
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: kmdf.wdfdpcenqueue, wdfdpc/WdfDpcEnqueue, wdf.wdfdpcenqueue, DFDpcObjectRef_76e257ac-ac8b-4724-8a24-6828bfe93e74.xml, WdfDpcEnqueue method, PFN_WDFDPCENQUEUE, WdfDpcEnqueue
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfdpc.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfDpcEnqueue
+product: Windows
+targetos: Windows
+req.typenames: "*PWDF_DMA_SYSTEM_PROFILE_CONFIG, WDF_DMA_SYSTEM_PROFILE_CONFIG"
+req.product: Windows 10 or later.
 ---
 
 

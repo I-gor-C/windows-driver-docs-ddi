@@ -1,42 +1,50 @@
 ---
-UID : NF:wdfobject.WdfObjectDereferenceActual
-title : WdfObjectDereferenceActual function
-author : windows-driver-content
-description : The WdfObjectDereferenceActual method decrements the reference count for a specified framework object and assigns a tag value, line number, and file name to the reference.
-old-location : wdf\wdfobjectdereferenceactual.htm
-old-project : wdf
-ms.assetid : ff96ea2b-a1f9-417c-98e6-fbf9cc9f6827
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.wdfobjectdereferenceactual, wdfobject/WdfObjectDereferenceActual, WdfObjectDereferenceActual method, kmdf.wdfobjectdereferenceactual, WdfObjectDereferenceActual, DFGenObjectRef_d09786da-bccf-4735-bd7b-816bf2bd999d.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfobject.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : DriverCreate
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_SYNCHRONIZATION_SCOPE
-req.product : Windows 10 or later.
+UID: NF:wdfobject.WdfObjectDereferenceActual
+title: WdfObjectDereferenceActual function
+author: windows-driver-content
+description: The WdfObjectDereferenceActual method decrements the reference count for a specified framework object and assigns a tag value, line number, and file name to the reference.
+old-location: wdf\wdfobjectdereferenceactual.htm
+old-project: wdf
+ms.assetid: ff96ea2b-a1f9-417c-98e6-fbf9cc9f6827
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.wdfobjectdereferenceactual, wdfobject/WdfObjectDereferenceActual, WdfObjectDereferenceActual method, kmdf.wdfobjectdereferenceactual, WdfObjectDereferenceActual, DFGenObjectRef_d09786da-bccf-4735-bd7b-816bf2bd999d.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfobject.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: DriverCreate
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+-	WUDFx02000.dll
+-	WUDFx02000.dll.dll
+apiname:
+-	WdfObjectDereferenceActual
+product: Windows
+targetos: Windows
+req.typenames: WDF_SYNCHRONIZATION_SCOPE
+req.product: Windows 10 or later.
 ---
 
 

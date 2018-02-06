@@ -1,41 +1,46 @@
 ---
-UID : NN:dsound.IKsPropertySet
-title : IKsPropertySet
-author : windows-driver-content
-description : The IKsPropertySet interface provides methods that access properties of KS objects that are implemented in a KS minidriver.
-old-location : stream\ikspropertyset.htm
-old-project : stream
-ms.assetid : 9999d6ec-977c-4425-ad38-0c5478272c76
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.ikspropertyset, IKsPropertySet interface [Streaming Media Devices], IKsPropertySet interface [Streaming Media Devices], described, IKsPropertySet, dsound/IKsPropertySet, ksproxy_5f6316c6-5bcf-4155-b4a5-976a0cee8aa5.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : dsound.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dsound.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDRMRIGHTS, DRMRIGHTS"
+UID: NN:dsound.IKsPropertySet
+title: IKsPropertySet
+author: windows-driver-content
+description: The IKsPropertySet interface provides methods that access properties of KS objects that are implemented in a KS minidriver.
+old-location: stream\ikspropertyset.htm
+old-project: stream
+ms.assetid: 9999d6ec-977c-4425-ad38-0c5478272c76
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.ikspropertyset, IKsPropertySet interface [Streaming Media Devices], IKsPropertySet interface [Streaming Media Devices], described, IKsPropertySet, dsound/IKsPropertySet, ksproxy_5f6316c6-5bcf-4155-b4a5-976a0cee8aa5.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: dsound.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dsound.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dsound.h
+apiname:
+-	IKsPropertySet
+product: Windows
+targetos: Windows
+req.typenames: "*PDRMRIGHTS, DRMRIGHTS"
 ---
 
 # IKsPropertySet interface

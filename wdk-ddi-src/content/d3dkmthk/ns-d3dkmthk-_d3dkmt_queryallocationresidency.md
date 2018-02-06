@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmthk._D3DKMT_QUERYALLOCATIONRESIDENCY
-title : "_D3DKMT_QUERYALLOCATIONRESIDENCY"
-author : windows-driver-content
-description : The D3DKMT_QUERYALLOCATIONRESIDENCY structure describes information for retrieving the residency status from a resource or list of allocations.
-old-location : display\d3dkmt_queryallocationresidency.htm
-old-project : display
-ms.assetid : 53dd0306-4dcc-47a0-aa98-67d289c93b9b
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.d3dkmt_queryallocationresidency, d3dkmthk/D3DKMT_QUERYALLOCATIONRESIDENCY, D3DKMT_QUERYALLOCATIONRESIDENCY, _D3DKMT_QUERYALLOCATIONRESIDENCY, OpenGL_Structs_eae296e3-82c5-4229-b31a-bdb85d7e6c0c.xml, D3DKMT_QUERYALLOCATIONRESIDENCY structure [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_QUERYALLOCATIONRESIDENCY
+UID: NS:d3dkmthk._D3DKMT_QUERYALLOCATIONRESIDENCY
+title: "_D3DKMT_QUERYALLOCATIONRESIDENCY"
+author: windows-driver-content
+description: The D3DKMT_QUERYALLOCATIONRESIDENCY structure describes information for retrieving the residency status from a resource or list of allocations.
+old-location: display\d3dkmt_queryallocationresidency.htm
+old-project: display
+ms.assetid: 53dd0306-4dcc-47a0-aa98-67d289c93b9b
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.d3dkmt_queryallocationresidency, d3dkmthk/D3DKMT_QUERYALLOCATIONRESIDENCY, D3DKMT_QUERYALLOCATIONRESIDENCY, _D3DKMT_QUERYALLOCATIONRESIDENCY, OpenGL_Structs_eae296e3-82c5-4229-b31a-bdb85d7e6c0c.xml, D3DKMT_QUERYALLOCATIONRESIDENCY structure [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmthk.h
+apiname:
+-	D3DKMT_QUERYALLOCATIONRESIDENCY
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_QUERYALLOCATIONRESIDENCY
 ---
 
 # _D3DKMT_QUERYALLOCATIONRESIDENCY structure

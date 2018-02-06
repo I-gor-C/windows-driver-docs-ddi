@@ -1,41 +1,46 @@
 ---
-UID : NC:iddcx.EVT_IDD_CX_MONITOR_I2C_TRANSMIT
-title : EVT_IDD_CX_MONITOR_I2C_TRANSMIT
-author : windows-driver-content
-description : EVT_IDD_CX_MONITOR_I2C_TRANSMIT is called by the OS to return data received to an I2C device in a monitor.
-old-location : display\evt_idd_cx_monitor_i2c_transmit.htm
-old-project : display
-ms.assetid : d36d45f5-fae1-430a-a01e-adb70e09573c
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.evt_idd_cx_monitor_i2c_transmit, EvtIddCxMonitorI2cTransmit callback function [Display Devices], EvtIddCxMonitorI2cTransmit, EVT_IDD_CX_MONITOR_I2C_TRANSMIT, EVT_IDD_CX_MONITOR_I2C_TRANSMIT, iddcx/EvtIddCxMonitorI2cTransmit, PFN_IDD_CX_MONITOR_I2C_TRANSMIT callback function pointer [Display Devices], PFN_IDD_CX_MONITOR_I2C_TRANSMIT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : iddcx.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "_requires_same_"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WCS_PROFILE_MANAGEMENT_SCOPE
+UID: NC:iddcx.EVT_IDD_CX_MONITOR_I2C_TRANSMIT
+title: EVT_IDD_CX_MONITOR_I2C_TRANSMIT
+author: windows-driver-content
+description: EVT_IDD_CX_MONITOR_I2C_TRANSMIT is called by the OS to return data received to an I2C device in a monitor.
+old-location: display\evt_idd_cx_monitor_i2c_transmit.htm
+old-project: display
+ms.assetid: d36d45f5-fae1-430a-a01e-adb70e09573c
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.evt_idd_cx_monitor_i2c_transmit, EvtIddCxMonitorI2cTransmit callback function [Display Devices], EvtIddCxMonitorI2cTransmit, EVT_IDD_CX_MONITOR_I2C_TRANSMIT, EVT_IDD_CX_MONITOR_I2C_TRANSMIT, iddcx/EvtIddCxMonitorI2cTransmit, PFN_IDD_CX_MONITOR_I2C_TRANSMIT callback function pointer [Display Devices], PFN_IDD_CX_MONITOR_I2C_TRANSMIT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: iddcx.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "_requires_same_"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	iddcx.h
+apiname:
+-	PFN_IDD_CX_MONITOR_I2C_TRANSMIT
+product: Windows
+targetos: Windows
+req.typenames: WCS_PROFILE_MANAGEMENT_SCOPE
 ---
 
 

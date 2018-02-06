@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddpcm._PCMCIA_SOCKET_INFORMATION
-title : "_PCMCIA_SOCKET_INFORMATION"
-author : windows-driver-content
-description : The PCMCIA_SOCKET_INFORMATION structure is used in conjunction with the IOCTL_SOCKET_INFORMATION request to retrieve socket configuration and state data.
-old-location : pcmcia\pcmcia_socket_information.htm
-old-project : PCMCIA
-ms.assetid : 53881aca-e49c-43e9-b68e-b91a1868e3f5
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : PCMCIA.pcmcia_socket_information, *PPCMCIA_SOCKET_INFORMATION, PCMCIA_SOCKET_INFORMATION, PCMCIA_SOCKET_INFORMATION structure [Buses], ntddpcm/PCMCIA_SOCKET_INFORMATION, PPCMCIA_SOCKET_INFORMATION structure pointer [Buses], PPCMCIA_SOCKET_INFORMATION, ntddpcm/PPCMCIA_SOCKET_INFORMATION, memcdref_b118ae5c-5dc5-4919-809d-5cfe5b25598f.xml, _PCMCIA_SOCKET_INFORMATION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddpcm.h
-req.include-header : Ntddpcm.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPCMCIA_SOCKET_INFORMATION, PCMCIA_SOCKET_INFORMATION"
+UID: NS:ntddpcm._PCMCIA_SOCKET_INFORMATION
+title: "_PCMCIA_SOCKET_INFORMATION"
+author: windows-driver-content
+description: The PCMCIA_SOCKET_INFORMATION structure is used in conjunction with the IOCTL_SOCKET_INFORMATION request to retrieve socket configuration and state data.
+old-location: pcmcia\pcmcia_socket_information.htm
+old-project: PCMCIA
+ms.assetid: 53881aca-e49c-43e9-b68e-b91a1868e3f5
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: PCMCIA.pcmcia_socket_information, *PPCMCIA_SOCKET_INFORMATION, PCMCIA_SOCKET_INFORMATION, PCMCIA_SOCKET_INFORMATION structure [Buses], ntddpcm/PCMCIA_SOCKET_INFORMATION, PPCMCIA_SOCKET_INFORMATION structure pointer [Buses], PPCMCIA_SOCKET_INFORMATION, ntddpcm/PPCMCIA_SOCKET_INFORMATION, memcdref_b118ae5c-5dc5-4919-809d-5cfe5b25598f.xml, _PCMCIA_SOCKET_INFORMATION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddpcm.h
+req.include-header: Ntddpcm.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddpcm.h
+apiname:
+-	PCMCIA_SOCKET_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: "*PPCMCIA_SOCKET_INFORMATION, PCMCIA_SOCKET_INFORMATION"
 ---
 
 # _PCMCIA_SOCKET_INFORMATION structure

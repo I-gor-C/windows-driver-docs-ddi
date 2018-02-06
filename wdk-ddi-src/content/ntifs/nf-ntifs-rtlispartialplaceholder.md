@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.RtlIsPartialPlaceholder
-title : RtlIsPartialPlaceholder function
-author : windows-driver-content
-description : The RtlIsPartialPlaceholder routine determines if a file or a directory is a CloudFiles placeholder, based on the FileAttributes and ReparseTag values of the file.
-old-location : ifsk\rtlispartialplaceholder.htm
-old-project : ifsk
-ms.assetid : FB47F5BE-76B4-4A99-A15F-DE3E11D1DA2B
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.rtlispartialplaceholder, RtlIsPartialPlaceholder routine [Installable File System Drivers], RtlIsPartialPlaceholder, ntifs/RtlIsPartialPlaceholder
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows 10, version 1709.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.RtlIsPartialPlaceholder
+title: RtlIsPartialPlaceholder function
+author: windows-driver-content
+description: The RtlIsPartialPlaceholder routine determines if a file or a directory is a CloudFiles placeholder, based on the FileAttributes and ReparseTag values of the file.
+old-location: ifsk\rtlispartialplaceholder.htm
+old-project: ifsk
+ms.assetid: FB47F5BE-76B4-4A99-A15F-DE3E11D1DA2B
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.rtlispartialplaceholder, RtlIsPartialPlaceholder routine [Installable File System Drivers], RtlIsPartialPlaceholder, ntifs/RtlIsPartialPlaceholder
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows 10, version 1709.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntifs.h
+apiname:
+-	RtlIsPartialPlaceholder
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

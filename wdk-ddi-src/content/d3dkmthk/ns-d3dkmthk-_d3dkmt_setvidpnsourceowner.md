@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmthk._D3DKMT_SETVIDPNSOURCEOWNER
-title : "_D3DKMT_SETVIDPNSOURCEOWNER"
-author : windows-driver-content
-description : The D3DKMT_SETVIDPNSOURCEOWNER structure describes the parameters for setting or releasing the video present source in the path of a video present network (VidPN) topology that owns the VidPN.
-old-location : display\d3dkmt_setvidpnsourceowner.htm
-old-project : display
-ms.assetid : 9154848b-ecbe-4f21-9d27-9013f97c5dde
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DKMT_SETVIDPNSOURCEOWNER, OpenGL_Structs_942045f1-1a3a-4c4a-b533-ec70fcad6d8f.xml, display.d3dkmt_setvidpnsourceowner, d3dkmthk/D3DKMT_SETVIDPNSOURCEOWNER, D3DKMT_SETVIDPNSOURCEOWNER structure [Display Devices], _D3DKMT_SETVIDPNSOURCEOWNER
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_SETVIDPNSOURCEOWNER
+UID: NS:d3dkmthk._D3DKMT_SETVIDPNSOURCEOWNER
+title: "_D3DKMT_SETVIDPNSOURCEOWNER"
+author: windows-driver-content
+description: The D3DKMT_SETVIDPNSOURCEOWNER structure describes the parameters for setting or releasing the video present source in the path of a video present network (VidPN) topology that owns the VidPN.
+old-location: display\d3dkmt_setvidpnsourceowner.htm
+old-project: display
+ms.assetid: 9154848b-ecbe-4f21-9d27-9013f97c5dde
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DKMT_SETVIDPNSOURCEOWNER, OpenGL_Structs_942045f1-1a3a-4c4a-b533-ec70fcad6d8f.xml, display.d3dkmt_setvidpnsourceowner, d3dkmthk/D3DKMT_SETVIDPNSOURCEOWNER, D3DKMT_SETVIDPNSOURCEOWNER structure [Display Devices], _D3DKMT_SETVIDPNSOURCEOWNER
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmthk.h
+apiname:
+-	D3DKMT_SETVIDPNSOURCEOWNER
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_SETVIDPNSOURCEOWNER
 ---
 
 # _D3DKMT_SETVIDPNSOURCEOWNER structure

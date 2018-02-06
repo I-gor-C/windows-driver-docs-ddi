@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.FsRtlMupGetProviderInfoFromFileObject
-title : FsRtlMupGetProviderInfoFromFileObject function
-author : windows-driver-content
-description : The FsRtlMupGetProviderInfoFromFileObject routine gets information about a network redirector that is registered with the multiple UNC provider (MUP) from a file object for a file that is located on a remote file system.
-old-location : ifsk\fsrtlmupgetproviderinfofromfileobject.htm
-old-project : ifsk
-ms.assetid : 3f4d8c5c-3a83-4027-8d9e-5ff7db4a6853
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FsRtlMupGetProviderInfoFromFileObject routine [Installable File System Drivers], FsRtlMupGetProviderInfoFromFileObject, ifsk.fsrtlmupgetproviderinfofromfileobject, ntifs/FsRtlMupGetProviderInfoFromFileObject, fsrtlref_7ad681c5-3f7c-42d1-8644-7cd677101413.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : The FsRtlMupGetProviderInfoFromFileObject function is available in Windows Vista and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.FsRtlMupGetProviderInfoFromFileObject
+title: FsRtlMupGetProviderInfoFromFileObject function
+author: windows-driver-content
+description: The FsRtlMupGetProviderInfoFromFileObject routine gets information about a network redirector that is registered with the multiple UNC provider (MUP) from a file object for a file that is located on a remote file system.
+old-location: ifsk\fsrtlmupgetproviderinfofromfileobject.htm
+old-project: ifsk
+ms.assetid: 3f4d8c5c-3a83-4027-8d9e-5ff7db4a6853
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FsRtlMupGetProviderInfoFromFileObject routine [Installable File System Drivers], FsRtlMupGetProviderInfoFromFileObject, ifsk.fsrtlmupgetproviderinfofromfileobject, ntifs/FsRtlMupGetProviderInfoFromFileObject, fsrtlref_7ad681c5-3f7c-42d1-8644-7cd677101413.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: The FsRtlMupGetProviderInfoFromFileObject function is available in Windows Vista and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	FsRtlMupGetProviderInfoFromFileObject
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

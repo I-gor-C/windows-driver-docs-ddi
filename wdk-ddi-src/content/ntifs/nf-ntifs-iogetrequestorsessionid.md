@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.IoGetRequestorSessionId
-title : IoGetRequestorSessionId function
-author : windows-driver-content
-description : The IoGetRequestorSessionId routine returns the session ID for the process that originally requested a given I/O operation.
-old-location : ifsk\iogetrequestorsessionid.htm
-old-project : ifsk
-ms.assetid : 9e13cf62-d71e-4878-becd-d34beb2f59b3
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.iogetrequestorsessionid, ntifs/IoGetRequestorSessionId, IoGetRequestorSessionId routine [Installable File System Drivers], ioref_fe60ee3b-1b5b-4d9c-a4f2-456e05575349.xml, IoGetRequestorSessionId
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : This routine is available on Microsoft Windows Server 2003 SP1 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.IoGetRequestorSessionId
+title: IoGetRequestorSessionId function
+author: windows-driver-content
+description: The IoGetRequestorSessionId routine returns the session ID for the process that originally requested a given I/O operation.
+old-location: ifsk\iogetrequestorsessionid.htm
+old-project: ifsk
+ms.assetid: 9e13cf62-d71e-4878-becd-d34beb2f59b3
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.iogetrequestorsessionid, ntifs/IoGetRequestorSessionId, IoGetRequestorSessionId routine [Installable File System Drivers], ioref_fe60ee3b-1b5b-4d9c-a4f2-456e05575349.xml, IoGetRequestorSessionId
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: This routine is available on Microsoft Windows Server 2003 SP1 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoGetRequestorSessionId
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

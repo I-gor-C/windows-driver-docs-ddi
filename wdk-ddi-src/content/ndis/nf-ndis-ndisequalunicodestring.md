@@ -1,41 +1,46 @@
 ---
-UID : NF:ndis.NdisEqualUnicodeString
-title : NdisEqualUnicodeString macro
-author : windows-driver-content
-description : The NdisEqualUnicodeString function compares two Unicode strings and returns whether they are equal.
-old-location : netvista\ndisequalunicodestring.htm
-old-project : netvista
-ms.assetid : 8f3abf40-bb47-4fa6-862b-6126edb00b36
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NdisEqualUnicodeString, NdisEqualUnicodeString macro [Network Drivers Starting with Windows Vista], ndis/NdisEqualUnicodeString, netvista.ndisequalunicodestring, ndis_string_ref_ccfcf1e6-b983-47a3-a46e-3a6ff1eb7158.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : macro
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported for existing drivers in  NDIS 6.0 and later, but new drivers should use RtlEqualUnicodeString instead.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_Miscellaneous_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : ndis.h
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisEqualUnicodeString
+title: NdisEqualUnicodeString macro
+author: windows-driver-content
+description: The NdisEqualUnicodeString function compares two Unicode strings and returns whether they are equal.
+old-location: netvista\ndisequalunicodestring.htm
+old-project: netvista
+ms.assetid: 8f3abf40-bb47-4fa6-862b-6126edb00b36
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NdisEqualUnicodeString, NdisEqualUnicodeString macro [Network Drivers Starting with Windows Vista], ndis/NdisEqualUnicodeString, netvista.ndisequalunicodestring, ndis_string_ref_ccfcf1e6-b983-47a3-a46e-3a6ff1eb7158.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: macro
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported for existing drivers in  NDIS 6.0 and later, but new drivers should use RtlEqualUnicodeString instead.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_Miscellaneous_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: ndis.h
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndis.h
+apiname:
+-	NdisEqualUnicodeString
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

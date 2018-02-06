@@ -1,41 +1,46 @@
 ---
-UID : NF:portcls.IMiniportWaveCyclicStream.GetPosition
-title : IMiniportWaveCyclicStream::GetPosition method
-author : windows-driver-content
-description : The GetPosition method gets the current position of the stream.
-old-location : audio\iminiportwavecyclicstream_getposition.htm
-old-project : audio
-ms.assetid : a0d59215-5201-4e1a-9cb2-d9ff6109c3bb
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : audio.iminiportwavecyclicstream_getposition, IMiniportWaveCyclicStream::GetPosition, audmp-routines_016da0e2-bc56-4c06-9755-a13b75d6c5c9.xml, portcls/IMiniportWaveCyclicStream::GetPosition, IMiniportWaveCyclicStream, GetPosition, GetPosition method [Audio Devices], IMiniportWaveCyclicStream interface [Audio Devices], GetPosition method, GetPosition method [Audio Devices], IMiniportWaveCyclicStream interface
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : portcls.h
-req.include-header : Portcls.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : portcls.h
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.IMiniportWaveCyclicStream.GetPosition
+title: IMiniportWaveCyclicStream::GetPosition method
+author: windows-driver-content
+description: The GetPosition method gets the current position of the stream.
+old-location: audio\iminiportwavecyclicstream_getposition.htm
+old-project: audio
+ms.assetid: a0d59215-5201-4e1a-9cb2-d9ff6109c3bb
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: audio.iminiportwavecyclicstream_getposition, IMiniportWaveCyclicStream::GetPosition, audmp-routines_016da0e2-bc56-4c06-9755-a13b75d6c5c9.xml, portcls/IMiniportWaveCyclicStream::GetPosition, IMiniportWaveCyclicStream, GetPosition, GetPosition method [Audio Devices], IMiniportWaveCyclicStream interface [Audio Devices], GetPosition method, GetPosition method [Audio Devices], IMiniportWaveCyclicStream interface
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: portcls.h
+req.include-header: Portcls.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: portcls.h
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	portcls.h
+apiname:
+-	IMiniportWaveCyclicStream.GetPosition
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddstor.IOCTL_STORAGE_GET_HOTPLUG_INFO
-title : IOCTL_STORAGE_GET_HOTPLUG_INFO
-author : windows-driver-content
-description : Retrieves the hotplug configuration of the specified device.
-old-location : storage\ioctl_storage_get_hotplug_info.htm
-old-project : storage
-ms.assetid : e549aa75-d847-4276-ab40-29214b0475cf
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_storage_get_hotplug_info, IOCTL_STORAGE_GET_HOTPLUG_INFO control code [Storage Devices], IOCTL_STORAGE_GET_HOTPLUG_INFO, ntddstor/IOCTL_STORAGE_GET_HOTPLUG_INFO, k307_06a9c82a-ee57-421f-befc-0a9da3543b40.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddstor.h
-req.include-header : Ntddstor.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STORAGE_ZONE_CONDITION, *PSTORAGE_ZONE_CONDITION
+UID: NI:ntddstor.IOCTL_STORAGE_GET_HOTPLUG_INFO
+title: IOCTL_STORAGE_GET_HOTPLUG_INFO
+author: windows-driver-content
+description: Retrieves the hotplug configuration of the specified device.
+old-location: storage\ioctl_storage_get_hotplug_info.htm
+old-project: storage
+ms.assetid: e549aa75-d847-4276-ab40-29214b0475cf
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_storage_get_hotplug_info, IOCTL_STORAGE_GET_HOTPLUG_INFO control code [Storage Devices], IOCTL_STORAGE_GET_HOTPLUG_INFO, ntddstor/IOCTL_STORAGE_GET_HOTPLUG_INFO, k307_06a9c82a-ee57-421f-befc-0a9da3543b40.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddstor.h
+req.include-header: Ntddstor.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddstor.h
+apiname:
+-	IOCTL_STORAGE_GET_HOTPLUG_INFO
+product: Windows
+targetos: Windows
+req.typenames: STORAGE_ZONE_CONDITION, *PSTORAGE_ZONE_CONDITION
 ---
 
 # IOCTL_STORAGE_GET_HOTPLUG_INFO IOCTL

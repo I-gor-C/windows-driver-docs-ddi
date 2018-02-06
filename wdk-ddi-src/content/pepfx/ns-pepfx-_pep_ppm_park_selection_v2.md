@@ -1,41 +1,46 @@
 ---
-UID : NS:pepfx._PEP_PPM_PARK_SELECTION_V2
-title : "_PEP_PPM_PARK_SELECTION_V2"
-author : windows-driver-content
-description : The PEP_PPM_PARK_SELECTION_V2 structure indicates the preferences of the operating system and platform extension plug-in (PEP) regarding which processors in the platform should be parked to reduce power consumption.
-old-location : kernel\pep_ppm_park_selection_v2.htm
-old-project : kernel
-ms.assetid : D1EFB30D-E8E2-4585-AB0E-B7903F4D6656
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : pepfx/PEP_PPM_PARK_SELECTION_V2, *PPEP_PPM_PARK_SELECTION_V2, PEP_PPM_PARK_SELECTION_V2 structure [Kernel-Mode Driver Architecture], _PEP_PPM_PARK_SELECTION_V2, PROCESSOR_PARK_TYPE_INTERRUPT_STEERING, PROCESSOR_PARK_TYPE_CORE_PARKING, PEP_PPM_PARK_SELECTION_V2, kernel.pep_ppm_park_selection_v2, PPEP_PPM_PARK_SELECTION_V2, PPEP_PPM_PARK_SELECTION_V2 structure pointer [Kernel-Mode Driver Architecture], pepfx/PPEP_PPM_PARK_SELECTION_V2
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : pepfx.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with Windows 10.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPEP_PPM_PARK_SELECTION_V2, PEP_PPM_PARK_SELECTION_V2"
+UID: NS:pepfx._PEP_PPM_PARK_SELECTION_V2
+title: "_PEP_PPM_PARK_SELECTION_V2"
+author: windows-driver-content
+description: The PEP_PPM_PARK_SELECTION_V2 structure indicates the preferences of the operating system and platform extension plug-in (PEP) regarding which processors in the platform should be parked to reduce power consumption.
+old-location: kernel\pep_ppm_park_selection_v2.htm
+old-project: kernel
+ms.assetid: D1EFB30D-E8E2-4585-AB0E-B7903F4D6656
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: pepfx/PEP_PPM_PARK_SELECTION_V2, *PPEP_PPM_PARK_SELECTION_V2, PEP_PPM_PARK_SELECTION_V2 structure [Kernel-Mode Driver Architecture], _PEP_PPM_PARK_SELECTION_V2, PROCESSOR_PARK_TYPE_INTERRUPT_STEERING, PROCESSOR_PARK_TYPE_CORE_PARKING, PEP_PPM_PARK_SELECTION_V2, kernel.pep_ppm_park_selection_v2, PPEP_PPM_PARK_SELECTION_V2, PPEP_PPM_PARK_SELECTION_V2 structure pointer [Kernel-Mode Driver Architecture], pepfx/PPEP_PPM_PARK_SELECTION_V2
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: pepfx.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows 10.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	pepfx.h
+apiname:
+-	PEP_PPM_PARK_SELECTION_V2
+product: Windows
+targetos: Windows
+req.typenames: "*PPEP_PPM_PARK_SELECTION_V2, PEP_PPM_PARK_SELECTION_V2"
 ---
 
 # _PEP_PPM_PARK_SELECTION_V2 structure

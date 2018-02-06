@@ -1,41 +1,46 @@
 ---
-UID : NF:filterpipeline.IPrintReadStream.Seek
-title : IPrintReadStream::Seek method
-author : windows-driver-content
-description : The Seek method changes the seek pointer to a new location in the stream.
-old-location : print\iprintreadstream_seek.htm
-old-project : print
-ms.assetid : b563e080-32ab-47b7-94f4-1d3dd19f3311
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : Seek method [Print Devices], IPrintReadStream interface, print.iprintreadstream_seek, IPrintReadStream::Seek, filterpipeline_622c8e3a-c21f-4784-ba2d-96833fab4230.xml, Seek method [Print Devices], IPrintReadStream, IPrintReadStream interface [Print Devices], Seek method, Seek, filterpipeline/IPrintReadStream::Seek
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : filterpipeline.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : Filterpipeline.idl
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : filterpipeline.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:filterpipeline.IPrintReadStream.Seek
+title: IPrintReadStream::Seek method
+author: windows-driver-content
+description: The Seek method changes the seek pointer to a new location in the stream.
+old-location: print\iprintreadstream_seek.htm
+old-project: print
+ms.assetid: b563e080-32ab-47b7-94f4-1d3dd19f3311
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: Seek method [Print Devices], IPrintReadStream interface, print.iprintreadstream_seek, IPrintReadStream::Seek, filterpipeline_622c8e3a-c21f-4784-ba2d-96833fab4230.xml, Seek method [Print Devices], IPrintReadStream, IPrintReadStream interface [Print Devices], Seek method, Seek, filterpipeline/IPrintReadStream::Seek
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: filterpipeline.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: Filterpipeline.idl
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: filterpipeline.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	filterpipeline.h
+apiname:
+-	IPrintReadStream.Seek
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

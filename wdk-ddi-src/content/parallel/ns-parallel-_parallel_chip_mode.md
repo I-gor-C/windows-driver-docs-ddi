@@ -1,41 +1,46 @@
 ---
-UID : NS:parallel._PARALLEL_CHIP_MODE
-title : "_PARALLEL_CHIP_MODE"
-author : windows-driver-content
-description : The PARALLEL_CHIP_MODE structure specifies the operating mode of a parallel port.
-old-location : parports\parallel_chip_mode.htm
-old-project : parports
-ms.assetid : e9d78c80-e6cf-49af-89de-6df8ea871796
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : parallel/PARALLEL_CHIP_MODE, parallel/PPARALLEL_CHIP_MODE, *PPARALLEL_CHIP_MODE, cisspd_1dbc3693-e551-46a3-9a41-725b06a2ee9a.xml, PPARALLEL_CHIP_MODE structure pointer [Parallel Ports], parports.parallel_chip_mode, PPARALLEL_CHIP_MODE, PARALLEL_CHIP_MODE, _PARALLEL_CHIP_MODE, PARALLEL_CHIP_MODE structure [Parallel Ports]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : parallel.h
-req.include-header : Parallel.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PARALLEL_CHIP_MODE, *PPARALLEL_CHIP_MODE
+UID: NS:parallel._PARALLEL_CHIP_MODE
+title: "_PARALLEL_CHIP_MODE"
+author: windows-driver-content
+description: The PARALLEL_CHIP_MODE structure specifies the operating mode of a parallel port.
+old-location: parports\parallel_chip_mode.htm
+old-project: parports
+ms.assetid: e9d78c80-e6cf-49af-89de-6df8ea871796
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: parallel/PARALLEL_CHIP_MODE, parallel/PPARALLEL_CHIP_MODE, *PPARALLEL_CHIP_MODE, cisspd_1dbc3693-e551-46a3-9a41-725b06a2ee9a.xml, PPARALLEL_CHIP_MODE structure pointer [Parallel Ports], parports.parallel_chip_mode, PPARALLEL_CHIP_MODE, PARALLEL_CHIP_MODE, _PARALLEL_CHIP_MODE, PARALLEL_CHIP_MODE structure [Parallel Ports]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: parallel.h
+req.include-header: Parallel.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	parallel.h
+apiname:
+-	PARALLEL_CHIP_MODE
+product: Windows
+targetos: Windows
+req.typenames: PARALLEL_CHIP_MODE, *PPARALLEL_CHIP_MODE
 ---
 
 # _PARALLEL_CHIP_MODE structure

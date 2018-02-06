@@ -1,41 +1,46 @@
 ---
-UID : NF:ks.KsGateGetStateUnsafe
-title : KsGateGetStateUnsafe function
-author : windows-driver-content
-description : The KsGateGetStateUnsafe function returns the state of the given gate (open or closed) in an unsafe manner, that is without regard to synchronization.
-old-location : stream\ksgategetstateunsafe.htm
-old-project : stream
-ms.assetid : f5976125-4ff4-48c2-a5c7-8e9fb2f8a0c9
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.ksgategetstateunsafe, avfunc_1f18b601-daaf-4df2-98c2-a91646f84c0d.xml, ks/KsGateGetStateUnsafe, KsGateGetStateUnsafe function [Streaming Media Devices], KsGateGetStateUnsafe
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsGateGetStateUnsafe
+title: KsGateGetStateUnsafe function
+author: windows-driver-content
+description: The KsGateGetStateUnsafe function returns the state of the given gate (open or closed) in an unsafe manner, that is without regard to synchronization.
+old-location: stream\ksgategetstateunsafe.htm
+old-project: stream
+ms.assetid: f5976125-4ff4-48c2-a5c7-8e9fb2f8a0c9
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.ksgategetstateunsafe, avfunc_1f18b601-daaf-4df2-98c2-a91646f84c0d.xml, ks/KsGateGetStateUnsafe, KsGateGetStateUnsafe function [Streaming Media Devices], KsGateGetStateUnsafe
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	KsGateGetStateUnsafe
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

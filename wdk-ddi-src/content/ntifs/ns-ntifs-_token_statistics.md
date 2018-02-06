@@ -1,41 +1,46 @@
 ---
-UID : NS:ntifs._TOKEN_STATISTICS
-title : "_TOKEN_STATISTICS"
-author : windows-driver-content
-description : TOKEN_STATISTICS contains information about an access token. A driver can retrieve this information by calling SeQueryInformationToken or ZwQueryInformationToken.
-old-location : ifsk\token_statistics.htm
-old-project : ifsk
-ms.assetid : a7f651c0-fcd5-4271-9452-b6ac41cd33cc
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : TOKEN_STATISTICS structure [Installable File System Drivers], _TOKEN_STATISTICS, ifsk.token_statistics, ntifs/PTOKEN_STATISTICS, securitystructures_5934a44f-c54e-44fe-a1c8-50b656b2b1f5.xml, *PTOKEN_STATISTICS, PTOKEN_STATISTICS, ntifs/TOKEN_STATISTICS, TOKEN_STATISTICS, PTOKEN_STATISTICS structure pointer [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_STATISTICS, *PTOKEN_STATISTICS
+UID: NS:ntifs._TOKEN_STATISTICS
+title: "_TOKEN_STATISTICS"
+author: windows-driver-content
+description: TOKEN_STATISTICS contains information about an access token. A driver can retrieve this information by calling SeQueryInformationToken or ZwQueryInformationToken.
+old-location: ifsk\token_statistics.htm
+old-project: ifsk
+ms.assetid: a7f651c0-fcd5-4271-9452-b6ac41cd33cc
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: TOKEN_STATISTICS structure [Installable File System Drivers], _TOKEN_STATISTICS, ifsk.token_statistics, ntifs/PTOKEN_STATISTICS, securitystructures_5934a44f-c54e-44fe-a1c8-50b656b2b1f5.xml, *PTOKEN_STATISTICS, PTOKEN_STATISTICS, ntifs/TOKEN_STATISTICS, TOKEN_STATISTICS, PTOKEN_STATISTICS structure pointer [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntifs.h
+apiname:
+-	TOKEN_STATISTICS
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_STATISTICS, *PTOKEN_STATISTICS
 ---
 
 # _TOKEN_STATISTICS structure

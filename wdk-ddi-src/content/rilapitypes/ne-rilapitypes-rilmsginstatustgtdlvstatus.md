@@ -1,42 +1,47 @@
 ---
-UID : NE:rilapitypes.RILMSGINSTATUSTGTDLVSTATUS
-title : RILMSGINSTATUSTGTDLVSTATUS
-author : windows-driver-content
-description : This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
-old-location : netvista\rilmsginstatustgtdlvstatus_2.htm
-old-project : netvista
-ms.assetid : 7a370d9c-93c6-4c73-b41e-97b0114690b4
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : RIL_MSGDLVSTATUS_RESERVED_ERROR, RIL_MSGDLVSTATUS_SMENOTRESPONDING_TRYING, rilapitypes/RIL_MSGDLVSTATUS_REPLACEDBYSC, RIL_MSGDLVSTATUS_SVCREJECTED_TRYING, RIL_MSGDLVSTATUS_SMEERROR_TRYING, netvista.rilmsginstatustgtdlvstatus_2, RIL_MSGDLVSTATUS_CONGESTION, rilapitypes/RIL_MSGDLVSTATUS_SMEBUSY, RIL_MSGDLVSTATUS_NOTOBTAINABLE, RIL_MSGDLVSTATUS_RESERVED_TRYING, RIL_MSGDLVSTATUS_VPEXPIRED, rilapitypes/RIL_MSGDLVSTATUS_QUALITYUNAVAIL_TRYING, RIL_MSGDLVSTATUS_MAX, rilapitypes/RIL_MSGDLVSTATUS_DELETEDBYSC, RIL_MSGDLVSTATUS_SMEERROR, RIL_MSGDLVSTATUS_SVCREJECTED, RIL_MSGDLVSTATUS_NOLONGEREXISTS, RIL_MSGDLVSTATUS_SMEBUSY_TRYING, RIL_MSGDLVSTATUS_RESERVED_COMPLETED, rilapitypes/RIL_MSGDLVSTATUS_CONNECTIONREJECTED, rilapitypes/RILMSGINSTATUSTGTDLVSTATUS, RIL_MSGDLVSTATUS_SMEBUSY, RIL_MSGDLVSTATUS_SMENOTRESPONDING, rilapitypes/RIL_MSGDLVSTATUS_SMENOTRESPONDING_TRYING, rilapitypes/RIL_MSGDLVSTATUS_RESERVED_TRYING, rilapitypes/RIL_MSGDLVSTATUS_RESERVED_TMPERROR, RIL_MSGDLVSTATUS_FORWARDEDTOSME, rilapitypes/RIL_MSGDLVSTATUS_SCSPECIFIC_COMPLETED, rilapitypes/RIL_MSGDLVSTATUS_NOTOBTAINABLE, RIL_MSGDLVSTATUS_SCSPECIFIC_TRYING, rilapitypes/RIL_MSGDLVSTATUS_SCSPECIFIC_TMPERROR, rilapitypes/RIL_MSGDLVSTATUS_MAX, rilapitypes/RIL_MSGDLVSTATUS_SVCREJECTED, RIL_MSGDLVSTATUS_CONNECTIONREJECTED, RIL_MSGDLVSTATUS_QUALITYUNAVAIL_TEMP, rilapitypes/RIL_MSGDLVSTATUS_DELETEDBYORIGSME, rilapitypes/RIL_MSGDLVSTATUS_FORWARDEDTOSME, rilapitypes/RIL_MSGDLVSTATUS_NOINTERNETWORKING, rilapitypes/RIL_MSGDLVSTATUS_REMOTEPROCERROR, rilapitypes/RIL_MSGDLVSTATUS_SMEERROR_TRYING, rilapitypes/RIL_MSGDLVSTATUS_RESERVED_COMPLETED, rilapitypes/RIL_MSGDLVSTATUS_SMEERROR, RILMSGINSTATUSTGTDLVSTATUS enumeration [Network Drivers Starting with Windows Vista], rilapitypes/RIL_MSGDLVSTATUS_QUALITYUNAVAIL_TEMP, rilapitypes/RIL_MSGDLVSTATUS_SCSPECIFIC_ERROR, rilapitypes/RIL_MSGDLVSTATUS_INCOMPATIBLEDEST, RIL_MSGDLVSTATUS_CONGESTION_TRYING, RIL_MSGDLVSTATUS_REPLACEDBYSC, RIL_MSGDLVSTATUS_NOINTERNETWORKING, rilapitypes/RIL_MSGDLVSTATUS_CONGESTION, RIL_MSGDLVSTATUS_DELETEDBYORIGSME, rilapitypes/RIL_MSGDLVSTATUS_SCSPECIFIC_TRYING, RIL_MSGDLVSTATUS_DELETEDBYSC, RIL_MSGDLVSTATUS_SCSPECIFIC_TMPERROR, rilapitypes/RIL_MSGDLVSTATUS_CONGESTION_TRYING, rilapitypes/RIL_MSGDLVSTATUS_SMEBUSY_TRYING, RILMSGINSTATUSTGTDLVSTATUS, rilapitypes/RIL_MSGDLVSTATUS_RESERVED_ERROR, RIL_MSGDLVSTATUS_SCSPECIFIC_ERROR, RIL_MSGDLVSTATUS_QUALITYUNAVAIL_TRYING, rilapitypes/RIL_MSGDLVSTATUS_NOLONGEREXISTS, rilapitypes/RIL_MSGDLVSTATUS_QUALITYUNAVAIL, RIL_MSGDLVSTATUS_QUALITYUNAVAIL, rilapitypes/RIL_MSGDLVSTATUS_VPEXPIRED, RIL_MSGDLVSTATUS_SCSPECIFIC_COMPLETED, RIL_MSGDLVSTATUS_RESERVED_TMPERROR, RIL_MSGDLVSTATUS_INCOMPATIBLEDEST, rilapitypes/RIL_MSGDLVSTATUS_SMENOTRESPONDING, rilapitypes/RIL_MSGDLVSTATUS_SVCREJECTED_TRYING, RIL_MSGDLVSTATUS_REMOTEPROCERROR
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : rilapitypes.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RILMSGINSTATUSTGTDLVSTATUS
-req.product : Windows 10 or later.
+UID: NE:rilapitypes.RILMSGINSTATUSTGTDLVSTATUS
+title: RILMSGINSTATUSTGTDLVSTATUS
+author: windows-driver-content
+description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+old-location: netvista\rilmsginstatustgtdlvstatus_2.htm
+old-project: netvista
+ms.assetid: 7a370d9c-93c6-4c73-b41e-97b0114690b4
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: RIL_MSGDLVSTATUS_RESERVED_ERROR, RIL_MSGDLVSTATUS_SMENOTRESPONDING_TRYING, rilapitypes/RIL_MSGDLVSTATUS_REPLACEDBYSC, RIL_MSGDLVSTATUS_SVCREJECTED_TRYING, RIL_MSGDLVSTATUS_SMEERROR_TRYING, netvista.rilmsginstatustgtdlvstatus_2, RIL_MSGDLVSTATUS_CONGESTION, rilapitypes/RIL_MSGDLVSTATUS_SMEBUSY, RIL_MSGDLVSTATUS_NOTOBTAINABLE, RIL_MSGDLVSTATUS_RESERVED_TRYING, RIL_MSGDLVSTATUS_VPEXPIRED, rilapitypes/RIL_MSGDLVSTATUS_QUALITYUNAVAIL_TRYING, RIL_MSGDLVSTATUS_MAX, rilapitypes/RIL_MSGDLVSTATUS_DELETEDBYSC, RIL_MSGDLVSTATUS_SMEERROR, RIL_MSGDLVSTATUS_SVCREJECTED, RIL_MSGDLVSTATUS_NOLONGEREXISTS, RIL_MSGDLVSTATUS_SMEBUSY_TRYING, RIL_MSGDLVSTATUS_RESERVED_COMPLETED, rilapitypes/RIL_MSGDLVSTATUS_CONNECTIONREJECTED, rilapitypes/RILMSGINSTATUSTGTDLVSTATUS, RIL_MSGDLVSTATUS_SMEBUSY, RIL_MSGDLVSTATUS_SMENOTRESPONDING, rilapitypes/RIL_MSGDLVSTATUS_SMENOTRESPONDING_TRYING, rilapitypes/RIL_MSGDLVSTATUS_RESERVED_TRYING, rilapitypes/RIL_MSGDLVSTATUS_RESERVED_TMPERROR, RIL_MSGDLVSTATUS_FORWARDEDTOSME, rilapitypes/RIL_MSGDLVSTATUS_SCSPECIFIC_COMPLETED, rilapitypes/RIL_MSGDLVSTATUS_NOTOBTAINABLE, RIL_MSGDLVSTATUS_SCSPECIFIC_TRYING, rilapitypes/RIL_MSGDLVSTATUS_SCSPECIFIC_TMPERROR, rilapitypes/RIL_MSGDLVSTATUS_MAX, rilapitypes/RIL_MSGDLVSTATUS_SVCREJECTED, RIL_MSGDLVSTATUS_CONNECTIONREJECTED, RIL_MSGDLVSTATUS_QUALITYUNAVAIL_TEMP, rilapitypes/RIL_MSGDLVSTATUS_DELETEDBYORIGSME, rilapitypes/RIL_MSGDLVSTATUS_FORWARDEDTOSME, rilapitypes/RIL_MSGDLVSTATUS_NOINTERNETWORKING, rilapitypes/RIL_MSGDLVSTATUS_REMOTEPROCERROR, rilapitypes/RIL_MSGDLVSTATUS_SMEERROR_TRYING, rilapitypes/RIL_MSGDLVSTATUS_RESERVED_COMPLETED, rilapitypes/RIL_MSGDLVSTATUS_SMEERROR, RILMSGINSTATUSTGTDLVSTATUS enumeration [Network Drivers Starting with Windows Vista], rilapitypes/RIL_MSGDLVSTATUS_QUALITYUNAVAIL_TEMP, rilapitypes/RIL_MSGDLVSTATUS_SCSPECIFIC_ERROR, rilapitypes/RIL_MSGDLVSTATUS_INCOMPATIBLEDEST, RIL_MSGDLVSTATUS_CONGESTION_TRYING, RIL_MSGDLVSTATUS_REPLACEDBYSC, RIL_MSGDLVSTATUS_NOINTERNETWORKING, rilapitypes/RIL_MSGDLVSTATUS_CONGESTION, RIL_MSGDLVSTATUS_DELETEDBYORIGSME, rilapitypes/RIL_MSGDLVSTATUS_SCSPECIFIC_TRYING, RIL_MSGDLVSTATUS_DELETEDBYSC, RIL_MSGDLVSTATUS_SCSPECIFIC_TMPERROR, rilapitypes/RIL_MSGDLVSTATUS_CONGESTION_TRYING, rilapitypes/RIL_MSGDLVSTATUS_SMEBUSY_TRYING, RILMSGINSTATUSTGTDLVSTATUS, rilapitypes/RIL_MSGDLVSTATUS_RESERVED_ERROR, RIL_MSGDLVSTATUS_SCSPECIFIC_ERROR, RIL_MSGDLVSTATUS_QUALITYUNAVAIL_TRYING, rilapitypes/RIL_MSGDLVSTATUS_NOLONGEREXISTS, rilapitypes/RIL_MSGDLVSTATUS_QUALITYUNAVAIL, RIL_MSGDLVSTATUS_QUALITYUNAVAIL, rilapitypes/RIL_MSGDLVSTATUS_VPEXPIRED, RIL_MSGDLVSTATUS_SCSPECIFIC_COMPLETED, RIL_MSGDLVSTATUS_RESERVED_TMPERROR, RIL_MSGDLVSTATUS_INCOMPATIBLEDEST, rilapitypes/RIL_MSGDLVSTATUS_SMENOTRESPONDING, rilapitypes/RIL_MSGDLVSTATUS_SVCREJECTED_TRYING, RIL_MSGDLVSTATUS_REMOTEPROCERROR
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: rilapitypes.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	rilapitypes.h
+apiname:
+-	RILMSGINSTATUSTGTDLVSTATUS
+product: Windows
+targetos: Windows
+req.typenames: RILMSGINSTATUSTGTDLVSTATUS
+req.product: Windows 10 or later.
 ---
 
 # RILMSGINSTATUSTGTDLVSTATUS Enumeration
@@ -84,176 +89,176 @@ typedef enum _RILMSGINSTATUSTGTDLVSTATUS {
 ## Constants
 
 <table>
-
-<tr>
-<td>RIL_MSGDLVSTATUS_CONGESTION</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_MSGDLVSTATUS_CONGESTION_TRYING</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_MSGDLVSTATUS_CONNECTIONREJECTED</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_MSGDLVSTATUS_DELETEDBYORIGSME</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_MSGDLVSTATUS_DELETEDBYSC</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_MSGDLVSTATUS_FORWARDEDTOSME</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_MSGDLVSTATUS_INCOMPATIBLEDEST</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_MSGDLVSTATUS_MAX</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_MSGDLVSTATUS_NOINTERNETWORKING</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_MSGDLVSTATUS_NOLONGEREXISTS</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_MSGDLVSTATUS_NOTOBTAINABLE</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_MSGDLVSTATUS_QUALITYUNAVAIL</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_MSGDLVSTATUS_QUALITYUNAVAIL_TEMP</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_MSGDLVSTATUS_QUALITYUNAVAIL_TRYING</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_MSGDLVSTATUS_RECEIVEDBYSME</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_MSGDLVSTATUS_REMOTEPROCERROR</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_MSGDLVSTATUS_REPLACEDBYSC</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_MSGDLVSTATUS_RESERVED_COMPLETED</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_MSGDLVSTATUS_RESERVED_ERROR</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_MSGDLVSTATUS_RESERVED_TMPERROR</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_MSGDLVSTATUS_RESERVED_TRYING</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_MSGDLVSTATUS_SCSPECIFIC_COMPLETED</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_MSGDLVSTATUS_SCSPECIFIC_ERROR</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_MSGDLVSTATUS_SCSPECIFIC_TMPERROR</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_MSGDLVSTATUS_SCSPECIFIC_TRYING</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_MSGDLVSTATUS_SMEBUSY</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_MSGDLVSTATUS_SMEBUSY_TRYING</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_MSGDLVSTATUS_SMEERROR</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_MSGDLVSTATUS_SMEERROR_TRYING</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_MSGDLVSTATUS_SMENOTRESPONDING</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_MSGDLVSTATUS_SMENOTRESPONDING_TRYING</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_MSGDLVSTATUS_SVCREJECTED</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_MSGDLVSTATUS_SVCREJECTED_TRYING</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_MSGDLVSTATUS_VPEXPIRED</td>
-<td></td>
-</tr>
+            
+                <tr>
+                    <td>RIL_MSGDLVSTATUS_CONGESTION</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_MSGDLVSTATUS_CONGESTION_TRYING</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_MSGDLVSTATUS_CONNECTIONREJECTED</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_MSGDLVSTATUS_DELETEDBYORIGSME</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_MSGDLVSTATUS_DELETEDBYSC</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_MSGDLVSTATUS_FORWARDEDTOSME</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_MSGDLVSTATUS_INCOMPATIBLEDEST</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_MSGDLVSTATUS_MAX</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_MSGDLVSTATUS_NOINTERNETWORKING</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_MSGDLVSTATUS_NOLONGEREXISTS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_MSGDLVSTATUS_NOTOBTAINABLE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_MSGDLVSTATUS_QUALITYUNAVAIL</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_MSGDLVSTATUS_QUALITYUNAVAIL_TEMP</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_MSGDLVSTATUS_QUALITYUNAVAIL_TRYING</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_MSGDLVSTATUS_RECEIVEDBYSME</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_MSGDLVSTATUS_REMOTEPROCERROR</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_MSGDLVSTATUS_REPLACEDBYSC</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_MSGDLVSTATUS_RESERVED_COMPLETED</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_MSGDLVSTATUS_RESERVED_ERROR</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_MSGDLVSTATUS_RESERVED_TMPERROR</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_MSGDLVSTATUS_RESERVED_TRYING</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_MSGDLVSTATUS_SCSPECIFIC_COMPLETED</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_MSGDLVSTATUS_SCSPECIFIC_ERROR</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_MSGDLVSTATUS_SCSPECIFIC_TMPERROR</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_MSGDLVSTATUS_SCSPECIFIC_TRYING</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_MSGDLVSTATUS_SMEBUSY</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_MSGDLVSTATUS_SMEBUSY_TRYING</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_MSGDLVSTATUS_SMEERROR</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_MSGDLVSTATUS_SMEERROR_TRYING</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_MSGDLVSTATUS_SMENOTRESPONDING</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_MSGDLVSTATUS_SMENOTRESPONDING_TRYING</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_MSGDLVSTATUS_SVCREJECTED</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_MSGDLVSTATUS_SVCREJECTED_TRYING</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_MSGDLVSTATUS_VPEXPIRED</td>
+                    <td></td>
+                </tr>
 </table>
 
 

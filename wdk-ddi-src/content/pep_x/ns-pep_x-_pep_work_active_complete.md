@@ -1,41 +1,46 @@
 ---
-UID : NS:pep_x._PEP_WORK_ACTIVE_COMPLETE
-title : "_PEP_WORK_ACTIVE_COMPLETE"
-author : windows-driver-content
-description : The PEP_WORK_ACTIVE_COMPLETE structure identifies a component that is now in the active condition.
-old-location : kernel\pep_work_active_complete.htm
-old-project : kernel
-ms.assetid : DD7D7E5F-D35C-40B4-B414-A6D2EB8D3A02
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : PPEP_WORK_ACTIVE_COMPLETE structure pointer [Kernel-Mode Driver Architecture], _PEP_WORK_ACTIVE_COMPLETE, PEP_WORK_ACTIVE_COMPLETE, PEP_WORK_ACTIVE_COMPLETE structure [Kernel-Mode Driver Architecture], kernel.pep_work_active_complete, pep_x/PEP_WORK_ACTIVE_COMPLETE, PPEP_WORK_ACTIVE_COMPLETE, *PPEP_WORK_ACTIVE_COMPLETE, pep_x/PPEP_WORK_ACTIVE_COMPLETE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : pep_x.h
-req.include-header : Pepfx.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with Windows 10.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PEP_WORK_ACTIVE_COMPLETE, *PPEP_WORK_ACTIVE_COMPLETE
+UID: NS:pep_x._PEP_WORK_ACTIVE_COMPLETE
+title: "_PEP_WORK_ACTIVE_COMPLETE"
+author: windows-driver-content
+description: The PEP_WORK_ACTIVE_COMPLETE structure identifies a component that is now in the active condition.
+old-location: kernel\pep_work_active_complete.htm
+old-project: kernel
+ms.assetid: DD7D7E5F-D35C-40B4-B414-A6D2EB8D3A02
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: PPEP_WORK_ACTIVE_COMPLETE structure pointer [Kernel-Mode Driver Architecture], _PEP_WORK_ACTIVE_COMPLETE, PEP_WORK_ACTIVE_COMPLETE, PEP_WORK_ACTIVE_COMPLETE structure [Kernel-Mode Driver Architecture], kernel.pep_work_active_complete, pep_x/PEP_WORK_ACTIVE_COMPLETE, PPEP_WORK_ACTIVE_COMPLETE, *PPEP_WORK_ACTIVE_COMPLETE, pep_x/PPEP_WORK_ACTIVE_COMPLETE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: pep_x.h
+req.include-header: Pepfx.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows 10.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	pep_x.h
+apiname:
+-	PEP_WORK_ACTIVE_COMPLETE
+product: Windows
+targetos: Windows
+req.typenames: PEP_WORK_ACTIVE_COMPLETE, *PPEP_WORK_ACTIVE_COMPLETE
 ---
 
 # _PEP_WORK_ACTIVE_COMPLETE structure

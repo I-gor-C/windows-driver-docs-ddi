@@ -1,41 +1,46 @@
 ---
-UID : NS:ntifs._FILE_TIMESTAMPS
-title : "_FILE_TIMESTAMPS"
-author : windows-driver-content
-description : The FILE_TIMESTAMPS structure specifies the last recorded instance of specific actions on a file.
-old-location : ifsk\file_timestamps.htm
-old-project : ifsk
-ms.assetid : 0F016D21-34CD-43DD-BE39-C6DF6D63A3AC
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : "_FILE_TIMESTAMPS, FILE_TIMESTAMPS, PFILE_TIMESTAMPS structure pointer [Installable File System Drivers], FILE_TIMESTAMPS structure [Installable File System Drivers], *PFILE_TIMESTAMPS, PFILE_TIMESTAMPS, ntifs/PFILE_TIMESTAMPS, ifsk.file_timestamps, ntifs/File_TIMESTAMPS"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntifs.h
-req.include-header : Ntifs.h, Fltkernel.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FILE_TIMESTAMPS, *PFILE_TIMESTAMPS
+UID: NS:ntifs._FILE_TIMESTAMPS
+title: "_FILE_TIMESTAMPS"
+author: windows-driver-content
+description: The FILE_TIMESTAMPS structure specifies the last recorded instance of specific actions on a file.
+old-location: ifsk\file_timestamps.htm
+old-project: ifsk
+ms.assetid: 0F016D21-34CD-43DD-BE39-C6DF6D63A3AC
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: "_FILE_TIMESTAMPS, FILE_TIMESTAMPS, PFILE_TIMESTAMPS structure pointer [Installable File System Drivers], FILE_TIMESTAMPS structure [Installable File System Drivers], *PFILE_TIMESTAMPS, PFILE_TIMESTAMPS, ntifs/PFILE_TIMESTAMPS, ifsk.file_timestamps, ntifs/File_TIMESTAMPS"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntifs.h
+req.include-header: Ntifs.h, Fltkernel.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntifs.h
+apiname:
+-	FILE_TIMESTAMPS
+product: Windows
+targetos: Windows
+req.typenames: FILE_TIMESTAMPS, *PFILE_TIMESTAMPS
 ---
 
 # _FILE_TIMESTAMPS structure

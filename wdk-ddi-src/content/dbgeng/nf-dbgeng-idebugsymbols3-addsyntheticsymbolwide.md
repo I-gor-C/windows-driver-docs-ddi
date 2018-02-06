@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugSymbols3.AddSyntheticSymbolWide
-title : IDebugSymbols3::AddSyntheticSymbolWide method
-author : windows-driver-content
-description : The AddSyntheticSymbolWide method adds a synthetic symbol to a module in the current process.
-old-location : debugger\addsyntheticsymbolwide.htm
-old-project : debugger
-ms.assetid : 06d4d1f1-8d28-46cc-8c80-8a67cf4ae4c3
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : AddSyntheticSymbolWide method [Windows Debugging], IDebugSymbols3 interface, dbgeng/IDebugSymbols3::AddSyntheticSymbolWide, IDebugSymbols3 interface [Windows Debugging], AddSyntheticSymbolWide method, IDebugSymbols3::AddSyntheticSymbolWide, debugger.addsyntheticsymbolwide, AddSyntheticSymbolWide, IDebugSymbols3, AddSyntheticSymbolWide method [Windows Debugging]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSymbols3.AddSyntheticSymbolWide
+title: IDebugSymbols3::AddSyntheticSymbolWide method
+author: windows-driver-content
+description: The AddSyntheticSymbolWide method adds a synthetic symbol to a module in the current process.
+old-location: debugger\addsyntheticsymbolwide.htm
+old-project: debugger
+ms.assetid: 06d4d1f1-8d28-46cc-8c80-8a67cf4ae4c3
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: AddSyntheticSymbolWide method [Windows Debugging], IDebugSymbols3 interface, dbgeng/IDebugSymbols3::AddSyntheticSymbolWide, IDebugSymbols3 interface [Windows Debugging], AddSyntheticSymbolWide method, IDebugSymbols3::AddSyntheticSymbolWide, debugger.addsyntheticsymbolwide, AddSyntheticSymbolWide, IDebugSymbols3, AddSyntheticSymbolWide method [Windows Debugging]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Dbgeng.h
+apiname:
+-	IDebugSymbols3.AddSyntheticSymbolWide
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

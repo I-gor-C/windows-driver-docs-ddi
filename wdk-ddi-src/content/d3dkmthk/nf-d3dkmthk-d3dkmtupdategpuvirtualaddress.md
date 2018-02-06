@@ -1,41 +1,49 @@
 ---
-UID : NF:d3dkmthk.D3DKMTUpdateGpuVirtualAddress
-title : D3DKMTUpdateGpuVirtualAddress function
-author : windows-driver-content
-description : D3DKMTUpdateGpuVirtualAddress is a special operation used in the context of tile resources. It allows the driver to specify a number of mapping operations to be applied to the process virtual address space in a single batch of page table updates.
-old-location : display\d3dkmtupdategpuvirtualaddress.htm
-old-project : display
-ms.assetid : 3390A01D-BD4B-4399-AA3E-91BB32264A13
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DKMTUpdateGpuVirtualAddress, display.d3dkmtupdategpuvirtualaddress, d3dkmthk/D3DKMTUpdateGpuVirtualAddress, D3DKMTUpdateGpuVirtualAddress function [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Universal
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : GDI32.lib
-req.dll : GDI32.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_DRIVERVERSION
+UID: NF:d3dkmthk.D3DKMTUpdateGpuVirtualAddress
+title: D3DKMTUpdateGpuVirtualAddress function
+author: windows-driver-content
+description: D3DKMTUpdateGpuVirtualAddress is a special operation used in the context of tile resources. It allows the driver to specify a number of mapping operations to be applied to the process virtual address space in a single batch of page table updates.
+old-location: display\d3dkmtupdategpuvirtualaddress.htm
+old-project: display
+ms.assetid: 3390A01D-BD4B-4399-AA3E-91BB32264A13
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DKMTUpdateGpuVirtualAddress, display.d3dkmtupdategpuvirtualaddress, d3dkmthk/D3DKMTUpdateGpuVirtualAddress, D3DKMTUpdateGpuVirtualAddress function [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Universal
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: GDI32.lib
+req.dll: GDI32.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	GDI32.dll
+-	API-MS-Win-DX-D3DKMT-L1-1-1.dll
+-	GDI32.dll
+-	API-MS-Win-DX-D3DKMT-L1-1-2.dll
+apiname:
+-	D3DKMTUpdateGpuVirtualAddress
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_DRIVERVERSION
 ---
 
 

@@ -1,12 +1,12 @@
 ---
-UID : NA:evntrace
-ms.assetid : fcc3998f-48cb-304e-b1db-f412543a8d72
-ms.author : windowsdriverdev
-ms.date : 01/18/18
-ms.keywords : 
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : portal
+UID: NA:evntrace
+ms.assetid: fcc3998f-48cb-304e-b1db-f412543a8d72
+ms.author: windowsdriverdev
+ms.date: 01/18/18
+ms.keywords: 
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: portal
 ---
 
 # evntrace.h header

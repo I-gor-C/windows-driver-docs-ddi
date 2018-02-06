@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.tagKSATTRIBUTE_AUDIOSIGNALPROCESSING_MODE
-title : tagKSATTRIBUTE_AUDIOSIGNALPROCESSING_MODE
-author : windows-driver-content
-description : The KSATTRIBUTE_AUDIOSIGNALPROCESSING_MODE structure specifies an audio signal processing mode.
-old-location : audio\ksattribute_audiosignalprocessing_mode.htm
-old-project : audio
-ms.assetid : A7EE4FC5-420A-419A-98D1-3411C29F1990
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : audio.ksattribute_audiosignalprocessing_mode, tagKSATTRIBUTE_AUDIOSIGNALPROCESSING_MODE, PKSATTRIBUTE_AUDIOSIGNALPROCESSING_MODE, KSATTRIBUTE_AUDIOSIGNALPROCESSING_MODE, KSATTRIBUTE_AUDIOSIGNALPROCESSING_MODE structure [Audio Devices], PKSATTRIBUTE_AUDIOSIGNALPROCESSING_MODE structure pointer [Audio Devices], ksmedia/KSATTRIBUTE_AUDIOSIGNALPROCESSING_MODE, ksmedia/PKSATTRIBUTE_AUDIOSIGNALPROCESSING_MODE, *PKSATTRIBUTE_AUDIOSIGNALPROCESSING_MODE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKSATTRIBUTE_AUDIOSIGNALPROCESSING_MODE, KSATTRIBUTE_AUDIOSIGNALPROCESSING_MODE"
+UID: NS:ksmedia.tagKSATTRIBUTE_AUDIOSIGNALPROCESSING_MODE
+title: tagKSATTRIBUTE_AUDIOSIGNALPROCESSING_MODE
+author: windows-driver-content
+description: The KSATTRIBUTE_AUDIOSIGNALPROCESSING_MODE structure specifies an audio signal processing mode.
+old-location: audio\ksattribute_audiosignalprocessing_mode.htm
+old-project: audio
+ms.assetid: A7EE4FC5-420A-419A-98D1-3411C29F1990
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: audio.ksattribute_audiosignalprocessing_mode, tagKSATTRIBUTE_AUDIOSIGNALPROCESSING_MODE, PKSATTRIBUTE_AUDIOSIGNALPROCESSING_MODE, KSATTRIBUTE_AUDIOSIGNALPROCESSING_MODE, KSATTRIBUTE_AUDIOSIGNALPROCESSING_MODE structure [Audio Devices], PKSATTRIBUTE_AUDIOSIGNALPROCESSING_MODE structure pointer [Audio Devices], ksmedia/KSATTRIBUTE_AUDIOSIGNALPROCESSING_MODE, ksmedia/PKSATTRIBUTE_AUDIOSIGNALPROCESSING_MODE, *PKSATTRIBUTE_AUDIOSIGNALPROCESSING_MODE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	KSATTRIBUTE_AUDIOSIGNALPROCESSING_MODE
+product: Windows
+targetos: Windows
+req.typenames: "*PKSATTRIBUTE_AUDIOSIGNALPROCESSING_MODE, KSATTRIBUTE_AUDIOSIGNALPROCESSING_MODE"
 ---
 
 # tagKSATTRIBUTE_AUDIOSIGNALPROCESSING_MODE structure

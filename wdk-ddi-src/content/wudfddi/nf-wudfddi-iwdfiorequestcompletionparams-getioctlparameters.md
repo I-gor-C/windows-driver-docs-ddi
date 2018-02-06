@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFIoRequestCompletionParams.GetIoctlParameters
-title : IWDFIoRequestCompletionParams::GetIoctlParameters method
-author : windows-driver-content
-description : The GetIoctlParameters method retrieves parameters that are associated with the completion of a device I/O control request.
-old-location : wdf\iwdfiorequestcompletionparams_getioctlparameters.htm
-old-project : wdf
-ms.assetid : 59e2cd27-ec10-46e9-aa0d-4a00e2684e76
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : GetIoctlParameters, wudfddi/IWDFIoRequestCompletionParams::GetIoctlParameters, IWDFIoRequestCompletionParams interface, GetIoctlParameters method, wdf.iwdfiorequestcompletionparams_getioctlparameters, IWDFIoRequestCompletionParams::GetIoctlParameters, umdf.iwdfiorequestcompletionparams_getioctlparameters, IWDFIoRequestCompletionParams, GetIoctlParameters method, IWDFIoRequestCompletionParams interface, UMDFRequestObjectRef_7d375866-617c-418f-b449-7931a88e7ae4.xml, GetIoctlParameters method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.5
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFIoRequestCompletionParams.GetIoctlParameters
+title: IWDFIoRequestCompletionParams::GetIoctlParameters method
+author: windows-driver-content
+description: The GetIoctlParameters method retrieves parameters that are associated with the completion of a device I/O control request.
+old-location: wdf\iwdfiorequestcompletionparams_getioctlparameters.htm
+old-project: wdf
+ms.assetid: 59e2cd27-ec10-46e9-aa0d-4a00e2684e76
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: GetIoctlParameters, wudfddi/IWDFIoRequestCompletionParams::GetIoctlParameters, IWDFIoRequestCompletionParams interface, GetIoctlParameters method, wdf.iwdfiorequestcompletionparams_getioctlparameters, IWDFIoRequestCompletionParams::GetIoctlParameters, umdf.iwdfiorequestcompletionparams_getioctlparameters, IWDFIoRequestCompletionParams, GetIoctlParameters method, IWDFIoRequestCompletionParams interface, UMDFRequestObjectRef_7d375866-617c-418f-b449-7931a88e7ae4.xml, GetIoctlParameters method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.5
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFIoRequestCompletionParams.GetIoctlParameters
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

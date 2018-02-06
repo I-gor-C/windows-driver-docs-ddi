@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.MapSecurityError
-title : MapSecurityError function
-author : windows-driver-content
-description : The MapSecurityError function maps a security interface SECURITY_STATUS status code to a corresponding NSTATUS status code.
-old-location : ifsk\mapsecurityerror.htm
-old-project : ifsk
-ms.assetid : 899b7d6e-a17b-4030-9512-591b003ca6b2
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ntifs/MapSecurityError, ifsk.mapsecurityerror, MapSecurityError, MapSecurityError function [Installable File System Drivers], IFSMiscRef_41a163d7-81d1-4877-b1c2-ae90b203177a.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h, FltKernel.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Microsoft Windows 2000 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : Any.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.MapSecurityError
+title: MapSecurityError function
+author: windows-driver-content
+description: The MapSecurityError function maps a security interface SECURITY_STATUS status code to a corresponding NSTATUS status code.
+old-location: ifsk\mapsecurityerror.htm
+old-project: ifsk
+ms.assetid: 899b7d6e-a17b-4030-9512-591b003ca6b2
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ntifs/MapSecurityError, ifsk.mapsecurityerror, MapSecurityError, MapSecurityError function [Installable File System Drivers], IFSMiscRef_41a163d7-81d1-4877-b1c2-ae90b203177a.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h, FltKernel.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Microsoft Windows 2000 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: Any.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	MapSecurityError
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

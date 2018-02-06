@@ -1,42 +1,47 @@
 ---
-UID : NF:printerextension.IPrinterQueue2.GetPrinterQueueView
-title : IPrinterQueue2::GetPrinterQueueView method
-author : windows-driver-content
-description : Retrieves an IPrinterQueueView object, and initializes the object with the range of jobs to be monitored.
-old-location : print\iprinterqueue2_getprinterqueueview.htm
-old-project : print
-ms.assetid : C565288C-B014-4A92-9F50-1641EAA30D22
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : GetPrinterQueueView method [Print Devices], IPrinterQueue2 interface, GetPrinterQueueView method [Print Devices], IPrinterQueue2::GetPrinterQueueView, IPrinterQueue2, IPrinterQueue2 interface [Print Devices], GetPrinterQueueView method, GetPrinterQueueView, print.iprinterqueue2_getprinterqueueview, printerextension/IPrinterQueue2::GetPrinterQueueView
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : printerextension.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8.1
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : printerextension.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PrintSchemaSelectionType
-req.product : Windows 10 or later.
+UID: NF:printerextension.IPrinterQueue2.GetPrinterQueueView
+title: IPrinterQueue2::GetPrinterQueueView method
+author: windows-driver-content
+description: Retrieves an IPrinterQueueView object, and initializes the object with the range of jobs to be monitored.
+old-location: print\iprinterqueue2_getprinterqueueview.htm
+old-project: print
+ms.assetid: C565288C-B014-4A92-9F50-1641EAA30D22
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: GetPrinterQueueView method [Print Devices], IPrinterQueue2 interface, GetPrinterQueueView method [Print Devices], IPrinterQueue2::GetPrinterQueueView, IPrinterQueue2, IPrinterQueue2 interface [Print Devices], GetPrinterQueueView method, GetPrinterQueueView, print.iprinterqueue2_getprinterqueueview, printerextension/IPrinterQueue2::GetPrinterQueueView
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: printerextension.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8.1
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: printerextension.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Printerextension.h
+apiname:
+-	IPrinterQueue2.GetPrinterQueueView
+product: Windows
+targetos: Windows
+req.typenames: PrintSchemaSelectionType
+req.product: Windows 10 or later.
 ---
 
 

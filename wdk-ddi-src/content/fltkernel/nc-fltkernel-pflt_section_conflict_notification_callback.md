@@ -1,41 +1,46 @@
 ---
-UID : NC:fltkernel.PFLT_SECTION_CONFLICT_NOTIFICATION_CALLBACK
-title : PFLT_SECTION_CONFLICT_NOTIFICATION_CALLBACK
-author : windows-driver-content
-description : A minifilter driver can optionally register a routine of type PFLT_CONTEXT_ALLOCATE_CALLBACK as the minifilter driver's SectionNotificationCallback routine.
-old-location : ifsk\pflt_section_conflict_notification_callback.htm
-old-project : ifsk
-ms.assetid : 22840772-7DFC-4339-9C06-4900E47048B4
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.pflt_section_conflict_notification_callback, SectionNotificationCallback routine [Installable File System Drivers], SectionNotificationCallback, PFLT_SECTION_CONFLICT_NOTIFICATION_CALLBACK, PFLT_SECTION_CONFLICT_NOTIFICATION_CALLBACK, fltkernel/SectionNotificationCallback
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Desktop
-req.target-min-winverclnt : The PFLT_CONTEXT_ALLOCATE_CALLBACK callback routine is available on Windows 8 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NC:fltkernel.PFLT_SECTION_CONFLICT_NOTIFICATION_CALLBACK
+title: PFLT_SECTION_CONFLICT_NOTIFICATION_CALLBACK
+author: windows-driver-content
+description: A minifilter driver can optionally register a routine of type PFLT_CONTEXT_ALLOCATE_CALLBACK as the minifilter driver's SectionNotificationCallback routine.
+old-location: ifsk\pflt_section_conflict_notification_callback.htm
+old-project: ifsk
+ms.assetid: 22840772-7DFC-4339-9C06-4900E47048B4
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.pflt_section_conflict_notification_callback, SectionNotificationCallback routine [Installable File System Drivers], SectionNotificationCallback, PFLT_SECTION_CONFLICT_NOTIFICATION_CALLBACK, PFLT_SECTION_CONFLICT_NOTIFICATION_CALLBACK, fltkernel/SectionNotificationCallback
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Desktop
+req.target-min-winverclnt: The PFLT_CONTEXT_ALLOCATE_CALLBACK callback routine is available on Windows 8 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	fltkernel.h
+apiname:
+-	SectionNotificationCallback
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

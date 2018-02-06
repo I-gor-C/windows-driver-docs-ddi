@@ -1,41 +1,46 @@
 ---
-UID : NS:iddcx.IDARG_OUT_GETDEFAULTDESCRIPTIONMODES
-title : IDARG_OUT_GETDEFAULTDESCRIPTIONMODES
-author : windows-driver-content
-description : Gives information about the default description modes for the monitor, as well as the preferred mode of the monitor.
-old-location : display\idarg_out_getdefaultdescriptionmodes.htm
-old-project : display
-ms.assetid : 0e172d33-e4af-4345-a979-6b4549565ec7
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : IDARG_OUT_GETDEFAULTDESCRIPTIONMODES structure [Display Devices], display.idarg_out_getdefaultdescriptionmodes, iddcx/IDARG_OUT_GETDEFAULTDESCRIPTIONMODES, IDARG_OUT_GETDEFAULTDESCRIPTIONMODES
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : iddcx.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NS:iddcx.IDARG_OUT_GETDEFAULTDESCRIPTIONMODES
+title: IDARG_OUT_GETDEFAULTDESCRIPTIONMODES
+author: windows-driver-content
+description: Gives information about the default description modes for the monitor, as well as the preferred mode of the monitor.
+old-location: display\idarg_out_getdefaultdescriptionmodes.htm
+old-project: display
+ms.assetid: 0e172d33-e4af-4345-a979-6b4549565ec7
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: IDARG_OUT_GETDEFAULTDESCRIPTIONMODES structure [Display Devices], display.idarg_out_getdefaultdescriptionmodes, iddcx/IDARG_OUT_GETDEFAULTDESCRIPTIONMODES, IDARG_OUT_GETDEFAULTDESCRIPTIONMODES
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: iddcx.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	iddcx.h
+apiname:
+-	IDARG_OUT_GETDEFAULTDESCRIPTIONMODES
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 # IDARG_OUT_GETDEFAULTDESCRIPTIONMODES structure

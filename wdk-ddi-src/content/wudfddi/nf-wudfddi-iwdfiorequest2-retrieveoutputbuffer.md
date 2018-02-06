@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFIoRequest2.RetrieveOutputBuffer
-title : IWDFIoRequest2::RetrieveOutputBuffer method
-author : windows-driver-content
-description : The RequestRetrieveOutputBuffer method retrieves an I/O request's output buffer.
-old-location : wdf\iwdfiorequest2_retrieveoutputbuffer.htm
-old-project : wdf
-ms.assetid : c2c96663-df1b-4310-b51e-177e353bb059
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RetrieveOutputBuffer method, IWDFIoRequest2 interface, RetrieveOutputBuffer, IWDFIoRequest2::RetrieveOutputBuffer, wdf.iwdfiorequest2_retrieveoutputbuffer, IWDFIoRequest2, UMDFRequestObjectRef_895f34da-95f3-4256-a049-0221887da5e1.xml, umdf.iwdfiorequest2_retrieveoutputbuffer, wudfddi/IWDFIoRequest2::RetrieveOutputBuffer, IWDFIoRequest2 interface, RetrieveOutputBuffer method, RetrieveOutputBuffer method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.9
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFIoRequest2.RetrieveOutputBuffer
+title: IWDFIoRequest2::RetrieveOutputBuffer method
+author: windows-driver-content
+description: The RequestRetrieveOutputBuffer method retrieves an I/O request's output buffer.
+old-location: wdf\iwdfiorequest2_retrieveoutputbuffer.htm
+old-project: wdf
+ms.assetid: c2c96663-df1b-4310-b51e-177e353bb059
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: RetrieveOutputBuffer method, IWDFIoRequest2 interface, RetrieveOutputBuffer, IWDFIoRequest2::RetrieveOutputBuffer, wdf.iwdfiorequest2_retrieveoutputbuffer, IWDFIoRequest2, UMDFRequestObjectRef_895f34da-95f3-4256-a049-0221887da5e1.xml, umdf.iwdfiorequest2_retrieveoutputbuffer, wudfddi/IWDFIoRequest2::RetrieveOutputBuffer, IWDFIoRequest2 interface, RetrieveOutputBuffer method, RetrieveOutputBuffer method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.9
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFIoRequest2.RetrieveOutputBuffer
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

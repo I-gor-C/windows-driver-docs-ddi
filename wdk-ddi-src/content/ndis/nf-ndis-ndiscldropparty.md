@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisClDropParty
-title : NdisClDropParty function
-author : windows-driver-content
-description : NdisClDropParty drops a party from the client's multipoint VC.
-old-location : netvista\ndiscldropparty.htm
-old-project : netvista
-ms.assetid : f5d04730-a7eb-4670-9b47-f8c52267aea8
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NdisClDropParty function [Network Drivers Starting with Windows Vista], NdisClDropParty, ndis/NdisClDropParty, condis_client_ref_a86ff56b-e523-4d1b-a3ef-60ec953514c6.xml, netvista.ndiscldropparty
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisClDropParty (NDIS 5.1)) in   Windows Vista. Supported for NDIS 5.1 drivers (see    NdisClDropParty (NDIS 5.1)) in   Windows XP.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_Protocol_Driver_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisClDropParty
+title: NdisClDropParty function
+author: windows-driver-content
+description: NdisClDropParty drops a party from the client's multipoint VC.
+old-location: netvista\ndiscldropparty.htm
+old-project: netvista
+ms.assetid: f5d04730-a7eb-4670-9b47-f8c52267aea8
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NdisClDropParty function [Network Drivers Starting with Windows Vista], NdisClDropParty, ndis/NdisClDropParty, condis_client_ref_a86ff56b-e523-4d1b-a3ef-60ec953514c6.xml, netvista.ndiscldropparty
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisClDropParty (NDIS 5.1)) in   Windows Vista. Supported for NDIS 5.1 drivers (see    NdisClDropParty (NDIS 5.1)) in   Windows XP.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_Protocol_Driver_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisClDropParty
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

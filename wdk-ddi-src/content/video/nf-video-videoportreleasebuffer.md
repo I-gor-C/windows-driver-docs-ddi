@@ -1,42 +1,47 @@
 ---
-UID : NF:video.VideoPortReleaseBuffer
-title : VideoPortReleaseBuffer function
-author : windows-driver-content
-description : The VideoPortReleaseBuffer function is obsolete in Windows 2000 and later. In its place, video miniport drivers should instead use VideoPortFreePool. VideoPortReleaseBuffer deallocates a block of paged pool memory.
-old-location : display\videoportreleasebuffer.htm
-old-project : display
-ms.assetid : 627f43e7-1561-4822-b2b6-a49b54550bf5
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : VideoPortReleaseBuffer, display.videoportreleasebuffer, VideoPort_Functions_908af223-2ee5-4e86-b5ab-47f7f3cc459b.xml, video/VideoPortReleaseBuffer, VideoPortReleaseBuffer function [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows 2000 and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Videoprt.lib
-req.dll : Videoprt.sys
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_PORT_SERVICES
-req.product : Windows 10 or later.
+UID: NF:video.VideoPortReleaseBuffer
+title: VideoPortReleaseBuffer function
+author: windows-driver-content
+description: The VideoPortReleaseBuffer function is obsolete in Windows 2000 and later. In its place, video miniport drivers should instead use VideoPortFreePool. VideoPortReleaseBuffer deallocates a block of paged pool memory.
+old-location: display\videoportreleasebuffer.htm
+old-project: display
+ms.assetid: 627f43e7-1561-4822-b2b6-a49b54550bf5
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: VideoPortReleaseBuffer, display.videoportreleasebuffer, VideoPort_Functions_908af223-2ee5-4e86-b5ab-47f7f3cc459b.xml, video/VideoPortReleaseBuffer, VideoPortReleaseBuffer function [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows 2000 and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Videoprt.lib
+req.dll: Videoprt.sys
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Videoprt.sys
+apiname:
+-	VideoPortReleaseBuffer
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_PORT_SERVICES
+req.product: Windows 10 or later.
 ---
 
 

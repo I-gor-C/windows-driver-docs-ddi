@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugSymbols3.OutputTypedDataVirtual
-title : IDebugSymbols3::OutputTypedDataVirtual method
-author : windows-driver-content
-description : The OutputTypedDataVirtual method formats the contents of a variable in the target's virtual memory, and then sends this to the output callbacks.
-old-location : debugger\outputtypeddatavirtual.htm
-old-project : debugger
-ms.assetid : d6faa4ee-2fdb-425a-81db-8257285ba47d
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugSymbols2 interface [Windows Debugging], OutputTypedDataVirtual method, dbgeng/IDebugSymbols::OutputTypedDataVirtual, debugger.outputtypeddatavirtual, OutputTypedDataVirtual method [Windows Debugging], IDebugSymbols2 interface, IDebugSymbols_0b8c7b9b-8e0a-4166-b474-830f662be2c6.xml, IDebugSymbols3, IDebugSymbols::OutputTypedDataVirtual, dbgeng/IDebugSymbols3::OutputTypedDataVirtual, IDebugSymbols interface [Windows Debugging], OutputTypedDataVirtual method, OutputTypedDataVirtual method [Windows Debugging], IDebugSymbols interface, IDebugSymbols2::OutputTypedDataVirtual, dbgeng/IDebugSymbols2::OutputTypedDataVirtual, IDebugSymbols3::OutputTypedDataVirtual, OutputTypedDataVirtual, OutputTypedDataVirtual method [Windows Debugging], IDebugSymbols3 interface, OutputTypedDataVirtual method [Windows Debugging], IDebugSymbols3 interface [Windows Debugging], OutputTypedDataVirtual method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSymbols3.OutputTypedDataVirtual
+title: IDebugSymbols3::OutputTypedDataVirtual method
+author: windows-driver-content
+description: The OutputTypedDataVirtual method formats the contents of a variable in the target's virtual memory, and then sends this to the output callbacks.
+old-location: debugger\outputtypeddatavirtual.htm
+old-project: debugger
+ms.assetid: d6faa4ee-2fdb-425a-81db-8257285ba47d
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugSymbols2 interface [Windows Debugging], OutputTypedDataVirtual method, dbgeng/IDebugSymbols::OutputTypedDataVirtual, debugger.outputtypeddatavirtual, OutputTypedDataVirtual method [Windows Debugging], IDebugSymbols2 interface, IDebugSymbols_0b8c7b9b-8e0a-4166-b474-830f662be2c6.xml, IDebugSymbols3, IDebugSymbols::OutputTypedDataVirtual, dbgeng/IDebugSymbols3::OutputTypedDataVirtual, IDebugSymbols interface [Windows Debugging], OutputTypedDataVirtual method, OutputTypedDataVirtual method [Windows Debugging], IDebugSymbols interface, IDebugSymbols2::OutputTypedDataVirtual, dbgeng/IDebugSymbols2::OutputTypedDataVirtual, IDebugSymbols3::OutputTypedDataVirtual, OutputTypedDataVirtual, OutputTypedDataVirtual method [Windows Debugging], IDebugSymbols3 interface, OutputTypedDataVirtual method [Windows Debugging], IDebugSymbols3 interface [Windows Debugging], OutputTypedDataVirtual method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugSymbols.OutputTypedDataVirtual
+-	IDebugSymbols2.OutputTypedDataVirtual
+-	IDebugSymbols3.OutputTypedDataVirtual
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

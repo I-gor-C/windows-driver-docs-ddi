@@ -1,41 +1,46 @@
 ---
-UID : NF:ntddk.RtlInsertAsLeftChild
-title : RtlInsertAsLeftChild function
-author : windows-driver-content
-description : The RtlInsertAsLeftChild routine inserts a splay link node into the tree as the left child of the specified node.
-old-location : ifsk\rtlinsertasleftchild.htm
-old-project : ifsk
-ms.assetid : cbb027f2-be7d-4de4-abbe-a37b7430153f
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : RtlInsertAsLeftChild routine [Installable File System Drivers], ifsk.rtlinsertasleftchild, ntddk/RtlInsertAsLeftChild, RtlInsertAsLeftChild, rtlref_228b3b79-ee0c-4361-ac36-223991ed3615.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntddk.h
-req.include-header : Ntddk.h, Ntifs.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.RtlInsertAsLeftChild
+title: RtlInsertAsLeftChild function
+author: windows-driver-content
+description: The RtlInsertAsLeftChild routine inserts a splay link node into the tree as the left child of the specified node.
+old-location: ifsk\rtlinsertasleftchild.htm
+old-project: ifsk
+ms.assetid: cbb027f2-be7d-4de4-abbe-a37b7430153f
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: RtlInsertAsLeftChild routine [Installable File System Drivers], ifsk.rtlinsertasleftchild, ntddk/RtlInsertAsLeftChild, RtlInsertAsLeftChild, rtlref_228b3b79-ee0c-4361-ac36-223991ed3615.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntddk.h
+req.include-header: Ntddk.h, Ntifs.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddk.h
+apiname:
+-	RtlInsertAsLeftChild
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

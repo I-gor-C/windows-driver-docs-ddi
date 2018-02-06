@@ -1,41 +1,46 @@
 ---
-UID : NI:ehstorioctl.IOCTL_EHSTOR_DEVICE_QUERY_PROPERTIES
-title : IOCTL_EHSTOR_DEVICE_QUERY_PROPERTIES
-author : windows-driver-content
-description : A silo driver sends this IOCTL to the storage device stack to query for storage device properties. The Enhanced Storage Class Driver (EHSTOR) will handle the request and return the available properties.
-old-location : storage\ioctl_ehstor_device_query_properties.htm
-old-project : storage
-ms.assetid : 2F9B880F-7F3A-4B2B-816E-AD85ADFB280B
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_ehstor_device_query_properties, IOCTL_EHSTOR_DEVICE_QUERY_PROPERTIES control code [Storage Devices], IOCTL_EHSTOR_DEVICE_QUERY_PROPERTIES, ehstorioctl/IOCTL_EHSTOR_DEVICE_QUERY_PROPERTIES
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ehstorioctl.h
-req.include-header : EhStorIoctl.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows 8
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PDO_TYPE
+UID: NI:ehstorioctl.IOCTL_EHSTOR_DEVICE_QUERY_PROPERTIES
+title: IOCTL_EHSTOR_DEVICE_QUERY_PROPERTIES
+author: windows-driver-content
+description: A silo driver sends this IOCTL to the storage device stack to query for storage device properties. The Enhanced Storage Class Driver (EHSTOR) will handle the request and return the available properties.
+old-location: storage\ioctl_ehstor_device_query_properties.htm
+old-project: storage
+ms.assetid: 2F9B880F-7F3A-4B2B-816E-AD85ADFB280B
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_ehstor_device_query_properties, IOCTL_EHSTOR_DEVICE_QUERY_PROPERTIES control code [Storage Devices], IOCTL_EHSTOR_DEVICE_QUERY_PROPERTIES, ehstorioctl/IOCTL_EHSTOR_DEVICE_QUERY_PROPERTIES
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ehstorioctl.h
+req.include-header: EhStorIoctl.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows 8
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	EhStorIoctl.h
+apiname:
+-	IOCTL_EHSTOR_DEVICE_QUERY_PROPERTIES
+product: Windows
+targetos: Windows
+req.typenames: PDO_TYPE
 ---
 
 # IOCTL_EHSTOR_DEVICE_QUERY_PROPERTIES IOCTL

@@ -1,42 +1,46 @@
 ---
-UID : NS:usbsidebandaudio._USBSIDEBANDAUDIO_SIDETONE_DESCRIPTOR
-title : "_USBSIDEBANDAUDIO_SIDETONE_DESCRIPTOR"
-author : windows-driver-content
-description : TBD.
-old-location : audio\usbsidebandaudio_sidetone_descriptor.htm
-old-project : audio
-ms.assetid : BC337822-C36C-4673-BFA1-3F4C05529C05
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : USBSIDEBANDAUDIO_SIDETONE_DESCRIPTOR, audio.usbsidebandaudio_sidetone_descriptor, PUSBSIDEBANDAUDIO_SIDETONE_DESCRIPTOR, usbsidebandaudio/USBSIDEBANDAUDIO_SIDETONE_DESCRIPTOR, USBSIDEBANDAUDIO_SIDETONE_DESCRIPTOR structure [Audio Devices], usbsidebandaudio/PUSBSIDEBANDAUDIO_SIDETONE_DESCRIPTOR, *PUSBSIDEBANDAUDIO_SIDETONE_DESCRIPTOR, PUSBSIDEBANDAUDIO_SIDETONE_DESCRIPTOR structure pointer [Audio Devices], _USBSIDEBANDAUDIO_SIDETONE_DESCRIPTOR
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : usbsidebandaudio.h
-req.include-header : Usbsidebandaudio.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : USBSIDEBANDAUDIO_SIDETONE_DESCRIPTOR, *PUSBSIDEBANDAUDIO_SIDETONE_DESCRIPTOR
-req.product : Windows 10 or later.
+UID: NS:usbsidebandaudio._USBSIDEBANDAUDIO_SIDETONE_DESCRIPTOR
+title: "_USBSIDEBANDAUDIO_SIDETONE_DESCRIPTOR"
+author: windows-driver-content
+description: TBD.
+old-location: audio\usbsidebandaudio_sidetone_descriptor.htm
+old-project: audio
+ms.assetid: BC337822-C36C-4673-BFA1-3F4C05529C05
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: USBSIDEBANDAUDIO_SIDETONE_DESCRIPTOR, audio.usbsidebandaudio_sidetone_descriptor, PUSBSIDEBANDAUDIO_SIDETONE_DESCRIPTOR, usbsidebandaudio/USBSIDEBANDAUDIO_SIDETONE_DESCRIPTOR, USBSIDEBANDAUDIO_SIDETONE_DESCRIPTOR structure [Audio Devices], usbsidebandaudio/PUSBSIDEBANDAUDIO_SIDETONE_DESCRIPTOR, *PUSBSIDEBANDAUDIO_SIDETONE_DESCRIPTOR, PUSBSIDEBANDAUDIO_SIDETONE_DESCRIPTOR structure pointer [Audio Devices], _USBSIDEBANDAUDIO_SIDETONE_DESCRIPTOR
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: usbsidebandaudio.h
+req.include-header: Usbsidebandaudio.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	kbSyntax
+apitype:
+-	<TBD>
+apilocation:
+-
+apiname:
+-	USBSIDEBANDAUDIO_SIDETONE_DESCRIPTOR
+product: Windows
+targetos: Windows
+req.typenames: USBSIDEBANDAUDIO_SIDETONE_DESCRIPTOR, *PUSBSIDEBANDAUDIO_SIDETONE_DESCRIPTOR
+req.product: Windows 10 or later.
 ---
 
 # _USBSIDEBANDAUDIO_SIDETONE_DESCRIPTOR structure

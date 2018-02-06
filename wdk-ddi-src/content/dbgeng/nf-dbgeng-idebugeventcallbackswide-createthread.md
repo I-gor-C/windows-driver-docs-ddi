@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugEventCallbacksWide.CreateThread
-title : IDebugEventCallbacksWide::CreateThread method
-author : windows-driver-content
-description : The CreateThread callback method is called by the engine when a create-threaddebugging event occurs in the target.
-old-location : debugger\idebugeventcallbackswide_createthread.htm
-old-project : debugger
-ms.assetid : d845777c-1bc9-4ab3-9bfc-211f2231971e
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugEventCallbacksWide interface [Windows Debugging], CreateThread method, IDebugEventCallbacksWide, CreateThread, debugger.idebugeventcallbackswide_createthread, CreateThread method [Windows Debugging], IDebugEventCallbacksWide interface, CreateThread method [Windows Debugging], dbgeng/IDebugEventCallbacksWide::CreateThread, IDebugEventCallbacksWide::CreateThread
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugEventCallbacksWide.CreateThread
+title: IDebugEventCallbacksWide::CreateThread method
+author: windows-driver-content
+description: The CreateThread callback method is called by the engine when a create-threaddebugging event occurs in the target.
+old-location: debugger\idebugeventcallbackswide_createthread.htm
+old-project: debugger
+ms.assetid: d845777c-1bc9-4ab3-9bfc-211f2231971e
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugEventCallbacksWide interface [Windows Debugging], CreateThread method, IDebugEventCallbacksWide, CreateThread, debugger.idebugeventcallbackswide_createthread, CreateThread method [Windows Debugging], IDebugEventCallbacksWide interface, CreateThread method [Windows Debugging], dbgeng/IDebugEventCallbacksWide::CreateThread, IDebugEventCallbacksWide::CreateThread
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugEventCallbacksWide.CreateThread
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

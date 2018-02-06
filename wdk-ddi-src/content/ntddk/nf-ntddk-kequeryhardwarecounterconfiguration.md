@@ -1,41 +1,46 @@
 ---
-UID : NF:ntddk.KeQueryHardwareCounterConfiguration
-title : KeQueryHardwareCounterConfiguration function
-author : windows-driver-content
-description : The KeQueryHardwareCounterConfiguration routine queries the operating system for the list of hardware counters to use for thread profiling.
-old-location : kernel\kequeryhardwarecounterconfiguration.htm
-old-project : kernel
-ms.assetid : 5ac33177-38fc-4027-95c9-c2cf9ccdaa52
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : k105_442c5acf-84a3-4078-b401-ca8cb8069c6e.xml, KeQueryHardwareCounterConfiguration, KeQueryHardwareCounterConfiguration routine [Kernel-Mode Driver Architecture], ntddk/KeQueryHardwareCounterConfiguration, kernel.kequeryhardwarecounterconfiguration
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 7 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.KeQueryHardwareCounterConfiguration
+title: KeQueryHardwareCounterConfiguration function
+author: windows-driver-content
+description: The KeQueryHardwareCounterConfiguration routine queries the operating system for the list of hardware counters to use for thread profiling.
+old-location: kernel\kequeryhardwarecounterconfiguration.htm
+old-project: kernel
+ms.assetid: 5ac33177-38fc-4027-95c9-c2cf9ccdaa52
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: k105_442c5acf-84a3-4078-b401-ca8cb8069c6e.xml, KeQueryHardwareCounterConfiguration, KeQueryHardwareCounterConfiguration routine [Kernel-Mode Driver Architecture], ntddk/KeQueryHardwareCounterConfiguration, kernel.kequeryhardwarecounterconfiguration
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 7 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	KeQueryHardwareCounterConfiguration
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

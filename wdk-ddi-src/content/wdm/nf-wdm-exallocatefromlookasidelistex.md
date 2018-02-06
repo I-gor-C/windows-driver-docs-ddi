@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.ExAllocateFromLookasideListEx
-title : ExAllocateFromLookasideListEx function
-author : windows-driver-content
-description : The ExAllocateFromLookasideListEx routine removes the first entry from the specified lookaside list, or, if the list is empty, dynamically allocates the storage for a new entry.
-old-location : kernel\exallocatefromlookasidelistex.htm
-old-project : kernel
-ms.assetid : 70782045-7026-4771-8072-9057fc31a642
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/ExAllocateFromLookasideListEx, k102_d3c72529-8c0d-48bf-8b5f-dc19d801bf8f.xml, ExAllocateFromLookasideListEx, ExAllocateFromLookasideListEx routine [Kernel-Mode Driver Architecture], kernel.exallocatefromlookasidelistex
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ExAllocateFromLookasideListEx
+title: ExAllocateFromLookasideListEx function
+author: windows-driver-content
+description: The ExAllocateFromLookasideListEx routine removes the first entry from the specified lookaside list, or, if the list is empty, dynamically allocates the storage for a new entry.
+old-location: kernel\exallocatefromlookasidelistex.htm
+old-project: kernel
+ms.assetid: 70782045-7026-4771-8072-9057fc31a642
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/ExAllocateFromLookasideListEx, k102_d3c72529-8c0d-48bf-8b5f-dc19d801bf8f.xml, ExAllocateFromLookasideListEx, ExAllocateFromLookasideListEx routine [Kernel-Mode Driver Architecture], kernel.exallocatefromlookasidelistex
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ExAllocateFromLookasideListEx
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

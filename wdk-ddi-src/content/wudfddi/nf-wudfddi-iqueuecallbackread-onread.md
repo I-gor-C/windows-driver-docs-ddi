@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IQueueCallbackRead.OnRead
-title : IQueueCallbackRead::OnRead method
-author : windows-driver-content
-description : The OnRead method is called to handle a read request when an application reads information from a device through the Microsoft Win32 ReadFile or ReadFileEx function.
-old-location : wdf\iqueuecallbackread_onread.htm
-old-project : wdf
-ms.assetid : e11a823d-0b08-42fd-b093-4c464c152afe
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : OnRead method, IQueueCallbackRead interface, IQueueCallbackRead, wudfddi/IQueueCallbackRead::OnRead, IQueueCallbackRead::OnRead, UMDFQueueObjectRef_56f5bb6c-4b65-4ab9-961a-278bfc6dbfe9.xml, IQueueCallbackRead interface, OnRead method, OnRead method, umdf.iqueuecallbackread_onread, wdf.iqueuecallbackread_onread, OnRead
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IQueueCallbackRead.OnRead
+title: IQueueCallbackRead::OnRead method
+author: windows-driver-content
+description: The OnRead method is called to handle a read request when an application reads information from a device through the Microsoft Win32 ReadFile or ReadFileEx function.
+old-location: wdf\iqueuecallbackread_onread.htm
+old-project: wdf
+ms.assetid: e11a823d-0b08-42fd-b093-4c464c152afe
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: OnRead method, IQueueCallbackRead interface, IQueueCallbackRead, wudfddi/IQueueCallbackRead::OnRead, IQueueCallbackRead::OnRead, UMDFQueueObjectRef_56f5bb6c-4b65-4ab9-961a-278bfc6dbfe9.xml, IQueueCallbackRead interface, OnRead method, OnRead method, umdf.iqueuecallbackread_onread, wdf.iqueuecallbackread_onread, OnRead
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Wudfddi.h
+apiname:
+-	IQueueCallbackRead.OnRead
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

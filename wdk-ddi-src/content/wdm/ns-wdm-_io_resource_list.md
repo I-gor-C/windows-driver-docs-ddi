@@ -1,42 +1,47 @@
 ---
-UID : NS:wdm._IO_RESOURCE_LIST
-title : "_IO_RESOURCE_LIST"
-author : windows-driver-content
-description : The IO_RESOURCE_LIST structure describes a range of raw hardware resources, of various types, that can be used by a device.
-old-location : kernel\io_resource_list.htm
-old-project : kernel
-ms.assetid : d8c29339-274e-410a-893d-328703d902c3
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : IO_RESOURCE_LIST structure [Kernel-Mode Driver Architecture], *PIO_RESOURCE_LIST, PIO_RESOURCE_LIST, wdm/PIO_RESOURCE_LIST, kernel.io_resource_list, PIO_RESOURCE_LIST structure pointer [Kernel-Mode Driver Architecture], IO_RESOURCE_LIST, _IO_RESOURCE_LIST, wdm/IO_RESOURCE_LIST, kstruct_b_2e2d049f-a7c9-4051-8fa7-639bf03b5aae.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : IO_RESOURCE_LIST, *PIO_RESOURCE_LIST
-req.product : Windows 10 or later.
+UID: NS:wdm._IO_RESOURCE_LIST
+title: "_IO_RESOURCE_LIST"
+author: windows-driver-content
+description: The IO_RESOURCE_LIST structure describes a range of raw hardware resources, of various types, that can be used by a device.
+old-location: kernel\io_resource_list.htm
+old-project: kernel
+ms.assetid: d8c29339-274e-410a-893d-328703d902c3
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: IO_RESOURCE_LIST structure [Kernel-Mode Driver Architecture], *PIO_RESOURCE_LIST, PIO_RESOURCE_LIST, wdm/PIO_RESOURCE_LIST, kernel.io_resource_list, PIO_RESOURCE_LIST structure pointer [Kernel-Mode Driver Architecture], IO_RESOURCE_LIST, _IO_RESOURCE_LIST, wdm/IO_RESOURCE_LIST, kstruct_b_2e2d049f-a7c9-4051-8fa7-639bf03b5aae.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	IO_RESOURCE_LIST
+product: Windows
+targetos: Windows
+req.typenames: IO_RESOURCE_LIST, *PIO_RESOURCE_LIST
+req.product: Windows 10 or later.
 ---
 
 # _IO_RESOURCE_LIST structure

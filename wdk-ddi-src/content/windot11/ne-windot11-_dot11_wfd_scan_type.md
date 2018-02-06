@@ -1,42 +1,47 @@
 ---
-UID : NE:windot11._DOT11_WFD_SCAN_TYPE
-title : "_DOT11_WFD_SCAN_TYPE"
-author : windows-driver-content
-description : The DOT11_WFD_SCAN_TYPE enumeration indicates the type of scan used during the scan phase of device discovery.
-old-location : netvista\dot11_wfd_scan_type.htm
-old-project : netvista
-ms.assetid : E7F76E93-79B8-48AE-A1D1-E3215E2402F8
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : windot11/DOT11_WFD_SCAN_TYPE, *PDOT11_WFD_SCAN_TYPE, DOT11_WFD_SCAN_TYPE enumeration [Network Drivers Starting with Windows Vista], windot11/dot11_wfd_scan_type_auto, windot11/dot11_wfd_scan_type_active, dot11_wfd_scan_type_auto, netvista.dot11_wfd_scan_type, dot11_wfd_scan_type_active, dot11_wfd_scan_type_passive, _DOT11_WFD_SCAN_TYPE, windot11/dot11_wfd_scan_type_passive, DOT11_WFD_SCAN_TYPE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : windot11.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with  Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT11_WFD_SCAN_TYPE, *PDOT11_WFD_SCAN_TYPE
-req.product : Windows 10 or later.
+UID: NE:windot11._DOT11_WFD_SCAN_TYPE
+title: "_DOT11_WFD_SCAN_TYPE"
+author: windows-driver-content
+description: The DOT11_WFD_SCAN_TYPE enumeration indicates the type of scan used during the scan phase of device discovery.
+old-location: netvista\dot11_wfd_scan_type.htm
+old-project: netvista
+ms.assetid: E7F76E93-79B8-48AE-A1D1-E3215E2402F8
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: windot11/DOT11_WFD_SCAN_TYPE, *PDOT11_WFD_SCAN_TYPE, DOT11_WFD_SCAN_TYPE enumeration [Network Drivers Starting with Windows Vista], windot11/dot11_wfd_scan_type_auto, windot11/dot11_wfd_scan_type_active, dot11_wfd_scan_type_auto, netvista.dot11_wfd_scan_type, dot11_wfd_scan_type_active, dot11_wfd_scan_type_passive, _DOT11_WFD_SCAN_TYPE, windot11/dot11_wfd_scan_type_passive, DOT11_WFD_SCAN_TYPE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: windot11.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with  Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Windot11.h
+apiname:
+-	DOT11_WFD_SCAN_TYPE
+product: Windows
+targetos: Windows
+req.typenames: DOT11_WFD_SCAN_TYPE, *PDOT11_WFD_SCAN_TYPE
+req.product: Windows 10 or later.
 ---
 
 # _DOT11_WFD_SCAN_TYPE Enumeration
@@ -54,26 +59,26 @@ typedef enum _DOT11_WFD_SCAN_TYPE {
 ## Constants
 
 <table>
-
-<tr>
-<td>dot11_wfd_scan_type_active</td>
-<td>Use active scanning for device discovery.</td>
-</tr>
-
-<tr>
-<td>dot11_wfd_scan_type_auto</td>
-<td>Driver selected scanning is used.</td>
-</tr>
-
-<tr>
-<td>dot11_wfd_scan_type_passive</td>
-<td>Use passive scanning during device discovery.</td>
-</tr>
+            
+                <tr>
+                    <td>dot11_wfd_scan_type_active</td>
+                    <td>Use active scanning for device discovery.</td>
+                </tr>
+            
+                <tr>
+                    <td>dot11_wfd_scan_type_auto</td>
+                    <td>Driver selected scanning is used.</td>
+                </tr>
+            
+                <tr>
+                    <td>dot11_wfd_scan_type_passive</td>
+                    <td>Use passive scanning during device discovery.</td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-The system will set only one scan type at a time. The driver should use this setting to determine how it scans during device discovery.
+        The system will set only one scan type at a time. The driver should use this setting to determine how it scans during device discovery.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -81,9 +86,9 @@ The system will set only one scan type at a time. The driver should use this set
 | **Windows version** | Supported starting with  Windows 8. Supported starting with  Windows 8. |
 | **Header** | windot11.h |
 
-## See Also
+    ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451795">OID_DOT11_WFD_DISCOVER_REQUEST</a>
+        <a href="https://msdn.microsoft.com/library/windows/hardware/hh451795">OID_DOT11_WFD_DISCOVER_REQUEST</a>
 
 <a href="..\windot11\ns-windot11-_dot11_wfd_discover_request.md">DOT11_WFD_DISCOVER_REQUEST</a>
 

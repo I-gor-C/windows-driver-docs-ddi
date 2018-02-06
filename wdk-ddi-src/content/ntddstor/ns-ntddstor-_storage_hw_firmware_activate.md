@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddstor._STORAGE_HW_FIRMWARE_ACTIVATE
-title : "_STORAGE_HW_FIRMWARE_ACTIVATE"
-author : windows-driver-content
-description : This structure contains information about the downloaded firmware to activate.
-old-location : storage\storage_hw_firmware_activate.htm
-old-project : storage
-ms.assetid : FCE1DE7B-CDFE-4533-90E7-A400EC236007
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : PSTORAGE_HW_FIRMWARE_ACTIVATE structure pointer [Storage Devices], PSTORAGE_HW_FIRMWARE_ACTIVATE, STORAGE_HW_FIRMWARE_ACTIVATE structure [Storage Devices], _STORAGE_HW_FIRMWARE_ACTIVATE, ntddstor/STORAGE_HW_FIRMWARE_ACTIVATE, STORAGE_HW_FIRMWARE_ACTIVATE, storage.storage_hw_firmware_activate, ntddstor/PSTORAGE_HW_FIRMWARE_ACTIVATE, *PSTORAGE_HW_FIRMWARE_ACTIVATE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddstor.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STORAGE_HW_FIRMWARE_ACTIVATE, *PSTORAGE_HW_FIRMWARE_ACTIVATE
+UID: NS:ntddstor._STORAGE_HW_FIRMWARE_ACTIVATE
+title: "_STORAGE_HW_FIRMWARE_ACTIVATE"
+author: windows-driver-content
+description: This structure contains information about the downloaded firmware to activate.
+old-location: storage\storage_hw_firmware_activate.htm
+old-project: storage
+ms.assetid: FCE1DE7B-CDFE-4533-90E7-A400EC236007
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: PSTORAGE_HW_FIRMWARE_ACTIVATE structure pointer [Storage Devices], PSTORAGE_HW_FIRMWARE_ACTIVATE, STORAGE_HW_FIRMWARE_ACTIVATE structure [Storage Devices], _STORAGE_HW_FIRMWARE_ACTIVATE, ntddstor/STORAGE_HW_FIRMWARE_ACTIVATE, STORAGE_HW_FIRMWARE_ACTIVATE, storage.storage_hw_firmware_activate, ntddstor/PSTORAGE_HW_FIRMWARE_ACTIVATE, *PSTORAGE_HW_FIRMWARE_ACTIVATE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddstor.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddstor.h
+apiname:
+-	STORAGE_HW_FIRMWARE_ACTIVATE
+product: Windows
+targetos: Windows
+req.typenames: STORAGE_HW_FIRMWARE_ACTIVATE, *PSTORAGE_HW_FIRMWARE_ACTIVATE
 ---
 
 # _STORAGE_HW_FIRMWARE_ACTIVATE structure

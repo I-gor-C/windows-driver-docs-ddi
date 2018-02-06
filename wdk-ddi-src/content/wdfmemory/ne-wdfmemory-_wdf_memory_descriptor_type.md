@@ -1,42 +1,47 @@
 ---
-UID : NE:wdfmemory._WDF_MEMORY_DESCRIPTOR_TYPE
-title : "_WDF_MEMORY_DESCRIPTOR_TYPE"
-author : windows-driver-content
-description : The WDF_MEMORY_DESCRIPTOR_TYPE enumeration identifies the types of memory descriptions that a WDF_MEMORY_DESCRIPTOR structure can specify.
-old-location : wdf\wdf_memory_descriptor_type.htm
-old-project : wdf
-ms.assetid : ab364ad8-1b04-4ad0-a036-9b1c41e16604
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdfmemory/WdfMemoryDescriptorTypeBuffer, wdfmemory/WdfMemoryDescriptorTypeHandle, WDF_MEMORY_DESCRIPTOR_TYPE, wdfmemory/WdfMemoryDescriptorTypeMdl, wdfmemory/WdfMemoryDescriptorTypeInvalid, kmdf.wdf_memory_descriptor_type, wdf.wdf_memory_descriptor_type, WdfMemoryDescriptorTypeBuffer, WdfMemoryDescriptorTypeHandle, wdfmemory/WDF_MEMORY_DESCRIPTOR_TYPE, WdfMemoryDescriptorTypeInvalid, _WDF_MEMORY_DESCRIPTOR_TYPE, DFMemoryObjectRef_3817f18e-3d20-43d6-b6f0-584c1533fe9a.xml, WDF_MEMORY_DESCRIPTOR_TYPE enumeration, WdfMemoryDescriptorTypeMdl
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : wdfmemory.h
-req.include-header : Wdf.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_MEMORY_DESCRIPTOR_TYPE
-req.product : Windows 10 or later.
+UID: NE:wdfmemory._WDF_MEMORY_DESCRIPTOR_TYPE
+title: "_WDF_MEMORY_DESCRIPTOR_TYPE"
+author: windows-driver-content
+description: The WDF_MEMORY_DESCRIPTOR_TYPE enumeration identifies the types of memory descriptions that a WDF_MEMORY_DESCRIPTOR structure can specify.
+old-location: wdf\wdf_memory_descriptor_type.htm
+old-project: wdf
+ms.assetid: ab364ad8-1b04-4ad0-a036-9b1c41e16604
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdfmemory/WdfMemoryDescriptorTypeBuffer, wdfmemory/WdfMemoryDescriptorTypeHandle, WDF_MEMORY_DESCRIPTOR_TYPE, wdfmemory/WdfMemoryDescriptorTypeMdl, wdfmemory/WdfMemoryDescriptorTypeInvalid, kmdf.wdf_memory_descriptor_type, wdf.wdf_memory_descriptor_type, WdfMemoryDescriptorTypeBuffer, WdfMemoryDescriptorTypeHandle, wdfmemory/WDF_MEMORY_DESCRIPTOR_TYPE, WdfMemoryDescriptorTypeInvalid, _WDF_MEMORY_DESCRIPTOR_TYPE, DFMemoryObjectRef_3817f18e-3d20-43d6-b6f0-584c1533fe9a.xml, WDF_MEMORY_DESCRIPTOR_TYPE enumeration, WdfMemoryDescriptorTypeMdl
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: wdfmemory.h
+req.include-header: Wdf.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfmemory.h
+apiname:
+-	WDF_MEMORY_DESCRIPTOR_TYPE
+product: Windows
+targetos: Windows
+req.typenames: WDF_MEMORY_DESCRIPTOR_TYPE
+req.product: Windows 10 or later.
 ---
 
 # _WDF_MEMORY_DESCRIPTOR_TYPE Enumeration
@@ -57,26 +62,26 @@ typedef enum _WDF_MEMORY_DESCRIPTOR_TYPE {
 ## Constants
 
 <table>
-
-<tr>
-<td>WdfMemoryDescriptorTypeBuffer</td>
-<td>The <a href="..\wdfmemory\ns-wdfmemory-_wdf_memory_descriptor.md">WDF_MEMORY_DESCRIPTOR</a> structure contains a buffer description.</td>
-</tr>
-
-<tr>
-<td>WdfMemoryDescriptorTypeHandle</td>
-<td>The <a href="..\wdfmemory\ns-wdfmemory-_wdf_memory_descriptor.md">WDF_MEMORY_DESCRIPTOR</a> structure contains a handle to a memory object.</td>
-</tr>
-
-<tr>
-<td>WdfMemoryDescriptorTypeInvalid</td>
-<td>Reserved for internal use only.</td>
-</tr>
-
-<tr>
-<td>WdfMemoryDescriptorTypeMdl</td>
-<td>The <a href="..\wdfmemory\ns-wdfmemory-_wdf_memory_descriptor.md">WDF_MEMORY_DESCRIPTOR</a> structure contains a memory descriptor list (MDL).</td>
-</tr>
+            
+                <tr>
+                    <td>WdfMemoryDescriptorTypeBuffer</td>
+                    <td>The <a href="..\wdfmemory\ns-wdfmemory-_wdf_memory_descriptor.md">WDF_MEMORY_DESCRIPTOR</a> structure contains a buffer description.</td>
+                </tr>
+            
+                <tr>
+                    <td>WdfMemoryDescriptorTypeHandle</td>
+                    <td>The <a href="..\wdfmemory\ns-wdfmemory-_wdf_memory_descriptor.md">WDF_MEMORY_DESCRIPTOR</a> structure contains a handle to a memory object.</td>
+                </tr>
+            
+                <tr>
+                    <td>WdfMemoryDescriptorTypeInvalid</td>
+                    <td>Reserved for internal use only.</td>
+                </tr>
+            
+                <tr>
+                    <td>WdfMemoryDescriptorTypeMdl</td>
+                    <td>The <a href="..\wdfmemory\ns-wdfmemory-_wdf_memory_descriptor.md">WDF_MEMORY_DESCRIPTOR</a> structure contains a memory descriptor list (MDL).</td>
+                </tr>
 </table>
 
 
@@ -87,9 +92,9 @@ typedef enum _WDF_MEMORY_DESCRIPTOR_TYPE {
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfmemory.h (include Wdf.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\wdfmemory\ns-wdfmemory-_wdf_memory_descriptor.md">WDF_MEMORY_DESCRIPTOR</a>
+        <a href="..\wdfmemory\ns-wdfmemory-_wdf_memory_descriptor.md">WDF_MEMORY_DESCRIPTOR</a>
 
  
 

@@ -1,42 +1,47 @@
 ---
-UID : NS:wdm._REG_QUERY_KEY_SECURITY_INFORMATION
-title : "_REG_QUERY_KEY_SECURITY_INFORMATION"
-author : windows-driver-content
-description : The REG_QUERY_KEY_SECURITY_INFORMATION structure receives security information for a registry key object.
-old-location : kernel\reg_query_key_security_information.htm
-old-project : kernel
-ms.assetid : 8bfe793d-c902-4459-98eb-e134759efc48
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : REG_QUERY_KEY_SECURITY_INFORMATION, kernel.reg_query_key_security_information, *PREG_QUERY_KEY_SECURITY_INFORMATION, kstruct_d_952b1831-9ce9-4f9e-8669-02480c0ad3a0.xml, _REG_QUERY_KEY_SECURITY_INFORMATION, REG_QUERY_KEY_SECURITY_INFORMATION structure [Kernel-Mode Driver Architecture], PREG_QUERY_KEY_SECURITY_INFORMATION structure pointer [Kernel-Mode Driver Architecture], PREG_QUERY_KEY_SECURITY_INFORMATION, wdm/PREG_QUERY_KEY_SECURITY_INFORMATION, wdm/REG_QUERY_KEY_SECURITY_INFORMATION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : Available on Windows Vista and later versions of the Windows operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : REG_QUERY_KEY_SECURITY_INFORMATION, *PREG_QUERY_KEY_SECURITY_INFORMATION
-req.product : Windows 10 or later.
+UID: NS:wdm._REG_QUERY_KEY_SECURITY_INFORMATION
+title: "_REG_QUERY_KEY_SECURITY_INFORMATION"
+author: windows-driver-content
+description: The REG_QUERY_KEY_SECURITY_INFORMATION structure receives security information for a registry key object.
+old-location: kernel\reg_query_key_security_information.htm
+old-project: kernel
+ms.assetid: 8bfe793d-c902-4459-98eb-e134759efc48
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: REG_QUERY_KEY_SECURITY_INFORMATION, kernel.reg_query_key_security_information, *PREG_QUERY_KEY_SECURITY_INFORMATION, kstruct_d_952b1831-9ce9-4f9e-8669-02480c0ad3a0.xml, _REG_QUERY_KEY_SECURITY_INFORMATION, REG_QUERY_KEY_SECURITY_INFORMATION structure [Kernel-Mode Driver Architecture], PREG_QUERY_KEY_SECURITY_INFORMATION structure pointer [Kernel-Mode Driver Architecture], PREG_QUERY_KEY_SECURITY_INFORMATION, wdm/PREG_QUERY_KEY_SECURITY_INFORMATION, wdm/REG_QUERY_KEY_SECURITY_INFORMATION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: Available on Windows Vista and later versions of the Windows operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdm.h
+apiname:
+-	REG_QUERY_KEY_SECURITY_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: REG_QUERY_KEY_SECURITY_INFORMATION, *PREG_QUERY_KEY_SECURITY_INFORMATION
+req.product: Windows 10 or later.
 ---
 
 # _REG_QUERY_KEY_SECURITY_INFORMATION structure

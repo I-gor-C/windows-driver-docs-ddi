@@ -1,42 +1,48 @@
 ---
-UID : NF:strmini.StreamClassGetDmaBuffer
-title : StreamClassGetDmaBuffer function
-author : windows-driver-content
-description : The StreamClassGetDmaBuffer routine returns a pointer to the DMA buffer that the class driver allocates for the minidriver.
-old-location : stream\streamclassgetdmabuffer.htm
-old-project : stream
-ms.assetid : 1b778d94-55e6-4a5f-aa77-739bcf9a8041
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : strclass-routines_d010423c-9c48-4dee-8ca3-f4b2854d14c9.xml, strmini/StreamClassGetDmaBuffer, stream.streamclassgetdmabuffer, StreamClassGetDmaBuffer, StreamClassGetDmaBuffer routine [Streaming Media Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : strmini.h
-req.include-header : Strmini.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Stream.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSTREAM_PRIORITY, STREAM_PRIORITY"
-req.product : Windows 10 or later.
+UID: NF:strmini.StreamClassGetDmaBuffer
+title: StreamClassGetDmaBuffer function
+author: windows-driver-content
+description: The StreamClassGetDmaBuffer routine returns a pointer to the DMA buffer that the class driver allocates for the minidriver.
+old-location: stream\streamclassgetdmabuffer.htm
+old-project: stream
+ms.assetid: 1b778d94-55e6-4a5f-aa77-739bcf9a8041
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: strclass-routines_d010423c-9c48-4dee-8ca3-f4b2854d14c9.xml, strmini/StreamClassGetDmaBuffer, stream.streamclassgetdmabuffer, StreamClassGetDmaBuffer, StreamClassGetDmaBuffer routine [Streaming Media Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: strmini.h
+req.include-header: Strmini.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Stream.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Stream.lib
+-	Stream.dll
+apiname:
+-	StreamClassGetDmaBuffer
+product: Windows
+targetos: Windows
+req.typenames: "*PSTREAM_PRIORITY, STREAM_PRIORITY"
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,42 +1,50 @@
 ---
-UID : NF:wdfmemory.WdfMemoryAssignBuffer
-title : WdfMemoryAssignBuffer function
-author : windows-driver-content
-description : The WdfMemoryAssignBuffer method assigns a specified buffer to a memory object that a driver created by calling WdfMemoryCreatePreallocated.
-old-location : wdf\wdfmemoryassignbuffer.htm
-old-project : wdf
-ms.assetid : f57fe6ac-87ad-4db8-a715-816885b87d68
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : kmdf.wdfmemoryassignbuffer, WdfMemoryAssignBuffer method, wdf.wdfmemoryassignbuffer, DFMemoryObjectRef_c2bf3437-5c1e-44d6-97ab-6ede16f7bc53.xml, WdfMemoryAssignBuffer, PFN_WDFMEMORYASSIGNBUFFER, wdfmemory/WdfMemoryAssignBuffer
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfmemory.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : BufAfterReqCompletedIntIoctlA, BufAfterReqCompletedIoctlA, BufAfterReqCompletedReadA, BufAfterReqCompletedWriteA, DriverCreate, MemAfterReqCompletedIntIoctlA, MemAfterReqCompletedIoctlA, MemAfterReqCompletedReadA, MemAfterReqCompletedWriteA
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_MEMORY_DESCRIPTOR_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfmemory.WdfMemoryAssignBuffer
+title: WdfMemoryAssignBuffer function
+author: windows-driver-content
+description: The WdfMemoryAssignBuffer method assigns a specified buffer to a memory object that a driver created by calling WdfMemoryCreatePreallocated.
+old-location: wdf\wdfmemoryassignbuffer.htm
+old-project: wdf
+ms.assetid: f57fe6ac-87ad-4db8-a715-816885b87d68
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: kmdf.wdfmemoryassignbuffer, WdfMemoryAssignBuffer method, wdf.wdfmemoryassignbuffer, DFMemoryObjectRef_c2bf3437-5c1e-44d6-97ab-6ede16f7bc53.xml, WdfMemoryAssignBuffer, PFN_WDFMEMORYASSIGNBUFFER, wdfmemory/WdfMemoryAssignBuffer
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfmemory.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: BufAfterReqCompletedIntIoctlA, BufAfterReqCompletedIoctlA, BufAfterReqCompletedReadA, BufAfterReqCompletedWriteA, DriverCreate, MemAfterReqCompletedIntIoctlA, MemAfterReqCompletedIoctlA, MemAfterReqCompletedReadA, MemAfterReqCompletedWriteA
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+-	WUDFx02000.dll
+-	WUDFx02000.dll.dll
+apiname:
+-	WdfMemoryAssignBuffer
+product: Windows
+targetos: Windows
+req.typenames: WDF_MEMORY_DESCRIPTOR_TYPE
+req.product: Windows 10 or later.
 ---
 
 

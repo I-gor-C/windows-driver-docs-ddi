@@ -1,42 +1,47 @@
 ---
-UID : NS:wsk._WSK_TDI_MAP_INFO
-title : "_WSK_TDI_MAP_INFO"
-author : windows-driver-content
-description : The WSK_TDI_MAP_INFO structure specifies a list that contains mappings of a combination of an address family, a socket type, and a protocol to the device name of a TDI transport.
-old-location : netvista\wsk_tdi_map_info.htm
-old-project : netvista
-ms.assetid : b0b4fab4-1a3c-4075-8881-f2aa38fba15e
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : wsk/WSK_TDI_MAP_INFO, PWSK_TDI_MAP_INFO structure pointer [Network Drivers Starting with Windows Vista], WSK_TDI_MAP_INFO structure [Network Drivers Starting with Windows Vista], netvista.wsk_tdi_map_info, PWSK_TDI_MAP_INFO, _WSK_TDI_MAP_INFO, *PWSK_TDI_MAP_INFO, wskref_27c8b9f2-49b9-4358-aeac-be81e5aeb297.xml, WSK_TDI_MAP_INFO, wsk/PWSK_TDI_MAP_INFO
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wsk.h
-req.include-header : Wsk.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating   systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WSK_TDI_MAP_INFO, *PWSK_TDI_MAP_INFO
-req.product : Windows 10 or later.
+UID: NS:wsk._WSK_TDI_MAP_INFO
+title: "_WSK_TDI_MAP_INFO"
+author: windows-driver-content
+description: The WSK_TDI_MAP_INFO structure specifies a list that contains mappings of a combination of an address family, a socket type, and a protocol to the device name of a TDI transport.
+old-location: netvista\wsk_tdi_map_info.htm
+old-project: netvista
+ms.assetid: b0b4fab4-1a3c-4075-8881-f2aa38fba15e
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: wsk/WSK_TDI_MAP_INFO, PWSK_TDI_MAP_INFO structure pointer [Network Drivers Starting with Windows Vista], WSK_TDI_MAP_INFO structure [Network Drivers Starting with Windows Vista], netvista.wsk_tdi_map_info, PWSK_TDI_MAP_INFO, _WSK_TDI_MAP_INFO, *PWSK_TDI_MAP_INFO, wskref_27c8b9f2-49b9-4358-aeac-be81e5aeb297.xml, WSK_TDI_MAP_INFO, wsk/PWSK_TDI_MAP_INFO
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wsk.h
+req.include-header: Wsk.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wsk.h
+apiname:
+-	WSK_TDI_MAP_INFO
+product: Windows
+targetos: Windows
+req.typenames: WSK_TDI_MAP_INFO, *PWSK_TDI_MAP_INFO
+req.product: Windows 10 or later.
 ---
 
 # _WSK_TDI_MAP_INFO structure

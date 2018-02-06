@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltQueryEaFile
-title : FltQueryEaFile function
-author : windows-driver-content
-description : FltQueryEaFile returns information about extended-attribute (EA) values for a file.
-old-location : ifsk\fltqueryeafile.htm
-old-project : ifsk
-ms.assetid : 3981ab65-2d21-4188-88dc-04eb7aff0869
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltQueryEaFile, FltQueryEaFile function [Installable File System Drivers], fltkernel/FltQueryEaFile, ifsk.fltqueryeafile, FltApiRef_p_to_z_cfb86d4e-84c0-4ab7-a813-094420e437cc.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Microsoft Windows 2000 Update Rollup 1 for SP4, Windows XP SP3, Windows Server 2003 SP1, and later versions of the Windows operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltQueryEaFile
+title: FltQueryEaFile function
+author: windows-driver-content
+description: FltQueryEaFile returns information about extended-attribute (EA) values for a file.
+old-location: ifsk\fltqueryeafile.htm
+old-project: ifsk
+ms.assetid: 3981ab65-2d21-4188-88dc-04eb7aff0869
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltQueryEaFile, FltQueryEaFile function [Installable File System Drivers], fltkernel/FltQueryEaFile, ifsk.fltqueryeafile, FltApiRef_p_to_z_cfb86d4e-84c0-4ab7-a813-094420e437cc.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Microsoft Windows 2000 Update Rollup 1 for SP4, Windows XP SP3, Windows Server 2003 SP1, and later versions of the Windows operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltQueryEaFile
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

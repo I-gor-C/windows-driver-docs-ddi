@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFIoRequest.CompleteWithInformation
-title : IWDFIoRequest::CompleteWithInformation method
-author : windows-driver-content
-description : The CompleteWithInformation method completes a request with the supplied information.
-old-location : wdf\iwdfiorequest_completewithinformation.htm
-old-project : wdf
-ms.assetid : 43089473-3255-4016-8d51-f5ad4261bd8d
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : umdf.iwdfiorequest_completewithinformation, CompleteWithInformation method, CompleteWithInformation method, IWDFIoRequest interface, IWDFIoRequest interface, CompleteWithInformation method, wdf.iwdfiorequest_completewithinformation, IWDFIoRequest::CompleteWithInformation, wudfddi/IWDFIoRequest::CompleteWithInformation, CompleteWithInformation, UMDFRequestObjectRef_c01f0d7b-3b4d-442c-8425-a99c064609ee.xml, IWDFIoRequest
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.5
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFIoRequest.CompleteWithInformation
+title: IWDFIoRequest::CompleteWithInformation method
+author: windows-driver-content
+description: The CompleteWithInformation method completes a request with the supplied information.
+old-location: wdf\iwdfiorequest_completewithinformation.htm
+old-project: wdf
+ms.assetid: 43089473-3255-4016-8d51-f5ad4261bd8d
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: umdf.iwdfiorequest_completewithinformation, CompleteWithInformation method, CompleteWithInformation method, IWDFIoRequest interface, IWDFIoRequest interface, CompleteWithInformation method, wdf.iwdfiorequest_completewithinformation, IWDFIoRequest::CompleteWithInformation, wudfddi/IWDFIoRequest::CompleteWithInformation, CompleteWithInformation, UMDFRequestObjectRef_c01f0d7b-3b4d-442c-8425-a99c064609ee.xml, IWDFIoRequest
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.5
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFIoRequest.CompleteWithInformation
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

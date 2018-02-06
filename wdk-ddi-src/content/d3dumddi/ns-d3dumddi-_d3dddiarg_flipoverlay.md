@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._D3DDDIARG_FLIPOVERLAY
-title : "_D3DDDIARG_FLIPOVERLAY"
-author : windows-driver-content
-description : The D3DDDIARG_FLIPOVERLAY structure describes a new resource to display on a given overlay.
-old-location : display\d3dddiarg_flipoverlay.htm
-old-project : display
-ms.assetid : 36ea4547-e9a0-49c9-8b45-903a2de60923
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DDDIARG_FLIPOVERLAY structure [Display Devices], D3DDDIARG_FLIPOVERLAY, display.d3dddiarg_flipoverlay, _D3DDDIARG_FLIPOVERLAY, UMDisplayDriver_param_Structs_078e5dd1-bbd8-4067-85a7-2474d18b1d40.xml, d3dumddi/D3DDDIARG_FLIPOVERLAY
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDIARG_FLIPOVERLAY
+UID: NS:d3dumddi._D3DDDIARG_FLIPOVERLAY
+title: "_D3DDDIARG_FLIPOVERLAY"
+author: windows-driver-content
+description: The D3DDDIARG_FLIPOVERLAY structure describes a new resource to display on a given overlay.
+old-location: display\d3dddiarg_flipoverlay.htm
+old-project: display
+ms.assetid: 36ea4547-e9a0-49c9-8b45-903a2de60923
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DDDIARG_FLIPOVERLAY structure [Display Devices], D3DDDIARG_FLIPOVERLAY, display.d3dddiarg_flipoverlay, _D3DDDIARG_FLIPOVERLAY, UMDisplayDriver_param_Structs_078e5dd1-bbd8-4067-85a7-2474d18b1d40.xml, d3dumddi/D3DDDIARG_FLIPOVERLAY
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	D3DDDIARG_FLIPOVERLAY
+product: Windows
+targetos: Windows
+req.typenames: D3DDDIARG_FLIPOVERLAY
 ---
 
 # _D3DDDIARG_FLIPOVERLAY structure

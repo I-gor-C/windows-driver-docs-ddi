@@ -1,41 +1,47 @@
 ---
-UID : NF:pepfx.PoFxRegisterCoreDevice
-title : PoFxRegisterCoreDevice function
-author : windows-driver-content
-description : The PoFxRegisterCoreDevice routine registers a new core system resource with the Windows power management framework (PoFx).
-old-location : kernel\pofxregistercoredevice.htm
-old-project : kernel
-ms.assetid : D1564DB7-57D9-44B2-8ED2-1170CA4C22EE
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : PoFxRegisterCoreDevice routine [Kernel-Mode Driver Architecture], kernel.pofxregistercoredevice, pepfx/PoFxRegisterCoreDevice, PoFxRegisterCoreDevice
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : pepfx.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows 10.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ntoskrnl.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PEP_WORK_TYPE, *PPEP_WORK_TYPE
+UID: NF:pepfx.PoFxRegisterCoreDevice
+title: PoFxRegisterCoreDevice function
+author: windows-driver-content
+description: The PoFxRegisterCoreDevice routine registers a new core system resource with the Windows power management framework (PoFx).
+old-location: kernel\pofxregistercoredevice.htm
+old-project: kernel
+ms.assetid: D1564DB7-57D9-44B2-8ED2-1170CA4C22EE
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: PoFxRegisterCoreDevice routine [Kernel-Mode Driver Architecture], kernel.pofxregistercoredevice, pepfx/PoFxRegisterCoreDevice, PoFxRegisterCoreDevice
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: pepfx.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows 10.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ntoskrnl.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ntoskrnl.lib
+-	ntoskrnl.dll
+apiname:
+-	PoFxRegisterCoreDevice
+product: Windows
+targetos: Windows
+req.typenames: PEP_WORK_TYPE, *PPEP_WORK_TYPE
 ---
 
 

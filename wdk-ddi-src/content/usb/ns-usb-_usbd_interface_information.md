@@ -1,42 +1,47 @@
 ---
-UID : NS:usb._USBD_INTERFACE_INFORMATION
-title : "_USBD_INTERFACE_INFORMATION"
-author : windows-driver-content
-description : The USBD_INTERFACE_INFORMATION structure holds information about an interface for a configuration on a USB device.
-old-location : buses\usbd_interface_information.htm
-old-project : usbref
-ms.assetid : dde09937-14fb-423b-8905-8a398a9c5902
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : PUSBD_INTERFACE_INFORMATION structure pointer [Buses], PUSBD_INTERFACE_INFORMATION, _USBD_INTERFACE_INFORMATION, buses.usbd_interface_information, usb/PUSBD_INTERFACE_INFORMATION, usb/USBD_INTERFACE_INFORMATION, usbstrct_1d2a2627-f530-4ccb-8473-0f028ab44acc.xml, *PUSBD_INTERFACE_INFORMATION, USBD_INTERFACE_INFORMATION structure [Buses], USBD_INTERFACE_INFORMATION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : usb.h
-req.include-header : Usb.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : USBD_INTERFACE_INFORMATION, *PUSBD_INTERFACE_INFORMATION
-req.product : Windows 10 or later.
+UID: NS:usb._USBD_INTERFACE_INFORMATION
+title: "_USBD_INTERFACE_INFORMATION"
+author: windows-driver-content
+description: The USBD_INTERFACE_INFORMATION structure holds information about an interface for a configuration on a USB device.
+old-location: buses\usbd_interface_information.htm
+old-project: usbref
+ms.assetid: dde09937-14fb-423b-8905-8a398a9c5902
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: PUSBD_INTERFACE_INFORMATION structure pointer [Buses], PUSBD_INTERFACE_INFORMATION, _USBD_INTERFACE_INFORMATION, buses.usbd_interface_information, usb/PUSBD_INTERFACE_INFORMATION, usb/USBD_INTERFACE_INFORMATION, usbstrct_1d2a2627-f530-4ccb-8473-0f028ab44acc.xml, *PUSBD_INTERFACE_INFORMATION, USBD_INTERFACE_INFORMATION structure [Buses], USBD_INTERFACE_INFORMATION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: usb.h
+req.include-header: Usb.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	usb.h
+apiname:
+-	USBD_INTERFACE_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: USBD_INTERFACE_INFORMATION, *PUSBD_INTERFACE_INFORMATION
+req.product: Windows 10 or later.
 ---
 
 # _USBD_INTERFACE_INFORMATION structure

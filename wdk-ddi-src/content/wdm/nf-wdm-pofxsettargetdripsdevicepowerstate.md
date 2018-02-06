@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.PoFxSetTargetDripsDevicePowerState
-title : PoFxSetTargetDripsDevicePowerState function
-author : windows-driver-content
-description : This routine is called to notify the power manager of the device's target device power state for DRIPS. The driver can override the DRIPS constraint provided by the PEP.
-old-location : kernel\pofxsettargetdripsdevicepowerstate.htm
-old-project : kernel
-ms.assetid : 435c0731-101c-498b-9041-904001be3f2c
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/PoFxSetTargetDripsDevicePowerState, kernel.pofxsettargetdripsdevicepowerstate, PoFxSetTargetDripsDevicePowerState, PoFxSetTargetDripsDevicePowerState function [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10, version 1709
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe (kernel mode)
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.PoFxSetTargetDripsDevicePowerState
+title: PoFxSetTargetDripsDevicePowerState function
+author: windows-driver-content
+description: This routine is called to notify the power manager of the device's target device power state for DRIPS. The driver can override the DRIPS constraint provided by the PEP.
+old-location: kernel\pofxsettargetdripsdevicepowerstate.htm
+old-project: kernel
+ms.assetid: 435c0731-101c-498b-9041-904001be3f2c
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/PoFxSetTargetDripsDevicePowerState, kernel.pofxsettargetdripsdevicepowerstate, PoFxSetTargetDripsDevicePowerState, PoFxSetTargetDripsDevicePowerState function [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10, version 1709
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe (kernel mode)
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	PoFxSetTargetDripsDevicePowerState
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

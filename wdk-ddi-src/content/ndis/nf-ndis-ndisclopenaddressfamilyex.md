@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisClOpenAddressFamilyEx
-title : NdisClOpenAddressFamilyEx function
-author : windows-driver-content
-description : The NdisClOpenAddressFamilyEx function registers an address family (AF) that is associated with a call manager for a connection-oriented client.
-old-location : netvista\ndisclopenaddressfamilyex.htm
-old-project : netvista
-ms.assetid : 54170917-60b4-4d8f-bf92-df7d7dc0faee
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : ndis/NdisClOpenAddressFamilyEx, NdisClOpenAddressFamilyEx function [Network Drivers Starting with Windows Vista], condis_client_ref_6590ccca-3e48-4f83-a7d0-66ce9b6b1eef.xml, netvista.ndisclopenaddressfamilyex, NdisClOpenAddressFamilyEx
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_Protocol_Driver_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisClOpenAddressFamilyEx
+title: NdisClOpenAddressFamilyEx function
+author: windows-driver-content
+description: The NdisClOpenAddressFamilyEx function registers an address family (AF) that is associated with a call manager for a connection-oriented client.
+old-location: netvista\ndisclopenaddressfamilyex.htm
+old-project: netvista
+ms.assetid: 54170917-60b4-4d8f-bf92-df7d7dc0faee
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: ndis/NdisClOpenAddressFamilyEx, NdisClOpenAddressFamilyEx function [Network Drivers Starting with Windows Vista], condis_client_ref_6590ccca-3e48-4f83-a7d0-66ce9b6b1eef.xml, netvista.ndisclopenaddressfamilyex, NdisClOpenAddressFamilyEx
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_Protocol_Driver_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisClOpenAddressFamilyEx
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

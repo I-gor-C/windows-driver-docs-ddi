@@ -1,41 +1,46 @@
 ---
-UID : NS:ndis._NET_BUFFER_LIST
-title : "_NET_BUFFER_LIST"
-author : windows-driver-content
-description : The NET_BUFFER_LIST structure specifies a linked list of NET_BUFFER structures.
-old-location : netvista\net_buffer_list.htm
-old-project : netvista
-ms.assetid : 3b61a424-33f8-4b33-aaef-f68f0026ce27
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : PNET_BUFFER_LIST, _NET_BUFFER_LIST, ndis/NET_BUFFER_LIST, *PNET_BUFFER_LIST, netvista.net_buffer_list, PNET_BUFFER_LIST structure pointer [Network Drivers Starting with Windows Vista], ndis_netbuf_structures_ref_7320b98f-6600-44e4-a6e8-a7d7becaaa32.xml, NET_BUFFER_LIST, ndis/PNET_BUFFER_LIST, NET_BUFFER_LIST structure [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : See Remarks section
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PNET_BUFFER_LIST, NET_BUFFER_LIST"
+UID: NS:ndis._NET_BUFFER_LIST
+title: "_NET_BUFFER_LIST"
+author: windows-driver-content
+description: The NET_BUFFER_LIST structure specifies a linked list of NET_BUFFER structures.
+old-location: netvista\net_buffer_list.htm
+old-project: netvista
+ms.assetid: 3b61a424-33f8-4b33-aaef-f68f0026ce27
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: PNET_BUFFER_LIST, _NET_BUFFER_LIST, ndis/NET_BUFFER_LIST, *PNET_BUFFER_LIST, netvista.net_buffer_list, PNET_BUFFER_LIST structure pointer [Network Drivers Starting with Windows Vista], ndis_netbuf_structures_ref_7320b98f-6600-44e4-a6e8-a7d7becaaa32.xml, NET_BUFFER_LIST, ndis/PNET_BUFFER_LIST, NET_BUFFER_LIST structure [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: See Remarks section
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndis.h
+apiname:
+-	NET_BUFFER_LIST
+product: Windows
+targetos: Windows
+req.typenames: "*PNET_BUFFER_LIST, NET_BUFFER_LIST"
 ---
 
 # _NET_BUFFER_LIST structure

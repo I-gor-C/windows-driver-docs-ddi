@@ -1,41 +1,46 @@
 ---
-UID : NS:hbapiwmi._RemovePersistentEntry_IN
-title : "_RemovePersistentEntry_IN"
-author : windows-driver-content
-description : The RemovePersistentEntry_IN structure is used by a WMI client to deliver input parameter data to the RemovePersistentEntry WMI method.
-old-location : storage\removepersistententry_in.htm
-old-project : storage
-ms.assetid : 7019ee37-2080-4ba3-ba39-977e575ec04e
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : PRemovePersistentEntry_IN, PRemovePersistentEntry_IN structure pointer [Storage Devices], hbapiwmi/PRemovePersistentEntry_IN, RemovePersistentEntry_IN, storage.removepersistententry_in, RemovePersistentEntry_IN structure [Storage Devices], *PRemovePersistentEntry_IN, hbapiwmi/RemovePersistentEntry_IN, structs-Fibre_e5e794c3-e43c-4218-af52-3f2d8a96c256.xml, _RemovePersistentEntry_IN
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : hbapiwmi.h
-req.include-header : Hbapiwmi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PRemovePersistentEntry_IN, RemovePersistentEntry_IN"
+UID: NS:hbapiwmi._RemovePersistentEntry_IN
+title: "_RemovePersistentEntry_IN"
+author: windows-driver-content
+description: The RemovePersistentEntry_IN structure is used by a WMI client to deliver input parameter data to the RemovePersistentEntry WMI method.
+old-location: storage\removepersistententry_in.htm
+old-project: storage
+ms.assetid: 7019ee37-2080-4ba3-ba39-977e575ec04e
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: PRemovePersistentEntry_IN, PRemovePersistentEntry_IN structure pointer [Storage Devices], hbapiwmi/PRemovePersistentEntry_IN, RemovePersistentEntry_IN, storage.removepersistententry_in, RemovePersistentEntry_IN structure [Storage Devices], *PRemovePersistentEntry_IN, hbapiwmi/RemovePersistentEntry_IN, structs-Fibre_e5e794c3-e43c-4218-af52-3f2d8a96c256.xml, _RemovePersistentEntry_IN
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: hbapiwmi.h
+req.include-header: Hbapiwmi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hbapiwmi.h
+apiname:
+-	RemovePersistentEntry_IN
+product: Windows
+targetos: Windows
+req.typenames: "*PRemovePersistentEntry_IN, RemovePersistentEntry_IN"
 ---
 
 # _RemovePersistentEntry_IN structure

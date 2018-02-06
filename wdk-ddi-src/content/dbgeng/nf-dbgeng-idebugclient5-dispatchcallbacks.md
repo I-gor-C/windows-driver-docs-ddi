@@ -1,41 +1,50 @@
 ---
-UID : NF:dbgeng.IDebugClient5.DispatchCallbacks
-title : IDebugClient5::DispatchCallbacks method
-author : windows-driver-content
-description : The DispatchCallbacks method lets the debugger engine use the current thread for callbacks.
-old-location : debugger\dispatchcallbacks.htm
-old-project : debugger
-ms.assetid : 05fb9569-c2d6-4650-b1c3-8b86ed7ef07d
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugClient3::DispatchCallbacks, IDebugClient3 interface [Windows Debugging], DispatchCallbacks method, DispatchCallbacks, DispatchCallbacks method [Windows Debugging], dbgeng/IDebugClient3::DispatchCallbacks, IDebugClient5 interface [Windows Debugging], DispatchCallbacks method, DispatchCallbacks method [Windows Debugging], IDebugClient4 interface, DispatchCallbacks method [Windows Debugging], IDebugClient interface, DispatchCallbacks method [Windows Debugging], IDebugClient5 interface, IDebugClient::DispatchCallbacks, DispatchCallbacks method [Windows Debugging], IDebugClient3 interface, dbgeng/IDebugClient::DispatchCallbacks, IDebugClient2::DispatchCallbacks, dbgeng/IDebugClient5::DispatchCallbacks, dbgeng/IDebugClient2::DispatchCallbacks, IDebugClient2 interface [Windows Debugging], DispatchCallbacks method, IDebugClient4::DispatchCallbacks, dbgeng/IDebugClient4::DispatchCallbacks, DispatchCallbacks method [Windows Debugging], IDebugClient2 interface, debugger.dispatchcallbacks, IDebugClient_faf284c2-ca0f-4e00-bd74-08817338a808.xml, IDebugClient5::DispatchCallbacks, IDebugClient interface [Windows Debugging], DispatchCallbacks method, IDebugClient4 interface [Windows Debugging], DispatchCallbacks method, IDebugClient5
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h, Winbase.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugClient5.DispatchCallbacks
+title: IDebugClient5::DispatchCallbacks method
+author: windows-driver-content
+description: The DispatchCallbacks method lets the debugger engine use the current thread for callbacks.
+old-location: debugger\dispatchcallbacks.htm
+old-project: debugger
+ms.assetid: 05fb9569-c2d6-4650-b1c3-8b86ed7ef07d
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugClient3::DispatchCallbacks, IDebugClient3 interface [Windows Debugging], DispatchCallbacks method, DispatchCallbacks, DispatchCallbacks method [Windows Debugging], dbgeng/IDebugClient3::DispatchCallbacks, IDebugClient5 interface [Windows Debugging], DispatchCallbacks method, DispatchCallbacks method [Windows Debugging], IDebugClient4 interface, DispatchCallbacks method [Windows Debugging], IDebugClient interface, DispatchCallbacks method [Windows Debugging], IDebugClient5 interface, IDebugClient::DispatchCallbacks, DispatchCallbacks method [Windows Debugging], IDebugClient3 interface, dbgeng/IDebugClient::DispatchCallbacks, IDebugClient2::DispatchCallbacks, dbgeng/IDebugClient5::DispatchCallbacks, dbgeng/IDebugClient2::DispatchCallbacks, IDebugClient2 interface [Windows Debugging], DispatchCallbacks method, IDebugClient4::DispatchCallbacks, dbgeng/IDebugClient4::DispatchCallbacks, DispatchCallbacks method [Windows Debugging], IDebugClient2 interface, debugger.dispatchcallbacks, IDebugClient_faf284c2-ca0f-4e00-bd74-08817338a808.xml, IDebugClient5::DispatchCallbacks, IDebugClient interface [Windows Debugging], DispatchCallbacks method, IDebugClient4 interface [Windows Debugging], DispatchCallbacks method, IDebugClient5
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h, Winbase.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugClient.DispatchCallbacks
+-	IDebugClient2.DispatchCallbacks
+-	IDebugClient3.DispatchCallbacks
+-	IDebugClient4.DispatchCallbacks
+-	IDebugClient5.DispatchCallbacks
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

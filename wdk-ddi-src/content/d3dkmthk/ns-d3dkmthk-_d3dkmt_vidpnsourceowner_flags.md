@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmthk._D3DKMT_VIDPNSOURCEOWNER_FLAGS
-title : "_D3DKMT_VIDPNSOURCEOWNER_FLAGS"
-author : windows-driver-content
-description : Specifies output duplication options for use with the D3DKMTSetVidPnSourceOwner1 function.
-old-location : display\d3dkmt_vidpnsourceowner_flags.htm
-old-project : display
-ms.assetid : acc4e9d9-235f-4605-ae51-5056108843dc
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3dkmthk/D3DKMT_VIDPNSOURCEOWNER_FLAGS, _D3DKMT_VIDPNSOURCEOWNER_FLAGS, display.d3dkmt_vidpnsourceowner_flags, D3DKMT_VIDPNSOURCEOWNER_FLAGS, D3DKMT_VIDPNSOURCEOWNER_FLAGS structure [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_VIDPNSOURCEOWNER_FLAGS
+UID: NS:d3dkmthk._D3DKMT_VIDPNSOURCEOWNER_FLAGS
+title: "_D3DKMT_VIDPNSOURCEOWNER_FLAGS"
+author: windows-driver-content
+description: Specifies output duplication options for use with the D3DKMTSetVidPnSourceOwner1 function.
+old-location: display\d3dkmt_vidpnsourceowner_flags.htm
+old-project: display
+ms.assetid: acc4e9d9-235f-4605-ae51-5056108843dc
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3dkmthk/D3DKMT_VIDPNSOURCEOWNER_FLAGS, _D3DKMT_VIDPNSOURCEOWNER_FLAGS, display.d3dkmt_vidpnsourceowner_flags, D3DKMT_VIDPNSOURCEOWNER_FLAGS, D3DKMT_VIDPNSOURCEOWNER_FLAGS structure [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	D3dkmthk.h
+apiname:
+-	D3DKMT_VIDPNSOURCEOWNER_FLAGS
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_VIDPNSOURCEOWNER_FLAGS
 ---
 
 # _D3DKMT_VIDPNSOURCEOWNER_FLAGS structure

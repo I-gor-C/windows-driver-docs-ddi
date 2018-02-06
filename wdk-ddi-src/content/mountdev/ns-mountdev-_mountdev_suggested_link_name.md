@@ -1,41 +1,46 @@
 ---
-UID : NS:mountdev._MOUNTDEV_SUGGESTED_LINK_NAME
-title : "_MOUNTDEV_SUGGESTED_LINK_NAME"
-author : windows-driver-content
-description : Mount manager clients that are able to keep track of their drive letters use this structure to request that the mount manager assign them a particular link name.
-old-location : storage\mountdev_suggested_link_name.htm
-old-project : storage
-ms.assetid : 5c6e3337-8071-486a-826a-ade722eb8449
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : PMOUNTDEV_SUGGESTED_LINK_NAME structure pointer [Storage Devices], *PMOUNTDEV_SUGGESTED_LINK_NAME, storage.mountdev_suggested_link_name, mountdev/PMOUNTDEV_SUGGESTED_LINK_NAME, mountdev/MOUNTDEV_SUGGESTED_LINK_NAME, MOUNTDEV_SUGGESTED_LINK_NAME, structs-mntmgr_fc4a3528-34b9-4112-9501-87db4e87f9f3.xml, PMOUNTDEV_SUGGESTED_LINK_NAME, MOUNTDEV_SUGGESTED_LINK_NAME structure [Storage Devices], _MOUNTDEV_SUGGESTED_LINK_NAME
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : mountdev.h
-req.include-header : Mountmgr.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : MOUNTDEV_SUGGESTED_LINK_NAME, *PMOUNTDEV_SUGGESTED_LINK_NAME
+UID: NS:mountdev._MOUNTDEV_SUGGESTED_LINK_NAME
+title: "_MOUNTDEV_SUGGESTED_LINK_NAME"
+author: windows-driver-content
+description: Mount manager clients that are able to keep track of their drive letters use this structure to request that the mount manager assign them a particular link name.
+old-location: storage\mountdev_suggested_link_name.htm
+old-project: storage
+ms.assetid: 5c6e3337-8071-486a-826a-ade722eb8449
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: PMOUNTDEV_SUGGESTED_LINK_NAME structure pointer [Storage Devices], *PMOUNTDEV_SUGGESTED_LINK_NAME, storage.mountdev_suggested_link_name, mountdev/PMOUNTDEV_SUGGESTED_LINK_NAME, mountdev/MOUNTDEV_SUGGESTED_LINK_NAME, MOUNTDEV_SUGGESTED_LINK_NAME, structs-mntmgr_fc4a3528-34b9-4112-9501-87db4e87f9f3.xml, PMOUNTDEV_SUGGESTED_LINK_NAME, MOUNTDEV_SUGGESTED_LINK_NAME structure [Storage Devices], _MOUNTDEV_SUGGESTED_LINK_NAME
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: mountdev.h
+req.include-header: Mountmgr.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	mountdev.h
+apiname:
+-	MOUNTDEV_SUGGESTED_LINK_NAME
+product: Windows
+targetos: Windows
+req.typenames: MOUNTDEV_SUGGESTED_LINK_NAME, *PMOUNTDEV_SUGGESTED_LINK_NAME
 ---
 
 # _MOUNTDEV_SUGGESTED_LINK_NAME structure

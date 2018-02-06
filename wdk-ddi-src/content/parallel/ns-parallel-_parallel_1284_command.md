@@ -1,41 +1,46 @@
 ---
-UID : NS:parallel._PARALLEL_1284_COMMAND
-title : "_PARALLEL_1284_COMMAND"
-author : windows-driver-content
-description : The PARALLEL_1284_COMMAND structure specifies information that a client uses to select and deselect an IEEE 1284.3 daisy-chain device or an IEEE 1284 end-of-chain device.
-old-location : parports\parallel_1284_command.htm
-old-project : parports
-ms.assetid : 5b46253c-c111-4675-898e-78b81ecbddb8
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : PARALLEL_1284_COMMAND, PARALLEL_1284_COMMAND structure [Parallel Ports], PPARALLEL_1284_COMMAND, cisspd_082268fb-79fd-46df-85a7-89dd56098ed0.xml, *PPARALLEL_1284_COMMAND, parports.parallel_1284_command, _PARALLEL_1284_COMMAND, parallel/PPARALLEL_1284_COMMAND, parallel/PARALLEL_1284_COMMAND, PPARALLEL_1284_COMMAND structure pointer [Parallel Ports]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : parallel.h
-req.include-header : Parallel.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PARALLEL_1284_COMMAND, *PPARALLEL_1284_COMMAND
+UID: NS:parallel._PARALLEL_1284_COMMAND
+title: "_PARALLEL_1284_COMMAND"
+author: windows-driver-content
+description: The PARALLEL_1284_COMMAND structure specifies information that a client uses to select and deselect an IEEE 1284.3 daisy-chain device or an IEEE 1284 end-of-chain device.
+old-location: parports\parallel_1284_command.htm
+old-project: parports
+ms.assetid: 5b46253c-c111-4675-898e-78b81ecbddb8
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: PARALLEL_1284_COMMAND, PARALLEL_1284_COMMAND structure [Parallel Ports], PPARALLEL_1284_COMMAND, cisspd_082268fb-79fd-46df-85a7-89dd56098ed0.xml, *PPARALLEL_1284_COMMAND, parports.parallel_1284_command, _PARALLEL_1284_COMMAND, parallel/PPARALLEL_1284_COMMAND, parallel/PARALLEL_1284_COMMAND, PPARALLEL_1284_COMMAND structure pointer [Parallel Ports]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: parallel.h
+req.include-header: Parallel.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	parallel.h
+apiname:
+-	PARALLEL_1284_COMMAND
+product: Windows
+targetos: Windows
+req.typenames: PARALLEL_1284_COMMAND, *PPARALLEL_1284_COMMAND
 ---
 
 # _PARALLEL_1284_COMMAND structure

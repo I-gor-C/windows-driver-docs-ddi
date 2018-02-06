@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugRegisters2.GetStackOffset2
-title : IDebugRegisters2::GetStackOffset2 method
-author : windows-driver-content
-description : The GetStackOffset2 method returns the current thread's current stack location.
-old-location : debugger\getstackoffset2.htm
-old-project : debugger
-ms.assetid : c90119a8-c93b-4432-b164-b1f4c562ef2d
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : dbgeng/IDebugRegisters2::GetStackOffset2, debugger.getstackoffset2, GetStackOffset2 method [Windows Debugging], IDebugRegisters2 interface, GetStackOffset2 method [Windows Debugging], IDebugRegisters2, GetStackOffset2, IDebugRegisters_ec4e5846-b785-4b82-9670-04e7087b7d99.xml, IDebugRegisters2 interface [Windows Debugging], GetStackOffset2 method, IDebugRegisters2::GetStackOffset2
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : DbgEng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugRegisters2.GetStackOffset2
+title: IDebugRegisters2::GetStackOffset2 method
+author: windows-driver-content
+description: The GetStackOffset2 method returns the current thread's current stack location.
+old-location: debugger\getstackoffset2.htm
+old-project: debugger
+ms.assetid: c90119a8-c93b-4432-b164-b1f4c562ef2d
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: dbgeng/IDebugRegisters2::GetStackOffset2, debugger.getstackoffset2, GetStackOffset2 method [Windows Debugging], IDebugRegisters2 interface, GetStackOffset2 method [Windows Debugging], IDebugRegisters2, GetStackOffset2, IDebugRegisters_ec4e5846-b785-4b82-9670-04e7087b7d99.xml, IDebugRegisters2 interface [Windows Debugging], GetStackOffset2 method, IDebugRegisters2::GetStackOffset2
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: DbgEng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugRegisters2.GetStackOffset2
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NS:wwan._WWAN_DEVICE_SERVICE_SESSION_WRITE
-title : "_WWAN_DEVICE_SERVICE_SESSION_WRITE"
-author : windows-driver-content
-description : The WWAN_DEVICE_SERVICE_SESSION_WRITE structure represents data associated with a device service session write request.
-old-location : netvista\wwan_device_service_session_write.htm
-old-project : netvista
-ms.assetid : 8134E635-5FC3-4990-A7CC-E43ECEB1FBB6
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : "*PWWAN_DEVICE_SERVICE_SESSION_WRITE, wwan/WWAN_DEVICE_SERVICE_SESSION_WRITE, netvista.wwan_device_service_session_write, _WWAN_DEVICE_SERVICE_SESSION_WRITE, WWAN_DEVICE_SERVICE_SESSION_WRITE, WWAN_DEVICE_SERVICE_SESSION_WRITE structure [Network Drivers Starting with Windows Vista], PWWAN_DEVICE_SERVICE_SESSION_WRITE structure pointer [Network Drivers Starting with Windows Vista], PWWAN_DEVICE_SERVICE_SESSION_WRITE, wwan/PWWAN_DEVICE_SERVICE_SESSION_WRITE"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wwan.h
-req.include-header : Wwan.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with  Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WWAN_DEVICE_SERVICE_SESSION_WRITE, *PWWAN_DEVICE_SERVICE_SESSION_WRITE
-req.product : Windows 10 or later.
+UID: NS:wwan._WWAN_DEVICE_SERVICE_SESSION_WRITE
+title: "_WWAN_DEVICE_SERVICE_SESSION_WRITE"
+author: windows-driver-content
+description: The WWAN_DEVICE_SERVICE_SESSION_WRITE structure represents data associated with a device service session write request.
+old-location: netvista\wwan_device_service_session_write.htm
+old-project: netvista
+ms.assetid: 8134E635-5FC3-4990-A7CC-E43ECEB1FBB6
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: "*PWWAN_DEVICE_SERVICE_SESSION_WRITE, wwan/WWAN_DEVICE_SERVICE_SESSION_WRITE, netvista.wwan_device_service_session_write, _WWAN_DEVICE_SERVICE_SESSION_WRITE, WWAN_DEVICE_SERVICE_SESSION_WRITE, WWAN_DEVICE_SERVICE_SESSION_WRITE structure [Network Drivers Starting with Windows Vista], PWWAN_DEVICE_SERVICE_SESSION_WRITE structure pointer [Network Drivers Starting with Windows Vista], PWWAN_DEVICE_SERVICE_SESSION_WRITE, wwan/PWWAN_DEVICE_SERVICE_SESSION_WRITE"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wwan.h
+req.include-header: Wwan.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with  Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wwan.h
+apiname:
+-	WWAN_DEVICE_SERVICE_SESSION_WRITE
+product: Windows
+targetos: Windows
+req.typenames: WWAN_DEVICE_SERVICE_SESSION_WRITE, *PWWAN_DEVICE_SERVICE_SESSION_WRITE
+req.product: Windows 10 or later.
 ---
 
 # _WWAN_DEVICE_SERVICE_SESSION_WRITE structure

@@ -1,41 +1,46 @@
 ---
-UID : NC:bthsdpddi.PRETRIEVEUUID128
-title : PRETRIEVEUUID128
-author : windows-driver-content
-description : The Bluetooth SdpRetrieveUuid128 function is used to copy an unaligned 128-bit universally unique identifier (UUID) from an SDP stream.
-old-location : bltooth\sdpretrieveuuid128.htm
-old-project : bltooth
-ms.assetid : 0e317aea-3625-4511-94e1-355c476c0da6
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : bltooth.sdpretrieveuuid128, SdpRetrieveUuid128 callback function [Bluetooth Devices], SdpRetrieveUuid128, PRETRIEVEUUID128, PRETRIEVEUUID128, sdplib/SdpRetrieveUuid128, bth_funcs_a4149063-722b-45c0-a86b-ffce73b94b0d.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : bthsdpddi.h
-req.include-header : BthSdpddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Versions:\_Supported in Windows Vista, and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= PASSIVE_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PBTH_VENDOR_SPECIFIC_COMMAND, BTH_VENDOR_SPECIFIC_COMMAND"
+UID: NC:bthsdpddi.PRETRIEVEUUID128
+title: PRETRIEVEUUID128
+author: windows-driver-content
+description: The Bluetooth SdpRetrieveUuid128 function is used to copy an unaligned 128-bit universally unique identifier (UUID) from an SDP stream.
+old-location: bltooth\sdpretrieveuuid128.htm
+old-project: bltooth
+ms.assetid: 0e317aea-3625-4511-94e1-355c476c0da6
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: bltooth.sdpretrieveuuid128, SdpRetrieveUuid128 callback function [Bluetooth Devices], SdpRetrieveUuid128, PRETRIEVEUUID128, PRETRIEVEUUID128, sdplib/SdpRetrieveUuid128, bth_funcs_a4149063-722b-45c0-a86b-ffce73b94b0d.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: bthsdpddi.h
+req.include-header: BthSdpddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Versions:\_Supported in Windows Vista, and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= PASSIVE_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	sdplib.h
+apiname:
+-	SdpRetrieveUuid128
+product: Windows
+targetos: Windows
+req.typenames: "*PBTH_VENDOR_SPECIFIC_COMMAND, BTH_VENDOR_SPECIFIC_COMMAND"
 ---
 
 

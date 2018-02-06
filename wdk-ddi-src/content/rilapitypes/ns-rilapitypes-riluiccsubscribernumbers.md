@@ -1,42 +1,47 @@
 ---
-UID : NS:rilapitypes.RILUICCSUBSCRIBERNUMBERS
-title : RILUICCSUBSCRIBERNUMBERS
-author : windows-driver-content
-description : This structure represents RILUICCSUBSCRIBERNUMBERS.
-old-location : netvista\riluiccsubscribernumbers.htm
-old-project : netvista
-ms.assetid : 7c9f7c52-edb3-48cd-b532-0e100692fee4
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.riluiccsubscribernumbers, RILUICCSUBSCRIBERNUMBERS, rilapitypes/RILUMTSMRL, RILUICCSUBSCRIBERNUMBERS structure [Network Drivers Starting with Windows Vista], *LPRILUICCSUBSCRIBERNUMBERS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : rilapitypes.h
-req.include-header : Rilapitypes.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RILUICCSUBSCRIBERNUMBERS, *LPRILUICCSUBSCRIBERNUMBERS
-req.product : Windows 10 or later.
+UID: NS:rilapitypes.RILUICCSUBSCRIBERNUMBERS
+title: RILUICCSUBSCRIBERNUMBERS
+author: windows-driver-content
+description: This structure represents RILUICCSUBSCRIBERNUMBERS.
+old-location: netvista\riluiccsubscribernumbers.htm
+old-project: netvista
+ms.assetid: 7c9f7c52-edb3-48cd-b532-0e100692fee4
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.riluiccsubscribernumbers, RILUICCSUBSCRIBERNUMBERS, rilapitypes/RILUMTSMRL, RILUICCSUBSCRIBERNUMBERS structure [Network Drivers Starting with Windows Vista], *LPRILUICCSUBSCRIBERNUMBERS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: rilapitypes.h
+req.include-header: Rilapitypes.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	rilapitypes.h
+apiname:
+-	RILUMTSMRL
+product: Windows
+targetos: Windows
+req.typenames: RILUICCSUBSCRIBERNUMBERS, *LPRILUICCSUBSCRIBERNUMBERS
+req.product: Windows 10 or later.
 ---
 
 # RILUICCSUBSCRIBERNUMBERS structure

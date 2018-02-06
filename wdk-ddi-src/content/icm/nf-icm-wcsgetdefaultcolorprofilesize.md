@@ -1,41 +1,46 @@
 ---
-UID : NF:icm.WcsGetDefaultColorProfileSize
-title : WcsGetDefaultColorProfileSize function
-author : windows-driver-content
-description : The WcsGetDefaultColorProfileSize function returns the size, in bytes, of the default color profile name for a device, including the NULL terminator.
-old-location : print\wcsgetdefaultcolorprofilesize.htm
-old-project : print
-ms.assetid : d04306e2-3479-4ba4-ac4d-bf3715487fcf
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : WcsGetDefaultColorProfileSize function [Print Devices], WcsGetDefaultColorProfileSize, colorfnc_8259a030-267a-4d53-93fe-73e63f0e5fd7.xml, print.wcsgetdefaultcolorprofilesize, icm/WcsGetDefaultColorProfileSize
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : icm.h
-req.include-header : 
-req.target-type : Universal
-req.target-min-winverclnt : Included in Windows Vista and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Mscms.lib
-req.dll : Mscms.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WCS_PROFILE_MANAGEMENT_SCOPE
+UID: NF:icm.WcsGetDefaultColorProfileSize
+title: WcsGetDefaultColorProfileSize function
+author: windows-driver-content
+description: The WcsGetDefaultColorProfileSize function returns the size, in bytes, of the default color profile name for a device, including the NULL terminator.
+old-location: print\wcsgetdefaultcolorprofilesize.htm
+old-project: print
+ms.assetid: d04306e2-3479-4ba4-ac4d-bf3715487fcf
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: WcsGetDefaultColorProfileSize function [Print Devices], WcsGetDefaultColorProfileSize, colorfnc_8259a030-267a-4d53-93fe-73e63f0e5fd7.xml, print.wcsgetdefaultcolorprofilesize, icm/WcsGetDefaultColorProfileSize
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: icm.h
+req.include-header: 
+req.target-type: Universal
+req.target-min-winverclnt: Included in Windows Vista and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Mscms.lib
+req.dll: Mscms.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Mscms.dll
+apiname:
+-	WcsGetDefaultColorProfileSize
+product: Windows
+targetos: Windows
+req.typenames: WCS_PROFILE_MANAGEMENT_SCOPE
 ---
 
 

@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisFreeMdl
-title : NdisFreeMdl function
-author : windows-driver-content
-description : The NdisFreeMdl function frees an MDL that was allocated by calling the NdisAllocateMdl function.
-old-location : netvista\ndisfreemdl.htm
-old-project : netvista
-ms.assetid : 612a66fa-0e0c-4eee-99b0-9bc09437b026
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NdisFreeMdl, NdisFreeMdl function [Network Drivers Starting with Windows Vista], netvista.ndisfreemdl, ndis_netbuf_functions_ref_0631fdd9-0961-43a9-a7a8-7d41e9d17220.xml, ndis/NdisFreeMdl
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_NetBuffer_Function, NdisAllocateMdl
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisFreeMdl
+title: NdisFreeMdl function
+author: windows-driver-content
+description: The NdisFreeMdl function frees an MDL that was allocated by calling the NdisAllocateMdl function.
+old-location: netvista\ndisfreemdl.htm
+old-project: netvista
+ms.assetid: 612a66fa-0e0c-4eee-99b0-9bc09437b026
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NdisFreeMdl, NdisFreeMdl function [Network Drivers Starting with Windows Vista], netvista.ndisfreemdl, ndis_netbuf_functions_ref_0631fdd9-0961-43a9-a7a8-7d41e9d17220.xml, ndis/NdisFreeMdl
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_NetBuffer_Function, NdisAllocateMdl
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisFreeMdl
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:d3d10umddi.D3D10DDI_MAPPED_SUBRESOURCE
-title : D3D10DDI_MAPPED_SUBRESOURCE
-author : windows-driver-content
-description : The D3D10DDI_MAPPED_SUBRESOURCE structure describes a subresource that the driver maps to through a call to the driver's ResourceMap function.
-old-location : display\d3d10ddi_mapped_subresource.htm
-old-project : display
-ms.assetid : a55f9aee-c6a5-4391-aad1-4003e58692cd
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3D10DDI_MAPPED_SUBRESOURCE structure [Display Devices], UMDisplayDriver_Dx10param_Structs_19502bf4-94a6-48d5-8294-c058c254540f.xml, D3D10DDI_MAPPED_SUBRESOURCE, d3d10umddi/D3D10DDI_MAPPED_SUBRESOURCE, display.d3d10ddi_mapped_subresource
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with  Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3D10DDI_MAPPED_SUBRESOURCE
+UID: NS:d3d10umddi.D3D10DDI_MAPPED_SUBRESOURCE
+title: D3D10DDI_MAPPED_SUBRESOURCE
+author: windows-driver-content
+description: The D3D10DDI_MAPPED_SUBRESOURCE structure describes a subresource that the driver maps to through a call to the driver's ResourceMap function.
+old-location: display\d3d10ddi_mapped_subresource.htm
+old-project: display
+ms.assetid: a55f9aee-c6a5-4391-aad1-4003e58692cd
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3D10DDI_MAPPED_SUBRESOURCE structure [Display Devices], UMDisplayDriver_Dx10param_Structs_19502bf4-94a6-48d5-8294-c058c254540f.xml, D3D10DDI_MAPPED_SUBRESOURCE, d3d10umddi/D3D10DDI_MAPPED_SUBRESOURCE, display.d3d10ddi_mapped_subresource
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with  Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	D3D10DDI_MAPPED_SUBRESOURCE
+product: Windows
+targetos: Windows
+req.typenames: D3D10DDI_MAPPED_SUBRESOURCE
 ---
 
 # D3D10DDI_MAPPED_SUBRESOURCE structure

@@ -1,42 +1,47 @@
 ---
-UID : NS:sercx._SERCX_CONFIG
-title : "_SERCX_CONFIG"
-author : windows-driver-content
-description : The SERCX_CONFIG structure contains configuration information for the serial framework extension (SerCx).
-old-location : serports\sercx_config.htm
-old-project : serports
-ms.assetid : 2CBCBA07-C489-4475-A856-8748FBFDC141
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : "*PSERCX_CONFIG, _SERCX_CONFIG, 1/PSERCX_CONFIG, PSERCX_CONFIG structure pointer [Serial Ports], PSERCX_CONFIG, SERCX_CONFIG structure [Serial Ports], serports.sercx_config, SERCX_CONFIG, 1/SERCX_CONFIG"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : sercx.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Any IRQL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SERCX_CONFIG, *PSERCX_CONFIG
-req.product : Windows 10 or later.
+UID: NS:sercx._SERCX_CONFIG
+title: "_SERCX_CONFIG"
+author: windows-driver-content
+description: The SERCX_CONFIG structure contains configuration information for the serial framework extension (SerCx).
+old-location: serports\sercx_config.htm
+old-project: serports
+ms.assetid: 2CBCBA07-C489-4475-A856-8748FBFDC141
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: "*PSERCX_CONFIG, _SERCX_CONFIG, 1/PSERCX_CONFIG, PSERCX_CONFIG structure pointer [Serial Ports], PSERCX_CONFIG, SERCX_CONFIG structure [Serial Ports], serports.sercx_config, SERCX_CONFIG, 1/SERCX_CONFIG"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: sercx.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Any IRQL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	1.0\Sercx.h
+apiname:
+-	SERCX_CONFIG
+product: Windows
+targetos: Windows
+req.typenames: SERCX_CONFIG, *PSERCX_CONFIG
+req.product: Windows 10 or later.
 ---
 
 # _SERCX_CONFIG structure

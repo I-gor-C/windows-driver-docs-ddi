@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsPinGetLeadingEdgeStreamPointer
-title : KsPinGetLeadingEdgeStreamPointer function
-author : windows-driver-content
-description : The KsPinGetLeadingEdgeStreamPointer function acquires the leading edge stream pointer for the queue associated with the given pin.
-old-location : stream\kspingetleadingedgestreampointer.htm
-old-project : stream
-ms.assetid : 05615730-dbeb-496a-b4a8-a16830b31586
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KsPinGetLeadingEdgeStreamPointer function [Streaming Media Devices], ks/KsPinGetLeadingEdgeStreamPointer, avfunc_0eb1faec-c090-4647-8306-84cff42ddf9c.xml, KsPinGetLeadingEdgeStreamPointer, stream.kspingetleadingedgestreampointer
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsPinGetLeadingEdgeStreamPointer
+title: KsPinGetLeadingEdgeStreamPointer function
+author: windows-driver-content
+description: The KsPinGetLeadingEdgeStreamPointer function acquires the leading edge stream pointer for the queue associated with the given pin.
+old-location: stream\kspingetleadingedgestreampointer.htm
+old-project: stream
+ms.assetid: 05615730-dbeb-496a-b4a8-a16830b31586
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KsPinGetLeadingEdgeStreamPointer function [Streaming Media Devices], ks/KsPinGetLeadingEdgeStreamPointer, avfunc_0eb1faec-c090-4647-8306-84cff42ddf9c.xml, KsPinGetLeadingEdgeStreamPointer, stream.kspingetleadingedgestreampointer
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsPinGetLeadingEdgeStreamPointer
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

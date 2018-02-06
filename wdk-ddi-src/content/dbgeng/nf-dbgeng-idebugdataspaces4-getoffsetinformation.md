@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugDataSpaces4.GetOffsetInformation
-title : IDebugDataSpaces4::GetOffsetInformation method
-author : windows-driver-content
-description : The GetOffsetInformation method provides general information about an address in a process's data space.
-old-location : debugger\getoffsetinformation.htm
-old-project : debugger
-ms.assetid : 5ef00c92-7b32-473a-8401-4c02e864c181
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugDataSpaces4 interface [Windows Debugging], GetOffsetInformation method, GetOffsetInformation, dbgeng/IDebugDataSpaces4::GetOffsetInformation, IDebugDataSpaces4, GetOffsetInformation method [Windows Debugging], IDebugDataSpaces4 interface, IDebugDataSpaces4::GetOffsetInformation, debugger.getoffsetinformation, IDebugDataSpaces_c434b12b-78ff-4f6a-ac69-6069dd273ba8.xml, GetOffsetInformation method [Windows Debugging]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugDataSpaces4.GetOffsetInformation
+title: IDebugDataSpaces4::GetOffsetInformation method
+author: windows-driver-content
+description: The GetOffsetInformation method provides general information about an address in a process's data space.
+old-location: debugger\getoffsetinformation.htm
+old-project: debugger
+ms.assetid: 5ef00c92-7b32-473a-8401-4c02e864c181
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugDataSpaces4 interface [Windows Debugging], GetOffsetInformation method, GetOffsetInformation, dbgeng/IDebugDataSpaces4::GetOffsetInformation, IDebugDataSpaces4, GetOffsetInformation method [Windows Debugging], IDebugDataSpaces4 interface, IDebugDataSpaces4::GetOffsetInformation, debugger.getoffsetinformation, IDebugDataSpaces_c434b12b-78ff-4f6a-ac69-6069dd273ba8.xml, GetOffsetInformation method [Windows Debugging]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugDataSpaces4.GetOffsetInformation
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddcdvd._AACS_CERTIFICATE
-title : "_AACS_CERTIFICATE"
-author : windows-driver-content
-description : The AACS_CERTIFICATE structure contains a cryptographically random 160-bit value, followed by a 92-byte certificate.
-old-location : storage\aacs_certificate.htm
-old-project : storage
-ms.assetid : 591d8f63-ab3e-48b7-8fe4-98dcdf9464f1
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : AACS_CERTIFICATE, storage.aacs_certificate, ntddcdvd/PAACS_CERTIFICATE, PAACS_CERTIFICATE structure pointer [Storage Devices], PAACS_CERTIFICATE, _AACS_CERTIFICATE, ntddcdvd/AACS_CERTIFICATE, AACS_CERTIFICATE structure [Storage Devices], structs-DVD_0eedee44-0be8-462e-84ac-e5efbc37fc82.xml, *PAACS_CERTIFICATE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddcdvd.h
-req.include-header : Ntddcdvd.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : AACS_CERTIFICATE, *PAACS_CERTIFICATE
+UID: NS:ntddcdvd._AACS_CERTIFICATE
+title: "_AACS_CERTIFICATE"
+author: windows-driver-content
+description: The AACS_CERTIFICATE structure contains a cryptographically random 160-bit value, followed by a 92-byte certificate.
+old-location: storage\aacs_certificate.htm
+old-project: storage
+ms.assetid: 591d8f63-ab3e-48b7-8fe4-98dcdf9464f1
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: AACS_CERTIFICATE, storage.aacs_certificate, ntddcdvd/PAACS_CERTIFICATE, PAACS_CERTIFICATE structure pointer [Storage Devices], PAACS_CERTIFICATE, _AACS_CERTIFICATE, ntddcdvd/AACS_CERTIFICATE, AACS_CERTIFICATE structure [Storage Devices], structs-DVD_0eedee44-0be8-462e-84ac-e5efbc37fc82.xml, *PAACS_CERTIFICATE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddcdvd.h
+req.include-header: Ntddcdvd.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddcdvd.h
+apiname:
+-	AACS_CERTIFICATE
+product: Windows
+targetos: Windows
+req.typenames: AACS_CERTIFICATE, *PAACS_CERTIFICATE
 ---
 
 # _AACS_CERTIFICATE structure

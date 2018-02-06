@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddtape.IOCTL_TAPE_SET_POSITION
-title : IOCTL_TAPE_SET_POSITION
-author : windows-driver-content
-description : Moves the current position on the tape to the specified partition and offset, according to the given method.
-old-location : storage\ioctl_tape_set_position.htm
-old-project : storage
-ms.assetid : 93918e09-2742-47ca-94a5-043af2a3a338
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_tape_set_position, IOCTL_TAPE_SET_POSITION control code [Storage Devices], IOCTL_TAPE_SET_POSITION, ntddtape/IOCTL_TAPE_SET_POSITION, k307_3fc298fe-1a00-4bb5-8a10-09b5fec325b3.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddtape.h
-req.include-header : Ntddtape.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TAPE_DRIVE_PROBLEM_TYPE
+UID: NI:ntddtape.IOCTL_TAPE_SET_POSITION
+title: IOCTL_TAPE_SET_POSITION
+author: windows-driver-content
+description: Moves the current position on the tape to the specified partition and offset, according to the given method.
+old-location: storage\ioctl_tape_set_position.htm
+old-project: storage
+ms.assetid: 93918e09-2742-47ca-94a5-043af2a3a338
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_tape_set_position, IOCTL_TAPE_SET_POSITION control code [Storage Devices], IOCTL_TAPE_SET_POSITION, ntddtape/IOCTL_TAPE_SET_POSITION, k307_3fc298fe-1a00-4bb5-8a10-09b5fec325b3.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddtape.h
+req.include-header: Ntddtape.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddtape.h
+apiname:
+-	IOCTL_TAPE_SET_POSITION
+product: Windows
+targetos: Windows
+req.typenames: TAPE_DRIVE_PROBLEM_TYPE
 ---
 
 # IOCTL_TAPE_SET_POSITION IOCTL

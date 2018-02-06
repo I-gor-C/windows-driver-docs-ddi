@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_DESTROYAUTHENTICATEDCHANNEL
-title : PFND3DDDI_DESTROYAUTHENTICATEDCHANNEL
-author : windows-driver-content
-description : The DestroyAuthenticatedChannel function releases resources for the authenticated channel that the CreateAuthenticatedChannel function creates.
-old-location : display\destroyauthenticatedchannel.htm
-old-project : display
-ms.assetid : ccea427b-e19e-433b-91b0-b40ce7c1da5a
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.destroyauthenticatedchannel, DestroyAuthenticatedChannel callback function [Display Devices], DestroyAuthenticatedChannel, PFND3DDDI_DESTROYAUTHENTICATEDCHANNEL, PFND3DDDI_DESTROYAUTHENTICATEDCHANNEL, d3dumddi/DestroyAuthenticatedChannel, UserModeDisplayDriver_Functions_94df7fa0-966d-45e3-81b7-bae1f6ebac64.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : DestroyAuthenticatedChannel is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_DESTROYAUTHENTICATEDCHANNEL
+title: PFND3DDDI_DESTROYAUTHENTICATEDCHANNEL
+author: windows-driver-content
+description: The DestroyAuthenticatedChannel function releases resources for the authenticated channel that the CreateAuthenticatedChannel function creates.
+old-location: display\destroyauthenticatedchannel.htm
+old-project: display
+ms.assetid: ccea427b-e19e-433b-91b0-b40ce7c1da5a
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.destroyauthenticatedchannel, DestroyAuthenticatedChannel callback function [Display Devices], DestroyAuthenticatedChannel, PFND3DDDI_DESTROYAUTHENTICATEDCHANNEL, PFND3DDDI_DESTROYAUTHENTICATEDCHANNEL, d3dumddi/DestroyAuthenticatedChannel, UserModeDisplayDriver_Functions_94df7fa0-966d-45e3-81b7-bae1f6ebac64.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: DestroyAuthenticatedChannel is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	DestroyAuthenticatedChannel
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddpar.IOCTL_IEEE1284_NEGOTIATE
-title : IOCTL_IEEE1284_NEGOTIATE
-author : windows-driver-content
-description : The IOCTL_IEEE1284_NEGOTIATE request sets the read and write protocols that are used for a parallel device.
-old-location : parports\ioctl_ieee1284_negotiate.htm
-old-project : parports
-ms.assetid : 893af02d-ba26-4367-b2cc-b35d5baa9473
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : parports.ioctl_ieee1284_negotiate, IOCTL_IEEE1284_NEGOTIATE control code [Parallel Ports], IOCTL_IEEE1284_NEGOTIATE, ntddpar/IOCTL_IEEE1284_NEGOTIATE, cisspd_7d757685-3a5b-47cf-bba9-e7051956ae78.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddpar.h
-req.include-header : Ntddpar.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*POFFLOAD_SECURITY_ASSOCIATION, OFFLOAD_SECURITY_ASSOCIATION"
+UID: NI:ntddpar.IOCTL_IEEE1284_NEGOTIATE
+title: IOCTL_IEEE1284_NEGOTIATE
+author: windows-driver-content
+description: The IOCTL_IEEE1284_NEGOTIATE request sets the read and write protocols that are used for a parallel device.
+old-location: parports\ioctl_ieee1284_negotiate.htm
+old-project: parports
+ms.assetid: 893af02d-ba26-4367-b2cc-b35d5baa9473
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: parports.ioctl_ieee1284_negotiate, IOCTL_IEEE1284_NEGOTIATE control code [Parallel Ports], IOCTL_IEEE1284_NEGOTIATE, ntddpar/IOCTL_IEEE1284_NEGOTIATE, cisspd_7d757685-3a5b-47cf-bba9-e7051956ae78.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddpar.h
+req.include-header: Ntddpar.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddpar.h
+apiname:
+-	IOCTL_IEEE1284_NEGOTIATE
+product: Windows
+targetos: Windows
+req.typenames: "*POFFLOAD_SECURITY_ASSOCIATION, OFFLOAD_SECURITY_ASSOCIATION"
 ---
 
 # IOCTL_IEEE1284_NEGOTIATE IOCTL

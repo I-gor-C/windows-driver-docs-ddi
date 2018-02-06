@@ -1,41 +1,46 @@
 ---
-UID : NS:ndis._NDIS_FILTER_INTERFACE
-title : "_NDIS_FILTER_INTERFACE"
-author : windows-driver-content
-description : The NDIS_FILTER_INTERFACE structure defines the attributes for an NDIS filter.
-old-location : netvista\ndis_filter_interface.htm
-old-project : netvista
-ms.assetid : 0a765829-3558-48ea-b788-7cce6c4b64c6
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : PNDIS_FILTER_INTERFACE structure pointer [Network Drivers Starting with Windows Vista], NDIS_FILTER_INTERFACE, PNDIS_FILTER_INTERFACE, ndis/NDIS_FILTER_INTERFACE, ndis/PNDIS_FILTER_INTERFACE, _NDIS_FILTER_INTERFACE, netvista.ndis_filter_interface, *PNDIS_FILTER_INTERFACE, NDIS_FILTER_INTERFACE structure [Network Drivers Starting with Windows Vista], filter_structures_ref_ec1f81f5-4aac-4e69-a8e1-96bc0c5f9958.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : See Remarks section
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_FILTER_INTERFACE, *PNDIS_FILTER_INTERFACE
+UID: NS:ndis._NDIS_FILTER_INTERFACE
+title: "_NDIS_FILTER_INTERFACE"
+author: windows-driver-content
+description: The NDIS_FILTER_INTERFACE structure defines the attributes for an NDIS filter.
+old-location: netvista\ndis_filter_interface.htm
+old-project: netvista
+ms.assetid: 0a765829-3558-48ea-b788-7cce6c4b64c6
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: PNDIS_FILTER_INTERFACE structure pointer [Network Drivers Starting with Windows Vista], NDIS_FILTER_INTERFACE, PNDIS_FILTER_INTERFACE, ndis/NDIS_FILTER_INTERFACE, ndis/PNDIS_FILTER_INTERFACE, _NDIS_FILTER_INTERFACE, netvista.ndis_filter_interface, *PNDIS_FILTER_INTERFACE, NDIS_FILTER_INTERFACE structure [Network Drivers Starting with Windows Vista], filter_structures_ref_ec1f81f5-4aac-4e69-a8e1-96bc0c5f9958.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: See Remarks section
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndis.h
+apiname:
+-	NDIS_FILTER_INTERFACE
+product: Windows
+targetos: Windows
+req.typenames: NDIS_FILTER_INTERFACE, *PNDIS_FILTER_INTERFACE
 ---
 
 # _NDIS_FILTER_INTERFACE structure

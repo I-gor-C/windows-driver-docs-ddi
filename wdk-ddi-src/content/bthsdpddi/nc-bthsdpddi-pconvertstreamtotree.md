@@ -1,41 +1,46 @@
 ---
-UID : NC:bthsdpddi.PCONVERTSTREAMTOTREE
-title : PCONVERTSTREAMTOTREE
-author : windows-driver-content
-description : The Bluetooth SdpConvertStreamToTree function is used to create a Microsoft proprietary tree-based representation of an SDP record, while leaving the original stream-based representation unmodified.
-old-location : bltooth\sdpconvertstreamtotree.htm
-old-project : bltooth
-ms.assetid : 3b285a32-c1bc-4103-aa2e-0f6c8f5cc7ec
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : bltooth.sdpconvertstreamtotree, SdpConvertStreamToTree callback function [Bluetooth Devices], SdpConvertStreamToTree, PCONVERTSTREAMTOTREE, PCONVERTSTREAMTOTREE, bthsdpddi/SdpConvertStreamToTree, bth_funcs_7155961d-c993-428b-a16e-4fdcf85e28c2.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : bthsdpddi.h
-req.include-header : BthSdpddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Versions:\_Supported in Windows Vista, and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= PASSIVE_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PBTH_VENDOR_SPECIFIC_COMMAND, BTH_VENDOR_SPECIFIC_COMMAND"
+UID: NC:bthsdpddi.PCONVERTSTREAMTOTREE
+title: PCONVERTSTREAMTOTREE
+author: windows-driver-content
+description: The Bluetooth SdpConvertStreamToTree function is used to create a Microsoft proprietary tree-based representation of an SDP record, while leaving the original stream-based representation unmodified.
+old-location: bltooth\sdpconvertstreamtotree.htm
+old-project: bltooth
+ms.assetid: 3b285a32-c1bc-4103-aa2e-0f6c8f5cc7ec
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: bltooth.sdpconvertstreamtotree, SdpConvertStreamToTree callback function [Bluetooth Devices], SdpConvertStreamToTree, PCONVERTSTREAMTOTREE, PCONVERTSTREAMTOTREE, bthsdpddi/SdpConvertStreamToTree, bth_funcs_7155961d-c993-428b-a16e-4fdcf85e28c2.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: bthsdpddi.h
+req.include-header: BthSdpddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Versions:\_Supported in Windows Vista, and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= PASSIVE_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	BthSdpddi.h
+apiname:
+-	SdpConvertStreamToTree
+product: Windows
+targetos: Windows
+req.typenames: "*PBTH_VENDOR_SPECIFIC_COMMAND, BTH_VENDOR_SPECIFIC_COMMAND"
 ---
 
 

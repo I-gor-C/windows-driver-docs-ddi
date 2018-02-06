@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia._KSAUDIOMODULE_PROPERTY
-title : "_KSAUDIOMODULE_PROPERTY"
-author : windows-driver-content
-description : The KSAUDIOMODULE_DESCRIPTOR structure describes the static, external properties of the audio modules.
-old-location : audio\ksaudiomodule_property.htm
-old-project : audio
-ms.assetid : 1DE3F065-6F8E-402F-87EF-F9582E31BFFE
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : ksmedia/KSAUDIOMODULE_PROPERTY, audio.ksaudiomodule_property, _KSAUDIOMODULE_PROPERTY, PKSAUDIOMODULE_PROPERTY, KSAUDIOMODULE_PROPERTY structure [Audio Devices], *PKSAUDIOMODULE_PROPERTY, PKSAUDIOMODULE_PROPERTY structure pointer [Audio Devices], KSAUDIOMODULE_PROPERTY, ksmedia/PKSAUDIOMODULE_PROPERTY
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10, version 1703
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKSAUDIOMODULE_PROPERTY, KSAUDIOMODULE_PROPERTY"
+UID: NS:ksmedia._KSAUDIOMODULE_PROPERTY
+title: "_KSAUDIOMODULE_PROPERTY"
+author: windows-driver-content
+description: The KSAUDIOMODULE_DESCRIPTOR structure describes the static, external properties of the audio modules.
+old-location: audio\ksaudiomodule_property.htm
+old-project: audio
+ms.assetid: 1DE3F065-6F8E-402F-87EF-F9582E31BFFE
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: ksmedia/KSAUDIOMODULE_PROPERTY, audio.ksaudiomodule_property, _KSAUDIOMODULE_PROPERTY, PKSAUDIOMODULE_PROPERTY, KSAUDIOMODULE_PROPERTY structure [Audio Devices], *PKSAUDIOMODULE_PROPERTY, PKSAUDIOMODULE_PROPERTY structure pointer [Audio Devices], KSAUDIOMODULE_PROPERTY, ksmedia/PKSAUDIOMODULE_PROPERTY
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10, version 1703
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ksmedia.h
+apiname:
+-	KSAUDIOMODULE_PROPERTY
+product: Windows
+targetos: Windows
+req.typenames: "*PKSAUDIOMODULE_PROPERTY, KSAUDIOMODULE_PROPERTY"
 ---
 
 # _KSAUDIOMODULE_PROPERTY structure

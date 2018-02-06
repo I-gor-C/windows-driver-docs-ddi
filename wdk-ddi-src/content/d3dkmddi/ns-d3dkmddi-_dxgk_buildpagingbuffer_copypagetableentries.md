@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGK_BUILDPAGINGBUFFER_COPYPAGETABLEENTRIES
-title : "_DXGK_BUILDPAGINGBUFFER_COPYPAGETABLEENTRIES"
-author : windows-driver-content
-description : DXGK_BUILDPAGINGBUFFER_COPYPAGETABLEENTRIES describes the operation used copy page table entries from one location to another.
-old-location : display\dxgk_buildpagingbuffer_copypagetableentries.htm
-old-project : display
-ms.assetid : 627FB3E6-3C5D-4104-B129-08D3EC0B963E
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : "_DXGK_BUILDPAGINGBUFFER_COPYPAGETABLEENTRIES, DXGK_BUILDPAGINGBUFFER_COPYPAGETABLEENTRIES structure [Display Devices], DXGK_BUILDPAGINGBUFFER_COPYPAGETABLEENTRIES, display.dxgk_buildpagingbuffer_copypagetableentries, d3dkmddi/DXGK_BUILDPAGINGBUFFER_COPYPAGETABLEENTRIES"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_BUILDPAGINGBUFFER_COPYPAGETABLEENTRIES
+UID: NS:d3dkmddi._DXGK_BUILDPAGINGBUFFER_COPYPAGETABLEENTRIES
+title: "_DXGK_BUILDPAGINGBUFFER_COPYPAGETABLEENTRIES"
+author: windows-driver-content
+description: DXGK_BUILDPAGINGBUFFER_COPYPAGETABLEENTRIES describes the operation used copy page table entries from one location to another.
+old-location: display\dxgk_buildpagingbuffer_copypagetableentries.htm
+old-project: display
+ms.assetid: 627FB3E6-3C5D-4104-B129-08D3EC0B963E
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: "_DXGK_BUILDPAGINGBUFFER_COPYPAGETABLEENTRIES, DXGK_BUILDPAGINGBUFFER_COPYPAGETABLEENTRIES structure [Display Devices], DXGK_BUILDPAGINGBUFFER_COPYPAGETABLEENTRIES, display.dxgk_buildpagingbuffer_copypagetableentries, d3dkmddi/DXGK_BUILDPAGINGBUFFER_COPYPAGETABLEENTRIES"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DXGK_BUILDPAGINGBUFFER_COPYPAGETABLEENTRIES
+product: Windows
+targetos: Windows
+req.typenames: DXGK_BUILDPAGINGBUFFER_COPYPAGETABLEENTRIES
 ---
 
 # _DXGK_BUILDPAGINGBUFFER_COPYPAGETABLEENTRIES structure

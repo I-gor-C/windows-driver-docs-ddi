@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.tag_KS_TRUECOLORINFO
-title : tag_KS_TRUECOLORINFO
-author : windows-driver-content
-description : The KS_TRUECOLORINFO structure describes color palette and bitmask information for video images that also contain a palette.
-old-location : stream\ks_truecolorinfo.htm
-old-project : stream
-ms.assetid : 8297a687-1c8f-4c19-913d-2796e7ef3a60
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : PKS_TRUECOLORINFO, PKS_TRUECOLORINFO structure pointer [Streaming Media Devices], vidcapstruct_02efd829-b75a-4a08-864d-cd80570d0f3a.xml, tag_KS_TRUECOLORINFO, stream.ks_truecolorinfo, ksmedia/PKS_TRUECOLORINFO, ksmedia/KS_TRUECOLORINFO, KS_TRUECOLORINFO, *PKS_TRUECOLORINFO, KS_TRUECOLORINFO structure [Streaming Media Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKS_TRUECOLORINFO, KS_TRUECOLORINFO"
+UID: NS:ksmedia.tag_KS_TRUECOLORINFO
+title: tag_KS_TRUECOLORINFO
+author: windows-driver-content
+description: The KS_TRUECOLORINFO structure describes color palette and bitmask information for video images that also contain a palette.
+old-location: stream\ks_truecolorinfo.htm
+old-project: stream
+ms.assetid: 8297a687-1c8f-4c19-913d-2796e7ef3a60
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: PKS_TRUECOLORINFO, PKS_TRUECOLORINFO structure pointer [Streaming Media Devices], vidcapstruct_02efd829-b75a-4a08-864d-cd80570d0f3a.xml, tag_KS_TRUECOLORINFO, stream.ks_truecolorinfo, ksmedia/PKS_TRUECOLORINFO, ksmedia/KS_TRUECOLORINFO, KS_TRUECOLORINFO, *PKS_TRUECOLORINFO, KS_TRUECOLORINFO structure [Streaming Media Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	KS_TRUECOLORINFO
+product: Windows
+targetos: Windows
+req.typenames: "*PKS_TRUECOLORINFO, KS_TRUECOLORINFO"
 ---
 
 # tag_KS_TRUECOLORINFO structure

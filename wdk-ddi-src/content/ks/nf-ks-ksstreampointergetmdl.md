@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsStreamPointerGetMdl
-title : KsStreamPointerGetMdl function
-author : windows-driver-content
-description : The KsStreamPointerGetMdl function returns the MDL associated with the frame referenced by StreamPointer.
-old-location : stream\ksstreampointergetmdl.htm
-old-project : stream
-ms.assetid : 05d37fbd-9bdc-478a-8772-6f63d1363c1c
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ks/KsStreamPointerGetMdl, KsStreamPointerGetMdl, KsStreamPointerGetMdl function [Streaming Media Devices], stream.ksstreampointergetmdl, avfunc_94dcd1e0-4882-4703-b69a-9ca8b21d30a0.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsStreamPointerGetMdl
+title: KsStreamPointerGetMdl function
+author: windows-driver-content
+description: The KsStreamPointerGetMdl function returns the MDL associated with the frame referenced by StreamPointer.
+old-location: stream\ksstreampointergetmdl.htm
+old-project: stream
+ms.assetid: 05d37fbd-9bdc-478a-8772-6f63d1363c1c
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ks/KsStreamPointerGetMdl, KsStreamPointerGetMdl, KsStreamPointerGetMdl function [Streaming Media Devices], stream.ksstreampointergetmdl, avfunc_94dcd1e0-4882-4703-b69a-9ca8b21d30a0.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsStreamPointerGetMdl
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

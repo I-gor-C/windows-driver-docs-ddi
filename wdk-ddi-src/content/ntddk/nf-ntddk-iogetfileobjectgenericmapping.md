@@ -1,41 +1,46 @@
 ---
-UID : NF:ntddk.IoGetFileObjectGenericMapping
-title : IoGetFileObjectGenericMapping function
-author : windows-driver-content
-description : The IoGetFileObjectGenericMapping routine returns information about the mapping between each generic access right and the set of specific access rights for file objects.
-old-location : kernel\iogetfileobjectgenericmapping.htm
-old-project : kernel
-ms.assetid : eae8a64f-c80a-4e70-b332-6cc098273d7c
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : k104_90acd8aa-7b11-4ee8-b6c7-84e7c849b131.xml, IoGetFileObjectGenericMapping routine [Kernel-Mode Driver Architecture], ntddk/IoGetFileObjectGenericMapping, kernel.iogetfileobjectgenericmapping, IoGetFileObjectGenericMapping
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 2000 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : IrqlIoPassive5, PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.IoGetFileObjectGenericMapping
+title: IoGetFileObjectGenericMapping function
+author: windows-driver-content
+description: The IoGetFileObjectGenericMapping routine returns information about the mapping between each generic access right and the set of specific access rights for file objects.
+old-location: kernel\iogetfileobjectgenericmapping.htm
+old-project: kernel
+ms.assetid: eae8a64f-c80a-4e70-b332-6cc098273d7c
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: k104_90acd8aa-7b11-4ee8-b6c7-84e7c849b131.xml, IoGetFileObjectGenericMapping routine [Kernel-Mode Driver Architecture], ntddk/IoGetFileObjectGenericMapping, kernel.iogetfileobjectgenericmapping, IoGetFileObjectGenericMapping
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 2000 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: IrqlIoPassive5, PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoGetFileObjectGenericMapping
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

@@ -1,41 +1,49 @@
 ---
-UID : NF:dbgeng.IDebugDataSpaces4.ReadControl
-title : IDebugDataSpaces4::ReadControl method
-author : windows-driver-content
-description : The ReadControl method reads implementation-specific system data.
-old-location : debugger\readcontrol.htm
-old-project : debugger
-ms.assetid : 52f65e2a-97a7-4c1c-a021-208bc2520b7d
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : ReadControl, IDebugDataSpaces2::ReadControl, IDebugDataSpaces3 interface [Windows Debugging], ReadControl method, IDebugDataSpaces3::ReadControl, IDebugDataSpaces2 interface [Windows Debugging], ReadControl method, ReadControl method [Windows Debugging], IDebugDataSpaces3 interface, ReadControl method [Windows Debugging], IDebugDataSpaces interface, dbgeng/IDebugDataSpaces4::ReadControl, IDebugDataSpaces interface [Windows Debugging], ReadControl method, dbgeng/IDebugDataSpaces::ReadControl, debugger.readcontrol, IDebugDataSpaces4::ReadControl, IDebugDataSpaces_bca10b0c-a1bb-49bf-aa76-4e790a907a9f.xml, IDebugDataSpaces::ReadControl, ReadControl method [Windows Debugging], ReadControl method [Windows Debugging], IDebugDataSpaces2 interface, dbgeng/IDebugDataSpaces3::ReadControl, IDebugDataSpaces4, ReadControl method [Windows Debugging], IDebugDataSpaces4 interface, dbgeng/IDebugDataSpaces2::ReadControl, IDebugDataSpaces4 interface [Windows Debugging], ReadControl method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugDataSpaces4.ReadControl
+title: IDebugDataSpaces4::ReadControl method
+author: windows-driver-content
+description: The ReadControl method reads implementation-specific system data.
+old-location: debugger\readcontrol.htm
+old-project: debugger
+ms.assetid: 52f65e2a-97a7-4c1c-a021-208bc2520b7d
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: ReadControl, IDebugDataSpaces2::ReadControl, IDebugDataSpaces3 interface [Windows Debugging], ReadControl method, IDebugDataSpaces3::ReadControl, IDebugDataSpaces2 interface [Windows Debugging], ReadControl method, ReadControl method [Windows Debugging], IDebugDataSpaces3 interface, ReadControl method [Windows Debugging], IDebugDataSpaces interface, dbgeng/IDebugDataSpaces4::ReadControl, IDebugDataSpaces interface [Windows Debugging], ReadControl method, dbgeng/IDebugDataSpaces::ReadControl, debugger.readcontrol, IDebugDataSpaces4::ReadControl, IDebugDataSpaces_bca10b0c-a1bb-49bf-aa76-4e790a907a9f.xml, IDebugDataSpaces::ReadControl, ReadControl method [Windows Debugging], ReadControl method [Windows Debugging], IDebugDataSpaces2 interface, dbgeng/IDebugDataSpaces3::ReadControl, IDebugDataSpaces4, ReadControl method [Windows Debugging], IDebugDataSpaces4 interface, dbgeng/IDebugDataSpaces2::ReadControl, IDebugDataSpaces4 interface [Windows Debugging], ReadControl method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugDataSpaces.ReadControl
+-	IDebugDataSpaces2.ReadControl
+-	IDebugDataSpaces3.ReadControl
+-	IDebugDataSpaces4.ReadControl
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

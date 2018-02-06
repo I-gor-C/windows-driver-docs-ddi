@@ -1,42 +1,48 @@
 ---
-UID : NF:srb.ScsiPortReadPortBufferUlong
-title : ScsiPortReadPortBufferUlong function
-author : windows-driver-content
-description : The ScsiPortReadPortBufferUlong routine transfers a given number of ULONG values from the HBA to a buffer.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future.
-old-location : storage\scsiportreadportbufferulong.htm
-old-project : storage
-ms.assetid : 719210f5-22d6-425d-aff0-aefbebfbfca2
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : scsiprt_5da99f27-5758-4e1b-af45-0d9069b55af7.xml, storage.scsiportreadportbufferulong, ScsiPortReadPortBufferUlong routine [Storage Devices], ScsiPortReadPortBufferUlong, srb/ScsiPortReadPortBufferUlong
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : srb.h
-req.include-header : Miniport.h, Scsi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Scsiport.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SPB_CONTROLLER_CONFIG, *PSPB_CONTROLLER_CONFIG
-req.product : Windows 10 or later.
+UID: NF:srb.ScsiPortReadPortBufferUlong
+title: ScsiPortReadPortBufferUlong function
+author: windows-driver-content
+description: The ScsiPortReadPortBufferUlong routine transfers a given number of ULONG values from the HBA to a buffer.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future.
+old-location: storage\scsiportreadportbufferulong.htm
+old-project: storage
+ms.assetid: 719210f5-22d6-425d-aff0-aefbebfbfca2
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: scsiprt_5da99f27-5758-4e1b-af45-0d9069b55af7.xml, storage.scsiportreadportbufferulong, ScsiPortReadPortBufferUlong routine [Storage Devices], ScsiPortReadPortBufferUlong, srb/ScsiPortReadPortBufferUlong
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: srb.h
+req.include-header: Miniport.h, Scsi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Scsiport.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Scsiport.lib
+-	Scsiport.dll
+apiname:
+-	ScsiPortReadPortBufferUlong
+product: Windows
+targetos: Windows
+req.typenames: SPB_CONTROLLER_CONFIG, *PSPB_CONTROLLER_CONFIG
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NC:dispmprt.DXGKDDI_OPM_CONFIGURE_PROTECTED_OUTPUT
-title : DXGKDDI_OPM_CONFIGURE_PROTECTED_OUTPUT
-author : windows-driver-content
-description : The DxgkDdiOPMConfigureProtectedOutput function configures the given protected output object.
-old-location : display\dxgkddiopmconfigureprotectedoutput.htm
-old-project : display
-ms.assetid : a7829587-c1e7-43ec-a0bb-92bca94b7c3d
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkddiopmconfigureprotectedoutput, DxgkDdiOPMConfigureProtectedOutput callback function [Display Devices], DxgkDdiOPMConfigureProtectedOutput, DXGKDDI_OPM_CONFIGURE_PROTECTED_OUTPUT, DXGKDDI_OPM_CONFIGURE_PROTECTED_OUTPUT, dispmprt/DxgkDdiOPMConfigureProtectedOutput, Dm_Opm_functions_4e8394b3-68b4-4747-a375-a767edbccc2c.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : dispmprt.h
-req.include-header : Dispmprt.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
+UID: NC:dispmprt.DXGKDDI_OPM_CONFIGURE_PROTECTED_OUTPUT
+title: DXGKDDI_OPM_CONFIGURE_PROTECTED_OUTPUT
+author: windows-driver-content
+description: The DxgkDdiOPMConfigureProtectedOutput function configures the given protected output object.
+old-location: display\dxgkddiopmconfigureprotectedoutput.htm
+old-project: display
+ms.assetid: a7829587-c1e7-43ec-a0bb-92bca94b7c3d
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkddiopmconfigureprotectedoutput, DxgkDdiOPMConfigureProtectedOutput callback function [Display Devices], DxgkDdiOPMConfigureProtectedOutput, DXGKDDI_OPM_CONFIGURE_PROTECTED_OUTPUT, DXGKDDI_OPM_CONFIGURE_PROTECTED_OUTPUT, dispmprt/DxgkDdiOPMConfigureProtectedOutput, Dm_Opm_functions_4e8394b3-68b4-4747-a375-a767edbccc2c.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: dispmprt.h
+req.include-header: Dispmprt.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	dispmprt.h
+apiname:
+-	DxgkDdiOPMConfigureProtectedOutput
+product: Windows
+targetos: Windows
+req.typenames: SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ---
 
 

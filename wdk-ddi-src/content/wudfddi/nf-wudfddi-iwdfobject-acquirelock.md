@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFObject.AcquireLock
-title : IWDFObject::AcquireLock method
-author : windows-driver-content
-description : The AcquireLock method prevents the framework from calling methods of interfaces that a driver registered.
-old-location : wdf\iwdfobject_acquirelock.htm
-old-project : wdf
-ms.assetid : f69328fb-356b-4381-ae6e-df39ac60e032
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : UMDFBaseObjectRef_3a9b581b-87cd-489d-b945-924489d5c3b9.xml, umdf.iwdfobject_acquirelock, wdf.iwdfobject_acquirelock, IWDFObject::AcquireLock, AcquireLock method, AcquireLock, AcquireLock method, IWDFObject interface, IWDFObject, IWDFObject interface, AcquireLock method, wudfddi/IWDFObject::AcquireLock
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.5
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFObject.AcquireLock
+title: IWDFObject::AcquireLock method
+author: windows-driver-content
+description: The AcquireLock method prevents the framework from calling methods of interfaces that a driver registered.
+old-location: wdf\iwdfobject_acquirelock.htm
+old-project: wdf
+ms.assetid: f69328fb-356b-4381-ae6e-df39ac60e032
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: UMDFBaseObjectRef_3a9b581b-87cd-489d-b945-924489d5c3b9.xml, umdf.iwdfobject_acquirelock, wdf.iwdfobject_acquirelock, IWDFObject::AcquireLock, AcquireLock method, AcquireLock, AcquireLock method, IWDFObject interface, IWDFObject, IWDFObject interface, AcquireLock method, wudfddi/IWDFObject::AcquireLock
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.5
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFObject.AcquireLock
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

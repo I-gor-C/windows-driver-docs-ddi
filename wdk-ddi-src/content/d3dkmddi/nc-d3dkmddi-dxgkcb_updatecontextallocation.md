@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dkmddi.DXGKCB_UPDATECONTEXTALLOCATION
-title : DXGKCB_UPDATECONTEXTALLOCATION
-author : windows-driver-content
-description : DxgkCbUpdateContextAllocation is used to update the content of a context allocation.
-old-location : display\dxgkcbupdatecontextallocation.htm
-old-project : display
-ms.assetid : 708A33C2-9620-4259-845A-2F862B6F209B
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkcbupdatecontextallocation, DxgkCbUpdateContextAllocation callback function [Display Devices], DxgkCbUpdateContextAllocation, DXGKCB_UPDATECONTEXTALLOCATION, DXGKCB_UPDATECONTEXTALLOCATION, d3dkmddi/DxgkCbUpdateContextAllocation
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
+UID: NC:d3dkmddi.DXGKCB_UPDATECONTEXTALLOCATION
+title: DXGKCB_UPDATECONTEXTALLOCATION
+author: windows-driver-content
+description: DxgkCbUpdateContextAllocation is used to update the content of a context allocation.
+old-location: display\dxgkcbupdatecontextallocation.htm
+old-project: display
+ms.assetid: 708A33C2-9620-4259-845A-2F862B6F209B
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkcbupdatecontextallocation, DxgkCbUpdateContextAllocation callback function [Display Devices], DxgkCbUpdateContextAllocation, DXGKCB_UPDATECONTEXTALLOCATION, DXGKCB_UPDATECONTEXTALLOCATION, d3dkmddi/DxgkCbUpdateContextAllocation
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DxgkCbUpdateContextAllocation
+product: Windows
+targetos: Windows
+req.typenames: DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
 

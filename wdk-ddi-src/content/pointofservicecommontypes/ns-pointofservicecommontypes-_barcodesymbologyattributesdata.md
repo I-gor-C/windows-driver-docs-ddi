@@ -1,41 +1,46 @@
 ---
-UID : NS:pointofservicecommontypes._BarcodeSymbologyAttributesData
-title : "_BarcodeSymbologyAttributesData"
-author : windows-driver-content
-description : The BarcodeSymbologyAttributesData structure contains the attribute information for a barcode symbology.
-old-location : pos\barcodesymbologyattributesdata.htm
-old-project : pos
-ms.assetid : 0682B3AA-13F5-4686-AD78-D45DA85398B7
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : pos.barcodesymbologyattributesdata, BarcodeSymbologyAttributesData, _BarcodeSymbologyAttributesData, BarcodeSymbologyAttributesData structure, pointofservicecommontypes/BarcodeSymbologyAttributesData
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : pointofservicecommontypes.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Called at PASSIVE_LEVEL.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : BarcodeSymbologyAttributesData
+UID: NS:pointofservicecommontypes._BarcodeSymbologyAttributesData
+title: "_BarcodeSymbologyAttributesData"
+author: windows-driver-content
+description: The BarcodeSymbologyAttributesData structure contains the attribute information for a barcode symbology.
+old-location: pos\barcodesymbologyattributesdata.htm
+old-project: pos
+ms.assetid: 0682B3AA-13F5-4686-AD78-D45DA85398B7
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: pos.barcodesymbologyattributesdata, BarcodeSymbologyAttributesData, _BarcodeSymbologyAttributesData, BarcodeSymbologyAttributesData structure, pointofservicecommontypes/BarcodeSymbologyAttributesData
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: pointofservicecommontypes.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Called at PASSIVE_LEVEL.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	pointofservicecommontypes.h
+apiname:
+-	BarcodeSymbologyAttributesData
+product: Windows
+targetos: Windows
+req.typenames: BarcodeSymbologyAttributesData
 ---
 
 # _BarcodeSymbologyAttributesData structure

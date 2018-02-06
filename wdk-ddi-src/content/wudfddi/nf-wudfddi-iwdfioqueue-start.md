@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFIoQueue.Start
-title : IWDFIoQueue::Start method
-author : windows-driver-content
-description : The Start method enables an I/O queue to start receiving new I/O requests and delivering them to a driver.
-old-location : wdf\iwdfioqueue_start.htm
-old-project : wdf
-ms.assetid : 3e7d8dd5-4336-472e-a71f-8abb946af8be
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : Start method, UMDFQueueObjectRef_d53b70a8-b022-4e2c-aa3d-d29aac4695ad.xml, IWDFIoQueue interface, Start method, IWDFIoQueue::Start, umdf.iwdfioqueue_start, wdf.iwdfioqueue_start, wudfddi/IWDFIoQueue::Start, Start, Start method, IWDFIoQueue interface, IWDFIoQueue
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.5
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFIoQueue.Start
+title: IWDFIoQueue::Start method
+author: windows-driver-content
+description: The Start method enables an I/O queue to start receiving new I/O requests and delivering them to a driver.
+old-location: wdf\iwdfioqueue_start.htm
+old-project: wdf
+ms.assetid: 3e7d8dd5-4336-472e-a71f-8abb946af8be
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: Start method, UMDFQueueObjectRef_d53b70a8-b022-4e2c-aa3d-d29aac4695ad.xml, IWDFIoQueue interface, Start method, IWDFIoQueue::Start, umdf.iwdfioqueue_start, wdf.iwdfioqueue_start, wudfddi/IWDFIoQueue::Start, Start, Start method, IWDFIoQueue interface, IWDFIoQueue
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.5
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFIoQueue.Start
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

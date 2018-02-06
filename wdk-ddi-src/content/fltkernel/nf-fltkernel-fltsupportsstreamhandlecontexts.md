@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltSupportsStreamHandleContexts
-title : FltSupportsStreamHandleContexts function
-author : windows-driver-content
-description : FltSupportsStreamHandleContexts determines whether stream handle contexts are supported on a given file object.
-old-location : ifsk\fltsupportsstreamhandlecontexts.htm
-old-project : ifsk
-ms.assetid : 8f4cf93f-eba7-4d6f-8b07-7c095e13f95e
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltSupportsStreamHandleContexts, FltApiRef_p_to_z_07134b31-8768-43bc-904e-9abd945a166b.xml, ifsk.fltsupportsstreamhandlecontexts, FltSupportsStreamHandleContexts function [Installable File System Drivers], fltkernel/FltSupportsStreamHandleContexts
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltSupportsStreamHandleContexts
+title: FltSupportsStreamHandleContexts function
+author: windows-driver-content
+description: FltSupportsStreamHandleContexts determines whether stream handle contexts are supported on a given file object.
+old-location: ifsk\fltsupportsstreamhandlecontexts.htm
+old-project: ifsk
+ms.assetid: 8f4cf93f-eba7-4d6f-8b07-7c095e13f95e
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltSupportsStreamHandleContexts, FltApiRef_p_to_z_07134b31-8768-43bc-904e-9abd945a166b.xml, ifsk.fltsupportsstreamhandlecontexts, FltSupportsStreamHandleContexts function [Installable File System Drivers], fltkernel/FltSupportsStreamHandleContexts
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltSupportsStreamHandleContexts
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

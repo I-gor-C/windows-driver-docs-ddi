@@ -1,41 +1,46 @@
 ---
-UID : NS:hbapiwmi._SetFC3MgmtInfo_IN
-title : "_SetFC3MgmtInfo_IN"
-author : windows-driver-content
-description : The SetFC3MgmtInfo_IN structure is used to deliver input parameter data to the SetFC3MgmtInfo WMI method.
-old-location : storage\setfc3mgmtinfo_in.htm
-old-project : storage
-ms.assetid : 2ad51d73-67f3-4ce0-b7e1-6bdc1b7e3b0c
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : "*PSetFC3MgmtInfo_IN, SetFC3MgmtInfo_IN structure [Storage Devices], hbapiwmi/PSetFC3MgmtInfo_IN, storage.setfc3mgmtinfo_in, PSetFC3MgmtInfo_IN, hbapiwmi/SetFC3MgmtInfo_IN, PSetFC3MgmtInfo_IN structure pointer [Storage Devices], structs-Fibre_d4b69005-dc94-411f-810a-6767699e0b11.xml, _SetFC3MgmtInfo_IN, SetFC3MgmtInfo_IN"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : hbapiwmi.h
-req.include-header : Hbapiwmi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSetFC3MgmtInfo_IN, SetFC3MgmtInfo_IN"
+UID: NS:hbapiwmi._SetFC3MgmtInfo_IN
+title: "_SetFC3MgmtInfo_IN"
+author: windows-driver-content
+description: The SetFC3MgmtInfo_IN structure is used to deliver input parameter data to the SetFC3MgmtInfo WMI method.
+old-location: storage\setfc3mgmtinfo_in.htm
+old-project: storage
+ms.assetid: 2ad51d73-67f3-4ce0-b7e1-6bdc1b7e3b0c
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: "*PSetFC3MgmtInfo_IN, SetFC3MgmtInfo_IN structure [Storage Devices], hbapiwmi/PSetFC3MgmtInfo_IN, storage.setfc3mgmtinfo_in, PSetFC3MgmtInfo_IN, hbapiwmi/SetFC3MgmtInfo_IN, PSetFC3MgmtInfo_IN structure pointer [Storage Devices], structs-Fibre_d4b69005-dc94-411f-810a-6767699e0b11.xml, _SetFC3MgmtInfo_IN, SetFC3MgmtInfo_IN"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: hbapiwmi.h
+req.include-header: Hbapiwmi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hbapiwmi.h
+apiname:
+-	SetFC3MgmtInfo_IN
+product: Windows
+targetos: Windows
+req.typenames: "*PSetFC3MgmtInfo_IN, SetFC3MgmtInfo_IN"
 ---
 
 # _SetFC3MgmtInfo_IN structure

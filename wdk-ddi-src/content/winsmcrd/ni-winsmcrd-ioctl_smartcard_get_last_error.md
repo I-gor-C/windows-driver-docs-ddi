@@ -1,42 +1,47 @@
 ---
-UID : NI:winsmcrd.IOCTL_SMARTCARD_GET_LAST_ERROR
-title : IOCTL_SMARTCARD_GET_LAST_ERROR
-author : windows-driver-content
-description : The IOCTL_SMARTCARD_GET_LAST_ERROR request retrieves the error code of the most previous operation because there is no option to return an error code immediately after an overlapped operation is complete.
-old-location : smartcrd\ioctl_smartcard_get_last_error.htm
-old-project : smartcrd
-ms.assetid : eb482764-3a78-498b-985c-1efc77000291
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : smartcrd.ioctl_smartcard_get_last_error, IOCTL_SMARTCARD_GET_LAST_ERROR control code [Smart Card Reader Devices], IOCTL_SMARTCARD_GET_LAST_ERROR, winsmcrd/IOCTL_SMARTCARD_GET_LAST_ERROR, scioctls_f53172a6-95cb-4d50-9a2b-bccc623bf85b.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : winsmcrd.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDOT11_WPS_DEVICE_NAME, DOT11_WPS_DEVICE_NAME"
-req.product : Windows 10 or later.
+UID: NI:winsmcrd.IOCTL_SMARTCARD_GET_LAST_ERROR
+title: IOCTL_SMARTCARD_GET_LAST_ERROR
+author: windows-driver-content
+description: The IOCTL_SMARTCARD_GET_LAST_ERROR request retrieves the error code of the most previous operation because there is no option to return an error code immediately after an overlapped operation is complete.
+old-location: smartcrd\ioctl_smartcard_get_last_error.htm
+old-project: smartcrd
+ms.assetid: eb482764-3a78-498b-985c-1efc77000291
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: smartcrd.ioctl_smartcard_get_last_error, IOCTL_SMARTCARD_GET_LAST_ERROR control code [Smart Card Reader Devices], IOCTL_SMARTCARD_GET_LAST_ERROR, winsmcrd/IOCTL_SMARTCARD_GET_LAST_ERROR, scioctls_f53172a6-95cb-4d50-9a2b-bccc623bf85b.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: winsmcrd.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Winsmcrd.h
+apiname:
+-	IOCTL_SMARTCARD_GET_LAST_ERROR
+product: Windows
+targetos: Windows
+req.typenames: "*PDOT11_WPS_DEVICE_NAME, DOT11_WPS_DEVICE_NAME"
+req.product: Windows 10 or later.
 ---
 
 # IOCTL_SMARTCARD_GET_LAST_ERROR IOCTL

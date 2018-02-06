@@ -1,42 +1,47 @@
 ---
-UID : NF:storport.StorPortAllocateContiguousMemorySpecifyCacheNode
-title : StorPortAllocateContiguousMemorySpecifyCacheNode function
-author : windows-driver-content
-description : The StorPortAllocateContiguousMemorySpecifyCacheNode routine allocates a range of physically contiguous noncached, nonpaged memory.
-old-location : storage\storportallocatecontiguousmemoryspecifycachenode.htm
-old-project : storage
-ms.assetid : b2ed8c88-9ffd-4601-8fd0-c9390e9ba84d
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storport/StorPortAllocateContiguousMemorySpecifyCacheNode, StorPortAllocateContiguousMemorySpecifyCacheNode, StorPortAllocateContiguousMemorySpecifyCacheNode routine [Storage Devices], storprt_d91d6ab4-677e-4bc0-a0b5-1c252475ecbb.xml, storage.storportallocatecontiguousmemoryspecifycachenode
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 7.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : StorPortIrql
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STOR_SPINLOCK
-req.product : Windows 10 or later.
+UID: NF:storport.StorPortAllocateContiguousMemorySpecifyCacheNode
+title: StorPortAllocateContiguousMemorySpecifyCacheNode function
+author: windows-driver-content
+description: The StorPortAllocateContiguousMemorySpecifyCacheNode routine allocates a range of physically contiguous noncached, nonpaged memory.
+old-location: storage\storportallocatecontiguousmemoryspecifycachenode.htm
+old-project: storage
+ms.assetid: b2ed8c88-9ffd-4601-8fd0-c9390e9ba84d
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storport/StorPortAllocateContiguousMemorySpecifyCacheNode, StorPortAllocateContiguousMemorySpecifyCacheNode, StorPortAllocateContiguousMemorySpecifyCacheNode routine [Storage Devices], storprt_d91d6ab4-677e-4bc0-a0b5-1c252475ecbb.xml, storage.storportallocatecontiguousmemoryspecifycachenode
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 7.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: StorPortIrql
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	storport.h
+apiname:
+-	StorPortAllocateContiguousMemorySpecifyCacheNode
+product: Windows
+targetos: Windows
+req.typenames: STOR_SPINLOCK
+req.product: Windows 10 or later.
 ---
 
 

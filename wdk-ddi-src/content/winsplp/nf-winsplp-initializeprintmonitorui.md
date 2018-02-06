@@ -1,42 +1,47 @@
 ---
-UID : NF:winsplp.InitializePrintMonitorUI
-title : InitializePrintMonitorUI function
-author : windows-driver-content
-description : A port monitor UI DLL's InitializePrintMonitorUI function supplies the print spooler with addresses of DLL functions.
-old-location : print\initializeprintmonitorui.htm
-old-project : print
-ms.assetid : baa80f8c-68ed-43a3-8c82-79a4388f9ab6
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : InitializePrintMonitorUI, spoolfnc_927446a6-117a-4585-8ce0-9a4b543c4037.xml, print.initializeprintmonitorui, InitializePrintMonitorUI function [Print Devices], winsplp/InitializePrintMonitorUI
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : winsplp.h
-req.include-header : Winsplp.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NOTIFICATION_CONFIG_FLAGS
-req.product : Windows 10 or later.
+UID: NF:winsplp.InitializePrintMonitorUI
+title: InitializePrintMonitorUI function
+author: windows-driver-content
+description: A port monitor UI DLL's InitializePrintMonitorUI function supplies the print spooler with addresses of DLL functions.
+old-location: print\initializeprintmonitorui.htm
+old-project: print
+ms.assetid: baa80f8c-68ed-43a3-8c82-79a4388f9ab6
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: InitializePrintMonitorUI, spoolfnc_927446a6-117a-4585-8ce0-9a4b543c4037.xml, print.initializeprintmonitorui, InitializePrintMonitorUI function [Print Devices], winsplp/InitializePrintMonitorUI
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: winsplp.h
+req.include-header: Winsplp.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Winsplp.h
+apiname:
+-	InitializePrintMonitorUI
+product: Windows
+targetos: Windows
+req.typenames: NOTIFICATION_CONFIG_FLAGS
+req.product: Windows 10 or later.
 ---
 
 

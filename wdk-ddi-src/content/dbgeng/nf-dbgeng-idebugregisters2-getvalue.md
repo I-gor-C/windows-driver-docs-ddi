@@ -1,41 +1,47 @@
 ---
-UID : NF:dbgeng.IDebugRegisters2.GetValue
-title : IDebugRegisters2::GetValue method
-author : windows-driver-content
-description : The GetValue method gets the value of one of the target's registers.
-old-location : debugger\getvalue.htm
-old-project : debugger
-ms.assetid : 227d7b4f-bf94-4763-bb1f-32efbc087bb1
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : dbgeng/IDebugRegisters::GetValue, debugger.getvalue, IDebugRegisters interface [Windows Debugging], GetValue method, GetValue method [Windows Debugging], IDebugRegisters2 interface, IDebugRegisters2::GetValue, IDebugRegisters_f3e89ca1-7516-476e-8c85-560d8f28f0a8.xml, IDebugRegisters2, IDebugRegisters::GetValue, GetValue method [Windows Debugging], IDebugRegisters interface, dbgeng/IDebugRegisters2::GetValue, GetValue method [Windows Debugging], IDebugRegisters2 interface [Windows Debugging], GetValue method, GetValue
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : DbgEng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugRegisters2.GetValue
+title: IDebugRegisters2::GetValue method
+author: windows-driver-content
+description: The GetValue method gets the value of one of the target's registers.
+old-location: debugger\getvalue.htm
+old-project: debugger
+ms.assetid: 227d7b4f-bf94-4763-bb1f-32efbc087bb1
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: dbgeng/IDebugRegisters::GetValue, debugger.getvalue, IDebugRegisters interface [Windows Debugging], GetValue method, GetValue method [Windows Debugging], IDebugRegisters2 interface, IDebugRegisters2::GetValue, IDebugRegisters_f3e89ca1-7516-476e-8c85-560d8f28f0a8.xml, IDebugRegisters2, IDebugRegisters::GetValue, GetValue method [Windows Debugging], IDebugRegisters interface, dbgeng/IDebugRegisters2::GetValue, GetValue method [Windows Debugging], IDebugRegisters2 interface [Windows Debugging], GetValue method, GetValue
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: DbgEng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugRegisters.GetValue
+-	IDebugRegisters2.GetValue
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

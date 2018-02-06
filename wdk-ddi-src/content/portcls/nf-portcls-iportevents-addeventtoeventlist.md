@@ -1,41 +1,46 @@
 ---
-UID : NF:portcls.IPortEvents.AddEventToEventList
-title : IPortEvents::AddEventToEventList method
-author : windows-driver-content
-description : The AddEventToEventList method adds an event to the port driver's event list.
-old-location : audio\iportevents_addeventtoeventlist.htm
-old-project : audio
-ms.assetid : 49b01942-3562-4fb2-907b-8863b2f09f8e
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : portcls/IPortEvents::AddEventToEventList, AddEventToEventList method [Audio Devices], IPortEvents interface, audio.iportevents_addeventtoeventlist, IPortEvents::AddEventToEventList, AddEventToEventList, audmp-routines_13ea6aa7-0f65-43d4-b80c-4aa46102c43e.xml, IPortEvents interface [Audio Devices], AddEventToEventList method, IPortEvents, AddEventToEventList method [Audio Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : portcls.h
-req.include-header : Portcls.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : portcls.h
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.IPortEvents.AddEventToEventList
+title: IPortEvents::AddEventToEventList method
+author: windows-driver-content
+description: The AddEventToEventList method adds an event to the port driver's event list.
+old-location: audio\iportevents_addeventtoeventlist.htm
+old-project: audio
+ms.assetid: 49b01942-3562-4fb2-907b-8863b2f09f8e
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: portcls/IPortEvents::AddEventToEventList, AddEventToEventList method [Audio Devices], IPortEvents interface, audio.iportevents_addeventtoeventlist, IPortEvents::AddEventToEventList, AddEventToEventList, audmp-routines_13ea6aa7-0f65-43d4-b80c-4aa46102c43e.xml, IPortEvents interface [Audio Devices], AddEventToEventList method, IPortEvents, AddEventToEventList method [Audio Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: portcls.h
+req.include-header: Portcls.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: portcls.h
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	portcls.h
+apiname:
+-	IPortEvents.AddEventToEventList
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

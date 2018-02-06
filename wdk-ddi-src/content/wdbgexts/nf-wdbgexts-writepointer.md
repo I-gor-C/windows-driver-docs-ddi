@@ -1,42 +1,47 @@
 ---
-UID : NF:wdbgexts.WritePointer
-title : WritePointer function
-author : windows-driver-content
-description : The WritePointer function writes a pointer to the target.
-old-location : debugger\writepointer.htm
-old-project : debugger
-ms.assetid : 5f3d6cd6-e138-4114-8fac-03cbe1c7aa68
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : debugger.writepointer, WritePointer, WdbgExts_Ref_ab18dbae-3a69-43a1-97dd-d0711e4db54e.xml, WritePointer function [Windows Debugging], wdbgexts/WritePointer
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdbgexts.h
-req.include-header : Wdbgexts.h, Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXT_TDOP
-req.product : Windows 10 or later.
+UID: NF:wdbgexts.WritePointer
+title: WritePointer function
+author: windows-driver-content
+description: The WritePointer function writes a pointer to the target.
+old-location: debugger\writepointer.htm
+old-project: debugger
+ms.assetid: 5f3d6cd6-e138-4114-8fac-03cbe1c7aa68
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: debugger.writepointer, WritePointer, WdbgExts_Ref_ab18dbae-3a69-43a1-97dd-d0711e4db54e.xml, WritePointer function [Windows Debugging], wdbgexts/WritePointer
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdbgexts.h
+req.include-header: Wdbgexts.h, Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdbgexts.h
+apiname:
+-	WritePointer
+product: Windows
+targetos: Windows
+req.typenames: EXT_TDOP
+req.product: Windows 10 or later.
 ---
 
 

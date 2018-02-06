@@ -1,41 +1,46 @@
 ---
-UID : NS:ndiswwan._NDIS_WWAN_AUTH_CHALLENGE
-title : "_NDIS_WWAN_AUTH_CHALLENGE"
-author : windows-driver-content
-description : The NDIS_WWAN_AUTH_CHALLENGE structure represents an authentication challenge used by one of the authentication methods.
-old-location : netvista\ndis_wwan_auth_challenge.htm
-old-project : netvista
-ms.assetid : 7C5CE666-D8C9-4A01-A38E-612B69E3A5FB
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NDIS_WWAN_AUTH_CHALLENGE structure [Network Drivers Starting with Windows Vista], PNDIS_WWAN_AUTH_CHALLENGE, *PNDIS_WWAN_AUTH_CHALLENGE, ndiswwan/PNDIS_WWAN_AUTH_CHALLENGE, _NDIS_WWAN_AUTH_CHALLENGE, netvista.ndis_wwan_auth_challenge, PNDIS_WWAN_AUTH_CHALLENGE structure pointer [Network Drivers Starting with Windows Vista], NDIS_WWAN_AUTH_CHALLENGE, ndiswwan/NDIS_WWAN_AUTH_CHALLENGE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndiswwan.h
-req.include-header : Ndiswwan.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with  Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_WWAN_AUTH_CHALLENGE, *PNDIS_WWAN_AUTH_CHALLENGE
+UID: NS:ndiswwan._NDIS_WWAN_AUTH_CHALLENGE
+title: "_NDIS_WWAN_AUTH_CHALLENGE"
+author: windows-driver-content
+description: The NDIS_WWAN_AUTH_CHALLENGE structure represents an authentication challenge used by one of the authentication methods.
+old-location: netvista\ndis_wwan_auth_challenge.htm
+old-project: netvista
+ms.assetid: 7C5CE666-D8C9-4A01-A38E-612B69E3A5FB
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NDIS_WWAN_AUTH_CHALLENGE structure [Network Drivers Starting with Windows Vista], PNDIS_WWAN_AUTH_CHALLENGE, *PNDIS_WWAN_AUTH_CHALLENGE, ndiswwan/PNDIS_WWAN_AUTH_CHALLENGE, _NDIS_WWAN_AUTH_CHALLENGE, netvista.ndis_wwan_auth_challenge, PNDIS_WWAN_AUTH_CHALLENGE structure pointer [Network Drivers Starting with Windows Vista], NDIS_WWAN_AUTH_CHALLENGE, ndiswwan/NDIS_WWAN_AUTH_CHALLENGE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndiswwan.h
+req.include-header: Ndiswwan.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with  Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndiswwan.h
+apiname:
+-	NDIS_WWAN_AUTH_CHALLENGE
+product: Windows
+targetos: Windows
+req.typenames: NDIS_WWAN_AUTH_CHALLENGE, *PNDIS_WWAN_AUTH_CHALLENGE
 ---
 
 # _NDIS_WWAN_AUTH_CHALLENGE structure

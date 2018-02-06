@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddk._PCI_EXPRESS_ROOT_CAPABILITIES_REGISTER
-title : "_PCI_EXPRESS_ROOT_CAPABILITIES_REGISTER"
-author : windows-driver-content
-description : The PCI_EXPRESS_ROOT_CAPABILITIES_REGISTER structure describes a PCI Express (PCIe) root capabilities register of a PCIe capability structure.
-old-location : pci\pci_express_root_capabilities_register.htm
-old-project : PCI
-ms.assetid : d4e6cc35-f6f1-4983-b4d6-2a524245fd15
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : ntddk/PCI_EXPRESS_ROOT_CAPABILITIES_REGISTER, PPCI_EXPRESS_ROOT_CAPABILITIES_REGISTER, ntddk/PPCI_EXPRESS_ROOT_CAPABILITIES_REGISTER, PCI.pci_express_root_capabilities_register, PPCI_EXPRESS_ROOT_CAPABILITIES_REGISTER union pointer [Buses], pci_struct_5b1d9283-10c9-40dc-8dc2-552ab7a2cab5.xml, PCI_EXPRESS_ROOT_CAPABILITIES_REGISTER, PCI_EXPRESS_ROOT_CAPABILITIES_REGISTER union [Buses], _PCI_EXPRESS_ROOT_CAPABILITIES_REGISTER, *PPCI_EXPRESS_ROOT_CAPABILITIES_REGISTER
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPCI_EXPRESS_ROOT_CAPABILITIES_REGISTER, PCI_EXPRESS_ROOT_CAPABILITIES_REGISTER"
+UID: NS:ntddk._PCI_EXPRESS_ROOT_CAPABILITIES_REGISTER
+title: "_PCI_EXPRESS_ROOT_CAPABILITIES_REGISTER"
+author: windows-driver-content
+description: The PCI_EXPRESS_ROOT_CAPABILITIES_REGISTER structure describes a PCI Express (PCIe) root capabilities register of a PCIe capability structure.
+old-location: pci\pci_express_root_capabilities_register.htm
+old-project: PCI
+ms.assetid: d4e6cc35-f6f1-4983-b4d6-2a524245fd15
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: ntddk/PCI_EXPRESS_ROOT_CAPABILITIES_REGISTER, PPCI_EXPRESS_ROOT_CAPABILITIES_REGISTER, ntddk/PPCI_EXPRESS_ROOT_CAPABILITIES_REGISTER, PCI.pci_express_root_capabilities_register, PPCI_EXPRESS_ROOT_CAPABILITIES_REGISTER union pointer [Buses], pci_struct_5b1d9283-10c9-40dc-8dc2-552ab7a2cab5.xml, PCI_EXPRESS_ROOT_CAPABILITIES_REGISTER, PCI_EXPRESS_ROOT_CAPABILITIES_REGISTER union [Buses], _PCI_EXPRESS_ROOT_CAPABILITIES_REGISTER, *PPCI_EXPRESS_ROOT_CAPABILITIES_REGISTER
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddk.h
+apiname:
+-	PCI_EXPRESS_ROOT_CAPABILITIES_REGISTER
+product: Windows
+targetos: Windows
+req.typenames: "*PPCI_EXPRESS_ROOT_CAPABILITIES_REGISTER, PCI_EXPRESS_ROOT_CAPABILITIES_REGISTER"
 ---
 
 # _PCI_EXPRESS_ROOT_CAPABILITIES_REGISTER structure

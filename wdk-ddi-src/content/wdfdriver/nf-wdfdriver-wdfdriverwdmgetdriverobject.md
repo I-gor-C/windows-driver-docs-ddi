@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfdriver.WdfDriverWdmGetDriverObject
-title : WdfDriverWdmGetDriverObject function
-author : windows-driver-content
-description : The WdfDriverWdmGetDriverObject method retrieves a pointer to the Windows Driver Model (WDM) driver object that is associated with a specified framework driver object.
-old-location : wdf\wdfdriverwdmgetdriverobject.htm
-old-project : wdf
-ms.assetid : d9755557-6d5d-4ef0-b868-f05e5b82da78
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WdfDriverWdmGetDriverObject method, wdfdriver/WdfDriverWdmGetDriverObject, PFN_WDFDRIVERWDMGETDRIVEROBJECT, DFDriverObjectRef_f196dc43-394e-4839-a64d-8af756f5a374.xml, kmdf.wdfdriverwdmgetdriverobject, wdf.wdfdriverwdmgetdriverobject, WdfDriverWdmGetDriverObject
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfdriver.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : DriverCreate
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_DRIVER_INIT_FLAGS
-req.product : Windows 10 or later.
+UID: NF:wdfdriver.WdfDriverWdmGetDriverObject
+title: WdfDriverWdmGetDriverObject function
+author: windows-driver-content
+description: The WdfDriverWdmGetDriverObject method retrieves a pointer to the Windows Driver Model (WDM) driver object that is associated with a specified framework driver object.
+old-location: wdf\wdfdriverwdmgetdriverobject.htm
+old-project: wdf
+ms.assetid: d9755557-6d5d-4ef0-b868-f05e5b82da78
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WdfDriverWdmGetDriverObject method, wdfdriver/WdfDriverWdmGetDriverObject, PFN_WDFDRIVERWDMGETDRIVEROBJECT, DFDriverObjectRef_f196dc43-394e-4839-a64d-8af756f5a374.xml, kmdf.wdfdriverwdmgetdriverobject, wdf.wdfdriverwdmgetdriverobject, WdfDriverWdmGetDriverObject
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfdriver.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: DriverCreate
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfDriverWdmGetDriverObject
+product: Windows
+targetos: Windows
+req.typenames: WDF_DRIVER_INIT_FLAGS
+req.product: Windows 10 or later.
 ---
 
 

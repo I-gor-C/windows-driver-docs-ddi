@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._DXVAHDDDI_COLOR_RGBA
-title : "_DXVAHDDDI_COLOR_RGBA"
-author : windows-driver-content
-description : The DXVAHDDDI_COLOR_RGBA structure describes color in RGB terms.
-old-location : display\dxvahdddi_color_rgba.htm
-old-project : display
-ms.assetid : 73779eb1-514e-4103-9af2-0dc0c86cb04e
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DXVA2_Structs_ecf8ab79-edb1-42c8-b873-39cc1f7a1ef8.xml, d3dumddi/DXVAHDDDI_COLOR_RGBA, _DXVAHDDDI_COLOR_RGBA, display.dxvahdddi_color_rgba, DXVAHDDDI_COLOR_RGBA structure [Display Devices], DXVAHDDDI_COLOR_RGBA
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : DXVAHDDDI_COLOR_RGBA is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXVAHDDDI_COLOR_RGBA
+UID: NS:d3dumddi._DXVAHDDDI_COLOR_RGBA
+title: "_DXVAHDDDI_COLOR_RGBA"
+author: windows-driver-content
+description: The DXVAHDDDI_COLOR_RGBA structure describes color in RGB terms.
+old-location: display\dxvahdddi_color_rgba.htm
+old-project: display
+ms.assetid: 73779eb1-514e-4103-9af2-0dc0c86cb04e
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DXVA2_Structs_ecf8ab79-edb1-42c8-b873-39cc1f7a1ef8.xml, d3dumddi/DXVAHDDDI_COLOR_RGBA, _DXVAHDDDI_COLOR_RGBA, display.dxvahdddi_color_rgba, DXVAHDDDI_COLOR_RGBA structure [Display Devices], DXVAHDDDI_COLOR_RGBA
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: DXVAHDDDI_COLOR_RGBA is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	DXVAHDDDI_COLOR_RGBA
+product: Windows
+targetos: Windows
+req.typenames: DXVAHDDDI_COLOR_RGBA
 ---
 
 # _DXVAHDDDI_COLOR_RGBA structure

@@ -1,41 +1,46 @@
 ---
-UID : NF:portcls.IMiniportWaveCyclicStream.NormalizePhysicalPosition
-title : IMiniportWaveCyclicStream::NormalizePhysicalPosition method
-author : windows-driver-content
-description : The NormalizePhysicalPosition method converts a physical buffer position to a time-based value.
-old-location : audio\iminiportwavecyclicstream_normalizephysicalposition.htm
-old-project : audio
-ms.assetid : 554cad50-d952-4658-904b-b2a8a8f75b76
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : NormalizePhysicalPosition method [Audio Devices], IMiniportWaveCyclicStream interface, audio.iminiportwavecyclicstream_normalizephysicalposition, IMiniportWaveCyclicStream interface [Audio Devices], NormalizePhysicalPosition method, IMiniportWaveCyclicStream::NormalizePhysicalPosition, audmp-routines_a1b6d530-8199-4c5d-87ee-8f00d60436b0.xml, IMiniportWaveCyclicStream, NormalizePhysicalPosition, portcls/IMiniportWaveCyclicStream::NormalizePhysicalPosition, NormalizePhysicalPosition method [Audio Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : portcls.h
-req.include-header : Portcls.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : portcls.h
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.IMiniportWaveCyclicStream.NormalizePhysicalPosition
+title: IMiniportWaveCyclicStream::NormalizePhysicalPosition method
+author: windows-driver-content
+description: The NormalizePhysicalPosition method converts a physical buffer position to a time-based value.
+old-location: audio\iminiportwavecyclicstream_normalizephysicalposition.htm
+old-project: audio
+ms.assetid: 554cad50-d952-4658-904b-b2a8a8f75b76
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: NormalizePhysicalPosition method [Audio Devices], IMiniportWaveCyclicStream interface, audio.iminiportwavecyclicstream_normalizephysicalposition, IMiniportWaveCyclicStream interface [Audio Devices], NormalizePhysicalPosition method, IMiniportWaveCyclicStream::NormalizePhysicalPosition, audmp-routines_a1b6d530-8199-4c5d-87ee-8f00d60436b0.xml, IMiniportWaveCyclicStream, NormalizePhysicalPosition, portcls/IMiniportWaveCyclicStream::NormalizePhysicalPosition, NormalizePhysicalPosition method [Audio Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: portcls.h
+req.include-header: Portcls.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: portcls.h
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	portcls.h
+apiname:
+-	IMiniportWaveCyclicStream.NormalizePhysicalPosition
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NC:ndischimney.W_INVALIDATE_OFFLOAD_HANDLER
-title : W_INVALIDATE_OFFLOAD_HANDLER
-author : windows-driver-content
-description : The MiniportInvalidateOffload function invalidates previously offloaded TCP chimney state objects.
-old-location : netvista\miniportinvalidateoffload.htm
-old-project : netvista
-ms.assetid : 58226149-daea-40aa-afb6-13ce615434b3
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.miniportinvalidateoffload, MiniportInvalidateOffload callback function [Network Drivers Starting with Windows Vista], MiniportInvalidateOffload, W_INVALIDATE_OFFLOAD_HANDLER, W_INVALIDATE_OFFLOAD_HANDLER, ndischimney/MiniportInvalidateOffload, tcp_chim_miniport_func_226472dd-905a-42ef-8251-b32acfa93f0b.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ndischimney.h
-req.include-header : Ndischimney.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PD_BUFFER_VIRTUAL_SUBNET_INFO
+UID: NC:ndischimney.W_INVALIDATE_OFFLOAD_HANDLER
+title: W_INVALIDATE_OFFLOAD_HANDLER
+author: windows-driver-content
+description: The MiniportInvalidateOffload function invalidates previously offloaded TCP chimney state objects.
+old-location: netvista\miniportinvalidateoffload.htm
+old-project: netvista
+ms.assetid: 58226149-daea-40aa-afb6-13ce615434b3
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.miniportinvalidateoffload, MiniportInvalidateOffload callback function [Network Drivers Starting with Windows Vista], MiniportInvalidateOffload, W_INVALIDATE_OFFLOAD_HANDLER, W_INVALIDATE_OFFLOAD_HANDLER, ndischimney/MiniportInvalidateOffload, tcp_chim_miniport_func_226472dd-905a-42ef-8251-b32acfa93f0b.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ndischimney.h
+req.include-header: Ndischimney.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ndischimney.h
+apiname:
+-	MiniportInvalidateOffload
+product: Windows
+targetos: Windows
+req.typenames: PD_BUFFER_VIRTUAL_SUBNET_INFO
 ---
 
 

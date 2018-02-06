@@ -1,41 +1,46 @@
 ---
-UID : NF:hbaapi.HBA_SendReportLUNs
-title : HBA_SendReportLUNs function
-author : windows-driver-content
-description : The HBA_SendReportLUNs routine sends a SCSI report LUNs command to the indicated remote port.
-old-location : storage\hba_sendreportluns.htm
-old-project : storage
-ms.assetid : 0df38de0-bc05-45a3-8efa-9d7a0fc2a08e
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : HBA_SendReportLUNs, fibreHBA_rtns_aeda6b0e-e4bf-4679-ab57-dbe562864726.xml, hbaapi/HBA_SendReportLUNs, storage.hba_sendreportluns, HBA_SendReportLUNs routine [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : hbaapi.h
-req.include-header : Hbaapi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Hbaapi.lib
-req.dll : Hbaapi.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HBA_WWNTYPE
+UID: NF:hbaapi.HBA_SendReportLUNs
+title: HBA_SendReportLUNs function
+author: windows-driver-content
+description: The HBA_SendReportLUNs routine sends a SCSI report LUNs command to the indicated remote port.
+old-location: storage\hba_sendreportluns.htm
+old-project: storage
+ms.assetid: 0df38de0-bc05-45a3-8efa-9d7a0fc2a08e
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: HBA_SendReportLUNs, fibreHBA_rtns_aeda6b0e-e4bf-4679-ab57-dbe562864726.xml, hbaapi/HBA_SendReportLUNs, storage.hba_sendreportluns, HBA_SendReportLUNs routine [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: hbaapi.h
+req.include-header: Hbaapi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Hbaapi.lib
+req.dll: Hbaapi.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Hbaapi.dll
+apiname:
+-	HBA_SendReportLUNs
+product: Windows
+targetos: Windows
+req.typenames: HBA_WWNTYPE
 ---
 
 

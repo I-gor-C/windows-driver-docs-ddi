@@ -1,42 +1,47 @@
 ---
-UID : NF:prefix.RxpAcquirePrefixTableLockExclusive
-title : RxpAcquirePrefixTableLockExclusive function
-author : windows-driver-content
-description : RxpAcquirePrefixTableLockExclusive acquires the prefix table lock exclusively.
-old-location : ifsk\rxpacquireprefixtablelockexclusive.htm
-old-project : ifsk
-ms.assetid : 62f0bfd3-b8d9-4b29-a811-91a6c66dc24f
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.rxpacquireprefixtablelockexclusive, RxpAcquirePrefixTableLockExclusive function [Installable File System Drivers], RxpAcquirePrefixTableLockExclusive, prefix/RxpAcquirePrefixTableLockExclusive, rxref_3e3f34a4-ccc4-434b-9df0-b320923178d3.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : prefix.h
-req.include-header : Prefix.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SHIMOPTS, *PSHIMOPTS
-req.product : Windows 10 or later.
+UID: NF:prefix.RxpAcquirePrefixTableLockExclusive
+title: RxpAcquirePrefixTableLockExclusive function
+author: windows-driver-content
+description: RxpAcquirePrefixTableLockExclusive acquires the prefix table lock exclusively.
+old-location: ifsk\rxpacquireprefixtablelockexclusive.htm
+old-project: ifsk
+ms.assetid: 62f0bfd3-b8d9-4b29-a811-91a6c66dc24f
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.rxpacquireprefixtablelockexclusive, RxpAcquirePrefixTableLockExclusive function [Installable File System Drivers], RxpAcquirePrefixTableLockExclusive, prefix/RxpAcquirePrefixTableLockExclusive, rxref_3e3f34a4-ccc4-434b-9df0-b320923178d3.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: prefix.h
+req.include-header: Prefix.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	prefix.h
+apiname:
+-	RxpAcquirePrefixTableLockExclusive
+product: Windows
+targetos: Windows
+req.typenames: SHIMOPTS, *PSHIMOPTS
+req.product: Windows 10 or later.
 ---
 
 

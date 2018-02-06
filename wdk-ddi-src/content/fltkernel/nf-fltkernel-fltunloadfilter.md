@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltUnloadFilter
-title : FltUnloadFilter function
-author : windows-driver-content
-description : A minifilter driver that has loaded a supporting minifilter driver by calling FltLoadFilter can unload the minifilter driver by calling FltUnloadFilter.
-old-location : ifsk\fltunloadfilter.htm
-old-project : ifsk
-ms.assetid : 234907d8-d21e-4303-9508-0673afa471a6
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltApiRef_p_to_z_88925df3-96d3-4e1f-9e0b-f97eb8d9b40b.xml, FltUnloadFilter, ifsk.fltunloadfilter, fltkernel/FltUnloadFilter, FltUnloadFilter function [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltUnloadFilter
+title: FltUnloadFilter function
+author: windows-driver-content
+description: A minifilter driver that has loaded a supporting minifilter driver by calling FltLoadFilter can unload the minifilter driver by calling FltUnloadFilter.
+old-location: ifsk\fltunloadfilter.htm
+old-project: ifsk
+ms.assetid: 234907d8-d21e-4303-9508-0673afa471a6
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltApiRef_p_to_z_88925df3-96d3-4e1f-9e0b-f97eb8d9b40b.xml, FltUnloadFilter, ifsk.fltunloadfilter, fltkernel/FltUnloadFilter, FltUnloadFilter function [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltUnloadFilter
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

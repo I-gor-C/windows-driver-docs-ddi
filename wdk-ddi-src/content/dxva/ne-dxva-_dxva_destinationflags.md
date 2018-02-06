@@ -1,41 +1,46 @@
 ---
-UID : NE:dxva._DXVA_DestinationFlags
-title : "_DXVA_DestinationFlags"
-author : windows-driver-content
-description : The DXVA_DestinationFlags enumeration type contains a collection of flags that identify changes in the current destination surface from the previous destination surface.
-old-location : display\dxva_destinationflags.htm
-old-project : display
-ms.assetid : 842c6ece-5304-428c-afbe-2990d239f38a
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : dxvaref_f18a38b4-531e-4c7c-bd77-e4c0d581f86d.xml, dxva/DXVA_DestinationFlag_ColorData_Changed, DXVA_DestinationFlags, dxva/DXVA_DestinationFlags, display.dxva_destinationflags, dxva/DXVA_DestinationFlagMask, DXVA_DestinationFlag_ColorData_Changed, DXVA_DestinationFlag_TargetRect_Changed, DXVA_DestinationFlag_Alpha_Changed, dxva/DXVA_DestinationFlag_Alpha_Changed, _DXVA_DestinationFlags, dxva/DXVA_DestinationFlag_Background_Changed, DXVA_DestinationFlag_Background_Changed, dxva/DXVA_DestinationFlag_TargetRect_Changed, DXVA_DestinationFlagMask, DXVA_DestinationFlags enumeration [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : dxva.h
-req.include-header : Dxva.h
-req.target-type : Windows
-req.target-min-winverclnt : This enumeration type applies only to Windows Server 2003 with SP1 and later, and Windows XP with SP2 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXVA_DestinationFlags
+UID: NE:dxva._DXVA_DestinationFlags
+title: "_DXVA_DestinationFlags"
+author: windows-driver-content
+description: The DXVA_DestinationFlags enumeration type contains a collection of flags that identify changes in the current destination surface from the previous destination surface.
+old-location: display\dxva_destinationflags.htm
+old-project: display
+ms.assetid: 842c6ece-5304-428c-afbe-2990d239f38a
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: dxvaref_f18a38b4-531e-4c7c-bd77-e4c0d581f86d.xml, dxva/DXVA_DestinationFlag_ColorData_Changed, DXVA_DestinationFlags, dxva/DXVA_DestinationFlags, display.dxva_destinationflags, dxva/DXVA_DestinationFlagMask, DXVA_DestinationFlag_ColorData_Changed, DXVA_DestinationFlag_TargetRect_Changed, DXVA_DestinationFlag_Alpha_Changed, dxva/DXVA_DestinationFlag_Alpha_Changed, _DXVA_DestinationFlags, dxva/DXVA_DestinationFlag_Background_Changed, DXVA_DestinationFlag_Background_Changed, dxva/DXVA_DestinationFlag_TargetRect_Changed, DXVA_DestinationFlagMask, DXVA_DestinationFlags enumeration [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: dxva.h
+req.include-header: Dxva.h
+req.target-type: Windows
+req.target-min-winverclnt: This enumeration type applies only to Windows Server 2003 with SP1 and later, and Windows XP with SP2 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	dxva.h
+apiname:
+-	DXVA_DestinationFlags
+product: Windows
+targetos: Windows
+req.typenames: DXVA_DestinationFlags
 ---
 
 # _DXVA_DestinationFlags Enumeration
@@ -55,31 +60,31 @@ typedef enum _DXVA_DestinationFlags {
 ## Constants
 
 <table>
-
-<tr>
-<td>DXVA_DestinationFlag_Alpha_Changed</td>
-<td>Indicates that the planar alpha value for the destination surface changed.</td>
-</tr>
-
-<tr>
-<td>DXVA_DestinationFlag_Background_Changed</td>
-<td>Indicates that the background color of the destination surface changed.</td>
-</tr>
-
-<tr>
-<td>DXVA_DestinationFlag_ColorData_Changed</td>
-<td>Indicates that format information for the destination surface changed.</td>
-</tr>
-
-<tr>
-<td>DXVA_DestinationFlag_TargetRect_Changed</td>
-<td>Indicates that the target rectangle of the destination surface changed.</td>
-</tr>
-
-<tr>
-<td>DXVA_DestinationFlagMask</td>
-<td>Specifies the destination-flag mask, which consists of the first 4 bits of a DWORD.</td>
-</tr>
+            
+                <tr>
+                    <td>DXVA_DestinationFlag_Alpha_Changed</td>
+                    <td>Indicates that the planar alpha value for the destination surface changed.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXVA_DestinationFlag_Background_Changed</td>
+                    <td>Indicates that the background color of the destination surface changed.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXVA_DestinationFlag_ColorData_Changed</td>
+                    <td>Indicates that format information for the destination surface changed.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXVA_DestinationFlag_TargetRect_Changed</td>
+                    <td>Indicates that the target rectangle of the destination surface changed.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXVA_DestinationFlagMask</td>
+                    <td>Specifies the destination-flag mask, which consists of the first 4 bits of a DWORD.</td>
+                </tr>
 </table>
 
 
@@ -89,9 +94,9 @@ typedef enum _DXVA_DestinationFlags {
 | **Windows version** | This enumeration type applies only to Windows Server 2003 with SP1 and later, and Windows XP with SP2 and later. This enumeration type applies only to Windows Server 2003 with SP1 and later, and Windows XP with SP2 and later. |
 | **Header** | dxva.h (include Dxva.h) |
 
-## See Also
+    ## See Also
 
-<a href="https://msdn.microsoft.com/12a0e467-54f8-4cca-8ec0-aa8d04480ab6">DeinterlaceBltEx</a>
+        <a href="https://msdn.microsoft.com/12a0e467-54f8-4cca-8ec0-aa8d04480ab6">DeinterlaceBltEx</a>
 
 <a href="..\dxva\ns-dxva-_dxva_deinterlacebltex.md">DXVA_DeinterlaceBltEx</a>
 

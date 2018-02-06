@@ -1,41 +1,47 @@
 ---
-UID : NF:portcls.PcUnregisterAdapterPnpManagement
-title : PcUnregisterAdapterPnpManagement function
-author : windows-driver-content
-description : The PcUnregisterAdapterPnpManagement function unregisters the audio adapter's PnP management interface from the PortCls class driver. It is used to support PnP rebalance.
-old-location : audio\pcunregisteradapterpnpmanagement.htm
-old-project : audio
-ms.assetid : 51BBE9F6-7661-45A1-8416-9AAA307FCA10
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : PcUnregisterAdapterPnpManagement function [Audio Devices], portcls/PcUnregisterAdapterPnpManagement, PcUnregisterAdapterPnpManagement, audio.pcunregisteradapterpnpmanagement
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : portcls.h
-req.include-header : Portcls.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 10, version 1511 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Portcls.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.PcUnregisterAdapterPnpManagement
+title: PcUnregisterAdapterPnpManagement function
+author: windows-driver-content
+description: The PcUnregisterAdapterPnpManagement function unregisters the audio adapter's PnP management interface from the PortCls class driver. It is used to support PnP rebalance.
+old-location: audio\pcunregisteradapterpnpmanagement.htm
+old-project: audio
+ms.assetid: 51BBE9F6-7661-45A1-8416-9AAA307FCA10
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: PcUnregisterAdapterPnpManagement function [Audio Devices], portcls/PcUnregisterAdapterPnpManagement, PcUnregisterAdapterPnpManagement, audio.pcunregisteradapterpnpmanagement
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: portcls.h
+req.include-header: Portcls.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 10, version 1511 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Portcls.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Portcls.lib
+-	Portcls.dll
+apiname:
+-	PcUnregisterAdapterPnpManagement
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

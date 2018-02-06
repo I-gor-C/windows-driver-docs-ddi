@@ -1,41 +1,46 @@
 ---
-UID : NS:gnssdriver.GNSS_GEOFENCE_CREATE_PARAM
-title : GNSS_GEOFENCE_CREATE_PARAM
-author : windows-driver-content
-description : This structure defines the parameters for creating a geofence in the GNSS engine.
-old-location : sensors\gnss_geofence_create_param.htm
-old-project : sensors
-ms.assetid : CA517EF6-41EE-4DB0-B628-35902BA34FFB
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : GNSS_GEOFENCE_CREATE_PARAM structure [Sensor Devices], sensors.gnss_geofence_create_param, GNSS_GEOFENCE_CREATE_PARAM, PGNSS_GEOFENCE_CREATE_PARAM structure pointer [Sensor Devices], gnssdriver/PGNSS_GEOFENCE_CREATE_PARAM, gnssdriver/GNSS_GEOFENCE_CREATE_PARAM, PGNSS_GEOFENCE_CREATE_PARAM, *PGNSS_GEOFENCE_CREATE_PARAM
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : gnssdriver.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PGNSS_GEOFENCE_CREATE_PARAM, GNSS_GEOFENCE_CREATE_PARAM"
+UID: NS:gnssdriver.GNSS_GEOFENCE_CREATE_PARAM
+title: GNSS_GEOFENCE_CREATE_PARAM
+author: windows-driver-content
+description: This structure defines the parameters for creating a geofence in the GNSS engine.
+old-location: sensors\gnss_geofence_create_param.htm
+old-project: sensors
+ms.assetid: CA517EF6-41EE-4DB0-B628-35902BA34FFB
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: GNSS_GEOFENCE_CREATE_PARAM structure [Sensor Devices], sensors.gnss_geofence_create_param, GNSS_GEOFENCE_CREATE_PARAM, PGNSS_GEOFENCE_CREATE_PARAM structure pointer [Sensor Devices], gnssdriver/PGNSS_GEOFENCE_CREATE_PARAM, gnssdriver/GNSS_GEOFENCE_CREATE_PARAM, PGNSS_GEOFENCE_CREATE_PARAM, *PGNSS_GEOFENCE_CREATE_PARAM
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: gnssdriver.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	gnssdriver.h
+apiname:
+-	GNSS_GEOFENCE_CREATE_PARAM
+product: Windows
+targetos: Windows
+req.typenames: "*PGNSS_GEOFENCE_CREATE_PARAM, GNSS_GEOFENCE_CREATE_PARAM"
 ---
 
 # GNSS_GEOFENCE_CREATE_PARAM structure

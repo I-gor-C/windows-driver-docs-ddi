@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._DXVADDI_VIDEOSAMPLEFLAGS
-title : "_DXVADDI_VIDEOSAMPLEFLAGS"
-author : windows-driver-content
-description : The DXVADDI_VIDEOSAMPLEFLAGS structure identifies changes in the current sample frame from the previous sample frame.
-old-location : display\dxvaddi_videosampleflags.htm
-old-project : display
-ms.assetid : 1dca2b12-0542-43a9-abff-203ea34cff90
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DXVA2_Structs_8e0fce9f-8473-4bbc-9403-fb8755090a7d.xml, _DXVADDI_VIDEOSAMPLEFLAGS, d3dumddi/DXVADDI_VIDEOSAMPLEFLAGS, display.dxvaddi_videosampleflags, DXVADDI_VIDEOSAMPLEFLAGS structure [Display Devices], DXVADDI_VIDEOSAMPLEFLAGS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXVADDI_VIDEOSAMPLEFLAGS
+UID: NS:d3dumddi._DXVADDI_VIDEOSAMPLEFLAGS
+title: "_DXVADDI_VIDEOSAMPLEFLAGS"
+author: windows-driver-content
+description: The DXVADDI_VIDEOSAMPLEFLAGS structure identifies changes in the current sample frame from the previous sample frame.
+old-location: display\dxvaddi_videosampleflags.htm
+old-project: display
+ms.assetid: 1dca2b12-0542-43a9-abff-203ea34cff90
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DXVA2_Structs_8e0fce9f-8473-4bbc-9403-fb8755090a7d.xml, _DXVADDI_VIDEOSAMPLEFLAGS, d3dumddi/DXVADDI_VIDEOSAMPLEFLAGS, display.dxvaddi_videosampleflags, DXVADDI_VIDEOSAMPLEFLAGS structure [Display Devices], DXVADDI_VIDEOSAMPLEFLAGS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	DXVADDI_VIDEOSAMPLEFLAGS
+product: Windows
+targetos: Windows
+req.typenames: DXVADDI_VIDEOSAMPLEFLAGS
 ---
 
 # _DXVADDI_VIDEOSAMPLEFLAGS structure

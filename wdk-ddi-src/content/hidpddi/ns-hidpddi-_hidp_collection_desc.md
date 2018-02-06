@@ -1,41 +1,46 @@
 ---
-UID : NS:hidpddi._HIDP_COLLECTION_DESC
-title : "_HIDP_COLLECTION_DESC"
-author : windows-driver-content
-description : Contains the information of a top-level-collection. This structure is used in the HidP_GetCollectionDescription call.
-old-location : hid\hidp_collection_desc.htm
-old-project : hid
-ms.assetid : 4B044635-1088-4CED-87C7-4385E565A54A
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : HIDP_COLLECTION_DESC structure [Human Input Devices], _HIDP_COLLECTION_DESC, hid.hidp_collection_desc, PHIDP_COLLECTION_DESC, *PHIDP_COLLECTION_DESC, hidpddi/PHIDP_COLLECTION_DESC, hidpddi/HIDP_COLLECTION_DESC, PHIDP_COLLECTION_DESC structure pointer [Human Input Devices], HIDP_COLLECTION_DESC
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : hidpddi.h
-req.include-header : Hidpddi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PHIDP_COLLECTION_DESC, HIDP_COLLECTION_DESC"
+UID: NS:hidpddi._HIDP_COLLECTION_DESC
+title: "_HIDP_COLLECTION_DESC"
+author: windows-driver-content
+description: Contains the information of a top-level-collection. This structure is used in the HidP_GetCollectionDescription call.
+old-location: hid\hidp_collection_desc.htm
+old-project: hid
+ms.assetid: 4B044635-1088-4CED-87C7-4385E565A54A
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: HIDP_COLLECTION_DESC structure [Human Input Devices], _HIDP_COLLECTION_DESC, hid.hidp_collection_desc, PHIDP_COLLECTION_DESC, *PHIDP_COLLECTION_DESC, hidpddi/PHIDP_COLLECTION_DESC, hidpddi/HIDP_COLLECTION_DESC, PHIDP_COLLECTION_DESC structure pointer [Human Input Devices], HIDP_COLLECTION_DESC
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: hidpddi.h
+req.include-header: Hidpddi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Hidpddi.h
+apiname:
+-	HIDP_COLLECTION_DESC
+product: Windows
+targetos: Windows
+req.typenames: "*PHIDP_COLLECTION_DESC, HIDP_COLLECTION_DESC"
 ---
 
 # _HIDP_COLLECTION_DESC structure

@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.KSAUDIO_MIXLEVEL
-title : KSAUDIO_MIXLEVEL
-author : windows-driver-content
-description : The KSAUDIO_MIXLEVEL structure specifies the mixing level of an input-output path in a supermixer node (KSNODETYPE_SUPERMIX).
-old-location : audio\ksaudio_mixlevel.htm
-old-project : audio
-ms.assetid : b685f2f5-3491-471d-b1da-07a7e56bda62
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : audio.ksaudio_mixlevel, ksmedia/KSAUDIO_MIXLEVEL, aud-prop_d80f29a4-4872-49cc-b1af-94b69be9c229.xml, KSAUDIO_MIXLEVEL structure [Audio Devices], KSAUDIO_MIXLEVEL, ksmedia/PKSAUDIO_MIXLEVEL, *PKSAUDIO_MIXLEVEL, PKSAUDIO_MIXLEVEL structure pointer [Audio Devices], PKSAUDIO_MIXLEVEL
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KSAUDIO_MIXLEVEL, *PKSAUDIO_MIXLEVEL
+UID: NS:ksmedia.KSAUDIO_MIXLEVEL
+title: KSAUDIO_MIXLEVEL
+author: windows-driver-content
+description: The KSAUDIO_MIXLEVEL structure specifies the mixing level of an input-output path in a supermixer node (KSNODETYPE_SUPERMIX).
+old-location: audio\ksaudio_mixlevel.htm
+old-project: audio
+ms.assetid: b685f2f5-3491-471d-b1da-07a7e56bda62
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: audio.ksaudio_mixlevel, ksmedia/KSAUDIO_MIXLEVEL, aud-prop_d80f29a4-4872-49cc-b1af-94b69be9c229.xml, KSAUDIO_MIXLEVEL structure [Audio Devices], KSAUDIO_MIXLEVEL, ksmedia/PKSAUDIO_MIXLEVEL, *PKSAUDIO_MIXLEVEL, PKSAUDIO_MIXLEVEL structure pointer [Audio Devices], PKSAUDIO_MIXLEVEL
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	KSAUDIO_MIXLEVEL
+product: Windows
+targetos: Windows
+req.typenames: KSAUDIO_MIXLEVEL, *PKSAUDIO_MIXLEVEL
 ---
 
 # KSAUDIO_MIXLEVEL structure

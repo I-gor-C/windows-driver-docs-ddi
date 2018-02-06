@@ -1,41 +1,47 @@
 ---
-UID : NF:fwpsk.FwpsAllocateNetBufferAndNetBufferList0
-title : FwpsAllocateNetBufferAndNetBufferList0 function
-author : windows-driver-content
-description : The FwpsAllocateNetBufferAndNetBufferList0 function allocates a new NET_BUFFER_LIST structure.Note  FwpsAllocateNetBufferAndNetBufferList0 is a specific version of FwpsAllocateNetBufferAndNetBufferList.
-old-location : netvista\fwpsallocatenetbufferandnetbufferlist0.htm
-old-project : netvista
-ms.assetid : d7f2d3c0-f2c9-4624-b3e1-9fbbf64c7186
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : wfp_ref_2_funct_3_fwps_A-B_9a88a8c9-a5fb-48a9-bc42-ae30de234468.xml, FwpsAllocateNetBufferAndNetBufferList0, fwpsk/FwpsAllocateNetBufferAndNetBufferList0, netvista.fwpsallocatenetbufferandnetbufferlist0, FwpsAllocateNetBufferAndNetBufferList0 function [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fwpsk.h
-req.include-header : Fwpsk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Fwpkclnt.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FWPS_VSWITCH_EVENT_TYPE
+UID: NF:fwpsk.FwpsAllocateNetBufferAndNetBufferList0
+title: FwpsAllocateNetBufferAndNetBufferList0 function
+author: windows-driver-content
+description: The FwpsAllocateNetBufferAndNetBufferList0 function allocates a new NET_BUFFER_LIST structure.Note  FwpsAllocateNetBufferAndNetBufferList0 is a specific version of FwpsAllocateNetBufferAndNetBufferList.
+old-location: netvista\fwpsallocatenetbufferandnetbufferlist0.htm
+old-project: netvista
+ms.assetid: d7f2d3c0-f2c9-4624-b3e1-9fbbf64c7186
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: wfp_ref_2_funct_3_fwps_A-B_9a88a8c9-a5fb-48a9-bc42-ae30de234468.xml, FwpsAllocateNetBufferAndNetBufferList0, fwpsk/FwpsAllocateNetBufferAndNetBufferList0, netvista.fwpsallocatenetbufferandnetbufferlist0, FwpsAllocateNetBufferAndNetBufferList0 function [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fwpsk.h
+req.include-header: Fwpsk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Fwpkclnt.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	fwpkclnt.lib
+-	fwpkclnt.dll
+apiname:
+-	FwpsAllocateNetBufferAndNetBufferList0
+product: Windows
+targetos: Windows
+req.typenames: FWPS_VSWITCH_EVENT_TYPE
 ---
 
 

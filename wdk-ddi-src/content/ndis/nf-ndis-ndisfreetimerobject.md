@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisFreeTimerObject
-title : NdisFreeTimerObject function
-author : windows-driver-content
-description : The NdisFreeTimerObject function frees a timer object that was allocated with the NdisAllocateTimerObject function.
-old-location : netvista\ndisfreetimerobject.htm
-old-project : netvista
-ms.assetid : b3edeebb-7a8f-4cd2-bd52-1b8ce044caa2
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.ndisfreetimerobject, ndis/NdisFreeTimerObject, NdisFreeTimerObject, NdisFreeTimerObject function [Network Drivers Starting with Windows Vista], ndis_timer_ref_0f4b2edb-47fb-481c-a1e9-6940d15cb354.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_Timer_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisFreeTimerObject
+title: NdisFreeTimerObject function
+author: windows-driver-content
+description: The NdisFreeTimerObject function frees a timer object that was allocated with the NdisAllocateTimerObject function.
+old-location: netvista\ndisfreetimerobject.htm
+old-project: netvista
+ms.assetid: b3edeebb-7a8f-4cd2-bd52-1b8ce044caa2
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.ndisfreetimerobject, ndis/NdisFreeTimerObject, NdisFreeTimerObject, NdisFreeTimerObject function [Network Drivers Starting with Windows Vista], ndis_timer_ref_0f4b2edb-47fb-481c-a1e9-6940d15cb354.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_Timer_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisFreeTimerObject
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

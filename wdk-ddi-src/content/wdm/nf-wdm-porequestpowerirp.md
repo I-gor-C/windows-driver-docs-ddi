@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.PoRequestPowerIrp
-title : PoRequestPowerIrp function
-author : windows-driver-content
-description : The PoRequestPowerIrp routine allocates a power IRP and sends it to the top driver in the device stack for the specified device.
-old-location : kernel\porequestpowerirp.htm
-old-project : kernel
-ms.assetid : 99330348-bcc2-4a89-96f8-e1b67d9ebe25
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.porequestpowerirp, PoRequestPowerIrp, portn_d417d88c-2f6d-4af9-b7de-455dfcc1b9df.xml, PoRequestPowerIrp routine [Kernel-Mode Driver Architecture], wdm/PoRequestPowerIrp
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : MarkDevicePower, PowerDownFail, PowerUpFail, RequestedPowerIrp, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.PoRequestPowerIrp
+title: PoRequestPowerIrp function
+author: windows-driver-content
+description: The PoRequestPowerIrp routine allocates a power IRP and sends it to the top driver in the device stack for the specified device.
+old-location: kernel\porequestpowerirp.htm
+old-project: kernel
+ms.assetid: 99330348-bcc2-4a89-96f8-e1b67d9ebe25
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.porequestpowerirp, PoRequestPowerIrp, portn_d417d88c-2f6d-4af9-b7de-455dfcc1b9df.xml, PoRequestPowerIrp routine [Kernel-Mode Driver Architecture], wdm/PoRequestPowerIrp
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: MarkDevicePower, PowerDownFail, PowerUpFail, RequestedPowerIrp, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	PoRequestPowerIrp
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

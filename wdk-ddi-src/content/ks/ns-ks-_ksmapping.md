@@ -1,41 +1,46 @@
 ---
-UID : NS:ks._KSMAPPING
-title : "_KSMAPPING"
-author : windows-driver-content
-description : The KSMAPPING structure is used to describe a single contiguous chunk of physical memory for use in scatter/gather DMA operations.
-old-location : stream\ksmapping.htm
-old-project : stream
-ms.assetid : 9a5149dc-5506-4100-80fc-7cd17585d2af
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ks/KSMAPPING, *PKSMAPPING, KSMAPPING, avstruct_65f80fd5-14a6-431b-a1b6-e6c3d18302d3.xml, stream.ksmapping, KSMAPPING structure [Streaming Media Devices], _KSMAPPING, PKSMAPPING structure pointer [Streaming Media Devices], PKSMAPPING, ks/PKSMAPPING
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and in Microsoft DirectX 8.0 and later versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KSMAPPING, *PKSMAPPING
+UID: NS:ks._KSMAPPING
+title: "_KSMAPPING"
+author: windows-driver-content
+description: The KSMAPPING structure is used to describe a single contiguous chunk of physical memory for use in scatter/gather DMA operations.
+old-location: stream\ksmapping.htm
+old-project: stream
+ms.assetid: 9a5149dc-5506-4100-80fc-7cd17585d2af
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ks/KSMAPPING, *PKSMAPPING, KSMAPPING, avstruct_65f80fd5-14a6-431b-a1b6-e6c3d18302d3.xml, stream.ksmapping, KSMAPPING structure [Streaming Media Devices], _KSMAPPING, PKSMAPPING structure pointer [Streaming Media Devices], PKSMAPPING, ks/PKSMAPPING
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and in Microsoft DirectX 8.0 and later versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	KSMAPPING
+product: Windows
+targetos: Windows
+req.typenames: KSMAPPING, *PKSMAPPING
 ---
 
 # _KSMAPPING structure

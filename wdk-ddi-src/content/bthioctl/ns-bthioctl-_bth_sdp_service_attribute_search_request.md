@@ -1,41 +1,46 @@
 ---
-UID : NS:bthioctl._BTH_SDP_SERVICE_ATTRIBUTE_SEARCH_REQUEST
-title : "_BTH_SDP_SERVICE_ATTRIBUTE_SEARCH_REQUEST"
-author : windows-driver-content
-description : The BTH_SDP_SERVICE_ATTRIBUTE_SEARCH_REQUEST structure contains information pertinent to a combined SDP service and attribute search. This structure is passed as the input buffer to the IOCTL_BTH_SDP_SERVICE_ATTRIBUTE_SEARCH IOCTL.
-old-location : bltooth\bth_sdp_service_attribute_search_request.htm
-old-project : bltooth
-ms.assetid : 28255569-57ce-44b7-9d53-9e8797b914c5
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : bth_structs_0e06cbd7-0737-4786-bdc3-c9c1e980e3a3.xml, BTH_SDP_SERVICE_ATTRIBUTE_SEARCH_REQUEST, BTH_SDP_SERVICE_ATTRIBUTE_SEARCH_REQUEST structure [Bluetooth Devices], bthioctl/PBTH_SDP_SERVICE_ATTRIBUTE_SEARCH_REQUEST, *PBTH_SDP_SERVICE_ATTRIBUTE_SEARCH_REQUEST, bthioctl/BTH_SDP_SERVICE_ATTRIBUTE_SEARCH_REQUEST, PBTH_SDP_SERVICE_ATTRIBUTE_SEARCH_REQUEST structure pointer [Bluetooth Devices], PBTH_SDP_SERVICE_ATTRIBUTE_SEARCH_REQUEST, _BTH_SDP_SERVICE_ATTRIBUTE_SEARCH_REQUEST, bltooth.bth_sdp_service_attribute_search_request
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : bthioctl.h
-req.include-header : Bthioctl.h
-req.target-type : Windows
-req.target-min-winverclnt : Versions:\_Supported in Windows Vista, and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= PASSIVE_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : BTH_SDP_SERVICE_ATTRIBUTE_SEARCH_REQUEST, *PBTH_SDP_SERVICE_ATTRIBUTE_SEARCH_REQUEST
+UID: NS:bthioctl._BTH_SDP_SERVICE_ATTRIBUTE_SEARCH_REQUEST
+title: "_BTH_SDP_SERVICE_ATTRIBUTE_SEARCH_REQUEST"
+author: windows-driver-content
+description: The BTH_SDP_SERVICE_ATTRIBUTE_SEARCH_REQUEST structure contains information pertinent to a combined SDP service and attribute search. This structure is passed as the input buffer to the IOCTL_BTH_SDP_SERVICE_ATTRIBUTE_SEARCH IOCTL.
+old-location: bltooth\bth_sdp_service_attribute_search_request.htm
+old-project: bltooth
+ms.assetid: 28255569-57ce-44b7-9d53-9e8797b914c5
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: bth_structs_0e06cbd7-0737-4786-bdc3-c9c1e980e3a3.xml, BTH_SDP_SERVICE_ATTRIBUTE_SEARCH_REQUEST, BTH_SDP_SERVICE_ATTRIBUTE_SEARCH_REQUEST structure [Bluetooth Devices], bthioctl/PBTH_SDP_SERVICE_ATTRIBUTE_SEARCH_REQUEST, *PBTH_SDP_SERVICE_ATTRIBUTE_SEARCH_REQUEST, bthioctl/BTH_SDP_SERVICE_ATTRIBUTE_SEARCH_REQUEST, PBTH_SDP_SERVICE_ATTRIBUTE_SEARCH_REQUEST structure pointer [Bluetooth Devices], PBTH_SDP_SERVICE_ATTRIBUTE_SEARCH_REQUEST, _BTH_SDP_SERVICE_ATTRIBUTE_SEARCH_REQUEST, bltooth.bth_sdp_service_attribute_search_request
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: bthioctl.h
+req.include-header: Bthioctl.h
+req.target-type: Windows
+req.target-min-winverclnt: Versions:\_Supported in Windows Vista, and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= PASSIVE_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	bthioctl.h
+apiname:
+-	BTH_SDP_SERVICE_ATTRIBUTE_SEARCH_REQUEST
+product: Windows
+targetos: Windows
+req.typenames: BTH_SDP_SERVICE_ATTRIBUTE_SEARCH_REQUEST, *PBTH_SDP_SERVICE_ATTRIBUTE_SEARCH_REQUEST
 ---
 
 # _BTH_SDP_SERVICE_ATTRIBUTE_SEARCH_REQUEST structure

@@ -1,41 +1,46 @@
 ---
-UID : NF:portcls.IPortWavePciStream.GetMapping
-title : IPortWavePciStream::GetMapping method
-author : windows-driver-content
-description : The GetMapping method obtains a mapping from the port driver and associates a tag with the mapping.
-old-location : audio\iportwavepcistream_getmapping.htm
-old-project : audio
-ms.assetid : f0d4f266-6a43-4523-bf1d-3dda1fc9a5b8
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : GetMapping, GetMapping method [Audio Devices], IPortWavePciStream, IPortWavePciStream::GetMapping, audio.iportwavepcistream_getmapping, portcls/IPortWavePciStream::GetMapping, IPortWavePciStream interface [Audio Devices], GetMapping method, audmp-routines_e0c71b6a-ec20-47ab-85bc-7a3495e5247e.xml, GetMapping method [Audio Devices], IPortWavePciStream interface
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : portcls.h
-req.include-header : Portcls.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : portcls.h
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.IPortWavePciStream.GetMapping
+title: IPortWavePciStream::GetMapping method
+author: windows-driver-content
+description: The GetMapping method obtains a mapping from the port driver and associates a tag with the mapping.
+old-location: audio\iportwavepcistream_getmapping.htm
+old-project: audio
+ms.assetid: f0d4f266-6a43-4523-bf1d-3dda1fc9a5b8
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: GetMapping, GetMapping method [Audio Devices], IPortWavePciStream, IPortWavePciStream::GetMapping, audio.iportwavepcistream_getmapping, portcls/IPortWavePciStream::GetMapping, IPortWavePciStream interface [Audio Devices], GetMapping method, audmp-routines_e0c71b6a-ec20-47ab-85bc-7a3495e5247e.xml, GetMapping method [Audio Devices], IPortWavePciStream interface
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: portcls.h
+req.include-header: Portcls.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: portcls.h
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	portcls.h
+apiname:
+-	IPortWavePciStream.GetMapping
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

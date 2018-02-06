@@ -1,41 +1,46 @@
 ---
-UID : NS:ntifs._FILE_PROVIDER_EXTERNAL_INFO_V1
-title : "_FILE_PROVIDER_EXTERNAL_INFO_V1"
-author : windows-driver-content
-description : The FILE_PROVIDER_EXTERNAL_INFO_V1 structure defines metadata specific to files provided by WOF_PROVIDER_FILE.
-old-location : ifsk\file_provider_external_info_v1.htm
-old-project : ifsk
-ms.assetid : 842D7F4A-3352-469A-B7C1-E075432107CA
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.file_provider_external_info_v1, PFILE_PROVIDER_EXTERNAL_INFO_V1, FILE_PROVIDER_EXTERNAL_INFO_V1 structure [Installable File System Drivers], ntifs/FILE_PROVIDER_EXTERNAL_INFO_V1, PFILE_PROVIDER_EXTERNAL_INFO_V1 structure pointer [Installable File System Drivers], _FILE_PROVIDER_EXTERNAL_INFO_V1, FILE_PROVIDER_EXTERNAL_INFO, FILE_PROVIDER_EXTERNAL_INFO_V1, *PFILE_PROVIDER_EXTERNAL_INFO_V1, ntifs/PFILE_PROVIDER_EXTERNAL_INFO_V1
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntifs.h
-req.include-header : Windows.h, WinIoCtl.h, Ntifs.h, Windows.h, WinIoCtl.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows 10.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PFILE_PROVIDER_EXTERNAL_INFO_V1, FILE_PROVIDER_EXTERNAL_INFO_V1"
+UID: NS:ntifs._FILE_PROVIDER_EXTERNAL_INFO_V1
+title: "_FILE_PROVIDER_EXTERNAL_INFO_V1"
+author: windows-driver-content
+description: The FILE_PROVIDER_EXTERNAL_INFO_V1 structure defines metadata specific to files provided by WOF_PROVIDER_FILE.
+old-location: ifsk\file_provider_external_info_v1.htm
+old-project: ifsk
+ms.assetid: 842D7F4A-3352-469A-B7C1-E075432107CA
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.file_provider_external_info_v1, PFILE_PROVIDER_EXTERNAL_INFO_V1, FILE_PROVIDER_EXTERNAL_INFO_V1 structure [Installable File System Drivers], ntifs/FILE_PROVIDER_EXTERNAL_INFO_V1, PFILE_PROVIDER_EXTERNAL_INFO_V1 structure pointer [Installable File System Drivers], _FILE_PROVIDER_EXTERNAL_INFO_V1, FILE_PROVIDER_EXTERNAL_INFO, FILE_PROVIDER_EXTERNAL_INFO_V1, *PFILE_PROVIDER_EXTERNAL_INFO_V1, ntifs/PFILE_PROVIDER_EXTERNAL_INFO_V1
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntifs.h
+req.include-header: Windows.h, WinIoCtl.h, Ntifs.h, Windows.h, WinIoCtl.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows 10.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntifs.h
+apiname:
+-	FILE_PROVIDER_EXTERNAL_INFO_V1
+product: Windows
+targetos: Windows
+req.typenames: "*PFILE_PROVIDER_EXTERNAL_INFO_V1, FILE_PROVIDER_EXTERNAL_INFO_V1"
 ---
 
 # _FILE_PROVIDER_EXTERNAL_INFO_V1 structure

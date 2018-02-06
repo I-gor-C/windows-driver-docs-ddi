@@ -1,41 +1,46 @@
 ---
-UID : NF:ksproxy.IKsInterfaceHandler.KsSetPin
-title : IKsInterfaceHandler::KsSetPin method
-author : windows-driver-content
-description : The KsSetPin method informs the streaming interface handler about the pin with which to communicate when passing data.
-old-location : stream\iksinterfacehandler_kssetpin.htm
-old-project : stream
-ms.assetid : 71e4be0a-a5a6-469a-948b-bc5277bc8cbe
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : IKsInterfaceHandler interface [Streaming Media Devices], KsSetPin method, KsSetPin method [Streaming Media Devices], IKsInterfaceHandler interface, KsSetPin method [Streaming Media Devices], ksproxy_3746aba4-11e3-45a5-8495-eda1cad5bf9b.xml, IKsInterfaceHandler::KsSetPin, stream.iksinterfacehandler_kssetpin, ksproxy/IKsInterfaceHandler::KsSetPin, IKsInterfaceHandler, KsSetPin
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : ksproxy.h
-req.include-header : Ksproxy.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : ksproxy.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PIPE_STATE
+UID: NF:ksproxy.IKsInterfaceHandler.KsSetPin
+title: IKsInterfaceHandler::KsSetPin method
+author: windows-driver-content
+description: The KsSetPin method informs the streaming interface handler about the pin with which to communicate when passing data.
+old-location: stream\iksinterfacehandler_kssetpin.htm
+old-project: stream
+ms.assetid: 71e4be0a-a5a6-469a-948b-bc5277bc8cbe
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: IKsInterfaceHandler interface [Streaming Media Devices], KsSetPin method, KsSetPin method [Streaming Media Devices], IKsInterfaceHandler interface, KsSetPin method [Streaming Media Devices], ksproxy_3746aba4-11e3-45a5-8495-eda1cad5bf9b.xml, IKsInterfaceHandler::KsSetPin, stream.iksinterfacehandler_kssetpin, ksproxy/IKsInterfaceHandler::KsSetPin, IKsInterfaceHandler, KsSetPin
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: ksproxy.h
+req.include-header: Ksproxy.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: ksproxy.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	ksproxy.h
+apiname:
+-	IKsInterfaceHandler.KsSetPin
+product: Windows
+targetos: Windows
+req.typenames: PIPE_STATE
 ---
 
 

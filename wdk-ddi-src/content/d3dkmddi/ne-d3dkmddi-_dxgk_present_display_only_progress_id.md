@@ -1,41 +1,46 @@
 ---
-UID : NE:d3dkmddi._DXGK_PRESENT_DISPLAY_ONLY_PROGRESS_ID
-title : "_DXGK_PRESENT_DISPLAY_ONLY_PROGRESS_ID"
-author : windows-driver-content
-description : Indicates the status of the current present operation.
-old-location : display\dxgk_present_display_only_progress_id.htm
-old-project : display
-ms.assetid : 38023aaf-754a-4b16-96fc-6fd3d48233c3
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DXGK_PRESENT_DISPLAYONLY_PROGRESS_ID_FAILED, _DXGK_PRESENT_DISPLAY_ONLY_PROGRESS_ID, DXGK_PRESENT_DISPLAY_ONLY_PROGRESS_ID, DXGK_PRESENT_DISPLAY_ONLY_PROGRESS_ID enumeration [Display Devices], d3dkmddi/DXGK_PRESENT_DISPLAYONLY_PROGRESS_ID_FAILED, display.dxgk_present_display_only_progress_id, d3dkmddi/DXGK_PRESENT_DISPLAYONLY_PROGRESS_ID_COMPLETE, d3dkmddi/DXGK_PRESENT_DISPLAY_ONLY_PROGRESS_ID, DXGK_PRESENT_DISPLAYONLY_PROGRESS_ID_COMPLETE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : d3dkmddi.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PRESENT_DISPLAY_ONLY_PROGRESS_ID
+UID: NE:d3dkmddi._DXGK_PRESENT_DISPLAY_ONLY_PROGRESS_ID
+title: "_DXGK_PRESENT_DISPLAY_ONLY_PROGRESS_ID"
+author: windows-driver-content
+description: Indicates the status of the current present operation.
+old-location: display\dxgk_present_display_only_progress_id.htm
+old-project: display
+ms.assetid: 38023aaf-754a-4b16-96fc-6fd3d48233c3
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DXGK_PRESENT_DISPLAYONLY_PROGRESS_ID_FAILED, _DXGK_PRESENT_DISPLAY_ONLY_PROGRESS_ID, DXGK_PRESENT_DISPLAY_ONLY_PROGRESS_ID, DXGK_PRESENT_DISPLAY_ONLY_PROGRESS_ID enumeration [Display Devices], d3dkmddi/DXGK_PRESENT_DISPLAYONLY_PROGRESS_ID_FAILED, display.dxgk_present_display_only_progress_id, d3dkmddi/DXGK_PRESENT_DISPLAYONLY_PROGRESS_ID_COMPLETE, d3dkmddi/DXGK_PRESENT_DISPLAY_ONLY_PROGRESS_ID, DXGK_PRESENT_DISPLAYONLY_PROGRESS_ID_COMPLETE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: d3dkmddi.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	D3dkmddi.h
+apiname:
+-	DXGK_PRESENT_DISPLAY_ONLY_PROGRESS_ID
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PRESENT_DISPLAY_ONLY_PROGRESS_ID
 ---
 
 # _DXGK_PRESENT_DISPLAY_ONLY_PROGRESS_ID Enumeration
@@ -52,16 +57,16 @@ typedef enum _DXGK_PRESENT_DISPLAY_ONLY_PROGRESS_ID {
 ## Constants
 
 <table>
-
-<tr>
-<td>DXGK_PRESENT_DISPLAYONLY_PROGRESS_ID_COMPLETE</td>
-<td>The present operation has completed.</td>
-</tr>
-
-<tr>
-<td>DXGK_PRESENT_DISPLAYONLY_PROGRESS_ID_FAILED</td>
-<td>An error occurred during the present operation.</td>
-</tr>
+            
+                <tr>
+                    <td>DXGK_PRESENT_DISPLAYONLY_PROGRESS_ID_COMPLETE</td>
+                    <td>The present operation has completed.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXGK_PRESENT_DISPLAYONLY_PROGRESS_ID_FAILED</td>
+                    <td>An error occurred during the present operation.</td>
+                </tr>
 </table>
 
 
@@ -71,9 +76,9 @@ typedef enum _DXGK_PRESENT_DISPLAY_ONLY_PROGRESS_ID {
 | **Windows version** | Windows 8 Windows 8 |
 | **Header** | d3dkmddi.h |
 
-## See Also
+    ## See Also
 
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkargcb_present_displayonly_progress.md">DXGKARGCB_PRESENT_DISPLAYONLY_PROGRESS</a>
+        <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkargcb_present_displayonly_progress.md">DXGKARGCB_PRESENT_DISPLAYONLY_PROGRESS</a>
 
  
 

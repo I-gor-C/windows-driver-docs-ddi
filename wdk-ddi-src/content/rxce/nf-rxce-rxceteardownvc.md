@@ -1,42 +1,47 @@
 ---
-UID : NF:rxce.RxCeTearDownVC
-title : RxCeTearDownVC function
-author : windows-driver-content
-description : RxCeTearDownVC deregisters a virtual circuit from a specified RDBSS connection.
-old-location : ifsk\rxceteardownvc.htm
-old-project : ifsk
-ms.assetid : d4b3af4d-8bb2-42a4-a8d9-baa643a90418
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : RxCeTearDownVC function [Installable File System Drivers], RxCeTearDownVC, ifsk.rxceteardownvc, rxref_12c4b02d-b629-4543-bf74-aeaa14f6f05d.xml, rxce/RxCeTearDownVC
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : rxce.h
-req.include-header : Rxce.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*LPRILWRITEPHONEBOOKENTRYPARAMS, RILWRITEPHONEBOOKENTRYPARAMS"
-req.product : Windows 10 or later.
+UID: NF:rxce.RxCeTearDownVC
+title: RxCeTearDownVC function
+author: windows-driver-content
+description: RxCeTearDownVC deregisters a virtual circuit from a specified RDBSS connection.
+old-location: ifsk\rxceteardownvc.htm
+old-project: ifsk
+ms.assetid: d4b3af4d-8bb2-42a4-a8d9-baa643a90418
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: RxCeTearDownVC function [Installable File System Drivers], RxCeTearDownVC, ifsk.rxceteardownvc, rxref_12c4b02d-b629-4543-bf74-aeaa14f6f05d.xml, rxce/RxCeTearDownVC
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: rxce.h
+req.include-header: Rxce.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	rxce.h
+apiname:
+-	RxCeTearDownVC
+product: Windows
+targetos: Windows
+req.typenames: "*LPRILWRITEPHONEBOOKENTRYPARAMS, RILWRITEPHONEBOOKENTRYPARAMS"
+req.product: Windows 10 or later.
 ---
 
 

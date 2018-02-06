@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.KSPROPERTY_CAMERACONTROL_S_EX
-title : KSPROPERTY_CAMERACONTROL_S_EX
-author : windows-driver-content
-description : Specifies a camera control operation, including setting the flash, the image pin control properties, the region of interest in the image, or video stabilization.
-old-location : stream\ksproperty_cameracontrol_s_ex.htm
-old-project : stream
-ms.assetid : fa015adf-93b6-472f-8a78-a627a59c032e
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KSPROPERTY_CAMERACONTROL_S_EX, ksmedia/KSPROPERTY_CAMERACONTROL_S_EX, KSPROPERTY_CAMERACONTROL_FLAGS_AUTO, KSPROPERTY_CAMERACONTROL_S_EX structure [Streaming Media Devices], PKSPROPERTY_CAMERACONTROL_S_EX structure pointer [Streaming Media Devices], PKSPROPERTY_CAMERACONTROL_S_EX, *PKSPROPERTY_CAMERACONTROL_S_EX, ksmedia/PKSPROPERTY_CAMERACONTROL_S_EX, KSPROPERTY_CAMERACONTROL_FLAGS_ASYNCHRONOUS, stream.ksproperty_cameracontrol_s_ex, KSPROPERTY_CAMERACONTROL_FLAGS_MANUAL
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KSPROPERTY_CAMERACONTROL_S_EX, *PKSPROPERTY_CAMERACONTROL_S_EX
+UID: NS:ksmedia.KSPROPERTY_CAMERACONTROL_S_EX
+title: KSPROPERTY_CAMERACONTROL_S_EX
+author: windows-driver-content
+description: Specifies a camera control operation, including setting the flash, the image pin control properties, the region of interest in the image, or video stabilization.
+old-location: stream\ksproperty_cameracontrol_s_ex.htm
+old-project: stream
+ms.assetid: fa015adf-93b6-472f-8a78-a627a59c032e
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KSPROPERTY_CAMERACONTROL_S_EX, ksmedia/KSPROPERTY_CAMERACONTROL_S_EX, KSPROPERTY_CAMERACONTROL_FLAGS_AUTO, KSPROPERTY_CAMERACONTROL_S_EX structure [Streaming Media Devices], PKSPROPERTY_CAMERACONTROL_S_EX structure pointer [Streaming Media Devices], PKSPROPERTY_CAMERACONTROL_S_EX, *PKSPROPERTY_CAMERACONTROL_S_EX, ksmedia/PKSPROPERTY_CAMERACONTROL_S_EX, KSPROPERTY_CAMERACONTROL_FLAGS_ASYNCHRONOUS, stream.ksproperty_cameracontrol_s_ex, KSPROPERTY_CAMERACONTROL_FLAGS_MANUAL
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ksmedia.h
+apiname:
+-	KSPROPERTY_CAMERACONTROL_S_EX
+product: Windows
+targetos: Windows
+req.typenames: KSPROPERTY_CAMERACONTROL_S_EX, *PKSPROPERTY_CAMERACONTROL_S_EX
 ---
 
 # KSPROPERTY_CAMERACONTROL_S_EX structure

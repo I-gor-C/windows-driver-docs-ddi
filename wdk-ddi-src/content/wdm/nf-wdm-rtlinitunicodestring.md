@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.RtlInitUnicodeString
-title : RtlInitUnicodeString function
-author : windows-driver-content
-description : For more information, see the WdmlibRtlInitUnicodeStringEx function.
-old-location : kernel\rtlinitunicodestring.htm
-old-project : kernel
-ms.assetid : c6ef7438-36a6-4da6-b745-2985d9b30614
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : RtlInitUnicodeString, wdm/RtlInitUnicodeString, k109_10e59fa9-6f57-45db-bc11-520660f43b13.xml, kernel.rtlinitunicodestring, RtlInitUnicodeString routine [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : For more information, see  the Remarks section of the WdmlibRtlInitUnicodeStringEx  function.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.RtlInitUnicodeString
+title: RtlInitUnicodeString function
+author: windows-driver-content
+description: For more information, see the WdmlibRtlInitUnicodeStringEx function.
+old-location: kernel\rtlinitunicodestring.htm
+old-project: kernel
+ms.assetid: c6ef7438-36a6-4da6-b745-2985d9b30614
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: RtlInitUnicodeString, wdm/RtlInitUnicodeString, k109_10e59fa9-6f57-45db-bc11-520660f43b13.xml, kernel.rtlinitunicodestring, RtlInitUnicodeString routine [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: For more information, see  the Remarks section of the WdmlibRtlInitUnicodeStringEx  function.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	RtlInitUnicodeString
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

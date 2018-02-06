@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugRegisters2.SetValues2
-title : IDebugRegisters2::SetValues2 method
-author : windows-driver-content
-description : The SetValues2 method sets the value of several of the target's registers.
-old-location : debugger\setvalues2.htm
-old-project : debugger
-ms.assetid : 9505a0ce-4f4e-43af-97a2-653b5776c423
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : SetValues2, debugger.setvalues2, dbgeng/IDebugRegisters2::SetValues2, IDebugRegisters_4e5c8f37-a5ad-4083-adb9-e75ec18542b2.xml, IDebugRegisters2, IDebugRegisters2 interface [Windows Debugging], SetValues2 method, IDebugRegisters2::SetValues2, SetValues2 method [Windows Debugging], SetValues2 method [Windows Debugging], IDebugRegisters2 interface
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : DbgEng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugRegisters2.SetValues2
+title: IDebugRegisters2::SetValues2 method
+author: windows-driver-content
+description: The SetValues2 method sets the value of several of the target's registers.
+old-location: debugger\setvalues2.htm
+old-project: debugger
+ms.assetid: 9505a0ce-4f4e-43af-97a2-653b5776c423
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: SetValues2, debugger.setvalues2, dbgeng/IDebugRegisters2::SetValues2, IDebugRegisters_4e5c8f37-a5ad-4083-adb9-e75ec18542b2.xml, IDebugRegisters2, IDebugRegisters2 interface [Windows Debugging], SetValues2 method, IDebugRegisters2::SetValues2, SetValues2 method [Windows Debugging], SetValues2 method [Windows Debugging], IDebugRegisters2 interface
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: DbgEng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugRegisters2.SetValues2
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

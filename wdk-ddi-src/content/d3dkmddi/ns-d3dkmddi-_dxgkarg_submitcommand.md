@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGKARG_SUBMITCOMMAND
-title : "_DXGKARG_SUBMITCOMMAND"
-author : windows-driver-content
-description : The DXGKARG_SUBMITCOMMAND structure describes the direct memory access (DMA) buffer that a display miniport driver submits to the hardware command execution unit.
-old-location : display\dxgkarg_submitcommand.htm
-old-project : display
-ms.assetid : f0b5c7aa-855e-419a-ac27-c9f4edefd648
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : "_DXGKARG_SUBMITCOMMAND, display.dxgkarg_submitcommand, d3dkmddi/DXGKARG_SUBMITCOMMAND, DmStructs_04cbfdbf-3b43-4b70-8964-75eb9f9c4128.xml, DXGKARG_SUBMITCOMMAND, DXGKARG_SUBMITCOMMAND structure [Display Devices]"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGKARG_SUBMITCOMMAND
+UID: NS:d3dkmddi._DXGKARG_SUBMITCOMMAND
+title: "_DXGKARG_SUBMITCOMMAND"
+author: windows-driver-content
+description: The DXGKARG_SUBMITCOMMAND structure describes the direct memory access (DMA) buffer that a display miniport driver submits to the hardware command execution unit.
+old-location: display\dxgkarg_submitcommand.htm
+old-project: display
+ms.assetid: f0b5c7aa-855e-419a-ac27-c9f4edefd648
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: "_DXGKARG_SUBMITCOMMAND, display.dxgkarg_submitcommand, d3dkmddi/DXGKARG_SUBMITCOMMAND, DmStructs_04cbfdbf-3b43-4b70-8964-75eb9f9c4128.xml, DXGKARG_SUBMITCOMMAND, DXGKARG_SUBMITCOMMAND structure [Display Devices]"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DXGKARG_SUBMITCOMMAND
+product: Windows
+targetos: Windows
+req.typenames: DXGKARG_SUBMITCOMMAND
 ---
 
 # _DXGKARG_SUBMITCOMMAND structure

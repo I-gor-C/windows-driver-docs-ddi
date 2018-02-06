@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddchgr.IOCTL_CHANGER_SET_ACCESS
-title : IOCTL_CHANGER_SET_ACCESS
-author : windows-driver-content
-description : Sets the state of the device's import/export port (IEport), door, or keypad.
-old-location : storage\ioctl_changer_set_access.htm
-old-project : storage
-ms.assetid : 8927e862-94e4-45ce-9245-5c6f5629fc01
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_changer_set_access, IOCTL_CHANGER_SET_ACCESS control code [Storage Devices], IOCTL_CHANGER_SET_ACCESS, ntddchgr/IOCTL_CHANGER_SET_ACCESS, k307_08d52a8e-d7a0-42c6-92f9-c5099670473c.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddchgr.h
-req.include-header : Ntddchgr.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PELEMENT_TYPE, ELEMENT_TYPE"
+UID: NI:ntddchgr.IOCTL_CHANGER_SET_ACCESS
+title: IOCTL_CHANGER_SET_ACCESS
+author: windows-driver-content
+description: Sets the state of the device's import/export port (IEport), door, or keypad.
+old-location: storage\ioctl_changer_set_access.htm
+old-project: storage
+ms.assetid: 8927e862-94e4-45ce-9245-5c6f5629fc01
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_changer_set_access, IOCTL_CHANGER_SET_ACCESS control code [Storage Devices], IOCTL_CHANGER_SET_ACCESS, ntddchgr/IOCTL_CHANGER_SET_ACCESS, k307_08d52a8e-d7a0-42c6-92f9-c5099670473c.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddchgr.h
+req.include-header: Ntddchgr.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddchgr.h
+apiname:
+-	IOCTL_CHANGER_SET_ACCESS
+product: Windows
+targetos: Windows
+req.typenames: "*PELEMENT_TYPE, ELEMENT_TYPE"
 ---
 
 # IOCTL_CHANGER_SET_ACCESS IOCTL

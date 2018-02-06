@@ -1,42 +1,47 @@
 ---
-UID : NC:wmilib.WMI_QUERY_DATABLOCK_CALLBACK
-title : WMI_QUERY_DATABLOCK_CALLBACK
-author : windows-driver-content
-description : The DpWmiQueryDataBlock routine returns either a single instance or all instances of a data block. This routine is required.
-old-location : kernel\dpwmiquerydatablock.htm
-old-project : kernel
-ms.assetid : c8996367-9ac5-4725-93ff-f13a334fbc5a
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.dpwmiquerydatablock, DpWmiQueryDataBlock, DpWmiQueryDataBlock callback function [Kernel-Mode Driver Architecture], DpWmiQueryDataBlock, WMI_QUERY_DATABLOCK_CALLBACK, WMI_QUERY_DATABLOCK_CALLBACK, wmilib/DpWmiQueryDataBlock, k903_9a558594-4fe5-4e18-823a-8b487e1770d9.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wmilib.h
-req.include-header : Wmilib.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Called at PASSIVE_LEVEL.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WMI_CHANGER_PROBLEM_DEVICE_ERROR, *PWMI_CHANGER_PROBLEM_DEVICE_ERROR
-req.product : Windows 10 or later.
+UID: NC:wmilib.WMI_QUERY_DATABLOCK_CALLBACK
+title: WMI_QUERY_DATABLOCK_CALLBACK
+author: windows-driver-content
+description: The DpWmiQueryDataBlock routine returns either a single instance or all instances of a data block. This routine is required.
+old-location: kernel\dpwmiquerydatablock.htm
+old-project: kernel
+ms.assetid: c8996367-9ac5-4725-93ff-f13a334fbc5a
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.dpwmiquerydatablock, DpWmiQueryDataBlock, DpWmiQueryDataBlock callback function [Kernel-Mode Driver Architecture], DpWmiQueryDataBlock, WMI_QUERY_DATABLOCK_CALLBACK, WMI_QUERY_DATABLOCK_CALLBACK, wmilib/DpWmiQueryDataBlock, k903_9a558594-4fe5-4e18-823a-8b487e1770d9.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wmilib.h
+req.include-header: Wmilib.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Called at PASSIVE_LEVEL.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Wmilib.h
+apiname:
+-	DpWmiQueryDataBlock
+product: Windows
+targetos: Windows
+req.typenames: WMI_CHANGER_PROBLEM_DEVICE_ERROR, *PWMI_CHANGER_PROBLEM_DEVICE_ERROR
+req.product: Windows 10 or later.
 ---
 
 

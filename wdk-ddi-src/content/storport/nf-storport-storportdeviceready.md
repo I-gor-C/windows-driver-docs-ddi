@@ -1,42 +1,48 @@
 ---
-UID : NF:storport.StorPortDeviceReady
-title : StorPortDeviceReady function
-author : windows-driver-content
-description : The StorPortDeviceReady routine notifies the port driver that the indicated logical unit is ready to handle new requests.
-old-location : storage\storportdeviceready.htm
-old-project : storage
-ms.assetid : 6dd3abdb-9037-4cf5-abe7-7776dcf67bd5
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.storportdeviceready, StorPortDeviceReady, storport/StorPortDeviceReady, StorPortDeviceReady routine [Storage Devices], storprt_18a6f185-17dd-446c-9bbe-3937e1003a6b.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Storport.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STOR_SPINLOCK
-req.product : Windows 10 or later.
+UID: NF:storport.StorPortDeviceReady
+title: StorPortDeviceReady function
+author: windows-driver-content
+description: The StorPortDeviceReady routine notifies the port driver that the indicated logical unit is ready to handle new requests.
+old-location: storage\storportdeviceready.htm
+old-project: storage
+ms.assetid: 6dd3abdb-9037-4cf5-abe7-7776dcf67bd5
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.storportdeviceready, StorPortDeviceReady, storport/StorPortDeviceReady, StorPortDeviceReady routine [Storage Devices], storprt_18a6f185-17dd-446c-9bbe-3937e1003a6b.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Storport.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Storport.lib
+-	Storport.dll
+apiname:
+-	StorPortDeviceReady
+product: Windows
+targetos: Windows
+req.typenames: STOR_SPINLOCK
+req.product: Windows 10 or later.
 ---
 
 

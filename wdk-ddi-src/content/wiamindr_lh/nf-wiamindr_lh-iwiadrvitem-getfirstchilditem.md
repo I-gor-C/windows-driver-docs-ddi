@@ -1,42 +1,47 @@
 ---
-UID : NF:wiamindr_lh.IWiaDrvItem.GetFirstChildItem
-title : IWiaDrvItem::GetFirstChildItem method
-author : windows-driver-content
-description : The IWiaDrvItem::GetFirstChildItem method gets the first child item in an IWiaDrvItem folder item.
-old-location : image\iwiadrvitem_getfirstchilditem.htm
-old-project : image
-ms.assetid : 2e580a57-03cb-4ff4-b3c6-0b5ef17b4ccb
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : IWiaDrvItem::GetFirstChildItem, image.iwiadrvitem_getfirstchilditem, DrvItem_0ee76640-f07a-4b25-9955-230122a2a662.xml, IWiaDrvItem interface [Imaging Devices], GetFirstChildItem method, GetFirstChildItem method [Imaging Devices], IWiaDrvItem interface, GetFirstChildItem, IWiaDrvItem, wiamindr_lh/IWiaDrvItem::GetFirstChildItem, GetFirstChildItem method [Imaging Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wiamindr_lh.h
-req.include-header : Wiamindr.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Me and in Windows XP and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wiamindr_lh.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SCANWINDOW, *PSCANWINDOW
-req.product : Windows 10 or later.
+UID: NF:wiamindr_lh.IWiaDrvItem.GetFirstChildItem
+title: IWiaDrvItem::GetFirstChildItem method
+author: windows-driver-content
+description: The IWiaDrvItem::GetFirstChildItem method gets the first child item in an IWiaDrvItem folder item.
+old-location: image\iwiadrvitem_getfirstchilditem.htm
+old-project: image
+ms.assetid: 2e580a57-03cb-4ff4-b3c6-0b5ef17b4ccb
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: IWiaDrvItem::GetFirstChildItem, image.iwiadrvitem_getfirstchilditem, DrvItem_0ee76640-f07a-4b25-9955-230122a2a662.xml, IWiaDrvItem interface [Imaging Devices], GetFirstChildItem method, GetFirstChildItem method [Imaging Devices], IWiaDrvItem interface, GetFirstChildItem, IWiaDrvItem, wiamindr_lh/IWiaDrvItem::GetFirstChildItem, GetFirstChildItem method [Imaging Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wiamindr_lh.h
+req.include-header: Wiamindr.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Me and in Windows XP and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wiamindr_lh.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	wiamindr_lh.h
+apiname:
+-	IWiaDrvItem.GetFirstChildItem
+product: Windows
+targetos: Windows
+req.typenames: SCANWINDOW, *PSCANWINDOW
+req.product: Windows 10 or later.
 ---
 
 

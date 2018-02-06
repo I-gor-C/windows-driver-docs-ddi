@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsFilterGetFirstChildPin
-title : KsFilterGetFirstChildPin function
-author : windows-driver-content
-description : The KsFilterGetFirstChildPin function returns the first instantiated pin of type PinID on the filter specified by Filter.
-old-location : stream\ksfiltergetfirstchildpin.htm
-old-project : stream
-ms.assetid : b026908a-51d4-45a8-9c0e-1c163563bfbf
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.ksfiltergetfirstchildpin, avfunc_303477ee-598b-4b5b-baae-1e520c154e99.xml, KsFilterGetFirstChildPin function [Streaming Media Devices], KsFilterGetFirstChildPin, ks/KsFilterGetFirstChildPin
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsFilterGetFirstChildPin
+title: KsFilterGetFirstChildPin function
+author: windows-driver-content
+description: The KsFilterGetFirstChildPin function returns the first instantiated pin of type PinID on the filter specified by Filter.
+old-location: stream\ksfiltergetfirstchildpin.htm
+old-project: stream
+ms.assetid: b026908a-51d4-45a8-9c0e-1c163563bfbf
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.ksfiltergetfirstchildpin, avfunc_303477ee-598b-4b5b-baae-1e520c154e99.xml, KsFilterGetFirstChildPin function [Streaming Media Devices], KsFilterGetFirstChildPin, ks/KsFilterGetFirstChildPin
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsFilterGetFirstChildPin
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NC:ndis.FILTER_CANCEL_DIRECT_OID_REQUEST
-title : FILTER_CANCEL_DIRECT_OID_REQUEST
-author : windows-driver-content
-description : NDIS calls a filter driver's FilterCancelDirectOidRequest function to cancel a direct OID request.Note  You must declare the function by using the FILTER_CANCEL_DIRECT_OID_REQUEST type.
-old-location : netvista\filtercanceldirectoidrequest.htm
-old-project : netvista
-ms.assetid : 3587c5dc-3b4c-4aab-8c2d-cc9988373a56
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.filtercanceldirectoidrequest, FilterCancelDirectOidRequest callback function [Network Drivers Starting with Windows Vista], FilterCancelDirectOidRequest, FILTER_CANCEL_DIRECT_OID_REQUEST, FILTER_CANCEL_DIRECT_OID_REQUEST, ndis/FilterCancelDirectOidRequest, ndis_request_direct_ref_e9bd9db7-8a50-485e-9592-e43461963137.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.1 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
+UID: NC:ndis.FILTER_CANCEL_DIRECT_OID_REQUEST
+title: FILTER_CANCEL_DIRECT_OID_REQUEST
+author: windows-driver-content
+description: NDIS calls a filter driver's FilterCancelDirectOidRequest function to cancel a direct OID request.Note  You must declare the function by using the FILTER_CANCEL_DIRECT_OID_REQUEST type.
+old-location: netvista\filtercanceldirectoidrequest.htm
+old-project: netvista
+ms.assetid: 3587c5dc-3b4c-4aab-8c2d-cc9988373a56
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.filtercanceldirectoidrequest, FilterCancelDirectOidRequest callback function [Network Drivers Starting with Windows Vista], FilterCancelDirectOidRequest, FILTER_CANCEL_DIRECT_OID_REQUEST, FILTER_CANCEL_DIRECT_OID_REQUEST, ndis/FilterCancelDirectOidRequest, ndis_request_direct_ref_e9bd9db7-8a50-485e-9592-e43461963137.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.1 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ndis.h
+apiname:
+-	FilterCancelDirectOidRequest
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 

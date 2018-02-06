@@ -1,41 +1,46 @@
 ---
-UID : NS:ntifs._SID
-title : "_SID"
-author : windows-driver-content
-description : The security identifier (SID) structure is a variable-length structure used to uniquely identify users or groups.
-old-location : ifsk\sid.htm
-old-project : ifsk
-ms.assetid : 3b0d68f9-e871-42fe-97b0-f70f1fa72bf0
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ntifs/SID, *PISID, SID, _SID, PSID, SID structure [Installable File System Drivers], PSID structure pointer [Installable File System Drivers], ifsk.sid, securitystructures_748be9da-f428-42cd-a1f8-eca090e2b3aa.xml, ntifs/PSID
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SID, *PISID
+UID: NS:ntifs._SID
+title: "_SID"
+author: windows-driver-content
+description: The security identifier (SID) structure is a variable-length structure used to uniquely identify users or groups.
+old-location: ifsk\sid.htm
+old-project: ifsk
+ms.assetid: 3b0d68f9-e871-42fe-97b0-f70f1fa72bf0
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ntifs/SID, *PISID, SID, _SID, PSID, SID structure [Installable File System Drivers], PSID structure pointer [Installable File System Drivers], ifsk.sid, securitystructures_748be9da-f428-42cd-a1f8-eca090e2b3aa.xml, ntifs/PSID
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntifs.h
+apiname:
+-	SID
+product: Windows
+targetos: Windows
+req.typenames: SID, *PISID
 ---
 
 # _SID structure

@@ -1,42 +1,48 @@
 ---
-UID : NF:wsk.WskCaptureProviderNPI
-title : WskCaptureProviderNPI function
-author : windows-driver-content
-description : The WskCaptureProviderNPI function captures a provider Network Programming Interface (NPI) when it becomes available from the WSK subsystem.
-old-location : netvista\wskcaptureprovidernpi.htm
-old-project : netvista
-ms.assetid : b5c6667e-33b4-4482-8817-c01d9d314c3a
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : WskCaptureProviderNPI, netvista.wskcaptureprovidernpi, WskCaptureProviderNPI function [Network Drivers Starting with Windows Vista], wsk/WskCaptureProviderNPI, wskref_571be642-7c1c-471d-bf35-73bd6b271cbe.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wsk.h
-req.include-header : Wsk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating   systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Netio.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WNODE_HEADER, *PWNODE_HEADER
-req.product : Windows 10 or later.
+UID: NF:wsk.WskCaptureProviderNPI
+title: WskCaptureProviderNPI function
+author: windows-driver-content
+description: The WskCaptureProviderNPI function captures a provider Network Programming Interface (NPI) when it becomes available from the WSK subsystem.
+old-location: netvista\wskcaptureprovidernpi.htm
+old-project: netvista
+ms.assetid: b5c6667e-33b4-4482-8817-c01d9d314c3a
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: WskCaptureProviderNPI, netvista.wskcaptureprovidernpi, WskCaptureProviderNPI function [Network Drivers Starting with Windows Vista], wsk/WskCaptureProviderNPI, wskref_571be642-7c1c-471d-bf35-73bd6b271cbe.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wsk.h
+req.include-header: Wsk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Netio.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Netio.lib
+-	Netio.dll
+apiname:
+-	WskCaptureProviderNPI
+product: Windows
+targetos: Windows
+req.typenames: WNODE_HEADER, *PWNODE_HEADER
+req.product: Windows 10 or later.
 ---
 
 

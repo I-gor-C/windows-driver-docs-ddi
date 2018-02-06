@@ -1,41 +1,47 @@
 ---
-UID : NF:fwpsk.FwpsClassifyOptionSet0
-title : FwpsClassifyOptionSet0 function
-author : windows-driver-content
-description : The FwpsClassifyOptionSet0 function is called by a callout filter's classifyFn function to specify additional information that affects the characteristics of permitted filtering operations.Note  FwpsClassifyOptionSet0 is a specific version of FwpsClassifyOptionSet. See WFP Version-Independent Names and Targeting Specific Versions of Windows for more information.
-old-location : netvista\fwpsclassifyoptionset0.htm
-old-project : netvista
-ms.assetid : 8653fac0-8b2f-4e77-9588-2854ae168c1a
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : FwpsClassifyOptionSet0, FwpsClassifyOptionSet0 function [Network Drivers Starting with Windows Vista], wfp_ref_2_funct_3_fwps_C_a482e4f1-dc60-450e-8e3f-6ba7da1a4528.xml, netvista.fwpsclassifyoptionset0, fwpsk/FwpsClassifyOptionSet0
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fwpsk.h
-req.include-header : Fwpsk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Fwpkclnt.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FWPS_VSWITCH_EVENT_TYPE
+UID: NF:fwpsk.FwpsClassifyOptionSet0
+title: FwpsClassifyOptionSet0 function
+author: windows-driver-content
+description: The FwpsClassifyOptionSet0 function is called by a callout filter's classifyFn function to specify additional information that affects the characteristics of permitted filtering operations.Note  FwpsClassifyOptionSet0 is a specific version of FwpsClassifyOptionSet. See WFP Version-Independent Names and Targeting Specific Versions of Windows for more information.
+old-location: netvista\fwpsclassifyoptionset0.htm
+old-project: netvista
+ms.assetid: 8653fac0-8b2f-4e77-9588-2854ae168c1a
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: FwpsClassifyOptionSet0, FwpsClassifyOptionSet0 function [Network Drivers Starting with Windows Vista], wfp_ref_2_funct_3_fwps_C_a482e4f1-dc60-450e-8e3f-6ba7da1a4528.xml, netvista.fwpsclassifyoptionset0, fwpsk/FwpsClassifyOptionSet0
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fwpsk.h
+req.include-header: Fwpsk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Fwpkclnt.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Fwpkclnt.lib
+-	Fwpkclnt.dll
+apiname:
+-	FwpsClassifyOptionSet0
+product: Windows
+targetos: Windows
+req.typenames: FWPS_VSWITCH_EVENT_TYPE
 ---
 
 

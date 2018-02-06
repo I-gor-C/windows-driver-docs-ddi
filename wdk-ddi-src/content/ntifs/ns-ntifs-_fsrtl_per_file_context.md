@@ -1,41 +1,46 @@
 ---
-UID : NS:ntifs._FSRTL_PER_FILE_CONTEXT
-title : "_FSRTL_PER_FILE_CONTEXT"
-author : windows-driver-content
-description : A legacy file system filter driver can use a FSRTL_PER_FILE_CONTEXT structure to associate driver-specific context information to an open file.
-old-location : ifsk\fsrtl_per_file_context.htm
-old-project : ifsk
-ms.assetid : d20668f0-b076-4edd-bf21-98841cbbdc74
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FSRTL_PER_FILE_CONTEXT, ntifs/FSRTL_PER_FILE_CONTEXT, ntifs/PFSRTL_PER_FILE_CONTEXT, _FSRTL_PER_FILE_CONTEXT, PFSRTL_PER_FILE_CONTEXT structure pointer [Installable File System Drivers], FSRTL_PER_FILE_CONTEXT structure [Installable File System Drivers], ifsk.fsrtl_per_file_context, PFSRTL_PER_FILE_CONTEXT, contextstructures_329894da-4955-4f46-8fab-92e32f10ed0d.xml, *PFSRTL_PER_FILE_CONTEXT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntifs.h
-req.include-header : Fltkernel.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting withWindows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PFSRTL_PER_FILE_CONTEXT, FSRTL_PER_FILE_CONTEXT"
+UID: NS:ntifs._FSRTL_PER_FILE_CONTEXT
+title: "_FSRTL_PER_FILE_CONTEXT"
+author: windows-driver-content
+description: A legacy file system filter driver can use a FSRTL_PER_FILE_CONTEXT structure to associate driver-specific context information to an open file.
+old-location: ifsk\fsrtl_per_file_context.htm
+old-project: ifsk
+ms.assetid: d20668f0-b076-4edd-bf21-98841cbbdc74
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FSRTL_PER_FILE_CONTEXT, ntifs/FSRTL_PER_FILE_CONTEXT, ntifs/PFSRTL_PER_FILE_CONTEXT, _FSRTL_PER_FILE_CONTEXT, PFSRTL_PER_FILE_CONTEXT structure pointer [Installable File System Drivers], FSRTL_PER_FILE_CONTEXT structure [Installable File System Drivers], ifsk.fsrtl_per_file_context, PFSRTL_PER_FILE_CONTEXT, contextstructures_329894da-4955-4f46-8fab-92e32f10ed0d.xml, *PFSRTL_PER_FILE_CONTEXT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntifs.h
+req.include-header: Fltkernel.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting withWindows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntifs.h
+apiname:
+-	FSRTL_PER_FILE_CONTEXT
+product: Windows
+targetos: Windows
+req.typenames: "*PFSRTL_PER_FILE_CONTEXT, FSRTL_PER_FILE_CONTEXT"
 ---
 
 # _FSRTL_PER_FILE_CONTEXT structure

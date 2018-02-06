@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._DXVAHDDDI_SURFACE
-title : "_DXVAHDDDI_SURFACE"
-author : windows-driver-content
-description : The DXVAHDDDI_SURFACE structure describes a surface.
-old-location : display\dxvahdddi_surface.htm
-old-project : display
-ms.assetid : a0bfc9bf-777e-4da4-9414-856ec650375d
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3dumddi/DXVAHDDDI_SURFACE, DXVAHDDDI_SURFACE structure [Display Devices], DXVA2_Structs_8032b044-07e9-4bb7-9367-1c3283bbf145.xml, _DXVAHDDDI_SURFACE, display.dxvahdddi_surface, DXVAHDDDI_SURFACE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : DXVAHDDDI_SURFACE is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXVAHDDDI_SURFACE
+UID: NS:d3dumddi._DXVAHDDDI_SURFACE
+title: "_DXVAHDDDI_SURFACE"
+author: windows-driver-content
+description: The DXVAHDDDI_SURFACE structure describes a surface.
+old-location: display\dxvahdddi_surface.htm
+old-project: display
+ms.assetid: a0bfc9bf-777e-4da4-9414-856ec650375d
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3dumddi/DXVAHDDDI_SURFACE, DXVAHDDDI_SURFACE structure [Display Devices], DXVA2_Structs_8032b044-07e9-4bb7-9367-1c3283bbf145.xml, _DXVAHDDDI_SURFACE, display.dxvahdddi_surface, DXVAHDDDI_SURFACE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: DXVAHDDDI_SURFACE is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	DXVAHDDDI_SURFACE
+product: Windows
+targetos: Windows
+req.typenames: DXVAHDDDI_SURFACE
 ---
 
 # _DXVAHDDDI_SURFACE structure

@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddndis._NDIS_RECEIVE_SCALE_CAPABILITIES
-title : "_NDIS_RECEIVE_SCALE_CAPABILITIES"
-author : windows-driver-content
-description : The NDIS_RECEIVE_SCALE_CAPABILITIES structure specifies the receive side scaling (RSS) capabilities of a miniport adapter.
-old-location : netvista\ndis_receive_scale_capabilities.htm
-old-project : netvista
-ms.assetid : dabd8f65-1aa5-4d45-9c0a-4539efd762c6
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NDIS_RSS_CAPS_HASH_TYPE_UDP_IPV4, ntddndis/NDIS_RECEIVE_SCALE_CAPABILITIES, NdisHashFunctionReserved2, NDIS_RSS_CAPS_MESSAGE_SIGNALED_INTERRUPTS, NDIS_RSS_CAPS_HASH_TYPE_TCP_IPV4, NdisHashFunctionReserved1, NDIS_RSS_CAPS_HASH_TYPE_TCP_IPV6_EX, NDIS_RSS_CAPS_SUPPORTS_MSI_X, receive_scaling_structures_ref_b9df619b-57b8-4fa3-b292-bba02175a23a.xml, NDIS_RECEIVE_SCALE_CAPABILITIES, _NDIS_RECEIVE_SCALE_CAPABILITIES, ntddndis/PNDIS_RECEIVE_SCALE_CAPABILITIES, NDIS_RECEIVE_SCALE_CAPABILITIES structure [Network Drivers Starting with Windows Vista], NDIS_RSS_CAPS_CLASSIFICATION_AT_DPC, NDIS_RSS_CAPS_HASH_TYPE_TCP_IPV6, NdisHashFunctionToeplitz, NdisHashFunctionReserved3, *PNDIS_RECEIVE_SCALE_CAPABILITIES, NDIS_RSS_CAPS_USING_MSI_X, NDIS_RSS_CAPS_HASH_TYPE_UDP_IPV6, PNDIS_RECEIVE_SCALE_CAPABILITIES structure pointer [Network Drivers Starting with Windows Vista], NDIS_RSS_CAPS_CLASSIFICATION_AT_ISR, NDIS_RSS_CAPS_HASH_TYPE_UDP_IPV6_EX, netvista.ndis_receive_scale_capabilities, PNDIS_RECEIVE_SCALE_CAPABILITIES
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_RECEIVE_SCALE_CAPABILITIES, *PNDIS_RECEIVE_SCALE_CAPABILITIES
+UID: NS:ntddndis._NDIS_RECEIVE_SCALE_CAPABILITIES
+title: "_NDIS_RECEIVE_SCALE_CAPABILITIES"
+author: windows-driver-content
+description: The NDIS_RECEIVE_SCALE_CAPABILITIES structure specifies the receive side scaling (RSS) capabilities of a miniport adapter.
+old-location: netvista\ndis_receive_scale_capabilities.htm
+old-project: netvista
+ms.assetid: dabd8f65-1aa5-4d45-9c0a-4539efd762c6
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NDIS_RSS_CAPS_HASH_TYPE_UDP_IPV4, ntddndis/NDIS_RECEIVE_SCALE_CAPABILITIES, NdisHashFunctionReserved2, NDIS_RSS_CAPS_MESSAGE_SIGNALED_INTERRUPTS, NDIS_RSS_CAPS_HASH_TYPE_TCP_IPV4, NdisHashFunctionReserved1, NDIS_RSS_CAPS_HASH_TYPE_TCP_IPV6_EX, NDIS_RSS_CAPS_SUPPORTS_MSI_X, receive_scaling_structures_ref_b9df619b-57b8-4fa3-b292-bba02175a23a.xml, NDIS_RECEIVE_SCALE_CAPABILITIES, _NDIS_RECEIVE_SCALE_CAPABILITIES, ntddndis/PNDIS_RECEIVE_SCALE_CAPABILITIES, NDIS_RECEIVE_SCALE_CAPABILITIES structure [Network Drivers Starting with Windows Vista], NDIS_RSS_CAPS_CLASSIFICATION_AT_DPC, NDIS_RSS_CAPS_HASH_TYPE_TCP_IPV6, NdisHashFunctionToeplitz, NdisHashFunctionReserved3, *PNDIS_RECEIVE_SCALE_CAPABILITIES, NDIS_RSS_CAPS_USING_MSI_X, NDIS_RSS_CAPS_HASH_TYPE_UDP_IPV6, PNDIS_RECEIVE_SCALE_CAPABILITIES structure pointer [Network Drivers Starting with Windows Vista], NDIS_RSS_CAPS_CLASSIFICATION_AT_ISR, NDIS_RSS_CAPS_HASH_TYPE_UDP_IPV6_EX, netvista.ndis_receive_scale_capabilities, PNDIS_RECEIVE_SCALE_CAPABILITIES
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddndis.h
+apiname:
+-	NDIS_RECEIVE_SCALE_CAPABILITIES
+product: Windows
+targetos: Windows
+req.typenames: NDIS_RECEIVE_SCALE_CAPABILITIES, *PNDIS_RECEIVE_SCALE_CAPABILITIES
 ---
 
 # _NDIS_RECEIVE_SCALE_CAPABILITIES structure

@@ -1,41 +1,46 @@
 ---
-UID : NS:fltkernel._FLT_TAG_DATA_BUFFER
-title : "_FLT_TAG_DATA_BUFFER"
-author : windows-driver-content
-description : The FLT_TAG_DATA_BUFFER structure contains information about a reparse point tag.
-old-location : ifsk\flt_tag_data_buffer.htm
-old-project : ifsk
-ms.assetid : a101e0c8-7121-42b6-aa0e-299f37af8e47
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltSystemStructures_47092b0b-5a4b-40eb-8b5f-f0a182d5e509.xml, PFLT_TAG_DATA_BUFFER, FLT_TAG_DATA_BUFFER structure [Installable File System Drivers], fltkernel/FLT_TAG_DATA_BUFFER, _FLT_TAG_DATA_BUFFER, *PFLT_TAG_DATA_BUFFER, fltkernel/PFLT_TAG_DATA_BUFFER, PFLT_TAG_DATA_BUFFER structure pointer [Installable File System Drivers], FLT_TAG_DATA_BUFFER, ifsk.flt_tag_data_buffer
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : fltkernel.h
-req.include-header : FltKernel.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FLT_TAG_DATA_BUFFER, *PFLT_TAG_DATA_BUFFER
+UID: NS:fltkernel._FLT_TAG_DATA_BUFFER
+title: "_FLT_TAG_DATA_BUFFER"
+author: windows-driver-content
+description: The FLT_TAG_DATA_BUFFER structure contains information about a reparse point tag.
+old-location: ifsk\flt_tag_data_buffer.htm
+old-project: ifsk
+ms.assetid: a101e0c8-7121-42b6-aa0e-299f37af8e47
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltSystemStructures_47092b0b-5a4b-40eb-8b5f-f0a182d5e509.xml, PFLT_TAG_DATA_BUFFER, FLT_TAG_DATA_BUFFER structure [Installable File System Drivers], fltkernel/FLT_TAG_DATA_BUFFER, _FLT_TAG_DATA_BUFFER, *PFLT_TAG_DATA_BUFFER, fltkernel/PFLT_TAG_DATA_BUFFER, PFLT_TAG_DATA_BUFFER structure pointer [Installable File System Drivers], FLT_TAG_DATA_BUFFER, ifsk.flt_tag_data_buffer
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: fltkernel.h
+req.include-header: FltKernel.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	fltkernel.h
+apiname:
+-	FLT_TAG_DATA_BUFFER
+product: Windows
+targetos: Windows
+req.typenames: FLT_TAG_DATA_BUFFER, *PFLT_TAG_DATA_BUFFER
 ---
 
 # _FLT_TAG_DATA_BUFFER structure

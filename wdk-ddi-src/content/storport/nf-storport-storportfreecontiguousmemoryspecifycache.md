@@ -1,42 +1,47 @@
 ---
-UID : NF:storport.StorPortFreeContiguousMemorySpecifyCache
-title : StorPortFreeContiguousMemorySpecifyCache function
-author : windows-driver-content
-description : The StorPortFreeContiguousMemorySpecifyCache routine deallocates a range of noncached memory in the nonpaged portion of the system address space.
-old-location : storage\storportfreecontiguousmemoryspecifycache.htm
-old-project : storage
-ms.assetid : 29735ea8-6125-4958-8d78-12d1f13b16ea
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : StorPortFreeContiguousMemorySpecifyCache, storprt_4ad11a47-ebb2-4eb9-a7cb-ce0b47d2ab3a.xml, storage.storportfreecontiguousmemoryspecifycache, storport/StorPortFreeContiguousMemorySpecifyCache, StorPortFreeContiguousMemorySpecifyCache routine [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 7 and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : StorPortIrql
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STOR_SPINLOCK
-req.product : Windows 10 or later.
+UID: NF:storport.StorPortFreeContiguousMemorySpecifyCache
+title: StorPortFreeContiguousMemorySpecifyCache function
+author: windows-driver-content
+description: The StorPortFreeContiguousMemorySpecifyCache routine deallocates a range of noncached memory in the nonpaged portion of the system address space.
+old-location: storage\storportfreecontiguousmemoryspecifycache.htm
+old-project: storage
+ms.assetid: 29735ea8-6125-4958-8d78-12d1f13b16ea
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: StorPortFreeContiguousMemorySpecifyCache, storprt_4ad11a47-ebb2-4eb9-a7cb-ce0b47d2ab3a.xml, storage.storportfreecontiguousmemoryspecifycache, storport/StorPortFreeContiguousMemorySpecifyCache, StorPortFreeContiguousMemorySpecifyCache routine [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 7 and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: StorPortIrql
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	storport.h
+apiname:
+-	StorPortFreeContiguousMemorySpecifyCache
+product: Windows
+targetos: Windows
+req.typenames: STOR_SPINLOCK
+req.product: Windows 10 or later.
 ---
 
 

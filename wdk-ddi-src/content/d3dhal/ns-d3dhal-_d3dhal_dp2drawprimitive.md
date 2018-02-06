@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dhal._D3DHAL_DP2DRAWPRIMITIVE
-title : "_D3DHAL_DP2DRAWPRIMITIVE"
-author : windows-driver-content
-description : DirectX 8.0 and later versions only. D3DHAL_DRAWPRIMITIVE is parsed from the command buffer by the D3dDrawPrimitives2 callback when the D3DHAL_DP2COMMAND structure's bCommand member is set to D3DDP2OP_DRAWPRIMITIVE, and is used to render a primitive.
-old-location : display\d3dhal_dp2drawprimitive.htm
-old-project : display
-ms.assetid : 1dd56465-e9e8-4a79-8533-a1777cf4d8a2
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : "*LPD3DHAL_DP2DRAWPRIMITIVE, _D3DHAL_DP2DRAWPRIMITIVE, d3dhal/D3DHAL_DP2DRAWPRIMITIVE, LPD3DHAL_DP2DRAWPRIMITIVE structure pointer [Display Devices], D3DHAL_DP2DRAWPRIMITIVE structure [Display Devices], LPD3DHAL_DP2DRAWPRIMITIVE, D3DHAL_DP2DRAWPRIMITIVE, d3dstrct_2736a73d-52f8-4647-86c3-2c362dc3f669.xml, display.d3dhal_dp2drawprimitive, d3dhal/LPD3DHAL_DP2DRAWPRIMITIVE"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dhal.h
-req.include-header : D3dhal.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DHAL_DP2DRAWPRIMITIVE
+UID: NS:d3dhal._D3DHAL_DP2DRAWPRIMITIVE
+title: "_D3DHAL_DP2DRAWPRIMITIVE"
+author: windows-driver-content
+description: DirectX 8.0 and later versions only. D3DHAL_DRAWPRIMITIVE is parsed from the command buffer by the D3dDrawPrimitives2 callback when the D3DHAL_DP2COMMAND structure's bCommand member is set to D3DDP2OP_DRAWPRIMITIVE, and is used to render a primitive.
+old-location: display\d3dhal_dp2drawprimitive.htm
+old-project: display
+ms.assetid: 1dd56465-e9e8-4a79-8533-a1777cf4d8a2
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: "*LPD3DHAL_DP2DRAWPRIMITIVE, _D3DHAL_DP2DRAWPRIMITIVE, d3dhal/D3DHAL_DP2DRAWPRIMITIVE, LPD3DHAL_DP2DRAWPRIMITIVE structure pointer [Display Devices], D3DHAL_DP2DRAWPRIMITIVE structure [Display Devices], LPD3DHAL_DP2DRAWPRIMITIVE, D3DHAL_DP2DRAWPRIMITIVE, d3dstrct_2736a73d-52f8-4647-86c3-2c362dc3f669.xml, display.d3dhal_dp2drawprimitive, d3dhal/LPD3DHAL_DP2DRAWPRIMITIVE"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dhal.h
+req.include-header: D3dhal.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dhal.h
+apiname:
+-	D3DHAL_DP2DRAWPRIMITIVE
+product: Windows
+targetos: Windows
+req.typenames: D3DHAL_DP2DRAWPRIMITIVE
 ---
 
 # _D3DHAL_DP2DRAWPRIMITIVE structure

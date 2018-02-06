@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_CLOSEADAPTER
-title : PFND3DDDI_CLOSEADAPTER
-author : windows-driver-content
-description : The CloseAdapter function releases resources for a graphics adapter object.
-old-location : display\closeadapter.htm
-old-project : display
-ms.assetid : 9dc7f71a-753d-41ca-8eaa-bff6536e834f
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.closeadapter, CloseAdapter callback function [Display Devices], CloseAdapter, PFND3DDDI_CLOSEADAPTER, PFND3DDDI_CLOSEADAPTER, d3dumddi/CloseAdapter, UserModeDisplayDriver_Functions_ccc1793f-15b1-480f-8835-38326b749308.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_CLOSEADAPTER
+title: PFND3DDDI_CLOSEADAPTER
+author: windows-driver-content
+description: The CloseAdapter function releases resources for a graphics adapter object.
+old-location: display\closeadapter.htm
+old-project: display
+ms.assetid: 9dc7f71a-753d-41ca-8eaa-bff6536e834f
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.closeadapter, CloseAdapter callback function [Display Devices], CloseAdapter, PFND3DDDI_CLOSEADAPTER, PFND3DDDI_CLOSEADAPTER, d3dumddi/CloseAdapter, UserModeDisplayDriver_Functions_ccc1793f-15b1-480f-8835-38326b749308.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	CloseAdapter
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

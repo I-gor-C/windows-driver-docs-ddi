@@ -1,42 +1,47 @@
 ---
-UID : NF:rxce.RxCeTearDownConnection
-title : RxCeTearDownConnection function
-author : windows-driver-content
-description : RxCeTearDownConnection tears down a given connection between a local RDBSS connection address and a remote address.
-old-location : ifsk\rxceteardownconnection.htm
-old-project : ifsk
-ms.assetid : 71b48983-af12-4361-8cf9-adec1afffb65
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.rxceteardownconnection, rxref_bf951adb-b63e-49f6-8325-f67adb2cdbf0.xml, RxCeTearDownConnection, rxce/RxCeTearDownConnection, RxCeTearDownConnection function [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : rxce.h
-req.include-header : Rxce.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*LPRILWRITEPHONEBOOKENTRYPARAMS, RILWRITEPHONEBOOKENTRYPARAMS"
-req.product : Windows 10 or later.
+UID: NF:rxce.RxCeTearDownConnection
+title: RxCeTearDownConnection function
+author: windows-driver-content
+description: RxCeTearDownConnection tears down a given connection between a local RDBSS connection address and a remote address.
+old-location: ifsk\rxceteardownconnection.htm
+old-project: ifsk
+ms.assetid: 71b48983-af12-4361-8cf9-adec1afffb65
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.rxceteardownconnection, rxref_bf951adb-b63e-49f6-8325-f67adb2cdbf0.xml, RxCeTearDownConnection, rxce/RxCeTearDownConnection, RxCeTearDownConnection function [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: rxce.h
+req.include-header: Rxce.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	rxce.h
+apiname:
+-	RxCeTearDownConnection
+product: Windows
+targetos: Windows
+req.typenames: "*LPRILWRITEPHONEBOOKENTRYPARAMS, RILWRITEPHONEBOOKENTRYPARAMS"
+req.product: Windows 10 or later.
 ---
 
 

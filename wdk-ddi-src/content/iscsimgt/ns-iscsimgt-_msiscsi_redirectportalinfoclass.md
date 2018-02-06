@@ -1,41 +1,46 @@
 ---
-UID : NS:iscsimgt._MSiSCSI_RedirectPortalInfoClass
-title : "_MSiSCSI_RedirectPortalInfoClass"
-author : windows-driver-content
-description : The MSiSCSI_RedirectPortalInfoClass structure contains information about a collection of sessions for an adapter ID. It also contains the portal redirection information for each of the sessions.
-old-location : storage\msiscsi_redirectportalinfoclass.htm
-old-project : storage
-ms.assetid : fcddf029-748b-4300-9f87-a103d961918a
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : "*PMSiSCSI_RedirectPortalInfoClass, structs-iSCSI_211386cb-7e73-40d9-8284-560555fe8201.xml, MSiSCSI_RedirectPortalInfoClass structure [Storage Devices], PMSiSCSI_RedirectPortalInfoClass, PMSiSCSI_RedirectPortalInfoClass structure pointer [Storage Devices], _MSiSCSI_RedirectPortalInfoClass, iscsimgt/PMSiSCSI_RedirectPortalInfoClass, MSiSCSI_RedirectPortalInfoClass, storage.msiscsi_redirectportalinfoclass, iscsimgt/MSiSCSI_RedirectPortalInfoClass"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : iscsimgt.h
-req.include-header : Iscsimgt.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PMSiSCSI_RedirectPortalInfoClass, MSiSCSI_RedirectPortalInfoClass"
+UID: NS:iscsimgt._MSiSCSI_RedirectPortalInfoClass
+title: "_MSiSCSI_RedirectPortalInfoClass"
+author: windows-driver-content
+description: The MSiSCSI_RedirectPortalInfoClass structure contains information about a collection of sessions for an adapter ID. It also contains the portal redirection information for each of the sessions.
+old-location: storage\msiscsi_redirectportalinfoclass.htm
+old-project: storage
+ms.assetid: fcddf029-748b-4300-9f87-a103d961918a
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: "*PMSiSCSI_RedirectPortalInfoClass, structs-iSCSI_211386cb-7e73-40d9-8284-560555fe8201.xml, MSiSCSI_RedirectPortalInfoClass structure [Storage Devices], PMSiSCSI_RedirectPortalInfoClass, PMSiSCSI_RedirectPortalInfoClass structure pointer [Storage Devices], _MSiSCSI_RedirectPortalInfoClass, iscsimgt/PMSiSCSI_RedirectPortalInfoClass, MSiSCSI_RedirectPortalInfoClass, storage.msiscsi_redirectportalinfoclass, iscsimgt/MSiSCSI_RedirectPortalInfoClass"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: iscsimgt.h
+req.include-header: Iscsimgt.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	iscsimgt.h
+apiname:
+-	MSiSCSI_RedirectPortalInfoClass
+product: Windows
+targetos: Windows
+req.typenames: "*PMSiSCSI_RedirectPortalInfoClass, MSiSCSI_RedirectPortalInfoClass"
 ---
 
 # _MSiSCSI_RedirectPortalInfoClass structure

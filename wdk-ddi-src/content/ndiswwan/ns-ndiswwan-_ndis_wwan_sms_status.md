@@ -1,41 +1,46 @@
 ---
-UID : NS:ndiswwan._NDIS_WWAN_SMS_STATUS
-title : "_NDIS_WWAN_SMS_STATUS"
-author : windows-driver-content
-description : The NDIS_WWAN_SMS_STATUS structure represents the status of the SMS message store.
-old-location : netvista\ndis_wwan_sms_status.htm
-old-project : netvista
-ms.assetid : 7ab05cae-6902-4150-9af3-52981ba820b7
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : ndiswwan/NDIS_WWAN_SMS_STATUS, WwanRef_7f7554d1-07d3-451b-b36c-0c03d589c6f8.xml, ndiswwan/PNDIS_WWAN_SMS_STATUS, netvista.ndis_wwan_sms_status, PNDIS_WWAN_SMS_STATUS, NDIS_WWAN_SMS_STATUS, *PNDIS_WWAN_SMS_STATUS, _NDIS_WWAN_SMS_STATUS, NDIS_WWAN_SMS_STATUS structure [Network Drivers Starting with Windows Vista], PNDIS_WWAN_SMS_STATUS structure pointer [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndiswwan.h
-req.include-header : Ndiswwan.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PNDIS_WWAN_SMS_STATUS, NDIS_WWAN_SMS_STATUS"
+UID: NS:ndiswwan._NDIS_WWAN_SMS_STATUS
+title: "_NDIS_WWAN_SMS_STATUS"
+author: windows-driver-content
+description: The NDIS_WWAN_SMS_STATUS structure represents the status of the SMS message store.
+old-location: netvista\ndis_wwan_sms_status.htm
+old-project: netvista
+ms.assetid: 7ab05cae-6902-4150-9af3-52981ba820b7
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: ndiswwan/NDIS_WWAN_SMS_STATUS, WwanRef_7f7554d1-07d3-451b-b36c-0c03d589c6f8.xml, ndiswwan/PNDIS_WWAN_SMS_STATUS, netvista.ndis_wwan_sms_status, PNDIS_WWAN_SMS_STATUS, NDIS_WWAN_SMS_STATUS, *PNDIS_WWAN_SMS_STATUS, _NDIS_WWAN_SMS_STATUS, NDIS_WWAN_SMS_STATUS structure [Network Drivers Starting with Windows Vista], PNDIS_WWAN_SMS_STATUS structure pointer [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndiswwan.h
+req.include-header: Ndiswwan.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndiswwan.h
+apiname:
+-	NDIS_WWAN_SMS_STATUS
+product: Windows
+targetos: Windows
+req.typenames: "*PNDIS_WWAN_SMS_STATUS, NDIS_WWAN_SMS_STATUS"
 ---
 
 # _NDIS_WWAN_SMS_STATUS structure

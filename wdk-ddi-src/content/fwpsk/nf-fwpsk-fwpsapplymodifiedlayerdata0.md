@@ -1,41 +1,47 @@
 ---
-UID : NF:fwpsk.FwpsApplyModifiedLayerData0
-title : FwpsApplyModifiedLayerData0 function
-author : windows-driver-content
-description : The FwpsApplyModifiedLayerData0 function applies changes to layer-specific data made after a call to FwpsAcquireWritableLayerDataPointer0.Note  FwpsApplyModifiedLayerData0 is a specific version of FwpsApplyModifiedLayerData.
-old-location : netvista\fwpsapplymodifiedlayerdata0.htm
-old-project : netvista
-ms.assetid : d32c19b6-462e-48e3-b22b-02542dca9cc4
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : FwpsApplyModifiedLayerData0 function [Network Drivers Starting with Windows Vista], FWPS_CLASSIFY_FLAG_REAUTHORIZE_IF_MODIFIED_BY_OTHERS, FwpsApplyModifiedLayerData0, netvista.fwpsapplymodifiedlayerdata0, fwpsk/FwpsApplyModifiedLayerData0, wfp_ref_2_funct_3_fwps_A-B_a7adbeec-b234-451e-9da0-d5e5b7cefc90.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fwpsk.h
-req.include-header : Fwpsk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 7.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Fwpkclnt.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FWPS_VSWITCH_EVENT_TYPE
+UID: NF:fwpsk.FwpsApplyModifiedLayerData0
+title: FwpsApplyModifiedLayerData0 function
+author: windows-driver-content
+description: The FwpsApplyModifiedLayerData0 function applies changes to layer-specific data made after a call to FwpsAcquireWritableLayerDataPointer0.Note  FwpsApplyModifiedLayerData0 is a specific version of FwpsApplyModifiedLayerData.
+old-location: netvista\fwpsapplymodifiedlayerdata0.htm
+old-project: netvista
+ms.assetid: d32c19b6-462e-48e3-b22b-02542dca9cc4
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: FwpsApplyModifiedLayerData0 function [Network Drivers Starting with Windows Vista], FWPS_CLASSIFY_FLAG_REAUTHORIZE_IF_MODIFIED_BY_OTHERS, FwpsApplyModifiedLayerData0, netvista.fwpsapplymodifiedlayerdata0, fwpsk/FwpsApplyModifiedLayerData0, wfp_ref_2_funct_3_fwps_A-B_a7adbeec-b234-451e-9da0-d5e5b7cefc90.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fwpsk.h
+req.include-header: Fwpsk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 7.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Fwpkclnt.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	fwpkclnt.lib
+-	fwpkclnt.dll
+apiname:
+-	FwpsApplyModifiedLayerData0
+product: Windows
+targetos: Windows
+req.typenames: FWPS_VSWITCH_EVENT_TYPE
 ---
 
 

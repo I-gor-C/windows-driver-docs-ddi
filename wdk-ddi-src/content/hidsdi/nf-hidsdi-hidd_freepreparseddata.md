@@ -1,41 +1,46 @@
 ---
-UID : NF:hidsdi.HidD_FreePreparsedData
-title : HidD_FreePreparsedData function
-author : windows-driver-content
-description : The HidD_FreePreparsedData routine releases the resources that the HID class driver allocated to hold a top-level collection's preparsed data.
-old-location : hid\hidd_freepreparseddata.htm
-old-project : hid
-ms.assetid : 71e2f946-706d-41bc-9d9c-d63230877e48
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : hidfunc_2ca8b6ee-b391-40ac-bd0e-491089d7ed06.xml, hidsdi/HidD_FreePreparsedData, hid.hidd_freepreparseddata, HidD_FreePreparsedData routine [Human Input Devices], HidD_FreePreparsedData
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : hidsdi.h
-req.include-header : Hidsdi.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 2000 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Hid.lib
-req.dll : Hid.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PHID_MINIDRIVER_REGISTRATION, HID_MINIDRIVER_REGISTRATION"
+UID: NF:hidsdi.HidD_FreePreparsedData
+title: HidD_FreePreparsedData function
+author: windows-driver-content
+description: The HidD_FreePreparsedData routine releases the resources that the HID class driver allocated to hold a top-level collection's preparsed data.
+old-location: hid\hidd_freepreparseddata.htm
+old-project: hid
+ms.assetid: 71e2f946-706d-41bc-9d9c-d63230877e48
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: hidfunc_2ca8b6ee-b391-40ac-bd0e-491089d7ed06.xml, hidsdi/HidD_FreePreparsedData, hid.hidd_freepreparseddata, HidD_FreePreparsedData routine [Human Input Devices], HidD_FreePreparsedData
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: hidsdi.h
+req.include-header: Hidsdi.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 2000 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Hid.lib
+req.dll: Hid.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Hid.dll
+apiname:
+-	HidD_FreePreparsedData
+product: Windows
+targetos: Windows
+req.typenames: "*PHID_MINIDRIVER_REGISTRATION, HID_MINIDRIVER_REGISTRATION"
 ---
 
 

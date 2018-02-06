@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddk._WHEA_NOTIFICATION_DESCRIPTOR
-title : "_WHEA_NOTIFICATION_DESCRIPTOR"
-author : windows-driver-content
-description : The WHEA_NOTIFICATION_DESCRIPTOR structure describes the notification mechanism that is used by an error source.
-old-location : whea\whea_notification_descriptor.htm
-old-project : whea
-ms.assetid : 5b228bb8-dd31-484d-b87a-ec7fed433a4a
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : "_WHEA_NOTIFICATION_DESCRIPTOR, WHEA_NOTIFICATION_TYPE_EXTERNALINTERRUPT, Reserved, ErrorThresholdWindowRW, SwitchToPollingThresholdRW, *PWHEA_NOTIFICATION_DESCRIPTOR, WHEA_NOTIFICATION_TYPE_POLLED, WHEA_NOTIFICATION_DESCRIPTOR structure [WHEA Drivers and Applications], ntddk/WHEA_NOTIFICATION_DESCRIPTOR, whea.whea_notification_descriptor, WHEA_NOTIFICATION_TYPE_NMI, ErrorThresholdRW, PollIntervalRW, SwitchToPollingWindowRW, whearef_c2a5ab66-2598-447b-8f5b-d6398c55ff1a.xml, AsUSHORT, WHEA_NOTIFICATION_TYPE_LOCALINTERRUPT, WHEA_NOTIFICATION_TYPE_SCI, WHEA_NOTIFICATION_DESCRIPTOR"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWHEA_NOTIFICATION_DESCRIPTOR, WHEA_NOTIFICATION_DESCRIPTOR"
+UID: NS:ntddk._WHEA_NOTIFICATION_DESCRIPTOR
+title: "_WHEA_NOTIFICATION_DESCRIPTOR"
+author: windows-driver-content
+description: The WHEA_NOTIFICATION_DESCRIPTOR structure describes the notification mechanism that is used by an error source.
+old-location: whea\whea_notification_descriptor.htm
+old-project: whea
+ms.assetid: 5b228bb8-dd31-484d-b87a-ec7fed433a4a
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: "_WHEA_NOTIFICATION_DESCRIPTOR, WHEA_NOTIFICATION_TYPE_EXTERNALINTERRUPT, Reserved, ErrorThresholdWindowRW, SwitchToPollingThresholdRW, *PWHEA_NOTIFICATION_DESCRIPTOR, WHEA_NOTIFICATION_TYPE_POLLED, WHEA_NOTIFICATION_DESCRIPTOR structure [WHEA Drivers and Applications], ntddk/WHEA_NOTIFICATION_DESCRIPTOR, whea.whea_notification_descriptor, WHEA_NOTIFICATION_TYPE_NMI, ErrorThresholdRW, PollIntervalRW, SwitchToPollingWindowRW, whearef_c2a5ab66-2598-447b-8f5b-d6398c55ff1a.xml, AsUSHORT, WHEA_NOTIFICATION_TYPE_LOCALINTERRUPT, WHEA_NOTIFICATION_TYPE_SCI, WHEA_NOTIFICATION_DESCRIPTOR"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddk.h
+apiname:
+-	WHEA_NOTIFICATION_DESCRIPTOR
+product: Windows
+targetos: Windows
+req.typenames: "*PWHEA_NOTIFICATION_DESCRIPTOR, WHEA_NOTIFICATION_DESCRIPTOR"
 ---
 
 # _WHEA_NOTIFICATION_DESCRIPTOR structure

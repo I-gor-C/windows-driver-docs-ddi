@@ -1,41 +1,46 @@
 ---
-UID : NC:parallel.PPARALLEL_CLEAR_CHIP_MODE
-title : PPARALLEL_CLEAR_CHIP_MODE
-author : windows-driver-content
-description : The PPARALLEL_CLEAR_CHIP_MODE-typed callback routine clears the operating mode of a parallel port by resetting the communication mode of the host chipset to IEEE 1284-compatibility mode.
-old-location : parports\pparallel_clear_chip_mode.htm
-old-project : parports
-ms.assetid : 398d38a0-2337-4f8e-bd30-d6546516b945
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : parports.pparallel_clear_chip_mode, (*PPARALLEL_CLEAR_CHIP_MODE) callback function [Parallel Ports], (*PPARALLEL_CLEAR_CHIP_MODE), parallel/(*PPARALLEL_CLEAR_CHIP_MODE), cisspd_d5564f9d-0941-4f80-9fa7-5acacaaf47a9.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : parallel.h
-req.include-header : Parallel.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RILGBATOKEN, *LPRILGBATOKEN
+UID: NC:parallel.PPARALLEL_CLEAR_CHIP_MODE
+title: PPARALLEL_CLEAR_CHIP_MODE
+author: windows-driver-content
+description: The PPARALLEL_CLEAR_CHIP_MODE-typed callback routine clears the operating mode of a parallel port by resetting the communication mode of the host chipset to IEEE 1284-compatibility mode.
+old-location: parports\pparallel_clear_chip_mode.htm
+old-project: parports
+ms.assetid: 398d38a0-2337-4f8e-bd30-d6546516b945
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: parports.pparallel_clear_chip_mode, (*PPARALLEL_CLEAR_CHIP_MODE) callback function [Parallel Ports], (*PPARALLEL_CLEAR_CHIP_MODE), parallel/(*PPARALLEL_CLEAR_CHIP_MODE), cisspd_d5564f9d-0941-4f80-9fa7-5acacaaf47a9.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: parallel.h
+req.include-header: Parallel.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	parallel.h
+apiname:
+-	(*PPARALLEL_CLEAR_CHIP_MODE)
+product: Windows
+targetos: Windows
+req.typenames: RILGBATOKEN, *LPRILGBATOKEN
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NF:wdbgexts.WritePhysicalWithFlags
-title : WritePhysicalWithFlags function
-author : windows-driver-content
-description : The WritePhysicalWithFlags function writes to physical memory.
-old-location : debugger\writephysicalwithflags.htm
-old-project : debugger
-ms.assetid : ae679f76-2e26-43f2-a097-1e158fbc0cc7
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : debugger.writephysicalwithflags, WritePhysicalWithFlags function [Windows Debugging], wdbgexts/WritePhysicalWithFlags, WritePhysicalWithFlags, WdbgExts_Ref_7ef1e63e-87e2-4bf3-a432-78639684a18c.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdbgexts.h
-req.include-header : Wdbgexts.h, Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXT_TDOP
-req.product : Windows 10 or later.
+UID: NF:wdbgexts.WritePhysicalWithFlags
+title: WritePhysicalWithFlags function
+author: windows-driver-content
+description: The WritePhysicalWithFlags function writes to physical memory.
+old-location: debugger\writephysicalwithflags.htm
+old-project: debugger
+ms.assetid: ae679f76-2e26-43f2-a097-1e158fbc0cc7
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: debugger.writephysicalwithflags, WritePhysicalWithFlags function [Windows Debugging], wdbgexts/WritePhysicalWithFlags, WritePhysicalWithFlags, WdbgExts_Ref_7ef1e63e-87e2-4bf3-a432-78639684a18c.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdbgexts.h
+req.include-header: Wdbgexts.h, Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdbgexts.h
+apiname:
+-	WritePhysicalWithFlags
+product: Windows
+targetos: Windows
+req.typenames: EXT_TDOP
+req.product: Windows 10 or later.
 ---
 
 

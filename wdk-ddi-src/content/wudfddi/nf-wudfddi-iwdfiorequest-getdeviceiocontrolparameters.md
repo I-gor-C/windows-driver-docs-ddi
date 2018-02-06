@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFIoRequest.GetDeviceIoControlParameters
-title : IWDFIoRequest::GetDeviceIoControlParameters method
-author : windows-driver-content
-description : The GetDeviceIoControlParameters method retrieves the request parameters for a device I/O control-type request.
-old-location : wdf\iwdfiorequest_getdeviceiocontrolparameters.htm
-old-project : wdf
-ms.assetid : 96de6f7a-da1d-44a6-b1f7-44859312a662
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : GetDeviceIoControlParameters, IWDFIoRequest::GetDeviceIoControlParameters, wudfddi/IWDFIoRequest::GetDeviceIoControlParameters, wdf.iwdfiorequest_getdeviceiocontrolparameters, umdf.iwdfiorequest_getdeviceiocontrolparameters, IWDFIoRequest interface, GetDeviceIoControlParameters method, GetDeviceIoControlParameters method, IWDFIoRequest interface, UMDFRequestObjectRef_8a0fa5cd-af16-4599-8282-4ca0a81591ac.xml, IWDFIoRequest, GetDeviceIoControlParameters method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.5
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFIoRequest.GetDeviceIoControlParameters
+title: IWDFIoRequest::GetDeviceIoControlParameters method
+author: windows-driver-content
+description: The GetDeviceIoControlParameters method retrieves the request parameters for a device I/O control-type request.
+old-location: wdf\iwdfiorequest_getdeviceiocontrolparameters.htm
+old-project: wdf
+ms.assetid: 96de6f7a-da1d-44a6-b1f7-44859312a662
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: GetDeviceIoControlParameters, IWDFIoRequest::GetDeviceIoControlParameters, wudfddi/IWDFIoRequest::GetDeviceIoControlParameters, wdf.iwdfiorequest_getdeviceiocontrolparameters, umdf.iwdfiorequest_getdeviceiocontrolparameters, IWDFIoRequest interface, GetDeviceIoControlParameters method, GetDeviceIoControlParameters method, IWDFIoRequest interface, UMDFRequestObjectRef_8a0fa5cd-af16-4599-8282-4ca0a81591ac.xml, IWDFIoRequest, GetDeviceIoControlParameters method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.5
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFIoRequest.GetDeviceIoControlParameters
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

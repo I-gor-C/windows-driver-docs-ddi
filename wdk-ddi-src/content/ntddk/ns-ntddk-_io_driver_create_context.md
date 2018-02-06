@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddk._IO_DRIVER_CREATE_CONTEXT
-title : "_IO_DRIVER_CREATE_CONTEXT"
-author : windows-driver-content
-description : The IO_DRIVER_CREATE_CONTEXT structure is used to pass additional parameters to the IoCreateFileEx and FltCreateFileEx2 routines.
-old-location : ifsk\io_driver_create_context.htm
-old-project : ifsk
-ms.assetid : c2d10f76-5587-4855-9a02-fa7656a3805e
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : "*PIO_DRIVER_CREATE_CONTEXT, fileinformationstructures_d5939ca3-7c95-4788-bec9-b2d4cc7dd45b.xml, ntddk/PIO_DRIVER_CREATE_CONTEXT, PIO_DRIVER_CREATE_CONTEXT structure pointer [Installable File System Drivers], PIO_DRIVER_CREATE_CONTEXT, ifsk.io_driver_create_context, _IO_DRIVER_CREATE_CONTEXT, IO_DRIVER_CREATE_CONTEXT structure [Installable File System Drivers], ntddk/IO_DRIVER_CREATE_CONTEXT, IO_DRIVER_CREATE_CONTEXT"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddk.h
-req.include-header : Ntddk.h, Ntifs.h, Fltkernel.h
-req.target-type : Windows
-req.target-min-winverclnt : This structure is available starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PIO_DRIVER_CREATE_CONTEXT, IO_DRIVER_CREATE_CONTEXT"
+UID: NS:ntddk._IO_DRIVER_CREATE_CONTEXT
+title: "_IO_DRIVER_CREATE_CONTEXT"
+author: windows-driver-content
+description: The IO_DRIVER_CREATE_CONTEXT structure is used to pass additional parameters to the IoCreateFileEx and FltCreateFileEx2 routines.
+old-location: ifsk\io_driver_create_context.htm
+old-project: ifsk
+ms.assetid: c2d10f76-5587-4855-9a02-fa7656a3805e
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: "*PIO_DRIVER_CREATE_CONTEXT, fileinformationstructures_d5939ca3-7c95-4788-bec9-b2d4cc7dd45b.xml, ntddk/PIO_DRIVER_CREATE_CONTEXT, PIO_DRIVER_CREATE_CONTEXT structure pointer [Installable File System Drivers], PIO_DRIVER_CREATE_CONTEXT, ifsk.io_driver_create_context, _IO_DRIVER_CREATE_CONTEXT, IO_DRIVER_CREATE_CONTEXT structure [Installable File System Drivers], ntddk/IO_DRIVER_CREATE_CONTEXT, IO_DRIVER_CREATE_CONTEXT"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddk.h
+req.include-header: Ntddk.h, Ntifs.h, Fltkernel.h
+req.target-type: Windows
+req.target-min-winverclnt: This structure is available starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddk.h
+apiname:
+-	IO_DRIVER_CREATE_CONTEXT
+product: Windows
+targetos: Windows
+req.typenames: "*PIO_DRIVER_CREATE_CONTEXT, IO_DRIVER_CREATE_CONTEXT"
 ---
 
 # _IO_DRIVER_CREATE_CONTEXT structure

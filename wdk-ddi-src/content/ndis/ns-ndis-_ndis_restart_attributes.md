@@ -1,41 +1,46 @@
 ---
-UID : NS:ndis._NDIS_RESTART_ATTRIBUTES
-title : "_NDIS_RESTART_ATTRIBUTES"
-author : windows-driver-content
-description : The NDIS_RESTART_ATTRIBUTES structure identifies an attributes entry in a linked list of restart attributes.
-old-location : netvista\ndis_restart_attributes.htm
-old-project : netvista
-ms.assetid : 1f9f4b91-bd1f-4daa-ac98-6372bf55c2ab
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : PNDIS_RESTART_ATTRIBUTES structure pointer [Network Drivers Starting with Windows Vista], NDIS_RESTART_ATTRIBUTES, netvista.ndis_restart_attributes, ndis/NDIS_RESTART_ATTRIBUTES, _NDIS_RESTART_ATTRIBUTES, *PNDIS_RESTART_ATTRIBUTES, ndis/PNDIS_RESTART_ATTRIBUTES, PNDIS_RESTART_ATTRIBUTES, miniport_structures_ref_64cf43cc-1d89-4de3-9e8e-77d590d44d3c.xml, NDIS_RESTART_ATTRIBUTES structure [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : See Remarks section
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_RESTART_ATTRIBUTES, *PNDIS_RESTART_ATTRIBUTES
+UID: NS:ndis._NDIS_RESTART_ATTRIBUTES
+title: "_NDIS_RESTART_ATTRIBUTES"
+author: windows-driver-content
+description: The NDIS_RESTART_ATTRIBUTES structure identifies an attributes entry in a linked list of restart attributes.
+old-location: netvista\ndis_restart_attributes.htm
+old-project: netvista
+ms.assetid: 1f9f4b91-bd1f-4daa-ac98-6372bf55c2ab
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: PNDIS_RESTART_ATTRIBUTES structure pointer [Network Drivers Starting with Windows Vista], NDIS_RESTART_ATTRIBUTES, netvista.ndis_restart_attributes, ndis/NDIS_RESTART_ATTRIBUTES, _NDIS_RESTART_ATTRIBUTES, *PNDIS_RESTART_ATTRIBUTES, ndis/PNDIS_RESTART_ATTRIBUTES, PNDIS_RESTART_ATTRIBUTES, miniport_structures_ref_64cf43cc-1d89-4de3-9e8e-77d590d44d3c.xml, NDIS_RESTART_ATTRIBUTES structure [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: See Remarks section
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndis.h
+apiname:
+-	NDIS_RESTART_ATTRIBUTES
+product: Windows
+targetos: Windows
+req.typenames: NDIS_RESTART_ATTRIBUTES, *PNDIS_RESTART_ATTRIBUTES
 ---
 
 # _NDIS_RESTART_ATTRIBUTES structure

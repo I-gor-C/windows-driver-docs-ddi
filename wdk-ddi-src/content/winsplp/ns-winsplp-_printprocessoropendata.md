@@ -1,42 +1,47 @@
 ---
-UID : NS:winsplp._PRINTPROCESSOROPENDATA
-title : "_PRINTPROCESSOROPENDATA"
-author : windows-driver-content
-description : The PRINTPROCESSOROPENDATA structure is used as an input parameter to a print processor's OpenPrintProcessor function.
-old-location : print\printprocessoropendata.htm
-old-project : print
-ms.assetid : d7160747-d81c-407a-bbf0-7ec5b3210c13
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : LPPRINTPROCESSOROPENDATA, PRINTPROCESSOROPENDATA structure [Print Devices], winsplp/LPPRINTPROCESSOROPENDATA, *LPPRINTPROCESSOROPENDATA, spoolfnc_d24c3eae-da3e-473a-bd25-5ec09d23fe89.xml, _PRINTPROCESSOROPENDATA, PRINTPROCESSOROPENDATA, PPRINTPROCESSOROPENDATA, PPRINTPROCESSOROPENDATA structure pointer [Print Devices], LPPRINTPROCESSOROPENDATA structure pointer [Print Devices], winsplp/PRINTPROCESSOROPENDATA, print.printprocessoropendata, *PPRINTPROCESSOROPENDATA, winsplp/PPRINTPROCESSOROPENDATA
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : winsplp.h
-req.include-header : Winsplp.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPRINTPROCESSOROPENDATA, PRINTPROCESSOROPENDATA, *LPPRINTPROCESSOROPENDATA"
-req.product : Windows 10 or later.
+UID: NS:winsplp._PRINTPROCESSOROPENDATA
+title: "_PRINTPROCESSOROPENDATA"
+author: windows-driver-content
+description: The PRINTPROCESSOROPENDATA structure is used as an input parameter to a print processor's OpenPrintProcessor function.
+old-location: print\printprocessoropendata.htm
+old-project: print
+ms.assetid: d7160747-d81c-407a-bbf0-7ec5b3210c13
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: LPPRINTPROCESSOROPENDATA, PRINTPROCESSOROPENDATA structure [Print Devices], winsplp/LPPRINTPROCESSOROPENDATA, *LPPRINTPROCESSOROPENDATA, spoolfnc_d24c3eae-da3e-473a-bd25-5ec09d23fe89.xml, _PRINTPROCESSOROPENDATA, PRINTPROCESSOROPENDATA, PPRINTPROCESSOROPENDATA, PPRINTPROCESSOROPENDATA structure pointer [Print Devices], LPPRINTPROCESSOROPENDATA structure pointer [Print Devices], winsplp/PRINTPROCESSOROPENDATA, print.printprocessoropendata, *PPRINTPROCESSOROPENDATA, winsplp/PPRINTPROCESSOROPENDATA
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: winsplp.h
+req.include-header: Winsplp.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	winsplp.h
+apiname:
+-	PRINTPROCESSOROPENDATA
+product: Windows
+targetos: Windows
+req.typenames: "*PPRINTPROCESSOROPENDATA, PRINTPROCESSOROPENDATA, *LPPRINTPROCESSOROPENDATA"
+req.product: Windows 10 or later.
 ---
 
 # _PRINTPROCESSOROPENDATA structure

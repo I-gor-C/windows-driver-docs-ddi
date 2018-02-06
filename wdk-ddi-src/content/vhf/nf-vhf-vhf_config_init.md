@@ -1,42 +1,48 @@
 ---
-UID : NF:vhf.VHF_CONFIG_INIT
-title : VHF_CONFIG_INIT function
-author : windows-driver-content
-description : Use the VHF_CONFIG_INIT function to initialize the required members of the VHF_CONFIG structure allocated by the HID source driver.
-old-location : hid\vhf_config_init.htm
-old-project : hid
-ms.assetid : 4A87D9E2-F1FC-4CA8-834C-E545D8F0277B
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : vhf/VHF_CONFIG_INIT, VHF_CONFIG_INIT function [Human Input Devices], VHF_CONFIG_INIT, hid.vhf_config_init
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : vhf.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : None supported
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : VhfKm.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR, *PUSB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR
-req.product : Windows 10 or later.
+UID: NF:vhf.VHF_CONFIG_INIT
+title: VHF_CONFIG_INIT function
+author: windows-driver-content
+description: Use the VHF_CONFIG_INIT function to initialize the required members of the VHF_CONFIG structure allocated by the HID source driver.
+old-location: hid\vhf_config_init.htm
+old-project: hid
+ms.assetid: 4A87D9E2-F1FC-4CA8-834C-E545D8F0277B
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: vhf/VHF_CONFIG_INIT, VHF_CONFIG_INIT function [Human Input Devices], VHF_CONFIG_INIT, hid.vhf_config_init
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: vhf.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: None supported
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: VhfKm.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	vhfKm.lib
+-	vhfKm.dll
+apiname:
+-	VHF_CONFIG_INIT
+product: Windows
+targetos: Windows
+req.typenames: USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR, *PUSB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR
+req.product: Windows 10 or later.
 ---
 
 

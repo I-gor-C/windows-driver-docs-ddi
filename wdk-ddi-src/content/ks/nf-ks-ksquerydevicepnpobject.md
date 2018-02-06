@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsQueryDevicePnpObject
-title : KsQueryDevicePnpObject function
-author : windows-driver-content
-description : The KsQueryDevicePnpObject function returns the PnP device object that can be stored in the device header. This is the next device object on the PnP stack and is the device object that PnP requests are forwarded to if KsDefaultDispatchPnp is used.
-old-location : stream\ksquerydevicepnpobject.htm
-old-project : stream
-ms.assetid : 207b776a-8f51-4385-a171-a9d0e84e70b5
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.ksquerydevicepnpobject, KsQueryDevicePnpObject function [Streaming Media Devices], KsQueryDevicePnpObject, ksfunc_dd821abc-bd3b-45e9-a1de-1f9fd201db8e.xml, ks/KsQueryDevicePnpObject
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsQueryDevicePnpObject
+title: KsQueryDevicePnpObject function
+author: windows-driver-content
+description: The KsQueryDevicePnpObject function returns the PnP device object that can be stored in the device header. This is the next device object on the PnP stack and is the device object that PnP requests are forwarded to if KsDefaultDispatchPnp is used.
+old-location: stream\ksquerydevicepnpobject.htm
+old-project: stream
+ms.assetid: 207b776a-8f51-4385-a171-a9d0e84e70b5
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.ksquerydevicepnpobject, KsQueryDevicePnpObject function [Streaming Media Devices], KsQueryDevicePnpObject, ksfunc_dd821abc-bd3b-45e9-a1de-1f9fd201db8e.xml, ks/KsQueryDevicePnpObject
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsQueryDevicePnpObject
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

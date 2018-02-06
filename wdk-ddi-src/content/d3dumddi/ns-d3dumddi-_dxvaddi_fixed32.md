@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._DXVADDI_FIXED32
-title : "_DXVADDI_FIXED32"
-author : windows-driver-content
-description : The DXVADDI_FIXED32 structure describes a floating-point number from a 16.16 fixed-point number.
-old-location : display\dxvaddi_fixed32.htm
-old-project : display
-ms.assetid : 4188c488-fda4-4596-96f5-f740a5cc9ffc
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3dumddi/DXVADDI_FIXED32, _DXVADDI_FIXED32, DXVA2_Structs_3d19835e-9a75-4d5a-bd6b-451a9978eadb.xml, display.dxvaddi_fixed32, DXVADDI_FIXED32, DXVADDI_FIXED32 structure [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXVADDI_FIXED32
+UID: NS:d3dumddi._DXVADDI_FIXED32
+title: "_DXVADDI_FIXED32"
+author: windows-driver-content
+description: The DXVADDI_FIXED32 structure describes a floating-point number from a 16.16 fixed-point number.
+old-location: display\dxvaddi_fixed32.htm
+old-project: display
+ms.assetid: 4188c488-fda4-4596-96f5-f740a5cc9ffc
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3dumddi/DXVADDI_FIXED32, _DXVADDI_FIXED32, DXVA2_Structs_3d19835e-9a75-4d5a-bd6b-451a9978eadb.xml, display.dxvaddi_fixed32, DXVADDI_FIXED32, DXVADDI_FIXED32 structure [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	DXVADDI_FIXED32
+product: Windows
+targetos: Windows
+req.typenames: DXVADDI_FIXED32
 ---
 
 # _DXVADDI_FIXED32 structure

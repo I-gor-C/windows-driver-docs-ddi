@@ -1,42 +1,49 @@
 ---
-UID : NF:wdm.RtlCopyMemory
-title : RtlCopyMemory macro
-author : windows-driver-content
-description : The RtlCopyMemory routine copies the contents of a source memory block to a destination memory block.
-old-location : kernel\rtlcopymemory.htm
-old-project : kernel
-ms.assetid : d204eeb4-e109-4a86-986f-0fccdda3f8f8
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/RtlCopyMemory, RtlCopyMemory routine [Kernel-Mode Driver Architecture], k109_f4bb1fef-aae6-4086-b95a-ae4dc220c04b.xml, RtlCopyBytes, RtlCopyMemory, kernel.rtlcopymemory
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : macro
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtDll.dll (user mode); NtosKrnl.exe (kernel mode)
-req.irql : Any level (See Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.RtlCopyMemory
+title: RtlCopyMemory macro
+author: windows-driver-content
+description: The RtlCopyMemory routine copies the contents of a source memory block to a destination memory block.
+old-location: kernel\rtlcopymemory.htm
+old-project: kernel
+ms.assetid: d204eeb4-e109-4a86-986f-0fccdda3f8f8
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/RtlCopyMemory, RtlCopyMemory routine [Kernel-Mode Driver Architecture], k109_f4bb1fef-aae6-4086-b95a-ae4dc220c04b.xml, RtlCopyBytes, RtlCopyMemory, kernel.rtlcopymemory
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: macro
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtDll.dll (user mode); NtosKrnl.exe (kernel mode)
+req.irql: Any level (See Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtDll.dll
+-	NtosKrnl.exe
+-	API-MS-Win-Core-Rtlsupport-l1-1-0.dll
+apiname:
+-	RtlCopyMemory
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

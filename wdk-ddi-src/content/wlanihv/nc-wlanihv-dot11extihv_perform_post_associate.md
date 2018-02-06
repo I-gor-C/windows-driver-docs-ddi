@@ -1,42 +1,47 @@
 ---
-UID : NC:wlanihv.DOT11EXTIHV_PERFORM_POST_ASSOCIATE
-title : DOT11EXTIHV_PERFORM_POST_ASSOCIATE
-author : windows-driver-content
-description : Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
-old-location : netvista\dot11extihvperformpostassociate.htm
-old-project : netvista
-ms.assetid : a6e9af7d-4c33-4dea-92fe-e2cd8eed6697
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.dot11extihvperformpostassociate, Dot11ExtIhvPerformPostAssociate callback function [Network Drivers Starting with Windows Vista], Dot11ExtIhvPerformPostAssociate, DOT11EXTIHV_PERFORM_POST_ASSOCIATE, DOT11EXTIHV_PERFORM_POST_ASSOCIATE, wlanihv/Dot11ExtIhvPerformPostAssociate, Native_802.11_IHV_Ext_ecc5c19e-9fde-48a4-b3a7-6a1f94a20765.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wlanihv.h
-req.include-header : Wlanihv.h, Windot11.h, L2cmn.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating   systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDRIVER_INFO_8W, DRIVER_INFO_8W, *LPDRIVER_INFO_8W"
-req.product : Windows 10 or later.
+UID: NC:wlanihv.DOT11EXTIHV_PERFORM_POST_ASSOCIATE
+title: DOT11EXTIHV_PERFORM_POST_ASSOCIATE
+author: windows-driver-content
+description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+old-location: netvista\dot11extihvperformpostassociate.htm
+old-project: netvista
+ms.assetid: a6e9af7d-4c33-4dea-92fe-e2cd8eed6697
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.dot11extihvperformpostassociate, Dot11ExtIhvPerformPostAssociate callback function [Network Drivers Starting with Windows Vista], Dot11ExtIhvPerformPostAssociate, DOT11EXTIHV_PERFORM_POST_ASSOCIATE, DOT11EXTIHV_PERFORM_POST_ASSOCIATE, wlanihv/Dot11ExtIhvPerformPostAssociate, Native_802.11_IHV_Ext_ecc5c19e-9fde-48a4-b3a7-6a1f94a20765.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wlanihv.h
+req.include-header: Wlanihv.h, Windot11.h, L2cmn.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	wlanihv.h
+apiname:
+-	Dot11ExtIhvPerformPostAssociate
+product: Windows
+targetos: Windows
+req.typenames: "*PDRIVER_INFO_8W, DRIVER_INFO_8W, *LPDRIVER_INFO_8W"
+req.product: Windows 10 or later.
 ---
 
 

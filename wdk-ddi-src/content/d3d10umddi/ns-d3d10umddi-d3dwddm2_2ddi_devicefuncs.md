@@ -1,41 +1,46 @@
 ---
-UID : NS:d3d10umddi.D3DWDDM2_2DDI_DEVICEFUNCS
-title : D3DWDDM2_2DDI_DEVICEFUNCS
-author : windows-driver-content
-description : Specifies the callback functions that operate on a shader cache.
-old-location : display\d3dwddm2_2ddi_devicefuncs.htm
-old-project : display
-ms.assetid : 4E082193-70BA-4F36-9001-2A12014F3AC3
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.d3dwddm2_2ddi_devicefuncs, D3DWDDM2_2DDI_DEVICEFUNCS structure [Display Devices], D3DWDDM2_2DDI_DEVICEFUNCS, d3d10umddi/D3DWDDM2_2DDI_DEVICEFUNCS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3d10umddi.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DWDDM2_2DDI_DEVICEFUNCS
+UID: NS:d3d10umddi.D3DWDDM2_2DDI_DEVICEFUNCS
+title: D3DWDDM2_2DDI_DEVICEFUNCS
+author: windows-driver-content
+description: Specifies the callback functions that operate on a shader cache.
+old-location: display\d3dwddm2_2ddi_devicefuncs.htm
+old-project: display
+ms.assetid: 4E082193-70BA-4F36-9001-2A12014F3AC3
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.d3dwddm2_2ddi_devicefuncs, D3DWDDM2_2DDI_DEVICEFUNCS structure [Display Devices], D3DWDDM2_2DDI_DEVICEFUNCS, d3d10umddi/D3DWDDM2_2DDI_DEVICEFUNCS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3d10umddi.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	D3DWDDM2_2DDI_DEVICEFUNCS
+product: Windows
+targetos: Windows
+req.typenames: D3DWDDM2_2DDI_DEVICEFUNCS
 ---
 
 # D3DWDDM2_2DDI_DEVICEFUNCS structure

@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsRegisterCountedWorker
-title : KsRegisterCountedWorker function
-author : windows-driver-content
-description : Handles clients registering for use of a thread.
-old-location : stream\ksregistercountedworker.htm
-old-project : stream
-ms.assetid : acec8050-44bd-4082-9875-d504135e1b9f
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.ksregistercountedworker, ks/KsRegisterCountedWorker, KsRegisterCountedWorker function [Streaming Media Devices], ksfunc_2d4b1740-9b91-420d-81be-a56034445893.xml, KsRegisterCountedWorker
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsRegisterCountedWorker
+title: KsRegisterCountedWorker function
+author: windows-driver-content
+description: Handles clients registering for use of a thread.
+old-location: stream\ksregistercountedworker.htm
+old-project: stream
+ms.assetid: acec8050-44bd-4082-9875-d504135e1b9f
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.ksregistercountedworker, ks/KsRegisterCountedWorker, KsRegisterCountedWorker function [Streaming Media Devices], ksfunc_2d4b1740-9b91-420d-81be-a56034445893.xml, KsRegisterCountedWorker
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsRegisterCountedWorker
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

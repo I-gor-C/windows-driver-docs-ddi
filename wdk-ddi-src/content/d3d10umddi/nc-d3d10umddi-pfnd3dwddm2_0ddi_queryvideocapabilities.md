@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3DWDDM2_0DDI_QUERYVIDEOCAPABILITIES
-title : PFND3DWDDM2_0DDI_QUERYVIDEOCAPABILITIES
-author : windows-driver-content
-description : Queries the driver for video capabilities. Required for Windows Display Driver Model (WDDM) 2.0 or later drivers.
-old-location : display\queryvideocapabilities.htm
-old-project : display
-ms.assetid : C86C7D1C-541F-4EC3-B4C8-126826BE3529
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.queryvideocapabilities, pfnQueryVideoCapabilities callback function [Display Devices], pfnQueryVideoCapabilities, PFND3DWDDM2_0DDI_QUERYVIDEOCAPABILITIES, PFND3DWDDM2_0DDI_QUERYVIDEOCAPABILITIES, d3d10umddi/pfnQueryVideoCapabilities
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3DWDDM2_0DDI_QUERYVIDEOCAPABILITIES
+title: PFND3DWDDM2_0DDI_QUERYVIDEOCAPABILITIES
+author: windows-driver-content
+description: Queries the driver for video capabilities. Required for Windows Display Driver Model (WDDM) 2.0 or later drivers.
+old-location: display\queryvideocapabilities.htm
+old-project: display
+ms.assetid: C86C7D1C-541F-4EC3-B4C8-126826BE3529
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.queryvideocapabilities, pfnQueryVideoCapabilities callback function [Display Devices], pfnQueryVideoCapabilities, PFND3DWDDM2_0DDI_QUERYVIDEOCAPABILITIES, PFND3DWDDM2_0DDI_QUERYVIDEOCAPABILITIES, d3d10umddi/pfnQueryVideoCapabilities
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	D3d10umddi.h
+apiname:
+-	pfnQueryVideoCapabilities
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

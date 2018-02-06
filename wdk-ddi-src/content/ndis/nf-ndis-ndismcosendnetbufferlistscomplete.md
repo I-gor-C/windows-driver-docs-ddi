@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisMCoSendNetBufferListsComplete
-title : NdisMCoSendNetBufferListsComplete function
-author : windows-driver-content
-description : The NdisMCoSendNetBufferListsComplete function returns a linked list of NET_BUFFER_LIST structures to an overlying driver and returns the final status of a CoNDIS send request.
-old-location : netvista\ndismcosendnetbufferlistscomplete.htm
-old-project : netvista
-ms.assetid : c4978122-6d13-4e9b-8eb7-d06cd7372268
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NdisMCoSendNetBufferListsComplete function [Network Drivers Starting with Windows Vista], netvista.ndismcosendnetbufferlistscomplete, ndis/NdisMCoSendNetBufferListsComplete, condis_sendrcv_ref_49470611-47cb-4778-8723-4acc2ebbfb81.xml, NdisMCoSendNetBufferListsComplete
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_MCO_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisMCoSendNetBufferListsComplete
+title: NdisMCoSendNetBufferListsComplete function
+author: windows-driver-content
+description: The NdisMCoSendNetBufferListsComplete function returns a linked list of NET_BUFFER_LIST structures to an overlying driver and returns the final status of a CoNDIS send request.
+old-location: netvista\ndismcosendnetbufferlistscomplete.htm
+old-project: netvista
+ms.assetid: c4978122-6d13-4e9b-8eb7-d06cd7372268
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NdisMCoSendNetBufferListsComplete function [Network Drivers Starting with Windows Vista], netvista.ndismcosendnetbufferlistscomplete, ndis/NdisMCoSendNetBufferListsComplete, condis_sendrcv_ref_49470611-47cb-4778-8723-4acc2ebbfb81.xml, NdisMCoSendNetBufferListsComplete
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_MCO_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisMCoSendNetBufferListsComplete
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

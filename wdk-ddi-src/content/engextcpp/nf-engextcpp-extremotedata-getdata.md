@@ -1,41 +1,46 @@
 ---
-UID : NF:engextcpp.ExtRemoteData.GetData
-title : ExtRemoteData::GetData method
-author : windows-driver-content
-description : The GetData method returns the contents of the target's memory, represented by the ExtRemoteData object.
-old-location : debugger\extremotedata_getdata.htm
-old-project : debugger
-ms.assetid : a68e528a-c456-4bf2-8e6b-fb5c060c58fb
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : ExtRemoteData, EngExtCpp_Ref_a440fb76-5d7c-4e77-9d1e-61c0b7002493.xml, GetData method [Windows Debugging], debugger.extremotedata_getdata, ExtRemoteData::GetData, GetData, GetData method [Windows Debugging], ExtRemoteData class, ExtRemoteData class [Windows Debugging], GetData method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : engextcpp.hpp
-req.include-header : Engextcpp.hpp
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : engextcpp.hpp
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SILO_DRIVER_CAPABILITIES, *PSILO_DRIVER_CAPABILITIES
+UID: NF:engextcpp.ExtRemoteData.GetData
+title: ExtRemoteData::GetData method
+author: windows-driver-content
+description: The GetData method returns the contents of the target's memory, represented by the ExtRemoteData object.
+old-location: debugger\extremotedata_getdata.htm
+old-project: debugger
+ms.assetid: a68e528a-c456-4bf2-8e6b-fb5c060c58fb
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: ExtRemoteData, EngExtCpp_Ref_a440fb76-5d7c-4e77-9d1e-61c0b7002493.xml, GetData method [Windows Debugging], debugger.extremotedata_getdata, ExtRemoteData::GetData, GetData, GetData method [Windows Debugging], ExtRemoteData class, ExtRemoteData class [Windows Debugging], GetData method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: engextcpp.hpp
+req.include-header: Engextcpp.hpp
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: engextcpp.hpp
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	engextcpp.hpp
+apiname:
+-	ExtRemoteData.GetData
+product: Windows
+targetos: Windows
+req.typenames: SILO_DRIVER_CAPABILITIES, *PSILO_DRIVER_CAPABILITIES
 ---
 
 

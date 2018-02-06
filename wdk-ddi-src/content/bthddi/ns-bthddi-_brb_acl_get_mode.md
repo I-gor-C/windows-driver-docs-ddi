@@ -1,41 +1,46 @@
 ---
-UID : NS:bthddi._BRB_ACL_GET_MODE
-title : "_BRB_ACL_GET_MODE"
-author : windows-driver-content
-description : The _BRB_ACL_GET_MODE structure describes the ACL mode for the specified remote device.
-old-location : bltooth\_brb_acl_get_mode.htm
-old-project : bltooth
-ms.assetid : 2fe473c8-dcf9-4457-b1b1-c55b3eaa68e6
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : bthddi/_BRB_ACL_GET_MODE, _BRB_ACL_GET_MODE, _BRB_ACL_GET_MODE structure [Bluetooth Devices], bth_structs_ce659c96-d1af-4e27-b31a-f6700ff88331.xml, bltooth._brb_acl_get_mode
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : bthddi.h
-req.include-header : Bthddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Versions:\_Supported in Windows Vista, and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback   function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access   paged memory)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NS:bthddi._BRB_ACL_GET_MODE
+title: "_BRB_ACL_GET_MODE"
+author: windows-driver-content
+description: The _BRB_ACL_GET_MODE structure describes the ACL mode for the specified remote device.
+old-location: bltooth\_brb_acl_get_mode.htm
+old-project: bltooth
+ms.assetid: 2fe473c8-dcf9-4457-b1b1-c55b3eaa68e6
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: bthddi/_BRB_ACL_GET_MODE, _BRB_ACL_GET_MODE, _BRB_ACL_GET_MODE structure [Bluetooth Devices], bth_structs_ce659c96-d1af-4e27-b31a-f6700ff88331.xml, bltooth._brb_acl_get_mode
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: bthddi.h
+req.include-header: Bthddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Versions:\_Supported in Windows Vista, and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback   function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access   paged memory)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	bthddi.h
+apiname:
+-	_BRB_ACL_GET_MODE
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 # _BRB_ACL_GET_MODE structure

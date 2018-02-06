@@ -1,42 +1,47 @@
 ---
-UID : NE:rilapitypes.RILADDRESSNUMPLAN
-title : RILADDRESSNUMPLAN
-author : windows-driver-content
-description : This enumeration describes the RILADDRESSNUMPLAN.
-old-location : netvista\riladdressnumplan.htm
-old-project : netvista
-ms.assetid : fa25ce95-3eed-41f3-a0eb-5c290fa032e8
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : RIL_NUMPLAN_TELEX, RIL_NUMPLAN_TELEPHONE, RIL_NUMPLAN_DATA, rilapitypes/RIL_NUMPLAN_DATA, rilapitypes/RIL_NUMPLAN_NATIONAL, rilapitypes/RIL_NUMPLAN_PRIVATE, rilapitypes/RIL_NUMPLAN_ERMES, netvista.riladdressnumplan, rilapitypes/RIL_NUMPLAN_UNKNOWN, rilapitypes/RILADDRESSNUMPLAN, rilapitypes/RIL_NUMPLAN_TELEX, RIL_NUMPLAN_PRIVATE, RIL_NUMPLAN_UNKNOWN, RIL_NUMPLAN_NATIONAL, RIL_NUMPLAN_ERMES, RILADDRESSNUMPLAN, RILADDRESSNUMPLAN enumeration [Network Drivers Starting with Windows Vista], rilapitypes/RIL_NUMPLAN_TELEPHONE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : rilapitypes.h
-req.include-header : Rilapitypes.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RILADDRESSNUMPLAN
-req.product : Windows 10 or later.
+UID: NE:rilapitypes.RILADDRESSNUMPLAN
+title: RILADDRESSNUMPLAN
+author: windows-driver-content
+description: This enumeration describes the RILADDRESSNUMPLAN.
+old-location: netvista\riladdressnumplan.htm
+old-project: netvista
+ms.assetid: fa25ce95-3eed-41f3-a0eb-5c290fa032e8
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: RIL_NUMPLAN_TELEX, RIL_NUMPLAN_TELEPHONE, RIL_NUMPLAN_DATA, rilapitypes/RIL_NUMPLAN_DATA, rilapitypes/RIL_NUMPLAN_NATIONAL, rilapitypes/RIL_NUMPLAN_PRIVATE, rilapitypes/RIL_NUMPLAN_ERMES, netvista.riladdressnumplan, rilapitypes/RIL_NUMPLAN_UNKNOWN, rilapitypes/RILADDRESSNUMPLAN, rilapitypes/RIL_NUMPLAN_TELEX, RIL_NUMPLAN_PRIVATE, RIL_NUMPLAN_UNKNOWN, RIL_NUMPLAN_NATIONAL, RIL_NUMPLAN_ERMES, RILADDRESSNUMPLAN, RILADDRESSNUMPLAN enumeration [Network Drivers Starting with Windows Vista], rilapitypes/RIL_NUMPLAN_TELEPHONE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: rilapitypes.h
+req.include-header: Rilapitypes.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	rilapitypes.h
+apiname:
+-	RILADDRESSNUMPLAN
+product: Windows
+targetos: Windows
+req.typenames: RILADDRESSNUMPLAN
+req.product: Windows 10 or later.
 ---
 
 # RILADDRESSNUMPLAN Enumeration
@@ -59,46 +64,46 @@ enum RILADDRESSNUMPLAN {
 ## Constants
 
 <table>
-
-<tr>
-<td>RIL_NUMPLAN_DATA</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_NUMPLAN_ERMES</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_NUMPLAN_MAX</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_NUMPLAN_NATIONAL</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_NUMPLAN_PRIVATE</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_NUMPLAN_TELEPHONE</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_NUMPLAN_TELEX</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_NUMPLAN_UNKNOWN</td>
-<td></td>
-</tr>
+            
+                <tr>
+                    <td>RIL_NUMPLAN_DATA</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_NUMPLAN_ERMES</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_NUMPLAN_MAX</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_NUMPLAN_NATIONAL</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_NUMPLAN_PRIVATE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_NUMPLAN_TELEPHONE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_NUMPLAN_TELEX</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_NUMPLAN_UNKNOWN</td>
+                    <td></td>
+                </tr>
 </table>
 
 
@@ -107,9 +112,9 @@ enum RILADDRESSNUMPLAN {
 | ---- |:---- |
 | **Header** | rilapitypes.h (include Rilapitypes.h) |
 
-## See Also
+    ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn946509">Cellular COM enumerations</a>
+        <a href="https://msdn.microsoft.com/library/windows/hardware/dn946509">Cellular COM enumerations</a>
 
  
 

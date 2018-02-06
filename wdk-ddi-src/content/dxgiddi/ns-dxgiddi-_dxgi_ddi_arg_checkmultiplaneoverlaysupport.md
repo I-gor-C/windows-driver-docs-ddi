@@ -1,41 +1,46 @@
 ---
-UID : NS:dxgiddi._DXGI_DDI_ARG_CHECKMULTIPLANEOVERLAYSUPPORT
-title : "_DXGI_DDI_ARG_CHECKMULTIPLANEOVERLAYSUPPORT"
-author : windows-driver-content
-description : Used in a call to the pfnCheckMultiPlaneOverlaySupport (DXGI) function to check details on hardware support for multiplane overlays.
-old-location : display\dxgi_ddi_arg_checkmultiplaneoverlaysupport.htm
-old-project : display
-ms.assetid : 1b339a88-9c05-4b57-9044-b00ef1c305fb
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : "_DXGI_DDI_ARG_CHECKMULTIPLANEOVERLAYSUPPORT, display.dxgi_ddi_arg_checkmultiplaneoverlaysupport, dxgiddi/DXGI_DDI_ARG_CHECKMULTIPLANEOVERLAYSUPPORT, DXGI_DDI_ARG_CHECKMULTIPLANEOVERLAYSUPPORT structure [Display Devices], DXGI_DDI_ARG_CHECKMULTIPLANEOVERLAYSUPPORT"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : dxgiddi.h
-req.include-header : Dxgiddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8.1
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGI_DDI_ARG_CHECKMULTIPLANEOVERLAYSUPPORT
+UID: NS:dxgiddi._DXGI_DDI_ARG_CHECKMULTIPLANEOVERLAYSUPPORT
+title: "_DXGI_DDI_ARG_CHECKMULTIPLANEOVERLAYSUPPORT"
+author: windows-driver-content
+description: Used in a call to the pfnCheckMultiPlaneOverlaySupport (DXGI) function to check details on hardware support for multiplane overlays.
+old-location: display\dxgi_ddi_arg_checkmultiplaneoverlaysupport.htm
+old-project: display
+ms.assetid: 1b339a88-9c05-4b57-9044-b00ef1c305fb
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: "_DXGI_DDI_ARG_CHECKMULTIPLANEOVERLAYSUPPORT, display.dxgi_ddi_arg_checkmultiplaneoverlaysupport, dxgiddi/DXGI_DDI_ARG_CHECKMULTIPLANEOVERLAYSUPPORT, DXGI_DDI_ARG_CHECKMULTIPLANEOVERLAYSUPPORT structure [Display Devices], DXGI_DDI_ARG_CHECKMULTIPLANEOVERLAYSUPPORT"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: dxgiddi.h
+req.include-header: Dxgiddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8.1
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Dxgiddi.h
+apiname:
+-	DXGI_DDI_ARG_CHECKMULTIPLANEOVERLAYSUPPORT
+product: Windows
+targetos: Windows
+req.typenames: DXGI_DDI_ARG_CHECKMULTIPLANEOVERLAYSUPPORT
 ---
 
 # _DXGI_DDI_ARG_CHECKMULTIPLANEOVERLAYSUPPORT structure

@@ -1,41 +1,46 @@
 ---
-UID : NC:dispmprt.DXGKDDI_MIRACAST_CREATE_CONTEXT
-title : DXGKDDI_MIRACAST_CREATE_CONTEXT
-author : windows-driver-content
-description : Creates a kernel-mode context for a Miracast device.
-old-location : display\dxgkddimiracastcreatecontext.htm
-old-project : display
-ms.assetid : BFF952CE-AA0F-4622-BBFC-946A45859FB7
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkddimiracastcreatecontext, DxgkDdiMiracastCreateContext callback function [Display Devices], DxgkDdiMiracastCreateContext, DXGKDDI_MIRACAST_CREATE_CONTEXT, DXGKDDI_MIRACAST_CREATE_CONTEXT, dispmprt/DxgkDdiMiracastCreateContext
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : dispmprt.h
-req.include-header : Dispmprt.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8.1
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
+UID: NC:dispmprt.DXGKDDI_MIRACAST_CREATE_CONTEXT
+title: DXGKDDI_MIRACAST_CREATE_CONTEXT
+author: windows-driver-content
+description: Creates a kernel-mode context for a Miracast device.
+old-location: display\dxgkddimiracastcreatecontext.htm
+old-project: display
+ms.assetid: BFF952CE-AA0F-4622-BBFC-946A45859FB7
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkddimiracastcreatecontext, DxgkDdiMiracastCreateContext callback function [Display Devices], DxgkDdiMiracastCreateContext, DXGKDDI_MIRACAST_CREATE_CONTEXT, DXGKDDI_MIRACAST_CREATE_CONTEXT, dispmprt/DxgkDdiMiracastCreateContext
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: dispmprt.h
+req.include-header: Dispmprt.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8.1
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Dispmprt.h
+apiname:
+-	DxgkDdiMiracastCreateContext
+product: Windows
+targetos: Windows
+req.typenames: SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ---
 
 

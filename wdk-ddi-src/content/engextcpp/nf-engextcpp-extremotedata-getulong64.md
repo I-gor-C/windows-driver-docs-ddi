@@ -1,41 +1,46 @@
 ---
-UID : NF:engextcpp.ExtRemoteData.GetUlong64
-title : ExtRemoteData::GetUlong64 method
-author : windows-driver-content
-description : The GetUlong64 method returns a ULONG64 version of the ExtRemoteData object, which represents the contents of the target's memory.
-old-location : debugger\extremotedata_getulong64.htm
-old-project : debugger
-ms.assetid : f88694a0-aa76-434a-b436-3c0b6903cad6
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : ExtRemoteData::GetUlong64, GetUlong64 method [Windows Debugging], ExtRemoteData class, ExtRemoteData, GetUlong64, EngExtCpp_Ref_8310177e-7943-4f2c-92bd-b69848c9e9f0.xml, GetUlong64 method [Windows Debugging], debugger.extremotedata_getulong64, ExtRemoteData class [Windows Debugging], GetUlong64 method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : engextcpp.hpp
-req.include-header : Engextcpp.hpp
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : engextcpp.hpp
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SILO_DRIVER_CAPABILITIES, *PSILO_DRIVER_CAPABILITIES
+UID: NF:engextcpp.ExtRemoteData.GetUlong64
+title: ExtRemoteData::GetUlong64 method
+author: windows-driver-content
+description: The GetUlong64 method returns a ULONG64 version of the ExtRemoteData object, which represents the contents of the target's memory.
+old-location: debugger\extremotedata_getulong64.htm
+old-project: debugger
+ms.assetid: f88694a0-aa76-434a-b436-3c0b6903cad6
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: ExtRemoteData::GetUlong64, GetUlong64 method [Windows Debugging], ExtRemoteData class, ExtRemoteData, GetUlong64, EngExtCpp_Ref_8310177e-7943-4f2c-92bd-b69848c9e9f0.xml, GetUlong64 method [Windows Debugging], debugger.extremotedata_getulong64, ExtRemoteData class [Windows Debugging], GetUlong64 method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: engextcpp.hpp
+req.include-header: Engextcpp.hpp
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: engextcpp.hpp
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	engextcpp.hpp
+apiname:
+-	ExtRemoteData.GetUlong64
+product: Windows
+targetos: Windows
+req.typenames: SILO_DRIVER_CAPABILITIES, *PSILO_DRIVER_CAPABILITIES
 ---
 
 

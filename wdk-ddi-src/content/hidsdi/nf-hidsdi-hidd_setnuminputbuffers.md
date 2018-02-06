@@ -1,41 +1,46 @@
 ---
-UID : NF:hidsdi.HidD_SetNumInputBuffers
-title : HidD_SetNumInputBuffers function
-author : windows-driver-content
-description : The HidD_SetNumInputBuffers routine sets the maximum number of input reports that the HID class driver ring buffer can hold for a specified top-level collection.
-old-location : hid\hidd_setnuminputbuffers.htm
-old-project : hid
-ms.assetid : da2d2b10-c02a-4786-9658-957271e9ba58
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : hidfunc_d091d988-7b9d-44ef-ae48-e00af69c12f5.xml, HidD_SetNumInputBuffers, hid.hidd_setnuminputbuffers, HidD_SetNumInputBuffers routine [Human Input Devices], hidsdi/HidD_SetNumInputBuffers
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : hidsdi.h
-req.include-header : Hidsdi.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 2000 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Hid.lib
-req.dll : Hid.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PHID_MINIDRIVER_REGISTRATION, HID_MINIDRIVER_REGISTRATION"
+UID: NF:hidsdi.HidD_SetNumInputBuffers
+title: HidD_SetNumInputBuffers function
+author: windows-driver-content
+description: The HidD_SetNumInputBuffers routine sets the maximum number of input reports that the HID class driver ring buffer can hold for a specified top-level collection.
+old-location: hid\hidd_setnuminputbuffers.htm
+old-project: hid
+ms.assetid: da2d2b10-c02a-4786-9658-957271e9ba58
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: hidfunc_d091d988-7b9d-44ef-ae48-e00af69c12f5.xml, HidD_SetNumInputBuffers, hid.hidd_setnuminputbuffers, HidD_SetNumInputBuffers routine [Human Input Devices], hidsdi/HidD_SetNumInputBuffers
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: hidsdi.h
+req.include-header: Hidsdi.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 2000 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Hid.lib
+req.dll: Hid.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Hid.dll
+apiname:
+-	HidD_SetNumInputBuffers
+product: Windows
+targetos: Windows
+req.typenames: "*PHID_MINIDRIVER_REGISTRATION, HID_MINIDRIVER_REGISTRATION"
 ---
 
 

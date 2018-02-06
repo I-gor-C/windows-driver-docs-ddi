@@ -1,41 +1,46 @@
 ---
-UID : NS:pepfx._PEP_ACPI_EXTENDED_ADDRESS
-title : "_PEP_ACPI_EXTENDED_ADDRESS"
-author : windows-driver-content
-description : The PEP_ACPI_EXTENDED_ADDRESS structure is used to report resource usage in the address space such as memory and IO.
-old-location : kernel\pep_acpi_extended_address.htm
-old-project : kernel
-ms.assetid : E784765E-E346-4D57-B334-D0A0A823DAA8
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : 3 - Max address fixed, 4 to 7 - Reserved, PPEP_ACPI_EXTENDED_ADDRESS structure pointer [Kernel-Mode Driver Architecture], kernel.pep_acpi_extended_address, 5 - Memory to IO translation, pepfx/PEP_ACPI_EXTENDED_ADDRESS, 1 - Decode type, PPEP_ACPI_EXTENDED_ADDRESS, 5 - Sparse translation, PEP_ACPI_EXTENDED_ADDRESS, 0 - Consumer/Producer flag, _PEP_ACPI_EXTENDED_ADDRESS, PEP_ACPI_EXTENDED_ADDRESS structure [Kernel-Mode Driver Architecture], 4 - IO to memory translation, 0 - Write status, 3 to 4 - Memory attributes (MTP), 0 to 7 - Reserved, pepfx/PPEP_ACPI_EXTENDED_ADDRESS, 2 to 3 - Reserved, *PPEP_ACPI_EXTENDED_ADDRESS, 1 to 2 - Memory attributes (MEM), 2 - Minimum address fixed, 6 to 7 - Reserved, 0 to 1 - Range
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : pepfx.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with Windows 10.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPEP_ACPI_EXTENDED_ADDRESS, PEP_ACPI_EXTENDED_ADDRESS"
+UID: NS:pepfx._PEP_ACPI_EXTENDED_ADDRESS
+title: "_PEP_ACPI_EXTENDED_ADDRESS"
+author: windows-driver-content
+description: The PEP_ACPI_EXTENDED_ADDRESS structure is used to report resource usage in the address space such as memory and IO.
+old-location: kernel\pep_acpi_extended_address.htm
+old-project: kernel
+ms.assetid: E784765E-E346-4D57-B334-D0A0A823DAA8
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: 3 - Max address fixed, 4 to 7 - Reserved, PPEP_ACPI_EXTENDED_ADDRESS structure pointer [Kernel-Mode Driver Architecture], kernel.pep_acpi_extended_address, 5 - Memory to IO translation, pepfx/PEP_ACPI_EXTENDED_ADDRESS, 1 - Decode type, PPEP_ACPI_EXTENDED_ADDRESS, 5 - Sparse translation, PEP_ACPI_EXTENDED_ADDRESS, 0 - Consumer/Producer flag, _PEP_ACPI_EXTENDED_ADDRESS, PEP_ACPI_EXTENDED_ADDRESS structure [Kernel-Mode Driver Architecture], 4 - IO to memory translation, 0 - Write status, 3 to 4 - Memory attributes (MTP), 0 to 7 - Reserved, pepfx/PPEP_ACPI_EXTENDED_ADDRESS, 2 to 3 - Reserved, *PPEP_ACPI_EXTENDED_ADDRESS, 1 to 2 - Memory attributes (MEM), 2 - Minimum address fixed, 6 to 7 - Reserved, 0 to 1 - Range
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: pepfx.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows 10.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	pepfx.h
+apiname:
+-	PEP_ACPI_EXTENDED_ADDRESS
+product: Windows
+targetos: Windows
+req.typenames: "*PPEP_ACPI_EXTENDED_ADDRESS, PEP_ACPI_EXTENDED_ADDRESS"
 ---
 
 # _PEP_ACPI_EXTENDED_ADDRESS structure

@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGKARG_SETVIDPNSOURCEADDRESS
-title : "_DXGKARG_SETVIDPNSOURCEADDRESS"
-author : windows-driver-content
-description : The DXGKARG_SETVIDPNSOURCEADDRESS structure contains arguments for the DxgkDdiSetVidPnSourceAddress function.
-old-location : display\dxgkarg_setvidpnsourceaddress.htm
-old-project : display
-ms.assetid : b83736b6-17c5-43b8-9204-d165fe07853b
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3dkmddi/DXGKARG_SETVIDPNSOURCEADDRESS, DXGKARG_SETVIDPNSOURCEADDRESS, DXGKARG_SETVIDPNSOURCEADDRESS structure [Display Devices], DmStructs_f179199a-3747-4086-8e77-5434a3e287a1.xml, display.dxgkarg_setvidpnsourceaddress, _DXGKARG_SETVIDPNSOURCEADDRESS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGKARG_SETVIDPNSOURCEADDRESS
+UID: NS:d3dkmddi._DXGKARG_SETVIDPNSOURCEADDRESS
+title: "_DXGKARG_SETVIDPNSOURCEADDRESS"
+author: windows-driver-content
+description: The DXGKARG_SETVIDPNSOURCEADDRESS structure contains arguments for the DxgkDdiSetVidPnSourceAddress function.
+old-location: display\dxgkarg_setvidpnsourceaddress.htm
+old-project: display
+ms.assetid: b83736b6-17c5-43b8-9204-d165fe07853b
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3dkmddi/DXGKARG_SETVIDPNSOURCEADDRESS, DXGKARG_SETVIDPNSOURCEADDRESS, DXGKARG_SETVIDPNSOURCEADDRESS structure [Display Devices], DmStructs_f179199a-3747-4086-8e77-5434a3e287a1.xml, display.dxgkarg_setvidpnsourceaddress, _DXGKARG_SETVIDPNSOURCEADDRESS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DXGKARG_SETVIDPNSOURCEADDRESS
+product: Windows
+targetos: Windows
+req.typenames: DXGKARG_SETVIDPNSOURCEADDRESS
 ---
 
 # _DXGKARG_SETVIDPNSOURCEADDRESS structure

@@ -1,41 +1,46 @@
 ---
-UID : NF:engextcpp.ExtRemoteData.Set
-title : ExtRemoteData::Set method
-author : windows-driver-content
-description : The Set method sets the region of the target's memory represented by the ExtRemoteData object.
-old-location : debugger\extremotedata_set_offset_bytes.htm
-old-project : debugger
-ms.assetid : 50b4bee4-3a8c-45a1-9a3f-b416aa8a19e5
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : ExtRemoteData::Set, ExtRemoteData, Set, Set method [Windows Debugging], engextcpp/ExtRemoteData::Set, debugger.extremotedata_set_offset_bytes, ExtRemoteData interface [Windows Debugging], Set method, Set method [Windows Debugging], ExtRemoteData interface
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : engextcpp.hpp
-req.include-header : Engextcpp.hpp
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : engextcpp.hpp
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SILO_DRIVER_CAPABILITIES, *PSILO_DRIVER_CAPABILITIES
+UID: NF:engextcpp.ExtRemoteData.Set
+title: ExtRemoteData::Set method
+author: windows-driver-content
+description: The Set method sets the region of the target's memory represented by the ExtRemoteData object.
+old-location: debugger\extremotedata_set_offset_bytes.htm
+old-project: debugger
+ms.assetid: 50b4bee4-3a8c-45a1-9a3f-b416aa8a19e5
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: ExtRemoteData::Set, ExtRemoteData, Set, Set method [Windows Debugging], engextcpp/ExtRemoteData::Set, debugger.extremotedata_set_offset_bytes, ExtRemoteData interface [Windows Debugging], Set method, Set method [Windows Debugging], ExtRemoteData interface
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: engextcpp.hpp
+req.include-header: Engextcpp.hpp
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: engextcpp.hpp
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	engextcpp.hpp
+apiname:
+-	ExtRemoteData.Set
+product: Windows
+targetos: Windows
+req.typenames: SILO_DRIVER_CAPABILITIES, *PSILO_DRIVER_CAPABILITIES
 ---
 
 

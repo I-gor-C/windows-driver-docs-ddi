@@ -1,42 +1,47 @@
 ---
-UID : NS:wwan._WWAN_UMTS_MRL_INFO
-title : "_WWAN_UMTS_MRL_INFO"
-author : windows-driver-content
-description : The WWAN_UMTS_MRL_INFO structure represents information about a neighboring UMTS cell.
-old-location : netvista\wwan_umts_mrl_info.htm
-old-project : netvista
-ms.assetid : C1129291-D0E7-48F6-B317-1A0BCB6D25DC
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.wwan_umts_mrl_info, PWWAN_UMTS_MRL_INFO, _WWAN_UMTS_MRL_INFO, wwan/WWAN_UMTS_MRL_INFO, WWAN_UMTS_MRL_INFO structure [Network Drivers Starting with Windows Vista], wwan/PWWAN_UMTS_MRL_INFO, PWWAN_UMTS_MRL_INFO structure pointer [Network Drivers Starting with Windows Vista], WWAN_UMTS_MRL_INFO, *PWWAN_UMTS_MRL_INFO
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wwan.h
-req.include-header : Wwan.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10, version 1709
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WWAN_UMTS_MRL_INFO, *PWWAN_UMTS_MRL_INFO
-req.product : Windows 10 or later.
+UID: NS:wwan._WWAN_UMTS_MRL_INFO
+title: "_WWAN_UMTS_MRL_INFO"
+author: windows-driver-content
+description: The WWAN_UMTS_MRL_INFO structure represents information about a neighboring UMTS cell.
+old-location: netvista\wwan_umts_mrl_info.htm
+old-project: netvista
+ms.assetid: C1129291-D0E7-48F6-B317-1A0BCB6D25DC
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.wwan_umts_mrl_info, PWWAN_UMTS_MRL_INFO, _WWAN_UMTS_MRL_INFO, wwan/WWAN_UMTS_MRL_INFO, WWAN_UMTS_MRL_INFO structure [Network Drivers Starting with Windows Vista], wwan/PWWAN_UMTS_MRL_INFO, PWWAN_UMTS_MRL_INFO structure pointer [Network Drivers Starting with Windows Vista], WWAN_UMTS_MRL_INFO, *PWWAN_UMTS_MRL_INFO
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wwan.h
+req.include-header: Wwan.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10, version 1709
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wwan.h
+apiname:
+-	WWAN_UMTS_MRL_INFO
+product: Windows
+targetos: Windows
+req.typenames: WWAN_UMTS_MRL_INFO, *PWWAN_UMTS_MRL_INFO
+req.product: Windows 10 or later.
 ---
 
 # _WWAN_UMTS_MRL_INFO structure

@@ -1,41 +1,46 @@
 ---
-UID : NS:d3d10umddi.D3D11DDIARG_CREATECOMMANDLIST
-title : D3D11DDIARG_CREATECOMMANDLIST
-author : windows-driver-content
-description : The D3D11DDIARG_CREATECOMMANDLIST structure contains a handle to the deferred context that was created by the CreateDeferredContext function.
-old-location : display\d3d11ddiarg_createcommandlist.htm
-old-project : display
-ms.assetid : 7d720346-4a68-40bd-816d-c406995b3232
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : UMDisplayDriver_Dx11param_Structs_fc1a42ad-2d14-44de-abf1-480810b8d080.xml, D3D11DDIARG_CREATECOMMANDLIST, display.d3d11ddiarg_createcommandlist, D3D11DDIARG_CREATECOMMANDLIST structure [Display Devices], d3d10umddi/D3D11DDIARG_CREATECOMMANDLIST
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Windows
-req.target-min-winverclnt : D3D11DDIARG_CREATECOMMANDLIST is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3D11DDIARG_CREATECOMMANDLIST
+UID: NS:d3d10umddi.D3D11DDIARG_CREATECOMMANDLIST
+title: D3D11DDIARG_CREATECOMMANDLIST
+author: windows-driver-content
+description: The D3D11DDIARG_CREATECOMMANDLIST structure contains a handle to the deferred context that was created by the CreateDeferredContext function.
+old-location: display\d3d11ddiarg_createcommandlist.htm
+old-project: display
+ms.assetid: 7d720346-4a68-40bd-816d-c406995b3232
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: UMDisplayDriver_Dx11param_Structs_fc1a42ad-2d14-44de-abf1-480810b8d080.xml, D3D11DDIARG_CREATECOMMANDLIST, display.d3d11ddiarg_createcommandlist, D3D11DDIARG_CREATECOMMANDLIST structure [Display Devices], d3d10umddi/D3D11DDIARG_CREATECOMMANDLIST
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Windows
+req.target-min-winverclnt: D3D11DDIARG_CREATECOMMANDLIST is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	D3D11DDIARG_CREATECOMMANDLIST
+product: Windows
+targetos: Windows
+req.typenames: D3D11DDIARG_CREATECOMMANDLIST
 ---
 
 # D3D11DDIARG_CREATECOMMANDLIST structure

@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._D3DDDIARG_GETPITCH
-title : "_D3DDDIARG_GETPITCH"
-author : windows-driver-content
-description : The D3DDDIARG_GETPITCH structure describes an encrypted surface for which the GetPitch function retrieves the pitch.
-old-location : display\d3dddiarg_getpitch.htm
-old-project : display
-ms.assetid : 59661cfe-4a1f-4805-9421-7f694e82f8d2
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DDDIARG_GETPITCH, display.d3dddiarg_getpitch, _D3DDDIARG_GETPITCH, UMDisplayDriver_param_Structs_02e95329-8eba-41a3-ae4e-d8830b47ada6.xml, D3DDDIARG_GETPITCH structure [Display Devices], d3dumddi/D3DDDIARG_GETPITCH
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : D3DDDIARG_GETPITCH is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDIARG_GETPITCH
+UID: NS:d3dumddi._D3DDDIARG_GETPITCH
+title: "_D3DDDIARG_GETPITCH"
+author: windows-driver-content
+description: The D3DDDIARG_GETPITCH structure describes an encrypted surface for which the GetPitch function retrieves the pitch.
+old-location: display\d3dddiarg_getpitch.htm
+old-project: display
+ms.assetid: 59661cfe-4a1f-4805-9421-7f694e82f8d2
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DDDIARG_GETPITCH, display.d3dddiarg_getpitch, _D3DDDIARG_GETPITCH, UMDisplayDriver_param_Structs_02e95329-8eba-41a3-ae4e-d8830b47ada6.xml, D3DDDIARG_GETPITCH structure [Display Devices], d3dumddi/D3DDDIARG_GETPITCH
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: D3DDDIARG_GETPITCH is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	D3DDDIARG_GETPITCH
+product: Windows
+targetos: Windows
+req.typenames: D3DDDIARG_GETPITCH
 ---
 
 # _D3DDDIARG_GETPITCH structure

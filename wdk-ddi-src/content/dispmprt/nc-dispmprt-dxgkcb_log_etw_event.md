@@ -1,41 +1,46 @@
 ---
-UID : NC:dispmprt.DXGKCB_LOG_ETW_EVENT
-title : DXGKCB_LOG_ETW_EVENT
-author : windows-driver-content
-description : The DxgkCbLogEtwEvent function logs an Event Tracing for Windows (ETW) event.
-old-location : display\dxgkcblogetwevent.htm
-old-project : display
-ms.assetid : d869f933-4316-440e-899a-d46d72a0d10f
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkcblogetwevent, DxgkCbLogEtwEvent callback function [Display Devices], DxgkCbLogEtwEvent, DXGKCB_LOG_ETW_EVENT, DXGKCB_LOG_ETW_EVENT, dispmprt/DxgkCbLogEtwEvent, DpFunctions_1e074b6d-dff4-4d1f-93ce-4333a4241562.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : dispmprt.h
-req.include-header : Dispmprt.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
+UID: NC:dispmprt.DXGKCB_LOG_ETW_EVENT
+title: DXGKCB_LOG_ETW_EVENT
+author: windows-driver-content
+description: The DxgkCbLogEtwEvent function logs an Event Tracing for Windows (ETW) event.
+old-location: display\dxgkcblogetwevent.htm
+old-project: display
+ms.assetid: d869f933-4316-440e-899a-d46d72a0d10f
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkcblogetwevent, DxgkCbLogEtwEvent callback function [Display Devices], DxgkCbLogEtwEvent, DXGKCB_LOG_ETW_EVENT, DXGKCB_LOG_ETW_EVENT, dispmprt/DxgkCbLogEtwEvent, DpFunctions_1e074b6d-dff4-4d1f-93ce-4333a4241562.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: dispmprt.h
+req.include-header: Dispmprt.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	dispmprt.h
+apiname:
+-	DxgkCbLogEtwEvent
+product: Windows
+targetos: Windows
+req.typenames: SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ---
 
 

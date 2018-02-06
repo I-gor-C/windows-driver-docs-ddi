@@ -1,41 +1,46 @@
 ---
-UID : NS:compstui._PROPSHEETUI_INFO_HEADER
-title : "_PROPSHEETUI_INFO_HEADER"
-author : windows-driver-content
-description : The PROPSHEETUI_INFO_HEADER structure is used as an input parameter to an application's PFNPROPSHEETUI-typed function, when the function is called with a reason value of PROPSHEETUI_REASON_GET_INFO_HEADER.
-old-location : print\propsheetui_info_header.htm
-old-project : print
-ms.assetid : 148c463c-a18b-4f24-b3dc-af74c3de97b7
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : compstui/PROPSHEETUI_INFO_HEADER, _PROPSHEETUI_INFO_HEADER, PROPSHEETUI_INFO_HEADER structure [Print Devices], cpsuifnc_21dad179-56e1-478c-8a62-628262ca59a8.xml, *PPROPSHEETUI_INFO_HEADER, compstui/PPROPSHEETUI_INFO_HEADER, PPROPSHEETUI_INFO_HEADER, PROPSHEETUI_INFO_HEADER, PPROPSHEETUI_INFO_HEADER structure pointer [Print Devices], print.propsheetui_info_header
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : compstui.h
-req.include-header : Compstui.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPROPSHEETUI_INFO_HEADER, PROPSHEETUI_INFO_HEADER"
+UID: NS:compstui._PROPSHEETUI_INFO_HEADER
+title: "_PROPSHEETUI_INFO_HEADER"
+author: windows-driver-content
+description: The PROPSHEETUI_INFO_HEADER structure is used as an input parameter to an application's PFNPROPSHEETUI-typed function, when the function is called with a reason value of PROPSHEETUI_REASON_GET_INFO_HEADER.
+old-location: print\propsheetui_info_header.htm
+old-project: print
+ms.assetid: 148c463c-a18b-4f24-b3dc-af74c3de97b7
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: compstui/PROPSHEETUI_INFO_HEADER, _PROPSHEETUI_INFO_HEADER, PROPSHEETUI_INFO_HEADER structure [Print Devices], cpsuifnc_21dad179-56e1-478c-8a62-628262ca59a8.xml, *PPROPSHEETUI_INFO_HEADER, compstui/PPROPSHEETUI_INFO_HEADER, PPROPSHEETUI_INFO_HEADER, PROPSHEETUI_INFO_HEADER, PPROPSHEETUI_INFO_HEADER structure pointer [Print Devices], print.propsheetui_info_header
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: compstui.h
+req.include-header: Compstui.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	compstui.h
+apiname:
+-	PROPSHEETUI_INFO_HEADER
+product: Windows
+targetos: Windows
+req.typenames: "*PPROPSHEETUI_INFO_HEADER, PROPSHEETUI_INFO_HEADER"
 ---
 
 # _PROPSHEETUI_INFO_HEADER structure

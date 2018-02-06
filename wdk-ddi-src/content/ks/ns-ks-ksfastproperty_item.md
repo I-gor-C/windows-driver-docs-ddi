@@ -1,41 +1,46 @@
 ---
-UID : NS:ks.KSFASTPROPERTY_ITEM
-title : KSFASTPROPERTY_ITEM
-author : windows-driver-content
-description : The KSFASTPROPERTY_ITEM structure is used with items for fast I/O dispatching.
-old-location : stream\ksfastproperty_item.htm
-old-project : stream
-ms.assetid : 8a39b7cb-cd05-4fb8-9e50-7425e689a36f
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ks/PKSFASTPROPERTY_ITEM, *PKSFASTPROPERTY_ITEM, PKSFASTPROPERTY_ITEM, ks/KSFASTPROPERTY_ITEM, PKSFASTPROPERTY_ITEM structure pointer [Streaming Media Devices], stream.ksfastproperty_item, KSFASTPROPERTY_ITEM, ks-struct_dddb648f-ea8a-436a-b948-397364fe2db6.xml, KSFASTPROPERTY_ITEM structure [Streaming Media Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKSFASTPROPERTY_ITEM, KSFASTPROPERTY_ITEM"
+UID: NS:ks.KSFASTPROPERTY_ITEM
+title: KSFASTPROPERTY_ITEM
+author: windows-driver-content
+description: The KSFASTPROPERTY_ITEM structure is used with items for fast I/O dispatching.
+old-location: stream\ksfastproperty_item.htm
+old-project: stream
+ms.assetid: 8a39b7cb-cd05-4fb8-9e50-7425e689a36f
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ks/PKSFASTPROPERTY_ITEM, *PKSFASTPROPERTY_ITEM, PKSFASTPROPERTY_ITEM, ks/KSFASTPROPERTY_ITEM, PKSFASTPROPERTY_ITEM structure pointer [Streaming Media Devices], stream.ksfastproperty_item, KSFASTPROPERTY_ITEM, ks-struct_dddb648f-ea8a-436a-b948-397364fe2db6.xml, KSFASTPROPERTY_ITEM structure [Streaming Media Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	KSFASTPROPERTY_ITEM
+product: Windows
+targetos: Windows
+req.typenames: "*PKSFASTPROPERTY_ITEM, KSFASTPROPERTY_ITEM"
 ---
 
 # KSFASTPROPERTY_ITEM structure

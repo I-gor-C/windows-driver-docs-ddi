@@ -1,42 +1,47 @@
 ---
-UID : NE:wudfddi._SECURITY_IMPERSONATION_LEVEL
-title : "_SECURITY_IMPERSONATION_LEVEL"
-author : windows-driver-content
-description : The SECURITY_IMPERSONATION_LEVEL enumeration contains values that identify security impersonation levels.
-old-location : wdf\security_impersonation_level.htm
-old-project : wdf
-ms.assetid : 5c325c16-6bc6-4eae-a58c-234d11616780
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wudfddi/SECURITY_IMPERSONATION_LEVEL, SECURITY_IMPERSONATION_LEVEL, _SECURITY_IMPERSONATION_LEVEL, wudfddi/SecurityDelegation, SecurityDelegation, wdf.security_impersonation_level, wudfddi/SecurityImpersonation, SecurityIdentification, SECURITY_IMPERSONATION_LEVEL enumeration, SecurityAnonymous, wudfddi/SecurityAnonymous, wudfddi/SecurityIdentification, SecurityImpersonation, umdfstructs_f81ccb0e-4b8c-4a8a-bdd3-4b4a45a750ab.xml, umdf.security_impersonation_level
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SECURITY_IMPERSONATION_LEVEL
-req.product : Windows 10 or later.
+UID: NE:wudfddi._SECURITY_IMPERSONATION_LEVEL
+title: "_SECURITY_IMPERSONATION_LEVEL"
+author: windows-driver-content
+description: The SECURITY_IMPERSONATION_LEVEL enumeration contains values that identify security impersonation levels.
+old-location: wdf\security_impersonation_level.htm
+old-project: wdf
+ms.assetid: 5c325c16-6bc6-4eae-a58c-234d11616780
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wudfddi/SECURITY_IMPERSONATION_LEVEL, SECURITY_IMPERSONATION_LEVEL, _SECURITY_IMPERSONATION_LEVEL, wudfddi/SecurityDelegation, SecurityDelegation, wdf.security_impersonation_level, wudfddi/SecurityImpersonation, SecurityIdentification, SECURITY_IMPERSONATION_LEVEL enumeration, SecurityAnonymous, wudfddi/SecurityAnonymous, wudfddi/SecurityIdentification, SecurityImpersonation, umdfstructs_f81ccb0e-4b8c-4a8a-bdd3-4b4a45a750ab.xml, umdf.security_impersonation_level
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wudfddi.h
+apiname:
+-	SECURITY_IMPERSONATION_LEVEL
+product: Windows
+targetos: Windows
+req.typenames: SECURITY_IMPERSONATION_LEVEL
+req.product: Windows 10 or later.
 ---
 
 # _SECURITY_IMPERSONATION_LEVEL Enumeration
@@ -57,31 +62,31 @@ typedef enum _SECURITY_IMPERSONATION_LEVEL {
 ## Constants
 
 <table>
-
-<tr>
-<td>SecurityAnonymous</td>
-<td>The driver cannot impersonate or identify the client.</td>
-</tr>
-
-<tr>
-<td>SecurityDelegation</td>
-<td>The driver can impersonate the client's security context on remote systems.</td>
-</tr>
-
-<tr>
-<td>SecurityIdentification</td>
-<td>The driver can obtain the identity and privileges of the client but cannot impersonate the client.</td>
-</tr>
-
-<tr>
-<td>SecurityImpersonation</td>
-<td>The driver can impersonate the client's security context on the local system.</td>
-</tr>
+            
+                <tr>
+                    <td>SecurityAnonymous</td>
+                    <td>The driver cannot impersonate or identify the client.</td>
+                </tr>
+            
+                <tr>
+                    <td>SecurityDelegation</td>
+                    <td>The driver can impersonate the client's security context on remote systems.</td>
+                </tr>
+            
+                <tr>
+                    <td>SecurityIdentification</td>
+                    <td>The driver can obtain the identity and privileges of the client but cannot impersonate the client.</td>
+                </tr>
+            
+                <tr>
+                    <td>SecurityImpersonation</td>
+                    <td>The driver can impersonate the client's security context on the local system.</td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-For more information about impersonation in the UMDF, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/handling-client-impersonation-in-umdf-drivers">Handling Client Impersonation</a>.
+        For more information about impersonation in the UMDF, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/handling-client-impersonation-in-umdf-drivers">Handling Client Impersonation</a>.
 
 A UMDF driver supplies one of the values of <b>SECURITY_IMPERSONATION_LEVEL</b> to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559136">IWDFIoRequest::Impersonate</a> method to set the security impersonation level.
 
@@ -92,9 +97,9 @@ For more information about the security impersonation levels, see the <b>SECURIT
 | ---- |:---- |
 | **Header** | wudfddi.h (include Wudfddi.h) |
 
-## See Also
+    ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559136">IWDFIoRequest::Impersonate</a>
+        <a href="https://msdn.microsoft.com/library/windows/hardware/ff559136">IWDFIoRequest::Impersonate</a>
 
  
 

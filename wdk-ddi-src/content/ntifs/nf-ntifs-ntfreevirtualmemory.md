@@ -1,41 +1,47 @@
 ---
-UID : NF:ntifs.NtFreeVirtualMemory
-title : NtFreeVirtualMemory function
-author : windows-driver-content
-description : The ZwFreeVirtualMemory routine releases, decommits, or both, a region of pages within the virtual address space of a specified process.
-old-location : kernel\zwfreevirtualmemory.htm
-old-project : kernel
-ms.assetid : ca6675cf-3482-4e62-8f7c-801c1deacd37
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.zwfreevirtualmemory, ntifs/ZwFreeVirtualMemory, ZwFreeVirtualMemory, k111_c7ea9516-a020-4840-aa18-7f98470cc142.xml, ntifs/NtFreeVirtualMemory, ZwFreeVirtualMemory routine [Kernel-Mode Driver Architecture], NtFreeVirtualMemory
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h, Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.NtFreeVirtualMemory
+title: NtFreeVirtualMemory function
+author: windows-driver-content
+description: The ZwFreeVirtualMemory routine releases, decommits, or both, a region of pages within the virtual address space of a specified process.
+old-location: kernel\zwfreevirtualmemory.htm
+old-project: kernel
+ms.assetid: ca6675cf-3482-4e62-8f7c-801c1deacd37
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.zwfreevirtualmemory, ntifs/ZwFreeVirtualMemory, ZwFreeVirtualMemory, k111_c7ea9516-a020-4840-aa18-7f98470cc142.xml, ntifs/NtFreeVirtualMemory, ZwFreeVirtualMemory routine [Kernel-Mode Driver Architecture], NtFreeVirtualMemory
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h, Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ZwFreeVirtualMemory
+-	NtFreeVirtualMemory
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

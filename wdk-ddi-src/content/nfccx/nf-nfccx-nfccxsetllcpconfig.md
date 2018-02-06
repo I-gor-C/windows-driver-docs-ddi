@@ -1,41 +1,46 @@
 ---
-UID : NF:nfccx.NfcCxSetLlcpConfig
-title : NfcCxSetLlcpConfig function
-author : windows-driver-content
-description : Called by the client driver to configure the LLCP parameters.
-old-location : nfpdrivers\_nfccxsetllcpconfig.htm
-old-project : nfpdrivers
-ms.assetid : 8208F61E-DFD9-4AA8-B225-BEB35F80F621
-ms.author : windowsdriverdev
-ms.date : 12/18/2017
-ms.keywords : NfcCxSetLlcpConfig, nfccx/NfcCxSetLlcpConfig, nfpdrivers._nfccxsetllcpconfig, NfcCxSetLlcpConfig method [Near-Field Proximity Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : nfccx.h
-req.include-header : Ncidef.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Nfccxstub.lib
-req.dll : NfcCx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NFC_CX_TRANSPORT_TYPE, *PNFC_CX_TRANSPORT_TYPE
+UID: NF:nfccx.NfcCxSetLlcpConfig
+title: NfcCxSetLlcpConfig function
+author: windows-driver-content
+description: Called by the client driver to configure the LLCP parameters.
+old-location: nfpdrivers\_nfccxsetllcpconfig.htm
+old-project: nfpdrivers
+ms.assetid: 8208F61E-DFD9-4AA8-B225-BEB35F80F621
+ms.author: windowsdriverdev
+ms.date: 12/18/2017
+ms.keywords: NfcCxSetLlcpConfig, nfccx/NfcCxSetLlcpConfig, nfpdrivers._nfccxsetllcpconfig, NfcCxSetLlcpConfig method [Near-Field Proximity Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: nfccx.h
+req.include-header: Ncidef.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Nfccxstub.lib
+req.dll: NfcCx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NfcCx.dll
+apiname:
+-	NfcCxSetLlcpConfig
+product: Windows
+targetos: Windows
+req.typenames: NFC_CX_TRANSPORT_TYPE, *PNFC_CX_TRANSPORT_TYPE
 ---
 
 

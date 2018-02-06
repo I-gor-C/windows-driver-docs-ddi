@@ -1,41 +1,46 @@
 ---
-UID : NF:portcls.IMiniportMidiStream.SetFormat
-title : IMiniportMidiStream::SetFormat method
-author : windows-driver-content
-description : The SetFormat method sets the KS data format of the MIDI stream.
-old-location : audio\iminiportmidistream_setformat.htm
-old-project : audio
-ms.assetid : 35e11004-c716-4c6a-ba0a-be04750afb7a
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : audio.iminiportmidistream_setformat, IMiniportMidiStream, audmp-routines_9e75b920-4cc0-4acb-83e6-f970524e0587.xml, portcls/IMiniportMidiStream::SetFormat, SetFormat method [Audio Devices], IMiniportMidiStream interface, SetFormat, IMiniportMidiStream interface [Audio Devices], SetFormat method, SetFormat method [Audio Devices], IMiniportMidiStream::SetFormat
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : portcls.h
-req.include-header : Portcls.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : portcls.h
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.IMiniportMidiStream.SetFormat
+title: IMiniportMidiStream::SetFormat method
+author: windows-driver-content
+description: The SetFormat method sets the KS data format of the MIDI stream.
+old-location: audio\iminiportmidistream_setformat.htm
+old-project: audio
+ms.assetid: 35e11004-c716-4c6a-ba0a-be04750afb7a
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: audio.iminiportmidistream_setformat, IMiniportMidiStream, audmp-routines_9e75b920-4cc0-4acb-83e6-f970524e0587.xml, portcls/IMiniportMidiStream::SetFormat, SetFormat method [Audio Devices], IMiniportMidiStream interface, SetFormat, IMiniportMidiStream interface [Audio Devices], SetFormat method, SetFormat method [Audio Devices], IMiniportMidiStream::SetFormat
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: portcls.h
+req.include-header: Portcls.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: portcls.h
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	portcls.h
+apiname:
+-	IMiniportMidiStream.SetFormat
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugControl4.OutputPromptVaListWide
-title : IDebugControl4::OutputPromptVaListWide method
-author : windows-driver-content
-description : The OutputPromptVaListWide method formats and sends a user prompt to the output callback objects.
-old-location : debugger\outputpromptvalistwide.htm
-old-project : debugger
-ms.assetid : ddd2cc89-1747-46e8-ade0-c4ccb10584f6
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : OutputPromptVaListWide method [Windows Debugging], IDebugControl4 interface [Windows Debugging], OutputPromptVaListWide method, OutputPromptVaListWide method [Windows Debugging], IDebugControl4 interface, OutputPromptVaListWide, debugger.outputpromptvalistwide, dbgeng/IDebugControl4::OutputPromptVaListWide, IDebugControl4, IDebugControl4::OutputPromptVaListWide
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h, Stdarg.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl4.OutputPromptVaListWide
+title: IDebugControl4::OutputPromptVaListWide method
+author: windows-driver-content
+description: The OutputPromptVaListWide method formats and sends a user prompt to the output callback objects.
+old-location: debugger\outputpromptvalistwide.htm
+old-project: debugger
+ms.assetid: ddd2cc89-1747-46e8-ade0-c4ccb10584f6
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: OutputPromptVaListWide method [Windows Debugging], IDebugControl4 interface [Windows Debugging], OutputPromptVaListWide method, OutputPromptVaListWide method [Windows Debugging], IDebugControl4 interface, OutputPromptVaListWide, debugger.outputpromptvalistwide, dbgeng/IDebugControl4::OutputPromptVaListWide, IDebugControl4, IDebugControl4::OutputPromptVaListWide
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h, Stdarg.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl4.OutputPromptVaListWide
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

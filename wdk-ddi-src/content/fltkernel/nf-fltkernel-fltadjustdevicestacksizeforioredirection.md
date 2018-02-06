@@ -1,41 +1,47 @@
 ---
-UID : NF:fltkernel.FltAdjustDeviceStackSizeForIoRedirection
-title : FltAdjustDeviceStackSizeForIoRedirection function
-author : windows-driver-content
-description : The FltAdjustDeviceStackSizeForIoRedirection routine increases the size of the source device stack to allow a minifilter to redirect I/O from a specified source instance to a specified target instance when the target stack is deeper than the source stack.
-old-location : ifsk\fltadjustdevicestacksizeforioredirection.htm
-old-project : ifsk
-ms.assetid : 48ca0f39-e870-4f9b-92d5-1226972bf2d5
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltAdjustDeviceStackSizeForIoRedirection, FltAdjustDeviceStackSizeForIoRedirection routine [Installable File System Drivers], ifsk.fltadjustdevicestacksizeforioredirection, fltkernel/FltAdjustDeviceStackSizeForIoRedirection
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : FltKernel.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 7 and later versions of the Windows operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltAdjustDeviceStackSizeForIoRedirection
+title: FltAdjustDeviceStackSizeForIoRedirection function
+author: windows-driver-content
+description: The FltAdjustDeviceStackSizeForIoRedirection routine increases the size of the source device stack to allow a minifilter to redirect I/O from a specified source instance to a specified target instance when the target stack is deeper than the source stack.
+old-location: ifsk\fltadjustdevicestacksizeforioredirection.htm
+old-project: ifsk
+ms.assetid: 48ca0f39-e870-4f9b-92d5-1226972bf2d5
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltAdjustDeviceStackSizeForIoRedirection, FltAdjustDeviceStackSizeForIoRedirection routine [Installable File System Drivers], ifsk.fltadjustdevicestacksizeforioredirection, fltkernel/FltAdjustDeviceStackSizeForIoRedirection
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: FltKernel.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 7 and later versions of the Windows operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	FltMgr.lib
+-	FltMgr.dll
+apiname:
+-	FltAdjustDeviceStackSizeForIoRedirection
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

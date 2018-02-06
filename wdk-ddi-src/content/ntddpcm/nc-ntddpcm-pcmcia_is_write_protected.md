@@ -1,41 +1,46 @@
 ---
-UID : NC:ntddpcm.PCMCIA_IS_WRITE_PROTECTED
-title : PCMCIA_IS_WRITE_PROTECTED
-author : windows-driver-content
-description : The PCMCIA_IS_WRITE_PROTECTED interface routine returns the write-protect condition of a PCMCIA memory card.
-old-location : pcmcia\pcmcia_is_write_protected.htm
-old-project : PCMCIA
-ms.assetid : d270f39a-d8e8-4ec6-987e-e755da767495
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : PCMCIA.pcmcia_is_write_protected, IsWriteProtected callback function [Buses], IsWriteProtected, PCMCIA_IS_WRITE_PROTECTED, PCMCIA_IS_WRITE_PROTECTED, ntddpcm/IsWriteProtected, memcdref_e7dab6ad-c94a-42c9-a969-f102c58e4d3c.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ntddpcm.h
-req.include-header : Ntddpcm.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL (See Remarks section.)"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PAR_SET_INFORMATION, *PPAR_SET_INFORMATION
+UID: NC:ntddpcm.PCMCIA_IS_WRITE_PROTECTED
+title: PCMCIA_IS_WRITE_PROTECTED
+author: windows-driver-content
+description: The PCMCIA_IS_WRITE_PROTECTED interface routine returns the write-protect condition of a PCMCIA memory card.
+old-location: pcmcia\pcmcia_is_write_protected.htm
+old-project: PCMCIA
+ms.assetid: d270f39a-d8e8-4ec6-987e-e755da767495
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: PCMCIA.pcmcia_is_write_protected, IsWriteProtected callback function [Buses], IsWriteProtected, PCMCIA_IS_WRITE_PROTECTED, PCMCIA_IS_WRITE_PROTECTED, ntddpcm/IsWriteProtected, memcdref_e7dab6ad-c94a-42c9-a969-f102c58e4d3c.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ntddpcm.h
+req.include-header: Ntddpcm.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL (See Remarks section.)"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	ntddpcm.h
+apiname:
+-	IsWriteProtected
+product: Windows
+targetos: Windows
+req.typenames: PAR_SET_INFORMATION, *PPAR_SET_INFORMATION
 ---
 
 

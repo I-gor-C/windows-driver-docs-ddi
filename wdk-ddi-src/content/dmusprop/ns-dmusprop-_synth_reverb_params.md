@@ -1,41 +1,46 @@
 ---
-UID : NS:dmusprop._SYNTH_REVERB_PARAMS
-title : "_SYNTH_REVERB_PARAMS"
-author : windows-driver-content
-description : The SYNTH_REVERB_PARAMS structure contains configuration parameters.
-old-location : audio\synth_reverb_params.htm
-old-project : audio
-ms.assetid : 9537D56C-920E-478E-9061-C4909240D7A0
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : SYNTH_REVERB_PARAMS structure [Audio Devices], *PSYNTH_REVERB_PARAMS, PSYNTH_REVERB_PARAMS, SYNTH_REVERB_PARAMS, audio.synth_reverb_params, dmusprop/SYNTH_REVERB_PARAMS, PSYNTH_REVERB_PARAMS structure pointer [Audio Devices], _SYNTH_REVERB_PARAMS, dmusprop/PSYNTH_REVERB_PARAMS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : dmusprop.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSYNTH_REVERB_PARAMS, SYNTH_REVERB_PARAMS"
+UID: NS:dmusprop._SYNTH_REVERB_PARAMS
+title: "_SYNTH_REVERB_PARAMS"
+author: windows-driver-content
+description: The SYNTH_REVERB_PARAMS structure contains configuration parameters.
+old-location: audio\synth_reverb_params.htm
+old-project: audio
+ms.assetid: 9537D56C-920E-478E-9061-C4909240D7A0
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: SYNTH_REVERB_PARAMS structure [Audio Devices], *PSYNTH_REVERB_PARAMS, PSYNTH_REVERB_PARAMS, SYNTH_REVERB_PARAMS, audio.synth_reverb_params, dmusprop/SYNTH_REVERB_PARAMS, PSYNTH_REVERB_PARAMS structure pointer [Audio Devices], _SYNTH_REVERB_PARAMS, dmusprop/PSYNTH_REVERB_PARAMS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: dmusprop.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Dmusprop.h
+apiname:
+-	SYNTH_REVERB_PARAMS
+product: Windows
+targetos: Windows
+req.typenames: "*PSYNTH_REVERB_PARAMS, SYNTH_REVERB_PARAMS"
 ---
 
 # _SYNTH_REVERB_PARAMS structure

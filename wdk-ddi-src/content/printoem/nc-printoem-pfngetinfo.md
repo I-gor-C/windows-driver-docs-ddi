@@ -1,42 +1,47 @@
 ---
-UID : NC:printoem.PFNGETINFO
-title : PFNGETINFO
-author : windows-driver-content
-description : The UNIFONTOBJ_GetInfo callback function is provided by the Unidrv driver so that rendering plug-ins can obtain font or glyph information.
-old-location : print\unifontobj_getinfo.htm
-old-project : print
-ms.assetid : 2c0d350d-dcdf-4da7-8cca-7f36d4ca622e
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : print.unifontobj_getinfo, UNIFONTOBJ_GetInfo routine [Print Devices], UNIFONTOBJ_GetInfo, PFNGETINFO, PFNGETINFO, printoem/UNIFONTOBJ_GetInfo, print_unidrv-pscript_rendering_7dc55246-beaa-4058-87a3-5438db3368c4.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : printoem.h
-req.include-header : Printoem.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PrintSchemaSelectionType
-req.product : Windows 10 or later.
+UID: NC:printoem.PFNGETINFO
+title: PFNGETINFO
+author: windows-driver-content
+description: The UNIFONTOBJ_GetInfo callback function is provided by the Unidrv driver so that rendering plug-ins can obtain font or glyph information.
+old-location: print\unifontobj_getinfo.htm
+old-project: print
+ms.assetid: 2c0d350d-dcdf-4da7-8cca-7f36d4ca622e
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: print.unifontobj_getinfo, UNIFONTOBJ_GetInfo routine [Print Devices], UNIFONTOBJ_GetInfo, PFNGETINFO, PFNGETINFO, printoem/UNIFONTOBJ_GetInfo, print_unidrv-pscript_rendering_7dc55246-beaa-4058-87a3-5438db3368c4.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: printoem.h
+req.include-header: Printoem.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	printoem.h
+apiname:
+-	UNIFONTOBJ_GetInfo
+product: Windows
+targetos: Windows
+req.typenames: PrintSchemaSelectionType
+req.product: Windows 10 or later.
 ---
 
 

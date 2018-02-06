@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dkmddi.DXGKDDI_GETNODEMETADATA
-title : DXGKDDI_GETNODEMETADATA
-author : windows-driver-content
-description : From a provided adapter handle, returns the engine type and friendly name of an engine on a specified GPU node. Must be implemented by Windows Display Driver Model (WDDM) 1.3 and later display miniport drivers.
-old-location : display\dxgkddigetnodemetadata.htm
-old-project : display
-ms.assetid : ECE54E1C-5291-43AF-8A71-BD95DE5DF0A6
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkddigetnodemetadata, DxgkDdiGetNodeMetadata callback function [Display Devices], DxgkDdiGetNodeMetadata, DXGKDDI_GETNODEMETADATA, DXGKDDI_GETNODEMETADATA, d3dkmddi/DxgkDdiGetNodeMetadata
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8.1
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
+UID: NC:d3dkmddi.DXGKDDI_GETNODEMETADATA
+title: DXGKDDI_GETNODEMETADATA
+author: windows-driver-content
+description: From a provided adapter handle, returns the engine type and friendly name of an engine on a specified GPU node. Must be implemented by Windows Display Driver Model (WDDM) 1.3 and later display miniport drivers.
+old-location: display\dxgkddigetnodemetadata.htm
+old-project: display
+ms.assetid: ECE54E1C-5291-43AF-8A71-BD95DE5DF0A6
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkddigetnodemetadata, DxgkDdiGetNodeMetadata callback function [Display Devices], DxgkDdiGetNodeMetadata, DXGKDDI_GETNODEMETADATA, DXGKDDI_GETNODEMETADATA, d3dkmddi/DxgkDdiGetNodeMetadata
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8.1
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	D3dkmddi.h
+apiname:
+-	DxgkDdiGetNodeMetadata
+product: Windows
+targetos: Windows
+req.typenames: DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
 

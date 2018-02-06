@@ -1,41 +1,46 @@
 ---
-UID : NS:dispmprt._DXGK_MIRACAST_CAPS
-title : "_DXGK_MIRACAST_CAPS"
-author : windows-driver-content
-description : Used by a display miniport driver to identify capabilities of a Miracast device.
-old-location : display\dxgk_miracast_caps.htm
-old-project : display
-ms.assetid : 63ED28D9-654F-45CC-BFDC-89C9E73DCF95
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgk_miracast_caps, DXGK_MIRACAST_CAPS, _DXGK_MIRACAST_CAPS, *PDXGK_MIRACAST_CAPS, DXGK_MIRACAST_CAPS structure [Display Devices], dispmprt/DXGK_MIRACAST_CAPS, PDXGK_MIRACAST_CAPS structure pointer [Display Devices], PDXGK_MIRACAST_CAPS, dispmprt/PDXGK_MIRACAST_CAPS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : dispmprt.h
-req.include-header : Dispmprt.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8.1
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDXGK_MIRACAST_CAPS, DXGK_MIRACAST_CAPS"
+UID: NS:dispmprt._DXGK_MIRACAST_CAPS
+title: "_DXGK_MIRACAST_CAPS"
+author: windows-driver-content
+description: Used by a display miniport driver to identify capabilities of a Miracast device.
+old-location: display\dxgk_miracast_caps.htm
+old-project: display
+ms.assetid: 63ED28D9-654F-45CC-BFDC-89C9E73DCF95
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgk_miracast_caps, DXGK_MIRACAST_CAPS, _DXGK_MIRACAST_CAPS, *PDXGK_MIRACAST_CAPS, DXGK_MIRACAST_CAPS structure [Display Devices], dispmprt/DXGK_MIRACAST_CAPS, PDXGK_MIRACAST_CAPS structure pointer [Display Devices], PDXGK_MIRACAST_CAPS, dispmprt/PDXGK_MIRACAST_CAPS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: dispmprt.h
+req.include-header: Dispmprt.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8.1
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Dispmprt.h
+apiname:
+-	DXGK_MIRACAST_CAPS
+product: Windows
+targetos: Windows
+req.typenames: "*PDXGK_MIRACAST_CAPS, DXGK_MIRACAST_CAPS"
 ---
 
 # _DXGK_MIRACAST_CAPS structure

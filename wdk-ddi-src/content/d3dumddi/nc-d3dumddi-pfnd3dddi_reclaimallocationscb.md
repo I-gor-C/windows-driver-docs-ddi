@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_RECLAIMALLOCATIONSCB
-title : PFND3DDDI_RECLAIMALLOCATIONSCB
-author : windows-driver-content
-description : Called by the user-mode display driver to reclaim video memory allocations that were previously offered for reuse.
-old-location : display\pfnreclaimallocationscb.htm
-old-project : display
-ms.assetid : BAC27F24-B348-48D5-9E9B-20897B4D8E2D
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.pfnreclaimallocationscb, pfnReclaimAllocationsCb callback function [Display Devices], pfnReclaimAllocationsCb, PFND3DDDI_RECLAIMALLOCATIONSCB, PFND3DDDI_RECLAIMALLOCATIONSCB, d3dumddi/pfnReclaimAllocationsCb
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_RECLAIMALLOCATIONSCB
+title: PFND3DDDI_RECLAIMALLOCATIONSCB
+author: windows-driver-content
+description: Called by the user-mode display driver to reclaim video memory allocations that were previously offered for reuse.
+old-location: display\pfnreclaimallocationscb.htm
+old-project: display
+ms.assetid: BAC27F24-B348-48D5-9E9B-20897B4D8E2D
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.pfnreclaimallocationscb, pfnReclaimAllocationsCb callback function [Display Devices], pfnReclaimAllocationsCb, PFND3DDDI_RECLAIMALLOCATIONSCB, PFND3DDDI_RECLAIMALLOCATIONSCB, d3dumddi/pfnReclaimAllocationsCb
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	pfnReclaimAllocationsCb
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

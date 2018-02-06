@@ -1,42 +1,47 @@
 ---
-UID : NS:winddiui._DRIVER_UPGRADE_INFO_2
-title : "_DRIVER_UPGRADE_INFO_2"
-author : windows-driver-content
-description : The DRIVER_UPGRADE_INFO_2 structure is used as an input to a printer interface DLL's DrvUpgradePrinter function.
-old-location : print\driver_upgrade_info_2.htm
-old-project : print
-ms.assetid : 691554c5-5c99-40f0-b0d6-3556e004dd30
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : "*PDRIVER_UPGRADE_INFO_2, print.driver_upgrade_info_2, winddiui/PDRIVER_UPGRADE_INFO_2, winddiui/DRIVER_UPGRADE_INFO_2, _DRIVER_UPGRADE_INFO_2, PDRIVER_UPGRADE_INFO_2 structure pointer [Print Devices], DRIVER_UPGRADE_INFO_2, print_interface-graphics_3db7d8d4-1f0c-4b76-9e22-bc55aac9b6c7.xml, DRIVER_UPGRADE_INFO_2 structure [Print Devices], PDRIVER_UPGRADE_INFO_2"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : winddiui.h
-req.include-header : Winddiui.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDRIVER_UPGRADE_INFO_2, DRIVER_UPGRADE_INFO_2"
-req.product : Windows 10 or later.
+UID: NS:winddiui._DRIVER_UPGRADE_INFO_2
+title: "_DRIVER_UPGRADE_INFO_2"
+author: windows-driver-content
+description: The DRIVER_UPGRADE_INFO_2 structure is used as an input to a printer interface DLL's DrvUpgradePrinter function.
+old-location: print\driver_upgrade_info_2.htm
+old-project: print
+ms.assetid: 691554c5-5c99-40f0-b0d6-3556e004dd30
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: "*PDRIVER_UPGRADE_INFO_2, print.driver_upgrade_info_2, winddiui/PDRIVER_UPGRADE_INFO_2, winddiui/DRIVER_UPGRADE_INFO_2, _DRIVER_UPGRADE_INFO_2, PDRIVER_UPGRADE_INFO_2 structure pointer [Print Devices], DRIVER_UPGRADE_INFO_2, print_interface-graphics_3db7d8d4-1f0c-4b76-9e22-bc55aac9b6c7.xml, DRIVER_UPGRADE_INFO_2 structure [Print Devices], PDRIVER_UPGRADE_INFO_2"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: winddiui.h
+req.include-header: Winddiui.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	winddiui.h
+apiname:
+-	DRIVER_UPGRADE_INFO_2
+product: Windows
+targetos: Windows
+req.typenames: "*PDRIVER_UPGRADE_INFO_2, DRIVER_UPGRADE_INFO_2"
+req.product: Windows 10 or later.
 ---
 
 # _DRIVER_UPGRADE_INFO_2 structure

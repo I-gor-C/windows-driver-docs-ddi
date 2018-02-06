@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.KeSetEvent
-title : KeSetEvent function
-author : windows-driver-content
-description : The KeSetEvent routine sets an event object to a signaled state if the event was not already signaled, and returns the previous state of the event object.
-old-location : kernel\kesetevent.htm
-old-project : kernel
-ms.assetid : a2017660-f001-449c-9c33-e26c2897ead1
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.kesetevent, KeSetEvent, KeSetEvent routine [Kernel-Mode Driver Architecture], wdm/KeSetEvent, k105_0b9a87b5-bdf2-4449-81f6-1836ea47f038.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : CompletionEventChecking, IoAllocateIrpSignalEventInCompletion, IoBuildDeviceIoControlSetEvent, IoBuildFsdIrpSignalEventInCompletion, IrqlKeSetEvent, SignalEventInCompletion, DoubleKeSetEvent, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.KeSetEvent
+title: KeSetEvent function
+author: windows-driver-content
+description: The KeSetEvent routine sets an event object to a signaled state if the event was not already signaled, and returns the previous state of the event object.
+old-location: kernel\kesetevent.htm
+old-project: kernel
+ms.assetid: a2017660-f001-449c-9c33-e26c2897ead1
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.kesetevent, KeSetEvent, KeSetEvent routine [Kernel-Mode Driver Architecture], wdm/KeSetEvent, k105_0b9a87b5-bdf2-4449-81f6-1836ea47f038.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: CompletionEventChecking, IoAllocateIrpSignalEventInCompletion, IoBuildDeviceIoControlSetEvent, IoBuildFsdIrpSignalEventInCompletion, IrqlKeSetEvent, SignalEventInCompletion, DoubleKeSetEvent, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	KeSetEvent
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

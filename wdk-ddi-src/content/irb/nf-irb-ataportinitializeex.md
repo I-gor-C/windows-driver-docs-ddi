@@ -1,41 +1,47 @@
 ---
-UID : NF:irb.AtaPortInitializeEx
-title : AtaPortInitializeEx function
-author : windows-driver-content
-description : The AtaPortInitializeEx ATA port driver library routine initializes the port and miniport drivers.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
-old-location : storage\ataportinitializeex.htm
-old-project : storage
-ms.assetid : 578992cf-63eb-4b8e-b0cb-9caee5c534e1
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : AtaPortInitializeEx, AtaPortInitializeEx routine [Storage Devices], irb/AtaPortInitializeEx, storage.ataportinitializeex, atartns_dab74a62-5788-4de9-91eb-e1eb7a7bcaf5.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : irb.h
-req.include-header : Ata.h, Irb.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Pciidex.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : IDE_POWER_STATE
+UID: NF:irb.AtaPortInitializeEx
+title: AtaPortInitializeEx function
+author: windows-driver-content
+description: The AtaPortInitializeEx ATA port driver library routine initializes the port and miniport drivers.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
+old-location: storage\ataportinitializeex.htm
+old-project: storage
+ms.assetid: 578992cf-63eb-4b8e-b0cb-9caee5c534e1
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: AtaPortInitializeEx, AtaPortInitializeEx routine [Storage Devices], irb/AtaPortInitializeEx, storage.ataportinitializeex, atartns_dab74a62-5788-4de9-91eb-e1eb7a7bcaf5.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: irb.h
+req.include-header: Ata.h, Irb.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Pciidex.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Pciidex.lib
+-	Pciidex.dll
+apiname:
+-	AtaPortInitializeEx
+product: Windows
+targetos: Windows
+req.typenames: IDE_POWER_STATE
 ---
 
 

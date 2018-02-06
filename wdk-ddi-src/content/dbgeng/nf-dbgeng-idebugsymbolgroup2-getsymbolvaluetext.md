@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugSymbolGroup2.GetSymbolValueText
-title : IDebugSymbolGroup2::GetSymbolValueText method
-author : windows-driver-content
-description : The GetSymbolValueText method returns a string that represents the value of a symbol.
-old-location : debugger\getsymbolvaluetext.htm
-old-project : debugger
-ms.assetid : 587b8769-86b6-48bd-b238-84aeb5611668
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : dbgeng/IDebugSymbolGroup2::GetSymbolValueText, IDebugSymbolGroup2, IDebugSymbolGroup2 interface [Windows Debugging], GetSymbolValueText method, ComOther_2a064ea0-63f4-441f-a79c-e6fc1e9688c7.xml, GetSymbolValueText method [Windows Debugging], IDebugSymbolGroup2 interface, GetSymbolValueText method [Windows Debugging], IDebugSymbolGroup2::GetSymbolValueText, GetSymbolValueText, debugger.getsymbolvaluetext
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSymbolGroup2.GetSymbolValueText
+title: IDebugSymbolGroup2::GetSymbolValueText method
+author: windows-driver-content
+description: The GetSymbolValueText method returns a string that represents the value of a symbol.
+old-location: debugger\getsymbolvaluetext.htm
+old-project: debugger
+ms.assetid: 587b8769-86b6-48bd-b238-84aeb5611668
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: dbgeng/IDebugSymbolGroup2::GetSymbolValueText, IDebugSymbolGroup2, IDebugSymbolGroup2 interface [Windows Debugging], GetSymbolValueText method, ComOther_2a064ea0-63f4-441f-a79c-e6fc1e9688c7.xml, GetSymbolValueText method [Windows Debugging], IDebugSymbolGroup2 interface, GetSymbolValueText method [Windows Debugging], IDebugSymbolGroup2::GetSymbolValueText, GetSymbolValueText, debugger.getsymbolvaluetext
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugSymbolGroup2.GetSymbolValueText
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

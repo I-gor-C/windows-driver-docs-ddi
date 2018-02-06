@@ -1,41 +1,46 @@
 ---
-UID : NF:portcls.IRegistryKey.QueryKey
-title : IRegistryKey::QueryKey method
-author : windows-driver-content
-description : The QueryKey method retrieves information about a registry key, including the key name, key class, and the number of subkeys and their sizes.
-old-location : audio\iregistrykey_querykey.htm
-old-project : audio
-ms.assetid : 1b2642da-1b04-49a8-942e-6eb93afd12f2
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : QueryKey, audio.iregistrykey_querykey, IRegistryKey, IRegistryKey interface [Audio Devices], QueryKey method, audmp-routines_88fe19d0-095e-4f70-b8aa-a0c908600296.xml, QueryKey method [Audio Devices], portcls/IRegistryKey::QueryKey, QueryKey method [Audio Devices], IRegistryKey interface, IRegistryKey::QueryKey
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : portcls.h
-req.include-header : Portcls.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : portcls.h
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.IRegistryKey.QueryKey
+title: IRegistryKey::QueryKey method
+author: windows-driver-content
+description: The QueryKey method retrieves information about a registry key, including the key name, key class, and the number of subkeys and their sizes.
+old-location: audio\iregistrykey_querykey.htm
+old-project: audio
+ms.assetid: 1b2642da-1b04-49a8-942e-6eb93afd12f2
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: QueryKey, audio.iregistrykey_querykey, IRegistryKey, IRegistryKey interface [Audio Devices], QueryKey method, audmp-routines_88fe19d0-095e-4f70-b8aa-a0c908600296.xml, QueryKey method [Audio Devices], portcls/IRegistryKey::QueryKey, QueryKey method [Audio Devices], IRegistryKey interface, IRegistryKey::QueryKey
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: portcls.h
+req.include-header: Portcls.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: portcls.h
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	portcls.h
+apiname:
+-	IRegistryKey.QueryKey
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

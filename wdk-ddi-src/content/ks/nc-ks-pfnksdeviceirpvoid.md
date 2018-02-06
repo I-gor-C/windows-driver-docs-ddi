@@ -1,41 +1,46 @@
 ---
-UID : NC:ks.PFNKSDEVICEIRPVOID
-title : PFNKSDEVICEIRPVOID
-author : windows-driver-content
-description : An AVStream minidriver's IRP handling routine is called when these IRPs are dispatched by the device.IRP_MN_CANCEL_STOP_DEVICEIRP_MN_CANCEL_REMOVE_DEVICEIRP_MN_REMOVE_DEVICEIRP_MN_STOP_DEVICEIRP_MN_SURPRISE_REMOVAL
-old-location : stream\avstrminidevicecancelstop.htm
-old-project : stream
-ms.assetid : 7c3cb6e2-707a-4f8d-84b7-fce1354c06af
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.avstrminidevicecancelstop, AVStrMiniDeviceCancelStop, MyAVStrMiniDeviceIRP routine [Streaming Media Devices], MyAVStrMiniDeviceIRP, PFNKSDEVICEIRPVOID, PFNKSDEVICEIRPVOID, ks/MyAVStrMiniDeviceIRP, avstclbk_5b19ddf6-52f4-4d93-b5e1-7d7b5a41fe8b.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KEYWORDSELECTOR
+UID: NC:ks.PFNKSDEVICEIRPVOID
+title: PFNKSDEVICEIRPVOID
+author: windows-driver-content
+description: An AVStream minidriver's IRP handling routine is called when these IRPs are dispatched by the device.IRP_MN_CANCEL_STOP_DEVICEIRP_MN_CANCEL_REMOVE_DEVICEIRP_MN_REMOVE_DEVICEIRP_MN_STOP_DEVICEIRP_MN_SURPRISE_REMOVAL
+old-location: stream\avstrminidevicecancelstop.htm
+old-project: stream
+ms.assetid: 7c3cb6e2-707a-4f8d-84b7-fce1354c06af
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.avstrminidevicecancelstop, AVStrMiniDeviceCancelStop, MyAVStrMiniDeviceIRP routine [Streaming Media Devices], MyAVStrMiniDeviceIRP, PFNKSDEVICEIRPVOID, PFNKSDEVICEIRPVOID, ks/MyAVStrMiniDeviceIRP, avstclbk_5b19ddf6-52f4-4d93-b5e1-7d7b5a41fe8b.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	ks.h
+apiname:
+-	MyAVStrMiniDeviceIRP
+product: Windows
+targetos: Windows
+req.typenames: KEYWORDSELECTOR
 ---
 
 

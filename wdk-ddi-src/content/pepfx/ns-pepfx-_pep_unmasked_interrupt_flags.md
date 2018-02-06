@@ -1,41 +1,46 @@
 ---
-UID : NS:pepfx._PEP_UNMASKED_INTERRUPT_FLAGS
-title : "_PEP_UNMASKED_INTERRUPT_FLAGS"
-author : windows-driver-content
-description : The PEP_UNMASKED_INTERRUPT_FLAGS union indicates whether an unmasked interrupt source is a primary interrupt or a secondary interrupt.
-old-location : kernel\pep_unmasked_interrupt_flags.htm
-old-project : kernel
-ms.assetid : A385FBF9-2222-49E0-A708-1638C0D2FF7A
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : pepfx/PEP_UNMASKED_INTERRUPT_FLAGS, PEP_UNMASKED_INTERRUPT_FLAGS union [Kernel-Mode Driver Architecture], PEP_UNMASKED_INTERRUPT_FLAGS, kernel.pep_unmasked_interrupt_flags, _PEP_UNMASKED_INTERRUPT_FLAGS, *PPEP_UNMASKED_INTERRUPT_FLAGS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : pepfx.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with Windows 10.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPEP_UNMASKED_INTERRUPT_FLAGS, PEP_UNMASKED_INTERRUPT_FLAGS"
+UID: NS:pepfx._PEP_UNMASKED_INTERRUPT_FLAGS
+title: "_PEP_UNMASKED_INTERRUPT_FLAGS"
+author: windows-driver-content
+description: The PEP_UNMASKED_INTERRUPT_FLAGS union indicates whether an unmasked interrupt source is a primary interrupt or a secondary interrupt.
+old-location: kernel\pep_unmasked_interrupt_flags.htm
+old-project: kernel
+ms.assetid: A385FBF9-2222-49E0-A708-1638C0D2FF7A
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: pepfx/PEP_UNMASKED_INTERRUPT_FLAGS, PEP_UNMASKED_INTERRUPT_FLAGS union [Kernel-Mode Driver Architecture], PEP_UNMASKED_INTERRUPT_FLAGS, kernel.pep_unmasked_interrupt_flags, _PEP_UNMASKED_INTERRUPT_FLAGS, *PPEP_UNMASKED_INTERRUPT_FLAGS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: pepfx.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows 10.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	pepfx.h
+apiname:
+-	PEP_UNMASKED_INTERRUPT_FLAGS
+product: Windows
+targetos: Windows
+req.typenames: "*PPEP_UNMASKED_INTERRUPT_FLAGS, PEP_UNMASKED_INTERRUPT_FLAGS"
 ---
 
 # _PEP_UNMASKED_INTERRUPT_FLAGS structure

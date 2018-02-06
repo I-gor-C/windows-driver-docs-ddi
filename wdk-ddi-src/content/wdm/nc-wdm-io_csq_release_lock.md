@@ -1,42 +1,47 @@
 ---
-UID : NC:wdm.IO_CSQ_RELEASE_LOCK
-title : IO_CSQ_RELEASE_LOCK
-author : windows-driver-content
-description : The CsqReleaseLock routine is used by the system to release the lock that was acquired using CsqAcquireLock.
-old-location : kernel\csqreleaselock.htm
-old-project : kernel
-ms.assetid : 484cbb69-0adc-4d31-94c2-930ae747a431
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.csqreleaselock, CsqReleaseLock routine [Kernel-Mode Driver Architecture], CsqReleaseLock, IO_CSQ_RELEASE_LOCK, IO_CSQ_RELEASE_LOCK, wdm/CsqReleaseLock, DrvrRtns_054ce175-3354-4b0e-9578-19bab44d39ca.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
-req.product : Windows 10 or later.
+UID: NC:wdm.IO_CSQ_RELEASE_LOCK
+title: IO_CSQ_RELEASE_LOCK
+author: windows-driver-content
+description: The CsqReleaseLock routine is used by the system to release the lock that was acquired using CsqAcquireLock.
+old-location: kernel\csqreleaselock.htm
+old-project: kernel
+ms.assetid: 484cbb69-0adc-4d31-94c2-930ae747a431
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.csqreleaselock, CsqReleaseLock routine [Kernel-Mode Driver Architecture], CsqReleaseLock, IO_CSQ_RELEASE_LOCK, IO_CSQ_RELEASE_LOCK, wdm/CsqReleaseLock, DrvrRtns_054ce175-3354-4b0e-9578-19bab44d39ca.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Wdm.h
+apiname:
+-	CsqReleaseLock
+product: Windows
+targetos: Windows
+req.typenames: WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+req.product: Windows 10 or later.
 ---
 
 

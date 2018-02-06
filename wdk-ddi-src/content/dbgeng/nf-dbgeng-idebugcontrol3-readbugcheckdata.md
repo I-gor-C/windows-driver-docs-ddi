@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugControl3.ReadBugCheckData
-title : IDebugControl3::ReadBugCheckData method
-author : windows-driver-content
-description : The ReadBugCheckData method reads the kernel bug check code and related parameters.
-old-location : debugger\readbugcheckdata.htm
-old-project : debugger
-ms.assetid : 3ede32f5-9671-4f38-a33f-96536300267b
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : ReadBugCheckData method [Windows Debugging], IDebugControl interface, ReadBugCheckData method [Windows Debugging], IDebugControl3 interface, IDebugControl::ReadBugCheckData, ReadBugCheckData method [Windows Debugging], IDebugControl2 interface, dbgeng/IDebugControl3::ReadBugCheckData, IDebugControl3 interface [Windows Debugging], ReadBugCheckData method, IDebugControl3::ReadBugCheckData, IDebugControl3, ReadBugCheckData, IDebugControl2 interface [Windows Debugging], ReadBugCheckData method, dbgeng/IDebugControl2::ReadBugCheckData, ReadBugCheckData method [Windows Debugging], debugger.readbugcheckdata, IDebugControl_d96bd559-1a82-4d5d-8aa8-7a32242f2b68.xml, IDebugControl interface [Windows Debugging], ReadBugCheckData method, IDebugControl2::ReadBugCheckData, dbgeng/IDebugControl::ReadBugCheckData
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl3.ReadBugCheckData
+title: IDebugControl3::ReadBugCheckData method
+author: windows-driver-content
+description: The ReadBugCheckData method reads the kernel bug check code and related parameters.
+old-location: debugger\readbugcheckdata.htm
+old-project: debugger
+ms.assetid: 3ede32f5-9671-4f38-a33f-96536300267b
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: ReadBugCheckData method [Windows Debugging], IDebugControl interface, ReadBugCheckData method [Windows Debugging], IDebugControl3 interface, IDebugControl::ReadBugCheckData, ReadBugCheckData method [Windows Debugging], IDebugControl2 interface, dbgeng/IDebugControl3::ReadBugCheckData, IDebugControl3 interface [Windows Debugging], ReadBugCheckData method, IDebugControl3::ReadBugCheckData, IDebugControl3, ReadBugCheckData, IDebugControl2 interface [Windows Debugging], ReadBugCheckData method, dbgeng/IDebugControl2::ReadBugCheckData, ReadBugCheckData method [Windows Debugging], debugger.readbugcheckdata, IDebugControl_d96bd559-1a82-4d5d-8aa8-7a32242f2b68.xml, IDebugControl interface [Windows Debugging], ReadBugCheckData method, IDebugControl2::ReadBugCheckData, dbgeng/IDebugControl::ReadBugCheckData
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl.ReadBugCheckData
+-	IDebugControl2.ReadBugCheckData
+-	IDebugControl3.ReadBugCheckData
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

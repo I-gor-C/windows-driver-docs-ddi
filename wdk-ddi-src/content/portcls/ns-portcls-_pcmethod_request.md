@@ -1,41 +1,46 @@
 ---
-UID : NS:portcls._PCMETHOD_REQUEST
-title : "_PCMETHOD_REQUEST"
-author : windows-driver-content
-description : The PCMETHOD_REQUEST structure specifies a method request.
-old-location : audio\pcmethod_request.htm
-old-project : audio
-ms.assetid : aa48330b-93f0-4fb2-bb36-4e9050f19be5
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : PPCMETHOD_REQUEST, PCMETHOD_REQUEST structure [Audio Devices], audio.pcmethod_request, *PPCMETHOD_REQUEST, portcls/PPCMETHOD_REQUEST, audpc-struct_08efa6de-5d0e-445b-9402-563604dd8d5d.xml, PCMETHOD_REQUEST, portcls/PCMETHOD_REQUEST, _PCMETHOD_REQUEST, PPCMETHOD_REQUEST structure pointer [Audio Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : portcls.h
-req.include-header : Portcls.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPCMETHOD_REQUEST, PCMETHOD_REQUEST"
+UID: NS:portcls._PCMETHOD_REQUEST
+title: "_PCMETHOD_REQUEST"
+author: windows-driver-content
+description: The PCMETHOD_REQUEST structure specifies a method request.
+old-location: audio\pcmethod_request.htm
+old-project: audio
+ms.assetid: aa48330b-93f0-4fb2-bb36-4e9050f19be5
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: PPCMETHOD_REQUEST, PCMETHOD_REQUEST structure [Audio Devices], audio.pcmethod_request, *PPCMETHOD_REQUEST, portcls/PPCMETHOD_REQUEST, audpc-struct_08efa6de-5d0e-445b-9402-563604dd8d5d.xml, PCMETHOD_REQUEST, portcls/PCMETHOD_REQUEST, _PCMETHOD_REQUEST, PPCMETHOD_REQUEST structure pointer [Audio Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: portcls.h
+req.include-header: Portcls.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	portcls.h
+apiname:
+-	PCMETHOD_REQUEST
+product: Windows
+targetos: Windows
+req.typenames: "*PPCMETHOD_REQUEST, PCMETHOD_REQUEST"
 ---
 
 # _PCMETHOD_REQUEST structure

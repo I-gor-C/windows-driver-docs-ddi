@@ -1,42 +1,47 @@
 ---
-UID : NS:scsi._VPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE
-title : "_VPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE"
-author : windows-driver-content
-description : Note  This structure is for internal use only and should not be called from your code. .
-old-location : storage\vpd_zoned_block_device_characteristics_page.htm
-old-project : storage
-ms.assetid : 9b1f83fd-e367-4b0d-8f93-24f35d9a5fd8
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.vpd_zoned_block_device_characteristics_page, PVPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE, _VPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE, scsi/VPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE, PVPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE structure pointer [Storage Devices], VPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE structure [Storage Devices], scsi/PVPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE, *PVPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE, VPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : scsi.h
-req.include-header : Minitape.h, Storport.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE, *PVPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE
-req.product : Windows 10 or later.
+UID: NS:scsi._VPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE
+title: "_VPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE"
+author: windows-driver-content
+description: Note  This structure is for internal use only and should not be called from your code. .
+old-location: storage\vpd_zoned_block_device_characteristics_page.htm
+old-project: storage
+ms.assetid: 9b1f83fd-e367-4b0d-8f93-24f35d9a5fd8
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.vpd_zoned_block_device_characteristics_page, PVPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE, _VPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE, scsi/VPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE, PVPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE structure pointer [Storage Devices], VPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE structure [Storage Devices], scsi/PVPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE, *PVPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE, VPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: scsi.h
+req.include-header: Minitape.h, Storport.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	scsi.h
+apiname:
+-	VPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE
+product: Windows
+targetos: Windows
+req.typenames: VPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE, *PVPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE
+req.product: Windows 10 or later.
 ---
 
 # _VPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE structure

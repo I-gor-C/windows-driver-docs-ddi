@@ -1,41 +1,46 @@
 ---
-UID : NS:ks.KSALLOCATOR_FRAMING_EX
-title : KSALLOCATOR_FRAMING_EX
-author : windows-driver-content
-description : The KSALLOCATOR_FRAMING_EX structure is the AVStream replacement for KSALLOCATOR_FRAMING. KSALLOCATOR_FRAMING_EX defines allocator requirements on a pin in a kernel level filter.
-old-location : stream\ksallocator_framing_ex.htm
-old-project : stream
-ms.assetid : 39101009-ba03-472b-8664-d00c7a5cd335
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.ksallocator_framing_ex, *PKSALLOCATOR_FRAMING_EX, KSALLOCATOR_FRAMING_EX structure [Streaming Media Devices], ks/KSALLOCATOR_FRAMING_EX, PKSALLOCATOR_FRAMING_EX, ks-struct_d2aa8aab-1778-4383-b524-d52e4dd6c4c2.xml, PKSALLOCATOR_FRAMING_EX structure pointer [Streaming Media Devices], KSALLOCATOR_FRAMING_EX, ks/PKSALLOCATOR_FRAMING_EX
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKSALLOCATOR_FRAMING_EX, KSALLOCATOR_FRAMING_EX"
+UID: NS:ks.KSALLOCATOR_FRAMING_EX
+title: KSALLOCATOR_FRAMING_EX
+author: windows-driver-content
+description: The KSALLOCATOR_FRAMING_EX structure is the AVStream replacement for KSALLOCATOR_FRAMING. KSALLOCATOR_FRAMING_EX defines allocator requirements on a pin in a kernel level filter.
+old-location: stream\ksallocator_framing_ex.htm
+old-project: stream
+ms.assetid: 39101009-ba03-472b-8664-d00c7a5cd335
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.ksallocator_framing_ex, *PKSALLOCATOR_FRAMING_EX, KSALLOCATOR_FRAMING_EX structure [Streaming Media Devices], ks/KSALLOCATOR_FRAMING_EX, PKSALLOCATOR_FRAMING_EX, ks-struct_d2aa8aab-1778-4383-b524-d52e4dd6c4c2.xml, PKSALLOCATOR_FRAMING_EX structure pointer [Streaming Media Devices], KSALLOCATOR_FRAMING_EX, ks/PKSALLOCATOR_FRAMING_EX
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	KSALLOCATOR_FRAMING_EX
+product: Windows
+targetos: Windows
+req.typenames: "*PKSALLOCATOR_FRAMING_EX, KSALLOCATOR_FRAMING_EX"
 ---
 
 # KSALLOCATOR_FRAMING_EX structure

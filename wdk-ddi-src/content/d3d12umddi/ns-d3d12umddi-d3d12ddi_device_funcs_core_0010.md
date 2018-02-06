@@ -1,41 +1,46 @@
 ---
-UID : NS:d3d12umddi.D3D12DDI_DEVICE_FUNCS_CORE_0010
-title : D3D12DDI_DEVICE_FUNCS_CORE_0010
-author : windows-driver-content
-description : Contains core functions.
-old-location : display\d3d12ddi_device_funcs_core_0010.htm
-old-project : display
-ms.assetid : 87B4873E-DD44-47E9-8E6A-5BA91218188F
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.d3d12ddi_device_funcs_core_0010, d3d12umddi/D3D12DDI_DEVICE_FUNCS_CORE_0010, D3D12DDI_DEVICE_FUNCS_CORE_0010, D3D12DDI_DEVICE_FUNCS_CORE_0010 structure [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3d12umddi.h
-req.include-header : D3d12umddi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3D12DDI_DEVICE_FUNCS_CORE_0010
+UID: NS:d3d12umddi.D3D12DDI_DEVICE_FUNCS_CORE_0010
+title: D3D12DDI_DEVICE_FUNCS_CORE_0010
+author: windows-driver-content
+description: Contains core functions.
+old-location: display\d3d12ddi_device_funcs_core_0010.htm
+old-project: display
+ms.assetid: 87B4873E-DD44-47E9-8E6A-5BA91218188F
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.d3d12ddi_device_funcs_core_0010, d3d12umddi/D3D12DDI_DEVICE_FUNCS_CORE_0010, D3D12DDI_DEVICE_FUNCS_CORE_0010, D3D12DDI_DEVICE_FUNCS_CORE_0010 structure [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3d12umddi.h
+req.include-header: D3d12umddi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	D3d12umddi.h
+apiname:
+-	D3D12DDI_DEVICE_FUNCS_CORE_0010
+product: Windows
+targetos: Windows
+req.typenames: D3D12DDI_DEVICE_FUNCS_CORE_0010
 ---
 
 # D3D12DDI_DEVICE_FUNCS_CORE_0010 structure

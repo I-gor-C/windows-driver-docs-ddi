@@ -1,42 +1,47 @@
 ---
-UID : NF:video.VideoPortReleaseCommonBuffer
-title : VideoPortReleaseCommonBuffer function
-author : windows-driver-content
-description : The VideoPortReleaseCommonBuffer function frees a common buffer that was previously allocated by VideoPortAllocateCommonBuffer.
-old-location : display\videoportreleasecommonbuffer.htm
-old-project : display
-ms.assetid : b3733de1-63ef-43b8-b669-dbe7e573b499
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : VideoPortReleaseCommonBuffer, VideoPortReleaseCommonBuffer function [Display Devices], display.videoportreleasecommonbuffer, VideoPort_Functions_78edd589-bea5-43e3-8658-8c6c95a1f0f7.xml, video/VideoPortReleaseCommonBuffer
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : video.h
-req.include-header : Video.h, Ntdef.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows XP and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Videoprt.lib
-req.dll : Videoprt.sys
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_PORT_SERVICES
-req.product : Windows 10 or later.
+UID: NF:video.VideoPortReleaseCommonBuffer
+title: VideoPortReleaseCommonBuffer function
+author: windows-driver-content
+description: The VideoPortReleaseCommonBuffer function frees a common buffer that was previously allocated by VideoPortAllocateCommonBuffer.
+old-location: display\videoportreleasecommonbuffer.htm
+old-project: display
+ms.assetid: b3733de1-63ef-43b8-b669-dbe7e573b499
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: VideoPortReleaseCommonBuffer, VideoPortReleaseCommonBuffer function [Display Devices], display.videoportreleasecommonbuffer, VideoPort_Functions_78edd589-bea5-43e3-8658-8c6c95a1f0f7.xml, video/VideoPortReleaseCommonBuffer
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: video.h
+req.include-header: Video.h, Ntdef.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows XP and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Videoprt.lib
+req.dll: Videoprt.sys
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Videoprt.sys
+apiname:
+-	VideoPortReleaseCommonBuffer
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_PORT_SERVICES
+req.product: Windows 10 or later.
 ---
 
 

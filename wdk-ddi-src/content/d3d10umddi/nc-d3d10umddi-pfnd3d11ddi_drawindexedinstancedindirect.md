@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3D11DDI_DRAWINDEXEDINSTANCEDINDIRECT
-title : PFND3D11DDI_DRAWINDEXEDINSTANCEDINDIRECT
-author : windows-driver-content
-description : The DrawIndexedInstancedIndirect function draws particular instances of indexed primitives.
-old-location : display\drawindexedinstancedindirect.htm
-old-project : display
-ms.assetid : 3debfb11-4de9-456b-a094-feb2f68e96a5
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.drawindexedinstancedindirect, DrawIndexedInstancedIndirect callback function [Display Devices], DrawIndexedInstancedIndirect, PFND3D11DDI_DRAWINDEXEDINSTANCEDINDIRECT, PFND3D11DDI_DRAWINDEXEDINSTANCEDINDIRECT, d3d10umddi/DrawIndexedInstancedIndirect, UserModeDisplayDriverDx11_Functions_18c492b3-4d4b-413c-82c3-7290af5aade6.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : DrawIndexedInstancedIndirect is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3D11DDI_DRAWINDEXEDINSTANCEDINDIRECT
+title: PFND3D11DDI_DRAWINDEXEDINSTANCEDINDIRECT
+author: windows-driver-content
+description: The DrawIndexedInstancedIndirect function draws particular instances of indexed primitives.
+old-location: display\drawindexedinstancedindirect.htm
+old-project: display
+ms.assetid: 3debfb11-4de9-456b-a094-feb2f68e96a5
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.drawindexedinstancedindirect, DrawIndexedInstancedIndirect callback function [Display Devices], DrawIndexedInstancedIndirect, PFND3D11DDI_DRAWINDEXEDINSTANCEDINDIRECT, PFND3D11DDI_DRAWINDEXEDINSTANCEDINDIRECT, d3d10umddi/DrawIndexedInstancedIndirect, UserModeDisplayDriverDx11_Functions_18c492b3-4d4b-413c-82c3-7290af5aade6.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: DrawIndexedInstancedIndirect is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	D3d10umddi.h
+apiname:
+-	DrawIndexedInstancedIndirect
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

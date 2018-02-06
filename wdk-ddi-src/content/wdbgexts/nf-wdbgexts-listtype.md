@@ -1,42 +1,47 @@
 ---
-UID : NF:wdbgexts.ListType
-title : ListType function
-author : windows-driver-content
-description : The ListType function calls a specified callback function for every element in a linked list.
-old-location : debugger\listtype.htm
-old-project : debugger
-ms.assetid : 5c250438-8805-4f45-b08f-65ec87b3e61a
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : WdbgExts_Ref_aa50fe48-2a66-4d5e-aec7-d225966cfab2.xml, debugger.listtype, ListType function [Windows Debugging], ListType, wdbgexts/ListType
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdbgexts.h
-req.include-header : Wdbgexts.h, Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXT_TDOP
-req.product : Windows 10 or later.
+UID: NF:wdbgexts.ListType
+title: ListType function
+author: windows-driver-content
+description: The ListType function calls a specified callback function for every element in a linked list.
+old-location: debugger\listtype.htm
+old-project: debugger
+ms.assetid: 5c250438-8805-4f45-b08f-65ec87b3e61a
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: WdbgExts_Ref_aa50fe48-2a66-4d5e-aec7-d225966cfab2.xml, debugger.listtype, ListType function [Windows Debugging], ListType, wdbgexts/ListType
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdbgexts.h
+req.include-header: Wdbgexts.h, Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdbgexts.h
+apiname:
+-	ListType
+product: Windows
+targetos: Windows
+req.typenames: EXT_TDOP
+req.product: Windows 10 or later.
 ---
 
 

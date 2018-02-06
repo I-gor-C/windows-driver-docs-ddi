@@ -1,41 +1,46 @@
 ---
-UID : NS:iscsiop._ScsiReadCapacity_OUT
-title : "_ScsiReadCapacity_OUT"
-author : windows-driver-content
-description : The ScsiReadCapacity_OUT structure holds the output data for the ScsiReadCapacity method.
-old-location : storage\scsireadcapacity_out.htm
-old-project : storage
-ms.assetid : 3330379f-e484-4fd7-b914-fc969398b56b
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : "_ScsiReadCapacity_OUT, iscsiop/ScsiReadCapacity_OUT, storage.scsireadcapacity_out, structs-iSCSI_48750b99-26df-4890-b906-fa487efc3797.xml, iscsiop/PScsiReadCapacity_OUT, PScsiReadCapacity_OUT structure pointer [Storage Devices], ScsiReadCapacity_OUT, *PScsiReadCapacity_OUT, PScsiReadCapacity_OUT, ScsiReadCapacity_OUT structure [Storage Devices]"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : iscsiop.h
-req.include-header : Iscsiop.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : ScsiReadCapacity_OUT, *PScsiReadCapacity_OUT
+UID: NS:iscsiop._ScsiReadCapacity_OUT
+title: "_ScsiReadCapacity_OUT"
+author: windows-driver-content
+description: The ScsiReadCapacity_OUT structure holds the output data for the ScsiReadCapacity method.
+old-location: storage\scsireadcapacity_out.htm
+old-project: storage
+ms.assetid: 3330379f-e484-4fd7-b914-fc969398b56b
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: "_ScsiReadCapacity_OUT, iscsiop/ScsiReadCapacity_OUT, storage.scsireadcapacity_out, structs-iSCSI_48750b99-26df-4890-b906-fa487efc3797.xml, iscsiop/PScsiReadCapacity_OUT, PScsiReadCapacity_OUT structure pointer [Storage Devices], ScsiReadCapacity_OUT, *PScsiReadCapacity_OUT, PScsiReadCapacity_OUT, ScsiReadCapacity_OUT structure [Storage Devices]"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: iscsiop.h
+req.include-header: Iscsiop.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	iscsiop.h
+apiname:
+-	ScsiReadCapacity_OUT
+product: Windows
+targetos: Windows
+req.typenames: ScsiReadCapacity_OUT, *PScsiReadCapacity_OUT
 ---
 
 # _ScsiReadCapacity_OUT structure

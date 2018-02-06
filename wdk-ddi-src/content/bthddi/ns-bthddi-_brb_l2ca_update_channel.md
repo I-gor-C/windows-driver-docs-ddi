@@ -1,41 +1,46 @@
 ---
-UID : NS:bthddi._BRB_L2CA_UPDATE_CHANNEL
-title : "_BRB_L2CA_UPDATE_CHANNEL"
-author : windows-driver-content
-description : The _BRB_L2CA_UPDATE_CHANNEL structure describes an update to the link characteristics of an open L2CAP channel to a remote device or to ascertain when certain channel attributes have changed.
-old-location : bltooth\_brb_l2ca_update_channel.htm
-old-project : bltooth
-ms.assetid : 0186dc75-6d37-4adb-8337-6daa634bd936
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : bthddi/_BRB_L2CA_UPDATE_CHANNEL, _BRB_L2CA_UPDATE_CHANNEL, _BRB_L2CA_UPDATE_CHANNEL structure [Bluetooth Devices], bth_structs_7ee8d85e-5cf3-4820-a325-6abe0777b22a.xml, bltooth._brb_l2ca_update_channel
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : bthddi.h
-req.include-header : Bthddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Versions:\_Supported in Windows Vista, and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback   function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access   paged memory)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NS:bthddi._BRB_L2CA_UPDATE_CHANNEL
+title: "_BRB_L2CA_UPDATE_CHANNEL"
+author: windows-driver-content
+description: The _BRB_L2CA_UPDATE_CHANNEL structure describes an update to the link characteristics of an open L2CAP channel to a remote device or to ascertain when certain channel attributes have changed.
+old-location: bltooth\_brb_l2ca_update_channel.htm
+old-project: bltooth
+ms.assetid: 0186dc75-6d37-4adb-8337-6daa634bd936
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: bthddi/_BRB_L2CA_UPDATE_CHANNEL, _BRB_L2CA_UPDATE_CHANNEL, _BRB_L2CA_UPDATE_CHANNEL structure [Bluetooth Devices], bth_structs_7ee8d85e-5cf3-4820-a325-6abe0777b22a.xml, bltooth._brb_l2ca_update_channel
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: bthddi.h
+req.include-header: Bthddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Versions:\_Supported in Windows Vista, and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback   function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access   paged memory)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	bthddi.h
+apiname:
+-	_BRB_L2CA_UPDATE_CHANNEL
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 # _BRB_L2CA_UPDATE_CHANNEL structure

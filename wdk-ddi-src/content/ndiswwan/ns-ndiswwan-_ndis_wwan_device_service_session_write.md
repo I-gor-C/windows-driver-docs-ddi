@@ -1,41 +1,46 @@
 ---
-UID : NS:ndiswwan._NDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE
-title : "_NDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE"
-author : windows-driver-content
-description : The NDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE structure represents device service session data to be sent from the host to the MB device.
-old-location : netvista\ndis_wwan_device_service_session_write.htm
-old-project : netvista
-ms.assetid : BF4A7BF6-6C39-4F75-BF76-848FF9241E52
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : "_NDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE, *PNDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE, ndiswwan/NDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE, NDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE, ndiswwan/PNDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE, PNDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE structure pointer [Network Drivers Starting with Windows Vista], NDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE structure [Network Drivers Starting with Windows Vista], netvista.ndis_wwan_device_service_session_write, PNDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndiswwan.h
-req.include-header : Ndiswwan.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with  Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE, *PNDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE
+UID: NS:ndiswwan._NDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE
+title: "_NDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE"
+author: windows-driver-content
+description: The NDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE structure represents device service session data to be sent from the host to the MB device.
+old-location: netvista\ndis_wwan_device_service_session_write.htm
+old-project: netvista
+ms.assetid: BF4A7BF6-6C39-4F75-BF76-848FF9241E52
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: "_NDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE, *PNDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE, ndiswwan/NDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE, NDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE, ndiswwan/PNDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE, PNDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE structure pointer [Network Drivers Starting with Windows Vista], NDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE structure [Network Drivers Starting with Windows Vista], netvista.ndis_wwan_device_service_session_write, PNDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndiswwan.h
+req.include-header: Ndiswwan.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with  Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndiswwan.h
+apiname:
+-	NDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE
+product: Windows
+targetos: Windows
+req.typenames: NDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE, *PNDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE
 ---
 
 # _NDIS_WWAN_DEVICE_SERVICE_SESSION_WRITE structure

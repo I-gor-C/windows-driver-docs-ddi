@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddcdrm._CDROM_TOC
-title : "_CDROM_TOC"
-author : windows-driver-content
-description : Device control IRPs with a control code of IOCTL_CDROM_READ_TOC_EX and a format of CDROM_READ_TOC_EX_FORMAT_TOC return their output data in this structure followed by a series of TRACK_DATA structures.
-old-location : storage\cdrom_toc.htm
-old-project : storage
-ms.assetid : 84312199-5055-41a1-9aa2-4ee91a15d5bf
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : ntddcdrm/PCDROM_TOC, ntddcdrm/CDROM_TOC, PCDROM_TOC, *PCDROM_TOC, _CDROM_TOC, CDROM_TOC, PCDROM_TOC structure pointer [Storage Devices], structs-CD-ROM_943f0104-ee61-4f40-a1a1-8392a15f3fd1.xml, storage.cdrom_toc, CDROM_TOC structure [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddcdrm.h
-req.include-header : Ntddcdrm.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : CDROM_TOC, *PCDROM_TOC
+UID: NS:ntddcdrm._CDROM_TOC
+title: "_CDROM_TOC"
+author: windows-driver-content
+description: Device control IRPs with a control code of IOCTL_CDROM_READ_TOC_EX and a format of CDROM_READ_TOC_EX_FORMAT_TOC return their output data in this structure followed by a series of TRACK_DATA structures.
+old-location: storage\cdrom_toc.htm
+old-project: storage
+ms.assetid: 84312199-5055-41a1-9aa2-4ee91a15d5bf
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: ntddcdrm/PCDROM_TOC, ntddcdrm/CDROM_TOC, PCDROM_TOC, *PCDROM_TOC, _CDROM_TOC, CDROM_TOC, PCDROM_TOC structure pointer [Storage Devices], structs-CD-ROM_943f0104-ee61-4f40-a1a1-8392a15f3fd1.xml, storage.cdrom_toc, CDROM_TOC structure [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddcdrm.h
+req.include-header: Ntddcdrm.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddcdrm.h
+apiname:
+-	CDROM_TOC
+product: Windows
+targetos: Windows
+req.typenames: CDROM_TOC, *PCDROM_TOC
 ---
 
 # _CDROM_TOC structure

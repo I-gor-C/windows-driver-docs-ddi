@@ -1,41 +1,49 @@
 ---
-UID : NF:ntstrsafe.RtlStringCchCopyNA
-title : RtlStringCchCopyNA function
-author : windows-driver-content
-description : The RtlStringCchCopyNW and RtlStringCchCopyNA functions copy a character-counted string to a buffer while limiting the size of the copied string.
-old-location : kernel\rtlstringcchcopyn.htm
-old-project : kernel
-ms.assetid : 86ec1a98-d70f-437c-9c8b-005bf78375ba
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : RtlStringCchCopyNW, kernel.rtlstringcchcopyn, RtlStringCchCopyNA, safestrings_6ecbc673-80c3-4568-a6e3-96865035bfed.xml, RtlStringCchCopyNW function [Kernel-Mode Driver Architecture], ntstrsafe/RtlStringCchCopyNW, RtlStringCchCopyN
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntstrsafe.h
-req.include-header : Ntstrsafe.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows XP with Service Pack 1 (SP1) and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : RtlStringCchCopyNW (Unicode) and RtlStringCchCopyNW (ANSI)
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ntstrsafe.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : BATTERY_REPORTING_SCALE, *PBATTERY_REPORTING_SCALE
+UID: NF:ntstrsafe.RtlStringCchCopyNA
+title: RtlStringCchCopyNA function
+author: windows-driver-content
+description: The RtlStringCchCopyNW and RtlStringCchCopyNA functions copy a character-counted string to a buffer while limiting the size of the copied string.
+old-location: kernel\rtlstringcchcopyn.htm
+old-project: kernel
+ms.assetid: 86ec1a98-d70f-437c-9c8b-005bf78375ba
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: RtlStringCchCopyNW, kernel.rtlstringcchcopyn, RtlStringCchCopyNA, safestrings_6ecbc673-80c3-4568-a6e3-96865035bfed.xml, RtlStringCchCopyNW function [Kernel-Mode Driver Architecture], ntstrsafe/RtlStringCchCopyNW, RtlStringCchCopyN
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntstrsafe.h
+req.include-header: Ntstrsafe.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows XP with Service Pack 1 (SP1) and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: RtlStringCchCopyNW (Unicode) and RtlStringCchCopyNW (ANSI)
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ntstrsafe.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ntstrsafe.lib
+-	Ntstrsafe.dll
+apiname:
+-	RtlStringCchCopyNW
+-	RtlStringCchCopyNW
+-	RtlStringCchCopyNW
+product: Windows
+targetos: Windows
+req.typenames: BATTERY_REPORTING_SCALE, *PBATTERY_REPORTING_SCALE
 ---
 
 

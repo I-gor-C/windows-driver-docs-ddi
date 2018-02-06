@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddcdrm._CDROM_SET_STREAMING
-title : "_CDROM_SET_STREAMING"
-author : windows-driver-content
-description : The CDROM_SET_SPEED structure is used with the IOCTL_CDROM_SET_SPEED request to set the spindle speed of a CD-ROM drive during isochronous transfers that permit some data loss.
-old-location : storage\cdrom_set_streaming.htm
-old-project : storage
-ms.assetid : e5c2d421-5994-4f1d-9022-718500eef1a9
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : PCDROM_SET_STREAMING structure pointer [Storage Devices], storage.cdrom_set_streaming, ntddcdrm/PCDROM_SET_STREAMING, CDROM_SET_STREAMING, structs-CD-ROM_5157906e-31d2-42c7-8e90-cc673ed02510.xml, _CDROM_SET_STREAMING, *PCDROM_SET_STREAMING, CDROM_SET_STREAMING structure [Storage Devices], ntddcdrm/CDROM_SET_STREAMING, PCDROM_SET_STREAMING
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddcdrm.h
-req.include-header : Ntddcdrm.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PCDROM_SET_STREAMING, CDROM_SET_STREAMING"
+UID: NS:ntddcdrm._CDROM_SET_STREAMING
+title: "_CDROM_SET_STREAMING"
+author: windows-driver-content
+description: The CDROM_SET_SPEED structure is used with the IOCTL_CDROM_SET_SPEED request to set the spindle speed of a CD-ROM drive during isochronous transfers that permit some data loss.
+old-location: storage\cdrom_set_streaming.htm
+old-project: storage
+ms.assetid: e5c2d421-5994-4f1d-9022-718500eef1a9
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: PCDROM_SET_STREAMING structure pointer [Storage Devices], storage.cdrom_set_streaming, ntddcdrm/PCDROM_SET_STREAMING, CDROM_SET_STREAMING, structs-CD-ROM_5157906e-31d2-42c7-8e90-cc673ed02510.xml, _CDROM_SET_STREAMING, *PCDROM_SET_STREAMING, CDROM_SET_STREAMING structure [Storage Devices], ntddcdrm/CDROM_SET_STREAMING, PCDROM_SET_STREAMING
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddcdrm.h
+req.include-header: Ntddcdrm.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddcdrm.h
+apiname:
+-	CDROM_SET_STREAMING
+product: Windows
+targetos: Windows
+req.typenames: "*PCDROM_SET_STREAMING, CDROM_SET_STREAMING"
 ---
 
 # _CDROM_SET_STREAMING structure

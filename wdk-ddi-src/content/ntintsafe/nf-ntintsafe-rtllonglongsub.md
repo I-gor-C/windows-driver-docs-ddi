@@ -1,41 +1,46 @@
 ---
-UID : NF:ntintsafe.RtlLongLongSub
-title : RtlLongLongSub function
-author : windows-driver-content
-description : Subtracts one value of type LONGLONG from another.
-old-location : kernel\rtllonglongsub.htm
-old-project : kernel
-ms.assetid : A0D35ECE-5B7F-4F60-9178-75673C9A945F
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : RtlLongLongSub, RtlLongLongSub function [Kernel-Mode Driver Architecture], ntintsafe/RtlLongLongSub, kernel.rtllonglongsub
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntintsafe.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PUBLIC_OBJECT_TYPE_INFORMATION, *PPUBLIC_OBJECT_TYPE_INFORMATION
+UID: NF:ntintsafe.RtlLongLongSub
+title: RtlLongLongSub function
+author: windows-driver-content
+description: Subtracts one value of type LONGLONG from another.
+old-location: kernel\rtllonglongsub.htm
+old-project: kernel
+ms.assetid: A0D35ECE-5B7F-4F60-9178-75673C9A945F
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: RtlLongLongSub, RtlLongLongSub function [Kernel-Mode Driver Architecture], ntintsafe/RtlLongLongSub, kernel.rtllonglongsub
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntintsafe.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntintsafe.h
+apiname:
+-	RtlLongLongSub
+product: Windows
+targetos: Windows
+req.typenames: PUBLIC_OBJECT_TYPE_INFORMATION, *PPUBLIC_OBJECT_TYPE_INFORMATION
 ---
 
 

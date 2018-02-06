@@ -1,42 +1,47 @@
 ---
-UID : NS:wdm._PCI_COMMON_CONFIG
-title : "_PCI_COMMON_CONFIG"
-author : windows-driver-content
-description : The PCI_COMMON_CONFIG structure is obsolete.
-old-location : kernel\pci_common_config.htm
-old-project : kernel
-ms.assetid : 239d0c0a-e78e-40d5-b359-36910bdd9358
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.pci_common_config, wdm/PCI_COMMON_CONFIG, PCI_COMMON_CONFIG structure [Kernel-Mode Driver Architecture], PCI_COMMON_CONFIG, kstruct_c_42f21057-e812-4a4d-96c5-f1177a03982b.xml, wdm/PPCI_COMMON_CONFIG, PPCI_COMMON_CONFIG structure pointer [Kernel-Mode Driver Architecture], PPCI_COMMON_CONFIG, *PPCI_COMMON_CONFIG, _PCI_COMMON_CONFIG
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PCI_COMMON_CONFIG, *PPCI_COMMON_CONFIG
-req.product : Windows 10 or later.
+UID: NS:wdm._PCI_COMMON_CONFIG
+title: "_PCI_COMMON_CONFIG"
+author: windows-driver-content
+description: The PCI_COMMON_CONFIG structure is obsolete.
+old-location: kernel\pci_common_config.htm
+old-project: kernel
+ms.assetid: 239d0c0a-e78e-40d5-b359-36910bdd9358
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.pci_common_config, wdm/PCI_COMMON_CONFIG, PCI_COMMON_CONFIG structure [Kernel-Mode Driver Architecture], PCI_COMMON_CONFIG, kstruct_c_42f21057-e812-4a4d-96c5-f1177a03982b.xml, wdm/PPCI_COMMON_CONFIG, PPCI_COMMON_CONFIG structure pointer [Kernel-Mode Driver Architecture], PPCI_COMMON_CONFIG, *PPCI_COMMON_CONFIG, _PCI_COMMON_CONFIG
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	PCI_COMMON_CONFIG
+product: Windows
+targetos: Windows
+req.typenames: PCI_COMMON_CONFIG, *PPCI_COMMON_CONFIG
+req.product: Windows 10 or later.
 ---
 
 # _PCI_COMMON_CONFIG structure

@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfrequest.WdfRequestRetrieveUnsafeUserOutputBuffer
-title : WdfRequestRetrieveUnsafeUserOutputBuffer function
-author : windows-driver-content
-description : The WdfRequestRetrieveUnsafeUserOutputBuffer method retrieves an I/O request's output buffer, if the request's technique for accessing data buffers is neither buffered nor direct I/O.
-old-location : wdf\wdfrequestretrieveunsafeuseroutputbuffer.htm
-old-project : wdf
-ms.assetid : 7969f683-3426-4863-8afe-d9cbe490a4b5
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WdfRequestRetrieveUnsafeUserOutputBuffer, kmdf.wdfrequestretrieveunsafeuseroutputbuffer, wdf.wdfrequestretrieveunsafeuseroutputbuffer, DFRequestObjectRef_3f483887-e2fa-413d-b147-9f18fc092800.xml, wdfrequest/WdfRequestRetrieveUnsafeUserOutputBuffer, PFN_WDFREQUESTRETRIEVEUNSAFEUSEROUTPUTBUFFER, WdfRequestRetrieveUnsafeUserOutputBuffer method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfrequest.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : BufAfterReqCompletedIntIoctl, BufAfterReqCompletedIntIoctlA, BufAfterReqCompletedIoctl, BufAfterReqCompletedIoctlA, BufAfterReqCompletedRead, BufAfterReqCompletedReadA, BufAfterReqCompletedWrite, DriverCreate, InvalidReqAccess, InvalidReqAccessLocal, KmdfIrql, KmdfIrql2, OutputBufferAPI
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_REQUEST_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfrequest.WdfRequestRetrieveUnsafeUserOutputBuffer
+title: WdfRequestRetrieveUnsafeUserOutputBuffer function
+author: windows-driver-content
+description: The WdfRequestRetrieveUnsafeUserOutputBuffer method retrieves an I/O request's output buffer, if the request's technique for accessing data buffers is neither buffered nor direct I/O.
+old-location: wdf\wdfrequestretrieveunsafeuseroutputbuffer.htm
+old-project: wdf
+ms.assetid: 7969f683-3426-4863-8afe-d9cbe490a4b5
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WdfRequestRetrieveUnsafeUserOutputBuffer, kmdf.wdfrequestretrieveunsafeuseroutputbuffer, wdf.wdfrequestretrieveunsafeuseroutputbuffer, DFRequestObjectRef_3f483887-e2fa-413d-b147-9f18fc092800.xml, wdfrequest/WdfRequestRetrieveUnsafeUserOutputBuffer, PFN_WDFREQUESTRETRIEVEUNSAFEUSEROUTPUTBUFFER, WdfRequestRetrieveUnsafeUserOutputBuffer method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfrequest.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: BufAfterReqCompletedIntIoctl, BufAfterReqCompletedIntIoctlA, BufAfterReqCompletedIoctl, BufAfterReqCompletedIoctlA, BufAfterReqCompletedRead, BufAfterReqCompletedReadA, BufAfterReqCompletedWrite, DriverCreate, InvalidReqAccess, InvalidReqAccessLocal, KmdfIrql, KmdfIrql2, OutputBufferAPI
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfRequestRetrieveUnsafeUserOutputBuffer
+product: Windows
+targetos: Windows
+req.typenames: WDF_REQUEST_TYPE
+req.product: Windows 10 or later.
 ---
 
 

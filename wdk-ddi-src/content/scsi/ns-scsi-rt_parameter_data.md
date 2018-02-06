@@ -1,42 +1,47 @@
 ---
-UID : NS:scsi.RT_PARAMETER_DATA
-title : RT_PARAMETER_DATA
-author : windows-driver-content
-description : The RT_PARAMETER_DATA structure contains the parameter data for the report timestamp command.
-old-location : storage\rt_parameter_data.htm
-old-project : storage
-ms.assetid : EB23D502-87E4-48B1-B1DC-0B215AB361C8
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : scsi/PRT_PARAMETER_DATA, PRT_PARAMETER_DATA structure pointer [Storage Devices], *PRT_PARAMETER_DATA, scsi/RT_PARAMETER_DATA, PRT_PARAMETER_DATA, RT_PARAMETER_DATA structure [Storage Devices], storage.rt_parameter_data, RT_PARAMETER_DATA
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : scsi.h
-req.include-header : Minitape.h, Storport.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 10, version 1709 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PRT_PARAMETER_DATA, RT_PARAMETER_DATA"
-req.product : Windows 10 or later.
+UID: NS:scsi.RT_PARAMETER_DATA
+title: RT_PARAMETER_DATA
+author: windows-driver-content
+description: The RT_PARAMETER_DATA structure contains the parameter data for the report timestamp command.
+old-location: storage\rt_parameter_data.htm
+old-project: storage
+ms.assetid: EB23D502-87E4-48B1-B1DC-0B215AB361C8
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: scsi/PRT_PARAMETER_DATA, PRT_PARAMETER_DATA structure pointer [Storage Devices], *PRT_PARAMETER_DATA, scsi/RT_PARAMETER_DATA, PRT_PARAMETER_DATA, RT_PARAMETER_DATA structure [Storage Devices], storage.rt_parameter_data, RT_PARAMETER_DATA
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: scsi.h
+req.include-header: Minitape.h, Storport.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 10, version 1709 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	scsi.h
+apiname:
+-	RT_PARAMETER_DATA
+product: Windows
+targetos: Windows
+req.typenames: "*PRT_PARAMETER_DATA, RT_PARAMETER_DATA"
+req.product: Windows 10 or later.
 ---
 
 # RT_PARAMETER_DATA structure

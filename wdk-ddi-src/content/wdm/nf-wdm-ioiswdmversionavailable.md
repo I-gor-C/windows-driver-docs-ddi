@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.IoIsWdmVersionAvailable
-title : IoIsWdmVersionAvailable function
-author : windows-driver-content
-description : The IoIsWdmVersionAvailable routine checks whether a given WDM version is supported by the operating system.
-old-location : kernel\ioiswdmversionavailable.htm
-old-project : kernel
-ms.assetid : 80b72de0-02a6-4891-b74a-c41cb14fa629
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/IoIsWdmVersionAvailable, IoIsWdmVersionAvailable, IoIsWdmVersionAvailable routine [Kernel-Mode Driver Architecture], k104_775d6afa-6edd-4922-bdff-a8fe5d32bc3a.xml, kernel.ioiswdmversionavailable
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : IrqlIoPassive5, PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.IoIsWdmVersionAvailable
+title: IoIsWdmVersionAvailable function
+author: windows-driver-content
+description: The IoIsWdmVersionAvailable routine checks whether a given WDM version is supported by the operating system.
+old-location: kernel\ioiswdmversionavailable.htm
+old-project: kernel
+ms.assetid: 80b72de0-02a6-4891-b74a-c41cb14fa629
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/IoIsWdmVersionAvailable, IoIsWdmVersionAvailable, IoIsWdmVersionAvailable routine [Kernel-Mode Driver Architecture], k104_775d6afa-6edd-4922-bdff-a8fe5d32bc3a.xml, kernel.ioiswdmversionavailable
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: IrqlIoPassive5, PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoIsWdmVersionAvailable
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

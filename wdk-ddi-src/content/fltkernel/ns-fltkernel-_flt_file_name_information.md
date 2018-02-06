@@ -1,41 +1,46 @@
 ---
-UID : NS:fltkernel._FLT_FILE_NAME_INFORMATION
-title : "_FLT_FILE_NAME_INFORMATION"
-author : windows-driver-content
-description : The FLT_FILE_NAME_INFORMATION structure contains file name information.
-old-location : ifsk\flt_file_name_information.htm
-old-project : ifsk
-ms.assetid : 998a028a-7dd8-429a-8195-68d4b4b1b156
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : fltkernel/FLT_FILE_NAME_INFORMATION, fltkernel/PFLT_FILE_NAME_INFORMATION, _FLT_FILE_NAME_INFORMATION, FLT_FILE_NAME_INFORMATION structure [Installable File System Drivers], ifsk.flt_file_name_information, PFLT_FILE_NAME_INFORMATION, FltSystemStructures_0c108c25-effe-413b-9d2a-a215f4eebf37.xml, PFLT_FILE_NAME_INFORMATION structure pointer [Installable File System Drivers], *PFLT_FILE_NAME_INFORMATION, FLT_FILE_NAME_INFORMATION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FLT_FILE_NAME_INFORMATION, *PFLT_FILE_NAME_INFORMATION
+UID: NS:fltkernel._FLT_FILE_NAME_INFORMATION
+title: "_FLT_FILE_NAME_INFORMATION"
+author: windows-driver-content
+description: The FLT_FILE_NAME_INFORMATION structure contains file name information.
+old-location: ifsk\flt_file_name_information.htm
+old-project: ifsk
+ms.assetid: 998a028a-7dd8-429a-8195-68d4b4b1b156
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: fltkernel/FLT_FILE_NAME_INFORMATION, fltkernel/PFLT_FILE_NAME_INFORMATION, _FLT_FILE_NAME_INFORMATION, FLT_FILE_NAME_INFORMATION structure [Installable File System Drivers], ifsk.flt_file_name_information, PFLT_FILE_NAME_INFORMATION, FltSystemStructures_0c108c25-effe-413b-9d2a-a215f4eebf37.xml, PFLT_FILE_NAME_INFORMATION structure pointer [Installable File System Drivers], *PFLT_FILE_NAME_INFORMATION, FLT_FILE_NAME_INFORMATION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	fltkernel.h
+apiname:
+-	FLT_FILE_NAME_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: FLT_FILE_NAME_INFORMATION, *PFLT_FILE_NAME_INFORMATION
 ---
 
 # _FLT_FILE_NAME_INFORMATION structure

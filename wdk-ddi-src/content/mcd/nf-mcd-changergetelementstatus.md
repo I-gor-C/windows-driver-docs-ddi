@@ -1,41 +1,46 @@
 ---
-UID : NF:mcd.ChangerGetElementStatus
-title : ChangerGetElementStatus function
-author : windows-driver-content
-description : ChangerGetElementStatus handles the device-specific aspects of a device-control IRP with the IOCTL code IOCTL_CHANGER_GET_ELEMENT_STATUS.
-old-location : storage\changergetelementstatus.htm
-old-project : storage
-ms.assetid : 8114d029-fe6e-4466-9e54-5ceadef96949
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : mcd/ChangerGetElementStatus, chgrmini_b0e442c7-18c4-4086-b036-3db43177f6e5.xml, ChangerGetElementStatus function [Storage Devices], storage.changergetelementstatus, ChangerGetElementStatus
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : mcd.h
-req.include-header : Mcd.h, Ntddchgr.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : LAMP_INTENSITY_WHITE
+UID: NF:mcd.ChangerGetElementStatus
+title: ChangerGetElementStatus function
+author: windows-driver-content
+description: ChangerGetElementStatus handles the device-specific aspects of a device-control IRP with the IOCTL code IOCTL_CHANGER_GET_ELEMENT_STATUS.
+old-location: storage\changergetelementstatus.htm
+old-project: storage
+ms.assetid: 8114d029-fe6e-4466-9e54-5ceadef96949
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: mcd/ChangerGetElementStatus, chgrmini_b0e442c7-18c4-4086-b036-3db43177f6e5.xml, ChangerGetElementStatus function [Storage Devices], storage.changergetelementstatus, ChangerGetElementStatus
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: mcd.h
+req.include-header: Mcd.h, Ntddchgr.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	mcd.h
+apiname:
+-	ChangerGetElementStatus
+product: Windows
+targetos: Windows
+req.typenames: LAMP_INTENSITY_WHITE
 ---
 
 

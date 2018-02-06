@@ -1,41 +1,47 @@
 ---
-UID : NF:drmk.DrmForwardContentToDeviceObject
-title : DrmForwardContentToDeviceObject function
-author : windows-driver-content
-description : The DrmForwardContentToDeviceObject function accepts a device object representing a device to which the caller intends to forward protected content.
-old-location : audio\drmforwardcontenttodeviceobject.htm
-old-project : audio
-ms.assetid : 1ce67fb6-190e-4de2-9877-f06cd08cf424
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : aud-prop2_45870b55-07dc-48bf-a8ff-8005a7791dc1.xml, drmk/DrmForwardContentToDeviceObject, DrmForwardContentToDeviceObject function [Audio Devices], audio.drmforwardcontenttodeviceobject, DrmForwardContentToDeviceObject
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : drmk.h
-req.include-header : Drmk.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Drmk.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDI_TX_METADATA, *PWDI_TX_METADATA
+UID: NF:drmk.DrmForwardContentToDeviceObject
+title: DrmForwardContentToDeviceObject function
+author: windows-driver-content
+description: The DrmForwardContentToDeviceObject function accepts a device object representing a device to which the caller intends to forward protected content.
+old-location: audio\drmforwardcontenttodeviceobject.htm
+old-project: audio
+ms.assetid: 1ce67fb6-190e-4de2-9877-f06cd08cf424
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: aud-prop2_45870b55-07dc-48bf-a8ff-8005a7791dc1.xml, drmk/DrmForwardContentToDeviceObject, DrmForwardContentToDeviceObject function [Audio Devices], audio.drmforwardcontenttodeviceobject, DrmForwardContentToDeviceObject
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: drmk.h
+req.include-header: Drmk.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Drmk.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Drmk.lib
+-	Drmk.dll
+apiname:
+-	DrmForwardContentToDeviceObject
+product: Windows
+targetos: Windows
+req.typenames: WDI_TX_METADATA, *PWDI_TX_METADATA
 ---
 
 

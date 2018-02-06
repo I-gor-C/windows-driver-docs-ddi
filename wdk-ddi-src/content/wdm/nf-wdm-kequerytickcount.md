@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.KeQueryTickCount
-title : KeQueryTickCount macro
-author : windows-driver-content
-description : The KeQueryTickCount routine maintains a count of the interval timer interrupts that have occurred since the system was booted.
-old-location : kernel\kequerytickcount.htm
-old-project : kernel
-ms.assetid : 7cd0ed27-a056-4ed9-8ff4-e917b31b0dd6
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : KeQueryTickCount, wdm/KeQueryTickCount, kernel.kequerytickcount, k105_a6a22896-6f3e-4e58-b443-4a06ff67b0ce.xml, KeQueryTickCount routine [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : macro
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.KeQueryTickCount
+title: KeQueryTickCount macro
+author: windows-driver-content
+description: The KeQueryTickCount routine maintains a count of the interval timer interrupts that have occurred since the system was booted.
+old-location: kernel\kequerytickcount.htm
+old-project: kernel
+ms.assetid: 7cd0ed27-a056-4ed9-8ff4-e917b31b0dd6
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: KeQueryTickCount, wdm/KeQueryTickCount, kernel.kequerytickcount, k105_a6a22896-6f3e-4e58-b443-4a06ff67b0ce.xml, KeQueryTickCount routine [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: macro
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	KeQueryTickCount
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NI:hidport.IOCTL_HID_GET_STRING
-title : IOCTL_HID_GET_STRING
-author : windows-driver-content
-description : The IOCTL_HID_GET_STRING request obtains a manufacturer ID, product ID, or serial number for a top-level collection. The retrieved string is a NULL-terminated wide character string in a human-readable format.
-old-location : hid\ioctl_hid_get_string.htm
-old-project : hid
-ms.assetid : 0812f27f-f38c-487d-9e92-98e16ddde21c
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : hid.ioctl_hid_get_string, IOCTL_HID_GET_STRING control code [Human Input Devices], IOCTL_HID_GET_STRING, hidport/IOCTL_HID_GET_STRING, hidioreq_987af494-0ac9-4b86-ab66-63dad179cec5.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : hidport.h
-req.include-header : Hidport.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : USAGE_AND_PAGE, *PUSAGE_AND_PAGE
+UID: NI:hidport.IOCTL_HID_GET_STRING
+title: IOCTL_HID_GET_STRING
+author: windows-driver-content
+description: The IOCTL_HID_GET_STRING request obtains a manufacturer ID, product ID, or serial number for a top-level collection. The retrieved string is a NULL-terminated wide character string in a human-readable format.
+old-location: hid\ioctl_hid_get_string.htm
+old-project: hid
+ms.assetid: 0812f27f-f38c-487d-9e92-98e16ddde21c
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: hid.ioctl_hid_get_string, IOCTL_HID_GET_STRING control code [Human Input Devices], IOCTL_HID_GET_STRING, hidport/IOCTL_HID_GET_STRING, hidioreq_987af494-0ac9-4b86-ab66-63dad179cec5.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: hidport.h
+req.include-header: Hidport.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hidport.h
+apiname:
+-	IOCTL_HID_GET_STRING
+product: Windows
+targetos: Windows
+req.typenames: USAGE_AND_PAGE, *PUSAGE_AND_PAGE
 ---
 
 # IOCTL_HID_GET_STRING IOCTL

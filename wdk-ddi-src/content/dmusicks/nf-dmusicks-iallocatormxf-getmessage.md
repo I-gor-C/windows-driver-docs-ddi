@@ -1,41 +1,46 @@
 ---
-UID : NF:dmusicks.IAllocatorMXF.GetMessage
-title : IAllocatorMXF::GetMessage method
-author : windows-driver-content
-description : The GetMessage method serves as the retrieval point for any DirectMusic kernel-mode component that utilizes the port driver's allocator to reuse DMUS_KERNEL_EVENT structures.
-old-location : audio\iallocatormxf_getmessage.htm
-old-project : audio
-ms.assetid : d5b56926-bcfb-4411-b24d-cc0758852510
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : IAllocatorMXF::GetMessage, IAllocatorMXF interface [Audio Devices], GetMessage method, GetMessage method [Audio Devices], IAllocatorMXF interface, GetMessage method [Audio Devices], GetMessage, audio.iallocatormxf_getmessage, audmp-routines_24207ff5-69a9-47bd-a756-78c2a218080e.xml, IAllocatorMXF, dmusicks/IAllocatorMXF::GetMessage
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dmusicks.h
-req.include-header : Dmusicks.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dmusicks.h
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DMUS_STREAM_TYPE
+UID: NF:dmusicks.IAllocatorMXF.GetMessage
+title: IAllocatorMXF::GetMessage method
+author: windows-driver-content
+description: The GetMessage method serves as the retrieval point for any DirectMusic kernel-mode component that utilizes the port driver's allocator to reuse DMUS_KERNEL_EVENT structures.
+old-location: audio\iallocatormxf_getmessage.htm
+old-project: audio
+ms.assetid: d5b56926-bcfb-4411-b24d-cc0758852510
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: IAllocatorMXF::GetMessage, IAllocatorMXF interface [Audio Devices], GetMessage method, GetMessage method [Audio Devices], IAllocatorMXF interface, GetMessage method [Audio Devices], GetMessage, audio.iallocatormxf_getmessage, audmp-routines_24207ff5-69a9-47bd-a756-78c2a218080e.xml, IAllocatorMXF, dmusicks/IAllocatorMXF::GetMessage
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dmusicks.h
+req.include-header: Dmusicks.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dmusicks.h
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dmusicks.h
+apiname:
+-	IAllocatorMXF.GetMessage
+product: Windows
+targetos: Windows
+req.typenames: DMUS_STREAM_TYPE
 ---
 
 

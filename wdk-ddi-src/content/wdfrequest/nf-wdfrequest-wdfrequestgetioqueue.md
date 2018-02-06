@@ -1,42 +1,50 @@
 ---
-UID : NF:wdfrequest.WdfRequestGetIoQueue
-title : WdfRequestGetIoQueue function
-author : windows-driver-content
-description : The WdfRequestGetIoQueue method returns a handle to the framework queue object from which a specified I/O request was delivered.
-old-location : wdf\wdfrequestgetioqueue.htm
-old-project : wdf
-ms.assetid : 9b7d67a3-2899-47b1-9652-d3696d37ec2d
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : kmdf.wdfrequestgetioqueue, PFN_WDFREQUESTGETIOQUEUE, DFRequestObjectRef_5ac140be-04cf-480c-a917-9942d23b550f.xml, WdfRequestGetIoQueue method, WdfRequestGetIoQueue, wdfrequest/WdfRequestGetIoQueue, wdf.wdfrequestgetioqueue
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfrequest.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : DriverCreate, InvalidReqAccess, InvalidReqAccessLocal, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_REQUEST_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfrequest.WdfRequestGetIoQueue
+title: WdfRequestGetIoQueue function
+author: windows-driver-content
+description: The WdfRequestGetIoQueue method returns a handle to the framework queue object from which a specified I/O request was delivered.
+old-location: wdf\wdfrequestgetioqueue.htm
+old-project: wdf
+ms.assetid: 9b7d67a3-2899-47b1-9652-d3696d37ec2d
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: kmdf.wdfrequestgetioqueue, PFN_WDFREQUESTGETIOQUEUE, DFRequestObjectRef_5ac140be-04cf-480c-a917-9942d23b550f.xml, WdfRequestGetIoQueue method, WdfRequestGetIoQueue, wdfrequest/WdfRequestGetIoQueue, wdf.wdfrequestgetioqueue
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfrequest.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: DriverCreate, InvalidReqAccess, InvalidReqAccessLocal, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+-	WUDFx02000.dll
+-	WUDFx02000.dll.dll
+apiname:
+-	WdfRequestGetIoQueue
+product: Windows
+targetos: Windows
+req.typenames: WDF_REQUEST_TYPE
+req.product: Windows 10 or later.
 ---
 
 

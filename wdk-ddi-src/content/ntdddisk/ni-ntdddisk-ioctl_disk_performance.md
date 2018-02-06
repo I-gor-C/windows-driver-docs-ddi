@@ -1,41 +1,46 @@
 ---
-UID : NI:ntdddisk.IOCTL_DISK_PERFORMANCE
-title : IOCTL_DISK_PERFORMANCE
-author : windows-driver-content
-description : Increments a reference counter that enables the collection of disk performance statistics, such as the numbers of bytes read and written since the driver last processed this request, for a corresponding disk monitoring application.
-old-location : storage\ioctl_disk_performance.htm
-old-project : storage
-ms.assetid : d88d323d-6e74-4a4b-9246-893d92bea89b
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_disk_performance, IOCTL_DISK_PERFORMANCE control code [Storage Devices], IOCTL_DISK_PERFORMANCE, ntdddisk/IOCTL_DISK_PERFORMANCE, k307_f7ebe3b4-ed77-4c99-af07-c6639b5fd3be.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntdddisk.h
-req.include-header : Ntdddisk.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DETECTION_TYPE
+UID: NI:ntdddisk.IOCTL_DISK_PERFORMANCE
+title: IOCTL_DISK_PERFORMANCE
+author: windows-driver-content
+description: Increments a reference counter that enables the collection of disk performance statistics, such as the numbers of bytes read and written since the driver last processed this request, for a corresponding disk monitoring application.
+old-location: storage\ioctl_disk_performance.htm
+old-project: storage
+ms.assetid: d88d323d-6e74-4a4b-9246-893d92bea89b
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_disk_performance, IOCTL_DISK_PERFORMANCE control code [Storage Devices], IOCTL_DISK_PERFORMANCE, ntdddisk/IOCTL_DISK_PERFORMANCE, k307_f7ebe3b4-ed77-4c99-af07-c6639b5fd3be.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntdddisk.h
+req.include-header: Ntdddisk.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntdddisk.h
+apiname:
+-	IOCTL_DISK_PERFORMANCE
+product: Windows
+targetos: Windows
+req.typenames: DETECTION_TYPE
 ---
 
 # IOCTL_DISK_PERFORMANCE IOCTL

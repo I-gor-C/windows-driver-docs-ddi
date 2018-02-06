@@ -1,42 +1,47 @@
 ---
-UID : NS:scsi.RECEIVE_TOKEN_INFORMATION_HEADER
-title : RECEIVE_TOKEN_INFORMATION_HEADER
-author : windows-driver-content
-description : The RECEIVE_TOKEN_INFORMATION_HEADER structure contains information returned as status from an offload data transfer operation.
-old-location : storage\receive_token_information_header.htm
-old-project : storage
-ms.assetid : 3D8BF059-2063-499E-B287-41EE184A2264
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : SERVICE_ACTION_POPULATE_TOKEN, TRANSFER_COUNT_UNITS_EXBIBYTES, RECEIVE_TOKEN_INFORMATION_HEADER, RECEIVE_TOKEN_INFORMATION_HEADER structure [Storage Devices], storage.receive_token_information_header, PRECEIVE_TOKEN_INFORMATION_HEADER structure pointer [Storage Devices], TRANSFER_COUNT_UNITS_BYTES, TRANSFER_COUNT_UNITS_TEBIBYTES, TRANSFER_COUNT_UNITS_PEBIBYTES, *PRECEIVE_TOKEN_INFORMATION_HEADER, TRANSFER_COUNT_UNITS_GIBIBYTES, TRANSFER_COUNT_UNITS_KIBIBYTES, scsi/RECEIVE_TOKEN_INFORMATION_HEADER, TRANSFER_COUNT_UNITS_NUMBER_BLOCKS, SERVICE_ACTION_WRITE_USING_TOKEN, TRANSFER_COUNT_UNITS_MEBIBYTES, PRECEIVE_TOKEN_INFORMATION_HEADER, scsi/PRECEIVE_TOKEN_INFORMATION_HEADER
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : scsi.h
-req.include-header : Scsi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PRECEIVE_TOKEN_INFORMATION_HEADER, RECEIVE_TOKEN_INFORMATION_HEADER"
-req.product : Windows 10 or later.
+UID: NS:scsi.RECEIVE_TOKEN_INFORMATION_HEADER
+title: RECEIVE_TOKEN_INFORMATION_HEADER
+author: windows-driver-content
+description: The RECEIVE_TOKEN_INFORMATION_HEADER structure contains information returned as status from an offload data transfer operation.
+old-location: storage\receive_token_information_header.htm
+old-project: storage
+ms.assetid: 3D8BF059-2063-499E-B287-41EE184A2264
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: SERVICE_ACTION_POPULATE_TOKEN, TRANSFER_COUNT_UNITS_EXBIBYTES, RECEIVE_TOKEN_INFORMATION_HEADER, RECEIVE_TOKEN_INFORMATION_HEADER structure [Storage Devices], storage.receive_token_information_header, PRECEIVE_TOKEN_INFORMATION_HEADER structure pointer [Storage Devices], TRANSFER_COUNT_UNITS_BYTES, TRANSFER_COUNT_UNITS_TEBIBYTES, TRANSFER_COUNT_UNITS_PEBIBYTES, *PRECEIVE_TOKEN_INFORMATION_HEADER, TRANSFER_COUNT_UNITS_GIBIBYTES, TRANSFER_COUNT_UNITS_KIBIBYTES, scsi/RECEIVE_TOKEN_INFORMATION_HEADER, TRANSFER_COUNT_UNITS_NUMBER_BLOCKS, SERVICE_ACTION_WRITE_USING_TOKEN, TRANSFER_COUNT_UNITS_MEBIBYTES, PRECEIVE_TOKEN_INFORMATION_HEADER, scsi/PRECEIVE_TOKEN_INFORMATION_HEADER
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: scsi.h
+req.include-header: Scsi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	scsi.h
+apiname:
+-	RECEIVE_TOKEN_INFORMATION_HEADER
+product: Windows
+targetos: Windows
+req.typenames: "*PRECEIVE_TOKEN_INFORMATION_HEADER, RECEIVE_TOKEN_INFORMATION_HEADER"
+req.product: Windows 10 or later.
 ---
 
 # RECEIVE_TOKEN_INFORMATION_HEADER structure

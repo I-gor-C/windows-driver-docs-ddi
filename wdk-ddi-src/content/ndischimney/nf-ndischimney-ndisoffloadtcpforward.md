@@ -1,41 +1,47 @@
 ---
-UID : NF:ndischimney.NdisOffloadTcpForward
-title : NdisOffloadTcpForward function
-author : windows-driver-content
-description : A protocol driver or an intermediate driver calls the NdisOffloadTcpForward function to forward unacknowledged received TCP segments to an underlying driver or offload target.
-old-location : netvista\ndisoffloadtcpforward.htm
-old-project : netvista
-ms.assetid : ca4e26c5-5fea-42ab-aee6-3ecf4cce3798
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : tcp_chim_ndis_func_9def62ce-e860-4f98-a609-8e96e6381c66.xml, ndischimney/NdisOffloadTcpForward, NdisOffloadTcpForward function [Network Drivers Starting with Windows Vista], netvista.ndisoffloadtcpforward, NdisOffloadTcpForward
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndischimney.h
-req.include-header : Ndischimney.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PD_BUFFER_VIRTUAL_SUBNET_INFO
+UID: NF:ndischimney.NdisOffloadTcpForward
+title: NdisOffloadTcpForward function
+author: windows-driver-content
+description: A protocol driver or an intermediate driver calls the NdisOffloadTcpForward function to forward unacknowledged received TCP segments to an underlying driver or offload target.
+old-location: netvista\ndisoffloadtcpforward.htm
+old-project: netvista
+ms.assetid: ca4e26c5-5fea-42ab-aee6-3ecf4cce3798
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: tcp_chim_ndis_func_9def62ce-e860-4f98-a609-8e96e6381c66.xml, ndischimney/NdisOffloadTcpForward, NdisOffloadTcpForward function [Network Drivers Starting with Windows Vista], netvista.ndisoffloadtcpforward, NdisOffloadTcpForward
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndischimney.h
+req.include-header: Ndischimney.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisOffloadTcpForward
+product: Windows
+targetos: Windows
+req.typenames: PD_BUFFER_VIRTUAL_SUBNET_INFO
 ---
 
 

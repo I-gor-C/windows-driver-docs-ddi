@@ -1,42 +1,48 @@
 ---
-UID : NF:wdffdo.WdfFdoGetDefaultChildList
-title : WdfFdoGetDefaultChildList function
-author : windows-driver-content
-description : The WdfFdoGetDefaultChildList method returns a handle to a specified device's default child list.
-old-location : wdf\wdffdogetdefaultchildlist.htm
-old-project : wdf
-ms.assetid : b90c82ad-0531-4564-b30d-48e980282e85
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : DFDeviceObjectFdoPdoRef_b91b8c48-179f-42e5-8015-67eaf1b38226.xml, wdf.wdffdogetdefaultchildlist, kmdf.wdffdogetdefaultchildlist, WdfFdoGetDefaultChildList, wdffdo/WdfFdoGetDefaultChildList, PFN_WDFFDOGETDEFAULTCHILDLIST, WdfFdoGetDefaultChildList method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdffdo.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_DRIVER_VERSION_AVAILABLE_PARAMS, *PWDF_DRIVER_VERSION_AVAILABLE_PARAMS
-req.product : Windows 10 or later.
+UID: NF:wdffdo.WdfFdoGetDefaultChildList
+title: WdfFdoGetDefaultChildList function
+author: windows-driver-content
+description: The WdfFdoGetDefaultChildList method returns a handle to a specified device's default child list.
+old-location: wdf\wdffdogetdefaultchildlist.htm
+old-project: wdf
+ms.assetid: b90c82ad-0531-4564-b30d-48e980282e85
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: DFDeviceObjectFdoPdoRef_b91b8c48-179f-42e5-8015-67eaf1b38226.xml, wdf.wdffdogetdefaultchildlist, kmdf.wdffdogetdefaultchildlist, WdfFdoGetDefaultChildList, wdffdo/WdfFdoGetDefaultChildList, PFN_WDFFDOGETDEFAULTCHILDLIST, WdfFdoGetDefaultChildList method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdffdo.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfFdoGetDefaultChildList
+product: Windows
+targetos: Windows
+req.typenames: WDF_DRIVER_VERSION_AVAILABLE_PARAMS, *PWDF_DRIVER_VERSION_AVAILABLE_PARAMS
+req.product: Windows 10 or later.
 ---
 
 

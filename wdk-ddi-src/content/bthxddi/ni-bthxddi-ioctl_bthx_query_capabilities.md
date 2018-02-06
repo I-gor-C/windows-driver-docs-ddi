@@ -1,41 +1,46 @@
 ---
-UID : NI:bthxddi.IOCTL_BTHX_QUERY_CAPABILITIES
-title : IOCTL_BTHX_QUERY_CAPABILITIES
-author : windows-driver-content
-description : IOCTL_BTHX_QUERY_CAPABILITIES is used to query the capabilities of the transport driver.
-old-location : bltooth\ioctl_bthx_query_capabilities.htm
-old-project : bltooth
-ms.assetid : 199C93EC-AB91-47F1-914A-F44BFF1796A6
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : bltooth.ioctl_bthx_query_capabilities, IOCTL_BTHX_QUERY_CAPABILITIES control code [Bluetooth Devices], IOCTL_BTHX_QUERY_CAPABILITIES, bthxddi/IOCTL_BTHX_QUERY_CAPABILITIES
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : bthxddi.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with  Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PBTHX_SCO_SUPPORT, BTHX_SCO_SUPPORT"
+UID: NI:bthxddi.IOCTL_BTHX_QUERY_CAPABILITIES
+title: IOCTL_BTHX_QUERY_CAPABILITIES
+author: windows-driver-content
+description: IOCTL_BTHX_QUERY_CAPABILITIES is used to query the capabilities of the transport driver.
+old-location: bltooth\ioctl_bthx_query_capabilities.htm
+old-project: bltooth
+ms.assetid: 199C93EC-AB91-47F1-914A-F44BFF1796A6
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: bltooth.ioctl_bthx_query_capabilities, IOCTL_BTHX_QUERY_CAPABILITIES control code [Bluetooth Devices], IOCTL_BTHX_QUERY_CAPABILITIES, bthxddi/IOCTL_BTHX_QUERY_CAPABILITIES
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: bthxddi.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with  Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	BthXDDI.h
+apiname:
+-	IOCTL_BTHX_QUERY_CAPABILITIES
+product: Windows
+targetos: Windows
+req.typenames: "*PBTHX_SCO_SUPPORT, BTHX_SCO_SUPPORT"
 ---
 
 # IOCTL_BTHX_QUERY_CAPABILITIES IOCTL

@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugEventCallbacks.ChangeEngineState
-title : IDebugEventCallbacks::ChangeEngineState method
-author : windows-driver-content
-description : The ChangeEngineState callback method is called by the engine when its state has changed.
-old-location : debugger\idebugeventcallbacks_changeenginestate.htm
-old-project : debugger
-ms.assetid : 42ad993a-b12e-49ff-8a1f-f62e2ab968d3
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : ChangeEngineState, IDebugEventCallbacks interface [Windows Debugging], ChangeEngineState method, ChangeEngineState method [Windows Debugging], debugger.idebugeventcallbacks_changeenginestate, IDebugEventCallbacks::ChangeEngineState, IDebugEventCallbacks, dbgeng/IDebugEventCallbacks::ChangeEngineState, ChangeEngineState method [Windows Debugging], IDebugEventCallbacks interface, ComCallbacks_fafc4238-0565-410b-9e00-1cbce74737f4.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugEventCallbacks.ChangeEngineState
+title: IDebugEventCallbacks::ChangeEngineState method
+author: windows-driver-content
+description: The ChangeEngineState callback method is called by the engine when its state has changed.
+old-location: debugger\idebugeventcallbacks_changeenginestate.htm
+old-project: debugger
+ms.assetid: 42ad993a-b12e-49ff-8a1f-f62e2ab968d3
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: ChangeEngineState, IDebugEventCallbacks interface [Windows Debugging], ChangeEngineState method, ChangeEngineState method [Windows Debugging], debugger.idebugeventcallbacks_changeenginestate, IDebugEventCallbacks::ChangeEngineState, IDebugEventCallbacks, dbgeng/IDebugEventCallbacks::ChangeEngineState, ChangeEngineState method [Windows Debugging], IDebugEventCallbacks interface, ComCallbacks_fafc4238-0565-410b-9e00-1cbce74737f4.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugEventCallbacks.ChangeEngineState
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

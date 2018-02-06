@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_CREATEAUTHENTICATEDCHANNEL
-title : PFND3DDDI_CREATEAUTHENTICATEDCHANNEL
-author : windows-driver-content
-description : The CreateAuthenticatedChannel function creates a channel that the Microsoft Direct3D runtime and the driver can use to set and query protections.
-old-location : display\createauthenticatedchannel.htm
-old-project : display
-ms.assetid : 0a565bff-fc6f-41c1-a6fd-3a82dd0d7889
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.createauthenticatedchannel, CreateAuthenticatedChannel callback function [Display Devices], CreateAuthenticatedChannel, PFND3DDDI_CREATEAUTHENTICATEDCHANNEL, PFND3DDDI_CREATEAUTHENTICATEDCHANNEL, d3dumddi/CreateAuthenticatedChannel, UserModeDisplayDriver_Functions_5645674c-e4e5-4b9c-9cbf-588b829df423.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : CreateAuthenticatedChannel is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_CREATEAUTHENTICATEDCHANNEL
+title: PFND3DDDI_CREATEAUTHENTICATEDCHANNEL
+author: windows-driver-content
+description: The CreateAuthenticatedChannel function creates a channel that the Microsoft Direct3D runtime and the driver can use to set and query protections.
+old-location: display\createauthenticatedchannel.htm
+old-project: display
+ms.assetid: 0a565bff-fc6f-41c1-a6fd-3a82dd0d7889
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.createauthenticatedchannel, CreateAuthenticatedChannel callback function [Display Devices], CreateAuthenticatedChannel, PFND3DDDI_CREATEAUTHENTICATEDCHANNEL, PFND3DDDI_CREATEAUTHENTICATEDCHANNEL, d3dumddi/CreateAuthenticatedChannel, UserModeDisplayDriver_Functions_5645674c-e4e5-4b9c-9cbf-588b829df423.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: CreateAuthenticatedChannel is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	CreateAuthenticatedChannel
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

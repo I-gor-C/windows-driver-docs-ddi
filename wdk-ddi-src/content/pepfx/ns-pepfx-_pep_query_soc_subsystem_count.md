@@ -1,41 +1,46 @@
 ---
-UID : NS:pepfx._PEP_QUERY_SOC_SUBSYSTEM_COUNT
-title : "_PEP_QUERY_SOC_SUBSYSTEM_COUNT"
-author : windows-driver-content
-description : The PEP_QUERY_SOC_SUBSYSTEM_COUNT structure is used to tell the OS whether the PEP supports system on a chip (SoC) subsystem accounting for a given platform idle state.
-old-location : kernel\pep_query_soc_subsystem_count.htm
-old-project : kernel
-ms.assetid : 1DB17B90-41B7-4DA2-AFB6-3A4B218068F6
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : "_PEP_QUERY_SOC_SUBSYSTEM_COUNT, PPEP_QUERY_SOC_SUBSYSTEM_COUNT structure pointer [Kernel-Mode Driver Architecture], *PPEP_QUERY_SOC_SUBSYSTEM_COUNT, PEP_QUERY_SOC_SUBSYSTEM_COUNT structure [Kernel-Mode Driver Architecture], kernel.pep_query_soc_subsystem_count, PPEP_QUERY_SOC_SUBSYSTEM_COUNT, PEP_QUERY_SOC_SUBSYSTEM_COUNT, pepfx/PPEP_QUERY_SOC_SUBSYSTEM_COUNT, pepfx/PEP_QUERY_SOC_SUBSYSTEM_COUNT"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : pepfx.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with Windows 10.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PEP_QUERY_SOC_SUBSYSTEM_COUNT, *PPEP_QUERY_SOC_SUBSYSTEM_COUNT
+UID: NS:pepfx._PEP_QUERY_SOC_SUBSYSTEM_COUNT
+title: "_PEP_QUERY_SOC_SUBSYSTEM_COUNT"
+author: windows-driver-content
+description: The PEP_QUERY_SOC_SUBSYSTEM_COUNT structure is used to tell the OS whether the PEP supports system on a chip (SoC) subsystem accounting for a given platform idle state.
+old-location: kernel\pep_query_soc_subsystem_count.htm
+old-project: kernel
+ms.assetid: 1DB17B90-41B7-4DA2-AFB6-3A4B218068F6
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: "_PEP_QUERY_SOC_SUBSYSTEM_COUNT, PPEP_QUERY_SOC_SUBSYSTEM_COUNT structure pointer [Kernel-Mode Driver Architecture], *PPEP_QUERY_SOC_SUBSYSTEM_COUNT, PEP_QUERY_SOC_SUBSYSTEM_COUNT structure [Kernel-Mode Driver Architecture], kernel.pep_query_soc_subsystem_count, PPEP_QUERY_SOC_SUBSYSTEM_COUNT, PEP_QUERY_SOC_SUBSYSTEM_COUNT, pepfx/PPEP_QUERY_SOC_SUBSYSTEM_COUNT, pepfx/PEP_QUERY_SOC_SUBSYSTEM_COUNT"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: pepfx.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows 10.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	pepfx.h
+apiname:
+-	PEP_QUERY_SOC_SUBSYSTEM_COUNT
+product: Windows
+targetos: Windows
+req.typenames: PEP_QUERY_SOC_SUBSYSTEM_COUNT, *PPEP_QUERY_SOC_SUBSYSTEM_COUNT
 ---
 
 # _PEP_QUERY_SOC_SUBSYSTEM_COUNT structure

@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugControl3.AddEngineOptions
-title : IDebugControl3::AddEngineOptions method
-author : windows-driver-content
-description : The AddEngineOptions method turns on some of the debugger engine's options.
-old-location : debugger\addengineoptions.htm
-old-project : debugger
-ms.assetid : 088036f5-13cb-47ba-953c-a71c923f028e
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugControl interface [Windows Debugging], AddEngineOptions method, AddEngineOptions method [Windows Debugging], IDebugControl3 interface, dbgeng/IDebugControl2::AddEngineOptions, AddEngineOptions method [Windows Debugging], dbgeng/IDebugControl3::AddEngineOptions, IDebugControl3, AddEngineOptions method [Windows Debugging], IDebugControl interface, AddEngineOptions method [Windows Debugging], IDebugControl2 interface, IDebugControl3::AddEngineOptions, IDebugControl2 interface [Windows Debugging], AddEngineOptions method, IDebugControl3 interface [Windows Debugging], AddEngineOptions method, debugger.addengineoptions, IDebugControl_6042b0b9-8175-4790-be19-43f8659716dc.xml, IDebugControl2::AddEngineOptions, AddEngineOptions, IDebugControl::AddEngineOptions, dbgeng/IDebugControl::AddEngineOptions
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl3.AddEngineOptions
+title: IDebugControl3::AddEngineOptions method
+author: windows-driver-content
+description: The AddEngineOptions method turns on some of the debugger engine's options.
+old-location: debugger\addengineoptions.htm
+old-project: debugger
+ms.assetid: 088036f5-13cb-47ba-953c-a71c923f028e
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugControl interface [Windows Debugging], AddEngineOptions method, AddEngineOptions method [Windows Debugging], IDebugControl3 interface, dbgeng/IDebugControl2::AddEngineOptions, AddEngineOptions method [Windows Debugging], dbgeng/IDebugControl3::AddEngineOptions, IDebugControl3, AddEngineOptions method [Windows Debugging], IDebugControl interface, AddEngineOptions method [Windows Debugging], IDebugControl2 interface, IDebugControl3::AddEngineOptions, IDebugControl2 interface [Windows Debugging], AddEngineOptions method, IDebugControl3 interface [Windows Debugging], AddEngineOptions method, debugger.addengineoptions, IDebugControl_6042b0b9-8175-4790-be19-43f8659716dc.xml, IDebugControl2::AddEngineOptions, AddEngineOptions, IDebugControl::AddEngineOptions, dbgeng/IDebugControl::AddEngineOptions
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Dbgeng.h
+apiname:
+-	IDebugControl.AddEngineOptions
+-	IDebugControl2.AddEngineOptions
+-	IDebugControl3.AddEngineOptions
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NE:rilapitypes.RILADDRESSPARAMMASK
-title : RILADDRESSPARAMMASK
-author : windows-driver-content
-description : This enumeration describes the RILADDRESSPARAMMASK enumeration.
-old-location : netvista\riladdressparammask.htm
-old-project : netvista
-ms.assetid : 02d77f8f-9327-40e4-b38b-7f1a02abf4b1
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.riladdressparammask, RIL_PARAM_A_ALL, RIL_PARAM_A_NONE, rilapitypes/RIL_PARAM_A_TYPE, rilapitypes/RIL_PARAM_A_ALL, RILADDRESSPARAMMASK enumeration [Network Drivers Starting with Windows Vista], rilapitypes/RIL_PARAM_A_NONE, RIL_PARAM_A_NUMPLAN, rilapitypes/RILADDRESSPARAMMASK, rilapitypes/RIL_PARAM_A_ADDRESS, RILADDRESSPARAMMASK, rilapitypes/RIL_PARAM_A_NUMPLAN, RIL_PARAM_A_TYPE, RIL_PARAM_A_ADDRESS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : rilapitypes.h
-req.include-header : Rilapitypes.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RILADDRESSPARAMMASK
-req.product : Windows 10 or later.
+UID: NE:rilapitypes.RILADDRESSPARAMMASK
+title: RILADDRESSPARAMMASK
+author: windows-driver-content
+description: This enumeration describes the RILADDRESSPARAMMASK enumeration.
+old-location: netvista\riladdressparammask.htm
+old-project: netvista
+ms.assetid: 02d77f8f-9327-40e4-b38b-7f1a02abf4b1
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.riladdressparammask, RIL_PARAM_A_ALL, RIL_PARAM_A_NONE, rilapitypes/RIL_PARAM_A_TYPE, rilapitypes/RIL_PARAM_A_ALL, RILADDRESSPARAMMASK enumeration [Network Drivers Starting with Windows Vista], rilapitypes/RIL_PARAM_A_NONE, RIL_PARAM_A_NUMPLAN, rilapitypes/RILADDRESSPARAMMASK, rilapitypes/RIL_PARAM_A_ADDRESS, RILADDRESSPARAMMASK, rilapitypes/RIL_PARAM_A_NUMPLAN, RIL_PARAM_A_TYPE, RIL_PARAM_A_ADDRESS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: rilapitypes.h
+req.include-header: Rilapitypes.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	rilapitypes.h
+apiname:
+-	RILADDRESSPARAMMASK
+product: Windows
+targetos: Windows
+req.typenames: RILADDRESSPARAMMASK
+req.product: Windows 10 or later.
 ---
 
 # RILADDRESSPARAMMASK Enumeration
@@ -57,31 +62,31 @@ enum RILADDRESSPARAMMASK {
 ## Constants
 
 <table>
-
-<tr>
-<td>RIL_PARAM_A_ADDRESS</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_PARAM_A_ALL</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_PARAM_A_NONE</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_PARAM_A_NUMPLAN</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_PARAM_A_TYPE</td>
-<td></td>
-</tr>
+            
+                <tr>
+                    <td>RIL_PARAM_A_ADDRESS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_A_ALL</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_A_NONE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_A_NUMPLAN</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_A_TYPE</td>
+                    <td></td>
+                </tr>
 </table>
 
 
@@ -90,9 +95,9 @@ enum RILADDRESSPARAMMASK {
 | ---- |:---- |
 | **Header** | rilapitypes.h (include Rilapitypes.h) |
 
-## See Also
+    ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn946509">Cellular COM enumerations</a>
+        <a href="https://msdn.microsoft.com/library/windows/hardware/dn946509">Cellular COM enumerations</a>
 
  
 

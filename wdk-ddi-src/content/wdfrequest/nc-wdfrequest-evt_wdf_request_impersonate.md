@@ -1,42 +1,47 @@
 ---
-UID : NC:wdfrequest.EVT_WDF_REQUEST_IMPERSONATE
-title : EVT_WDF_REQUEST_IMPERSONATE
-author : windows-driver-content
-description : A driver's EvtRequestImpersonate event callback function performs tasks at the requested impersonation level, such as opening a protected file.
-old-location : wdf\evtrequestimpersonate.htm
-old-project : wdf
-ms.assetid : FA3FE0C0-57EC-4761-991B-49CA65A79BDD
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.evtrequestimpersonate, EvtRequestImpersonate callback function, EvtRequestImpersonate, EVT_WDF_REQUEST_IMPERSONATE, EVT_WDF_REQUEST_IMPERSONATE, wdfrequest/EvtRequestImpersonate
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdfrequest.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : Windows 8.1
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_QUERY_INTERFACE_CONFIG, *PWDF_QUERY_INTERFACE_CONFIG
-req.product : Windows 10 or later.
+UID: NC:wdfrequest.EVT_WDF_REQUEST_IMPERSONATE
+title: EVT_WDF_REQUEST_IMPERSONATE
+author: windows-driver-content
+description: A driver's EvtRequestImpersonate event callback function performs tasks at the requested impersonation level, such as opening a protected file.
+old-location: wdf\evtrequestimpersonate.htm
+old-project: wdf
+ms.assetid: FA3FE0C0-57EC-4761-991B-49CA65A79BDD
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.evtrequestimpersonate, EvtRequestImpersonate callback function, EvtRequestImpersonate, EVT_WDF_REQUEST_IMPERSONATE, EVT_WDF_REQUEST_IMPERSONATE, wdfrequest/EvtRequestImpersonate
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdfrequest.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: Windows 8.1
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Wdfrequest.h
+apiname:
+-	EvtRequestImpersonate
+product: Windows
+targetos: Windows
+req.typenames: WDF_QUERY_INTERFACE_CONFIG, *PWDF_QUERY_INTERFACE_CONFIG
+req.product: Windows 10 or later.
 ---
 
 

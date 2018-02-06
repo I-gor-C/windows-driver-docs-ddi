@@ -1,41 +1,46 @@
 ---
-UID : NI:bthioctl.IOCTL_BTH_HCI_VENDOR_COMMAND
-title : IOCTL_BTH_HCI_VENDOR_COMMAND
-author : windows-driver-content
-description : The IOCTL_BTH_HCI_VENDOR_COMMAND request allows Bluetooth applications to send vendor-specific commands to radios.
-old-location : bltooth\ioctl_bth_hci_vendor_command.htm
-old-project : bltooth
-ms.assetid : 3b182835-ca62-482c-b82a-28c59f23fb55
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : bltooth.ioctl_bth_hci_vendor_command, IOCTL_BTH_HCI_VENDOR_COMMAND control code [Bluetooth Devices], IOCTL_BTH_HCI_VENDOR_COMMAND, bthioctl/IOCTL_BTH_HCI_VENDOR_COMMAND, bth_ref_f907562d-11ca-4ec2-ace5-97042364bb01.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : bthioctl.h
-req.include-header : Bthioctl.h
-req.target-type : Windows
-req.target-min-winverclnt : Versions:\_Available on Microsoft Windows Vista SP2 and later operating system   versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= PASSIVE_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HFP_BYPASS_CODEC_ID_V1, *PHFP_BYPASS_CODEC_ID_V1
+UID: NI:bthioctl.IOCTL_BTH_HCI_VENDOR_COMMAND
+title: IOCTL_BTH_HCI_VENDOR_COMMAND
+author: windows-driver-content
+description: The IOCTL_BTH_HCI_VENDOR_COMMAND request allows Bluetooth applications to send vendor-specific commands to radios.
+old-location: bltooth\ioctl_bth_hci_vendor_command.htm
+old-project: bltooth
+ms.assetid: 3b182835-ca62-482c-b82a-28c59f23fb55
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: bltooth.ioctl_bth_hci_vendor_command, IOCTL_BTH_HCI_VENDOR_COMMAND control code [Bluetooth Devices], IOCTL_BTH_HCI_VENDOR_COMMAND, bthioctl/IOCTL_BTH_HCI_VENDOR_COMMAND, bth_ref_f907562d-11ca-4ec2-ace5-97042364bb01.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: bthioctl.h
+req.include-header: Bthioctl.h
+req.target-type: Windows
+req.target-min-winverclnt: Versions:\_Available on Microsoft Windows Vista SP2 and later operating system   versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= PASSIVE_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Bthioctl.h
+apiname:
+-	IOCTL_BTH_HCI_VENDOR_COMMAND
+product: Windows
+targetos: Windows
+req.typenames: HFP_BYPASS_CODEC_ID_V1, *PHFP_BYPASS_CODEC_ID_V1
 ---
 
 # IOCTL_BTH_HCI_VENDOR_COMMAND IOCTL

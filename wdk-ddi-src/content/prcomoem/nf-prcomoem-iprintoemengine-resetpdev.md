@@ -1,42 +1,47 @@
 ---
-UID : NF:prcomoem.IPrintOemEngine.ResetPDEV
-title : IPrintOemEngine::ResetPDEV method
-author : windows-driver-content
-description : "."
-old-location : print\iprintoemengine_resetpdev.htm
-old-project : print
-ms.assetid : DD8E4DAC-A4CA-4F1A-A898-E4A68A2D6715
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : IPrintOemEngine interface [Print Devices], ResetPDEV method, ResetPDEV method [Print Devices], print.iprintoemengine_resetpdev, IPrintOemEngine, prcomoem/IPrintOemEngine::ResetPDEV, IPrintOemEngine::ResetPDEV, ResetPDEV, ResetPDEV method [Print Devices], IPrintOemEngine interface
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : prcomoem.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : prcomoem.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : OEMPTOPTS, *POEMPTOPTS
-req.product : Windows 10 or later.
+UID: NF:prcomoem.IPrintOemEngine.ResetPDEV
+title: IPrintOemEngine::ResetPDEV method
+author: windows-driver-content
+description: "."
+old-location: print\iprintoemengine_resetpdev.htm
+old-project: print
+ms.assetid: DD8E4DAC-A4CA-4F1A-A898-E4A68A2D6715
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: IPrintOemEngine interface [Print Devices], ResetPDEV method, ResetPDEV method [Print Devices], print.iprintoemengine_resetpdev, IPrintOemEngine, prcomoem/IPrintOemEngine::ResetPDEV, IPrintOemEngine::ResetPDEV, ResetPDEV, ResetPDEV method [Print Devices], IPrintOemEngine interface
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: prcomoem.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: prcomoem.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Prcomoem.h
+apiname:
+-	IPrintOemEngine.ResetPDEV
+product: Windows
+targetos: Windows
+req.typenames: OEMPTOPTS, *POEMPTOPTS
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NC:wdm.DRIVER_INITIALIZE
-title : DRIVER_INITIALIZE
-author : windows-driver-content
-description : DriverEntry is the first routine called after a driver is loaded, and is responsible for initializing the driver.
-old-location : kernel\driverentry.htm
-old-project : kernel
-ms.assetid : b8c14a2d-a2e6-4ed1-9445-3259ec570076
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.driverentry, DriverEntry routine [Kernel-Mode Driver Architecture], DriverEntry, DRIVER_INITIALIZE, DRIVER_INITIALIZE, wdm/DriverEntry, DrvrRtns_dc503a23-7c31-421d-ac7b-ff6f4651e44e.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdm.h
-req.include-header : Mcd.h, Ntddk.h, Ntifs.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Called at PASSIVE_LEVEL.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
-req.product : Windows 10 or later.
+UID: NC:wdm.DRIVER_INITIALIZE
+title: DRIVER_INITIALIZE
+author: windows-driver-content
+description: DriverEntry is the first routine called after a driver is loaded, and is responsible for initializing the driver.
+old-location: kernel\driverentry.htm
+old-project: kernel
+ms.assetid: b8c14a2d-a2e6-4ed1-9445-3259ec570076
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.driverentry, DriverEntry routine [Kernel-Mode Driver Architecture], DriverEntry, DRIVER_INITIALIZE, DRIVER_INITIALIZE, wdm/DriverEntry, DrvrRtns_dc503a23-7c31-421d-ac7b-ff6f4651e44e.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdm.h
+req.include-header: Mcd.h, Ntddk.h, Ntifs.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Called at PASSIVE_LEVEL.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Wdm.h
+apiname:
+-	DriverEntry
+product: Windows
+targetos: Windows
+req.typenames: WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+req.product: Windows 10 or later.
 ---
 
 

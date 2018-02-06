@@ -1,41 +1,46 @@
 ---
-UID : NS:d3d10umddi.D3D11_1DDI_AUTHENTICATED_QUERY_OUTPUT
-title : D3D11_1DDI_AUTHENTICATED_QUERY_OUTPUT
-author : windows-driver-content
-description : Contains a response from the QueryAuthenticatedChannel(D3D11_1) function.
-old-location : display\d3d11_1ddi_authenticated_query_output.htm
-old-project : display
-ms.assetid : 1e5d5b29-ecda-48be-b4fe-e3a153f2e0e2
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.d3d11_1ddi_authenticated_query_output, d3d10umddi/D3D11_1DDI_AUTHENTICATED_QUERY_OUTPUT, D3D11_1DDI_AUTHENTICATED_QUERY_OUTPUT structure [Display Devices], D3D11_1DDI_AUTHENTICATED_QUERY_OUTPUT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3D11_1DDI_AUTHENTICATED_QUERY_OUTPUT
+UID: NS:d3d10umddi.D3D11_1DDI_AUTHENTICATED_QUERY_OUTPUT
+title: D3D11_1DDI_AUTHENTICATED_QUERY_OUTPUT
+author: windows-driver-content
+description: Contains a response from the QueryAuthenticatedChannel(D3D11_1) function.
+old-location: display\d3d11_1ddi_authenticated_query_output.htm
+old-project: display
+ms.assetid: 1e5d5b29-ecda-48be-b4fe-e3a153f2e0e2
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.d3d11_1ddi_authenticated_query_output, d3d10umddi/D3D11_1DDI_AUTHENTICATED_QUERY_OUTPUT, D3D11_1DDI_AUTHENTICATED_QUERY_OUTPUT structure [Display Devices], D3D11_1DDI_AUTHENTICATED_QUERY_OUTPUT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	D3d10umddi.h
+apiname:
+-	D3D11_1DDI_AUTHENTICATED_QUERY_OUTPUT
+product: Windows
+targetos: Windows
+req.typenames: D3D11_1DDI_AUTHENTICATED_QUERY_OUTPUT
 ---
 
 # D3D11_1DDI_AUTHENTICATED_QUERY_OUTPUT structure

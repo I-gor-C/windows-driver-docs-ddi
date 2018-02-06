@@ -1,41 +1,46 @@
 ---
-UID : NI:parallel.IOCTL_INTERNAL_INIT_1284_3_BUS
-title : IOCTL_INTERNAL_INIT_1284_3_BUS
-author : windows-driver-content
-description : The IOCTL_INTERNAL_INIT_1284_3_BUS request initializes and assigns an IEEE 1284.3 device ID to all the 1284.3 daisy chain devices that are attached to a parallel port.
-old-location : parports\ioctl_internal_init_1284_3_bus.htm
-old-project : parports
-ms.assetid : 9c936e4e-8a49-4c6a-a8d0-b314548b5e6a
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : parports.ioctl_internal_init_1284_3_bus, IOCTL_INTERNAL_INIT_1284_3_BUS control code [Parallel Ports], IOCTL_INTERNAL_INIT_1284_3_BUS, parallel/IOCTL_INTERNAL_INIT_1284_3_BUS, cisspd_bbc4a115-34b5-4f7b-9fd4-bbf4d4293e81.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : parallel.h
-req.include-header : Parallel.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RILGBATOKEN, *LPRILGBATOKEN
+UID: NI:parallel.IOCTL_INTERNAL_INIT_1284_3_BUS
+title: IOCTL_INTERNAL_INIT_1284_3_BUS
+author: windows-driver-content
+description: The IOCTL_INTERNAL_INIT_1284_3_BUS request initializes and assigns an IEEE 1284.3 device ID to all the 1284.3 daisy chain devices that are attached to a parallel port.
+old-location: parports\ioctl_internal_init_1284_3_bus.htm
+old-project: parports
+ms.assetid: 9c936e4e-8a49-4c6a-a8d0-b314548b5e6a
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: parports.ioctl_internal_init_1284_3_bus, IOCTL_INTERNAL_INIT_1284_3_BUS control code [Parallel Ports], IOCTL_INTERNAL_INIT_1284_3_BUS, parallel/IOCTL_INTERNAL_INIT_1284_3_BUS, cisspd_bbc4a115-34b5-4f7b-9fd4-bbf4d4293e81.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: parallel.h
+req.include-header: Parallel.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	parallel.h
+apiname:
+-	IOCTL_INTERNAL_INIT_1284_3_BUS
+product: Windows
+targetos: Windows
+req.typenames: RILGBATOKEN, *LPRILGBATOKEN
 ---
 
 # IOCTL_INTERNAL_INIT_1284_3_BUS IOCTL

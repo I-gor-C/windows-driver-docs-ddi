@@ -1,41 +1,46 @@
 ---
-UID : NS:pepfx._PEP_UNMASKED_INTERRUPT_INFORMATION
-title : "_PEP_UNMASKED_INTERRUPT_INFORMATION"
-author : windows-driver-content
-description : The PEP_UNMASKED_INTERRUPT_INFORMATION structure contains information about an interrupt source.
-old-location : kernel\pep_unmasked_interrupt_information.htm
-old-project : kernel
-ms.assetid : 1DD9A0A2-7D19-419A-8653-C16FDB28299E
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : PPEP_UNMASKED_INTERRUPT_INFORMATION, _PEP_UNMASKED_INTERRUPT_INFORMATION, PEP_UNMASKED_INTERRUPT_INFORMATION, *PPEP_UNMASKED_INTERRUPT_INFORMATION, pepfx/PPEP_UNMASKED_INTERRUPT_INFORMATION, PEP_UNMASKED_INTERRUPT_INFORMATION structure [Kernel-Mode Driver Architecture], PPEP_UNMASKED_INTERRUPT_INFORMATION structure pointer [Kernel-Mode Driver Architecture], pepfx/PEP_UNMASKED_INTERRUPT_INFORMATION, kernel.pep_unmasked_interrupt_information
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : pepfx.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with Windows 10.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PEP_UNMASKED_INTERRUPT_INFORMATION, *PPEP_UNMASKED_INTERRUPT_INFORMATION
+UID: NS:pepfx._PEP_UNMASKED_INTERRUPT_INFORMATION
+title: "_PEP_UNMASKED_INTERRUPT_INFORMATION"
+author: windows-driver-content
+description: The PEP_UNMASKED_INTERRUPT_INFORMATION structure contains information about an interrupt source.
+old-location: kernel\pep_unmasked_interrupt_information.htm
+old-project: kernel
+ms.assetid: 1DD9A0A2-7D19-419A-8653-C16FDB28299E
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: PPEP_UNMASKED_INTERRUPT_INFORMATION, _PEP_UNMASKED_INTERRUPT_INFORMATION, PEP_UNMASKED_INTERRUPT_INFORMATION, *PPEP_UNMASKED_INTERRUPT_INFORMATION, pepfx/PPEP_UNMASKED_INTERRUPT_INFORMATION, PEP_UNMASKED_INTERRUPT_INFORMATION structure [Kernel-Mode Driver Architecture], PPEP_UNMASKED_INTERRUPT_INFORMATION structure pointer [Kernel-Mode Driver Architecture], pepfx/PEP_UNMASKED_INTERRUPT_INFORMATION, kernel.pep_unmasked_interrupt_information
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: pepfx.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows 10.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	pepfx.h
+apiname:
+-	PEP_UNMASKED_INTERRUPT_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: PEP_UNMASKED_INTERRUPT_INFORMATION, *PPEP_UNMASKED_INTERRUPT_INFORMATION
 ---
 
 # _PEP_UNMASKED_INTERRUPT_INFORMATION structure

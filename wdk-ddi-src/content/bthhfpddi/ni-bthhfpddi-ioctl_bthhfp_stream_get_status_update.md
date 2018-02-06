@@ -1,41 +1,46 @@
 ---
-UID : NI:bthhfpddi.IOCTL_BTHHFP_STREAM_GET_STATUS_UPDATE
-title : IOCTL_BTHHFP_STREAM_GET_STATUS_UPDATE
-author : windows-driver-content
-description : The IOCTL_BTHHFP_STREAM_GET_STATUS_UPDATE IOCTL Gets a stream channel status update.
-old-location : audio\ioctl_bthhfp_stream_get_status_update.htm
-old-project : audio
-ms.assetid : 1D591422-4ED4-41B9-92E0-189A5EABE7D0
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : audio.ioctl_bthhfp_stream_get_status_update, IOCTL_BTHHFP_STREAM_GET_STATUS_UPDATE control code [Audio Devices], IOCTL_BTHHFP_STREAM_GET_STATUS_UPDATE, bthhfpddi/IOCTL_BTHHFP_STREAM_GET_STATUS_UPDATE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : bthhfpddi.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HFP_BYPASS_CODEC_ID_VERSION, *PHFP_BYPASS_CODEC_ID_VERSION
+UID: NI:bthhfpddi.IOCTL_BTHHFP_STREAM_GET_STATUS_UPDATE
+title: IOCTL_BTHHFP_STREAM_GET_STATUS_UPDATE
+author: windows-driver-content
+description: The IOCTL_BTHHFP_STREAM_GET_STATUS_UPDATE IOCTL Gets a stream channel status update.
+old-location: audio\ioctl_bthhfp_stream_get_status_update.htm
+old-project: audio
+ms.assetid: 1D591422-4ED4-41B9-92E0-189A5EABE7D0
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: audio.ioctl_bthhfp_stream_get_status_update, IOCTL_BTHHFP_STREAM_GET_STATUS_UPDATE control code [Audio Devices], IOCTL_BTHHFP_STREAM_GET_STATUS_UPDATE, bthhfpddi/IOCTL_BTHHFP_STREAM_GET_STATUS_UPDATE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: bthhfpddi.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Bthhfpddi.h
+apiname:
+-	IOCTL_BTHHFP_STREAM_GET_STATUS_UPDATE
+product: Windows
+targetos: Windows
+req.typenames: HFP_BYPASS_CODEC_ID_VERSION, *PHFP_BYPASS_CODEC_ID_VERSION
 ---
 
 # IOCTL_BTHHFP_STREAM_GET_STATUS_UPDATE IOCTL

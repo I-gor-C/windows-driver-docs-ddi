@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.ExFreeToNPagedLookasideList
-title : ExFreeToNPagedLookasideList function
-author : windows-driver-content
-description : The ExFreeToNPagedLookasideList routine returns a nonpaged entry to the given lookaside list or to nonpaged pool.
-old-location : kernel\exfreetonpagedlookasidelist.htm
-old-project : kernel
-ms.assetid : 8abd72f1-0537-4624-b3d4-2de51c4d4daa
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : k102_30577c54-40a4-41a3-abc2-f3cdcd45ef1b.xml, ExFreeToNPagedLookasideList, ExFreeToNPagedLookasideList routine [Kernel-Mode Driver Architecture], wdm/ExFreeToNPagedLookasideList, kernel.exfreetonpagedlookasidelist
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : SpIrql
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ExFreeToNPagedLookasideList
+title: ExFreeToNPagedLookasideList function
+author: windows-driver-content
+description: The ExFreeToNPagedLookasideList routine returns a nonpaged entry to the given lookaside list or to nonpaged pool.
+old-location: kernel\exfreetonpagedlookasidelist.htm
+old-project: kernel
+ms.assetid: 8abd72f1-0537-4624-b3d4-2de51c4d4daa
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: k102_30577c54-40a4-41a3-abc2-f3cdcd45ef1b.xml, ExFreeToNPagedLookasideList, ExFreeToNPagedLookasideList routine [Kernel-Mode Driver Architecture], wdm/ExFreeToNPagedLookasideList, kernel.exfreetonpagedlookasidelist
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: SpIrql
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ExFreeToNPagedLookasideList
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

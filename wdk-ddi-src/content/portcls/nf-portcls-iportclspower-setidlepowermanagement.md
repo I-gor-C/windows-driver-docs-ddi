@@ -1,41 +1,46 @@
 ---
-UID : NF:portcls.IPortClsPower.SetIdlePowerManagement
-title : IPortClsPower::SetIdlePowerManagement method
-author : windows-driver-content
-description : The SetIdlePowerManagement method provides a way for the adapter driver to opt in or opt out of idle state detection.
-old-location : audio\iportclspower_setidlepowermanagement.htm
-old-project : audio
-ms.assetid : ccef350c-7c46-43fa-8834-b0d712d9cf38
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : audio.iportclspower_setidlepowermanagement, SetIdlePowerManagement method [Audio Devices], portcls/IPortClsPower::SetIdlePowerManagement, audmp-routines_909c6232-f96f-4487-a51e-a127dc9ad317.xml, IPortClsPower, SetIdlePowerManagement, SetIdlePowerManagement method [Audio Devices], IPortClsPower interface, IPortClsPower interface [Audio Devices], SetIdlePowerManagement method, IPortClsPower::SetIdlePowerManagement
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : portcls.h
-req.include-header : Portcls.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 7 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : portcls.h
-req.dll : 
-req.irql : PASSIVE_LEVEL.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.IPortClsPower.SetIdlePowerManagement
+title: IPortClsPower::SetIdlePowerManagement method
+author: windows-driver-content
+description: The SetIdlePowerManagement method provides a way for the adapter driver to opt in or opt out of idle state detection.
+old-location: audio\iportclspower_setidlepowermanagement.htm
+old-project: audio
+ms.assetid: ccef350c-7c46-43fa-8834-b0d712d9cf38
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: audio.iportclspower_setidlepowermanagement, SetIdlePowerManagement method [Audio Devices], portcls/IPortClsPower::SetIdlePowerManagement, audmp-routines_909c6232-f96f-4487-a51e-a127dc9ad317.xml, IPortClsPower, SetIdlePowerManagement, SetIdlePowerManagement method [Audio Devices], IPortClsPower interface, IPortClsPower interface [Audio Devices], SetIdlePowerManagement method, IPortClsPower::SetIdlePowerManagement
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: portcls.h
+req.include-header: Portcls.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 7 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: portcls.h
+req.dll: 
+req.irql: PASSIVE_LEVEL.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	portcls.h
+apiname:
+-	IPortClsPower.SetIdlePowerManagement
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

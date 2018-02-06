@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._DXVADDI_DECODEBUFFERINFO
-title : "_DXVADDI_DECODEBUFFERINFO"
-author : windows-driver-content
-description : The DXVADDI_DECODEBUFFERINFO structure describes information about a particular type of compressed buffer that is required for a video decoding scenario.
-old-location : display\dxvaddi_decodebufferinfo.htm
-old-project : display
-ms.assetid : e0a0ad31-86c1-44bd-b069-70442973a539
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DXVA2_Structs_b076dffc-bfe0-4141-a075-9349b69af16c.xml, DXVADDI_DECODEBUFFERINFO structure [Display Devices], _DXVADDI_DECODEBUFFERINFO, display.dxvaddi_decodebufferinfo, DXVADDI_DECODEBUFFERINFO, d3dumddi/DXVADDI_DECODEBUFFERINFO
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXVADDI_DECODEBUFFERINFO
+UID: NS:d3dumddi._DXVADDI_DECODEBUFFERINFO
+title: "_DXVADDI_DECODEBUFFERINFO"
+author: windows-driver-content
+description: The DXVADDI_DECODEBUFFERINFO structure describes information about a particular type of compressed buffer that is required for a video decoding scenario.
+old-location: display\dxvaddi_decodebufferinfo.htm
+old-project: display
+ms.assetid: e0a0ad31-86c1-44bd-b069-70442973a539
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DXVA2_Structs_b076dffc-bfe0-4141-a075-9349b69af16c.xml, DXVADDI_DECODEBUFFERINFO structure [Display Devices], _DXVADDI_DECODEBUFFERINFO, display.dxvaddi_decodebufferinfo, DXVADDI_DECODEBUFFERINFO, d3dumddi/DXVADDI_DECODEBUFFERINFO
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	DXVADDI_DECODEBUFFERINFO
+product: Windows
+targetos: Windows
+req.typenames: DXVADDI_DECODEBUFFERINFO
 ---
 
 # _DXVADDI_DECODEBUFFERINFO structure

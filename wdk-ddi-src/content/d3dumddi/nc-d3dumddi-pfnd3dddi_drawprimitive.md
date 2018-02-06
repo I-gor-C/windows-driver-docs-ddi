@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_DRAWPRIMITIVE
-title : PFND3DDDI_DRAWPRIMITIVE
-author : windows-driver-content
-description : The DrawPrimitive function draws nonindexed primitives in which the Microsoft Direct3D runtime has not transformed the vertex data.
-old-location : display\drawprimitive.htm
-old-project : display
-ms.assetid : 1a6de2b0-cab0-4fcf-be1b-a8cc1c1f79e9
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.drawprimitive, DrawPrimitive callback function [Display Devices], DrawPrimitive, PFND3DDDI_DRAWPRIMITIVE, PFND3DDDI_DRAWPRIMITIVE, d3dumddi/DrawPrimitive, UserModeDisplayDriver_Functions_c433d1f5-68ca-4461-a409-4353d8a581d8.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_DRAWPRIMITIVE
+title: PFND3DDDI_DRAWPRIMITIVE
+author: windows-driver-content
+description: The DrawPrimitive function draws nonindexed primitives in which the Microsoft Direct3D runtime has not transformed the vertex data.
+old-location: display\drawprimitive.htm
+old-project: display
+ms.assetid: 1a6de2b0-cab0-4fcf-be1b-a8cc1c1f79e9
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.drawprimitive, DrawPrimitive callback function [Display Devices], DrawPrimitive, PFND3DDDI_DRAWPRIMITIVE, PFND3DDDI_DRAWPRIMITIVE, d3dumddi/DrawPrimitive, UserModeDisplayDriver_Functions_c433d1f5-68ca-4461-a409-4353d8a581d8.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	D3dumddi.h
+apiname:
+-	DrawPrimitive
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

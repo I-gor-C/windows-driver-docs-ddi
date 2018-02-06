@@ -1,41 +1,46 @@
 ---
-UID : NS:hbapiwmi._MSFC_LinkEvent
-title : "_MSFC_LinkEvent"
-author : windows-driver-content
-description : A WMI provider uses the MSFC_LinkEvent structure to report link events for the indicated adapter.
-old-location : storage\msfc_linkevent.htm
-old-project : storage
-ms.assetid : 35fb3397-2e45-4d32-8cb1-1050199b2209
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.msfc_linkevent, structs-Fibre_cbf79af7-ccf4-4996-b14d-bca141dece0e.xml, hbapiwmi/MSFC_LinkEvent, *PMSFC_LinkEvent, _MSFC_LinkEvent, hbapiwmi/PMSFC_LinkEvent, PMSFC_LinkEvent, MSFC_LinkEvent, PMSFC_LinkEvent structure pointer [Storage Devices], MSFC_LinkEvent structure [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : hbapiwmi.h
-req.include-header : Hbapiwmi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : MSFC_LinkEvent, *PMSFC_LinkEvent
+UID: NS:hbapiwmi._MSFC_LinkEvent
+title: "_MSFC_LinkEvent"
+author: windows-driver-content
+description: A WMI provider uses the MSFC_LinkEvent structure to report link events for the indicated adapter.
+old-location: storage\msfc_linkevent.htm
+old-project: storage
+ms.assetid: 35fb3397-2e45-4d32-8cb1-1050199b2209
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.msfc_linkevent, structs-Fibre_cbf79af7-ccf4-4996-b14d-bca141dece0e.xml, hbapiwmi/MSFC_LinkEvent, *PMSFC_LinkEvent, _MSFC_LinkEvent, hbapiwmi/PMSFC_LinkEvent, PMSFC_LinkEvent, MSFC_LinkEvent, PMSFC_LinkEvent structure pointer [Storage Devices], MSFC_LinkEvent structure [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: hbapiwmi.h
+req.include-header: Hbapiwmi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hbapiwmi.h
+apiname:
+-	MSFC_LinkEvent
+product: Windows
+targetos: Windows
+req.typenames: MSFC_LinkEvent, *PMSFC_LinkEvent
 ---
 
 # _MSFC_LinkEvent structure

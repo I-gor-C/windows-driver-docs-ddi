@@ -1,41 +1,46 @@
 ---
-UID : NI:ehstorbandmgmt.IOCTL_EHSTOR_BANDMGMT_ENUMERATE_BANDS
-title : IOCTL_EHSTOR_BANDMGMT_ENUMERATE_BANDS
-author : windows-driver-content
-description : This IOCTL_EHSTOR_BANDMGMT_ENUMERATE_BANDS request is sent to retrieve the list of bands for a storage device under band management. Banding information is returned in a table of band entries that includes band location and security properties.
-old-location : storage\ioctl_ehstor_bandmgmt_enumerate_bands.htm
-old-project : storage
-ms.assetid : 80F7546C-3683-460B-A0D9-AD41386E6195
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_ehstor_bandmgmt_enumerate_bands, IOCTL_EHSTOR_BANDMGMT_ENUMERATE_BANDS control code [Storage Devices], IOCTL_EHSTOR_BANDMGMT_ENUMERATE_BANDS, ehstorbandmgmt/IOCTL_EHSTOR_BANDMGMT_ENUMERATE_BANDS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ehstorbandmgmt.h
-req.include-header : EhStorBandMgmt.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with  Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXVA_VideoSample32
+UID: NI:ehstorbandmgmt.IOCTL_EHSTOR_BANDMGMT_ENUMERATE_BANDS
+title: IOCTL_EHSTOR_BANDMGMT_ENUMERATE_BANDS
+author: windows-driver-content
+description: This IOCTL_EHSTOR_BANDMGMT_ENUMERATE_BANDS request is sent to retrieve the list of bands for a storage device under band management. Banding information is returned in a table of band entries that includes band location and security properties.
+old-location: storage\ioctl_ehstor_bandmgmt_enumerate_bands.htm
+old-project: storage
+ms.assetid: 80F7546C-3683-460B-A0D9-AD41386E6195
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_ehstor_bandmgmt_enumerate_bands, IOCTL_EHSTOR_BANDMGMT_ENUMERATE_BANDS control code [Storage Devices], IOCTL_EHSTOR_BANDMGMT_ENUMERATE_BANDS, ehstorbandmgmt/IOCTL_EHSTOR_BANDMGMT_ENUMERATE_BANDS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ehstorbandmgmt.h
+req.include-header: EhStorBandMgmt.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with  Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	EhStorBandMgmt.h
+apiname:
+-	IOCTL_EHSTOR_BANDMGMT_ENUMERATE_BANDS
+product: Windows
+targetos: Windows
+req.typenames: DXVA_VideoSample32
 ---
 
 # IOCTL_EHSTOR_BANDMGMT_ENUMERATE_BANDS IOCTL

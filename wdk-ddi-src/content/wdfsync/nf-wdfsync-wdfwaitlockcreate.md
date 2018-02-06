@@ -1,42 +1,50 @@
 ---
-UID : NF:wdfsync.WdfWaitLockCreate
-title : WdfWaitLockCreate function
-author : windows-driver-content
-description : The WdfWaitLockCreate method creates a framework wait-lock object.
-old-location : wdf\wdfwaitlockcreate.htm
-old-project : wdf
-ms.assetid : a0ffa493-4490-440b-9f67-426a7b5d4442
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WdfWaitLockCreate, DFSynchroRef_19d02cf5-4fa3-449c-8913-4a5ff80bd578.xml, WdfWaitLockCreate method, wdfsync/WdfWaitLockCreate, wdf.wdfwaitlockcreate, PFN_WDFWAITLOCKCREATE, kmdf.wdfwaitlockcreate
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfsync.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2, ParentObjectCheckLock
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_REQUEST_SEND_OPTIONS, *PWDF_REQUEST_SEND_OPTIONS
-req.product : Windows 10 or later.
+UID: NF:wdfsync.WdfWaitLockCreate
+title: WdfWaitLockCreate function
+author: windows-driver-content
+description: The WdfWaitLockCreate method creates a framework wait-lock object.
+old-location: wdf\wdfwaitlockcreate.htm
+old-project: wdf
+ms.assetid: a0ffa493-4490-440b-9f67-426a7b5d4442
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WdfWaitLockCreate, DFSynchroRef_19d02cf5-4fa3-449c-8913-4a5ff80bd578.xml, WdfWaitLockCreate method, wdfsync/WdfWaitLockCreate, wdf.wdfwaitlockcreate, PFN_WDFWAITLOCKCREATE, kmdf.wdfwaitlockcreate
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfsync.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2, ParentObjectCheckLock
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+-	WUDFx02000.dll
+-	WUDFx02000.dll.dll
+apiname:
+-	WdfWaitLockCreate
+product: Windows
+targetos: Windows
+req.typenames: WDF_REQUEST_SEND_OPTIONS, *PWDF_REQUEST_SEND_OPTIONS
+req.product: Windows 10 or later.
 ---
 
 

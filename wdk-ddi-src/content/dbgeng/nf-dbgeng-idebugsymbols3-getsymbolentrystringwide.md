@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugSymbols3.GetSymbolEntryStringWide
-title : IDebugSymbols3::GetSymbolEntryStringWide method
-author : windows-driver-content
-description : The GetSymbolEntryStringWide method returns string information for the specified symbol.
-old-location : debugger\getsymbolentrystringwide.htm
-old-project : debugger
-ms.assetid : 65a8d959-98f5-4545-8865-d6d81a752d48
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugSymbols3 interface [Windows Debugging], GetSymbolEntryStringWide method, GetSymbolEntryStringWide method [Windows Debugging], IDebugSymbols3 interface, GetSymbolEntryStringWide, dbgeng/IDebugSymbols3::GetSymbolEntryStringWide, IDebugSymbols3::GetSymbolEntryStringWide, debugger.getsymbolentrystringwide, IDebugSymbols3, GetSymbolEntryStringWide method [Windows Debugging]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSymbols3.GetSymbolEntryStringWide
+title: IDebugSymbols3::GetSymbolEntryStringWide method
+author: windows-driver-content
+description: The GetSymbolEntryStringWide method returns string information for the specified symbol.
+old-location: debugger\getsymbolentrystringwide.htm
+old-project: debugger
+ms.assetid: 65a8d959-98f5-4545-8865-d6d81a752d48
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugSymbols3 interface [Windows Debugging], GetSymbolEntryStringWide method, GetSymbolEntryStringWide method [Windows Debugging], IDebugSymbols3 interface, GetSymbolEntryStringWide, dbgeng/IDebugSymbols3::GetSymbolEntryStringWide, IDebugSymbols3::GetSymbolEntryStringWide, debugger.getsymbolentrystringwide, IDebugSymbols3, GetSymbolEntryStringWide method [Windows Debugging]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugSymbols3.GetSymbolEntryStringWide
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

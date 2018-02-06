@@ -1,42 +1,47 @@
 ---
-UID : NC:poscx.EVT_POS_CX_DEVICE_REMOTE_RETAIN
-title : EVT_POS_CX_DEVICE_REMOTE_RETAIN
-author : windows-driver-content
-description : The EVT_POS_CX_DEVICE_REMOTE_RETAIN callback is called whenever PosCx attempts to hold onto a claim on a network device and allows the driver to do additional work.
-old-location : pos\evt_pos_cx_device_remote_retain.htm
-old-project : pos
-ms.assetid : 9B23DB23-D995-4737-9302-872F2144823D
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : pos.evt_pos_cx_device_remote_retain, EvtPosCxDeviceRemoteRetain callback function, EvtPosCxDeviceRemoteRetain, EVT_POS_CX_DEVICE_REMOTE_RETAIN, EVT_POS_CX_DEVICE_REMOTE_RETAIN, poscx/EvtPosCxDeviceRemoteRetain
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : poscx.h
-req.include-header : Poscx.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PCFILTER_DESCRIPTOR, *PPCFILTER_DESCRIPTOR
-req.product : Windows 10 or later.
+UID: NC:poscx.EVT_POS_CX_DEVICE_REMOTE_RETAIN
+title: EVT_POS_CX_DEVICE_REMOTE_RETAIN
+author: windows-driver-content
+description: The EVT_POS_CX_DEVICE_REMOTE_RETAIN callback is called whenever PosCx attempts to hold onto a claim on a network device and allows the driver to do additional work.
+old-location: pos\evt_pos_cx_device_remote_retain.htm
+old-project: pos
+ms.assetid: 9B23DB23-D995-4737-9302-872F2144823D
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: pos.evt_pos_cx_device_remote_retain, EvtPosCxDeviceRemoteRetain callback function, EvtPosCxDeviceRemoteRetain, EVT_POS_CX_DEVICE_REMOTE_RETAIN, EVT_POS_CX_DEVICE_REMOTE_RETAIN, poscx/EvtPosCxDeviceRemoteRetain
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: poscx.h
+req.include-header: Poscx.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	poscx.h
+apiname:
+-	EvtPosCxDeviceRemoteRetain
+product: Windows
+targetos: Windows
+req.typenames: PCFILTER_DESCRIPTOR, *PPCFILTER_DESCRIPTOR
+req.product: Windows 10 or later.
 ---
 
 

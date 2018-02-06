@@ -1,42 +1,47 @@
 ---
-UID : NC:storport.HW_UNIT_CONTROL
-title : HW_UNIT_CONTROL
-author : windows-driver-content
-description : A miniport driver's HwStorUnitControl routine is called to perform synchronous operations to control the state of storage unit device. The miniport driver is notified to start a unit or handle a power state transition for a unit device.
-old-location : storage\hwstorunitcontrol.htm
-old-project : storage
-ms.assetid : 33534C7A-C88D-4980-98A7-2B94488D3550
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.hwstorunitcontrol, HwStorUnitControl routine [Storage Devices], HwStorUnitControl, HW_UNIT_CONTROL, HW_UNIT_CONTROL, storport/HwStorUnitControl
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSTORAGE_DEVICE_UNIQUE_IDENTIFIER, STORAGE_DEVICE_UNIQUE_IDENTIFIER"
-req.product : Windows 10 or later.
+UID: NC:storport.HW_UNIT_CONTROL
+title: HW_UNIT_CONTROL
+author: windows-driver-content
+description: A miniport driver's HwStorUnitControl routine is called to perform synchronous operations to control the state of storage unit device. The miniport driver is notified to start a unit or handle a power state transition for a unit device.
+old-location: storage\hwstorunitcontrol.htm
+old-project: storage
+ms.assetid: 33534C7A-C88D-4980-98A7-2B94488D3550
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.hwstorunitcontrol, HwStorUnitControl routine [Storage Devices], HwStorUnitControl, HW_UNIT_CONTROL, HW_UNIT_CONTROL, storport/HwStorUnitControl
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Storport.h
+apiname:
+-	HwStorUnitControl
+product: Windows
+targetos: Windows
+req.typenames: "*PSTORAGE_DEVICE_UNIQUE_IDENTIFIER, STORAGE_DEVICE_UNIQUE_IDENTIFIER"
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NC:ndis.MINIPORT_REMOVE_DEVICE
-title : MINIPORT_REMOVE_DEVICE
-author : windows-driver-content
-description : The MiniportRemoveDevice function releases resources that the MiniportAddDevice function allocated.
-old-location : netvista\miniportremovedevice.htm
-old-project : netvista
-ms.assetid : 24dd887b-575f-4790-bb53-7c3fb825bd61
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.miniportremovedevice, MiniportRemoveDevice callback function [Network Drivers Starting with Windows Vista], MiniportRemoveDevice, MINIPORT_REMOVE_DEVICE, MINIPORT_REMOVE_DEVICE, ndis/MiniportRemoveDevice, ndis_msix_ref_daeef188-96e7-4917-b37f-2af8ba18eda9.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
+UID: NC:ndis.MINIPORT_REMOVE_DEVICE
+title: MINIPORT_REMOVE_DEVICE
+author: windows-driver-content
+description: The MiniportRemoveDevice function releases resources that the MiniportAddDevice function allocated.
+old-location: netvista\miniportremovedevice.htm
+old-project: netvista
+ms.assetid: 24dd887b-575f-4790-bb53-7c3fb825bd61
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.miniportremovedevice, MiniportRemoveDevice callback function [Network Drivers Starting with Windows Vista], MiniportRemoveDevice, MINIPORT_REMOVE_DEVICE, MINIPORT_REMOVE_DEVICE, ndis/MiniportRemoveDevice, ndis_msix_ref_daeef188-96e7-4917-b37f-2af8ba18eda9.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ndis.h
+apiname:
+-	MiniportRemoveDevice
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:bthddi._CO_HEADER
-title : "_CO_HEADER"
-author : windows-driver-content
-description : The CO_HEADER structure is used to specify values for the Header member of the L2CAP_CONFIG_OPTION structure.
-old-location : bltooth\co_header.htm
-old-project : bltooth
-ms.assetid : 76fa3316-bbec-4bf1-8cb8-d92e9f54d2d6
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : bth_structs_bb345dd7-5895-472a-ab07-38c8b5ac6a72.xml, CO_HEADER, bthddi/CO_HEADER, CO_HEADER structure [Bluetooth Devices], bltooth.co_header, _CO_HEADER
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : bthddi.h
-req.include-header : Bthddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Versions:\_Supported in Windows Vista, and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback   function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access   paged memory)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : CO_HEADER
+UID: NS:bthddi._CO_HEADER
+title: "_CO_HEADER"
+author: windows-driver-content
+description: The CO_HEADER structure is used to specify values for the Header member of the L2CAP_CONFIG_OPTION structure.
+old-location: bltooth\co_header.htm
+old-project: bltooth
+ms.assetid: 76fa3316-bbec-4bf1-8cb8-d92e9f54d2d6
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: bth_structs_bb345dd7-5895-472a-ab07-38c8b5ac6a72.xml, CO_HEADER, bthddi/CO_HEADER, CO_HEADER structure [Bluetooth Devices], bltooth.co_header, _CO_HEADER
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: bthddi.h
+req.include-header: Bthddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Versions:\_Supported in Windows Vista, and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback   function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access   paged memory)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	bthddi.h
+apiname:
+-	CO_HEADER
+product: Windows
+targetos: Windows
+req.typenames: CO_HEADER
 ---
 
 # _CO_HEADER structure

@@ -1,42 +1,50 @@
 ---
-UID : NF:wdffdo.WdfFdoInitQueryProperty
-title : WdfFdoInitQueryProperty function
-author : windows-driver-content
-description : The WdfFdoInitQueryProperty method retrieves a specified device property.
-old-location : wdf\wdffdoinitqueryproperty.htm
-old-project : wdf
-ms.assetid : e58def50-3e35-43d9-9f7e-31283256b204
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.wdffdoinitqueryproperty, kmdf.wdffdoinitqueryproperty, PFN_WDFFDOINITQUERYPROPERTY, WdfFdoInitQueryProperty method, WdfFdoInitQueryProperty, wdffdo/WdfFdoInitQueryProperty, DFDeviceObjectFdoPdoRef_92306389-1cdf-4751-a0c5-552cdb5e4556.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdffdo.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : DeviceInitAPI, DriverCreate, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_DRIVER_VERSION_AVAILABLE_PARAMS, *PWDF_DRIVER_VERSION_AVAILABLE_PARAMS
-req.product : Windows 10 or later.
+UID: NF:wdffdo.WdfFdoInitQueryProperty
+title: WdfFdoInitQueryProperty function
+author: windows-driver-content
+description: The WdfFdoInitQueryProperty method retrieves a specified device property.
+old-location: wdf\wdffdoinitqueryproperty.htm
+old-project: wdf
+ms.assetid: e58def50-3e35-43d9-9f7e-31283256b204
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.wdffdoinitqueryproperty, kmdf.wdffdoinitqueryproperty, PFN_WDFFDOINITQUERYPROPERTY, WdfFdoInitQueryProperty method, WdfFdoInitQueryProperty, wdffdo/WdfFdoInitQueryProperty, DFDeviceObjectFdoPdoRef_92306389-1cdf-4751-a0c5-552cdb5e4556.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdffdo.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: DeviceInitAPI, DriverCreate, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+-	WUDFx02000.dll
+-	WUDFx02000.dll.dll
+apiname:
+-	WdfFdoInitQueryProperty
+product: Windows
+targetos: Windows
+req.typenames: WDF_DRIVER_VERSION_AVAILABLE_PARAMS, *PWDF_DRIVER_VERSION_AVAILABLE_PARAMS
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._D3DDDIARG_PRESENT
-title : "_D3DDDIARG_PRESENT"
-author : windows-driver-content
-description : The D3DDDIARG_PRESENT structure describes a resource to display.
-old-location : display\d3dddiarg_present.htm
-old-project : display
-ms.assetid : ee872d01-4bc6-46ce-80b7-3f73dd1a89ab
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DDDIARG_PRESENT, d3dumddi/D3DDDIARG_PRESENT, display.d3dddiarg_present, D3DDDIARG_PRESENT structure [Display Devices], _D3DDDIARG_PRESENT, UMDisplayDriver_param_Structs_1406aa28-1355-4e46-886f-9121fcbd7750.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDIARG_PRESENT
+UID: NS:d3dumddi._D3DDDIARG_PRESENT
+title: "_D3DDDIARG_PRESENT"
+author: windows-driver-content
+description: The D3DDDIARG_PRESENT structure describes a resource to display.
+old-location: display\d3dddiarg_present.htm
+old-project: display
+ms.assetid: ee872d01-4bc6-46ce-80b7-3f73dd1a89ab
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DDDIARG_PRESENT, d3dumddi/D3DDDIARG_PRESENT, display.d3dddiarg_present, D3DDDIARG_PRESENT structure [Display Devices], _D3DDDIARG_PRESENT, UMDisplayDriver_param_Structs_1406aa28-1355-4e46-886f-9121fcbd7750.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	D3DDDIARG_PRESENT
+product: Windows
+targetos: Windows
+req.typenames: D3DDDIARG_PRESENT
 ---
 
 # _D3DDDIARG_PRESENT structure

@@ -1,42 +1,47 @@
 ---
-UID : NE:spb.SPB_TRANSFER_DIRECTION
-title : SPB_TRANSFER_DIRECTION
-author : windows-driver-content
-description : The SPB_TRANSFER_DIRECTION enumeration describes the direction (read or write) of a single transfer in an I/O transfer sequence.
-old-location : spb\spb_transfer_direction.htm
-old-project : SPB
-ms.assetid : 617450AB-6AC8-485A-BD88-377F903EEE15
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : SPB_TRANSFER_DIRECTION, SpbTransferDirectionFromDevice, spb/SpbTransferDirectionFromDevice, SPB_TRANSFER_DIRECTION enumeration [Buses], spb/SpbTransferDirectionToDevice, SPB.spb_transfer_direction, spb/SpbTransferDirectionMax, SpbTransferDirectionNone, SpbTransferDirectionMax, *PSPB_TRANSFER_DIRECTION, spb/SpbTransferDirectionNone, spb/SPB_TRANSFER_DIRECTION, SpbTransferDirectionToDevice
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : spb.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SPB_TRANSFER_DIRECTION, *PSPB_TRANSFER_DIRECTION
-req.product : Windows 10 or later.
+UID: NE:spb.SPB_TRANSFER_DIRECTION
+title: SPB_TRANSFER_DIRECTION
+author: windows-driver-content
+description: The SPB_TRANSFER_DIRECTION enumeration describes the direction (read or write) of a single transfer in an I/O transfer sequence.
+old-location: spb\spb_transfer_direction.htm
+old-project: SPB
+ms.assetid: 617450AB-6AC8-485A-BD88-377F903EEE15
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: SPB_TRANSFER_DIRECTION, SpbTransferDirectionFromDevice, spb/SpbTransferDirectionFromDevice, SPB_TRANSFER_DIRECTION enumeration [Buses], spb/SpbTransferDirectionToDevice, SPB.spb_transfer_direction, spb/SpbTransferDirectionMax, SpbTransferDirectionNone, SpbTransferDirectionMax, *PSPB_TRANSFER_DIRECTION, spb/SpbTransferDirectionNone, spb/SPB_TRANSFER_DIRECTION, SpbTransferDirectionToDevice
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: spb.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Spb.h
+apiname:
+-	SPB_TRANSFER_DIRECTION
+product: Windows
+targetos: Windows
+req.typenames: SPB_TRANSFER_DIRECTION, *PSPB_TRANSFER_DIRECTION
+req.product: Windows 10 or later.
 ---
 
 # SPB_TRANSFER_DIRECTION Enumeration
@@ -55,31 +60,31 @@ typedef enum  {
 ## Constants
 
 <table>
-
-<tr>
-<td>SpbTransferDirectionFromDevice</td>
-<td>The data transfer direction is from the device to system memory (read from device).</td>
-</tr>
-
-<tr>
-<td>SpbTransferDirectionMax</td>
-<td>Reserved for use by the operating system.</td>
-</tr>
-
-<tr>
-<td>SpbTransferDirectionNone</td>
-<td>The data transfer direction is undefined.</td>
-</tr>
-
-<tr>
-<td>SpbTransferDirectionToDevice</td>
-<td>The data transfer direction is from system memory to the device (write to device).</td>
-</tr>
+            
+                <tr>
+                    <td>SpbTransferDirectionFromDevice</td>
+                    <td>The data transfer direction is from the device to system memory (read from device).</td>
+                </tr>
+            
+                <tr>
+                    <td>SpbTransferDirectionMax</td>
+                    <td>Reserved for use by the operating system.</td>
+                </tr>
+            
+                <tr>
+                    <td>SpbTransferDirectionNone</td>
+                    <td>The data transfer direction is undefined.</td>
+                </tr>
+            
+                <tr>
+                    <td>SpbTransferDirectionToDevice</td>
+                    <td>The data transfer direction is from system memory to the device (write to device).</td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-The values in this enumeration indicate the directions of the individual transfers in an I/O transfer sequence. The input buffer for an <a href="https://msdn.microsoft.com/library/windows/hardware/hh450857">IOCTL_SPB_EXECUTE_SEQUENCE</a> I/O control request is an <a href="https://msdn.microsoft.com/library/windows/hardware/hh406221">SPB_TRANSFER_LIST</a> structure that specifies a list of transfers for the sequence. Each transfer is described by an <a href="https://msdn.microsoft.com/library/windows/hardware/hh406223">SPB_TRANSFER_LIST_ENTRY</a> structure that contains the transfer parameters, which include the transfer direction. The transfer direction is <b>SpbTransferDirectionFromDevice</b> for a read operation, and is <b>SpbTransferDirectionToDevice</b> for a write operation.
+        The values in this enumeration indicate the directions of the individual transfers in an I/O transfer sequence. The input buffer for an <a href="https://msdn.microsoft.com/library/windows/hardware/hh450857">IOCTL_SPB_EXECUTE_SEQUENCE</a> I/O control request is an <a href="https://msdn.microsoft.com/library/windows/hardware/hh406221">SPB_TRANSFER_LIST</a> structure that specifies a list of transfers for the sequence. Each transfer is described by an <a href="https://msdn.microsoft.com/library/windows/hardware/hh406223">SPB_TRANSFER_LIST_ENTRY</a> structure that contains the transfer parameters, which include the transfer direction. The transfer direction is <b>SpbTransferDirectionFromDevice</b> for a read operation, and is <b>SpbTransferDirectionToDevice</b> for a write operation.
 
 Your SPB controller driver can call  the <a href="https://msdn.microsoft.com/library/windows/hardware/hh450922">SpbRequestGetParameters</a> method to retrieve a set of SPB-specific parameters from an I/O request. One of these parameters is an <b>SPB_TRANSFER_DIRECTION</b> enumeration value that indicates the transfer direction of the previous I/O request. The SPB controller driver can use this direction value to determine whether the current read or write (<a href="https://msdn.microsoft.com/library/windows/hardware/ff549327">IRP_MJ_READ</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff550819">IRP_MJ_WRITE</a>) request requires a change in transfer direction on the bus.
 
@@ -93,9 +98,9 @@ A lock (<a href="https://msdn.microsoft.com/library/windows/hardware/hh450858">I
 | **Windows version** | Supported starting with Windows 8. Supported starting with Windows 8. |
 | **Header** | spb.h |
 
-## See Also
+    ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549327">IRP_MJ_READ</a>
+        <a href="https://msdn.microsoft.com/library/windows/hardware/ff549327">IRP_MJ_READ</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh450922">SpbRequestGetParameters</a>
 

@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dkmddi.DXGKDDI_VIDPNTARGETMODESET_ADDMODE
-title : DXGKDDI_VIDPNTARGETMODESET_ADDMODE
-author : windows-driver-content
-description : The pfnAddMode function adds a VidPN target mode to a specified VidPN target mode set object.
-old-location : display\dxgk_vidpntargetmodeset_interface_pfnaddmode.htm
-old-project : display
-ms.assetid : 96c14056-aa93-4164-8adf-31fa1b3d33d3
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgk_vidpntargetmodeset_interface_pfnaddmode, dxgk_vidpntargetmodeset_interface_pfnAddMode callback function [Display Devices], dxgk_vidpntargetmodeset_interface_pfnAddMode, DXGKDDI_VIDPNTARGETMODESET_ADDMODE, DXGKDDI_VIDPNTARGETMODESET_ADDMODE, d3dkmddi/dxgk_vidpntargetmodeset_interface_pfnAddMode, VidPnFunctions_96cfc36e-77db-49c8-b19c-e56624e72fb4.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
+UID: NC:d3dkmddi.DXGKDDI_VIDPNTARGETMODESET_ADDMODE
+title: DXGKDDI_VIDPNTARGETMODESET_ADDMODE
+author: windows-driver-content
+description: The pfnAddMode function adds a VidPN target mode to a specified VidPN target mode set object.
+old-location: display\dxgk_vidpntargetmodeset_interface_pfnaddmode.htm
+old-project: display
+ms.assetid: 96c14056-aa93-4164-8adf-31fa1b3d33d3
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgk_vidpntargetmodeset_interface_pfnaddmode, dxgk_vidpntargetmodeset_interface_pfnAddMode callback function [Display Devices], dxgk_vidpntargetmodeset_interface_pfnAddMode, DXGKDDI_VIDPNTARGETMODESET_ADDMODE, DXGKDDI_VIDPNTARGETMODESET_ADDMODE, d3dkmddi/dxgk_vidpntargetmodeset_interface_pfnAddMode, VidPnFunctions_96cfc36e-77db-49c8-b19c-e56624e72fb4.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	dxgk_vidpntargetmodeset_interface_pfnAddMode
+product: Windows
+targetos: Windows
+req.typenames: DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddndis._NDIS_PM_WOL_PATTERN
-title : "_NDIS_PM_WOL_PATTERN"
-author : windows-driver-content
-description : The NDIS_PM_WOL_PATTERN structure defines a wake-on-LAN (WOL) pattern.
-old-location : netvista\ndis_pm_wol_pattern.htm
-old-project : netvista
-ms.assetid : 2ca1fdbe-efd3-4607-aab1-751e6d5d025b
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NDIS_PM_WOL_PATTERN, ntddndis/NDIS_PM_WOL_PATTERN, PNDIS_PM_WOL_PATTERN structure pointer [Network Drivers Starting with Windows Vista], ntddndis/PNDIS_PM_WOL_PATTERN, _NDIS_PM_WOL_PATTERN, PNDIS_PM_WOL_PATTERN, *PNDIS_PM_WOL_PATTERN, miniport_power_management_ref_ce048c91-111a-406d-8dc9-958394bc78cd.xml, netvista.ndis_pm_wol_pattern, NDIS_PM_WOL_PATTERN structure [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddndis.h
-req.include-header : Ntddndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.20 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_PM_WOL_PATTERN, *PNDIS_PM_WOL_PATTERN
+UID: NS:ntddndis._NDIS_PM_WOL_PATTERN
+title: "_NDIS_PM_WOL_PATTERN"
+author: windows-driver-content
+description: The NDIS_PM_WOL_PATTERN structure defines a wake-on-LAN (WOL) pattern.
+old-location: netvista\ndis_pm_wol_pattern.htm
+old-project: netvista
+ms.assetid: 2ca1fdbe-efd3-4607-aab1-751e6d5d025b
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NDIS_PM_WOL_PATTERN, ntddndis/NDIS_PM_WOL_PATTERN, PNDIS_PM_WOL_PATTERN structure pointer [Network Drivers Starting with Windows Vista], ntddndis/PNDIS_PM_WOL_PATTERN, _NDIS_PM_WOL_PATTERN, PNDIS_PM_WOL_PATTERN, *PNDIS_PM_WOL_PATTERN, miniport_power_management_ref_ce048c91-111a-406d-8dc9-958394bc78cd.xml, netvista.ndis_pm_wol_pattern, NDIS_PM_WOL_PATTERN structure [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddndis.h
+req.include-header: Ntddndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.20 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddndis.h
+apiname:
+-	NDIS_PM_WOL_PATTERN
+product: Windows
+targetos: Windows
+req.typenames: NDIS_PM_WOL_PATTERN, *PNDIS_PM_WOL_PATTERN
 ---
 
 # _NDIS_PM_WOL_PATTERN structure

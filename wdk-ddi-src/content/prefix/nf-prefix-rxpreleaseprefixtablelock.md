@@ -1,42 +1,47 @@
 ---
-UID : NF:prefix.RxpReleasePrefixTableLock
-title : RxpReleasePrefixTableLock function
-author : windows-driver-content
-description : RxpReleasePrefixTableLock releases a previously acquired shared or exclusive prefix table lock.
-old-location : ifsk\rxpreleaseprefixtablelock.htm
-old-project : ifsk
-ms.assetid : 57aef4ed-2ece-4af3-b1ca-e4fe5a306f82
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : RxpReleasePrefixTableLock, rxref_34f5b33a-efeb-42a0-8e57-6c32c262319a.xml, RxpReleasePrefixTableLock function [Installable File System Drivers], prefix/RxpReleasePrefixTableLock, ifsk.rxpreleaseprefixtablelock
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : prefix.h
-req.include-header : Prefix.h
-req.target-type : Desktop
-req.target-min-winverclnt : RxpReleasePrefixTableLock routine is only available on Windows XP and Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SHIMOPTS, *PSHIMOPTS
-req.product : Windows 10 or later.
+UID: NF:prefix.RxpReleasePrefixTableLock
+title: RxpReleasePrefixTableLock function
+author: windows-driver-content
+description: RxpReleasePrefixTableLock releases a previously acquired shared or exclusive prefix table lock.
+old-location: ifsk\rxpreleaseprefixtablelock.htm
+old-project: ifsk
+ms.assetid: 57aef4ed-2ece-4af3-b1ca-e4fe5a306f82
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: RxpReleasePrefixTableLock, rxref_34f5b33a-efeb-42a0-8e57-6c32c262319a.xml, RxpReleasePrefixTableLock function [Installable File System Drivers], prefix/RxpReleasePrefixTableLock, ifsk.rxpreleaseprefixtablelock
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: prefix.h
+req.include-header: Prefix.h
+req.target-type: Desktop
+req.target-min-winverclnt: RxpReleasePrefixTableLock routine is only available on Windows XP and Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	prefix.h
+apiname:
+-	RxpReleasePrefixTableLock
+product: Windows
+targetos: Windows
+req.typenames: SHIMOPTS, *PSHIMOPTS
+req.product: Windows 10 or later.
 ---
 
 

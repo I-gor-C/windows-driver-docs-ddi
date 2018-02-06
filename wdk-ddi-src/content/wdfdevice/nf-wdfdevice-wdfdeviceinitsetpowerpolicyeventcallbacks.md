@@ -1,42 +1,50 @@
 ---
-UID : NF:wdfdevice.WdfDeviceInitSetPowerPolicyEventCallbacks
-title : WdfDeviceInitSetPowerPolicyEventCallbacks function
-author : windows-driver-content
-description : The WdfDeviceInitSetPowerPolicyEventCallbacks method registers a driver's power policy event callback functions.
-old-location : wdf\wdfdeviceinitsetpowerpolicyeventcallbacks.htm
-old-project : wdf
-ms.assetid : ae74d58c-3b36-4298-aa6f-4c272e7ff61c
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WdfDeviceInitSetPowerPolicyEventCallbacks, PFN_WDFDEVICEINITSETPOWERPOLICYEVENTCALLBACKS, wdfdevice/WdfDeviceInitSetPowerPolicyEventCallbacks, DFDeviceObjectGeneralRef_7a73b769-9408-4349-b269-53dff2261d3d.xml, WdfDeviceInitSetPowerPolicyEventCallbacks method, kmdf.wdfdeviceinitsetpowerpolicyeventcallbacks, wdf.wdfdeviceinitsetpowerpolicyeventcallbacks
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfdevice.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : ChildDeviceInitAPI, DeviceInitAPI, DriverCreate, FDOPowerPolicyOwnerAPI, KmdfIrql, KmdfIrql2, NonFDONotPowerPolicyOwnerAPI, PdoDeviceInitAPI
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_STATE_NOTIFICATION_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfdevice.WdfDeviceInitSetPowerPolicyEventCallbacks
+title: WdfDeviceInitSetPowerPolicyEventCallbacks function
+author: windows-driver-content
+description: The WdfDeviceInitSetPowerPolicyEventCallbacks method registers a driver's power policy event callback functions.
+old-location: wdf\wdfdeviceinitsetpowerpolicyeventcallbacks.htm
+old-project: wdf
+ms.assetid: ae74d58c-3b36-4298-aa6f-4c272e7ff61c
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WdfDeviceInitSetPowerPolicyEventCallbacks, PFN_WDFDEVICEINITSETPOWERPOLICYEVENTCALLBACKS, wdfdevice/WdfDeviceInitSetPowerPolicyEventCallbacks, DFDeviceObjectGeneralRef_7a73b769-9408-4349-b269-53dff2261d3d.xml, WdfDeviceInitSetPowerPolicyEventCallbacks method, kmdf.wdfdeviceinitsetpowerpolicyeventcallbacks, wdf.wdfdeviceinitsetpowerpolicyeventcallbacks
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfdevice.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: ChildDeviceInitAPI, DeviceInitAPI, DriverCreate, FDOPowerPolicyOwnerAPI, KmdfIrql, KmdfIrql2, NonFDONotPowerPolicyOwnerAPI, PdoDeviceInitAPI
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+-	WUDFx02000.dll
+-	WUDFx02000.dll.dll
+apiname:
+-	WdfDeviceInitSetPowerPolicyEventCallbacks
+product: Windows
+targetos: Windows
+req.typenames: WDF_STATE_NOTIFICATION_TYPE
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._DXVADDI_FILTERVALUES
-title : "_DXVADDI_FILTERVALUES"
-author : windows-driver-content
-description : The DXVADDI_FILTERVALUES structure describes values that are related to a filter.
-old-location : display\dxvaddi_filtervalues.htm
-old-project : display
-ms.assetid : 45273541-0638-4e8e-b6b7-5183b481ccc4
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxvaddi_filtervalues, DXVADDI_FILTERVALUES structure [Display Devices], _DXVADDI_FILTERVALUES, d3dumddi/DXVADDI_FILTERVALUES, DXVADDI_FILTERVALUES, DXVA2_Structs_1425eb3e-586d-4777-be61-8a73148286d4.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXVADDI_FILTERVALUES
+UID: NS:d3dumddi._DXVADDI_FILTERVALUES
+title: "_DXVADDI_FILTERVALUES"
+author: windows-driver-content
+description: The DXVADDI_FILTERVALUES structure describes values that are related to a filter.
+old-location: display\dxvaddi_filtervalues.htm
+old-project: display
+ms.assetid: 45273541-0638-4e8e-b6b7-5183b481ccc4
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxvaddi_filtervalues, DXVADDI_FILTERVALUES structure [Display Devices], _DXVADDI_FILTERVALUES, d3dumddi/DXVADDI_FILTERVALUES, DXVADDI_FILTERVALUES, DXVA2_Structs_1425eb3e-586d-4777-be61-8a73148286d4.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	DXVADDI_FILTERVALUES
+product: Windows
+targetos: Windows
+req.typenames: DXVADDI_FILTERVALUES
 ---
 
 # _DXVADDI_FILTERVALUES structure

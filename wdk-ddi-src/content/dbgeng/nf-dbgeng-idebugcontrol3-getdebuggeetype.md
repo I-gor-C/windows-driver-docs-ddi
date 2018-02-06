@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugControl3.GetDebuggeeType
-title : IDebugControl3::GetDebuggeeType method
-author : windows-driver-content
-description : The GetDebuggeeType method describes the nature of the current target.
-old-location : debugger\getdebuggeetype.htm
-old-project : debugger
-ms.assetid : 86f236fa-73f8-4071-b6da-6de2d276cbff
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : dbgeng/IDebugControl::GetDebuggeeType, GetDebuggeeType method [Windows Debugging], GetDebuggeeType method [Windows Debugging], IDebugControl2 interface, debugger.getdebuggeetype, GetDebuggeeType method [Windows Debugging], IDebugControl3 interface, IDebugControl2::GetDebuggeeType, IDebugControl_4179686c-b047-41f5-98cc-28f2c6bd852d.xml, IDebugControl3, GetDebuggeeType method [Windows Debugging], IDebugControl interface, dbgeng/IDebugControl2::GetDebuggeeType, IDebugControl3 interface [Windows Debugging], GetDebuggeeType method, dbgeng/IDebugControl3::GetDebuggeeType, GetDebuggeeType, IDebugControl::GetDebuggeeType, IDebugControl interface [Windows Debugging], GetDebuggeeType method, IDebugControl2 interface [Windows Debugging], GetDebuggeeType method, IDebugControl3::GetDebuggeeType
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl3.GetDebuggeeType
+title: IDebugControl3::GetDebuggeeType method
+author: windows-driver-content
+description: The GetDebuggeeType method describes the nature of the current target.
+old-location: debugger\getdebuggeetype.htm
+old-project: debugger
+ms.assetid: 86f236fa-73f8-4071-b6da-6de2d276cbff
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: dbgeng/IDebugControl::GetDebuggeeType, GetDebuggeeType method [Windows Debugging], GetDebuggeeType method [Windows Debugging], IDebugControl2 interface, debugger.getdebuggeetype, GetDebuggeeType method [Windows Debugging], IDebugControl3 interface, IDebugControl2::GetDebuggeeType, IDebugControl_4179686c-b047-41f5-98cc-28f2c6bd852d.xml, IDebugControl3, GetDebuggeeType method [Windows Debugging], IDebugControl interface, dbgeng/IDebugControl2::GetDebuggeeType, IDebugControl3 interface [Windows Debugging], GetDebuggeeType method, dbgeng/IDebugControl3::GetDebuggeeType, GetDebuggeeType, IDebugControl::GetDebuggeeType, IDebugControl interface [Windows Debugging], GetDebuggeeType method, IDebugControl2 interface [Windows Debugging], GetDebuggeeType method, IDebugControl3::GetDebuggeeType
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl.GetDebuggeeType
+-	IDebugControl2.GetDebuggeeType
+-	IDebugControl3.GetDebuggeeType
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

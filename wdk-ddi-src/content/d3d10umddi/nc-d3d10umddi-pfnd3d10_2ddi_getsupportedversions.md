@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3D10_2DDI_GETSUPPORTEDVERSIONS
-title : PFND3D10_2DDI_GETSUPPORTEDVERSIONS
-author : windows-driver-content
-description : The GetSupportedVersions function queries for the Direct3D interface versions that the driver supports.
-old-location : display\getsupportedversions.htm
-old-project : display
-ms.assetid : b38683f3-42f2-4f5e-9482-f72e9f2e0a34
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.getsupportedversions, GetSupportedVersions callback function [Display Devices], GetSupportedVersions, PFND3D10_2DDI_GETSUPPORTEDVERSIONS, PFND3D10_2DDI_GETSUPPORTEDVERSIONS, d3d10umddi/GetSupportedVersions, UserModeDisplayDriverDx11_Functions_065e47e6-c02d-4091-b614-a93aa834cbfb.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : GetSupportedVersions is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3D10_2DDI_GETSUPPORTEDVERSIONS
+title: PFND3D10_2DDI_GETSUPPORTEDVERSIONS
+author: windows-driver-content
+description: The GetSupportedVersions function queries for the Direct3D interface versions that the driver supports.
+old-location: display\getsupportedversions.htm
+old-project: display
+ms.assetid: b38683f3-42f2-4f5e-9482-f72e9f2e0a34
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.getsupportedversions, GetSupportedVersions callback function [Display Devices], GetSupportedVersions, PFND3D10_2DDI_GETSUPPORTEDVERSIONS, PFND3D10_2DDI_GETSUPPORTEDVERSIONS, d3d10umddi/GetSupportedVersions, UserModeDisplayDriverDx11_Functions_065e47e6-c02d-4091-b614-a93aa834cbfb.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: GetSupportedVersions is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	GetSupportedVersions
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

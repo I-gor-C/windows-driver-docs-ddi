@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.ExAcquireResourceExclusiveLite
-title : ExAcquireResourceExclusiveLite function
-author : windows-driver-content
-description : The ExAcquireResourceExclusiveLite routine acquires the given resource for exclusive access by the calling thread.
-old-location : kernel\exacquireresourceexclusivelite.htm
-old-project : kernel
-ms.assetid : c7f8a6c5-15d5-4a24-a351-4fa5d6c72fbd
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : k102_894dbc3c-af92-4916-8205-539062946dbe.xml, ExAcquireResourceExclusiveLite routine [Kernel-Mode Driver Architecture], wdm/ExAcquireResourceExclusiveLite, ExAcquireResourceExclusiveLite, kernel.exacquireresourceexclusivelite
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : ExclusiveResourceAccess, IrqlExApcLte3, WithinCriticalRegion, HwStorPortProhibitedDDIs, WithinCriticalRegion(storport)
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ExAcquireResourceExclusiveLite
+title: ExAcquireResourceExclusiveLite function
+author: windows-driver-content
+description: The ExAcquireResourceExclusiveLite routine acquires the given resource for exclusive access by the calling thread.
+old-location: kernel\exacquireresourceexclusivelite.htm
+old-project: kernel
+ms.assetid: c7f8a6c5-15d5-4a24-a351-4fa5d6c72fbd
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: k102_894dbc3c-af92-4916-8205-539062946dbe.xml, ExAcquireResourceExclusiveLite routine [Kernel-Mode Driver Architecture], wdm/ExAcquireResourceExclusiveLite, ExAcquireResourceExclusiveLite, kernel.exacquireresourceexclusivelite
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: ExclusiveResourceAccess, IrqlExApcLte3, WithinCriticalRegion, HwStorPortProhibitedDDIs, WithinCriticalRegion(storport)
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ExAcquireResourceExclusiveLite
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

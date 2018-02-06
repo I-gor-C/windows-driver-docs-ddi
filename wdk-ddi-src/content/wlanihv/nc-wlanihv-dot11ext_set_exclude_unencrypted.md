@@ -1,42 +1,47 @@
 ---
-UID : NC:wlanihv.DOT11EXT_SET_EXCLUDE_UNENCRYPTED
-title : DOT11EXT_SET_EXCLUDE_UNENCRYPTED
-author : windows-driver-content
-description : Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
-old-location : netvista\dot11extsetexcludeunencrypted.htm
-old-project : netvista
-ms.assetid : b6482124-0d65-4953-8a8f-a09c0a88d830
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.dot11extsetexcludeunencrypted, Dot11ExtSetExcludeUnencrypted callback function [Network Drivers Starting with Windows Vista], Dot11ExtSetExcludeUnencrypted, DOT11EXT_SET_EXCLUDE_UNENCRYPTED, DOT11EXT_SET_EXCLUDE_UNENCRYPTED, wlanihv/Dot11ExtSetExcludeUnencrypted, Native_802.11_IHV_Ext_aa6f594d-e5b7-4ba0-9ad8-deb42f6c23ad.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wlanihv.h
-req.include-header : Wlanihv.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating   systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDRIVER_INFO_8W, DRIVER_INFO_8W, *LPDRIVER_INFO_8W"
-req.product : Windows 10 or later.
+UID: NC:wlanihv.DOT11EXT_SET_EXCLUDE_UNENCRYPTED
+title: DOT11EXT_SET_EXCLUDE_UNENCRYPTED
+author: windows-driver-content
+description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+old-location: netvista\dot11extsetexcludeunencrypted.htm
+old-project: netvista
+ms.assetid: b6482124-0d65-4953-8a8f-a09c0a88d830
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.dot11extsetexcludeunencrypted, Dot11ExtSetExcludeUnencrypted callback function [Network Drivers Starting with Windows Vista], Dot11ExtSetExcludeUnencrypted, DOT11EXT_SET_EXCLUDE_UNENCRYPTED, DOT11EXT_SET_EXCLUDE_UNENCRYPTED, wlanihv/Dot11ExtSetExcludeUnencrypted, Native_802.11_IHV_Ext_aa6f594d-e5b7-4ba0-9ad8-deb42f6c23ad.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wlanihv.h
+req.include-header: Wlanihv.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	wlanihv.h
+apiname:
+-	Dot11ExtSetExcludeUnencrypted
+product: Windows
+targetos: Windows
+req.typenames: "*PDRIVER_INFO_8W, DRIVER_INFO_8W, *LPDRIVER_INFO_8W"
+req.product: Windows 10 or later.
 ---
 
 

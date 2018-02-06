@@ -1,41 +1,49 @@
 ---
-UID : NF:dbgeng.IDebugDataSpaces4.ReadVirtualUncached
-title : IDebugDataSpaces4::ReadVirtualUncached method
-author : windows-driver-content
-description : The ReadVirtualUncached method reads memory from the target's virtual address space.
-old-location : debugger\readvirtualuncached.htm
-old-project : debugger
-ms.assetid : 91674220-3160-40d2-9d68-56d854244711
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : ReadVirtualUncached, IDebugDataSpaces interface [Windows Debugging], ReadVirtualUncached method, dbgeng/IDebugDataSpaces::ReadVirtualUncached, ReadVirtualUncached method [Windows Debugging], IDebugDataSpaces interface, ReadVirtualUncached method [Windows Debugging], IDebugDataSpaces4 interface, IDebugDataSpaces4 interface [Windows Debugging], ReadVirtualUncached method, IDebugDataSpaces_265817a7-d690-4b8c-957f-06ec5d4f2f08.xml, IDebugDataSpaces4::ReadVirtualUncached, IDebugDataSpaces::ReadVirtualUncached, dbgeng/IDebugDataSpaces2::ReadVirtualUncached, IDebugDataSpaces2::ReadVirtualUncached, IDebugDataSpaces2 interface [Windows Debugging], ReadVirtualUncached method, dbgeng/IDebugDataSpaces3::ReadVirtualUncached, ReadVirtualUncached method [Windows Debugging], IDebugDataSpaces2 interface, debugger.readvirtualuncached, IDebugDataSpaces4, ReadVirtualUncached method [Windows Debugging], IDebugDataSpaces3::ReadVirtualUncached, IDebugDataSpaces3 interface [Windows Debugging], ReadVirtualUncached method, ReadVirtualUncached method [Windows Debugging], IDebugDataSpaces3 interface, dbgeng/IDebugDataSpaces4::ReadVirtualUncached
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugDataSpaces4.ReadVirtualUncached
+title: IDebugDataSpaces4::ReadVirtualUncached method
+author: windows-driver-content
+description: The ReadVirtualUncached method reads memory from the target's virtual address space.
+old-location: debugger\readvirtualuncached.htm
+old-project: debugger
+ms.assetid: 91674220-3160-40d2-9d68-56d854244711
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: ReadVirtualUncached, IDebugDataSpaces interface [Windows Debugging], ReadVirtualUncached method, dbgeng/IDebugDataSpaces::ReadVirtualUncached, ReadVirtualUncached method [Windows Debugging], IDebugDataSpaces interface, ReadVirtualUncached method [Windows Debugging], IDebugDataSpaces4 interface, IDebugDataSpaces4 interface [Windows Debugging], ReadVirtualUncached method, IDebugDataSpaces_265817a7-d690-4b8c-957f-06ec5d4f2f08.xml, IDebugDataSpaces4::ReadVirtualUncached, IDebugDataSpaces::ReadVirtualUncached, dbgeng/IDebugDataSpaces2::ReadVirtualUncached, IDebugDataSpaces2::ReadVirtualUncached, IDebugDataSpaces2 interface [Windows Debugging], ReadVirtualUncached method, dbgeng/IDebugDataSpaces3::ReadVirtualUncached, ReadVirtualUncached method [Windows Debugging], IDebugDataSpaces2 interface, debugger.readvirtualuncached, IDebugDataSpaces4, ReadVirtualUncached method [Windows Debugging], IDebugDataSpaces3::ReadVirtualUncached, IDebugDataSpaces3 interface [Windows Debugging], ReadVirtualUncached method, ReadVirtualUncached method [Windows Debugging], IDebugDataSpaces3 interface, dbgeng/IDebugDataSpaces4::ReadVirtualUncached
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugDataSpaces.ReadVirtualUncached
+-	IDebugDataSpaces2.ReadVirtualUncached
+-	IDebugDataSpaces3.ReadVirtualUncached
+-	IDebugDataSpaces4.ReadVirtualUncached
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NF:ntddk.RtlNumberGenericTableElements
-title : RtlNumberGenericTableElements function
-author : windows-driver-content
-description : The RtlNumberGenericTableElements routine returns the number of elements in a generic table.
-old-location : ifsk\rtlnumbergenerictableelements.htm
-old-project : ifsk
-ms.assetid : 7dea199f-ef98-4f7b-a3e4-de52fc23c8ef
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.rtlnumbergenerictableelements, RtlNumberGenericTableElements, RtlNumberGenericTableElements routine [Installable File System Drivers], ntddk/RtlNumberGenericTableElements, rtlref_f12988ba-01c3-4a34-8967-aafaf5b605f8.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntddk.h
-req.include-header : Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "< DISPATCH_LEVEL (see Remarks section)"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.RtlNumberGenericTableElements
+title: RtlNumberGenericTableElements function
+author: windows-driver-content
+description: The RtlNumberGenericTableElements routine returns the number of elements in a generic table.
+old-location: ifsk\rtlnumbergenerictableelements.htm
+old-project: ifsk
+ms.assetid: 7dea199f-ef98-4f7b-a3e4-de52fc23c8ef
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.rtlnumbergenerictableelements, RtlNumberGenericTableElements, RtlNumberGenericTableElements routine [Installable File System Drivers], ntddk/RtlNumberGenericTableElements, rtlref_f12988ba-01c3-4a34-8967-aafaf5b605f8.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntddk.h
+req.include-header: Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "< DISPATCH_LEVEL (see Remarks section)"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	RtlNumberGenericTableElements
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

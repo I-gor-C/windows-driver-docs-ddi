@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddndis._NDIS_QOS_CLASSIFICATION_ELEMENT
-title : "_NDIS_QOS_CLASSIFICATION_ELEMENT"
-author : windows-driver-content
-description : The NDIS_QOS_CLASSIFICATION_ELEMENT structure specifies an NDIS Quality of Service (QoS) traffic classification for a network adapter that supports the IEEE 802.1 Data Center Bridging (DCB) interface.Each traffic classification specifies the following:A classification condition that is based on a data pattern within the egress packet data.Starting with NDIS 6.30, classification conditions are based on a 16-bit value, such as a UDP or TCP destination port or a media access control (MAC) EtherType.A classification action that defines the traffic class to be used to handle the egress packet.Starting with NDIS 6.30, classification actions specify an 802.1p priority level.For example, a traffic classification could specify that all egress packets for destination TCP port number 3260 (condition) are assigned an 802.1p priority level 3 (action).
-old-location : netvista\ndis_qos_classification_element.htm
-old-project : netvista
-ms.assetid : 2677dc3a-7685-40bf-94c3-2efecf21e9a8
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NDIS_QOS_CLASSIFICATION_ELEMENT, _NDIS_QOS_CLASSIFICATION_ELEMENT, ntddndis/NDIS_QOS_CLASSIFICATION_ELEMENT, NDIS_QOS_CLASSIFICATION_ELEMENT structure [Network Drivers Starting with Windows Vista], PNDIS_QOS_CLASSIFICATION_ELEMENT structure pointer [Network Drivers Starting with Windows Vista], ntddndis/PNDIS_QOS_CLASSIFICATION_ELEMENT, netvista.ndis_qos_classification_element, PNDIS_QOS_CLASSIFICATION_ELEMENT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.30 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PNDIS_QOS_CLASSIFICATION_ELEMENT, NDIS_QOS_CLASSIFICATION_ELEMENT
+UID: NS:ntddndis._NDIS_QOS_CLASSIFICATION_ELEMENT
+title: "_NDIS_QOS_CLASSIFICATION_ELEMENT"
+author: windows-driver-content
+description: The NDIS_QOS_CLASSIFICATION_ELEMENT structure specifies an NDIS Quality of Service (QoS) traffic classification for a network adapter that supports the IEEE 802.1 Data Center Bridging (DCB) interface.Each traffic classification specifies the following:A classification condition that is based on a data pattern within the egress packet data.Starting with NDIS 6.30, classification conditions are based on a 16-bit value, such as a UDP or TCP destination port or a media access control (MAC) EtherType.A classification action that defines the traffic class to be used to handle the egress packet.Starting with NDIS 6.30, classification actions specify an 802.1p priority level.For example, a traffic classification could specify that all egress packets for destination TCP port number 3260 (condition) are assigned an 802.1p priority level 3 (action).
+old-location: netvista\ndis_qos_classification_element.htm
+old-project: netvista
+ms.assetid: 2677dc3a-7685-40bf-94c3-2efecf21e9a8
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NDIS_QOS_CLASSIFICATION_ELEMENT, _NDIS_QOS_CLASSIFICATION_ELEMENT, ntddndis/NDIS_QOS_CLASSIFICATION_ELEMENT, NDIS_QOS_CLASSIFICATION_ELEMENT structure [Network Drivers Starting with Windows Vista], PNDIS_QOS_CLASSIFICATION_ELEMENT structure pointer [Network Drivers Starting with Windows Vista], ntddndis/PNDIS_QOS_CLASSIFICATION_ELEMENT, netvista.ndis_qos_classification_element, PNDIS_QOS_CLASSIFICATION_ELEMENT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.30 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddndis.h
+apiname:
+-	NDIS_QOS_CLASSIFICATION_ELEMENT
+product: Windows
+targetos: Windows
+req.typenames: PNDIS_QOS_CLASSIFICATION_ELEMENT, NDIS_QOS_CLASSIFICATION_ELEMENT
 ---
 
 # _NDIS_QOS_CLASSIFICATION_ELEMENT structure

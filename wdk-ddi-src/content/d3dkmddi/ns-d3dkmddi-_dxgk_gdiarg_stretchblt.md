@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGK_GDIARG_STRETCHBLT
-title : "_DXGK_GDIARG_STRETCHBLT"
-author : windows-driver-content
-description : The DXGK_GDIARG_STRETCHBLT structure describes the characteristics of a GDI hardware-accelerated stretch bit-block transfer (bitblt) operation.
-old-location : display\dxgk_gdiarg_stretchblt.htm
-old-project : display
-ms.assetid : 11988e4c-9f4b-44cc-bc09-ff6da62f3904
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DXGK_GDIARG_STRETCHBLT structure [Display Devices], WHITEONBLACK, BLACKONWHITE, DmStructs_9c8014aa-fdad-474d-a1a1-182020850e17.xml, display.dxgk_gdiarg_stretchblt, DXGK_GDIARG_STRETCHBLT, _DXGK_GDIARG_STRETCHBLT, d3dkmddi/DXGK_GDIARG_STRETCHBLT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7 and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_GDIARG_STRETCHBLT
+UID: NS:d3dkmddi._DXGK_GDIARG_STRETCHBLT
+title: "_DXGK_GDIARG_STRETCHBLT"
+author: windows-driver-content
+description: The DXGK_GDIARG_STRETCHBLT structure describes the characteristics of a GDI hardware-accelerated stretch bit-block transfer (bitblt) operation.
+old-location: display\dxgk_gdiarg_stretchblt.htm
+old-project: display
+ms.assetid: 11988e4c-9f4b-44cc-bc09-ff6da62f3904
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DXGK_GDIARG_STRETCHBLT structure [Display Devices], WHITEONBLACK, BLACKONWHITE, DmStructs_9c8014aa-fdad-474d-a1a1-182020850e17.xml, display.dxgk_gdiarg_stretchblt, DXGK_GDIARG_STRETCHBLT, _DXGK_GDIARG_STRETCHBLT, d3dkmddi/DXGK_GDIARG_STRETCHBLT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7 and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DXGK_GDIARG_STRETCHBLT
+product: Windows
+targetos: Windows
+req.typenames: DXGK_GDIARG_STRETCHBLT
 ---
 
 # _DXGK_GDIARG_STRETCHBLT structure

@@ -1,41 +1,46 @@
 ---
-UID : NS:ndiswwan._NDIS_WWAN_USSD_REQUEST
-title : "_NDIS_WWAN_USSD_REQUEST"
-author : windows-driver-content
-description : The NDIS_WWAN_USSD_EVENT structure represents an Unstructured Supplementary Service Data (USSD) NDIS request.
-old-location : netvista\ndis_wwan_ussd_request.htm
-old-project : netvista
-ms.assetid : B98143A1-7F7D-4130-A388-72A21B89E6D8
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : ndiswwan/NDIS_WWAN_USSD_REQUEST, PNDIS_WWAN_USSD_REQUEST, *PNDIS_WWAN_USSD_REQUEST, _NDIS_WWAN_USSD_REQUEST, netvista.ndis_wwan_ussd_request, NDIS_WWAN_USSD_REQUEST, NDIS_WWAN_USSD_REQUEST structure [Network Drivers Starting with Windows Vista], PNDIS_WWAN_USSD_REQUEST structure pointer [Network Drivers Starting with Windows Vista], ndiswwan/PNDIS_WWAN_USSD_REQUEST
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndiswwan.h
-req.include-header : Ndiswwan.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with  Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PNDIS_WWAN_USSD_REQUEST, NDIS_WWAN_USSD_REQUEST"
+UID: NS:ndiswwan._NDIS_WWAN_USSD_REQUEST
+title: "_NDIS_WWAN_USSD_REQUEST"
+author: windows-driver-content
+description: The NDIS_WWAN_USSD_EVENT structure represents an Unstructured Supplementary Service Data (USSD) NDIS request.
+old-location: netvista\ndis_wwan_ussd_request.htm
+old-project: netvista
+ms.assetid: B98143A1-7F7D-4130-A388-72A21B89E6D8
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: ndiswwan/NDIS_WWAN_USSD_REQUEST, PNDIS_WWAN_USSD_REQUEST, *PNDIS_WWAN_USSD_REQUEST, _NDIS_WWAN_USSD_REQUEST, netvista.ndis_wwan_ussd_request, NDIS_WWAN_USSD_REQUEST, NDIS_WWAN_USSD_REQUEST structure [Network Drivers Starting with Windows Vista], PNDIS_WWAN_USSD_REQUEST structure pointer [Network Drivers Starting with Windows Vista], ndiswwan/PNDIS_WWAN_USSD_REQUEST
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndiswwan.h
+req.include-header: Ndiswwan.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with  Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndiswwan.h
+apiname:
+-	NDIS_WWAN_USSD_REQUEST
+product: Windows
+targetos: Windows
+req.typenames: "*PNDIS_WWAN_USSD_REQUEST, NDIS_WWAN_USSD_REQUEST"
 ---
 
 # _NDIS_WWAN_USSD_REQUEST structure

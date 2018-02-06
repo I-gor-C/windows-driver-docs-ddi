@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugClient5.SetOutputCallbacksWide
-title : IDebugClient5::SetOutputCallbacksWide method
-author : windows-driver-content
-description : The SetOutputCallbacksWide method registers an output callbacks object with this client.
-old-location : debugger\setoutputcallbackswide.htm
-old-project : debugger
-ms.assetid : cd6f68b2-2a62-4607-8c70-11a94fd75ecb
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugClient5 interface [Windows Debugging], SetOutputCallbacksWide method, debugger.setoutputcallbackswide, SetOutputCallbacksWide method [Windows Debugging], SetOutputCallbacksWide method [Windows Debugging], IDebugClient5 interface, dbgeng/IDebugClient5::SetOutputCallbacksWide, SetOutputCallbacksWide, IDebugClient5::SetOutputCallbacksWide, IDebugClient5
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugClient5.SetOutputCallbacksWide
+title: IDebugClient5::SetOutputCallbacksWide method
+author: windows-driver-content
+description: The SetOutputCallbacksWide method registers an output callbacks object with this client.
+old-location: debugger\setoutputcallbackswide.htm
+old-project: debugger
+ms.assetid: cd6f68b2-2a62-4607-8c70-11a94fd75ecb
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugClient5 interface [Windows Debugging], SetOutputCallbacksWide method, debugger.setoutputcallbackswide, SetOutputCallbacksWide method [Windows Debugging], SetOutputCallbacksWide method [Windows Debugging], IDebugClient5 interface, dbgeng/IDebugClient5::SetOutputCallbacksWide, SetOutputCallbacksWide, IDebugClient5::SetOutputCallbacksWide, IDebugClient5
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugClient5.SetOutputCallbacksWide
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

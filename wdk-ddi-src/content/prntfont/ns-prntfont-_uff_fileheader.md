@@ -1,42 +1,47 @@
 ---
-UID : NS:prntfont._UFF_FILEHEADER
-title : "_UFF_FILEHEADER"
-author : windows-driver-content
-description : The UFF_FILEHEADER structure is used to define the contents of Unidrv font format files (.uff files).
-old-location : print\uff_fileheader.htm
-old-project : print
-ms.assetid : 18eb526b-d615-4f02-b724-236c6bf16945
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : "_UFF_FILEHEADER, print.uff_fileheader, UFF_FILEHEADER structure [Print Devices], *PUFF_FILEHEADER, PUFF_FILEHEADER structure pointer [Print Devices], prntfont/PUFF_FILEHEADER, prntfont/UFF_FILEHEADER, print_unidrv-pscript_fonts_a51bc6b1-df89-423f-83e8-9fad0cd20729.xml, PUFF_FILEHEADER, UFF_FILEHEADER"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : prntfont.h
-req.include-header : Prntfont.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUFF_FILEHEADER, UFF_FILEHEADER"
-req.product : Windows 10 or later.
+UID: NS:prntfont._UFF_FILEHEADER
+title: "_UFF_FILEHEADER"
+author: windows-driver-content
+description: The UFF_FILEHEADER structure is used to define the contents of Unidrv font format files (.uff files).
+old-location: print\uff_fileheader.htm
+old-project: print
+ms.assetid: 18eb526b-d615-4f02-b724-236c6bf16945
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: "_UFF_FILEHEADER, print.uff_fileheader, UFF_FILEHEADER structure [Print Devices], *PUFF_FILEHEADER, PUFF_FILEHEADER structure pointer [Print Devices], prntfont/PUFF_FILEHEADER, prntfont/UFF_FILEHEADER, print_unidrv-pscript_fonts_a51bc6b1-df89-423f-83e8-9fad0cd20729.xml, PUFF_FILEHEADER, UFF_FILEHEADER"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: prntfont.h
+req.include-header: Prntfont.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	prntfont.h
+apiname:
+-	UFF_FILEHEADER
+product: Windows
+targetos: Windows
+req.typenames: "*PUFF_FILEHEADER, UFF_FILEHEADER"
+req.product: Windows 10 or later.
 ---
 
 # _UFF_FILEHEADER structure

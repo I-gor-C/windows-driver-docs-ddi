@@ -1,42 +1,47 @@
 ---
-UID : NC:video.PEXECUTE_DMA
-title : PEXECUTE_DMA
-author : windows-driver-content
-description : HwVidExecuteDma is a miniport driver-implemented callback routine that is responsible for retrieving physical address/length pairs from a scatter/gather list, and for programming the hardware to start the actual DMA transfer.
-old-location : display\hwvidexecutedma.htm
-old-project : display
-ms.assetid : 262c4b9b-fdca-4899-a635-fb273bbf4cc8
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.hwvidexecutedma, HwVidExecuteDma callback function [Display Devices], HwVidExecuteDma, PEXECUTE_DMA, PEXECUTE_DMA, video/HwVidExecuteDma, VideoMiniport_Functions_5819a796-9dfd-41fe-9158-6ec09ac14760.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VHF_CONFIG, *PVHF_CONFIG
-req.product : Windows 10 or later.
+UID: NC:video.PEXECUTE_DMA
+title: PEXECUTE_DMA
+author: windows-driver-content
+description: HwVidExecuteDma is a miniport driver-implemented callback routine that is responsible for retrieving physical address/length pairs from a scatter/gather list, and for programming the hardware to start the actual DMA transfer.
+old-location: display\hwvidexecutedma.htm
+old-project: display
+ms.assetid: 262c4b9b-fdca-4899-a635-fb273bbf4cc8
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.hwvidexecutedma, HwVidExecuteDma callback function [Display Devices], HwVidExecuteDma, PEXECUTE_DMA, PEXECUTE_DMA, video/HwVidExecuteDma, VideoMiniport_Functions_5819a796-9dfd-41fe-9158-6ec09ac14760.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	video.h
+apiname:
+-	HwVidExecuteDma
+product: Windows
+targetos: Windows
+req.typenames: VHF_CONFIG, *PVHF_CONFIG
+req.product: Windows 10 or later.
 ---
 
 

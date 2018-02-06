@@ -1,42 +1,47 @@
 ---
-UID : NC:video.PINT10_ALLOCATE_BUFFER
-title : PINT10_ALLOCATE_BUFFER
-author : windows-driver-content
-description : The Int10AllocateBuffer function can be used to allocate a single 4 KB block of memory in the context of another thread. After the block of memory has been allocated, it must be freed before another block of memory can be allocated.
-old-location : display\int10allocatebuffer.htm
-old-project : display
-ms.assetid : 2e6c8000-13e3-46fb-81be-18428fec2b21
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.int10allocatebuffer, Int10AllocateBuffer callback function [Display Devices], Int10AllocateBuffer, PINT10_ALLOCATE_BUFFER, PINT10_ALLOCATE_BUFFER, video/Int10AllocateBuffer, VideoPort_Functions_9e19d07d-46a9-46ee-97db-6548202ff14f.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows 2000 and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VHF_CONFIG, *PVHF_CONFIG
-req.product : Windows 10 or later.
+UID: NC:video.PINT10_ALLOCATE_BUFFER
+title: PINT10_ALLOCATE_BUFFER
+author: windows-driver-content
+description: The Int10AllocateBuffer function can be used to allocate a single 4 KB block of memory in the context of another thread. After the block of memory has been allocated, it must be freed before another block of memory can be allocated.
+old-location: display\int10allocatebuffer.htm
+old-project: display
+ms.assetid: 2e6c8000-13e3-46fb-81be-18428fec2b21
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.int10allocatebuffer, Int10AllocateBuffer callback function [Display Devices], Int10AllocateBuffer, PINT10_ALLOCATE_BUFFER, PINT10_ALLOCATE_BUFFER, video/Int10AllocateBuffer, VideoPort_Functions_9e19d07d-46a9-46ee-97db-6548202ff14f.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows 2000 and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	video.h
+apiname:
+-	Int10AllocateBuffer
+product: Windows
+targetos: Windows
+req.typenames: VHF_CONFIG, *PVHF_CONFIG
+req.product: Windows 10 or later.
 ---
 
 

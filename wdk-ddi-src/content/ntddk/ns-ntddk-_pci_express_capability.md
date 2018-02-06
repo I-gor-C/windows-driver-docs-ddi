@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddk._PCI_EXPRESS_CAPABILITY
-title : "_PCI_EXPRESS_CAPABILITY"
-author : windows-driver-content
-description : The PCI_EXPRESS_CAPABILITY structure describes a PCI Express (PCIe) capability structure.
-old-location : pci\pci_express_capability.htm
-old-project : PCI
-ms.assetid : f1faf319-95de-41f8-b32c-927ff4bb17ea
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : "*PPCI_EXPRESS_CAPABILITY, ntddk/PPCI_EXPRESS_CAPABILITY, PCI_EXPRESS_CAPABILITY, PCI_EXPRESS_CAPABILITY structure [Buses], PPCI_EXPRESS_CAPABILITY structure pointer [Buses], pci_struct_9c629781-bcee-486d-bab3-5d5b7441ac72.xml, PPCI_EXPRESS_CAPABILITY, PCI.pci_express_capability, _PCI_EXPRESS_CAPABILITY, ntddk/PCI_EXPRESS_CAPABILITY"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPCI_EXPRESS_CAPABILITY, PCI_EXPRESS_CAPABILITY"
+UID: NS:ntddk._PCI_EXPRESS_CAPABILITY
+title: "_PCI_EXPRESS_CAPABILITY"
+author: windows-driver-content
+description: The PCI_EXPRESS_CAPABILITY structure describes a PCI Express (PCIe) capability structure.
+old-location: pci\pci_express_capability.htm
+old-project: PCI
+ms.assetid: f1faf319-95de-41f8-b32c-927ff4bb17ea
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: "*PPCI_EXPRESS_CAPABILITY, ntddk/PPCI_EXPRESS_CAPABILITY, PCI_EXPRESS_CAPABILITY, PCI_EXPRESS_CAPABILITY structure [Buses], PPCI_EXPRESS_CAPABILITY structure pointer [Buses], pci_struct_9c629781-bcee-486d-bab3-5d5b7441ac72.xml, PPCI_EXPRESS_CAPABILITY, PCI.pci_express_capability, _PCI_EXPRESS_CAPABILITY, ntddk/PCI_EXPRESS_CAPABILITY"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddk.h
+apiname:
+-	PCI_EXPRESS_CAPABILITY
+product: Windows
+targetos: Windows
+req.typenames: "*PPCI_EXPRESS_CAPABILITY, PCI_EXPRESS_CAPABILITY"
 ---
 
 # _PCI_EXPRESS_CAPABILITY structure

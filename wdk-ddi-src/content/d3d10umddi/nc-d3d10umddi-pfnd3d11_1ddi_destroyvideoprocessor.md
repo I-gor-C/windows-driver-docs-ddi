@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3D11_1DDI_DESTROYVIDEOPROCESSOR
-title : PFND3D11_1DDI_DESTROYVIDEOPROCESSOR
-author : windows-driver-content
-description : Releases resources for the video processor object that were created through a call to the CreateVideoProcessor function.
-old-location : display\destroyvideoprocessor1.htm
-old-project : display
-ms.assetid : a04776ba-bc80-498e-b25d-511ecb03fb63
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.destroyvideoprocessor1, pfnDestroyVideoProcessor callback function [Display Devices], pfnDestroyVideoProcessor, PFND3D11_1DDI_DESTROYVIDEOPROCESSOR, PFND3D11_1DDI_DESTROYVIDEOPROCESSOR, d3d10umddi/pfnDestroyVideoProcessor, display.pfndestroyvideoprocessor1
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3D11_1DDI_DESTROYVIDEOPROCESSOR
+title: PFND3D11_1DDI_DESTROYVIDEOPROCESSOR
+author: windows-driver-content
+description: Releases resources for the video processor object that were created through a call to the CreateVideoProcessor function.
+old-location: display\destroyvideoprocessor1.htm
+old-project: display
+ms.assetid: a04776ba-bc80-498e-b25d-511ecb03fb63
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.destroyvideoprocessor1, pfnDestroyVideoProcessor callback function [Display Devices], pfnDestroyVideoProcessor, PFND3D11_1DDI_DESTROYVIDEOPROCESSOR, PFND3D11_1DDI_DESTROYVIDEOPROCESSOR, d3d10umddi/pfnDestroyVideoProcessor, display.pfndestroyvideoprocessor1
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	D3d10umddi.h
+apiname:
+-	pfnDestroyVideoProcessor
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

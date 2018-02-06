@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltOplockBreakH
-title : FltOplockBreakH function
-author : windows-driver-content
-description : The FltOplockBreakH routine breaks CACHE_HANDLE_LEVEL opportunistic locks (oplocks).
-old-location : ifsk\fltoplockbreakh.htm
-old-project : ifsk
-ms.assetid : 1341c0c6-f943-4f94-8535-8b6cc7b5c27e
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltOplockBreakH, ifsk.fltoplockbreakh, FltApiRef_e_to_o_55fd17fd-a64a-4837-a000-0d51685e5a18.xml, fltkernel/FltOplockBreakH, FltOplockBreakH routine [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : The FltOplockBreakH routine is available starting with Windows 7.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltOplockBreakH
+title: FltOplockBreakH function
+author: windows-driver-content
+description: The FltOplockBreakH routine breaks CACHE_HANDLE_LEVEL opportunistic locks (oplocks).
+old-location: ifsk\fltoplockbreakh.htm
+old-project: ifsk
+ms.assetid: 1341c0c6-f943-4f94-8535-8b6cc7b5c27e
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltOplockBreakH, ifsk.fltoplockbreakh, FltApiRef_e_to_o_55fd17fd-a64a-4837-a000-0d51685e5a18.xml, fltkernel/FltOplockBreakH, FltOplockBreakH routine [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: The FltOplockBreakH routine is available starting with Windows 7.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltOplockBreakH
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

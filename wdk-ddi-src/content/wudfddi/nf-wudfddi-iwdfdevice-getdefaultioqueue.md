@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFDevice.GetDefaultIoQueue
-title : IWDFDevice::GetDefaultIoQueue method
-author : windows-driver-content
-description : The GetDefaultIoQueue method retrieves the interface of the default I/O queue for a device.
-old-location : wdf\iwdfdevice_getdefaultioqueue.htm
-old-project : wdf
-ms.assetid : 9e998e54-b4c9-41ed-bba8-6f11c013f681
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : UMDFDeviceObjectRef_b4c10b3b-eba4-4e6c-8f9e-80c32705f43d.xml, IWDFDevice::GetDefaultIoQueue, GetDefaultIoQueue method, wdf.iwdfdevice_getdefaultioqueue, umdf.iwdfdevice_getdefaultioqueue, IWDFDevice interface, GetDefaultIoQueue method, IWDFDevice, GetDefaultIoQueue, wudfddi/IWDFDevice::GetDefaultIoQueue, GetDefaultIoQueue method, IWDFDevice interface
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.5
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFDevice.GetDefaultIoQueue
+title: IWDFDevice::GetDefaultIoQueue method
+author: windows-driver-content
+description: The GetDefaultIoQueue method retrieves the interface of the default I/O queue for a device.
+old-location: wdf\iwdfdevice_getdefaultioqueue.htm
+old-project: wdf
+ms.assetid: 9e998e54-b4c9-41ed-bba8-6f11c013f681
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: UMDFDeviceObjectRef_b4c10b3b-eba4-4e6c-8f9e-80c32705f43d.xml, IWDFDevice::GetDefaultIoQueue, GetDefaultIoQueue method, wdf.iwdfdevice_getdefaultioqueue, umdf.iwdfdevice_getdefaultioqueue, IWDFDevice interface, GetDefaultIoQueue method, IWDFDevice, GetDefaultIoQueue, wudfddi/IWDFDevice::GetDefaultIoQueue, GetDefaultIoQueue method, IWDFDevice interface
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.5
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFDevice.GetDefaultIoQueue
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

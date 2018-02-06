@@ -1,41 +1,46 @@
 ---
-UID : NS:compstui._OPTPARAM
-title : "_OPTPARAM"
-author : windows-driver-content
-description : An array of OPTPARAM structures is used by CPSUI applications (including printer interface DLLs) for describing all the parameter values associated with a property sheet option. The array's address is included in an OPTTYPE structure.
-old-location : print\optparam.htm
-old-project : print
-ms.assetid : d0cd2867-783c-4a41-a819-e919d4ffc1e3
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : POPTPARAM structure pointer [Print Devices], compstui/POPTPARAM, cpsuifnc_1c22c283-993e-45d7-b0c7-1148eafeb13c.xml, print.optparam, compstui/OPTPARAM, POPTPARAM, _OPTPARAM, *POPTPARAM, OPTPARAM, OPTPARAM structure [Print Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : compstui.h
-req.include-header : Compstui.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : OPTPARAM, *POPTPARAM
+UID: NS:compstui._OPTPARAM
+title: "_OPTPARAM"
+author: windows-driver-content
+description: An array of OPTPARAM structures is used by CPSUI applications (including printer interface DLLs) for describing all the parameter values associated with a property sheet option. The array's address is included in an OPTTYPE structure.
+old-location: print\optparam.htm
+old-project: print
+ms.assetid: d0cd2867-783c-4a41-a819-e919d4ffc1e3
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: POPTPARAM structure pointer [Print Devices], compstui/POPTPARAM, cpsuifnc_1c22c283-993e-45d7-b0c7-1148eafeb13c.xml, print.optparam, compstui/OPTPARAM, POPTPARAM, _OPTPARAM, *POPTPARAM, OPTPARAM, OPTPARAM structure [Print Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: compstui.h
+req.include-header: Compstui.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	compstui.h
+apiname:
+-	OPTPARAM
+product: Windows
+targetos: Windows
+req.typenames: OPTPARAM, *POPTPARAM
 ---
 
 # _OPTPARAM structure

@@ -1,42 +1,47 @@
 ---
-UID : NF:wiamdef.WIAS_LTRACE
-title : WIAS_LTRACE macro
-author : windows-driver-content
-description : The WIAS_LTRACE macro is obsolete for Windows Vista and later. It is recommended that the WIAS_TRACE macro be used instead.The WIAS_LTRACE macro writes a diagnostic WIA_TRACE message to the log file.
-old-location : image\wias_ltrace.htm
-old-project : image
-ms.assetid : 513fd718-3d35-4a7b-be28-b002a8108e86
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : IWiaLog_bb7ae826-5b43-47c1-bf94-bd491d8b91a7.xml, WIAS_LTRACE macro [Imaging Devices], wiamdef/WIAS_LTRACE, image.wias_ltrace, WIAS_LTRACE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : macro
-req.header : wiamdef.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Me, Windows XP, and later versions of the operating system. Obsolete for Windows Vista and later. Use WIAS_TRACE instead.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wiamdef.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*LPDEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2, DEVICEDIALOGDATA2"
-req.product : Windows 10 or later.
+UID: NF:wiamdef.WIAS_LTRACE
+title: WIAS_LTRACE macro
+author: windows-driver-content
+description: The WIAS_LTRACE macro is obsolete for Windows Vista and later. It is recommended that the WIAS_TRACE macro be used instead.The WIAS_LTRACE macro writes a diagnostic WIA_TRACE message to the log file.
+old-location: image\wias_ltrace.htm
+old-project: image
+ms.assetid: 513fd718-3d35-4a7b-be28-b002a8108e86
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: IWiaLog_bb7ae826-5b43-47c1-bf94-bd491d8b91a7.xml, WIAS_LTRACE macro [Imaging Devices], wiamdef/WIAS_LTRACE, image.wias_ltrace, WIAS_LTRACE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: macro
+req.header: wiamdef.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Me, Windows XP, and later versions of the operating system. Obsolete for Windows Vista and later. Use WIAS_TRACE instead.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wiamdef.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wiamdef.h
+apiname:
+-	WIAS_LTRACE
+product: Windows
+targetos: Windows
+req.typenames: "*LPDEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2, DEVICEDIALOGDATA2"
+req.product: Windows 10 or later.
 ---
 
 

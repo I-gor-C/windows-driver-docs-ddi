@@ -1,41 +1,46 @@
 ---
-UID : NF:ntddk.IoReadDiskSignature
-title : IoReadDiskSignature function
-author : windows-driver-content
-description : The IoReadDiskSignature routine reads the disk signature information for the partition table of a disk.
-old-location : storage\ioreaddisksignature.htm
-old-project : storage
-ms.assetid : c56d767f-598c-46b8-bab1-ce4de0780076
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : IoReadDiskSignature routine [Storage Devices], ntddk/IoReadDiskSignature, storage.ioreaddisksignature, rtns-disk_4bd8bcea-c43a-45ea-a074-013b8eb30e01.xml, IoReadDiskSignature
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Universal
-req.target-min-winverclnt : This routine is only available on Windows XP and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.IoReadDiskSignature
+title: IoReadDiskSignature function
+author: windows-driver-content
+description: The IoReadDiskSignature routine reads the disk signature information for the partition table of a disk.
+old-location: storage\ioreaddisksignature.htm
+old-project: storage
+ms.assetid: c56d767f-598c-46b8-bab1-ce4de0780076
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: IoReadDiskSignature routine [Storage Devices], ntddk/IoReadDiskSignature, storage.ioreaddisksignature, rtns-disk_4bd8bcea-c43a-45ea-a074-013b8eb30e01.xml, IoReadDiskSignature
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Universal
+req.target-min-winverclnt: This routine is only available on Windows XP and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoReadDiskSignature
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

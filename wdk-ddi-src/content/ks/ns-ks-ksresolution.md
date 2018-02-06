@@ -1,41 +1,46 @@
 ---
-UID : NS:ks.KSRESOLUTION
-title : KSRESOLUTION
-author : windows-driver-content
-description : The KSRESOLUTION structure specifies granularity and error of a kernel streaming clock.
-old-location : stream\ksresolution.htm
-old-project : stream
-ms.assetid : fbd6222c-6d54-4e2a-aa5b-8051f0838886
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.ksresolution, PKSRESOLUTION, KSRESOLUTION, ks/PKSRESOLUTION, KSRESOLUTION structure [Streaming Media Devices], ks-struct_eb48cf83-0b80-4955-89a4-0b363497bef5.xml, *PKSRESOLUTION, ks/KSRESOLUTION, PKSRESOLUTION structure pointer [Streaming Media Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKSRESOLUTION, KSRESOLUTION"
+UID: NS:ks.KSRESOLUTION
+title: KSRESOLUTION
+author: windows-driver-content
+description: The KSRESOLUTION structure specifies granularity and error of a kernel streaming clock.
+old-location: stream\ksresolution.htm
+old-project: stream
+ms.assetid: fbd6222c-6d54-4e2a-aa5b-8051f0838886
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.ksresolution, PKSRESOLUTION, KSRESOLUTION, ks/PKSRESOLUTION, KSRESOLUTION structure [Streaming Media Devices], ks-struct_eb48cf83-0b80-4955-89a4-0b363497bef5.xml, *PKSRESOLUTION, ks/KSRESOLUTION, PKSRESOLUTION structure pointer [Streaming Media Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	KSRESOLUTION
+product: Windows
+targetos: Windows
+req.typenames: "*PKSRESOLUTION, KSRESOLUTION"
 ---
 
 # KSRESOLUTION structure

@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddcdrm.IOCTL_CDROM_GET_INQUIRY_DATA
-title : IOCTL_CDROM_GET_INQUIRY_DATA
-author : windows-driver-content
-description : Returns the SCSI inquiry data for the CD-ROM device. This IOCTL can be used when a device has been exclusively locked with IOCTL_CDROM_EXCLUSIVE_ACCESS.
-old-location : storage\ioctl_cdrom_get_inquiry_data.htm
-old-project : storage
-ms.assetid : b327bdd4-f145-4211-a77c-80dffad16547
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_cdrom_get_inquiry_data, IOCTL_CDROM_GET_INQUIRY_DATA control code [Storage Devices], IOCTL_CDROM_GET_INQUIRY_DATA, ntddcdrm/IOCTL_CDROM_GET_INQUIRY_DATA, k307_9b073c58-022f-47c3-aeba-716277accce5.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddcdrm.h
-req.include-header : Ntddcdrm.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WRITE_ROTATION, *PWRITE_ROTATION
+UID: NI:ntddcdrm.IOCTL_CDROM_GET_INQUIRY_DATA
+title: IOCTL_CDROM_GET_INQUIRY_DATA
+author: windows-driver-content
+description: Returns the SCSI inquiry data for the CD-ROM device. This IOCTL can be used when a device has been exclusively locked with IOCTL_CDROM_EXCLUSIVE_ACCESS.
+old-location: storage\ioctl_cdrom_get_inquiry_data.htm
+old-project: storage
+ms.assetid: b327bdd4-f145-4211-a77c-80dffad16547
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_cdrom_get_inquiry_data, IOCTL_CDROM_GET_INQUIRY_DATA control code [Storage Devices], IOCTL_CDROM_GET_INQUIRY_DATA, ntddcdrm/IOCTL_CDROM_GET_INQUIRY_DATA, k307_9b073c58-022f-47c3-aeba-716277accce5.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddcdrm.h
+req.include-header: Ntddcdrm.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddcdrm.h
+apiname:
+-	IOCTL_CDROM_GET_INQUIRY_DATA
+product: Windows
+targetos: Windows
+req.typenames: WRITE_ROTATION, *PWRITE_ROTATION
 ---
 
 # IOCTL_CDROM_GET_INQUIRY_DATA IOCTL

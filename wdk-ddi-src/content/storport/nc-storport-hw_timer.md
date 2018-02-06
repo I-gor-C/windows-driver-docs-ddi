@@ -1,42 +1,47 @@
 ---
-UID : NC:storport.HW_TIMER
-title : HW_TIMER
-author : windows-driver-content
-description : The HwStorTimer routine is called after the interval that is specified when the miniport driver called StorPortNotification with the RequestTimerCall NotificationType value.
-old-location : storage\hwstortimer.htm
-old-project : storage
-ms.assetid : 61aced1b-9f8a-454a-901c-561ec6179873
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.hwstortimer, HwStorTimer routine [Storage Devices], HwStorTimer, HW_TIMER, HW_TIMER, storport/HwStorTimer, stormini_6127daf5-8672-4bf4-9241-b67bed14b8f8.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSTORAGE_DEVICE_UNIQUE_IDENTIFIER, STORAGE_DEVICE_UNIQUE_IDENTIFIER"
-req.product : Windows 10 or later.
+UID: NC:storport.HW_TIMER
+title: HW_TIMER
+author: windows-driver-content
+description: The HwStorTimer routine is called after the interval that is specified when the miniport driver called StorPortNotification with the RequestTimerCall NotificationType value.
+old-location: storage\hwstortimer.htm
+old-project: storage
+ms.assetid: 61aced1b-9f8a-454a-901c-561ec6179873
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.hwstortimer, HwStorTimer routine [Storage Devices], HwStorTimer, HW_TIMER, HW_TIMER, storport/HwStorTimer, stormini_6127daf5-8672-4bf4-9241-b67bed14b8f8.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Storport.h
+apiname:
+-	HwStorTimer
+product: Windows
+targetos: Windows
+req.typenames: "*PSTORAGE_DEVICE_UNIQUE_IDENTIFIER, STORAGE_DEVICE_UNIQUE_IDENTIFIER"
+req.product: Windows 10 or later.
 ---
 
 

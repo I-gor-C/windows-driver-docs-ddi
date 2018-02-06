@@ -1,42 +1,47 @@
 ---
-UID : NC:sercx.EVT_SERCX2_SYSTEM_DMA_TRANSMIT_PURGE_FIFO
-title : EVT_SERCX2_SYSTEM_DMA_TRANSMIT_PURGE_FIFO
-author : windows-driver-content
-description : The EvtSerCx2SystemDmaTransmitPurgeFifo event callback function is called by version 2 of the serial framework extension (SerCx2) to discard any bytes of unsent data that remain in the transmit FIFO in the serial controller hardware.
-old-location : serports\evtsercx2systemdmatransmitpurgefifo.htm
-old-project : serports
-ms.assetid : 79BD2B77-E99A-4CFA-9F7B-AFC984D5F0B3
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : serports.evtsercx2systemdmatransmitpurgefifo, EvtSerCx2SystemDmaTransmitPurgeFifo callback function [Serial Ports], EvtSerCx2SystemDmaTransmitPurgeFifo, EVT_SERCX2_SYSTEM_DMA_TRANSMIT_PURGE_FIFO, EVT_SERCX2_SYSTEM_DMA_TRANSMIT_PURGE_FIFO, 2/EvtSerCx2SystemDmaTransmitPurgeFifo
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : sercx.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Available starting with Windows 8.1.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Called at IRQL <= DISPATCH_LEVEL.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SENSOR_VALUE_PAIR, *PSENSOR_VALUE_PAIR
-req.product : Windows 10 or later.
+UID: NC:sercx.EVT_SERCX2_SYSTEM_DMA_TRANSMIT_PURGE_FIFO
+title: EVT_SERCX2_SYSTEM_DMA_TRANSMIT_PURGE_FIFO
+author: windows-driver-content
+description: The EvtSerCx2SystemDmaTransmitPurgeFifo event callback function is called by version 2 of the serial framework extension (SerCx2) to discard any bytes of unsent data that remain in the transmit FIFO in the serial controller hardware.
+old-location: serports\evtsercx2systemdmatransmitpurgefifo.htm
+old-project: serports
+ms.assetid: 79BD2B77-E99A-4CFA-9F7B-AFC984D5F0B3
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: serports.evtsercx2systemdmatransmitpurgefifo, EvtSerCx2SystemDmaTransmitPurgeFifo callback function [Serial Ports], EvtSerCx2SystemDmaTransmitPurgeFifo, EVT_SERCX2_SYSTEM_DMA_TRANSMIT_PURGE_FIFO, EVT_SERCX2_SYSTEM_DMA_TRANSMIT_PURGE_FIFO, 2/EvtSerCx2SystemDmaTransmitPurgeFifo
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: sercx.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Available starting with Windows 8.1.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Called at IRQL <= DISPATCH_LEVEL.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	2.0\Sercx.h
+apiname:
+-	EvtSerCx2SystemDmaTransmitPurgeFifo
+product: Windows
+targetos: Windows
+req.typenames: SENSOR_VALUE_PAIR, *PSENSOR_VALUE_PAIR
+req.product: Windows 10 or later.
 ---
 
 

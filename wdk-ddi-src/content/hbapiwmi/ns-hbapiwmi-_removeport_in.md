@@ -1,41 +1,46 @@
 ---
-UID : NS:hbapiwmi._RemovePort_IN
-title : "_RemovePort_IN"
-author : windows-driver-content
-description : The Remove_IN structure is used by a WMI client to deliver input parameter data to the RemovePort WMI method.
-old-location : storage\removeport_in.htm
-old-project : storage
-ms.assetid : 2f32e44a-e4a6-4745-9749-fc611119cc0e
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : structs-Fibre_f60e236f-5ed1-4cc2-b685-6ee40895736e.xml, RemovePort_IN, PRemovePort_IN structure pointer [Storage Devices], *PRemovePort_IN, hbapiwmi/PRemovePort_IN, PRemovePort_IN, RemovePort_IN structure [Storage Devices], _RemovePort_IN, storage.removeport_in, hbapiwmi/RemovePort_IN
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : hbapiwmi.h
-req.include-header : Hbapiwmi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RemovePort_IN, *PRemovePort_IN
+UID: NS:hbapiwmi._RemovePort_IN
+title: "_RemovePort_IN"
+author: windows-driver-content
+description: The Remove_IN structure is used by a WMI client to deliver input parameter data to the RemovePort WMI method.
+old-location: storage\removeport_in.htm
+old-project: storage
+ms.assetid: 2f32e44a-e4a6-4745-9749-fc611119cc0e
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: structs-Fibre_f60e236f-5ed1-4cc2-b685-6ee40895736e.xml, RemovePort_IN, PRemovePort_IN structure pointer [Storage Devices], *PRemovePort_IN, hbapiwmi/PRemovePort_IN, PRemovePort_IN, RemovePort_IN structure [Storage Devices], _RemovePort_IN, storage.removeport_in, hbapiwmi/RemovePort_IN
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: hbapiwmi.h
+req.include-header: Hbapiwmi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hbapiwmi.h
+apiname:
+-	RemovePort_IN
+product: Windows
+targetos: Windows
+req.typenames: RemovePort_IN, *PRemovePort_IN
 ---
 
 # _RemovePort_IN structure

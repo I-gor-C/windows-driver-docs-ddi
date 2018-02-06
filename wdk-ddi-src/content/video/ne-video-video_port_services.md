@@ -1,42 +1,47 @@
 ---
-UID : NE:video.VIDEO_PORT_SERVICES
-title : VIDEO_PORT_SERVICES
-author : windows-driver-content
-description : The VIDEO_PORT_SERVICES enumerated type lists the interfaces that the video miniport driver can request from the video port driver by calling VideoPortQueryServices.
-old-location : display\video_port_services.htm
-old-project : display
-ms.assetid : 3ca53536-e847-4c11-a28d-e046e8a392de
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : video/VideoPortServicesWCMemoryProtection, VIDEO_PORT_SERVICES, VideoPortServicesWCMemoryProtection, video/VideoPortServicesDebugReport, video/VIDEO_PORT_SERVICES, VIDEO_PORT_SERVICES enumeration [Display Devices], video/VideoPortServicesInt10, video/VideoPortServicesI2C, video/VideoPortServicesHeadless, display.video_port_services, VideoPortServicesDebugReport, Video_Structs_f2ede654-971a-4700-a911-8063a2a03ffe.xml, VideoPortServicesI2C, video/VideoPortServicesAGP, VideoPortServicesHeadless, VideoPortServicesInt10, VideoPortServicesAGP
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_PORT_SERVICES
-req.product : Windows 10 or later.
+UID: NE:video.VIDEO_PORT_SERVICES
+title: VIDEO_PORT_SERVICES
+author: windows-driver-content
+description: The VIDEO_PORT_SERVICES enumerated type lists the interfaces that the video miniport driver can request from the video port driver by calling VideoPortQueryServices.
+old-location: display\video_port_services.htm
+old-project: display
+ms.assetid: 3ca53536-e847-4c11-a28d-e046e8a392de
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: video/VideoPortServicesWCMemoryProtection, VIDEO_PORT_SERVICES, VideoPortServicesWCMemoryProtection, video/VideoPortServicesDebugReport, video/VIDEO_PORT_SERVICES, VIDEO_PORT_SERVICES enumeration [Display Devices], video/VideoPortServicesInt10, video/VideoPortServicesI2C, video/VideoPortServicesHeadless, display.video_port_services, VideoPortServicesDebugReport, Video_Structs_f2ede654-971a-4700-a911-8063a2a03ffe.xml, VideoPortServicesI2C, video/VideoPortServicesAGP, VideoPortServicesHeadless, VideoPortServicesInt10, VideoPortServicesAGP
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	video.h
+apiname:
+-	VIDEO_PORT_SERVICES
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_PORT_SERVICES
+req.product: Windows 10 or later.
 ---
 
 # VIDEO_PORT_SERVICES Enumeration
@@ -57,47 +62,47 @@ typedef enum  {
 ## Constants
 
 <table>
-
-<tr>
-<td>VideoPortServicesAGP</td>
-<td>Represents the AGP interface.</td>
-</tr>
-
-<tr>
-<td>VideoPortServicesDebugReport</td>
-<td>Represents the Debug Report interface, which is available in the following operating systems:
+            
+                <tr>
+                    <td>VideoPortServicesAGP</td>
+                    <td>Represents the AGP interface.</td>
+                </tr>
+            
+                <tr>
+                    <td>VideoPortServicesDebugReport</td>
+                    <td>Represents the Debug Report interface, which is available in the following operating systems:
  
 
 <ul>
 <li>Windows Server 2003 SP1 and subsequent service packs</li>
 <li>Windows XP SP2 and subsequent service packs </li>
 </ul></td>
-</tr>
-
-<tr>
-<td>VideoPortServicesHeadless</td>
-<td>Represents the Headless interface.</td>
-</tr>
-
-<tr>
-<td>VideoPortServicesI2C</td>
-<td>Represents the I2C interface.</td>
-</tr>
-
-<tr>
-<td>VideoPortServicesInt10</td>
-<td>Represents the Int10 interface.</td>
-</tr>
-
-<tr>
-<td>VideoPortServicesWCMemoryProtection</td>
-<td>Represents the WC Memory Protection interface.</td>
-</tr>
+                </tr>
+            
+                <tr>
+                    <td>VideoPortServicesHeadless</td>
+                    <td>Represents the Headless interface.</td>
+                </tr>
+            
+                <tr>
+                    <td>VideoPortServicesI2C</td>
+                    <td>Represents the I2C interface.</td>
+                </tr>
+            
+                <tr>
+                    <td>VideoPortServicesInt10</td>
+                    <td>Represents the Int10 interface.</td>
+                </tr>
+            
+                <tr>
+                    <td>VideoPortServicesWCMemoryProtection</td>
+                    <td>Represents the WC Memory Protection interface.</td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-Many functions are exported by the video port driver; the video miniport driver can call those functions using ordinary dynamic linking. Other functions implemented by the video port driver are not exported; instead, they are made available to the video miniport driver through function pointers. An interface, in this context, is a set of related function pointers. For example, the AGP interface is a set of pointers to functions (implemented by the video port driver) that provide AGP services to the video miniport driver.
+        Many functions are exported by the video port driver; the video miniport driver can call those functions using ordinary dynamic linking. Other functions implemented by the video port driver are not exported; instead, they are made available to the video miniport driver through function pointers. An interface, in this context, is a set of related function pointers. For example, the AGP interface is a set of pointers to functions (implemented by the video port driver) that provide AGP services to the video miniport driver.
 
 The video miniport driver obtains a set of function pointers by passing a value from the VIDEO_PORT_SERVICES enumerated type to the <i>ServicesType</i> parameter of the <b>VideoPortQueryServices</b> function.
 
@@ -106,9 +111,9 @@ The video miniport driver obtains a set of function pointers by passing a value 
 | ---- |:---- |
 | **Header** | video.h (include Video.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\video\nf-video-videoportqueryservices.md">VideoPortQueryServices</a>
+        <a href="..\video\nf-video-videoportqueryservices.md">VideoPortQueryServices</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff567732">Int10 Functions Implemented by the Video Port Driver</a>
 

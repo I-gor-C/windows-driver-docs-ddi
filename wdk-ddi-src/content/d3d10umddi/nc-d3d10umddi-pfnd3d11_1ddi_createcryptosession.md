@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3D11_1DDI_CREATECRYPTOSESSION
-title : PFND3D11_1DDI_CREATECRYPTOSESSION
-author : windows-driver-content
-description : Creates a cryptographic session to encrypt video content that is sent to the display miniport driver.
-old-location : display\createcryptosession1.htm
-old-project : display
-ms.assetid : 3c31efc3-b844-4e51-947d-b48f36020766
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.createcryptosession1, CreateCryptoSession callback function [Display Devices], CreateCryptoSession, PFND3D11_1DDI_CREATECRYPTOSESSION, PFND3D11_1DDI_CREATECRYPTOSESSION, d3d10umddi/CreateCryptoSession
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3D11_1DDI_CREATECRYPTOSESSION
+title: PFND3D11_1DDI_CREATECRYPTOSESSION
+author: windows-driver-content
+description: Creates a cryptographic session to encrypt video content that is sent to the display miniport driver.
+old-location: display\createcryptosession1.htm
+old-project: display
+ms.assetid: 3c31efc3-b844-4e51-947d-b48f36020766
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.createcryptosession1, CreateCryptoSession callback function [Display Devices], CreateCryptoSession, PFND3D11_1DDI_CREATECRYPTOSESSION, PFND3D11_1DDI_CREATECRYPTOSESSION, d3d10umddi/CreateCryptoSession
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	D3d10umddi.h
+apiname:
+-	CreateCryptoSession
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

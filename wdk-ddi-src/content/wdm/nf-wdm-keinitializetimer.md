@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.KeInitializeTimer
-title : KeInitializeTimer function
-author : windows-driver-content
-description : The KeInitializeTimer routine initializes a timer object.
-old-location : kernel\keinitializetimer.htm
-old-project : kernel
-ms.assetid : 97140cf6-9c5a-4fdc-b7c7-10e6d28b9b1b
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : k105_ce90de5c-7259-4863-adf1-fe90f288e791.xml, wdm/KeInitializeTimer, kernel.keinitializetimer, KeInitializeTimer, KeInitializeTimer routine [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : IrqlKeDispatchLte, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= DISPATCH_LEVEL (see Remarks section)"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.KeInitializeTimer
+title: KeInitializeTimer function
+author: windows-driver-content
+description: The KeInitializeTimer routine initializes a timer object.
+old-location: kernel\keinitializetimer.htm
+old-project: kernel
+ms.assetid: 97140cf6-9c5a-4fdc-b7c7-10e6d28b9b1b
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: k105_ce90de5c-7259-4863-adf1-fe90f288e791.xml, wdm/KeInitializeTimer, kernel.keinitializetimer, KeInitializeTimer, KeInitializeTimer routine [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: IrqlKeDispatchLte, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= DISPATCH_LEVEL (see Remarks section)"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	KeInitializeTimer
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

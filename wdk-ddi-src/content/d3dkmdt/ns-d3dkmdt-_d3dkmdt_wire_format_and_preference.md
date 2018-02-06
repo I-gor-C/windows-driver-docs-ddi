@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmdt._D3DKMDT_WIRE_FORMAT_AND_PREFERENCE
-title : "_D3DKMDT_WIRE_FORMAT_AND_PREFERENCE"
-author : windows-driver-content
-description : Holds information about the preferred pixel encoding format.
-old-location : display\d3dkmdt_wire_format_and_preference.htm
-old-project : display
-ms.assetid : 24CC6A10-6462-4681-B340-E887B679F456
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3dkmdt/D3DKMDT_WIRE_FORMAT_AND_PREFERENCE, d3dkmdt/PD3DKMDT_WIRE_FORMAT_AND_PREFERENCE, D3DKMDT_WIRE_FORMAT_AND_PREFERENCE, D3DKMDT_WIRE_FORMAT_AND_PREFERENCE union [Display Devices], _D3DKMDT_WIRE_FORMAT_AND_PREFERENCE, *PD3DKMDT_WIRE_FORMAT_AND_PREFERENCE, PD3DKMDT_WIRE_FORMAT_AND_PREFERENCE union pointer [Display Devices], PD3DKMDT_WIRE_FORMAT_AND_PREFERENCE, display.d3dkmdt_wire_format_and_preference
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmdt.h
-req.include-header : D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PD3DKMDT_WIRE_FORMAT_AND_PREFERENCE, D3DKMDT_WIRE_FORMAT_AND_PREFERENCE"
+UID: NS:d3dkmdt._D3DKMDT_WIRE_FORMAT_AND_PREFERENCE
+title: "_D3DKMDT_WIRE_FORMAT_AND_PREFERENCE"
+author: windows-driver-content
+description: Holds information about the preferred pixel encoding format.
+old-location: display\d3dkmdt_wire_format_and_preference.htm
+old-project: display
+ms.assetid: 24CC6A10-6462-4681-B340-E887B679F456
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3dkmdt/D3DKMDT_WIRE_FORMAT_AND_PREFERENCE, d3dkmdt/PD3DKMDT_WIRE_FORMAT_AND_PREFERENCE, D3DKMDT_WIRE_FORMAT_AND_PREFERENCE, D3DKMDT_WIRE_FORMAT_AND_PREFERENCE union [Display Devices], _D3DKMDT_WIRE_FORMAT_AND_PREFERENCE, *PD3DKMDT_WIRE_FORMAT_AND_PREFERENCE, PD3DKMDT_WIRE_FORMAT_AND_PREFERENCE union pointer [Display Devices], PD3DKMDT_WIRE_FORMAT_AND_PREFERENCE, display.d3dkmdt_wire_format_and_preference
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmdt.h
+req.include-header: D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmdt.h
+apiname:
+-	D3DKMDT_WIRE_FORMAT_AND_PREFERENCE
+product: Windows
+targetos: Windows
+req.typenames: "*PD3DKMDT_WIRE_FORMAT_AND_PREFERENCE, D3DKMDT_WIRE_FORMAT_AND_PREFERENCE"
 ---
 
 # _D3DKMDT_WIRE_FORMAT_AND_PREFERENCE structure

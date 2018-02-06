@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugSymbols3.SetScope
-title : IDebugSymbols3::SetScope method
-author : windows-driver-content
-description : The SetScope method sets the current scope.
-old-location : debugger\setscope.htm
-old-project : debugger
-ms.assetid : 78a32ba6-5546-486a-aede-9a597b27f9fb
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugSymbols2 interface [Windows Debugging], SetScope method, dbgeng/IDebugSymbols2::SetScope, IDebugSymbols3, IDebugSymbols3::SetScope, IDebugSymbols2::SetScope, dbgeng/IDebugSymbols::SetScope, SetScope method [Windows Debugging], IDebugSymbols interface, SetScope method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols interface [Windows Debugging], SetScope method, SetScope method [Windows Debugging], IDebugSymbols_20e96a86-b9c3-481f-9a26-319bac975e15.xml, IDebugSymbols::SetScope, SetScope, SetScope method [Windows Debugging], IDebugSymbols2 interface, debugger.setscope, dbgeng/IDebugSymbols3::SetScope, IDebugSymbols3 interface [Windows Debugging], SetScope method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSymbols3.SetScope
+title: IDebugSymbols3::SetScope method
+author: windows-driver-content
+description: The SetScope method sets the current scope.
+old-location: debugger\setscope.htm
+old-project: debugger
+ms.assetid: 78a32ba6-5546-486a-aede-9a597b27f9fb
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugSymbols2 interface [Windows Debugging], SetScope method, dbgeng/IDebugSymbols2::SetScope, IDebugSymbols3, IDebugSymbols3::SetScope, IDebugSymbols2::SetScope, dbgeng/IDebugSymbols::SetScope, SetScope method [Windows Debugging], IDebugSymbols interface, SetScope method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols interface [Windows Debugging], SetScope method, SetScope method [Windows Debugging], IDebugSymbols_20e96a86-b9c3-481f-9a26-319bac975e15.xml, IDebugSymbols::SetScope, SetScope, SetScope method [Windows Debugging], IDebugSymbols2 interface, debugger.setscope, dbgeng/IDebugSymbols3::SetScope, IDebugSymbols3 interface [Windows Debugging], SetScope method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugSymbols.SetScope
+-	IDebugSymbols2.SetScope
+-	IDebugSymbols3.SetScope
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

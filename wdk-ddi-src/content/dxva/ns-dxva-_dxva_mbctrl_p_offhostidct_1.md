@@ -1,41 +1,46 @@
 ---
-UID : NS:dxva._DXVA_MBctrl_P_OffHostIDCT_1
-title : "_DXVA_MBctrl_P_OffHostIDCT_1"
-author : windows-driver-content
-description : The DXVA_MBctrl_P_OffHostIDCT_1 structure is sent once per macroblock by the host decoder to the accelerator to specify macroblock control commands for most nonintra pictures using off-host IDCT.
-old-location : display\dxva_mbctrl_p_offhostidct_1.htm
-old-project : display
-ms.assetid : 53a474a8-6cbd-4fe0-84d2-bf557b86ed71
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxva_mbctrl_p_offhostidct_1, dxva/DXVA_MBctrl_P_OffHostIDCT_1, DXVA_MBctrl_P_OffHostIDCT_1 structure [Display Devices], dxvaref_5dae57d5-3e27-4928-8fd2-4c9cdad0285b.xml, *LPDXVA_MBctrl_P_OffHostIDCT_1, _DXVA_MBctrl_P_OffHostIDCT_1, DXVA_MBctrl_P_OffHostIDCT_1
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : dxva.h
-req.include-header : Dxva.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXVA_MBctrl_P_OffHostIDCT_1
+UID: NS:dxva._DXVA_MBctrl_P_OffHostIDCT_1
+title: "_DXVA_MBctrl_P_OffHostIDCT_1"
+author: windows-driver-content
+description: The DXVA_MBctrl_P_OffHostIDCT_1 structure is sent once per macroblock by the host decoder to the accelerator to specify macroblock control commands for most nonintra pictures using off-host IDCT.
+old-location: display\dxva_mbctrl_p_offhostidct_1.htm
+old-project: display
+ms.assetid: 53a474a8-6cbd-4fe0-84d2-bf557b86ed71
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxva_mbctrl_p_offhostidct_1, dxva/DXVA_MBctrl_P_OffHostIDCT_1, DXVA_MBctrl_P_OffHostIDCT_1 structure [Display Devices], dxvaref_5dae57d5-3e27-4928-8fd2-4c9cdad0285b.xml, *LPDXVA_MBctrl_P_OffHostIDCT_1, _DXVA_MBctrl_P_OffHostIDCT_1, DXVA_MBctrl_P_OffHostIDCT_1
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: dxva.h
+req.include-header: Dxva.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	dxva.h
+apiname:
+-	DXVA_MBctrl_P_OffHostIDCT_1
+product: Windows
+targetos: Windows
+req.typenames: DXVA_MBctrl_P_OffHostIDCT_1
 ---
 
 # _DXVA_MBctrl_P_OffHostIDCT_1 structure

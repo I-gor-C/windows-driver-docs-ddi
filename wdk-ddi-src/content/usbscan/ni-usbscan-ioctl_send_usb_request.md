@@ -1,42 +1,47 @@
 ---
-UID : NI:usbscan.IOCTL_SEND_USB_REQUEST
-title : IOCTL_SEND_USB_REQUEST
-author : windows-driver-content
-description : Sends a vendor-defined request to a USB device, using the control pipe, and optionally sends or receives additional data.
-old-location : image\ioctl_send_usb_request.htm
-old-project : image
-ms.assetid : 27e22a21-cd89-43e8-8ce1-448c0f4c4d78
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : image.ioctl_send_usb_request, IOCTL_SEND_USB_REQUEST control code [Imaging Devices], IOCTL_SEND_USB_REQUEST, usbscan/IOCTL_SEND_USB_REQUEST, stifnc_2532cbfa-8373-4666-8a87-fac7923513bd.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : usbscan.h
-req.include-header : Usbscan.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RAW_PIPE_TYPE
-req.product : Windows 10 or later.
+UID: NI:usbscan.IOCTL_SEND_USB_REQUEST
+title: IOCTL_SEND_USB_REQUEST
+author: windows-driver-content
+description: Sends a vendor-defined request to a USB device, using the control pipe, and optionally sends or receives additional data.
+old-location: image\ioctl_send_usb_request.htm
+old-project: image
+ms.assetid: 27e22a21-cd89-43e8-8ce1-448c0f4c4d78
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: image.ioctl_send_usb_request, IOCTL_SEND_USB_REQUEST control code [Imaging Devices], IOCTL_SEND_USB_REQUEST, usbscan/IOCTL_SEND_USB_REQUEST, stifnc_2532cbfa-8373-4666-8a87-fac7923513bd.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: usbscan.h
+req.include-header: Usbscan.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Usbscan.h
+apiname:
+-	IOCTL_SEND_USB_REQUEST
+product: Windows
+targetos: Windows
+req.typenames: RAW_PIPE_TYPE
+req.product: Windows 10 or later.
 ---
 
 # IOCTL_SEND_USB_REQUEST IOCTL

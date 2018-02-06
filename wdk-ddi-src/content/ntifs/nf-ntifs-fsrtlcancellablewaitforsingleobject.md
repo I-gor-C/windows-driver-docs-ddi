@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.FsRtlCancellableWaitForSingleObject
-title : FsRtlCancellableWaitForSingleObject function
-author : windows-driver-content
-description : The FsRtlCancellableWaitForSingleObject routine executes a cancelable wait operation (a wait that can be terminated) on a dispatcher object.
-old-location : ifsk\fsrtlcancellablewaitforsingleobject.htm
-old-project : ifsk
-ms.assetid : b29d35bd-d27d-4507-9fa7-5648bcb1f825
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FsRtlCancellableWaitForSingleObject routine [Installable File System Drivers], ifsk.fsrtlcancellablewaitforsingleobject, fsrtlref_5515496d-6e38-488c-8fbf-439aa4ac555a.xml, ntifs/FsRtlCancellableWaitForSingleObject, FsRtlCancellableWaitForSingleObject
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : This routine is available starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.FsRtlCancellableWaitForSingleObject
+title: FsRtlCancellableWaitForSingleObject function
+author: windows-driver-content
+description: The FsRtlCancellableWaitForSingleObject routine executes a cancelable wait operation (a wait that can be terminated) on a dispatcher object.
+old-location: ifsk\fsrtlcancellablewaitforsingleobject.htm
+old-project: ifsk
+ms.assetid: b29d35bd-d27d-4507-9fa7-5648bcb1f825
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FsRtlCancellableWaitForSingleObject routine [Installable File System Drivers], ifsk.fsrtlcancellablewaitforsingleobject, fsrtlref_5515496d-6e38-488c-8fbf-439aa4ac555a.xml, ntifs/FsRtlCancellableWaitForSingleObject, FsRtlCancellableWaitForSingleObject
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: This routine is available starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	FsRtlCancellableWaitForSingleObject
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:ndischimney._IP_OFFLOAD_STATS
-title : "_IP_OFFLOAD_STATS"
-author : windows-driver-content
-description : The IP_OFFLOAD_STATS structure contains statistics that an offload target supplies in response to a query of OID_IP4_OFFLOAD_STATS or OID_IP6_OFFLOAD_STATS.
-old-location : netvista\ip_offload_stats.htm
-old-project : netvista
-ms.assetid : f40c5734-2546-40c3-a6fb-58f728c3cc5e
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.ip_offload_stats, IP_OFFLOAD_STATS, *PIP_OFFLOAD_STATS, ndischimney/IP_OFFLOAD_STATS, PIP_OFFLOAD_STATS, IP_OFFLOAD_STATS structure [Network Drivers Starting with Windows Vista], tcp_chim_struct_292881aa-1c15-4b1a-abd9-927d3b3b8f7b.xml, _IP_OFFLOAD_STATS, ndischimney/PIP_OFFLOAD_STATS, PIP_OFFLOAD_STATS structure pointer [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndischimney.h
-req.include-header : Ndischimney.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PIP_OFFLOAD_STATS, IP_OFFLOAD_STATS"
+UID: NS:ndischimney._IP_OFFLOAD_STATS
+title: "_IP_OFFLOAD_STATS"
+author: windows-driver-content
+description: The IP_OFFLOAD_STATS structure contains statistics that an offload target supplies in response to a query of OID_IP4_OFFLOAD_STATS or OID_IP6_OFFLOAD_STATS.
+old-location: netvista\ip_offload_stats.htm
+old-project: netvista
+ms.assetid: f40c5734-2546-40c3-a6fb-58f728c3cc5e
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.ip_offload_stats, IP_OFFLOAD_STATS, *PIP_OFFLOAD_STATS, ndischimney/IP_OFFLOAD_STATS, PIP_OFFLOAD_STATS, IP_OFFLOAD_STATS structure [Network Drivers Starting with Windows Vista], tcp_chim_struct_292881aa-1c15-4b1a-abd9-927d3b3b8f7b.xml, _IP_OFFLOAD_STATS, ndischimney/PIP_OFFLOAD_STATS, PIP_OFFLOAD_STATS structure pointer [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndischimney.h
+req.include-header: Ndischimney.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndischimney.h
+apiname:
+-	IP_OFFLOAD_STATS
+product: Windows
+targetos: Windows
+req.typenames: "*PIP_OFFLOAD_STATS, IP_OFFLOAD_STATS"
 ---
 
 # _IP_OFFLOAD_STATS structure

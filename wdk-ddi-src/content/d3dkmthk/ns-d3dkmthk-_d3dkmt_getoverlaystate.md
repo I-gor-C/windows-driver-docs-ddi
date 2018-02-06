@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmthk._D3DKMT_GETOVERLAYSTATE
-title : "_D3DKMT_GETOVERLAYSTATE"
-author : windows-driver-content
-description : The D3DKMT_GETOVERLAYSTATE structure describes parameters that the D3DKMTGetOverlayState function uses to retrieve status about an overlay.
-old-location : display\d3dkmt_getoverlaystate.htm
-old-project : display
-ms.assetid : fe3443e7-0dc9-4c91-88ab-b05bac19516d
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3dkmthk/D3DKMT_GETOVERLAYSTATE, D3DKMT_GETOVERLAYSTATE structure [Display Devices], _D3DKMT_GETOVERLAYSTATE, OpenGL_Structs_c9bee52b-d6ba-45ee-9af6-b795685715bb.xml, display.d3dkmt_getoverlaystate, D3DKMT_GETOVERLAYSTATE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Windows
-req.target-min-winverclnt : D3DKMT_GETOVERLAYSTATE is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_GETOVERLAYSTATE
+UID: NS:d3dkmthk._D3DKMT_GETOVERLAYSTATE
+title: "_D3DKMT_GETOVERLAYSTATE"
+author: windows-driver-content
+description: The D3DKMT_GETOVERLAYSTATE structure describes parameters that the D3DKMTGetOverlayState function uses to retrieve status about an overlay.
+old-location: display\d3dkmt_getoverlaystate.htm
+old-project: display
+ms.assetid: fe3443e7-0dc9-4c91-88ab-b05bac19516d
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3dkmthk/D3DKMT_GETOVERLAYSTATE, D3DKMT_GETOVERLAYSTATE structure [Display Devices], _D3DKMT_GETOVERLAYSTATE, OpenGL_Structs_c9bee52b-d6ba-45ee-9af6-b795685715bb.xml, display.d3dkmt_getoverlaystate, D3DKMT_GETOVERLAYSTATE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Windows
+req.target-min-winverclnt: D3DKMT_GETOVERLAYSTATE is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmthk.h
+apiname:
+-	D3DKMT_GETOVERLAYSTATE
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_GETOVERLAYSTATE
 ---
 
 # _D3DKMT_GETOVERLAYSTATE structure

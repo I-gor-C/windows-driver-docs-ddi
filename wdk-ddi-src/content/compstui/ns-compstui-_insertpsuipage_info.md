@@ -1,41 +1,46 @@
 ---
-UID : NS:compstui._INSERTPSUIPAGE_INFO
-title : "_INSERTPSUIPAGE_INFO"
-author : windows-driver-content
-description : The INSERTPSUIPAGE_INFO structure is used as an input parameter to CPSUI's ComPropSheet function, if the function code is CPSFUNC_INSERT_PSUIPAGE. All member values must be supplied by the ComPropSheet caller.
-old-location : print\insertpsuipage_info.htm
-old-project : print
-ms.assetid : 99ec8cfa-3ec7-4080-b22a-dba0a86b7e4a
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : PINSERTPSUIPAGE_INFO structure pointer [Print Devices], print.insertpsuipage_info, cpsuifnc_0d805815-c7ca-4fd4-8a77-269d6b79588e.xml, compstui/PINSERTPSUIPAGE_INFO, INSERTPSUIPAGE_INFO structure [Print Devices], PINSERTPSUIPAGE_INFO, _INSERTPSUIPAGE_INFO, *PINSERTPSUIPAGE_INFO, INSERTPSUIPAGE_INFO, compstui/INSERTPSUIPAGE_INFO
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : compstui.h
-req.include-header : Compstui.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PINSERTPSUIPAGE_INFO, INSERTPSUIPAGE_INFO"
+UID: NS:compstui._INSERTPSUIPAGE_INFO
+title: "_INSERTPSUIPAGE_INFO"
+author: windows-driver-content
+description: The INSERTPSUIPAGE_INFO structure is used as an input parameter to CPSUI's ComPropSheet function, if the function code is CPSFUNC_INSERT_PSUIPAGE. All member values must be supplied by the ComPropSheet caller.
+old-location: print\insertpsuipage_info.htm
+old-project: print
+ms.assetid: 99ec8cfa-3ec7-4080-b22a-dba0a86b7e4a
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: PINSERTPSUIPAGE_INFO structure pointer [Print Devices], print.insertpsuipage_info, cpsuifnc_0d805815-c7ca-4fd4-8a77-269d6b79588e.xml, compstui/PINSERTPSUIPAGE_INFO, INSERTPSUIPAGE_INFO structure [Print Devices], PINSERTPSUIPAGE_INFO, _INSERTPSUIPAGE_INFO, *PINSERTPSUIPAGE_INFO, INSERTPSUIPAGE_INFO, compstui/INSERTPSUIPAGE_INFO
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: compstui.h
+req.include-header: Compstui.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	compstui.h
+apiname:
+-	INSERTPSUIPAGE_INFO
+product: Windows
+targetos: Windows
+req.typenames: "*PINSERTPSUIPAGE_INFO, INSERTPSUIPAGE_INFO"
 ---
 
 # _INSERTPSUIPAGE_INFO structure

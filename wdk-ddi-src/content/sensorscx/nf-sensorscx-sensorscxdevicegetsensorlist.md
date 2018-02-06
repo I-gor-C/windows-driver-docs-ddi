@@ -1,42 +1,47 @@
 ---
-UID : NF:sensorscx.SensorsCxDeviceGetSensorList
-title : SensorsCxDeviceGetSensorList function
-author : windows-driver-content
-description : This function returns a list of sensor instances associated with a WDFDEVICE.
-old-location : sensors\sensorscxdevicegetsensorlist.htm
-old-project : sensors
-ms.assetid : C1CA7DE4-A54A-478F-9F83-585B528EF345
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : SensorsCxDeviceGetSensorList, Syntax function [Sensor Devices], Syntax, sensorscx/Syntax, sensors.sensorscxdevicegetsensorlist
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : sensorscx.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SensorConnectionType
-req.product : Windows 10 or later.
+UID: NF:sensorscx.SensorsCxDeviceGetSensorList
+title: SensorsCxDeviceGetSensorList function
+author: windows-driver-content
+description: This function returns a list of sensor instances associated with a WDFDEVICE.
+old-location: sensors\sensorscxdevicegetsensorlist.htm
+old-project: sensors
+ms.assetid: C1CA7DE4-A54A-478F-9F83-585B528EF345
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: SensorsCxDeviceGetSensorList, Syntax function [Sensor Devices], Syntax, sensorscx/Syntax, sensors.sensorscxdevicegetsensorlist
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: sensorscx.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	SensorsCx.h
+apiname:
+-	Syntax
+product: Windows
+targetos: Windows
+req.typenames: SensorConnectionType
+req.product: Windows 10 or later.
 ---
 
 

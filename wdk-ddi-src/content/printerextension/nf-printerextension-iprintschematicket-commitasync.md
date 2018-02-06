@@ -1,42 +1,47 @@
 ---
-UID : NF:printerextension.IPrintSchemaTicket.CommitAsync
-title : IPrintSchemaTicket::CommitAsync method
-author : windows-driver-content
-description : Gets an asynchronous PrintTicket commit operation context.
-old-location : print\iprintschematicket_commitasync.htm
-old-project : print
-ms.assetid : CFEDCABF-A875-4A69-954D-267765350E9D
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : IPrintSchemaTicket::CommitAsync, CommitAsync, IPrintSchemaTicket interface [Print Devices], CommitAsync method, CommitAsync method [Print Devices], CommitAsync method [Print Devices], IPrintSchemaTicket interface, printerextension/IPrintSchemaTicket::CommitAsync, print.iprintschematicket_commitasync, IPrintSchemaTicket
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : printerextension.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : printerextension.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PrintSchemaSelectionType
-req.product : Windows 10 or later.
+UID: NF:printerextension.IPrintSchemaTicket.CommitAsync
+title: IPrintSchemaTicket::CommitAsync method
+author: windows-driver-content
+description: Gets an asynchronous PrintTicket commit operation context.
+old-location: print\iprintschematicket_commitasync.htm
+old-project: print
+ms.assetid: CFEDCABF-A875-4A69-954D-267765350E9D
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: IPrintSchemaTicket::CommitAsync, CommitAsync, IPrintSchemaTicket interface [Print Devices], CommitAsync method, CommitAsync method [Print Devices], CommitAsync method [Print Devices], IPrintSchemaTicket interface, printerextension/IPrintSchemaTicket::CommitAsync, print.iprintschematicket_commitasync, IPrintSchemaTicket
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: printerextension.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: printerextension.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	printerextension.h
+apiname:
+-	IPrintSchemaTicket.CommitAsync
+product: Windows
+targetos: Windows
+req.typenames: PrintSchemaSelectionType
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NS:printoem._FINVOCATION
-title : "_FINVOCATION"
-author : windows-driver-content
-description : The FINVOCATION structure is used as input to the IPrintOemUni::SendFontCmd method. The structure is defined in printoem.h.
-old-location : print\finvocation.htm
-old-project : print
-ms.assetid : 958d6f1f-e8e8-43e6-a4d4-73bae4b2be21
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : print_unidrv-pscript_rendering_9937cdea-eacb-457c-af51-d8963ffd59e9.xml, printoem/PFINVOCATION, PFINVOCATION structure pointer [Print Devices], FINVOCATION, print.finvocation, _FINVOCATION, PFINVOCATION, printoem/FINVOCATION, FINVOCATION structure [Print Devices], *PFINVOCATION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : printoem.h
-req.include-header : Printoem.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PFINVOCATION, FINVOCATION"
-req.product : Windows 10 or later.
+UID: NS:printoem._FINVOCATION
+title: "_FINVOCATION"
+author: windows-driver-content
+description: The FINVOCATION structure is used as input to the IPrintOemUni::SendFontCmd method. The structure is defined in printoem.h.
+old-location: print\finvocation.htm
+old-project: print
+ms.assetid: 958d6f1f-e8e8-43e6-a4d4-73bae4b2be21
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: print_unidrv-pscript_rendering_9937cdea-eacb-457c-af51-d8963ffd59e9.xml, printoem/PFINVOCATION, PFINVOCATION structure pointer [Print Devices], FINVOCATION, print.finvocation, _FINVOCATION, PFINVOCATION, printoem/FINVOCATION, FINVOCATION structure [Print Devices], *PFINVOCATION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: printoem.h
+req.include-header: Printoem.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	printoem.h
+apiname:
+-	FINVOCATION
+product: Windows
+targetos: Windows
+req.typenames: "*PFINVOCATION, FINVOCATION"
+req.product: Windows 10 or later.
 ---
 
 # _FINVOCATION structure

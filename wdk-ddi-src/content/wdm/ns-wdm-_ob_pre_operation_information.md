@@ -1,42 +1,47 @@
 ---
-UID : NS:wdm._OB_PRE_OPERATION_INFORMATION
-title : "_OB_PRE_OPERATION_INFORMATION"
-author : windows-driver-content
-description : The OB_PRE_OPERATION_INFORMATION structure provides information about a process or thread handle operation to an ObjectPreCallback routine.
-old-location : kernel\ob_pre_operation_information.htm
-old-project : kernel
-ms.assetid : 2fe0f1aa-cf9f-4b45-8c34-a6d810fd461a
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/OB_PRE_OPERATION_INFORMATION, _OB_PRE_OPERATION_INFORMATION, OB_PRE_OPERATION_INFORMATION structure [Kernel-Mode Driver Architecture], POB_PRE_OPERATION_INFORMATION structure pointer [Kernel-Mode Driver Architecture], POB_PRE_OPERATION_INFORMATION, *POB_PRE_OPERATION_INFORMATION, kstruct_c_36dbceed-ec59-4fe7-885f-93386ea7b3e9.xml, OB_PRE_OPERATION_INFORMATION, wdm/POB_PRE_OPERATION_INFORMATION, kernel.ob_pre_operation_information
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Server 2008 and later versions of the Windows operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : OB_PRE_OPERATION_INFORMATION, *POB_PRE_OPERATION_INFORMATION
-req.product : Windows 10 or later.
+UID: NS:wdm._OB_PRE_OPERATION_INFORMATION
+title: "_OB_PRE_OPERATION_INFORMATION"
+author: windows-driver-content
+description: The OB_PRE_OPERATION_INFORMATION structure provides information about a process or thread handle operation to an ObjectPreCallback routine.
+old-location: kernel\ob_pre_operation_information.htm
+old-project: kernel
+ms.assetid: 2fe0f1aa-cf9f-4b45-8c34-a6d810fd461a
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/OB_PRE_OPERATION_INFORMATION, _OB_PRE_OPERATION_INFORMATION, OB_PRE_OPERATION_INFORMATION structure [Kernel-Mode Driver Architecture], POB_PRE_OPERATION_INFORMATION structure pointer [Kernel-Mode Driver Architecture], POB_PRE_OPERATION_INFORMATION, *POB_PRE_OPERATION_INFORMATION, kstruct_c_36dbceed-ec59-4fe7-885f-93386ea7b3e9.xml, OB_PRE_OPERATION_INFORMATION, wdm/POB_PRE_OPERATION_INFORMATION, kernel.ob_pre_operation_information
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Server 2008 and later versions of the Windows operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	OB_PRE_OPERATION_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: OB_PRE_OPERATION_INFORMATION, *POB_PRE_OPERATION_INFORMATION
+req.product: Windows 10 or later.
 ---
 
 # _OB_PRE_OPERATION_INFORMATION structure

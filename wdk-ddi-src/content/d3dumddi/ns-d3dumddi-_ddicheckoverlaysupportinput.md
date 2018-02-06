@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._DDICHECKOVERLAYSUPPORTINPUT
-title : "_DDICHECKOVERLAYSUPPORTINPUT"
-author : windows-driver-content
-description : The DDICHECKOVERLAYSUPPORTINPUT structure describes an overlay display mode that the user-mode display driver uses to verify overlay support.
-old-location : display\ddicheckoverlaysupportinput.htm
-old-project : display
-ms.assetid : 5f15743a-1ea7-4260-b2cb-f2871acb27f9
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DDICHECKOVERLAYSUPPORTINPUT, d3dumddi/DDICHECKOVERLAYSUPPORTINPUT, display.ddicheckoverlaysupportinput, DDICHECKOVERLAYSUPPORTINPUT structure [Display Devices], D3D_other_Structs_194edebf-9bbd-465b-a731-ad3e10f6e809.xml, _DDICHECKOVERLAYSUPPORTINPUT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : DDICHECKOVERLAYSUPPORTINPUT is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DDICHECKOVERLAYSUPPORTINPUT
+UID: NS:d3dumddi._DDICHECKOVERLAYSUPPORTINPUT
+title: "_DDICHECKOVERLAYSUPPORTINPUT"
+author: windows-driver-content
+description: The DDICHECKOVERLAYSUPPORTINPUT structure describes an overlay display mode that the user-mode display driver uses to verify overlay support.
+old-location: display\ddicheckoverlaysupportinput.htm
+old-project: display
+ms.assetid: 5f15743a-1ea7-4260-b2cb-f2871acb27f9
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DDICHECKOVERLAYSUPPORTINPUT, d3dumddi/DDICHECKOVERLAYSUPPORTINPUT, display.ddicheckoverlaysupportinput, DDICHECKOVERLAYSUPPORTINPUT structure [Display Devices], D3D_other_Structs_194edebf-9bbd-465b-a731-ad3e10f6e809.xml, _DDICHECKOVERLAYSUPPORTINPUT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: DDICHECKOVERLAYSUPPORTINPUT is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	DDICHECKOVERLAYSUPPORTINPUT
+product: Windows
+targetos: Windows
+req.typenames: DDICHECKOVERLAYSUPPORTINPUT
 ---
 
 # _DDICHECKOVERLAYSUPPORTINPUT structure

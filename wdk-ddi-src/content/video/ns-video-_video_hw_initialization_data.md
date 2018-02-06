@@ -1,42 +1,47 @@
 ---
-UID : NS:video._VIDEO_HW_INITIALIZATION_DATA
-title : "_VIDEO_HW_INITIALIZATION_DATA"
-author : windows-driver-content
-description : The VIDEO_HW_INITIALIZATION_DATA structure specifies the entry points and storage requirements for the miniport driver. This structure is created on the stack and initialized by the miniport driver's DriverEntry function.
-old-location : display\video_hw_initialization_data.htm
-old-project : display
-ms.assetid : 1f6bc444-12d6-4406-891e-87dfca437284
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : PVIDEO_HW_INITIALIZATION_DATA structure pointer [Display Devices], Video_Structs_1ab4d104-315b-4b04-b9dc-3088437cc6d3.xml, _VIDEO_HW_INITIALIZATION_DATA, VIDEO_HW_INITIALIZATION_DATA, PVIDEO_HW_INITIALIZATION_DATA, video/VIDEO_HW_INITIALIZATION_DATA, video/PVIDEO_HW_INITIALIZATION_DATA, VIDEO_HW_INITIALIZATION_DATA structure [Display Devices], display.video_hw_initialization_data, *PVIDEO_HW_INITIALIZATION_DATA
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PVIDEO_HW_INITIALIZATION_DATA, VIDEO_HW_INITIALIZATION_DATA"
-req.product : Windows 10 or later.
+UID: NS:video._VIDEO_HW_INITIALIZATION_DATA
+title: "_VIDEO_HW_INITIALIZATION_DATA"
+author: windows-driver-content
+description: The VIDEO_HW_INITIALIZATION_DATA structure specifies the entry points and storage requirements for the miniport driver. This structure is created on the stack and initialized by the miniport driver's DriverEntry function.
+old-location: display\video_hw_initialization_data.htm
+old-project: display
+ms.assetid: 1f6bc444-12d6-4406-891e-87dfca437284
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: PVIDEO_HW_INITIALIZATION_DATA structure pointer [Display Devices], Video_Structs_1ab4d104-315b-4b04-b9dc-3088437cc6d3.xml, _VIDEO_HW_INITIALIZATION_DATA, VIDEO_HW_INITIALIZATION_DATA, PVIDEO_HW_INITIALIZATION_DATA, video/VIDEO_HW_INITIALIZATION_DATA, video/PVIDEO_HW_INITIALIZATION_DATA, VIDEO_HW_INITIALIZATION_DATA structure [Display Devices], display.video_hw_initialization_data, *PVIDEO_HW_INITIALIZATION_DATA
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	video.h
+apiname:
+-	VIDEO_HW_INITIALIZATION_DATA
+product: Windows
+targetos: Windows
+req.typenames: "*PVIDEO_HW_INITIALIZATION_DATA, VIDEO_HW_INITIALIZATION_DATA"
+req.product: Windows 10 or later.
 ---
 
 # _VIDEO_HW_INITIALIZATION_DATA structure

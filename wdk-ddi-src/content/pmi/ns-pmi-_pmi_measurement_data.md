@@ -1,41 +1,46 @@
 ---
-UID : NS:pmi._PMI_MEASUREMENT_DATA
-title : "_PMI_MEASUREMENT_DATA"
-author : windows-driver-content
-description : The PMI_MEASUREMENT_DATA structure contains the current power measurement that is collected by a power meter.
-old-location : powermeter\pmi_measurement_data.htm
-old-project : powermeter
-ms.assetid : d96e587e-36e2-475a-a139-040034f8e60b
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : PPMI_MEASUREMENT_DATA, PMI_MEASUREMENT_DATA, PowerMeterRef_6a79b3fc-5943-4ac9-aa02-4584269bb970.xml, _PMI_MEASUREMENT_DATA, PMI_MEASUREMENT_DATA structure [Power Metering and Budgeting Devices], PPMI_MEASUREMENT_DATA structure pointer [Power Metering and Budgeting Devices], *PPMI_MEASUREMENT_DATA, powermeter.pmi_measurement_data, pmi/PPMI_MEASUREMENT_DATA, pmi/PMI_MEASUREMENT_DATA
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : pmi.h
-req.include-header : Pmi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7, Windows Server 2008 R2, and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PMI_MEASUREMENT_DATA, *PPMI_MEASUREMENT_DATA
+UID: NS:pmi._PMI_MEASUREMENT_DATA
+title: "_PMI_MEASUREMENT_DATA"
+author: windows-driver-content
+description: The PMI_MEASUREMENT_DATA structure contains the current power measurement that is collected by a power meter.
+old-location: powermeter\pmi_measurement_data.htm
+old-project: powermeter
+ms.assetid: d96e587e-36e2-475a-a139-040034f8e60b
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: PPMI_MEASUREMENT_DATA, PMI_MEASUREMENT_DATA, PowerMeterRef_6a79b3fc-5943-4ac9-aa02-4584269bb970.xml, _PMI_MEASUREMENT_DATA, PMI_MEASUREMENT_DATA structure [Power Metering and Budgeting Devices], PPMI_MEASUREMENT_DATA structure pointer [Power Metering and Budgeting Devices], *PPMI_MEASUREMENT_DATA, powermeter.pmi_measurement_data, pmi/PPMI_MEASUREMENT_DATA, pmi/PMI_MEASUREMENT_DATA
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: pmi.h
+req.include-header: Pmi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7, Windows Server 2008 R2, and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	pmi.h
+apiname:
+-	PMI_MEASUREMENT_DATA
+product: Windows
+targetos: Windows
+req.typenames: PMI_MEASUREMENT_DATA, *PPMI_MEASUREMENT_DATA
 ---
 
 # _PMI_MEASUREMENT_DATA structure

@@ -1,42 +1,47 @@
 ---
-UID : NC:sercx.EVT_SERCX_APPLY_CONFIG
-title : EVT_SERCX_APPLY_CONFIG
-author : windows-driver-content
-description : The EvtSerCxApplyConfig event callback function instructs the serial controller driver to apply a list of configuration settings to the serial controller hardware.
-old-location : serports\evtsercxapplyconfig.htm
-old-project : serports
-ms.assetid : DC0AB4E3-AA73-4DD5-B91D-95F9D3792321
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : serports.evtsercxapplyconfig, EvtSerCxApplyConfig callback function [Serial Ports], EvtSerCxApplyConfig, EVT_SERCX_APPLY_CONFIG, EVT_SERCX_APPLY_CONFIG, 1/EvtSerCxApplyConfig
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : sercx.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Available starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Called at IRQL <= DISPATCH_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SENSOR_VALUE_PAIR, *PSENSOR_VALUE_PAIR
-req.product : Windows 10 or later.
+UID: NC:sercx.EVT_SERCX_APPLY_CONFIG
+title: EVT_SERCX_APPLY_CONFIG
+author: windows-driver-content
+description: The EvtSerCxApplyConfig event callback function instructs the serial controller driver to apply a list of configuration settings to the serial controller hardware.
+old-location: serports\evtsercxapplyconfig.htm
+old-project: serports
+ms.assetid: DC0AB4E3-AA73-4DD5-B91D-95F9D3792321
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: serports.evtsercxapplyconfig, EvtSerCxApplyConfig callback function [Serial Ports], EvtSerCxApplyConfig, EVT_SERCX_APPLY_CONFIG, EVT_SERCX_APPLY_CONFIG, 1/EvtSerCxApplyConfig
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: sercx.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Called at IRQL <= DISPATCH_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	1.0\Sercx.h
+apiname:
+-	EvtSerCxApplyConfig
+product: Windows
+targetos: Windows
+req.typenames: SENSOR_VALUE_PAIR, *PSENSOR_VALUE_PAIR
+req.product: Windows 10 or later.
 ---
 
 

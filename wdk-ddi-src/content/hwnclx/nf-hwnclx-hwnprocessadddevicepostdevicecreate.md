@@ -1,41 +1,47 @@
 ---
-UID : NF:hwnclx.HwNProcessAddDevicePostDeviceCreate
-title : HwNProcessAddDevicePostDeviceCreate function
-author : windows-driver-content
-description : Creates I/O queues. It should be called after the client driver’s EVT_WDF_DRIVER_DEVICE_ADD callback function is invoked and the device object has been created.
-old-location : gpiobtn\hwnprocessadddevicepostdevicecreate.htm
-old-project : gpiobtn
-ms.assetid : 907cdeac-e2f0-48fa-bbf0-082c0fce6401
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : hwnclx/HwNProcessAddDevicePostDeviceCreate, gpiobtn.hwnprocessadddevicepostdevicecreate, HwNProcessAddDevicePostDeviceCreate, HwNProcessAddDevicePostDeviceCreate function
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : hwnclx.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10, version 1709
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Mshwnclxstub.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HWN_CLX_EXPORT_INDEX, *PHWN_CLX_EXPORT_INDEX
+UID: NF:hwnclx.HwNProcessAddDevicePostDeviceCreate
+title: HwNProcessAddDevicePostDeviceCreate function
+author: windows-driver-content
+description: Creates I/O queues. It should be called after the client driver’s EVT_WDF_DRIVER_DEVICE_ADD callback function is invoked and the device object has been created.
+old-location: gpiobtn\hwnprocessadddevicepostdevicecreate.htm
+old-project: gpiobtn
+ms.assetid: 907cdeac-e2f0-48fa-bbf0-082c0fce6401
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: hwnclx/HwNProcessAddDevicePostDeviceCreate, gpiobtn.hwnprocessadddevicepostdevicecreate, HwNProcessAddDevicePostDeviceCreate, HwNProcessAddDevicePostDeviceCreate function
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: hwnclx.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10, version 1709
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Mshwnclxstub.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Mshwnclxstub.lib
+-	Mshwnclxstub.dll
+apiname:
+-	HwNProcessAddDevicePostDeviceCreate
+product: Windows
+targetos: Windows
+req.typenames: HWN_CLX_EXPORT_INDEX, *PHWN_CLX_EXPORT_INDEX
 ---
 
 

@@ -1,38 +1,38 @@
 ---
-UID : NF:wdm.ASSERTMSG
-title : ASSERTMSG macro
-author : windows-driver-content
-description : ASSERTMSG tests an expression. If the expression is false, it breaks into the kernel debugger and sends it the specified message.
-old-location : devtest\assertmsg.htm
-old-project : devtest
-ms.assetid : 88c0cd30-607b-48f4-b2b6-3c21be1ce31a
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : ASSERTMSG
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : macro
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Microsoft Windows 2000 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.alt-api : ASSERTMSG
-req.alt-loc : ntddk.h
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ASSERTMSG
+title: ASSERTMSG macro
+author: windows-driver-content
+description: ASSERTMSG tests an expression. If the expression is false, it breaks into the kernel debugger and sends it the specified message.
+old-location: devtest\assertmsg.htm
+old-project: devtest
+ms.assetid: 88c0cd30-607b-48f4-b2b6-3c21be1ce31a
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: ASSERTMSG
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: macro
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Microsoft Windows 2000 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.alt-api: ASSERTMSG
+req.alt-loc: ntddk.h
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

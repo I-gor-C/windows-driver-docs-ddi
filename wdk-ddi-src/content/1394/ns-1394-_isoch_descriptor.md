@@ -1,41 +1,46 @@
 ---
-UID : NS:1394._ISOCH_DESCRIPTOR
-title : "_ISOCH_DESCRIPTOR"
-author : windows-driver-content
-description : The ISOCH_DESCRIPTOR structure describes a buffer to be attached or detailed from a resource handle, using the REQUEST_ISOCH_ATTACH_BUFFERS and REQUEST_ISOCH_DETACH_BUFFERS requests.
-old-location : ieee\isoch_descriptor.htm
-old-project : IEEE
-ms.assetid : 4f508af6-942b-4d48-8874-4b6d9918f01f
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : PISOCH_DESCRIPTOR structure pointer [Buses], IEEE.isoch_descriptor, 1394/PISOCH_DESCRIPTOR, PISOCH_DESCRIPTOR, 1394/ISOCH_DESCRIPTOR, 1394stct_ceca99ed-2075-42d4-9be7-31e659e2b654.xml, ISOCH_DESCRIPTOR, _ISOCH_DESCRIPTOR, ISOCH_DESCRIPTOR structure [Buses], *PISOCH_DESCRIPTOR
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : 1394.h
-req.include-header : 1394.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : ISOCH_DESCRIPTOR, *PISOCH_DESCRIPTOR
+UID: NS:1394._ISOCH_DESCRIPTOR
+title: "_ISOCH_DESCRIPTOR"
+author: windows-driver-content
+description: The ISOCH_DESCRIPTOR structure describes a buffer to be attached or detailed from a resource handle, using the REQUEST_ISOCH_ATTACH_BUFFERS and REQUEST_ISOCH_DETACH_BUFFERS requests.
+old-location: ieee\isoch_descriptor.htm
+old-project: IEEE
+ms.assetid: 4f508af6-942b-4d48-8874-4b6d9918f01f
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: PISOCH_DESCRIPTOR structure pointer [Buses], IEEE.isoch_descriptor, 1394/PISOCH_DESCRIPTOR, PISOCH_DESCRIPTOR, 1394/ISOCH_DESCRIPTOR, 1394stct_ceca99ed-2075-42d4-9be7-31e659e2b654.xml, ISOCH_DESCRIPTOR, _ISOCH_DESCRIPTOR, ISOCH_DESCRIPTOR structure [Buses], *PISOCH_DESCRIPTOR
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: 1394.h
+req.include-header: 1394.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	1394.h
+apiname:
+-	ISOCH_DESCRIPTOR
+product: Windows
+targetos: Windows
+req.typenames: ISOCH_DESCRIPTOR, *PISOCH_DESCRIPTOR
 ---
 
 # _ISOCH_DESCRIPTOR structure

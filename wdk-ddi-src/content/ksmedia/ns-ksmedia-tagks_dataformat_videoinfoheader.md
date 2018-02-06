@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.tagKS_DATAFORMAT_VIDEOINFOHEADER
-title : tagKS_DATAFORMAT_VIDEOINFOHEADER
-author : windows-driver-content
-description : The KS_DATAFORMAT_VIDEOINFOHEADER structure describes a video stream that does not include bob or weave settings.
-old-location : stream\ks_dataformat_videoinfoheader.htm
-old-project : stream
-ms.assetid : 60a04887-d696-42b2-95af-cce1c0bc102b
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : "*PKS_DATAFORMAT_VIDEOINFOHEADER, PKS_DATAFORMAT_VIDEOINFOHEADER, KS_DATAFORMAT_VIDEOINFOHEADER structure [Streaming Media Devices], stream.ks_dataformat_videoinfoheader, ksmedia/KS_DATAFORMAT_VIDEOINFOHEADER, ksmedia/PKS_DATAFORMAT_VIDEOINFOHEADER, KS_DATAFORMAT_VIDEOINFOHEADER, PKS_DATAFORMAT_VIDEOINFOHEADER structure pointer [Streaming Media Devices], vidcapstruct_756be7d3-2dca-4e93-a113-7ee3871f3107.xml, tagKS_DATAFORMAT_VIDEOINFOHEADER"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KS_DATAFORMAT_VIDEOINFOHEADER, *PKS_DATAFORMAT_VIDEOINFOHEADER
+UID: NS:ksmedia.tagKS_DATAFORMAT_VIDEOINFOHEADER
+title: tagKS_DATAFORMAT_VIDEOINFOHEADER
+author: windows-driver-content
+description: The KS_DATAFORMAT_VIDEOINFOHEADER structure describes a video stream that does not include bob or weave settings.
+old-location: stream\ks_dataformat_videoinfoheader.htm
+old-project: stream
+ms.assetid: 60a04887-d696-42b2-95af-cce1c0bc102b
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: "*PKS_DATAFORMAT_VIDEOINFOHEADER, PKS_DATAFORMAT_VIDEOINFOHEADER, KS_DATAFORMAT_VIDEOINFOHEADER structure [Streaming Media Devices], stream.ks_dataformat_videoinfoheader, ksmedia/KS_DATAFORMAT_VIDEOINFOHEADER, ksmedia/PKS_DATAFORMAT_VIDEOINFOHEADER, KS_DATAFORMAT_VIDEOINFOHEADER, PKS_DATAFORMAT_VIDEOINFOHEADER structure pointer [Streaming Media Devices], vidcapstruct_756be7d3-2dca-4e93-a113-7ee3871f3107.xml, tagKS_DATAFORMAT_VIDEOINFOHEADER"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	KS_DATAFORMAT_VIDEOINFOHEADER
+product: Windows
+targetos: Windows
+req.typenames: KS_DATAFORMAT_VIDEOINFOHEADER, *PKS_DATAFORMAT_VIDEOINFOHEADER
 ---
 
 # tagKS_DATAFORMAT_VIDEOINFOHEADER structure

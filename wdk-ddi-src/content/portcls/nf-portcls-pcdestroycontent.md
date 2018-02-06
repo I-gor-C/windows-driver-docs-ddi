@@ -1,41 +1,47 @@
 ---
-UID : NF:portcls.PcDestroyContent
-title : PcDestroyContent function
-author : windows-driver-content
-description : The PcDestroyContent function deletes a DRM content ID that was created by PcCreateContentMixed. Note that this function call is identical in operation to the DrmDestroyContent function, and its parameter definitions and return value are also identical.
-old-location : audio\pcdestroycontent.htm
-old-project : audio
-ms.assetid : 742ee83c-3db4-4d77-a79d-28bcc405746d
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : PcDestroyContent, audpc-routines_8f5adcf6-89a7-4918-ac2e-78afa45c38c5.xml, PcDestroyContent function [Audio Devices], audio.pcdestroycontent, portcls/PcDestroyContent
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : portcls.h
-req.include-header : Portcls.h
-req.target-type : Universal
-req.target-min-winverclnt : The PortCls system driver implements the PcDestroyContent function in Microsoft Windows XP and later operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Portcls.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.PcDestroyContent
+title: PcDestroyContent function
+author: windows-driver-content
+description: The PcDestroyContent function deletes a DRM content ID that was created by PcCreateContentMixed. Note that this function call is identical in operation to the DrmDestroyContent function, and its parameter definitions and return value are also identical.
+old-location: audio\pcdestroycontent.htm
+old-project: audio
+ms.assetid: 742ee83c-3db4-4d77-a79d-28bcc405746d
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: PcDestroyContent, audpc-routines_8f5adcf6-89a7-4918-ac2e-78afa45c38c5.xml, PcDestroyContent function [Audio Devices], audio.pcdestroycontent, portcls/PcDestroyContent
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: portcls.h
+req.include-header: Portcls.h
+req.target-type: Universal
+req.target-min-winverclnt: The PortCls system driver implements the PcDestroyContent function in Microsoft Windows XP and later operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Portcls.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Portcls.lib
+-	Portcls.dll
+apiname:
+-	PcDestroyContent
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

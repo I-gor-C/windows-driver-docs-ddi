@@ -1,41 +1,46 @@
 ---
-UID : NS:1394._IRB
-title : "_IRB"
-author : windows-driver-content
-description : Drivers use this structure to pass most requests to IEEE 1394 bus driver.
-old-location : ieee\irb.htm
-old-project : IEEE
-ms.assetid : 456712c9-720c-436c-b1db-a6d53c358e22
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : 1394/PIRB, IRB structure [Buses], PIRB structure pointer [Buses], 1394/IRB, _IRB, *PIRB, IEEE.irb, PIRB, IRB, 1394stct_84bb3968-39fc-4b3b-90cb-a4e917b8310a.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : 1394.h
-req.include-header : 1394.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : IRB, *PIRB
+UID: NS:1394._IRB
+title: "_IRB"
+author: windows-driver-content
+description: Drivers use this structure to pass most requests to IEEE 1394 bus driver.
+old-location: ieee\irb.htm
+old-project: IEEE
+ms.assetid: 456712c9-720c-436c-b1db-a6d53c358e22
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: 1394/PIRB, IRB structure [Buses], PIRB structure pointer [Buses], 1394/IRB, _IRB, *PIRB, IEEE.irb, PIRB, IRB, 1394stct_84bb3968-39fc-4b3b-90cb-a4e917b8310a.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: 1394.h
+req.include-header: 1394.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	1394.h
+apiname:
+-	IRB
+product: Windows
+targetos: Windows
+req.typenames: IRB, *PIRB
 ---
 
 # _IRB structure

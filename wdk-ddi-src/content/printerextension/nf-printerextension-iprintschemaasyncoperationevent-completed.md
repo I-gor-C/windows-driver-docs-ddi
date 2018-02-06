@@ -1,42 +1,47 @@
 ---
-UID : NF:printerextension.IPrintSchemaAsyncOperationEvent.Completed
-title : IPrintSchemaAsyncOperationEvent::Completed method
-author : windows-driver-content
-description : Is called when asynchronous PrintSchema operation that is represented by an IPrintSchemaAsyncOperation context is completed.
-old-location : print\iprintschemaasyncoperationevent_completed.htm
-old-project : print
-ms.assetid : B1599F21-D6DD-497D-9CD8-6C637ABAA33A
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : IPrintSchemaAsyncOperationEvent::Completed, Completed method [Print Devices], print.iprintschemaasyncoperationevent_completed, Completed, Completed method [Print Devices], IPrintSchemaAsyncOperationEvent interface, IPrintSchemaAsyncOperationEvent interface [Print Devices], Completed method, IPrintSchemaAsyncOperationEvent, printerextension/IPrintSchemaAsyncOperationEvent::Completed
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : printerextension.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : printerextension.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PrintSchemaSelectionType
-req.product : Windows 10 or later.
+UID: NF:printerextension.IPrintSchemaAsyncOperationEvent.Completed
+title: IPrintSchemaAsyncOperationEvent::Completed method
+author: windows-driver-content
+description: Is called when asynchronous PrintSchema operation that is represented by an IPrintSchemaAsyncOperation context is completed.
+old-location: print\iprintschemaasyncoperationevent_completed.htm
+old-project: print
+ms.assetid: B1599F21-D6DD-497D-9CD8-6C637ABAA33A
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: IPrintSchemaAsyncOperationEvent::Completed, Completed method [Print Devices], print.iprintschemaasyncoperationevent_completed, Completed, Completed method [Print Devices], IPrintSchemaAsyncOperationEvent interface, IPrintSchemaAsyncOperationEvent interface [Print Devices], Completed method, IPrintSchemaAsyncOperationEvent, printerextension/IPrintSchemaAsyncOperationEvent::Completed
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: printerextension.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: printerextension.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Printerextension.h
+apiname:
+-	IPrintSchemaAsyncOperationEvent.Completed
+product: Windows
+targetos: Windows
+req.typenames: PrintSchemaSelectionType
+req.product: Windows 10 or later.
 ---
 
 

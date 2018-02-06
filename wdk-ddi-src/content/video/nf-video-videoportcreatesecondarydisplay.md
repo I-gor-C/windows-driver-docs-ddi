@@ -1,42 +1,47 @@
 ---
-UID : NF:video.VideoPortCreateSecondaryDisplay
-title : VideoPortCreateSecondaryDisplay function
-author : windows-driver-content
-description : The VideoPortCreateSecondaryDisplay function enables dual-view support by creating a secondary device object for the given device.
-old-location : display\videoportcreatesecondarydisplay.htm
-old-project : display
-ms.assetid : 49dc9ed8-a506-475e-910f-5dce2ad9b168
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : VideoPortCreateSecondaryDisplay, VideoPort_Functions_eda677fc-91b7-47d3-8407-615d5fbfcb3a.xml, display.videoportcreatesecondarydisplay, video/VideoPortCreateSecondaryDisplay, VideoPortCreateSecondaryDisplay function [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows XP and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Videoprt.lib
-req.dll : Videoprt.sys
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_PORT_SERVICES
-req.product : Windows 10 or later.
+UID: NF:video.VideoPortCreateSecondaryDisplay
+title: VideoPortCreateSecondaryDisplay function
+author: windows-driver-content
+description: The VideoPortCreateSecondaryDisplay function enables dual-view support by creating a secondary device object for the given device.
+old-location: display\videoportcreatesecondarydisplay.htm
+old-project: display
+ms.assetid: 49dc9ed8-a506-475e-910f-5dce2ad9b168
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: VideoPortCreateSecondaryDisplay, VideoPort_Functions_eda677fc-91b7-47d3-8407-615d5fbfcb3a.xml, display.videoportcreatesecondarydisplay, video/VideoPortCreateSecondaryDisplay, VideoPortCreateSecondaryDisplay function [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows XP and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Videoprt.lib
+req.dll: Videoprt.sys
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Videoprt.sys
+apiname:
+-	VideoPortCreateSecondaryDisplay
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_PORT_SERVICES
+req.product: Windows 10 or later.
 ---
 
 

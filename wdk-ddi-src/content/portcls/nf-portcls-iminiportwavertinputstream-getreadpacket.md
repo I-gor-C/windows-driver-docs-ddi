@@ -1,41 +1,46 @@
 ---
-UID : NF:portcls.IMiniportWaveRTInputStream.GetReadPacket
-title : IMiniportWaveRTInputStream::GetReadPacket method
-author : windows-driver-content
-description : Returns information about captured data.
-old-location : audio\iminiportwavertinputstream_getreadpacket.htm
-old-project : audio
-ms.assetid : F26F6820-B761-4DF3-B7D7-9C1B174DEEA2
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : audio.iminiportwavertinputstream_getreadpacket, GetReadPacket, portcls/IMiniportWaveRTInputStream::GetReadPacket, IMiniportWaveRTInputStream interface [Audio Devices], GetReadPacket method, IMiniportWaveRTInputStream, GetReadPacket method [Audio Devices], IMiniportWaveRTInputStream::GetReadPacket, GetReadPacket method [Audio Devices], IMiniportWaveRTInputStream interface
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : portcls.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 10 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : portcls.h
-req.dll : 
-req.irql : Passive level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.IMiniportWaveRTInputStream.GetReadPacket
+title: IMiniportWaveRTInputStream::GetReadPacket method
+author: windows-driver-content
+description: Returns information about captured data.
+old-location: audio\iminiportwavertinputstream_getreadpacket.htm
+old-project: audio
+ms.assetid: F26F6820-B761-4DF3-B7D7-9C1B174DEEA2
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: audio.iminiportwavertinputstream_getreadpacket, GetReadPacket, portcls/IMiniportWaveRTInputStream::GetReadPacket, IMiniportWaveRTInputStream interface [Audio Devices], GetReadPacket method, IMiniportWaveRTInputStream, GetReadPacket method [Audio Devices], IMiniportWaveRTInputStream::GetReadPacket, GetReadPacket method [Audio Devices], IMiniportWaveRTInputStream interface
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: portcls.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 10 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: portcls.h
+req.dll: 
+req.irql: Passive level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	portcls.h
+apiname:
+-	IMiniportWaveRTInputStream.GetReadPacket
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

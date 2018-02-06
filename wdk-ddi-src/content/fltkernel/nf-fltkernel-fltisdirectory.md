@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltIsDirectory
-title : FltIsDirectory function
-author : windows-driver-content
-description : A minifilter driver calls the FltIsDirectory routine to determine whether a given file object represents a directory.
-old-location : ifsk\fltisdirectory.htm
-old-project : ifsk
-ms.assetid : a9343e09-0b7b-4ed8-9b30-63ee0b38d13d
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : fltkernel/FltIsDirectory, FltIsDirectory routine [Installable File System Drivers], FltApiRef_e_to_o_cdcea60b-c299-4445-9c96-126210f2a43e.xml, ifsk.fltisdirectory, FltIsDirectory
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : FltKernel.h
-req.target-type : Universal
-req.target-min-winverclnt : This routine is available on Microsoft Windows 2000 Update Rollup 1 for SP4, Windows XP SP2, Microsoft Windows Server 2003 SP1, and later.  Note that this routine is not available on Windows 2000 SP4 or earlier.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Fltmgr.lib
-req.dll : Fltmgr.sys
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltIsDirectory
+title: FltIsDirectory function
+author: windows-driver-content
+description: A minifilter driver calls the FltIsDirectory routine to determine whether a given file object represents a directory.
+old-location: ifsk\fltisdirectory.htm
+old-project: ifsk
+ms.assetid: a9343e09-0b7b-4ed8-9b30-63ee0b38d13d
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: fltkernel/FltIsDirectory, FltIsDirectory routine [Installable File System Drivers], FltApiRef_e_to_o_cdcea60b-c299-4445-9c96-126210f2a43e.xml, ifsk.fltisdirectory, FltIsDirectory
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: FltKernel.h
+req.target-type: Universal
+req.target-min-winverclnt: This routine is available on Microsoft Windows 2000 Update Rollup 1 for SP4, Windows XP SP2, Microsoft Windows Server 2003 SP1, and later.  Note that this routine is not available on Windows 2000 SP4 or earlier.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Fltmgr.lib
+req.dll: Fltmgr.sys
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltIsDirectory
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NC:ks.PFNALLOCATOR_ALLOCATEFRAME
-title : PFNALLOCATOR_ALLOCATEFRAME
-author : windows-driver-content
-description : The KStrAllocateFrame routine describes a vendor-supplied frame allocation function.
-old-location : stream\kstrallocateframe.htm
-old-project : stream
-ms.assetid : 1b6eec23-82b4-4e8f-89d0-e76d6449906e
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.kstrallocateframe, KStrAllocateFrame routine [Streaming Media Devices], KStrAllocateFrame, PFNALLOCATOR_ALLOCATEFRAME, PFNALLOCATOR_ALLOCATEFRAME, ks/KStrAllocateFrame, ksfunc_a90af96e-53df-43f5-b847-ba1876b788fd.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KEYWORDSELECTOR
+UID: NC:ks.PFNALLOCATOR_ALLOCATEFRAME
+title: PFNALLOCATOR_ALLOCATEFRAME
+author: windows-driver-content
+description: The KStrAllocateFrame routine describes a vendor-supplied frame allocation function.
+old-location: stream\kstrallocateframe.htm
+old-project: stream
+ms.assetid: 1b6eec23-82b4-4e8f-89d0-e76d6449906e
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.kstrallocateframe, KStrAllocateFrame routine [Streaming Media Devices], KStrAllocateFrame, PFNALLOCATOR_ALLOCATEFRAME, PFNALLOCATOR_ALLOCATEFRAME, ks/KStrAllocateFrame, ksfunc_a90af96e-53df-43f5-b847-ba1876b788fd.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	ks.h
+apiname:
+-	KStrAllocateFrame
+product: Windows
+targetos: Windows
+req.typenames: KEYWORDSELECTOR
 ---
 
 

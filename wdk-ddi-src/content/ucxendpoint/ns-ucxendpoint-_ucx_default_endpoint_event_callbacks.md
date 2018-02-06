@@ -1,42 +1,47 @@
 ---
-UID : NS:ucxendpoint._UCX_DEFAULT_ENDPOINT_EVENT_CALLBACKS
-title : "_UCX_DEFAULT_ENDPOINT_EVENT_CALLBACKS"
-author : windows-driver-content
-description : This structure provides a list of UCX default endpoint event callback functions.
-old-location : buses\_ucx_default_endpoint_event_callbacks.htm
-old-project : usbref
-ms.assetid : A22E96FC-E219-4F6C-B8AF-AC86FAD89543
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : UCX_DEFAULT_ENDPOINT_EVENT_CALLBACKS structure [Buses], ucxendpoint/P_UCX_DEFAULT_ENDPOINT_EVENT_CALLBACKS, *PUCX_DEFAULT_ENDPOINT_EVENT_CALLBACKS, UCX_DEFAULT_ENDPOINT_EVENT_CALLBACKS, P_UCX_DEFAULT_ENDPOINT_EVENT_CALLBACKS structure pointer [Buses], _UCX_DEFAULT_ENDPOINT_EVENT_CALLBACKS, buses._ucx_default_endpoint_event_callbacks, P_UCX_DEFAULT_ENDPOINT_EVENT_CALLBACKS, ucxendpoint/_UCX_DEFAULT_ENDPOINT_EVENT_CALLBACKS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ucxendpoint.h
-req.include-header : Ucxclass.h, Ucxendpoint.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : UCX_DEFAULT_ENDPOINT_EVENT_CALLBACKS, *PUCX_DEFAULT_ENDPOINT_EVENT_CALLBACKS
-req.product : Windows 10 or later.
+UID: NS:ucxendpoint._UCX_DEFAULT_ENDPOINT_EVENT_CALLBACKS
+title: "_UCX_DEFAULT_ENDPOINT_EVENT_CALLBACKS"
+author: windows-driver-content
+description: This structure provides a list of UCX default endpoint event callback functions.
+old-location: buses\_ucx_default_endpoint_event_callbacks.htm
+old-project: usbref
+ms.assetid: A22E96FC-E219-4F6C-B8AF-AC86FAD89543
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: UCX_DEFAULT_ENDPOINT_EVENT_CALLBACKS structure [Buses], ucxendpoint/P_UCX_DEFAULT_ENDPOINT_EVENT_CALLBACKS, *PUCX_DEFAULT_ENDPOINT_EVENT_CALLBACKS, UCX_DEFAULT_ENDPOINT_EVENT_CALLBACKS, P_UCX_DEFAULT_ENDPOINT_EVENT_CALLBACKS structure pointer [Buses], _UCX_DEFAULT_ENDPOINT_EVENT_CALLBACKS, buses._ucx_default_endpoint_event_callbacks, P_UCX_DEFAULT_ENDPOINT_EVENT_CALLBACKS, ucxendpoint/_UCX_DEFAULT_ENDPOINT_EVENT_CALLBACKS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ucxendpoint.h
+req.include-header: Ucxclass.h, Ucxendpoint.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ucxendpoint.h
+apiname:
+-	UCX_DEFAULT_ENDPOINT_EVENT_CALLBACKS
+product: Windows
+targetos: Windows
+req.typenames: UCX_DEFAULT_ENDPOINT_EVENT_CALLBACKS, *PUCX_DEFAULT_ENDPOINT_EVENT_CALLBACKS
+req.product: Windows 10 or later.
 ---
 
 # _UCX_DEFAULT_ENDPOINT_EVENT_CALLBACKS structure

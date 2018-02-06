@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFPropertyStoreFactory.RetrieveDevicePropertyStore
-title : IWDFPropertyStoreFactory::RetrieveDevicePropertyStore method
-author : windows-driver-content
-description : The RetrieveDevicePropertyStore method retrieves a property store interface that drivers can use to access the registry.
-old-location : wdf\iwdfpropertystorefactory_retrievedevicepropertystore.htm
-old-project : wdf
-ms.assetid : 23a4c968-b1d1-48f4-9ea9-b97c4b5b4208
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RetrieveDevicePropertyStore method, RetrieveDevicePropertyStore method, IWDFPropertyStoreFactory interface, IWDFPropertyStoreFactory, wdf.iwdfpropertystorefactory_retrievedevicepropertystore, UMDFDeviceObjectRef_79101c30-a5ab-44cf-8fa0-52394d1cce32.xml, IWDFPropertyStoreFactory interface, RetrieveDevicePropertyStore method, wudfddi/IWDFPropertyStoreFactory::RetrieveDevicePropertyStore, IWDFPropertyStoreFactory::RetrieveDevicePropertyStore, RetrieveDevicePropertyStore, umdf.iwdfpropertystorefactory_retrievedevicepropertystore
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.9
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFPropertyStoreFactory.RetrieveDevicePropertyStore
+title: IWDFPropertyStoreFactory::RetrieveDevicePropertyStore method
+author: windows-driver-content
+description: The RetrieveDevicePropertyStore method retrieves a property store interface that drivers can use to access the registry.
+old-location: wdf\iwdfpropertystorefactory_retrievedevicepropertystore.htm
+old-project: wdf
+ms.assetid: 23a4c968-b1d1-48f4-9ea9-b97c4b5b4208
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: RetrieveDevicePropertyStore method, RetrieveDevicePropertyStore method, IWDFPropertyStoreFactory interface, IWDFPropertyStoreFactory, wdf.iwdfpropertystorefactory_retrievedevicepropertystore, UMDFDeviceObjectRef_79101c30-a5ab-44cf-8fa0-52394d1cce32.xml, IWDFPropertyStoreFactory interface, RetrieveDevicePropertyStore method, wudfddi/IWDFPropertyStoreFactory::RetrieveDevicePropertyStore, IWDFPropertyStoreFactory::RetrieveDevicePropertyStore, RetrieveDevicePropertyStore, umdf.iwdfpropertystorefactory_retrievedevicepropertystore
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.9
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFPropertyStoreFactory.RetrieveDevicePropertyStore
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

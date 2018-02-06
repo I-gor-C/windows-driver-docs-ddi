@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dhal._D3DHAL_DP2SETVERTEXSHADERCONST
-title : "_D3DHAL_DP2SETVERTEXSHADERCONST"
-author : windows-driver-content
-description : DirectX 8.0 and later versions only. The D3DHAL_DP2SETVERTEXSHADERCONST structure is used to set one or more of the vertex shader constant registers when the D3DDP2OP_SETVERTEXSHADERCONST opcode is received by D3dDrawPrimitives2.
-old-location : display\d3dhal_dp2setvertexshaderconst.htm
-old-project : display
-ms.assetid : f3973564-8739-4bf7-b9f7-e5792018b98d
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : "*LPD3DHAL_DP2SETVERTEXSHADERCONST, _D3DHAL_DP2SETVERTEXSHADERCONST, display.d3dhal_dp2setvertexshaderconst, D3DHAL_DP2SETVERTEXSHADERCONST, D3DHAL_DP2SETVERTEXSHADERCONST structure [Display Devices], *LPD3DHAL_DP2SETVERTEXSHADERCONSTB, *LPD3DHAL_DP2SETVERTEXSHADERCONSTI, D3DHAL_DP2SETVERTEXSHADERCONSTI, LPD3DHAL_DP2SETVERTEXSHADERCONST structure pointer [Display Devices], d3dstrct_5d02ceb6-1d80-4586-a256-ca56ca51a101.xml, d3dhal/LPD3DHAL_DP2SETVERTEXSHADERCONST, d3dhal/D3DHAL_DP2SETVERTEXSHADERCONST, LPD3DHAL_DP2SETVERTEXSHADERCONST, D3DHAL_DP2SETVERTEXSHADERCONSTB"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dhal.h
-req.include-header : D3dhal.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DHAL_DP2SETVERTEXSHADERCONST
+UID: NS:d3dhal._D3DHAL_DP2SETVERTEXSHADERCONST
+title: "_D3DHAL_DP2SETVERTEXSHADERCONST"
+author: windows-driver-content
+description: DirectX 8.0 and later versions only. The D3DHAL_DP2SETVERTEXSHADERCONST structure is used to set one or more of the vertex shader constant registers when the D3DDP2OP_SETVERTEXSHADERCONST opcode is received by D3dDrawPrimitives2.
+old-location: display\d3dhal_dp2setvertexshaderconst.htm
+old-project: display
+ms.assetid: f3973564-8739-4bf7-b9f7-e5792018b98d
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: "*LPD3DHAL_DP2SETVERTEXSHADERCONST, _D3DHAL_DP2SETVERTEXSHADERCONST, display.d3dhal_dp2setvertexshaderconst, D3DHAL_DP2SETVERTEXSHADERCONST, D3DHAL_DP2SETVERTEXSHADERCONST structure [Display Devices], *LPD3DHAL_DP2SETVERTEXSHADERCONSTB, *LPD3DHAL_DP2SETVERTEXSHADERCONSTI, D3DHAL_DP2SETVERTEXSHADERCONSTI, LPD3DHAL_DP2SETVERTEXSHADERCONST structure pointer [Display Devices], d3dstrct_5d02ceb6-1d80-4586-a256-ca56ca51a101.xml, d3dhal/LPD3DHAL_DP2SETVERTEXSHADERCONST, d3dhal/D3DHAL_DP2SETVERTEXSHADERCONST, LPD3DHAL_DP2SETVERTEXSHADERCONST, D3DHAL_DP2SETVERTEXSHADERCONSTB"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dhal.h
+req.include-header: D3dhal.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dhal.h
+apiname:
+-	D3DHAL_DP2SETVERTEXSHADERCONST
+product: Windows
+targetos: Windows
+req.typenames: D3DHAL_DP2SETVERTEXSHADERCONST
 ---
 
 # _D3DHAL_DP2SETVERTEXSHADERCONST structure

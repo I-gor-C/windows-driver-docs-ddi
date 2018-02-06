@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddstor._STORAGE_DEVICE_RESILIENCY_DESCRIPTOR
-title : "_STORAGE_DEVICE_RESILIENCY_DESCRIPTOR"
-author : windows-driver-content
-description : Reserved for system use.
-old-location : storage\storage_device_resiliency_descriptor.htm
-old-project : storage
-ms.assetid : 71351CB7-1295-4797-802C-23A6B1C2C53F
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : STORAGE_DEVICE_RESILIENCY_DESCRIPTOR, PSTORAGE_DEVICE_RESILIENCY_DESCRIPTOR structure pointer [Storage Devices], _STORAGE_DEVICE_RESILIENCY_DESCRIPTOR, storage.storage_device_resiliency_descriptor, ntddstor/PSTORAGE_DEVICE_RESILIENCY_DESCRIPTOR, PSTORAGE_DEVICE_RESILIENCY_DESCRIPTOR, ntddstor/STORAGE_DEVICE_RESILIENCY_DESCRIPTOR, STORAGE_DEVICE_RESILIENCY_DESCRIPTOR structure [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddstor.h
-req.include-header : Ntddstor.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STORAGE_DEVICE_RESILIENCY_DESCRIPTOR, PSTORAGE_DEVICE_RESILIENCY_DESCRIPTOR
+UID: NS:ntddstor._STORAGE_DEVICE_RESILIENCY_DESCRIPTOR
+title: "_STORAGE_DEVICE_RESILIENCY_DESCRIPTOR"
+author: windows-driver-content
+description: Reserved for system use.
+old-location: storage\storage_device_resiliency_descriptor.htm
+old-project: storage
+ms.assetid: 71351CB7-1295-4797-802C-23A6B1C2C53F
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: STORAGE_DEVICE_RESILIENCY_DESCRIPTOR, PSTORAGE_DEVICE_RESILIENCY_DESCRIPTOR structure pointer [Storage Devices], _STORAGE_DEVICE_RESILIENCY_DESCRIPTOR, storage.storage_device_resiliency_descriptor, ntddstor/PSTORAGE_DEVICE_RESILIENCY_DESCRIPTOR, PSTORAGE_DEVICE_RESILIENCY_DESCRIPTOR, ntddstor/STORAGE_DEVICE_RESILIENCY_DESCRIPTOR, STORAGE_DEVICE_RESILIENCY_DESCRIPTOR structure [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddstor.h
+req.include-header: Ntddstor.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddstor.h
+apiname:
+-	STORAGE_DEVICE_RESILIENCY_DESCRIPTOR
+product: Windows
+targetos: Windows
+req.typenames: STORAGE_DEVICE_RESILIENCY_DESCRIPTOR, PSTORAGE_DEVICE_RESILIENCY_DESCRIPTOR
 ---
 
 # _STORAGE_DEVICE_RESILIENCY_DESCRIPTOR structure

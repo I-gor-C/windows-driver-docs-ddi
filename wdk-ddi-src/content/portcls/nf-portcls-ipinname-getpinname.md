@@ -1,41 +1,46 @@
 ---
-UID : NF:portcls.IPinName.GetPinName
-title : IPinName::GetPinName method
-author : windows-driver-content
-description : The GetPinName method retrieves the friendly name of an audio endpoint.
-old-location : audio\ipinname_getpinname.htm
-old-project : audio
-ms.assetid : 97fa159c-ce71-4ce2-8d40-def7671d014c
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : GetPinName method [Audio Devices], GetPinName, IPinName::GetPinName, portcls/IPinName::GetPinName, audmp-routines_438a3c13-6571-45ab-ad7a-6ef71336c17f.xml, GetPinName method [Audio Devices], IPinName interface, audio.ipinname_getpinname, IPinName, IPinName interface [Audio Devices], GetPinName method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : portcls.h
-req.include-header : Portcls.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 7 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : portcls.h
-req.dll : 
-req.irql : PASSIVE_LEVEL.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.IPinName.GetPinName
+title: IPinName::GetPinName method
+author: windows-driver-content
+description: The GetPinName method retrieves the friendly name of an audio endpoint.
+old-location: audio\ipinname_getpinname.htm
+old-project: audio
+ms.assetid: 97fa159c-ce71-4ce2-8d40-def7671d014c
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: GetPinName method [Audio Devices], GetPinName, IPinName::GetPinName, portcls/IPinName::GetPinName, audmp-routines_438a3c13-6571-45ab-ad7a-6ef71336c17f.xml, GetPinName method [Audio Devices], IPinName interface, audio.ipinname_getpinname, IPinName, IPinName interface [Audio Devices], GetPinName method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: portcls.h
+req.include-header: Portcls.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 7 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: portcls.h
+req.dll: 
+req.irql: PASSIVE_LEVEL.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	portcls.h
+apiname:
+-	IPinName.GetPinName
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

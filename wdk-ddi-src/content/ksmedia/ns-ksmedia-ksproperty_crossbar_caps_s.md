@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.KSPROPERTY_CROSSBAR_CAPS_S
-title : KSPROPERTY_CROSSBAR_CAPS_S
-author : windows-driver-content
-description : The KSPROPERTY_CROSSBAR_CAPS_S structure describes the crossbar capabilities for a device.
-old-location : stream\ksproperty_crossbar_caps_s.htm
-old-project : stream
-ms.assetid : 65c0b401-e437-485a-99bc-75ce5296ef34
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : vidcapstruct_db0a7a6a-8f6f-45d8-9d05-c520c8396858.xml, ksmedia/PKSPROPERTY_CROSSBAR_CAPS_S, KSPROPERTY_CROSSBAR_CAPS_S, KSPROPERTY_CROSSBAR_CAPS_S structure [Streaming Media Devices], ksmedia/KSPROPERTY_CROSSBAR_CAPS_S, PKSPROPERTY_CROSSBAR_CAPS_S structure pointer [Streaming Media Devices], *PKSPROPERTY_CROSSBAR_CAPS_S, PKSPROPERTY_CROSSBAR_CAPS_S, stream.ksproperty_crossbar_caps_s
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KSPROPERTY_CROSSBAR_CAPS_S, *PKSPROPERTY_CROSSBAR_CAPS_S
+UID: NS:ksmedia.KSPROPERTY_CROSSBAR_CAPS_S
+title: KSPROPERTY_CROSSBAR_CAPS_S
+author: windows-driver-content
+description: The KSPROPERTY_CROSSBAR_CAPS_S structure describes the crossbar capabilities for a device.
+old-location: stream\ksproperty_crossbar_caps_s.htm
+old-project: stream
+ms.assetid: 65c0b401-e437-485a-99bc-75ce5296ef34
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: vidcapstruct_db0a7a6a-8f6f-45d8-9d05-c520c8396858.xml, ksmedia/PKSPROPERTY_CROSSBAR_CAPS_S, KSPROPERTY_CROSSBAR_CAPS_S, KSPROPERTY_CROSSBAR_CAPS_S structure [Streaming Media Devices], ksmedia/KSPROPERTY_CROSSBAR_CAPS_S, PKSPROPERTY_CROSSBAR_CAPS_S structure pointer [Streaming Media Devices], *PKSPROPERTY_CROSSBAR_CAPS_S, PKSPROPERTY_CROSSBAR_CAPS_S, stream.ksproperty_crossbar_caps_s
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	KSPROPERTY_CROSSBAR_CAPS_S
+product: Windows
+targetos: Windows
+req.typenames: KSPROPERTY_CROSSBAR_CAPS_S, *PKSPROPERTY_CROSSBAR_CAPS_S
 ---
 
 # KSPROPERTY_CROSSBAR_CAPS_S structure

@@ -1,41 +1,46 @@
 ---
-UID : NS:mountmgr._MOUNTDEV_NAME
-title : "_MOUNTDEV_NAME"
-author : windows-driver-content
-description : The MOUNTDEV_NAME structure holds the name of a device.
-old-location : storage\mountdev_name.htm
-old-project : storage
-ms.assetid : 26f5e98d-0709-403a-abcf-776c117d4f38
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : PMOUNTDEV_NAME structure pointer [Storage Devices], PMOUNTDEV_NAME, structs-mntmgr_b7eec4f5-e4fc-4931-82e5-c6ac5cd4b48f.xml, MOUNTDEV_NAME structure [Storage Devices], mountmgr/PMOUNTDEV_NAME, _MOUNTDEV_NAME, *PMOUNTDEV_NAME, storage.mountdev_name, mountmgr/MOUNTDEV_NAME, MOUNTDEV_NAME
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : mountmgr.h
-req.include-header : Mountmgr.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PMOUNTDEV_NAME, MOUNTDEV_NAME"
+UID: NS:mountmgr._MOUNTDEV_NAME
+title: "_MOUNTDEV_NAME"
+author: windows-driver-content
+description: The MOUNTDEV_NAME structure holds the name of a device.
+old-location: storage\mountdev_name.htm
+old-project: storage
+ms.assetid: 26f5e98d-0709-403a-abcf-776c117d4f38
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: PMOUNTDEV_NAME structure pointer [Storage Devices], PMOUNTDEV_NAME, structs-mntmgr_b7eec4f5-e4fc-4931-82e5-c6ac5cd4b48f.xml, MOUNTDEV_NAME structure [Storage Devices], mountmgr/PMOUNTDEV_NAME, _MOUNTDEV_NAME, *PMOUNTDEV_NAME, storage.mountdev_name, mountmgr/MOUNTDEV_NAME, MOUNTDEV_NAME
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: mountmgr.h
+req.include-header: Mountmgr.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	mountmgr.h
+apiname:
+-	MOUNTDEV_NAME
+product: Windows
+targetos: Windows
+req.typenames: "*PMOUNTDEV_NAME, MOUNTDEV_NAME"
 ---
 
 # _MOUNTDEV_NAME structure

@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsDiscardEvent
-title : KsDiscardEvent function
-author : windows-driver-content
-description : The KsDiscardEvent function discards the memory used by an event entry after the objects have been dereferenced.
-old-location : stream\ksdiscardevent.htm
-old-project : stream
-ms.assetid : 14aaf96a-4d1f-4e4a-9fed-e493090157b8
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KsDiscardEvent function [Streaming Media Devices], KsDiscardEvent, ksfunc_553391e5-343a-4cc7-9bc5-99971cff2fcd.xml, stream.ksdiscardevent, ks/KsDiscardEvent
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsDiscardEvent
+title: KsDiscardEvent function
+author: windows-driver-content
+description: The KsDiscardEvent function discards the memory used by an event entry after the objects have been dereferenced.
+old-location: stream\ksdiscardevent.htm
+old-project: stream
+ms.assetid: 14aaf96a-4d1f-4e4a-9fed-e493090157b8
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KsDiscardEvent function [Streaming Media Devices], KsDiscardEvent, ksfunc_553391e5-343a-4cc7-9bc5-99971cff2fcd.xml, stream.ksdiscardevent, ks/KsDiscardEvent
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsDiscardEvent
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

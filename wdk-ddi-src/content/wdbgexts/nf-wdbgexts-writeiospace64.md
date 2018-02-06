@@ -1,42 +1,47 @@
 ---
-UID : NF:wdbgexts.WriteIoSpace64
-title : WriteIoSpace64 function
-author : windows-driver-content
-description : The WriteIoSpace64 function writes to the system I/O locations.
-old-location : debugger\writeiospace64.htm
-old-project : debugger
-ms.assetid : c750d3de-8481-42d5-a290-00e49d5fe82b
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : WdbgExts_Ref_81d45454-9dd4-46f1-823b-1a2345890106.xml, wdbgexts/WriteIoSpace64, debugger.writeiospace64, WriteIoSpace64, WriteIoSpace64 function [Windows Debugging]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdbgexts.h
-req.include-header : Wdbgexts.h, Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXT_TDOP
-req.product : Windows 10 or later.
+UID: NF:wdbgexts.WriteIoSpace64
+title: WriteIoSpace64 function
+author: windows-driver-content
+description: The WriteIoSpace64 function writes to the system I/O locations.
+old-location: debugger\writeiospace64.htm
+old-project: debugger
+ms.assetid: c750d3de-8481-42d5-a290-00e49d5fe82b
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: WdbgExts_Ref_81d45454-9dd4-46f1-823b-1a2345890106.xml, wdbgexts/WriteIoSpace64, debugger.writeiospace64, WriteIoSpace64, WriteIoSpace64 function [Windows Debugging]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdbgexts.h
+req.include-header: Wdbgexts.h, Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdbgexts.h
+apiname:
+-	WriteIoSpace64
+product: Windows
+targetos: Windows
+req.typenames: EXT_TDOP
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,42 +1,50 @@
 ---
-UID : NF:wdfrequest.WdfRequestStopAcknowledge
-title : WdfRequestStopAcknowledge function
-author : windows-driver-content
-description : The WdfRequestStopAcknowledge method informs the framework that the driver has stopped processing a specified I/O request.
-old-location : wdf\wdfrequeststopacknowledge.htm
-old-project : wdf
-ms.assetid : 70f90cfd-9828-41a6-a7f9-6b0033e46b74
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WdfRequestStopAcknowledge, kmdf.wdfrequeststopacknowledge, DFRequestObjectRef_14594eba-ca7f-433b-9fd4-717053a09158.xml, PFN_WDFREQUESTSTOPACKNOWLEDGE, wdf.wdfrequeststopacknowledge, WdfRequestStopAcknowledge method, wdfrequest/WdfRequestStopAcknowledge
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfrequest.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : DeferredRequestCompleted, DriverCreate, EvtIoStopCancel, EvtIoStopCompleteOrStopAck, EvtIoStopResume, KmdfIrql, KmdfIrql2, RequestCompleted, RequestCompletedLocal, StopAckWithinEvtIoStop
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_REQUEST_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfrequest.WdfRequestStopAcknowledge
+title: WdfRequestStopAcknowledge function
+author: windows-driver-content
+description: The WdfRequestStopAcknowledge method informs the framework that the driver has stopped processing a specified I/O request.
+old-location: wdf\wdfrequeststopacknowledge.htm
+old-project: wdf
+ms.assetid: 70f90cfd-9828-41a6-a7f9-6b0033e46b74
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WdfRequestStopAcknowledge, kmdf.wdfrequeststopacknowledge, DFRequestObjectRef_14594eba-ca7f-433b-9fd4-717053a09158.xml, PFN_WDFREQUESTSTOPACKNOWLEDGE, wdf.wdfrequeststopacknowledge, WdfRequestStopAcknowledge method, wdfrequest/WdfRequestStopAcknowledge
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfrequest.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: DeferredRequestCompleted, DriverCreate, EvtIoStopCancel, EvtIoStopCompleteOrStopAck, EvtIoStopResume, KmdfIrql, KmdfIrql2, RequestCompleted, RequestCompletedLocal, StopAckWithinEvtIoStop
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+-	WUDFx02000.dll
+-	WUDFx02000.dll.dll
+apiname:
+-	WdfRequestStopAcknowledge
+product: Windows
+targetos: Windows
+req.typenames: WDF_REQUEST_TYPE
+req.product: Windows 10 or later.
 ---
 
 

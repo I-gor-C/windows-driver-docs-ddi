@@ -1,42 +1,47 @@
 ---
-UID : NE:wdm.DMA_COMPLETION_STATUS
-title : DMA_COMPLETION_STATUS
-author : windows-driver-content
-description : The DMA_COMPLETION_STATUS enumeration describes the completion status of a DMA transfer.
-old-location : kernel\dma_completion_status.htm
-old-project : kernel
-ms.assetid : 12F6E1F5-15F9-42BE-8C47-C9A561513717
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : DmaAborted, DMA_COMPLETION_STATUS enumeration [Kernel-Mode Driver Architecture], wdm/DMA_COMPLETION_STATUS, DMA_COMPLETION_STATUS, kernel.dma_completion_status, DmaComplete, wdm/DmaError, wdm/DmaComplete, wdm/DmaCancelled, wdm/DmaAborted, DmaCancelled, DmaError
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with  Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DMA_COMPLETION_STATUS
-req.product : Windows 10 or later.
+UID: NE:wdm.DMA_COMPLETION_STATUS
+title: DMA_COMPLETION_STATUS
+author: windows-driver-content
+description: The DMA_COMPLETION_STATUS enumeration describes the completion status of a DMA transfer.
+old-location: kernel\dma_completion_status.htm
+old-project: kernel
+ms.assetid: 12F6E1F5-15F9-42BE-8C47-C9A561513717
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: DmaAborted, DMA_COMPLETION_STATUS enumeration [Kernel-Mode Driver Architecture], wdm/DMA_COMPLETION_STATUS, DMA_COMPLETION_STATUS, kernel.dma_completion_status, DmaComplete, wdm/DmaError, wdm/DmaComplete, wdm/DmaCancelled, wdm/DmaAborted, DmaCancelled, DmaError
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with  Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	DMA_COMPLETION_STATUS
+product: Windows
+targetos: Windows
+req.typenames: DMA_COMPLETION_STATUS
+req.product: Windows 10 or later.
 ---
 
 # DMA_COMPLETION_STATUS Enumeration
@@ -55,31 +60,31 @@ typedef enum  {
 ## Constants
 
 <table>
-
-<tr>
-<td>DmaAborted</td>
-<td>Not used.</td>
-</tr>
-
-<tr>
-<td>DmaCancelled</td>
-<td>The DMA transfer did not complete successfully because the client canceled the transfer.</td>
-</tr>
-
-<tr>
-<td>DmaComplete</td>
-<td>The DMA transfer completed successfully.</td>
-</tr>
-
-<tr>
-<td>DmaError</td>
-<td>The DMA transfer did not complete successfully because an error occurred.</td>
-</tr>
+            
+                <tr>
+                    <td>DmaAborted</td>
+                    <td>Not used.</td>
+                </tr>
+            
+                <tr>
+                    <td>DmaCancelled</td>
+                    <td>The DMA transfer did not complete successfully because the client canceled the transfer.</td>
+                </tr>
+            
+                <tr>
+                    <td>DmaComplete</td>
+                    <td>The DMA transfer completed successfully.</td>
+                </tr>
+            
+                <tr>
+                    <td>DmaError</td>
+                    <td>The DMA transfer did not complete successfully because an error occurred.</td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-The <i>Status</i> parameter of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh450991">DmaCompletionRoutine</a> routine is a <b>DMA_COMPLETION_STATUS</b>  enumeration value.
+        The <i>Status</i> parameter of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh450991">DmaCompletionRoutine</a> routine is a <b>DMA_COMPLETION_STATUS</b>  enumeration value.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -87,9 +92,9 @@ The <i>Status</i> parameter of the <a href="https://msdn.microsoft.com/library/w
 | **Windows version** | Supported starting with  Windows 8. Supported starting with  Windows 8. |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
-## See Also
+    ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh450991">DmaCompletionRoutine</a>
+        <a href="https://msdn.microsoft.com/library/windows/hardware/hh450991">DmaCompletionRoutine</a>
 
  
 

@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.FsRtlSetKernelEaFile
-title : FsRtlSetKernelEaFile function
-author : windows-driver-content
-description : The routine FsRtlQueryKernelEaFile is used to set, modify and/or delete extended attribute (EA) values for a file and synchronously wait for it to complete, returning a result.
-old-location : ifsk\fsrtlsetkerneleafile.htm
-old-project : ifsk
-ms.assetid : E5EA2E40-2CC3-4C7B-8BCC-4793F76ECBAD
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FsRtlSetKernelEaFile routine [Installable File System Drivers], ntifs/FsRtlSetKernelEaFile, FsRtlSetKernelEaFile, ifsk.fsrtlsetkerneleafile
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.FsRtlSetKernelEaFile
+title: FsRtlSetKernelEaFile function
+author: windows-driver-content
+description: The routine FsRtlQueryKernelEaFile is used to set, modify and/or delete extended attribute (EA) values for a file and synchronously wait for it to complete, returning a result.
+old-location: ifsk\fsrtlsetkerneleafile.htm
+old-project: ifsk
+ms.assetid: E5EA2E40-2CC3-4C7B-8BCC-4793F76ECBAD
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FsRtlSetKernelEaFile routine [Installable File System Drivers], ntifs/FsRtlSetKernelEaFile, FsRtlSetKernelEaFile, ifsk.fsrtlsetkerneleafile
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntifs.h
+apiname:
+-	FsRtlSetKernelEaFile
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

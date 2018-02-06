@@ -1,42 +1,47 @@
 ---
-UID : NS:srb._SRBEX_DATA_POWER
-title : "_SRBEX_DATA_POWER"
-author : windows-driver-content
-description : The SRBEX_DATA_POWER structure contains the request data for an extended power SRB.
-old-location : storage\srbex_data_power.htm
-old-project : storage
-ms.assetid : 61F5C316-5214-45A6-B4BA-DEE6A224E811
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storport/SRBEX_DATA_POWER, PSRBEX_DATA_POWER structure pointer [Storage Devices], _SRBEX_DATA_POWER, storport/PSRBEX_DATA_POWER, SRBEX_DATA_POWER structure [Storage Devices], storage.srbex_data_power, SRBEX_DATA_POWER, *PSRBEX_DATA_POWER, PSRBEX_DATA_POWER
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : srb.h
-req.include-header : Storport.h, Srb.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SRBEX_DATA_POWER, *PSRBEX_DATA_POWER
-req.product : Windows 10 or later.
+UID: NS:srb._SRBEX_DATA_POWER
+title: "_SRBEX_DATA_POWER"
+author: windows-driver-content
+description: The SRBEX_DATA_POWER structure contains the request data for an extended power SRB.
+old-location: storage\srbex_data_power.htm
+old-project: storage
+ms.assetid: 61F5C316-5214-45A6-B4BA-DEE6A224E811
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storport/SRBEX_DATA_POWER, PSRBEX_DATA_POWER structure pointer [Storage Devices], _SRBEX_DATA_POWER, storport/PSRBEX_DATA_POWER, SRBEX_DATA_POWER structure [Storage Devices], storage.srbex_data_power, SRBEX_DATA_POWER, *PSRBEX_DATA_POWER, PSRBEX_DATA_POWER
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: srb.h
+req.include-header: Storport.h, Srb.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Storport.h
+apiname:
+-	SRBEX_DATA_POWER
+product: Windows
+targetos: Windows
+req.typenames: SRBEX_DATA_POWER, *PSRBEX_DATA_POWER
+req.product: Windows 10 or later.
 ---
 
 # _SRBEX_DATA_POWER structure

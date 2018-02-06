@@ -1,42 +1,47 @@
 ---
-UID : NS:strmini._HW_CLOCK_OBJECT
-title : "_HW_CLOCK_OBJECT"
-author : windows-driver-content
-description : The HW_CLOCK_OBJECT structure describes the clock associated with a stream.
-old-location : stream\hw_clock_object.htm
-old-project : stream
-ms.assetid : d6afe946-90cb-4b17-94ed-2e7c508985a3
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : strmini/PHW_CLOCK_OBJECT, HW_CLOCK_OBJECT structure [Streaming Media Devices], _HW_CLOCK_OBJECT, strclass-struct_95b6e9db-af87-415b-aad2-b3763c4dd0d9.xml, *PHW_CLOCK_OBJECT, HW_CLOCK_OBJECT, strmini/HW_CLOCK_OBJECT, PHW_CLOCK_OBJECT structure pointer [Streaming Media Devices], stream.hw_clock_object, PHW_CLOCK_OBJECT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : strmini.h
-req.include-header : Strmini.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HW_CLOCK_OBJECT, *PHW_CLOCK_OBJECT
-req.product : Windows 10 or later.
+UID: NS:strmini._HW_CLOCK_OBJECT
+title: "_HW_CLOCK_OBJECT"
+author: windows-driver-content
+description: The HW_CLOCK_OBJECT structure describes the clock associated with a stream.
+old-location: stream\hw_clock_object.htm
+old-project: stream
+ms.assetid: d6afe946-90cb-4b17-94ed-2e7c508985a3
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: strmini/PHW_CLOCK_OBJECT, HW_CLOCK_OBJECT structure [Streaming Media Devices], _HW_CLOCK_OBJECT, strclass-struct_95b6e9db-af87-415b-aad2-b3763c4dd0d9.xml, *PHW_CLOCK_OBJECT, HW_CLOCK_OBJECT, strmini/HW_CLOCK_OBJECT, PHW_CLOCK_OBJECT structure pointer [Streaming Media Devices], stream.hw_clock_object, PHW_CLOCK_OBJECT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: strmini.h
+req.include-header: Strmini.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	strmini.h
+apiname:
+-	HW_CLOCK_OBJECT
+product: Windows
+targetos: Windows
+req.typenames: HW_CLOCK_OBJECT, *PHW_CLOCK_OBJECT
+req.product: Windows 10 or later.
 ---
 
 # _HW_CLOCK_OBJECT structure

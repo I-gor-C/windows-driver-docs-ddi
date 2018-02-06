@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugDataSpaces4.FillPhysical
-title : IDebugDataSpaces4::FillPhysical method
-author : windows-driver-content
-description : The FillPhysical method writes a pattern of bytes to the target's physical memory. The pattern is written repeatedly until the specified memory range is filled.
-old-location : debugger\fillphysical.htm
-old-project : debugger
-ms.assetid : 9fd2cc6d-c891-4566-896b-80d56d143e8d
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : FillPhysical method [Windows Debugging], IDebugDataSpaces3 interface, debugger.fillphysical, FillPhysical method [Windows Debugging], IDebugDataSpaces2 interface, IDebugDataSpaces2::FillPhysical, IDebugDataSpaces4 interface [Windows Debugging], FillPhysical method, IDebugDataSpaces4::FillPhysical, dbgeng/IDebugDataSpaces3::FillPhysical, dbgeng/IDebugDataSpaces4::FillPhysical, FillPhysical method [Windows Debugging], IDebugDataSpaces4 interface, IDebugDataSpaces3::FillPhysical, IDebugDataSpaces_a188638a-cb30-4e13-8fd0-07114f03df52.xml, FillPhysical method [Windows Debugging], FillPhysical, IDebugDataSpaces2 interface [Windows Debugging], FillPhysical method, IDebugDataSpaces4, dbgeng/IDebugDataSpaces2::FillPhysical, IDebugDataSpaces3 interface [Windows Debugging], FillPhysical method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugDataSpaces4.FillPhysical
+title: IDebugDataSpaces4::FillPhysical method
+author: windows-driver-content
+description: The FillPhysical method writes a pattern of bytes to the target's physical memory. The pattern is written repeatedly until the specified memory range is filled.
+old-location: debugger\fillphysical.htm
+old-project: debugger
+ms.assetid: 9fd2cc6d-c891-4566-896b-80d56d143e8d
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: FillPhysical method [Windows Debugging], IDebugDataSpaces3 interface, debugger.fillphysical, FillPhysical method [Windows Debugging], IDebugDataSpaces2 interface, IDebugDataSpaces2::FillPhysical, IDebugDataSpaces4 interface [Windows Debugging], FillPhysical method, IDebugDataSpaces4::FillPhysical, dbgeng/IDebugDataSpaces3::FillPhysical, dbgeng/IDebugDataSpaces4::FillPhysical, FillPhysical method [Windows Debugging], IDebugDataSpaces4 interface, IDebugDataSpaces3::FillPhysical, IDebugDataSpaces_a188638a-cb30-4e13-8fd0-07114f03df52.xml, FillPhysical method [Windows Debugging], FillPhysical, IDebugDataSpaces2 interface [Windows Debugging], FillPhysical method, IDebugDataSpaces4, dbgeng/IDebugDataSpaces2::FillPhysical, IDebugDataSpaces3 interface [Windows Debugging], FillPhysical method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugDataSpaces2.FillPhysical
+-	IDebugDataSpaces3.FillPhysical
+-	IDebugDataSpaces4.FillPhysical
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

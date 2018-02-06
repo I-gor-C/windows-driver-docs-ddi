@@ -1,41 +1,49 @@
 ---
-UID : NF:ntifs.RtlCaptureContext
-title : RtlCaptureContext function
-author : windows-driver-content
-description : The RtlCaptureContext function retrieves a context record in the context of the caller.
-old-location : ifsk\rtlcapturecontext.htm
-old-project : ifsk
-ms.assetid : c3edd10c-ea4f-4e2d-96f2-3d1cb3804512
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ntifs/RtlCaptureContext, ifsk.rtlcapturecontext, RtlCaptureContext, rtlref_efe764ec-89fb-43bc-945d-7fee4594c284.xml, RtlCaptureContext function [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Fltkernel.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Microsoft Windows XP and later versions of all Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib; OneCoreUAP.lib on Windows 10
-req.dll : NtDll.dll (user mode); NtosKrnl.exe (kernel mode)
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.RtlCaptureContext
+title: RtlCaptureContext function
+author: windows-driver-content
+description: The RtlCaptureContext function retrieves a context record in the context of the caller.
+old-location: ifsk\rtlcapturecontext.htm
+old-project: ifsk
+ms.assetid: c3edd10c-ea4f-4e2d-96f2-3d1cb3804512
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ntifs/RtlCaptureContext, ifsk.rtlcapturecontext, RtlCaptureContext, rtlref_efe764ec-89fb-43bc-945d-7fee4594c284.xml, RtlCaptureContext function [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Fltkernel.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Microsoft Windows XP and later versions of all Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib; OneCoreUAP.lib on Windows 10
+req.dll: NtDll.dll (user mode); NtosKrnl.exe (kernel mode)
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtDll.dll
+-	NtosKrnl.exe
+-	API-MS-Win-Core-RTLSupport-l1-1-0.dll
+-	API-MS-Win-Core-RTLSupport-l1-2-0.dll
+apiname:
+-	RtlCaptureContext
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

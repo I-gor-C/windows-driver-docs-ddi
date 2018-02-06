@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfrequest.WdfRequestRetrieveInputWdmMdl
-title : WdfRequestRetrieveInputWdmMdl function
-author : windows-driver-content
-description : The WdfRequestRetrieveInputWdmMdl method retrieves a memory descriptor list (MDL) that represents an I/O request's input buffer.
-old-location : wdf\wdfrequestretrieveinputwdmmdl.htm
-old-project : wdf
-ms.assetid : 8046d9e4-d4a2-4aeb-92b2-a48277af8b41
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WdfRequestRetrieveInputWdmMdl method, DFRequestObjectRef_d65a1869-de52-4284-818f-a3f0837d0374.xml, kmdf.wdfrequestretrieveinputwdmmdl, WdfRequestRetrieveInputWdmMdl, wdf.wdfrequestretrieveinputwdmmdl, wdfrequest/WdfRequestRetrieveInputWdmMdl, PFN_WDFREQUESTRETRIEVEINPUTWDMMDL
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfrequest.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : DriverCreate, InputBufferAPI, InvalidReqAccess, InvalidReqAccessLocal, KmdfIrql, KmdfIrql2, MdlAfterReqCompletedIntIoctl, MdlAfterReqCompletedIntIoctlA, MdlAfterReqCompletedIoctl, MdlAfterReqCompletedIoctlA, MdlAfterReqCompletedRead, MdlAfterReqCompletedWrite, MdlAfterReqCompletedWriteA
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_REQUEST_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfrequest.WdfRequestRetrieveInputWdmMdl
+title: WdfRequestRetrieveInputWdmMdl function
+author: windows-driver-content
+description: The WdfRequestRetrieveInputWdmMdl method retrieves a memory descriptor list (MDL) that represents an I/O request's input buffer.
+old-location: wdf\wdfrequestretrieveinputwdmmdl.htm
+old-project: wdf
+ms.assetid: 8046d9e4-d4a2-4aeb-92b2-a48277af8b41
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WdfRequestRetrieveInputWdmMdl method, DFRequestObjectRef_d65a1869-de52-4284-818f-a3f0837d0374.xml, kmdf.wdfrequestretrieveinputwdmmdl, WdfRequestRetrieveInputWdmMdl, wdf.wdfrequestretrieveinputwdmmdl, wdfrequest/WdfRequestRetrieveInputWdmMdl, PFN_WDFREQUESTRETRIEVEINPUTWDMMDL
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfrequest.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: DriverCreate, InputBufferAPI, InvalidReqAccess, InvalidReqAccessLocal, KmdfIrql, KmdfIrql2, MdlAfterReqCompletedIntIoctl, MdlAfterReqCompletedIntIoctlA, MdlAfterReqCompletedIoctl, MdlAfterReqCompletedIoctlA, MdlAfterReqCompletedRead, MdlAfterReqCompletedWrite, MdlAfterReqCompletedWriteA
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfRequestRetrieveInputWdmMdl
+product: Windows
+targetos: Windows
+req.typenames: WDF_REQUEST_TYPE
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NF:video.VideoPortCreateEvent
-title : VideoPortCreateEvent function
-author : windows-driver-content
-description : The VideoPortCreateEvent function creates an event object.
-old-location : display\videoportcreateevent.htm
-old-project : display
-ms.assetid : bb1ef5f0-ccf3-487b-99e6-9ec733c7cd63
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : video/VideoPortCreateEvent, VideoPort_Functions_29412925-5117-4759-b4ea-b4adb4358a8c.xml, VideoPortCreateEvent function [Display Devices], VideoPortCreateEvent, display.videoportcreateevent
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows XP and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Videoprt.lib
-req.dll : Videoprt.sys
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_PORT_SERVICES
-req.product : Windows 10 or later.
+UID: NF:video.VideoPortCreateEvent
+title: VideoPortCreateEvent function
+author: windows-driver-content
+description: The VideoPortCreateEvent function creates an event object.
+old-location: display\videoportcreateevent.htm
+old-project: display
+ms.assetid: bb1ef5f0-ccf3-487b-99e6-9ec733c7cd63
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: video/VideoPortCreateEvent, VideoPort_Functions_29412925-5117-4759-b4ea-b4adb4358a8c.xml, VideoPortCreateEvent function [Display Devices], VideoPortCreateEvent, display.videoportcreateevent
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows XP and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Videoprt.lib
+req.dll: Videoprt.sys
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Videoprt.sys
+apiname:
+-	VideoPortCreateEvent
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_PORT_SERVICES
+req.product: Windows 10 or later.
 ---
 
 

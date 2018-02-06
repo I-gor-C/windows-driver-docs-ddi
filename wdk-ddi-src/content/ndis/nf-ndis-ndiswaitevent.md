@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisWaitEvent
-title : NdisWaitEvent function
-author : windows-driver-content
-description : The NdisWaitEvent function puts the caller into a wait state until the given event is set to the Signaled state or the wait times out.
-old-location : netvista\ndiswaitevent.htm
-old-project : netvista
-ms.assetid : fefdb56f-6689-4a4f-a198-6108190624f0
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : ndis_event_ref_d607d02a-0509-4399-90e8-bbfb43d613b3.xml, NdisWaitEvent function [Network Drivers Starting with Windows Vista], ndis/NdisWaitEvent, NdisWaitEvent, netvista.ndiswaitevent
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisWaitEvent (NDIS 5.1)) in Windows   Vista. Supported for NDIS 5.1 drivers (see    NdisWaitEvent (NDIS 5.1)) in Windows   XP.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_Miscellaneous_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisWaitEvent
+title: NdisWaitEvent function
+author: windows-driver-content
+description: The NdisWaitEvent function puts the caller into a wait state until the given event is set to the Signaled state or the wait times out.
+old-location: netvista\ndiswaitevent.htm
+old-project: netvista
+ms.assetid: fefdb56f-6689-4a4f-a198-6108190624f0
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: ndis_event_ref_d607d02a-0509-4399-90e8-bbfb43d613b3.xml, NdisWaitEvent function [Network Drivers Starting with Windows Vista], ndis/NdisWaitEvent, NdisWaitEvent, netvista.ndiswaitevent
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisWaitEvent (NDIS 5.1)) in Windows   Vista. Supported for NDIS 5.1 drivers (see    NdisWaitEvent (NDIS 5.1)) in Windows   XP.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_Miscellaneous_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisWaitEvent
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.RtlFindUnicodePrefix
-title : RtlFindUnicodePrefix function
-author : windows-driver-content
-description : The RtlFindUnicodePrefix routine searches for the best match for a given Unicode file name in a prefix table.
-old-location : ifsk\rtlfindunicodeprefix.htm
-old-project : ifsk
-ms.assetid : 525db78d-b25c-4325-ac71-b992564a19c0
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : RtlFindUnicodePrefix, ntifs/RtlFindUnicodePrefix, rtlref_55dbfa12-5de6-44e0-8488-6e83abfaad84.xml, ifsk.rtlfindunicodeprefix, RtlFindUnicodePrefix routine [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Windows XP
-req.target-min-winversvr : Windows Server 2003
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.RtlFindUnicodePrefix
+title: RtlFindUnicodePrefix function
+author: windows-driver-content
+description: The RtlFindUnicodePrefix routine searches for the best match for a given Unicode file name in a prefix table.
+old-location: ifsk\rtlfindunicodeprefix.htm
+old-project: ifsk
+ms.assetid: 525db78d-b25c-4325-ac71-b992564a19c0
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: RtlFindUnicodePrefix, ntifs/RtlFindUnicodePrefix, rtlref_55dbfa12-5de6-44e0-8488-6e83abfaad84.xml, ifsk.rtlfindunicodeprefix, RtlFindUnicodePrefix routine [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Windows XP
+req.target-min-winversvr: Windows Server 2003
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	RtlFindUnicodePrefix
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:ntifs._SRV_OPEN_ECP_CONTEXT
-title : "_SRV_OPEN_ECP_CONTEXT"
-author : windows-driver-content
-description : The SRV_OPEN_ECP_CONTEXT structure is used by a server to conditionally open files in response to client requests.
-old-location : ifsk\srv_open_ecp_context.htm
-old-project : ifsk
-ms.assetid : 6860f512-758d-4a75-88e4-17310b3e6349
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ntifs/PSRV_OPEN_ECP_CONTEXT, _SRV_OPEN_ECP_CONTEXT, ntifs/SRV_OPEN_ECP_CONTEXT, PSRV_OPEN_ECP_CONTEXT structure pointer [Installable File System Drivers], PSRV_OPEN_ECP_CONTEXT, ECP_Structures_1a5afc2a-f4a5-4f86-ac30-2e206778acc0.xml, SRV_OPEN_ECP_CONTEXT structure [Installable File System Drivers], *PSRV_OPEN_ECP_CONTEXT, SRV_OPEN_ECP_CONTEXT, ifsk.srv_open_ecp_context
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : This structure is available starting with Windows 7.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SRV_OPEN_ECP_CONTEXT, *PSRV_OPEN_ECP_CONTEXT
+UID: NS:ntifs._SRV_OPEN_ECP_CONTEXT
+title: "_SRV_OPEN_ECP_CONTEXT"
+author: windows-driver-content
+description: The SRV_OPEN_ECP_CONTEXT structure is used by a server to conditionally open files in response to client requests.
+old-location: ifsk\srv_open_ecp_context.htm
+old-project: ifsk
+ms.assetid: 6860f512-758d-4a75-88e4-17310b3e6349
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ntifs/PSRV_OPEN_ECP_CONTEXT, _SRV_OPEN_ECP_CONTEXT, ntifs/SRV_OPEN_ECP_CONTEXT, PSRV_OPEN_ECP_CONTEXT structure pointer [Installable File System Drivers], PSRV_OPEN_ECP_CONTEXT, ECP_Structures_1a5afc2a-f4a5-4f86-ac30-2e206778acc0.xml, SRV_OPEN_ECP_CONTEXT structure [Installable File System Drivers], *PSRV_OPEN_ECP_CONTEXT, SRV_OPEN_ECP_CONTEXT, ifsk.srv_open_ecp_context
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: This structure is available starting with Windows 7.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntifs.h
+apiname:
+-	SRV_OPEN_ECP_CONTEXT
+product: Windows
+targetos: Windows
+req.typenames: SRV_OPEN_ECP_CONTEXT, *PSRV_OPEN_ECP_CONTEXT
 ---
 
 # _SRV_OPEN_ECP_CONTEXT structure

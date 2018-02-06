@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.PsIsThreadTerminating
-title : PsIsThreadTerminating function
-author : windows-driver-content
-description : The PsIsThreadTerminating routine checks whether a thread is terminating.
-old-location : ifsk\psisthreadterminating.htm
-old-project : ifsk
-ms.assetid : 2b82b060-79ea-4add-b559-af37c954537e
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ntifs/PsIsThreadTerminating, psref_55824a18-3df1-4d43-bc9c-77da8ee6cf6c.xml, ifsk.psisthreadterminating, PsIsThreadTerminating, PsIsThreadTerminating routine [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h, FltKernel.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Microsoft Windows 2000 and later Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.PsIsThreadTerminating
+title: PsIsThreadTerminating function
+author: windows-driver-content
+description: The PsIsThreadTerminating routine checks whether a thread is terminating.
+old-location: ifsk\psisthreadterminating.htm
+old-project: ifsk
+ms.assetid: 2b82b060-79ea-4add-b559-af37c954537e
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ntifs/PsIsThreadTerminating, psref_55824a18-3df1-4d43-bc9c-77da8ee6cf6c.xml, ifsk.psisthreadterminating, PsIsThreadTerminating, PsIsThreadTerminating routine [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h, FltKernel.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Microsoft Windows 2000 and later Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	PsIsThreadTerminating
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisMCmCreateVc
-title : NdisMCmCreateVc function
-author : windows-driver-content
-description : NdisMCmCreateVc sets up a connection endpoint on which an MCM driver can dispatch an incoming-call offer to a client.
-old-location : netvista\ndismcmcreatevc.htm
-old-project : netvista
-ms.assetid : b1d9ce90-9926-4ff8-a5bb-54c1a88d84dc
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : condis_mcm_ref_eab0d24d-ee49-457d-9475-e4d7c3a50023.xml, NdisMCmCreateVc, ndis/NdisMCmCreateVc, NdisMCmCreateVc function [Network Drivers Starting with Windows Vista], netvista.ndismcmcreatevc
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisMCmCreateVc (NDIS 5.1)) in   Windows Vista. Supported for NDIS 5.1 drivers (see    NdisMCmCreateVc (NDIS 5.1)) in   Windows XP.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_MCM_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisMCmCreateVc
+title: NdisMCmCreateVc function
+author: windows-driver-content
+description: NdisMCmCreateVc sets up a connection endpoint on which an MCM driver can dispatch an incoming-call offer to a client.
+old-location: netvista\ndismcmcreatevc.htm
+old-project: netvista
+ms.assetid: b1d9ce90-9926-4ff8-a5bb-54c1a88d84dc
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: condis_mcm_ref_eab0d24d-ee49-457d-9475-e4d7c3a50023.xml, NdisMCmCreateVc, ndis/NdisMCmCreateVc, NdisMCmCreateVc function [Network Drivers Starting with Windows Vista], netvista.ndismcmcreatevc
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisMCmCreateVc (NDIS 5.1)) in   Windows Vista. Supported for NDIS 5.1 drivers (see    NdisMCmCreateVc (NDIS 5.1)) in   Windows XP.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_MCM_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisMCmCreateVc
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

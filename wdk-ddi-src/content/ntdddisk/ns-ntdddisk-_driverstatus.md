@@ -1,41 +1,46 @@
 ---
-UID : NS:ntdddisk._DRIVERSTATUS
-title : "_DRIVERSTATUS"
-author : windows-driver-content
-description : The DRIVERSTATUS structure is used in conjunction with the SENDCMDOUTPARAMS structure and the SMART_SEND_DRIVE_COMMAND request to retrieve data returned by a Self-Monitoring Analysis and Reporting Technology (SMART) command.
-old-location : storage\driverstatus.htm
-old-project : storage
-ms.assetid : de97322f-a756-49a8-a6e6-dab42f278388
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : DRIVERSTATUS, PDRIVERSTATUS, LPDRIVERSTATUS, LPDRIVERSTATUS structure pointer [Storage Devices], DRIVERSTATUS structure [Storage Devices], _DRIVERSTATUS, *LPDRIVERSTATUS, ntdddisk/DRIVERSTATUS, *PDRIVERSTATUS, ntdddisk/PDRIVERSTATUS, storage.driverstatus, structs-IDE_e49310ff-1d3c-44d5-a997-08b8f500ed13.xml, PDRIVERSTATUS structure pointer [Storage Devices], ntdddisk/LPDRIVERSTATUS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntdddisk.h
-req.include-header : Ntdddisk.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DRIVERSTATUS, *LPDRIVERSTATUS, *PDRIVERSTATUS
+UID: NS:ntdddisk._DRIVERSTATUS
+title: "_DRIVERSTATUS"
+author: windows-driver-content
+description: The DRIVERSTATUS structure is used in conjunction with the SENDCMDOUTPARAMS structure and the SMART_SEND_DRIVE_COMMAND request to retrieve data returned by a Self-Monitoring Analysis and Reporting Technology (SMART) command.
+old-location: storage\driverstatus.htm
+old-project: storage
+ms.assetid: de97322f-a756-49a8-a6e6-dab42f278388
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: DRIVERSTATUS, PDRIVERSTATUS, LPDRIVERSTATUS, LPDRIVERSTATUS structure pointer [Storage Devices], DRIVERSTATUS structure [Storage Devices], _DRIVERSTATUS, *LPDRIVERSTATUS, ntdddisk/DRIVERSTATUS, *PDRIVERSTATUS, ntdddisk/PDRIVERSTATUS, storage.driverstatus, structs-IDE_e49310ff-1d3c-44d5-a997-08b8f500ed13.xml, PDRIVERSTATUS structure pointer [Storage Devices], ntdddisk/LPDRIVERSTATUS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntdddisk.h
+req.include-header: Ntdddisk.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntdddisk.h
+apiname:
+-	DRIVERSTATUS
+product: Windows
+targetos: Windows
+req.typenames: DRIVERSTATUS, *LPDRIVERSTATUS, *PDRIVERSTATUS
 ---
 
 # _DRIVERSTATUS structure

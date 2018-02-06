@@ -1,41 +1,46 @@
 ---
-UID : NS:ntifs._FILE_FS_CONTROL_INFORMATION
-title : "_FILE_FS_CONTROL_INFORMATION"
-author : windows-driver-content
-description : The FILE_FS_CONTROL_INFORMATION structure is used to query or set control information for the files in a directory.
-old-location : ifsk\file_fs_control_information.htm
-old-project : ifsk
-ms.assetid : 8a7e136a-fc87-481c-bb35-270408cb5071
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : "_FILE_FS_CONTROL_INFORMATION, FILE_FS_CONTROL_INFORMATION structure [Installable File System Drivers], ntifs/FILE_FS_CONTROL_INFORMATION, FILE_FS_CONTROL_INFORMATION, ntifs/PFILE_FS_CONTROL_INFORMATION, ifsk.file_fs_control_information, PFILE_FS_CONTROL_INFORMATION, fileinformationstructures_387e4fd0-c3a2-4472-b29d-79f8a5d876f8.xml, PFILE_FS_CONTROL_INFORMATION structure pointer [Installable File System Drivers], *PFILE_FS_CONTROL_INFORMATION"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntifs.h
-req.include-header : Ntifs.h, Fltkernel.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PFILE_FS_CONTROL_INFORMATION, FILE_FS_CONTROL_INFORMATION"
+UID: NS:ntifs._FILE_FS_CONTROL_INFORMATION
+title: "_FILE_FS_CONTROL_INFORMATION"
+author: windows-driver-content
+description: The FILE_FS_CONTROL_INFORMATION structure is used to query or set control information for the files in a directory.
+old-location: ifsk\file_fs_control_information.htm
+old-project: ifsk
+ms.assetid: 8a7e136a-fc87-481c-bb35-270408cb5071
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: "_FILE_FS_CONTROL_INFORMATION, FILE_FS_CONTROL_INFORMATION structure [Installable File System Drivers], ntifs/FILE_FS_CONTROL_INFORMATION, FILE_FS_CONTROL_INFORMATION, ntifs/PFILE_FS_CONTROL_INFORMATION, ifsk.file_fs_control_information, PFILE_FS_CONTROL_INFORMATION, fileinformationstructures_387e4fd0-c3a2-4472-b29d-79f8a5d876f8.xml, PFILE_FS_CONTROL_INFORMATION structure pointer [Installable File System Drivers], *PFILE_FS_CONTROL_INFORMATION"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntifs.h
+req.include-header: Ntifs.h, Fltkernel.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntifs.h
+apiname:
+-	FILE_FS_CONTROL_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: "*PFILE_FS_CONTROL_INFORMATION, FILE_FS_CONTROL_INFORMATION"
 ---
 
 # _FILE_FS_CONTROL_INFORMATION structure

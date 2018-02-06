@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisMNetPnPEvent
-title : NdisMNetPnPEvent function
-author : windows-driver-content
-description : NDIS miniport drivers (and intermediate drivers that are registered as miniport drivers) call the NdisMNetPnPEvent function to originate a network Plug and Play event, an NDIS PnP event, or Power Management event or propagate it to overlying drivers.
-old-location : netvista\ndismnetpnpevent.htm
-old-project : netvista
-ms.assetid : cbb097c1-dd20-4c6d-b23a-1e7683ac3e94
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NdisMNetPnPEvent, miniport_ndis_functions_ref_0f39567c-b58c-438e-936e-36323bbc2ea6.xml, ndis/NdisMNetPnPEvent, NdisMNetPnPEvent function [Network Drivers Starting with Windows Vista], netvista.ndismnetpnpevent
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_Protocol_Driver_Function, NdisMNetPnPEventInOIDRequest
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisMNetPnPEvent
+title: NdisMNetPnPEvent function
+author: windows-driver-content
+description: NDIS miniport drivers (and intermediate drivers that are registered as miniport drivers) call the NdisMNetPnPEvent function to originate a network Plug and Play event, an NDIS PnP event, or Power Management event or propagate it to overlying drivers.
+old-location: netvista\ndismnetpnpevent.htm
+old-project: netvista
+ms.assetid: cbb097c1-dd20-4c6d-b23a-1e7683ac3e94
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NdisMNetPnPEvent, miniport_ndis_functions_ref_0f39567c-b58c-438e-936e-36323bbc2ea6.xml, ndis/NdisMNetPnPEvent, NdisMNetPnPEvent function [Network Drivers Starting with Windows Vista], netvista.ndismnetpnpevent
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_Protocol_Driver_Function, NdisMNetPnPEventInOIDRequest
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisMNetPnPEvent
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

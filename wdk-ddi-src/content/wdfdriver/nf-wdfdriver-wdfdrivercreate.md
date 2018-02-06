@@ -1,42 +1,50 @@
 ---
-UID : NF:wdfdriver.WdfDriverCreate
-title : WdfDriverCreate function
-author : windows-driver-content
-description : The WdfDriverCreate method creates a framework driver object for the calling driver.
-old-location : wdf\wdfdrivercreate.htm
-old-project : wdf
-ms.assetid : 2b8cea0f-bca0-4ffa-834b-d7c079cf93d8
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdfdriver/WdfDriverCreate, kmdf.wdfdrivercreate, DFDriverObjectRef_10e33793-b3e1-4938-9b82-439451aceb86.xml, WdfDriverCreate method, wdf.wdfdrivercreate, PFN_WDFDRIVERCREATE, WdfDriverCreate
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfdriver.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : ChangeQueueState, DriverAttributeChanged, DriverCreate, KmdfIrql, KmdfIrql2, MiniportOnlyWdmDevice
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_DRIVER_INIT_FLAGS
-req.product : Windows 10 or later.
+UID: NF:wdfdriver.WdfDriverCreate
+title: WdfDriverCreate function
+author: windows-driver-content
+description: The WdfDriverCreate method creates a framework driver object for the calling driver.
+old-location: wdf\wdfdrivercreate.htm
+old-project: wdf
+ms.assetid: 2b8cea0f-bca0-4ffa-834b-d7c079cf93d8
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdfdriver/WdfDriverCreate, kmdf.wdfdrivercreate, DFDriverObjectRef_10e33793-b3e1-4938-9b82-439451aceb86.xml, WdfDriverCreate method, wdf.wdfdrivercreate, PFN_WDFDRIVERCREATE, WdfDriverCreate
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfdriver.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: ChangeQueueState, DriverAttributeChanged, DriverCreate, KmdfIrql, KmdfIrql2, MiniportOnlyWdmDevice
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+-	WUDFx02000.dll
+-	WUDFx02000.dll.dll
+apiname:
+-	WdfDriverCreate
+product: Windows
+targetos: Windows
+req.typenames: WDF_DRIVER_INIT_FLAGS
+req.product: Windows 10 or later.
 ---
 
 

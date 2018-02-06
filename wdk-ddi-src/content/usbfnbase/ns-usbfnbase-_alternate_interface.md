@@ -1,42 +1,47 @@
 ---
-UID : NS:usbfnbase._ALTERNATE_INTERFACE
-title : "_ALTERNATE_INTERFACE"
-author : windows-driver-content
-description : The ALTERNATE_INTERFACE structure provides information about alternate settings for a Universal Serial Bus (USB) interface.
-old-location : buses\alternate_interface.htm
-old-project : usbref
-ms.assetid : F57FA113-F664-4B10-8457-DF6D266264E9
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : usbfnbase/ALTERNATE_INTERFACE, PALTERNATE_INTERFACE structure pointer [Buses], PALTERNATE_INTERFACE, *PALTERNATE_INTERFACE, usbfnbase/PALTERNATE_INTERFACE, buses.alternate_interface, _ALTERNATE_INTERFACE, ALTERNATE_INTERFACE, ALTERNATE_INTERFACE structure [Buses]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : usbfnbase.h
-req.include-header : Usbfnbase.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PALTERNATE_INTERFACE, ALTERNATE_INTERFACE"
-req.product : Windows 10 or later.
+UID: NS:usbfnbase._ALTERNATE_INTERFACE
+title: "_ALTERNATE_INTERFACE"
+author: windows-driver-content
+description: The ALTERNATE_INTERFACE structure provides information about alternate settings for a Universal Serial Bus (USB) interface.
+old-location: buses\alternate_interface.htm
+old-project: usbref
+ms.assetid: F57FA113-F664-4B10-8457-DF6D266264E9
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: usbfnbase/ALTERNATE_INTERFACE, PALTERNATE_INTERFACE structure pointer [Buses], PALTERNATE_INTERFACE, *PALTERNATE_INTERFACE, usbfnbase/PALTERNATE_INTERFACE, buses.alternate_interface, _ALTERNATE_INTERFACE, ALTERNATE_INTERFACE, ALTERNATE_INTERFACE structure [Buses]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: usbfnbase.h
+req.include-header: Usbfnbase.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	usbfnbase.h
+apiname:
+-	ALTERNATE_INTERFACE
+product: Windows
+targetos: Windows
+req.typenames: "*PALTERNATE_INTERFACE, ALTERNATE_INTERFACE"
+req.product: Windows 10 or later.
 ---
 
 # _ALTERNATE_INTERFACE structure

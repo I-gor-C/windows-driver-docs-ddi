@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsFreeDefaultClock
-title : KsFreeDefaultClock function
-author : windows-driver-content
-description : The KsFreeDefaultClock function frees a default clock structure previously allocated with KsAllocateDefaultClock, taking into account any currently running timer DPCs.
-old-location : stream\ksfreedefaultclock.htm
-old-project : stream
-ms.assetid : e2fc87c9-e48f-4e18-ae1b-52a7cc701e91
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KsFreeDefaultClock, ksfunc_30a51e64-775e-4412-9a8c-b186e6caf932.xml, KsFreeDefaultClock function [Streaming Media Devices], stream.ksfreedefaultclock, ks/KsFreeDefaultClock
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsFreeDefaultClock
+title: KsFreeDefaultClock function
+author: windows-driver-content
+description: The KsFreeDefaultClock function frees a default clock structure previously allocated with KsAllocateDefaultClock, taking into account any currently running timer DPCs.
+old-location: stream\ksfreedefaultclock.htm
+old-project: stream
+ms.assetid: e2fc87c9-e48f-4e18-ae1b-52a7cc701e91
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KsFreeDefaultClock, ksfunc_30a51e64-775e-4412-9a8c-b186e6caf932.xml, KsFreeDefaultClock function [Streaming Media Devices], stream.ksfreedefaultclock, ks/KsFreeDefaultClock
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsFreeDefaultClock
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

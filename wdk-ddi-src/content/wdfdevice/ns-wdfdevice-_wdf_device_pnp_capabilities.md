@@ -1,42 +1,47 @@
 ---
-UID : NS:wdfdevice._WDF_DEVICE_PNP_CAPABILITIES
-title : "_WDF_DEVICE_PNP_CAPABILITIES"
-author : windows-driver-content
-description : The WDF_DEVICE_PNP_CAPABILITIES structure describes a device's Plug and Play capabilities.
-old-location : wdf\wdf_device_pnp_capabilities.htm
-old-project : wdf
-ms.assetid : 0857e32e-9962-44ca-9d61-b98b09073c16
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : "_WDF_DEVICE_PNP_CAPABILITIES, DFDeviceObjectGeneralRef_58325ea6-665b-4cf2-bf99-d47636013ee1.xml, wdf.wdf_device_pnp_capabilities, wdfdevice/WDF_DEVICE_PNP_CAPABILITIES, wdfdevice/PWDF_DEVICE_PNP_CAPABILITIES, PWDF_DEVICE_PNP_CAPABILITIES structure pointer, WDF_DEVICE_PNP_CAPABILITIES structure, PWDF_DEVICE_PNP_CAPABILITIES, kmdf.wdf_device_pnp_capabilities, WDF_DEVICE_PNP_CAPABILITIES, *PWDF_DEVICE_PNP_CAPABILITIES"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdfdevice.h
-req.include-header : Wdf.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_DEVICE_PNP_CAPABILITIES, *PWDF_DEVICE_PNP_CAPABILITIES
-req.product : Windows 10 or later.
+UID: NS:wdfdevice._WDF_DEVICE_PNP_CAPABILITIES
+title: "_WDF_DEVICE_PNP_CAPABILITIES"
+author: windows-driver-content
+description: The WDF_DEVICE_PNP_CAPABILITIES structure describes a device's Plug and Play capabilities.
+old-location: wdf\wdf_device_pnp_capabilities.htm
+old-project: wdf
+ms.assetid: 0857e32e-9962-44ca-9d61-b98b09073c16
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: "_WDF_DEVICE_PNP_CAPABILITIES, DFDeviceObjectGeneralRef_58325ea6-665b-4cf2-bf99-d47636013ee1.xml, wdf.wdf_device_pnp_capabilities, wdfdevice/WDF_DEVICE_PNP_CAPABILITIES, wdfdevice/PWDF_DEVICE_PNP_CAPABILITIES, PWDF_DEVICE_PNP_CAPABILITIES structure pointer, WDF_DEVICE_PNP_CAPABILITIES structure, PWDF_DEVICE_PNP_CAPABILITIES, kmdf.wdf_device_pnp_capabilities, WDF_DEVICE_PNP_CAPABILITIES, *PWDF_DEVICE_PNP_CAPABILITIES"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdfdevice.h
+req.include-header: Wdf.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfdevice.h
+apiname:
+-	WDF_DEVICE_PNP_CAPABILITIES
+product: Windows
+targetos: Windows
+req.typenames: WDF_DEVICE_PNP_CAPABILITIES, *PWDF_DEVICE_PNP_CAPABILITIES
+req.product: Windows 10 or later.
 ---
 
 # _WDF_DEVICE_PNP_CAPABILITIES structure

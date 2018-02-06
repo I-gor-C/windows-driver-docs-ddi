@@ -1,41 +1,46 @@
 ---
-UID : NC:ndis.MINIPORT_SYNCHRONIZE_INTERRUPT
-title : MINIPORT_SYNCHRONIZE_INTERRUPT
-author : windows-driver-content
-description : A miniport driver must provide a MiniportSynchronizeInterrupt handler if any driver function that runs at less than DIRQL shares resources with the MiniportInterrupt function.
-old-location : netvista\miniportsynchronizeinterrupt.htm
-old-project : netvista
-ms.assetid : aac1ff91-76aa-46a0-8e8a-85b9f8c3323c
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.miniportsynchronizeinterrupt, MiniportSynchronizeInterrupt callback function [Network Drivers Starting with Windows Vista], MiniportSynchronizeInterrupt, MINIPORT_SYNCHRONIZE_INTERRUPT, MINIPORT_SYNCHRONIZE_INTERRUPT, ndis/MiniportSynchronizeInterrupt, (*MINIPORT_SYNCHRONIZE_INTERRUPT_HANDLER) callback function [Network Drivers Starting with Windows Vista], (*MINIPORT_SYNCHRONIZE_INTERRUPT_HANDLER), ndis_interrupts_miniport_functions_ref_68ebc08d-67f9-42d8-9ade-669dc35a4242.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : See Remarks section
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
+UID: NC:ndis.MINIPORT_SYNCHRONIZE_INTERRUPT
+title: MINIPORT_SYNCHRONIZE_INTERRUPT
+author: windows-driver-content
+description: A miniport driver must provide a MiniportSynchronizeInterrupt handler if any driver function that runs at less than DIRQL shares resources with the MiniportInterrupt function.
+old-location: netvista\miniportsynchronizeinterrupt.htm
+old-project: netvista
+ms.assetid: aac1ff91-76aa-46a0-8e8a-85b9f8c3323c
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.miniportsynchronizeinterrupt, MiniportSynchronizeInterrupt callback function [Network Drivers Starting with Windows Vista], MiniportSynchronizeInterrupt, MINIPORT_SYNCHRONIZE_INTERRUPT, MINIPORT_SYNCHRONIZE_INTERRUPT, ndis/MiniportSynchronizeInterrupt, (*MINIPORT_SYNCHRONIZE_INTERRUPT_HANDLER) callback function [Network Drivers Starting with Windows Vista], (*MINIPORT_SYNCHRONIZE_INTERRUPT_HANDLER), ndis_interrupts_miniport_functions_ref_68ebc08d-67f9-42d8-9ade-669dc35a4242.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: See Remarks section
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ndis.h
+apiname:
+-	(*MINIPORT_SYNCHRONIZE_INTERRUPT_HANDLER)
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 

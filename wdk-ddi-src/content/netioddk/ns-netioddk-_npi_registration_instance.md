@@ -1,41 +1,46 @@
 ---
-UID : NS:netioddk._NPI_REGISTRATION_INSTANCE
-title : "_NPI_REGISTRATION_INSTANCE"
-author : windows-driver-content
-description : The NPI_REGISTRATION_INSTANCE structure defines the data related to the registration of a network module with the NMR.
-old-location : netvista\npi_registration_instance.htm
-old-project : netvista
-ms.assetid : a368f9d9-a7e0-4b35-ba14-b0919f74029d
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : "_NPI_REGISTRATION_INSTANCE, PNPI_REGISTRATION_INSTANCE, PNPI_REGISTRATION_INSTANCE structure pointer [Network Drivers Starting with Windows Vista], netvista.npi_registration_instance, netioddk/NPI_REGISTRATION_INSTANCE, NPI_REGISTRATION_INSTANCE, netioddk/PNPI_REGISTRATION_INSTANCE, nmrref_a31a8531-bab8-47d5-b79e-a239dcde475f.xml, NPI_REGISTRATION_INSTANCE structure [Network Drivers Starting with Windows Vista]"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : netioddk.h
-req.include-header : Wsk.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating   systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "< DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NPI_REGISTRATION_INSTANCE
+UID: NS:netioddk._NPI_REGISTRATION_INSTANCE
+title: "_NPI_REGISTRATION_INSTANCE"
+author: windows-driver-content
+description: The NPI_REGISTRATION_INSTANCE structure defines the data related to the registration of a network module with the NMR.
+old-location: netvista\npi_registration_instance.htm
+old-project: netvista
+ms.assetid: a368f9d9-a7e0-4b35-ba14-b0919f74029d
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: "_NPI_REGISTRATION_INSTANCE, PNPI_REGISTRATION_INSTANCE, PNPI_REGISTRATION_INSTANCE structure pointer [Network Drivers Starting with Windows Vista], netvista.npi_registration_instance, netioddk/NPI_REGISTRATION_INSTANCE, NPI_REGISTRATION_INSTANCE, netioddk/PNPI_REGISTRATION_INSTANCE, nmrref_a31a8531-bab8-47d5-b79e-a239dcde475f.xml, NPI_REGISTRATION_INSTANCE structure [Network Drivers Starting with Windows Vista]"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: netioddk.h
+req.include-header: Wsk.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "< DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	netioddk.h
+apiname:
+-	NPI_REGISTRATION_INSTANCE
+product: Windows
+targetos: Windows
+req.typenames: NPI_REGISTRATION_INSTANCE
 ---
 
 # _NPI_REGISTRATION_INSTANCE structure

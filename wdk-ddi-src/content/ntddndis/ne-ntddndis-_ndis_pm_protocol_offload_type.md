@@ -1,41 +1,46 @@
 ---
-UID : NE:ntddndis._NDIS_PM_PROTOCOL_OFFLOAD_TYPE
-title : "_NDIS_PM_PROTOCOL_OFFLOAD_TYPE"
-author : windows-driver-content
-description : The NDIS_PM_PROTOCOL_OFFLOAD_TYPE enumeration identifies the type of a protocol offload for NDIS network adapter power management.
-old-location : netvista\ndis_pm_protocol_offload_type.htm
-old-project : netvista
-ms.assetid : ab9f98d3-1792-43be-b838-f9dd3953889c
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : ntddndis/PNDIS_PM_PROTOCOL_OFFLOAD_TYPE, ntddndis/NdisPMProtocolOffloadIdUnspecified, NdisPMProtocolOffloadIdIPv6NS, ntddndis/NdisPMProtocolOffloadIdIPv6NS, ntddndis/NdisPMProtocolOffloadIdMaximum, PNDIS_PM_PROTOCOL_OFFLOAD_TYPE, ntddndis/NdisPMProtocolOffload80211RSNRekey, NDIS_PM_PROTOCOL_OFFLOAD_TYPE enumeration [Network Drivers Starting with Windows Vista], _NDIS_PM_PROTOCOL_OFFLOAD_TYPE, *PNDIS_PM_PROTOCOL_OFFLOAD_TYPE, NDIS_PM_PROTOCOL_OFFLOAD_TYPE, ntddndis/NdisPMProtocolOffloadIdIPv4ARP, NdisPMProtocolOffloadIdMaximum, NdisPMProtocolOffloadIdUnspecified, PNDIS_PM_PROTOCOL_OFFLOAD_TYPE enumeration pointer [Network Drivers Starting with Windows Vista], miniport_power_management_ref_5fcdc741-9efa-48ff-8b03-017859bf80c0.xml, ntddndis/NDIS_PM_PROTOCOL_OFFLOAD_TYPE, NdisPMProtocolOffload80211RSNRekey, netvista.ndis_pm_protocol_offload_type, NdisPMProtocolOffloadIdIPv4ARP
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : ntddndis.h
-req.include-header : Ntddndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.20 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_PM_PROTOCOL_OFFLOAD_TYPE, *PNDIS_PM_PROTOCOL_OFFLOAD_TYPE
+UID: NE:ntddndis._NDIS_PM_PROTOCOL_OFFLOAD_TYPE
+title: "_NDIS_PM_PROTOCOL_OFFLOAD_TYPE"
+author: windows-driver-content
+description: The NDIS_PM_PROTOCOL_OFFLOAD_TYPE enumeration identifies the type of a protocol offload for NDIS network adapter power management.
+old-location: netvista\ndis_pm_protocol_offload_type.htm
+old-project: netvista
+ms.assetid: ab9f98d3-1792-43be-b838-f9dd3953889c
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: ntddndis/PNDIS_PM_PROTOCOL_OFFLOAD_TYPE, ntddndis/NdisPMProtocolOffloadIdUnspecified, NdisPMProtocolOffloadIdIPv6NS, ntddndis/NdisPMProtocolOffloadIdIPv6NS, ntddndis/NdisPMProtocolOffloadIdMaximum, PNDIS_PM_PROTOCOL_OFFLOAD_TYPE, ntddndis/NdisPMProtocolOffload80211RSNRekey, NDIS_PM_PROTOCOL_OFFLOAD_TYPE enumeration [Network Drivers Starting with Windows Vista], _NDIS_PM_PROTOCOL_OFFLOAD_TYPE, *PNDIS_PM_PROTOCOL_OFFLOAD_TYPE, NDIS_PM_PROTOCOL_OFFLOAD_TYPE, ntddndis/NdisPMProtocolOffloadIdIPv4ARP, NdisPMProtocolOffloadIdMaximum, NdisPMProtocolOffloadIdUnspecified, PNDIS_PM_PROTOCOL_OFFLOAD_TYPE enumeration pointer [Network Drivers Starting with Windows Vista], miniport_power_management_ref_5fcdc741-9efa-48ff-8b03-017859bf80c0.xml, ntddndis/NDIS_PM_PROTOCOL_OFFLOAD_TYPE, NdisPMProtocolOffload80211RSNRekey, netvista.ndis_pm_protocol_offload_type, NdisPMProtocolOffloadIdIPv4ARP
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: ntddndis.h
+req.include-header: Ntddndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.20 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddndis.h
+apiname:
+-	NDIS_PM_PROTOCOL_OFFLOAD_TYPE
+product: Windows
+targetos: Windows
+req.typenames: NDIS_PM_PROTOCOL_OFFLOAD_TYPE, *PNDIS_PM_PROTOCOL_OFFLOAD_TYPE
 ---
 
 # _NDIS_PM_PROTOCOL_OFFLOAD_TYPE Enumeration
@@ -56,44 +61,44 @@ typedef enum _NDIS_PM_PROTOCOL_OFFLOAD_TYPE {
 ## Constants
 
 <table>
-
-<tr>
-<td>NdisPMProtocolOffload80211RSNRekey</td>
-<td>An IEEE 802.11i Robust Security Network (RSN) 4-way and 2-way handshake protocol offload. This
+            
+                <tr>
+                    <td>NdisPMProtocolOffload80211RSNRekey</td>
+                    <td>An IEEE 802.11i Robust Security Network (RSN) 4-way and 2-way handshake protocol offload. This
      protocol offload type is specified in the 
      <b>Dot11RSNRekeyParameters</b> member of the <a href="..\ntddndis\ns-ntddndis-_ndis_pm_protocol_offload.md">NDIS_PM_PROTOCOL_OFFLOAD</a> structure.</td>
-</tr>
-
-<tr>
-<td>NdisPMProtocolOffloadIdIPv4ARP</td>
-<td>An IPv4 ARP protocol offload. The parameters for this protocol offload type are specified in the 
+                </tr>
+            
+                <tr>
+                    <td>NdisPMProtocolOffloadIdIPv4ARP</td>
+                    <td>An IPv4 ARP protocol offload. The parameters for this protocol offload type are specified in the 
      <b>IPv4ARPParameters</b> member of the 
      <a href="..\ntddndis\ns-ntddndis-_ndis_pm_protocol_offload.md">
      NDIS_PM_PROTOCOL_OFFLOAD</a> structure.</td>
-</tr>
-
-<tr>
-<td>NdisPMProtocolOffloadIdIPv6NS</td>
-<td>An IPv6 Neighbor Solicitation (NS) protocol offload. The parameters for this protocol offload type
+                </tr>
+            
+                <tr>
+                    <td>NdisPMProtocolOffloadIdIPv6NS</td>
+                    <td>An IPv6 Neighbor Solicitation (NS) protocol offload. The parameters for this protocol offload type
      are specified in the 
      <b>IPv6NSParameters</b> member of the <a href="..\ntddndis\ns-ntddndis-_ndis_pm_protocol_offload.md">NDIS_PM_PROTOCOL_OFFLOAD</a> structure.</td>
-</tr>
-
-<tr>
-<td>NdisPMProtocolOffloadIdMaximum</td>
-<td>The maximum value for this enumeration. This value might change in future versions of the NDIS
+                </tr>
+            
+                <tr>
+                    <td>NdisPMProtocolOffloadIdMaximum</td>
+                    <td>The maximum value for this enumeration. This value might change in future versions of the NDIS
      header files and binaries.</td>
-</tr>
-
-<tr>
-<td>NdisPMProtocolOffloadIdUnspecified</td>
-<td>The offloaded protocol is not specified.</td>
-</tr>
+                </tr>
+            
+                <tr>
+                    <td>NdisPMProtocolOffloadIdUnspecified</td>
+                    <td>The offloaded protocol is not specified.</td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-The <b>NDIS_PM_PROTOCOL_OFFLOAD_TYPE</b> enumeration is used in the 
+        The <b>NDIS_PM_PROTOCOL_OFFLOAD_TYPE</b> enumeration is used in the 
     <b>ProtocolOffloadType</b> member of the 
     <a href="..\ntddndis\ns-ntddndis-_ndis_pm_protocol_offload.md">
     NDIS_PM_PROTOCOL_OFFLOAD</a> structure.
@@ -104,9 +109,9 @@ The <b>NDIS_PM_PROTOCOL_OFFLOAD_TYPE</b> enumeration is used in the
 | **Windows version** | Supported in NDIS 6.20 and later. Supported in NDIS 6.20 and later. |
 | **Header** | ntddndis.h (include Ntddndis.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_pm_protocol_offload.md">NDIS_PM_PROTOCOL_OFFLOAD</a>
+        <a href="..\ntddndis\ns-ntddndis-_ndis_pm_protocol_offload.md">NDIS_PM_PROTOCOL_OFFLOAD</a>
 
  
 

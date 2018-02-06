@@ -1,41 +1,46 @@
 ---
-UID : NS:ntifs._FILE_ALLOCATION_INFORMATION
-title : "_FILE_ALLOCATION_INFORMATION"
-author : windows-driver-content
-description : The FILE_ALLOCATION_INFORMATION structure is used to set the allocation size for a file.
-old-location : ifsk\file_allocation_information.htm
-old-project : ifsk
-ms.assetid : 52c62e52-3bf7-40eb-80ff-df14c50c86e1
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ntifs/FILE_ALLOCATION_INFORMATION, FILE_ALLOCATION_INFORMATION structure [Installable File System Drivers], _FILE_ALLOCATION_INFORMATION, fileinformationstructures_79d60e3b-f403-46d8-b600-62aeddcb88e0.xml, ntifs/PFILE_ALLOCATION_INFORMATION, FILE_ALLOCATION_INFORMATION, *PFILE_ALLOCATION_INFORMATION, PFILE_ALLOCATION_INFORMATION structure pointer [Installable File System Drivers], PFILE_ALLOCATION_INFORMATION, ifsk.file_allocation_information
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntifs.h
-req.include-header : Ntifs.h, Fltkernel.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FILE_ALLOCATION_INFORMATION, *PFILE_ALLOCATION_INFORMATION
+UID: NS:ntifs._FILE_ALLOCATION_INFORMATION
+title: "_FILE_ALLOCATION_INFORMATION"
+author: windows-driver-content
+description: The FILE_ALLOCATION_INFORMATION structure is used to set the allocation size for a file.
+old-location: ifsk\file_allocation_information.htm
+old-project: ifsk
+ms.assetid: 52c62e52-3bf7-40eb-80ff-df14c50c86e1
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ntifs/FILE_ALLOCATION_INFORMATION, FILE_ALLOCATION_INFORMATION structure [Installable File System Drivers], _FILE_ALLOCATION_INFORMATION, fileinformationstructures_79d60e3b-f403-46d8-b600-62aeddcb88e0.xml, ntifs/PFILE_ALLOCATION_INFORMATION, FILE_ALLOCATION_INFORMATION, *PFILE_ALLOCATION_INFORMATION, PFILE_ALLOCATION_INFORMATION structure pointer [Installable File System Drivers], PFILE_ALLOCATION_INFORMATION, ifsk.file_allocation_information
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntifs.h
+req.include-header: Ntifs.h, Fltkernel.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntifs.h
+apiname:
+-	FILE_ALLOCATION_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: FILE_ALLOCATION_INFORMATION, *PFILE_ALLOCATION_INFORMATION
 ---
 
 # _FILE_ALLOCATION_INFORMATION structure

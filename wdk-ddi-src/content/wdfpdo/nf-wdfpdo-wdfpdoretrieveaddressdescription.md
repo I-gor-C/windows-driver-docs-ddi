@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfpdo.WdfPdoRetrieveAddressDescription
-title : WdfPdoRetrieveAddressDescription function
-author : windows-driver-content
-description : The WdfPdoRetrieveAddressDescription method retrieves the address description that is associated with a specified framework device object.
-old-location : wdf\wdfpdoretrieveaddressdescription.htm
-old-project : wdf
-ms.assetid : b19e6492-af8d-48dc-8d17-81c2d8c25a6a
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WdfPdoRetrieveAddressDescription method, wdf.wdfpdoretrieveaddressdescription, kmdf.wdfpdoretrieveaddressdescription, PFN_WDFPDORETRIEVEADDRESSDESCRIPTION, WdfPdoRetrieveAddressDescription, wdfpdo/WdfPdoRetrieveAddressDescription, DFDeviceObjectFdoPdoRef_14653cca-1eb9-44c0-bcdd-cbb450617659.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfpdo.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDF_OBJECT_CONTEXT_TYPE_INFO, WDF_OBJECT_CONTEXT_TYPE_INFO"
-req.product : Windows 10 or later.
+UID: NF:wdfpdo.WdfPdoRetrieveAddressDescription
+title: WdfPdoRetrieveAddressDescription function
+author: windows-driver-content
+description: The WdfPdoRetrieveAddressDescription method retrieves the address description that is associated with a specified framework device object.
+old-location: wdf\wdfpdoretrieveaddressdescription.htm
+old-project: wdf
+ms.assetid: b19e6492-af8d-48dc-8d17-81c2d8c25a6a
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WdfPdoRetrieveAddressDescription method, wdf.wdfpdoretrieveaddressdescription, kmdf.wdfpdoretrieveaddressdescription, PFN_WDFPDORETRIEVEADDRESSDESCRIPTION, WdfPdoRetrieveAddressDescription, wdfpdo/WdfPdoRetrieveAddressDescription, DFDeviceObjectFdoPdoRef_14653cca-1eb9-44c0-bcdd-cbb450617659.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfpdo.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfPdoRetrieveAddressDescription
+product: Windows
+targetos: Windows
+req.typenames: "*PWDF_OBJECT_CONTEXT_TYPE_INFO, WDF_OBJECT_CONTEXT_TYPE_INFO"
+req.product: Windows 10 or later.
 ---
 
 

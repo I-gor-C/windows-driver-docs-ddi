@@ -1,42 +1,47 @@
 ---
-UID : NC:storport.HW_MESSAGE_SIGNALED_INTERRUPT_ROUTINE
-title : HW_MESSAGE_SIGNALED_INTERRUPT_ROUTINE
-author : windows-driver-content
-description : The HwMSInterruptRoutine routine handles a message signaled interrupt (MSI).
-old-location : storage\hwmsinterruptroutine.htm
-old-project : storage
-ms.assetid : d8e90489-c847-48e7-89c4-f7a397a8de14
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.hwmsinterruptroutine, HwMSInterruptRoutine routine [Storage Devices], HwMSInterruptRoutine, HW_MESSAGE_SIGNALED_INTERRUPT_ROUTINE, HW_MESSAGE_SIGNALED_INTERRUPT_ROUTINE, storport/HwMSInterruptRoutine, stormini_153bf378-505e-413b-90b2-24af3fd9d502.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : DIRQL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSTORAGE_DEVICE_UNIQUE_IDENTIFIER, STORAGE_DEVICE_UNIQUE_IDENTIFIER"
-req.product : Windows 10 or later.
+UID: NC:storport.HW_MESSAGE_SIGNALED_INTERRUPT_ROUTINE
+title: HW_MESSAGE_SIGNALED_INTERRUPT_ROUTINE
+author: windows-driver-content
+description: The HwMSInterruptRoutine routine handles a message signaled interrupt (MSI).
+old-location: storage\hwmsinterruptroutine.htm
+old-project: storage
+ms.assetid: d8e90489-c847-48e7-89c4-f7a397a8de14
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.hwmsinterruptroutine, HwMSInterruptRoutine routine [Storage Devices], HwMSInterruptRoutine, HW_MESSAGE_SIGNALED_INTERRUPT_ROUTINE, HW_MESSAGE_SIGNALED_INTERRUPT_ROUTINE, storport/HwMSInterruptRoutine, stormini_153bf378-505e-413b-90b2-24af3fd9d502.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: DIRQL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Storport.h
+apiname:
+-	HwMSInterruptRoutine
+product: Windows
+targetos: Windows
+req.typenames: "*PSTORAGE_DEVICE_UNIQUE_IDENTIFIER, STORAGE_DEVICE_UNIQUE_IDENTIFIER"
+req.product: Windows 10 or later.
 ---
 
 

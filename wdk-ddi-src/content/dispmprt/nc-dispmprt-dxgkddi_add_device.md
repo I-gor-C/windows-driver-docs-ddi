@@ -1,41 +1,46 @@
 ---
-UID : NC:dispmprt.DXGKDDI_ADD_DEVICE
-title : DXGKDDI_ADD_DEVICE
-author : windows-driver-content
-description : The DxgkDdiAddDevice function creates a context block for a display adapter and returns a handle that represents the display adapter.
-old-location : display\dxgkddiadddevice.htm
-old-project : display
-ms.assetid : 5fd4046f-54c3-4dfc-8d51-0d9ebcde0bea
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkddiadddevice, DxgkDdiAddDevice callback function [Display Devices], DxgkDdiAddDevice, DXGKDDI_ADD_DEVICE, DXGKDDI_ADD_DEVICE, dispmprt/DxgkDdiAddDevice, DmFunctions_83323c62-42ac-45f5-80c8-b914fda642b5.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : dispmprt.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
+UID: NC:dispmprt.DXGKDDI_ADD_DEVICE
+title: DXGKDDI_ADD_DEVICE
+author: windows-driver-content
+description: The DxgkDdiAddDevice function creates a context block for a display adapter and returns a handle that represents the display adapter.
+old-location: display\dxgkddiadddevice.htm
+old-project: display
+ms.assetid: 5fd4046f-54c3-4dfc-8d51-0d9ebcde0bea
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkddiadddevice, DxgkDdiAddDevice callback function [Display Devices], DxgkDdiAddDevice, DXGKDDI_ADD_DEVICE, DXGKDDI_ADD_DEVICE, dispmprt/DxgkDdiAddDevice, DmFunctions_83323c62-42ac-45f5-80c8-b914fda642b5.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: dispmprt.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	dispmprt.h
+apiname:
+-	DxgkDdiAddDevice
+product: Windows
+targetos: Windows
+req.typenames: SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ---
 
 

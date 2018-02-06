@@ -1,41 +1,46 @@
 ---
-UID : NE:dispmprt._DXGK_CHILD_STATUS_TYPE
-title : "_DXGK_CHILD_STATUS_TYPE"
-author : windows-driver-content
-description : The DXGK_CHILD_STATUS_TYPE enumeration indicates the type of status being requested or reported for a child device of the display adapter.
-old-location : display\dxgk_child_status_type.htm
-old-project : display
-ms.assetid : 5fa4b7e2-8215-49d8-9d70-b45c972b39b4
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : dispmprt/PDXGK_CHILD_STATUS_TYPE, StatusRotation, StatusMiracast, dispmprt/StatusMiracast, display.dxgk_child_status_type, PDXGK_CHILD_STATUS_TYPE enumeration pointer [Display Devices], DmEnums_684c935e-6fd5-4743-a196-d6674b8f2e56.xml, dispmprt/StatusRotation, _DXGK_CHILD_STATUS_TYPE, StatusUninitialized, StatusConnection, *PDXGK_CHILD_STATUS_TYPE, dispmprt/DXGK_CHILD_STATUS_TYPE, DXGK_CHILD_STATUS_TYPE, PDXGK_CHILD_STATUS_TYPE, dispmprt/StatusUninitialized, dispmprt/StatusConnection, DXGK_CHILD_STATUS_TYPE enumeration [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : dispmprt.h
-req.include-header : Dispmprt.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDXGK_CHILD_STATUS_TYPE, DXGK_CHILD_STATUS_TYPE"
+UID: NE:dispmprt._DXGK_CHILD_STATUS_TYPE
+title: "_DXGK_CHILD_STATUS_TYPE"
+author: windows-driver-content
+description: The DXGK_CHILD_STATUS_TYPE enumeration indicates the type of status being requested or reported for a child device of the display adapter.
+old-location: display\dxgk_child_status_type.htm
+old-project: display
+ms.assetid: 5fa4b7e2-8215-49d8-9d70-b45c972b39b4
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: dispmprt/PDXGK_CHILD_STATUS_TYPE, StatusRotation, StatusMiracast, dispmprt/StatusMiracast, display.dxgk_child_status_type, PDXGK_CHILD_STATUS_TYPE enumeration pointer [Display Devices], DmEnums_684c935e-6fd5-4743-a196-d6674b8f2e56.xml, dispmprt/StatusRotation, _DXGK_CHILD_STATUS_TYPE, StatusUninitialized, StatusConnection, *PDXGK_CHILD_STATUS_TYPE, dispmprt/DXGK_CHILD_STATUS_TYPE, DXGK_CHILD_STATUS_TYPE, PDXGK_CHILD_STATUS_TYPE, dispmprt/StatusUninitialized, dispmprt/StatusConnection, DXGK_CHILD_STATUS_TYPE enumeration [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: dispmprt.h
+req.include-header: Dispmprt.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	dispmprt.h
+apiname:
+-	DXGK_CHILD_STATUS_TYPE
+product: Windows
+targetos: Windows
+req.typenames: "*PDXGK_CHILD_STATUS_TYPE, DXGK_CHILD_STATUS_TYPE"
 ---
 
 # _DXGK_CHILD_STATUS_TYPE Enumeration
@@ -56,31 +61,31 @@ typedef enum _DXGK_CHILD_STATUS_TYPE {
 ## Constants
 
 <table>
-
-<tr>
-<td>StatusConnection</td>
-<td>Indicates that the request or report pertains to whether the child device has a monitor (or other display device) connected to it.</td>
-</tr>
-
-<tr>
-<td>StatusMiracastConnection</td>
-<td></td>
-</tr>
-
-<tr>
-<td>StatusRotation</td>
-<td>Indicates that the request or report pertains to the rotation angle of the monitor (or other display device) that is connected to the child device.</td>
-</tr>
-
-<tr>
-<td>StatusUninitialized</td>
-<td>Indicates that a variable of type DXGK_CHILD_STATUS_TYPE has not yet been assigned a meaningful value.</td>
-</tr>
+            
+                <tr>
+                    <td>StatusConnection</td>
+                    <td>Indicates that the request or report pertains to whether the child device has a monitor (or other display device) connected to it.</td>
+                </tr>
+            
+                <tr>
+                    <td>StatusMiracastConnection</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>StatusRotation</td>
+                    <td>Indicates that the request or report pertains to the rotation angle of the monitor (or other display device) that is connected to the child device.</td>
+                </tr>
+            
+                <tr>
+                    <td>StatusUninitialized</td>
+                    <td>Indicates that a variable of type DXGK_CHILD_STATUS_TYPE has not yet been assigned a meaningful value.</td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-The <b>Type</b> member of a <a href="..\dispmprt\ns-dispmprt-_dxgk_child_status.md">DXGK_CHILD_STATUS</a> structure is a member of the <b>DXGK_CHILD_STATUS_TYPE</b> enumeration.
+        The <b>Type</b> member of a <a href="..\dispmprt\ns-dispmprt-_dxgk_child_status.md">DXGK_CHILD_STATUS</a> structure is a member of the <b>DXGK_CHILD_STATUS_TYPE</b> enumeration.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -88,9 +93,9 @@ The <b>Type</b> member of a <a href="..\dispmprt\ns-dispmprt-_dxgk_child_status.
 | **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | dispmprt.h (include Dispmprt.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\dispmprt\nc-dispmprt-dxgkcb_indicate_child_status.md">DxgkCbIndicateChildStatus</a>
+        <a href="..\dispmprt\nc-dispmprt-dxgkcb_indicate_child_status.md">DxgkCbIndicateChildStatus</a>
 
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_query_child_status.md">DxgkDdiQueryChildStatus</a>
 

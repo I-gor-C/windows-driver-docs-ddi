@@ -1,41 +1,46 @@
 ---
-UID : NF:hidsdi.HidD_GetNumInputBuffers
-title : HidD_GetNumInputBuffers function
-author : windows-driver-content
-description : The HidD_GetNumInputBuffers routine returns the current size, in number of reports, of the ring buffer that the HID class driver uses to queue input reports from a specified top-level collection.
-old-location : hid\hidd_getnuminputbuffers.htm
-old-project : hid
-ms.assetid : f9ed28a5-835c-47c8-b9cf-888785013b69
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : hid.hidd_getnuminputbuffers, HidD_GetNumInputBuffers, hidfunc_addf7040-0b62-45bc-8b43-1aa0157924e8.xml, hidsdi/HidD_GetNumInputBuffers, HidD_GetNumInputBuffers routine [Human Input Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : hidsdi.h
-req.include-header : Hidsdi.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 2000 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Hid.lib
-req.dll : Hid.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PHID_MINIDRIVER_REGISTRATION, HID_MINIDRIVER_REGISTRATION"
+UID: NF:hidsdi.HidD_GetNumInputBuffers
+title: HidD_GetNumInputBuffers function
+author: windows-driver-content
+description: The HidD_GetNumInputBuffers routine returns the current size, in number of reports, of the ring buffer that the HID class driver uses to queue input reports from a specified top-level collection.
+old-location: hid\hidd_getnuminputbuffers.htm
+old-project: hid
+ms.assetid: f9ed28a5-835c-47c8-b9cf-888785013b69
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: hid.hidd_getnuminputbuffers, HidD_GetNumInputBuffers, hidfunc_addf7040-0b62-45bc-8b43-1aa0157924e8.xml, hidsdi/HidD_GetNumInputBuffers, HidD_GetNumInputBuffers routine [Human Input Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: hidsdi.h
+req.include-header: Hidsdi.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 2000 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Hid.lib
+req.dll: Hid.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Hid.dll
+apiname:
+-	HidD_GetNumInputBuffers
+product: Windows
+targetos: Windows
+req.typenames: "*PHID_MINIDRIVER_REGISTRATION, HID_MINIDRIVER_REGISTRATION"
 ---
 
 

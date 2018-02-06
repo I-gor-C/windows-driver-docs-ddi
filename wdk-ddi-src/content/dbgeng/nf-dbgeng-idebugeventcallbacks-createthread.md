@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugEventCallbacks.CreateThread
-title : IDebugEventCallbacks::CreateThread method
-author : windows-driver-content
-description : The CreateThread callback method is called by the engine when a create-threaddebugging event occurs in the target.
-old-location : debugger\idebugeventcallbacks_createthread.htm
-old-project : debugger
-ms.assetid : c3b2cbaa-33b9-4784-922d-d1209fc23dfd
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugEventCallbacks::CreateThread, ComCallbacks_db1fe5dc-8392-4c79-a1ed-9752170eed3c.xml, CreateThread, dbgeng/IDebugEventCallbacks::CreateThread, IDebugEventCallbacks, CreateThread method [Windows Debugging], debugger.idebugeventcallbacks_createthread, CreateThread method [Windows Debugging], IDebugEventCallbacks interface, IDebugEventCallbacks interface [Windows Debugging], CreateThread method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugEventCallbacks.CreateThread
+title: IDebugEventCallbacks::CreateThread method
+author: windows-driver-content
+description: The CreateThread callback method is called by the engine when a create-threaddebugging event occurs in the target.
+old-location: debugger\idebugeventcallbacks_createthread.htm
+old-project: debugger
+ms.assetid: c3b2cbaa-33b9-4784-922d-d1209fc23dfd
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugEventCallbacks::CreateThread, ComCallbacks_db1fe5dc-8392-4c79-a1ed-9752170eed3c.xml, CreateThread, dbgeng/IDebugEventCallbacks::CreateThread, IDebugEventCallbacks, CreateThread method [Windows Debugging], debugger.idebugeventcallbacks_createthread, CreateThread method [Windows Debugging], IDebugEventCallbacks interface, IDebugEventCallbacks interface [Windows Debugging], CreateThread method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugEventCallbacks.CreateThread
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

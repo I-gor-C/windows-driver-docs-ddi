@@ -1,42 +1,47 @@
 ---
-UID : NS:wdm._KBUGCHECK_DUMP_IO
-title : "_KBUGCHECK_DUMP_IO"
-author : windows-driver-content
-description : The KBUGCHECK_DUMP_IO structure describes an I/O operation on the crash dump file.
-old-location : kernel\kbugcheck_dump_io.htm
-old-project : kernel
-ms.assetid : d1c246bd-314d-475f-9df8-f1bf90355a5a
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : PKBUGCHECK_DUMP_IO, kernel.kbugcheck_dump_io, _KBUGCHECK_DUMP_IO, KBUGCHECK_DUMP_IO, wdm/PKBUGCHECK_DUMP_IO, *PKBUGCHECK_DUMP_IO, kstruct_c_a6201416-346e-4100-882c-329dd3ae1843.xml, PKBUGCHECK_DUMP_IO structure pointer [Kernel-Mode Driver Architecture], KBUGCHECK_DUMP_IO structure [Kernel-Mode Driver Architecture], wdm/KBUGCHECK_DUMP_IO
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : Available on Microsoft Windows XP with Service Pack 1 (SP1), Windows Server 2003, and later versions of the Windows operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKBUGCHECK_DUMP_IO, KBUGCHECK_DUMP_IO"
-req.product : Windows 10 or later.
+UID: NS:wdm._KBUGCHECK_DUMP_IO
+title: "_KBUGCHECK_DUMP_IO"
+author: windows-driver-content
+description: The KBUGCHECK_DUMP_IO structure describes an I/O operation on the crash dump file.
+old-location: kernel\kbugcheck_dump_io.htm
+old-project: kernel
+ms.assetid: d1c246bd-314d-475f-9df8-f1bf90355a5a
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: PKBUGCHECK_DUMP_IO, kernel.kbugcheck_dump_io, _KBUGCHECK_DUMP_IO, KBUGCHECK_DUMP_IO, wdm/PKBUGCHECK_DUMP_IO, *PKBUGCHECK_DUMP_IO, kstruct_c_a6201416-346e-4100-882c-329dd3ae1843.xml, PKBUGCHECK_DUMP_IO structure pointer [Kernel-Mode Driver Architecture], KBUGCHECK_DUMP_IO structure [Kernel-Mode Driver Architecture], wdm/KBUGCHECK_DUMP_IO
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: Available on Microsoft Windows XP with Service Pack 1 (SP1), Windows Server 2003, and later versions of the Windows operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	KBUGCHECK_DUMP_IO
+product: Windows
+targetos: Windows
+req.typenames: "*PKBUGCHECK_DUMP_IO, KBUGCHECK_DUMP_IO"
+req.product: Windows 10 or later.
 ---
 
 # _KBUGCHECK_DUMP_IO structure

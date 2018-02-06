@@ -1,41 +1,47 @@
 ---
-UID : NF:fwpsk.FwpsStreamContinue0
-title : FwpsStreamContinue0 function
-author : windows-driver-content
-description : The FwpsStreamContinue0 function resumes the processing of an inbound data stream that was previously deferred.Note  FwpsStreamContinue0 is a specific version of FwpsStreamContinue.
-old-location : netvista\fwpsstreamcontinue0.htm
-old-project : netvista
-ms.assetid : 26cf2630-9602-4c70-a326-11e72f188ef9
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : wfp_ref_2_funct_3_fwps_R-Z_c2e0bb3b-854a-4e88-9378-e78e48cb19f2.xml, netvista.fwpsstreamcontinue0, fwpsk/FwpsStreamContinue0, FwpsStreamContinue0, FwpsStreamContinue0 function [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fwpsk.h
-req.include-header : Fwpsk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Fwpkclnt.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FWPS_VSWITCH_EVENT_TYPE
+UID: NF:fwpsk.FwpsStreamContinue0
+title: FwpsStreamContinue0 function
+author: windows-driver-content
+description: The FwpsStreamContinue0 function resumes the processing of an inbound data stream that was previously deferred.Note  FwpsStreamContinue0 is a specific version of FwpsStreamContinue.
+old-location: netvista\fwpsstreamcontinue0.htm
+old-project: netvista
+ms.assetid: 26cf2630-9602-4c70-a326-11e72f188ef9
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: wfp_ref_2_funct_3_fwps_R-Z_c2e0bb3b-854a-4e88-9378-e78e48cb19f2.xml, netvista.fwpsstreamcontinue0, fwpsk/FwpsStreamContinue0, FwpsStreamContinue0, FwpsStreamContinue0 function [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fwpsk.h
+req.include-header: Fwpsk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Fwpkclnt.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Fwpkclnt.lib
+-	Fwpkclnt.dll
+apiname:
+-	FwpsStreamContinue0
+product: Windows
+targetos: Windows
+req.typenames: FWPS_VSWITCH_EVENT_TYPE
 ---
 
 

@@ -1,12 +1,12 @@
 ---
-UID : NA:iscsiprf
-ms.assetid : d1d036d4-5975-3fa7-8004-2b175d96d46a
-ms.author : windowsdriverdev
-ms.date : 01/18/18
-ms.keywords : 
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : portal
+UID: NA:iscsiprf
+ms.assetid: d1d036d4-5975-3fa7-8004-2b175d96d46a
+ms.author: windowsdriverdev
+ms.date: 01/18/18
+ms.keywords: 
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: portal
 ---
 
 # iscsiprf.h header

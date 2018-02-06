@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._D3DDDIARG_VIDEOPROCESSBLT
-title : "_D3DDDIARG_VIDEOPROCESSBLT"
-author : windows-driver-content
-description : The D3DDDIARG_VIDEOPROCESSBLT structure describes a Microsoft DirectX Video Acceleration (VA) video processing operation to perform.
-old-location : display\d3dddiarg_videoprocessblt.htm
-old-project : display
-ms.assetid : 24e4115f-cd21-46e7-aacc-9b66e7513b9e
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : UMDisplayDriver_param_Structs_feb8d240-92ee-45b9-a07e-50b89f906fbe.xml, display.d3dddiarg_videoprocessblt, _D3DDDIARG_VIDEOPROCESSBLT, D3DDDIARG_VIDEOPROCESSBLT, d3dumddi/D3DDDIARG_VIDEOPROCESSBLT, D3DDDIARG_VIDEOPROCESSBLT structure [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDIARG_VIDEOPROCESSBLT
+UID: NS:d3dumddi._D3DDDIARG_VIDEOPROCESSBLT
+title: "_D3DDDIARG_VIDEOPROCESSBLT"
+author: windows-driver-content
+description: The D3DDDIARG_VIDEOPROCESSBLT structure describes a Microsoft DirectX Video Acceleration (VA) video processing operation to perform.
+old-location: display\d3dddiarg_videoprocessblt.htm
+old-project: display
+ms.assetid: 24e4115f-cd21-46e7-aacc-9b66e7513b9e
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: UMDisplayDriver_param_Structs_feb8d240-92ee-45b9-a07e-50b89f906fbe.xml, display.d3dddiarg_videoprocessblt, _D3DDDIARG_VIDEOPROCESSBLT, D3DDDIARG_VIDEOPROCESSBLT, d3dumddi/D3DDDIARG_VIDEOPROCESSBLT, D3DDDIARG_VIDEOPROCESSBLT structure [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	D3DDDIARG_VIDEOPROCESSBLT
+product: Windows
+targetos: Windows
+req.typenames: D3DDDIARG_VIDEOPROCESSBLT
 ---
 
 # _D3DDDIARG_VIDEOPROCESSBLT structure

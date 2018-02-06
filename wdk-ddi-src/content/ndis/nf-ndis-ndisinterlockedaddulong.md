@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisInterlockedAddUlong
-title : NdisInterlockedAddUlong macro
-author : windows-driver-content
-description : The NdisInterlockedAddUlong function adds an unsigned long value to a given unsigned integer as an atomic operation, using a caller-supplied spin lock to synchronize access to the integer variable.
-old-location : netvista\ndisinterlockedaddulong.htm
-old-project : netvista
-ms.assetid : d2e31f3c-7152-4df9-8206-a15dee9b641f
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : ndis/NdisInterlockedAddUlong, netvista.ndisinterlockedaddulong, NdisInterlockedAddUlong macro [Network Drivers Starting with Windows Vista], NdisInterlockedAddUlong, ndis_interlocked_ref_0b4862c9-6897-4b73-ab23-5cd2ede3e82a.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : macro
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisInterlockedAddUlong (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisInterlockedAddUlong (NDIS   5.1)) in Windows XP.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisInterlockedAddUlong
+title: NdisInterlockedAddUlong macro
+author: windows-driver-content
+description: The NdisInterlockedAddUlong function adds an unsigned long value to a given unsigned integer as an atomic operation, using a caller-supplied spin lock to synchronize access to the integer variable.
+old-location: netvista\ndisinterlockedaddulong.htm
+old-project: netvista
+ms.assetid: d2e31f3c-7152-4df9-8206-a15dee9b641f
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: ndis/NdisInterlockedAddUlong, netvista.ndisinterlockedaddulong, NdisInterlockedAddUlong macro [Network Drivers Starting with Windows Vista], NdisInterlockedAddUlong, ndis_interlocked_ref_0b4862c9-6897-4b73-ab23-5cd2ede3e82a.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: macro
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisInterlockedAddUlong (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisInterlockedAddUlong (NDIS   5.1)) in Windows XP.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisInterlockedAddUlong
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

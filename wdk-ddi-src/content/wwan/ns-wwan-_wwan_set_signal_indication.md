@@ -1,42 +1,47 @@
 ---
-UID : NS:wwan._WWAN_SET_SIGNAL_INDICATION
-title : "_WWAN_SET_SIGNAL_INDICATION"
-author : windows-driver-content
-description : The WWAN_SET_SIGNAL_INDICATION structure represents the frequency of RSSI interval and RSSI threshold notifications.
-old-location : netvista\wwan_set_signal_indication.htm
-old-project : netvista
-ms.assetid : 266ec8f5-f6ec-47e5-b433-4f570f2d43d2
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : "_WWAN_SET_SIGNAL_INDICATION, WWAN_SET_SIGNAL_INDICATION structure [Network Drivers Starting with Windows Vista], netvista.wwan_set_signal_indication, WWAN_SET_SIGNAL_INDICATION, PWWAN_SET_SIGNAL_INDICATION, WwanRef_fa4b9dee-5b46-47f2-8674-d8fa78351d86.xml, *PWWAN_SET_SIGNAL_INDICATION, PWWAN_SET_SIGNAL_INDICATION structure pointer [Network Drivers Starting with Windows Vista], wwan/PWWAN_SET_SIGNAL_INDICATION, wwan/WWAN_SET_SIGNAL_INDICATION"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wwan.h
-req.include-header : Wwan.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWWAN_SET_SIGNAL_INDICATION, WWAN_SET_SIGNAL_INDICATION"
-req.product : Windows 10 or later.
+UID: NS:wwan._WWAN_SET_SIGNAL_INDICATION
+title: "_WWAN_SET_SIGNAL_INDICATION"
+author: windows-driver-content
+description: The WWAN_SET_SIGNAL_INDICATION structure represents the frequency of RSSI interval and RSSI threshold notifications.
+old-location: netvista\wwan_set_signal_indication.htm
+old-project: netvista
+ms.assetid: 266ec8f5-f6ec-47e5-b433-4f570f2d43d2
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: "_WWAN_SET_SIGNAL_INDICATION, WWAN_SET_SIGNAL_INDICATION structure [Network Drivers Starting with Windows Vista], netvista.wwan_set_signal_indication, WWAN_SET_SIGNAL_INDICATION, PWWAN_SET_SIGNAL_INDICATION, WwanRef_fa4b9dee-5b46-47f2-8674-d8fa78351d86.xml, *PWWAN_SET_SIGNAL_INDICATION, PWWAN_SET_SIGNAL_INDICATION structure pointer [Network Drivers Starting with Windows Vista], wwan/PWWAN_SET_SIGNAL_INDICATION, wwan/WWAN_SET_SIGNAL_INDICATION"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wwan.h
+req.include-header: Wwan.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wwan.h
+apiname:
+-	WWAN_SET_SIGNAL_INDICATION
+product: Windows
+targetos: Windows
+req.typenames: "*PWWAN_SET_SIGNAL_INDICATION, WWAN_SET_SIGNAL_INDICATION"
+req.product: Windows 10 or later.
 ---
 
 # _WWAN_SET_SIGNAL_INDICATION structure

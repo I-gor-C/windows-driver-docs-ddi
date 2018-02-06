@@ -1,42 +1,47 @@
 ---
-UID : NS:tcpxcv._PORT_DATA_1
-title : "_PORT_DATA_1"
-author : windows-driver-content
-description : The XcvData function uses a PORT_DATA_1 structure when it adds a port or configures an existing port.
-old-location : print\port_data_1.htm
-old-project : print
-ms.assetid : 6d2165a7-ee21-4f7d-a03c-f9bed87a3c7a
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : tcpxcv/PPORT_DATA_1, *PPORT_DATA_1, PORT_DATA_1, print.port_data_1, spoolfnc_6fd52423-d2f1-4c6c-bf42-63000c5d0e66.xml, PPORT_DATA_1 structure pointer [Print Devices], tcpxcv/PORT_DATA_1, _PORT_DATA_1, PPORT_DATA_1, PORT_DATA_1 structure [Print Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : tcpxcv.h
-req.include-header : Tcpxcv.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPORT_DATA_1, PORT_DATA_1"
-req.product : Windows 10 or later.
+UID: NS:tcpxcv._PORT_DATA_1
+title: "_PORT_DATA_1"
+author: windows-driver-content
+description: The XcvData function uses a PORT_DATA_1 structure when it adds a port or configures an existing port.
+old-location: print\port_data_1.htm
+old-project: print
+ms.assetid: 6d2165a7-ee21-4f7d-a03c-f9bed87a3c7a
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: tcpxcv/PPORT_DATA_1, *PPORT_DATA_1, PORT_DATA_1, print.port_data_1, spoolfnc_6fd52423-d2f1-4c6c-bf42-63000c5d0e66.xml, PPORT_DATA_1 structure pointer [Print Devices], tcpxcv/PORT_DATA_1, _PORT_DATA_1, PPORT_DATA_1, PORT_DATA_1 structure [Print Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: tcpxcv.h
+req.include-header: Tcpxcv.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	tcpxcv.h
+apiname:
+-	PORT_DATA_1
+product: Windows
+targetos: Windows
+req.typenames: "*PPORT_DATA_1, PORT_DATA_1"
+req.product: Windows 10 or later.
 ---
 
 # _PORT_DATA_1 structure

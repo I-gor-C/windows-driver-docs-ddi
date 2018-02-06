@@ -1,41 +1,46 @@
 ---
-UID : NF:portcls.IPortWMIRegistration.UnregisterWMIProvider
-title : IPortWMIRegistration::UnregisterWMIProvider method
-author : windows-driver-content
-description : The UnregisterWMIProvider method unregisters the Event Tracing for Windows (ETW) interface that was previously registered with a call to the RegisterWMIProvider method. The unregistration disables the ETW registration with PortCls.
-old-location : audio\iportwmiregistration_unregisterwmiprovider.htm
-old-project : audio
-ms.assetid : 51c43e1a-ec8e-4dd2-ab08-b90cd89d9b5d
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : audmp-routines_3c640b1e-b98a-491d-a586-c6acaf8b07d4.xml, IPortWMIRegistration, portcls/IPortWMIRegistration::UnregisterWMIProvider, UnregisterWMIProvider method [Audio Devices], IPortWMIRegistration interface [Audio Devices], UnregisterWMIProvider method, UnregisterWMIProvider method [Audio Devices], IPortWMIRegistration interface, IPortWMIRegistration::UnregisterWMIProvider, UnregisterWMIProvider, audio.iportwmiregistration_unregisterwmiprovider
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : portcls.h
-req.include-header : Portcls.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 7 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : portcls.h
-req.dll : 
-req.irql : PASSIVE_LEVEL.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.IPortWMIRegistration.UnregisterWMIProvider
+title: IPortWMIRegistration::UnregisterWMIProvider method
+author: windows-driver-content
+description: The UnregisterWMIProvider method unregisters the Event Tracing for Windows (ETW) interface that was previously registered with a call to the RegisterWMIProvider method. The unregistration disables the ETW registration with PortCls.
+old-location: audio\iportwmiregistration_unregisterwmiprovider.htm
+old-project: audio
+ms.assetid: 51c43e1a-ec8e-4dd2-ab08-b90cd89d9b5d
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: audmp-routines_3c640b1e-b98a-491d-a586-c6acaf8b07d4.xml, IPortWMIRegistration, portcls/IPortWMIRegistration::UnregisterWMIProvider, UnregisterWMIProvider method [Audio Devices], IPortWMIRegistration interface [Audio Devices], UnregisterWMIProvider method, UnregisterWMIProvider method [Audio Devices], IPortWMIRegistration interface, IPortWMIRegistration::UnregisterWMIProvider, UnregisterWMIProvider, audio.iportwmiregistration_unregisterwmiprovider
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: portcls.h
+req.include-header: Portcls.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 7 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: portcls.h
+req.dll: 
+req.irql: PASSIVE_LEVEL.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Portcls.h
+apiname:
+-	IPortWMIRegistration.UnregisterWMIProvider
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

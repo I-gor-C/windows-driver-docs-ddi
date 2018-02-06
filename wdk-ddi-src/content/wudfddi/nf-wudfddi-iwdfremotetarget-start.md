@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFRemoteTarget.Start
-title : IWDFRemoteTarget::Start method
-author : windows-driver-content
-description : The IWDFRemoteTarget::Start method restarts a remote I/O target that is stopped.
-old-location : wdf\iwdfremotetarget_start.htm
-old-project : wdf
-ms.assetid : f0f21d34-21f2-48ac-994f-e050f4447745
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : Start method, wdf.iwdfremotetarget_start, IWDFRemoteTarget::Start, umdf.iwdfremotetarget_start, UMDFIoTargetObjectRef_8e44c1ab-5ce6-4c4a-a7dc-e9de4b10ba12.xml, wudfddi/IWDFRemoteTarget::Start, Start method, IWDFRemoteTarget interface, IWDFRemoteTarget, Start, IWDFRemoteTarget interface, Start method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.9
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFRemoteTarget.Start
+title: IWDFRemoteTarget::Start method
+author: windows-driver-content
+description: The IWDFRemoteTarget::Start method restarts a remote I/O target that is stopped.
+old-location: wdf\iwdfremotetarget_start.htm
+old-project: wdf
+ms.assetid: f0f21d34-21f2-48ac-994f-e050f4447745
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: Start method, wdf.iwdfremotetarget_start, IWDFRemoteTarget::Start, umdf.iwdfremotetarget_start, UMDFIoTargetObjectRef_8e44c1ab-5ce6-4c4a-a7dc-e9de4b10ba12.xml, wudfddi/IWDFRemoteTarget::Start, Start method, IWDFRemoteTarget interface, IWDFRemoteTarget, Start, IWDFRemoteTarget interface, Start method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.9
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFRemoteTarget.Start
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

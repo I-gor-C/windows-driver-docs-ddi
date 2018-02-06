@@ -1,12 +1,12 @@
 ---
-UID : NA:netioddk
-ms.assetid : 5dc52805-9520-3ac9-bc97-e7ef6ccc33de
-ms.author : windowsdriverdev
-ms.date : 01/18/18
-ms.keywords : 
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : portal
+UID: NA:netioddk
+ms.assetid: 5dc52805-9520-3ac9-bc97-e7ef6ccc33de
+ms.author: windowsdriverdev
+ms.date: 01/18/18
+ms.keywords: 
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: portal
 ---
 
 # netioddk.h header

@@ -1,41 +1,46 @@
 ---
-UID : NF:dmusicks.IAllocatorMXF.PutBuffer
-title : IAllocatorMXF::PutBuffer method
-author : windows-driver-content
-description : This method is not currently used by the miniport driver. The PutBuffer method passes a buffer to the allocator, but this occurs automatically when IMXF::PutMessage is called anyway.
-old-location : audio\iallocatormxf_putbuffer.htm
-old-project : audio
-ms.assetid : 20daf292-9476-4435-915d-f97fba3a6ec2
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : audmp-routines_8afbc000-69b1-45a5-8fe3-3f6ff8d5518d.xml, IAllocatorMXF::PutBuffer, IAllocatorMXF interface [Audio Devices], PutBuffer method, dmusicks/IAllocatorMXF::PutBuffer, PutBuffer method [Audio Devices], IAllocatorMXF interface, PutBuffer, audio.iallocatormxf_putbuffer, IAllocatorMXF, PutBuffer method [Audio Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dmusicks.h
-req.include-header : Dmusicks.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dmusicks.h
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DMUS_STREAM_TYPE
+UID: NF:dmusicks.IAllocatorMXF.PutBuffer
+title: IAllocatorMXF::PutBuffer method
+author: windows-driver-content
+description: This method is not currently used by the miniport driver. The PutBuffer method passes a buffer to the allocator, but this occurs automatically when IMXF::PutMessage is called anyway.
+old-location: audio\iallocatormxf_putbuffer.htm
+old-project: audio
+ms.assetid: 20daf292-9476-4435-915d-f97fba3a6ec2
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: audmp-routines_8afbc000-69b1-45a5-8fe3-3f6ff8d5518d.xml, IAllocatorMXF::PutBuffer, IAllocatorMXF interface [Audio Devices], PutBuffer method, dmusicks/IAllocatorMXF::PutBuffer, PutBuffer method [Audio Devices], IAllocatorMXF interface, PutBuffer, audio.iallocatormxf_putbuffer, IAllocatorMXF, PutBuffer method [Audio Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dmusicks.h
+req.include-header: Dmusicks.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dmusicks.h
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dmusicks.h
+apiname:
+-	IAllocatorMXF.PutBuffer
+product: Windows
+targetos: Windows
+req.typenames: DMUS_STREAM_TYPE
 ---
 
 

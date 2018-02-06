@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisCloseAdapterEx
-title : NdisCloseAdapterEx function
-author : windows-driver-content
-description : A protocol driver calls the NdisCloseAdapterEx function to release the binding and the resources that were allocated when the driver called the NdisOpenAdapterEx function.
-old-location : netvista\ndiscloseadapterex.htm
-old-project : netvista
-ms.assetid : 8e3c6373-e39d-4f9b-b874-e3a9c93791b9
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : ndis/NdisCloseAdapterEx, protocol_ndis_functions_ref_f349b273-d8c6-4711-af43-59646c41536c.xml, NdisCloseAdapterEx function [Network Drivers Starting with Windows Vista], NdisCloseAdapterEx, netvista.ndiscloseadapterex
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_Protocol_Driver_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisCloseAdapterEx
+title: NdisCloseAdapterEx function
+author: windows-driver-content
+description: A protocol driver calls the NdisCloseAdapterEx function to release the binding and the resources that were allocated when the driver called the NdisOpenAdapterEx function.
+old-location: netvista\ndiscloseadapterex.htm
+old-project: netvista
+ms.assetid: 8e3c6373-e39d-4f9b-b874-e3a9c93791b9
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: ndis/NdisCloseAdapterEx, protocol_ndis_functions_ref_f349b273-d8c6-4711-af43-59646c41536c.xml, NdisCloseAdapterEx function [Network Drivers Starting with Windows Vista], NdisCloseAdapterEx, netvista.ndiscloseadapterex
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_Protocol_Driver_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisCloseAdapterEx
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

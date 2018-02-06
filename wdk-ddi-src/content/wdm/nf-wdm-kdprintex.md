@@ -1,38 +1,38 @@
 ---
-UID : NF:wdm.KdPrintEx
-title : KdPrintEx macro
-author : windows-driver-content
-description : The KdPrintEx macro sends a string to the kernel debugger if the conditions you specify are met.A call to KdPrintEx requires double parentheses.
-old-location : devtest\kdprintex.htm
-old-project : devtest
-ms.assetid : 8383e9c8-0058-47bf-9a6e-ed05e61a58f1
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : KdPrintEx
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : macro
-req.header : wdm.h
-req.include-header : Wdm.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Microsoft Windows XP and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.alt-api : KdPrintEx
-req.alt-loc : NtosKrnl.exe
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib (See DbgPrintEx.)
-req.dll : NtosKrnl.exe
-req.irql : 
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.KdPrintEx
+title: KdPrintEx macro
+author: windows-driver-content
+description: The KdPrintEx macro sends a string to the kernel debugger if the conditions you specify are met.A call to KdPrintEx requires double parentheses.
+old-location: devtest\kdprintex.htm
+old-project: devtest
+ms.assetid: 8383e9c8-0058-47bf-9a6e-ed05e61a58f1
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: KdPrintEx
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: macro
+req.header: wdm.h
+req.include-header: Wdm.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Microsoft Windows XP and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.alt-api: KdPrintEx
+req.alt-loc: NtosKrnl.exe
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib (See DbgPrintEx.)
+req.dll: NtosKrnl.exe
+req.irql: 
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

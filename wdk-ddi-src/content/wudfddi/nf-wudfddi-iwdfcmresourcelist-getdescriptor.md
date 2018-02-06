@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFCmResourceList.GetDescriptor
-title : IWDFCmResourceList::GetDescriptor method
-author : windows-driver-content
-description : The GetDescriptor method returns a pointer to a resource descriptor that is contained in this interface's resource list.
-old-location : wdf\iwdfcmresourcelist_getdescriptor.htm
-old-project : wdf
-ms.assetid : 5E870D10-A03B-4CD8-A2DD-54A6AB527DB2
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : IWDFCmResourceList::GetDescriptor, GetDescriptor, IWDFCmResourceList interface, GetDescriptor method, wudfddi/IWDFCmResourceList::GetDescriptor, wdf.iwdfcmresourcelist_getdescriptor, GetDescriptor method, IWDFCmResourceList interface, umdf.iwdfcmresourcelist_getdescriptor, IWDFCmResourceList, GetDescriptor method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.11
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFCmResourceList.GetDescriptor
+title: IWDFCmResourceList::GetDescriptor method
+author: windows-driver-content
+description: The GetDescriptor method returns a pointer to a resource descriptor that is contained in this interface's resource list.
+old-location: wdf\iwdfcmresourcelist_getdescriptor.htm
+old-project: wdf
+ms.assetid: 5E870D10-A03B-4CD8-A2DD-54A6AB527DB2
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: IWDFCmResourceList::GetDescriptor, GetDescriptor, IWDFCmResourceList interface, GetDescriptor method, wudfddi/IWDFCmResourceList::GetDescriptor, wdf.iwdfcmresourcelist_getdescriptor, GetDescriptor method, IWDFCmResourceList interface, umdf.iwdfcmresourcelist_getdescriptor, IWDFCmResourceList, GetDescriptor method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.11
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFCmResourceList.GetDescriptor
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

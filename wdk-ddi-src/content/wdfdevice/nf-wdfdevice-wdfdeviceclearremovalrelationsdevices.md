@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfdevice.WdfDeviceClearRemovalRelationsDevices
-title : WdfDeviceClearRemovalRelationsDevices function
-author : windows-driver-content
-description : The WdfDeviceClearRemovalRelationsDevices method removes all devices from the list of devices that must be removed when a specified device is removed.
-old-location : wdf\wdfdeviceclearremovalrelationsdevices.htm
-old-project : wdf
-ms.assetid : c3ff7c9d-380e-4d66-88a4-aef7abe20c9d
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdfdevice/WdfDeviceClearRemovalRelationsDevices, WdfDeviceClearRemovalRelationsDevices, PFN_WDFDEVICECLEARREMOVALRELATIONSDEVICES, wdf.wdfdeviceclearremovalrelationsdevices, WdfDeviceClearRemovalRelationsDevices method, DFDeviceObjectGeneralRef_e2dc5cb6-4f45-441c-b242-5b67ea8fa381.xml, kmdf.wdfdeviceclearremovalrelationsdevices
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfdevice.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_STATE_NOTIFICATION_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfdevice.WdfDeviceClearRemovalRelationsDevices
+title: WdfDeviceClearRemovalRelationsDevices function
+author: windows-driver-content
+description: The WdfDeviceClearRemovalRelationsDevices method removes all devices from the list of devices that must be removed when a specified device is removed.
+old-location: wdf\wdfdeviceclearremovalrelationsdevices.htm
+old-project: wdf
+ms.assetid: c3ff7c9d-380e-4d66-88a4-aef7abe20c9d
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdfdevice/WdfDeviceClearRemovalRelationsDevices, WdfDeviceClearRemovalRelationsDevices, PFN_WDFDEVICECLEARREMOVALRELATIONSDEVICES, wdf.wdfdeviceclearremovalrelationsdevices, WdfDeviceClearRemovalRelationsDevices method, DFDeviceObjectGeneralRef_e2dc5cb6-4f45-441c-b242-5b67ea8fa381.xml, kmdf.wdfdeviceclearremovalrelationsdevices
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfdevice.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfDeviceClearRemovalRelationsDevices
+product: Windows
+targetos: Windows
+req.typenames: WDF_STATE_NOTIFICATION_TYPE
+req.product: Windows 10 or later.
 ---
 
 

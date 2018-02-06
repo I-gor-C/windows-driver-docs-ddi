@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3D10DDI_DRAWINDEXED
-title : PFND3D10DDI_DRAWINDEXED
-author : windows-driver-content
-description : The DrawIndexed function draws indexed primitives.
-old-location : display\drawindexed.htm
-old-project : display
-ms.assetid : d1097bb6-35ac-4069-ae05-b74c75a98e21
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.drawindexed, DrawIndexed callback function [Display Devices], DrawIndexed, PFND3D10DDI_DRAWINDEXED, PFND3D10DDI_DRAWINDEXED, d3d10umddi/DrawIndexed, UserModeDisplayDriverDx10_Functions_4529cc06-0ad4-41ea-8cab-b55a398cb889.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3D10DDI_DRAWINDEXED
+title: PFND3D10DDI_DRAWINDEXED
+author: windows-driver-content
+description: The DrawIndexed function draws indexed primitives.
+old-location: display\drawindexed.htm
+old-project: display
+ms.assetid: d1097bb6-35ac-4069-ae05-b74c75a98e21
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.drawindexed, DrawIndexed callback function [Display Devices], DrawIndexed, PFND3D10DDI_DRAWINDEXED, PFND3D10DDI_DRAWINDEXED, d3d10umddi/DrawIndexed, UserModeDisplayDriverDx10_Functions_4529cc06-0ad4-41ea-8cab-b55a398cb889.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	DrawIndexed
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

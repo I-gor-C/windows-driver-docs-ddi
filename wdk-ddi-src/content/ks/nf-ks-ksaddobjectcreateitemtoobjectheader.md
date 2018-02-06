@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsAddObjectCreateItemToObjectHeader
-title : KsAddObjectCreateItemToObjectHeader function
-author : windows-driver-content
-description : The KsAddObjectCreateItemToObjectHeader function adds the specified create-item to an empty item in the previously allocated create item list for this object header.
-old-location : stream\ksaddobjectcreateitemtoobjectheader.htm
-old-project : stream
-ms.assetid : 9946e896-7f1a-4ff2-afa5-9e231047af11
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KsAddObjectCreateItemToObjectHeader, stream.ksaddobjectcreateitemtoobjectheader, ksfunc_de112daa-c37a-4d5b-b646-5fc45fd8ae1c.xml, KsAddObjectCreateItemToObjectHeader function [Streaming Media Devices], ks/KsAddObjectCreateItemToObjectHeader
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsAddObjectCreateItemToObjectHeader
+title: KsAddObjectCreateItemToObjectHeader function
+author: windows-driver-content
+description: The KsAddObjectCreateItemToObjectHeader function adds the specified create-item to an empty item in the previously allocated create item list for this object header.
+old-location: stream\ksaddobjectcreateitemtoobjectheader.htm
+old-project: stream
+ms.assetid: 9946e896-7f1a-4ff2-afa5-9e231047af11
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KsAddObjectCreateItemToObjectHeader, stream.ksaddobjectcreateitemtoobjectheader, ksfunc_de112daa-c37a-4d5b-b646-5fc45fd8ae1c.xml, KsAddObjectCreateItemToObjectHeader function [Streaming Media Devices], ks/KsAddObjectCreateItemToObjectHeader
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsAddObjectCreateItemToObjectHeader
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:hbapiwmi._SendCTPassThru_OUT
-title : "_SendCTPassThru_OUT"
-author : windows-driver-content
-description : The SendCTPassThru_OUT structure is used to report the output parameter data of the SendCTPassThru WMI method to the WMI client.
-old-location : storage\sendctpassthru_out.htm
-old-project : storage
-ms.assetid : f9340f0d-4f70-4751-b339-de11ee13a469
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : PSendCTPassThru_OUT structure pointer [Storage Devices], storage.sendctpassthru_out, SendCTPassThru_OUT, _SendCTPassThru_OUT, SendCTPassThru_OUT structure [Storage Devices], hbapiwmi/PSendCTPassThru_OUT, *PSendCTPassThru_OUT, PSendCTPassThru_OUT, hbapiwmi/SendCTPassThru_OUT, structs-Fibre_f795d452-fb3f-4236-a543-d0f80f94c14f.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : hbapiwmi.h
-req.include-header : Hbapiwmi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SendCTPassThru_OUT, *PSendCTPassThru_OUT
+UID: NS:hbapiwmi._SendCTPassThru_OUT
+title: "_SendCTPassThru_OUT"
+author: windows-driver-content
+description: The SendCTPassThru_OUT structure is used to report the output parameter data of the SendCTPassThru WMI method to the WMI client.
+old-location: storage\sendctpassthru_out.htm
+old-project: storage
+ms.assetid: f9340f0d-4f70-4751-b339-de11ee13a469
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: PSendCTPassThru_OUT structure pointer [Storage Devices], storage.sendctpassthru_out, SendCTPassThru_OUT, _SendCTPassThru_OUT, SendCTPassThru_OUT structure [Storage Devices], hbapiwmi/PSendCTPassThru_OUT, *PSendCTPassThru_OUT, PSendCTPassThru_OUT, hbapiwmi/SendCTPassThru_OUT, structs-Fibre_f795d452-fb3f-4236-a543-d0f80f94c14f.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: hbapiwmi.h
+req.include-header: Hbapiwmi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hbapiwmi.h
+apiname:
+-	SendCTPassThru_OUT
+product: Windows
+targetos: Windows
+req.typenames: SendCTPassThru_OUT, *PSendCTPassThru_OUT
 ---
 
 # _SendCTPassThru_OUT structure

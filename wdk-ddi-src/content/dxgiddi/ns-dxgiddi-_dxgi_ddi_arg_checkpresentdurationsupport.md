@@ -1,41 +1,46 @@
 ---
-UID : NS:dxgiddi._DXGI_DDI_ARG_CHECKPRESENTDURATIONSUPPORT
-title : "_DXGI_DDI_ARG_CHECKPRESENTDURATIONSUPPORT"
-author : windows-driver-content
-description : Used in a call to the pfnCheckPresentDurationSupport(DXGI) function to check details on hardware device support for seamlessly switching to a new monitor refresh rate.
-old-location : display\dxgi_ddi_arg_checkpresentdurationsupport.htm
-old-project : display
-ms.assetid : FE12CFAB-3936-4453-88B5-A4CF0CA51E1A
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : "_DXGI_DDI_ARG_CHECKPRESENTDURATIONSUPPORT, display.dxgi_ddi_arg_checkpresentdurationsupport, DXGI_DDI_ARG_CHECKPRESENTDURATIONSUPPORT, DXGI_DDI_ARG_CHECKPRESENTDURATIONSUPPORT structure [Display Devices], dxgiddi/DXGI_DDI_ARG_CHECKPRESENTDURATIONSUPPORT"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : dxgiddi.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8.1,WDDM 1.3 and later
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGI_DDI_ARG_CHECKPRESENTDURATIONSUPPORT
+UID: NS:dxgiddi._DXGI_DDI_ARG_CHECKPRESENTDURATIONSUPPORT
+title: "_DXGI_DDI_ARG_CHECKPRESENTDURATIONSUPPORT"
+author: windows-driver-content
+description: Used in a call to the pfnCheckPresentDurationSupport(DXGI) function to check details on hardware device support for seamlessly switching to a new monitor refresh rate.
+old-location: display\dxgi_ddi_arg_checkpresentdurationsupport.htm
+old-project: display
+ms.assetid: FE12CFAB-3936-4453-88B5-A4CF0CA51E1A
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: "_DXGI_DDI_ARG_CHECKPRESENTDURATIONSUPPORT, display.dxgi_ddi_arg_checkpresentdurationsupport, DXGI_DDI_ARG_CHECKPRESENTDURATIONSUPPORT, DXGI_DDI_ARG_CHECKPRESENTDURATIONSUPPORT structure [Display Devices], dxgiddi/DXGI_DDI_ARG_CHECKPRESENTDURATIONSUPPORT"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: dxgiddi.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8.1,WDDM 1.3 and later
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Dxgiddi.h
+apiname:
+-	DXGI_DDI_ARG_CHECKPRESENTDURATIONSUPPORT
+product: Windows
+targetos: Windows
+req.typenames: DXGI_DDI_ARG_CHECKPRESENTDURATIONSUPPORT
 ---
 
 # _DXGI_DDI_ARG_CHECKPRESENTDURATIONSUPPORT structure

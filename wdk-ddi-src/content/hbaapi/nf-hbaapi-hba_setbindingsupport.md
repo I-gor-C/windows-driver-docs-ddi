@@ -1,41 +1,46 @@
 ---
-UID : NF:hbaapi.HBA_SetBindingSupport
-title : HBA_SetBindingSupport function
-author : windows-driver-content
-description : The HBA_SetBindingSupport routine enables the indicated set of capabilities on the adapter.
-old-location : storage\hba_setbindingsupport.htm
-old-project : storage
-ms.assetid : 2d4ac375-ede9-406e-bac0-9caa2273c91a
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : hbaapi/HBA_SetBindingSupport, HBA_SetBindingSupport, HBA_SetBindingSupport routine [Storage Devices], storage.hba_setbindingsupport, fibreHBA_rtns_5adce4be-2d9d-4e53-ab21-3a15810153d7.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : hbaapi.h
-req.include-header : Hbaapi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Hbaapi.lib
-req.dll : Hbaapi.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HBA_WWNTYPE
+UID: NF:hbaapi.HBA_SetBindingSupport
+title: HBA_SetBindingSupport function
+author: windows-driver-content
+description: The HBA_SetBindingSupport routine enables the indicated set of capabilities on the adapter.
+old-location: storage\hba_setbindingsupport.htm
+old-project: storage
+ms.assetid: 2d4ac375-ede9-406e-bac0-9caa2273c91a
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: hbaapi/HBA_SetBindingSupport, HBA_SetBindingSupport, HBA_SetBindingSupport routine [Storage Devices], storage.hba_setbindingsupport, fibreHBA_rtns_5adce4be-2d9d-4e53-ab21-3a15810153d7.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: hbaapi.h
+req.include-header: Hbaapi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Hbaapi.lib
+req.dll: Hbaapi.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Hbaapi.dll
+apiname:
+-	HBA_SetBindingSupport
+product: Windows
+targetos: Windows
+req.typenames: HBA_WWNTYPE
 ---
 
 

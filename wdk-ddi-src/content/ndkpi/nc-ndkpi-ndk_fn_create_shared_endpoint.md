@@ -1,41 +1,46 @@
 ---
-UID : NC:ndkpi.NDK_FN_CREATE_SHARED_ENDPOINT
-title : NDK_FN_CREATE_SHARED_ENDPOINT
-author : windows-driver-content
-description : The NdkCreateSharedEndpoint (NDK_FN_CREATE_SHARED_ENDPOINT) function creates an NDK shared endpoint.
-old-location : netvista\ndk_fn_create_shared_endpoint.htm
-old-project : netvista
-ms.assetid : FE65B384-387E-4E04-8CF4-9C218F83A0C8
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.ndk_fn_create_shared_endpoint, NdkCreateSharedEndpoint callback function [Network Drivers Starting with Windows Vista], NdkCreateSharedEndpoint, NDK_FN_CREATE_SHARED_ENDPOINT, NDK_FN_CREATE_SHARED_ENDPOINT, ndkpi/NdkCreateSharedEndpoint
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ndkpi.h
-req.include-header : Ndkpi.h
-req.target-type : Windows
-req.target-min-winverclnt : None supported,Supported in NDIS 6.30 and later.
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_WWAN_VISIBLE_PROVIDERS, *PNDIS_WWAN_VISIBLE_PROVIDERS
+UID: NC:ndkpi.NDK_FN_CREATE_SHARED_ENDPOINT
+title: NDK_FN_CREATE_SHARED_ENDPOINT
+author: windows-driver-content
+description: The NdkCreateSharedEndpoint (NDK_FN_CREATE_SHARED_ENDPOINT) function creates an NDK shared endpoint.
+old-location: netvista\ndk_fn_create_shared_endpoint.htm
+old-project: netvista
+ms.assetid: FE65B384-387E-4E04-8CF4-9C218F83A0C8
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.ndk_fn_create_shared_endpoint, NdkCreateSharedEndpoint callback function [Network Drivers Starting with Windows Vista], NdkCreateSharedEndpoint, NDK_FN_CREATE_SHARED_ENDPOINT, NDK_FN_CREATE_SHARED_ENDPOINT, ndkpi/NdkCreateSharedEndpoint
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ndkpi.h
+req.include-header: Ndkpi.h
+req.target-type: Windows
+req.target-min-winverclnt: None supported,Supported in NDIS 6.30 and later.
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	ndkpi.h
+apiname:
+-	NdkCreateSharedEndpoint
+product: Windows
+targetos: Windows
+req.typenames: NDIS_WWAN_VISIBLE_PROVIDERS, *PNDIS_WWAN_VISIBLE_PROVIDERS
 ---
 
 

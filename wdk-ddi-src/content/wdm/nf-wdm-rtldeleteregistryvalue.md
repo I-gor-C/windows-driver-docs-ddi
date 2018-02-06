@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.RtlDeleteRegistryValue
-title : RtlDeleteRegistryValue function
-author : windows-driver-content
-description : The RtlDeleteRegistryValue routine removes the specified entry name and the associated values from the registry along the given relative path.
-old-location : kernel\rtldeleteregistryvalue.htm
-old-project : kernel
-ms.assetid : 4bbedc96-a7e2-40bd-98f3-c1136f70564d
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : RtlDeleteRegistryValue routine [Kernel-Mode Driver Architecture], kernel.rtldeleteregistryvalue, RtlDeleteRegistryValue, k109_ad2e98c7-7787-49b2-b2af-1782d7f64e0d.xml, wdm/RtlDeleteRegistryValue
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : IrqlRtlPassive, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.RtlDeleteRegistryValue
+title: RtlDeleteRegistryValue function
+author: windows-driver-content
+description: The RtlDeleteRegistryValue routine removes the specified entry name and the associated values from the registry along the given relative path.
+old-location: kernel\rtldeleteregistryvalue.htm
+old-project: kernel
+ms.assetid: 4bbedc96-a7e2-40bd-98f3-c1136f70564d
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: RtlDeleteRegistryValue routine [Kernel-Mode Driver Architecture], kernel.rtldeleteregistryvalue, RtlDeleteRegistryValue, k109_ad2e98c7-7787-49b2-b2af-1782d7f64e0d.xml, wdm/RtlDeleteRegistryValue
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: IrqlRtlPassive, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	RtlDeleteRegistryValue
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

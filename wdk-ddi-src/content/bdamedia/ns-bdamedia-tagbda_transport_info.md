@@ -1,41 +1,46 @@
 ---
-UID : NS:bdamedia.tagBDA_TRANSPORT_INFO
-title : tagBDA_TRANSPORT_INFO
-author : windows-driver-content
-description : The BDA_TRANSPORT_INFO structure describes formatting for a stream connection.
-old-location : stream\bda_transport_info.htm
-old-project : stream
-ms.assetid : 995a1d2f-8e2b-426e-a08c-283124ce905e
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : BDA_TRANSPORT_INFO, bdamedia/PBDA_TRANSPORT_INFO, PBDA_TRANSPORT_INFO, tagBDA_TRANSPORT_INFO, bdamedia/BDA_TRANSPORT_INFO, bdaref_3ee17c26-da8b-4d04-87fc-6c9912de349d.xml, stream.bda_transport_info, BDA_TRANSPORT_INFO structure [Streaming Media Devices], *PBDA_TRANSPORT_INFO, PBDA_TRANSPORT_INFO structure pointer [Streaming Media Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : bdamedia.h
-req.include-header : Bdamedia.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PBDA_TRANSPORT_INFO, BDA_TRANSPORT_INFO"
+UID: NS:bdamedia.tagBDA_TRANSPORT_INFO
+title: tagBDA_TRANSPORT_INFO
+author: windows-driver-content
+description: The BDA_TRANSPORT_INFO structure describes formatting for a stream connection.
+old-location: stream\bda_transport_info.htm
+old-project: stream
+ms.assetid: 995a1d2f-8e2b-426e-a08c-283124ce905e
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: BDA_TRANSPORT_INFO, bdamedia/PBDA_TRANSPORT_INFO, PBDA_TRANSPORT_INFO, tagBDA_TRANSPORT_INFO, bdamedia/BDA_TRANSPORT_INFO, bdaref_3ee17c26-da8b-4d04-87fc-6c9912de349d.xml, stream.bda_transport_info, BDA_TRANSPORT_INFO structure [Streaming Media Devices], *PBDA_TRANSPORT_INFO, PBDA_TRANSPORT_INFO structure pointer [Streaming Media Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: bdamedia.h
+req.include-header: Bdamedia.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	bdamedia.h
+apiname:
+-	BDA_TRANSPORT_INFO
+product: Windows
+targetos: Windows
+req.typenames: "*PBDA_TRANSPORT_INFO, BDA_TRANSPORT_INFO"
 ---
 
 # tagBDA_TRANSPORT_INFO structure

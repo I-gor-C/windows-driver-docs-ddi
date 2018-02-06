@@ -1,42 +1,47 @@
 ---
-UID : NS:storport._STOR_DPC
-title : "_STOR_DPC"
-author : windows-driver-content
-description : The STOR_DPC structure is an opaque structure that represents a DPC object. Do not set the members of this structure directly.
-old-location : storage\stor_dpc.htm
-old-project : storage
-ms.assetid : bb73217c-b159-4fd8-8cb3-334326a651ba
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.stor_dpc, *PSTOR_DPC, storport/STOR_DPC, _STOR_DPC, structs-general_e1bef2e1-9703-433c-b8a1-daf30db1aaf6.xml, STOR_DPC structure [Storage Devices], STOR_DPC
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSTOR_DPC, STOR_DPC"
-req.product : Windows 10 or later.
+UID: NS:storport._STOR_DPC
+title: "_STOR_DPC"
+author: windows-driver-content
+description: The STOR_DPC structure is an opaque structure that represents a DPC object. Do not set the members of this structure directly.
+old-location: storage\stor_dpc.htm
+old-project: storage
+ms.assetid: bb73217c-b159-4fd8-8cb3-334326a651ba
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.stor_dpc, *PSTOR_DPC, storport/STOR_DPC, _STOR_DPC, structs-general_e1bef2e1-9703-433c-b8a1-daf30db1aaf6.xml, STOR_DPC structure [Storage Devices], STOR_DPC
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Storport.h
+apiname:
+-	STOR_DPC
+product: Windows
+targetos: Windows
+req.typenames: "*PSTOR_DPC, STOR_DPC"
+req.product: Windows 10 or later.
 ---
 
 # _STOR_DPC structure

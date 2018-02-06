@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.IoReportTargetDeviceChange
-title : IoReportTargetDeviceChange function
-author : windows-driver-content
-description : The IoReportTargetDeviceChange routine notifies the PnP manager that a custom event has occurred on a device.
-old-location : kernel\ioreporttargetdevicechange.htm
-old-project : kernel
-ms.assetid : b0107cb1-4828-4ede-813e-934b929c9874
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.ioreporttargetdevicechange, IoReportTargetDeviceChange routine [Kernel-Mode Driver Architecture], k104_489fe1b0-1d73-4ed6-99ab-ae8f4bee52d1.xml, wdm/IoReportTargetDeviceChange, IoReportTargetDeviceChange
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.IoReportTargetDeviceChange
+title: IoReportTargetDeviceChange function
+author: windows-driver-content
+description: The IoReportTargetDeviceChange routine notifies the PnP manager that a custom event has occurred on a device.
+old-location: kernel\ioreporttargetdevicechange.htm
+old-project: kernel
+ms.assetid: b0107cb1-4828-4ede-813e-934b929c9874
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.ioreporttargetdevicechange, IoReportTargetDeviceChange routine [Kernel-Mode Driver Architecture], k104_489fe1b0-1d73-4ed6-99ab-ae8f4bee52d1.xml, wdm/IoReportTargetDeviceChange, IoReportTargetDeviceChange
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoReportTargetDeviceChange
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

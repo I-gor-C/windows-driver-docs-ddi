@@ -1,42 +1,47 @@
 ---
-UID : NF:wdfwmi.WDF_WMI_INSTANCE_CONFIG_INIT_PROVIDER
-title : WDF_WMI_INSTANCE_CONFIG_INIT_PROVIDER function
-author : windows-driver-content
-description : The WDF_WMI_INSTANCE_CONFIG_INIT_PROVIDER function initializes a WDF_WMI_INSTANCE_CONFIG structure and stores a specified handle to a WMI provider object.
-old-location : wdf\wdf_wmi_instance_config_init_provider.htm
-old-project : wdf
-ms.assetid : 6509fded-c244-4d86-9b20-23790ec58f4a
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WDF_WMI_INSTANCE_CONFIG_INIT_PROVIDER, kmdf.wdf_wmi_instance_config_init_provider, wdfwmi/WDF_WMI_INSTANCE_CONFIG_INIT_PROVIDER, WDF_WMI_INSTANCE_CONFIG_INIT_PROVIDER function, DFWMIRef_beb80d61-7fcb-4234-97ef-41e917cd51f5.xml, wdf.wdf_wmi_instance_config_init_provider
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfwmi.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_WMI_PROVIDER_FLAGS
-req.product : Windows 10 or later.
+UID: NF:wdfwmi.WDF_WMI_INSTANCE_CONFIG_INIT_PROVIDER
+title: WDF_WMI_INSTANCE_CONFIG_INIT_PROVIDER function
+author: windows-driver-content
+description: The WDF_WMI_INSTANCE_CONFIG_INIT_PROVIDER function initializes a WDF_WMI_INSTANCE_CONFIG structure and stores a specified handle to a WMI provider object.
+old-location: wdf\wdf_wmi_instance_config_init_provider.htm
+old-project: wdf
+ms.assetid: 6509fded-c244-4d86-9b20-23790ec58f4a
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WDF_WMI_INSTANCE_CONFIG_INIT_PROVIDER, kmdf.wdf_wmi_instance_config_init_provider, wdfwmi/WDF_WMI_INSTANCE_CONFIG_INIT_PROVIDER, WDF_WMI_INSTANCE_CONFIG_INIT_PROVIDER function, DFWMIRef_beb80d61-7fcb-4234-97ef-41e917cd51f5.xml, wdf.wdf_wmi_instance_config_init_provider
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfwmi.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfwmi.h
+apiname:
+-	WDF_WMI_INSTANCE_CONFIG_INIT_PROVIDER
+product: Windows
+targetos: Windows
+req.typenames: WDF_WMI_PROVIDER_FLAGS
+req.product: Windows 10 or later.
 ---
 
 

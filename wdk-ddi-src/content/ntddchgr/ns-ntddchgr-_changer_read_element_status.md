@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddchgr._CHANGER_READ_ELEMENT_STATUS
-title : "_CHANGER_READ_ELEMENT_STATUS"
-author : windows-driver-content
-description : The CHANGER_READ_ELEMENT_STATUS structure is used in conjunction with the IOCTL_CHANGER_GET_ELEMENT_STATUS request to retrieve the status of all elements or the status of a specified number of elements of a particular type.
-old-location : storage\changer_read_element_status.htm
-old-project : storage
-ms.assetid : 3e80790c-72b9-4e26-a767-a25e6425118e
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : ntddchgr/CHANGER_READ_ELEMENT_STATUS, *PCHANGER_READ_ELEMENT_STATUS, CHANGER_READ_ELEMENT_STATUS structure [Storage Devices], _CHANGER_READ_ELEMENT_STATUS, ntddchgr/PCHANGER_READ_ELEMENT_STATUS, structs-changer_bbb217cb-b38d-4d81-941f-ac1d78d0c584.xml, CHANGER_READ_ELEMENT_STATUS, PCHANGER_READ_ELEMENT_STATUS, PCHANGER_READ_ELEMENT_STATUS structure pointer [Storage Devices], storage.changer_read_element_status
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddchgr.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PCHANGER_READ_ELEMENT_STATUS, CHANGER_READ_ELEMENT_STATUS"
+UID: NS:ntddchgr._CHANGER_READ_ELEMENT_STATUS
+title: "_CHANGER_READ_ELEMENT_STATUS"
+author: windows-driver-content
+description: The CHANGER_READ_ELEMENT_STATUS structure is used in conjunction with the IOCTL_CHANGER_GET_ELEMENT_STATUS request to retrieve the status of all elements or the status of a specified number of elements of a particular type.
+old-location: storage\changer_read_element_status.htm
+old-project: storage
+ms.assetid: 3e80790c-72b9-4e26-a767-a25e6425118e
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: ntddchgr/CHANGER_READ_ELEMENT_STATUS, *PCHANGER_READ_ELEMENT_STATUS, CHANGER_READ_ELEMENT_STATUS structure [Storage Devices], _CHANGER_READ_ELEMENT_STATUS, ntddchgr/PCHANGER_READ_ELEMENT_STATUS, structs-changer_bbb217cb-b38d-4d81-941f-ac1d78d0c584.xml, CHANGER_READ_ELEMENT_STATUS, PCHANGER_READ_ELEMENT_STATUS, PCHANGER_READ_ELEMENT_STATUS structure pointer [Storage Devices], storage.changer_read_element_status
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddchgr.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddchgr.h
+apiname:
+-	CHANGER_READ_ELEMENT_STATUS
+product: Windows
+targetos: Windows
+req.typenames: "*PCHANGER_READ_ELEMENT_STATUS, CHANGER_READ_ELEMENT_STATUS"
 ---
 
 # _CHANGER_READ_ELEMENT_STATUS structure

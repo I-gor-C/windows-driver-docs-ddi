@@ -1,41 +1,46 @@
 ---
-UID : NC:ndis.MINIPORT_RESTART
-title : MINIPORT_RESTART
-author : windows-driver-content
-description : The MiniportRestart function initiates a restart request for a miniport adapter that is paused.
-old-location : netvista\miniportrestart.htm
-old-project : netvista
-ms.assetid : 31a18040-2c66-4074-9ace-dd604b4bfe22
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.miniportrestart, MiniportRestart callback function [Network Drivers Starting with Windows Vista], MiniportRestart, MINIPORT_RESTART, MINIPORT_RESTART, ndis/MiniportRestart, miniport_functions_ref_3ab5d6bf-6192-4c9b-af88-a5dd0efe4d37.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
+UID: NC:ndis.MINIPORT_RESTART
+title: MINIPORT_RESTART
+author: windows-driver-content
+description: The MiniportRestart function initiates a restart request for a miniport adapter that is paused.
+old-location: netvista\miniportrestart.htm
+old-project: netvista
+ms.assetid: 31a18040-2c66-4074-9ace-dd604b4bfe22
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.miniportrestart, MiniportRestart callback function [Network Drivers Starting with Windows Vista], MiniportRestart, MINIPORT_RESTART, MINIPORT_RESTART, ndis/MiniportRestart, miniport_functions_ref_3ab5d6bf-6192-4c9b-af88-a5dd0efe4d37.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ndis.h
+apiname:
+-	MiniportRestart
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 

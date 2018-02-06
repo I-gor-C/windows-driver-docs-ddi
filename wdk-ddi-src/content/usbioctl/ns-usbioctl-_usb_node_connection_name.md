@@ -1,42 +1,47 @@
 ---
-UID : NS:usbioctl._USB_NODE_CONNECTION_NAME
-title : "_USB_NODE_CONNECTION_NAME"
-author : windows-driver-content
-description : The USB_NODE_CONNECTION_NAME structure is used with the IOCTL_USB_GET_NODE_CONNECTION_NAME I/O control request to retrieve the symbolic link of the downstream hub that is attached to the port.
-old-location : buses\usb_node_connection_name.htm
-old-project : usbref
-ms.assetid : f38248fb-b2aa-417a-9d9b-36ff069bf78f
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : USB_NODE_CONNECTION_NAME structure [Buses], usbioctl/USB_NODE_CONNECTION_NAME, PUSB_NODE_CONNECTION_NAME structure pointer [Buses], PUSB_NODE_CONNECTION_NAME, usbioctl/PUSB_NODE_CONNECTION_NAME, USB_NODE_CONNECTION_NAME, usbstrct_51cb29d4-aac8-4138-bddd-908f9859bad3.xml, *PUSB_NODE_CONNECTION_NAME, buses.usb_node_connection_name, _USB_NODE_CONNECTION_NAME
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : usbioctl.h
-req.include-header : Usbioctl.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUSB_NODE_CONNECTION_NAME, USB_NODE_CONNECTION_NAME"
-req.product : Windows 10 or later.
+UID: NS:usbioctl._USB_NODE_CONNECTION_NAME
+title: "_USB_NODE_CONNECTION_NAME"
+author: windows-driver-content
+description: The USB_NODE_CONNECTION_NAME structure is used with the IOCTL_USB_GET_NODE_CONNECTION_NAME I/O control request to retrieve the symbolic link of the downstream hub that is attached to the port.
+old-location: buses\usb_node_connection_name.htm
+old-project: usbref
+ms.assetid: f38248fb-b2aa-417a-9d9b-36ff069bf78f
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: USB_NODE_CONNECTION_NAME structure [Buses], usbioctl/USB_NODE_CONNECTION_NAME, PUSB_NODE_CONNECTION_NAME structure pointer [Buses], PUSB_NODE_CONNECTION_NAME, usbioctl/PUSB_NODE_CONNECTION_NAME, USB_NODE_CONNECTION_NAME, usbstrct_51cb29d4-aac8-4138-bddd-908f9859bad3.xml, *PUSB_NODE_CONNECTION_NAME, buses.usb_node_connection_name, _USB_NODE_CONNECTION_NAME
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: usbioctl.h
+req.include-header: Usbioctl.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	usbioctl.h
+apiname:
+-	USB_NODE_CONNECTION_NAME
+product: Windows
+targetos: Windows
+req.typenames: "*PUSB_NODE_CONNECTION_NAME, USB_NODE_CONNECTION_NAME"
+req.product: Windows 10 or later.
 ---
 
 # _USB_NODE_CONNECTION_NAME structure

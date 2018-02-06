@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.IoIsErrorUserInduced
-title : IoIsErrorUserInduced macro
-author : windows-driver-content
-description : The IoIsErrorUserInduced routine determines whether an I/O error encountered while processing a request to a removable-media device was caused by the user.
-old-location : kernel\ioiserroruserinduced.htm
-old-project : kernel
-ms.assetid : 6f5e54e8-c127-44d9-b1a6-e6f7ac3b3b51
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : IoIsErrorUserInduced routine [Kernel-Mode Driver Architecture], kernel.ioiserroruserinduced, wdm/IoIsErrorUserInduced, IoIsErrorUserInduced, k104_860a6f10-e6c0-44cd-9386-c09e356f3472.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : macro
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wdm.h
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.IoIsErrorUserInduced
+title: IoIsErrorUserInduced macro
+author: windows-driver-content
+description: The IoIsErrorUserInduced routine determines whether an I/O error encountered while processing a request to a removable-media device was caused by the user.
+old-location: kernel\ioiserroruserinduced.htm
+old-project: kernel
+ms.assetid: 6f5e54e8-c127-44d9-b1a6-e6f7ac3b3b51
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: IoIsErrorUserInduced routine [Kernel-Mode Driver Architecture], kernel.ioiserroruserinduced, wdm/IoIsErrorUserInduced, IoIsErrorUserInduced, k104_860a6f10-e6c0-44cd-9386-c09e356f3472.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: macro
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wdm.h
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	IoIsErrorUserInduced
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

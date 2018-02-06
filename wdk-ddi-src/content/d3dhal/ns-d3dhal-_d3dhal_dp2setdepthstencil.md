@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dhal._D3DHAL_DP2SETDEPTHSTENCIL
-title : "_D3DHAL_DP2SETDEPTHSTENCIL"
-author : windows-driver-content
-description : DirectX 9.0 and later versions only. The D3DHAL_DP2SETDEPTHSTENCIL structure is used to map a new depth buffer in the driver's current context when the D3DDP2OP_SETDEPTHSTENCIL operation code is received by D3dDrawPrimitives2.
-old-location : display\d3dhal_dp2setdepthstencil.htm
-old-project : display
-ms.assetid : fb57b1c0-6cb2-42e4-bf67-239ac6c0548c
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : LPD3DHAL_DP2SETDEPTHSTENCIL structure pointer [Display Devices], d3dhal/D3DHAL_DP2SETDEPTHSTENCIL, D3DHAL_DP2SETDEPTHSTENCIL, _D3DHAL_DP2SETDEPTHSTENCIL, D3DHAL_DP2SETDEPTHSTENCIL structure [Display Devices], *LPD3DHAL_DP2SETDEPTHSTENCIL, display.d3dhal_dp2setdepthstencil, d3dstrct_6eda96cd-64bc-4ba1-acc3-0166ccfbd401.xml, d3dhal/LPD3DHAL_DP2SETDEPTHSTENCIL, LPD3DHAL_DP2SETDEPTHSTENCIL
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dhal.h
-req.include-header : D3dhal.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DHAL_DP2SETDEPTHSTENCIL
+UID: NS:d3dhal._D3DHAL_DP2SETDEPTHSTENCIL
+title: "_D3DHAL_DP2SETDEPTHSTENCIL"
+author: windows-driver-content
+description: DirectX 9.0 and later versions only. The D3DHAL_DP2SETDEPTHSTENCIL structure is used to map a new depth buffer in the driver's current context when the D3DDP2OP_SETDEPTHSTENCIL operation code is received by D3dDrawPrimitives2.
+old-location: display\d3dhal_dp2setdepthstencil.htm
+old-project: display
+ms.assetid: fb57b1c0-6cb2-42e4-bf67-239ac6c0548c
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: LPD3DHAL_DP2SETDEPTHSTENCIL structure pointer [Display Devices], d3dhal/D3DHAL_DP2SETDEPTHSTENCIL, D3DHAL_DP2SETDEPTHSTENCIL, _D3DHAL_DP2SETDEPTHSTENCIL, D3DHAL_DP2SETDEPTHSTENCIL structure [Display Devices], *LPD3DHAL_DP2SETDEPTHSTENCIL, display.d3dhal_dp2setdepthstencil, d3dstrct_6eda96cd-64bc-4ba1-acc3-0166ccfbd401.xml, d3dhal/LPD3DHAL_DP2SETDEPTHSTENCIL, LPD3DHAL_DP2SETDEPTHSTENCIL
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dhal.h
+req.include-header: D3dhal.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dhal.h
+apiname:
+-	D3DHAL_DP2SETDEPTHSTENCIL
+product: Windows
+targetos: Windows
+req.typenames: D3DHAL_DP2SETDEPTHSTENCIL
 ---
 
 # _D3DHAL_DP2SETDEPTHSTENCIL structure

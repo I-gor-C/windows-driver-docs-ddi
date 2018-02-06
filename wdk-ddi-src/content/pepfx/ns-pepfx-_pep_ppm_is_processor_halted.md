@@ -1,41 +1,46 @@
 ---
-UID : NS:pepfx._PEP_PPM_IS_PROCESSOR_HALTED
-title : "_PEP_PPM_IS_PROCESSOR_HALTED"
-author : windows-driver-content
-description : The PEP_PPM_IS_PROCESSOR_HALTED structure indicates whether the processor is currently halted in its selected idle state.
-old-location : kernel\pep_ppm_is_processor_halted.htm
-old-project : kernel
-ms.assetid : 284BAFE1-C632-428D-800C-60C538052C02
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : PEP_PPM_IS_PROCESSOR_HALTED, _PEP_PPM_IS_PROCESSOR_HALTED, pepfx/PEP_PPM_IS_PROCESSOR_HALTED, PPEP_PPM_IS_PROCESSOR_HALTED structure pointer [Kernel-Mode Driver Architecture], *PPEP_PPM_IS_PROCESSOR_HALTED, kernel.pep_ppm_is_processor_halted, PPEP_PPM_IS_PROCESSOR_HALTED, pepfx/PPEP_PPM_IS_PROCESSOR_HALTED, PEP_PPM_IS_PROCESSOR_HALTED structure [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : pepfx.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with Windows 10.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPEP_PPM_IS_PROCESSOR_HALTED, PEP_PPM_IS_PROCESSOR_HALTED"
+UID: NS:pepfx._PEP_PPM_IS_PROCESSOR_HALTED
+title: "_PEP_PPM_IS_PROCESSOR_HALTED"
+author: windows-driver-content
+description: The PEP_PPM_IS_PROCESSOR_HALTED structure indicates whether the processor is currently halted in its selected idle state.
+old-location: kernel\pep_ppm_is_processor_halted.htm
+old-project: kernel
+ms.assetid: 284BAFE1-C632-428D-800C-60C538052C02
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: PEP_PPM_IS_PROCESSOR_HALTED, _PEP_PPM_IS_PROCESSOR_HALTED, pepfx/PEP_PPM_IS_PROCESSOR_HALTED, PPEP_PPM_IS_PROCESSOR_HALTED structure pointer [Kernel-Mode Driver Architecture], *PPEP_PPM_IS_PROCESSOR_HALTED, kernel.pep_ppm_is_processor_halted, PPEP_PPM_IS_PROCESSOR_HALTED, pepfx/PPEP_PPM_IS_PROCESSOR_HALTED, PEP_PPM_IS_PROCESSOR_HALTED structure [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: pepfx.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows 10.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	pepfx.h
+apiname:
+-	PEP_PPM_IS_PROCESSOR_HALTED
+product: Windows
+targetos: Windows
+req.typenames: "*PPEP_PPM_IS_PROCESSOR_HALTED, PEP_PPM_IS_PROCESSOR_HALTED"
 ---
 
 # _PEP_PPM_IS_PROCESSOR_HALTED structure

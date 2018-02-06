@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddpcm.IOCTL_SOCKET_INFORMATION
-title : IOCTL_SOCKET_INFORMATION
-author : windows-driver-content
-description : This request retrieves socket information for the socket that is indicated by the caller.
-old-location : pcmcia\ioctl_socket_information.htm
-old-project : PCMCIA
-ms.assetid : 95563d68-e812-4c62-9668-8cb25b4735aa
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : PCMCIA.ioctl_socket_information, IOCTL_SOCKET_INFORMATION control code [Buses], IOCTL_SOCKET_INFORMATION, ntddpcm/IOCTL_SOCKET_INFORMATION, memcdref_8730c03b-fc86-4d43-8aa9-6d15abcfa2d0.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddpcm.h
-req.include-header : Ntddpcm.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PCMCIA_CONTROLLER_CLASS, *PPCMCIA_CONTROLLER_CLASS
+UID: NI:ntddpcm.IOCTL_SOCKET_INFORMATION
+title: IOCTL_SOCKET_INFORMATION
+author: windows-driver-content
+description: This request retrieves socket information for the socket that is indicated by the caller.
+old-location: pcmcia\ioctl_socket_information.htm
+old-project: PCMCIA
+ms.assetid: 95563d68-e812-4c62-9668-8cb25b4735aa
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: PCMCIA.ioctl_socket_information, IOCTL_SOCKET_INFORMATION control code [Buses], IOCTL_SOCKET_INFORMATION, ntddpcm/IOCTL_SOCKET_INFORMATION, memcdref_8730c03b-fc86-4d43-8aa9-6d15abcfa2d0.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddpcm.h
+req.include-header: Ntddpcm.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddpcm.h
+apiname:
+-	IOCTL_SOCKET_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: PCMCIA_CONTROLLER_CLASS, *PPCMCIA_CONTROLLER_CLASS
 ---
 
 # IOCTL_SOCKET_INFORMATION IOCTL

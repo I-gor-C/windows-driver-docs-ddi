@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_OFFERALLOCATIONS2CB
-title : PFND3DDDI_OFFERALLOCATIONS2CB
-author : windows-driver-content
-description : Called by the user-mode display driver to offer video memory allocations for reuse.
-old-location : display\pfnofferallocations2cb.htm
-old-project : display
-ms.assetid : 4A8123D3-3A7D-4716-BD02-DD6533DB22F6
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.pfnofferallocations2cb, pfnOfferAllocations2Cb callback function [Display Devices], pfnOfferAllocations2Cb, PFND3DDDI_OFFERALLOCATIONS2CB, PFND3DDDI_OFFERALLOCATIONS2CB, d3dumddi/pfnOfferAllocations2Cb
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_OFFERALLOCATIONS2CB
+title: PFND3DDDI_OFFERALLOCATIONS2CB
+author: windows-driver-content
+description: Called by the user-mode display driver to offer video memory allocations for reuse.
+old-location: display\pfnofferallocations2cb.htm
+old-project: display
+ms.assetid: 4A8123D3-3A7D-4716-BD02-DD6533DB22F6
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.pfnofferallocations2cb, pfnOfferAllocations2Cb callback function [Display Devices], pfnOfferAllocations2Cb, PFND3DDDI_OFFERALLOCATIONS2CB, PFND3DDDI_OFFERALLOCATIONS2CB, d3dumddi/pfnOfferAllocations2Cb
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	pfnOfferAllocations2Cb
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

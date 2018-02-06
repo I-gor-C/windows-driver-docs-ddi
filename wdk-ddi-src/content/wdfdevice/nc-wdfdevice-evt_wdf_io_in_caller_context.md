@@ -1,42 +1,47 @@
 ---
-UID : NC:wdfdevice.EVT_WDF_IO_IN_CALLER_CONTEXT
-title : EVT_WDF_IO_IN_CALLER_CONTEXT
-author : windows-driver-content
-description : A driver's EvtIoInCallerContext event callback function preprocesses an I/O request before the framework places it into an I/O queue.
-old-location : wdf\evtioincallercontext.htm
-old-project : wdf
-ms.assetid : b8bcea29-e404-490e-9d0c-02c96a5690ab
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.evtioincallercontext, EvtIoInCallerContext callback function, EvtIoInCallerContext, EVT_WDF_IO_IN_CALLER_CONTEXT, EVT_WDF_IO_IN_CALLER_CONTEXT, wdfdevice/EvtIoInCallerContext, DFDeviceObjectGeneralRef_027a6221-e735-4a5c-a378-d9d9236f21ae.xml, kmdf.evtioincallercontext
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdfdevice.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_DEVICE_SHUTDOWN_FLAGS
-req.product : Windows 10 or later.
+UID: NC:wdfdevice.EVT_WDF_IO_IN_CALLER_CONTEXT
+title: EVT_WDF_IO_IN_CALLER_CONTEXT
+author: windows-driver-content
+description: A driver's EvtIoInCallerContext event callback function preprocesses an I/O request before the framework places it into an I/O queue.
+old-location: wdf\evtioincallercontext.htm
+old-project: wdf
+ms.assetid: b8bcea29-e404-490e-9d0c-02c96a5690ab
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.evtioincallercontext, EvtIoInCallerContext callback function, EvtIoInCallerContext, EVT_WDF_IO_IN_CALLER_CONTEXT, EVT_WDF_IO_IN_CALLER_CONTEXT, wdfdevice/EvtIoInCallerContext, DFDeviceObjectGeneralRef_027a6221-e735-4a5c-a378-d9d9236f21ae.xml, kmdf.evtioincallercontext
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdfdevice.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Wdfdevice.h
+apiname:
+-	EvtIoInCallerContext
+product: Windows
+targetos: Windows
+req.typenames: WDF_DEVICE_SHUTDOWN_FLAGS
+req.product: Windows 10 or later.
 ---
 
 

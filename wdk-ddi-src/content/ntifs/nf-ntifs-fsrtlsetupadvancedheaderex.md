@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.FsRtlSetupAdvancedHeaderEx
-title : FsRtlSetupAdvancedHeaderEx macro
-author : windows-driver-content
-description : The FsRtlSetupAdvancedHeaderEx macro is used by file systems to initialize an FSRTL_ADVANCED_FCB_HEADER structure for use with both stream and file contexts.
-old-location : ifsk\fsrtlsetupadvancedheaderex.htm
-old-project : ifsk
-ms.assetid : 41e5d9f2-ac0b-4834-bca8-88ed872f2f70
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ntifs/FsRtlSetupAdvancedHeaderEx, fsrtlref_9214990b-2568-43d9-801a-c43514a6448f.xml, FsRtlSetupAdvancedHeaderEx, ifsk.fsrtlsetupadvancedheaderex, FsRtlSetupAdvancedHeaderEx function [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : macro
-req.header : ntifs.h
-req.include-header : Ntifs.h, Fltkernel.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available on Update Rollup for Microsoft Windows 2000 Service Pack 4 (SP4) and on Windows XP and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : ntifs.h
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.FsRtlSetupAdvancedHeaderEx
+title: FsRtlSetupAdvancedHeaderEx macro
+author: windows-driver-content
+description: The FsRtlSetupAdvancedHeaderEx macro is used by file systems to initialize an FSRTL_ADVANCED_FCB_HEADER structure for use with both stream and file contexts.
+old-location: ifsk\fsrtlsetupadvancedheaderex.htm
+old-project: ifsk
+ms.assetid: 41e5d9f2-ac0b-4834-bca8-88ed872f2f70
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ntifs/FsRtlSetupAdvancedHeaderEx, fsrtlref_9214990b-2568-43d9-801a-c43514a6448f.xml, FsRtlSetupAdvancedHeaderEx, ifsk.fsrtlsetupadvancedheaderex, FsRtlSetupAdvancedHeaderEx function [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: macro
+req.header: ntifs.h
+req.include-header: Ntifs.h, Fltkernel.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available on Update Rollup for Microsoft Windows 2000 Service Pack 4 (SP4) and on Windows XP and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: ntifs.h
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntifs.h
+apiname:
+-	FsRtlSetupAdvancedHeaderEx
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

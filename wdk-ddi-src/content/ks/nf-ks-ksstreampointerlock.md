@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsStreamPointerLock
-title : KsStreamPointerLock function
-author : windows-driver-content
-description : The KsStreamPointerLock function attempts to lock the specified stream pointer.
-old-location : stream\ksstreampointerlock.htm
-old-project : stream
-ms.assetid : eb960301-2afa-42f7-a2ea-129d85c49db9
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : avfunc_c7a4d7fb-9708-480d-a452-f398637bc82a.xml, ks/KsStreamPointerLock, KsStreamPointerLock, stream.ksstreampointerlock, KsStreamPointerLock function [Streaming Media Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsStreamPointerLock
+title: KsStreamPointerLock function
+author: windows-driver-content
+description: The KsStreamPointerLock function attempts to lock the specified stream pointer.
+old-location: stream\ksstreampointerlock.htm
+old-project: stream
+ms.assetid: eb960301-2afa-42f7-a2ea-129d85c49db9
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: avfunc_c7a4d7fb-9708-480d-a452-f398637bc82a.xml, ks/KsStreamPointerLock, KsStreamPointerLock, stream.ksstreampointerlock, KsStreamPointerLock function [Streaming Media Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsStreamPointerLock
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

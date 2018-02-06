@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFFileHandleTargetFactory.CreateFileHandleTarget
-title : IWDFFileHandleTargetFactory::CreateFileHandleTarget method
-author : windows-driver-content
-description : The CreateFileHandleTarget method creates a file-handle-based I/O target object.
-old-location : wdf\iwdffilehandletargetfactory_createfilehandletarget.htm
-old-project : wdf
-ms.assetid : 579a2cef-1e37-426c-9f69-8766dc9011ba
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : CreateFileHandleTarget method, IWDFFileHandleTargetFactory, CreateFileHandleTarget, wdf.iwdffilehandletargetfactory_createfilehandletarget, IWDFFileHandleTargetFactory::CreateFileHandleTarget, UMDFDeviceObjectRef_4a3fcfeb-e1a1-4375-8bd5-bdd75c36c454.xml, umdf.iwdffilehandletargetfactory_createfilehandletarget, wudfddi/IWDFFileHandleTargetFactory::CreateFileHandleTarget, IWDFFileHandleTargetFactory interface, CreateFileHandleTarget method, CreateFileHandleTarget method, IWDFFileHandleTargetFactory interface
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfusb.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.5
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFFileHandleTargetFactory.CreateFileHandleTarget
+title: IWDFFileHandleTargetFactory::CreateFileHandleTarget method
+author: windows-driver-content
+description: The CreateFileHandleTarget method creates a file-handle-based I/O target object.
+old-location: wdf\iwdffilehandletargetfactory_createfilehandletarget.htm
+old-project: wdf
+ms.assetid: 579a2cef-1e37-426c-9f69-8766dc9011ba
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: CreateFileHandleTarget method, IWDFFileHandleTargetFactory, CreateFileHandleTarget, wdf.iwdffilehandletargetfactory_createfilehandletarget, IWDFFileHandleTargetFactory::CreateFileHandleTarget, UMDFDeviceObjectRef_4a3fcfeb-e1a1-4375-8bd5-bdd75c36c454.xml, umdf.iwdffilehandletargetfactory_createfilehandletarget, wudfddi/IWDFFileHandleTargetFactory::CreateFileHandleTarget, IWDFFileHandleTargetFactory interface, CreateFileHandleTarget method, CreateFileHandleTarget method, IWDFFileHandleTargetFactory interface
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfusb.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.5
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFFileHandleTargetFactory.CreateFileHandleTarget
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

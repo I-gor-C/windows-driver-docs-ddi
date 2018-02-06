@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfusb.WdfUsbTargetPipeWdmGetPipeHandle
-title : WdfUsbTargetPipeWdmGetPipeHandle function
-author : windows-driver-content
-description : The WdfUsbTargetPipeWdmGetPipeHandle method returns the USBD_PIPE_HANDLE-typed handle that is associated with a specified framework pipe object.
-old-location : wdf\wdfusbtargetpipewdmgetpipehandle.htm
-old-project : wdf
-ms.assetid : d24577e3-3124-4ce7-a6ea-bed75ff18a1e
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WdfUsbTargetPipeWdmGetPipeHandle, wdf.wdfusbtargetpipewdmgetpipehandle, DFUsbRef_4dc66ce5-f27f-4d35-bcea-0efb60a1de3c.xml, PFN_WDFUSBTARGETPIPEWDMGETPIPEHANDLE, wdfusb/WdfUsbTargetPipeWdmGetPipeHandle, kmdf.wdfusbtargetpipewdmgetpipehandle, WdfUsbTargetPipeWdmGetPipeHandle method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfusb.h
-req.include-header : Wdfusb.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2, UsbKmdfIrql, UsbKmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfusb.WdfUsbTargetPipeWdmGetPipeHandle
+title: WdfUsbTargetPipeWdmGetPipeHandle function
+author: windows-driver-content
+description: The WdfUsbTargetPipeWdmGetPipeHandle method returns the USBD_PIPE_HANDLE-typed handle that is associated with a specified framework pipe object.
+old-location: wdf\wdfusbtargetpipewdmgetpipehandle.htm
+old-project: wdf
+ms.assetid: d24577e3-3124-4ce7-a6ea-bed75ff18a1e
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WdfUsbTargetPipeWdmGetPipeHandle, wdf.wdfusbtargetpipewdmgetpipehandle, DFUsbRef_4dc66ce5-f27f-4d35-bcea-0efb60a1de3c.xml, PFN_WDFUSBTARGETPIPEWDMGETPIPEHANDLE, wdfusb/WdfUsbTargetPipeWdmGetPipeHandle, kmdf.wdfusbtargetpipewdmgetpipehandle, WdfUsbTargetPipeWdmGetPipeHandle method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfusb.h
+req.include-header: Wdfusb.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2, UsbKmdfIrql, UsbKmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfUsbTargetPipeWdmGetPipeHandle
+product: Windows
+targetos: Windows
+req.typenames: WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
+req.product: Windows 10 or later.
 ---
 
 

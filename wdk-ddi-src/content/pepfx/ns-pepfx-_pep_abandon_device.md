@@ -1,41 +1,46 @@
 ---
-UID : NS:pepfx._PEP_ABANDON_DEVICE
-title : "_PEP_ABANDON_DEVICE"
-author : windows-driver-content
-description : The PEP_ABANDON_DEVICE structure identifies a device that has been abandoned and will no longer be used by the operating system.
-old-location : kernel\pep_abandon_device.htm
-old-project : kernel
-ms.assetid : 15F54054-F20B-43A6-8BCD-3A1C47433B12
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : pepfx/PEP_ABANDON_DEVICE, *PPEP_ABANDON_DEVICE, PPEP_ABANDON_DEVICE structure pointer [Kernel-Mode Driver Architecture], PPEP_ABANDON_DEVICE, _PEP_ABANDON_DEVICE, kernel.pep_abandon_device, PEP_ABANDON_DEVICE structure [Kernel-Mode Driver Architecture], PEP_ABANDON_DEVICE, pepfx/PPEP_ABANDON_DEVICE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : pepfx.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with Windows 10.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPEP_ABANDON_DEVICE, PEP_ABANDON_DEVICE"
+UID: NS:pepfx._PEP_ABANDON_DEVICE
+title: "_PEP_ABANDON_DEVICE"
+author: windows-driver-content
+description: The PEP_ABANDON_DEVICE structure identifies a device that has been abandoned and will no longer be used by the operating system.
+old-location: kernel\pep_abandon_device.htm
+old-project: kernel
+ms.assetid: 15F54054-F20B-43A6-8BCD-3A1C47433B12
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: pepfx/PEP_ABANDON_DEVICE, *PPEP_ABANDON_DEVICE, PPEP_ABANDON_DEVICE structure pointer [Kernel-Mode Driver Architecture], PPEP_ABANDON_DEVICE, _PEP_ABANDON_DEVICE, kernel.pep_abandon_device, PEP_ABANDON_DEVICE structure [Kernel-Mode Driver Architecture], PEP_ABANDON_DEVICE, pepfx/PPEP_ABANDON_DEVICE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: pepfx.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows 10.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	pepfx.h
+apiname:
+-	PEP_ABANDON_DEVICE
+product: Windows
+targetos: Windows
+req.typenames: "*PPEP_ABANDON_DEVICE, PEP_ABANDON_DEVICE"
 ---
 
 # _PEP_ABANDON_DEVICE structure

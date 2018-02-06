@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugControl5.GetStackTraceEx
-title : IDebugControl5::GetStackTraceEx method
-author : windows-driver-content
-description : The GetStackTraceEx method returns the frames at the top of the specified call stack. The GetStackTraceEx method provides inline frame support. For more information about working with inline functions, see Debugging Optimized Code and Inline Functions.
-old-location : debugger\idebugcontrol5_getstacktraceex.htm
-old-project : debugger
-ms.assetid : 6DFCA3CB-D5DE-4EF5-892B-776B932E6CE6
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : debugger.idebugcontrol5_getstacktraceex, GetStackTraceEx method [Windows Debugging], dbgeng/IDebugControl5::GetStackTraceEx, GetStackTraceEx, GetStackTraceEx method [Windows Debugging], IDebugControl5 interface, IDebugControl5, IDebugControl5::GetStackTraceEx, IDebugControl5 interface [Windows Debugging], GetStackTraceEx method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl5.GetStackTraceEx
+title: IDebugControl5::GetStackTraceEx method
+author: windows-driver-content
+description: The GetStackTraceEx method returns the frames at the top of the specified call stack. The GetStackTraceEx method provides inline frame support. For more information about working with inline functions, see Debugging Optimized Code and Inline Functions.
+old-location: debugger\idebugcontrol5_getstacktraceex.htm
+old-project: debugger
+ms.assetid: 6DFCA3CB-D5DE-4EF5-892B-776B932E6CE6
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: debugger.idebugcontrol5_getstacktraceex, GetStackTraceEx method [Windows Debugging], dbgeng/IDebugControl5::GetStackTraceEx, GetStackTraceEx, GetStackTraceEx method [Windows Debugging], IDebugControl5 interface, IDebugControl5, IDebugControl5::GetStackTraceEx, IDebugControl5 interface [Windows Debugging], GetStackTraceEx method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl5.GetStackTraceEx
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

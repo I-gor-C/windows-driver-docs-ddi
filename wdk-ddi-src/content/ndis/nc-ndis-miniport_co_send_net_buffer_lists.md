@@ -1,41 +1,46 @@
 ---
-UID : NC:ndis.MINIPORT_CO_SEND_NET_BUFFER_LISTS
-title : MINIPORT_CO_SEND_NET_BUFFER_LISTS
-author : windows-driver-content
-description : The MiniportCoSendNetBufferLists function transmits network data that is contained in a specified linked list of NET_BUFFER_LIST structures.Note  You must declare the function by using the MINIPORT_CO_SEND_NET_BUFFER_LISTS type.
-old-location : netvista\miniportcosendnetbufferlists.htm
-old-project : netvista
-ms.assetid : 4a717842-6d71-488e-a56a-57c6e6e0c5d7
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.miniportcosendnetbufferlists, MiniportCoSendNetBufferLists callback function [Network Drivers Starting with Windows Vista], MiniportCoSendNetBufferLists, MINIPORT_CO_SEND_NET_BUFFER_LISTS, MINIPORT_CO_SEND_NET_BUFFER_LISTS, ndis/MiniportCoSendNetBufferLists, condis_sendrcv_ref_28cddc06-235d-4274-a783-554dec10ad84.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
+UID: NC:ndis.MINIPORT_CO_SEND_NET_BUFFER_LISTS
+title: MINIPORT_CO_SEND_NET_BUFFER_LISTS
+author: windows-driver-content
+description: The MiniportCoSendNetBufferLists function transmits network data that is contained in a specified linked list of NET_BUFFER_LIST structures.Note  You must declare the function by using the MINIPORT_CO_SEND_NET_BUFFER_LISTS type.
+old-location: netvista\miniportcosendnetbufferlists.htm
+old-project: netvista
+ms.assetid: 4a717842-6d71-488e-a56a-57c6e6e0c5d7
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.miniportcosendnetbufferlists, MiniportCoSendNetBufferLists callback function [Network Drivers Starting with Windows Vista], MiniportCoSendNetBufferLists, MINIPORT_CO_SEND_NET_BUFFER_LISTS, MINIPORT_CO_SEND_NET_BUFFER_LISTS, ndis/MiniportCoSendNetBufferLists, condis_sendrcv_ref_28cddc06-235d-4274-a783-554dec10ad84.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ndis.h
+apiname:
+-	MiniportCoSendNetBufferLists
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 

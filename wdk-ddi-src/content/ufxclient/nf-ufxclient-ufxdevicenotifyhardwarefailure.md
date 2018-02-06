@@ -1,42 +1,47 @@
 ---
-UID : NF:ufxclient.UfxDeviceNotifyHardwareFailure
-title : UfxDeviceNotifyHardwareFailure function
-author : windows-driver-content
-description : Notifies UFX about a non-recoverable hardware failure in the controller.
-old-location : buses\ufxdevicenotifyhardwarefailure.htm
-old-project : usbref
-ms.assetid : 2EEA262C-5186-4450-A01D-212278ED710B
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : buses.ufxdevicenotifyhardwarefailure, UfxDeviceNotifyHardwareFailure, ufxclient/UfxDeviceNotifyHardwareFailure, UfxDeviceNotifyHardwareFailure method [Buses]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ufxclient.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : DISPATCH_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUFX_HARDWARE_FAILURE_CONTEXT, UFX_HARDWARE_FAILURE_CONTEXT"
-req.product : Windows 10 or later.
+UID: NF:ufxclient.UfxDeviceNotifyHardwareFailure
+title: UfxDeviceNotifyHardwareFailure function
+author: windows-driver-content
+description: Notifies UFX about a non-recoverable hardware failure in the controller.
+old-location: buses\ufxdevicenotifyhardwarefailure.htm
+old-project: usbref
+ms.assetid: 2EEA262C-5186-4450-A01D-212278ED710B
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: buses.ufxdevicenotifyhardwarefailure, UfxDeviceNotifyHardwareFailure, ufxclient/UfxDeviceNotifyHardwareFailure, UfxDeviceNotifyHardwareFailure method [Buses]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ufxclient.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: DISPATCH_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	ufxclient.h
+apiname:
+-	UfxDeviceNotifyHardwareFailure
+product: Windows
+targetos: Windows
+req.typenames: "*PUFX_HARDWARE_FAILURE_CONTEXT, UFX_HARDWARE_FAILURE_CONTEXT"
+req.product: Windows 10 or later.
 ---
 
 

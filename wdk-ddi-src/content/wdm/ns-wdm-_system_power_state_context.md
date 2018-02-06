@@ -1,42 +1,47 @@
 ---
-UID : NS:wdm._SYSTEM_POWER_STATE_CONTEXT
-title : "_SYSTEM_POWER_STATE_CONTEXT"
-author : windows-driver-content
-description : The SYSTEM_POWER_STATE_CONTEXT structure is a partially opaque system structure that contains information about the previous system power states of a computer.
-old-location : kernel\system_power_state_context.htm
-old-project : kernel
-ms.assetid : C924C7BD-071C-4A98-9A9B-2BEFA1101DF3
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/SYSTEM_POWER_STATE_CONTEXT, PSYSTEM_POWER_STATE_CONTEXT, *PSYSTEM_POWER_STATE_CONTEXT, wdm/PSYSTEM_POWER_STATE_CONTEXT, SYSTEM_POWER_STATE_CONTEXT structure [Kernel-Mode Driver Architecture], PSYSTEM_POWER_STATE_CONTEXT structure pointer [Kernel-Mode Driver Architecture], SYSTEM_POWER_STATE_CONTEXT, kernel.system_power_state_context, _SYSTEM_POWER_STATE_CONTEXT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSYSTEM_POWER_STATE_CONTEXT, SYSTEM_POWER_STATE_CONTEXT"
-req.product : Windows 10 or later.
+UID: NS:wdm._SYSTEM_POWER_STATE_CONTEXT
+title: "_SYSTEM_POWER_STATE_CONTEXT"
+author: windows-driver-content
+description: The SYSTEM_POWER_STATE_CONTEXT structure is a partially opaque system structure that contains information about the previous system power states of a computer.
+old-location: kernel\system_power_state_context.htm
+old-project: kernel
+ms.assetid: C924C7BD-071C-4A98-9A9B-2BEFA1101DF3
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/SYSTEM_POWER_STATE_CONTEXT, PSYSTEM_POWER_STATE_CONTEXT, *PSYSTEM_POWER_STATE_CONTEXT, wdm/PSYSTEM_POWER_STATE_CONTEXT, SYSTEM_POWER_STATE_CONTEXT structure [Kernel-Mode Driver Architecture], PSYSTEM_POWER_STATE_CONTEXT structure pointer [Kernel-Mode Driver Architecture], SYSTEM_POWER_STATE_CONTEXT, kernel.system_power_state_context, _SYSTEM_POWER_STATE_CONTEXT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	SYSTEM_POWER_STATE_CONTEXT
+product: Windows
+targetos: Windows
+req.typenames: "*PSYSTEM_POWER_STATE_CONTEXT, SYSTEM_POWER_STATE_CONTEXT"
+req.product: Windows 10 or later.
 ---
 
 # _SYSTEM_POWER_STATE_CONTEXT structure

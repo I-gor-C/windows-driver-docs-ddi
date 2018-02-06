@@ -1,42 +1,47 @@
 ---
-UID : NS:wwan._WWAN_PIN_ACTION
-title : "_WWAN_PIN_ACTION"
-author : windows-driver-content
-description : The WWAN_PIN_ACTION structure represents actions to perform with a Personal Identification Number (PIN).
-old-location : netvista\wwan_pin_action.htm
-old-project : netvista
-ms.assetid : 4edd0bc1-cd50-460b-92e1-7b2440ae3861
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : PWWAN_PIN_ACTION, WwanRef_831c483c-8839-43a4-870d-f63ea3f78b61.xml, wwan/PWWAN_PIN_ACTION, WWAN_PIN_ACTION, WWAN_PIN_ACTION structure [Network Drivers Starting with Windows Vista], wwan/WWAN_PIN_ACTION, netvista.wwan_pin_action, *PWWAN_PIN_ACTION, _WWAN_PIN_ACTION, PWWAN_PIN_ACTION structure pointer [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wwan.h
-req.include-header : Wwan.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWWAN_PIN_ACTION, WWAN_PIN_ACTION"
-req.product : Windows 10 or later.
+UID: NS:wwan._WWAN_PIN_ACTION
+title: "_WWAN_PIN_ACTION"
+author: windows-driver-content
+description: The WWAN_PIN_ACTION structure represents actions to perform with a Personal Identification Number (PIN).
+old-location: netvista\wwan_pin_action.htm
+old-project: netvista
+ms.assetid: 4edd0bc1-cd50-460b-92e1-7b2440ae3861
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: PWWAN_PIN_ACTION, WwanRef_831c483c-8839-43a4-870d-f63ea3f78b61.xml, wwan/PWWAN_PIN_ACTION, WWAN_PIN_ACTION, WWAN_PIN_ACTION structure [Network Drivers Starting with Windows Vista], wwan/WWAN_PIN_ACTION, netvista.wwan_pin_action, *PWWAN_PIN_ACTION, _WWAN_PIN_ACTION, PWWAN_PIN_ACTION structure pointer [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wwan.h
+req.include-header: Wwan.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wwan.h
+apiname:
+-	WWAN_PIN_ACTION
+product: Windows
+targetos: Windows
+req.typenames: "*PWWAN_PIN_ACTION, WWAN_PIN_ACTION"
+req.product: Windows 10 or later.
 ---
 
 # _WWAN_PIN_ACTION structure

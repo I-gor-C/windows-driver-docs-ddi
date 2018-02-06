@@ -1,41 +1,46 @@
 ---
-UID : NS:hdaudio._HDAUDIO_BUS_INTERFACE
-title : "_HDAUDIO_BUS_INTERFACE"
-author : windows-driver-content
-description : The HDAUDIO_BUS_INTERFACE structure specifies the information that a client requires to call the routines in the HDAUDIO_BUS_INTERFACE version of the HD Audio DDI. Another variant of this DDI is specified by the HDAUDIO_BUS_INTERFACE_BDL structure.
-old-location : audio\hdaudio_bus_interface.htm
-old-project : audio
-ms.assetid : 6b3bc5ce-05d2-45e0-91d8-6bb34e58777f
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : HDAUDIO_BUS_INTERFACE structure [Audio Devices], PHDAUDIO_BUS_INTERFACE structure pointer [Audio Devices], _HDAUDIO_BUS_INTERFACE, hdaudio/HDAUDIO_BUS_INTERFACE, *PHDAUDIO_BUS_INTERFACE, PHDAUDIO_BUS_INTERFACE, HDAUDIO_BUS_INTERFACE, hdaudio/PHDAUDIO_BUS_INTERFACE, audio.hdaudio_bus_interface, aud-prop2_4d39bbd4-8c0b-4f2c-98a7-618d891593c1.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : hdaudio.h
-req.include-header : Hdaudio.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PHDAUDIO_BUS_INTERFACE, HDAUDIO_BUS_INTERFACE"
+UID: NS:hdaudio._HDAUDIO_BUS_INTERFACE
+title: "_HDAUDIO_BUS_INTERFACE"
+author: windows-driver-content
+description: The HDAUDIO_BUS_INTERFACE structure specifies the information that a client requires to call the routines in the HDAUDIO_BUS_INTERFACE version of the HD Audio DDI. Another variant of this DDI is specified by the HDAUDIO_BUS_INTERFACE_BDL structure.
+old-location: audio\hdaudio_bus_interface.htm
+old-project: audio
+ms.assetid: 6b3bc5ce-05d2-45e0-91d8-6bb34e58777f
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: HDAUDIO_BUS_INTERFACE structure [Audio Devices], PHDAUDIO_BUS_INTERFACE structure pointer [Audio Devices], _HDAUDIO_BUS_INTERFACE, hdaudio/HDAUDIO_BUS_INTERFACE, *PHDAUDIO_BUS_INTERFACE, PHDAUDIO_BUS_INTERFACE, HDAUDIO_BUS_INTERFACE, hdaudio/PHDAUDIO_BUS_INTERFACE, audio.hdaudio_bus_interface, aud-prop2_4d39bbd4-8c0b-4f2c-98a7-618d891593c1.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: hdaudio.h
+req.include-header: Hdaudio.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hdaudio.h
+apiname:
+-	HDAUDIO_BUS_INTERFACE
+product: Windows
+targetos: Windows
+req.typenames: "*PHDAUDIO_BUS_INTERFACE, HDAUDIO_BUS_INTERFACE"
 ---
 
 # _HDAUDIO_BUS_INTERFACE structure

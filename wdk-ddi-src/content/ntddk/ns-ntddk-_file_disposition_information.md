@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddk._FILE_DISPOSITION_INFORMATION
-title : "_FILE_DISPOSITION_INFORMATION"
-author : windows-driver-content
-description : The FILE_DISPOSITION_INFORMATION structure is used as an argument to the ZwSetInformationFile routine.
-old-location : kernel\file_disposition_information.htm
-old-project : kernel
-ms.assetid : a13b5411-a0dd-4a54-98a8-419e2f0e95b8
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : PFILE_DISPOSITION_INFORMATION, kernel.file_disposition_information, ntddk/FILE_DISPOSITION_INFORMATION, PFILE_DISPOSITION_INFORMATION structure pointer [Kernel-Mode Driver Architecture], *PFILE_DISPOSITION_INFORMATION, _FILE_DISPOSITION_INFORMATION, kstruct_b_3796aa61-042a-435d-bfa9-c77c6a0dff98.xml, ntddk/PFILE_DISPOSITION_INFORMATION, FILE_DISPOSITION_INFORMATION structure [Kernel-Mode Driver Architecture], FILE_DISPOSITION_INFORMATION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddk.h
-req.include-header : Ntddk.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PFILE_DISPOSITION_INFORMATION, FILE_DISPOSITION_INFORMATION"
+UID: NS:ntddk._FILE_DISPOSITION_INFORMATION
+title: "_FILE_DISPOSITION_INFORMATION"
+author: windows-driver-content
+description: The FILE_DISPOSITION_INFORMATION structure is used as an argument to the ZwSetInformationFile routine.
+old-location: kernel\file_disposition_information.htm
+old-project: kernel
+ms.assetid: a13b5411-a0dd-4a54-98a8-419e2f0e95b8
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: PFILE_DISPOSITION_INFORMATION, kernel.file_disposition_information, ntddk/FILE_DISPOSITION_INFORMATION, PFILE_DISPOSITION_INFORMATION structure pointer [Kernel-Mode Driver Architecture], *PFILE_DISPOSITION_INFORMATION, _FILE_DISPOSITION_INFORMATION, kstruct_b_3796aa61-042a-435d-bfa9-c77c6a0dff98.xml, ntddk/PFILE_DISPOSITION_INFORMATION, FILE_DISPOSITION_INFORMATION structure [Kernel-Mode Driver Architecture], FILE_DISPOSITION_INFORMATION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddk.h
+req.include-header: Ntddk.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddk.h
+apiname:
+-	FILE_DISPOSITION_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: "*PFILE_DISPOSITION_INFORMATION, FILE_DISPOSITION_INFORMATION"
 ---
 
 # _FILE_DISPOSITION_INFORMATION structure

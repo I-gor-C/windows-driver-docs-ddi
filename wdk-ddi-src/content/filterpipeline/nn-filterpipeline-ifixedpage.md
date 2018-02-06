@@ -1,41 +1,46 @@
 ---
-UID : NN:filterpipeline.IFixedPage
-title : IFixedPage
-author : windows-driver-content
-description : A filter uses the IFixedPage interface to work with fixed pages in an XPS document.
-old-location : print\ifixedpage.htm
-old-project : print
-ms.assetid : e9e309ed-42e5-40cc-a230-6ca001f9fb1b
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : print.ifixedpage, IFixedPage interface [Print Devices], IFixedPage interface [Print Devices], described, IFixedPage, filterpipeline/IFixedPage, filterpipeline_4070fd54-c1df-432a-b586-a93854bf7aee.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : filterpipeline.h
-req.include-header : Filterpipeline.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : filterpipeline.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NN:filterpipeline.IFixedPage
+title: IFixedPage
+author: windows-driver-content
+description: A filter uses the IFixedPage interface to work with fixed pages in an XPS document.
+old-location: print\ifixedpage.htm
+old-project: print
+ms.assetid: e9e309ed-42e5-40cc-a230-6ca001f9fb1b
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: print.ifixedpage, IFixedPage interface [Print Devices], IFixedPage interface [Print Devices], described, IFixedPage, filterpipeline/IFixedPage, filterpipeline_4070fd54-c1df-432a-b586-a93854bf7aee.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: filterpipeline.h
+req.include-header: Filterpipeline.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: filterpipeline.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	filterpipeline.h
+apiname:
+-	IFixedPage
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 # IFixedPage interface

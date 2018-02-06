@@ -1,42 +1,47 @@
 ---
-UID : NS:wdm._TRANSACTION_BASIC_INFORMATION
-title : "_TRANSACTION_BASIC_INFORMATION"
-author : windows-driver-content
-description : The TRANSACTION_BASIC_INFORMATION structure contains information about a transaction object.
-old-location : kernel\transaction_basic_information.htm
-old-project : kernel
-ms.assetid : 79dd9ff3-2a5f-457a-8a8a-4963a799055c
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/TRANSACTION_BASIC_INFORMATION, wdm/PTRANSACTION_BASIC_INFORMATION, TRANSACTION_BASIC_INFORMATION, ktm_ref_3246b7cb-244e-4772-b3ca-bfd69e973f12.xml, kernel.transaction_basic_information, TRANSACTION_BASIC_INFORMATION structure [Kernel-Mode Driver Architecture], *PTRANSACTION_BASIC_INFORMATION, PTRANSACTION_BASIC_INFORMATION structure pointer [Kernel-Mode Driver Architecture], _TRANSACTION_BASIC_INFORMATION, PTRANSACTION_BASIC_INFORMATION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later operating system versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TRANSACTION_BASIC_INFORMATION, *PTRANSACTION_BASIC_INFORMATION
-req.product : Windows 10 or later.
+UID: NS:wdm._TRANSACTION_BASIC_INFORMATION
+title: "_TRANSACTION_BASIC_INFORMATION"
+author: windows-driver-content
+description: The TRANSACTION_BASIC_INFORMATION structure contains information about a transaction object.
+old-location: kernel\transaction_basic_information.htm
+old-project: kernel
+ms.assetid: 79dd9ff3-2a5f-457a-8a8a-4963a799055c
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/TRANSACTION_BASIC_INFORMATION, wdm/PTRANSACTION_BASIC_INFORMATION, TRANSACTION_BASIC_INFORMATION, ktm_ref_3246b7cb-244e-4772-b3ca-bfd69e973f12.xml, kernel.transaction_basic_information, TRANSACTION_BASIC_INFORMATION structure [Kernel-Mode Driver Architecture], *PTRANSACTION_BASIC_INFORMATION, PTRANSACTION_BASIC_INFORMATION structure pointer [Kernel-Mode Driver Architecture], _TRANSACTION_BASIC_INFORMATION, PTRANSACTION_BASIC_INFORMATION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later operating system versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdm.h
+apiname:
+-	TRANSACTION_BASIC_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: TRANSACTION_BASIC_INFORMATION, *PTRANSACTION_BASIC_INFORMATION
+req.product: Windows 10 or later.
 ---
 
 # _TRANSACTION_BASIC_INFORMATION structure

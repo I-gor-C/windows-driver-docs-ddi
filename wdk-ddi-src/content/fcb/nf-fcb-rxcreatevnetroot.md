@@ -1,41 +1,46 @@
 ---
-UID : NF:fcb.RxCreateVNetRoot
-title : RxCreateVNetRoot function
-author : windows-driver-content
-description : RxCreateVNetRoot allocates and initializes a NET_ROOT structure and inserts the name into the net name table on the associated device object.
-old-location : ifsk\rxcreatevnetroot.htm
-old-project : ifsk
-ms.assetid : 852cc319-4bcd-427d-802f-3c82c72901f0
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : rxref_adf9e6de-8b07-488e-86de-0d42036c3d7c.xml, fcb/RxCreateVNetRoot, RxCreateVNetRoot, RxCreateVNetRoot function [Installable File System Drivers], ifsk.rxcreatevnetroot
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fcb.h
-req.include-header : Rxcontx.h, Mrxfcb.h, Prefix.h, Struchdr.h, Fcb.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FA_ENTRY, *PFA_ENTRY
+UID: NF:fcb.RxCreateVNetRoot
+title: RxCreateVNetRoot function
+author: windows-driver-content
+description: RxCreateVNetRoot allocates and initializes a NET_ROOT structure and inserts the name into the net name table on the associated device object.
+old-location: ifsk\rxcreatevnetroot.htm
+old-project: ifsk
+ms.assetid: 852cc319-4bcd-427d-802f-3c82c72901f0
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: rxref_adf9e6de-8b07-488e-86de-0d42036c3d7c.xml, fcb/RxCreateVNetRoot, RxCreateVNetRoot, RxCreateVNetRoot function [Installable File System Drivers], ifsk.rxcreatevnetroot
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fcb.h
+req.include-header: Rxcontx.h, Mrxfcb.h, Prefix.h, Struchdr.h, Fcb.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	fcb.h
+apiname:
+-	RxCreateVNetRoot
+product: Windows
+targetos: Windows
+req.typenames: FA_ENTRY, *PFA_ENTRY
 ---
 
 

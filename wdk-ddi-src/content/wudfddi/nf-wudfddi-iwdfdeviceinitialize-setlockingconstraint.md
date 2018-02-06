@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFDeviceInitialize.SetLockingConstraint
-title : IWDFDeviceInitialize::SetLockingConstraint method
-author : windows-driver-content
-description : The SetLockingConstraint method sets the synchronization (or locking) model for callback functions into the driver.
-old-location : wdf\iwdfdeviceinitialize_setlockingconstraint.htm
-old-project : wdf
-ms.assetid : c0062ad4-6666-49db-9d53-70f2ed2353d1
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : IWDFDeviceInitialize, UMDFDeviceObjectRef_ec613925-df47-4231-8f53-3769df71f288.xml, SetLockingConstraint method, IWDFDeviceInitialize interface, umdf.iwdfdeviceinitialize_setlockingconstraint, IWDFDeviceInitialize::SetLockingConstraint, SetLockingConstraint method, wdf.iwdfdeviceinitialize_setlockingconstraint, SetLockingConstraint, IWDFDeviceInitialize interface, SetLockingConstraint method, wudfddi/IWDFDeviceInitialize::SetLockingConstraint
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.5
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFDeviceInitialize.SetLockingConstraint
+title: IWDFDeviceInitialize::SetLockingConstraint method
+author: windows-driver-content
+description: The SetLockingConstraint method sets the synchronization (or locking) model for callback functions into the driver.
+old-location: wdf\iwdfdeviceinitialize_setlockingconstraint.htm
+old-project: wdf
+ms.assetid: c0062ad4-6666-49db-9d53-70f2ed2353d1
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: IWDFDeviceInitialize, UMDFDeviceObjectRef_ec613925-df47-4231-8f53-3769df71f288.xml, SetLockingConstraint method, IWDFDeviceInitialize interface, umdf.iwdfdeviceinitialize_setlockingconstraint, IWDFDeviceInitialize::SetLockingConstraint, SetLockingConstraint method, wdf.iwdfdeviceinitialize_setlockingconstraint, SetLockingConstraint, IWDFDeviceInitialize interface, SetLockingConstraint method, wudfddi/IWDFDeviceInitialize::SetLockingConstraint
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.5
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFDeviceInitialize.SetLockingConstraint
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

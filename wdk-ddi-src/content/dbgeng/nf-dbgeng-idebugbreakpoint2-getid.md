@@ -1,41 +1,47 @@
 ---
-UID : NF:dbgeng.IDebugBreakpoint2.GetId
-title : IDebugBreakpoint2::GetId method
-author : windows-driver-content
-description : The GetId method returns a breakpoint ID, which is the engine's unique identifier for a breakpoint.
-old-location : debugger\getid.htm
-old-project : debugger
-ms.assetid : 991d8a40-1991-4c06-9557-9abee3ed8073
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : GetId method [Windows Debugging], IDebugBreakpoint interface [Windows Debugging], GetId method, IDebugBreakpoint::GetId, IDebugBreakpoint2, GetId, ComOther_408e8e80-f34e-4895-9bae-66dbb0f9aa97.xml, dbgeng/IDebugBreakpoint::GetId, IDebugBreakpoint2 interface [Windows Debugging], GetId method, debugger.getid, dbgeng/IDebugBreakpoint2::GetId, GetId method [Windows Debugging], IDebugBreakpoint interface, IDebugBreakpoint2::GetId, GetId method [Windows Debugging], IDebugBreakpoint2 interface
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugBreakpoint2.GetId
+title: IDebugBreakpoint2::GetId method
+author: windows-driver-content
+description: The GetId method returns a breakpoint ID, which is the engine's unique identifier for a breakpoint.
+old-location: debugger\getid.htm
+old-project: debugger
+ms.assetid: 991d8a40-1991-4c06-9557-9abee3ed8073
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: GetId method [Windows Debugging], IDebugBreakpoint interface [Windows Debugging], GetId method, IDebugBreakpoint::GetId, IDebugBreakpoint2, GetId, ComOther_408e8e80-f34e-4895-9bae-66dbb0f9aa97.xml, dbgeng/IDebugBreakpoint::GetId, IDebugBreakpoint2 interface [Windows Debugging], GetId method, debugger.getid, dbgeng/IDebugBreakpoint2::GetId, GetId method [Windows Debugging], IDebugBreakpoint interface, IDebugBreakpoint2::GetId, GetId method [Windows Debugging], IDebugBreakpoint2 interface
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugBreakpoint.GetId
+-	IDebugBreakpoint2.GetId
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

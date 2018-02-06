@@ -1,42 +1,47 @@
 ---
-UID : NI:usbioctl.IOCTL_USB_GET_NODE_CONNECTION_INFORMATION_EX_V2
-title : IOCTL_USB_GET_NODE_CONNECTION_INFORMATION_EX_V2
-author : windows-driver-content
-description : The IOCTL_USB_GET_NODE_CONNECTION_INFORMATION_EX_V2 I/O control is sent by an application to retrieve information about the protocols that are supported by a particular USB port on a hub. The request also retrieves the speed capability of the port.
-old-location : buses\ioctl_usb_get_node_connection_information_ex_v2.htm
-old-project : usbref
-ms.assetid : 6B9BB412-EF3E-4115-87C7-1CB0CF557F7A
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : buses.ioctl_usb_get_node_connection_information_ex_v2, IOCTL_USB_GET_NODE_CONNECTION_INFORMATION_EX_V2 control code [Buses], IOCTL_USB_GET_NODE_CONNECTION_INFORMATION_EX_V2, usbioctl/IOCTL_USB_GET_NODE_CONNECTION_INFORMATION_EX_V2
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : usbioctl.h
-req.include-header : Usbioctl.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : None supported
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : USB_HUB_TYPE
-req.product : Windows 10 or later.
+UID: NI:usbioctl.IOCTL_USB_GET_NODE_CONNECTION_INFORMATION_EX_V2
+title: IOCTL_USB_GET_NODE_CONNECTION_INFORMATION_EX_V2
+author: windows-driver-content
+description: The IOCTL_USB_GET_NODE_CONNECTION_INFORMATION_EX_V2 I/O control is sent by an application to retrieve information about the protocols that are supported by a particular USB port on a hub. The request also retrieves the speed capability of the port.
+old-location: buses\ioctl_usb_get_node_connection_information_ex_v2.htm
+old-project: usbref
+ms.assetid: 6B9BB412-EF3E-4115-87C7-1CB0CF557F7A
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: buses.ioctl_usb_get_node_connection_information_ex_v2, IOCTL_USB_GET_NODE_CONNECTION_INFORMATION_EX_V2 control code [Buses], IOCTL_USB_GET_NODE_CONNECTION_INFORMATION_EX_V2, usbioctl/IOCTL_USB_GET_NODE_CONNECTION_INFORMATION_EX_V2
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: usbioctl.h
+req.include-header: Usbioctl.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: None supported
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Usbioctl.h
+apiname:
+-	IOCTL_USB_GET_NODE_CONNECTION_INFORMATION_EX_V2
+product: Windows
+targetos: Windows
+req.typenames: USB_HUB_TYPE
+req.product: Windows 10 or later.
 ---
 
 # IOCTL_USB_GET_NODE_CONNECTION_INFORMATION_EX_V2 IOCTL

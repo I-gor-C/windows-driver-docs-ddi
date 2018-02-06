@@ -1,42 +1,50 @@
 ---
-UID : NF:wdfobject.WdfObjectCreate
-title : WdfObjectCreate function
-author : windows-driver-content
-description : The WdfObjectCreate method creates a general framework object.
-old-location : wdf\wdfobjectcreate.htm
-old-project : wdf
-ms.assetid : fd56c529-c7ad-4fc4-8fcc-950a1e8e21e5
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WdfObjectCreate, PFN_WDFOBJECTCREATE, DFGenObjectRef_6d84af32-c9c6-4327-be42-cda437dc80a1.xml, WdfObjectCreate method, kmdf.wdfobjectcreate, wdfobject/WdfObjectCreate, wdf.wdfobjectcreate
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfobject.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_SYNCHRONIZATION_SCOPE
-req.product : Windows 10 or later.
+UID: NF:wdfobject.WdfObjectCreate
+title: WdfObjectCreate function
+author: windows-driver-content
+description: The WdfObjectCreate method creates a general framework object.
+old-location: wdf\wdfobjectcreate.htm
+old-project: wdf
+ms.assetid: fd56c529-c7ad-4fc4-8fcc-950a1e8e21e5
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WdfObjectCreate, PFN_WDFOBJECTCREATE, DFGenObjectRef_6d84af32-c9c6-4327-be42-cda437dc80a1.xml, WdfObjectCreate method, kmdf.wdfobjectcreate, wdfobject/WdfObjectCreate, wdf.wdfobjectcreate
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfobject.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+-	WUDFx02000.dll
+-	WUDFx02000.dll.dll
+apiname:
+-	WdfObjectCreate
+product: Windows
+targetos: Windows
+req.typenames: WDF_SYNCHRONIZATION_SCOPE
+req.product: Windows 10 or later.
 ---
 
 

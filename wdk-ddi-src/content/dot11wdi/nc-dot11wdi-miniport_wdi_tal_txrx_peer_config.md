@@ -1,41 +1,46 @@
 ---
-UID : NC:dot11wdi.MINIPORT_WDI_TAL_TXRX_PEER_CONFIG
-title : MINIPORT_WDI_TAL_TXRX_PEER_CONFIG
-author : windows-driver-content
-description : The MiniportWdiTalTxRxPeerConfig handler function specifies the port ID, peer ID, and peer capabilities (for example, QoS capabilities). It is invoked after the peer has associated, which involves creation of the peer object in the TAL.
-old-location : netvista\miniportwditaltxrxpeerconfig.htm
-old-project : netvista
-ms.assetid : 48BB554D-A19E-46C0-8278-690A686A731D
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.miniportwditaltxrxpeerconfig, MiniportWdiTalTxRxPeerConfig callback function [Network Drivers Starting with Windows Vista], MiniportWdiTalTxRxPeerConfig, MINIPORT_WDI_TAL_TXRX_PEER_CONFIG, MINIPORT_WDI_TAL_TXRX_PEER_CONFIG, dot11wdi/MiniportWdiTalTxRxPeerConfig
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : dot11wdi.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SYNTH_STATS, *PSYNTH_STATS
+UID: NC:dot11wdi.MINIPORT_WDI_TAL_TXRX_PEER_CONFIG
+title: MINIPORT_WDI_TAL_TXRX_PEER_CONFIG
+author: windows-driver-content
+description: The MiniportWdiTalTxRxPeerConfig handler function specifies the port ID, peer ID, and peer capabilities (for example, QoS capabilities). It is invoked after the peer has associated, which involves creation of the peer object in the TAL.
+old-location: netvista\miniportwditaltxrxpeerconfig.htm
+old-project: netvista
+ms.assetid: 48BB554D-A19E-46C0-8278-690A686A731D
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.miniportwditaltxrxpeerconfig, MiniportWdiTalTxRxPeerConfig callback function [Network Drivers Starting with Windows Vista], MiniportWdiTalTxRxPeerConfig, MINIPORT_WDI_TAL_TXRX_PEER_CONFIG, MINIPORT_WDI_TAL_TXRX_PEER_CONFIG, dot11wdi/MiniportWdiTalTxRxPeerConfig
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: dot11wdi.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	dot11wdi.h
+apiname:
+-	MiniportWdiTalTxRxPeerConfig
+product: Windows
+targetos: Windows
+req.typenames: SYNTH_STATS, *PSYNTH_STATS
 ---
 
 

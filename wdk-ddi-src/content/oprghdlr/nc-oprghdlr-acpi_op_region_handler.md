@@ -1,41 +1,46 @@
 ---
-UID : NC:oprghdlr.ACPI_OP_REGION_HANDLER
-title : ACPI_OP_REGION_HANDLER
-author : windows-driver-content
-description : An ACPI_OP_REGION_HANDLER-typed routine is supplied by an ACPI device function driver to provide access by the ACPI driver to the device's operation region.
-old-location : acpi\pacpi_op_region_handler.htm
-old-project : acpi
-ms.assetid : c3a5af59-c97c-42be-bc43-afa30ad710ec
-ms.author : windowsdriverdev
-ms.date : 12/31/2017
-ms.keywords : acpi.pacpi_op_region_handler, AcpiOpRegionHandler callback function [ACPI Devices], AcpiOpRegionHandler, ACPI_OP_REGION_HANDLER, ACPI_OP_REGION_HANDLER, oprghdlr/AcpiOpRegionHandler, opregref_be7bf2cd-0369-4efd-bbdb-5ad7dc28c33d.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : oprghdlr.h
-req.include-header : Oprghdlr.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "(See Remarks section)"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RILGBATOKEN, *LPRILGBATOKEN
+UID: NC:oprghdlr.ACPI_OP_REGION_HANDLER
+title: ACPI_OP_REGION_HANDLER
+author: windows-driver-content
+description: An ACPI_OP_REGION_HANDLER-typed routine is supplied by an ACPI device function driver to provide access by the ACPI driver to the device's operation region.
+old-location: acpi\pacpi_op_region_handler.htm
+old-project: acpi
+ms.assetid: c3a5af59-c97c-42be-bc43-afa30ad710ec
+ms.author: windowsdriverdev
+ms.date: 12/31/2017
+ms.keywords: acpi.pacpi_op_region_handler, AcpiOpRegionHandler callback function [ACPI Devices], AcpiOpRegionHandler, ACPI_OP_REGION_HANDLER, ACPI_OP_REGION_HANDLER, oprghdlr/AcpiOpRegionHandler, opregref_be7bf2cd-0369-4efd-bbdb-5ad7dc28c33d.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: oprghdlr.h
+req.include-header: Oprghdlr.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "(See Remarks section)"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	oprghdlr.h
+apiname:
+-	AcpiOpRegionHandler
+product: Windows
+targetos: Windows
+req.typenames: RILGBATOKEN, *LPRILGBATOKEN
 ---
 
 

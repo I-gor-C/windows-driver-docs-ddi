@@ -1,41 +1,46 @@
 ---
-UID : NF:ntddk.RtlDeleteElementGenericTableAvl
-title : RtlDeleteElementGenericTableAvl function
-author : windows-driver-content
-description : The RtlDeleteElementGenericTableAvl routine deletes an element from a generic table.
-old-location : ifsk\rtldeleteelementgenerictableavl.htm
-old-project : ifsk
-ms.assetid : 700412A3-5905-4401-BA65-C2DE1613398D
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.rtldeleteelementgenerictableavl, ntddk/RtlDeleteElementGenericTableAvl, RtlDeleteElementGenericTableAvl, RtlDeleteElementGenericTableAvl routine [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntddk.h
-req.include-header : Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows XP.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.RtlDeleteElementGenericTableAvl
+title: RtlDeleteElementGenericTableAvl function
+author: windows-driver-content
+description: The RtlDeleteElementGenericTableAvl routine deletes an element from a generic table.
+old-location: ifsk\rtldeleteelementgenerictableavl.htm
+old-project: ifsk
+ms.assetid: 700412A3-5905-4401-BA65-C2DE1613398D
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.rtldeleteelementgenerictableavl, ntddk/RtlDeleteElementGenericTableAvl, RtlDeleteElementGenericTableAvl, RtlDeleteElementGenericTableAvl routine [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntddk.h
+req.include-header: Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows XP.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	RtlDeleteElementGenericTableAvl
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

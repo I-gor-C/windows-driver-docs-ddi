@@ -1,42 +1,50 @@
 ---
-UID : NF:wdfdevice.WdfDeviceInitSetReleaseHardwareOrderOnFailure
-title : WdfDeviceInitSetReleaseHardwareOrderOnFailure function
-author : windows-driver-content
-description : The WdfDeviceInitSetReleaseHardwareOrderOnFailure method specifies whether the framework calls the driver's EvtDeviceReleaseHardware callback function immediately after device failure, or waits until all child devices have been removed.
-old-location : wdf\wdfdeviceinitsetreleasehardwareorderonfailure.htm
-old-project : wdf
-ms.assetid : 5DC3C7C8-E7D1-4874-AF8D-8E6FD48DF046
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : kmdf.wdfdeviceinitsetreleasehardwareorderonfailure, PFN_WDFDEVICEINITSETRELEASEHARDWAREORDERONFAILURE, WdfDeviceInitSetReleaseHardwareOrderOnFailure, wdf.wdfdeviceinitsetreleasehardwareorderonfailure, wdfdevice/WdfDeviceInitSetReleaseHardwareOrderOnFailure, WdfDeviceInitSetReleaseHardwareOrderOnFailure method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfdevice.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.11
-req.umdf-ver : 2.0
-req.ddi-compliance : DriverCreate
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_STATE_NOTIFICATION_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfdevice.WdfDeviceInitSetReleaseHardwareOrderOnFailure
+title: WdfDeviceInitSetReleaseHardwareOrderOnFailure function
+author: windows-driver-content
+description: The WdfDeviceInitSetReleaseHardwareOrderOnFailure method specifies whether the framework calls the driver's EvtDeviceReleaseHardware callback function immediately after device failure, or waits until all child devices have been removed.
+old-location: wdf\wdfdeviceinitsetreleasehardwareorderonfailure.htm
+old-project: wdf
+ms.assetid: 5DC3C7C8-E7D1-4874-AF8D-8E6FD48DF046
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: kmdf.wdfdeviceinitsetreleasehardwareorderonfailure, PFN_WDFDEVICEINITSETRELEASEHARDWAREORDERONFAILURE, WdfDeviceInitSetReleaseHardwareOrderOnFailure, wdf.wdfdeviceinitsetreleasehardwareorderonfailure, wdfdevice/WdfDeviceInitSetReleaseHardwareOrderOnFailure, WdfDeviceInitSetReleaseHardwareOrderOnFailure method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfdevice.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.11
+req.umdf-ver: 2.0
+req.ddi-compliance: DriverCreate
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+-	WUDFx02000.dll
+-	WUDFx02000.dll.dll
+apiname:
+-	WdfDeviceInitSetReleaseHardwareOrderOnFailure
+product: Windows
+targetos: Windows
+req.typenames: WDF_STATE_NOTIFICATION_TYPE
+req.product: Windows 10 or later.
 ---
 
 

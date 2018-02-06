@@ -1,41 +1,46 @@
 ---
-UID : NF:ntddk.PsRemoveCreateThreadNotifyRoutine
-title : PsRemoveCreateThreadNotifyRoutine function
-author : windows-driver-content
-description : The PsRemoveCreateThreadNotifyRoutine routine removes a callback routine that was registered by the PsSetCreateThreadNotifyRoutine routine.
-old-location : kernel\psremovecreatethreadnotifyroutine.htm
-old-project : kernel
-ms.assetid : ef1fd29c-e0ef-4c08-ab3a-b1a3c694c06b
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ntddk/PsRemoveCreateThreadNotifyRoutine, PsRemoveCreateThreadNotifyRoutine routine [Kernel-Mode Driver Architecture], k108_cfa75911-6de3-4459-8093-855279e0a5f7.xml, PsRemoveCreateThreadNotifyRoutine, kernel.psremovecreatethreadnotifyroutine
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<=APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.PsRemoveCreateThreadNotifyRoutine
+title: PsRemoveCreateThreadNotifyRoutine function
+author: windows-driver-content
+description: The PsRemoveCreateThreadNotifyRoutine routine removes a callback routine that was registered by the PsSetCreateThreadNotifyRoutine routine.
+old-location: kernel\psremovecreatethreadnotifyroutine.htm
+old-project: kernel
+ms.assetid: ef1fd29c-e0ef-4c08-ab3a-b1a3c694c06b
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ntddk/PsRemoveCreateThreadNotifyRoutine, PsRemoveCreateThreadNotifyRoutine routine [Kernel-Mode Driver Architecture], k108_cfa75911-6de3-4459-8093-855279e0a5f7.xml, PsRemoveCreateThreadNotifyRoutine, kernel.psremovecreatethreadnotifyroutine
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<=APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	PsRemoveCreateThreadNotifyRoutine
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

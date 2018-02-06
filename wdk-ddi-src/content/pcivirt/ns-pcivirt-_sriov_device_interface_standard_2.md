@@ -1,41 +1,46 @@
 ---
-UID : NS:pcivirt._SRIOV_DEVICE_INTERFACE_STANDARD_2
-title : "_SRIOV_DEVICE_INTERFACE_STANDARD_2"
-author : windows-driver-content
-description : Stores function pointers to callback functions implemented by the physical function (PF) driver in the device stack for the of the SR-IOV device. This is an extended version of SRIOV_DEVICE_INTERFACE_STANDARD.
-old-location : pci\sriov_device_interface_standard_2.htm
-old-project : PCI
-ms.assetid : 46c9fa94-283c-481e-9fb1-2ed63df00386
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : "_SRIOV_DEVICE_INTERFACE_STANDARD_2, SRIOV_DEVICE_INTERFACE_STANDARD_2, PCI.sriov_device_interface_standard_2, *PSRIOV_DEVICE_INTERFACE_STANDARD_2, SRIOV_DEVICE_INTERFACE_STANDARD_2 structure [Buses], pcivirt/SRIOV_DEVICE_INTERFACE_STANDARD_2"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : pcivirt.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SRIOV_DEVICE_INTERFACE_STANDARD_2, *PSRIOV_DEVICE_INTERFACE_STANDARD_2
+UID: NS:pcivirt._SRIOV_DEVICE_INTERFACE_STANDARD_2
+title: "_SRIOV_DEVICE_INTERFACE_STANDARD_2"
+author: windows-driver-content
+description: Stores function pointers to callback functions implemented by the physical function (PF) driver in the device stack for the of the SR-IOV device. This is an extended version of SRIOV_DEVICE_INTERFACE_STANDARD.
+old-location: pci\sriov_device_interface_standard_2.htm
+old-project: PCI
+ms.assetid: 46c9fa94-283c-481e-9fb1-2ed63df00386
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: "_SRIOV_DEVICE_INTERFACE_STANDARD_2, SRIOV_DEVICE_INTERFACE_STANDARD_2, PCI.sriov_device_interface_standard_2, *PSRIOV_DEVICE_INTERFACE_STANDARD_2, SRIOV_DEVICE_INTERFACE_STANDARD_2 structure [Buses], pcivirt/SRIOV_DEVICE_INTERFACE_STANDARD_2"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: pcivirt.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Pcivirt.h
+apiname:
+-	SRIOV_DEVICE_INTERFACE_STANDARD_2
+product: Windows
+targetos: Windows
+req.typenames: SRIOV_DEVICE_INTERFACE_STANDARD_2, *PSRIOV_DEVICE_INTERFACE_STANDARD_2
 ---
 
 # _SRIOV_DEVICE_INTERFACE_STANDARD_2 structure

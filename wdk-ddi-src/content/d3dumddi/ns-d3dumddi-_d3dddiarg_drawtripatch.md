@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._D3DDDIARG_DRAWTRIPATCH
-title : "_D3DDDIARG_DRAWTRIPATCH"
-author : windows-driver-content
-description : The D3DDDIARG_DRAWTRIPATCH structure describes a triangular patch to draw.
-old-location : display\d3dddiarg_drawtripatch.htm
-old-project : display
-ms.assetid : 296ed752-ddb6-41db-957f-606acc53b3b5
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.d3dddiarg_drawtripatch, UMDisplayDriver_param_Structs_e4f18b26-f2ae-46e2-af49-6ae55f79b2be.xml, d3dumddi/D3DDDIARG_DRAWTRIPATCH, _D3DDDIARG_DRAWTRIPATCH, D3DDDIARG_DRAWTRIPATCH structure [Display Devices], D3DDDIARG_DRAWTRIPATCH
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDIARG_DRAWTRIPATCH
+UID: NS:d3dumddi._D3DDDIARG_DRAWTRIPATCH
+title: "_D3DDDIARG_DRAWTRIPATCH"
+author: windows-driver-content
+description: The D3DDDIARG_DRAWTRIPATCH structure describes a triangular patch to draw.
+old-location: display\d3dddiarg_drawtripatch.htm
+old-project: display
+ms.assetid: 296ed752-ddb6-41db-957f-606acc53b3b5
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.d3dddiarg_drawtripatch, UMDisplayDriver_param_Structs_e4f18b26-f2ae-46e2-af49-6ae55f79b2be.xml, d3dumddi/D3DDDIARG_DRAWTRIPATCH, _D3DDDIARG_DRAWTRIPATCH, D3DDDIARG_DRAWTRIPATCH structure [Display Devices], D3DDDIARG_DRAWTRIPATCH
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	D3DDDIARG_DRAWTRIPATCH
+product: Windows
+targetos: Windows
+req.typenames: D3DDDIARG_DRAWTRIPATCH
 ---
 
 # _D3DDDIARG_DRAWTRIPATCH structure

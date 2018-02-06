@@ -1,41 +1,46 @@
 ---
-UID : NC:ntdddump.DUMP_START
-title : DUMP_START
-author : windows-driver-content
-description : The Dump_Start callback routine is called after initializing the dump driver and just before starting the dump write process.
-old-location : storage\dump_start.htm
-old-project : storage
-ms.assetid : a315f51f-069a-4c3d-bedc-2378b0996022
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.dump_start, Dump_Start routine [Storage Devices], Dump_Start, PDUMP_START, PDUMP_START, ntdddump/Dump_Start, filter_rtns_071f1e6c-9471-47ef-bf40-6429a798b792.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ntdddump.h
-req.include-header : Ntdddump.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available starting with Windows Vista and Windows Server 2008.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VERIFY_INFORMATION, *PVERIFY_INFORMATION
+UID: NC:ntdddump.DUMP_START
+title: DUMP_START
+author: windows-driver-content
+description: The Dump_Start callback routine is called after initializing the dump driver and just before starting the dump write process.
+old-location: storage\dump_start.htm
+old-project: storage
+ms.assetid: a315f51f-069a-4c3d-bedc-2378b0996022
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.dump_start, Dump_Start routine [Storage Devices], Dump_Start, PDUMP_START, PDUMP_START, ntdddump/Dump_Start, filter_rtns_071f1e6c-9471-47ef-bf40-6429a798b792.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ntdddump.h
+req.include-header: Ntdddump.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available starting with Windows Vista and Windows Server 2008.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	ntdddump.h
+apiname:
+-	Dump_Start
+product: Windows
+targetos: Windows
+req.typenames: VERIFY_INFORMATION, *PVERIFY_INFORMATION
 ---
 
 

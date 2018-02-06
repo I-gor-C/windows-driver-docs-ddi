@@ -1,42 +1,48 @@
 ---
-UID : NF:wdm.ZwOpenFile
-title : ZwOpenFile function
-author : windows-driver-content
-description : The ZwOpenFile routine opens an existing file, directory, device, or volume.
-old-location : kernel\zwopenfile.htm
-old-project : kernel
-ms.assetid : 7c07d250-6287-4dd3-96f9-f301bad8b6f3
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ZwOpenFile routine [Kernel-Mode Driver Architecture], wdm/NtOpenFile, ZwOpenFile, wdm/ZwOpenFile, kernel.zwopenfile, NtOpenFile, k111_efde7b0f-a00d-47c8-8a34-ae22fb909718.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ZwOpenFile
+title: ZwOpenFile function
+author: windows-driver-content
+description: The ZwOpenFile routine opens an existing file, directory, device, or volume.
+old-location: kernel\zwopenfile.htm
+old-project: kernel
+ms.assetid: 7c07d250-6287-4dd3-96f9-f301bad8b6f3
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ZwOpenFile routine [Kernel-Mode Driver Architecture], wdm/NtOpenFile, ZwOpenFile, wdm/ZwOpenFile, kernel.zwopenfile, NtOpenFile, k111_efde7b0f-a00d-47c8-8a34-ae22fb909718.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ZwOpenFile
+-	NtOpenFile
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

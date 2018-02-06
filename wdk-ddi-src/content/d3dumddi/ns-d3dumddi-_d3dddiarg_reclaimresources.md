@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._D3DDDIARG_RECLAIMRESOURCES
-title : "_D3DDDIARG_RECLAIMRESOURCES"
-author : windows-driver-content
-description : Describes video memory resources that are to be reclaimed and that the user-mode display driver previously offered for reuse. Used with the ReclaimResources function.
-old-location : display\d3dddiarg_reclaimresources.htm
-old-project : display
-ms.assetid : 58e8738c-b10a-4c93-b179-03efcb65412d
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3dumddi/D3DDDIARG_RECLAIMRESOURCES, D3DDDIARG_RECLAIMRESOURCES, D3DDDIARG_RECLAIMRESOURCES structure [Display Devices], _D3DDDIARG_RECLAIMRESOURCES, display.d3dddiarg_reclaimresources
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDIARG_RECLAIMRESOURCES
+UID: NS:d3dumddi._D3DDDIARG_RECLAIMRESOURCES
+title: "_D3DDDIARG_RECLAIMRESOURCES"
+author: windows-driver-content
+description: Describes video memory resources that are to be reclaimed and that the user-mode display driver previously offered for reuse. Used with the ReclaimResources function.
+old-location: display\d3dddiarg_reclaimresources.htm
+old-project: display
+ms.assetid: 58e8738c-b10a-4c93-b179-03efcb65412d
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3dumddi/D3DDDIARG_RECLAIMRESOURCES, D3DDDIARG_RECLAIMRESOURCES, D3DDDIARG_RECLAIMRESOURCES structure [Display Devices], _D3DDDIARG_RECLAIMRESOURCES, display.d3dddiarg_reclaimresources
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	D3dumddi.h
+apiname:
+-	D3DDDIARG_RECLAIMRESOURCES
+product: Windows
+targetos: Windows
+req.typenames: D3DDDIARG_RECLAIMRESOURCES
 ---
 
 # _D3DDDIARG_RECLAIMRESOURCES structure

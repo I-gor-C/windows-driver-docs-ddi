@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3D11DDI_DISPATCH
-title : PFND3D11DDI_DISPATCH
-author : windows-driver-content
-description : The Dispatch function executes the compute shader.
-old-location : display\dispatch.htm
-old-project : display
-ms.assetid : 6fbbf05a-efb0-4f24-8811-b87141cf2daa
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dispatch, Dispatch callback function [Display Devices], Dispatch, PFND3D11DDI_DISPATCH, PFND3D11DDI_DISPATCH, d3d10umddi/Dispatch, UserModeDisplayDriverDx11_Functions_1b4b62fc-3cc5-4506-9a61-30ee65f8ffcd.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Dispatch is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3D11DDI_DISPATCH
+title: PFND3D11DDI_DISPATCH
+author: windows-driver-content
+description: The Dispatch function executes the compute shader.
+old-location: display\dispatch.htm
+old-project: display
+ms.assetid: 6fbbf05a-efb0-4f24-8811-b87141cf2daa
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dispatch, Dispatch callback function [Display Devices], Dispatch, PFND3D11DDI_DISPATCH, PFND3D11DDI_DISPATCH, d3d10umddi/Dispatch, UserModeDisplayDriverDx11_Functions_1b4b62fc-3cc5-4506-9a61-30ee65f8ffcd.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Dispatch is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	Dispatch
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

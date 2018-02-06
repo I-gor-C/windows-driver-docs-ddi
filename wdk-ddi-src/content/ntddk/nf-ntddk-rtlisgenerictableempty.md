@@ -1,41 +1,46 @@
 ---
-UID : NF:ntddk.RtlIsGenericTableEmpty
-title : RtlIsGenericTableEmpty function
-author : windows-driver-content
-description : The RtlIsGenericTableEmpty routine determines if a generic table is empty.
-old-location : ifsk\rtlisgenerictableempty.htm
-old-project : ifsk
-ms.assetid : 9d032bd1-3ee7-4044-951f-c6730a28f3a1
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.rtlisgenerictableempty, RtlIsGenericTableEmpty, ntddk/RtlIsGenericTableEmpty, RtlIsGenericTableEmpty routine [Installable File System Drivers], rtlref_07ea645e-b497-445c-a872-34947a2f7e54.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntddk.h
-req.include-header : Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : This routine is available on Microsoft Windows 2000 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL (see Remarks section)"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.RtlIsGenericTableEmpty
+title: RtlIsGenericTableEmpty function
+author: windows-driver-content
+description: The RtlIsGenericTableEmpty routine determines if a generic table is empty.
+old-location: ifsk\rtlisgenerictableempty.htm
+old-project: ifsk
+ms.assetid: 9d032bd1-3ee7-4044-951f-c6730a28f3a1
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.rtlisgenerictableempty, RtlIsGenericTableEmpty, ntddk/RtlIsGenericTableEmpty, RtlIsGenericTableEmpty routine [Installable File System Drivers], rtlref_07ea645e-b497-445c-a872-34947a2f7e54.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntddk.h
+req.include-header: Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: This routine is available on Microsoft Windows 2000 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL (see Remarks section)"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	RtlIsGenericTableEmpty
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

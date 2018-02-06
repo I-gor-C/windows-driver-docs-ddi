@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisMQueryAdapterInstanceName
-title : NdisMQueryAdapterInstanceName function
-author : windows-driver-content
-description : The NdisMQueryAdapterInstanceName function retrieves the friendly name of a miniport adapter.
-old-location : netvista\ndismqueryadapterinstancename.htm
-old-project : netvista
-ms.assetid : 7af6ee73-814b-49f8-8641-d3e8dc672ee5
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NdisMQueryAdapterInstanceName, ndis/NdisMQueryAdapterInstanceName, miniport_ndis_functions_ref_5e04ebd4-3db8-4cb2-a75c-ce67d938804c.xml, netvista.ndismqueryadapterinstancename, NdisMQueryAdapterInstanceName function [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported in NDIS 5.1, and NDIS 6.0 and later. For NDIS 5.1 drivers, see       NdisMQueryAdapterInstanceName (NDIS 5.1).
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_Miniport_Driver_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisMQueryAdapterInstanceName
+title: NdisMQueryAdapterInstanceName function
+author: windows-driver-content
+description: The NdisMQueryAdapterInstanceName function retrieves the friendly name of a miniport adapter.
+old-location: netvista\ndismqueryadapterinstancename.htm
+old-project: netvista
+ms.assetid: 7af6ee73-814b-49f8-8641-d3e8dc672ee5
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NdisMQueryAdapterInstanceName, ndis/NdisMQueryAdapterInstanceName, miniport_ndis_functions_ref_5e04ebd4-3db8-4cb2-a75c-ce67d938804c.xml, netvista.ndismqueryadapterinstancename, NdisMQueryAdapterInstanceName function [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported in NDIS 5.1, and NDIS 6.0 and later. For NDIS 5.1 drivers, see       NdisMQueryAdapterInstanceName (NDIS 5.1).
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_Miniport_Driver_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisMQueryAdapterInstanceName
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

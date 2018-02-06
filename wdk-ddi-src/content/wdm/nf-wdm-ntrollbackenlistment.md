@@ -1,42 +1,48 @@
 ---
-UID : NF:wdm.NtRollbackEnlistment
-title : NtRollbackEnlistment function
-author : windows-driver-content
-description : The ZwRollbackEnlistment routine rolls back the transaction that is associated with a specified enlistment.
-old-location : kernel\zwrollbackenlistment.htm
-old-project : kernel
-ms.assetid : 30989717-bbf4-44e6-9f1b-4818a8314714
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ZwRollbackEnlistment routine [Kernel-Mode Driver Architecture], ZwRollbackEnlistment, ktm_ref_6e57f040-d43e-4986-a756-e35e1abc8670.xml, kernel.zwrollbackenlistment, NtRollbackEnlistment, wdm/NtRollbackEnlistment, wdm/ZwRollbackEnlistment
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later operating system versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.NtRollbackEnlistment
+title: NtRollbackEnlistment function
+author: windows-driver-content
+description: The ZwRollbackEnlistment routine rolls back the transaction that is associated with a specified enlistment.
+old-location: kernel\zwrollbackenlistment.htm
+old-project: kernel
+ms.assetid: 30989717-bbf4-44e6-9f1b-4818a8314714
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ZwRollbackEnlistment routine [Kernel-Mode Driver Architecture], ZwRollbackEnlistment, ktm_ref_6e57f040-d43e-4986-a756-e35e1abc8670.xml, kernel.zwrollbackenlistment, NtRollbackEnlistment, wdm/NtRollbackEnlistment, wdm/ZwRollbackEnlistment
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later operating system versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ZwRollbackEnlistment
+-	NtRollbackEnlistment
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

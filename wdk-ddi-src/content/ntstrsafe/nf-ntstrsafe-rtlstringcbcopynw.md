@@ -1,41 +1,49 @@
 ---
-UID : NF:ntstrsafe.RtlStringCbCopyNW
-title : RtlStringCbCopyNW function
-author : windows-driver-content
-description : The RtlStringCbCopyNW and RtlStringCbCopyNA functions copy a byte-counted string to a buffer while limiting the size of the copied string.
-old-location : kernel\rtlstringcbcopyn.htm
-old-project : kernel
-ms.assetid : d64fb3e6-fba1-4383-bdb0-a63dc7c16033
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ntstrsafe/RtlStringCbCopyNA, kernel.rtlstringcbcopyn, RtlStringCbCopyNW, ntstrsafe/RtlStringCbCopyNW, RtlStringCbCopyNW function [Kernel-Mode Driver Architecture], safestrings_a3f7f7a8-b4a1-4c7c-b384-2243b3c97a4e.xml, RtlStringCbCopyNA, RtlStringCbCopyN
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntstrsafe.h
-req.include-header : Ntstrsafe.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows XP with Service Pack 1 (SP1) and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : RtlStringCbCopyNW (Unicode) and RtlStringCbCopyNA (ANSI)
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ntstrsafe.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : BATTERY_REPORTING_SCALE, *PBATTERY_REPORTING_SCALE
+UID: NF:ntstrsafe.RtlStringCbCopyNW
+title: RtlStringCbCopyNW function
+author: windows-driver-content
+description: The RtlStringCbCopyNW and RtlStringCbCopyNA functions copy a byte-counted string to a buffer while limiting the size of the copied string.
+old-location: kernel\rtlstringcbcopyn.htm
+old-project: kernel
+ms.assetid: d64fb3e6-fba1-4383-bdb0-a63dc7c16033
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ntstrsafe/RtlStringCbCopyNA, kernel.rtlstringcbcopyn, RtlStringCbCopyNW, ntstrsafe/RtlStringCbCopyNW, RtlStringCbCopyNW function [Kernel-Mode Driver Architecture], safestrings_a3f7f7a8-b4a1-4c7c-b384-2243b3c97a4e.xml, RtlStringCbCopyNA, RtlStringCbCopyN
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntstrsafe.h
+req.include-header: Ntstrsafe.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows XP with Service Pack 1 (SP1) and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: RtlStringCbCopyNW (Unicode) and RtlStringCbCopyNA (ANSI)
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ntstrsafe.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ntstrsafe.lib
+-	Ntstrsafe.dll
+apiname:
+-	RtlStringCbCopyNW
+-	RtlStringCbCopyNA
+-	RtlStringCbCopyNW
+product: Windows
+targetos: Windows
+req.typenames: BATTERY_REPORTING_SCALE, *PBATTERY_REPORTING_SCALE
 ---
 
 

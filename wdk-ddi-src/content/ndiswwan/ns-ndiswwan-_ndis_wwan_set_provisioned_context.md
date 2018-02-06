@@ -1,41 +1,46 @@
 ---
-UID : NS:ndiswwan._NDIS_WWAN_SET_PROVISIONED_CONTEXT
-title : "_NDIS_WWAN_SET_PROVISIONED_CONTEXT"
-author : windows-driver-content
-description : The NDIS_WWAN_SET_PROVISIONED_CONTEXT structure represents the command to set the provisioned context state of the MB device.
-old-location : netvista\ndis_wwan_set_provisioned_context.htm
-old-project : netvista
-ms.assetid : c0f77100-ffd0-4fef-80b0-fc399ef96aee
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NDIS_WWAN_SET_PROVISIONED_CONTEXT, ndiswwan/NDIS_WWAN_SET_PROVISIONED_CONTEXT, _NDIS_WWAN_SET_PROVISIONED_CONTEXT, netvista.ndis_wwan_set_provisioned_context, NDIS_WWAN_SET_PROVISIONED_CONTEXT structure [Network Drivers Starting with Windows Vista], WwanRef_0f679f5b-26a4-4069-b4d7-65835090f56f.xml, PNDIS_WWAN_SET_PROVISIONED_CONTEXT, PNDIS_WWAN_SET_PROVISIONED_CONTEXT structure pointer [Network Drivers Starting with Windows Vista], ndiswwan/PNDIS_WWAN_SET_PROVISIONED_CONTEXT, *PNDIS_WWAN_SET_PROVISIONED_CONTEXT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndiswwan.h
-req.include-header : Ndiswwan.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_WWAN_SET_PROVISIONED_CONTEXT, *PNDIS_WWAN_SET_PROVISIONED_CONTEXT
+UID: NS:ndiswwan._NDIS_WWAN_SET_PROVISIONED_CONTEXT
+title: "_NDIS_WWAN_SET_PROVISIONED_CONTEXT"
+author: windows-driver-content
+description: The NDIS_WWAN_SET_PROVISIONED_CONTEXT structure represents the command to set the provisioned context state of the MB device.
+old-location: netvista\ndis_wwan_set_provisioned_context.htm
+old-project: netvista
+ms.assetid: c0f77100-ffd0-4fef-80b0-fc399ef96aee
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NDIS_WWAN_SET_PROVISIONED_CONTEXT, ndiswwan/NDIS_WWAN_SET_PROVISIONED_CONTEXT, _NDIS_WWAN_SET_PROVISIONED_CONTEXT, netvista.ndis_wwan_set_provisioned_context, NDIS_WWAN_SET_PROVISIONED_CONTEXT structure [Network Drivers Starting with Windows Vista], WwanRef_0f679f5b-26a4-4069-b4d7-65835090f56f.xml, PNDIS_WWAN_SET_PROVISIONED_CONTEXT, PNDIS_WWAN_SET_PROVISIONED_CONTEXT structure pointer [Network Drivers Starting with Windows Vista], ndiswwan/PNDIS_WWAN_SET_PROVISIONED_CONTEXT, *PNDIS_WWAN_SET_PROVISIONED_CONTEXT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndiswwan.h
+req.include-header: Ndiswwan.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndiswwan.h
+apiname:
+-	NDIS_WWAN_SET_PROVISIONED_CONTEXT
+product: Windows
+targetos: Windows
+req.typenames: NDIS_WWAN_SET_PROVISIONED_CONTEXT, *PNDIS_WWAN_SET_PROVISIONED_CONTEXT
 ---
 
 # _NDIS_WWAN_SET_PROVISIONED_CONTEXT structure

@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltGetNewSystemBufferAddress
-title : FltGetNewSystemBufferAddress function
-author : windows-driver-content
-description : The FltGetNewSystemBufferAddress function retrieves the AssociatedIrp.SystemBuffer buffer, which the file system has allocated. A minifilter driver's post-callback routine calls this function.
-old-location : ifsk\fltgetnewsystembufferaddress.htm
-old-project : ifsk
-ms.assetid : 83a5e9b7-1731-422f-a0df-c1efbc8cad81
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltGetNewSystemBufferAddress, fltkernel/FltGetNewSystemBufferAddress, FltGetNewSystemBufferAddress function [Installable File System Drivers], FltApiRef_e_to_o_a9a2a8aa-92e5-4843-a1e9-5b1a15d870fa.xml, ifsk.fltgetnewsystembufferaddress
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Microsoft Windows 7 and later versions of the Windows operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Fltmgr.lib
-req.dll : Fltmgr.sys
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltGetNewSystemBufferAddress
+title: FltGetNewSystemBufferAddress function
+author: windows-driver-content
+description: The FltGetNewSystemBufferAddress function retrieves the AssociatedIrp.SystemBuffer buffer, which the file system has allocated. A minifilter driver's post-callback routine calls this function.
+old-location: ifsk\fltgetnewsystembufferaddress.htm
+old-project: ifsk
+ms.assetid: 83a5e9b7-1731-422f-a0df-c1efbc8cad81
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltGetNewSystemBufferAddress, fltkernel/FltGetNewSystemBufferAddress, FltGetNewSystemBufferAddress function [Installable File System Drivers], FltApiRef_e_to_o_a9a2a8aa-92e5-4843-a1e9-5b1a15d870fa.xml, ifsk.fltgetnewsystembufferaddress
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Microsoft Windows 7 and later versions of the Windows operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Fltmgr.lib
+req.dll: Fltmgr.sys
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltGetNewSystemBufferAddress
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

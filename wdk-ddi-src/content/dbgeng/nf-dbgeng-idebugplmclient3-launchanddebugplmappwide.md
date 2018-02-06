@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugPlmClient3.LaunchAndDebugPlmAppWide
-title : IDebugPlmClient3::LaunchAndDebugPlmAppWide method
-author : windows-driver-content
-description : Launches and attaches to a Process Lifecycle Management (PLM) application.
-old-location : debugger\idebugplmclient3_launchanddebugplmappwide.htm
-old-project : debugger
-ms.assetid : F3DD5912-46E5-43E5-A920-940FC8FCD83F
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugPlmClient3, LaunchAndDebugPlmAppWide method [Windows Debugging], IDebugPlmClient3::LaunchAndDebugPlmAppWide, dbgeng/IDebugPlmClient3::LaunchAndDebugPlmAppWide, LaunchAndDebugPlmAppWide, LaunchAndDebugPlmAppWide method [Windows Debugging], IDebugPlmClient3 interface, IDebugPlmClient3 interface [Windows Debugging], LaunchAndDebugPlmAppWide method, debugger.idebugplmclient3_launchanddebugplmappwide
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugPlmClient3.LaunchAndDebugPlmAppWide
+title: IDebugPlmClient3::LaunchAndDebugPlmAppWide method
+author: windows-driver-content
+description: Launches and attaches to a Process Lifecycle Management (PLM) application.
+old-location: debugger\idebugplmclient3_launchanddebugplmappwide.htm
+old-project: debugger
+ms.assetid: F3DD5912-46E5-43E5-A920-940FC8FCD83F
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugPlmClient3, LaunchAndDebugPlmAppWide method [Windows Debugging], IDebugPlmClient3::LaunchAndDebugPlmAppWide, dbgeng/IDebugPlmClient3::LaunchAndDebugPlmAppWide, LaunchAndDebugPlmAppWide, LaunchAndDebugPlmAppWide method [Windows Debugging], IDebugPlmClient3 interface, IDebugPlmClient3 interface [Windows Debugging], LaunchAndDebugPlmAppWide method, debugger.idebugplmclient3_launchanddebugplmappwide
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugPlmClient3.LaunchAndDebugPlmAppWide
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

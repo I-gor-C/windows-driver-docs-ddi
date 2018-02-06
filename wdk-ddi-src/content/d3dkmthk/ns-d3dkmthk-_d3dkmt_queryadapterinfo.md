@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmthk._D3DKMT_QUERYADAPTERINFO
-title : "_D3DKMT_QUERYADAPTERINFO"
-author : windows-driver-content
-description : The D3DKMT_QUERYADAPTERINFO structure contains information that describes the graphics adapter.
-old-location : display\d3dkmt_queryadapterinfo.htm
-old-project : display
-ms.assetid : 2bc9afc3-2fcf-4f62-85d4-67f824733904
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : "_D3DKMT_QUERYADAPTERINFO, d3dkmthk/D3DKMT_QUERYADAPTERINFO, KMTQUERYADAPTERINFOTYPE, D3DKMT_QUERYADAPTERINFO, D3DKMT_QUERYADAPTERINFO structure [Display Devices], OpenGL_Structs_10a338e9-c5a8-44e0-9ad7-87d5a3ab742e.xml, display.d3dkmt_queryadapterinfo"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported  starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_QUERYADAPTERINFO
+UID: NS:d3dkmthk._D3DKMT_QUERYADAPTERINFO
+title: "_D3DKMT_QUERYADAPTERINFO"
+author: windows-driver-content
+description: The D3DKMT_QUERYADAPTERINFO structure contains information that describes the graphics adapter.
+old-location: display\d3dkmt_queryadapterinfo.htm
+old-project: display
+ms.assetid: 2bc9afc3-2fcf-4f62-85d4-67f824733904
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: "_D3DKMT_QUERYADAPTERINFO, d3dkmthk/D3DKMT_QUERYADAPTERINFO, KMTQUERYADAPTERINFOTYPE, D3DKMT_QUERYADAPTERINFO, D3DKMT_QUERYADAPTERINFO structure [Display Devices], OpenGL_Structs_10a338e9-c5a8-44e0-9ad7-87d5a3ab742e.xml, display.d3dkmt_queryadapterinfo"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported  starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmthk.h
+apiname:
+-	D3DKMT_QUERYADAPTERINFO
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_QUERYADAPTERINFO
 ---
 
 # _D3DKMT_QUERYADAPTERINFO structure

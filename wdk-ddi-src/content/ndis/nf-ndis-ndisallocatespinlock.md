@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisAllocateSpinLock
-title : NdisAllocateSpinLock function
-author : windows-driver-content
-description : The NdisAllocateSpinLock function initializes a variable of type NDIS_SPIN_LOCK, used to synchronize access to resources shared among non-ISR driver functions.
-old-location : netvista\ndisallocatespinlock.htm
-old-project : netvista
-ms.assetid : e6199eab-a1e8-428f-8a3c-4828d3899cec
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.ndisallocatespinlock, NdisAllocateSpinLock function [Network Drivers Starting with Windows Vista], NdisAllocateSpinLock, ndis/NdisAllocateSpinLock, ndis_spin_lock_ref_f42dc321-9805-443e-a7b3-315ab403aeba.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisAllocateSpinLock (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisAllocateSpinLock (NDIS   5.1)) in Windows XP.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : SpinLockDpr, SpinLockDprRelease, SpinlockRelease
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : Any level (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisAllocateSpinLock
+title: NdisAllocateSpinLock function
+author: windows-driver-content
+description: The NdisAllocateSpinLock function initializes a variable of type NDIS_SPIN_LOCK, used to synchronize access to resources shared among non-ISR driver functions.
+old-location: netvista\ndisallocatespinlock.htm
+old-project: netvista
+ms.assetid: e6199eab-a1e8-428f-8a3c-4828d3899cec
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.ndisallocatespinlock, NdisAllocateSpinLock function [Network Drivers Starting with Windows Vista], NdisAllocateSpinLock, ndis/NdisAllocateSpinLock, ndis_spin_lock_ref_f42dc321-9805-443e-a7b3-315ab403aeba.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisAllocateSpinLock (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisAllocateSpinLock (NDIS   5.1)) in Windows XP.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: SpinLockDpr, SpinLockDprRelease, SpinlockRelease
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: Any level (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisAllocateSpinLock
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

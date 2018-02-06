@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.IoGetBootDiskInformation
-title : IoGetBootDiskInformation function
-author : windows-driver-content
-description : The IoGetBootDiskInformation routine returns information describing the boot and system disks.
-old-location : kernel\iogetbootdiskinformation.htm
-old-project : kernel
-ms.assetid : 744d5eae-2bdf-46b0-9412-f73e55939d8b
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.iogetbootdiskinformation, IoGetBootDiskInformation, wdm/IoGetBootDiskInformation, k104_11afe919-6902-4f53-9006-57cc4be126f1.xml, IoGetBootDiskInformation routine [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.IoGetBootDiskInformation
+title: IoGetBootDiskInformation function
+author: windows-driver-content
+description: The IoGetBootDiskInformation routine returns information describing the boot and system disks.
+old-location: kernel\iogetbootdiskinformation.htm
+old-project: kernel
+ms.assetid: 744d5eae-2bdf-46b0-9412-f73e55939d8b
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.iogetbootdiskinformation, IoGetBootDiskInformation, wdm/IoGetBootDiskInformation, k104_11afe919-6902-4f53-9006-57cc4be126f1.xml, IoGetBootDiskInformation routine [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoGetBootDiskInformation
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

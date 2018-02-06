@@ -1,42 +1,47 @@
 ---
-UID : NC:ursdevice.EVT_URS_SET_ROLE
-title : EVT_URS_SET_ROLE
-author : windows-driver-content
-description : The URS class extension invokes this event callback when it requires the client driver to change the role of the controller.
-old-location : buses\evt_urs_set_role.htm
-old-project : usbref
-ms.assetid : 287B674F-9692-47FA-AB92-F101270F7FC4
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : buses.evt_urs_set_role, EvtUrsSetRole callback function [Buses], EvtUrsSetRole, EVT_URS_SET_ROLE, EVT_URS_SET_ROLE, ursdevice/EvtUrsSetRole, PFN_URS_SET_ROLE callback function pointer [Buses], PFN_URS_SET_ROLE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ursdevice.h
-req.include-header : Urscx.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 1.15
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : UMDETW_ALLOCATION_USAGE
-req.product : Windows 10 or later.
+UID: NC:ursdevice.EVT_URS_SET_ROLE
+title: EVT_URS_SET_ROLE
+author: windows-driver-content
+description: The URS class extension invokes this event callback when it requires the client driver to change the role of the controller.
+old-location: buses\evt_urs_set_role.htm
+old-project: usbref
+ms.assetid: 287B674F-9692-47FA-AB92-F101270F7FC4
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: buses.evt_urs_set_role, EvtUrsSetRole callback function [Buses], EvtUrsSetRole, EVT_URS_SET_ROLE, EVT_URS_SET_ROLE, ursdevice/EvtUrsSetRole, PFN_URS_SET_ROLE callback function pointer [Buses], PFN_URS_SET_ROLE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ursdevice.h
+req.include-header: Urscx.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 1.15
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	ursdevice.h
+apiname:
+-	PFN_URS_SET_ROLE
+product: Windows
+targetos: Windows
+req.typenames: UMDETW_ALLOCATION_USAGE
+req.product: Windows 10 or later.
 ---
 
 

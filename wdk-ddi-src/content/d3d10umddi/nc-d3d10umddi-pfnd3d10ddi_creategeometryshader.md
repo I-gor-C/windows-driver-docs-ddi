@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3D10DDI_CREATEGEOMETRYSHADER
-title : PFND3D10DDI_CREATEGEOMETRYSHADER
-author : windows-driver-content
-description : The CreateGeometryShader function creates a geometry shader.
-old-location : display\creategeometryshader.htm
-old-project : display
-ms.assetid : b3b422e3-f8da-4aad-a230-7c7e26dd72ec
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.creategeometryshader, CreateGeometryShader callback function [Display Devices], CreateGeometryShader, PFND3D10DDI_CREATEGEOMETRYSHADER, PFND3D10DDI_CREATEGEOMETRYSHADER, d3d10umddi/CreateGeometryShader, UserModeDisplayDriverDx10_Functions_9802537e-bb60-4aae-8049-11ccff9f99a5.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3D10DDI_CREATEGEOMETRYSHADER
+title: PFND3D10DDI_CREATEGEOMETRYSHADER
+author: windows-driver-content
+description: The CreateGeometryShader function creates a geometry shader.
+old-location: display\creategeometryshader.htm
+old-project: display
+ms.assetid: b3b422e3-f8da-4aad-a230-7c7e26dd72ec
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.creategeometryshader, CreateGeometryShader callback function [Display Devices], CreateGeometryShader, PFND3D10DDI_CREATEGEOMETRYSHADER, PFND3D10DDI_CREATEGEOMETRYSHADER, d3d10umddi/CreateGeometryShader, UserModeDisplayDriverDx10_Functions_9802537e-bb60-4aae-8049-11ccff9f99a5.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	CreateGeometryShader
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

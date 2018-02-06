@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugSymbols3.AppendImagePath
-title : IDebugSymbols3::AppendImagePath method
-author : windows-driver-content
-description : The AppendImagePath method appends directories to the executable image path.
-old-location : debugger\appendimagepath.htm
-old-project : debugger
-ms.assetid : faafc6d0-f311-46c1-87c1-8b0ea20984db
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : dbgeng/IDebugSymbols2::AppendImagePath, debugger.appendimagepath, IDebugSymbols_ea3dc04a-42d9-4457-830d-5544f50c5a97.xml, AppendImagePath method [Windows Debugging], IDebugSymbols3 interface [Windows Debugging], AppendImagePath method, IDebugSymbols2::AppendImagePath, IDebugSymbols interface [Windows Debugging], AppendImagePath method, IDebugSymbols3, IDebugSymbols::AppendImagePath, AppendImagePath method [Windows Debugging], IDebugSymbols2 interface, dbgeng/IDebugSymbols::AppendImagePath, AppendImagePath method [Windows Debugging], IDebugSymbols3 interface, dbgeng/IDebugSymbols3::AppendImagePath, AppendImagePath method [Windows Debugging], IDebugSymbols interface, AppendImagePath, IDebugSymbols3::AppendImagePath, IDebugSymbols2 interface [Windows Debugging], AppendImagePath method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSymbols3.AppendImagePath
+title: IDebugSymbols3::AppendImagePath method
+author: windows-driver-content
+description: The AppendImagePath method appends directories to the executable image path.
+old-location: debugger\appendimagepath.htm
+old-project: debugger
+ms.assetid: faafc6d0-f311-46c1-87c1-8b0ea20984db
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: dbgeng/IDebugSymbols2::AppendImagePath, debugger.appendimagepath, IDebugSymbols_ea3dc04a-42d9-4457-830d-5544f50c5a97.xml, AppendImagePath method [Windows Debugging], IDebugSymbols3 interface [Windows Debugging], AppendImagePath method, IDebugSymbols2::AppendImagePath, IDebugSymbols interface [Windows Debugging], AppendImagePath method, IDebugSymbols3, IDebugSymbols::AppendImagePath, AppendImagePath method [Windows Debugging], IDebugSymbols2 interface, dbgeng/IDebugSymbols::AppendImagePath, AppendImagePath method [Windows Debugging], IDebugSymbols3 interface, dbgeng/IDebugSymbols3::AppendImagePath, AppendImagePath method [Windows Debugging], IDebugSymbols interface, AppendImagePath, IDebugSymbols3::AppendImagePath, IDebugSymbols2 interface [Windows Debugging], AppendImagePath method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Dbgeng.h
+apiname:
+-	IDebugSymbols.AppendImagePath
+-	IDebugSymbols2.AppendImagePath
+-	IDebugSymbols3.AppendImagePath
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dukmdt._D3DDDI_ALLOCATIONINFO
-title : "_D3DDDI_ALLOCATIONINFO"
-author : windows-driver-content
-description : The D3DDDI_ALLOCATIONINFO structure describes an allocation.
-old-location : display\d3dddi_allocationinfo.htm
-old-project : display
-ms.assetid : 69181a7c-62bd-4df0-95fc-fe6c3ab14209
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DDDI_ALLOCATIONINFO, D3DDDI_ALLOCATIONINFO structure [Display Devices], d3dukmdt/D3DDDI_ALLOCATIONINFO, _D3DDDI_ALLOCATIONINFO, display.d3dddi_allocationinfo, D3D_other_Structs_5125c057-c4b7-45fd-b7d9-9ebcfce4fff7.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dukmdt.h
-req.include-header : D3dumddi.h, D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDI_ALLOCATIONINFO
+UID: NS:d3dukmdt._D3DDDI_ALLOCATIONINFO
+title: "_D3DDDI_ALLOCATIONINFO"
+author: windows-driver-content
+description: The D3DDDI_ALLOCATIONINFO structure describes an allocation.
+old-location: display\d3dddi_allocationinfo.htm
+old-project: display
+ms.assetid: 69181a7c-62bd-4df0-95fc-fe6c3ab14209
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DDDI_ALLOCATIONINFO, D3DDDI_ALLOCATIONINFO structure [Display Devices], d3dukmdt/D3DDDI_ALLOCATIONINFO, _D3DDDI_ALLOCATIONINFO, display.d3dddi_allocationinfo, D3D_other_Structs_5125c057-c4b7-45fd-b7d9-9ebcfce4fff7.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dukmdt.h
+req.include-header: D3dumddi.h, D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dukmdt.h
+apiname:
+-	D3DDDI_ALLOCATIONINFO
+product: Windows
+targetos: Windows
+req.typenames: D3DDDI_ALLOCATIONINFO
 ---
 
 # _D3DDDI_ALLOCATIONINFO structure

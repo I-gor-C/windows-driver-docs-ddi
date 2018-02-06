@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._D3DDDI_OVERLAYINFO
-title : "_D3DDDI_OVERLAYINFO"
-author : windows-driver-content
-description : The D3DDDI_OVERLAYINFO structure describes information about an overlay.
-old-location : display\d3dddi_overlayinfo.htm
-old-project : display
-ms.assetid : e2732ea9-4fd6-416d-8fb0-1ccf1d1ad0df
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3D_other_Structs_b9046736-50b8-46b1-92c9-5d879ee7c64d.xml, display.d3dddi_overlayinfo, D3DDDI_OVERLAYINFO, _D3DDDI_OVERLAYINFO, D3DDDI_OVERLAYINFO structure [Display Devices], d3dumddi/D3DDDI_OVERLAYINFO
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDI_OVERLAYINFO
+UID: NS:d3dumddi._D3DDDI_OVERLAYINFO
+title: "_D3DDDI_OVERLAYINFO"
+author: windows-driver-content
+description: The D3DDDI_OVERLAYINFO structure describes information about an overlay.
+old-location: display\d3dddi_overlayinfo.htm
+old-project: display
+ms.assetid: e2732ea9-4fd6-416d-8fb0-1ccf1d1ad0df
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3D_other_Structs_b9046736-50b8-46b1-92c9-5d879ee7c64d.xml, display.d3dddi_overlayinfo, D3DDDI_OVERLAYINFO, _D3DDDI_OVERLAYINFO, D3DDDI_OVERLAYINFO structure [Display Devices], d3dumddi/D3DDDI_OVERLAYINFO
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	D3DDDI_OVERLAYINFO
+product: Windows
+targetos: Windows
+req.typenames: D3DDDI_OVERLAYINFO
 ---
 
 # _D3DDDI_OVERLAYINFO structure

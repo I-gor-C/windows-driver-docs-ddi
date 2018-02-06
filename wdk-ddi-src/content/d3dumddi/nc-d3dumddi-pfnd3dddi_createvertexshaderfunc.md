@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_CREATEVERTEXSHADERFUNC
-title : PFND3DDDI_CREATEVERTEXSHADERFUNC
-author : windows-driver-content
-description : The CreateVertexShaderFunc function converts vertex shader code into a hardware-specific format and associates the code with a shader handle.
-old-location : display\createvertexshaderfunc.htm
-old-project : display
-ms.assetid : e986d37a-6039-4bc4-b5e8-6c4d4d7adedd
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.createvertexshaderfunc, CreateVertexShaderFunc callback function [Display Devices], CreateVertexShaderFunc, PFND3DDDI_CREATEVERTEXSHADERFUNC, PFND3DDDI_CREATEVERTEXSHADERFUNC, d3dumddi/CreateVertexShaderFunc, UserModeDisplayDriver_Functions_bb697f1f-765f-46d9-961a-f4e8060727bc.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_CREATEVERTEXSHADERFUNC
+title: PFND3DDDI_CREATEVERTEXSHADERFUNC
+author: windows-driver-content
+description: The CreateVertexShaderFunc function converts vertex shader code into a hardware-specific format and associates the code with a shader handle.
+old-location: display\createvertexshaderfunc.htm
+old-project: display
+ms.assetid: e986d37a-6039-4bc4-b5e8-6c4d4d7adedd
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.createvertexshaderfunc, CreateVertexShaderFunc callback function [Display Devices], CreateVertexShaderFunc, PFND3DDDI_CREATEVERTEXSHADERFUNC, PFND3DDDI_CREATEVERTEXSHADERFUNC, d3dumddi/CreateVertexShaderFunc, UserModeDisplayDriver_Functions_bb697f1f-765f-46d9-961a-f4e8060727bc.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	CreateVertexShaderFunc
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

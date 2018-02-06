@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.tagKS_VBIINFOHEADER
-title : tagKS_VBIINFOHEADER
-author : windows-driver-content
-description : The KS_VBIINFOHEADER structure describes raw vertical blanking interval (VBI) streams.
-old-location : stream\ks_vbiinfoheader.htm
-old-project : stream
-ms.assetid : 4424be3a-6e73-449c-b5fb-5cbc1109490d
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : PKS_VBIINFOHEADER, tagKS_VBIINFOHEADER, KS_VBIINFOHEADER, vidcapstruct_2a637c59-2852-4b59-9d92-f51c9892df85.xml, ksmedia/KS_VBIINFOHEADER, stream.ks_vbiinfoheader, KS_VBIINFOHEADER structure [Streaming Media Devices], ksmedia/PKS_VBIINFOHEADER, *PKS_VBIINFOHEADER, PKS_VBIINFOHEADER structure pointer [Streaming Media Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KS_VBIINFOHEADER, *PKS_VBIINFOHEADER
+UID: NS:ksmedia.tagKS_VBIINFOHEADER
+title: tagKS_VBIINFOHEADER
+author: windows-driver-content
+description: The KS_VBIINFOHEADER structure describes raw vertical blanking interval (VBI) streams.
+old-location: stream\ks_vbiinfoheader.htm
+old-project: stream
+ms.assetid: 4424be3a-6e73-449c-b5fb-5cbc1109490d
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: PKS_VBIINFOHEADER, tagKS_VBIINFOHEADER, KS_VBIINFOHEADER, vidcapstruct_2a637c59-2852-4b59-9d92-f51c9892df85.xml, ksmedia/KS_VBIINFOHEADER, stream.ks_vbiinfoheader, KS_VBIINFOHEADER structure [Streaming Media Devices], ksmedia/PKS_VBIINFOHEADER, *PKS_VBIINFOHEADER, PKS_VBIINFOHEADER structure pointer [Streaming Media Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	KS_VBIINFOHEADER
+product: Windows
+targetos: Windows
+req.typenames: KS_VBIINFOHEADER, *PKS_VBIINFOHEADER
 ---
 
 # tagKS_VBIINFOHEADER structure

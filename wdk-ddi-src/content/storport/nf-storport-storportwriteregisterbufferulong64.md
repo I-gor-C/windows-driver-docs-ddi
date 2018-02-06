@@ -1,42 +1,47 @@
 ---
-UID : NF:storport.StorPortWriteRegisterBufferUlong64
-title : StorPortWriteRegisterBufferUlong64 macro
-author : windows-driver-content
-description : This StorPortWriteRegisterBufferUlong64 routine writes a number of ULONG64 values from a the specified 64-bit register address.
-old-location : storage\storportwriteregisterbufferulong64.htm
-old-project : storage
-ms.assetid : 3C36DB8F-46C2-4E81-B2F3-6DE78D91566E
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storport/StorPortWriteRegisterBufferUlong64, StorPortWriteRegisterBufferUlong64 routine [Storage Devices], StorPortWriteRegisterBufferUlong64, storage.storportwriteregisterbufferulong64
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : macro
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : storport.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STOR_SPINLOCK
-req.product : Windows 10 or later.
+UID: NF:storport.StorPortWriteRegisterBufferUlong64
+title: StorPortWriteRegisterBufferUlong64 macro
+author: windows-driver-content
+description: This StorPortWriteRegisterBufferUlong64 routine writes a number of ULONG64 values from a the specified 64-bit register address.
+old-location: storage\storportwriteregisterbufferulong64.htm
+old-project: storage
+ms.assetid: 3C36DB8F-46C2-4E81-B2F3-6DE78D91566E
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storport/StorPortWriteRegisterBufferUlong64, StorPortWriteRegisterBufferUlong64 routine [Storage Devices], StorPortWriteRegisterBufferUlong64, storage.storportwriteregisterbufferulong64
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: macro
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: storport.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	storport.h
+apiname:
+-	StorPortWriteRegisterBufferUlong64
+product: Windows
+targetos: Windows
+req.typenames: STOR_SPINLOCK
+req.product: Windows 10 or later.
 ---
 
 

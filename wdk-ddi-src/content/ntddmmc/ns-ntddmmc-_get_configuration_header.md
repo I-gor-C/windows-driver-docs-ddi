@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddmmc._GET_CONFIGURATION_HEADER
-title : "_GET_CONFIGURATION_HEADER"
-author : windows-driver-content
-description : The GET_CONFIGURATION_HEADER structure is used to format the output data retrieved by the IOCTL_CDROM_GET_CONFIGURATION request.
-old-location : storage\get_configuration_header.htm
-old-project : storage
-ms.assetid : 8de19f1b-faca-4b27-9287-20edc12f2c83
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : PGET_CONFIGURATION_HEADER structure pointer [Storage Devices], _GET_CONFIGURATION_HEADER, ntddmmc/PGET_CONFIGURATION_HEADER, GET_CONFIGURATION_HEADER, ntddmmc/GET_CONFIGURATION_HEADER, GET_CONFIGURATION_HEADER structure [Storage Devices], *PGET_CONFIGURATION_HEADER, structs-CD-ROM_f15044b6-5bbe-4d82-9826-dbe0c96a488c.xml, storage.get_configuration_header, PGET_CONFIGURATION_HEADER
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddmmc.h
-req.include-header : Ntddcdrm.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : GET_CONFIGURATION_HEADER, *PGET_CONFIGURATION_HEADER
+UID: NS:ntddmmc._GET_CONFIGURATION_HEADER
+title: "_GET_CONFIGURATION_HEADER"
+author: windows-driver-content
+description: The GET_CONFIGURATION_HEADER structure is used to format the output data retrieved by the IOCTL_CDROM_GET_CONFIGURATION request.
+old-location: storage\get_configuration_header.htm
+old-project: storage
+ms.assetid: 8de19f1b-faca-4b27-9287-20edc12f2c83
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: PGET_CONFIGURATION_HEADER structure pointer [Storage Devices], _GET_CONFIGURATION_HEADER, ntddmmc/PGET_CONFIGURATION_HEADER, GET_CONFIGURATION_HEADER, ntddmmc/GET_CONFIGURATION_HEADER, GET_CONFIGURATION_HEADER structure [Storage Devices], *PGET_CONFIGURATION_HEADER, structs-CD-ROM_f15044b6-5bbe-4d82-9826-dbe0c96a488c.xml, storage.get_configuration_header, PGET_CONFIGURATION_HEADER
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddmmc.h
+req.include-header: Ntddcdrm.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddmmc.h
+apiname:
+-	GET_CONFIGURATION_HEADER
+product: Windows
+targetos: Windows
+req.typenames: GET_CONFIGURATION_HEADER, *PGET_CONFIGURATION_HEADER
 ---
 
 # _GET_CONFIGURATION_HEADER structure

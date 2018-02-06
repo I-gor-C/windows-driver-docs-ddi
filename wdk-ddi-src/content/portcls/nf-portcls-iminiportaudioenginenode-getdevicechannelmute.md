@@ -1,41 +1,46 @@
 ---
-UID : NF:portcls.IMiniportAudioEngineNode.GetDeviceChannelMute
-title : IMiniportAudioEngineNode::GetDeviceChannelMute method
-author : windows-driver-content
-description : Gets the state of the Mute node for the audio device channel.
-old-location : audio\iminiportaudioenginenode_getdevicechannelmute.htm
-old-project : audio
-ms.assetid : 60CEBF40-25D3-49F0-A4BF-40440E1A3EE6
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : IMiniportAudioEngineNode interface [Audio Devices], GetDeviceChannelMute method, portcls/IMiniportAudioEngineNode::GetDeviceChannelMute, audio.iminiportaudioenginenode_getdevicechannelmute, GetDeviceChannelMute method [Audio Devices], IMiniportAudioEngineNode interface, GetDeviceChannelMute, IMiniportAudioEngineNode::GetDeviceChannelMute, IMiniportAudioEngineNode, GetDeviceChannelMute method [Audio Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : portcls.h
-req.include-header : 
-req.target-type : Universal
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : portcls.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.IMiniportAudioEngineNode.GetDeviceChannelMute
+title: IMiniportAudioEngineNode::GetDeviceChannelMute method
+author: windows-driver-content
+description: Gets the state of the Mute node for the audio device channel.
+old-location: audio\iminiportaudioenginenode_getdevicechannelmute.htm
+old-project: audio
+ms.assetid: 60CEBF40-25D3-49F0-A4BF-40440E1A3EE6
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: IMiniportAudioEngineNode interface [Audio Devices], GetDeviceChannelMute method, portcls/IMiniportAudioEngineNode::GetDeviceChannelMute, audio.iminiportaudioenginenode_getdevicechannelmute, GetDeviceChannelMute method [Audio Devices], IMiniportAudioEngineNode interface, GetDeviceChannelMute, IMiniportAudioEngineNode::GetDeviceChannelMute, IMiniportAudioEngineNode, GetDeviceChannelMute method [Audio Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: portcls.h
+req.include-header: 
+req.target-type: Universal
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: portcls.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Portcls.h
+apiname:
+-	IMiniportAudioEngineNode.GetDeviceChannelMute
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

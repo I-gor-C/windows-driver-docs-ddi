@@ -1,41 +1,46 @@
 ---
-UID : NS:ndkpi._NDK_EXTENSION_INTERFACE
-title : "_NDK_EXTENSION_INTERFACE"
-author : windows-driver-content
-description : The NDK_EXTENSION_INTERFACE structure specifies dispatch function entry points for an NDK extension interface.
-old-location : netvista\ndk_extension_interface.htm
-old-project : netvista
-ms.assetid : BFA8FF36-1B10-4358-8826-9D5C32F27CFF
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : "_NDK_EXTENSION_INTERFACE, ndkpi/NDK_EXTENSION_INTERFACE, NDK_EXTENSION_INTERFACE, PNDK_EXTENSION_INTERFACE structure pointer [Network Drivers Starting with Windows Vista], netvista.ndk_extension_interface, ndkpi/PNDK_EXTENSION_INTERFACE, PNDK_EXTENSION_INTERFACE, NDK_EXTENSION_INTERFACE structure [Network Drivers Starting with Windows Vista]"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndkpi.h
-req.include-header : Ndkpi.h
-req.target-type : Windows
-req.target-min-winverclnt : None supported,Supported in NDIS 6.30 and later.
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDK_EXTENSION_INTERFACE
+UID: NS:ndkpi._NDK_EXTENSION_INTERFACE
+title: "_NDK_EXTENSION_INTERFACE"
+author: windows-driver-content
+description: The NDK_EXTENSION_INTERFACE structure specifies dispatch function entry points for an NDK extension interface.
+old-location: netvista\ndk_extension_interface.htm
+old-project: netvista
+ms.assetid: BFA8FF36-1B10-4358-8826-9D5C32F27CFF
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: "_NDK_EXTENSION_INTERFACE, ndkpi/NDK_EXTENSION_INTERFACE, NDK_EXTENSION_INTERFACE, PNDK_EXTENSION_INTERFACE structure pointer [Network Drivers Starting with Windows Vista], netvista.ndk_extension_interface, ndkpi/PNDK_EXTENSION_INTERFACE, PNDK_EXTENSION_INTERFACE, NDK_EXTENSION_INTERFACE structure [Network Drivers Starting with Windows Vista]"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndkpi.h
+req.include-header: Ndkpi.h
+req.target-type: Windows
+req.target-min-winverclnt: None supported,Supported in NDIS 6.30 and later.
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndkpi.h
+apiname:
+-	NDK_EXTENSION_INTERFACE
+product: Windows
+targetos: Windows
+req.typenames: NDK_EXTENSION_INTERFACE
 ---
 
 # _NDK_EXTENSION_INTERFACE structure

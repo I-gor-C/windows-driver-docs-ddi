@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugControl3.RemoveBreakpoint
-title : IDebugControl3::RemoveBreakpoint method
-author : windows-driver-content
-description : The RemoveBreakpoint method removes a breakpoint.
-old-location : debugger\removebreakpoint.htm
-old-project : debugger
-ms.assetid : ce0f5e42-3f4e-48e1-9e73-96bca96e8e23
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : RemoveBreakpoint method [Windows Debugging], IDebugControl::RemoveBreakpoint, dbgeng/IDebugControl::RemoveBreakpoint, IDebugControl interface [Windows Debugging], RemoveBreakpoint method, IDebugControl_431f31ce-38fb-4350-851b-49b103047943.xml, RemoveBreakpoint method [Windows Debugging], IDebugControl2 interface, dbgeng/IDebugControl3::RemoveBreakpoint, IDebugControl3, dbgeng/IDebugControl2::RemoveBreakpoint, debugger.removebreakpoint, RemoveBreakpoint method [Windows Debugging], IDebugControl3 interface, IDebugControl2 interface [Windows Debugging], RemoveBreakpoint method, IDebugControl3::RemoveBreakpoint, IDebugControl2::RemoveBreakpoint, RemoveBreakpoint method [Windows Debugging], IDebugControl interface, RemoveBreakpoint, IDebugControl3 interface [Windows Debugging], RemoveBreakpoint method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl3.RemoveBreakpoint
+title: IDebugControl3::RemoveBreakpoint method
+author: windows-driver-content
+description: The RemoveBreakpoint method removes a breakpoint.
+old-location: debugger\removebreakpoint.htm
+old-project: debugger
+ms.assetid: ce0f5e42-3f4e-48e1-9e73-96bca96e8e23
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: RemoveBreakpoint method [Windows Debugging], IDebugControl::RemoveBreakpoint, dbgeng/IDebugControl::RemoveBreakpoint, IDebugControl interface [Windows Debugging], RemoveBreakpoint method, IDebugControl_431f31ce-38fb-4350-851b-49b103047943.xml, RemoveBreakpoint method [Windows Debugging], IDebugControl2 interface, dbgeng/IDebugControl3::RemoveBreakpoint, IDebugControl3, dbgeng/IDebugControl2::RemoveBreakpoint, debugger.removebreakpoint, RemoveBreakpoint method [Windows Debugging], IDebugControl3 interface, IDebugControl2 interface [Windows Debugging], RemoveBreakpoint method, IDebugControl3::RemoveBreakpoint, IDebugControl2::RemoveBreakpoint, RemoveBreakpoint method [Windows Debugging], IDebugControl interface, RemoveBreakpoint, IDebugControl3 interface [Windows Debugging], RemoveBreakpoint method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl.RemoveBreakpoint
+-	IDebugControl2.RemoveBreakpoint
+-	IDebugControl3.RemoveBreakpoint
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.IoGetDiskDeviceObject
-title : IoGetDiskDeviceObject function
-author : windows-driver-content
-description : The IoGetDiskDeviceObject routine retrieves a pointer to the disk device object associated with a given file system volume device object.
-old-location : ifsk\iogetdiskdeviceobject.htm
-old-project : ifsk
-ms.assetid : c4f27011-f198-474e-8d2c-8bf35c3c8c66
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : IoGetDiskDeviceObject routine [Installable File System Drivers], ifsk.iogetdiskdeviceobject, ioref_b3532bdd-87b6-4e6b-91a0-093b8ed5aa6c.xml, IoGetDiskDeviceObject, ntifs/IoGetDiskDeviceObject
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : This routine is available on Update Rollup for Windows 2000 Service Pack 4 (SP4) and on Windows XP and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.IoGetDiskDeviceObject
+title: IoGetDiskDeviceObject function
+author: windows-driver-content
+description: The IoGetDiskDeviceObject routine retrieves a pointer to the disk device object associated with a given file system volume device object.
+old-location: ifsk\iogetdiskdeviceobject.htm
+old-project: ifsk
+ms.assetid: c4f27011-f198-474e-8d2c-8bf35c3c8c66
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: IoGetDiskDeviceObject routine [Installable File System Drivers], ifsk.iogetdiskdeviceobject, ioref_b3532bdd-87b6-4e6b-91a0-093b8ed5aa6c.xml, IoGetDiskDeviceObject, ntifs/IoGetDiskDeviceObject
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: This routine is available on Update Rollup for Windows 2000 Service Pack 4 (SP4) and on Windows XP and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoGetDiskDeviceObject
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

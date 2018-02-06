@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.IoWMIOpenBlock
-title : IoWMIOpenBlock function
-author : windows-driver-content
-description : The IoWMIOpenBlock routine opens the WMI data block object for the specified WMI class.
-old-location : kernel\iowmiopenblock.htm
-old-project : kernel
-ms.assetid : c23d1861-59df-4bd4-a005-173ccac53049
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.iowmiopenblock, IoWMIOpenBlock routine [Kernel-Mode Driver Architecture], IoWMIOpenBlock, k104_19f378c4-3729-4668-aef0-0e675d2e1ae4.xml, wdm/IoWMIOpenBlock
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Ntddk.h, Ntifs.h. The WMIGUID_XXX values are declared in Wmistr.h. To use them, include Wmistr.h.
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows XP and later versions of the Windows operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.IoWMIOpenBlock
+title: IoWMIOpenBlock function
+author: windows-driver-content
+description: The IoWMIOpenBlock routine opens the WMI data block object for the specified WMI class.
+old-location: kernel\iowmiopenblock.htm
+old-project: kernel
+ms.assetid: c23d1861-59df-4bd4-a005-173ccac53049
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.iowmiopenblock, IoWMIOpenBlock routine [Kernel-Mode Driver Architecture], IoWMIOpenBlock, k104_19f378c4-3729-4668-aef0-0e675d2e1ae4.xml, wdm/IoWMIOpenBlock
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Ntddk.h, Ntifs.h. The WMIGUID_XXX values are declared in Wmistr.h. To use them, include Wmistr.h.
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows XP and later versions of the Windows operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoWMIOpenBlock
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NF:hbaapi.HBA_GetFCPStatistics
-title : HBA_GetFCPStatistics function
-author : windows-driver-content
-description : The HBA_GetFCPStatistics routine retrieves traffic statistics that the fibre channel protocol (FCP) has collected for the indicated logical unit.
-old-location : storage\hba_getfcpstatistics.htm
-old-project : storage
-ms.assetid : 62ef9d02-3a59-4d4e-a48f-21a8bb4f6e58
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.hba_getfcpstatistics, hbaapi/HBA_GetFCPStatistics, HBA_GetFCPStatistics, fibreHBA_rtns_59fb5caf-3df0-4c87-902c-6832645895d1.xml, HBA_GetFCPStatistics routine [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : hbaapi.h
-req.include-header : Hbaapi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Hbaapi.lib
-req.dll : Hbaapi.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HBA_WWNTYPE
+UID: NF:hbaapi.HBA_GetFCPStatistics
+title: HBA_GetFCPStatistics function
+author: windows-driver-content
+description: The HBA_GetFCPStatistics routine retrieves traffic statistics that the fibre channel protocol (FCP) has collected for the indicated logical unit.
+old-location: storage\hba_getfcpstatistics.htm
+old-project: storage
+ms.assetid: 62ef9d02-3a59-4d4e-a48f-21a8bb4f6e58
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.hba_getfcpstatistics, hbaapi/HBA_GetFCPStatistics, HBA_GetFCPStatistics, fibreHBA_rtns_59fb5caf-3df0-4c87-902c-6832645895d1.xml, HBA_GetFCPStatistics routine [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: hbaapi.h
+req.include-header: Hbaapi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Hbaapi.lib
+req.dll: Hbaapi.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Hbaapi.dll
+apiname:
+-	HBA_GetFCPStatistics
+product: Windows
+targetos: Windows
+req.typenames: HBA_WWNTYPE
 ---
 
 

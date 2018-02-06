@@ -1,41 +1,46 @@
 ---
-UID : NS:bthioctl._BTH_DEVICE_INFO_LIST
-title : "_BTH_DEVICE_INFO_LIST"
-author : windows-driver-content
-description : The BTH_DEVICE_INFO_LIST structure contains output information about all cached, previously discovered remote devices.
-old-location : bltooth\bth_device_info_list.htm
-old-project : bltooth
-ms.assetid : ad4888fc-3d90-4920-bf84-aea18841d238
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : BTH_DEVICE_INFO_LIST structure [Bluetooth Devices], PBTH_DEVICE_INFO_LIST, bthioctl/BTH_DEVICE_INFO_LIST, bthioctl/PBTH_DEVICE_INFO_LIST, *PBTH_DEVICE_INFO_LIST, _BTH_DEVICE_INFO_LIST, bltooth.bth_device_info_list, bth_structs_230962ed-c458-4c9e-a317-e2508b07c059.xml, BTH_DEVICE_INFO_LIST, PBTH_DEVICE_INFO_LIST structure pointer [Bluetooth Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : bthioctl.h
-req.include-header : Bthioctl.h
-req.target-type : Windows
-req.target-min-winverclnt : Versions:\_Supported in Windows Vista, and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= PASSIVE_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PBTH_DEVICE_INFO_LIST, BTH_DEVICE_INFO_LIST"
+UID: NS:bthioctl._BTH_DEVICE_INFO_LIST
+title: "_BTH_DEVICE_INFO_LIST"
+author: windows-driver-content
+description: The BTH_DEVICE_INFO_LIST structure contains output information about all cached, previously discovered remote devices.
+old-location: bltooth\bth_device_info_list.htm
+old-project: bltooth
+ms.assetid: ad4888fc-3d90-4920-bf84-aea18841d238
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: BTH_DEVICE_INFO_LIST structure [Bluetooth Devices], PBTH_DEVICE_INFO_LIST, bthioctl/BTH_DEVICE_INFO_LIST, bthioctl/PBTH_DEVICE_INFO_LIST, *PBTH_DEVICE_INFO_LIST, _BTH_DEVICE_INFO_LIST, bltooth.bth_device_info_list, bth_structs_230962ed-c458-4c9e-a317-e2508b07c059.xml, BTH_DEVICE_INFO_LIST, PBTH_DEVICE_INFO_LIST structure pointer [Bluetooth Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: bthioctl.h
+req.include-header: Bthioctl.h
+req.target-type: Windows
+req.target-min-winverclnt: Versions:\_Supported in Windows Vista, and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= PASSIVE_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	bthioctl.h
+apiname:
+-	BTH_DEVICE_INFO_LIST
+product: Windows
+targetos: Windows
+req.typenames: "*PBTH_DEVICE_INFO_LIST, BTH_DEVICE_INFO_LIST"
 ---
 
 # _BTH_DEVICE_INFO_LIST structure

@@ -1,42 +1,47 @@
 ---
-UID : NS:wiamindr_lh._WIAS_ENDORSER_VALUE
-title : "_WIAS_ENDORSER_VALUE"
-author : windows-driver-content
-description : The WIAS_ENDORSER_VALUE structure stores token/value pairs for endorser strings.
-old-location : image\wias_endorser_value.htm
-old-project : image
-ms.assetid : 54395899-c35d-4251-9e9d-ec2128b28c67
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : WIAS_ENDORSER_VALUE structure [Imaging Devices], PWIAS_ENDORSER_VALUE, *PWIAS_ENDORSER_VALUE, PWIAS_ENDORSER_VALUE structure pointer [Imaging Devices], wiamindr_lh/PWIAS_ENDORSER_VALUE, wiamindr_lh/WIAS_ENDORSER_VALUE, wiastrct_b6e376e1-ecfd-4988-b752-3d81755cf990.xml, WIAS_ENDORSER_VALUE, image.wias_endorser_value, _WIAS_ENDORSER_VALUE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wiamindr_lh.h
-req.include-header : Wiamindr.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Me and in Windows XP and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWIAS_ENDORSER_VALUE, WIAS_ENDORSER_VALUE"
-req.product : Windows 10 or later.
+UID: NS:wiamindr_lh._WIAS_ENDORSER_VALUE
+title: "_WIAS_ENDORSER_VALUE"
+author: windows-driver-content
+description: The WIAS_ENDORSER_VALUE structure stores token/value pairs for endorser strings.
+old-location: image\wias_endorser_value.htm
+old-project: image
+ms.assetid: 54395899-c35d-4251-9e9d-ec2128b28c67
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: WIAS_ENDORSER_VALUE structure [Imaging Devices], PWIAS_ENDORSER_VALUE, *PWIAS_ENDORSER_VALUE, PWIAS_ENDORSER_VALUE structure pointer [Imaging Devices], wiamindr_lh/PWIAS_ENDORSER_VALUE, wiamindr_lh/WIAS_ENDORSER_VALUE, wiastrct_b6e376e1-ecfd-4988-b752-3d81755cf990.xml, WIAS_ENDORSER_VALUE, image.wias_endorser_value, _WIAS_ENDORSER_VALUE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wiamindr_lh.h
+req.include-header: Wiamindr.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Me and in Windows XP and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wiamindr_lh.h
+apiname:
+-	WIAS_ENDORSER_VALUE
+product: Windows
+targetos: Windows
+req.typenames: "*PWIAS_ENDORSER_VALUE, WIAS_ENDORSER_VALUE"
+req.product: Windows 10 or later.
 ---
 
 # _WIAS_ENDORSER_VALUE structure

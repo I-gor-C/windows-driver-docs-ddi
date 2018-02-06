@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugSymbols3.ResetScope
-title : IDebugSymbols3::ResetScope method
-author : windows-driver-content
-description : The ResetScope method resets the current scope to the default scope of the current thread.
-old-location : debugger\resetscope.htm
-old-project : debugger
-ms.assetid : de8b7c44-98a6-457d-8c04-05d4fc76be16
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : dbgeng/IDebugSymbols3::ResetScope, ResetScope method [Windows Debugging], IDebugSymbols interface, ResetScope method [Windows Debugging], ResetScope method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols3 interface [Windows Debugging], ResetScope method, ResetScope, IDebugSymbols::ResetScope, debugger.resetscope, IDebugSymbols2 interface [Windows Debugging], ResetScope method, IDebugSymbols3::ResetScope, ResetScope method [Windows Debugging], IDebugSymbols2 interface, dbgeng/IDebugSymbols2::ResetScope, IDebugSymbols interface [Windows Debugging], ResetScope method, dbgeng/IDebugSymbols::ResetScope, IDebugSymbols2::ResetScope, IDebugSymbols3, IDebugSymbols_e3d0b307-57e7-4bc1-83f6-3352dd33a7aa.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSymbols3.ResetScope
+title: IDebugSymbols3::ResetScope method
+author: windows-driver-content
+description: The ResetScope method resets the current scope to the default scope of the current thread.
+old-location: debugger\resetscope.htm
+old-project: debugger
+ms.assetid: de8b7c44-98a6-457d-8c04-05d4fc76be16
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: dbgeng/IDebugSymbols3::ResetScope, ResetScope method [Windows Debugging], IDebugSymbols interface, ResetScope method [Windows Debugging], ResetScope method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols3 interface [Windows Debugging], ResetScope method, ResetScope, IDebugSymbols::ResetScope, debugger.resetscope, IDebugSymbols2 interface [Windows Debugging], ResetScope method, IDebugSymbols3::ResetScope, ResetScope method [Windows Debugging], IDebugSymbols2 interface, dbgeng/IDebugSymbols2::ResetScope, IDebugSymbols interface [Windows Debugging], ResetScope method, dbgeng/IDebugSymbols::ResetScope, IDebugSymbols2::ResetScope, IDebugSymbols3, IDebugSymbols_e3d0b307-57e7-4bc1-83f6-3352dd33a7aa.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Dbgeng.h
+apiname:
+-	IDebugSymbols.ResetScope
+-	IDebugSymbols2.ResetScope
+-	IDebugSymbols3.ResetScope
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

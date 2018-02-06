@@ -1,41 +1,46 @@
 ---
-UID : NS:ndis._NDIS_MINIPORT_DRIVER_CHARACTERISTICS
-title : "_NDIS_MINIPORT_DRIVER_CHARACTERISTICS"
-author : windows-driver-content
-description : An NDIS driver initializes an NDIS_MINIPORT_DRIVER_CHARACTERISTICS structure to define its miniport driver characteristics, including the entry points for its MiniportXxx functions.
-old-location : netvista\ndis_miniport_driver_characteristics.htm
-old-project : netvista
-ms.assetid : 2e2c8522-127d-49d5-a5d6-97f9403bec89
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NDIS_MINIPORT_DRIVER_CHARACTERISTICS structure [Network Drivers Starting with Windows Vista], miniport_structures_ref_9a538743-5c3f-40c7-a83d-07d5efde350c.xml, _NDIS_MINIPORT_DRIVER_CHARACTERISTICS, ndis/PNDIS_MINIPORT_DRIVER_CHARACTERISTICS, PNDIS_MINIPORT_DRIVER_CHARACTERISTICS, PNDIS_MINIPORT_DRIVER_CHARACTERISTICS structure pointer [Network Drivers Starting with Windows Vista], NDIS_MINIPORT_DRIVER_CHARACTERISTICS, ndis/NDIS_MINIPORT_DRIVER_CHARACTERISTICS, *PNDIS_MINIPORT_DRIVER_CHARACTERISTICS, netvista.ndis_miniport_driver_characteristics
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : See Remarks section
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_MINIPORT_DRIVER_CHARACTERISTICS, *PNDIS_MINIPORT_DRIVER_CHARACTERISTICS
+UID: NS:ndis._NDIS_MINIPORT_DRIVER_CHARACTERISTICS
+title: "_NDIS_MINIPORT_DRIVER_CHARACTERISTICS"
+author: windows-driver-content
+description: An NDIS driver initializes an NDIS_MINIPORT_DRIVER_CHARACTERISTICS structure to define its miniport driver characteristics, including the entry points for its MiniportXxx functions.
+old-location: netvista\ndis_miniport_driver_characteristics.htm
+old-project: netvista
+ms.assetid: 2e2c8522-127d-49d5-a5d6-97f9403bec89
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NDIS_MINIPORT_DRIVER_CHARACTERISTICS structure [Network Drivers Starting with Windows Vista], miniport_structures_ref_9a538743-5c3f-40c7-a83d-07d5efde350c.xml, _NDIS_MINIPORT_DRIVER_CHARACTERISTICS, ndis/PNDIS_MINIPORT_DRIVER_CHARACTERISTICS, PNDIS_MINIPORT_DRIVER_CHARACTERISTICS, PNDIS_MINIPORT_DRIVER_CHARACTERISTICS structure pointer [Network Drivers Starting with Windows Vista], NDIS_MINIPORT_DRIVER_CHARACTERISTICS, ndis/NDIS_MINIPORT_DRIVER_CHARACTERISTICS, *PNDIS_MINIPORT_DRIVER_CHARACTERISTICS, netvista.ndis_miniport_driver_characteristics
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: See Remarks section
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndis.h
+apiname:
+-	NDIS_MINIPORT_DRIVER_CHARACTERISTICS
+product: Windows
+targetos: Windows
+req.typenames: NDIS_MINIPORT_DRIVER_CHARACTERISTICS, *PNDIS_MINIPORT_DRIVER_CHARACTERISTICS
 ---
 
 # _NDIS_MINIPORT_DRIVER_CHARACTERISTICS structure

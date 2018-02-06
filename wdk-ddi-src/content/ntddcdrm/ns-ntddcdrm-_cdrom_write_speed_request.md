@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddcdrm._CDROM_WRITE_SPEED_REQUEST
-title : "_CDROM_WRITE_SPEED_REQUEST"
-author : windows-driver-content
-description : The CDROM_WRITE_SPEED_REQUEST structure is used as an input parameter to the IOCTL_CDROM_GET_PERFORMANCE IOCTL and for requesting write speed descriptors.
-old-location : storage\cdrom_write_speed_request.htm
-old-project : storage
-ms.assetid : A7F8AFAE-AFFA-4022-8C04-2BF9177FE9EB
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : PCDROM_WRITE_SPEED_REQUEST structure pointer [Storage Devices], PCDROM_WRITE_SPEED_REQUEST, CDROM_WRITE_SPEED_REQUEST, _CDROM_WRITE_SPEED_REQUEST, storage.cdrom_write_speed_request, CDROM_WRITE_SPEED_REQUEST structure [Storage Devices], *PCDROM_WRITE_SPEED_REQUEST, ntddcdrm/CDROM_WRITE_SPEED_REQUEST, ntddcdrm/PCDROM_WRITE_SPEED_REQUEST
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddcdrm.h
-req.include-header : Ntddcdrm.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PCDROM_WRITE_SPEED_REQUEST, CDROM_WRITE_SPEED_REQUEST"
+UID: NS:ntddcdrm._CDROM_WRITE_SPEED_REQUEST
+title: "_CDROM_WRITE_SPEED_REQUEST"
+author: windows-driver-content
+description: The CDROM_WRITE_SPEED_REQUEST structure is used as an input parameter to the IOCTL_CDROM_GET_PERFORMANCE IOCTL and for requesting write speed descriptors.
+old-location: storage\cdrom_write_speed_request.htm
+old-project: storage
+ms.assetid: A7F8AFAE-AFFA-4022-8C04-2BF9177FE9EB
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: PCDROM_WRITE_SPEED_REQUEST structure pointer [Storage Devices], PCDROM_WRITE_SPEED_REQUEST, CDROM_WRITE_SPEED_REQUEST, _CDROM_WRITE_SPEED_REQUEST, storage.cdrom_write_speed_request, CDROM_WRITE_SPEED_REQUEST structure [Storage Devices], *PCDROM_WRITE_SPEED_REQUEST, ntddcdrm/CDROM_WRITE_SPEED_REQUEST, ntddcdrm/PCDROM_WRITE_SPEED_REQUEST
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddcdrm.h
+req.include-header: Ntddcdrm.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddcdrm.h
+apiname:
+-	CDROM_WRITE_SPEED_REQUEST
+product: Windows
+targetos: Windows
+req.typenames: "*PCDROM_WRITE_SPEED_REQUEST, CDROM_WRITE_SPEED_REQUEST"
 ---
 
 # _CDROM_WRITE_SPEED_REQUEST structure

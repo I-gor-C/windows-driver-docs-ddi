@@ -1,42 +1,48 @@
 ---
-UID : NF:srb.ScsiPortReadPortBufferUshort
-title : ScsiPortReadPortBufferUshort function
-author : windows-driver-content
-description : The ScsiPortReadPortBufferUshort routine transfers a given number of USHORT values from the HBA to a buffer.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future.
-old-location : storage\scsiportreadportbufferushort.htm
-old-project : storage
-ms.assetid : b218785c-170e-4a30-99c9-0db8705b7f5d
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.scsiportreadportbufferushort, ScsiPortReadPortBufferUshort routine [Storage Devices], srb/ScsiPortReadPortBufferUshort, ScsiPortReadPortBufferUshort, scsiprt_27acea07-f416-4fa1-894d-6bb38c020f6b.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : srb.h
-req.include-header : Miniport.h, Scsi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Scsiport.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SPB_CONTROLLER_CONFIG, *PSPB_CONTROLLER_CONFIG
-req.product : Windows 10 or later.
+UID: NF:srb.ScsiPortReadPortBufferUshort
+title: ScsiPortReadPortBufferUshort function
+author: windows-driver-content
+description: The ScsiPortReadPortBufferUshort routine transfers a given number of USHORT values from the HBA to a buffer.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future.
+old-location: storage\scsiportreadportbufferushort.htm
+old-project: storage
+ms.assetid: b218785c-170e-4a30-99c9-0db8705b7f5d
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.scsiportreadportbufferushort, ScsiPortReadPortBufferUshort routine [Storage Devices], srb/ScsiPortReadPortBufferUshort, ScsiPortReadPortBufferUshort, scsiprt_27acea07-f416-4fa1-894d-6bb38c020f6b.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: srb.h
+req.include-header: Miniport.h, Scsi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Scsiport.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Scsiport.lib
+-	Scsiport.dll
+apiname:
+-	ScsiPortReadPortBufferUshort
+product: Windows
+targetos: Windows
+req.typenames: SPB_CONTROLLER_CONFIG, *PSPB_CONTROLLER_CONFIG
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NF:mrx.RxpUnregisterMinirdr
-title : RxpUnregisterMinirdr function
-author : windows-driver-content
-description : RxpUnregisterMinirdr is called by a network mini-redirector driver to de-register the driver with RDBSS and remove the registration information from the internal RDBSS registration table.
-old-location : ifsk\rxpunregisterminirdr.htm
-old-project : ifsk
-ms.assetid : 84155e3f-8090-4b0d-a101-25ecd126bc37
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : RxpUnregisterMinirdr function [Installable File System Drivers], mrx/RxpUnregisterMinirdr, RxpUnregisterMinirdr, ifsk.rxpunregisterminirdr, rxref_3d8dd57c-4753-47c7-afda-efbd54882c74.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : mrx.h
-req.include-header : Mrx.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SetDSMCounters_IN, *PSetDSMCounters_IN
+UID: NF:mrx.RxpUnregisterMinirdr
+title: RxpUnregisterMinirdr function
+author: windows-driver-content
+description: RxpUnregisterMinirdr is called by a network mini-redirector driver to de-register the driver with RDBSS and remove the registration information from the internal RDBSS registration table.
+old-location: ifsk\rxpunregisterminirdr.htm
+old-project: ifsk
+ms.assetid: 84155e3f-8090-4b0d-a101-25ecd126bc37
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: RxpUnregisterMinirdr function [Installable File System Drivers], mrx/RxpUnregisterMinirdr, RxpUnregisterMinirdr, ifsk.rxpunregisterminirdr, rxref_3d8dd57c-4753-47c7-afda-efbd54882c74.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: mrx.h
+req.include-header: Mrx.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	mrx.h
+apiname:
+-	RxpUnregisterMinirdr
+product: Windows
+targetos: Windows
+req.typenames: SetDSMCounters_IN, *PSetDSMCounters_IN
 ---
 
 

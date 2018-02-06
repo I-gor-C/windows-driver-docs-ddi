@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.IoFreeIrp
-title : IoFreeIrp function
-author : windows-driver-content
-description : The IoFreeIrp routine releases a caller-allocated IRP from the caller's IoCompletion routine.
-old-location : kernel\iofreeirp.htm
-old-project : kernel
-ms.assetid : 4a032d44-c6c2-4dce-97ea-28ac47f6ad6c
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : IoFreeIrp routine [Kernel-Mode Driver Architecture], wdm/IoFreeIrp, IoFreeIrp, kernel.iofreeirp, k104_fc262cc4-a482-4a92-9f8e-1e5765c9b1d4.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : IoAllocateFree, IoBuildDeviceControlNoFree, IoBuildFsdFree, IoBuildSynchronousFsdRequestNoFree, HwStorPortProhibitedDDIs, IoFreeIrp
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.IoFreeIrp
+title: IoFreeIrp function
+author: windows-driver-content
+description: The IoFreeIrp routine releases a caller-allocated IRP from the caller's IoCompletion routine.
+old-location: kernel\iofreeirp.htm
+old-project: kernel
+ms.assetid: 4a032d44-c6c2-4dce-97ea-28ac47f6ad6c
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: IoFreeIrp routine [Kernel-Mode Driver Architecture], wdm/IoFreeIrp, IoFreeIrp, kernel.iofreeirp, k104_fc262cc4-a482-4a92-9f8e-1e5765c9b1d4.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: IoAllocateFree, IoBuildDeviceControlNoFree, IoBuildFsdFree, IoBuildSynchronousFsdRequestNoFree, HwStorPortProhibitedDDIs, IoFreeIrp
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoFreeIrp
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

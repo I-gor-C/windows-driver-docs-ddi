@@ -1,42 +1,50 @@
 ---
-UID : NF:wdfrequest.WdfRequestGetInformation
-title : WdfRequestGetInformation function
-author : windows-driver-content
-description : The WdfRequestGetInformation method returns completion status information for a specified I/O request.
-old-location : wdf\wdfrequestgetinformation.htm
-old-project : wdf
-ms.assetid : fd5f29f7-e9c6-48c4-8704-5db37b8c6337
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : PFN_WDFREQUESTGETINFORMATION, wdf.wdfrequestgetinformation, WdfRequestGetInformation, kmdf.wdfrequestgetinformation, wdfrequest/WdfRequestGetInformation, WdfRequestGetInformation method, DFRequestObjectRef_ea947de9-aea4-4e66-8686-f4ca5a1385c4.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfrequest.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : DriverCreate, InvalidReqAccess, InvalidReqAccessLocal, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_REQUEST_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfrequest.WdfRequestGetInformation
+title: WdfRequestGetInformation function
+author: windows-driver-content
+description: The WdfRequestGetInformation method returns completion status information for a specified I/O request.
+old-location: wdf\wdfrequestgetinformation.htm
+old-project: wdf
+ms.assetid: fd5f29f7-e9c6-48c4-8704-5db37b8c6337
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: PFN_WDFREQUESTGETINFORMATION, wdf.wdfrequestgetinformation, WdfRequestGetInformation, kmdf.wdfrequestgetinformation, wdfrequest/WdfRequestGetInformation, WdfRequestGetInformation method, DFRequestObjectRef_ea947de9-aea4-4e66-8686-f4ca5a1385c4.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfrequest.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: DriverCreate, InvalidReqAccess, InvalidReqAccessLocal, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+-	WUDFx02000.dll
+-	WUDFx02000.dll.dll
+apiname:
+-	WdfRequestGetInformation
+product: Windows
+targetos: Windows
+req.typenames: WDF_REQUEST_TYPE
+req.product: Windows 10 or later.
 ---
 
 

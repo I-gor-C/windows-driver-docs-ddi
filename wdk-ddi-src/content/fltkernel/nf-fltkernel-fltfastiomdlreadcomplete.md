@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltFastIoMdlReadComplete
-title : FltFastIoMdlReadComplete function
-author : windows-driver-content
-description : The FltFastIoMdlReadComplete routine completes the read operation that the FltFastIoMdlRead routine initiated.
-old-location : ifsk\fltfastiomdlreadcomplete.htm
-old-project : ifsk
-ms.assetid : 6F5E808C-9E35-4BE8-AE67-FDD354D6FD0E
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.fltfastiomdlreadcomplete, FsRtlMdlReadCompleteDev, FltFastIoMdlReadComplete, FsRtlMdlReadCompleteDev routine [Installable File System Drivers], fltkernel/FsRtlMdlReadCompleteDev
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltFastIoMdlReadComplete
+title: FltFastIoMdlReadComplete function
+author: windows-driver-content
+description: The FltFastIoMdlReadComplete routine completes the read operation that the FltFastIoMdlRead routine initiated.
+old-location: ifsk\fltfastiomdlreadcomplete.htm
+old-project: ifsk
+ms.assetid: 6F5E808C-9E35-4BE8-AE67-FDD354D6FD0E
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.fltfastiomdlreadcomplete, FsRtlMdlReadCompleteDev, FltFastIoMdlReadComplete, FsRtlMdlReadCompleteDev routine [Installable File System Drivers], fltkernel/FsRtlMdlReadCompleteDev
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	FsRtlMdlReadCompleteDev
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

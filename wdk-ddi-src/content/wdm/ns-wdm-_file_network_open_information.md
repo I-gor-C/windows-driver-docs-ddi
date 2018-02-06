@@ -1,42 +1,47 @@
 ---
-UID : NS:wdm._FILE_NETWORK_OPEN_INFORMATION
-title : "_FILE_NETWORK_OPEN_INFORMATION"
-author : windows-driver-content
-description : The FILE_NETWORK_OPEN_INFORMATION structure is used as an argument to ZwQueryInformationFile.
-old-location : kernel\file_network_open_information.htm
-old-project : kernel
-ms.assetid : 742fa221-70c8-410a-a582-aedf28872ada
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : FILE_NETWORK_OPEN_INFORMATION, wdm/PFILE_NETWORK_OPEN_INFORMATION, wdm/FILE_NETWORK_OPEN_INFORMATION, FILE_NETWORK_OPEN_INFORMATION structure [Kernel-Mode Driver Architecture], kernel.file_network_open_information, PFILE_NETWORK_OPEN_INFORMATION, *PFILE_NETWORK_OPEN_INFORMATION, PFILE_NETWORK_OPEN_INFORMATION structure pointer [Kernel-Mode Driver Architecture], kstruct_b_761510b6-751c-457d-a516-cce0d9fa3027.xml, _FILE_NETWORK_OPEN_INFORMATION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PFILE_NETWORK_OPEN_INFORMATION, FILE_NETWORK_OPEN_INFORMATION"
-req.product : Windows 10 or later.
+UID: NS:wdm._FILE_NETWORK_OPEN_INFORMATION
+title: "_FILE_NETWORK_OPEN_INFORMATION"
+author: windows-driver-content
+description: The FILE_NETWORK_OPEN_INFORMATION structure is used as an argument to ZwQueryInformationFile.
+old-location: kernel\file_network_open_information.htm
+old-project: kernel
+ms.assetid: 742fa221-70c8-410a-a582-aedf28872ada
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: FILE_NETWORK_OPEN_INFORMATION, wdm/PFILE_NETWORK_OPEN_INFORMATION, wdm/FILE_NETWORK_OPEN_INFORMATION, FILE_NETWORK_OPEN_INFORMATION structure [Kernel-Mode Driver Architecture], kernel.file_network_open_information, PFILE_NETWORK_OPEN_INFORMATION, *PFILE_NETWORK_OPEN_INFORMATION, PFILE_NETWORK_OPEN_INFORMATION structure pointer [Kernel-Mode Driver Architecture], kstruct_b_761510b6-751c-457d-a516-cce0d9fa3027.xml, _FILE_NETWORK_OPEN_INFORMATION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	FILE_NETWORK_OPEN_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: "*PFILE_NETWORK_OPEN_INFORMATION, FILE_NETWORK_OPEN_INFORMATION"
+req.product: Windows 10 or later.
 ---
 
 # _FILE_NETWORK_OPEN_INFORMATION structure

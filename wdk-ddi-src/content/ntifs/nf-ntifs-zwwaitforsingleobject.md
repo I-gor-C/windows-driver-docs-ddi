@@ -1,41 +1,47 @@
 ---
-UID : NF:ntifs.ZwWaitForSingleObject
-title : ZwWaitForSingleObject function
-author : windows-driver-content
-description : The ZwWaitForSingleObject routine waits until the specified object attains a state of Signaled. An optional time-out can also be specified.
-old-location : kernel\zwwaitforsingleobject.htm
-old-project : kernel
-ms.assetid : 5eea0877-329d-4fa3-847e-365d6a545b07
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ZwWaitForSingleObject, NtWaitForSingleObject, ntifs/ZwWaitForSingleObject, kernel.zwwaitforsingleobject, k111_44a7540a-fbf5-4f2e-92d1-0d23cc41a081.xml, ntifs/NtWaitForSingleObject, ZwWaitForSingleObject routine [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h, FltKernel.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows XP.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : HwStorPortProhibitedDDIs, SpNoWait
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.ZwWaitForSingleObject
+title: ZwWaitForSingleObject function
+author: windows-driver-content
+description: The ZwWaitForSingleObject routine waits until the specified object attains a state of Signaled. An optional time-out can also be specified.
+old-location: kernel\zwwaitforsingleobject.htm
+old-project: kernel
+ms.assetid: 5eea0877-329d-4fa3-847e-365d6a545b07
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ZwWaitForSingleObject, NtWaitForSingleObject, ntifs/ZwWaitForSingleObject, kernel.zwwaitforsingleobject, k111_44a7540a-fbf5-4f2e-92d1-0d23cc41a081.xml, ntifs/NtWaitForSingleObject, ZwWaitForSingleObject routine [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h, FltKernel.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows XP.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: HwStorPortProhibitedDDIs, SpNoWait
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ZwWaitForSingleObject
+-	NtWaitForSingleObject
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

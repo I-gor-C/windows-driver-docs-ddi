@@ -1,41 +1,46 @@
 ---
-UID : NF:ndischimney.NdisMOffloadEventIndicate
-title : NdisMOffloadEventIndicate function
-author : windows-driver-content
-description : An offload target calls the NdisMOffloadEventIndicate function to indicate various events to the host stack.
-old-location : netvista\ndismoffloadeventindicate.htm
-old-project : netvista
-ms.assetid : 81052e73-4dce-48df-8541-5da54e2156d8
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NdisMOffloadEventIndicate, tcp_chim_ndis_func_6199452b-e2ea-41ca-8a16-eaf5109430fe.xml, NdisMOffloadEventIndicate function [Network Drivers Starting with Windows Vista], ndischimney/NdisMOffloadEventIndicate, netvista.ndismoffloadeventindicate
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndischimney.h
-req.include-header : Ndischimney.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : DISPATCH_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PD_BUFFER_VIRTUAL_SUBNET_INFO
+UID: NF:ndischimney.NdisMOffloadEventIndicate
+title: NdisMOffloadEventIndicate function
+author: windows-driver-content
+description: An offload target calls the NdisMOffloadEventIndicate function to indicate various events to the host stack.
+old-location: netvista\ndismoffloadeventindicate.htm
+old-project: netvista
+ms.assetid: 81052e73-4dce-48df-8541-5da54e2156d8
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NdisMOffloadEventIndicate, tcp_chim_ndis_func_6199452b-e2ea-41ca-8a16-eaf5109430fe.xml, NdisMOffloadEventIndicate function [Network Drivers Starting with Windows Vista], ndischimney/NdisMOffloadEventIndicate, netvista.ndismoffloadeventindicate
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndischimney.h
+req.include-header: Ndischimney.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: DISPATCH_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndischimney.h
+apiname:
+-	NdisMOffloadEventIndicate
+product: Windows
+targetos: Windows
+req.typenames: PD_BUFFER_VIRTUAL_SUBNET_INFO
 ---
 
 

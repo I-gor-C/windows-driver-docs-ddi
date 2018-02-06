@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugSymbols3.GetConstantNameWide
-title : IDebugSymbols3::GetConstantNameWide method
-author : windows-driver-content
-description : The GetConstantNameWide method returns the name of the specified constant.
-old-location : debugger\getconstantnamewide.htm
-old-project : debugger
-ms.assetid : 743d2f83-905b-4bc9-8e23-b330c3ca7629
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : dbgeng/IDebugSymbols3::GetConstantNameWide, GetConstantNameWide method [Windows Debugging], GetConstantNameWide method [Windows Debugging], IDebugSymbols3 interface, GetConstantNameWide, debugger.getconstantnamewide, IDebugSymbols3::GetConstantNameWide, IDebugSymbols3, IDebugSymbols3 interface [Windows Debugging], GetConstantNameWide method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSymbols3.GetConstantNameWide
+title: IDebugSymbols3::GetConstantNameWide method
+author: windows-driver-content
+description: The GetConstantNameWide method returns the name of the specified constant.
+old-location: debugger\getconstantnamewide.htm
+old-project: debugger
+ms.assetid: 743d2f83-905b-4bc9-8e23-b330c3ca7629
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: dbgeng/IDebugSymbols3::GetConstantNameWide, GetConstantNameWide method [Windows Debugging], GetConstantNameWide method [Windows Debugging], IDebugSymbols3 interface, GetConstantNameWide, debugger.getconstantnamewide, IDebugSymbols3::GetConstantNameWide, IDebugSymbols3, IDebugSymbols3 interface [Windows Debugging], GetConstantNameWide method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugSymbols3.GetConstantNameWide
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

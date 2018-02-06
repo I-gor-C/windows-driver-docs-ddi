@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddndis._NDIS_OPER_STATE
-title : "_NDIS_OPER_STATE"
-author : windows-driver-content
-description : The NDIS_OPER_STATE structure provides the current operational state of an NDIS network interface.
-old-location : netvista\ndis_oper_state.htm
-old-project : netvista
-ms.assetid : c08f8bcd-23fc-445c-9c42-e5c4edc75d78
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : ntddndis/NDIS_OPER_STATE, _NDIS_OPER_STATE, ntddndis/PNDIS_OPER_STATE, PNDIS_OPER_STATE structure pointer [Network Drivers Starting with Windows Vista], ndis_status_ref_d5bb44f8-a279-4806-b81b-87e109078a82.xml, NDIS_OPER_STATE structure [Network Drivers Starting with Windows Vista], NDIS_OPER_STATE, netvista.ndis_oper_state, *PNDIS_OPER_STATE, PNDIS_OPER_STATE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PNDIS_OPER_STATE, NDIS_OPER_STATE"
+UID: NS:ntddndis._NDIS_OPER_STATE
+title: "_NDIS_OPER_STATE"
+author: windows-driver-content
+description: The NDIS_OPER_STATE structure provides the current operational state of an NDIS network interface.
+old-location: netvista\ndis_oper_state.htm
+old-project: netvista
+ms.assetid: c08f8bcd-23fc-445c-9c42-e5c4edc75d78
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: ntddndis/NDIS_OPER_STATE, _NDIS_OPER_STATE, ntddndis/PNDIS_OPER_STATE, PNDIS_OPER_STATE structure pointer [Network Drivers Starting with Windows Vista], ndis_status_ref_d5bb44f8-a279-4806-b81b-87e109078a82.xml, NDIS_OPER_STATE structure [Network Drivers Starting with Windows Vista], NDIS_OPER_STATE, netvista.ndis_oper_state, *PNDIS_OPER_STATE, PNDIS_OPER_STATE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddndis.h
+apiname:
+-	NDIS_OPER_STATE
+product: Windows
+targetos: Windows
+req.typenames: "*PNDIS_OPER_STATE, NDIS_OPER_STATE"
 ---
 
 # _NDIS_OPER_STATE structure

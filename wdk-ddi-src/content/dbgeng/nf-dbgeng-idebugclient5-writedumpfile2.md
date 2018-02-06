@@ -1,41 +1,49 @@
 ---
-UID : NF:dbgeng.IDebugClient5.WriteDumpFile2
-title : IDebugClient5::WriteDumpFile2 method
-author : windows-driver-content
-description : The WriteDumpFile2 method creates a user-mode or kernel-modecrash dump file.
-old-location : debugger\writedumpfile2.htm
-old-project : debugger
-ms.assetid : a6cdefc2-8670-485d-979a-8a270dad1c0b
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugClient3 interface [Windows Debugging], WriteDumpFile2 method, WriteDumpFile2, WriteDumpFile2 method [Windows Debugging], IDebugClient2 interface, WriteDumpFile2 method [Windows Debugging], IDebugClient4 interface, dbgeng/IDebugClient4::WriteDumpFile2, dbgeng/IDebugClient5::WriteDumpFile2, dbgeng/IDebugClient3::WriteDumpFile2, IDebugClient2 interface [Windows Debugging], WriteDumpFile2 method, IDebugClient2::WriteDumpFile2, IDebugClient4 interface [Windows Debugging], WriteDumpFile2 method, WriteDumpFile2 method [Windows Debugging], IDebugClient3::WriteDumpFile2, WriteDumpFile2 method [Windows Debugging], IDebugClient3 interface, IDebugClient4::WriteDumpFile2, WriteDumpFile2 method [Windows Debugging], IDebugClient5 interface, dbgeng/IDebugClient2::WriteDumpFile2, IDebugClient_6ce4aeba-f7a6-4872-9ff2-baf3b3165471.xml, IDebugClient5::WriteDumpFile2, IDebugClient5 interface [Windows Debugging], WriteDumpFile2 method, debugger.writedumpfile2, IDebugClient5
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugClient5.WriteDumpFile2
+title: IDebugClient5::WriteDumpFile2 method
+author: windows-driver-content
+description: The WriteDumpFile2 method creates a user-mode or kernel-modecrash dump file.
+old-location: debugger\writedumpfile2.htm
+old-project: debugger
+ms.assetid: a6cdefc2-8670-485d-979a-8a270dad1c0b
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugClient3 interface [Windows Debugging], WriteDumpFile2 method, WriteDumpFile2, WriteDumpFile2 method [Windows Debugging], IDebugClient2 interface, WriteDumpFile2 method [Windows Debugging], IDebugClient4 interface, dbgeng/IDebugClient4::WriteDumpFile2, dbgeng/IDebugClient5::WriteDumpFile2, dbgeng/IDebugClient3::WriteDumpFile2, IDebugClient2 interface [Windows Debugging], WriteDumpFile2 method, IDebugClient2::WriteDumpFile2, IDebugClient4 interface [Windows Debugging], WriteDumpFile2 method, WriteDumpFile2 method [Windows Debugging], IDebugClient3::WriteDumpFile2, WriteDumpFile2 method [Windows Debugging], IDebugClient3 interface, IDebugClient4::WriteDumpFile2, WriteDumpFile2 method [Windows Debugging], IDebugClient5 interface, dbgeng/IDebugClient2::WriteDumpFile2, IDebugClient_6ce4aeba-f7a6-4872-9ff2-baf3b3165471.xml, IDebugClient5::WriteDumpFile2, IDebugClient5 interface [Windows Debugging], WriteDumpFile2 method, debugger.writedumpfile2, IDebugClient5
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugClient2.WriteDumpFile2
+-	IDebugClient3.WriteDumpFile2
+-	IDebugClient4.WriteDumpFile2
+-	IDebugClient5.WriteDumpFile2
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

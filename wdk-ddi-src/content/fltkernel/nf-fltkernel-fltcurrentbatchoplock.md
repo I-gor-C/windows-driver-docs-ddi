@@ -1,41 +1,47 @@
 ---
-UID : NF:fltkernel.FltCurrentBatchOplock
-title : FltCurrentBatchOplock function
-author : windows-driver-content
-description : A minifilter driver calls FltCurrentBatchOplock to determine whether there are any batch or filter opportunistic locks (oplocks) on a file.
-old-location : ifsk\fltcurrentbatchoplock.htm
-old-project : ifsk
-ms.assetid : 00eb27ee-2c6d-47c7-b3a6-63a6a7aac2fb
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : fltkernel/FltCurrentBatchOplock, FltApiRef_a_to_d_7835829e-3397-47c3-bc12-c77f8d844927.xml, ifsk.fltcurrentbatchoplock, FltCurrentBatchOplock function [Installable File System Drivers], FltCurrentBatchOplock
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltCurrentBatchOplock
+title: FltCurrentBatchOplock function
+author: windows-driver-content
+description: A minifilter driver calls FltCurrentBatchOplock to determine whether there are any batch or filter opportunistic locks (oplocks) on a file.
+old-location: ifsk\fltcurrentbatchoplock.htm
+old-project: ifsk
+ms.assetid: 00eb27ee-2c6d-47c7-b3a6-63a6a7aac2fb
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: fltkernel/FltCurrentBatchOplock, FltApiRef_a_to_d_7835829e-3397-47c3-bc12-c77f8d844927.xml, ifsk.fltcurrentbatchoplock, FltCurrentBatchOplock function [Installable File System Drivers], FltCurrentBatchOplock
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	FltMgr.lib
+-	FltMgr.dll
+apiname:
+-	FltCurrentBatchOplock
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NC:ndis.FILTER_DIRECT_OID_REQUEST_COMPLETE
-title : FILTER_DIRECT_OID_REQUEST_COMPLETE
-author : windows-driver-content
-description : NDIS calls the FilterDirectOidRequestComplete function to complete a filter driver direct OID request that queried or set information in an underlying driver.Note  You must declare the function by using the FILTER_DIRECT_OID_REQUEST_COMPLETE type.
-old-location : netvista\filterdirectoidrequestcomplete.htm
-old-project : netvista
-ms.assetid : a97c86e9-4fd9-4e2f-9787-4fa19c38a69b
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.filterdirectoidrequestcomplete, FilterDirectOidRequestComplete callback function [Network Drivers Starting with Windows Vista], FilterDirectOidRequestComplete, FILTER_DIRECT_OID_REQUEST_COMPLETE, FILTER_DIRECT_OID_REQUEST_COMPLETE, ndis/FilterDirectOidRequestComplete, ndis_request_direct_ref_7c57d5c9-2a37-4602-b94e-df700652b1a9.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.1 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
+UID: NC:ndis.FILTER_DIRECT_OID_REQUEST_COMPLETE
+title: FILTER_DIRECT_OID_REQUEST_COMPLETE
+author: windows-driver-content
+description: NDIS calls the FilterDirectOidRequestComplete function to complete a filter driver direct OID request that queried or set information in an underlying driver.Note  You must declare the function by using the FILTER_DIRECT_OID_REQUEST_COMPLETE type.
+old-location: netvista\filterdirectoidrequestcomplete.htm
+old-project: netvista
+ms.assetid: a97c86e9-4fd9-4e2f-9787-4fa19c38a69b
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.filterdirectoidrequestcomplete, FilterDirectOidRequestComplete callback function [Network Drivers Starting with Windows Vista], FilterDirectOidRequestComplete, FILTER_DIRECT_OID_REQUEST_COMPLETE, FILTER_DIRECT_OID_REQUEST_COMPLETE, ndis/FilterDirectOidRequestComplete, ndis_request_direct_ref_7c57d5c9-2a37-4602-b94e-df700652b1a9.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.1 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ndis.h
+apiname:
+-	FilterDirectOidRequestComplete
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:gpioclx._GPIO_WRITE_PINS_PARAMETERS
-title : "_GPIO_WRITE_PINS_PARAMETERS"
-author : windows-driver-content
-description : The GPIO_WRITE_PINS_PARAMETERS structure describes a write operation on a group of general-purpose I/O (GPIO) pins.
-old-location : gpio\gpio_write_pins_parameters.htm
-old-project : GPIO
-ms.assetid : 5607AFBA-2C8C-4637-81E8-7940CF9E989A
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : GPIO.gpio_write_pins_parameters, gpioclx/PGPIO_WRITE_PINS_PARAMETERS, gpioclx/GPIO_WRITE_PINS_PARAMETERS, GPIO_WRITE_PINS_PARAMETERS structure [Parallel Ports], _GPIO_WRITE_PINS_PARAMETERS, *PGPIO_WRITE_PINS_PARAMETERS, PGPIO_WRITE_PINS_PARAMETERS structure pointer [Parallel Ports], GPIO_WRITE_PINS_PARAMETERS, PGPIO_WRITE_PINS_PARAMETERS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : gpioclx.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PGPIO_WRITE_PINS_PARAMETERS, GPIO_WRITE_PINS_PARAMETERS"
+UID: NS:gpioclx._GPIO_WRITE_PINS_PARAMETERS
+title: "_GPIO_WRITE_PINS_PARAMETERS"
+author: windows-driver-content
+description: The GPIO_WRITE_PINS_PARAMETERS structure describes a write operation on a group of general-purpose I/O (GPIO) pins.
+old-location: gpio\gpio_write_pins_parameters.htm
+old-project: GPIO
+ms.assetid: 5607AFBA-2C8C-4637-81E8-7940CF9E989A
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: GPIO.gpio_write_pins_parameters, gpioclx/PGPIO_WRITE_PINS_PARAMETERS, gpioclx/GPIO_WRITE_PINS_PARAMETERS, GPIO_WRITE_PINS_PARAMETERS structure [Parallel Ports], _GPIO_WRITE_PINS_PARAMETERS, *PGPIO_WRITE_PINS_PARAMETERS, PGPIO_WRITE_PINS_PARAMETERS structure pointer [Parallel Ports], GPIO_WRITE_PINS_PARAMETERS, PGPIO_WRITE_PINS_PARAMETERS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: gpioclx.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Gpioclx.h
+apiname:
+-	GPIO_WRITE_PINS_PARAMETERS
+product: Windows
+targetos: Windows
+req.typenames: "*PGPIO_WRITE_PINS_PARAMETERS, GPIO_WRITE_PINS_PARAMETERS"
 ---
 
 # _GPIO_WRITE_PINS_PARAMETERS structure

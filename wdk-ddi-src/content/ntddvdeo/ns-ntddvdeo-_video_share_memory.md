@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddvdeo._VIDEO_SHARE_MEMORY
-title : "_VIDEO_SHARE_MEMORY"
-author : windows-driver-content
-description : The VIDEO_SHARE_MEMORY structure is used in a request to the video miniport driver for a block of user-mode memory to be shared with the specified process.
-old-location : display\video_share_memory.htm
-old-project : display
-ms.assetid : 2339da67-78cd-49d4-a70c-fd774706fe3f
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : Video_Structs_11e49bfc-ee25-48cd-9327-f09c6218ed72.xml, PVIDEO_SHARE_MEMORY structure pointer [Display Devices], ntddvdeo/VIDEO_SHARE_MEMORY, _VIDEO_SHARE_MEMORY, PVIDEO_SHARE_MEMORY, *PVIDEO_SHARE_MEMORY, display.video_share_memory, VIDEO_SHARE_MEMORY, VIDEO_SHARE_MEMORY structure [Display Devices], ntddvdeo/PVIDEO_SHARE_MEMORY
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddvdeo.h
-req.include-header : Ntddvdeo.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_SHARE_MEMORY, *PVIDEO_SHARE_MEMORY
+UID: NS:ntddvdeo._VIDEO_SHARE_MEMORY
+title: "_VIDEO_SHARE_MEMORY"
+author: windows-driver-content
+description: The VIDEO_SHARE_MEMORY structure is used in a request to the video miniport driver for a block of user-mode memory to be shared with the specified process.
+old-location: display\video_share_memory.htm
+old-project: display
+ms.assetid: 2339da67-78cd-49d4-a70c-fd774706fe3f
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: Video_Structs_11e49bfc-ee25-48cd-9327-f09c6218ed72.xml, PVIDEO_SHARE_MEMORY structure pointer [Display Devices], ntddvdeo/VIDEO_SHARE_MEMORY, _VIDEO_SHARE_MEMORY, PVIDEO_SHARE_MEMORY, *PVIDEO_SHARE_MEMORY, display.video_share_memory, VIDEO_SHARE_MEMORY, VIDEO_SHARE_MEMORY structure [Display Devices], ntddvdeo/PVIDEO_SHARE_MEMORY
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddvdeo.h
+req.include-header: Ntddvdeo.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddvdeo.h
+apiname:
+-	VIDEO_SHARE_MEMORY
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_SHARE_MEMORY, *PVIDEO_SHARE_MEMORY
 ---
 
 # _VIDEO_SHARE_MEMORY structure

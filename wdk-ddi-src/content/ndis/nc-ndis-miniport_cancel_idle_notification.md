@@ -1,41 +1,46 @@
 ---
-UID : NC:ndis.MINIPORT_CANCEL_IDLE_NOTIFICATION
-title : MINIPORT_CANCEL_IDLE_NOTIFICATION
-author : windows-driver-content
-description : NDIS calls the MiniportCancelIdleNotification handler function to notify the miniport driver that NDIS has detected activity on the suspended network adapter.
-old-location : netvista\miniportcancelidlenotification.htm
-old-project : netvista
-ms.assetid : 9965E4EA-10E3-4240-9E4F-D3B49B8F9593
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.miniportcancelidlenotification, MiniportCancelIdleNotification callback function [Network Drivers Starting with Windows Vista], MiniportCancelIdleNotification, MINIPORT_CANCEL_IDLE_NOTIFICATION, MINIPORT_CANCEL_IDLE_NOTIFICATION, ndis/MiniportCancelIdleNotification
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.30 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
+UID: NC:ndis.MINIPORT_CANCEL_IDLE_NOTIFICATION
+title: MINIPORT_CANCEL_IDLE_NOTIFICATION
+author: windows-driver-content
+description: NDIS calls the MiniportCancelIdleNotification handler function to notify the miniport driver that NDIS has detected activity on the suspended network adapter.
+old-location: netvista\miniportcancelidlenotification.htm
+old-project: netvista
+ms.assetid: 9965E4EA-10E3-4240-9E4F-D3B49B8F9593
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.miniportcancelidlenotification, MiniportCancelIdleNotification callback function [Network Drivers Starting with Windows Vista], MiniportCancelIdleNotification, MINIPORT_CANCEL_IDLE_NOTIFICATION, MINIPORT_CANCEL_IDLE_NOTIFICATION, ndis/MiniportCancelIdleNotification
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.30 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ndis.h
+apiname:
+-	MiniportCancelIdleNotification
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NS:video._DDC_CONTROL
-title : "_DDC_CONTROL"
-author : windows-driver-content
-description : The DDC_CONTROL structure holds function pointers and EDID segment information needed by the VideoPortDDCMonitorHelper function, which is exported by the video port driver.
-old-location : display\ddc_control.htm
-old-project : display
-ms.assetid : 993c4913-1613-4ffb-86dd-fd8846139a46
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : "_DDC_CONTROL, video/DDC_CONTROL, DDC_CONTROL, display.ddc_control, video/PDDC_CONTROL, DDC_CONTROL structure [Display Devices], PDDC_CONTROL, *PDDC_CONTROL, PDDC_CONTROL structure pointer [Display Devices], Video_Structs_d3006e08-ed2e-471d-b9c1-326a35aaf8bf.xml"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDDC_CONTROL, DDC_CONTROL"
-req.product : Windows 10 or later.
+UID: NS:video._DDC_CONTROL
+title: "_DDC_CONTROL"
+author: windows-driver-content
+description: The DDC_CONTROL structure holds function pointers and EDID segment information needed by the VideoPortDDCMonitorHelper function, which is exported by the video port driver.
+old-location: display\ddc_control.htm
+old-project: display
+ms.assetid: 993c4913-1613-4ffb-86dd-fd8846139a46
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: "_DDC_CONTROL, video/DDC_CONTROL, DDC_CONTROL, display.ddc_control, video/PDDC_CONTROL, DDC_CONTROL structure [Display Devices], PDDC_CONTROL, *PDDC_CONTROL, PDDC_CONTROL structure pointer [Display Devices], Video_Structs_d3006e08-ed2e-471d-b9c1-326a35aaf8bf.xml"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	video.h
+apiname:
+-	DDC_CONTROL
+product: Windows
+targetos: Windows
+req.typenames: "*PDDC_CONTROL, DDC_CONTROL"
+req.product: Windows 10 or later.
 ---
 
 # _DDC_CONTROL structure

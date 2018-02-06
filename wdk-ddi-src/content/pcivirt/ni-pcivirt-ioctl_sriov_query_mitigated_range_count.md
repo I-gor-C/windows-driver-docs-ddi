@@ -1,41 +1,46 @@
 ---
-UID : NI:pcivirt.IOCTL_SRIOV_QUERY_MITIGATED_RANGE_COUNT
-title : IOCTL_SRIOV_QUERY_MITIGATED_RANGE_COUNT
-author : windows-driver-content
-description : The request determines the ranges of memory-mapped I/O space that must mitigated.
-old-location : pci\ioctl-sriov-query-mitigated-range-count.htm
-old-project : PCI
-ms.assetid : 68fd97a5-b7ea-43c0-96ed-b64445fd21dd
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : PCI.ioctl-sriov-query-mitigated-range-count, IOCTL_SRIOV_QUERY_MITIGATED_RANGE_COUNT control code [Buses], IOCTL_SRIOV_QUERY_MITIGATED_RANGE_COUNT, pcivirt/IOCTL_SRIOV_QUERY_MITIGATED_RANGE_COUNT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : pcivirt.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SRIOV_PF_EVENT, *PSRIOV_PF_EVENT
+UID: NI:pcivirt.IOCTL_SRIOV_QUERY_MITIGATED_RANGE_COUNT
+title: IOCTL_SRIOV_QUERY_MITIGATED_RANGE_COUNT
+author: windows-driver-content
+description: The request determines the ranges of memory-mapped I/O space that must mitigated.
+old-location: pci\ioctl-sriov-query-mitigated-range-count.htm
+old-project: PCI
+ms.assetid: 68fd97a5-b7ea-43c0-96ed-b64445fd21dd
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: PCI.ioctl-sriov-query-mitigated-range-count, IOCTL_SRIOV_QUERY_MITIGATED_RANGE_COUNT control code [Buses], IOCTL_SRIOV_QUERY_MITIGATED_RANGE_COUNT, pcivirt/IOCTL_SRIOV_QUERY_MITIGATED_RANGE_COUNT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: pcivirt.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Pcivirt.h
+apiname:
+-	IOCTL_SRIOV_QUERY_MITIGATED_RANGE_COUNT
+product: Windows
+targetos: Windows
+req.typenames: SRIOV_PF_EVENT, *PSRIOV_PF_EVENT
 ---
 
 # IOCTL_SRIOV_QUERY_MITIGATED_RANGE_COUNT IOCTL

@@ -1,42 +1,47 @@
 ---
-UID : NC:wdfdriver.EVT_WDF_DRIVER_DEVICE_ADD
-title : EVT_WDF_DRIVER_DEVICE_ADD
-author : windows-driver-content
-description : A driver's EvtDriverDeviceAdd event callback function performs device initialization operations when the Plug and Play (PnP) manager reports the existence of a device.
-old-location : wdf\evtdriverdeviceadd.htm
-old-project : wdf
-ms.assetid : b20db029-ee2c-4fb1-bd69-ccd2e37fdc9a
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.evtdriverdeviceadd, EvtDriverDeviceAdd callback function, EvtDriverDeviceAdd, EVT_WDF_DRIVER_DEVICE_ADD, EVT_WDF_DRIVER_DEVICE_ADD, wdfdriver/EvtDriverDeviceAdd, DFDriverObjectRef_9b5ff898-9b1b-4eb6-87f7-42bee5deab18.xml, kmdf.evtdriverdeviceadd
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdfdriver.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDF_DPC_CONFIG, WDF_DPC_CONFIG"
-req.product : Windows 10 or later.
+UID: NC:wdfdriver.EVT_WDF_DRIVER_DEVICE_ADD
+title: EVT_WDF_DRIVER_DEVICE_ADD
+author: windows-driver-content
+description: A driver's EvtDriverDeviceAdd event callback function performs device initialization operations when the Plug and Play (PnP) manager reports the existence of a device.
+old-location: wdf\evtdriverdeviceadd.htm
+old-project: wdf
+ms.assetid: b20db029-ee2c-4fb1-bd69-ccd2e37fdc9a
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.evtdriverdeviceadd, EvtDriverDeviceAdd callback function, EvtDriverDeviceAdd, EVT_WDF_DRIVER_DEVICE_ADD, EVT_WDF_DRIVER_DEVICE_ADD, wdfdriver/EvtDriverDeviceAdd, DFDriverObjectRef_9b5ff898-9b1b-4eb6-87f7-42bee5deab18.xml, kmdf.evtdriverdeviceadd
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdfdriver.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Wdfdriver.h
+apiname:
+-	EvtDriverDeviceAdd
+product: Windows
+targetos: Windows
+req.typenames: "*PWDF_DPC_CONFIG, WDF_DPC_CONFIG"
+req.product: Windows 10 or later.
 ---
 
 

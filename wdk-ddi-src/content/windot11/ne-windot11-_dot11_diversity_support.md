@@ -1,42 +1,47 @@
 ---
-UID : NE:windot11._DOT11_DIVERSITY_SUPPORT
-title : "_DOT11_DIVERSITY_SUPPORT"
-author : windows-driver-content
-description : Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
-old-location : netvista\dot11_diversity_support.htm
-old-project : netvista
-ms.assetid : 64eeb1bf-c18a-4dfa-b6ea-438d9e10fe4a
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : windot11/dot11_diversity_support_fixedlist, dot11_diversity_support_fixedlist, windot11/dot11_diversity_support_unknown, *PDOT11_DIVERSITY_SUPPORT, DOT11_DIVERSITY_SUPPORT enumeration [Network Drivers Starting with Windows Vista], PDOT11_DIVERSITY_SUPPORT enumeration pointer [Network Drivers Starting with Windows Vista], windot11/dot11_diversity_support_notsupported, Native_802.11_data_types_29b0e3d8-450c-4d41-817b-ba83cc912168.xml, dot11_diversity_support_unknown, PDOT11_DIVERSITY_SUPPORT, windot11/PDOT11_DIVERSITY_SUPPORT, netvista.dot11_diversity_support, windot11/dot11_diversity_support_dynamic, windot11/DOT11_DIVERSITY_SUPPORT, dot11_diversity_support_notsupported, DOT11_DIVERSITY_SUPPORT, dot11_diversity_support_dynamic, _DOT11_DIVERSITY_SUPPORT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : windot11.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating   systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT11_DIVERSITY_SUPPORT, *PDOT11_DIVERSITY_SUPPORT
-req.product : Windows 10 or later.
+UID: NE:windot11._DOT11_DIVERSITY_SUPPORT
+title: "_DOT11_DIVERSITY_SUPPORT"
+author: windows-driver-content
+description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+old-location: netvista\dot11_diversity_support.htm
+old-project: netvista
+ms.assetid: 64eeb1bf-c18a-4dfa-b6ea-438d9e10fe4a
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: windot11/dot11_diversity_support_fixedlist, dot11_diversity_support_fixedlist, windot11/dot11_diversity_support_unknown, *PDOT11_DIVERSITY_SUPPORT, DOT11_DIVERSITY_SUPPORT enumeration [Network Drivers Starting with Windows Vista], PDOT11_DIVERSITY_SUPPORT enumeration pointer [Network Drivers Starting with Windows Vista], windot11/dot11_diversity_support_notsupported, Native_802.11_data_types_29b0e3d8-450c-4d41-817b-ba83cc912168.xml, dot11_diversity_support_unknown, PDOT11_DIVERSITY_SUPPORT, windot11/PDOT11_DIVERSITY_SUPPORT, netvista.dot11_diversity_support, windot11/dot11_diversity_support_dynamic, windot11/DOT11_DIVERSITY_SUPPORT, dot11_diversity_support_notsupported, DOT11_DIVERSITY_SUPPORT, dot11_diversity_support_dynamic, _DOT11_DIVERSITY_SUPPORT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: windot11.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	windot11.h
+apiname:
+-	DOT11_DIVERSITY_SUPPORT
+product: Windows
+targetos: Windows
+req.typenames: DOT11_DIVERSITY_SUPPORT, *PDOT11_DIVERSITY_SUPPORT
+req.product: Windows 10 or later.
 ---
 
 # _DOT11_DIVERSITY_SUPPORT Enumeration
@@ -56,32 +61,32 @@ typedef enum _DOT11_DIVERSITY_SUPPORT {
 ## Constants
 
 <table>
-
-<tr>
-<td>dot11_diversity_support_dynamic</td>
-<td>The PHY supports antenna diversity and the dynamic control of diversity. The PHY layer management
+            
+                <tr>
+                    <td>dot11_diversity_support_dynamic</td>
+                    <td>The PHY supports antenna diversity and the dynamic control of diversity. The PHY layer management
      entity (LME) can dynamically modify the list of antennas specified by the 
      <b>dot11DiversitySelectionRx</b> MIB object</td>
-</tr>
-
-<tr>
-<td>dot11_diversity_support_fixedlist</td>
-<td>The PHY supports antenna diversity that is performed over the fixed list of antennas defined in
+                </tr>
+            
+                <tr>
+                    <td>dot11_diversity_support_fixedlist</td>
+                    <td>The PHY supports antenna diversity that is performed over the fixed list of antennas defined in
      the 
      <b>dot11DiversitySelectionRx</b> MIB object. For more information about this MIB object, see 
      <a href="https://msdn.microsoft.com/en-us/library/ee483634.aspx">
      OID_DOT11_DIVERSITY_SELECTION_RX</a>.</td>
-</tr>
-
-<tr>
-<td>dot11_diversity_support_notsupported</td>
-<td>The PHY does not support antenna diversity.</td>
-</tr>
-
-<tr>
-<td>dot11_diversity_support_unknown</td>
-<td>An uninitialized or unknown diversity support type.</td>
-</tr>
+                </tr>
+            
+                <tr>
+                    <td>dot11_diversity_support_notsupported</td>
+                    <td>The PHY does not support antenna diversity.</td>
+                </tr>
+            
+                <tr>
+                    <td>dot11_diversity_support_unknown</td>
+                    <td>An uninitialized or unknown diversity support type.</td>
+                </tr>
 </table>
 
 
@@ -91,9 +96,9 @@ typedef enum _DOT11_DIVERSITY_SUPPORT {
 | **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems. Available in Windows Vista and later versions of the Windows operating   systems. |
 | **Header** | windot11.h (include Ndis.h) |
 
-## See Also
+    ## See Also
 
-<a href="https://msdn.microsoft.com/en-us/library/ee483634.aspx">
+        <a href="https://msdn.microsoft.com/en-us/library/ee483634.aspx">
    OID_DOT11_DIVERSITY_SELECTION_RX</a>
 
  

@@ -1,41 +1,46 @@
 ---
-UID : NF:ntddk.PsSetCreateProcessNotifyRoutine
-title : PsSetCreateProcessNotifyRoutine function
-author : windows-driver-content
-description : The PsSetCreateProcessNotifyRoutine routine adds a driver-supplied callback routine to, or removes it from, a list of routines to be called whenever a process is created or deleted.
-old-location : kernel\pssetcreateprocessnotifyroutine.htm
-old-project : kernel
-ms.assetid : eeeea140-e469-476f-adce-4505817bc35e
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ntddk/PsSetCreateProcessNotifyRoutine, kernel.pssetcreateprocessnotifyroutine, PsSetCreateProcessNotifyRoutine routine [Kernel-Mode Driver Architecture], PsSetCreateProcessNotifyRoutine, k108_6ae7797a-ecbe-4665-85d5-e199f13613cd.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : IrqlPsPassive, PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.PsSetCreateProcessNotifyRoutine
+title: PsSetCreateProcessNotifyRoutine function
+author: windows-driver-content
+description: The PsSetCreateProcessNotifyRoutine routine adds a driver-supplied callback routine to, or removes it from, a list of routines to be called whenever a process is created or deleted.
+old-location: kernel\pssetcreateprocessnotifyroutine.htm
+old-project: kernel
+ms.assetid: eeeea140-e469-476f-adce-4505817bc35e
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ntddk/PsSetCreateProcessNotifyRoutine, kernel.pssetcreateprocessnotifyroutine, PsSetCreateProcessNotifyRoutine routine [Kernel-Mode Driver Architecture], PsSetCreateProcessNotifyRoutine, k108_6ae7797a-ecbe-4665-85d5-e199f13613cd.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: IrqlPsPassive, PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	PsSetCreateProcessNotifyRoutine
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

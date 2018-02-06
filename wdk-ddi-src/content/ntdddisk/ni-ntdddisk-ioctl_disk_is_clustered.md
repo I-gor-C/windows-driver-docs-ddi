@@ -1,41 +1,46 @@
 ---
-UID : NI:ntdddisk.IOCTL_DISK_IS_CLUSTERED
-title : IOCTL_DISK_IS_CLUSTERED
-author : windows-driver-content
-description : Allows a driver or application to determine if a disk is clustered.
-old-location : storage\ioctl_disk_is_clustered.htm
-old-project : storage
-ms.assetid : 46b72c16-2656-4ceb-a786-5fb24818b2a7
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_disk_is_clustered, IOCTL_DISK_IS_CLUSTERED control code [Storage Devices], IOCTL_DISK_IS_CLUSTERED, ntdddisk/IOCTL_DISK_IS_CLUSTERED, k307_a812ef4f-f10c-4d75-aaf8-a3ad4d41703e.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntdddisk.h
-req.include-header : Ntdddisk.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DETECTION_TYPE
+UID: NI:ntdddisk.IOCTL_DISK_IS_CLUSTERED
+title: IOCTL_DISK_IS_CLUSTERED
+author: windows-driver-content
+description: Allows a driver or application to determine if a disk is clustered.
+old-location: storage\ioctl_disk_is_clustered.htm
+old-project: storage
+ms.assetid: 46b72c16-2656-4ceb-a786-5fb24818b2a7
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_disk_is_clustered, IOCTL_DISK_IS_CLUSTERED control code [Storage Devices], IOCTL_DISK_IS_CLUSTERED, ntdddisk/IOCTL_DISK_IS_CLUSTERED, k307_a812ef4f-f10c-4d75-aaf8-a3ad4d41703e.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntdddisk.h
+req.include-header: Ntdddisk.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntdddisk.h
+apiname:
+-	IOCTL_DISK_IS_CLUSTERED
+product: Windows
+targetos: Windows
+req.typenames: DETECTION_TYPE
 ---
 
 # IOCTL_DISK_IS_CLUSTERED IOCTL

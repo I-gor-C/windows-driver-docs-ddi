@@ -1,41 +1,46 @@
 ---
-UID : NS:extsfns._FA_ENTRY
-title : "_FA_ENTRY"
-author : windows-driver-content
-description : A DebugFailureAnalysis object has a collection of failure analysis entries (FA entries). Each FA entry is represented by an FA_ENTRY structure. For more information, see Failure Analysis Entries, Tags, and Data Types.
-old-location : debugger\fa_entry.htm
-old-project : debugger
-ms.assetid : 912DCC1E-2C81-4702-8E12-6331DFB298F0
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : extsfns/FA_ENTRY, FA_ENTRY structure [Windows Debugging], _FA_ENTRY, *PFA_ENTRY, FA_ENTRY, debugger.fa_entry
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : extsfns.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FA_ENTRY, *PFA_ENTRY
+UID: NS:extsfns._FA_ENTRY
+title: "_FA_ENTRY"
+author: windows-driver-content
+description: A DebugFailureAnalysis object has a collection of failure analysis entries (FA entries). Each FA entry is represented by an FA_ENTRY structure. For more information, see Failure Analysis Entries, Tags, and Data Types.
+old-location: debugger\fa_entry.htm
+old-project: debugger
+ms.assetid: 912DCC1E-2C81-4702-8E12-6331DFB298F0
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: extsfns/FA_ENTRY, FA_ENTRY structure [Windows Debugging], _FA_ENTRY, *PFA_ENTRY, FA_ENTRY, debugger.fa_entry
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: extsfns.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	extsfns.h
+apiname:
+-	FA_ENTRY
+product: Windows
+targetos: Windows
+req.typenames: FA_ENTRY, *PFA_ENTRY
 ---
 
 # _FA_ENTRY structure

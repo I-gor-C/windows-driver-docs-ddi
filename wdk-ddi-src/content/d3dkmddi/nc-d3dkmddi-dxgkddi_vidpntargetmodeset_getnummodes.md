@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dkmddi.DXGKDDI_VIDPNTARGETMODESET_GETNUMMODES
-title : DXGKDDI_VIDPNTARGETMODESET_GETNUMMODES
-author : windows-driver-content
-description : The pfnGetNumModes function returns the number of target modes in a specified VidPN target mode set.
-old-location : display\dxgk_vidpntargetmodeset_interface_pfngetnummodes.htm
-old-project : display
-ms.assetid : 1197989a-c76e-4dee-a1c7-677b6558677c
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgk_vidpntargetmodeset_interface_pfngetnummodes, pfnGetNumModes callback function [Display Devices], pfnGetNumModes, DXGKDDI_VIDPNTARGETMODESET_GETNUMMODES, DXGKDDI_VIDPNTARGETMODESET_GETNUMMODES, d3dkmddi/pfnGetNumModes, VidPnFunctions_f2fa9ea6-6ce7-485d-bcd2-b3c340ca66fc.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
+UID: NC:d3dkmddi.DXGKDDI_VIDPNTARGETMODESET_GETNUMMODES
+title: DXGKDDI_VIDPNTARGETMODESET_GETNUMMODES
+author: windows-driver-content
+description: The pfnGetNumModes function returns the number of target modes in a specified VidPN target mode set.
+old-location: display\dxgk_vidpntargetmodeset_interface_pfngetnummodes.htm
+old-project: display
+ms.assetid: 1197989a-c76e-4dee-a1c7-677b6558677c
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgk_vidpntargetmodeset_interface_pfngetnummodes, pfnGetNumModes callback function [Display Devices], pfnGetNumModes, DXGKDDI_VIDPNTARGETMODESET_GETNUMMODES, DXGKDDI_VIDPNTARGETMODESET_GETNUMMODES, d3dkmddi/pfnGetNumModes, VidPnFunctions_f2fa9ea6-6ce7-485d-bcd2-b3c340ca66fc.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	pfnGetNumModes
+product: Windows
+targetos: Windows
+req.typenames: DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
 

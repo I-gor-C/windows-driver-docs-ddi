@@ -1,42 +1,47 @@
 ---
-UID : NE:wdm._POOL_TYPE
-title : "_POOL_TYPE"
-author : windows-driver-content
-description : The POOL_TYPE enumeration type specifies the type of system memory to allocate.
-old-location : kernel\pool_type.htm
-old-project : kernel
-ms.assetid : a3dd0c74-3835-4f03-8b62-08954baaffe7
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/PagedPoolCacheAlignedSession, NonPagedPoolBaseCacheAlignedMustS, NonPagedPoolMustSucceedSession, wdm/NonPagedPoolBase, NonPagedPoolCacheAlignedMustS, wdm/DontUseThisTypeSession, wdm/PagedPoolCacheAligned, wdm/NonPagedPoolSession, NonPagedPoolSessionNx, NonPagedPoolExecute, wdm/MaxPoolType, wdm/NonPagedPoolCacheAlignedSession, PagedPool, sysenum_90446d42-0e73-4da3-a3df-27efe3daa67b.xml, wdm/NonPagedPoolMustSucceed, MaxPoolType, NonPagedPoolCacheAlignedSession, _POOL_TYPE, kernel.pool_type, NonPagedPoolBase, NonPagedPoolMustSucceed, wdm/PagedPoolSession, wdm/DontUseThisType, NonPagedPoolCacheAligned, NonPagedPoolSession, wdm/NonPagedPoolNxCacheAligned, NonPagedPoolCacheAlignedMustSSession, wdm/NonPagedPoolBaseMustSucceed, wdm/NonPagedPoolSessionNx, NonPagedPool, PagedPoolCacheAligned, wdm/NonPagedPool, PagedPoolSession, wdm/NonPagedPoolCacheAlignedMustS, wdm/NonPagedPoolCacheAligned, NonPagedPoolBaseMustSucceed, wdm/PagedPool, DontUseThisType, wdm/NonPagedPoolBaseCacheAligned, wdm/NonPagedPoolMustSucceedSession, wdm/POOL_TYPE, wdm/NonPagedPoolBaseCacheAlignedMustS, wdm/NonPagedPoolCacheAlignedMustSSession, wdm/NonPagedPoolExecute, POOL_TYPE enumeration [Kernel-Mode Driver Architecture], NonPagedPoolBaseCacheAligned, POOL_TYPE, DontUseThisTypeSession, PagedPoolCacheAlignedSession, NonPagedPoolNxCacheAligned, wdm/NonPagedPoolNx, NonPagedPoolNx
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POOL_TYPE
-req.product : Windows 10 or later.
+UID: NE:wdm._POOL_TYPE
+title: "_POOL_TYPE"
+author: windows-driver-content
+description: The POOL_TYPE enumeration type specifies the type of system memory to allocate.
+old-location: kernel\pool_type.htm
+old-project: kernel
+ms.assetid: a3dd0c74-3835-4f03-8b62-08954baaffe7
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/PagedPoolCacheAlignedSession, NonPagedPoolBaseCacheAlignedMustS, NonPagedPoolMustSucceedSession, wdm/NonPagedPoolBase, NonPagedPoolCacheAlignedMustS, wdm/DontUseThisTypeSession, wdm/PagedPoolCacheAligned, wdm/NonPagedPoolSession, NonPagedPoolSessionNx, NonPagedPoolExecute, wdm/MaxPoolType, wdm/NonPagedPoolCacheAlignedSession, PagedPool, sysenum_90446d42-0e73-4da3-a3df-27efe3daa67b.xml, wdm/NonPagedPoolMustSucceed, MaxPoolType, NonPagedPoolCacheAlignedSession, _POOL_TYPE, kernel.pool_type, NonPagedPoolBase, NonPagedPoolMustSucceed, wdm/PagedPoolSession, wdm/DontUseThisType, NonPagedPoolCacheAligned, NonPagedPoolSession, wdm/NonPagedPoolNxCacheAligned, NonPagedPoolCacheAlignedMustSSession, wdm/NonPagedPoolBaseMustSucceed, wdm/NonPagedPoolSessionNx, NonPagedPool, PagedPoolCacheAligned, wdm/NonPagedPool, PagedPoolSession, wdm/NonPagedPoolCacheAlignedMustS, wdm/NonPagedPoolCacheAligned, NonPagedPoolBaseMustSucceed, wdm/PagedPool, DontUseThisType, wdm/NonPagedPoolBaseCacheAligned, wdm/NonPagedPoolMustSucceedSession, wdm/POOL_TYPE, wdm/NonPagedPoolBaseCacheAlignedMustS, wdm/NonPagedPoolCacheAlignedMustSSession, wdm/NonPagedPoolExecute, POOL_TYPE enumeration [Kernel-Mode Driver Architecture], NonPagedPoolBaseCacheAligned, POOL_TYPE, DontUseThisTypeSession, PagedPoolCacheAlignedSession, NonPagedPoolNxCacheAligned, wdm/NonPagedPoolNx, NonPagedPoolNx
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	POOL_TYPE
+product: Windows
+targetos: Windows
+req.typenames: POOL_TYPE
+req.product: Windows 10 or later.
 ---
 
 # _POOL_TYPE Enumeration
@@ -74,127 +79,127 @@ typedef enum _POOL_TYPE {
 ## Constants
 
 <table>
-
-<tr>
-<td>DontUseThisType</td>
-<td>Reserved for system use.</td>
-</tr>
-
-<tr>
-<td>DontUseThisTypeSession</td>
-<td>Deprecated. Do not use.</td>
-</tr>
-
-<tr>
-<td>MaxPoolType</td>
-<td>Reserved for system use.</td>
-</tr>
-
-<tr>
-<td>NonPagedPool</td>
-<td><i>Nonpaged pool</i>, which is nonpageable system memory. Nonpaged pool can be accessed from any IRQL, but it is a scarce resource and drivers should allocate it only when necessary.
+            
+                <tr>
+                    <td>DontUseThisType</td>
+                    <td>Reserved for system use.</td>
+                </tr>
+            
+                <tr>
+                    <td>DontUseThisTypeSession</td>
+                    <td>Deprecated. Do not use.</td>
+                </tr>
+            
+                <tr>
+                    <td>MaxPoolType</td>
+                    <td>Reserved for system use.</td>
+                </tr>
+            
+                <tr>
+                    <td>NonPagedPool</td>
+                    <td><i>Nonpaged pool</i>, which is nonpageable system memory. Nonpaged pool can be accessed from any IRQL, but it is a scarce resource and drivers should allocate it only when necessary.
 
 System memory allocated with the <b>NonPagedPool</b> pool type is executable. For more information, see the description of the <b>NonPagedPoolExecute</b> pool type.
 
 Starting with Windows 8, drivers should allocate most or all of their nonpaged memory from the no-execute (NX) nonpaged pool instead of the executable nonpaged pool. For more information, see the description of the <b>NonPagedPoolNx</b> pool type.</td>
-</tr>
-
-<tr>
-<td>NonPagedPoolBase</td>
-<td>Reserved for system use.</td>
-</tr>
-
-<tr>
-<td>NonPagedPoolBaseCacheAligned</td>
-<td>Reserved for system use.</td>
-</tr>
-
-<tr>
-<td>NonPagedPoolBaseCacheAlignedMustS</td>
-<td>Reserved for system use.</td>
-</tr>
-
-<tr>
-<td>NonPagedPoolBaseMustSucceed</td>
-<td>Reserved for system use.</td>
-</tr>
-
-<tr>
-<td>NonPagedPoolCacheAligned</td>
-<td>Nonpaged pool, aligned on processor cache boundaries. This value is <u>for internal use only</u>.</td>
-</tr>
-
-<tr>
-<td>NonPagedPoolCacheAlignedMustS</td>
-<td>This value is <u>for internal use only</u>, and is allowed only during system startup. It is the cache-aligned equivalent of <b>NonPagedPoolMustSucceed</b>.</td>
-</tr>
-
-<tr>
-<td>NonPagedPoolCacheAlignedMustSSession</td>
-<td>Deprecated. Do not use.</td>
-</tr>
-
-<tr>
-<td>NonPagedPoolCacheAlignedSession</td>
-<td>Deprecated. Do not use.</td>
-</tr>
-
-<tr>
-<td>NonPagedPoolExecute</td>
-<td>Starting with Windows 8, <b>NonPagedPoolExecute</b> is an alternate name for the <b>NonPagedPool</b> value. This value indicates that the allocated memory is to be nonpaged and executable—that is, instruction execution is enabled in this memory. To port a driver from an earlier version of Windows, you should typically replace all or most instances of the <b>NonPagedPool</b> name in the driver source code with <b>NonPagedPoolNx</b>. Avoid replacing instances of the <b>NonPagedPool</b> name with <b>NonPagedPoolExecute</b> except in cases in which executable memory is explicitly required. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/hh920391">No-Execute (NX) Nonpaged Pool</a>.</td>
-</tr>
-
-<tr>
-<td>NonPagedPoolMustSucceed</td>
-<td>This value is <u>for internal use only</u>, and is allowed only during system startup. Drivers must not specify this value at times other than system startup, because a "must succeed" request crashes the system if the requested memory size is unavailable.</td>
-</tr>
-
-<tr>
-<td>NonPagedPoolMustSucceedSession</td>
-<td>Deprecated. Do not use.</td>
-</tr>
-
-<tr>
-<td>NonPagedPoolNx</td>
-<td><i>No-execute</i> (NX) nonpaged pool. This pool type is available starting with Windows 8. In contrast to the nonpaged pool designated by <b>NonPagedPool</b>, which allocates executable memory, the NX nonpaged pool  allocates memory in which instruction execution is disabled. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/hh920391">No-Execute (NX) Nonpaged Pool</a>.
+                </tr>
+            
+                <tr>
+                    <td>NonPagedPoolBase</td>
+                    <td>Reserved for system use.</td>
+                </tr>
+            
+                <tr>
+                    <td>NonPagedPoolBaseCacheAligned</td>
+                    <td>Reserved for system use.</td>
+                </tr>
+            
+                <tr>
+                    <td>NonPagedPoolBaseCacheAlignedMustS</td>
+                    <td>Reserved for system use.</td>
+                </tr>
+            
+                <tr>
+                    <td>NonPagedPoolBaseMustSucceed</td>
+                    <td>Reserved for system use.</td>
+                </tr>
+            
+                <tr>
+                    <td>NonPagedPoolCacheAligned</td>
+                    <td>Nonpaged pool, aligned on processor cache boundaries. This value is <u>for internal use only</u>.</td>
+                </tr>
+            
+                <tr>
+                    <td>NonPagedPoolCacheAlignedMustS</td>
+                    <td>This value is <u>for internal use only</u>, and is allowed only during system startup. It is the cache-aligned equivalent of <b>NonPagedPoolMustSucceed</b>.</td>
+                </tr>
+            
+                <tr>
+                    <td>NonPagedPoolCacheAlignedMustSSession</td>
+                    <td>Deprecated. Do not use.</td>
+                </tr>
+            
+                <tr>
+                    <td>NonPagedPoolCacheAlignedSession</td>
+                    <td>Deprecated. Do not use.</td>
+                </tr>
+            
+                <tr>
+                    <td>NonPagedPoolExecute</td>
+                    <td>Starting with Windows 8, <b>NonPagedPoolExecute</b> is an alternate name for the <b>NonPagedPool</b> value. This value indicates that the allocated memory is to be nonpaged and executable—that is, instruction execution is enabled in this memory. To port a driver from an earlier version of Windows, you should typically replace all or most instances of the <b>NonPagedPool</b> name in the driver source code with <b>NonPagedPoolNx</b>. Avoid replacing instances of the <b>NonPagedPool</b> name with <b>NonPagedPoolExecute</b> except in cases in which executable memory is explicitly required. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/hh920391">No-Execute (NX) Nonpaged Pool</a>.</td>
+                </tr>
+            
+                <tr>
+                    <td>NonPagedPoolMustSucceed</td>
+                    <td>This value is <u>for internal use only</u>, and is allowed only during system startup. Drivers must not specify this value at times other than system startup, because a "must succeed" request crashes the system if the requested memory size is unavailable.</td>
+                </tr>
+            
+                <tr>
+                    <td>NonPagedPoolMustSucceedSession</td>
+                    <td>Deprecated. Do not use.</td>
+                </tr>
+            
+                <tr>
+                    <td>NonPagedPoolNx</td>
+                    <td><i>No-execute</i> (NX) nonpaged pool. This pool type is available starting with Windows 8. In contrast to the nonpaged pool designated by <b>NonPagedPool</b>, which allocates executable memory, the NX nonpaged pool  allocates memory in which instruction execution is disabled. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/hh920391">No-Execute (NX) Nonpaged Pool</a>.
 
 Nonpaged pool can be accessed from any IRQL, but it is a scarce resource and drivers should allocate it only when necessary.</td>
-</tr>
-
-<tr>
-<td>NonPagedPoolNxCacheAligned</td>
-<td>NX nonpaged pool, aligned on processor cache boundaries. This value is reserved for exclusive use by the operating system.</td>
-</tr>
-
-<tr>
-<td>NonPagedPoolSession</td>
-<td>Deprecated. Do not use.</td>
-</tr>
-
-<tr>
-<td>NonPagedPoolSessionNx</td>
-<td>Reserved for exclusive use by the operating system.</td>
-</tr>
-
-<tr>
-<td>PagedPool</td>
-<td><i>Paged pool</i>, which is pageable system memory. Paged pool can only be allocated and accessed at IRQL &lt; DISPATCH_LEVEL.</td>
-</tr>
-
-<tr>
-<td>PagedPoolCacheAligned</td>
-<td>Paged pool, aligned on processor cache boundaries. This value is <u>for internal use only</u>.</td>
-</tr>
-
-<tr>
-<td>PagedPoolCacheAlignedSession</td>
-<td>Deprecated. Do not use.</td>
-</tr>
-
-<tr>
-<td>PagedPoolSession</td>
-<td>Deprecated. Do not use.</td>
-</tr>
+                </tr>
+            
+                <tr>
+                    <td>NonPagedPoolNxCacheAligned</td>
+                    <td>NX nonpaged pool, aligned on processor cache boundaries. This value is reserved for exclusive use by the operating system.</td>
+                </tr>
+            
+                <tr>
+                    <td>NonPagedPoolSession</td>
+                    <td>Deprecated. Do not use.</td>
+                </tr>
+            
+                <tr>
+                    <td>NonPagedPoolSessionNx</td>
+                    <td>Reserved for exclusive use by the operating system.</td>
+                </tr>
+            
+                <tr>
+                    <td>PagedPool</td>
+                    <td><i>Paged pool</i>, which is pageable system memory. Paged pool can only be allocated and accessed at IRQL &lt; DISPATCH_LEVEL.</td>
+                </tr>
+            
+                <tr>
+                    <td>PagedPoolCacheAligned</td>
+                    <td>Paged pool, aligned on processor cache boundaries. This value is <u>for internal use only</u>.</td>
+                </tr>
+            
+                <tr>
+                    <td>PagedPoolCacheAlignedSession</td>
+                    <td>Deprecated. Do not use.</td>
+                </tr>
+            
+                <tr>
+                    <td>PagedPoolSession</td>
+                    <td>Deprecated. Do not use.</td>
+                </tr>
 </table>
 
 
@@ -203,9 +208,9 @@ Nonpaged pool can be accessed from any IRQL, but it is a scarce resource and dri
 | ---- |:---- |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
-## See Also
+    ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554322">LookasideListAllocateEx</a>
+        <a href="https://msdn.microsoft.com/library/windows/hardware/ff554322">LookasideListAllocateEx</a>
 
 <a href="..\wdm\nf-wdm-seassignsecurityex.md">SeAssignSecurityEx</a>
 

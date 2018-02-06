@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddser.IOCTL_SERIAL_LSRMST_INSERT
-title : IOCTL_SERIAL_LSRMST_INSERT
-author : windows-driver-content
-description : The IOCTL_SERIAL_LSRMST_INSERT request enables or disables the insertion of information about line status and modem status in the receive data stream.
-old-location : serports\ioctl_serial_lsrmst_insert.htm
-old-project : serports
-ms.assetid : 363ae373-5474-4c20-a382-20577a72521e
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : serports.ioctl_serial_lsrmst_insert, IOCTL_SERIAL_LSRMST_INSERT control code [Serial Ports], IOCTL_SERIAL_LSRMST_INSERT, ntddser/IOCTL_SERIAL_LSRMST_INSERT, serref_d071ffb1-f8ea-44e3-8caa-08e2c51e0198.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddser.h
-req.include-header : Ntddser.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SD_REQUEST_FUNCTION
+UID: NI:ntddser.IOCTL_SERIAL_LSRMST_INSERT
+title: IOCTL_SERIAL_LSRMST_INSERT
+author: windows-driver-content
+description: The IOCTL_SERIAL_LSRMST_INSERT request enables or disables the insertion of information about line status and modem status in the receive data stream.
+old-location: serports\ioctl_serial_lsrmst_insert.htm
+old-project: serports
+ms.assetid: 363ae373-5474-4c20-a382-20577a72521e
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: serports.ioctl_serial_lsrmst_insert, IOCTL_SERIAL_LSRMST_INSERT control code [Serial Ports], IOCTL_SERIAL_LSRMST_INSERT, ntddser/IOCTL_SERIAL_LSRMST_INSERT, serref_d071ffb1-f8ea-44e3-8caa-08e2c51e0198.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddser.h
+req.include-header: Ntddser.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddser.h
+apiname:
+-	IOCTL_SERIAL_LSRMST_INSERT
+product: Windows
+targetos: Windows
+req.typenames: SD_REQUEST_FUNCTION
 ---
 
 # IOCTL_SERIAL_LSRMST_INSERT IOCTL

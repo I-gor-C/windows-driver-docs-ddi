@@ -1,41 +1,46 @@
 ---
-UID : NF:ks.KsGateInitializeOr
-title : KsGateInitializeOr function
-author : windows-driver-content
-description : The KsGateInitializeOr function initializes a KSGATE structure as an OR gate and attaches it to the AND gate specified by NextAndGate.
-old-location : stream\ksgateinitializeor.htm
-old-project : stream
-ms.assetid : a02a3b53-03fa-49d4-835c-88623c2f4d8b
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KsGateInitializeOr function [Streaming Media Devices], stream.ksgateinitializeor, ks/KsGateInitializeOr, KsGateInitializeOr, avfunc_6741b878-dfae-4d40-9040-ab78d32243e2.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsGateInitializeOr
+title: KsGateInitializeOr function
+author: windows-driver-content
+description: The KsGateInitializeOr function initializes a KSGATE structure as an OR gate and attaches it to the AND gate specified by NextAndGate.
+old-location: stream\ksgateinitializeor.htm
+old-project: stream
+ms.assetid: a02a3b53-03fa-49d4-835c-88623c2f4d8b
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KsGateInitializeOr function [Streaming Media Devices], stream.ksgateinitializeor, ks/KsGateInitializeOr, KsGateInitializeOr, avfunc_6741b878-dfae-4d40-9040-ab78d32243e2.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	KsGateInitializeOr
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

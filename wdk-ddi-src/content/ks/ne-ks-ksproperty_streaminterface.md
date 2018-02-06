@@ -1,41 +1,46 @@
 ---
-UID : NE:ks.KSPROPERTY_STREAMINTERFACE
-title : KSPROPERTY_STREAMINTERFACE
-author : windows-driver-content
-description : "."
-old-location : stream\ksproperty_streaminterface.htm
-old-project : stream
-ms.assetid : E771F59E-7F85-40B9-BBA9-D1CC398B12CA
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.ksproperty_streaminterface, ks/KSPROPERTY_STREAMINTERFACE_HEADERSIZE, KSPROPERTY_STREAMINTERFACE, ks/KSPROPERTY_STREAMINTERFACE, KSPROPERTY_STREAMINTERFACE_HEADERSIZE, KSPROPERTY_STREAMINTERFACE enumeration [Streaming Media Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : ks.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KSPROPERTY_STREAMINTERFACE
+UID: NE:ks.KSPROPERTY_STREAMINTERFACE
+title: KSPROPERTY_STREAMINTERFACE
+author: windows-driver-content
+description: "."
+old-location: stream\ksproperty_streaminterface.htm
+old-project: stream
+ms.assetid: E771F59E-7F85-40B9-BBA9-D1CC398B12CA
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.ksproperty_streaminterface, ks/KSPROPERTY_STREAMINTERFACE_HEADERSIZE, KSPROPERTY_STREAMINTERFACE, ks/KSPROPERTY_STREAMINTERFACE, KSPROPERTY_STREAMINTERFACE_HEADERSIZE, KSPROPERTY_STREAMINTERFACE enumeration [Streaming Media Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: ks.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ks.h
+apiname:
+-	KSPROPERTY_STREAMINTERFACE
+product: Windows
+targetos: Windows
+req.typenames: KSPROPERTY_STREAMINTERFACE
 ---
 
 # KSPROPERTY_STREAMINTERFACE Enumeration
@@ -51,11 +56,11 @@ typedef enum  {
 ## Constants
 
 <table>
-
-<tr>
-<td>KSPROPERTY_STREAMINTERFACE_HEADERSIZE</td>
-<td>Specify to query a pin for the size of the stream header that this pin uses.</td>
-</tr>
+            
+                <tr>
+                    <td>KSPROPERTY_STREAMINTERFACE_HEADERSIZE</td>
+                    <td>Specify to query a pin for the size of the stream header that this pin uses.</td>
+                </tr>
 </table>
 
 

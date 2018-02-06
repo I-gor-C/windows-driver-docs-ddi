@@ -1,41 +1,46 @@
 ---
-UID : NC:dxgiddi.PFNDDXGIDDI_PRESENTCB
-title : PFNDDXGIDDI_PRESENTCB
-author : windows-driver-content
-description : The pfnPresentCbDXGI function copies content from a source allocation to a destination allocation.
-old-location : display\pfnpresentcbdxgi.htm
-old-project : display
-ms.assetid : eefb8f2c-e460-4f9c-851d-9a97dbcd728f
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.pfnpresentcbdxgi, pfnPresentCbDXGI callback function [Display Devices], pfnPresentCbDXGI, PFNDDXGIDDI_PRESENTCB, PFNDDXGIDDI_PRESENTCB, dxgiddi/pfnPresentCbDXGI, d3d10state_functions_22004360-a0a0-4d54-ac0e-d7fadec2bf67.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : dxgiddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDRMRIGHTS, DRMRIGHTS"
+UID: NC:dxgiddi.PFNDDXGIDDI_PRESENTCB
+title: PFNDDXGIDDI_PRESENTCB
+author: windows-driver-content
+description: The pfnPresentCbDXGI function copies content from a source allocation to a destination allocation.
+old-location: display\pfnpresentcbdxgi.htm
+old-project: display
+ms.assetid: eefb8f2c-e460-4f9c-851d-9a97dbcd728f
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.pfnpresentcbdxgi, pfnPresentCbDXGI callback function [Display Devices], pfnPresentCbDXGI, PFNDDXGIDDI_PRESENTCB, PFNDDXGIDDI_PRESENTCB, dxgiddi/pfnPresentCbDXGI, d3d10state_functions_22004360-a0a0-4d54-ac0e-d7fadec2bf67.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: dxgiddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	dxgiddi.h
+apiname:
+-	pfnPresentCbDXGI
+product: Windows
+targetos: Windows
+req.typenames: "*PDRMRIGHTS, DRMRIGHTS"
 ---
 
 

@@ -1,42 +1,48 @@
 ---
-UID : NF:wdm.ZwQueryInformationTransaction
-title : ZwQueryInformationTransaction function
-author : windows-driver-content
-description : The ZwQueryInformationTransaction routine retrieves information about a specified transaction.
-old-location : kernel\zwqueryinformationtransaction.htm
-old-project : kernel
-ms.assetid : b4a4cc4b-8f23-4dd6-81d3-4cb2c861ba4f
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/ZwQueryInformationTransaction, ktm_ref_ffef2acc-e180-4adf-8aa5-31ee7dae0592.xml, ZwQueryInformationTransaction, NtQueryInformationTransaction, kernel.zwqueryinformationtransaction, ZwQueryInformationTransaction routine [Kernel-Mode Driver Architecture], wdm/NtQueryInformationTransaction
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later operating system versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ZwQueryInformationTransaction
+title: ZwQueryInformationTransaction function
+author: windows-driver-content
+description: The ZwQueryInformationTransaction routine retrieves information about a specified transaction.
+old-location: kernel\zwqueryinformationtransaction.htm
+old-project: kernel
+ms.assetid: b4a4cc4b-8f23-4dd6-81d3-4cb2c861ba4f
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/ZwQueryInformationTransaction, ktm_ref_ffef2acc-e180-4adf-8aa5-31ee7dae0592.xml, ZwQueryInformationTransaction, NtQueryInformationTransaction, kernel.zwqueryinformationtransaction, ZwQueryInformationTransaction routine [Kernel-Mode Driver Architecture], wdm/NtQueryInformationTransaction
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later operating system versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ZwQueryInformationTransaction
+-	NtQueryInformationTransaction
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

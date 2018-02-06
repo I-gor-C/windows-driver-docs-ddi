@@ -1,42 +1,47 @@
 ---
-UID : NS:printoem._PDEV_HOSTFONT_ENABLED
-title : "_PDEV_HOSTFONT_ENABLED"
-author : windows-driver-content
-description : The PDEV_HOSTFONT_ENABLED structure indicates whether the Hostfont feature is enabled.
-old-location : print\pdev_hostfont_enabled.htm
-old-project : print
-ms.assetid : f7fc7e33-e80b-449e-a1d1-a93740cd967c
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : print_unidrv-pscript_rendering_81f0441f-4e35-493b-92a9-1836977f9c55.xml, _PDEV_HOSTFONT_ENABLED, print.pdev_hostfont_enabled, printoem/PDEV_HOSTFONT_ENABLED, PDEV_HOSTFONT_ENABLED structure [Print Devices], PDEV_HOSTFONT_ENABLED
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : printoem.h
-req.include-header : Prcomoem.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PDEV_HOSTFONT_ENABLED
-req.product : Windows 10 or later.
+UID: NS:printoem._PDEV_HOSTFONT_ENABLED
+title: "_PDEV_HOSTFONT_ENABLED"
+author: windows-driver-content
+description: The PDEV_HOSTFONT_ENABLED structure indicates whether the Hostfont feature is enabled.
+old-location: print\pdev_hostfont_enabled.htm
+old-project: print
+ms.assetid: f7fc7e33-e80b-449e-a1d1-a93740cd967c
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: print_unidrv-pscript_rendering_81f0441f-4e35-493b-92a9-1836977f9c55.xml, _PDEV_HOSTFONT_ENABLED, print.pdev_hostfont_enabled, printoem/PDEV_HOSTFONT_ENABLED, PDEV_HOSTFONT_ENABLED structure [Print Devices], PDEV_HOSTFONT_ENABLED
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: printoem.h
+req.include-header: Prcomoem.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	printoem.h
+apiname:
+-	PDEV_HOSTFONT_ENABLED
+product: Windows
+targetos: Windows
+req.typenames: PDEV_HOSTFONT_ENABLED
+req.product: Windows 10 or later.
 ---
 
 # _PDEV_HOSTFONT_ENABLED structure

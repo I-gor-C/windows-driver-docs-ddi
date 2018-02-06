@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddvdeo.IOCTL_VIDEO_SET_DISPLAY_BRIGHTNESS
-title : IOCTL_VIDEO_SET_DISPLAY_BRIGHTNESS
-author : windows-driver-content
-description : This IOCTL is not handled by video miniport drivers. It is handled entirely by the system-supplied video port driver.
-old-location : display\ioctl_video_set_display_brightness.htm
-old-project : display
-ms.assetid : 485119b4-90f8-44dc-89d7-afb536442719
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.ioctl_video_set_display_brightness, IOCTL_VIDEO_SET_DISPLAY_BRIGHTNESS control code [Display Devices], IOCTL_VIDEO_SET_DISPLAY_BRIGHTNESS, ntddvdeo/IOCTL_VIDEO_SET_DISPLAY_BRIGHTNESS, Video_IOCTLs_3dc31eac-247b-400e-8202-c0708086326c.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddvdeo.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TAPE_WRITE_MARKS, *PTAPE_WRITE_MARKS
+UID: NI:ntddvdeo.IOCTL_VIDEO_SET_DISPLAY_BRIGHTNESS
+title: IOCTL_VIDEO_SET_DISPLAY_BRIGHTNESS
+author: windows-driver-content
+description: This IOCTL is not handled by video miniport drivers. It is handled entirely by the system-supplied video port driver.
+old-location: display\ioctl_video_set_display_brightness.htm
+old-project: display
+ms.assetid: 485119b4-90f8-44dc-89d7-afb536442719
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.ioctl_video_set_display_brightness, IOCTL_VIDEO_SET_DISPLAY_BRIGHTNESS control code [Display Devices], IOCTL_VIDEO_SET_DISPLAY_BRIGHTNESS, ntddvdeo/IOCTL_VIDEO_SET_DISPLAY_BRIGHTNESS, Video_IOCTLs_3dc31eac-247b-400e-8202-c0708086326c.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddvdeo.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddvdeo.h
+apiname:
+-	IOCTL_VIDEO_SET_DISPLAY_BRIGHTNESS
+product: Windows
+targetos: Windows
+req.typenames: TAPE_WRITE_MARKS, *PTAPE_WRITE_MARKS
 ---
 
 # IOCTL_VIDEO_SET_DISPLAY_BRIGHTNESS IOCTL

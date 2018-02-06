@@ -1,42 +1,48 @@
 ---
-UID : NF:spbcx.SpbRequestGetTransferParameters
-title : SpbRequestGetTransferParameters function
-author : windows-driver-content
-description : The SpbRequestGetTransferParameters method retrieves the transfer parameters for an individual transfer in an I/O transfer sequence.
-old-location : spb\spbrequestgettransferparameters.htm
-old-project : SPB
-ms.assetid : 33B0C9EF-B40A-4BE7-A5AB-81FFF4698F3F
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : SpbRequestGetTransferParameters method [Buses], SpbRequestGetTransferParameters, spbcx/SpbRequestGetTransferParameters, SPB.spbrequestgettransferparameters
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : spbcx.h
-req.include-header : 
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Spbcxstubs.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SPB_REQUEST_TYPE, *PSPB_REQUEST_TYPE
-req.product : Windows 10 or later.
+UID: NF:spbcx.SpbRequestGetTransferParameters
+title: SpbRequestGetTransferParameters function
+author: windows-driver-content
+description: The SpbRequestGetTransferParameters method retrieves the transfer parameters for an individual transfer in an I/O transfer sequence.
+old-location: spb\spbrequestgettransferparameters.htm
+old-project: SPB
+ms.assetid: 33B0C9EF-B40A-4BE7-A5AB-81FFF4698F3F
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: SpbRequestGetTransferParameters method [Buses], SpbRequestGetTransferParameters, spbcx/SpbRequestGetTransferParameters, SPB.spbrequestgettransferparameters
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: spbcx.h
+req.include-header: 
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Spbcxstubs.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	spbcxstubs.lib
+-	spbcxstubs.dll
+apiname:
+-	SpbRequestGetTransferParameters
+product: Windows
+targetos: Windows
+req.typenames: SPB_REQUEST_TYPE, *PSPB_REQUEST_TYPE
+req.product: Windows 10 or later.
 ---
 
 

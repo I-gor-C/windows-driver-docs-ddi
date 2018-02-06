@@ -1,41 +1,46 @@
 ---
-UID : NE:ntddndis._NDIS_PM_WOL_PACKET
-title : "_NDIS_PM_WOL_PACKET"
-author : windows-driver-content
-description : The NDIS_PM_WOL_PACKET enumeration identifies the type of a wake-on-LAN (WOL) packet.
-old-location : netvista\ndis_pm_wol_packet.htm
-old-project : netvista
-ms.assetid : 154a9d3d-4bb9-4c63-a820-816b254c69c2
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NdisPMWoLPacketMagicPacket, NDIS_PM_WOL_PACKET enumeration [Network Drivers Starting with Windows Vista], NdisPMWoLPacketIPv4TcpSyn, PNDIS_PM_WOL_PACKET enumeration pointer [Network Drivers Starting with Windows Vista], NdisPMWoLPacketEapolRequestIdMessage, ntddndis/NdisPMWoLPacketIPv4TcpSyn, ntddndis/NdisPMWoLPacketEapolRequestIdMessage, netvista.ndis_pm_wol_packet, ntddndis/NDIS_PM_WOL_PACKET, *PNDIS_PM_WOL_PACKET, NDIS_PM_WOL_PACKET, NdisPMWoLPacketUnspecified, ntddndis/NdisPMWoLPacketMaximum, ntddndis/NdisPMWoLPacketUnspecified, NdisPMWoLPacketBitmapPattern, ntddndis/NdisPMWoLPacketIPv6TcpSyn, ntddndis/NdisPMWoLPacketMagicPacket, _NDIS_PM_WOL_PACKET, NdisPMWoLPacketMaximum, PNDIS_PM_WOL_PACKET, ntddndis/PNDIS_PM_WOL_PACKET, ntddndis/NdisPMWoLPacketBitmapPattern, miniport_power_management_ref_4788c1ee-7ed8-49f2-950b-7a820223bc32.xml, NdisPMWoLPacketIPv6TcpSyn
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : ntddndis.h
-req.include-header : Ntddndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.20 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PNDIS_PM_WOL_PACKET, NDIS_PM_WOL_PACKET"
+UID: NE:ntddndis._NDIS_PM_WOL_PACKET
+title: "_NDIS_PM_WOL_PACKET"
+author: windows-driver-content
+description: The NDIS_PM_WOL_PACKET enumeration identifies the type of a wake-on-LAN (WOL) packet.
+old-location: netvista\ndis_pm_wol_packet.htm
+old-project: netvista
+ms.assetid: 154a9d3d-4bb9-4c63-a820-816b254c69c2
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NdisPMWoLPacketMagicPacket, NDIS_PM_WOL_PACKET enumeration [Network Drivers Starting with Windows Vista], NdisPMWoLPacketIPv4TcpSyn, PNDIS_PM_WOL_PACKET enumeration pointer [Network Drivers Starting with Windows Vista], NdisPMWoLPacketEapolRequestIdMessage, ntddndis/NdisPMWoLPacketIPv4TcpSyn, ntddndis/NdisPMWoLPacketEapolRequestIdMessage, netvista.ndis_pm_wol_packet, ntddndis/NDIS_PM_WOL_PACKET, *PNDIS_PM_WOL_PACKET, NDIS_PM_WOL_PACKET, NdisPMWoLPacketUnspecified, ntddndis/NdisPMWoLPacketMaximum, ntddndis/NdisPMWoLPacketUnspecified, NdisPMWoLPacketBitmapPattern, ntddndis/NdisPMWoLPacketIPv6TcpSyn, ntddndis/NdisPMWoLPacketMagicPacket, _NDIS_PM_WOL_PACKET, NdisPMWoLPacketMaximum, PNDIS_PM_WOL_PACKET, ntddndis/PNDIS_PM_WOL_PACKET, ntddndis/NdisPMWoLPacketBitmapPattern, miniport_power_management_ref_4788c1ee-7ed8-49f2-950b-7a820223bc32.xml, NdisPMWoLPacketIPv6TcpSyn
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: ntddndis.h
+req.include-header: Ntddndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.20 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddndis.h
+apiname:
+-	NDIS_PM_WOL_PACKET
+product: Windows
+targetos: Windows
+req.typenames: "*PNDIS_PM_WOL_PACKET, NDIS_PM_WOL_PACKET"
 ---
 
 # _NDIS_PM_WOL_PACKET Enumeration
@@ -57,54 +62,54 @@ typedef enum _NDIS_PM_WOL_PACKET {
 ## Constants
 
 <table>
-
-<tr>
-<td>NdisPMWoLPacketBitmapPattern</td>
-<td>Specifies a bitmap pattern. This packet type is specified in the 
+            
+                <tr>
+                    <td>NdisPMWoLPacketBitmapPattern</td>
+                    <td>Specifies a bitmap pattern. This packet type is specified in the 
      <b>WoLBitMapPattern</b> member of the 
      <a href="..\ntddndis\ns-ntddndis-_ndis_pm_wol_pattern.md">NDIS_PM_WOL_PATTERN</a> structure.</td>
-</tr>
-
-<tr>
-<td>NdisPMWoLPacketEapolRequestIdMessage</td>
-<td>Specifies an EAPOL request message packet. This packet type is specified in the 
+                </tr>
+            
+                <tr>
+                    <td>NdisPMWoLPacketEapolRequestIdMessage</td>
+                    <td>Specifies an EAPOL request message packet. This packet type is specified in the 
      <b>EapolRequestIdMessageParameters</b> member of the <a href="..\ntddndis\ns-ntddndis-_ndis_pm_wol_pattern.md">NDIS_PM_WOL_PATTERN</a> structure.</td>
-</tr>
-
-<tr>
-<td>NdisPMWoLPacketIPv4TcpSyn</td>
-<td>An IPv4 TCP SYN wake-on-LAN packet pattern. This packet pattern is specified in the 
+                </tr>
+            
+                <tr>
+                    <td>NdisPMWoLPacketIPv4TcpSyn</td>
+                    <td>An IPv4 TCP SYN wake-on-LAN packet pattern. This packet pattern is specified in the 
      <b>IPv4TcpSynParameters</b> member of the <a href="..\ntddndis\ns-ntddndis-_ndis_pm_wol_pattern.md">NDIS_PM_WOL_PATTERN</a> structure.</td>
-</tr>
-
-<tr>
-<td>NdisPMWoLPacketIPv6TcpSyn</td>
-<td>An IPv6 TCP SYN wake-on-LAN packet pattern. This packet pattern is specified in the 
+                </tr>
+            
+                <tr>
+                    <td>NdisPMWoLPacketIPv6TcpSyn</td>
+                    <td>An IPv6 TCP SYN wake-on-LAN packet pattern. This packet pattern is specified in the 
      <b>IPv6TcpSynParameters</b> member of the <a href="..\ntddndis\ns-ntddndis-_ndis_pm_wol_pattern.md">NDIS_PM_WOL_PATTERN</a> structure.</td>
-</tr>
-
-<tr>
-<td>NdisPMWoLPacketMagicPacket</td>
-<td>WOL packets based on WOL magic packet. The media access control (MAC) address in the 
+                </tr>
+            
+                <tr>
+                    <td>NdisPMWoLPacketMagicPacket</td>
+                    <td>WOL packets based on WOL magic packet. The media access control (MAC) address in the 
      <a href="https://technet.microsoft.com/en-us/windows/hh147630.aspx">magic packet</a> is the current MAC
      address of the network adapter.</td>
-</tr>
-
-<tr>
-<td>NdisPMWoLPacketMaximum</td>
-<td>The maximum value for this enumeration. This value might change in future versions of NDIS header
+                </tr>
+            
+                <tr>
+                    <td>NdisPMWoLPacketMaximum</td>
+                    <td>The maximum value for this enumeration. This value might change in future versions of NDIS header
      files and binaries.</td>
-</tr>
-
-<tr>
-<td>NdisPMWoLPacketUnspecified</td>
-<td>The WOL packet type is not specified.</td>
-</tr>
+                </tr>
+            
+                <tr>
+                    <td>NdisPMWoLPacketUnspecified</td>
+                    <td>The WOL packet type is not specified.</td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-The <b>NDIS_PM_WOL_PACKET</b> enumeration is used in the 
+        The <b>NDIS_PM_WOL_PACKET</b> enumeration is used in the 
     <b>WoLPacketType</b> member of the 
     <a href="..\ntddndis\ns-ntddndis-_ndis_pm_wol_pattern.md">NDIS_PM_WOL_PATTERN</a> structure.
 <div class="alert"><b>Note</b>  The <b>NDIS_PM_WOL_PACKET</b> enumeration type specifies packet based wake-on-LAN (WOL)
@@ -117,9 +122,9 @@ The <b>NDIS_PM_WOL_PACKET</b> enumeration is used in the
 | **Windows version** | Supported in NDIS 6.20 and later. Supported in NDIS 6.20 and later. |
 | **Header** | ntddndis.h (include Ntddndis.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_pm_wol_pattern.md">NDIS_PM_WOL_PATTERN</a>
+        <a href="..\ntddndis\ns-ntddndis-_ndis_pm_wol_pattern.md">NDIS_PM_WOL_PATTERN</a>
 
  
 

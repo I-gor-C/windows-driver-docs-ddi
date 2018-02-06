@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.IoRegisterFsRegistrationChangeMountAware
-title : IoRegisterFsRegistrationChangeMountAware function
-author : windows-driver-content
-description : The IoRegisterFsRegistrationChangeMountAware routine registers a file system filter driver's notification routine. This notification routine is called whenever a file system registers or unregisters itself as an active file system.
-old-location : ifsk\ioregisterfsregistrationchangemountaware.htm
-old-project : ifsk
-ms.assetid : f8f91c50-b434-438a-ad3c-d5d3c3982f4a
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ntifs/IoRegisterFsRegistrationChangeMountAware, ifsk.ioregisterfsregistrationchangemountaware, IoRegisterFsRegistrationChangeMountAware routine [Installable File System Drivers], IoRegisterFsRegistrationChangeMountAware, ioref_c69a27ef-45f5-4873-bd11-34e984cc5c11.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : FltKernel.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : The IoRegisterFsRegistrationChangeMountAware routine is available in Windows 7 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "< DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.IoRegisterFsRegistrationChangeMountAware
+title: IoRegisterFsRegistrationChangeMountAware function
+author: windows-driver-content
+description: The IoRegisterFsRegistrationChangeMountAware routine registers a file system filter driver's notification routine. This notification routine is called whenever a file system registers or unregisters itself as an active file system.
+old-location: ifsk\ioregisterfsregistrationchangemountaware.htm
+old-project: ifsk
+ms.assetid: f8f91c50-b434-438a-ad3c-d5d3c3982f4a
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ntifs/IoRegisterFsRegistrationChangeMountAware, ifsk.ioregisterfsregistrationchangemountaware, IoRegisterFsRegistrationChangeMountAware routine [Installable File System Drivers], IoRegisterFsRegistrationChangeMountAware, ioref_c69a27ef-45f5-4873-bd11-34e984cc5c11.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: FltKernel.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: The IoRegisterFsRegistrationChangeMountAware routine is available in Windows 7 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "< DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoRegisterFsRegistrationChangeMountAware
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

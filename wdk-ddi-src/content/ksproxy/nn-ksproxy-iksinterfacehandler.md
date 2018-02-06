@@ -1,41 +1,46 @@
 ---
-UID : NN:ksproxy.IKsInterfaceHandler
-title : IKsInterfaceHandler
-author : windows-driver-content
-description : The IKsInterfaceHandler interface provides methods that marshal samples into the kernel based on the KSPIN_INTERFACE structure specified for the established connection. The IID for this interface is IID_IKsInterfaceHandler.
-old-location : stream\iksinterfacehandler.htm
-old-project : stream
-ms.assetid : b9f72e79-930c-456e-8001-5df808604caa
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.iksinterfacehandler, IKsInterfaceHandler interface [Streaming Media Devices], IKsInterfaceHandler interface [Streaming Media Devices], described, IKsInterfaceHandler, ksproxy/IKsInterfaceHandler, ksproxy_9d597bae-a5d7-4575-a4ac-983b827b0ae4.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : ksproxy.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ksproxy.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PIPE_STATE
+UID: NN:ksproxy.IKsInterfaceHandler
+title: IKsInterfaceHandler
+author: windows-driver-content
+description: The IKsInterfaceHandler interface provides methods that marshal samples into the kernel based on the KSPIN_INTERFACE structure specified for the established connection. The IID for this interface is IID_IKsInterfaceHandler.
+old-location: stream\iksinterfacehandler.htm
+old-project: stream
+ms.assetid: b9f72e79-930c-456e-8001-5df808604caa
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.iksinterfacehandler, IKsInterfaceHandler interface [Streaming Media Devices], IKsInterfaceHandler interface [Streaming Media Devices], described, IKsInterfaceHandler, ksproxy/IKsInterfaceHandler, ksproxy_9d597bae-a5d7-4575-a4ac-983b827b0ae4.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: ksproxy.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ksproxy.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	ksproxy.h
+apiname:
+-	IKsInterfaceHandler
+product: Windows
+targetos: Windows
+req.typenames: PIPE_STATE
 ---
 
 # IKsInterfaceHandler interface

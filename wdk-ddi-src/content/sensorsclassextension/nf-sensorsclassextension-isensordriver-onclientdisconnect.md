@@ -1,42 +1,48 @@
 ---
-UID : NF:sensorsclassextension.ISensorDriver.OnClientDisconnect
-title : ISensorDriver::OnClientDisconnect method
-author : windows-driver-content
-description : The ISensorDriver::OnClientDisconnect method notifies the sensor driver that a client application has disconnected.
-old-location : sensors\isensordriver_onclientdisconnect.htm
-old-project : sensors
-ms.assetid : 9484610b-4cbd-4c4e-9e60-ef052702325c
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : ISensorDriver, OnClientDisconnect, sensorsclassextension/ISensorDriver::OnClientDisconnect, ISensorDriver::OnClientDisconnect, sensors.isensordriver_onclientdisconnect, ISensorDriver interface [Sensor Devices], OnClientDisconnect method, OnClientDisconnect method [Sensor Devices], ISensorDriver interface, OnClientDisconnect method [Sensor Devices], Sensor_IFaces_f5f91a04-84b3-4302-9c26-845281651ed9.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : sensorsclassextension.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 7,Available in Windows 7.
-req.target-min-winversvr : None supported
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : SensorsClassExtension.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SensorConnectionType
-req.product : Windows 10 or later.
+UID: NF:sensorsclassextension.ISensorDriver.OnClientDisconnect
+title: ISensorDriver::OnClientDisconnect method
+author: windows-driver-content
+description: The ISensorDriver::OnClientDisconnect method notifies the sensor driver that a client application has disconnected.
+old-location: sensors\isensordriver_onclientdisconnect.htm
+old-project: sensors
+ms.assetid: 9484610b-4cbd-4c4e-9e60-ef052702325c
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: ISensorDriver, OnClientDisconnect, sensorsclassextension/ISensorDriver::OnClientDisconnect, ISensorDriver::OnClientDisconnect, sensors.isensordriver_onclientdisconnect, ISensorDriver interface [Sensor Devices], OnClientDisconnect method, OnClientDisconnect method [Sensor Devices], ISensorDriver interface, OnClientDisconnect method [Sensor Devices], Sensor_IFaces_f5f91a04-84b3-4302-9c26-845281651ed9.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: sensorsclassextension.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 7,Available in Windows 7.
+req.target-min-winversvr: None supported
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: SensorsClassExtension.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	SensorsClassExtension.lib
+-	SensorsClassExtension.dll
+apiname:
+-	ISensorDriver.OnClientDisconnect
+product: Windows
+targetos: Windows
+req.typenames: SensorConnectionType
+req.product: Windows 10 or later.
 ---
 
 

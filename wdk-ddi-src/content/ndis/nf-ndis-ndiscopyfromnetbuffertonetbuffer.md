@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisCopyFromNetBufferToNetBuffer
-title : NdisCopyFromNetBufferToNetBuffer function
-author : windows-driver-content
-description : Call the NdisCopyFromNetBufferToNetBuffer function to copy data from a source NET_BUFFER structure to a destination NET_BUFFER structure.
-old-location : netvista\ndiscopyfromnetbuffertonetbuffer.htm
-old-project : netvista
-ms.assetid : b760e176-3ef7-4495-89c7-ec6b8bb3ed30
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : ndis/NdisCopyFromNetBufferToNetBuffer, NdisCopyFromNetBufferToNetBuffer, netvista.ndiscopyfromnetbuffertonetbuffer, ndis_netbuf_functions_ref_28d10afe-d78a-49ef-8c9c-f90b87d4eeb1.xml, NdisCopyFromNetBufferToNetBuffer function [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_NetBuffer_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisCopyFromNetBufferToNetBuffer
+title: NdisCopyFromNetBufferToNetBuffer function
+author: windows-driver-content
+description: Call the NdisCopyFromNetBufferToNetBuffer function to copy data from a source NET_BUFFER structure to a destination NET_BUFFER structure.
+old-location: netvista\ndiscopyfromnetbuffertonetbuffer.htm
+old-project: netvista
+ms.assetid: b760e176-3ef7-4495-89c7-ec6b8bb3ed30
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: ndis/NdisCopyFromNetBufferToNetBuffer, NdisCopyFromNetBufferToNetBuffer, netvista.ndiscopyfromnetbuffertonetbuffer, ndis_netbuf_functions_ref_28d10afe-d78a-49ef-8c9c-f90b87d4eeb1.xml, NdisCopyFromNetBufferToNetBuffer function [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_NetBuffer_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisCopyFromNetBufferToNetBuffer
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

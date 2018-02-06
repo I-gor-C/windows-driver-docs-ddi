@@ -1,41 +1,47 @@
 ---
-UID : NF:dbgeng.IDebugSymbolGroup2.OutputAsType
-title : IDebugSymbolGroup2::OutputAsType method
-author : windows-driver-content
-description : The OutputAsType method changes the type of a symbol in a symbol group. The symbol's entry is updated to represent the new type.
-old-location : debugger\outputastype.htm
-old-project : debugger
-ms.assetid : ab8c19c8-73c0-4c70-9a5d-9cf9d182157d
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugSymbolGroup2::OutputAsType, IDebugSymbolGroup2, dbgeng/IDebugSymbolGroup2::OutputAsType, IDebugSymbolGroup::OutputAsType, OutputAsType method [Windows Debugging], dbgeng/IDebugSymbolGroup::OutputAsType, OutputAsType, OutputAsType method [Windows Debugging], IDebugSymbolGroup interface, ComOther_6805cc12-0d46-4114-a40d-54c7e32b3c7c.xml, OutputAsType method [Windows Debugging], IDebugSymbolGroup2 interface, IDebugSymbolGroup2 interface [Windows Debugging], OutputAsType method, IDebugSymbolGroup interface [Windows Debugging], OutputAsType method, debugger.outputastype
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSymbolGroup2.OutputAsType
+title: IDebugSymbolGroup2::OutputAsType method
+author: windows-driver-content
+description: The OutputAsType method changes the type of a symbol in a symbol group. The symbol's entry is updated to represent the new type.
+old-location: debugger\outputastype.htm
+old-project: debugger
+ms.assetid: ab8c19c8-73c0-4c70-9a5d-9cf9d182157d
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugSymbolGroup2::OutputAsType, IDebugSymbolGroup2, dbgeng/IDebugSymbolGroup2::OutputAsType, IDebugSymbolGroup::OutputAsType, OutputAsType method [Windows Debugging], dbgeng/IDebugSymbolGroup::OutputAsType, OutputAsType, OutputAsType method [Windows Debugging], IDebugSymbolGroup interface, ComOther_6805cc12-0d46-4114-a40d-54c7e32b3c7c.xml, OutputAsType method [Windows Debugging], IDebugSymbolGroup2 interface, IDebugSymbolGroup2 interface [Windows Debugging], OutputAsType method, IDebugSymbolGroup interface [Windows Debugging], OutputAsType method, debugger.outputastype
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugSymbolGroup.OutputAsType
+-	IDebugSymbolGroup2.OutputAsType
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

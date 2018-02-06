@@ -1,41 +1,46 @@
 ---
-UID : NS:acpiioct._ACPI_ENUM_CHILDREN_INPUT_BUFFER
-title : "_ACPI_ENUM_CHILDREN_INPUT_BUFFER"
-author : windows-driver-content
-description : The ACPI_ENUM_CHILDREN_INPUT_BUFFER structure is used as input to an IOCTL_ACPI_ENUM_CHILDREN request. The structure specifies which child objects to enumerate in the namespace of the device to which the request is sent.
-old-location : acpi\acpi_enum_children_input_buffer.htm
-old-project : acpi
-ms.assetid : fba604bc-2fab-448c-bbc7-8ea30ff6de6b
-ms.author : windowsdriverdev
-ms.date : 12/31/2017
-ms.keywords : ACPI_ENUM_CHILDREN_INPUT_BUFFER structure [ACPI Devices], acpiioct/ACPI_ENUM_CHILDREN_INPUT_BUFFER, _ACPI_ENUM_CHILDREN_INPUT_BUFFER, PACPI_ENUM_CHILDREN_INPUT_BUFFER structure pointer [ACPI Devices], acpiioct/PACPI_ENUM_CHILDREN_INPUT_BUFFER, ACPI_ENUM_CHILDREN_INPUT_BUFFER, acpi-meth-eval-ref_3d8ce8a3-94f9-4ea0-9a16-f76c08928fc4.xml, acpi.acpi_enum_children_input_buffer, PACPI_ENUM_CHILDREN_INPUT_BUFFER, *PACPI_ENUM_CHILDREN_INPUT_BUFFER
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : acpiioct.h
-req.include-header : Acpiioct.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows Vista and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : ACPI_ENUM_CHILDREN_INPUT_BUFFER, *PACPI_ENUM_CHILDREN_INPUT_BUFFER
+UID: NS:acpiioct._ACPI_ENUM_CHILDREN_INPUT_BUFFER
+title: "_ACPI_ENUM_CHILDREN_INPUT_BUFFER"
+author: windows-driver-content
+description: The ACPI_ENUM_CHILDREN_INPUT_BUFFER structure is used as input to an IOCTL_ACPI_ENUM_CHILDREN request. The structure specifies which child objects to enumerate in the namespace of the device to which the request is sent.
+old-location: acpi\acpi_enum_children_input_buffer.htm
+old-project: acpi
+ms.assetid: fba604bc-2fab-448c-bbc7-8ea30ff6de6b
+ms.author: windowsdriverdev
+ms.date: 12/31/2017
+ms.keywords: ACPI_ENUM_CHILDREN_INPUT_BUFFER structure [ACPI Devices], acpiioct/ACPI_ENUM_CHILDREN_INPUT_BUFFER, _ACPI_ENUM_CHILDREN_INPUT_BUFFER, PACPI_ENUM_CHILDREN_INPUT_BUFFER structure pointer [ACPI Devices], acpiioct/PACPI_ENUM_CHILDREN_INPUT_BUFFER, ACPI_ENUM_CHILDREN_INPUT_BUFFER, acpi-meth-eval-ref_3d8ce8a3-94f9-4ea0-9a16-f76c08928fc4.xml, acpi.acpi_enum_children_input_buffer, PACPI_ENUM_CHILDREN_INPUT_BUFFER, *PACPI_ENUM_CHILDREN_INPUT_BUFFER
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: acpiioct.h
+req.include-header: Acpiioct.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows Vista and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Acpiioct.h
+apiname:
+-	ACPI_ENUM_CHILDREN_INPUT_BUFFER
+product: Windows
+targetos: Windows
+req.typenames: ACPI_ENUM_CHILDREN_INPUT_BUFFER, *PACPI_ENUM_CHILDREN_INPUT_BUFFER
 ---
 
 # _ACPI_ENUM_CHILDREN_INPUT_BUFFER structure

@@ -1,41 +1,46 @@
 ---
-UID : NC:dispmprt.DXGKDDI_QUERY_CHILD_STATUS
-title : DXGKDDI_QUERY_CHILD_STATUS
-author : windows-driver-content
-description : The DxgkDdiQueryChildStatus function returns the status of an individual child device of a display adapter.
-old-location : display\dxgkddiquerychildstatus.htm
-old-project : display
-ms.assetid : 478e0c52-4324-4062-8e1e-381808b0f481
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkddiquerychildstatus, DxgkDdiQueryChildStatus callback function [Display Devices], DxgkDdiQueryChildStatus, DXGKDDI_QUERY_CHILD_STATUS, DXGKDDI_QUERY_CHILD_STATUS, dispmprt/DxgkDdiQueryChildStatus, DmFunctions_3da69961-14d3-4bf8-9427-9c47d9bbfb89.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : dispmprt.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
+UID: NC:dispmprt.DXGKDDI_QUERY_CHILD_STATUS
+title: DXGKDDI_QUERY_CHILD_STATUS
+author: windows-driver-content
+description: The DxgkDdiQueryChildStatus function returns the status of an individual child device of a display adapter.
+old-location: display\dxgkddiquerychildstatus.htm
+old-project: display
+ms.assetid: 478e0c52-4324-4062-8e1e-381808b0f481
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkddiquerychildstatus, DxgkDdiQueryChildStatus callback function [Display Devices], DxgkDdiQueryChildStatus, DXGKDDI_QUERY_CHILD_STATUS, DXGKDDI_QUERY_CHILD_STATUS, dispmprt/DxgkDdiQueryChildStatus, DmFunctions_3da69961-14d3-4bf8-9427-9c47d9bbfb89.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: dispmprt.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	dispmprt.h
+apiname:
+-	DxgkDdiQueryChildStatus
+product: Windows
+targetos: Windows
+req.typenames: SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.tagKS_DATARANGE_VIDEO
-title : tagKS_DATARANGE_VIDEO
-author : windows-driver-content
-description : The KS_DATARANGE_VIDEO structure describes a range of video streams without bob or weave settings.
-old-location : stream\ks_datarange_video.htm
-old-project : stream
-ms.assetid : 682fe2b7-3166-4691-8959-ec7f34c414f7
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ksmedia/KS_DATARANGE_VIDEO, tagKS_DATARANGE_VIDEO, PKS_DATARANGE_VIDEO structure pointer [Streaming Media Devices], stream.ks_datarange_video, PKS_DATARANGE_VIDEO, vidcapstruct_1ea64e7e-bfcd-444c-a6e9-914f20fb2172.xml, KS_DATARANGE_VIDEO structure [Streaming Media Devices], KS_DATARANGE_VIDEO, *PKS_DATARANGE_VIDEO, ksmedia/PKS_DATARANGE_VIDEO
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KS_DATARANGE_VIDEO, *PKS_DATARANGE_VIDEO
+UID: NS:ksmedia.tagKS_DATARANGE_VIDEO
+title: tagKS_DATARANGE_VIDEO
+author: windows-driver-content
+description: The KS_DATARANGE_VIDEO structure describes a range of video streams without bob or weave settings.
+old-location: stream\ks_datarange_video.htm
+old-project: stream
+ms.assetid: 682fe2b7-3166-4691-8959-ec7f34c414f7
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ksmedia/KS_DATARANGE_VIDEO, tagKS_DATARANGE_VIDEO, PKS_DATARANGE_VIDEO structure pointer [Streaming Media Devices], stream.ks_datarange_video, PKS_DATARANGE_VIDEO, vidcapstruct_1ea64e7e-bfcd-444c-a6e9-914f20fb2172.xml, KS_DATARANGE_VIDEO structure [Streaming Media Devices], KS_DATARANGE_VIDEO, *PKS_DATARANGE_VIDEO, ksmedia/PKS_DATARANGE_VIDEO
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	KS_DATARANGE_VIDEO
+product: Windows
+targetos: Windows
+req.typenames: KS_DATARANGE_VIDEO, *PKS_DATARANGE_VIDEO
 ---
 
 # tagKS_DATARANGE_VIDEO structure

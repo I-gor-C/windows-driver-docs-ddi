@@ -1,42 +1,50 @@
 ---
-UID : NF:wdfinterrupt.WdfInterruptSetExtendedPolicy
-title : WdfInterruptSetExtendedPolicy function
-author : windows-driver-content
-description : The WdfInterruptSetExtendedPolicy method specifies the interrupt priority, processor affinity, affinity policy, and processor group for a specified interrupt.
-old-location : wdf\wdfinterruptsetextendedpolicy.htm
-old-project : wdf
-ms.assetid : 043c15dc-ebd7-4d91-8f65-d89d6064cc7c
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : DFInterruptObjectRef_ed600fb0-0e09-4c00-a132-cd4947dd2b04.xml, wdf.wdfinterruptsetextendedpolicy, PFN_WDFINTERRUPTSETEXTENDEDPOLICY, kmdf.wdfinterruptsetextendedpolicy, WdfInterruptSetExtendedPolicy, wdfinterrupt/WdfInterruptSetExtendedPolicy, WdfInterruptSetExtendedPolicy method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfinterrupt.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.9
-req.umdf-ver : 2.0
-req.ddi-compliance : DriverCreate
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_INTERRUPT_PRIORITY, *PWDF_INTERRUPT_PRIORITY
-req.product : Windows 10 or later.
+UID: NF:wdfinterrupt.WdfInterruptSetExtendedPolicy
+title: WdfInterruptSetExtendedPolicy function
+author: windows-driver-content
+description: The WdfInterruptSetExtendedPolicy method specifies the interrupt priority, processor affinity, affinity policy, and processor group for a specified interrupt.
+old-location: wdf\wdfinterruptsetextendedpolicy.htm
+old-project: wdf
+ms.assetid: 043c15dc-ebd7-4d91-8f65-d89d6064cc7c
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: DFInterruptObjectRef_ed600fb0-0e09-4c00-a132-cd4947dd2b04.xml, wdf.wdfinterruptsetextendedpolicy, PFN_WDFINTERRUPTSETEXTENDEDPOLICY, kmdf.wdfinterruptsetextendedpolicy, WdfInterruptSetExtendedPolicy, wdfinterrupt/WdfInterruptSetExtendedPolicy, WdfInterruptSetExtendedPolicy method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfinterrupt.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.9
+req.umdf-ver: 2.0
+req.ddi-compliance: DriverCreate
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+-	WUDFx02000.dll
+-	WUDFx02000.dll.dll
+apiname:
+-	WdfInterruptSetExtendedPolicy
+product: Windows
+targetos: Windows
+req.typenames: WDF_INTERRUPT_PRIORITY, *PWDF_INTERRUPT_PRIORITY
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:ndiswwan._NDIS_WWAN_SET_HOME_PROVIDER
-title : "_NDIS_WWAN_SET_HOME_PROVIDER"
-author : windows-driver-content
-description : The NDIS_WWAN_SET_HOME_PROVIDER structure describes a home provider.
-old-location : netvista\ndis_wwan_set_home_provider.htm
-old-project : netvista
-ms.assetid : C0B1A72D-713B-48FF-8D1A-E9752569C10E
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.ndis_wwan_set_home_provider, ndiswwan/PNDIS_WWAN_SET_HOME_PROVIDER, PNDIS_WWAN_SET_HOME_PROVIDER structure pointer [Network Drivers Starting with Windows Vista], *PNDIS_WWAN_SET_HOME_PROVIDER, PNDIS_WWAN_SET_HOME_PROVIDER, ndiswwan/NDIS_WWAN_SET_HOME_PROVIDER, _NDIS_WWAN_SET_HOME_PROVIDER, NDIS_WWAN_SET_HOME_PROVIDER structure [Network Drivers Starting with Windows Vista], NDIS_WWAN_SET_HOME_PROVIDER
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndiswwan.h
-req.include-header : Ndiswwan.h
-req.target-type : Windows
-req.target-min-winverclnt : Versions:\_Supported in Windows 8 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PNDIS_WWAN_SET_HOME_PROVIDER, NDIS_WWAN_SET_HOME_PROVIDER"
+UID: NS:ndiswwan._NDIS_WWAN_SET_HOME_PROVIDER
+title: "_NDIS_WWAN_SET_HOME_PROVIDER"
+author: windows-driver-content
+description: The NDIS_WWAN_SET_HOME_PROVIDER structure describes a home provider.
+old-location: netvista\ndis_wwan_set_home_provider.htm
+old-project: netvista
+ms.assetid: C0B1A72D-713B-48FF-8D1A-E9752569C10E
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.ndis_wwan_set_home_provider, ndiswwan/PNDIS_WWAN_SET_HOME_PROVIDER, PNDIS_WWAN_SET_HOME_PROVIDER structure pointer [Network Drivers Starting with Windows Vista], *PNDIS_WWAN_SET_HOME_PROVIDER, PNDIS_WWAN_SET_HOME_PROVIDER, ndiswwan/NDIS_WWAN_SET_HOME_PROVIDER, _NDIS_WWAN_SET_HOME_PROVIDER, NDIS_WWAN_SET_HOME_PROVIDER structure [Network Drivers Starting with Windows Vista], NDIS_WWAN_SET_HOME_PROVIDER
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndiswwan.h
+req.include-header: Ndiswwan.h
+req.target-type: Windows
+req.target-min-winverclnt: Versions:\_Supported in Windows 8 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndiswwan.h
+apiname:
+-	NDIS_WWAN_SET_HOME_PROVIDER
+product: Windows
+targetos: Windows
+req.typenames: "*PNDIS_WWAN_SET_HOME_PROVIDER, NDIS_WWAN_SET_HOME_PROVIDER"
 ---
 
 # _NDIS_WWAN_SET_HOME_PROVIDER structure

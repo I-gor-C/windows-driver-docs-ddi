@@ -1,41 +1,46 @@
 ---
-UID : NS:ata._IDENTIFY_DEVICE_DATA
-title : "_IDENTIFY_DEVICE_DATA"
-author : windows-driver-content
-description : The IDENTIFY_DEVICE_DATA structure contains the data retrieved by an ATA identify device data command (0xEC).Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
-old-location : storage\identify_device_data.htm
-old-project : storage
-ms.assetid : 7f2edd6f-16bf-47a6-8546-7871435a56ac
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : PIDENTIFY_DEVICE_DATA structure pointer [Storage Devices], *PIDENTIFY_DEVICE_DATA, IDENTIFY_DEVICE_DATA structure [Storage Devices], ata/PIDENTIFY_DEVICE_DATA, storage.identify_device_data, ata/IDENTIFY_DEVICE_DATA, PIDENTIFY_DEVICE_DATA, IDENTIFY_DEVICE_DATA, _IDENTIFY_DEVICE_DATA, structs-ATA_904f6e71-4dd9-4ecb-9928-0d7ce44b83ef.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ata.h
-req.include-header : Irb.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PIDENTIFY_DEVICE_DATA, IDENTIFY_DEVICE_DATA"
+UID: NS:ata._IDENTIFY_DEVICE_DATA
+title: "_IDENTIFY_DEVICE_DATA"
+author: windows-driver-content
+description: The IDENTIFY_DEVICE_DATA structure contains the data retrieved by an ATA identify device data command (0xEC).Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
+old-location: storage\identify_device_data.htm
+old-project: storage
+ms.assetid: 7f2edd6f-16bf-47a6-8546-7871435a56ac
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: PIDENTIFY_DEVICE_DATA structure pointer [Storage Devices], *PIDENTIFY_DEVICE_DATA, IDENTIFY_DEVICE_DATA structure [Storage Devices], ata/PIDENTIFY_DEVICE_DATA, storage.identify_device_data, ata/IDENTIFY_DEVICE_DATA, PIDENTIFY_DEVICE_DATA, IDENTIFY_DEVICE_DATA, _IDENTIFY_DEVICE_DATA, structs-ATA_904f6e71-4dd9-4ecb-9928-0d7ce44b83ef.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ata.h
+req.include-header: Irb.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ata.h
+apiname:
+-	IDENTIFY_DEVICE_DATA
+product: Windows
+targetos: Windows
+req.typenames: "*PIDENTIFY_DEVICE_DATA, IDENTIFY_DEVICE_DATA"
 ---
 
 # _IDENTIFY_DEVICE_DATA structure

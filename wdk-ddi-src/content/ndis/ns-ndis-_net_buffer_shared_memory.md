@@ -1,41 +1,46 @@
 ---
-UID : NS:ndis._NET_BUFFER_SHARED_MEMORY
-title : "_NET_BUFFER_SHARED_MEMORY"
-author : windows-driver-content
-description : The NET_BUFFER_SHARED_MEMORY structure specifies a shared memory buffer that is associated with a NET_BUFFER structure.
-old-location : netvista\net_buffer_shared_memory.htm
-old-project : netvista
-ms.assetid : 492bb1cd-fc3e-4e85-9074-32ebbf1fb837
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NET_BUFFER_SHARED_MEMORY structure [Network Drivers Starting with Windows Vista], ndis/PNET_BUFFER_SHARED_MEMORY, _NET_BUFFER_SHARED_MEMORY, ndis_netbuf_macros_media_specific_5b9066cf-413a-4483-9b05-e06ceed9081e.xml, ndis/NET_BUFFER_SHARED_MEMORY, NET_BUFFER_SHARED_MEMORY, PNET_BUFFER_SHARED_MEMORY, PNET_BUFFER_SHARED_MEMORY structure pointer [Network Drivers Starting with Windows Vista], *PNET_BUFFER_SHARED_MEMORY, netvista.net_buffer_shared_memory
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.20 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : See Remarks section
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PNET_BUFFER_SHARED_MEMORY, NET_BUFFER_SHARED_MEMORY"
+UID: NS:ndis._NET_BUFFER_SHARED_MEMORY
+title: "_NET_BUFFER_SHARED_MEMORY"
+author: windows-driver-content
+description: The NET_BUFFER_SHARED_MEMORY structure specifies a shared memory buffer that is associated with a NET_BUFFER structure.
+old-location: netvista\net_buffer_shared_memory.htm
+old-project: netvista
+ms.assetid: 492bb1cd-fc3e-4e85-9074-32ebbf1fb837
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NET_BUFFER_SHARED_MEMORY structure [Network Drivers Starting with Windows Vista], ndis/PNET_BUFFER_SHARED_MEMORY, _NET_BUFFER_SHARED_MEMORY, ndis_netbuf_macros_media_specific_5b9066cf-413a-4483-9b05-e06ceed9081e.xml, ndis/NET_BUFFER_SHARED_MEMORY, NET_BUFFER_SHARED_MEMORY, PNET_BUFFER_SHARED_MEMORY, PNET_BUFFER_SHARED_MEMORY structure pointer [Network Drivers Starting with Windows Vista], *PNET_BUFFER_SHARED_MEMORY, netvista.net_buffer_shared_memory
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.20 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: See Remarks section
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndis.h
+apiname:
+-	NET_BUFFER_SHARED_MEMORY
+product: Windows
+targetos: Windows
+req.typenames: "*PNET_BUFFER_SHARED_MEMORY, NET_BUFFER_SHARED_MEMORY"
 ---
 
 # _NET_BUFFER_SHARED_MEMORY structure

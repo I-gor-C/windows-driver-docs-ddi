@@ -1,42 +1,47 @@
 ---
-UID : NS:usb._URB_CONTROL_GET_CONFIGURATION_REQUEST
-title : "_URB_CONTROL_GET_CONFIGURATION_REQUEST"
-author : windows-driver-content
-description : The _URB_CONTROL_GET_CONFIGURATION_REQUEST structure is used by USB client drivers to retrieve the current configuration for a device.
-old-location : buses\_urb_control_get_configuration_request.htm
-old-project : usbref
-ms.assetid : 6f50b520-244e-4848-8696-969de82aa8ff
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : "_URB_CONTROL_GET_CONFIGURATION_REQUEST structure [Buses], _URB_CONTROL_GET_CONFIGURATION_REQUEST, usbstrct_77d89ae2-eb81-48f0-b399-85d39a5feb6a.xml, usb/_URB_CONTROL_GET_CONFIGURATION_REQUEST, buses._urb_control_get_configuration_request"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : usb.h
-req.include-header : Usb.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
-req.product : Windows 10 or later.
+UID: NS:usb._URB_CONTROL_GET_CONFIGURATION_REQUEST
+title: "_URB_CONTROL_GET_CONFIGURATION_REQUEST"
+author: windows-driver-content
+description: The _URB_CONTROL_GET_CONFIGURATION_REQUEST structure is used by USB client drivers to retrieve the current configuration for a device.
+old-location: buses\_urb_control_get_configuration_request.htm
+old-project: usbref
+ms.assetid: 6f50b520-244e-4848-8696-969de82aa8ff
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: "_URB_CONTROL_GET_CONFIGURATION_REQUEST structure [Buses], _URB_CONTROL_GET_CONFIGURATION_REQUEST, usbstrct_77d89ae2-eb81-48f0-b399-85d39a5feb6a.xml, usb/_URB_CONTROL_GET_CONFIGURATION_REQUEST, buses._urb_control_get_configuration_request"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: usb.h
+req.include-header: Usb.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	usb.h
+apiname:
+-	_URB_CONTROL_GET_CONFIGURATION_REQUEST
+product: Windows
+targetos: Windows
+req.typenames: 
+req.product: Windows 10 or later.
 ---
 
 # _URB_CONTROL_GET_CONFIGURATION_REQUEST structure

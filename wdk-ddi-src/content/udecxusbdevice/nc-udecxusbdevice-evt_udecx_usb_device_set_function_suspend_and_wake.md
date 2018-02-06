@@ -1,42 +1,47 @@
 ---
-UID : NC:udecxusbdevice.EVT_UDECX_USB_DEVICE_SET_FUNCTION_SUSPEND_AND_WAKE
-title : EVT_UDECX_USB_DEVICE_SET_FUNCTION_SUSPEND_AND_WAKE
-author : windows-driver-content
-description : The USB device emulation class extension (UdeCx) invokes this callback function when it gets a request to change the function state of the specified interface of the virtual USB 3.0 device.
-old-location : buses\evt_udecx_usb_device_set_function_suspend_and_wake.htm
-old-project : usbref
-ms.assetid : 54484E17-AA96-4152-B672-94C29E53F352
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : buses.evt_udecx_usb_device_set_function_suspend_and_wake, EvtUsbDeviceSetFunctionSuspendAndWake callback function [Buses], EvtUsbDeviceSetFunctionSuspendAndWake, EVT_UDECX_USB_DEVICE_SET_FUNCTION_SUSPEND_AND_WAKE, EVT_UDECX_USB_DEVICE_SET_FUNCTION_SUSPEND_AND_WAKE, udecxusbdevice/EvtUsbDeviceSetFunctionSuspendAndWake
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : udecxusbdevice.h
-req.include-header : Udecx.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 1.15
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : USB_DEVICE_PORT_PATH, *PUSB_DEVICE_PORT_PATH
-req.product : Windows 10 or later.
+UID: NC:udecxusbdevice.EVT_UDECX_USB_DEVICE_SET_FUNCTION_SUSPEND_AND_WAKE
+title: EVT_UDECX_USB_DEVICE_SET_FUNCTION_SUSPEND_AND_WAKE
+author: windows-driver-content
+description: The USB device emulation class extension (UdeCx) invokes this callback function when it gets a request to change the function state of the specified interface of the virtual USB 3.0 device.
+old-location: buses\evt_udecx_usb_device_set_function_suspend_and_wake.htm
+old-project: usbref
+ms.assetid: 54484E17-AA96-4152-B672-94C29E53F352
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: buses.evt_udecx_usb_device_set_function_suspend_and_wake, EvtUsbDeviceSetFunctionSuspendAndWake callback function [Buses], EvtUsbDeviceSetFunctionSuspendAndWake, EVT_UDECX_USB_DEVICE_SET_FUNCTION_SUSPEND_AND_WAKE, EVT_UDECX_USB_DEVICE_SET_FUNCTION_SUSPEND_AND_WAKE, udecxusbdevice/EvtUsbDeviceSetFunctionSuspendAndWake
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: udecxusbdevice.h
+req.include-header: Udecx.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 1.15
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	udecxusbdevice.h
+apiname:
+-	EvtUsbDeviceSetFunctionSuspendAndWake
+product: Windows
+targetos: Windows
+req.typenames: USB_DEVICE_PORT_PATH, *PUSB_DEVICE_PORT_PATH
+req.product: Windows 10 or later.
 ---
 
 

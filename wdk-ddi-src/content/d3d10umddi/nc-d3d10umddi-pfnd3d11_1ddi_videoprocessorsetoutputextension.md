@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3D11_1DDI_VIDEOPROCESSORSETOUTPUTEXTENSION
-title : PFND3D11_1DDI_VIDEOPROCESSORSETOUTPUTEXTENSION
-author : windows-driver-content
-description : Sets private state data for a video processor from an application.
-old-location : display\videoprocessorsetoutputextension.htm
-old-project : display
-ms.assetid : 040aa673-4b80-4e89-a58d-f298936537cd
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.videoprocessorsetoutputextension, pfnVideoProcessorSetOutputExtension callback function [Display Devices], pfnVideoProcessorSetOutputExtension, PFND3D11_1DDI_VIDEOPROCESSORSETOUTPUTEXTENSION, PFND3D11_1DDI_VIDEOPROCESSORSETOUTPUTEXTENSION, d3d10umddi/pfnVideoProcessorSetOutputExtension
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3D11_1DDI_VIDEOPROCESSORSETOUTPUTEXTENSION
+title: PFND3D11_1DDI_VIDEOPROCESSORSETOUTPUTEXTENSION
+author: windows-driver-content
+description: Sets private state data for a video processor from an application.
+old-location: display\videoprocessorsetoutputextension.htm
+old-project: display
+ms.assetid: 040aa673-4b80-4e89-a58d-f298936537cd
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.videoprocessorsetoutputextension, pfnVideoProcessorSetOutputExtension callback function [Display Devices], pfnVideoProcessorSetOutputExtension, PFND3D11_1DDI_VIDEOPROCESSORSETOUTPUTEXTENSION, PFND3D11_1DDI_VIDEOPROCESSORSETOUTPUTEXTENSION, d3d10umddi/pfnVideoProcessorSetOutputExtension
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	D3d10umddi.h
+apiname:
+-	pfnVideoProcessorSetOutputExtension
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

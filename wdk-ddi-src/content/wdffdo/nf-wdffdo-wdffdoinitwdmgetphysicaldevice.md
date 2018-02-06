@@ -1,42 +1,48 @@
 ---
-UID : NF:wdffdo.WdfFdoInitWdmGetPhysicalDevice
-title : WdfFdoInitWdmGetPhysicalDevice function
-author : windows-driver-content
-description : The WdfFdoInitWdmGetPhysicalDevice method retrieves a device's WDM physical device object (PDO).
-old-location : wdf\wdffdoinitwdmgetphysicaldevice.htm
-old-project : wdf
-ms.assetid : eba64244-50ff-4c59-a30f-46874c683e63
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdffdo/WdfFdoInitWdmGetPhysicalDevice, WdfFdoInitWdmGetPhysicalDevice method, wdf.wdffdoinitwdmgetphysicaldevice, DFDeviceObjectFdoPdoRef_49386e60-3427-449c-8c36-fe2e8bc7fabb.xml, kmdf.wdffdoinitwdmgetphysicaldevice, PFN_WDFFDOINITWDMGETPHYSICALDEVICE, WdfFdoInitWdmGetPhysicalDevice
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdffdo.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : DeviceInitAPI, DriverCreate, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_DRIVER_VERSION_AVAILABLE_PARAMS, *PWDF_DRIVER_VERSION_AVAILABLE_PARAMS
-req.product : Windows 10 or later.
+UID: NF:wdffdo.WdfFdoInitWdmGetPhysicalDevice
+title: WdfFdoInitWdmGetPhysicalDevice function
+author: windows-driver-content
+description: The WdfFdoInitWdmGetPhysicalDevice method retrieves a device's WDM physical device object (PDO).
+old-location: wdf\wdffdoinitwdmgetphysicaldevice.htm
+old-project: wdf
+ms.assetid: eba64244-50ff-4c59-a30f-46874c683e63
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdffdo/WdfFdoInitWdmGetPhysicalDevice, WdfFdoInitWdmGetPhysicalDevice method, wdf.wdffdoinitwdmgetphysicaldevice, DFDeviceObjectFdoPdoRef_49386e60-3427-449c-8c36-fe2e8bc7fabb.xml, kmdf.wdffdoinitwdmgetphysicaldevice, PFN_WDFFDOINITWDMGETPHYSICALDEVICE, WdfFdoInitWdmGetPhysicalDevice
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdffdo.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: DeviceInitAPI, DriverCreate, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfFdoInitWdmGetPhysicalDevice
+product: Windows
+targetos: Windows
+req.typenames: WDF_DRIVER_VERSION_AVAILABLE_PARAMS, *PWDF_DRIVER_VERSION_AVAILABLE_PARAMS
+req.product: Windows 10 or later.
 ---
 
 

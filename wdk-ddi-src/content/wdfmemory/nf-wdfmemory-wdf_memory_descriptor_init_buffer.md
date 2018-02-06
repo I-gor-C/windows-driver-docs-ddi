@@ -1,42 +1,47 @@
 ---
-UID : NF:wdfmemory.WDF_MEMORY_DESCRIPTOR_INIT_BUFFER
-title : WDF_MEMORY_DESCRIPTOR_INIT_BUFFER function
-author : windows-driver-content
-description : The WDF_MEMORY_DESCRIPTOR_INIT_BUFFER function initializes a WDF_MEMORY_DESCRIPTOR structure so that it describes a specified buffer.
-old-location : wdf\wdf_memory_descriptor_init_buffer.htm
-old-project : wdf
-ms.assetid : 16e1b0cb-8543-4700-8f8c-d7301c6de622
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WDF_MEMORY_DESCRIPTOR_INIT_BUFFER function, kmdf.wdf_memory_descriptor_init_buffer, WDF_MEMORY_DESCRIPTOR_INIT_BUFFER, wdfmemory/WDF_MEMORY_DESCRIPTOR_INIT_BUFFER, wdf.wdf_memory_descriptor_init_buffer, DFMemoryObjectRef_706a9ee6-c0f1-4cb4-a887-cbb535d94d17.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfmemory.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : BufAfterReqCompletedIntIoctlA, BufAfterReqCompletedIoctlA, BufAfterReqCompletedReadA, BufAfterReqCompletedWriteA
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_MEMORY_DESCRIPTOR_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfmemory.WDF_MEMORY_DESCRIPTOR_INIT_BUFFER
+title: WDF_MEMORY_DESCRIPTOR_INIT_BUFFER function
+author: windows-driver-content
+description: The WDF_MEMORY_DESCRIPTOR_INIT_BUFFER function initializes a WDF_MEMORY_DESCRIPTOR structure so that it describes a specified buffer.
+old-location: wdf\wdf_memory_descriptor_init_buffer.htm
+old-project: wdf
+ms.assetid: 16e1b0cb-8543-4700-8f8c-d7301c6de622
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WDF_MEMORY_DESCRIPTOR_INIT_BUFFER function, kmdf.wdf_memory_descriptor_init_buffer, WDF_MEMORY_DESCRIPTOR_INIT_BUFFER, wdfmemory/WDF_MEMORY_DESCRIPTOR_INIT_BUFFER, wdf.wdf_memory_descriptor_init_buffer, DFMemoryObjectRef_706a9ee6-c0f1-4cb4-a887-cbb535d94d17.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfmemory.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: BufAfterReqCompletedIntIoctlA, BufAfterReqCompletedIoctlA, BufAfterReqCompletedReadA, BufAfterReqCompletedWriteA
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfmemory.h
+apiname:
+-	WDF_MEMORY_DESCRIPTOR_INIT_BUFFER
+product: Windows
+targetos: Windows
+req.typenames: WDF_MEMORY_DESCRIPTOR_TYPE
+req.product: Windows 10 or later.
 ---
 
 

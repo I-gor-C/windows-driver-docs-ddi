@@ -1,41 +1,46 @@
 ---
-UID : NS:d3d10umddi.D3D11_1DDI_VIDEO_DECODERR_BUFFER_DESC
-title : D3D11_1DDI_VIDEO_DECODERR_BUFFER_DESC
-author : windows-driver-content
-description : Describes a compressed buffer for Microsoft DirectX Video Acceleration (DXVA) decoding.
-old-location : display\d3d11_1ddi_video_decoderr_buffer_desc.htm
-old-project : display
-ms.assetid : aff44ad9-7ade-4b01-8e41-11d686728faa
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3D11_1DDI_VIDEO_DECODER_BUFFER_DESC, d3d10umddi/D3D11_1DDI_VIDEO_DECODERR_BUFFER_DESC, D3D11_1DDI_VIDEO_DECODERR_BUFFER_DESC structure [Display Devices], D3D11_1DDI_VIDEO_DECODERR_BUFFER_DESC, display.d3d11_1ddi_video_decoderr_buffer_desc, D3D11_1DDI_VIDEO_DECODER_BUFFER_DESC structure [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3D11_1DDI_VIDEO_DECODER_BUFFER_DESC
+UID: NS:d3d10umddi.D3D11_1DDI_VIDEO_DECODERR_BUFFER_DESC
+title: D3D11_1DDI_VIDEO_DECODERR_BUFFER_DESC
+author: windows-driver-content
+description: Describes a compressed buffer for Microsoft DirectX Video Acceleration (DXVA) decoding.
+old-location: display\d3d11_1ddi_video_decoderr_buffer_desc.htm
+old-project: display
+ms.assetid: aff44ad9-7ade-4b01-8e41-11d686728faa
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3D11_1DDI_VIDEO_DECODER_BUFFER_DESC, d3d10umddi/D3D11_1DDI_VIDEO_DECODERR_BUFFER_DESC, D3D11_1DDI_VIDEO_DECODERR_BUFFER_DESC structure [Display Devices], D3D11_1DDI_VIDEO_DECODERR_BUFFER_DESC, display.d3d11_1ddi_video_decoderr_buffer_desc, D3D11_1DDI_VIDEO_DECODER_BUFFER_DESC structure [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	D3d10umddi.h
+apiname:
+-	D3D11_1DDI_VIDEO_DECODER_BUFFER_DESC
+product: Windows
+targetos: Windows
+req.typenames: D3D11_1DDI_VIDEO_DECODER_BUFFER_DESC
 ---
 
 # D3D11_1DDI_VIDEO_DECODERR_BUFFER_DESC structure

@@ -1,42 +1,47 @@
 ---
-UID : NS:wdfchildlist._WDF_CHILD_RETRIEVE_INFO
-title : "_WDF_CHILD_RETRIEVE_INFO"
-author : windows-driver-content
-description : The WDF_CHILD_RETRIEVE_INFO structure contains information about a child device that is obtained by calling WdfChildListRetrieveNextDevice or WdfChildListRetrievePdo.
-old-location : wdf\wdf_child_retrieve_info.htm
-old-project : wdf
-ms.assetid : 0c48e7cd-e9aa-4ae7-bd44-fe16e1b0d619
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WDF_CHILD_RETRIEVE_INFO, PWDF_CHILD_RETRIEVE_INFO structure pointer, kmdf.wdf_child_retrieve_info, DFDeviceObjectChildListRef_f2075d85-7f9e-4b9c-b702-c2ef2be65987.xml, PWDF_CHILD_RETRIEVE_INFO, wdfchildlist/PWDF_CHILD_RETRIEVE_INFO, WDF_CHILD_RETRIEVE_INFO structure, _WDF_CHILD_RETRIEVE_INFO, wdfchildlist/WDF_CHILD_RETRIEVE_INFO, wdf.wdf_child_retrieve_info, *PWDF_CHILD_RETRIEVE_INFO
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdfchildlist.h
-req.include-header : Wdf.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDF_CHILD_RETRIEVE_INFO, WDF_CHILD_RETRIEVE_INFO"
-req.product : Windows 10 or later.
+UID: NS:wdfchildlist._WDF_CHILD_RETRIEVE_INFO
+title: "_WDF_CHILD_RETRIEVE_INFO"
+author: windows-driver-content
+description: The WDF_CHILD_RETRIEVE_INFO structure contains information about a child device that is obtained by calling WdfChildListRetrieveNextDevice or WdfChildListRetrievePdo.
+old-location: wdf\wdf_child_retrieve_info.htm
+old-project: wdf
+ms.assetid: 0c48e7cd-e9aa-4ae7-bd44-fe16e1b0d619
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WDF_CHILD_RETRIEVE_INFO, PWDF_CHILD_RETRIEVE_INFO structure pointer, kmdf.wdf_child_retrieve_info, DFDeviceObjectChildListRef_f2075d85-7f9e-4b9c-b702-c2ef2be65987.xml, PWDF_CHILD_RETRIEVE_INFO, wdfchildlist/PWDF_CHILD_RETRIEVE_INFO, WDF_CHILD_RETRIEVE_INFO structure, _WDF_CHILD_RETRIEVE_INFO, wdfchildlist/WDF_CHILD_RETRIEVE_INFO, wdf.wdf_child_retrieve_info, *PWDF_CHILD_RETRIEVE_INFO
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdfchildlist.h
+req.include-header: Wdf.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfchildlist.h
+apiname:
+-	WDF_CHILD_RETRIEVE_INFO
+product: Windows
+targetos: Windows
+req.typenames: "*PWDF_CHILD_RETRIEVE_INFO, WDF_CHILD_RETRIEVE_INFO"
+req.product: Windows 10 or later.
 ---
 
 # _WDF_CHILD_RETRIEVE_INFO structure

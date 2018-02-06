@@ -1,41 +1,49 @@
 ---
-UID : NF:dbgeng.IDebugDataSpaces4.WriteBusData
-title : IDebugDataSpaces4::WriteBusData method
-author : windows-driver-content
-description : The WriteBusData method writes data to a system bus.
-old-location : debugger\writebusdata.htm
-old-project : debugger
-ms.assetid : bd4e762d-b3d5-4a4c-bdeb-998cd72783b4
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : dbgeng/IDebugDataSpaces4::WriteBusData, WriteBusData, WriteBusData method [Windows Debugging], WriteBusData method [Windows Debugging], IDebugDataSpaces4 interface, IDebugDataSpaces interface [Windows Debugging], WriteBusData method, IDebugDataSpaces3::WriteBusData, IDebugDataSpaces3 interface [Windows Debugging], WriteBusData method, debugger.writebusdata, IDebugDataSpaces::WriteBusData, IDebugDataSpaces2::WriteBusData, dbgeng/IDebugDataSpaces::WriteBusData, WriteBusData method [Windows Debugging], IDebugDataSpaces3 interface, WriteBusData method [Windows Debugging], IDebugDataSpaces2 interface, IDebugDataSpaces4 interface [Windows Debugging], WriteBusData method, IDebugDataSpaces4, IDebugDataSpaces_a1fb8543-dee8-475d-b42c-17077d72b06e.xml, WriteBusData method [Windows Debugging], IDebugDataSpaces interface, dbgeng/IDebugDataSpaces2::WriteBusData, IDebugDataSpaces2 interface [Windows Debugging], WriteBusData method, IDebugDataSpaces4::WriteBusData, dbgeng/IDebugDataSpaces3::WriteBusData
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugDataSpaces4.WriteBusData
+title: IDebugDataSpaces4::WriteBusData method
+author: windows-driver-content
+description: The WriteBusData method writes data to a system bus.
+old-location: debugger\writebusdata.htm
+old-project: debugger
+ms.assetid: bd4e762d-b3d5-4a4c-bdeb-998cd72783b4
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: dbgeng/IDebugDataSpaces4::WriteBusData, WriteBusData, WriteBusData method [Windows Debugging], WriteBusData method [Windows Debugging], IDebugDataSpaces4 interface, IDebugDataSpaces interface [Windows Debugging], WriteBusData method, IDebugDataSpaces3::WriteBusData, IDebugDataSpaces3 interface [Windows Debugging], WriteBusData method, debugger.writebusdata, IDebugDataSpaces::WriteBusData, IDebugDataSpaces2::WriteBusData, dbgeng/IDebugDataSpaces::WriteBusData, WriteBusData method [Windows Debugging], IDebugDataSpaces3 interface, WriteBusData method [Windows Debugging], IDebugDataSpaces2 interface, IDebugDataSpaces4 interface [Windows Debugging], WriteBusData method, IDebugDataSpaces4, IDebugDataSpaces_a1fb8543-dee8-475d-b42c-17077d72b06e.xml, WriteBusData method [Windows Debugging], IDebugDataSpaces interface, dbgeng/IDebugDataSpaces2::WriteBusData, IDebugDataSpaces2 interface [Windows Debugging], WriteBusData method, IDebugDataSpaces4::WriteBusData, dbgeng/IDebugDataSpaces3::WriteBusData
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugDataSpaces.WriteBusData
+-	IDebugDataSpaces2.WriteBusData
+-	IDebugDataSpaces3.WriteBusData
+-	IDebugDataSpaces4.WriteBusData
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

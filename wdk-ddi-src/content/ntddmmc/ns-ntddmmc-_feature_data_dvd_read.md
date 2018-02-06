@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddmmc._FEATURE_DATA_DVD_READ
-title : "_FEATURE_DATA_DVD_READ"
-author : windows-driver-content
-description : The FEATURE_DATA_DVD_READ structure contains information about the DVD Read feature.
-old-location : storage\feature_data_dvd_read.htm
-old-project : storage
-ms.assetid : 489d3edc-4966-481e-b5c8-6979173e9341
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : FEATURE_DATA_DVD_READ, ntddmmc/PFEATURE_DATA_DVD_READ, FEATURE_DATA_DVD_READ structure [Storage Devices], ntddmmc/FEATURE_DATA_DVD_READ, _FEATURE_DATA_DVD_READ, PFEATURE_DATA_DVD_READ structure pointer [Storage Devices], storage.feature_data_dvd_read, PFEATURE_DATA_DVD_READ, *PFEATURE_DATA_DVD_READ, structs-CD-ROM_94af17d0-72ec-4248-9035-4050f6e3c275.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddmmc.h
-req.include-header : Ntddcdrm.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PFEATURE_DATA_DVD_READ, FEATURE_DATA_DVD_READ"
+UID: NS:ntddmmc._FEATURE_DATA_DVD_READ
+title: "_FEATURE_DATA_DVD_READ"
+author: windows-driver-content
+description: The FEATURE_DATA_DVD_READ structure contains information about the DVD Read feature.
+old-location: storage\feature_data_dvd_read.htm
+old-project: storage
+ms.assetid: 489d3edc-4966-481e-b5c8-6979173e9341
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: FEATURE_DATA_DVD_READ, ntddmmc/PFEATURE_DATA_DVD_READ, FEATURE_DATA_DVD_READ structure [Storage Devices], ntddmmc/FEATURE_DATA_DVD_READ, _FEATURE_DATA_DVD_READ, PFEATURE_DATA_DVD_READ structure pointer [Storage Devices], storage.feature_data_dvd_read, PFEATURE_DATA_DVD_READ, *PFEATURE_DATA_DVD_READ, structs-CD-ROM_94af17d0-72ec-4248-9035-4050f6e3c275.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddmmc.h
+req.include-header: Ntddcdrm.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddmmc.h
+apiname:
+-	FEATURE_DATA_DVD_READ
+product: Windows
+targetos: Windows
+req.typenames: "*PFEATURE_DATA_DVD_READ, FEATURE_DATA_DVD_READ"
 ---
 
 # _FEATURE_DATA_DVD_READ structure

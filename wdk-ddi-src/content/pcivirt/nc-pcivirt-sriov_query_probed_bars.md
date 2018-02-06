@@ -1,41 +1,46 @@
 ---
-UID : NC:pcivirt.SRIOV_QUERY_PROBED_BARS
-title : SRIOV_QUERY_PROBED_BARS
-author : windows-driver-content
-description : Queries the data read from the physical function's (PF) base address registers (BARs) if the value -1 were written to them first.
-old-location : pci\sriov_query_probed_bars.htm
-old-project : PCI
-ms.assetid : 422a9212-7227-4508-8f06-0056349fa835
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : PCI.sriov_query_probed_bars, SriovQueryProbedBars callback function [Buses], SriovQueryProbedBars, SRIOV_QUERY_PROBED_BARS, SRIOV_QUERY_PROBED_BARS, pcivirt/SriovQueryProbedBars, *PSRIOV_QUERY_PROBED_BARS callback function pointer [Buses], *PSRIOV_QUERY_PROBED_BARS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : pcivirt.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PARCLASS_INFORMATION, *PPARCLASS_INFORMATION
+UID: NC:pcivirt.SRIOV_QUERY_PROBED_BARS
+title: SRIOV_QUERY_PROBED_BARS
+author: windows-driver-content
+description: Queries the data read from the physical function's (PF) base address registers (BARs) if the value -1 were written to them first.
+old-location: pci\sriov_query_probed_bars.htm
+old-project: PCI
+ms.assetid: 422a9212-7227-4508-8f06-0056349fa835
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: PCI.sriov_query_probed_bars, SriovQueryProbedBars callback function [Buses], SriovQueryProbedBars, SRIOV_QUERY_PROBED_BARS, SRIOV_QUERY_PROBED_BARS, pcivirt/SriovQueryProbedBars, *PSRIOV_QUERY_PROBED_BARS callback function pointer [Buses], *PSRIOV_QUERY_PROBED_BARS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: pcivirt.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Pcivirt.h
+apiname:
+-	*PSRIOV_QUERY_PROBED_BARS
+product: Windows
+targetos: Windows
+req.typenames: PARCLASS_INFORMATION, *PPARCLASS_INFORMATION
 ---
 
 

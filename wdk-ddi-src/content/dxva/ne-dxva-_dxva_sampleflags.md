@@ -1,41 +1,46 @@
 ---
-UID : NE:dxva._DXVA_SampleFlags
-title : "_DXVA_SampleFlags"
-author : windows-driver-content
-description : The DXVA_SampleFlags enumeration type contains a collection of flags that identify changes in the current sample frame from the previous sample frame.
-old-location : display\dxva_sampleflags.htm
-old-project : display
-ms.assetid : 24f77f16-e043-4d58-87ef-6c834e61cb5d
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DXVA_SampleFlagsMask, dxva/DXVA_SampleFlagsMask, DXVA_SampleFlags, DXVA_SampleFlag_Palette_Changed, dxva/DXVA_SampleFlags, DXVA_SampleFlag_ColorData_Changed, dxvaref_b74a9819-950e-40cc-bf3c-eebb797862f7.xml, _DXVA_SampleFlags, dxva/DXVA_SampleFlag_DstRect_Changed, display.dxva_sampleflags, DXVA_SampleFlag_DstRect_Changed, DXVA_SampleFlag_SrcRect_Changed, DXVA_SampleFlags enumeration [Display Devices], dxva/DXVA_SampleFlag_Palette_Changed, dxva/DXVA_SampleFlag_SrcRect_Changed, dxva/DXVA_SampleFlag_ColorData_Changed
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : dxva.h
-req.include-header : Dxva.h
-req.target-type : Windows
-req.target-min-winverclnt : This enumeration type applies only to Windows Server 2003 with SP1 and later, and Windows XP with SP2 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXVA_SampleFlags
+UID: NE:dxva._DXVA_SampleFlags
+title: "_DXVA_SampleFlags"
+author: windows-driver-content
+description: The DXVA_SampleFlags enumeration type contains a collection of flags that identify changes in the current sample frame from the previous sample frame.
+old-location: display\dxva_sampleflags.htm
+old-project: display
+ms.assetid: 24f77f16-e043-4d58-87ef-6c834e61cb5d
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DXVA_SampleFlagsMask, dxva/DXVA_SampleFlagsMask, DXVA_SampleFlags, DXVA_SampleFlag_Palette_Changed, dxva/DXVA_SampleFlags, DXVA_SampleFlag_ColorData_Changed, dxvaref_b74a9819-950e-40cc-bf3c-eebb797862f7.xml, _DXVA_SampleFlags, dxva/DXVA_SampleFlag_DstRect_Changed, display.dxva_sampleflags, DXVA_SampleFlag_DstRect_Changed, DXVA_SampleFlag_SrcRect_Changed, DXVA_SampleFlags enumeration [Display Devices], dxva/DXVA_SampleFlag_Palette_Changed, dxva/DXVA_SampleFlag_SrcRect_Changed, dxva/DXVA_SampleFlag_ColorData_Changed
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: dxva.h
+req.include-header: Dxva.h
+req.target-type: Windows
+req.target-min-winverclnt: This enumeration type applies only to Windows Server 2003 with SP1 and later, and Windows XP with SP2 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	dxva.h
+apiname:
+-	DXVA_SampleFlags
+product: Windows
+targetos: Windows
+req.typenames: DXVA_SampleFlags
 ---
 
 # _DXVA_SampleFlags Enumeration
@@ -55,31 +60,31 @@ typedef enum _DXVA_SampleFlags {
 ## Constants
 
 <table>
-
-<tr>
-<td>DXVA_SampleFlag_ColorData_Changed</td>
-<td>Indicates that the color data of the sample frame changed.</td>
-</tr>
-
-<tr>
-<td>DXVA_SampleFlag_DstRect_Changed</td>
-<td>Indicates that the destination rectangle of the sample frame changed.</td>
-</tr>
-
-<tr>
-<td>DXVA_SampleFlag_Palette_Changed</td>
-<td>Indicates that the palette of the sample frame changed.</td>
-</tr>
-
-<tr>
-<td>DXVA_SampleFlag_SrcRect_Changed</td>
-<td>Indicates that the source rectangle of the sample frame changed.</td>
-</tr>
-
-<tr>
-<td>DXVA_SampleFlagsMask</td>
-<td>Specifies the sample-flag mask, which consists of the first 4 bits of a DWORD.</td>
-</tr>
+            
+                <tr>
+                    <td>DXVA_SampleFlag_ColorData_Changed</td>
+                    <td>Indicates that the color data of the sample frame changed.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXVA_SampleFlag_DstRect_Changed</td>
+                    <td>Indicates that the destination rectangle of the sample frame changed.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXVA_SampleFlag_Palette_Changed</td>
+                    <td>Indicates that the palette of the sample frame changed.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXVA_SampleFlag_SrcRect_Changed</td>
+                    <td>Indicates that the source rectangle of the sample frame changed.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXVA_SampleFlagsMask</td>
+                    <td>Specifies the sample-flag mask, which consists of the first 4 bits of a DWORD.</td>
+                </tr>
 </table>
 
 
@@ -89,9 +94,9 @@ typedef enum _DXVA_SampleFlags {
 | **Windows version** | This enumeration type applies only to Windows Server 2003 with SP1 and later, and Windows XP with SP2 and later. This enumeration type applies only to Windows Server 2003 with SP1 and later, and Windows XP with SP2 and later. |
 | **Header** | dxva.h (include Dxva.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\dxva\ns-dxva-_dxva_videosample2.md">DXVA_VideoSample2</a>
+        <a href="..\dxva\ns-dxva-_dxva_videosample2.md">DXVA_VideoSample2</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff563927">DXVA_DeinterlaceBobDeviceClass::DeinterlaceBltEx</a>
 

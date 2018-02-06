@@ -1,42 +1,47 @@
 ---
-UID : NS:wdm._CLS_IO_STATISTICS
-title : "_CLS_IO_STATISTICS"
-author : windows-driver-content
-description : The CLFS_IO_STATISTICS structure holds I/O statistics data for a Common Log File System (CLFS) log.
-old-location : kernel\clfs_io_statistics.htm
-old-project : kernel
-ms.assetid : 054d1673-0c1a-4ceb-821a-d61bf28392cf
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : PCLS_IO_STATISTICS structure pointer [Kernel-Mode Driver Architecture], PCLS_IO_STATISTICS, _CLS_IO_STATISTICS, wdm/PCLS_IO_STATISTICS, PPCLFS_IO_STATISTICS structure pointer [Kernel-Mode Driver Architecture], CLS_IO_STATISTICS, PPCLS_IO_STATISTICS, kernel.clfs_io_statistics, wdm/PPCLS_IO_STATISTICS, wdm/CLS_IO_STATISTICS, *PCLS_IO_STATISTICS, *PCLFS_IO_STATISTICS, CLFS_IO_STATISTICS structure [Kernel-Mode Driver Architecture], wdm/CLFS_IO_STATISTICS, PCLFS_IO_STATISTICS, wdm/PCLFS_IO_STATISTICS, PPCLS_IO_STATISTICS structure pointer [Kernel-Mode Driver Architecture], wdm/PPCLFS_IO_STATISTICS, kstruct_a_2e43db78-8c4e-462f-ad85-8c799be2f2e3.xml, PCLFS_IO_STATISTICS structure pointer [Kernel-Mode Driver Architecture], CLFS_IO_STATISTICS, CLS_IO_STATISTICS structure [Kernel-Mode Driver Architecture], PPCLFS_IO_STATISTICS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntddk.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PPCLS_IO_STATISTICS, *PCLS_IO_STATISTICS, CLS_IO_STATISTICS
-req.product : Windows 10 or later.
+UID: NS:wdm._CLS_IO_STATISTICS
+title: "_CLS_IO_STATISTICS"
+author: windows-driver-content
+description: The CLFS_IO_STATISTICS structure holds I/O statistics data for a Common Log File System (CLFS) log.
+old-location: kernel\clfs_io_statistics.htm
+old-project: kernel
+ms.assetid: 054d1673-0c1a-4ceb-821a-d61bf28392cf
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: PCLS_IO_STATISTICS structure pointer [Kernel-Mode Driver Architecture], PCLS_IO_STATISTICS, _CLS_IO_STATISTICS, wdm/PCLS_IO_STATISTICS, PPCLFS_IO_STATISTICS structure pointer [Kernel-Mode Driver Architecture], CLS_IO_STATISTICS, PPCLS_IO_STATISTICS, kernel.clfs_io_statistics, wdm/PPCLS_IO_STATISTICS, wdm/CLS_IO_STATISTICS, *PCLS_IO_STATISTICS, *PCLFS_IO_STATISTICS, CLFS_IO_STATISTICS structure [Kernel-Mode Driver Architecture], wdm/CLFS_IO_STATISTICS, PCLFS_IO_STATISTICS, wdm/PCLFS_IO_STATISTICS, PPCLS_IO_STATISTICS structure pointer [Kernel-Mode Driver Architecture], wdm/PPCLFS_IO_STATISTICS, kstruct_a_2e43db78-8c4e-462f-ad85-8c799be2f2e3.xml, PCLFS_IO_STATISTICS structure pointer [Kernel-Mode Driver Architecture], CLFS_IO_STATISTICS, CLS_IO_STATISTICS structure [Kernel-Mode Driver Architecture], PPCLFS_IO_STATISTICS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntddk.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	CLS_IO_STATISTICS
+product: Windows
+targetos: Windows
+req.typenames: PPCLS_IO_STATISTICS, *PCLS_IO_STATISTICS, CLS_IO_STATISTICS
+req.product: Windows 10 or later.
 ---
 
 # _CLS_IO_STATISTICS structure

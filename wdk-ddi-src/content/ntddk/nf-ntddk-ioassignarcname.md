@@ -1,41 +1,46 @@
 ---
-UID : NF:ntddk.IoAssignArcName
-title : IoAssignArcName macro
-author : windows-driver-content
-description : The IoAssignArcName routine creates a symbolic link between the ARC name of a physical device and the name of the corresponding device object when it has been created.
-old-location : kernel\ioassignarcname.htm
-old-project : kernel
-ms.assetid : ef8a132a-f593-4a25-bb9e-b4ed57801db2
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : IoAssignArcName routine [Kernel-Mode Driver Architecture], ntddk/IoAssignArcName, k104_ceeba02c-47cf-4c25-a339-d55ee9ebc216.xml, kernel.ioassignarcname, IoAssignArcName
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : macro
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.IoAssignArcName
+title: IoAssignArcName macro
+author: windows-driver-content
+description: The IoAssignArcName routine creates a symbolic link between the ARC name of a physical device and the name of the corresponding device object when it has been created.
+old-location: kernel\ioassignarcname.htm
+old-project: kernel
+ms.assetid: ef8a132a-f593-4a25-bb9e-b4ed57801db2
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: IoAssignArcName routine [Kernel-Mode Driver Architecture], ntddk/IoAssignArcName, k104_ceeba02c-47cf-4c25-a339-d55ee9ebc216.xml, kernel.ioassignarcname, IoAssignArcName
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: macro
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoAssignArcName
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

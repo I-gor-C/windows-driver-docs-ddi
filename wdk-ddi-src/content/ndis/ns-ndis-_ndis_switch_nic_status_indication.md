@@ -1,41 +1,46 @@
 ---
-UID : NS:ndis._NDIS_SWITCH_NIC_STATUS_INDICATION
-title : "_NDIS_SWITCH_NIC_STATUS_INDICATION"
-author : windows-driver-content
-description : The NDIS_SWITCH_NIC_STATUS_INDICATION structure specifies the information that is required to forward or originate an NDIS status indication from an underlying physical network adapter.
-old-location : netvista\ndis_switch_nic_status_indication.htm
-old-project : netvista
-ms.assetid : a3841a14-0876-47f4-a4dc-6231b76086ca
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : PNDIS_SWITCH_NIC_STATUS_INDICATION structure pointer [Network Drivers Starting with Windows Vista], NDIS_SWITCH_NIC_STATUS_INDICATION, _NDIS_SWITCH_NIC_STATUS_INDICATION, *PNDIS_SWITCH_NIC_STATUS_INDICATION, PNDIS_SWITCH_NIC_STATUS_INDICATION, NDIS_SWITCH_NIC_STATUS_INDICATION structure [Network Drivers Starting with Windows Vista], netvista.ndis_switch_nic_status_indication, ndis/NDIS_SWITCH_NIC_STATUS_INDICATION, ndis/PNDIS_SWITCH_NIC_STATUS_INDICATION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.30 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : See Remarks section
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PNDIS_SWITCH_NIC_STATUS_INDICATION, NDIS_SWITCH_NIC_STATUS_INDICATION"
+UID: NS:ndis._NDIS_SWITCH_NIC_STATUS_INDICATION
+title: "_NDIS_SWITCH_NIC_STATUS_INDICATION"
+author: windows-driver-content
+description: The NDIS_SWITCH_NIC_STATUS_INDICATION structure specifies the information that is required to forward or originate an NDIS status indication from an underlying physical network adapter.
+old-location: netvista\ndis_switch_nic_status_indication.htm
+old-project: netvista
+ms.assetid: a3841a14-0876-47f4-a4dc-6231b76086ca
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: PNDIS_SWITCH_NIC_STATUS_INDICATION structure pointer [Network Drivers Starting with Windows Vista], NDIS_SWITCH_NIC_STATUS_INDICATION, _NDIS_SWITCH_NIC_STATUS_INDICATION, *PNDIS_SWITCH_NIC_STATUS_INDICATION, PNDIS_SWITCH_NIC_STATUS_INDICATION, NDIS_SWITCH_NIC_STATUS_INDICATION structure [Network Drivers Starting with Windows Vista], netvista.ndis_switch_nic_status_indication, ndis/NDIS_SWITCH_NIC_STATUS_INDICATION, ndis/PNDIS_SWITCH_NIC_STATUS_INDICATION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.30 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: See Remarks section
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ndis.h
+apiname:
+-	NDIS_SWITCH_NIC_STATUS_INDICATION
+product: Windows
+targetos: Windows
+req.typenames: "*PNDIS_SWITCH_NIC_STATUS_INDICATION, NDIS_SWITCH_NIC_STATUS_INDICATION"
 ---
 
 # _NDIS_SWITCH_NIC_STATUS_INDICATION structure

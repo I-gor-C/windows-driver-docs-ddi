@@ -1,41 +1,46 @@
 ---
-UID : NC:ntddsd.PSDBUS_ACKNOWLEDGE_INT_ROUTINE
-title : PSDBUS_ACKNOWLEDGE_INT_ROUTINE
-author : windows-driver-content
-description : The PSDBUS_ACKNOWLEDGE_INT_ROUTINE prototype declares the routine that a Secure Digital (SD) device driver must call to acknowledge to the bus driver that it has finished processing the interrupt.
-old-location : sd\psdbus_acknowledge_int_routine.htm
-old-project : SD
-ms.assetid : b3d23404-2d55-4a37-8c4c-d857c5307f18
-ms.author : windowsdriverdev
-ms.date : 12/18/2017
-ms.keywords : SD.psdbus_acknowledge_int_routine, AcknowledgeInterrupt callback function [Buses], AcknowledgeInterrupt, PSDBUS_ACKNOWLEDGE_INT_ROUTINE, PSDBUS_ACKNOWLEDGE_INT_ROUTINE, ntddsd/AcknowledgeInterrupt, sd-rtns_9197189b-4b46-4ab6-aa7b-df880985241b.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ntddsd.h
-req.include-header : Ntddsd.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL (See Remarks section.)"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSTORAGE_DIAGNOSTIC_MP_REQUEST, STORAGE_DIAGNOSTIC_MP_REQUEST"
+UID: NC:ntddsd.PSDBUS_ACKNOWLEDGE_INT_ROUTINE
+title: PSDBUS_ACKNOWLEDGE_INT_ROUTINE
+author: windows-driver-content
+description: The PSDBUS_ACKNOWLEDGE_INT_ROUTINE prototype declares the routine that a Secure Digital (SD) device driver must call to acknowledge to the bus driver that it has finished processing the interrupt.
+old-location: sd\psdbus_acknowledge_int_routine.htm
+old-project: SD
+ms.assetid: b3d23404-2d55-4a37-8c4c-d857c5307f18
+ms.author: windowsdriverdev
+ms.date: 12/18/2017
+ms.keywords: SD.psdbus_acknowledge_int_routine, AcknowledgeInterrupt callback function [Buses], AcknowledgeInterrupt, PSDBUS_ACKNOWLEDGE_INT_ROUTINE, PSDBUS_ACKNOWLEDGE_INT_ROUTINE, ntddsd/AcknowledgeInterrupt, sd-rtns_9197189b-4b46-4ab6-aa7b-df880985241b.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ntddsd.h
+req.include-header: Ntddsd.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL (See Remarks section.)"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	ntddsd.h
+apiname:
+-	AcknowledgeInterrupt
+product: Windows
+targetos: Windows
+req.typenames: "*PSTORAGE_DIAGNOSTIC_MP_REQUEST, STORAGE_DIAGNOSTIC_MP_REQUEST"
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:mountdev._MOUNTDEV_UNIQUE_ID
-title : "_MOUNTDEV_UNIQUE_ID"
-author : windows-driver-content
-description : The MOUNTDEV_UNIQUE_ID structure contains a unique volume ID that a mount manager client provides to the mount manager in response to an IOCTL_MOUNTDEV_QUERY_UNIQUE_ID request.
-old-location : storage\mountdev_unique_id.htm
-old-project : storage
-ms.assetid : cc6cbda8-4056-41e7-98f9-927a99e66081
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : MOUNTDEV_UNIQUE_ID, *PMOUNTDEV_UNIQUE_ID, PMOUNTDEV_UNIQUE_ID structure pointer [Storage Devices], _MOUNTDEV_UNIQUE_ID, MOUNTDEV_UNIQUE_ID structure [Storage Devices], mountdev/MOUNTDEV_UNIQUE_ID, PMOUNTDEV_UNIQUE_ID, structs-mntmgr_424fff73-7b72-4068-b25b-00225f69b159.xml, mountdev/PMOUNTDEV_UNIQUE_ID, storage.mountdev_unique_id
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : mountdev.h
-req.include-header : Mountmgr.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PMOUNTDEV_UNIQUE_ID, MOUNTDEV_UNIQUE_ID"
+UID: NS:mountdev._MOUNTDEV_UNIQUE_ID
+title: "_MOUNTDEV_UNIQUE_ID"
+author: windows-driver-content
+description: The MOUNTDEV_UNIQUE_ID structure contains a unique volume ID that a mount manager client provides to the mount manager in response to an IOCTL_MOUNTDEV_QUERY_UNIQUE_ID request.
+old-location: storage\mountdev_unique_id.htm
+old-project: storage
+ms.assetid: cc6cbda8-4056-41e7-98f9-927a99e66081
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: MOUNTDEV_UNIQUE_ID, *PMOUNTDEV_UNIQUE_ID, PMOUNTDEV_UNIQUE_ID structure pointer [Storage Devices], _MOUNTDEV_UNIQUE_ID, MOUNTDEV_UNIQUE_ID structure [Storage Devices], mountdev/MOUNTDEV_UNIQUE_ID, PMOUNTDEV_UNIQUE_ID, structs-mntmgr_424fff73-7b72-4068-b25b-00225f69b159.xml, mountdev/PMOUNTDEV_UNIQUE_ID, storage.mountdev_unique_id
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: mountdev.h
+req.include-header: Mountmgr.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	mountdev.h
+apiname:
+-	MOUNTDEV_UNIQUE_ID
+product: Windows
+targetos: Windows
+req.typenames: "*PMOUNTDEV_UNIQUE_ID, MOUNTDEV_UNIQUE_ID"
 ---
 
 # _MOUNTDEV_UNIQUE_ID structure

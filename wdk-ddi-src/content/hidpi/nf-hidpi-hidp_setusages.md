@@ -1,41 +1,47 @@
 ---
-UID : NF:hidpi.HidP_SetUsages
-title : HidP_SetUsages function
-author : windows-driver-content
-description : The HidP_SetUsages routine sets specified HID control buttons ON (1) in a HID report.
-old-location : hid\hidp_setusages.htm
-old-project : hid
-ms.assetid : a9f229cd-33ca-42b5-bae6-3f367e5f1e84
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : hidfunc_4d0213bb-2715-446b-bdaf-f82be3cbc11b.xml, hid.hidp_setusages, hidpi/HidP_SetUsages, HidP_SetUsages, HidP_SetUsages routine [Human Input Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : hidpi.h
-req.include-header : Hidpi.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 2000 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Hidparse.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HIDP_REPORT_TYPE
+UID: NF:hidpi.HidP_SetUsages
+title: HidP_SetUsages function
+author: windows-driver-content
+description: The HidP_SetUsages routine sets specified HID control buttons ON (1) in a HID report.
+old-location: hid\hidp_setusages.htm
+old-project: hid
+ms.assetid: a9f229cd-33ca-42b5-bae6-3f367e5f1e84
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: hidfunc_4d0213bb-2715-446b-bdaf-f82be3cbc11b.xml, hid.hidp_setusages, hidpi/HidP_SetUsages, HidP_SetUsages, HidP_SetUsages routine [Human Input Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: hidpi.h
+req.include-header: Hidpi.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 2000 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Hidparse.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Hidparse.lib
+-	Hidparse.dll
+apiname:
+-	HidP_SetUsages
+product: Windows
+targetos: Windows
+req.typenames: HIDP_REPORT_TYPE
 ---
 
 

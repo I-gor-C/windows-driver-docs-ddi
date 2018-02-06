@@ -1,41 +1,46 @@
 ---
-UID : NI:acpiioct.IOCTL_ACPI_EVAL_METHOD_V1
-title : IOCTL_ACPI_EVAL_METHOD_V1
-author : windows-driver-content
-description : The IOCTL_ACPI_EVAL_METHOD_V1 control code synchronously evaluates an ACPI control method that is supported by the device.
-old-location : acpi\ioctl_acpi_eval_method_v1.htm
-old-project : acpi
-ms.assetid : 394DB287-56E2-46D0-B2FF-2CCF22F619F8
-ms.author : windowsdriverdev
-ms.date : 12/31/2017
-ms.keywords : acpi.ioctl_acpi_eval_method_v1, IOCTL_ACPI_EVAL_METHOD_V1 control code [ACPI Devices], IOCTL_ACPI_EVAL_METHOD_V1, acpiioct/IOCTL_ACPI_EVAL_METHOD_V1
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : acpiioct.h
-req.include-header : Acpiioct.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10, version 1709 and later versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : UNIT_ISOCH_PARAMS, *PUNIT_ISOCH_PARAMS
+UID: NI:acpiioct.IOCTL_ACPI_EVAL_METHOD_V1
+title: IOCTL_ACPI_EVAL_METHOD_V1
+author: windows-driver-content
+description: The IOCTL_ACPI_EVAL_METHOD_V1 control code synchronously evaluates an ACPI control method that is supported by the device.
+old-location: acpi\ioctl_acpi_eval_method_v1.htm
+old-project: acpi
+ms.assetid: 394DB287-56E2-46D0-B2FF-2CCF22F619F8
+ms.author: windowsdriverdev
+ms.date: 12/31/2017
+ms.keywords: acpi.ioctl_acpi_eval_method_v1, IOCTL_ACPI_EVAL_METHOD_V1 control code [ACPI Devices], IOCTL_ACPI_EVAL_METHOD_V1, acpiioct/IOCTL_ACPI_EVAL_METHOD_V1
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: acpiioct.h
+req.include-header: Acpiioct.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10, version 1709 and later versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Acpiioct.h
+apiname:
+-	IOCTL_ACPI_EVAL_METHOD_V1
+product: Windows
+targetos: Windows
+req.typenames: UNIT_ISOCH_PARAMS, *PUNIT_ISOCH_PARAMS
 ---
 
 # IOCTL_ACPI_EVAL_METHOD_V1 IOCTL

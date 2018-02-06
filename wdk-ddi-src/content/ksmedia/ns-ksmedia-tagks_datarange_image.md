@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.tagKS_DATARANGE_IMAGE
-title : tagKS_DATARANGE_IMAGE
-author : windows-driver-content
-description : Specifies an image data range that is used in the KSPIN_DESCRIPTOR structure that describes a pin (or stream).
-old-location : stream\ks_datarange_image.htm
-old-project : stream
-ms.assetid : 81ad341a-5f68-43aa-98ea-193780a7c5b2
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ksmedia/KS_DATARANGE_IMAGE, stream.ks_datarange_image, KS_DATARANGE_IMAGE, *PKS_DATARANGE_IMAGE, KS_DATARANGE_IMAGE structure [Streaming Media Devices], tagKS_DATARANGE_IMAGE, PKS_DATARANGE_IMAGE, PKS_DATARANGE_IMAGE structure pointer [Streaming Media Devices], ksmedia/PKS_DATARANGE_IMAGE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKS_DATARANGE_IMAGE, KS_DATARANGE_IMAGE"
+UID: NS:ksmedia.tagKS_DATARANGE_IMAGE
+title: tagKS_DATARANGE_IMAGE
+author: windows-driver-content
+description: Specifies an image data range that is used in the KSPIN_DESCRIPTOR structure that describes a pin (or stream).
+old-location: stream\ks_datarange_image.htm
+old-project: stream
+ms.assetid: 81ad341a-5f68-43aa-98ea-193780a7c5b2
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ksmedia/KS_DATARANGE_IMAGE, stream.ks_datarange_image, KS_DATARANGE_IMAGE, *PKS_DATARANGE_IMAGE, KS_DATARANGE_IMAGE structure [Streaming Media Devices], tagKS_DATARANGE_IMAGE, PKS_DATARANGE_IMAGE, PKS_DATARANGE_IMAGE structure pointer [Streaming Media Devices], ksmedia/PKS_DATARANGE_IMAGE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ksmedia.h
+apiname:
+-	KS_DATARANGE_IMAGE
+product: Windows
+targetos: Windows
+req.typenames: "*PKS_DATARANGE_IMAGE, KS_DATARANGE_IMAGE"
 ---
 
 # tagKS_DATARANGE_IMAGE structure

@@ -1,41 +1,46 @@
 ---
-UID : NC:parallel.PPARALLEL_SET_CHIP_MODE
-title : PPARALLEL_SET_CHIP_MODE
-author : windows-driver-content
-description : The PPARALLEL_SET_CHIP_MODE-typed callback routine sets the operating mode of a parallel port. The system-supplied function driver for parallel ports supplies this routine.
-old-location : parports\pparallel_set_chip_mode.htm
-old-project : parports
-ms.assetid : 7c80f3ee-cbb2-400d-9dfb-36ccef93d80f
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : parports.pparallel_set_chip_mode, (*PPARALLEL_SET_CHIP_MODE) callback function [Parallel Ports], (*PPARALLEL_SET_CHIP_MODE), parallel/(*PPARALLEL_SET_CHIP_MODE), cisspd_a108ba77-8f01-436e-bc7a-48a74f80ac75.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : parallel.h
-req.include-header : Parallel.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RILGBATOKEN, *LPRILGBATOKEN
+UID: NC:parallel.PPARALLEL_SET_CHIP_MODE
+title: PPARALLEL_SET_CHIP_MODE
+author: windows-driver-content
+description: The PPARALLEL_SET_CHIP_MODE-typed callback routine sets the operating mode of a parallel port. The system-supplied function driver for parallel ports supplies this routine.
+old-location: parports\pparallel_set_chip_mode.htm
+old-project: parports
+ms.assetid: 7c80f3ee-cbb2-400d-9dfb-36ccef93d80f
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: parports.pparallel_set_chip_mode, (*PPARALLEL_SET_CHIP_MODE) callback function [Parallel Ports], (*PPARALLEL_SET_CHIP_MODE), parallel/(*PPARALLEL_SET_CHIP_MODE), cisspd_a108ba77-8f01-436e-bc7a-48a74f80ac75.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: parallel.h
+req.include-header: Parallel.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	parallel.h
+apiname:
+-	(*PPARALLEL_SET_CHIP_MODE)
+product: Windows
+targetos: Windows
+req.typenames: RILGBATOKEN, *LPRILGBATOKEN
 ---
 
 

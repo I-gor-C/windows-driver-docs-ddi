@@ -1,42 +1,47 @@
 ---
-UID : NF:wdfdevice.WdfDeviceMapIoSpace
-title : WdfDeviceMapIoSpace function
-author : windows-driver-content
-description : The WdfDeviceMapIoSpace function maps the given physical address range to system address space and returns a pseudo base address.
-old-location : wdf\wdfdevicemapiospace.htm
-old-project : wdf
-ms.assetid : 13ECF87D-13F7-4154-A17E-D49A2BB0F83A
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WdfDeviceMapIoSpace, wdfdevice/WdfDeviceMapIoSpace, wdf.wdfdevicemapiospace, WdfDeviceMapIoSpace function
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfdevice.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : Windows 8.1
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : WUDFx02000.lib
-req.dll : WUDFx02000.dll
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_STATE_NOTIFICATION_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfdevice.WdfDeviceMapIoSpace
+title: WdfDeviceMapIoSpace function
+author: windows-driver-content
+description: The WdfDeviceMapIoSpace function maps the given physical address range to system address space and returns a pseudo base address.
+old-location: wdf\wdfdevicemapiospace.htm
+old-project: wdf
+ms.assetid: 13ECF87D-13F7-4154-A17E-D49A2BB0F83A
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WdfDeviceMapIoSpace, wdfdevice/WdfDeviceMapIoSpace, wdf.wdfdevicemapiospace, WdfDeviceMapIoSpace function
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfdevice.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: Windows 8.1
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: WUDFx02000.lib
+req.dll: WUDFx02000.dll
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	WUDFx02000.dll
+apiname:
+-	WdfDeviceMapIoSpace
+product: Windows
+targetos: Windows
+req.typenames: WDF_STATE_NOTIFICATION_TYPE
+req.product: Windows 10 or later.
 ---
 
 

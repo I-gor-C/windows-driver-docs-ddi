@@ -1,42 +1,48 @@
 ---
-UID : NF:spbcx.SpbDeviceInitConfig
-title : SpbDeviceInitConfig function
-author : windows-driver-content
-description : The SpbDeviceInitConfig method attaches the SPB framework extension (SpbCx) to the I/O-request chain for a WDFDEVICE (FDO or PDO) object that is to be created.
-old-location : spb\spbdeviceinitconfig.htm
-old-project : SPB
-ms.assetid : 7B62C0B0-F90A-41B1-B903-5C9F905F4A08
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : SpbDeviceInitConfig method [Buses], SpbDeviceInitConfig, SPB.spbdeviceinitconfig, spbcx/SpbDeviceInitConfig
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : spbcx.h
-req.include-header : 
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with  Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Spbcxstubs.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SPB_REQUEST_TYPE, *PSPB_REQUEST_TYPE
-req.product : Windows 10 or later.
+UID: NF:spbcx.SpbDeviceInitConfig
+title: SpbDeviceInitConfig function
+author: windows-driver-content
+description: The SpbDeviceInitConfig method attaches the SPB framework extension (SpbCx) to the I/O-request chain for a WDFDEVICE (FDO or PDO) object that is to be created.
+old-location: spb\spbdeviceinitconfig.htm
+old-project: SPB
+ms.assetid: 7B62C0B0-F90A-41B1-B903-5C9F905F4A08
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: SpbDeviceInitConfig method [Buses], SpbDeviceInitConfig, SPB.spbdeviceinitconfig, spbcx/SpbDeviceInitConfig
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: spbcx.h
+req.include-header: 
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with  Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Spbcxstubs.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	spbcxstubs.lib
+-	spbcxstubs.dll
+apiname:
+-	SpbDeviceInitConfig
+product: Windows
+targetos: Windows
+req.typenames: SPB_REQUEST_TYPE, *PSPB_REQUEST_TYPE
+req.product: Windows 10 or later.
 ---
 
 

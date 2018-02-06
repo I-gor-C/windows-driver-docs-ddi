@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGK_MULTIPLANE_OVERLAY_PLANE2
-title : "_DXGK_MULTIPLANE_OVERLAY_PLANE2"
-author : windows-driver-content
-description : DXGK_MULTIPLANE_OVERLAY_PLANE2 is used with the DxgkDdiSetVidPnSourceAddressWithMultiPlaneOverlay2 function to specify an overlay plane to display.
-old-location : display\dxgk_multiplane_overlay_plane2.htm
-old-project : display
-ms.assetid : 31A1EAFB-FA48-432D-963E-EA907B43F08A
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DXGK_MULTIPLANE_OVERLAY_PLANE2, _DXGK_MULTIPLANE_OVERLAY_PLANE2, display.dxgk_multiplane_overlay_plane2, d3dkmddi/DXGK_MULTIPLANE_OVERLAY_PLANE2, DXGK_MULTIPLANE_OVERLAY_PLANE2 structure [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_MULTIPLANE_OVERLAY_PLANE2
+UID: NS:d3dkmddi._DXGK_MULTIPLANE_OVERLAY_PLANE2
+title: "_DXGK_MULTIPLANE_OVERLAY_PLANE2"
+author: windows-driver-content
+description: DXGK_MULTIPLANE_OVERLAY_PLANE2 is used with the DxgkDdiSetVidPnSourceAddressWithMultiPlaneOverlay2 function to specify an overlay plane to display.
+old-location: display\dxgk_multiplane_overlay_plane2.htm
+old-project: display
+ms.assetid: 31A1EAFB-FA48-432D-963E-EA907B43F08A
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DXGK_MULTIPLANE_OVERLAY_PLANE2, _DXGK_MULTIPLANE_OVERLAY_PLANE2, display.dxgk_multiplane_overlay_plane2, d3dkmddi/DXGK_MULTIPLANE_OVERLAY_PLANE2, DXGK_MULTIPLANE_OVERLAY_PLANE2 structure [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DXGK_MULTIPLANE_OVERLAY_PLANE2
+product: Windows
+targetos: Windows
+req.typenames: DXGK_MULTIPLANE_OVERLAY_PLANE2
 ---
 
 # _DXGK_MULTIPLANE_OVERLAY_PLANE2 structure

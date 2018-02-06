@@ -1,41 +1,46 @@
 ---
-UID : NF:keyworddetectoroemadapter.IKeywordDetectorOemAdapter.VerifyUserKeyword
-title : IKeywordDetectorOemAdapter::VerifyUserKeyword method
-author : windows-driver-content
-description : The VerifyUserKeyword method is used by the training user experience to verify that one instance of a spoken utterance, captured during training, matches a predefined keyword within some tolerance.
-old-location : audio\ikeyworddetectoroemadapter_verifyuserkeyword.htm
-old-project : audio
-ms.assetid : AFF679B6-B389-4EA2-8834-9B1B47412B7D
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : IKeywordDetectorOemAdapter, IKeywordDetectorOemAdapter interface [Audio Devices], VerifyUserKeyword method, VerifyUserKeyword method [Audio Devices], IKeywordDetectorOemAdapter::VerifyUserKeyword, keyworddetectoroemadapter/IKeywordDetectorOemAdapter::VerifyUserKeyword, VerifyUserKeyword, VerifyUserKeyword method [Audio Devices], IKeywordDetectorOemAdapter interface, audio.ikeyworddetectoroemadapter_verifyuserkeyword
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : keyworddetectoroemadapter.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : KeywordDetectorOemAdapter.idl
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : keyworddetectoroemadapter.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KEYWORDID
+UID: NF:keyworddetectoroemadapter.IKeywordDetectorOemAdapter.VerifyUserKeyword
+title: IKeywordDetectorOemAdapter::VerifyUserKeyword method
+author: windows-driver-content
+description: The VerifyUserKeyword method is used by the training user experience to verify that one instance of a spoken utterance, captured during training, matches a predefined keyword within some tolerance.
+old-location: audio\ikeyworddetectoroemadapter_verifyuserkeyword.htm
+old-project: audio
+ms.assetid: AFF679B6-B389-4EA2-8834-9B1B47412B7D
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: IKeywordDetectorOemAdapter, IKeywordDetectorOemAdapter interface [Audio Devices], VerifyUserKeyword method, VerifyUserKeyword method [Audio Devices], IKeywordDetectorOemAdapter::VerifyUserKeyword, keyworddetectoroemadapter/IKeywordDetectorOemAdapter::VerifyUserKeyword, VerifyUserKeyword, VerifyUserKeyword method [Audio Devices], IKeywordDetectorOemAdapter interface, audio.ikeyworddetectoroemadapter_verifyuserkeyword
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: keyworddetectoroemadapter.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: KeywordDetectorOemAdapter.idl
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: keyworddetectoroemadapter.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	KeywordDetectorOemAdapter.h
+apiname:
+-	IKeywordDetectorOemAdapter.VerifyUserKeyword
+product: Windows
+targetos: Windows
+req.typenames: KEYWORDID
 ---
 
 

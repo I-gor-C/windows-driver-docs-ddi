@@ -1,42 +1,47 @@
 ---
-UID : NF:winsplp.GetJobAttributes
-title : GetJobAttributes function
-author : windows-driver-content
-description : Warning  Starting with Windows 10, the APIs which support third-party print providers are deprecated.
-old-location : print\getjobattributes.htm
-old-project : print
-ms.assetid : 06affa2e-d22c-4d24-8c5f-6ef52e3051fa
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : GetJobAttributes function [Print Devices], print.getjobattributes, GetJobAttributes, spoolfnc_5f511391-a38e-4d0b-8d45-4464b798a7c9.xml, winsplp/GetJobAttributes
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : winsplp.h
-req.include-header : Winsplp.h
-req.target-type : Desktop
-req.target-min-winverclnt : This function is available in Microsoft Windows Server 2003 and later operating system versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Spoolss.lib
-req.dll : Spoolss.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NOTIFICATION_CONFIG_FLAGS
-req.product : Windows 10 or later.
+UID: NF:winsplp.GetJobAttributes
+title: GetJobAttributes function
+author: windows-driver-content
+description: Warning  Starting with Windows 10, the APIs which support third-party print providers are deprecated.
+old-location: print\getjobattributes.htm
+old-project: print
+ms.assetid: 06affa2e-d22c-4d24-8c5f-6ef52e3051fa
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: GetJobAttributes function [Print Devices], print.getjobattributes, GetJobAttributes, spoolfnc_5f511391-a38e-4d0b-8d45-4464b798a7c9.xml, winsplp/GetJobAttributes
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: winsplp.h
+req.include-header: Winsplp.h
+req.target-type: Desktop
+req.target-min-winverclnt: This function is available in Microsoft Windows Server 2003 and later operating system versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Spoolss.lib
+req.dll: Spoolss.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Spoolss.dll
+apiname:
+-	GetJobAttributes
+product: Windows
+targetos: Windows
+req.typenames: NOTIFICATION_CONFIG_FLAGS
+req.product: Windows 10 or later.
 ---
 
 

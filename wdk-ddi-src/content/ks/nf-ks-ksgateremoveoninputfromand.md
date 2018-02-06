@@ -1,41 +1,46 @@
 ---
-UID : NF:ks.KsGateRemoveOnInputFromAnd
-title : KsGateRemoveOnInputFromAnd function
-author : windows-driver-content
-description : The KsGateRemoveOnInputFromAnd function removes an existing input that is in the ON state from an AND gate.
-old-location : stream\ksgateremoveoninputfromand.htm
-old-project : stream
-ms.assetid : ee8bf34e-f7f6-4b1a-8089-2f7a7333c403
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KsGateRemoveOnInputFromAnd function [Streaming Media Devices], ks/KsGateRemoveOnInputFromAnd, avfunc_216ba85c-20fe-4160-a76f-53cab6693641.xml, KsGateRemoveOnInputFromAnd, stream.ksgateremoveoninputfromand
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsGateRemoveOnInputFromAnd
+title: KsGateRemoveOnInputFromAnd function
+author: windows-driver-content
+description: The KsGateRemoveOnInputFromAnd function removes an existing input that is in the ON state from an AND gate.
+old-location: stream\ksgateremoveoninputfromand.htm
+old-project: stream
+ms.assetid: ee8bf34e-f7f6-4b1a-8089-2f7a7333c403
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KsGateRemoveOnInputFromAnd function [Streaming Media Devices], ks/KsGateRemoveOnInputFromAnd, avfunc_216ba85c-20fe-4160-a76f-53cab6693641.xml, KsGateRemoveOnInputFromAnd, stream.ksgateremoveoninputfromand
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	KsGateRemoveOnInputFromAnd
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfdevice.WUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS_INIT
-title : WUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS_INIT function
-author : windows-driver-content
-description : The WUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS_INIT function initializes a driver's WUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS structure.
-old-location : wdf\wudf_device_power_policy_idle_settings_init.htm
-old-project : wdf
-ms.assetid : 893F249B-ACD9-4262-93B6-890987A9F591
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS_INIT function, wudfdevice/WUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS_INIT, wdf.wudf_device_power_policy_idle_settings_init, umdf.wudf_device_power_policy_idle_settings_init, WUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS_INIT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wudfdevice.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.11
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS, *PWUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS
-req.product : Windows 10 or later.
+UID: NF:wudfdevice.WUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS_INIT
+title: WUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS_INIT function
+author: windows-driver-content
+description: The WUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS_INIT function initializes a driver's WUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS structure.
+old-location: wdf\wudf_device_power_policy_idle_settings_init.htm
+old-project: wdf
+ms.assetid: 893F249B-ACD9-4262-93B6-890987A9F591
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS_INIT function, wudfdevice/WUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS_INIT, wdf.wudf_device_power_policy_idle_settings_init, umdf.wudf_device_power_policy_idle_settings_init, WUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS_INIT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wudfdevice.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.11
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wudfdevice.h
+apiname:
+-	WUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS_INIT
+product: Windows
+targetos: Windows
+req.typenames: WUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS, *PWUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS
+req.product: Windows 10 or later.
 ---
 
 

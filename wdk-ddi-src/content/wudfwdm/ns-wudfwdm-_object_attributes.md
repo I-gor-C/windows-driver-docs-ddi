@@ -1,42 +1,47 @@
 ---
-UID : NS:wudfwdm._OBJECT_ATTRIBUTES
-title : "_OBJECT_ATTRIBUTES"
-author : windows-driver-content
-description : The OBJECT_ATTRIBUTES structure specifies attributes that can be applied to objects or object handles by routines that create objects and/or return handles to objects.
-old-location : kernel\object_attributes.htm
-old-project : kernel
-ms.assetid : 08f5a141-abce-4890-867c-5fe8c4239905
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kstruct_c_62b87332-0ef4-4c45-8c4f-0fc12d18582b.xml, *POBJECT_ATTRIBUTES, wudfwdm/POBJECT_ATTRIBUTES, POBJECT_ATTRIBUTES, wudfwdm/OBJECT_ATTRIBUTES, OBJECT_ATTRIBUTES structure [Kernel-Mode Driver Architecture], OBJECT_ATTRIBUTES, POBJECT_ATTRIBUTES structure pointer [Kernel-Mode Driver Architecture], kernel.object_attributes, _OBJECT_ATTRIBUTES
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wudfwdm.h
-req.include-header : D3dkmthk.h, Ntdef.h, Wdm.h, Ntddk.h, Ntifs.h, Fltkernel.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : OBJECT_ATTRIBUTES
-req.product : Windows 10 or later.
+UID: NS:wudfwdm._OBJECT_ATTRIBUTES
+title: "_OBJECT_ATTRIBUTES"
+author: windows-driver-content
+description: The OBJECT_ATTRIBUTES structure specifies attributes that can be applied to objects or object handles by routines that create objects and/or return handles to objects.
+old-location: kernel\object_attributes.htm
+old-project: kernel
+ms.assetid: 08f5a141-abce-4890-867c-5fe8c4239905
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kstruct_c_62b87332-0ef4-4c45-8c4f-0fc12d18582b.xml, *POBJECT_ATTRIBUTES, wudfwdm/POBJECT_ATTRIBUTES, POBJECT_ATTRIBUTES, wudfwdm/OBJECT_ATTRIBUTES, OBJECT_ATTRIBUTES structure [Kernel-Mode Driver Architecture], OBJECT_ATTRIBUTES, POBJECT_ATTRIBUTES structure pointer [Kernel-Mode Driver Architecture], kernel.object_attributes, _OBJECT_ATTRIBUTES
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wudfwdm.h
+req.include-header: D3dkmthk.h, Ntdef.h, Wdm.h, Ntddk.h, Ntifs.h, Fltkernel.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wudfwdm.h
+apiname:
+-	OBJECT_ATTRIBUTES
+product: Windows
+targetos: Windows
+req.typenames: OBJECT_ATTRIBUTES
+req.product: Windows 10 or later.
 ---
 
 # _OBJECT_ATTRIBUTES structure

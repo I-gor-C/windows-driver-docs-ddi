@@ -1,41 +1,46 @@
 ---
-UID : NC:ntdd8042.PI8042_ISR_WRITE_PORT
-title : PI8042_ISR_WRITE_PORT
-author : windows-driver-content
-description : The PI8042_ISR_WRITE_PORT-typed callback routine writes data to an i8042 port. I8042prt provides this callback.
-old-location : hid\pi8042_isr_write_port.htm
-old-project : hid
-ms.assetid : deded3fb-f0b3-4af5-b8b4-03658293b0fc
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : hid.pi8042_isr_write_port, I8042IsrWritePort callback function [Human Input Devices], I8042IsrWritePort, PI8042_ISR_WRITE_PORT, PI8042_ISR_WRITE_PORT, ntdd8042/I8042IsrWritePort, i8042ref_775d438e-5883-455b-86c4-2ce28099598f.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ntdd8042.h
-req.include-header : Ntdd8042.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : MSFC_VirtualFibrePortAttributes, *PMSFC_VirtualFibrePortAttributes
+UID: NC:ntdd8042.PI8042_ISR_WRITE_PORT
+title: PI8042_ISR_WRITE_PORT
+author: windows-driver-content
+description: The PI8042_ISR_WRITE_PORT-typed callback routine writes data to an i8042 port. I8042prt provides this callback.
+old-location: hid\pi8042_isr_write_port.htm
+old-project: hid
+ms.assetid: deded3fb-f0b3-4af5-b8b4-03658293b0fc
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: hid.pi8042_isr_write_port, I8042IsrWritePort callback function [Human Input Devices], I8042IsrWritePort, PI8042_ISR_WRITE_PORT, PI8042_ISR_WRITE_PORT, ntdd8042/I8042IsrWritePort, i8042ref_775d438e-5883-455b-86c4-2ce28099598f.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ntdd8042.h
+req.include-header: Ntdd8042.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	ntdd8042.h
+apiname:
+-	I8042IsrWritePort
+product: Windows
+targetos: Windows
+req.typenames: MSFC_VirtualFibrePortAttributes, *PMSFC_VirtualFibrePortAttributes
 ---
 
 

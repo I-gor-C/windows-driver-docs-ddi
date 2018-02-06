@@ -1,41 +1,46 @@
 ---
-UID : NS:avc._AVC_UNIQUE_ID
-title : "_AVC_UNIQUE_ID"
-author : windows-driver-content
-description : The AVC_UNIQUE_ID describe the unique ID of the AV/C unit.
-old-location : stream\avc_unique_id.htm
-old-project : stream
-ms.assetid : d2a355e2-e5ff-4d20-ae8c-cdee3f5ddb76
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : PAVC_UNIQUE_ID, stream.avc_unique_id, *PAVC_UNIQUE_ID, _AVC_UNIQUE_ID, AVC_UNIQUE_ID structure [Streaming Media Devices], AVC_UNIQUE_ID, avc/AVC_UNIQUE_ID, avcref_c7dadbdc-3227-4462-b2e3-5064e8f96e1a.xml, avc/PAVC_UNIQUE_ID, PAVC_UNIQUE_ID structure pointer [Streaming Media Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : avc.h
-req.include-header : Avc.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PAVC_UNIQUE_ID, AVC_UNIQUE_ID"
+UID: NS:avc._AVC_UNIQUE_ID
+title: "_AVC_UNIQUE_ID"
+author: windows-driver-content
+description: The AVC_UNIQUE_ID describe the unique ID of the AV/C unit.
+old-location: stream\avc_unique_id.htm
+old-project: stream
+ms.assetid: d2a355e2-e5ff-4d20-ae8c-cdee3f5ddb76
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: PAVC_UNIQUE_ID, stream.avc_unique_id, *PAVC_UNIQUE_ID, _AVC_UNIQUE_ID, AVC_UNIQUE_ID structure [Streaming Media Devices], AVC_UNIQUE_ID, avc/AVC_UNIQUE_ID, avcref_c7dadbdc-3227-4462-b2e3-5064e8f96e1a.xml, avc/PAVC_UNIQUE_ID, PAVC_UNIQUE_ID structure pointer [Streaming Media Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: avc.h
+req.include-header: Avc.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	avc.h
+apiname:
+-	AVC_UNIQUE_ID
+product: Windows
+targetos: Windows
+req.typenames: "*PAVC_UNIQUE_ID, AVC_UNIQUE_ID"
 ---
 
 # _AVC_UNIQUE_ID structure

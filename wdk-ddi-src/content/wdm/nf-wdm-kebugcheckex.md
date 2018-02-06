@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.KeBugCheckEx
-title : KeBugCheckEx function
-author : windows-driver-content
-description : The KeBugCheckEx routine brings down the system in a controlled manner when the caller discovers an unrecoverable inconsistency that would corrupt the system if the caller continued to run.
-old-location : kernel\kebugcheckex.htm
-old-project : kernel
-ms.assetid : 2330fda2-71f5-4a8b-8124-775a40926bc1
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : KeBugCheckEx, kernel.kebugcheckex, wdm/KeBugCheckEx, k105_17af10bb-b21d-408e-bf73-421ce705d117.xml, KeBugCheckEx routine [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 2000 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.KeBugCheckEx
+title: KeBugCheckEx function
+author: windows-driver-content
+description: The KeBugCheckEx routine brings down the system in a controlled manner when the caller discovers an unrecoverable inconsistency that would corrupt the system if the caller continued to run.
+old-location: kernel\kebugcheckex.htm
+old-project: kernel
+ms.assetid: 2330fda2-71f5-4a8b-8124-775a40926bc1
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: KeBugCheckEx, kernel.kebugcheckex, wdm/KeBugCheckEx, k105_17af10bb-b21d-408e-bf73-421ce705d117.xml, KeBugCheckEx routine [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 2000 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	KeBugCheckEx
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

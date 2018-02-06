@@ -1,41 +1,46 @@
 ---
-UID : NI:gnssdriver.IOCTL_GNSS_CONFIG_SUPL_CERT
-title : IOCTL_GNSS_CONFIG_SUPL_CERT
-author : windows-driver-content
-description : The IOCTL_GNSS_CONFIG_SUPL_CERT control code is used by the GNSS adapter to set SUPL certificates.
-old-location : sensors\ioctl_gnss_config_supl_cert.htm
-old-project : sensors
-ms.assetid : 34095934-26C1-4855-9ED9-71627E88A903
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : sensors.ioctl_gnss_config_supl_cert, IOCTL_GNSS_CONFIG_SUPL_CERT control code [Sensor Devices], IOCTL_GNSS_CONFIG_SUPL_CERT, gnssdriver/IOCTL_GNSS_CONFIG_SUPL_CERT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : gnssdriver.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : GNSS_SUPL_CERT_ACTION
+UID: NI:gnssdriver.IOCTL_GNSS_CONFIG_SUPL_CERT
+title: IOCTL_GNSS_CONFIG_SUPL_CERT
+author: windows-driver-content
+description: The IOCTL_GNSS_CONFIG_SUPL_CERT control code is used by the GNSS adapter to set SUPL certificates.
+old-location: sensors\ioctl_gnss_config_supl_cert.htm
+old-project: sensors
+ms.assetid: 34095934-26C1-4855-9ED9-71627E88A903
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: sensors.ioctl_gnss_config_supl_cert, IOCTL_GNSS_CONFIG_SUPL_CERT control code [Sensor Devices], IOCTL_GNSS_CONFIG_SUPL_CERT, gnssdriver/IOCTL_GNSS_CONFIG_SUPL_CERT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: gnssdriver.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	gnssdriver.h
+apiname:
+-	IOCTL_GNSS_CONFIG_SUPL_CERT
+product: Windows
+targetos: Windows
+req.typenames: GNSS_SUPL_CERT_ACTION
 ---
 
 # IOCTL_GNSS_CONFIG_SUPL_CERT IOCTL

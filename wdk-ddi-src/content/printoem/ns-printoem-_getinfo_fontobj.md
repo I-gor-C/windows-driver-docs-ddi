@@ -1,42 +1,47 @@
 ---
-UID : NS:printoem._GETINFO_FONTOBJ
-title : "_GETINFO_FONTOBJ"
-author : windows-driver-content
-description : The GETINFO_FONTOBJ structure is used as input to the UNIFONTOBJ_GetInfo callback function.
-old-location : print\getinfo_fontobj.htm
-old-project : print
-ms.assetid : f5116986-aa0c-4cc3-9893-c93e83e922f7
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : print.getinfo_fontobj, GETINFO_FONTOBJ, printoem/GETINFO_FONTOBJ, GETINFO_FONTOBJ structure [Print Devices], printoem/PGETINFO_FONTOBJ, print_unidrv-pscript_rendering_2fdbe41f-95af-46ef-be82-04c1dc02297f.xml, *PGETINFO_FONTOBJ, _GETINFO_FONTOBJ, PGETINFO_FONTOBJ structure pointer [Print Devices], PGETINFO_FONTOBJ
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : printoem.h
-req.include-header : Printoem.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : GETINFO_FONTOBJ, *PGETINFO_FONTOBJ
-req.product : Windows 10 or later.
+UID: NS:printoem._GETINFO_FONTOBJ
+title: "_GETINFO_FONTOBJ"
+author: windows-driver-content
+description: The GETINFO_FONTOBJ structure is used as input to the UNIFONTOBJ_GetInfo callback function.
+old-location: print\getinfo_fontobj.htm
+old-project: print
+ms.assetid: f5116986-aa0c-4cc3-9893-c93e83e922f7
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: print.getinfo_fontobj, GETINFO_FONTOBJ, printoem/GETINFO_FONTOBJ, GETINFO_FONTOBJ structure [Print Devices], printoem/PGETINFO_FONTOBJ, print_unidrv-pscript_rendering_2fdbe41f-95af-46ef-be82-04c1dc02297f.xml, *PGETINFO_FONTOBJ, _GETINFO_FONTOBJ, PGETINFO_FONTOBJ structure pointer [Print Devices], PGETINFO_FONTOBJ
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: printoem.h
+req.include-header: Printoem.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	printoem.h
+apiname:
+-	GETINFO_FONTOBJ
+product: Windows
+targetos: Windows
+req.typenames: GETINFO_FONTOBJ, *PGETINFO_FONTOBJ
+req.product: Windows 10 or later.
 ---
 
 # _GETINFO_FONTOBJ structure

@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3D11_1DDI_FLUSH
-title : PFND3D11_1DDI_FLUSH
-author : windows-driver-content
-description : Submits outstanding hardware commands that are in the hardware command buffer to the display miniport driver. Implemented by Windows Display Driver Model (WDDM) 1.2 and later user-mode display drivers.
-old-location : display\flush_d3d11_1_.htm
-old-project : display
-ms.assetid : 6f4bda19-2d51-4058-ba68-cbb5deb44a54
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.flush_d3d11_1_, Flush(D3D11_1) callback function [Display Devices], Flush(D3D11_1), PFND3D11_1DDI_FLUSH, PFND3D11_1DDI_FLUSH, d3d10umddi/Flush(D3D11_1)
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3D11_1DDI_FLUSH
+title: PFND3D11_1DDI_FLUSH
+author: windows-driver-content
+description: Submits outstanding hardware commands that are in the hardware command buffer to the display miniport driver. Implemented by Windows Display Driver Model (WDDM) 1.2 and later user-mode display drivers.
+old-location: display\flush_d3d11_1_.htm
+old-project: display
+ms.assetid: 6f4bda19-2d51-4058-ba68-cbb5deb44a54
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.flush_d3d11_1_, Flush(D3D11_1) callback function [Display Devices], Flush(D3D11_1), PFND3D11_1DDI_FLUSH, PFND3D11_1DDI_FLUSH, d3d10umddi/Flush(D3D11_1)
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	Flush(D3D11_1)
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

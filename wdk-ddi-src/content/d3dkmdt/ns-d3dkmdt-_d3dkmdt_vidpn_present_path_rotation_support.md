@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmdt._D3DKMDT_VIDPN_PRESENT_PATH_ROTATION_SUPPORT
-title : "_D3DKMDT_VIDPN_PRESENT_PATH_ROTATION_SUPPORT"
-author : windows-driver-content
-description : The D3DKMDT_VIDPN_PRESENT_PATH_ROTATION_SUPPORT structure is used to indicate the angles of rotation that are supported by a particular VidPN present path.
-old-location : display\d3dkmdt_vidpn_present_path_rotation_support.htm
-old-project : display
-ms.assetid : f60cd2cf-23b6-4fed-8548-d0483fb17fe1
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.d3dkmdt_vidpn_present_path_rotation_support, d3dkmdt/D3DKMDT_VIDPN_PRESENT_PATH_ROTATION_SUPPORT, DmStructs_a078867c-e6a4-4bbf-afb6-244b210a5671.xml, D3DKMDT_VIDPN_PRESENT_PATH_ROTATION_SUPPORT structure [Display Devices], _D3DKMDT_VIDPN_PRESENT_PATH_ROTATION_SUPPORT, D3DKMDT_VIDPN_PRESENT_PATH_ROTATION_SUPPORT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmdt.h
-req.include-header : D3dkmdt.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMDT_VIDPN_PRESENT_PATH_ROTATION_SUPPORT
+UID: NS:d3dkmdt._D3DKMDT_VIDPN_PRESENT_PATH_ROTATION_SUPPORT
+title: "_D3DKMDT_VIDPN_PRESENT_PATH_ROTATION_SUPPORT"
+author: windows-driver-content
+description: The D3DKMDT_VIDPN_PRESENT_PATH_ROTATION_SUPPORT structure is used to indicate the angles of rotation that are supported by a particular VidPN present path.
+old-location: display\d3dkmdt_vidpn_present_path_rotation_support.htm
+old-project: display
+ms.assetid: f60cd2cf-23b6-4fed-8548-d0483fb17fe1
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.d3dkmdt_vidpn_present_path_rotation_support, d3dkmdt/D3DKMDT_VIDPN_PRESENT_PATH_ROTATION_SUPPORT, DmStructs_a078867c-e6a4-4bbf-afb6-244b210a5671.xml, D3DKMDT_VIDPN_PRESENT_PATH_ROTATION_SUPPORT structure [Display Devices], _D3DKMDT_VIDPN_PRESENT_PATH_ROTATION_SUPPORT, D3DKMDT_VIDPN_PRESENT_PATH_ROTATION_SUPPORT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmdt.h
+req.include-header: D3dkmdt.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmdt.h
+apiname:
+-	D3DKMDT_VIDPN_PRESENT_PATH_ROTATION_SUPPORT
+product: Windows
+targetos: Windows
+req.typenames: D3DKMDT_VIDPN_PRESENT_PATH_ROTATION_SUPPORT
 ---
 
 # _D3DKMDT_VIDPN_PRESENT_PATH_ROTATION_SUPPORT structure

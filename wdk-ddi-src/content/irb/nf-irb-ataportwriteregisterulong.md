@@ -1,41 +1,49 @@
 ---
-UID : NF:irb.AtaPortWriteRegisterUlong
-title : AtaPortWriteRegisterUlong function
-author : windows-driver-content
-description : The AtaPortWriteRegisterUlong routine transfers a ULONG value to the HBA.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
-old-location : storage\ataportwriteregisterulong.htm
-old-project : storage
-ms.assetid : 62abbee8-cd62-4106-9a7e-c93bfc916769
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : atartns_9cbbfe00-9ab2-4c7b-8f33-c9ebb166214a.xml, AtaPortWriteRegisterUlong, irb/AtaPortWriteRegisterUlong, AtaPortWriteRegisterUlong routine [Storage Devices], storage.ataportwriteregisterulong
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : irb.h
-req.include-header : Ata.h, Irb.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ataport.lib; Pciidex.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : IDE_POWER_STATE
+UID: NF:irb.AtaPortWriteRegisterUlong
+title: AtaPortWriteRegisterUlong function
+author: windows-driver-content
+description: The AtaPortWriteRegisterUlong routine transfers a ULONG value to the HBA.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
+old-location: storage\ataportwriteregisterulong.htm
+old-project: storage
+ms.assetid: 62abbee8-cd62-4106-9a7e-c93bfc916769
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: atartns_9cbbfe00-9ab2-4c7b-8f33-c9ebb166214a.xml, AtaPortWriteRegisterUlong, irb/AtaPortWriteRegisterUlong, AtaPortWriteRegisterUlong routine [Storage Devices], storage.ataportwriteregisterulong
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: irb.h
+req.include-header: Ata.h, Irb.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ataport.lib; Pciidex.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ataport.lib
+-	ataport.dll
+-	pciidex.lib
+-	pciidex.dll
+apiname:
+-	AtaPortWriteRegisterUlong
+product: Windows
+targetos: Windows
+req.typenames: IDE_POWER_STATE
 ---
 
 

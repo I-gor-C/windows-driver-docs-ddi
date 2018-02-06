@@ -1,41 +1,46 @@
 ---
-UID : NF:extsfns.IDebugFAEntryTags.GetType
-title : IDebugFAEntryTags::GetType method
-author : windows-driver-content
-description : The GetType method gets the data type that is associated with a tag in a DebugFailureAnalysisTags object.
-old-location : debugger\idebugfaentrytags_gettype.htm
-old-project : debugger
-ms.assetid : CE43711F-E17B-4234-A885-4FE04EA53903
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : debugger.idebugfaentrytags_gettype, GetType method [Windows Debugging], extsfns/IDebugFAEntryTags::GetType, GetType method [Windows Debugging], IDebugFAEntryTags interface, GetType, IDebugFAEntryTags interface [Windows Debugging], GetType method, IDebugFAEntryTags, IDebugFAEntryTags::GetType
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : extsfns.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : extsfns.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FA_EXTENSION_PLUGIN_PHASE
+UID: NF:extsfns.IDebugFAEntryTags.GetType
+title: IDebugFAEntryTags::GetType method
+author: windows-driver-content
+description: The GetType method gets the data type that is associated with a tag in a DebugFailureAnalysisTags object.
+old-location: debugger\idebugfaentrytags_gettype.htm
+old-project: debugger
+ms.assetid: CE43711F-E17B-4234-A885-4FE04EA53903
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: debugger.idebugfaentrytags_gettype, GetType method [Windows Debugging], extsfns/IDebugFAEntryTags::GetType, GetType method [Windows Debugging], IDebugFAEntryTags interface, GetType, IDebugFAEntryTags interface [Windows Debugging], GetType method, IDebugFAEntryTags, IDebugFAEntryTags::GetType
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: extsfns.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: extsfns.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	extsfns.h
+apiname:
+-	IDebugFAEntryTags.GetType
+product: Windows
+targetos: Windows
+req.typenames: FA_EXTENSION_PLUGIN_PHASE
 ---
 
 

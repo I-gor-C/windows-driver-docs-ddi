@@ -1,42 +1,47 @@
 ---
-UID : NS:video._VIDEO_PORT_CONFIG_INFO
-title : "_VIDEO_PORT_CONFIG_INFO"
-author : windows-driver-content
-description : The VIDEO_PORT_CONFIG_INFO structure contains bus-specific adapter configuration information.
-old-location : display\video_port_config_info.htm
-old-project : display
-ms.assetid : 5861efcb-1792-406a-820a-38fbfb283c1f
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : video/PVIDEO_PORT_CONFIG_INFO, display.video_port_config_info, VIDEO_PORT_CONFIG_INFO structure [Display Devices], video/VIDEO_PORT_CONFIG_INFO, VIDEO_PORT_CONFIG_INFO, Video_Structs_5566366c-4ec3-4983-873f-28af2fe51bd6.xml, *PVIDEO_PORT_CONFIG_INFO, PVIDEO_PORT_CONFIG_INFO, PVIDEO_PORT_CONFIG_INFO structure pointer [Display Devices], _VIDEO_PORT_CONFIG_INFO
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PVIDEO_PORT_CONFIG_INFO, VIDEO_PORT_CONFIG_INFO"
-req.product : Windows 10 or later.
+UID: NS:video._VIDEO_PORT_CONFIG_INFO
+title: "_VIDEO_PORT_CONFIG_INFO"
+author: windows-driver-content
+description: The VIDEO_PORT_CONFIG_INFO structure contains bus-specific adapter configuration information.
+old-location: display\video_port_config_info.htm
+old-project: display
+ms.assetid: 5861efcb-1792-406a-820a-38fbfb283c1f
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: video/PVIDEO_PORT_CONFIG_INFO, display.video_port_config_info, VIDEO_PORT_CONFIG_INFO structure [Display Devices], video/VIDEO_PORT_CONFIG_INFO, VIDEO_PORT_CONFIG_INFO, Video_Structs_5566366c-4ec3-4983-873f-28af2fe51bd6.xml, *PVIDEO_PORT_CONFIG_INFO, PVIDEO_PORT_CONFIG_INFO, PVIDEO_PORT_CONFIG_INFO structure pointer [Display Devices], _VIDEO_PORT_CONFIG_INFO
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	video.h
+apiname:
+-	VIDEO_PORT_CONFIG_INFO
+product: Windows
+targetos: Windows
+req.typenames: "*PVIDEO_PORT_CONFIG_INFO, VIDEO_PORT_CONFIG_INFO"
+req.product: Windows 10 or later.
 ---
 
 # _VIDEO_PORT_CONFIG_INFO structure

@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dukmdt.D3DDDI_DXGI_RGB
-title : D3DDDI_DXGI_RGB
-author : windows-driver-content
-description : The D3DDDI_DXGI_RGB structure contains information to describe a gamma function.
-old-location : display\d3dddi_dxgi_rgb.htm
-old-project : display
-ms.assetid : 4bf25ae0-30fa-49a6-a5a8-c807e14d9857
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DmStructs_808243de-342c-439b-9ebe-d418ccedd8ff.xml, display.d3dddi_dxgi_rgb, D3DDDI_DXGI_RGB, D3DDDI_DXGI_RGB structure [Display Devices], d3dukmdt/D3DDDI_DXGI_RGB
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dukmdt.h
-req.include-header : D3dukmdt.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDI_DXGI_RGB
+UID: NS:d3dukmdt.D3DDDI_DXGI_RGB
+title: D3DDDI_DXGI_RGB
+author: windows-driver-content
+description: The D3DDDI_DXGI_RGB structure contains information to describe a gamma function.
+old-location: display\d3dddi_dxgi_rgb.htm
+old-project: display
+ms.assetid: 4bf25ae0-30fa-49a6-a5a8-c807e14d9857
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DmStructs_808243de-342c-439b-9ebe-d418ccedd8ff.xml, display.d3dddi_dxgi_rgb, D3DDDI_DXGI_RGB, D3DDDI_DXGI_RGB structure [Display Devices], d3dukmdt/D3DDDI_DXGI_RGB
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dukmdt.h
+req.include-header: D3dukmdt.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dukmdt.h
+apiname:
+-	D3DDDI_DXGI_RGB
+product: Windows
+targetos: Windows
+req.typenames: D3DDDI_DXGI_RGB
 ---
 
 # D3DDDI_DXGI_RGB structure

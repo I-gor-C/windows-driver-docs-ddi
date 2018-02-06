@@ -1,42 +1,47 @@
 ---
-UID : NF:video.VideoPortSynchronizeExecution
-title : VideoPortSynchronizeExecution function
-author : windows-driver-content
-description : The VideoPortSynchronizeExecution function synchronizes the execution of a miniport driver-supplied HwVidSynchronizeExecutionCallback function with the miniport driver's HwVidInterrupt function, if any.
-old-location : display\videoportsynchronizeexecution.htm
-old-project : display
-ms.assetid : 93c9e4f4-7b36-4815-b762-3ac528ac96ba
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : VideoPort_Functions_675225d0-5e49-4ad5-bdaa-f7341b9a96db.xml, display.videoportsynchronizeexecution, VideoPortSynchronizeExecution function [Display Devices], video/VideoPortSynchronizeExecution, VideoPortSynchronizeExecution
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows 2000 and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Videoprt.lib
-req.dll : Videoprt.sys
-req.irql : "<= DIRQL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_PORT_SERVICES
-req.product : Windows 10 or later.
+UID: NF:video.VideoPortSynchronizeExecution
+title: VideoPortSynchronizeExecution function
+author: windows-driver-content
+description: The VideoPortSynchronizeExecution function synchronizes the execution of a miniport driver-supplied HwVidSynchronizeExecutionCallback function with the miniport driver's HwVidInterrupt function, if any.
+old-location: display\videoportsynchronizeexecution.htm
+old-project: display
+ms.assetid: 93c9e4f4-7b36-4815-b762-3ac528ac96ba
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: VideoPort_Functions_675225d0-5e49-4ad5-bdaa-f7341b9a96db.xml, display.videoportsynchronizeexecution, VideoPortSynchronizeExecution function [Display Devices], video/VideoPortSynchronizeExecution, VideoPortSynchronizeExecution
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows 2000 and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Videoprt.lib
+req.dll: Videoprt.sys
+req.irql: "<= DIRQL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Videoprt.sys
+apiname:
+-	VideoPortSynchronizeExecution
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_PORT_SERVICES
+req.product: Windows 10 or later.
 ---
 
 

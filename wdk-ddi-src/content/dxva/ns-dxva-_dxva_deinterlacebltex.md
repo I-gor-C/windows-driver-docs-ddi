@@ -1,41 +1,46 @@
 ---
-UID : NS:dxva._DXVA_DeinterlaceBltEx
-title : "_DXVA_DeinterlaceBltEx"
-author : windows-driver-content
-description : The DXVA_DeinterlaceBltEx structure describes parameters for deinterlace or frame-rate conversion, for combining the deinterlaced or frame-rate-converted video with any supplied video substreams, and for writing the combined output to a destination surface.
-old-location : display\dxva_deinterlacebltex.htm
-old-project : display
-ms.assetid : dbc32410-119f-4172-8d2a-7d41e8b64ae4
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DXVA_DeinterlaceBltEx, dxva/DXVA_DeinterlaceBltEx, dxvaref_4340e54b-79b9-44a1-9d29-37f6aae9fe94.xml, DXVA_DeinterlaceBltEx structure [Display Devices], _DXVA_DeinterlaceBltEx, display.dxva_deinterlacebltex
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : dxva.h
-req.include-header : Dxva.h
-req.target-type : Windows
-req.target-min-winverclnt : This structure applies only to Windows Server 2003 with SP1 and later, and Windows XP with SP2 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXVA_DeinterlaceBltEx
+UID: NS:dxva._DXVA_DeinterlaceBltEx
+title: "_DXVA_DeinterlaceBltEx"
+author: windows-driver-content
+description: The DXVA_DeinterlaceBltEx structure describes parameters for deinterlace or frame-rate conversion, for combining the deinterlaced or frame-rate-converted video with any supplied video substreams, and for writing the combined output to a destination surface.
+old-location: display\dxva_deinterlacebltex.htm
+old-project: display
+ms.assetid: dbc32410-119f-4172-8d2a-7d41e8b64ae4
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DXVA_DeinterlaceBltEx, dxva/DXVA_DeinterlaceBltEx, dxvaref_4340e54b-79b9-44a1-9d29-37f6aae9fe94.xml, DXVA_DeinterlaceBltEx structure [Display Devices], _DXVA_DeinterlaceBltEx, display.dxva_deinterlacebltex
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: dxva.h
+req.include-header: Dxva.h
+req.target-type: Windows
+req.target-min-winverclnt: This structure applies only to Windows Server 2003 with SP1 and later, and Windows XP with SP2 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	dxva.h
+apiname:
+-	DXVA_DeinterlaceBltEx
+product: Windows
+targetos: Windows
+req.typenames: DXVA_DeinterlaceBltEx
 ---
 
 # _DXVA_DeinterlaceBltEx structure

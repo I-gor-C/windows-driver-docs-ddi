@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddsysenv.IOCTL_SYSENV_SET_VARIABLE
-title : IOCTL_SYSENV_SET_VARIABLE
-author : windows-driver-content
-description : Sets the value of the specified system environment variables using SysEnv device.
-old-location : kernel\ioctl_ioctl_sysenv_set_variable.htm
-old-project : kernel
-ms.assetid : 2BA555D8-CFD3-4D27-BC38-3B261D2F95EF
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.ioctl_ioctl_sysenv_set_variable, IOCTL_SYSENV_SET_VARIABLE control code [Kernel-Mode Driver Architecture], IOCTL_SYSENV_SET_VARIABLE, ntddsysenv/IOCTL_SYSENV_SET_VARIABLE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddsysenv.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STORAGE_ZONE_GROUP, *PSTORAGE_ZONE_GROUP
+UID: NI:ntddsysenv.IOCTL_SYSENV_SET_VARIABLE
+title: IOCTL_SYSENV_SET_VARIABLE
+author: windows-driver-content
+description: Sets the value of the specified system environment variables using SysEnv device.
+old-location: kernel\ioctl_ioctl_sysenv_set_variable.htm
+old-project: kernel
+ms.assetid: 2BA555D8-CFD3-4D27-BC38-3B261D2F95EF
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.ioctl_ioctl_sysenv_set_variable, IOCTL_SYSENV_SET_VARIABLE control code [Kernel-Mode Driver Architecture], IOCTL_SYSENV_SET_VARIABLE, ntddsysenv/IOCTL_SYSENV_SET_VARIABLE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddsysenv.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddsysenv.h
+apiname:
+-	IOCTL_SYSENV_SET_VARIABLE
+product: Windows
+targetos: Windows
+req.typenames: STORAGE_ZONE_GROUP, *PSTORAGE_ZONE_GROUP
 ---
 
 # IOCTL_SYSENV_SET_VARIABLE IOCTL

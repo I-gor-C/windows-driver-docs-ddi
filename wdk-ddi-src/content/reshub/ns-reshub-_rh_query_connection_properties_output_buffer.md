@@ -1,42 +1,47 @@
 ---
-UID : NS:reshub._RH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER
-title : "_RH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER"
-author : windows-driver-content
-description : The RH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER structure contains the connection properties for a target device that is connected to a serial bus (I2C, SPI, or UART).
-old-location : spb\rh_query_connection_properties_output_buffer.htm
-old-project : SPB
-ms.assetid : 36B2C20C-AA92-4860-9FBC-BA65AFD546E1
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : reshub/RH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER, _RH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER, RH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER structure [Buses], *PRH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER, reshub/PRH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER, PRH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER structure pointer [Buses], PRH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER, SPB.rh_query_connection_properties_output_buffer, RH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : reshub.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PRH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER, RH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER"
-req.product : Windows 10 or later.
+UID: NS:reshub._RH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER
+title: "_RH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER"
+author: windows-driver-content
+description: The RH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER structure contains the connection properties for a target device that is connected to a serial bus (I2C, SPI, or UART).
+old-location: spb\rh_query_connection_properties_output_buffer.htm
+old-project: SPB
+ms.assetid: 36B2C20C-AA92-4860-9FBC-BA65AFD546E1
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: reshub/RH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER, _RH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER, RH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER structure [Buses], *PRH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER, reshub/PRH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER, PRH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER structure pointer [Buses], PRH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER, SPB.rh_query_connection_properties_output_buffer, RH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: reshub.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Reshub.h
+apiname:
+-	RH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER
+product: Windows
+targetos: Windows
+req.typenames: "*PRH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER, RH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER"
+req.product: Windows 10 or later.
 ---
 
 # _RH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER structure

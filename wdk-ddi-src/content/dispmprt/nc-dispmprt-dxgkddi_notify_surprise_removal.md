@@ -1,41 +1,46 @@
 ---
-UID : NC:dispmprt.DXGKDDI_NOTIFY_SURPRISE_REMOVAL
-title : DXGKDDI_NOTIFY_SURPRISE_REMOVAL
-author : windows-driver-content
-description : Called by the operating system after a user disconnected an external display device without notifying the system.Can optionally be implemented by Windows Display Driver Model (WDDM) 1.2 and later display miniport drivers.
-old-location : display\dxgkddinotifysurpriseremoval.htm
-old-project : display
-ms.assetid : 4e6403e7-7463-479a-8be9-4136287b375e
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkddinotifysurpriseremoval, DxgkDdiNotifySurpriseRemoval callback function [Display Devices], DxgkDdiNotifySurpriseRemoval, DXGKDDI_NOTIFY_SURPRISE_REMOVAL, DXGKDDI_NOTIFY_SURPRISE_REMOVAL, dispmprt/DxgkDdiNotifySurpriseRemoval
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : dispmprt.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
+UID: NC:dispmprt.DXGKDDI_NOTIFY_SURPRISE_REMOVAL
+title: DXGKDDI_NOTIFY_SURPRISE_REMOVAL
+author: windows-driver-content
+description: Called by the operating system after a user disconnected an external display device without notifying the system.Can optionally be implemented by Windows Display Driver Model (WDDM) 1.2 and later display miniport drivers.
+old-location: display\dxgkddinotifysurpriseremoval.htm
+old-project: display
+ms.assetid: 4e6403e7-7463-479a-8be9-4136287b375e
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkddinotifysurpriseremoval, DxgkDdiNotifySurpriseRemoval callback function [Display Devices], DxgkDdiNotifySurpriseRemoval, DXGKDDI_NOTIFY_SURPRISE_REMOVAL, DXGKDDI_NOTIFY_SURPRISE_REMOVAL, dispmprt/DxgkDdiNotifySurpriseRemoval
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: dispmprt.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Dispmprt.h
+apiname:
+-	DxgkDdiNotifySurpriseRemoval
+product: Windows
+targetos: Windows
+req.typenames: SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ---
 
 

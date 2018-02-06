@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddser.IOCTL_SERIAL_SET_BREAK_ON
-title : IOCTL_SERIAL_SET_BREAK_ON
-author : windows-driver-content
-description : The IOCTL_SERIAL_SET_BREAK_ON request sets the line control break signal active.
-old-location : serports\ioctl_serial_set_break_on.htm
-old-project : serports
-ms.assetid : bee9cb3c-0ccd-4304-ba7e-7896a16ab123
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : serports.ioctl_serial_set_break_on, IOCTL_SERIAL_SET_BREAK_ON control code [Serial Ports], IOCTL_SERIAL_SET_BREAK_ON, ntddser/IOCTL_SERIAL_SET_BREAK_ON, serref_47487a08-4b73-4e3a-be2e-4343dd678b44.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddser.h
-req.include-header : Ntddser.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SD_REQUEST_FUNCTION
+UID: NI:ntddser.IOCTL_SERIAL_SET_BREAK_ON
+title: IOCTL_SERIAL_SET_BREAK_ON
+author: windows-driver-content
+description: The IOCTL_SERIAL_SET_BREAK_ON request sets the line control break signal active.
+old-location: serports\ioctl_serial_set_break_on.htm
+old-project: serports
+ms.assetid: bee9cb3c-0ccd-4304-ba7e-7896a16ab123
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: serports.ioctl_serial_set_break_on, IOCTL_SERIAL_SET_BREAK_ON control code [Serial Ports], IOCTL_SERIAL_SET_BREAK_ON, ntddser/IOCTL_SERIAL_SET_BREAK_ON, serref_47487a08-4b73-4e3a-be2e-4343dd678b44.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddser.h
+req.include-header: Ntddser.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddser.h
+apiname:
+-	IOCTL_SERIAL_SET_BREAK_ON
+product: Windows
+targetos: Windows
+req.typenames: SD_REQUEST_FUNCTION
 ---
 
 # IOCTL_SERIAL_SET_BREAK_ON IOCTL

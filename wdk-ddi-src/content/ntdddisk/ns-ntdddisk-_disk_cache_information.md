@@ -1,41 +1,46 @@
 ---
-UID : NS:ntdddisk._DISK_CACHE_INFORMATION
-title : "_DISK_CACHE_INFORMATION"
-author : windows-driver-content
-description : The DISK_CACHE_INFORMATION structure is used with the IOCTL_DISK_GET_CACHE_INFORMATION request to retrieve cache information.
-old-location : storage\disk_cache_information.htm
-old-project : storage
-ms.assetid : 17ea8b6b-d41f-4224-880a-49443756d0de
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : ntdddisk/DISK_CACHE_INFORMATION, *PDISK_CACHE_INFORMATION, PDISK_CACHE_INFORMATION, DISK_CACHE_INFORMATION, storage.disk_cache_information, ntdddisk/PDISK_CACHE_INFORMATION, _DISK_CACHE_INFORMATION, PDISK_CACHE_INFORMATION structure pointer [Storage Devices], structs-disk_def992c5-6103-4eab-8598-4d52808e6b8c.xml, DISK_CACHE_INFORMATION structure [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntdddisk.h
-req.include-header : Ntdddisk.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDISK_CACHE_INFORMATION, DISK_CACHE_INFORMATION"
+UID: NS:ntdddisk._DISK_CACHE_INFORMATION
+title: "_DISK_CACHE_INFORMATION"
+author: windows-driver-content
+description: The DISK_CACHE_INFORMATION structure is used with the IOCTL_DISK_GET_CACHE_INFORMATION request to retrieve cache information.
+old-location: storage\disk_cache_information.htm
+old-project: storage
+ms.assetid: 17ea8b6b-d41f-4224-880a-49443756d0de
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: ntdddisk/DISK_CACHE_INFORMATION, *PDISK_CACHE_INFORMATION, PDISK_CACHE_INFORMATION, DISK_CACHE_INFORMATION, storage.disk_cache_information, ntdddisk/PDISK_CACHE_INFORMATION, _DISK_CACHE_INFORMATION, PDISK_CACHE_INFORMATION structure pointer [Storage Devices], structs-disk_def992c5-6103-4eab-8598-4d52808e6b8c.xml, DISK_CACHE_INFORMATION structure [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntdddisk.h
+req.include-header: Ntdddisk.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntdddisk.h
+apiname:
+-	DISK_CACHE_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: "*PDISK_CACHE_INFORMATION, DISK_CACHE_INFORMATION"
 ---
 
 # _DISK_CACHE_INFORMATION structure

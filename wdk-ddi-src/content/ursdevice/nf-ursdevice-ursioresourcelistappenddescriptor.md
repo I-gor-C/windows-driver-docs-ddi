@@ -1,42 +1,48 @@
 ---
-UID : NF:ursdevice.UrsIoResourceListAppendDescriptor
-title : UrsIoResourceListAppendDescriptor function
-author : windows-driver-content
-description : Appends the specified resource descriptor to the specified I/O resource list object that maintains resource descriptors for the host or function role.
-old-location : buses\ursioresourcelistappenddescriptor.htm
-old-project : usbref
-ms.assetid : 80AE8211-EA8F-4967-A496-39053CD578D1
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : UrsIoResourceListAppendDescriptor function [Buses], buses.ursioresourcelistappenddescriptor, UrsIoResourceListAppendDescriptor, ursdevice/UrsIoResourceListAppendDescriptor
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ursdevice.h
-req.include-header : Urscx.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 1.15
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Urscxstub.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : UMDETW_ALLOCATION_USAGE
-req.product : Windows 10 or later.
+UID: NF:ursdevice.UrsIoResourceListAppendDescriptor
+title: UrsIoResourceListAppendDescriptor function
+author: windows-driver-content
+description: Appends the specified resource descriptor to the specified I/O resource list object that maintains resource descriptors for the host or function role.
+old-location: buses\ursioresourcelistappenddescriptor.htm
+old-project: usbref
+ms.assetid: 80AE8211-EA8F-4967-A496-39053CD578D1
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: UrsIoResourceListAppendDescriptor function [Buses], buses.ursioresourcelistappenddescriptor, UrsIoResourceListAppendDescriptor, ursdevice/UrsIoResourceListAppendDescriptor
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ursdevice.h
+req.include-header: Urscx.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 1.15
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Urscxstub.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Urscxstub.lib
+-	Urscxstub.dll
+apiname:
+-	UrsIoResourceListAppendDescriptor
+product: Windows
+targetos: Windows
+req.typenames: UMDETW_ALLOCATION_USAGE
+req.product: Windows 10 or later.
 ---
 
 

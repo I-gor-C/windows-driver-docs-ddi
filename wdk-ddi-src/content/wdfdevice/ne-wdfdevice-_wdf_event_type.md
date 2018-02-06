@@ -1,42 +1,48 @@
 ---
-UID : NE:wdfdevice._WDF_EVENT_TYPE
-title : "_WDF_EVENT_TYPE"
-author : windows-driver-content
-description : The WDF_EVENT_TYPE enumeration specifies.
-old-location : wdf\wdf_event_type.htm
-old-project : wdf
-ms.assetid : DC6353BB-98C0-4647-9180-F099CD95348E
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdfdevice/WdfEventReserved, wudfddi_types/WdfEventReserved, wdfdevice/WdfEventBroadcast, WdfEventReserved, wudfddi_types/WDF_EVENT_TYPE, wdfdevice/WdfEventMaximum, WDF_EVENT_TYPE, wdf.wdf_event_type, wdfdevice/WDF_EVENT_TYPE, wudfddi_types/WdfEventBroadcast, WDF_EVENT_TYPE enumeration, WdfEventMaximum, _WDF_EVENT_TYPE, wudfddi_types/WdfEventMaximum, WdfEventBroadcast
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : wdfdevice.h
-req.include-header : Wdf.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8.1
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.11
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_EVENT_TYPE
-req.product : Windows 10 or later.
+UID: NE:wdfdevice._WDF_EVENT_TYPE
+title: "_WDF_EVENT_TYPE"
+author: windows-driver-content
+description: The WDF_EVENT_TYPE enumeration specifies.
+old-location: wdf\wdf_event_type.htm
+old-project: wdf
+ms.assetid: DC6353BB-98C0-4647-9180-F099CD95348E
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdfdevice/WdfEventReserved, wudfddi_types/WdfEventReserved, wdfdevice/WdfEventBroadcast, WdfEventReserved, wudfddi_types/WDF_EVENT_TYPE, wdfdevice/WdfEventMaximum, WDF_EVENT_TYPE, wdf.wdf_event_type, wdfdevice/WDF_EVENT_TYPE, wudfddi_types/WdfEventBroadcast, WDF_EVENT_TYPE enumeration, WdfEventMaximum, _WDF_EVENT_TYPE, wudfddi_types/WdfEventMaximum, WdfEventBroadcast
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: wdfdevice.h
+req.include-header: Wdf.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8.1
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.11
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfdevice.h
+-	wudfddi_types.h
+apiname:
+-	WDF_EVENT_TYPE
+product: Windows
+targetos: Windows
+req.typenames: WDF_EVENT_TYPE
+req.product: Windows 10 or later.
 ---
 
 # _WDF_EVENT_TYPE Enumeration
@@ -56,21 +62,21 @@ typedef enum _WDF_EVENT_TYPE {
 ## Constants
 
 <table>
-
-<tr>
-<td>WdfEventBroadcast</td>
-<td>In the current version of UMDF, the driver must specify <b>WdfEventBroadcast</b>. For more information, see <a href="..\wdfdevice\nf-wdfdevice-wdfdevicepostevent.md">WdfDevicePostEvent</a>.</td>
-</tr>
-
-<tr>
-<td>WdfEventMaximum</td>
-<td>Reserved for system use.</td>
-</tr>
-
-<tr>
-<td>WdfEventReserved</td>
-<td>Reserved for system use.</td>
-</tr>
+            
+                <tr>
+                    <td>WdfEventBroadcast</td>
+                    <td>In the current version of UMDF, the driver must specify <b>WdfEventBroadcast</b>. For more information, see <a href="..\wdfdevice\nf-wdfdevice-wdfdevicepostevent.md">WdfDevicePostEvent</a>.</td>
+                </tr>
+            
+                <tr>
+                    <td>WdfEventMaximum</td>
+                    <td>Reserved for system use.</td>
+                </tr>
+            
+                <tr>
+                    <td>WdfEventReserved</td>
+                    <td>Reserved for system use.</td>
+                </tr>
 </table>
 
 
@@ -81,9 +87,9 @@ typedef enum _WDF_EVENT_TYPE {
 | **Minimum UMDF version** | 1.11 |
 | **Header** | wdfdevice.h (include Wdf.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\wdfdevice\nf-wdfdevice-wdfdevicepostevent.md">WdfDevicePostEvent</a>
+        <a href="..\wdfdevice\nf-wdfdevice-wdfdevicepostevent.md">WdfDevicePostEvent</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff558835">IWDFDevice::PostEvent</a>
 

@@ -1,42 +1,47 @@
 ---
-UID : NS:wdm._OB_PRE_CREATE_HANDLE_INFORMATION
-title : "_OB_PRE_CREATE_HANDLE_INFORMATION"
-author : windows-driver-content
-description : The OB_PRE_CREATE_HANDLE_INFORMATION structure provides information to an ObjectPreCallback routine about a thread or process handle that is being opened.
-old-location : kernel\ob_pre_create_handle_information.htm
-old-project : kernel
-ms.assetid : 50fd7666-cdec-4bdb-b350-2c2222124020
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.ob_pre_create_handle_information, OB_PRE_CREATE_HANDLE_INFORMATION, OB_PRE_CREATE_HANDLE_INFORMATION structure [Kernel-Mode Driver Architecture], POB_PRE_CREATE_HANDLE_INFORMATION, wdm/OB_PRE_CREATE_HANDLE_INFORMATION, POB_PRE_CREATE_HANDLE_INFORMATION structure pointer [Kernel-Mode Driver Architecture], wdm/POB_PRE_CREATE_HANDLE_INFORMATION, _OB_PRE_CREATE_HANDLE_INFORMATION, *POB_PRE_CREATE_HANDLE_INFORMATION, kstruct_c_e7efa519-bfcd-4f16-9723-294f061bea51.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Server 2008 and later versions of the Windows operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : OB_PRE_CREATE_HANDLE_INFORMATION, *POB_PRE_CREATE_HANDLE_INFORMATION
-req.product : Windows 10 or later.
+UID: NS:wdm._OB_PRE_CREATE_HANDLE_INFORMATION
+title: "_OB_PRE_CREATE_HANDLE_INFORMATION"
+author: windows-driver-content
+description: The OB_PRE_CREATE_HANDLE_INFORMATION structure provides information to an ObjectPreCallback routine about a thread or process handle that is being opened.
+old-location: kernel\ob_pre_create_handle_information.htm
+old-project: kernel
+ms.assetid: 50fd7666-cdec-4bdb-b350-2c2222124020
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.ob_pre_create_handle_information, OB_PRE_CREATE_HANDLE_INFORMATION, OB_PRE_CREATE_HANDLE_INFORMATION structure [Kernel-Mode Driver Architecture], POB_PRE_CREATE_HANDLE_INFORMATION, wdm/OB_PRE_CREATE_HANDLE_INFORMATION, POB_PRE_CREATE_HANDLE_INFORMATION structure pointer [Kernel-Mode Driver Architecture], wdm/POB_PRE_CREATE_HANDLE_INFORMATION, _OB_PRE_CREATE_HANDLE_INFORMATION, *POB_PRE_CREATE_HANDLE_INFORMATION, kstruct_c_e7efa519-bfcd-4f16-9723-294f061bea51.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Server 2008 and later versions of the Windows operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	OB_PRE_CREATE_HANDLE_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: OB_PRE_CREATE_HANDLE_INFORMATION, *POB_PRE_CREATE_HANDLE_INFORMATION
+req.product: Windows 10 or later.
 ---
 
 # _OB_PRE_CREATE_HANDLE_INFORMATION structure

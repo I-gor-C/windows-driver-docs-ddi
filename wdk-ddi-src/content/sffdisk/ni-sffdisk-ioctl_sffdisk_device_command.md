@@ -1,42 +1,47 @@
 ---
-UID : NI:sffdisk.IOCTL_SFFDISK_DEVICE_COMMAND
-title : IOCTL_SFFDISK_DEVICE_COMMAND
-author : windows-driver-content
-description : User-mode applications use this IOCTL to send Secure Digital (SD) card commands to an SD card.
-old-location : sd\ioctl_sffdisk_device_command.htm
-old-project : SD
-ms.assetid : ccf9e0a2-b891-474c-ac95-7b18112857c0
-ms.author : windowsdriverdev
-ms.date : 12/18/2017
-ms.keywords : SD.ioctl_sffdisk_device_command, IOCTL_SFFDISK_DEVICE_COMMAND control code [Buses], IOCTL_SFFDISK_DEVICE_COMMAND, sffdisk/IOCTL_SFFDISK_DEVICE_COMMAND, sd-ioctls_27448784-2a0f-484b-a36f-60f3c617ec08.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : sffdisk.h
-req.include-header : Sffdisk.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SFFDISK_DPCMD
-req.product : Windows 10 or later.
+UID: NI:sffdisk.IOCTL_SFFDISK_DEVICE_COMMAND
+title: IOCTL_SFFDISK_DEVICE_COMMAND
+author: windows-driver-content
+description: User-mode applications use this IOCTL to send Secure Digital (SD) card commands to an SD card.
+old-location: sd\ioctl_sffdisk_device_command.htm
+old-project: SD
+ms.assetid: ccf9e0a2-b891-474c-ac95-7b18112857c0
+ms.author: windowsdriverdev
+ms.date: 12/18/2017
+ms.keywords: SD.ioctl_sffdisk_device_command, IOCTL_SFFDISK_DEVICE_COMMAND control code [Buses], IOCTL_SFFDISK_DEVICE_COMMAND, sffdisk/IOCTL_SFFDISK_DEVICE_COMMAND, sd-ioctls_27448784-2a0f-484b-a36f-60f3c617ec08.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: sffdisk.h
+req.include-header: Sffdisk.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	sffdisk.h
+apiname:
+-	IOCTL_SFFDISK_DEVICE_COMMAND
+product: Windows
+targetos: Windows
+req.typenames: SFFDISK_DPCMD
+req.product: Windows 10 or later.
 ---
 
 # IOCTL_SFFDISK_DEVICE_COMMAND IOCTL

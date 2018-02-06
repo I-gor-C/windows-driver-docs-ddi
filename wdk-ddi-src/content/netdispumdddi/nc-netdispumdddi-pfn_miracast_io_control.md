@@ -1,41 +1,46 @@
 ---
-UID : NC:netdispumdddi.PFN_MIRACAST_IO_CONTROL
-title : PFN_MIRACAST_IO_CONTROL
-author : windows-driver-content
-description : Called by the user-mode display driver to send the kernel-mode display miniport driver a synchronous I/O control request.The data type of this function is PFN_MIRACAST_IO_CONTROL.
-old-location : display\miracastiocontrol.htm
-old-project : display
-ms.assetid : df63ec18-79e0-40a6-a412-46071eb8a7fe
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.miracastiocontrol, PFN_MIRACAST_IO_CONTROL, MiracastIoControl callback function [Display Devices], MiracastIoControl, PFN_MIRACAST_IO_CONTROL, PFN_MIRACAST_IO_CONTROL, netdispumdddi/MiracastIoControl
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : netdispumdddi.h
-req.include-header : Netdispumdddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8.1
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDK_SRQ_DISPATCH
+UID: NC:netdispumdddi.PFN_MIRACAST_IO_CONTROL
+title: PFN_MIRACAST_IO_CONTROL
+author: windows-driver-content
+description: Called by the user-mode display driver to send the kernel-mode display miniport driver a synchronous I/O control request.The data type of this function is PFN_MIRACAST_IO_CONTROL.
+old-location: display\miracastiocontrol.htm
+old-project: display
+ms.assetid: df63ec18-79e0-40a6-a412-46071eb8a7fe
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.miracastiocontrol, PFN_MIRACAST_IO_CONTROL, MiracastIoControl callback function [Display Devices], MiracastIoControl, PFN_MIRACAST_IO_CONTROL, PFN_MIRACAST_IO_CONTROL, netdispumdddi/MiracastIoControl
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: netdispumdddi.h
+req.include-header: Netdispumdddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8.1
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Netdispumdddi.h
+apiname:
+-	MiracastIoControl
+product: Windows
+targetos: Windows
+req.typenames: NDK_SRQ_DISPATCH
 ---
 
 

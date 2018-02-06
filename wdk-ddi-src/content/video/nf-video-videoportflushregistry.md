@@ -1,42 +1,47 @@
 ---
-UID : NF:video.VideoPortFlushRegistry
-title : VideoPortFlushRegistry function
-author : windows-driver-content
-description : The VideoPortFlushRegistry function flushes registry keys and values associated with the video miniport driver.
-old-location : display\videoportflushregistry.htm
-old-project : display
-ms.assetid : 8b940eec-dac6-4a01-afc8-73115bf994c3
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : VideoPort_Functions_fe7df781-6130-484d-b582-55446711fef6.xml, VideoPortFlushRegistry function [Display Devices], video/VideoPortFlushRegistry, VideoPortFlushRegistry, display.videoportflushregistry
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Server 2003 and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Videoprt.lib
-req.dll : Videoprt.sys
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_PORT_SERVICES
-req.product : Windows 10 or later.
+UID: NF:video.VideoPortFlushRegistry
+title: VideoPortFlushRegistry function
+author: windows-driver-content
+description: The VideoPortFlushRegistry function flushes registry keys and values associated with the video miniport driver.
+old-location: display\videoportflushregistry.htm
+old-project: display
+ms.assetid: 8b940eec-dac6-4a01-afc8-73115bf994c3
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: VideoPort_Functions_fe7df781-6130-484d-b582-55446711fef6.xml, VideoPortFlushRegistry function [Display Devices], video/VideoPortFlushRegistry, VideoPortFlushRegistry, display.videoportflushregistry
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Server 2003 and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Videoprt.lib
+req.dll: Videoprt.sys
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Videoprt.sys
+apiname:
+-	VideoPortFlushRegistry
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_PORT_SERVICES
+req.product: Windows 10 or later.
 ---
 
 

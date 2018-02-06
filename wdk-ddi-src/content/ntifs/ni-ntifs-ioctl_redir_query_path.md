@@ -1,41 +1,46 @@
 ---
-UID : NI:ntifs.IOCTL_REDIR_QUERY_PATH
-title : IOCTL_REDIR_QUERY_PATH
-author : windows-driver-content
-description : The IOCTL_REDIR_QUERY_PATH control code is sent by the multiple UNC provider (MUP) to network redirectors to determine which provider can handle a specific UNC path in a name-based operation, typically an IRP_MJ_CREATE request.
-old-location : ifsk\ioctl_redir_query_path.htm
-old-project : ifsk
-ms.assetid : 876453a7-922e-4ab7-a609-64d31e60ce88
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.ioctl_redir_query_path, IOCTL_REDIR_QUERY_PATH control code [Installable File System Drivers], IOCTL_REDIR_QUERY_PATH, ntifs/IOCTL_REDIR_QUERY_PATH, ioctl_ref_f46fa4a1-0546-4d70-8490-7a233a2e743f.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NI:ntifs.IOCTL_REDIR_QUERY_PATH
+title: IOCTL_REDIR_QUERY_PATH
+author: windows-driver-content
+description: The IOCTL_REDIR_QUERY_PATH control code is sent by the multiple UNC provider (MUP) to network redirectors to determine which provider can handle a specific UNC path in a name-based operation, typically an IRP_MJ_CREATE request.
+old-location: ifsk\ioctl_redir_query_path.htm
+old-project: ifsk
+ms.assetid: 876453a7-922e-4ab7-a609-64d31e60ce88
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.ioctl_redir_query_path, IOCTL_REDIR_QUERY_PATH control code [Installable File System Drivers], IOCTL_REDIR_QUERY_PATH, ntifs/IOCTL_REDIR_QUERY_PATH, ioctl_ref_f46fa4a1-0546-4d70-8490-7a233a2e743f.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntifs.h
+apiname:
+-	IOCTL_REDIR_QUERY_PATH
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 # IOCTL_REDIR_QUERY_PATH IOCTL

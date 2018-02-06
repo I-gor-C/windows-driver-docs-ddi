@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.KeQueryLogicalProcessorRelationship
-title : KeQueryLogicalProcessorRelationship function
-author : windows-driver-content
-description : The KeQueryLogicalProcessorRelationship routine gets information about the relationships of one or more processors to the other processors in a multiprocessor system.
-old-location : kernel\kequerylogicalprocessorrelationship.htm
-old-project : kernel
-ms.assetid : 343d965d-3e85-423e-a46b-894b19d5df4e
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.kequerylogicalprocessorrelationship, KeQueryLogicalProcessorRelationship, k105_0db645b1-dfa2-4d90-856f-975997dc09a8.xml, wdm/KeQueryLogicalProcessorRelationship, KeQueryLogicalProcessorRelationship routine [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Ntddk.h, Wdm.h, Ntddk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 7 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.KeQueryLogicalProcessorRelationship
+title: KeQueryLogicalProcessorRelationship function
+author: windows-driver-content
+description: The KeQueryLogicalProcessorRelationship routine gets information about the relationships of one or more processors to the other processors in a multiprocessor system.
+old-location: kernel\kequerylogicalprocessorrelationship.htm
+old-project: kernel
+ms.assetid: 343d965d-3e85-423e-a46b-894b19d5df4e
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.kequerylogicalprocessorrelationship, KeQueryLogicalProcessorRelationship, k105_0db645b1-dfa2-4d90-856f-975997dc09a8.xml, wdm/KeQueryLogicalProcessorRelationship, KeQueryLogicalProcessorRelationship routine [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Ntddk.h, Wdm.h, Ntddk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 7 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	KeQueryLogicalProcessorRelationship
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IPnpCallbackSelfManagedIo.OnSelfManagedIoInit
-title : IPnpCallbackSelfManagedIo::OnSelfManagedIoInit method
-author : windows-driver-content
-description : The OnSelfManagedIoInit method initializes a device's self-managed I/O operations.
-old-location : wdf\ipnpcallbackselfmanagedio_onselfmanagedioinit.htm
-old-project : wdf
-ms.assetid : 41b12fef-dbc7-4b91-a2d3-9fb1aafff237
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wudfddi/IPnpCallbackSelfManagedIo::OnSelfManagedIoInit, OnSelfManagedIoInit method, OnSelfManagedIoInit, wdf.ipnpcallbackselfmanagedio_onselfmanagedioinit, UMDFDeviceObjectRef_17a86796-71ff-4ca3-897b-da7780614f24.xml, umdf.ipnpcallbackselfmanagedio_onselfmanagedioinit, OnSelfManagedIoInit method, IPnpCallbackSelfManagedIo interface, IPnpCallbackSelfManagedIo interface, OnSelfManagedIoInit method, IPnpCallbackSelfManagedIo, IPnpCallbackSelfManagedIo::OnSelfManagedIoInit
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IPnpCallbackSelfManagedIo.OnSelfManagedIoInit
+title: IPnpCallbackSelfManagedIo::OnSelfManagedIoInit method
+author: windows-driver-content
+description: The OnSelfManagedIoInit method initializes a device's self-managed I/O operations.
+old-location: wdf\ipnpcallbackselfmanagedio_onselfmanagedioinit.htm
+old-project: wdf
+ms.assetid: 41b12fef-dbc7-4b91-a2d3-9fb1aafff237
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wudfddi/IPnpCallbackSelfManagedIo::OnSelfManagedIoInit, OnSelfManagedIoInit method, OnSelfManagedIoInit, wdf.ipnpcallbackselfmanagedio_onselfmanagedioinit, UMDFDeviceObjectRef_17a86796-71ff-4ca3-897b-da7780614f24.xml, umdf.ipnpcallbackselfmanagedio_onselfmanagedioinit, OnSelfManagedIoInit method, IPnpCallbackSelfManagedIo interface, IPnpCallbackSelfManagedIo interface, OnSelfManagedIoInit method, IPnpCallbackSelfManagedIo, IPnpCallbackSelfManagedIo::OnSelfManagedIoInit
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Wudfddi.h
+apiname:
+-	IPnpCallbackSelfManagedIo.OnSelfManagedIoInit
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

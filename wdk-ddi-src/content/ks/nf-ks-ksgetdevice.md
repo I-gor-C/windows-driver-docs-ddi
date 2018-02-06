@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsGetDevice
-title : KsGetDevice function
-author : windows-driver-content
-description : The KsGetDevice function returns the AVStream device structure to which Object belongs.
-old-location : stream\ksgetdevice.htm
-old-project : stream
-ms.assetid : 27fb223f-9e6b-42af-b3d8-1018dc5416c2
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KsGetDevice, ks/KsGetDevice, stream.ksgetdevice, KsGetDevice function [Streaming Media Devices], avfunc_8459c499-365e-4cd4-927c-b359792937b0.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsGetDevice
+title: KsGetDevice function
+author: windows-driver-content
+description: The KsGetDevice function returns the AVStream device structure to which Object belongs.
+old-location: stream\ksgetdevice.htm
+old-project: stream
+ms.assetid: 27fb223f-9e6b-42af-b3d8-1018dc5416c2
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KsGetDevice, ks/KsGetDevice, stream.ksgetdevice, KsGetDevice function [Streaming Media Devices], avfunc_8459c499-365e-4cd4-927c-b359792937b0.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsGetDevice
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

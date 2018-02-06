@@ -1,41 +1,46 @@
 ---
-UID : NS:hbapiwmi._HBAFCPScsiEntry
-title : "_HBAFCPScsiEntry"
-author : windows-driver-content
-description : The HBAFCPScsiEntry structure is used with GetFcpTargetMapping method of the MSFC_HBAFCPInfo WMI Class to define a binding between the operating system information that uniquely identifies a logical unit and the fibre channel protocol (FCP) identifier that identifies the logical unit.
-old-location : storage\hbafcpscsientry.htm
-old-project : storage
-ms.assetid : 718431f9-e4cc-4e79-84d3-a59f5399e711
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : structs-Fibre_500172f1-a231-4530-afdf-fa0ba05d4904.xml, *PHBAFCPScsiEntry, hbapiwmi/HBAFCPScsiEntry, _HBAFCPScsiEntry, storage.hbafcpscsientry, HBAFCPScsiEntry structure [Storage Devices], PHBAFCPScsiEntry structure pointer [Storage Devices], PHBAFCPScsiEntry, HBAFCPScsiEntry, hbapiwmi/PHBAFCPScsiEntry
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : hbapiwmi.h
-req.include-header : Hbapiwmi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PHBAFCPScsiEntry, HBAFCPScsiEntry"
+UID: NS:hbapiwmi._HBAFCPScsiEntry
+title: "_HBAFCPScsiEntry"
+author: windows-driver-content
+description: The HBAFCPScsiEntry structure is used with GetFcpTargetMapping method of the MSFC_HBAFCPInfo WMI Class to define a binding between the operating system information that uniquely identifies a logical unit and the fibre channel protocol (FCP) identifier that identifies the logical unit.
+old-location: storage\hbafcpscsientry.htm
+old-project: storage
+ms.assetid: 718431f9-e4cc-4e79-84d3-a59f5399e711
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: structs-Fibre_500172f1-a231-4530-afdf-fa0ba05d4904.xml, *PHBAFCPScsiEntry, hbapiwmi/HBAFCPScsiEntry, _HBAFCPScsiEntry, storage.hbafcpscsientry, HBAFCPScsiEntry structure [Storage Devices], PHBAFCPScsiEntry structure pointer [Storage Devices], PHBAFCPScsiEntry, HBAFCPScsiEntry, hbapiwmi/PHBAFCPScsiEntry
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: hbapiwmi.h
+req.include-header: Hbapiwmi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hbapiwmi.h
+apiname:
+-	HBAFCPScsiEntry
+product: Windows
+targetos: Windows
+req.typenames: "*PHBAFCPScsiEntry, HBAFCPScsiEntry"
 ---
 
 # _HBAFCPScsiEntry structure

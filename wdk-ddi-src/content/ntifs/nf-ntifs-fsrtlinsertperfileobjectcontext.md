@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.FsRtlInsertPerFileObjectContext
-title : FsRtlInsertPerFileObjectContext function
-author : windows-driver-content
-description : For a &#0034;legacy&#0034; file system filter driver, the FsRtlInsertPerFileObjectContext function associates context information with a file object.
-old-location : ifsk\fsrtlinsertperfileobjectcontext.htm
-old-project : ifsk
-ms.assetid : 852b8b71-8a8c-4e9e-b27e-78fc2df8d5bd
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : fsrtlref_21a21edf-cf20-4c0b-aaef-bc75656238c4.xml, FsRtlInsertPerFileObjectContext function [Installable File System Drivers], ntifs/FsRtlInsertPerFileObjectContext, ifsk.fsrtlinsertperfileobjectcontext, FsRtlInsertPerFileObjectContext
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Fltkernel.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.FsRtlInsertPerFileObjectContext
+title: FsRtlInsertPerFileObjectContext function
+author: windows-driver-content
+description: For a &#0034;legacy&#0034; file system filter driver, the FsRtlInsertPerFileObjectContext function associates context information with a file object.
+old-location: ifsk\fsrtlinsertperfileobjectcontext.htm
+old-project: ifsk
+ms.assetid: 852b8b71-8a8c-4e9e-b27e-78fc2df8d5bd
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: fsrtlref_21a21edf-cf20-4c0b-aaef-bc75656238c4.xml, FsRtlInsertPerFileObjectContext function [Installable File System Drivers], ntifs/FsRtlInsertPerFileObjectContext, ifsk.fsrtlinsertperfileobjectcontext, FsRtlInsertPerFileObjectContext
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Fltkernel.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	FsRtlInsertPerFileObjectContext
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

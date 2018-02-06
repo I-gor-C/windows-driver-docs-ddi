@@ -1,42 +1,47 @@
 ---
-UID : NS:wwan._WWAN_SMS_CDMA_RECORD
-title : "_WWAN_SMS_CDMA_RECORD"
-author : windows-driver-content
-description : The WWAN_SMS_CDMA_RECORD structure represents CDMA-based SMS text message records.
-old-location : netvista\wwan_sms_cdma_record.htm
-old-project : netvista
-ms.assetid : 4138be92-1f54-4478-8fbb-951f1d06cb66
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : WwanRef_3356fcf9-99f2-4c07-89d5-fa73019f9a27.xml, _WWAN_SMS_CDMA_RECORD, *PWWAN_SMS_CDMA_RECORD, wwan/WWAN_SMS_CDMA_RECORD, PWWAN_SMS_CDMA_RECORD structure pointer [Network Drivers Starting with Windows Vista], netvista.wwan_sms_cdma_record, WWAN_SMS_CDMA_RECORD structure [Network Drivers Starting with Windows Vista], WWAN_SMS_CDMA_RECORD, wwan/PWWAN_SMS_CDMA_RECORD, PWWAN_SMS_CDMA_RECORD
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wwan.h
-req.include-header : Wwan.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WWAN_SMS_CDMA_RECORD, *PWWAN_SMS_CDMA_RECORD
-req.product : Windows 10 or later.
+UID: NS:wwan._WWAN_SMS_CDMA_RECORD
+title: "_WWAN_SMS_CDMA_RECORD"
+author: windows-driver-content
+description: The WWAN_SMS_CDMA_RECORD structure represents CDMA-based SMS text message records.
+old-location: netvista\wwan_sms_cdma_record.htm
+old-project: netvista
+ms.assetid: 4138be92-1f54-4478-8fbb-951f1d06cb66
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: WwanRef_3356fcf9-99f2-4c07-89d5-fa73019f9a27.xml, _WWAN_SMS_CDMA_RECORD, *PWWAN_SMS_CDMA_RECORD, wwan/WWAN_SMS_CDMA_RECORD, PWWAN_SMS_CDMA_RECORD structure pointer [Network Drivers Starting with Windows Vista], netvista.wwan_sms_cdma_record, WWAN_SMS_CDMA_RECORD structure [Network Drivers Starting with Windows Vista], WWAN_SMS_CDMA_RECORD, wwan/PWWAN_SMS_CDMA_RECORD, PWWAN_SMS_CDMA_RECORD
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wwan.h
+req.include-header: Wwan.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wwan.h
+apiname:
+-	WWAN_SMS_CDMA_RECORD
+product: Windows
+targetos: Windows
+req.typenames: WWAN_SMS_CDMA_RECORD, *PWWAN_SMS_CDMA_RECORD
+req.product: Windows 10 or later.
 ---
 
 # _WWAN_SMS_CDMA_RECORD structure

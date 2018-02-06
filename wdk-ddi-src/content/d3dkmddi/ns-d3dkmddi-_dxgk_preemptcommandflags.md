@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGK_PREEMPTCOMMANDFLAGS
-title : "_DXGK_PREEMPTCOMMANDFLAGS"
-author : windows-driver-content
-description : The DXGK_PREEMPTCOMMANDFLAGS structure specifies a union that contains either a structure with a reserved member or a 32-bit value. No bit-field flags are currently defined.
-old-location : display\dxgk_preemptcommandflags.htm
-old-project : display
-ms.assetid : 24444451-7323-4e1a-9981-cf5caa00c4e3
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DXGK_PREEMPTCOMMANDFLAGS, _DXGK_PREEMPTCOMMANDFLAGS, d3dkmddi/DXGK_PREEMPTCOMMANDFLAGS, DXGK_PREEMPTCOMMANDFLAGS structure [Display Devices], display.dxgk_preemptcommandflags, DmStructs_7163ce37-49c8-4b17-aadc-cd36ad5cac9d.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PREEMPTCOMMANDFLAGS
+UID: NS:d3dkmddi._DXGK_PREEMPTCOMMANDFLAGS
+title: "_DXGK_PREEMPTCOMMANDFLAGS"
+author: windows-driver-content
+description: The DXGK_PREEMPTCOMMANDFLAGS structure specifies a union that contains either a structure with a reserved member or a 32-bit value. No bit-field flags are currently defined.
+old-location: display\dxgk_preemptcommandflags.htm
+old-project: display
+ms.assetid: 24444451-7323-4e1a-9981-cf5caa00c4e3
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DXGK_PREEMPTCOMMANDFLAGS, _DXGK_PREEMPTCOMMANDFLAGS, d3dkmddi/DXGK_PREEMPTCOMMANDFLAGS, DXGK_PREEMPTCOMMANDFLAGS structure [Display Devices], display.dxgk_preemptcommandflags, DmStructs_7163ce37-49c8-4b17-aadc-cd36ad5cac9d.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DXGK_PREEMPTCOMMANDFLAGS
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PREEMPTCOMMANDFLAGS
 ---
 
 # _DXGK_PREEMPTCOMMANDFLAGS structure

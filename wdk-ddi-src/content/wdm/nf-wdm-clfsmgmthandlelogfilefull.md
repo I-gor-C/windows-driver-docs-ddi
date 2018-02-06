@@ -1,42 +1,48 @@
 ---
-UID : NF:wdm.ClfsMgmtHandleLogFileFull
-title : ClfsMgmtHandleLogFileFull function
-author : windows-driver-content
-description : The ClfsMgmtHandleLogFileFull routine attempts to make more space available in a log. It might make more space available by adding containers to the log, or it might ask clients to move their log tails.
-old-location : kernel\clfsmgmthandlelogfilefull.htm
-old-project : kernel
-ms.assetid : acfd28c9-c6d5-4768-b095-488f174d78c0
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ClfsMgmtHandleLogFileFull routine [Kernel-Mode Driver Architecture], ClfsMgmtHandleLogFileFull, kernel.clfsmgmthandlelogfilefull, wdm/ClfsMgmtHandleLogFileFull, Clfs_management_244be38f-f0dc-45db-b0c2-ccdee1290840.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Clfs.lib
-req.dll : Clfs.sys
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ClfsMgmtHandleLogFileFull
+title: ClfsMgmtHandleLogFileFull function
+author: windows-driver-content
+description: The ClfsMgmtHandleLogFileFull routine attempts to make more space available in a log. It might make more space available by adding containers to the log, or it might ask clients to move their log tails.
+old-location: kernel\clfsmgmthandlelogfilefull.htm
+old-project: kernel
+ms.assetid: acfd28c9-c6d5-4768-b095-488f174d78c0
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ClfsMgmtHandleLogFileFull routine [Kernel-Mode Driver Architecture], ClfsMgmtHandleLogFileFull, kernel.clfsmgmthandlelogfilefull, wdm/ClfsMgmtHandleLogFileFull, Clfs_management_244be38f-f0dc-45db-b0c2-ccdee1290840.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Clfs.lib
+req.dll: Clfs.sys
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Clfs.sys
+-	Ext-MS-Win-fs-clfs-l1-1-0.dll
+apiname:
+-	ClfsMgmtHandleLogFileFull
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

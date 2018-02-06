@@ -1,41 +1,46 @@
 ---
-UID : NC:pcivirt.SRIOV_RESET_FUNCTION
-title : SRIOV_RESET_FUNCTION
-author : windows-driver-content
-description : Resets the specified PCI Express SR-IOV Virtual Function (VF).
-old-location : pci\sriov_reset_function.htm
-old-project : PCI
-ms.assetid : 30c01528-8254-431f-aaba-79c05f66fc00
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : PCI.sriov_reset_function, SriovResetFunction callback function [Buses], SriovResetFunction, SRIOV_RESET_FUNCTION, SRIOV_RESET_FUNCTION, pcivirt/SriovResetFunction, *PSRIOV_RESET_FUNCTION callback function pointer [Buses], *PSRIOV_RESET_FUNCTION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : pcivirt.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PARCLASS_INFORMATION, *PPARCLASS_INFORMATION
+UID: NC:pcivirt.SRIOV_RESET_FUNCTION
+title: SRIOV_RESET_FUNCTION
+author: windows-driver-content
+description: Resets the specified PCI Express SR-IOV Virtual Function (VF).
+old-location: pci\sriov_reset_function.htm
+old-project: PCI
+ms.assetid: 30c01528-8254-431f-aaba-79c05f66fc00
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: PCI.sriov_reset_function, SriovResetFunction callback function [Buses], SriovResetFunction, SRIOV_RESET_FUNCTION, SRIOV_RESET_FUNCTION, pcivirt/SriovResetFunction, *PSRIOV_RESET_FUNCTION callback function pointer [Buses], *PSRIOV_RESET_FUNCTION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: pcivirt.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Pcivirt.h
+apiname:
+-	*PSRIOV_RESET_FUNCTION
+product: Windows
+targetos: Windows
+req.typenames: PARCLASS_INFORMATION, *PPARCLASS_INFORMATION
 ---
 
 

@@ -1,41 +1,47 @@
 ---
-UID : NF:fltkernel.FltAllocateDeferredIoWorkItem
-title : FltAllocateDeferredIoWorkItem function
-author : windows-driver-content
-description : FltAllocateDeferredIoWorkItem allocates a deferred-I/O work item.
-old-location : ifsk\fltallocatedeferredioworkitem.htm
-old-project : ifsk
-ms.assetid : 25c03114-8e50-40a2-869a-08b11b7490be
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltApiRef_a_to_d_2fd5a055-2bcb-47a5-af89-5a34a92982f1.xml, fltkernel/FltAllocateDeferredIoWorkItem, FltAllocateDeferredIoWorkItem function [Installable File System Drivers], ifsk.fltallocatedeferredioworkitem, FltAllocateDeferredIoWorkItem
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltAllocateDeferredIoWorkItem
+title: FltAllocateDeferredIoWorkItem function
+author: windows-driver-content
+description: FltAllocateDeferredIoWorkItem allocates a deferred-I/O work item.
+old-location: ifsk\fltallocatedeferredioworkitem.htm
+old-project: ifsk
+ms.assetid: 25c03114-8e50-40a2-869a-08b11b7490be
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltApiRef_a_to_d_2fd5a055-2bcb-47a5-af89-5a34a92982f1.xml, fltkernel/FltAllocateDeferredIoWorkItem, FltAllocateDeferredIoWorkItem function [Installable File System Drivers], ifsk.fltallocatedeferredioworkitem, FltAllocateDeferredIoWorkItem
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	FltMgr.lib
+-	FltMgr.dll
+apiname:
+-	FltAllocateDeferredIoWorkItem
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

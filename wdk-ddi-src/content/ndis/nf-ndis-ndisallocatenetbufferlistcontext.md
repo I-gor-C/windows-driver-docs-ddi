@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisAllocateNetBufferListContext
-title : NdisAllocateNetBufferListContext function
-author : windows-driver-content
-description : Call the NdisAllocateNetBufferListContext function to allocate more context space in the NET_BUFFER_LIST_CONTEXT structure of a NET_BUFFER_LIST structure.
-old-location : netvista\ndisallocatenetbufferlistcontext.htm
-old-project : netvista
-ms.assetid : 3bbad723-86bf-4206-9e51-52a66efaec20
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NdisAllocateNetBufferListContext, NdisAllocateNetBufferListContext function [Network Drivers Starting with Windows Vista], ndis_netbuf_functions_ref_f421f804-e12d-43ba-81ed-d5322712faf5.xml, ndis/NdisAllocateNetBufferListContext, netvista.ndisallocatenetbufferlistcontext
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_NetBuffer_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisAllocateNetBufferListContext
+title: NdisAllocateNetBufferListContext function
+author: windows-driver-content
+description: Call the NdisAllocateNetBufferListContext function to allocate more context space in the NET_BUFFER_LIST_CONTEXT structure of a NET_BUFFER_LIST structure.
+old-location: netvista\ndisallocatenetbufferlistcontext.htm
+old-project: netvista
+ms.assetid: 3bbad723-86bf-4206-9e51-52a66efaec20
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NdisAllocateNetBufferListContext, NdisAllocateNetBufferListContext function [Network Drivers Starting with Windows Vista], ndis_netbuf_functions_ref_f421f804-e12d-43ba-81ed-d5322712faf5.xml, ndis/NdisAllocateNetBufferListContext, netvista.ndisallocatenetbufferlistcontext
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_NetBuffer_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisAllocateNetBufferListContext
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

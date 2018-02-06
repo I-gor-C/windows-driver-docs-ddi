@@ -1,41 +1,46 @@
 ---
-UID : NS:pmi._PMI_MEASUREMENT_CONFIGURATION
-title : "_PMI_MEASUREMENT_CONFIGURATION"
-author : windows-driver-content
-description : The PMI_MEASUREMENT_CONFIGURATION structure contains information about the current power measurement configuration of a power meter.
-old-location : powermeter\pmi_measurement_configuration.htm
-old-project : powermeter
-ms.assetid : dbabdd69-a97b-4de6-b35b-f3d8d2351c72
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : PPMI_MEASUREMENT_CONFIGURATION structure pointer [Power Metering and Budgeting Devices], PPMI_MEASUREMENT_CONFIGURATION, pmi/PPMI_MEASUREMENT_CONFIGURATION, powermeter.pmi_measurement_configuration, pmi/PMI_MEASUREMENT_CONFIGURATION, PMI_MEASUREMENT_CONFIGURATION, PowerMeterRef_fe69d656-3aa9-4449-bd24-ceded8d7abd1.xml, PMI_MEASUREMENT_CONFIGURATION structure [Power Metering and Budgeting Devices], *PPMI_MEASUREMENT_CONFIGURATION, _PMI_MEASUREMENT_CONFIGURATION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : pmi.h
-req.include-header : Pmi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7, Windows Server 2008 R2, and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PMI_MEASUREMENT_CONFIGURATION, *PPMI_MEASUREMENT_CONFIGURATION
+UID: NS:pmi._PMI_MEASUREMENT_CONFIGURATION
+title: "_PMI_MEASUREMENT_CONFIGURATION"
+author: windows-driver-content
+description: The PMI_MEASUREMENT_CONFIGURATION structure contains information about the current power measurement configuration of a power meter.
+old-location: powermeter\pmi_measurement_configuration.htm
+old-project: powermeter
+ms.assetid: dbabdd69-a97b-4de6-b35b-f3d8d2351c72
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: PPMI_MEASUREMENT_CONFIGURATION structure pointer [Power Metering and Budgeting Devices], PPMI_MEASUREMENT_CONFIGURATION, pmi/PPMI_MEASUREMENT_CONFIGURATION, powermeter.pmi_measurement_configuration, pmi/PMI_MEASUREMENT_CONFIGURATION, PMI_MEASUREMENT_CONFIGURATION, PowerMeterRef_fe69d656-3aa9-4449-bd24-ceded8d7abd1.xml, PMI_MEASUREMENT_CONFIGURATION structure [Power Metering and Budgeting Devices], *PPMI_MEASUREMENT_CONFIGURATION, _PMI_MEASUREMENT_CONFIGURATION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: pmi.h
+req.include-header: Pmi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7, Windows Server 2008 R2, and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	pmi.h
+apiname:
+-	PMI_MEASUREMENT_CONFIGURATION
+product: Windows
+targetos: Windows
+req.typenames: PMI_MEASUREMENT_CONFIGURATION, *PPMI_MEASUREMENT_CONFIGURATION
 ---
 
 # _PMI_MEASUREMENT_CONFIGURATION structure

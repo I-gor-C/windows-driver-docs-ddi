@@ -1,42 +1,47 @@
 ---
-UID : NS:strmini._HW_STREAM_OBJECT
-title : "_HW_STREAM_OBJECT"
-author : windows-driver-content
-description : HW_STREAM_OBJECT describes an instance of a minidriver stream.
-old-location : stream\hw_stream_object.htm
-old-project : stream
-ms.assetid : 0cb2041a-844d-4ddb-9dab-e1c77c28835a
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : HW_STREAM_OBJECT structure [Streaming Media Devices], strmini/HW_STREAM_OBJECT, strmini/PHW_STREAM_OBJECT, stream.hw_stream_object, _HW_STREAM_OBJECT, PHW_STREAM_OBJECT, PHW_STREAM_OBJECT structure pointer [Streaming Media Devices], strclass-struct_c409633a-dccd-4f70-a412-0da08feeae43.xml, HW_STREAM_OBJECT, *PHW_STREAM_OBJECT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : strmini.h
-req.include-header : Strmini.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PHW_STREAM_OBJECT, HW_STREAM_OBJECT"
-req.product : Windows 10 or later.
+UID: NS:strmini._HW_STREAM_OBJECT
+title: "_HW_STREAM_OBJECT"
+author: windows-driver-content
+description: HW_STREAM_OBJECT describes an instance of a minidriver stream.
+old-location: stream\hw_stream_object.htm
+old-project: stream
+ms.assetid: 0cb2041a-844d-4ddb-9dab-e1c77c28835a
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: HW_STREAM_OBJECT structure [Streaming Media Devices], strmini/HW_STREAM_OBJECT, strmini/PHW_STREAM_OBJECT, stream.hw_stream_object, _HW_STREAM_OBJECT, PHW_STREAM_OBJECT, PHW_STREAM_OBJECT structure pointer [Streaming Media Devices], strclass-struct_c409633a-dccd-4f70-a412-0da08feeae43.xml, HW_STREAM_OBJECT, *PHW_STREAM_OBJECT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: strmini.h
+req.include-header: Strmini.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	strmini.h
+apiname:
+-	HW_STREAM_OBJECT
+product: Windows
+targetos: Windows
+req.typenames: "*PHW_STREAM_OBJECT, HW_STREAM_OBJECT"
+req.product: Windows 10 or later.
 ---
 
 # _HW_STREAM_OBJECT structure

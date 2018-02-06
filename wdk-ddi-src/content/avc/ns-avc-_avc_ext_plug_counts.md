@@ -1,41 +1,46 @@
 ---
-UID : NS:avc._AVC_EXT_PLUG_COUNTS
-title : "_AVC_EXT_PLUG_COUNTS"
-author : windows-driver-content
-description : The AVC_EXT_PLUG_COUNTS structure describes the number of external plugs on the subunit.
-old-location : stream\avc_ext_plug_counts.htm
-old-project : stream
-ms.assetid : ffae774e-8ec9-49da-bdc6-b56beb45c4c0
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : "_AVC_EXT_PLUG_COUNTS, AVC_EXT_PLUG_COUNTS structure [Streaming Media Devices], *PAVC_EXT_PLUG_COUNTS, avc/AVC_EXT_PLUG_COUNTS, avcref_171f4765-bb9f-4056-a238-d4822af50a3d.xml, AVC_EXT_PLUG_COUNTS, PAVC_EXT_PLUG_COUNTS, PAVC_EXT_PLUG_COUNTS structure pointer [Streaming Media Devices], avc/PAVC_EXT_PLUG_COUNTS, stream.avc_ext_plug_counts"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : avc.h
-req.include-header : Avc.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PAVC_EXT_PLUG_COUNTS, AVC_EXT_PLUG_COUNTS"
+UID: NS:avc._AVC_EXT_PLUG_COUNTS
+title: "_AVC_EXT_PLUG_COUNTS"
+author: windows-driver-content
+description: The AVC_EXT_PLUG_COUNTS structure describes the number of external plugs on the subunit.
+old-location: stream\avc_ext_plug_counts.htm
+old-project: stream
+ms.assetid: ffae774e-8ec9-49da-bdc6-b56beb45c4c0
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: "_AVC_EXT_PLUG_COUNTS, AVC_EXT_PLUG_COUNTS structure [Streaming Media Devices], *PAVC_EXT_PLUG_COUNTS, avc/AVC_EXT_PLUG_COUNTS, avcref_171f4765-bb9f-4056-a238-d4822af50a3d.xml, AVC_EXT_PLUG_COUNTS, PAVC_EXT_PLUG_COUNTS, PAVC_EXT_PLUG_COUNTS structure pointer [Streaming Media Devices], avc/PAVC_EXT_PLUG_COUNTS, stream.avc_ext_plug_counts"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: avc.h
+req.include-header: Avc.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	avc.h
+apiname:
+-	AVC_EXT_PLUG_COUNTS
+product: Windows
+targetos: Windows
+req.typenames: "*PAVC_EXT_PLUG_COUNTS, AVC_EXT_PLUG_COUNTS"
 ---
 
 # _AVC_EXT_PLUG_COUNTS structure

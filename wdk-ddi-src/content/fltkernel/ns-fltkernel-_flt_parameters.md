@@ -1,41 +1,46 @@
 ---
-UID : NS:fltkernel._FLT_PARAMETERS
-title : "_FLT_PARAMETERS"
-author : windows-driver-content
-description : The FLT_PARAMETERS union defines the request-type-specific parameters associated with an I/O operation.
-old-location : ifsk\flt_parameters.htm
-old-project : ifsk
-ms.assetid : 62aa20b7-ce5c-4d42-bce2-1d76a98887ed
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : PFLT_PARAMETERS, ifsk.flt_parameters, *PFLT_PARAMETERS, fltkernel/PFLT_PARAMETERS, PFLT_PARAMETERS union pointer [Installable File System Drivers], _FLT_PARAMETERS, FLT_PARAMETERS union [Installable File System Drivers], FLT_PARAMETERS, FltSystemStructures_2ebb0ec7-76cc-49a3-b2ec-186f67369bbb.xml, fltkernel/FLT_PARAMETERS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PFLT_PARAMETERS, FLT_PARAMETERS"
+UID: NS:fltkernel._FLT_PARAMETERS
+title: "_FLT_PARAMETERS"
+author: windows-driver-content
+description: The FLT_PARAMETERS union defines the request-type-specific parameters associated with an I/O operation.
+old-location: ifsk\flt_parameters.htm
+old-project: ifsk
+ms.assetid: 62aa20b7-ce5c-4d42-bce2-1d76a98887ed
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: PFLT_PARAMETERS, ifsk.flt_parameters, *PFLT_PARAMETERS, fltkernel/PFLT_PARAMETERS, PFLT_PARAMETERS union pointer [Installable File System Drivers], _FLT_PARAMETERS, FLT_PARAMETERS union [Installable File System Drivers], FLT_PARAMETERS, FltSystemStructures_2ebb0ec7-76cc-49a3-b2ec-186f67369bbb.xml, fltkernel/FLT_PARAMETERS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	fltkernel.h
+apiname:
+-	FLT_PARAMETERS
+product: Windows
+targetos: Windows
+req.typenames: "*PFLT_PARAMETERS, FLT_PARAMETERS"
 ---
 
 # _FLT_PARAMETERS structure

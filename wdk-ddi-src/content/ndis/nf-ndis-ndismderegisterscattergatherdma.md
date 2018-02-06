@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisMDeregisterScatterGatherDma
-title : NdisMDeregisterScatterGatherDma function
-author : windows-driver-content
-description : Bus-master miniport drivers call NdisMDeregisterScatterGatherDma to release DMA resources that were allocated with the NdisMRegisterScatterGatherDma function.
-old-location : netvista\ndismderegisterscattergatherdma.htm
-old-project : netvista
-ms.assetid : 44792a1f-c6d5-4491-a06d-e00e41e40059
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NdisMDeregisterScatterGatherDma, netvista.ndismderegisterscattergatherdma, ndis_sgdma_ref_93a42580-1486-4ec8-90e6-ca6219c54884.xml, ndis/NdisMDeregisterScatterGatherDma, NdisMDeregisterScatterGatherDma function [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Init_RegisterSG, Irql_Gather_DMA_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisMDeregisterScatterGatherDma
+title: NdisMDeregisterScatterGatherDma function
+author: windows-driver-content
+description: Bus-master miniport drivers call NdisMDeregisterScatterGatherDma to release DMA resources that were allocated with the NdisMRegisterScatterGatherDma function.
+old-location: netvista\ndismderegisterscattergatherdma.htm
+old-project: netvista
+ms.assetid: 44792a1f-c6d5-4491-a06d-e00e41e40059
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NdisMDeregisterScatterGatherDma, netvista.ndismderegisterscattergatherdma, ndis_sgdma_ref_93a42580-1486-4ec8-90e6-ca6219c54884.xml, ndis/NdisMDeregisterScatterGatherDma, NdisMDeregisterScatterGatherDma function [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Init_RegisterSG, Irql_Gather_DMA_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisMDeregisterScatterGatherDma
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

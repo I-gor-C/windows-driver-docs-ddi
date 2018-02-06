@@ -1,12 +1,12 @@
 ---
-UID : NA:ehstorbandmgmt
-ms.assetid : 5620fe38-a1b7-3b18-8f1d-4366b8866138
-ms.author : windowsdriverdev
-ms.date : 01/18/18
-ms.keywords : 
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : portal
+UID: NA:ehstorbandmgmt
+ms.assetid: 5620fe38-a1b7-3b18-8f1d-4366b8866138
+ms.author: windowsdriverdev
+ms.date: 01/18/18
+ms.keywords: 
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: portal
 ---
 
 # ehstorbandmgmt.h header

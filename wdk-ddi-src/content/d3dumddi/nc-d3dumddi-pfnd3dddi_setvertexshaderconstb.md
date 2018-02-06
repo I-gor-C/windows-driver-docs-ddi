@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_SETVERTEXSHADERCONSTB
-title : PFND3DDDI_SETVERTEXSHADERCONSTB
-author : windows-driver-content
-description : The SetVertexShaderConstB function sets one or more vertex shader constant registers with Boolean values.
-old-location : display\setvertexshaderconstb.htm
-old-project : display
-ms.assetid : 41ca823e-4370-4cba-9129-067e25a43a69
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.setvertexshaderconstb, SetVertexShaderConstB callback function [Display Devices], SetVertexShaderConstB, PFND3DDDI_SETVERTEXSHADERCONSTB, PFND3DDDI_SETVERTEXSHADERCONSTB, d3dumddi/SetVertexShaderConstB, UserModeDisplayDriver_Functions_5151bd4a-84a4-43d3-a76e-de6f5808281d.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_SETVERTEXSHADERCONSTB
+title: PFND3DDDI_SETVERTEXSHADERCONSTB
+author: windows-driver-content
+description: The SetVertexShaderConstB function sets one or more vertex shader constant registers with Boolean values.
+old-location: display\setvertexshaderconstb.htm
+old-project: display
+ms.assetid: 41ca823e-4370-4cba-9129-067e25a43a69
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.setvertexshaderconstb, SetVertexShaderConstB callback function [Display Devices], SetVertexShaderConstB, PFND3DDDI_SETVERTEXSHADERCONSTB, PFND3DDDI_SETVERTEXSHADERCONSTB, d3dumddi/SetVertexShaderConstB, UserModeDisplayDriver_Functions_5151bd4a-84a4-43d3-a76e-de6f5808281d.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	SetVertexShaderConstB
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

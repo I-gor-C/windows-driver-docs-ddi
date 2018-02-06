@@ -1,41 +1,46 @@
 ---
-UID : NI:nfcsedev.IOCTL_NFCSE_SUBSCRIBE_FOR_EVENT
-title : IOCTL_NFCSE_SUBSCRIBE_FOR_EVENT
-author : windows-driver-content
-description : The IOCTL_NFCSE_SUBSCRIBE_FOR_EVENT control code is issued by a client to subscribe to a specific event.
-old-location : nfpdrivers\ioctl_nfcse_subscribe_for_event.htm
-old-project : nfpdrivers
-ms.assetid : 3A184392-A68C-4AFC-AE9F-36247153ADD2
-ms.author : windowsdriverdev
-ms.date : 12/18/2017
-ms.keywords : nfpdrivers.ioctl_nfcse_subscribe_for_event, IOCTL_NFCSE_SUBSCRIBE_FOR_EVENT control code [Near-Field Proximity Drivers], IOCTL_NFCSE_SUBSCRIBE_FOR_EVENT, nfcsedev/IOCTL_NFCSE_SUBSCRIBE_FOR_EVENT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : nfcsedev.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSECURE_ELEMENT_TYPE, SECURE_ELEMENT_TYPE"
+UID: NI:nfcsedev.IOCTL_NFCSE_SUBSCRIBE_FOR_EVENT
+title: IOCTL_NFCSE_SUBSCRIBE_FOR_EVENT
+author: windows-driver-content
+description: The IOCTL_NFCSE_SUBSCRIBE_FOR_EVENT control code is issued by a client to subscribe to a specific event.
+old-location: nfpdrivers\ioctl_nfcse_subscribe_for_event.htm
+old-project: nfpdrivers
+ms.assetid: 3A184392-A68C-4AFC-AE9F-36247153ADD2
+ms.author: windowsdriverdev
+ms.date: 12/18/2017
+ms.keywords: nfpdrivers.ioctl_nfcse_subscribe_for_event, IOCTL_NFCSE_SUBSCRIBE_FOR_EVENT control code [Near-Field Proximity Drivers], IOCTL_NFCSE_SUBSCRIBE_FOR_EVENT, nfcsedev/IOCTL_NFCSE_SUBSCRIBE_FOR_EVENT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: nfcsedev.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	nfcsedev.h
+apiname:
+-	IOCTL_NFCSE_SUBSCRIBE_FOR_EVENT
+product: Windows
+targetos: Windows
+req.typenames: "*PSECURE_ELEMENT_TYPE, SECURE_ELEMENT_TYPE"
 ---
 
 # IOCTL_NFCSE_SUBSCRIBE_FOR_EVENT IOCTL

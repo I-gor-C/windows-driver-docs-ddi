@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsReadFile
-title : KsReadFile function
-author : windows-driver-content
-description : The KsReadFile function performs a read against the specified file object.
-old-location : stream\ksreadfile.htm
-old-project : stream
-ms.assetid : e3bb6ead-8129-4605-8755-3a56d4b3d8f6
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.ksreadfile, ks/KsReadFile, KsReadFile, KsReadFile function [Streaming Media Devices], ksfunc_9264bdad-2acc-46fe-9ca3-d006bf6c3e23.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsReadFile
+title: KsReadFile function
+author: windows-driver-content
+description: The KsReadFile function performs a read against the specified file object.
+old-location: stream\ksreadfile.htm
+old-project: stream
+ms.assetid: e3bb6ead-8129-4605-8755-3a56d4b3d8f6
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.ksreadfile, ks/KsReadFile, KsReadFile, KsReadFile function [Streaming Media Devices], ksfunc_9264bdad-2acc-46fe-9ca3-d006bf6c3e23.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsReadFile
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

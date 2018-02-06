@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmthk._D3DKMT_VIDMM_ESCAPE
-title : "_D3DKMT_VIDMM_ESCAPE"
-author : windows-driver-content
-description : The D3DKMT_VIDMM_ESCAPE structure describes how to control the video memory manager (which is part of Dxgkrnl.sys) in a call to the D3DKMTEscape function.
-old-location : display\d3dkmt_vidmm_escape.htm
-old-project : display
-ms.assetid : b9fb9960-9e6a-4c41-9c40-8ad307f83f0e
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : OpenGL_Structs_9a9c243b-b99e-43f2-a749-afbb839fb7c0.xml, d3dkmthk/D3DKMT_VIDMM_ESCAPE, _D3DKMT_VIDMM_ESCAPE, D3DKMT_VIDMM_ESCAPE structure [Display Devices], display.d3dkmt_vidmm_escape, D3DKMT_VIDMM_ESCAPE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_VIDMM_ESCAPE
+UID: NS:d3dkmthk._D3DKMT_VIDMM_ESCAPE
+title: "_D3DKMT_VIDMM_ESCAPE"
+author: windows-driver-content
+description: The D3DKMT_VIDMM_ESCAPE structure describes how to control the video memory manager (which is part of Dxgkrnl.sys) in a call to the D3DKMTEscape function.
+old-location: display\d3dkmt_vidmm_escape.htm
+old-project: display
+ms.assetid: b9fb9960-9e6a-4c41-9c40-8ad307f83f0e
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: OpenGL_Structs_9a9c243b-b99e-43f2-a749-afbb839fb7c0.xml, d3dkmthk/D3DKMT_VIDMM_ESCAPE, _D3DKMT_VIDMM_ESCAPE, D3DKMT_VIDMM_ESCAPE structure [Display Devices], display.d3dkmt_vidmm_escape, D3DKMT_VIDMM_ESCAPE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmthk.h
+apiname:
+-	D3DKMT_VIDMM_ESCAPE
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_VIDMM_ESCAPE
 ---
 
 # _D3DKMT_VIDMM_ESCAPE structure

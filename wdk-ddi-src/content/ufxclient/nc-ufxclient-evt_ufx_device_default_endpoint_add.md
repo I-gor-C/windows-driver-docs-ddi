@@ -1,42 +1,47 @@
 ---
-UID : NC:ufxclient.EVT_UFX_DEVICE_DEFAULT_ENDPOINT_ADD
-title : EVT_UFX_DEVICE_DEFAULT_ENDPOINT_ADD
-author : windows-driver-content
-description : The client driver's implementation to create a default control endpoint.
-old-location : buses\evt_ufx_device_default_endpoint_add.htm
-old-project : usbref
-ms.assetid : 37AF38A2-F761-4DBC-A7E7-FC4BDA544A31
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : buses.evt_ufx_device_default_endpoint_add, EvtUfxDeviceDefaultEndpointAdd callback function [Buses], EvtUfxDeviceDefaultEndpointAdd, EVT_UFX_DEVICE_DEFAULT_ENDPOINT_ADD, EVT_UFX_DEVICE_DEFAULT_ENDPOINT_ADD, ufxclient/EvtUfxDeviceDefaultEndpointAdd, PFN_UFX_DEVICE_DEFAULT_ENDPOINT_ADD callback function pointer [Buses], PFN_UFX_DEVICE_DEFAULT_ENDPOINT_ADD
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ufxclient.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUFX_HARDWARE_FAILURE_CONTEXT, UFX_HARDWARE_FAILURE_CONTEXT"
-req.product : Windows 10 or later.
+UID: NC:ufxclient.EVT_UFX_DEVICE_DEFAULT_ENDPOINT_ADD
+title: EVT_UFX_DEVICE_DEFAULT_ENDPOINT_ADD
+author: windows-driver-content
+description: The client driver's implementation to create a default control endpoint.
+old-location: buses\evt_ufx_device_default_endpoint_add.htm
+old-project: usbref
+ms.assetid: 37AF38A2-F761-4DBC-A7E7-FC4BDA544A31
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: buses.evt_ufx_device_default_endpoint_add, EvtUfxDeviceDefaultEndpointAdd callback function [Buses], EvtUfxDeviceDefaultEndpointAdd, EVT_UFX_DEVICE_DEFAULT_ENDPOINT_ADD, EVT_UFX_DEVICE_DEFAULT_ENDPOINT_ADD, ufxclient/EvtUfxDeviceDefaultEndpointAdd, PFN_UFX_DEVICE_DEFAULT_ENDPOINT_ADD callback function pointer [Buses], PFN_UFX_DEVICE_DEFAULT_ENDPOINT_ADD
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ufxclient.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ufxclient.h
+apiname:
+-	PFN_UFX_DEVICE_DEFAULT_ENDPOINT_ADD
+product: Windows
+targetos: Windows
+req.typenames: "*PUFX_HARDWARE_FAILURE_CONTEXT, UFX_HARDWARE_FAILURE_CONTEXT"
+req.product: Windows 10 or later.
 ---
 
 

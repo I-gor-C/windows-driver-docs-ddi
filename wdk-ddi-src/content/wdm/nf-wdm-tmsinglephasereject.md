@@ -1,42 +1,49 @@
 ---
-UID : NF:wdm.TmSinglePhaseReject
-title : TmSinglePhaseReject function
-author : windows-driver-content
-description : The TmSinglePhaseReject routine informs KTM that the calling resource manager will not support a single-phase commit operation for a specified enlistment.
-old-location : kernel\tmsinglephasereject.htm
-old-project : kernel
-ms.assetid : 8fc92d51-40be-439b-abee-54ad19a86a89
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/TmSinglePhaseReject, kernel.tmsinglephasereject, ktm_ref_16802b39-057c-4d45-9da0-3f63f4589a44.xml, TmSinglePhaseReject, TmSinglePhaseReject routine [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later operating system versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.TmSinglePhaseReject
+title: TmSinglePhaseReject function
+author: windows-driver-content
+description: The TmSinglePhaseReject routine informs KTM that the calling resource manager will not support a single-phase commit operation for a specified enlistment.
+old-location: kernel\tmsinglephasereject.htm
+old-project: kernel
+ms.assetid: 8fc92d51-40be-439b-abee-54ad19a86a89
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/TmSinglePhaseReject, kernel.tmsinglephasereject, ktm_ref_16802b39-057c-4d45-9da0-3f63f4589a44.xml, TmSinglePhaseReject, TmSinglePhaseReject routine [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later operating system versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+-	Ext-MS-Win-ntos-tm-l1-1-0.dll
+-	tm.sys
+apiname:
+-	TmSinglePhaseReject
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

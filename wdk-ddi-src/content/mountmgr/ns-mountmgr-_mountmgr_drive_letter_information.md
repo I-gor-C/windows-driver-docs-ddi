@@ -1,41 +1,46 @@
 ---
-UID : NS:mountmgr._MOUNTMGR_DRIVE_LETTER_INFORMATION
-title : "_MOUNTMGR_DRIVE_LETTER_INFORMATION"
-author : windows-driver-content
-description : The MOUNTMGR_DRIVE_LETTER_INFORMATION structure is used by the mount manager to furnish a drive letter to a client that has requested a driver letter by means of an IOCTL_MOUNTMGR_NEXT_DRIVE_LETTER request.
-old-location : storage\mountmgr_drive_letter_information.htm
-old-project : storage
-ms.assetid : ad8dc740-c297-43e7-beb9-d93019955fd3
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : MOUNTMGR_DRIVE_LETTER_INFORMATION, _MOUNTMGR_DRIVE_LETTER_INFORMATION, MOUNTMGR_DRIVE_LETTER_INFORMATION structure [Storage Devices], storage.mountmgr_drive_letter_information, mountmgr/PMOUNTMGR_DRIVE_LETTER_INFORMATION, PMOUNTMGR_DRIVE_LETTER_INFORMATION structure pointer [Storage Devices], mountmgr/MOUNTMGR_DRIVE_LETTER_INFORMATION, structs-mntmgr_19ece61a-9dda-466c-a414-047d71beeb2c.xml, *PMOUNTMGR_DRIVE_LETTER_INFORMATION, PMOUNTMGR_DRIVE_LETTER_INFORMATION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : mountmgr.h
-req.include-header : Mountmgr.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PMOUNTMGR_DRIVE_LETTER_INFORMATION, MOUNTMGR_DRIVE_LETTER_INFORMATION"
+UID: NS:mountmgr._MOUNTMGR_DRIVE_LETTER_INFORMATION
+title: "_MOUNTMGR_DRIVE_LETTER_INFORMATION"
+author: windows-driver-content
+description: The MOUNTMGR_DRIVE_LETTER_INFORMATION structure is used by the mount manager to furnish a drive letter to a client that has requested a driver letter by means of an IOCTL_MOUNTMGR_NEXT_DRIVE_LETTER request.
+old-location: storage\mountmgr_drive_letter_information.htm
+old-project: storage
+ms.assetid: ad8dc740-c297-43e7-beb9-d93019955fd3
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: MOUNTMGR_DRIVE_LETTER_INFORMATION, _MOUNTMGR_DRIVE_LETTER_INFORMATION, MOUNTMGR_DRIVE_LETTER_INFORMATION structure [Storage Devices], storage.mountmgr_drive_letter_information, mountmgr/PMOUNTMGR_DRIVE_LETTER_INFORMATION, PMOUNTMGR_DRIVE_LETTER_INFORMATION structure pointer [Storage Devices], mountmgr/MOUNTMGR_DRIVE_LETTER_INFORMATION, structs-mntmgr_19ece61a-9dda-466c-a414-047d71beeb2c.xml, *PMOUNTMGR_DRIVE_LETTER_INFORMATION, PMOUNTMGR_DRIVE_LETTER_INFORMATION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: mountmgr.h
+req.include-header: Mountmgr.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	mountmgr.h
+apiname:
+-	MOUNTMGR_DRIVE_LETTER_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: "*PMOUNTMGR_DRIVE_LETTER_INFORMATION, MOUNTMGR_DRIVE_LETTER_INFORMATION"
 ---
 
 # _MOUNTMGR_DRIVE_LETTER_INFORMATION structure

@@ -1,41 +1,46 @@
 ---
-UID : NS:gnssdriver.GNSS_GEOFENCE_ALERT_DATA
-title : GNSS_GEOFENCE_ALERT_DATA
-author : windows-driver-content
-description : This structure is used by the GNSS engine to notify a geofence breach alert.
-old-location : sensors\gnss_geofence_alert_data.htm
-old-project : sensors
-ms.assetid : 4F7CBB1C-6D23-4015-8403-ABD06B9DC337
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : GNSS_GEOFENCE_ALERT_DATA, PGNSS_GEOFENCE_ALERT_DATA, PGNSS_GEOFENCE_ALERT_DATA structure pointer [Sensor Devices], *PGNSS_GEOFENCE_ALERT_DATA, gnssdriver/PGNSS_GEOFENCE_ALERT_DATA, GNSS_GEOFENCE_ALERT_DATA structure [Sensor Devices], gnssdriver/GNSS_GEOFENCE_ALERT_DATA, sensors.gnss_geofence_alert_data
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : gnssdriver.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : GNSS_GEOFENCE_ALERT_DATA, *PGNSS_GEOFENCE_ALERT_DATA
+UID: NS:gnssdriver.GNSS_GEOFENCE_ALERT_DATA
+title: GNSS_GEOFENCE_ALERT_DATA
+author: windows-driver-content
+description: This structure is used by the GNSS engine to notify a geofence breach alert.
+old-location: sensors\gnss_geofence_alert_data.htm
+old-project: sensors
+ms.assetid: 4F7CBB1C-6D23-4015-8403-ABD06B9DC337
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: GNSS_GEOFENCE_ALERT_DATA, PGNSS_GEOFENCE_ALERT_DATA, PGNSS_GEOFENCE_ALERT_DATA structure pointer [Sensor Devices], *PGNSS_GEOFENCE_ALERT_DATA, gnssdriver/PGNSS_GEOFENCE_ALERT_DATA, GNSS_GEOFENCE_ALERT_DATA structure [Sensor Devices], gnssdriver/GNSS_GEOFENCE_ALERT_DATA, sensors.gnss_geofence_alert_data
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: gnssdriver.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	gnssdriver.h
+apiname:
+-	GNSS_GEOFENCE_ALERT_DATA
+product: Windows
+targetos: Windows
+req.typenames: GNSS_GEOFENCE_ALERT_DATA, *PGNSS_GEOFENCE_ALERT_DATA
 ---
 
 # GNSS_GEOFENCE_ALERT_DATA structure

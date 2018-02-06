@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dukmdt.D3DDDI_DESTROYPAGINGQUEUE
-title : D3DDDI_DESTROYPAGINGQUEUE
-author : windows-driver-content
-description : D3DDDI_DESTROYPAGINGQUEUE is used with pfnDestroyPagingQueueCb and D3DKMTDestroyPagingQueue to wait for a paging queue to finish all operations queued to it and destroy it along with the associated sync object.
-old-location : display\d3dddi_destroypagingqueue.htm
-old-project : display
-ms.assetid : CBCE6C4C-C713-4ED3-9C40-30F9D8C2406D
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3dukmdt/D3DDDI_DESTROYPAGINGQUEUE, D3DDDI_DESTROYPAGINGQUEUE, D3DDDI_DESTROYPAGINGQUEUE structure [Display Devices], display.d3dddi_destroypagingqueue
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dukmdt.h
-req.include-header : D3dumddi.h, D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDI_DESTROYPAGINGQUEUE
+UID: NS:d3dukmdt.D3DDDI_DESTROYPAGINGQUEUE
+title: D3DDDI_DESTROYPAGINGQUEUE
+author: windows-driver-content
+description: D3DDDI_DESTROYPAGINGQUEUE is used with pfnDestroyPagingQueueCb and D3DKMTDestroyPagingQueue to wait for a paging queue to finish all operations queued to it and destroy it along with the associated sync object.
+old-location: display\d3dddi_destroypagingqueue.htm
+old-project: display
+ms.assetid: CBCE6C4C-C713-4ED3-9C40-30F9D8C2406D
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3dukmdt/D3DDDI_DESTROYPAGINGQUEUE, D3DDDI_DESTROYPAGINGQUEUE, D3DDDI_DESTROYPAGINGQUEUE structure [Display Devices], display.d3dddi_destroypagingqueue
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dukmdt.h
+req.include-header: D3dumddi.h, D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dukmdt.h
+apiname:
+-	D3DDDI_DESTROYPAGINGQUEUE
+product: Windows
+targetos: Windows
+req.typenames: D3DDDI_DESTROYPAGINGQUEUE
 ---
 
 # D3DDDI_DESTROYPAGINGQUEUE structure

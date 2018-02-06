@@ -1,12 +1,12 @@
 ---
-UID : NA:nfcradiodev
-ms.assetid : a2e40268-54ff-3618-9467-4f9e48215b04
-ms.author : windowsdriverdev
-ms.date : 01/18/18
-ms.keywords : 
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : portal
+UID: NA:nfcradiodev
+ms.assetid: a2e40268-54ff-3618-9467-4f9e48215b04
+ms.author: windowsdriverdev
+ms.date: 01/18/18
+ms.keywords: 
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: portal
 ---
 
 # nfcradiodev.h header

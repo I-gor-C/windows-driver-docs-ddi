@@ -1,42 +1,47 @@
 ---
-UID : NC:wdfinterrupt.EVT_WDF_INTERRUPT_SYNCHRONIZE
-title : EVT_WDF_INTERRUPT_SYNCHRONIZE
-author : windows-driver-content
-description : A driver's EvtInterruptSynchronize event callback function performs operations that must be synchronized with an EvtInterruptIsr callback function.
-old-location : wdf\evtinterruptsynchronize.htm
-old-project : wdf
-ms.assetid : ac73b23d-7742-43a4-8950-b301bd0ba330
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.evtinterruptsynchronize, EvtInterruptSynchronize callback function, EvtInterruptSynchronize, EVT_WDF_INTERRUPT_SYNCHRONIZE, EVT_WDF_INTERRUPT_SYNCHRONIZE, wdfinterrupt/EvtInterruptSynchronize, DFInterruptObjectRef_4310d770-645e-48c8-bd33-b9edcc8cb667.xml, kmdf.evtinterruptsynchronize
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdfinterrupt.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "(See Remarks section.)"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDF_COINSTALLER_INSTALL_OPTIONS, WDF_COINSTALLER_INSTALL_OPTIONS"
-req.product : Windows 10 or later.
+UID: NC:wdfinterrupt.EVT_WDF_INTERRUPT_SYNCHRONIZE
+title: EVT_WDF_INTERRUPT_SYNCHRONIZE
+author: windows-driver-content
+description: A driver's EvtInterruptSynchronize event callback function performs operations that must be synchronized with an EvtInterruptIsr callback function.
+old-location: wdf\evtinterruptsynchronize.htm
+old-project: wdf
+ms.assetid: ac73b23d-7742-43a4-8950-b301bd0ba330
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.evtinterruptsynchronize, EvtInterruptSynchronize callback function, EvtInterruptSynchronize, EVT_WDF_INTERRUPT_SYNCHRONIZE, EVT_WDF_INTERRUPT_SYNCHRONIZE, wdfinterrupt/EvtInterruptSynchronize, DFInterruptObjectRef_4310d770-645e-48c8-bd33-b9edcc8cb667.xml, kmdf.evtinterruptsynchronize
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdfinterrupt.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "(See Remarks section.)"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Wdfinterrupt.h
+apiname:
+-	EvtInterruptSynchronize
+product: Windows
+targetos: Windows
+req.typenames: "*PWDF_COINSTALLER_INSTALL_OPTIONS, WDF_COINSTALLER_INSTALL_OPTIONS"
+req.product: Windows 10 or later.
 ---
 
 

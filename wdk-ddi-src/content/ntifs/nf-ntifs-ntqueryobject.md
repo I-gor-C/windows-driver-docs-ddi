@@ -1,41 +1,47 @@
 ---
-UID : NF:ntifs.NtQueryObject
-title : NtQueryObject function
-author : windows-driver-content
-description : The ZwQueryObject routine provides information about a supplied object.
-old-location : kernel\zwqueryobject.htm
-old-project : kernel
-ms.assetid : 439658a5-d2db-4a31-a1eb-b8943c40cc96
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : k111_54a1efe7-3cf8-46b3-bbb5-9e7520ba459d.xml, ZwQueryObject, kernel.zwqueryobject, ZwQueryObject routine [Kernel-Mode Driver Architecture], NtQueryObject, ntifs/NtQueryObject, ntifs/ZwQueryObject
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h, FltKernel.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.NtQueryObject
+title: NtQueryObject function
+author: windows-driver-content
+description: The ZwQueryObject routine provides information about a supplied object.
+old-location: kernel\zwqueryobject.htm
+old-project: kernel
+ms.assetid: 439658a5-d2db-4a31-a1eb-b8943c40cc96
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: k111_54a1efe7-3cf8-46b3-bbb5-9e7520ba459d.xml, ZwQueryObject, kernel.zwqueryobject, ZwQueryObject routine [Kernel-Mode Driver Architecture], NtQueryObject, ntifs/NtQueryObject, ntifs/ZwQueryObject
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h, FltKernel.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ZwQueryObject
+-	NtQueryObject
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

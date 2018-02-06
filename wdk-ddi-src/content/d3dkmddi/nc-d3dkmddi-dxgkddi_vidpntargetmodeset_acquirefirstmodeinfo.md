@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dkmddi.DXGKDDI_VIDPNTARGETMODESET_ACQUIREFIRSTMODEINFO
-title : DXGKDDI_VIDPNTARGETMODESET_ACQUIREFIRSTMODEINFO
-author : windows-driver-content
-description : The pfnAcquireFirstModeInfo function returns a descriptor of the first mode in a specified VidPN target mode set.
-old-location : display\dxgk_vidpntargetmodeset_interface_pfnacquirefirstmodeinfo.htm
-old-project : display
-ms.assetid : 64a1a8f4-afbc-4337-b809-9346c1171e0b
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgk_vidpntargetmodeset_interface_pfnacquirefirstmodeinfo, pfnAcquireFirstModeInfo callback function [Display Devices], pfnAcquireFirstModeInfo, DXGKDDI_VIDPNTARGETMODESET_ACQUIREFIRSTMODEINFO, DXGKDDI_VIDPNTARGETMODESET_ACQUIREFIRSTMODEINFO, d3dkmddi/pfnAcquireFirstModeInfo, VidPnFunctions_b0ab2e5f-a78b-499a-9dac-528c5c847f02.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
+UID: NC:d3dkmddi.DXGKDDI_VIDPNTARGETMODESET_ACQUIREFIRSTMODEINFO
+title: DXGKDDI_VIDPNTARGETMODESET_ACQUIREFIRSTMODEINFO
+author: windows-driver-content
+description: The pfnAcquireFirstModeInfo function returns a descriptor of the first mode in a specified VidPN target mode set.
+old-location: display\dxgk_vidpntargetmodeset_interface_pfnacquirefirstmodeinfo.htm
+old-project: display
+ms.assetid: 64a1a8f4-afbc-4337-b809-9346c1171e0b
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgk_vidpntargetmodeset_interface_pfnacquirefirstmodeinfo, pfnAcquireFirstModeInfo callback function [Display Devices], pfnAcquireFirstModeInfo, DXGKDDI_VIDPNTARGETMODESET_ACQUIREFIRSTMODEINFO, DXGKDDI_VIDPNTARGETMODESET_ACQUIREFIRSTMODEINFO, d3dkmddi/pfnAcquireFirstModeInfo, VidPnFunctions_b0ab2e5f-a78b-499a-9dac-528c5c847f02.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	pfnAcquireFirstModeInfo
+product: Windows
+targetos: Windows
+req.typenames: DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
 

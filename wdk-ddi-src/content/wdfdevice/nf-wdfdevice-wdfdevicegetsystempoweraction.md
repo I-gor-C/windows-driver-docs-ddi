@@ -1,42 +1,50 @@
 ---
-UID : NF:wdfdevice.WdfDeviceGetSystemPowerAction
-title : WdfDeviceGetSystemPowerAction function
-author : windows-driver-content
-description : The WdfDeviceGetSystemPowerAction method returns the system power action, if any, that is currently occurring for the computer.
-old-location : wdf\wdfdevicegetsystempoweraction.htm
-old-project : wdf
-ms.assetid : 5c4e44cd-94a3-4265-b195-7a5711d8035d
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdfdevice/WdfDeviceGetSystemPowerAction, WdfDeviceGetSystemPowerAction, kmdf.wdfdevicegetsystempoweraction, PFN_WDFDEVICEGETSYSTEMPOWERACTION, wdf.wdfdevicegetsystempoweraction, WdfDeviceGetSystemPowerAction method, DFDeviceObjectGeneralRef_605cddb8-470b-4d71-8a6e-295e060ea3e3.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfdevice.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.9
-req.umdf-ver : 2.0
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_STATE_NOTIFICATION_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfdevice.WdfDeviceGetSystemPowerAction
+title: WdfDeviceGetSystemPowerAction function
+author: windows-driver-content
+description: The WdfDeviceGetSystemPowerAction method returns the system power action, if any, that is currently occurring for the computer.
+old-location: wdf\wdfdevicegetsystempoweraction.htm
+old-project: wdf
+ms.assetid: 5c4e44cd-94a3-4265-b195-7a5711d8035d
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdfdevice/WdfDeviceGetSystemPowerAction, WdfDeviceGetSystemPowerAction, kmdf.wdfdevicegetsystempoweraction, PFN_WDFDEVICEGETSYSTEMPOWERACTION, wdf.wdfdevicegetsystempoweraction, WdfDeviceGetSystemPowerAction method, DFDeviceObjectGeneralRef_605cddb8-470b-4d71-8a6e-295e060ea3e3.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfdevice.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.9
+req.umdf-ver: 2.0
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+-	WUDFx02000.dll
+-	WUDFx02000.dll.dll
+apiname:
+-	WdfDeviceGetSystemPowerAction
+product: Windows
+targetos: Windows
+req.typenames: WDF_STATE_NOTIFICATION_TYPE
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NN:printerextension.IPrinterScriptablePropertyBag
-title : IPrinterScriptablePropertyBag
-author : windows-driver-content
-description : The IPrinterScriptablePropertyBag interface is the property bag interface passed to script clients.
-old-location : print\iprinterscriptablepropertybag.htm
-old-project : print
-ms.assetid : E6F48895-7ED6-479B-BF16-42192461C56D
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : print.iprinterscriptablepropertybag, IPrinterScriptablePropertyBag interface [Print Devices], IPrinterScriptablePropertyBag interface [Print Devices], described, IPrinterScriptablePropertyBag, printerextension/IPrinterScriptablePropertyBag
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : printerextension.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : printerextension.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PrintSchemaSelectionType
-req.product : Windows 10 or later.
+UID: NN:printerextension.IPrinterScriptablePropertyBag
+title: IPrinterScriptablePropertyBag
+author: windows-driver-content
+description: The IPrinterScriptablePropertyBag interface is the property bag interface passed to script clients.
+old-location: print\iprinterscriptablepropertybag.htm
+old-project: print
+ms.assetid: E6F48895-7ED6-479B-BF16-42192461C56D
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: print.iprinterscriptablepropertybag, IPrinterScriptablePropertyBag interface [Print Devices], IPrinterScriptablePropertyBag interface [Print Devices], described, IPrinterScriptablePropertyBag, printerextension/IPrinterScriptablePropertyBag
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: printerextension.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: printerextension.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Printerextension.h
+apiname:
+-	IPrinterScriptablePropertyBag
+product: Windows
+targetos: Windows
+req.typenames: PrintSchemaSelectionType
+req.product: Windows 10 or later.
 ---
 
 # IPrinterScriptablePropertyBag interface

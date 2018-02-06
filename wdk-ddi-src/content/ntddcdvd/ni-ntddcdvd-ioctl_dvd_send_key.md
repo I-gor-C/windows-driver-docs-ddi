@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddcdvd.IOCTL_DVD_SEND_KEY
-title : IOCTL_DVD_SEND_KEY
-author : windows-driver-content
-description : Sends the specified key to a DVD device to complete the related step in an authentication sequence.This IOCTL has only read access to the device and cannot send keys that make alterations to the hardware configuration.
-old-location : storage\ioctl_dvd_send_key.htm
-old-project : storage
-ms.assetid : 8db0e6fe-1dfc-4f26-8fd7-7d170c33da0a
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_dvd_send_key, IOCTL_DVD_SEND_KEY control code [Storage Devices], IOCTL_DVD_SEND_KEY, ntddcdvd/IOCTL_DVD_SEND_KEY, k307_9c0512f6-da79-4da0-a779-5a870ffe4b91.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddcdvd.h
-req.include-header : Ntddcdvd.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DVD_STRUCTURE_FORMAT, *PDVD_STRUCTURE_FORMAT
+UID: NI:ntddcdvd.IOCTL_DVD_SEND_KEY
+title: IOCTL_DVD_SEND_KEY
+author: windows-driver-content
+description: Sends the specified key to a DVD device to complete the related step in an authentication sequence.This IOCTL has only read access to the device and cannot send keys that make alterations to the hardware configuration.
+old-location: storage\ioctl_dvd_send_key.htm
+old-project: storage
+ms.assetid: 8db0e6fe-1dfc-4f26-8fd7-7d170c33da0a
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_dvd_send_key, IOCTL_DVD_SEND_KEY control code [Storage Devices], IOCTL_DVD_SEND_KEY, ntddcdvd/IOCTL_DVD_SEND_KEY, k307_9c0512f6-da79-4da0-a779-5a870ffe4b91.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddcdvd.h
+req.include-header: Ntddcdvd.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddcdvd.h
+apiname:
+-	IOCTL_DVD_SEND_KEY
+product: Windows
+targetos: Windows
+req.typenames: DVD_STRUCTURE_FORMAT, *PDVD_STRUCTURE_FORMAT
 ---
 
 # IOCTL_DVD_SEND_KEY IOCTL

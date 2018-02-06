@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.ObDereferenceObject
-title : ObDereferenceObject macro
-author : windows-driver-content
-description : The ObDereferenceObject routine decrements the given object's reference count and performs retention checks.
-old-location : kernel\obdereferenceobject.htm
-old-project : kernel
-ms.assetid : 8cd2d7ae-ebbe-41c6-8773-7a517bc6f714
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ObDereferenceObject, kernel.obdereferenceobject, wdm/ObDereferenceObject, ObDereferenceObject routine [Kernel-Mode Driver Architecture], k107_bc67abd9-66b2-4cd7-81c0-48ad0fa6c87d.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : macro
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h, Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 2000 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ObDereferenceObject
+title: ObDereferenceObject macro
+author: windows-driver-content
+description: The ObDereferenceObject routine decrements the given object's reference count and performs retention checks.
+old-location: kernel\obdereferenceobject.htm
+old-project: kernel
+ms.assetid: 8cd2d7ae-ebbe-41c6-8773-7a517bc6f714
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ObDereferenceObject, kernel.obdereferenceobject, wdm/ObDereferenceObject, ObDereferenceObject routine [Kernel-Mode Driver Architecture], k107_bc67abd9-66b2-4cd7-81c0-48ad0fa6c87d.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: macro
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h, Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 2000 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ObDereferenceObject
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

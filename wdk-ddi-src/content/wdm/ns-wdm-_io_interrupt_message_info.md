@@ -1,42 +1,47 @@
 ---
-UID : NS:wdm._IO_INTERRUPT_MESSAGE_INFO
-title : "_IO_INTERRUPT_MESSAGE_INFO"
-author : windows-driver-content
-description : The IO_INTERRUPT_MESSAGE_INFO structure describes the driver's message-signaled interrupts.
-old-location : kernel\io_interrupt_message_info.htm
-old-project : kernel
-ms.assetid : d740d55e-6549-494d-9b2a-39d5c2e670d3
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : PIO_INTERRUPT_MESSAGE_INFO, wdm/IO_INTERRUPT_MESSAGE_INFO, kernel.io_interrupt_message_info, IO_INTERRUPT_MESSAGE_INFO, IO_INTERRUPT_MESSAGE_INFO structure [Kernel-Mode Driver Architecture], _IO_INTERRUPT_MESSAGE_INFO, PIO_INTERRUPT_MESSAGE_INFO structure pointer [Kernel-Mode Driver Architecture], *PIO_INTERRUPT_MESSAGE_INFO, kstruct_b_e1d88b03-cc13-433c-b821-43315d776deb.xml, wdm/PIO_INTERRUPT_MESSAGE_INFO
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PIO_INTERRUPT_MESSAGE_INFO, IO_INTERRUPT_MESSAGE_INFO"
-req.product : Windows 10 or later.
+UID: NS:wdm._IO_INTERRUPT_MESSAGE_INFO
+title: "_IO_INTERRUPT_MESSAGE_INFO"
+author: windows-driver-content
+description: The IO_INTERRUPT_MESSAGE_INFO structure describes the driver's message-signaled interrupts.
+old-location: kernel\io_interrupt_message_info.htm
+old-project: kernel
+ms.assetid: d740d55e-6549-494d-9b2a-39d5c2e670d3
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: PIO_INTERRUPT_MESSAGE_INFO, wdm/IO_INTERRUPT_MESSAGE_INFO, kernel.io_interrupt_message_info, IO_INTERRUPT_MESSAGE_INFO, IO_INTERRUPT_MESSAGE_INFO structure [Kernel-Mode Driver Architecture], _IO_INTERRUPT_MESSAGE_INFO, PIO_INTERRUPT_MESSAGE_INFO structure pointer [Kernel-Mode Driver Architecture], *PIO_INTERRUPT_MESSAGE_INFO, kstruct_b_e1d88b03-cc13-433c-b821-43315d776deb.xml, wdm/PIO_INTERRUPT_MESSAGE_INFO
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	IO_INTERRUPT_MESSAGE_INFO
+product: Windows
+targetos: Windows
+req.typenames: "*PIO_INTERRUPT_MESSAGE_INFO, IO_INTERRUPT_MESSAGE_INFO"
+req.product: Windows 10 or later.
 ---
 
 # _IO_INTERRUPT_MESSAGE_INFO structure

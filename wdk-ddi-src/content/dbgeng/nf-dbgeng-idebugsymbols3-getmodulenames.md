@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugSymbols3.GetModuleNames
-title : IDebugSymbols3::GetModuleNames method
-author : windows-driver-content
-description : The GetModuleNames method returns the names of the specified module.
-old-location : debugger\getmodulenames.htm
-old-project : debugger
-ms.assetid : dd33f88a-91f6-4ea4-bb6b-6fb505676684
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : dbgeng/IDebugSymbols2::GetModuleNames, GetModuleNames method [Windows Debugging], IDebugSymbols3 interface, GetModuleNames method [Windows Debugging], IDebugSymbols2 interface, IDebugSymbols3 interface [Windows Debugging], GetModuleNames method, GetModuleNames method [Windows Debugging], dbgeng/IDebugSymbols3::GetModuleNames, IDebugSymbols interface [Windows Debugging], GetModuleNames method, IDebugSymbols3, IDebugSymbols_b200104b-e0e6-4470-80f9-d6904c346737.xml, GetModuleNames, GetModuleNames method [Windows Debugging], IDebugSymbols interface, dbgeng/IDebugSymbols::GetModuleNames, IDebugSymbols2 interface [Windows Debugging], GetModuleNames method, IDebugSymbols2::GetModuleNames, IDebugSymbols::GetModuleNames, debugger.getmodulenames, IDebugSymbols3::GetModuleNames
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSymbols3.GetModuleNames
+title: IDebugSymbols3::GetModuleNames method
+author: windows-driver-content
+description: The GetModuleNames method returns the names of the specified module.
+old-location: debugger\getmodulenames.htm
+old-project: debugger
+ms.assetid: dd33f88a-91f6-4ea4-bb6b-6fb505676684
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: dbgeng/IDebugSymbols2::GetModuleNames, GetModuleNames method [Windows Debugging], IDebugSymbols3 interface, GetModuleNames method [Windows Debugging], IDebugSymbols2 interface, IDebugSymbols3 interface [Windows Debugging], GetModuleNames method, GetModuleNames method [Windows Debugging], dbgeng/IDebugSymbols3::GetModuleNames, IDebugSymbols interface [Windows Debugging], GetModuleNames method, IDebugSymbols3, IDebugSymbols_b200104b-e0e6-4470-80f9-d6904c346737.xml, GetModuleNames, GetModuleNames method [Windows Debugging], IDebugSymbols interface, dbgeng/IDebugSymbols::GetModuleNames, IDebugSymbols2 interface [Windows Debugging], GetModuleNames method, IDebugSymbols2::GetModuleNames, IDebugSymbols::GetModuleNames, debugger.getmodulenames, IDebugSymbols3::GetModuleNames
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugSymbols.GetModuleNames
+-	IDebugSymbols2.GetModuleNames
+-	IDebugSymbols3.GetModuleNames
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NI:lamp.IOCTL_LAMP_GET_CAPABILITIES_WHITE
-title : IOCTL_LAMP_GET_CAPABILITIES_WHITE
-author : windows-driver-content
-description : The IOCTL_LAMP_GET_CAPABILITIES_WHITE control code queries the capabilities of the lamp when the device is configured to emit white light.
-old-location : stream\ioctl_lamp_get_capabilities_white.htm
-old-project : stream
-ms.assetid : F4A7CF9A-023F-42FC-A40C-E95964EC5392
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.ioctl_lamp_get_capabilities_white, IOCTL_LAMP_GET_CAPABILITIES_WHITE control code [Streaming Media Devices], IOCTL_LAMP_GET_CAPABILITIES_WHITE, lamp/IOCTL_LAMP_GET_CAPABILITIES_WHITE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : lamp.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : LAMP_MODE
+UID: NI:lamp.IOCTL_LAMP_GET_CAPABILITIES_WHITE
+title: IOCTL_LAMP_GET_CAPABILITIES_WHITE
+author: windows-driver-content
+description: The IOCTL_LAMP_GET_CAPABILITIES_WHITE control code queries the capabilities of the lamp when the device is configured to emit white light.
+old-location: stream\ioctl_lamp_get_capabilities_white.htm
+old-project: stream
+ms.assetid: F4A7CF9A-023F-42FC-A40C-E95964EC5392
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.ioctl_lamp_get_capabilities_white, IOCTL_LAMP_GET_CAPABILITIES_WHITE control code [Streaming Media Devices], IOCTL_LAMP_GET_CAPABILITIES_WHITE, lamp/IOCTL_LAMP_GET_CAPABILITIES_WHITE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: lamp.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	lamp.h
+apiname:
+-	IOCTL_LAMP_GET_CAPABILITIES_WHITE
+product: Windows
+targetos: Windows
+req.typenames: LAMP_MODE
 ---
 
 # IOCTL_LAMP_GET_CAPABILITIES_WHITE IOCTL

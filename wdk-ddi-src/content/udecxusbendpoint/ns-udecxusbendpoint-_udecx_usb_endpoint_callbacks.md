@@ -1,42 +1,47 @@
 ---
-UID : NS:udecxusbendpoint._UDECX_USB_ENDPOINT_CALLBACKS
-title : "_UDECX_USB_ENDPOINT_CALLBACKS"
-author : windows-driver-content
-description : Contains function pointers to endpoint callback functions implemented by the UDE client driver. Initialize this structure by calling UDECX_USB_ENDPOINT_CALLBACKS_INIT.
-old-location : buses\udecx_usb_endpoint_callbacks.htm
-old-project : usbref
-ms.assetid : 5AAB4474-9FDF-4ACF-AC38-F84D2682B5E0
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : buses.udecx_usb_endpoint_callbacks, UDECX_USB_ENDPOINT_CALLBACKS, *PUDECX_USB_ENDPOINT_CALLBACKS, PUDECX_USB_ENDPOINT_CALLBACKS structure pointer [Buses], _UDECX_USB_ENDPOINT_CALLBACKS, UDECX_USB_ENDPOINT_CALLBACKS structure [Buses], PUDECX_USB_ENDPOINT_CALLBACKS, udecxusbendpoint/UDECX_USB_ENDPOINT_CALLBACKS, udecxusbendpoint/PUDECX_USB_ENDPOINT_CALLBACKS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : udecxusbendpoint.h
-req.include-header : Udecx.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUDECX_USB_ENDPOINT_CALLBACKS, UDECX_USB_ENDPOINT_CALLBACKS"
-req.product : Windows 10 or later.
+UID: NS:udecxusbendpoint._UDECX_USB_ENDPOINT_CALLBACKS
+title: "_UDECX_USB_ENDPOINT_CALLBACKS"
+author: windows-driver-content
+description: Contains function pointers to endpoint callback functions implemented by the UDE client driver. Initialize this structure by calling UDECX_USB_ENDPOINT_CALLBACKS_INIT.
+old-location: buses\udecx_usb_endpoint_callbacks.htm
+old-project: usbref
+ms.assetid: 5AAB4474-9FDF-4ACF-AC38-F84D2682B5E0
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: buses.udecx_usb_endpoint_callbacks, UDECX_USB_ENDPOINT_CALLBACKS, *PUDECX_USB_ENDPOINT_CALLBACKS, PUDECX_USB_ENDPOINT_CALLBACKS structure pointer [Buses], _UDECX_USB_ENDPOINT_CALLBACKS, UDECX_USB_ENDPOINT_CALLBACKS structure [Buses], PUDECX_USB_ENDPOINT_CALLBACKS, udecxusbendpoint/UDECX_USB_ENDPOINT_CALLBACKS, udecxusbendpoint/PUDECX_USB_ENDPOINT_CALLBACKS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: udecxusbendpoint.h
+req.include-header: Udecx.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	udecxusbendpoint.h
+apiname:
+-	UDECX_USB_ENDPOINT_CALLBACKS
+product: Windows
+targetos: Windows
+req.typenames: "*PUDECX_USB_ENDPOINT_CALLBACKS, UDECX_USB_ENDPOINT_CALLBACKS"
+req.product: Windows 10 or later.
 ---
 
 # _UDECX_USB_ENDPOINT_CALLBACKS structure

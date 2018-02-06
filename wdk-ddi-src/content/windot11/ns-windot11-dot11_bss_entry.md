@@ -1,42 +1,47 @@
 ---
-UID : NS:windot11.DOT11_BSS_ENTRY
-title : DOT11_BSS_ENTRY
-author : windows-driver-content
-description : Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
-old-location : netvista\dot11_bss_entry.htm
-old-project : netvista
-ms.assetid : 50661fc9-2f1f-4c9a-bc15-1cdf7c1f6d01
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : windot11/PDOT11_BSS_ENTRY, netvista.dot11_bss_entry, DOT11_BSS_ENTRY structure [Network Drivers Starting with Windows Vista], PDOT11_BSS_ENTRY structure pointer [Network Drivers Starting with Windows Vista], windot11/DOT11_BSS_ENTRY, PDOT11_BSS_ENTRY, DOT11_BSS_ENTRY, Native_802.11_data_types_f884f12d-d267-4ae3-b632-6c318b515880.xml, *PDOT11_BSS_ENTRY
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : windot11.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating   systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT11_BSS_ENTRY, *PDOT11_BSS_ENTRY
-req.product : Windows 10 or later.
+UID: NS:windot11.DOT11_BSS_ENTRY
+title: DOT11_BSS_ENTRY
+author: windows-driver-content
+description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+old-location: netvista\dot11_bss_entry.htm
+old-project: netvista
+ms.assetid: 50661fc9-2f1f-4c9a-bc15-1cdf7c1f6d01
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: windot11/PDOT11_BSS_ENTRY, netvista.dot11_bss_entry, DOT11_BSS_ENTRY structure [Network Drivers Starting with Windows Vista], PDOT11_BSS_ENTRY structure pointer [Network Drivers Starting with Windows Vista], windot11/DOT11_BSS_ENTRY, PDOT11_BSS_ENTRY, DOT11_BSS_ENTRY, Native_802.11_data_types_f884f12d-d267-4ae3-b632-6c318b515880.xml, *PDOT11_BSS_ENTRY
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: windot11.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	windot11.h
+apiname:
+-	DOT11_BSS_ENTRY
+product: Windows
+targetos: Windows
+req.typenames: DOT11_BSS_ENTRY, *PDOT11_BSS_ENTRY
+req.product: Windows 10 or later.
 ---
 
 # DOT11_BSS_ENTRY structure

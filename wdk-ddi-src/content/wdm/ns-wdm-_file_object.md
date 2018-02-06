@@ -1,42 +1,47 @@
 ---
-UID : NS:wdm._FILE_OBJECT
-title : "_FILE_OBJECT"
-author : windows-driver-content
-description : The Common Log File System (CLFS) uses the LOG_FILE_OBJECT structure to represent logs.
-old-location : kernel\log_file_object.htm
-old-project : kernel
-ms.assetid : 6eefdbbb-59de-4cc8-a309-8353a05cba41
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : LOG_FILE_OBJECT structure [Kernel-Mode Driver Architecture], FILE_OBJECT, kstruct_c_4e9e4766-1e68-4972-92c4-3d13cdbc4cb2.xml, *PLOG_FILE_OBJECT, *PFILE_OBJECT, wdm/LOG_FILE_OBJECT, kernel.log_file_object, _FILE_OBJECT, LOG_FILE_OBJECT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PFILE_OBJECT, FILE_OBJECT"
-req.product : Windows 10 or later.
+UID: NS:wdm._FILE_OBJECT
+title: "_FILE_OBJECT"
+author: windows-driver-content
+description: The Common Log File System (CLFS) uses the LOG_FILE_OBJECT structure to represent logs.
+old-location: kernel\log_file_object.htm
+old-project: kernel
+ms.assetid: 6eefdbbb-59de-4cc8-a309-8353a05cba41
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: LOG_FILE_OBJECT structure [Kernel-Mode Driver Architecture], FILE_OBJECT, kstruct_c_4e9e4766-1e68-4972-92c4-3d13cdbc4cb2.xml, *PLOG_FILE_OBJECT, *PFILE_OBJECT, wdm/LOG_FILE_OBJECT, kernel.log_file_object, _FILE_OBJECT, LOG_FILE_OBJECT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	LOG_FILE_OBJECT
+product: Windows
+targetos: Windows
+req.typenames: "*PFILE_OBJECT, FILE_OBJECT"
+req.product: Windows 10 or later.
 ---
 
 # _FILE_OBJECT structure

@@ -1,42 +1,47 @@
 ---
-UID : NE:wlantypes._DOT11_AUTH_ALGORITHM
-title : "_DOT11_AUTH_ALGORITHM"
-author : windows-driver-content
-description : Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
-old-location : netvista\dot11_auth_algorithm.htm
-old-project : netvista
-ms.assetid : 27bba553-2d46-4892-864a-52e44caf6d56
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : wlantypes/DOT11_AUTH_ALGO_RSNA_PSK, *PDOT11_AUTH_ALGORITHM, DOT11_AUTH_ALGORITHM, wlantypes/DOT11_AUTH_ALGO_WPA_NONE, DOT11_AUTH_ALGO_IHV_START, wlantypes/DOT11_AUTH_ALGO_RSNA, PDOT11_AUTH_ALGORITHM enumeration pointer [Network Drivers Starting with Windows Vista], wlantypes/DOT11_AUTH_ALGO_WPA, DOT11_AUTH_ALGO_IHV_END, DOT11_AUTH_ALGO_80211_OPEN, wlantypes/DOT11_AUTH_ALGO_IHV_END, _DOT11_AUTH_ALGORITHM, DOT11_AUTH_ALGO_80211_SHARED_KEY, Native_802.11_data_types_e6d2770c-b7fd-467c-a94e-b2f77a515e76.xml, DOT11_AUTH_ALGO_WPA_PSK, DOT11_AUTH_ALGO_RSNA, DOT11_AUTH_ALGO_WPA_NONE, DOT11_AUTH_ALGORITHM enumeration [Network Drivers Starting with Windows Vista], wlantypes/DOT11_AUTH_ALGO_WPA_PSK, DOT11_AUTH_ALGO_RSNA_PSK, netvista.dot11_auth_algorithm, wlantypes/DOT11_AUTH_ALGORITHM, DOT11_AUTH_ALGO_WPA, PDOT11_AUTH_ALGORITHM, wlantypes/DOT11_AUTH_ALGO_80211_OPEN, wlantypes/PDOT11_AUTH_ALGORITHM, wlantypes/DOT11_AUTH_ALGO_80211_SHARED_KEY, wlantypes/DOT11_AUTH_ALGO_IHV_START
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : wlantypes.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating   systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDOT11_AUTH_ALGORITHM, DOT11_AUTH_ALGORITHM"
-req.product : Windows 10 or later.
+UID: NE:wlantypes._DOT11_AUTH_ALGORITHM
+title: "_DOT11_AUTH_ALGORITHM"
+author: windows-driver-content
+description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+old-location: netvista\dot11_auth_algorithm.htm
+old-project: netvista
+ms.assetid: 27bba553-2d46-4892-864a-52e44caf6d56
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: wlantypes/DOT11_AUTH_ALGO_RSNA_PSK, *PDOT11_AUTH_ALGORITHM, DOT11_AUTH_ALGORITHM, wlantypes/DOT11_AUTH_ALGO_WPA_NONE, DOT11_AUTH_ALGO_IHV_START, wlantypes/DOT11_AUTH_ALGO_RSNA, PDOT11_AUTH_ALGORITHM enumeration pointer [Network Drivers Starting with Windows Vista], wlantypes/DOT11_AUTH_ALGO_WPA, DOT11_AUTH_ALGO_IHV_END, DOT11_AUTH_ALGO_80211_OPEN, wlantypes/DOT11_AUTH_ALGO_IHV_END, _DOT11_AUTH_ALGORITHM, DOT11_AUTH_ALGO_80211_SHARED_KEY, Native_802.11_data_types_e6d2770c-b7fd-467c-a94e-b2f77a515e76.xml, DOT11_AUTH_ALGO_WPA_PSK, DOT11_AUTH_ALGO_RSNA, DOT11_AUTH_ALGO_WPA_NONE, DOT11_AUTH_ALGORITHM enumeration [Network Drivers Starting with Windows Vista], wlantypes/DOT11_AUTH_ALGO_WPA_PSK, DOT11_AUTH_ALGO_RSNA_PSK, netvista.dot11_auth_algorithm, wlantypes/DOT11_AUTH_ALGORITHM, DOT11_AUTH_ALGO_WPA, PDOT11_AUTH_ALGORITHM, wlantypes/DOT11_AUTH_ALGO_80211_OPEN, wlantypes/PDOT11_AUTH_ALGORITHM, wlantypes/DOT11_AUTH_ALGO_80211_SHARED_KEY, wlantypes/DOT11_AUTH_ALGO_IHV_START
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: wlantypes.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wlantypes.h
+apiname:
+-	DOT11_AUTH_ALGORITHM
+product: Windows
+targetos: Windows
+req.typenames: "*PDOT11_AUTH_ALGORITHM, DOT11_AUTH_ALGORITHM"
+req.product: Windows 10 or later.
 ---
 
 # _DOT11_AUTH_ALGORITHM Enumeration
@@ -60,43 +65,43 @@ typedef enum _DOT11_AUTH_ALGORITHM {
 ## Constants
 
 <table>
-
-<tr>
-<td>DOT11_AUTH_ALGO_80211_OPEN</td>
-<td>Specifies an IEEE 802.11 Open System authentication algorithm.</td>
-</tr>
-
-<tr>
-<td>DOT11_AUTH_ALGO_80211_SHARED_KEY</td>
-<td>Specifies an IEEE 802.11 Shared Key authentication algorithm that requires the use of a pre-shared
+            
+                <tr>
+                    <td>DOT11_AUTH_ALGO_80211_OPEN</td>
+                    <td>Specifies an IEEE 802.11 Open System authentication algorithm.</td>
+                </tr>
+            
+                <tr>
+                    <td>DOT11_AUTH_ALGO_80211_SHARED_KEY</td>
+                    <td>Specifies an IEEE 802.11 Shared Key authentication algorithm that requires the use of a pre-shared
      Wired Equivalent Privacy (WEP) key for the 802.11 authentication.</td>
-</tr>
-
-<tr>
-<td>DOT11_AUTH_ALGO_IHV_END</td>
-<td>Specifies the end of the range that specifies proprietary authentication algorithms that are
+                </tr>
+            
+                <tr>
+                    <td>DOT11_AUTH_ALGO_IHV_END</td>
+                    <td>Specifies the end of the range that specifies proprietary authentication algorithms that are
      developed by an IHV.
      
 
 The 
      DOT11_AUTH_ALGO_IHV_END enumerator is valid only when the miniport driver is operating in ExtSTA
      mode.</td>
-</tr>
-
-<tr>
-<td>DOT11_AUTH_ALGO_IHV_START</td>
-<td>Specifies the start of the range that specifies proprietary authentication algorithms that are
+                </tr>
+            
+                <tr>
+                    <td>DOT11_AUTH_ALGO_IHV_START</td>
+                    <td>Specifies the start of the range that specifies proprietary authentication algorithms that are
      developed by an IHV.
      
 
 The 
      DOT11_AUTH_ALGO_IHV_START enumerator is valid only when the miniport driver is operating in
      Extensible Station (ExtSTA) mode.</td>
-</tr>
-
-<tr>
-<td>DOT11_AUTH_ALGO_RSNA</td>
-<td>Specifies an IEEE 802.11i Robust Security Network Association (RSNA) algorithm. IEEE 802.1X port
+                </tr>
+            
+                <tr>
+                    <td>DOT11_AUTH_ALGO_RSNA</td>
+                    <td>Specifies an IEEE 802.11i Robust Security Network Association (RSNA) algorithm. IEEE 802.1X port
      authorization is performed by the supplicant, authenticator, and authentication server. Cipher keys are
      dynamically derived through the authentication process.
      
@@ -107,11 +112,11 @@ This algorithm is valid only for BSS types of
 When the RSNA algorithm is enabled, the 802.11 station will associate only with an access point whose
      beacon or probe responses contain the authentication suite of type 1 (802.1X) within the Robust Security
      Network (RSN) IE.</td>
-</tr>
-
-<tr>
-<td>DOT11_AUTH_ALGO_RSNA_PSK</td>
-<td>Specifies an IEEE 802.11i RSNA algorithm that uses PSK. IEEE 802.1X port authorization is
+                </tr>
+            
+                <tr>
+                    <td>DOT11_AUTH_ALGO_RSNA_PSK</td>
+                    <td>Specifies an IEEE 802.11i RSNA algorithm that uses PSK. IEEE 802.1X port authorization is
      performed by the supplicant and authenticator. Cipher keys are dynamically derived through a pre-shared
      key that is used on both the supplicant and authenticator.
      
@@ -119,11 +124,11 @@ When the RSNA algorithm is enabled, the 802.11 station will associate only with 
 When the RSNA PSK algorithm is enabled, the 802.11 station will associate only with an access point
      whose beacon or probe responses contain the authentication suite of type 2 (preshared key) within the
      RSN IE.</td>
-</tr>
-
-<tr>
-<td>DOT11_AUTH_ALGO_WPA</td>
-<td>Specifies a Wi-Fi Protected Access (WPA) algorithm. IEEE 802.1X port authorization is performed by
+                </tr>
+            
+                <tr>
+                    <td>DOT11_AUTH_ALGO_WPA</td>
+                    <td>Specifies a Wi-Fi Protected Access (WPA) algorithm. IEEE 802.1X port authorization is performed by
      the supplicant, authenticator, and authentication server. Cipher keys are dynamically derived through
      the authentication process. 
      
@@ -134,16 +139,16 @@ This algorithm is valid only for basic service set (BSS) types of
 When the WPA algorithm is enabled, the 802.11 station associates only with an access point whose
      beacon or probe responses contain the authentication suite of type 1 (802.1X) within the WPA information
      element (IE).</td>
-</tr>
-
-<tr>
-<td>DOT11_AUTH_ALGO_WPA_NONE</td>
-<td>This value is not supported.</td>
-</tr>
-
-<tr>
-<td>DOT11_AUTH_ALGO_WPA_PSK</td>
-<td>Specifies a Wi-Fi Protected Access (WPA) algorithm that uses preshared keys (PSK). IEEE 802.1X
+                </tr>
+            
+                <tr>
+                    <td>DOT11_AUTH_ALGO_WPA_NONE</td>
+                    <td>This value is not supported.</td>
+                </tr>
+            
+                <tr>
+                    <td>DOT11_AUTH_ALGO_WPA_PSK</td>
+                    <td>Specifies a Wi-Fi Protected Access (WPA) algorithm that uses preshared keys (PSK). IEEE 802.1X
      port authorization is performed by the supplicant and authenticator. Cipher keys are dynamically derived
      through a preshared key that is used on both the supplicant and authenticator. 
      
@@ -154,17 +159,17 @@ This algorithm is valid only for BSS types of
 When the WPA PSK algorithm is enabled, the 802.11 station will associate only with an access point
      whose beacon or probe responses contain the authentication suite of type 2 (preshared key) within the
      WPA IE.</td>
-</tr>
-
-<tr>
-<td>v1_enum</td>
-<td></td>
-</tr>
+                </tr>
+            
+                <tr>
+                    <td>v1_enum</td>
+                    <td></td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-An IHV can assign a value for its proprietary authentication algorithms from 
+        An IHV can assign a value for its proprietary authentication algorithms from 
     DOT11_AUTH_ALGO_IHV_START through 
     DOT11_AUTH_ALGO_IHV_END. The IHV must assign a unique number from this range for each of its
     proprietary authentication algorithms.
@@ -197,9 +202,9 @@ If WPS is enabled on a NIC that is operating in Extensible AP mode, the miniport
 | **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems. Available in Windows Vista and later versions of the Windows operating   systems. |
 | **Header** | wlantypes.h (include Ndis.h) |
 
-## See Also
+    ## See Also
 
-<a href="https://msdn.microsoft.com/en-us/library/gg159168.aspx">
+        <a href="https://msdn.microsoft.com/en-us/library/gg159168.aspx">
    OID_DOT11_ENABLED_AUTHENTICATION_ALGORITHM</a>
 
 <a href="..\wlantypes\ns-wlantypes-dot11_auth_cipher_pair.md">DOT11_AUTH_CIPHER_PAIR</a>

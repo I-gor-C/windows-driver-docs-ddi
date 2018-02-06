@@ -1,42 +1,47 @@
 ---
-UID : NS:srb._SRBEX_DATA_IO_INFO
-title : "_SRBEX_DATA_IO_INFO"
-author : windows-driver-content
-description : The SRBEX_DATA_IO_INFO structure contains additional information related to a read or write request in an extended SRB.
-old-location : storage\srbex_data_io_info.htm
-old-project : storage
-ms.assetid : D4B99D6F-0A0C-49CE-A8E2-19C1A835EDA6
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.srbex_data_io_info, SRBEX_DATA_IO_INFO structure [Storage Devices], storport/PSRBEX_DATA_IO_INFO, REQUEST_INFO_VALID_CACHEPRIORITY_FLAG, PSRBEX_DATA_IO_INFO structure pointer [Storage Devices], REQUEST_INFO_TEMPORARY_FLAG, storport/SRBEX_DATA_IO_INFO, PSRBEX_DATA_IO_INFO, REQUEST_INFO_HYBRID_WRITE_THROUGH_FLAG, REQUEST_INFO_SEQUENTIAL_IO_FLAG, REQUEST_INFO_WRITE_THROUGH_FLAG, REQUEST_INFO_NO_CACHE_FLAG, *PSRBEX_DATA_IO_INFO, REQUEST_INFO_PAGING_IO_FLAG, SRBEX_DATA_IO_INFO, _SRBEX_DATA_IO_INFO
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : srb.h
-req.include-header : Storport.h, Srb.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SRBEX_DATA_IO_INFO, *PSRBEX_DATA_IO_INFO
-req.product : Windows 10 or later.
+UID: NS:srb._SRBEX_DATA_IO_INFO
+title: "_SRBEX_DATA_IO_INFO"
+author: windows-driver-content
+description: The SRBEX_DATA_IO_INFO structure contains additional information related to a read or write request in an extended SRB.
+old-location: storage\srbex_data_io_info.htm
+old-project: storage
+ms.assetid: D4B99D6F-0A0C-49CE-A8E2-19C1A835EDA6
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.srbex_data_io_info, SRBEX_DATA_IO_INFO structure [Storage Devices], storport/PSRBEX_DATA_IO_INFO, REQUEST_INFO_VALID_CACHEPRIORITY_FLAG, PSRBEX_DATA_IO_INFO structure pointer [Storage Devices], REQUEST_INFO_TEMPORARY_FLAG, storport/SRBEX_DATA_IO_INFO, PSRBEX_DATA_IO_INFO, REQUEST_INFO_HYBRID_WRITE_THROUGH_FLAG, REQUEST_INFO_SEQUENTIAL_IO_FLAG, REQUEST_INFO_WRITE_THROUGH_FLAG, REQUEST_INFO_NO_CACHE_FLAG, *PSRBEX_DATA_IO_INFO, REQUEST_INFO_PAGING_IO_FLAG, SRBEX_DATA_IO_INFO, _SRBEX_DATA_IO_INFO
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: srb.h
+req.include-header: Storport.h, Srb.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Storport.h
+apiname:
+-	SRBEX_DATA_IO_INFO
+product: Windows
+targetos: Windows
+req.typenames: SRBEX_DATA_IO_INFO, *PSRBEX_DATA_IO_INFO
+req.product: Windows 10 or later.
 ---
 
 # _SRBEX_DATA_IO_INFO structure

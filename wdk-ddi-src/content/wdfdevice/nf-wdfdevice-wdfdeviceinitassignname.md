@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfdevice.WdfDeviceInitAssignName
-title : WdfDeviceInitAssignName function
-author : windows-driver-content
-description : The WdfDeviceInitAssignName method assigns a device name to a device's device object.
-old-location : wdf\wdfdeviceinitassignname.htm
-old-project : wdf
-ms.assetid : 70b86a0f-a77d-4c79-931d-d0407083e5b0
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : PFN_WDFDEVICEINITASSIGNNAME, wdf.wdfdeviceinitassignname, WdfDeviceInitAssignName, wdfdevice/WdfDeviceInitAssignName, WdfDeviceInitAssignName method, DFDeviceObjectGeneralRef_1acdbff1-2eb9-425c-91c8-aaa51f585d56.xml, kmdf.wdfdeviceinitassignname
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfdevice.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : ChildDeviceInitAPI, ControlDeviceInitAPI, DeviceInitAPI, DriverCreate, InitFreeDeviceCallback, InitFreeDeviceCreate, InitFreeNull, KmdfIrql, KmdfIrql2, PdoDeviceInitAPI, PdoInitFreeDeviceCallback, PdoInitFreeDeviceCreate
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_STATE_NOTIFICATION_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfdevice.WdfDeviceInitAssignName
+title: WdfDeviceInitAssignName function
+author: windows-driver-content
+description: The WdfDeviceInitAssignName method assigns a device name to a device's device object.
+old-location: wdf\wdfdeviceinitassignname.htm
+old-project: wdf
+ms.assetid: 70b86a0f-a77d-4c79-931d-d0407083e5b0
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: PFN_WDFDEVICEINITASSIGNNAME, wdf.wdfdeviceinitassignname, WdfDeviceInitAssignName, wdfdevice/WdfDeviceInitAssignName, WdfDeviceInitAssignName method, DFDeviceObjectGeneralRef_1acdbff1-2eb9-425c-91c8-aaa51f585d56.xml, kmdf.wdfdeviceinitassignname
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfdevice.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: ChildDeviceInitAPI, ControlDeviceInitAPI, DeviceInitAPI, DriverCreate, InitFreeDeviceCallback, InitFreeDeviceCreate, InitFreeNull, KmdfIrql, KmdfIrql2, PdoDeviceInitAPI, PdoInitFreeDeviceCallback, PdoInitFreeDeviceCreate
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfDeviceInitAssignName
+product: Windows
+targetos: Windows
+req.typenames: WDF_STATE_NOTIFICATION_TYPE
+req.product: Windows 10 or later.
 ---
 
 

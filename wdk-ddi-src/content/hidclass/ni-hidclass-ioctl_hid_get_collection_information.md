@@ -1,41 +1,46 @@
 ---
-UID : NI:hidclass.IOCTL_HID_GET_COLLECTION_INFORMATION
-title : IOCTL_HID_GET_COLLECTION_INFORMATION
-author : windows-driver-content
-description : The IOCTL_HID_GET_COLLECTION_INFORMATION request obtains a top-level collection's HID_COLLECTION_INFORMATION structure.
-old-location : hid\ioctl_hid_get_collection_information.htm
-old-project : hid
-ms.assetid : 4d080a3d-7277-4bc5-b435-af2c334862ca
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : hid.ioctl_hid_get_collection_information, IOCTL_HID_GET_COLLECTION_INFORMATION control code [Human Input Devices], IOCTL_HID_GET_COLLECTION_INFORMATION, hidclass/IOCTL_HID_GET_COLLECTION_INFORMATION, hidioreq_f9030552-353d-4f1d-ae66-9689e8c9ad12.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : hidclass.h
-req.include-header : Hidclass.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HDAUDIO_STREAM_FORMAT, *PHDAUDIO_STREAM_FORMAT
+UID: NI:hidclass.IOCTL_HID_GET_COLLECTION_INFORMATION
+title: IOCTL_HID_GET_COLLECTION_INFORMATION
+author: windows-driver-content
+description: The IOCTL_HID_GET_COLLECTION_INFORMATION request obtains a top-level collection's HID_COLLECTION_INFORMATION structure.
+old-location: hid\ioctl_hid_get_collection_information.htm
+old-project: hid
+ms.assetid: 4d080a3d-7277-4bc5-b435-af2c334862ca
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: hid.ioctl_hid_get_collection_information, IOCTL_HID_GET_COLLECTION_INFORMATION control code [Human Input Devices], IOCTL_HID_GET_COLLECTION_INFORMATION, hidclass/IOCTL_HID_GET_COLLECTION_INFORMATION, hidioreq_f9030552-353d-4f1d-ae66-9689e8c9ad12.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: hidclass.h
+req.include-header: Hidclass.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hidclass.h
+apiname:
+-	IOCTL_HID_GET_COLLECTION_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: HDAUDIO_STREAM_FORMAT, *PHDAUDIO_STREAM_FORMAT
 ---
 
 # IOCTL_HID_GET_COLLECTION_INFORMATION IOCTL

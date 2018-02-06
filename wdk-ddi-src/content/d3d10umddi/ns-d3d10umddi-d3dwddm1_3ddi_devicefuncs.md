@@ -1,41 +1,46 @@
 ---
-UID : NS:d3d10umddi.D3DWDDM1_3DDI_DEVICEFUNCS
-title : D3DWDDM1_3DDI_DEVICEFUNCS
-author : windows-driver-content
-description : Contains functions that a user-mode display driver that is optimized for the Microsoft Direct3D version 11.2 runtime can implement to render graphics primitives and process state changes.
-old-location : display\d3dwddm1_3ddi_devicefuncs.htm
-old-project : display
-ms.assetid : DE7A88BA-2E59-4E8C-B315-CA6260E3D68E
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3D11_1DDI_DEVICEFUNCS structure [Display Devices], D3DWDDM1_3DDI_DEVICEFUNCS structure [Display Devices], display.d3dwddm1_3ddi_devicefuncs, D3DWDDM1_3DDI_DEVICEFUNCS, d3d10umddi/D3D11_1DDI_DEVICEFUNCS, D3D11_1DDI_DEVICEFUNCS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8.1,WDDM 1.3
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DWDDM1_3DDI_DEVICEFUNCS
+UID: NS:d3d10umddi.D3DWDDM1_3DDI_DEVICEFUNCS
+title: D3DWDDM1_3DDI_DEVICEFUNCS
+author: windows-driver-content
+description: Contains functions that a user-mode display driver that is optimized for the Microsoft Direct3D version 11.2 runtime can implement to render graphics primitives and process state changes.
+old-location: display\d3dwddm1_3ddi_devicefuncs.htm
+old-project: display
+ms.assetid: DE7A88BA-2E59-4E8C-B315-CA6260E3D68E
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3D11_1DDI_DEVICEFUNCS structure [Display Devices], D3DWDDM1_3DDI_DEVICEFUNCS structure [Display Devices], display.d3dwddm1_3ddi_devicefuncs, D3DWDDM1_3DDI_DEVICEFUNCS, d3d10umddi/D3D11_1DDI_DEVICEFUNCS, D3D11_1DDI_DEVICEFUNCS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8.1,WDDM 1.3
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	D3d10umddi.h
+apiname:
+-	D3D11_1DDI_DEVICEFUNCS
+product: Windows
+targetos: Windows
+req.typenames: D3DWDDM1_3DDI_DEVICEFUNCS
 ---
 
 # D3DWDDM1_3DDI_DEVICEFUNCS structure

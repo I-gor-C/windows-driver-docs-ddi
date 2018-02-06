@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.IoUninitializeWorkItem
-title : IoUninitializeWorkItem function
-author : windows-driver-content
-description : The IoUninitializeWorkItem routine uninitializes a work item that was initialized by IoInitializeWorkItem.
-old-location : kernel\iouninitializeworkitem.htm
-old-project : kernel
-ms.assetid : 8e7713a5-534d-42b4-a719-7b7ce911245a
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : IoUninitializeWorkItem, kernel.iouninitializeworkitem, k104_05634a73-eb65-4572-a776-4dcd6b116f52.xml, wdm/IoUninitializeWorkItem, IoUninitializeWorkItem routine [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.IoUninitializeWorkItem
+title: IoUninitializeWorkItem function
+author: windows-driver-content
+description: The IoUninitializeWorkItem routine uninitializes a work item that was initialized by IoInitializeWorkItem.
+old-location: kernel\iouninitializeworkitem.htm
+old-project: kernel
+ms.assetid: 8e7713a5-534d-42b4-a719-7b7ce911245a
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: IoUninitializeWorkItem, kernel.iouninitializeworkitem, k104_05634a73-eb65-4572-a776-4dcd6b116f52.xml, wdm/IoUninitializeWorkItem, IoUninitializeWorkItem routine [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoUninitializeWorkItem
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

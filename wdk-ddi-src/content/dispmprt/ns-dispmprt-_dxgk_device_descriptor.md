@@ -1,41 +1,46 @@
 ---
-UID : NS:dispmprt._DXGK_DEVICE_DESCRIPTOR
-title : "_DXGK_DEVICE_DESCRIPTOR"
-author : windows-driver-content
-description : The DXGK_DEVICE_DESCRIPTOR structure is used by the display port driver to request that the display miniport driver return all or a portion of a monitor's Extended Display Identification Data (EDID).
-old-location : display\dxgk_device_descriptor.htm
-old-project : display
-ms.assetid : b6d89426-54d3-4f90-8687-c60e515b4d62
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DXGK_DEVICE_DESCRIPTOR, dispmprt/DXGK_DEVICE_DESCRIPTOR, _DXGK_DEVICE_DESCRIPTOR, DXGK_DEVICE_DESCRIPTOR structure [Display Devices], display.dxgk_device_descriptor, PDXGK_DEVICE_DESCRIPTOR, *PDXGK_DEVICE_DESCRIPTOR, PDXGK_DEVICE_DESCRIPTOR structure pointer [Display Devices], dispmprt/PDXGK_DEVICE_DESCRIPTOR, DmStructs_d66c7175-e264-49f4-94ce-f4a92a678010.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : dispmprt.h
-req.include-header : Dispmprt.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDXGK_DEVICE_DESCRIPTOR, DXGK_DEVICE_DESCRIPTOR"
+UID: NS:dispmprt._DXGK_DEVICE_DESCRIPTOR
+title: "_DXGK_DEVICE_DESCRIPTOR"
+author: windows-driver-content
+description: The DXGK_DEVICE_DESCRIPTOR structure is used by the display port driver to request that the display miniport driver return all or a portion of a monitor's Extended Display Identification Data (EDID).
+old-location: display\dxgk_device_descriptor.htm
+old-project: display
+ms.assetid: b6d89426-54d3-4f90-8687-c60e515b4d62
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DXGK_DEVICE_DESCRIPTOR, dispmprt/DXGK_DEVICE_DESCRIPTOR, _DXGK_DEVICE_DESCRIPTOR, DXGK_DEVICE_DESCRIPTOR structure [Display Devices], display.dxgk_device_descriptor, PDXGK_DEVICE_DESCRIPTOR, *PDXGK_DEVICE_DESCRIPTOR, PDXGK_DEVICE_DESCRIPTOR structure pointer [Display Devices], dispmprt/PDXGK_DEVICE_DESCRIPTOR, DmStructs_d66c7175-e264-49f4-94ce-f4a92a678010.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: dispmprt.h
+req.include-header: Dispmprt.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	dispmprt.h
+apiname:
+-	DXGK_DEVICE_DESCRIPTOR
+product: Windows
+targetos: Windows
+req.typenames: "*PDXGK_DEVICE_DESCRIPTOR, DXGK_DEVICE_DESCRIPTOR"
 ---
 
 # _DXGK_DEVICE_DESCRIPTOR structure

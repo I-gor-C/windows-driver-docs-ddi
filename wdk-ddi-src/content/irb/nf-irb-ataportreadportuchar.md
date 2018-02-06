@@ -1,41 +1,49 @@
 ---
-UID : NF:irb.AtaPortReadPortUchar
-title : AtaPortReadPortUchar function
-author : windows-driver-content
-description : The AtaPortReadPortUchar routine reads an unsigned byte value from the HBA.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
-old-location : storage\ataportreadportuchar.htm
-old-project : storage
-ms.assetid : 9be74e98-ba68-492c-9660-43b2f76052cd
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ataportreadportuchar, AtaPortReadPortUchar, irb/AtaPortReadPortUchar, atartns_6ac346ce-b2cd-4c50-b55f-1c952a01e736.xml, AtaPortReadPortUchar routine [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : irb.h
-req.include-header : Ata.h, Irb.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ataport.lib; Pciidex.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : IDE_POWER_STATE
+UID: NF:irb.AtaPortReadPortUchar
+title: AtaPortReadPortUchar function
+author: windows-driver-content
+description: The AtaPortReadPortUchar routine reads an unsigned byte value from the HBA.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
+old-location: storage\ataportreadportuchar.htm
+old-project: storage
+ms.assetid: 9be74e98-ba68-492c-9660-43b2f76052cd
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ataportreadportuchar, AtaPortReadPortUchar, irb/AtaPortReadPortUchar, atartns_6ac346ce-b2cd-4c50-b55f-1c952a01e736.xml, AtaPortReadPortUchar routine [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: irb.h
+req.include-header: Ata.h, Irb.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ataport.lib; Pciidex.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ataport.lib
+-	ataport.dll
+-	pciidex.lib
+-	pciidex.dll
+apiname:
+-	AtaPortReadPortUchar
+product: Windows
+targetos: Windows
+req.typenames: IDE_POWER_STATE
 ---
 
 

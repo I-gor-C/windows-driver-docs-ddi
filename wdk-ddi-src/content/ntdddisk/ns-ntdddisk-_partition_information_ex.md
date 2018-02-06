@@ -1,41 +1,46 @@
 ---
-UID : NS:ntdddisk._PARTITION_INFORMATION_EX
-title : "_PARTITION_INFORMATION_EX"
-author : windows-driver-content
-description : PARTITION_INFORMATION_EX is the extended version of the PARTITION_INFORMATION structure. It holds information both for partitions with a Master Boot Record and for partitions with a GUID Partition Table.
-old-location : storage\partition_information_ex.htm
-old-project : storage
-ms.assetid : de44fe5a-5d47-4b2e-ab94-52cadfdbc345
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.partition_information_ex, ntdddisk/PPARTITION_INFORMATION_EX, PARTITION_INFORMATION_EX, ntdddisk/PARTITION_INFORMATION_EX, _PARTITION_INFORMATION_EX, *PPARTITION_INFORMATION_EX, PARTITION_INFORMATION_EX structure [Storage Devices], structs-disk_459428ff-6869-41c6-b72f-94721018f66e.xml, PPARTITION_INFORMATION_EX structure pointer [Storage Devices], PPARTITION_INFORMATION_EX
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntdddisk.h
-req.include-header : Ntdddisk.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPARTITION_INFORMATION_EX, PARTITION_INFORMATION_EX"
+UID: NS:ntdddisk._PARTITION_INFORMATION_EX
+title: "_PARTITION_INFORMATION_EX"
+author: windows-driver-content
+description: PARTITION_INFORMATION_EX is the extended version of the PARTITION_INFORMATION structure. It holds information both for partitions with a Master Boot Record and for partitions with a GUID Partition Table.
+old-location: storage\partition_information_ex.htm
+old-project: storage
+ms.assetid: de44fe5a-5d47-4b2e-ab94-52cadfdbc345
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.partition_information_ex, ntdddisk/PPARTITION_INFORMATION_EX, PARTITION_INFORMATION_EX, ntdddisk/PARTITION_INFORMATION_EX, _PARTITION_INFORMATION_EX, *PPARTITION_INFORMATION_EX, PARTITION_INFORMATION_EX structure [Storage Devices], structs-disk_459428ff-6869-41c6-b72f-94721018f66e.xml, PPARTITION_INFORMATION_EX structure pointer [Storage Devices], PPARTITION_INFORMATION_EX
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntdddisk.h
+req.include-header: Ntdddisk.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntdddisk.h
+apiname:
+-	PARTITION_INFORMATION_EX
+product: Windows
+targetos: Windows
+req.typenames: "*PPARTITION_INFORMATION_EX, PARTITION_INFORMATION_EX"
 ---
 
 # _PARTITION_INFORMATION_EX structure

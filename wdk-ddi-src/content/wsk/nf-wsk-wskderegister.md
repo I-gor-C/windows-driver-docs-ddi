@@ -1,42 +1,48 @@
 ---
-UID : NF:wsk.WskDeregister
-title : WskDeregister function
-author : windows-driver-content
-description : The WskDeregister function unregisters a WSK application's registration instance that was previously created by WskRegister.
-old-location : netvista\wskderegister.htm
-old-project : netvista
-ms.assetid : b2ff3d7b-319d-4256-a574-cb32595fd02f
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : wskref_45c2ad8f-a969-4a82-ac5e-67e4d3c96ffb.xml, netvista.wskderegister, WskDeregister, WskDeregister function [Network Drivers Starting with Windows Vista], wsk/WskDeregister
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wsk.h
-req.include-header : Wsk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating   systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Netio.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WNODE_HEADER, *PWNODE_HEADER
-req.product : Windows 10 or later.
+UID: NF:wsk.WskDeregister
+title: WskDeregister function
+author: windows-driver-content
+description: The WskDeregister function unregisters a WSK application's registration instance that was previously created by WskRegister.
+old-location: netvista\wskderegister.htm
+old-project: netvista
+ms.assetid: b2ff3d7b-319d-4256-a574-cb32595fd02f
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: wskref_45c2ad8f-a969-4a82-ac5e-67e4d3c96ffb.xml, netvista.wskderegister, WskDeregister, WskDeregister function [Network Drivers Starting with Windows Vista], wsk/WskDeregister
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wsk.h
+req.include-header: Wsk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Netio.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Netio.lib
+-	Netio.dll
+apiname:
+-	WskDeregister
+product: Windows
+targetos: Windows
+req.typenames: WNODE_HEADER, *PWNODE_HEADER
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NF:wdfusb.WDF_USB_CONTROL_SETUP_PACKET_INIT_GET_STATUS
-title : WDF_USB_CONTROL_SETUP_PACKET_INIT_GET_STATUS function
-author : windows-driver-content
-description : The WDF_USB_CONTROL_SETUP_PACKET_INIT_GET_STATUS function initializes a WDF_USB_CONTROL_SETUP_PACKET structure for a USB control transfer that obtains device status.
-old-location : wdf\wdf_usb_control_setup_packet_init_get_status.htm
-old-project : wdf
-ms.assetid : 1d21fe54-761b-42cf-9da2-83687cb9e079
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : kmdf.wdf_usb_control_setup_packet_init_get_status, wdfusb/WDF_USB_CONTROL_SETUP_PACKET_INIT_GET_STATUS, WDF_USB_CONTROL_SETUP_PACKET_INIT_GET_STATUS, wdf.wdf_usb_control_setup_packet_init_get_status, WDF_USB_CONTROL_SETUP_PACKET_INIT_GET_STATUS function, DFUsbRef_b1eaf694-27f6-4767-9e7f-f9af5c0fd605.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfusb.h
-req.include-header : Wdfusb.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfusb.WDF_USB_CONTROL_SETUP_PACKET_INIT_GET_STATUS
+title: WDF_USB_CONTROL_SETUP_PACKET_INIT_GET_STATUS function
+author: windows-driver-content
+description: The WDF_USB_CONTROL_SETUP_PACKET_INIT_GET_STATUS function initializes a WDF_USB_CONTROL_SETUP_PACKET structure for a USB control transfer that obtains device status.
+old-location: wdf\wdf_usb_control_setup_packet_init_get_status.htm
+old-project: wdf
+ms.assetid: 1d21fe54-761b-42cf-9da2-83687cb9e079
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: kmdf.wdf_usb_control_setup_packet_init_get_status, wdfusb/WDF_USB_CONTROL_SETUP_PACKET_INIT_GET_STATUS, WDF_USB_CONTROL_SETUP_PACKET_INIT_GET_STATUS, wdf.wdf_usb_control_setup_packet_init_get_status, WDF_USB_CONTROL_SETUP_PACKET_INIT_GET_STATUS function, DFUsbRef_b1eaf694-27f6-4767-9e7f-f9af5c0fd605.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfusb.h
+req.include-header: Wdfusb.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfusb.h
+apiname:
+-	WDF_USB_CONTROL_SETUP_PACKET_INIT_GET_STATUS
+product: Windows
+targetos: Windows
+req.typenames: WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
+req.product: Windows 10 or later.
 ---
 
 

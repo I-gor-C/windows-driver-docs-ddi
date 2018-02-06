@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugControl3.GetSpecificFilterParameters
-title : IDebugControl3::GetSpecificFilterParameters method
-author : windows-driver-content
-description : The GetSpecificFilterParameters method returns the parameters for specific event filters.
-old-location : debugger\getspecificfilterparameters.htm
-old-project : debugger
-ms.assetid : d2140270-558d-4cd9-b497-f61be40c7a87
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugControl3 interface [Windows Debugging], GetSpecificFilterParameters method, IDebugControl::GetSpecificFilterParameters, IDebugControl2::GetSpecificFilterParameters, IDebugControl interface [Windows Debugging], GetSpecificFilterParameters method, IDebugControl3, dbgeng/IDebugControl::GetSpecificFilterParameters, GetSpecificFilterParameters method [Windows Debugging], dbgeng/IDebugControl2::GetSpecificFilterParameters, debugger.getspecificfilterparameters, GetSpecificFilterParameters method [Windows Debugging], IDebugControl2 interface, GetSpecificFilterParameters, IDebugControl2 interface [Windows Debugging], GetSpecificFilterParameters method, GetSpecificFilterParameters method [Windows Debugging], IDebugControl3 interface, IDebugControl_ebe245a7-c76c-4b31-aa58-ccad250ed92a.xml, GetSpecificFilterParameters method [Windows Debugging], IDebugControl interface, dbgeng/IDebugControl3::GetSpecificFilterParameters, IDebugControl3::GetSpecificFilterParameters
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl3.GetSpecificFilterParameters
+title: IDebugControl3::GetSpecificFilterParameters method
+author: windows-driver-content
+description: The GetSpecificFilterParameters method returns the parameters for specific event filters.
+old-location: debugger\getspecificfilterparameters.htm
+old-project: debugger
+ms.assetid: d2140270-558d-4cd9-b497-f61be40c7a87
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugControl3 interface [Windows Debugging], GetSpecificFilterParameters method, IDebugControl::GetSpecificFilterParameters, IDebugControl2::GetSpecificFilterParameters, IDebugControl interface [Windows Debugging], GetSpecificFilterParameters method, IDebugControl3, dbgeng/IDebugControl::GetSpecificFilterParameters, GetSpecificFilterParameters method [Windows Debugging], dbgeng/IDebugControl2::GetSpecificFilterParameters, debugger.getspecificfilterparameters, GetSpecificFilterParameters method [Windows Debugging], IDebugControl2 interface, GetSpecificFilterParameters, IDebugControl2 interface [Windows Debugging], GetSpecificFilterParameters method, GetSpecificFilterParameters method [Windows Debugging], IDebugControl3 interface, IDebugControl_ebe245a7-c76c-4b31-aa58-ccad250ed92a.xml, GetSpecificFilterParameters method [Windows Debugging], IDebugControl interface, dbgeng/IDebugControl3::GetSpecificFilterParameters, IDebugControl3::GetSpecificFilterParameters
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl.GetSpecificFilterParameters
+-	IDebugControl2.GetSpecificFilterParameters
+-	IDebugControl3.GetSpecificFilterParameters
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

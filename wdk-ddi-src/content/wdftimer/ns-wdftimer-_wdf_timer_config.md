@@ -1,42 +1,47 @@
 ---
-UID : NS:wdftimer._WDF_TIMER_CONFIG
-title : "_WDF_TIMER_CONFIG"
-author : windows-driver-content
-description : The WDF_TIMER_CONFIG structure contains configuration information for a framework timer object.
-old-location : wdf\wdf_timer_config.htm
-old-project : wdf
-ms.assetid : 5ef6491d-90bb-472c-821a-b296bef17463
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.wdf_timer_config, WDF_TIMER_CONFIG, _WDF_TIMER_CONFIG, *PWDF_TIMER_CONFIG, WDF_TIMER_CONFIG structure, kmdf.wdf_timer_config, wdftimer/WDF_TIMER_CONFIG, PWDF_TIMER_CONFIG structure pointer, PWDF_TIMER_CONFIG, wdftimer/PWDF_TIMER_CONFIG, DFTimerObjectRef_cacde276-7a83-4a7f-87e1-de043aee4725.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdftimer.h
-req.include-header : Wdf.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_TIMER_CONFIG, *PWDF_TIMER_CONFIG
-req.product : Windows 10 or later.
+UID: NS:wdftimer._WDF_TIMER_CONFIG
+title: "_WDF_TIMER_CONFIG"
+author: windows-driver-content
+description: The WDF_TIMER_CONFIG structure contains configuration information for a framework timer object.
+old-location: wdf\wdf_timer_config.htm
+old-project: wdf
+ms.assetid: 5ef6491d-90bb-472c-821a-b296bef17463
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.wdf_timer_config, WDF_TIMER_CONFIG, _WDF_TIMER_CONFIG, *PWDF_TIMER_CONFIG, WDF_TIMER_CONFIG structure, kmdf.wdf_timer_config, wdftimer/WDF_TIMER_CONFIG, PWDF_TIMER_CONFIG structure pointer, PWDF_TIMER_CONFIG, wdftimer/PWDF_TIMER_CONFIG, DFTimerObjectRef_cacde276-7a83-4a7f-87e1-de043aee4725.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdftimer.h
+req.include-header: Wdf.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdftimer.h
+apiname:
+-	WDF_TIMER_CONFIG
+product: Windows
+targetos: Windows
+req.typenames: WDF_TIMER_CONFIG, *PWDF_TIMER_CONFIG
+req.product: Windows 10 or later.
 ---
 
 # _WDF_TIMER_CONFIG structure

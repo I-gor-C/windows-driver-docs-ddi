@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.KSPROPERTY_TUNER_SCAN_CAPS_S
-title : KSPROPERTY_TUNER_SCAN_CAPS_S
-author : windows-driver-content
-description : The KSPROPERTY_TUNER_SCAN_CAPS_S structure describes the hardware scanning capabilities of a tuning device.
-old-location : stream\ksproperty_tuner_scan_caps_s.htm
-old-project : stream
-ms.assetid : 5f05b24b-cf46-4302-a445-a9df029661cd
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : "*PKSPROPERTY_TUNER_SCAN_CAPS_S, ksmedia/PKSPROPERTY_TUNER_SCAN_CAPS_S, ksmedia/KSPROPERTY_TUNER_SCAN_CAPS_S, PKSPROPERTY_TUNER_SCAN_CAPS_S structure pointer [Streaming Media Devices], KSPROPERTY_TUNER_SCAN_CAPS_S structure [Streaming Media Devices], KSPROPERTY_TUNER_SCAN_CAPS_S, stream.ksproperty_tuner_scan_caps_s, PKSPROPERTY_TUNER_SCAN_CAPS_S, vidcapstruct_fbbea2b1-4a4d-40f0-b988-4ffab19155f5.xml"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KSPROPERTY_TUNER_SCAN_CAPS_S, *PKSPROPERTY_TUNER_SCAN_CAPS_S
+UID: NS:ksmedia.KSPROPERTY_TUNER_SCAN_CAPS_S
+title: KSPROPERTY_TUNER_SCAN_CAPS_S
+author: windows-driver-content
+description: The KSPROPERTY_TUNER_SCAN_CAPS_S structure describes the hardware scanning capabilities of a tuning device.
+old-location: stream\ksproperty_tuner_scan_caps_s.htm
+old-project: stream
+ms.assetid: 5f05b24b-cf46-4302-a445-a9df029661cd
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: "*PKSPROPERTY_TUNER_SCAN_CAPS_S, ksmedia/PKSPROPERTY_TUNER_SCAN_CAPS_S, ksmedia/KSPROPERTY_TUNER_SCAN_CAPS_S, PKSPROPERTY_TUNER_SCAN_CAPS_S structure pointer [Streaming Media Devices], KSPROPERTY_TUNER_SCAN_CAPS_S structure [Streaming Media Devices], KSPROPERTY_TUNER_SCAN_CAPS_S, stream.ksproperty_tuner_scan_caps_s, PKSPROPERTY_TUNER_SCAN_CAPS_S, vidcapstruct_fbbea2b1-4a4d-40f0-b988-4ffab19155f5.xml"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	KSPROPERTY_TUNER_SCAN_CAPS_S
+product: Windows
+targetos: Windows
+req.typenames: KSPROPERTY_TUNER_SCAN_CAPS_S, *PKSPROPERTY_TUNER_SCAN_CAPS_S
 ---
 
 # KSPROPERTY_TUNER_SCAN_CAPS_S structure

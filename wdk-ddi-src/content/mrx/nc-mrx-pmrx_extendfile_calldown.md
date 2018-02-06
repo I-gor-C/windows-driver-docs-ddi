@@ -1,41 +1,46 @@
 ---
-UID : NC:mrx.PMRX_EXTENDFILE_CALLDOWN
-title : PMRX_EXTENDFILE_CALLDOWN
-author : windows-driver-content
-description : The MRxExtendForCache routine is called by RDBSS to request that a network mini-redirector extend a file when the file is being cached by the cache manager.
-old-location : ifsk\mrxextendforcache.htm
-old-project : ifsk
-ms.assetid : 2fde7925-040b-4a8c-8a95-29321f1ae474
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.mrxextendforcache, MRxExtendForCache routine [Installable File System Drivers], MRxExtendForCache, PMRX_EXTENDFILE_CALLDOWN, PMRX_EXTENDFILE_CALLDOWN, mrx/MRxExtendForCache, mrxref_9d9e2b3a-589c-41a3-b786-fbaaab97814a.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : mrx.h
-req.include-header : Mrx.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SetDSMCounters_IN, *PSetDSMCounters_IN
+UID: NC:mrx.PMRX_EXTENDFILE_CALLDOWN
+title: PMRX_EXTENDFILE_CALLDOWN
+author: windows-driver-content
+description: The MRxExtendForCache routine is called by RDBSS to request that a network mini-redirector extend a file when the file is being cached by the cache manager.
+old-location: ifsk\mrxextendforcache.htm
+old-project: ifsk
+ms.assetid: 2fde7925-040b-4a8c-8a95-29321f1ae474
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.mrxextendforcache, MRxExtendForCache routine [Installable File System Drivers], MRxExtendForCache, PMRX_EXTENDFILE_CALLDOWN, PMRX_EXTENDFILE_CALLDOWN, mrx/MRxExtendForCache, mrxref_9d9e2b3a-589c-41a3-b786-fbaaab97814a.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: mrx.h
+req.include-header: Mrx.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	mrx.h
+apiname:
+-	MRxExtendForCache
+product: Windows
+targetos: Windows
+req.typenames: SetDSMCounters_IN, *PSetDSMCounters_IN
 ---
 
 

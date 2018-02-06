@@ -1,41 +1,46 @@
 ---
-UID : NI:ehstorioctl.IOCTL_EHSTOR_DEVICE_SET_QUEUE_STATE
-title : IOCTL_EHSTOR_DEVICE_SET_QUEUE_STATE
-author : windows-driver-content
-description : The IOCTL_EHSTOR_DEVICE_SET_QUEUE_STATE request is sent by silo drivers and applications to change the state of a storage device queue. IO requests in the storage device queue are held when the device is temporarily unauthorized.
-old-location : storage\ioctl_ehstor_device_set_queue_state.htm
-old-project : storage
-ms.assetid : 83AFAC73-39B8-442A-822E-411D08130F88
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_ehstor_device_set_queue_state, IOCTL_EHSTOR_DEVICE_SET_QUEUE_STATE control code [Storage Devices], IOCTL_EHSTOR_DEVICE_SET_QUEUE_STATE, ehstorioctl/IOCTL_EHSTOR_DEVICE_SET_QUEUE_STATE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ehstorioctl.h
-req.include-header : EhStorIoctl.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows 8
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PDO_TYPE
+UID: NI:ehstorioctl.IOCTL_EHSTOR_DEVICE_SET_QUEUE_STATE
+title: IOCTL_EHSTOR_DEVICE_SET_QUEUE_STATE
+author: windows-driver-content
+description: The IOCTL_EHSTOR_DEVICE_SET_QUEUE_STATE request is sent by silo drivers and applications to change the state of a storage device queue. IO requests in the storage device queue are held when the device is temporarily unauthorized.
+old-location: storage\ioctl_ehstor_device_set_queue_state.htm
+old-project: storage
+ms.assetid: 83AFAC73-39B8-442A-822E-411D08130F88
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_ehstor_device_set_queue_state, IOCTL_EHSTOR_DEVICE_SET_QUEUE_STATE control code [Storage Devices], IOCTL_EHSTOR_DEVICE_SET_QUEUE_STATE, ehstorioctl/IOCTL_EHSTOR_DEVICE_SET_QUEUE_STATE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ehstorioctl.h
+req.include-header: EhStorIoctl.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows 8
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	EhStorIoctl.h
+apiname:
+-	IOCTL_EHSTOR_DEVICE_SET_QUEUE_STATE
+product: Windows
+targetos: Windows
+req.typenames: PDO_TYPE
 ---
 
 # IOCTL_EHSTOR_DEVICE_SET_QUEUE_STATE IOCTL

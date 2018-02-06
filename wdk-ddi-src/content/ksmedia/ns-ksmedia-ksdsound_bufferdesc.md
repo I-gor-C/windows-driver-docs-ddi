@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.KSDSOUND_BUFFERDESC
-title : KSDSOUND_BUFFERDESC
-author : windows-driver-content
-description : The KSDSOUND_BUFFERDESC structure describes a DirectSound buffer.
-old-location : audio\ksdsound_bufferdesc.htm
-old-project : audio
-ms.assetid : 95b2f2ff-b98f-4210-9a4f-898573679aa7
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : aud-prop_309ec354-b919-40c7-8751-9e0a0000f7c8.xml, KSDSOUND_BUFFERDESC, ksmedia/PKSDSOUND_BUFFERDESC, audio.ksdsound_bufferdesc, *PKSDSOUND_BUFFERDESC, KSDSOUND_BUFFERDESC structure [Audio Devices], PKSDSOUND_BUFFERDESC structure pointer [Audio Devices], PKSDSOUND_BUFFERDESC, ksmedia/KSDSOUND_BUFFERDESC
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KSDSOUND_BUFFERDESC, *PKSDSOUND_BUFFERDESC
+UID: NS:ksmedia.KSDSOUND_BUFFERDESC
+title: KSDSOUND_BUFFERDESC
+author: windows-driver-content
+description: The KSDSOUND_BUFFERDESC structure describes a DirectSound buffer.
+old-location: audio\ksdsound_bufferdesc.htm
+old-project: audio
+ms.assetid: 95b2f2ff-b98f-4210-9a4f-898573679aa7
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: aud-prop_309ec354-b919-40c7-8751-9e0a0000f7c8.xml, KSDSOUND_BUFFERDESC, ksmedia/PKSDSOUND_BUFFERDESC, audio.ksdsound_bufferdesc, *PKSDSOUND_BUFFERDESC, KSDSOUND_BUFFERDESC structure [Audio Devices], PKSDSOUND_BUFFERDESC structure pointer [Audio Devices], PKSDSOUND_BUFFERDESC, ksmedia/KSDSOUND_BUFFERDESC
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	KSDSOUND_BUFFERDESC
+product: Windows
+targetos: Windows
+req.typenames: KSDSOUND_BUFFERDESC, *PKSDSOUND_BUFFERDESC
 ---
 
 # KSDSOUND_BUFFERDESC structure

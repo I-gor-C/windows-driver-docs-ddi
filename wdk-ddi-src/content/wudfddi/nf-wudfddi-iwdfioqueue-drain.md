@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFIoQueue.Drain
-title : IWDFIoQueue::Drain method
-author : windows-driver-content
-description : The Drain method directs the queue to reject new incoming I/O requests and allow already-queued requests to be delivered to the driver for processing.
-old-location : wdf\iwdfioqueue_drain.htm
-old-project : wdf
-ms.assetid : 0356e8a7-de44-4b0f-9067-ca3bb04260d8
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : Drain method, IWDFIoQueue interface, wudfddi/IWDFIoQueue::Drain, Drain, Drain method, IWDFIoQueue, wdf.iwdfioqueue_drain, IWDFIoQueue interface, Drain method, UMDFQueueObjectRef_cb7bdc3f-3280-4949-a60a-b78f13492da9.xml, umdf.iwdfioqueue_drain, IWDFIoQueue::Drain
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.5
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFIoQueue.Drain
+title: IWDFIoQueue::Drain method
+author: windows-driver-content
+description: The Drain method directs the queue to reject new incoming I/O requests and allow already-queued requests to be delivered to the driver for processing.
+old-location: wdf\iwdfioqueue_drain.htm
+old-project: wdf
+ms.assetid: 0356e8a7-de44-4b0f-9067-ca3bb04260d8
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: Drain method, IWDFIoQueue interface, wudfddi/IWDFIoQueue::Drain, Drain, Drain method, IWDFIoQueue, wdf.iwdfioqueue_drain, IWDFIoQueue interface, Drain method, UMDFQueueObjectRef_cb7bdc3f-3280-4949-a60a-b78f13492da9.xml, umdf.iwdfioqueue_drain, IWDFIoQueue::Drain
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.5
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFIoQueue.Drain
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NF:poscx.PosCxOpen
-title : PosCxOpen function
-author : windows-driver-content
-description : PosCxOpen is called to create an open PosCx library instance. This function initializes all resources it needs to manage a single open instance. It should be called from the driver's EVT_WDF_DEVICE_FILE_CREATE callback.
-old-location : pos\poscxopen.htm
-old-project : pos
-ms.assetid : 6AB1BB0A-B350-44D7-B0D0-9A19FD6DEE19
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : poscx/PosCxOpen, pos.poscxopen, PosCxOpen function, PosCxOpen
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : poscx.h
-req.include-header : Poscx.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POS_CX_EVENT_PRIORITY
-req.product : Windows 10 or later.
+UID: NF:poscx.PosCxOpen
+title: PosCxOpen function
+author: windows-driver-content
+description: PosCxOpen is called to create an open PosCx library instance. This function initializes all resources it needs to manage a single open instance. It should be called from the driver's EVT_WDF_DEVICE_FILE_CREATE callback.
+old-location: pos\poscxopen.htm
+old-project: pos
+ms.assetid: 6AB1BB0A-B350-44D7-B0D0-9A19FD6DEE19
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: poscx/PosCxOpen, pos.poscxopen, PosCxOpen function, PosCxOpen
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: poscx.h
+req.include-header: Poscx.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	poscx.h
+apiname:
+-	PosCxOpen
+product: Windows
+targetos: Windows
+req.typenames: POS_CX_EVENT_PRIORITY
+req.product: Windows 10 or later.
 ---
 
 

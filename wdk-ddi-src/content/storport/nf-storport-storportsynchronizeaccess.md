@@ -1,42 +1,48 @@
 ---
-UID : NF:storport.StorPortSynchronizeAccess
-title : StorPortSynchronizeAccess function
-author : windows-driver-content
-description : The StorPortSynchronizeAccess routine provides synchronized access to a miniport driver's device extension.
-old-location : storage\storportsynchronizeaccess.htm
-old-project : storage
-ms.assetid : eece67ed-faff-4166-8fa0-d501df9c1363
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.storportsynchronizeaccess, StorPortSynchronizeAccess, storport/StorPortSynchronizeAccess, storprt_25ee1679-940a-4758-9828-123a9ad24268.xml, StorPortSynchronizeAccess routine [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Storport.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STOR_SPINLOCK
-req.product : Windows 10 or later.
+UID: NF:storport.StorPortSynchronizeAccess
+title: StorPortSynchronizeAccess function
+author: windows-driver-content
+description: The StorPortSynchronizeAccess routine provides synchronized access to a miniport driver's device extension.
+old-location: storage\storportsynchronizeaccess.htm
+old-project: storage
+ms.assetid: eece67ed-faff-4166-8fa0-d501df9c1363
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.storportsynchronizeaccess, StorPortSynchronizeAccess, storport/StorPortSynchronizeAccess, storprt_25ee1679-940a-4758-9828-123a9ad24268.xml, StorPortSynchronizeAccess routine [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Storport.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Storport.lib
+-	Storport.dll
+apiname:
+-	StorPortSynchronizeAccess
+product: Windows
+targetos: Windows
+req.typenames: STOR_SPINLOCK
+req.product: Windows 10 or later.
 ---
 
 

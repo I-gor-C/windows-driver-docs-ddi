@@ -1,41 +1,46 @@
 ---
-UID : NS:iscsiop._MSiSCSI_LUNMappingInformation
-title : "_MSiSCSI_LUNMappingInformation"
-author : windows-driver-content
-description : This MSiSCSI_LUNMappingInformation structure provides the SCSI address information that the operating system assigns to a particular logical unit.
-old-location : storage\msiscsi_lunmappinginformation.htm
-old-project : storage
-ms.assetid : abe4b0fe-3918-4139-9c35-d9399287ce03
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.msiscsi_lunmappinginformation, structs-iSCSI_390283b1-22d6-4012-834f-1b3ef3328da0.xml, _MSiSCSI_LUNMappingInformation, PMSiSCSI_LUNMappingInformation structure pointer [Storage Devices], iscsiop/PMSiSCSI_LUNMappingInformation, PMSiSCSI_LUNMappingInformation, MSiSCSI_LUNMappingInformation structure [Storage Devices], iscsiop/MSiSCSI_LUNMappingInformation, *PMSiSCSI_LUNMappingInformation, MSiSCSI_LUNMappingInformation
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : iscsiop.h
-req.include-header : Iscsiop.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PMSiSCSI_LUNMappingInformation, MSiSCSI_LUNMappingInformation"
+UID: NS:iscsiop._MSiSCSI_LUNMappingInformation
+title: "_MSiSCSI_LUNMappingInformation"
+author: windows-driver-content
+description: This MSiSCSI_LUNMappingInformation structure provides the SCSI address information that the operating system assigns to a particular logical unit.
+old-location: storage\msiscsi_lunmappinginformation.htm
+old-project: storage
+ms.assetid: abe4b0fe-3918-4139-9c35-d9399287ce03
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.msiscsi_lunmappinginformation, structs-iSCSI_390283b1-22d6-4012-834f-1b3ef3328da0.xml, _MSiSCSI_LUNMappingInformation, PMSiSCSI_LUNMappingInformation structure pointer [Storage Devices], iscsiop/PMSiSCSI_LUNMappingInformation, PMSiSCSI_LUNMappingInformation, MSiSCSI_LUNMappingInformation structure [Storage Devices], iscsiop/MSiSCSI_LUNMappingInformation, *PMSiSCSI_LUNMappingInformation, MSiSCSI_LUNMappingInformation
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: iscsiop.h
+req.include-header: Iscsiop.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	iscsiop.h
+apiname:
+-	MSiSCSI_LUNMappingInformation
+product: Windows
+targetos: Windows
+req.typenames: "*PMSiSCSI_LUNMappingInformation, MSiSCSI_LUNMappingInformation"
 ---
 
 # _MSiSCSI_LUNMappingInformation structure

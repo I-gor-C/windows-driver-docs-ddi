@@ -1,41 +1,46 @@
 ---
-UID : NS:bthioctl._BTH_VENDOR_SPECIFIC_COMMAND
-title : "_BTH_VENDOR_SPECIFIC_COMMAND"
-author : windows-driver-content
-description : The BTH_VENDOR_SPECIFIC_COMMAND structure specifies a Bluetooth vendor-specific command.
-old-location : bltooth\bth_vendor_specific_command.htm
-old-project : bltooth
-ms.assetid : c37844d9-206a-4060-8b46-9afe691fe8f9
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : PBTH_VENDOR_SPECIFIC_COMMAND structure pointer [Bluetooth Devices], PBTH_VENDOR_SPECIFIC_COMMAND, BTH_VENDOR_SPECIFIC_COMMAND structure [Bluetooth Devices], bthioctl/BTH_VENDOR_SPECIFIC_COMMAND, bltooth.bth_vendor_specific_command, *PBTH_VENDOR_SPECIFIC_COMMAND, bthioctl/PBTH_VENDOR_SPECIFIC_COMMAND, bth_ref_568c918a-282f-48e0-994a-c49289976bb6.xml, _BTH_VENDOR_SPECIFIC_COMMAND, BTH_VENDOR_SPECIFIC_COMMAND
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : bthioctl.h
-req.include-header : Bthioctl.h
-req.target-type : Windows
-req.target-min-winverclnt : Versions:\_Available in Windows Vista, and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= PASSIVE_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PBTH_VENDOR_SPECIFIC_COMMAND, BTH_VENDOR_SPECIFIC_COMMAND"
+UID: NS:bthioctl._BTH_VENDOR_SPECIFIC_COMMAND
+title: "_BTH_VENDOR_SPECIFIC_COMMAND"
+author: windows-driver-content
+description: The BTH_VENDOR_SPECIFIC_COMMAND structure specifies a Bluetooth vendor-specific command.
+old-location: bltooth\bth_vendor_specific_command.htm
+old-project: bltooth
+ms.assetid: c37844d9-206a-4060-8b46-9afe691fe8f9
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: PBTH_VENDOR_SPECIFIC_COMMAND structure pointer [Bluetooth Devices], PBTH_VENDOR_SPECIFIC_COMMAND, BTH_VENDOR_SPECIFIC_COMMAND structure [Bluetooth Devices], bthioctl/BTH_VENDOR_SPECIFIC_COMMAND, bltooth.bth_vendor_specific_command, *PBTH_VENDOR_SPECIFIC_COMMAND, bthioctl/PBTH_VENDOR_SPECIFIC_COMMAND, bth_ref_568c918a-282f-48e0-994a-c49289976bb6.xml, _BTH_VENDOR_SPECIFIC_COMMAND, BTH_VENDOR_SPECIFIC_COMMAND
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: bthioctl.h
+req.include-header: Bthioctl.h
+req.target-type: Windows
+req.target-min-winverclnt: Versions:\_Available in Windows Vista, and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= PASSIVE_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	bthioctl.h
+apiname:
+-	BTH_VENDOR_SPECIFIC_COMMAND
+product: Windows
+targetos: Windows
+req.typenames: "*PBTH_VENDOR_SPECIFIC_COMMAND, BTH_VENDOR_SPECIFIC_COMMAND"
 ---
 
 # _BTH_VENDOR_SPECIFIC_COMMAND structure

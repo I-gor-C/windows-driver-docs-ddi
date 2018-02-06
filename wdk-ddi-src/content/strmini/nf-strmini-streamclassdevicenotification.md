@@ -1,42 +1,48 @@
 ---
-UID : NF:strmini.StreamClassDeviceNotification
-title : StreamClassDeviceNotification function
-author : windows-driver-content
-description : Minidrivers use the StreamClassDeviceNotification routine to notify the class driver that it has completed a stream request, or that an event has occurred.
-old-location : stream\streamclassdevicenotification.htm
-old-project : stream
-ms.assetid : 80383159-c2c3-4d05-92e8-9245408e5243
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : StreamClassDeviceNotification, strmini/StreamClassDeviceNotification, StreamClassDeviceNotification routine [Streaming Media Devices], strclass-routines_bddec484-f87c-4ebc-b8e1-ea52d265cbc4.xml, stream.streamclassdevicenotification
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : strmini.h
-req.include-header : Strmini.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Stream.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSTREAM_PRIORITY, STREAM_PRIORITY"
-req.product : Windows 10 or later.
+UID: NF:strmini.StreamClassDeviceNotification
+title: StreamClassDeviceNotification function
+author: windows-driver-content
+description: Minidrivers use the StreamClassDeviceNotification routine to notify the class driver that it has completed a stream request, or that an event has occurred.
+old-location: stream\streamclassdevicenotification.htm
+old-project: stream
+ms.assetid: 80383159-c2c3-4d05-92e8-9245408e5243
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: StreamClassDeviceNotification, strmini/StreamClassDeviceNotification, StreamClassDeviceNotification routine [Streaming Media Devices], strclass-routines_bddec484-f87c-4ebc-b8e1-ea52d265cbc4.xml, stream.streamclassdevicenotification
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: strmini.h
+req.include-header: Strmini.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Stream.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Stream.lib
+-	Stream.dll
+apiname:
+-	StreamClassDeviceNotification
+product: Windows
+targetos: Windows
+req.typenames: "*PSTREAM_PRIORITY, STREAM_PRIORITY"
+req.product: Windows 10 or later.
 ---
 
 

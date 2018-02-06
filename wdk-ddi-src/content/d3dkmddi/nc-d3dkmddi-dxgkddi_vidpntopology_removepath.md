@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dkmddi.DXGKDDI_VIDPNTOPOLOGY_REMOVEPATH
-title : DXGKDDI_VIDPNTOPOLOGY_REMOVEPATH
-author : windows-driver-content
-description : The pfnRemovePath function removes a video present path to a specified VidPN topology object.
-old-location : display\dxgk_vidpntopology_interface_pfnremovepath.htm
-old-project : display
-ms.assetid : 463973e0-c443-417a-86ff-0b78773d40cc
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgk_vidpntopology_interface_pfnremovepath, pfnRemovePath callback function [Display Devices], pfnRemovePath, DXGKDDI_VIDPNTOPOLOGY_REMOVEPATH, DXGKDDI_VIDPNTOPOLOGY_REMOVEPATH, d3dkmddi/pfnRemovePath, VidPnFunctions_0a43b9cf-d4c2-4d6f-acc7-7988038c56e5.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
+UID: NC:d3dkmddi.DXGKDDI_VIDPNTOPOLOGY_REMOVEPATH
+title: DXGKDDI_VIDPNTOPOLOGY_REMOVEPATH
+author: windows-driver-content
+description: The pfnRemovePath function removes a video present path to a specified VidPN topology object.
+old-location: display\dxgk_vidpntopology_interface_pfnremovepath.htm
+old-project: display
+ms.assetid: 463973e0-c443-417a-86ff-0b78773d40cc
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgk_vidpntopology_interface_pfnremovepath, pfnRemovePath callback function [Display Devices], pfnRemovePath, DXGKDDI_VIDPNTOPOLOGY_REMOVEPATH, DXGKDDI_VIDPNTOPOLOGY_REMOVEPATH, d3dkmddi/pfnRemovePath, VidPnFunctions_0a43b9cf-d4c2-4d6f-acc7-7988038c56e5.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	pfnRemovePath
+product: Windows
+targetos: Windows
+req.typenames: DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
 

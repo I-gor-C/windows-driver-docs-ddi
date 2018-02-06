@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfpdo.WdfPdoClearEjectionRelationsDevices
-title : WdfPdoClearEjectionRelationsDevices function
-author : windows-driver-content
-description : The WdfPdoClearEjectionRelationsDevices method removes all devices from the list of devices that must be ejected when a specified device is ejected.
-old-location : wdf\wdfpdoclearejectionrelationsdevices.htm
-old-project : wdf
-ms.assetid : 09154884-130d-47aa-be00-08a3a4da6f22
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WdfPdoClearEjectionRelationsDevices, WdfPdoClearEjectionRelationsDevices method, kmdf.wdfpdoclearejectionrelationsdevices, PFN_WDFPDOCLEAREJECTIONRELATIONSDEVICES, DFDeviceObjectFdoPdoRef_ddbc7fa5-d0c0-4074-901e-bc7a8ea50fa4.xml, wdfpdo/WdfPdoClearEjectionRelationsDevices, wdf.wdfpdoclearejectionrelationsdevices
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfpdo.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDF_OBJECT_CONTEXT_TYPE_INFO, WDF_OBJECT_CONTEXT_TYPE_INFO"
-req.product : Windows 10 or later.
+UID: NF:wdfpdo.WdfPdoClearEjectionRelationsDevices
+title: WdfPdoClearEjectionRelationsDevices function
+author: windows-driver-content
+description: The WdfPdoClearEjectionRelationsDevices method removes all devices from the list of devices that must be ejected when a specified device is ejected.
+old-location: wdf\wdfpdoclearejectionrelationsdevices.htm
+old-project: wdf
+ms.assetid: 09154884-130d-47aa-be00-08a3a4da6f22
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WdfPdoClearEjectionRelationsDevices, WdfPdoClearEjectionRelationsDevices method, kmdf.wdfpdoclearejectionrelationsdevices, PFN_WDFPDOCLEAREJECTIONRELATIONSDEVICES, DFDeviceObjectFdoPdoRef_ddbc7fa5-d0c0-4074-901e-bc7a8ea50fa4.xml, wdfpdo/WdfPdoClearEjectionRelationsDevices, wdf.wdfpdoclearejectionrelationsdevices
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfpdo.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfPdoClearEjectionRelationsDevices
+product: Windows
+targetos: Windows
+req.typenames: "*PWDF_OBJECT_CONTEXT_TYPE_INFO, WDF_OBJECT_CONTEXT_TYPE_INFO"
+req.product: Windows 10 or later.
 ---
 
 

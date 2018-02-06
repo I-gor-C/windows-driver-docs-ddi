@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugSymbols3.ReadTypedDataPhysical
-title : IDebugSymbols3::ReadTypedDataPhysical method
-author : windows-driver-content
-description : The ReadTypedDataPhysical method reads the value of a variable from the target computer's physical memory.
-old-location : debugger\readtypeddataphysical.htm
-old-project : debugger
-ms.assetid : 72562325-27f9-4e80-b03f-8926adad99c1
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : dbgeng/IDebugSymbols3::ReadTypedDataPhysical, IDebugSymbols::ReadTypedDataPhysical, IDebugSymbols2 interface [Windows Debugging], ReadTypedDataPhysical method, IDebugSymbols3::ReadTypedDataPhysical, IDebugSymbols interface [Windows Debugging], ReadTypedDataPhysical method, ReadTypedDataPhysical method [Windows Debugging], IDebugSymbols2 interface, dbgeng/IDebugSymbols::ReadTypedDataPhysical, IDebugSymbols2::ReadTypedDataPhysical, ReadTypedDataPhysical method [Windows Debugging], IDebugSymbols interface, dbgeng/IDebugSymbols2::ReadTypedDataPhysical, ReadTypedDataPhysical method [Windows Debugging], IDebugSymbols3 interface, ReadTypedDataPhysical, debugger.readtypeddataphysical, IDebugSymbols_d9131c11-5752-4b05-b779-69cb256b8ded.xml, IDebugSymbols3, ReadTypedDataPhysical method [Windows Debugging], IDebugSymbols3 interface [Windows Debugging], ReadTypedDataPhysical method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSymbols3.ReadTypedDataPhysical
+title: IDebugSymbols3::ReadTypedDataPhysical method
+author: windows-driver-content
+description: The ReadTypedDataPhysical method reads the value of a variable from the target computer's physical memory.
+old-location: debugger\readtypeddataphysical.htm
+old-project: debugger
+ms.assetid: 72562325-27f9-4e80-b03f-8926adad99c1
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: dbgeng/IDebugSymbols3::ReadTypedDataPhysical, IDebugSymbols::ReadTypedDataPhysical, IDebugSymbols2 interface [Windows Debugging], ReadTypedDataPhysical method, IDebugSymbols3::ReadTypedDataPhysical, IDebugSymbols interface [Windows Debugging], ReadTypedDataPhysical method, ReadTypedDataPhysical method [Windows Debugging], IDebugSymbols2 interface, dbgeng/IDebugSymbols::ReadTypedDataPhysical, IDebugSymbols2::ReadTypedDataPhysical, ReadTypedDataPhysical method [Windows Debugging], IDebugSymbols interface, dbgeng/IDebugSymbols2::ReadTypedDataPhysical, ReadTypedDataPhysical method [Windows Debugging], IDebugSymbols3 interface, ReadTypedDataPhysical, debugger.readtypeddataphysical, IDebugSymbols_d9131c11-5752-4b05-b779-69cb256b8ded.xml, IDebugSymbols3, ReadTypedDataPhysical method [Windows Debugging], IDebugSymbols3 interface [Windows Debugging], ReadTypedDataPhysical method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugSymbols.ReadTypedDataPhysical
+-	IDebugSymbols2.ReadTypedDataPhysical
+-	IDebugSymbols3.ReadTypedDataPhysical
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NS:wwan._WWAN_LTE_SERVING_CELL_INFO
-title : "_WWAN_LTE_SERVING_CELL_INFO"
-author : windows-driver-content
-description : The WWAN_LTE_SERVING_CELL_INFO structure represents information about the LTE serving cell.
-old-location : netvista\wwan_lte_serving_cell_info.htm
-old-project : netvista
-ms.assetid : 17A78DC7-A89D-405A-983E-FC0DC469A4B0
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : "*PWWAN_LTE_SERVING_CELL_INFO, _WWAN_LTE_SERVING_CELL_INFO, PWWAN_LTE_SERVING_CELL_INFO structure pointer [Network Drivers Starting with Windows Vista], wwan/PWWAN_LTE_SERVING_CELL_INFO, wwan/WWAN_LTE_SERVING_CELL_INFO, WWAN_LTE_SERVING_CELL_INFO, WWAN_LTE_SERVING_CELL_INFO structure [Network Drivers Starting with Windows Vista], netvista.wwan_lte_serving_cell_info, PWWAN_LTE_SERVING_CELL_INFO"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wwan.h
-req.include-header : Wwan.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10, version 1709
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WWAN_LTE_SERVING_CELL_INFO, *PWWAN_LTE_SERVING_CELL_INFO
-req.product : Windows 10 or later.
+UID: NS:wwan._WWAN_LTE_SERVING_CELL_INFO
+title: "_WWAN_LTE_SERVING_CELL_INFO"
+author: windows-driver-content
+description: The WWAN_LTE_SERVING_CELL_INFO structure represents information about the LTE serving cell.
+old-location: netvista\wwan_lte_serving_cell_info.htm
+old-project: netvista
+ms.assetid: 17A78DC7-A89D-405A-983E-FC0DC469A4B0
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: "*PWWAN_LTE_SERVING_CELL_INFO, _WWAN_LTE_SERVING_CELL_INFO, PWWAN_LTE_SERVING_CELL_INFO structure pointer [Network Drivers Starting with Windows Vista], wwan/PWWAN_LTE_SERVING_CELL_INFO, wwan/WWAN_LTE_SERVING_CELL_INFO, WWAN_LTE_SERVING_CELL_INFO, WWAN_LTE_SERVING_CELL_INFO structure [Network Drivers Starting with Windows Vista], netvista.wwan_lte_serving_cell_info, PWWAN_LTE_SERVING_CELL_INFO"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wwan.h
+req.include-header: Wwan.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10, version 1709
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wwan.h
+apiname:
+-	WWAN_LTE_SERVING_CELL_INFO
+product: Windows
+targetos: Windows
+req.typenames: WWAN_LTE_SERVING_CELL_INFO, *PWWAN_LTE_SERVING_CELL_INFO
+req.product: Windows 10 or later.
 ---
 
 # _WWAN_LTE_SERVING_CELL_INFO structure

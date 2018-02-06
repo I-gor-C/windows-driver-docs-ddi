@@ -1,41 +1,47 @@
 ---
-UID : NF:fltkernel.FltBuildDefaultSecurityDescriptor
-title : FltBuildDefaultSecurityDescriptor function
-author : windows-driver-content
-description : FltBuildDefaultSecurityDescriptor builds a default security descriptor for use with FltCreateCommunicationPort.
-old-location : ifsk\fltbuilddefaultsecuritydescriptor.htm
-old-project : ifsk
-ms.assetid : 0e886c08-38dd-4960-9b79-4c6e68ac488d
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : fltkernel/FltBuildDefaultSecurityDescriptor, FltBuildDefaultSecurityDescriptor, FltBuildDefaultSecurityDescriptor function [Installable File System Drivers], FltApiRef_a_to_d_5b763c42-6bea-4c52-8148-60c18a2f2aeb.xml, ifsk.fltbuilddefaultsecuritydescriptor
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltBuildDefaultSecurityDescriptor
+title: FltBuildDefaultSecurityDescriptor function
+author: windows-driver-content
+description: FltBuildDefaultSecurityDescriptor builds a default security descriptor for use with FltCreateCommunicationPort.
+old-location: ifsk\fltbuilddefaultsecuritydescriptor.htm
+old-project: ifsk
+ms.assetid: 0e886c08-38dd-4960-9b79-4c6e68ac488d
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: fltkernel/FltBuildDefaultSecurityDescriptor, FltBuildDefaultSecurityDescriptor, FltBuildDefaultSecurityDescriptor function [Installable File System Drivers], FltApiRef_a_to_d_5b763c42-6bea-4c52-8148-60c18a2f2aeb.xml, ifsk.fltbuilddefaultsecuritydescriptor
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	FltMgr.lib
+-	FltMgr.dll
+apiname:
+-	FltBuildDefaultSecurityDescriptor
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

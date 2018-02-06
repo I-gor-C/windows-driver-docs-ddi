@@ -1,41 +1,47 @@
 ---
-UID : NF:hidpi.HidP_SetUsageValue
-title : HidP_SetUsageValue function
-author : windows-driver-content
-description : The HidP_SetUsageValue routine sets a HID control value in a specified HID report.
-old-location : hid\hidp_setusagevalue.htm
-old-project : hid
-ms.assetid : e59d7087-58eb-4bc3-a4e0-4597ee28dcd6
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : HidP_SetUsageValue routine [Human Input Devices], hidpi/HidP_SetUsageValue, hid.hidp_setusagevalue, hidfunc_8e494117-11e2-42b8-96b0-6aaa2cb35d44.xml, HidP_SetUsageValue
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : hidpi.h
-req.include-header : Hidpi.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 2000 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Hidparse.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HIDP_REPORT_TYPE
+UID: NF:hidpi.HidP_SetUsageValue
+title: HidP_SetUsageValue function
+author: windows-driver-content
+description: The HidP_SetUsageValue routine sets a HID control value in a specified HID report.
+old-location: hid\hidp_setusagevalue.htm
+old-project: hid
+ms.assetid: e59d7087-58eb-4bc3-a4e0-4597ee28dcd6
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: HidP_SetUsageValue routine [Human Input Devices], hidpi/HidP_SetUsageValue, hid.hidp_setusagevalue, hidfunc_8e494117-11e2-42b8-96b0-6aaa2cb35d44.xml, HidP_SetUsageValue
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: hidpi.h
+req.include-header: Hidpi.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 2000 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Hidparse.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Hidparse.lib
+-	Hidparse.dll
+apiname:
+-	HidP_SetUsageValue
+product: Windows
+targetos: Windows
+req.typenames: HIDP_REPORT_TYPE
 ---
 
 

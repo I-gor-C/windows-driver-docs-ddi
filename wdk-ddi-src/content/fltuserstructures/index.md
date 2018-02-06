@@ -1,12 +1,12 @@
 ---
-UID : NA:fltuserstructures
-ms.assetid : 4d06680b-ef7a-3bca-aa48-aeb3044966ac
-ms.author : windowsdriverdev
-ms.date : 01/18/18
-ms.keywords : 
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : portal
+UID: NA:fltuserstructures
+ms.assetid: 4d06680b-ef7a-3bca-aa48-aeb3044966ac
+ms.author: windowsdriverdev
+ms.date: 01/18/18
+ms.keywords: 
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: portal
 ---
 
 # fltuserstructures.h header

@@ -1,42 +1,47 @@
 ---
-UID : NS:wdfmemory._WDF_MEMORY_DESCRIPTOR
-title : "_WDF_MEMORY_DESCRIPTOR"
-author : windows-driver-content
-description : The WDF_MEMORY_DESCRIPTOR structure describes a memory buffer.
-old-location : wdf\wdf_memory_descriptor.htm
-old-project : wdf
-ms.assetid : 0683cb81-4ae7-4296-b46a-ad2e8b25a781
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WDF_MEMORY_DESCRIPTOR, wdfmemory/WDF_MEMORY_DESCRIPTOR, *PWDF_MEMORY_DESCRIPTOR, PWDF_MEMORY_DESCRIPTOR structure pointer, wdfmemory/PWDF_MEMORY_DESCRIPTOR, wdf.wdf_memory_descriptor, DFMemoryObjectRef_2c2271fb-6f3f-466d-b1dd-d254bc7ec96e.xml, _WDF_MEMORY_DESCRIPTOR, kmdf.wdf_memory_descriptor, PWDF_MEMORY_DESCRIPTOR, WDF_MEMORY_DESCRIPTOR structure
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdfmemory.h
-req.include-header : Wdf.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDF_MEMORY_DESCRIPTOR, WDF_MEMORY_DESCRIPTOR"
-req.product : Windows 10 or later.
+UID: NS:wdfmemory._WDF_MEMORY_DESCRIPTOR
+title: "_WDF_MEMORY_DESCRIPTOR"
+author: windows-driver-content
+description: The WDF_MEMORY_DESCRIPTOR structure describes a memory buffer.
+old-location: wdf\wdf_memory_descriptor.htm
+old-project: wdf
+ms.assetid: 0683cb81-4ae7-4296-b46a-ad2e8b25a781
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WDF_MEMORY_DESCRIPTOR, wdfmemory/WDF_MEMORY_DESCRIPTOR, *PWDF_MEMORY_DESCRIPTOR, PWDF_MEMORY_DESCRIPTOR structure pointer, wdfmemory/PWDF_MEMORY_DESCRIPTOR, wdf.wdf_memory_descriptor, DFMemoryObjectRef_2c2271fb-6f3f-466d-b1dd-d254bc7ec96e.xml, _WDF_MEMORY_DESCRIPTOR, kmdf.wdf_memory_descriptor, PWDF_MEMORY_DESCRIPTOR, WDF_MEMORY_DESCRIPTOR structure
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdfmemory.h
+req.include-header: Wdf.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfmemory.h
+apiname:
+-	WDF_MEMORY_DESCRIPTOR
+product: Windows
+targetos: Windows
+req.typenames: "*PWDF_MEMORY_DESCRIPTOR, WDF_MEMORY_DESCRIPTOR"
+req.product: Windows 10 or later.
 ---
 
 # _WDF_MEMORY_DESCRIPTOR structure

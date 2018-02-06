@@ -1,41 +1,46 @@
 ---
-UID : NC:dispmprt.DXGKDDI_OPM_GET_RANDOM_NUMBER
-title : DXGKDDI_OPM_GET_RANDOM_NUMBER
-author : windows-driver-content
-description : The DxgkDdiOPMGetRandomNumber function retrieves the given protected output object's 128-bit cryptographically secure random number.
-old-location : display\dxgkddiopmgetrandomnumber.htm
-old-project : display
-ms.assetid : 91b07a5c-ed25-4268-bd6d-273ae8b1ac28
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkddiopmgetrandomnumber, DxgkDdiOPMGetRandomNumber callback function [Display Devices], DxgkDdiOPMGetRandomNumber, DXGKDDI_OPM_GET_RANDOM_NUMBER, DXGKDDI_OPM_GET_RANDOM_NUMBER, dispmprt/DxgkDdiOPMGetRandomNumber, Dm_Opm_functions_a7d335ef-61bf-452a-a811-20048ff28dbf.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : dispmprt.h
-req.include-header : Dispmprt.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
+UID: NC:dispmprt.DXGKDDI_OPM_GET_RANDOM_NUMBER
+title: DXGKDDI_OPM_GET_RANDOM_NUMBER
+author: windows-driver-content
+description: The DxgkDdiOPMGetRandomNumber function retrieves the given protected output object's 128-bit cryptographically secure random number.
+old-location: display\dxgkddiopmgetrandomnumber.htm
+old-project: display
+ms.assetid: 91b07a5c-ed25-4268-bd6d-273ae8b1ac28
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkddiopmgetrandomnumber, DxgkDdiOPMGetRandomNumber callback function [Display Devices], DxgkDdiOPMGetRandomNumber, DXGKDDI_OPM_GET_RANDOM_NUMBER, DXGKDDI_OPM_GET_RANDOM_NUMBER, dispmprt/DxgkDdiOPMGetRandomNumber, Dm_Opm_functions_a7d335ef-61bf-452a-a811-20048ff28dbf.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: dispmprt.h
+req.include-header: Dispmprt.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	dispmprt.h
+apiname:
+-	DxgkDdiOPMGetRandomNumber
+product: Windows
+targetos: Windows
+req.typenames: SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ---
 
 

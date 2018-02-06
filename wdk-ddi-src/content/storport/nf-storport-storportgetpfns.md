@@ -1,42 +1,47 @@
 ---
-UID : NF:storport.StorPortGetPfns
-title : StorPortGetPfns function
-author : windows-driver-content
-description : The StorPortGetPfns routine can be called when a miniport needs to retreive PFNs associated with a MDL for a SRB.
-old-location : storage\storportgetpfns.htm
-old-project : storage
-ms.assetid : F9E69501-4889-4A1B-8942-C6D4406474DE
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : StorPortGetPfns routine [Storage Devices], storport/StorPortGetPfns, storage.storportgetpfns, StorPortGetPfns
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : storport.h
-req.include-header : 
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STOR_SPINLOCK
-req.product : Windows 10 or later.
+UID: NF:storport.StorPortGetPfns
+title: StorPortGetPfns function
+author: windows-driver-content
+description: The StorPortGetPfns routine can be called when a miniport needs to retreive PFNs associated with a MDL for a SRB.
+old-location: storage\storportgetpfns.htm
+old-project: storage
+ms.assetid: F9E69501-4889-4A1B-8942-C6D4406474DE
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: StorPortGetPfns routine [Storage Devices], storport/StorPortGetPfns, storage.storportgetpfns, StorPortGetPfns
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: storport.h
+req.include-header: 
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Storport.h
+apiname:
+-	StorPortGetPfns
+product: Windows
+targetos: Windows
+req.typenames: STOR_SPINLOCK
+req.product: Windows 10 or later.
 ---
 
 

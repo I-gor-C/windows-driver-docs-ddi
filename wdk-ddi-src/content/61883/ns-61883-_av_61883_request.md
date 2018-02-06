@@ -1,41 +1,46 @@
 ---
-UID : NS:61883._AV_61883_REQUEST
-title : "_AV_61883_REQUEST"
-author : windows-driver-content
-description : The AV_61883_REQUEST structure is used to pass requests to the IEC-61883 protocol driver.
-old-location : ieee\av_61883_request.htm
-old-project : IEEE
-ms.assetid : 697fbf86-5c99-4e35-bcb4-a6f5272cc987
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : AV_61883_REQUEST structure [Buses], PAV_61883_REQUEST, _AV_61883_REQUEST, 61883/PAV_61883_REQUEST, PAV_61883_REQUEST structure pointer [Buses], 61883_structures_d914a3cc-63dd-4eaf-9d0f-2682e1da78c9.xml, IEEE.av_61883_request, AV_61883_REQUEST, *PAV_61883_REQUEST, 61883/AV_61883_REQUEST
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : 61883.h
-req.include-header : 61883.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : AV_61883_REQUEST, *PAV_61883_REQUEST
+UID: NS:61883._AV_61883_REQUEST
+title: "_AV_61883_REQUEST"
+author: windows-driver-content
+description: The AV_61883_REQUEST structure is used to pass requests to the IEC-61883 protocol driver.
+old-location: ieee\av_61883_request.htm
+old-project: IEEE
+ms.assetid: 697fbf86-5c99-4e35-bcb4-a6f5272cc987
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: AV_61883_REQUEST structure [Buses], PAV_61883_REQUEST, _AV_61883_REQUEST, 61883/PAV_61883_REQUEST, PAV_61883_REQUEST structure pointer [Buses], 61883_structures_d914a3cc-63dd-4eaf-9d0f-2682e1da78c9.xml, IEEE.av_61883_request, AV_61883_REQUEST, *PAV_61883_REQUEST, 61883/AV_61883_REQUEST
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: 61883.h
+req.include-header: 61883.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	61883.h
+apiname:
+-	AV_61883_REQUEST
+product: Windows
+targetos: Windows
+req.typenames: AV_61883_REQUEST, *PAV_61883_REQUEST
 ---
 
 # _AV_61883_REQUEST structure

@@ -1,41 +1,46 @@
 ---
-UID : NS:ndiswwan._NDIS_WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS
-title : "_NDIS_WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS"
-author : windows-driver-content
-description : The NDIS_WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS structure represents a list of commands supported by a device service.
-old-location : netvista\ndis_wwan_device_service_supported_commands.htm
-old-project : netvista
-ms.assetid : 5F619FBF-4152-447E-B228-D4147687E929
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : ndiswwan/PNDIS_WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS, NDIS_WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS structure [Network Drivers Starting with Windows Vista], PNDIS_WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS, _NDIS_WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS, netvista.ndis_wwan_device_service_supported_commands, ndiswwan/NDIS_WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS, PNDIS_WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS structure pointer [Network Drivers Starting with Windows Vista], NDIS_WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS, *PNDIS_WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndiswwan.h
-req.include-header : Ndiswwan.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PNDIS_WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS, NDIS_WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS"
+UID: NS:ndiswwan._NDIS_WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS
+title: "_NDIS_WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS"
+author: windows-driver-content
+description: The NDIS_WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS structure represents a list of commands supported by a device service.
+old-location: netvista\ndis_wwan_device_service_supported_commands.htm
+old-project: netvista
+ms.assetid: 5F619FBF-4152-447E-B228-D4147687E929
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: ndiswwan/PNDIS_WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS, NDIS_WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS structure [Network Drivers Starting with Windows Vista], PNDIS_WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS, _NDIS_WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS, netvista.ndis_wwan_device_service_supported_commands, ndiswwan/NDIS_WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS, PNDIS_WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS structure pointer [Network Drivers Starting with Windows Vista], NDIS_WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS, *PNDIS_WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndiswwan.h
+req.include-header: Ndiswwan.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndiswwan.h
+apiname:
+-	NDIS_WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS
+product: Windows
+targetos: Windows
+req.typenames: "*PNDIS_WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS, NDIS_WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS"
 ---
 
 # _NDIS_WWAN_DEVICE_SERVICE_SUPPORTED_COMMANDS structure

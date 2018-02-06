@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFDevice.SetPnpState
-title : IWDFDevice::SetPnpState method
-author : windows-driver-content
-description : The SetPnpState method turns on or off (or sets to the default state) the specified Plug and Play (PnP) property of a device.
-old-location : wdf\iwdfdevice_setpnpstate.htm
-old-project : wdf
-ms.assetid : 3bd88ecd-7c7c-4ee9-8eb8-bc5653bd4ed0
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : IWDFDevice interface, SetPnpState method, SetPnpState method, SetPnpState method, IWDFDevice interface, wdf.iwdfdevice_setpnpstate, IWDFDevice::SetPnpState, umdf.iwdfdevice_setpnpstate, IWDFDevice, wudfddi/IWDFDevice::SetPnpState, UMDFDeviceObjectRef_1efea639-31d7-4420-8b8a-c528597ceffb.xml, SetPnpState
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.5
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFDevice.SetPnpState
+title: IWDFDevice::SetPnpState method
+author: windows-driver-content
+description: The SetPnpState method turns on or off (or sets to the default state) the specified Plug and Play (PnP) property of a device.
+old-location: wdf\iwdfdevice_setpnpstate.htm
+old-project: wdf
+ms.assetid: 3bd88ecd-7c7c-4ee9-8eb8-bc5653bd4ed0
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: IWDFDevice interface, SetPnpState method, SetPnpState method, SetPnpState method, IWDFDevice interface, wdf.iwdfdevice_setpnpstate, IWDFDevice::SetPnpState, umdf.iwdfdevice_setpnpstate, IWDFDevice, wudfddi/IWDFDevice::SetPnpState, UMDFDeviceObjectRef_1efea639-31d7-4420-8b8a-c528597ceffb.xml, SetPnpState
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.5
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFDevice.SetPnpState
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

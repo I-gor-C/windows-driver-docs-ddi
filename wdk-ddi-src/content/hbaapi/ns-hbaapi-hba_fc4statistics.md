@@ -1,41 +1,46 @@
 ---
-UID : NS:hbaapi.HBA_FC4Statistics
-title : HBA_FC4Statistics
-author : windows-driver-content
-description : The HBA_FC4Statistics structure contains port statistics.
-old-location : storage\hba_fc4statistics.htm
-old-project : storage
-ms.assetid : e1e37d2c-5688-4528-9cc5-62e70a7561fe
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : hbaapi/PHBA_FC4STATISTICS, HBA_FC4STATISTICS, HBA_FC4Statistics structure [Storage Devices], HBA_FC4STATISTICS structure [Storage Devices], PHBA_FC4STATISTICS, structs-Fibre_1ab7a8f5-1b91-44ea-82b7-9c9ee92ce0e5.xml, HBA_FC4Statistics, PHBA_FC4STATISTICS structure pointer [Storage Devices], *PHBA_FC4STATISTICS, storage.hba_fc4statistics, hbaapi/HBA_FC4Statistics
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : hbaapi.h
-req.include-header : Hbaapi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PHBA_FC4STATISTICS, HBA_FC4STATISTICS"
+UID: NS:hbaapi.HBA_FC4Statistics
+title: HBA_FC4Statistics
+author: windows-driver-content
+description: The HBA_FC4Statistics structure contains port statistics.
+old-location: storage\hba_fc4statistics.htm
+old-project: storage
+ms.assetid: e1e37d2c-5688-4528-9cc5-62e70a7561fe
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: hbaapi/PHBA_FC4STATISTICS, HBA_FC4STATISTICS, HBA_FC4Statistics structure [Storage Devices], HBA_FC4STATISTICS structure [Storage Devices], PHBA_FC4STATISTICS, structs-Fibre_1ab7a8f5-1b91-44ea-82b7-9c9ee92ce0e5.xml, HBA_FC4Statistics, PHBA_FC4STATISTICS structure pointer [Storage Devices], *PHBA_FC4STATISTICS, storage.hba_fc4statistics, hbaapi/HBA_FC4Statistics
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: hbaapi.h
+req.include-header: Hbaapi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hbaapi.h
+apiname:
+-	HBA_FC4STATISTICS
+product: Windows
+targetos: Windows
+req.typenames: "*PHBA_FC4STATISTICS, HBA_FC4STATISTICS"
 ---
 
 # HBA_FC4Statistics structure

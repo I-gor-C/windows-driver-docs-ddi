@@ -1,41 +1,46 @@
 ---
-UID : NS:gpioclx._GPIO_DISCONNECT_IO_PINS_PARAMETERS
-title : "_GPIO_DISCONNECT_IO_PINS_PARAMETERS"
-author : windows-driver-content
-description : The GPIO_DISCONNECT_IO_PINS_PARAMETERS structure describes a set of general-purpose I/O (GPIO) pins that are to be disconnected.
-old-location : gpio\gpio_disconnect_io_pins_parameters.htm
-old-project : GPIO
-ms.assetid : 79ABCF93-4EC3-49D5-9943-C820B0B8CF66
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : GPIO.gpio_disconnect_io_pins_parameters, *PGPIO_DISCONNECT_IO_PINS_PARAMETERS, _GPIO_DISCONNECT_IO_PINS_PARAMETERS, PGPIO_DISCONNECT_IO_PINS_PARAMETERS, gpioclx/PGPIO_DISCONNECT_IO_PINS_PARAMETERS, GPIO_DISCONNECT_IO_PINS_PARAMETERS, gpioclx/GPIO_DISCONNECT_IO_PINS_PARAMETERS, PGPIO_DISCONNECT_IO_PINS_PARAMETERS structure pointer [Parallel Ports], GPIO_DISCONNECT_IO_PINS_PARAMETERS structure [Parallel Ports]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : gpioclx.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PGPIO_DISCONNECT_IO_PINS_PARAMETERS, GPIO_DISCONNECT_IO_PINS_PARAMETERS"
+UID: NS:gpioclx._GPIO_DISCONNECT_IO_PINS_PARAMETERS
+title: "_GPIO_DISCONNECT_IO_PINS_PARAMETERS"
+author: windows-driver-content
+description: The GPIO_DISCONNECT_IO_PINS_PARAMETERS structure describes a set of general-purpose I/O (GPIO) pins that are to be disconnected.
+old-location: gpio\gpio_disconnect_io_pins_parameters.htm
+old-project: GPIO
+ms.assetid: 79ABCF93-4EC3-49D5-9943-C820B0B8CF66
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: GPIO.gpio_disconnect_io_pins_parameters, *PGPIO_DISCONNECT_IO_PINS_PARAMETERS, _GPIO_DISCONNECT_IO_PINS_PARAMETERS, PGPIO_DISCONNECT_IO_PINS_PARAMETERS, gpioclx/PGPIO_DISCONNECT_IO_PINS_PARAMETERS, GPIO_DISCONNECT_IO_PINS_PARAMETERS, gpioclx/GPIO_DISCONNECT_IO_PINS_PARAMETERS, PGPIO_DISCONNECT_IO_PINS_PARAMETERS structure pointer [Parallel Ports], GPIO_DISCONNECT_IO_PINS_PARAMETERS structure [Parallel Ports]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: gpioclx.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Gpioclx.h
+apiname:
+-	GPIO_DISCONNECT_IO_PINS_PARAMETERS
+product: Windows
+targetos: Windows
+req.typenames: "*PGPIO_DISCONNECT_IO_PINS_PARAMETERS, GPIO_DISCONNECT_IO_PINS_PARAMETERS"
 ---
 
 # _GPIO_DISCONNECT_IO_PINS_PARAMETERS structure

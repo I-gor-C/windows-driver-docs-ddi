@@ -1,41 +1,46 @@
 ---
-UID : NF:namcache.RxNameCacheExpireEntryWithShortName
-title : RxNameCacheExpireEntryWithShortName function
-author : windows-driver-content
-description : RxNameCacheExpireEntryWithShortName expires all of the name cache entries whose name prefix matches the given short file name.
-old-location : ifsk\rxnamecacheexpireentrywithshortname.htm
-old-project : ifsk
-ms.assetid : 4d842454-4a59-4f82-9aeb-3dfbe9d8cd8a
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : rxref_fcde2e61-9855-4d66-8b81-a437921d5ec5.xml, RxNameCacheExpireEntryWithShortName, RxNameCacheExpireEntryWithShortName function [Installable File System Drivers], namcache/RxNameCacheExpireEntryWithShortName, ifsk.rxnamecacheexpireentrywithshortname
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : namcache.h
-req.include-header : Namcache.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
+UID: NF:namcache.RxNameCacheExpireEntryWithShortName
+title: RxNameCacheExpireEntryWithShortName function
+author: windows-driver-content
+description: RxNameCacheExpireEntryWithShortName expires all of the name cache entries whose name prefix matches the given short file name.
+old-location: ifsk\rxnamecacheexpireentrywithshortname.htm
+old-project: ifsk
+ms.assetid: 4d842454-4a59-4f82-9aeb-3dfbe9d8cd8a
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: rxref_fcde2e61-9855-4d66-8b81-a437921d5ec5.xml, RxNameCacheExpireEntryWithShortName, RxNameCacheExpireEntryWithShortName function [Installable File System Drivers], namcache/RxNameCacheExpireEntryWithShortName, ifsk.rxnamecacheexpireentrywithshortname
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: namcache.h
+req.include-header: Namcache.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	namcache.h
+apiname:
+-	RxNameCacheExpireEntryWithShortName
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 

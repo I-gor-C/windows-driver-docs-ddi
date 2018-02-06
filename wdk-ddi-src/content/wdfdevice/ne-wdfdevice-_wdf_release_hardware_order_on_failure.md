@@ -1,42 +1,47 @@
 ---
-UID : NE:wdfdevice._WDF_RELEASE_HARDWARE_ORDER_ON_FAILURE
-title : "_WDF_RELEASE_HARDWARE_ORDER_ON_FAILURE"
-author : windows-driver-content
-description : The WDF_RELEASE_HARDWARE_ORDER_ON_FAILURE enumeration specifies when the framework calls a driver's EvtDeviceReleaseHardware callback function.
-old-location : wdf\wdf_release_hardware_order_on_failure.htm
-old-project : wdf
-ms.assetid : 534B1E39-6B11-4954-8792-41A25FCA31B2
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WDF_RELEASE_HARDWARE_ORDER_ON_FAILURE enumeration, wdfdevice/WdfReleaseHardwareOrderOnFailureEarly, wdfdevice/WDF_RELEASE_HARDWARE_ORDER_ON_FAILURE, wdfdevice/PWDF_RELEASE_HARDWARE_ORDER_ON_FAILURE, WdfReleaseHardwareOrderOnFailureInvalid, wdfdevice/WdfReleaseHardwareOrderOnFailureAfterDescendants, PWDF_RELEASE_HARDWARE_ORDER_ON_FAILURE enumeration pointer, WDF_RELEASE_HARDWARE_ORDER_ON_FAILURE, wdfdevice/WdfReleaseHardwareOrderOnFailureInvalid, _WDF_RELEASE_HARDWARE_ORDER_ON_FAILURE, *PWDF_RELEASE_HARDWARE_ORDER_ON_FAILURE, WdfReleaseHardwareOrderOnFailureEarly, kmdf.wdf_release_hardware_order_on_failure, wdf.wdf_release_hardware_order_on_failure, WdfReleaseHardwareOrderOnFailureAfterDescendants, PWDF_RELEASE_HARDWARE_ORDER_ON_FAILURE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : wdfdevice.h
-req.include-header : Wdf.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.11
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDF_RELEASE_HARDWARE_ORDER_ON_FAILURE, WDF_RELEASE_HARDWARE_ORDER_ON_FAILURE"
-req.product : Windows 10 or later.
+UID: NE:wdfdevice._WDF_RELEASE_HARDWARE_ORDER_ON_FAILURE
+title: "_WDF_RELEASE_HARDWARE_ORDER_ON_FAILURE"
+author: windows-driver-content
+description: The WDF_RELEASE_HARDWARE_ORDER_ON_FAILURE enumeration specifies when the framework calls a driver's EvtDeviceReleaseHardware callback function.
+old-location: wdf\wdf_release_hardware_order_on_failure.htm
+old-project: wdf
+ms.assetid: 534B1E39-6B11-4954-8792-41A25FCA31B2
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WDF_RELEASE_HARDWARE_ORDER_ON_FAILURE enumeration, wdfdevice/WdfReleaseHardwareOrderOnFailureEarly, wdfdevice/WDF_RELEASE_HARDWARE_ORDER_ON_FAILURE, wdfdevice/PWDF_RELEASE_HARDWARE_ORDER_ON_FAILURE, WdfReleaseHardwareOrderOnFailureInvalid, wdfdevice/WdfReleaseHardwareOrderOnFailureAfterDescendants, PWDF_RELEASE_HARDWARE_ORDER_ON_FAILURE enumeration pointer, WDF_RELEASE_HARDWARE_ORDER_ON_FAILURE, wdfdevice/WdfReleaseHardwareOrderOnFailureInvalid, _WDF_RELEASE_HARDWARE_ORDER_ON_FAILURE, *PWDF_RELEASE_HARDWARE_ORDER_ON_FAILURE, WdfReleaseHardwareOrderOnFailureEarly, kmdf.wdf_release_hardware_order_on_failure, wdf.wdf_release_hardware_order_on_failure, WdfReleaseHardwareOrderOnFailureAfterDescendants, PWDF_RELEASE_HARDWARE_ORDER_ON_FAILURE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: wdfdevice.h
+req.include-header: Wdf.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.11
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfdevice.h
+apiname:
+-	WDF_RELEASE_HARDWARE_ORDER_ON_FAILURE
+product: Windows
+targetos: Windows
+req.typenames: "*PWDF_RELEASE_HARDWARE_ORDER_ON_FAILURE, WDF_RELEASE_HARDWARE_ORDER_ON_FAILURE"
+req.product: Windows 10 or later.
 ---
 
 # _WDF_RELEASE_HARDWARE_ORDER_ON_FAILURE Enumeration
@@ -57,26 +62,26 @@ typedef enum _WDF_RELEASE_HARDWARE_ORDER_ON_FAILURE {
 ## Constants
 
 <table>
-
-<tr>
-<td>WdfReleaseHardwareOrderOnFailureAfterDescendants</td>
-<td>The framework always calls the driver's <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_release_hardware.md">EvtDeviceReleaseHardware</a> callback function after it has called the <i>EvtDeviceReleaseHardware</i> function for all child devices that the driver enumerates.</td>
-</tr>
-
-<tr>
-<td>WdfReleaseHardwareOrderOnFailureEarly</td>
-<td>Except under certain error conditions, the framework calls the driver's <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_release_hardware.md">EvtDeviceReleaseHardware</a> callback function after it has called the <i>EvtDeviceReleaseHardware</i> function for all child devices that the driver enumerates. For more information, see Remarks.</td>
-</tr>
-
-<tr>
-<td>WdfReleaseHardwareOrderOnFailureInvalid</td>
-<td>Reserved for system use.</td>
-</tr>
+            
+                <tr>
+                    <td>WdfReleaseHardwareOrderOnFailureAfterDescendants</td>
+                    <td>The framework always calls the driver's <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_release_hardware.md">EvtDeviceReleaseHardware</a> callback function after it has called the <i>EvtDeviceReleaseHardware</i> function for all child devices that the driver enumerates.</td>
+                </tr>
+            
+                <tr>
+                    <td>WdfReleaseHardwareOrderOnFailureEarly</td>
+                    <td>Except under certain error conditions, the framework calls the driver's <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_release_hardware.md">EvtDeviceReleaseHardware</a> callback function after it has called the <i>EvtDeviceReleaseHardware</i> function for all child devices that the driver enumerates. For more information, see Remarks.</td>
+                </tr>
+            
+                <tr>
+                    <td>WdfReleaseHardwareOrderOnFailureInvalid</td>
+                    <td>Reserved for system use.</td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-The <b>WDF_RELEASE_HARDWARE_ORDER_ON_FAILURE</b> enumeration is used as input to  <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetreleasehardwareorderonfailure.md">WdfDeviceInitSetReleaseHardwareOrderOnFailure</a>.
+        The <b>WDF_RELEASE_HARDWARE_ORDER_ON_FAILURE</b> enumeration is used as input to  <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetreleasehardwareorderonfailure.md">WdfDeviceInitSetReleaseHardwareOrderOnFailure</a>.
 
 If a driver specifies <b>WdfReleaseHardwareOrderOnFailureEarly</b>, then in normal device removal, the framework calls the driver's <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_release_hardware.md">EvtDeviceReleaseHardware</a> after it has called the <i>EvtDeviceReleaseHardware</i> function for all child devices that the driver enumerates. However, in the event of a device power-up or power-down failure, the framework might call the  driver's <i>EvtDeviceReleaseHardware</i> before it has called the <i>EvtDeviceReleaseHardware</i> functions for all child devices.
 
@@ -89,9 +94,9 @@ If a driver specifies <b>WdfReleaseHardwareOrderOnFailureAfterDescendants</b>, t
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfdevice.h (include Wdf.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_release_hardware.md">EvtDeviceReleaseHardware</a>
+        <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_release_hardware.md">EvtDeviceReleaseHardware</a>
 
 <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetreleasehardwareorderonfailure.md">WdfDeviceInitSetReleaseHardwareOrderOnFailure</a>
 

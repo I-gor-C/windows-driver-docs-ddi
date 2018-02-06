@@ -1,42 +1,47 @@
 ---
-UID : NC:videoagp.PAGP_FREE_VIRTUAL
-title : PAGP_FREE_VIRTUAL
-author : windows-driver-content
-description : The AgpFreeVirtual function frees virtual memory committed by a previous call to AgpCommitVirtual.
-old-location : display\agpfreevirtual.htm
-old-project : display
-ms.assetid : a6f689ab-8cf1-4207-af2b-30957500c190
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.agpfreevirtual, AgpFreeVirtual callback function [Display Devices], AgpFreeVirtual, PAGP_FREE_VIRTUAL, PAGP_FREE_VIRTUAL, videoagp/AgpFreeVirtual, VideoPort_Functions_49eabd30-2590-466f-b9d4-f2577a7e78e4.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : videoagp.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows 2000 and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VP_SCATTER_GATHER_LIST, *PVP_SCATTER_GATHER_LIST
-req.product : Windows 10 or later.
+UID: NC:videoagp.PAGP_FREE_VIRTUAL
+title: PAGP_FREE_VIRTUAL
+author: windows-driver-content
+description: The AgpFreeVirtual function frees virtual memory committed by a previous call to AgpCommitVirtual.
+old-location: display\agpfreevirtual.htm
+old-project: display
+ms.assetid: a6f689ab-8cf1-4207-af2b-30957500c190
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.agpfreevirtual, AgpFreeVirtual callback function [Display Devices], AgpFreeVirtual, PAGP_FREE_VIRTUAL, PAGP_FREE_VIRTUAL, videoagp/AgpFreeVirtual, VideoPort_Functions_49eabd30-2590-466f-b9d4-f2577a7e78e4.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: videoagp.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows 2000 and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	videoagp.h
+apiname:
+-	AgpFreeVirtual
+product: Windows
+targetos: Windows
+req.typenames: VP_SCATTER_GATHER_LIST, *PVP_SCATTER_GATHER_LIST
+req.product: Windows 10 or later.
 ---
 
 

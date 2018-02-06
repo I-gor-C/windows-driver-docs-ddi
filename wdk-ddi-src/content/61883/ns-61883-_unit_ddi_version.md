@@ -1,41 +1,46 @@
 ---
-UID : NS:61883._UNIT_DDI_VERSION
-title : "_UNIT_DDI_VERSION"
-author : windows-driver-content
-description : The UNIT_DDI_VERSION structure is used in conjunction with the Av61883_GetUnitInfo request to retrieve the current 61883 DDI version.
-old-location : ieee\unit_ddi_version.htm
-old-project : IEEE
-ms.assetid : 421ed5b2-389d-4099-b241-d952fb7e842d
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : 61883/PUNIT_DDI_VERSION, 61883_structures_dacbe4af-54fd-4b96-89e2-6954a623e75d.xml, UNIT_DDI_VERSION structure [Buses], 61883/UNIT_DDI_VERSION, PUNIT_DDI_VERSION, IEEE.unit_ddi_version, *PUNIT_DDI_VERSION, _UNIT_DDI_VERSION, PUNIT_DDI_VERSION structure pointer [Buses], UNIT_DDI_VERSION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : 61883.h
-req.include-header : 61883.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : UNIT_DDI_VERSION, *PUNIT_DDI_VERSION
+UID: NS:61883._UNIT_DDI_VERSION
+title: "_UNIT_DDI_VERSION"
+author: windows-driver-content
+description: The UNIT_DDI_VERSION structure is used in conjunction with the Av61883_GetUnitInfo request to retrieve the current 61883 DDI version.
+old-location: ieee\unit_ddi_version.htm
+old-project: IEEE
+ms.assetid: 421ed5b2-389d-4099-b241-d952fb7e842d
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: 61883/PUNIT_DDI_VERSION, 61883_structures_dacbe4af-54fd-4b96-89e2-6954a623e75d.xml, UNIT_DDI_VERSION structure [Buses], 61883/UNIT_DDI_VERSION, PUNIT_DDI_VERSION, IEEE.unit_ddi_version, *PUNIT_DDI_VERSION, _UNIT_DDI_VERSION, PUNIT_DDI_VERSION structure pointer [Buses], UNIT_DDI_VERSION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: 61883.h
+req.include-header: 61883.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	61883.h
+apiname:
+-	UNIT_DDI_VERSION
+product: Windows
+targetos: Windows
+req.typenames: UNIT_DDI_VERSION, *PUNIT_DDI_VERSION
 ---
 
 # _UNIT_DDI_VERSION structure

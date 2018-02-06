@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dkmddi.DXGKDDIPOWERRUNTIMECONTROLREQUEST
-title : DXGKDDIPOWERRUNTIMECONTROLREQUEST
-author : windows-driver-content
-description : Called by the Power Engine Plug-in (PEP) to exchange information with the display miniport driver. Also called by the Microsoft DirectX graphics kernel subsystem to notify the display miniport driver about certain events.
-old-location : display\dxgkddipowerruntimecontrolrequest.htm
-old-project : display
-ms.assetid : 56535128-3107-4fb5-b0e1-2e913c386cc2
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkddipowerruntimecontrolrequest, DxgkDdiPowerRuntimeControlRequest callback function [Display Devices], DxgkDdiPowerRuntimeControlRequest, PDXGKDDIPOWERRUNTIMECONTROLREQUEST, PDXGKDDIPOWERRUNTIMECONTROLREQUEST, d3dkmddi/DxgkDdiPowerRuntimeControlRequest
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
+UID: NC:d3dkmddi.DXGKDDIPOWERRUNTIMECONTROLREQUEST
+title: DXGKDDIPOWERRUNTIMECONTROLREQUEST
+author: windows-driver-content
+description: Called by the Power Engine Plug-in (PEP) to exchange information with the display miniport driver. Also called by the Microsoft DirectX graphics kernel subsystem to notify the display miniport driver about certain events.
+old-location: display\dxgkddipowerruntimecontrolrequest.htm
+old-project: display
+ms.assetid: 56535128-3107-4fb5-b0e1-2e913c386cc2
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkddipowerruntimecontrolrequest, DxgkDdiPowerRuntimeControlRequest callback function [Display Devices], DxgkDdiPowerRuntimeControlRequest, PDXGKDDIPOWERRUNTIMECONTROLREQUEST, PDXGKDDIPOWERRUNTIMECONTROLREQUEST, d3dkmddi/DxgkDdiPowerRuntimeControlRequest
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	D3dkmddi.h
+apiname:
+-	DxgkDdiPowerRuntimeControlRequest
+product: Windows
+targetos: Windows
+req.typenames: DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
 

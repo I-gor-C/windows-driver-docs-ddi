@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFMemory.GetSize
-title : IWDFMemory::GetSize method
-author : windows-driver-content
-description : The GetSize method retrieves the size of the data buffer that is associated with a memory object.
-old-location : wdf\iwdfmemory_getsize.htm
-old-project : wdf
-ms.assetid : 1ed699a3-20e5-4a1c-bce0-5a681bac9c39
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : UMDFMemoryObjectRef_24a9b921-5760-41fd-8b01-6a21e6be71ed.xml, umdf.iwdfmemory_getsize, IWDFMemory, wudfddi/IWDFMemory::GetSize, wdf.iwdfmemory_getsize, IWDFMemory::GetSize, GetSize method, GetSize, GetSize method, IWDFMemory interface, IWDFMemory interface, GetSize method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.5
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFMemory.GetSize
+title: IWDFMemory::GetSize method
+author: windows-driver-content
+description: The GetSize method retrieves the size of the data buffer that is associated with a memory object.
+old-location: wdf\iwdfmemory_getsize.htm
+old-project: wdf
+ms.assetid: 1ed699a3-20e5-4a1c-bce0-5a681bac9c39
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: UMDFMemoryObjectRef_24a9b921-5760-41fd-8b01-6a21e6be71ed.xml, umdf.iwdfmemory_getsize, IWDFMemory, wudfddi/IWDFMemory::GetSize, wdf.iwdfmemory_getsize, IWDFMemory::GetSize, GetSize method, GetSize, GetSize method, IWDFMemory interface, IWDFMemory interface, GetSize method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.5
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFMemory.GetSize
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

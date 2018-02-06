@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddstor._STORAGE_PREDICT_FAILURE
-title : "_STORAGE_PREDICT_FAILURE"
-author : windows-driver-content
-description : The STORAGE_PREDICT_FAILURE structure is used in conjunction with IOCTL_STORAGE_PREDICT_FAILURE to report whether a device is currently predicting a failure.
-old-location : storage\storage_predict_failure.htm
-old-project : storage
-ms.assetid : 0b88ec6d-a7e0-4bb8-8a12-c7f170ac2334
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : "*PSTORAGE_PREDICT_FAILURE, _STORAGE_PREDICT_FAILURE, ntddstor/PSTORAGE_PREDICT_FAILURE, STORAGE_PREDICT_FAILURE structure [Storage Devices], PSTORAGE_PREDICT_FAILURE, STORAGE_PREDICT_FAILURE, storage.storage_predict_failure, ntddstor/STORAGE_PREDICT_FAILURE, PSTORAGE_PREDICT_FAILURE structure pointer [Storage Devices], structs-general_b1bed4c9-33a9-4adf-a456-e420d1e2f317.xml"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddstor.h
-req.include-header : Ntddstor.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STORAGE_PREDICT_FAILURE, *PSTORAGE_PREDICT_FAILURE
+UID: NS:ntddstor._STORAGE_PREDICT_FAILURE
+title: "_STORAGE_PREDICT_FAILURE"
+author: windows-driver-content
+description: The STORAGE_PREDICT_FAILURE structure is used in conjunction with IOCTL_STORAGE_PREDICT_FAILURE to report whether a device is currently predicting a failure.
+old-location: storage\storage_predict_failure.htm
+old-project: storage
+ms.assetid: 0b88ec6d-a7e0-4bb8-8a12-c7f170ac2334
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: "*PSTORAGE_PREDICT_FAILURE, _STORAGE_PREDICT_FAILURE, ntddstor/PSTORAGE_PREDICT_FAILURE, STORAGE_PREDICT_FAILURE structure [Storage Devices], PSTORAGE_PREDICT_FAILURE, STORAGE_PREDICT_FAILURE, storage.storage_predict_failure, ntddstor/STORAGE_PREDICT_FAILURE, PSTORAGE_PREDICT_FAILURE structure pointer [Storage Devices], structs-general_b1bed4c9-33a9-4adf-a456-e420d1e2f317.xml"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddstor.h
+req.include-header: Ntddstor.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddstor.h
+apiname:
+-	STORAGE_PREDICT_FAILURE
+product: Windows
+targetos: Windows
+req.typenames: STORAGE_PREDICT_FAILURE, *PSTORAGE_PREDICT_FAILURE
 ---
 
 # _STORAGE_PREDICT_FAILURE structure

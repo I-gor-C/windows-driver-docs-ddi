@@ -1,41 +1,46 @@
 ---
-UID : NE:iscsiop.PISCSI_ADAPTER_EVENT_CODE
-title : "*PISCSI_ADAPTER_EVENT_CODE"
-author : windows-driver-content
-description : The ISCSI_ADAPTER_EVENT_CODE enumeration indicates the type of adapter event.
-old-location : storage\iscsi_adapter_event_code.htm
-old-project : storage
-ms.assetid : 65fa2307-8d71-4c83-86b3-a965bd7f3da8
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : iscsiop/PISCSI_ADAPTER_EVENT_CODE, ISCSI_ADAPTER_TARGETS_CHANGED, PISCSI_ADAPTER_EVENT_CODE, ISCSI_ADAPTER_EVENT_CODE enumeration [Storage Devices], PISCSI_ADAPTER_EVENT_CODE enumeration pointer [Storage Devices], iscsiop/ISCSI_ADAPTER_EVENT_CODE, *PISCSI_ADAPTER_EVENT_CODE, iscsiop/ISCSI_ADAPTER_TARGETS_CHANGED, ISCSI_ADAPTER_EVENT_CODE, structs-iSCSI_68c678d4-b753-45f9-96ff-e811e8c374f7.xml, storage.iscsi_adapter_event_code
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : iscsiop.h
-req.include-header : Iscsiop.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : ISCSI_ADAPTER_EVENT_CODE, *PISCSI_ADAPTER_EVENT_CODE
+UID: NE:iscsiop.PISCSI_ADAPTER_EVENT_CODE
+title: "*PISCSI_ADAPTER_EVENT_CODE"
+author: windows-driver-content
+description: The ISCSI_ADAPTER_EVENT_CODE enumeration indicates the type of adapter event.
+old-location: storage\iscsi_adapter_event_code.htm
+old-project: storage
+ms.assetid: 65fa2307-8d71-4c83-86b3-a965bd7f3da8
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: iscsiop/PISCSI_ADAPTER_EVENT_CODE, ISCSI_ADAPTER_TARGETS_CHANGED, PISCSI_ADAPTER_EVENT_CODE, ISCSI_ADAPTER_EVENT_CODE enumeration [Storage Devices], PISCSI_ADAPTER_EVENT_CODE enumeration pointer [Storage Devices], iscsiop/ISCSI_ADAPTER_EVENT_CODE, *PISCSI_ADAPTER_EVENT_CODE, iscsiop/ISCSI_ADAPTER_TARGETS_CHANGED, ISCSI_ADAPTER_EVENT_CODE, structs-iSCSI_68c678d4-b753-45f9-96ff-e811e8c374f7.xml, storage.iscsi_adapter_event_code
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: iscsiop.h
+req.include-header: Iscsiop.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	iscsiop.h
+apiname:
+-	ISCSI_ADAPTER_EVENT_CODE
+product: Windows
+targetos: Windows
+req.typenames: ISCSI_ADAPTER_EVENT_CODE, *PISCSI_ADAPTER_EVENT_CODE
 ---
 
 # *PISCSI_ADAPTER_EVENT_CODE Enumeration
@@ -51,11 +56,11 @@ typedef enum  {
 ## Constants
 
 <table>
-
-<tr>
-<td>ISCSI_ADAPTER_TARGETS_CHANGED</td>
-<td>An adapter discovered that its list of targets changed.</td>
-</tr>
+            
+                <tr>
+                    <td>ISCSI_ADAPTER_TARGETS_CHANGED</td>
+                    <td>An adapter discovered that its list of targets changed.</td>
+                </tr>
 </table>
 
 
@@ -64,9 +69,9 @@ typedef enum  {
 | ---- |:---- |
 | **Header** | iscsiop.h (include Iscsiop.h) |
 
-## See Also
+    ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562971">MSiSCSI_AdapterEvent WMI Class</a>
+        <a href="https://msdn.microsoft.com/library/windows/hardware/ff562971">MSiSCSI_AdapterEvent WMI Class</a>
 
  
 

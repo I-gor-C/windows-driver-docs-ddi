@@ -1,41 +1,46 @@
 ---
-UID : NS:ks.KSAUTOMATION_TABLE_
-title : KSAUTOMATION_TABLE_
-author : windows-driver-content
-description : The KSAUTOMATION_TABLE structure defines a structure that combines tables for properties, methods, and events.
-old-location : stream\ksautomation_table.htm
-old-project : stream
-ms.assetid : 76ab776d-0921-4fdb-9646-2cb97a582f6e
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KSAUTOMATION_TABLE structure [Streaming Media Devices], PKSAUTOMATION_TABLE structure pointer [Streaming Media Devices], avstruct_7389df5c-d86a-43b2-9daf-d0e1e8a2dfbe.xml, stream.ksautomation_table, *PKSAUTOMATION_TABLE, KSAUTOMATION_TABLE, KSAUTOMATION_TABLE_, ks/PKSAUTOMATION_TABLE, PKSAUTOMATION_TABLE, ks/KSAUTOMATION_TABLE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and in Microsoft DirectX 8.0 and later versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KSAUTOMATION_TABLE, *PKSAUTOMATION_TABLE
+UID: NS:ks.KSAUTOMATION_TABLE_
+title: KSAUTOMATION_TABLE_
+author: windows-driver-content
+description: The KSAUTOMATION_TABLE structure defines a structure that combines tables for properties, methods, and events.
+old-location: stream\ksautomation_table.htm
+old-project: stream
+ms.assetid: 76ab776d-0921-4fdb-9646-2cb97a582f6e
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KSAUTOMATION_TABLE structure [Streaming Media Devices], PKSAUTOMATION_TABLE structure pointer [Streaming Media Devices], avstruct_7389df5c-d86a-43b2-9daf-d0e1e8a2dfbe.xml, stream.ksautomation_table, *PKSAUTOMATION_TABLE, KSAUTOMATION_TABLE, KSAUTOMATION_TABLE_, ks/PKSAUTOMATION_TABLE, PKSAUTOMATION_TABLE, ks/KSAUTOMATION_TABLE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and in Microsoft DirectX 8.0 and later versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	KSAUTOMATION_TABLE
+product: Windows
+targetos: Windows
+req.typenames: KSAUTOMATION_TABLE, *PKSAUTOMATION_TABLE
 ---
 
 # KSAUTOMATION_TABLE_ structure

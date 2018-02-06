@@ -1,42 +1,48 @@
 ---
-UID : NF:storport.StorPortRegistryWrite
-title : StorPortRegistryWrite function
-author : windows-driver-content
-description : The StorPortRegistryWrite routine is called by the miniport driver to convert the registry data contained in a specified buffer from ASCII to Unicode and to then write the data to the miniport driver's per-HBA storage area.
-old-location : storage\storportregistrywrite.htm
-old-project : storage
-ms.assetid : 9f149e86-7855-4a10-8e0c-8b1aff261946
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : StorPortRegistryWrite routine [Storage Devices], StorPortRegistryWrite, storprt_dda4d4a4-d312-4076-8b72-842517a701c5.xml, storport/StorPortRegistryWrite, storage.storportregistrywrite
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : StorPortIrql
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Storport.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STOR_SPINLOCK
-req.product : Windows 10 or later.
+UID: NF:storport.StorPortRegistryWrite
+title: StorPortRegistryWrite function
+author: windows-driver-content
+description: The StorPortRegistryWrite routine is called by the miniport driver to convert the registry data contained in a specified buffer from ASCII to Unicode and to then write the data to the miniport driver's per-HBA storage area.
+old-location: storage\storportregistrywrite.htm
+old-project: storage
+ms.assetid: 9f149e86-7855-4a10-8e0c-8b1aff261946
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: StorPortRegistryWrite routine [Storage Devices], StorPortRegistryWrite, storprt_dda4d4a4-d312-4076-8b72-842517a701c5.xml, storport/StorPortRegistryWrite, storage.storportregistrywrite
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: StorPortIrql
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Storport.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Storport.lib
+-	Storport.dll
+apiname:
+-	StorPortRegistryWrite
+product: Windows
+targetos: Windows
+req.typenames: STOR_SPINLOCK
+req.product: Windows 10 or later.
 ---
 
 

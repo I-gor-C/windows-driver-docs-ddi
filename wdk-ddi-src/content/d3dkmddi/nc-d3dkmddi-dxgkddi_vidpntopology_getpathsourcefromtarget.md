@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dkmddi.DXGKDDI_VIDPNTOPOLOGY_GETPATHSOURCEFROMTARGET
-title : DXGKDDI_VIDPNTOPOLOGY_GETPATHSOURCEFROMTARGET
-author : windows-driver-content
-description : The pfnGetPathSourceFromTarget function returns the identifier of the video present source that is associated with a specified video present target.
-old-location : display\dxgk_vidpntopology_interface_pfngetpathsourcefromtarget.htm
-old-project : display
-ms.assetid : c3e7b025-2382-4a81-8d78-9333b62b556a
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgk_vidpntopology_interface_pfngetpathsourcefromtarget, pfnGetPathSourceFromTarget callback function [Display Devices], pfnGetPathSourceFromTarget, DXGKDDI_VIDPNTOPOLOGY_GETPATHSOURCEFROMTARGET, DXGKDDI_VIDPNTOPOLOGY_GETPATHSOURCEFROMTARGET, d3dkmddi/pfnGetPathSourceFromTarget, VidPnFunctions_a6324165-7203-455f-8b96-40cf1a0dfb14.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
+UID: NC:d3dkmddi.DXGKDDI_VIDPNTOPOLOGY_GETPATHSOURCEFROMTARGET
+title: DXGKDDI_VIDPNTOPOLOGY_GETPATHSOURCEFROMTARGET
+author: windows-driver-content
+description: The pfnGetPathSourceFromTarget function returns the identifier of the video present source that is associated with a specified video present target.
+old-location: display\dxgk_vidpntopology_interface_pfngetpathsourcefromtarget.htm
+old-project: display
+ms.assetid: c3e7b025-2382-4a81-8d78-9333b62b556a
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgk_vidpntopology_interface_pfngetpathsourcefromtarget, pfnGetPathSourceFromTarget callback function [Display Devices], pfnGetPathSourceFromTarget, DXGKDDI_VIDPNTOPOLOGY_GETPATHSOURCEFROMTARGET, DXGKDDI_VIDPNTOPOLOGY_GETPATHSOURCEFROMTARGET, d3dkmddi/pfnGetPathSourceFromTarget, VidPnFunctions_a6324165-7203-455f-8b96-40cf1a0dfb14.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	pfnGetPathSourceFromTarget
+product: Windows
+targetos: Windows
+req.typenames: DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NS:wdm._PCI_MSIX_TABLE_CONFIG_INTERFACE
-title : "_PCI_MSIX_TABLE_CONFIG_INTERFACE"
-author : windows-driver-content
-description : The PCI_MSIX_TABLE_CONFIG_INTERFACE structure enables device drivers to modify their MSI-X interrupt settings. This structure describes the GUID_MSIX_TABLE_CONFIG_INTERFACE interface.
-old-location : kernel\pci_msix_table_config_interface.htm
-old-project : kernel
-ms.assetid : 0809a963-a0e7-49ca-b483-c39f1606051e
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/PCI_MSIX_TABLE_CONFIG_INTERFACE, PPCI_MSIX_TABLE_CONFIG_INTERFACE, wdm/PPCI_MSIX_TABLE_CONFIG_INTERFACE, PCI_MSIX_TABLE_CONFIG_INTERFACE structure [Kernel-Mode Driver Architecture], drvr_interface_86de1cfb-1eac-442b-a154-6f23fcab87cd.xml, _PCI_MSIX_TABLE_CONFIG_INTERFACE, kernel.pci_msix_table_config_interface, PPCI_MSIX_TABLE_CONFIG_INTERFACE structure pointer [Kernel-Mode Driver Architecture], *PPCI_MSIX_TABLE_CONFIG_INTERFACE, PCI_MSIX_TABLE_CONFIG_INTERFACE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista with Service Pack 1 (SP1), Windows Server 2008, and later versions of the Windows operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPCI_MSIX_TABLE_CONFIG_INTERFACE, PCI_MSIX_TABLE_CONFIG_INTERFACE"
-req.product : Windows 10 or later.
+UID: NS:wdm._PCI_MSIX_TABLE_CONFIG_INTERFACE
+title: "_PCI_MSIX_TABLE_CONFIG_INTERFACE"
+author: windows-driver-content
+description: The PCI_MSIX_TABLE_CONFIG_INTERFACE structure enables device drivers to modify their MSI-X interrupt settings. This structure describes the GUID_MSIX_TABLE_CONFIG_INTERFACE interface.
+old-location: kernel\pci_msix_table_config_interface.htm
+old-project: kernel
+ms.assetid: 0809a963-a0e7-49ca-b483-c39f1606051e
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/PCI_MSIX_TABLE_CONFIG_INTERFACE, PPCI_MSIX_TABLE_CONFIG_INTERFACE, wdm/PPCI_MSIX_TABLE_CONFIG_INTERFACE, PCI_MSIX_TABLE_CONFIG_INTERFACE structure [Kernel-Mode Driver Architecture], drvr_interface_86de1cfb-1eac-442b-a154-6f23fcab87cd.xml, _PCI_MSIX_TABLE_CONFIG_INTERFACE, kernel.pci_msix_table_config_interface, PPCI_MSIX_TABLE_CONFIG_INTERFACE structure pointer [Kernel-Mode Driver Architecture], *PPCI_MSIX_TABLE_CONFIG_INTERFACE, PCI_MSIX_TABLE_CONFIG_INTERFACE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista with Service Pack 1 (SP1), Windows Server 2008, and later versions of the Windows operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	PCI_MSIX_TABLE_CONFIG_INTERFACE
+product: Windows
+targetos: Windows
+req.typenames: "*PPCI_MSIX_TABLE_CONFIG_INTERFACE, PCI_MSIX_TABLE_CONFIG_INTERFACE"
+req.product: Windows 10 or later.
 ---
 
 # _PCI_MSIX_TABLE_CONFIG_INTERFACE structure

@@ -1,42 +1,47 @@
 ---
-UID : NC:usbbusif.USBC_START_DEVICE_CALLBACK
-title : USBC_START_DEVICE_CALLBACK
-author : windows-driver-content
-description : The USBC_START_DEVICE_CALLBACK routine allows a USB client driver to provide a custom definition of the interface collections on a device.
-old-location : buses\usbc_start_device_callback.htm
-old-project : usbref
-ms.assetid : f9a9510a-b55c-4566-83ce-4ed7ccafb543
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : buses.usbc_start_device_callback, UsbcStartDeviceCallback callback function [Buses], UsbcStartDeviceCallback, USBC_START_DEVICE_CALLBACK, USBC_START_DEVICE_CALLBACK, usbbusif/UsbcStartDeviceCallback, usbinterKR_d70617c5-be67-4660-9aa3-76b4c66c2616.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : usbbusif.h
-req.include-header : Usbbusif.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUSBD_VERSION_INFORMATION, USBD_VERSION_INFORMATION"
-req.product : Windows 10 or later.
+UID: NC:usbbusif.USBC_START_DEVICE_CALLBACK
+title: USBC_START_DEVICE_CALLBACK
+author: windows-driver-content
+description: The USBC_START_DEVICE_CALLBACK routine allows a USB client driver to provide a custom definition of the interface collections on a device.
+old-location: buses\usbc_start_device_callback.htm
+old-project: usbref
+ms.assetid: f9a9510a-b55c-4566-83ce-4ed7ccafb543
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: buses.usbc_start_device_callback, UsbcStartDeviceCallback callback function [Buses], UsbcStartDeviceCallback, USBC_START_DEVICE_CALLBACK, USBC_START_DEVICE_CALLBACK, usbbusif/UsbcStartDeviceCallback, usbinterKR_d70617c5-be67-4660-9aa3-76b4c66c2616.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: usbbusif.h
+req.include-header: Usbbusif.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	usbbusif.h
+apiname:
+-	UsbcStartDeviceCallback
+product: Windows
+targetos: Windows
+req.typenames: "*PUSBD_VERSION_INFORMATION, USBD_VERSION_INFORMATION"
+req.product: Windows 10 or later.
 ---
 
 

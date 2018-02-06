@@ -1,41 +1,46 @@
 ---
-UID : NF:portcls.IAdapterPowerManagement.PowerChangeState
-title : IAdapterPowerManagement::PowerChangeState method
-author : windows-driver-content
-description : The PowerChangeState method requests that the device change to a new power state.
-old-location : audio\iadapterpowermanagement_powerchangestate.htm
-old-project : audio
-ms.assetid : b3e0fca7-d5ab-4d52-9702-dae83c540a71
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : IAdapterPowerManagement interface [Audio Devices], PowerChangeState method, PowerChangeState method [Audio Devices], IAdapterPowerManagement interface, audio.iadapterpowermanagement_powerchangestate, portcls/IAdapterPowerManagement::PowerChangeState, IAdapterPowerManagement::PowerChangeState, PowerChangeState, audmp-routines_7898e689-94c5-4577-80d8-a88676cd44dc.xml, PowerChangeState method [Audio Devices], IAdapterPowerManagement
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : portcls.h
-req.include-header : Portcls.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : portcls.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.IAdapterPowerManagement.PowerChangeState
+title: IAdapterPowerManagement::PowerChangeState method
+author: windows-driver-content
+description: The PowerChangeState method requests that the device change to a new power state.
+old-location: audio\iadapterpowermanagement_powerchangestate.htm
+old-project: audio
+ms.assetid: b3e0fca7-d5ab-4d52-9702-dae83c540a71
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: IAdapterPowerManagement interface [Audio Devices], PowerChangeState method, PowerChangeState method [Audio Devices], IAdapterPowerManagement interface, audio.iadapterpowermanagement_powerchangestate, portcls/IAdapterPowerManagement::PowerChangeState, IAdapterPowerManagement::PowerChangeState, PowerChangeState, audmp-routines_7898e689-94c5-4577-80d8-a88676cd44dc.xml, PowerChangeState method [Audio Devices], IAdapterPowerManagement
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: portcls.h
+req.include-header: Portcls.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: portcls.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	portcls.h
+apiname:
+-	IAdapterPowerManagement.PowerChangeState
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

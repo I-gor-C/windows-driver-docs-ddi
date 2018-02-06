@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dukmdt._D3DDDICB_LOCKFLAGS
-title : "_D3DDDICB_LOCKFLAGS"
-author : windows-driver-content
-description : The D3DDDICB_LOCKFLAGS structure identifies how to lock an allocation.
-old-location : display\d3dddicb_lockflags.htm
-old-project : display
-ms.assetid : 4b3a266f-4d60-4d39-81fb-ea2b4aa12a8d
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.d3dddicb_lockflags, D3DDDICB_LOCKFLAGS structure [Display Devices], _D3DDDICB_LOCKFLAGS, D3D_other_Structs_6238800f-60d9-472d-aa18-10343abbcee7.xml, D3DDDICB_LOCKFLAGS, d3dukmdt/D3DDDICB_LOCKFLAGS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dukmdt.h
-req.include-header : D3dukmdt.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDICB_LOCKFLAGS
+UID: NS:d3dukmdt._D3DDDICB_LOCKFLAGS
+title: "_D3DDDICB_LOCKFLAGS"
+author: windows-driver-content
+description: The D3DDDICB_LOCKFLAGS structure identifies how to lock an allocation.
+old-location: display\d3dddicb_lockflags.htm
+old-project: display
+ms.assetid: 4b3a266f-4d60-4d39-81fb-ea2b4aa12a8d
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.d3dddicb_lockflags, D3DDDICB_LOCKFLAGS structure [Display Devices], _D3DDDICB_LOCKFLAGS, D3D_other_Structs_6238800f-60d9-472d-aa18-10343abbcee7.xml, D3DDDICB_LOCKFLAGS, d3dukmdt/D3DDDICB_LOCKFLAGS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dukmdt.h
+req.include-header: D3dukmdt.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dukmdt.h
+apiname:
+-	D3DDDICB_LOCKFLAGS
+product: Windows
+targetos: Windows
+req.typenames: D3DDDICB_LOCKFLAGS
 ---
 
 # _D3DDDICB_LOCKFLAGS structure

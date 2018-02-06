@@ -1,42 +1,48 @@
 ---
-UID : NF:wdm.ZwMakeTemporaryObject
-title : ZwMakeTemporaryObject function
-author : windows-driver-content
-description : The ZwMakeTemporaryObject routine changes the attributes of an object to make it temporary.
-old-location : kernel\zwmaketemporaryobject.htm
-old-project : kernel
-ms.assetid : 1b58174f-aa38-4ea3-8e08-41434684e9ef
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ZwMakeTemporaryObject routine [Kernel-Mode Driver Architecture], k111_54a6768d-3f33-4c9e-8068-810401cad810.xml, kernel.zwmaketemporaryobject, wdm/NtMakeTemporaryObject, ZwMakeTemporaryObject, wdm/ZwMakeTemporaryObject, NtMakeTemporaryObject
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ZwMakeTemporaryObject
+title: ZwMakeTemporaryObject function
+author: windows-driver-content
+description: The ZwMakeTemporaryObject routine changes the attributes of an object to make it temporary.
+old-location: kernel\zwmaketemporaryobject.htm
+old-project: kernel
+ms.assetid: 1b58174f-aa38-4ea3-8e08-41434684e9ef
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ZwMakeTemporaryObject routine [Kernel-Mode Driver Architecture], k111_54a6768d-3f33-4c9e-8068-810401cad810.xml, kernel.zwmaketemporaryobject, wdm/NtMakeTemporaryObject, ZwMakeTemporaryObject, wdm/ZwMakeTemporaryObject, NtMakeTemporaryObject
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ZwMakeTemporaryObject
+-	NtMakeTemporaryObject
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

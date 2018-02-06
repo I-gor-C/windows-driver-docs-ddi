@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddk._FILE_END_OF_FILE_INFORMATION
-title : "_FILE_END_OF_FILE_INFORMATION"
-author : windows-driver-content
-description : The FILE_END_OF_FILE_INFORMATION structure is used as an argument to the ZwSetInformationFile routine.
-old-location : kernel\file_end_of_file_information.htm
-old-project : kernel
-ms.assetid : 9af172d9-2309-4731-82bf-55ec99c475a6
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.file_end_of_file_information, ntddk/FILE_END_OF_FILE_INFORMATION, PFILE_END_OF_FILE_INFORMATION structure pointer [Kernel-Mode Driver Architecture], PFILE_END_OF_FILE_INFORMATION, FILE_END_OF_FILE_INFORMATION, ntddk/PFILE_END_OF_FILE_INFORMATION, _FILE_END_OF_FILE_INFORMATION, *PFILE_END_OF_FILE_INFORMATION, kstruct_b_6c41bbd0-64be-4765-b79c-09e2dd86fa6f.xml, FILE_END_OF_FILE_INFORMATION structure [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddk.h
-req.include-header : Ntddk.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FILE_END_OF_FILE_INFORMATION, *PFILE_END_OF_FILE_INFORMATION
+UID: NS:ntddk._FILE_END_OF_FILE_INFORMATION
+title: "_FILE_END_OF_FILE_INFORMATION"
+author: windows-driver-content
+description: The FILE_END_OF_FILE_INFORMATION structure is used as an argument to the ZwSetInformationFile routine.
+old-location: kernel\file_end_of_file_information.htm
+old-project: kernel
+ms.assetid: 9af172d9-2309-4731-82bf-55ec99c475a6
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.file_end_of_file_information, ntddk/FILE_END_OF_FILE_INFORMATION, PFILE_END_OF_FILE_INFORMATION structure pointer [Kernel-Mode Driver Architecture], PFILE_END_OF_FILE_INFORMATION, FILE_END_OF_FILE_INFORMATION, ntddk/PFILE_END_OF_FILE_INFORMATION, _FILE_END_OF_FILE_INFORMATION, *PFILE_END_OF_FILE_INFORMATION, kstruct_b_6c41bbd0-64be-4765-b79c-09e2dd86fa6f.xml, FILE_END_OF_FILE_INFORMATION structure [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddk.h
+req.include-header: Ntddk.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddk.h
+apiname:
+-	FILE_END_OF_FILE_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: FILE_END_OF_FILE_INFORMATION, *PFILE_END_OF_FILE_INFORMATION
 ---
 
 # _FILE_END_OF_FILE_INFORMATION structure

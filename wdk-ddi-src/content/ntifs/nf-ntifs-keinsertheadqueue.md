@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.KeInsertHeadQueue
-title : KeInsertHeadQueue function
-author : windows-driver-content
-description : The KeInsertHeadQueue routine inserts an entry at the head of the given queue if it cannot immediately use the entry to satisfy a thread wait.
-old-location : ifsk\keinsertheadqueue.htm
-old-project : ifsk
-ms.assetid : 82e0bf14-b751-4919-b8d0-26fc7c5598a8
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : keref_a3279265-434b-42d6-95d9-5a8a12f54c9b.xml, ifsk.keinsertheadqueue, ntifs/KeInsertHeadQueue, KeInsertHeadQueue, KeInsertHeadQueue routine [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.KeInsertHeadQueue
+title: KeInsertHeadQueue function
+author: windows-driver-content
+description: The KeInsertHeadQueue routine inserts an entry at the head of the given queue if it cannot immediately use the entry to satisfy a thread wait.
+old-location: ifsk\keinsertheadqueue.htm
+old-project: ifsk
+ms.assetid: 82e0bf14-b751-4919-b8d0-26fc7c5598a8
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: keref_a3279265-434b-42d6-95d9-5a8a12f54c9b.xml, ifsk.keinsertheadqueue, ntifs/KeInsertHeadQueue, KeInsertHeadQueue, KeInsertHeadQueue routine [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	KeInsertHeadQueue
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

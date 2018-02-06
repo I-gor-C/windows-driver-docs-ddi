@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.CcPinMappedData
-title : CcPinMappedData function
-author : windows-driver-content
-description : The CcPinMappedData routine pins the specified byte range of a cached file.
-old-location : ifsk\ccpinmappeddata.htm
-old-project : ifsk
-ms.assetid : aa0903db-fced-4af9-bfc9-2769ed4962a1
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.ccpinmappeddata, CcPinMappedData, ccref_3935eee3-9906-4110-812f-ca186953cfbf.xml, ntifs/CcPinMappedData, CcPinMappedData routine [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.CcPinMappedData
+title: CcPinMappedData function
+author: windows-driver-content
+description: The CcPinMappedData routine pins the specified byte range of a cached file.
+old-location: ifsk\ccpinmappeddata.htm
+old-project: ifsk
+ms.assetid: aa0903db-fced-4af9-bfc9-2769ed4962a1
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.ccpinmappeddata, CcPinMappedData, ccref_3935eee3-9906-4110-812f-ca186953cfbf.xml, ntifs/CcPinMappedData, CcPinMappedData routine [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	CcPinMappedData
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NF:portcls.IRegistryKey.QueryRegistryValues
-title : IRegistryKey::QueryRegistryValues method
-author : windows-driver-content
-description : The QueryRegistryValues method allows the caller to query several values from the registry with a single call.
-old-location : audio\iregistrykey_queryregistryvalues.htm
-old-project : audio
-ms.assetid : eb3aa7ec-65f7-4e3d-8059-e9627de9818c
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : portcls/IRegistryKey::QueryRegistryValues, QueryRegistryValues, QueryRegistryValues method [Audio Devices], audmp-routines_b2601a0c-3b8f-4e2b-868c-cf189eca7e05.xml, IRegistryKey interface [Audio Devices], QueryRegistryValues method, IRegistryKey::QueryRegistryValues, IRegistryKey, QueryRegistryValues method [Audio Devices], IRegistryKey interface, audio.iregistrykey_queryregistryvalues
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : portcls.h
-req.include-header : Portcls.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : portcls.h
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.IRegistryKey.QueryRegistryValues
+title: IRegistryKey::QueryRegistryValues method
+author: windows-driver-content
+description: The QueryRegistryValues method allows the caller to query several values from the registry with a single call.
+old-location: audio\iregistrykey_queryregistryvalues.htm
+old-project: audio
+ms.assetid: eb3aa7ec-65f7-4e3d-8059-e9627de9818c
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: portcls/IRegistryKey::QueryRegistryValues, QueryRegistryValues, QueryRegistryValues method [Audio Devices], audmp-routines_b2601a0c-3b8f-4e2b-868c-cf189eca7e05.xml, IRegistryKey interface [Audio Devices], QueryRegistryValues method, IRegistryKey::QueryRegistryValues, IRegistryKey, QueryRegistryValues method [Audio Devices], IRegistryKey interface, audio.iregistrykey_queryregistryvalues
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: portcls.h
+req.include-header: Portcls.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: portcls.h
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	portcls.h
+apiname:
+-	IRegistryKey.QueryRegistryValues
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

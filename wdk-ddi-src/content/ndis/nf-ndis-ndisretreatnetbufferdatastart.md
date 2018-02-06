@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisRetreatNetBufferDataStart
-title : NdisRetreatNetBufferDataStart function
-author : windows-driver-content
-description : Call the NdisRetreatNetBufferDataStart function to access more used data space in the MDL chain of a NET_BUFFER structure.
-old-location : netvista\ndisretreatnetbufferdatastart.htm
-old-project : netvista
-ms.assetid : 4b58a1dc-8a5a-464b-a2a2-deb952febe25
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NdisRetreatNetBufferDataStart, netvista.ndisretreatnetbufferdatastart, ndis/NdisRetreatNetBufferDataStart, NdisRetreatNetBufferDataStart function [Network Drivers Starting with Windows Vista], ndis_netbuf_functions_ref_1075cc2e-490a-4b90-93d9-269e226e8dde.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_NetBuffer_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisRetreatNetBufferDataStart
+title: NdisRetreatNetBufferDataStart function
+author: windows-driver-content
+description: Call the NdisRetreatNetBufferDataStart function to access more used data space in the MDL chain of a NET_BUFFER structure.
+old-location: netvista\ndisretreatnetbufferdatastart.htm
+old-project: netvista
+ms.assetid: 4b58a1dc-8a5a-464b-a2a2-deb952febe25
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NdisRetreatNetBufferDataStart, netvista.ndisretreatnetbufferdatastart, ndis/NdisRetreatNetBufferDataStart, NdisRetreatNetBufferDataStart function [Network Drivers Starting with Windows Vista], ndis_netbuf_functions_ref_1075cc2e-490a-4b90-93d9-269e226e8dde.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_NetBuffer_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisRetreatNetBufferDataStart
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

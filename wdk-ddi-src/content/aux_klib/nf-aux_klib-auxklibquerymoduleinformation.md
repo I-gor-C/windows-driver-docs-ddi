@@ -1,41 +1,47 @@
 ---
-UID : NF:aux_klib.AuxKlibQueryModuleInformation
-title : AuxKlibQueryModuleInformation function
-author : windows-driver-content
-description : The AuxKlibQueryModuleInformation routine retrieves information about the image modules that the operating system has loaded.
-old-location : kernel\auxklibquerymoduleinformation.htm
-old-project : kernel
-ms.assetid : 5e267d53-4e92-4c94-8a59-93d3c79574dd
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : aux_klib/AuxKlibQueryModuleInformation, kernel.auxklibquerymoduleinformation, aux_klib_555c5806-0b0d-48c1-9c50-b0496fb4e807.xml, AuxKlibQueryModuleInformation routine [Kernel-Mode Driver Architecture], AuxKlibQueryModuleInformation
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : aux_klib.h
-req.include-header : Aux_klib.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Aux_Klib.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : REPORT_ZONES_EXT_DATA, *PREPORT_ZONES_EXT_DATA
+UID: NF:aux_klib.AuxKlibQueryModuleInformation
+title: AuxKlibQueryModuleInformation function
+author: windows-driver-content
+description: The AuxKlibQueryModuleInformation routine retrieves information about the image modules that the operating system has loaded.
+old-location: kernel\auxklibquerymoduleinformation.htm
+old-project: kernel
+ms.assetid: 5e267d53-4e92-4c94-8a59-93d3c79574dd
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: aux_klib/AuxKlibQueryModuleInformation, kernel.auxklibquerymoduleinformation, aux_klib_555c5806-0b0d-48c1-9c50-b0496fb4e807.xml, AuxKlibQueryModuleInformation routine [Kernel-Mode Driver Architecture], AuxKlibQueryModuleInformation
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: aux_klib.h
+req.include-header: Aux_klib.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Aux_Klib.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Aux_Klib.lib
+-	Aux_Klib.dll
+apiname:
+-	AuxKlibQueryModuleInformation
+product: Windows
+targetos: Windows
+req.typenames: REPORT_ZONES_EXT_DATA, *PREPORT_ZONES_EXT_DATA
 ---
 
 

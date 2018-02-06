@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltSetCancelCompletion
-title : FltSetCancelCompletion function
-author : windows-driver-content
-description : A minifilter driver calls FltSetCancelCompletion to specify a cancel routine to be called if a given I/O operation is canceled.
-old-location : ifsk\fltsetcancelcompletion.htm
-old-project : ifsk
-ms.assetid : 3f15d3b2-321d-45ca-8fe4-d8706fe61d48
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltSetCancelCompletion routine [Installable File System Drivers], FltSetCancelCompletion, FltApiRef_p_to_z_36fb8e4e-a50b-4b9c-a208-9d6189f5b5a7.xml, ifsk.fltsetcancelcompletion, fltkernel/FltSetCancelCompletion
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltSetCancelCompletion
+title: FltSetCancelCompletion function
+author: windows-driver-content
+description: A minifilter driver calls FltSetCancelCompletion to specify a cancel routine to be called if a given I/O operation is canceled.
+old-location: ifsk\fltsetcancelcompletion.htm
+old-project: ifsk
+ms.assetid: 3f15d3b2-321d-45ca-8fe4-d8706fe61d48
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltSetCancelCompletion routine [Installable File System Drivers], FltSetCancelCompletion, FltApiRef_p_to_z_36fb8e4e-a50b-4b9c-a208-9d6189f5b5a7.xml, ifsk.fltsetcancelcompletion, fltkernel/FltSetCancelCompletion
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltSetCancelCompletion
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

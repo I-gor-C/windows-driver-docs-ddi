@@ -1,42 +1,47 @@
 ---
-UID : NC:wdm.PFREE_COMMON_BUFFER
-title : PFREE_COMMON_BUFFER
-author : windows-driver-content
-description : The FreeCommonBuffer routine frees a common buffer allocated by AllocateCommonBuffer, along with all resources the buffer uses.
-old-location : kernel\freecommonbuffer.htm
-old-project : kernel
-ms.assetid : 9e026bde-657a-42ea-907c-71cc217dbd8d
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.freecommonbuffer, FreeCommonBuffer, FreeCommonBuffer callback function [Kernel-Mode Driver Architecture], FreeCommonBuffer, PFREE_COMMON_BUFFER, PFREE_COMMON_BUFFER, wdm/FreeCommonBuffer, kdma_73f76fbd-2641-4002-90c8-ca412e969418.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : IrqlDispatch
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
-req.product : Windows 10 or later.
+UID: NC:wdm.PFREE_COMMON_BUFFER
+title: PFREE_COMMON_BUFFER
+author: windows-driver-content
+description: The FreeCommonBuffer routine frees a common buffer allocated by AllocateCommonBuffer, along with all resources the buffer uses.
+old-location: kernel\freecommonbuffer.htm
+old-project: kernel
+ms.assetid: 9e026bde-657a-42ea-907c-71cc217dbd8d
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.freecommonbuffer, FreeCommonBuffer, FreeCommonBuffer callback function [Kernel-Mode Driver Architecture], FreeCommonBuffer, PFREE_COMMON_BUFFER, PFREE_COMMON_BUFFER, wdm/FreeCommonBuffer, kdma_73f76fbd-2641-4002-90c8-ca412e969418.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: IrqlDispatch
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	wdm.h
+apiname:
+-	FreeCommonBuffer
+product: Windows
+targetos: Windows
+req.typenames: WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+req.product: Windows 10 or later.
 ---
 
 

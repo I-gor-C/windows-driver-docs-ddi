@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.CcFlushCache
-title : CcFlushCache function
-author : windows-driver-content
-description : The CcFlushCache routine flushes all or a portion of a cached file to disk.
-old-location : ifsk\ccflushcache.htm
-old-project : ifsk
-ms.assetid : 06bb49bc-56e6-42fc-ae52-c954507d2a3f
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ntifs/CcFlushCache, ifsk.ccflushcache, ccref_089656c6-a12e-4e74-a72d-7f0182f3c3dd.xml, CcFlushCache, CcFlushCache routine [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.CcFlushCache
+title: CcFlushCache function
+author: windows-driver-content
+description: The CcFlushCache routine flushes all or a portion of a cached file to disk.
+old-location: ifsk\ccflushcache.htm
+old-project: ifsk
+ms.assetid: 06bb49bc-56e6-42fc-ae52-c954507d2a3f
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ntifs/CcFlushCache, ifsk.ccflushcache, ccref_089656c6-a12e-4e74-a72d-7f0182f3c3dd.xml, CcFlushCache, CcFlushCache routine [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	CcFlushCache
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

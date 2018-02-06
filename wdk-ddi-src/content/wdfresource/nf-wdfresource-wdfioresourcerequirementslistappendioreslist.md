@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfresource.WdfIoResourceRequirementsListAppendIoResList
-title : WdfIoResourceRequirementsListAppendIoResList function
-author : windows-driver-content
-description : The WdfIoResourceRequirementsListAppendIoResList method adds a logical configuration to the end of a resource requirements list.
-old-location : wdf\wdfioresourcerequirementslistappendioreslist.htm
-old-project : wdf
-ms.assetid : efb3617d-86be-4380-ad1a-0a333d248168
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.wdfioresourcerequirementslistappendioreslist, DFResourceObjectRef_1d064295-4660-4112-9512-9c5ff7196485.xml, wdfresource/WdfIoResourceRequirementsListAppendIoResList, WdfIoResourceRequirementsListAppendIoResList method, PFN_WDFIORESOURCEREQUIREMENTSLISTAPPENDIORESLIST, WdfIoResourceRequirementsListAppendIoResList, kmdf.wdfioresourcerequirementslistappendioreslist
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfresource.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_REQUEST_SEND_OPTIONS, *PWDF_REQUEST_SEND_OPTIONS
-req.product : Windows 10 or later.
+UID: NF:wdfresource.WdfIoResourceRequirementsListAppendIoResList
+title: WdfIoResourceRequirementsListAppendIoResList function
+author: windows-driver-content
+description: The WdfIoResourceRequirementsListAppendIoResList method adds a logical configuration to the end of a resource requirements list.
+old-location: wdf\wdfioresourcerequirementslistappendioreslist.htm
+old-project: wdf
+ms.assetid: efb3617d-86be-4380-ad1a-0a333d248168
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.wdfioresourcerequirementslistappendioreslist, DFResourceObjectRef_1d064295-4660-4112-9512-9c5ff7196485.xml, wdfresource/WdfIoResourceRequirementsListAppendIoResList, WdfIoResourceRequirementsListAppendIoResList method, PFN_WDFIORESOURCEREQUIREMENTSLISTAPPENDIORESLIST, WdfIoResourceRequirementsListAppendIoResList, kmdf.wdfioresourcerequirementslistappendioreslist
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfresource.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfIoResourceRequirementsListAppendIoResList
+product: Windows
+targetos: Windows
+req.typenames: WDF_REQUEST_SEND_OPTIONS, *PWDF_REQUEST_SEND_OPTIONS
+req.product: Windows 10 or later.
 ---
 
 

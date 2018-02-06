@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddndis._OFFLOAD_IPSEC_ADD_SA
-title : "_OFFLOAD_IPSEC_ADD_SA"
-author : windows-driver-content
-description : The OFFLOAD_IPSEC_ADD_SA structure contains information for each security association (SA) that a miniport driver adds to a NIC.
-old-location : netvista\offload_ipsec_add_sa.htm
-old-project : netvista
-ms.assetid : 592d338c-8ab0-4163-bcfa-75c941b83c3d
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : OFFLOAD_IPSEC_ADD_SA, ntddndis/POFFLOAD_IPSEC_ADD_SA, *POFFLOAD_IPSEC_ADD_SA, netvista.offload_ipsec_add_sa, 216offload_12f95ec9-ed81-43cc-b90d-fe06600ec349.xml, _OFFLOAD_IPSEC_ADD_SA, OFFLOAD_IPSEC_ADD_SA structure [Network Drivers Starting with Windows Vista], ntddndis/OFFLOAD_IPSEC_ADD_SA, POFFLOAD_IPSEC_ADD_SA structure pointer [Network Drivers Starting with Windows Vista], POFFLOAD_IPSEC_ADD_SA
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : OFFLOAD_IPSEC_ADD_SA, *POFFLOAD_IPSEC_ADD_SA
+UID: NS:ntddndis._OFFLOAD_IPSEC_ADD_SA
+title: "_OFFLOAD_IPSEC_ADD_SA"
+author: windows-driver-content
+description: The OFFLOAD_IPSEC_ADD_SA structure contains information for each security association (SA) that a miniport driver adds to a NIC.
+old-location: netvista\offload_ipsec_add_sa.htm
+old-project: netvista
+ms.assetid: 592d338c-8ab0-4163-bcfa-75c941b83c3d
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: OFFLOAD_IPSEC_ADD_SA, ntddndis/POFFLOAD_IPSEC_ADD_SA, *POFFLOAD_IPSEC_ADD_SA, netvista.offload_ipsec_add_sa, 216offload_12f95ec9-ed81-43cc-b90d-fe06600ec349.xml, _OFFLOAD_IPSEC_ADD_SA, OFFLOAD_IPSEC_ADD_SA structure [Network Drivers Starting with Windows Vista], ntddndis/OFFLOAD_IPSEC_ADD_SA, POFFLOAD_IPSEC_ADD_SA structure pointer [Network Drivers Starting with Windows Vista], POFFLOAD_IPSEC_ADD_SA
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddndis.h
+apiname:
+-	OFFLOAD_IPSEC_ADD_SA
+product: Windows
+targetos: Windows
+req.typenames: OFFLOAD_IPSEC_ADD_SA, *POFFLOAD_IPSEC_ADD_SA
 ---
 
 # _OFFLOAD_IPSEC_ADD_SA structure

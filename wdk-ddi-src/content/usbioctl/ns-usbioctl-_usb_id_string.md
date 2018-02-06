@@ -1,42 +1,47 @@
 ---
-UID : NS:usbioctl._USB_ID_STRING
-title : "_USB_ID_STRING"
-author : windows-driver-content
-description : The USB_ID_STRING structure is used to store a string or multi-string.
-old-location : buses\usb_id_string.htm
-old-project : usbref
-ms.assetid : e7af07ed-f1a7-4f66-8824-2e12492d037a
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : usbioctl/PUSB_ID_STRING, USB_ID_STRING structure [Buses], USB_ID_STRING, PUSB_ID_STRING structure pointer [Buses], *PUSB_ID_STRING, _USB_ID_STRING, usbioctl/USB_ID_STRING, buses.usb_id_string, PUSB_ID_STRING
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : usbioctl.h
-req.include-header : Usbioctl.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : USB_ID_STRING, *PUSB_ID_STRING
-req.product : Windows 10 or later.
+UID: NS:usbioctl._USB_ID_STRING
+title: "_USB_ID_STRING"
+author: windows-driver-content
+description: The USB_ID_STRING structure is used to store a string or multi-string.
+old-location: buses\usb_id_string.htm
+old-project: usbref
+ms.assetid: e7af07ed-f1a7-4f66-8824-2e12492d037a
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: usbioctl/PUSB_ID_STRING, USB_ID_STRING structure [Buses], USB_ID_STRING, PUSB_ID_STRING structure pointer [Buses], *PUSB_ID_STRING, _USB_ID_STRING, usbioctl/USB_ID_STRING, buses.usb_id_string, PUSB_ID_STRING
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: usbioctl.h
+req.include-header: Usbioctl.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	usbioctl.h
+apiname:
+-	USB_ID_STRING
+product: Windows
+targetos: Windows
+req.typenames: USB_ID_STRING, *PUSB_ID_STRING
+req.product: Windows 10 or later.
 ---
 
 # _USB_ID_STRING structure

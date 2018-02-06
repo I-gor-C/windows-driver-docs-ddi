@@ -1,41 +1,46 @@
 ---
-UID : NI:acpiioct.IOCTL_ACPI_ASYNC_EVAL_METHOD_V1
-title : IOCTL_ACPI_ASYNC_EVAL_METHOD_V1
-author : windows-driver-content
-description : The IOCTL_ACPI_ASYNC_EVAL_METHOD_V1 control code asynchronously evaluates an ACPI control method that is supported by the device.
-old-location : acpi\ioctl_acpi_async_eval_method_v1.htm
-old-project : acpi
-ms.assetid : E55FDBCE-604E-4AD1-B51E-140A3E7DB038
-ms.author : windowsdriverdev
-ms.date : 12/31/2017
-ms.keywords : acpi.ioctl_acpi_async_eval_method_v1, IOCTL_ACPI_ASYNC_EVAL_METHOD_V1 control code [ACPI Devices], IOCTL_ACPI_ASYNC_EVAL_METHOD_V1, acpiioct/IOCTL_ACPI_ASYNC_EVAL_METHOD_V1
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : acpiioct.h
-req.include-header : Acpiioct.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10, version 1709 and later versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : UNIT_ISOCH_PARAMS, *PUNIT_ISOCH_PARAMS
+UID: NI:acpiioct.IOCTL_ACPI_ASYNC_EVAL_METHOD_V1
+title: IOCTL_ACPI_ASYNC_EVAL_METHOD_V1
+author: windows-driver-content
+description: The IOCTL_ACPI_ASYNC_EVAL_METHOD_V1 control code asynchronously evaluates an ACPI control method that is supported by the device.
+old-location: acpi\ioctl_acpi_async_eval_method_v1.htm
+old-project: acpi
+ms.assetid: E55FDBCE-604E-4AD1-B51E-140A3E7DB038
+ms.author: windowsdriverdev
+ms.date: 12/31/2017
+ms.keywords: acpi.ioctl_acpi_async_eval_method_v1, IOCTL_ACPI_ASYNC_EVAL_METHOD_V1 control code [ACPI Devices], IOCTL_ACPI_ASYNC_EVAL_METHOD_V1, acpiioct/IOCTL_ACPI_ASYNC_EVAL_METHOD_V1
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: acpiioct.h
+req.include-header: Acpiioct.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10, version 1709 and later versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Acpiioct.h
+apiname:
+-	IOCTL_ACPI_ASYNC_EVAL_METHOD_V1
+product: Windows
+targetos: Windows
+req.typenames: UNIT_ISOCH_PARAMS, *PUNIT_ISOCH_PARAMS
 ---
 
 # IOCTL_ACPI_ASYNC_EVAL_METHOD_V1 IOCTL

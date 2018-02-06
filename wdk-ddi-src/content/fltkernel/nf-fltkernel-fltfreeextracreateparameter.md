@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltFreeExtraCreateParameter
-title : FltFreeExtraCreateParameter function
-author : windows-driver-content
-description : The FltFreeExtraCreateParameter routine frees the memory for an ECP context structure.
-old-location : ifsk\fltfreeextracreateparameter.htm
-old-project : ifsk
-ms.assetid : 2fc0dc67-ac82-4892-8321-632fe26e1616
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : fltkernel/FltFreeExtraCreateParameter, FltFreeExtraCreateParameter routine [Installable File System Drivers], FltApiRef_e_to_o_d5948c86-8750-4684-9f66-0f0b34949714.xml, ifsk.fltfreeextracreateparameter, FltFreeExtraCreateParameter
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : This routine is available starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : FltMgr.sys
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltFreeExtraCreateParameter
+title: FltFreeExtraCreateParameter function
+author: windows-driver-content
+description: The FltFreeExtraCreateParameter routine frees the memory for an ECP context structure.
+old-location: ifsk\fltfreeextracreateparameter.htm
+old-project: ifsk
+ms.assetid: 2fc0dc67-ac82-4892-8321-632fe26e1616
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: fltkernel/FltFreeExtraCreateParameter, FltFreeExtraCreateParameter routine [Installable File System Drivers], FltApiRef_e_to_o_d5948c86-8750-4684-9f66-0f0b34949714.xml, ifsk.fltfreeextracreateparameter, FltFreeExtraCreateParameter
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: This routine is available starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: FltMgr.sys
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	FltMgr.sys
+apiname:
+-	FltFreeExtraCreateParameter
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

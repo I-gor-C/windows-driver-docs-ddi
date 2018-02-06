@@ -1,41 +1,50 @@
 ---
-UID : NF:dbgeng.IDebugClient5.ConnectProcessServer
-title : IDebugClient5::ConnectProcessServer method
-author : windows-driver-content
-description : The ConnectProcessServer methods connect to a process server.
-old-location : debugger\connectprocessserver.htm
-old-project : debugger
-ms.assetid : c5fd12eb-0779-400f-a271-84b7b379529f
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : ConnectProcessServer method [Windows Debugging], IDebugClient2 interface, debugger.connectprocessserver, ConnectProcessServer, ConnectProcessServer method [Windows Debugging], IDebugClient5 interface, ConnectProcessServer method [Windows Debugging], IDebugClient3 interface, ConnectProcessServer method [Windows Debugging], IDebugClient4 interface, dbgeng/IDebugClient2::ConnectProcessServer, IDebugClient2::ConnectProcessServer, IDebugClient4::ConnectProcessServer, ConnectProcessServer method [Windows Debugging], IDebugClient4 interface [Windows Debugging], ConnectProcessServer method, ConnectProcessServer method [Windows Debugging], IDebugClient interface, IDebugClient5 interface [Windows Debugging], ConnectProcessServer method, IDebugClient3::ConnectProcessServer, IDebugClient5::ConnectProcessServer, dbgeng/IDebugClient4::ConnectProcessServer, dbgeng/IDebugClient5::ConnectProcessServer, IDebugClient interface [Windows Debugging], ConnectProcessServer method, IDebugClient::ConnectProcessServer, IDebugClient2 interface [Windows Debugging], ConnectProcessServer method, IDebugClient3 interface [Windows Debugging], ConnectProcessServer method, IDebugClient_519f5e11-6f3b-4469-8352-e6cd7c1ed384.xml, dbgeng/IDebugClient::ConnectProcessServer, IDebugClient5, dbgeng/IDebugClient3::ConnectProcessServer
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugClient5.ConnectProcessServer
+title: IDebugClient5::ConnectProcessServer method
+author: windows-driver-content
+description: The ConnectProcessServer methods connect to a process server.
+old-location: debugger\connectprocessserver.htm
+old-project: debugger
+ms.assetid: c5fd12eb-0779-400f-a271-84b7b379529f
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: ConnectProcessServer method [Windows Debugging], IDebugClient2 interface, debugger.connectprocessserver, ConnectProcessServer, ConnectProcessServer method [Windows Debugging], IDebugClient5 interface, ConnectProcessServer method [Windows Debugging], IDebugClient3 interface, ConnectProcessServer method [Windows Debugging], IDebugClient4 interface, dbgeng/IDebugClient2::ConnectProcessServer, IDebugClient2::ConnectProcessServer, IDebugClient4::ConnectProcessServer, ConnectProcessServer method [Windows Debugging], IDebugClient4 interface [Windows Debugging], ConnectProcessServer method, ConnectProcessServer method [Windows Debugging], IDebugClient interface, IDebugClient5 interface [Windows Debugging], ConnectProcessServer method, IDebugClient3::ConnectProcessServer, IDebugClient5::ConnectProcessServer, dbgeng/IDebugClient4::ConnectProcessServer, dbgeng/IDebugClient5::ConnectProcessServer, IDebugClient interface [Windows Debugging], ConnectProcessServer method, IDebugClient::ConnectProcessServer, IDebugClient2 interface [Windows Debugging], ConnectProcessServer method, IDebugClient3 interface [Windows Debugging], ConnectProcessServer method, IDebugClient_519f5e11-6f3b-4469-8352-e6cd7c1ed384.xml, dbgeng/IDebugClient::ConnectProcessServer, IDebugClient5, dbgeng/IDebugClient3::ConnectProcessServer
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugClient.ConnectProcessServer
+-	IDebugClient2.ConnectProcessServer
+-	IDebugClient3.ConnectProcessServer
+-	IDebugClient4.ConnectProcessServer
+-	IDebugClient5.ConnectProcessServer
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

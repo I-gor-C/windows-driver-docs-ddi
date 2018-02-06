@@ -1,42 +1,47 @@
 ---
-UID : NF:video.VideoPortGetCommonBuffer
-title : VideoPortGetCommonBuffer function
-author : windows-driver-content
-description : The VideoPortGetCommonBuffer function is obsolete in Windows XP and later, and is supported only for backward compatibility with existing drivers.
-old-location : display\videoportgetcommonbuffer.htm
-old-project : display
-ms.assetid : c8329d26-fb6f-46f1-aacd-ba78ee4ea5d5
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : VideoPort_Functions_eead14aa-271b-49a2-8ded-482ffc73741e.xml, video/VideoPortGetCommonBuffer, display.videoportgetcommonbuffer, VideoPortGetCommonBuffer, VideoPortGetCommonBuffer function [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows 2000 and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Videoprt.lib
-req.dll : Videoprt.sys
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_PORT_SERVICES
-req.product : Windows 10 or later.
+UID: NF:video.VideoPortGetCommonBuffer
+title: VideoPortGetCommonBuffer function
+author: windows-driver-content
+description: The VideoPortGetCommonBuffer function is obsolete in Windows XP and later, and is supported only for backward compatibility with existing drivers.
+old-location: display\videoportgetcommonbuffer.htm
+old-project: display
+ms.assetid: c8329d26-fb6f-46f1-aacd-ba78ee4ea5d5
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: VideoPort_Functions_eead14aa-271b-49a2-8ded-482ffc73741e.xml, video/VideoPortGetCommonBuffer, display.videoportgetcommonbuffer, VideoPortGetCommonBuffer, VideoPortGetCommonBuffer function [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows 2000 and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Videoprt.lib
+req.dll: Videoprt.sys
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Videoprt.sys
+apiname:
+-	VideoPortGetCommonBuffer
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_PORT_SERVICES
+req.product: Windows 10 or later.
 ---
 
 

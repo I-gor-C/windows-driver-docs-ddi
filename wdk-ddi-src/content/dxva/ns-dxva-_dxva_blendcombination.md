@@ -1,41 +1,46 @@
 ---
-UID : NS:dxva._DXVA_BlendCombination
-title : "_DXVA_BlendCombination"
-author : windows-driver-content
-description : The DXVA_BlendCombination structure is sent by the host decoder to the accelerator to specify how a blended picture is created from a source picture and a graphic image with accompanying alpha-blending information.
-old-location : display\dxva_blendcombination.htm
-old-project : display
-ms.assetid : ae711ec5-841d-49cc-a701-1fb6ecaa9a66
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : "*LPDXVA_BlendCombination, DXVA_BlendCombination, dxva/DXVA_BlendCombination, LPDXVA_BlendCombination structure pointer [Display Devices], LPDXVA_BlendCombination, display.dxva_blendcombination, dxva/LPDXVA_BlendCombination, dxvaref_a19d0818-7872-4d4d-a528-c81114fda7c7.xml, DXVA_BlendCombination structure [Display Devices], _DXVA_BlendCombination"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : dxva.h
-req.include-header : Dxva.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXVA_BlendCombination, *LPDXVA_BlendCombination
+UID: NS:dxva._DXVA_BlendCombination
+title: "_DXVA_BlendCombination"
+author: windows-driver-content
+description: The DXVA_BlendCombination structure is sent by the host decoder to the accelerator to specify how a blended picture is created from a source picture and a graphic image with accompanying alpha-blending information.
+old-location: display\dxva_blendcombination.htm
+old-project: display
+ms.assetid: ae711ec5-841d-49cc-a701-1fb6ecaa9a66
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: "*LPDXVA_BlendCombination, DXVA_BlendCombination, dxva/DXVA_BlendCombination, LPDXVA_BlendCombination structure pointer [Display Devices], LPDXVA_BlendCombination, display.dxva_blendcombination, dxva/LPDXVA_BlendCombination, dxvaref_a19d0818-7872-4d4d-a528-c81114fda7c7.xml, DXVA_BlendCombination structure [Display Devices], _DXVA_BlendCombination"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: dxva.h
+req.include-header: Dxva.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	dxva.h
+apiname:
+-	DXVA_BlendCombination
+product: Windows
+targetos: Windows
+req.typenames: DXVA_BlendCombination, *LPDXVA_BlendCombination
 ---
 
 # _DXVA_BlendCombination structure

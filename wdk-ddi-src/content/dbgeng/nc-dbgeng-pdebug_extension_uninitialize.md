@@ -1,41 +1,46 @@
 ---
-UID : NC:dbgeng.PDEBUG_EXTENSION_UNINITIALIZE
-title : PDEBUG_EXTENSION_UNINITIALIZE
-author : windows-driver-content
-description : The DebugExtensionUninitialize callback function is called by the engine to uninitialize the DbgEng extension DLL before it is unloaded.
-old-location : debugger\debugextensionuninitialize.htm
-old-project : debugger
-ms.assetid : 34585815-d683-4702-bbfe-76d5d9fe244c
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : debugger.debugextensionuninitialize, DebugExtensionUninitialize, DebugExtensionUninitialize callback function [Windows Debugging], DebugExtensionUninitialize, PDEBUG_EXTENSION_UNINITIALIZE, PDEBUG_EXTENSION_UNINITIALIZE, dbgeng/DebugExtensionUninitialize, Extensions_Ref_76594e24-5f2d-495f-b8a9-6acec1f21ba4.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : dbgeng.h
-req.include-header : 
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NC:dbgeng.PDEBUG_EXTENSION_UNINITIALIZE
+title: PDEBUG_EXTENSION_UNINITIALIZE
+author: windows-driver-content
+description: The DebugExtensionUninitialize callback function is called by the engine to uninitialize the DbgEng extension DLL before it is unloaded.
+old-location: debugger\debugextensionuninitialize.htm
+old-project: debugger
+ms.assetid: 34585815-d683-4702-bbfe-76d5d9fe244c
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: debugger.debugextensionuninitialize, DebugExtensionUninitialize, DebugExtensionUninitialize callback function [Windows Debugging], DebugExtensionUninitialize, PDEBUG_EXTENSION_UNINITIALIZE, PDEBUG_EXTENSION_UNINITIALIZE, dbgeng/DebugExtensionUninitialize, Extensions_Ref_76594e24-5f2d-495f-b8a9-6acec1f21ba4.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: dbgeng.h
+req.include-header: 
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	dbgeng.h
+apiname:
+-	DebugExtensionUninitialize
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

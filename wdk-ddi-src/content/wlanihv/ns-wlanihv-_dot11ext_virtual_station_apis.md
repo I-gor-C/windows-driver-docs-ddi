@@ -1,42 +1,47 @@
 ---
-UID : NS:wlanihv._DOT11EXT_VIRTUAL_STATION_APIS
-title : "_DOT11EXT_VIRTUAL_STATION_APIS"
-author : windows-driver-content
-description : Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
-old-location : netvista\dot11ext_virtual_station_apis.htm
-old-project : netvista
-ms.assetid : 5487375a-7d50-4ddd-a666-8727f45b85dc
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : "*PDOT11EXT_VIRTUAL_STATION_APIS, DOT11EXT_VIRTUAL_STATION_APIS, PDOT11EXT_VIRTUAL_STATION_APIS, wlanihv/DOT11EXT_VIRTUAL_STATION_APIS, _DOT11EXT_VIRTUAL_STATION_APIS, DOT11EXT_VIRTUAL_STATION_APIS structure [Network Drivers Starting with Windows Vista], Native_802.11_data_types_0b2dadd3-7d60-4836-9171-c2c11b56010d.xml, wlanihv/PDOT11EXT_VIRTUAL_STATION_APIS, PDOT11EXT_VIRTUAL_STATION_APIS structure pointer [Network Drivers Starting with Windows Vista], netvista.dot11ext_virtual_station_apis"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wlanihv.h
-req.include-header : Wlanihv.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7 and later versions of the Windows operating   systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDOT11EXT_VIRTUAL_STATION_APIS, DOT11EXT_VIRTUAL_STATION_APIS"
-req.product : Windows 10 or later.
+UID: NS:wlanihv._DOT11EXT_VIRTUAL_STATION_APIS
+title: "_DOT11EXT_VIRTUAL_STATION_APIS"
+author: windows-driver-content
+description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+old-location: netvista\dot11ext_virtual_station_apis.htm
+old-project: netvista
+ms.assetid: 5487375a-7d50-4ddd-a666-8727f45b85dc
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: "*PDOT11EXT_VIRTUAL_STATION_APIS, DOT11EXT_VIRTUAL_STATION_APIS, PDOT11EXT_VIRTUAL_STATION_APIS, wlanihv/DOT11EXT_VIRTUAL_STATION_APIS, _DOT11EXT_VIRTUAL_STATION_APIS, DOT11EXT_VIRTUAL_STATION_APIS structure [Network Drivers Starting with Windows Vista], Native_802.11_data_types_0b2dadd3-7d60-4836-9171-c2c11b56010d.xml, wlanihv/PDOT11EXT_VIRTUAL_STATION_APIS, PDOT11EXT_VIRTUAL_STATION_APIS structure pointer [Network Drivers Starting with Windows Vista], netvista.dot11ext_virtual_station_apis"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wlanihv.h
+req.include-header: Wlanihv.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7 and later versions of the Windows operating   systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wlanihv.h
+apiname:
+-	DOT11EXT_VIRTUAL_STATION_APIS
+product: Windows
+targetos: Windows
+req.typenames: "*PDOT11EXT_VIRTUAL_STATION_APIS, DOT11EXT_VIRTUAL_STATION_APIS"
+req.product: Windows 10 or later.
 ---
 
 # _DOT11EXT_VIRTUAL_STATION_APIS structure

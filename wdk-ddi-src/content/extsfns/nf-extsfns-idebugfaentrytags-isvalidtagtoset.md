@@ -1,41 +1,46 @@
 ---
-UID : NF:extsfns.IDebugFAEntryTags.IsValidTagToSet
-title : IDebugFAEntryTags::IsValidTagToSet method
-author : windows-driver-content
-description : The IsValidTagToSet method determines whether it is OK to set the data of a specified tag.
-old-location : debugger\idebugfaentrytags_isvalidtagtoset.htm
-old-project : debugger
-ms.assetid : 83B5C54F-182B-4D2F-8ED2-7A0B529F1D2E
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugFAEntryTags interface [Windows Debugging], IsValidTagToSet method, IsValidTagToSet, IDebugFAEntryTags::IsValidTagToSet, debugger.idebugfaentrytags_isvalidtagtoset, extsfns/IDebugFAEntryTags::IsValidTagToSet, IsValidTagToSet method [Windows Debugging], IsValidTagToSet method [Windows Debugging], IDebugFAEntryTags interface, IDebugFAEntryTags
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : extsfns.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : extsfns.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FA_EXTENSION_PLUGIN_PHASE
+UID: NF:extsfns.IDebugFAEntryTags.IsValidTagToSet
+title: IDebugFAEntryTags::IsValidTagToSet method
+author: windows-driver-content
+description: The IsValidTagToSet method determines whether it is OK to set the data of a specified tag.
+old-location: debugger\idebugfaentrytags_isvalidtagtoset.htm
+old-project: debugger
+ms.assetid: 83B5C54F-182B-4D2F-8ED2-7A0B529F1D2E
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugFAEntryTags interface [Windows Debugging], IsValidTagToSet method, IsValidTagToSet, IDebugFAEntryTags::IsValidTagToSet, debugger.idebugfaentrytags_isvalidtagtoset, extsfns/IDebugFAEntryTags::IsValidTagToSet, IsValidTagToSet method [Windows Debugging], IsValidTagToSet method [Windows Debugging], IDebugFAEntryTags interface, IDebugFAEntryTags
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: extsfns.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: extsfns.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	extsfns.h
+apiname:
+-	IDebugFAEntryTags.IsValidTagToSet
+product: Windows
+targetos: Windows
+req.typenames: FA_EXTENSION_PLUGIN_PHASE
 ---
 
 

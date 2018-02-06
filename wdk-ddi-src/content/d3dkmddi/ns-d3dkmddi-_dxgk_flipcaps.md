@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGK_FLIPCAPS
-title : "_DXGK_FLIPCAPS"
-author : windows-driver-content
-description : The DXGK_FLIPCAPS structure identifies flipping capabilities of the display miniport driver that the driver provides through a call to its DxgkDdiQueryAdapterInfo function.
-old-location : display\dxgk_flipcaps.htm
-old-project : display
-ms.assetid : 33399b7c-ce67-4c49-be26-2b2d759ff5a0
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgk_flipcaps, d3dkmddi/DXGK_FLIPCAPS, DXGK_FLIPCAPS, DmStructs_11bba63e-8001-41d2-9c60-978024921994.xml, DXGK_FLIPCAPS structure [Display Devices], _DXGK_FLIPCAPS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_FLIPCAPS
+UID: NS:d3dkmddi._DXGK_FLIPCAPS
+title: "_DXGK_FLIPCAPS"
+author: windows-driver-content
+description: The DXGK_FLIPCAPS structure identifies flipping capabilities of the display miniport driver that the driver provides through a call to its DxgkDdiQueryAdapterInfo function.
+old-location: display\dxgk_flipcaps.htm
+old-project: display
+ms.assetid: 33399b7c-ce67-4c49-be26-2b2d759ff5a0
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgk_flipcaps, d3dkmddi/DXGK_FLIPCAPS, DXGK_FLIPCAPS, DmStructs_11bba63e-8001-41d2-9c60-978024921994.xml, DXGK_FLIPCAPS structure [Display Devices], _DXGK_FLIPCAPS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DXGK_FLIPCAPS
+product: Windows
+targetos: Windows
+req.typenames: DXGK_FLIPCAPS
 ---
 
 # _DXGK_FLIPCAPS structure

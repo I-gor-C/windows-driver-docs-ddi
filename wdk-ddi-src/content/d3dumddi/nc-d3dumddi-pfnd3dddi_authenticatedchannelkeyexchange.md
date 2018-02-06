@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_AUTHENTICATEDCHANNELKEYEXCHANGE
-title : PFND3DDDI_AUTHENTICATEDCHANNELKEYEXCHANGE
-author : windows-driver-content
-description : The AuthenticatedChannelKeyExchange function negotiates the session key.
-old-location : display\authenticatedchannelkeyexchange.htm
-old-project : display
-ms.assetid : 627f9689-1059-4f88-9005-9c7600dad686
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.authenticatedchannelkeyexchange, AuthenticatedChannelKeyExchange callback function [Display Devices], AuthenticatedChannelKeyExchange, PFND3DDDI_AUTHENTICATEDCHANNELKEYEXCHANGE, PFND3DDDI_AUTHENTICATEDCHANNELKEYEXCHANGE, d3dumddi/AuthenticatedChannelKeyExchange, UserModeDisplayDriver_Functions_2882c4c2-3df6-4610-9f8f-83967c485457.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : AuthenticatedChannelKeyExchange is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_AUTHENTICATEDCHANNELKEYEXCHANGE
+title: PFND3DDDI_AUTHENTICATEDCHANNELKEYEXCHANGE
+author: windows-driver-content
+description: The AuthenticatedChannelKeyExchange function negotiates the session key.
+old-location: display\authenticatedchannelkeyexchange.htm
+old-project: display
+ms.assetid: 627f9689-1059-4f88-9005-9c7600dad686
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.authenticatedchannelkeyexchange, AuthenticatedChannelKeyExchange callback function [Display Devices], AuthenticatedChannelKeyExchange, PFND3DDDI_AUTHENTICATEDCHANNELKEYEXCHANGE, PFND3DDDI_AUTHENTICATEDCHANNELKEYEXCHANGE, d3dumddi/AuthenticatedChannelKeyExchange, UserModeDisplayDriver_Functions_2882c4c2-3df6-4610-9f8f-83967c485457.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: AuthenticatedChannelKeyExchange is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	AuthenticatedChannelKeyExchange
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

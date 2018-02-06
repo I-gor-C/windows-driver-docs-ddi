@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltPerformAsynchronousIo
-title : FltPerformAsynchronousIo function
-author : windows-driver-content
-description : A minifilter driver calls FltPerformAsynchronousIo to initiate an asynchronous I/O operation.
-old-location : ifsk\fltperformasynchronousio.htm
-old-project : ifsk
-ms.assetid : c76529fe-c808-4239-9bde-68dc68d987ec
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltApiRef_p_to_z_ed6cd087-6139-4280-aaf3-fe6f0d5b056a.xml, fltkernel/FltPerformAsynchronousIo, FltPerformAsynchronousIo function [Installable File System Drivers], FltPerformAsynchronousIo, ifsk.fltperformasynchronousio
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltPerformAsynchronousIo
+title: FltPerformAsynchronousIo function
+author: windows-driver-content
+description: A minifilter driver calls FltPerformAsynchronousIo to initiate an asynchronous I/O operation.
+old-location: ifsk\fltperformasynchronousio.htm
+old-project: ifsk
+ms.assetid: c76529fe-c808-4239-9bde-68dc68d987ec
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltApiRef_p_to_z_ed6cd087-6139-4280-aaf3-fe6f0d5b056a.xml, fltkernel/FltPerformAsynchronousIo, FltPerformAsynchronousIo function [Installable File System Drivers], FltPerformAsynchronousIo, ifsk.fltperformasynchronousio
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltPerformAsynchronousIo
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

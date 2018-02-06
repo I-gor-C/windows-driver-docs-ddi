@@ -1,41 +1,46 @@
 ---
-UID : NC:ndis.MINIPORT_IDLE_NOTIFICATION
-title : MINIPORT_IDLE_NOTIFICATION
-author : windows-driver-content
-description : NDIS calls the MiniportIdleNotification handler function to start the NDIS selective suspend operation on an idle network adapter. Through this operation, the network adapter is suspended and transitioned to a low-power state.
-old-location : netvista\miniportidlenotification.htm
-old-project : netvista
-ms.assetid : D679DEF0-1229-4731-8024-4DEDAE5B0185
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.miniportidlenotification, MiniportIdleNotification callback function [Network Drivers Starting with Windows Vista], MiniportIdleNotification, MINIPORT_IDLE_NOTIFICATION, MINIPORT_IDLE_NOTIFICATION, ndis/MiniportIdleNotification
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.30 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
+UID: NC:ndis.MINIPORT_IDLE_NOTIFICATION
+title: MINIPORT_IDLE_NOTIFICATION
+author: windows-driver-content
+description: NDIS calls the MiniportIdleNotification handler function to start the NDIS selective suspend operation on an idle network adapter. Through this operation, the network adapter is suspended and transitioned to a low-power state.
+old-location: netvista\miniportidlenotification.htm
+old-project: netvista
+ms.assetid: D679DEF0-1229-4731-8024-4DEDAE5B0185
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.miniportidlenotification, MiniportIdleNotification callback function [Network Drivers Starting with Windows Vista], MiniportIdleNotification, MINIPORT_IDLE_NOTIFICATION, MINIPORT_IDLE_NOTIFICATION, ndis/MiniportIdleNotification
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.30 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ndis.h
+apiname:
+-	MiniportIdleNotification
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 

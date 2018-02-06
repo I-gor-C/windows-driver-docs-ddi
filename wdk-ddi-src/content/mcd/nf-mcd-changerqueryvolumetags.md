@@ -1,41 +1,46 @@
 ---
-UID : NF:mcd.ChangerQueryVolumeTags
-title : ChangerQueryVolumeTags function
-author : windows-driver-content
-description : ChangerQueryVolumeTags handles the device-specific aspects of a device-control IRP with the IOCTL code of IOCTL_CHANGER_QUERY_VOLUME_TAGS.
-old-location : storage\changerqueryvolumetags.htm
-old-project : storage
-ms.assetid : 65579299-829c-48e2-b2f6-dc1a09578e9a
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.changerqueryvolumetags, mcd/ChangerQueryVolumeTags, chgrmini_8d729e15-eade-4300-b640-d5e99f1f5e05.xml, ChangerQueryVolumeTags function [Storage Devices], ChangerQueryVolumeTags
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : mcd.h
-req.include-header : Mcd.h, Ntddchgr.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : LAMP_INTENSITY_WHITE
+UID: NF:mcd.ChangerQueryVolumeTags
+title: ChangerQueryVolumeTags function
+author: windows-driver-content
+description: ChangerQueryVolumeTags handles the device-specific aspects of a device-control IRP with the IOCTL code of IOCTL_CHANGER_QUERY_VOLUME_TAGS.
+old-location: storage\changerqueryvolumetags.htm
+old-project: storage
+ms.assetid: 65579299-829c-48e2-b2f6-dc1a09578e9a
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.changerqueryvolumetags, mcd/ChangerQueryVolumeTags, chgrmini_8d729e15-eade-4300-b640-d5e99f1f5e05.xml, ChangerQueryVolumeTags function [Storage Devices], ChangerQueryVolumeTags
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: mcd.h
+req.include-header: Mcd.h, Ntddchgr.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	mcd.h
+apiname:
+-	ChangerQueryVolumeTags
+product: Windows
+targetos: Windows
+req.typenames: LAMP_INTENSITY_WHITE
 ---
 
 

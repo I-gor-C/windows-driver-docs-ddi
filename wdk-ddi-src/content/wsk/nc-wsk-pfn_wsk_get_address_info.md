@@ -1,42 +1,47 @@
 ---
-UID : NC:wsk.PFN_WSK_GET_ADDRESS_INFO
-title : PFN_WSK_GET_ADDRESS_INFO
-author : windows-driver-content
-description : The WskGetAddressInfo function performs protocol-independent translation from a host name to a transport address.
-old-location : netvista\wskgetaddressinfo.htm
-old-project : netvista
-ms.assetid : 688619b9-ab0b-4459-8f1b-74815043a190
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.wskgetaddressinfo, WskGetAddressInfo callback function [Network Drivers Starting with Windows Vista], WskGetAddressInfo, PFN_WSK_GET_ADDRESS_INFO, PFN_WSK_GET_ADDRESS_INFO, wsk/WskGetAddressInfo, wskref_4b8f8dcc-eebb-4613-b130-3f7ae2921a8b.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wsk.h
-req.include-header : Wsk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 7 and later versions of the Windows operating   systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WNODE_HEADER, *PWNODE_HEADER
-req.product : Windows 10 or later.
+UID: NC:wsk.PFN_WSK_GET_ADDRESS_INFO
+title: PFN_WSK_GET_ADDRESS_INFO
+author: windows-driver-content
+description: The WskGetAddressInfo function performs protocol-independent translation from a host name to a transport address.
+old-location: netvista\wskgetaddressinfo.htm
+old-project: netvista
+ms.assetid: 688619b9-ab0b-4459-8f1b-74815043a190
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.wskgetaddressinfo, WskGetAddressInfo callback function [Network Drivers Starting with Windows Vista], WskGetAddressInfo, PFN_WSK_GET_ADDRESS_INFO, PFN_WSK_GET_ADDRESS_INFO, wsk/WskGetAddressInfo, wskref_4b8f8dcc-eebb-4613-b130-3f7ae2921a8b.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wsk.h
+req.include-header: Wsk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 7 and later versions of the Windows operating   systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	wsk.h
+apiname:
+-	WskGetAddressInfo
+product: Windows
+targetos: Windows
+req.typenames: WNODE_HEADER, *PWNODE_HEADER
+req.product: Windows 10 or later.
 ---
 
 

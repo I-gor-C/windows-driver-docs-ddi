@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddtape._TAPE_WRITE_MARKS
-title : "_TAPE_WRITE_MARKS"
-author : windows-driver-content
-description : The TAPE_WRITE_MARKS structure is used in conjunction with an IOCTL_TAPE_WRITE_MARKS request to write a setmark, a filemark, a short filemark, or a long filemark to tape.
-old-location : storage\tape_write_marks.htm
-old-project : storage
-ms.assetid : 5baa7fd0-e806-4da8-9c87-c86ebc003e60
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : ntddtape/PTAPE_WRITE_MARKS, _TAPE_WRITE_MARKS, PTAPE_WRITE_MARKS structure pointer [Storage Devices], TAPE_WRITE_MARKS, storage.tape_write_marks, structs-tape_18332ea5-6bfb-4acf-8c84-0a77ded0cc72.xml, TAPE_WRITE_MARKS structure [Storage Devices], PTAPE_WRITE_MARKS, ntddtape/TAPE_WRITE_MARKS, *PTAPE_WRITE_MARKS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddtape.h
-req.include-header : Ntddtape.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TAPE_WRITE_MARKS, *PTAPE_WRITE_MARKS
+UID: NS:ntddtape._TAPE_WRITE_MARKS
+title: "_TAPE_WRITE_MARKS"
+author: windows-driver-content
+description: The TAPE_WRITE_MARKS structure is used in conjunction with an IOCTL_TAPE_WRITE_MARKS request to write a setmark, a filemark, a short filemark, or a long filemark to tape.
+old-location: storage\tape_write_marks.htm
+old-project: storage
+ms.assetid: 5baa7fd0-e806-4da8-9c87-c86ebc003e60
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: ntddtape/PTAPE_WRITE_MARKS, _TAPE_WRITE_MARKS, PTAPE_WRITE_MARKS structure pointer [Storage Devices], TAPE_WRITE_MARKS, storage.tape_write_marks, structs-tape_18332ea5-6bfb-4acf-8c84-0a77ded0cc72.xml, TAPE_WRITE_MARKS structure [Storage Devices], PTAPE_WRITE_MARKS, ntddtape/TAPE_WRITE_MARKS, *PTAPE_WRITE_MARKS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddtape.h
+req.include-header: Ntddtape.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddtape.h
+apiname:
+-	TAPE_WRITE_MARKS
+product: Windows
+targetos: Windows
+req.typenames: TAPE_WRITE_MARKS, *PTAPE_WRITE_MARKS
 ---
 
 # _TAPE_WRITE_MARKS structure

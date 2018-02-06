@@ -1,42 +1,47 @@
 ---
-UID : NS:wdm._FILE_FS_DEVICE_INFORMATION
-title : "_FILE_FS_DEVICE_INFORMATION"
-author : windows-driver-content
-description : The FILE_FS_DEVICE_INFORMATION structure provides file system device information about the type of device object associated with a file object.
-old-location : kernel\file_fs_device_information.htm
-old-project : kernel
-ms.assetid : 0849bbc2-cfc7-4437-896d-3f46e8f6461a
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/PFILE_FS_DEVICE_INFORMATION, PFILE_FS_DEVICE_INFORMATION structure pointer [Kernel-Mode Driver Architecture], kstruct_b_86acb464-7e57-467f-998e-896b0a7cebc4.xml, *PFILE_FS_DEVICE_INFORMATION, wdm/FILE_FS_DEVICE_INFORMATION, FILE_FS_DEVICE_INFORMATION, FILE_FS_DEVICE_INFORMATION structure [Kernel-Mode Driver Architecture], kernel.file_fs_device_information, _FILE_FS_DEVICE_INFORMATION, PFILE_FS_DEVICE_INFORMATION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PFILE_FS_DEVICE_INFORMATION, FILE_FS_DEVICE_INFORMATION"
-req.product : Windows 10 or later.
+UID: NS:wdm._FILE_FS_DEVICE_INFORMATION
+title: "_FILE_FS_DEVICE_INFORMATION"
+author: windows-driver-content
+description: The FILE_FS_DEVICE_INFORMATION structure provides file system device information about the type of device object associated with a file object.
+old-location: kernel\file_fs_device_information.htm
+old-project: kernel
+ms.assetid: 0849bbc2-cfc7-4437-896d-3f46e8f6461a
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/PFILE_FS_DEVICE_INFORMATION, PFILE_FS_DEVICE_INFORMATION structure pointer [Kernel-Mode Driver Architecture], kstruct_b_86acb464-7e57-467f-998e-896b0a7cebc4.xml, *PFILE_FS_DEVICE_INFORMATION, wdm/FILE_FS_DEVICE_INFORMATION, FILE_FS_DEVICE_INFORMATION, FILE_FS_DEVICE_INFORMATION structure [Kernel-Mode Driver Architecture], kernel.file_fs_device_information, _FILE_FS_DEVICE_INFORMATION, PFILE_FS_DEVICE_INFORMATION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	FILE_FS_DEVICE_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: "*PFILE_FS_DEVICE_INFORMATION, FILE_FS_DEVICE_INFORMATION"
+req.product: Windows 10 or later.
 ---
 
 # _FILE_FS_DEVICE_INFORMATION structure

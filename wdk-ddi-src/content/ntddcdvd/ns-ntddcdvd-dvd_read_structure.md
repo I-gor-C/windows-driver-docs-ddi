@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddcdvd.DVD_READ_STRUCTURE
-title : DVD_READ_STRUCTURE
-author : windows-driver-content
-description : The DVD_READ_STRUCTURE structure is used in conjunction with the IOCTL_DVD_READ_STRUCTURE request to retrieve a DVD descriptor containing information about a DVD disc.
-old-location : storage\dvd_read_structure.htm
-old-project : storage
-ms.assetid : fe8c55de-e542-4c0d-a96b-31ad39e11dff
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : structs-DVD_64ffaf42-815a-4a1e-a712-7027930d099f.xml, DVD_READ_STRUCTURE, ntddcdvd/DVD_READ_STRUCTURE, *PDVD_READ_STRUCTURE, PDVD_READ_STRUCTURE, storage.dvd_read_structure, DVD_READ_STRUCTURE structure [Storage Devices], ntddcdvd/PDVD_READ_STRUCTURE, PDVD_READ_STRUCTURE structure pointer [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddcdvd.h
-req.include-header : Ntddcdvd.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DVD_READ_STRUCTURE, *PDVD_READ_STRUCTURE
+UID: NS:ntddcdvd.DVD_READ_STRUCTURE
+title: DVD_READ_STRUCTURE
+author: windows-driver-content
+description: The DVD_READ_STRUCTURE structure is used in conjunction with the IOCTL_DVD_READ_STRUCTURE request to retrieve a DVD descriptor containing information about a DVD disc.
+old-location: storage\dvd_read_structure.htm
+old-project: storage
+ms.assetid: fe8c55de-e542-4c0d-a96b-31ad39e11dff
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: structs-DVD_64ffaf42-815a-4a1e-a712-7027930d099f.xml, DVD_READ_STRUCTURE, ntddcdvd/DVD_READ_STRUCTURE, *PDVD_READ_STRUCTURE, PDVD_READ_STRUCTURE, storage.dvd_read_structure, DVD_READ_STRUCTURE structure [Storage Devices], ntddcdvd/PDVD_READ_STRUCTURE, PDVD_READ_STRUCTURE structure pointer [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddcdvd.h
+req.include-header: Ntddcdvd.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddcdvd.h
+apiname:
+-	DVD_READ_STRUCTURE
+product: Windows
+targetos: Windows
+req.typenames: DVD_READ_STRUCTURE, *PDVD_READ_STRUCTURE
 ---
 
 # DVD_READ_STRUCTURE structure

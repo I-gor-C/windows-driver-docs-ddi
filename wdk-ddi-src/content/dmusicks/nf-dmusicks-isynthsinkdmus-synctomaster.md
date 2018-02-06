@@ -1,41 +1,46 @@
 ---
-UID : NF:dmusicks.ISynthSinkDMus.SyncToMaster
-title : ISynthSinkDMus::SyncToMaster method
-author : windows-driver-content
-description : The SyncToMaster method allows synchronization to the master clock in order to avoid drift.
-old-location : audio\isynthsinkdmus_synctomaster.htm
-old-project : audio
-ms.assetid : 5009e4d8-5299-4eeb-a70d-5be87694b1d0
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : dmusicks/ISynthSinkDMus::SyncToMaster, SyncToMaster method [Audio Devices], ISynthSinkDMus interface, ISynthSinkDMus::SyncToMaster, SyncToMaster, audmp-routines_35d431eb-a92c-4e73-b75c-8a3a1f0451ce.xml, audio.isynthsinkdmus_synctomaster, ISynthSinkDMus interface [Audio Devices], SyncToMaster method, ISynthSinkDMus, SyncToMaster method [Audio Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dmusicks.h
-req.include-header : Dmusicks.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dmusicks.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DMUS_STREAM_TYPE
+UID: NF:dmusicks.ISynthSinkDMus.SyncToMaster
+title: ISynthSinkDMus::SyncToMaster method
+author: windows-driver-content
+description: The SyncToMaster method allows synchronization to the master clock in order to avoid drift.
+old-location: audio\isynthsinkdmus_synctomaster.htm
+old-project: audio
+ms.assetid: 5009e4d8-5299-4eeb-a70d-5be87694b1d0
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: dmusicks/ISynthSinkDMus::SyncToMaster, SyncToMaster method [Audio Devices], ISynthSinkDMus interface, ISynthSinkDMus::SyncToMaster, SyncToMaster, audmp-routines_35d431eb-a92c-4e73-b75c-8a3a1f0451ce.xml, audio.isynthsinkdmus_synctomaster, ISynthSinkDMus interface [Audio Devices], SyncToMaster method, ISynthSinkDMus, SyncToMaster method [Audio Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dmusicks.h
+req.include-header: Dmusicks.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dmusicks.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dmusicks.h
+apiname:
+-	ISynthSinkDMus.SyncToMaster
+product: Windows
+targetos: Windows
+req.typenames: DMUS_STREAM_TYPE
 ---
 
 

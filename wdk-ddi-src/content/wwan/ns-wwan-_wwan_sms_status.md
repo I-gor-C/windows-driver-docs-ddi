@@ -1,42 +1,47 @@
 ---
-UID : NS:wwan._WWAN_SMS_STATUS
-title : "_WWAN_SMS_STATUS"
-author : windows-driver-content
-description : The WWAN_SMS_STATUS structure represents the status of the SMS message store.
-old-location : netvista\wwan_sms_status.htm
-old-project : netvista
-ms.assetid : a7ebe58d-8e87-437f-b556-408610fa654e
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : wwan/WWAN_SMS_STATUS, _WWAN_SMS_STATUS, *PWWAN_SMS_STATUS, wwan/PWWAN_SMS_STATUS, WWAN_SMS_STATUS structure [Network Drivers Starting with Windows Vista], WwanRef_5468242f-eb44-4ece-92a2-02524eb0d196.xml, WWAN_SMS_STATUS, PWWAN_SMS_STATUS structure pointer [Network Drivers Starting with Windows Vista], netvista.wwan_sms_status, PWWAN_SMS_STATUS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wwan.h
-req.include-header : Wwan.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WWAN_SMS_STATUS, *PWWAN_SMS_STATUS
-req.product : Windows 10 or later.
+UID: NS:wwan._WWAN_SMS_STATUS
+title: "_WWAN_SMS_STATUS"
+author: windows-driver-content
+description: The WWAN_SMS_STATUS structure represents the status of the SMS message store.
+old-location: netvista\wwan_sms_status.htm
+old-project: netvista
+ms.assetid: a7ebe58d-8e87-437f-b556-408610fa654e
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: wwan/WWAN_SMS_STATUS, _WWAN_SMS_STATUS, *PWWAN_SMS_STATUS, wwan/PWWAN_SMS_STATUS, WWAN_SMS_STATUS structure [Network Drivers Starting with Windows Vista], WwanRef_5468242f-eb44-4ece-92a2-02524eb0d196.xml, WWAN_SMS_STATUS, PWWAN_SMS_STATUS structure pointer [Network Drivers Starting with Windows Vista], netvista.wwan_sms_status, PWWAN_SMS_STATUS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wwan.h
+req.include-header: Wwan.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wwan.h
+apiname:
+-	WWAN_SMS_STATUS
+product: Windows
+targetos: Windows
+req.typenames: WWAN_SMS_STATUS, *PWWAN_SMS_STATUS
+req.product: Windows 10 or later.
 ---
 
 # _WWAN_SMS_STATUS structure

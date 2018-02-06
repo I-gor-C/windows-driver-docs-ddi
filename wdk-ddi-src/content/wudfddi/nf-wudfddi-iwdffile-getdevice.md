@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFFile.GetDevice
-title : IWDFFile::GetDevice method
-author : windows-driver-content
-description : The GetDevice method returns the interface to the device object that a file object is associated with.
-old-location : wdf\iwdffile_getdevice.htm
-old-project : wdf
-ms.assetid : 914cc125-076e-40e1-baef-a12cba427b37
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : IWDFFile::GetDevice, IWDFFile interface, GetDevice method, UMDFFileObjectRef_67417dd5-53be-487b-a93f-711bbcd6b0dd.xml, wudfddi/IWDFFile::GetDevice, GetDevice method, IWDFFile, umdf.iwdffile_getdevice, GetDevice method, IWDFFile interface, wdf.iwdffile_getdevice, GetDevice
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.5
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFFile.GetDevice
+title: IWDFFile::GetDevice method
+author: windows-driver-content
+description: The GetDevice method returns the interface to the device object that a file object is associated with.
+old-location: wdf\iwdffile_getdevice.htm
+old-project: wdf
+ms.assetid: 914cc125-076e-40e1-baef-a12cba427b37
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: IWDFFile::GetDevice, IWDFFile interface, GetDevice method, UMDFFileObjectRef_67417dd5-53be-487b-a93f-711bbcd6b0dd.xml, wudfddi/IWDFFile::GetDevice, GetDevice method, IWDFFile, umdf.iwdffile_getdevice, GetDevice method, IWDFFile interface, wdf.iwdffile_getdevice, GetDevice
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.5
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFFile.GetDevice
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

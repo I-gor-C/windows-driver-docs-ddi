@@ -1,41 +1,46 @@
 ---
-UID : NS:ks.KSCLOCK_CREATE
-title : KSCLOCK_CREATE
-author : windows-driver-content
-description : The KSCLOCK_CREATE structure is used in clock create parameters for the KsCreateClock function.
-old-location : stream\ksclock_create.htm
-old-project : stream
-ms.assetid : 72986a01-de40-4b8f-9dfc-d26f4999e66b
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : "*PKSCLOCK_CREATE, PKSCLOCK_CREATE structure pointer [Streaming Media Devices], ks/PKSCLOCK_CREATE, KSCLOCK_CREATE structure [Streaming Media Devices], ks-struct_8202019a-97e5-4d76-9594-93189e3c1c30.xml, KSCLOCK_CREATE, ks/KSCLOCK_CREATE, stream.ksclock_create, PKSCLOCK_CREATE"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKSCLOCK_CREATE, KSCLOCK_CREATE"
+UID: NS:ks.KSCLOCK_CREATE
+title: KSCLOCK_CREATE
+author: windows-driver-content
+description: The KSCLOCK_CREATE structure is used in clock create parameters for the KsCreateClock function.
+old-location: stream\ksclock_create.htm
+old-project: stream
+ms.assetid: 72986a01-de40-4b8f-9dfc-d26f4999e66b
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: "*PKSCLOCK_CREATE, PKSCLOCK_CREATE structure pointer [Streaming Media Devices], ks/PKSCLOCK_CREATE, KSCLOCK_CREATE structure [Streaming Media Devices], ks-struct_8202019a-97e5-4d76-9594-93189e3c1c30.xml, KSCLOCK_CREATE, ks/KSCLOCK_CREATE, stream.ksclock_create, PKSCLOCK_CREATE"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	KSCLOCK_CREATE
+product: Windows
+targetos: Windows
+req.typenames: "*PKSCLOCK_CREATE, KSCLOCK_CREATE"
 ---
 
 # KSCLOCK_CREATE structure

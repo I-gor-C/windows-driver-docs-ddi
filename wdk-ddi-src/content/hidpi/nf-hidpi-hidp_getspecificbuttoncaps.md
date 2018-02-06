@@ -1,41 +1,47 @@
 ---
-UID : NF:hidpi.HidP_GetSpecificButtonCaps
-title : HidP_GetSpecificButtonCaps function
-author : windows-driver-content
-description : The HidP_GetSpecificButtonCaps routine returns a button capability array that describes all HID control buttons in a top-level collection that meet a specified selection criteria.
-old-location : hid\hidp_getspecificbuttoncaps.htm
-old-project : hid
-ms.assetid : 923693a2-cb46-4f74-bb1b-cd7bb07014e8
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : hid.hidp_getspecificbuttoncaps, hidpi/HidP_GetSpecificButtonCaps, HidP_GetSpecificButtonCaps, HidP_GetSpecificButtonCaps routine [Human Input Devices], hidfunc_dd31da1d-fb42-4ac9-a15e-4c6585785c20.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : hidpi.h
-req.include-header : Hidpi.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 2000 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Hidparse.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HIDP_REPORT_TYPE
+UID: NF:hidpi.HidP_GetSpecificButtonCaps
+title: HidP_GetSpecificButtonCaps function
+author: windows-driver-content
+description: The HidP_GetSpecificButtonCaps routine returns a button capability array that describes all HID control buttons in a top-level collection that meet a specified selection criteria.
+old-location: hid\hidp_getspecificbuttoncaps.htm
+old-project: hid
+ms.assetid: 923693a2-cb46-4f74-bb1b-cd7bb07014e8
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: hid.hidp_getspecificbuttoncaps, hidpi/HidP_GetSpecificButtonCaps, HidP_GetSpecificButtonCaps, HidP_GetSpecificButtonCaps routine [Human Input Devices], hidfunc_dd31da1d-fb42-4ac9-a15e-4c6585785c20.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: hidpi.h
+req.include-header: Hidpi.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 2000 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Hidparse.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Hidparse.lib
+-	Hidparse.dll
+apiname:
+-	HidP_GetSpecificButtonCaps
+product: Windows
+targetos: Windows
+req.typenames: HIDP_REPORT_TYPE
 ---
 
 

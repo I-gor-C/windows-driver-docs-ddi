@@ -1,41 +1,46 @@
 ---
-UID : NI:gnssdriver.IOCTL_GNSS_DELETE_GEOFENCE
-title : IOCTL_GNSS_DELETE_GEOFENCE
-author : windows-driver-content
-description : The IOCTL_GNSS_DELETE_GEOFENCE control code is used by the GNSS adapter to delete a previously created geofence.
-old-location : sensors\ioctl_gnss_delete_geofence.htm
-old-project : sensors
-ms.assetid : BF50E28A-56CF-4718-93BB-CCC3DFE84072
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : sensors.ioctl_gnss_delete_geofence, IOCTL_GNSS_DELETE_GEOFENCE control code [Sensor Devices], IOCTL_GNSS_DELETE_GEOFENCE, gnssdriver/IOCTL_GNSS_DELETE_GEOFENCE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : gnssdriver.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : GNSS_SUPL_CERT_ACTION
+UID: NI:gnssdriver.IOCTL_GNSS_DELETE_GEOFENCE
+title: IOCTL_GNSS_DELETE_GEOFENCE
+author: windows-driver-content
+description: The IOCTL_GNSS_DELETE_GEOFENCE control code is used by the GNSS adapter to delete a previously created geofence.
+old-location: sensors\ioctl_gnss_delete_geofence.htm
+old-project: sensors
+ms.assetid: BF50E28A-56CF-4718-93BB-CCC3DFE84072
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: sensors.ioctl_gnss_delete_geofence, IOCTL_GNSS_DELETE_GEOFENCE control code [Sensor Devices], IOCTL_GNSS_DELETE_GEOFENCE, gnssdriver/IOCTL_GNSS_DELETE_GEOFENCE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: gnssdriver.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	gnssdriver.h
+apiname:
+-	IOCTL_GNSS_DELETE_GEOFENCE
+product: Windows
+targetos: Windows
+req.typenames: GNSS_SUPL_CERT_ACTION
 ---
 
 # IOCTL_GNSS_DELETE_GEOFENCE IOCTL

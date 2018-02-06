@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugClient5.GetNumberEventCallbacks
-title : IDebugClient5::GetNumberEventCallbacks method
-author : windows-driver-content
-description : The GetNumberEventCallbacks method returns the number of event callbacks that are interested in the given events.
-old-location : debugger\getnumbereventcallbacks.htm
-old-project : debugger
-ms.assetid : 02001bad-bafe-432d-bc07-011cb6981ae6
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : GetNumberEventCallbacks, IDebugClient_976101a5-6218-475a-b8e9-e7091e2524d6.xml, dbgeng/IDebugClient5::GetNumberEventCallbacks, debugger.getnumbereventcallbacks, GetNumberEventCallbacks method [Windows Debugging], IDebugClient5 interface, GetNumberEventCallbacks method [Windows Debugging], IDebugClient5 interface [Windows Debugging], GetNumberEventCallbacks method, IDebugClient5::GetNumberEventCallbacks, IDebugClient5
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugClient5.GetNumberEventCallbacks
+title: IDebugClient5::GetNumberEventCallbacks method
+author: windows-driver-content
+description: The GetNumberEventCallbacks method returns the number of event callbacks that are interested in the given events.
+old-location: debugger\getnumbereventcallbacks.htm
+old-project: debugger
+ms.assetid: 02001bad-bafe-432d-bc07-011cb6981ae6
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: GetNumberEventCallbacks, IDebugClient_976101a5-6218-475a-b8e9-e7091e2524d6.xml, dbgeng/IDebugClient5::GetNumberEventCallbacks, debugger.getnumbereventcallbacks, GetNumberEventCallbacks method [Windows Debugging], IDebugClient5 interface, GetNumberEventCallbacks method [Windows Debugging], IDebugClient5 interface [Windows Debugging], GetNumberEventCallbacks method, IDebugClient5::GetNumberEventCallbacks, IDebugClient5
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugClient5.GetNumberEventCallbacks
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

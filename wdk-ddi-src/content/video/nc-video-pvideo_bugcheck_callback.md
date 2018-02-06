@@ -1,42 +1,47 @@
 ---
-UID : NC:video.PVIDEO_BUGCHECK_CALLBACK
-title : PVIDEO_BUGCHECK_CALLBACK
-author : windows-driver-content
-description : The HwVidBugcheckCallback function enables the miniport driver to append data to a dump file when a bug check occurs.
-old-location : display\hwvidbugcheckcallback.htm
-old-project : display
-ms.assetid : 1223534f-a89c-45b4-b07d-75c2c8383b73
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.hwvidbugcheckcallback, HwVidBugcheckCallback callback function [Display Devices], HwVidBugcheckCallback, PVIDEO_BUGCHECK_CALLBACK, PVIDEO_BUGCHECK_CALLBACK, video/HwVidBugcheckCallback, VideoMiniport_Functions_d3dcce93-d172-4948-8cc5-395dd2a1f9a5.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VHF_CONFIG, *PVHF_CONFIG
-req.product : Windows 10 or later.
+UID: NC:video.PVIDEO_BUGCHECK_CALLBACK
+title: PVIDEO_BUGCHECK_CALLBACK
+author: windows-driver-content
+description: The HwVidBugcheckCallback function enables the miniport driver to append data to a dump file when a bug check occurs.
+old-location: display\hwvidbugcheckcallback.htm
+old-project: display
+ms.assetid: 1223534f-a89c-45b4-b07d-75c2c8383b73
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.hwvidbugcheckcallback, HwVidBugcheckCallback callback function [Display Devices], HwVidBugcheckCallback, PVIDEO_BUGCHECK_CALLBACK, PVIDEO_BUGCHECK_CALLBACK, video/HwVidBugcheckCallback, VideoMiniport_Functions_d3dcce93-d172-4948-8cc5-395dd2a1f9a5.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	video.h
+apiname:
+-	HwVidBugcheckCallback
+product: Windows
+targetos: Windows
+req.typenames: VHF_CONFIG, *PVHF_CONFIG
+req.product: Windows 10 or later.
 ---
 
 

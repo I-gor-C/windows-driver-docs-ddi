@@ -1,41 +1,46 @@
 ---
-UID : NN:filterpipeline.IPartDiscardControl
-title : IPartDiscardControl
-author : windows-driver-content
-description : The filter pipeline supports the discard control.
-old-location : print\ipartdiscardcontrol.htm
-old-project : print
-ms.assetid : 30c6fb0c-42ea-441f-b0a2-3310f8a5b407
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : print.ipartdiscardcontrol, IPartDiscardControl interface [Print Devices], IPartDiscardControl interface [Print Devices], described, IPartDiscardControl, filterpipeline/IPartDiscardControl, filterpipeline_c29b91d3-ecf6-4697-bf5f-5b536cfb7071.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : filterpipeline.h
-req.include-header : Filterpipeline.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : filterpipeline.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NN:filterpipeline.IPartDiscardControl
+title: IPartDiscardControl
+author: windows-driver-content
+description: The filter pipeline supports the discard control.
+old-location: print\ipartdiscardcontrol.htm
+old-project: print
+ms.assetid: 30c6fb0c-42ea-441f-b0a2-3310f8a5b407
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: print.ipartdiscardcontrol, IPartDiscardControl interface [Print Devices], IPartDiscardControl interface [Print Devices], described, IPartDiscardControl, filterpipeline/IPartDiscardControl, filterpipeline_c29b91d3-ecf6-4697-bf5f-5b536cfb7071.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: filterpipeline.h
+req.include-header: Filterpipeline.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: filterpipeline.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	filterpipeline.h
+apiname:
+-	IPartDiscardControl
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 # IPartDiscardControl interface

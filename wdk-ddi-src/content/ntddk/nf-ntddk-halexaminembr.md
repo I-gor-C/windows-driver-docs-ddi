@@ -1,41 +1,46 @@
 ---
-UID : NF:ntddk.HalExamineMBR
-title : HalExamineMBR function
-author : windows-driver-content
-description : The HalExamineMBR routine reads the master boot record (MBR) of a disk and returns data from the MBR if the MBR is of the type specified by the caller.
-old-location : kernel\halexaminembr.htm
-old-project : kernel
-ms.assetid : 6db72f2c-af24-4807-b90b-65dc2b309dc7
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ntddk/HalExamineMBR, k103_86ff3079-34b8-4200-a0e9-88c921579b3f.xml, HalExamineMBR, kernel.halexaminembr, HalExamineMBR routine [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows XP.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.HalExamineMBR
+title: HalExamineMBR function
+author: windows-driver-content
+description: The HalExamineMBR routine reads the master boot record (MBR) of a disk and returns data from the MBR if the MBR is of the type specified by the caller.
+old-location: kernel\halexaminembr.htm
+old-project: kernel
+ms.assetid: 6db72f2c-af24-4807-b90b-65dc2b309dc7
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ntddk/HalExamineMBR, k103_86ff3079-34b8-4200-a0e9-88c921579b3f.xml, HalExamineMBR, kernel.halexaminembr, HalExamineMBR routine [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows XP.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	HalExamineMBR
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

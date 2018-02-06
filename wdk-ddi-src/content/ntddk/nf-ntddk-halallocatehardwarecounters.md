@@ -1,41 +1,46 @@
 ---
-UID : NF:ntddk.HalAllocateHardwareCounters
-title : HalAllocateHardwareCounters function
-author : windows-driver-content
-description : The HalAllocateHardwareCounters routine allocates a set of hardware performance counters.
-old-location : kernel\halallocatehardwarecounters.htm
-old-project : kernel
-ms.assetid : 8a689889-b445-4fda-ae11-090d0d5870b8
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ntddk/HalAllocateHardwareCounters, HalAllocateHardwareCounters, k103_06a6696a-0b51-414e-96ea-6c7d3b70acb5.xml, HalAllocateHardwareCounters routine [Kernel-Mode Driver Architecture], kernel.halallocatehardwarecounters
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntddk.h
-req.include-header : Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 7.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Hal.lib
-req.dll : Hal.dll
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.HalAllocateHardwareCounters
+title: HalAllocateHardwareCounters function
+author: windows-driver-content
+description: The HalAllocateHardwareCounters routine allocates a set of hardware performance counters.
+old-location: kernel\halallocatehardwarecounters.htm
+old-project: kernel
+ms.assetid: 8a689889-b445-4fda-ae11-090d0d5870b8
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ntddk/HalAllocateHardwareCounters, HalAllocateHardwareCounters, k103_06a6696a-0b51-414e-96ea-6c7d3b70acb5.xml, HalAllocateHardwareCounters routine [Kernel-Mode Driver Architecture], kernel.halallocatehardwarecounters
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntddk.h
+req.include-header: Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 7.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Hal.lib
+req.dll: Hal.dll
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Hal.dll
+apiname:
+-	HalAllocateHardwareCounters
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

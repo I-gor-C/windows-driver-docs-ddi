@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisMReadDmaCounter
-title : NdisMReadDmaCounter function
-author : windows-driver-content
-description : The NdisMReadDmaCounter function returns the current value of the system DMA controller's counter.
-old-location : netvista\ndismreaddmacounter.htm
-old-project : netvista
-ms.assetid : bfce0f28-4cca-48a2-8836-2f77f4b6370a
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : dma_ref_12d2675f-d576-4a5d-9af0-42dfd63fd1da.xml, NdisMReadDmaCounter, netvista.ndismreaddmacounter, ndis/NdisMReadDmaCounter, NdisMReadDmaCounter function [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisMReadDmaCounter (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisMReadDmaCounter (NDIS   5.1)) in Windows XP.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_Miniport_Driver_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisMReadDmaCounter
+title: NdisMReadDmaCounter function
+author: windows-driver-content
+description: The NdisMReadDmaCounter function returns the current value of the system DMA controller's counter.
+old-location: netvista\ndismreaddmacounter.htm
+old-project: netvista
+ms.assetid: bfce0f28-4cca-48a2-8836-2f77f4b6370a
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: dma_ref_12d2675f-d576-4a5d-9af0-42dfd63fd1da.xml, NdisMReadDmaCounter, netvista.ndismreaddmacounter, ndis/NdisMReadDmaCounter, NdisMReadDmaCounter function [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisMReadDmaCounter (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisMReadDmaCounter (NDIS   5.1)) in Windows XP.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_Miniport_Driver_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisMReadDmaCounter
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

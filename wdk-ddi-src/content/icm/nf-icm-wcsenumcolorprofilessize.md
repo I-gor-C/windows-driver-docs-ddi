@@ -1,41 +1,46 @@
 ---
-UID : NF:icm.WcsEnumColorProfilesSize
-title : WcsEnumColorProfilesSize function
-author : windows-driver-content
-description : The WcsEnumColorProfilesSize function returns the size, in bytes, of the buffer required by the WcsEnumColorProfiles function to enumerate color profiles.
-old-location : print\wcsenumcolorprofilessize.htm
-old-project : print
-ms.assetid : bcd9c781-aa44-4e90-9290-c9f13b192cae
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : WcsEnumColorProfilesSize function [Print Devices], WcsEnumColorProfilesSize, print.wcsenumcolorprofilessize, colorfnc_dec9b73e-e492-4fed-841f-bbc0c8a5f225.xml, icm/WcsEnumColorProfilesSize
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : icm.h
-req.include-header : 
-req.target-type : Universal
-req.target-min-winverclnt : Included in Windows Vista and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Mscms.lib
-req.dll : Mscms.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WCS_PROFILE_MANAGEMENT_SCOPE
+UID: NF:icm.WcsEnumColorProfilesSize
+title: WcsEnumColorProfilesSize function
+author: windows-driver-content
+description: The WcsEnumColorProfilesSize function returns the size, in bytes, of the buffer required by the WcsEnumColorProfiles function to enumerate color profiles.
+old-location: print\wcsenumcolorprofilessize.htm
+old-project: print
+ms.assetid: bcd9c781-aa44-4e90-9290-c9f13b192cae
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: WcsEnumColorProfilesSize function [Print Devices], WcsEnumColorProfilesSize, print.wcsenumcolorprofilessize, colorfnc_dec9b73e-e492-4fed-841f-bbc0c8a5f225.xml, icm/WcsEnumColorProfilesSize
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: icm.h
+req.include-header: 
+req.target-type: Universal
+req.target-min-winverclnt: Included in Windows Vista and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Mscms.lib
+req.dll: Mscms.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Mscms.dll
+apiname:
+-	WcsEnumColorProfilesSize
+product: Windows
+targetos: Windows
+req.typenames: WCS_PROFILE_MANAGEMENT_SCOPE
 ---
 
 

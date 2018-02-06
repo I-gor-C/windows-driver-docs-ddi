@@ -1,41 +1,47 @@
 ---
-UID : NF:netioddk.NmrWaitForClientDeregisterComplete
-title : NmrWaitForClientDeregisterComplete function
-author : windows-driver-content
-description : The NmrWaitForClientDeregisterComplete function waits for the deregistration of a client module to complete.
-old-location : netvista\nmrwaitforclientderegistercomplete.htm
-old-project : netvista
-ms.assetid : aed0a69e-868c-4c7d-b601-003ff357da38
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NmrWaitForClientDeregisterComplete, NmrWaitForClientDeregisterComplete function [Network Drivers Starting with Windows Vista], netvista.nmrwaitforclientderegistercomplete, netioddk/NmrWaitForClientDeregisterComplete, nmrref_577f5784-0136-480d-bc2d-d9b8740bdf3a.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : netioddk.h
-req.include-header : Wsk.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating   systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Netio.lib
-req.dll : 
-req.irql : "< DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NET_DMA_PROVIDER_CHARACTERISTICS, *PNET_DMA_PROVIDER_CHARACTERISTICS
+UID: NF:netioddk.NmrWaitForClientDeregisterComplete
+title: NmrWaitForClientDeregisterComplete function
+author: windows-driver-content
+description: The NmrWaitForClientDeregisterComplete function waits for the deregistration of a client module to complete.
+old-location: netvista\nmrwaitforclientderegistercomplete.htm
+old-project: netvista
+ms.assetid: aed0a69e-868c-4c7d-b601-003ff357da38
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NmrWaitForClientDeregisterComplete, NmrWaitForClientDeregisterComplete function [Network Drivers Starting with Windows Vista], netvista.nmrwaitforclientderegistercomplete, netioddk/NmrWaitForClientDeregisterComplete, nmrref_577f5784-0136-480d-bc2d-d9b8740bdf3a.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: netioddk.h
+req.include-header: Wsk.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Netio.lib
+req.dll: 
+req.irql: "< DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	netio.lib
+-	netio.dll
+apiname:
+-	NmrWaitForClientDeregisterComplete
+product: Windows
+targetos: Windows
+req.typenames: NET_DMA_PROVIDER_CHARACTERISTICS, *PNET_DMA_PROVIDER_CHARACTERISTICS
 ---
 
 

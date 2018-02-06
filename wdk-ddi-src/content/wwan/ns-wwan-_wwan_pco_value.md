@@ -1,42 +1,47 @@
 ---
-UID : NS:wwan._WWAN_PCO_VALUE
-title : "_WWAN_PCO_VALUE"
-author : windows-driver-content
-description : The WWAN_PCO_VALUE structure represents the PCO information payload from the network as defined in the 3GPP TS24.008 spec.
-old-location : netvista\wwan_pco_value.htm
-old-project : netvista
-ms.assetid : 45A499CE-2C9A-4070-BEF8-880E7673FA8E
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : PWWAN_PCO_VALUE structure pointer [Network Drivers Starting with Windows Vista], *PWWAN_PCO_VALUE, wwan/WWAN_PCO_VALUE, _WWAN_PCO_VALUE, WWAN_PCO_VALUE structure [Network Drivers Starting with Windows Vista], netvista.wwan_pco_value, PWWAN_PCO_VALUE, wwan/PWWAN_PCO_VALUE, WWAN_PCO_VALUE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wwan.h
-req.include-header : Wwan.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10, version 1709
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WWAN_PCO_VALUE, *PWWAN_PCO_VALUE
-req.product : Windows 10 or later.
+UID: NS:wwan._WWAN_PCO_VALUE
+title: "_WWAN_PCO_VALUE"
+author: windows-driver-content
+description: The WWAN_PCO_VALUE structure represents the PCO information payload from the network as defined in the 3GPP TS24.008 spec.
+old-location: netvista\wwan_pco_value.htm
+old-project: netvista
+ms.assetid: 45A499CE-2C9A-4070-BEF8-880E7673FA8E
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: PWWAN_PCO_VALUE structure pointer [Network Drivers Starting with Windows Vista], *PWWAN_PCO_VALUE, wwan/WWAN_PCO_VALUE, _WWAN_PCO_VALUE, WWAN_PCO_VALUE structure [Network Drivers Starting with Windows Vista], netvista.wwan_pco_value, PWWAN_PCO_VALUE, wwan/PWWAN_PCO_VALUE, WWAN_PCO_VALUE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wwan.h
+req.include-header: Wwan.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10, version 1709
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wwan.h
+apiname:
+-	WWAN_PCO_VALUE
+product: Windows
+targetos: Windows
+req.typenames: WWAN_PCO_VALUE, *PWWAN_PCO_VALUE
+req.product: Windows 10 or later.
 ---
 
 # _WWAN_PCO_VALUE structure

@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddvdeo.IOCTL_VIDEO_QUERY_CURRENT_MODE
-title : IOCTL_VIDEO_QUERY_CURRENT_MODE
-author : windows-driver-content
-description : Returns information about the current adapter mode. Miniport drivers are required to support this modal request.
-old-location : display\ioctl_video_query_current_mode.htm
-old-project : display
-ms.assetid : 16ce3db9-0295-4adc-9dc3-492b711adf2e
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.ioctl_video_query_current_mode, IOCTL_VIDEO_QUERY_CURRENT_MODE control code [Display Devices], IOCTL_VIDEO_QUERY_CURRENT_MODE, ntddvdeo/IOCTL_VIDEO_QUERY_CURRENT_MODE, Video_IOCTLs_18538d0f-5243-4326-850d-9fedf30e17cb.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddvdeo.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TAPE_WRITE_MARKS, *PTAPE_WRITE_MARKS
+UID: NI:ntddvdeo.IOCTL_VIDEO_QUERY_CURRENT_MODE
+title: IOCTL_VIDEO_QUERY_CURRENT_MODE
+author: windows-driver-content
+description: Returns information about the current adapter mode. Miniport drivers are required to support this modal request.
+old-location: display\ioctl_video_query_current_mode.htm
+old-project: display
+ms.assetid: 16ce3db9-0295-4adc-9dc3-492b711adf2e
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.ioctl_video_query_current_mode, IOCTL_VIDEO_QUERY_CURRENT_MODE control code [Display Devices], IOCTL_VIDEO_QUERY_CURRENT_MODE, ntddvdeo/IOCTL_VIDEO_QUERY_CURRENT_MODE, Video_IOCTLs_18538d0f-5243-4326-850d-9fedf30e17cb.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddvdeo.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddvdeo.h
+apiname:
+-	IOCTL_VIDEO_QUERY_CURRENT_MODE
+product: Windows
+targetos: Windows
+req.typenames: TAPE_WRITE_MARKS, *PTAPE_WRITE_MARKS
 ---
 
 # IOCTL_VIDEO_QUERY_CURRENT_MODE IOCTL

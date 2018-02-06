@@ -1,41 +1,46 @@
 ---
-UID : NC:dispmprt.DXGKCB_QUERY_SERVICES
-title : DXGKCB_QUERY_SERVICES
-author : windows-driver-content
-description : The DxgkCbQueryServices function returns an interface implemented by the display port driver.
-old-location : display\dxgkcbqueryservices.htm
-old-project : display
-ms.assetid : 0ce5df90-2019-4a92-97d6-0218acc8b1e8
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkcbqueryservices, DxgkCbQueryServices callback function [Display Devices], DxgkCbQueryServices, DXGKCB_QUERY_SERVICES, DXGKCB_QUERY_SERVICES, dispmprt/DxgkCbQueryServices, DpFunctions_1bf190e2-3bfc-4ea9-942a-502ec71fa362.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : dispmprt.h
-req.include-header : Dispmprt.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
+UID: NC:dispmprt.DXGKCB_QUERY_SERVICES
+title: DXGKCB_QUERY_SERVICES
+author: windows-driver-content
+description: The DxgkCbQueryServices function returns an interface implemented by the display port driver.
+old-location: display\dxgkcbqueryservices.htm
+old-project: display
+ms.assetid: 0ce5df90-2019-4a92-97d6-0218acc8b1e8
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkcbqueryservices, DxgkCbQueryServices callback function [Display Devices], DxgkCbQueryServices, DXGKCB_QUERY_SERVICES, DXGKCB_QUERY_SERVICES, dispmprt/DxgkCbQueryServices, DpFunctions_1bf190e2-3bfc-4ea9-942a-502ec71fa362.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: dispmprt.h
+req.include-header: Dispmprt.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	dispmprt.h
+apiname:
+-	DxgkCbQueryServices
+product: Windows
+targetos: Windows
+req.typenames: SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ---
 
 

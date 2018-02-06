@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisClCloseAddressFamily
-title : NdisClCloseAddressFamily function
-author : windows-driver-content
-description : NdisClCloseAddressFamily releases the association between a client protocol and a call manager's or MCM driver's registered AF for a particular NIC to which the client is bound.
-old-location : netvista\ndisclcloseaddressfamily.htm
-old-project : netvista
-ms.assetid : ae6b9133-bb98-4858-bef5-1cbe0ae0dd4f
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NdisClCloseAddressFamily function [Network Drivers Starting with Windows Vista], NdisClCloseAddressFamily, condis_client_ref_6aa6db12-2ebe-444a-a239-46542dd1be4a.xml, netvista.ndisclcloseaddressfamily, ndis/NdisClCloseAddressFamily
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisClCloseAddressFamily (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisClCloseAddressFamily (NDIS   5.1)) in Windows XP.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_Protocol_Driver_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisClCloseAddressFamily
+title: NdisClCloseAddressFamily function
+author: windows-driver-content
+description: NdisClCloseAddressFamily releases the association between a client protocol and a call manager's or MCM driver's registered AF for a particular NIC to which the client is bound.
+old-location: netvista\ndisclcloseaddressfamily.htm
+old-project: netvista
+ms.assetid: ae6b9133-bb98-4858-bef5-1cbe0ae0dd4f
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NdisClCloseAddressFamily function [Network Drivers Starting with Windows Vista], NdisClCloseAddressFamily, condis_client_ref_6aa6db12-2ebe-444a-a239-46542dd1be4a.xml, netvista.ndisclcloseaddressfamily, ndis/NdisClCloseAddressFamily
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisClCloseAddressFamily (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisClCloseAddressFamily (NDIS   5.1)) in Windows XP.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_Protocol_Driver_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisClCloseAddressFamily
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

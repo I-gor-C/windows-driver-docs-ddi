@@ -1,41 +1,46 @@
 ---
-UID : NI:ntdddisk.IOCTL_DISK_REASSIGN_BLOCKS_EX
-title : IOCTL_DISK_REASSIGN_BLOCKS_EX
-author : windows-driver-content
-description : Maps defective blocks to a new location on disk. This request instructs the device to reassign the bad block address to a good block from its spare-block pool.
-old-location : storage\ioctl_disk_reassign_blocks_ex.htm
-old-project : storage
-ms.assetid : 885CC365-A730-4C1E-AD74-89D47DC17407
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_disk_reassign_blocks_ex, IOCTL_DISK_REASSIGN_BLOCKS_EX control code [Storage Devices], IOCTL_DISK_REASSIGN_BLOCKS_EX, ntdddisk/IOCTL_DISK_REASSIGN_BLOCKS_EX
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntdddisk.h
-req.include-header : Ntdddisk.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DETECTION_TYPE
+UID: NI:ntdddisk.IOCTL_DISK_REASSIGN_BLOCKS_EX
+title: IOCTL_DISK_REASSIGN_BLOCKS_EX
+author: windows-driver-content
+description: Maps defective blocks to a new location on disk. This request instructs the device to reassign the bad block address to a good block from its spare-block pool.
+old-location: storage\ioctl_disk_reassign_blocks_ex.htm
+old-project: storage
+ms.assetid: 885CC365-A730-4C1E-AD74-89D47DC17407
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_disk_reassign_blocks_ex, IOCTL_DISK_REASSIGN_BLOCKS_EX control code [Storage Devices], IOCTL_DISK_REASSIGN_BLOCKS_EX, ntdddisk/IOCTL_DISK_REASSIGN_BLOCKS_EX
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntdddisk.h
+req.include-header: Ntdddisk.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntdddisk.h
+apiname:
+-	IOCTL_DISK_REASSIGN_BLOCKS_EX
+product: Windows
+targetos: Windows
+req.typenames: DETECTION_TYPE
 ---
 
 # IOCTL_DISK_REASSIGN_BLOCKS_EX IOCTL

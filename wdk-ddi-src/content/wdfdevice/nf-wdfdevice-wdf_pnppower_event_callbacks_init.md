@@ -1,42 +1,47 @@
 ---
-UID : NF:wdfdevice.WDF_PNPPOWER_EVENT_CALLBACKS_INIT
-title : WDF_PNPPOWER_EVENT_CALLBACKS_INIT function
-author : windows-driver-content
-description : The WDF_PNPPOWER_EVENT_CALLBACKS_INIT function initializes a driver's WDF_PNPPOWER_EVENT_CALLBACKS structure.
-old-location : wdf\wdf_pnppower_event_callbacks_init.htm
-old-project : wdf
-ms.assetid : f84e200b-542d-4885-a091-9e311b4ab697
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WDF_PNPPOWER_EVENT_CALLBACKS_INIT function, wdf.wdf_pnppower_event_callbacks_init, DFDeviceObjectGeneralRef_f8e5ea12-489b-4217-b05f-43a31ef891d0.xml, kmdf.wdf_pnppower_event_callbacks_init, WDF_PNPPOWER_EVENT_CALLBACKS_INIT, wdfdevice/WDF_PNPPOWER_EVENT_CALLBACKS_INIT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfdevice.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_STATE_NOTIFICATION_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfdevice.WDF_PNPPOWER_EVENT_CALLBACKS_INIT
+title: WDF_PNPPOWER_EVENT_CALLBACKS_INIT function
+author: windows-driver-content
+description: The WDF_PNPPOWER_EVENT_CALLBACKS_INIT function initializes a driver's WDF_PNPPOWER_EVENT_CALLBACKS structure.
+old-location: wdf\wdf_pnppower_event_callbacks_init.htm
+old-project: wdf
+ms.assetid: f84e200b-542d-4885-a091-9e311b4ab697
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WDF_PNPPOWER_EVENT_CALLBACKS_INIT function, wdf.wdf_pnppower_event_callbacks_init, DFDeviceObjectGeneralRef_f8e5ea12-489b-4217-b05f-43a31ef891d0.xml, kmdf.wdf_pnppower_event_callbacks_init, WDF_PNPPOWER_EVENT_CALLBACKS_INIT, wdfdevice/WDF_PNPPOWER_EVENT_CALLBACKS_INIT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfdevice.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfdevice.h
+apiname:
+-	WDF_PNPPOWER_EVENT_CALLBACKS_INIT
+product: Windows
+targetos: Windows
+req.typenames: WDF_STATE_NOTIFICATION_TYPE
+req.product: Windows 10 or later.
 ---
 
 

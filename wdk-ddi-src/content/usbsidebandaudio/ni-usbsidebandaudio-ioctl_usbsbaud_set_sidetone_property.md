@@ -1,42 +1,47 @@
 ---
-UID : NI:usbsidebandaudio.IOCTL_USBSBAUD_SET_SIDETONE_PROPERTY
-title : IOCTL_USBSBAUD_SET_SIDETONE_PROPERTY
-author : windows-driver-content
-description : TBD
-old-location : audio\ioctl_usbsbaud_set_sidetone_property.htm
-old-project : audio
-ms.assetid : 2E8EE398-A33A-4978-8198-72AF9608C517
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : audio.ioctl_usbsbaud_set_sidetone_property, IOCTL_USBSBAUD_SET_SIDETONE_PROPERTY control code [Audio Devices], IOCTL_USBSBAUD_SET_SIDETONE_PROPERTY, usbsidebandaudio/IOCTL_USBSBAUD_SET_SIDETONE_PROPERTY
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : usbsidebandaudio.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUSBSCAN_TIMEOUT, USBSCAN_TIMEOUT"
-req.product : Windows 10 or later.
+UID: NI:usbsidebandaudio.IOCTL_USBSBAUD_SET_SIDETONE_PROPERTY
+title: IOCTL_USBSBAUD_SET_SIDETONE_PROPERTY
+author: windows-driver-content
+description: TBD
+old-location: audio\ioctl_usbsbaud_set_sidetone_property.htm
+old-project: audio
+ms.assetid: 2E8EE398-A33A-4978-8198-72AF9608C517
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: audio.ioctl_usbsbaud_set_sidetone_property, IOCTL_USBSBAUD_SET_SIDETONE_PROPERTY control code [Audio Devices], IOCTL_USBSBAUD_SET_SIDETONE_PROPERTY, usbsidebandaudio/IOCTL_USBSBAUD_SET_SIDETONE_PROPERTY
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: usbsidebandaudio.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	USBSidebandAudio.h
+apiname:
+-	IOCTL_USBSBAUD_SET_SIDETONE_PROPERTY
+product: Windows
+targetos: Windows
+req.typenames: "*PUSBSCAN_TIMEOUT, USBSCAN_TIMEOUT"
+req.product: Windows 10 or later.
 ---
 
 # IOCTL_USBSBAUD_SET_SIDETONE_PROPERTY IOCTL

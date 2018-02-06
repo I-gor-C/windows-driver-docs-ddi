@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.FsRtlIncrementCcFastMdlReadWait
-title : FsRtlIncrementCcFastMdlReadWait function
-author : windows-driver-content
-description : The FsRtlIncrementCcFastMdlReadWait routine increments the cache manager's CcFastMdlReadWait performance counter member in a processor control block (PRCB) object.
-old-location : ifsk\fsrtlincrementccfastmdlreadwait.htm
-old-project : ifsk
-ms.assetid : a3a811dc-1dbf-4656-b7ec-bad818f6d1f1
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.fsrtlincrementccfastmdlreadwait, FsRtlIncrementCcFastMdlReadWait routine [Installable File System Drivers], fsrtlref_6ab13976-a131-41bf-970c-f2a554d87d92.xml, FsRtlIncrementCcFastMdlReadWait, ntifs/FsRtlIncrementCcFastMdlReadWait
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : FltKernel.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.FsRtlIncrementCcFastMdlReadWait
+title: FsRtlIncrementCcFastMdlReadWait function
+author: windows-driver-content
+description: The FsRtlIncrementCcFastMdlReadWait routine increments the cache manager's CcFastMdlReadWait performance counter member in a processor control block (PRCB) object.
+old-location: ifsk\fsrtlincrementccfastmdlreadwait.htm
+old-project: ifsk
+ms.assetid: a3a811dc-1dbf-4656-b7ec-bad818f6d1f1
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.fsrtlincrementccfastmdlreadwait, FsRtlIncrementCcFastMdlReadWait routine [Installable File System Drivers], fsrtlref_6ab13976-a131-41bf-970c-f2a554d87d92.xml, FsRtlIncrementCcFastMdlReadWait, ntifs/FsRtlIncrementCcFastMdlReadWait
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: FltKernel.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	FsRtlIncrementCcFastMdlReadWait
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsAddEvent
-title : KsAddEvent function
-author : windows-driver-content
-description : The KsAddEvent function adds an event to Object's event list.
-old-location : stream\ksaddevent.htm
-old-project : stream
-ms.assetid : 75c909b1-8eb5-4887-b528-d3ac465ee12b
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.ksaddevent, KsAddEvent function [Streaming Media Devices], avfunc_20b264e1-c7ad-4b24-bff3-996b9d478a44.xml, KsAddEvent, ks/KsAddEvent
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsAddEvent
+title: KsAddEvent function
+author: windows-driver-content
+description: The KsAddEvent function adds an event to Object's event list.
+old-location: stream\ksaddevent.htm
+old-project: stream
+ms.assetid: 75c909b1-8eb5-4887-b528-d3ac465ee12b
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.ksaddevent, KsAddEvent function [Streaming Media Devices], avfunc_20b264e1-c7ad-4b24-bff3-996b9d478a44.xml, KsAddEvent, ks/KsAddEvent
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsAddEvent
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.IoReportInterruptActive
-title : IoReportInterruptActive function
-author : windows-driver-content
-description : The IoReportInterruptActive routine informs the operating system that a registered interrupt service routine (ISR) is active and ready to handle interrupt requests.
-old-location : kernel\ioreportinterruptactive.htm
-old-project : kernel
-ms.assetid : 41C3AC04-14AF-4C37-9557-F9FF494F234B
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : IoReportInterruptActive routine [Kernel-Mode Driver Architecture], IoReportInterruptActive, kernel.ioreportinterruptactive, wdm/IoReportInterruptActive
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.IoReportInterruptActive
+title: IoReportInterruptActive function
+author: windows-driver-content
+description: The IoReportInterruptActive routine informs the operating system that a registered interrupt service routine (ISR) is active and ready to handle interrupt requests.
+old-location: kernel\ioreportinterruptactive.htm
+old-project: kernel
+ms.assetid: 41C3AC04-14AF-4C37-9557-F9FF494F234B
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: IoReportInterruptActive routine [Kernel-Mode Driver Architecture], IoReportInterruptActive, kernel.ioreportinterruptactive, wdm/IoReportInterruptActive
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoReportInterruptActive
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

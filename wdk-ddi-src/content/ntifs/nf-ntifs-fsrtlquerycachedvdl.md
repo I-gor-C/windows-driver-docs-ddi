@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.FsRtlQueryCachedVdl
-title : FsRtlQueryCachedVdl function
-author : windows-driver-content
-description : The current valid data length (VDL) for a cached file is retrieved with the FsRtlQueryCachedVdl routine.
-old-location : ifsk\fsrtlquerycachedvdl.htm
-old-project : ifsk
-ms.assetid : 5D4F3D70-6E2B-4B2E-91A4-6852AF8FEAD0
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ntifs/FsRtlQueryCachedVdl, FsRtlQueryCachedVdl routine [Installable File System Drivers], ifsk.fsrtlquerycachedvdl, FsRtlQueryCachedVdl
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.FsRtlQueryCachedVdl
+title: FsRtlQueryCachedVdl function
+author: windows-driver-content
+description: The current valid data length (VDL) for a cached file is retrieved with the FsRtlQueryCachedVdl routine.
+old-location: ifsk\fsrtlquerycachedvdl.htm
+old-project: ifsk
+ms.assetid: 5D4F3D70-6E2B-4B2E-91A4-6852AF8FEAD0
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ntifs/FsRtlQueryCachedVdl, FsRtlQueryCachedVdl routine [Installable File System Drivers], ifsk.fsrtlquerycachedvdl, FsRtlQueryCachedVdl
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	FsRtlQueryCachedVdl
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

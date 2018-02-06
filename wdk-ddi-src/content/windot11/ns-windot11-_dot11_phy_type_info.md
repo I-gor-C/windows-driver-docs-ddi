@@ -1,42 +1,47 @@
 ---
-UID : NS:windot11._DOT11_PHY_TYPE_INFO
-title : "_DOT11_PHY_TYPE_INFO"
-author : windows-driver-content
-description : Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
-old-location : netvista\dot11_phy_type_info.htm
-old-project : netvista
-ms.assetid : 9b0cbcc4-e38a-4266-afc5-8b2755d79f4c
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : "*PDOT11_PHY_TYPE_INFO, Native_802.11_data_types_20e3d688-253f-416e-b9b0-8adec6bf7415.xml, netvista.dot11_phy_type_info, DOT11_PHY_TYPE_INFO, windot11/DOT11_PHY_TYPE_INFO, DOT11_PHY_TYPE_INFO structure [Network Drivers Starting with Windows Vista], windot11/PDOT11_PHY_TYPE_INFO, PDOT11_PHY_TYPE_INFO, PDOT11_PHY_TYPE_INFO structure pointer [Network Drivers Starting with Windows Vista], _DOT11_PHY_TYPE_INFO"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : windot11.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating   systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT11_PHY_TYPE_INFO, *PDOT11_PHY_TYPE_INFO
-req.product : Windows 10 or later.
+UID: NS:windot11._DOT11_PHY_TYPE_INFO
+title: "_DOT11_PHY_TYPE_INFO"
+author: windows-driver-content
+description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+old-location: netvista\dot11_phy_type_info.htm
+old-project: netvista
+ms.assetid: 9b0cbcc4-e38a-4266-afc5-8b2755d79f4c
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: "*PDOT11_PHY_TYPE_INFO, Native_802.11_data_types_20e3d688-253f-416e-b9b0-8adec6bf7415.xml, netvista.dot11_phy_type_info, DOT11_PHY_TYPE_INFO, windot11/DOT11_PHY_TYPE_INFO, DOT11_PHY_TYPE_INFO structure [Network Drivers Starting with Windows Vista], windot11/PDOT11_PHY_TYPE_INFO, PDOT11_PHY_TYPE_INFO, PDOT11_PHY_TYPE_INFO structure pointer [Network Drivers Starting with Windows Vista], _DOT11_PHY_TYPE_INFO"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: windot11.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	windot11.h
+apiname:
+-	DOT11_PHY_TYPE_INFO
+product: Windows
+targetos: Windows
+req.typenames: DOT11_PHY_TYPE_INFO, *PDOT11_PHY_TYPE_INFO
+req.product: Windows 10 or later.
 ---
 
 # _DOT11_PHY_TYPE_INFO structure

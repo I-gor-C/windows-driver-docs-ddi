@@ -1,41 +1,46 @@
 ---
-UID : NS:dot11wdi._NDIS_WDI_DATA_API
-title : "_NDIS_WDI_DATA_API"
-author : windows-driver-content
-description : The NDIS_WDI_DATA_API structure specifies the entry points for WDI data indications.
-old-location : netvista\ndis_wdi_data_api.htm
-old-project : netvista
-ms.assetid : 8C26D62E-711A-4CE7-BD2B-D78B794C67FB
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : dot11wdi/PNDIS_WDI_DATA_API, netvista.ndis_wdi_data_api, *PNDIS_WDI_DATA_API, NDIS_WDI_DATA_API, _NDIS_WDI_DATA_API, PNDIS_WDI_DATA_API structure pointer [Network Drivers Starting with Windows Vista], PNDIS_WDI_DATA_API, NDIS_WDI_DATA_API structure [Network Drivers Starting with Windows Vista], dot11wdi/NDIS_WDI_DATA_API
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : dot11wdi.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_WDI_DATA_API, *PNDIS_WDI_DATA_API
+UID: NS:dot11wdi._NDIS_WDI_DATA_API
+title: "_NDIS_WDI_DATA_API"
+author: windows-driver-content
+description: The NDIS_WDI_DATA_API structure specifies the entry points for WDI data indications.
+old-location: netvista\ndis_wdi_data_api.htm
+old-project: netvista
+ms.assetid: 8C26D62E-711A-4CE7-BD2B-D78B794C67FB
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: dot11wdi/PNDIS_WDI_DATA_API, netvista.ndis_wdi_data_api, *PNDIS_WDI_DATA_API, NDIS_WDI_DATA_API, _NDIS_WDI_DATA_API, PNDIS_WDI_DATA_API structure pointer [Network Drivers Starting with Windows Vista], PNDIS_WDI_DATA_API, NDIS_WDI_DATA_API structure [Network Drivers Starting with Windows Vista], dot11wdi/NDIS_WDI_DATA_API
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: dot11wdi.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	dot11wdi.h
+apiname:
+-	NDIS_WDI_DATA_API
+product: Windows
+targetos: Windows
+req.typenames: NDIS_WDI_DATA_API, *PNDIS_WDI_DATA_API
 ---
 
 # _NDIS_WDI_DATA_API structure

@@ -1,41 +1,46 @@
 ---
-UID : NE:d3d10umddi.D3D11_1DDI_CERTIFICATE_TYPE
-title : D3D11_1DDI_CERTIFICATE_TYPE
-author : windows-driver-content
-description : Specifies the type of authenticated certificate that is used to establish trust and perform a key exchange.
-old-location : display\d3d11_1ddi_certificate_type.htm
-old-project : display
-ms.assetid : e95573c9-0ea7-4ad2-9e7e-d75761e98be6
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3D11_1DDI_CERTIFICATE_TYPE_CRYPTO_SESSION, d3d10umddi/D3D11_1DDI_CERTIFICATE_TYPE, D3D11_1DDI_CERTIFICATE_TYPE_AUTHENTICATED_CHANNEL, d3d10umddi/D3D11_1DDI_CERTIFICATE_TYPE_CRYPTO_SESSION, d3d10umddi/D3D11_1DDI_CERTIFICATE_TYPE_AUTHENTICATED_CHANNEL, D3D11_1DDI_CERTIFICATE_TYPE, display.d3d11_1ddi_certificate_type, D3D11_1DDI_CERTIFICATE_TYPE enumeration [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3D11_1DDI_CERTIFICATE_TYPE
+UID: NE:d3d10umddi.D3D11_1DDI_CERTIFICATE_TYPE
+title: D3D11_1DDI_CERTIFICATE_TYPE
+author: windows-driver-content
+description: Specifies the type of authenticated certificate that is used to establish trust and perform a key exchange.
+old-location: display\d3d11_1ddi_certificate_type.htm
+old-project: display
+ms.assetid: e95573c9-0ea7-4ad2-9e7e-d75761e98be6
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3D11_1DDI_CERTIFICATE_TYPE_CRYPTO_SESSION, d3d10umddi/D3D11_1DDI_CERTIFICATE_TYPE, D3D11_1DDI_CERTIFICATE_TYPE_AUTHENTICATED_CHANNEL, d3d10umddi/D3D11_1DDI_CERTIFICATE_TYPE_CRYPTO_SESSION, d3d10umddi/D3D11_1DDI_CERTIFICATE_TYPE_AUTHENTICATED_CHANNEL, D3D11_1DDI_CERTIFICATE_TYPE, display.d3d11_1ddi_certificate_type, D3D11_1DDI_CERTIFICATE_TYPE enumeration [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	D3d10umddi.h
+apiname:
+-	D3D11_1DDI_CERTIFICATE_TYPE
+product: Windows
+targetos: Windows
+req.typenames: D3D11_1DDI_CERTIFICATE_TYPE
 ---
 
 # D3D11_1DDI_CERTIFICATE_TYPE Enumeration
@@ -52,16 +57,16 @@ typedef enum D3D11_1DDI_CERTIFICATE_TYPE {
 ## Constants
 
 <table>
-
-<tr>
-<td>D3D11_1DDI_CERTIFICATE_TYPE_AUTHENTICATED_CHANNEL</td>
-<td>The certificate is used for an authenticated channel.</td>
-</tr>
-
-<tr>
-<td>D3D11_1DDI_CERTIFICATE_TYPE_CRYPTO_SESSION</td>
-<td>The certificate is used for a  cryptographic session.</td>
-</tr>
+            
+                <tr>
+                    <td>D3D11_1DDI_CERTIFICATE_TYPE_AUTHENTICATED_CHANNEL</td>
+                    <td>The certificate is used for an authenticated channel.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3D11_1DDI_CERTIFICATE_TYPE_CRYPTO_SESSION</td>
+                    <td>The certificate is used for a  cryptographic session.</td>
+                </tr>
 </table>
 
 
@@ -71,9 +76,9 @@ typedef enum D3D11_1DDI_CERTIFICATE_TYPE {
 | **Windows version** | Windows 8 Windows 8 |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_getcertificate.md">GetCertificate</a>
+        <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_getcertificate.md">GetCertificate</a>
 
 <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_getcertificatesize.md">GetCertificateSize</a>
 

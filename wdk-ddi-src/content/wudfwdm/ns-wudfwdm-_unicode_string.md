@@ -1,42 +1,47 @@
 ---
-UID : NS:wudfwdm._UNICODE_STRING
-title : "_UNICODE_STRING"
-author : windows-driver-content
-description : The UNICODE_STRING structure is used to define Unicode strings.
-old-location : kernel\unicode_string.htm
-old-project : kernel
-ms.assetid : b02f29a9-1049-4e29-aac3-72bf0c70a21e
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : UNICODE_STRING, *PUNICODE_STRING, wudfwdm/UNICODE_STRING, wudfwdm/PUNICODE_STRING, PUNICODE_STRING structure pointer [Kernel-Mode Driver Architecture], PUNICODE_STRING, kstruct_d_9f862aaa-4cd6-4420-8255-ad577d8a8c59.xml, kernel.unicode_string, _UNICODE_STRING, UNICODE_STRING structure [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wudfwdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntdef.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : UNICODE_STRING
-req.product : Windows 10 or later.
+UID: NS:wudfwdm._UNICODE_STRING
+title: "_UNICODE_STRING"
+author: windows-driver-content
+description: The UNICODE_STRING structure is used to define Unicode strings.
+old-location: kernel\unicode_string.htm
+old-project: kernel
+ms.assetid: b02f29a9-1049-4e29-aac3-72bf0c70a21e
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: UNICODE_STRING, *PUNICODE_STRING, wudfwdm/UNICODE_STRING, wudfwdm/PUNICODE_STRING, PUNICODE_STRING structure pointer [Kernel-Mode Driver Architecture], PUNICODE_STRING, kstruct_d_9f862aaa-4cd6-4420-8255-ad577d8a8c59.xml, kernel.unicode_string, _UNICODE_STRING, UNICODE_STRING structure [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wudfwdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntdef.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wudfwdm.h
+apiname:
+-	UNICODE_STRING
+product: Windows
+targetos: Windows
+req.typenames: UNICODE_STRING
+req.product: Windows 10 or later.
 ---
 
 # _UNICODE_STRING structure

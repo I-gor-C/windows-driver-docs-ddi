@@ -1,42 +1,47 @@
 ---
-UID : NF:sensorscx.SensorsCxSensorDataReady
-title : SensorsCxSensorDataReady function
-author : windows-driver-content
-description : This function notifies the class extension that the driver has retrieved data.
-old-location : sensors\sensorscxsensordataready.htm
-old-project : sensors
-ms.assetid : 9F01D093-226E-4CB4-8085-812115EBA671
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : SensorsCxSensorDataReady, sensors.sensorscxsensordataready, sensorscx/SensorsCxSensorDataReady, SensorsCxSensorDataReady function [Sensor Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : sensorscx.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SensorConnectionType
-req.product : Windows 10 or later.
+UID: NF:sensorscx.SensorsCxSensorDataReady
+title: SensorsCxSensorDataReady function
+author: windows-driver-content
+description: This function notifies the class extension that the driver has retrieved data.
+old-location: sensors\sensorscxsensordataready.htm
+old-project: sensors
+ms.assetid: 9F01D093-226E-4CB4-8085-812115EBA671
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: SensorsCxSensorDataReady, sensors.sensorscxsensordataready, sensorscx/SensorsCxSensorDataReady, SensorsCxSensorDataReady function [Sensor Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: sensorscx.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	SensorsCx.h
+apiname:
+-	SensorsCxSensorDataReady
+product: Windows
+targetos: Windows
+req.typenames: SensorConnectionType
+req.product: Windows 10 or later.
 ---
 
 

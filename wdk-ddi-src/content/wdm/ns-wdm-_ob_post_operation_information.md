@@ -1,42 +1,47 @@
 ---
-UID : NS:wdm._OB_POST_OPERATION_INFORMATION
-title : "_OB_POST_OPERATION_INFORMATION"
-author : windows-driver-content
-description : The OB_POST_OPERATION_INFORMATION structure provides information about a process or thread handle operation to an ObjectPostCallback routine.
-old-location : kernel\ob_post_operation_information.htm
-old-project : kernel
-ms.assetid : fc52e06d-c826-43c2-ac61-4f56fd808d43
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.ob_post_operation_information, wdm/OB_POST_OPERATION_INFORMATION, OB_POST_OPERATION_INFORMATION structure [Kernel-Mode Driver Architecture], *POB_POST_OPERATION_INFORMATION, wdm/POB_POST_OPERATION_INFORMATION, kstruct_c_6ef8c6e1-d537-47e0-875f-08f884362459.xml, POB_POST_OPERATION_INFORMATION structure pointer [Kernel-Mode Driver Architecture], _OB_POST_OPERATION_INFORMATION, OB_POST_OPERATION_INFORMATION, POB_POST_OPERATION_INFORMATION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Server 2008 and later versions of the Windows operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*POB_POST_OPERATION_INFORMATION, OB_POST_OPERATION_INFORMATION"
-req.product : Windows 10 or later.
+UID: NS:wdm._OB_POST_OPERATION_INFORMATION
+title: "_OB_POST_OPERATION_INFORMATION"
+author: windows-driver-content
+description: The OB_POST_OPERATION_INFORMATION structure provides information about a process or thread handle operation to an ObjectPostCallback routine.
+old-location: kernel\ob_post_operation_information.htm
+old-project: kernel
+ms.assetid: fc52e06d-c826-43c2-ac61-4f56fd808d43
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.ob_post_operation_information, wdm/OB_POST_OPERATION_INFORMATION, OB_POST_OPERATION_INFORMATION structure [Kernel-Mode Driver Architecture], *POB_POST_OPERATION_INFORMATION, wdm/POB_POST_OPERATION_INFORMATION, kstruct_c_6ef8c6e1-d537-47e0-875f-08f884362459.xml, POB_POST_OPERATION_INFORMATION structure pointer [Kernel-Mode Driver Architecture], _OB_POST_OPERATION_INFORMATION, OB_POST_OPERATION_INFORMATION, POB_POST_OPERATION_INFORMATION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Server 2008 and later versions of the Windows operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	OB_POST_OPERATION_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: "*POB_POST_OPERATION_INFORMATION, OB_POST_OPERATION_INFORMATION"
+req.product: Windows 10 or later.
 ---
 
 # _OB_POST_OPERATION_INFORMATION structure

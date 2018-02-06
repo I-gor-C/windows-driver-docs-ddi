@@ -1,42 +1,47 @@
 ---
-UID : NF:wiamdef.wiasSetValidListLong
-title : wiasSetValidListLong function
-author : windows-driver-content
-description : The wiasSetValidListLong function sets the valid values for a WIA_PROP_LIST property of type VT_I4.
-old-location : image\wiassetvalidlistlong.htm
-old-project : image
-ms.assetid : a8c3d2fa-7c21-4c6a-b395-af28029c9c15
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : wiasSetValidListLong function [Imaging Devices], wiasSetValidListLong, wiamdef/wiasSetValidListLong, image.wiassetvalidlistlong, wiasFncs_0ccc4e24-3b86-426e-94c6-7c8bb19811f8.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wiamdef.h
-req.include-header : Wiamdef.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wiaservc.lib
-req.dll : Wiaservc.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*LPDEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2, DEVICEDIALOGDATA2"
-req.product : Windows 10 or later.
+UID: NF:wiamdef.wiasSetValidListLong
+title: wiasSetValidListLong function
+author: windows-driver-content
+description: The wiasSetValidListLong function sets the valid values for a WIA_PROP_LIST property of type VT_I4.
+old-location: image\wiassetvalidlistlong.htm
+old-project: image
+ms.assetid: a8c3d2fa-7c21-4c6a-b395-af28029c9c15
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: wiasSetValidListLong function [Imaging Devices], wiasSetValidListLong, wiamdef/wiasSetValidListLong, image.wiassetvalidlistlong, wiasFncs_0ccc4e24-3b86-426e-94c6-7c8bb19811f8.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wiamdef.h
+req.include-header: Wiamdef.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wiaservc.lib
+req.dll: Wiaservc.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Wiaservc.dll
+apiname:
+-	wiasSetValidListLong
+product: Windows
+targetos: Windows
+req.typenames: "*LPDEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2, DEVICEDIALOGDATA2"
+req.product: Windows 10 or later.
 ---
 
 

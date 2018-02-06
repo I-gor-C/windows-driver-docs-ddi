@@ -1,42 +1,48 @@
 ---
-UID : NF:srb.ScsiPortWritePortUchar
-title : ScsiPortWritePortUchar function
-author : windows-driver-content
-description : The ScsiPortWritePortUchar routine transfers an unsigned byte to the HBA.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future.
-old-location : storage\scsiportwriteportuchar.htm
-old-project : storage
-ms.assetid : aba28a55-d7bc-4f75-ac87-4148cb1b4cfb
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : scsiprt_4dfda130-8e22-44b3-a57a-0656cd2a70f2.xml, ScsiPortWritePortUchar routine [Storage Devices], ScsiPortWritePortUchar, storage.scsiportwriteportuchar, srb/ScsiPortWritePortUchar
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : srb.h
-req.include-header : Miniport.h, Scsi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Scsiport.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SPB_CONTROLLER_CONFIG, *PSPB_CONTROLLER_CONFIG
-req.product : Windows 10 or later.
+UID: NF:srb.ScsiPortWritePortUchar
+title: ScsiPortWritePortUchar function
+author: windows-driver-content
+description: The ScsiPortWritePortUchar routine transfers an unsigned byte to the HBA.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future.
+old-location: storage\scsiportwriteportuchar.htm
+old-project: storage
+ms.assetid: aba28a55-d7bc-4f75-ac87-4148cb1b4cfb
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: scsiprt_4dfda130-8e22-44b3-a57a-0656cd2a70f2.xml, ScsiPortWritePortUchar routine [Storage Devices], ScsiPortWritePortUchar, storage.scsiportwriteportuchar, srb/ScsiPortWritePortUchar
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: srb.h
+req.include-header: Miniport.h, Scsi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Scsiport.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Scsiport.lib
+-	Scsiport.dll
+apiname:
+-	ScsiPortWritePortUchar
+product: Windows
+targetos: Windows
+req.typenames: SPB_CONTROLLER_CONFIG, *PSPB_CONTROLLER_CONFIG
+req.product: Windows 10 or later.
 ---
 
 

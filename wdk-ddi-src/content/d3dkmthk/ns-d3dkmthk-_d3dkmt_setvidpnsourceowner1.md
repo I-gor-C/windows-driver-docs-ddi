@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmthk._D3DKMT_SETVIDPNSOURCEOWNER1
-title : "_D3DKMT_SETVIDPNSOURCEOWNER1"
-author : windows-driver-content
-description : Describes the information, including output duplication options, needed to set or release the video present source in the path of a video present network (VidPN) topology that owns the VidPN.
-old-location : display\d3dkmt_setvidpnsourceowner1.htm
-old-project : display
-ms.assetid : 3148c628-60e3-47a8-bae1-e33390af7e33
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : "_D3DKMT_SETVIDPNSOURCEOWNER1, D3DKMT_SETVIDPNSOURCEOWNER1 structure [Display Devices], d3dkmthk/D3DKMT_SETVIDPNSOURCEOWNER1, D3DKMT_SETVIDPNSOURCEOWNER1, display.d3dkmt_setvidpnsourceowner1"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_SETVIDPNSOURCEOWNER1
+UID: NS:d3dkmthk._D3DKMT_SETVIDPNSOURCEOWNER1
+title: "_D3DKMT_SETVIDPNSOURCEOWNER1"
+author: windows-driver-content
+description: Describes the information, including output duplication options, needed to set or release the video present source in the path of a video present network (VidPN) topology that owns the VidPN.
+old-location: display\d3dkmt_setvidpnsourceowner1.htm
+old-project: display
+ms.assetid: 3148c628-60e3-47a8-bae1-e33390af7e33
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: "_D3DKMT_SETVIDPNSOURCEOWNER1, D3DKMT_SETVIDPNSOURCEOWNER1 structure [Display Devices], d3dkmthk/D3DKMT_SETVIDPNSOURCEOWNER1, D3DKMT_SETVIDPNSOURCEOWNER1, display.d3dkmt_setvidpnsourceowner1"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	D3dkmthk.h
+apiname:
+-	D3DKMT_SETVIDPNSOURCEOWNER1
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_SETVIDPNSOURCEOWNER1
 ---
 
 # _D3DKMT_SETVIDPNSOURCEOWNER1 structure

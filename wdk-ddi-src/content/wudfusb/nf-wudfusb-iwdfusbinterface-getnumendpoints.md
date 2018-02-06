@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfusb.IWDFUsbInterface.GetNumEndPoints
-title : IWDFUsbInterface::GetNumEndPoints method
-author : windows-driver-content
-description : The GetNumEndPoints method retrieves the number of endpoints (pipes) on a USB interface.
-old-location : wdf\iwdfusbinterface_getnumendpoints.htm
-old-project : wdf
-ms.assetid : 60ec8b38-8ab2-45d8-92ab-5943fd9bba79
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wudfusb/IWDFUsbInterface::GetNumEndPoints, UMDFUSBref_ae1352c4-217e-49fd-9275-6c80103af753.xml, IWDFUsbInterface, umdf.iwdfusbinterface_getnumendpoints, IWDFUsbInterface::GetNumEndPoints, GetNumEndPoints, GetNumEndPoints method, IWDFUsbInterface interface, GetNumEndPoints method, IWDFUsbInterface interface, GetNumEndPoints method, wdf.iwdfusbinterface_getnumendpoints
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfusb.h
-req.include-header : Wudfusb.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.5
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfusb.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
-req.product : Windows 10 or later.
+UID: NF:wudfusb.IWDFUsbInterface.GetNumEndPoints
+title: IWDFUsbInterface::GetNumEndPoints method
+author: windows-driver-content
+description: The GetNumEndPoints method retrieves the number of endpoints (pipes) on a USB interface.
+old-location: wdf\iwdfusbinterface_getnumendpoints.htm
+old-project: wdf
+ms.assetid: 60ec8b38-8ab2-45d8-92ab-5943fd9bba79
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wudfusb/IWDFUsbInterface::GetNumEndPoints, UMDFUSBref_ae1352c4-217e-49fd-9275-6c80103af753.xml, IWDFUsbInterface, umdf.iwdfusbinterface_getnumendpoints, IWDFUsbInterface::GetNumEndPoints, GetNumEndPoints, GetNumEndPoints method, IWDFUsbInterface interface, GetNumEndPoints method, IWDFUsbInterface interface, GetNumEndPoints method, wdf.iwdfusbinterface_getnumendpoints
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfusb.h
+req.include-header: Wudfusb.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.5
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfusb.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFUsbInterface.GetNumEndPoints
+product: Windows
+targetos: Windows
+req.typenames: WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
+req.product: Windows 10 or later.
 ---
 
 

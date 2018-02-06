@@ -1,41 +1,46 @@
 ---
-UID : NS:ndischimney._TCP_OFFLOAD_STATE_CACHED
-title : "_TCP_OFFLOAD_STATE_CACHED"
-author : windows-driver-content
-description : The TCP_OFFLOAD_STATE_CACHED structure contains the cached variables of a TCP connection state object.
-old-location : netvista\tcp_offload_state_cached.htm
-old-project : netvista
-ms.assetid : 953154eb-e6f3-4013-a68f-1a358953c7ad
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : "_TCP_OFFLOAD_STATE_CACHED, ndischimney/PTCP_OFFLOAD_STATE_CACHED, tcp_chim_struct_43b44d70-521b-483d-800f-ed9528499ca3.xml, netvista.tcp_offload_state_cached, *PTCP_OFFLOAD_STATE_CACHED, PTCP_OFFLOAD_STATE_CACHED, TCP_OFFLOAD_STATE_CACHED, TCP_OFFLOAD_STATE_CACHED structure [Network Drivers Starting with Windows Vista], PTCP_OFFLOAD_STATE_CACHED structure pointer [Network Drivers Starting with Windows Vista], ndischimney/TCP_OFFLOAD_STATE_CACHED"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndischimney.h
-req.include-header : Ndischimney.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PTCP_OFFLOAD_STATE_CACHED, TCP_OFFLOAD_STATE_CACHED"
+UID: NS:ndischimney._TCP_OFFLOAD_STATE_CACHED
+title: "_TCP_OFFLOAD_STATE_CACHED"
+author: windows-driver-content
+description: The TCP_OFFLOAD_STATE_CACHED structure contains the cached variables of a TCP connection state object.
+old-location: netvista\tcp_offload_state_cached.htm
+old-project: netvista
+ms.assetid: 953154eb-e6f3-4013-a68f-1a358953c7ad
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: "_TCP_OFFLOAD_STATE_CACHED, ndischimney/PTCP_OFFLOAD_STATE_CACHED, tcp_chim_struct_43b44d70-521b-483d-800f-ed9528499ca3.xml, netvista.tcp_offload_state_cached, *PTCP_OFFLOAD_STATE_CACHED, PTCP_OFFLOAD_STATE_CACHED, TCP_OFFLOAD_STATE_CACHED, TCP_OFFLOAD_STATE_CACHED structure [Network Drivers Starting with Windows Vista], PTCP_OFFLOAD_STATE_CACHED structure pointer [Network Drivers Starting with Windows Vista], ndischimney/TCP_OFFLOAD_STATE_CACHED"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndischimney.h
+req.include-header: Ndischimney.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndischimney.h
+apiname:
+-	TCP_OFFLOAD_STATE_CACHED
+product: Windows
+targetos: Windows
+req.typenames: "*PTCP_OFFLOAD_STATE_CACHED, TCP_OFFLOAD_STATE_CACHED"
 ---
 
 # _TCP_OFFLOAD_STATE_CACHED structure

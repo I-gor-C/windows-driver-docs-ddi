@@ -1,42 +1,47 @@
 ---
-UID : NE:wlantypes._DOT11_BSS_TYPE
-title : "_DOT11_BSS_TYPE"
-author : windows-driver-content
-description : Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
-old-location : netvista\dot11_bss_type.htm
-old-project : netvista
-ms.assetid : 5cb263e2-e5b7-456f-9fef-deaf5434c404
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : Native_802.11_data_types_ac59d6f5-1095-4953-8079-7f616769a3fa.xml, dot11_BSS_type_infrastructure, netvista.dot11_bss_type, DOT11_BSS_TYPE, wlantypes/dot11_BSS_type_infrastructure, *PDOT11_BSS_TYPE, PDOT11_BSS_TYPE enumeration pointer [Network Drivers Starting with Windows Vista], wlantypes/dot11_BSS_type_independent, _DOT11_BSS_TYPE, dot11_BSS_type_independent, wlantypes/PDOT11_BSS_TYPE, dot11_BSS_type_any, PDOT11_BSS_TYPE, DOT11_BSS_TYPE enumeration [Network Drivers Starting with Windows Vista], wlantypes/dot11_BSS_type_any, wlantypes/DOT11_BSS_TYPE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : wlantypes.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating   systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDOT11_BSS_TYPE, DOT11_BSS_TYPE"
-req.product : Windows 10 or later.
+UID: NE:wlantypes._DOT11_BSS_TYPE
+title: "_DOT11_BSS_TYPE"
+author: windows-driver-content
+description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+old-location: netvista\dot11_bss_type.htm
+old-project: netvista
+ms.assetid: 5cb263e2-e5b7-456f-9fef-deaf5434c404
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: Native_802.11_data_types_ac59d6f5-1095-4953-8079-7f616769a3fa.xml, dot11_BSS_type_infrastructure, netvista.dot11_bss_type, DOT11_BSS_TYPE, wlantypes/dot11_BSS_type_infrastructure, *PDOT11_BSS_TYPE, PDOT11_BSS_TYPE enumeration pointer [Network Drivers Starting with Windows Vista], wlantypes/dot11_BSS_type_independent, _DOT11_BSS_TYPE, dot11_BSS_type_independent, wlantypes/PDOT11_BSS_TYPE, dot11_BSS_type_any, PDOT11_BSS_TYPE, DOT11_BSS_TYPE enumeration [Network Drivers Starting with Windows Vista], wlantypes/dot11_BSS_type_any, wlantypes/DOT11_BSS_TYPE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: wlantypes.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wlantypes.h
+apiname:
+-	DOT11_BSS_TYPE
+product: Windows
+targetos: Windows
+req.typenames: "*PDOT11_BSS_TYPE, DOT11_BSS_TYPE"
+req.product: Windows 10 or later.
 ---
 
 # _DOT11_BSS_TYPE Enumeration
@@ -54,26 +59,26 @@ typedef enum _DOT11_BSS_TYPE {
 ## Constants
 
 <table>
-
-<tr>
-<td>dot11_BSS_type_any</td>
-<td>Specifies either infrastructure or IBSS network.</td>
-</tr>
-
-<tr>
-<td>dot11_BSS_type_independent</td>
-<td>Specifies an independent BSS (IBSS) network.</td>
-</tr>
-
-<tr>
-<td>dot11_BSS_type_infrastructure</td>
-<td>Specifies an infrastructure BSS network.</td>
-</tr>
+            
+                <tr>
+                    <td>dot11_BSS_type_any</td>
+                    <td>Specifies either infrastructure or IBSS network.</td>
+                </tr>
+            
+                <tr>
+                    <td>dot11_BSS_type_independent</td>
+                    <td>Specifies an independent BSS (IBSS) network.</td>
+                </tr>
+            
+                <tr>
+                    <td>dot11_BSS_type_infrastructure</td>
+                    <td>Specifies an infrastructure BSS network.</td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-The 
+        The 
     <b>dot11_BSS_type_any</b> enumerator is valid only if it is specified when 
     <a href="https://msdn.microsoft.com/library/windows/hardware/ff569413">OID_DOT11_SCAN_REQUEST</a> is set. 
     <b>dot11_BSS_type_any</b> is used to request a scan for all types of BSSs that are visible to the 802.11
@@ -85,9 +90,9 @@ The
 | **Windows version** | Available in Windows Vista and later versions of the Windows operating   systems. Available in Windows Vista and later versions of the Windows operating   systems. |
 | **Header** | wlantypes.h (include Ndis.h) |
 
-## See Also
+    ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff569413">OID_DOT11_SCAN_REQUEST</a>
+        <a href="https://msdn.microsoft.com/library/windows/hardware/ff569413">OID_DOT11_SCAN_REQUEST</a>
 
 <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-dot11-desired-bss-type">OID_DOT11_DESIRED_BSS_TYPE</a>
 

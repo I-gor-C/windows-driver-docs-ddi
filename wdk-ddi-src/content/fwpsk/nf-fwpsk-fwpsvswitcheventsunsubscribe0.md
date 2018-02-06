@@ -1,41 +1,47 @@
 ---
-UID : NF:fwpsk.FwpsvSwitchEventsUnsubscribe0
-title : FwpsvSwitchEventsUnsubscribe0 function
-author : windows-driver-content
-description : The FwpsvSwitchEventsUnsubscribe0 function releases resources that are associated with virtual switch notification subscriptions.Note  FwpsvSwitchEventsUnsubscribe0 is a specific version of FwpsvSwitchEventsUnsubscribe.
-old-location : netvista\fwpsvswitcheventsunsubscribe0.htm
-old-project : netvista
-ms.assetid : f83c6834-0438-42b8-ad9f-a1d82fcf361c
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : FwpsvSwitchEventsUnsubscribe0 function [Network Drivers Starting with Windows Vista], netvista.fwpsvswitcheventsunsubscribe0, fwpsk/FwpsvSwitchEventsUnsubscribe0, FwpsvSwitchEventsUnsubscribe0
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fwpsk.h
-req.include-header : Fwpsk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Fwpkclnt.lib
-req.dll : 
-req.irql : "<= PASSIVE_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FWPS_VSWITCH_EVENT_TYPE
+UID: NF:fwpsk.FwpsvSwitchEventsUnsubscribe0
+title: FwpsvSwitchEventsUnsubscribe0 function
+author: windows-driver-content
+description: The FwpsvSwitchEventsUnsubscribe0 function releases resources that are associated with virtual switch notification subscriptions.Note  FwpsvSwitchEventsUnsubscribe0 is a specific version of FwpsvSwitchEventsUnsubscribe.
+old-location: netvista\fwpsvswitcheventsunsubscribe0.htm
+old-project: netvista
+ms.assetid: f83c6834-0438-42b8-ad9f-a1d82fcf361c
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: FwpsvSwitchEventsUnsubscribe0 function [Network Drivers Starting with Windows Vista], netvista.fwpsvswitcheventsunsubscribe0, fwpsk/FwpsvSwitchEventsUnsubscribe0, FwpsvSwitchEventsUnsubscribe0
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fwpsk.h
+req.include-header: Fwpsk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Fwpkclnt.lib
+req.dll: 
+req.irql: "<= PASSIVE_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	fwpkclnt.lib
+-	fwpkclnt.dll
+apiname:
+-	FwpsvSwitchEventsUnsubscribe0
+product: Windows
+targetos: Windows
+req.typenames: FWPS_VSWITCH_EVENT_TYPE
 ---
 
 

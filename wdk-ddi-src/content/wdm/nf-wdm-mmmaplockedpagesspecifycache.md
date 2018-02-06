@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.MmMapLockedPagesSpecifyCache
-title : MmMapLockedPagesSpecifyCache function
-author : windows-driver-content
-description : The MmMapLockedPagesSpecifyCache routine maps the physical pages that are described by an MDL to a virtual address, and enables the caller to specify the cache attribute that is used to create the mapping.
-old-location : kernel\mmmaplockedpagesspecifycache.htm
-old-project : kernel
-ms.assetid : fb759043-ffdf-4edf-819b-669631927bc5
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.mmmaplockedpagesspecifycache, MmMapLockedPagesSpecifyCache routine [Kernel-Mode Driver Architecture], k106_337c0e8a-c098-46a8-b820-db78be002148.xml, MmMapLockedPagesSpecifyCache, wdm/MmMapLockedPagesSpecifyCache
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.MmMapLockedPagesSpecifyCache
+title: MmMapLockedPagesSpecifyCache function
+author: windows-driver-content
+description: The MmMapLockedPagesSpecifyCache routine maps the physical pages that are described by an MDL to a virtual address, and enables the caller to specify the cache attribute that is used to create the mapping.
+old-location: kernel\mmmaplockedpagesspecifycache.htm
+old-project: kernel
+ms.assetid: fb759043-ffdf-4edf-819b-669631927bc5
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.mmmaplockedpagesspecifycache, MmMapLockedPagesSpecifyCache routine [Kernel-Mode Driver Architecture], k106_337c0e8a-c098-46a8-b820-db78be002148.xml, MmMapLockedPagesSpecifyCache, wdm/MmMapLockedPagesSpecifyCache
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	MmMapLockedPagesSpecifyCache
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.RtlUshortByteSwap
-title : RtlUshortByteSwap function
-author : windows-driver-content
-description : The RtlUshortByteSwap routine reverses the ordering of the two bytes in a 16-bit unsigned integer value.
-old-location : kernel\rtlushortbyteswap.htm
-old-project : kernel
-ms.assetid : 83f6a599-0b35-4a02-b20f-80abcc6eae4f
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : RtlUshortByteSwap, kernel.rtlushortbyteswap, wdm/RtlUshortByteSwap, RtlUshortByteSwap routine [Kernel-Mode Driver Architecture], k109_36a00506-f4e3-467b-9494-c13b2ea70a1f.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.RtlUshortByteSwap
+title: RtlUshortByteSwap function
+author: windows-driver-content
+description: The RtlUshortByteSwap routine reverses the ordering of the two bytes in a 16-bit unsigned integer value.
+old-location: kernel\rtlushortbyteswap.htm
+old-project: kernel
+ms.assetid: 83f6a599-0b35-4a02-b20f-80abcc6eae4f
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: RtlUshortByteSwap, kernel.rtlushortbyteswap, wdm/RtlUshortByteSwap, RtlUshortByteSwap routine [Kernel-Mode Driver Architecture], k109_36a00506-f4e3-467b-9494-c13b2ea70a1f.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	RtlUshortByteSwap
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.SeDeleteObjectAuditAlarm
-title : SeDeleteObjectAuditAlarm function
-author : windows-driver-content
-description : The SeDeleteObjectAuditAlarm routine generates audit and alarm messages for an object that is marked for deletion.
-old-location : ifsk\sedeleteobjectauditalarm.htm
-old-project : ifsk
-ms.assetid : 3d0a26e2-60d4-437e-b5cc-3ca7afee8f5a
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.sedeleteobjectauditalarm, SeDeleteObjectAuditAlarm routine [Installable File System Drivers], ntifs/SeDeleteObjectAuditAlarm, SeDeleteObjectAuditAlarm, seref_eb1715b3-9c8b-4848-8cc8-3809d0d35d9e.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.SeDeleteObjectAuditAlarm
+title: SeDeleteObjectAuditAlarm function
+author: windows-driver-content
+description: The SeDeleteObjectAuditAlarm routine generates audit and alarm messages for an object that is marked for deletion.
+old-location: ifsk\sedeleteobjectauditalarm.htm
+old-project: ifsk
+ms.assetid: 3d0a26e2-60d4-437e-b5cc-3ca7afee8f5a
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.sedeleteobjectauditalarm, SeDeleteObjectAuditAlarm routine [Installable File System Drivers], ntifs/SeDeleteObjectAuditAlarm, SeDeleteObjectAuditAlarm, seref_eb1715b3-9c8b-4848-8cc8-3809d0d35d9e.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	SeDeleteObjectAuditAlarm
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:1394._SPEED_MAP
-title : "_SPEED_MAP"
-author : windows-driver-content
-description : The SPEED_MAP structure is stores a IEEE 1394 bus speed map.
-old-location : ieee\speed_map.htm
-old-project : IEEE
-ms.assetid : 52b2b97e-217b-445b-9c7a-093808f37aba
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : IEEE.speed_map, PSPEED_MAP structure pointer [Buses], 1394/SPEED_MAP, SPEED_MAP, SPEED_MAP structure [Buses], _SPEED_MAP, PSPEED_MAP, *PSPEED_MAP, 1394stct_0df32f88-2279-4df2-a7f3-856ddfdacb56.xml, 1394/PSPEED_MAP
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : 1394.h
-req.include-header : 1394.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSPEED_MAP, SPEED_MAP"
+UID: NS:1394._SPEED_MAP
+title: "_SPEED_MAP"
+author: windows-driver-content
+description: The SPEED_MAP structure is stores a IEEE 1394 bus speed map.
+old-location: ieee\speed_map.htm
+old-project: IEEE
+ms.assetid: 52b2b97e-217b-445b-9c7a-093808f37aba
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: IEEE.speed_map, PSPEED_MAP structure pointer [Buses], 1394/SPEED_MAP, SPEED_MAP, SPEED_MAP structure [Buses], _SPEED_MAP, PSPEED_MAP, *PSPEED_MAP, 1394stct_0df32f88-2279-4df2-a7f3-856ddfdacb56.xml, 1394/PSPEED_MAP
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: 1394.h
+req.include-header: 1394.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	1394.h
+apiname:
+-	SPEED_MAP
+product: Windows
+targetos: Windows
+req.typenames: "*PSPEED_MAP, SPEED_MAP"
 ---
 
 # _SPEED_MAP structure

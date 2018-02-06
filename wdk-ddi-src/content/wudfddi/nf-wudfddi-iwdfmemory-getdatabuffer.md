@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFMemory.GetDataBuffer
-title : IWDFMemory::GetDataBuffer method
-author : windows-driver-content
-description : The GetDataBuffer method retrieves the data buffer that is associated with a memory object.
-old-location : wdf\iwdfmemory_getdatabuffer.htm
-old-project : wdf
-ms.assetid : 136aa2af-e3bf-48b6-9511-348510eedfb5
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wudfddi/IWDFMemory::GetDataBuffer, UMDFMemoryObjectRef_910791a8-4fd9-47ff-93f9-f8f496e95272.xml, IWDFMemory interface, GetDataBuffer method, wdf.iwdfmemory_getdatabuffer, GetDataBuffer method, GetDataBuffer method, IWDFMemory interface, IWDFMemory, IWDFMemory::GetDataBuffer, GetDataBuffer, umdf.iwdfmemory_getdatabuffer
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.5
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFMemory.GetDataBuffer
+title: IWDFMemory::GetDataBuffer method
+author: windows-driver-content
+description: The GetDataBuffer method retrieves the data buffer that is associated with a memory object.
+old-location: wdf\iwdfmemory_getdatabuffer.htm
+old-project: wdf
+ms.assetid: 136aa2af-e3bf-48b6-9511-348510eedfb5
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wudfddi/IWDFMemory::GetDataBuffer, UMDFMemoryObjectRef_910791a8-4fd9-47ff-93f9-f8f496e95272.xml, IWDFMemory interface, GetDataBuffer method, wdf.iwdfmemory_getdatabuffer, GetDataBuffer method, GetDataBuffer method, IWDFMemory interface, IWDFMemory, IWDFMemory::GetDataBuffer, GetDataBuffer, umdf.iwdfmemory_getdatabuffer
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.5
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFMemory.GetDataBuffer
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

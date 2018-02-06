@@ -1,41 +1,47 @@
 ---
-UID : NF:fwpsk.FwpsPendClassify0
-title : FwpsPendClassify0 function
-author : windows-driver-content
-description : A callout's classifyFn function calls FwpsPendClassify0 to pend the current classify request.
-old-location : netvista\fwpspendclassify0.htm
-old-project : netvista
-ms.assetid : 8abf967f-776e-4438-b20a-d7c278793633
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : fwpsk/FwpsPendClassify0, FwpsPendClassify0 function [Network Drivers Starting with Windows Vista], wfp_ref_2_funct_3_fwps_J-Q_b0a2ba71-91f1-460c-9b67-d8ddbe25cb44.xml, netvista.fwpspendclassify0, FwpsPendClassify0
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fwpsk.h
-req.include-header : Fwpsk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with  Windows 7.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Fwpkclnt.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FWPS_VSWITCH_EVENT_TYPE
+UID: NF:fwpsk.FwpsPendClassify0
+title: FwpsPendClassify0 function
+author: windows-driver-content
+description: A callout's classifyFn function calls FwpsPendClassify0 to pend the current classify request.
+old-location: netvista\fwpspendclassify0.htm
+old-project: netvista
+ms.assetid: 8abf967f-776e-4438-b20a-d7c278793633
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: fwpsk/FwpsPendClassify0, FwpsPendClassify0 function [Network Drivers Starting with Windows Vista], wfp_ref_2_funct_3_fwps_J-Q_b0a2ba71-91f1-460c-9b67-d8ddbe25cb44.xml, netvista.fwpspendclassify0, FwpsPendClassify0
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fwpsk.h
+req.include-header: Fwpsk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with  Windows 7.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Fwpkclnt.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	fwpkclnt.lib
+-	fwpkclnt.dll
+apiname:
+-	FwpsPendClassify0
+product: Windows
+targetos: Windows
+req.typenames: FWPS_VSWITCH_EVENT_TYPE
 ---
 
 

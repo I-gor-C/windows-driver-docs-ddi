@@ -1,42 +1,47 @@
 ---
-UID : NC:wdm.PO_FX_COMPONENT_ACTIVE_CONDITION_CALLBACK
-title : PO_FX_COMPONENT_ACTIVE_CONDITION_CALLBACK
-author : windows-driver-content
-description : The ComponentActiveConditionCallback callback routine notifies the driver that the specified component completed a transition from the idle condition to the active condition.
-old-location : kernel\componentactiveconditioncallback.htm
-old-project : kernel
-ms.assetid : D9EA3F98-7646-4882-BE07-818280404D6A
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.componentactiveconditioncallback, ComponentActiveConditionCallback routine [Kernel-Mode Driver Architecture], ComponentActiveConditionCallback, PO_FX_COMPONENT_ACTIVE_CONDITION_CALLBACK, PO_FX_COMPONENT_ACTIVE_CONDITION_CALLBACK, wdm/ComponentActiveConditionCallback
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdm.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Supported starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Called at IRQL <= DISPATCH_LEVEL.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
-req.product : Windows 10 or later.
+UID: NC:wdm.PO_FX_COMPONENT_ACTIVE_CONDITION_CALLBACK
+title: PO_FX_COMPONENT_ACTIVE_CONDITION_CALLBACK
+author: windows-driver-content
+description: The ComponentActiveConditionCallback callback routine notifies the driver that the specified component completed a transition from the idle condition to the active condition.
+old-location: kernel\componentactiveconditioncallback.htm
+old-project: kernel
+ms.assetid: D9EA3F98-7646-4882-BE07-818280404D6A
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.componentactiveconditioncallback, ComponentActiveConditionCallback routine [Kernel-Mode Driver Architecture], ComponentActiveConditionCallback, PO_FX_COMPONENT_ACTIVE_CONDITION_CALLBACK, PO_FX_COMPONENT_ACTIVE_CONDITION_CALLBACK, wdm/ComponentActiveConditionCallback
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdm.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Supported starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Called at IRQL <= DISPATCH_LEVEL.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Wdm.h
+apiname:
+-	ComponentActiveConditionCallback
+product: Windows
+targetos: Windows
+req.typenames: WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+req.product: Windows 10 or later.
 ---
 
 

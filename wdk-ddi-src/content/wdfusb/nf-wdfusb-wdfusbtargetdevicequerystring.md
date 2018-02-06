@@ -1,42 +1,50 @@
 ---
-UID : NF:wdfusb.WdfUsbTargetDeviceQueryString
-title : WdfUsbTargetDeviceQueryString function
-author : windows-driver-content
-description : The WdfUsbTargetDeviceQueryString method retrieves the Unicode string that is associated with a specified USB device and descriptor index value.
-old-location : wdf\wdfusbtargetdevicequerystring.htm
-old-project : wdf
-ms.assetid : e7b25a47-e197-4670-9907-409d5aeb5462
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : PFN_WDFUSBTARGETDEVICEQUERYSTRING, kmdf.wdfusbtargetdevicequerystring, WdfUsbTargetDeviceQueryString, wdfusb/WdfUsbTargetDeviceQueryString, DFUsbRef_ea603209-6043-48e6-b8ff-4795f572dea6.xml, wdf.wdfusbtargetdevicequerystring, WdfUsbTargetDeviceQueryString method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfusb.h
-req.include-header : Wdfusb.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2, UsbKmdfIrql, UsbKmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfusb.WdfUsbTargetDeviceQueryString
+title: WdfUsbTargetDeviceQueryString function
+author: windows-driver-content
+description: The WdfUsbTargetDeviceQueryString method retrieves the Unicode string that is associated with a specified USB device and descriptor index value.
+old-location: wdf\wdfusbtargetdevicequerystring.htm
+old-project: wdf
+ms.assetid: e7b25a47-e197-4670-9907-409d5aeb5462
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: PFN_WDFUSBTARGETDEVICEQUERYSTRING, kmdf.wdfusbtargetdevicequerystring, WdfUsbTargetDeviceQueryString, wdfusb/WdfUsbTargetDeviceQueryString, DFUsbRef_ea603209-6043-48e6-b8ff-4795f572dea6.xml, wdf.wdfusbtargetdevicequerystring, WdfUsbTargetDeviceQueryString method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfusb.h
+req.include-header: Wdfusb.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2, UsbKmdfIrql, UsbKmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+-	WUDFx02000.dll
+-	WUDFx02000.dll.dll
+apiname:
+-	WdfUsbTargetDeviceQueryString
+product: Windows
+targetos: Windows
+req.typenames: WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
+req.product: Windows 10 or later.
 ---
 
 

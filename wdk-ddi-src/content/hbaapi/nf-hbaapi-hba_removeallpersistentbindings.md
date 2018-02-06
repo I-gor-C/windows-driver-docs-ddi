@@ -1,41 +1,46 @@
 ---
-UID : NF:hbaapi.HBA_RemoveAllPersistentBindings
-title : HBA_RemoveAllPersistentBindings function
-author : windows-driver-content
-description : The HBA_RemoveAllPersistentBindings routine removes all persistent bindings for a specified HBA port.
-old-location : storage\hba_removeallpersistentbindings.htm
-old-project : storage
-ms.assetid : f15823dd-a9c5-46a8-a376-41b831450b66
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : HBA_RemoveAllPersistentBindings routine [Storage Devices], storage.hba_removeallpersistentbindings, fibreHBA_rtns_1b72392e-f155-41aa-915a-a39da952afec.xml, hbaapi/HBA_RemoveAllPersistentBindings, HBA_RemoveAllPersistentBindings
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : hbaapi.h
-req.include-header : Hbaapi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Hbaapi.lib
-req.dll : Hbaapi.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HBA_WWNTYPE
+UID: NF:hbaapi.HBA_RemoveAllPersistentBindings
+title: HBA_RemoveAllPersistentBindings function
+author: windows-driver-content
+description: The HBA_RemoveAllPersistentBindings routine removes all persistent bindings for a specified HBA port.
+old-location: storage\hba_removeallpersistentbindings.htm
+old-project: storage
+ms.assetid: f15823dd-a9c5-46a8-a376-41b831450b66
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: HBA_RemoveAllPersistentBindings routine [Storage Devices], storage.hba_removeallpersistentbindings, fibreHBA_rtns_1b72392e-f155-41aa-915a-a39da952afec.xml, hbaapi/HBA_RemoveAllPersistentBindings, HBA_RemoveAllPersistentBindings
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: hbaapi.h
+req.include-header: Hbaapi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Hbaapi.lib
+req.dll: Hbaapi.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Hbaapi.dll
+apiname:
+-	HBA_RemoveAllPersistentBindings
+product: Windows
+targetos: Windows
+req.typenames: HBA_WWNTYPE
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._D3DDDIARG_CREATEVIDEOPROCESSDEVICE
-title : "_D3DDDIARG_CREATEVIDEOPROCESSDEVICE"
-author : windows-driver-content
-description : The D3DDDIARG_CREATEVIDEOPROCESSDEVICE structure describes a Microsoft DirectX Video Acceleration (DirectX VA) video processing device to create.
-old-location : display\d3dddiarg_createvideoprocessdevice.htm
-old-project : display
-ms.assetid : b875755c-9559-41ee-8a9b-1de05a2f1dab
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3dumddi/D3DDDIARG_CREATEVIDEOPROCESSDEVICE, D3DDDIARG_CREATEVIDEOPROCESSDEVICE structure [Display Devices], UMDisplayDriver_param_Structs_b8b0d8fa-b750-440d-afa4-556ffb33074a.xml, D3DDDIARG_CREATEVIDEOPROCESSDEVICE, _D3DDDIARG_CREATEVIDEOPROCESSDEVICE, display.d3dddiarg_createvideoprocessdevice
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDIARG_CREATEVIDEOPROCESSDEVICE
+UID: NS:d3dumddi._D3DDDIARG_CREATEVIDEOPROCESSDEVICE
+title: "_D3DDDIARG_CREATEVIDEOPROCESSDEVICE"
+author: windows-driver-content
+description: The D3DDDIARG_CREATEVIDEOPROCESSDEVICE structure describes a Microsoft DirectX Video Acceleration (DirectX VA) video processing device to create.
+old-location: display\d3dddiarg_createvideoprocessdevice.htm
+old-project: display
+ms.assetid: b875755c-9559-41ee-8a9b-1de05a2f1dab
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3dumddi/D3DDDIARG_CREATEVIDEOPROCESSDEVICE, D3DDDIARG_CREATEVIDEOPROCESSDEVICE structure [Display Devices], UMDisplayDriver_param_Structs_b8b0d8fa-b750-440d-afa4-556ffb33074a.xml, D3DDDIARG_CREATEVIDEOPROCESSDEVICE, _D3DDDIARG_CREATEVIDEOPROCESSDEVICE, display.d3dddiarg_createvideoprocessdevice
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	D3DDDIARG_CREATEVIDEOPROCESSDEVICE
+product: Windows
+targetos: Windows
+req.typenames: D3DDDIARG_CREATEVIDEOPROCESSDEVICE
 ---
 
 # _D3DDDIARG_CREATEVIDEOPROCESSDEVICE structure

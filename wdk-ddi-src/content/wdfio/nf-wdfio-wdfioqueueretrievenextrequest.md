@@ -1,42 +1,50 @@
 ---
-UID : NF:wdfio.WdfIoQueueRetrieveNextRequest
-title : WdfIoQueueRetrieveNextRequest function
-author : windows-driver-content
-description : The WdfIoQueueRetrieveNextRequest method retrieves the next available I/O request from a specified I/O queue.
-old-location : wdf\wdfioqueueretrievenextrequest.htm
-old-project : wdf
-ms.assetid : 1cde2e20-5ce6-4c5b-b40c-0b04da76980c
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdfio/WdfIoQueueRetrieveNextRequest, kmdf.wdfioqueueretrievenextrequest, wdf.wdfioqueueretrievenextrequest, DFQueueObjectRef_93fbecf2-1bfa-426c-9739-153d79d0ac27.xml, WdfIoQueueRetrieveNextRequest, PFN_WDFIOQUEUERETRIEVENEXTREQUEST, WdfIoQueueRetrieveNextRequest method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfio.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : DoubleCompletion, DriverCreate, KmdfIrql, KmdfIrql2, wdfioqueueretrievenextrequest
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_IO_QUEUE_STATE
-req.product : Windows 10 or later.
+UID: NF:wdfio.WdfIoQueueRetrieveNextRequest
+title: WdfIoQueueRetrieveNextRequest function
+author: windows-driver-content
+description: The WdfIoQueueRetrieveNextRequest method retrieves the next available I/O request from a specified I/O queue.
+old-location: wdf\wdfioqueueretrievenextrequest.htm
+old-project: wdf
+ms.assetid: 1cde2e20-5ce6-4c5b-b40c-0b04da76980c
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdfio/WdfIoQueueRetrieveNextRequest, kmdf.wdfioqueueretrievenextrequest, wdf.wdfioqueueretrievenextrequest, DFQueueObjectRef_93fbecf2-1bfa-426c-9739-153d79d0ac27.xml, WdfIoQueueRetrieveNextRequest, PFN_WDFIOQUEUERETRIEVENEXTREQUEST, WdfIoQueueRetrieveNextRequest method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfio.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: DoubleCompletion, DriverCreate, KmdfIrql, KmdfIrql2, wdfioqueueretrievenextrequest
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+-	WUDFx02000.dll
+-	WUDFx02000.dll.dll
+apiname:
+-	WdfIoQueueRetrieveNextRequest
+product: Windows
+targetos: Windows
+req.typenames: WDF_IO_QUEUE_STATE
+req.product: Windows 10 or later.
 ---
 
 

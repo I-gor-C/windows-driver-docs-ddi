@@ -1,41 +1,46 @@
 ---
-UID : NS:iscsimgt._SetLoadBalancePolicy_IN
-title : "_SetLoadBalancePolicy_IN"
-author : windows-driver-content
-description : The SetLoadBalancePolicy_IN structure holds the input data for the SetLoadBalance method.
-old-location : storage\setloadbalancepolicy_in.htm
-old-project : storage
-ms.assetid : e1895fed-a006-45f6-a38a-1767202cbf4f
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : PSetLoadBalancePolicy_IN, iscsimgt/SetLoadBalancePolicy_IN, _SetLoadBalancePolicy_IN, PSetLoadBalancePolicy_IN structure pointer [Storage Devices], *PSetLoadBalancePolicy_IN, SetLoadBalancePolicy_IN structure [Storage Devices], structs-iSCSI_d4d805d0-4c3c-4f5e-90ee-9c6bf881dfcf.xml, SetLoadBalancePolicy_IN, iscsimgt/PSetLoadBalancePolicy_IN, storage.setloadbalancepolicy_in
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : iscsimgt.h
-req.include-header : Iscsimgt.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSetLoadBalancePolicy_IN, SetLoadBalancePolicy_IN"
+UID: NS:iscsimgt._SetLoadBalancePolicy_IN
+title: "_SetLoadBalancePolicy_IN"
+author: windows-driver-content
+description: The SetLoadBalancePolicy_IN structure holds the input data for the SetLoadBalance method.
+old-location: storage\setloadbalancepolicy_in.htm
+old-project: storage
+ms.assetid: e1895fed-a006-45f6-a38a-1767202cbf4f
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: PSetLoadBalancePolicy_IN, iscsimgt/SetLoadBalancePolicy_IN, _SetLoadBalancePolicy_IN, PSetLoadBalancePolicy_IN structure pointer [Storage Devices], *PSetLoadBalancePolicy_IN, SetLoadBalancePolicy_IN structure [Storage Devices], structs-iSCSI_d4d805d0-4c3c-4f5e-90ee-9c6bf881dfcf.xml, SetLoadBalancePolicy_IN, iscsimgt/PSetLoadBalancePolicy_IN, storage.setloadbalancepolicy_in
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: iscsimgt.h
+req.include-header: Iscsimgt.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	iscsimgt.h
+apiname:
+-	SetLoadBalancePolicy_IN
+product: Windows
+targetos: Windows
+req.typenames: "*PSetLoadBalancePolicy_IN, SetLoadBalancePolicy_IN"
 ---
 
 # _SetLoadBalancePolicy_IN structure

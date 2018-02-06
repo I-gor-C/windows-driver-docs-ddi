@@ -1,41 +1,46 @@
 ---
-UID : NC:ndis.PROTOCOL_CO_SEND_NET_BUFFER_LISTS_COMPLETE
-title : PROTOCOL_CO_SEND_NET_BUFFER_LISTS_COMPLETE
-author : windows-driver-content
-description : The ProtocolCoSendNetBufferListsComplete function completes a send operation that the protocol driver initiated with a call to the NdisCoSendNetBufferLists function.Note  You must declare the function by using the PROTOCOL_CO_SEND_NET_BUFFER_LISTS_COMPLETE type. For more information, see the following Examples section.
-old-location : netvista\protocolcosendnetbufferlistscomplete.htm
-old-project : netvista
-ms.assetid : fb4b00c0-0b14-48dd-a6f2-aae659c6bb28
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.protocolcosendnetbufferlistscomplete, ProtocolCoSendNetBufferListsComplete callback function [Network Drivers Starting with Windows Vista], ProtocolCoSendNetBufferListsComplete, PROTOCOL_CO_SEND_NET_BUFFER_LISTS_COMPLETE, PROTOCOL_CO_SEND_NET_BUFFER_LISTS_COMPLETE, ndis/ProtocolCoSendNetBufferListsComplete, condis_sendrcv_ref_d2516eb4-44f1-4bae-a4f8-5a1ddd069c5a.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
+UID: NC:ndis.PROTOCOL_CO_SEND_NET_BUFFER_LISTS_COMPLETE
+title: PROTOCOL_CO_SEND_NET_BUFFER_LISTS_COMPLETE
+author: windows-driver-content
+description: The ProtocolCoSendNetBufferListsComplete function completes a send operation that the protocol driver initiated with a call to the NdisCoSendNetBufferLists function.Note  You must declare the function by using the PROTOCOL_CO_SEND_NET_BUFFER_LISTS_COMPLETE type. For more information, see the following Examples section.
+old-location: netvista\protocolcosendnetbufferlistscomplete.htm
+old-project: netvista
+ms.assetid: fb4b00c0-0b14-48dd-a6f2-aae659c6bb28
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.protocolcosendnetbufferlistscomplete, ProtocolCoSendNetBufferListsComplete callback function [Network Drivers Starting with Windows Vista], ProtocolCoSendNetBufferListsComplete, PROTOCOL_CO_SEND_NET_BUFFER_LISTS_COMPLETE, PROTOCOL_CO_SEND_NET_BUFFER_LISTS_COMPLETE, ndis/ProtocolCoSendNetBufferListsComplete, condis_sendrcv_ref_d2516eb4-44f1-4bae-a4f8-5a1ddd069c5a.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ndis.h
+apiname:
+-	ProtocolCoSendNetBufferListsComplete
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 

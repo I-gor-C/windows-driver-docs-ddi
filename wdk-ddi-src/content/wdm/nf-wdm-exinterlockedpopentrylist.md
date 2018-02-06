@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.ExInterlockedPopEntryList
-title : ExInterlockedPopEntryList function
-author : windows-driver-content
-description : The ExInterlockedPopEntryList routine atomically removes an entry from the beginning of a singly linked list of SINGLE_LIST_ENTRY structures.
-old-location : kernel\exinterlockedpopentrylist.htm
-old-project : kernel
-ms.assetid : 339e688f-64ec-402f-bd28-9fa487acb984
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ExInterlockedPopEntryList routine [Kernel-Mode Driver Architecture], ExInterlockedPopEntryList, wdm/ExInterlockedPopEntryList, k102_4673c5a1-a650-48c3-934f-c35c202277cc.xml, kernel.exinterlockedpopentrylist
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : Any level (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ExInterlockedPopEntryList
+title: ExInterlockedPopEntryList function
+author: windows-driver-content
+description: The ExInterlockedPopEntryList routine atomically removes an entry from the beginning of a singly linked list of SINGLE_LIST_ENTRY structures.
+old-location: kernel\exinterlockedpopentrylist.htm
+old-project: kernel
+ms.assetid: 339e688f-64ec-402f-bd28-9fa487acb984
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ExInterlockedPopEntryList routine [Kernel-Mode Driver Architecture], ExInterlockedPopEntryList, wdm/ExInterlockedPopEntryList, k102_4673c5a1-a650-48c3-934f-c35c202277cc.xml, kernel.exinterlockedpopentrylist
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: Any level (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ExInterlockedPopEntryList
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

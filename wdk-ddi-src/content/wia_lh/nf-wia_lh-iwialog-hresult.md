@@ -1,42 +1,47 @@
 ---
-UID : NF:wia_lh.IWiaLog.hResult
-title : IWiaLog::hResult method
-author : windows-driver-content
-description : Note that the IWiaLog interface is obsolete for Microsoft Windows XP and later, and is no longer supported.
-old-location : image\iwialog_hresult.htm
-old-project : image
-ms.assetid : 74d9b770-c2b6-483d-a6d7-070ac2a55133
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : hResult method [Imaging Devices], IWiaLog interface, IWiaLog::hResult, IWiaLog, IWiaLog_e581a82d-60c1-45e3-9d5a-fcac2b4d9c9c.xml, wia_lh/IWiaLog::hResult, hResult, hResult method [Imaging Devices], IWiaLog interface [Imaging Devices], hResult method, image.iwialog_hresult
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wia_lh.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Me, Windows XP, and later. Obsoletefor Microsoft Windows XP and later, and is no longer supported. Instead, use the Diagnostic Log Macros.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wia_lh.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : BMP_IMAGE_INFO, *PBMP_IMAGE_INFO
-req.product : Windows 10 or later.
+UID: NF:wia_lh.IWiaLog.hResult
+title: IWiaLog::hResult method
+author: windows-driver-content
+description: Note that the IWiaLog interface is obsolete for Microsoft Windows XP and later, and is no longer supported.
+old-location: image\iwialog_hresult.htm
+old-project: image
+ms.assetid: 74d9b770-c2b6-483d-a6d7-070ac2a55133
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: hResult method [Imaging Devices], IWiaLog interface, IWiaLog::hResult, IWiaLog, IWiaLog_e581a82d-60c1-45e3-9d5a-fcac2b4d9c9c.xml, wia_lh/IWiaLog::hResult, hResult, hResult method [Imaging Devices], IWiaLog interface [Imaging Devices], hResult method, image.iwialog_hresult
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wia_lh.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Me, Windows XP, and later. Obsoletefor Microsoft Windows XP and later, and is no longer supported. Instead, use the Diagnostic Log Macros.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wia_lh.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	wia_lh.h
+apiname:
+-	IWiaLog.hResult
+product: Windows
+targetos: Windows
+req.typenames: BMP_IMAGE_INFO, *PBMP_IMAGE_INFO
+req.product: Windows 10 or later.
 ---
 
 

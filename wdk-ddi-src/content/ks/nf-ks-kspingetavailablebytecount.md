@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsPinGetAvailableByteCount
-title : KsPinGetAvailableByteCount function
-author : windows-driver-content
-description : The KsPinGetAvailableByteCount routine outputs the number of bytes of input data ahead of the leading edge and the number of bytes of output buffer ahead of the leading edge, both for the queue of a caller-specified pin.
-old-location : stream\kspingetavailablebytecount.htm
-old-project : stream
-ms.assetid : e3669f11-7284-4f65-b814-624337e7fa7f
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KsPinGetAvailableByteCount routine [Streaming Media Devices], KsPinGetAvailableByteCount, ks/KsPinGetAvailableByteCount, stream.kspingetavailablebytecount, avfunc_2ba6a7f8-59b4-45bf-989a-97f8a494b4bc.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsPinGetAvailableByteCount
+title: KsPinGetAvailableByteCount function
+author: windows-driver-content
+description: The KsPinGetAvailableByteCount routine outputs the number of bytes of input data ahead of the leading edge and the number of bytes of output buffer ahead of the leading edge, both for the queue of a caller-specified pin.
+old-location: stream\kspingetavailablebytecount.htm
+old-project: stream
+ms.assetid: e3669f11-7284-4f65-b814-624337e7fa7f
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KsPinGetAvailableByteCount routine [Streaming Media Devices], KsPinGetAvailableByteCount, ks/KsPinGetAvailableByteCount, stream.kspingetavailablebytecount, avfunc_2ba6a7f8-59b4-45bf-989a-97f8a494b4bc.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsPinGetAvailableByteCount
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

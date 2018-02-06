@@ -1,42 +1,47 @@
 ---
-UID : NS:vpci._VPCI_READ_BLOCK_INPUT
-title : "_VPCI_READ_BLOCK_INPUT"
-author : windows-driver-content
-description : The VPCI_READ_BLOCK_INPUT structure is used in an IOCTL_VPCI_READ_BLOCK IOCTL request to read data from a specified configuration block of data for a PCI Express (PCIe) virtual function (VF).
-old-location : kernel\vpci_read_block_input.htm
-old-project : kernel
-ms.assetid : d8d68231-017a-42fc-ad09-8e7f5cc743d3
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : PVPCI_READ_BLOCK_INPUT, *PVPCI_READ_BLOCK_INPUT, vpci/VPCI_READ_BLOCK_INPUT, VPCI_READ_BLOCK_INPUT structure [Kernel-Mode Driver Architecture], kernel.vpci_read_block_input, vpci/PVPCI_READ_BLOCK_INPUT, PVPCI_READ_BLOCK_INPUT structure pointer [Kernel-Mode Driver Architecture], _VPCI_READ_BLOCK_INPUT, VPCI_READ_BLOCK_INPUT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : vpci.h
-req.include-header : Vpci.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : DISPATCH_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PVPCI_READ_BLOCK_INPUT, VPCI_READ_BLOCK_INPUT"
-req.product : Windows 10 or later.
+UID: NS:vpci._VPCI_READ_BLOCK_INPUT
+title: "_VPCI_READ_BLOCK_INPUT"
+author: windows-driver-content
+description: The VPCI_READ_BLOCK_INPUT structure is used in an IOCTL_VPCI_READ_BLOCK IOCTL request to read data from a specified configuration block of data for a PCI Express (PCIe) virtual function (VF).
+old-location: kernel\vpci_read_block_input.htm
+old-project: kernel
+ms.assetid: d8d68231-017a-42fc-ad09-8e7f5cc743d3
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: PVPCI_READ_BLOCK_INPUT, *PVPCI_READ_BLOCK_INPUT, vpci/VPCI_READ_BLOCK_INPUT, VPCI_READ_BLOCK_INPUT structure [Kernel-Mode Driver Architecture], kernel.vpci_read_block_input, vpci/PVPCI_READ_BLOCK_INPUT, PVPCI_READ_BLOCK_INPUT structure pointer [Kernel-Mode Driver Architecture], _VPCI_READ_BLOCK_INPUT, VPCI_READ_BLOCK_INPUT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: vpci.h
+req.include-header: Vpci.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: DISPATCH_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Vpci.h
+apiname:
+-	VPCI_READ_BLOCK_INPUT
+product: Windows
+targetos: Windows
+req.typenames: "*PVPCI_READ_BLOCK_INPUT, VPCI_READ_BLOCK_INPUT"
+req.product: Windows 10 or later.
 ---
 
 # _VPCI_READ_BLOCK_INPUT structure

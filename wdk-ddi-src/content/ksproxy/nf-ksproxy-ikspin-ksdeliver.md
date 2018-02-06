@@ -1,41 +1,46 @@
 ---
-UID : NF:ksproxy.IKsPin.KsDeliver
-title : IKsPin::KsDeliver method
-author : windows-driver-content
-description : The KsDeliver method delivers a media sample from an output pin to an input pin, continues an I/O operation by retrieving the next buffer from an allocator, and submits the buffer to the associated device.
-old-location : stream\ikspin_ksdeliver.htm
-old-project : stream
-ms.assetid : e527a659-7ed5-4262-bed2-3bab58919401
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : IKsPin::KsDeliver, ksproxy_3608c6b5-20e3-43e1-b1aa-a283f8d00f17.xml, KsDeliver method [Streaming Media Devices], IKsPin interface, KsDeliver method [Streaming Media Devices], stream.ikspin_ksdeliver, IKsPin interface [Streaming Media Devices], KsDeliver method, KsDeliver, ksproxy/IKsPin::KsDeliver, IKsPin
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : ksproxy.h
-req.include-header : Ksproxy.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : ksproxy.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PIPE_STATE
+UID: NF:ksproxy.IKsPin.KsDeliver
+title: IKsPin::KsDeliver method
+author: windows-driver-content
+description: The KsDeliver method delivers a media sample from an output pin to an input pin, continues an I/O operation by retrieving the next buffer from an allocator, and submits the buffer to the associated device.
+old-location: stream\ikspin_ksdeliver.htm
+old-project: stream
+ms.assetid: e527a659-7ed5-4262-bed2-3bab58919401
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: IKsPin::KsDeliver, ksproxy_3608c6b5-20e3-43e1-b1aa-a283f8d00f17.xml, KsDeliver method [Streaming Media Devices], IKsPin interface, KsDeliver method [Streaming Media Devices], stream.ikspin_ksdeliver, IKsPin interface [Streaming Media Devices], KsDeliver method, KsDeliver, ksproxy/IKsPin::KsDeliver, IKsPin
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: ksproxy.h
+req.include-header: Ksproxy.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: ksproxy.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	ksproxy.h
+apiname:
+-	IKsPin.KsDeliver
+product: Windows
+targetos: Windows
+req.typenames: PIPE_STATE
 ---
 
 

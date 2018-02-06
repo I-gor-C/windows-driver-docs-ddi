@@ -1,42 +1,47 @@
 ---
-UID : NS:usbioctl._USB_HUB_INFORMATION_EX
-title : "_USB_HUB_INFORMATION_EX"
-author : windows-driver-content
-description : The USB_HUB_INFORMATION_EX structure is used with the IOCTL_USB_GET_HUB_INFORMATION_EX I/O control request to retrieve information about a Universal Serial Bus (USB) hub.
-old-location : buses\usb_hub_information_ex.htm
-old-project : usbref
-ms.assetid : 23E99282-16BD-4E1E-9419-C1F44B913C4F
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : usbioctl/PUSB_HUB_INFORMATION_EX, USB_HUB_INFORMATION_EX structure [Buses], buses.usb_hub_information_ex, PUSB_HUB_INFORMATION_EX structure pointer [Buses], PUSB_HUB_INFORMATION_EX, *PUSB_HUB_INFORMATION_EX, usbioctl/USB_HUB_INFORMATION_EX, _USB_HUB_INFORMATION_EX, USB_HUB_INFORMATION_EX
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : usbioctl.h
-req.include-header : Usbioctl.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : None supported
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUSB_HUB_INFORMATION_EX, USB_HUB_INFORMATION_EX"
-req.product : Windows 10 or later.
+UID: NS:usbioctl._USB_HUB_INFORMATION_EX
+title: "_USB_HUB_INFORMATION_EX"
+author: windows-driver-content
+description: The USB_HUB_INFORMATION_EX structure is used with the IOCTL_USB_GET_HUB_INFORMATION_EX I/O control request to retrieve information about a Universal Serial Bus (USB) hub.
+old-location: buses\usb_hub_information_ex.htm
+old-project: usbref
+ms.assetid: 23E99282-16BD-4E1E-9419-C1F44B913C4F
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: usbioctl/PUSB_HUB_INFORMATION_EX, USB_HUB_INFORMATION_EX structure [Buses], buses.usb_hub_information_ex, PUSB_HUB_INFORMATION_EX structure pointer [Buses], PUSB_HUB_INFORMATION_EX, *PUSB_HUB_INFORMATION_EX, usbioctl/USB_HUB_INFORMATION_EX, _USB_HUB_INFORMATION_EX, USB_HUB_INFORMATION_EX
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: usbioctl.h
+req.include-header: Usbioctl.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: None supported
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	usbioctl.h
+apiname:
+-	USB_HUB_INFORMATION_EX
+product: Windows
+targetos: Windows
+req.typenames: "*PUSB_HUB_INFORMATION_EX, USB_HUB_INFORMATION_EX"
+req.product: Windows 10 or later.
 ---
 
 # _USB_HUB_INFORMATION_EX structure

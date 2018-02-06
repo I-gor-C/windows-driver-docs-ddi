@@ -1,42 +1,48 @@
 ---
-UID : NF:storport.StorPortQuerySystemTime
-title : StorPortQuerySystemTime function
-author : windows-driver-content
-description : The StoriPortQuerySystemTime routine obtains the current system time.
-old-location : storage\storportquerysystemtime.htm
-old-project : storage
-ms.assetid : 20677d16-136c-47d7-a19b-21731433298e
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.storportquerysystemtime, storport/StorPortQuerySystemTime, StorPortQuerySystemTime routine [Storage Devices], StorPortQuerySystemTime, storprt_fcad0e23-f796-4cd9-935c-6db56a63d899.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Storport.lib
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STOR_SPINLOCK
-req.product : Windows 10 or later.
+UID: NF:storport.StorPortQuerySystemTime
+title: StorPortQuerySystemTime function
+author: windows-driver-content
+description: The StoriPortQuerySystemTime routine obtains the current system time.
+old-location: storage\storportquerysystemtime.htm
+old-project: storage
+ms.assetid: 20677d16-136c-47d7-a19b-21731433298e
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.storportquerysystemtime, storport/StorPortQuerySystemTime, StorPortQuerySystemTime routine [Storage Devices], StorPortQuerySystemTime, storprt_fcad0e23-f796-4cd9-935c-6db56a63d899.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Storport.lib
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Storport.lib
+-	Storport.dll
+apiname:
+-	StorPortQuerySystemTime
+product: Windows
+targetos: Windows
+req.typenames: STOR_SPINLOCK
+req.product: Windows 10 or later.
 ---
 
 

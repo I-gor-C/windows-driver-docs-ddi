@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddk._WHEA_IPF_CMC_DESCRIPTOR
-title : "_WHEA_IPF_CMC_DESCRIPTOR"
-author : windows-driver-content
-description : The WHEA_IPF_CMC_DESCRIPTOR structure describes a corrected machine check (CMC) error source for an Itanium processor.
-old-location : whea\whea_ipf_cmc_descriptor.htm
-old-project : whea
-ms.assetid : 570a1dfa-d6dc-4886-ad13-0f3e1f88ddde
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : "*PWHEA_IPF_CMC_DESCRIPTOR, WHEA_IPF_CMC_DESCRIPTOR structure [WHEA Drivers and Applications], ntddk/PWHEA_IPF_CMC_DESCRIPTOR, whearef_825e6302-2ef1-4277-9fd5-4855d64fce9d.xml, WHEA_IPF_CMC_DESCRIPTOR, whea.whea_ipf_cmc_descriptor, ntddk/WHEA_IPF_CMC_DESCRIPTOR, PWHEA_IPF_CMC_DESCRIPTOR, PWHEA_IPF_CMC_DESCRIPTOR structure pointer [WHEA Drivers and Applications], _WHEA_IPF_CMC_DESCRIPTOR"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_IPF_CMC_DESCRIPTOR, *PWHEA_IPF_CMC_DESCRIPTOR
+UID: NS:ntddk._WHEA_IPF_CMC_DESCRIPTOR
+title: "_WHEA_IPF_CMC_DESCRIPTOR"
+author: windows-driver-content
+description: The WHEA_IPF_CMC_DESCRIPTOR structure describes a corrected machine check (CMC) error source for an Itanium processor.
+old-location: whea\whea_ipf_cmc_descriptor.htm
+old-project: whea
+ms.assetid: 570a1dfa-d6dc-4886-ad13-0f3e1f88ddde
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: "*PWHEA_IPF_CMC_DESCRIPTOR, WHEA_IPF_CMC_DESCRIPTOR structure [WHEA Drivers and Applications], ntddk/PWHEA_IPF_CMC_DESCRIPTOR, whearef_825e6302-2ef1-4277-9fd5-4855d64fce9d.xml, WHEA_IPF_CMC_DESCRIPTOR, whea.whea_ipf_cmc_descriptor, ntddk/WHEA_IPF_CMC_DESCRIPTOR, PWHEA_IPF_CMC_DESCRIPTOR, PWHEA_IPF_CMC_DESCRIPTOR structure pointer [WHEA Drivers and Applications], _WHEA_IPF_CMC_DESCRIPTOR"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddk.h
+apiname:
+-	WHEA_IPF_CMC_DESCRIPTOR
+product: Windows
+targetos: Windows
+req.typenames: WHEA_IPF_CMC_DESCRIPTOR, *PWHEA_IPF_CMC_DESCRIPTOR
 ---
 
 # _WHEA_IPF_CMC_DESCRIPTOR structure

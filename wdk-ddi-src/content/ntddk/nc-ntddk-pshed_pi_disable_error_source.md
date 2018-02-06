@@ -1,41 +1,46 @@
 ---
-UID : NC:ntddk.PSHED_PI_DISABLE_ERROR_SOURCE
-title : PSHED_PI_DISABLE_ERROR_SOURCE
-author : windows-driver-content
-description : A PSHED plug-in's DisableErrorSource callback function disables an error source.
-old-location : whea\disableerrorsource.htm
-old-project : whea
-ms.assetid : 062927db-9581-447a-820b-82687710ea8d
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : whea.disableerrorsource, DisableErrorSource callback function [WHEA Drivers and Applications], DisableErrorSource, PSHED_PI_DISABLE_ERROR_SOURCE, PSHED_PI_DISABLE_ERROR_SOURCE, ntddk/DisableErrorSource, whearef_41df46d2-6f6e-47aa-8296-cdc9223a9f26.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PFILTER_INITIALIZATION_DATA, FILTER_INITIALIZATION_DATA"
+UID: NC:ntddk.PSHED_PI_DISABLE_ERROR_SOURCE
+title: PSHED_PI_DISABLE_ERROR_SOURCE
+author: windows-driver-content
+description: A PSHED plug-in's DisableErrorSource callback function disables an error source.
+old-location: whea\disableerrorsource.htm
+old-project: whea
+ms.assetid: 062927db-9581-447a-820b-82687710ea8d
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: whea.disableerrorsource, DisableErrorSource callback function [WHEA Drivers and Applications], DisableErrorSource, PSHED_PI_DISABLE_ERROR_SOURCE, PSHED_PI_DISABLE_ERROR_SOURCE, ntddk/DisableErrorSource, whearef_41df46d2-6f6e-47aa-8296-cdc9223a9f26.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ntddk.h
+apiname:
+-	DisableErrorSource
+product: Windows
+targetos: Windows
+req.typenames: "*PFILTER_INITIALIZATION_DATA, FILTER_INITIALIZATION_DATA"
 ---
 
 

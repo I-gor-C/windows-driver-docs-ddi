@@ -1,41 +1,46 @@
 ---
-UID : NC:ks.PFNKSDEVICECREATE
-title : PFNKSDEVICECREATE
-author : windows-driver-content
-description : An AVStream minidriver's AVStrMiniDeviceAdd routine notifies the minidriver that AVStream's PnP AddDevice routine has completed.
-old-location : stream\avstrminideviceadd.htm
-old-project : stream
-ms.assetid : 8f7168c3-0c28-4802-af34-45b46c1b6827
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.avstrminideviceadd, AVStrMiniDeviceAdd, AVStrMiniDeviceAdd routine [Streaming Media Devices], AVStrMiniDeviceAdd, PFNKSDEVICECREATE, PFNKSDEVICECREATE, ks/AVStrMiniDeviceAdd, avstclbk_1cba196f-c0c6-42fb-8674-52e0fad4a337.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (See Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KEYWORDSELECTOR
+UID: NC:ks.PFNKSDEVICECREATE
+title: PFNKSDEVICECREATE
+author: windows-driver-content
+description: An AVStream minidriver's AVStrMiniDeviceAdd routine notifies the minidriver that AVStream's PnP AddDevice routine has completed.
+old-location: stream\avstrminideviceadd.htm
+old-project: stream
+ms.assetid: 8f7168c3-0c28-4802-af34-45b46c1b6827
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.avstrminideviceadd, AVStrMiniDeviceAdd, AVStrMiniDeviceAdd routine [Streaming Media Devices], AVStrMiniDeviceAdd, PFNKSDEVICECREATE, PFNKSDEVICECREATE, ks/AVStrMiniDeviceAdd, avstclbk_1cba196f-c0c6-42fb-8674-52e0fad4a337.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (See Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	ks.h
+apiname:
+-	AVStrMiniDeviceAdd
+product: Windows
+targetos: Windows
+req.typenames: KEYWORDSELECTOR
 ---
 
 

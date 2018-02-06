@@ -1,41 +1,46 @@
 ---
-UID : NS:dbgeng._DEBUG_PROCESSOR_IDENTIFICATION_AMD64
-title : "_DEBUG_PROCESSOR_IDENTIFICATION_AMD64"
-author : windows-driver-content
-description : Identifies an AMD64 processor.
-old-location : debugger\debug_processor_identification_amd64.htm
-old-project : debugger
-ms.assetid : 71E28D54-19D2-4A62-9A63-633186F67AD5
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : dbgeng/DEBUG_PROCESSOR_IDENTIFICATION_AMD64, DEBUG_PROCESSOR_IDENTIFICATION_AMD64, PDEBUG_PROCESSOR_IDENTIFICATION_AMD64, _DEBUG_PROCESSOR_IDENTIFICATION_AMD64, *PDEBUG_PROCESSOR_IDENTIFICATION_AMD64, dbgeng/PDEBUG_PROCESSOR_IDENTIFICATION_AMD64, PDEBUG_PROCESSOR_IDENTIFICATION_AMD64 structure pointer [Windows Debugging], DEBUG_PROCESSOR_IDENTIFICATION_AMD64 structure [Windows Debugging], debugger.debug_processor_identification_amd64
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : dbgeng.h
-req.include-header : DbgEng.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DEBUG_PROCESSOR_IDENTIFICATION_AMD64, *PDEBUG_PROCESSOR_IDENTIFICATION_AMD64
+UID: NS:dbgeng._DEBUG_PROCESSOR_IDENTIFICATION_AMD64
+title: "_DEBUG_PROCESSOR_IDENTIFICATION_AMD64"
+author: windows-driver-content
+description: Identifies an AMD64 processor.
+old-location: debugger\debug_processor_identification_amd64.htm
+old-project: debugger
+ms.assetid: 71E28D54-19D2-4A62-9A63-633186F67AD5
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: dbgeng/DEBUG_PROCESSOR_IDENTIFICATION_AMD64, DEBUG_PROCESSOR_IDENTIFICATION_AMD64, PDEBUG_PROCESSOR_IDENTIFICATION_AMD64, _DEBUG_PROCESSOR_IDENTIFICATION_AMD64, *PDEBUG_PROCESSOR_IDENTIFICATION_AMD64, dbgeng/PDEBUG_PROCESSOR_IDENTIFICATION_AMD64, PDEBUG_PROCESSOR_IDENTIFICATION_AMD64 structure pointer [Windows Debugging], DEBUG_PROCESSOR_IDENTIFICATION_AMD64 structure [Windows Debugging], debugger.debug_processor_identification_amd64
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: dbgeng.h
+req.include-header: DbgEng.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	DbgEng.h
+apiname:
+-	DEBUG_PROCESSOR_IDENTIFICATION_AMD64
+product: Windows
+targetos: Windows
+req.typenames: DEBUG_PROCESSOR_IDENTIFICATION_AMD64, *PDEBUG_PROCESSOR_IDENTIFICATION_AMD64
 ---
 
 # _DEBUG_PROCESSOR_IDENTIFICATION_AMD64 structure

@@ -1,41 +1,46 @@
 ---
-UID : NN:portcls.IUnregisterSubdevice
-title : IUnregisterSubdevice
-author : windows-driver-content
-description : The IUnregisterSubdevice interface implements a method to remove a registered subdevice.
-old-location : audio\iunregistersubdevice.htm
-old-project : audio
-ms.assetid : 023b0a03-a572-459b-a1eb-b25fcde6ecc5
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : audio.iunregistersubdevice, IUnregisterSubdevice interface [Audio Devices], IUnregisterSubdevice interface [Audio Devices], described, IUnregisterSubdevice, portcls/IUnregisterSubdevice, audmp-routines_1af8aada-2816-4e82-abe4-579ba672866b.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : portcls.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Portcls.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NN:portcls.IUnregisterSubdevice
+title: IUnregisterSubdevice
+author: windows-driver-content
+description: The IUnregisterSubdevice interface implements a method to remove a registered subdevice.
+old-location: audio\iunregistersubdevice.htm
+old-project: audio
+ms.assetid: 023b0a03-a572-459b-a1eb-b25fcde6ecc5
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: audio.iunregistersubdevice, IUnregisterSubdevice interface [Audio Devices], IUnregisterSubdevice interface [Audio Devices], described, IUnregisterSubdevice, portcls/IUnregisterSubdevice, audmp-routines_1af8aada-2816-4e82-abe4-579ba672866b.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: portcls.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Portcls.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	portcls.h
+apiname:
+-	IUnregisterSubdevice
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 # IUnregisterSubdevice interface

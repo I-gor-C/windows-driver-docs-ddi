@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFDriver.CreateWdfObject
-title : IWDFDriver::CreateWdfObject method
-author : windows-driver-content
-description : The CreateWdfObject method creates a custom (or user) WDF object from a parent WDF object.
-old-location : wdf\iwdfdriver_createwdfobject.htm
-old-project : wdf
-ms.assetid : 9dda353d-7c39-4c3c-b9e2-38946d6cc086
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : IWDFDriver::CreateWdfObject, umdf.iwdfdriver_createwdfobject, wudfddi/IWDFDriver::CreateWdfObject, IWDFDriver, wdf.iwdfdriver_createwdfobject, IWDFDriver interface, CreateWdfObject method, UMDFDriverObjectRef_8ab61a3d-78e3-4d92-8a9c-0eff2837f65f.xml, CreateWdfObject, CreateWdfObject method, IWDFDriver interface, CreateWdfObject method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.5
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFDriver.CreateWdfObject
+title: IWDFDriver::CreateWdfObject method
+author: windows-driver-content
+description: The CreateWdfObject method creates a custom (or user) WDF object from a parent WDF object.
+old-location: wdf\iwdfdriver_createwdfobject.htm
+old-project: wdf
+ms.assetid: 9dda353d-7c39-4c3c-b9e2-38946d6cc086
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: IWDFDriver::CreateWdfObject, umdf.iwdfdriver_createwdfobject, wudfddi/IWDFDriver::CreateWdfObject, IWDFDriver, wdf.iwdfdriver_createwdfobject, IWDFDriver interface, CreateWdfObject method, UMDFDriverObjectRef_8ab61a3d-78e3-4d92-8a9c-0eff2837f65f.xml, CreateWdfObject, CreateWdfObject method, IWDFDriver interface, CreateWdfObject method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.5
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFDriver.CreateWdfObject
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

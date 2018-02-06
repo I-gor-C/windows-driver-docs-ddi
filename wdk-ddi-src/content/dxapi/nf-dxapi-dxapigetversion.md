@@ -1,41 +1,47 @@
 ---
-UID : NF:dxapi.DxApiGetVersion
-title : DxApiGetVersion function
-author : windows-driver-content
-description : Do not use the DxApiGetVersion function; use the DxApi function along with the DD_DXAPI_GETVERSIONNUMBER function identifier instead.The DxApiGetVersion function returns a Direct Sound version number of 4.02.
-old-location : display\dxapigetversion.htm
-old-project : display
-ms.assetid : f9d441a5-46b5-4da8-aa7e-f4f45eb733d4
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DxApiGetVersion, ddfncs_72fbedfa-d63f-462a-a6c4-862c6815f1c1.xml, DxApiGetVersion function [Display Devices], dxapi/DxApiGetVersion, display.dxapigetversion
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : dxapi.h
-req.include-header : Dxapi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Dxapi.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDRMRIGHTS, DRMRIGHTS"
+UID: NF:dxapi.DxApiGetVersion
+title: DxApiGetVersion function
+author: windows-driver-content
+description: Do not use the DxApiGetVersion function; use the DxApi function along with the DD_DXAPI_GETVERSIONNUMBER function identifier instead.The DxApiGetVersion function returns a Direct Sound version number of 4.02.
+old-location: display\dxapigetversion.htm
+old-project: display
+ms.assetid: f9d441a5-46b5-4da8-aa7e-f4f45eb733d4
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DxApiGetVersion, ddfncs_72fbedfa-d63f-462a-a6c4-862c6815f1c1.xml, DxApiGetVersion function [Display Devices], dxapi/DxApiGetVersion, display.dxapigetversion
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: dxapi.h
+req.include-header: Dxapi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Dxapi.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Dxapi.lib
+-	Dxapi.dll
+apiname:
+-	DxApiGetVersion
+product: Windows
+targetos: Windows
+req.typenames: "*PDRMRIGHTS, DRMRIGHTS"
 ---
 
 

@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsFreeObjectCreateItemsByContext
-title : KsFreeObjectCreateItemsByContext function
-author : windows-driver-content
-description : Frees all create items with a specific context.
-old-location : stream\ksfreeobjectcreateitemsbycontext.htm
-old-project : stream
-ms.assetid : 70c2942d-1225-4a50-b734-27995b4481d1
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KsFreeObjectCreateItemsByContext function [Streaming Media Devices], KsFreeObjectCreateItemsByContext, ks/KsFreeObjectCreateItemsByContext, ksfunc_0ad51072-eff4-4be3-95f4-b54c9267a4a9.xml, stream.ksfreeobjectcreateitemsbycontext
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsFreeObjectCreateItemsByContext
+title: KsFreeObjectCreateItemsByContext function
+author: windows-driver-content
+description: Frees all create items with a specific context.
+old-location: stream\ksfreeobjectcreateitemsbycontext.htm
+old-project: stream
+ms.assetid: 70c2942d-1225-4a50-b734-27995b4481d1
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KsFreeObjectCreateItemsByContext function [Streaming Media Devices], KsFreeObjectCreateItemsByContext, ks/KsFreeObjectCreateItemsByContext, ksfunc_0ad51072-eff4-4be3-95f4-b54c9267a4a9.xml, stream.ksfreeobjectcreateitemsbycontext
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsFreeObjectCreateItemsByContext
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

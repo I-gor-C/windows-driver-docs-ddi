@@ -1,41 +1,46 @@
 ---
-UID : NC:ks.PFNREFERENCEDEVICEOBJECT
-title : PFNREFERENCEDEVICEOBJECT
-author : windows-driver-content
-description : The driver can use this routine to increment the reference count of the PDO.
-old-location : stream\kstrreferencedeviceobject.htm
-old-project : stream
-ms.assetid : f4bf38eb-5028-4fcb-9752-8dab88db5904
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.kstrreferencedeviceobject, KStrReferenceDeviceObject routine [Streaming Media Devices], KStrReferenceDeviceObject, PFNREFERENCEDEVICEOBJECT, PFNREFERENCEDEVICEOBJECT, ks/KStrReferenceDeviceObject, ksfunc_721dd90e-6810-4f02-8454-dbacc872f90f.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KEYWORDSELECTOR
+UID: NC:ks.PFNREFERENCEDEVICEOBJECT
+title: PFNREFERENCEDEVICEOBJECT
+author: windows-driver-content
+description: The driver can use this routine to increment the reference count of the PDO.
+old-location: stream\kstrreferencedeviceobject.htm
+old-project: stream
+ms.assetid: f4bf38eb-5028-4fcb-9752-8dab88db5904
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.kstrreferencedeviceobject, KStrReferenceDeviceObject routine [Streaming Media Devices], KStrReferenceDeviceObject, PFNREFERENCEDEVICEOBJECT, PFNREFERENCEDEVICEOBJECT, ks/KStrReferenceDeviceObject, ksfunc_721dd90e-6810-4f02-8454-dbacc872f90f.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	ks.h
+apiname:
+-	KStrReferenceDeviceObject
+product: Windows
+targetos: Windows
+req.typenames: KEYWORDSELECTOR
 ---
 
 

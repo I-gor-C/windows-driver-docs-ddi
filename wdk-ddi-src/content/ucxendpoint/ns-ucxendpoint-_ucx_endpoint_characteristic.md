@@ -1,42 +1,47 @@
 ---
-UID : NS:ucxendpoint._UCX_ENDPOINT_CHARACTERISTIC
-title : "_UCX_ENDPOINT_CHARACTERISTIC"
-author : windows-driver-content
-description : Stores the characteristics of an endpoint.
-old-location : buses\ucx_endpoint_characteristic.htm
-old-project : usbref
-ms.assetid : 4785D94B-271C-4F8E-B95B-87401E32CE42
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : UCX_ENDPOINT_CHARACTERISTIC structure [Buses], UCX_ENDPOINT_CHARACTERISTIC, ucxendpoint/UCX_ENDPOINT_CHARACTERISTIC, ucxendpoint/PUCX_ENDPOINT_CHARACTERISTIC, buses.ucx_endpoint_characteristic, *PUCX_ENDPOINT_CHARACTERISTIC, _UCX_ENDPOINT_CHARACTERISTIC, PUCX_ENDPOINT_CHARACTERISTIC structure pointer [Buses], PUCX_ENDPOINT_CHARACTERISTIC
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ucxendpoint.h
-req.include-header : Ucxclass.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10, version 1709
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : UCX_ENDPOINT_CHARACTERISTIC, *PUCX_ENDPOINT_CHARACTERISTIC
-req.product : Windows 10 or later.
+UID: NS:ucxendpoint._UCX_ENDPOINT_CHARACTERISTIC
+title: "_UCX_ENDPOINT_CHARACTERISTIC"
+author: windows-driver-content
+description: Stores the characteristics of an endpoint.
+old-location: buses\ucx_endpoint_characteristic.htm
+old-project: usbref
+ms.assetid: 4785D94B-271C-4F8E-B95B-87401E32CE42
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: UCX_ENDPOINT_CHARACTERISTIC structure [Buses], UCX_ENDPOINT_CHARACTERISTIC, ucxendpoint/UCX_ENDPOINT_CHARACTERISTIC, ucxendpoint/PUCX_ENDPOINT_CHARACTERISTIC, buses.ucx_endpoint_characteristic, *PUCX_ENDPOINT_CHARACTERISTIC, _UCX_ENDPOINT_CHARACTERISTIC, PUCX_ENDPOINT_CHARACTERISTIC structure pointer [Buses], PUCX_ENDPOINT_CHARACTERISTIC
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ucxendpoint.h
+req.include-header: Ucxclass.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10, version 1709
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ucxendpoint.h
+apiname:
+-	UCX_ENDPOINT_CHARACTERISTIC
+product: Windows
+targetos: Windows
+req.typenames: UCX_ENDPOINT_CHARACTERISTIC, *PUCX_ENDPOINT_CHARACTERISTIC
+req.product: Windows 10 or later.
 ---
 
 # _UCX_ENDPOINT_CHARACTERISTIC structure

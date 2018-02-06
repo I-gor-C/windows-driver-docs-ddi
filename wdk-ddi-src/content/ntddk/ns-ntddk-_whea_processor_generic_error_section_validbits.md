@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddk._WHEA_PROCESSOR_GENERIC_ERROR_SECTION_VALIDBITS
-title : "_WHEA_PROCESSOR_GENERIC_ERROR_SECTION_VALIDBITS"
-author : windows-driver-content
-description : The WHEA_PROCESSOR_GENERIC_ERROR_SECTION_VALIDBITS union describes which members of a WHEA_PROCESSOR_GENERIC_ERROR_SECTION structure contain valid data.
-old-location : whea\whea_processor_generic_error_section_validbits.htm
-old-project : whea
-ms.assetid : f7173767-a177-4a79-917b-41acc9eff758
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : "*PWHEA_PROCESSOR_GENERIC_ERROR_SECTION_VALIDBITS, PWHEA_PROCESSOR_GENERIC_ERROR_SECTION_VALIDBITS union pointer [WHEA Drivers and Applications], whea.whea_processor_generic_error_section_validbits, PWHEA_PROCESSOR_GENERIC_ERROR_SECTION_VALIDBITS, WHEA_PROCESSOR_GENERIC_ERROR_SECTION_VALIDBITS, WHEA_GENERIC_PROCESSOR_ERROR_VALIDBITS, whearef_83372975-ce45-44e7-be0a-85f3394528b3.xml, *PWHEA_GENERIC_PROCESSOR_ERROR_VALIDBITS, ntddk/PWHEA_PROCESSOR_GENERIC_ERROR_SECTION_VALIDBITS, ntddk/WHEA_PROCESSOR_GENERIC_ERROR_SECTION_VALIDBITS, WHEA_PROCESSOR_GENERIC_ERROR_SECTION_VALIDBITS union [WHEA Drivers and Applications], _WHEA_PROCESSOR_GENERIC_ERROR_SECTION_VALIDBITS"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_PROCESSOR_GENERIC_ERROR_SECTION_VALIDBITS, *PWHEA_PROCESSOR_GENERIC_ERROR_SECTION_VALIDBITS
+UID: NS:ntddk._WHEA_PROCESSOR_GENERIC_ERROR_SECTION_VALIDBITS
+title: "_WHEA_PROCESSOR_GENERIC_ERROR_SECTION_VALIDBITS"
+author: windows-driver-content
+description: The WHEA_PROCESSOR_GENERIC_ERROR_SECTION_VALIDBITS union describes which members of a WHEA_PROCESSOR_GENERIC_ERROR_SECTION structure contain valid data.
+old-location: whea\whea_processor_generic_error_section_validbits.htm
+old-project: whea
+ms.assetid: f7173767-a177-4a79-917b-41acc9eff758
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: "*PWHEA_PROCESSOR_GENERIC_ERROR_SECTION_VALIDBITS, PWHEA_PROCESSOR_GENERIC_ERROR_SECTION_VALIDBITS union pointer [WHEA Drivers and Applications], whea.whea_processor_generic_error_section_validbits, PWHEA_PROCESSOR_GENERIC_ERROR_SECTION_VALIDBITS, WHEA_PROCESSOR_GENERIC_ERROR_SECTION_VALIDBITS, WHEA_GENERIC_PROCESSOR_ERROR_VALIDBITS, whearef_83372975-ce45-44e7-be0a-85f3394528b3.xml, *PWHEA_GENERIC_PROCESSOR_ERROR_VALIDBITS, ntddk/PWHEA_PROCESSOR_GENERIC_ERROR_SECTION_VALIDBITS, ntddk/WHEA_PROCESSOR_GENERIC_ERROR_SECTION_VALIDBITS, WHEA_PROCESSOR_GENERIC_ERROR_SECTION_VALIDBITS union [WHEA Drivers and Applications], _WHEA_PROCESSOR_GENERIC_ERROR_SECTION_VALIDBITS"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddk.h
+apiname:
+-	WHEA_PROCESSOR_GENERIC_ERROR_SECTION_VALIDBITS
+product: Windows
+targetos: Windows
+req.typenames: WHEA_PROCESSOR_GENERIC_ERROR_SECTION_VALIDBITS, *PWHEA_PROCESSOR_GENERIC_ERROR_SECTION_VALIDBITS
 ---
 
 # _WHEA_PROCESSOR_GENERIC_ERROR_SECTION_VALIDBITS structure

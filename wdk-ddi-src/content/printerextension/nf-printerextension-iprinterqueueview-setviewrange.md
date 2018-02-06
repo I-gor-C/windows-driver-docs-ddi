@@ -1,42 +1,47 @@
 ---
-UID : NF:printerextension.IPrinterQueueView.SetViewRange
-title : IPrinterQueueView::SetViewRange method
-author : windows-driver-content
-description : Sets the range of print jobs being monitored.
-old-location : print\iprinterqueueview_setviewrange.htm
-old-project : print
-ms.assetid : DB3C0439-EB82-4E49-8FEA-003C1B4A9EE0
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : IPrinterQueueView interface [Print Devices], SetViewRange method, printerextension/IPrinterQueueView::SetViewRange, SetViewRange method [Print Devices], IPrinterQueueView interface, SetViewRange, IPrinterQueueView, print.iprinterqueueview_setviewrange, SetViewRange method [Print Devices], IPrinterQueueView::SetViewRange
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : printerextension.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8.1
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : printerextension.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PrintSchemaSelectionType
-req.product : Windows 10 or later.
+UID: NF:printerextension.IPrinterQueueView.SetViewRange
+title: IPrinterQueueView::SetViewRange method
+author: windows-driver-content
+description: Sets the range of print jobs being monitored.
+old-location: print\iprinterqueueview_setviewrange.htm
+old-project: print
+ms.assetid: DB3C0439-EB82-4E49-8FEA-003C1B4A9EE0
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: IPrinterQueueView interface [Print Devices], SetViewRange method, printerextension/IPrinterQueueView::SetViewRange, SetViewRange method [Print Devices], IPrinterQueueView interface, SetViewRange, IPrinterQueueView, print.iprinterqueueview_setviewrange, SetViewRange method [Print Devices], IPrinterQueueView::SetViewRange
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: printerextension.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8.1
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: printerextension.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Printerextension.h
+apiname:
+-	IPrinterQueueView.SetViewRange
+product: Windows
+targetos: Windows
+req.typenames: PrintSchemaSelectionType
+req.product: Windows 10 or later.
 ---
 
 

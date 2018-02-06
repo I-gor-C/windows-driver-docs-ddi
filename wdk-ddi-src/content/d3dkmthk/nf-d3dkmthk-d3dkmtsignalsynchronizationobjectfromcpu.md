@@ -1,41 +1,49 @@
 ---
-UID : NF:d3dkmthk.D3DKMTSignalSynchronizationObjectFromCpu
-title : D3DKMTSignalSynchronizationObjectFromCpu function
-author : windows-driver-content
-description : D3DKMTSignalSynchronizationObjectFromCpu enables a driver to signal a monitored fence.D3DKMTSignalSynchronizationObjectFromCpu enables a driver to signal a monitored fence.
-old-location : display\d3dkmtsignalsynchronizationobjectfromcpu.htm
-old-project : display
-ms.assetid : 23DC5EB1-E606-499D-B78A-AFF95E6B00A3
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3dkmthk/D3DKMTSignalSynchronizationObjectFromCpu, display.d3dkmtsignalsynchronizationobjectfromcpu, D3DKMTSignalSynchronizationObjectFromCpu function [Display Devices], D3DKMTSignalSynchronizationObjectFromCpu
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Universal
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : GDI32.lib
-req.dll : GDI32.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_DRIVERVERSION
+UID: NF:d3dkmthk.D3DKMTSignalSynchronizationObjectFromCpu
+title: D3DKMTSignalSynchronizationObjectFromCpu function
+author: windows-driver-content
+description: D3DKMTSignalSynchronizationObjectFromCpu enables a driver to signal a monitored fence.D3DKMTSignalSynchronizationObjectFromCpu enables a driver to signal a monitored fence.
+old-location: display\d3dkmtsignalsynchronizationobjectfromcpu.htm
+old-project: display
+ms.assetid: 23DC5EB1-E606-499D-B78A-AFF95E6B00A3
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3dkmthk/D3DKMTSignalSynchronizationObjectFromCpu, display.d3dkmtsignalsynchronizationobjectfromcpu, D3DKMTSignalSynchronizationObjectFromCpu function [Display Devices], D3DKMTSignalSynchronizationObjectFromCpu
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Universal
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: GDI32.lib
+req.dll: GDI32.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	GDI32.dll
+-	API-MS-Win-DX-D3DKMT-L1-1-1.dll
+-	GDI32.dll
+-	API-MS-Win-DX-D3DKMT-L1-1-2.dll
+apiname:
+-	D3DKMTSignalSynchronizationObjectFromCpu
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_DRIVERVERSION
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.CmGetBoundTransaction
-title : CmGetBoundTransaction function
-author : windows-driver-content
-description : The CmGetBoundTransaction routine returns a pointer to the transaction object that represents the transaction, if any, that is associated with a specified registry key object.
-old-location : kernel\cmgetboundtransaction.htm
-old-project : kernel
-ms.assetid : f38a5ad6-6816-4b27-98ea-51ac1453d90f
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ConfigMgrRef_bf8b79d4-04cf-4cd2-b25c-4e59c63f0b86.xml, kernel.cmgetboundtransaction, CmGetBoundTransaction, CmGetBoundTransaction routine [Kernel-Mode Driver Architecture], wdm/CmGetBoundTransaction
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.CmGetBoundTransaction
+title: CmGetBoundTransaction function
+author: windows-driver-content
+description: The CmGetBoundTransaction routine returns a pointer to the transaction object that represents the transaction, if any, that is associated with a specified registry key object.
+old-location: kernel\cmgetboundtransaction.htm
+old-project: kernel
+ms.assetid: f38a5ad6-6816-4b27-98ea-51ac1453d90f
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ConfigMgrRef_bf8b79d4-04cf-4cd2-b25c-4e59c63f0b86.xml, kernel.cmgetboundtransaction, CmGetBoundTransaction, CmGetBoundTransaction routine [Kernel-Mode Driver Architecture], wdm/CmGetBoundTransaction
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	CmGetBoundTransaction
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

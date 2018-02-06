@@ -1,41 +1,48 @@
 ---
-UID : NF:d3dkmthk.D3DKMTUnlock2
-title : D3DKMTUnlock2 function
-author : windows-driver-content
-description : The D3DKMTUnlock2 function unlocks a list of allocations.
-old-location : display\d3dkmtunlock2.htm
-old-project : display
-ms.assetid : DDAA5F5A-4A9C-4E8C-B322-A9B395DC753B
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DKMTUnlock2 function [Display Devices], D3DKMTUnlock2, d3dkmthk/D3DKMTUnlock2, display.d3dkmtunlock2
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Universal
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Gdi32.lib
-req.dll : Gdi32.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_DRIVERVERSION
+UID: NF:d3dkmthk.D3DKMTUnlock2
+title: D3DKMTUnlock2 function
+author: windows-driver-content
+description: The D3DKMTUnlock2 function unlocks a list of allocations.
+old-location: display\d3dkmtunlock2.htm
+old-project: display
+ms.assetid: DDAA5F5A-4A9C-4E8C-B322-A9B395DC753B
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DKMTUnlock2 function [Display Devices], D3DKMTUnlock2, d3dkmthk/D3DKMTUnlock2, display.d3dkmtunlock2
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Universal
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Gdi32.lib
+req.dll: Gdi32.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Gdi32.dll
+-	API-MS-Win-DX-D3DKMT-L1-1-1.dll
+-	API-MS-Win-DX-D3DKMT-L1-1-2.dll
+apiname:
+-	D3DKMTUnlock2
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_DRIVERVERSION
 ---
 
 

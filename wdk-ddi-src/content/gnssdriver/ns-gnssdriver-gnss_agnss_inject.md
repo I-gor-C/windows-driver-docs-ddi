@@ -1,41 +1,46 @@
 ---
-UID : NS:gnssdriver.GNSS_AGNSS_INJECT
-title : GNSS_AGNSS_INJECT
-author : windows-driver-content
-description : This structure defines the parameters for AGNSS injection.
-old-location : sensors\gnss_agnss_inject.htm
-old-project : sensors
-ms.assetid : B81F5D71-9928-412C-8199-787E71CE2638
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : GNSS_AGNSS_INJECT, gnssdriver/PGNSS_AGNSS_INJECT, *PGNSS_AGNSS_INJECT, GNSS_AGNSS_INJECT structure [Sensor Devices], PGNSS_AGNSS_INJECT, PGNSS_AGNSS_INJECT structure pointer [Sensor Devices], sensors.gnss_agnss_inject, gnssdriver/GNSS_AGNSS_INJECT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : gnssdriver.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : GNSS_AGNSS_INJECT, *PGNSS_AGNSS_INJECT
+UID: NS:gnssdriver.GNSS_AGNSS_INJECT
+title: GNSS_AGNSS_INJECT
+author: windows-driver-content
+description: This structure defines the parameters for AGNSS injection.
+old-location: sensors\gnss_agnss_inject.htm
+old-project: sensors
+ms.assetid: B81F5D71-9928-412C-8199-787E71CE2638
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: GNSS_AGNSS_INJECT, gnssdriver/PGNSS_AGNSS_INJECT, *PGNSS_AGNSS_INJECT, GNSS_AGNSS_INJECT structure [Sensor Devices], PGNSS_AGNSS_INJECT, PGNSS_AGNSS_INJECT structure pointer [Sensor Devices], sensors.gnss_agnss_inject, gnssdriver/GNSS_AGNSS_INJECT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: gnssdriver.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	gnssdriver.h
+apiname:
+-	GNSS_AGNSS_INJECT
+product: Windows
+targetos: Windows
+req.typenames: GNSS_AGNSS_INJECT, *PGNSS_AGNSS_INJECT
 ---
 
 # GNSS_AGNSS_INJECT structure

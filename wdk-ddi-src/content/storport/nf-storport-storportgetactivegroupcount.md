@@ -1,42 +1,47 @@
 ---
-UID : NF:storport.StorPortGetActiveGroupCount
-title : StorPortGetActiveGroupCount function
-author : windows-driver-content
-description : The StorPortGetActiveGroupCount routine returns the number of processor groups that are present in the system.
-old-location : storage\storportgetactivegroupcount.htm
-old-project : storage
-ms.assetid : 640dd836-a5f9-4a88-b2a3-038a66a50868
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storprt_d26e001f-a43e-4d7e-9278-9ba48a74574a.xml, StorPortGetActiveGroupCount, StorPortGetActiveGroupCount routine [Storage Devices], storage.storportgetactivegroupcount, storport/StorPortGetActiveGroupCount
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 7 and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : StorPortIrql
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STOR_SPINLOCK
-req.product : Windows 10 or later.
+UID: NF:storport.StorPortGetActiveGroupCount
+title: StorPortGetActiveGroupCount function
+author: windows-driver-content
+description: The StorPortGetActiveGroupCount routine returns the number of processor groups that are present in the system.
+old-location: storage\storportgetactivegroupcount.htm
+old-project: storage
+ms.assetid: 640dd836-a5f9-4a88-b2a3-038a66a50868
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storprt_d26e001f-a43e-4d7e-9278-9ba48a74574a.xml, StorPortGetActiveGroupCount, StorPortGetActiveGroupCount routine [Storage Devices], storage.storportgetactivegroupcount, storport/StorPortGetActiveGroupCount
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 7 and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: StorPortIrql
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	storport.h
+apiname:
+-	StorPortGetActiveGroupCount
+product: Windows
+targetos: Windows
+req.typenames: STOR_SPINLOCK
+req.product: Windows 10 or later.
 ---
 
 

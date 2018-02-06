@@ -1,42 +1,47 @@
 ---
-UID : NF:swenum.KsQuerySoftwareBusInterface
-title : KsQuerySoftwareBusInterface function
-author : windows-driver-content
-description : The KsQuerySoftwareBusInterface function creates a buffer from the paged pool and copies the reference string associated with the demand-load bus enumerator object's PDO into the buffer.
-old-location : stream\ksquerysoftwarebusinterface.htm
-old-project : stream
-ms.assetid : 2a4dd5a8-e9cc-4404-8031-5091ff2aa50d
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : swenum/KsQuerySoftwareBusInterface, ksfunc_58ad39a9-6e7b-416b-9ca6-a5a92bb0a7fc.xml, KsQuerySoftwareBusInterface, KsQuerySoftwareBusInterface function [Streaming Media Devices], stream.ksquerysoftwarebusinterface
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : swenum.h
-req.include-header : Swenum.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STREAM_TIME_REFERENCE, *PSTREAM_TIME_REFERENCE
-req.product : Windows 10 or later.
+UID: NF:swenum.KsQuerySoftwareBusInterface
+title: KsQuerySoftwareBusInterface function
+author: windows-driver-content
+description: The KsQuerySoftwareBusInterface function creates a buffer from the paged pool and copies the reference string associated with the demand-load bus enumerator object's PDO into the buffer.
+old-location: stream\ksquerysoftwarebusinterface.htm
+old-project: stream
+ms.assetid: 2a4dd5a8-e9cc-4404-8031-5091ff2aa50d
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: swenum/KsQuerySoftwareBusInterface, ksfunc_58ad39a9-6e7b-416b-9ca6-a5a92bb0a7fc.xml, KsQuerySoftwareBusInterface, KsQuerySoftwareBusInterface function [Streaming Media Devices], stream.ksquerysoftwarebusinterface
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: swenum.h
+req.include-header: Swenum.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	swenum.h
+apiname:
+-	KsQuerySoftwareBusInterface
+product: Windows
+targetos: Windows
+req.typenames: STREAM_TIME_REFERENCE, *PSTREAM_TIME_REFERENCE
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,42 +1,52 @@
 ---
-UID : NF:wdm.InterlockedIncrement
-title : InterlockedIncrement function
-author : windows-driver-content
-description : The InterlockedIncrement routine increments a caller-supplied variable as an atomic operation.
-old-location : kernel\interlockedincrement.htm
-old-project : kernel
-ms.assetid : e8f4c3c9-c5b7-4fc1-9be3-0254c6cbd6f3
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.interlockedincrement, k102_8d625992-2e36-464d-a771-629d5f08b398.xml, wdm/InterlockedIncrement, InterlockedIncrement routine [Kernel-Mode Driver Architecture], InterlockedIncrement
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : OneCoreUAP.lib on Windows 10
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.InterlockedIncrement
+title: InterlockedIncrement function
+author: windows-driver-content
+description: The InterlockedIncrement routine increments a caller-supplied variable as an atomic operation.
+old-location: kernel\interlockedincrement.htm
+old-project: kernel
+ms.assetid: e8f4c3c9-c5b7-4fc1-9be3-0254c6cbd6f3
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.interlockedincrement, k102_8d625992-2e36-464d-a771-629d5f08b398.xml, wdm/InterlockedIncrement, InterlockedIncrement routine [Kernel-Mode Driver Architecture], InterlockedIncrement
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: OneCoreUAP.lib on Windows 10
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	OneCoreUAP.lib
+-	OneCoreUAP.dll
+-	API-MS-Win-Core-Interlocked-l1-1-0.dll
+-	API-MS-Win-Core-Interlocked-l1-2-0.dll
+-	KernelBase.dll
+-	MinKernelBase.dll
+apiname:
+-	InterlockedIncrement
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

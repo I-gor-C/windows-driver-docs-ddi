@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugControl3.GetBreakpointByIndex
-title : IDebugControl3::GetBreakpointByIndex method
-author : windows-driver-content
-description : The GetBreakpointByIndex method returns the breakpoint located at the specified index.
-old-location : debugger\getbreakpointbyindex.htm
-old-project : debugger
-ms.assetid : 9389536e-30c3-4651-bb1e-2c75741694b2
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugControl_d290fd1e-da1d-4d02-9503-a3c0f8337cec.xml, debugger.getbreakpointbyindex, IDebugControl3, IDebugControl2::GetBreakpointByIndex, IDebugControl3 interface [Windows Debugging], GetBreakpointByIndex method, IDebugControl3::GetBreakpointByIndex, GetBreakpointByIndex method [Windows Debugging], IDebugControl interface, IDebugControl::GetBreakpointByIndex, IDebugControl interface [Windows Debugging], GetBreakpointByIndex method, GetBreakpointByIndex method [Windows Debugging], dbgeng/IDebugControl::GetBreakpointByIndex, dbgeng/IDebugControl2::GetBreakpointByIndex, GetBreakpointByIndex method [Windows Debugging], IDebugControl3 interface, GetBreakpointByIndex method [Windows Debugging], IDebugControl2 interface, IDebugControl2 interface [Windows Debugging], GetBreakpointByIndex method, dbgeng/IDebugControl3::GetBreakpointByIndex, GetBreakpointByIndex
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl3.GetBreakpointByIndex
+title: IDebugControl3::GetBreakpointByIndex method
+author: windows-driver-content
+description: The GetBreakpointByIndex method returns the breakpoint located at the specified index.
+old-location: debugger\getbreakpointbyindex.htm
+old-project: debugger
+ms.assetid: 9389536e-30c3-4651-bb1e-2c75741694b2
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugControl_d290fd1e-da1d-4d02-9503-a3c0f8337cec.xml, debugger.getbreakpointbyindex, IDebugControl3, IDebugControl2::GetBreakpointByIndex, IDebugControl3 interface [Windows Debugging], GetBreakpointByIndex method, IDebugControl3::GetBreakpointByIndex, GetBreakpointByIndex method [Windows Debugging], IDebugControl interface, IDebugControl::GetBreakpointByIndex, IDebugControl interface [Windows Debugging], GetBreakpointByIndex method, GetBreakpointByIndex method [Windows Debugging], dbgeng/IDebugControl::GetBreakpointByIndex, dbgeng/IDebugControl2::GetBreakpointByIndex, GetBreakpointByIndex method [Windows Debugging], IDebugControl3 interface, GetBreakpointByIndex method [Windows Debugging], IDebugControl2 interface, IDebugControl2 interface [Windows Debugging], GetBreakpointByIndex method, dbgeng/IDebugControl3::GetBreakpointByIndex, GetBreakpointByIndex
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl.GetBreakpointByIndex
+-	IDebugControl2.GetBreakpointByIndex
+-	IDebugControl3.GetBreakpointByIndex
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

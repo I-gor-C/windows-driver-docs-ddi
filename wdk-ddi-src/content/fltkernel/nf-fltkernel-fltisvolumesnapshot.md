@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltIsVolumeSnapshot
-title : FltIsVolumeSnapshot function
-author : windows-driver-content
-description : The FltIsVolumeSnapshot routine determines whether a volume or minifilter driver instance is attached to a snapshot volume.
-old-location : ifsk\fltisvolumesnapshot.htm
-old-project : ifsk
-ms.assetid : eb35e108-577e-4897-8f8c-f3c54753c1f7
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltIsVolumeSnapshot routine [Installable File System Drivers], FltIsVolumeSnapshot, ifsk.fltisvolumesnapshot, fltkernel/FltIsVolumeSnapshot, FltApiRef_e_to_o_652c8b18-8114-460b-852f-9c6bc8ff687f.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Fltmgr.lib
-req.dll : FltMgr.sys
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltIsVolumeSnapshot
+title: FltIsVolumeSnapshot function
+author: windows-driver-content
+description: The FltIsVolumeSnapshot routine determines whether a volume or minifilter driver instance is attached to a snapshot volume.
+old-location: ifsk\fltisvolumesnapshot.htm
+old-project: ifsk
+ms.assetid: eb35e108-577e-4897-8f8c-f3c54753c1f7
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltIsVolumeSnapshot routine [Installable File System Drivers], FltIsVolumeSnapshot, ifsk.fltisvolumesnapshot, fltkernel/FltIsVolumeSnapshot, FltApiRef_e_to_o_652c8b18-8114-460b-852f-9c6bc8ff687f.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Fltmgr.lib
+req.dll: FltMgr.sys
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	FltMgr.sys
+apiname:
+-	FltIsVolumeSnapshot
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

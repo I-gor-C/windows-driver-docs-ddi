@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.IoFreeWorkItem
-title : IoFreeWorkItem function
-author : windows-driver-content
-description : The IoFreeWorkItem routine frees a work item that was allocated by IoAllocateWorkItem.
-old-location : kernel\iofreeworkitem.htm
-old-project : kernel
-ms.assetid : e0b0a4a3-6003-4b48-a3cf-570e5405fa5b
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : k104_7db57e08-0786-4f20-96d8-ecb7980a479c.xml, kernel.iofreeworkitem, IoFreeWorkItem, wdm/IoFreeWorkItem, IoFreeWorkItem routine [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.IoFreeWorkItem
+title: IoFreeWorkItem function
+author: windows-driver-content
+description: The IoFreeWorkItem routine frees a work item that was allocated by IoAllocateWorkItem.
+old-location: kernel\iofreeworkitem.htm
+old-project: kernel
+ms.assetid: e0b0a4a3-6003-4b48-a3cf-570e5405fa5b
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: k104_7db57e08-0786-4f20-96d8-ecb7980a479c.xml, kernel.iofreeworkitem, IoFreeWorkItem, wdm/IoFreeWorkItem, IoFreeWorkItem routine [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoFreeWorkItem
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

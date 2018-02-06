@@ -1,42 +1,47 @@
 ---
-UID : NI:usbioctl.IOCTL_INTERNAL_USB_GET_PORT_STATUS
-title : IOCTL_INTERNAL_USB_GET_PORT_STATUS
-author : windows-driver-content
-description : The IOCTL_INTERNAL_USB_GET_PORT_STATUS I/O request queries the status of the PDO. IOCTL_INTERNAL_USB_GET_PORT_STATUS is a kernel-mode I/O control request. This request targets the USB hub PDO. This IOCTL must be sent at IRQL = PASSIVE_LEVEL.
-old-location : buses\ioctl_internal_usb_get_port_status.htm
-old-project : usbref
-ms.assetid : eb15d01c-e77c-4605-9c12-dd8495834875
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : buses.ioctl_internal_usb_get_port_status, IOCTL_INTERNAL_USB_GET_PORT_STATUS control code [Buses], IOCTL_INTERNAL_USB_GET_PORT_STATUS, usbioctl/IOCTL_INTERNAL_USB_GET_PORT_STATUS, usbirp_4fc2e386-093d-45b3-a74d-da66e711d71d.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : usbioctl.h
-req.include-header : Usbioctl.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : USB_HUB_TYPE
-req.product : Windows 10 or later.
+UID: NI:usbioctl.IOCTL_INTERNAL_USB_GET_PORT_STATUS
+title: IOCTL_INTERNAL_USB_GET_PORT_STATUS
+author: windows-driver-content
+description: The IOCTL_INTERNAL_USB_GET_PORT_STATUS I/O request queries the status of the PDO. IOCTL_INTERNAL_USB_GET_PORT_STATUS is a kernel-mode I/O control request. This request targets the USB hub PDO. This IOCTL must be sent at IRQL = PASSIVE_LEVEL.
+old-location: buses\ioctl_internal_usb_get_port_status.htm
+old-project: usbref
+ms.assetid: eb15d01c-e77c-4605-9c12-dd8495834875
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: buses.ioctl_internal_usb_get_port_status, IOCTL_INTERNAL_USB_GET_PORT_STATUS control code [Buses], IOCTL_INTERNAL_USB_GET_PORT_STATUS, usbioctl/IOCTL_INTERNAL_USB_GET_PORT_STATUS, usbirp_4fc2e386-093d-45b3-a74d-da66e711d71d.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: usbioctl.h
+req.include-header: Usbioctl.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Usbioctl.h
+apiname:
+-	IOCTL_INTERNAL_USB_GET_PORT_STATUS
+product: Windows
+targetos: Windows
+req.typenames: USB_HUB_TYPE
+req.product: Windows 10 or later.
 ---
 
 # IOCTL_INTERNAL_USB_GET_PORT_STATUS IOCTL

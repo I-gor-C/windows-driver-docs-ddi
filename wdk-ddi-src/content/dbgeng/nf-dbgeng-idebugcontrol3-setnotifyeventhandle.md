@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugControl3.SetNotifyEventHandle
-title : IDebugControl3::SetNotifyEventHandle method
-author : windows-driver-content
-description : The SetNotifyEventHandle method sets the event that will be signaled after the next exception in a target.
-old-location : debugger\setnotifyeventhandle.htm
-old-project : debugger
-ms.assetid : 0c0059a7-4b0f-4b74-b543-ad5904d40033
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugControl2 interface [Windows Debugging], SetNotifyEventHandle method, SetNotifyEventHandle method [Windows Debugging], IDebugControl interface, dbgeng/IDebugControl3::SetNotifyEventHandle, IDebugControl2::SetNotifyEventHandle, SetNotifyEventHandle method [Windows Debugging], IDebugControl3 interface, IDebugControl3, IDebugControl3 interface [Windows Debugging], SetNotifyEventHandle method, SetNotifyEventHandle, IDebugControl::SetNotifyEventHandle, debugger.setnotifyeventhandle, SetNotifyEventHandle method [Windows Debugging], IDebugControl2 interface, dbgeng/IDebugControl::SetNotifyEventHandle, SetNotifyEventHandle method [Windows Debugging], dbgeng/IDebugControl2::SetNotifyEventHandle, IDebugControl interface [Windows Debugging], SetNotifyEventHandle method, IDebugControl3::SetNotifyEventHandle, IDebugControl_9934efa7-aed4-4706-8885-71d78f6950a8.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl3.SetNotifyEventHandle
+title: IDebugControl3::SetNotifyEventHandle method
+author: windows-driver-content
+description: The SetNotifyEventHandle method sets the event that will be signaled after the next exception in a target.
+old-location: debugger\setnotifyeventhandle.htm
+old-project: debugger
+ms.assetid: 0c0059a7-4b0f-4b74-b543-ad5904d40033
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugControl2 interface [Windows Debugging], SetNotifyEventHandle method, SetNotifyEventHandle method [Windows Debugging], IDebugControl interface, dbgeng/IDebugControl3::SetNotifyEventHandle, IDebugControl2::SetNotifyEventHandle, SetNotifyEventHandle method [Windows Debugging], IDebugControl3 interface, IDebugControl3, IDebugControl3 interface [Windows Debugging], SetNotifyEventHandle method, SetNotifyEventHandle, IDebugControl::SetNotifyEventHandle, debugger.setnotifyeventhandle, SetNotifyEventHandle method [Windows Debugging], IDebugControl2 interface, dbgeng/IDebugControl::SetNotifyEventHandle, SetNotifyEventHandle method [Windows Debugging], dbgeng/IDebugControl2::SetNotifyEventHandle, IDebugControl interface [Windows Debugging], SetNotifyEventHandle method, IDebugControl3::SetNotifyEventHandle, IDebugControl_9934efa7-aed4-4706-8885-71d78f6950a8.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl.SetNotifyEventHandle
+-	IDebugControl2.SetNotifyEventHandle
+-	IDebugControl3.SetNotifyEventHandle
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

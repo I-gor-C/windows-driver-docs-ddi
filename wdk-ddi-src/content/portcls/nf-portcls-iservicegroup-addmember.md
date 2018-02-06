@@ -1,41 +1,46 @@
 ---
-UID : NF:portcls.IServiceGroup.AddMember
-title : IServiceGroup::AddMember method
-author : windows-driver-content
-description : The AddMember method adds a member to the service group.
-old-location : audio\iservicegroup_addmember.htm
-old-project : audio
-ms.assetid : 1eddb631-db85-4243-89a4-a4ab042cee28
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : IServiceGroup interface [Audio Devices], AddMember method, AddMember method [Audio Devices], AddMember method [Audio Devices], IServiceGroup interface, audio.iservicegroup_addmember, portcls/IServiceGroup::AddMember, IServiceGroup, audmp-routines_0d318d56-28e9-4e42-84b3-1d0eb4110f71.xml, IServiceGroup::AddMember, AddMember
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : portcls.h
-req.include-header : Portcls.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : portcls.h
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.IServiceGroup.AddMember
+title: IServiceGroup::AddMember method
+author: windows-driver-content
+description: The AddMember method adds a member to the service group.
+old-location: audio\iservicegroup_addmember.htm
+old-project: audio
+ms.assetid: 1eddb631-db85-4243-89a4-a4ab042cee28
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: IServiceGroup interface [Audio Devices], AddMember method, AddMember method [Audio Devices], AddMember method [Audio Devices], IServiceGroup interface, audio.iservicegroup_addmember, portcls/IServiceGroup::AddMember, IServiceGroup, audmp-routines_0d318d56-28e9-4e42-84b3-1d0eb4110f71.xml, IServiceGroup::AddMember, AddMember
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: portcls.h
+req.include-header: Portcls.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: portcls.h
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	portcls.h
+apiname:
+-	IServiceGroup.AddMember
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NF:rxprocs.RxCompleteRequest_Real
-title : RxCompleteRequest_Real function
-author : windows-driver-content
-description : RxCompleteRequest_Real completes the IRP request associated with an RX_CONTEXT structure.
-old-location : ifsk\rxcompleterequest_real.htm
-old-project : ifsk
-ms.assetid : 54d8fab2-bde3-4b8a-8542-075c5e30afbb
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.rxcompleterequest_real, rxref_9d779281-7e95-45b7-a633-62a4280a6bea.xml, rxprocs/RxCompleteRequest_Real, RxCompleteRequest_Real, RxCompleteRequest_Real function [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : rxprocs.h
-req.include-header : Rxprocs.h, Rxcontx.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RX_CONTEXT, *PRX_CONTEXT
-req.product : Windows 10 or later.
+UID: NF:rxprocs.RxCompleteRequest_Real
+title: RxCompleteRequest_Real function
+author: windows-driver-content
+description: RxCompleteRequest_Real completes the IRP request associated with an RX_CONTEXT structure.
+old-location: ifsk\rxcompleterequest_real.htm
+old-project: ifsk
+ms.assetid: 54d8fab2-bde3-4b8a-8542-075c5e30afbb
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.rxcompleterequest_real, rxref_9d779281-7e95-45b7-a633-62a4280a6bea.xml, rxprocs/RxCompleteRequest_Real, RxCompleteRequest_Real, RxCompleteRequest_Real function [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: rxprocs.h
+req.include-header: Rxprocs.h, Rxcontx.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	rxprocs.h
+apiname:
+-	RxCompleteRequest_Real
+product: Windows
+targetos: Windows
+req.typenames: RX_CONTEXT, *PRX_CONTEXT
+req.product: Windows 10 or later.
 ---
 
 

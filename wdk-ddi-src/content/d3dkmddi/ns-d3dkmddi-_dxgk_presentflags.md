@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGK_PRESENTFLAGS
-title : "_DXGK_PRESENTFLAGS"
-author : windows-driver-content
-description : The DXGK_PRESENTFLAGS structure identifies, in bit-field flags, the type of present operation to perform.
-old-location : display\dxgk_presentflags.htm
-old-project : display
-ms.assetid : ff1fe315-7824-4e61-83f5-6d75aba2a941
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DXGK_PRESENTFLAGS structure [Display Devices], _DXGK_PRESENTFLAGS, d3dkmddi/DXGK_PRESENTFLAGS, DmStructs_b8913202-bee3-4584-b323-6c6fb47a5c8d.xml, display.dxgk_presentflags, DXGK_PRESENTFLAGS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PRESENTFLAGS
+UID: NS:d3dkmddi._DXGK_PRESENTFLAGS
+title: "_DXGK_PRESENTFLAGS"
+author: windows-driver-content
+description: The DXGK_PRESENTFLAGS structure identifies, in bit-field flags, the type of present operation to perform.
+old-location: display\dxgk_presentflags.htm
+old-project: display
+ms.assetid: ff1fe315-7824-4e61-83f5-6d75aba2a941
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DXGK_PRESENTFLAGS structure [Display Devices], _DXGK_PRESENTFLAGS, d3dkmddi/DXGK_PRESENTFLAGS, DmStructs_b8913202-bee3-4584-b323-6c6fb47a5c8d.xml, display.dxgk_presentflags, DXGK_PRESENTFLAGS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DXGK_PRESENTFLAGS
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PRESENTFLAGS
 ---
 
 # _DXGK_PRESENTFLAGS structure

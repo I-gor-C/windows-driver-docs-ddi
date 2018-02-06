@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddstor._STORAGE_OFFLOAD_WRITE_OUTPUT
-title : "_STORAGE_OFFLOAD_WRITE_OUTPUT"
-author : windows-driver-content
-description : The STORAGE_OFFLOAD_WRITE_OUTPUT structure is the output of an IOCTL_STORAGE_MANAGE_DATA_SET_ATTRIBUTES control code request when the Action member of DEVICE_MANAGE_DATA_SET_ATTRIBUTES is set to DeviceDsmAction_OffloadWrite.
-old-location : storage\storage_offload_write_output.htm
-old-project : storage
-ms.assetid : 95EF1722-5171-4A09-8676-7910E53E3868
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : STORAGE_OFFLOAD_TOKEN_INVALID, ntddstor/PSTORAGE_OFFLOAD_WRITE_OUTPUT, STORAGE_OFFLOAD_WRITE_OUTPUT, STORAGE_OFFLOAD_WRITE_RANGE_TRUNCATED, storage.storage_offload_write_output, ntddstor/STORAGE_OFFLOAD_WRITE_OUTPUT, _STORAGE_OFFLOAD_WRITE_OUTPUT, STORAGE_OFFLOAD_WRITE_OUTPUT structure [Storage Devices], PSTORAGE_OFFLOAD_WRITE_OUTPUT structure pointer [Storage Devices], *PSTORAGE_OFFLOAD_WRITE_OUTPUT, PSTORAGE_OFFLOAD_WRITE_OUTPUT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddstor.h
-req.include-header : Ntddstor.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 8 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STORAGE_OFFLOAD_WRITE_OUTPUT, *PSTORAGE_OFFLOAD_WRITE_OUTPUT
+UID: NS:ntddstor._STORAGE_OFFLOAD_WRITE_OUTPUT
+title: "_STORAGE_OFFLOAD_WRITE_OUTPUT"
+author: windows-driver-content
+description: The STORAGE_OFFLOAD_WRITE_OUTPUT structure is the output of an IOCTL_STORAGE_MANAGE_DATA_SET_ATTRIBUTES control code request when the Action member of DEVICE_MANAGE_DATA_SET_ATTRIBUTES is set to DeviceDsmAction_OffloadWrite.
+old-location: storage\storage_offload_write_output.htm
+old-project: storage
+ms.assetid: 95EF1722-5171-4A09-8676-7910E53E3868
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: STORAGE_OFFLOAD_TOKEN_INVALID, ntddstor/PSTORAGE_OFFLOAD_WRITE_OUTPUT, STORAGE_OFFLOAD_WRITE_OUTPUT, STORAGE_OFFLOAD_WRITE_RANGE_TRUNCATED, storage.storage_offload_write_output, ntddstor/STORAGE_OFFLOAD_WRITE_OUTPUT, _STORAGE_OFFLOAD_WRITE_OUTPUT, STORAGE_OFFLOAD_WRITE_OUTPUT structure [Storage Devices], PSTORAGE_OFFLOAD_WRITE_OUTPUT structure pointer [Storage Devices], *PSTORAGE_OFFLOAD_WRITE_OUTPUT, PSTORAGE_OFFLOAD_WRITE_OUTPUT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddstor.h
+req.include-header: Ntddstor.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 8 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddstor.h
+apiname:
+-	STORAGE_OFFLOAD_WRITE_OUTPUT
+product: Windows
+targetos: Windows
+req.typenames: STORAGE_OFFLOAD_WRITE_OUTPUT, *PSTORAGE_OFFLOAD_WRITE_OUTPUT
 ---
 
 # _STORAGE_OFFLOAD_WRITE_OUTPUT structure

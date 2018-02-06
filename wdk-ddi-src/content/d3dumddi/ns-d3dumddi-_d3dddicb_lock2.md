@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._D3DDDICB_LOCK2
-title : "_D3DDDICB_LOCK2"
-author : windows-driver-content
-description : D3DDDICB_LOCK2 describes parameters for locking an allocation.
-old-location : display\d3dddicb_lock2.htm
-old-project : display
-ms.assetid : 71E2E98D-4C97-4C04-A379-88C2A7CC8428
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DDDICB_LOCK2 structure [Display Devices], _D3DDDICB_LOCK2, D3DDDICB_LOCK2, d3dumddi/D3DDDICB_LOCK2, display.d3dddicb_lock2
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDICB_LOCK2
+UID: NS:d3dumddi._D3DDDICB_LOCK2
+title: "_D3DDDICB_LOCK2"
+author: windows-driver-content
+description: D3DDDICB_LOCK2 describes parameters for locking an allocation.
+old-location: display\d3dddicb_lock2.htm
+old-project: display
+ms.assetid: 71E2E98D-4C97-4C04-A379-88C2A7CC8428
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DDDICB_LOCK2 structure [Display Devices], _D3DDDICB_LOCK2, D3DDDICB_LOCK2, d3dumddi/D3DDDICB_LOCK2, display.d3dddicb_lock2
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	D3DDDICB_LOCK2
+product: Windows
+targetos: Windows
+req.typenames: D3DDDICB_LOCK2
 ---
 
 # _D3DDDICB_LOCK2 structure

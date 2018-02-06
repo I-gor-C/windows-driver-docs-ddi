@@ -1,42 +1,50 @@
 ---
-UID : NF:wdfusb.WdfUsbInterfaceSelectSetting
-title : WdfUsbInterfaceSelectSetting function
-author : windows-driver-content
-description : The WdfUsbInterfaceSelectSetting method selects a specified alternate setting for a specified USB interface.
-old-location : wdf\wdfusbinterfaceselectsetting.htm
-old-project : wdf
-ms.assetid : 398b7649-152e-4fed-b633-16627dadf0f8
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : kmdf.wdfusbinterfaceselectsetting, DFUsbRef_256e9b5d-8e9b-4935-9dc9-38a6071258a6.xml, wdfusb/WdfUsbInterfaceSelectSetting, wdf.wdfusbinterfaceselectsetting, WdfUsbInterfaceSelectSetting, PFN_WDFUSBINTERFACESELECTSETTING, WdfUsbInterfaceSelectSetting method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfusb.h
-req.include-header : Wdfusb.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2, UsbKmdfIrql, UsbKmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfusb.WdfUsbInterfaceSelectSetting
+title: WdfUsbInterfaceSelectSetting function
+author: windows-driver-content
+description: The WdfUsbInterfaceSelectSetting method selects a specified alternate setting for a specified USB interface.
+old-location: wdf\wdfusbinterfaceselectsetting.htm
+old-project: wdf
+ms.assetid: 398b7649-152e-4fed-b633-16627dadf0f8
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: kmdf.wdfusbinterfaceselectsetting, DFUsbRef_256e9b5d-8e9b-4935-9dc9-38a6071258a6.xml, wdfusb/WdfUsbInterfaceSelectSetting, wdf.wdfusbinterfaceselectsetting, WdfUsbInterfaceSelectSetting, PFN_WDFUSBINTERFACESELECTSETTING, WdfUsbInterfaceSelectSetting method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfusb.h
+req.include-header: Wdfusb.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2, UsbKmdfIrql, UsbKmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+-	WUDFx02000.dll
+-	WUDFx02000.dll.dll
+apiname:
+-	WdfUsbInterfaceSelectSetting
+product: Windows
+targetos: Windows
+req.typenames: WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
+req.product: Windows 10 or later.
 ---
 
 

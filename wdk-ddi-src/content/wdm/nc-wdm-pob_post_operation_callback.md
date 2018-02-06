@@ -1,42 +1,47 @@
 ---
-UID : NC:wdm.POB_POST_OPERATION_CALLBACK
-title : POB_POST_OPERATION_CALLBACK
-author : windows-driver-content
-description : The ObjectPostCallback routine is called by the operating system after a process or thread handle operation occurs.
-old-location : kernel\objectpostcallback.htm
-old-project : kernel
-ms.assetid : cfa73359-58bb-4260-ac16-08f57ead67bb
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.objectpostcallback, ObjectPostCallback, ObjectPostCallback callback function [Kernel-Mode Driver Architecture], ObjectPostCallback, POB_POST_OPERATION_CALLBACK, POB_POST_OPERATION_CALLBACK, wdm/ObjectPostCallback, DrvrRtns_f15a2608-233d-47af-84cc-eb5692a6fe9a.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available starting with Windows Server 2008.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Called at PASSIVE_LEVEL (see Remarks section).
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
-req.product : Windows 10 or later.
+UID: NC:wdm.POB_POST_OPERATION_CALLBACK
+title: POB_POST_OPERATION_CALLBACK
+author: windows-driver-content
+description: The ObjectPostCallback routine is called by the operating system after a process or thread handle operation occurs.
+old-location: kernel\objectpostcallback.htm
+old-project: kernel
+ms.assetid: cfa73359-58bb-4260-ac16-08f57ead67bb
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.objectpostcallback, ObjectPostCallback, ObjectPostCallback callback function [Kernel-Mode Driver Architecture], ObjectPostCallback, POB_POST_OPERATION_CALLBACK, POB_POST_OPERATION_CALLBACK, wdm/ObjectPostCallback, DrvrRtns_f15a2608-233d-47af-84cc-eb5692a6fe9a.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available starting with Windows Server 2008.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Called at PASSIVE_LEVEL (see Remarks section).
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Wdm.h
+apiname:
+-	ObjectPostCallback
+product: Windows
+targetos: Windows
+req.typenames: WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltGetRequestorProcessIdEx
-title : FltGetRequestorProcessIdEx function
-author : windows-driver-content
-description : The FltGetRequestorProcessIdEx routine returns the kernel-mode handle for the process that is associated with the thread that requested a given I/O operation.
-old-location : ifsk\fltgetrequestorprocessidex.htm
-old-project : ifsk
-ms.assetid : e6a8b2ca-7e9d-410a-b44b-7e873b6e5833
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : fltkernel/FltGetRequestorProcessIdEx, FltGetRequestorProcessIdEx routine [Installable File System Drivers], ifsk.fltgetrequestorprocessidex, FltApiRef_e_to_o_ec80528f-12a7-4d31-9bd8-92050a16bd85.xml, FltGetRequestorProcessIdEx
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Microsoft Vista or later versions of the Windows operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltGetRequestorProcessIdEx
+title: FltGetRequestorProcessIdEx function
+author: windows-driver-content
+description: The FltGetRequestorProcessIdEx routine returns the kernel-mode handle for the process that is associated with the thread that requested a given I/O operation.
+old-location: ifsk\fltgetrequestorprocessidex.htm
+old-project: ifsk
+ms.assetid: e6a8b2ca-7e9d-410a-b44b-7e873b6e5833
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: fltkernel/FltGetRequestorProcessIdEx, FltGetRequestorProcessIdEx routine [Installable File System Drivers], ifsk.fltgetrequestorprocessidex, FltApiRef_e_to_o_ec80528f-12a7-4d31-9bd8-92050a16bd85.xml, FltGetRequestorProcessIdEx
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Microsoft Vista or later versions of the Windows operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltGetRequestorProcessIdEx
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

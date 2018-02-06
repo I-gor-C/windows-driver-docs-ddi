@@ -1,42 +1,47 @@
 ---
-UID : NS:wdm._CM_KEYBOARD_DEVICE_DATA
-title : "_CM_KEYBOARD_DEVICE_DATA"
-author : windows-driver-content
-description : The CM_KEYBOARD_DEVICE_DATA structure defines a device-type-specific data record that is stored in the \\Registry\Machine\Hardware\Description tree for a keyboard peripheral if the system can collect this information during the boot process.
-old-location : kernel\cm_keyboard_device_data.htm
-old-project : kernel
-ms.assetid : 928cc1b6-4569-4ca1-9410-d864b5556b86
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : "*PCM_KEYBOARD_DEVICE_DATA, wdm/CM_KEYBOARD_DEVICE_DATA, kstruct_a_db7af30d-3698-4c1a-b1ee-9b7e95e7b5fd.xml, CM_KEYBOARD_DEVICE_DATA structure [Kernel-Mode Driver Architecture], PCM_KEYBOARD_DEVICE_DATA, kernel.cm_keyboard_device_data, CM_KEYBOARD_DEVICE_DATA, PCM_KEYBOARD_DEVICE_DATA structure pointer [Kernel-Mode Driver Architecture], wdm/PCM_KEYBOARD_DEVICE_DATA, _CM_KEYBOARD_DEVICE_DATA"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : CM_KEYBOARD_DEVICE_DATA, *PCM_KEYBOARD_DEVICE_DATA
-req.product : Windows 10 or later.
+UID: NS:wdm._CM_KEYBOARD_DEVICE_DATA
+title: "_CM_KEYBOARD_DEVICE_DATA"
+author: windows-driver-content
+description: The CM_KEYBOARD_DEVICE_DATA structure defines a device-type-specific data record that is stored in the \\Registry\Machine\Hardware\Description tree for a keyboard peripheral if the system can collect this information during the boot process.
+old-location: kernel\cm_keyboard_device_data.htm
+old-project: kernel
+ms.assetid: 928cc1b6-4569-4ca1-9410-d864b5556b86
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: "*PCM_KEYBOARD_DEVICE_DATA, wdm/CM_KEYBOARD_DEVICE_DATA, kstruct_a_db7af30d-3698-4c1a-b1ee-9b7e95e7b5fd.xml, CM_KEYBOARD_DEVICE_DATA structure [Kernel-Mode Driver Architecture], PCM_KEYBOARD_DEVICE_DATA, kernel.cm_keyboard_device_data, CM_KEYBOARD_DEVICE_DATA, PCM_KEYBOARD_DEVICE_DATA structure pointer [Kernel-Mode Driver Architecture], wdm/PCM_KEYBOARD_DEVICE_DATA, _CM_KEYBOARD_DEVICE_DATA"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdm.h
+apiname:
+-	CM_KEYBOARD_DEVICE_DATA
+product: Windows
+targetos: Windows
+req.typenames: CM_KEYBOARD_DEVICE_DATA, *PCM_KEYBOARD_DEVICE_DATA
+req.product: Windows 10 or later.
 ---
 
 # _CM_KEYBOARD_DEVICE_DATA structure

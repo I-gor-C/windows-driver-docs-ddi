@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dcaps._D3DLIGHTINGCAPS
-title : "_D3DLIGHTINGCAPS"
-author : windows-driver-content
-description : Obsolete in DirectX 8.0 and later versions; see Remarks. The D3DLIGHTINGCAPS structure describes the lighting capabilities of a device.
-old-location : display\d3dlightingcaps.htm
-old-project : display
-ms.assetid : ea8ba463-e8dd-4952-bcad-6fe565fe3292
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : "*LPD3DLIGHTINGCAPS, D3DLIGHTINGCAPS, LPD3DLIGHTINGCAPS, d3dstrct_98470d9f-b4ed-49ee-9c0f-34c991916de3.xml, D3DLIGHTINGCAPS structure [Display Devices], d3dcaps/D3DLIGHTINGCAPS, _D3DLIGHTINGCAPS, LPD3DLIGHTINGCAPS structure pointer [Display Devices], d3dcaps/LPD3DLIGHTINGCAPS, display.d3dlightingcaps"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dcaps.h
-req.include-header : D3dcaps.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*LPD3DLIGHTINGCAPS, D3DLIGHTINGCAPS"
+UID: NS:d3dcaps._D3DLIGHTINGCAPS
+title: "_D3DLIGHTINGCAPS"
+author: windows-driver-content
+description: Obsolete in DirectX 8.0 and later versions; see Remarks. The D3DLIGHTINGCAPS structure describes the lighting capabilities of a device.
+old-location: display\d3dlightingcaps.htm
+old-project: display
+ms.assetid: ea8ba463-e8dd-4952-bcad-6fe565fe3292
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: "*LPD3DLIGHTINGCAPS, D3DLIGHTINGCAPS, LPD3DLIGHTINGCAPS, d3dstrct_98470d9f-b4ed-49ee-9c0f-34c991916de3.xml, D3DLIGHTINGCAPS structure [Display Devices], d3dcaps/D3DLIGHTINGCAPS, _D3DLIGHTINGCAPS, LPD3DLIGHTINGCAPS structure pointer [Display Devices], d3dcaps/LPD3DLIGHTINGCAPS, display.d3dlightingcaps"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dcaps.h
+req.include-header: D3dcaps.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dcaps.h
+apiname:
+-	D3DLIGHTINGCAPS
+product: Windows
+targetos: Windows
+req.typenames: "*LPD3DLIGHTINGCAPS, D3DLIGHTINGCAPS"
 ---
 
 # _D3DLIGHTINGCAPS structure

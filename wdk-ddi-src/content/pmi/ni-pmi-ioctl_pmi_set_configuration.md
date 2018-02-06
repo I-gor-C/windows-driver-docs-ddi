@@ -1,41 +1,46 @@
 ---
-UID : NI:pmi.IOCTL_PMI_SET_CONFIGURATION
-title : IOCTL_PMI_SET_CONFIGURATION
-author : windows-driver-content
-description : The IOCTL_PMI_SET_CONFIGURATION request sets the configuration data for a power meter.
-old-location : powermeter\ioctl_pmi_set_configuration.htm
-old-project : powermeter
-ms.assetid : c8eff87f-b8af-4876-9327-545eeff958c3
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : powermeter.ioctl_pmi_set_configuration, IOCTL_PMI_SET_CONFIGURATION control code [Power Metering and Budgeting Devices], IOCTL_PMI_SET_CONFIGURATION, pmi/IOCTL_PMI_SET_CONFIGURATION, PowerMeterRef_6bfb518f-962c-48c1-b94e-711679fd8057.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : pmi.h
-req.include-header : Pmi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7, Windows Server 2008 R2, and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PMI_MEASUREMENT_UNIT
+UID: NI:pmi.IOCTL_PMI_SET_CONFIGURATION
+title: IOCTL_PMI_SET_CONFIGURATION
+author: windows-driver-content
+description: The IOCTL_PMI_SET_CONFIGURATION request sets the configuration data for a power meter.
+old-location: powermeter\ioctl_pmi_set_configuration.htm
+old-project: powermeter
+ms.assetid: c8eff87f-b8af-4876-9327-545eeff958c3
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: powermeter.ioctl_pmi_set_configuration, IOCTL_PMI_SET_CONFIGURATION control code [Power Metering and Budgeting Devices], IOCTL_PMI_SET_CONFIGURATION, pmi/IOCTL_PMI_SET_CONFIGURATION, PowerMeterRef_6bfb518f-962c-48c1-b94e-711679fd8057.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: pmi.h
+req.include-header: Pmi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7, Windows Server 2008 R2, and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Pmi.h
+apiname:
+-	IOCTL_PMI_SET_CONFIGURATION
+product: Windows
+targetos: Windows
+req.typenames: PMI_MEASUREMENT_UNIT
 ---
 
 # IOCTL_PMI_SET_CONFIGURATION IOCTL

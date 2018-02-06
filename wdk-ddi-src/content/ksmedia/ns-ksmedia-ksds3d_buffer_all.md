@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.KSDS3D_BUFFER_ALL
-title : KSDS3D_BUFFER_ALL
-author : windows-driver-content
-description : The KSDS3D_BUFFER_ALL structure specifies all the 3D characteristics of a DirectSound 3D buffer.
-old-location : audio\ksds3d_buffer_all.htm
-old-project : audio
-ms.assetid : c94e2189-62a6-44d6-9a29-4fd32c72437a
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : audio.ksds3d_buffer_all, *PKSDS3D_BUFFER_ALL, KSDS3D_BUFFER_ALL, PKSDS3D_BUFFER_ALL, PKSDS3D_BUFFER_ALL structure pointer [Audio Devices], aud-prop_46bd2b81-3d2a-49e1-93e6-867e84ae4c04.xml, ksmedia/PKSDS3D_BUFFER_ALL, ksmedia/KSDS3D_BUFFER_ALL, KSDS3D_BUFFER_ALL structure [Audio Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKSDS3D_BUFFER_ALL, KSDS3D_BUFFER_ALL"
+UID: NS:ksmedia.KSDS3D_BUFFER_ALL
+title: KSDS3D_BUFFER_ALL
+author: windows-driver-content
+description: The KSDS3D_BUFFER_ALL structure specifies all the 3D characteristics of a DirectSound 3D buffer.
+old-location: audio\ksds3d_buffer_all.htm
+old-project: audio
+ms.assetid: c94e2189-62a6-44d6-9a29-4fd32c72437a
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: audio.ksds3d_buffer_all, *PKSDS3D_BUFFER_ALL, KSDS3D_BUFFER_ALL, PKSDS3D_BUFFER_ALL, PKSDS3D_BUFFER_ALL structure pointer [Audio Devices], aud-prop_46bd2b81-3d2a-49e1-93e6-867e84ae4c04.xml, ksmedia/PKSDS3D_BUFFER_ALL, ksmedia/KSDS3D_BUFFER_ALL, KSDS3D_BUFFER_ALL structure [Audio Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	KSDS3D_BUFFER_ALL
+product: Windows
+targetos: Windows
+req.typenames: "*PKSDS3D_BUFFER_ALL, KSDS3D_BUFFER_ALL"
 ---
 
 # KSDS3D_BUFFER_ALL structure

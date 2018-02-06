@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3D11DDI_CREATECOMMANDLIST
-title : PFND3D11DDI_CREATECOMMANDLIST
-author : windows-driver-content
-description : The CreateCommandList function creates a command list.
-old-location : display\createcommandlist.htm
-old-project : display
-ms.assetid : 583bde52-ba21-44ce-9f48-8ace6f7a70cc
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.createcommandlist, CreateCommandList callback function [Display Devices], CreateCommandList, PFND3D11DDI_CREATECOMMANDLIST, PFND3D11DDI_CREATECOMMANDLIST, d3d10umddi/CreateCommandList, UserModeDisplayDriverDx11_Functions_4383a01d-9aee-4c8e-8a54-f7463e8995d9.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : CreateCommandList is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3D11DDI_CREATECOMMANDLIST
+title: PFND3D11DDI_CREATECOMMANDLIST
+author: windows-driver-content
+description: The CreateCommandList function creates a command list.
+old-location: display\createcommandlist.htm
+old-project: display
+ms.assetid: 583bde52-ba21-44ce-9f48-8ace6f7a70cc
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.createcommandlist, CreateCommandList callback function [Display Devices], CreateCommandList, PFND3D11DDI_CREATECOMMANDLIST, PFND3D11DDI_CREATECOMMANDLIST, d3d10umddi/CreateCommandList, UserModeDisplayDriverDx11_Functions_4383a01d-9aee-4c8e-8a54-f7463e8995d9.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: CreateCommandList is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	CreateCommandList
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

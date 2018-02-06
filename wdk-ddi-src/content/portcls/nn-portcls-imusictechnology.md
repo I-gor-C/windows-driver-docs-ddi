@@ -1,41 +1,46 @@
 ---
-UID : NN:portcls.IMusicTechnology
-title : IMusicTechnology
-author : windows-driver-content
-description : The IMusicTechnology interface is used to change the music technology GUIDs that are specified in the data range descriptors for the pins belonging to a MIDI or DMus miniport driver.
-old-location : audio\imusictechnology.htm
-old-project : audio
-ms.assetid : e42380f8-8e82-4c98-88e9-9e44f5091a85
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : audio.imusictechnology, IMusicTechnology interface [Audio Devices], IMusicTechnology interface [Audio Devices], described, IMusicTechnology, portcls/IMusicTechnology, audmp-routines_9300aa03-6606-46a0-ad5b-b0d776c46ed1.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : portcls.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Portcls.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NN:portcls.IMusicTechnology
+title: IMusicTechnology
+author: windows-driver-content
+description: The IMusicTechnology interface is used to change the music technology GUIDs that are specified in the data range descriptors for the pins belonging to a MIDI or DMus miniport driver.
+old-location: audio\imusictechnology.htm
+old-project: audio
+ms.assetid: e42380f8-8e82-4c98-88e9-9e44f5091a85
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: audio.imusictechnology, IMusicTechnology interface [Audio Devices], IMusicTechnology interface [Audio Devices], described, IMusicTechnology, portcls/IMusicTechnology, audmp-routines_9300aa03-6606-46a0-ad5b-b0d776c46ed1.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: portcls.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Portcls.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	portcls.h
+apiname:
+-	IMusicTechnology
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 # IMusicTechnology interface

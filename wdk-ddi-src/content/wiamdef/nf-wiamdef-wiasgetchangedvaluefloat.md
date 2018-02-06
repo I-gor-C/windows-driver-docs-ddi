@@ -1,42 +1,47 @@
 ---
-UID : NF:wiamdef.wiasGetChangedValueFloat
-title : wiasGetChangedValueFloat function
-author : windows-driver-content
-description : The wiasGetChangedValueFloat function determines whether a property with a floating-point value has been changed by an application.
-old-location : image\wiasgetchangedvaluefloat.htm
-old-project : image
-ms.assetid : 934ea038-e8fb-446d-8ba8-1cde56d3af87
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : image.wiasgetchangedvaluefloat, wiasFncs_d7b124d9-d108-4293-946c-a5d6bb43996f.xml, wiamdef/wiasGetChangedValueFloat, wiasGetChangedValueFloat function [Imaging Devices], wiasGetChangedValueFloat
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wiamdef.h
-req.include-header : Wiamdef.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wiaservc.lib
-req.dll : Wiaservc.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*LPDEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2, DEVICEDIALOGDATA2"
-req.product : Windows 10 or later.
+UID: NF:wiamdef.wiasGetChangedValueFloat
+title: wiasGetChangedValueFloat function
+author: windows-driver-content
+description: The wiasGetChangedValueFloat function determines whether a property with a floating-point value has been changed by an application.
+old-location: image\wiasgetchangedvaluefloat.htm
+old-project: image
+ms.assetid: 934ea038-e8fb-446d-8ba8-1cde56d3af87
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: image.wiasgetchangedvaluefloat, wiasFncs_d7b124d9-d108-4293-946c-a5d6bb43996f.xml, wiamdef/wiasGetChangedValueFloat, wiasGetChangedValueFloat function [Imaging Devices], wiasGetChangedValueFloat
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wiamdef.h
+req.include-header: Wiamdef.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wiaservc.lib
+req.dll: Wiaservc.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Wiaservc.dll
+apiname:
+-	wiasGetChangedValueFloat
+product: Windows
+targetos: Windows
+req.typenames: "*LPDEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2, DEVICEDIALOGDATA2"
+req.product: Windows 10 or later.
 ---
 
 

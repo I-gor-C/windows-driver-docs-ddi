@@ -1,41 +1,46 @@
 ---
-UID : NS:61883._SET_CMP_ADDRESS_TYPE
-title : "_SET_CMP_ADDRESS_TYPE"
-author : windows-driver-content
-description : The SET_CMP_ADDRESS_TYPE structure is used in conjunction with the Av61883_SetUnitInfo request to set the parameters that the IEC-61883 protocol driver should use when capturing and transmitting isochronous packets.
-old-location : ieee\set_cmp_address_type.htm
-old-project : IEEE
-ms.assetid : b08588a2-d786-44c1-a265-0f7fef9ecd6a
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : IEEE.set_cmp_address_type, SET_CMP_ADDRESS_TYPE structure [Buses], PSET_CMP_ADDRESS_TYPE, 61883_structures_35b30fc9-69a6-4599-8d76-5aaf35104346.xml, PSET_CMP_ADDRESS_TYPE structure pointer [Buses], SET_CMP_ADDRESS_TYPE, *PSET_CMP_ADDRESS_TYPE, 61883/SET_CMP_ADDRESS_TYPE, _SET_CMP_ADDRESS_TYPE, 61883/PSET_CMP_ADDRESS_TYPE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : 61883.h
-req.include-header : 61883.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SET_CMP_ADDRESS_TYPE, *PSET_CMP_ADDRESS_TYPE
+UID: NS:61883._SET_CMP_ADDRESS_TYPE
+title: "_SET_CMP_ADDRESS_TYPE"
+author: windows-driver-content
+description: The SET_CMP_ADDRESS_TYPE structure is used in conjunction with the Av61883_SetUnitInfo request to set the parameters that the IEC-61883 protocol driver should use when capturing and transmitting isochronous packets.
+old-location: ieee\set_cmp_address_type.htm
+old-project: IEEE
+ms.assetid: b08588a2-d786-44c1-a265-0f7fef9ecd6a
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: IEEE.set_cmp_address_type, SET_CMP_ADDRESS_TYPE structure [Buses], PSET_CMP_ADDRESS_TYPE, 61883_structures_35b30fc9-69a6-4599-8d76-5aaf35104346.xml, PSET_CMP_ADDRESS_TYPE structure pointer [Buses], SET_CMP_ADDRESS_TYPE, *PSET_CMP_ADDRESS_TYPE, 61883/SET_CMP_ADDRESS_TYPE, _SET_CMP_ADDRESS_TYPE, 61883/PSET_CMP_ADDRESS_TYPE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: 61883.h
+req.include-header: 61883.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	61883.h
+apiname:
+-	SET_CMP_ADDRESS_TYPE
+product: Windows
+targetos: Windows
+req.typenames: SET_CMP_ADDRESS_TYPE, *PSET_CMP_ADDRESS_TYPE
 ---
 
 # _SET_CMP_ADDRESS_TYPE structure

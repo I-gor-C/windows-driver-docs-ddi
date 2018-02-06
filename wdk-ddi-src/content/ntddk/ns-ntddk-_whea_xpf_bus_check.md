@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddk._WHEA_XPF_BUS_CHECK
-title : "_WHEA_XPF_BUS_CHECK"
-author : windows-driver-content
-description : The WHEA_XPF_BUS_CHECK union describes bus error information for an x86 or x64 processor.
-old-location : whea\whea_xpf_bus_check.htm
-old-project : whea
-ms.assetid : 7886a796-2755-4367-bbbd-2017e7900bf4
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : PWHEA_XPF_BUS_CHECK, ntddk/WHEA_XPF_BUS_CHECK, whearef_fff50a8d-8ab0-4f25-adb3-b33e1ea80aed.xml, PWHEA_XPF_BUS_CHECK union pointer [WHEA Drivers and Applications], *PWHEA_XPF_BUS_CHECK, WHEA_XPF_BUS_CHECK, whea.whea_xpf_bus_check, WHEA_XPF_BUS_CHECK union [WHEA Drivers and Applications], ntddk/PWHEA_XPF_BUS_CHECK, _WHEA_XPF_BUS_CHECK
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWHEA_XPF_BUS_CHECK, WHEA_XPF_BUS_CHECK"
+UID: NS:ntddk._WHEA_XPF_BUS_CHECK
+title: "_WHEA_XPF_BUS_CHECK"
+author: windows-driver-content
+description: The WHEA_XPF_BUS_CHECK union describes bus error information for an x86 or x64 processor.
+old-location: whea\whea_xpf_bus_check.htm
+old-project: whea
+ms.assetid: 7886a796-2755-4367-bbbd-2017e7900bf4
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: PWHEA_XPF_BUS_CHECK, ntddk/WHEA_XPF_BUS_CHECK, whearef_fff50a8d-8ab0-4f25-adb3-b33e1ea80aed.xml, PWHEA_XPF_BUS_CHECK union pointer [WHEA Drivers and Applications], *PWHEA_XPF_BUS_CHECK, WHEA_XPF_BUS_CHECK, whea.whea_xpf_bus_check, WHEA_XPF_BUS_CHECK union [WHEA Drivers and Applications], ntddk/PWHEA_XPF_BUS_CHECK, _WHEA_XPF_BUS_CHECK
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddk.h
+apiname:
+-	WHEA_XPF_BUS_CHECK
+product: Windows
+targetos: Windows
+req.typenames: "*PWHEA_XPF_BUS_CHECK, WHEA_XPF_BUS_CHECK"
 ---
 
 # _WHEA_XPF_BUS_CHECK structure

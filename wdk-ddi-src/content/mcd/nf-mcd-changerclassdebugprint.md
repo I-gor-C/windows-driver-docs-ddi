@@ -1,41 +1,47 @@
 ---
-UID : NF:mcd.ChangerClassDebugPrint
-title : ChangerClassDebugPrint function
-author : windows-driver-content
-description : The ChangerClassDebugPrint function prints debugging information.
-old-location : storage\changerclassdebugprint.htm
-old-project : storage
-ms.assetid : 452377f1-a926-4f43-8168-bea11622902e
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : ChangerClassDebugPrint, mcd/ChangerClassDebugPrint, ChangerClassDebugPrint function [Storage Devices], chgrclas_3372885c-482b-4dab-87ae-e59668e91950.xml, storage.changerclassdebugprint
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : mcd.h
-req.include-header : Mcd.h, Ntddchgr.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Mcd.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : LAMP_INTENSITY_WHITE
+UID: NF:mcd.ChangerClassDebugPrint
+title: ChangerClassDebugPrint function
+author: windows-driver-content
+description: The ChangerClassDebugPrint function prints debugging information.
+old-location: storage\changerclassdebugprint.htm
+old-project: storage
+ms.assetid: 452377f1-a926-4f43-8168-bea11622902e
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: ChangerClassDebugPrint, mcd/ChangerClassDebugPrint, ChangerClassDebugPrint function [Storage Devices], chgrclas_3372885c-482b-4dab-87ae-e59668e91950.xml, storage.changerclassdebugprint
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: mcd.h
+req.include-header: Mcd.h, Ntddchgr.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Mcd.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Mcd.lib
+-	Mcd.dll
+apiname:
+-	ChangerClassDebugPrint
+product: Windows
+targetos: Windows
+req.typenames: LAMP_INTENSITY_WHITE
 ---
 
 

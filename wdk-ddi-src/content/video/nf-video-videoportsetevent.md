@@ -1,42 +1,47 @@
 ---
-UID : NF:video.VideoPortSetEvent
-title : VideoPortSetEvent function
-author : windows-driver-content
-description : The VideoPortSetEvent function sets an event object to the signaled state if it was not already in that state, and returns the event object's previous state.
-old-location : display\videoportsetevent.htm
-old-project : display
-ms.assetid : 93db9d51-3f80-47ff-a2c2-3c937b5dcf7b
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : VideoPortSetEvent function [Display Devices], video/VideoPortSetEvent, display.videoportsetevent, VideoPort_Functions_8efce2e2-f5e7-402a-a5bf-03c23ac85992.xml, VideoPortSetEvent
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows XP and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Videoprt.lib
-req.dll : Videoprt.sys
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_PORT_SERVICES
-req.product : Windows 10 or later.
+UID: NF:video.VideoPortSetEvent
+title: VideoPortSetEvent function
+author: windows-driver-content
+description: The VideoPortSetEvent function sets an event object to the signaled state if it was not already in that state, and returns the event object's previous state.
+old-location: display\videoportsetevent.htm
+old-project: display
+ms.assetid: 93db9d51-3f80-47ff-a2c2-3c937b5dcf7b
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: VideoPortSetEvent function [Display Devices], video/VideoPortSetEvent, display.videoportsetevent, VideoPort_Functions_8efce2e2-f5e7-402a-a5bf-03c23ac85992.xml, VideoPortSetEvent
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows XP and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Videoprt.lib
+req.dll: Videoprt.sys
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Videoprt.sys
+apiname:
+-	VideoPortSetEvent
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_PORT_SERVICES
+req.product: Windows 10 or later.
 ---
 
 

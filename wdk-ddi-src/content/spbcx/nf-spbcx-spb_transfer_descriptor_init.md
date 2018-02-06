@@ -1,42 +1,47 @@
 ---
-UID : NF:spbcx.SPB_TRANSFER_DESCRIPTOR_INIT
-title : SPB_TRANSFER_DESCRIPTOR_INIT function
-author : windows-driver-content
-description : The SPB_TRANSFER_DESCRIPTOR_INIT function initializes an SPB_TRANSFER_DESCRIPTOR structure.
-old-location : spb\spb_transfer_descriptor_init.htm
-old-project : SPB
-ms.assetid : 96A069B5-BD89-4B8E-88D9-57944F4C9DB8
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : SPB.spb_transfer_descriptor_init, SPB_TRANSFER_DESCRIPTOR_INIT function [Buses], SPB_TRANSFER_DESCRIPTOR_INIT, spbcx/SPB_TRANSFER_DESCRIPTOR_INIT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : spbcx.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : Any IRQL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SPB_REQUEST_TYPE, *PSPB_REQUEST_TYPE
-req.product : Windows 10 or later.
+UID: NF:spbcx.SPB_TRANSFER_DESCRIPTOR_INIT
+title: SPB_TRANSFER_DESCRIPTOR_INIT function
+author: windows-driver-content
+description: The SPB_TRANSFER_DESCRIPTOR_INIT function initializes an SPB_TRANSFER_DESCRIPTOR structure.
+old-location: spb\spb_transfer_descriptor_init.htm
+old-project: SPB
+ms.assetid: 96A069B5-BD89-4B8E-88D9-57944F4C9DB8
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: SPB.spb_transfer_descriptor_init, SPB_TRANSFER_DESCRIPTOR_INIT function [Buses], SPB_TRANSFER_DESCRIPTOR_INIT, spbcx/SPB_TRANSFER_DESCRIPTOR_INIT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: spbcx.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: Any IRQL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Spbcx.h
+apiname:
+-	SPB_TRANSFER_DESCRIPTOR_INIT
+product: Windows
+targetos: Windows
+req.typenames: SPB_REQUEST_TYPE, *PSPB_REQUEST_TYPE
+req.product: Windows 10 or later.
 ---
 
 

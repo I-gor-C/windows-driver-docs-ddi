@@ -1,42 +1,47 @@
 ---
-UID : NS:wudfddi_types._WDF_PROPERTY_STORE_ROOT
-title : "_WDF_PROPERTY_STORE_ROOT"
-author : windows-driver-content
-description : The WDF_PROPERTY_STORE_ROOT structure contains information that identifies a UMDF property store.
-old-location : wdf\wdf_property_store_root.htm
-old-project : wdf
-ms.assetid : 431ae991-35e0-4cf7-a3e0-57591abfe5c5
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.wdf_property_store_root, wudfddi_types/PWDF_PROPERTY_STORE_ROOT, PWDF_PROPERTY_STORE_ROOT structure pointer, wudfddi_types/WDF_PROPERTY_STORE_ROOT, umdfstructs_7024c360-9ab7-4eea-ba66-c45c5912dfaa.xml, _WDF_PROPERTY_STORE_ROOT, *PWDF_PROPERTY_STORE_ROOT, WDF_PROPERTY_STORE_ROOT, PWDF_PROPERTY_STORE_ROOT, umdf.wdf_property_store_root, WDF_PROPERTY_STORE_ROOT structure
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wudfddi_types.h
-req.include-header : Wudfddi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.9
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDF_PROPERTY_STORE_ROOT, WDF_PROPERTY_STORE_ROOT"
-req.product : Windows 10 or later.
+UID: NS:wudfddi_types._WDF_PROPERTY_STORE_ROOT
+title: "_WDF_PROPERTY_STORE_ROOT"
+author: windows-driver-content
+description: The WDF_PROPERTY_STORE_ROOT structure contains information that identifies a UMDF property store.
+old-location: wdf\wdf_property_store_root.htm
+old-project: wdf
+ms.assetid: 431ae991-35e0-4cf7-a3e0-57591abfe5c5
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.wdf_property_store_root, wudfddi_types/PWDF_PROPERTY_STORE_ROOT, PWDF_PROPERTY_STORE_ROOT structure pointer, wudfddi_types/WDF_PROPERTY_STORE_ROOT, umdfstructs_7024c360-9ab7-4eea-ba66-c45c5912dfaa.xml, _WDF_PROPERTY_STORE_ROOT, *PWDF_PROPERTY_STORE_ROOT, WDF_PROPERTY_STORE_ROOT, PWDF_PROPERTY_STORE_ROOT, umdf.wdf_property_store_root, WDF_PROPERTY_STORE_ROOT structure
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wudfddi_types.h
+req.include-header: Wudfddi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.9
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wudfddi_types.h
+apiname:
+-	WDF_PROPERTY_STORE_ROOT
+product: Windows
+targetos: Windows
+req.typenames: "*PWDF_PROPERTY_STORE_ROOT, WDF_PROPERTY_STORE_ROOT"
+req.product: Windows 10 or later.
 ---
 
 # _WDF_PROPERTY_STORE_ROOT structure

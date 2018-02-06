@@ -1,41 +1,46 @@
 ---
-UID : NI:ntdd8042.IOCTL_INTERNAL_I8042_KEYBOARD_WRITE_BUFFER
-title : IOCTL_INTERNAL_I8042_KEYBOARD_WRITE_BUFFER
-author : windows-driver-content
-description : The IOCTL_INTERNAL_I8042_KEYBOARD_WRITE_BUFFER request writes data to the i8042 port controller to control operation of a keyboard device.
-old-location : hid\ioctl_internal_i8042_keyboard_write_buffer.htm
-old-project : hid
-ms.assetid : 583263fc-8b95-47d9-9f20-306b2200b573
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : hid.ioctl_internal_i8042_keyboard_write_buffer, IOCTL_INTERNAL_I8042_KEYBOARD_WRITE_BUFFER control code [Human Input Devices], IOCTL_INTERNAL_I8042_KEYBOARD_WRITE_BUFFER, ntdd8042/IOCTL_INTERNAL_I8042_KEYBOARD_WRITE_BUFFER, i8042ref_a981431f-38cd-4cc4-899e-a79799da0e01.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntdd8042.h
-req.include-header : Ntdd8042.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : MOUSE_STATE, *PMOUSE_STATE
+UID: NI:ntdd8042.IOCTL_INTERNAL_I8042_KEYBOARD_WRITE_BUFFER
+title: IOCTL_INTERNAL_I8042_KEYBOARD_WRITE_BUFFER
+author: windows-driver-content
+description: The IOCTL_INTERNAL_I8042_KEYBOARD_WRITE_BUFFER request writes data to the i8042 port controller to control operation of a keyboard device.
+old-location: hid\ioctl_internal_i8042_keyboard_write_buffer.htm
+old-project: hid
+ms.assetid: 583263fc-8b95-47d9-9f20-306b2200b573
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: hid.ioctl_internal_i8042_keyboard_write_buffer, IOCTL_INTERNAL_I8042_KEYBOARD_WRITE_BUFFER control code [Human Input Devices], IOCTL_INTERNAL_I8042_KEYBOARD_WRITE_BUFFER, ntdd8042/IOCTL_INTERNAL_I8042_KEYBOARD_WRITE_BUFFER, i8042ref_a981431f-38cd-4cc4-899e-a79799da0e01.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntdd8042.h
+req.include-header: Ntdd8042.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntdd8042.h
+apiname:
+-	IOCTL_INTERNAL_I8042_KEYBOARD_WRITE_BUFFER
+product: Windows
+targetos: Windows
+req.typenames: MOUSE_STATE, *PMOUSE_STATE
 ---
 
 # IOCTL_INTERNAL_I8042_KEYBOARD_WRITE_BUFFER IOCTL

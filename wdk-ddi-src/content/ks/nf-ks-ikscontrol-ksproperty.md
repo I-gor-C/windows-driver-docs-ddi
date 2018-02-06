@@ -1,41 +1,46 @@
 ---
-UID : NF:ks.IKsControl.KsProperty
-title : IKsControl::KsProperty method
-author : windows-driver-content
-description : The IKsControl::KsProperty method sets a property or retrieves property information, together with any other defined support operations available on a property set.
-old-location : stream\ikscontrol_ksproperty2.htm
-old-project : stream
-ms.assetid : a80312ef-394a-4a59-8a04-35d7c60689b6
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : avintfc_100fad0d-8ca1-4cf1-88b0-e6ec1a3c55fe.xml, KsProperty method [Streaming Media Devices], KsProperty, ks/IKsControl::KsProperty, IKsControl interface [Streaming Media Devices], KsProperty method, KsProperty method [Streaming Media Devices], IKsControl interface, IKsControl::KsProperty, IKsControl, stream.ikscontrol_ksproperty2
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : DesktopMobile
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : ks.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.IKsControl.KsProperty
+title: IKsControl::KsProperty method
+author: windows-driver-content
+description: The IKsControl::KsProperty method sets a property or retrieves property information, together with any other defined support operations available on a property set.
+old-location: stream\ikscontrol_ksproperty2.htm
+old-project: stream
+ms.assetid: a80312ef-394a-4a59-8a04-35d7c60689b6
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: avintfc_100fad0d-8ca1-4cf1-88b0-e6ec1a3c55fe.xml, KsProperty method [Streaming Media Devices], KsProperty, ks/IKsControl::KsProperty, IKsControl interface [Streaming Media Devices], KsProperty method, KsProperty method [Streaming Media Devices], IKsControl interface, IKsControl::KsProperty, IKsControl, stream.ikscontrol_ksproperty2
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: DesktopMobile
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: ks.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	ks.h
+apiname:
+-	IKsControl.KsProperty
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

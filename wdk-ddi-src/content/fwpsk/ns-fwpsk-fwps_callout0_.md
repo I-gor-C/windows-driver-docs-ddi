@@ -1,41 +1,46 @@
 ---
-UID : NS:fwpsk.FWPS_CALLOUT0_
-title : FWPS_CALLOUT0_
-author : windows-driver-content
-description : The FWPS_CALLOUT0 structure defines the data that is required for a callout driver to register a callout with the filter engine.Note  FWPS_CALLOUT0 is the specific version of FWPS_CALLOUT used in Windows Vista and later.
-old-location : netvista\fwps_callout0.htm
-old-project : netvista
-ms.assetid : df6e9980-6c9b-4d01-a1d5-e5242a3ebc66
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : FWPS_CALLOUT0, FWPS_CALLOUT0_, FWPS_CALLOUT0 structure [Network Drivers Starting with Windows Vista], fwpsk/FWPS_CALLOUT0, wfp_ref_3_struct_3_fwps_A-E_5e9913c4-01d7-4b1c-b2d0-b4a7a28477e2.xml, netvista.fwps_callout0
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : fwpsk.h
-req.include-header : Fwpsk.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FWPS_CALLOUT0
+UID: NS:fwpsk.FWPS_CALLOUT0_
+title: FWPS_CALLOUT0_
+author: windows-driver-content
+description: The FWPS_CALLOUT0 structure defines the data that is required for a callout driver to register a callout with the filter engine.Note  FWPS_CALLOUT0 is the specific version of FWPS_CALLOUT used in Windows Vista and later.
+old-location: netvista\fwps_callout0.htm
+old-project: netvista
+ms.assetid: df6e9980-6c9b-4d01-a1d5-e5242a3ebc66
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: FWPS_CALLOUT0, FWPS_CALLOUT0_, FWPS_CALLOUT0 structure [Network Drivers Starting with Windows Vista], fwpsk/FWPS_CALLOUT0, wfp_ref_3_struct_3_fwps_A-E_5e9913c4-01d7-4b1c-b2d0-b4a7a28477e2.xml, netvista.fwps_callout0
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: fwpsk.h
+req.include-header: Fwpsk.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	fwpsk.h
+apiname:
+-	FWPS_CALLOUT0
+product: Windows
+targetos: Windows
+req.typenames: FWPS_CALLOUT0
 ---
 
 # FWPS_CALLOUT0_ structure

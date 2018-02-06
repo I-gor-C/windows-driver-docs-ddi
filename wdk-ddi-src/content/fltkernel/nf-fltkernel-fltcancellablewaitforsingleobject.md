@@ -1,41 +1,47 @@
 ---
-UID : NF:fltkernel.FltCancellableWaitForSingleObject
-title : FltCancellableWaitForSingleObject function
-author : windows-driver-content
-description : The FltCancellableWaitForSingleObject routine executes a cancelable wait operation (a wait that can be terminated) on a dispatcher object.
-old-location : ifsk\fltcancellablewaitforsingleobject.htm
-old-project : ifsk
-ms.assetid : bf872769-c084-44c9-97e8-58eb54f943b2
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : fltkernel/FltCancellableWaitForSingleObject, FltCancellableWaitForSingleObject, ifsk.fltcancellablewaitforsingleobject, FltCancellableWaitForSingleObject routine [Installable File System Drivers], FltApiRef_a_to_d_e71d2b38-ae04-4026-bb99-d0d99ea4ec05.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : This routine is available in Microsoft Windows Vista and later version of Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Fltmgr.lib
-req.dll : Fltmgr.sys
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltCancellableWaitForSingleObject
+title: FltCancellableWaitForSingleObject function
+author: windows-driver-content
+description: The FltCancellableWaitForSingleObject routine executes a cancelable wait operation (a wait that can be terminated) on a dispatcher object.
+old-location: ifsk\fltcancellablewaitforsingleobject.htm
+old-project: ifsk
+ms.assetid: bf872769-c084-44c9-97e8-58eb54f943b2
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: fltkernel/FltCancellableWaitForSingleObject, FltCancellableWaitForSingleObject, ifsk.fltcancellablewaitforsingleobject, FltCancellableWaitForSingleObject routine [Installable File System Drivers], FltApiRef_a_to_d_e71d2b38-ae04-4026-bb99-d0d99ea4ec05.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: This routine is available in Microsoft Windows Vista and later version of Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Fltmgr.lib
+req.dll: Fltmgr.sys
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+-	wdfilter.sys
+apiname:
+-	FltCancellableWaitForSingleObject
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

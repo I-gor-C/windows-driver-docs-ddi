@@ -1,41 +1,46 @@
 ---
-UID : NS:ntifs._REPARSE_GUID_DATA_BUFFER
-title : "_REPARSE_GUID_DATA_BUFFER"
-author : windows-driver-content
-description : The REPARSE_GUID_DATA_BUFFER structure contains reparse point data for a reparse point.
-old-location : ifsk\reparse_guid_data_buffer.htm
-old-project : ifsk
-ms.assetid : 9acb3b65-46c7-4b29-8d7a-c5d8fcd4563d
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : "_REPARSE_GUID_DATA_BUFFER, PREPARSE_GUID_DATA_BUFFER, REPARSE_GUID_DATA_BUFFER structure [Installable File System Drivers], fileinformationstructures_d020fad8-2a4b-4fe6-a1ca-bbf7575418b5.xml, PREPARSE_GUID_DATA_BUFFER structure pointer [Installable File System Drivers], ntifs/PREPARSE_GUID_DATA_BUFFER, ifsk.reparse_guid_data_buffer, REPARSE_GUID_DATA_BUFFER, *PREPARSE_GUID_DATA_BUFFER, ntifs/REPARSE_GUID_DATA_BUFFER"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntifs.h
-req.include-header : Ntifs.h, Fltkernel.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PREPARSE_GUID_DATA_BUFFER, REPARSE_GUID_DATA_BUFFER"
+UID: NS:ntifs._REPARSE_GUID_DATA_BUFFER
+title: "_REPARSE_GUID_DATA_BUFFER"
+author: windows-driver-content
+description: The REPARSE_GUID_DATA_BUFFER structure contains reparse point data for a reparse point.
+old-location: ifsk\reparse_guid_data_buffer.htm
+old-project: ifsk
+ms.assetid: 9acb3b65-46c7-4b29-8d7a-c5d8fcd4563d
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: "_REPARSE_GUID_DATA_BUFFER, PREPARSE_GUID_DATA_BUFFER, REPARSE_GUID_DATA_BUFFER structure [Installable File System Drivers], fileinformationstructures_d020fad8-2a4b-4fe6-a1ca-bbf7575418b5.xml, PREPARSE_GUID_DATA_BUFFER structure pointer [Installable File System Drivers], ntifs/PREPARSE_GUID_DATA_BUFFER, ifsk.reparse_guid_data_buffer, REPARSE_GUID_DATA_BUFFER, *PREPARSE_GUID_DATA_BUFFER, ntifs/REPARSE_GUID_DATA_BUFFER"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntifs.h
+req.include-header: Ntifs.h, Fltkernel.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntifs.h
+apiname:
+-	REPARSE_GUID_DATA_BUFFER
+product: Windows
+targetos: Windows
+req.typenames: "*PREPARSE_GUID_DATA_BUFFER, REPARSE_GUID_DATA_BUFFER"
 ---
 
 # _REPARSE_GUID_DATA_BUFFER structure

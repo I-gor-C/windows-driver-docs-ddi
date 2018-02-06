@@ -1,42 +1,48 @@
 ---
-UID : NF:srb.ScsiPortGetLogicalUnit
-title : ScsiPortGetLogicalUnit function
-author : windows-driver-content
-description : The ScsiPortGetLogicalUnit routine returns a pointer to the miniport driver's per-LU storage area for a given peripheral.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future.
-old-location : storage\scsiportgetlogicalunit.htm
-old-project : storage
-ms.assetid : 10088043-fc0b-4df9-a5bf-fdee9740b88a
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : ScsiPortGetLogicalUnit routine [Storage Devices], srb/ScsiPortGetLogicalUnit, ScsiPortGetLogicalUnit, storage.scsiportgetlogicalunit, scsiprt_2b4c797a-4fbb-4c0c-913a-628bfb6dab3d.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : srb.h
-req.include-header : Miniport.h, Scsi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Scsiport.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SPB_CONTROLLER_CONFIG, *PSPB_CONTROLLER_CONFIG
-req.product : Windows 10 or later.
+UID: NF:srb.ScsiPortGetLogicalUnit
+title: ScsiPortGetLogicalUnit function
+author: windows-driver-content
+description: The ScsiPortGetLogicalUnit routine returns a pointer to the miniport driver's per-LU storage area for a given peripheral.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future.
+old-location: storage\scsiportgetlogicalunit.htm
+old-project: storage
+ms.assetid: 10088043-fc0b-4df9-a5bf-fdee9740b88a
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: ScsiPortGetLogicalUnit routine [Storage Devices], srb/ScsiPortGetLogicalUnit, ScsiPortGetLogicalUnit, storage.scsiportgetlogicalunit, scsiprt_2b4c797a-4fbb-4c0c-913a-628bfb6dab3d.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: srb.h
+req.include-header: Miniport.h, Scsi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Scsiport.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Scsiport.lib
+-	Scsiport.dll
+apiname:
+-	ScsiPortGetLogicalUnit
+product: Windows
+targetos: Windows
+req.typenames: SPB_CONTROLLER_CONFIG, *PSPB_CONTROLLER_CONFIG
+req.product: Windows 10 or later.
 ---
 
 

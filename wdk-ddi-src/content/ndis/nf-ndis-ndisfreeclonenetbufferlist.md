@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisFreeCloneNetBufferList
-title : NdisFreeCloneNetBufferList function
-author : windows-driver-content
-description : Call the NdisFreeCloneNetBufferList function to free a NET_BUFFER_LIST structure and all associated NET_BUFFER structures and MDL chains that were previously allocated by calling the NdisAllocateCloneNetBufferList function.
-old-location : netvista\ndisfreeclonenetbufferlist.htm
-old-project : netvista
-ms.assetid : 3c632d54-8eb2-475b-8cdf-363028f67437
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NdisFreeCloneNetBufferList function [Network Drivers Starting with Windows Vista], netvista.ndisfreeclonenetbufferlist, ndis_netbuf_functions_ref_a8be507f-e574-4cbe-ab9e-b48cbe00a5f6.xml, ndis/NdisFreeCloneNetBufferList, NdisFreeCloneNetBufferList
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_NetBuffer_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisFreeCloneNetBufferList
+title: NdisFreeCloneNetBufferList function
+author: windows-driver-content
+description: Call the NdisFreeCloneNetBufferList function to free a NET_BUFFER_LIST structure and all associated NET_BUFFER structures and MDL chains that were previously allocated by calling the NdisAllocateCloneNetBufferList function.
+old-location: netvista\ndisfreeclonenetbufferlist.htm
+old-project: netvista
+ms.assetid: 3c632d54-8eb2-475b-8cdf-363028f67437
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NdisFreeCloneNetBufferList function [Network Drivers Starting with Windows Vista], netvista.ndisfreeclonenetbufferlist, ndis_netbuf_functions_ref_a8be507f-e574-4cbe-ab9e-b48cbe00a5f6.xml, ndis/NdisFreeCloneNetBufferList, NdisFreeCloneNetBufferList
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_NetBuffer_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisFreeCloneNetBufferList
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

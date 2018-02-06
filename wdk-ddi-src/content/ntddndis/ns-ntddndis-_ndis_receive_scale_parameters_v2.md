@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddndis._NDIS_RECEIVE_SCALE_PARAMETERS_V2
-title : "_NDIS_RECEIVE_SCALE_PARAMETERS_V2"
-author : windows-driver-content
-description : The NDIS_RECEIVE_SCALE_PARAMETERS_V2 structure specifies the Receive Side Scaling (RSS) parameters for a miniport adapter that advertises support for RSS Version 2 (RSSv2). It is used in the OID_GEN_RECEIVE_SCALE_PARAMETERS_V2 RSSv2 OID.
-old-location : netvista\ndis_receive_scale_parameters_v2.htm
-old-project : netvista
-ms.assetid : 96EAB6EE-BF9A-46AD-8DED-5D9BD2B6F219
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NDIS_RECEIVE_SCALE_PARAM_HASH_KEY_CHANGED, NDIS_RECEIVE_SCALE_PARAM_ENABLE_RSS, PNDIS_RECEIVE_SCALE_PARAMETERS_V2 structure pointer [Network Drivers Starting with Windows Vista], ntddndis/NDIS_RECEIVE_SCALE_PARAMETERS_V2, NDIS_RECEIVE_SCALE_PARAMETERS_V2, NDIS_RECEIVE_SCALE_PARAM_NUMBER_OF_ENTRIES_CHANGED, NDIS_RECEIVE_SCALE_PARAM_NUMBER_OF_QUEUES_CHANGED, _NDIS_RECEIVE_SCALE_PARAMETERS_V2, netvista.ndis_receive_scale_parameters_v2, ntddndis/PNDIS_RECEIVE_SCALE_PARAMETERS_V2, NDIS_RECEIVE_SCALE_PARAMETERS_V2 structure [Network Drivers Starting with Windows Vista], *PNDIS_RECEIVE_SCALE_PARAMETERS_V2, NDIS_RECEIVE_SCALE_PARAM_HASH_INFO_CHANGED, PNDIS_RECEIVE_SCALE_PARAMETERS_V2
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.80 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_RECEIVE_SCALE_PARAMETERS_V2, *PNDIS_RECEIVE_SCALE_PARAMETERS_V2
+UID: NS:ntddndis._NDIS_RECEIVE_SCALE_PARAMETERS_V2
+title: "_NDIS_RECEIVE_SCALE_PARAMETERS_V2"
+author: windows-driver-content
+description: The NDIS_RECEIVE_SCALE_PARAMETERS_V2 structure specifies the Receive Side Scaling (RSS) parameters for a miniport adapter that advertises support for RSS Version 2 (RSSv2). It is used in the OID_GEN_RECEIVE_SCALE_PARAMETERS_V2 RSSv2 OID.
+old-location: netvista\ndis_receive_scale_parameters_v2.htm
+old-project: netvista
+ms.assetid: 96EAB6EE-BF9A-46AD-8DED-5D9BD2B6F219
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NDIS_RECEIVE_SCALE_PARAM_HASH_KEY_CHANGED, NDIS_RECEIVE_SCALE_PARAM_ENABLE_RSS, PNDIS_RECEIVE_SCALE_PARAMETERS_V2 structure pointer [Network Drivers Starting with Windows Vista], ntddndis/NDIS_RECEIVE_SCALE_PARAMETERS_V2, NDIS_RECEIVE_SCALE_PARAMETERS_V2, NDIS_RECEIVE_SCALE_PARAM_NUMBER_OF_ENTRIES_CHANGED, NDIS_RECEIVE_SCALE_PARAM_NUMBER_OF_QUEUES_CHANGED, _NDIS_RECEIVE_SCALE_PARAMETERS_V2, netvista.ndis_receive_scale_parameters_v2, ntddndis/PNDIS_RECEIVE_SCALE_PARAMETERS_V2, NDIS_RECEIVE_SCALE_PARAMETERS_V2 structure [Network Drivers Starting with Windows Vista], *PNDIS_RECEIVE_SCALE_PARAMETERS_V2, NDIS_RECEIVE_SCALE_PARAM_HASH_INFO_CHANGED, PNDIS_RECEIVE_SCALE_PARAMETERS_V2
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.80 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddndis.h
+apiname:
+-	NDIS_RECEIVE_SCALE_PARAMETERS_V2
+product: Windows
+targetos: Windows
+req.typenames: NDIS_RECEIVE_SCALE_PARAMETERS_V2, *PNDIS_RECEIVE_SCALE_PARAMETERS_V2
 ---
 
 # _NDIS_RECEIVE_SCALE_PARAMETERS_V2 structure

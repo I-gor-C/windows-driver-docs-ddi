@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisUnicodeStringToAnsiString
-title : NdisUnicodeStringToAnsiString macro
-author : windows-driver-content
-description : The NdisUnicodeStringToAnsiString function converts a given counted Unicode string into a counted ANSI string. The translation conforms to the current system locale information.
-old-location : netvista\ndisunicodestringtoansistring.htm
-old-project : netvista
-ms.assetid : 37ac55b8-093e-4bf4-9c66-05ab5fc7ebc9
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : ndis_string_ref_31235ece-f64c-4806-af32-e3ffffdb7904.xml, NdisUnicodeStringToAnsiString macro [Network Drivers Starting with Windows Vista], netvista.ndisunicodestringtoansistring, NdisUnicodeStringToAnsiString, ndis/NdisUnicodeStringToAnsiString
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : macro
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported for existing drivers in  NDIS 6.0 and later, but new drivers should use RtlUnicodeStringToAnsiString instead.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_Miscellaneous_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisUnicodeStringToAnsiString
+title: NdisUnicodeStringToAnsiString macro
+author: windows-driver-content
+description: The NdisUnicodeStringToAnsiString function converts a given counted Unicode string into a counted ANSI string. The translation conforms to the current system locale information.
+old-location: netvista\ndisunicodestringtoansistring.htm
+old-project: netvista
+ms.assetid: 37ac55b8-093e-4bf4-9c66-05ab5fc7ebc9
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: ndis_string_ref_31235ece-f64c-4806-af32-e3ffffdb7904.xml, NdisUnicodeStringToAnsiString macro [Network Drivers Starting with Windows Vista], netvista.ndisunicodestringtoansistring, NdisUnicodeStringToAnsiString, ndis/NdisUnicodeStringToAnsiString
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: macro
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported for existing drivers in  NDIS 6.0 and later, but new drivers should use RtlUnicodeStringToAnsiString instead.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_Miscellaneous_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisUnicodeStringToAnsiString
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

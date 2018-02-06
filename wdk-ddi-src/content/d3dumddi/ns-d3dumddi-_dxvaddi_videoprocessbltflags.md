@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._DXVADDI_VIDEOPROCESSBLTFLAGS
-title : "_DXVADDI_VIDEOPROCESSBLTFLAGS"
-author : windows-driver-content
-description : The DXVADDI_VIDEOPROCESSBLTFLAGS structure identifies changes in the current destination surface from the previous destination surface.
-old-location : display\dxvaddi_videoprocessbltflags.htm
-old-project : display
-ms.assetid : 790a18fa-5481-432a-921b-6310a0ab78d7
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3dumddi/DXVADDI_VIDEOPROCESSBLTFLAGS, DXVADDI_VIDEOPROCESSBLTFLAGS, DXVA2_Structs_8c40b10b-d3f4-420b-986a-455b20b01288.xml, _DXVADDI_VIDEOPROCESSBLTFLAGS, DXVADDI_VIDEOPROCESSBLTFLAGS structure [Display Devices], display.dxvaddi_videoprocessbltflags
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXVADDI_VIDEOPROCESSBLTFLAGS
+UID: NS:d3dumddi._DXVADDI_VIDEOPROCESSBLTFLAGS
+title: "_DXVADDI_VIDEOPROCESSBLTFLAGS"
+author: windows-driver-content
+description: The DXVADDI_VIDEOPROCESSBLTFLAGS structure identifies changes in the current destination surface from the previous destination surface.
+old-location: display\dxvaddi_videoprocessbltflags.htm
+old-project: display
+ms.assetid: 790a18fa-5481-432a-921b-6310a0ab78d7
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3dumddi/DXVADDI_VIDEOPROCESSBLTFLAGS, DXVADDI_VIDEOPROCESSBLTFLAGS, DXVA2_Structs_8c40b10b-d3f4-420b-986a-455b20b01288.xml, _DXVADDI_VIDEOPROCESSBLTFLAGS, DXVADDI_VIDEOPROCESSBLTFLAGS structure [Display Devices], display.dxvaddi_videoprocessbltflags
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	DXVADDI_VIDEOPROCESSBLTFLAGS
+product: Windows
+targetos: Windows
+req.typenames: DXVADDI_VIDEOPROCESSBLTFLAGS
 ---
 
 # _DXVADDI_VIDEOPROCESSBLTFLAGS structure

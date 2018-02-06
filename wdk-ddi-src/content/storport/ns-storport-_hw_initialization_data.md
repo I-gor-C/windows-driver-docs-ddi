@@ -1,42 +1,47 @@
 ---
-UID : NS:storport._HW_INITIALIZATION_DATA
-title : "_HW_INITIALIZATION_DATA"
-author : windows-driver-content
-description : The HW_INITIALIZATION_DATA (Storport) structure contains information particular to each miniport driver and the hardware that the miniport driver manages.
-old-location : storage\hw_initialization_data__storport_.htm
-old-project : storage
-ms.assetid : 54f460da-2dfb-4a9d-9b25-edb90f3bfdd5
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : STOR_MAP_ALL_BUFFERS, HW_INITIALIZATION_DATA, _HW_INITIALIZATION_DATA structure [Storage Devices], STOR_MAP_NON_READ_WRITE_BUFFERS, _HW_INITIALIZATION_DATA, storport/PHW_INITIALIZATION_DATA, *PHW_INITIALIZATION_DATA, STOR_FEATURE_FULL_PNP_DEVICE_CAPABILITIES, storport/HW_INITIALIZATION_DATA, STOR_FEATURE_DEVICE_NAME_NO_SUFFIX, STOR_FEATURE_SET_ADAPTER_INTERFACE_TYPE, HW_INITIALIZATION_DATA structure [Storage Devices], ADDRESS_TYPE_FLAG_BTL8, STOR_MAP_ALL_BUFFERS_INCLUDING_READ_WRITE, SRB_TYPE_FLAG_SCSI_REQUEST_BLOCK, STOR_FEATURE_DUMP_POINTERS, STOR_MAP_NO_BUFFERS, STOR_FEATURE_ATA_PASS_THROUGH, PHW_INITIALIZATION_DATA structure pointer [Storage Devices], PHW_INITIALIZATION_DATA, STOR_FEATURE_VIRTUAL_MINIPORT, storage.hw_initialization_data__storport_, SRB_TYPE_FLAG_STORAGE_REQUEST_BLOCK, structs-storport_c3d0ed59-9662-409d-acc3-6c2358837a01.xml, STOR_FEATURE_DEVICE_DESCRIPTOR_FROM_ATA_INFO_VPD, STOR_FEATURE_DUMP_RESUME_CAPABLE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PHW_INITIALIZATION_DATA, HW_INITIALIZATION_DATA"
-req.product : Windows 10 or later.
+UID: NS:storport._HW_INITIALIZATION_DATA
+title: "_HW_INITIALIZATION_DATA"
+author: windows-driver-content
+description: The HW_INITIALIZATION_DATA (Storport) structure contains information particular to each miniport driver and the hardware that the miniport driver manages.
+old-location: storage\hw_initialization_data__storport_.htm
+old-project: storage
+ms.assetid: 54f460da-2dfb-4a9d-9b25-edb90f3bfdd5
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: STOR_MAP_ALL_BUFFERS, HW_INITIALIZATION_DATA, _HW_INITIALIZATION_DATA structure [Storage Devices], STOR_MAP_NON_READ_WRITE_BUFFERS, _HW_INITIALIZATION_DATA, storport/PHW_INITIALIZATION_DATA, *PHW_INITIALIZATION_DATA, STOR_FEATURE_FULL_PNP_DEVICE_CAPABILITIES, storport/HW_INITIALIZATION_DATA, STOR_FEATURE_DEVICE_NAME_NO_SUFFIX, STOR_FEATURE_SET_ADAPTER_INTERFACE_TYPE, HW_INITIALIZATION_DATA structure [Storage Devices], ADDRESS_TYPE_FLAG_BTL8, STOR_MAP_ALL_BUFFERS_INCLUDING_READ_WRITE, SRB_TYPE_FLAG_SCSI_REQUEST_BLOCK, STOR_FEATURE_DUMP_POINTERS, STOR_MAP_NO_BUFFERS, STOR_FEATURE_ATA_PASS_THROUGH, PHW_INITIALIZATION_DATA structure pointer [Storage Devices], PHW_INITIALIZATION_DATA, STOR_FEATURE_VIRTUAL_MINIPORT, storage.hw_initialization_data__storport_, SRB_TYPE_FLAG_STORAGE_REQUEST_BLOCK, structs-storport_c3d0ed59-9662-409d-acc3-6c2358837a01.xml, STOR_FEATURE_DEVICE_DESCRIPTOR_FROM_ATA_INFO_VPD, STOR_FEATURE_DUMP_RESUME_CAPABLE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Storport.h
+apiname:
+-	HW_INITIALIZATION_DATA
+product: Windows
+targetos: Windows
+req.typenames: "*PHW_INITIALIZATION_DATA, HW_INITIALIZATION_DATA"
+req.product: Windows 10 or later.
 ---
 
 # _HW_INITIALIZATION_DATA structure

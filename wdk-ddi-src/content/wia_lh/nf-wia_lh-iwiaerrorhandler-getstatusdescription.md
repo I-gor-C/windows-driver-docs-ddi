@@ -1,42 +1,47 @@
 ---
-UID : NF:wia_lh.IWiaErrorHandler.GetStatusDescription
-title : IWiaErrorHandler::GetStatusDescription method
-author : windows-driver-content
-description : The system UI calls the GetStatusDescription method to provide the user with extra information about an error, if the user requests this information. This method is implemented by a driver's UI extension.
-old-location : image\iwiaerrorhandler_getstatusdescription.htm
-old-project : image
-ms.assetid : c3b5622d-9d51-4008-abb0-c8a60c4a6b16
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : IWiaErrorHandler, wia_lh/IWiaErrorHandler::GetStatusDescription, image.iwiaerrorhandler_getstatusdescription, IWiaErrorHandler::GetStatusDescription, GetStatusDescription method [Imaging Devices], IWiaErrorHandler interface, IWiaErrorHandler_4bd0cba6-d729-4942-b56a-588af88ef913.xml, GetStatusDescription, GetStatusDescription method [Imaging Devices], IWiaErrorHandler interface [Imaging Devices], GetStatusDescription method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wia_lh.h
-req.include-header : Wia.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wia_lh.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : BMP_IMAGE_INFO, *PBMP_IMAGE_INFO
-req.product : Windows 10 or later.
+UID: NF:wia_lh.IWiaErrorHandler.GetStatusDescription
+title: IWiaErrorHandler::GetStatusDescription method
+author: windows-driver-content
+description: The system UI calls the GetStatusDescription method to provide the user with extra information about an error, if the user requests this information. This method is implemented by a driver's UI extension.
+old-location: image\iwiaerrorhandler_getstatusdescription.htm
+old-project: image
+ms.assetid: c3b5622d-9d51-4008-abb0-c8a60c4a6b16
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: IWiaErrorHandler, wia_lh/IWiaErrorHandler::GetStatusDescription, image.iwiaerrorhandler_getstatusdescription, IWiaErrorHandler::GetStatusDescription, GetStatusDescription method [Imaging Devices], IWiaErrorHandler interface, IWiaErrorHandler_4bd0cba6-d729-4942-b56a-588af88ef913.xml, GetStatusDescription, GetStatusDescription method [Imaging Devices], IWiaErrorHandler interface [Imaging Devices], GetStatusDescription method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wia_lh.h
+req.include-header: Wia.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wia_lh.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	wia_lh.h
+apiname:
+-	IWiaErrorHandler.GetStatusDescription
+product: Windows
+targetos: Windows
+req.typenames: BMP_IMAGE_INFO, *PBMP_IMAGE_INFO
+req.product: Windows 10 or later.
 ---
 
 

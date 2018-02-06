@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.RtlRandomEx
-title : RtlRandomEx function
-author : windows-driver-content
-description : The RtlRandomEx routine returns a random number that was generated from a given seed value.
-old-location : ifsk\rtlrandomex.htm
-old-project : ifsk
-ms.assetid : 2a5c70da-69dc-431c-9ce9-908633045372
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ntifs/RtlRandomEx, RtlRandomEx, ifsk.rtlrandomex, rtlref_29425246-066b-4f0f-ba4b-419db1de119d.xml, RtlRandomEx routine [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h, Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Microsoft Windows XP and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "< DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.RtlRandomEx
+title: RtlRandomEx function
+author: windows-driver-content
+description: The RtlRandomEx routine returns a random number that was generated from a given seed value.
+old-location: ifsk\rtlrandomex.htm
+old-project: ifsk
+ms.assetid: 2a5c70da-69dc-431c-9ce9-908633045372
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ntifs/RtlRandomEx, RtlRandomEx, ifsk.rtlrandomex, rtlref_29425246-066b-4f0f-ba4b-419db1de119d.xml, RtlRandomEx routine [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h, Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Microsoft Windows XP and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "< DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	RtlRandomEx
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

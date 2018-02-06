@@ -1,42 +1,48 @@
 ---
-UID : NF:wdm.ClfsWriteRestartArea
-title : ClfsWriteRestartArea function
-author : windows-driver-content
-description : The ClfsWriteRestartArea routine atomically appends a new restart record to a CLFS stream, flushes the restart record to stable storage, and optionally updates the base LSN of the stream.
-old-location : kernel\clfswriterestartarea.htm
-old-project : kernel
-ms.assetid : e97006e1-5a18-4478-9cac-30eb70142fa7
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ClfsWriteRestartArea routine [Kernel-Mode Driver Architecture], Clfs_b2bfac14-eb9c-4323-af79-ab8bebf06f79.xml, ClfsWriteRestartArea, kernel.clfswriterestartarea, wdm/ClfsWriteRestartArea
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Clfs.lib
-req.dll : Clfs.sys
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ClfsWriteRestartArea
+title: ClfsWriteRestartArea function
+author: windows-driver-content
+description: The ClfsWriteRestartArea routine atomically appends a new restart record to a CLFS stream, flushes the restart record to stable storage, and optionally updates the base LSN of the stream.
+old-location: kernel\clfswriterestartarea.htm
+old-project: kernel
+ms.assetid: e97006e1-5a18-4478-9cac-30eb70142fa7
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ClfsWriteRestartArea routine [Kernel-Mode Driver Architecture], Clfs_b2bfac14-eb9c-4323-af79-ab8bebf06f79.xml, ClfsWriteRestartArea, kernel.clfswriterestartarea, wdm/ClfsWriteRestartArea
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Clfs.lib
+req.dll: Clfs.sys
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Clfs.sys
+-	Ext-MS-Win-fs-clfs-l1-1-0.dll
+apiname:
+-	ClfsWriteRestartArea
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

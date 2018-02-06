@@ -1,41 +1,46 @@
 ---
-UID : NS:pepfx._PEP_LOW_POWER_EPOCH
-title : "_PEP_LOW_POWER_EPOCH"
-author : windows-driver-content
-description : The PEP_LOW_POWER_EPOCH structure is used to provide data for a PEP_DPM_LOW_POWER_EPOCH notification (deprecated).
-old-location : kernel\pep_low_power_epoch.htm
-old-project : kernel
-ms.assetid : 730312DE-5F11-46C8-8298-55AA5756C995
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : "_PEP_LOW_POWER_EPOCH, pepfx/PEP_LOW_POWER_EPOCH, PPEP_LOW_POWER_EPOCH structure pointer [Kernel-Mode Driver Architecture], kernel.pep_low_power_epoch, *PPEP_LOW_POWER_EPOCH, PPEP_LOW_POWER_EPOCH, PEP_LOW_POWER_EPOCH structure [Kernel-Mode Driver Architecture], PEP_LOW_POWER_EPOCH, pepfx/PPEP_LOW_POWER_EPOCH"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : pepfx.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with Windows 10.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PEP_LOW_POWER_EPOCH, *PPEP_LOW_POWER_EPOCH
+UID: NS:pepfx._PEP_LOW_POWER_EPOCH
+title: "_PEP_LOW_POWER_EPOCH"
+author: windows-driver-content
+description: The PEP_LOW_POWER_EPOCH structure is used to provide data for a PEP_DPM_LOW_POWER_EPOCH notification (deprecated).
+old-location: kernel\pep_low_power_epoch.htm
+old-project: kernel
+ms.assetid: 730312DE-5F11-46C8-8298-55AA5756C995
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: "_PEP_LOW_POWER_EPOCH, pepfx/PEP_LOW_POWER_EPOCH, PPEP_LOW_POWER_EPOCH structure pointer [Kernel-Mode Driver Architecture], kernel.pep_low_power_epoch, *PPEP_LOW_POWER_EPOCH, PPEP_LOW_POWER_EPOCH, PEP_LOW_POWER_EPOCH structure [Kernel-Mode Driver Architecture], PEP_LOW_POWER_EPOCH, pepfx/PPEP_LOW_POWER_EPOCH"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: pepfx.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows 10.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	pepfx.h
+apiname:
+-	PEP_LOW_POWER_EPOCH
+product: Windows
+targetos: Windows
+req.typenames: PEP_LOW_POWER_EPOCH, *PPEP_LOW_POWER_EPOCH
 ---
 
 # _PEP_LOW_POWER_EPOCH structure

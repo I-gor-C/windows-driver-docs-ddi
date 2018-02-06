@@ -1,41 +1,46 @@
 ---
-UID : NS:hbaapi.HBA_wwn
-title : HBA_wwn
-author : windows-driver-content
-description : The HBA_wwn structure contains a 64 bit world-wide name (WWN) that uniquely identifies an HBA.
-old-location : storage\hba_wwn.htm
-old-project : storage
-ms.assetid : 84441fde-1d66-4f76-86b7-dccd792afd0f
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : "*PHBA_WWN, HBA_wwn, HBA_WWN structure [Storage Devices], HBA_WWN, hbaapi/PHBA_WWN, hbaapi/HBA_wwn, HBA_wwn structure [Storage Devices], structs-Fibre_89c3be90-1992-4d06-9a26-c3067dc69db8.xml, PHBA_WWN structure pointer [Storage Devices], storage.hba_wwn, PHBA_WWN"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : hbaapi.h
-req.include-header : Hbaapi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HBA_WWN, *PHBA_WWN
+UID: NS:hbaapi.HBA_wwn
+title: HBA_wwn
+author: windows-driver-content
+description: The HBA_wwn structure contains a 64 bit world-wide name (WWN) that uniquely identifies an HBA.
+old-location: storage\hba_wwn.htm
+old-project: storage
+ms.assetid: 84441fde-1d66-4f76-86b7-dccd792afd0f
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: "*PHBA_WWN, HBA_wwn, HBA_WWN structure [Storage Devices], HBA_WWN, hbaapi/PHBA_WWN, hbaapi/HBA_wwn, HBA_wwn structure [Storage Devices], structs-Fibre_89c3be90-1992-4d06-9a26-c3067dc69db8.xml, PHBA_WWN structure pointer [Storage Devices], storage.hba_wwn, PHBA_WWN"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: hbaapi.h
+req.include-header: Hbaapi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hbaapi.h
+apiname:
+-	HBA_WWN
+product: Windows
+targetos: Windows
+req.typenames: HBA_WWN, *PHBA_WWN
 ---
 
 # HBA_wwn structure

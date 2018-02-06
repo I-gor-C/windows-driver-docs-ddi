@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisIfFreeNetLuidIndex
-title : NdisIfFreeNetLuidIndex function
-author : windows-driver-content
-description : The NdisIfFreeNetLuidIndex function frees a network interface NET_LUID index that was previously allocated by a call to the NdisIfAllocateNetLuidIndex function.
-old-location : netvista\ndisiffreenetluidindex.htm
-old-project : netvista
-ms.assetid : eba881f8-e946-44a8-9624-37f63471fb65
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NdisIfFreeNetLuidIndex function [Network Drivers Starting with Windows Vista], net_if_functions_ref_040908da-c299-4265-9639-f2e65776f26b.xml, ndis/NdisIfFreeNetLuidIndex, netvista.ndisiffreenetluidindex, NdisIfFreeNetLuidIndex
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_Interfaces_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisIfFreeNetLuidIndex
+title: NdisIfFreeNetLuidIndex function
+author: windows-driver-content
+description: The NdisIfFreeNetLuidIndex function frees a network interface NET_LUID index that was previously allocated by a call to the NdisIfAllocateNetLuidIndex function.
+old-location: netvista\ndisiffreenetluidindex.htm
+old-project: netvista
+ms.assetid: eba881f8-e946-44a8-9624-37f63471fb65
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NdisIfFreeNetLuidIndex function [Network Drivers Starting with Windows Vista], net_if_functions_ref_040908da-c299-4265-9639-f2e65776f26b.xml, ndis/NdisIfFreeNetLuidIndex, netvista.ndisiffreenetluidindex, NdisIfFreeNetLuidIndex
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_Interfaces_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisIfFreeNetLuidIndex
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

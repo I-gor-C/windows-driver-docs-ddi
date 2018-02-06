@@ -1,42 +1,47 @@
 ---
-UID : NS:usbioctl._USB_PROTOCOLS
-title : "_USB_PROTOCOLS"
-author : windows-driver-content
-description : The USB_PROTOCOLS union is used to report the Universal Serial Bus (USB) signaling protocols that are supported by the port.
-old-location : buses\usb_protocols.htm
-old-project : usbref
-ms.assetid : F970A7FB-DF6F-414B-8B4B-C7E4C5C620B1
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : USB_PROTOCOLS union [Buses], PUSB_PROTOCOLS, usbioctl/PUSB_PROTOCOLS, PUSB_PROTOCOLS union pointer [Buses], *PUSB_PROTOCOLS, buses.usb_protocols, _USB_PROTOCOLS, usbioctl/USB_PROTOCOLS, USB_PROTOCOLS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : usbioctl.h
-req.include-header : Usbioctl.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : None supported
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : USB_PROTOCOLS, *PUSB_PROTOCOLS
-req.product : Windows 10 or later.
+UID: NS:usbioctl._USB_PROTOCOLS
+title: "_USB_PROTOCOLS"
+author: windows-driver-content
+description: The USB_PROTOCOLS union is used to report the Universal Serial Bus (USB) signaling protocols that are supported by the port.
+old-location: buses\usb_protocols.htm
+old-project: usbref
+ms.assetid: F970A7FB-DF6F-414B-8B4B-C7E4C5C620B1
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: USB_PROTOCOLS union [Buses], PUSB_PROTOCOLS, usbioctl/PUSB_PROTOCOLS, PUSB_PROTOCOLS union pointer [Buses], *PUSB_PROTOCOLS, buses.usb_protocols, _USB_PROTOCOLS, usbioctl/USB_PROTOCOLS, USB_PROTOCOLS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: usbioctl.h
+req.include-header: Usbioctl.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: None supported
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	usbioctl.h
+apiname:
+-	USB_PROTOCOLS
+product: Windows
+targetos: Windows
+req.typenames: USB_PROTOCOLS, *PUSB_PROTOCOLS
+req.product: Windows 10 or later.
 ---
 
 # _USB_PROTOCOLS structure

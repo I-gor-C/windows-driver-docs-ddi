@@ -1,41 +1,46 @@
 ---
-UID : NF:ntddk.RtlLookupElementGenericTable
-title : RtlLookupElementGenericTable function
-author : windows-driver-content
-description : The RtlLookupElementGenericTable routine searches a generic table for an element that matches the specified data.
-old-location : ifsk\rtllookupelementgenerictable.htm
-old-project : ifsk
-ms.assetid : 9182084b-ea11-48e4-acb5-06a8375d05bf
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : RtlLookupElementGenericTable routine [Installable File System Drivers], ifsk.rtllookupelementgenerictable, rtlref_609e7ba3-35a1-40e8-9e94-f16605e52155.xml, RtlLookupElementGenericTable, ntddk/RtlLookupElementGenericTable
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntddk.h
-req.include-header : Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "< DISPATCH_LEVEL (see Remarks section)"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.RtlLookupElementGenericTable
+title: RtlLookupElementGenericTable function
+author: windows-driver-content
+description: The RtlLookupElementGenericTable routine searches a generic table for an element that matches the specified data.
+old-location: ifsk\rtllookupelementgenerictable.htm
+old-project: ifsk
+ms.assetid: 9182084b-ea11-48e4-acb5-06a8375d05bf
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: RtlLookupElementGenericTable routine [Installable File System Drivers], ifsk.rtllookupelementgenerictable, rtlref_609e7ba3-35a1-40e8-9e94-f16605e52155.xml, RtlLookupElementGenericTable, ntddk/RtlLookupElementGenericTable
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntddk.h
+req.include-header: Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "< DISPATCH_LEVEL (see Remarks section)"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	RtlLookupElementGenericTable
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

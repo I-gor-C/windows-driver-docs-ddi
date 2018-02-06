@@ -1,41 +1,46 @@
 ---
-UID : NS:iscsimgt._MSiSCSI_InitiatorNodeFailureEvent
-title : "_MSiSCSI_InitiatorNodeFailureEvent"
-author : windows-driver-content
-description : The MSiSCSI_InitiatorNodeFailureEvent structure is used to report an event when a node failure occurs.
-old-location : storage\msiscsi_initiatornodefailureevent.htm
-old-project : storage
-ms.assetid : 0d761b64-d405-4c19-9fd8-e4bf371515a1
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : iscsimgt/MSiSCSI_InitiatorNodeFailureEvent, iscsimgt/PMSiSCSI_InitiatorNodeFailureEvent, MSiSCSI_InitiatorNodeFailureEvent, PMSiSCSI_InitiatorNodeFailureEvent structure pointer [Storage Devices], PMSiSCSI_InitiatorNodeFailureEvent, storage.msiscsi_initiatornodefailureevent, structs-iSCSI_0d1bb4bf-74a0-4d99-9bf8-1545faaff14d.xml, *PMSiSCSI_InitiatorNodeFailureEvent, _MSiSCSI_InitiatorNodeFailureEvent, MSiSCSI_InitiatorNodeFailureEvent structure [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : iscsimgt.h
-req.include-header : Iscsimgt.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : MSiSCSI_InitiatorNodeFailureEvent, *PMSiSCSI_InitiatorNodeFailureEvent
+UID: NS:iscsimgt._MSiSCSI_InitiatorNodeFailureEvent
+title: "_MSiSCSI_InitiatorNodeFailureEvent"
+author: windows-driver-content
+description: The MSiSCSI_InitiatorNodeFailureEvent structure is used to report an event when a node failure occurs.
+old-location: storage\msiscsi_initiatornodefailureevent.htm
+old-project: storage
+ms.assetid: 0d761b64-d405-4c19-9fd8-e4bf371515a1
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: iscsimgt/MSiSCSI_InitiatorNodeFailureEvent, iscsimgt/PMSiSCSI_InitiatorNodeFailureEvent, MSiSCSI_InitiatorNodeFailureEvent, PMSiSCSI_InitiatorNodeFailureEvent structure pointer [Storage Devices], PMSiSCSI_InitiatorNodeFailureEvent, storage.msiscsi_initiatornodefailureevent, structs-iSCSI_0d1bb4bf-74a0-4d99-9bf8-1545faaff14d.xml, *PMSiSCSI_InitiatorNodeFailureEvent, _MSiSCSI_InitiatorNodeFailureEvent, MSiSCSI_InitiatorNodeFailureEvent structure [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: iscsimgt.h
+req.include-header: Iscsimgt.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	iscsimgt.h
+apiname:
+-	MSiSCSI_InitiatorNodeFailureEvent
+product: Windows
+targetos: Windows
+req.typenames: MSiSCSI_InitiatorNodeFailureEvent, *PMSiSCSI_InitiatorNodeFailureEvent
 ---
 
 # _MSiSCSI_InitiatorNodeFailureEvent structure

@@ -1,42 +1,47 @@
 ---
-UID : NC:strmini.PHW_QUERY_CLOCK_ROUTINE
-title : PHW_QUERY_CLOCK_ROUTINE
-author : windows-driver-content
-description : Each stream may have a clock associated to it. The class driver queries the clock by calling the stream minidriver-supplied StrMiniClock function, provided in each stream's HW_STREAM_OBJECT.
-old-location : stream\strminiclock.htm
-old-project : stream
-ms.assetid : ea230363-e2e8-48fb-982b-025615753e83
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.strminiclock, StrMiniClock routine [Streaming Media Devices], StrMiniClock, PHW_QUERY_CLOCK_ROUTINE, PHW_QUERY_CLOCK_ROUTINE, strmini/StrMiniClock, strmini-routines_d53b0cf1-3c0c-435f-bc44-732f6418ebb8.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : strmini.h
-req.include-header : Strmini.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PZONE_DESCRIPTIOR, ZONE_DESCRIPTIOR"
-req.product : Windows 10 or later.
+UID: NC:strmini.PHW_QUERY_CLOCK_ROUTINE
+title: PHW_QUERY_CLOCK_ROUTINE
+author: windows-driver-content
+description: Each stream may have a clock associated to it. The class driver queries the clock by calling the stream minidriver-supplied StrMiniClock function, provided in each stream's HW_STREAM_OBJECT.
+old-location: stream\strminiclock.htm
+old-project: stream
+ms.assetid: ea230363-e2e8-48fb-982b-025615753e83
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.strminiclock, StrMiniClock routine [Streaming Media Devices], StrMiniClock, PHW_QUERY_CLOCK_ROUTINE, PHW_QUERY_CLOCK_ROUTINE, strmini/StrMiniClock, strmini-routines_d53b0cf1-3c0c-435f-bc44-732f6418ebb8.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: strmini.h
+req.include-header: Strmini.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	strmini.h
+apiname:
+-	StrMiniClock
+product: Windows
+targetos: Windows
+req.typenames: "*PZONE_DESCRIPTIOR, ZONE_DESCRIPTIOR"
+req.product: Windows 10 or later.
 ---
 
 

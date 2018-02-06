@@ -1,41 +1,48 @@
 ---
-UID : NF:d3dkmthk.D3DKMTOpenSyncObjectFromNtHandle2
-title : D3DKMTOpenSyncObjectFromNtHandle2 function
-author : windows-driver-content
-description : D3DKMTOpenSyncObjectFromNtHandle2 opens a monitored fence object from an NT handle previously created by D3DKMTShareObjects.
-old-location : display\d3dkmtopensyncobjectfromnthandle2.htm
-old-project : display
-ms.assetid : E3295F4F-AB51-4EBB-8B9F-E47BBA52AF47
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DKMTOpenSyncObjectFromNtHandle2, display.d3dkmtopensyncobjectfromnthandle2, d3dkmthk/D3DKMTOpenSyncObjectFromNtHandle2, D3DKMTOpenSyncObjectFromNtHandle2 function [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Universal
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : GDI32.lib
-req.dll : GDI32.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_DRIVERVERSION
+UID: NF:d3dkmthk.D3DKMTOpenSyncObjectFromNtHandle2
+title: D3DKMTOpenSyncObjectFromNtHandle2 function
+author: windows-driver-content
+description: D3DKMTOpenSyncObjectFromNtHandle2 opens a monitored fence object from an NT handle previously created by D3DKMTShareObjects.
+old-location: display\d3dkmtopensyncobjectfromnthandle2.htm
+old-project: display
+ms.assetid: E3295F4F-AB51-4EBB-8B9F-E47BBA52AF47
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DKMTOpenSyncObjectFromNtHandle2, display.d3dkmtopensyncobjectfromnthandle2, d3dkmthk/D3DKMTOpenSyncObjectFromNtHandle2, D3DKMTOpenSyncObjectFromNtHandle2 function [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Universal
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: GDI32.lib
+req.dll: GDI32.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	GDI32.dll
+-	API-MS-Win-DX-D3DKMT-L1-1-1.dll
+-	API-MS-Win-DX-D3DKMT-L1-1-2.dll
+apiname:
+-	D3DKMTOpenSyncObjectFromNtHandle2
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_DRIVERVERSION
 ---
 
 

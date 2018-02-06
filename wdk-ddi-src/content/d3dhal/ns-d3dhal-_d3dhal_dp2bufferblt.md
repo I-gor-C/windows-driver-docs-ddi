@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dhal._D3DHAL_DP2BUFFERBLT
-title : "_D3DHAL_DP2BUFFERBLT"
-author : windows-driver-content
-description : DirectX 8.0 and later versions only. D3DHAL_DP2BUFFERBLT is used for vertex or index buffer blts when D3dDrawPrimitives2 responds to the D3DDP2OP_BUFFERBLT command token.
-old-location : display\d3dhal_dp2bufferblt.htm
-old-project : display
-ms.assetid : 3c2cb5c2-7461-40fc-a6c7-e4a107b24f74
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : LPD3DHAL_DP2BUFFERBLT, d3dstrct_a8101d2a-8883-434e-8577-90e18bc3f2e0.xml, *LPD3DHAL_DP2BUFFERBLT, LPD3DHAL_DP2BUFFERBLT structure pointer [Display Devices], D3DHAL_DP2BUFFERBLT structure [Display Devices], _D3DHAL_DP2BUFFERBLT, d3dhal/LPD3DHAL_DP2BUFFERBLT, d3dhal/D3DHAL_DP2BUFFERBLT, display.d3dhal_dp2bufferblt, D3DHAL_DP2BUFFERBLT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dhal.h
-req.include-header : D3dhal.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DHAL_DP2BUFFERBLT
+UID: NS:d3dhal._D3DHAL_DP2BUFFERBLT
+title: "_D3DHAL_DP2BUFFERBLT"
+author: windows-driver-content
+description: DirectX 8.0 and later versions only. D3DHAL_DP2BUFFERBLT is used for vertex or index buffer blts when D3dDrawPrimitives2 responds to the D3DDP2OP_BUFFERBLT command token.
+old-location: display\d3dhal_dp2bufferblt.htm
+old-project: display
+ms.assetid: 3c2cb5c2-7461-40fc-a6c7-e4a107b24f74
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: LPD3DHAL_DP2BUFFERBLT, d3dstrct_a8101d2a-8883-434e-8577-90e18bc3f2e0.xml, *LPD3DHAL_DP2BUFFERBLT, LPD3DHAL_DP2BUFFERBLT structure pointer [Display Devices], D3DHAL_DP2BUFFERBLT structure [Display Devices], _D3DHAL_DP2BUFFERBLT, d3dhal/LPD3DHAL_DP2BUFFERBLT, d3dhal/D3DHAL_DP2BUFFERBLT, display.d3dhal_dp2bufferblt, D3DHAL_DP2BUFFERBLT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dhal.h
+req.include-header: D3dhal.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dhal.h
+apiname:
+-	D3DHAL_DP2BUFFERBLT
+product: Windows
+targetos: Windows
+req.typenames: D3DHAL_DP2BUFFERBLT
 ---
 
 # _D3DHAL_DP2BUFFERBLT structure

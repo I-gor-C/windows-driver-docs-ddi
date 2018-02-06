@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.KeTestSpinLock
-title : KeTestSpinLock function
-author : windows-driver-content
-description : The KeTestSpinLock routine tests for the availability of a spin lock.
-old-location : kernel\ketestspinlock.htm
-old-project : kernel
-ms.assetid : 5386349c-b4b8-43db-8f66-70dc7e71345e
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : k105_99f18fd9-0242-4939-86ab-016236f9adcb.xml, kernel.ketestspinlock, KeTestSpinLock routine [Kernel-Mode Driver Architecture], KeTestSpinLock, wdm/KeTestSpinLock
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Server 2003 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.KeTestSpinLock
+title: KeTestSpinLock function
+author: windows-driver-content
+description: The KeTestSpinLock routine tests for the availability of a spin lock.
+old-location: kernel\ketestspinlock.htm
+old-project: kernel
+ms.assetid: 5386349c-b4b8-43db-8f66-70dc7e71345e
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: k105_99f18fd9-0242-4939-86ab-016236f9adcb.xml, kernel.ketestspinlock, KeTestSpinLock routine [Kernel-Mode Driver Architecture], KeTestSpinLock, wdm/KeTestSpinLock
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Server 2003 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	KeTestSpinLock
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

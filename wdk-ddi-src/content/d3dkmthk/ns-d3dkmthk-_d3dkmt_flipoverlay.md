@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmthk._D3DKMT_FLIPOVERLAY
-title : "_D3DKMT_FLIPOVERLAY"
-author : windows-driver-content
-description : The D3DKMT_FLIPOVERLAY structure describes a new allocation to display for the overlay.
-old-location : display\d3dkmt_flipoverlay.htm
-old-project : display
-ms.assetid : 7e224009-dccb-41e5-99e8-01f1479aa79f
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DKMT_FLIPOVERLAY, d3dkmthk/D3DKMT_FLIPOVERLAY, D3DKMT_FLIPOVERLAY structure [Display Devices], _D3DKMT_FLIPOVERLAY, OpenGL_Structs_a7694ad8-b12e-41ad-b7e3-159d26fe2f41.xml, display.d3dkmt_flipoverlay
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_FLIPOVERLAY
+UID: NS:d3dkmthk._D3DKMT_FLIPOVERLAY
+title: "_D3DKMT_FLIPOVERLAY"
+author: windows-driver-content
+description: The D3DKMT_FLIPOVERLAY structure describes a new allocation to display for the overlay.
+old-location: display\d3dkmt_flipoverlay.htm
+old-project: display
+ms.assetid: 7e224009-dccb-41e5-99e8-01f1479aa79f
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DKMT_FLIPOVERLAY, d3dkmthk/D3DKMT_FLIPOVERLAY, D3DKMT_FLIPOVERLAY structure [Display Devices], _D3DKMT_FLIPOVERLAY, OpenGL_Structs_a7694ad8-b12e-41ad-b7e3-159d26fe2f41.xml, display.d3dkmt_flipoverlay
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmthk.h
+apiname:
+-	D3DKMT_FLIPOVERLAY
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_FLIPOVERLAY
 ---
 
 # _D3DKMT_FLIPOVERLAY structure

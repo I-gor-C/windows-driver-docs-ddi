@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.KeQueryInterruptTime
-title : KeQueryInterruptTime function
-author : windows-driver-content
-description : The KeQueryInterruptTime routine returns the current value of the system interrupt time count, with accuracy to within system clock tick.
-old-location : kernel\kequeryinterrupttime.htm
-old-project : kernel
-ms.assetid : 88c87b11-b34f-43b3-b08e-940abaa23a27
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.kequeryinterrupttime, k105_a87c40d1-b9be-42f1-ada4-6e0fb3d33220.xml, KeQueryInterruptTime, KeQueryInterruptTime routine [Kernel-Mode Driver Architecture], wdm/KeQueryInterruptTime
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.KeQueryInterruptTime
+title: KeQueryInterruptTime function
+author: windows-driver-content
+description: The KeQueryInterruptTime routine returns the current value of the system interrupt time count, with accuracy to within system clock tick.
+old-location: kernel\kequeryinterrupttime.htm
+old-project: kernel
+ms.assetid: 88c87b11-b34f-43b3-b08e-940abaa23a27
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.kequeryinterrupttime, k105_a87c40d1-b9be-42f1-ada4-6e0fb3d33220.xml, KeQueryInterruptTime, KeQueryInterruptTime routine [Kernel-Mode Driver Architecture], wdm/KeQueryInterruptTime
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	KeQueryInterruptTime
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

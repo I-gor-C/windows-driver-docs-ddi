@@ -1,42 +1,47 @@
 ---
-UID : NS:windot11._DOT11_STOP_AP_PARAMETERS
-title : "_DOT11_STOP_AP_PARAMETERS"
-author : windows-driver-content
-description : Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
-old-location : netvista\dot11_stop_ap_parameters.htm
-old-project : netvista
-ms.assetid : a9dfb490-425a-4011-a008-ab1597f53b85
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : PDOT11_STOP_AP_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], _DOT11_STOP_AP_PARAMETERS, windot11/PDOT11_STOP_AP_PARAMETERS, DOT11_STOP_AP_PARAMETERS, PDOT11_STOP_AP_PARAMETERS, *PDOT11_STOP_AP_PARAMETERS, windot11/DOT11_STOP_AP_PARAMETERS, Native_802.11_data_types_1c8e69b9-852b-4ad6-87a4-ae13b37f7523.xml, netvista.dot11_stop_ap_parameters, DOT11_STOP_AP_PARAMETERS structure [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : windot11.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7 and later versions of the Windows operating   system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT11_STOP_AP_PARAMETERS, *PDOT11_STOP_AP_PARAMETERS
-req.product : Windows 10 or later.
+UID: NS:windot11._DOT11_STOP_AP_PARAMETERS
+title: "_DOT11_STOP_AP_PARAMETERS"
+author: windows-driver-content
+description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+old-location: netvista\dot11_stop_ap_parameters.htm
+old-project: netvista
+ms.assetid: a9dfb490-425a-4011-a008-ab1597f53b85
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: PDOT11_STOP_AP_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], _DOT11_STOP_AP_PARAMETERS, windot11/PDOT11_STOP_AP_PARAMETERS, DOT11_STOP_AP_PARAMETERS, PDOT11_STOP_AP_PARAMETERS, *PDOT11_STOP_AP_PARAMETERS, windot11/DOT11_STOP_AP_PARAMETERS, Native_802.11_data_types_1c8e69b9-852b-4ad6-87a4-ae13b37f7523.xml, netvista.dot11_stop_ap_parameters, DOT11_STOP_AP_PARAMETERS structure [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: windot11.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7 and later versions of the Windows operating   system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	windot11.h
+apiname:
+-	DOT11_STOP_AP_PARAMETERS
+product: Windows
+targetos: Windows
+req.typenames: DOT11_STOP_AP_PARAMETERS, *PDOT11_STOP_AP_PARAMETERS
+req.product: Windows 10 or later.
 ---
 
 # _DOT11_STOP_AP_PARAMETERS structure

@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.IoCsqRemoveNextIrp
-title : IoCsqRemoveNextIrp function
-author : windows-driver-content
-description : The IoCsqRemoveNextIrp routine removes the next matching IRP in the queue.
-old-location : kernel\iocsqremovenextirp.htm
-old-project : kernel
-ms.assetid : db92bbc1-7257-4e84-af69-ce09c1fd998e
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.iocsqremovenextirp, k104_da0b9a4a-daa7-4085-ab2a-77b81856820f.xml, wdm/IoCsqRemoveNextIrp, IoCsqRemoveNextIrp routine [Kernel-Mode Driver Architecture], IoCsqRemoveNextIrp
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows XP and later versions of Windows. Drivers that must also work on Windows 2000 and Windows 98/Me can instead link to Csq.lib to use the routine.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= DISPATCH_LEVEL (see Remarks section)"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.IoCsqRemoveNextIrp
+title: IoCsqRemoveNextIrp function
+author: windows-driver-content
+description: The IoCsqRemoveNextIrp routine removes the next matching IRP in the queue.
+old-location: kernel\iocsqremovenextirp.htm
+old-project: kernel
+ms.assetid: db92bbc1-7257-4e84-af69-ce09c1fd998e
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.iocsqremovenextirp, k104_da0b9a4a-daa7-4085-ab2a-77b81856820f.xml, wdm/IoCsqRemoveNextIrp, IoCsqRemoveNextIrp routine [Kernel-Mode Driver Architecture], IoCsqRemoveNextIrp
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows XP and later versions of Windows. Drivers that must also work on Windows 2000 and Windows 98/Me can instead link to Csq.lib to use the routine.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= DISPATCH_LEVEL (see Remarks section)"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoCsqRemoveNextIrp
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

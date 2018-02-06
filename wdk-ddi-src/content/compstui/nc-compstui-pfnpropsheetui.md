@@ -1,41 +1,46 @@
 ---
-UID : NC:compstui.PFNPROPSHEETUI
-title : PFNPROPSHEETUI
-author : windows-driver-content
-description : The PFNPROPSHEETUI function type is used by CPSUI applications (including printer interface DLLs) for defining page creation callbacks, which specify property sheet pages for creation.
-old-location : print\pfnpropsheetui.htm
-old-project : print
-ms.assetid : b78d0dd7-1fe9-4b7e-8f51-4b5dc5fa2571
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : print.pfnpropsheetui, PFNPROPSHEETUI callback function [Print Devices], PFNPROPSHEETUI, compstui/PFNPROPSHEETUI, cpsuifnc_a30dfbce-634a-4eb9-b86c-fdd14d8333fd.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : compstui.h
-req.include-header : Compstui.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPOWERSOURCEUPDATEEX, POWERSOURCEUPDATEEX"
+UID: NC:compstui.PFNPROPSHEETUI
+title: PFNPROPSHEETUI
+author: windows-driver-content
+description: The PFNPROPSHEETUI function type is used by CPSUI applications (including printer interface DLLs) for defining page creation callbacks, which specify property sheet pages for creation.
+old-location: print\pfnpropsheetui.htm
+old-project: print
+ms.assetid: b78d0dd7-1fe9-4b7e-8f51-4b5dc5fa2571
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: print.pfnpropsheetui, PFNPROPSHEETUI callback function [Print Devices], PFNPROPSHEETUI, compstui/PFNPROPSHEETUI, cpsuifnc_a30dfbce-634a-4eb9-b86c-fdd14d8333fd.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: compstui.h
+req.include-header: Compstui.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	compstui.h
+apiname:
+-	PFNPROPSHEETUI
+product: Windows
+targetos: Windows
+req.typenames: "*PPOWERSOURCEUPDATEEX, POWERSOURCEUPDATEEX"
 ---
 
 

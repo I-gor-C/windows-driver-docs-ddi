@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltCbdqInitialize
-title : FltCbdqInitialize function
-author : windows-driver-content
-description : FltCbdqInitialize initializes a minifilter driver's callback data queue dispatch table.
-old-location : ifsk\fltcbdqinitialize.htm
-old-project : ifsk
-ms.assetid : a3e089bf-6037-4d85-92ce-db9c865bdc02
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : fltkernel/FltCbdqInitialize, FltApiRef_a_to_d_e365fdac-7834-4388-b8ba-65593b045d19.xml, ifsk.fltcbdqinitialize, FltCbdqInitialize, FltCbdqInitialize function [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltCbdqInitialize
+title: FltCbdqInitialize function
+author: windows-driver-content
+description: FltCbdqInitialize initializes a minifilter driver's callback data queue dispatch table.
+old-location: ifsk\fltcbdqinitialize.htm
+old-project: ifsk
+ms.assetid: a3e089bf-6037-4d85-92ce-db9c865bdc02
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: fltkernel/FltCbdqInitialize, FltApiRef_a_to_d_e365fdac-7834-4388-b8ba-65593b045d19.xml, ifsk.fltcbdqinitialize, FltCbdqInitialize, FltCbdqInitialize function [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	fltkernel.h
+apiname:
+-	FltCbdqInitialize
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

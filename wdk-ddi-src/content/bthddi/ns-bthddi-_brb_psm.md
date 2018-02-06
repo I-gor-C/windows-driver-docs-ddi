@@ -1,41 +1,46 @@
 ---
-UID : NS:bthddi._BRB_PSM
-title : "_BRB_PSM"
-author : windows-driver-content
-description : The _BRB_PSM structure describes a Protocol/Service Multiplexer (PSM) to register or unregister.
-old-location : bltooth\_brb_psm.htm
-old-project : bltooth
-ms.assetid : 893edad2-8419-4c93-bf0b-2cca8ca5a2f6
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : "_BRB_PSM structure [Bluetooth Devices], _BRB_PSM, bltooth._brb_psm, bth_structs_f40af07e-a5ad-4654-9ff6-4d162a46ea58.xml, bthddi/_BRB_PSM"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : bthddi.h
-req.include-header : Bthddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Versions:\_Supported in Windows Vista, and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback   function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access   paged memory)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NS:bthddi._BRB_PSM
+title: "_BRB_PSM"
+author: windows-driver-content
+description: The _BRB_PSM structure describes a Protocol/Service Multiplexer (PSM) to register or unregister.
+old-location: bltooth\_brb_psm.htm
+old-project: bltooth
+ms.assetid: 893edad2-8419-4c93-bf0b-2cca8ca5a2f6
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: "_BRB_PSM structure [Bluetooth Devices], _BRB_PSM, bltooth._brb_psm, bth_structs_f40af07e-a5ad-4654-9ff6-4d162a46ea58.xml, bthddi/_BRB_PSM"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: bthddi.h
+req.include-header: Bthddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Versions:\_Supported in Windows Vista, and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback   function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access   paged memory)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	bthddi.h
+apiname:
+-	_BRB_PSM
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 # _BRB_PSM structure

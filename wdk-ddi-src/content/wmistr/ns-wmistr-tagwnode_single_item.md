@@ -1,42 +1,47 @@
 ---
-UID : NS:wmistr.tagWNODE_SINGLE_ITEM
-title : tagWNODE_SINGLE_ITEM
-author : windows-driver-content
-description : The WNODE_SINGLE_ITEM structure contains the value of a single data item in an instance of a data block.
-old-location : kernel\wnode_single_item.htm
-old-project : kernel
-ms.assetid : 65b64678-09dc-4bc2-8362-d15eba5a828a
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.wnode_single_item, WNODE_SINGLE_ITEM structure [Kernel-Mode Driver Architecture], wmistr/WNODE_SINGLE_ITEM, WNODE_SINGLE_ITEM, *PWNODE_SINGLE_ITEM, tagWNODE_SINGLE_ITEM, kstruct_d_49c197d8-c13f-4ca7-b82f-e56282eac847.xml, PWNODE_SINGLE_ITEM, PWNODE_SINGLE_ITEM structure pointer [Kernel-Mode Driver Architecture], wmistr/PWNODE_SINGLE_ITEM
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wmistr.h
-req.include-header : Wmistr.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWNODE_SINGLE_ITEM, WNODE_SINGLE_ITEM"
-req.product : Windows 10 or later.
+UID: NS:wmistr.tagWNODE_SINGLE_ITEM
+title: tagWNODE_SINGLE_ITEM
+author: windows-driver-content
+description: The WNODE_SINGLE_ITEM structure contains the value of a single data item in an instance of a data block.
+old-location: kernel\wnode_single_item.htm
+old-project: kernel
+ms.assetid: 65b64678-09dc-4bc2-8362-d15eba5a828a
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.wnode_single_item, WNODE_SINGLE_ITEM structure [Kernel-Mode Driver Architecture], wmistr/WNODE_SINGLE_ITEM, WNODE_SINGLE_ITEM, *PWNODE_SINGLE_ITEM, tagWNODE_SINGLE_ITEM, kstruct_d_49c197d8-c13f-4ca7-b82f-e56282eac847.xml, PWNODE_SINGLE_ITEM, PWNODE_SINGLE_ITEM structure pointer [Kernel-Mode Driver Architecture], wmistr/PWNODE_SINGLE_ITEM
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wmistr.h
+req.include-header: Wmistr.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wmistr.h
+apiname:
+-	WNODE_SINGLE_ITEM
+product: Windows
+targetos: Windows
+req.typenames: "*PWNODE_SINGLE_ITEM, WNODE_SINGLE_ITEM"
+req.product: Windows 10 or later.
 ---
 
 # tagWNODE_SINGLE_ITEM structure

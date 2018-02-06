@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGK_GDIARG_CLEARTYPEBLEND
-title : "_DXGK_GDIARG_CLEARTYPEBLEND"
-author : windows-driver-content
-description : The DXGK_GDIARG_CLEARTYPEBLEND structure describes the characteristics of a GDI hardware-accelerated ClearType and antialiased text pixel blending operation.
-old-location : display\dxgk_gdiarg_cleartypeblend.htm
-old-project : display
-ms.assetid : 1e67bb33-c2e5-4f3c-9ea6-feeb4a1fe645
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DXGK_GDIARG_CLEARTYPEBLEND, _DXGK_GDIARG_CLEARTYPEBLEND, DmStructs_b59789df-1494-45ea-b89a-4403e6c82dfd.xml, display.dxgk_gdiarg_cleartypeblend, d3dkmddi/DXGK_GDIARG_CLEARTYPEBLEND, DXGK_GDIARG_CLEARTYPEBLEND structure [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7 and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_GDIARG_CLEARTYPEBLEND
+UID: NS:d3dkmddi._DXGK_GDIARG_CLEARTYPEBLEND
+title: "_DXGK_GDIARG_CLEARTYPEBLEND"
+author: windows-driver-content
+description: The DXGK_GDIARG_CLEARTYPEBLEND structure describes the characteristics of a GDI hardware-accelerated ClearType and antialiased text pixel blending operation.
+old-location: display\dxgk_gdiarg_cleartypeblend.htm
+old-project: display
+ms.assetid: 1e67bb33-c2e5-4f3c-9ea6-feeb4a1fe645
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DXGK_GDIARG_CLEARTYPEBLEND, _DXGK_GDIARG_CLEARTYPEBLEND, DmStructs_b59789df-1494-45ea-b89a-4403e6c82dfd.xml, display.dxgk_gdiarg_cleartypeblend, d3dkmddi/DXGK_GDIARG_CLEARTYPEBLEND, DXGK_GDIARG_CLEARTYPEBLEND structure [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7 and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DXGK_GDIARG_CLEARTYPEBLEND
+product: Windows
+targetos: Windows
+req.typenames: DXGK_GDIARG_CLEARTYPEBLEND
 ---
 
 # _DXGK_GDIARG_CLEARTYPEBLEND structure

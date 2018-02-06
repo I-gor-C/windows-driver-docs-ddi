@@ -1,42 +1,47 @@
 ---
-UID : NF:wdfrequest.WdfRequestGetRequestorProcessId
-title : WdfRequestGetRequestorProcessId function
-author : windows-driver-content
-description : The WdfRequestGetRequestorProcessId method retrieves the identifier of the process that sent an I/O request.
-old-location : wdf\wdfrequestgetrequestorprocessid.htm
-old-project : wdf
-ms.assetid : F2CE35C8-F3BA-49E3-AE27-2FC5BFEC2D58
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.wdfrequestgetrequestorprocessid, WdfRequestGetRequestorProcessId method, WdfRequestGetRequestorProcessId, wdfrequest/WdfRequestGetRequestorProcessId
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfrequest.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.21
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (KMDF); WUDFx02000.lib
-req.dll : WUDFx02000.dll; TBD
-req.irql : DISPATCH_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_REQUEST_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfrequest.WdfRequestGetRequestorProcessId
+title: WdfRequestGetRequestorProcessId function
+author: windows-driver-content
+description: The WdfRequestGetRequestorProcessId method retrieves the identifier of the process that sent an I/O request.
+old-location: wdf\wdfrequestgetrequestorprocessid.htm
+old-project: wdf
+ms.assetid: F2CE35C8-F3BA-49E3-AE27-2FC5BFEC2D58
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.wdfrequestgetrequestorprocessid, WdfRequestGetRequestorProcessId method, WdfRequestGetRequestorProcessId, wdfrequest/WdfRequestGetRequestorProcessId
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfrequest.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.21
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.lib
+req.dll: WUDFx02000.dll; TBD
+req.irql: DISPATCH_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	WUDFx02000.dll
+apiname:
+-	WdfRequestGetRequestorProcessId
+product: Windows
+targetos: Windows
+req.typenames: WDF_REQUEST_TYPE
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dhal._DD_DXVERSION
-title : "_DD_DXVERSION"
-author : windows-driver-content
-description : DirectX 8.0 and later versions only. DD_DXVERSION describes the current DirectX runtime version.
-old-location : display\dd_dxversion.htm
-old-project : display
-ms.assetid : 72c22f76-c867-4924-b066-2ae4b25bfc43
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3dhal/DD_DXVERSION, d3dstrct_8955afcc-5fa5-493b-b291-69cd3b61ed8b.xml, DD_DXVERSION, DD_DXVERSION structure [Display Devices], display.dd_dxversion, _DD_DXVERSION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dhal.h
-req.include-header : D3dhal.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DD_DXVERSION
+UID: NS:d3dhal._DD_DXVERSION
+title: "_DD_DXVERSION"
+author: windows-driver-content
+description: DirectX 8.0 and later versions only. DD_DXVERSION describes the current DirectX runtime version.
+old-location: display\dd_dxversion.htm
+old-project: display
+ms.assetid: 72c22f76-c867-4924-b066-2ae4b25bfc43
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3dhal/DD_DXVERSION, d3dstrct_8955afcc-5fa5-493b-b291-69cd3b61ed8b.xml, DD_DXVERSION, DD_DXVERSION structure [Display Devices], display.dd_dxversion, _DD_DXVERSION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dhal.h
+req.include-header: D3dhal.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dhal.h
+apiname:
+-	DD_DXVERSION
+product: Windows
+targetos: Windows
+req.typenames: DD_DXVERSION
 ---
 
 # _DD_DXVERSION structure

@@ -1,42 +1,47 @@
 ---
-UID : NF:printoem.OEMBitBlt
-title : OEMBitBlt function
-author : windows-driver-content
-description : The OEMBitBlt function provides general bit-block transfer capabilities between device-managed surfaces, between GDI-managed standard-format bitmaps, or between a device-managed surface and a GDI-managed standard-format bitmap.
-old-location : print\oembitblt.htm
-old-project : print
-ms.assetid : d47e1bdb-2c91-4f73-b742-5312d989781a
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : printoem/OEMBitBlt, print_unidrv-pscript_rendering_972c744c-971c-423f-a4fe-92b87cef8094.xml, OEMBitBlt, OEMBitBlt function [Print Devices], print.oembitblt
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : printoem.h
-req.include-header : Printoem.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STDVARIABLEINDEX
-req.product : Windows 10 or later.
+UID: NF:printoem.OEMBitBlt
+title: OEMBitBlt function
+author: windows-driver-content
+description: The OEMBitBlt function provides general bit-block transfer capabilities between device-managed surfaces, between GDI-managed standard-format bitmaps, or between a device-managed surface and a GDI-managed standard-format bitmap.
+old-location: print\oembitblt.htm
+old-project: print
+ms.assetid: d47e1bdb-2c91-4f73-b742-5312d989781a
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: printoem/OEMBitBlt, print_unidrv-pscript_rendering_972c744c-971c-423f-a4fe-92b87cef8094.xml, OEMBitBlt, OEMBitBlt function [Print Devices], print.oembitblt
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: printoem.h
+req.include-header: Printoem.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	printoem.h
+apiname:
+-	OEMBitBlt
+product: Windows
+targetos: Windows
+req.typenames: STDVARIABLEINDEX
+req.product: Windows 10 or later.
 ---
 
 

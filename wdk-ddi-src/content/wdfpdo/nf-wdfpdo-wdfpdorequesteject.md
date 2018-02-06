@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfpdo.WdfPdoRequestEject
-title : WdfPdoRequestEject function
-author : windows-driver-content
-description : The WdfPdoRequestEject method informs the framework that a specified device is about to be ejected from its docking station.
-old-location : wdf\wdfpdorequesteject.htm
-old-project : wdf
-ms.assetid : 40cd83c0-701a-436f-a3c3-b0ab14848a92
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : PFN_WDFPDOREQUESTEJECT, wdf.wdfpdorequesteject, wdfpdo/WdfPdoRequestEject, kmdf.wdfpdorequesteject, WdfPdoRequestEject, WdfPdoRequestEject method, DFDeviceObjectFdoPdoRef_f57ccd07-8cb3-4972-bddb-aa704d9422b0.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfpdo.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDF_OBJECT_CONTEXT_TYPE_INFO, WDF_OBJECT_CONTEXT_TYPE_INFO"
-req.product : Windows 10 or later.
+UID: NF:wdfpdo.WdfPdoRequestEject
+title: WdfPdoRequestEject function
+author: windows-driver-content
+description: The WdfPdoRequestEject method informs the framework that a specified device is about to be ejected from its docking station.
+old-location: wdf\wdfpdorequesteject.htm
+old-project: wdf
+ms.assetid: 40cd83c0-701a-436f-a3c3-b0ab14848a92
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: PFN_WDFPDOREQUESTEJECT, wdf.wdfpdorequesteject, wdfpdo/WdfPdoRequestEject, kmdf.wdfpdorequesteject, WdfPdoRequestEject, WdfPdoRequestEject method, DFDeviceObjectFdoPdoRef_f57ccd07-8cb3-4972-bddb-aa704d9422b0.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfpdo.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfPdoRequestEject
+product: Windows
+targetos: Windows
+req.typenames: "*PWDF_OBJECT_CONTEXT_TYPE_INFO, WDF_OBJECT_CONTEXT_TYPE_INFO"
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,47 @@
 ---
-UID : NF:fltkernel.FltCompletePendedPreOperation
-title : FltCompletePendedPreOperation function
-author : windows-driver-content
-description : FltCompletePendedPreOperation resumes processing for an I/O operation that was pended in a minifilter driver's preoperation callback (PFLT_PRE_OPERATION_CALLBACK) routine.
-old-location : ifsk\fltcompletependedpreoperation.htm
-old-project : ifsk
-ms.assetid : bdd9f304-b26e-401e-81c7-da7d1e4f5635
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltCompletePendedPreOperation, FLT_PREOP_SUCCESS_NO_CALLBACK, FltCompletePendedPreOperation routine [Installable File System Drivers], ifsk.fltcompletependedpreoperation, fltkernel/FltCompletePendedPreOperation, FltApiRef_a_to_d_170adc13-ea3d-4346-99b2-85d5c1c464b8.xml, FLT_PREOP_SUCCESS_WITH_CALLBACK, FLT_PREOP_COMPLETE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : 
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltCompletePendedPreOperation
+title: FltCompletePendedPreOperation function
+author: windows-driver-content
+description: FltCompletePendedPreOperation resumes processing for an I/O operation that was pended in a minifilter driver's preoperation callback (PFLT_PRE_OPERATION_CALLBACK) routine.
+old-location: ifsk\fltcompletependedpreoperation.htm
+old-project: ifsk
+ms.assetid: bdd9f304-b26e-401e-81c7-da7d1e4f5635
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltCompletePendedPreOperation, FLT_PREOP_SUCCESS_NO_CALLBACK, FltCompletePendedPreOperation routine [Installable File System Drivers], ifsk.fltcompletependedpreoperation, fltkernel/FltCompletePendedPreOperation, FltApiRef_a_to_d_170adc13-ea3d-4346-99b2-85d5c1c464b8.xml, FLT_PREOP_SUCCESS_WITH_CALLBACK, FLT_PREOP_COMPLETE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: 
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	FltMgr.lib
+-	FltMgr.dll
+apiname:
+-	FltCompletePendedPreOperation
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

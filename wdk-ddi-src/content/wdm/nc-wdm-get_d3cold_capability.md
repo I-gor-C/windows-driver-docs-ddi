@@ -1,42 +1,47 @@
 ---
-UID : NC:wdm.GET_D3COLD_CAPABILITY
-title : GET_D3COLD_CAPABILITY
-author : windows-driver-content
-description : The GetBusDriverD3ColdSupport routine enables the driver for a device to query whether the enumerating bus driver supports the D3cold device power state.
-old-location : kernel\getbusdriverd3coldsupport.htm
-old-project : kernel
-ms.assetid : FE756171-327B-40E7-92A4-9159C509FD5E
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.getbusdriverd3coldsupport, GetBusDriverD3ColdSupport routine [Kernel-Mode Driver Architecture], GetBusDriverD3ColdSupport, GET_D3COLD_CAPABILITY, GET_D3COLD_CAPABILITY, wdm/GetBusDriverD3ColdSupport
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdm.h
-req.include-header : Wdm.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
-req.product : Windows 10 or later.
+UID: NC:wdm.GET_D3COLD_CAPABILITY
+title: GET_D3COLD_CAPABILITY
+author: windows-driver-content
+description: The GetBusDriverD3ColdSupport routine enables the driver for a device to query whether the enumerating bus driver supports the D3cold device power state.
+old-location: kernel\getbusdriverd3coldsupport.htm
+old-project: kernel
+ms.assetid: FE756171-327B-40E7-92A4-9159C509FD5E
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.getbusdriverd3coldsupport, GetBusDriverD3ColdSupport routine [Kernel-Mode Driver Architecture], GetBusDriverD3ColdSupport, GET_D3COLD_CAPABILITY, GET_D3COLD_CAPABILITY, wdm/GetBusDriverD3ColdSupport
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdm.h
+req.include-header: Wdm.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Wdm.h
+apiname:
+-	GetBusDriverD3ColdSupport
+product: Windows
+targetos: Windows
+req.typenames: WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+req.product: Windows 10 or later.
 ---
 
 

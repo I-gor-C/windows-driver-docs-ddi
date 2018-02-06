@@ -1,41 +1,46 @@
 ---
-UID : NC:ndkpi.NDK_FN_SRQ_RECEIVE
-title : NDK_FN_SRQ_RECEIVE
-author : windows-driver-content
-description : The NdkSrqReceive (NDK_FN_SRQ_RECEIVE) function posts a receive request on an NDK shared receive queue (SRQ).
-old-location : netvista\ndk_fn_srq_receive.htm
-old-project : netvista
-ms.assetid : 1D615DEA-5599-4A3D-AEE7-BDBFE9D40C47
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.ndk_fn_srq_receive, NdkSrqReceive callback function [Network Drivers Starting with Windows Vista], NdkSrqReceive, NDK_FN_SRQ_RECEIVE, NDK_FN_SRQ_RECEIVE, ndkpi/NdkSrqReceive
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ndkpi.h
-req.include-header : Ndkpi.h
-req.target-type : Windows
-req.target-min-winverclnt : None supported,Supported in NDIS 6.30 and later.
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_WWAN_VISIBLE_PROVIDERS, *PNDIS_WWAN_VISIBLE_PROVIDERS
+UID: NC:ndkpi.NDK_FN_SRQ_RECEIVE
+title: NDK_FN_SRQ_RECEIVE
+author: windows-driver-content
+description: The NdkSrqReceive (NDK_FN_SRQ_RECEIVE) function posts a receive request on an NDK shared receive queue (SRQ).
+old-location: netvista\ndk_fn_srq_receive.htm
+old-project: netvista
+ms.assetid: 1D615DEA-5599-4A3D-AEE7-BDBFE9D40C47
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.ndk_fn_srq_receive, NdkSrqReceive callback function [Network Drivers Starting with Windows Vista], NdkSrqReceive, NDK_FN_SRQ_RECEIVE, NDK_FN_SRQ_RECEIVE, ndkpi/NdkSrqReceive
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ndkpi.h
+req.include-header: Ndkpi.h
+req.target-type: Windows
+req.target-min-winverclnt: None supported,Supported in NDIS 6.30 and later.
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	ndkpi.h
+apiname:
+-	NdkSrqReceive
+product: Windows
+targetos: Windows
+req.typenames: NDIS_WWAN_VISIBLE_PROVIDERS, *PNDIS_WWAN_VISIBLE_PROVIDERS
 ---
 
 

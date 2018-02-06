@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.SeSetSecurityDescriptorInfo
-title : SeSetSecurityDescriptorInfo function
-author : windows-driver-content
-description : The SeSetSecurityDescriptorInfo routine sets an object's security descriptor.
-old-location : ifsk\sesetsecuritydescriptorinfo.htm
-old-project : ifsk
-ms.assetid : d6f02142-1cd8-4f09-b106-d963bf080495
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ntifs/SeSetSecurityDescriptorInfo, ifsk.sesetsecuritydescriptorinfo, SeSetSecurityDescriptorInfo routine [Installable File System Drivers], seref_061b8609-a537-4ccb-aa60-50a46b08e97f.xml, SeSetSecurityDescriptorInfo
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.SeSetSecurityDescriptorInfo
+title: SeSetSecurityDescriptorInfo function
+author: windows-driver-content
+description: The SeSetSecurityDescriptorInfo routine sets an object's security descriptor.
+old-location: ifsk\sesetsecuritydescriptorinfo.htm
+old-project: ifsk
+ms.assetid: d6f02142-1cd8-4f09-b106-d963bf080495
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ntifs/SeSetSecurityDescriptorInfo, ifsk.sesetsecuritydescriptorinfo, SeSetSecurityDescriptorInfo routine [Installable File System Drivers], seref_061b8609-a537-4ccb-aa60-50a46b08e97f.xml, SeSetSecurityDescriptorInfo
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	SeSetSecurityDescriptorInfo
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

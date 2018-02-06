@@ -1,41 +1,46 @@
 ---
-UID : NN:drmk.IDrmAudioStream
-title : IDrmAudioStream
-author : windows-driver-content
-description : The IDrmAudioStream interface assigns DRM protection to the digital content in an audio stream.
-old-location : audio\idrmaudiostream.htm
-old-project : audio
-ms.assetid : 18c90367-f87d-4028-af58-cfb65e8ff01b
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : audio.idrmaudiostream, IDrmAudioStream interface [Audio Devices], IDrmAudioStream interface [Audio Devices], described, IDrmAudioStream, drmk/IDrmAudioStream, audmp-routines_aba04fe2-a050-48c5-82ba-3ce454e0bc84.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : drmk.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : drmk.h
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDI_TX_METADATA, *PWDI_TX_METADATA
+UID: NN:drmk.IDrmAudioStream
+title: IDrmAudioStream
+author: windows-driver-content
+description: The IDrmAudioStream interface assigns DRM protection to the digital content in an audio stream.
+old-location: audio\idrmaudiostream.htm
+old-project: audio
+ms.assetid: 18c90367-f87d-4028-af58-cfb65e8ff01b
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: audio.idrmaudiostream, IDrmAudioStream interface [Audio Devices], IDrmAudioStream interface [Audio Devices], described, IDrmAudioStream, drmk/IDrmAudioStream, audmp-routines_aba04fe2-a050-48c5-82ba-3ce454e0bc84.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: drmk.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: drmk.h
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	drmk.h
+apiname:
+-	IDrmAudioStream
+product: Windows
+targetos: Windows
+req.typenames: WDI_TX_METADATA, *PWDI_TX_METADATA
 ---
 
 # IDrmAudioStream interface

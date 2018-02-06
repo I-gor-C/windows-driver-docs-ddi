@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_SETTEXTURESTAGESTATE
-title : PFND3DDDI_SETTEXTURESTAGESTATE
-author : windows-driver-content
-description : The SetTextureStageState function updates the state of a texture at a particular stage in a multiple-texture group.
-old-location : display\settexturestagestate.htm
-old-project : display
-ms.assetid : 56b9d7bf-1036-4ad1-a0fb-4d7154b50b27
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.settexturestagestate, SetTextureStageState callback function [Display Devices], SetTextureStageState, PFND3DDDI_SETTEXTURESTAGESTATE, PFND3DDDI_SETTEXTURESTAGESTATE, d3dumddi/SetTextureStageState, UserModeDisplayDriver_Functions_b84233ed-861a-4d59-a1b0-5b475f5019d5.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_SETTEXTURESTAGESTATE
+title: PFND3DDDI_SETTEXTURESTAGESTATE
+author: windows-driver-content
+description: The SetTextureStageState function updates the state of a texture at a particular stage in a multiple-texture group.
+old-location: display\settexturestagestate.htm
+old-project: display
+ms.assetid: 56b9d7bf-1036-4ad1-a0fb-4d7154b50b27
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.settexturestagestate, SetTextureStageState callback function [Display Devices], SetTextureStageState, PFND3DDDI_SETTEXTURESTAGESTATE, PFND3DDDI_SETTEXTURESTAGESTATE, d3dumddi/SetTextureStageState, UserModeDisplayDriver_Functions_b84233ed-861a-4d59-a1b0-5b475f5019d5.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	SetTextureStageState
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

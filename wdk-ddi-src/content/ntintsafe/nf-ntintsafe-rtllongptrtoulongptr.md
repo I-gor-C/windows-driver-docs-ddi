@@ -1,41 +1,46 @@
 ---
-UID : NF:ntintsafe.RtlLongPtrToULongPtr
-title : RtlLongPtrToULongPtr function
-author : windows-driver-content
-description : Converts a value of type LONG_PTR to a value of type ULONG_PTR.
-old-location : kernel\rtllongptrtoulongptr.htm
-old-project : kernel
-ms.assetid : 9171C016-D54C-4BF4-BBD7-00D39C062929
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : RtlLongPtrToULongPtr function [Kernel-Mode Driver Architecture], kernel.rtllongptrtoulongptr, RtlLongPtrToULongPtr, ntintsafe/RtlLongPtrToULongPtr
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntintsafe.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PUBLIC_OBJECT_TYPE_INFORMATION, *PPUBLIC_OBJECT_TYPE_INFORMATION
+UID: NF:ntintsafe.RtlLongPtrToULongPtr
+title: RtlLongPtrToULongPtr function
+author: windows-driver-content
+description: Converts a value of type LONG_PTR to a value of type ULONG_PTR.
+old-location: kernel\rtllongptrtoulongptr.htm
+old-project: kernel
+ms.assetid: 9171C016-D54C-4BF4-BBD7-00D39C062929
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: RtlLongPtrToULongPtr function [Kernel-Mode Driver Architecture], kernel.rtllongptrtoulongptr, RtlLongPtrToULongPtr, ntintsafe/RtlLongPtrToULongPtr
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntintsafe.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntintsafe.h
+apiname:
+-	RtlLongPtrToULongPtr
+product: Windows
+targetos: Windows
+req.typenames: PUBLIC_OBJECT_TYPE_INFORMATION, *PPUBLIC_OBJECT_TYPE_INFORMATION
 ---
 
 

@@ -1,42 +1,48 @@
 ---
-UID : NF:wdm.WRITE_PORT_USHORT
-title : WRITE_PORT_USHORT function
-author : windows-driver-content
-description : The WRITE_PORT_USHORT routine writes a USHORT value to the specified port address.
-old-location : kernel\write_port_ushort.htm
-old-project : kernel
-ms.assetid : 60145cf3-62cb-4165-8536-f1546b9623dd
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : WRITE_PORT_USHORT, k103_28fd826b-359f-4111-91d0-426fb2d2a62b.xml, kernel.write_port_ushort, wdm/WRITE_PORT_USHORT, WRITE_PORT_USHORT routine [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Hal.lib
-req.dll : 
-req.irql : Any level (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.WRITE_PORT_USHORT
+title: WRITE_PORT_USHORT function
+author: windows-driver-content
+description: The WRITE_PORT_USHORT routine writes a USHORT value to the specified port address.
+old-location: kernel\write_port_ushort.htm
+old-project: kernel
+ms.assetid: 60145cf3-62cb-4165-8536-f1546b9623dd
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: WRITE_PORT_USHORT, k103_28fd826b-359f-4111-91d0-426fb2d2a62b.xml, kernel.write_port_ushort, wdm/WRITE_PORT_USHORT, WRITE_PORT_USHORT routine [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Hal.lib
+req.dll: 
+req.irql: Any level (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Hal.lib
+-	Hal.dll
+apiname:
+-	WRITE_PORT_USHORT
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

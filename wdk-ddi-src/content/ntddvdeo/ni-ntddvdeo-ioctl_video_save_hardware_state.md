@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddvdeo.IOCTL_VIDEO_SAVE_HARDWARE_STATE
-title : IOCTL_VIDEO_SAVE_HARDWARE_STATE
-author : windows-driver-content
-description : Saves the state of the video adapter in the VRP OutputBuffer. Miniport drivers for VGA-compatible adapters are required to support this nonmodal request; optional for other miniport drivers.
-old-location : display\ioctl_video_save_hardware_state.htm
-old-project : display
-ms.assetid : 24d786df-2cdd-465c-b468-212e109d5ae1
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.ioctl_video_save_hardware_state, IOCTL_VIDEO_SAVE_HARDWARE_STATE control code [Display Devices], IOCTL_VIDEO_SAVE_HARDWARE_STATE, ntddvdeo/IOCTL_VIDEO_SAVE_HARDWARE_STATE, Video_IOCTLs_2595d8e2-5b1e-47dd-b3ba-627425f84215.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddvdeo.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TAPE_WRITE_MARKS, *PTAPE_WRITE_MARKS
+UID: NI:ntddvdeo.IOCTL_VIDEO_SAVE_HARDWARE_STATE
+title: IOCTL_VIDEO_SAVE_HARDWARE_STATE
+author: windows-driver-content
+description: Saves the state of the video adapter in the VRP OutputBuffer. Miniport drivers for VGA-compatible adapters are required to support this nonmodal request; optional for other miniport drivers.
+old-location: display\ioctl_video_save_hardware_state.htm
+old-project: display
+ms.assetid: 24d786df-2cdd-465c-b468-212e109d5ae1
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.ioctl_video_save_hardware_state, IOCTL_VIDEO_SAVE_HARDWARE_STATE control code [Display Devices], IOCTL_VIDEO_SAVE_HARDWARE_STATE, ntddvdeo/IOCTL_VIDEO_SAVE_HARDWARE_STATE, Video_IOCTLs_2595d8e2-5b1e-47dd-b3ba-627425f84215.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddvdeo.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddvdeo.h
+apiname:
+-	IOCTL_VIDEO_SAVE_HARDWARE_STATE
+product: Windows
+targetos: Windows
+req.typenames: TAPE_WRITE_MARKS, *PTAPE_WRITE_MARKS
 ---
 
 # IOCTL_VIDEO_SAVE_HARDWARE_STATE IOCTL

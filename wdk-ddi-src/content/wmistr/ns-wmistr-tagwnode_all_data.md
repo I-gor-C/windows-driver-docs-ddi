@@ -1,42 +1,47 @@
 ---
-UID : NS:wmistr.tagWNODE_ALL_DATA
-title : tagWNODE_ALL_DATA
-author : windows-driver-content
-description : The WNODE_ALL_DATA structure contains data for all instances of a data block or event block.
-old-location : kernel\wnode_all_data.htm
-old-project : kernel
-ms.assetid : 15582270-6cc4-43d4-b9e6-dceab3bc092d
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : PWNODE_ALL_DATA, WNODE_ALL_DATA structure [Kernel-Mode Driver Architecture], kstruct_d_f0048b24-6d54-40c6-bb6a-8ed796a226d8.xml, wmistr/WNODE_ALL_DATA, kernel.wnode_all_data, wmistr/PWNODE_ALL_DATA, PWNODE_ALL_DATA structure pointer [Kernel-Mode Driver Architecture], WNODE_ALL_DATA, tagWNODE_ALL_DATA, *PWNODE_ALL_DATA
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wmistr.h
-req.include-header : Wmistr.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WNODE_ALL_DATA, *PWNODE_ALL_DATA
-req.product : Windows 10 or later.
+UID: NS:wmistr.tagWNODE_ALL_DATA
+title: tagWNODE_ALL_DATA
+author: windows-driver-content
+description: The WNODE_ALL_DATA structure contains data for all instances of a data block or event block.
+old-location: kernel\wnode_all_data.htm
+old-project: kernel
+ms.assetid: 15582270-6cc4-43d4-b9e6-dceab3bc092d
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: PWNODE_ALL_DATA, WNODE_ALL_DATA structure [Kernel-Mode Driver Architecture], kstruct_d_f0048b24-6d54-40c6-bb6a-8ed796a226d8.xml, wmistr/WNODE_ALL_DATA, kernel.wnode_all_data, wmistr/PWNODE_ALL_DATA, PWNODE_ALL_DATA structure pointer [Kernel-Mode Driver Architecture], WNODE_ALL_DATA, tagWNODE_ALL_DATA, *PWNODE_ALL_DATA
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wmistr.h
+req.include-header: Wmistr.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wmistr.h
+apiname:
+-	WNODE_ALL_DATA
+product: Windows
+targetos: Windows
+req.typenames: WNODE_ALL_DATA, *PWNODE_ALL_DATA
+req.product: Windows 10 or later.
 ---
 
 # tagWNODE_ALL_DATA structure

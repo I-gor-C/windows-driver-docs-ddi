@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfdmatransaction.WdfDmaTransactionSetTransferCompleteCallback
-title : WdfDmaTransactionSetTransferCompleteCallback function
-author : windows-driver-content
-description : The WdfDmaTransactionSetTransferCompleteCallback method registers a transfer completion event callback function for a system-mode DMA transaction.
-old-location : wdf\wdfdmatransactionsettransfercompletecallback.htm
-old-project : wdf
-ms.assetid : B97FF6B1-BFCB-4293-B2F0-EE08E12CFCFF
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.wdfdmatransactionsettransfercompletecallback, WdfDmaTransactionSetTransferCompleteCallback method, WdfDmaTransactionSetTransferCompleteCallback, kmdf.wdfdmatransactionsettransfercompletecallback, wdfdmatransaction/WdfDmaTransactionSetTransferCompleteCallback, PFN_WDFDMATRANSACTIONSETTRANSFERCOMPLETECALLBACK
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfdmatransaction.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : 
-req.kmdf-ver : 1.11
-req.umdf-ver : 
-req.ddi-compliance : DriverCreate
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDF_DMA_SYSTEM_PROFILE_CONFIG, WDF_DMA_SYSTEM_PROFILE_CONFIG"
-req.product : Windows 10 or later.
+UID: NF:wdfdmatransaction.WdfDmaTransactionSetTransferCompleteCallback
+title: WdfDmaTransactionSetTransferCompleteCallback function
+author: windows-driver-content
+description: The WdfDmaTransactionSetTransferCompleteCallback method registers a transfer completion event callback function for a system-mode DMA transaction.
+old-location: wdf\wdfdmatransactionsettransfercompletecallback.htm
+old-project: wdf
+ms.assetid: B97FF6B1-BFCB-4293-B2F0-EE08E12CFCFF
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.wdfdmatransactionsettransfercompletecallback, WdfDmaTransactionSetTransferCompleteCallback method, WdfDmaTransactionSetTransferCompleteCallback, kmdf.wdfdmatransactionsettransfercompletecallback, wdfdmatransaction/WdfDmaTransactionSetTransferCompleteCallback, PFN_WDFDMATRANSACTIONSETTRANSFERCOMPLETECALLBACK
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfdmatransaction.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: 
+req.kmdf-ver: 1.11
+req.umdf-ver: 
+req.ddi-compliance: DriverCreate
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfDmaTransactionSetTransferCompleteCallback
+product: Windows
+targetos: Windows
+req.typenames: "*PWDF_DMA_SYSTEM_PROFILE_CONFIG, WDF_DMA_SYSTEM_PROFILE_CONFIG"
+req.product: Windows 10 or later.
 ---
 
 

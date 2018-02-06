@@ -1,42 +1,48 @@
 ---
-UID : NE:wdfdevice._WDF_DEVICE_HWACCESS_TARGET_TYPE
-title : "_WDF_DEVICE_HWACCESS_TARGET_TYPE"
-author : windows-driver-content
-description : The WDF_DEVICE_HWACCESS_TARGET_TYPE enumeration is used internally by the framework. Do not use.
-old-location : wdf\wdf_device_hwaccess_target_type.htm
-old-project : wdf
-ms.assetid : AF462D58-1854-4A56-8DC6-63F373439842
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wudfddi_types/PWDF_DEVICE_HWACCESS_TARGET_TYPE, wdfdevice/PWDF_DEVICE_HWACCESS_TARGET_TYPE, PWDF_DEVICE_HWACCESS_TARGET_TYPE, WdfDeviceHwAccessTargetTypeInvalid, WdfDeviceHwAccessTargetTypePort, WdfDeviceHwAccessTargetTypeMaximum, _WDF_DEVICE_HWACCESS_TARGET_TYPE, WDF_DEVICE_HWACCESS_TARGET_TYPE enumeration, wdfdevice/WDF_DEVICE_HWACCESS_TARGET_TYPE, wudfddi_types/WdfDeviceHwAccessTargetTypeRegister, WDF_DEVICE_HWACCESS_TARGET_TYPE, wudfddi_types/WdfDeviceHwAccessTargetTypeMaximum, WdfDeviceHwAccessTargetTypeRegisterBuffer, WdfDeviceHwAccessTargetTypeRegister, wdfdevice/WdfDeviceHwAccessTargetTypeRegisterBuffer, wdfdevice/WdfDeviceHwAccessTargetTypePort, wdfdevice/WdfDeviceHwAccessTargetTypeMaximum, wudfddi_types/WDF_DEVICE_HWACCESS_TARGET_TYPE, wudfddi_types/WdfDeviceHwAccessTargetTypePortBuffer, *PWDF_DEVICE_HWACCESS_TARGET_TYPE, WdfDeviceHwAccessTargetTypePortBuffer, wdf.wdf_device_hwaccess_target_type, PWDF_DEVICE_HWACCESS_TARGET_TYPE enumeration pointer, wudfddi_types/WdfDeviceHwAccessTargetTypeRegisterBuffer, wdfdevice/WdfDeviceHwAccessTargetTypeRegister, wudfddi_types/WdfDeviceHwAccessTargetTypeInvalid, umdf.wdf_device_hwaccess_target_type, wdfdevice/WdfDeviceHwAccessTargetTypePortBuffer, wudfddi_types/WdfDeviceHwAccessTargetTypePort, wdfdevice/WdfDeviceHwAccessTargetTypeInvalid
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : wdfdevice.h
-req.include-header : Wdf.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.11
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_DEVICE_HWACCESS_TARGET_TYPE, *PWDF_DEVICE_HWACCESS_TARGET_TYPE
-req.product : Windows 10 or later.
+UID: NE:wdfdevice._WDF_DEVICE_HWACCESS_TARGET_TYPE
+title: "_WDF_DEVICE_HWACCESS_TARGET_TYPE"
+author: windows-driver-content
+description: The WDF_DEVICE_HWACCESS_TARGET_TYPE enumeration is used internally by the framework. Do not use.
+old-location: wdf\wdf_device_hwaccess_target_type.htm
+old-project: wdf
+ms.assetid: AF462D58-1854-4A56-8DC6-63F373439842
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wudfddi_types/PWDF_DEVICE_HWACCESS_TARGET_TYPE, wdfdevice/PWDF_DEVICE_HWACCESS_TARGET_TYPE, PWDF_DEVICE_HWACCESS_TARGET_TYPE, WdfDeviceHwAccessTargetTypeInvalid, WdfDeviceHwAccessTargetTypePort, WdfDeviceHwAccessTargetTypeMaximum, _WDF_DEVICE_HWACCESS_TARGET_TYPE, WDF_DEVICE_HWACCESS_TARGET_TYPE enumeration, wdfdevice/WDF_DEVICE_HWACCESS_TARGET_TYPE, wudfddi_types/WdfDeviceHwAccessTargetTypeRegister, WDF_DEVICE_HWACCESS_TARGET_TYPE, wudfddi_types/WdfDeviceHwAccessTargetTypeMaximum, WdfDeviceHwAccessTargetTypeRegisterBuffer, WdfDeviceHwAccessTargetTypeRegister, wdfdevice/WdfDeviceHwAccessTargetTypeRegisterBuffer, wdfdevice/WdfDeviceHwAccessTargetTypePort, wdfdevice/WdfDeviceHwAccessTargetTypeMaximum, wudfddi_types/WDF_DEVICE_HWACCESS_TARGET_TYPE, wudfddi_types/WdfDeviceHwAccessTargetTypePortBuffer, *PWDF_DEVICE_HWACCESS_TARGET_TYPE, WdfDeviceHwAccessTargetTypePortBuffer, wdf.wdf_device_hwaccess_target_type, PWDF_DEVICE_HWACCESS_TARGET_TYPE enumeration pointer, wudfddi_types/WdfDeviceHwAccessTargetTypeRegisterBuffer, wdfdevice/WdfDeviceHwAccessTargetTypeRegister, wudfddi_types/WdfDeviceHwAccessTargetTypeInvalid, umdf.wdf_device_hwaccess_target_type, wdfdevice/WdfDeviceHwAccessTargetTypePortBuffer, wudfddi_types/WdfDeviceHwAccessTargetTypePort, wdfdevice/WdfDeviceHwAccessTargetTypeInvalid
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: wdfdevice.h
+req.include-header: Wdf.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.11
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfdevice.h
+-	wudfddi_types.h
+apiname:
+-	WDF_DEVICE_HWACCESS_TARGET_TYPE
+product: Windows
+targetos: Windows
+req.typenames: WDF_DEVICE_HWACCESS_TARGET_TYPE, *PWDF_DEVICE_HWACCESS_TARGET_TYPE
+req.product: Windows 10 or later.
 ---
 
 # _WDF_DEVICE_HWACCESS_TARGET_TYPE Enumeration
@@ -59,36 +65,36 @@ typedef enum __WDF_IO_TARGET_STATE {
 ## Constants
 
 <table>
-
-<tr>
-<td>WdfDeviceHwAccessTargetTypeInvalid</td>
-<td></td>
-</tr>
-
-<tr>
-<td>WdfDeviceHwAccessTargetTypeMaximum</td>
-<td></td>
-</tr>
-
-<tr>
-<td>WdfDeviceHwAccessTargetTypePort</td>
-<td></td>
-</tr>
-
-<tr>
-<td>WdfDeviceHwAccessTargetTypePortBuffer</td>
-<td></td>
-</tr>
-
-<tr>
-<td>WdfDeviceHwAccessTargetTypeRegister</td>
-<td></td>
-</tr>
-
-<tr>
-<td>WdfDeviceHwAccessTargetTypeRegisterBuffer</td>
-<td></td>
-</tr>
+            
+                <tr>
+                    <td>WdfDeviceHwAccessTargetTypeInvalid</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDeviceHwAccessTargetTypeMaximum</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDeviceHwAccessTargetTypePort</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDeviceHwAccessTargetTypePortBuffer</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDeviceHwAccessTargetTypeRegister</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDeviceHwAccessTargetTypeRegisterBuffer</td>
+                    <td></td>
+                </tr>
 </table>
 
 
@@ -98,9 +104,9 @@ typedef enum __WDF_IO_TARGET_STATE {
 | **Minimum UMDF version** | 1.11 |
 | **Header** | wdfdevice.h (include Wdf.h) |
 
-## See Also
+    ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561319">UMDF Structures and Enumeration Types</a>
+        <a href="https://msdn.microsoft.com/library/windows/hardware/ff561319">UMDF Structures and Enumeration Types</a>
 
  
 

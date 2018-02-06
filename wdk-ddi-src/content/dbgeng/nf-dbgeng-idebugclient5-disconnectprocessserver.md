@@ -1,41 +1,50 @@
 ---
-UID : NF:dbgeng.IDebugClient5.DisconnectProcessServer
-title : IDebugClient5::DisconnectProcessServer method
-author : windows-driver-content
-description : The DisconnectProcessServer method disconnects the debugger engine from a process server.
-old-location : debugger\disconnectprocessserver.htm
-old-project : debugger
-ms.assetid : 47776bb3-883f-4e45-9398-31de6596c57f
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : DisconnectProcessServer method [Windows Debugging], IDebugClient4 interface, DisconnectProcessServer method [Windows Debugging], IDebugClient interface, dbgeng/IDebugClient3::DisconnectProcessServer, IDebugClient5::DisconnectProcessServer, IDebugClient2 interface [Windows Debugging], DisconnectProcessServer method, IDebugClient_7cfc70fe-c298-40bf-aa28-0c084262d41d.xml, dbgeng/IDebugClient5::DisconnectProcessServer, DisconnectProcessServer, DisconnectProcessServer method [Windows Debugging], IDebugClient5 interface, IDebugClient4::DisconnectProcessServer, DisconnectProcessServer method [Windows Debugging], IDebugClient2 interface, IDebugClient4 interface [Windows Debugging], DisconnectProcessServer method, DisconnectProcessServer method [Windows Debugging], IDebugClient3 interface, IDebugClient3::DisconnectProcessServer, IDebugClient::DisconnectProcessServer, IDebugClient2::DisconnectProcessServer, IDebugClient interface [Windows Debugging], DisconnectProcessServer method, dbgeng/IDebugClient::DisconnectProcessServer, IDebugClient5 interface [Windows Debugging], DisconnectProcessServer method, DisconnectProcessServer method [Windows Debugging], IDebugClient3 interface [Windows Debugging], DisconnectProcessServer method, debugger.disconnectprocessserver, dbgeng/IDebugClient4::DisconnectProcessServer, IDebugClient5, dbgeng/IDebugClient2::DisconnectProcessServer
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugClient5.DisconnectProcessServer
+title: IDebugClient5::DisconnectProcessServer method
+author: windows-driver-content
+description: The DisconnectProcessServer method disconnects the debugger engine from a process server.
+old-location: debugger\disconnectprocessserver.htm
+old-project: debugger
+ms.assetid: 47776bb3-883f-4e45-9398-31de6596c57f
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: DisconnectProcessServer method [Windows Debugging], IDebugClient4 interface, DisconnectProcessServer method [Windows Debugging], IDebugClient interface, dbgeng/IDebugClient3::DisconnectProcessServer, IDebugClient5::DisconnectProcessServer, IDebugClient2 interface [Windows Debugging], DisconnectProcessServer method, IDebugClient_7cfc70fe-c298-40bf-aa28-0c084262d41d.xml, dbgeng/IDebugClient5::DisconnectProcessServer, DisconnectProcessServer, DisconnectProcessServer method [Windows Debugging], IDebugClient5 interface, IDebugClient4::DisconnectProcessServer, DisconnectProcessServer method [Windows Debugging], IDebugClient2 interface, IDebugClient4 interface [Windows Debugging], DisconnectProcessServer method, DisconnectProcessServer method [Windows Debugging], IDebugClient3 interface, IDebugClient3::DisconnectProcessServer, IDebugClient::DisconnectProcessServer, IDebugClient2::DisconnectProcessServer, IDebugClient interface [Windows Debugging], DisconnectProcessServer method, dbgeng/IDebugClient::DisconnectProcessServer, IDebugClient5 interface [Windows Debugging], DisconnectProcessServer method, DisconnectProcessServer method [Windows Debugging], IDebugClient3 interface [Windows Debugging], DisconnectProcessServer method, debugger.disconnectprocessserver, dbgeng/IDebugClient4::DisconnectProcessServer, IDebugClient5, dbgeng/IDebugClient2::DisconnectProcessServer
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugClient.DisconnectProcessServer
+-	IDebugClient2.DisconnectProcessServer
+-	IDebugClient3.DisconnectProcessServer
+-	IDebugClient4.DisconnectProcessServer
+-	IDebugClient5.DisconnectProcessServer
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

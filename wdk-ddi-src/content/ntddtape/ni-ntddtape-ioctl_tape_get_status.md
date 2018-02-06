@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddtape.IOCTL_TAPE_GET_STATUS
-title : IOCTL_TAPE_GET_STATUS
-author : windows-driver-content
-description : Returns the current status of the drive in the Status field of the I/O status block.
-old-location : storage\ioctl_tape_get_status.htm
-old-project : storage
-ms.assetid : d5e491b8-d40c-4f2c-9117-5c3cb71913f7
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_tape_get_status, IOCTL_TAPE_GET_STATUS control code [Storage Devices], IOCTL_TAPE_GET_STATUS, ntddtape/IOCTL_TAPE_GET_STATUS, k307_8ab90364-adac-4937-9036-aa28ddeffb19.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddtape.h
-req.include-header : Ntddtape.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TAPE_DRIVE_PROBLEM_TYPE
+UID: NI:ntddtape.IOCTL_TAPE_GET_STATUS
+title: IOCTL_TAPE_GET_STATUS
+author: windows-driver-content
+description: Returns the current status of the drive in the Status field of the I/O status block.
+old-location: storage\ioctl_tape_get_status.htm
+old-project: storage
+ms.assetid: d5e491b8-d40c-4f2c-9117-5c3cb71913f7
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_tape_get_status, IOCTL_TAPE_GET_STATUS control code [Storage Devices], IOCTL_TAPE_GET_STATUS, ntddtape/IOCTL_TAPE_GET_STATUS, k307_8ab90364-adac-4937-9036-aa28ddeffb19.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddtape.h
+req.include-header: Ntddtape.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddtape.h
+apiname:
+-	IOCTL_TAPE_GET_STATUS
+product: Windows
+targetos: Windows
+req.typenames: TAPE_DRIVE_PROBLEM_TYPE
 ---
 
 # IOCTL_TAPE_GET_STATUS IOCTL

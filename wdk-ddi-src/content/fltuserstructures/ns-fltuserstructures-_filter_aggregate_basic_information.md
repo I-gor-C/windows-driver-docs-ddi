@@ -1,41 +1,46 @@
 ---
-UID : NS:fltuserstructures._FILTER_AGGREGATE_BASIC_INFORMATION
-title : "_FILTER_AGGREGATE_BASIC_INFORMATION"
-author : windows-driver-content
-description : The FILTER_AGGREGATE_BASIC_INFORMATION structure contains basic information for a minifilter or legacy filter driver.
-old-location : ifsk\filter_aggregate_basic_information.htm
-old-project : ifsk
-ms.assetid : c60ac4b8-3e55-42c8-a693-4fc6bbec0de8
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltSystemStructures_b8f9faf4-0b81-4536-8f86-1e3f7938c3a4.xml, ifsk.filter_aggregate_basic_information, *PFILTER_AGGREGATE_BASIC_INFORMATION, FILTER_AGGREGATE_BASIC_INFORMATION structure [Installable File System Drivers], _FILTER_AGGREGATE_BASIC_INFORMATION, fltuserstructures/PFILTER_AGGREGATE_BASIC_INFORMATION, fltuserstructures/FILTER_AGGREGATE_BASIC_INFORMATION, FILTER_AGGREGATE_BASIC_INFORMATION, PFILTER_AGGREGATE_BASIC_INFORMATION, PFILTER_AGGREGATE_BASIC_INFORMATION structure pointer [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : fltuserstructures.h
-req.include-header : FltUser.h, FltKernel.h
-req.target-type : Windows
-req.target-min-winverclnt : This structure is available starting with Microsoft Windows Server 2003 SP1 and Windows XP SP2 with filter manager rollup.  For more information on the filter manager rollup package for Windows XP SP2, see article 914882, "The filter manager rollup package for Windows XP SP2," in the Microsoft Knowledge Base.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FILTER_AGGREGATE_BASIC_INFORMATION, *PFILTER_AGGREGATE_BASIC_INFORMATION
+UID: NS:fltuserstructures._FILTER_AGGREGATE_BASIC_INFORMATION
+title: "_FILTER_AGGREGATE_BASIC_INFORMATION"
+author: windows-driver-content
+description: The FILTER_AGGREGATE_BASIC_INFORMATION structure contains basic information for a minifilter or legacy filter driver.
+old-location: ifsk\filter_aggregate_basic_information.htm
+old-project: ifsk
+ms.assetid: c60ac4b8-3e55-42c8-a693-4fc6bbec0de8
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltSystemStructures_b8f9faf4-0b81-4536-8f86-1e3f7938c3a4.xml, ifsk.filter_aggregate_basic_information, *PFILTER_AGGREGATE_BASIC_INFORMATION, FILTER_AGGREGATE_BASIC_INFORMATION structure [Installable File System Drivers], _FILTER_AGGREGATE_BASIC_INFORMATION, fltuserstructures/PFILTER_AGGREGATE_BASIC_INFORMATION, fltuserstructures/FILTER_AGGREGATE_BASIC_INFORMATION, FILTER_AGGREGATE_BASIC_INFORMATION, PFILTER_AGGREGATE_BASIC_INFORMATION, PFILTER_AGGREGATE_BASIC_INFORMATION structure pointer [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: fltuserstructures.h
+req.include-header: FltUser.h, FltKernel.h
+req.target-type: Windows
+req.target-min-winverclnt: This structure is available starting with Microsoft Windows Server 2003 SP1 and Windows XP SP2 with filter manager rollup.  For more information on the filter manager rollup package for Windows XP SP2, see article 914882, "The filter manager rollup package for Windows XP SP2," in the Microsoft Knowledge Base.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	fltuserstructures.h
+apiname:
+-	FILTER_AGGREGATE_BASIC_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: FILTER_AGGREGATE_BASIC_INFORMATION, *PFILTER_AGGREGATE_BASIC_INFORMATION
 ---
 
 # _FILTER_AGGREGATE_BASIC_INFORMATION structure

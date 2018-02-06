@@ -1,41 +1,47 @@
 ---
-UID : NF:irb.AtaPortGetBusData
-title : AtaPortGetBusData function
-author : windows-driver-content
-description : The AtaPortGetBusData routine retrieves data from the location that is specified by ConfigDataOffset within the device's PCI configuration space.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
-old-location : storage\ataportgetbusdata.htm
-old-project : storage
-ms.assetid : bfff10ab-7e15-4db3-b808-947d61844bc0
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : AtaPortGetBusData, AtaPortGetBusData routine [Storage Devices], atartns_a137d697-85fa-4d99-964f-94e9bcbb6b7b.xml, storage.ataportgetbusdata, irb/AtaPortGetBusData
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : irb.h
-req.include-header : Ata.h, Irb.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Pciidex.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : IDE_POWER_STATE
+UID: NF:irb.AtaPortGetBusData
+title: AtaPortGetBusData function
+author: windows-driver-content
+description: The AtaPortGetBusData routine retrieves data from the location that is specified by ConfigDataOffset within the device's PCI configuration space.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
+old-location: storage\ataportgetbusdata.htm
+old-project: storage
+ms.assetid: bfff10ab-7e15-4db3-b808-947d61844bc0
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: AtaPortGetBusData, AtaPortGetBusData routine [Storage Devices], atartns_a137d697-85fa-4d99-964f-94e9bcbb6b7b.xml, storage.ataportgetbusdata, irb/AtaPortGetBusData
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: irb.h
+req.include-header: Ata.h, Irb.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Pciidex.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Pciidex.lib
+-	Pciidex.dll
+apiname:
+-	AtaPortGetBusData
+product: Windows
+targetos: Windows
+req.typenames: IDE_POWER_STATE
 ---
 
 

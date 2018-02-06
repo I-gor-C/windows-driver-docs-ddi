@@ -1,42 +1,47 @@
 ---
-UID : NS:ucmtcpcidevice._UCMTCPCI_DEVICE_CONFIG
-title : "_UCMTCPCI_DEVICE_CONFIG"
-author : windows-driver-content
-description : Used in the client driver's call to UcmTcpciDeviceInitialize. Call UCMTCPCI_DEVICE_CONFIG_INIT to initialize this structure.
-old-location : buses\ucmtcpci_device_config.htm
-old-project : usbref
-ms.assetid : 74de7f2a-8738-472b-8a22-983a82e29fcb
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : UCMTCPCI_DEVICE_CONFIG structure [Buses], buses.ucmtcpci_device_config, ucmtcpcidevice/UCMTCPCI_DEVICE_CONFIG, UCMTCPCI_DEVICE_CONFIG, PUCMTCPCI_DEVICE_CONFIG, PUCMTCPCI_DEVICE_CONFIG structure pointer [Buses], ucmtcpcidevice/PUCMTCPCI_DEVICE_CONFIG, _UCMTCPCI_DEVICE_CONFIG, *PUCMTCPCI_DEVICE_CONFIG
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ucmtcpcidevice.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : UCMTCPCI_DEVICE_CONFIG, *PUCMTCPCI_DEVICE_CONFIG
-req.product : Windows 10 or later.
+UID: NS:ucmtcpcidevice._UCMTCPCI_DEVICE_CONFIG
+title: "_UCMTCPCI_DEVICE_CONFIG"
+author: windows-driver-content
+description: Used in the client driver's call to UcmTcpciDeviceInitialize. Call UCMTCPCI_DEVICE_CONFIG_INIT to initialize this structure.
+old-location: buses\ucmtcpci_device_config.htm
+old-project: usbref
+ms.assetid: 74de7f2a-8738-472b-8a22-983a82e29fcb
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: UCMTCPCI_DEVICE_CONFIG structure [Buses], buses.ucmtcpci_device_config, ucmtcpcidevice/UCMTCPCI_DEVICE_CONFIG, UCMTCPCI_DEVICE_CONFIG, PUCMTCPCI_DEVICE_CONFIG, PUCMTCPCI_DEVICE_CONFIG structure pointer [Buses], ucmtcpcidevice/PUCMTCPCI_DEVICE_CONFIG, _UCMTCPCI_DEVICE_CONFIG, *PUCMTCPCI_DEVICE_CONFIG
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ucmtcpcidevice.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ucmtcpcidevice.h
+apiname:
+-	UCMTCPCI_DEVICE_CONFIG
+product: Windows
+targetos: Windows
+req.typenames: UCMTCPCI_DEVICE_CONFIG, *PUCMTCPCI_DEVICE_CONFIG
+req.product: Windows 10 or later.
 ---
 
 # _UCMTCPCI_DEVICE_CONFIG structure

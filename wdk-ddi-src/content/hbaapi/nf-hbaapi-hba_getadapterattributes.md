@@ -1,41 +1,46 @@
 ---
-UID : NF:hbaapi.HBA_GetAdapterAttributes
-title : HBA_GetAdapterAttributes function
-author : windows-driver-content
-description : The HBA_GetAdapterAttributes routine retrieves the attributes for an HBA.
-old-location : storage\hba_getadapterattributes.htm
-old-project : storage
-ms.assetid : a172f53c-9993-4d52-ae3f-35a8ab5745f6
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : HBA_GetAdapterAttributes, fibreHBA_rtns_f7675f0c-2f71-428e-871b-90c51a1b5bc4.xml, hbaapi/HBA_GetAdapterAttributes, storage.hba_getadapterattributes, HBA_GetAdapterAttributes routine [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : hbaapi.h
-req.include-header : Hbaapi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Hbaapi.lib
-req.dll : Hbaapi.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HBA_WWNTYPE
+UID: NF:hbaapi.HBA_GetAdapterAttributes
+title: HBA_GetAdapterAttributes function
+author: windows-driver-content
+description: The HBA_GetAdapterAttributes routine retrieves the attributes for an HBA.
+old-location: storage\hba_getadapterattributes.htm
+old-project: storage
+ms.assetid: a172f53c-9993-4d52-ae3f-35a8ab5745f6
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: HBA_GetAdapterAttributes, fibreHBA_rtns_f7675f0c-2f71-428e-871b-90c51a1b5bc4.xml, hbaapi/HBA_GetAdapterAttributes, storage.hba_getadapterattributes, HBA_GetAdapterAttributes routine [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: hbaapi.h
+req.include-header: Hbaapi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Hbaapi.lib
+req.dll: Hbaapi.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Hbaapi.dll
+apiname:
+-	HBA_GetAdapterAttributes
+product: Windows
+targetos: Windows
+req.typenames: HBA_WWNTYPE
 ---
 
 

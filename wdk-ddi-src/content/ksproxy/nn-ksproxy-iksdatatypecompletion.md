@@ -1,41 +1,46 @@
 ---
-UID : NN:ksproxy.IKsDataTypeCompletion
-title : IKsDataTypeCompletion
-author : windows-driver-content
-description : The IKsDataTypeCompletion interface provides a method to complete partially specified media types that are passed to the IAMStreamConfig::SetFormat method.
-old-location : stream\iksdatatypecompletion.htm
-old-project : stream
-ms.assetid : 52976c7d-522e-4ff6-96a2-8ed98abe1739
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.iksdatatypecompletion, IKsDataTypeCompletion interface [Streaming Media Devices], IKsDataTypeCompletion interface [Streaming Media Devices], described, IKsDataTypeCompletion, ksproxy/IKsDataTypeCompletion, ksproxy_0ae81dab-7e72-45e0-9577-069d41973670.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : ksproxy.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ksproxy.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PIPE_STATE
+UID: NN:ksproxy.IKsDataTypeCompletion
+title: IKsDataTypeCompletion
+author: windows-driver-content
+description: The IKsDataTypeCompletion interface provides a method to complete partially specified media types that are passed to the IAMStreamConfig::SetFormat method.
+old-location: stream\iksdatatypecompletion.htm
+old-project: stream
+ms.assetid: 52976c7d-522e-4ff6-96a2-8ed98abe1739
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.iksdatatypecompletion, IKsDataTypeCompletion interface [Streaming Media Devices], IKsDataTypeCompletion interface [Streaming Media Devices], described, IKsDataTypeCompletion, ksproxy/IKsDataTypeCompletion, ksproxy_0ae81dab-7e72-45e0-9577-069d41973670.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: ksproxy.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ksproxy.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	ksproxy.h
+apiname:
+-	IKsDataTypeCompletion
+product: Windows
+targetos: Windows
+req.typenames: PIPE_STATE
 ---
 
 # IKsDataTypeCompletion interface

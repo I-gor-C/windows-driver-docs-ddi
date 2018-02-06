@@ -1,42 +1,47 @@
 ---
-UID : NS:ucxendpoint._ENDPOINT_RESET
-title : "_ENDPOINT_RESET"
-author : windows-driver-content
-description : Describes information required to reset an endpoint. This structure is passed by UCX in the EVT_UCX_ENDPOINT_RESET callback function.
-old-location : buses\_endpoint_reset.htm
-old-project : usbref
-ms.assetid : 99F65058-8718-4D2A-9C7F-D442BA8DA527
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : "_ENDPOINT_RESET, P_ENDPOINT_RESET, ENDPOINT_RESET, ucxendpoint/P_ENDPOINT_RESET, ENDPOINT_RESET structure [Buses], *PENDPOINT_RESET, P_ENDPOINT_RESET structure pointer [Buses], buses._endpoint_reset, ucxendpoint/_ENDPOINT_RESET"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ucxendpoint.h
-req.include-header : Ucxclass.h, Ucxendpoint.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : ENDPOINT_RESET, *PENDPOINT_RESET
-req.product : Windows 10 or later.
+UID: NS:ucxendpoint._ENDPOINT_RESET
+title: "_ENDPOINT_RESET"
+author: windows-driver-content
+description: Describes information required to reset an endpoint. This structure is passed by UCX in the EVT_UCX_ENDPOINT_RESET callback function.
+old-location: buses\_endpoint_reset.htm
+old-project: usbref
+ms.assetid: 99F65058-8718-4D2A-9C7F-D442BA8DA527
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: "_ENDPOINT_RESET, P_ENDPOINT_RESET, ENDPOINT_RESET, ucxendpoint/P_ENDPOINT_RESET, ENDPOINT_RESET structure [Buses], *PENDPOINT_RESET, P_ENDPOINT_RESET structure pointer [Buses], buses._endpoint_reset, ucxendpoint/_ENDPOINT_RESET"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ucxendpoint.h
+req.include-header: Ucxclass.h, Ucxendpoint.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ucxendpoint.h
+apiname:
+-	ENDPOINT_RESET
+product: Windows
+targetos: Windows
+req.typenames: ENDPOINT_RESET, *PENDPOINT_RESET
+req.product: Windows 10 or later.
 ---
 
 # _ENDPOINT_RESET structure

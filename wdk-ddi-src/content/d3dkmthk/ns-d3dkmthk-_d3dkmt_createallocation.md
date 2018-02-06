@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmthk._D3DKMT_CREATEALLOCATION
-title : "_D3DKMT_CREATEALLOCATION"
-author : windows-driver-content
-description : The D3DKMT_CREATEALLOCATION structure describes parameters for creating allocations.
-old-location : display\d3dkmt_createallocation.htm
-old-project : display
-ms.assetid : 3e698027-23f8-4765-a4ac-955cd4b24a70
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3dkmthk/D3DKMT_CREATEALLOCATION, D3DKMT_CREATEALLOCATION structure [Display Devices], display.d3dkmt_createallocation, D3DKMT_CREATEALLOCATION, _D3DKMT_CREATEALLOCATION, OpenGL_Structs_983d37f8-47ad-40ea-b3da-2a211e9f0967.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_CREATEALLOCATION
+UID: NS:d3dkmthk._D3DKMT_CREATEALLOCATION
+title: "_D3DKMT_CREATEALLOCATION"
+author: windows-driver-content
+description: The D3DKMT_CREATEALLOCATION structure describes parameters for creating allocations.
+old-location: display\d3dkmt_createallocation.htm
+old-project: display
+ms.assetid: 3e698027-23f8-4765-a4ac-955cd4b24a70
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3dkmthk/D3DKMT_CREATEALLOCATION, D3DKMT_CREATEALLOCATION structure [Display Devices], display.d3dkmt_createallocation, D3DKMT_CREATEALLOCATION, _D3DKMT_CREATEALLOCATION, OpenGL_Structs_983d37f8-47ad-40ea-b3da-2a211e9f0967.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmthk.h
+apiname:
+-	D3DKMT_CREATEALLOCATION
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_CREATEALLOCATION
 ---
 
 # _D3DKMT_CREATEALLOCATION structure

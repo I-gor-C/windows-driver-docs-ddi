@@ -1,42 +1,47 @@
 ---
-UID : NF:winsplp.RouterFreeBidiResponseContainer
-title : RouterFreeBidiResponseContainer function
-author : windows-driver-content
-description : RouterFreeBidiResponseContainer frees a BIDI_RESPONSE_CONTAINER structure previously allocated by RouterAllocBidiResponseContainer.
-old-location : print\routerfreebidiresponsecontainer.htm
-old-project : print
-ms.assetid : 3998eed5-398e-4835-b917-54f5ae814ddf
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : spoolfnc_065c8a3a-5790-45f5-bf79-3af94fdd0571.xml, print.routerfreebidiresponsecontainer, RouterFreeBidiResponseContainer function [Print Devices], RouterFreeBidiResponseContainer, winsplp/RouterFreeBidiResponseContainer
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : winsplp.h
-req.include-header : Winsplp.h
-req.target-type : Desktop
-req.target-min-winverclnt : This function is available in Windows XP and later operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : WinSpool.lib
-req.dll : WinSpool.drv
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NOTIFICATION_CONFIG_FLAGS
-req.product : Windows 10 or later.
+UID: NF:winsplp.RouterFreeBidiResponseContainer
+title: RouterFreeBidiResponseContainer function
+author: windows-driver-content
+description: RouterFreeBidiResponseContainer frees a BIDI_RESPONSE_CONTAINER structure previously allocated by RouterAllocBidiResponseContainer.
+old-location: print\routerfreebidiresponsecontainer.htm
+old-project: print
+ms.assetid: 3998eed5-398e-4835-b917-54f5ae814ddf
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: spoolfnc_065c8a3a-5790-45f5-bf79-3af94fdd0571.xml, print.routerfreebidiresponsecontainer, RouterFreeBidiResponseContainer function [Print Devices], RouterFreeBidiResponseContainer, winsplp/RouterFreeBidiResponseContainer
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: winsplp.h
+req.include-header: Winsplp.h
+req.target-type: Desktop
+req.target-min-winverclnt: This function is available in Windows XP and later operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: WinSpool.lib
+req.dll: WinSpool.drv
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	WinSpool.drv
+apiname:
+-	RouterFreeBidiResponseContainer
+product: Windows
+targetos: Windows
+req.typenames: NOTIFICATION_CONFIG_FLAGS
+req.product: Windows 10 or later.
 ---
 
 

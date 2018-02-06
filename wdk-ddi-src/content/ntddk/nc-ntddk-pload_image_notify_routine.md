@@ -1,41 +1,46 @@
 ---
-UID : NC:ntddk.PLOAD_IMAGE_NOTIFY_ROUTINE
-title : PLOAD_IMAGE_NOTIFY_ROUTINE
-author : windows-driver-content
-description : Called by the operating system to notify the driver when a driver image or a user image (for example, a DLL or EXE) is mapped into virtual memory.
-old-location : kernel\pload_image_notify_routine.htm
-old-project : kernel
-ms.assetid : 613962D6-DF27-4AAE-BD8F-6BC0A538D7F8
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.pload_image_notify_routine, SetLoadImageNotifyRoutine callback function [Kernel-Mode Driver Architecture], SetLoadImageNotifyRoutine, PLOAD_IMAGE_NOTIFY_ROUTINE, PLOAD_IMAGE_NOTIFY_ROUTINE, ntddk/SetLoadImageNotifyRoutine
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PFILTER_INITIALIZATION_DATA, FILTER_INITIALIZATION_DATA"
+UID: NC:ntddk.PLOAD_IMAGE_NOTIFY_ROUTINE
+title: PLOAD_IMAGE_NOTIFY_ROUTINE
+author: windows-driver-content
+description: Called by the operating system to notify the driver when a driver image or a user image (for example, a DLL or EXE) is mapped into virtual memory.
+old-location: kernel\pload_image_notify_routine.htm
+old-project: kernel
+ms.assetid: 613962D6-DF27-4AAE-BD8F-6BC0A538D7F8
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.pload_image_notify_routine, SetLoadImageNotifyRoutine callback function [Kernel-Mode Driver Architecture], SetLoadImageNotifyRoutine, PLOAD_IMAGE_NOTIFY_ROUTINE, PLOAD_IMAGE_NOTIFY_ROUTINE, ntddk/SetLoadImageNotifyRoutine
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ntddk.h
+apiname:
+-	SetLoadImageNotifyRoutine
+product: Windows
+targetos: Windows
+req.typenames: "*PFILTER_INITIALIZATION_DATA, FILTER_INITIALIZATION_DATA"
 ---
 
 

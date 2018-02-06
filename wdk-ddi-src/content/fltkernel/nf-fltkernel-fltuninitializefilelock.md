@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltUninitializeFileLock
-title : FltUninitializeFileLock function
-author : windows-driver-content
-description : The FltUninitializeFileLock routine uninitializes a FILE_LOCK structure.
-old-location : ifsk\fltuninitializefilelock.htm
-old-project : ifsk
-ms.assetid : 15f0a4f4-70f3-4a26-92a2-728e363205f3
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltApiRef_p_to_z_ad1332a2-5434-423c-91d6-de939e1cb28a.xml, ifsk.fltuninitializefilelock, fltkernel/FltUninitializeFileLock, FltUninitializeFileLock, FltUninitializeFileLock routine [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : This routine is available on Microsoft Windows XP SP2, Microsoft Windows Server 2003 SP1, and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltUninitializeFileLock
+title: FltUninitializeFileLock function
+author: windows-driver-content
+description: The FltUninitializeFileLock routine uninitializes a FILE_LOCK structure.
+old-location: ifsk\fltuninitializefilelock.htm
+old-project: ifsk
+ms.assetid: 15f0a4f4-70f3-4a26-92a2-728e363205f3
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltApiRef_p_to_z_ad1332a2-5434-423c-91d6-de939e1cb28a.xml, ifsk.fltuninitializefilelock, fltkernel/FltUninitializeFileLock, FltUninitializeFileLock, FltUninitializeFileLock routine [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: This routine is available on Microsoft Windows XP SP2, Microsoft Windows Server 2003 SP1, and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltUninitializeFileLock
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

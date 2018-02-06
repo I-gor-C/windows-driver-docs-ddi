@@ -1,42 +1,47 @@
 ---
-UID : NF:storport.StorPortAcquireSpinLock
-title : StorPortAcquireSpinLock function
-author : windows-driver-content
-description : The StorPortAcquireSpinLock routine acquires the specified spin lock.
-old-location : storage\storportacquirespinlock.htm
-old-project : storage
-ms.assetid : 52a877c7-b274-4bec-b948-edb0585a09e1
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : StorPortAcquireSpinLock routine [Storage Devices], storprt_a5092ef5-d8ab-4175-8799-df23cfcd4dc8.xml, storport/StorPortAcquireSpinLock, storage.storportacquirespinlock, StorPortAcquireSpinLock
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : StorPortSpinLock, StorPortSpinLock3, StorPortSpinLock4
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STOR_SPINLOCK
-req.product : Windows 10 or later.
+UID: NF:storport.StorPortAcquireSpinLock
+title: StorPortAcquireSpinLock function
+author: windows-driver-content
+description: The StorPortAcquireSpinLock routine acquires the specified spin lock.
+old-location: storage\storportacquirespinlock.htm
+old-project: storage
+ms.assetid: 52a877c7-b274-4bec-b948-edb0585a09e1
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: StorPortAcquireSpinLock routine [Storage Devices], storprt_a5092ef5-d8ab-4175-8799-df23cfcd4dc8.xml, storport/StorPortAcquireSpinLock, storage.storportacquirespinlock, StorPortAcquireSpinLock
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: StorPortSpinLock, StorPortSpinLock3, StorPortSpinLock4
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	storport.h
+apiname:
+-	StorPortAcquireSpinLock
+product: Windows
+targetos: Windows
+req.typenames: STOR_SPINLOCK
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dkmddi.DXGKCB_DESTROYCONTEXTALLOCATION
-title : DXGKCB_DESTROYCONTEXTALLOCATION
-author : windows-driver-content
-description : Called by a WDDM 1.2 or later display miniport driver to free a resource that was previously allocated for a GPU or device-specific context.
-old-location : display\dxgkcbdestroycontextallocation.htm
-old-project : display
-ms.assetid : f613e019-0b6d-43fc-a802-a6cd3803a00d
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkcbdestroycontextallocation, DxgkCbDestroyContextAllocation callback function [Display Devices], DxgkCbDestroyContextAllocation, DXGKCB_DESTROYCONTEXTALLOCATION, DXGKCB_DESTROYCONTEXTALLOCATION, d3dkmddi/DxgkCbDestroyContextAllocation
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
+UID: NC:d3dkmddi.DXGKCB_DESTROYCONTEXTALLOCATION
+title: DXGKCB_DESTROYCONTEXTALLOCATION
+author: windows-driver-content
+description: Called by a WDDM 1.2 or later display miniport driver to free a resource that was previously allocated for a GPU or device-specific context.
+old-location: display\dxgkcbdestroycontextallocation.htm
+old-project: display
+ms.assetid: f613e019-0b6d-43fc-a802-a6cd3803a00d
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkcbdestroycontextallocation, DxgkCbDestroyContextAllocation callback function [Display Devices], DxgkCbDestroyContextAllocation, DXGKCB_DESTROYCONTEXTALLOCATION, DXGKCB_DESTROYCONTEXTALLOCATION, d3dkmddi/DxgkCbDestroyContextAllocation
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	D3dkmddi.h
+apiname:
+-	DxgkCbDestroyContextAllocation
+product: Windows
+targetos: Windows
+req.typenames: DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NS:wwan._WWAN_MODEM_CONFIG_STATUS
-title : "_WWAN_MODEM_CONFIG_STATUS"
-author : windows-driver-content
-description : The WWAN_MODEM_CONFIG_STATUS structure represents a modem's configuration (config) status.
-old-location : netvista\wwan_modem_config_status.htm
-old-project : netvista
-ms.assetid : 3A13CFBC-DBB4-4BB1-ABA4-AB145AED07AA
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : wwan/PWWAN_MODEM_CONFIG_STATUS, WWAN_MODEM_CONFIG_STATUS, WWAN_MODEM_CONFIG_STATUS structure [Network Drivers Starting with Windows Vista], *PWWAN_MODEM_CONFIG_STATUS, _WWAN_MODEM_CONFIG_STATUS, wwan/WWAN_MODEM_CONFIG_STATUS, PWWAN_MODEM_CONFIG_STATUS, netvista.wwan_modem_config_status, PWWAN_MODEM_CONFIG_STATUS structure pointer [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wwan.h
-req.include-header : Wwan.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10, version 1709
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WWAN_MODEM_CONFIG_STATUS, *PWWAN_MODEM_CONFIG_STATUS
-req.product : Windows 10 or later.
+UID: NS:wwan._WWAN_MODEM_CONFIG_STATUS
+title: "_WWAN_MODEM_CONFIG_STATUS"
+author: windows-driver-content
+description: The WWAN_MODEM_CONFIG_STATUS structure represents a modem's configuration (config) status.
+old-location: netvista\wwan_modem_config_status.htm
+old-project: netvista
+ms.assetid: 3A13CFBC-DBB4-4BB1-ABA4-AB145AED07AA
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: wwan/PWWAN_MODEM_CONFIG_STATUS, WWAN_MODEM_CONFIG_STATUS, WWAN_MODEM_CONFIG_STATUS structure [Network Drivers Starting with Windows Vista], *PWWAN_MODEM_CONFIG_STATUS, _WWAN_MODEM_CONFIG_STATUS, wwan/WWAN_MODEM_CONFIG_STATUS, PWWAN_MODEM_CONFIG_STATUS, netvista.wwan_modem_config_status, PWWAN_MODEM_CONFIG_STATUS structure pointer [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wwan.h
+req.include-header: Wwan.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10, version 1709
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wwan.h
+apiname:
+-	WWAN_MODEM_CONFIG_STATUS
+product: Windows
+targetos: Windows
+req.typenames: WWAN_MODEM_CONFIG_STATUS, *PWWAN_MODEM_CONFIG_STATUS
+req.product: Windows 10 or later.
 ---
 
 # _WWAN_MODEM_CONFIG_STATUS structure

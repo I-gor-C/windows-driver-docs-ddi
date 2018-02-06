@@ -1,41 +1,46 @@
 ---
-UID : NS:irb._IDEREGISTERS
-title : "_IDEREGISTERS"
-author : windows-driver-content
-description : The IDEREGISTERS structure is used to report the contents of the IDE controller registers.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
-old-location : storage\ideregisters.htm
-old-project : storage
-ms.assetid : a3df8ce0-4414-49d1-a02c-3f5a3efc0de2
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : IDEREGISTERS, PIDEREGISTERS structure pointer [Storage Devices], _IDEREGISTERS, storage.ideregisters, PIDEREGISTERS, *PIDEREGISTERS, irb/PIDEREGISTERS, structs-ATA_8e024553-553c-4a64-9f74-7259f530b3b5.xml, IDEREGISTERS structure [Storage Devices], irb/IDEREGISTERS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : irb.h
-req.include-header : Irb.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : IDEREGISTERS, *PIDEREGISTERS
+UID: NS:irb._IDEREGISTERS
+title: "_IDEREGISTERS"
+author: windows-driver-content
+description: The IDEREGISTERS structure is used to report the contents of the IDE controller registers.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
+old-location: storage\ideregisters.htm
+old-project: storage
+ms.assetid: a3df8ce0-4414-49d1-a02c-3f5a3efc0de2
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: IDEREGISTERS, PIDEREGISTERS structure pointer [Storage Devices], _IDEREGISTERS, storage.ideregisters, PIDEREGISTERS, *PIDEREGISTERS, irb/PIDEREGISTERS, structs-ATA_8e024553-553c-4a64-9f74-7259f530b3b5.xml, IDEREGISTERS structure [Storage Devices], irb/IDEREGISTERS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: irb.h
+req.include-header: Irb.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	irb.h
+apiname:
+-	IDEREGISTERS
+product: Windows
+targetos: Windows
+req.typenames: IDEREGISTERS, *PIDEREGISTERS
 ---
 
 # _IDEREGISTERS structure

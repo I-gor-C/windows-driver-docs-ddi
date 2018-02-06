@@ -1,42 +1,50 @@
 ---
-UID : NF:wdfregistry.WdfRegistryOpenKey
-title : WdfRegistryOpenKey function
-author : windows-driver-content
-description : The WdfRegistryOpenKey method opens a specified registry key and creates a framework registry-key object that represents the registry key.
-old-location : wdf\wdfregistryopenkey.htm
-old-project : wdf
-ms.assetid : a79f6f98-1ebb-498e-9e20-cfdd22a0da7a
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdfregistry/WdfRegistryOpenKey, PFN_WDFREGISTRYOPENKEY, WdfRegistryOpenKey method, wdf.wdfregistryopenkey, kmdf.wdfregistryopenkey, DFRegKeyObjectRef_a53062c9-844d-4a0f-bfea-738b0adba93c.xml, WdfRegistryOpenKey
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfregistry.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_QUERY_INTERFACE_CONFIG, *PWDF_QUERY_INTERFACE_CONFIG
-req.product : Windows 10 or later.
+UID: NF:wdfregistry.WdfRegistryOpenKey
+title: WdfRegistryOpenKey function
+author: windows-driver-content
+description: The WdfRegistryOpenKey method opens a specified registry key and creates a framework registry-key object that represents the registry key.
+old-location: wdf\wdfregistryopenkey.htm
+old-project: wdf
+ms.assetid: a79f6f98-1ebb-498e-9e20-cfdd22a0da7a
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdfregistry/WdfRegistryOpenKey, PFN_WDFREGISTRYOPENKEY, WdfRegistryOpenKey method, wdf.wdfregistryopenkey, kmdf.wdfregistryopenkey, DFRegKeyObjectRef_a53062c9-844d-4a0f-bfea-738b0adba93c.xml, WdfRegistryOpenKey
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfregistry.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+-	WUDFx02000.dll
+-	WUDFx02000.dll.dll
+apiname:
+-	WdfRegistryOpenKey
+product: Windows
+targetos: Windows
+req.typenames: WDF_QUERY_INTERFACE_CONFIG, *PWDF_QUERY_INTERFACE_CONFIG
+req.product: Windows 10 or later.
 ---
 
 

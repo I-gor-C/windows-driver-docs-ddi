@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dkmddi.DXGKDDI_CREATEALLOCATION
-title : DXGKDDI_CREATEALLOCATION
-author : windows-driver-content
-description : The DxgkDdiCreateAllocation function creates allocations of system or video memory.
-old-location : display\dxgkddicreateallocation.htm
-old-project : display
-ms.assetid : a28287d6-4dfa-4db4-92df-bbcd9379a5b2
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkddicreateallocation, DxgkDdiCreateAllocation callback function [Display Devices], DxgkDdiCreateAllocation, DXGKDDI_CREATEALLOCATION, DXGKDDI_CREATEALLOCATION, d3dkmddi/DxgkDdiCreateAllocation, DmFunctions_fa00d14b-b5f1-4dde-8283-cc7b71911f76.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dkmddi.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
+UID: NC:d3dkmddi.DXGKDDI_CREATEALLOCATION
+title: DXGKDDI_CREATEALLOCATION
+author: windows-driver-content
+description: The DxgkDdiCreateAllocation function creates allocations of system or video memory.
+old-location: display\dxgkddicreateallocation.htm
+old-project: display
+ms.assetid: a28287d6-4dfa-4db4-92df-bbcd9379a5b2
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkddicreateallocation, DxgkDdiCreateAllocation callback function [Display Devices], DxgkDdiCreateAllocation, DXGKDDI_CREATEALLOCATION, DXGKDDI_CREATEALLOCATION, d3dkmddi/DxgkDdiCreateAllocation, DmFunctions_fa00d14b-b5f1-4dde-8283-cc7b71911f76.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dkmddi.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DxgkDdiCreateAllocation
+product: Windows
+targetos: Windows
+req.typenames: DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
 

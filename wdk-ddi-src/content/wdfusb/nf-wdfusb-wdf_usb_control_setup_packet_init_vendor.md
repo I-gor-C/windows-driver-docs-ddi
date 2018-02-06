@@ -1,42 +1,47 @@
 ---
-UID : NF:wdfusb.WDF_USB_CONTROL_SETUP_PACKET_INIT_VENDOR
-title : WDF_USB_CONTROL_SETUP_PACKET_INIT_VENDOR function
-author : windows-driver-content
-description : The WDF_USB_CONTROL_SETUP_PACKET_INIT_VENDOR function initializes a WDF_USB_CONTROL_SETUP_PACKET structure for a vendor-specific USB control transfer.
-old-location : wdf\wdf_usb_control_setup_packet_init_vendor.htm
-old-project : wdf
-ms.assetid : 58774dcf-f48c-4d39-acbe-fe09b4c52d81
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : DFUsbRef_e29c876f-b916-47a4-af86-2597c8ba3e21.xml, wdfusb/WDF_USB_CONTROL_SETUP_PACKET_INIT_VENDOR, WDF_USB_CONTROL_SETUP_PACKET_INIT_VENDOR, kmdf.wdf_usb_control_setup_packet_init_vendor, wdf.wdf_usb_control_setup_packet_init_vendor, WDF_USB_CONTROL_SETUP_PACKET_INIT_VENDOR function
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfusb.h
-req.include-header : Wdfusb.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfusb.WDF_USB_CONTROL_SETUP_PACKET_INIT_VENDOR
+title: WDF_USB_CONTROL_SETUP_PACKET_INIT_VENDOR function
+author: windows-driver-content
+description: The WDF_USB_CONTROL_SETUP_PACKET_INIT_VENDOR function initializes a WDF_USB_CONTROL_SETUP_PACKET structure for a vendor-specific USB control transfer.
+old-location: wdf\wdf_usb_control_setup_packet_init_vendor.htm
+old-project: wdf
+ms.assetid: 58774dcf-f48c-4d39-acbe-fe09b4c52d81
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: DFUsbRef_e29c876f-b916-47a4-af86-2597c8ba3e21.xml, wdfusb/WDF_USB_CONTROL_SETUP_PACKET_INIT_VENDOR, WDF_USB_CONTROL_SETUP_PACKET_INIT_VENDOR, kmdf.wdf_usb_control_setup_packet_init_vendor, wdf.wdf_usb_control_setup_packet_init_vendor, WDF_USB_CONTROL_SETUP_PACKET_INIT_VENDOR function
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfusb.h
+req.include-header: Wdfusb.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfusb.h
+apiname:
+-	WDF_USB_CONTROL_SETUP_PACKET_INIT_VENDOR
+product: Windows
+targetos: Windows
+req.typenames: WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
+req.product: Windows 10 or later.
 ---
 
 

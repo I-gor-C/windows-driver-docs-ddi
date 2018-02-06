@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmthk._D3DKMDT_DISPLAYMODE_FLAGS
-title : "_D3DKMDT_DISPLAYMODE_FLAGS"
-author : windows-driver-content
-description : The D3DKMDT_DISPLAYMODE_FLAGS structure identifies attributes of a display mode.
-old-location : display\d3dkmdt_displaymode_flags.htm
-old-project : display
-ms.assetid : 0b45cd69-5c9e-4772-a68f-d604806e7789
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DKMDT_DISPLAYMODE_FLAGS, OpenGL_Structs_64aa66c8-8323-4cee-b437-16b8f3c361c8.xml, d3dkmthk/D3DKMDT_DISPLAYMODE_FLAGS, _D3DKMDT_DISPLAYMODE_FLAGS, display.d3dkmdt_displaymode_flags, D3DKMDT_DISPLAYMODE_FLAGS structure [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMDT_DISPLAYMODE_FLAGS
+UID: NS:d3dkmthk._D3DKMDT_DISPLAYMODE_FLAGS
+title: "_D3DKMDT_DISPLAYMODE_FLAGS"
+author: windows-driver-content
+description: The D3DKMDT_DISPLAYMODE_FLAGS structure identifies attributes of a display mode.
+old-location: display\d3dkmdt_displaymode_flags.htm
+old-project: display
+ms.assetid: 0b45cd69-5c9e-4772-a68f-d604806e7789
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DKMDT_DISPLAYMODE_FLAGS, OpenGL_Structs_64aa66c8-8323-4cee-b437-16b8f3c361c8.xml, d3dkmthk/D3DKMDT_DISPLAYMODE_FLAGS, _D3DKMDT_DISPLAYMODE_FLAGS, display.d3dkmdt_displaymode_flags, D3DKMDT_DISPLAYMODE_FLAGS structure [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmthk.h
+apiname:
+-	D3DKMDT_DISPLAYMODE_FLAGS
+product: Windows
+targetos: Windows
+req.typenames: D3DKMDT_DISPLAYMODE_FLAGS
 ---
 
 # _D3DKMDT_DISPLAYMODE_FLAGS structure

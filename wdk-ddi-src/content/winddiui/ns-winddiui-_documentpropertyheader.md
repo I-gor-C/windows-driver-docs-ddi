@@ -1,42 +1,47 @@
 ---
-UID : NS:winddiui._DOCUMENTPROPERTYHEADER
-title : "_DOCUMENTPROPERTYHEADER"
-author : windows-driver-content
-description : The DOCUMENTPROPERTYHEADER structure is used as an input parameter to a printer interface DLL's DrvDocumentPropertySheets function.
-old-location : print\documentpropertyheader.htm
-old-project : print
-ms.assetid : 5aaf1f90-fb75-4e5a-9316-9212a21b8fed
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : winddiui/DOCUMENTPROPERTYHEADER, print.documentpropertyheader, winddiui/PDOCUMENTPROPERTYHEADER, print_interface-graphics_d12da62c-2384-4bc3-a83d-ed948460d718.xml, PDOCUMENTPROPERTYHEADER structure pointer [Print Devices], *PDOCUMENTPROPERTYHEADER, _DOCUMENTPROPERTYHEADER, DOCUMENTPROPERTYHEADER, PDOCUMENTPROPERTYHEADER, DOCUMENTPROPERTYHEADER structure [Print Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : winddiui.h
-req.include-header : Winddiui.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOCUMENTPROPERTYHEADER, *PDOCUMENTPROPERTYHEADER
-req.product : Windows 10 or later.
+UID: NS:winddiui._DOCUMENTPROPERTYHEADER
+title: "_DOCUMENTPROPERTYHEADER"
+author: windows-driver-content
+description: The DOCUMENTPROPERTYHEADER structure is used as an input parameter to a printer interface DLL's DrvDocumentPropertySheets function.
+old-location: print\documentpropertyheader.htm
+old-project: print
+ms.assetid: 5aaf1f90-fb75-4e5a-9316-9212a21b8fed
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: winddiui/DOCUMENTPROPERTYHEADER, print.documentpropertyheader, winddiui/PDOCUMENTPROPERTYHEADER, print_interface-graphics_d12da62c-2384-4bc3-a83d-ed948460d718.xml, PDOCUMENTPROPERTYHEADER structure pointer [Print Devices], *PDOCUMENTPROPERTYHEADER, _DOCUMENTPROPERTYHEADER, DOCUMENTPROPERTYHEADER, PDOCUMENTPROPERTYHEADER, DOCUMENTPROPERTYHEADER structure [Print Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: winddiui.h
+req.include-header: Winddiui.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	winddiui.h
+apiname:
+-	DOCUMENTPROPERTYHEADER
+product: Windows
+targetos: Windows
+req.typenames: DOCUMENTPROPERTYHEADER, *PDOCUMENTPROPERTYHEADER
+req.product: Windows 10 or later.
 ---
 
 # _DOCUMENTPROPERTYHEADER structure

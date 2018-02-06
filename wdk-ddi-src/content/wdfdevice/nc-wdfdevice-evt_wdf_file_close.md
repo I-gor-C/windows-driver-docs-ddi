@@ -1,42 +1,47 @@
 ---
-UID : NC:wdfdevice.EVT_WDF_FILE_CLOSE
-title : EVT_WDF_FILE_CLOSE
-author : windows-driver-content
-description : A driver's EvtFileClose callback function handles operations that must be performed when all of an application's accesses to a device have been closed.
-old-location : wdf\evtfileclose.htm
-old-project : wdf
-ms.assetid : 8ddcb9cb-d184-4ec8-a321-599394a8512e
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.evtfileclose, EvtFileClose callback function, EvtFileClose, EVT_WDF_FILE_CLOSE, EVT_WDF_FILE_CLOSE, wdfdevice/EvtFileClose, DFDeviceObjectGeneralRef_490bda33-9f36-43ab-9108-8622a3ea79b0.xml, kmdf.evtfileclose
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdfdevice.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_DEVICE_SHUTDOWN_FLAGS
-req.product : Windows 10 or later.
+UID: NC:wdfdevice.EVT_WDF_FILE_CLOSE
+title: EVT_WDF_FILE_CLOSE
+author: windows-driver-content
+description: A driver's EvtFileClose callback function handles operations that must be performed when all of an application's accesses to a device have been closed.
+old-location: wdf\evtfileclose.htm
+old-project: wdf
+ms.assetid: 8ddcb9cb-d184-4ec8-a321-599394a8512e
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.evtfileclose, EvtFileClose callback function, EvtFileClose, EVT_WDF_FILE_CLOSE, EVT_WDF_FILE_CLOSE, wdfdevice/EvtFileClose, DFDeviceObjectGeneralRef_490bda33-9f36-43ab-9108-8622a3ea79b0.xml, kmdf.evtfileclose
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdfdevice.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Wdfdevice.h
+apiname:
+-	EvtFileClose
+product: Windows
+targetos: Windows
+req.typenames: WDF_DEVICE_SHUTDOWN_FLAGS
+req.product: Windows 10 or later.
 ---
 
 

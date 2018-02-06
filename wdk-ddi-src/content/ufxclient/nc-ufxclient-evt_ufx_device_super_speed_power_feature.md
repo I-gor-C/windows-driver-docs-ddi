@@ -1,42 +1,47 @@
 ---
-UID : NC:ufxclient.EVT_UFX_DEVICE_SUPER_SPEED_POWER_FEATURE
-title : EVT_UFX_DEVICE_SUPER_SPEED_POWER_FEATURE
-author : windows-driver-content
-description : The client driver's implementation to set or clear the specified power feature on the function controller.
-old-location : buses\evt_ufx_device_super_speed_power_feature.htm
-old-project : usbref
-ms.assetid : 5A2B787B-13B8-48E9-B53E-7F6409820B88
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : buses.evt_ufx_device_super_speed_power_feature, EvtUfxDeviceSuperSpeedPowerFeature callback function [Buses], EvtUfxDeviceSuperSpeedPowerFeature, EVT_UFX_DEVICE_SUPER_SPEED_POWER_FEATURE, EVT_UFX_DEVICE_SUPER_SPEED_POWER_FEATURE, ufxclient/EvtUfxDeviceSuperSpeedPowerFeature, PFN_UFX_DEVICE_SUPER_SPEED_POWER_FEATURE callback function pointer [Buses], PFN_UFX_DEVICE_SUPER_SPEED_POWER_FEATURE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ufxclient.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUFX_HARDWARE_FAILURE_CONTEXT, UFX_HARDWARE_FAILURE_CONTEXT"
-req.product : Windows 10 or later.
+UID: NC:ufxclient.EVT_UFX_DEVICE_SUPER_SPEED_POWER_FEATURE
+title: EVT_UFX_DEVICE_SUPER_SPEED_POWER_FEATURE
+author: windows-driver-content
+description: The client driver's implementation to set or clear the specified power feature on the function controller.
+old-location: buses\evt_ufx_device_super_speed_power_feature.htm
+old-project: usbref
+ms.assetid: 5A2B787B-13B8-48E9-B53E-7F6409820B88
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: buses.evt_ufx_device_super_speed_power_feature, EvtUfxDeviceSuperSpeedPowerFeature callback function [Buses], EvtUfxDeviceSuperSpeedPowerFeature, EVT_UFX_DEVICE_SUPER_SPEED_POWER_FEATURE, EVT_UFX_DEVICE_SUPER_SPEED_POWER_FEATURE, ufxclient/EvtUfxDeviceSuperSpeedPowerFeature, PFN_UFX_DEVICE_SUPER_SPEED_POWER_FEATURE callback function pointer [Buses], PFN_UFX_DEVICE_SUPER_SPEED_POWER_FEATURE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ufxclient.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ufxclient.h
+apiname:
+-	PFN_UFX_DEVICE_SUPER_SPEED_POWER_FEATURE
+product: Windows
+targetos: Windows
+req.typenames: "*PUFX_HARDWARE_FAILURE_CONTEXT, UFX_HARDWARE_FAILURE_CONTEXT"
+req.product: Windows 10 or later.
 ---
 
 

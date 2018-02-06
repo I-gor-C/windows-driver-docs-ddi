@@ -1,41 +1,49 @@
 ---
-UID : NF:d3dkmthk.D3DKMTPollDisplayChildren
-title : D3DKMTPollDisplayChildren function
-author : windows-driver-content
-description : The D3DKMTPollDisplayChildren function queries for connectivity status of all child devices of the given adapter.
-old-location : display\d3dkmtpolldisplaychildren.htm
-old-project : display
-ms.assetid : 463831c1-d9b2-404d-91f3-78f495668fdf
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DKMTPollDisplayChildren function [Display Devices], d3dkmthk/D3DKMTPollDisplayChildren, D3DKMTPollDisplayChildren, OpenGL_Functions_dc39afab-758a-423a-9058-9d9ec091d4b2.xml, display.d3dkmtpolldisplaychildren
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Gdi32.lib
-req.dll : Gdi32.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_DRIVERVERSION
+UID: NF:d3dkmthk.D3DKMTPollDisplayChildren
+title: D3DKMTPollDisplayChildren function
+author: windows-driver-content
+description: The D3DKMTPollDisplayChildren function queries for connectivity status of all child devices of the given adapter.
+old-location: display\d3dkmtpolldisplaychildren.htm
+old-project: display
+ms.assetid: 463831c1-d9b2-404d-91f3-78f495668fdf
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DKMTPollDisplayChildren function [Display Devices], d3dkmthk/D3DKMTPollDisplayChildren, D3DKMTPollDisplayChildren, OpenGL_Functions_dc39afab-758a-423a-9058-9d9ec091d4b2.xml, display.d3dkmtpolldisplaychildren
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Gdi32.lib
+req.dll: Gdi32.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Gdi32.dll
+-	API-MS-Win-dx-d3dkmt-l1-1-0.dll
+-	API-MS-Win-dx-d3dkmt-l1-1-1.dll
+-	API-MS-Win-DX-D3DKMT-L1-1-2.dll
+apiname:
+-	D3DKMTPollDisplayChildren
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_DRIVERVERSION
 ---
 
 

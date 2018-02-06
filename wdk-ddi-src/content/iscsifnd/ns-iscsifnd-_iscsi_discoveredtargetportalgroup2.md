@@ -1,41 +1,46 @@
 ---
-UID : NS:iscsifnd._ISCSI_DiscoveredTargetPortalGroup2
-title : "_ISCSI_DiscoveredTargetPortalGroup2"
-author : windows-driver-content
-description : The ISCSI_DiscoveredTargetPortalGroup2 structure contains information about a discovered target portal group.
-old-location : storage\iscsi_discoveredtargetportalgroup2.htm
-old-project : storage
-ms.assetid : d852f062-3090-4a7a-bdb8-9dde93257a90
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : ISCSI_DiscoveredTargetPortalGroup2 structure [Storage Devices], iscsifnd/PISCSI_DiscoveredTargetPortalGroup2, iscsifnd/ISCSI_DiscoveredTargetPortalGroup2, storage.iscsi_discoveredtargetportalgroup2, PISCSI_DiscoveredTargetPortalGroup2, ISCSI_DiscoveredTargetPortalGroup2, structs-iSCSI_2135fea1-a4b9-401e-a7b3-9a1b1896fe28.xml, PISCSI_DiscoveredTargetPortalGroup2 structure pointer [Storage Devices], _ISCSI_DiscoveredTargetPortalGroup2, *PISCSI_DiscoveredTargetPortalGroup2
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : iscsifnd.h
-req.include-header : Iscsifnd.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : ISCSI_DiscoveredTargetPortalGroup2, *PISCSI_DiscoveredTargetPortalGroup2
+UID: NS:iscsifnd._ISCSI_DiscoveredTargetPortalGroup2
+title: "_ISCSI_DiscoveredTargetPortalGroup2"
+author: windows-driver-content
+description: The ISCSI_DiscoveredTargetPortalGroup2 structure contains information about a discovered target portal group.
+old-location: storage\iscsi_discoveredtargetportalgroup2.htm
+old-project: storage
+ms.assetid: d852f062-3090-4a7a-bdb8-9dde93257a90
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: ISCSI_DiscoveredTargetPortalGroup2 structure [Storage Devices], iscsifnd/PISCSI_DiscoveredTargetPortalGroup2, iscsifnd/ISCSI_DiscoveredTargetPortalGroup2, storage.iscsi_discoveredtargetportalgroup2, PISCSI_DiscoveredTargetPortalGroup2, ISCSI_DiscoveredTargetPortalGroup2, structs-iSCSI_2135fea1-a4b9-401e-a7b3-9a1b1896fe28.xml, PISCSI_DiscoveredTargetPortalGroup2 structure pointer [Storage Devices], _ISCSI_DiscoveredTargetPortalGroup2, *PISCSI_DiscoveredTargetPortalGroup2
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: iscsifnd.h
+req.include-header: Iscsifnd.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	iscsifnd.h
+apiname:
+-	ISCSI_DiscoveredTargetPortalGroup2
+product: Windows
+targetos: Windows
+req.typenames: ISCSI_DiscoveredTargetPortalGroup2, *PISCSI_DiscoveredTargetPortalGroup2
 ---
 
 # _ISCSI_DiscoveredTargetPortalGroup2 structure

@@ -1,41 +1,46 @@
 ---
-UID : NE:ntddrilapitypes.RILCALLTYPE
-title : RILCALLTYPE
-author : windows-driver-content
-description : This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
-old-location : netvista\rilcalltype.htm
-old-project : netvista
-ms.assetid : bd6b9e57-f50b-4743-9c51-066940aad200
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : ntddrilapitypes/RIL_CALLTYPE_DATA, ntddrilapitypes/RIL_CALLTYPE_USSD, RIL_CALLTYPE_MAX, RIL_CALLTYPE_IMS, ntddrilapitypes/RIL_CALLTYPE_IMS, RIL_CALLTYPE_DATA, ntddrilapitypes/RILCALLTYPE, ntddrilapitypes/RIL_CALLTYPE_SUPSVC, ntddrilapitypes/RIL_CALLTYPE_FAX, RIL_CALLTYPE_VOICE, RIL_CALLTYPE_VT, RIL_CALLTYPE_FAX, ntddrilapitypes/RIL_CALLTYPE_VT, ntddrilapitypes/RIL_CALLTYPE_PTT, ntddrilapitypes/RIL_CALLTYPE_MAX, RILCALLTYPE, netvista.rilcalltype, RIL_CALLTYPE_SUPSVC, RILCALLTYPE enumeration [Network Drivers Starting with Windows Vista], RIL_CALLTYPE_PTT, RIL_CALLTYPE_USSD, ntddrilapitypes/RIL_CALLTYPE_VOICE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : ntddrilapitypes.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RILCALLTYPE
+UID: NE:ntddrilapitypes.RILCALLTYPE
+title: RILCALLTYPE
+author: windows-driver-content
+description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+old-location: netvista\rilcalltype.htm
+old-project: netvista
+ms.assetid: bd6b9e57-f50b-4743-9c51-066940aad200
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: ntddrilapitypes/RIL_CALLTYPE_DATA, ntddrilapitypes/RIL_CALLTYPE_USSD, RIL_CALLTYPE_MAX, RIL_CALLTYPE_IMS, ntddrilapitypes/RIL_CALLTYPE_IMS, RIL_CALLTYPE_DATA, ntddrilapitypes/RILCALLTYPE, ntddrilapitypes/RIL_CALLTYPE_SUPSVC, ntddrilapitypes/RIL_CALLTYPE_FAX, RIL_CALLTYPE_VOICE, RIL_CALLTYPE_VT, RIL_CALLTYPE_FAX, ntddrilapitypes/RIL_CALLTYPE_VT, ntddrilapitypes/RIL_CALLTYPE_PTT, ntddrilapitypes/RIL_CALLTYPE_MAX, RILCALLTYPE, netvista.rilcalltype, RIL_CALLTYPE_SUPSVC, RILCALLTYPE enumeration [Network Drivers Starting with Windows Vista], RIL_CALLTYPE_PTT, RIL_CALLTYPE_USSD, ntddrilapitypes/RIL_CALLTYPE_VOICE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: ntddrilapitypes.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddrilapitypes.h
+apiname:
+-	RILCALLTYPE
+product: Windows
+targetos: Windows
+req.typenames: RILCALLTYPE
 ---
 
 # RILCALLTYPE Enumeration
@@ -59,56 +64,56 @@ typedef enum _RILCALLTYPE {
 ## Constants
 
 <table>
-
-<tr>
-<td>RIL_CALLTYPE_DATA</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_CALLTYPE_FAX</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_CALLTYPE_IMS</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_CALLTYPE_MAX</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_CALLTYPE_PTT</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_CALLTYPE_SUPSVC</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_CALLTYPE_UNKNOWN</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_CALLTYPE_USSD</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_CALLTYPE_VOICE</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_CALLTYPE_VT</td>
-<td></td>
-</tr>
+            
+                <tr>
+                    <td>RIL_CALLTYPE_DATA</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_CALLTYPE_FAX</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_CALLTYPE_IMS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_CALLTYPE_MAX</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_CALLTYPE_PTT</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_CALLTYPE_SUPSVC</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_CALLTYPE_UNKNOWN</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_CALLTYPE_USSD</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_CALLTYPE_VOICE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_CALLTYPE_VT</td>
+                    <td></td>
+                </tr>
 </table>
 
 

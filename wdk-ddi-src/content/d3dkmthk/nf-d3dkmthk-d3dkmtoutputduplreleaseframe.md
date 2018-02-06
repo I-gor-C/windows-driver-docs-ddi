@@ -1,41 +1,49 @@
 ---
-UID : NF:d3dkmthk.D3DKMTOutputDuplReleaseFrame
-title : D3DKMTOutputDuplReleaseFrame function
-author : windows-driver-content
-description : Indicates that the driver has finished processing the duplicated desktop image.
-old-location : display\d3dkmtoutputduplreleaseframe.htm
-old-project : display
-ms.assetid : 07bbc201-0320-4f26-be0a-27c06763813f
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : PFND3DKMT_OUTPUTDUPLRELEASEFRAME, d3dkmthk/D3DKMTOutputDuplReleaseFrame, display.d3dkmtoutputduplreleaseframe, D3DKMTOutputDuplReleaseFrame, D3DKMTOutputDuplReleaseFrame function [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Universal
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Gdi32.lib
-req.dll : Gdi32.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_DRIVERVERSION
+UID: NF:d3dkmthk.D3DKMTOutputDuplReleaseFrame
+title: D3DKMTOutputDuplReleaseFrame function
+author: windows-driver-content
+description: Indicates that the driver has finished processing the duplicated desktop image.
+old-location: display\d3dkmtoutputduplreleaseframe.htm
+old-project: display
+ms.assetid: 07bbc201-0320-4f26-be0a-27c06763813f
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: PFND3DKMT_OUTPUTDUPLRELEASEFRAME, d3dkmthk/D3DKMTOutputDuplReleaseFrame, display.d3dkmtoutputduplreleaseframe, D3DKMTOutputDuplReleaseFrame, D3DKMTOutputDuplReleaseFrame function [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Universal
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Gdi32.lib
+req.dll: Gdi32.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Gdi32.dll
+-	API-MS-Win-dx-d3dkmt-l1-1-0.dll
+-	API-MS-Win-dx-d3dkmt-l1-1-1.dll
+-	API-MS-Win-DX-D3DKMT-L1-1-2.dll
+apiname:
+-	D3DKMTOutputDuplReleaseFrame
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_DRIVERVERSION
 ---
 
 

@@ -1,42 +1,48 @@
 ---
-UID : NF:wdm.ZwOpenEvent
-title : ZwOpenEvent function
-author : windows-driver-content
-description : The ZwOpenEvent routine opens a handle to an existing named event object with the specified desired access.
-old-location : kernel\zwopenevent.htm
-old-project : kernel
-ms.assetid : 1facaf24-ed94-4516-b9d6-bdcd8ac4b9e9
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : k111_b2349294-0e16-43ef-95cb-eecd213374b6.xml, ZwOpenEvent routine [Kernel-Mode Driver Architecture], kernel.zwopenevent, NtOpenEvent, wdm/NtOpenEvent, wdm/ZwOpenEvent, ZwOpenEvent
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows Server 2003.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ZwOpenEvent
+title: ZwOpenEvent function
+author: windows-driver-content
+description: The ZwOpenEvent routine opens a handle to an existing named event object with the specified desired access.
+old-location: kernel\zwopenevent.htm
+old-project: kernel
+ms.assetid: 1facaf24-ed94-4516-b9d6-bdcd8ac4b9e9
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: k111_b2349294-0e16-43ef-95cb-eecd213374b6.xml, ZwOpenEvent routine [Kernel-Mode Driver Architecture], kernel.zwopenevent, NtOpenEvent, wdm/NtOpenEvent, wdm/ZwOpenEvent, ZwOpenEvent
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows Server 2003.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ZwOpenEvent
+-	NtOpenEvent
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

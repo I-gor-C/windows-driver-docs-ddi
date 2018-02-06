@@ -1,41 +1,49 @@
 ---
-UID : NF:dbgeng.IDebugDataSpaces4.ReadPhysical
-title : IDebugDataSpaces4::ReadPhysical method
-author : windows-driver-content
-description : The ReadPhysical method reads the target's memory from the specified physical address.
-old-location : debugger\readphysical3.htm
-old-project : debugger
-ms.assetid : 8df51985-9208-46ce-8802-6bc5ec707ab2
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugDataSpaces3 interface [Windows Debugging], ReadPhysical method, IDebugDataSpaces3::ReadPhysical, ReadPhysical method [Windows Debugging], IDebugDataSpaces interface, IDebugDataSpaces::ReadPhysical, ReadPhysical, ReadPhysical method [Windows Debugging], IDebugDataSpaces2 interface, dbgeng/IDebugDataSpaces4::ReadPhysical, dbgeng/IDebugDataSpaces2::ReadPhysical, IDebugDataSpaces_5be1f680-1177-4cdf-a4d8-5868644a51af.xml, IDebugDataSpaces4 interface [Windows Debugging], ReadPhysical method, IDebugDataSpaces4::ReadPhysical, ReadPhysical method [Windows Debugging], ReadPhysical method [Windows Debugging], IDebugDataSpaces3 interface, dbgeng/IDebugDataSpaces::ReadPhysical, IDebugDataSpaces2::ReadPhysical, IDebugDataSpaces4, dbgeng/IDebugDataSpaces3::ReadPhysical, IDebugDataSpaces2 interface [Windows Debugging], ReadPhysical method, IDebugDataSpaces interface [Windows Debugging], ReadPhysical method, ReadPhysical method [Windows Debugging], IDebugDataSpaces4 interface, debugger.readphysical3
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugDataSpaces4.ReadPhysical
+title: IDebugDataSpaces4::ReadPhysical method
+author: windows-driver-content
+description: The ReadPhysical method reads the target's memory from the specified physical address.
+old-location: debugger\readphysical3.htm
+old-project: debugger
+ms.assetid: 8df51985-9208-46ce-8802-6bc5ec707ab2
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugDataSpaces3 interface [Windows Debugging], ReadPhysical method, IDebugDataSpaces3::ReadPhysical, ReadPhysical method [Windows Debugging], IDebugDataSpaces interface, IDebugDataSpaces::ReadPhysical, ReadPhysical, ReadPhysical method [Windows Debugging], IDebugDataSpaces2 interface, dbgeng/IDebugDataSpaces4::ReadPhysical, dbgeng/IDebugDataSpaces2::ReadPhysical, IDebugDataSpaces_5be1f680-1177-4cdf-a4d8-5868644a51af.xml, IDebugDataSpaces4 interface [Windows Debugging], ReadPhysical method, IDebugDataSpaces4::ReadPhysical, ReadPhysical method [Windows Debugging], ReadPhysical method [Windows Debugging], IDebugDataSpaces3 interface, dbgeng/IDebugDataSpaces::ReadPhysical, IDebugDataSpaces2::ReadPhysical, IDebugDataSpaces4, dbgeng/IDebugDataSpaces3::ReadPhysical, IDebugDataSpaces2 interface [Windows Debugging], ReadPhysical method, IDebugDataSpaces interface [Windows Debugging], ReadPhysical method, ReadPhysical method [Windows Debugging], IDebugDataSpaces4 interface, debugger.readphysical3
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugDataSpaces.ReadPhysical
+-	IDebugDataSpaces2.ReadPhysical
+-	IDebugDataSpaces3.ReadPhysical
+-	IDebugDataSpaces4.ReadPhysical
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

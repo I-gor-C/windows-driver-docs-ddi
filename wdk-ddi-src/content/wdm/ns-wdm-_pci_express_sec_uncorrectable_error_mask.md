@@ -1,42 +1,47 @@
 ---
-UID : NS:wdm._PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_MASK
-title : "_PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_MASK"
-author : windows-driver-content
-description : The PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_MASK structure describes a PCI Express (PCIe) secondary uncorrectable error mask register of a PCIe advanced error reporting capability structure.
-old-location : pci\pci_express_sec_uncorrectable_error_mask.htm
-old-project : PCI
-ms.assetid : 99387bcc-301d-4406-bcff-fb5569c88c90
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_MASK, PPCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_MASK, PCI.pci_express_sec_uncorrectable_error_mask, wdm/PPCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_MASK, *PPCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_MASK, wdm/PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_MASK, PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_MASK union [Buses], pci_struct_80f14fae-7c43-4a78-bdb7-211abd0e43fd.xml, _PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_MASK, PPCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_MASK union pointer [Buses]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : Ntddk.h, Wdm.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_MASK, PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_MASK"
-req.product : Windows 10 or later.
+UID: NS:wdm._PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_MASK
+title: "_PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_MASK"
+author: windows-driver-content
+description: The PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_MASK structure describes a PCI Express (PCIe) secondary uncorrectable error mask register of a PCIe advanced error reporting capability structure.
+old-location: pci\pci_express_sec_uncorrectable_error_mask.htm
+old-project: PCI
+ms.assetid: 99387bcc-301d-4406-bcff-fb5569c88c90
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_MASK, PPCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_MASK, PCI.pci_express_sec_uncorrectable_error_mask, wdm/PPCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_MASK, *PPCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_MASK, wdm/PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_MASK, PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_MASK union [Buses], pci_struct_80f14fae-7c43-4a78-bdb7-211abd0e43fd.xml, _PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_MASK, PPCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_MASK union pointer [Buses]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: Ntddk.h, Wdm.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdm.h
+apiname:
+-	PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_MASK
+product: Windows
+targetos: Windows
+req.typenames: "*PPCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_MASK, PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_MASK"
+req.product: Windows 10 or later.
 ---
 
 # _PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_MASK structure

@@ -1,41 +1,46 @@
 ---
-UID : NE:ntddndis._NDIS_DEVICE_POWER_STATE
-title : "_NDIS_DEVICE_POWER_STATE"
-author : windows-driver-content
-description : The NDIS_DEVICE_POWER_STATE enumeration defines device power state values.
-old-location : netvista\ndis_device_power_state.htm
-old-project : netvista
-ms.assetid : d241b0ee-7b13-453d-ac6a-015b82effb95
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NdisDeviceStateD3, NDIS_DEVICE_POWER_STATE, ntddndis/NdisDeviceStateD1, PNDIS_DEVICE_POWER_STATE, ntddndis/NdisDeviceStateD0, NdisDeviceStateD0, NdisDeviceStateD2, _NDIS_DEVICE_POWER_STATE, PNDIS_DEVICE_POWER_STATE enumeration pointer [Network Drivers Starting with Windows Vista], netvista.ndis_device_power_state, ntddndis/NdisDeviceStateMaximum, ntddndis/NdisDeviceStateD2, NDIS_DEVICE_POWER_STATE enumeration [Network Drivers Starting with Windows Vista], ntddndis/NDIS_DEVICE_POWER_STATE, NdisDeviceStateUnspecified, ntddndis/NdisDeviceStateD3, NdisDeviceStateMaximum, ntddndis/NdisDeviceStateUnspecified, *PNDIS_DEVICE_POWER_STATE, NdisDeviceStateD1, ntddndis/PNDIS_DEVICE_POWER_STATE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : ntddndis.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_DEVICE_POWER_STATE, *PNDIS_DEVICE_POWER_STATE
+UID: NE:ntddndis._NDIS_DEVICE_POWER_STATE
+title: "_NDIS_DEVICE_POWER_STATE"
+author: windows-driver-content
+description: The NDIS_DEVICE_POWER_STATE enumeration defines device power state values.
+old-location: netvista\ndis_device_power_state.htm
+old-project: netvista
+ms.assetid: d241b0ee-7b13-453d-ac6a-015b82effb95
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NdisDeviceStateD3, NDIS_DEVICE_POWER_STATE, ntddndis/NdisDeviceStateD1, PNDIS_DEVICE_POWER_STATE, ntddndis/NdisDeviceStateD0, NdisDeviceStateD0, NdisDeviceStateD2, _NDIS_DEVICE_POWER_STATE, PNDIS_DEVICE_POWER_STATE enumeration pointer [Network Drivers Starting with Windows Vista], netvista.ndis_device_power_state, ntddndis/NdisDeviceStateMaximum, ntddndis/NdisDeviceStateD2, NDIS_DEVICE_POWER_STATE enumeration [Network Drivers Starting with Windows Vista], ntddndis/NDIS_DEVICE_POWER_STATE, NdisDeviceStateUnspecified, ntddndis/NdisDeviceStateD3, NdisDeviceStateMaximum, ntddndis/NdisDeviceStateUnspecified, *PNDIS_DEVICE_POWER_STATE, NdisDeviceStateD1, ntddndis/PNDIS_DEVICE_POWER_STATE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: ntddndis.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddndis.h
+apiname:
+-	NDIS_DEVICE_POWER_STATE
+product: Windows
+targetos: Windows
+req.typenames: NDIS_DEVICE_POWER_STATE, *PNDIS_DEVICE_POWER_STATE
 ---
 
 # _NDIS_DEVICE_POWER_STATE Enumeration
@@ -72,41 +77,41 @@ typedef enum _NDIS_DEVICE_POWER_STATE {
 ## Constants
 
 <table>
-
-<tr>
-<td>NdisDeviceStateD0</td>
-<td>Device power state D0.</td>
-</tr>
-
-<tr>
-<td>NdisDeviceStateD1</td>
-<td>Device power state D1.</td>
-</tr>
-
-<tr>
-<td>NdisDeviceStateD2</td>
-<td>Device power state D2.</td>
-</tr>
-
-<tr>
-<td>NdisDeviceStateD3</td>
-<td>Device power state D3.</td>
-</tr>
-
-<tr>
-<td>NdisDeviceStateMaximum</td>
-<td>The maximum value for this enumeration. Reserved for system use. Do not use this value in your driver. This value might change in future versions of NDIS header files and binaries.</td>
-</tr>
-
-<tr>
-<td>NdisDeviceStateUnspecified</td>
-<td>The device does not support power management.</td>
-</tr>
+            
+                <tr>
+                    <td>NdisDeviceStateD0</td>
+                    <td>Device power state D0.</td>
+                </tr>
+            
+                <tr>
+                    <td>NdisDeviceStateD1</td>
+                    <td>Device power state D1.</td>
+                </tr>
+            
+                <tr>
+                    <td>NdisDeviceStateD2</td>
+                    <td>Device power state D2.</td>
+                </tr>
+            
+                <tr>
+                    <td>NdisDeviceStateD3</td>
+                    <td>Device power state D3.</td>
+                </tr>
+            
+                <tr>
+                    <td>NdisDeviceStateMaximum</td>
+                    <td>The maximum value for this enumeration. Reserved for system use. Do not use this value in your driver. This value might change in future versions of NDIS header files and binaries.</td>
+                </tr>
+            
+                <tr>
+                    <td>NdisDeviceStateUnspecified</td>
+                    <td>The device does not support power management.</td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-Depending on the capabilities of the network adapter and its miniport driver, the device might be able to generate a wake-up signal from device states D0 through D3.
+        Depending on the capabilities of the network adapter and its miniport driver, the device might be able to generate a wake-up signal from device states D0 through D3.
 <div class="alert"><b>Note</b>  If the wake-up signal is generated from D0, the signal does not cause a system wake-up. However, the wake-up signal can be used to signal a run-time event.</div><div> </div><b>NDIS_DEVICE_POWER_STATE</b> enumeration values are used in the <a href="..\ntddndis\ns-ntddndis-_ndis_pm_capabilities.md">NDIS_PM_CAPABILITIES</a>, <a href="..\ntddndis\ns-ntddndis-_ndis_sriov_set_vf_power_state_parameters.md">NDIS_SRIOV_SET_VF_POWER_STATE_PARAMETERS</a>,  and <a href="..\ndis\ns-ndis-_net_pnp_event.md">NET_PNP_EVENT</a> structures, the <a href="..\ndis\nf-ndis-ndismidlenotificationconfirm.md">NdisMIdleNotificationConfirm</a> function, and the <a href="https://msdn.microsoft.com/library/windows/hardware/ff569774">OID_PNP_CAPABILITIES</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff569778">OID_PNP_QUERY_POWER</a>, and <a href="https://msdn.microsoft.com/library/windows/hardware/ff569780">OID_PNP_SET_POWER</a> OID requests.
 
 ## Requirements
@@ -114,9 +119,9 @@ Depending on the capabilities of the network adapter and its miniport driver, th
 | ---- |:---- |
 | **Header** | ntddndis.h |
 
-## See Also
+    ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff569774">OID_PNP_CAPABILITIES</a>
+        <a href="https://msdn.microsoft.com/library/windows/hardware/ff569774">OID_PNP_CAPABILITIES</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569780">OID_PNP_SET_POWER</a>
 

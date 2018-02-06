@@ -1,41 +1,46 @@
 ---
-UID : NF:ntintsafe.RtlUInt8Mult
-title : RtlUInt8Mult function
-author : windows-driver-content
-description : Multiplies one value of type UINT8 by another.
-old-location : kernel\rtluint8mult.htm
-old-project : kernel
-ms.assetid : 3F9E47F5-1DE3-4949-BE92-8C8F571BFD3D
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : RtlUInt8Mult function [Kernel-Mode Driver Architecture], RtlUInt8Mult, kernel.rtluint8mult, ntintsafe/RtlUInt8Mult
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntintsafe.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PUBLIC_OBJECT_TYPE_INFORMATION, *PPUBLIC_OBJECT_TYPE_INFORMATION
+UID: NF:ntintsafe.RtlUInt8Mult
+title: RtlUInt8Mult function
+author: windows-driver-content
+description: Multiplies one value of type UINT8 by another.
+old-location: kernel\rtluint8mult.htm
+old-project: kernel
+ms.assetid: 3F9E47F5-1DE3-4949-BE92-8C8F571BFD3D
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: RtlUInt8Mult function [Kernel-Mode Driver Architecture], RtlUInt8Mult, kernel.rtluint8mult, ntintsafe/RtlUInt8Mult
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntintsafe.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntintsafe.h
+apiname:
+-	RtlUInt8Mult
+product: Windows
+targetos: Windows
+req.typenames: PUBLIC_OBJECT_TYPE_INFORMATION, *PPUBLIC_OBJECT_TYPE_INFORMATION
 ---
 
 

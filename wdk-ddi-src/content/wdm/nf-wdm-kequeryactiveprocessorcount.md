@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.KeQueryActiveProcessorCount
-title : KeQueryActiveProcessorCount function
-author : windows-driver-content
-description : The KeQueryActiveProcessorCount routine returns the number of currently active processors.
-old-location : kernel\kequeryactiveprocessorcount.htm
-old-project : kernel
-ms.assetid : 4369ad33-ba4a-45db-9a41-e77d6c55da53
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : KeQueryActiveProcessorCount routine [Kernel-Mode Driver Architecture], k105_23574ace-ab66-43bb-976f-ca7310cece9a.xml, KeQueryActiveProcessorCount, wdm/KeQueryActiveProcessorCount, kernel.kequeryactiveprocessorcount
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.KeQueryActiveProcessorCount
+title: KeQueryActiveProcessorCount function
+author: windows-driver-content
+description: The KeQueryActiveProcessorCount routine returns the number of currently active processors.
+old-location: kernel\kequeryactiveprocessorcount.htm
+old-project: kernel
+ms.assetid: 4369ad33-ba4a-45db-9a41-e77d6c55da53
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: KeQueryActiveProcessorCount routine [Kernel-Mode Driver Architecture], k105_23574ace-ab66-43bb-976f-ca7310cece9a.xml, KeQueryActiveProcessorCount, wdm/KeQueryActiveProcessorCount, kernel.kequeryactiveprocessorcount
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	KeQueryActiveProcessorCount
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

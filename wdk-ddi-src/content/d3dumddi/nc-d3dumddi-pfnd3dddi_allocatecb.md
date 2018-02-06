@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_ALLOCATECB
-title : PFND3DDDI_ALLOCATECB
-author : windows-driver-content
-description : The pfnAllocateCb function allocates system or video memory.
-old-location : display\pfnallocatecb.htm
-old-project : display
-ms.assetid : a61e6c6a-3992-429c-ad8c-5f1a61dc7b8b
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.pfnallocatecb, pfnAllocateCb callback function [Display Devices], pfnAllocateCb, PFND3DDDI_ALLOCATECB, PFND3DDDI_ALLOCATECB, d3dumddi/pfnAllocateCb, D3Druntime_Functions_1339f95d-018f-4153-b5b8-6753c38babd7.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_ALLOCATECB
+title: PFND3DDDI_ALLOCATECB
+author: windows-driver-content
+description: The pfnAllocateCb function allocates system or video memory.
+old-location: display\pfnallocatecb.htm
+old-project: display
+ms.assetid: a61e6c6a-3992-429c-ad8c-5f1a61dc7b8b
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.pfnallocatecb, pfnAllocateCb callback function [Display Devices], pfnAllocateCb, PFND3DDDI_ALLOCATECB, PFND3DDDI_ALLOCATECB, d3dumddi/pfnAllocateCb, D3Druntime_Functions_1339f95d-018f-4153-b5b8-6753c38babd7.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	pfnAllocateCb
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

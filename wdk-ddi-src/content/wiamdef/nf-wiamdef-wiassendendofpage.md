@@ -1,42 +1,47 @@
 ---
-UID : NF:wiamdef.wiasSendEndOfPage
-title : wiasSendEndOfPage function
-author : windows-driver-content
-description : The wiasSendEndOfPage function calls the client callback routine during a data transfer, sending the current total page count.
-old-location : image\wiassendendofpage.htm
-old-project : image
-ms.assetid : 107cd468-bc39-4672-9356-e5329b36277b
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : wiasSendEndOfPage, image.wiassendendofpage, wiamdef/wiasSendEndOfPage, wiasFncs_c8a81130-c832-40d8-8a62-619d04d8d3dc.xml, wiasSendEndOfPage function [Imaging Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wiamdef.h
-req.include-header : Wiamdef.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wiaservc.lib
-req.dll : Wiaservc.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*LPDEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2, DEVICEDIALOGDATA2"
-req.product : Windows 10 or later.
+UID: NF:wiamdef.wiasSendEndOfPage
+title: wiasSendEndOfPage function
+author: windows-driver-content
+description: The wiasSendEndOfPage function calls the client callback routine during a data transfer, sending the current total page count.
+old-location: image\wiassendendofpage.htm
+old-project: image
+ms.assetid: 107cd468-bc39-4672-9356-e5329b36277b
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: wiasSendEndOfPage, image.wiassendendofpage, wiamdef/wiasSendEndOfPage, wiasFncs_c8a81130-c832-40d8-8a62-619d04d8d3dc.xml, wiasSendEndOfPage function [Imaging Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wiamdef.h
+req.include-header: Wiamdef.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wiaservc.lib
+req.dll: Wiaservc.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Wiaservc.dll
+apiname:
+-	wiasSendEndOfPage
+product: Windows
+targetos: Windows
+req.typenames: "*LPDEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2, DEVICEDIALOGDATA2"
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsFilterGetChildPinCount
-title : KsFilterGetChildPinCount function
-author : windows-driver-content
-description : The KsFilterGetChildPinCountfunctionreturns the number of pins of a given type that are currently instantiated on a given filter.
-old-location : stream\ksfiltergetchildpincount.htm
-old-project : stream
-ms.assetid : 29e78bc3-0dc2-4e76-b683-c1e9a2d454d4
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ks/KsFilterGetChildPinCount, avfunc_cddbf6bc-da19-47a6-96d5-0d4151e70ff8.xml, KsFilterGetChildPinCount, stream.ksfiltergetchildpincount, KsFilterGetChildPinCount function [Streaming Media Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsFilterGetChildPinCount
+title: KsFilterGetChildPinCount function
+author: windows-driver-content
+description: The KsFilterGetChildPinCountfunctionreturns the number of pins of a given type that are currently instantiated on a given filter.
+old-location: stream\ksfiltergetchildpincount.htm
+old-project: stream
+ms.assetid: 29e78bc3-0dc2-4e76-b683-c1e9a2d454d4
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ks/KsFilterGetChildPinCount, avfunc_cddbf6bc-da19-47a6-96d5-0d4151e70ff8.xml, KsFilterGetChildPinCount, stream.ksfiltergetchildpincount, KsFilterGetChildPinCount function [Streaming Media Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsFilterGetChildPinCount
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

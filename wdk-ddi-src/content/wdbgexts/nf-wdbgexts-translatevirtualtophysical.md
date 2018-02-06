@@ -1,42 +1,47 @@
 ---
-UID : NF:wdbgexts.TranslateVirtualToPhysical
-title : TranslateVirtualToPhysical function
-author : windows-driver-content
-description : The TranslateVirtualToPhysical function translates a virtual memory address into a physical memory address.
-old-location : debugger\translatevirtualtophysical.htm
-old-project : debugger
-ms.assetid : 803f766a-e02f-4b9c-bfe0-6197e0f2855c
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : debugger.translatevirtualtophysical, TranslateVirtualToPhysical, wdbgexts/TranslateVirtualToPhysical, TranslateVirtualToPhysical function [Windows Debugging], WdbgExts_Ref_ec3ff314-8800-4f77-a40e-e127e6cf0133.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdbgexts.h
-req.include-header : Wdbgexts.h, Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXT_TDOP
-req.product : Windows 10 or later.
+UID: NF:wdbgexts.TranslateVirtualToPhysical
+title: TranslateVirtualToPhysical function
+author: windows-driver-content
+description: The TranslateVirtualToPhysical function translates a virtual memory address into a physical memory address.
+old-location: debugger\translatevirtualtophysical.htm
+old-project: debugger
+ms.assetid: 803f766a-e02f-4b9c-bfe0-6197e0f2855c
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: debugger.translatevirtualtophysical, TranslateVirtualToPhysical, wdbgexts/TranslateVirtualToPhysical, TranslateVirtualToPhysical function [Windows Debugging], WdbgExts_Ref_ec3ff314-8800-4f77-a40e-e127e6cf0133.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdbgexts.h
+req.include-header: Wdbgexts.h, Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdbgexts.h
+apiname:
+-	TranslateVirtualToPhysical
+product: Windows
+targetos: Windows
+req.typenames: EXT_TDOP
+req.product: Windows 10 or later.
 ---
 
 

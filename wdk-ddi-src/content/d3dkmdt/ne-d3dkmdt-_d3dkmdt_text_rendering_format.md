@@ -1,41 +1,46 @@
 ---
-UID : NE:d3dkmdt._D3DKMDT_TEXT_RENDERING_FORMAT
-title : "_D3DKMDT_TEXT_RENDERING_FORMAT"
-author : windows-driver-content
-description : The D3DKMDT_TEXT_RENDERING_FORMAT enumeration is currently not used.
-old-location : display\d3dkmdt_text_rendering_format.htm
-old-project : display
-ms.assetid : 73ec5d3c-d8f6-4db9-b55f-317eab3b4a39
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.d3dkmdt_text_rendering_format, d3dkmdt/D3DKMDT_TEXT_RENDERING_FORMAT, D3DKMDT_TEXT_RENDERING_FORMAT enumeration [Display Devices], DmEnums_f7f70f44-9d28-46c2-8c8f-35d13dc3a459.xml, d3dkmdt/D3DKMDT_TRF_UNINITIALIZED, D3DKMDT_TEXT_RENDERING_FORMAT, D3DKMDT_TRF_UNINITIALIZED, _D3DKMDT_TEXT_RENDERING_FORMAT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : d3dkmdt.h
-req.include-header : D3dkmdt.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMDT_TEXT_RENDERING_FORMAT
+UID: NE:d3dkmdt._D3DKMDT_TEXT_RENDERING_FORMAT
+title: "_D3DKMDT_TEXT_RENDERING_FORMAT"
+author: windows-driver-content
+description: The D3DKMDT_TEXT_RENDERING_FORMAT enumeration is currently not used.
+old-location: display\d3dkmdt_text_rendering_format.htm
+old-project: display
+ms.assetid: 73ec5d3c-d8f6-4db9-b55f-317eab3b4a39
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.d3dkmdt_text_rendering_format, d3dkmdt/D3DKMDT_TEXT_RENDERING_FORMAT, D3DKMDT_TEXT_RENDERING_FORMAT enumeration [Display Devices], DmEnums_f7f70f44-9d28-46c2-8c8f-35d13dc3a459.xml, d3dkmdt/D3DKMDT_TRF_UNINITIALIZED, D3DKMDT_TEXT_RENDERING_FORMAT, D3DKMDT_TRF_UNINITIALIZED, _D3DKMDT_TEXT_RENDERING_FORMAT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: d3dkmdt.h
+req.include-header: D3dkmdt.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmdt.h
+apiname:
+-	D3DKMDT_TEXT_RENDERING_FORMAT
+product: Windows
+targetos: Windows
+req.typenames: D3DKMDT_TEXT_RENDERING_FORMAT
 ---
 
 # _D3DKMDT_TEXT_RENDERING_FORMAT Enumeration
@@ -51,16 +56,16 @@ typedef enum _D3DKMDT_TEXT_RENDERING_FORMAT {
 ## Constants
 
 <table>
-
-<tr>
-<td>D3DKMDT_TRF_UNINITIALIZED</td>
-<td>Indicates that a variable of type D3DKMDT_TEXT_RENDERING_FORMAT has not yet been assigned a meaningful value.</td>
-</tr>
+            
+                <tr>
+                    <td>D3DKMDT_TRF_UNINITIALIZED</td>
+                    <td>Indicates that a variable of type D3DKMDT_TEXT_RENDERING_FORMAT has not yet been assigned a meaningful value.</td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-The <b>Format.Text</b> member of the <a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_vidpn_source_mode.md">D3DKMDT_VIDPN_SOURCE_MODE</a> structure is a D3DKMDT_TEXT_RENDERING_FORMAT value.
+        The <b>Format.Text</b> member of the <a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_vidpn_source_mode.md">D3DKMDT_VIDPN_SOURCE_MODE</a> structure is a D3DKMDT_TEXT_RENDERING_FORMAT value.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -68,9 +73,9 @@ The <b>Format.Text</b> member of the <a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_vid
 | **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmdt.h (include D3dkmdt.h) |
 
-## See Also
+    ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570558">VidPn Source Mode Set Interface</a>
+        <a href="https://msdn.microsoft.com/library/windows/hardware/ff570558">VidPn Source Mode Set Interface</a>
 
  
 

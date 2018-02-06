@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_OFFERALLOCATIONSCB
-title : PFND3DDDI_OFFERALLOCATIONSCB
-author : windows-driver-content
-description : Called by the user-mode display driver to offer video memory allocations for reuse.
-old-location : display\pfnofferallocationscb.htm
-old-project : display
-ms.assetid : D711C545-BDEE-4EE5-B80A-75F01FAA0C33
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.pfnofferallocationscb, pfnOfferAllocationsCb callback function [Display Devices], pfnOfferAllocationsCb, PFND3DDDI_OFFERALLOCATIONSCB, PFND3DDDI_OFFERALLOCATIONSCB, d3dumddi/pfnOfferAllocationsCb
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_OFFERALLOCATIONSCB
+title: PFND3DDDI_OFFERALLOCATIONSCB
+author: windows-driver-content
+description: Called by the user-mode display driver to offer video memory allocations for reuse.
+old-location: display\pfnofferallocationscb.htm
+old-project: display
+ms.assetid: D711C545-BDEE-4EE5-B80A-75F01FAA0C33
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.pfnofferallocationscb, pfnOfferAllocationsCb callback function [Display Devices], pfnOfferAllocationsCb, PFND3DDDI_OFFERALLOCATIONSCB, PFND3DDDI_OFFERALLOCATIONSCB, d3dumddi/pfnOfferAllocationsCb
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	pfnOfferAllocationsCb
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

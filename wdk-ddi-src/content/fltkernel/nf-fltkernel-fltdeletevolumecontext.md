@@ -1,41 +1,47 @@
 ---
-UID : NF:fltkernel.FltDeleteVolumeContext
-title : FltDeleteVolumeContext function
-author : windows-driver-content
-description : FltDeleteVolumeContext removes a context that a given minifilter driver has set for a given volume and marks the context for deletion.
-old-location : ifsk\fltdeletevolumecontext.htm
-old-project : ifsk
-ms.assetid : dfb376af-9910-4708-9248-1104dfc4bdec
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltDeleteVolumeContext function [Installable File System Drivers], FltDeleteVolumeContext, ifsk.fltdeletevolumecontext, fltkernel/FltDeleteVolumeContext, FltApiRef_a_to_d_261f2efb-7c2e-4f85-a75c-b5cf55236271.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltDeleteVolumeContext
+title: FltDeleteVolumeContext function
+author: windows-driver-content
+description: FltDeleteVolumeContext removes a context that a given minifilter driver has set for a given volume and marks the context for deletion.
+old-location: ifsk\fltdeletevolumecontext.htm
+old-project: ifsk
+ms.assetid: dfb376af-9910-4708-9248-1104dfc4bdec
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltDeleteVolumeContext function [Installable File System Drivers], FltDeleteVolumeContext, ifsk.fltdeletevolumecontext, fltkernel/FltDeleteVolumeContext, FltApiRef_a_to_d_261f2efb-7c2e-4f85-a75c-b5cf55236271.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	FltMgr.lib
+-	FltMgr.dll
+apiname:
+-	FltDeleteVolumeContext
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:drmk.tagDRMFORWARD
-title : tagDRMFORWARD
-author : windows-driver-content
-description : The DRMFORWARD structure contains the information that the DRMK system driver needs in order to forward a DRM content ID to a device that handles protected content.
-old-location : audio\drmforward.htm
-old-project : audio
-ms.assetid : 30e2e62a-3ae4-4efe-a6e9-6aece6bfbb46
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : drmk/PDRMFORWARD, DRMFORWARD structure [Audio Devices], *PDRMFORWARD, tagDRMFORWARD, aud-prop_491c772b-2e17-42c1-b0cd-68d2b0384163.xml, PDRMFORWARD structure pointer [Audio Devices], DRMFORWARD, drmk/DRMFORWARD, audio.drmforward, PDRMFORWARD
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : drmk.h
-req.include-header : Drmk.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DRMFORWARD, *PDRMFORWARD
+UID: NS:drmk.tagDRMFORWARD
+title: tagDRMFORWARD
+author: windows-driver-content
+description: The DRMFORWARD structure contains the information that the DRMK system driver needs in order to forward a DRM content ID to a device that handles protected content.
+old-location: audio\drmforward.htm
+old-project: audio
+ms.assetid: 30e2e62a-3ae4-4efe-a6e9-6aece6bfbb46
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: drmk/PDRMFORWARD, DRMFORWARD structure [Audio Devices], *PDRMFORWARD, tagDRMFORWARD, aud-prop_491c772b-2e17-42c1-b0cd-68d2b0384163.xml, PDRMFORWARD structure pointer [Audio Devices], DRMFORWARD, drmk/DRMFORWARD, audio.drmforward, PDRMFORWARD
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: drmk.h
+req.include-header: Drmk.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	drmk.h
+apiname:
+-	DRMFORWARD
+product: Windows
+targetos: Windows
+req.typenames: DRMFORWARD, *PDRMFORWARD
 ---
 
 # tagDRMFORWARD structure

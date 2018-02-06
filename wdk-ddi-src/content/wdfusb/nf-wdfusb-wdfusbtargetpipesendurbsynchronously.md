@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfusb.WdfUsbTargetPipeSendUrbSynchronously
-title : WdfUsbTargetPipeSendUrbSynchronously function
-author : windows-driver-content
-description : The WdfUsbTargetPipeSendUrbSynchronously method builds an USB request for a specified USB pipe, using request parameters that a specified URB describes.
-old-location : wdf\wdfusbtargetpipesendurbsynchronously.htm
-old-project : wdf
-ms.assetid : 2ce7a843-0053-4351-ba79-161d83e245ac
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdfusb/WdfUsbTargetPipeSendUrbSynchronously, kmdf.wdfusbtargetpipesendurbsynchronously, wdf.wdfusbtargetpipesendurbsynchronously, WdfUsbTargetPipeSendUrbSynchronously, PFN_WDFUSBTARGETPIPESENDURBSYNCHRONOUSLY, WdfUsbTargetPipeSendUrbSynchronously method, DFUsbRef_3e797ee4-f454-4520-b4a0-84565515622f.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfusb.h
-req.include-header : Wdfusb.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : DriverCreate, IoctlReqs, KmdfIrql, KmdfIrql2, SyncReqSend, UsbKmdfIrql, UsbKmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfusb.WdfUsbTargetPipeSendUrbSynchronously
+title: WdfUsbTargetPipeSendUrbSynchronously function
+author: windows-driver-content
+description: The WdfUsbTargetPipeSendUrbSynchronously method builds an USB request for a specified USB pipe, using request parameters that a specified URB describes.
+old-location: wdf\wdfusbtargetpipesendurbsynchronously.htm
+old-project: wdf
+ms.assetid: 2ce7a843-0053-4351-ba79-161d83e245ac
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdfusb/WdfUsbTargetPipeSendUrbSynchronously, kmdf.wdfusbtargetpipesendurbsynchronously, wdf.wdfusbtargetpipesendurbsynchronously, WdfUsbTargetPipeSendUrbSynchronously, PFN_WDFUSBTARGETPIPESENDURBSYNCHRONOUSLY, WdfUsbTargetPipeSendUrbSynchronously method, DFUsbRef_3e797ee4-f454-4520-b4a0-84565515622f.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfusb.h
+req.include-header: Wdfusb.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: DriverCreate, IoctlReqs, KmdfIrql, KmdfIrql2, SyncReqSend, UsbKmdfIrql, UsbKmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfUsbTargetPipeSendUrbSynchronously
+product: Windows
+targetos: Windows
+req.typenames: WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
+req.product: Windows 10 or later.
 ---
 
 

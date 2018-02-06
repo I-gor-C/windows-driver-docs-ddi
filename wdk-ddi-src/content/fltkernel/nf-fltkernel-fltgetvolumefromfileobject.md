@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltGetVolumeFromFileObject
-title : FltGetVolumeFromFileObject function
-author : windows-driver-content
-description : The FltGetVolumeFromFileObject routine returns an opaque pointer for the volume that a given file stream resides on.
-old-location : ifsk\fltgetvolumefromfileobject.htm
-old-project : ifsk
-ms.assetid : 3b13c4a2-b2b5-4b59-881c-01ee430ac720
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltApiRef_e_to_o_9ad19df2-2e65-454b-9193-ce409153786a.xml, FltGetVolumeFromFileObject, ifsk.fltgetvolumefromfileobject, FltGetVolumeFromFileObject routine [Installable File System Drivers], fltkernel/FltGetVolumeFromFileObject
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltGetVolumeFromFileObject
+title: FltGetVolumeFromFileObject function
+author: windows-driver-content
+description: The FltGetVolumeFromFileObject routine returns an opaque pointer for the volume that a given file stream resides on.
+old-location: ifsk\fltgetvolumefromfileobject.htm
+old-project: ifsk
+ms.assetid: 3b13c4a2-b2b5-4b59-881c-01ee430ac720
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltApiRef_e_to_o_9ad19df2-2e65-454b-9193-ce409153786a.xml, FltGetVolumeFromFileObject, ifsk.fltgetvolumefromfileobject, FltGetVolumeFromFileObject routine [Installable File System Drivers], fltkernel/FltGetVolumeFromFileObject
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltGetVolumeFromFileObject
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

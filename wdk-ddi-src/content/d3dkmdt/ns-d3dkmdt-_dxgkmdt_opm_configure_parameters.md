@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmdt._DXGKMDT_OPM_CONFIGURE_PARAMETERS
-title : "_DXGKMDT_OPM_CONFIGURE_PARAMETERS"
-author : windows-driver-content
-description : The DXGKMDT_OPM_CONFIGURE_PARAMETERS structure contains parameters that are used to configure a protected output object in a call to the DxgkDdiOPMConfigureProtectedOutput function.
-old-location : display\dxgkmdt_opm_configure_parameters.htm
-old-project : display
-ms.assetid : 7f9a4770-c30d-41ae-bd46-dce106b1811d
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : PDXGKMDT_OPM_CONFIGURE_PARAMETERS, DmStructs_98db66f6-39e1-4e08-83c5-ead1c527302f.xml, _DXGKMDT_OPM_CONFIGURE_PARAMETERS, DXGKMDT_OPM_CONFIGURE_PARAMETERS structure [Display Devices], DXGKMDT_OPM_SET_PROTECTION_LEVEL or DXGKMDT_OPM_SET_PROTECTION_LEVEL_ACCORDING_TO_CSS_DVD, d3dkmdt/PDXGKMDT_OPM_CONFIGURE_PARAMETERS, DXGKMDT_OPM_SET_HDCP_SRM, *PDXGKMDT_OPM_CONFIGURE_PARAMETERS, PDXGKMDT_OPM_CONFIGURE_PARAMETERS structure pointer [Display Devices], d3dkmdt/DXGKMDT_OPM_CONFIGURE_PARAMETERS, DXGKMDT_OPM_SET_ACP_AND_CGMSA_SIGNALING, display.dxgkmdt_opm_configure_parameters, DXGKMDT_OPM_CONFIGURE_PARAMETERS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmdt.h
-req.include-header : D3dkmdt.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDXGKMDT_OPM_CONFIGURE_PARAMETERS, DXGKMDT_OPM_CONFIGURE_PARAMETERS"
+UID: NS:d3dkmdt._DXGKMDT_OPM_CONFIGURE_PARAMETERS
+title: "_DXGKMDT_OPM_CONFIGURE_PARAMETERS"
+author: windows-driver-content
+description: The DXGKMDT_OPM_CONFIGURE_PARAMETERS structure contains parameters that are used to configure a protected output object in a call to the DxgkDdiOPMConfigureProtectedOutput function.
+old-location: display\dxgkmdt_opm_configure_parameters.htm
+old-project: display
+ms.assetid: 7f9a4770-c30d-41ae-bd46-dce106b1811d
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: PDXGKMDT_OPM_CONFIGURE_PARAMETERS, DmStructs_98db66f6-39e1-4e08-83c5-ead1c527302f.xml, _DXGKMDT_OPM_CONFIGURE_PARAMETERS, DXGKMDT_OPM_CONFIGURE_PARAMETERS structure [Display Devices], DXGKMDT_OPM_SET_PROTECTION_LEVEL or DXGKMDT_OPM_SET_PROTECTION_LEVEL_ACCORDING_TO_CSS_DVD, d3dkmdt/PDXGKMDT_OPM_CONFIGURE_PARAMETERS, DXGKMDT_OPM_SET_HDCP_SRM, *PDXGKMDT_OPM_CONFIGURE_PARAMETERS, PDXGKMDT_OPM_CONFIGURE_PARAMETERS structure pointer [Display Devices], d3dkmdt/DXGKMDT_OPM_CONFIGURE_PARAMETERS, DXGKMDT_OPM_SET_ACP_AND_CGMSA_SIGNALING, display.dxgkmdt_opm_configure_parameters, DXGKMDT_OPM_CONFIGURE_PARAMETERS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmdt.h
+req.include-header: D3dkmdt.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmdt.h
+apiname:
+-	DXGKMDT_OPM_CONFIGURE_PARAMETERS
+product: Windows
+targetos: Windows
+req.typenames: "*PDXGKMDT_OPM_CONFIGURE_PARAMETERS, DXGKMDT_OPM_CONFIGURE_PARAMETERS"
 ---
 
 # _DXGKMDT_OPM_CONFIGURE_PARAMETERS structure

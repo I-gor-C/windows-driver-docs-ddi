@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddcdrm.IOCTL_CDROM_GET_DRIVE_GEOMETRY
-title : IOCTL_CDROM_GET_DRIVE_GEOMETRY
-author : windows-driver-content
-description : Returns information about the CD-ROM's geometry (media type, number of cylinders, tracks per cylinder, sectors per track, and bytes per sector).
-old-location : storage\ioctl_cdrom_get_drive_geometry.htm
-old-project : storage
-ms.assetid : ed9738cb-7016-417b-baae-b8d4242a384e
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_cdrom_get_drive_geometry, IOCTL_CDROM_GET_DRIVE_GEOMETRY control code [Storage Devices], IOCTL_CDROM_GET_DRIVE_GEOMETRY, ntddcdrm/IOCTL_CDROM_GET_DRIVE_GEOMETRY, k307_f082c6e5-9d9a-4a11-a363-710f30cf3881.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddcdrm.h
-req.include-header : Ntddcdrm.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WRITE_ROTATION, *PWRITE_ROTATION
+UID: NI:ntddcdrm.IOCTL_CDROM_GET_DRIVE_GEOMETRY
+title: IOCTL_CDROM_GET_DRIVE_GEOMETRY
+author: windows-driver-content
+description: Returns information about the CD-ROM's geometry (media type, number of cylinders, tracks per cylinder, sectors per track, and bytes per sector).
+old-location: storage\ioctl_cdrom_get_drive_geometry.htm
+old-project: storage
+ms.assetid: ed9738cb-7016-417b-baae-b8d4242a384e
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_cdrom_get_drive_geometry, IOCTL_CDROM_GET_DRIVE_GEOMETRY control code [Storage Devices], IOCTL_CDROM_GET_DRIVE_GEOMETRY, ntddcdrm/IOCTL_CDROM_GET_DRIVE_GEOMETRY, k307_f082c6e5-9d9a-4a11-a363-710f30cf3881.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddcdrm.h
+req.include-header: Ntddcdrm.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddcdrm.h
+apiname:
+-	IOCTL_CDROM_GET_DRIVE_GEOMETRY
+product: Windows
+targetos: Windows
+req.typenames: WRITE_ROTATION, *PWRITE_ROTATION
 ---
 
 # IOCTL_CDROM_GET_DRIVE_GEOMETRY IOCTL

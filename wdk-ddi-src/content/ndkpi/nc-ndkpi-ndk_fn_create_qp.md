@@ -1,41 +1,46 @@
 ---
-UID : NC:ndkpi.NDK_FN_CREATE_QP
-title : NDK_FN_CREATE_QP
-author : windows-driver-content
-description : The NdkCreateQp (NDK_FN_CREATE_QP) function creates an NDK queue pair (QP) object.
-old-location : netvista\ndk_fn_create_qp.htm
-old-project : netvista
-ms.assetid : 8B601E53-9BE9-4D84-819E-3B0BD07560BC
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.ndk_fn_create_qp, NdkCreateQp callback function [Network Drivers Starting with Windows Vista], NdkCreateQp, NDK_FN_CREATE_QP, NDK_FN_CREATE_QP, ndkpi/NdkCreateQp
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ndkpi.h
-req.include-header : Ndkpi.h
-req.target-type : Windows
-req.target-min-winverclnt : None supported,Supported in NDIS 6.30 and later.
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_WWAN_VISIBLE_PROVIDERS, *PNDIS_WWAN_VISIBLE_PROVIDERS
+UID: NC:ndkpi.NDK_FN_CREATE_QP
+title: NDK_FN_CREATE_QP
+author: windows-driver-content
+description: The NdkCreateQp (NDK_FN_CREATE_QP) function creates an NDK queue pair (QP) object.
+old-location: netvista\ndk_fn_create_qp.htm
+old-project: netvista
+ms.assetid: 8B601E53-9BE9-4D84-819E-3B0BD07560BC
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.ndk_fn_create_qp, NdkCreateQp callback function [Network Drivers Starting with Windows Vista], NdkCreateQp, NDK_FN_CREATE_QP, NDK_FN_CREATE_QP, ndkpi/NdkCreateQp
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ndkpi.h
+req.include-header: Ndkpi.h
+req.target-type: Windows
+req.target-min-winverclnt: None supported,Supported in NDIS 6.30 and later.
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	ndkpi.h
+apiname:
+-	NdkCreateQp
+product: Windows
+targetos: Windows
+req.typenames: NDIS_WWAN_VISIBLE_PROVIDERS, *PNDIS_WWAN_VISIBLE_PROVIDERS
 ---
 
 

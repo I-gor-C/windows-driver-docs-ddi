@@ -1,41 +1,46 @@
 ---
-UID : NF:ntintsafe.RtlIntToUInt8
-title : RtlIntToUInt8 function
-author : windows-driver-content
-description : Converts a value of type INT to a value of type UINT8.
-old-location : kernel\rtlinttouint8.htm
-old-project : kernel
-ms.assetid : BD5F605A-0E0F-4D68-8905-6FCEC9DD7F15
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : RtlIntToUInt8, RtlIntToUInt8 function [Kernel-Mode Driver Architecture], ntintsafe/RtlIntToUInt8, kernel.rtlinttouint8
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntintsafe.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PUBLIC_OBJECT_TYPE_INFORMATION, *PPUBLIC_OBJECT_TYPE_INFORMATION
+UID: NF:ntintsafe.RtlIntToUInt8
+title: RtlIntToUInt8 function
+author: windows-driver-content
+description: Converts a value of type INT to a value of type UINT8.
+old-location: kernel\rtlinttouint8.htm
+old-project: kernel
+ms.assetid: BD5F605A-0E0F-4D68-8905-6FCEC9DD7F15
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: RtlIntToUInt8, RtlIntToUInt8 function [Kernel-Mode Driver Architecture], ntintsafe/RtlIntToUInt8, kernel.rtlinttouint8
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntintsafe.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntintsafe.h
+apiname:
+-	RtlIntToUInt8
+product: Windows
+targetos: Windows
+req.typenames: PUBLIC_OBJECT_TYPE_INFORMATION, *PPUBLIC_OBJECT_TYPE_INFORMATION
 ---
 
 

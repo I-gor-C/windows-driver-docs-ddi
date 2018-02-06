@@ -1,42 +1,48 @@
 ---
-UID : NF:wdm.ZwUnloadDriver
-title : ZwUnloadDriver function
-author : windows-driver-content
-description : The ZwUnloadDriver routine unloads a driver from the system.
-old-location : kernel\zwunloaddriver.htm
-old-project : kernel
-ms.assetid : 4fbb4d4b-b98a-4d10-b9b2-7ad8fc4ada6e
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/ZwUnloadDriver, NtUnloadDriver, ZwUnloadDriver, k111_72ac4415-d46c-4ea2-9d6c-d66903082808.xml, ZwUnloadDriver routine [Kernel-Mode Driver Architecture], kernel.zwunloaddriver, wdm/NtUnloadDriver
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows XP and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ZwUnloadDriver
+title: ZwUnloadDriver function
+author: windows-driver-content
+description: The ZwUnloadDriver routine unloads a driver from the system.
+old-location: kernel\zwunloaddriver.htm
+old-project: kernel
+ms.assetid: 4fbb4d4b-b98a-4d10-b9b2-7ad8fc4ada6e
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/ZwUnloadDriver, NtUnloadDriver, ZwUnloadDriver, k111_72ac4415-d46c-4ea2-9d6c-d66903082808.xml, ZwUnloadDriver routine [Kernel-Mode Driver Architecture], kernel.zwunloaddriver, wdm/NtUnloadDriver
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows XP and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ZwUnloadDriver
+-	NtUnloadDriver
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

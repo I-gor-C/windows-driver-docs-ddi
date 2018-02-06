@@ -1,42 +1,48 @@
 ---
-UID : NF:ucmmanager.UcmConnectorCreate
-title : UcmConnectorCreate function
-author : windows-driver-content
-description : Creates a connector object.
-old-location : buses\ucmconnectorcreate.htm
-old-project : usbref
-ms.assetid : 1376CB84-05F6-4903-B245-A00CFA9B228E
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : buses.ucmconnectorcreate, ucmmanager/UcmConnectorCreate, UcmConnectorCreate, UcmConnectorCreate method [Buses]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ucmmanager.h
-req.include-header : Ucmcx.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 1.15
-req.umdf-ver : 2.15
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : UcmCxstub.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPORT_DATA_1, PORT_DATA_1"
-req.product : Windows 10 or later.
+UID: NF:ucmmanager.UcmConnectorCreate
+title: UcmConnectorCreate function
+author: windows-driver-content
+description: Creates a connector object.
+old-location: buses\ucmconnectorcreate.htm
+old-project: usbref
+ms.assetid: 1376CB84-05F6-4903-B245-A00CFA9B228E
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: buses.ucmconnectorcreate, ucmmanager/UcmConnectorCreate, UcmConnectorCreate, UcmConnectorCreate method [Buses]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ucmmanager.h
+req.include-header: Ucmcx.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 1.15
+req.umdf-ver: 2.15
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: UcmCxstub.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	UcmCxstub.lib
+-	UcmCxstub.dll
+apiname:
+-	UcmConnectorCreate
+product: Windows
+targetos: Windows
+req.typenames: "*PPORT_DATA_1, PORT_DATA_1"
+req.product: Windows 10 or later.
 ---
 
 

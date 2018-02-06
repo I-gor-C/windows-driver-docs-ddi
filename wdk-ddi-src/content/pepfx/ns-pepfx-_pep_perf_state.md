@@ -1,41 +1,46 @@
 ---
-UID : NS:pepfx._PEP_PERF_STATE
-title : "_PEP_PERF_STATE"
-author : windows-driver-content
-description : The PEP_PERF_STATE structure describes a performance state (P-state) in a P-state set in which the P-states are specified as a list of one or more discrete values.
-old-location : kernel\pep_perf_state.htm
-old-project : kernel
-ms.assetid : D5C9EF42-B6FE-4472-8188-2B23F87FA475
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : pepfx/PEP_PERF_STATE, PEP_PERF_STATE, _PEP_PERF_STATE, *PPEP_PERF_STATE, kernel.pep_perf_state, PPEP_PERF_STATE structure pointer [Kernel-Mode Driver Architecture], PPEP_PERF_STATE, pepfx/PPEP_PERF_STATE, PEP_PERF_STATE structure [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : pepfx.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with Windows 10.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PEP_PERF_STATE, *PPEP_PERF_STATE
+UID: NS:pepfx._PEP_PERF_STATE
+title: "_PEP_PERF_STATE"
+author: windows-driver-content
+description: The PEP_PERF_STATE structure describes a performance state (P-state) in a P-state set in which the P-states are specified as a list of one or more discrete values.
+old-location: kernel\pep_perf_state.htm
+old-project: kernel
+ms.assetid: D5C9EF42-B6FE-4472-8188-2B23F87FA475
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: pepfx/PEP_PERF_STATE, PEP_PERF_STATE, _PEP_PERF_STATE, *PPEP_PERF_STATE, kernel.pep_perf_state, PPEP_PERF_STATE structure pointer [Kernel-Mode Driver Architecture], PPEP_PERF_STATE, pepfx/PPEP_PERF_STATE, PEP_PERF_STATE structure [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: pepfx.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows 10.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	pepfx.h
+apiname:
+-	PEP_PERF_STATE
+product: Windows
+targetos: Windows
+req.typenames: PEP_PERF_STATE, *PPEP_PERF_STATE
 ---
 
 # _PEP_PERF_STATE structure

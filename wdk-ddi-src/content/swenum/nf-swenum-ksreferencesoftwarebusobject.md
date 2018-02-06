@@ -1,42 +1,48 @@
 ---
-UID : NF:swenum.KsReferenceSoftwareBusObject
-title : KsReferenceSoftwareBusObject function
-author : windows-driver-content
-description : The KsReferenceSoftwareBusObject function increments the reference count of the demand-load bus enumerator object's PDO.
-old-location : stream\ksreferencesoftwarebusobject.htm
-old-project : stream
-ms.assetid : 56c7ce80-36da-4991-a640-f87b712f683e
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KsReferenceSoftwareBusObject, swenum/KsReferenceSoftwareBusObject, KsReferenceSoftwareBusObject function [Streaming Media Devices], stream.ksreferencesoftwarebusobject, ksfunc_38a63d2d-e988-474d-890b-dd9a2aeeaff4.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : swenum.h
-req.include-header : Swenum.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STREAM_TIME_REFERENCE, *PSTREAM_TIME_REFERENCE
-req.product : Windows 10 or later.
+UID: NF:swenum.KsReferenceSoftwareBusObject
+title: KsReferenceSoftwareBusObject function
+author: windows-driver-content
+description: The KsReferenceSoftwareBusObject function increments the reference count of the demand-load bus enumerator object's PDO.
+old-location: stream\ksreferencesoftwarebusobject.htm
+old-project: stream
+ms.assetid: 56c7ce80-36da-4991-a640-f87b712f683e
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KsReferenceSoftwareBusObject, swenum/KsReferenceSoftwareBusObject, KsReferenceSoftwareBusObject function [Streaming Media Devices], stream.ksreferencesoftwarebusobject, ksfunc_38a63d2d-e988-474d-890b-dd9a2aeeaff4.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: swenum.h
+req.include-header: Swenum.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsReferenceSoftwareBusObject
+product: Windows
+targetos: Windows
+req.typenames: STREAM_TIME_REFERENCE, *PSTREAM_TIME_REFERENCE
+req.product: Windows 10 or later.
 ---
 
 

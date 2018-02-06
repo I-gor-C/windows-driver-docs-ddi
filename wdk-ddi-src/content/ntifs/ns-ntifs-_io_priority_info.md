@@ -1,41 +1,46 @@
 ---
-UID : NS:ntifs._IO_PRIORITY_INFO
-title : "_IO_PRIORITY_INFO"
-author : windows-driver-content
-description : The IO_PRIORITY_INFO structure is used to hold thread priority information.
-old-location : ifsk\io_priority_info.htm
-old-project : ifsk
-ms.assetid : 1161b239-3ad1-4a0c-9d11-4a3a88d361b3
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : othersystemstructures_19a36a9e-6950-4a52-b1e3-e25977777952.xml, *PIO_PRIORITY_INFO, PIO_PRIORITY_INFO structure pointer [Installable File System Drivers], ntifs/IO_PRIORITY_INFO, ntifs/PIO_PRIORITY_INFO, _IO_PRIORITY_INFO, ifsk.io_priority_info, PIO_PRIORITY_INFO, IO_PRIORITY_INFO structure [Installable File System Drivers], IO_PRIORITY_INFO
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntifs.h
-req.include-header : Ntifs.h, Fltkernel.h
-req.target-type : Windows
-req.target-min-winverclnt : This structure is available starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : IO_PRIORITY_INFO, *PIO_PRIORITY_INFO
+UID: NS:ntifs._IO_PRIORITY_INFO
+title: "_IO_PRIORITY_INFO"
+author: windows-driver-content
+description: The IO_PRIORITY_INFO structure is used to hold thread priority information.
+old-location: ifsk\io_priority_info.htm
+old-project: ifsk
+ms.assetid: 1161b239-3ad1-4a0c-9d11-4a3a88d361b3
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: othersystemstructures_19a36a9e-6950-4a52-b1e3-e25977777952.xml, *PIO_PRIORITY_INFO, PIO_PRIORITY_INFO structure pointer [Installable File System Drivers], ntifs/IO_PRIORITY_INFO, ntifs/PIO_PRIORITY_INFO, _IO_PRIORITY_INFO, ifsk.io_priority_info, PIO_PRIORITY_INFO, IO_PRIORITY_INFO structure [Installable File System Drivers], IO_PRIORITY_INFO
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntifs.h
+req.include-header: Ntifs.h, Fltkernel.h
+req.target-type: Windows
+req.target-min-winverclnt: This structure is available starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntifs.h
+apiname:
+-	IO_PRIORITY_INFO
+product: Windows
+targetos: Windows
+req.typenames: IO_PRIORITY_INFO, *PIO_PRIORITY_INFO
 ---
 
 # _IO_PRIORITY_INFO structure

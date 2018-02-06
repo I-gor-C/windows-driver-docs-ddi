@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.KeSetSystemAffinityThread
-title : KeSetSystemAffinityThread function
-author : windows-driver-content
-description : The KeSetSystemAffinityThread routine sets the system affinity of the current thread.
-old-location : kernel\kesetsystemaffinitythread.htm
-old-project : kernel
-ms.assetid : eb66ed06-356d-4550-8ccf-10854e4ca259
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/KeSetSystemAffinityThread, KeSetSystemAffinityThread, k105_86ff0d26-a53d-4da4-b776-35ed30b950ad.xml, KeSetSystemAffinityThread routine [Kernel-Mode Driver Architecture], kernel.kesetsystemaffinitythread
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 2000 and later versions of Windows. Use KeSetSystemAffinityThread only on systems before Windows Vista. In Windows Vista and later versions of the Windows operating system, use KeSetSystemAffinityThreadEx instead.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= DISPATCH_LEVEL (see Remarks section)."
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.KeSetSystemAffinityThread
+title: KeSetSystemAffinityThread function
+author: windows-driver-content
+description: The KeSetSystemAffinityThread routine sets the system affinity of the current thread.
+old-location: kernel\kesetsystemaffinitythread.htm
+old-project: kernel
+ms.assetid: eb66ed06-356d-4550-8ccf-10854e4ca259
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/KeSetSystemAffinityThread, KeSetSystemAffinityThread, k105_86ff0d26-a53d-4da4-b776-35ed30b950ad.xml, KeSetSystemAffinityThread routine [Kernel-Mode Driver Architecture], kernel.kesetsystemaffinitythread
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 2000 and later versions of Windows. Use KeSetSystemAffinityThread only on systems before Windows Vista. In Windows Vista and later versions of the Windows operating system, use KeSetSystemAffinityThreadEx instead.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= DISPATCH_LEVEL (see Remarks section)."
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	KeSetSystemAffinityThread
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

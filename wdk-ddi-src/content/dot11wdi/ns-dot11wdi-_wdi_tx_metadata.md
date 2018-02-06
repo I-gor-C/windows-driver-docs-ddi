@@ -1,41 +1,46 @@
 ---
-UID : NS:dot11wdi._WDI_TX_METADATA
-title : "_WDI_TX_METADATA"
-author : windows-driver-content
-description : The WDI_TX_METADATA structure defines the TX metadata.
-old-location : netvista\wdi_tx_metadata.htm
-old-project : netvista
-ms.assetid : 21833980-0098-43c2-822c-9d8292f7120a
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : PWDI_TX_METADATA, dot11wdi/WDI_TX_METADATA, netvista.wdi_tx_metadata, PWDI_TX_METADATA structure pointer [Network Drivers Starting with Windows Vista], netvista.wifi_tx_metadata, WDI_TX_METADATA structure [Network Drivers Starting with Windows Vista], _WDI_TX_METADATA, *PWDI_TX_METADATA, WDI_TX_METADATA, dot11wdi/PWDI_TX_METADATA
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : dot11wdi.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDI_TX_METADATA, *PWDI_TX_METADATA
+UID: NS:dot11wdi._WDI_TX_METADATA
+title: "_WDI_TX_METADATA"
+author: windows-driver-content
+description: The WDI_TX_METADATA structure defines the TX metadata.
+old-location: netvista\wdi_tx_metadata.htm
+old-project: netvista
+ms.assetid: 21833980-0098-43c2-822c-9d8292f7120a
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: PWDI_TX_METADATA, dot11wdi/WDI_TX_METADATA, netvista.wdi_tx_metadata, PWDI_TX_METADATA structure pointer [Network Drivers Starting with Windows Vista], netvista.wifi_tx_metadata, WDI_TX_METADATA structure [Network Drivers Starting with Windows Vista], _WDI_TX_METADATA, *PWDI_TX_METADATA, WDI_TX_METADATA, dot11wdi/PWDI_TX_METADATA
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: dot11wdi.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	dot11wdi.h
+apiname:
+-	WDI_TX_METADATA
+product: Windows
+targetos: Windows
+req.typenames: WDI_TX_METADATA, *PWDI_TX_METADATA
 ---
 
 # _WDI_TX_METADATA structure

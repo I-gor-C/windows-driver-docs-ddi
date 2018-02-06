@@ -1,42 +1,47 @@
 ---
-UID : NS:prntfont._KERNDATA
-title : "_KERNDATA"
-author : windows-driver-content
-description : The KERNDATA structure is used for describing printer kerning pairs.
-old-location : print\kerndata.htm
-old-project : print
-ms.assetid : b3f68c08-7097-46e7-ad47-6e5e1f2cb8b2
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : "_KERNDATA, prntfont/KERNDATA, KERNDATA, print.kerndata, prntfont/PKERNDATA, KERNDATA structure [Print Devices], print_unidrv-pscript_fonts_9ddb2b69-839c-496a-b252-691570ee03cb.xml, *PKERNDATA, PKERNDATA, PKERNDATA structure pointer [Print Devices]"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : prntfont.h
-req.include-header : Prntfont.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKERNDATA, KERNDATA"
-req.product : Windows 10 or later.
+UID: NS:prntfont._KERNDATA
+title: "_KERNDATA"
+author: windows-driver-content
+description: The KERNDATA structure is used for describing printer kerning pairs.
+old-location: print\kerndata.htm
+old-project: print
+ms.assetid: b3f68c08-7097-46e7-ad47-6e5e1f2cb8b2
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: "_KERNDATA, prntfont/KERNDATA, KERNDATA, print.kerndata, prntfont/PKERNDATA, KERNDATA structure [Print Devices], print_unidrv-pscript_fonts_9ddb2b69-839c-496a-b252-691570ee03cb.xml, *PKERNDATA, PKERNDATA, PKERNDATA structure pointer [Print Devices]"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: prntfont.h
+req.include-header: Prntfont.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	prntfont.h
+apiname:
+-	KERNDATA
+product: Windows
+targetos: Windows
+req.typenames: "*PKERNDATA, KERNDATA"
+req.product: Windows 10 or later.
 ---
 
 # _KERNDATA structure

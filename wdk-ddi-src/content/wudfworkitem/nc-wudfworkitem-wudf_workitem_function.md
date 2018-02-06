@@ -1,42 +1,47 @@
 ---
-UID : NC:wudfworkitem.WUDF_WORKITEM_FUNCTION
-title : WUDF_WORKITEM_FUNCTION
-author : windows-driver-content
-description : A driver's OnWorkItem event callback function performs the work that is associated with a specified work item.
-old-location : wdf\onworkitem.htm
-old-project : wdf
-ms.assetid : 4CCA1F5E-C92E-4D8D-A8C0-B8E9A0F29703
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.onworkitem, OnWorkItem callback function, OnWorkItem, WUDF_WORKITEM_FUNCTION, WUDF_WORKITEM_FUNCTION, wudfworkitem/OnWorkItem, wudfworkitem/PFN_WUDF_WORKITEM, PFN_WUDF_WORKITEM callback function pointer, PFN_WUDF_WORKITEM, umdf.onworkitem
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wudfworkitem.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.11
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : UNICODE_STRING
-req.product : Windows 10 or later.
+UID: NC:wudfworkitem.WUDF_WORKITEM_FUNCTION
+title: WUDF_WORKITEM_FUNCTION
+author: windows-driver-content
+description: A driver's OnWorkItem event callback function performs the work that is associated with a specified work item.
+old-location: wdf\onworkitem.htm
+old-project: wdf
+ms.assetid: 4CCA1F5E-C92E-4D8D-A8C0-B8E9A0F29703
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.onworkitem, OnWorkItem callback function, OnWorkItem, WUDF_WORKITEM_FUNCTION, WUDF_WORKITEM_FUNCTION, wudfworkitem/OnWorkItem, wudfworkitem/PFN_WUDF_WORKITEM, PFN_WUDF_WORKITEM callback function pointer, PFN_WUDF_WORKITEM, umdf.onworkitem
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wudfworkitem.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.11
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Wudfworkitem.h
+apiname:
+-	WUDF_WORKITEM_FUNCTION
+product: Windows
+targetos: Windows
+req.typenames: UNICODE_STRING
+req.product: Windows 10 or later.
 ---
 
 

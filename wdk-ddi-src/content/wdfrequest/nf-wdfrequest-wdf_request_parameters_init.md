@@ -1,42 +1,47 @@
 ---
-UID : NF:wdfrequest.WDF_REQUEST_PARAMETERS_INIT
-title : WDF_REQUEST_PARAMETERS_INIT function
-author : windows-driver-content
-description : The WDF_REQUEST_PARAMETERS_INIT function initializes a WDF_REQUEST_PARAMETERS structure.
-old-location : wdf\wdf_request_parameters_init.htm
-old-project : wdf
-ms.assetid : c4e83638-4931-460f-848b-ceb0f7a00afb
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdfrequest/WDF_REQUEST_PARAMETERS_INIT, DFRequestObjectRef_1c1e97cb-9ca1-473a-aa30-d39fdadbc726.xml, WDF_REQUEST_PARAMETERS_INIT, kmdf.wdf_request_parameters_init, WDF_REQUEST_PARAMETERS_INIT function, wdf.wdf_request_parameters_init
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfrequest.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_REQUEST_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfrequest.WDF_REQUEST_PARAMETERS_INIT
+title: WDF_REQUEST_PARAMETERS_INIT function
+author: windows-driver-content
+description: The WDF_REQUEST_PARAMETERS_INIT function initializes a WDF_REQUEST_PARAMETERS structure.
+old-location: wdf\wdf_request_parameters_init.htm
+old-project: wdf
+ms.assetid: c4e83638-4931-460f-848b-ceb0f7a00afb
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdfrequest/WDF_REQUEST_PARAMETERS_INIT, DFRequestObjectRef_1c1e97cb-9ca1-473a-aa30-d39fdadbc726.xml, WDF_REQUEST_PARAMETERS_INIT, kmdf.wdf_request_parameters_init, WDF_REQUEST_PARAMETERS_INIT function, wdf.wdf_request_parameters_init
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfrequest.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfrequest.h
+apiname:
+-	WDF_REQUEST_PARAMETERS_INIT
+product: Windows
+targetos: Windows
+req.typenames: WDF_REQUEST_TYPE
+req.product: Windows 10 or later.
 ---
 
 

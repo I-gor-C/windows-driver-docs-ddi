@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.IoIsSystemThread
-title : IoIsSystemThread function
-author : windows-driver-content
-description : The IoIsSystemThread routine checks whether a given thread is a system thread.
-old-location : ifsk\ioissystemthread.htm
-old-project : ifsk
-ms.assetid : 1f3dc15f-14b5-4797-83be-ba3a01a1551b
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ioref_3e14f3af-c985-43a4-bc57-927483597c79.xml, ntifs/IoIsSystemThread, IoIsSystemThread routine [Installable File System Drivers], ifsk.ioissystemthread, IoIsSystemThread
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.IoIsSystemThread
+title: IoIsSystemThread function
+author: windows-driver-content
+description: The IoIsSystemThread routine checks whether a given thread is a system thread.
+old-location: ifsk\ioissystemthread.htm
+old-project: ifsk
+ms.assetid: 1f3dc15f-14b5-4797-83be-ba3a01a1551b
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ioref_3e14f3af-c985-43a4-bc57-927483597c79.xml, ntifs/IoIsSystemThread, IoIsSystemThread routine [Installable File System Drivers], ifsk.ioissystemthread, IoIsSystemThread
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoIsSystemThread
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

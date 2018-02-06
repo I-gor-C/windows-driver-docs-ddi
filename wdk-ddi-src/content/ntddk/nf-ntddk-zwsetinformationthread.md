@@ -1,41 +1,47 @@
 ---
-UID : NF:ntddk.ZwSetInformationThread
-title : ZwSetInformationThread function
-author : windows-driver-content
-description : The ZwSetInformationThread routine sets the priority of a thread.
-old-location : kernel\zwsetinformationthread.htm
-old-project : kernel
-ms.assetid : ec67c643-bc91-4784-b5f4-09a20e8406c3
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : MEMORY_PRIORITY_VERY_LOW, ZwSetInformationThread, ntddk/NtSetInformationThread, k111_6d6657b3-b0f9-4c47-9bb5-d5c692161c53.xml, MEMORY_PRIORITY_NORMAL, NtSetInformationThread, MEMORY_PRIORITY_MEDIUM, ntddk/ZwSetInformationThread, ZwSetInformationThread routine [Kernel-Mode Driver Architecture], MEMORY_PRIORITY_BELOW_NORMAL, MEMORY_PRIORITY_LOW, kernel.zwsetinformationthread
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.ZwSetInformationThread
+title: ZwSetInformationThread function
+author: windows-driver-content
+description: The ZwSetInformationThread routine sets the priority of a thread.
+old-location: kernel\zwsetinformationthread.htm
+old-project: kernel
+ms.assetid: ec67c643-bc91-4784-b5f4-09a20e8406c3
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: MEMORY_PRIORITY_VERY_LOW, ZwSetInformationThread, ntddk/NtSetInformationThread, k111_6d6657b3-b0f9-4c47-9bb5-d5c692161c53.xml, MEMORY_PRIORITY_NORMAL, NtSetInformationThread, MEMORY_PRIORITY_MEDIUM, ntddk/ZwSetInformationThread, ZwSetInformationThread routine [Kernel-Mode Driver Architecture], MEMORY_PRIORITY_BELOW_NORMAL, MEMORY_PRIORITY_LOW, kernel.zwsetinformationthread
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ZwSetInformationThread
+-	NtSetInformationThread
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

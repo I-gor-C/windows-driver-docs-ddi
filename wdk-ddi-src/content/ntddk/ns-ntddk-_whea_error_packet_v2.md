@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddk._WHEA_ERROR_PACKET_V2
-title : "_WHEA_ERROR_PACKET_V2"
-author : windows-driver-content
-description : The WHEA_ERROR_PACKET_V2 structure describes the hardware error data that is passed to the operating system by a low-level hardware error handler (LLHEH).Note  The WHEA_ERROR_PACKET_V2 structure is supported in Windows 7 and later versions of Windows.
-old-location : whea\whea_error_packet_v2.htm
-old-project : whea
-ms.assetid : 10cfc201-d5c9-4887-997e-673ef6abb7db
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : ntddk/WHEA_ERROR_PACKET_V2, *PWHEA_ERROR_PACKET, whearef_dda917df-4c9e-435e-ab12-1520e13d3dac.xml, WHEA_ERROR_PACKET, whea.whea_error_packet_v2, _WHEA_ERROR_PACKET_V2, *PWHEA_ERROR_PACKET_V2, WHEA_ERROR_PACKET_V2 structure [WHEA Drivers and Applications], PWHEA_ERROR_PACKET_V2 structure pointer [WHEA Drivers and Applications], WHEA_ERROR_PACKET_V2, ntddk/PWHEA_ERROR_PACKET_V2, PWHEA_ERROR_PACKET_V2
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in Windows 7 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_ERROR_PACKET_V2, WHEA_ERROR_PACKET, *PWHEA_ERROR_PACKET_V2, *PWHEA_ERROR_PACKET
+UID: NS:ntddk._WHEA_ERROR_PACKET_V2
+title: "_WHEA_ERROR_PACKET_V2"
+author: windows-driver-content
+description: The WHEA_ERROR_PACKET_V2 structure describes the hardware error data that is passed to the operating system by a low-level hardware error handler (LLHEH).Note  The WHEA_ERROR_PACKET_V2 structure is supported in Windows 7 and later versions of Windows.
+old-location: whea\whea_error_packet_v2.htm
+old-project: whea
+ms.assetid: 10cfc201-d5c9-4887-997e-673ef6abb7db
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: ntddk/WHEA_ERROR_PACKET_V2, *PWHEA_ERROR_PACKET, whearef_dda917df-4c9e-435e-ab12-1520e13d3dac.xml, WHEA_ERROR_PACKET, whea.whea_error_packet_v2, _WHEA_ERROR_PACKET_V2, *PWHEA_ERROR_PACKET_V2, WHEA_ERROR_PACKET_V2 structure [WHEA Drivers and Applications], PWHEA_ERROR_PACKET_V2 structure pointer [WHEA Drivers and Applications], WHEA_ERROR_PACKET_V2, ntddk/PWHEA_ERROR_PACKET_V2, PWHEA_ERROR_PACKET_V2
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in Windows 7 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddk.h
+apiname:
+-	WHEA_ERROR_PACKET_V2
+product: Windows
+targetos: Windows
+req.typenames: WHEA_ERROR_PACKET_V2, WHEA_ERROR_PACKET, *PWHEA_ERROR_PACKET_V2, *PWHEA_ERROR_PACKET
 ---
 
 # _WHEA_ERROR_PACKET_V2 structure

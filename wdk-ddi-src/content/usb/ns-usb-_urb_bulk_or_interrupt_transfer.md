@@ -1,42 +1,47 @@
 ---
-UID : NS:usb._URB_BULK_OR_INTERRUPT_TRANSFER
-title : "_URB_BULK_OR_INTERRUPT_TRANSFER"
-author : windows-driver-content
-description : The _URB_BULK_OR_INTERRUPT_TRANSFER structure is used by USB client drivers to send or receive data on a bulk pipe or on an interrupt pipe.
-old-location : buses\_urb_bulk_or_interrupt_transfer.htm
-old-project : usbref
-ms.assetid : 398f50ad-4c58-4585-8fb8-c523b74793e9
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : usbstrct_3d3da976-5136-4648-850e-c0e3fe0999d8.xml, USBD_TRANSFER_DIRECTION_OUT, _URB_BULK_OR_INTERRUPT_TRANSFER, USBD_SHORT_TRANSFER_OK, _URB_BULK_OR_INTERRUPT_TRANSFER structure [Buses], USBD_TRANSFER_DIRECTION_IN, usb/_URB_BULK_OR_INTERRUPT_TRANSFER, buses._urb_bulk_or_interrupt_transfer
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : usb.h
-req.include-header : Usb.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
-req.product : Windows 10 or later.
+UID: NS:usb._URB_BULK_OR_INTERRUPT_TRANSFER
+title: "_URB_BULK_OR_INTERRUPT_TRANSFER"
+author: windows-driver-content
+description: The _URB_BULK_OR_INTERRUPT_TRANSFER structure is used by USB client drivers to send or receive data on a bulk pipe or on an interrupt pipe.
+old-location: buses\_urb_bulk_or_interrupt_transfer.htm
+old-project: usbref
+ms.assetid: 398f50ad-4c58-4585-8fb8-c523b74793e9
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: usbstrct_3d3da976-5136-4648-850e-c0e3fe0999d8.xml, USBD_TRANSFER_DIRECTION_OUT, _URB_BULK_OR_INTERRUPT_TRANSFER, USBD_SHORT_TRANSFER_OK, _URB_BULK_OR_INTERRUPT_TRANSFER structure [Buses], USBD_TRANSFER_DIRECTION_IN, usb/_URB_BULK_OR_INTERRUPT_TRANSFER, buses._urb_bulk_or_interrupt_transfer
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: usb.h
+req.include-header: Usb.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	usb.h
+apiname:
+-	_URB_BULK_OR_INTERRUPT_TRANSFER
+product: Windows
+targetos: Windows
+req.typenames: 
+req.product: Windows 10 or later.
 ---
 
 # _URB_BULK_OR_INTERRUPT_TRANSFER structure

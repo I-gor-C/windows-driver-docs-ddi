@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltSetVolumeContext
-title : FltSetVolumeContext function
-author : windows-driver-content
-description : FltSetVolumeContext sets a context for a volume.
-old-location : ifsk\fltsetvolumecontext.htm
-old-project : ifsk
-ms.assetid : e1e8605c-b3d1-40db-bb33-fc1f7ed51617
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltSetVolumeContext function [Installable File System Drivers], FltApiRef_p_to_z_889de924-a441-479f-9818-da016dd3feb3.xml, fltkernel/FltSetVolumeContext, FltSetVolumeContext, ifsk.fltsetvolumecontext
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : Available and supported in Microsoft Windows 2000 Update Rollup 1 for SP4, Windows XP SP2, Windows Server 2003 SP1, and later operating systems. Not available nor supported in Windows 2000 SP4 and earlier operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltSetVolumeContext
+title: FltSetVolumeContext function
+author: windows-driver-content
+description: FltSetVolumeContext sets a context for a volume.
+old-location: ifsk\fltsetvolumecontext.htm
+old-project: ifsk
+ms.assetid: e1e8605c-b3d1-40db-bb33-fc1f7ed51617
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltSetVolumeContext function [Installable File System Drivers], FltApiRef_p_to_z_889de924-a441-479f-9818-da016dd3feb3.xml, fltkernel/FltSetVolumeContext, FltSetVolumeContext, ifsk.fltsetvolumecontext
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: Available and supported in Microsoft Windows 2000 Update Rollup 1 for SP4, Windows XP SP2, Windows Server 2003 SP1, and later operating systems. Not available nor supported in Windows 2000 SP4 and earlier operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltSetVolumeContext
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

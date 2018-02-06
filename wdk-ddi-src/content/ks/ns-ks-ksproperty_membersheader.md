@@ -1,41 +1,46 @@
 ---
-UID : NS:ks.KSPROPERTY_MEMBERSHEADER
-title : KSPROPERTY_MEMBERSHEADER
-author : windows-driver-content
-description : A driver provides a structure of type KSPROPERTY_MEMBERSHEADER to describe the size and type of each element in an array containing property values or ranges.
-old-location : stream\ksproperty_membersheader.htm
-old-project : stream
-ms.assetid : 8a5d8f8c-4924-4ae0-a7b2-8d2b04a49a9e
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : PKSPROPERTY_MEMBERSHEADER structure pointer [Streaming Media Devices], KSPROPERTY_MEMBERSHEADER, PKSPROPERTY_MEMBERSHEADER, ks-struct_d43fb5ec-043b-4378-8bdb-aaf80a616150.xml, KSPROPERTY_MEMBERSHEADER structure [Streaming Media Devices], *PKSPROPERTY_MEMBERSHEADER, ks/KSPROPERTY_MEMBERSHEADER, ks/PKSPROPERTY_MEMBERSHEADER, stream.ksproperty_membersheader
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKSPROPERTY_MEMBERSHEADER, KSPROPERTY_MEMBERSHEADER"
+UID: NS:ks.KSPROPERTY_MEMBERSHEADER
+title: KSPROPERTY_MEMBERSHEADER
+author: windows-driver-content
+description: A driver provides a structure of type KSPROPERTY_MEMBERSHEADER to describe the size and type of each element in an array containing property values or ranges.
+old-location: stream\ksproperty_membersheader.htm
+old-project: stream
+ms.assetid: 8a5d8f8c-4924-4ae0-a7b2-8d2b04a49a9e
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: PKSPROPERTY_MEMBERSHEADER structure pointer [Streaming Media Devices], KSPROPERTY_MEMBERSHEADER, PKSPROPERTY_MEMBERSHEADER, ks-struct_d43fb5ec-043b-4378-8bdb-aaf80a616150.xml, KSPROPERTY_MEMBERSHEADER structure [Streaming Media Devices], *PKSPROPERTY_MEMBERSHEADER, ks/KSPROPERTY_MEMBERSHEADER, ks/PKSPROPERTY_MEMBERSHEADER, stream.ksproperty_membersheader
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	KSPROPERTY_MEMBERSHEADER
+product: Windows
+targetos: Windows
+req.typenames: "*PKSPROPERTY_MEMBERSHEADER, KSPROPERTY_MEMBERSHEADER"
 ---
 
 # KSPROPERTY_MEMBERSHEADER structure

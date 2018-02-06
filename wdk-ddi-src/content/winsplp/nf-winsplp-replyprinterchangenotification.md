@@ -1,42 +1,47 @@
 ---
-UID : NF:winsplp.ReplyPrinterChangeNotification
-title : ReplyPrinterChangeNotification function
-author : windows-driver-content
-description : The print spooler's ReplyPrinterChangeNotification function allows a print provider to update the spooler's database of print queue events associated with a notification handle, and to notify the client that print queue events have occurred.
-old-location : print\replyprinterchangenotification.htm
-old-project : print
-ms.assetid : 0b5378fa-ab1d-453f-b976-f6cd0d4247de
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : ReplyPrinterChangeNotification function [Print Devices], winsplp/ReplyPrinterChangeNotification, spoolfnc_524073df-9320-46d6-b4fe-6d3b73ccbe5b.xml, print.replyprinterchangenotification, ReplyPrinterChangeNotification
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : winsplp.h
-req.include-header : Winsplp.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Spoolss.lib
-req.dll : Spoolss.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NOTIFICATION_CONFIG_FLAGS
-req.product : Windows 10 or later.
+UID: NF:winsplp.ReplyPrinterChangeNotification
+title: ReplyPrinterChangeNotification function
+author: windows-driver-content
+description: The print spooler's ReplyPrinterChangeNotification function allows a print provider to update the spooler's database of print queue events associated with a notification handle, and to notify the client that print queue events have occurred.
+old-location: print\replyprinterchangenotification.htm
+old-project: print
+ms.assetid: 0b5378fa-ab1d-453f-b976-f6cd0d4247de
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: ReplyPrinterChangeNotification function [Print Devices], winsplp/ReplyPrinterChangeNotification, spoolfnc_524073df-9320-46d6-b4fe-6d3b73ccbe5b.xml, print.replyprinterchangenotification, ReplyPrinterChangeNotification
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: winsplp.h
+req.include-header: Winsplp.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Spoolss.lib
+req.dll: Spoolss.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Spoolss.dll
+apiname:
+-	ReplyPrinterChangeNotification
+product: Windows
+targetos: Windows
+req.typenames: NOTIFICATION_CONFIG_FLAGS
+req.product: Windows 10 or later.
 ---
 
 

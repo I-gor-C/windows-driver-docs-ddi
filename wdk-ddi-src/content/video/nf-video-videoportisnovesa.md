@@ -1,42 +1,47 @@
 ---
-UID : NF:video.VideoPortIsNoVesa
-title : VideoPortIsNoVesa function
-author : windows-driver-content
-description : The VideoPortIsNoVesa function determines whether a video miniport driver that does not support Plug and Play (PnP) is restricted to legacy VGA resources.
-old-location : display\videoportisnovesa.htm
-old-project : display
-ms.assetid : e3de4e58-c3e7-426f-bc96-b45cad6b5807
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : VideoPortIsNoVesa, display.videoportisnovesa, VideoPortIsNoVesa function [Display Devices], VideoPort_Functions_b3e65276-fa78-4599-a3e1-fa097cd86e70.xml, video/VideoPortIsNoVesa
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Server 2003 and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Videoprt.lib
-req.dll : Videoprt.sys
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_PORT_SERVICES
-req.product : Windows 10 or later.
+UID: NF:video.VideoPortIsNoVesa
+title: VideoPortIsNoVesa function
+author: windows-driver-content
+description: The VideoPortIsNoVesa function determines whether a video miniport driver that does not support Plug and Play (PnP) is restricted to legacy VGA resources.
+old-location: display\videoportisnovesa.htm
+old-project: display
+ms.assetid: e3de4e58-c3e7-426f-bc96-b45cad6b5807
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: VideoPortIsNoVesa, display.videoportisnovesa, VideoPortIsNoVesa function [Display Devices], VideoPort_Functions_b3e65276-fa78-4599-a3e1-fa097cd86e70.xml, video/VideoPortIsNoVesa
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Server 2003 and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Videoprt.lib
+req.dll: Videoprt.sys
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Videoprt.sys
+apiname:
+-	VideoPortIsNoVesa
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_PORT_SERVICES
+req.product: Windows 10 or later.
 ---
 
 

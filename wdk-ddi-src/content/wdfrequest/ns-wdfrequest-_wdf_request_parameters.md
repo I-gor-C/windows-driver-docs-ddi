@@ -1,42 +1,47 @@
 ---
-UID : NS:wdfrequest._WDF_REQUEST_PARAMETERS
-title : "_WDF_REQUEST_PARAMETERS"
-author : windows-driver-content
-description : The WDF_REQUEST_PARAMETERS structure receives parameters that are associated with an I/O request.
-old-location : wdf\wdf_request_parameters.htm
-old-project : wdf
-ms.assetid : 012e34c0-3cc6-49dc-94ad-d359d857720f
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : DFRequestObjectRef_b3f1759e-7bdd-4222-8aea-502bd45e16bf.xml, *PWDF_REQUEST_PARAMETERS, wdfrequest/PWDF_REQUEST_PARAMETERS, PWDF_REQUEST_PARAMETERS structure pointer, _WDF_REQUEST_PARAMETERS, WDF_REQUEST_PARAMETERS, kmdf.wdf_request_parameters, wdf.wdf_request_parameters, WDF_REQUEST_PARAMETERS structure, PWDF_REQUEST_PARAMETERS, wdfrequest/WDF_REQUEST_PARAMETERS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdfrequest.h
-req.include-header : Wdf.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDF_REQUEST_PARAMETERS, WDF_REQUEST_PARAMETERS"
-req.product : Windows 10 or later.
+UID: NS:wdfrequest._WDF_REQUEST_PARAMETERS
+title: "_WDF_REQUEST_PARAMETERS"
+author: windows-driver-content
+description: The WDF_REQUEST_PARAMETERS structure receives parameters that are associated with an I/O request.
+old-location: wdf\wdf_request_parameters.htm
+old-project: wdf
+ms.assetid: 012e34c0-3cc6-49dc-94ad-d359d857720f
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: DFRequestObjectRef_b3f1759e-7bdd-4222-8aea-502bd45e16bf.xml, *PWDF_REQUEST_PARAMETERS, wdfrequest/PWDF_REQUEST_PARAMETERS, PWDF_REQUEST_PARAMETERS structure pointer, _WDF_REQUEST_PARAMETERS, WDF_REQUEST_PARAMETERS, kmdf.wdf_request_parameters, wdf.wdf_request_parameters, WDF_REQUEST_PARAMETERS structure, PWDF_REQUEST_PARAMETERS, wdfrequest/WDF_REQUEST_PARAMETERS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdfrequest.h
+req.include-header: Wdf.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfrequest.h
+apiname:
+-	WDF_REQUEST_PARAMETERS
+product: Windows
+targetos: Windows
+req.typenames: "*PWDF_REQUEST_PARAMETERS, WDF_REQUEST_PARAMETERS"
+req.product: Windows 10 or later.
 ---
 
 # _WDF_REQUEST_PARAMETERS structure

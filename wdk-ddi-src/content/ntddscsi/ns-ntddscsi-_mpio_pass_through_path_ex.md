@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddscsi._MPIO_PASS_THROUGH_PATH_EX
-title : "_MPIO_PASS_THROUGH_PATH_EX"
-author : windows-driver-content
-description : The MPIO_PASS_THROUGH_PATH_EX structure is used together with an IOCTL_MPIO_PASS_THROUGH_PATH_EX request to instruct the port driver to send an embedded SCSI command to the target device.
-old-location : storage\mpio_pass_through_path_ex.htm
-old-project : storage
-ms.assetid : DAEA7A9C-3ACD-49E5-A634-A844D9694412
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : PMPIO_PASS_THROUGH_PATH_EX, ntddscsi/PMPIO_PASS_THROUGH_PATH_EX, *PMPIO_PASS_THROUGH_PATH_EX, storage.mpio_pass_through_path_ex, MPIO_PASS_THROUGH_PATH_EX, _MPIO_PASS_THROUGH_PATH_EX, PMPIO_PASS_THROUGH_PATH_EX structure pointer [Storage Devices], ntddscsi/MPIO_PASS_THROUGH_PATH_EX, MPIO_PASS_THROUGH_PATH_EX structure [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddscsi.h
-req.include-header : Ntddscsi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PMPIO_PASS_THROUGH_PATH_EX, MPIO_PASS_THROUGH_PATH_EX"
+UID: NS:ntddscsi._MPIO_PASS_THROUGH_PATH_EX
+title: "_MPIO_PASS_THROUGH_PATH_EX"
+author: windows-driver-content
+description: The MPIO_PASS_THROUGH_PATH_EX structure is used together with an IOCTL_MPIO_PASS_THROUGH_PATH_EX request to instruct the port driver to send an embedded SCSI command to the target device.
+old-location: storage\mpio_pass_through_path_ex.htm
+old-project: storage
+ms.assetid: DAEA7A9C-3ACD-49E5-A634-A844D9694412
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: PMPIO_PASS_THROUGH_PATH_EX, ntddscsi/PMPIO_PASS_THROUGH_PATH_EX, *PMPIO_PASS_THROUGH_PATH_EX, storage.mpio_pass_through_path_ex, MPIO_PASS_THROUGH_PATH_EX, _MPIO_PASS_THROUGH_PATH_EX, PMPIO_PASS_THROUGH_PATH_EX structure pointer [Storage Devices], ntddscsi/MPIO_PASS_THROUGH_PATH_EX, MPIO_PASS_THROUGH_PATH_EX structure [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddscsi.h
+req.include-header: Ntddscsi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddscsi.h
+apiname:
+-	MPIO_PASS_THROUGH_PATH_EX
+product: Windows
+targetos: Windows
+req.typenames: "*PMPIO_PASS_THROUGH_PATH_EX, MPIO_PASS_THROUGH_PATH_EX"
 ---
 
 # _MPIO_PASS_THROUGH_PATH_EX structure

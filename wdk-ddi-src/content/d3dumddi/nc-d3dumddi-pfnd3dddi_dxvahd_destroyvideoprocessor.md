@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_DXVAHD_DESTROYVIDEOPROCESSOR
-title : PFND3DDDI_DXVAHD_DESTROYVIDEOPROCESSOR
-author : windows-driver-content
-description : The DestroyVideoProcessor function releases resources for a Microsoft DirectX Video Acceleration (VA) video processor.
-old-location : display\destroyvideoprocessor.htm
-old-project : display
-ms.assetid : ea90fe17-4b79-4011-9e05-d5dbd06c0c6b
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.destroyvideoprocessor, DestroyVideoProcessor callback function [Display Devices], DestroyVideoProcessor, PFND3DDDI_DXVAHD_DESTROYVIDEOPROCESSOR, PFND3DDDI_DXVAHD_DESTROYVIDEOPROCESSOR, d3dumddi/DestroyVideoProcessor, UserModeDisplayDriver_Functions_e55b46ab-1325-4bb7-bf22-9f3cb19bff71.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : DestroyVideoProcessor is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_DXVAHD_DESTROYVIDEOPROCESSOR
+title: PFND3DDDI_DXVAHD_DESTROYVIDEOPROCESSOR
+author: windows-driver-content
+description: The DestroyVideoProcessor function releases resources for a Microsoft DirectX Video Acceleration (VA) video processor.
+old-location: display\destroyvideoprocessor.htm
+old-project: display
+ms.assetid: ea90fe17-4b79-4011-9e05-d5dbd06c0c6b
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.destroyvideoprocessor, DestroyVideoProcessor callback function [Display Devices], DestroyVideoProcessor, PFND3DDDI_DXVAHD_DESTROYVIDEOPROCESSOR, PFND3DDDI_DXVAHD_DESTROYVIDEOPROCESSOR, d3dumddi/DestroyVideoProcessor, UserModeDisplayDriver_Functions_e55b46ab-1325-4bb7-bf22-9f3cb19bff71.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: DestroyVideoProcessor is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	DestroyVideoProcessor
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

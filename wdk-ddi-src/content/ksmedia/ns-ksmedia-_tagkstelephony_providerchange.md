@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia._tagKSTELEPHONY_PROVIDERCHANGE
-title : "_tagKSTELEPHONY_PROVIDERCHANGE"
-author : windows-driver-content
-description : The KSTELEPHONY_PROVIDERCHANGE structure specifies the phone call type and provider change operation to use for the KSPROPERTY_TELEPHONY_PROVIDERCHANGE property.
-old-location : audio\kstelephony_providerchange.htm
-old-project : audio
-ms.assetid : 07928837-321C-4501-BDFF-4611BF6912F6
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : ksmedia/KSTELEPHONY_PROVIDERCHANGE, PKSTELEPHONY_PROVIDERCHANGE, KSTELEPHONY_PROVIDERCHANGE, audio.kstelephony_providerchange, *PKSTELEPHONY_PROVIDERCHANGE, _tagKSTELEPHONY_PROVIDERCHANGE, KSTELEPHONY_PROVIDERCHANGE structure [Audio Devices], ksmedia/PKSTELEPHONY_PROVIDERCHANGE, PKSTELEPHONY_PROVIDERCHANGE structure pointer [Audio Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10,Windows 10 Mobile
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KSTELEPHONY_PROVIDERCHANGE, *PKSTELEPHONY_PROVIDERCHANGE
+UID: NS:ksmedia._tagKSTELEPHONY_PROVIDERCHANGE
+title: "_tagKSTELEPHONY_PROVIDERCHANGE"
+author: windows-driver-content
+description: The KSTELEPHONY_PROVIDERCHANGE structure specifies the phone call type and provider change operation to use for the KSPROPERTY_TELEPHONY_PROVIDERCHANGE property.
+old-location: audio\kstelephony_providerchange.htm
+old-project: audio
+ms.assetid: 07928837-321C-4501-BDFF-4611BF6912F6
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: ksmedia/KSTELEPHONY_PROVIDERCHANGE, PKSTELEPHONY_PROVIDERCHANGE, KSTELEPHONY_PROVIDERCHANGE, audio.kstelephony_providerchange, *PKSTELEPHONY_PROVIDERCHANGE, _tagKSTELEPHONY_PROVIDERCHANGE, KSTELEPHONY_PROVIDERCHANGE structure [Audio Devices], ksmedia/PKSTELEPHONY_PROVIDERCHANGE, PKSTELEPHONY_PROVIDERCHANGE structure pointer [Audio Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10,Windows 10 Mobile
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	KSTELEPHONY_PROVIDERCHANGE
+product: Windows
+targetos: Windows
+req.typenames: KSTELEPHONY_PROVIDERCHANGE, *PKSTELEPHONY_PROVIDERCHANGE
 ---
 
 # _tagKSTELEPHONY_PROVIDERCHANGE structure

@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.ExRaiseStatus
-title : ExRaiseStatus function
-author : windows-driver-content
-description : The ExRaiseStatus routine is called by drivers that supply structured exception handlers to handle particular errors that occur while they are processing I/O requests.
-old-location : kernel\exraisestatus.htm
-old-project : kernel
-ms.assetid : eefbec75-f441-492b-becb-98434253dd62
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.exraisestatus, ExRaiseStatus, wdm/ExRaiseStatus, k102_b188a166-f1f1-49bd-8195-aa72f86ca177.xml, ExRaiseStatus routine [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : IrqlExPassive, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<=APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ExRaiseStatus
+title: ExRaiseStatus function
+author: windows-driver-content
+description: The ExRaiseStatus routine is called by drivers that supply structured exception handlers to handle particular errors that occur while they are processing I/O requests.
+old-location: kernel\exraisestatus.htm
+old-project: kernel
+ms.assetid: eefbec75-f441-492b-becb-98434253dd62
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.exraisestatus, ExRaiseStatus, wdm/ExRaiseStatus, k102_b188a166-f1f1-49bd-8195-aa72f86ca177.xml, ExRaiseStatus routine [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: IrqlExPassive, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<=APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ExRaiseStatus
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

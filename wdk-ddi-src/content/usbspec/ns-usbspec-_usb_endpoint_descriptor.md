@@ -1,42 +1,47 @@
 ---
-UID : NS:usbspec._USB_ENDPOINT_DESCRIPTOR
-title : "_USB_ENDPOINT_DESCRIPTOR"
-author : windows-driver-content
-description : The USB_ENDPOINT_DESCRIPTOR structure is used by USB client drivers to retrieve a USB-defined endpoint descriptor.
-old-location : buses\usb_endpoint_descriptor.htm
-old-project : usbref
-ms.assetid : fb4f25e4-cf72-4308-9685-edc62b1cc510
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : PUSB_ENDPOINT_DESCRIPTOR, PUSB_ENDPOINT_DESCRIPTOR structure pointer [Buses], usbspec/USB_ENDPOINT_DESCRIPTOR, buses.usb_endpoint_descriptor, *PUSB_ENDPOINT_DESCRIPTOR, _USB_ENDPOINT_DESCRIPTOR, usbspec/PUSB_ENDPOINT_DESCRIPTOR, usbstrct_3e135b0b-f2a1-4d7a-92b8-4a9e2724726c.xml, USB_ENDPOINT_DESCRIPTOR, USB_ENDPOINT_DESCRIPTOR structure [Buses]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : usbspec.h
-req.include-header : Usb100.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUSB_ENDPOINT_DESCRIPTOR, USB_ENDPOINT_DESCRIPTOR"
-req.product : Windows 10 or later.
+UID: NS:usbspec._USB_ENDPOINT_DESCRIPTOR
+title: "_USB_ENDPOINT_DESCRIPTOR"
+author: windows-driver-content
+description: The USB_ENDPOINT_DESCRIPTOR structure is used by USB client drivers to retrieve a USB-defined endpoint descriptor.
+old-location: buses\usb_endpoint_descriptor.htm
+old-project: usbref
+ms.assetid: fb4f25e4-cf72-4308-9685-edc62b1cc510
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: PUSB_ENDPOINT_DESCRIPTOR, PUSB_ENDPOINT_DESCRIPTOR structure pointer [Buses], usbspec/USB_ENDPOINT_DESCRIPTOR, buses.usb_endpoint_descriptor, *PUSB_ENDPOINT_DESCRIPTOR, _USB_ENDPOINT_DESCRIPTOR, usbspec/PUSB_ENDPOINT_DESCRIPTOR, usbstrct_3e135b0b-f2a1-4d7a-92b8-4a9e2724726c.xml, USB_ENDPOINT_DESCRIPTOR, USB_ENDPOINT_DESCRIPTOR structure [Buses]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: usbspec.h
+req.include-header: Usb100.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	usbspec.h
+apiname:
+-	USB_ENDPOINT_DESCRIPTOR
+product: Windows
+targetos: Windows
+req.typenames: "*PUSB_ENDPOINT_DESCRIPTOR, USB_ENDPOINT_DESCRIPTOR"
+req.product: Windows 10 or later.
 ---
 
 # _USB_ENDPOINT_DESCRIPTOR structure

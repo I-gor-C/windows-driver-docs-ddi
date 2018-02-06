@@ -1,42 +1,48 @@
 ---
-UID : NF:wmilib.WmiFireEvent
-title : WmiFireEvent function
-author : windows-driver-content
-description : The WmiFireEvent routine sends an event to WMI for delivery to data consumers that have requested notification of the event.
-old-location : kernel\wmifireevent.htm
-old-project : kernel
-ms.assetid : 600391ef-f4bb-479b-ad73-305e365ed70d
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : k902_bae3b7d7-89d9-4ab9-8f26-2bd12e6b6caa.xml, wmilib/WmiFireEvent, kernel.wmifireevent, WmiFireEvent routine [Kernel-Mode Driver Architecture], WmiFireEvent
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wmilib.h
-req.include-header : Wmilib.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wmilib.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WMI_CHANGER_PROBLEM_DEVICE_ERROR, *PWMI_CHANGER_PROBLEM_DEVICE_ERROR
-req.product : Windows 10 or later.
+UID: NF:wmilib.WmiFireEvent
+title: WmiFireEvent function
+author: windows-driver-content
+description: The WmiFireEvent routine sends an event to WMI for delivery to data consumers that have requested notification of the event.
+old-location: kernel\wmifireevent.htm
+old-project: kernel
+ms.assetid: 600391ef-f4bb-479b-ad73-305e365ed70d
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: k902_bae3b7d7-89d9-4ab9-8f26-2bd12e6b6caa.xml, wmilib/WmiFireEvent, kernel.wmifireevent, WmiFireEvent routine [Kernel-Mode Driver Architecture], WmiFireEvent
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wmilib.h
+req.include-header: Wmilib.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wmilib.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wmilib.lib
+-	Wmilib.dll
+apiname:
+-	WmiFireEvent
+product: Windows
+targetos: Windows
+req.typenames: WMI_CHANGER_PROBLEM_DEVICE_ERROR, *PWMI_CHANGER_PROBLEM_DEVICE_ERROR
+req.product: Windows 10 or later.
 ---
 
 

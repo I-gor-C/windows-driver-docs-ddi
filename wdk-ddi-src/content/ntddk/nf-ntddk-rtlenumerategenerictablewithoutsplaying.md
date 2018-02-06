@@ -1,41 +1,46 @@
 ---
-UID : NF:ntddk.RtlEnumerateGenericTableWithoutSplaying
-title : RtlEnumerateGenericTableWithoutSplaying function
-author : windows-driver-content
-description : The RtlEnumerateGenericTableWithoutSplaying routine is used to enumerate the elements in a generic table.
-old-location : ifsk\rtlenumerategenerictablewithoutsplaying.htm
-old-project : ifsk
-ms.assetid : 28dacbac-99f0-415d-8d4f-954220839078
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ntddk/RtlEnumerateGenericTableWithoutSplaying, rtlref_83b2461b-003b-4aee-be45-afb325b15219.xml, RtlEnumerateGenericTableWithoutSplaying routine [Installable File System Drivers], ifsk.rtlenumerategenerictablewithoutsplaying, RtlEnumerateGenericTableWithoutSplaying
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntddk.h
-req.include-header : Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows XPand later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.RtlEnumerateGenericTableWithoutSplaying
+title: RtlEnumerateGenericTableWithoutSplaying function
+author: windows-driver-content
+description: The RtlEnumerateGenericTableWithoutSplaying routine is used to enumerate the elements in a generic table.
+old-location: ifsk\rtlenumerategenerictablewithoutsplaying.htm
+old-project: ifsk
+ms.assetid: 28dacbac-99f0-415d-8d4f-954220839078
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ntddk/RtlEnumerateGenericTableWithoutSplaying, rtlref_83b2461b-003b-4aee-be45-afb325b15219.xml, RtlEnumerateGenericTableWithoutSplaying routine [Installable File System Drivers], ifsk.rtlenumerategenerictablewithoutsplaying, RtlEnumerateGenericTableWithoutSplaying
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntddk.h
+req.include-header: Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows XPand later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	RtlEnumerateGenericTableWithoutSplaying
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

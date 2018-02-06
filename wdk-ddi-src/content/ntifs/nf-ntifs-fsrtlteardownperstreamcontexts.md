@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.FsRtlTeardownPerStreamContexts
-title : FsRtlTeardownPerStreamContexts function
-author : windows-driver-content
-description : The FsRtlTeardownPerStreamContexts routine frees all per-stream context structures associated with a given FSRTL_ADVANCED_FCB_HEADER structure.
-old-location : ifsk\fsrtlteardownperstreamcontexts.htm
-old-project : ifsk
-ms.assetid : a37a921c-748a-4ac2-99c7-a6cf987a8f54
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : fsrtlref_15f597e3-b397-497b-9839-a61b6cf27745.xml, ntifs/FsRtlTeardownPerStreamContexts, ifsk.fsrtlteardownperstreamcontexts, FsRtlTeardownPerStreamContexts routine [Installable File System Drivers], FsRtlTeardownPerStreamContexts
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : This routine is available on Update Rollup for Windows 2000 Service Pack 4 (SP4) and on Microsoft Windows XP and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.FsRtlTeardownPerStreamContexts
+title: FsRtlTeardownPerStreamContexts function
+author: windows-driver-content
+description: The FsRtlTeardownPerStreamContexts routine frees all per-stream context structures associated with a given FSRTL_ADVANCED_FCB_HEADER structure.
+old-location: ifsk\fsrtlteardownperstreamcontexts.htm
+old-project: ifsk
+ms.assetid: a37a921c-748a-4ac2-99c7-a6cf987a8f54
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: fsrtlref_15f597e3-b397-497b-9839-a61b6cf27745.xml, ntifs/FsRtlTeardownPerStreamContexts, ifsk.fsrtlteardownperstreamcontexts, FsRtlTeardownPerStreamContexts routine [Installable File System Drivers], FsRtlTeardownPerStreamContexts
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: This routine is available on Update Rollup for Windows 2000 Service Pack 4 (SP4) and on Microsoft Windows XP and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	FsRtlTeardownPerStreamContexts
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

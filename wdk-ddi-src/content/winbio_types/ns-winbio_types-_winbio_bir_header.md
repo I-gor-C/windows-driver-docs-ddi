@@ -1,42 +1,47 @@
 ---
-UID : NS:winbio_types._WINBIO_BIR_HEADER
-title : "_WINBIO_BIR_HEADER"
-author : windows-driver-content
-description : The WINBIO_BIR_HEADER structure contains the Common Biometric Exchange File Format (CBEFF) Patron Format A information that describes the rest of the BIR.
-old-location : biometric\winbio_bir_header.htm
-old-project : biometric
-ms.assetid : 5053b027-61a9-463a-967c-9e9ff1673b1c
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : "*PWINBIO_BIR_HEADER, WINBIO_BIR_HEADER structure [Biometric Devices], winbio_types/PWINBIO_BIR_HEADER, WINBIO_BIR_HEADER, PWINBIO_BIR_HEADER, _WINBIO_BIR_HEADER, biometric_ref_1e5e4af7-36a5-414b-8c26-7a266c38272c.xml, winbio_types/WINBIO_BIR_HEADER, biometric.winbio_bir_header, PWINBIO_BIR_HEADER structure pointer [Biometric Devices]"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : winbio_types.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WINBIO_BIR_HEADER
-req.product : Windows 10 or later.
+UID: NS:winbio_types._WINBIO_BIR_HEADER
+title: "_WINBIO_BIR_HEADER"
+author: windows-driver-content
+description: The WINBIO_BIR_HEADER structure contains the Common Biometric Exchange File Format (CBEFF) Patron Format A information that describes the rest of the BIR.
+old-location: biometric\winbio_bir_header.htm
+old-project: biometric
+ms.assetid: 5053b027-61a9-463a-967c-9e9ff1673b1c
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: "*PWINBIO_BIR_HEADER, WINBIO_BIR_HEADER structure [Biometric Devices], winbio_types/PWINBIO_BIR_HEADER, WINBIO_BIR_HEADER, PWINBIO_BIR_HEADER, _WINBIO_BIR_HEADER, biometric_ref_1e5e4af7-36a5-414b-8c26-7a266c38272c.xml, winbio_types/WINBIO_BIR_HEADER, biometric.winbio_bir_header, PWINBIO_BIR_HEADER structure pointer [Biometric Devices]"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: winbio_types.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	winbio_types.h
+apiname:
+-	WINBIO_BIR_HEADER
+product: Windows
+targetos: Windows
+req.typenames: WINBIO_BIR_HEADER
+req.product: Windows 10 or later.
 ---
 
 # _WINBIO_BIR_HEADER structure

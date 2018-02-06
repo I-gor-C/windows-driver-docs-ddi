@@ -1,41 +1,47 @@
 ---
-UID : NF:ntifs.SecMakeSPNEx2
-title : SecMakeSPNEx2 function
-author : windows-driver-content
-description : SecMakeSPNEx2 creates a service provider name string that can be used when it communicates with specific security service providers.
-old-location : ifsk\secmakespnex2.htm
-old-project : ifsk
-ms.assetid : abb8d45a-a698-41b0-94b3-c658fe3105bb
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : SecMakeSPNEx2, ifsk.secmakespnex2, ksecddref_be331d16-cc90-4e80-85cd-c2faaecca843.xml, SecMakeSPNEx2 function [Installable File System Drivers], ntifs/SecMakeSPNEx2
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h, FltKernel.h
-req.target-type : Universal
-req.target-min-winverclnt : This function is available on Windows Vista, Windows Server 2008, and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ksecdd.lib
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.SecMakeSPNEx2
+title: SecMakeSPNEx2 function
+author: windows-driver-content
+description: SecMakeSPNEx2 creates a service provider name string that can be used when it communicates with specific security service providers.
+old-location: ifsk\secmakespnex2.htm
+old-project: ifsk
+ms.assetid: abb8d45a-a698-41b0-94b3-c658fe3105bb
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: SecMakeSPNEx2, ifsk.secmakespnex2, ksecddref_be331d16-cc90-4e80-85cd-c2faaecca843.xml, SecMakeSPNEx2 function [Installable File System Drivers], ntifs/SecMakeSPNEx2
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h, FltKernel.h
+req.target-type: Universal
+req.target-min-winverclnt: This function is available on Windows Vista, Windows Server 2008, and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ksecdd.lib
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ksecdd.lib
+-	Ksecdd.dll
+apiname:
+-	SecMakeSPNEx2
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NF:fcb.RxpReferenceNetFcb
-title : RxpReferenceNetFcb function
-author : windows-driver-content
-description : RxpReferenceNetFcb increments the reference count on an FCB.
-old-location : ifsk\rxpreferencenetfcb.htm
-old-project : ifsk
-ms.assetid : bc8999e2-d305-407f-8302-6834efa698c5
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : rxref_48d7801e-1459-405e-a681-2aa13e9e31cd.xml, fcb/RxpReferenceNetFcb, RxpReferenceNetFcb function [Installable File System Drivers], ifsk.rxpreferencenetfcb, RxpReferenceNetFcb
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fcb.h
-req.include-header : Fcb.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FA_ENTRY, *PFA_ENTRY
+UID: NF:fcb.RxpReferenceNetFcb
+title: RxpReferenceNetFcb function
+author: windows-driver-content
+description: RxpReferenceNetFcb increments the reference count on an FCB.
+old-location: ifsk\rxpreferencenetfcb.htm
+old-project: ifsk
+ms.assetid: bc8999e2-d305-407f-8302-6834efa698c5
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: rxref_48d7801e-1459-405e-a681-2aa13e9e31cd.xml, fcb/RxpReferenceNetFcb, RxpReferenceNetFcb function [Installable File System Drivers], ifsk.rxpreferencenetfcb, RxpReferenceNetFcb
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fcb.h
+req.include-header: Fcb.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	fcb.h
+apiname:
+-	RxpReferenceNetFcb
+product: Windows
+targetos: Windows
+req.typenames: FA_ENTRY, *PFA_ENTRY
 ---
 
 

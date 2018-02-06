@@ -1,42 +1,50 @@
 ---
-UID : NF:wdfio.WdfIoQueueCreate
-title : WdfIoQueueCreate function
-author : windows-driver-content
-description : The WdfIoQueueCreate method creates and configures an I/O queue for a specified device.
-old-location : wdf\wdfioqueuecreate.htm
-old-project : wdf
-ms.assetid : cd7e993e-1381-4b0c-b046-716e839dbb62
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : kmdf.wdfioqueuecreate, DFQueueObjectRef_97b06453-cf79-4944-85d7-530b83211353.xml, PFN_WDFIOQUEUECREATE, wdf.wdfioqueuecreate, wdfio/WdfIoQueueCreate, WdfIoQueueCreate method, WdfIoQueueCreate
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfio.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : ChangeQueueState, DriverCreate, DrvAckIoStop, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_IO_QUEUE_STATE
-req.product : Windows 10 or later.
+UID: NF:wdfio.WdfIoQueueCreate
+title: WdfIoQueueCreate function
+author: windows-driver-content
+description: The WdfIoQueueCreate method creates and configures an I/O queue for a specified device.
+old-location: wdf\wdfioqueuecreate.htm
+old-project: wdf
+ms.assetid: cd7e993e-1381-4b0c-b046-716e839dbb62
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: kmdf.wdfioqueuecreate, DFQueueObjectRef_97b06453-cf79-4944-85d7-530b83211353.xml, PFN_WDFIOQUEUECREATE, wdf.wdfioqueuecreate, wdfio/WdfIoQueueCreate, WdfIoQueueCreate method, WdfIoQueueCreate
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfio.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: ChangeQueueState, DriverCreate, DrvAckIoStop, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+-	WUDFx02000.dll
+-	WUDFx02000.dll.dll
+apiname:
+-	WdfIoQueueCreate
+product: Windows
+targetos: Windows
+req.typenames: WDF_IO_QUEUE_STATE
+req.product: Windows 10 or later.
 ---
 
 

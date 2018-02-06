@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.PoSetPowerState
-title : PoSetPowerState function
-author : windows-driver-content
-description : The PoSetPowerState routine notifies the system of a change in the device power state for a device.
-old-location : kernel\posetpowerstate.htm
-old-project : kernel
-ms.assetid : 9fff319e-0428-4185-a792-d3842ab9feb8
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : portn_b6d6559d-e4c7-4fa8-b0f2-556b840391f9.xml, PoSetPowerState routine [Kernel-Mode Driver Architecture], kernel.posetpowerstate, wdm/PoSetPowerState, PoSetPowerState
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.PoSetPowerState
+title: PoSetPowerState function
+author: windows-driver-content
+description: The PoSetPowerState routine notifies the system of a change in the device power state for a device.
+old-location: kernel\posetpowerstate.htm
+old-project: kernel
+ms.assetid: 9fff319e-0428-4185-a792-d3842ab9feb8
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: portn_b6d6559d-e4c7-4fa8-b0f2-556b840391f9.xml, PoSetPowerState routine [Kernel-Mode Driver Architecture], kernel.posetpowerstate, wdm/PoSetPowerState, PoSetPowerState
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	PoSetPowerState
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

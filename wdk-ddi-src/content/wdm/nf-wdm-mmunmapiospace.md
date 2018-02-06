@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.MmUnmapIoSpace
-title : MmUnmapIoSpace function
-author : windows-driver-content
-description : The MmUnmapIoSpace routine unmaps a specified range of physical addresses previously mapped by MmMapIoSpace.
-old-location : kernel\mmunmapiospace.htm
-old-project : kernel
-ms.assetid : 5963f34a-4315-46c3-9802-0b6a1b229e3f
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : MmUnmapIoSpace routine [Kernel-Mode Driver Architecture], wdm/MmUnmapIoSpace, MmUnmapIoSpace, k106_a56f91b1-7187-4836-a3d8-4b7d2918227a.xml, kernel.mmunmapiospace
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.MmUnmapIoSpace
+title: MmUnmapIoSpace function
+author: windows-driver-content
+description: The MmUnmapIoSpace routine unmaps a specified range of physical addresses previously mapped by MmMapIoSpace.
+old-location: kernel\mmunmapiospace.htm
+old-project: kernel
+ms.assetid: 5963f34a-4315-46c3-9802-0b6a1b229e3f
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: MmUnmapIoSpace routine [Kernel-Mode Driver Architecture], wdm/MmUnmapIoSpace, MmUnmapIoSpace, k106_a56f91b1-7187-4836-a3d8-4b7d2918227a.xml, kernel.mmunmapiospace
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	MmUnmapIoSpace
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

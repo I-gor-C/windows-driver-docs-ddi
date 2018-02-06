@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.ExReleaseResourceForThreadLite
-title : ExReleaseResourceForThreadLite function
-author : windows-driver-content
-description : The ExReleaseResourceForThreadLite routine releases the input resource of the indicated thread.
-old-location : kernel\exreleaseresourceforthreadlite.htm
-old-project : kernel
-ms.assetid : 840e7f50-644c-49b9-a40b-d504e19b0db2
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.exreleaseresourceforthreadlite, wdm/ExReleaseResourceForThreadLite, ExReleaseResourceForThreadLite, ExReleaseResourceForThreadLite routine [Kernel-Mode Driver Architecture], k102_799a8ff7-3996-470d-97b2-e1c18bbcb486.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : ExclusiveResourceAccess, WithinCriticalRegion, HwStorPortProhibitedDDIs, WithinCriticalRegion(storport)
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ExReleaseResourceForThreadLite
+title: ExReleaseResourceForThreadLite function
+author: windows-driver-content
+description: The ExReleaseResourceForThreadLite routine releases the input resource of the indicated thread.
+old-location: kernel\exreleaseresourceforthreadlite.htm
+old-project: kernel
+ms.assetid: 840e7f50-644c-49b9-a40b-d504e19b0db2
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.exreleaseresourceforthreadlite, wdm/ExReleaseResourceForThreadLite, ExReleaseResourceForThreadLite, ExReleaseResourceForThreadLite routine [Kernel-Mode Driver Architecture], k102_799a8ff7-3996-470d-97b2-e1c18bbcb486.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: ExclusiveResourceAccess, WithinCriticalRegion, HwStorPortProhibitedDDIs, WithinCriticalRegion(storport)
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ExReleaseResourceForThreadLite
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

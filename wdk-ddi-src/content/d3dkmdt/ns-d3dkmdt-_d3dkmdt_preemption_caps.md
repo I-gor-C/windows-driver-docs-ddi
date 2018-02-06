@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmdt._D3DKMDT_PREEMPTION_CAPS
-title : "_D3DKMDT_PREEMPTION_CAPS"
-author : windows-driver-content
-description : Specifies the capabilities for the preemption of graphic processing unit (GPU) graphics requests that the display miniport driver supports.
-old-location : display\d3dkmdt_preemption_caps.htm
-old-project : display
-ms.assetid : 52172edc-77a9-46b9-8382-c57c65b80b93
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DKMDT_PREEMPTION_CAPS, _D3DKMDT_PREEMPTION_CAPS, D3DKMDT_PREEMPTION_CAPS structure [Display Devices], display.d3dkmdt_preemption_caps, d3dkmdt/D3DKMDT_PREEMPTION_CAPS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmdt.h
-req.include-header : D3dkmdt.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMDT_PREEMPTION_CAPS
+UID: NS:d3dkmdt._D3DKMDT_PREEMPTION_CAPS
+title: "_D3DKMDT_PREEMPTION_CAPS"
+author: windows-driver-content
+description: Specifies the capabilities for the preemption of graphic processing unit (GPU) graphics requests that the display miniport driver supports.
+old-location: display\d3dkmdt_preemption_caps.htm
+old-project: display
+ms.assetid: 52172edc-77a9-46b9-8382-c57c65b80b93
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DKMDT_PREEMPTION_CAPS, _D3DKMDT_PREEMPTION_CAPS, D3DKMDT_PREEMPTION_CAPS structure [Display Devices], display.d3dkmdt_preemption_caps, d3dkmdt/D3DKMDT_PREEMPTION_CAPS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmdt.h
+req.include-header: D3dkmdt.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	D3dkmdt.h
+apiname:
+-	D3DKMDT_PREEMPTION_CAPS
+product: Windows
+targetos: Windows
+req.typenames: D3DKMDT_PREEMPTION_CAPS
 ---
 
 # _D3DKMDT_PREEMPTION_CAPS structure

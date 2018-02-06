@@ -1,41 +1,46 @@
 ---
-UID : NS:pepfx._PEP_PPM_ENTER_SYSTEM_STATE
-title : "_PEP_PPM_ENTER_SYSTEM_STATE"
-author : windows-driver-content
-description : Used in the PEP_NOTIFY_PPM_ENTER_SYSTEM_STATE notification to notify PEP that the system is about to enter a system power state.  .
-old-location : kernel\pep_ppm_enter_system_state.htm
-old-project : kernel
-ms.assetid : 1a398899-b05d-4853-b68d-ae8be958dd91
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : PEP_PPM_ENTER_SYSTEM_STATE structure [Kernel-Mode Driver Architecture], pepfx/PEP_PPM_ENTER_SYSTEM_STATE, _PEP_PPM_ENTER_SYSTEM_STATE, *PPEP_PPM_ENTER_SYSTEM_STATE, kernel.pep_ppm_enter_system_state, PPEP_PPM_ENTER_SYSTEM_STATE, PPEP_PPM_ENTER_SYSTEM_STATE structure pointer [Kernel-Mode Driver Architecture], PEP_PPM_ENTER_SYSTEM_STATE, pepfx/PPEP_PPM_ENTER_SYSTEM_STATE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : pepfx.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10, version 1709
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPEP_PPM_ENTER_SYSTEM_STATE, PEP_PPM_ENTER_SYSTEM_STATE"
+UID: NS:pepfx._PEP_PPM_ENTER_SYSTEM_STATE
+title: "_PEP_PPM_ENTER_SYSTEM_STATE"
+author: windows-driver-content
+description: Used in the PEP_NOTIFY_PPM_ENTER_SYSTEM_STATE notification to notify PEP that the system is about to enter a system power state.  .
+old-location: kernel\pep_ppm_enter_system_state.htm
+old-project: kernel
+ms.assetid: 1a398899-b05d-4853-b68d-ae8be958dd91
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: PEP_PPM_ENTER_SYSTEM_STATE structure [Kernel-Mode Driver Architecture], pepfx/PEP_PPM_ENTER_SYSTEM_STATE, _PEP_PPM_ENTER_SYSTEM_STATE, *PPEP_PPM_ENTER_SYSTEM_STATE, kernel.pep_ppm_enter_system_state, PPEP_PPM_ENTER_SYSTEM_STATE, PPEP_PPM_ENTER_SYSTEM_STATE structure pointer [Kernel-Mode Driver Architecture], PEP_PPM_ENTER_SYSTEM_STATE, pepfx/PPEP_PPM_ENTER_SYSTEM_STATE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: pepfx.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10, version 1709
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Pepfx.h
+apiname:
+-	PEP_PPM_ENTER_SYSTEM_STATE
+product: Windows
+targetos: Windows
+req.typenames: "*PPEP_PPM_ENTER_SYSTEM_STATE, PEP_PPM_ENTER_SYSTEM_STATE"
 ---
 
 # _PEP_PPM_ENTER_SYSTEM_STATE structure

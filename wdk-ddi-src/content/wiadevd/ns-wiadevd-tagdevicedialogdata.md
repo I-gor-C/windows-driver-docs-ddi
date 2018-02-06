@@ -1,42 +1,47 @@
 ---
-UID : NS:wiadevd.tagDEVICEDIALOGDATA
-title : tagDEVICEDIALOGDATA
-author : windows-driver-content
-description : The DEVICEDIALOGDATA structure contains all the data needed to implement a custom device dialog.
-old-location : image\devicedialogdata.htm
-old-project : image
-ms.assetid : 8ddd3ad7-fa97-45a4-a124-ceccdfb93f7f
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : PDEVICEDIALOGDATA structure pointer [Imaging Devices], wiadevd/LPDEVICEDIALOGDATA, PDEVICEDIALOGDATA, tagDEVICEDIALOGDATA, wiadevd/DEVICEDIALOGDATA, DEVICEDIALOGDATA, DEVICEDIALOGDATA structure [Imaging Devices], image.devicedialogdata, *LPDEVICEDIALOGDATA, LPDEVICEDIALOGDATA structure pointer [Imaging Devices], *PDEVICEDIALOGDATA, LPDEVICEDIALOGDATA, UIExt_58107635-73eb-474c-83a6-c46b7ea27dc2.xml, wiadevd/PDEVICEDIALOGDATA
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wiadevd.h
-req.include-header : Wiadevd.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Me and in Windows XP and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DEVICEDIALOGDATA, *PDEVICEDIALOGDATA, *LPDEVICEDIALOGDATA
-req.product : Windows 10 or later.
+UID: NS:wiadevd.tagDEVICEDIALOGDATA
+title: tagDEVICEDIALOGDATA
+author: windows-driver-content
+description: The DEVICEDIALOGDATA structure contains all the data needed to implement a custom device dialog.
+old-location: image\devicedialogdata.htm
+old-project: image
+ms.assetid: 8ddd3ad7-fa97-45a4-a124-ceccdfb93f7f
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: PDEVICEDIALOGDATA structure pointer [Imaging Devices], wiadevd/LPDEVICEDIALOGDATA, PDEVICEDIALOGDATA, tagDEVICEDIALOGDATA, wiadevd/DEVICEDIALOGDATA, DEVICEDIALOGDATA, DEVICEDIALOGDATA structure [Imaging Devices], image.devicedialogdata, *LPDEVICEDIALOGDATA, LPDEVICEDIALOGDATA structure pointer [Imaging Devices], *PDEVICEDIALOGDATA, LPDEVICEDIALOGDATA, UIExt_58107635-73eb-474c-83a6-c46b7ea27dc2.xml, wiadevd/PDEVICEDIALOGDATA
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wiadevd.h
+req.include-header: Wiadevd.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Me and in Windows XP and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wiadevd.h
+apiname:
+-	DEVICEDIALOGDATA
+product: Windows
+targetos: Windows
+req.typenames: DEVICEDIALOGDATA, *PDEVICEDIALOGDATA, *LPDEVICEDIALOGDATA
+req.product: Windows 10 or later.
 ---
 
 # tagDEVICEDIALOGDATA structure

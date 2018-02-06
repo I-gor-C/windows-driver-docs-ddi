@@ -1,41 +1,46 @@
 ---
-UID : NF:ksproxy.IKsPin.KsPropagateAcquire
-title : IKsPin::KsPropagateAcquire method
-author : windows-driver-content
-description : The KsPropagateAcquire method directs all the pins on the filter to attain the Acquire state.
-old-location : stream\ikspin_kspropagateacquire.htm
-old-project : stream
-ms.assetid : 059bef5a-1db7-4fd7-a19b-c34df81f4447
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KsPropagateAcquire method [Streaming Media Devices], IKsPin interface, KsPropagateAcquire, ksproxy/IKsPin::KsPropagateAcquire, KsPropagateAcquire method [Streaming Media Devices], IKsPin::KsPropagateAcquire, ksproxy_c3ce0cef-0366-4233-afa5-723f9d3bb4e9.xml, stream.ikspin_kspropagateacquire, IKsPin interface [Streaming Media Devices], KsPropagateAcquire method, IKsPin
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : ksproxy.h
-req.include-header : Ksproxy.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : ksproxy.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PIPE_STATE
+UID: NF:ksproxy.IKsPin.KsPropagateAcquire
+title: IKsPin::KsPropagateAcquire method
+author: windows-driver-content
+description: The KsPropagateAcquire method directs all the pins on the filter to attain the Acquire state.
+old-location: stream\ikspin_kspropagateacquire.htm
+old-project: stream
+ms.assetid: 059bef5a-1db7-4fd7-a19b-c34df81f4447
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KsPropagateAcquire method [Streaming Media Devices], IKsPin interface, KsPropagateAcquire, ksproxy/IKsPin::KsPropagateAcquire, KsPropagateAcquire method [Streaming Media Devices], IKsPin::KsPropagateAcquire, ksproxy_c3ce0cef-0366-4233-afa5-723f9d3bb4e9.xml, stream.ikspin_kspropagateacquire, IKsPin interface [Streaming Media Devices], KsPropagateAcquire method, IKsPin
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: ksproxy.h
+req.include-header: Ksproxy.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: ksproxy.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	ksproxy.h
+apiname:
+-	IKsPin.KsPropagateAcquire
+product: Windows
+targetos: Windows
+req.typenames: PIPE_STATE
 ---
 
 

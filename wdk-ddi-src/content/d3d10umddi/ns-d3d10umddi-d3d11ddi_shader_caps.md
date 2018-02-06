@@ -1,41 +1,46 @@
 ---
-UID : NS:d3d10umddi.D3D11DDI_SHADER_CAPS
-title : D3D11DDI_SHADER_CAPS
-author : windows-driver-content
-description : The D3D11DDI_SHADER_CAPS structure contains display device shader capabilities.
-old-location : display\d3d11ddi_shader_caps.htm
-old-project : display
-ms.assetid : 07ad70b0-9af2-4fbd-baff-aa91dd583a20
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3D11DDI_SHADER_CAPS structure [Display Devices], d3d10umddi/D3D11DDI_SHADER_CAPS, UMDisplayDriver_Dx11param_Structs_e0026993-2d6d-4478-8796-c423c841f7f8.xml, D3D11DDICAPS_SHADER_COMPUTE_PLUS_RAW_AND_STRUCTURED_BUFFERS_IN_SHADER_4_X (0x2), D3D11DDI_SHADER_CAPS, display.d3d11ddi_shader_caps, D3D11DDICAPS_SHADER_DOUBLES (0x1)
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Windows
-req.target-min-winverclnt : D3D11DDI_SHADER_CAPS is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3D11DDI_SHADER_CAPS
+UID: NS:d3d10umddi.D3D11DDI_SHADER_CAPS
+title: D3D11DDI_SHADER_CAPS
+author: windows-driver-content
+description: The D3D11DDI_SHADER_CAPS structure contains display device shader capabilities.
+old-location: display\d3d11ddi_shader_caps.htm
+old-project: display
+ms.assetid: 07ad70b0-9af2-4fbd-baff-aa91dd583a20
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3D11DDI_SHADER_CAPS structure [Display Devices], d3d10umddi/D3D11DDI_SHADER_CAPS, UMDisplayDriver_Dx11param_Structs_e0026993-2d6d-4478-8796-c423c841f7f8.xml, D3D11DDICAPS_SHADER_COMPUTE_PLUS_RAW_AND_STRUCTURED_BUFFERS_IN_SHADER_4_X (0x2), D3D11DDI_SHADER_CAPS, display.d3d11ddi_shader_caps, D3D11DDICAPS_SHADER_DOUBLES (0x1)
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Windows
+req.target-min-winverclnt: D3D11DDI_SHADER_CAPS is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	D3D11DDI_SHADER_CAPS
+product: Windows
+targetos: Windows
+req.typenames: D3D11DDI_SHADER_CAPS
 ---
 
 # D3D11DDI_SHADER_CAPS structure

@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddstor._STORAGE_ACCESS_ALIGNMENT_DESCRIPTOR
-title : "_STORAGE_ACCESS_ALIGNMENT_DESCRIPTOR"
-author : windows-driver-content
-description : The STORAGE_ACCESS_ALIGNMENT_DESCRIPTOR structure is used in conjunction with the IOCTL_STORAGE_QUERY_PROPERTY request to retrieve the storage access alignment descriptor data for a device.
-old-location : storage\storage_access_alignment_descriptor.htm
-old-project : storage
-ms.assetid : 988122bf-d7de-44a3-a059-c984bf636cd0
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : structs-general_191220fa-6df5-478b-b60e-af8e3f62d441.xml, storage.storage_access_alignment_descriptor, STORAGE_ACCESS_ALIGNMENT_DESCRIPTOR structure [Storage Devices], _STORAGE_ACCESS_ALIGNMENT_DESCRIPTOR, PSTORAGE_ACCESS_ALIGNMENT_DESCRIPTOR, STORAGE_ACCESS_ALIGNMENT_DESCRIPTOR, PSTORAGE_ACCESS_ALIGNMENT_DESCRIPTOR structure pointer [Storage Devices], ntddstor/STORAGE_ACCESS_ALIGNMENT_DESCRIPTOR, ntddstor/PSTORAGE_ACCESS_ALIGNMENT_DESCRIPTOR
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddstor.h
-req.include-header : Ntddstor.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STORAGE_ACCESS_ALIGNMENT_DESCRIPTOR, PSTORAGE_ACCESS_ALIGNMENT_DESCRIPTOR
+UID: NS:ntddstor._STORAGE_ACCESS_ALIGNMENT_DESCRIPTOR
+title: "_STORAGE_ACCESS_ALIGNMENT_DESCRIPTOR"
+author: windows-driver-content
+description: The STORAGE_ACCESS_ALIGNMENT_DESCRIPTOR structure is used in conjunction with the IOCTL_STORAGE_QUERY_PROPERTY request to retrieve the storage access alignment descriptor data for a device.
+old-location: storage\storage_access_alignment_descriptor.htm
+old-project: storage
+ms.assetid: 988122bf-d7de-44a3-a059-c984bf636cd0
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: structs-general_191220fa-6df5-478b-b60e-af8e3f62d441.xml, storage.storage_access_alignment_descriptor, STORAGE_ACCESS_ALIGNMENT_DESCRIPTOR structure [Storage Devices], _STORAGE_ACCESS_ALIGNMENT_DESCRIPTOR, PSTORAGE_ACCESS_ALIGNMENT_DESCRIPTOR, STORAGE_ACCESS_ALIGNMENT_DESCRIPTOR, PSTORAGE_ACCESS_ALIGNMENT_DESCRIPTOR structure pointer [Storage Devices], ntddstor/STORAGE_ACCESS_ALIGNMENT_DESCRIPTOR, ntddstor/PSTORAGE_ACCESS_ALIGNMENT_DESCRIPTOR
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddstor.h
+req.include-header: Ntddstor.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddstor.h
+apiname:
+-	STORAGE_ACCESS_ALIGNMENT_DESCRIPTOR
+product: Windows
+targetos: Windows
+req.typenames: STORAGE_ACCESS_ALIGNMENT_DESCRIPTOR, PSTORAGE_ACCESS_ALIGNMENT_DESCRIPTOR
 ---
 
 # _STORAGE_ACCESS_ALIGNMENT_DESCRIPTOR structure

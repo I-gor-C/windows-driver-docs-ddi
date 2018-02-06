@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsDeviceGetBusData
-title : KsDeviceGetBusData function
-author : windows-driver-content
-description : The KsDeviceGetBusData function reads data from the bus where the given AVStream device resides.
-old-location : stream\ksdevicegetbusdata.htm
-old-project : stream
-ms.assetid : 40971ff3-6fd3-480b-aba9-7f572d6e1ce2
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KsDeviceGetBusData function [Streaming Media Devices], avfunc_3106cd50-9e8c-407c-bcb0-c5e9c86d8dc7.xml, stream.ksdevicegetbusdata, KsDeviceGetBusData, ks/KsDeviceGetBusData
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL (See Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsDeviceGetBusData
+title: KsDeviceGetBusData function
+author: windows-driver-content
+description: The KsDeviceGetBusData function reads data from the bus where the given AVStream device resides.
+old-location: stream\ksdevicegetbusdata.htm
+old-project: stream
+ms.assetid: 40971ff3-6fd3-480b-aba9-7f572d6e1ce2
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KsDeviceGetBusData function [Streaming Media Devices], avfunc_3106cd50-9e8c-407c-bcb0-c5e9c86d8dc7.xml, stream.ksdevicegetbusdata, KsDeviceGetBusData, ks/KsDeviceGetBusData
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL (See Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsDeviceGetBusData
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

@@ -1,41 +1,47 @@
 ---
-UID : NF:fwpsk.FwpsInjectMacSendAsync0
-title : FwpsInjectMacSendAsync0 function
-author : windows-driver-content
-description : The FwpsInjectMacSendAsync0 function can reinject a previously absorbed media access control (MAC) frame (or a clone of the frame) back to the layer 2 outbound data path it was intercepted from, or inject an invented MAC frame.
-old-location : netvista\fwpsinjectmacsendasync0.htm
-old-project : netvista
-ms.assetid : 9964D11C-C1A6-4BE7-A8A4-5A0E71801610
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : fwpsk/FwpsInjectMacSendAsync0, netvista.fwpsinjectmacsendasync0, FwpsInjectMacSendAsync0, FwpsInjectMacSendAsync0 function [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fwpsk.h
-req.include-header : Fwpsk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Fwpkclnt.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FWPS_VSWITCH_EVENT_TYPE
+UID: NF:fwpsk.FwpsInjectMacSendAsync0
+title: FwpsInjectMacSendAsync0 function
+author: windows-driver-content
+description: The FwpsInjectMacSendAsync0 function can reinject a previously absorbed media access control (MAC) frame (or a clone of the frame) back to the layer 2 outbound data path it was intercepted from, or inject an invented MAC frame.
+old-location: netvista\fwpsinjectmacsendasync0.htm
+old-project: netvista
+ms.assetid: 9964D11C-C1A6-4BE7-A8A4-5A0E71801610
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: fwpsk/FwpsInjectMacSendAsync0, netvista.fwpsinjectmacsendasync0, FwpsInjectMacSendAsync0, FwpsInjectMacSendAsync0 function [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fwpsk.h
+req.include-header: Fwpsk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Fwpkclnt.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	fwpkclnt.lib
+-	fwpkclnt.dll
+apiname:
+-	FwpsInjectMacSendAsync0
+product: Windows
+targetos: Windows
+req.typenames: FWPS_VSWITCH_EVENT_TYPE
 ---
 
 

@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisAcquireRWLockWrite
-title : NdisAcquireRWLockWrite function
-author : windows-driver-content
-description : The NdisAcquireRWLockWrite function obtains a write lock that the caller uses for write access to resources that are shared between driver threads.
-old-location : netvista\ndisacquirerwlockwrite.htm
-old-project : netvista
-ms.assetid : 124302d7-0776-4025-b71f-ce6300f97f49
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NdisAcquireRWLockWrite function [Network Drivers Starting with Windows Vista], netvista.ndisacquirerwlockwrite, NdisAcquireRWLockWrite, ndis/NdisAcquireRWLockWrite, ndis_processor_group_ref_f957b48a-4c09-4348-897c-51813ede9b19.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported in NDIS 6.20 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisAcquireRWLockWrite
+title: NdisAcquireRWLockWrite function
+author: windows-driver-content
+description: The NdisAcquireRWLockWrite function obtains a write lock that the caller uses for write access to resources that are shared between driver threads.
+old-location: netvista\ndisacquirerwlockwrite.htm
+old-project: netvista
+ms.assetid: 124302d7-0776-4025-b71f-ce6300f97f49
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NdisAcquireRWLockWrite function [Network Drivers Starting with Windows Vista], netvista.ndisacquirerwlockwrite, NdisAcquireRWLockWrite, ndis/NdisAcquireRWLockWrite, ndis_processor_group_ref_f957b48a-4c09-4348-897c-51813ede9b19.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported in NDIS 6.20 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisAcquireRWLockWrite
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

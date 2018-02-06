@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmthk._D3DKMT_PRESENTFLAGS
-title : "_D3DKMT_PRESENTFLAGS"
-author : windows-driver-content
-description : The D3DKMT_PRESENTFLAGS structure identifies how to perform a present operation.
-old-location : display\d3dkmt_presentflags.htm
-old-project : display
-ms.assetid : 2ebee0bd-90f0-4628-8ddf-9e8029b4959a
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.d3dkmt_presentflags, _D3DKMT_PRESENTFLAGS, OpenGL_Structs_bd28ba63-6019-4cc5-b1d0-7275a5a575b3.xml, D3DKMT_PRESENTFLAGS structure [Display Devices], d3dkmthk/D3DKMT_PRESENTFLAGS, D3DKMT_PRESENTFLAGS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_PRESENTFLAGS
+UID: NS:d3dkmthk._D3DKMT_PRESENTFLAGS
+title: "_D3DKMT_PRESENTFLAGS"
+author: windows-driver-content
+description: The D3DKMT_PRESENTFLAGS structure identifies how to perform a present operation.
+old-location: display\d3dkmt_presentflags.htm
+old-project: display
+ms.assetid: 2ebee0bd-90f0-4628-8ddf-9e8029b4959a
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.d3dkmt_presentflags, _D3DKMT_PRESENTFLAGS, OpenGL_Structs_bd28ba63-6019-4cc5-b1d0-7275a5a575b3.xml, D3DKMT_PRESENTFLAGS structure [Display Devices], d3dkmthk/D3DKMT_PRESENTFLAGS, D3DKMT_PRESENTFLAGS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmthk.h
+apiname:
+-	D3DKMT_PRESENTFLAGS
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_PRESENTFLAGS
 ---
 
 # _D3DKMT_PRESENTFLAGS structure

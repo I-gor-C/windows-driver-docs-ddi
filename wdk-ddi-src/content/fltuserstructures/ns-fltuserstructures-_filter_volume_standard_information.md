@@ -1,41 +1,46 @@
 ---
-UID : NS:fltuserstructures._FILTER_VOLUME_STANDARD_INFORMATION
-title : "_FILTER_VOLUME_STANDARD_INFORMATION"
-author : windows-driver-content
-description : The caller-allocated FILTER_VOLUME_STANDARD_INFORMATION structure contains information for a volume.
-old-location : ifsk\filter_volume_standard_information.htm
-old-project : ifsk
-ms.assetid : 51f2f837-7d67-4a9d-a365-d9d1b24977e5
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : "_FILTER_VOLUME_STANDARD_INFORMATION, FltSystemStructures_cf6b475f-0334-4d11-8449-f66c611011bf.xml, fltuserstructures/FILTER_VOLUME_STANDARD_INFORMATION, PFILTER_VOLUME_STANDARD_INFORMATION structure pointer [Installable File System Drivers], FILTER_VOLUME_STANDARD_INFORMATION, ifsk.filter_volume_standard_information, fltuserstructures/PFILTER_VOLUME_STANDARD_INFORMATION, *PFILTER_VOLUME_STANDARD_INFORMATION, PFILTER_VOLUME_STANDARD_INFORMATION, FILTER_VOLUME_STANDARD_INFORMATION structure [Installable File System Drivers]"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : fltuserstructures.h
-req.include-header : FltUser.h, FltKernel.h
-req.target-type : Windows
-req.target-min-winverclnt : This structure is available starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FILTER_VOLUME_STANDARD_INFORMATION, *PFILTER_VOLUME_STANDARD_INFORMATION
+UID: NS:fltuserstructures._FILTER_VOLUME_STANDARD_INFORMATION
+title: "_FILTER_VOLUME_STANDARD_INFORMATION"
+author: windows-driver-content
+description: The caller-allocated FILTER_VOLUME_STANDARD_INFORMATION structure contains information for a volume.
+old-location: ifsk\filter_volume_standard_information.htm
+old-project: ifsk
+ms.assetid: 51f2f837-7d67-4a9d-a365-d9d1b24977e5
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: "_FILTER_VOLUME_STANDARD_INFORMATION, FltSystemStructures_cf6b475f-0334-4d11-8449-f66c611011bf.xml, fltuserstructures/FILTER_VOLUME_STANDARD_INFORMATION, PFILTER_VOLUME_STANDARD_INFORMATION structure pointer [Installable File System Drivers], FILTER_VOLUME_STANDARD_INFORMATION, ifsk.filter_volume_standard_information, fltuserstructures/PFILTER_VOLUME_STANDARD_INFORMATION, *PFILTER_VOLUME_STANDARD_INFORMATION, PFILTER_VOLUME_STANDARD_INFORMATION, FILTER_VOLUME_STANDARD_INFORMATION structure [Installable File System Drivers]"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: fltuserstructures.h
+req.include-header: FltUser.h, FltKernel.h
+req.target-type: Windows
+req.target-min-winverclnt: This structure is available starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	fltuserstructures.h
+apiname:
+-	FILTER_VOLUME_STANDARD_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: FILTER_VOLUME_STANDARD_INFORMATION, *PFILTER_VOLUME_STANDARD_INFORMATION
 ---
 
 # _FILTER_VOLUME_STANDARD_INFORMATION structure

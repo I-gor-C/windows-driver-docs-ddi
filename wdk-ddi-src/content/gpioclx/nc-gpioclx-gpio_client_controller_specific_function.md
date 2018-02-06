@@ -1,41 +1,46 @@
 ---
-UID : NC:gpioclx.GPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION
-title : GPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION
-author : windows-driver-content
-description : The CLIENT_ControllerSpecificFunction event callback function performs an operation that is specific to a particular general-purpose I/O (GPIO) controller.
-old-location : gpio\client_controllerspecificfunction.htm
-old-project : GPIO
-ms.assetid : 27551BE5-1260-4F05-9847-97C90ADF7968
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : GPIO.client_controllerspecificfunction, CLIENT_ControllerSpecificFunction callback function [Parallel Ports], CLIENT_ControllerSpecificFunction, GPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION, GPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION, gpioclx/CLIENT_ControllerSpecificFunction
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : gpioclx.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Supported starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Called at PASSIVE_LEVEL.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PGNSS_V2UPL_NI_INFO, GNSS_V2UPL_NI_INFO"
+UID: NC:gpioclx.GPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION
+title: GPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION
+author: windows-driver-content
+description: The CLIENT_ControllerSpecificFunction event callback function performs an operation that is specific to a particular general-purpose I/O (GPIO) controller.
+old-location: gpio\client_controllerspecificfunction.htm
+old-project: GPIO
+ms.assetid: 27551BE5-1260-4F05-9847-97C90ADF7968
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: GPIO.client_controllerspecificfunction, CLIENT_ControllerSpecificFunction callback function [Parallel Ports], CLIENT_ControllerSpecificFunction, GPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION, GPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION, gpioclx/CLIENT_ControllerSpecificFunction
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: gpioclx.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Supported starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Called at PASSIVE_LEVEL.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Gpioclx.h
+apiname:
+-	CLIENT_ControllerSpecificFunction
+product: Windows
+targetos: Windows
+req.typenames: "*PGNSS_V2UPL_NI_INFO, GNSS_V2UPL_NI_INFO"
 ---
 
 

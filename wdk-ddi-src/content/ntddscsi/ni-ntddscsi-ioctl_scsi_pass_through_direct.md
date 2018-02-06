@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddscsi.IOCTL_SCSI_PASS_THROUGH_DIRECT
-title : IOCTL_SCSI_PASS_THROUGH_DIRECT
-author : windows-driver-content
-description : Allows an application to send almost any SCSI command to a target device, with the following restrictions:Multitarget commands, such as COPY, are not allowed.Bidirectional data transfer operations are not supported.If a class driver for the target type of device exists, the request must be sent to that class driver. Thus, an application can send this request directly to the system port driver for a target logical unit only if there is no class driver for the type of device connected to that LU.This request must be made if the input CDB might require the underlying miniport driver to access memory directly.The calling application creates the SCSI command descriptor block, which can include a request for request-sense data if a CHECK CONDITION occurs. If the CDB requests a data transfer operation, the caller must set up an adapter device aligned buffer from which or into which the miniport driver can transfer data directly. This request is typically used for transferring larger amounts of data (&gt;16K).Applications can send this request by means of an IRP_MJ_DEVICE_CONTROL request. Storage class drivers set the minor IRP number to IRP_MN_SCSI_CLASS to indicate that the request has been processed by a storage class driver.
-old-location : storage\ioctl_scsi_pass_through_direct.htm
-old-project : storage
-ms.assetid : 7706e861-b8d6-41c3-9b64-371de4f58d48
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_scsi_pass_through_direct, IOCTL_SCSI_PASS_THROUGH_DIRECT control code [Storage Devices], IOCTL_SCSI_PASS_THROUGH_DIRECT, ntddscsi/IOCTL_SCSI_PASS_THROUGH_DIRECT, k307_4d0f0379-41c5-45c5-98b4-1a222349b4e1.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddscsi.h
-req.include-header : Ntddscsi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : MP_STORAGE_DIAGNOSTIC_TARGET_TYPE, *PMP_STORAGE_DIAGNOSTIC_TARGET_TYPE
+UID: NI:ntddscsi.IOCTL_SCSI_PASS_THROUGH_DIRECT
+title: IOCTL_SCSI_PASS_THROUGH_DIRECT
+author: windows-driver-content
+description: Allows an application to send almost any SCSI command to a target device, with the following restrictions:Multitarget commands, such as COPY, are not allowed.Bidirectional data transfer operations are not supported.If a class driver for the target type of device exists, the request must be sent to that class driver. Thus, an application can send this request directly to the system port driver for a target logical unit only if there is no class driver for the type of device connected to that LU.This request must be made if the input CDB might require the underlying miniport driver to access memory directly.The calling application creates the SCSI command descriptor block, which can include a request for request-sense data if a CHECK CONDITION occurs. If the CDB requests a data transfer operation, the caller must set up an adapter device aligned buffer from which or into which the miniport driver can transfer data directly. This request is typically used for transferring larger amounts of data (&gt;16K).Applications can send this request by means of an IRP_MJ_DEVICE_CONTROL request. Storage class drivers set the minor IRP number to IRP_MN_SCSI_CLASS to indicate that the request has been processed by a storage class driver.
+old-location: storage\ioctl_scsi_pass_through_direct.htm
+old-project: storage
+ms.assetid: 7706e861-b8d6-41c3-9b64-371de4f58d48
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_scsi_pass_through_direct, IOCTL_SCSI_PASS_THROUGH_DIRECT control code [Storage Devices], IOCTL_SCSI_PASS_THROUGH_DIRECT, ntddscsi/IOCTL_SCSI_PASS_THROUGH_DIRECT, k307_4d0f0379-41c5-45c5-98b4-1a222349b4e1.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddscsi.h
+req.include-header: Ntddscsi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddscsi.h
+apiname:
+-	IOCTL_SCSI_PASS_THROUGH_DIRECT
+product: Windows
+targetos: Windows
+req.typenames: MP_STORAGE_DIAGNOSTIC_TARGET_TYPE, *PMP_STORAGE_DIAGNOSTIC_TARGET_TYPE
 ---
 
 # IOCTL_SCSI_PASS_THROUGH_DIRECT IOCTL

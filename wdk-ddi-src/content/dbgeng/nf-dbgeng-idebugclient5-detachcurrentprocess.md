@@ -1,41 +1,49 @@
 ---
-UID : NF:dbgeng.IDebugClient5.DetachCurrentProcess
-title : IDebugClient5::DetachCurrentProcess method
-author : windows-driver-content
-description : The DetachCurrentProcess method detaches the debugger engine from the current process, resuming all its threads.
-old-location : debugger\detachcurrentprocess.htm
-old-project : debugger
-ms.assetid : 233aec2e-4d61-4369-80bb-a01a5fd5b925
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugClient3::DetachCurrentProcess, IDebugClient5::DetachCurrentProcess, DetachCurrentProcess method [Windows Debugging], IDebugClient5 interface, DetachCurrentProcess, dbgeng/IDebugClient5::DetachCurrentProcess, DetachCurrentProcess method [Windows Debugging], IDebugClient4 interface, IDebugClient5 interface [Windows Debugging], DetachCurrentProcess method, DetachCurrentProcess method [Windows Debugging], IDebugClient3 interface, IDebugClient4::DetachCurrentProcess, debugger.detachcurrentprocess, DetachCurrentProcess method [Windows Debugging], IDebugClient2 interface [Windows Debugging], DetachCurrentProcess method, DetachCurrentProcess method [Windows Debugging], IDebugClient2 interface, dbgeng/IDebugClient3::DetachCurrentProcess, IDebugClient4 interface [Windows Debugging], DetachCurrentProcess method, dbgeng/IDebugClient4::DetachCurrentProcess, dbgeng/IDebugClient2::DetachCurrentProcess, IDebugClient_cee2b21f-2cbf-449d-a2c8-2006e21074db.xml, IDebugClient2::DetachCurrentProcess, IDebugClient3 interface [Windows Debugging], DetachCurrentProcess method, IDebugClient5
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugClient5.DetachCurrentProcess
+title: IDebugClient5::DetachCurrentProcess method
+author: windows-driver-content
+description: The DetachCurrentProcess method detaches the debugger engine from the current process, resuming all its threads.
+old-location: debugger\detachcurrentprocess.htm
+old-project: debugger
+ms.assetid: 233aec2e-4d61-4369-80bb-a01a5fd5b925
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugClient3::DetachCurrentProcess, IDebugClient5::DetachCurrentProcess, DetachCurrentProcess method [Windows Debugging], IDebugClient5 interface, DetachCurrentProcess, dbgeng/IDebugClient5::DetachCurrentProcess, DetachCurrentProcess method [Windows Debugging], IDebugClient4 interface, IDebugClient5 interface [Windows Debugging], DetachCurrentProcess method, DetachCurrentProcess method [Windows Debugging], IDebugClient3 interface, IDebugClient4::DetachCurrentProcess, debugger.detachcurrentprocess, DetachCurrentProcess method [Windows Debugging], IDebugClient2 interface [Windows Debugging], DetachCurrentProcess method, DetachCurrentProcess method [Windows Debugging], IDebugClient2 interface, dbgeng/IDebugClient3::DetachCurrentProcess, IDebugClient4 interface [Windows Debugging], DetachCurrentProcess method, dbgeng/IDebugClient4::DetachCurrentProcess, dbgeng/IDebugClient2::DetachCurrentProcess, IDebugClient_cee2b21f-2cbf-449d-a2c8-2006e21074db.xml, IDebugClient2::DetachCurrentProcess, IDebugClient3 interface [Windows Debugging], DetachCurrentProcess method, IDebugClient5
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugClient2.DetachCurrentProcess
+-	IDebugClient3.DetachCurrentProcess
+-	IDebugClient4.DetachCurrentProcess
+-	IDebugClient5.DetachCurrentProcess
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

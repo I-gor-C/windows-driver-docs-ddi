@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfdmatransaction.WdfDmaTransactionGetCurrentDmaTransferLength
-title : WdfDmaTransactionGetCurrentDmaTransferLength function
-author : windows-driver-content
-description : The WdfDmaTransactionGetCurrentDmaTransferLength method returns the size of the current DMA transfer.
-old-location : wdf\wdfdmatransactiongetcurrentdmatransferlength.htm
-old-project : wdf
-ms.assetid : 20a27ad7-0b27-494e-b761-fc3edf71e8c9
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WdfDmaTransactionGetCurrentDmaTransferLength, DFDmaObjectRef_e0fc16e5-9adb-44c5-be53-5e7929ede3aa.xml, wdfdmatransaction/WdfDmaTransactionGetCurrentDmaTransferLength, WdfDmaTransactionGetCurrentDmaTransferLength method, kmdf.wdfdmatransactiongetcurrentdmatransferlength, wdf.wdfdmatransactiongetcurrentdmatransferlength, PFN_WDFDMATRANSACTIONGETCURRENTDMATRANSFERLENGTH
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfdmatransaction.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDF_DMA_SYSTEM_PROFILE_CONFIG, WDF_DMA_SYSTEM_PROFILE_CONFIG"
-req.product : Windows 10 or later.
+UID: NF:wdfdmatransaction.WdfDmaTransactionGetCurrentDmaTransferLength
+title: WdfDmaTransactionGetCurrentDmaTransferLength function
+author: windows-driver-content
+description: The WdfDmaTransactionGetCurrentDmaTransferLength method returns the size of the current DMA transfer.
+old-location: wdf\wdfdmatransactiongetcurrentdmatransferlength.htm
+old-project: wdf
+ms.assetid: 20a27ad7-0b27-494e-b761-fc3edf71e8c9
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WdfDmaTransactionGetCurrentDmaTransferLength, DFDmaObjectRef_e0fc16e5-9adb-44c5-be53-5e7929ede3aa.xml, wdfdmatransaction/WdfDmaTransactionGetCurrentDmaTransferLength, WdfDmaTransactionGetCurrentDmaTransferLength method, kmdf.wdfdmatransactiongetcurrentdmatransferlength, wdf.wdfdmatransactiongetcurrentdmatransferlength, PFN_WDFDMATRANSACTIONGETCURRENTDMATRANSFERLENGTH
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfdmatransaction.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfDmaTransactionGetCurrentDmaTransferLength
+product: Windows
+targetos: Windows
+req.typenames: "*PWDF_DMA_SYSTEM_PROFILE_CONFIG, WDF_DMA_SYSTEM_PROFILE_CONFIG"
+req.product: Windows 10 or later.
 ---
 
 

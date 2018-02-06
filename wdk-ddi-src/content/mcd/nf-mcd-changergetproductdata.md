@@ -1,41 +1,46 @@
 ---
-UID : NF:mcd.ChangerGetProductData
-title : ChangerGetProductData function
-author : windows-driver-content
-description : ChangerGetProductData handles the device-specific aspects of a device-control IRP with the IOCTL code IOCTL_CHANGER_GET_PRODUCT_DATA.
-old-location : storage\changergetproductdata.htm
-old-project : storage
-ms.assetid : b2723a34-d9c2-40c9-b6c9-6441ead63d2e
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : ChangerGetProductData, storage.changergetproductdata, mcd/ChangerGetProductData, ChangerGetProductData function [Storage Devices], chgrmini_05ad3aaa-8975-44ee-ad09-149f288d8eef.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : mcd.h
-req.include-header : Mcd.h, Ntddchgr.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : LAMP_INTENSITY_WHITE
+UID: NF:mcd.ChangerGetProductData
+title: ChangerGetProductData function
+author: windows-driver-content
+description: ChangerGetProductData handles the device-specific aspects of a device-control IRP with the IOCTL code IOCTL_CHANGER_GET_PRODUCT_DATA.
+old-location: storage\changergetproductdata.htm
+old-project: storage
+ms.assetid: b2723a34-d9c2-40c9-b6c9-6441ead63d2e
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: ChangerGetProductData, storage.changergetproductdata, mcd/ChangerGetProductData, ChangerGetProductData function [Storage Devices], chgrmini_05ad3aaa-8975-44ee-ad09-149f288d8eef.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: mcd.h
+req.include-header: Mcd.h, Ntddchgr.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	mcd.h
+apiname:
+-	ChangerGetProductData
+product: Windows
+targetos: Windows
+req.typenames: LAMP_INTENSITY_WHITE
 ---
 
 

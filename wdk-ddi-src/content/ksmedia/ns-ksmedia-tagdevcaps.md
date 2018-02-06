@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.tagDEVCAPS
-title : tagDEVCAPS
-author : windows-driver-content
-description : The DEVCAPS structure describes the capabilities of an external device.
-old-location : stream\devcaps.htm
-old-project : stream
-ms.assetid : 4032ec5c-c98a-44f9-9c74-dc5ada308d33
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ksmedia/DEVCAPS, tagDEVCAPS, stream.devcaps, ksmedia/PDEVCAPS, *PDEVCAPS, PDEVCAPS structure pointer [Streaming Media Devices], vidcapstruct_61cce92e-4f74-48ff-ae84-72579136a64f.xml, PDEVCAPS, DEVCAPS structure [Streaming Media Devices], DEVCAPS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DEVCAPS, *PDEVCAPS
+UID: NS:ksmedia.tagDEVCAPS
+title: tagDEVCAPS
+author: windows-driver-content
+description: The DEVCAPS structure describes the capabilities of an external device.
+old-location: stream\devcaps.htm
+old-project: stream
+ms.assetid: 4032ec5c-c98a-44f9-9c74-dc5ada308d33
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ksmedia/DEVCAPS, tagDEVCAPS, stream.devcaps, ksmedia/PDEVCAPS, *PDEVCAPS, PDEVCAPS structure pointer [Streaming Media Devices], vidcapstruct_61cce92e-4f74-48ff-ae84-72579136a64f.xml, PDEVCAPS, DEVCAPS structure [Streaming Media Devices], DEVCAPS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	DEVCAPS
+product: Windows
+targetos: Windows
+req.typenames: DEVCAPS, *PDEVCAPS
 ---
 
 # tagDEVCAPS structure

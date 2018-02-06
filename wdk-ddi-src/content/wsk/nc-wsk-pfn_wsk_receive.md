@@ -1,42 +1,47 @@
 ---
-UID : NC:wsk.PFN_WSK_RECEIVE
-title : PFN_WSK_RECEIVE
-author : windows-driver-content
-description : The WskReceive function receives data over a connection-oriented or stream socket from a remote transport address.
-old-location : netvista\wskreceive.htm
-old-project : netvista
-ms.assetid : 7fe65842-8ddb-4aca-931f-03b35dd2b039
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.wskreceive, WskReceive callback function [Network Drivers Starting with Windows Vista], WskReceive, PFN_WSK_RECEIVE, PFN_WSK_RECEIVE, wsk/WskReceive, wskref_7a0473b3-5687-44e8-b505-a346e9546807.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wsk.h
-req.include-header : Wsk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating   systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WNODE_HEADER, *PWNODE_HEADER
-req.product : Windows 10 or later.
+UID: NC:wsk.PFN_WSK_RECEIVE
+title: PFN_WSK_RECEIVE
+author: windows-driver-content
+description: The WskReceive function receives data over a connection-oriented or stream socket from a remote transport address.
+old-location: netvista\wskreceive.htm
+old-project: netvista
+ms.assetid: 7fe65842-8ddb-4aca-931f-03b35dd2b039
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.wskreceive, WskReceive callback function [Network Drivers Starting with Windows Vista], WskReceive, PFN_WSK_RECEIVE, PFN_WSK_RECEIVE, wsk/WskReceive, wskref_7a0473b3-5687-44e8-b505-a346e9546807.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wsk.h
+req.include-header: Wsk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	wsk.h
+apiname:
+-	WskReceive
+product: Windows
+targetos: Windows
+req.typenames: WNODE_HEADER, *PWNODE_HEADER
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NC:wdfdmaenabler.EVT_WDF_DMA_ENABLER_ENABLE
-title : EVT_WDF_DMA_ENABLER_ENABLE
-author : windows-driver-content
-description : A driver's EvtDmaEnablerEnable event callback function enables a device's DMA capability after the device enters its working (D0) state.
-old-location : wdf\evtdmaenablerenable.htm
-old-project : wdf
-ms.assetid : b6344a06-98ee-48c0-8fd5-76edfc71af2b
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.evtdmaenablerenable, EvtDmaEnablerEnable callback function, EvtDmaEnablerEnable, EVT_WDF_DMA_ENABLER_ENABLE, EVT_WDF_DMA_ENABLER_ENABLE, wdfdmaenabler/EvtDmaEnablerEnable, DFDmaObjectRef_ca81d643-d2a6-4f88-9c6e-80c5681b76d1.xml, kmdf.evtdmaenablerenable
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdfdmaenabler.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDF_REMOVE_LOCK_OPTIONS, WDF_REMOVE_LOCK_OPTIONS"
-req.product : Windows 10 or later.
+UID: NC:wdfdmaenabler.EVT_WDF_DMA_ENABLER_ENABLE
+title: EVT_WDF_DMA_ENABLER_ENABLE
+author: windows-driver-content
+description: A driver's EvtDmaEnablerEnable event callback function enables a device's DMA capability after the device enters its working (D0) state.
+old-location: wdf\evtdmaenablerenable.htm
+old-project: wdf
+ms.assetid: b6344a06-98ee-48c0-8fd5-76edfc71af2b
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.evtdmaenablerenable, EvtDmaEnablerEnable callback function, EvtDmaEnablerEnable, EVT_WDF_DMA_ENABLER_ENABLE, EVT_WDF_DMA_ENABLER_ENABLE, wdfdmaenabler/EvtDmaEnablerEnable, DFDmaObjectRef_ca81d643-d2a6-4f88-9c6e-80c5681b76d1.xml, kmdf.evtdmaenablerenable
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdfdmaenabler.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	WdfDmaEnabler.h
+apiname:
+-	EvtDmaEnablerEnable
+product: Windows
+targetos: Windows
+req.typenames: "*PWDF_REMOVE_LOCK_OPTIONS, WDF_REMOVE_LOCK_OPTIONS"
+req.product: Windows 10 or later.
 ---
 
 

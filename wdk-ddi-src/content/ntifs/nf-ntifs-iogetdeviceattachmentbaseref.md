@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.IoGetDeviceAttachmentBaseRef
-title : IoGetDeviceAttachmentBaseRef function
-author : windows-driver-content
-description : The IoGetDeviceAttachmentBaseRef routine returns a pointer to the lowest-level device object in a file system or device driver stack.
-old-location : ifsk\iogetdeviceattachmentbaseref.htm
-old-project : ifsk
-ms.assetid : e1d31fdd-de4f-4e57-a8e8-0468ab4242f8
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : IoGetDeviceAttachmentBaseRef, ioref_ab9c898e-74be-48aa-9462-d78d0e34c435.xml, ntifs/IoGetDeviceAttachmentBaseRef, IoGetDeviceAttachmentBaseRef routine [Installable File System Drivers], ifsk.iogetdeviceattachmentbaseref
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : This routine is available on Update Rollup for Windows 2000 Service Pack 4 (SP4) and on Windows XP and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.IoGetDeviceAttachmentBaseRef
+title: IoGetDeviceAttachmentBaseRef function
+author: windows-driver-content
+description: The IoGetDeviceAttachmentBaseRef routine returns a pointer to the lowest-level device object in a file system or device driver stack.
+old-location: ifsk\iogetdeviceattachmentbaseref.htm
+old-project: ifsk
+ms.assetid: e1d31fdd-de4f-4e57-a8e8-0468ab4242f8
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: IoGetDeviceAttachmentBaseRef, ioref_ab9c898e-74be-48aa-9462-d78d0e34c435.xml, ntifs/IoGetDeviceAttachmentBaseRef, IoGetDeviceAttachmentBaseRef routine [Installable File System Drivers], ifsk.iogetdeviceattachmentbaseref
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: This routine is available on Update Rollup for Windows 2000 Service Pack 4 (SP4) and on Windows XP and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoGetDeviceAttachmentBaseRef
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

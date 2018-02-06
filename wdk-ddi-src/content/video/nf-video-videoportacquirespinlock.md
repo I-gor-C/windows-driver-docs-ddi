@@ -1,42 +1,47 @@
 ---
-UID : NF:video.VideoPortAcquireSpinLock
-title : VideoPortAcquireSpinLock function
-author : windows-driver-content
-description : The VideoPortAcquireSpinLock function obtains the specified spin lock.
-old-location : display\videoportacquirespinlock.htm
-old-project : display
-ms.assetid : 2e61ffb7-1720-47b2-b943-54ffa596cb08
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.videoportacquirespinlock, VideoPortAcquireSpinLock, VideoPort_Functions_c25b68ac-032b-4b1c-bb15-93957f2e345c.xml, video/VideoPortAcquireSpinLock, VideoPortAcquireSpinLock function [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows XP and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Videoprt.lib
-req.dll : Videoprt.sys
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_PORT_SERVICES
-req.product : Windows 10 or later.
+UID: NF:video.VideoPortAcquireSpinLock
+title: VideoPortAcquireSpinLock function
+author: windows-driver-content
+description: The VideoPortAcquireSpinLock function obtains the specified spin lock.
+old-location: display\videoportacquirespinlock.htm
+old-project: display
+ms.assetid: 2e61ffb7-1720-47b2-b943-54ffa596cb08
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.videoportacquirespinlock, VideoPortAcquireSpinLock, VideoPort_Functions_c25b68ac-032b-4b1c-bb15-93957f2e345c.xml, video/VideoPortAcquireSpinLock, VideoPortAcquireSpinLock function [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows XP and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Videoprt.lib
+req.dll: Videoprt.sys
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Videoprt.sys
+apiname:
+-	VideoPortAcquireSpinLock
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_PORT_SERVICES
+req.product: Windows 10 or later.
 ---
 
 

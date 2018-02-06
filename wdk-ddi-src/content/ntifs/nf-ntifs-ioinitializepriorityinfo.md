@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.IoInitializePriorityInfo
-title : IoInitializePriorityInfo function
-author : windows-driver-content
-description : The IoInitializePriorityInfo routine initializes a structure of type IO_PRIORITY_INFO.
-old-location : ifsk\ioinitializepriorityinfo.htm
-old-project : ifsk
-ms.assetid : 21aa5850-1984-4ab8-8e7c-3028fc87680b
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : IoInitializePriorityInfo routine [Installable File System Drivers], ifsk.ioinitializepriorityinfo, ntifs/IoInitializePriorityInfo, ioref_65eef333-11a8-4603-9b64-dc317f3d4e7b.xml, IoInitializePriorityInfo
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h, Fltkernel.h
-req.target-type : Desktop
-req.target-min-winverclnt : This routine is available starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.IoInitializePriorityInfo
+title: IoInitializePriorityInfo function
+author: windows-driver-content
+description: The IoInitializePriorityInfo routine initializes a structure of type IO_PRIORITY_INFO.
+old-location: ifsk\ioinitializepriorityinfo.htm
+old-project: ifsk
+ms.assetid: 21aa5850-1984-4ab8-8e7c-3028fc87680b
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: IoInitializePriorityInfo routine [Installable File System Drivers], ifsk.ioinitializepriorityinfo, ntifs/IoInitializePriorityInfo, ioref_65eef333-11a8-4603-9b64-dc317f3d4e7b.xml, IoInitializePriorityInfo
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h, Fltkernel.h
+req.target-type: Desktop
+req.target-min-winverclnt: This routine is available starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntifs.h
+apiname:
+-	IoInitializePriorityInfo
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

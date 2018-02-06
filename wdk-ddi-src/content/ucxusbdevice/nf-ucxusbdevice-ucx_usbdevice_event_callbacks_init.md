@@ -1,42 +1,47 @@
 ---
-UID : NF:ucxusbdevice.UCX_USBDEVICE_EVENT_CALLBACKS_INIT
-title : UCX_USBDEVICE_EVENT_CALLBACKS_INIT function
-author : windows-driver-content
-description : Initializes a UCX_USBDEVICE_EVENT_CALLBACKS structure with the function pointers to client driver's callback functions.
-old-location : buses\_ucx_usbdevice_event_callbacks_init.htm
-old-project : usbref
-ms.assetid : 594583B0-6CCB-469F-82AB-604825D85E2E
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ucxusbdevice/UCX_USBDEVICE_EVENT_CALLBACKS_INIT, UCX_USBDEVICE_EVENT_CALLBACKS_INIT, UCX_USBDEVICE_EVENT_CALLBACKS_INIT function [Buses], buses._ucx_usbdevice_event_callbacks_init
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ucxusbdevice.h
-req.include-header : Ucxclass.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : UCX_USBDEVICE_CHARACTERISTIC_TYPE
-req.product : Windows 10 or later.
+UID: NF:ucxusbdevice.UCX_USBDEVICE_EVENT_CALLBACKS_INIT
+title: UCX_USBDEVICE_EVENT_CALLBACKS_INIT function
+author: windows-driver-content
+description: Initializes a UCX_USBDEVICE_EVENT_CALLBACKS structure with the function pointers to client driver's callback functions.
+old-location: buses\_ucx_usbdevice_event_callbacks_init.htm
+old-project: usbref
+ms.assetid: 594583B0-6CCB-469F-82AB-604825D85E2E
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ucxusbdevice/UCX_USBDEVICE_EVENT_CALLBACKS_INIT, UCX_USBDEVICE_EVENT_CALLBACKS_INIT, UCX_USBDEVICE_EVENT_CALLBACKS_INIT function [Buses], buses._ucx_usbdevice_event_callbacks_init
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ucxusbdevice.h
+req.include-header: Ucxclass.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ucxusbdevice.h
+apiname:
+-	UCX_USBDEVICE_EVENT_CALLBACKS_INIT
+product: Windows
+targetos: Windows
+req.typenames: UCX_USBDEVICE_CHARACTERISTIC_TYPE
+req.product: Windows 10 or later.
 ---
 
 

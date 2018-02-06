@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddvdeo.IOCTL_VIDEO_QUERY_CURSOR_ATTR
-title : IOCTL_VIDEO_QUERY_CURSOR_ATTR
-author : windows-driver-content
-description : Returns the size, position, and visibility of the cursor.
-old-location : display\ioctl_video_query_cursor_attr.htm
-old-project : display
-ms.assetid : c4ec2813-3e5f-401d-8ad4-cd0682e15e5b
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.ioctl_video_query_cursor_attr, IOCTL_VIDEO_QUERY_CURSOR_ATTR control code [Display Devices], IOCTL_VIDEO_QUERY_CURSOR_ATTR, ntddvdeo/IOCTL_VIDEO_QUERY_CURSOR_ATTR, Video_IOCTLs_5c88c1de-006e-4141-9dcd-59d03d51755f.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddvdeo.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TAPE_WRITE_MARKS, *PTAPE_WRITE_MARKS
+UID: NI:ntddvdeo.IOCTL_VIDEO_QUERY_CURSOR_ATTR
+title: IOCTL_VIDEO_QUERY_CURSOR_ATTR
+author: windows-driver-content
+description: Returns the size, position, and visibility of the cursor.
+old-location: display\ioctl_video_query_cursor_attr.htm
+old-project: display
+ms.assetid: c4ec2813-3e5f-401d-8ad4-cd0682e15e5b
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.ioctl_video_query_cursor_attr, IOCTL_VIDEO_QUERY_CURSOR_ATTR control code [Display Devices], IOCTL_VIDEO_QUERY_CURSOR_ATTR, ntddvdeo/IOCTL_VIDEO_QUERY_CURSOR_ATTR, Video_IOCTLs_5c88c1de-006e-4141-9dcd-59d03d51755f.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddvdeo.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddvdeo.h
+apiname:
+-	IOCTL_VIDEO_QUERY_CURSOR_ATTR
+product: Windows
+targetos: Windows
+req.typenames: TAPE_WRITE_MARKS, *PTAPE_WRITE_MARKS
 ---
 
 # IOCTL_VIDEO_QUERY_CURSOR_ATTR IOCTL

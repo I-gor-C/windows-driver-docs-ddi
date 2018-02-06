@@ -1,41 +1,47 @@
 ---
-UID : NF:fltkernel.FltCreateFileEx
-title : FltCreateFileEx function
-author : windows-driver-content
-description : Minifilter drivers call FltCreateFileEx to create a new file or open an existing file.
-old-location : ifsk\fltcreatefileex.htm
-old-project : ifsk
-ms.assetid : 83b672dd-26fc-4c22-815d-72143159983d
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltCreateFileEx routine [Installable File System Drivers], FltApiRef_a_to_d_3bc45f49-48cd-4c08-8906-09074f48e712.xml, fltkernel/FltCreateFileEx, FltCreateFileEx, ifsk.fltcreatefileex
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : FltKernel.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Microsoft Windows 2000 Update Rollup 1 for SP4, Windows XP SP3, Windows Server 2003 SP1, and later versions of the Windows operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Fltmgr.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltCreateFileEx
+title: FltCreateFileEx function
+author: windows-driver-content
+description: Minifilter drivers call FltCreateFileEx to create a new file or open an existing file.
+old-location: ifsk\fltcreatefileex.htm
+old-project: ifsk
+ms.assetid: 83b672dd-26fc-4c22-815d-72143159983d
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltCreateFileEx routine [Installable File System Drivers], FltApiRef_a_to_d_3bc45f49-48cd-4c08-8906-09074f48e712.xml, fltkernel/FltCreateFileEx, FltCreateFileEx, ifsk.fltcreatefileex
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: FltKernel.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Microsoft Windows 2000 Update Rollup 1 for SP4, Windows XP SP3, Windows Server 2003 SP1, and later versions of the Windows operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Fltmgr.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Fltmgr.lib
+-	Fltmgr.dll
+apiname:
+-	FltCreateFileEx
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

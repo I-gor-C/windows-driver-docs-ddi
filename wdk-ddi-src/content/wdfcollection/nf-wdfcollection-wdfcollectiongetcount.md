@@ -1,42 +1,50 @@
 ---
-UID : NF:wdfcollection.WdfCollectionGetCount
-title : WdfCollectionGetCount function
-author : windows-driver-content
-description : The WdfCollectionGetCount method returns the number of objects that are currently in an object collection.
-old-location : wdf\wdfcollectiongetcount.htm
-old-project : wdf
-ms.assetid : 95b6e441-f564-4642-8474-8e10e83177b9
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WdfCollectionGetCount, kmdf.wdfcollectiongetcount, PFN_WDFCOLLECTIONGETCOUNT, DFCollectionObjectRef_835a8d24-fd48-4de9-83bc-62a8b5a3a93b.xml, WdfCollectionGetCount method, wdf.wdfcollectiongetcount, wdfcollection/WdfCollectionGetCount
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfcollection.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDF_CHILD_RETRIEVE_INFO, WDF_CHILD_RETRIEVE_INFO"
-req.product : Windows 10 or later.
+UID: NF:wdfcollection.WdfCollectionGetCount
+title: WdfCollectionGetCount function
+author: windows-driver-content
+description: The WdfCollectionGetCount method returns the number of objects that are currently in an object collection.
+old-location: wdf\wdfcollectiongetcount.htm
+old-project: wdf
+ms.assetid: 95b6e441-f564-4642-8474-8e10e83177b9
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WdfCollectionGetCount, kmdf.wdfcollectiongetcount, PFN_WDFCOLLECTIONGETCOUNT, DFCollectionObjectRef_835a8d24-fd48-4de9-83bc-62a8b5a3a93b.xml, WdfCollectionGetCount method, wdf.wdfcollectiongetcount, wdfcollection/WdfCollectionGetCount
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfcollection.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+-	WUDFx02000.dll
+-	WUDFx02000.dll.dll
+apiname:
+-	WdfCollectionGetCount
+product: Windows
+targetos: Windows
+req.typenames: "*PWDF_CHILD_RETRIEVE_INFO, WDF_CHILD_RETRIEVE_INFO"
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.tagTRANSPORTBASICPARMS
-title : tagTRANSPORTBASICPARMS
-author : windows-driver-content
-description : The TRANSPORTBASICPARMS structure is defined but not used.
-old-location : stream\transportbasicparms.htm
-old-project : stream
-ms.assetid : 40e305b3-e91c-4227-99e7-dbb939082f54
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : tagTRANSPORTBASICPARMS, *PTRANSPORTBASICPARMS, TRANSPORTBASICPARMS structure [Streaming Media Devices], PTRANSPORTBASICPARMS structure pointer [Streaming Media Devices], ksmedia/TRANSPORTBASICPARMS, TRANSPORTBASICPARMS, PTRANSPORTBASICPARMS, stream.transportbasicparms, ksmedia/PTRANSPORTBASICPARMS, vidcapstruct_5a5cdf6a-56f3-43ad-9bab-e5d406052707.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PTRANSPORTBASICPARMS, TRANSPORTBASICPARMS"
+UID: NS:ksmedia.tagTRANSPORTBASICPARMS
+title: tagTRANSPORTBASICPARMS
+author: windows-driver-content
+description: The TRANSPORTBASICPARMS structure is defined but not used.
+old-location: stream\transportbasicparms.htm
+old-project: stream
+ms.assetid: 40e305b3-e91c-4227-99e7-dbb939082f54
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: tagTRANSPORTBASICPARMS, *PTRANSPORTBASICPARMS, TRANSPORTBASICPARMS structure [Streaming Media Devices], PTRANSPORTBASICPARMS structure pointer [Streaming Media Devices], ksmedia/TRANSPORTBASICPARMS, TRANSPORTBASICPARMS, PTRANSPORTBASICPARMS, stream.transportbasicparms, ksmedia/PTRANSPORTBASICPARMS, vidcapstruct_5a5cdf6a-56f3-43ad-9bab-e5d406052707.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	TRANSPORTBASICPARMS
+product: Windows
+targetos: Windows
+req.typenames: "*PTRANSPORTBASICPARMS, TRANSPORTBASICPARMS"
 ---
 
 # tagTRANSPORTBASICPARMS structure

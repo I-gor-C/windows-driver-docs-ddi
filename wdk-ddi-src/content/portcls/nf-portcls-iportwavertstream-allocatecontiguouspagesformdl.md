@@ -1,41 +1,46 @@
 ---
-UID : NF:portcls.IPortWaveRTStream.AllocateContiguousPagesForMdl
-title : IPortWaveRTStream::AllocateContiguousPagesForMdl method
-author : windows-driver-content
-description : The AllocateContiguousPagesForMdl method allocates a list of contiguous, nonpaged, physical memory pages and returns a pointer to a memory descriptor list (MDL) that describes them.
-old-location : audio\iportwavertstream_allocatecontiguouspagesformdl.htm
-old-project : audio
-ms.assetid : 976f7e83-9b2a-4e1b-ab76-76d8e9711bff
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : IPortWaveRTStream::AllocateContiguousPagesForMdl, AllocateContiguousPagesForMdl, audio.iportwavertstream_allocatecontiguouspagesformdl, portcls/IPortWaveRTStream::AllocateContiguousPagesForMdl, AllocateContiguousPagesForMdl method [Audio Devices], audmp-routines_92ff395d-072b-4a11-b856-3afc1a024289.xml, IPortWaveRTStream interface [Audio Devices], AllocateContiguousPagesForMdl method, AllocateContiguousPagesForMdl method [Audio Devices], IPortWaveRTStream interface, IPortWaveRTStream
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : portcls.h
-req.include-header : 
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : portcls.h
-req.dll : 
-req.irql : Passive level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.IPortWaveRTStream.AllocateContiguousPagesForMdl
+title: IPortWaveRTStream::AllocateContiguousPagesForMdl method
+author: windows-driver-content
+description: The AllocateContiguousPagesForMdl method allocates a list of contiguous, nonpaged, physical memory pages and returns a pointer to a memory descriptor list (MDL) that describes them.
+old-location: audio\iportwavertstream_allocatecontiguouspagesformdl.htm
+old-project: audio
+ms.assetid: 976f7e83-9b2a-4e1b-ab76-76d8e9711bff
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: IPortWaveRTStream::AllocateContiguousPagesForMdl, AllocateContiguousPagesForMdl, audio.iportwavertstream_allocatecontiguouspagesformdl, portcls/IPortWaveRTStream::AllocateContiguousPagesForMdl, AllocateContiguousPagesForMdl method [Audio Devices], audmp-routines_92ff395d-072b-4a11-b856-3afc1a024289.xml, IPortWaveRTStream interface [Audio Devices], AllocateContiguousPagesForMdl method, AllocateContiguousPagesForMdl method [Audio Devices], IPortWaveRTStream interface, IPortWaveRTStream
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: portcls.h
+req.include-header: 
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: portcls.h
+req.dll: 
+req.irql: Passive level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Portcls.h
+apiname:
+-	IPortWaveRTStream.AllocateContiguousPagesForMdl
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NF:ndis.NdisMCmCloseCallComplete
-title : NdisMCmCloseCallComplete macro
-author : windows-driver-content
-description : NdisMCmCloseCallComplete returns the final status of a client's request, for which the MCM driver previously returned NDIS_STATUS_PENDING, to tear down a call.
-old-location : netvista\ndismcmclosecallcomplete.htm
-old-project : netvista
-ms.assetid : 24477865-fb89-4078-99cb-1bf24249c7e2
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : condis_mcm_ref_78d6cea5-8d8c-49d4-ad57-c41eb63d3a4b.xml, NdisMCmCloseCallComplete macro [Network Drivers Starting with Windows Vista], NdisMCmCloseCallComplete, ndis/NdisMCmCloseCallComplete, netvista.ndismcmclosecallcomplete
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : macro
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisMCmCloseCallComplete (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisMCmCloseCallComplete (NDIS   5.1)) in Windows XP.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_MCM_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : ndis.h
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisMCmCloseCallComplete
+title: NdisMCmCloseCallComplete macro
+author: windows-driver-content
+description: NdisMCmCloseCallComplete returns the final status of a client's request, for which the MCM driver previously returned NDIS_STATUS_PENDING, to tear down a call.
+old-location: netvista\ndismcmclosecallcomplete.htm
+old-project: netvista
+ms.assetid: 24477865-fb89-4078-99cb-1bf24249c7e2
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: condis_mcm_ref_78d6cea5-8d8c-49d4-ad57-c41eb63d3a4b.xml, NdisMCmCloseCallComplete macro [Network Drivers Starting with Windows Vista], NdisMCmCloseCallComplete, ndis/NdisMCmCloseCallComplete, netvista.ndismcmclosecallcomplete
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: macro
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisMCmCloseCallComplete (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisMCmCloseCallComplete (NDIS   5.1)) in Windows XP.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_MCM_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: ndis.h
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndis.h
+apiname:
+-	NdisMCmCloseCallComplete
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

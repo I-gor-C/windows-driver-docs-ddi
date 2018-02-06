@@ -1,41 +1,46 @@
 ---
-UID : NC:ndis.NDIS_SWITCH_GROW_NET_BUFFER_LIST_DESTINATIONS
-title : NDIS_SWITCH_GROW_NET_BUFFER_LIST_DESTINATIONS
-author : windows-driver-content
-description : The GrowNetBufferListDestinations function adds space for additional Hyper-V extensible switch destination ports to a packet that is specified by a NET_BUFFER_LIST structure.
-old-location : netvista\grownetbufferlistdestinations.htm
-old-project : netvista
-ms.assetid : 9A79F41F-566F-4844-BF1A-E8889E6FDCE8
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.grownetbufferlistdestinations, GrowNetBufferListDestinations callback function [Network Drivers Starting with Windows Vista], GrowNetBufferListDestinations, NDIS_SWITCH_GROW_NET_BUFFER_LIST_DESTINATIONS, NDIS_SWITCH_GROW_NET_BUFFER_LIST_DESTINATIONS, ndis/GrowNetBufferListDestinations
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported in NDIS 6.30 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
+UID: NC:ndis.NDIS_SWITCH_GROW_NET_BUFFER_LIST_DESTINATIONS
+title: NDIS_SWITCH_GROW_NET_BUFFER_LIST_DESTINATIONS
+author: windows-driver-content
+description: The GrowNetBufferListDestinations function adds space for additional Hyper-V extensible switch destination ports to a packet that is specified by a NET_BUFFER_LIST structure.
+old-location: netvista\grownetbufferlistdestinations.htm
+old-project: netvista
+ms.assetid: 9A79F41F-566F-4844-BF1A-E8889E6FDCE8
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.grownetbufferlistdestinations, GrowNetBufferListDestinations callback function [Network Drivers Starting with Windows Vista], GrowNetBufferListDestinations, NDIS_SWITCH_GROW_NET_BUFFER_LIST_DESTINATIONS, NDIS_SWITCH_GROW_NET_BUFFER_LIST_DESTINATIONS, ndis/GrowNetBufferListDestinations
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported in NDIS 6.30 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ndis.h
+apiname:
+-	GrowNetBufferListDestinations
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 

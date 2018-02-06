@@ -1,42 +1,47 @@
 ---
-UID : NS:wlanihvtypes._DOT11_MSSECURITY_SETTINGS
-title : "_DOT11_MSSECURITY_SETTINGS"
-author : windows-driver-content
-description : Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
-old-location : netvista\dot11_mssecurity_settings.htm
-old-project : netvista
-ms.assetid : b80a06f0-7774-4bf1-9101-a466999246d6
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : PDOT11_MSSECURITY_SETTINGS structure pointer [Network Drivers Starting with Windows Vista], wlanihvtypes/DOT11_MSSECURITY_SETTINGS, wlanihvtypes/PDOT11_MSSECURITY_SETTINGS, _DOT11_MSSECURITY_SETTINGS, DOT11_MSSECURITY_SETTINGS, PDOT11_MSSECURITY_SETTINGS, *PDOT11_MSSECURITY_SETTINGS, Native_802.11_data_types_5a71d8b6-a359-4eb3-9e1c-59327d0ca67c.xml, netvista.dot11_mssecurity_settings, DOT11_MSSECURITY_SETTINGS structure [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wlanihvtypes.h
-req.include-header : Wlanihv.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating   systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT11_MSSECURITY_SETTINGS, *PDOT11_MSSECURITY_SETTINGS
-req.product : Windows 10 or later.
+UID: NS:wlanihvtypes._DOT11_MSSECURITY_SETTINGS
+title: "_DOT11_MSSECURITY_SETTINGS"
+author: windows-driver-content
+description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+old-location: netvista\dot11_mssecurity_settings.htm
+old-project: netvista
+ms.assetid: b80a06f0-7774-4bf1-9101-a466999246d6
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: PDOT11_MSSECURITY_SETTINGS structure pointer [Network Drivers Starting with Windows Vista], wlanihvtypes/DOT11_MSSECURITY_SETTINGS, wlanihvtypes/PDOT11_MSSECURITY_SETTINGS, _DOT11_MSSECURITY_SETTINGS, DOT11_MSSECURITY_SETTINGS, PDOT11_MSSECURITY_SETTINGS, *PDOT11_MSSECURITY_SETTINGS, Native_802.11_data_types_5a71d8b6-a359-4eb3-9e1c-59327d0ca67c.xml, netvista.dot11_mssecurity_settings, DOT11_MSSECURITY_SETTINGS structure [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wlanihvtypes.h
+req.include-header: Wlanihv.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wlanihvtypes.h
+apiname:
+-	DOT11_MSSECURITY_SETTINGS
+product: Windows
+targetos: Windows
+req.typenames: DOT11_MSSECURITY_SETTINGS, *PDOT11_MSSECURITY_SETTINGS
+req.product: Windows 10 or later.
 ---
 
 # _DOT11_MSSECURITY_SETTINGS structure

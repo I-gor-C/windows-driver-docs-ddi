@@ -1,41 +1,46 @@
 ---
-UID : NS:bdatypes._BDANODE_DESCRIPTOR
-title : "_BDANODE_DESCRIPTOR"
-author : windows-driver-content
-description : The BDANODE_DESCRIPTOR structure describes a BDA node.
-old-location : stream\bdanode_descriptor.htm
-old-project : stream
-ms.assetid : 324eddca-f619-44e2-b32f-34cefd4c9cdc
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : BDANODE_DESCRIPTOR, bdatypes/PBDANODE_DESCRIPTOR, bdaref_0610ecfc-d15b-4031-9d88-b041ef21e2fb.xml, stream.bdanode_descriptor, BDANODE_DESCRIPTOR structure [Streaming Media Devices], _BDANODE_DESCRIPTOR, PBDANODE_DESCRIPTOR, PBDANODE_DESCRIPTOR structure pointer [Streaming Media Devices], bdatypes/BDANODE_DESCRIPTOR, *PBDANODE_DESCRIPTOR
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : bdatypes.h
-req.include-header : Bdatypes.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : BDANODE_DESCRIPTOR, *PBDANODE_DESCRIPTOR
+UID: NS:bdatypes._BDANODE_DESCRIPTOR
+title: "_BDANODE_DESCRIPTOR"
+author: windows-driver-content
+description: The BDANODE_DESCRIPTOR structure describes a BDA node.
+old-location: stream\bdanode_descriptor.htm
+old-project: stream
+ms.assetid: 324eddca-f619-44e2-b32f-34cefd4c9cdc
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: BDANODE_DESCRIPTOR, bdatypes/PBDANODE_DESCRIPTOR, bdaref_0610ecfc-d15b-4031-9d88-b041ef21e2fb.xml, stream.bdanode_descriptor, BDANODE_DESCRIPTOR structure [Streaming Media Devices], _BDANODE_DESCRIPTOR, PBDANODE_DESCRIPTOR, PBDANODE_DESCRIPTOR structure pointer [Streaming Media Devices], bdatypes/BDANODE_DESCRIPTOR, *PBDANODE_DESCRIPTOR
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: bdatypes.h
+req.include-header: Bdatypes.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	bdatypes.h
+apiname:
+-	BDANODE_DESCRIPTOR
+product: Windows
+targetos: Windows
+req.typenames: BDANODE_DESCRIPTOR, *PBDANODE_DESCRIPTOR
 ---
 
 # _BDANODE_DESCRIPTOR structure

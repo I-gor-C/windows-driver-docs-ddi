@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._D3DDDIARG_OPENRESOURCE
-title : "_D3DDDIARG_OPENRESOURCE"
-author : windows-driver-content
-description : The D3DDDIARG_OPENRESOURCE structure contains information for opening a shared resource.
-old-location : display\d3dddiarg_openresource.htm
-old-project : display
-ms.assetid : eb1b7317-2e54-4e61-a3e5-b5ac0c09064e
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.d3dddiarg_openresource, UMDisplayDriver_param_Structs_d0d23672-9994-4fad-b104-4eef57b3b03e.xml, D3DDDIARG_OPENRESOURCE structure [Display Devices], _D3DDDIARG_OPENRESOURCE, d3dumddi/D3DDDIARG_OPENRESOURCE, D3DDDIARG_OPENRESOURCE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDIARG_OPENRESOURCE
+UID: NS:d3dumddi._D3DDDIARG_OPENRESOURCE
+title: "_D3DDDIARG_OPENRESOURCE"
+author: windows-driver-content
+description: The D3DDDIARG_OPENRESOURCE structure contains information for opening a shared resource.
+old-location: display\d3dddiarg_openresource.htm
+old-project: display
+ms.assetid: eb1b7317-2e54-4e61-a3e5-b5ac0c09064e
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.d3dddiarg_openresource, UMDisplayDriver_param_Structs_d0d23672-9994-4fad-b104-4eef57b3b03e.xml, D3DDDIARG_OPENRESOURCE structure [Display Devices], _D3DDDIARG_OPENRESOURCE, d3dumddi/D3DDDIARG_OPENRESOURCE, D3DDDIARG_OPENRESOURCE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	D3DDDIARG_OPENRESOURCE
+product: Windows
+targetos: Windows
+req.typenames: D3DDDIARG_OPENRESOURCE
 ---
 
 # _D3DDDIARG_OPENRESOURCE structure

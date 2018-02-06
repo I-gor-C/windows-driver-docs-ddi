@@ -1,41 +1,46 @@
 ---
-UID : NS:dxva._DXVA_MBctrl_I_OffHostIDCT_1
-title : "_DXVA_MBctrl_I_OffHostIDCT_1"
-author : windows-driver-content
-description : The DXVA_MBctrl_I_OffHostIDCT_1 structure is sent once per macroblock by the host decoder to the accelerator to specify macroblock control commands for 4:2:0 intra pictures when using off-host IDCT.
-old-location : display\dxva_mbctrl_i_offhostidct_1.htm
-old-project : display
-ms.assetid : c088a923-0600-48ae-8d3e-95b6bbcb59c7
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : "*LPDXVA_MBctrl_I_OffHostIDCT_1, dxva/DXVA_MBctrl_I_OffHostIDCT_1, dxvaref_2ad46e82-c043-45f2-8ec9-e174e9b21e6e.xml, display.dxva_mbctrl_i_offhostidct_1, DXVA_MBctrl_I_OffHostIDCT_1, DXVA_MBctrl_I_OffHostIDCT_1 structure [Display Devices], _DXVA_MBctrl_I_OffHostIDCT_1"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : dxva.h
-req.include-header : Dxva.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXVA_MBctrl_I_OffHostIDCT_1
+UID: NS:dxva._DXVA_MBctrl_I_OffHostIDCT_1
+title: "_DXVA_MBctrl_I_OffHostIDCT_1"
+author: windows-driver-content
+description: The DXVA_MBctrl_I_OffHostIDCT_1 structure is sent once per macroblock by the host decoder to the accelerator to specify macroblock control commands for 4:2:0 intra pictures when using off-host IDCT.
+old-location: display\dxva_mbctrl_i_offhostidct_1.htm
+old-project: display
+ms.assetid: c088a923-0600-48ae-8d3e-95b6bbcb59c7
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: "*LPDXVA_MBctrl_I_OffHostIDCT_1, dxva/DXVA_MBctrl_I_OffHostIDCT_1, dxvaref_2ad46e82-c043-45f2-8ec9-e174e9b21e6e.xml, display.dxva_mbctrl_i_offhostidct_1, DXVA_MBctrl_I_OffHostIDCT_1, DXVA_MBctrl_I_OffHostIDCT_1 structure [Display Devices], _DXVA_MBctrl_I_OffHostIDCT_1"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: dxva.h
+req.include-header: Dxva.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	dxva.h
+apiname:
+-	DXVA_MBctrl_I_OffHostIDCT_1
+product: Windows
+targetos: Windows
+req.typenames: DXVA_MBctrl_I_OffHostIDCT_1
 ---
 
 # _DXVA_MBctrl_I_OffHostIDCT_1 structure

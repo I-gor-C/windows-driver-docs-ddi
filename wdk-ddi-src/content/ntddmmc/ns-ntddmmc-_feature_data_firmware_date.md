@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddmmc._FEATURE_DATA_FIRMWARE_DATE
-title : "_FEATURE_DATA_FIRMWARE_DATE"
-author : windows-driver-content
-description : The FEATURE_DATA_FIRMWARE_DATE structure holds the date information associated with the Firmware Information feature.
-old-location : storage\feature_data_firmware_date.htm
-old-project : storage
-ms.assetid : 1f6c6a37-9510-47bc-b507-b3fd7477b432
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : structs-CD-ROM_5e7edafb-823d-4e78-a601-a8f29c62ee4e.xml, ntddmmc/PFEATURE_DATA_FIRMWARE_DATE, PFEATURE_DATA_FIRMWARE_DATE structure pointer [Storage Devices], ntddmmc/FEATURE_DATA_FIRMWARE_DATE, *PFEATURE_DATA_FIRMWARE_DATE, PFEATURE_DATA_FIRMWARE_DATE, _FEATURE_DATA_FIRMWARE_DATE, FEATURE_DATA_FIRMWARE_DATE, FEATURE_DATA_FIRMWARE_DATE structure [Storage Devices], storage.feature_data_firmware_date
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddmmc.h
-req.include-header : Ntddcdrm.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PFEATURE_DATA_FIRMWARE_DATE, FEATURE_DATA_FIRMWARE_DATE"
+UID: NS:ntddmmc._FEATURE_DATA_FIRMWARE_DATE
+title: "_FEATURE_DATA_FIRMWARE_DATE"
+author: windows-driver-content
+description: The FEATURE_DATA_FIRMWARE_DATE structure holds the date information associated with the Firmware Information feature.
+old-location: storage\feature_data_firmware_date.htm
+old-project: storage
+ms.assetid: 1f6c6a37-9510-47bc-b507-b3fd7477b432
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: structs-CD-ROM_5e7edafb-823d-4e78-a601-a8f29c62ee4e.xml, ntddmmc/PFEATURE_DATA_FIRMWARE_DATE, PFEATURE_DATA_FIRMWARE_DATE structure pointer [Storage Devices], ntddmmc/FEATURE_DATA_FIRMWARE_DATE, *PFEATURE_DATA_FIRMWARE_DATE, PFEATURE_DATA_FIRMWARE_DATE, _FEATURE_DATA_FIRMWARE_DATE, FEATURE_DATA_FIRMWARE_DATE, FEATURE_DATA_FIRMWARE_DATE structure [Storage Devices], storage.feature_data_firmware_date
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddmmc.h
+req.include-header: Ntddcdrm.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddmmc.h
+apiname:
+-	FEATURE_DATA_FIRMWARE_DATE
+product: Windows
+targetos: Windows
+req.typenames: "*PFEATURE_DATA_FIRMWARE_DATE, FEATURE_DATA_FIRMWARE_DATE"
 ---
 
 # _FEATURE_DATA_FIRMWARE_DATE structure

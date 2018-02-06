@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.tagKSCAMERA_METADATA_ITEMHEADER
-title : tagKSCAMERA_METADATA_ITEMHEADER
-author : windows-driver-content
-description : This structure contains the metadata header information that is filled by the camera driver.
-old-location : stream\kscamera_metadata_itemheader.htm
-old-project : stream
-ms.assetid : B4AC04D7-9F98-41F1-A38D-927F3F3A7699
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : PKSCAMERA_METADATA_ITEMHEADER structure pointer [Streaming Media Devices], KSCAMERA_METADATA_ITEMHEADER, stream.kscamera_metadata_itemheader, tagKSCAMERA_METADATA_ITEMHEADER, *PKSCAMERA_METADATA_ITEMHEADER, ksmedia/KSCAMERA_METADATA_ITEMHEADER, KSCAMERA_METADATA_ITEMHEADER structure [Streaming Media Devices], PKSCAMERA_METADATA_ITEMHEADER, ksmedia/PKSCAMERA_METADATA_ITEMHEADER
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KSCAMERA_METADATA_ITEMHEADER, *PKSCAMERA_METADATA_ITEMHEADER
+UID: NS:ksmedia.tagKSCAMERA_METADATA_ITEMHEADER
+title: tagKSCAMERA_METADATA_ITEMHEADER
+author: windows-driver-content
+description: This structure contains the metadata header information that is filled by the camera driver.
+old-location: stream\kscamera_metadata_itemheader.htm
+old-project: stream
+ms.assetid: B4AC04D7-9F98-41F1-A38D-927F3F3A7699
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: PKSCAMERA_METADATA_ITEMHEADER structure pointer [Streaming Media Devices], KSCAMERA_METADATA_ITEMHEADER, stream.kscamera_metadata_itemheader, tagKSCAMERA_METADATA_ITEMHEADER, *PKSCAMERA_METADATA_ITEMHEADER, ksmedia/KSCAMERA_METADATA_ITEMHEADER, KSCAMERA_METADATA_ITEMHEADER structure [Streaming Media Devices], PKSCAMERA_METADATA_ITEMHEADER, ksmedia/PKSCAMERA_METADATA_ITEMHEADER
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	KSCAMERA_METADATA_ITEMHEADER
+product: Windows
+targetos: Windows
+req.typenames: KSCAMERA_METADATA_ITEMHEADER, *PKSCAMERA_METADATA_ITEMHEADER
 ---
 
 # tagKSCAMERA_METADATA_ITEMHEADER structure

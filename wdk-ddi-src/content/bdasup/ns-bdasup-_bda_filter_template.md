@@ -1,41 +1,46 @@
 ---
-UID : NS:bdasup._BDA_FILTER_TEMPLATE
-title : "_BDA_FILTER_TEMPLATE"
-author : windows-driver-content
-description : The BDA_FILTER_TEMPLATE structure describes the template topology for a BDA filter.
-old-location : stream\bda_filter_template.htm
-old-project : stream
-ms.assetid : 93078225-3487-46db-b13e-e2013be86d97
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : bdasup/BDA_FILTER_TEMPLATE, _BDA_FILTER_TEMPLATE, stream.bda_filter_template, BDA_FILTER_TEMPLATE, PBDA_FILTER_TEMPLATE structure pointer [Streaming Media Devices], BDA_FILTER_TEMPLATE structure [Streaming Media Devices], PBDA_FILTER_TEMPLATE, *PBDA_FILTER_TEMPLATE, bdaref_cf65795d-632d-4c79-9136-95c256ae8b35.xml, bdasup/PBDA_FILTER_TEMPLATE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : bdasup.h
-req.include-header : Bdasup.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PBDA_FILTER_TEMPLATE, BDA_FILTER_TEMPLATE"
+UID: NS:bdasup._BDA_FILTER_TEMPLATE
+title: "_BDA_FILTER_TEMPLATE"
+author: windows-driver-content
+description: The BDA_FILTER_TEMPLATE structure describes the template topology for a BDA filter.
+old-location: stream\bda_filter_template.htm
+old-project: stream
+ms.assetid: 93078225-3487-46db-b13e-e2013be86d97
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: bdasup/BDA_FILTER_TEMPLATE, _BDA_FILTER_TEMPLATE, stream.bda_filter_template, BDA_FILTER_TEMPLATE, PBDA_FILTER_TEMPLATE structure pointer [Streaming Media Devices], BDA_FILTER_TEMPLATE structure [Streaming Media Devices], PBDA_FILTER_TEMPLATE, *PBDA_FILTER_TEMPLATE, bdaref_cf65795d-632d-4c79-9136-95c256ae8b35.xml, bdasup/PBDA_FILTER_TEMPLATE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: bdasup.h
+req.include-header: Bdasup.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	bdasup.h
+apiname:
+-	BDA_FILTER_TEMPLATE
+product: Windows
+targetos: Windows
+req.typenames: "*PBDA_FILTER_TEMPLATE, BDA_FILTER_TEMPLATE"
 ---
 
 # _BDA_FILTER_TEMPLATE structure

@@ -1,41 +1,46 @@
 ---
-UID : NF:extsfns.IDebugFailureAnalysis2.AddUlong
-title : IDebugFailureAnalysis2::AddUlong method
-author : windows-driver-content
-description : The AddUlong method adds a new FA entry to a DebugFailureAnalysis object and sets the data block of the FA entry to a specified ULONG value.
-old-location : debugger\idebugfailureanalysis2_addulong.htm
-old-project : debugger
-ms.assetid : 22F56E3F-9ED4-464D-B97C-1B322E1F8D66
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugFailureAnalysis2, extsfns/IDebugFailureAnalysis2::AddUlong, AddUlong method [Windows Debugging], IDebugFailureAnalysis2 interface, AddUlong method [Windows Debugging], IDebugFailureAnalysis2::AddUlong, IDebugFailureAnalysis2 interface [Windows Debugging], AddUlong method, AddUlong, debugger.idebugfailureanalysis2_addulong
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : extsfns.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : extsfns.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FA_EXTENSION_PLUGIN_PHASE
+UID: NF:extsfns.IDebugFailureAnalysis2.AddUlong
+title: IDebugFailureAnalysis2::AddUlong method
+author: windows-driver-content
+description: The AddUlong method adds a new FA entry to a DebugFailureAnalysis object and sets the data block of the FA entry to a specified ULONG value.
+old-location: debugger\idebugfailureanalysis2_addulong.htm
+old-project: debugger
+ms.assetid: 22F56E3F-9ED4-464D-B97C-1B322E1F8D66
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugFailureAnalysis2, extsfns/IDebugFailureAnalysis2::AddUlong, AddUlong method [Windows Debugging], IDebugFailureAnalysis2 interface, AddUlong method [Windows Debugging], IDebugFailureAnalysis2::AddUlong, IDebugFailureAnalysis2 interface [Windows Debugging], AddUlong method, AddUlong, debugger.idebugfailureanalysis2_addulong
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: extsfns.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: extsfns.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	extsfns.h
+apiname:
+-	IDebugFailureAnalysis2.AddUlong
+product: Windows
+targetos: Windows
+req.typenames: FA_EXTENSION_PLUGIN_PHASE
 ---
 
 

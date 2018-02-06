@@ -1,41 +1,46 @@
 ---
-UID : NE:ntddndis._NDIS_MAC_HEADER_FIELD
-title : "_NDIS_MAC_HEADER_FIELD"
-author : windows-driver-content
-description : The NDIS_MAC_HEADER_FIELD enumeration identifies the type of a field in a media access control (MAC) header to be filtered.
-old-location : netvista\ndis_mac_header_field.htm
-old-project : netvista
-ms.assetid : 31db285c-a7e7-4ba5-ba07-a60cfcfa9af9
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NdisMacHeaderFieldProtocol, NdisMacHeaderFieldUndefined, NdisMacHeaderFieldSourceAddress, ntddndis/NdisMacHeaderFieldProtocol, ntddndis/NdisMacHeaderFieldPriority, *PNDIS_MAC_HEADER_FIELD, NdisMacHeaderFieldPriority, ntddndis/NdisMacHeaderFieldDestinationAddress, _NDIS_MAC_HEADER_FIELD, PNDIS_MAC_HEADER_FIELD, PNDIS_MAC_HEADER_FIELD enumeration pointer [Network Drivers Starting with Windows Vista], ntddndis/NDIS_MAC_HEADER_FIELD, ntddndis/NdisMacHeaderFieldMaximum, ntddndis/NdisMacHeaderFieldSourceAddress, virtual_machine_queue_ref_e521f802-ada1-444a-bf43-63405f40e45a.xml, ntddndis/PNDIS_MAC_HEADER_FIELD, NDIS_MAC_HEADER_FIELD, ntddndis/NdisMacHeaderFieldVlanId, NdisMacHeaderFieldVlanId, ntddndis/NdisMacHeaderFieldPacketType, NdisMacHeaderFieldDestinationAddress, NdisMacHeaderFieldMaximum, ntddndis/NdisMacHeaderFieldUndefined, NdisMacHeaderFieldPacketType, netvista.ndis_mac_header_field, NDIS_MAC_HEADER_FIELD enumeration [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : ntddndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.20 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PNDIS_MAC_HEADER_FIELD, NDIS_MAC_HEADER_FIELD"
+UID: NE:ntddndis._NDIS_MAC_HEADER_FIELD
+title: "_NDIS_MAC_HEADER_FIELD"
+author: windows-driver-content
+description: The NDIS_MAC_HEADER_FIELD enumeration identifies the type of a field in a media access control (MAC) header to be filtered.
+old-location: netvista\ndis_mac_header_field.htm
+old-project: netvista
+ms.assetid: 31db285c-a7e7-4ba5-ba07-a60cfcfa9af9
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NdisMacHeaderFieldProtocol, NdisMacHeaderFieldUndefined, NdisMacHeaderFieldSourceAddress, ntddndis/NdisMacHeaderFieldProtocol, ntddndis/NdisMacHeaderFieldPriority, *PNDIS_MAC_HEADER_FIELD, NdisMacHeaderFieldPriority, ntddndis/NdisMacHeaderFieldDestinationAddress, _NDIS_MAC_HEADER_FIELD, PNDIS_MAC_HEADER_FIELD, PNDIS_MAC_HEADER_FIELD enumeration pointer [Network Drivers Starting with Windows Vista], ntddndis/NDIS_MAC_HEADER_FIELD, ntddndis/NdisMacHeaderFieldMaximum, ntddndis/NdisMacHeaderFieldSourceAddress, virtual_machine_queue_ref_e521f802-ada1-444a-bf43-63405f40e45a.xml, ntddndis/PNDIS_MAC_HEADER_FIELD, NDIS_MAC_HEADER_FIELD, ntddndis/NdisMacHeaderFieldVlanId, NdisMacHeaderFieldVlanId, ntddndis/NdisMacHeaderFieldPacketType, NdisMacHeaderFieldDestinationAddress, NdisMacHeaderFieldMaximum, ntddndis/NdisMacHeaderFieldUndefined, NdisMacHeaderFieldPacketType, netvista.ndis_mac_header_field, NDIS_MAC_HEADER_FIELD enumeration [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: ntddndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.20 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddndis.h
+apiname:
+-	NDIS_MAC_HEADER_FIELD
+product: Windows
+targetos: Windows
+req.typenames: "*PNDIS_MAC_HEADER_FIELD, NDIS_MAC_HEADER_FIELD"
 ---
 
 # _NDIS_MAC_HEADER_FIELD Enumeration
@@ -58,56 +63,56 @@ typedef enum _NDIS_MAC_HEADER_FIELD {
 ## Constants
 
 <table>
-
-<tr>
-<td>NdisMacHeaderFieldDestinationAddress</td>
-<td>A destination address field.</td>
-</tr>
-
-<tr>
-<td>NdisMacHeaderFieldMaximum</td>
-<td>The maximum value for this enumeration. This value might change in future versions of the NDIS
+            
+                <tr>
+                    <td>NdisMacHeaderFieldDestinationAddress</td>
+                    <td>A destination address field.</td>
+                </tr>
+            
+                <tr>
+                    <td>NdisMacHeaderFieldMaximum</td>
+                    <td>The maximum value for this enumeration. This value might change in future versions of the NDIS
      header files and binaries.</td>
-</tr>
-
-<tr>
-<td>NdisMacHeaderFieldPacketType</td>
-<td>A packet type field in the IEEE 802.2 subnetwork access protocol (SNAP) header of an 802.3
-
-MAC header.</td>
-</tr>
-
-<tr>
-<td>NdisMacHeaderFieldPriority</td>
-<td>A VLAN priority field.</td>
-</tr>
-
-<tr>
-<td>NdisMacHeaderFieldProtocol</td>
-<td>A protocol field in the DEC/Intel/Xerox (DIX) Ethernet
+                </tr>
+            
+                <tr>
+                    <td>NdisMacHeaderFieldPacketType</td>
+                    <td>A packet type field in the IEEE 802.2 subnetwork access protocol (SNAP) header of an 802.3
 
 MAC header.</td>
-</tr>
+                </tr>
+            
+                <tr>
+                    <td>NdisMacHeaderFieldPriority</td>
+                    <td>A VLAN priority field.</td>
+                </tr>
+            
+                <tr>
+                    <td>NdisMacHeaderFieldProtocol</td>
+                    <td>A protocol field in the DEC/Intel/Xerox (DIX) Ethernet
 
-<tr>
-<td>NdisMacHeaderFieldSourceAddress</td>
-<td>A source address field.</td>
-</tr>
-
-<tr>
-<td>NdisMacHeaderFieldUndefined</td>
-<td>An undefined MAC header field.</td>
-</tr>
-
-<tr>
-<td>NdisMacHeaderFieldVlanId</td>
-<td>A virtual local area network (VLAN) identifier field.</td>
-</tr>
+MAC header.</td>
+                </tr>
+            
+                <tr>
+                    <td>NdisMacHeaderFieldSourceAddress</td>
+                    <td>A source address field.</td>
+                </tr>
+            
+                <tr>
+                    <td>NdisMacHeaderFieldUndefined</td>
+                    <td>An undefined MAC header field.</td>
+                </tr>
+            
+                <tr>
+                    <td>NdisMacHeaderFieldVlanId</td>
+                    <td>A virtual local area network (VLAN) identifier field.</td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-The NDIS_MAC_HEADER_FIELD enumeration is used in the 
+        The NDIS_MAC_HEADER_FIELD enumeration is used in the 
     <a href="..\ntddndis\ns-ntddndis-_ndis_receive_filter_field_parameters.md">
     NDIS_RECEIVE_FILTER_FIELD_PARAMETERS</a> structure.
 
@@ -117,9 +122,9 @@ The NDIS_MAC_HEADER_FIELD enumeration is used in the
 | **Windows version** | Supported in NDIS 6.20 and later. Supported in NDIS 6.20 and later. |
 | **Header** | ntddndis.h (include Ndis.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_receive_filter_field_parameters.md">
+        <a href="..\ntddndis\ns-ntddndis-_ndis_receive_filter_field_parameters.md">
    NDIS_RECEIVE_FILTER_FIELD_PARAMETERS</a>
 
  

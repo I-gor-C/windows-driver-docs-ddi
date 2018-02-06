@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.SeFilterToken
-title : SeFilterToken function
-author : windows-driver-content
-description : The SeFilterToken routine creates a new access token that is a restricted version of an existing access token.
-old-location : ifsk\sefiltertoken.htm
-old-project : ifsk
-ms.assetid : 2de3980a-da78-4cdd-916b-0801f38f3637
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ntifs/SeFilterToken, SeFilterToken, seref_33edad21-5cc4-4bd9-86f1-b52c648fc87c.xml, SeFilterToken routine [Installable File System Drivers], ifsk.sefiltertoken
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : This routine is available on Microsoft Windows XP and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "< DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.SeFilterToken
+title: SeFilterToken function
+author: windows-driver-content
+description: The SeFilterToken routine creates a new access token that is a restricted version of an existing access token.
+old-location: ifsk\sefiltertoken.htm
+old-project: ifsk
+ms.assetid: 2de3980a-da78-4cdd-916b-0801f38f3637
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ntifs/SeFilterToken, SeFilterToken, seref_33edad21-5cc4-4bd9-86f1-b52c648fc87c.xml, SeFilterToken routine [Installable File System Drivers], ifsk.sefiltertoken
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: This routine is available on Microsoft Windows XP and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "< DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	SeFilterToken
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

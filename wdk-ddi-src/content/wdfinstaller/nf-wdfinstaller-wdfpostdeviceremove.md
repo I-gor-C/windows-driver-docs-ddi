@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfinstaller.WdfPostDeviceRemove
-title : WdfPostDeviceRemove function
-author : windows-driver-content
-description : The co-installer's WdfPostDeviceRemove function performs any operations that the co-installer might require after a non-Plug and Play (PnP) driver's installer has deleted the driver's kernel-mode service.
-old-location : wdf\wdfpostdeviceremove.htm
-old-project : wdf
-ms.assetid : f29579de-ba5d-4b7a-9aeb-558be03d7eef
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WdfPostDeviceRemove function, wdf.wdfpostdeviceremove, PFN_WDFPOSTDEVICEREMOVE, DFCoinstallerRef_82480a49-b7ac-4e1d-b942-93d1eb8a5c34.xml, WdfPostDeviceRemove, wdfinstaller/WdfPostDeviceRemove, kmdf.wdfpostdeviceremove
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfinstaller.h
-req.include-header : Wdfinstaller.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : N/A (Exported by the KMDF co-installer library. For information about the co-installer library's filename, see Using the KMDF Co-installer.)
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_FILE_INFORMATION_CLASS, *PWDF_FILE_INFORMATION_CLASS
-req.product : Windows 10 or later.
+UID: NF:wdfinstaller.WdfPostDeviceRemove
+title: WdfPostDeviceRemove function
+author: windows-driver-content
+description: The co-installer's WdfPostDeviceRemove function performs any operations that the co-installer might require after a non-Plug and Play (PnP) driver's installer has deleted the driver's kernel-mode service.
+old-location: wdf\wdfpostdeviceremove.htm
+old-project: wdf
+ms.assetid: f29579de-ba5d-4b7a-9aeb-558be03d7eef
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WdfPostDeviceRemove function, wdf.wdfpostdeviceremove, PFN_WDFPOSTDEVICEREMOVE, DFCoinstallerRef_82480a49-b7ac-4e1d-b942-93d1eb8a5c34.xml, WdfPostDeviceRemove, wdfinstaller/WdfPostDeviceRemove, kmdf.wdfpostdeviceremove
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfinstaller.h
+req.include-header: Wdfinstaller.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: N/A (Exported by the KMDF co-installer library. For information about the co-installer library's filename, see Using the KMDF Co-installer.)
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	N/A
+-	N/A.dll
+apiname:
+-	WdfPostDeviceRemove
+product: Windows
+targetos: Windows
+req.typenames: WDF_FILE_INFORMATION_CLASS, *PWDF_FILE_INFORMATION_CLASS
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NC:ndis.PROTOCOL_CO_RECEIVE_NET_BUFFER_LISTS
-title : PROTOCOL_CO_RECEIVE_NET_BUFFER_LISTS
-author : windows-driver-content
-description : The ProtocolCoReceiveNetBufferLists function processes receive indications from underlying drivers.Note  You must declare the function by using the PROTOCOL_CO_RECEIVE_NET_BUFFER_LISTS type.
-old-location : netvista\protocolcoreceivenetbufferlists.htm
-old-project : netvista
-ms.assetid : 1755804c-d82f-465d-862f-8a2340516f8e
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.protocolcoreceivenetbufferlists, ProtocolCoReceiveNetBufferLists callback function [Network Drivers Starting with Windows Vista], ProtocolCoReceiveNetBufferLists, PROTOCOL_CO_RECEIVE_NET_BUFFER_LISTS, PROTOCOL_CO_RECEIVE_NET_BUFFER_LISTS, ndis/ProtocolCoReceiveNetBufferLists, condis_sendrcv_ref_cebb36c0-45b2-4318-b70d-aae2eada001f.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
+UID: NC:ndis.PROTOCOL_CO_RECEIVE_NET_BUFFER_LISTS
+title: PROTOCOL_CO_RECEIVE_NET_BUFFER_LISTS
+author: windows-driver-content
+description: The ProtocolCoReceiveNetBufferLists function processes receive indications from underlying drivers.Note  You must declare the function by using the PROTOCOL_CO_RECEIVE_NET_BUFFER_LISTS type.
+old-location: netvista\protocolcoreceivenetbufferlists.htm
+old-project: netvista
+ms.assetid: 1755804c-d82f-465d-862f-8a2340516f8e
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.protocolcoreceivenetbufferlists, ProtocolCoReceiveNetBufferLists callback function [Network Drivers Starting with Windows Vista], ProtocolCoReceiveNetBufferLists, PROTOCOL_CO_RECEIVE_NET_BUFFER_LISTS, PROTOCOL_CO_RECEIVE_NET_BUFFER_LISTS, ndis/ProtocolCoReceiveNetBufferLists, condis_sendrcv_ref_cebb36c0-45b2-4318-b70d-aae2eada001f.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ndis.h
+apiname:
+-	ProtocolCoReceiveNetBufferLists
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NS:windot11._DOT11_POWER_MGMT_MODE_STATUS_INFO
-title : "_DOT11_POWER_MGMT_MODE_STATUS_INFO"
-author : windows-driver-content
-description : The DOT11_POWER_MGMT_MODE_STATUS_INFO structure describes the power mode of the hardware.
-old-location : netvista\dot11_power_mgmt_mode_status_info.htm
-old-project : netvista
-ms.assetid : A373EA34-A7CF-47B3-8194-438BE7F4FC9C
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : DOT11_POWER_MGMT_MODE_STATUS_INFO structure [Network Drivers Starting with Windows Vista], _DOT11_POWER_MGMT_MODE_STATUS_INFO, PDOT11_POWER_MGMT_MODE_STATUS_INFO, DOT11_POWER_MGMT_MODE_STATUS_INFO, PDOT11_POWER_MGMT_MODE_STATUS_INFO structure pointer [Network Drivers Starting with Windows Vista], windot11/DOT11_POWER_MGMT_MODE_STATUS_INFO, *PDOT11_POWER_MGMT_MODE_STATUSINFO, windot11/PDOT11_POWER_MGMT_MODE_STATUS_INFO, netvista.dot11_power_mgmt_mode_status_info
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : windot11.h
-req.include-header : Windot11.h
-req.target-type : Windows
-req.target-min-winverclnt : Versions:\_Supported in Windows 8
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT11_POWER_MGMT_MODE_STATUS_INFO, *PDOT11_POWER_MGMT_MODE_STATUSINFO
-req.product : Windows 10 or later.
+UID: NS:windot11._DOT11_POWER_MGMT_MODE_STATUS_INFO
+title: "_DOT11_POWER_MGMT_MODE_STATUS_INFO"
+author: windows-driver-content
+description: The DOT11_POWER_MGMT_MODE_STATUS_INFO structure describes the power mode of the hardware.
+old-location: netvista\dot11_power_mgmt_mode_status_info.htm
+old-project: netvista
+ms.assetid: A373EA34-A7CF-47B3-8194-438BE7F4FC9C
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: DOT11_POWER_MGMT_MODE_STATUS_INFO structure [Network Drivers Starting with Windows Vista], _DOT11_POWER_MGMT_MODE_STATUS_INFO, PDOT11_POWER_MGMT_MODE_STATUS_INFO, DOT11_POWER_MGMT_MODE_STATUS_INFO, PDOT11_POWER_MGMT_MODE_STATUS_INFO structure pointer [Network Drivers Starting with Windows Vista], windot11/DOT11_POWER_MGMT_MODE_STATUS_INFO, *PDOT11_POWER_MGMT_MODE_STATUSINFO, windot11/PDOT11_POWER_MGMT_MODE_STATUS_INFO, netvista.dot11_power_mgmt_mode_status_info
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: windot11.h
+req.include-header: Windot11.h
+req.target-type: Windows
+req.target-min-winverclnt: Versions:\_Supported in Windows 8
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Windot11.h
+apiname:
+-	DOT11_POWER_MGMT_MODE_STATUS_INFO
+product: Windows
+targetos: Windows
+req.typenames: DOT11_POWER_MGMT_MODE_STATUS_INFO, *PDOT11_POWER_MGMT_MODE_STATUSINFO
+req.product: Windows 10 or later.
 ---
 
 # _DOT11_POWER_MGMT_MODE_STATUS_INFO structure

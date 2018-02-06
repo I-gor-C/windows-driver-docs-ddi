@@ -1,42 +1,47 @@
 ---
-UID : NF:ufxclient.UfxDeviceIoInternalControl
-title : UfxDeviceIoInternalControl function
-author : windows-driver-content
-description : Passes kernel mode IOCTLs to UFX.
-old-location : buses\ufxdeviceiointernalcontrol.htm
-old-project : usbref
-ms.assetid : 0AD4316E-67E7-4810-86DA-5DEB5C4E6DE6
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : UfxDeviceIoInternalControl, buses.ufxdeviceiointernalcontrol, UfxDeviceIoInternalControl method [Buses], ufxclient/UfxDeviceIoInternalControl
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ufxclient.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : DISPATCH_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUFX_HARDWARE_FAILURE_CONTEXT, UFX_HARDWARE_FAILURE_CONTEXT"
-req.product : Windows 10 or later.
+UID: NF:ufxclient.UfxDeviceIoInternalControl
+title: UfxDeviceIoInternalControl function
+author: windows-driver-content
+description: Passes kernel mode IOCTLs to UFX.
+old-location: buses\ufxdeviceiointernalcontrol.htm
+old-project: usbref
+ms.assetid: 0AD4316E-67E7-4810-86DA-5DEB5C4E6DE6
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: UfxDeviceIoInternalControl, buses.ufxdeviceiointernalcontrol, UfxDeviceIoInternalControl method [Buses], ufxclient/UfxDeviceIoInternalControl
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ufxclient.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: DISPATCH_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	ufxclient.h
+apiname:
+-	UfxDeviceIoInternalControl
+product: Windows
+targetos: Windows
+req.typenames: "*PUFX_HARDWARE_FAILURE_CONTEXT, UFX_HARDWARE_FAILURE_CONTEXT"
+req.product: Windows 10 or later.
 ---
 
 

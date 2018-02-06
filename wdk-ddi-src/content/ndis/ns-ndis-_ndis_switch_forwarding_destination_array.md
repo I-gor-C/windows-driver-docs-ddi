@@ -1,41 +1,46 @@
 ---
-UID : NS:ndis._NDIS_SWITCH_FORWARDING_DESTINATION_ARRAY
-title : "_NDIS_SWITCH_FORWARDING_DESTINATION_ARRAY"
-author : windows-driver-content
-description : The NDIS_SWITCH_FORWARDING_DESTINATION_ARRAY structure specifies an array of Hyper-V extensible switch destination ports for a packet.
-old-location : netvista\ndis_switch_forwarding_destination_array.htm
-old-project : netvista
-ms.assetid : f48b3b5f-000e-4e57-87b7-52ce542773f7
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : PNDIS_SWITCH_FORWARDING_DESTINATION_ARRAY structure pointer [Network Drivers Starting with Windows Vista], PNDIS_SWITCH_FORWARDING_DESTINATION_ARRAY, NDIS_SWITCH_FORWARDING_DESTINATION_ARRAY structure [Network Drivers Starting with Windows Vista], _NDIS_SWITCH_FORWARDING_DESTINATION_ARRAY, *PNDIS_SWITCH_FORWARDING_DESTINATION_ARRAY, NDIS_SWITCH_FORWARDING_DESTINATION_ARRAY, ndis/PNDIS_SWITCH_FORWARDING_DESTINATION_ARRAY, ndis/NDIS_SWITCH_FORWARDING_DESTINATION_ARRAY, netvista.ndis_switch_forwarding_destination_array
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.30 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : See Remarks section
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SWITCH_FORWARDING_DESTINATION_ARRAY, *PNDIS_SWITCH_FORWARDING_DESTINATION_ARRAY
+UID: NS:ndis._NDIS_SWITCH_FORWARDING_DESTINATION_ARRAY
+title: "_NDIS_SWITCH_FORWARDING_DESTINATION_ARRAY"
+author: windows-driver-content
+description: The NDIS_SWITCH_FORWARDING_DESTINATION_ARRAY structure specifies an array of Hyper-V extensible switch destination ports for a packet.
+old-location: netvista\ndis_switch_forwarding_destination_array.htm
+old-project: netvista
+ms.assetid: f48b3b5f-000e-4e57-87b7-52ce542773f7
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: PNDIS_SWITCH_FORWARDING_DESTINATION_ARRAY structure pointer [Network Drivers Starting with Windows Vista], PNDIS_SWITCH_FORWARDING_DESTINATION_ARRAY, NDIS_SWITCH_FORWARDING_DESTINATION_ARRAY structure [Network Drivers Starting with Windows Vista], _NDIS_SWITCH_FORWARDING_DESTINATION_ARRAY, *PNDIS_SWITCH_FORWARDING_DESTINATION_ARRAY, NDIS_SWITCH_FORWARDING_DESTINATION_ARRAY, ndis/PNDIS_SWITCH_FORWARDING_DESTINATION_ARRAY, ndis/NDIS_SWITCH_FORWARDING_DESTINATION_ARRAY, netvista.ndis_switch_forwarding_destination_array
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.30 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: See Remarks section
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ndis.h
+apiname:
+-	NDIS_SWITCH_FORWARDING_DESTINATION_ARRAY
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SWITCH_FORWARDING_DESTINATION_ARRAY, *PNDIS_SWITCH_FORWARDING_DESTINATION_ARRAY
 ---
 
 # _NDIS_SWITCH_FORWARDING_DESTINATION_ARRAY structure

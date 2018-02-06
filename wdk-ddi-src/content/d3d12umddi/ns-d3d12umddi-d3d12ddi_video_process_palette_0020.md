@@ -1,41 +1,46 @@
 ---
-UID : NS:d3d12umddi.D3D12DDI_VIDEO_PROCESS_PALETTE_0020
-title : D3D12DDI_VIDEO_PROCESS_PALETTE_0020
-author : windows-driver-content
-description : Specifies whether the palette is enabled and an array of palette entries.
-old-location : display\d3d12ddi_video_process_palette.htm
-old-project : display
-ms.assetid : 25AA9012-64A1-4E61-956F-7F30CE0639EA
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3D12DDI_VIDEO_PROCESS_PALETTE_0020, D3D12DDI_VIDEO_PROCESS_PALETTE_0020 structure [Display Devices], display.d3d12ddi_video_process_palette, d3d12umddi/D3D12DDI_VIDEO_PROCESS_PALETTE_0020
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3d12umddi.h
-req.include-header : D3d12umddi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3D12DDI_VIDEO_PROCESS_PALETTE_0020
+UID: NS:d3d12umddi.D3D12DDI_VIDEO_PROCESS_PALETTE_0020
+title: D3D12DDI_VIDEO_PROCESS_PALETTE_0020
+author: windows-driver-content
+description: Specifies whether the palette is enabled and an array of palette entries.
+old-location: display\d3d12ddi_video_process_palette.htm
+old-project: display
+ms.assetid: 25AA9012-64A1-4E61-956F-7F30CE0639EA
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3D12DDI_VIDEO_PROCESS_PALETTE_0020, D3D12DDI_VIDEO_PROCESS_PALETTE_0020 structure [Display Devices], display.d3d12ddi_video_process_palette, d3d12umddi/D3D12DDI_VIDEO_PROCESS_PALETTE_0020
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3d12umddi.h
+req.include-header: D3d12umddi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	D3d12umddi.h
+apiname:
+-	D3D12DDI_VIDEO_PROCESS_PALETTE_0020
+product: Windows
+targetos: Windows
+req.typenames: D3D12DDI_VIDEO_PROCESS_PALETTE_0020
 ---
 
 # D3D12DDI_VIDEO_PROCESS_PALETTE_0020 structure

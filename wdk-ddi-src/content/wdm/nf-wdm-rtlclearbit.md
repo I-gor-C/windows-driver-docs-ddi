@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.RtlClearBit
-title : RtlClearBit function
-author : windows-driver-content
-description : The RtlClearBit routine sets the specified bit in a bitmap to zero.
-old-location : kernel\rtlclearbit.htm
-old-project : kernel
-ms.assetid : bfc75a17-a0de-436e-aebf-902fd841871a
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/RtlClearBit, RtlClearBit, k109_f785121e-f076-4f31-90ab-4bec446e3cc9.xml, kernel.rtlclearbit, RtlClearBit routine [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows XP and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL (See Remarks section)"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.RtlClearBit
+title: RtlClearBit function
+author: windows-driver-content
+description: The RtlClearBit routine sets the specified bit in a bitmap to zero.
+old-location: kernel\rtlclearbit.htm
+old-project: kernel
+ms.assetid: bfc75a17-a0de-436e-aebf-902fd841871a
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/RtlClearBit, RtlClearBit, k109_f785121e-f076-4f31-90ab-4bec446e3cc9.xml, kernel.rtlclearbit, RtlClearBit routine [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows XP and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL (See Remarks section)"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	RtlClearBit
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

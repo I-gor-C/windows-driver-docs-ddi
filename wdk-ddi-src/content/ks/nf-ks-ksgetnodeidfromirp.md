@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsGetNodeIdFromIrp
-title : KsGetNodeIdFromIrp function
-author : windows-driver-content
-description : The KsGetNodeIdFromIrp function returns the node ID of the node to which Irp was submitted.
-old-location : stream\ksgetnodeidfromirp.htm
-old-project : stream
-ms.assetid : 3bb115eb-074d-4983-97e4-fa38aaa8a81b
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : avfunc_dbc2812f-8011-40e6-8847-f7c3fc35b4b5.xml, ks/KsGetNodeIdFromIrp, KsGetNodeIdFromIrp function [Streaming Media Devices], stream.ksgetnodeidfromirp, KsGetNodeIdFromIrp
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsGetNodeIdFromIrp
+title: KsGetNodeIdFromIrp function
+author: windows-driver-content
+description: The KsGetNodeIdFromIrp function returns the node ID of the node to which Irp was submitted.
+old-location: stream\ksgetnodeidfromirp.htm
+old-project: stream
+ms.assetid: 3bb115eb-074d-4983-97e4-fa38aaa8a81b
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: avfunc_dbc2812f-8011-40e6-8847-f7c3fc35b4b5.xml, ks/KsGetNodeIdFromIrp, KsGetNodeIdFromIrp function [Streaming Media Devices], stream.ksgetnodeidfromirp, KsGetNodeIdFromIrp
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsGetNodeIdFromIrp
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

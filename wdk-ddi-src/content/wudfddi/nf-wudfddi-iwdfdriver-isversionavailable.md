@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFDriver.IsVersionAvailable
-title : IWDFDriver::IsVersionAvailable method
-author : windows-driver-content
-description : The IsVersionAvailable method determines whether the specified version of the framework is available.
-old-location : wdf\iwdfdriver_isversionavailable.htm
-old-project : wdf
-ms.assetid : 9048a568-3369-44eb-8fa8-361ce968a253
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : IWDFDriver, IsVersionAvailable method, IWDFDriver interface, UMDFDriverObjectRef_6ad78413-a8c5-4a9f-953d-94bd4eaf3425.xml, wdf.iwdfdriver_isversionavailable, IWDFDriver interface, IsVersionAvailable method, IsVersionAvailable method, wudfddi/IWDFDriver::IsVersionAvailable, umdf.iwdfdriver_isversionavailable, IsVersionAvailable, IWDFDriver::IsVersionAvailable
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.5
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFDriver.IsVersionAvailable
+title: IWDFDriver::IsVersionAvailable method
+author: windows-driver-content
+description: The IsVersionAvailable method determines whether the specified version of the framework is available.
+old-location: wdf\iwdfdriver_isversionavailable.htm
+old-project: wdf
+ms.assetid: 9048a568-3369-44eb-8fa8-361ce968a253
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: IWDFDriver, IsVersionAvailable method, IWDFDriver interface, UMDFDriverObjectRef_6ad78413-a8c5-4a9f-953d-94bd4eaf3425.xml, wdf.iwdfdriver_isversionavailable, IWDFDriver interface, IsVersionAvailable method, IsVersionAvailable method, wudfddi/IWDFDriver::IsVersionAvailable, umdf.iwdfdriver_isversionavailable, IsVersionAvailable, IWDFDriver::IsVersionAvailable
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.5
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFDriver.IsVersionAvailable
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

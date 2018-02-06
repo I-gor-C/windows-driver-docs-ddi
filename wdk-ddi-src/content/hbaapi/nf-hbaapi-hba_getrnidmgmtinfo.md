@@ -1,41 +1,46 @@
 ---
-UID : NF:hbaapi.HBA_GetRNIDMgmtInfo
-title : HBA_GetRNIDMgmtInfo function
-author : windows-driver-content
-description : The HBA_GetRNIDMgmtInfo routine queries the HBA for request node identification data (RNID) management information.
-old-location : storage\hba_getrnidmgmtinfo.htm
-old-project : storage
-ms.assetid : 8018d52d-4454-4826-933f-a34a70243547
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : HBA_GetRNIDMgmtInfo, hbaapi/HBA_GetRNIDMgmtInfo, HBA_GetRNIDMgmtInfo routine [Storage Devices], storage.hba_getrnidmgmtinfo, fibreHBA_rtns_73ba5195-497c-4105-9b4c-eccd637962b9.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : hbaapi.h
-req.include-header : Hbaapi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Hbaapi.lib
-req.dll : Hbaapi.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HBA_WWNTYPE
+UID: NF:hbaapi.HBA_GetRNIDMgmtInfo
+title: HBA_GetRNIDMgmtInfo function
+author: windows-driver-content
+description: The HBA_GetRNIDMgmtInfo routine queries the HBA for request node identification data (RNID) management information.
+old-location: storage\hba_getrnidmgmtinfo.htm
+old-project: storage
+ms.assetid: 8018d52d-4454-4826-933f-a34a70243547
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: HBA_GetRNIDMgmtInfo, hbaapi/HBA_GetRNIDMgmtInfo, HBA_GetRNIDMgmtInfo routine [Storage Devices], storage.hba_getrnidmgmtinfo, fibreHBA_rtns_73ba5195-497c-4105-9b4c-eccd637962b9.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: hbaapi.h
+req.include-header: Hbaapi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Hbaapi.lib
+req.dll: Hbaapi.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Hbaapi.dll
+apiname:
+-	HBA_GetRNIDMgmtInfo
+product: Windows
+targetos: Windows
+req.typenames: HBA_WWNTYPE
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NF:ucxusbdevice.UcxUsbDeviceCreate
-title : UcxUsbDeviceCreate function
-author : windows-driver-content
-description : Creates a USB device object on the specified controller.
-old-location : buses\_ucxusbdevicecreate.htm
-old-project : usbref
-ms.assetid : 36883440-805F-4588-AA04-3A7BCBEB6D76
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ucxusbdevice/UcxUsbDeviceCreate, UcxUsbDeviceCreate method [Buses], UcxUsbDeviceCreate, buses._ucxusbdevicecreate
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ucxusbdevice.h
-req.include-header : Ucxclass.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : UCX_USBDEVICE_CHARACTERISTIC_TYPE
-req.product : Windows 10 or later.
+UID: NF:ucxusbdevice.UcxUsbDeviceCreate
+title: UcxUsbDeviceCreate function
+author: windows-driver-content
+description: Creates a USB device object on the specified controller.
+old-location: buses\_ucxusbdevicecreate.htm
+old-project: usbref
+ms.assetid: 36883440-805F-4588-AA04-3A7BCBEB6D76
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ucxusbdevice/UcxUsbDeviceCreate, UcxUsbDeviceCreate method [Buses], UcxUsbDeviceCreate, buses._ucxusbdevicecreate
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ucxusbdevice.h
+req.include-header: Ucxclass.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	ucxusbdevice.h
+apiname:
+-	UcxUsbDeviceCreate
+product: Windows
+targetos: Windows
+req.typenames: UCX_USBDEVICE_CHARACTERISTIC_TYPE
+req.product: Windows 10 or later.
 ---
 
 

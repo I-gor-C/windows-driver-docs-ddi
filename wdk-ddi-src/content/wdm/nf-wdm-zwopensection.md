@@ -1,42 +1,48 @@
 ---
-UID : NF:wdm.ZwOpenSection
-title : ZwOpenSection function
-author : windows-driver-content
-description : The ZwOpenSection routine opens a handle for an existing section object.
-old-location : kernel\zwopensection.htm
-old-project : kernel
-ms.assetid : c4373f7b-cc88-45da-a140-ead1c6891c11
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : NtOpenSection, wdm/NtOpenSection, ZwOpenSection, kernel.zwopensection, wdm/ZwOpenSection, k111_51851f81-8825-499b-9e7e-36faa8f53b23.xml, ZwOpenSection routine [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ZwOpenSection
+title: ZwOpenSection function
+author: windows-driver-content
+description: The ZwOpenSection routine opens a handle for an existing section object.
+old-location: kernel\zwopensection.htm
+old-project: kernel
+ms.assetid: c4373f7b-cc88-45da-a140-ead1c6891c11
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: NtOpenSection, wdm/NtOpenSection, ZwOpenSection, kernel.zwopensection, wdm/ZwOpenSection, k111_51851f81-8825-499b-9e7e-36faa8f53b23.xml, ZwOpenSection routine [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ZwOpenSection
+-	NtOpenSection
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

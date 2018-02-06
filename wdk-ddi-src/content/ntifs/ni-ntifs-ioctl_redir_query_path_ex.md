@@ -1,41 +1,46 @@
 ---
-UID : NI:ntifs.IOCTL_REDIR_QUERY_PATH_EX
-title : IOCTL_REDIR_QUERY_PATH_EX
-author : windows-driver-content
-description : The IOCTL_REDIR_QUERY_PATH_EX control code is sent by the multiple UNC provider (MUP) on Windows Vista or later to network redirectors to determine which provider can handle a specific UNC path in a name-based operation, typically an IRP_MJ_CREATE request.
-old-location : ifsk\ioctl_redir_query_path_ex.htm
-old-project : ifsk
-ms.assetid : 290825dd-d5f6-4e9b-b1a3-3e146d3e1856
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.ioctl_redir_query_path_ex, IOCTL_REDIR_QUERY_PATH_EX control code [Installable File System Drivers], IOCTL_REDIR_QUERY_PATH_EX, ntifs/IOCTL_REDIR_QUERY_PATH_EX, ioctl_ref_de59d691-17c8-4e21-8acc-61d2f27c2799.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : This IOCTL is available on Windows Vista and later versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NI:ntifs.IOCTL_REDIR_QUERY_PATH_EX
+title: IOCTL_REDIR_QUERY_PATH_EX
+author: windows-driver-content
+description: The IOCTL_REDIR_QUERY_PATH_EX control code is sent by the multiple UNC provider (MUP) on Windows Vista or later to network redirectors to determine which provider can handle a specific UNC path in a name-based operation, typically an IRP_MJ_CREATE request.
+old-location: ifsk\ioctl_redir_query_path_ex.htm
+old-project: ifsk
+ms.assetid: 290825dd-d5f6-4e9b-b1a3-3e146d3e1856
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.ioctl_redir_query_path_ex, IOCTL_REDIR_QUERY_PATH_EX control code [Installable File System Drivers], IOCTL_REDIR_QUERY_PATH_EX, ntifs/IOCTL_REDIR_QUERY_PATH_EX, ioctl_ref_de59d691-17c8-4e21-8acc-61d2f27c2799.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: This IOCTL is available on Windows Vista and later versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntifs.h
+apiname:
+-	IOCTL_REDIR_QUERY_PATH_EX
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 # IOCTL_REDIR_QUERY_PATH_EX IOCTL

@@ -1,41 +1,46 @@
 ---
-UID : NS:avc._AVC_IRB
-title : "_AVC_IRB"
-author : windows-driver-content
-description : The AVC_IRB structure is an I/O Request Block (IRB) header structure where a function number is stored.
-old-location : stream\avc_irb.htm
-old-project : stream
-ms.assetid : 8798e152-6586-48d0-a8f6-2e861660dd62
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : PAVC_IRB, avc/AVC_IRB, stream.avc_irb, avcref_98d983db-d72a-4efd-9c8c-20dd17b674a0.xml, _AVC_IRB, AVC_IRB, *PAVC_IRB, AVC_IRB structure [Streaming Media Devices], avc/PAVC_IRB, PAVC_IRB structure pointer [Streaming Media Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : avc.h
-req.include-header : Avc.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PAVC_IRB, AVC_IRB"
+UID: NS:avc._AVC_IRB
+title: "_AVC_IRB"
+author: windows-driver-content
+description: The AVC_IRB structure is an I/O Request Block (IRB) header structure where a function number is stored.
+old-location: stream\avc_irb.htm
+old-project: stream
+ms.assetid: 8798e152-6586-48d0-a8f6-2e861660dd62
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: PAVC_IRB, avc/AVC_IRB, stream.avc_irb, avcref_98d983db-d72a-4efd-9c8c-20dd17b674a0.xml, _AVC_IRB, AVC_IRB, *PAVC_IRB, AVC_IRB structure [Streaming Media Devices], avc/PAVC_IRB, PAVC_IRB structure pointer [Streaming Media Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: avc.h
+req.include-header: Avc.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	avc.h
+apiname:
+-	AVC_IRB
+product: Windows
+targetos: Windows
+req.typenames: "*PAVC_IRB, AVC_IRB"
 ---
 
 # _AVC_IRB structure

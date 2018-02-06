@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.FsRtlTeardownPerFileContexts
-title : FsRtlTeardownPerFileContexts function
-author : windows-driver-content
-description : File systems call theFsRtlTeardownPerFileContexts routine to free FSRTL_PER_FILE_CONTEXT objects that are associated with a file control block (FCB) structure.
-old-location : ifsk\fsrtlteardownperfilecontexts.htm
-old-project : ifsk
-ms.assetid : c124c5a4-5187-4474-8896-28c729bc7d07
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FsRtlTeardownPerFileContexts, fsrtlref_3bd1af9f-ebc1-4cf8-9c7d-415f4bc64eb4.xml, ntifs/FsRtlTeardownPerFileContexts, ifsk.fsrtlteardownperfilecontexts, FsRtlTeardownPerFileContexts routine [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : FltKernel.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting withWindows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<=APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.FsRtlTeardownPerFileContexts
+title: FsRtlTeardownPerFileContexts function
+author: windows-driver-content
+description: File systems call theFsRtlTeardownPerFileContexts routine to free FSRTL_PER_FILE_CONTEXT objects that are associated with a file control block (FCB) structure.
+old-location: ifsk\fsrtlteardownperfilecontexts.htm
+old-project: ifsk
+ms.assetid: c124c5a4-5187-4474-8896-28c729bc7d07
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FsRtlTeardownPerFileContexts, fsrtlref_3bd1af9f-ebc1-4cf8-9c7d-415f4bc64eb4.xml, ntifs/FsRtlTeardownPerFileContexts, ifsk.fsrtlteardownperfilecontexts, FsRtlTeardownPerFileContexts routine [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: FltKernel.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting withWindows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<=APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	FsRtlTeardownPerFileContexts
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

@@ -1,42 +1,50 @@
 ---
-UID : NF:wdfrequest.WdfRequestFormatRequestUsingCurrentType
-title : WdfRequestFormatRequestUsingCurrentType function
-author : windows-driver-content
-description : The WdfRequestFormatRequestUsingCurrentType method formats a specified I/O request so that the driver can forward it, unmodified, to the driver's local I/O target.
-old-location : wdf\wdfrequestformatrequestusingcurrenttype.htm
-old-project : wdf
-ms.assetid : 51af6f9e-1e38-4af2-9db8-cfad41e2f435
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : PFN_WDFREQUESTFORMATREQUESTUSINGCURRENTTYPE, wdf.wdfrequestformatrequestusingcurrenttype, wdfrequest/WdfRequestFormatRequestUsingCurrentType, DFRequestObjectRef_c84fc560-9492-448a-9886-754c2857eba5.xml, WdfRequestFormatRequestUsingCurrentType, WdfRequestFormatRequestUsingCurrentType method, kmdf.wdfrequestformatrequestusingcurrenttype
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfrequest.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : DriverCreate, InvalidReqAccess, InvalidReqAccessLocal, KmdfIrql, KmdfIrql2, RequestFormattedValid
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_REQUEST_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfrequest.WdfRequestFormatRequestUsingCurrentType
+title: WdfRequestFormatRequestUsingCurrentType function
+author: windows-driver-content
+description: The WdfRequestFormatRequestUsingCurrentType method formats a specified I/O request so that the driver can forward it, unmodified, to the driver's local I/O target.
+old-location: wdf\wdfrequestformatrequestusingcurrenttype.htm
+old-project: wdf
+ms.assetid: 51af6f9e-1e38-4af2-9db8-cfad41e2f435
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: PFN_WDFREQUESTFORMATREQUESTUSINGCURRENTTYPE, wdf.wdfrequestformatrequestusingcurrenttype, wdfrequest/WdfRequestFormatRequestUsingCurrentType, DFRequestObjectRef_c84fc560-9492-448a-9886-754c2857eba5.xml, WdfRequestFormatRequestUsingCurrentType, WdfRequestFormatRequestUsingCurrentType method, kmdf.wdfrequestformatrequestusingcurrenttype
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfrequest.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: DriverCreate, InvalidReqAccess, InvalidReqAccessLocal, KmdfIrql, KmdfIrql2, RequestFormattedValid
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+-	WUDFx02000.dll
+-	WUDFx02000.dll.dll
+apiname:
+-	WdfRequestFormatRequestUsingCurrentType
+product: Windows
+targetos: Windows
+req.typenames: WDF_REQUEST_TYPE
+req.product: Windows 10 or later.
 ---
 
 

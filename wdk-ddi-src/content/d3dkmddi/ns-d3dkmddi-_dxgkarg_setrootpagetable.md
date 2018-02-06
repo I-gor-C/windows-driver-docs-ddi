@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGKARG_SETROOTPAGETABLE
-title : "_DXGKARG_SETROOTPAGETABLE"
-author : windows-driver-content
-description : DXGKARG_SETROOTPAGETABLE is used by the DxgkDdiSetRootPageTabledevice driver interface (DDI) to notify a context when its associated root page table is resized or moved in memory.
-old-location : display\dxgkarg_setrootpagetable.htm
-old-project : display
-ms.assetid : D3863924-29EE-4886-B8DC-F9020A7C85A4
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3dkmddi/DXGKARG_SETROOTPAGETABLE, DXGKARG_SETROOTPAGETABLE structure [Display Devices], display.dxgkarg_setrootpagetable, _DXGKARG_SETROOTPAGETABLE, DXGKARG_SETROOTPAGETABLE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGKARG_SETROOTPAGETABLE
+UID: NS:d3dkmddi._DXGKARG_SETROOTPAGETABLE
+title: "_DXGKARG_SETROOTPAGETABLE"
+author: windows-driver-content
+description: DXGKARG_SETROOTPAGETABLE is used by the DxgkDdiSetRootPageTabledevice driver interface (DDI) to notify a context when its associated root page table is resized or moved in memory.
+old-location: display\dxgkarg_setrootpagetable.htm
+old-project: display
+ms.assetid: D3863924-29EE-4886-B8DC-F9020A7C85A4
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3dkmddi/DXGKARG_SETROOTPAGETABLE, DXGKARG_SETROOTPAGETABLE structure [Display Devices], display.dxgkarg_setrootpagetable, _DXGKARG_SETROOTPAGETABLE, DXGKARG_SETROOTPAGETABLE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DXGKARG_SETROOTPAGETABLE
+product: Windows
+targetos: Windows
+req.typenames: DXGKARG_SETROOTPAGETABLE
 ---
 
 # _DXGKARG_SETROOTPAGETABLE structure

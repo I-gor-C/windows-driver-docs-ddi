@@ -1,42 +1,47 @@
 ---
-UID : NF:storport.StorPortAllocateHostMemoryBuffer
-title : StorPortAllocateHostMemoryBuffer function
-author : windows-driver-content
-description : This function allocates one or more ranges of physically contiguous memory to be used as a Host Memory Buffer (HMB).
-old-location : storage\storportallocatehostmemorybuffer.htm
-old-project : storage
-ms.assetid : B8413B02-32A6-40AE-9DD2-C25AD2D2D45C
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.storportallocatehostmemorybuffer, StorPortAllocateHostMemoryBuffer routine [Storage Devices], storport/StorPortAllocateHostMemoryBuffer, StorPortAllocateHostMemoryBuffer
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STOR_SPINLOCK
-req.product : Windows 10 or later.
+UID: NF:storport.StorPortAllocateHostMemoryBuffer
+title: StorPortAllocateHostMemoryBuffer function
+author: windows-driver-content
+description: This function allocates one or more ranges of physically contiguous memory to be used as a Host Memory Buffer (HMB).
+old-location: storage\storportallocatehostmemorybuffer.htm
+old-project: storage
+ms.assetid: B8413B02-32A6-40AE-9DD2-C25AD2D2D45C
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.storportallocatehostmemorybuffer, StorPortAllocateHostMemoryBuffer routine [Storage Devices], storport/StorPortAllocateHostMemoryBuffer, StorPortAllocateHostMemoryBuffer
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	storport.h
+apiname:
+-	StorPortAllocateHostMemoryBuffer
+product: Windows
+targetos: Windows
+req.typenames: STOR_SPINLOCK
+req.product: Windows 10 or later.
 ---
 
 

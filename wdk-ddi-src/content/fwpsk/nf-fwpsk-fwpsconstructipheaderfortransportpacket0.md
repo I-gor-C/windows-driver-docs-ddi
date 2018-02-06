@@ -1,41 +1,47 @@
 ---
-UID : NF:fwpsk.FwpsConstructIpHeaderForTransportPacket0
-title : FwpsConstructIpHeaderForTransportPacket0 function
-author : windows-driver-content
-description : The FwpsConstructIpHeaderForTransportPacket0 function is called by a callout to construct a new IP header or to rebuild a preexisting IP packet header for only one net buffer.Note  FwpsConstructIpHeaderForTransportPacket0 is a specific version of FwpsConstructIpHeaderForTransportPacket. See WFP Version-Independent Names and Targeting Specific Versions of Windows for more information.
-old-location : netvista\fwpsconstructipheaderfortransportpacket0.htm
-old-project : netvista
-ms.assetid : badb7e91-1d5f-42c3-973b-c7d756d24a01
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : fwpsk/FwpsConstructIpHeaderForTransportPacket0, FwpsConstructIpHeaderForTransportPacket0 function [Network Drivers Starting with Windows Vista], FwpsConstructIpHeaderForTransportPacket0, wfp_ref_2_funct_3_fwps_C_6c1cec4b-8792-49b0-bd89-eb3614b71567.xml, netvista.fwpsconstructipheaderfortransportpacket0
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fwpsk.h
-req.include-header : Fwpsk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows Server 2008.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Fwpkclnt.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FWPS_VSWITCH_EVENT_TYPE
+UID: NF:fwpsk.FwpsConstructIpHeaderForTransportPacket0
+title: FwpsConstructIpHeaderForTransportPacket0 function
+author: windows-driver-content
+description: The FwpsConstructIpHeaderForTransportPacket0 function is called by a callout to construct a new IP header or to rebuild a preexisting IP packet header for only one net buffer.Note  FwpsConstructIpHeaderForTransportPacket0 is a specific version of FwpsConstructIpHeaderForTransportPacket. See WFP Version-Independent Names and Targeting Specific Versions of Windows for more information.
+old-location: netvista\fwpsconstructipheaderfortransportpacket0.htm
+old-project: netvista
+ms.assetid: badb7e91-1d5f-42c3-973b-c7d756d24a01
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: fwpsk/FwpsConstructIpHeaderForTransportPacket0, FwpsConstructIpHeaderForTransportPacket0 function [Network Drivers Starting with Windows Vista], FwpsConstructIpHeaderForTransportPacket0, wfp_ref_2_funct_3_fwps_C_6c1cec4b-8792-49b0-bd89-eb3614b71567.xml, netvista.fwpsconstructipheaderfortransportpacket0
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fwpsk.h
+req.include-header: Fwpsk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows Server 2008.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Fwpkclnt.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	fwpkclnt.lib
+-	fwpkclnt.dll
+apiname:
+-	FwpsConstructIpHeaderForTransportPacket0
+product: Windows
+targetos: Windows
+req.typenames: FWPS_VSWITCH_EVENT_TYPE
 ---
 
 

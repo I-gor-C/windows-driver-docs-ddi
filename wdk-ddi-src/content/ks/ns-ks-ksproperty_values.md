@@ -1,41 +1,46 @@
 ---
-UID : NS:ks.KSPROPERTY_VALUES
-title : KSPROPERTY_VALUES
-author : windows-driver-content
-description : The KSPROPERTY_VALUES structure describes the type and acceptable default values of a property.
-old-location : stream\ksproperty_values.htm
-old-project : stream
-ms.assetid : 0837f458-6585-4ac9-a166-e72f715238a1
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ks/KSPROPERTY_VALUES, ks-struct_a9156948-e21f-41d4-bb63-9c85fdbf57f3.xml, KSPROPERTY_VALUES structure [Streaming Media Devices], ks/PKSPROPERTY_VALUES, KSPROPERTY_VALUES, PKSPROPERTY_VALUES structure pointer [Streaming Media Devices], PKSPROPERTY_VALUES, *PKSPROPERTY_VALUES, stream.ksproperty_values
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KSPROPERTY_VALUES, *PKSPROPERTY_VALUES
+UID: NS:ks.KSPROPERTY_VALUES
+title: KSPROPERTY_VALUES
+author: windows-driver-content
+description: The KSPROPERTY_VALUES structure describes the type and acceptable default values of a property.
+old-location: stream\ksproperty_values.htm
+old-project: stream
+ms.assetid: 0837f458-6585-4ac9-a166-e72f715238a1
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ks/KSPROPERTY_VALUES, ks-struct_a9156948-e21f-41d4-bb63-9c85fdbf57f3.xml, KSPROPERTY_VALUES structure [Streaming Media Devices], ks/PKSPROPERTY_VALUES, KSPROPERTY_VALUES, PKSPROPERTY_VALUES structure pointer [Streaming Media Devices], PKSPROPERTY_VALUES, *PKSPROPERTY_VALUES, stream.ksproperty_values
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	KSPROPERTY_VALUES
+product: Windows
+targetos: Windows
+req.typenames: KSPROPERTY_VALUES, *PKSPROPERTY_VALUES
 ---
 
 # KSPROPERTY_VALUES structure

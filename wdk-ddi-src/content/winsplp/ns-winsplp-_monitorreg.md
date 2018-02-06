@@ -1,42 +1,47 @@
 ---
-UID : NS:winsplp._MONITORREG
-title : "_MONITORREG"
-author : windows-driver-content
-description : The MONITORREG structure supplies print monitors with the address of registry functions to use instead of Win32 registry API functions.
-old-location : print\monitorreg.htm
-old-project : print
-ms.assetid : 57c146bc-574f-4137-89bb-e891e005de05
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : print.monitorreg, PMONITORREG, MONITORREG, MONITORREG structure [Print Devices], PMONITORREG structure pointer [Print Devices], _MONITORREG, winsplp/MONITORREG, spoolfnc_2d0db8db-eea5-461a-a257-1fb986001dac.xml, *PMONITORREG, winsplp/PMONITORREG
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : winsplp.h
-req.include-header : Winsplp.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : MONITORREG, *PMONITORREG
-req.product : Windows 10 or later.
+UID: NS:winsplp._MONITORREG
+title: "_MONITORREG"
+author: windows-driver-content
+description: The MONITORREG structure supplies print monitors with the address of registry functions to use instead of Win32 registry API functions.
+old-location: print\monitorreg.htm
+old-project: print
+ms.assetid: 57c146bc-574f-4137-89bb-e891e005de05
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: print.monitorreg, PMONITORREG, MONITORREG, MONITORREG structure [Print Devices], PMONITORREG structure pointer [Print Devices], _MONITORREG, winsplp/MONITORREG, spoolfnc_2d0db8db-eea5-461a-a257-1fb986001dac.xml, *PMONITORREG, winsplp/PMONITORREG
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: winsplp.h
+req.include-header: Winsplp.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	winsplp.h
+apiname:
+-	MONITORREG
+product: Windows
+targetos: Windows
+req.typenames: MONITORREG, *PMONITORREG
+req.product: Windows 10 or later.
 ---
 
 # _MONITORREG structure

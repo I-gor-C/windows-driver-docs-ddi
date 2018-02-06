@@ -1,42 +1,47 @@
 ---
-UID : NC:wdm.PGET_DMA_ADAPTER_INFO
-title : PGET_DMA_ADAPTER_INFO
-author : windows-driver-content
-description : The GetDmaAdapterInfo routine retrieves information about the hardware capabilities of a system DMA channel.
-old-location : kernel\getdmaadapterinfo.htm
-old-project : kernel
-ms.assetid : 2F502ACA-0CFF-46A1-B54C-1034D6E56815
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.getdmaadapterinfo, GetDmaAdapterInfo, GetDmaAdapterInfo callback function [Kernel-Mode Driver Architecture], GetDmaAdapterInfo, PGET_DMA_ADAPTER_INFO, PGET_DMA_ADAPTER_INFO, wdm/GetDmaAdapterInfo
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
-req.product : Windows 10 or later.
+UID: NC:wdm.PGET_DMA_ADAPTER_INFO
+title: PGET_DMA_ADAPTER_INFO
+author: windows-driver-content
+description: The GetDmaAdapterInfo routine retrieves information about the hardware capabilities of a system DMA channel.
+old-location: kernel\getdmaadapterinfo.htm
+old-project: kernel
+ms.assetid: 2F502ACA-0CFF-46A1-B54C-1034D6E56815
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.getdmaadapterinfo, GetDmaAdapterInfo, GetDmaAdapterInfo callback function [Kernel-Mode Driver Architecture], GetDmaAdapterInfo, PGET_DMA_ADAPTER_INFO, PGET_DMA_ADAPTER_INFO, wdm/GetDmaAdapterInfo
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Wdm.h
+apiname:
+-	GetDmaAdapterInfo
+product: Windows
+targetos: Windows
+req.typenames: WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,42 +1,48 @@
 ---
-UID : NF:wdm.ZwPrepareEnlistment
-title : ZwPrepareEnlistment function
-author : windows-driver-content
-description : The ZwPrepareEnlistment routine initiates the prepare operation for a specified enlistment's transaction.
-old-location : kernel\zwprepareenlistment.htm
-old-project : kernel
-ms.assetid : 1597f27d-8d1e-445e-bc68-b7c151fd19d5
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ktm_ref_2da2ab5a-1353-4598-9413-35f6bfc8ee31.xml, kernel.zwprepareenlistment, ZwPrepareEnlistment routine [Kernel-Mode Driver Architecture], NtPrepareEnlistment, wdm/ZwPrepareEnlistment, ZwPrepareEnlistment, wdm/NtPrepareEnlistment
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later operating system versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ZwPrepareEnlistment
+title: ZwPrepareEnlistment function
+author: windows-driver-content
+description: The ZwPrepareEnlistment routine initiates the prepare operation for a specified enlistment's transaction.
+old-location: kernel\zwprepareenlistment.htm
+old-project: kernel
+ms.assetid: 1597f27d-8d1e-445e-bc68-b7c151fd19d5
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ktm_ref_2da2ab5a-1353-4598-9413-35f6bfc8ee31.xml, kernel.zwprepareenlistment, ZwPrepareEnlistment routine [Kernel-Mode Driver Architecture], NtPrepareEnlistment, wdm/ZwPrepareEnlistment, ZwPrepareEnlistment, wdm/NtPrepareEnlistment
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later operating system versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ZwPrepareEnlistment
+-	NtPrepareEnlistment
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

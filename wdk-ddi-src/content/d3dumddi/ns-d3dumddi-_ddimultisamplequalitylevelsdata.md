@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._DDIMULTISAMPLEQUALITYLEVELSDATA
-title : "_DDIMULTISAMPLEQUALITYLEVELSDATA"
-author : windows-driver-content
-description : The DDIMULTISAMPLEQUALITYLEVELSDATA structure describes the number of multiple-sample quality levels for a given render-target format.
-old-location : display\ddimultisamplequalitylevelsdata.htm
-old-project : display
-ms.assetid : 48eeea6a-6a1d-43f7-a74c-3ca896c7b2d4
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : "_DDIMULTISAMPLEQUALITYLEVELSDATA, d3dumddi/DDIMULTISAMPLEQUALITYLEVELSDATA, display.ddimultisamplequalitylevelsdata, DDIMULTISAMPLEQUALITYLEVELSDATA, D3D_other_Structs_a83f4a87-4963-41c8-9ef7-e1ce0b8843c5.xml, DDIMULTISAMPLEQUALITYLEVELSDATA structure [Display Devices]"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DDIMULTISAMPLEQUALITYLEVELSDATA
+UID: NS:d3dumddi._DDIMULTISAMPLEQUALITYLEVELSDATA
+title: "_DDIMULTISAMPLEQUALITYLEVELSDATA"
+author: windows-driver-content
+description: The DDIMULTISAMPLEQUALITYLEVELSDATA structure describes the number of multiple-sample quality levels for a given render-target format.
+old-location: display\ddimultisamplequalitylevelsdata.htm
+old-project: display
+ms.assetid: 48eeea6a-6a1d-43f7-a74c-3ca896c7b2d4
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: "_DDIMULTISAMPLEQUALITYLEVELSDATA, d3dumddi/DDIMULTISAMPLEQUALITYLEVELSDATA, display.ddimultisamplequalitylevelsdata, DDIMULTISAMPLEQUALITYLEVELSDATA, D3D_other_Structs_a83f4a87-4963-41c8-9ef7-e1ce0b8843c5.xml, DDIMULTISAMPLEQUALITYLEVELSDATA structure [Display Devices]"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	DDIMULTISAMPLEQUALITYLEVELSDATA
+product: Windows
+targetos: Windows
+req.typenames: DDIMULTISAMPLEQUALITYLEVELSDATA
 ---
 
 # _DDIMULTISAMPLEQUALITYLEVELSDATA structure

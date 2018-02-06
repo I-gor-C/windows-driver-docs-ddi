@@ -1,41 +1,46 @@
 ---
-UID : NS:d3d10umddi.D3DWDDM2_0DDI_VIDEO_DECODER_BUFFER_DESC1
-title : D3DWDDM2_0DDI_VIDEO_DECODER_BUFFER_DESC1
-author : windows-driver-content
-description : D3DWDDM2_0DDI_VIDEO_DECODER_BUFFER_DESC1 is used with VideoDecoderSubmitBuffers1 to submit one or more buffer for decoding.
-old-location : display\d3dwddm2_0ddi_video_decoder_buffer_desc1.htm
-old-project : display
-ms.assetid : BF57E573-852E-4784-8E76-B5E7D86A57EB
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DWDDM2_0DDI_VIDEO_DECODER_BUFFER_DESC1, D3DWDDM2_0DDI_VIDEO_DECODER_BUFFER_DESC1 structure [Display Devices], display.d3dwddm2_0ddi_video_decoder_buffer_desc1, d3d10umddi/D3DWDDM2_0DDI_VIDEO_DECODER_BUFFER_DESC1
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DWDDM2_0DDI_VIDEO_DECODER_BUFFER_DESC1
+UID: NS:d3d10umddi.D3DWDDM2_0DDI_VIDEO_DECODER_BUFFER_DESC1
+title: D3DWDDM2_0DDI_VIDEO_DECODER_BUFFER_DESC1
+author: windows-driver-content
+description: D3DWDDM2_0DDI_VIDEO_DECODER_BUFFER_DESC1 is used with VideoDecoderSubmitBuffers1 to submit one or more buffer for decoding.
+old-location: display\d3dwddm2_0ddi_video_decoder_buffer_desc1.htm
+old-project: display
+ms.assetid: BF57E573-852E-4784-8E76-B5E7D86A57EB
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DWDDM2_0DDI_VIDEO_DECODER_BUFFER_DESC1, D3DWDDM2_0DDI_VIDEO_DECODER_BUFFER_DESC1 structure [Display Devices], display.d3dwddm2_0ddi_video_decoder_buffer_desc1, d3d10umddi/D3DWDDM2_0DDI_VIDEO_DECODER_BUFFER_DESC1
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	D3d10umddi.h
+apiname:
+-	D3DWDDM2_0DDI_VIDEO_DECODER_BUFFER_DESC1
+product: Windows
+targetos: Windows
+req.typenames: D3DWDDM2_0DDI_VIDEO_DECODER_BUFFER_DESC1
 ---
 
 # D3DWDDM2_0DDI_VIDEO_DECODER_BUFFER_DESC1 structure

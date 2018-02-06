@@ -1,41 +1,47 @@
 ---
-UID : NF:dbgeng.IDebugBreakpoint2.AddFlags
-title : IDebugBreakpoint2::AddFlags method
-author : windows-driver-content
-description : The AddFlags method adds flags to a breakpoint.
-old-location : debugger\addflags.htm
-old-project : debugger
-ms.assetid : 92161111-5e02-4a97-9656-9a297e9ea1af
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : AddFlags method [Windows Debugging], IDebugBreakpoint2 interface, dbgeng/IDebugBreakpoint2::AddFlags, AddFlags, IDebugBreakpoint::AddFlags, IDebugBreakpoint2::AddFlags, IDebugBreakpoint2, AddFlags method [Windows Debugging], debugger.addflags, dbgeng/IDebugBreakpoint::AddFlags, AddFlags method [Windows Debugging], IDebugBreakpoint interface, IDebugBreakpoint2 interface [Windows Debugging], AddFlags method, IDebugBreakpoint interface [Windows Debugging], AddFlags method, ComOther_2becec27-600b-4d57-93b0-8a794ff2f068.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugBreakpoint2.AddFlags
+title: IDebugBreakpoint2::AddFlags method
+author: windows-driver-content
+description: The AddFlags method adds flags to a breakpoint.
+old-location: debugger\addflags.htm
+old-project: debugger
+ms.assetid: 92161111-5e02-4a97-9656-9a297e9ea1af
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: AddFlags method [Windows Debugging], IDebugBreakpoint2 interface, dbgeng/IDebugBreakpoint2::AddFlags, AddFlags, IDebugBreakpoint::AddFlags, IDebugBreakpoint2::AddFlags, IDebugBreakpoint2, AddFlags method [Windows Debugging], debugger.addflags, dbgeng/IDebugBreakpoint::AddFlags, AddFlags method [Windows Debugging], IDebugBreakpoint interface, IDebugBreakpoint2 interface [Windows Debugging], AddFlags method, IDebugBreakpoint interface [Windows Debugging], AddFlags method, ComOther_2becec27-600b-4d57-93b0-8a794ff2f068.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Dbgeng.h
+apiname:
+-	IDebugBreakpoint.AddFlags
+-	IDebugBreakpoint2.AddFlags
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

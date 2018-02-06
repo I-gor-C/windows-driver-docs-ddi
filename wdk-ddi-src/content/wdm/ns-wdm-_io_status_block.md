@@ -1,42 +1,47 @@
 ---
-UID : NS:wdm._IO_STATUS_BLOCK
-title : "_IO_STATUS_BLOCK"
-author : windows-driver-content
-description : A driver sets an IRP's I/O status block to indicate the final status of an I/O request, before calling IoCompleteRequest for the IRP.
-old-location : kernel\io_status_block.htm
-old-project : kernel
-ms.assetid : 1ce2b1d0-a8b2-4a05-8895-e13802690a7b
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : PIO_STATUS_BLOCK, IO_STATUS_BLOCK structure [Kernel-Mode Driver Architecture], kstruct_b_f0869bcd-fcf0-427a-9bda-fc925c0bf0f8.xml, *PIO_STATUS_BLOCK, IO_STATUS_BLOCK, PIO_STATUS_BLOCK structure pointer [Kernel-Mode Driver Architecture], wdm/IO_STATUS_BLOCK, wdm/PIO_STATUS_BLOCK, kernel.io_status_block, _IO_STATUS_BLOCK
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PIO_STATUS_BLOCK, IO_STATUS_BLOCK"
-req.product : Windows 10 or later.
+UID: NS:wdm._IO_STATUS_BLOCK
+title: "_IO_STATUS_BLOCK"
+author: windows-driver-content
+description: A driver sets an IRP's I/O status block to indicate the final status of an I/O request, before calling IoCompleteRequest for the IRP.
+old-location: kernel\io_status_block.htm
+old-project: kernel
+ms.assetid: 1ce2b1d0-a8b2-4a05-8895-e13802690a7b
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: PIO_STATUS_BLOCK, IO_STATUS_BLOCK structure [Kernel-Mode Driver Architecture], kstruct_b_f0869bcd-fcf0-427a-9bda-fc925c0bf0f8.xml, *PIO_STATUS_BLOCK, IO_STATUS_BLOCK, PIO_STATUS_BLOCK structure pointer [Kernel-Mode Driver Architecture], wdm/IO_STATUS_BLOCK, wdm/PIO_STATUS_BLOCK, kernel.io_status_block, _IO_STATUS_BLOCK
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	IO_STATUS_BLOCK
+product: Windows
+targetos: Windows
+req.typenames: "*PIO_STATUS_BLOCK, IO_STATUS_BLOCK"
+req.product: Windows 10 or later.
 ---
 
 # _IO_STATUS_BLOCK structure

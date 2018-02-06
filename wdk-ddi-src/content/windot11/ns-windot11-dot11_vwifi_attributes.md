@@ -1,42 +1,47 @@
 ---
-UID : NS:windot11.DOT11_VWIFI_ATTRIBUTES
-title : DOT11_VWIFI_ATTRIBUTES
-author : windows-driver-content
-description : Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
-old-location : netvista\dot11_vwifi_attributes.htm
-old-project : netvista
-ms.assetid : 46eee6ea-8259-4036-b1c4-f0eef6587879
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : PDOT11_VWIFI_ATTRIBUTES structure pointer [Network Drivers Starting with Windows Vista], *PDOT11_VWIFI_ATTRIBUTES, DOT11_VWIFI_ATTRIBUTES structure [Network Drivers Starting with Windows Vista], DOT11_VWIFI_ATTRIBUTES, windot11/DOT11_VWIFI_ATTRIBUTES, Native_802.11_data_types_fdecf787-d328-4546-a4fc-ac7205851ebf.xml, netvista.dot11_vwifi_attributes, PDOT11_VWIFI_ATTRIBUTES, windot11/PDOT11_VWIFI_ATTRIBUTES
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : windot11.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7 and later versions of the Windows operating   system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDOT11_VWIFI_ATTRIBUTES, DOT11_VWIFI_ATTRIBUTES"
-req.product : Windows 10 or later.
+UID: NS:windot11.DOT11_VWIFI_ATTRIBUTES
+title: DOT11_VWIFI_ATTRIBUTES
+author: windows-driver-content
+description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+old-location: netvista\dot11_vwifi_attributes.htm
+old-project: netvista
+ms.assetid: 46eee6ea-8259-4036-b1c4-f0eef6587879
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: PDOT11_VWIFI_ATTRIBUTES structure pointer [Network Drivers Starting with Windows Vista], *PDOT11_VWIFI_ATTRIBUTES, DOT11_VWIFI_ATTRIBUTES structure [Network Drivers Starting with Windows Vista], DOT11_VWIFI_ATTRIBUTES, windot11/DOT11_VWIFI_ATTRIBUTES, Native_802.11_data_types_fdecf787-d328-4546-a4fc-ac7205851ebf.xml, netvista.dot11_vwifi_attributes, PDOT11_VWIFI_ATTRIBUTES, windot11/PDOT11_VWIFI_ATTRIBUTES
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: windot11.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7 and later versions of the Windows operating   system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	windot11.h
+apiname:
+-	DOT11_VWIFI_ATTRIBUTES
+product: Windows
+targetos: Windows
+req.typenames: "*PDOT11_VWIFI_ATTRIBUTES, DOT11_VWIFI_ATTRIBUTES"
+req.product: Windows 10 or later.
 ---
 
 # DOT11_VWIFI_ATTRIBUTES structure

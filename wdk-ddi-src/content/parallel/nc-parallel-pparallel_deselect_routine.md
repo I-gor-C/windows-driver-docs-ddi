@@ -1,41 +1,46 @@
 ---
-UID : NC:parallel.PPARALLEL_DESELECT_ROUTINE
-title : PPARALLEL_DESELECT_ROUTINE
-author : windows-driver-content
-description : The PPARALLEL_DESELECT_ROUTINE-typed callback routine deselects either an IEEE 1284.3 daisy chain device or an IEEE 1284 end-of-chain device that is attached to a parallel port.
-old-location : parports\pparallel_deselect_routine.htm
-old-project : parports
-ms.assetid : 91182ed5-e444-41a7-b6fc-f14d0407f089
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : parports.pparallel_deselect_routine, (*PPARALLEL_DESELECT_ROUTINE) callback function [Parallel Ports], (*PPARALLEL_DESELECT_ROUTINE), parallel/(*PPARALLEL_DESELECT_ROUTINE), cisspd_e8bc6fa2-03e4-4845-bfd6-0ebaf573e1b2.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : parallel.h
-req.include-header : Parallel.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RILGBATOKEN, *LPRILGBATOKEN
+UID: NC:parallel.PPARALLEL_DESELECT_ROUTINE
+title: PPARALLEL_DESELECT_ROUTINE
+author: windows-driver-content
+description: The PPARALLEL_DESELECT_ROUTINE-typed callback routine deselects either an IEEE 1284.3 daisy chain device or an IEEE 1284 end-of-chain device that is attached to a parallel port.
+old-location: parports\pparallel_deselect_routine.htm
+old-project: parports
+ms.assetid: 91182ed5-e444-41a7-b6fc-f14d0407f089
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: parports.pparallel_deselect_routine, (*PPARALLEL_DESELECT_ROUTINE) callback function [Parallel Ports], (*PPARALLEL_DESELECT_ROUTINE), parallel/(*PPARALLEL_DESELECT_ROUTINE), cisspd_e8bc6fa2-03e4-4845-bfd6-0ebaf573e1b2.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: parallel.h
+req.include-header: Parallel.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	parallel.h
+apiname:
+-	(*PPARALLEL_DESELECT_ROUTINE)
+product: Windows
+targetos: Windows
+req.typenames: RILGBATOKEN, *LPRILGBATOKEN
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NS:wdfio._WDF_IO_QUEUE_CONFIG
-title : "_WDF_IO_QUEUE_CONFIG"
-author : windows-driver-content
-description : The WDF_IO_QUEUE_CONFIG structure contains configuration information for a framework queue object.
-old-location : wdf\wdf_io_queue_config.htm
-old-project : wdf
-ms.assetid : aa8b64a7-eae9-444c-892f-841ca5a610cf
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : DFQueueObjectRef_5fda62f6-b76d-4691-9354-e091af8a5567.xml, WDF_IO_QUEUE_CONFIG, kmdf.wdf_io_queue_config, wdfio/WDF_IO_QUEUE_CONFIG, PWDF_IO_QUEUE_CONFIG, WDF_IO_QUEUE_CONFIG structure, wdf.wdf_io_queue_config, wdfio/PWDF_IO_QUEUE_CONFIG, *PWDF_IO_QUEUE_CONFIG, PWDF_IO_QUEUE_CONFIG structure pointer, _WDF_IO_QUEUE_CONFIG
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdfio.h
-req.include-header : Wdf.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Any IRQL.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_IO_QUEUE_CONFIG, *PWDF_IO_QUEUE_CONFIG
-req.product : Windows 10 or later.
+UID: NS:wdfio._WDF_IO_QUEUE_CONFIG
+title: "_WDF_IO_QUEUE_CONFIG"
+author: windows-driver-content
+description: The WDF_IO_QUEUE_CONFIG structure contains configuration information for a framework queue object.
+old-location: wdf\wdf_io_queue_config.htm
+old-project: wdf
+ms.assetid: aa8b64a7-eae9-444c-892f-841ca5a610cf
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: DFQueueObjectRef_5fda62f6-b76d-4691-9354-e091af8a5567.xml, WDF_IO_QUEUE_CONFIG, kmdf.wdf_io_queue_config, wdfio/WDF_IO_QUEUE_CONFIG, PWDF_IO_QUEUE_CONFIG, WDF_IO_QUEUE_CONFIG structure, wdf.wdf_io_queue_config, wdfio/PWDF_IO_QUEUE_CONFIG, *PWDF_IO_QUEUE_CONFIG, PWDF_IO_QUEUE_CONFIG structure pointer, _WDF_IO_QUEUE_CONFIG
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdfio.h
+req.include-header: Wdf.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Any IRQL.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfio.h
+apiname:
+-	WDF_IO_QUEUE_CONFIG
+product: Windows
+targetos: Windows
+req.typenames: WDF_IO_QUEUE_CONFIG, *PWDF_IO_QUEUE_CONFIG
+req.product: Windows 10 or later.
 ---
 
 # _WDF_IO_QUEUE_CONFIG structure

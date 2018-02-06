@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisMCloseLog
-title : NdisMCloseLog function
-author : windows-driver-content
-description : NdisMCloseLog releases resources that were used for logging.
-old-location : netvista\ndismcloselog.htm
-old-project : netvista
-ms.assetid : a4b2bf1a-f15d-409f-bd5f-84dbf8dadc09
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : miniport_logging_ref_ad3e4ea9-60c4-46b7-ac68-84517df279e0.xml, ndis/NdisMCloseLog, netvista.ndismcloselog, NdisMCloseLog, NdisMCloseLog function [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisMCloseLog (NDIS 5.1)) in Windows   Vista. Supported for NDIS 5.1 drivers (see    NdisMCloseLog (NDIS 5.1)) in Windows   XP.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisMCloseLog
+title: NdisMCloseLog function
+author: windows-driver-content
+description: NdisMCloseLog releases resources that were used for logging.
+old-location: netvista\ndismcloselog.htm
+old-project: netvista
+ms.assetid: a4b2bf1a-f15d-409f-bd5f-84dbf8dadc09
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: miniport_logging_ref_ad3e4ea9-60c4-46b7-ac68-84517df279e0.xml, ndis/NdisMCloseLog, netvista.ndismcloselog, NdisMCloseLog, NdisMCloseLog function [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisMCloseLog (NDIS 5.1)) in Windows   Vista. Supported for NDIS 5.1 drivers (see    NdisMCloseLog (NDIS 5.1)) in Windows   XP.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisMCloseLog
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

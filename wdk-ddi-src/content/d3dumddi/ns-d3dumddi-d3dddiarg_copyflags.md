@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi.D3DDDIARG_COPYFLAGS
-title : D3DDDIARG_COPYFLAGS
-author : windows-driver-content
-description : Describes how to handle the existing contents of a resource during a copy or update operation of a region within that resource. Used by Windows Display Driver Model (WDDM) 1.3 and later user-mode display drivers.
-old-location : display\d3dddiarg_copyflags.htm
-old-project : display
-ms.assetid : DA114D60-60EE-4D1D-B42C-A84CE54C8B95
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.d3dddiarg_copyflags, D3DDDIARG_COPYFLAGS, d3dumddi/D3DDDIARG_COPYFLAGS, D3DDDIARG_COPYFLAGS structure [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8.1
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDIARG_COPYFLAGS
+UID: NS:d3dumddi.D3DDDIARG_COPYFLAGS
+title: D3DDDIARG_COPYFLAGS
+author: windows-driver-content
+description: Describes how to handle the existing contents of a resource during a copy or update operation of a region within that resource. Used by Windows Display Driver Model (WDDM) 1.3 and later user-mode display drivers.
+old-location: display\d3dddiarg_copyflags.htm
+old-project: display
+ms.assetid: DA114D60-60EE-4D1D-B42C-A84CE54C8B95
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.d3dddiarg_copyflags, D3DDDIARG_COPYFLAGS, d3dumddi/D3DDDIARG_COPYFLAGS, D3DDDIARG_COPYFLAGS structure [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8.1
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	D3dumddi.h
+apiname:
+-	D3DDDIARG_COPYFLAGS
+product: Windows
+targetos: Windows
+req.typenames: D3DDDIARG_COPYFLAGS
 ---
 
 # D3DDDIARG_COPYFLAGS structure

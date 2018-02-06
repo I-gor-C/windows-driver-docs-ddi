@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.PoSetSystemWake
-title : PoSetSystemWake function
-author : windows-driver-content
-description : The PoSetSystemWake routine marks the specified IRP as one that contributed to waking the system from a sleep state.
-old-location : kernel\posetsystemwake.htm
-old-project : kernel
-ms.assetid : e79ed9a1-b271-4c0a-a82f-9fecab930569
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : PoSetSystemWake, PoSetSystemWake routine [Kernel-Mode Driver Architecture], kernel.posetsystemwake, wdm/PoSetSystemWake, portn_09bfa419-5a6c-4305-87ee-58a0e032d0c4.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.PoSetSystemWake
+title: PoSetSystemWake function
+author: windows-driver-content
+description: The PoSetSystemWake routine marks the specified IRP as one that contributed to waking the system from a sleep state.
+old-location: kernel\posetsystemwake.htm
+old-project: kernel
+ms.assetid: e79ed9a1-b271-4c0a-a82f-9fecab930569
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: PoSetSystemWake, PoSetSystemWake routine [Kernel-Mode Driver Architecture], kernel.posetsystemwake, wdm/PoSetSystemWake, portn_09bfa419-5a6c-4305-87ee-58a0e032d0c4.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	PoSetSystemWake
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

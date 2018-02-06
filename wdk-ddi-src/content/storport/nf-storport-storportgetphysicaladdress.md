@@ -1,42 +1,48 @@
 ---
-UID : NF:storport.StorPortGetPhysicalAddress
-title : StorPortGetPhysicalAddress function
-author : windows-driver-content
-description : The StorPortGetPhysicalAddress routine converts a given virtual address range to a physical address range for a DMA operation.
-old-location : storage\storportgetphysicaladdress.htm
-old-project : storage
-ms.assetid : 2b39a6e4-2e11-4b4e-9218-92336629ae80
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.storportgetphysicaladdress, StorPortGetPhysicalAddress routine [Storage Devices], StorPortGetPhysicalAddress, storport/StorPortGetPhysicalAddress, storprt_fea6d754-844c-4ee9-8153-97f2f0e9ee80.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Storport.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STOR_SPINLOCK
-req.product : Windows 10 or later.
+UID: NF:storport.StorPortGetPhysicalAddress
+title: StorPortGetPhysicalAddress function
+author: windows-driver-content
+description: The StorPortGetPhysicalAddress routine converts a given virtual address range to a physical address range for a DMA operation.
+old-location: storage\storportgetphysicaladdress.htm
+old-project: storage
+ms.assetid: 2b39a6e4-2e11-4b4e-9218-92336629ae80
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.storportgetphysicaladdress, StorPortGetPhysicalAddress routine [Storage Devices], StorPortGetPhysicalAddress, storport/StorPortGetPhysicalAddress, storprt_fea6d754-844c-4ee9-8153-97f2f0e9ee80.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Storport.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Storport.lib
+-	Storport.dll
+apiname:
+-	StorPortGetPhysicalAddress
+product: Windows
+targetos: Windows
+req.typenames: STOR_SPINLOCK
+req.product: Windows 10 or later.
 ---
 
 

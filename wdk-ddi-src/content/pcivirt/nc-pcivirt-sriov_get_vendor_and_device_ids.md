@@ -1,41 +1,46 @@
 ---
-UID : NC:pcivirt.SRIOV_GET_VENDOR_AND_DEVICE_IDS
-title : SRIOV_GET_VENDOR_AND_DEVICE_IDS
-author : windows-driver-content
-description : Supplies the Vendor and Device ID for a PCI Express SR-IOV Virtual Function (VF) to be used for generating a more generic Plug and Play ID for the VF. These IDs cannot be read directly from the VF’s configuration space.
-old-location : pci\sriov_get_vendor_and_device_ids.htm
-old-project : PCI
-ms.assetid : d08bbaea-6f2b-49ef-bb8b-c1fe357e1c90
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : PCI.sriov_get_vendor_and_device_ids, SriovGetVendorAndDeviceIds callback function [Buses], SriovGetVendorAndDeviceIds, SRIOV_GET_VENDOR_AND_DEVICE_IDS, SRIOV_GET_VENDOR_AND_DEVICE_IDS, pcivirt/SriovGetVendorAndDeviceIds, *PSRIOV_GET_VENDOR_AND_DEVICE_IDS callback function pointer [Buses], *PSRIOV_GET_VENDOR_AND_DEVICE_IDS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : pcivirt.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PARCLASS_INFORMATION, *PPARCLASS_INFORMATION
+UID: NC:pcivirt.SRIOV_GET_VENDOR_AND_DEVICE_IDS
+title: SRIOV_GET_VENDOR_AND_DEVICE_IDS
+author: windows-driver-content
+description: Supplies the Vendor and Device ID for a PCI Express SR-IOV Virtual Function (VF) to be used for generating a more generic Plug and Play ID for the VF. These IDs cannot be read directly from the VF’s configuration space.
+old-location: pci\sriov_get_vendor_and_device_ids.htm
+old-project: PCI
+ms.assetid: d08bbaea-6f2b-49ef-bb8b-c1fe357e1c90
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: PCI.sriov_get_vendor_and_device_ids, SriovGetVendorAndDeviceIds callback function [Buses], SriovGetVendorAndDeviceIds, SRIOV_GET_VENDOR_AND_DEVICE_IDS, SRIOV_GET_VENDOR_AND_DEVICE_IDS, pcivirt/SriovGetVendorAndDeviceIds, *PSRIOV_GET_VENDOR_AND_DEVICE_IDS callback function pointer [Buses], *PSRIOV_GET_VENDOR_AND_DEVICE_IDS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: pcivirt.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Pcivirt.h
+apiname:
+-	*PSRIOV_GET_VENDOR_AND_DEVICE_IDS
+product: Windows
+targetos: Windows
+req.typenames: PARCLASS_INFORMATION, *PPARCLASS_INFORMATION
 ---
 
 

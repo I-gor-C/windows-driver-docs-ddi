@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IPnpCallbackSelfManagedIo.OnSelfManagedIoSuspend
-title : IPnpCallbackSelfManagedIo::OnSelfManagedIoSuspend method
-author : windows-driver-content
-description : The OnSelfManagedIoSuspend method suspends a device's self-managed I/O operations.
-old-location : wdf\ipnpcallbackselfmanagedio_onselfmanagediosuspend.htm
-old-project : wdf
-ms.assetid : 7ec30c51-5e07-496b-96af-8eafb564d98d
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.ipnpcallbackselfmanagedio_onselfmanagediosuspend, OnSelfManagedIoSuspend, IPnpCallbackSelfManagedIo::OnSelfManagedIoSuspend, IPnpCallbackSelfManagedIo interface, OnSelfManagedIoSuspend method, OnSelfManagedIoSuspend method, IPnpCallbackSelfManagedIo interface, UMDFDeviceObjectRef_87fc0596-4d08-4c55-88b0-e2ad9d085745.xml, OnSelfManagedIoSuspend method, wudfddi/IPnpCallbackSelfManagedIo::OnSelfManagedIoSuspend, umdf.ipnpcallbackselfmanagedio_onselfmanagediosuspend, IPnpCallbackSelfManagedIo
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IPnpCallbackSelfManagedIo.OnSelfManagedIoSuspend
+title: IPnpCallbackSelfManagedIo::OnSelfManagedIoSuspend method
+author: windows-driver-content
+description: The OnSelfManagedIoSuspend method suspends a device's self-managed I/O operations.
+old-location: wdf\ipnpcallbackselfmanagedio_onselfmanagediosuspend.htm
+old-project: wdf
+ms.assetid: 7ec30c51-5e07-496b-96af-8eafb564d98d
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.ipnpcallbackselfmanagedio_onselfmanagediosuspend, OnSelfManagedIoSuspend, IPnpCallbackSelfManagedIo::OnSelfManagedIoSuspend, IPnpCallbackSelfManagedIo interface, OnSelfManagedIoSuspend method, OnSelfManagedIoSuspend method, IPnpCallbackSelfManagedIo interface, UMDFDeviceObjectRef_87fc0596-4d08-4c55-88b0-e2ad9d085745.xml, OnSelfManagedIoSuspend method, wudfddi/IPnpCallbackSelfManagedIo::OnSelfManagedIoSuspend, umdf.ipnpcallbackselfmanagedio_onselfmanagediosuspend, IPnpCallbackSelfManagedIo
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Wudfddi.h
+apiname:
+-	IPnpCallbackSelfManagedIo.OnSelfManagedIoSuspend
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

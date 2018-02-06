@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddk._WHEA_REVISION
-title : "_WHEA_REVISION"
-author : windows-driver-content
-description : The WHEA_REVISION union describes the revision of the error record data structures.
-old-location : whea\whea_revision.htm
-old-project : whea
-ms.assetid : 4258f223-353a-4b6e-a93c-5742e5c1668b
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : ntddk/PWHEA_REVISION, ntddk/WHEA_REVISION, WHEA_REVISION union [WHEA Drivers and Applications], whea.whea_revision, PWHEA_REVISION union pointer [WHEA Drivers and Applications], *PWHEA_REVISION, PWHEA_REVISION, whearef_0572aecb-765a-4118-8df0-7b34922e79d9.xml, _WHEA_REVISION, WHEA_REVISION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWHEA_REVISION, WHEA_REVISION"
+UID: NS:ntddk._WHEA_REVISION
+title: "_WHEA_REVISION"
+author: windows-driver-content
+description: The WHEA_REVISION union describes the revision of the error record data structures.
+old-location: whea\whea_revision.htm
+old-project: whea
+ms.assetid: 4258f223-353a-4b6e-a93c-5742e5c1668b
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: ntddk/PWHEA_REVISION, ntddk/WHEA_REVISION, WHEA_REVISION union [WHEA Drivers and Applications], whea.whea_revision, PWHEA_REVISION union pointer [WHEA Drivers and Applications], *PWHEA_REVISION, PWHEA_REVISION, whearef_0572aecb-765a-4118-8df0-7b34922e79d9.xml, _WHEA_REVISION, WHEA_REVISION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddk.h
+apiname:
+-	WHEA_REVISION
+product: Windows
+targetos: Windows
+req.typenames: "*PWHEA_REVISION, WHEA_REVISION"
 ---
 
 # _WHEA_REVISION structure

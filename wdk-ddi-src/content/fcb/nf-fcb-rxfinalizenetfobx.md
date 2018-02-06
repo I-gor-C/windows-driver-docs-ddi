@@ -1,41 +1,46 @@
 ---
-UID : NF:fcb.RxFinalizeNetFobx
-title : RxFinalizeNetFobx function
-author : windows-driver-content
-description : RxFinalizeNetFOBX finalizes the given FOBX structure. The caller must have an exclusive lock on the FCB associated with FOBX structure.
-old-location : ifsk\rxfinalizenetfobx.htm
-old-project : ifsk
-ms.assetid : 052e7995-fab8-4863-a3a2-8b9bd6f21ec9
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : fcb/RxFinalizeNetFobx, RxFinalizeNetFobx function [Installable File System Drivers], rxref_72a759e2-f9e6-44ce-b561-cb968b668a6f.xml, RxFinalizeNetFobx, ifsk.rxfinalizenetfobx
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fcb.h
-req.include-header : Mrxfcb.h, Fcb.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FA_ENTRY, *PFA_ENTRY
+UID: NF:fcb.RxFinalizeNetFobx
+title: RxFinalizeNetFobx function
+author: windows-driver-content
+description: RxFinalizeNetFOBX finalizes the given FOBX structure. The caller must have an exclusive lock on the FCB associated with FOBX structure.
+old-location: ifsk\rxfinalizenetfobx.htm
+old-project: ifsk
+ms.assetid: 052e7995-fab8-4863-a3a2-8b9bd6f21ec9
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: fcb/RxFinalizeNetFobx, RxFinalizeNetFobx function [Installable File System Drivers], rxref_72a759e2-f9e6-44ce-b561-cb968b668a6f.xml, RxFinalizeNetFobx, ifsk.rxfinalizenetfobx
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fcb.h
+req.include-header: Mrxfcb.h, Fcb.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	fcb.h
+apiname:
+-	RxFinalizeNetFobx
+product: Windows
+targetos: Windows
+req.typenames: FA_ENTRY, *PFA_ENTRY
 ---
 
 

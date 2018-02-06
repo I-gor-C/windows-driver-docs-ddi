@@ -1,42 +1,48 @@
 ---
-UID : NF:wdm.ZwSetInformationTransaction
-title : ZwSetInformationTransaction function
-author : windows-driver-content
-description : The ZwSetInformationTransaction routine sets information for a specified transaction.
-old-location : kernel\zwsetinformationtransaction.htm
-old-project : kernel
-ms.assetid : 47e729d8-241e-47f0-a595-d95c5ac516a4
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.zwsetinformationtransaction, ZwSetInformationTransaction, wdm/ZwSetInformationTransaction, wdm/NtSetInformationTransaction, ktm_ref_575490bd-1003-43b3-8e41-676c4b0e4f25.xml, NtSetInformationTransaction, ZwSetInformationTransaction routine [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later operating system versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ZwSetInformationTransaction
+title: ZwSetInformationTransaction function
+author: windows-driver-content
+description: The ZwSetInformationTransaction routine sets information for a specified transaction.
+old-location: kernel\zwsetinformationtransaction.htm
+old-project: kernel
+ms.assetid: 47e729d8-241e-47f0-a595-d95c5ac516a4
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.zwsetinformationtransaction, ZwSetInformationTransaction, wdm/ZwSetInformationTransaction, wdm/NtSetInformationTransaction, ktm_ref_575490bd-1003-43b3-8e41-676c4b0e4f25.xml, NtSetInformationTransaction, ZwSetInformationTransaction routine [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later operating system versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ZwSetInformationTransaction
+-	NtSetInformationTransaction
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

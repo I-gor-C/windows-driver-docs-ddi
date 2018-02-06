@@ -1,42 +1,47 @@
 ---
-UID : NS:wdbgexts._DEBUG_TYPED_DATA
-title : "_DEBUG_TYPED_DATA"
-author : windows-driver-content
-description : The DEBUG_TYPED_DATA structure describes typed data in the memory of the target.
-old-location : debugger\debug_typed_data.htm
-old-project : debugger
-ms.assetid : 3173e69e-a6e5-4459-a57e-94cf7b10ef32
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : DEBUG_TYPED_DATA, *PDEBUG_TYPED_DATA, PDEBUG_TYPED_DATA structure pointer [Windows Debugging], PDEBUG_TYPED_DATA, Structures_6e8e758c-2c5d-4590-8908-3e1734ea2c7d.xml, _DEBUG_TYPED_DATA, wdbgexts/DEBUG_TYPED_DATA, debugger.debug_typed_data, wdbgexts/PDEBUG_TYPED_DATA, DEBUG_TYPED_DATA structure [Windows Debugging]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdbgexts.h
-req.include-header : WdbgExts.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DEBUG_TYPED_DATA, *PDEBUG_TYPED_DATA
-req.product : Windows 10 or later.
+UID: NS:wdbgexts._DEBUG_TYPED_DATA
+title: "_DEBUG_TYPED_DATA"
+author: windows-driver-content
+description: The DEBUG_TYPED_DATA structure describes typed data in the memory of the target.
+old-location: debugger\debug_typed_data.htm
+old-project: debugger
+ms.assetid: 3173e69e-a6e5-4459-a57e-94cf7b10ef32
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: DEBUG_TYPED_DATA, *PDEBUG_TYPED_DATA, PDEBUG_TYPED_DATA structure pointer [Windows Debugging], PDEBUG_TYPED_DATA, Structures_6e8e758c-2c5d-4590-8908-3e1734ea2c7d.xml, _DEBUG_TYPED_DATA, wdbgexts/DEBUG_TYPED_DATA, debugger.debug_typed_data, wdbgexts/PDEBUG_TYPED_DATA, DEBUG_TYPED_DATA structure [Windows Debugging]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdbgexts.h
+req.include-header: WdbgExts.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	WdbgExts.h
+apiname:
+-	DEBUG_TYPED_DATA
+product: Windows
+targetos: Windows
+req.typenames: DEBUG_TYPED_DATA, *PDEBUG_TYPED_DATA
+req.product: Windows 10 or later.
 ---
 
 # _DEBUG_TYPED_DATA structure

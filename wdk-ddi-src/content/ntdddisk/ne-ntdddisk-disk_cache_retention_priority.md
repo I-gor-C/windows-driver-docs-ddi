@@ -1,41 +1,46 @@
 ---
-UID : NE:ntdddisk.DISK_CACHE_RETENTION_PRIORITY
-title : DISK_CACHE_RETENTION_PRIORITY
-author : windows-driver-content
-description : The DISK_CACHE_RETENTION_PRIORITY enumeration is used in conjunction with the IOCTL_DISK_GET_CACHE_INFORMATION request and the structure DISK_CACHE_INFORMATION to indicate which kinds data are to be held in the cache on a preferential basis.
-old-location : storage\disk_cache_retention_priority.htm
-old-project : storage
-ms.assetid : 238d0b22-bd35-4e8d-9bb5-283af2bbb75b
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : KeepReadData, structs-disk_19939b68-659e-4546-8419-7e1e141b8291.xml, DISK_CACHE_RETENTION_PRIORITY, DISK_CACHE_RETENTION_PRIORITY enumeration [Storage Devices], ntdddisk/EqualPriority, KeepPrefetchedData, EqualPriority, ntdddisk/KeepReadData, ntdddisk/KeepPrefetchedData, ntdddisk/DISK_CACHE_RETENTION_PRIORITY, storage.disk_cache_retention_priority
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : ntdddisk.h
-req.include-header : Ntdddisk.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DISK_CACHE_RETENTION_PRIORITY
+UID: NE:ntdddisk.DISK_CACHE_RETENTION_PRIORITY
+title: DISK_CACHE_RETENTION_PRIORITY
+author: windows-driver-content
+description: The DISK_CACHE_RETENTION_PRIORITY enumeration is used in conjunction with the IOCTL_DISK_GET_CACHE_INFORMATION request and the structure DISK_CACHE_INFORMATION to indicate which kinds data are to be held in the cache on a preferential basis.
+old-location: storage\disk_cache_retention_priority.htm
+old-project: storage
+ms.assetid: 238d0b22-bd35-4e8d-9bb5-283af2bbb75b
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: KeepReadData, structs-disk_19939b68-659e-4546-8419-7e1e141b8291.xml, DISK_CACHE_RETENTION_PRIORITY, DISK_CACHE_RETENTION_PRIORITY enumeration [Storage Devices], ntdddisk/EqualPriority, KeepPrefetchedData, EqualPriority, ntdddisk/KeepReadData, ntdddisk/KeepPrefetchedData, ntdddisk/DISK_CACHE_RETENTION_PRIORITY, storage.disk_cache_retention_priority
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: ntdddisk.h
+req.include-header: Ntdddisk.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntdddisk.h
+apiname:
+-	DISK_CACHE_RETENTION_PRIORITY
+product: Windows
+targetos: Windows
+req.typenames: DISK_CACHE_RETENTION_PRIORITY
 ---
 
 # DISK_CACHE_RETENTION_PRIORITY Enumeration
@@ -53,21 +58,21 @@ typedef enum  {
 ## Constants
 
 <table>
-
-<tr>
-<td>EqualPriority</td>
-<td>Indicates that no data is held in the cache on a preferential basis. All types of data have equal access to cache memory.</td>
-</tr>
-
-<tr>
-<td>KeepPrefetchedData</td>
-<td>Indicates that a preference is to be given to prefetched data.</td>
-</tr>
-
-<tr>
-<td>KeepReadData</td>
-<td>Indicates that a preference is to be given to data cached from a READ operation.</td>
-</tr>
+            
+                <tr>
+                    <td>EqualPriority</td>
+                    <td>Indicates that no data is held in the cache on a preferential basis. All types of data have equal access to cache memory.</td>
+                </tr>
+            
+                <tr>
+                    <td>KeepPrefetchedData</td>
+                    <td>Indicates that a preference is to be given to prefetched data.</td>
+                </tr>
+            
+                <tr>
+                    <td>KeepReadData</td>
+                    <td>Indicates that a preference is to be given to data cached from a READ operation.</td>
+                </tr>
 </table>
 
 
@@ -76,9 +81,9 @@ typedef enum  {
 | ---- |:---- |
 | **Header** | ntdddisk.h (include Ntdddisk.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\ntdddisk\ni-ntdddisk-ioctl_disk_get_cache_information.md">IOCTL_DISK_GET_CACHE_INFORMATION</a>
+        <a href="..\ntdddisk\ni-ntdddisk-ioctl_disk_get_cache_information.md">IOCTL_DISK_GET_CACHE_INFORMATION</a>
 
 <a href="..\ntdddisk\ns-ntdddisk-_disk_cache_information.md">DISK_CACHE_INFORMATION</a>
 

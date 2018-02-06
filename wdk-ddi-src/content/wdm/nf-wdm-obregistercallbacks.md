@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.ObRegisterCallbacks
-title : ObRegisterCallbacks function
-author : windows-driver-content
-description : The ObRegisterCallbacks routine registers a list of callback routines for thread, process, and desktop handle operations.
-old-location : kernel\obregistercallbacks.htm
-old-project : kernel
-ms.assetid : 93593979-fe5f-48de-9c98-92acd43ec750
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/ObRegisterCallbacks, k107_e5976812-0590-42f5-836c-85f9d262f19f.xml, kernel.obregistercallbacks, ObRegisterCallbacks routine [Kernel-Mode Driver Architecture], ObRegisterCallbacks
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows Vista with Service Pack 1 (SP1) and Windows Server 2008.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ObRegisterCallbacks
+title: ObRegisterCallbacks function
+author: windows-driver-content
+description: The ObRegisterCallbacks routine registers a list of callback routines for thread, process, and desktop handle operations.
+old-location: kernel\obregistercallbacks.htm
+old-project: kernel
+ms.assetid: 93593979-fe5f-48de-9c98-92acd43ec750
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/ObRegisterCallbacks, k107_e5976812-0590-42f5-836c-85f9d262f19f.xml, kernel.obregistercallbacks, ObRegisterCallbacks routine [Kernel-Mode Driver Architecture], ObRegisterCallbacks
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows Vista with Service Pack 1 (SP1) and Windows Server 2008.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ObRegisterCallbacks
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

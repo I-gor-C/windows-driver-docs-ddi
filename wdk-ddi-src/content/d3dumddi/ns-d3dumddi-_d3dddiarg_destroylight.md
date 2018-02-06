@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._D3DDDIARG_DESTROYLIGHT
-title : "_D3DDDIARG_DESTROYLIGHT"
-author : windows-driver-content
-description : The D3DDDIARG_DESTROYLIGHT structure contains the index into a light array for the light to destroy.
-old-location : display\d3dddiarg_destroylight.htm
-old-project : display
-ms.assetid : d019a940-5735-4b35-af99-3aac3dc4270b
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.d3dddiarg_destroylight, d3dumddi/D3DDDIARG_DESTROYLIGHT, D3DDDIARG_DESTROYLIGHT structure [Display Devices], UMDisplayDriver_param_Structs_497b7bc8-b2ca-4ead-9c3e-365673b2058f.xml, D3DDDIARG_DESTROYLIGHT, _D3DDDIARG_DESTROYLIGHT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDIARG_DESTROYLIGHT
+UID: NS:d3dumddi._D3DDDIARG_DESTROYLIGHT
+title: "_D3DDDIARG_DESTROYLIGHT"
+author: windows-driver-content
+description: The D3DDDIARG_DESTROYLIGHT structure contains the index into a light array for the light to destroy.
+old-location: display\d3dddiarg_destroylight.htm
+old-project: display
+ms.assetid: d019a940-5735-4b35-af99-3aac3dc4270b
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.d3dddiarg_destroylight, d3dumddi/D3DDDIARG_DESTROYLIGHT, D3DDDIARG_DESTROYLIGHT structure [Display Devices], UMDisplayDriver_param_Structs_497b7bc8-b2ca-4ead-9c3e-365673b2058f.xml, D3DDDIARG_DESTROYLIGHT, _D3DDDIARG_DESTROYLIGHT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	D3DDDIARG_DESTROYLIGHT
+product: Windows
+targetos: Windows
+req.typenames: D3DDDIARG_DESTROYLIGHT
 ---
 
 # _D3DDDIARG_DESTROYLIGHT structure

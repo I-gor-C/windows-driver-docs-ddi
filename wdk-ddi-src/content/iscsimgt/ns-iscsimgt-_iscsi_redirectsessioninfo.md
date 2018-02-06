@@ -1,41 +1,46 @@
 ---
-UID : NS:iscsimgt._ISCSI_RedirectSessionInfo
-title : "_ISCSI_RedirectSessionInfo"
-author : windows-driver-content
-description : This ISCSI_RedirectSessionInfo structure contains information about an iSCSI session and its portal information resulted from iSCSI target redirection.
-old-location : storage\iscsi_redirectsessioninfo.htm
-old-project : storage
-ms.assetid : e3980ac7-b539-4a8f-9869-14d418ebe1e7
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : iscsimgt/PISCSI_RedirectSessionInfo, storage.iscsi_redirectsessioninfo, PISCSI_RedirectSessionInfo structure pointer [Storage Devices], PISCSI_RedirectSessionInfo, *PISCSI_RedirectSessionInfo, structs-iSCSI_41ab8376-0e0e-40af-8cab-1be2f63edeed.xml, iscsimgt/ISCSI_RedirectSessionInfo, ISCSI_RedirectSessionInfo, _ISCSI_RedirectSessionInfo, ISCSI_RedirectSessionInfo structure [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : iscsimgt.h
-req.include-header : Iscsimgt.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : ISCSI_RedirectSessionInfo, *PISCSI_RedirectSessionInfo
+UID: NS:iscsimgt._ISCSI_RedirectSessionInfo
+title: "_ISCSI_RedirectSessionInfo"
+author: windows-driver-content
+description: This ISCSI_RedirectSessionInfo structure contains information about an iSCSI session and its portal information resulted from iSCSI target redirection.
+old-location: storage\iscsi_redirectsessioninfo.htm
+old-project: storage
+ms.assetid: e3980ac7-b539-4a8f-9869-14d418ebe1e7
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: iscsimgt/PISCSI_RedirectSessionInfo, storage.iscsi_redirectsessioninfo, PISCSI_RedirectSessionInfo structure pointer [Storage Devices], PISCSI_RedirectSessionInfo, *PISCSI_RedirectSessionInfo, structs-iSCSI_41ab8376-0e0e-40af-8cab-1be2f63edeed.xml, iscsimgt/ISCSI_RedirectSessionInfo, ISCSI_RedirectSessionInfo, _ISCSI_RedirectSessionInfo, ISCSI_RedirectSessionInfo structure [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: iscsimgt.h
+req.include-header: Iscsimgt.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	iscsimgt.h
+apiname:
+-	ISCSI_RedirectSessionInfo
+product: Windows
+targetos: Windows
+req.typenames: ISCSI_RedirectSessionInfo, *PISCSI_RedirectSessionInfo
 ---
 
 # _ISCSI_RedirectSessionInfo structure

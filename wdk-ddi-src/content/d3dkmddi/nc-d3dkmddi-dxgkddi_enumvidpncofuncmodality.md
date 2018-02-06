@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dkmddi.DXGKDDI_ENUMVIDPNCOFUNCMODALITY
-title : DXGKDDI_ENUMVIDPNCOFUNCMODALITY
-author : windows-driver-content
-description : The DxgkDdiEnumVidPnCofuncModality function makes the source and target modes sets of a VidPN cofunctional with the VidPN's topology and the modes that have already been pinned.
-old-location : display\dxgkddienumvidpncofuncmodality.htm
-old-project : display
-ms.assetid : 6dda82bd-1a43-4ffe-b398-a9f8cee6d1c1
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkddienumvidpncofuncmodality, DxgkDdiEnumVidPnCofuncModality callback function [Display Devices], DxgkDdiEnumVidPnCofuncModality, DXGKDDI_ENUMVIDPNCOFUNCMODALITY, DXGKDDI_ENUMVIDPNCOFUNCMODALITY, d3dkmddi/DxgkDdiEnumVidPnCofuncModality, DmFunctions_e8c49ebf-a4af-4a36-a32b-0ab6874e660a.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dkmddi.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
+UID: NC:d3dkmddi.DXGKDDI_ENUMVIDPNCOFUNCMODALITY
+title: DXGKDDI_ENUMVIDPNCOFUNCMODALITY
+author: windows-driver-content
+description: The DxgkDdiEnumVidPnCofuncModality function makes the source and target modes sets of a VidPN cofunctional with the VidPN's topology and the modes that have already been pinned.
+old-location: display\dxgkddienumvidpncofuncmodality.htm
+old-project: display
+ms.assetid: 6dda82bd-1a43-4ffe-b398-a9f8cee6d1c1
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkddienumvidpncofuncmodality, DxgkDdiEnumVidPnCofuncModality callback function [Display Devices], DxgkDdiEnumVidPnCofuncModality, DXGKDDI_ENUMVIDPNCOFUNCMODALITY, DXGKDDI_ENUMVIDPNCOFUNCMODALITY, d3dkmddi/DxgkDdiEnumVidPnCofuncModality, DmFunctions_e8c49ebf-a4af-4a36-a32b-0ab6874e660a.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dkmddi.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DxgkDdiEnumVidPnCofuncModality
+product: Windows
+targetos: Windows
+req.typenames: DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
 

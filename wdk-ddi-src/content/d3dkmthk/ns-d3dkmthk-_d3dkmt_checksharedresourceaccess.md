@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmthk._D3DKMT_CHECKSHAREDRESOURCEACCESS
-title : "_D3DKMT_CHECKSHAREDRESOURCEACCESS"
-author : windows-driver-content
-description : The D3DKMT_CHECKSHAREDRESOURCEACCESS structure describes parameters that the D3DKMTCheckSharedResourceAccess function uses to determine if a process can access a shared resource.
-old-location : display\d3dkmt_checksharedresourceaccess.htm
-old-project : display
-ms.assetid : 1749127f-c5fc-4e69-a2dd-00540e1c4c9a
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DKMT_CHECKSHAREDRESOURCEACCESS, d3dkmthk/D3DKMT_CHECKSHAREDRESOURCEACCESS, _D3DKMT_CHECKSHAREDRESOURCEACCESS, D3DKMT_CHECKSHAREDRESOURCEACCESS structure [Display Devices], OpenGL_Structs_5d797cef-2ace-482b-a7b2-82b26a2c7504.xml, display.d3dkmt_checksharedresourceaccess
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Windows
-req.target-min-winverclnt : D3DKMT_CHECKSHAREDRESOURCEACCESS is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_CHECKSHAREDRESOURCEACCESS
+UID: NS:d3dkmthk._D3DKMT_CHECKSHAREDRESOURCEACCESS
+title: "_D3DKMT_CHECKSHAREDRESOURCEACCESS"
+author: windows-driver-content
+description: The D3DKMT_CHECKSHAREDRESOURCEACCESS structure describes parameters that the D3DKMTCheckSharedResourceAccess function uses to determine if a process can access a shared resource.
+old-location: display\d3dkmt_checksharedresourceaccess.htm
+old-project: display
+ms.assetid: 1749127f-c5fc-4e69-a2dd-00540e1c4c9a
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DKMT_CHECKSHAREDRESOURCEACCESS, d3dkmthk/D3DKMT_CHECKSHAREDRESOURCEACCESS, _D3DKMT_CHECKSHAREDRESOURCEACCESS, D3DKMT_CHECKSHAREDRESOURCEACCESS structure [Display Devices], OpenGL_Structs_5d797cef-2ace-482b-a7b2-82b26a2c7504.xml, display.d3dkmt_checksharedresourceaccess
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Windows
+req.target-min-winverclnt: D3DKMT_CHECKSHAREDRESOURCEACCESS is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmthk.h
+apiname:
+-	D3DKMT_CHECKSHAREDRESOURCEACCESS
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_CHECKSHAREDRESOURCEACCESS
 ---
 
 # _D3DKMT_CHECKSHAREDRESOURCEACCESS structure

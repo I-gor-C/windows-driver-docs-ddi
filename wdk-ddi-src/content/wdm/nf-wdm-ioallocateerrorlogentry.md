@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.IoAllocateErrorLogEntry
-title : IoAllocateErrorLogEntry function
-author : windows-driver-content
-description : The IoAllocateErrorLogEntry routine allocates an error log entry, and returns a pointer to the packet that the caller uses to supply information about an I/O error.
-old-location : kernel\ioallocateerrorlogentry.htm
-old-project : kernel
-ms.assetid : 07fc3ae1-325a-4e50-a83d-9e70a8d63aaa
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.ioallocateerrorlogentry, k104_e3257473-eeae-4912-b3e1-8dd5ceb7430e.xml, IoAllocateErrorLogEntry routine [Kernel-Mode Driver Architecture], wdm/IoAllocateErrorLogEntry, IoAllocateErrorLogEntry
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 2000 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.IoAllocateErrorLogEntry
+title: IoAllocateErrorLogEntry function
+author: windows-driver-content
+description: The IoAllocateErrorLogEntry routine allocates an error log entry, and returns a pointer to the packet that the caller uses to supply information about an I/O error.
+old-location: kernel\ioallocateerrorlogentry.htm
+old-project: kernel
+ms.assetid: 07fc3ae1-325a-4e50-a83d-9e70a8d63aaa
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.ioallocateerrorlogentry, k104_e3257473-eeae-4912-b3e1-8dd5ceb7430e.xml, IoAllocateErrorLogEntry routine [Kernel-Mode Driver Architecture], wdm/IoAllocateErrorLogEntry, IoAllocateErrorLogEntry
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 2000 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoAllocateErrorLogEntry
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

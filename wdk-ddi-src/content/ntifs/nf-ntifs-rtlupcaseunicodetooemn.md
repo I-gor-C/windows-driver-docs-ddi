@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.RtlUpcaseUnicodeToOemN
-title : RtlUpcaseUnicodeToOemN function
-author : windows-driver-content
-description : The RtlUpcaseUnicodeToOemN routine translates a given Unicode string into an uppercase OEM string, using the current system OEM code page.
-old-location : ifsk\rtlupcaseunicodetooemn.htm
-old-project : ifsk
-ms.assetid : d4d802c1-66e9-4342-ba7d-d9e5a464362e
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.rtlupcaseunicodetooemn, rtlref_b1fcf08b-c13f-4b60-a570-f4bffe730ba4.xml, RtlUpcaseUnicodeToOemN routine [Installable File System Drivers], ntifs/RtlUpcaseUnicodeToOemN, RtlUpcaseUnicodeToOemN
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "< DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.RtlUpcaseUnicodeToOemN
+title: RtlUpcaseUnicodeToOemN function
+author: windows-driver-content
+description: The RtlUpcaseUnicodeToOemN routine translates a given Unicode string into an uppercase OEM string, using the current system OEM code page.
+old-location: ifsk\rtlupcaseunicodetooemn.htm
+old-project: ifsk
+ms.assetid: d4d802c1-66e9-4342-ba7d-d9e5a464362e
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.rtlupcaseunicodetooemn, rtlref_b1fcf08b-c13f-4b60-a570-f4bffe730ba4.xml, RtlUpcaseUnicodeToOemN routine [Installable File System Drivers], ntifs/RtlUpcaseUnicodeToOemN, RtlUpcaseUnicodeToOemN
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "< DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	RtlUpcaseUnicodeToOemN
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

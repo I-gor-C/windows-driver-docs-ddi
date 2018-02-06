@@ -1,41 +1,46 @@
 ---
-UID : NC:ndischimney.NDIS_TCP_OFFLOAD_RECEIVE_COMPLETE
-title : NDIS_TCP_OFFLOAD_RECEIVE_COMPLETE
-author : windows-driver-content
-description : An offload target calls the NdisTcpOffloadReceiveComplete function to return posted receive requests (receive buffers) to the host stack.
-old-location : netvista\ndistcpoffloadreceivecomplete.htm
-old-project : netvista
-ms.assetid : d5b1341b-cbe0-483c-9abb-b8706f2db2dd
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.ndistcpoffloadreceivecomplete, NdisTcpOffloadReceiveComplete callback function [Network Drivers Starting with Windows Vista], NdisTcpOffloadReceiveComplete, NDIS_TCP_OFFLOAD_RECEIVE_COMPLETE, NDIS_TCP_OFFLOAD_RECEIVE_COMPLETE, ndischimney/NdisTcpOffloadReceiveComplete, tcp_chim_ndis_func_7d17cfb0-d83a-42e2-9ac8-042bf1964991.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ndischimney.h
-req.include-header : Ndischimney.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PD_BUFFER_VIRTUAL_SUBNET_INFO
+UID: NC:ndischimney.NDIS_TCP_OFFLOAD_RECEIVE_COMPLETE
+title: NDIS_TCP_OFFLOAD_RECEIVE_COMPLETE
+author: windows-driver-content
+description: An offload target calls the NdisTcpOffloadReceiveComplete function to return posted receive requests (receive buffers) to the host stack.
+old-location: netvista\ndistcpoffloadreceivecomplete.htm
+old-project: netvista
+ms.assetid: d5b1341b-cbe0-483c-9abb-b8706f2db2dd
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.ndistcpoffloadreceivecomplete, NdisTcpOffloadReceiveComplete callback function [Network Drivers Starting with Windows Vista], NdisTcpOffloadReceiveComplete, NDIS_TCP_OFFLOAD_RECEIVE_COMPLETE, NDIS_TCP_OFFLOAD_RECEIVE_COMPLETE, ndischimney/NdisTcpOffloadReceiveComplete, tcp_chim_ndis_func_7d17cfb0-d83a-42e2-9ac8-042bf1964991.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ndischimney.h
+req.include-header: Ndischimney.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	ndischimney.h
+apiname:
+-	NdisTcpOffloadReceiveComplete
+product: Windows
+targetos: Windows
+req.typenames: PD_BUFFER_VIRTUAL_SUBNET_INFO
 ---
 
 

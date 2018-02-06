@@ -1,42 +1,47 @@
 ---
-UID : NS:spbcx._SPB_CONNECTION_PARAMETERS
-title : "_SPB_CONNECTION_PARAMETERS"
-author : windows-driver-content
-description : The SPB_CONNECTION_PARAMETERS structure contains the connection parameters for a target device on a simple peripheral bus.
-old-location : spb\spb_connection_parameters.htm
-old-project : SPB
-ms.assetid : 4707b797-6759-426d-89eb-01215af6ce19
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : PSPB_CONNECTION_PARAMETERS structure pointer [Buses], *PSPB_CONNECTION_PARAMETERS, PSPB_CONNECTION_PARAMETERS, _SPB_CONNECTION_PARAMETERS, SPB_CONNECTION_PARAMETERS, SPB_CONNECTION_PARAMETERS structure [Buses], spbcx/PSPB_CONNECTION_PARAMETERS, spbcx/SPB_CONNECTION_PARAMETERS, SPB.spb_connection_parameters
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : spbcx.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Any IRQL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSPB_CONNECTION_PARAMETERS, SPB_CONNECTION_PARAMETERS"
-req.product : Windows 10 or later.
+UID: NS:spbcx._SPB_CONNECTION_PARAMETERS
+title: "_SPB_CONNECTION_PARAMETERS"
+author: windows-driver-content
+description: The SPB_CONNECTION_PARAMETERS structure contains the connection parameters for a target device on a simple peripheral bus.
+old-location: spb\spb_connection_parameters.htm
+old-project: SPB
+ms.assetid: 4707b797-6759-426d-89eb-01215af6ce19
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: PSPB_CONNECTION_PARAMETERS structure pointer [Buses], *PSPB_CONNECTION_PARAMETERS, PSPB_CONNECTION_PARAMETERS, _SPB_CONNECTION_PARAMETERS, SPB_CONNECTION_PARAMETERS, SPB_CONNECTION_PARAMETERS structure [Buses], spbcx/PSPB_CONNECTION_PARAMETERS, spbcx/SPB_CONNECTION_PARAMETERS, SPB.spb_connection_parameters
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: spbcx.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Any IRQL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Spbcx.h
+apiname:
+-	SPB_CONNECTION_PARAMETERS
+product: Windows
+targetos: Windows
+req.typenames: "*PSPB_CONNECTION_PARAMETERS, SPB_CONNECTION_PARAMETERS"
+req.product: Windows 10 or later.
 ---
 
 # _SPB_CONNECTION_PARAMETERS structure

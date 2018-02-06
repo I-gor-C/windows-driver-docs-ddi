@@ -1,41 +1,46 @@
 ---
-UID : NS:ks.KSMETHOD_ITEM
-title : KSMETHOD_ITEM
-author : windows-driver-content
-description : The KSMETHOD_ITEM structure describes a single method within a method set.
-old-location : stream\ksmethod_item.htm
-old-project : stream
-ms.assetid : 79119458-a6a7-433e-9306-d7a56ca056c2
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KSMETHOD_ITEM, ks/KSMETHOD_ITEM, PKSMETHOD_ITEM, ks-struct_e3c7b451-337f-4cc5-a5b8-a28aa9bea679.xml, ks/PKSMETHOD_ITEM, KSMETHOD_ITEM structure [Streaming Media Devices], *PKSMETHOD_ITEM, stream.ksmethod_item, PKSMETHOD_ITEM structure pointer [Streaming Media Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKSMETHOD_ITEM, KSMETHOD_ITEM"
+UID: NS:ks.KSMETHOD_ITEM
+title: KSMETHOD_ITEM
+author: windows-driver-content
+description: The KSMETHOD_ITEM structure describes a single method within a method set.
+old-location: stream\ksmethod_item.htm
+old-project: stream
+ms.assetid: 79119458-a6a7-433e-9306-d7a56ca056c2
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KSMETHOD_ITEM, ks/KSMETHOD_ITEM, PKSMETHOD_ITEM, ks-struct_e3c7b451-337f-4cc5-a5b8-a28aa9bea679.xml, ks/PKSMETHOD_ITEM, KSMETHOD_ITEM structure [Streaming Media Devices], *PKSMETHOD_ITEM, stream.ksmethod_item, PKSMETHOD_ITEM structure pointer [Streaming Media Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	KSMETHOD_ITEM
+product: Windows
+targetos: Windows
+req.typenames: "*PKSMETHOD_ITEM, KSMETHOD_ITEM"
 ---
 
 # KSMETHOD_ITEM structure

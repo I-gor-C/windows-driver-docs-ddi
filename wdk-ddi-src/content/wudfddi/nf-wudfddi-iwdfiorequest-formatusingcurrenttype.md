@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFIoRequest.FormatUsingCurrentType
-title : IWDFIoRequest::FormatUsingCurrentType method
-author : windows-driver-content
-description : The FormatUsingCurrentType method formats an I/O request so that the driver can forward it, unmodified, to the next-lower driver.
-old-location : wdf\iwdfiorequest_formatusingcurrenttype.htm
-old-project : wdf
-ms.assetid : 4cbf6d29-bccd-4629-b282-eb5314f9b4f4
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : FormatUsingCurrentType method, umdf.iwdfiorequest_formatusingcurrenttype, FormatUsingCurrentType, FormatUsingCurrentType method, IWDFIoRequest interface, wdf.iwdfiorequest_formatusingcurrenttype, UMDFRequestObjectRef_e16e60fe-557d-413c-a483-6bbe602986dc.xml, wudfddi/IWDFIoRequest::FormatUsingCurrentType, IWDFIoRequest interface, FormatUsingCurrentType method, IWDFIoRequest::FormatUsingCurrentType, IWDFIoRequest
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.5
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFIoRequest.FormatUsingCurrentType
+title: IWDFIoRequest::FormatUsingCurrentType method
+author: windows-driver-content
+description: The FormatUsingCurrentType method formats an I/O request so that the driver can forward it, unmodified, to the next-lower driver.
+old-location: wdf\iwdfiorequest_formatusingcurrenttype.htm
+old-project: wdf
+ms.assetid: 4cbf6d29-bccd-4629-b282-eb5314f9b4f4
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: FormatUsingCurrentType method, umdf.iwdfiorequest_formatusingcurrenttype, FormatUsingCurrentType, FormatUsingCurrentType method, IWDFIoRequest interface, wdf.iwdfiorequest_formatusingcurrenttype, UMDFRequestObjectRef_e16e60fe-557d-413c-a483-6bbe602986dc.xml, wudfddi/IWDFIoRequest::FormatUsingCurrentType, IWDFIoRequest interface, FormatUsingCurrentType method, IWDFIoRequest::FormatUsingCurrentType, IWDFIoRequest
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.5
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFIoRequest.FormatUsingCurrentType
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NF:ksproxy.IKsAggregateControl.KsRemoveAggregate
-title : IKsAggregateControl::KsRemoveAggregate method
-author : windows-driver-content
-description : The KsRemoveAggregate method removes a previously added COM server aggregate provider from the list of interface providers for the KS object that exposes the IKsAggregateControl interface.
-old-location : stream\iksaggregatecontrol_ksremoveaggregate.htm
-old-project : stream
-ms.assetid : f625b1ed-ccab-4072-9eb9-c4ebbddb1199
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : IKsAggregateControl::KsRemoveAggregate, IKsAggregateControl, ksproxy_8498ef2d-5e1e-4f04-b311-2552bd713032.xml, IKsAggregateControl interface [Streaming Media Devices], KsRemoveAggregate method, KsRemoveAggregate method [Streaming Media Devices], KsRemoveAggregate method [Streaming Media Devices], IKsAggregateControl interface, stream.iksaggregatecontrol_ksremoveaggregate, ksproxy/IKsAggregateControl::KsRemoveAggregate, KsRemoveAggregate
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : ksproxy.h
-req.include-header : Ksproxy.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : ksproxy.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PIPE_STATE
+UID: NF:ksproxy.IKsAggregateControl.KsRemoveAggregate
+title: IKsAggregateControl::KsRemoveAggregate method
+author: windows-driver-content
+description: The KsRemoveAggregate method removes a previously added COM server aggregate provider from the list of interface providers for the KS object that exposes the IKsAggregateControl interface.
+old-location: stream\iksaggregatecontrol_ksremoveaggregate.htm
+old-project: stream
+ms.assetid: f625b1ed-ccab-4072-9eb9-c4ebbddb1199
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: IKsAggregateControl::KsRemoveAggregate, IKsAggregateControl, ksproxy_8498ef2d-5e1e-4f04-b311-2552bd713032.xml, IKsAggregateControl interface [Streaming Media Devices], KsRemoveAggregate method, KsRemoveAggregate method [Streaming Media Devices], KsRemoveAggregate method [Streaming Media Devices], IKsAggregateControl interface, stream.iksaggregatecontrol_ksremoveaggregate, ksproxy/IKsAggregateControl::KsRemoveAggregate, KsRemoveAggregate
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: ksproxy.h
+req.include-header: Ksproxy.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: ksproxy.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	ksproxy.h
+apiname:
+-	IKsAggregateControl.KsRemoveAggregate
+product: Windows
+targetos: Windows
+req.typenames: PIPE_STATE
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:ntdd8042._INTERNAL_I8042_HOOK_KEYBOARD
-title : "_INTERNAL_I8042_HOOK_KEYBOARD"
-author : windows-driver-content
-description : INTERNAL_I8042_HOOK_KEYBOARD is used by I8042prt to connect optional callback routines that supplement keyboard initialization and the keyboard ISR. The callbacks can be supplied by an optional, vendor-supplied, upper-level filter driver.
-old-location : hid\internal_i8042_hook_keyboard.htm
-old-project : hid
-ms.assetid : 7a70f6e1-cf3b-4158-97f2-39f62a1d51ae
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : INTERNAL_I8042_HOOK_KEYBOARD, ntdd8042/PINTERNAL_I8042_HOOK_KEYBOARD, hid.internal_i8042_hook_keyboard, *PINTERNAL_I8042_HOOK_KEYBOARD, i8042ref_c61fafd5-75ed-484b-8f5a-9e5e526059af.xml, PINTERNAL_I8042_HOOK_KEYBOARD, INTERNAL_I8042_HOOK_KEYBOARD structure [Human Input Devices], ntdd8042/INTERNAL_I8042_HOOK_KEYBOARD, _INTERNAL_I8042_HOOK_KEYBOARD, PINTERNAL_I8042_HOOK_KEYBOARD structure pointer [Human Input Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntdd8042.h
-req.include-header : Ntdd8042.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : INTERNAL_I8042_HOOK_KEYBOARD, *PINTERNAL_I8042_HOOK_KEYBOARD
+UID: NS:ntdd8042._INTERNAL_I8042_HOOK_KEYBOARD
+title: "_INTERNAL_I8042_HOOK_KEYBOARD"
+author: windows-driver-content
+description: INTERNAL_I8042_HOOK_KEYBOARD is used by I8042prt to connect optional callback routines that supplement keyboard initialization and the keyboard ISR. The callbacks can be supplied by an optional, vendor-supplied, upper-level filter driver.
+old-location: hid\internal_i8042_hook_keyboard.htm
+old-project: hid
+ms.assetid: 7a70f6e1-cf3b-4158-97f2-39f62a1d51ae
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: INTERNAL_I8042_HOOK_KEYBOARD, ntdd8042/PINTERNAL_I8042_HOOK_KEYBOARD, hid.internal_i8042_hook_keyboard, *PINTERNAL_I8042_HOOK_KEYBOARD, i8042ref_c61fafd5-75ed-484b-8f5a-9e5e526059af.xml, PINTERNAL_I8042_HOOK_KEYBOARD, INTERNAL_I8042_HOOK_KEYBOARD structure [Human Input Devices], ntdd8042/INTERNAL_I8042_HOOK_KEYBOARD, _INTERNAL_I8042_HOOK_KEYBOARD, PINTERNAL_I8042_HOOK_KEYBOARD structure pointer [Human Input Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntdd8042.h
+req.include-header: Ntdd8042.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntdd8042.h
+apiname:
+-	INTERNAL_I8042_HOOK_KEYBOARD
+product: Windows
+targetos: Windows
+req.typenames: INTERNAL_I8042_HOOK_KEYBOARD, *PINTERNAL_I8042_HOOK_KEYBOARD
 ---
 
 # _INTERNAL_I8042_HOOK_KEYBOARD structure

@@ -1,41 +1,46 @@
 ---
-UID : NS:ndkpi._NDK_CONNECTOR_DISPATCH
-title : "_NDK_CONNECTOR_DISPATCH"
-author : windows-driver-content
-description : The NDK_CONNECTOR_DISPATCH structure specifies dispatch function entry points for the NDK connector object.
-old-location : netvista\ndk_connector_dispatch.htm
-old-project : netvista
-ms.assetid : BBC24A32-4CB6-47AB-BD1D-298159EC9919
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : PNDK_CONNECTOR_DISPATCH structure pointer [Network Drivers Starting with Windows Vista], ndkpi/PNDK_CONNECTOR_DISPATCH, NDK_CONNECTOR_DISPATCH structure [Network Drivers Starting with Windows Vista], _NDK_CONNECTOR_DISPATCH, ndkpi/NDK_CONNECTOR_DISPATCH, NDK_CONNECTOR_DISPATCH, netvista.ndk_connector_dispatch, PNDK_CONNECTOR_DISPATCH
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndkpi.h
-req.include-header : Ndkpi.h
-req.target-type : Windows
-req.target-min-winverclnt : None supported,Supported in NDIS 6.30 and later.
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDK_CONNECTOR_DISPATCH
+UID: NS:ndkpi._NDK_CONNECTOR_DISPATCH
+title: "_NDK_CONNECTOR_DISPATCH"
+author: windows-driver-content
+description: The NDK_CONNECTOR_DISPATCH structure specifies dispatch function entry points for the NDK connector object.
+old-location: netvista\ndk_connector_dispatch.htm
+old-project: netvista
+ms.assetid: BBC24A32-4CB6-47AB-BD1D-298159EC9919
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: PNDK_CONNECTOR_DISPATCH structure pointer [Network Drivers Starting with Windows Vista], ndkpi/PNDK_CONNECTOR_DISPATCH, NDK_CONNECTOR_DISPATCH structure [Network Drivers Starting with Windows Vista], _NDK_CONNECTOR_DISPATCH, ndkpi/NDK_CONNECTOR_DISPATCH, NDK_CONNECTOR_DISPATCH, netvista.ndk_connector_dispatch, PNDK_CONNECTOR_DISPATCH
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndkpi.h
+req.include-header: Ndkpi.h
+req.target-type: Windows
+req.target-min-winverclnt: None supported,Supported in NDIS 6.30 and later.
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndkpi.h
+apiname:
+-	NDK_CONNECTOR_DISPATCH
+product: Windows
+targetos: Windows
+req.typenames: NDK_CONNECTOR_DISPATCH
 ---
 
 # _NDK_CONNECTOR_DISPATCH structure

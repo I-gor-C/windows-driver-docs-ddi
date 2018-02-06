@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsPinGetConnectedFilterInterface
-title : KsPinGetConnectedFilterInterface function
-author : windows-driver-content
-description : The KsPinGetConnectedFilterInterface function queries the filter to which Pin is connected in order to obtain a pointer to a COM interface.
-old-location : stream\kspingetconnectedfilterinterface.htm
-old-project : stream
-ms.assetid : 19fb7a3e-d795-4d5a-9f28-cfbf37dbcd96
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ks/KsPinGetConnectedFilterInterface, KsPinGetConnectedFilterInterface function [Streaming Media Devices], KsPinGetConnectedFilterInterface, stream.kspingetconnectedfilterinterface, avfunc_d6f6f675-4d44-47c8-aa37-9ad533966603.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsPinGetConnectedFilterInterface
+title: KsPinGetConnectedFilterInterface function
+author: windows-driver-content
+description: The KsPinGetConnectedFilterInterface function queries the filter to which Pin is connected in order to obtain a pointer to a COM interface.
+old-location: stream\kspingetconnectedfilterinterface.htm
+old-project: stream
+ms.assetid: 19fb7a3e-d795-4d5a-9f28-cfbf37dbcd96
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ks/KsPinGetConnectedFilterInterface, KsPinGetConnectedFilterInterface function [Streaming Media Devices], KsPinGetConnectedFilterInterface, stream.kspingetconnectedfilterinterface, avfunc_d6f6f675-4d44-47c8-aa37-9ad533966603.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsPinGetConnectedFilterInterface
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

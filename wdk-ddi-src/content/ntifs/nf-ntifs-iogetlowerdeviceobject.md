@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.IoGetLowerDeviceObject
-title : IoGetLowerDeviceObject function
-author : windows-driver-content
-description : The IoGetLowerDeviceObject routine returns a pointer to the next-lower-level device object on the driver stack.
-old-location : ifsk\iogetlowerdeviceobject.htm
-old-project : ifsk
-ms.assetid : 2446dfee-baa4-4f7b-a5a0-ff13bf45ce4b
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ioref_0739069f-c14d-4b35-accd-8d65954bbc3d.xml, ifsk.iogetlowerdeviceobject, ntifs/IoGetLowerDeviceObject, IoGetLowerDeviceObject routine [Installable File System Drivers], IoGetLowerDeviceObject
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : This routine is available on Update Rollup for Windows 2000 Service Pack 4 (SP4) and on Windows XP and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.IoGetLowerDeviceObject
+title: IoGetLowerDeviceObject function
+author: windows-driver-content
+description: The IoGetLowerDeviceObject routine returns a pointer to the next-lower-level device object on the driver stack.
+old-location: ifsk\iogetlowerdeviceobject.htm
+old-project: ifsk
+ms.assetid: 2446dfee-baa4-4f7b-a5a0-ff13bf45ce4b
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ioref_0739069f-c14d-4b35-accd-8d65954bbc3d.xml, ifsk.iogetlowerdeviceobject, ntifs/IoGetLowerDeviceObject, IoGetLowerDeviceObject routine [Installable File System Drivers], IoGetLowerDeviceObject
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: This routine is available on Update Rollup for Windows 2000 Service Pack 4 (SP4) and on Windows XP and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoGetLowerDeviceObject
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

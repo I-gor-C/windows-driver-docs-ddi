@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.FsRtlAllocateExtraCreateParameterFromLookasideList
-title : FsRtlAllocateExtraCreateParameterFromLookasideList function
-author : windows-driver-content
-description : The FsRtlAllocateExtraCreateParameterFromLookasideList routine allocates memory pool from a given lookaside list for an extra create parameter (ECP) context structure, and generates a pointer to that structure.
-old-location : ifsk\fsrtlallocateextracreateparameterfromlookasidelist.htm
-old-project : ifsk
-ms.assetid : 6dd1aa9d-58e6-484b-b372-4c1d9f6d04f3
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : fsrtlref_c85ee3ff-e71f-4c6e-bc37-4187cad9855f.xml, ifsk.fsrtlallocateextracreateparameterfromlookasidelist, ntifs/FsRtlAllocateExtraCreateParameterFromLookasideList, FsRtlAllocateExtraCreateParameterFromLookasideList, FsRtlAllocateExtraCreateParameterFromLookasideList routine [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : FsRtlAllocateExtraCreateParameterFromLookasideList is available starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.FsRtlAllocateExtraCreateParameterFromLookasideList
+title: FsRtlAllocateExtraCreateParameterFromLookasideList function
+author: windows-driver-content
+description: The FsRtlAllocateExtraCreateParameterFromLookasideList routine allocates memory pool from a given lookaside list for an extra create parameter (ECP) context structure, and generates a pointer to that structure.
+old-location: ifsk\fsrtlallocateextracreateparameterfromlookasidelist.htm
+old-project: ifsk
+ms.assetid: 6dd1aa9d-58e6-484b-b372-4c1d9f6d04f3
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: fsrtlref_c85ee3ff-e71f-4c6e-bc37-4187cad9855f.xml, ifsk.fsrtlallocateextracreateparameterfromlookasidelist, ntifs/FsRtlAllocateExtraCreateParameterFromLookasideList, FsRtlAllocateExtraCreateParameterFromLookasideList, FsRtlAllocateExtraCreateParameterFromLookasideList routine [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: FsRtlAllocateExtraCreateParameterFromLookasideList is available starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	FsRtlAllocateExtraCreateParameterFromLookasideList
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

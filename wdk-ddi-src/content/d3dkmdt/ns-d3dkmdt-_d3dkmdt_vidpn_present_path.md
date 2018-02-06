@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmdt._D3DKMDT_VIDPN_PRESENT_PATH
-title : "_D3DKMDT_VIDPN_PRESENT_PATH"
-author : windows-driver-content
-description : The D3DKMDT_VIDPN_PRESENT_PATH structure contains information about a video present path.
-old-location : display\d3dkmdt_vidpn_present_path.htm
-old-project : display
-ms.assetid : 3676476d-babe-4d68-995b-b7068a587bbc
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DKMDT_VIDPN_PRESENT_PATH, D3DKMDT_VIDPN_PRESENT_PATH structure [Display Devices], d3dkmdt/D3DKMDT_VIDPN_PRESENT_PATH, _D3DKMDT_VIDPN_PRESENT_PATH, DmStructs_7cf350db-f1fa-492f-96d2-9ad806f2b75a.xml, display.d3dkmdt_vidpn_present_path
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmdt.h
-req.include-header : D3dkmdt.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMDT_VIDPN_PRESENT_PATH
+UID: NS:d3dkmdt._D3DKMDT_VIDPN_PRESENT_PATH
+title: "_D3DKMDT_VIDPN_PRESENT_PATH"
+author: windows-driver-content
+description: The D3DKMDT_VIDPN_PRESENT_PATH structure contains information about a video present path.
+old-location: display\d3dkmdt_vidpn_present_path.htm
+old-project: display
+ms.assetid: 3676476d-babe-4d68-995b-b7068a587bbc
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DKMDT_VIDPN_PRESENT_PATH, D3DKMDT_VIDPN_PRESENT_PATH structure [Display Devices], d3dkmdt/D3DKMDT_VIDPN_PRESENT_PATH, _D3DKMDT_VIDPN_PRESENT_PATH, DmStructs_7cf350db-f1fa-492f-96d2-9ad806f2b75a.xml, display.d3dkmdt_vidpn_present_path
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmdt.h
+req.include-header: D3dkmdt.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmdt.h
+apiname:
+-	D3DKMDT_VIDPN_PRESENT_PATH
+product: Windows
+targetos: Windows
+req.typenames: D3DKMDT_VIDPN_PRESENT_PATH
 ---
 
 # _D3DKMDT_VIDPN_PRESENT_PATH structure

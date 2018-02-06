@@ -1,41 +1,49 @@
 ---
-UID : NF:d3dkmthk.D3DKMTOpenAdapterFromDeviceName
-title : D3DKMTOpenAdapterFromDeviceName function
-author : windows-driver-content
-description : The D3DKMTOpenAdapterFromDeviceName function maps a device name to a graphics adapter handle and, if the adapter contains multiple monitor outputs, to one of those outputs.
-old-location : display\d3dkmtopenadapterfromdevicename.htm
-old-project : display
-ms.assetid : bff9d991-63a1-47af-a351-073c82c0d31c
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.d3dkmtopenadapterfromdevicename, D3DKMTOpenAdapterFromDeviceName, D3DKMTOpenAdapterFromDeviceName function [Display Devices], OpenGL_Functions_8298711e-9466-4e00-b77a-0c7a1ee88bed.xml, d3dkmthk/D3DKMTOpenAdapterFromDeviceName
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Gdi32.lib
-req.dll : Gdi32.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_DRIVERVERSION
+UID: NF:d3dkmthk.D3DKMTOpenAdapterFromDeviceName
+title: D3DKMTOpenAdapterFromDeviceName function
+author: windows-driver-content
+description: The D3DKMTOpenAdapterFromDeviceName function maps a device name to a graphics adapter handle and, if the adapter contains multiple monitor outputs, to one of those outputs.
+old-location: display\d3dkmtopenadapterfromdevicename.htm
+old-project: display
+ms.assetid: bff9d991-63a1-47af-a351-073c82c0d31c
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.d3dkmtopenadapterfromdevicename, D3DKMTOpenAdapterFromDeviceName, D3DKMTOpenAdapterFromDeviceName function [Display Devices], OpenGL_Functions_8298711e-9466-4e00-b77a-0c7a1ee88bed.xml, d3dkmthk/D3DKMTOpenAdapterFromDeviceName
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Gdi32.lib
+req.dll: Gdi32.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Gdi32.dll
+-	API-MS-Win-dx-d3dkmt-l1-1-0.dll
+-	API-MS-Win-dx-d3dkmt-l1-1-1.dll
+-	API-MS-Win-DX-D3DKMT-L1-1-2.dll
+apiname:
+-	D3DKMTOpenAdapterFromDeviceName
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_DRIVERVERSION
 ---
 
 

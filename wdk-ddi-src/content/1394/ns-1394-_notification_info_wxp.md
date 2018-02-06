@@ -1,41 +1,46 @@
 ---
-UID : NS:1394._NOTIFICATION_INFO_WXP
-title : "_NOTIFICATION_INFO_WXP"
-author : windows-driver-content
-description : The bus driver passes NOTIFICATION_INFO to pass information to the driver-provided notification routine for a driver-allocated address range in the computer's IEEE 1394 address space.
-old-location : ieee\notification_info.htm
-old-project : IEEE
-ms.assetid : 0c0dca35-3590-4c24-a2a7-8dd0378c525f
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : "_NOTIFICATION_INFO_W2K, *PNOTIFICATION_INFO_WXP, 1394/NOTIFICATION_INFO, 1394stct_db1356d4-c42d-46a4-bbc4-ed8452dc2212.xml, *PNOTIFICATION_INFO_W2K, IEEE.notification_info, PNOTIFICATION_INFO, 1394/PNOTIFICATION_INFO, *PNOTIFICATION_INFO, NOTIFICATION_INFO_WXP, _NOTIFICATION_INFO_WXP, NOTIFICATION_INFO, NOTIFICATION_INFO structure [Buses], NOTIFICATION_INFO_W2K, PNOTIFICATION_INFO structure pointer [Buses]"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : 1394.h
-req.include-header : 1394.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PNOTIFICATION_INFO_WXP, NOTIFICATION_INFO_WXP"
+UID: NS:1394._NOTIFICATION_INFO_WXP
+title: "_NOTIFICATION_INFO_WXP"
+author: windows-driver-content
+description: The bus driver passes NOTIFICATION_INFO to pass information to the driver-provided notification routine for a driver-allocated address range in the computer's IEEE 1394 address space.
+old-location: ieee\notification_info.htm
+old-project: IEEE
+ms.assetid: 0c0dca35-3590-4c24-a2a7-8dd0378c525f
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: "_NOTIFICATION_INFO_W2K, *PNOTIFICATION_INFO_WXP, 1394/NOTIFICATION_INFO, 1394stct_db1356d4-c42d-46a4-bbc4-ed8452dc2212.xml, *PNOTIFICATION_INFO_W2K, IEEE.notification_info, PNOTIFICATION_INFO, 1394/PNOTIFICATION_INFO, *PNOTIFICATION_INFO, NOTIFICATION_INFO_WXP, _NOTIFICATION_INFO_WXP, NOTIFICATION_INFO, NOTIFICATION_INFO structure [Buses], NOTIFICATION_INFO_W2K, PNOTIFICATION_INFO structure pointer [Buses]"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: 1394.h
+req.include-header: 1394.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	1394.h
+apiname:
+-	NOTIFICATION_INFO
+product: Windows
+targetos: Windows
+req.typenames: "*PNOTIFICATION_INFO_WXP, NOTIFICATION_INFO_WXP"
 ---
 
 # _NOTIFICATION_INFO_WXP structure

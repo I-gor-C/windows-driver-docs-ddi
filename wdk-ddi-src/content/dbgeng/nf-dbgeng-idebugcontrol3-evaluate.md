@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugControl3.Evaluate
-title : IDebugControl3::Evaluate method
-author : windows-driver-content
-description : The Evaluate method evaluates an expression, returning the result.
-old-location : debugger\evaluate.htm
-old-project : debugger
-ms.assetid : 67b17847-6ab3-4712-9ffc-94f8016e3c34
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : dbgeng/IDebugControl::Evaluate, dbgeng/IDebugControl2::Evaluate, IDebugControl3 interface [Windows Debugging], Evaluate method, debugger.evaluate, Evaluate method [Windows Debugging], IDebugControl interface, IDebugControl3, IDebugControl_c985be86-1f8b-4b54-ae35-a7dec5980cec.xml, IDebugControl2::Evaluate, IDebugControl interface [Windows Debugging], Evaluate method, dbgeng/IDebugControl3::Evaluate, Evaluate method [Windows Debugging], IDebugControl3 interface, IDebugControl::Evaluate, Evaluate method [Windows Debugging], IDebugControl2 interface, Evaluate, Evaluate method [Windows Debugging], IDebugControl3::Evaluate, IDebugControl2 interface [Windows Debugging], Evaluate method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl3.Evaluate
+title: IDebugControl3::Evaluate method
+author: windows-driver-content
+description: The Evaluate method evaluates an expression, returning the result.
+old-location: debugger\evaluate.htm
+old-project: debugger
+ms.assetid: 67b17847-6ab3-4712-9ffc-94f8016e3c34
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: dbgeng/IDebugControl::Evaluate, dbgeng/IDebugControl2::Evaluate, IDebugControl3 interface [Windows Debugging], Evaluate method, debugger.evaluate, Evaluate method [Windows Debugging], IDebugControl interface, IDebugControl3, IDebugControl_c985be86-1f8b-4b54-ae35-a7dec5980cec.xml, IDebugControl2::Evaluate, IDebugControl interface [Windows Debugging], Evaluate method, dbgeng/IDebugControl3::Evaluate, Evaluate method [Windows Debugging], IDebugControl3 interface, IDebugControl::Evaluate, Evaluate method [Windows Debugging], IDebugControl2 interface, Evaluate, Evaluate method [Windows Debugging], IDebugControl3::Evaluate, IDebugControl2 interface [Windows Debugging], Evaluate method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl.Evaluate
+-	IDebugControl2.Evaluate
+-	IDebugControl3.Evaluate
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

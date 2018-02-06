@@ -1,41 +1,46 @@
 ---
-UID : NS:ndis._NDIS_MINIPORT_ADAPTER_NDK_ATTRIBUTES
-title : "_NDIS_MINIPORT_ADAPTER_NDK_ATTRIBUTES"
-author : windows-driver-content
-description : The NDIS_MINIPORT_ADAPTER_NDK_ATTRIBUTES structure specifies the NDK-capabilities of a miniport adapter. This structure is used in the NDKAttributes member of the NDIS_MINIPORT_ADAPTER_ATTRIBUTES union.
-old-location : netvista\ndis_miniport_adapter_ndk_attributes.htm
-old-project : netvista
-ms.assetid : 615A190E-D8F5-4E84-A475-FFF38077BC09
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : PNDIS_MINIPORT_ADAPTER_NDK_ATTRIBUTES structure pointer [Network Drivers Starting with Windows Vista], PNDIS_MINIPORT_ADAPTER_NDK_ATTRIBUTES, ndis/NDIS_MINIPORT_ADAPTER_NDK_ATTRIBUTES, _NDIS_MINIPORT_ADAPTER_NDK_ATTRIBUTES, NDIS_MINIPORT_ADAPTER_NDK_ATTRIBUTES, *PNDIS_MINIPORT_ADAPTER_NDK_ATTRIBUTES, netvista.ndis_miniport_adapter_ndk_attributes, ndis/PNDIS_MINIPORT_ADAPTER_NDK_ATTRIBUTES, NDIS_MINIPORT_ADAPTER_NDK_ATTRIBUTES structure [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : None supported,Supported in NDIS 6.30 and later.
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : See Remarks section
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_MINIPORT_ADAPTER_NDK_ATTRIBUTES, *PNDIS_MINIPORT_ADAPTER_NDK_ATTRIBUTES
+UID: NS:ndis._NDIS_MINIPORT_ADAPTER_NDK_ATTRIBUTES
+title: "_NDIS_MINIPORT_ADAPTER_NDK_ATTRIBUTES"
+author: windows-driver-content
+description: The NDIS_MINIPORT_ADAPTER_NDK_ATTRIBUTES structure specifies the NDK-capabilities of a miniport adapter. This structure is used in the NDKAttributes member of the NDIS_MINIPORT_ADAPTER_ATTRIBUTES union.
+old-location: netvista\ndis_miniport_adapter_ndk_attributes.htm
+old-project: netvista
+ms.assetid: 615A190E-D8F5-4E84-A475-FFF38077BC09
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: PNDIS_MINIPORT_ADAPTER_NDK_ATTRIBUTES structure pointer [Network Drivers Starting with Windows Vista], PNDIS_MINIPORT_ADAPTER_NDK_ATTRIBUTES, ndis/NDIS_MINIPORT_ADAPTER_NDK_ATTRIBUTES, _NDIS_MINIPORT_ADAPTER_NDK_ATTRIBUTES, NDIS_MINIPORT_ADAPTER_NDK_ATTRIBUTES, *PNDIS_MINIPORT_ADAPTER_NDK_ATTRIBUTES, netvista.ndis_miniport_adapter_ndk_attributes, ndis/PNDIS_MINIPORT_ADAPTER_NDK_ATTRIBUTES, NDIS_MINIPORT_ADAPTER_NDK_ATTRIBUTES structure [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: None supported,Supported in NDIS 6.30 and later.
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: See Remarks section
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndis.h
+apiname:
+-	NDIS_MINIPORT_ADAPTER_NDK_ATTRIBUTES
+product: Windows
+targetos: Windows
+req.typenames: NDIS_MINIPORT_ADAPTER_NDK_ATTRIBUTES, *PNDIS_MINIPORT_ADAPTER_NDK_ATTRIBUTES
 ---
 
 # _NDIS_MINIPORT_ADAPTER_NDK_ATTRIBUTES structure

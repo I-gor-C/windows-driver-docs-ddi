@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.KeInitializeThreadedDpc
-title : KeInitializeThreadedDpc function
-author : windows-driver-content
-description : The KeInitializeThreadedDpc routine initializes a threaded DPC object, and registers a CustomThreadedDpc routine for that object.
-old-location : kernel\keinitializethreadeddpc.htm
-old-project : kernel
-ms.assetid : ee9124db-9d92-42e1-84fa-6d3eefeaeac5
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : k105_b5df057f-6d75-4a06-ac5f-d99340bdbb21.xml, KeInitializeThreadedDpc, kernel.keinitializethreadeddpc, wdm/KeInitializeThreadedDpc, KeInitializeThreadedDpc routine [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.KeInitializeThreadedDpc
+title: KeInitializeThreadedDpc function
+author: windows-driver-content
+description: The KeInitializeThreadedDpc routine initializes a threaded DPC object, and registers a CustomThreadedDpc routine for that object.
+old-location: kernel\keinitializethreadeddpc.htm
+old-project: kernel
+ms.assetid: ee9124db-9d92-42e1-84fa-6d3eefeaeac5
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: k105_b5df057f-6d75-4a06-ac5f-d99340bdbb21.xml, KeInitializeThreadedDpc, kernel.keinitializethreadeddpc, wdm/KeInitializeThreadedDpc, KeInitializeThreadedDpc routine [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	KeInitializeThreadedDpc
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

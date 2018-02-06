@@ -1,42 +1,47 @@
 ---
-UID : NE:wdm._BOUND_CALLBACK_STATUS
-title : "_BOUND_CALLBACK_STATUS"
-author : windows-driver-content
-description : The BOUND_CALLBACK_STATUS enumeration indicates how a user-mode bounds exception was processed by the BoundCallback function.
-old-location : kernel\bound_callback_status.htm
-old-project : kernel
-ms.assetid : 874FB2E1-7A2F-4C91-BA72-D67DA2EE84E1
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/BoundExceptionHandled, BOUND_CALLBACK_STATUS enumeration [Kernel-Mode Driver Architecture], BoundExceptionError, wdm/BoundExceptionContinueSearch, wdm/BoundExceptionMaximum, *PBOUND_CALLBACK_STATUS, BOUND_CALLBACK_STATUS, _BOUND_CALLBACK_STATUS, wdm/BOUND_CALLBACK_STATUS, BoundExceptionHandled, kernel.bound_callback_status, wdm/BoundExceptionError, BoundExceptionContinueSearch, BoundExceptionMaximum
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : wdm.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows 10.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PBOUND_CALLBACK_STATUS, BOUND_CALLBACK_STATUS"
-req.product : Windows 10 or later.
+UID: NE:wdm._BOUND_CALLBACK_STATUS
+title: "_BOUND_CALLBACK_STATUS"
+author: windows-driver-content
+description: The BOUND_CALLBACK_STATUS enumeration indicates how a user-mode bounds exception was processed by the BoundCallback function.
+old-location: kernel\bound_callback_status.htm
+old-project: kernel
+ms.assetid: 874FB2E1-7A2F-4C91-BA72-D67DA2EE84E1
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/BoundExceptionHandled, BOUND_CALLBACK_STATUS enumeration [Kernel-Mode Driver Architecture], BoundExceptionError, wdm/BoundExceptionContinueSearch, wdm/BoundExceptionMaximum, *PBOUND_CALLBACK_STATUS, BOUND_CALLBACK_STATUS, _BOUND_CALLBACK_STATUS, wdm/BOUND_CALLBACK_STATUS, BoundExceptionHandled, kernel.bound_callback_status, wdm/BoundExceptionError, BoundExceptionContinueSearch, BoundExceptionMaximum
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: wdm.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows 10.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	BOUND_CALLBACK_STATUS
+product: Windows
+targetos: Windows
+req.typenames: "*PBOUND_CALLBACK_STATUS, BOUND_CALLBACK_STATUS"
+req.product: Windows 10 or later.
 ---
 
 # _BOUND_CALLBACK_STATUS Enumeration
@@ -55,31 +60,31 @@ typedef enum _BOUND_CALLBACK_STATUS {
 ## Constants
 
 <table>
-
-<tr>
-<td>BoundExceptionContinueSearch</td>
-<td>The bounds exception was not handled by the callback, and the exception should continue to propagate.</td>
-</tr>
-
-<tr>
-<td>BoundExceptionError</td>
-<td>The user mode process should be terminated by the system.</td>
-</tr>
-
-<tr>
-<td>BoundExceptionHandled</td>
-<td>The exception was handled by the callback, and the exception should not propagate any further.</td>
-</tr>
-
-<tr>
-<td>BoundExceptionMaximum</td>
-<td>This value is not currently used.</td>
-</tr>
+            
+                <tr>
+                    <td>BoundExceptionContinueSearch</td>
+                    <td>The bounds exception was not handled by the callback, and the exception should continue to propagate.</td>
+                </tr>
+            
+                <tr>
+                    <td>BoundExceptionError</td>
+                    <td>The user mode process should be terminated by the system.</td>
+                </tr>
+            
+                <tr>
+                    <td>BoundExceptionHandled</td>
+                    <td>The exception was handled by the callback, and the exception should not propagate any further.</td>
+                </tr>
+            
+                <tr>
+                    <td>BoundExceptionMaximum</td>
+                    <td>This value is not currently used.</td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-The return value of the <a href="..\wdm\nc-wdm-bound_callback.md">BoundCallback</a> routine is a <b>BOUND_CALLBACK_STATUS</b> value.
+        The return value of the <a href="..\wdm\nc-wdm-bound_callback.md">BoundCallback</a> routine is a <b>BOUND_CALLBACK_STATUS</b> value.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -87,9 +92,9 @@ The return value of the <a href="..\wdm\nc-wdm-bound_callback.md">BoundCallback<
 | **Windows version** | Available starting with Windows 10. Available starting with Windows 10. |
 | **Header** | wdm.h |
 
-## See Also
+    ## See Also
 
-<a href="..\wdm\nc-wdm-bound_callback.md">BoundCallback</a>
+        <a href="..\wdm\nc-wdm-bound_callback.md">BoundCallback</a>
 
  
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:ndis._NDIS_MINIPORT_INIT_PARAMETERS
-title : "_NDIS_MINIPORT_INIT_PARAMETERS"
-author : windows-driver-content
-description : The NDIS_MINIPORT_INIT_PARAMETERS structure defines the initialization parameters for a miniport adapter.
-old-location : netvista\ndis_miniport_init_parameters.htm
-old-project : netvista
-ms.assetid : 945d921b-3024-4c4f-a50d-e996c6183db7
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : PNDIS_MINIPORT_INIT_PARAMETERS, _NDIS_MINIPORT_INIT_PARAMETERS, NDIS_MINIPORT_INIT_PARAMETERS, miniport_structures_ref_064614b0-eb2a-4fdd-8b0a-d14540e6faa5.xml, *PNDIS_MINIPORT_INIT_PARAMETERS, ndis/NDIS_MINIPORT_INIT_PARAMETERS, ndis/PNDIS_MINIPORT_INIT_PARAMETERS, PNDIS_MINIPORT_INIT_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], netvista.ndis_miniport_init_parameters, NDIS_MINIPORT_INIT_PARAMETERS structure [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : See Remarks section
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PNDIS_MINIPORT_INIT_PARAMETERS, NDIS_MINIPORT_INIT_PARAMETERS"
+UID: NS:ndis._NDIS_MINIPORT_INIT_PARAMETERS
+title: "_NDIS_MINIPORT_INIT_PARAMETERS"
+author: windows-driver-content
+description: The NDIS_MINIPORT_INIT_PARAMETERS structure defines the initialization parameters for a miniport adapter.
+old-location: netvista\ndis_miniport_init_parameters.htm
+old-project: netvista
+ms.assetid: 945d921b-3024-4c4f-a50d-e996c6183db7
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: PNDIS_MINIPORT_INIT_PARAMETERS, _NDIS_MINIPORT_INIT_PARAMETERS, NDIS_MINIPORT_INIT_PARAMETERS, miniport_structures_ref_064614b0-eb2a-4fdd-8b0a-d14540e6faa5.xml, *PNDIS_MINIPORT_INIT_PARAMETERS, ndis/NDIS_MINIPORT_INIT_PARAMETERS, ndis/PNDIS_MINIPORT_INIT_PARAMETERS, PNDIS_MINIPORT_INIT_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], netvista.ndis_miniport_init_parameters, NDIS_MINIPORT_INIT_PARAMETERS structure [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: See Remarks section
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndis.h
+apiname:
+-	NDIS_MINIPORT_INIT_PARAMETERS
+product: Windows
+targetos: Windows
+req.typenames: "*PNDIS_MINIPORT_INIT_PARAMETERS, NDIS_MINIPORT_INIT_PARAMETERS"
 ---
 
 # _NDIS_MINIPORT_INIT_PARAMETERS structure

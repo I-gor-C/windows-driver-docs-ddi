@@ -1,42 +1,50 @@
 ---
-UID : NF:wdfdevice.WdfDeviceStopIdle
-title : WdfDeviceStopIdle macro
-author : windows-driver-content
-description : The WdfDeviceStopIdle method informs the framework that the specified device must be placed in its working (D0) power state.
-old-location : wdf\wdfdevicestopidle.htm
-old-project : wdf
-ms.assetid : a394f539-bd66-44e2-a857-d657a123b473
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : DFDeviceObjectGeneralRef_3dbde224-ecdf-429e-9389-9bdb49b16040.xml, WdfDeviceStopIdle method, kmdf.wdfdevicestopidle, wdf.wdfdevicestopidle, wdfdevice/WdfDeviceStopIdle, WdfDeviceStopIdle
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : macro
-req.header : wdfdevice.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll : 
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_STATE_NOTIFICATION_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfdevice.WdfDeviceStopIdle
+title: WdfDeviceStopIdle macro
+author: windows-driver-content
+description: The WdfDeviceStopIdle method informs the framework that the specified device must be placed in its working (D0) power state.
+old-location: wdf\wdfdevicestopidle.htm
+old-project: wdf
+ms.assetid: a394f539-bd66-44e2-a857-d657a123b473
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: DFDeviceObjectGeneralRef_3dbde224-ecdf-429e-9389-9bdb49b16040.xml, WdfDeviceStopIdle method, kmdf.wdfdevicestopidle, wdf.wdfdevicestopidle, wdfdevice/WdfDeviceStopIdle, WdfDeviceStopIdle
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: macro
+req.header: wdfdevice.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll: 
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+-	WUDFx02000.dll
+-	WUDFx02000.dll.dll
+apiname:
+-	WdfDeviceStopIdle
+product: Windows
+targetos: Windows
+req.typenames: WDF_STATE_NOTIFICATION_TYPE
+req.product: Windows 10 or later.
 ---
 
 

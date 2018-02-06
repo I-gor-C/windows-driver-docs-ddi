@@ -1,42 +1,47 @@
 ---
-UID : NS:wdfdmaenabler._WDF_DMA_SYSTEM_PROFILE_CONFIG
-title : "_WDF_DMA_SYSTEM_PROFILE_CONFIG"
-author : windows-driver-content
-description : The WDF_DMA_SYSTEM_PROFILE_CONFIG structure describes the hardware-specific settings related to a system-mode DMA enabler.
-old-location : wdf\wdf_dma_system_profile_config.htm
-old-project : wdf
-ms.assetid : 80131AB6-4A2B-4D99-9289-CE9FE26E0695
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdfdmaenabler/WDF_DMA_SYSTEM_PROFILE_CONFIG, PWDF_DMA_SYSTEM_PROFILE_CONFIG structure pointer, WDF_DMA_SYSTEM_PROFILE_CONFIG structure, WDF_DMA_SYSTEM_PROFILE_CONFIG, wdfdmaenabler/PWDF_DMA_SYSTEM_PROFILE_CONFIG, wdf.wdf_dma_system_profile_config, *PWDF_DMA_SYSTEM_PROFILE_CONFIG, PWDF_DMA_SYSTEM_PROFILE_CONFIG, _WDF_DMA_SYSTEM_PROFILE_CONFIG, kmdf.wdf_dma_system_profile_config
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdfdmaenabler.h
-req.include-header : Wdf.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : 
-req.kmdf-ver : 1.11
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDF_DMA_SYSTEM_PROFILE_CONFIG, WDF_DMA_SYSTEM_PROFILE_CONFIG"
-req.product : Windows 10 or later.
+UID: NS:wdfdmaenabler._WDF_DMA_SYSTEM_PROFILE_CONFIG
+title: "_WDF_DMA_SYSTEM_PROFILE_CONFIG"
+author: windows-driver-content
+description: The WDF_DMA_SYSTEM_PROFILE_CONFIG structure describes the hardware-specific settings related to a system-mode DMA enabler.
+old-location: wdf\wdf_dma_system_profile_config.htm
+old-project: wdf
+ms.assetid: 80131AB6-4A2B-4D99-9289-CE9FE26E0695
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdfdmaenabler/WDF_DMA_SYSTEM_PROFILE_CONFIG, PWDF_DMA_SYSTEM_PROFILE_CONFIG structure pointer, WDF_DMA_SYSTEM_PROFILE_CONFIG structure, WDF_DMA_SYSTEM_PROFILE_CONFIG, wdfdmaenabler/PWDF_DMA_SYSTEM_PROFILE_CONFIG, wdf.wdf_dma_system_profile_config, *PWDF_DMA_SYSTEM_PROFILE_CONFIG, PWDF_DMA_SYSTEM_PROFILE_CONFIG, _WDF_DMA_SYSTEM_PROFILE_CONFIG, kmdf.wdf_dma_system_profile_config
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdfdmaenabler.h
+req.include-header: Wdf.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: 
+req.kmdf-ver: 1.11
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfdmaenabler.h
+apiname:
+-	WDF_DMA_SYSTEM_PROFILE_CONFIG
+product: Windows
+targetos: Windows
+req.typenames: "*PWDF_DMA_SYSTEM_PROFILE_CONFIG, WDF_DMA_SYSTEM_PROFILE_CONFIG"
+req.product: Windows 10 or later.
 ---
 
 # _WDF_DMA_SYSTEM_PROFILE_CONFIG structure

@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltIsFltMgrVolumeDeviceObject
-title : FltIsFltMgrVolumeDeviceObject function
-author : windows-driver-content
-description : The FltIsFltMgrVolumeDeviceObject routine determines whether the given device object belongs to filter manager and if the device object is a volume device object.
-old-location : ifsk\fltisfltmgrvolumedeviceobject.htm
-old-project : ifsk
-ms.assetid : c4165eab-c62e-436d-b4d4-a1f72ee9c1bd
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltIsFltMgrVolumeDeviceObject, ifsk.fltisfltmgrvolumedeviceobject, FltIsFltMgrVolumeDeviceObject routine [Installable File System Drivers], FltApiRef_e_to_o_95cc07b6-722c-4d2a-bec1-57fff9e2c6e3.xml, fltkernel/FltIsFltMgrVolumeDeviceObject
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Vista or later versions of the Windows operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltIsFltMgrVolumeDeviceObject
+title: FltIsFltMgrVolumeDeviceObject function
+author: windows-driver-content
+description: The FltIsFltMgrVolumeDeviceObject routine determines whether the given device object belongs to filter manager and if the device object is a volume device object.
+old-location: ifsk\fltisfltmgrvolumedeviceobject.htm
+old-project: ifsk
+ms.assetid: c4165eab-c62e-436d-b4d4-a1f72ee9c1bd
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltIsFltMgrVolumeDeviceObject, ifsk.fltisfltmgrvolumedeviceobject, FltIsFltMgrVolumeDeviceObject routine [Installable File System Drivers], FltApiRef_e_to_o_95cc07b6-722c-4d2a-bec1-57fff9e2c6e3.xml, fltkernel/FltIsFltMgrVolumeDeviceObject
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Vista or later versions of the Windows operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltIsFltMgrVolumeDeviceObject
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

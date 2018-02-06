@@ -1,41 +1,46 @@
 ---
-UID : NI:bthioctl.IOCTL_INTERNAL_BTHENUM_GET_DEVINFO
-title : IOCTL_INTERNAL_BTHENUM_GET_DEVINFO
-author : windows-driver-content
-description : The IOCTL_INTERNAL_BTHENUM_GET_DEVINFO request returns information about the remote device that caused the Plug and Play (PnP) manager to load the current instance of the profile driver.
-old-location : bltooth\ioctl_internal_bthenum_get_devinfo.htm
-old-project : bltooth
-ms.assetid : c0134541-2e17-41e5-b30a-493b1bb42d07
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : bltooth.ioctl_internal_bthenum_get_devinfo, IOCTL_INTERNAL_BTHENUM_GET_DEVINFO control code [Bluetooth Devices], IOCTL_INTERNAL_BTHENUM_GET_DEVINFO, bthioctl/IOCTL_INTERNAL_BTHENUM_GET_DEVINFO, bth_ioctls_08047b17-31ae-4497-b83d-21e42058765f.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : bthioctl.h
-req.include-header : Bthioctl.h
-req.target-type : Windows
-req.target-min-winverclnt : Versions:\_Supported in Windows Vista, and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= PASSIVE_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HFP_BYPASS_CODEC_ID_V1, *PHFP_BYPASS_CODEC_ID_V1
+UID: NI:bthioctl.IOCTL_INTERNAL_BTHENUM_GET_DEVINFO
+title: IOCTL_INTERNAL_BTHENUM_GET_DEVINFO
+author: windows-driver-content
+description: The IOCTL_INTERNAL_BTHENUM_GET_DEVINFO request returns information about the remote device that caused the Plug and Play (PnP) manager to load the current instance of the profile driver.
+old-location: bltooth\ioctl_internal_bthenum_get_devinfo.htm
+old-project: bltooth
+ms.assetid: c0134541-2e17-41e5-b30a-493b1bb42d07
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: bltooth.ioctl_internal_bthenum_get_devinfo, IOCTL_INTERNAL_BTHENUM_GET_DEVINFO control code [Bluetooth Devices], IOCTL_INTERNAL_BTHENUM_GET_DEVINFO, bthioctl/IOCTL_INTERNAL_BTHENUM_GET_DEVINFO, bth_ioctls_08047b17-31ae-4497-b83d-21e42058765f.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: bthioctl.h
+req.include-header: Bthioctl.h
+req.target-type: Windows
+req.target-min-winverclnt: Versions:\_Supported in Windows Vista, and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= PASSIVE_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Bthioctl.h
+apiname:
+-	IOCTL_INTERNAL_BTHENUM_GET_DEVINFO
+product: Windows
+targetos: Windows
+req.typenames: HFP_BYPASS_CODEC_ID_V1, *PHFP_BYPASS_CODEC_ID_V1
 ---
 
 # IOCTL_INTERNAL_BTHENUM_GET_DEVINFO IOCTL

@@ -1,42 +1,47 @@
 ---
-UID : NE:wdfdmaenabler._WDF_DMA_DIRECTION
-title : "_WDF_DMA_DIRECTION"
-author : windows-driver-content
-description : The WDF_DMA_DIRECTION enumeration defines the direction of a DMA transfer.
-old-location : wdf\wdf_dma_direction.htm
-old-project : wdf
-ms.assetid : 813414fa-17b6-4b69-a3dd-f3a2e5190305
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdfdmaenabler/WdfDmaDirectionReadFromDevice, _WDF_DMA_DIRECTION, WDF_DMA_DIRECTION enumeration, wdfdmaenabler/WDF_DMA_DIRECTION, kmdf.wdf_dma_direction, WdfDmaDirectionWriteToDevice, wdfdmaenabler/WdfDmaDirectionWriteToDevice, wdf.wdf_dma_direction, WdfDmaDirectionReadFromDevice, WDF_DMA_DIRECTION, DFDmaObjectRef_e790f51f-b8cb-4e04-a5f3-49f24fabf5b8.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : wdfdmaenabler.h
-req.include-header : Wdf.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_DMA_DIRECTION
-req.product : Windows 10 or later.
+UID: NE:wdfdmaenabler._WDF_DMA_DIRECTION
+title: "_WDF_DMA_DIRECTION"
+author: windows-driver-content
+description: The WDF_DMA_DIRECTION enumeration defines the direction of a DMA transfer.
+old-location: wdf\wdf_dma_direction.htm
+old-project: wdf
+ms.assetid: 813414fa-17b6-4b69-a3dd-f3a2e5190305
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdfdmaenabler/WdfDmaDirectionReadFromDevice, _WDF_DMA_DIRECTION, WDF_DMA_DIRECTION enumeration, wdfdmaenabler/WDF_DMA_DIRECTION, kmdf.wdf_dma_direction, WdfDmaDirectionWriteToDevice, wdfdmaenabler/WdfDmaDirectionWriteToDevice, wdf.wdf_dma_direction, WdfDmaDirectionReadFromDevice, WDF_DMA_DIRECTION, DFDmaObjectRef_e790f51f-b8cb-4e04-a5f3-49f24fabf5b8.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: wdfdmaenabler.h
+req.include-header: Wdf.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfdmaenabler.h
+apiname:
+-	WDF_DMA_DIRECTION
+product: Windows
+targetos: Windows
+req.typenames: WDF_DMA_DIRECTION
+req.product: Windows 10 or later.
 ---
 
 # _WDF_DMA_DIRECTION Enumeration
@@ -55,21 +60,21 @@ typedef enum _WDF_DMA_DIRECTION {
 ## Constants
 
 <table>
-
-<tr>
-<td>WdfDmaDirectionReadFromDevice</td>
-<td>The DMA transfer direction is from the device (read).</td>
-</tr>
-
-<tr>
-<td>WdfDmaDirectionWriteToDevice</td>
-<td>The DMA transfer direction is to the device (write).</td>
-</tr>
+            
+                <tr>
+                    <td>WdfDmaDirectionReadFromDevice</td>
+                    <td>The DMA transfer direction is from the device (read).</td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDmaDirectionWriteToDevice</td>
+                    <td>The DMA transfer direction is to the device (write).</td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-The <b>WDF_DMA_DIRECTION</b> enumeration is used as input to the <a href="https://msdn.microsoft.com/c01b94b2-aabf-47dd-952a-06e481579614">EvtProgramDma</a> callback function and the <a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactioninitialize.md">WdfDmaTransactionInitialize</a> and <a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactioninitializeusingrequest.md">WdfDmaTransactionInitializeUsingRequest</a> methods.
+        The <b>WDF_DMA_DIRECTION</b> enumeration is used as input to the <a href="https://msdn.microsoft.com/c01b94b2-aabf-47dd-952a-06e481579614">EvtProgramDma</a> callback function and the <a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactioninitialize.md">WdfDmaTransactionInitialize</a> and <a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactioninitializeusingrequest.md">WdfDmaTransactionInitializeUsingRequest</a> methods.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -77,9 +82,9 @@ The <b>WDF_DMA_DIRECTION</b> enumeration is used as input to the <a href="https:
 | **Minimum KMDF version** | 1.0 |
 | **Header** | wdfdmaenabler.h (include Wdf.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactioninitialize.md">WdfDmaTransactionInitialize</a>
+        <a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactioninitialize.md">WdfDmaTransactionInitialize</a>
 
 <a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactioninitializeusingrequest.md">WdfDmaTransactionInitializeUsingRequest</a>
 

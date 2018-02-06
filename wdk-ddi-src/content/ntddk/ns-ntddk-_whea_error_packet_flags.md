@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddk._WHEA_ERROR_PACKET_FLAGS
-title : "_WHEA_ERROR_PACKET_FLAGS"
-author : windows-driver-content
-description : The WHEA_ERROR_PACKET_FLAGS union defines the error condition reported through a WHEA_ERROR_PACKET structure.
-old-location : whea\whea_error_packet_flags.htm
-old-project : whea
-ms.assetid : e1dae7df-7d81-42cc-9a01-44345f53ba4e
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : WHEA_ERROR_PACKET_FLAGS union [WHEA Drivers and Applications], ntddk/WHEA_ERROR_PACKET_FLAGS, WHEA_ERROR_PACKET_FLAGS, ntddk/PWHEA_ERROR_PACKET_FLAGS, PWHEA_ERROR_PACKET_FLAGS union pointer [WHEA Drivers and Applications], _WHEA_ERROR_PACKET_FLAGS, PWHEA_ERROR_PACKET_FLAGS, *PWHEA_ERROR_PACKET_FLAGS, whearef_c193e4e7-f233-4de0-93ac-5e7b841a6c6e.xml, whea.whea_error_packet_flags
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWHEA_ERROR_PACKET_FLAGS, WHEA_ERROR_PACKET_FLAGS"
+UID: NS:ntddk._WHEA_ERROR_PACKET_FLAGS
+title: "_WHEA_ERROR_PACKET_FLAGS"
+author: windows-driver-content
+description: The WHEA_ERROR_PACKET_FLAGS union defines the error condition reported through a WHEA_ERROR_PACKET structure.
+old-location: whea\whea_error_packet_flags.htm
+old-project: whea
+ms.assetid: e1dae7df-7d81-42cc-9a01-44345f53ba4e
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: WHEA_ERROR_PACKET_FLAGS union [WHEA Drivers and Applications], ntddk/WHEA_ERROR_PACKET_FLAGS, WHEA_ERROR_PACKET_FLAGS, ntddk/PWHEA_ERROR_PACKET_FLAGS, PWHEA_ERROR_PACKET_FLAGS union pointer [WHEA Drivers and Applications], _WHEA_ERROR_PACKET_FLAGS, PWHEA_ERROR_PACKET_FLAGS, *PWHEA_ERROR_PACKET_FLAGS, whearef_c193e4e7-f233-4de0-93ac-5e7b841a6c6e.xml, whea.whea_error_packet_flags
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddk.h
+apiname:
+-	WHEA_ERROR_PACKET_FLAGS
+product: Windows
+targetos: Windows
+req.typenames: "*PWHEA_ERROR_PACKET_FLAGS, WHEA_ERROR_PACKET_FLAGS"
 ---
 
 # _WHEA_ERROR_PACKET_FLAGS structure

@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmdt._DXGKMDT_OPM_SET_ACP_AND_CGMSA_SIGNALING_PARAMETERS
-title : "_DXGKMDT_OPM_SET_ACP_AND_CGMSA_SIGNALING_PARAMETERS"
-author : windows-driver-content
-description : The DXGKMDT_OPM_SET_ACP_AND_CGMSA_SIGNALING_PARAMETERS structure contains parameters to set Analog Content Protection (ACP) and Content Generation Management System Analog (CGMS-A) signaling for a protected output.
-old-location : display\dxgkmdt_opm_set_acp_and_cgmsa_signaling_parameters.htm
-old-project : display
-ms.assetid : e4151e72-e0a6-4873-a2e8-c3321941cfd4
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DXGKMDT_OPM_SET_ACP_AND_CGMSA_SIGNALING_PARAMETERS structure [Display Devices], display.dxgkmdt_opm_set_acp_and_cgmsa_signaling_parameters, d3dkmdt/DXGKMDT_OPM_SET_ACP_AND_CGMSA_SIGNALING_PARAMETERS, DXGKMDT_OPM_SET_ACP_AND_CGMSA_SIGNALING_PARAMETERS, _DXGKMDT_OPM_SET_ACP_AND_CGMSA_SIGNALING_PARAMETERS, DmStructs_64a3857d-3c66-4653-980b-72df307eba0f.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmdt.h
-req.include-header : D3dkmdt.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGKMDT_OPM_SET_ACP_AND_CGMSA_SIGNALING_PARAMETERS
+UID: NS:d3dkmdt._DXGKMDT_OPM_SET_ACP_AND_CGMSA_SIGNALING_PARAMETERS
+title: "_DXGKMDT_OPM_SET_ACP_AND_CGMSA_SIGNALING_PARAMETERS"
+author: windows-driver-content
+description: The DXGKMDT_OPM_SET_ACP_AND_CGMSA_SIGNALING_PARAMETERS structure contains parameters to set Analog Content Protection (ACP) and Content Generation Management System Analog (CGMS-A) signaling for a protected output.
+old-location: display\dxgkmdt_opm_set_acp_and_cgmsa_signaling_parameters.htm
+old-project: display
+ms.assetid: e4151e72-e0a6-4873-a2e8-c3321941cfd4
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DXGKMDT_OPM_SET_ACP_AND_CGMSA_SIGNALING_PARAMETERS structure [Display Devices], display.dxgkmdt_opm_set_acp_and_cgmsa_signaling_parameters, d3dkmdt/DXGKMDT_OPM_SET_ACP_AND_CGMSA_SIGNALING_PARAMETERS, DXGKMDT_OPM_SET_ACP_AND_CGMSA_SIGNALING_PARAMETERS, _DXGKMDT_OPM_SET_ACP_AND_CGMSA_SIGNALING_PARAMETERS, DmStructs_64a3857d-3c66-4653-980b-72df307eba0f.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmdt.h
+req.include-header: D3dkmdt.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmdt.h
+apiname:
+-	DXGKMDT_OPM_SET_ACP_AND_CGMSA_SIGNALING_PARAMETERS
+product: Windows
+targetos: Windows
+req.typenames: DXGKMDT_OPM_SET_ACP_AND_CGMSA_SIGNALING_PARAMETERS
 ---
 
 # _DXGKMDT_OPM_SET_ACP_AND_CGMSA_SIGNALING_PARAMETERS structure

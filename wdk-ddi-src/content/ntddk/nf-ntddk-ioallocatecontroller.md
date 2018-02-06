@@ -1,41 +1,46 @@
 ---
-UID : NF:ntddk.IoAllocateController
-title : IoAllocateController function
-author : windows-driver-content
-description : The IoAllocateController routine sets up the call to a driver-supplied ControllerControl routine as soon as the device controller, represented by the given controller object, is available to carry out an I/O operation for the target device, represented by the given device object.
-old-location : kernel\ioallocatecontroller.htm
-old-project : kernel
-ms.assetid : bfeec8b1-48fb-420e-b602-699a5f2d659a
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ntddk/IoAllocateController, k104_b550c6ff-9d5c-4497-98bb-6781b4e6abd8.xml, kernel.ioallocatecontroller, IoAllocateController routine [Kernel-Mode Driver Architecture], IoAllocateController
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : IrqlDispatch, HwStorPortProhibitedDDIs, IrqlDispatch(storport), SpNoWait, StorPortStartIo
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : DISPATCH_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.IoAllocateController
+title: IoAllocateController function
+author: windows-driver-content
+description: The IoAllocateController routine sets up the call to a driver-supplied ControllerControl routine as soon as the device controller, represented by the given controller object, is available to carry out an I/O operation for the target device, represented by the given device object.
+old-location: kernel\ioallocatecontroller.htm
+old-project: kernel
+ms.assetid: bfeec8b1-48fb-420e-b602-699a5f2d659a
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ntddk/IoAllocateController, k104_b550c6ff-9d5c-4497-98bb-6781b4e6abd8.xml, kernel.ioallocatecontroller, IoAllocateController routine [Kernel-Mode Driver Architecture], IoAllocateController
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: IrqlDispatch, HwStorPortProhibitedDDIs, IrqlDispatch(storport), SpNoWait, StorPortStartIo
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: DISPATCH_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoAllocateController
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NC:pcivirt.SRIOV_QUERY_LUID
-title : SRIOV_QUERY_LUID
-author : windows-driver-content
-description : Gets the local unique identifier of the SR-IOV device.
-old-location : pci\sriov_query_luid.htm
-old-project : PCI
-ms.assetid : 9bb8e54f-b42a-4f61-a3f5-6972141c8f28
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : PCI.sriov_query_luid, SriovQueryLuid callback function [Buses], SriovQueryLuid, SRIOV_QUERY_LUID, SRIOV_QUERY_LUID, pcivirt/SriovQueryLuid, *PSRIOV_QUERY_LUID callback function pointer [Buses], *PSRIOV_QUERY_LUID
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : pcivirt.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PARCLASS_INFORMATION, *PPARCLASS_INFORMATION
+UID: NC:pcivirt.SRIOV_QUERY_LUID
+title: SRIOV_QUERY_LUID
+author: windows-driver-content
+description: Gets the local unique identifier of the SR-IOV device.
+old-location: pci\sriov_query_luid.htm
+old-project: PCI
+ms.assetid: 9bb8e54f-b42a-4f61-a3f5-6972141c8f28
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: PCI.sriov_query_luid, SriovQueryLuid callback function [Buses], SriovQueryLuid, SRIOV_QUERY_LUID, SRIOV_QUERY_LUID, pcivirt/SriovQueryLuid, *PSRIOV_QUERY_LUID callback function pointer [Buses], *PSRIOV_QUERY_LUID
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: pcivirt.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Pcivirt.h
+apiname:
+-	*PSRIOV_QUERY_LUID
+product: Windows
+targetos: Windows
+req.typenames: PARCLASS_INFORMATION, *PPARCLASS_INFORMATION
 ---
 
 

@@ -1,42 +1,48 @@
 ---
-UID : NF:sensorsclassextension.ISensorDriver.OnGetSupportedProperties
-title : ISensorDriver::OnGetSupportedProperties method
-author : windows-driver-content
-description : The ISensorDriver::OnGetSupportedProperties method retrieves the list of properties that the specified sensor provides.
-old-location : sensors\isensordriver_ongetsupportedproperties.htm
-old-project : sensors
-ms.assetid : 8712fe85-0af1-4552-9351-aca4fe5430d1
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : ISensorDriver::OnGetSupportedProperties, OnGetSupportedProperties method [Sensor Devices], ISensorDriver, OnGetSupportedProperties, sensors.isensordriver_ongetsupportedproperties
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : sensorsclassextension.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : SensorsClassExtension.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SensorConnectionType
-req.product : Windows 10 or later.
+UID: NF:sensorsclassextension.ISensorDriver.OnGetSupportedProperties
+title: ISensorDriver::OnGetSupportedProperties method
+author: windows-driver-content
+description: The ISensorDriver::OnGetSupportedProperties method retrieves the list of properties that the specified sensor provides.
+old-location: sensors\isensordriver_ongetsupportedproperties.htm
+old-project: sensors
+ms.assetid: 8712fe85-0af1-4552-9351-aca4fe5430d1
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: ISensorDriver::OnGetSupportedProperties, OnGetSupportedProperties method [Sensor Devices], ISensorDriver, OnGetSupportedProperties, sensors.isensordriver_ongetsupportedproperties
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: sensorsclassextension.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: SensorsClassExtension.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	SensorsClassExtension.lib
+-	SensorsClassExtension.dll
+apiname:
+-	OnGetSupportedProperties
+product: Windows
+targetos: Windows
+req.typenames: SensorConnectionType
+req.product: Windows 10 or later.
 ---
 
 

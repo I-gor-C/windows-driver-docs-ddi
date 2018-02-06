@@ -1,42 +1,47 @@
 ---
-UID : NE:rilapitypes.RILIMSSERVICE
-title : RILIMSSERVICE
-author : windows-driver-content
-description : The RILIMSSERVICE enumeration has the following values.
-old-location : netvista\rilimsservice.htm
-old-project : netvista
-ms.assetid : 11d009d7-5a97-46a8-b1d6-f1906127bf3a
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : RILIMSSERVICE enumeration [Network Drivers Starting with Windows Vista], rilapitypes/RIL_IMS_SERVICE_CUSTOM, rilapitypes/RILIMSSERVICE, rilapitypes/RIL_IMS_SERVICE_VIDEO, RIL_IMS_SERVICE_SMS, RIL_IMS_SERVICE_ALL, RIL_IMS_SERVICE_VOICE, rilapitypes/RIL_IMS_SERVICE_SMS, RIL_IMS_SERVICE_CUSTOM, netvista.rilimsservice, rilapitypes/RIL_IMS_SERVICE_ALL, RILIMSSERVICE, RIL_IMS_SERVICE_VIDEO, rilapitypes/RIL_IMS_SERVICE_VOICE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : rilapitypes.h
-req.include-header : Rilapitypes.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RILIMSSERVICE
-req.product : Windows 10 or later.
+UID: NE:rilapitypes.RILIMSSERVICE
+title: RILIMSSERVICE
+author: windows-driver-content
+description: The RILIMSSERVICE enumeration has the following values.
+old-location: netvista\rilimsservice.htm
+old-project: netvista
+ms.assetid: 11d009d7-5a97-46a8-b1d6-f1906127bf3a
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: RILIMSSERVICE enumeration [Network Drivers Starting with Windows Vista], rilapitypes/RIL_IMS_SERVICE_CUSTOM, rilapitypes/RILIMSSERVICE, rilapitypes/RIL_IMS_SERVICE_VIDEO, RIL_IMS_SERVICE_SMS, RIL_IMS_SERVICE_ALL, RIL_IMS_SERVICE_VOICE, rilapitypes/RIL_IMS_SERVICE_SMS, RIL_IMS_SERVICE_CUSTOM, netvista.rilimsservice, rilapitypes/RIL_IMS_SERVICE_ALL, RILIMSSERVICE, RIL_IMS_SERVICE_VIDEO, rilapitypes/RIL_IMS_SERVICE_VOICE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: rilapitypes.h
+req.include-header: Rilapitypes.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	rilapitypes.h
+apiname:
+-	RILIMSSERVICE
+product: Windows
+targetos: Windows
+req.typenames: RILIMSSERVICE
+req.product: Windows 10 or later.
 ---
 
 # RILIMSSERVICE Enumeration
@@ -57,51 +62,51 @@ enum RILIMSSERVICE  {
 ## Constants
 
 <table>
-
-<tr>
-<td>RIL_IMS_SERVICE_ALL</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_IMS_SERVICE_CUSTOM</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_IMS_SERVICE_E_VOICE</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_IMS_SERVICE_RCS</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_IMS_SERVICE_SMS</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_IMS_SERVICE_SUPSVC</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_IMS_SERVICE_USSD</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_IMS_SERVICE_VIDEO</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_IMS_SERVICE_VOICE</td>
-<td></td>
-</tr>
+            
+                <tr>
+                    <td>RIL_IMS_SERVICE_ALL</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_IMS_SERVICE_CUSTOM</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_IMS_SERVICE_E_VOICE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_IMS_SERVICE_RCS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_IMS_SERVICE_SMS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_IMS_SERVICE_SUPSVC</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_IMS_SERVICE_USSD</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_IMS_SERVICE_VIDEO</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_IMS_SERVICE_VOICE</td>
+                    <td></td>
+                </tr>
 </table>
 
 
@@ -110,9 +115,9 @@ enum RILIMSSERVICE  {
 | ---- |:---- |
 | **Header** | rilapitypes.h (include Rilapitypes.h) |
 
-## See Also
+    ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn946511">Cellular COM structures</a>
+        <a href="https://msdn.microsoft.com/library/windows/hardware/dn946511">Cellular COM structures</a>
 
  
 

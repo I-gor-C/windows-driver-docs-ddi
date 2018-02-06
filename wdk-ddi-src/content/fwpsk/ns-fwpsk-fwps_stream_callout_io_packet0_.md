@@ -1,41 +1,46 @@
 ---
-UID : NS:fwpsk.FWPS_STREAM_CALLOUT_IO_PACKET0_
-title : FWPS_STREAM_CALLOUT_IO_PACKET0_
-author : windows-driver-content
-description : The FWPS_STREAM_CALLOUT_IO_PACKET0 structure describes the data passed by the filter engine to a callout's classifyFn callout function when filtering a data stream.Note  FWPS_STREAM_CALLOUT_IO_PACKET0 is a specific version of FWPS_STREAM_CALLOUT_IO_PACKET. See WFP Version-Independent Names and Targeting Specific Versions of Windows for more information.
-old-location : netvista\fwps_stream_callout_io_packet0.htm
-old-project : netvista
-ms.assetid : 2c0539f0-116e-4344-9584-db7416d258e0
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : wfp_ref_3_struct_3_fwps_P-Z_a5b8078a-e940-451c-ba7d-e7b4d3cf16bd.xml, FWPS_STREAM_CALLOUT_IO_PACKET0 structure [Network Drivers Starting with Windows Vista], fwpsk/FWPS_STREAM_CALLOUT_IO_PACKET0, FWPS_STREAM_CALLOUT_IO_PACKET0, FWPS_STREAM_CALLOUT_IO_PACKET0_, netvista.fwps_stream_callout_io_packet0
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : fwpsk.h
-req.include-header : Fwpsk.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FWPS_STREAM_CALLOUT_IO_PACKET0
+UID: NS:fwpsk.FWPS_STREAM_CALLOUT_IO_PACKET0_
+title: FWPS_STREAM_CALLOUT_IO_PACKET0_
+author: windows-driver-content
+description: The FWPS_STREAM_CALLOUT_IO_PACKET0 structure describes the data passed by the filter engine to a callout's classifyFn callout function when filtering a data stream.Note  FWPS_STREAM_CALLOUT_IO_PACKET0 is a specific version of FWPS_STREAM_CALLOUT_IO_PACKET. See WFP Version-Independent Names and Targeting Specific Versions of Windows for more information.
+old-location: netvista\fwps_stream_callout_io_packet0.htm
+old-project: netvista
+ms.assetid: 2c0539f0-116e-4344-9584-db7416d258e0
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: wfp_ref_3_struct_3_fwps_P-Z_a5b8078a-e940-451c-ba7d-e7b4d3cf16bd.xml, FWPS_STREAM_CALLOUT_IO_PACKET0 structure [Network Drivers Starting with Windows Vista], fwpsk/FWPS_STREAM_CALLOUT_IO_PACKET0, FWPS_STREAM_CALLOUT_IO_PACKET0, FWPS_STREAM_CALLOUT_IO_PACKET0_, netvista.fwps_stream_callout_io_packet0
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: fwpsk.h
+req.include-header: Fwpsk.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	fwpsk.h
+apiname:
+-	FWPS_STREAM_CALLOUT_IO_PACKET0
+product: Windows
+targetos: Windows
+req.typenames: FWPS_STREAM_CALLOUT_IO_PACKET0
 ---
 
 # FWPS_STREAM_CALLOUT_IO_PACKET0_ structure

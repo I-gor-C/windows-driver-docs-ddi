@@ -1,41 +1,46 @@
 ---
-UID : NC:netdma.DMA_ABORT_HANDLER
-title : DMA_ABORT_HANDLER
-author : windows-driver-content
-description : The ProviderAbortDma function cancels any DMA transfers that are associated with a DMA channel.
-old-location : netvista\providerabortdma.htm
-old-project : netvista
-ms.assetid : b9c23f36-0885-49fd-b92e-dac38d5f363f
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.providerabortdma, ProviderAbortDma callback function [Network Drivers Starting with Windows Vista], ProviderAbortDma, DMA_ABORT_HANDLER, DMA_ABORT_HANDLER, netdma/ProviderAbortDma, netdma_ref_b030a880-2a65-4fef-9f91-4a4bc4fa17b5.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : netdma.h
-req.include-header : Netdma.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported for NetDMA 1.0 drivers in Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : MIRACAST_DRIVER_INTERFACE, *PMIRACAST_DRIVER_INTERFACE
+UID: NC:netdma.DMA_ABORT_HANDLER
+title: DMA_ABORT_HANDLER
+author: windows-driver-content
+description: The ProviderAbortDma function cancels any DMA transfers that are associated with a DMA channel.
+old-location: netvista\providerabortdma.htm
+old-project: netvista
+ms.assetid: b9c23f36-0885-49fd-b92e-dac38d5f363f
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.providerabortdma, ProviderAbortDma callback function [Network Drivers Starting with Windows Vista], ProviderAbortDma, DMA_ABORT_HANDLER, DMA_ABORT_HANDLER, netdma/ProviderAbortDma, netdma_ref_b030a880-2a65-4fef-9f91-4a4bc4fa17b5.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: netdma.h
+req.include-header: Netdma.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported for NetDMA 1.0 drivers in Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	netdma.h
+apiname:
+-	ProviderAbortDma
+product: Windows
+targetos: Windows
+req.typenames: MIRACAST_DRIVER_INTERFACE, *PMIRACAST_DRIVER_INTERFACE
 ---
 
 

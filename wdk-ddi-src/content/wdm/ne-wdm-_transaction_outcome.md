@@ -1,42 +1,47 @@
 ---
-UID : NE:wdm._TRANSACTION_OUTCOME
-title : "_TRANSACTION_OUTCOME"
-author : windows-driver-content
-description : The TRANSACTION_OUTCOME enumeration defines the outcomes (results) that KTM can assign to a transaction.
-old-location : kernel\transaction_outcome.htm
-old-project : kernel
-ms.assetid : 1612e8d8-996b-45d2-93cc-df5b388596d4
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/TransactionOutcomeUndetermined, wdm/TRANSACTION_OUTCOME, TRANSACTION_OUTCOME, TransactionOutcomeAborted, TRANSACTION_OUTCOME enumeration [Kernel-Mode Driver Architecture], TransactionOutcomeUndetermined, ktm_ref_e1c01db3-bc06-43d4-a046-f94af84782e8.xml, _TRANSACTION_OUTCOME, kernel.transaction_outcome, wdm/TransactionOutcomeCommitted, TransactionOutcomeCommitted, wdm/TransactionOutcomeAborted
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later operating system versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TRANSACTION_OUTCOME
-req.product : Windows 10 or later.
+UID: NE:wdm._TRANSACTION_OUTCOME
+title: "_TRANSACTION_OUTCOME"
+author: windows-driver-content
+description: The TRANSACTION_OUTCOME enumeration defines the outcomes (results) that KTM can assign to a transaction.
+old-location: kernel\transaction_outcome.htm
+old-project: kernel
+ms.assetid: 1612e8d8-996b-45d2-93cc-df5b388596d4
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/TransactionOutcomeUndetermined, wdm/TRANSACTION_OUTCOME, TRANSACTION_OUTCOME, TransactionOutcomeAborted, TRANSACTION_OUTCOME enumeration [Kernel-Mode Driver Architecture], TransactionOutcomeUndetermined, ktm_ref_e1c01db3-bc06-43d4-a046-f94af84782e8.xml, _TRANSACTION_OUTCOME, kernel.transaction_outcome, wdm/TransactionOutcomeCommitted, TransactionOutcomeCommitted, wdm/TransactionOutcomeAborted
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later operating system versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	TRANSACTION_OUTCOME
+product: Windows
+targetos: Windows
+req.typenames: TRANSACTION_OUTCOME
+req.product: Windows 10 or later.
 ---
 
 # _TRANSACTION_OUTCOME Enumeration
@@ -54,26 +59,26 @@ typedef enum _TRANSACTION_OUTCOME {
 ## Constants
 
 <table>
-
-<tr>
-<td>TransactionOutcomeAborted</td>
-<td>The transaction has been rolled back.</td>
-</tr>
-
-<tr>
-<td>TransactionOutcomeCommitted</td>
-<td>The transaction has been committed.</td>
-</tr>
-
-<tr>
-<td>TransactionOutcomeUndetermined</td>
-<td>The transaction has not yet been committed or rolled back.</td>
-</tr>
+            
+                <tr>
+                    <td>TransactionOutcomeAborted</td>
+                    <td>The transaction has been rolled back.</td>
+                </tr>
+            
+                <tr>
+                    <td>TransactionOutcomeCommitted</td>
+                    <td>The transaction has been committed.</td>
+                </tr>
+            
+                <tr>
+                    <td>TransactionOutcomeUndetermined</td>
+                    <td>The transaction has not yet been committed or rolled back.</td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-The <b>TRANSACTION_OUTCOME</b> enumeration is used in the <a href="..\wdm\ns-wdm-_transaction_basic_information.md">TRANSACTION_BASIC_INFORMATION</a> structure.
+        The <b>TRANSACTION_OUTCOME</b> enumeration is used in the <a href="..\wdm\ns-wdm-_transaction_basic_information.md">TRANSACTION_BASIC_INFORMATION</a> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -81,9 +86,9 @@ The <b>TRANSACTION_OUTCOME</b> enumeration is used in the <a href="..\wdm\ns-wdm
 | **Windows version** | Available in Windows Vista and later operating system versions. Available in Windows Vista and later operating system versions. |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\wdm\ns-wdm-_transaction_basic_information.md">TRANSACTION_BASIC_INFORMATION</a>
+        <a href="..\wdm\ns-wdm-_transaction_basic_information.md">TRANSACTION_BASIC_INFORMATION</a>
 
  
 

@@ -1,42 +1,47 @@
 ---
-UID : NC:srb.PHW_INITIALIZE
-title : PHW_INITIALIZE
-author : windows-driver-content
-description : The PHW_INITIALIZE routine prototype declares a routine that initializes the miniport driver after a reboot or power failure occurs.
-old-location : storage\phw_initialize.htm
-old-project : storage
-ms.assetid : dd678196-62f6-4c27-845f-a9b52c663e2a
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.phw_initialize, (*PHW_INITIALIZE) callback function [Storage Devices], (*PHW_INITIALIZE), srb/(*PHW_INITIALIZE), ide_minikr_95bb126d-6d4c-4091-b2fa-6b891d587186.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : srb.h
-req.include-header : Storport.h, Srb.h, Storport.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SPB_CONTROLLER_CONFIG, *PSPB_CONTROLLER_CONFIG
-req.product : Windows 10 or later.
+UID: NC:srb.PHW_INITIALIZE
+title: PHW_INITIALIZE
+author: windows-driver-content
+description: The PHW_INITIALIZE routine prototype declares a routine that initializes the miniport driver after a reboot or power failure occurs.
+old-location: storage\phw_initialize.htm
+old-project: storage
+ms.assetid: dd678196-62f6-4c27-845f-a9b52c663e2a
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.phw_initialize, (*PHW_INITIALIZE) callback function [Storage Devices], (*PHW_INITIALIZE), srb/(*PHW_INITIALIZE), ide_minikr_95bb126d-6d4c-4091-b2fa-6b891d587186.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: srb.h
+req.include-header: Storport.h, Srb.h, Storport.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	srb.h
+apiname:
+-	(*PHW_INITIALIZE)
+product: Windows
+targetos: Windows
+req.typenames: SPB_CONTROLLER_CONFIG, *PSPB_CONTROLLER_CONFIG
+req.product: Windows 10 or later.
 ---
 
 

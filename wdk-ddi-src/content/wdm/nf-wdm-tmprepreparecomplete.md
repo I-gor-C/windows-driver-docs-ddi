@@ -1,42 +1,49 @@
 ---
-UID : NF:wdm.TmPrePrepareComplete
-title : TmPrePrepareComplete function
-author : windows-driver-content
-description : The TmPrePrepareComplete routine notifies KTM that the calling resource manager has finished preliminary preparation of a transaction's data.
-old-location : kernel\tmprepreparecomplete.htm
-old-project : kernel
-ms.assetid : 2152e174-c02e-425c-a969-83656052078b
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : TmPrePrepareComplete, wdm/TmPrePrepareComplete, TmPrePrepareComplete routine [Kernel-Mode Driver Architecture], ktm_ref_8ea6e6df-93c0-4b25-9bfe-3d53fbe1793f.xml, kernel.tmprepreparecomplete
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later operating system versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.TmPrePrepareComplete
+title: TmPrePrepareComplete function
+author: windows-driver-content
+description: The TmPrePrepareComplete routine notifies KTM that the calling resource manager has finished preliminary preparation of a transaction's data.
+old-location: kernel\tmprepreparecomplete.htm
+old-project: kernel
+ms.assetid: 2152e174-c02e-425c-a969-83656052078b
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: TmPrePrepareComplete, wdm/TmPrePrepareComplete, TmPrePrepareComplete routine [Kernel-Mode Driver Architecture], ktm_ref_8ea6e6df-93c0-4b25-9bfe-3d53fbe1793f.xml, kernel.tmprepreparecomplete
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later operating system versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+-	Ext-MS-Win-ntos-tm-l1-1-0.dll
+-	tm.sys
+apiname:
+-	TmPrePrepareComplete
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

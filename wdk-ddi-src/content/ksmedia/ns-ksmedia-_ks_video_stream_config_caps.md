@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia._KS_VIDEO_STREAM_CONFIG_CAPS
-title : "_KS_VIDEO_STREAM_CONFIG_CAPS"
-author : windows-driver-content
-description : The KS_VIDEO_STREAM_CONFIG_CAPS structure describes the configuration and capabilities of a video stream, including analog video standard (for example, NTSC, PAL or SECAM), scaling, and cropping capabilities; minimum and maximum frame rates; and minimum and maximum data rates.
-old-location : stream\ks_video_stream_config_caps.htm
-old-project : stream
-ms.assetid : a8089653-a14b-4542-bf20-b1b596b1b4ea
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.ks_video_stream_config_caps, KS_VIDEO_STREAM_CONFIG_CAPS structure [Streaming Media Devices], PKS_VIDEO_STREAM_CONFIG_CAPS, vidcapstruct_43cae18b-0430-4a1e-9bac-7de2e32388a6.xml, ksmedia/KS_VIDEO_STREAM_CONFIG_CAPS, KS_VIDEO_STREAM_CONFIG_CAPS, PKS_VIDEO_STREAM_CONFIG_CAPS structure pointer [Streaming Media Devices], *PKS_VIDEO_STREAM_CONFIG_CAPS, _KS_VIDEO_STREAM_CONFIG_CAPS, ksmedia/PKS_VIDEO_STREAM_CONFIG_CAPS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKS_VIDEO_STREAM_CONFIG_CAPS, KS_VIDEO_STREAM_CONFIG_CAPS"
+UID: NS:ksmedia._KS_VIDEO_STREAM_CONFIG_CAPS
+title: "_KS_VIDEO_STREAM_CONFIG_CAPS"
+author: windows-driver-content
+description: The KS_VIDEO_STREAM_CONFIG_CAPS structure describes the configuration and capabilities of a video stream, including analog video standard (for example, NTSC, PAL or SECAM), scaling, and cropping capabilities; minimum and maximum frame rates; and minimum and maximum data rates.
+old-location: stream\ks_video_stream_config_caps.htm
+old-project: stream
+ms.assetid: a8089653-a14b-4542-bf20-b1b596b1b4ea
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.ks_video_stream_config_caps, KS_VIDEO_STREAM_CONFIG_CAPS structure [Streaming Media Devices], PKS_VIDEO_STREAM_CONFIG_CAPS, vidcapstruct_43cae18b-0430-4a1e-9bac-7de2e32388a6.xml, ksmedia/KS_VIDEO_STREAM_CONFIG_CAPS, KS_VIDEO_STREAM_CONFIG_CAPS, PKS_VIDEO_STREAM_CONFIG_CAPS structure pointer [Streaming Media Devices], *PKS_VIDEO_STREAM_CONFIG_CAPS, _KS_VIDEO_STREAM_CONFIG_CAPS, ksmedia/PKS_VIDEO_STREAM_CONFIG_CAPS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	KS_VIDEO_STREAM_CONFIG_CAPS
+product: Windows
+targetos: Windows
+req.typenames: "*PKS_VIDEO_STREAM_CONFIG_CAPS, KS_VIDEO_STREAM_CONFIG_CAPS"
 ---
 
 # _KS_VIDEO_STREAM_CONFIG_CAPS structure

@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddcdvd._AACS_BINDING_NONCE
-title : "_AACS_BINDING_NONCE"
-author : windows-driver-content
-description : The AACS_BINDING_NONCE structure contains the binding nonce.
-old-location : storage\aacs_binding_nonce.htm
-old-project : storage
-ms.assetid : 8bbefe34-9653-4868-894f-a77c1fc9939f
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : PAACS_BINDING_NONCE structure pointer [Storage Devices], structs-DVD_4420e26a-681e-4942-9f90-699bcd80b37f.xml, PAACS_BINDING_NONCE, ntddcdvd/PAACS_BINDING_NONCE, _AACS_BINDING_NONCE, AACS_BINDING_NONCE structure [Storage Devices], *PAACS_BINDING_NONCE, ntddcdvd/AACS_BINDING_NONCE, AACS_BINDING_NONCE, storage.aacs_binding_nonce
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddcdvd.h
-req.include-header : Ntddcdvd.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PAACS_BINDING_NONCE, AACS_BINDING_NONCE"
+UID: NS:ntddcdvd._AACS_BINDING_NONCE
+title: "_AACS_BINDING_NONCE"
+author: windows-driver-content
+description: The AACS_BINDING_NONCE structure contains the binding nonce.
+old-location: storage\aacs_binding_nonce.htm
+old-project: storage
+ms.assetid: 8bbefe34-9653-4868-894f-a77c1fc9939f
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: PAACS_BINDING_NONCE structure pointer [Storage Devices], structs-DVD_4420e26a-681e-4942-9f90-699bcd80b37f.xml, PAACS_BINDING_NONCE, ntddcdvd/PAACS_BINDING_NONCE, _AACS_BINDING_NONCE, AACS_BINDING_NONCE structure [Storage Devices], *PAACS_BINDING_NONCE, ntddcdvd/AACS_BINDING_NONCE, AACS_BINDING_NONCE, storage.aacs_binding_nonce
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddcdvd.h
+req.include-header: Ntddcdvd.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddcdvd.h
+apiname:
+-	AACS_BINDING_NONCE
+product: Windows
+targetos: Windows
+req.typenames: "*PAACS_BINDING_NONCE, AACS_BINDING_NONCE"
 ---
 
 # _AACS_BINDING_NONCE structure

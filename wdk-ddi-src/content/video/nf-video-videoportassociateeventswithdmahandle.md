@@ -1,42 +1,47 @@
 ---
-UID : NF:video.VideoPortAssociateEventsWithDmaHandle
-title : VideoPortAssociateEventsWithDmaHandle function
-author : windows-driver-content
-description : The VideoPortAssociateEventsWithDmaHandle function is obsolete in Windows 2000 and later.VideoPortAssociateEventsWithDmaHandle associates an event, which is shared by the video display driver and the video miniport driver, with a DMA handle.
-old-location : display\videoportassociateeventswithdmahandle.htm
-old-project : display
-ms.assetid : d8a64a06-41b9-429b-a5ac-6de4996c702b
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : VideoPortAssociateEventsWithDmaHandle function [Display Devices], VideoPort_Functions_0b61cb97-6bee-4882-83c9-1a56b8c2807b.xml, video/VideoPortAssociateEventsWithDmaHandle, VideoPortAssociateEventsWithDmaHandle, display.videoportassociateeventswithdmahandle
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows 2000 and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Videoprt.lib
-req.dll : Videoprt.sys
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_PORT_SERVICES
-req.product : Windows 10 or later.
+UID: NF:video.VideoPortAssociateEventsWithDmaHandle
+title: VideoPortAssociateEventsWithDmaHandle function
+author: windows-driver-content
+description: The VideoPortAssociateEventsWithDmaHandle function is obsolete in Windows 2000 and later.VideoPortAssociateEventsWithDmaHandle associates an event, which is shared by the video display driver and the video miniport driver, with a DMA handle.
+old-location: display\videoportassociateeventswithdmahandle.htm
+old-project: display
+ms.assetid: d8a64a06-41b9-429b-a5ac-6de4996c702b
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: VideoPortAssociateEventsWithDmaHandle function [Display Devices], VideoPort_Functions_0b61cb97-6bee-4882-83c9-1a56b8c2807b.xml, video/VideoPortAssociateEventsWithDmaHandle, VideoPortAssociateEventsWithDmaHandle, display.videoportassociateeventswithdmahandle
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows 2000 and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Videoprt.lib
+req.dll: Videoprt.sys
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Videoprt.sys
+apiname:
+-	VideoPortAssociateEventsWithDmaHandle
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_PORT_SERVICES
+req.product: Windows 10 or later.
 ---
 
 

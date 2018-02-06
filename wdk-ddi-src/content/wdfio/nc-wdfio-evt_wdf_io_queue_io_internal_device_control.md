@@ -1,42 +1,47 @@
 ---
-UID : NC:wdfio.EVT_WDF_IO_QUEUE_IO_INTERNAL_DEVICE_CONTROL
-title : EVT_WDF_IO_QUEUE_IO_INTERNAL_DEVICE_CONTROL
-author : windows-driver-content
-description : A driver's EvtIoInternalDeviceControl event callback function processes an I/O request that contains an internal device I/O control code (IOCTL).
-old-location : wdf\evtiointernaldevicecontrol.htm
-old-project : wdf
-ms.assetid : 268d2323-57a3-4674-90e6-d7142804175b
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.evtiointernaldevicecontrol, EvtIoInternalDeviceControl callback function, EvtIoInternalDeviceControl, EVT_WDF_IO_QUEUE_IO_INTERNAL_DEVICE_CONTROL, EVT_WDF_IO_QUEUE_IO_INTERNAL_DEVICE_CONTROL, wdfio/EvtIoInternalDeviceControl, DFQueueObjectRef_6b883c59-a84e-4735-8dec-2b0123b0d61f.xml, kmdf.evtiointernaldevicecontrol
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdfio.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL (see Remarks section)"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_INTERRUPT_INFO, *PWDF_INTERRUPT_INFO
-req.product : Windows 10 or later.
+UID: NC:wdfio.EVT_WDF_IO_QUEUE_IO_INTERNAL_DEVICE_CONTROL
+title: EVT_WDF_IO_QUEUE_IO_INTERNAL_DEVICE_CONTROL
+author: windows-driver-content
+description: A driver's EvtIoInternalDeviceControl event callback function processes an I/O request that contains an internal device I/O control code (IOCTL).
+old-location: wdf\evtiointernaldevicecontrol.htm
+old-project: wdf
+ms.assetid: 268d2323-57a3-4674-90e6-d7142804175b
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.evtiointernaldevicecontrol, EvtIoInternalDeviceControl callback function, EvtIoInternalDeviceControl, EVT_WDF_IO_QUEUE_IO_INTERNAL_DEVICE_CONTROL, EVT_WDF_IO_QUEUE_IO_INTERNAL_DEVICE_CONTROL, wdfio/EvtIoInternalDeviceControl, DFQueueObjectRef_6b883c59-a84e-4735-8dec-2b0123b0d61f.xml, kmdf.evtiointernaldevicecontrol
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdfio.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL (see Remarks section)"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Wdfio.h
+apiname:
+-	EvtIoInternalDeviceControl
+product: Windows
+targetos: Windows
+req.typenames: WDF_INTERRUPT_INFO, *PWDF_INTERRUPT_INFO
+req.product: Windows 10 or later.
 ---
 
 

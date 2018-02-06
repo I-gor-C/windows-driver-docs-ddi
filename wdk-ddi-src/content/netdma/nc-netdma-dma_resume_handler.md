@@ -1,41 +1,46 @@
 ---
-UID : NC:netdma.DMA_RESUME_HANDLER
-title : DMA_RESUME_HANDLER
-author : windows-driver-content
-description : The ProviderResumeDma function resumes the DMA transfers that are currently suspended on a DMA channel.
-old-location : netvista\providerresumedma.htm
-old-project : netvista
-ms.assetid : 06609603-eeed-4fb0-a878-87cad2e72b46
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.providerresumedma, ProviderResumeDma callback function [Network Drivers Starting with Windows Vista], ProviderResumeDma, DMA_RESUME_HANDLER, DMA_RESUME_HANDLER, netdma/ProviderResumeDma, netdma_ref_75548093-1640-40f2-a715-0918b92900d3.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : netdma.h
-req.include-header : Netdma.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported for NetDMA 1.0 drivers in Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : MIRACAST_DRIVER_INTERFACE, *PMIRACAST_DRIVER_INTERFACE
+UID: NC:netdma.DMA_RESUME_HANDLER
+title: DMA_RESUME_HANDLER
+author: windows-driver-content
+description: The ProviderResumeDma function resumes the DMA transfers that are currently suspended on a DMA channel.
+old-location: netvista\providerresumedma.htm
+old-project: netvista
+ms.assetid: 06609603-eeed-4fb0-a878-87cad2e72b46
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.providerresumedma, ProviderResumeDma callback function [Network Drivers Starting with Windows Vista], ProviderResumeDma, DMA_RESUME_HANDLER, DMA_RESUME_HANDLER, netdma/ProviderResumeDma, netdma_ref_75548093-1640-40f2-a715-0918b92900d3.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: netdma.h
+req.include-header: Netdma.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported for NetDMA 1.0 drivers in Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	netdma.h
+apiname:
+-	ProviderResumeDma
+product: Windows
+targetos: Windows
+req.typenames: MIRACAST_DRIVER_INTERFACE, *PMIRACAST_DRIVER_INTERFACE
 ---
 
 

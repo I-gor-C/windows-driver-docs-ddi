@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_CREATEDEVICE
-title : PFND3DDDI_CREATEDEVICE
-author : windows-driver-content
-description : The CreateDevice function creates a graphics context that is referenced in subsequent calls.
-old-location : display\createdevice.htm
-old-project : display
-ms.assetid : ce35bdac-af90-471f-af93-0e665be6c7f6
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.createdevice, CreateDevice callback function [Display Devices], CreateDevice, PFND3DDDI_CREATEDEVICE, PFND3DDDI_CREATEDEVICE, d3dumddi/CreateDevice, UserModeDisplayDriver_Functions_4603a980-54aa-4d90-859a-d84c2afe5f03.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_CREATEDEVICE
+title: PFND3DDDI_CREATEDEVICE
+author: windows-driver-content
+description: The CreateDevice function creates a graphics context that is referenced in subsequent calls.
+old-location: display\createdevice.htm
+old-project: display
+ms.assetid: ce35bdac-af90-471f-af93-0e665be6c7f6
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.createdevice, CreateDevice callback function [Display Devices], CreateDevice, PFND3DDDI_CREATEDEVICE, PFND3DDDI_CREATEDEVICE, d3dumddi/CreateDevice, UserModeDisplayDriver_Functions_4603a980-54aa-4d90-859a-d84c2afe5f03.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	CreateDevice
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

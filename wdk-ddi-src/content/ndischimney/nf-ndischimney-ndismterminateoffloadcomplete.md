@@ -1,41 +1,46 @@
 ---
-UID : NF:ndischimney.NdisMTerminateOffloadComplete
-title : NdisMTerminateOffloadComplete function
-author : windows-driver-content
-description : An offload target calls the NdisMTerminateOffloadComplete function to complete a terminate offload operation that was initiated by a previous call to the MiniportTerminateOffload function of the offload target.
-old-location : netvista\ndismterminateoffloadcomplete.htm
-old-project : netvista
-ms.assetid : d444eae5-2e7c-41f2-9fb2-55e172505cf6
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NdisMTerminateOffloadComplete function [Network Drivers Starting with Windows Vista], netvista.ndismterminateoffloadcomplete, NdisMTerminateOffloadComplete, tcp_chim_ndis_func_3e692d5c-5cad-4567-8639-76f97bf2e39c.xml, ndischimney/NdisMTerminateOffloadComplete
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndischimney.h
-req.include-header : Ndischimney.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PD_BUFFER_VIRTUAL_SUBNET_INFO
+UID: NF:ndischimney.NdisMTerminateOffloadComplete
+title: NdisMTerminateOffloadComplete function
+author: windows-driver-content
+description: An offload target calls the NdisMTerminateOffloadComplete function to complete a terminate offload operation that was initiated by a previous call to the MiniportTerminateOffload function of the offload target.
+old-location: netvista\ndismterminateoffloadcomplete.htm
+old-project: netvista
+ms.assetid: d444eae5-2e7c-41f2-9fb2-55e172505cf6
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NdisMTerminateOffloadComplete function [Network Drivers Starting with Windows Vista], netvista.ndismterminateoffloadcomplete, NdisMTerminateOffloadComplete, tcp_chim_ndis_func_3e692d5c-5cad-4567-8639-76f97bf2e39c.xml, ndischimney/NdisMTerminateOffloadComplete
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndischimney.h
+req.include-header: Ndischimney.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndischimney.h
+apiname:
+-	NdisMTerminateOffloadComplete
+product: Windows
+targetos: Windows
+req.typenames: PD_BUFFER_VIRTUAL_SUBNET_INFO
 ---
 
 

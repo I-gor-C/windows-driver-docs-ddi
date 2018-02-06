@@ -1,42 +1,47 @@
 ---
-UID : NS:wdm._DMA_TRANSFER_INFO
-title : "_DMA_TRANSFER_INFO"
-author : windows-driver-content
-description : The DMA_TRANSFER_INFO structure is a container for a DMA_TRANSFER_INFO_XXX structure that describes the allocation requirements for a scatter/gather list.
-old-location : kernel\dma_transfer_info.htm
-old-project : kernel
-ms.assetid : 1CD5CE6F-5179-40D5-BCD9-3587914C8139
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : PDMA_TRANSFER_INFO, kernel.dma_transfer_info, PDMA_TRANSFER_INFO structure pointer [Kernel-Mode Driver Architecture], wdm/DMA_TRANSFER_INFO, *PDMA_TRANSFER_INFO, _DMA_TRANSFER_INFO, DMA_TRANSFER_INFO structure [Kernel-Mode Driver Architecture], DMA_TRANSFER_INFO, wdm/PDMA_TRANSFER_INFO
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDMA_TRANSFER_INFO, DMA_TRANSFER_INFO"
-req.product : Windows 10 or later.
+UID: NS:wdm._DMA_TRANSFER_INFO
+title: "_DMA_TRANSFER_INFO"
+author: windows-driver-content
+description: The DMA_TRANSFER_INFO structure is a container for a DMA_TRANSFER_INFO_XXX structure that describes the allocation requirements for a scatter/gather list.
+old-location: kernel\dma_transfer_info.htm
+old-project: kernel
+ms.assetid: 1CD5CE6F-5179-40D5-BCD9-3587914C8139
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: PDMA_TRANSFER_INFO, kernel.dma_transfer_info, PDMA_TRANSFER_INFO structure pointer [Kernel-Mode Driver Architecture], wdm/DMA_TRANSFER_INFO, *PDMA_TRANSFER_INFO, _DMA_TRANSFER_INFO, DMA_TRANSFER_INFO structure [Kernel-Mode Driver Architecture], DMA_TRANSFER_INFO, wdm/PDMA_TRANSFER_INFO
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	DMA_TRANSFER_INFO
+product: Windows
+targetos: Windows
+req.typenames: "*PDMA_TRANSFER_INFO, DMA_TRANSFER_INFO"
+req.product: Windows 10 or later.
 ---
 
 # _DMA_TRANSFER_INFO structure

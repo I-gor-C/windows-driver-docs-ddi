@@ -1,42 +1,47 @@
 ---
-UID : NC:wdfchildlist.EVT_WDF_CHILD_LIST_CREATE_DEVICE
-title : EVT_WDF_CHILD_LIST_CREATE_DEVICE
-author : windows-driver-content
-description : A bus driver'sEvtChildListCreateDevice event callback function creates a framework device object for a new device that has been dynamically enumerated.
-old-location : wdf\evtchildlistcreatedevice.htm
-old-project : wdf
-ms.assetid : 296fbe06-1680-43a8-b5c3-1a1faa19c6c3
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.evtchildlistcreatedevice, EvtChildListCreateDevice callback function, EvtChildListCreateDevice, EVT_WDF_CHILD_LIST_CREATE_DEVICE, EVT_WDF_CHILD_LIST_CREATE_DEVICE, wdfchildlist/EvtChildListCreateDevice, DFDeviceObjectChildListRef_e3abb118-d40f-46f5-9b70-80d0fc8c531f.xml, kmdf.evtchildlistcreatedevice
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdfchildlist.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDBGEXTS_THREAD_OS_INFO, WDBGEXTS_THREAD_OS_INFO"
-req.product : Windows 10 or later.
+UID: NC:wdfchildlist.EVT_WDF_CHILD_LIST_CREATE_DEVICE
+title: EVT_WDF_CHILD_LIST_CREATE_DEVICE
+author: windows-driver-content
+description: A bus driver'sEvtChildListCreateDevice event callback function creates a framework device object for a new device that has been dynamically enumerated.
+old-location: wdf\evtchildlistcreatedevice.htm
+old-project: wdf
+ms.assetid: 296fbe06-1680-43a8-b5c3-1a1faa19c6c3
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.evtchildlistcreatedevice, EvtChildListCreateDevice callback function, EvtChildListCreateDevice, EVT_WDF_CHILD_LIST_CREATE_DEVICE, EVT_WDF_CHILD_LIST_CREATE_DEVICE, wdfchildlist/EvtChildListCreateDevice, DFDeviceObjectChildListRef_e3abb118-d40f-46f5-9b70-80d0fc8c531f.xml, kmdf.evtchildlistcreatedevice
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdfchildlist.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	WdfChildlist.h
+apiname:
+-	EvtChildListCreateDevice
+product: Windows
+targetos: Windows
+req.typenames: "*PWDBGEXTS_THREAD_OS_INFO, WDBGEXTS_THREAD_OS_INFO"
+req.product: Windows 10 or later.
 ---
 
 

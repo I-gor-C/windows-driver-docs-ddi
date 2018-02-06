@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.tagKSCAMERA_EXTENDEDPROP_EVCOMPENSATION
-title : tagKSCAMERA_EXTENDEDPROP_EVCOMPENSATION
-author : windows-driver-content
-description : The EV Compensation Control provides for exposure control that is adjusted by increments of EV compensation steps.
-old-location : stream\kscamera_extendedprop_evcompensation.htm
-old-project : stream
-ms.assetid : C9CF39F2-5081-4B99-BFD1-9F7130B27369
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KSCAMERA_EXTENDEDPROP_EVCOMPENSATION structure [Streaming Media Devices], ksmedia/KSCAMERA_EXTENDEDPROP_EVCOMPENSATION, PKSCAMERA_EXTENDEDPROP_EVCOMPENSATION, *PKSCAMERA_EXTENDEDPROP_EVCOMPENSATION, PKSCAMERA_EXTENDEDPROP_EVCOMPENSATION structure pointer [Streaming Media Devices], tagKSCAMERA_EXTENDEDPROP_EVCOMPENSATION, ksmedia/PKSCAMERA_EXTENDEDPROP_EVCOMPENSATION, stream.kscamera_extendedprop_evcompensation, KSCAMERA_EXTENDEDPROP_EVCOMPENSATION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows 8.1.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KSCAMERA_EXTENDEDPROP_EVCOMPENSATION, *PKSCAMERA_EXTENDEDPROP_EVCOMPENSATION
+UID: NS:ksmedia.tagKSCAMERA_EXTENDEDPROP_EVCOMPENSATION
+title: tagKSCAMERA_EXTENDEDPROP_EVCOMPENSATION
+author: windows-driver-content
+description: The EV Compensation Control provides for exposure control that is adjusted by increments of EV compensation steps.
+old-location: stream\kscamera_extendedprop_evcompensation.htm
+old-project: stream
+ms.assetid: C9CF39F2-5081-4B99-BFD1-9F7130B27369
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KSCAMERA_EXTENDEDPROP_EVCOMPENSATION structure [Streaming Media Devices], ksmedia/KSCAMERA_EXTENDEDPROP_EVCOMPENSATION, PKSCAMERA_EXTENDEDPROP_EVCOMPENSATION, *PKSCAMERA_EXTENDEDPROP_EVCOMPENSATION, PKSCAMERA_EXTENDEDPROP_EVCOMPENSATION structure pointer [Streaming Media Devices], tagKSCAMERA_EXTENDEDPROP_EVCOMPENSATION, ksmedia/PKSCAMERA_EXTENDEDPROP_EVCOMPENSATION, stream.kscamera_extendedprop_evcompensation, KSCAMERA_EXTENDEDPROP_EVCOMPENSATION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows 8.1.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ksmedia.h
+apiname:
+-	KSCAMERA_EXTENDEDPROP_EVCOMPENSATION
+product: Windows
+targetos: Windows
+req.typenames: KSCAMERA_EXTENDEDPROP_EVCOMPENSATION, *PKSCAMERA_EXTENDEDPROP_EVCOMPENSATION
 ---
 
 # tagKSCAMERA_EXTENDEDPROP_EVCOMPENSATION structure

@@ -1,41 +1,46 @@
 ---
-UID : NS:mpiowmi._MPIO_DISK_INFO
-title : "_MPIO_DISK_INFO"
-author : windows-driver-content
-description : The MPIO_DISK_INFO structure allows applications to query the system for the top level view of its disk topology. The request must be directed to the MPIO control object by using its WMI instance name.
-old-location : storage\mpio_disk_info.htm
-old-project : storage
-ms.assetid : edefb7f5-f423-48cc-81c9-16153c228d45
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : structs-scsibus_d58f08a1-1534-4f93-83d4-031ce1dee9bf.xml, _MPIO_DISK_INFO, MPIO_DISK_INFO, mpiowmi/MPIO_DISK_INFO, MPIO_DISK_INFO structure [Storage Devices], PMPIO_DISK_INFO structure pointer [Storage Devices], PMPIO_DISK_INFO, storage.mpio_disk_info, *PMPIO_DISK_INFO, mpiowmi/PMPIO_DISK_INFO
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : mpiowmi.h
-req.include-header : Mpiowmi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : MPIO_DISK_INFO, *PMPIO_DISK_INFO
+UID: NS:mpiowmi._MPIO_DISK_INFO
+title: "_MPIO_DISK_INFO"
+author: windows-driver-content
+description: The MPIO_DISK_INFO structure allows applications to query the system for the top level view of its disk topology. The request must be directed to the MPIO control object by using its WMI instance name.
+old-location: storage\mpio_disk_info.htm
+old-project: storage
+ms.assetid: edefb7f5-f423-48cc-81c9-16153c228d45
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: structs-scsibus_d58f08a1-1534-4f93-83d4-031ce1dee9bf.xml, _MPIO_DISK_INFO, MPIO_DISK_INFO, mpiowmi/MPIO_DISK_INFO, MPIO_DISK_INFO structure [Storage Devices], PMPIO_DISK_INFO structure pointer [Storage Devices], PMPIO_DISK_INFO, storage.mpio_disk_info, *PMPIO_DISK_INFO, mpiowmi/PMPIO_DISK_INFO
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: mpiowmi.h
+req.include-header: Mpiowmi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	mpiowmi.h
+apiname:
+-	MPIO_DISK_INFO
+product: Windows
+targetos: Windows
+req.typenames: MPIO_DISK_INFO, *PMPIO_DISK_INFO
 ---
 
 # _MPIO_DISK_INFO structure

@@ -1,42 +1,48 @@
 ---
-UID : NF:wdm.ZwSetValueKey
-title : ZwSetValueKey function
-author : windows-driver-content
-description : The ZwSetValueKey routine creates or replaces a registry key's value entry.
-old-location : kernel\zwsetvaluekey.htm
-old-project : kernel
-ms.assetid : 5e0bcf87-5776-4465-849c-6d4c06832797
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ZwSetValueKey routine [Kernel-Mode Driver Architecture], ZwSetValueKey, k111_08954f01-0f74-4054-a52a-b00fff0dc166.xml, NtSetValueKey, kernel.zwsetvaluekey, wdm/NtSetValueKey, wdm/ZwSetValueKey
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : IrqlZwPassive, PowerIrpDDis, ZwRegistryCreate, ZwRegistryOpen, HwStorPortProhibitedDDIs, ZwRegistryCreate(storport), ZwRegistryOpen(storport)
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ZwSetValueKey
+title: ZwSetValueKey function
+author: windows-driver-content
+description: The ZwSetValueKey routine creates or replaces a registry key's value entry.
+old-location: kernel\zwsetvaluekey.htm
+old-project: kernel
+ms.assetid: 5e0bcf87-5776-4465-849c-6d4c06832797
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ZwSetValueKey routine [Kernel-Mode Driver Architecture], ZwSetValueKey, k111_08954f01-0f74-4054-a52a-b00fff0dc166.xml, NtSetValueKey, kernel.zwsetvaluekey, wdm/NtSetValueKey, wdm/ZwSetValueKey
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: IrqlZwPassive, PowerIrpDDis, ZwRegistryCreate, ZwRegistryOpen, HwStorPortProhibitedDDIs, ZwRegistryCreate(storport), ZwRegistryOpen(storport)
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ZwSetValueKey
+-	NtSetValueKey
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

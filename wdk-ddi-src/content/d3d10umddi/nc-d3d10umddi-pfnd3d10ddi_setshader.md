@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3D10DDI_SETSHADER
-title : PFND3D10DDI_SETSHADER
-author : windows-driver-content
-description : The CsSetShader function sets the compute shader code so that all of the subsequent dispatching operations use that code.
-old-location : display\cssetshader.htm
-old-project : display
-ms.assetid : ab689c60-3099-4d69-a7e2-5edfb623cbc3
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.cssetshader, CsSetShader callback function [Display Devices], CsSetShader, PFND3D10DDI_SETSHADER, PFND3D10DDI_SETSHADER, d3d10umddi/CsSetShader, UserModeDisplayDriverDx11_Functions_4e96f922-1a22-45c3-9c50-a4b71a79f695.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : CsSetShader is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3D10DDI_SETSHADER
+title: PFND3D10DDI_SETSHADER
+author: windows-driver-content
+description: The CsSetShader function sets the compute shader code so that all of the subsequent dispatching operations use that code.
+old-location: display\cssetshader.htm
+old-project: display
+ms.assetid: ab689c60-3099-4d69-a7e2-5edfb623cbc3
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.cssetshader, CsSetShader callback function [Display Devices], CsSetShader, PFND3D10DDI_SETSHADER, PFND3D10DDI_SETSHADER, d3d10umddi/CsSetShader, UserModeDisplayDriverDx11_Functions_4e96f922-1a22-45c3-9c50-a4b71a79f695.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: CsSetShader is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	CsSetShader
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

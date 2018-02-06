@@ -1,41 +1,47 @@
 ---
-UID : NF:iointex.WdmlibIoConnectInterruptEx
-title : WdmlibIoConnectInterruptEx function
-author : windows-driver-content
-description : The WdmlibIoConnectInterruptEx function registers an interrupt-handling routine for a device's interrupts.
-old-location : kernel\wdmlibioconnectinterruptex.htm
-old-project : kernel
-ms.assetid : 172598B1-C486-489F-98F0-382EB8139A08
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : WdmlibIoConnectInterruptEx, kernel.wdmlibioconnectinterruptex, iointex/IoConnectInterruptEx, IoConnectInterruptEx, WdmlibIoConnectInterruptEx function [Kernel-Mode Driver Architecture], iointex/WdmlibIoConnectInterruptEx
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : iointex.h
-req.include-header : Iointex.h, Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available on Windows Vista and later versions of the Windows operating system. Drivers that must also work on Windows 2000, Windows XP, or Windows Server 2003 can instead link to Iointex.lib to use the routine.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : LUID
+UID: NF:iointex.WdmlibIoConnectInterruptEx
+title: WdmlibIoConnectInterruptEx function
+author: windows-driver-content
+description: The WdmlibIoConnectInterruptEx function registers an interrupt-handling routine for a device's interrupts.
+old-location: kernel\wdmlibioconnectinterruptex.htm
+old-project: kernel
+ms.assetid: 172598B1-C486-489F-98F0-382EB8139A08
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: WdmlibIoConnectInterruptEx, kernel.wdmlibioconnectinterruptex, iointex/IoConnectInterruptEx, IoConnectInterruptEx, WdmlibIoConnectInterruptEx function [Kernel-Mode Driver Architecture], iointex/WdmlibIoConnectInterruptEx
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: iointex.h
+req.include-header: Iointex.h, Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available on Windows Vista and later versions of the Windows operating system. Drivers that must also work on Windows 2000, Windows XP, or Windows Server 2003 can instead link to Iointex.lib to use the routine.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	WdmlibIoConnectInterruptEx
+-	IoConnectInterruptEx
+product: Windows
+targetos: Windows
+req.typenames: LUID
 ---
 
 

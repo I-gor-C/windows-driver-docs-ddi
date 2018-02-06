@@ -1,42 +1,47 @@
 ---
-UID : NS:storport._SCSI_POWER_REQUEST_BLOCK
-title : "_SCSI_POWER_REQUEST_BLOCK"
-author : windows-driver-content
-description : The SCSI_POWER_REQUEST_BLOCK structure is a special version of a SCSI_REQUEST_BLOCK that is used for power management requests.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future.
-old-location : storage\scsi_power_request_block.htm
-old-project : storage
-ms.assetid : 04981b68-db32-461b-b24b-8b2bf2e53f78
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : "*PSCSI_POWER_REQUEST_BLOCK, storport/SCSI_POWER_REQUEST_BLOCK, SCSI_POWER_REQUEST_BLOCK structure [Storage Devices], _SCSI_POWER_REQUEST_BLOCK, storage.scsi_power_request_block, storport/PSCSI_POWER_REQUEST_BLOCK, PSCSI_POWER_REQUEST_BLOCK, structs-storport_de071b99-aa78-4c21-845e-f47b7d0297c0.xml, SCSI_POWER_REQUEST_BLOCK, PSCSI_POWER_REQUEST_BLOCK structure pointer [Storage Devices]"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSCSI_POWER_REQUEST_BLOCK, SCSI_POWER_REQUEST_BLOCK"
-req.product : Windows 10 or later.
+UID: NS:storport._SCSI_POWER_REQUEST_BLOCK
+title: "_SCSI_POWER_REQUEST_BLOCK"
+author: windows-driver-content
+description: The SCSI_POWER_REQUEST_BLOCK structure is a special version of a SCSI_REQUEST_BLOCK that is used for power management requests.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future.
+old-location: storage\scsi_power_request_block.htm
+old-project: storage
+ms.assetid: 04981b68-db32-461b-b24b-8b2bf2e53f78
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: "*PSCSI_POWER_REQUEST_BLOCK, storport/SCSI_POWER_REQUEST_BLOCK, SCSI_POWER_REQUEST_BLOCK structure [Storage Devices], _SCSI_POWER_REQUEST_BLOCK, storage.scsi_power_request_block, storport/PSCSI_POWER_REQUEST_BLOCK, PSCSI_POWER_REQUEST_BLOCK, structs-storport_de071b99-aa78-4c21-845e-f47b7d0297c0.xml, SCSI_POWER_REQUEST_BLOCK, PSCSI_POWER_REQUEST_BLOCK structure pointer [Storage Devices]"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	storport.h
+apiname:
+-	SCSI_POWER_REQUEST_BLOCK
+product: Windows
+targetos: Windows
+req.typenames: "*PSCSI_POWER_REQUEST_BLOCK, SCSI_POWER_REQUEST_BLOCK"
+req.product: Windows 10 or later.
 ---
 
 # _SCSI_POWER_REQUEST_BLOCK structure

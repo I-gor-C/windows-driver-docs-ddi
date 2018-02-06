@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugControl3.GetExecutionStatus
-title : IDebugControl3::GetExecutionStatus method
-author : windows-driver-content
-description : The GetExecutionStatus method returns information about the execution status of the debugger engine.
-old-location : debugger\getexecutionstatus.htm
-old-project : debugger
-ms.assetid : 58352577-9ed9-4fc6-9cc7-dabcf4f77ad9
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : GetExecutionStatus method [Windows Debugging], GetExecutionStatus method [Windows Debugging], IDebugControl3 interface, dbgeng/IDebugControl3::GetExecutionStatus, GetExecutionStatus method [Windows Debugging], IDebugControl interface, IDebugControl::GetExecutionStatus, IDebugControl2 interface [Windows Debugging], GetExecutionStatus method, dbgeng/IDebugControl::GetExecutionStatus, IDebugControl2::GetExecutionStatus, dbgeng/IDebugControl2::GetExecutionStatus, IDebugControl3, GetExecutionStatus, IDebugControl3 interface [Windows Debugging], GetExecutionStatus method, IDebugControl3::GetExecutionStatus, debugger.getexecutionstatus, IDebugControl_0e47a42b-f980-4c4b-b8b3-8d795498e5d5.xml, GetExecutionStatus method [Windows Debugging], IDebugControl2 interface, IDebugControl interface [Windows Debugging], GetExecutionStatus method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl3.GetExecutionStatus
+title: IDebugControl3::GetExecutionStatus method
+author: windows-driver-content
+description: The GetExecutionStatus method returns information about the execution status of the debugger engine.
+old-location: debugger\getexecutionstatus.htm
+old-project: debugger
+ms.assetid: 58352577-9ed9-4fc6-9cc7-dabcf4f77ad9
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: GetExecutionStatus method [Windows Debugging], GetExecutionStatus method [Windows Debugging], IDebugControl3 interface, dbgeng/IDebugControl3::GetExecutionStatus, GetExecutionStatus method [Windows Debugging], IDebugControl interface, IDebugControl::GetExecutionStatus, IDebugControl2 interface [Windows Debugging], GetExecutionStatus method, dbgeng/IDebugControl::GetExecutionStatus, IDebugControl2::GetExecutionStatus, dbgeng/IDebugControl2::GetExecutionStatus, IDebugControl3, GetExecutionStatus, IDebugControl3 interface [Windows Debugging], GetExecutionStatus method, IDebugControl3::GetExecutionStatus, debugger.getexecutionstatus, IDebugControl_0e47a42b-f980-4c4b-b8b3-8d795498e5d5.xml, GetExecutionStatus method [Windows Debugging], IDebugControl2 interface, IDebugControl interface [Windows Debugging], GetExecutionStatus method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl.GetExecutionStatus
+-	IDebugControl2.GetExecutionStatus
+-	IDebugControl3.GetExecutionStatus
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

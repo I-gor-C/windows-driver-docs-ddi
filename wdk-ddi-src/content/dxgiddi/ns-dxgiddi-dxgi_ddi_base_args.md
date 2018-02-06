@@ -1,41 +1,46 @@
 ---
-UID : NS:dxgiddi.DXGI_DDI_BASE_ARGS
-title : DXGI_DDI_BASE_ARGS
-author : windows-driver-content
-description : The DXGI_DDI_BASE_ARGS structure contains Microsoft DirectX Graphics Infrastructure (DXGI) basic device driver interface (DDI) device creation arguments.
-old-location : display\dxgi_ddi_base_args.htm
-old-project : display
-ms.assetid : e835edb9-7a7e-4258-957a-49877b1ed562
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgi_ddi_base_args, DXGI_DDI_BASE_ARGS structure [Display Devices], DXGI_DDI_BASE_ARGS, UMDisplayDriver_Dx10param_Structs_3dec4197-80df-4de3-96ca-d4f90f23e85d.xml, dxgiddi/DXGI_DDI_BASE_ARGS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : dxgiddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGI_DDI_BASE_ARGS
+UID: NS:dxgiddi.DXGI_DDI_BASE_ARGS
+title: DXGI_DDI_BASE_ARGS
+author: windows-driver-content
+description: The DXGI_DDI_BASE_ARGS structure contains Microsoft DirectX Graphics Infrastructure (DXGI) basic device driver interface (DDI) device creation arguments.
+old-location: display\dxgi_ddi_base_args.htm
+old-project: display
+ms.assetid: e835edb9-7a7e-4258-957a-49877b1ed562
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgi_ddi_base_args, DXGI_DDI_BASE_ARGS structure [Display Devices], DXGI_DDI_BASE_ARGS, UMDisplayDriver_Dx10param_Structs_3dec4197-80df-4de3-96ca-d4f90f23e85d.xml, dxgiddi/DXGI_DDI_BASE_ARGS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: dxgiddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	dxgiddi.h
+apiname:
+-	DXGI_DDI_BASE_ARGS
+product: Windows
+targetos: Windows
+req.typenames: DXGI_DDI_BASE_ARGS
 ---
 
 # DXGI_DDI_BASE_ARGS structure

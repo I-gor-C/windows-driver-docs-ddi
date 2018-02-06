@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._D3DDDICB_CREATECONTEXT
-title : "_D3DDDICB_CREATECONTEXT"
-author : windows-driver-content
-description : The D3DDDICB_CREATECONTEXT structure describes a context to create.
-old-location : display\d3dddicb_createcontext.htm
-old-project : display
-ms.assetid : 6bee57b5-f4b3-424c-aeb5-3bf65ab16392
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : "_D3DDDICB_CREATECONTEXT, D3DDDICB_CREATECONTEXT, d3dumddi/D3DDDICB_CREATECONTEXT, display.d3dddicb_createcontext, D3DDDICB_CREATECONTEXT structure [Display Devices], D3D_param_Structs_9ad6c5e1-c3aa-4546-b3c9-c07c8350093b.xml"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDICB_CREATECONTEXT
+UID: NS:d3dumddi._D3DDDICB_CREATECONTEXT
+title: "_D3DDDICB_CREATECONTEXT"
+author: windows-driver-content
+description: The D3DDDICB_CREATECONTEXT structure describes a context to create.
+old-location: display\d3dddicb_createcontext.htm
+old-project: display
+ms.assetid: 6bee57b5-f4b3-424c-aeb5-3bf65ab16392
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: "_D3DDDICB_CREATECONTEXT, D3DDDICB_CREATECONTEXT, d3dumddi/D3DDDICB_CREATECONTEXT, display.d3dddicb_createcontext, D3DDDICB_CREATECONTEXT structure [Display Devices], D3D_param_Structs_9ad6c5e1-c3aa-4546-b3c9-c07c8350093b.xml"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	D3DDDICB_CREATECONTEXT
+product: Windows
+targetos: Windows
+req.typenames: D3DDDICB_CREATECONTEXT
 ---
 
 # _D3DDDICB_CREATECONTEXT structure

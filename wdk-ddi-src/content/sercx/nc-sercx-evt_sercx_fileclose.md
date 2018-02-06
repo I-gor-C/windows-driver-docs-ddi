@@ -1,42 +1,47 @@
 ---
-UID : NC:sercx.EVT_SERCX_FILECLOSE
-title : EVT_SERCX_FILECLOSE
-author : windows-driver-content
-description : The EvtSerCxFileClose event callback function notifies the serial controller driver that the file object that represents the serial controller device has been released.
-old-location : serports\evtsercxfileclose.htm
-old-project : serports
-ms.assetid : C72CA6D0-DD85-46AC-9CE3-BE11233475C0
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : serports.evtsercxfileclose, EvtSerCxFileClose callback function [Serial Ports], EvtSerCxFileClose, EVT_SERCX_FILECLOSE, EVT_SERCX_FILECLOSE, 1/EvtSerCxFileClose
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : sercx.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Available starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Called at IRQL <= DISPATCH_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SENSOR_VALUE_PAIR, *PSENSOR_VALUE_PAIR
-req.product : Windows 10 or later.
+UID: NC:sercx.EVT_SERCX_FILECLOSE
+title: EVT_SERCX_FILECLOSE
+author: windows-driver-content
+description: The EvtSerCxFileClose event callback function notifies the serial controller driver that the file object that represents the serial controller device has been released.
+old-location: serports\evtsercxfileclose.htm
+old-project: serports
+ms.assetid: C72CA6D0-DD85-46AC-9CE3-BE11233475C0
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: serports.evtsercxfileclose, EvtSerCxFileClose callback function [Serial Ports], EvtSerCxFileClose, EVT_SERCX_FILECLOSE, EVT_SERCX_FILECLOSE, 1/EvtSerCxFileClose
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: sercx.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Called at IRQL <= DISPATCH_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	1.0\Sercx.h
+apiname:
+-	EvtSerCxFileClose
+product: Windows
+targetos: Windows
+req.typenames: SENSOR_VALUE_PAIR, *PSENSOR_VALUE_PAIR
+req.product: Windows 10 or later.
 ---
 
 

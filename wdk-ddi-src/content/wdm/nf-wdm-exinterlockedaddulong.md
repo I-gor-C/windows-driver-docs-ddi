@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.ExInterlockedAddUlong
-title : ExInterlockedAddUlong function
-author : windows-driver-content
-description : The ExInterlockedAddUlong routine adds an unsigned long value to a given unsigned integer as an atomic operation.
-old-location : kernel\exinterlockedaddulong.htm
-old-project : kernel
-ms.assetid : c418538a-4041-4ea8-8a4c-1f4d35e434c7
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/ExInterlockedAddUlong, ExInterlockedAddUlong routine [Kernel-Mode Driver Architecture], k102_bec4a58e-ee68-4f9e-8fac-9ef0c193ef10.xml, kernel.exinterlockedaddulong, ExInterlockedAddUlong
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : Any level (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ExInterlockedAddUlong
+title: ExInterlockedAddUlong function
+author: windows-driver-content
+description: The ExInterlockedAddUlong routine adds an unsigned long value to a given unsigned integer as an atomic operation.
+old-location: kernel\exinterlockedaddulong.htm
+old-project: kernel
+ms.assetid: c418538a-4041-4ea8-8a4c-1f4d35e434c7
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/ExInterlockedAddUlong, ExInterlockedAddUlong routine [Kernel-Mode Driver Architecture], k102_bec4a58e-ee68-4f9e-8fac-9ef0c193ef10.xml, kernel.exinterlockedaddulong, ExInterlockedAddUlong
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: Any level (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ExInterlockedAddUlong
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

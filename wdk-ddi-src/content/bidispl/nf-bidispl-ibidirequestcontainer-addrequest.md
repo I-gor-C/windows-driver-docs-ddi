@@ -1,42 +1,46 @@
 ---
-UID : NF:bidispl.IBidiRequestContainer.AddRequest
-title : IBidiRequestContainer::AddRequest method
-author : windows-driver-content
-description : The IBidiRequestContainer::AddRequest method adds a request to the request list.
-old-location : print\ibidirequestcontainer_ibidirequestcontainer__addrequest.htm
-old-project : print
-ms.assetid : 69a97816-2994-4eec-b2ab-a545195e3776
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : AddRequest, gdi.ibidirequestcontainer_ibidirequestcontainer__addrequest, IBidiRequestContainer::AddRequest method [Print Devices], IBidiRequestContainer::AddRequest, IBidiRequestContainer interface [Print Devices], IBidiRequestContainer::AddRequest method, print.ibidirequestcontainer_ibidirequestcontainer__addrequest, bidispl/IBidiRequestContainer::IBidiRequestContainer::AddRequest, IBidiRequestContainer::AddRequest method [Print Devices], IBidiRequestContainer interface, IBidiRequestContainer::IBidiRequestContainer::AddRequest, IBidiRequestContainer, _win32_IBidiRequestContainer_AddRequest
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : bidispl.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Windows XP
-req.target-min-winversvr : Windows Server 2003
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : bidispl.h
-req.dll : Bidispl.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
+UID: NF:bidispl.IBidiRequestContainer.AddRequest
+title: IBidiRequestContainer::AddRequest method
+author: windows-driver-content
+description: The IBidiRequestContainer::AddRequest method adds a request to the request list.
+old-location: print\ibidirequestcontainer_ibidirequestcontainer__addrequest.htm
+old-project: print
+ms.assetid: 69a97816-2994-4eec-b2ab-a545195e3776
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: AddRequest, gdi.ibidirequestcontainer_ibidirequestcontainer__addrequest, IBidiRequestContainer::AddRequest method [Print Devices], IBidiRequestContainer::AddRequest, IBidiRequestContainer interface [Print Devices], IBidiRequestContainer::AddRequest method, print.ibidirequestcontainer_ibidirequestcontainer__addrequest, bidispl/IBidiRequestContainer::IBidiRequestContainer::AddRequest, IBidiRequestContainer::AddRequest method [Print Devices], IBidiRequestContainer interface, IBidiRequestContainer::IBidiRequestContainer::AddRequest, IBidiRequestContainer, _win32_IBidiRequestContainer_AddRequest
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: bidispl.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Windows XP
+req.target-min-winversvr: Windows Server 2003
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: bidispl.h
+req.dll: Bidispl.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	bidispl.dll
+apiname:
 -	IBidiRequestContainer.IBidiRequestContainer::AddRequest
-product : Windows
-targetos : Windows
-req.typenames : "*PMPEG2_TRANSPORT_STRIDE, MPEG2_TRANSPORT_STRIDE"
+product: Windows
+targetos: Windows
+req.typenames: "*PMPEG2_TRANSPORT_STRIDE, MPEG2_TRANSPORT_STRIDE"
 ---
 
 

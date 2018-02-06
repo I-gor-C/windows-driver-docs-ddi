@@ -1,41 +1,46 @@
 ---
-UID : NC:ntddk.PSHED_PI_GET_ERROR_SOURCE_INFO
-title : PSHED_PI_GET_ERROR_SOURCE_INFO
-author : windows-driver-content
-description : A PSHED plug-in's GetErrorSourceInfo callback function returns an error source descriptor structure that represents a particular error source that is implemented by the hardware platform.
-old-location : whea\geterrorsourceinfo.htm
-old-project : whea
-ms.assetid : 8ede391a-acda-4540-a8bb-1b232695d632
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : whea.geterrorsourceinfo, GetErrorSourceInfo callback function [WHEA Drivers and Applications], GetErrorSourceInfo, PSHED_PI_GET_ERROR_SOURCE_INFO, PSHED_PI_GET_ERROR_SOURCE_INFO, ntddk/GetErrorSourceInfo, whearef_977e9d78-23ec-408f-ba18-a4a96f9a8e62.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PFILTER_INITIALIZATION_DATA, FILTER_INITIALIZATION_DATA"
+UID: NC:ntddk.PSHED_PI_GET_ERROR_SOURCE_INFO
+title: PSHED_PI_GET_ERROR_SOURCE_INFO
+author: windows-driver-content
+description: A PSHED plug-in's GetErrorSourceInfo callback function returns an error source descriptor structure that represents a particular error source that is implemented by the hardware platform.
+old-location: whea\geterrorsourceinfo.htm
+old-project: whea
+ms.assetid: 8ede391a-acda-4540-a8bb-1b232695d632
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: whea.geterrorsourceinfo, GetErrorSourceInfo callback function [WHEA Drivers and Applications], GetErrorSourceInfo, PSHED_PI_GET_ERROR_SOURCE_INFO, PSHED_PI_GET_ERROR_SOURCE_INFO, ntddk/GetErrorSourceInfo, whearef_977e9d78-23ec-408f-ba18-a4a96f9a8e62.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ntddk.h
+apiname:
+-	GetErrorSourceInfo
+product: Windows
+targetos: Windows
+req.typenames: "*PFILTER_INITIALIZATION_DATA, FILTER_INITIALIZATION_DATA"
 ---
 
 

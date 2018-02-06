@@ -1,41 +1,47 @@
 ---
-UID : NC:d3dkmddi.DXGKCB_RESERVEGPUVIRTUALADDRESSRANGE
-title : DXGKCB_RESERVEGPUVIRTUALADDRESSRANGE
-author : windows-driver-content
-description : DxgkCbReserveGpuVirtualAddressRange allows the kernel mode driver to reserve a graphics processing unit (GPU) virtual address range during creation of a process.
-old-location : display\dxgkcbreservegpuvirtualaddressrange.htm
-old-project : display
-ms.assetid : 26A827F1-1094-4A7D-9C63-758925EE6273
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkcbreservegpuvirtualaddressrange, DxgkCbReserveGpuVirtualAddressRange callback function [Display Devices], DxgkCbReserveGpuVirtualAddressRange, DXGKCB_RESERVEGPUVIRTUALADDRESSRANGE, DXGKCB_RESERVEGPUVIRTUALADDRESSRANGE, dispmprt/DxgkCbReserveGpuVirtualAddressRange, d3dkmddi/DxgkCbReserveGpuVirtualAddressRange
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dkmddi.h
-req.include-header : Dispmprt.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
+UID: NC:d3dkmddi.DXGKCB_RESERVEGPUVIRTUALADDRESSRANGE
+title: DXGKCB_RESERVEGPUVIRTUALADDRESSRANGE
+author: windows-driver-content
+description: DxgkCbReserveGpuVirtualAddressRange allows the kernel mode driver to reserve a graphics processing unit (GPU) virtual address range during creation of a process.
+old-location: display\dxgkcbreservegpuvirtualaddressrange.htm
+old-project: display
+ms.assetid: 26A827F1-1094-4A7D-9C63-758925EE6273
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkcbreservegpuvirtualaddressrange, DxgkCbReserveGpuVirtualAddressRange callback function [Display Devices], DxgkCbReserveGpuVirtualAddressRange, DXGKCB_RESERVEGPUVIRTUALADDRESSRANGE, DXGKCB_RESERVEGPUVIRTUALADDRESSRANGE, dispmprt/DxgkCbReserveGpuVirtualAddressRange, d3dkmddi/DxgkCbReserveGpuVirtualAddressRange
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dkmddi.h
+req.include-header: Dispmprt.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	dispmprt.h
+-	d3dkmddi.h
+apiname:
+-	DxgkCbReserveGpuVirtualAddressRange
+product: Windows
+targetos: Windows
+req.typenames: DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NF:fcb.RxpDereferenceNetFcb
-title : RxpDereferenceNetFcb function
-author : windows-driver-content
-description : RxpDereferenceNetFcb decrements the reference count on an FCB structure.
-old-location : ifsk\rxpdereferencenetfcb.htm
-old-project : ifsk
-ms.assetid : 6e59a1c7-ddd4-40a6-8e75-879cbef010db
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : RxpDereferenceNetFcb, fcb/RxpDereferenceNetFcb, RxpDereferenceNetFcb function [Installable File System Drivers], rxref_5b67e32d-12f2-4c52-9099-16505e00233f.xml, ifsk.rxpdereferencenetfcb
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fcb.h
-req.include-header : Fcb.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FA_ENTRY, *PFA_ENTRY
+UID: NF:fcb.RxpDereferenceNetFcb
+title: RxpDereferenceNetFcb function
+author: windows-driver-content
+description: RxpDereferenceNetFcb decrements the reference count on an FCB structure.
+old-location: ifsk\rxpdereferencenetfcb.htm
+old-project: ifsk
+ms.assetid: 6e59a1c7-ddd4-40a6-8e75-879cbef010db
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: RxpDereferenceNetFcb, fcb/RxpDereferenceNetFcb, RxpDereferenceNetFcb function [Installable File System Drivers], rxref_5b67e32d-12f2-4c52-9099-16505e00233f.xml, ifsk.rxpdereferencenetfcb
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fcb.h
+req.include-header: Fcb.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	fcb.h
+apiname:
+-	RxpDereferenceNetFcb
+product: Windows
+targetos: Windows
+req.typenames: FA_ENTRY, *PFA_ENTRY
 ---
 
 

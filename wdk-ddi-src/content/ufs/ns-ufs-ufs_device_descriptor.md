@@ -1,42 +1,47 @@
 ---
-UID : NS:ufs.UFS_DEVICE_DESCRIPTOR
-title : UFS_DEVICE_DESCRIPTOR
-author : windows-driver-content
-description : UFS_DEVICE_DESCRIPTOR is the main descriptor for Universal Flash Storage (UFS) devices and should be the first descriptor retrieved as it specifies the device class and sub-class and the protocol (command set) to use to access this device and the maximum number of logical units contained within the device.
-old-location : storage\ufs_device_descriptor.htm
-old-project : storage
-ms.assetid : CD1F59DA-3D84-422B-A862-8F4C5E1AA515
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ufs_device_descriptor, PUFS_DEVICE_DESCRIPTOR structure pointer [Storage Devices], UFS_DEVICE_DESCRIPTOR, UFS_DEVICE_DESCRIPTOR structure [Storage Devices], *PUFS_DEVICE_DESCRIPTOR, ufs/UFS_DEVICE_DESCRIPTOR, ufs/PUFS_DEVICE_DESCRIPTOR, PUFS_DEVICE_DESCRIPTOR
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ufs.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10, version 1709
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : UFS_DEVICE_DESCRIPTOR, *PUFS_DEVICE_DESCRIPTOR
-req.product : Windows 10 or later.
+UID: NS:ufs.UFS_DEVICE_DESCRIPTOR
+title: UFS_DEVICE_DESCRIPTOR
+author: windows-driver-content
+description: UFS_DEVICE_DESCRIPTOR is the main descriptor for Universal Flash Storage (UFS) devices and should be the first descriptor retrieved as it specifies the device class and sub-class and the protocol (command set) to use to access this device and the maximum number of logical units contained within the device.
+old-location: storage\ufs_device_descriptor.htm
+old-project: storage
+ms.assetid: CD1F59DA-3D84-422B-A862-8F4C5E1AA515
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ufs_device_descriptor, PUFS_DEVICE_DESCRIPTOR structure pointer [Storage Devices], UFS_DEVICE_DESCRIPTOR, UFS_DEVICE_DESCRIPTOR structure [Storage Devices], *PUFS_DEVICE_DESCRIPTOR, ufs/UFS_DEVICE_DESCRIPTOR, ufs/PUFS_DEVICE_DESCRIPTOR, PUFS_DEVICE_DESCRIPTOR
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ufs.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10, version 1709
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ufs.h
+apiname:
+-	UFS_DEVICE_DESCRIPTOR
+product: Windows
+targetos: Windows
+req.typenames: UFS_DEVICE_DESCRIPTOR, *PUFS_DEVICE_DESCRIPTOR
+req.product: Windows 10 or later.
 ---
 
 # UFS_DEVICE_DESCRIPTOR structure

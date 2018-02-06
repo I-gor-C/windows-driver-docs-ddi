@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFRemoteTarget.GetState
-title : IWDFRemoteTarget::GetState method
-author : windows-driver-content
-description : The GetState method returns the current state of a remote I/O target.
-old-location : wdf\iwdfremotetarget_getstate.htm
-old-project : wdf
-ms.assetid : 3918d764-c5bb-42b6-8b06-a2d544511a96
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : umdf.iwdfremotetarget_getstate, GetState method, GetState method, IWDFRemoteTarget interface, IWDFRemoteTarget interface, GetState method, IWDFRemoteTarget::GetState, GetState, IWDFRemoteTarget, wdf.iwdfremotetarget_getstate, wudfddi/IWDFRemoteTarget::GetState, UMDFIoTargetObjectRef_34bf0f92-927a-4733-9897-5aa146998136.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.9
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFRemoteTarget.GetState
+title: IWDFRemoteTarget::GetState method
+author: windows-driver-content
+description: The GetState method returns the current state of a remote I/O target.
+old-location: wdf\iwdfremotetarget_getstate.htm
+old-project: wdf
+ms.assetid: 3918d764-c5bb-42b6-8b06-a2d544511a96
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: umdf.iwdfremotetarget_getstate, GetState method, GetState method, IWDFRemoteTarget interface, IWDFRemoteTarget interface, GetState method, IWDFRemoteTarget::GetState, GetState, IWDFRemoteTarget, wdf.iwdfremotetarget_getstate, wudfddi/IWDFRemoteTarget::GetState, UMDFIoTargetObjectRef_34bf0f92-927a-4733-9897-5aa146998136.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.9
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFRemoteTarget.GetState
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

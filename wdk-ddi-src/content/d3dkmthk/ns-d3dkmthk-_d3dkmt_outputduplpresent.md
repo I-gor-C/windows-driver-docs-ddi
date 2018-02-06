@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmthk._D3DKMT_OUTPUTDUPLPRESENT
-title : "_D3DKMT_OUTPUTDUPLPRESENT"
-author : windows-driver-content
-description : Describes a Desktop Duplication API swapchain present operation.
-old-location : display\d3dkmt_outputduplpresent.htm
-old-project : display
-ms.assetid : 1820e11c-0888-4d6d-aa75-b895c863eb43
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3dkmthk/D3DKMT_OUTPUTDUPLPRESENT, D3DKMT_OUTPUTDUPLPRESENT, D3DKMT_OUTPUTDUPLPRESENT structure [Display Devices], _D3DKMT_OUTPUTDUPLPRESENT, display.d3dkmt_outputduplpresent
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_OUTPUTDUPLPRESENT
+UID: NS:d3dkmthk._D3DKMT_OUTPUTDUPLPRESENT
+title: "_D3DKMT_OUTPUTDUPLPRESENT"
+author: windows-driver-content
+description: Describes a Desktop Duplication API swapchain present operation.
+old-location: display\d3dkmt_outputduplpresent.htm
+old-project: display
+ms.assetid: 1820e11c-0888-4d6d-aa75-b895c863eb43
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3dkmthk/D3DKMT_OUTPUTDUPLPRESENT, D3DKMT_OUTPUTDUPLPRESENT, D3DKMT_OUTPUTDUPLPRESENT structure [Display Devices], _D3DKMT_OUTPUTDUPLPRESENT, display.d3dkmt_outputduplpresent
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	D3dkmthk.h
+apiname:
+-	D3DKMT_OUTPUTDUPLPRESENT
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_OUTPUTDUPLPRESENT
 ---
 
 # _D3DKMT_OUTPUTDUPLPRESENT structure

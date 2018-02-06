@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfinterrupt.WdfInterruptReportInactive
-title : WdfInterruptReportInactive function
-author : windows-driver-content
-description : The WdfInterruptReportInactive method informs the system that the interrupt is no longer active and the driver is not expecting interrupt requests on the associated lines.
-old-location : wdf\wdfinterruptreportinactive.htm
-old-project : wdf
-ms.assetid : 322E70AA-5825-4199-B822-B48B12E62393
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WdfInterruptReportInactive, kmdf._wdfinterruptreportinactive, wdfinterrupt/WdfInterruptReportInactive, wdf.wdfinterruptreportinactive, PFN_WDFINTERRUPTREPORTINACTIVE, WdfInterruptReportInactive method, kmdf.wdfinterruptreportinactive
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfinterrupt.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : 
-req.kmdf-ver : 1.11
-req.umdf-ver : 
-req.ddi-compliance : DriverCreate
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_INTERRUPT_PRIORITY, *PWDF_INTERRUPT_PRIORITY
-req.product : Windows 10 or later.
+UID: NF:wdfinterrupt.WdfInterruptReportInactive
+title: WdfInterruptReportInactive function
+author: windows-driver-content
+description: The WdfInterruptReportInactive method informs the system that the interrupt is no longer active and the driver is not expecting interrupt requests on the associated lines.
+old-location: wdf\wdfinterruptreportinactive.htm
+old-project: wdf
+ms.assetid: 322E70AA-5825-4199-B822-B48B12E62393
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WdfInterruptReportInactive, kmdf._wdfinterruptreportinactive, wdfinterrupt/WdfInterruptReportInactive, wdf.wdfinterruptreportinactive, PFN_WDFINTERRUPTREPORTINACTIVE, WdfInterruptReportInactive method, kmdf.wdfinterruptreportinactive
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfinterrupt.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: 
+req.kmdf-ver: 1.11
+req.umdf-ver: 
+req.ddi-compliance: DriverCreate
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfInterruptReportInactive
+product: Windows
+targetos: Windows
+req.typenames: WDF_INTERRUPT_PRIORITY, *PWDF_INTERRUPT_PRIORITY
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NS:wdfdmaenabler._WDF_DMA_ENABLER_CONFIG
-title : "_WDF_DMA_ENABLER_CONFIG"
-author : windows-driver-content
-description : The WDF_DMA_ENABLER_CONFIG structure supplies characteristics for a DMA enabler object.
-old-location : wdf\wdf_dma_enabler_config.htm
-old-project : wdf
-ms.assetid : 60702ce0-c15b-49ad-b983-af68086710b2
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : PWDF_DMA_ENABLER_CONFIG, *PWDF_DMA_ENABLER_CONFIG, wdfdmaenabler/PWDF_DMA_ENABLER_CONFIG, wdfdmaenabler/WDF_DMA_ENABLER_CONFIG, kmdf.wdf_dma_enabler_config, wdf.wdf_dma_enabler_config, _WDF_DMA_ENABLER_CONFIG, PWDF_DMA_ENABLER_CONFIG structure pointer, WDF_DMA_ENABLER_CONFIG structure, WDF_DMA_ENABLER_CONFIG, DFDmaObjectRef_854b91a3-b389-47a9-bc88-d4796025f73e.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdfdmaenabler.h
-req.include-header : Wdf.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDF_DMA_ENABLER_CONFIG, WDF_DMA_ENABLER_CONFIG"
-req.product : Windows 10 or later.
+UID: NS:wdfdmaenabler._WDF_DMA_ENABLER_CONFIG
+title: "_WDF_DMA_ENABLER_CONFIG"
+author: windows-driver-content
+description: The WDF_DMA_ENABLER_CONFIG structure supplies characteristics for a DMA enabler object.
+old-location: wdf\wdf_dma_enabler_config.htm
+old-project: wdf
+ms.assetid: 60702ce0-c15b-49ad-b983-af68086710b2
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: PWDF_DMA_ENABLER_CONFIG, *PWDF_DMA_ENABLER_CONFIG, wdfdmaenabler/PWDF_DMA_ENABLER_CONFIG, wdfdmaenabler/WDF_DMA_ENABLER_CONFIG, kmdf.wdf_dma_enabler_config, wdf.wdf_dma_enabler_config, _WDF_DMA_ENABLER_CONFIG, PWDF_DMA_ENABLER_CONFIG structure pointer, WDF_DMA_ENABLER_CONFIG structure, WDF_DMA_ENABLER_CONFIG, DFDmaObjectRef_854b91a3-b389-47a9-bc88-d4796025f73e.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdfdmaenabler.h
+req.include-header: Wdf.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfdmaenabler.h
+apiname:
+-	WDF_DMA_ENABLER_CONFIG
+product: Windows
+targetos: Windows
+req.typenames: "*PWDF_DMA_ENABLER_CONFIG, WDF_DMA_ENABLER_CONFIG"
+req.product: Windows 10 or later.
 ---
 
 # _WDF_DMA_ENABLER_CONFIG structure

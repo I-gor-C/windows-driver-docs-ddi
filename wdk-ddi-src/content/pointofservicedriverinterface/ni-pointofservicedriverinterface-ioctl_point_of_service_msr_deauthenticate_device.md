@@ -1,41 +1,46 @@
 ---
-UID : NI:pointofservicedriverinterface.IOCTL_POINT_OF_SERVICE_MSR_DEAUTHENTICATE_DEVICE
-title : IOCTL_POINT_OF_SERVICE_MSR_DEAUTHENTICATE_DEVICE
-author : windows-driver-content
-description : This I/O control function deauthenticates the magnetic stripe reader (MSR).
-old-location : pos\ioctl_point_of_service_msr_deauthenticate_device.htm
-old-project : pos
-ms.assetid : 796ee8e7-693f-41dd-ad09-cb3c21779ab9
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : pos.ioctl_point_of_service_msr_deauthenticate_device, IOCTL_POINT_OF_SERVICE_MSR_DEAUTHENTICATE_DEVICE control code, IOCTL_POINT_OF_SERVICE_MSR_DEAUTHENTICATE_DEVICE, pointofservicedriverinterface/IOCTL_POINT_OF_SERVICE_MSR_DEAUTHENTICATE_DEVICE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : pointofservicedriverinterface.h
-req.include-header : Pointofservicedriverinterface.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PosPropertyId
+UID: NI:pointofservicedriverinterface.IOCTL_POINT_OF_SERVICE_MSR_DEAUTHENTICATE_DEVICE
+title: IOCTL_POINT_OF_SERVICE_MSR_DEAUTHENTICATE_DEVICE
+author: windows-driver-content
+description: This I/O control function deauthenticates the magnetic stripe reader (MSR).
+old-location: pos\ioctl_point_of_service_msr_deauthenticate_device.htm
+old-project: pos
+ms.assetid: 796ee8e7-693f-41dd-ad09-cb3c21779ab9
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: pos.ioctl_point_of_service_msr_deauthenticate_device, IOCTL_POINT_OF_SERVICE_MSR_DEAUTHENTICATE_DEVICE control code, IOCTL_POINT_OF_SERVICE_MSR_DEAUTHENTICATE_DEVICE, pointofservicedriverinterface/IOCTL_POINT_OF_SERVICE_MSR_DEAUTHENTICATE_DEVICE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: pointofservicedriverinterface.h
+req.include-header: Pointofservicedriverinterface.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	pointofservicedriverinterface.h
+apiname:
+-	IOCTL_POINT_OF_SERVICE_MSR_DEAUTHENTICATE_DEVICE
+product: Windows
+targetos: Windows
+req.typenames: PosPropertyId
 ---
 
 # IOCTL_POINT_OF_SERVICE_MSR_DEAUTHENTICATE_DEVICE IOCTL

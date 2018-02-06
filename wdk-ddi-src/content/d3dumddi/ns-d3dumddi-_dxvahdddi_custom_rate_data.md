@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._DXVAHDDDI_CUSTOM_RATE_DATA
-title : "_DXVAHDDDI_CUSTOM_RATE_DATA"
-author : windows-driver-content
-description : The DXVAHDDDI_CUSTOM_RATE_DATA structure describes the video content that a decode device processes.
-old-location : display\dxvahdddi_custom_rate_data.htm
-old-project : display
-ms.assetid : 828c4c42-a74f-4737-b850-5c8299e5afd6
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3dumddi/DXVAHDDDI_CUSTOM_RATE_DATA, DXVA2_Structs_98dcb947-954a-4e8d-adea-3451814e89f9.xml, DXVAHDDDI_CUSTOM_RATE_DATA, display.dxvahdddi_custom_rate_data, _DXVAHDDDI_CUSTOM_RATE_DATA, DXVAHDDDI_CUSTOM_RATE_DATA structure [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : DXVAHDDDI_CUSTOM_RATE_DATA is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXVAHDDDI_CUSTOM_RATE_DATA
+UID: NS:d3dumddi._DXVAHDDDI_CUSTOM_RATE_DATA
+title: "_DXVAHDDDI_CUSTOM_RATE_DATA"
+author: windows-driver-content
+description: The DXVAHDDDI_CUSTOM_RATE_DATA structure describes the video content that a decode device processes.
+old-location: display\dxvahdddi_custom_rate_data.htm
+old-project: display
+ms.assetid: 828c4c42-a74f-4737-b850-5c8299e5afd6
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3dumddi/DXVAHDDDI_CUSTOM_RATE_DATA, DXVA2_Structs_98dcb947-954a-4e8d-adea-3451814e89f9.xml, DXVAHDDDI_CUSTOM_RATE_DATA, display.dxvahdddi_custom_rate_data, _DXVAHDDDI_CUSTOM_RATE_DATA, DXVAHDDDI_CUSTOM_RATE_DATA structure [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: DXVAHDDDI_CUSTOM_RATE_DATA is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	DXVAHDDDI_CUSTOM_RATE_DATA
+product: Windows
+targetos: Windows
+req.typenames: DXVAHDDDI_CUSTOM_RATE_DATA
 ---
 
 # _DXVAHDDDI_CUSTOM_RATE_DATA structure

@@ -1,42 +1,47 @@
 ---
-UID : NF:video.VideoPortAcquireSpinLockAtDpcLevel
-title : VideoPortAcquireSpinLockAtDpcLevel function
-author : windows-driver-content
-description : The VideoPortAcquireSpinLockAtDpcLevel function acquires a spin lock when the caller is already running at IRQL = DISPATCH_LEVEL.
-old-location : display\videoportacquirespinlockatdpclevel.htm
-old-project : display
-ms.assetid : 72c6e923-e7c0-4d3d-a115-33e3e11053eb
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : VideoPortAcquireSpinLockAtDpcLevel function [Display Devices], video/VideoPortAcquireSpinLockAtDpcLevel, display.videoportacquirespinlockatdpclevel, VideoPort_Functions_fc52bdfd-6f1a-4f5c-93e6-321d2488bcd5.xml, VideoPortAcquireSpinLockAtDpcLevel
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows XP and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Videoprt.lib
-req.dll : Videoprt.sys
-req.irql : DISPATCH_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_PORT_SERVICES
-req.product : Windows 10 or later.
+UID: NF:video.VideoPortAcquireSpinLockAtDpcLevel
+title: VideoPortAcquireSpinLockAtDpcLevel function
+author: windows-driver-content
+description: The VideoPortAcquireSpinLockAtDpcLevel function acquires a spin lock when the caller is already running at IRQL = DISPATCH_LEVEL.
+old-location: display\videoportacquirespinlockatdpclevel.htm
+old-project: display
+ms.assetid: 72c6e923-e7c0-4d3d-a115-33e3e11053eb
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: VideoPortAcquireSpinLockAtDpcLevel function [Display Devices], video/VideoPortAcquireSpinLockAtDpcLevel, display.videoportacquirespinlockatdpclevel, VideoPort_Functions_fc52bdfd-6f1a-4f5c-93e6-321d2488bcd5.xml, VideoPortAcquireSpinLockAtDpcLevel
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows XP and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Videoprt.lib
+req.dll: Videoprt.sys
+req.irql: DISPATCH_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Videoprt.sys
+apiname:
+-	VideoPortAcquireSpinLockAtDpcLevel
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_PORT_SERVICES
+req.product: Windows 10 or later.
 ---
 
 

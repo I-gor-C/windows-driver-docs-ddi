@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltPurgeFileNameInformationCache
-title : FltPurgeFileNameInformationCache function
-author : windows-driver-content
-description : FltPurgeFileNameInformationCache purges from the Filter Manager's name cache all file name information structures that were generated from names provided by the given minifilter driver instance.
-old-location : ifsk\fltpurgefilenameinformationcache.htm
-old-project : ifsk
-ms.assetid : d3c4d041-0589-46f5-a514-8efb0db642c7
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltApiRef_p_to_z_2b9315b1-c1c1-4739-af0e-0acebae1c59e.xml, fltkernel/FltPurgeFileNameInformationCache, ifsk.fltpurgefilenameinformationcache, FltPurgeFileNameInformationCache function [Installable File System Drivers], FltPurgeFileNameInformationCache
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltPurgeFileNameInformationCache
+title: FltPurgeFileNameInformationCache function
+author: windows-driver-content
+description: FltPurgeFileNameInformationCache purges from the Filter Manager's name cache all file name information structures that were generated from names provided by the given minifilter driver instance.
+old-location: ifsk\fltpurgefilenameinformationcache.htm
+old-project: ifsk
+ms.assetid: d3c4d041-0589-46f5-a514-8efb0db642c7
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltApiRef_p_to_z_2b9315b1-c1c1-4739-af0e-0acebae1c59e.xml, fltkernel/FltPurgeFileNameInformationCache, ifsk.fltpurgefilenameinformationcache, FltPurgeFileNameInformationCache function [Installable File System Drivers], FltPurgeFileNameInformationCache
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltPurgeFileNameInformationCache
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3D10DDI_CREATEPIXELSHADER
-title : PFND3D10DDI_CREATEPIXELSHADER
-author : windows-driver-content
-description : The CreatePixelShader(D3D10) function creates a pixel shader.
-old-location : display\createpixelshader_d3d10_.htm
-old-project : display
-ms.assetid : 67b7cc14-89f5-45f2-b1cf-53316f495c66
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.createpixelshader_d3d10_, CreatePixelShader callback function [Display Devices], CreatePixelShader, PFND3D10DDI_CREATEPIXELSHADER, PFND3D10DDI_CREATEPIXELSHADER, d3d10umddi/CreatePixelShader, UserModeDisplayDriverDx10_Functions_23347d7f-4550-4b9e-a64a-8fcb9b1573c6.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3D10DDI_CREATEPIXELSHADER
+title: PFND3D10DDI_CREATEPIXELSHADER
+author: windows-driver-content
+description: The CreatePixelShader(D3D10) function creates a pixel shader.
+old-location: display\createpixelshader_d3d10_.htm
+old-project: display
+ms.assetid: 67b7cc14-89f5-45f2-b1cf-53316f495c66
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.createpixelshader_d3d10_, CreatePixelShader callback function [Display Devices], CreatePixelShader, PFND3D10DDI_CREATEPIXELSHADER, PFND3D10DDI_CREATEPIXELSHADER, d3d10umddi/CreatePixelShader, UserModeDisplayDriverDx10_Functions_23347d7f-4550-4b9e-a64a-8fcb9b1573c6.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	CreatePixelShader
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

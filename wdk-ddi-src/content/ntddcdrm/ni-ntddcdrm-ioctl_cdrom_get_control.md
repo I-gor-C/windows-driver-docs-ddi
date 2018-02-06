@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddcdrm.IOCTL_CDROM_GET_CONTROL
-title : IOCTL_CDROM_GET_CONTROL
-author : windows-driver-content
-description : This IOCTL request is obsolete. Do not use.Determines the current audio playback mode.
-old-location : storage\ioctl_cdrom_get_control.htm
-old-project : storage
-ms.assetid : 3d474eb7-6622-48fd-bf40-c17d03933828
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_cdrom_get_control, IOCTL_CDROM_GET_CONTROL control code [Storage Devices], IOCTL_CDROM_GET_CONTROL, ntddcdrm/IOCTL_CDROM_GET_CONTROL, k307_441b4747-9431-42c3-b550-39aaea1229f1.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddcdrm.h
-req.include-header : Ntddcdrm.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WRITE_ROTATION, *PWRITE_ROTATION
+UID: NI:ntddcdrm.IOCTL_CDROM_GET_CONTROL
+title: IOCTL_CDROM_GET_CONTROL
+author: windows-driver-content
+description: This IOCTL request is obsolete. Do not use.Determines the current audio playback mode.
+old-location: storage\ioctl_cdrom_get_control.htm
+old-project: storage
+ms.assetid: 3d474eb7-6622-48fd-bf40-c17d03933828
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_cdrom_get_control, IOCTL_CDROM_GET_CONTROL control code [Storage Devices], IOCTL_CDROM_GET_CONTROL, ntddcdrm/IOCTL_CDROM_GET_CONTROL, k307_441b4747-9431-42c3-b550-39aaea1229f1.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddcdrm.h
+req.include-header: Ntddcdrm.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddcdrm.h
+apiname:
+-	IOCTL_CDROM_GET_CONTROL
+product: Windows
+targetos: Windows
+req.typenames: WRITE_ROTATION, *PWRITE_ROTATION
 ---
 
 # IOCTL_CDROM_GET_CONTROL IOCTL

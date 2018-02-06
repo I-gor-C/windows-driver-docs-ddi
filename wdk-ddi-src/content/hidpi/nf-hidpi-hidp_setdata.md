@@ -1,41 +1,47 @@
 ---
-UID : NF:hidpi.HidP_SetData
-title : HidP_SetData function
-author : windows-driver-content
-description : The HidP_SetData routine sets a specified set of HID control button and value usages in a HID report.
-old-location : hid\hidp_setdata.htm
-old-project : hid
-ms.assetid : 41f7c240-4e50-4d6c-82aa-902ab05bf715
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : hidpi/HidP_SetData, hid.hidp_setdata, HidP_SetData routine [Human Input Devices], HidP_SetData, hidfunc_4b2f18db-e7a2-432d-abd6-51240a0ffc91.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : hidpi.h
-req.include-header : Hidpi.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 2000 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Hidparse.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HIDP_REPORT_TYPE
+UID: NF:hidpi.HidP_SetData
+title: HidP_SetData function
+author: windows-driver-content
+description: The HidP_SetData routine sets a specified set of HID control button and value usages in a HID report.
+old-location: hid\hidp_setdata.htm
+old-project: hid
+ms.assetid: 41f7c240-4e50-4d6c-82aa-902ab05bf715
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: hidpi/HidP_SetData, hid.hidp_setdata, HidP_SetData routine [Human Input Devices], HidP_SetData, hidfunc_4b2f18db-e7a2-432d-abd6-51240a0ffc91.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: hidpi.h
+req.include-header: Hidpi.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 2000 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Hidparse.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Hidparse.lib
+-	Hidparse.dll
+apiname:
+-	HidP_SetData
+product: Windows
+targetos: Windows
+req.typenames: HIDP_REPORT_TYPE
 ---
 
 

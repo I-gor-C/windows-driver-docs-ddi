@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddchgr.IOCTL_CHANGER_REINITIALIZE_TRANSPORT
-title : IOCTL_CHANGER_REINITIALIZE_TRANSPORT
-author : windows-driver-content
-description : Physically recalibrates a transport element, typically after the changer has been powered on or a calling application has initiated a recovery operation. Recalibration may involve returning the transport to its &#0034;home&#0034; position.
-old-location : storage\ioctl_changer_reinitialize_transport.htm
-old-project : storage
-ms.assetid : 35b40514-a7a6-4860-a633-fe273ef21ba2
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_changer_reinitialize_transport, IOCTL_CHANGER_REINITIALIZE_TRANSPORT control code [Storage Devices], IOCTL_CHANGER_REINITIALIZE_TRANSPORT, ntddchgr/IOCTL_CHANGER_REINITIALIZE_TRANSPORT, k307_36f3bd40-f084-4b11-b2e1-5e4ff976ba64.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddchgr.h
-req.include-header : Ntddchgr.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PELEMENT_TYPE, ELEMENT_TYPE"
+UID: NI:ntddchgr.IOCTL_CHANGER_REINITIALIZE_TRANSPORT
+title: IOCTL_CHANGER_REINITIALIZE_TRANSPORT
+author: windows-driver-content
+description: Physically recalibrates a transport element, typically after the changer has been powered on or a calling application has initiated a recovery operation. Recalibration may involve returning the transport to its &#0034;home&#0034; position.
+old-location: storage\ioctl_changer_reinitialize_transport.htm
+old-project: storage
+ms.assetid: 35b40514-a7a6-4860-a633-fe273ef21ba2
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_changer_reinitialize_transport, IOCTL_CHANGER_REINITIALIZE_TRANSPORT control code [Storage Devices], IOCTL_CHANGER_REINITIALIZE_TRANSPORT, ntddchgr/IOCTL_CHANGER_REINITIALIZE_TRANSPORT, k307_36f3bd40-f084-4b11-b2e1-5e4ff976ba64.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddchgr.h
+req.include-header: Ntddchgr.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddchgr.h
+apiname:
+-	IOCTL_CHANGER_REINITIALIZE_TRANSPORT
+product: Windows
+targetos: Windows
+req.typenames: "*PELEMENT_TYPE, ELEMENT_TYPE"
 ---
 
 # IOCTL_CHANGER_REINITIALIZE_TRANSPORT IOCTL

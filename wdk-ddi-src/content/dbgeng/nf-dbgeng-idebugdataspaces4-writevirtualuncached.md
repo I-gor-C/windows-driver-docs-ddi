@@ -1,41 +1,49 @@
 ---
-UID : NF:dbgeng.IDebugDataSpaces4.WriteVirtualUncached
-title : IDebugDataSpaces4::WriteVirtualUncached method
-author : windows-driver-content
-description : The WriteVirtualUncached method writes data to the target's virtual address space.
-old-location : debugger\writevirtualuncached.htm
-old-project : debugger
-ms.assetid : 01b729cb-d7d0-4c8d-a438-51319ef8e1c8
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugDataSpaces3::WriteVirtualUncached, WriteVirtualUncached method [Windows Debugging], IDebugDataSpaces2 interface, WriteVirtualUncached method [Windows Debugging], IDebugDataSpaces3 interface, IDebugDataSpaces4 interface [Windows Debugging], WriteVirtualUncached method, IDebugDataSpaces2::WriteVirtualUncached, IDebugDataSpaces3 interface [Windows Debugging], WriteVirtualUncached method, IDebugDataSpaces_6b986179-8f9c-4b4f-b42c-0c91088868ec.xml, IDebugDataSpaces2 interface [Windows Debugging], WriteVirtualUncached method, debugger.writevirtualuncached, WriteVirtualUncached method [Windows Debugging], IDebugDataSpaces interface, WriteVirtualUncached method [Windows Debugging], IDebugDataSpaces interface [Windows Debugging], WriteVirtualUncached method, IDebugDataSpaces::WriteVirtualUncached, dbgeng/IDebugDataSpaces3::WriteVirtualUncached, IDebugDataSpaces4, dbgeng/IDebugDataSpaces2::WriteVirtualUncached, WriteVirtualUncached, IDebugDataSpaces4::WriteVirtualUncached, dbgeng/IDebugDataSpaces::WriteVirtualUncached, WriteVirtualUncached method [Windows Debugging], IDebugDataSpaces4 interface, dbgeng/IDebugDataSpaces4::WriteVirtualUncached
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugDataSpaces4.WriteVirtualUncached
+title: IDebugDataSpaces4::WriteVirtualUncached method
+author: windows-driver-content
+description: The WriteVirtualUncached method writes data to the target's virtual address space.
+old-location: debugger\writevirtualuncached.htm
+old-project: debugger
+ms.assetid: 01b729cb-d7d0-4c8d-a438-51319ef8e1c8
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugDataSpaces3::WriteVirtualUncached, WriteVirtualUncached method [Windows Debugging], IDebugDataSpaces2 interface, WriteVirtualUncached method [Windows Debugging], IDebugDataSpaces3 interface, IDebugDataSpaces4 interface [Windows Debugging], WriteVirtualUncached method, IDebugDataSpaces2::WriteVirtualUncached, IDebugDataSpaces3 interface [Windows Debugging], WriteVirtualUncached method, IDebugDataSpaces_6b986179-8f9c-4b4f-b42c-0c91088868ec.xml, IDebugDataSpaces2 interface [Windows Debugging], WriteVirtualUncached method, debugger.writevirtualuncached, WriteVirtualUncached method [Windows Debugging], IDebugDataSpaces interface, WriteVirtualUncached method [Windows Debugging], IDebugDataSpaces interface [Windows Debugging], WriteVirtualUncached method, IDebugDataSpaces::WriteVirtualUncached, dbgeng/IDebugDataSpaces3::WriteVirtualUncached, IDebugDataSpaces4, dbgeng/IDebugDataSpaces2::WriteVirtualUncached, WriteVirtualUncached, IDebugDataSpaces4::WriteVirtualUncached, dbgeng/IDebugDataSpaces::WriteVirtualUncached, WriteVirtualUncached method [Windows Debugging], IDebugDataSpaces4 interface, dbgeng/IDebugDataSpaces4::WriteVirtualUncached
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugDataSpaces.WriteVirtualUncached
+-	IDebugDataSpaces2.WriteVirtualUncached
+-	IDebugDataSpaces3.WriteVirtualUncached
+-	IDebugDataSpaces4.WriteVirtualUncached
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

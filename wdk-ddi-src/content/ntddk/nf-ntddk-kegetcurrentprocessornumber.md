@@ -1,41 +1,46 @@
 ---
-UID : NF:ntddk.KeGetCurrentProcessorNumber
-title : KeGetCurrentProcessorNumber function
-author : windows-driver-content
-description : The KeGetCurrentProcessorNumber routine returns the system-assigned number of the current processor on which the caller is running.
-old-location : kernel\kegetcurrentprocessornumber.htm
-old-project : kernel
-ms.assetid : 24de4374-fa73-4891-b212-6f5c7ed53407
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : KeGetCurrentProcessorNumber, KeGetCurrentProcessorNumber routine [Kernel-Mode Driver Architecture], kernel.kegetcurrentprocessornumber, ntddk/KeGetCurrentProcessorNumber, k105_3faba96b-e6d9-40d2-a543-6ea95ce67c73.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_Miscellaneous_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.KeGetCurrentProcessorNumber
+title: KeGetCurrentProcessorNumber function
+author: windows-driver-content
+description: The KeGetCurrentProcessorNumber routine returns the system-assigned number of the current processor on which the caller is running.
+old-location: kernel\kegetcurrentprocessornumber.htm
+old-project: kernel
+ms.assetid: 24de4374-fa73-4891-b212-6f5c7ed53407
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: KeGetCurrentProcessorNumber, KeGetCurrentProcessorNumber routine [Kernel-Mode Driver Architecture], kernel.kegetcurrentprocessornumber, ntddk/KeGetCurrentProcessorNumber, k105_3faba96b-e6d9-40d2-a543-6ea95ce67c73.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_Miscellaneous_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddk.h
+apiname:
+-	KeGetCurrentProcessorNumber
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

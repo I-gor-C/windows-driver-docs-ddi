@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddstor._STORAGE_ADAPTER_DESCRIPTOR
-title : "_STORAGE_ADAPTER_DESCRIPTOR"
-author : windows-driver-content
-description : The STORAGE_ADAPTER_DESCRIPTOR structure is used in conjunction with the IOCTL_STORAGE_QUERY_PROPERTY request to retrieve the storage adapter descriptor data for a device.
-old-location : storage\storage_adapter_descriptor.htm
-old-project : storage
-ms.assetid : 83ef2a1a-f95e-4b05-8911-e5e900192630
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : SRB_TYPE_STORAGE_REQUEST_BLOCK, STORAGE_ADAPTER_DESCRIPTOR structure [Storage Devices], storage.storage_adapter_descriptor, PSTORAGE_ADAPTER_DESCRIPTOR structure pointer [Storage Devices], _STORAGE_ADAPTER_DESCRIPTOR, SRB_TYPE_SCSI_REQUEST_BLOCK, ntddstor/PSTORAGE_ADAPTER_DESCRIPTOR, structs-general_196c7640-0a2d-4567-8958-1244c46b84a6.xml, STORAGE_ADDRESS_TYPE_BTL8, PSTORAGE_ADAPTER_DESCRIPTOR, STORAGE_ADAPTER_DESCRIPTOR, ntddstor/STORAGE_ADAPTER_DESCRIPTOR
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddstor.h
-req.include-header : Ntddstor.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PSTORAGE_ADAPTER_DESCRIPTOR, STORAGE_ADAPTER_DESCRIPTOR
+UID: NS:ntddstor._STORAGE_ADAPTER_DESCRIPTOR
+title: "_STORAGE_ADAPTER_DESCRIPTOR"
+author: windows-driver-content
+description: The STORAGE_ADAPTER_DESCRIPTOR structure is used in conjunction with the IOCTL_STORAGE_QUERY_PROPERTY request to retrieve the storage adapter descriptor data for a device.
+old-location: storage\storage_adapter_descriptor.htm
+old-project: storage
+ms.assetid: 83ef2a1a-f95e-4b05-8911-e5e900192630
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: SRB_TYPE_STORAGE_REQUEST_BLOCK, STORAGE_ADAPTER_DESCRIPTOR structure [Storage Devices], storage.storage_adapter_descriptor, PSTORAGE_ADAPTER_DESCRIPTOR structure pointer [Storage Devices], _STORAGE_ADAPTER_DESCRIPTOR, SRB_TYPE_SCSI_REQUEST_BLOCK, ntddstor/PSTORAGE_ADAPTER_DESCRIPTOR, structs-general_196c7640-0a2d-4567-8958-1244c46b84a6.xml, STORAGE_ADDRESS_TYPE_BTL8, PSTORAGE_ADAPTER_DESCRIPTOR, STORAGE_ADAPTER_DESCRIPTOR, ntddstor/STORAGE_ADAPTER_DESCRIPTOR
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddstor.h
+req.include-header: Ntddstor.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddstor.h
+apiname:
+-	STORAGE_ADAPTER_DESCRIPTOR
+product: Windows
+targetos: Windows
+req.typenames: PSTORAGE_ADAPTER_DESCRIPTOR, STORAGE_ADAPTER_DESCRIPTOR
 ---
 
 # _STORAGE_ADAPTER_DESCRIPTOR structure

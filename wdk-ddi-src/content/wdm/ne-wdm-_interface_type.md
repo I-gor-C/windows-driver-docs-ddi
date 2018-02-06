@@ -1,42 +1,47 @@
 ---
-UID : NE:wdm._INTERFACE_TYPE
-title : "_INTERFACE_TYPE"
-author : windows-driver-content
-description : The INTERFACE_TYPE enumeration indicates the bus type.
-old-location : kernel\interface_type.htm
-old-project : kernel
-ms.assetid : 4d20f3fd-d06e-420b-af69-9ef34addc611
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/MicroChannel, wdm/PNPBus, Isa, InterfaceTypeUndefined, wdm/PCIBus, VMEBus, kernel.interface_type, wdm/NuBus, wdm/PCMCIABus, wdm/ProcessorInternal, wdm/Eisa, INTERFACE_TYPE, wdm/TurboChannel, wdm/MaximumInterfaceType, wdm/InternalPowerBus, wdm/PNPISABus, wdm/ACPIBus, wdm/InterfaceTypeUndefined, wdm/INTERFACE_TYPE, Eisa, NuBus, wdm/CBus, TurboChannel, ProcessorInternal, PCIBus, MicroChannel, PNPBus, PINTERFACE_TYPE enumeration pointer [Kernel-Mode Driver Architecture], sysenum_a73e08e6-79ef-4a5b-82b1-cfd4bc4269f8.xml, CBus, wdm/Isa, wdm/MPIBus, wdm/Internal, Internal, PNPISABus, InternalPowerBus, MPIBus, MPSABus, wdm/Vmcs, MaximumInterfaceType, *PINTERFACE_TYPE, INTERFACE_TYPE enumeration [Kernel-Mode Driver Architecture], wdm/MPSABus, Vmcs, PINTERFACE_TYPE, wdm/PINTERFACE_TYPE, PCMCIABus, _INTERFACE_TYPE, wdm/VMEBus, ACPIBus
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : wdm.h
-req.include-header : Wdm.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : INTERFACE_TYPE, *PINTERFACE_TYPE
-req.product : Windows 10 or later.
+UID: NE:wdm._INTERFACE_TYPE
+title: "_INTERFACE_TYPE"
+author: windows-driver-content
+description: The INTERFACE_TYPE enumeration indicates the bus type.
+old-location: kernel\interface_type.htm
+old-project: kernel
+ms.assetid: 4d20f3fd-d06e-420b-af69-9ef34addc611
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/MicroChannel, wdm/PNPBus, Isa, InterfaceTypeUndefined, wdm/PCIBus, VMEBus, kernel.interface_type, wdm/NuBus, wdm/PCMCIABus, wdm/ProcessorInternal, wdm/Eisa, INTERFACE_TYPE, wdm/TurboChannel, wdm/MaximumInterfaceType, wdm/InternalPowerBus, wdm/PNPISABus, wdm/ACPIBus, wdm/InterfaceTypeUndefined, wdm/INTERFACE_TYPE, Eisa, NuBus, wdm/CBus, TurboChannel, ProcessorInternal, PCIBus, MicroChannel, PNPBus, PINTERFACE_TYPE enumeration pointer [Kernel-Mode Driver Architecture], sysenum_a73e08e6-79ef-4a5b-82b1-cfd4bc4269f8.xml, CBus, wdm/Isa, wdm/MPIBus, wdm/Internal, Internal, PNPISABus, InternalPowerBus, MPIBus, MPSABus, wdm/Vmcs, MaximumInterfaceType, *PINTERFACE_TYPE, INTERFACE_TYPE enumeration [Kernel-Mode Driver Architecture], wdm/MPSABus, Vmcs, PINTERFACE_TYPE, wdm/PINTERFACE_TYPE, PCMCIABus, _INTERFACE_TYPE, wdm/VMEBus, ACPIBus
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: wdm.h
+req.include-header: Wdm.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	INTERFACE_TYPE
+product: Windows
+targetos: Windows
+req.typenames: INTERFACE_TYPE, *PINTERFACE_TYPE
+req.product: Windows 10 or later.
 ---
 
 # _INTERFACE_TYPE Enumeration
@@ -71,106 +76,106 @@ typedef enum _INTERFACE_TYPE {
 ## Constants
 
 <table>
-
-<tr>
-<td>ACPIBus</td>
-<td>Indicates that the interface is published by the ACPI bus driver. The ACPI bus driver enumerates devices that are described in the ACPI firmware of the hardware platform. These devices might physically reside on buses that are controlled by other bus drivers, but the ACPI bus driver must enumerate these devices because the other bus drivers cannot detect them. This interface type is defined starting with Windows 8.</td>
-</tr>
-
-<tr>
-<td>CBus</td>
-<td>Indicates that the interface is published by the Cbus driver.</td>
-</tr>
-
-<tr>
-<td>Eisa</td>
-<td>Indicates that the interface is published by the EISA bus driver.</td>
-</tr>
-
-<tr>
-<td>InterfaceTypeUndefined</td>
-<td>Indicates that the interface type is undefined.</td>
-</tr>
-
-<tr>
-<td>Internal</td>
-<td>For internal use only.</td>
-</tr>
-
-<tr>
-<td>InternalPowerBus</td>
-<td>Indicates that the interface is published for an internal power bus. Some devices have power control ports that allow them to share power control with other devices. The Windows architecture represents these devices as slots on a virtual bus called an "internal power bus."</td>
-</tr>
-
-<tr>
-<td>Isa</td>
-<td>Indicates that the interface is published by the ISA bus driver.</td>
-</tr>
-
-<tr>
-<td>MaximumInterfaceType</td>
-<td>Marks the upper limit of the possible bus types.</td>
-</tr>
-
-<tr>
-<td>MicroChannel</td>
-<td>Indicates that the interface is published by the MicroChannel bus driver.</td>
-</tr>
-
-<tr>
-<td>MPIBus</td>
-<td>Indicates that the interface is published by the MPI bus driver.</td>
-</tr>
-
-<tr>
-<td>MPSABus</td>
-<td>Indicates that the interface is published by the MPSA bus driver.</td>
-</tr>
-
-<tr>
-<td>NuBus</td>
-<td>Indicates that the interface is published by the NuBus driver.</td>
-</tr>
-
-<tr>
-<td>PCIBus</td>
-<td>Indicates that the interface is published by the PCI bus driver.</td>
-</tr>
-
-<tr>
-<td>PCMCIABus</td>
-<td>Indicates that the interface is published by the PCMCIA bus driver.</td>
-</tr>
-
-<tr>
-<td>PNPBus</td>
-<td>Indicates that the interface is published by the PNP bus driver.</td>
-</tr>
-
-<tr>
-<td>PNPISABus</td>
-<td>Indicates that the interface is published by the PNPISA bus driver.</td>
-</tr>
-
-<tr>
-<td>ProcessorInternal</td>
-<td>Indicates that the interface is published by the ISA bus driver.</td>
-</tr>
-
-<tr>
-<td>TurboChannel</td>
-<td>Indicates that the interface is published by the TurboChannel bus driver.</td>
-</tr>
-
-<tr>
-<td>Vmcs</td>
-<td>Reserved for use by the operating system.</td>
-</tr>
-
-<tr>
-<td>VMEBus</td>
-<td>Indicates that the interface is published by the VME bus driver.</td>
-</tr>
+            
+                <tr>
+                    <td>ACPIBus</td>
+                    <td>Indicates that the interface is published by the ACPI bus driver. The ACPI bus driver enumerates devices that are described in the ACPI firmware of the hardware platform. These devices might physically reside on buses that are controlled by other bus drivers, but the ACPI bus driver must enumerate these devices because the other bus drivers cannot detect them. This interface type is defined starting with Windows 8.</td>
+                </tr>
+            
+                <tr>
+                    <td>CBus</td>
+                    <td>Indicates that the interface is published by the Cbus driver.</td>
+                </tr>
+            
+                <tr>
+                    <td>Eisa</td>
+                    <td>Indicates that the interface is published by the EISA bus driver.</td>
+                </tr>
+            
+                <tr>
+                    <td>InterfaceTypeUndefined</td>
+                    <td>Indicates that the interface type is undefined.</td>
+                </tr>
+            
+                <tr>
+                    <td>Internal</td>
+                    <td>For internal use only.</td>
+                </tr>
+            
+                <tr>
+                    <td>InternalPowerBus</td>
+                    <td>Indicates that the interface is published for an internal power bus. Some devices have power control ports that allow them to share power control with other devices. The Windows architecture represents these devices as slots on a virtual bus called an "internal power bus."</td>
+                </tr>
+            
+                <tr>
+                    <td>Isa</td>
+                    <td>Indicates that the interface is published by the ISA bus driver.</td>
+                </tr>
+            
+                <tr>
+                    <td>MaximumInterfaceType</td>
+                    <td>Marks the upper limit of the possible bus types.</td>
+                </tr>
+            
+                <tr>
+                    <td>MicroChannel</td>
+                    <td>Indicates that the interface is published by the MicroChannel bus driver.</td>
+                </tr>
+            
+                <tr>
+                    <td>MPIBus</td>
+                    <td>Indicates that the interface is published by the MPI bus driver.</td>
+                </tr>
+            
+                <tr>
+                    <td>MPSABus</td>
+                    <td>Indicates that the interface is published by the MPSA bus driver.</td>
+                </tr>
+            
+                <tr>
+                    <td>NuBus</td>
+                    <td>Indicates that the interface is published by the NuBus driver.</td>
+                </tr>
+            
+                <tr>
+                    <td>PCIBus</td>
+                    <td>Indicates that the interface is published by the PCI bus driver.</td>
+                </tr>
+            
+                <tr>
+                    <td>PCMCIABus</td>
+                    <td>Indicates that the interface is published by the PCMCIA bus driver.</td>
+                </tr>
+            
+                <tr>
+                    <td>PNPBus</td>
+                    <td>Indicates that the interface is published by the PNP bus driver.</td>
+                </tr>
+            
+                <tr>
+                    <td>PNPISABus</td>
+                    <td>Indicates that the interface is published by the PNPISA bus driver.</td>
+                </tr>
+            
+                <tr>
+                    <td>ProcessorInternal</td>
+                    <td>Indicates that the interface is published by the ISA bus driver.</td>
+                </tr>
+            
+                <tr>
+                    <td>TurboChannel</td>
+                    <td>Indicates that the interface is published by the TurboChannel bus driver.</td>
+                </tr>
+            
+                <tr>
+                    <td>Vmcs</td>
+                    <td>Reserved for use by the operating system.</td>
+                </tr>
+            
+                <tr>
+                    <td>VMEBus</td>
+                    <td>Indicates that the interface is published by the VME bus driver.</td>
+                </tr>
 </table>
 
 
@@ -179,9 +184,9 @@ typedef enum _INTERFACE_TYPE {
 | ---- |:---- |
 | **Header** | wdm.h (include Wdm.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\srb\ns-srb-_port_configuration_information.md">PORT_CONFIGURATION_INFORMATION</a>
+        <a href="..\srb\ns-srb-_port_configuration_information.md">PORT_CONFIGURATION_INFORMATION</a>
 
 <a href="..\storport\nf-storport-storportvalidaterange.md">StorPortValidateRange</a>
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:bthhfpddi._BTHHFP_DESCRIPTOR
-title : "_BTHHFP_DESCRIPTOR"
-author : windows-driver-content
-description : The BTHHFP_DESCRIPTOR data structure stores information describing a paired Handsfree profile (HFP) device.
-old-location : audio\bthhfp_descriptor.htm
-old-project : audio
-ms.assetid : A3C1E53B-2E41-437A-8613-C43DCD4768B5
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : bthhfpddi/BTHHFP_DESCRIPTOR, _BTHHFP_DESCRIPTOR, PBTHHFP_DESCRIPTOR structure pointer [Audio Devices], BTHHFP_DESCRIPTOR, *PBTHHFP_DESCRIPTOR, bthhfpddi/PBTHHFP_DESCRIPTOR, BTHHFP_DESCRIPTOR structure [Audio Devices], audio.bthhfp_descriptor, PBTHHFP_DESCRIPTOR
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : bthhfpddi.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PBTHHFP_DESCRIPTOR, BTHHFP_DESCRIPTOR"
+UID: NS:bthhfpddi._BTHHFP_DESCRIPTOR
+title: "_BTHHFP_DESCRIPTOR"
+author: windows-driver-content
+description: The BTHHFP_DESCRIPTOR data structure stores information describing a paired Handsfree profile (HFP) device.
+old-location: audio\bthhfp_descriptor.htm
+old-project: audio
+ms.assetid: A3C1E53B-2E41-437A-8613-C43DCD4768B5
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: bthhfpddi/BTHHFP_DESCRIPTOR, _BTHHFP_DESCRIPTOR, PBTHHFP_DESCRIPTOR structure pointer [Audio Devices], BTHHFP_DESCRIPTOR, *PBTHHFP_DESCRIPTOR, bthhfpddi/PBTHHFP_DESCRIPTOR, BTHHFP_DESCRIPTOR structure [Audio Devices], audio.bthhfp_descriptor, PBTHHFP_DESCRIPTOR
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: bthhfpddi.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Bthhfpddi.h
+apiname:
+-	BTHHFP_DESCRIPTOR
+product: Windows
+targetos: Windows
+req.typenames: "*PBTHHFP_DESCRIPTOR, BTHHFP_DESCRIPTOR"
 ---
 
 # _BTHHFP_DESCRIPTOR structure

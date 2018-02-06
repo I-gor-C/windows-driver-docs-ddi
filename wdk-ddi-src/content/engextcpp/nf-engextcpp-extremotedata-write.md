@@ -1,41 +1,46 @@
 ---
-UID : NF:engextcpp.ExtRemoteData.Write
-title : ExtRemoteData::Write method
-author : windows-driver-content
-description : The Write method writes the data cached by the ExtRemoteData object to the region of memory on the target, represented by this object.
-old-location : debugger\extremotedata_write.htm
-old-project : debugger
-ms.assetid : 970c725b-4ea0-42b7-a373-83cb463cd80d
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : ExtRemoteData::Write, ExtRemoteData, ExtRemoteData class [Windows Debugging], Write method, EngExtCpp_Ref_1288bed4-2f61-4af4-a226-5157a0622f42.xml, debugger.extremotedata_write, Write, Write method [Windows Debugging], Write method [Windows Debugging], ExtRemoteData class
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : engextcpp.hpp
-req.include-header : Engextcpp.hpp
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : engextcpp.hpp
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SILO_DRIVER_CAPABILITIES, *PSILO_DRIVER_CAPABILITIES
+UID: NF:engextcpp.ExtRemoteData.Write
+title: ExtRemoteData::Write method
+author: windows-driver-content
+description: The Write method writes the data cached by the ExtRemoteData object to the region of memory on the target, represented by this object.
+old-location: debugger\extremotedata_write.htm
+old-project: debugger
+ms.assetid: 970c725b-4ea0-42b7-a373-83cb463cd80d
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: ExtRemoteData::Write, ExtRemoteData, ExtRemoteData class [Windows Debugging], Write method, EngExtCpp_Ref_1288bed4-2f61-4af4-a226-5157a0622f42.xml, debugger.extremotedata_write, Write, Write method [Windows Debugging], Write method [Windows Debugging], ExtRemoteData class
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: engextcpp.hpp
+req.include-header: Engextcpp.hpp
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: engextcpp.hpp
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	engextcpp.hpp
+apiname:
+-	ExtRemoteData.Write
+product: Windows
+targetos: Windows
+req.typenames: SILO_DRIVER_CAPABILITIES, *PSILO_DRIVER_CAPABILITIES
 ---
 
 

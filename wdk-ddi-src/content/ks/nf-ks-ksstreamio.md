@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsStreamIo
-title : KsStreamIo function
-author : windows-driver-content
-description : The KsStreamIo function performs a stream read or write against the specified file object. The function attempts to use FastIoDispatch if possible, or it generates a read or write request against the device object.
-old-location : stream\ksstreamio.htm
-old-project : stream
-ms.assetid : 74c62a30-42b9-4ea7-b52a-014e263d886e
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.ksstreamio, ksfunc_c2f256a3-f01a-45e1-b7de-1eed5bacde7a.xml, ks/KsStreamIo, KsStreamIo function [Streaming Media Devices], KsStreamIo
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsStreamIo
+title: KsStreamIo function
+author: windows-driver-content
+description: The KsStreamIo function performs a stream read or write against the specified file object. The function attempts to use FastIoDispatch if possible, or it generates a read or write request against the device object.
+old-location: stream\ksstreamio.htm
+old-project: stream
+ms.assetid: 74c62a30-42b9-4ea7-b52a-014e263d886e
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.ksstreamio, ksfunc_c2f256a3-f01a-45e1-b7de-1eed5bacde7a.xml, ks/KsStreamIo, KsStreamIo function [Streaming Media Devices], KsStreamIo
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsStreamIo
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

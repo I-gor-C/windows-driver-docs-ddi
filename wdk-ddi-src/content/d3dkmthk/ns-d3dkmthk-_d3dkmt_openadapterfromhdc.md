@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmthk._D3DKMT_OPENADAPTERFROMHDC
-title : "_D3DKMT_OPENADAPTERFROMHDC"
-author : windows-driver-content
-description : The D3DKMT_OPENADAPTERFROMHDC structure describes the mapping of a device context handle (HDC) to a graphics adapter handle and monitor output.
-old-location : display\d3dkmt_openadapterfromhdc.htm
-old-project : display
-ms.assetid : db425b8c-4abd-4998-89bb-f6d9f066a3f6
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DKMT_OPENADAPTERFROMHDC structure [Display Devices], d3dkmthk/D3DKMT_OPENADAPTERFROMHDC, _D3DKMT_OPENADAPTERFROMHDC, D3DKMT_OPENADAPTERFROMHDC, display.d3dkmt_openadapterfromhdc, OpenGL_Structs_a4c2aa1b-b17c-4e81-a0d2-9776cec61112.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_OPENADAPTERFROMHDC
+UID: NS:d3dkmthk._D3DKMT_OPENADAPTERFROMHDC
+title: "_D3DKMT_OPENADAPTERFROMHDC"
+author: windows-driver-content
+description: The D3DKMT_OPENADAPTERFROMHDC structure describes the mapping of a device context handle (HDC) to a graphics adapter handle and monitor output.
+old-location: display\d3dkmt_openadapterfromhdc.htm
+old-project: display
+ms.assetid: db425b8c-4abd-4998-89bb-f6d9f066a3f6
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DKMT_OPENADAPTERFROMHDC structure [Display Devices], d3dkmthk/D3DKMT_OPENADAPTERFROMHDC, _D3DKMT_OPENADAPTERFROMHDC, D3DKMT_OPENADAPTERFROMHDC, display.d3dkmt_openadapterfromhdc, OpenGL_Structs_a4c2aa1b-b17c-4e81-a0d2-9776cec61112.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmthk.h
+apiname:
+-	D3DKMT_OPENADAPTERFROMHDC
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_OPENADAPTERFROMHDC
 ---
 
 # _D3DKMT_OPENADAPTERFROMHDC structure

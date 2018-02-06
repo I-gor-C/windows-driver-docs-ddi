@@ -1,42 +1,47 @@
 ---
-UID : NF:rxprocs.FsRtlNotifyFullChangeDirectory
-title : FsRtlNotifyFullChangeDirectory macro
-author : windows-driver-content
-description : The FsRtlNotifyFullChangeDirectory routine creates a notify structure for a notification request and adds it to the specified notify list.
-old-location : ifsk\fsrtlnotifyfullchangedirectory.htm
-old-project : ifsk
-ms.assetid : 42e5340e-0be4-49d1-a219-88b7425a41ef
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FsRtlNotifyFullChangeDirectory routine [Installable File System Drivers], ifsk.fsrtlnotifyfullchangedirectory, FsRtlNotifyFullChangeDirectory, fsrtlref_551aff27-746f-49a4-b427-fa273249c36e.xml, rxprocs/FsRtlNotifyFullChangeDirectory
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : macro
-req.header : rxprocs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RX_CONTEXT, *PRX_CONTEXT
-req.product : Windows 10 or later.
+UID: NF:rxprocs.FsRtlNotifyFullChangeDirectory
+title: FsRtlNotifyFullChangeDirectory macro
+author: windows-driver-content
+description: The FsRtlNotifyFullChangeDirectory routine creates a notify structure for a notification request and adds it to the specified notify list.
+old-location: ifsk\fsrtlnotifyfullchangedirectory.htm
+old-project: ifsk
+ms.assetid: 42e5340e-0be4-49d1-a219-88b7425a41ef
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FsRtlNotifyFullChangeDirectory routine [Installable File System Drivers], ifsk.fsrtlnotifyfullchangedirectory, FsRtlNotifyFullChangeDirectory, fsrtlref_551aff27-746f-49a4-b427-fa273249c36e.xml, rxprocs/FsRtlNotifyFullChangeDirectory
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: macro
+req.header: rxprocs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	FsRtlNotifyFullChangeDirectory
+product: Windows
+targetos: Windows
+req.typenames: RX_CONTEXT, *PRX_CONTEXT
+req.product: Windows 10 or later.
 ---
 
 

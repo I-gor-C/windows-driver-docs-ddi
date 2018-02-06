@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._DXVAHDDDI_STREAM_STATE_SOURCE_RECT_DATA
-title : "_DXVAHDDDI_STREAM_STATE_SOURCE_RECT_DATA"
-author : windows-driver-content
-description : The DXVAHDDDI_STREAM_STATE_SOURCE_RECT_DATA structure describes stream-state data that specifies the source rectangle of the input stream.
-old-location : display\dxvahdddi_stream_state_source_rect_data.htm
-old-project : display
-ms.assetid : 2ce67fd7-03f6-432c-9229-a99f66f7eb73
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : "_DXVAHDDDI_STREAM_STATE_SOURCE_RECT_DATA, DXVAHDDDI_STREAM_STATE_SOURCE_RECT_DATA, DXVA2_Structs_82045602-8c6c-4a80-8698-06b34f0ca8d9.xml, DXVAHDDDI_STREAM_STATE_SOURCE_RECT_DATA structure [Display Devices], d3dumddi/DXVAHDDDI_STREAM_STATE_SOURCE_RECT_DATA, display.dxvahdddi_stream_state_source_rect_data"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : DXVAHDDDI_STREAM_STATE_SOURCE_RECT_DATA is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXVAHDDDI_STREAM_STATE_SOURCE_RECT_DATA
+UID: NS:d3dumddi._DXVAHDDDI_STREAM_STATE_SOURCE_RECT_DATA
+title: "_DXVAHDDDI_STREAM_STATE_SOURCE_RECT_DATA"
+author: windows-driver-content
+description: The DXVAHDDDI_STREAM_STATE_SOURCE_RECT_DATA structure describes stream-state data that specifies the source rectangle of the input stream.
+old-location: display\dxvahdddi_stream_state_source_rect_data.htm
+old-project: display
+ms.assetid: 2ce67fd7-03f6-432c-9229-a99f66f7eb73
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: "_DXVAHDDDI_STREAM_STATE_SOURCE_RECT_DATA, DXVAHDDDI_STREAM_STATE_SOURCE_RECT_DATA, DXVA2_Structs_82045602-8c6c-4a80-8698-06b34f0ca8d9.xml, DXVAHDDDI_STREAM_STATE_SOURCE_RECT_DATA structure [Display Devices], d3dumddi/DXVAHDDDI_STREAM_STATE_SOURCE_RECT_DATA, display.dxvahdddi_stream_state_source_rect_data"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: DXVAHDDDI_STREAM_STATE_SOURCE_RECT_DATA is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	DXVAHDDDI_STREAM_STATE_SOURCE_RECT_DATA
+product: Windows
+targetos: Windows
+req.typenames: DXVAHDDDI_STREAM_STATE_SOURCE_RECT_DATA
 ---
 
 # _DXVAHDDDI_STREAM_STATE_SOURCE_RECT_DATA structure

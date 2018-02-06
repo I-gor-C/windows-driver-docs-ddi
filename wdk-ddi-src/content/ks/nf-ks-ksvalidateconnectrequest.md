@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsValidateConnectRequest
-title : KsValidateConnectRequest function
-author : windows-driver-content
-description : The KsValidateConnectRequest function validates a connection request and returns a pointer to the connection structure associated with the request.This function can only be called at PASSIVE_LEVEL.
-old-location : stream\ksvalidateconnectrequest.htm
-old-project : stream
-ms.assetid : 64343a8a-9629-469e-95a3-b9c140cdd324
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ks/KsValidateConnectRequest, stream.ksvalidateconnectrequest, ksfunc_2df36f34-31c9-48f2-859c-1829b60fbae7.xml, KsValidateConnectRequest function [Streaming Media Devices], KsValidateConnectRequest
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsValidateConnectRequest
+title: KsValidateConnectRequest function
+author: windows-driver-content
+description: The KsValidateConnectRequest function validates a connection request and returns a pointer to the connection structure associated with the request.This function can only be called at PASSIVE_LEVEL.
+old-location: stream\ksvalidateconnectrequest.htm
+old-project: stream
+ms.assetid: 64343a8a-9629-469e-95a3-b9c140cdd324
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ks/KsValidateConnectRequest, stream.ksvalidateconnectrequest, ksfunc_2df36f34-31c9-48f2-859c-1829b60fbae7.xml, KsValidateConnectRequest function [Streaming Media Devices], KsValidateConnectRequest
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsValidateConnectRequest
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

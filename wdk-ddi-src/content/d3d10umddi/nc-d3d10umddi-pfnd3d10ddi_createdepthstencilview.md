@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3D10DDI_CREATEDEPTHSTENCILVIEW
-title : PFND3D10DDI_CREATEDEPTHSTENCILVIEW
-author : windows-driver-content
-description : The CreateDepthStencilView function creates a depth stencil view.
-old-location : display\createdepthstencilview.htm
-old-project : display
-ms.assetid : 1a1c28f0-8343-4255-8055-d31eb643b7d5
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.createdepthstencilview, CreateDepthStencilView callback function [Display Devices], CreateDepthStencilView, PFND3D10DDI_CREATEDEPTHSTENCILVIEW, PFND3D10DDI_CREATEDEPTHSTENCILVIEW, d3d10umddi/CreateDepthStencilView, UserModeDisplayDriverDx10_Functions_299a6bcd-ba94-4568-a4fc-d89c84742c45.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3D10DDI_CREATEDEPTHSTENCILVIEW
+title: PFND3D10DDI_CREATEDEPTHSTENCILVIEW
+author: windows-driver-content
+description: The CreateDepthStencilView function creates a depth stencil view.
+old-location: display\createdepthstencilview.htm
+old-project: display
+ms.assetid: 1a1c28f0-8343-4255-8055-d31eb643b7d5
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.createdepthstencilview, CreateDepthStencilView callback function [Display Devices], CreateDepthStencilView, PFND3D10DDI_CREATEDEPTHSTENCILVIEW, PFND3D10DDI_CREATEDEPTHSTENCILVIEW, d3d10umddi/CreateDepthStencilView, UserModeDisplayDriverDx10_Functions_299a6bcd-ba94-4568-a4fc-d89c84742c45.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	CreateDepthStencilView
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

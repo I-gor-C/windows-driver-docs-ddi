@@ -1,42 +1,47 @@
 ---
-UID : NS:usbioctl._USB_TOPOLOGY_ADDRESS
-title : "_USB_TOPOLOGY_ADDRESS"
-author : windows-driver-content
-description : The USB_TOPOLOGY_ADDRESS structure is used with the IOCTL_INTERNAL_USB_GET_TOPOLOGY_ADDRESS I/O request to retrieve information about a USB device?s location in the USB device tree.
-old-location : buses\usb_topology_address.htm
-old-project : usbref
-ms.assetid : 5d8d6665-bfa1-4bc5-8168-7508624845e1
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : USB_TOPOLOGY_ADDRESS, PUSB_TOPOLOGY_ADDRESS, buses.usb_topology_address, usbioctl/USB_TOPOLOGY_ADDRESS, *PUSB_TOPOLOGY_ADDRESS, usbioctl/PUSB_TOPOLOGY_ADDRESS, PUSB_TOPOLOGY_ADDRESS structure pointer [Buses], USB_TOPOLOGY_ADDRESS structure [Buses], _USB_TOPOLOGY_ADDRESS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : usbioctl.h
-req.include-header : Usbioctl.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : USB_TOPOLOGY_ADDRESS, *PUSB_TOPOLOGY_ADDRESS
-req.product : Windows 10 or later.
+UID: NS:usbioctl._USB_TOPOLOGY_ADDRESS
+title: "_USB_TOPOLOGY_ADDRESS"
+author: windows-driver-content
+description: The USB_TOPOLOGY_ADDRESS structure is used with the IOCTL_INTERNAL_USB_GET_TOPOLOGY_ADDRESS I/O request to retrieve information about a USB device?s location in the USB device tree.
+old-location: buses\usb_topology_address.htm
+old-project: usbref
+ms.assetid: 5d8d6665-bfa1-4bc5-8168-7508624845e1
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: USB_TOPOLOGY_ADDRESS, PUSB_TOPOLOGY_ADDRESS, buses.usb_topology_address, usbioctl/USB_TOPOLOGY_ADDRESS, *PUSB_TOPOLOGY_ADDRESS, usbioctl/PUSB_TOPOLOGY_ADDRESS, PUSB_TOPOLOGY_ADDRESS structure pointer [Buses], USB_TOPOLOGY_ADDRESS structure [Buses], _USB_TOPOLOGY_ADDRESS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: usbioctl.h
+req.include-header: Usbioctl.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	usbioctl.h
+apiname:
+-	USB_TOPOLOGY_ADDRESS
+product: Windows
+targetos: Windows
+req.typenames: USB_TOPOLOGY_ADDRESS, *PUSB_TOPOLOGY_ADDRESS
+req.product: Windows 10 or later.
 ---
 
 # _USB_TOPOLOGY_ADDRESS structure

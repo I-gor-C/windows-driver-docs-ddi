@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.IoInitializeIrp
-title : IoInitializeIrp function
-author : windows-driver-content
-description : The IoInitializeIrp routine initializes a given IRP that was allocated by the caller.
-old-location : kernel\ioinitializeirp.htm
-old-project : kernel
-ms.assetid : 3b5cc1af-ab3b-4583-9ef9-39132789e74f
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : IoInitializeIrp routine [Kernel-Mode Driver Architecture], k104_5c9dc7a8-747c-4832-a31b-5936e2d3361d.xml, kernel.ioinitializeirp, wdm/IoInitializeIrp, IoInitializeIrp
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : IoReuseIrp, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.IoInitializeIrp
+title: IoInitializeIrp function
+author: windows-driver-content
+description: The IoInitializeIrp routine initializes a given IRP that was allocated by the caller.
+old-location: kernel\ioinitializeirp.htm
+old-project: kernel
+ms.assetid: 3b5cc1af-ab3b-4583-9ef9-39132789e74f
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: IoInitializeIrp routine [Kernel-Mode Driver Architecture], k104_5c9dc7a8-747c-4832-a31b-5936e2d3361d.xml, kernel.ioinitializeirp, wdm/IoInitializeIrp, IoInitializeIrp
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: IoReuseIrp, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoInitializeIrp
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

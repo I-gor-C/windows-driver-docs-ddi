@@ -1,42 +1,47 @@
 ---
-UID : NS:sti._STISUBSCRIBE
-title : "_STISUBSCRIBE"
-author : windows-driver-content
-description : The STISUBSCRIBE structure is used as a parameter for the IStiDevice::Subscribe method.
-old-location : image\stisubscribe.htm
-old-project : image
-ms.assetid : 68859180-274d-44f8-9ccf-1cae0348f902
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : stifnc_6043f7d6-98b6-483f-b868-f18492af5f92.xml, sti/STISUBSCRIBE, *LPSTISUBSCRIBE, STISUBSCRIBE structure [Imaging Devices], image.stisubscribe, LPSTISUBSCRIBE structure pointer [Imaging Devices], STISUBSCRIBE, LPSTISUBSCRIBE, sti/LPSTISUBSCRIBE, _STISUBSCRIBE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : sti.h
-req.include-header : Sti.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STISUBSCRIBE, *LPSTISUBSCRIBE
-req.product : Windows 10 or later.
+UID: NS:sti._STISUBSCRIBE
+title: "_STISUBSCRIBE"
+author: windows-driver-content
+description: The STISUBSCRIBE structure is used as a parameter for the IStiDevice::Subscribe method.
+old-location: image\stisubscribe.htm
+old-project: image
+ms.assetid: 68859180-274d-44f8-9ccf-1cae0348f902
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: stifnc_6043f7d6-98b6-483f-b868-f18492af5f92.xml, sti/STISUBSCRIBE, *LPSTISUBSCRIBE, STISUBSCRIBE structure [Imaging Devices], image.stisubscribe, LPSTISUBSCRIBE structure pointer [Imaging Devices], STISUBSCRIBE, LPSTISUBSCRIBE, sti/LPSTISUBSCRIBE, _STISUBSCRIBE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: sti.h
+req.include-header: Sti.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	sti.h
+apiname:
+-	STISUBSCRIBE
+product: Windows
+targetos: Windows
+req.typenames: STISUBSCRIBE, *LPSTISUBSCRIBE
+req.product: Windows 10 or later.
 ---
 
 # _STISUBSCRIBE structure

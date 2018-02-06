@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.KeClearEvent
-title : KeClearEvent function
-author : windows-driver-content
-description : The KeClearEvent routine sets an event to a not-signaled state.
-old-location : kernel\keclearevent.htm
-old-project : kernel
-ms.assetid : ded54c88-3da0-42ec-88be-865d3cb87651
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : KeClearEvent, wdm/KeClearEvent, k105_1ea5c68a-0b59-48ec-911b-058b6a3e586b.xml, KeClearEvent routine [Kernel-Mode Driver Architecture], kernel.keclearevent
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : IoBuildDeviceIoControlSetEvent, IrqlKeDispatchLte, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.KeClearEvent
+title: KeClearEvent function
+author: windows-driver-content
+description: The KeClearEvent routine sets an event to a not-signaled state.
+old-location: kernel\keclearevent.htm
+old-project: kernel
+ms.assetid: ded54c88-3da0-42ec-88be-865d3cb87651
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: KeClearEvent, wdm/KeClearEvent, k105_1ea5c68a-0b59-48ec-911b-058b6a3e586b.xml, KeClearEvent routine [Kernel-Mode Driver Architecture], kernel.keclearevent
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: IoBuildDeviceIoControlSetEvent, IrqlKeDispatchLte, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	KeClearEvent
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

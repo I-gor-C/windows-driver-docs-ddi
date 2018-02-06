@@ -1,42 +1,47 @@
 ---
-UID : NS:wdm._CLS_INFORMATION
-title : "_CLS_INFORMATION"
-author : windows-driver-content
-description : The CLFS_INFORMATION structure holds metadata and state information for a Common Log File System (CLFS) stream and/or its underlying physical log.
-old-location : kernel\clfs_information.htm
-old-project : kernel
-ms.assetid : 7fe392d1-75e4-43b1-a09b-6f47981bef7e
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : CLFS_INFORMATION structure [Kernel-Mode Driver Architecture], wdm/PCLS_INFORMATION, wdm/PPCLFS_INFORMATION, _CLS_INFORMATION, kstruct_a_6935868e-7d3d-458e-a556-0c92ed99bdbf.xml, kernel.clfs_information, wdm/CLFS_INFORMATION, PPCLFS_INFORMATION, wdm/PPCLS_INFORMATION, PCLFS_INFORMATION, PPCLS_INFORMATION, PPCLFS_INFORMATION structure pointer [Kernel-Mode Driver Architecture], wdm/PCLFS_INFORMATION, CLS_INFORMATION structure [Kernel-Mode Driver Architecture], PCLFS_INFORMATION structure pointer [Kernel-Mode Driver Architecture], *PCLFS_INFORMATION, wdm/CLS_INFORMATION, PCLS_INFORMATION structure pointer [Kernel-Mode Driver Architecture], CLS_INFORMATION, CLFS_INFORMATION, PCLS_INFORMATION, PPCLS_INFORMATION structure pointer [Kernel-Mode Driver Architecture], *PCLS_INFORMATION, *PPCLS_INFORMATION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PCLS_INFORMATION, *PPCLS_INFORMATION, CLS_INFORMATION"
-req.product : Windows 10 or later.
+UID: NS:wdm._CLS_INFORMATION
+title: "_CLS_INFORMATION"
+author: windows-driver-content
+description: The CLFS_INFORMATION structure holds metadata and state information for a Common Log File System (CLFS) stream and/or its underlying physical log.
+old-location: kernel\clfs_information.htm
+old-project: kernel
+ms.assetid: 7fe392d1-75e4-43b1-a09b-6f47981bef7e
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: CLFS_INFORMATION structure [Kernel-Mode Driver Architecture], wdm/PCLS_INFORMATION, wdm/PPCLFS_INFORMATION, _CLS_INFORMATION, kstruct_a_6935868e-7d3d-458e-a556-0c92ed99bdbf.xml, kernel.clfs_information, wdm/CLFS_INFORMATION, PPCLFS_INFORMATION, wdm/PPCLS_INFORMATION, PCLFS_INFORMATION, PPCLS_INFORMATION, PPCLFS_INFORMATION structure pointer [Kernel-Mode Driver Architecture], wdm/PCLFS_INFORMATION, CLS_INFORMATION structure [Kernel-Mode Driver Architecture], PCLFS_INFORMATION structure pointer [Kernel-Mode Driver Architecture], *PCLFS_INFORMATION, wdm/CLS_INFORMATION, PCLS_INFORMATION structure pointer [Kernel-Mode Driver Architecture], CLS_INFORMATION, CLFS_INFORMATION, PCLS_INFORMATION, PPCLS_INFORMATION structure pointer [Kernel-Mode Driver Architecture], *PCLS_INFORMATION, *PPCLS_INFORMATION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	CLS_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: "*PCLS_INFORMATION, *PPCLS_INFORMATION, CLS_INFORMATION"
+req.product: Windows 10 or later.
 ---
 
 # _CLS_INFORMATION structure

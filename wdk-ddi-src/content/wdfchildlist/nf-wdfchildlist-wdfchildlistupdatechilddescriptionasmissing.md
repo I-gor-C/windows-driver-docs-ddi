@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfchildlist.WdfChildListUpdateChildDescriptionAsMissing
-title : WdfChildListUpdateChildDescriptionAsMissing function
-author : windows-driver-content
-description : The WdfChildListUpdateChildDescriptionAsMissing method informs the framework that a specified child device is currently unplugged or otherwise unavailable.
-old-location : wdf\wdfchildlistupdatechilddescriptionasmissing.htm
-old-project : wdf
-ms.assetid : 21932a96-285c-490d-a1fb-a137aed57bbb
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : DFDeviceObjectChildListRef_1a871104-3d76-4ecb-936e-c27c2a107f2e.xml, wdfchildlist/WdfChildListUpdateChildDescriptionAsMissing, PFN_WDFCHILDLISTUPDATECHILDDESCRIPTIONASMISSING, WdfChildListUpdateChildDescriptionAsMissing method, wdf.wdfchildlistupdatechilddescriptionasmissing, kmdf.wdfchildlistupdatechilddescriptionasmissing, WdfChildListUpdateChildDescriptionAsMissing
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfchildlist.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_RETRIEVE_CHILD_FLAGS
-req.product : Windows 10 or later.
+UID: NF:wdfchildlist.WdfChildListUpdateChildDescriptionAsMissing
+title: WdfChildListUpdateChildDescriptionAsMissing function
+author: windows-driver-content
+description: The WdfChildListUpdateChildDescriptionAsMissing method informs the framework that a specified child device is currently unplugged or otherwise unavailable.
+old-location: wdf\wdfchildlistupdatechilddescriptionasmissing.htm
+old-project: wdf
+ms.assetid: 21932a96-285c-490d-a1fb-a137aed57bbb
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: DFDeviceObjectChildListRef_1a871104-3d76-4ecb-936e-c27c2a107f2e.xml, wdfchildlist/WdfChildListUpdateChildDescriptionAsMissing, PFN_WDFCHILDLISTUPDATECHILDDESCRIPTIONASMISSING, WdfChildListUpdateChildDescriptionAsMissing method, wdf.wdfchildlistupdatechilddescriptionasmissing, kmdf.wdfchildlistupdatechilddescriptionasmissing, WdfChildListUpdateChildDescriptionAsMissing
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfchildlist.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfChildListUpdateChildDescriptionAsMissing
+product: Windows
+targetos: Windows
+req.typenames: WDF_RETRIEVE_CHILD_FLAGS
+req.product: Windows 10 or later.
 ---
 
 

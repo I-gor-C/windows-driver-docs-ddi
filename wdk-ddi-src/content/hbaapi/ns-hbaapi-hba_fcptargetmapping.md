@@ -1,41 +1,46 @@
 ---
-UID : NS:hbaapi.HBA_FCPTargetMapping
-title : HBA_FCPTargetMapping
-author : windows-driver-content
-description : The HBA_FCPTargetMapping structure contains an array of bindings between operating system and fibre channel protocol (FCP) identifiers for a set of target devices.
-old-location : storage\hba_fcptargetmapping.htm
-old-project : storage
-ms.assetid : 666f4aea-2fcb-46cf-8d25-d1322c0517c9
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : structs-Fibre_ac1d3ea4-8e4f-4164-833f-dde1c0eaa30a.xml, HBA_FCPTargetMapping, storage.hba_fcptargetmapping, *PHBA_FCPTARGETMAPPING, PHBA_FCPTARGETMAPPING structure pointer [Storage Devices], HBA_FCPTARGETMAPPING, hbaapi/HBA_FCPTargetMapping, HBA_FCPTargetMapping structure [Storage Devices], HBA_FCPTARGETMAPPING structure [Storage Devices], hbaapi/PHBA_FCPTARGETMAPPING, PHBA_FCPTARGETMAPPING
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : hbaapi.h
-req.include-header : Hbaapi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HBA_FCPTARGETMAPPING, *PHBA_FCPTARGETMAPPING
+UID: NS:hbaapi.HBA_FCPTargetMapping
+title: HBA_FCPTargetMapping
+author: windows-driver-content
+description: The HBA_FCPTargetMapping structure contains an array of bindings between operating system and fibre channel protocol (FCP) identifiers for a set of target devices.
+old-location: storage\hba_fcptargetmapping.htm
+old-project: storage
+ms.assetid: 666f4aea-2fcb-46cf-8d25-d1322c0517c9
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: structs-Fibre_ac1d3ea4-8e4f-4164-833f-dde1c0eaa30a.xml, HBA_FCPTargetMapping, storage.hba_fcptargetmapping, *PHBA_FCPTARGETMAPPING, PHBA_FCPTARGETMAPPING structure pointer [Storage Devices], HBA_FCPTARGETMAPPING, hbaapi/HBA_FCPTargetMapping, HBA_FCPTargetMapping structure [Storage Devices], HBA_FCPTARGETMAPPING structure [Storage Devices], hbaapi/PHBA_FCPTARGETMAPPING, PHBA_FCPTARGETMAPPING
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: hbaapi.h
+req.include-header: Hbaapi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hbaapi.h
+apiname:
+-	HBA_FCPTARGETMAPPING
+product: Windows
+targetos: Windows
+req.typenames: HBA_FCPTARGETMAPPING, *PHBA_FCPTARGETMAPPING
 ---
 
 # HBA_FCPTargetMapping structure

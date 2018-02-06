@@ -1,41 +1,46 @@
 ---
-UID : NF:icm.WcsEnumColorProfiles
-title : WcsEnumColorProfiles function
-author : windows-driver-content
-description : The WcsEnumColorProfiles function enumerates all color profiles that satisfy the enumeration criteria in the specified profile management scope.
-old-location : print\wcsenumcolorprofiles.htm
-old-project : print
-ms.assetid : 54cb2647-5685-4856-9b70-97733758aac2
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : icm/WcsEnumColorProfiles, print.wcsenumcolorprofiles, WcsEnumColorProfiles function [Print Devices], WcsEnumColorProfiles, colorfnc_06eda9f3-b5d8-4d57-b9e4-1a939bc0ea70.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : icm.h
-req.include-header : 
-req.target-type : Universal
-req.target-min-winverclnt : Included in Windows Vista and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Mscms.lib
-req.dll : Mscms.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WCS_PROFILE_MANAGEMENT_SCOPE
+UID: NF:icm.WcsEnumColorProfiles
+title: WcsEnumColorProfiles function
+author: windows-driver-content
+description: The WcsEnumColorProfiles function enumerates all color profiles that satisfy the enumeration criteria in the specified profile management scope.
+old-location: print\wcsenumcolorprofiles.htm
+old-project: print
+ms.assetid: 54cb2647-5685-4856-9b70-97733758aac2
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: icm/WcsEnumColorProfiles, print.wcsenumcolorprofiles, WcsEnumColorProfiles function [Print Devices], WcsEnumColorProfiles, colorfnc_06eda9f3-b5d8-4d57-b9e4-1a939bc0ea70.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: icm.h
+req.include-header: 
+req.target-type: Universal
+req.target-min-winverclnt: Included in Windows Vista and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Mscms.lib
+req.dll: Mscms.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Mscms.dll
+apiname:
+-	WcsEnumColorProfiles
+product: Windows
+targetos: Windows
+req.typenames: WCS_PROFILE_MANAGEMENT_SCOPE
 ---
 
 

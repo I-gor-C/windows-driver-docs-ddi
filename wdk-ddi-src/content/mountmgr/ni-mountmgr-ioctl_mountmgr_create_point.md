@@ -1,41 +1,46 @@
 ---
-UID : NI:mountmgr.IOCTL_MOUNTMGR_CREATE_POINT
-title : IOCTL_MOUNTMGR_CREATE_POINT
-author : windows-driver-content
-description : The mount manager clients can use this IOCTL to request that the mount manager create a persistent symbolic link name for the indicated volume.
-old-location : storage\ioctl_mountmgr_create_point.htm
-old-project : storage
-ms.assetid : 580af31d-4122-48fe-a9da-097787f87620
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_mountmgr_create_point, IOCTL_MOUNTMGR_CREATE_POINT control code [Storage Devices], IOCTL_MOUNTMGR_CREATE_POINT, mountmgr/IOCTL_MOUNTMGR_CREATE_POINT, k307_c1159db5-2699-4bac-9fe9-67ceda477ddb.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : mountmgr.h
-req.include-header : Mountmgr.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PMOUNTDEV_UNIQUE_ID, MOUNTDEV_UNIQUE_ID"
+UID: NI:mountmgr.IOCTL_MOUNTMGR_CREATE_POINT
+title: IOCTL_MOUNTMGR_CREATE_POINT
+author: windows-driver-content
+description: The mount manager clients can use this IOCTL to request that the mount manager create a persistent symbolic link name for the indicated volume.
+old-location: storage\ioctl_mountmgr_create_point.htm
+old-project: storage
+ms.assetid: 580af31d-4122-48fe-a9da-097787f87620
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_mountmgr_create_point, IOCTL_MOUNTMGR_CREATE_POINT control code [Storage Devices], IOCTL_MOUNTMGR_CREATE_POINT, mountmgr/IOCTL_MOUNTMGR_CREATE_POINT, k307_c1159db5-2699-4bac-9fe9-67ceda477ddb.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: mountmgr.h
+req.include-header: Mountmgr.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Mountmgr.h
+apiname:
+-	IOCTL_MOUNTMGR_CREATE_POINT
+product: Windows
+targetos: Windows
+req.typenames: "*PMOUNTDEV_UNIQUE_ID, MOUNTDEV_UNIQUE_ID"
 ---
 
 # IOCTL_MOUNTMGR_CREATE_POINT IOCTL

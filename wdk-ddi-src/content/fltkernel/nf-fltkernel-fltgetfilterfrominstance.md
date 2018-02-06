@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltGetFilterFromInstance
-title : FltGetFilterFromInstance function
-author : windows-driver-content
-description : The FltGetFilterFromInstance routine returns an opaque filter pointer for the minifilter driver that created the given instance.
-old-location : ifsk\fltgetfilterfrominstance.htm
-old-project : ifsk
-ms.assetid : 2fe73705-4b44-4c75-8677-3325b6be9250
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : fltkernel/FltGetFilterFromInstance, FltGetFilterFromInstance routine [Installable File System Drivers], ifsk.fltgetfilterfrominstance, FltApiRef_e_to_o_d03cf921-2e64-49de-9929-39650fd7d03d.xml, FltGetFilterFromInstance
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltGetFilterFromInstance
+title: FltGetFilterFromInstance function
+author: windows-driver-content
+description: The FltGetFilterFromInstance routine returns an opaque filter pointer for the minifilter driver that created the given instance.
+old-location: ifsk\fltgetfilterfrominstance.htm
+old-project: ifsk
+ms.assetid: 2fe73705-4b44-4c75-8677-3325b6be9250
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: fltkernel/FltGetFilterFromInstance, FltGetFilterFromInstance routine [Installable File System Drivers], ifsk.fltgetfilterfrominstance, FltApiRef_e_to_o_d03cf921-2e64-49de-9929-39650fd7d03d.xml, FltGetFilterFromInstance
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltGetFilterFromInstance
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

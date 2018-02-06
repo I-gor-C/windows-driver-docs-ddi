@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.KSPROPERTY_CAMERACONTROL_IMAGE_PIN_CAPABILITY_S
-title : KSPROPERTY_CAMERACONTROL_IMAGE_PIN_CAPABILITY_S
-author : windows-driver-content
-description : Describes image pin control properties in the PROPSETID_VIDCAP_CAMERACONTROL_IMAGE_PIN_CAPABILITY camera control property set.
-old-location : stream\ksproperty_cameracontrol_image_pin_capability_s.htm
-old-project : stream
-ms.assetid : AFFCD1E0-A92F-446D-A30E-C41FA8706FC1
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ksmedia/KSPROPERTY_CAMERACONTROL_IMAGE_PIN_CAPABILITY_S, KSPROPERTY_CAMERACONTROL_IMAGE_PIN_CAPABILITY_SEQUENCE_EXCLUSIVE_WITH_RECORD, KSPROPERTY_CAMERACONTROL_IMAGE_PIN_CAPABILITY_S structure [Streaming Media Devices], KSPROPERTY_CAMERACONTROL_IMAGE_PIN_CAPABILITY_EXCLUSIVE_WITH_RECORD, *PKSPROPERTY_CAMERACONTROL_IMAGE_PIN_CAPABILITY_S, PKSPROPERTY_CAMERACONTROL_IMAGE_PIN_CAPABILITY_S, PKSPROPERTY_CAMERACONTROL_IMAGE_PIN_CAPABILITY_S structure pointer [Streaming Media Devices], stream.ksproperty_cameracontrol_image_pin_capability_s, KSPROPERTY_CAMERACONTROL_IMAGE_PIN_CAPABILITY_S, ksmedia/PKSPROPERTY_CAMERACONTROL_IMAGE_PIN_CAPABILITY_S
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KSPROPERTY_CAMERACONTROL_IMAGE_PIN_CAPABILITY_S, *PKSPROPERTY_CAMERACONTROL_IMAGE_PIN_CAPABILITY_S
+UID: NS:ksmedia.KSPROPERTY_CAMERACONTROL_IMAGE_PIN_CAPABILITY_S
+title: KSPROPERTY_CAMERACONTROL_IMAGE_PIN_CAPABILITY_S
+author: windows-driver-content
+description: Describes image pin control properties in the PROPSETID_VIDCAP_CAMERACONTROL_IMAGE_PIN_CAPABILITY camera control property set.
+old-location: stream\ksproperty_cameracontrol_image_pin_capability_s.htm
+old-project: stream
+ms.assetid: AFFCD1E0-A92F-446D-A30E-C41FA8706FC1
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ksmedia/KSPROPERTY_CAMERACONTROL_IMAGE_PIN_CAPABILITY_S, KSPROPERTY_CAMERACONTROL_IMAGE_PIN_CAPABILITY_SEQUENCE_EXCLUSIVE_WITH_RECORD, KSPROPERTY_CAMERACONTROL_IMAGE_PIN_CAPABILITY_S structure [Streaming Media Devices], KSPROPERTY_CAMERACONTROL_IMAGE_PIN_CAPABILITY_EXCLUSIVE_WITH_RECORD, *PKSPROPERTY_CAMERACONTROL_IMAGE_PIN_CAPABILITY_S, PKSPROPERTY_CAMERACONTROL_IMAGE_PIN_CAPABILITY_S, PKSPROPERTY_CAMERACONTROL_IMAGE_PIN_CAPABILITY_S structure pointer [Streaming Media Devices], stream.ksproperty_cameracontrol_image_pin_capability_s, KSPROPERTY_CAMERACONTROL_IMAGE_PIN_CAPABILITY_S, ksmedia/PKSPROPERTY_CAMERACONTROL_IMAGE_PIN_CAPABILITY_S
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ksmedia.h
+apiname:
+-	KSPROPERTY_CAMERACONTROL_IMAGE_PIN_CAPABILITY_S
+product: Windows
+targetos: Windows
+req.typenames: KSPROPERTY_CAMERACONTROL_IMAGE_PIN_CAPABILITY_S, *PKSPROPERTY_CAMERACONTROL_IMAGE_PIN_CAPABILITY_S
 ---
 
 # KSPROPERTY_CAMERACONTROL_IMAGE_PIN_CAPABILITY_S structure

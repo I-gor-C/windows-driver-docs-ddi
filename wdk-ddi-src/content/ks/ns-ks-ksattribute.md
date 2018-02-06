@@ -1,41 +1,46 @@
 ---
-UID : NS:ks.KSATTRIBUTE
-title : KSATTRIBUTE
-author : windows-driver-content
-description : The KSATTRIBUTE structure defines an additional attribute of a data format or data range that is not covered by the KSDATAFORMAT and KSDATARANGE structures or the extended information based on the format and range specifiers.
-old-location : stream\ksattribute.htm
-old-project : stream
-ms.assetid : 985d9f12-11c6-40e6-9cb6-572196bc04f4
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ks/KSATTRIBUTE, stream.ksattribute, PKSATTRIBUTE structure pointer [Streaming Media Devices], *PKSATTRIBUTE, KSATTRIBUTE structure [Streaming Media Devices], KSATTRIBUTE, ks-struct_02cb064e-813f-4d67-8cf3-a33e05af7421.xml, ks/PKSATTRIBUTE, PKSATTRIBUTE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKSATTRIBUTE, KSATTRIBUTE"
+UID: NS:ks.KSATTRIBUTE
+title: KSATTRIBUTE
+author: windows-driver-content
+description: The KSATTRIBUTE structure defines an additional attribute of a data format or data range that is not covered by the KSDATAFORMAT and KSDATARANGE structures or the extended information based on the format and range specifiers.
+old-location: stream\ksattribute.htm
+old-project: stream
+ms.assetid: 985d9f12-11c6-40e6-9cb6-572196bc04f4
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ks/KSATTRIBUTE, stream.ksattribute, PKSATTRIBUTE structure pointer [Streaming Media Devices], *PKSATTRIBUTE, KSATTRIBUTE structure [Streaming Media Devices], KSATTRIBUTE, ks-struct_02cb064e-813f-4d67-8cf3-a33e05af7421.xml, ks/PKSATTRIBUTE, PKSATTRIBUTE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	KSATTRIBUTE
+product: Windows
+targetos: Windows
+req.typenames: "*PKSATTRIBUTE, KSATTRIBUTE"
 ---
 
 # KSATTRIBUTE structure

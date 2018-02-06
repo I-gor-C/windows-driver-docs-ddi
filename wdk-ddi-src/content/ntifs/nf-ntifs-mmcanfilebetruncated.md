@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.MmCanFileBeTruncated
-title : MmCanFileBeTruncated function
-author : windows-driver-content
-description : The MmCanFileBeTruncated routine checks whether a file can be truncated.
-old-location : ifsk\mmcanfilebetruncated.htm
-old-project : ifsk
-ms.assetid : 219ecf09-54eb-4972-ae71-0eb3e7ea8ea9
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : MmCanFileBeTruncated routine [Installable File System Drivers], mmref_7d6c86f9-4a26-4d2c-bf55-9352044e9339.xml, MmCanFileBeTruncated, ntifs/MmCanFileBeTruncated, ifsk.mmcanfilebetruncated
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "< DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.MmCanFileBeTruncated
+title: MmCanFileBeTruncated function
+author: windows-driver-content
+description: The MmCanFileBeTruncated routine checks whether a file can be truncated.
+old-location: ifsk\mmcanfilebetruncated.htm
+old-project: ifsk
+ms.assetid: 219ecf09-54eb-4972-ae71-0eb3e7ea8ea9
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: MmCanFileBeTruncated routine [Installable File System Drivers], mmref_7d6c86f9-4a26-4d2c-bf55-9352044e9339.xml, MmCanFileBeTruncated, ntifs/MmCanFileBeTruncated, ifsk.mmcanfilebetruncated
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "< DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	MmCanFileBeTruncated
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

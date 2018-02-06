@@ -1,42 +1,48 @@
 ---
-UID : NF:spbcx.SpbRequestGetController
-title : SpbRequestGetController function
-author : windows-driver-content
-description : The SpbRequestGetController method returns the WDFDEVICE handle to the device object for the SPB controller that the specified I/O request was sent to.
-old-location : spb\spbrequestgetcontroller.htm
-old-project : SPB
-ms.assetid : 0CD692E2-B2D6-4786-8C0B-C0DCAFCF6259
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : SPB.spbrequestgetcontroller, SpbRequestGetController, spbcx/SpbRequestGetController, SpbRequestGetController method [Buses]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : spbcx.h
-req.include-header : 
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Spbcxstubs.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SPB_REQUEST_TYPE, *PSPB_REQUEST_TYPE
-req.product : Windows 10 or later.
+UID: NF:spbcx.SpbRequestGetController
+title: SpbRequestGetController function
+author: windows-driver-content
+description: The SpbRequestGetController method returns the WDFDEVICE handle to the device object for the SPB controller that the specified I/O request was sent to.
+old-location: spb\spbrequestgetcontroller.htm
+old-project: SPB
+ms.assetid: 0CD692E2-B2D6-4786-8C0B-C0DCAFCF6259
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: SPB.spbrequestgetcontroller, SpbRequestGetController, spbcx/SpbRequestGetController, SpbRequestGetController method [Buses]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: spbcx.h
+req.include-header: 
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Spbcxstubs.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	spbcxstubs.lib
+-	spbcxstubs.dll
+apiname:
+-	SpbRequestGetController
+product: Windows
+targetos: Windows
+req.typenames: SPB_REQUEST_TYPE, *PSPB_REQUEST_TYPE
+req.product: Windows 10 or later.
 ---
 
 

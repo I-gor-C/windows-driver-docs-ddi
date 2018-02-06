@@ -1,41 +1,47 @@
 ---
-UID : NF:ntifs.RtlAllocateHeap
-title : RtlAllocateHeap function
-author : windows-driver-content
-description : The RtlAllocateHeap routine allocates a block of memory from a heap.
-old-location : ifsk\rtlallocateheap.htm
-old-project : ifsk
-ms.assetid : 38f4c2b7-f9cd-42f2-b75e-725976b6b9dd
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : rtlref_fa360ead-62c7-46c3-8d66-a73ee9e1a0bb.xml, RtlAllocateHeap, ntifs/RtlAllocateHeap, ifsk.rtlallocateheap, RtlAllocateHeap routine [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : This routine is available on Microsoft Windows XP and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "< DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.RtlAllocateHeap
+title: RtlAllocateHeap function
+author: windows-driver-content
+description: The RtlAllocateHeap routine allocates a block of memory from a heap.
+old-location: ifsk\rtlallocateheap.htm
+old-project: ifsk
+ms.assetid: 38f4c2b7-f9cd-42f2-b75e-725976b6b9dd
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: rtlref_fa360ead-62c7-46c3-8d66-a73ee9e1a0bb.xml, RtlAllocateHeap, ntifs/RtlAllocateHeap, ifsk.rtlallocateheap, RtlAllocateHeap routine [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: This routine is available on Microsoft Windows XP and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "< DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+-	ntdll.dll
+apiname:
+-	RtlAllocateHeap
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

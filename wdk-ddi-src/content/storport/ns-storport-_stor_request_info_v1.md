@@ -1,42 +1,47 @@
 ---
-UID : NS:storport._STOR_REQUEST_INFO_V1
-title : "_STOR_REQUEST_INFO_V1"
-author : windows-driver-content
-description : The _STOR_REQUEST_INFO_V1 structure contains details about the storage driver IO request associated with a SCSI request block (SRB). _STOR_REQUEST_INFO_V1 is returned by the StorPortGetRequestInfo routine.
-old-location : storage\stor_request_info.htm
-old-project : storage
-ms.assetid : CCC429B7-88BB-4DC3-86BC-6A5FCD405A5D
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storport/PSTOR_REQUEST_INFO_V1, PSTOR_REQUEST_INFO_V1 structure pointer [Storage Devices], storage.stor_request_info, StorIoPriorityVeryLow, StorIoPriorityLow, PSTOR_REQUEST_INFO_V1, *PSTOR_REQUEST_INFO_V1, REQUEST_INFO_TEMPORARY_FLAG, STOR_REQUEST_INFO_V1, _STOR_REQUEST_INFO_V1, storport/_STOR_REQUEST_INFO_V1, STOR_REQUEST_INFO_V1 structure [Storage Devices], StorIoPriorityNormal, StorIoPriorityHigh, StorIoPriorityCritical, REQUEST_INFO_SEQUENTIAL_IO_FLAG, REQUEST_INFO_WRITE_THROUGH_FLAG, REQUEST_INFO_NO_CACHE_FLAG, REQUEST_INFO_PAGING_IO_FLAG, _STOR_REQUEST_INFO_V1 structure [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 8 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSTOR_REQUEST_INFO_V1, STOR_REQUEST_INFO_V1"
-req.product : Windows 10 or later.
+UID: NS:storport._STOR_REQUEST_INFO_V1
+title: "_STOR_REQUEST_INFO_V1"
+author: windows-driver-content
+description: The _STOR_REQUEST_INFO_V1 structure contains details about the storage driver IO request associated with a SCSI request block (SRB). _STOR_REQUEST_INFO_V1 is returned by the StorPortGetRequestInfo routine.
+old-location: storage\stor_request_info.htm
+old-project: storage
+ms.assetid: CCC429B7-88BB-4DC3-86BC-6A5FCD405A5D
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storport/PSTOR_REQUEST_INFO_V1, PSTOR_REQUEST_INFO_V1 structure pointer [Storage Devices], storage.stor_request_info, StorIoPriorityVeryLow, StorIoPriorityLow, PSTOR_REQUEST_INFO_V1, *PSTOR_REQUEST_INFO_V1, REQUEST_INFO_TEMPORARY_FLAG, STOR_REQUEST_INFO_V1, _STOR_REQUEST_INFO_V1, storport/_STOR_REQUEST_INFO_V1, STOR_REQUEST_INFO_V1 structure [Storage Devices], StorIoPriorityNormal, StorIoPriorityHigh, StorIoPriorityCritical, REQUEST_INFO_SEQUENTIAL_IO_FLAG, REQUEST_INFO_WRITE_THROUGH_FLAG, REQUEST_INFO_NO_CACHE_FLAG, REQUEST_INFO_PAGING_IO_FLAG, _STOR_REQUEST_INFO_V1 structure [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 8 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Storport.h
+apiname:
+-	STOR_REQUEST_INFO_V1
+product: Windows
+targetos: Windows
+req.typenames: "*PSTOR_REQUEST_INFO_V1, STOR_REQUEST_INFO_V1"
+req.product: Windows 10 or later.
 ---
 
 # _STOR_REQUEST_INFO_V1 structure

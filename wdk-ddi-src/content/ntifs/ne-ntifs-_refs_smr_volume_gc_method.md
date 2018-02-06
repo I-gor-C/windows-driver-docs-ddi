@@ -1,41 +1,46 @@
 ---
-UID : NE:ntifs._REFS_SMR_VOLUME_GC_METHOD
-title : "_REFS_SMR_VOLUME_GC_METHOD"
-author : windows-driver-content
-description : The REFS_SMR_VOLUME_GC_METHOD enum specifies the garbage collection method or strategy for FSCTL_SET_REFS_SMR_VOLUME_GC_PARAMETERS.
-old-location : ifsk\refs_smr_volume_gc_method.htm
-old-project : ifsk
-ms.assetid : 6C58EFD4-B5F9-4E2B-AF76-E9614218E0DC
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : PREFS_SMR_VOLUME_GC_METHOD, PREFS_SMR_VOLUME_GC_METHOD enumeration pointer [Installable File System Drivers], SmrGcMethodRotation, REFS_SMR_VOLUME_GC_METHOD enumeration [Installable File System Drivers], ntifs/PREFS_SMR_VOLUME_GC_METHOD, REFS_SMR_VOLUME_GC_METHOD, ntifs/SmrGcMethodCompression, _REFS_SMR_VOLUME_GC_METHOD, *PREFS_SMR_VOLUME_GC_METHOD, ntifs/SmrGcMethodRotation, SmrGcMethodCompression, ntifs/SmrGcMethodCompaction, ifsk.refs_smr_volume_gc_method, SmrGcMethodCompaction, ntifs/REFS_SMR_VOLUME_GC_METHOD
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows 10, version 1709.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : REFS_SMR_VOLUME_GC_METHOD, *PREFS_SMR_VOLUME_GC_METHOD
+UID: NE:ntifs._REFS_SMR_VOLUME_GC_METHOD
+title: "_REFS_SMR_VOLUME_GC_METHOD"
+author: windows-driver-content
+description: The REFS_SMR_VOLUME_GC_METHOD enum specifies the garbage collection method or strategy for FSCTL_SET_REFS_SMR_VOLUME_GC_PARAMETERS.
+old-location: ifsk\refs_smr_volume_gc_method.htm
+old-project: ifsk
+ms.assetid: 6C58EFD4-B5F9-4E2B-AF76-E9614218E0DC
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: PREFS_SMR_VOLUME_GC_METHOD, PREFS_SMR_VOLUME_GC_METHOD enumeration pointer [Installable File System Drivers], SmrGcMethodRotation, REFS_SMR_VOLUME_GC_METHOD enumeration [Installable File System Drivers], ntifs/PREFS_SMR_VOLUME_GC_METHOD, REFS_SMR_VOLUME_GC_METHOD, ntifs/SmrGcMethodCompression, _REFS_SMR_VOLUME_GC_METHOD, *PREFS_SMR_VOLUME_GC_METHOD, ntifs/SmrGcMethodRotation, SmrGcMethodCompression, ntifs/SmrGcMethodCompaction, ifsk.refs_smr_volume_gc_method, SmrGcMethodCompaction, ntifs/REFS_SMR_VOLUME_GC_METHOD
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows 10, version 1709.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntifs.h
+apiname:
+-	REFS_SMR_VOLUME_GC_METHOD
+product: Windows
+targetos: Windows
+req.typenames: REFS_SMR_VOLUME_GC_METHOD, *PREFS_SMR_VOLUME_GC_METHOD
 ---
 
 # _REFS_SMR_VOLUME_GC_METHOD Enumeration
@@ -53,26 +58,26 @@ typedef enum _REFS_SMR_VOLUME_GC_METHOD {
 ## Constants
 
 <table>
-
-<tr>
-<td>SmrGcMethodCompaction</td>
-<td>Specifies the use of the compaction method for garbage collection.</td>
-</tr>
-
-<tr>
-<td>SmrGcMethodCompression</td>
-<td>Specifies the use of the compression method for garbage collection.</td>
-</tr>
-
-<tr>
-<td>SmrGcMethodRotation</td>
-<td>Specifies the use of the rotation method for garbage collection. Moves data from one tier to another.</td>
-</tr>
+            
+                <tr>
+                    <td>SmrGcMethodCompaction</td>
+                    <td>Specifies the use of the compaction method for garbage collection.</td>
+                </tr>
+            
+                <tr>
+                    <td>SmrGcMethodCompression</td>
+                    <td>Specifies the use of the compression method for garbage collection.</td>
+                </tr>
+            
+                <tr>
+                    <td>SmrGcMethodRotation</td>
+                    <td>Specifies the use of the rotation method for garbage collection. Moves data from one tier to another.</td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-Currently the only supported value  is <b>SmrGcMethodCompaction</b>.
+        Currently the only supported value  is <b>SmrGcMethodCompaction</b>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -80,9 +85,9 @@ Currently the only supported value  is <b>SmrGcMethodCompaction</b>.
 | **Windows version** | Available starting with Windows 10, version 1709. Available starting with Windows 10, version 1709. |
 | **Header** | ntifs.h (include Ntifs.h) |
 
-## See Also
+    ## See Also
 
-<a href="https://msdn.microsoft.com/782542C4-CFC5-4BF7-AF38-3247A3AC6AB9">FSCTL_SET_REFS_SMR_VOLUME_GC_PARAMETERS</a>
+        <a href="https://msdn.microsoft.com/782542C4-CFC5-4BF7-AF38-3247A3AC6AB9">FSCTL_SET_REFS_SMR_VOLUME_GC_PARAMETERS</a>
 
  
 

@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.ZwSetInformationVirtualMemory
-title : ZwSetInformationVirtualMemory function
-author : windows-driver-content
-description : The ZwSetInformationVirtualMemory routine performs an operation on a specified list of address ranges in the user address space of a process.
-old-location : kernel\zwsetinformationvirtualmemory.htm
-old-project : kernel
-ms.assetid : 1D53D6C6-7546-439F-818C-85E65901B5DC
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ntifs/ZwSetInformationVirtualMemory, kernel.zwsetinformationvirtualmemory, ZwSetInformationVirtualMemory routine [Kernel-Mode Driver Architecture], ZwSetInformationVirtualMemory
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntddk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 10, version 1511.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.ZwSetInformationVirtualMemory
+title: ZwSetInformationVirtualMemory function
+author: windows-driver-content
+description: The ZwSetInformationVirtualMemory routine performs an operation on a specified list of address ranges in the user address space of a process.
+old-location: kernel\zwsetinformationvirtualmemory.htm
+old-project: kernel
+ms.assetid: 1D53D6C6-7546-439F-818C-85E65901B5DC
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ntifs/ZwSetInformationVirtualMemory, kernel.zwsetinformationvirtualmemory, ZwSetInformationVirtualMemory routine [Kernel-Mode Driver Architecture], ZwSetInformationVirtualMemory
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntddk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 10, version 1511.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ZwSetInformationVirtualMemory
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

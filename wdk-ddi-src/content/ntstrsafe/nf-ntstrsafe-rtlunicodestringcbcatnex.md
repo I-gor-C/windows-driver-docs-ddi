@@ -1,41 +1,47 @@
 ---
-UID : NF:ntstrsafe.RtlUnicodeStringCbCatNEx
-title : RtlUnicodeStringCbCatNEx function
-author : windows-driver-content
-description : The RtlUnicodeStringCbCatNEx function concatenates two strings that are contained in UNICODE_STRING structures while limiting the size of the copied string.
-old-location : kernel\rtlunicodestringcbcatnex.htm
-old-project : kernel
-ms.assetid : 5c8b0428-98ce-452d-bdfa-212965962250
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : safestrings_63518e2a-e301-4b39-ae83-39d72cbe75b6.xml, kernel.rtlunicodestringcbcatnex, RtlUnicodeStringCbCatNEx, RtlUnicodeStringCbCatNEx function [Kernel-Mode Driver Architecture], ntstrsafe/RtlUnicodeStringCbCatNEx
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntstrsafe.h
-req.include-header : Ntstrsafe.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available starting with Windows XP with Service Pack 1 (SP1).
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ntstrsafe.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : BATTERY_REPORTING_SCALE, *PBATTERY_REPORTING_SCALE
+UID: NF:ntstrsafe.RtlUnicodeStringCbCatNEx
+title: RtlUnicodeStringCbCatNEx function
+author: windows-driver-content
+description: The RtlUnicodeStringCbCatNEx function concatenates two strings that are contained in UNICODE_STRING structures while limiting the size of the copied string.
+old-location: kernel\rtlunicodestringcbcatnex.htm
+old-project: kernel
+ms.assetid: 5c8b0428-98ce-452d-bdfa-212965962250
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: safestrings_63518e2a-e301-4b39-ae83-39d72cbe75b6.xml, kernel.rtlunicodestringcbcatnex, RtlUnicodeStringCbCatNEx, RtlUnicodeStringCbCatNEx function [Kernel-Mode Driver Architecture], ntstrsafe/RtlUnicodeStringCbCatNEx
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntstrsafe.h
+req.include-header: Ntstrsafe.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available starting with Windows XP with Service Pack 1 (SP1).
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ntstrsafe.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ntstrsafe.lib
+-	Ntstrsafe.dll
+apiname:
+-	RtlUnicodeStringCbCatNEx
+product: Windows
+targetos: Windows
+req.typenames: BATTERY_REPORTING_SCALE, *PBATTERY_REPORTING_SCALE
 ---
 
 

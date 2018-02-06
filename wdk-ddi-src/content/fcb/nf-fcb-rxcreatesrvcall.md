@@ -1,41 +1,46 @@
 ---
-UID : NF:fcb.RxCreateSrvCall
-title : RxCreateSrvCall function
-author : windows-driver-content
-description : RxCreateSrvCall builds a SRV_CALL structure and inserts the name into the net name table maintained by RDBSS.
-old-location : ifsk\rxcreatesrvcall.htm
-old-project : ifsk
-ms.assetid : 0eda9724-686f-4681-a1f0-92bdc36e695d
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : RxCreateSrvCall, rxref_ff4d3641-1ae5-43f1-9c49-0456d11f69b2.xml, fcb/RxCreateSrvCall, RxCreateSrvCall function [Installable File System Drivers], ifsk.rxcreatesrvcall
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fcb.h
-req.include-header : Rxcontx.h, Mrxfcb.h, Prefix.h, Fcb.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FA_ENTRY, *PFA_ENTRY
+UID: NF:fcb.RxCreateSrvCall
+title: RxCreateSrvCall function
+author: windows-driver-content
+description: RxCreateSrvCall builds a SRV_CALL structure and inserts the name into the net name table maintained by RDBSS.
+old-location: ifsk\rxcreatesrvcall.htm
+old-project: ifsk
+ms.assetid: 0eda9724-686f-4681-a1f0-92bdc36e695d
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: RxCreateSrvCall, rxref_ff4d3641-1ae5-43f1-9c49-0456d11f69b2.xml, fcb/RxCreateSrvCall, RxCreateSrvCall function [Installable File System Drivers], ifsk.rxcreatesrvcall
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fcb.h
+req.include-header: Rxcontx.h, Mrxfcb.h, Prefix.h, Fcb.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	fcb.h
+apiname:
+-	RxCreateSrvCall
+product: Windows
+targetos: Windows
+req.typenames: FA_ENTRY, *PFA_ENTRY
 ---
 
 

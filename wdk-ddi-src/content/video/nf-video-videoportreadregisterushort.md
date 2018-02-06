@@ -1,42 +1,47 @@
 ---
-UID : NF:video.VideoPortReadRegisterUshort
-title : VideoPortReadRegisterUshort function
-author : windows-driver-content
-description : The VideoPortReadRegisterUshort function reads a USHORT value from a mapped register range.
-old-location : display\videoportreadregisterushort.htm
-old-project : display
-ms.assetid : fdf5d153-74ca-437e-82ab-b85c89dc9fd1
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : VideoPort_Functions_c6ee8be3-3b15-4f22-8008-63d132ec7379.xml, video/VideoPortReadRegisterUshort, VideoPortReadRegisterUshort function [Display Devices], display.videoportreadregisterushort, VideoPortReadRegisterUshort
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows 2000 and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Videoprt.lib
-req.dll : Videoprt.sys
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_PORT_SERVICES
-req.product : Windows 10 or later.
+UID: NF:video.VideoPortReadRegisterUshort
+title: VideoPortReadRegisterUshort function
+author: windows-driver-content
+description: The VideoPortReadRegisterUshort function reads a USHORT value from a mapped register range.
+old-location: display\videoportreadregisterushort.htm
+old-project: display
+ms.assetid: fdf5d153-74ca-437e-82ab-b85c89dc9fd1
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: VideoPort_Functions_c6ee8be3-3b15-4f22-8008-63d132ec7379.xml, video/VideoPortReadRegisterUshort, VideoPortReadRegisterUshort function [Display Devices], display.videoportreadregisterushort, VideoPortReadRegisterUshort
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows 2000 and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Videoprt.lib
+req.dll: Videoprt.sys
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Videoprt.sys
+apiname:
+-	VideoPortReadRegisterUshort
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_PORT_SERVICES
+req.product: Windows 10 or later.
 ---
 
 

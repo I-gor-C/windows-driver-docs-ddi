@@ -1,42 +1,47 @@
 ---
-UID : NI:vpci.IOCTL_VPCI_WRITE_BLOCK
-title : IOCTL_VPCI_WRITE_BLOCK
-author : windows-driver-content
-description : The driver for a PCI Express (PCIe) virtual function (VF) issues an IOCTL_VPCI_WRITE_BLOCK I/O control code (IOCTL) in order to write data to a VF configuration block. The driver issues this IOCTL to the next-lower driver in the driver stack.
-old-location : pci\ioctl_vpci_write_block.htm
-old-project : PCI
-ms.assetid : 5214053E-28AB-4728-9F4F-6705F8F56AC7
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : PCI.ioctl_vpci_write_block, IOCTL_VPCI_WRITE_BLOCK control code, IOCTL_VPCI_WRITE_BLOCK, vpci/IOCTL_VPCI_WRITE_BLOCK
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : vpci.h
-req.include-header : Wdm.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Server 2012 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : DISPATCH_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VMB_CHANNEL_STATE_CHANGE_CALLBACKS, *PVMB_CHANNEL_STATE_CHANGE_CALLBACKS
-req.product : Windows 10 or later.
+UID: NI:vpci.IOCTL_VPCI_WRITE_BLOCK
+title: IOCTL_VPCI_WRITE_BLOCK
+author: windows-driver-content
+description: The driver for a PCI Express (PCIe) virtual function (VF) issues an IOCTL_VPCI_WRITE_BLOCK I/O control code (IOCTL) in order to write data to a VF configuration block. The driver issues this IOCTL to the next-lower driver in the driver stack.
+old-location: pci\ioctl_vpci_write_block.htm
+old-project: PCI
+ms.assetid: 5214053E-28AB-4728-9F4F-6705F8F56AC7
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: PCI.ioctl_vpci_write_block, IOCTL_VPCI_WRITE_BLOCK control code, IOCTL_VPCI_WRITE_BLOCK, vpci/IOCTL_VPCI_WRITE_BLOCK
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: vpci.h
+req.include-header: Wdm.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Server 2012 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: DISPATCH_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Vpci.h
+apiname:
+-	IOCTL_VPCI_WRITE_BLOCK
+product: Windows
+targetos: Windows
+req.typenames: VMB_CHANNEL_STATE_CHANGE_CALLBACKS, *PVMB_CHANNEL_STATE_CHANGE_CALLBACKS
+req.product: Windows 10 or later.
 ---
 
 # IOCTL_VPCI_WRITE_BLOCK IOCTL

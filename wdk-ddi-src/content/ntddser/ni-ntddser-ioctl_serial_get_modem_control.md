@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddser.IOCTL_SERIAL_GET_MODEM_CONTROL
-title : IOCTL_SERIAL_GET_MODEM_CONTROL
-author : windows-driver-content
-description : The IOCTL_SERIAL_GET_MODEM_CONTROL request returns the value of the modem control register in the serial controller.
-old-location : serports\ioctl_serial_get_modem_control.htm
-old-project : serports
-ms.assetid : 4b3f52ee-8028-4cba-a8c7-4ba73b1fcab0
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : serports.ioctl_serial_get_modem_control, IOCTL_SERIAL_GET_MODEM_CONTROL control code [Serial Ports], IOCTL_SERIAL_GET_MODEM_CONTROL, ntddser/IOCTL_SERIAL_GET_MODEM_CONTROL, serref_063be160-c01f-40c9-aff9-2de802c70bda.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddser.h
-req.include-header : Ntddser.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SD_REQUEST_FUNCTION
+UID: NI:ntddser.IOCTL_SERIAL_GET_MODEM_CONTROL
+title: IOCTL_SERIAL_GET_MODEM_CONTROL
+author: windows-driver-content
+description: The IOCTL_SERIAL_GET_MODEM_CONTROL request returns the value of the modem control register in the serial controller.
+old-location: serports\ioctl_serial_get_modem_control.htm
+old-project: serports
+ms.assetid: 4b3f52ee-8028-4cba-a8c7-4ba73b1fcab0
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: serports.ioctl_serial_get_modem_control, IOCTL_SERIAL_GET_MODEM_CONTROL control code [Serial Ports], IOCTL_SERIAL_GET_MODEM_CONTROL, ntddser/IOCTL_SERIAL_GET_MODEM_CONTROL, serref_063be160-c01f-40c9-aff9-2de802c70bda.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddser.h
+req.include-header: Ntddser.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddser.h
+apiname:
+-	IOCTL_SERIAL_GET_MODEM_CONTROL
+product: Windows
+targetos: Windows
+req.typenames: SD_REQUEST_FUNCTION
 ---
 
 # IOCTL_SERIAL_GET_MODEM_CONTROL IOCTL

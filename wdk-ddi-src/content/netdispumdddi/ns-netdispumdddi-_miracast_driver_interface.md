@@ -1,41 +1,46 @@
 ---
-UID : NS:netdispumdddi._MIRACAST_DRIVER_INTERFACE
-title : "_MIRACAST_DRIVER_INTERFACE"
-author : windows-driver-content
-description : Contains pointers to wireless display (Miracast) functions that are implemented by the Miracast user-mode driver.
-old-location : display\miracast_driver_interface.htm
-old-project : display
-ms.assetid : a3b9695e-b317-471b-91de-e191c1f5cb17
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : MIRACAST_DRIVER_INTERFACE structure [Display Devices], *PMIRACAST_DRIVER_INTERFACE, netdispumdddi/MIRACAST_DRIVER_INTERFACE, display.miracast_driver_interface, PMIRACAST_DRIVER_INTERFACE structure pointer [Display Devices], MIRACAST_DRIVER_INTERFACE, netdispumdddi/PMIRACAST_DRIVER_INTERFACE, _MIRACAST_DRIVER_INTERFACE, PMIRACAST_DRIVER_INTERFACE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : netdispumdddi.h
-req.include-header : Netdispumdddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8.1
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : MIRACAST_DRIVER_INTERFACE, *PMIRACAST_DRIVER_INTERFACE
+UID: NS:netdispumdddi._MIRACAST_DRIVER_INTERFACE
+title: "_MIRACAST_DRIVER_INTERFACE"
+author: windows-driver-content
+description: Contains pointers to wireless display (Miracast) functions that are implemented by the Miracast user-mode driver.
+old-location: display\miracast_driver_interface.htm
+old-project: display
+ms.assetid: a3b9695e-b317-471b-91de-e191c1f5cb17
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: MIRACAST_DRIVER_INTERFACE structure [Display Devices], *PMIRACAST_DRIVER_INTERFACE, netdispumdddi/MIRACAST_DRIVER_INTERFACE, display.miracast_driver_interface, PMIRACAST_DRIVER_INTERFACE structure pointer [Display Devices], MIRACAST_DRIVER_INTERFACE, netdispumdddi/PMIRACAST_DRIVER_INTERFACE, _MIRACAST_DRIVER_INTERFACE, PMIRACAST_DRIVER_INTERFACE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: netdispumdddi.h
+req.include-header: Netdispumdddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8.1
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Netdispumdddi.h
+apiname:
+-	MIRACAST_DRIVER_INTERFACE
+product: Windows
+targetos: Windows
+req.typenames: MIRACAST_DRIVER_INTERFACE, *PMIRACAST_DRIVER_INTERFACE
 ---
 
 # _MIRACAST_DRIVER_INTERFACE structure

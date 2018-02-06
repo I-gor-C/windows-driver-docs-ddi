@@ -1,12 +1,12 @@
 ---
-UID : NA:wdfmemory
-ms.assetid : abbf138a-21f3-364c-9c5f-ea0dedb411c8
-ms.author : windowsdriverdev
-ms.date : 01/18/18
-ms.keywords : 
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : portal
+UID: NA:wdfmemory
+ms.assetid: abbf138a-21f3-364c-9c5f-ea0dedb411c8
+ms.author: windowsdriverdev
+ms.date: 01/18/18
+ms.keywords: 
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: portal
 ---
 
 # wdfmemory.h header

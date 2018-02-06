@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddcdrm.IOCTL_CDROM_GET_DRIVE_GEOMETRY_EX
-title : IOCTL_CDROM_GET_DRIVE_GEOMETRY_EX
-author : windows-driver-content
-description : Returns information about a CD-ROM's geometry (media type, number of cylinders, tracks per cylinder, sectors per track, and bytes per sector).The IOCTL_CDROM_GET_DRIVE_GEOMETRY_EX request differs from the older IOCTL_CDROM_GET_DRIVE_GEOMETRY request.
-old-location : storage\ioctl_cdrom_get_drive_geometry_ex.htm
-old-project : storage
-ms.assetid : ef04ba90-698f-4ae2-9ac6-106d66b61080
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_cdrom_get_drive_geometry_ex, IOCTL_CDROM_GET_DRIVE_GEOMETRY_EX control code [Storage Devices], IOCTL_CDROM_GET_DRIVE_GEOMETRY_EX, ntddcdrm/IOCTL_CDROM_GET_DRIVE_GEOMETRY_EX, k307_d92083df-7f01-4858-8bab-5b4b4ea5eaea.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddcdrm.h
-req.include-header : Ntddcdrm.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WRITE_ROTATION, *PWRITE_ROTATION
+UID: NI:ntddcdrm.IOCTL_CDROM_GET_DRIVE_GEOMETRY_EX
+title: IOCTL_CDROM_GET_DRIVE_GEOMETRY_EX
+author: windows-driver-content
+description: Returns information about a CD-ROM's geometry (media type, number of cylinders, tracks per cylinder, sectors per track, and bytes per sector).The IOCTL_CDROM_GET_DRIVE_GEOMETRY_EX request differs from the older IOCTL_CDROM_GET_DRIVE_GEOMETRY request.
+old-location: storage\ioctl_cdrom_get_drive_geometry_ex.htm
+old-project: storage
+ms.assetid: ef04ba90-698f-4ae2-9ac6-106d66b61080
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_cdrom_get_drive_geometry_ex, IOCTL_CDROM_GET_DRIVE_GEOMETRY_EX control code [Storage Devices], IOCTL_CDROM_GET_DRIVE_GEOMETRY_EX, ntddcdrm/IOCTL_CDROM_GET_DRIVE_GEOMETRY_EX, k307_d92083df-7f01-4858-8bab-5b4b4ea5eaea.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddcdrm.h
+req.include-header: Ntddcdrm.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddcdrm.h
+apiname:
+-	IOCTL_CDROM_GET_DRIVE_GEOMETRY_EX
+product: Windows
+targetos: Windows
+req.typenames: WRITE_ROTATION, *PWRITE_ROTATION
 ---
 
 # IOCTL_CDROM_GET_DRIVE_GEOMETRY_EX IOCTL

@@ -1,41 +1,46 @@
 ---
-UID : NI:ntdddisk.IOCTL_DISK_GET_PARTITION_INFO_EX
-title : IOCTL_DISK_GET_PARTITION_INFO_EX
-author : windows-driver-content
-description : Returns information about the type, size, and nature of a disk partition. (Floppy drivers need not handle this request.).
-old-location : storage\ioctl_disk_get_partition_info_ex.htm
-old-project : storage
-ms.assetid : 561967a3-8b57-4f24-921a-a70e1a6c717a
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_disk_get_partition_info_ex, IOCTL_DISK_GET_PARTITION_INFO_EX control code [Storage Devices], IOCTL_DISK_GET_PARTITION_INFO_EX, ntdddisk/IOCTL_DISK_GET_PARTITION_INFO_EX, k307_e9e632f5-6cc9-4494-876a-2e2f9071358b.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntdddisk.h
-req.include-header : Ntdddisk.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DETECTION_TYPE
+UID: NI:ntdddisk.IOCTL_DISK_GET_PARTITION_INFO_EX
+title: IOCTL_DISK_GET_PARTITION_INFO_EX
+author: windows-driver-content
+description: Returns information about the type, size, and nature of a disk partition. (Floppy drivers need not handle this request.).
+old-location: storage\ioctl_disk_get_partition_info_ex.htm
+old-project: storage
+ms.assetid: 561967a3-8b57-4f24-921a-a70e1a6c717a
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_disk_get_partition_info_ex, IOCTL_DISK_GET_PARTITION_INFO_EX control code [Storage Devices], IOCTL_DISK_GET_PARTITION_INFO_EX, ntdddisk/IOCTL_DISK_GET_PARTITION_INFO_EX, k307_e9e632f5-6cc9-4494-876a-2e2f9071358b.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntdddisk.h
+req.include-header: Ntdddisk.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntdddisk.h
+apiname:
+-	IOCTL_DISK_GET_PARTITION_INFO_EX
+product: Windows
+targetos: Windows
+req.typenames: DETECTION_TYPE
 ---
 
 # IOCTL_DISK_GET_PARTITION_INFO_EX IOCTL

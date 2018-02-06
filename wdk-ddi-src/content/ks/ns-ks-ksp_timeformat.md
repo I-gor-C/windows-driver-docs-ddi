@@ -1,41 +1,46 @@
 ---
-UID : NS:ks.KSP_TIMEFORMAT
-title : KSP_TIMEFORMAT
-author : windows-driver-content
-description : The KSP_TIMEFORMAT structure corresponds to KSPROPERTY_MEDIASEEKING_CONVERTTIMEFORMAT.
-old-location : stream\ksp_timeformat.htm
-old-project : stream
-ms.assetid : 18ce5fc5-927c-4261-8966-bb12849b95c9
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ks/KSP_TIMEFORMAT, ks/PKSP_TIMEFORMAT, ks-struct_086a975b-f249-44e9-b1fa-4a945509722e.xml, PKSP_TIMEFORMAT structure pointer [Streaming Media Devices], PKSP_TIMEFORMAT, KSP_TIMEFORMAT, *PKSP_TIMEFORMAT, stream.ksp_timeformat, KSP_TIMEFORMAT structure [Streaming Media Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KSP_TIMEFORMAT, *PKSP_TIMEFORMAT
+UID: NS:ks.KSP_TIMEFORMAT
+title: KSP_TIMEFORMAT
+author: windows-driver-content
+description: The KSP_TIMEFORMAT structure corresponds to KSPROPERTY_MEDIASEEKING_CONVERTTIMEFORMAT.
+old-location: stream\ksp_timeformat.htm
+old-project: stream
+ms.assetid: 18ce5fc5-927c-4261-8966-bb12849b95c9
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ks/KSP_TIMEFORMAT, ks/PKSP_TIMEFORMAT, ks-struct_086a975b-f249-44e9-b1fa-4a945509722e.xml, PKSP_TIMEFORMAT structure pointer [Streaming Media Devices], PKSP_TIMEFORMAT, KSP_TIMEFORMAT, *PKSP_TIMEFORMAT, stream.ksp_timeformat, KSP_TIMEFORMAT structure [Streaming Media Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	KSP_TIMEFORMAT
+product: Windows
+targetos: Windows
+req.typenames: KSP_TIMEFORMAT, *PKSP_TIMEFORMAT
 ---
 
 # KSP_TIMEFORMAT structure

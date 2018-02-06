@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddchgr.IOCTL_CHANGER_EXCHANGE_MEDIUM
-title : IOCTL_CHANGER_EXCHANGE_MEDIUM
-author : windows-driver-content
-description : Moves a piece of media from a source element to one destination and the piece of media originally in the first destination to a second destination. The source and second destination are often the same, which essentially swaps the two pieces of media.
-old-location : storage\ioctl_changer_exchange_medium.htm
-old-project : storage
-ms.assetid : 76f17ee0-5b81-4325-a295-4a6982b49b73
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_changer_exchange_medium, IOCTL_CHANGER_EXCHANGE_MEDIUM control code [Storage Devices], IOCTL_CHANGER_EXCHANGE_MEDIUM, ntddchgr/IOCTL_CHANGER_EXCHANGE_MEDIUM, k307_c132f9e2-bb9c-43b7-85c2-644f2b24acea.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddchgr.h
-req.include-header : Ntddchgr.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PELEMENT_TYPE, ELEMENT_TYPE"
+UID: NI:ntddchgr.IOCTL_CHANGER_EXCHANGE_MEDIUM
+title: IOCTL_CHANGER_EXCHANGE_MEDIUM
+author: windows-driver-content
+description: Moves a piece of media from a source element to one destination and the piece of media originally in the first destination to a second destination. The source and second destination are often the same, which essentially swaps the two pieces of media.
+old-location: storage\ioctl_changer_exchange_medium.htm
+old-project: storage
+ms.assetid: 76f17ee0-5b81-4325-a295-4a6982b49b73
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_changer_exchange_medium, IOCTL_CHANGER_EXCHANGE_MEDIUM control code [Storage Devices], IOCTL_CHANGER_EXCHANGE_MEDIUM, ntddchgr/IOCTL_CHANGER_EXCHANGE_MEDIUM, k307_c132f9e2-bb9c-43b7-85c2-644f2b24acea.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddchgr.h
+req.include-header: Ntddchgr.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddchgr.h
+apiname:
+-	IOCTL_CHANGER_EXCHANGE_MEDIUM
+product: Windows
+targetos: Windows
+req.typenames: "*PELEMENT_TYPE, ELEMENT_TYPE"
 ---
 
 # IOCTL_CHANGER_EXCHANGE_MEDIUM IOCTL

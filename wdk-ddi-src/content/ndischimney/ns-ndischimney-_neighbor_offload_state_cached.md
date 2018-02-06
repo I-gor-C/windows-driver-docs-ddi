@@ -1,41 +1,46 @@
 ---
-UID : NS:ndischimney._NEIGHBOR_OFFLOAD_STATE_CACHED
-title : "_NEIGHBOR_OFFLOAD_STATE_CACHED"
-author : windows-driver-content
-description : The NEIGHBOR_OFFLOAD_STATE_CACHED structure contains the cached variables of a neighbor state object.
-old-location : netvista\neighbor_offload_state_cached.htm
-old-project : netvista
-ms.assetid : 5dedffa8-9745-4668-8646-0e896942b9c8
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : ndischimney/NEIGHBOR_OFFLOAD_STATE_CACHED, ndischimney/PNEIGHBOR_OFFLOAD_STATE_CACHED, PNEIGHBOR_OFFLOAD_STATE_CACHED, *PNEIGHBOR_OFFLOAD_STATE_CACHED, PNEIGHBOR_OFFLOAD_STATE_CACHED structure pointer [Network Drivers Starting with Windows Vista], NEIGHBOR_OFFLOAD_STATE_CACHED, tcp_chim_struct_053f9a79-057c-4d4b-8ad1-2910f0ad4a9a.xml, NEIGHBOR_OFFLOAD_STATE_CACHED structure [Network Drivers Starting with Windows Vista], netvista.neighbor_offload_state_cached, _NEIGHBOR_OFFLOAD_STATE_CACHED
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndischimney.h
-req.include-header : Ndischimney.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NEIGHBOR_OFFLOAD_STATE_CACHED, *PNEIGHBOR_OFFLOAD_STATE_CACHED
+UID: NS:ndischimney._NEIGHBOR_OFFLOAD_STATE_CACHED
+title: "_NEIGHBOR_OFFLOAD_STATE_CACHED"
+author: windows-driver-content
+description: The NEIGHBOR_OFFLOAD_STATE_CACHED structure contains the cached variables of a neighbor state object.
+old-location: netvista\neighbor_offload_state_cached.htm
+old-project: netvista
+ms.assetid: 5dedffa8-9745-4668-8646-0e896942b9c8
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: ndischimney/NEIGHBOR_OFFLOAD_STATE_CACHED, ndischimney/PNEIGHBOR_OFFLOAD_STATE_CACHED, PNEIGHBOR_OFFLOAD_STATE_CACHED, *PNEIGHBOR_OFFLOAD_STATE_CACHED, PNEIGHBOR_OFFLOAD_STATE_CACHED structure pointer [Network Drivers Starting with Windows Vista], NEIGHBOR_OFFLOAD_STATE_CACHED, tcp_chim_struct_053f9a79-057c-4d4b-8ad1-2910f0ad4a9a.xml, NEIGHBOR_OFFLOAD_STATE_CACHED structure [Network Drivers Starting with Windows Vista], netvista.neighbor_offload_state_cached, _NEIGHBOR_OFFLOAD_STATE_CACHED
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndischimney.h
+req.include-header: Ndischimney.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndischimney.h
+apiname:
+-	NEIGHBOR_OFFLOAD_STATE_CACHED
+product: Windows
+targetos: Windows
+req.typenames: NEIGHBOR_OFFLOAD_STATE_CACHED, *PNEIGHBOR_OFFLOAD_STATE_CACHED
 ---
 
 # _NEIGHBOR_OFFLOAD_STATE_CACHED structure

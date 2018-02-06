@@ -1,41 +1,46 @@
 ---
-UID : NI:bthhfpddi.IOCTL_BTHHFP_DEVICE_GET_KSNODETYPES
-title : IOCTL_BTHHFP_DEVICE_GET_KSNODETYPES
-author : windows-driver-content
-description : The IOCTL_BTHHFP_DEVICE_GET_KSNODETYPES IOCTL Gets the KSNODE types that best describe the Bluetooth device’s input and output.
-old-location : audio\ioctl_bthhfp_device_get_ksnodetypes.htm
-old-project : audio
-ms.assetid : 6862B0FD-9A7B-40BF-8123-673EE443DE84
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : audio.ioctl_bthhfp_device_get_ksnodetypes, IOCTL_BTHHFP_DEVICE_GET_KSNODETYPES control code [Audio Devices], IOCTL_BTHHFP_DEVICE_GET_KSNODETYPES, bthhfpddi/IOCTL_BTHHFP_DEVICE_GET_KSNODETYPES
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : bthhfpddi.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HFP_BYPASS_CODEC_ID_VERSION, *PHFP_BYPASS_CODEC_ID_VERSION
+UID: NI:bthhfpddi.IOCTL_BTHHFP_DEVICE_GET_KSNODETYPES
+title: IOCTL_BTHHFP_DEVICE_GET_KSNODETYPES
+author: windows-driver-content
+description: The IOCTL_BTHHFP_DEVICE_GET_KSNODETYPES IOCTL Gets the KSNODE types that best describe the Bluetooth device’s input and output.
+old-location: audio\ioctl_bthhfp_device_get_ksnodetypes.htm
+old-project: audio
+ms.assetid: 6862B0FD-9A7B-40BF-8123-673EE443DE84
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: audio.ioctl_bthhfp_device_get_ksnodetypes, IOCTL_BTHHFP_DEVICE_GET_KSNODETYPES control code [Audio Devices], IOCTL_BTHHFP_DEVICE_GET_KSNODETYPES, bthhfpddi/IOCTL_BTHHFP_DEVICE_GET_KSNODETYPES
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: bthhfpddi.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Bthhfpddi.h
+apiname:
+-	IOCTL_BTHHFP_DEVICE_GET_KSNODETYPES
+product: Windows
+targetos: Windows
+req.typenames: HFP_BYPASS_CODEC_ID_VERSION, *PHFP_BYPASS_CODEC_ID_VERSION
 ---
 
 # IOCTL_BTHHFP_DEVICE_GET_KSNODETYPES IOCTL

@@ -1,41 +1,47 @@
 ---
-UID : NF:ntifs.NtDeviceIoControlFile
-title : NtDeviceIoControlFile function
-author : windows-driver-content
-description : The ZwDeviceIoControlFile routine sends a control code directly to a specified device driver, causing the corresponding driver to perform the specified operation.
-old-location : kernel\zwdeviceiocontrolfile.htm
-old-project : kernel
-ms.assetid : 4dc38fcd-4b87-4c34-8ae2-685bf47e3fde
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : k111_03e754fc-b6b5-4266-9be1-452d5ba5331c.xml, NtDeviceIoControlFile, kernel.zwdeviceiocontrolfile, ZwDeviceIoControlFile routine [Kernel-Mode Driver Architecture], ntifs/NtDeviceIoControlFile, ntifs/ZwDeviceIoControlFile, ZwDeviceIoControlFile
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.NtDeviceIoControlFile
+title: NtDeviceIoControlFile function
+author: windows-driver-content
+description: The ZwDeviceIoControlFile routine sends a control code directly to a specified device driver, causing the corresponding driver to perform the specified operation.
+old-location: kernel\zwdeviceiocontrolfile.htm
+old-project: kernel
+ms.assetid: 4dc38fcd-4b87-4c34-8ae2-685bf47e3fde
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: k111_03e754fc-b6b5-4266-9be1-452d5ba5331c.xml, NtDeviceIoControlFile, kernel.zwdeviceiocontrolfile, ZwDeviceIoControlFile routine [Kernel-Mode Driver Architecture], ntifs/NtDeviceIoControlFile, ntifs/ZwDeviceIoControlFile, ZwDeviceIoControlFile
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ZwDeviceIoControlFile
+-	NtDeviceIoControlFile
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

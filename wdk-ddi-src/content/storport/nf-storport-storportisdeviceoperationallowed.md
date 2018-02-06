@@ -1,42 +1,47 @@
 ---
-UID : NF:storport.StorPortIsDeviceOperationAllowed
-title : StorPortIsDeviceOperationAllowed function
-author : windows-driver-content
-description : A miniport driver can call the StorPortIsDeviceOperationAllowedminiport routine to determine if operations for a certain device management class are allowed.
-old-location : storage\storportisdeviceoperationallowed.htm
-old-project : storage
-ms.assetid : 2FA71DC1-8068-42E3-A5C0-903858E496FA
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storport/StorPortIsDeviceOperationAllowed, STORPORT_DEVICEOPERATION_SECURE_REPROVISION_GUID, storage.storportisdeviceoperationallowed, StorPortIsDeviceOperationAllowed, StorPortIsDeviceOperationAllowed routine [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : storport.h
-req.include-header : 
-req.target-type : Universal
-req.target-min-winverclnt : Available in starting with Windows 8.1.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : IRQL == PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STOR_SPINLOCK
-req.product : Windows 10 or later.
+UID: NF:storport.StorPortIsDeviceOperationAllowed
+title: StorPortIsDeviceOperationAllowed function
+author: windows-driver-content
+description: A miniport driver can call the StorPortIsDeviceOperationAllowedminiport routine to determine if operations for a certain device management class are allowed.
+old-location: storage\storportisdeviceoperationallowed.htm
+old-project: storage
+ms.assetid: 2FA71DC1-8068-42E3-A5C0-903858E496FA
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storport/StorPortIsDeviceOperationAllowed, STORPORT_DEVICEOPERATION_SECURE_REPROVISION_GUID, storage.storportisdeviceoperationallowed, StorPortIsDeviceOperationAllowed, StorPortIsDeviceOperationAllowed routine [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: storport.h
+req.include-header: 
+req.target-type: Universal
+req.target-min-winverclnt: Available in starting with Windows 8.1.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: IRQL == PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	storport.h
+apiname:
+-	StorPortIsDeviceOperationAllowed
+product: Windows
+targetos: Windows
+req.typenames: STOR_SPINLOCK
+req.product: Windows 10 or later.
 ---
 
 

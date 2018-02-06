@@ -1,41 +1,46 @@
 ---
-UID : NS:ndkpi._NDK_ADAPTER
-title : "_NDK_ADAPTER"
-author : windows-driver-content
-description : The NDK_ADAPTER structure specifies the attributes of an NDK adapter object.
-old-location : netvista\ndk_adapter.htm
-old-project : netvista
-ms.assetid : 7EEFC371-5E6F-4507-BF7F-66A1954C7A1A
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : ndkpi/PNDK_ADAPTER, netvista.ndk_adapter, _NDK_ADAPTER, ndkpi/NDK_ADAPTER, NDK_ADAPTER structure [Network Drivers Starting with Windows Vista], PNDK_ADAPTER, PNDK_ADAPTER structure pointer [Network Drivers Starting with Windows Vista], NDK_ADAPTER
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndkpi.h
-req.include-header : Ndkpi.h
-req.target-type : Windows
-req.target-min-winverclnt : None supported,Supported in NDIS 6.30 and later.
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDK_ADAPTER
+UID: NS:ndkpi._NDK_ADAPTER
+title: "_NDK_ADAPTER"
+author: windows-driver-content
+description: The NDK_ADAPTER structure specifies the attributes of an NDK adapter object.
+old-location: netvista\ndk_adapter.htm
+old-project: netvista
+ms.assetid: 7EEFC371-5E6F-4507-BF7F-66A1954C7A1A
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: ndkpi/PNDK_ADAPTER, netvista.ndk_adapter, _NDK_ADAPTER, ndkpi/NDK_ADAPTER, NDK_ADAPTER structure [Network Drivers Starting with Windows Vista], PNDK_ADAPTER, PNDK_ADAPTER structure pointer [Network Drivers Starting with Windows Vista], NDK_ADAPTER
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndkpi.h
+req.include-header: Ndkpi.h
+req.target-type: Windows
+req.target-min-winverclnt: None supported,Supported in NDIS 6.30 and later.
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndkpi.h
+apiname:
+-	NDK_ADAPTER
+product: Windows
+targetos: Windows
+req.typenames: NDK_ADAPTER
 ---
 
 # _NDK_ADAPTER structure

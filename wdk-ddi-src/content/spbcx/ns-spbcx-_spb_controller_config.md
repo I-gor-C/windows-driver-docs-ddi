@@ -1,42 +1,47 @@
 ---
-UID : NS:spbcx._SPB_CONTROLLER_CONFIG
-title : "_SPB_CONTROLLER_CONFIG"
-author : windows-driver-content
-description : The SPB_CONTROLLER_CONFIG structure contains the configuration settings for an SPB controller driver.
-old-location : spb\spb_controller_config.htm
-old-project : SPB
-ms.assetid : 73856669-ACE9-46B0-AC7A-282D9C8A0285
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : SPB_CONTROLLER_CONFIG, PSPB_CONTROLLER_CONFIG, _SPB_CONTROLLER_CONFIG, *PSPB_CONTROLLER_CONFIG, spbcx/PSPB_CONTROLLER_CONFIG, SPB_CONTROLLER_CONFIG structure [Buses], spbcx/SPB_CONTROLLER_CONFIG, SPB.spb_controller_config, PSPB_CONTROLLER_CONFIG structure pointer [Buses]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : spbcx.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Any IRQL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SPB_CONTROLLER_CONFIG, *PSPB_CONTROLLER_CONFIG
-req.product : Windows 10 or later.
+UID: NS:spbcx._SPB_CONTROLLER_CONFIG
+title: "_SPB_CONTROLLER_CONFIG"
+author: windows-driver-content
+description: The SPB_CONTROLLER_CONFIG structure contains the configuration settings for an SPB controller driver.
+old-location: spb\spb_controller_config.htm
+old-project: SPB
+ms.assetid: 73856669-ACE9-46B0-AC7A-282D9C8A0285
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: SPB_CONTROLLER_CONFIG, PSPB_CONTROLLER_CONFIG, _SPB_CONTROLLER_CONFIG, *PSPB_CONTROLLER_CONFIG, spbcx/PSPB_CONTROLLER_CONFIG, SPB_CONTROLLER_CONFIG structure [Buses], spbcx/SPB_CONTROLLER_CONFIG, SPB.spb_controller_config, PSPB_CONTROLLER_CONFIG structure pointer [Buses]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: spbcx.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Any IRQL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Spbcx.h
+apiname:
+-	SPB_CONTROLLER_CONFIG
+product: Windows
+targetos: Windows
+req.typenames: SPB_CONTROLLER_CONFIG, *PSPB_CONTROLLER_CONFIG
+req.product: Windows 10 or later.
 ---
 
 # _SPB_CONTROLLER_CONFIG structure

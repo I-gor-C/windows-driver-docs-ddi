@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_DESTROYPAGINGQUEUECB
-title : PFND3DDDI_DESTROYPAGINGQUEUECB
-author : windows-driver-content
-description : pfnDestroyPagingQueueCb waits for a paging queue to finish all operations queued to it and destroys it along with the associated sync object.
-old-location : display\pfndestroypagingqueuecb.htm
-old-project : display
-ms.assetid : 2C039656-5384-4864-8F29-A336B0ED06C0
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.pfndestroypagingqueuecb, pfnDestroyPagingQueueCb callback function [Display Devices], pfnDestroyPagingQueueCb, PFND3DDDI_DESTROYPAGINGQUEUECB, PFND3DDDI_DESTROYPAGINGQUEUECB, d3dumddi/pfnDestroyPagingQueueCb
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_DESTROYPAGINGQUEUECB
+title: PFND3DDDI_DESTROYPAGINGQUEUECB
+author: windows-driver-content
+description: pfnDestroyPagingQueueCb waits for a paging queue to finish all operations queued to it and destroys it along with the associated sync object.
+old-location: display\pfndestroypagingqueuecb.htm
+old-project: display
+ms.assetid: 2C039656-5384-4864-8F29-A336B0ED06C0
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.pfndestroypagingqueuecb, pfnDestroyPagingQueueCb callback function [Display Devices], pfnDestroyPagingQueueCb, PFND3DDDI_DESTROYPAGINGQUEUECB, PFND3DDDI_DESTROYPAGINGQUEUECB, d3dumddi/pfnDestroyPagingQueueCb
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	pfnDestroyPagingQueueCb
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

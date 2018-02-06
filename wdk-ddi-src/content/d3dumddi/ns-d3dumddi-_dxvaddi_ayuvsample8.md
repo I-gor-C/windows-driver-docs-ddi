@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._DXVADDI_AYUVSAMPLE8
-title : "_DXVADDI_AYUVSAMPLE8"
-author : windows-driver-content
-description : The DXVADDI_AYUVSAMPLE8 structure describes 8-bit Cr, Cb, and Y color values and an associated opacity.
-old-location : display\dxvaddi_ayuvsample8.htm
-old-project : display
-ms.assetid : 0fce82e9-0932-4838-b247-af0b2b8642d3
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DXVADDI_AYUVSAMPLE8, d3dumddi/DXVADDI_AYUVSAMPLE8, display.dxvaddi_ayuvsample8, _DXVADDI_AYUVSAMPLE8, DXVA2_Structs_0bf70816-64a3-44cb-864a-ad94d3c9fce9.xml, DXVADDI_AYUVSAMPLE8 structure [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXVADDI_AYUVSAMPLE8
+UID: NS:d3dumddi._DXVADDI_AYUVSAMPLE8
+title: "_DXVADDI_AYUVSAMPLE8"
+author: windows-driver-content
+description: The DXVADDI_AYUVSAMPLE8 structure describes 8-bit Cr, Cb, and Y color values and an associated opacity.
+old-location: display\dxvaddi_ayuvsample8.htm
+old-project: display
+ms.assetid: 0fce82e9-0932-4838-b247-af0b2b8642d3
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DXVADDI_AYUVSAMPLE8, d3dumddi/DXVADDI_AYUVSAMPLE8, display.dxvaddi_ayuvsample8, _DXVADDI_AYUVSAMPLE8, DXVA2_Structs_0bf70816-64a3-44cb-864a-ad94d3c9fce9.xml, DXVADDI_AYUVSAMPLE8 structure [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	DXVADDI_AYUVSAMPLE8
+product: Windows
+targetos: Windows
+req.typenames: DXVADDI_AYUVSAMPLE8
 ---
 
 # _DXVADDI_AYUVSAMPLE8 structure

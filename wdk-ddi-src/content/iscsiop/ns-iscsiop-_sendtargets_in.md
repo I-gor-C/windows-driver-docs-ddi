@@ -1,41 +1,46 @@
 ---
-UID : NS:iscsiop._SendTargets_IN
-title : "_SendTargets_IN"
-author : windows-driver-content
-description : The SendTargets_IN structure holds the input data for the SendTargets method.
-old-location : storage\sendtargets_in.htm
-old-project : storage
-ms.assetid : fa6af43c-4fbd-43b5-9c3d-61254dfe894f
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : "*PSendTargets_IN, SendTargets_IN structure [Storage Devices], structs-iSCSI_448fb50f-6420-43ca-be0e-b3dd110cd48b.xml, _SendTargets_IN, PSendTargets_IN structure pointer [Storage Devices], iscsiop/PSendTargets_IN, SendTargets_IN, storage.sendtargets_in, PSendTargets_IN, iscsiop/SendTargets_IN"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : iscsiop.h
-req.include-header : Iscsiop.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SendTargets_IN, *PSendTargets_IN
+UID: NS:iscsiop._SendTargets_IN
+title: "_SendTargets_IN"
+author: windows-driver-content
+description: The SendTargets_IN structure holds the input data for the SendTargets method.
+old-location: storage\sendtargets_in.htm
+old-project: storage
+ms.assetid: fa6af43c-4fbd-43b5-9c3d-61254dfe894f
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: "*PSendTargets_IN, SendTargets_IN structure [Storage Devices], structs-iSCSI_448fb50f-6420-43ca-be0e-b3dd110cd48b.xml, _SendTargets_IN, PSendTargets_IN structure pointer [Storage Devices], iscsiop/PSendTargets_IN, SendTargets_IN, storage.sendtargets_in, PSendTargets_IN, iscsiop/SendTargets_IN"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: iscsiop.h
+req.include-header: Iscsiop.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	iscsiop.h
+apiname:
+-	SendTargets_IN
+product: Windows
+targetos: Windows
+req.typenames: SendTargets_IN, *PSendTargets_IN
 ---
 
 # _SendTargets_IN structure

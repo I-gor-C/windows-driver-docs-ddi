@@ -1,42 +1,47 @@
 ---
-UID : NS:wdm._IO_RESOURCE_DESCRIPTOR
-title : "_IO_RESOURCE_DESCRIPTOR"
-author : windows-driver-content
-description : The IO_RESOURCE_DESCRIPTOR structure describes a range of raw hardware resources, of one type, that can be used by a device. An array of IO_RESOURCE_DESCRIPTOR structures is contained within each IO_RESOURCE_LIST structure.
-old-location : kernel\io_resource_descriptor.htm
-old-project : kernel
-ms.assetid : 03e3a656-c691-4aff-bcc8-4e0bc8390fd7
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : 0, wdm/PIO_RESOURCE_DESCRIPTOR, PIO_RESOURCE_DESCRIPTOR, CM_RESOURCE_CONNECTION_CLASS_GPIO, CM_RESOURCE_CONNECTION_TYPE_SERIAL_SPI, CM_RESOURCE_INTERRUPT_LATCHED, CM_RESOURCE_CONNECTION_CLASS_SERIAL, *PIO_RESOURCE_DESCRIPTOR, CM_RESOURCE_CONNECTION_TYPE_GPIO_IO, _IO_RESOURCE_DESCRIPTOR, CM_RESOURCE_INTERRUPT_POLICY_INCLUDED, PIO_RESOURCE_DESCRIPTOR structure pointer [Kernel-Mode Driver Architecture], CM_RESOURCE_INTERRUPT_SECONDARY_INTERRUPT, CM_RESOURCE_INTERRUPT_MESSAGE, kstruct_b_6b096887-dd89-43b8-abb8-4f3582392573.xml, CM_RESOURCE_INTERRUPT_LEVEL_SENSITIVE, wdm/IO_RESOURCE_DESCRIPTOR, IO_RESOURCE_DESCRIPTOR, CM_RESOURCE_CONNECTION_TYPE_SERIAL_I2C, IO_RESOURCE_DESCRIPTOR structure [Kernel-Mode Driver Architecture], IO_RESOURCE_PREFERRED, kernel.io_resource_descriptor, CM_RESOURCE_CONNECTION_TYPE_SERIAL_UART, CM_RESOURCE_INTERRUPT_WAKE_HINT, IO_RESOURCE_ALTERNATIVE, IO_RESOURCE_DEFAULT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PIO_RESOURCE_DESCRIPTOR, IO_RESOURCE_DESCRIPTOR"
-req.product : Windows 10 or later.
+UID: NS:wdm._IO_RESOURCE_DESCRIPTOR
+title: "_IO_RESOURCE_DESCRIPTOR"
+author: windows-driver-content
+description: The IO_RESOURCE_DESCRIPTOR structure describes a range of raw hardware resources, of one type, that can be used by a device. An array of IO_RESOURCE_DESCRIPTOR structures is contained within each IO_RESOURCE_LIST structure.
+old-location: kernel\io_resource_descriptor.htm
+old-project: kernel
+ms.assetid: 03e3a656-c691-4aff-bcc8-4e0bc8390fd7
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: 0, wdm/PIO_RESOURCE_DESCRIPTOR, PIO_RESOURCE_DESCRIPTOR, CM_RESOURCE_CONNECTION_CLASS_GPIO, CM_RESOURCE_CONNECTION_TYPE_SERIAL_SPI, CM_RESOURCE_INTERRUPT_LATCHED, CM_RESOURCE_CONNECTION_CLASS_SERIAL, *PIO_RESOURCE_DESCRIPTOR, CM_RESOURCE_CONNECTION_TYPE_GPIO_IO, _IO_RESOURCE_DESCRIPTOR, CM_RESOURCE_INTERRUPT_POLICY_INCLUDED, PIO_RESOURCE_DESCRIPTOR structure pointer [Kernel-Mode Driver Architecture], CM_RESOURCE_INTERRUPT_SECONDARY_INTERRUPT, CM_RESOURCE_INTERRUPT_MESSAGE, kstruct_b_6b096887-dd89-43b8-abb8-4f3582392573.xml, CM_RESOURCE_INTERRUPT_LEVEL_SENSITIVE, wdm/IO_RESOURCE_DESCRIPTOR, IO_RESOURCE_DESCRIPTOR, CM_RESOURCE_CONNECTION_TYPE_SERIAL_I2C, IO_RESOURCE_DESCRIPTOR structure [Kernel-Mode Driver Architecture], IO_RESOURCE_PREFERRED, kernel.io_resource_descriptor, CM_RESOURCE_CONNECTION_TYPE_SERIAL_UART, CM_RESOURCE_INTERRUPT_WAKE_HINT, IO_RESOURCE_ALTERNATIVE, IO_RESOURCE_DEFAULT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	IO_RESOURCE_DESCRIPTOR
+product: Windows
+targetos: Windows
+req.typenames: "*PIO_RESOURCE_DESCRIPTOR, IO_RESOURCE_DESCRIPTOR"
+req.product: Windows 10 or later.
 ---
 
 # _IO_RESOURCE_DESCRIPTOR structure

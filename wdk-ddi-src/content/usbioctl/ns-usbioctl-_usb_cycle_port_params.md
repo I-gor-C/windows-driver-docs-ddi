@@ -1,42 +1,47 @@
 ---
-UID : NS:usbioctl._USB_CYCLE_PORT_PARAMS
-title : "_USB_CYCLE_PORT_PARAMS"
-author : windows-driver-content
-description : The USB_CYCLE_PORT_PARAMS structure is used with the IOCTL_USB_HUB_CYCLE_PORT I/O control request to power cycle the port that is associated with the PDO that receives the request.
-old-location : buses\usb_cycle_port_params.htm
-old-project : usbref
-ms.assetid : 357C62F3-43FE-4132-9233-7BFAD2CE95C5
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : "*PUSB_CYCLE_PORT_PARAMS, _USB_CYCLE_PORT_PARAMS, USB_CYCLE_PORT_PARAMS, usbioctl/USB_CYCLE_PORT_PARAMS, USB_CYCLE_PORT_PARAMS structure [Buses], PUSB_CYCLE_PORT_PARAMS, usbioctl/PUSB_CYCLE_PORT_PARAMS, PUSB_CYCLE_PORT_PARAMS structure pointer [Buses], buses.usb_cycle_port_params"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : usbioctl.h
-req.include-header : TBD
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUSB_CYCLE_PORT_PARAMS, USB_CYCLE_PORT_PARAMS"
-req.product : Windows 10 or later.
+UID: NS:usbioctl._USB_CYCLE_PORT_PARAMS
+title: "_USB_CYCLE_PORT_PARAMS"
+author: windows-driver-content
+description: The USB_CYCLE_PORT_PARAMS structure is used with the IOCTL_USB_HUB_CYCLE_PORT I/O control request to power cycle the port that is associated with the PDO that receives the request.
+old-location: buses\usb_cycle_port_params.htm
+old-project: usbref
+ms.assetid: 357C62F3-43FE-4132-9233-7BFAD2CE95C5
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: "*PUSB_CYCLE_PORT_PARAMS, _USB_CYCLE_PORT_PARAMS, USB_CYCLE_PORT_PARAMS, usbioctl/USB_CYCLE_PORT_PARAMS, USB_CYCLE_PORT_PARAMS structure [Buses], PUSB_CYCLE_PORT_PARAMS, usbioctl/PUSB_CYCLE_PORT_PARAMS, PUSB_CYCLE_PORT_PARAMS structure pointer [Buses], buses.usb_cycle_port_params"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: usbioctl.h
+req.include-header: TBD
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	usbioctl.h
+apiname:
+-	USB_CYCLE_PORT_PARAMS
+product: Windows
+targetos: Windows
+req.typenames: "*PUSB_CYCLE_PORT_PARAMS, USB_CYCLE_PORT_PARAMS"
+req.product: Windows 10 or later.
 ---
 
 # _USB_CYCLE_PORT_PARAMS structure

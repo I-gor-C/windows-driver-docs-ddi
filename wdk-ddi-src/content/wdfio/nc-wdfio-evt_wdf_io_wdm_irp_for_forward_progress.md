@@ -1,42 +1,47 @@
 ---
-UID : NC:wdfio.EVT_WDF_IO_WDM_IRP_FOR_FORWARD_PROGRESS
-title : EVT_WDF_IO_WDM_IRP_FOR_FORWARD_PROGRESS
-author : windows-driver-content
-description : A driver's EvtIoWdmIrpForForwardProgress callback function examines an I/O request packet (IRP) and determines whether to use a reserved request object to process the I/O request or to fail the I/O request.
-old-location : wdf\evtiowdmirpforforwardprogress.htm
-old-project : wdf
-ms.assetid : 71974802-954d-4856-a32b-1dcc45c36ba5
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.evtiowdmirpforforwardprogress, EvtIoWdmIrpForForwardProgress callback function, EvtIoWdmIrpForForwardProgress, EVT_WDF_IO_WDM_IRP_FOR_FORWARD_PROGRESS, EVT_WDF_IO_WDM_IRP_FOR_FORWARD_PROGRESS, wdfio/EvtIoWdmIrpForForwardProgress, DFQueueObjectRef_479581ba-4ffd-4aae-b4f0-c246daf38842.xml, kmdf.evtiowdmirpforforwardprogress
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdfio.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.9
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL (see Remarks section)"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_INTERRUPT_INFO, *PWDF_INTERRUPT_INFO
-req.product : Windows 10 or later.
+UID: NC:wdfio.EVT_WDF_IO_WDM_IRP_FOR_FORWARD_PROGRESS
+title: EVT_WDF_IO_WDM_IRP_FOR_FORWARD_PROGRESS
+author: windows-driver-content
+description: A driver's EvtIoWdmIrpForForwardProgress callback function examines an I/O request packet (IRP) and determines whether to use a reserved request object to process the I/O request or to fail the I/O request.
+old-location: wdf\evtiowdmirpforforwardprogress.htm
+old-project: wdf
+ms.assetid: 71974802-954d-4856-a32b-1dcc45c36ba5
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.evtiowdmirpforforwardprogress, EvtIoWdmIrpForForwardProgress callback function, EvtIoWdmIrpForForwardProgress, EVT_WDF_IO_WDM_IRP_FOR_FORWARD_PROGRESS, EVT_WDF_IO_WDM_IRP_FOR_FORWARD_PROGRESS, wdfio/EvtIoWdmIrpForForwardProgress, DFQueueObjectRef_479581ba-4ffd-4aae-b4f0-c246daf38842.xml, kmdf.evtiowdmirpforforwardprogress
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdfio.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.9
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL (see Remarks section)"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Wdfio.h
+apiname:
+-	EvtIoWdmIrpForForwardProgress
+product: Windows
+targetos: Windows
+req.typenames: WDF_INTERRUPT_INFO, *PWDF_INTERRUPT_INFO
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NC:hdaudio.PGET_DEVICE_INFORMATION
-title : PGET_DEVICE_INFORMATION
-author : windows-driver-content
-description : The GetDeviceInformation routine retrieves information about the HD Audio controller device.The function pointer type for a GetDeviceInformation routine is defined as:
-old-location : audio\getdeviceinformation.htm
-old-project : audio
-ms.assetid : bdd08133-0641-4eea-bfa3-75f700356132
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : audio.getdeviceinformation, GetDeviceInformation callback function [Audio Devices], GetDeviceInformation, PGET_DEVICE_INFORMATION, PGET_DEVICE_INFORMATION, hdaudio/GetDeviceInformation, aud-prop2_9e39061d-0e06-4871-b92c-d4bd7aa98815.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : hdaudio.h
-req.include-header : Hdaudio.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT
+UID: NC:hdaudio.PGET_DEVICE_INFORMATION
+title: PGET_DEVICE_INFORMATION
+author: windows-driver-content
+description: The GetDeviceInformation routine retrieves information about the HD Audio controller device.The function pointer type for a GetDeviceInformation routine is defined as:
+old-location: audio\getdeviceinformation.htm
+old-project: audio
+ms.assetid: bdd08133-0641-4eea-bfa3-75f700356132
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: audio.getdeviceinformation, GetDeviceInformation callback function [Audio Devices], GetDeviceInformation, PGET_DEVICE_INFORMATION, PGET_DEVICE_INFORMATION, hdaudio/GetDeviceInformation, aud-prop2_9e39061d-0e06-4871-b92c-d4bd7aa98815.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: hdaudio.h
+req.include-header: Hdaudio.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	hdaudio.h
+apiname:
+-	GetDeviceInformation
+product: Windows
+targetos: Windows
+req.typenames: SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT
 ---
 
 

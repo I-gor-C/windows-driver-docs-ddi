@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFRemoteTarget.CloseForQueryRemove
-title : IWDFRemoteTarget::CloseForQueryRemove method
-author : windows-driver-content
-description : The CloseForQueryRemove method closes a remote I/O target because the operating system might allow the device to be removed.
-old-location : wdf\iwdfremotetarget_closeforqueryremove.htm
-old-project : wdf
-ms.assetid : 9e23ae80-7c39-4cee-b1ab-80085f24d41f
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.iwdfremotetarget_closeforqueryremove, wudfddi/IWDFRemoteTarget::CloseForQueryRemove, umdf.iwdfremotetarget_closeforqueryremove, CloseForQueryRemove method, UMDFIoTargetObjectRef_b816e346-75b1-4da2-a9cf-f6db32abb3ed.xml, IWDFRemoteTarget interface, CloseForQueryRemove method, CloseForQueryRemove method, IWDFRemoteTarget interface, IWDFRemoteTarget::CloseForQueryRemove, IWDFRemoteTarget, CloseForQueryRemove
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.9
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFRemoteTarget.CloseForQueryRemove
+title: IWDFRemoteTarget::CloseForQueryRemove method
+author: windows-driver-content
+description: The CloseForQueryRemove method closes a remote I/O target because the operating system might allow the device to be removed.
+old-location: wdf\iwdfremotetarget_closeforqueryremove.htm
+old-project: wdf
+ms.assetid: 9e23ae80-7c39-4cee-b1ab-80085f24d41f
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.iwdfremotetarget_closeforqueryremove, wudfddi/IWDFRemoteTarget::CloseForQueryRemove, umdf.iwdfremotetarget_closeforqueryremove, CloseForQueryRemove method, UMDFIoTargetObjectRef_b816e346-75b1-4da2-a9cf-f6db32abb3ed.xml, IWDFRemoteTarget interface, CloseForQueryRemove method, CloseForQueryRemove method, IWDFRemoteTarget interface, IWDFRemoteTarget::CloseForQueryRemove, IWDFRemoteTarget, CloseForQueryRemove
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.9
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFRemoteTarget.CloseForQueryRemove
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NF:filterpipeline.IXpsDocumentConsumer.SendXpsDocument
-title : IXpsDocumentConsumer::SendXpsDocument method
-author : windows-driver-content
-description : The SendXpsDocument method sends an XPS document to the pipeline.
-old-location : print\ixpsdocumentconsumer_sendxpsdocument.htm
-old-project : print
-ms.assetid : ad9f0f6b-19a6-4c99-9350-7ca249cf4774
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : SendXpsDocument method [Print Devices], IXpsDocumentConsumer, filterpipeline/IXpsDocumentConsumer::SendXpsDocument, SendXpsDocument method [Print Devices], IXpsDocumentConsumer interface, IXpsDocumentConsumer::SendXpsDocument, filterpipeline_f8816c77-a8d0-4d44-bd12-adaf9194c34c.xml, SendXpsDocument, IXpsDocumentConsumer interface [Print Devices], SendXpsDocument method, print.ixpsdocumentconsumer_sendxpsdocument
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : filterpipeline.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : Filterpipeline.idl
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : filterpipeline.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:filterpipeline.IXpsDocumentConsumer.SendXpsDocument
+title: IXpsDocumentConsumer::SendXpsDocument method
+author: windows-driver-content
+description: The SendXpsDocument method sends an XPS document to the pipeline.
+old-location: print\ixpsdocumentconsumer_sendxpsdocument.htm
+old-project: print
+ms.assetid: ad9f0f6b-19a6-4c99-9350-7ca249cf4774
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: SendXpsDocument method [Print Devices], IXpsDocumentConsumer, filterpipeline/IXpsDocumentConsumer::SendXpsDocument, SendXpsDocument method [Print Devices], IXpsDocumentConsumer interface, IXpsDocumentConsumer::SendXpsDocument, filterpipeline_f8816c77-a8d0-4d44-bd12-adaf9194c34c.xml, SendXpsDocument, IXpsDocumentConsumer interface [Print Devices], SendXpsDocument method, print.ixpsdocumentconsumer_sendxpsdocument
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: filterpipeline.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: Filterpipeline.idl
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: filterpipeline.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	filterpipeline.h
+apiname:
+-	IXpsDocumentConsumer.SendXpsDocument
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

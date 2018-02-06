@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.IoStartPacket
-title : IoStartPacket function
-author : windows-driver-content
-description : The IoStartPacket routine calls the driver's StartIo routine with the given IRP or inserts the IRP into the device queue associated with the given device object if the device is already busy.
-old-location : kernel\iostartpacket.htm
-old-project : kernel
-ms.assetid : b1fa148e-73e2-437f-bd3a-e879bd457c76
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.iostartpacket, k104_d27461b9-32fe-4d7b-853d-fd110fcdb644.xml, IoStartPacket, IoStartPacket routine [Kernel-Mode Driver Architecture], wdm/IoStartPacket
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= DISPATCH_LEVEL (see Remarks section)"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.IoStartPacket
+title: IoStartPacket function
+author: windows-driver-content
+description: The IoStartPacket routine calls the driver's StartIo routine with the given IRP or inserts the IRP into the device queue associated with the given device object if the device is already busy.
+old-location: kernel\iostartpacket.htm
+old-project: kernel
+ms.assetid: b1fa148e-73e2-437f-bd3a-e879bd457c76
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.iostartpacket, k104_d27461b9-32fe-4d7b-853d-fd110fcdb644.xml, IoStartPacket, IoStartPacket routine [Kernel-Mode Driver Architecture], wdm/IoStartPacket
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= DISPATCH_LEVEL (see Remarks section)"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoStartPacket
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

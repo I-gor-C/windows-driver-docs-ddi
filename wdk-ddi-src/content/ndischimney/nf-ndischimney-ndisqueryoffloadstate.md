@@ -1,41 +1,46 @@
 ---
-UID : NF:ndischimney.NdisQueryOffloadState
-title : NdisQueryOffloadState function
-author : windows-driver-content
-description : A protocol or intermediate driver calls the NdisQueryOffloadState function to query previously offloaded TCP chimney state objects.
-old-location : netvista\ndisqueryoffload.htm
-old-project : netvista
-ms.assetid : 97d30ba7-b67c-460b-ba80-171687495e27
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : tcp_chim_ndis_func_9075e6da-2950-4643-b626-36b4a9ce5a33.xml, NdisQueryOffloadState function [Network Drivers Starting with Windows Vista], netvista.ndisqueryoffload, NdisQueryOffloadState, ndis/NdisQueryOffloadState
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndischimney.h
-req.include-header : Ndischimney.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PD_BUFFER_VIRTUAL_SUBNET_INFO
+UID: NF:ndischimney.NdisQueryOffloadState
+title: NdisQueryOffloadState function
+author: windows-driver-content
+description: A protocol or intermediate driver calls the NdisQueryOffloadState function to query previously offloaded TCP chimney state objects.
+old-location: netvista\ndisqueryoffload.htm
+old-project: netvista
+ms.assetid: 97d30ba7-b67c-460b-ba80-171687495e27
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: tcp_chim_ndis_func_9075e6da-2950-4643-b626-36b4a9ce5a33.xml, NdisQueryOffloadState function [Network Drivers Starting with Windows Vista], netvista.ndisqueryoffload, NdisQueryOffloadState, ndis/NdisQueryOffloadState
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndischimney.h
+req.include-header: Ndischimney.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndis.h
+apiname:
+-	NdisQueryOffloadState
+product: Windows
+targetos: Windows
+req.typenames: PD_BUFFER_VIRTUAL_SUBNET_INFO
 ---
 
 

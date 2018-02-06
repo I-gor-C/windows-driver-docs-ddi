@@ -1,41 +1,46 @@
 ---
-UID : NS:portcls._PCSTREAMRESOURCE_DESCRIPTOR
-title : "_PCSTREAMRESOURCE_DESCRIPTOR"
-author : windows-driver-content
-description : PCSTREAMRESOURCE_DESCRIPTOR defines the stream resource. Use PCSTREAMRESOURCE_DESCRIPTOR_INIT to correctly initialize this structure.
-old-location : audio\pcstreamresource_descriptor.htm
-old-project : audio
-ms.assetid : 978D06FC-B5CC-409C-BE5D-CA4B53005D8C
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : PPCSTREAMRESOURCE_DESCRIPTOR structure pointer [Audio Devices], audio.pcstreamresource_descriptor, PCSTREAMRESOURCE_DESCRIPTOR, portcls/PPCSTREAMRESOURCE_DESCRIPTOR, PPCSTREAMRESOURCE_DESCRIPTOR, _PCSTREAMRESOURCE_DESCRIPTOR, *PPCSTREAMRESOURCE_DESCRIPTOR, PCSTREAMRESOURCE_DESCRIPTOR structure [Audio Devices], portcls/PCSTREAMRESOURCE_DESCRIPTOR
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : portcls.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPCSTREAMRESOURCE_DESCRIPTOR, PCSTREAMRESOURCE_DESCRIPTOR"
+UID: NS:portcls._PCSTREAMRESOURCE_DESCRIPTOR
+title: "_PCSTREAMRESOURCE_DESCRIPTOR"
+author: windows-driver-content
+description: PCSTREAMRESOURCE_DESCRIPTOR defines the stream resource. Use PCSTREAMRESOURCE_DESCRIPTOR_INIT to correctly initialize this structure.
+old-location: audio\pcstreamresource_descriptor.htm
+old-project: audio
+ms.assetid: 978D06FC-B5CC-409C-BE5D-CA4B53005D8C
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: PPCSTREAMRESOURCE_DESCRIPTOR structure pointer [Audio Devices], audio.pcstreamresource_descriptor, PCSTREAMRESOURCE_DESCRIPTOR, portcls/PPCSTREAMRESOURCE_DESCRIPTOR, PPCSTREAMRESOURCE_DESCRIPTOR, _PCSTREAMRESOURCE_DESCRIPTOR, *PPCSTREAMRESOURCE_DESCRIPTOR, PCSTREAMRESOURCE_DESCRIPTOR structure [Audio Devices], portcls/PCSTREAMRESOURCE_DESCRIPTOR
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: portcls.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Portcls.h
+apiname:
+-	PCSTREAMRESOURCE_DESCRIPTOR
+product: Windows
+targetos: Windows
+req.typenames: "*PPCSTREAMRESOURCE_DESCRIPTOR, PCSTREAMRESOURCE_DESCRIPTOR"
 ---
 
 # _PCSTREAMRESOURCE_DESCRIPTOR structure

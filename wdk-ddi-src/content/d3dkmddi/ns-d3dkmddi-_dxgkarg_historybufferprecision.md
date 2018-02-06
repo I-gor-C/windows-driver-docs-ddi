@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGKARG_HISTORYBUFFERPRECISION
-title : "_DXGKARG_HISTORYBUFFERPRECISION"
-author : windows-driver-content
-description : Indicates info about the precision of history buffer data used by the display miniport driver.
-old-location : display\dxgkarg_historybufferprecision.htm
-old-project : display
-ms.assetid : D55A8B5A-4133-4CE8-AD08-F551A3AEA42C
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkarg_historybufferprecision, d3dkmddi/DXGKARG_HISTORYBUFFERPRECISION, _DXGKARG_HISTORYBUFFERPRECISION, DXGKARG_HISTORYBUFFERPRECISION, DXGKARG_HISTORYBUFFERPRECISION structure [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8.1,WDDM 1.3 and later
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGKARG_HISTORYBUFFERPRECISION
+UID: NS:d3dkmddi._DXGKARG_HISTORYBUFFERPRECISION
+title: "_DXGKARG_HISTORYBUFFERPRECISION"
+author: windows-driver-content
+description: Indicates info about the precision of history buffer data used by the display miniport driver.
+old-location: display\dxgkarg_historybufferprecision.htm
+old-project: display
+ms.assetid: D55A8B5A-4133-4CE8-AD08-F551A3AEA42C
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkarg_historybufferprecision, d3dkmddi/DXGKARG_HISTORYBUFFERPRECISION, _DXGKARG_HISTORYBUFFERPRECISION, DXGKARG_HISTORYBUFFERPRECISION, DXGKARG_HISTORYBUFFERPRECISION structure [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8.1,WDDM 1.3 and later
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	D3dkmddi.h
+apiname:
+-	DXGKARG_HISTORYBUFFERPRECISION
+product: Windows
+targetos: Windows
+req.typenames: DXGKARG_HISTORYBUFFERPRECISION
 ---
 
 # _DXGKARG_HISTORYBUFFERPRECISION structure

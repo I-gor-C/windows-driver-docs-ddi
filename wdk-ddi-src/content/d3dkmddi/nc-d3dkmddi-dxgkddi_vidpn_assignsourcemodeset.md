@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dkmddi.DXGKDDI_VIDPN_ASSIGNSOURCEMODESET
-title : DXGKDDI_VIDPN_ASSIGNSOURCEMODESET
-author : windows-driver-content
-description : The pfnAssignSourceModeSet function assigns a source mode set to a particular source in a specified VidPN.
-old-location : display\dxgk_vidpn_interface_pfnassignsourcemodeset.htm
-old-project : display
-ms.assetid : e1a2ca9e-9035-4656-bcb8-4ad956a8501d
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgk_vidpn_interface_pfnassignsourcemodeset, pfnAssignSourceModeSet callback function [Display Devices], pfnAssignSourceModeSet, DXGKDDI_VIDPN_ASSIGNSOURCEMODESET, DXGKDDI_VIDPN_ASSIGNSOURCEMODESET, d3dkmddi/pfnAssignSourceModeSet, VidPnFunctions_558924ab-3dd4-43e9-84ed-4e28feae91c5.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
+UID: NC:d3dkmddi.DXGKDDI_VIDPN_ASSIGNSOURCEMODESET
+title: DXGKDDI_VIDPN_ASSIGNSOURCEMODESET
+author: windows-driver-content
+description: The pfnAssignSourceModeSet function assigns a source mode set to a particular source in a specified VidPN.
+old-location: display\dxgk_vidpn_interface_pfnassignsourcemodeset.htm
+old-project: display
+ms.assetid: e1a2ca9e-9035-4656-bcb8-4ad956a8501d
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgk_vidpn_interface_pfnassignsourcemodeset, pfnAssignSourceModeSet callback function [Display Devices], pfnAssignSourceModeSet, DXGKDDI_VIDPN_ASSIGNSOURCEMODESET, DXGKDDI_VIDPN_ASSIGNSOURCEMODESET, d3dkmddi/pfnAssignSourceModeSet, VidPnFunctions_558924ab-3dd4-43e9-84ed-4e28feae91c5.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	pfnAssignSourceModeSet
+product: Windows
+targetos: Windows
+req.typenames: DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
 

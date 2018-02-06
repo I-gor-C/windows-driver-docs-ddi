@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._D3DDDICB_UPDATEOVERLAY
-title : "_D3DDDICB_UPDATEOVERLAY"
-author : windows-driver-content
-description : The D3DDDICB_UPDATEOVERLAY structure describes parameters for modifying an overlay.
-old-location : display\d3dddicb_updateoverlay.htm
-old-project : display
-ms.assetid : efa54d23-99bc-49ea-b8a3-7ea5b00e36d8
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3D_param_Structs_b9e39db9-44ba-45d5-9500-dd9d5d8cc4bb.xml, display.d3dddicb_updateoverlay, D3DDDICB_UPDATEOVERLAY, d3dumddi/D3DDDICB_UPDATEOVERLAY, D3DDDICB_UPDATEOVERLAY structure [Display Devices], _D3DDDICB_UPDATEOVERLAY
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDICB_UPDATEOVERLAY
+UID: NS:d3dumddi._D3DDDICB_UPDATEOVERLAY
+title: "_D3DDDICB_UPDATEOVERLAY"
+author: windows-driver-content
+description: The D3DDDICB_UPDATEOVERLAY structure describes parameters for modifying an overlay.
+old-location: display\d3dddicb_updateoverlay.htm
+old-project: display
+ms.assetid: efa54d23-99bc-49ea-b8a3-7ea5b00e36d8
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3D_param_Structs_b9e39db9-44ba-45d5-9500-dd9d5d8cc4bb.xml, display.d3dddicb_updateoverlay, D3DDDICB_UPDATEOVERLAY, d3dumddi/D3DDDICB_UPDATEOVERLAY, D3DDDICB_UPDATEOVERLAY structure [Display Devices], _D3DDDICB_UPDATEOVERLAY
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	D3DDDICB_UPDATEOVERLAY
+product: Windows
+targetos: Windows
+req.typenames: D3DDDICB_UPDATEOVERLAY
 ---
 
 # _D3DDDICB_UPDATEOVERLAY structure

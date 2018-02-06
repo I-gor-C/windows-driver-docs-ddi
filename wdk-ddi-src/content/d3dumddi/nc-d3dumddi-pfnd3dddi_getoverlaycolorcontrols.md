@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_GETOVERLAYCOLORCONTROLS
-title : PFND3DDDI_GETOVERLAYCOLORCONTROLS
-author : windows-driver-content
-description : The GetOverlayColorControls function retrieves color-control settings for the given overlay.
-old-location : display\getoverlaycolorcontrols.htm
-old-project : display
-ms.assetid : 23b15bb5-4394-406b-8869-f9d1e4e2b539
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.getoverlaycolorcontrols, GetOverlayColorControls callback function [Display Devices], GetOverlayColorControls, PFND3DDDI_GETOVERLAYCOLORCONTROLS, PFND3DDDI_GETOVERLAYCOLORCONTROLS, d3dumddi/GetOverlayColorControls, UserModeDisplayDriver_Functions_b50c3637-892b-4cc9-ad9a-97feeeb649fc.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_GETOVERLAYCOLORCONTROLS
+title: PFND3DDDI_GETOVERLAYCOLORCONTROLS
+author: windows-driver-content
+description: The GetOverlayColorControls function retrieves color-control settings for the given overlay.
+old-location: display\getoverlaycolorcontrols.htm
+old-project: display
+ms.assetid: 23b15bb5-4394-406b-8869-f9d1e4e2b539
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.getoverlaycolorcontrols, GetOverlayColorControls callback function [Display Devices], GetOverlayColorControls, PFND3DDDI_GETOVERLAYCOLORCONTROLS, PFND3DDDI_GETOVERLAYCOLORCONTROLS, d3dumddi/GetOverlayColorControls, UserModeDisplayDriver_Functions_b50c3637-892b-4cc9-ad9a-97feeeb649fc.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	GetOverlayColorControls
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

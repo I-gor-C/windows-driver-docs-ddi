@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsFreeObjectCreateItem
-title : KsFreeObjectCreateItem function
-author : windows-driver-content
-description : Frees the slot for the specified create item.
-old-location : stream\ksfreeobjectcreateitem.htm
-old-project : stream
-ms.assetid : 66f62a55-0bed-48ed-ae79-042bffe75b70
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.ksfreeobjectcreateitem, ks/KsFreeObjectCreateItem, ksfunc_e91e49bc-521e-486e-a67b-33b16b7caa68.xml, KsFreeObjectCreateItem function [Streaming Media Devices], KsFreeObjectCreateItem
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsFreeObjectCreateItem
+title: KsFreeObjectCreateItem function
+author: windows-driver-content
+description: Frees the slot for the specified create item.
+old-location: stream\ksfreeobjectcreateitem.htm
+old-project: stream
+ms.assetid: 66f62a55-0bed-48ed-ae79-042bffe75b70
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.ksfreeobjectcreateitem, ks/KsFreeObjectCreateItem, ksfunc_e91e49bc-521e-486e-a67b-33b16b7caa68.xml, KsFreeObjectCreateItem function [Streaming Media Devices], KsFreeObjectCreateItem
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsFreeObjectCreateItem
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

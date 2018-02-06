@@ -1,42 +1,47 @@
 ---
-UID : NS:prntfont._TRANSDATA
-title : "_TRANSDATA"
-author : windows-driver-content
-description : The TRANSDATA structure is one of the structures used to define the contents of glyph translation table files (.gtt files).
-old-location : print\transdata.htm
-old-project : print
-ms.assetid : 75ddf007-0113-4967-a8d4-02fcc3cc2857
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : prntfont/PTRANSDATA, TRANSDATA structure [Print Devices], PTRANSDATA structure pointer [Print Devices], prntfont/TRANSDATA, print_unidrv-pscript_fonts_e41871c1-fc38-460e-b9e7-1df0564933e1.xml, _TRANSDATA, PTRANSDATA, print.transdata, TRANSDATA, *PTRANSDATA
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : prntfont.h
-req.include-header : Prntfont.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PTRANSDATA, TRANSDATA"
-req.product : Windows 10 or later.
+UID: NS:prntfont._TRANSDATA
+title: "_TRANSDATA"
+author: windows-driver-content
+description: The TRANSDATA structure is one of the structures used to define the contents of glyph translation table files (.gtt files).
+old-location: print\transdata.htm
+old-project: print
+ms.assetid: 75ddf007-0113-4967-a8d4-02fcc3cc2857
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: prntfont/PTRANSDATA, TRANSDATA structure [Print Devices], PTRANSDATA structure pointer [Print Devices], prntfont/TRANSDATA, print_unidrv-pscript_fonts_e41871c1-fc38-460e-b9e7-1df0564933e1.xml, _TRANSDATA, PTRANSDATA, print.transdata, TRANSDATA, *PTRANSDATA
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: prntfont.h
+req.include-header: Prntfont.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	prntfont.h
+apiname:
+-	TRANSDATA
+product: Windows
+targetos: Windows
+req.typenames: "*PTRANSDATA, TRANSDATA"
+req.product: Windows 10 or later.
 ---
 
 # _TRANSDATA structure

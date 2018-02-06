@@ -1,41 +1,46 @@
 ---
-UID : NE:ntddstor._STORAGE_CRYPTO_ALGORITHM_ID
-title : "_STORAGE_CRYPTO_ALGORITHM_ID"
-author : windows-driver-content
-description : The STORAGE_CRYPTO_ALGORITHM_ID enum provides an output buffer for StorageAdapterCryptoProperty and PropertyStandardQuery.
-old-location : storage\storage_crypto_algorithm_id.htm
-old-project : storage
-ms.assetid : 5D1CCF3D-D677-47B0-9C7B-7E35C649A7D5
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : ntddstor/StorageCryptoAlgorithmUnknown, StorageCryptoAlgorithmBitlockerAESCBC, StorageCryptoAlgorithmAESECB, _STORAGE_CRYPTO_ALGORITHM_ID, storage.storage_crypto_algorithm_id, ntddstor/StorageCryptoAlgorithmMax, STORAGE_CRYPTO_ALGORITHM_ID enumeration [Storage Devices], STORAGE_CRYPTO_ALGORITHM_ID, *PSTORAGE_CRYPTO_ALGORITHM_ID, StorageCryptoAlgorithmESSIVAESCBC, ntddstor/StorageCryptoAlgorithmESSIVAESCBC, StorageCryptoAlgorithmMax, STORAGE_CRYPTO_ALGORITHM_ID, *PSTORAGE_CRYPTO_ALGORITHM_ID enumeration [Storage Devices], STORAGE_CRYPTO_ALGORITHM_ID, StorageCryptoAlgorithmUnknown, ntddstor/StorageCryptoAlgorithmAESECB, ntddstor/StorageCryptoAlgorithmXTSAES, StorageCryptoAlgorithmXTSAES, ntddstor/STORAGE_CRYPTO_ALGORITHM_ID, *PSTORAGE_CRYPTO_ALGORITHM_ID, ntddstor/StorageCryptoAlgorithmBitlockerAESCBC
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : ntddstor.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STORAGE_CRYPTO_ALGORITHM_ID, *PSTORAGE_CRYPTO_ALGORITHM_ID
+UID: NE:ntddstor._STORAGE_CRYPTO_ALGORITHM_ID
+title: "_STORAGE_CRYPTO_ALGORITHM_ID"
+author: windows-driver-content
+description: The STORAGE_CRYPTO_ALGORITHM_ID enum provides an output buffer for StorageAdapterCryptoProperty and PropertyStandardQuery.
+old-location: storage\storage_crypto_algorithm_id.htm
+old-project: storage
+ms.assetid: 5D1CCF3D-D677-47B0-9C7B-7E35C649A7D5
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: ntddstor/StorageCryptoAlgorithmUnknown, StorageCryptoAlgorithmBitlockerAESCBC, StorageCryptoAlgorithmAESECB, _STORAGE_CRYPTO_ALGORITHM_ID, storage.storage_crypto_algorithm_id, ntddstor/StorageCryptoAlgorithmMax, STORAGE_CRYPTO_ALGORITHM_ID enumeration [Storage Devices], STORAGE_CRYPTO_ALGORITHM_ID, *PSTORAGE_CRYPTO_ALGORITHM_ID, StorageCryptoAlgorithmESSIVAESCBC, ntddstor/StorageCryptoAlgorithmESSIVAESCBC, StorageCryptoAlgorithmMax, STORAGE_CRYPTO_ALGORITHM_ID, *PSTORAGE_CRYPTO_ALGORITHM_ID enumeration [Storage Devices], STORAGE_CRYPTO_ALGORITHM_ID, StorageCryptoAlgorithmUnknown, ntddstor/StorageCryptoAlgorithmAESECB, ntddstor/StorageCryptoAlgorithmXTSAES, StorageCryptoAlgorithmXTSAES, ntddstor/STORAGE_CRYPTO_ALGORITHM_ID, *PSTORAGE_CRYPTO_ALGORITHM_ID, ntddstor/StorageCryptoAlgorithmBitlockerAESCBC
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: ntddstor.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddstor.h
+apiname:
+-	STORAGE_CRYPTO_ALGORITHM_ID, *PSTORAGE_CRYPTO_ALGORITHM_ID
+product: Windows
+targetos: Windows
+req.typenames: STORAGE_CRYPTO_ALGORITHM_ID, *PSTORAGE_CRYPTO_ALGORITHM_ID
 ---
 
 # _STORAGE_CRYPTO_ALGORITHM_ID Enumeration
@@ -56,36 +61,36 @@ typedef enum _STORAGE_CRYPTO_ALGORITHM_ID {
 ## Constants
 
 <table>
-
-<tr>
-<td>StorageCryptoAlgorithmAESECB</td>
-<td>Reserved for system use.</td>
-</tr>
-
-<tr>
-<td>StorageCryptoAlgorithmBitlockerAESCBC</td>
-<td>Reserved for system use.</td>
-</tr>
-
-<tr>
-<td>StorageCryptoAlgorithmESSIVAESCBC</td>
-<td>Reserved for system use.</td>
-</tr>
-
-<tr>
-<td>StorageCryptoAlgorithmMax</td>
-<td>Reserved for system use.</td>
-</tr>
-
-<tr>
-<td>StorageCryptoAlgorithmUnknown</td>
-<td>Reserved for system use.</td>
-</tr>
-
-<tr>
-<td>StorageCryptoAlgorithmXTSAES</td>
-<td>Reserved for system use.</td>
-</tr>
+            
+                <tr>
+                    <td>StorageCryptoAlgorithmAESECB</td>
+                    <td>Reserved for system use.</td>
+                </tr>
+            
+                <tr>
+                    <td>StorageCryptoAlgorithmBitlockerAESCBC</td>
+                    <td>Reserved for system use.</td>
+                </tr>
+            
+                <tr>
+                    <td>StorageCryptoAlgorithmESSIVAESCBC</td>
+                    <td>Reserved for system use.</td>
+                </tr>
+            
+                <tr>
+                    <td>StorageCryptoAlgorithmMax</td>
+                    <td>Reserved for system use.</td>
+                </tr>
+            
+                <tr>
+                    <td>StorageCryptoAlgorithmUnknown</td>
+                    <td>Reserved for system use.</td>
+                </tr>
+            
+                <tr>
+                    <td>StorageCryptoAlgorithmXTSAES</td>
+                    <td>Reserved for system use.</td>
+                </tr>
 </table>
 
 

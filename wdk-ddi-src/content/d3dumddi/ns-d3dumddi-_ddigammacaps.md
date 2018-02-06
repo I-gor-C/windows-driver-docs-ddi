@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._DDIGAMMACAPS
-title : "_DDIGAMMACAPS"
-author : windows-driver-content
-description : The DDIGAMMACAPS structure describes gamma-ramp capabilities that the user-mode display driver supports.
-old-location : display\ddigammacaps.htm
-old-project : display
-ms.assetid : 4db605f8-a1ed-4b75-8c72-f4846ae7007e
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3dumddi/DDIGAMMACAPS, display.ddigammacaps, D3D_other_Structs_7aa0b131-f7e5-4208-b3bb-7a35fa0d5ef1.xml, DDIGAMMACAPS structure [Display Devices], _DDIGAMMACAPS, DDIGAMMACAPS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DDIGAMMACAPS
+UID: NS:d3dumddi._DDIGAMMACAPS
+title: "_DDIGAMMACAPS"
+author: windows-driver-content
+description: The DDIGAMMACAPS structure describes gamma-ramp capabilities that the user-mode display driver supports.
+old-location: display\ddigammacaps.htm
+old-project: display
+ms.assetid: 4db605f8-a1ed-4b75-8c72-f4846ae7007e
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3dumddi/DDIGAMMACAPS, display.ddigammacaps, D3D_other_Structs_7aa0b131-f7e5-4208-b3bb-7a35fa0d5ef1.xml, DDIGAMMACAPS structure [Display Devices], _DDIGAMMACAPS, DDIGAMMACAPS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	DDIGAMMACAPS
+product: Windows
+targetos: Windows
+req.typenames: DDIGAMMACAPS
 ---
 
 # _DDIGAMMACAPS structure

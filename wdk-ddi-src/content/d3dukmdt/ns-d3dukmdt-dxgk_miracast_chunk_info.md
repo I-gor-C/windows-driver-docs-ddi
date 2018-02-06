@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dukmdt.DXGK_MIRACAST_CHUNK_INFO
-title : DXGK_MIRACAST_CHUNK_INFO
-author : windows-driver-content
-description : Contains info about a specified wireless display (Miracast) encode chunk.
-old-location : display\dxgk_miracast_chunk_info.htm
-old-project : display
-ms.assetid : 4A5413AD-A2EB-4772-89BF-867C30E0CD10
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgk_miracast_chunk_info, DXGK_MIRACAST_CHUNK_INFO structure [Display Devices], d3dukmdt/DXGK_MIRACAST_CHUNK_INFO, DXGK_MIRACAST_CHUNK_INFO
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dukmdt.h
-req.include-header : D3dukmdt.h, D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8.1
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_MIRACAST_CHUNK_INFO
+UID: NS:d3dukmdt.DXGK_MIRACAST_CHUNK_INFO
+title: DXGK_MIRACAST_CHUNK_INFO
+author: windows-driver-content
+description: Contains info about a specified wireless display (Miracast) encode chunk.
+old-location: display\dxgk_miracast_chunk_info.htm
+old-project: display
+ms.assetid: 4A5413AD-A2EB-4772-89BF-867C30E0CD10
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgk_miracast_chunk_info, DXGK_MIRACAST_CHUNK_INFO structure [Display Devices], d3dukmdt/DXGK_MIRACAST_CHUNK_INFO, DXGK_MIRACAST_CHUNK_INFO
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dukmdt.h
+req.include-header: D3dukmdt.h, D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8.1
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	D3dukmdt.h
+apiname:
+-	DXGK_MIRACAST_CHUNK_INFO
+product: Windows
+targetos: Windows
+req.typenames: DXGK_MIRACAST_CHUNK_INFO
 ---
 
 # DXGK_MIRACAST_CHUNK_INFO structure

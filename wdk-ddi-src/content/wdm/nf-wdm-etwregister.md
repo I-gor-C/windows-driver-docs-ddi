@@ -1,38 +1,38 @@
 ---
-UID : NF:wdm.EtwRegister
-title : EtwRegister function
-author : windows-driver-content
-description : The EtwRegister function registers the event provider and must be called before a provider can start tracing.
-old-location : devtest\etwregister.htm
-old-project : devtest
-ms.assetid : 89a37edb-0f58-45c2-9045-b31eec5a4281
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : EtwRegister
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.alt-api : EtwRegister
-req.alt-loc : NtosKrnl.exe
-req.ddi-compliance : PowerIrpDDis
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.EtwRegister
+title: EtwRegister function
+author: windows-driver-content
+description: The EtwRegister function registers the event provider and must be called before a provider can start tracing.
+old-location: devtest\etwregister.htm
+old-project: devtest
+ms.assetid: 89a37edb-0f58-45c2-9045-b31eec5a4281
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: EtwRegister
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.alt-api: EtwRegister
+req.alt-loc: NtosKrnl.exe
+req.ddi-compliance: PowerIrpDDis
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

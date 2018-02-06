@@ -1,42 +1,47 @@
 ---
-UID : NF:wiamdef.WIAS_LERROR
-title : WIAS_LERROR macro
-author : windows-driver-content
-description : The WIAS_LERROR macro is obsolete for Windows Vista and later. It is recommended that the WIAS_ERROR macro be used instead.The WIAS_LERROR macro writes a diagnostic WIA_ERROR message to the log file.
-old-location : image\wias_lerror.htm
-old-project : image
-ms.assetid : 71949653-08c7-4f22-951d-6e1595b10700
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : wiamdef/WIAS_LERROR, WIAS_LERROR, WIAS_LERROR macro [Imaging Devices], image.wias_lerror, IWiaLog_b765e146-4e57-447c-9e9d-0f3cdc784291.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : macro
-req.header : wiamdef.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Me, Windows XP, and later. Obsolete for Windows Vista and later. Use WIAS_ERROR instead.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wiamdef.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*LPDEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2, DEVICEDIALOGDATA2"
-req.product : Windows 10 or later.
+UID: NF:wiamdef.WIAS_LERROR
+title: WIAS_LERROR macro
+author: windows-driver-content
+description: The WIAS_LERROR macro is obsolete for Windows Vista and later. It is recommended that the WIAS_ERROR macro be used instead.The WIAS_LERROR macro writes a diagnostic WIA_ERROR message to the log file.
+old-location: image\wias_lerror.htm
+old-project: image
+ms.assetid: 71949653-08c7-4f22-951d-6e1595b10700
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: wiamdef/WIAS_LERROR, WIAS_LERROR, WIAS_LERROR macro [Imaging Devices], image.wias_lerror, IWiaLog_b765e146-4e57-447c-9e9d-0f3cdc784291.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: macro
+req.header: wiamdef.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Me, Windows XP, and later. Obsolete for Windows Vista and later. Use WIAS_ERROR instead.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wiamdef.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wiamdef.h
+apiname:
+-	WIAS_LERROR
+product: Windows
+targetos: Windows
+req.typenames: "*LPDEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2, DEVICEDIALOGDATA2"
+req.product: Windows 10 or later.
 ---
 
 

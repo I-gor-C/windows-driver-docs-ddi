@@ -1,41 +1,46 @@
 ---
-UID : NS:drmk.tagDRMRIGHTS
-title : tagDRMRIGHTS
-author : windows-driver-content
-description : The DRMRIGHTS structure specifies the DRM content rights assigned to a KS audio pin or to a port-class driver's stream object.
-old-location : audio\drmrights.htm
-old-project : audio
-ms.assetid : 890f996c-9216-4148-b198-538963101c2a
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : audio.drmrights, drmk/DRMRIGHTS, PDRMRIGHTS structure pointer [Audio Devices], PDRMRIGHTS, DRMRIGHTS structure [Audio Devices], drmk/PDRMRIGHTS, tagDRMRIGHTS, *PDRMRIGHTS, DRMRIGHTS, aud-prop_75bfd78f-d56f-4e12-ba99-c4b5904b4da2.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : drmk.h
-req.include-header : Drmk.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDRMRIGHTS, DRMRIGHTS"
+UID: NS:drmk.tagDRMRIGHTS
+title: tagDRMRIGHTS
+author: windows-driver-content
+description: The DRMRIGHTS structure specifies the DRM content rights assigned to a KS audio pin or to a port-class driver's stream object.
+old-location: audio\drmrights.htm
+old-project: audio
+ms.assetid: 890f996c-9216-4148-b198-538963101c2a
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: audio.drmrights, drmk/DRMRIGHTS, PDRMRIGHTS structure pointer [Audio Devices], PDRMRIGHTS, DRMRIGHTS structure [Audio Devices], drmk/PDRMRIGHTS, tagDRMRIGHTS, *PDRMRIGHTS, DRMRIGHTS, aud-prop_75bfd78f-d56f-4e12-ba99-c4b5904b4da2.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: drmk.h
+req.include-header: Drmk.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	drmk.h
+apiname:
+-	DRMRIGHTS
+product: Windows
+targetos: Windows
+req.typenames: "*PDRMRIGHTS, DRMRIGHTS"
 ---
 
 # tagDRMRIGHTS structure

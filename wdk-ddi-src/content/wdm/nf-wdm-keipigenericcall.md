@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.KeIpiGenericCall
-title : KeIpiGenericCall function
-author : windows-driver-content
-description : The KeIpiGenericCall routine causes the specified routine to run on all processors simultaneously.
-old-location : kernel\keipigenericcall.htm
-old-project : kernel
-ms.assetid : 11424e94-d279-4003-a97c-a46d1a75e8e5
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/KeIpiGenericCall, k105_f819c564-ecbc-4d28-aa64-6936c8ad3542.xml, KeIpiGenericCall, KeIpiGenericCall routine [Kernel-Mode Driver Architecture], kernel.keipigenericcall
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Server 2003 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "< IPI_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.KeIpiGenericCall
+title: KeIpiGenericCall function
+author: windows-driver-content
+description: The KeIpiGenericCall routine causes the specified routine to run on all processors simultaneously.
+old-location: kernel\keipigenericcall.htm
+old-project: kernel
+ms.assetid: 11424e94-d279-4003-a97c-a46d1a75e8e5
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/KeIpiGenericCall, k105_f819c564-ecbc-4d28-aa64-6936c8ad3542.xml, KeIpiGenericCall, KeIpiGenericCall routine [Kernel-Mode Driver Architecture], kernel.keipigenericcall
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Server 2003 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "< IPI_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	KeIpiGenericCall
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

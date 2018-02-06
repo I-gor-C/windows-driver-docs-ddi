@@ -1,42 +1,49 @@
 ---
-UID : NF:winppi.GdiPlayPageEMF
-title : GdiPlayPageEMF function
-author : windows-driver-content
-description : The GdiPlayPageEMF function plays the EMF records within a specified rectangle for one document page of a spooled print job.
-old-location : print\gdiplaypageemf.htm
-old-project : print
-ms.assetid : e0122858-0c9d-4aa8-a394-89d65fb98fda
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : GdiPlayPageEMF function [Print Devices], gdifnc_b1c27aba-d367-481a-8012-6c2f957ff11e.xml, GdiPlayPageEMF, winppi/GdiPlayPageEMF, print.gdiplaypageemf
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : winppi.h
-req.include-header : Winppi.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Gdi32.Lib
-req.dll : Gdi32.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDOT11_WPS_DEVICE_NAME, DOT11_WPS_DEVICE_NAME"
-req.product : Windows 10 or later.
+UID: NF:winppi.GdiPlayPageEMF
+title: GdiPlayPageEMF function
+author: windows-driver-content
+description: The GdiPlayPageEMF function plays the EMF records within a specified rectangle for one document page of a spooled print job.
+old-location: print\gdiplaypageemf.htm
+old-project: print
+ms.assetid: e0122858-0c9d-4aa8-a394-89d65fb98fda
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: GdiPlayPageEMF function [Print Devices], gdifnc_b1c27aba-d367-481a-8012-6c2f957ff11e.xml, GdiPlayPageEMF, winppi/GdiPlayPageEMF, print.gdiplaypageemf
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: winppi.h
+req.include-header: Winppi.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Gdi32.Lib
+req.dll: Gdi32.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Gdi32.dll
+-	Ext-MS-Win-GDI-Internal-Desktop-L1-1-0.dll
+-	GDI32Full.dll
+apiname:
+-	GdiPlayPageEMF
+product: Windows
+targetos: Windows
+req.typenames: "*PDOT11_WPS_DEVICE_NAME, DOT11_WPS_DEVICE_NAME"
+req.product: Windows 10 or later.
 ---
 
 

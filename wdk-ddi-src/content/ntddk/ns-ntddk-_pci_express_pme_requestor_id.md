@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddk._PCI_EXPRESS_PME_REQUESTOR_ID
-title : "_PCI_EXPRESS_PME_REQUESTOR_ID"
-author : windows-driver-content
-description : The PCI_EXPRESS_PME_REQUESTOR_ID structure describes the identifier of the requester of a power management event (PME).
-old-location : pci\pci_express_pme_requestor_id.htm
-old-project : PCI
-ms.assetid : 2305ffbd-22c8-4f63-bbe4-fd297bf98e39
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : pci_struct_0cb11d1f-7426-42fc-9d77-373516a492ae.xml, *PPCI_EXPRESS_PME_REQUESTOR_ID, ntddk/PCI_EXPRESS_PME_REQUESTOR_ID, PPCI_EXPRESS_PME_REQUESTOR_ID, PPCI_EXPRESS_PME_REQUESTOR_ID union pointer [Buses], PCI.pci_express_pme_requestor_id, PCI_EXPRESS_PME_REQUESTOR_ID union [Buses], PCI_EXPRESS_PME_REQUESTOR_ID, _PCI_EXPRESS_PME_REQUESTOR_ID, ntddk/PPCI_EXPRESS_PME_REQUESTOR_ID
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PCI_EXPRESS_PME_REQUESTOR_ID, *PPCI_EXPRESS_PME_REQUESTOR_ID
+UID: NS:ntddk._PCI_EXPRESS_PME_REQUESTOR_ID
+title: "_PCI_EXPRESS_PME_REQUESTOR_ID"
+author: windows-driver-content
+description: The PCI_EXPRESS_PME_REQUESTOR_ID structure describes the identifier of the requester of a power management event (PME).
+old-location: pci\pci_express_pme_requestor_id.htm
+old-project: PCI
+ms.assetid: 2305ffbd-22c8-4f63-bbe4-fd297bf98e39
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: pci_struct_0cb11d1f-7426-42fc-9d77-373516a492ae.xml, *PPCI_EXPRESS_PME_REQUESTOR_ID, ntddk/PCI_EXPRESS_PME_REQUESTOR_ID, PPCI_EXPRESS_PME_REQUESTOR_ID, PPCI_EXPRESS_PME_REQUESTOR_ID union pointer [Buses], PCI.pci_express_pme_requestor_id, PCI_EXPRESS_PME_REQUESTOR_ID union [Buses], PCI_EXPRESS_PME_REQUESTOR_ID, _PCI_EXPRESS_PME_REQUESTOR_ID, ntddk/PPCI_EXPRESS_PME_REQUESTOR_ID
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddk.h
+apiname:
+-	PCI_EXPRESS_PME_REQUESTOR_ID
+product: Windows
+targetos: Windows
+req.typenames: PCI_EXPRESS_PME_REQUESTOR_ID, *PPCI_EXPRESS_PME_REQUESTOR_ID
 ---
 
 # _PCI_EXPRESS_PME_REQUESTOR_ID structure

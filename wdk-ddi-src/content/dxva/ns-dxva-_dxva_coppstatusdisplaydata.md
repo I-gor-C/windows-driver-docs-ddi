@@ -1,41 +1,46 @@
 ---
-UID : NS:dxva._DXVA_COPPStatusDisplayData
-title : "_DXVA_COPPStatusDisplayData"
-author : windows-driver-content
-description : The DXVA_COPPStatusDisplayData structure describes the display mode of the signal that is transmitted over the connector associated with a DirectX VA COPP device.
-old-location : display\dxva_coppstatusdisplaydata.htm
-old-project : display
-ms.assetid : 377845f7-772f-4361-8fcb-10c432fa7abf
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : "_DXVA_COPPStatusDisplayData, DXVA_COPPStatusDisplayData structure [Display Devices], display.dxva_coppstatusdisplaydata, dxvaref_93230a15-ba58-4da6-8577-eb1f2bf8528e.xml, DXVA_COPPStatusDisplayData, dxva/DXVA_COPPStatusDisplayData"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : dxva.h
-req.include-header : Dxva.h
-req.target-type : Windows
-req.target-min-winverclnt : This structure applies only to Windows Server 2003 with SP1 and later, and Windows XP with SP2 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXVA_COPPStatusDisplayData
+UID: NS:dxva._DXVA_COPPStatusDisplayData
+title: "_DXVA_COPPStatusDisplayData"
+author: windows-driver-content
+description: The DXVA_COPPStatusDisplayData structure describes the display mode of the signal that is transmitted over the connector associated with a DirectX VA COPP device.
+old-location: display\dxva_coppstatusdisplaydata.htm
+old-project: display
+ms.assetid: 377845f7-772f-4361-8fcb-10c432fa7abf
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: "_DXVA_COPPStatusDisplayData, DXVA_COPPStatusDisplayData structure [Display Devices], display.dxva_coppstatusdisplaydata, dxvaref_93230a15-ba58-4da6-8577-eb1f2bf8528e.xml, DXVA_COPPStatusDisplayData, dxva/DXVA_COPPStatusDisplayData"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: dxva.h
+req.include-header: Dxva.h
+req.target-type: Windows
+req.target-min-winverclnt: This structure applies only to Windows Server 2003 with SP1 and later, and Windows XP with SP2 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	dxva.h
+apiname:
+-	DXVA_COPPStatusDisplayData
+product: Windows
+targetos: Windows
+req.typenames: DXVA_COPPStatusDisplayData
 ---
 
 # _DXVA_COPPStatusDisplayData structure

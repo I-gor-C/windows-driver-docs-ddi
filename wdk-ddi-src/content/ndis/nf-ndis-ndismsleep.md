@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisMSleep
-title : NdisMSleep function
-author : windows-driver-content
-description : The NdisMSleep function delays execution of the caller for a given interval in microseconds.
-old-location : netvista\ndismsleep.htm
-old-project : netvista
-ms.assetid : 5b6c3fc5-4220-4a4b-9412-8bfc8141ea90
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NdisMSleep function [Network Drivers Starting with Windows Vista], NdisMSleep, netvista.ndismsleep, ndis/NdisMSleep, ndis_delay_ref_81af917a-626a-493f-97ed-c4ce48999b12.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisMSleep (NDIS 5.1)) in Windows   Vista. Supported for NDIS 5.1 drivers (see    NdisMSleep (NDIS 5.1)).
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_Miniport_Driver_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : "< DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisMSleep
+title: NdisMSleep function
+author: windows-driver-content
+description: The NdisMSleep function delays execution of the caller for a given interval in microseconds.
+old-location: netvista\ndismsleep.htm
+old-project: netvista
+ms.assetid: 5b6c3fc5-4220-4a4b-9412-8bfc8141ea90
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NdisMSleep function [Network Drivers Starting with Windows Vista], NdisMSleep, netvista.ndismsleep, ndis/NdisMSleep, ndis_delay_ref_81af917a-626a-493f-97ed-c4ce48999b12.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisMSleep (NDIS 5.1)) in Windows   Vista. Supported for NDIS 5.1 drivers (see    NdisMSleep (NDIS 5.1)).
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_Miniport_Driver_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: "< DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisMSleep
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

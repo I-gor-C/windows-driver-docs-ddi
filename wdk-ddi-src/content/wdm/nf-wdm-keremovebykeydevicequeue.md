@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.KeRemoveByKeyDeviceQueue
-title : KeRemoveByKeyDeviceQueue function
-author : windows-driver-content
-description : The KeRemoveByKeyDeviceQueue routine removes an entry, selected according to a sort key value, from the specified device queue.
-old-location : kernel\keremovebykeydevicequeue.htm
-old-project : kernel
-ms.assetid : 9819567c-1c79-440c-9bac-f81f23df29ae
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : KeRemoveByKeyDeviceQueue, k105_7ceac4c8-26cc-4dfc-86fa-937d1c63d11b.xml, kernel.keremovebykeydevicequeue, KeRemoveByKeyDeviceQueue routine [Kernel-Mode Driver Architecture], wdm/KeRemoveByKeyDeviceQueue
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : IrqlDispatch, HwStorPortProhibitedDDIs, IrqlDispatch(storport)
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : DISPATCH_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.KeRemoveByKeyDeviceQueue
+title: KeRemoveByKeyDeviceQueue function
+author: windows-driver-content
+description: The KeRemoveByKeyDeviceQueue routine removes an entry, selected according to a sort key value, from the specified device queue.
+old-location: kernel\keremovebykeydevicequeue.htm
+old-project: kernel
+ms.assetid: 9819567c-1c79-440c-9bac-f81f23df29ae
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: KeRemoveByKeyDeviceQueue, k105_7ceac4c8-26cc-4dfc-86fa-937d1c63d11b.xml, kernel.keremovebykeydevicequeue, KeRemoveByKeyDeviceQueue routine [Kernel-Mode Driver Architecture], wdm/KeRemoveByKeyDeviceQueue
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: IrqlDispatch, HwStorPortProhibitedDDIs, IrqlDispatch(storport)
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: DISPATCH_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	KeRemoveByKeyDeviceQueue
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

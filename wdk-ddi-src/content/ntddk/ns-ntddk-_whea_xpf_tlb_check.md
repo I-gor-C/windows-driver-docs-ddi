@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddk._WHEA_XPF_TLB_CHECK
-title : "_WHEA_XPF_TLB_CHECK"
-author : windows-driver-content
-description : The WHEA_XPF_TLB_CHECK union describes translation lookaside buffer (TLB) error information for an x86 or x64 processor.
-old-location : whea\whea_xpf_tlb_check.htm
-old-project : whea
-ms.assetid : 3943c854-3bb9-4fc9-9af9-735c3f4ee94e
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : ntddk/WHEA_XPF_TLB_CHECK, WHEA_XPF_TLB_CHECK, PWHEA_XPF_TLB_CHECK, whearef_20ed4273-105d-467b-a71f-46e50078543e.xml, WHEA_XPF_TLB_CHECK union [WHEA Drivers and Applications], _WHEA_XPF_TLB_CHECK, whea.whea_xpf_tlb_check, ntddk/PWHEA_XPF_TLB_CHECK, PWHEA_XPF_TLB_CHECK union pointer [WHEA Drivers and Applications], *PWHEA_XPF_TLB_CHECK
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWHEA_XPF_TLB_CHECK, WHEA_XPF_TLB_CHECK"
+UID: NS:ntddk._WHEA_XPF_TLB_CHECK
+title: "_WHEA_XPF_TLB_CHECK"
+author: windows-driver-content
+description: The WHEA_XPF_TLB_CHECK union describes translation lookaside buffer (TLB) error information for an x86 or x64 processor.
+old-location: whea\whea_xpf_tlb_check.htm
+old-project: whea
+ms.assetid: 3943c854-3bb9-4fc9-9af9-735c3f4ee94e
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: ntddk/WHEA_XPF_TLB_CHECK, WHEA_XPF_TLB_CHECK, PWHEA_XPF_TLB_CHECK, whearef_20ed4273-105d-467b-a71f-46e50078543e.xml, WHEA_XPF_TLB_CHECK union [WHEA Drivers and Applications], _WHEA_XPF_TLB_CHECK, whea.whea_xpf_tlb_check, ntddk/PWHEA_XPF_TLB_CHECK, PWHEA_XPF_TLB_CHECK union pointer [WHEA Drivers and Applications], *PWHEA_XPF_TLB_CHECK
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddk.h
+apiname:
+-	WHEA_XPF_TLB_CHECK
+product: Windows
+targetos: Windows
+req.typenames: "*PWHEA_XPF_TLB_CHECK, WHEA_XPF_TLB_CHECK"
 ---
 
 # _WHEA_XPF_TLB_CHECK structure

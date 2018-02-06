@@ -1,41 +1,46 @@
 ---
-UID : NS:ks.KSTOPOLOGY_CONNECTION
-title : KSTOPOLOGY_CONNECTION
-author : windows-driver-content
-description : The KSTOPOLOGY_CONNECTION structure describes a single data-path connection inside a kernel streaming filter.
-old-location : stream\kstopology_connection.htm
-old-project : stream
-ms.assetid : 604be66a-bec7-48db-b038-aaaf78043965
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : PKSTOPOLOGY_CONNECTION, ks/PKSTOPOLOGY_CONNECTION, PKSTOPOLOGY_CONNECTION structure pointer [Streaming Media Devices], *PKSTOPOLOGY_CONNECTION, ks/KSTOPOLOGY_CONNECTION, KSTOPOLOGY_CONNECTION structure [Streaming Media Devices], stream.kstopology_connection, KSTOPOLOGY_CONNECTION, ks-struct_b688f291-7064-492b-8ab6-5f167941ebbf.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKSTOPOLOGY_CONNECTION, KSTOPOLOGY_CONNECTION"
+UID: NS:ks.KSTOPOLOGY_CONNECTION
+title: KSTOPOLOGY_CONNECTION
+author: windows-driver-content
+description: The KSTOPOLOGY_CONNECTION structure describes a single data-path connection inside a kernel streaming filter.
+old-location: stream\kstopology_connection.htm
+old-project: stream
+ms.assetid: 604be66a-bec7-48db-b038-aaaf78043965
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: PKSTOPOLOGY_CONNECTION, ks/PKSTOPOLOGY_CONNECTION, PKSTOPOLOGY_CONNECTION structure pointer [Streaming Media Devices], *PKSTOPOLOGY_CONNECTION, ks/KSTOPOLOGY_CONNECTION, KSTOPOLOGY_CONNECTION structure [Streaming Media Devices], stream.kstopology_connection, KSTOPOLOGY_CONNECTION, ks-struct_b688f291-7064-492b-8ab6-5f167941ebbf.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	KSTOPOLOGY_CONNECTION
+product: Windows
+targetos: Windows
+req.typenames: "*PKSTOPOLOGY_CONNECTION, KSTOPOLOGY_CONNECTION"
 ---
 
 # KSTOPOLOGY_CONNECTION structure

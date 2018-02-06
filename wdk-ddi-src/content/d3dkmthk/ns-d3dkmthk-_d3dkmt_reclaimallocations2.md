@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmthk._D3DKMT_RECLAIMALLOCATIONS2
-title : "_D3DKMT_RECLAIMALLOCATIONS2"
-author : windows-driver-content
-description : D3DKMT_RECLAIMALLOCATIONS2 describes video memory resources that are to be reclaimed and that the driver previously offered for reuse. Used with the D3DKMTReclaimAllocations2 function.
-old-location : display\d3dkmt_reclaimallocations2.htm
-old-project : display
-ms.assetid : 7980F1FD-D7C2-4C74-8652-89FD38BE4D1F
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DKMT_RECLAIMALLOCATIONS2 structure [Display Devices], d3dkmthk/D3DKMT_RECLAIMALLOCATIONS2, _D3DKMT_RECLAIMALLOCATIONS2, D3DKMT_RECLAIMALLOCATIONS2, display.d3dkmt_reclaimallocations2
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_RECLAIMALLOCATIONS2
+UID: NS:d3dkmthk._D3DKMT_RECLAIMALLOCATIONS2
+title: "_D3DKMT_RECLAIMALLOCATIONS2"
+author: windows-driver-content
+description: D3DKMT_RECLAIMALLOCATIONS2 describes video memory resources that are to be reclaimed and that the driver previously offered for reuse. Used with the D3DKMTReclaimAllocations2 function.
+old-location: display\d3dkmt_reclaimallocations2.htm
+old-project: display
+ms.assetid: 7980F1FD-D7C2-4C74-8652-89FD38BE4D1F
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DKMT_RECLAIMALLOCATIONS2 structure [Display Devices], d3dkmthk/D3DKMT_RECLAIMALLOCATIONS2, _D3DKMT_RECLAIMALLOCATIONS2, D3DKMT_RECLAIMALLOCATIONS2, display.d3dkmt_reclaimallocations2
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	D3dkmthk.h
+apiname:
+-	D3DKMT_RECLAIMALLOCATIONS2
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_RECLAIMALLOCATIONS2
 ---
 
 # _D3DKMT_RECLAIMALLOCATIONS2 structure

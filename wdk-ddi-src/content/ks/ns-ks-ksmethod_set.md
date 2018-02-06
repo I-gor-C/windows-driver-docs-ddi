@@ -1,41 +1,46 @@
 ---
-UID : NS:ks.KSMETHOD_SET
-title : KSMETHOD_SET
-author : windows-driver-content
-description : The KSMETHOD_SET structure describes the methods that comprise a kernel streaming method set.
-old-location : stream\ksmethod_set.htm
-old-project : stream
-ms.assetid : e06bbf6f-f636-4fb1-8195-b74512d4cd13
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ks/PKSMETHOD_SET, *PKSMETHOD_SET, PKSMETHOD_SET structure pointer [Streaming Media Devices], PKSMETHOD_SET, ks-struct_c3d1123f-8d2a-491b-a748-df8d88c7d9bc.xml, KSMETHOD_SET, KSMETHOD_SET structure [Streaming Media Devices], stream.ksmethod_set, ks/KSMETHOD_SET
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KSMETHOD_SET, *PKSMETHOD_SET
+UID: NS:ks.KSMETHOD_SET
+title: KSMETHOD_SET
+author: windows-driver-content
+description: The KSMETHOD_SET structure describes the methods that comprise a kernel streaming method set.
+old-location: stream\ksmethod_set.htm
+old-project: stream
+ms.assetid: e06bbf6f-f636-4fb1-8195-b74512d4cd13
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ks/PKSMETHOD_SET, *PKSMETHOD_SET, PKSMETHOD_SET structure pointer [Streaming Media Devices], PKSMETHOD_SET, ks-struct_c3d1123f-8d2a-491b-a748-df8d88c7d9bc.xml, KSMETHOD_SET, KSMETHOD_SET structure [Streaming Media Devices], stream.ksmethod_set, ks/KSMETHOD_SET
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	KSMETHOD_SET
+product: Windows
+targetos: Windows
+req.typenames: KSMETHOD_SET, *PKSMETHOD_SET
 ---
 
 # KSMETHOD_SET structure

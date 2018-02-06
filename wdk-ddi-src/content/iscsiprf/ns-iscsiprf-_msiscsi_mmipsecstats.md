@@ -1,41 +1,46 @@
 ---
-UID : NS:iscsiprf._MSiSCSI_MMIPSECStats
-title : "_MSiSCSI_MMIPSECStats"
-author : windows-driver-content
-description : The MSiSCSI_MMIPSECStats structure is used to report main mode IPsec statistics.
-old-location : storage\msiscsi_mmipsecstats.htm
-old-project : storage
-ms.assetid : 75b11689-f940-467e-92ee-59b5e0adbf70
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : MSiSCSI_MMIPSECStats, MSiSCSI_MMIPSECStats structure [Storage Devices], _MSiSCSI_MMIPSECStats, *PMSiSCSI_MMIPSECStats, storage.msiscsi_mmipsecstats, PMSiSCSI_MMIPSECStats structure pointer [Storage Devices], structs-iSCSI_6edce57f-fce5-422a-a98f-049cc6418514.xml, iscsiprf/PMSiSCSI_MMIPSECStats, iscsiprf/MSiSCSI_MMIPSECStats, PMSiSCSI_MMIPSECStats
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : iscsiprf.h
-req.include-header : Iscsiprf.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : MSiSCSI_MMIPSECStats, *PMSiSCSI_MMIPSECStats
+UID: NS:iscsiprf._MSiSCSI_MMIPSECStats
+title: "_MSiSCSI_MMIPSECStats"
+author: windows-driver-content
+description: The MSiSCSI_MMIPSECStats structure is used to report main mode IPsec statistics.
+old-location: storage\msiscsi_mmipsecstats.htm
+old-project: storage
+ms.assetid: 75b11689-f940-467e-92ee-59b5e0adbf70
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: MSiSCSI_MMIPSECStats, MSiSCSI_MMIPSECStats structure [Storage Devices], _MSiSCSI_MMIPSECStats, *PMSiSCSI_MMIPSECStats, storage.msiscsi_mmipsecstats, PMSiSCSI_MMIPSECStats structure pointer [Storage Devices], structs-iSCSI_6edce57f-fce5-422a-a98f-049cc6418514.xml, iscsiprf/PMSiSCSI_MMIPSECStats, iscsiprf/MSiSCSI_MMIPSECStats, PMSiSCSI_MMIPSECStats
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: iscsiprf.h
+req.include-header: Iscsiprf.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	iscsiprf.h
+apiname:
+-	MSiSCSI_MMIPSECStats
+product: Windows
+targetos: Windows
+req.typenames: MSiSCSI_MMIPSECStats, *PMSiSCSI_MMIPSECStats
 ---
 
 # _MSiSCSI_MMIPSECStats structure

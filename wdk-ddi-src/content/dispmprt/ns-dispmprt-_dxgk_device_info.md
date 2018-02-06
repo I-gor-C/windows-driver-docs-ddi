@@ -1,41 +1,46 @@
 ---
-UID : NS:dispmprt._DXGK_DEVICE_INFO
-title : "_DXGK_DEVICE_INFO"
-author : windows-driver-content
-description : The DXGK_DEVICE_INFO structure holds information that describes a display adapter.
-old-location : display\dxgk_device_info.htm
-old-project : display
-ms.assetid : dcdae08f-69a6-496b-8391-d2b505fb86d9
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : "_DXGK_DEVICE_INFO, display.dxgk_device_info, PDXGK_DEVICE_INFO, DXGK_DEVICE_INFO structure [Display Devices], dispmprt/PDXGK_DEVICE_INFO, DmStructs_89344ee9-8c4e-4f7e-8950-11948c07bb8e.xml, *PDXGK_DEVICE_INFO, PDXGK_DEVICE_INFO structure pointer [Display Devices], DXGK_DEVICE_INFO, dispmprt/DXGK_DEVICE_INFO"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : dispmprt.h
-req.include-header : Dispmprt.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_DEVICE_INFO, *PDXGK_DEVICE_INFO
+UID: NS:dispmprt._DXGK_DEVICE_INFO
+title: "_DXGK_DEVICE_INFO"
+author: windows-driver-content
+description: The DXGK_DEVICE_INFO structure holds information that describes a display adapter.
+old-location: display\dxgk_device_info.htm
+old-project: display
+ms.assetid: dcdae08f-69a6-496b-8391-d2b505fb86d9
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: "_DXGK_DEVICE_INFO, display.dxgk_device_info, PDXGK_DEVICE_INFO, DXGK_DEVICE_INFO structure [Display Devices], dispmprt/PDXGK_DEVICE_INFO, DmStructs_89344ee9-8c4e-4f7e-8950-11948c07bb8e.xml, *PDXGK_DEVICE_INFO, PDXGK_DEVICE_INFO structure pointer [Display Devices], DXGK_DEVICE_INFO, dispmprt/DXGK_DEVICE_INFO"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: dispmprt.h
+req.include-header: Dispmprt.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	dispmprt.h
+apiname:
+-	DXGK_DEVICE_INFO
+product: Windows
+targetos: Windows
+req.typenames: DXGK_DEVICE_INFO, *PDXGK_DEVICE_INFO
 ---
 
 # _DXGK_DEVICE_INFO structure

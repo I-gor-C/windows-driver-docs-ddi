@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisInterlockedRemoveHeadList
-title : NdisInterlockedRemoveHeadList macro
-author : windows-driver-content
-description : The NdisInterlockedRemoveHeadList function removes an entry, usually a packet, from the head of a doubly linked list so that access to the list is synchronized in a multiprocessor-safe way.
-old-location : netvista\ndisinterlockedremoveheadlist.htm
-old-project : netvista
-ms.assetid : 85cbc158-7132-4666-8161-a78251a62e4d
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.ndisinterlockedremoveheadlist, ndis/NdisInterlockedRemoveHeadList, NdisInterlockedRemoveHeadList macro [Network Drivers Starting with Windows Vista], NdisInterlockedRemoveHeadList, ndis_interlocked_ref_5aacd492-068c-4cfe-afa6-4e0e63cf66e9.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : macro
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see       NdisInterlockedRemoveHeadList (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see       NdisInterlockedRemoveHeadList (NDIS 5.1)) in Windows XP.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisInterlockedRemoveHeadList
+title: NdisInterlockedRemoveHeadList macro
+author: windows-driver-content
+description: The NdisInterlockedRemoveHeadList function removes an entry, usually a packet, from the head of a doubly linked list so that access to the list is synchronized in a multiprocessor-safe way.
+old-location: netvista\ndisinterlockedremoveheadlist.htm
+old-project: netvista
+ms.assetid: 85cbc158-7132-4666-8161-a78251a62e4d
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.ndisinterlockedremoveheadlist, ndis/NdisInterlockedRemoveHeadList, NdisInterlockedRemoveHeadList macro [Network Drivers Starting with Windows Vista], NdisInterlockedRemoveHeadList, ndis_interlocked_ref_5aacd492-068c-4cfe-afa6-4e0e63cf66e9.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: macro
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see       NdisInterlockedRemoveHeadList (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see       NdisInterlockedRemoveHeadList (NDIS 5.1)) in Windows XP.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisInterlockedRemoveHeadList
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

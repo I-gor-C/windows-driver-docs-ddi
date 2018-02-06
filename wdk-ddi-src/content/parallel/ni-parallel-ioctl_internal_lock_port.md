@@ -1,41 +1,46 @@
 ---
-UID : NI:parallel.IOCTL_INTERNAL_LOCK_PORT
-title : IOCTL_INTERNAL_LOCK_PORT
-author : windows-driver-content
-description : The IOCTL_INTERNAL_LOCK_PORT request allocates the parallel device's parent parallel port and selects the parallel device on the port.
-old-location : parports\ioctl_internal_lock_port.htm
-old-project : parports
-ms.assetid : 561816b1-f9e7-49c9-b655-583adf293926
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : parports.ioctl_internal_lock_port, IOCTL_INTERNAL_LOCK_PORT control code [Parallel Ports], IOCTL_INTERNAL_LOCK_PORT, parallel/IOCTL_INTERNAL_LOCK_PORT, cisspd_2338a5ae-b61e-44c6-8ddd-3666f5fb24ee.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : parallel.h
-req.include-header : Parallel.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RILGBATOKEN, *LPRILGBATOKEN
+UID: NI:parallel.IOCTL_INTERNAL_LOCK_PORT
+title: IOCTL_INTERNAL_LOCK_PORT
+author: windows-driver-content
+description: The IOCTL_INTERNAL_LOCK_PORT request allocates the parallel device's parent parallel port and selects the parallel device on the port.
+old-location: parports\ioctl_internal_lock_port.htm
+old-project: parports
+ms.assetid: 561816b1-f9e7-49c9-b655-583adf293926
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: parports.ioctl_internal_lock_port, IOCTL_INTERNAL_LOCK_PORT control code [Parallel Ports], IOCTL_INTERNAL_LOCK_PORT, parallel/IOCTL_INTERNAL_LOCK_PORT, cisspd_2338a5ae-b61e-44c6-8ddd-3666f5fb24ee.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: parallel.h
+req.include-header: Parallel.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	parallel.h
+apiname:
+-	IOCTL_INTERNAL_LOCK_PORT
+product: Windows
+targetos: Windows
+req.typenames: RILGBATOKEN, *LPRILGBATOKEN
 ---
 
 # IOCTL_INTERNAL_LOCK_PORT IOCTL

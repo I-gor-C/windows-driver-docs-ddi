@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3D10DDI_DESTROYQUERY
-title : PFND3D10DDI_DESTROYQUERY
-author : windows-driver-content
-description : The DestroyQuery(D3D10) function destroys the specified query object. The query object can be destoyed only if it is not currently bound to a display device.
-old-location : display\destroyquery_d3d10_.htm
-old-project : display
-ms.assetid : 74bb85df-6d64-49e8-b431-2f4a9954eff2
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.destroyquery_d3d10_, DestroyQuery callback function [Display Devices], DestroyQuery, PFND3D10DDI_DESTROYQUERY, PFND3D10DDI_DESTROYQUERY, d3d10umddi/DestroyQuery, UserModeDisplayDriverDx10_Functions_9c0fdf87-a47b-45b5-9ec9-5c307d412c9c.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3D10DDI_DESTROYQUERY
+title: PFND3D10DDI_DESTROYQUERY
+author: windows-driver-content
+description: The DestroyQuery(D3D10) function destroys the specified query object. The query object can be destoyed only if it is not currently bound to a display device.
+old-location: display\destroyquery_d3d10_.htm
+old-project: display
+ms.assetid: 74bb85df-6d64-49e8-b431-2f4a9954eff2
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.destroyquery_d3d10_, DestroyQuery callback function [Display Devices], DestroyQuery, PFND3D10DDI_DESTROYQUERY, PFND3D10DDI_DESTROYQUERY, d3d10umddi/DestroyQuery, UserModeDisplayDriverDx10_Functions_9c0fdf87-a47b-45b5-9ec9-5c307d412c9c.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	DestroyQuery
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

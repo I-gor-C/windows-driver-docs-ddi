@@ -1,42 +1,47 @@
 ---
-UID : NI:usbioctl.IOCTL_USB_GET_ROOT_HUB_NAME
-title : IOCTL_USB_GET_ROOT_HUB_NAME
-author : windows-driver-content
-description : The IOCTL_USB_GET_ROOT_HUB_NAME I/O control request is used with the USB_ROOT_HUB_NAME structure to retrieve the symbolic link name of the root hub.IOCTL_USB_GET_ROOT_HUB_NAME is a user-mode I/O control request.
-old-location : buses\ioctl_usb_get_root_hub_name.htm
-old-project : usbref
-ms.assetid : f1d7ab17-516a-4f6e-b343-3f67a6e07ae4
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : buses.ioctl_usb_get_root_hub_name, IOCTL_USB_GET_ROOT_HUB_NAME control code [Buses], IOCTL_USB_GET_ROOT_HUB_NAME, usbioctl/IOCTL_USB_GET_ROOT_HUB_NAME, usbirp_cf8d4d13-20cc-4134-8050-e3cd376a632e.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : usbioctl.h
-req.include-header : Usbioctl.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : USB_HUB_TYPE
-req.product : Windows 10 or later.
+UID: NI:usbioctl.IOCTL_USB_GET_ROOT_HUB_NAME
+title: IOCTL_USB_GET_ROOT_HUB_NAME
+author: windows-driver-content
+description: The IOCTL_USB_GET_ROOT_HUB_NAME I/O control request is used with the USB_ROOT_HUB_NAME structure to retrieve the symbolic link name of the root hub.IOCTL_USB_GET_ROOT_HUB_NAME is a user-mode I/O control request.
+old-location: buses\ioctl_usb_get_root_hub_name.htm
+old-project: usbref
+ms.assetid: f1d7ab17-516a-4f6e-b343-3f67a6e07ae4
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: buses.ioctl_usb_get_root_hub_name, IOCTL_USB_GET_ROOT_HUB_NAME control code [Buses], IOCTL_USB_GET_ROOT_HUB_NAME, usbioctl/IOCTL_USB_GET_ROOT_HUB_NAME, usbirp_cf8d4d13-20cc-4134-8050-e3cd376a632e.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: usbioctl.h
+req.include-header: Usbioctl.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Usbioctl.h
+apiname:
+-	IOCTL_USB_GET_ROOT_HUB_NAME
+product: Windows
+targetos: Windows
+req.typenames: USB_HUB_TYPE
+req.product: Windows 10 or later.
 ---
 
 # IOCTL_USB_GET_ROOT_HUB_NAME IOCTL

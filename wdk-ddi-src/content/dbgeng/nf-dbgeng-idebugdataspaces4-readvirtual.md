@@ -1,41 +1,49 @@
 ---
-UID : NF:dbgeng.IDebugDataSpaces4.ReadVirtual
-title : IDebugDataSpaces4::ReadVirtual method
-author : windows-driver-content
-description : The ReadVirtual method reads memory from the target's virtual address space.
-old-location : debugger\readvirtual.htm
-old-project : debugger
-ms.assetid : 083b0ab5-e2b9-4dcb-b17d-ab2ebde48665
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : dbgeng/IDebugDataSpaces::ReadVirtual, IDebugDataSpaces3::ReadVirtual, ReadVirtual, debugger.readvirtual, dbgeng/IDebugDataSpaces3::ReadVirtual, ReadVirtual method [Windows Debugging], IDebugDataSpaces2 interface, IDebugDataSpaces4 interface [Windows Debugging], ReadVirtual method, IDebugDataSpaces3 interface [Windows Debugging], ReadVirtual method, IDebugDataSpaces interface [Windows Debugging], ReadVirtual method, IDebugDataSpaces4::ReadVirtual, ReadVirtual method [Windows Debugging], IDebugDataSpaces::ReadVirtual, IDebugDataSpaces4, dbgeng/IDebugDataSpaces2::ReadVirtual, ReadVirtual method [Windows Debugging], IDebugDataSpaces4 interface, IDebugDataSpaces2::ReadVirtual, ReadVirtual method [Windows Debugging], IDebugDataSpaces interface, IDebugDataSpaces_8f9b4f7a-04c6-4775-9d15-a4e1c56ca48c.xml, IDebugDataSpaces2 interface [Windows Debugging], ReadVirtual method, ReadVirtual method [Windows Debugging], IDebugDataSpaces3 interface, dbgeng/IDebugDataSpaces4::ReadVirtual
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugDataSpaces4.ReadVirtual
+title: IDebugDataSpaces4::ReadVirtual method
+author: windows-driver-content
+description: The ReadVirtual method reads memory from the target's virtual address space.
+old-location: debugger\readvirtual.htm
+old-project: debugger
+ms.assetid: 083b0ab5-e2b9-4dcb-b17d-ab2ebde48665
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: dbgeng/IDebugDataSpaces::ReadVirtual, IDebugDataSpaces3::ReadVirtual, ReadVirtual, debugger.readvirtual, dbgeng/IDebugDataSpaces3::ReadVirtual, ReadVirtual method [Windows Debugging], IDebugDataSpaces2 interface, IDebugDataSpaces4 interface [Windows Debugging], ReadVirtual method, IDebugDataSpaces3 interface [Windows Debugging], ReadVirtual method, IDebugDataSpaces interface [Windows Debugging], ReadVirtual method, IDebugDataSpaces4::ReadVirtual, ReadVirtual method [Windows Debugging], IDebugDataSpaces::ReadVirtual, IDebugDataSpaces4, dbgeng/IDebugDataSpaces2::ReadVirtual, ReadVirtual method [Windows Debugging], IDebugDataSpaces4 interface, IDebugDataSpaces2::ReadVirtual, ReadVirtual method [Windows Debugging], IDebugDataSpaces interface, IDebugDataSpaces_8f9b4f7a-04c6-4775-9d15-a4e1c56ca48c.xml, IDebugDataSpaces2 interface [Windows Debugging], ReadVirtual method, ReadVirtual method [Windows Debugging], IDebugDataSpaces3 interface, dbgeng/IDebugDataSpaces4::ReadVirtual
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugDataSpaces.ReadVirtual
+-	IDebugDataSpaces2.ReadVirtual
+-	IDebugDataSpaces3.ReadVirtual
+-	IDebugDataSpaces4.ReadVirtual
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

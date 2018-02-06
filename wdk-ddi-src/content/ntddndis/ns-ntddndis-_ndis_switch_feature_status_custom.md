@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddndis._NDIS_SWITCH_FEATURE_STATUS_CUSTOM
-title : "_NDIS_SWITCH_FEATURE_STATUS_CUSTOM"
-author : windows-driver-content
-description : The NDIS_SWITCH_FEATURE_STATUS_CUSTOM structure specifies the custom status information for a Hyper-V extensible switch.
-old-location : netvista\ndis_switch_feature_status_custom.htm
-old-project : netvista
-ms.assetid : f45c7056-3cb9-4aef-87a9-8d5d5175acc2
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : "_NDIS_SWITCH_FEATURE_STATUS_CUSTOM, netvista.ndis_switch_feature_status_custom, PNDIS_SWITCH_FEATURE_STATUS_CUSTOM, *PNDIS_SWITCH_FEATURE_STATUS_CUSTOM, PNDIS_SWITCH_FEATURE_STATUS_CUSTOM structure pointer [Network Drivers Starting with Windows Vista], NDIS_SWITCH_FEATURE_STATUS_CUSTOM structure [Network Drivers Starting with Windows Vista], ntddndis/NDIS_SWITCH_FEATURE_STATUS_CUSTOM, NDIS_SWITCH_FEATURE_STATUS_CUSTOM, ntddndis/PNDIS_SWITCH_FEATURE_STATUS_CUSTOM"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.30 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SWITCH_FEATURE_STATUS_CUSTOM, *PNDIS_SWITCH_FEATURE_STATUS_CUSTOM
+UID: NS:ntddndis._NDIS_SWITCH_FEATURE_STATUS_CUSTOM
+title: "_NDIS_SWITCH_FEATURE_STATUS_CUSTOM"
+author: windows-driver-content
+description: The NDIS_SWITCH_FEATURE_STATUS_CUSTOM structure specifies the custom status information for a Hyper-V extensible switch.
+old-location: netvista\ndis_switch_feature_status_custom.htm
+old-project: netvista
+ms.assetid: f45c7056-3cb9-4aef-87a9-8d5d5175acc2
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: "_NDIS_SWITCH_FEATURE_STATUS_CUSTOM, netvista.ndis_switch_feature_status_custom, PNDIS_SWITCH_FEATURE_STATUS_CUSTOM, *PNDIS_SWITCH_FEATURE_STATUS_CUSTOM, PNDIS_SWITCH_FEATURE_STATUS_CUSTOM structure pointer [Network Drivers Starting with Windows Vista], NDIS_SWITCH_FEATURE_STATUS_CUSTOM structure [Network Drivers Starting with Windows Vista], ntddndis/NDIS_SWITCH_FEATURE_STATUS_CUSTOM, NDIS_SWITCH_FEATURE_STATUS_CUSTOM, ntddndis/PNDIS_SWITCH_FEATURE_STATUS_CUSTOM"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.30 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddndis.h
+apiname:
+-	NDIS_SWITCH_FEATURE_STATUS_CUSTOM
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SWITCH_FEATURE_STATUS_CUSTOM, *PNDIS_SWITCH_FEATURE_STATUS_CUSTOM
 ---
 
 # _NDIS_SWITCH_FEATURE_STATUS_CUSTOM structure

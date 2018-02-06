@@ -1,41 +1,46 @@
 ---
-UID : NN:portcls.IPort
-title : IPort
-author : windows-driver-content
-description : The IPort interface is the generic interface for audio port drivers. All audio port drivers expose IPort as part of their lower edge. The adapter driver calls the initialization method on this interface. IPort inherits from the IUnknown interface.
-old-location : audio\iport.htm
-old-project : audio
-ms.assetid : 8aaadfd6-3aca-451b-a5e9-081b083ae51d
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : audio.iport, IPort interface [Audio Devices], IPort interface [Audio Devices], described, IPort, portcls/IPort, audmp-routines_45897b1f-29f6-411d-9963-60f31e1655e7.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : portcls.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Portcls.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NN:portcls.IPort
+title: IPort
+author: windows-driver-content
+description: The IPort interface is the generic interface for audio port drivers. All audio port drivers expose IPort as part of their lower edge. The adapter driver calls the initialization method on this interface. IPort inherits from the IUnknown interface.
+old-location: audio\iport.htm
+old-project: audio
+ms.assetid: 8aaadfd6-3aca-451b-a5e9-081b083ae51d
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: audio.iport, IPort interface [Audio Devices], IPort interface [Audio Devices], described, IPort, portcls/IPort, audmp-routines_45897b1f-29f6-411d-9963-60f31e1655e7.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: portcls.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Portcls.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	portcls.h
+apiname:
+-	IPort
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 # IPort interface

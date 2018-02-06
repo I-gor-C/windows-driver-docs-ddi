@@ -1,42 +1,47 @@
 ---
-UID : NF:sercx.SerCxGetRingBufferUtilization
-title : SerCxGetRingBufferUtilization function
-author : windows-driver-content
-description : The SerCxGetRingBufferUtilization method enables the serial controller driver to determine how much of the type-ahead ring buffer is currently filled by data received from the serial port.
-old-location : serports\sercxgetringbufferutilization.htm
-old-project : serports
-ms.assetid : 8D4B8682-5713-47D6-A18E-F2EE44614DFB
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : 1/SerCxGetRingBufferUtilization, SerCxGetRingBufferUtilization, serports.sercxgetringbufferutilization, SerCxGetRingBufferUtilization method [Serial Ports]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : sercx.h
-req.include-header : 
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSERCX_STATUS, SERCX_STATUS"
-req.product : Windows 10 or later.
+UID: NF:sercx.SerCxGetRingBufferUtilization
+title: SerCxGetRingBufferUtilization function
+author: windows-driver-content
+description: The SerCxGetRingBufferUtilization method enables the serial controller driver to determine how much of the type-ahead ring buffer is currently filled by data received from the serial port.
+old-location: serports\sercxgetringbufferutilization.htm
+old-project: serports
+ms.assetid: 8D4B8682-5713-47D6-A18E-F2EE44614DFB
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: 1/SerCxGetRingBufferUtilization, SerCxGetRingBufferUtilization, serports.sercxgetringbufferutilization, SerCxGetRingBufferUtilization method [Serial Ports]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: sercx.h
+req.include-header: 
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	1.0\Sercx.h
+apiname:
+-	SerCxGetRingBufferUtilization
+product: Windows
+targetos: Windows
+req.typenames: "*PSERCX_STATUS, SERCX_STATUS"
+req.product: Windows 10 or later.
 ---
 
 

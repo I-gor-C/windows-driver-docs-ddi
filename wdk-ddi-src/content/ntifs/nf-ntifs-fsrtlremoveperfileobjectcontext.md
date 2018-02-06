@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.FsRtlRemovePerFileObjectContext
-title : FsRtlRemovePerFileObjectContext function
-author : windows-driver-content
-description : For a &#0034;legacy&#0034; file system filter driver, the FsRtlRemovePerFileObjectContext function unlinks a per-file-object context information structure from the list of per-file-object contexts previously associated with a file object.
-old-location : ifsk\fsrtlremoveperfileobjectcontext.htm
-old-project : ifsk
-ms.assetid : 84d359db-08d7-4f42-b912-02f3d483aa05
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : fsrtlref_2ff0b1e9-cbe5-46be-b571-3a328284b14d.xml, FsRtlRemovePerFileObjectContext function [Installable File System Drivers], ntifs/FsRtlRemovePerFileObjectContext, ifsk.fsrtlremoveperfileobjectcontext, FsRtlRemovePerFileObjectContext
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Fltkernel.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.FsRtlRemovePerFileObjectContext
+title: FsRtlRemovePerFileObjectContext function
+author: windows-driver-content
+description: For a &#0034;legacy&#0034; file system filter driver, the FsRtlRemovePerFileObjectContext function unlinks a per-file-object context information structure from the list of per-file-object contexts previously associated with a file object.
+old-location: ifsk\fsrtlremoveperfileobjectcontext.htm
+old-project: ifsk
+ms.assetid: 84d359db-08d7-4f42-b912-02f3d483aa05
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: fsrtlref_2ff0b1e9-cbe5-46be-b571-3a328284b14d.xml, FsRtlRemovePerFileObjectContext function [Installable File System Drivers], ntifs/FsRtlRemovePerFileObjectContext, ifsk.fsrtlremoveperfileobjectcontext, FsRtlRemovePerFileObjectContext
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Fltkernel.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	FsRtlRemovePerFileObjectContext
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

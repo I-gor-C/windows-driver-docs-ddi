@@ -1,41 +1,46 @@
 ---
-UID : NC:ndis.PROTOCOL_UNINSTALL
-title : PROTOCOL_UNINSTALL
-author : windows-driver-content
-description : NDIS calls a protocol driver's ProtocolUninstall function to perform cleanup operations before a protocol driver is uninstalled.Note  You must declare the function by using the PROTOCOL_UNINSTALL type.
-old-location : netvista\protocoluninstall.htm
-old-project : netvista
-ms.assetid : 959baf54-849c-4bb1-b4c5-4d5537e1d688
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.protocoluninstall, ProtocolUninstall callback function [Network Drivers Starting with Windows Vista], ProtocolUninstall, PROTOCOL_UNINSTALL, PROTOCOL_UNINSTALL, ndis/ProtocolUninstall, protocol_functions_ref_5c889ae3-39d9-43ff-84b5-8ecbb0b48be5.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
+UID: NC:ndis.PROTOCOL_UNINSTALL
+title: PROTOCOL_UNINSTALL
+author: windows-driver-content
+description: NDIS calls a protocol driver's ProtocolUninstall function to perform cleanup operations before a protocol driver is uninstalled.Note  You must declare the function by using the PROTOCOL_UNINSTALL type.
+old-location: netvista\protocoluninstall.htm
+old-project: netvista
+ms.assetid: 959baf54-849c-4bb1-b4c5-4d5537e1d688
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.protocoluninstall, ProtocolUninstall callback function [Network Drivers Starting with Windows Vista], ProtocolUninstall, PROTOCOL_UNINSTALL, PROTOCOL_UNINSTALL, ndis/ProtocolUninstall, protocol_functions_ref_5c889ae3-39d9-43ff-84b5-8ecbb0b48be5.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ndis.h
+apiname:
+-	ProtocolUninstall
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 

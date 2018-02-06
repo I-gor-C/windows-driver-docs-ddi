@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._D3DDDI_COLORFILLFLAGS
-title : "_D3DDDI_COLORFILLFLAGS"
-author : windows-driver-content
-description : The D3DDDI_COLORFILLFLAGS structure describes how to color-fill a rectangle on a surface.
-old-location : display\d3dddi_colorfillflags.htm
-old-project : display
-ms.assetid : 672baa43-7fa1-4c10-9d60-c7c8a4729f26
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.d3dddi_colorfillflags, D3DDDI_COLORFILLFLAGS, D3D_other_Structs_555ecebb-bdd8-4c7f-97cd-801216506b9e.xml, d3dumddi/D3DDDI_COLORFILLFLAGS, _D3DDDI_COLORFILLFLAGS, D3DDDI_COLORFILLFLAGS structure [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDI_COLORFILLFLAGS
+UID: NS:d3dumddi._D3DDDI_COLORFILLFLAGS
+title: "_D3DDDI_COLORFILLFLAGS"
+author: windows-driver-content
+description: The D3DDDI_COLORFILLFLAGS structure describes how to color-fill a rectangle on a surface.
+old-location: display\d3dddi_colorfillflags.htm
+old-project: display
+ms.assetid: 672baa43-7fa1-4c10-9d60-c7c8a4729f26
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.d3dddi_colorfillflags, D3DDDI_COLORFILLFLAGS, D3D_other_Structs_555ecebb-bdd8-4c7f-97cd-801216506b9e.xml, d3dumddi/D3DDDI_COLORFILLFLAGS, _D3DDDI_COLORFILLFLAGS, D3DDDI_COLORFILLFLAGS structure [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	D3DDDI_COLORFILLFLAGS
+product: Windows
+targetos: Windows
+req.typenames: D3DDDI_COLORFILLFLAGS
 ---
 
 # _D3DDDI_COLORFILLFLAGS structure

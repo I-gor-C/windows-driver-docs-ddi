@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFDevice.CommitPnpState
-title : IWDFDevice::CommitPnpState method
-author : windows-driver-content
-description : The CommitPnpState method commits the state of the Plug and Play (PnP) property (that is, turns on, turns off, or sets to the default state) that the IWDFDevice::SetPnpState method set.
-old-location : wdf\iwdfdevice_commitpnpstate.htm
-old-project : wdf
-ms.assetid : 650ad98a-81e5-4ec8-b276-a5dc79366652
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : umdf.iwdfdevice_commitpnpstate, IWDFDevice interface, CommitPnpState method, CommitPnpState method, CommitPnpState method, IWDFDevice interface, wdf.iwdfdevice_commitpnpstate, wudfddi/IWDFDevice::CommitPnpState, CommitPnpState, UMDFDeviceObjectRef_51342f9e-fc5f-4100-8c5c-bc58d7569529.xml, IWDFDevice::CommitPnpState, IWDFDevice
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.5
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFDevice.CommitPnpState
+title: IWDFDevice::CommitPnpState method
+author: windows-driver-content
+description: The CommitPnpState method commits the state of the Plug and Play (PnP) property (that is, turns on, turns off, or sets to the default state) that the IWDFDevice::SetPnpState method set.
+old-location: wdf\iwdfdevice_commitpnpstate.htm
+old-project: wdf
+ms.assetid: 650ad98a-81e5-4ec8-b276-a5dc79366652
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: umdf.iwdfdevice_commitpnpstate, IWDFDevice interface, CommitPnpState method, CommitPnpState method, CommitPnpState method, IWDFDevice interface, wdf.iwdfdevice_commitpnpstate, wudfddi/IWDFDevice::CommitPnpState, CommitPnpState, UMDFDeviceObjectRef_51342f9e-fc5f-4100-8c5c-bc58d7569529.xml, IWDFDevice::CommitPnpState, IWDFDevice
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.5
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFDevice.CommitPnpState
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

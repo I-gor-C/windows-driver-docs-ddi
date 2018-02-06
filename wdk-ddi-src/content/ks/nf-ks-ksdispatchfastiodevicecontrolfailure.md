@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsDispatchFastIoDeviceControlFailure
-title : KsDispatchFastIoDeviceControlFailure function
-author : windows-driver-content
-description : The KsDispatchFastIoDeviceControlFailure function is used in a KSDISPATCH_TABLE.FastDeviceIoControl entry that are not handled. The function should always return FALSE.
-old-location : stream\ksdispatchfastiodevicecontrolfailure.htm
-old-project : stream
-ms.assetid : 7fb83c8d-e815-46c6-8011-75b25a4c0dd7
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ksfunc_f8510e75-1698-4ce9-acd8-d5db73a7c035.xml, ks/KsDispatchFastIoDeviceControlFailure, stream.ksdispatchfastiodevicecontrolfailure, KsDispatchFastIoDeviceControlFailure, KsDispatchFastIoDeviceControlFailure function [Streaming Media Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsDispatchFastIoDeviceControlFailure
+title: KsDispatchFastIoDeviceControlFailure function
+author: windows-driver-content
+description: The KsDispatchFastIoDeviceControlFailure function is used in a KSDISPATCH_TABLE.FastDeviceIoControl entry that are not handled. The function should always return FALSE.
+old-location: stream\ksdispatchfastiodevicecontrolfailure.htm
+old-project: stream
+ms.assetid: 7fb83c8d-e815-46c6-8011-75b25a4c0dd7
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ksfunc_f8510e75-1698-4ce9-acd8-d5db73a7c035.xml, ks/KsDispatchFastIoDeviceControlFailure, stream.ksdispatchfastiodevicecontrolfailure, KsDispatchFastIoDeviceControlFailure, KsDispatchFastIoDeviceControlFailure function [Streaming Media Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsDispatchFastIoDeviceControlFailure
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.IoQueueWorkItem
-title : IoQueueWorkItem function
-author : windows-driver-content
-description : The IoQueueWorkItem routine associates a WorkItem routine with a work item, and it inserts the work item into a queue for later processing by a system worker thread.
-old-location : kernel\ioqueueworkitem.htm
-old-project : kernel
-ms.assetid : 92ec386e-205a-4704-bd13-941dd6d7d987
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : k104_6f5cb4e5-75d1-433a-864e-19de914aa2e7.xml, kernel.ioqueueworkitem, IoQueueWorkItem routine [Kernel-Mode Driver Architecture], wdm/IoQueueWorkItem, IoQueueWorkItem
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.IoQueueWorkItem
+title: IoQueueWorkItem function
+author: windows-driver-content
+description: The IoQueueWorkItem routine associates a WorkItem routine with a work item, and it inserts the work item into a queue for later processing by a system worker thread.
+old-location: kernel\ioqueueworkitem.htm
+old-project: kernel
+ms.assetid: 92ec386e-205a-4704-bd13-941dd6d7d987
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: k104_6f5cb4e5-75d1-433a-864e-19de914aa2e7.xml, kernel.ioqueueworkitem, IoQueueWorkItem routine [Kernel-Mode Driver Architecture], wdm/IoQueueWorkItem, IoQueueWorkItem
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoQueueWorkItem
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

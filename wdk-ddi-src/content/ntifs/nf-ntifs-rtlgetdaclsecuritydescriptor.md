@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.RtlGetDaclSecurityDescriptor
-title : RtlGetDaclSecurityDescriptor function
-author : windows-driver-content
-description : The RtlGetDaclSecurityDescriptor routine returns a pointer to the discretionary ACL (DACL) for a security descriptor.
-old-location : ifsk\rtlgetdaclsecuritydescriptor.htm
-old-project : ifsk
-ms.assetid : 23184d88-2c84-4fba-9d17-c4014d0eaea5
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : rtlref_c851a07b-d480-47a7-b0f7-a3f21161dfaa.xml, ntifs/RtlGetDaclSecurityDescriptor, RtlGetDaclSecurityDescriptor, RtlGetDaclSecurityDescriptor routine [Installable File System Drivers], ifsk.rtlgetdaclsecuritydescriptor
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : This routine is available on Microsoft Windows Server 2003 SP1 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.RtlGetDaclSecurityDescriptor
+title: RtlGetDaclSecurityDescriptor function
+author: windows-driver-content
+description: The RtlGetDaclSecurityDescriptor routine returns a pointer to the discretionary ACL (DACL) for a security descriptor.
+old-location: ifsk\rtlgetdaclsecuritydescriptor.htm
+old-project: ifsk
+ms.assetid: 23184d88-2c84-4fba-9d17-c4014d0eaea5
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: rtlref_c851a07b-d480-47a7-b0f7-a3f21161dfaa.xml, ntifs/RtlGetDaclSecurityDescriptor, RtlGetDaclSecurityDescriptor, RtlGetDaclSecurityDescriptor routine [Installable File System Drivers], ifsk.rtlgetdaclsecuritydescriptor
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: This routine is available on Microsoft Windows Server 2003 SP1 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	RtlGetDaclSecurityDescriptor
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

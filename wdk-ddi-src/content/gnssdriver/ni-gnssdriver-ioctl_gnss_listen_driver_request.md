@@ -1,41 +1,46 @@
 ---
-UID : NI:gnssdriver.IOCTL_GNSS_LISTEN_DRIVER_REQUEST
-title : IOCTL_GNSS_LISTEN_DRIVER_REQUEST
-author : windows-driver-content
-description : The IOCTL_GNSS_LISTEN_DRIVER_REQUEST control code is used by the GNSS driver to get data from the HLOS.
-old-location : sensors\ioctl_gnss_listen_driver_request.htm
-old-project : sensors
-ms.assetid : 204D6F80-A458-45F8-B25F-4F5D3C33EB75
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : sensors.ioctl_gnss_listen_driver_request, IOCTL_GNSS_LISTEN_DRIVER_REQUEST control code [Sensor Devices], IOCTL_GNSS_LISTEN_DRIVER_REQUEST, gnssdriver/IOCTL_GNSS_LISTEN_DRIVER_REQUEST
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : gnssdriver.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : GNSS_SUPL_CERT_ACTION
+UID: NI:gnssdriver.IOCTL_GNSS_LISTEN_DRIVER_REQUEST
+title: IOCTL_GNSS_LISTEN_DRIVER_REQUEST
+author: windows-driver-content
+description: The IOCTL_GNSS_LISTEN_DRIVER_REQUEST control code is used by the GNSS driver to get data from the HLOS.
+old-location: sensors\ioctl_gnss_listen_driver_request.htm
+old-project: sensors
+ms.assetid: 204D6F80-A458-45F8-B25F-4F5D3C33EB75
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: sensors.ioctl_gnss_listen_driver_request, IOCTL_GNSS_LISTEN_DRIVER_REQUEST control code [Sensor Devices], IOCTL_GNSS_LISTEN_DRIVER_REQUEST, gnssdriver/IOCTL_GNSS_LISTEN_DRIVER_REQUEST
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: gnssdriver.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	gnssdriver.h
+apiname:
+-	IOCTL_GNSS_LISTEN_DRIVER_REQUEST
+product: Windows
+targetos: Windows
+req.typenames: GNSS_SUPL_CERT_ACTION
 ---
 
 # IOCTL_GNSS_LISTEN_DRIVER_REQUEST IOCTL

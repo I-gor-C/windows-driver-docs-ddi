@@ -1,12 +1,12 @@
 ---
-UID : NA:wdfdmatransaction
-ms.assetid : 09e21580-15ec-3bb5-835c-b303aad3067a
-ms.author : windowsdriverdev
-ms.date : 01/18/18
-ms.keywords : 
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : portal
+UID: NA:wdfdmatransaction
+ms.assetid: 09e21580-15ec-3bb5-835c-b303aad3067a
+ms.author: windowsdriverdev
+ms.date: 01/18/18
+ms.keywords: 
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: portal
 ---
 
 # wdfdmatransaction.h header

@@ -1,41 +1,46 @@
 ---
-UID : NS:ks.KSCORRELATED_TIME
-title : KSCORRELATED_TIME
-author : windows-driver-content
-description : The KSCORRELATED_TIME structure contains a clock time as well as the corresponding number of clock ticks since system boot.
-old-location : stream\kscorrelated_time.htm
-old-project : stream
-ms.assetid : d733f50c-01a2-484f-ab5b-72aaa3378c7d
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.kscorrelated_time, PKSCORRELATED_TIME, *PKSCORRELATED_TIME, ks-struct_4bc7b067-fc0e-4343-9ae9-4bfe5aec90e3.xml, KSCORRELATED_TIME structure [Streaming Media Devices], ks/PKSCORRELATED_TIME, PKSCORRELATED_TIME structure pointer [Streaming Media Devices], KSCORRELATED_TIME, ks/KSCORRELATED_TIME
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KSCORRELATED_TIME, *PKSCORRELATED_TIME
+UID: NS:ks.KSCORRELATED_TIME
+title: KSCORRELATED_TIME
+author: windows-driver-content
+description: The KSCORRELATED_TIME structure contains a clock time as well as the corresponding number of clock ticks since system boot.
+old-location: stream\kscorrelated_time.htm
+old-project: stream
+ms.assetid: d733f50c-01a2-484f-ab5b-72aaa3378c7d
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.kscorrelated_time, PKSCORRELATED_TIME, *PKSCORRELATED_TIME, ks-struct_4bc7b067-fc0e-4343-9ae9-4bfe5aec90e3.xml, KSCORRELATED_TIME structure [Streaming Media Devices], ks/PKSCORRELATED_TIME, PKSCORRELATED_TIME structure pointer [Streaming Media Devices], KSCORRELATED_TIME, ks/KSCORRELATED_TIME
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	KSCORRELATED_TIME
+product: Windows
+targetos: Windows
+req.typenames: KSCORRELATED_TIME, *PKSCORRELATED_TIME
 ---
 
 # KSCORRELATED_TIME structure

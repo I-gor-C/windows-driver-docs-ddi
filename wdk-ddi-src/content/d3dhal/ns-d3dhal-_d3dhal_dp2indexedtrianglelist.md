@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dhal._D3DHAL_DP2INDEXEDTRIANGLELIST
-title : "_D3DHAL_DP2INDEXEDTRIANGLELIST"
-author : windows-driver-content
-description : One or more D3DHAL_DP2INDEXEDTRIANGLELIST structures are parsed from the command buffer by the D3dDrawPrimitives2 callback when the D3DHAL_DP2COMMAND structure's bCommand member is set to D3DDP2OP_INDEXEDTRIANGLELIST, and are used to render a sequence of unconnected triangles using vertex indices.
-old-location : display\d3dhal_dp2indexedtrianglelist.htm
-old-project : display
-ms.assetid : 138d226a-85ca-41d0-a0dd-2772194874e8
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3dhal/D3DHAL_DP2INDEXEDTRIANGLELIST, d3dhal/LPD3DHAL_DP2INDEXEDTRIANGLELIST, LPD3DHAL_DP2INDEXEDTRIANGLELIST structure pointer [Display Devices], _D3DHAL_DP2INDEXEDTRIANGLELIST, LPD3DHAL_DP2INDEXEDTRIANGLELIST, D3DHAL_DP2INDEXEDTRIANGLELIST structure [Display Devices], D3DHAL_DP2INDEXEDTRIANGLELIST, display.d3dhal_dp2indexedtrianglelist, *LPD3DHAL_DP2INDEXEDTRIANGLELIST, d3dstrct_ee454273-b67d-4fe5-8e81-0de4ad80ce9c.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dhal.h
-req.include-header : D3dhal.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DHAL_DP2INDEXEDTRIANGLELIST, *LPD3DHAL_DP2INDEXEDTRIANGLELIST
+UID: NS:d3dhal._D3DHAL_DP2INDEXEDTRIANGLELIST
+title: "_D3DHAL_DP2INDEXEDTRIANGLELIST"
+author: windows-driver-content
+description: One or more D3DHAL_DP2INDEXEDTRIANGLELIST structures are parsed from the command buffer by the D3dDrawPrimitives2 callback when the D3DHAL_DP2COMMAND structure's bCommand member is set to D3DDP2OP_INDEXEDTRIANGLELIST, and are used to render a sequence of unconnected triangles using vertex indices.
+old-location: display\d3dhal_dp2indexedtrianglelist.htm
+old-project: display
+ms.assetid: 138d226a-85ca-41d0-a0dd-2772194874e8
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3dhal/D3DHAL_DP2INDEXEDTRIANGLELIST, d3dhal/LPD3DHAL_DP2INDEXEDTRIANGLELIST, LPD3DHAL_DP2INDEXEDTRIANGLELIST structure pointer [Display Devices], _D3DHAL_DP2INDEXEDTRIANGLELIST, LPD3DHAL_DP2INDEXEDTRIANGLELIST, D3DHAL_DP2INDEXEDTRIANGLELIST structure [Display Devices], D3DHAL_DP2INDEXEDTRIANGLELIST, display.d3dhal_dp2indexedtrianglelist, *LPD3DHAL_DP2INDEXEDTRIANGLELIST, d3dstrct_ee454273-b67d-4fe5-8e81-0de4ad80ce9c.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dhal.h
+req.include-header: D3dhal.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dhal.h
+apiname:
+-	D3DHAL_DP2INDEXEDTRIANGLELIST
+product: Windows
+targetos: Windows
+req.typenames: D3DHAL_DP2INDEXEDTRIANGLELIST, *LPD3DHAL_DP2INDEXEDTRIANGLELIST
 ---
 
 # _D3DHAL_DP2INDEXEDTRIANGLELIST structure

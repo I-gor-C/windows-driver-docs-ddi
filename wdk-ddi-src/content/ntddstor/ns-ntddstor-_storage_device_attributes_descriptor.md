@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddstor._STORAGE_DEVICE_ATTRIBUTES_DESCRIPTOR
-title : "_STORAGE_DEVICE_ATTRIBUTES_DESCRIPTOR"
-author : windows-driver-content
-description : The STORAGE_DEVICE_ATTRIBUTES_DESCRIPTOR structure is used to retrieve the attributes information for a device.
-old-location : storage\storage_device_attributes_descriptor.htm
-old-project : storage
-ms.assetid : DA8434EF-6163-4D07-A81D-D1AC2D55BFB4
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : ntddstor/STORAGE_DEVICE_ATTRIBUTES_DESCRIPTOR, PSTORAGE_DEVICE_ATTRIBUTES_DESCRIPTOR, STORAGE_ATTRIBUTE_ASYNC_EVENT_NOTIFICATION, storage.storage_device_attributes_descriptor, STORAGE_ATTRIBUTE_BYTE_ADDRESSABLE_IO, ntddstor/PSTORAGE_DEVICE_ATTRIBUTES_DESCRIPTOR, STORAGE_ATTRIBUTE_PERF_SIZE_INDEPENDENT, STORAGE_ATTRIBUTE_DYNAMIC_PERSISTENCE, _STORAGE_DEVICE_ATTRIBUTES_DESCRIPTOR, STORAGE_DEVICE_ATTRIBUTES_DESCRIPTOR, STORAGE_ATTRIBUTE_VOLATILE, PSTORAGE_DEVICE_ATTRIBUTES_DESCRIPTOR structure pointer [Storage Devices], STORAGE_DEVICE_ATTRIBUTES_DESCRIPTOR structure [Storage Devices], STORAGE_ATTRIBUTE_BLOCK_IO
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddstor.h
-req.include-header : Ntddstor.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PSTORAGE_DEVICE_ATTRIBUTES_DESCRIPTOR, STORAGE_DEVICE_ATTRIBUTES_DESCRIPTOR
+UID: NS:ntddstor._STORAGE_DEVICE_ATTRIBUTES_DESCRIPTOR
+title: "_STORAGE_DEVICE_ATTRIBUTES_DESCRIPTOR"
+author: windows-driver-content
+description: The STORAGE_DEVICE_ATTRIBUTES_DESCRIPTOR structure is used to retrieve the attributes information for a device.
+old-location: storage\storage_device_attributes_descriptor.htm
+old-project: storage
+ms.assetid: DA8434EF-6163-4D07-A81D-D1AC2D55BFB4
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: ntddstor/STORAGE_DEVICE_ATTRIBUTES_DESCRIPTOR, PSTORAGE_DEVICE_ATTRIBUTES_DESCRIPTOR, STORAGE_ATTRIBUTE_ASYNC_EVENT_NOTIFICATION, storage.storage_device_attributes_descriptor, STORAGE_ATTRIBUTE_BYTE_ADDRESSABLE_IO, ntddstor/PSTORAGE_DEVICE_ATTRIBUTES_DESCRIPTOR, STORAGE_ATTRIBUTE_PERF_SIZE_INDEPENDENT, STORAGE_ATTRIBUTE_DYNAMIC_PERSISTENCE, _STORAGE_DEVICE_ATTRIBUTES_DESCRIPTOR, STORAGE_DEVICE_ATTRIBUTES_DESCRIPTOR, STORAGE_ATTRIBUTE_VOLATILE, PSTORAGE_DEVICE_ATTRIBUTES_DESCRIPTOR structure pointer [Storage Devices], STORAGE_DEVICE_ATTRIBUTES_DESCRIPTOR structure [Storage Devices], STORAGE_ATTRIBUTE_BLOCK_IO
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddstor.h
+req.include-header: Ntddstor.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddstor.h
+apiname:
+-	STORAGE_DEVICE_ATTRIBUTES_DESCRIPTOR
+product: Windows
+targetos: Windows
+req.typenames: PSTORAGE_DEVICE_ATTRIBUTES_DESCRIPTOR, STORAGE_DEVICE_ATTRIBUTES_DESCRIPTOR
 ---
 
 # _STORAGE_DEVICE_ATTRIBUTES_DESCRIPTOR structure

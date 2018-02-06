@@ -1,42 +1,47 @@
 ---
-UID : NE:wwan._WWAN_VOICE_CALL_STATE
-title : "_WWAN_VOICE_CALL_STATE"
-author : windows-driver-content
-description : The WWAN_VOICE_CALL_STATE enumeration lists the different voice call states that are supported by the MB device.
-old-location : netvista\wwan_voice_call_state.htm
-old-project : netvista
-ms.assetid : 50b85fc0-b84a-4c1d-9d7b-4b91150f8e76
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : "_WWAN_VOICE_CALL_STATE, wwan/WwanVoiceCallStateNone, wwan/WwanVoiceCallStateInProgress, wwan/WwanVoiceCallStateHangUp, WwanRef_65c4ae25-c50f-4527-95fd-043730c736e4.xml, *PWWAN_VOICE_CALL_STATE, WWAN_VOICE_CALL_STATE enumeration [Network Drivers Starting with Windows Vista], wwan/PWWAN_VOICE_CALL_STATE, WwanVoiceCallStateNone, WWAN_VOICE_CALL_STATE, WwanVoiceCallStateInProgress, WwanVoiceCallStateHangUp, wwan/WwanVoiceCallStateMaximum, netvista.wwan_voice_call_state, wwan/WWAN_VOICE_CALL_STATE, PWWAN_VOICE_CALL_STATE enumeration pointer [Network Drivers Starting with Windows Vista], PWWAN_VOICE_CALL_STATE, WwanVoiceCallStateMaximum"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : wwan.h
-req.include-header : Wwan.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WWAN_VOICE_CALL_STATE, *PWWAN_VOICE_CALL_STATE
-req.product : Windows 10 or later.
+UID: NE:wwan._WWAN_VOICE_CALL_STATE
+title: "_WWAN_VOICE_CALL_STATE"
+author: windows-driver-content
+description: The WWAN_VOICE_CALL_STATE enumeration lists the different voice call states that are supported by the MB device.
+old-location: netvista\wwan_voice_call_state.htm
+old-project: netvista
+ms.assetid: 50b85fc0-b84a-4c1d-9d7b-4b91150f8e76
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: "_WWAN_VOICE_CALL_STATE, wwan/WwanVoiceCallStateNone, wwan/WwanVoiceCallStateInProgress, wwan/WwanVoiceCallStateHangUp, WwanRef_65c4ae25-c50f-4527-95fd-043730c736e4.xml, *PWWAN_VOICE_CALL_STATE, WWAN_VOICE_CALL_STATE enumeration [Network Drivers Starting with Windows Vista], wwan/PWWAN_VOICE_CALL_STATE, WwanVoiceCallStateNone, WWAN_VOICE_CALL_STATE, WwanVoiceCallStateInProgress, WwanVoiceCallStateHangUp, wwan/WwanVoiceCallStateMaximum, netvista.wwan_voice_call_state, wwan/WWAN_VOICE_CALL_STATE, PWWAN_VOICE_CALL_STATE enumeration pointer [Network Drivers Starting with Windows Vista], PWWAN_VOICE_CALL_STATE, WwanVoiceCallStateMaximum"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: wwan.h
+req.include-header: Wwan.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wwan.h
+apiname:
+-	WWAN_VOICE_CALL_STATE
+product: Windows
+targetos: Windows
+req.typenames: WWAN_VOICE_CALL_STATE, *PWWAN_VOICE_CALL_STATE
+req.product: Windows 10 or later.
 ---
 
 # _WWAN_VOICE_CALL_STATE Enumeration
@@ -56,28 +61,28 @@ typedef enum _WWAN_VOICE_CALL_STATE {
 ## Constants
 
 <table>
-
-<tr>
-<td>WwanVoiceCallStateHangUp</td>
-<td>A voice call is completed. This value applies only to devices whose voice class is 
+            
+                <tr>
+                    <td>WwanVoiceCallStateHangUp</td>
+                    <td>A voice call is completed. This value applies only to devices whose voice class is 
      <b>WwanVoiceClassSeparateVoiceData</b>.</td>
-</tr>
-
-<tr>
-<td>WwanVoiceCallStateInProgress</td>
-<td>A voice call is currently in progress. This value applies only to devices whose voice class is 
+                </tr>
+            
+                <tr>
+                    <td>WwanVoiceCallStateInProgress</td>
+                    <td>A voice call is currently in progress. This value applies only to devices whose voice class is 
      <b>WwanVoiceClassSeparateVoiceData</b>.</td>
-</tr>
-
-<tr>
-<td>WwanVoiceCallStateMaximum</td>
-<td>The total number of supported voice call states.</td>
-</tr>
-
-<tr>
-<td>WwanVoiceCallStateNone</td>
-<td>The device does not support voice calls, or there is no voice call currently in progress.</td>
-</tr>
+                </tr>
+            
+                <tr>
+                    <td>WwanVoiceCallStateMaximum</td>
+                    <td>The total number of supported voice call states.</td>
+                </tr>
+            
+                <tr>
+                    <td>WwanVoiceCallStateNone</td>
+                    <td>The device does not support voice calls, or there is no voice call currently in progress.</td>
+                </tr>
 </table>
 
 
@@ -87,9 +92,9 @@ typedef enum _WWAN_VOICE_CALL_STATE {
 | **Windows version** | Available in Windows 7 and later versions of Windows. Available in Windows 7 and later versions of Windows. |
 | **Header** | wwan.h (include Wwan.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\wwan\ns-wwan-_wwan_context_state.md">WWAN_CONTEXT_STATE</a>
+        <a href="..\wwan\ns-wwan-_wwan_context_state.md">WWAN_CONTEXT_STATE</a>
 
  
 

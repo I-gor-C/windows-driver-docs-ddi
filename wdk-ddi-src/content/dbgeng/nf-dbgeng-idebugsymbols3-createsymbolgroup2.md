@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugSymbols3.CreateSymbolGroup2
-title : IDebugSymbols3::CreateSymbolGroup2 method
-author : windows-driver-content
-description : The CreateSymbolGroup2 method creates a new symbol group.
-old-location : debugger\createsymbolgroup2.htm
-old-project : debugger
-ms.assetid : 42ddf77a-14c8-4d6a-98a2-b0c67836990d
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : debugger.createsymbolgroup2, CreateSymbolGroup2 method [Windows Debugging], CreateSymbolGroup2, dbgeng/IDebugSymbols3::CreateSymbolGroup2, CreateSymbolGroup2 method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols3::CreateSymbolGroup2, IDebugSymbols3, IDebugSymbols3 interface [Windows Debugging], CreateSymbolGroup2 method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSymbols3.CreateSymbolGroup2
+title: IDebugSymbols3::CreateSymbolGroup2 method
+author: windows-driver-content
+description: The CreateSymbolGroup2 method creates a new symbol group.
+old-location: debugger\createsymbolgroup2.htm
+old-project: debugger
+ms.assetid: 42ddf77a-14c8-4d6a-98a2-b0c67836990d
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: debugger.createsymbolgroup2, CreateSymbolGroup2 method [Windows Debugging], CreateSymbolGroup2, dbgeng/IDebugSymbols3::CreateSymbolGroup2, CreateSymbolGroup2 method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols3::CreateSymbolGroup2, IDebugSymbols3, IDebugSymbols3 interface [Windows Debugging], CreateSymbolGroup2 method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Dbgeng.h
+apiname:
+-	IDebugSymbols3.CreateSymbolGroup2
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

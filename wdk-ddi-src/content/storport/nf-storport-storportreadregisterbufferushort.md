@@ -1,42 +1,48 @@
 ---
-UID : NF:storport.StorPortReadRegisterBufferUshort
-title : StorPortReadRegisterBufferUshort function
-author : windows-driver-content
-description : The StorPortReadRegisterBufferUshort routine reads a value from a specified register address.
-old-location : storage\storportreadregisterbufferushort.htm
-old-project : storage
-ms.assetid : 169f1089-ac17-4d4c-b989-018ff087aa39
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storport/StorPortReadRegisterBufferUshort, storage.storportreadregisterbufferushort, StorPortReadRegisterBufferUshort, StorPortReadRegisterBufferUshort routine [Storage Devices], storprt_9ba740e5-78b0-464d-903c-6bb4c22788fd.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Storport.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STOR_SPINLOCK
-req.product : Windows 10 or later.
+UID: NF:storport.StorPortReadRegisterBufferUshort
+title: StorPortReadRegisterBufferUshort function
+author: windows-driver-content
+description: The StorPortReadRegisterBufferUshort routine reads a value from a specified register address.
+old-location: storage\storportreadregisterbufferushort.htm
+old-project: storage
+ms.assetid: 169f1089-ac17-4d4c-b989-018ff087aa39
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storport/StorPortReadRegisterBufferUshort, storage.storportreadregisterbufferushort, StorPortReadRegisterBufferUshort, StorPortReadRegisterBufferUshort routine [Storage Devices], storprt_9ba740e5-78b0-464d-903c-6bb4c22788fd.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Storport.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Storport.lib
+-	Storport.dll
+apiname:
+-	StorPortReadRegisterBufferUshort
+product: Windows
+targetos: Windows
+req.typenames: STOR_SPINLOCK
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddscsi._SCSI_PASS_THROUGH_DIRECT
-title : "_SCSI_PASS_THROUGH_DIRECT"
-author : windows-driver-content
-description : The SCSI_PASS_THROUGH_DIRECT structure is used in conjunction with an IOCTL_SCSI_PASS_THROUGH_DIRECT request to instruct the port driver to send an embedded SCSI command to the target device.
-old-location : storage\scsi_pass_through_direct.htm
-old-project : storage
-ms.assetid : 306babe7-393f-4b4a-9d8a-4c973cb3eaa2
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : "_SCSI_PASS_THROUGH_DIRECT, structs-scsibus_64c46eef-e5bc-4e81-a479-2bdbd93605e7.xml, SCSI_PASS_THROUGH_DIRECT structure [Storage Devices], storage.scsi_pass_through_direct, PSCSI_PASS_THROUGH_DIRECT structure pointer [Storage Devices], ntddscsi/SCSI_PASS_THROUGH_DIRECT, SCSI_PASS_THROUGH_DIRECT, ntddscsi/PSCSI_PASS_THROUGH_DIRECT, PSCSI_PASS_THROUGH_DIRECT, *PSCSI_PASS_THROUGH_DIRECT"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddscsi.h
-req.include-header : Ntddscsi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSCSI_PASS_THROUGH_DIRECT, SCSI_PASS_THROUGH_DIRECT"
+UID: NS:ntddscsi._SCSI_PASS_THROUGH_DIRECT
+title: "_SCSI_PASS_THROUGH_DIRECT"
+author: windows-driver-content
+description: The SCSI_PASS_THROUGH_DIRECT structure is used in conjunction with an IOCTL_SCSI_PASS_THROUGH_DIRECT request to instruct the port driver to send an embedded SCSI command to the target device.
+old-location: storage\scsi_pass_through_direct.htm
+old-project: storage
+ms.assetid: 306babe7-393f-4b4a-9d8a-4c973cb3eaa2
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: "_SCSI_PASS_THROUGH_DIRECT, structs-scsibus_64c46eef-e5bc-4e81-a479-2bdbd93605e7.xml, SCSI_PASS_THROUGH_DIRECT structure [Storage Devices], storage.scsi_pass_through_direct, PSCSI_PASS_THROUGH_DIRECT structure pointer [Storage Devices], ntddscsi/SCSI_PASS_THROUGH_DIRECT, SCSI_PASS_THROUGH_DIRECT, ntddscsi/PSCSI_PASS_THROUGH_DIRECT, PSCSI_PASS_THROUGH_DIRECT, *PSCSI_PASS_THROUGH_DIRECT"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddscsi.h
+req.include-header: Ntddscsi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddscsi.h
+apiname:
+-	SCSI_PASS_THROUGH_DIRECT
+product: Windows
+targetos: Windows
+req.typenames: "*PSCSI_PASS_THROUGH_DIRECT, SCSI_PASS_THROUGH_DIRECT"
 ---
 
 # _SCSI_PASS_THROUGH_DIRECT structure

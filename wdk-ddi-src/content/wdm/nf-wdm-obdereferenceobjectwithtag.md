@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.ObDereferenceObjectWithTag
-title : ObDereferenceObjectWithTag macro
-author : windows-driver-content
-description : The ObDereferenceObjectWithTag routine decrements the reference count of the specified object, and writes a four-byte tag value to the object to support object reference tracing.
-old-location : kernel\obdereferenceobjectwithtag.htm
-old-project : kernel
-ms.assetid : 872098c1-d684-4ce5-9f53-2fee8b50b626
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ObDereferenceObjectWithTag routine [Kernel-Mode Driver Architecture], k107_4a4d8579-6641-4d2a-9599-9ac39c25fd91.xml, wdm/ObDereferenceObjectWithTag, kernel.obdereferenceobjectwithtag, ObDereferenceObjectWithTag
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : macro
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h, Fltkernel.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows 7 and later versions of the Windows operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ObDereferenceObjectWithTag
+title: ObDereferenceObjectWithTag macro
+author: windows-driver-content
+description: The ObDereferenceObjectWithTag routine decrements the reference count of the specified object, and writes a four-byte tag value to the object to support object reference tracing.
+old-location: kernel\obdereferenceobjectwithtag.htm
+old-project: kernel
+ms.assetid: 872098c1-d684-4ce5-9f53-2fee8b50b626
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ObDereferenceObjectWithTag routine [Kernel-Mode Driver Architecture], k107_4a4d8579-6641-4d2a-9599-9ac39c25fd91.xml, wdm/ObDereferenceObjectWithTag, kernel.obdereferenceobjectwithtag, ObDereferenceObjectWithTag
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: macro
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h, Fltkernel.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows 7 and later versions of the Windows operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ObDereferenceObjectWithTag
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

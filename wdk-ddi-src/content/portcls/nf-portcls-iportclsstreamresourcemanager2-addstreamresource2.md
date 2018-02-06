@@ -1,41 +1,47 @@
 ---
-UID : NF:portcls.IPortClsStreamResourceManager2.AddStreamResource2
-title : IPortClsStreamResourceManager2::AddStreamResource2 method
-author : windows-driver-content
-description : AddStreamResource2 adds a stream resource. Two type of stream resources are supported:\_interrupts and driver-owned threads. The AddStreamResource2 method can only be used by audio waveRT miniport drivers.
-old-location : audio\iportclsstreamresourcemanager2_addstreamresource2.htm
-old-project : audio
-ms.assetid : C140D11C-41D6-4812-AD95-990CBFA06FE8
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : audio.iportclsstreamresourcemanager2_addstreamresource2, AddStreamResource2 method [Audio Devices], IPortClsStreamResourceManager2 interface, IPortClsStreamResourceManager2, AddStreamResource2 method [Audio Devices], AddStreamResource2, IPortClsStreamResourceManager2 interface [Audio Devices], AddStreamResource2 method, IPortClsStreamResourceManager2::AddStreamResource2, portcls/IPortClsStreamResourceManager2::AddStreamResource2
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : portcls.h
-req.include-header : Portcls.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 10, version 1511 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Portcls.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.IPortClsStreamResourceManager2.AddStreamResource2
+title: IPortClsStreamResourceManager2::AddStreamResource2 method
+author: windows-driver-content
+description: AddStreamResource2 adds a stream resource. Two type of stream resources are supported:\_interrupts and driver-owned threads. The AddStreamResource2 method can only be used by audio waveRT miniport drivers.
+old-location: audio\iportclsstreamresourcemanager2_addstreamresource2.htm
+old-project: audio
+ms.assetid: C140D11C-41D6-4812-AD95-990CBFA06FE8
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: audio.iportclsstreamresourcemanager2_addstreamresource2, AddStreamResource2 method [Audio Devices], IPortClsStreamResourceManager2 interface, IPortClsStreamResourceManager2, AddStreamResource2 method [Audio Devices], AddStreamResource2, IPortClsStreamResourceManager2 interface [Audio Devices], AddStreamResource2 method, IPortClsStreamResourceManager2::AddStreamResource2, portcls/IPortClsStreamResourceManager2::AddStreamResource2
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: portcls.h
+req.include-header: Portcls.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 10, version 1511 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Portcls.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Portcls.lib
+-	Portcls.dll
+apiname:
+-	IPortClsStreamResourceManager2.AddStreamResource2
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

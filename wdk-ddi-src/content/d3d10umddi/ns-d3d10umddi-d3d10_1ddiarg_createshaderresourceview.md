@@ -1,41 +1,46 @@
 ---
-UID : NS:d3d10umddi.D3D10_1DDIARG_CREATESHADERRESOURCEVIEW
-title : D3D10_1DDIARG_CREATESHADERRESOURCEVIEW
-author : windows-driver-content
-description : The D3D10_1DDIARG_CREATESHADERRESOURCEVIEW structure describes the shader resource view to create.
-old-location : display\d3d10_1ddiarg_createshaderresourceview.htm
-old-project : display
-ms.assetid : d899ae74-9ee6-43c9-a8a9-44deb9eaa368
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3D10_1DDIARG_CREATESHADERRESOURCEVIEW structure [Display Devices], D3D10_1DDIARG_CREATESHADERRESOURCEVIEW, d3d10umddi/D3D10_1DDIARG_CREATESHADERRESOURCEVIEW, UMDisplayDriver_Dx10param_Structs_a6468f32-7ebf-4ce8-b5c5-9163e65fce93.xml, display.d3d10_1ddiarg_createshaderresourceview
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Windows
-req.target-min-winverclnt : D3D10_1DDIARG_CREATESHADERRESOURCEVIEW is supported on Windows Vista with Service Pack 1 (SP1) and later versions and Windows Server 2008 and later versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3D10_1DDIARG_CREATESHADERRESOURCEVIEW
+UID: NS:d3d10umddi.D3D10_1DDIARG_CREATESHADERRESOURCEVIEW
+title: D3D10_1DDIARG_CREATESHADERRESOURCEVIEW
+author: windows-driver-content
+description: The D3D10_1DDIARG_CREATESHADERRESOURCEVIEW structure describes the shader resource view to create.
+old-location: display\d3d10_1ddiarg_createshaderresourceview.htm
+old-project: display
+ms.assetid: d899ae74-9ee6-43c9-a8a9-44deb9eaa368
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3D10_1DDIARG_CREATESHADERRESOURCEVIEW structure [Display Devices], D3D10_1DDIARG_CREATESHADERRESOURCEVIEW, d3d10umddi/D3D10_1DDIARG_CREATESHADERRESOURCEVIEW, UMDisplayDriver_Dx10param_Structs_a6468f32-7ebf-4ce8-b5c5-9163e65fce93.xml, display.d3d10_1ddiarg_createshaderresourceview
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Windows
+req.target-min-winverclnt: D3D10_1DDIARG_CREATESHADERRESOURCEVIEW is supported on Windows Vista with Service Pack 1 (SP1) and later versions and Windows Server 2008 and later versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	D3D10_1DDIARG_CREATESHADERRESOURCEVIEW
+product: Windows
+targetos: Windows
+req.typenames: D3D10_1DDIARG_CREATESHADERRESOURCEVIEW
 ---
 
 # D3D10_1DDIARG_CREATESHADERRESOURCEVIEW structure

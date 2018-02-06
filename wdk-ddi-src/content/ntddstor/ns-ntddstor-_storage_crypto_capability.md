@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddstor._STORAGE_CRYPTO_CAPABILITY
-title : "_STORAGE_CRYPTO_CAPABILITY"
-author : windows-driver-content
-description : Reserved for system use.
-old-location : storage\storage_crypto_capability.htm
-old-project : storage
-ms.assetid : 9DFAB3C6-F833-487D-87FC-292B3AFAD767
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : PSTORAGE_CRYPTO_CAPABILITY, *PSTORAGE_CRYPTO_CAPABILITY, _STORAGE_CRYPTO_CAPABILITY, storage.storage_crypto_capability, ntddstor/STORAGE_CRYPTO_CAPABILITY, ntddstor/PSTORAGE_CRYPTO_CAPABILITY, STORAGE_CRYPTO_CAPABILITY, STORAGE_CRYPTO_CAPABILITY structure [Storage Devices], PSTORAGE_CRYPTO_CAPABILITY structure pointer [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddstor.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STORAGE_CRYPTO_CAPABILITY, *PSTORAGE_CRYPTO_CAPABILITY
+UID: NS:ntddstor._STORAGE_CRYPTO_CAPABILITY
+title: "_STORAGE_CRYPTO_CAPABILITY"
+author: windows-driver-content
+description: Reserved for system use.
+old-location: storage\storage_crypto_capability.htm
+old-project: storage
+ms.assetid: 9DFAB3C6-F833-487D-87FC-292B3AFAD767
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: PSTORAGE_CRYPTO_CAPABILITY, *PSTORAGE_CRYPTO_CAPABILITY, _STORAGE_CRYPTO_CAPABILITY, storage.storage_crypto_capability, ntddstor/STORAGE_CRYPTO_CAPABILITY, ntddstor/PSTORAGE_CRYPTO_CAPABILITY, STORAGE_CRYPTO_CAPABILITY, STORAGE_CRYPTO_CAPABILITY structure [Storage Devices], PSTORAGE_CRYPTO_CAPABILITY structure pointer [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddstor.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddstor.h
+apiname:
+-	STORAGE_CRYPTO_CAPABILITY
+product: Windows
+targetos: Windows
+req.typenames: STORAGE_CRYPTO_CAPABILITY, *PSTORAGE_CRYPTO_CAPABILITY
 ---
 
 # _STORAGE_CRYPTO_CAPABILITY structure

@@ -1,41 +1,46 @@
 ---
-UID : NC:ndischimney.TCP_OFFLOAD_DISCONNECT_COMPLETE_HANDLER
-title : TCP_OFFLOAD_DISCONNECT_COMPLETE_HANDLER
-author : windows-driver-content
-description : NDIS calls a protocol driver's or intermediate driver's ProtocolTcpOffloadDisconnectComplete function to complete a disconnect operation that the driver previously initiated by calling the NdisOffloadTcpDisconnect function.
-old-location : netvista\protocoltcpoffloaddisconnectcomplete.htm
-old-project : netvista
-ms.assetid : 56244148-638f-4d93-82a6-2cced9744046
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.protocoltcpoffloaddisconnectcomplete, ProtocolTcpOffloadDisconnectComplete callback function [Network Drivers Starting with Windows Vista], ProtocolTcpOffloadDisconnectComplete, TCP_OFFLOAD_DISCONNECT_COMPLETE_HANDLER, TCP_OFFLOAD_DISCONNECT_COMPLETE_HANDLER, ndischimney/ProtocolTcpOffloadDisconnectComplete, tcp_chim_protocol_func_fadc0ea9-acd8-489d-886c-213b909d93b3.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ndischimney.h
-req.include-header : Ndischimney.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PD_BUFFER_VIRTUAL_SUBNET_INFO
+UID: NC:ndischimney.TCP_OFFLOAD_DISCONNECT_COMPLETE_HANDLER
+title: TCP_OFFLOAD_DISCONNECT_COMPLETE_HANDLER
+author: windows-driver-content
+description: NDIS calls a protocol driver's or intermediate driver's ProtocolTcpOffloadDisconnectComplete function to complete a disconnect operation that the driver previously initiated by calling the NdisOffloadTcpDisconnect function.
+old-location: netvista\protocoltcpoffloaddisconnectcomplete.htm
+old-project: netvista
+ms.assetid: 56244148-638f-4d93-82a6-2cced9744046
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.protocoltcpoffloaddisconnectcomplete, ProtocolTcpOffloadDisconnectComplete callback function [Network Drivers Starting with Windows Vista], ProtocolTcpOffloadDisconnectComplete, TCP_OFFLOAD_DISCONNECT_COMPLETE_HANDLER, TCP_OFFLOAD_DISCONNECT_COMPLETE_HANDLER, ndischimney/ProtocolTcpOffloadDisconnectComplete, tcp_chim_protocol_func_fadc0ea9-acd8-489d-886c-213b909d93b3.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ndischimney.h
+req.include-header: Ndischimney.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ndischimney.h
+apiname:
+-	ProtocolTcpOffloadDisconnectComplete
+product: Windows
+targetos: Windows
+req.typenames: PD_BUFFER_VIRTUAL_SUBNET_INFO
 ---
 
 

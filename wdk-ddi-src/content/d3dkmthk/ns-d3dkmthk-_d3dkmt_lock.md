@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmthk._D3DKMT_LOCK
-title : "_D3DKMT_LOCK"
-author : windows-driver-content
-description : The D3DKMT_LOCK structure describes parameters for locking an allocation.
-old-location : display\d3dkmt_lock.htm
-old-project : display
-ms.assetid : 0f985d0b-2b98-413d-a736-c507743ac786
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3dkmthk/D3DKMT_LOCK, D3DKMT_LOCK structure [Display Devices], D3DKMT_LOCK, OpenGL_Structs_08e60652-b888-4a1e-a9c6-3dee8f0fb50d.xml, _D3DKMT_LOCK, display.d3dkmt_lock
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_LOCK
+UID: NS:d3dkmthk._D3DKMT_LOCK
+title: "_D3DKMT_LOCK"
+author: windows-driver-content
+description: The D3DKMT_LOCK structure describes parameters for locking an allocation.
+old-location: display\d3dkmt_lock.htm
+old-project: display
+ms.assetid: 0f985d0b-2b98-413d-a736-c507743ac786
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3dkmthk/D3DKMT_LOCK, D3DKMT_LOCK structure [Display Devices], D3DKMT_LOCK, OpenGL_Structs_08e60652-b888-4a1e-a9c6-3dee8f0fb50d.xml, _D3DKMT_LOCK, display.d3dkmt_lock
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmthk.h
+apiname:
+-	D3DKMT_LOCK
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_LOCK
 ---
 
 # _D3DKMT_LOCK structure

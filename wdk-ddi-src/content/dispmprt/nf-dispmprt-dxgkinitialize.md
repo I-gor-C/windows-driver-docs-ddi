@@ -1,41 +1,46 @@
 ---
-UID : NF:dispmprt.DxgkInitialize
-title : DxgkInitialize function
-author : windows-driver-content
-description : The DxgkInitialize function loads and initializes the DirectX graphics kernel subsystem (Dxgkrnl.sys).
-old-location : display\dxgkinitialize.htm
-old-project : display
-ms.assetid : 0eda4184-2852-4a31-b4da-1fbb99ed4670
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DpFunctions_a3ffc7d5-f2bc-42f0-97f3-411bfe7b95e7.xml, DxgkInitialize function [Display Devices], dispmprt/DxgkInitialize, display.dxgkinitialize, DxgkInitialize
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : dispmprt.h
-req.include-header : Dispmprt.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_SURPRISE_REMOVAL_TYPE
+UID: NF:dispmprt.DxgkInitialize
+title: DxgkInitialize function
+author: windows-driver-content
+description: The DxgkInitialize function loads and initializes the DirectX graphics kernel subsystem (Dxgkrnl.sys).
+old-location: display\dxgkinitialize.htm
+old-project: display
+ms.assetid: 0eda4184-2852-4a31-b4da-1fbb99ed4670
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DpFunctions_a3ffc7d5-f2bc-42f0-97f3-411bfe7b95e7.xml, DxgkInitialize function [Display Devices], dispmprt/DxgkInitialize, display.dxgkinitialize, DxgkInitialize
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: dispmprt.h
+req.include-header: Dispmprt.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	dispmprt.h
+apiname:
+-	DxgkInitialize
+product: Windows
+targetos: Windows
+req.typenames: DXGK_SURPRISE_REMOVAL_TYPE
 ---
 
 

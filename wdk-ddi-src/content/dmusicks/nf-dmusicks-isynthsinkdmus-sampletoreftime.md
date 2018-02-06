@@ -1,41 +1,46 @@
 ---
-UID : NF:dmusicks.ISynthSinkDMus.SampleToRefTime
-title : ISynthSinkDMus::SampleToRefTime method
-author : windows-driver-content
-description : The SampleToRefTime method converts a sample time to a reference time.
-old-location : audio\isynthsinkdmus_sampletoreftime.htm
-old-project : audio
-ms.assetid : b2d54ee9-78aa-4799-a06d-6c79000d3e32
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : dmusicks/ISynthSinkDMus::SampleToRefTime, audmp-routines_acfbec43-3c33-4d78-9d25-57e44afe0033.xml, audio.isynthsinkdmus_sampletoreftime, SampleToRefTime method [Audio Devices], SampleToRefTime method [Audio Devices], ISynthSinkDMus interface, ISynthSinkDMus::SampleToRefTime, ISynthSinkDMus interface [Audio Devices], SampleToRefTime method, SampleToRefTime, ISynthSinkDMus
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dmusicks.h
-req.include-header : Dmusicks.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dmusicks.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DMUS_STREAM_TYPE
+UID: NF:dmusicks.ISynthSinkDMus.SampleToRefTime
+title: ISynthSinkDMus::SampleToRefTime method
+author: windows-driver-content
+description: The SampleToRefTime method converts a sample time to a reference time.
+old-location: audio\isynthsinkdmus_sampletoreftime.htm
+old-project: audio
+ms.assetid: b2d54ee9-78aa-4799-a06d-6c79000d3e32
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: dmusicks/ISynthSinkDMus::SampleToRefTime, audmp-routines_acfbec43-3c33-4d78-9d25-57e44afe0033.xml, audio.isynthsinkdmus_sampletoreftime, SampleToRefTime method [Audio Devices], SampleToRefTime method [Audio Devices], ISynthSinkDMus interface, ISynthSinkDMus::SampleToRefTime, ISynthSinkDMus interface [Audio Devices], SampleToRefTime method, SampleToRefTime, ISynthSinkDMus
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dmusicks.h
+req.include-header: Dmusicks.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dmusicks.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dmusicks.h
+apiname:
+-	ISynthSinkDMus.SampleToRefTime
+product: Windows
+targetos: Windows
+req.typenames: DMUS_STREAM_TYPE
 ---
 
 

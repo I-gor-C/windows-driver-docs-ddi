@@ -1,41 +1,46 @@
 ---
-UID : NC:ndischimney.W_INITIATE_OFFLOAD_HANDLER
-title : W_INITIATE_OFFLOAD_HANDLER
-author : windows-driver-content
-description : MiniportInitiateOffload offloads TCP chimney state from the host stack.
-old-location : netvista\miniportinitiateoffload.htm
-old-project : netvista
-ms.assetid : f430642b-01bf-4ed7-bfea-e8dd8d5a8208
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.miniportinitiateoffload, MiniportInitiateOffload callback function [Network Drivers Starting with Windows Vista], MiniportInitiateOffload, W_INITIATE_OFFLOAD_HANDLER, W_INITIATE_OFFLOAD_HANDLER, ndischimney/MiniportInitiateOffload, tcp_chim_miniport_func_58c338e0-ea8e-41c2-a781-a32f4be7758c.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ndischimney.h
-req.include-header : Ndischimney.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PD_BUFFER_VIRTUAL_SUBNET_INFO
+UID: NC:ndischimney.W_INITIATE_OFFLOAD_HANDLER
+title: W_INITIATE_OFFLOAD_HANDLER
+author: windows-driver-content
+description: MiniportInitiateOffload offloads TCP chimney state from the host stack.
+old-location: netvista\miniportinitiateoffload.htm
+old-project: netvista
+ms.assetid: f430642b-01bf-4ed7-bfea-e8dd8d5a8208
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.miniportinitiateoffload, MiniportInitiateOffload callback function [Network Drivers Starting with Windows Vista], MiniportInitiateOffload, W_INITIATE_OFFLOAD_HANDLER, W_INITIATE_OFFLOAD_HANDLER, ndischimney/MiniportInitiateOffload, tcp_chim_miniport_func_58c338e0-ea8e-41c2-a781-a32f4be7758c.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ndischimney.h
+req.include-header: Ndischimney.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ndischimney.h
+apiname:
+-	MiniportInitiateOffload
+product: Windows
+targetos: Windows
+req.typenames: PD_BUFFER_VIRTUAL_SUBNET_INFO
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NF:ks.KsGetPinFromFileObject
-title : KsGetPinFromFileObject function
-author : windows-driver-content
-description : The KsGetPinFromFileObject function returns the AVStream pin object associated with FileObject.
-old-location : stream\ksgetpinfromfileobject.htm
-old-project : stream
-ms.assetid : 47e7fd44-b98f-4e0a-80c8-cc9b6dcc483b
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : avfunc_18bdc4eb-2823-481e-ba51-e4103ff10d8c.xml, KsGetPinFromFileObject function [Streaming Media Devices], ks/KsGetPinFromFileObject, KsGetPinFromFileObject, stream.ksgetpinfromfileobject
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsGetPinFromFileObject
+title: KsGetPinFromFileObject function
+author: windows-driver-content
+description: The KsGetPinFromFileObject function returns the AVStream pin object associated with FileObject.
+old-location: stream\ksgetpinfromfileobject.htm
+old-project: stream
+ms.assetid: 47e7fd44-b98f-4e0a-80c8-cc9b6dcc483b
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: avfunc_18bdc4eb-2823-481e-ba51-e4103ff10d8c.xml, KsGetPinFromFileObject function [Streaming Media Devices], ks/KsGetPinFromFileObject, KsGetPinFromFileObject, stream.ksgetpinfromfileobject
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	KsGetPinFromFileObject
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

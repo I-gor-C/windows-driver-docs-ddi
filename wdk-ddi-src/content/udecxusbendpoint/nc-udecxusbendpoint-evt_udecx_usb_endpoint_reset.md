@@ -1,42 +1,47 @@
 ---
-UID : NC:udecxusbendpoint.EVT_UDECX_USB_ENDPOINT_RESET
-title : EVT_UDECX_USB_ENDPOINT_RESET
-author : windows-driver-content
-description : The USB device emulation class extension (UdeCx) invokes this callback function to reset an endpoint of the virtual USB device.
-old-location : buses\evt_udecx_usb_endpoint_reset.htm
-old-project : usbref
-ms.assetid : 4220509B-A378-47F4-8E71-0290EDED89EB
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : buses.evt_udecx_usb_endpoint_reset, EvtUsbEndpointReset callback function [Buses], EvtUsbEndpointReset, EVT_UDECX_USB_ENDPOINT_RESET, EVT_UDECX_USB_ENDPOINT_RESET, udecxusbendpoint/EvtUsbEndpointReset
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : udecxusbendpoint.h
-req.include-header : Udecx.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 1.15
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUDECX_USB_ENDPOINT_INIT_AND_METADATA, UDECX_USB_ENDPOINT_INIT_AND_METADATA"
-req.product : Windows 10 or later.
+UID: NC:udecxusbendpoint.EVT_UDECX_USB_ENDPOINT_RESET
+title: EVT_UDECX_USB_ENDPOINT_RESET
+author: windows-driver-content
+description: The USB device emulation class extension (UdeCx) invokes this callback function to reset an endpoint of the virtual USB device.
+old-location: buses\evt_udecx_usb_endpoint_reset.htm
+old-project: usbref
+ms.assetid: 4220509B-A378-47F4-8E71-0290EDED89EB
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: buses.evt_udecx_usb_endpoint_reset, EvtUsbEndpointReset callback function [Buses], EvtUsbEndpointReset, EVT_UDECX_USB_ENDPOINT_RESET, EVT_UDECX_USB_ENDPOINT_RESET, udecxusbendpoint/EvtUsbEndpointReset
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: udecxusbendpoint.h
+req.include-header: Udecx.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 1.15
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	UdecxUsbEndpoint.h
+apiname:
+-	EvtUsbEndpointReset
+product: Windows
+targetos: Windows
+req.typenames: "*PUDECX_USB_ENDPOINT_INIT_AND_METADATA, UDECX_USB_ENDPOINT_INIT_AND_METADATA"
+req.product: Windows 10 or later.
 ---
 
 

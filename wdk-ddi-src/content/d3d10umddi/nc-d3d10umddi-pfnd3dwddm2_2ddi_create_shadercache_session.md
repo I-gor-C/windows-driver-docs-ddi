@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3DWDDM2_2DDI_CREATE_SHADERCACHE_SESSION
-title : PFND3DWDDM2_2DDI_CREATE_SHADERCACHE_SESSION
-author : windows-driver-content
-description : The pfnCreateShaderCacheSession callback function creates a shader cache session.
-old-location : display\pfnd3dwddm2_2ddi_create_shadercache_session.htm
-old-project : display
-ms.assetid : 14B3AB7A-DB27-412F-9578-5BA44628ECE7
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.pfnd3dwddm2_2ddi_create_shadercache_session, pfnCreateShaderCacheSession callback function [Display Devices], pfnCreateShaderCacheSession, PFND3DWDDM2_2DDI_CREATE_SHADERCACHE_SESSION, PFND3DWDDM2_2DDI_CREATE_SHADERCACHE_SESSION, d3d10umddi/pfnCreateShaderCacheSession
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d12umddi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3DWDDM2_2DDI_CREATE_SHADERCACHE_SESSION
+title: PFND3DWDDM2_2DDI_CREATE_SHADERCACHE_SESSION
+author: windows-driver-content
+description: The pfnCreateShaderCacheSession callback function creates a shader cache session.
+old-location: display\pfnd3dwddm2_2ddi_create_shadercache_session.htm
+old-project: display
+ms.assetid: 14B3AB7A-DB27-412F-9578-5BA44628ECE7
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.pfnd3dwddm2_2ddi_create_shadercache_session, pfnCreateShaderCacheSession callback function [Display Devices], pfnCreateShaderCacheSession, PFND3DWDDM2_2DDI_CREATE_SHADERCACHE_SESSION, PFND3DWDDM2_2DDI_CREATE_SHADERCACHE_SESSION, d3d10umddi/pfnCreateShaderCacheSession
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d12umddi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	pfnCreateShaderCacheSession
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

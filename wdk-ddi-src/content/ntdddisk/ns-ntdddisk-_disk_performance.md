@@ -1,41 +1,46 @@
 ---
-UID : NS:ntdddisk._DISK_PERFORMANCE
-title : "_DISK_PERFORMANCE"
-author : windows-driver-content
-description : The DISK_PERFORMANCE structure is used in conjunction with the IOCTL_DISK_PERFORMANCE request to collect summary disk statistics for purposes of measuring disk performance.
-old-location : storage\disk_performance.htm
-old-project : storage
-ms.assetid : 34d954db-4220-4a3f-849c-f1164e6130f7
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : ntdddisk/DISK_PERFORMANCE, storage.disk_performance, PDISK_PERFORMANCE, _DISK_PERFORMANCE, DISK_PERFORMANCE, structs-disk_64493b27-dce7-4976-9519-c7324bd09b69.xml, ntdddisk/PDISK_PERFORMANCE, PDISK_PERFORMANCE structure pointer [Storage Devices], DISK_PERFORMANCE structure [Storage Devices], *PDISK_PERFORMANCE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntdddisk.h
-req.include-header : Ntdddisk.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDISK_PERFORMANCE, DISK_PERFORMANCE"
+UID: NS:ntdddisk._DISK_PERFORMANCE
+title: "_DISK_PERFORMANCE"
+author: windows-driver-content
+description: The DISK_PERFORMANCE structure is used in conjunction with the IOCTL_DISK_PERFORMANCE request to collect summary disk statistics for purposes of measuring disk performance.
+old-location: storage\disk_performance.htm
+old-project: storage
+ms.assetid: 34d954db-4220-4a3f-849c-f1164e6130f7
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: ntdddisk/DISK_PERFORMANCE, storage.disk_performance, PDISK_PERFORMANCE, _DISK_PERFORMANCE, DISK_PERFORMANCE, structs-disk_64493b27-dce7-4976-9519-c7324bd09b69.xml, ntdddisk/PDISK_PERFORMANCE, PDISK_PERFORMANCE structure pointer [Storage Devices], DISK_PERFORMANCE structure [Storage Devices], *PDISK_PERFORMANCE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntdddisk.h
+req.include-header: Ntdddisk.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntdddisk.h
+apiname:
+-	DISK_PERFORMANCE
+product: Windows
+targetos: Windows
+req.typenames: "*PDISK_PERFORMANCE, DISK_PERFORMANCE"
 ---
 
 # _DISK_PERFORMANCE structure

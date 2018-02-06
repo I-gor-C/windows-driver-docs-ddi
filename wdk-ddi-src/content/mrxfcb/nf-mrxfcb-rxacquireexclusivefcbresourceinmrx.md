@@ -1,41 +1,46 @@
 ---
-UID : NF:mrxfcb.RxAcquireExclusiveFcbResourceInMRx
-title : RxAcquireExclusiveFcbResourceInMRx function
-author : windows-driver-content
-description : RxAcquireExclusiveFcbResourceInMRx acquires the FCB resource for a network mini-redirector driver in exclusive mode.
-old-location : ifsk\rxacquireexclusivefcbresourceinmrx.htm
-old-project : ifsk
-ms.assetid : 417c3ffd-5c40-430d-9aec-169203dba685
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : RxAcquireExclusiveFcbResourceInMRx routine [Installable File System Drivers], rxref_54a3508a-7d99-487a-9363-a13500540230.xml, ifsk.rxacquireexclusivefcbresourceinmrx, RxAcquireExclusiveFcbResourceInMRx, mrxfcb/RxAcquireExclusiveFcbResourceInMRx
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : mrxfcb.h
-req.include-header : Mrxfcb.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SetDSMCounters_IN, *PSetDSMCounters_IN
+UID: NF:mrxfcb.RxAcquireExclusiveFcbResourceInMRx
+title: RxAcquireExclusiveFcbResourceInMRx function
+author: windows-driver-content
+description: RxAcquireExclusiveFcbResourceInMRx acquires the FCB resource for a network mini-redirector driver in exclusive mode.
+old-location: ifsk\rxacquireexclusivefcbresourceinmrx.htm
+old-project: ifsk
+ms.assetid: 417c3ffd-5c40-430d-9aec-169203dba685
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: RxAcquireExclusiveFcbResourceInMRx routine [Installable File System Drivers], rxref_54a3508a-7d99-487a-9363-a13500540230.xml, ifsk.rxacquireexclusivefcbresourceinmrx, RxAcquireExclusiveFcbResourceInMRx, mrxfcb/RxAcquireExclusiveFcbResourceInMRx
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: mrxfcb.h
+req.include-header: Mrxfcb.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	mrxfcb.h
+apiname:
+-	RxAcquireExclusiveFcbResourceInMRx
+product: Windows
+targetos: Windows
+req.typenames: SetDSMCounters_IN, *PSetDSMCounters_IN
 ---
 
 

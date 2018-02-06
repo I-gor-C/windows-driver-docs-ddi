@@ -1,41 +1,46 @@
 ---
-UID : NS:pep_x._PEP_COMPONENT_ACTIVE
-title : "_PEP_COMPONENT_ACTIVE"
-author : windows-driver-content
-description : The PEP_COMPONENT_ACTIVE structure identifies a component that is making a transition between the idle condition and the active condition.
-old-location : kernel\pep_component_active.htm
-old-project : kernel
-ms.assetid : 58C2FFFC-2EAC-406B-943A-491AF3538F78
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : "_PEP_COMPONENT_ACTIVE, PEP_COMPONENT_ACTIVE structure [Kernel-Mode Driver Architecture], *PPEP_COMPONENT_ACTIVE, pep_x/PPEP_COMPONENT_ACTIVE, PEP_COMPONENT_ACTIVE, kernel.pep_component_active, PPEP_COMPONENT_ACTIVE structure pointer [Kernel-Mode Driver Architecture], pep_x/PEP_COMPONENT_ACTIVE, PPEP_COMPONENT_ACTIVE"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : pep_x.h
-req.include-header : Pepfx.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with Windows 10.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPEP_COMPONENT_ACTIVE, PEP_COMPONENT_ACTIVE"
+UID: NS:pep_x._PEP_COMPONENT_ACTIVE
+title: "_PEP_COMPONENT_ACTIVE"
+author: windows-driver-content
+description: The PEP_COMPONENT_ACTIVE structure identifies a component that is making a transition between the idle condition and the active condition.
+old-location: kernel\pep_component_active.htm
+old-project: kernel
+ms.assetid: 58C2FFFC-2EAC-406B-943A-491AF3538F78
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: "_PEP_COMPONENT_ACTIVE, PEP_COMPONENT_ACTIVE structure [Kernel-Mode Driver Architecture], *PPEP_COMPONENT_ACTIVE, pep_x/PPEP_COMPONENT_ACTIVE, PEP_COMPONENT_ACTIVE, kernel.pep_component_active, PPEP_COMPONENT_ACTIVE structure pointer [Kernel-Mode Driver Architecture], pep_x/PEP_COMPONENT_ACTIVE, PPEP_COMPONENT_ACTIVE"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: pep_x.h
+req.include-header: Pepfx.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows 10.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	pep_x.h
+apiname:
+-	PEP_COMPONENT_ACTIVE
+product: Windows
+targetos: Windows
+req.typenames: "*PPEP_COMPONENT_ACTIVE, PEP_COMPONENT_ACTIVE"
 ---
 
 # _PEP_COMPONENT_ACTIVE structure

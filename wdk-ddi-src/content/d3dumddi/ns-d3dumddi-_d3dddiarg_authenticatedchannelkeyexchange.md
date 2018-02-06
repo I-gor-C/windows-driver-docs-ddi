@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._D3DDDIARG_AUTHENTICATEDCHANNELKEYEXCHANGE
-title : "_D3DDDIARG_AUTHENTICATEDCHANNELKEYEXCHANGE"
-author : windows-driver-content
-description : The D3DDDIARG_AUTHENTICATEDCHANNELKEYEXCHANGE structure describes a buffer that contains the session key, which the authenticated channel uses.
-old-location : display\d3dddiarg_authenticatedchannelkeyexchange.htm
-old-project : display
-ms.assetid : 99a86339-62ce-48fd-a1f4-5c3061e624b5
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DDDIARG_AUTHENTICATEDCHANNELKEYEXCHANGE structure [Display Devices], _D3DDDIARG_AUTHENTICATEDCHANNELKEYEXCHANGE, UMDisplayDriver_param_Structs_2b02df7d-1bae-446f-b52a-0a9353114504.xml, d3dumddi/D3DDDIARG_AUTHENTICATEDCHANNELKEYEXCHANGE, display.d3dddiarg_authenticatedchannelkeyexchange, D3DDDIARG_AUTHENTICATEDCHANNELKEYEXCHANGE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : D3DDDIARG_AUTHENTICATEDCHANNELKEYEXCHANGE is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDIARG_AUTHENTICATEDCHANNELKEYEXCHANGE
+UID: NS:d3dumddi._D3DDDIARG_AUTHENTICATEDCHANNELKEYEXCHANGE
+title: "_D3DDDIARG_AUTHENTICATEDCHANNELKEYEXCHANGE"
+author: windows-driver-content
+description: The D3DDDIARG_AUTHENTICATEDCHANNELKEYEXCHANGE structure describes a buffer that contains the session key, which the authenticated channel uses.
+old-location: display\d3dddiarg_authenticatedchannelkeyexchange.htm
+old-project: display
+ms.assetid: 99a86339-62ce-48fd-a1f4-5c3061e624b5
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DDDIARG_AUTHENTICATEDCHANNELKEYEXCHANGE structure [Display Devices], _D3DDDIARG_AUTHENTICATEDCHANNELKEYEXCHANGE, UMDisplayDriver_param_Structs_2b02df7d-1bae-446f-b52a-0a9353114504.xml, d3dumddi/D3DDDIARG_AUTHENTICATEDCHANNELKEYEXCHANGE, display.d3dddiarg_authenticatedchannelkeyexchange, D3DDDIARG_AUTHENTICATEDCHANNELKEYEXCHANGE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: D3DDDIARG_AUTHENTICATEDCHANNELKEYEXCHANGE is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	D3DDDIARG_AUTHENTICATEDCHANNELKEYEXCHANGE
+product: Windows
+targetos: Windows
+req.typenames: D3DDDIARG_AUTHENTICATEDCHANNELKEYEXCHANGE
 ---
 
 # _D3DDDIARG_AUTHENTICATEDCHANNELKEYEXCHANGE structure

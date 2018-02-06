@@ -1,41 +1,46 @@
 ---
-UID : NS:d3d10umddi.D3D10_1DDI_DEVICEFUNCS
-title : D3D10_1DDI_DEVICEFUNCS
-author : windows-driver-content
-description : The D3D10_1DDI_DEVICEFUNCS structure contains functions that a user-mode display driver that is optimized for the Microsoft Direct3D version 10.1 runtime can implement to render graphics primitives and process state changes.
-old-location : display\d3d10_1ddi_devicefuncs.htm
-old-project : display
-ms.assetid : 6de52d56-deca-4623-81a7-a043b8a85dc5
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3d10umddi/D3D10_1DDI_DEVICEFUNCS, D3D10_1DDI_DEVICEFUNCS structure [Display Devices], D3D10_1DDI_DEVICEFUNCS, UMDisplayDriver_Dx10param_Structs_5790b9b0-0f52-4018-bdf7-edd33f423364.xml, display.d3d10_1ddi_devicefuncs
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Windows
-req.target-min-winverclnt : D3D10_1DDI_DEVICEFUNCS is supported on Windows Vista with Service Pack 1 (SP1) and later versions and Windows Server 2008 and later versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3D10_1DDI_DEVICEFUNCS
+UID: NS:d3d10umddi.D3D10_1DDI_DEVICEFUNCS
+title: D3D10_1DDI_DEVICEFUNCS
+author: windows-driver-content
+description: The D3D10_1DDI_DEVICEFUNCS structure contains functions that a user-mode display driver that is optimized for the Microsoft Direct3D version 10.1 runtime can implement to render graphics primitives and process state changes.
+old-location: display\d3d10_1ddi_devicefuncs.htm
+old-project: display
+ms.assetid: 6de52d56-deca-4623-81a7-a043b8a85dc5
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3d10umddi/D3D10_1DDI_DEVICEFUNCS, D3D10_1DDI_DEVICEFUNCS structure [Display Devices], D3D10_1DDI_DEVICEFUNCS, UMDisplayDriver_Dx10param_Structs_5790b9b0-0f52-4018-bdf7-edd33f423364.xml, display.d3d10_1ddi_devicefuncs
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Windows
+req.target-min-winverclnt: D3D10_1DDI_DEVICEFUNCS is supported on Windows Vista with Service Pack 1 (SP1) and later versions and Windows Server 2008 and later versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	D3D10_1DDI_DEVICEFUNCS
+product: Windows
+targetos: Windows
+req.typenames: D3D10_1DDI_DEVICEFUNCS
 ---
 
 # D3D10_1DDI_DEVICEFUNCS structure

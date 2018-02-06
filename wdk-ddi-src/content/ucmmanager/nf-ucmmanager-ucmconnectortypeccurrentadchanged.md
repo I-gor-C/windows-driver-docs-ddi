@@ -1,42 +1,48 @@
 ---
-UID : NF:ucmmanager.UcmConnectorTypeCCurrentAdChanged
-title : UcmConnectorTypeCCurrentAdChanged function
-author : windows-driver-content
-description : Notifies the USB connector manager framework extension (UcmCx) when the specified connector changes the current advertisement. Either the connector changes it (when it is DFP/Source), or the partner changed it (when it is UFP/Sink).
-old-location : buses\ucmconnectortypeccurrentadchanged.htm
-old-project : usbref
-ms.assetid : 26C4D840-2287-4DC2-B039-FD8D2FB92288
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : UcmConnectorTypeCCurrentAdChanged, UcmConnectorTypeCCurrentAdChanged method [Buses], ucmmanager/UcmConnectorTypeCCurrentAdChanged, buses.ucmconnectortypeccurrentadchanged
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ucmmanager.h
-req.include-header : Ucmcx.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 1.15
-req.umdf-ver : 2.15
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : UcmCxstub.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPORT_DATA_1, PORT_DATA_1"
-req.product : Windows 10 or later.
+UID: NF:ucmmanager.UcmConnectorTypeCCurrentAdChanged
+title: UcmConnectorTypeCCurrentAdChanged function
+author: windows-driver-content
+description: Notifies the USB connector manager framework extension (UcmCx) when the specified connector changes the current advertisement. Either the connector changes it (when it is DFP/Source), or the partner changed it (when it is UFP/Sink).
+old-location: buses\ucmconnectortypeccurrentadchanged.htm
+old-project: usbref
+ms.assetid: 26C4D840-2287-4DC2-B039-FD8D2FB92288
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: UcmConnectorTypeCCurrentAdChanged, UcmConnectorTypeCCurrentAdChanged method [Buses], ucmmanager/UcmConnectorTypeCCurrentAdChanged, buses.ucmconnectortypeccurrentadchanged
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ucmmanager.h
+req.include-header: Ucmcx.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 1.15
+req.umdf-ver: 2.15
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: UcmCxstub.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	UcmCxstub.lib
+-	UcmCxstub.dll
+apiname:
+-	UcmConnectorTypeCCurrentAdChanged
+product: Windows
+targetos: Windows
+req.typenames: "*PPORT_DATA_1, PORT_DATA_1"
+req.product: Windows 10 or later.
 ---
 
 

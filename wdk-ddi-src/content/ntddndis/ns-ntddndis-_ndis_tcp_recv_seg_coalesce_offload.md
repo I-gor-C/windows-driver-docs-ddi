@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddndis._NDIS_TCP_RECV_SEG_COALESCE_OFFLOAD
-title : "_NDIS_TCP_RECV_SEG_COALESCE_OFFLOAD"
-author : windows-driver-content
-description : The NDIS_TCP_RECV_SEG_COALESCE_OFFLOAD structure contains the offload support state for receive segment coalescing (RSC).
-old-location : netvista\ndis_tcp_recv_seg_coalesce_offload.htm
-old-project : netvista
-ms.assetid : F474ABFA-D811-4C03-868A-E7C23BAE2017
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NDIS_TCP_RECV_SEG_COALESCE_OFFLOAD structure [Network Drivers Starting with Windows Vista], PNDIS_TCP_RECV_SEG_COALESCE_OFFLOAD structure pointer [Network Drivers Starting with Windows Vista], ntddndis/PNDIS_TCP_RECV_SEG_COALESCE_OFFLOAD, NDIS_TCP_RECV_SEG_COALESCE_OFFLOAD, PNDIS_TCP_RECV_SEG_COALESCE_OFFLOAD, *PNDIS_TCP_RECV_SEG_COALESCE_OFFLOAD, _NDIS_TCP_RECV_SEG_COALESCE_OFFLOAD, netvista.ndis_tcp_recv_seg_coalesce_offload, ntddndis/NDIS_TCP_RECV_SEG_COALESCE_OFFLOAD
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.30 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_TCP_RECV_SEG_COALESCE_OFFLOAD, *PNDIS_TCP_RECV_SEG_COALESCE_OFFLOAD
+UID: NS:ntddndis._NDIS_TCP_RECV_SEG_COALESCE_OFFLOAD
+title: "_NDIS_TCP_RECV_SEG_COALESCE_OFFLOAD"
+author: windows-driver-content
+description: The NDIS_TCP_RECV_SEG_COALESCE_OFFLOAD structure contains the offload support state for receive segment coalescing (RSC).
+old-location: netvista\ndis_tcp_recv_seg_coalesce_offload.htm
+old-project: netvista
+ms.assetid: F474ABFA-D811-4C03-868A-E7C23BAE2017
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NDIS_TCP_RECV_SEG_COALESCE_OFFLOAD structure [Network Drivers Starting with Windows Vista], PNDIS_TCP_RECV_SEG_COALESCE_OFFLOAD structure pointer [Network Drivers Starting with Windows Vista], ntddndis/PNDIS_TCP_RECV_SEG_COALESCE_OFFLOAD, NDIS_TCP_RECV_SEG_COALESCE_OFFLOAD, PNDIS_TCP_RECV_SEG_COALESCE_OFFLOAD, *PNDIS_TCP_RECV_SEG_COALESCE_OFFLOAD, _NDIS_TCP_RECV_SEG_COALESCE_OFFLOAD, netvista.ndis_tcp_recv_seg_coalesce_offload, ntddndis/NDIS_TCP_RECV_SEG_COALESCE_OFFLOAD
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.30 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddndis.h
+apiname:
+-	NDIS_TCP_RECV_SEG_COALESCE_OFFLOAD
+product: Windows
+targetos: Windows
+req.typenames: NDIS_TCP_RECV_SEG_COALESCE_OFFLOAD, *PNDIS_TCP_RECV_SEG_COALESCE_OFFLOAD
 ---
 
 # _NDIS_TCP_RECV_SEG_COALESCE_OFFLOAD structure

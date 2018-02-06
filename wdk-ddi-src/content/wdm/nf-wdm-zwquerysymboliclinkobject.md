@@ -1,42 +1,48 @@
 ---
-UID : NF:wdm.ZwQuerySymbolicLinkObject
-title : ZwQuerySymbolicLinkObject function
-author : windows-driver-content
-description : The ZwQuerySymbolicLinkObject routine returns a Unicode string that contains the target of a symbolic link.
-old-location : kernel\zwquerysymboliclinkobject.htm
-old-project : kernel
-ms.assetid : 0294c840-2912-4137-886f-832e9f21bbea
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/ZwQuerySymbolicLinkObject, wdm/NtQuerySymbolicLinkObject, ZwQuerySymbolicLinkObject routine [Kernel-Mode Driver Architecture], ZwQuerySymbolicLinkObject, NtQuerySymbolicLinkObject, kernel.zwquerysymboliclinkobject, k111_0909b6b6-fa4d-421f-b17f-8201a254990b.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 2000 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ZwQuerySymbolicLinkObject
+title: ZwQuerySymbolicLinkObject function
+author: windows-driver-content
+description: The ZwQuerySymbolicLinkObject routine returns a Unicode string that contains the target of a symbolic link.
+old-location: kernel\zwquerysymboliclinkobject.htm
+old-project: kernel
+ms.assetid: 0294c840-2912-4137-886f-832e9f21bbea
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/ZwQuerySymbolicLinkObject, wdm/NtQuerySymbolicLinkObject, ZwQuerySymbolicLinkObject routine [Kernel-Mode Driver Architecture], ZwQuerySymbolicLinkObject, NtQuerySymbolicLinkObject, kernel.zwquerysymboliclinkobject, k111_0909b6b6-fa4d-421f-b17f-8201a254990b.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 2000 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ZwQuerySymbolicLinkObject
+-	NtQuerySymbolicLinkObject
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

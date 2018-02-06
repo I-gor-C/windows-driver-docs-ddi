@@ -1,42 +1,47 @@
 ---
-UID : NN:wudfddi.IPnpCallbackHardwareInterrupt
-title : IPnpCallbackHardwareInterrupt
-author : windows-driver-content
-description : The IPnpCallbackHardwareInterrupt interface supports interrupt-related Plug and Play and power management callback methods.
-old-location : wdf\ipnpcallbackhardwareinterrupt.htm
-old-project : wdf
-ms.assetid : C66A570A-EEAF-4D18-A834-B50576F51E29
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.ipnpcallbackhardwareinterrupt, IPnpCallbackHardwareInterrupt interface, IPnpCallbackHardwareInterrupt interface, described, IPnpCallbackHardwareInterrupt, wudfddi/IPnpCallbackHardwareInterrupt, umdf.ipnpcallbackhardwareinterrupt
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : wudfddi.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.11
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NN:wudfddi.IPnpCallbackHardwareInterrupt
+title: IPnpCallbackHardwareInterrupt
+author: windows-driver-content
+description: The IPnpCallbackHardwareInterrupt interface supports interrupt-related Plug and Play and power management callback methods.
+old-location: wdf\ipnpcallbackhardwareinterrupt.htm
+old-project: wdf
+ms.assetid: C66A570A-EEAF-4D18-A834-B50576F51E29
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.ipnpcallbackhardwareinterrupt, IPnpCallbackHardwareInterrupt interface, IPnpCallbackHardwareInterrupt interface, described, IPnpCallbackHardwareInterrupt, wudfddi/IPnpCallbackHardwareInterrupt, umdf.ipnpcallbackhardwareinterrupt
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: wudfddi.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.11
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Wudfddi.h
+apiname:
+-	IPnpCallbackHardwareInterrupt
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 # IPnpCallbackHardwareInterrupt interface

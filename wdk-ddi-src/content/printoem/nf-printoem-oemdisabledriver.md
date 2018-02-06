@@ -1,42 +1,47 @@
 ---
-UID : NF:printoem.OEMDisableDriver
-title : OEMDisableDriver function
-author : windows-driver-content
-description : OEMDisableDriver function
-old-location : print\oemdisabledriver.htm
-old-project : print
-ms.assetid : 9b48e2c0-bd44-49ed-83e8-1e4895858e9b
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : OEMDisableDriver function [Print Devices], OEMDisableDriver, print_obsoletefunctions_b9594259-f9e5-43bf-b2dd-18ace2ddc25c.xml, print.oemdisabledriver, printoem/OEMDisableDriver
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : printoem.h
-req.include-header : Printoem.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STDVARIABLEINDEX
-req.product : Windows 10 or later.
+UID: NF:printoem.OEMDisableDriver
+title: OEMDisableDriver function
+author: windows-driver-content
+description: OEMDisableDriver function
+old-location: print\oemdisabledriver.htm
+old-project: print
+ms.assetid: 9b48e2c0-bd44-49ed-83e8-1e4895858e9b
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: OEMDisableDriver function [Print Devices], OEMDisableDriver, print_obsoletefunctions_b9594259-f9e5-43bf-b2dd-18ace2ddc25c.xml, print.oemdisabledriver, printoem/OEMDisableDriver
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: printoem.h
+req.include-header: Printoem.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	printoem.h
+apiname:
+-	OEMDisableDriver
+product: Windows
+targetos: Windows
+req.typenames: STDVARIABLEINDEX
+req.product: Windows 10 or later.
 ---
 
 

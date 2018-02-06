@@ -1,41 +1,46 @@
 ---
-UID : NF:ntddk.KePulseEvent
-title : KePulseEvent function
-author : windows-driver-content
-description : The KePulseEvent routine atomically sets an event object to a signaled state, attempts to satisfy as many waits as possible, and then resets the event object to a not-signaled state.
-old-location : kernel\kepulseevent.htm
-old-project : kernel
-ms.assetid : 57505700-9775-4dac-a106-951da0744631
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : k105_86079f76-4593-4ef2-ab1b-6f4c3ba17142.xml, KePulseEvent, ntddk/KePulseEvent, KePulseEvent routine [Kernel-Mode Driver Architecture], kernel.kepulseevent
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : IrqlKeDispatchLte, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.KePulseEvent
+title: KePulseEvent function
+author: windows-driver-content
+description: The KePulseEvent routine atomically sets an event object to a signaled state, attempts to satisfy as many waits as possible, and then resets the event object to a not-signaled state.
+old-location: kernel\kepulseevent.htm
+old-project: kernel
+ms.assetid: 57505700-9775-4dac-a106-951da0744631
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: k105_86079f76-4593-4ef2-ab1b-6f4c3ba17142.xml, KePulseEvent, ntddk/KePulseEvent, KePulseEvent routine [Kernel-Mode Driver Architecture], kernel.kepulseevent
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: IrqlKeDispatchLte, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	KePulseEvent
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

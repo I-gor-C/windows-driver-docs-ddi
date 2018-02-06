@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IFileCallbackClose.OnCloseFile
-title : IFileCallbackClose::OnCloseFile method
-author : windows-driver-content
-description : The OnCloseFile method is called when the last reference count on a file object goes down to zero and before the file object is released.
-old-location : wdf\ifilecallbackclose_onclosefile.htm
-old-project : wdf
-ms.assetid : ca3bd7af-b270-497e-a90a-6d79ce66d968
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : IFileCallbackClose::OnCloseFile, OnCloseFile method, IFileCallbackClose interface, OnCloseFile method, wdf.ifilecallbackclose_onclosefile, IFileCallbackClose interface, OnCloseFile method, UMDFFileObjectRef_8aa60206-80e0-4c49-b2fd-c79f5e703c18.xml, IFileCallbackClose, OnCloseFile, umdf.ifilecallbackclose_onclosefile, wudfddi/IFileCallbackClose::OnCloseFile
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IFileCallbackClose.OnCloseFile
+title: IFileCallbackClose::OnCloseFile method
+author: windows-driver-content
+description: The OnCloseFile method is called when the last reference count on a file object goes down to zero and before the file object is released.
+old-location: wdf\ifilecallbackclose_onclosefile.htm
+old-project: wdf
+ms.assetid: ca3bd7af-b270-497e-a90a-6d79ce66d968
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: IFileCallbackClose::OnCloseFile, OnCloseFile method, IFileCallbackClose interface, OnCloseFile method, wdf.ifilecallbackclose_onclosefile, IFileCallbackClose interface, OnCloseFile method, UMDFFileObjectRef_8aa60206-80e0-4c49-b2fd-c79f5e703c18.xml, IFileCallbackClose, OnCloseFile, umdf.ifilecallbackclose_onclosefile, wudfddi/IFileCallbackClose::OnCloseFile
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Wudfddi.h
+apiname:
+-	IFileCallbackClose.OnCloseFile
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

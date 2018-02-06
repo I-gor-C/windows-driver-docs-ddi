@@ -1,42 +1,47 @@
 ---
-UID : NF:winddiui.DrvPrinterEvent
-title : DrvPrinterEvent function
-author : windows-driver-content
-description : A printer interface DLL's DrvPrinterEvent function is called by the print spooler when processing printer-specific events that might require action by the printer driver.
-old-location : print\drvprinterevent.htm
-old-project : print
-ms.assetid : 7566f92d-0e25-44bf-a2b3-587bb11a7d03
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : DrvPrinterEvent, print_interface-graphics_5bfc5cb2-1835-4659-afa7-7b3bbb7ee051.xml, winddiui/DrvPrinterEvent, print.drvprinterevent, DrvPrinterEvent function [Print Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : winddiui.h
-req.include-header : Winddiui.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WINBIO_VERSION, *PWINBIO_VERSION
-req.product : Windows 10 or later.
+UID: NF:winddiui.DrvPrinterEvent
+title: DrvPrinterEvent function
+author: windows-driver-content
+description: A printer interface DLL's DrvPrinterEvent function is called by the print spooler when processing printer-specific events that might require action by the printer driver.
+old-location: print\drvprinterevent.htm
+old-project: print
+ms.assetid: 7566f92d-0e25-44bf-a2b3-587bb11a7d03
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: DrvPrinterEvent, print_interface-graphics_5bfc5cb2-1835-4659-afa7-7b3bbb7ee051.xml, winddiui/DrvPrinterEvent, print.drvprinterevent, DrvPrinterEvent function [Print Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: winddiui.h
+req.include-header: Winddiui.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	winddiui.h
+apiname:
+-	DrvPrinterEvent
+product: Windows
+targetos: Windows
+req.typenames: WINBIO_VERSION, *PWINBIO_VERSION
+req.product: Windows 10 or later.
 ---
 
 

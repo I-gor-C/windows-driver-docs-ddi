@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dkmddi.DXGKDDI_MONITORSOURCEMODESET_ADDMODE
-title : DXGKDDI_MONITORSOURCEMODESET_ADDMODE
-author : windows-driver-content
-description : The pfnAddMode function adds a monitor source mode to a specified monitor source mode set object.
-old-location : display\dxgk_monitorsourcemodeset_interface_pfnaddmode.htm
-old-project : display
-ms.assetid : 88fe5a2d-d140-4ebc-846d-acea39b8bc73
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgk_monitorsourcemodeset_interface_pfnaddmode, pfnAddMode callback function [Display Devices], pfnAddMode, DXGKDDI_MONITORSOURCEMODESET_ADDMODE, DXGKDDI_MONITORSOURCEMODESET_ADDMODE, d3dkmddi/pfnAddMode, VidPnFunctions_1b037d93-a615-41e1-bc22-bf9565050062.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
+UID: NC:d3dkmddi.DXGKDDI_MONITORSOURCEMODESET_ADDMODE
+title: DXGKDDI_MONITORSOURCEMODESET_ADDMODE
+author: windows-driver-content
+description: The pfnAddMode function adds a monitor source mode to a specified monitor source mode set object.
+old-location: display\dxgk_monitorsourcemodeset_interface_pfnaddmode.htm
+old-project: display
+ms.assetid: 88fe5a2d-d140-4ebc-846d-acea39b8bc73
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgk_monitorsourcemodeset_interface_pfnaddmode, pfnAddMode callback function [Display Devices], pfnAddMode, DXGKDDI_MONITORSOURCEMODESET_ADDMODE, DXGKDDI_MONITORSOURCEMODESET_ADDMODE, d3dkmddi/pfnAddMode, VidPnFunctions_1b037d93-a615-41e1-bc22-bf9565050062.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	pfnAddMode
+product: Windows
+targetos: Windows
+req.typenames: DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
 

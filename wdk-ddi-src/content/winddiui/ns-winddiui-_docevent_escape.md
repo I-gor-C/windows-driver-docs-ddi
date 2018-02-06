@@ -1,42 +1,47 @@
 ---
-UID : NS:winddiui._DOCEVENT_ESCAPE
-title : "_DOCEVENT_ESCAPE"
-author : windows-driver-content
-description : The DOCEVENT_ESCAPE structure is a container for values used as parameters for the ExtEscape function.
-old-location : print\docevent_escape.htm
-old-project : print
-ms.assetid : 54ac7c45-63a1-4003-8250-524e6f9e8d06
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : print_interface-graphics_943033df-71a2-4689-a9fb-abd9feb4ea0d.xml, DOCEVENT_ESCAPE structure [Print Devices], winddiui/DOCEVENT_ESCAPE, _DOCEVENT_ESCAPE, print.docevent_escape, *PDOCEVENT_ESCAPE, PDOCEVENT_ESCAPE structure pointer [Print Devices], winddiui/PDOCEVENT_ESCAPE, DOCEVENT_ESCAPE, PDOCEVENT_ESCAPE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : winddiui.h
-req.include-header : Winddiui.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDOCEVENT_ESCAPE, DOCEVENT_ESCAPE"
-req.product : Windows 10 or later.
+UID: NS:winddiui._DOCEVENT_ESCAPE
+title: "_DOCEVENT_ESCAPE"
+author: windows-driver-content
+description: The DOCEVENT_ESCAPE structure is a container for values used as parameters for the ExtEscape function.
+old-location: print\docevent_escape.htm
+old-project: print
+ms.assetid: 54ac7c45-63a1-4003-8250-524e6f9e8d06
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: print_interface-graphics_943033df-71a2-4689-a9fb-abd9feb4ea0d.xml, DOCEVENT_ESCAPE structure [Print Devices], winddiui/DOCEVENT_ESCAPE, _DOCEVENT_ESCAPE, print.docevent_escape, *PDOCEVENT_ESCAPE, PDOCEVENT_ESCAPE structure pointer [Print Devices], winddiui/PDOCEVENT_ESCAPE, DOCEVENT_ESCAPE, PDOCEVENT_ESCAPE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: winddiui.h
+req.include-header: Winddiui.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	winddiui.h
+apiname:
+-	DOCEVENT_ESCAPE
+product: Windows
+targetos: Windows
+req.typenames: "*PDOCEVENT_ESCAPE, DOCEVENT_ESCAPE"
+req.product: Windows 10 or later.
 ---
 
 # _DOCEVENT_ESCAPE structure

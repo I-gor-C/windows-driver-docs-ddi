@@ -1,41 +1,46 @@
 ---
-UID : NC:dispmprt.DXGKDDI_NOTIFY_ACPI_EVENT
-title : DXGKDDI_NOTIFY_ACPI_EVENT
-author : windows-driver-content
-description : Notifies the display miniport driver about certain ACPI events.
-old-location : display\dxgkddinotifyacpievent.htm
-old-project : display
-ms.assetid : fdefde51-0e90-4324-9c14-e8259fc872b3
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkddinotifyacpievent, DxgkDdiNotifyAcpiEvent callback function [Display Devices], DxgkDdiNotifyAcpiEvent, DXGKDDI_NOTIFY_ACPI_EVENT, DXGKDDI_NOTIFY_ACPI_EVENT, dispmprt/DxgkDdiNotifyAcpiEvent, DmFunctions_de0d32a9-a592-4fe2-86e1-66a436be5874.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : dispmprt.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
+UID: NC:dispmprt.DXGKDDI_NOTIFY_ACPI_EVENT
+title: DXGKDDI_NOTIFY_ACPI_EVENT
+author: windows-driver-content
+description: Notifies the display miniport driver about certain ACPI events.
+old-location: display\dxgkddinotifyacpievent.htm
+old-project: display
+ms.assetid: fdefde51-0e90-4324-9c14-e8259fc872b3
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkddinotifyacpievent, DxgkDdiNotifyAcpiEvent callback function [Display Devices], DxgkDdiNotifyAcpiEvent, DXGKDDI_NOTIFY_ACPI_EVENT, DXGKDDI_NOTIFY_ACPI_EVENT, dispmprt/DxgkDdiNotifyAcpiEvent, DmFunctions_de0d32a9-a592-4fe2-86e1-66a436be5874.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: dispmprt.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	dispmprt.h
+apiname:
+-	DxgkDdiNotifyAcpiEvent
+product: Windows
+targetos: Windows
+req.typenames: SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ---
 
 

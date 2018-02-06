@@ -1,41 +1,46 @@
 ---
-UID : NF:ks.KSMETHOD_SET_IRP_STORAGE
-title : KSMETHOD_SET_IRP_STORAGE macro
-author : windows-driver-content
-description : This macro returns a pointer to the KSMETHOD_SET in which the method is located.
-old-location : stream\ksmethod_set_irp_storage.htm
-old-project : stream
-ms.assetid : bc0a309d-305e-400a-b571-7958926dd1dc
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ks/KSMETHOD_SET_IRP_STORAGE, ksfunc_d413bf2a-7d63-48c2-9e75-d84cf1344f5c.xml, stream.ksmethod_set_irp_storage, KSMETHOD_SET_IRP_STORAGE macro [Streaming Media Devices], KSMETHOD_SET_IRP_STORAGE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : macro
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : ks.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KSMETHOD_SET_IRP_STORAGE
+title: KSMETHOD_SET_IRP_STORAGE macro
+author: windows-driver-content
+description: This macro returns a pointer to the KSMETHOD_SET in which the method is located.
+old-location: stream\ksmethod_set_irp_storage.htm
+old-project: stream
+ms.assetid: bc0a309d-305e-400a-b571-7958926dd1dc
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ks/KSMETHOD_SET_IRP_STORAGE, ksfunc_d413bf2a-7d63-48c2-9e75-d84cf1344f5c.xml, stream.ksmethod_set_irp_storage, KSMETHOD_SET_IRP_STORAGE macro [Streaming Media Devices], KSMETHOD_SET_IRP_STORAGE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: macro
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: ks.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	KSMETHOD_SET_IRP_STORAGE
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

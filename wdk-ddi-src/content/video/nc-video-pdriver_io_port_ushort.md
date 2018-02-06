@@ -1,42 +1,47 @@
 ---
-UID : NC:video.PDRIVER_IO_PORT_USHORT
-title : PDRIVER_IO_PORT_USHORT
-author : windows-driver-content
-description : SvgaHwIoPortUshort traps an I/O port range to which a full-screen MS-DOS application in an x86-based machine is sending a sequence of USHORT-sized data.
-old-location : display\svgahwioportushort.htm
-old-project : display
-ms.assetid : 304656b4-ebbe-4cb1-8735-2e03bec71f9f
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.svgahwioportushort, SvgaHwIoPortUshort callback function [Display Devices], SvgaHwIoPortUshort, PDRIVER_IO_PORT_USHORT, PDRIVER_IO_PORT_USHORT, video/SvgaHwIoPortUshort, VideoMiniport_Functions_756e549c-fadc-49ae-b356-c94893809e01.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VHF_CONFIG, *PVHF_CONFIG
-req.product : Windows 10 or later.
+UID: NC:video.PDRIVER_IO_PORT_USHORT
+title: PDRIVER_IO_PORT_USHORT
+author: windows-driver-content
+description: SvgaHwIoPortUshort traps an I/O port range to which a full-screen MS-DOS application in an x86-based machine is sending a sequence of USHORT-sized data.
+old-location: display\svgahwioportushort.htm
+old-project: display
+ms.assetid: 304656b4-ebbe-4cb1-8735-2e03bec71f9f
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.svgahwioportushort, SvgaHwIoPortUshort callback function [Display Devices], SvgaHwIoPortUshort, PDRIVER_IO_PORT_USHORT, PDRIVER_IO_PORT_USHORT, video/SvgaHwIoPortUshort, VideoMiniport_Functions_756e549c-fadc-49ae-b356-c94893809e01.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	video.h
+apiname:
+-	SvgaHwIoPortUshort
+product: Windows
+targetos: Windows
+req.typenames: VHF_CONFIG, *PVHF_CONFIG
+req.product: Windows 10 or later.
 ---
 
 

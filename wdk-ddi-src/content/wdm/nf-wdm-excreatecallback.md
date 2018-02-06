@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.ExCreateCallback
-title : ExCreateCallback function
-author : windows-driver-content
-description : The ExCreateCallback routine either creates a new callback object or opens an existing callback object on behalf of the caller.
-old-location : kernel\excreatecallback.htm
-old-project : kernel
-ms.assetid : a8532a6d-2b7f-4ed6-a2e4-6157d5e842ff
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.excreatecallback, wdm/ExCreateCallback, ExCreateCallback, k102_7c7f1024-8ae7-4925-91f3-add4fcb452b7.xml, ExCreateCallback routine [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : IrqlExPassive, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ExCreateCallback
+title: ExCreateCallback function
+author: windows-driver-content
+description: The ExCreateCallback routine either creates a new callback object or opens an existing callback object on behalf of the caller.
+old-location: kernel\excreatecallback.htm
+old-project: kernel
+ms.assetid: a8532a6d-2b7f-4ed6-a2e4-6157d5e842ff
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.excreatecallback, wdm/ExCreateCallback, ExCreateCallback, k102_7c7f1024-8ae7-4925-91f3-add4fcb452b7.xml, ExCreateCallback routine [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: IrqlExPassive, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ExCreateCallback
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

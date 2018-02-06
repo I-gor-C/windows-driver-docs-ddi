@@ -1,41 +1,46 @@
 ---
-UID : NC:dispmprt.DXGKCB_QUEUE_DPC
-title : DXGKCB_QUEUE_DPC
-author : windows-driver-content
-description : The DxgkCbQueueDpc function queues a deferred procedure call (DPC) for execution at IRQL DISPATCH_LEVEL.
-old-location : display\dxgkcbqueuedpc.htm
-old-project : display
-ms.assetid : c8c26675-8b87-4818-ad51-4e0a341965d0
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkcbqueuedpc, DxgkCbQueueDpc callback function [Display Devices], DxgkCbQueueDpc, DXGKCB_QUEUE_DPC, DXGKCB_QUEUE_DPC, dispmprt/DxgkCbQueueDpc, DpFunctions_0d1685f8-bd6f-45cc-a958-54330281a44f.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : dispmprt.h
-req.include-header : Dispmprt.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
+UID: NC:dispmprt.DXGKCB_QUEUE_DPC
+title: DXGKCB_QUEUE_DPC
+author: windows-driver-content
+description: The DxgkCbQueueDpc function queues a deferred procedure call (DPC) for execution at IRQL DISPATCH_LEVEL.
+old-location: display\dxgkcbqueuedpc.htm
+old-project: display
+ms.assetid: c8c26675-8b87-4818-ad51-4e0a341965d0
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkcbqueuedpc, DxgkCbQueueDpc callback function [Display Devices], DxgkCbQueueDpc, DXGKCB_QUEUE_DPC, DXGKCB_QUEUE_DPC, dispmprt/DxgkCbQueueDpc, DpFunctions_0d1685f8-bd6f-45cc-a958-54330281a44f.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: dispmprt.h
+req.include-header: Dispmprt.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	dispmprt.h
+apiname:
+-	DxgkCbQueueDpc
+product: Windows
+targetos: Windows
+req.typenames: SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ---
 
 

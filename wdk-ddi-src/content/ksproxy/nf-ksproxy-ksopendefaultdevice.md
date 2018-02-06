@@ -1,41 +1,47 @@
 ---
-UID : NF:ksproxy.KsOpenDefaultDevice
-title : KsOpenDefaultDevice function
-author : windows-driver-content
-description : The KsOpenDefaultDevice function opens a handle to the first device that is listed in the specified Plug and Play (PnP) category.
-old-location : stream\ksopendefaultdevice.htm
-old-project : stream
-ms.assetid : a017f0b7-8f4f-4797-96de-10137cb3443e
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ksproxy/KsOpenDefaultDevice, stream.ksopendefaultdevice, KsOpenDefaultDevice, KsOpenDefaultDevice function [Streaming Media Devices], ksproxy_9c80d462-baaa-497b-a337-5d42e94b9c3f.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ksproxy.h
-req.include-header : Ksproxy.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ksproxy.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PIPE_STATE
+UID: NF:ksproxy.KsOpenDefaultDevice
+title: KsOpenDefaultDevice function
+author: windows-driver-content
+description: The KsOpenDefaultDevice function opens a handle to the first device that is listed in the specified Plug and Play (PnP) category.
+old-location: stream\ksopendefaultdevice.htm
+old-project: stream
+ms.assetid: a017f0b7-8f4f-4797-96de-10137cb3443e
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ksproxy/KsOpenDefaultDevice, stream.ksopendefaultdevice, KsOpenDefaultDevice, KsOpenDefaultDevice function [Streaming Media Devices], ksproxy_9c80d462-baaa-497b-a337-5d42e94b9c3f.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ksproxy.h
+req.include-header: Ksproxy.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ksproxy.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ksproxy.lib
+-	Ksproxy.dll
+apiname:
+-	KsOpenDefaultDevice
+product: Windows
+targetos: Windows
+req.typenames: PIPE_STATE
 ---
 
 

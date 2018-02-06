@@ -1,41 +1,46 @@
 ---
-UID : NS:hbapiwmi._SendLIRR_OUT
-title : "_SendLIRR_OUT"
-author : windows-driver-content
-description : The SendLIRR_OUT structure is used to report the output parameter data of the SendLIRR WMI method to the WMI client.
-old-location : storage\sendlirr_out.htm
-old-project : storage
-ms.assetid : 842842c2-ed79-4c8a-b9c1-d73c47998f91
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : hbapiwmi/PSendLIRR_OUT, PSendLIRR_OUT, *PSendLIRR_OUT, SendLIRR_OUT structure [Storage Devices], hbapiwmi/SendLIRR_OUT, storage.sendlirr_out, SendLIRR_OUT, _SendLIRR_OUT, PSendLIRR_OUT structure pointer [Storage Devices], structs-Fibre_193ae454-313d-4ada-a161-39c403226edf.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : hbapiwmi.h
-req.include-header : Hbapiwmi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SendLIRR_OUT, *PSendLIRR_OUT
+UID: NS:hbapiwmi._SendLIRR_OUT
+title: "_SendLIRR_OUT"
+author: windows-driver-content
+description: The SendLIRR_OUT structure is used to report the output parameter data of the SendLIRR WMI method to the WMI client.
+old-location: storage\sendlirr_out.htm
+old-project: storage
+ms.assetid: 842842c2-ed79-4c8a-b9c1-d73c47998f91
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: hbapiwmi/PSendLIRR_OUT, PSendLIRR_OUT, *PSendLIRR_OUT, SendLIRR_OUT structure [Storage Devices], hbapiwmi/SendLIRR_OUT, storage.sendlirr_out, SendLIRR_OUT, _SendLIRR_OUT, PSendLIRR_OUT structure pointer [Storage Devices], structs-Fibre_193ae454-313d-4ada-a161-39c403226edf.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: hbapiwmi.h
+req.include-header: Hbapiwmi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hbapiwmi.h
+apiname:
+-	SendLIRR_OUT
+product: Windows
+targetos: Windows
+req.typenames: SendLIRR_OUT, *PSendLIRR_OUT
 ---
 
 # _SendLIRR_OUT structure

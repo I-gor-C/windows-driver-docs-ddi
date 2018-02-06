@@ -1,42 +1,47 @@
 ---
-UID : NC:udecxwdfdevice.EVT_UDECX_WDF_DEVICE_QUERY_USB_CAPABILITY
-title : EVT_UDECX_WDF_DEVICE_QUERY_USB_CAPABILITY
-author : windows-driver-content
-description : The UDE client driver's implementation to determine the capabilities that are supported by the emulated USB host controller.
-old-location : buses\evt_udecx_wdf_device_query_usb_capability.htm
-old-project : usbref
-ms.assetid : 96F3128C-C334-4531-9C86-3FA918A902AC
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : buses.evt_udecx_wdf_device_query_usb_capability, EvtUdecxWdfDeviceQueryUsbCapability callback function [Buses], EvtUdecxWdfDeviceQueryUsbCapability, EVT_UDECX_WDF_DEVICE_QUERY_USB_CAPABILITY, EVT_UDECX_WDF_DEVICE_QUERY_USB_CAPABILITY, udecxwdfdevice/EvtUdecxWdfDeviceQueryUsbCapability
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : udecxwdfdevice.h
-req.include-header : Udecx.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 1.15
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUDECX_USB_ENDPOINT_CALLBACKS, UDECX_USB_ENDPOINT_CALLBACKS"
-req.product : Windows 10 or later.
+UID: NC:udecxwdfdevice.EVT_UDECX_WDF_DEVICE_QUERY_USB_CAPABILITY
+title: EVT_UDECX_WDF_DEVICE_QUERY_USB_CAPABILITY
+author: windows-driver-content
+description: The UDE client driver's implementation to determine the capabilities that are supported by the emulated USB host controller.
+old-location: buses\evt_udecx_wdf_device_query_usb_capability.htm
+old-project: usbref
+ms.assetid: 96F3128C-C334-4531-9C86-3FA918A902AC
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: buses.evt_udecx_wdf_device_query_usb_capability, EvtUdecxWdfDeviceQueryUsbCapability callback function [Buses], EvtUdecxWdfDeviceQueryUsbCapability, EVT_UDECX_WDF_DEVICE_QUERY_USB_CAPABILITY, EVT_UDECX_WDF_DEVICE_QUERY_USB_CAPABILITY, udecxwdfdevice/EvtUdecxWdfDeviceQueryUsbCapability
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: udecxwdfdevice.h
+req.include-header: Udecx.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 1.15
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	UdecxWdfDevice.h
+apiname:
+-	EvtUdecxWdfDeviceQueryUsbCapability
+product: Windows
+targetos: Windows
+req.typenames: "*PUDECX_USB_ENDPOINT_CALLBACKS, UDECX_USB_ENDPOINT_CALLBACKS"
+req.product: Windows 10 or later.
 ---
 
 

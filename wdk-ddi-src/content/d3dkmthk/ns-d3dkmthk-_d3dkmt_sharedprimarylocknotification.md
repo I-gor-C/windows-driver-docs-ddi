@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmthk._D3DKMT_SHAREDPRIMARYLOCKNOTIFICATION
-title : "_D3DKMT_SHAREDPRIMARYLOCKNOTIFICATION"
-author : windows-driver-content
-description : The D3DKMT_SHAREDPRIMARYLOCKNOTIFICATION structure describes the shared primary surface that an application is about to lock.
-old-location : display\d3dkmt_sharedprimarylocknotification.htm
-old-project : display
-ms.assetid : 4e7766bb-eb5b-4f79-b9b8-89f7dcb98569
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DKMT_SHAREDPRIMARYLOCKNOTIFICATION structure [Display Devices], OpenGL_Structs_4ec11480-30cb-45a1-a31c-e7432ec45abf.xml, _D3DKMT_SHAREDPRIMARYLOCKNOTIFICATION, d3dkmthk/D3DKMT_SHAREDPRIMARYLOCKNOTIFICATION, display.d3dkmt_sharedprimarylocknotification, D3DKMT_SHAREDPRIMARYLOCKNOTIFICATION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_SHAREDPRIMARYLOCKNOTIFICATION
+UID: NS:d3dkmthk._D3DKMT_SHAREDPRIMARYLOCKNOTIFICATION
+title: "_D3DKMT_SHAREDPRIMARYLOCKNOTIFICATION"
+author: windows-driver-content
+description: The D3DKMT_SHAREDPRIMARYLOCKNOTIFICATION structure describes the shared primary surface that an application is about to lock.
+old-location: display\d3dkmt_sharedprimarylocknotification.htm
+old-project: display
+ms.assetid: 4e7766bb-eb5b-4f79-b9b8-89f7dcb98569
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DKMT_SHAREDPRIMARYLOCKNOTIFICATION structure [Display Devices], OpenGL_Structs_4ec11480-30cb-45a1-a31c-e7432ec45abf.xml, _D3DKMT_SHAREDPRIMARYLOCKNOTIFICATION, d3dkmthk/D3DKMT_SHAREDPRIMARYLOCKNOTIFICATION, display.d3dkmt_sharedprimarylocknotification, D3DKMT_SHAREDPRIMARYLOCKNOTIFICATION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmthk.h
+apiname:
+-	D3DKMT_SHAREDPRIMARYLOCKNOTIFICATION
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_SHAREDPRIMARYLOCKNOTIFICATION
 ---
 
 # _D3DKMT_SHAREDPRIMARYLOCKNOTIFICATION structure

@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.RtlAppendStringToString
-title : RtlAppendStringToString function
-author : windows-driver-content
-description : The RtlAppendStringToString routine concatenates two counted strings. It copies bytes from the source up to the length of the destination buffer.
-old-location : ifsk\rtlappendstringtostring.htm
-old-project : ifsk
-ms.assetid : 8cd94502-c11a-4e6a-87f6-0c6034b6ac09
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : rtlref_a5cf2f54-1094-44ea-8b05-0c3d08aa5abc.xml, RtlAppendStringToString, ifsk.rtlappendstringtostring, ntifs/RtlAppendStringToString, RtlAppendStringToString routine [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h, FltKernel.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Microsoft Windows 2000, and later versions of all Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.RtlAppendStringToString
+title: RtlAppendStringToString function
+author: windows-driver-content
+description: The RtlAppendStringToString routine concatenates two counted strings. It copies bytes from the source up to the length of the destination buffer.
+old-location: ifsk\rtlappendstringtostring.htm
+old-project: ifsk
+ms.assetid: 8cd94502-c11a-4e6a-87f6-0c6034b6ac09
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: rtlref_a5cf2f54-1094-44ea-8b05-0c3d08aa5abc.xml, RtlAppendStringToString, ifsk.rtlappendstringtostring, ntifs/RtlAppendStringToString, RtlAppendStringToString routine [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h, FltKernel.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Microsoft Windows 2000, and later versions of all Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	RtlAppendStringToString
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

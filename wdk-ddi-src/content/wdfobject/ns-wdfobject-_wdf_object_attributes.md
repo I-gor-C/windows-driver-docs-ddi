@@ -1,42 +1,47 @@
 ---
-UID : NS:wdfobject._WDF_OBJECT_ATTRIBUTES
-title : "_WDF_OBJECT_ATTRIBUTES"
-author : windows-driver-content
-description : The WDF_OBJECT_ATTRIBUTES structure describes attributes that can be associated with any framework object.
-old-location : wdf\wdf_object_attributes.htm
-old-project : wdf
-ms.assetid : 3331c2d8-3100-410d-9c75-33a3b55d5a49
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : "*PWDF_OBJECT_ATTRIBUTES, kmdf.wdf_object_attributes, PWDF_OBJECT_ATTRIBUTES structure pointer, wdfobject/PWDF_OBJECT_ATTRIBUTES, _WDF_OBJECT_ATTRIBUTES, DFGenObjectRef_cfd7583f-13f6-4755-85d4-7a08401d0ea7.xml, wdf.wdf_object_attributes, PWDF_OBJECT_ATTRIBUTES, wdfobject/WDF_OBJECT_ATTRIBUTES, WDF_OBJECT_ATTRIBUTES, WDF_OBJECT_ATTRIBUTES structure"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdfobject.h
-req.include-header : Wdf.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_OBJECT_ATTRIBUTES, *PWDF_OBJECT_ATTRIBUTES
-req.product : Windows 10 or later.
+UID: NS:wdfobject._WDF_OBJECT_ATTRIBUTES
+title: "_WDF_OBJECT_ATTRIBUTES"
+author: windows-driver-content
+description: The WDF_OBJECT_ATTRIBUTES structure describes attributes that can be associated with any framework object.
+old-location: wdf\wdf_object_attributes.htm
+old-project: wdf
+ms.assetid: 3331c2d8-3100-410d-9c75-33a3b55d5a49
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: "*PWDF_OBJECT_ATTRIBUTES, kmdf.wdf_object_attributes, PWDF_OBJECT_ATTRIBUTES structure pointer, wdfobject/PWDF_OBJECT_ATTRIBUTES, _WDF_OBJECT_ATTRIBUTES, DFGenObjectRef_cfd7583f-13f6-4755-85d4-7a08401d0ea7.xml, wdf.wdf_object_attributes, PWDF_OBJECT_ATTRIBUTES, wdfobject/WDF_OBJECT_ATTRIBUTES, WDF_OBJECT_ATTRIBUTES, WDF_OBJECT_ATTRIBUTES structure"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdfobject.h
+req.include-header: Wdf.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfobject.h
+apiname:
+-	WDF_OBJECT_ATTRIBUTES
+product: Windows
+targetos: Windows
+req.typenames: WDF_OBJECT_ATTRIBUTES, *PWDF_OBJECT_ATTRIBUTES
+req.product: Windows 10 or later.
 ---
 
 # _WDF_OBJECT_ATTRIBUTES structure

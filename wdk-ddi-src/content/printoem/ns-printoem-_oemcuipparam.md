@@ -1,42 +1,47 @@
 ---
-UID : NS:printoem._OEMCUIPPARAM
-title : "_OEMCUIPPARAM"
-author : windows-driver-content
-description : The OEMCUIPPARAM structure is used as an input parameter to a user interface plug-in's IPrintOemUI::CommonUIProp method.
-old-location : print\oemcuipparam.htm
-old-project : print
-ms.assetid : 178b635c-0916-44f5-87a3-a2766601dcab
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : printoem/OEMCUIPPARAM, *POEMCUIPPARAM, print.oemcuipparam, _OEMCUIPPARAM, print_unidrv-pscript_ui_6ea92d10-0152-4bb2-a79b-0f6c29507e8c.xml, OEMCUIPPARAM structure [Print Devices], OEMCUIPPARAM
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : printoem.h
-req.include-header : Printoem.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*POEMCUIPPARAM, OEMCUIPPARAM"
-req.product : Windows 10 or later.
+UID: NS:printoem._OEMCUIPPARAM
+title: "_OEMCUIPPARAM"
+author: windows-driver-content
+description: The OEMCUIPPARAM structure is used as an input parameter to a user interface plug-in's IPrintOemUI::CommonUIProp method.
+old-location: print\oemcuipparam.htm
+old-project: print
+ms.assetid: 178b635c-0916-44f5-87a3-a2766601dcab
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: printoem/OEMCUIPPARAM, *POEMCUIPPARAM, print.oemcuipparam, _OEMCUIPPARAM, print_unidrv-pscript_ui_6ea92d10-0152-4bb2-a79b-0f6c29507e8c.xml, OEMCUIPPARAM structure [Print Devices], OEMCUIPPARAM
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: printoem.h
+req.include-header: Printoem.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	printoem.h
+apiname:
+-	OEMCUIPPARAM
+product: Windows
+targetos: Windows
+req.typenames: "*POEMCUIPPARAM, OEMCUIPPARAM"
+req.product: Windows 10 or later.
 ---
 
 # _OEMCUIPPARAM structure

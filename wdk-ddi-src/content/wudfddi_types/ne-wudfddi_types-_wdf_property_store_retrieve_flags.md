@@ -1,42 +1,47 @@
 ---
-UID : NE:wudfddi_types._WDF_PROPERTY_STORE_RETRIEVE_FLAGS
-title : "_WDF_PROPERTY_STORE_RETRIEVE_FLAGS"
-author : windows-driver-content
-description : The WDF_PROPERTY_STORE_RETRIEVE_FLAGS enumeration contains values that indicate whether UMDF should create a registry key if the key does not already exist.
-old-location : wdf\wdf_property_store_retrieve_flags.htm
-old-project : wdf
-ms.assetid : bd64ef0d-b2e7-4f82-87a8-77fe98677fd9
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WdfPropertyStoreCreateIfMissing, wudfddi_types/WdfPropertyStoreCreateVolatile, umdf.wdf_property_store_retrieve_flags, WDF_PROPERTY_STORE_RETRIEVE_FLAGS enumeration, WdfPropertyStoreRetrieveFlagsMask, WdfPropertyStoreNormal, wudfddi_types/WdfPropertyStoreRetrieveFlagsMask, wdf.wdf_property_store_retrieve_flags, wudfddi_types/WDF_PROPERTY_STORE_RETRIEVE_FLAGS, wudfddi_types/WdfPropertyStoreCreateIfMissing, WdfPropertyStoreCreateVolatile, umdfstructs_c11a65c3-e37f-4adb-b480-1682d8e51700.xml, _WDF_PROPERTY_STORE_RETRIEVE_FLAGS, WDF_PROPERTY_STORE_RETRIEVE_FLAGS, wudfddi_types/WdfPropertyStoreNormal
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : wudfddi_types.h
-req.include-header : Wudfddi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_PROPERTY_STORE_RETRIEVE_FLAGS
-req.product : Windows 10 or later.
+UID: NE:wudfddi_types._WDF_PROPERTY_STORE_RETRIEVE_FLAGS
+title: "_WDF_PROPERTY_STORE_RETRIEVE_FLAGS"
+author: windows-driver-content
+description: The WDF_PROPERTY_STORE_RETRIEVE_FLAGS enumeration contains values that indicate whether UMDF should create a registry key if the key does not already exist.
+old-location: wdf\wdf_property_store_retrieve_flags.htm
+old-project: wdf
+ms.assetid: bd64ef0d-b2e7-4f82-87a8-77fe98677fd9
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WdfPropertyStoreCreateIfMissing, wudfddi_types/WdfPropertyStoreCreateVolatile, umdf.wdf_property_store_retrieve_flags, WDF_PROPERTY_STORE_RETRIEVE_FLAGS enumeration, WdfPropertyStoreRetrieveFlagsMask, WdfPropertyStoreNormal, wudfddi_types/WdfPropertyStoreRetrieveFlagsMask, wdf.wdf_property_store_retrieve_flags, wudfddi_types/WDF_PROPERTY_STORE_RETRIEVE_FLAGS, wudfddi_types/WdfPropertyStoreCreateIfMissing, WdfPropertyStoreCreateVolatile, umdfstructs_c11a65c3-e37f-4adb-b480-1682d8e51700.xml, _WDF_PROPERTY_STORE_RETRIEVE_FLAGS, WDF_PROPERTY_STORE_RETRIEVE_FLAGS, wudfddi_types/WdfPropertyStoreNormal
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: wudfddi_types.h
+req.include-header: Wudfddi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wudfddi_types.h
+apiname:
+-	WDF_PROPERTY_STORE_RETRIEVE_FLAGS
+product: Windows
+targetos: Windows
+req.typenames: WDF_PROPERTY_STORE_RETRIEVE_FLAGS
+req.product: Windows 10 or later.
 ---
 
 # _WDF_PROPERTY_STORE_RETRIEVE_FLAGS Enumeration
@@ -60,40 +65,40 @@ typedef enum _WDF_PROPERTY_STORE_RETRIEVE_FLAGS {
 ## Constants
 
 <table>
-
-<tr>
-<td>WdfPropertyStoreCreateIfMissing</td>
-<td>Create the registry key if it does not exist. The key will be <i>nonvolatile</i>, which means that it will not be deleted when Windows restarts.</td>
-</tr>
-
-<tr>
-<td>WdfPropertyStoreCreateVolatile</td>
-<td>Create the registry key if it does not exist. The key will be volatile, which means that it will be deleted when Windows restarts. This flag is available in UMDF versions 1.9 and later.</td>
-</tr>
-
-<tr>
-<td>WdfPropertyStoreNormal</td>
-<td>Do not create the registry key if it does not exist.</td>
-</tr>
-
-<tr>
-<td>WdfPropertyStoreRetrieveFlagsMask</td>
-<td>Reserved for system use.</td>
-</tr>
+            
+                <tr>
+                    <td>WdfPropertyStoreCreateIfMissing</td>
+                    <td>Create the registry key if it does not exist. The key will be <i>nonvolatile</i>, which means that it will not be deleted when Windows restarts.</td>
+                </tr>
+            
+                <tr>
+                    <td>WdfPropertyStoreCreateVolatile</td>
+                    <td>Create the registry key if it does not exist. The key will be volatile, which means that it will be deleted when Windows restarts. This flag is available in UMDF versions 1.9 and later.</td>
+                </tr>
+            
+                <tr>
+                    <td>WdfPropertyStoreNormal</td>
+                    <td>Do not create the registry key if it does not exist.</td>
+                </tr>
+            
+                <tr>
+                    <td>WdfPropertyStoreRetrieveFlagsMask</td>
+                    <td>Reserved for system use.</td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-<b>WDF_PROPERTY_STORE_RETRIEVE_FLAGS</b> enumeration values are used as input to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff558842">IWDFDevice::RetrieveDevicePropertyStore</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff556982">IWDFDeviceInitialize::RetrieveDevicePropertyStore</a>, and <a href="https://msdn.microsoft.com/library/windows/hardware/ff560228">IWDFPropertyStoreFactory::RetrieveDevicePropertyStore</a> methods.
+        <b>WDF_PROPERTY_STORE_RETRIEVE_FLAGS</b> enumeration values are used as input to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff558842">IWDFDevice::RetrieveDevicePropertyStore</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff556982">IWDFDeviceInitialize::RetrieveDevicePropertyStore</a>, and <a href="https://msdn.microsoft.com/library/windows/hardware/ff560228">IWDFPropertyStoreFactory::RetrieveDevicePropertyStore</a> methods.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
 | **Header** | wudfddi_types.h (include Wudfddi.h) |
 
-## See Also
+    ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560228">IWDFPropertyStoreFactory::RetrieveDevicePropertyStore</a>
+        <a href="https://msdn.microsoft.com/library/windows/hardware/ff560228">IWDFPropertyStoreFactory::RetrieveDevicePropertyStore</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff558842">IWDFDevice::RetrieveDevicePropertyStore</a>
 

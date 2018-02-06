@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFIoRequest2.IsCanceled
-title : IWDFIoRequest2::IsCanceled method
-author : windows-driver-content
-description : The IsCanceled method determines whether the I/O manager has attempted to cancel an I/O request.
-old-location : wdf\iwdfiorequest2_iscanceled.htm
-old-project : wdf
-ms.assetid : 68523fcb-bb0d-492f-b6ae-3dab4f6aa637
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.iwdfiorequest2_iscanceled, IWDFIoRequest2, UMDFRequestObjectRef_7fdd0046-2e99-4221-9e73-c1bebf6251aa.xml, IsCanceled, umdf.iwdfiorequest2_iscanceled, IsCanceled method, IWDFIoRequest2::IsCanceled, IsCanceled method, IWDFIoRequest2 interface, IWDFIoRequest2 interface, IsCanceled method, wudfddi/IWDFIoRequest2::IsCanceled
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.9
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFIoRequest2.IsCanceled
+title: IWDFIoRequest2::IsCanceled method
+author: windows-driver-content
+description: The IsCanceled method determines whether the I/O manager has attempted to cancel an I/O request.
+old-location: wdf\iwdfiorequest2_iscanceled.htm
+old-project: wdf
+ms.assetid: 68523fcb-bb0d-492f-b6ae-3dab4f6aa637
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.iwdfiorequest2_iscanceled, IWDFIoRequest2, UMDFRequestObjectRef_7fdd0046-2e99-4221-9e73-c1bebf6251aa.xml, IsCanceled, umdf.iwdfiorequest2_iscanceled, IsCanceled method, IWDFIoRequest2::IsCanceled, IsCanceled method, IWDFIoRequest2 interface, IWDFIoRequest2 interface, IsCanceled method, wudfddi/IWDFIoRequest2::IsCanceled
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.9
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFIoRequest2.IsCanceled
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

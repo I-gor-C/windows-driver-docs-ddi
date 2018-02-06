@@ -1,42 +1,47 @@
 ---
-UID : NS:windot11.DOT11_ASSOCIATION_PARAMS
-title : DOT11_ASSOCIATION_PARAMS
-author : windows-driver-content
-description : Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
-old-location : netvista\dot11_association_params.htm
-old-project : netvista
-ms.assetid : 74382195-ee1d-4b01-b882-2f357d801a25
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.dot11_association_params, PDOT11_ASSOCIATION_PARAMS structure pointer [Network Drivers Starting with Windows Vista], PDOT11_ASSOCIATION_PARAMS, Native_802.11_data_types_08a8e9e4-9b11-47f6-a3e0-baa25a63bd6f.xml, DOT11_ASSOCIATION_PARAMS structure [Network Drivers Starting with Windows Vista], windot11/PDOT11_ASSOCIATION_PARAMS, DOT11_ASSOCIATION_PARAMS, *PDOT11_ASSOCIATION_PARAMS, windot11/DOT11_ASSOCIATION_PARAMS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : windot11.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7 and later versions of the Windows operating   systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDOT11_ASSOCIATION_PARAMS, DOT11_ASSOCIATION_PARAMS"
-req.product : Windows 10 or later.
+UID: NS:windot11.DOT11_ASSOCIATION_PARAMS
+title: DOT11_ASSOCIATION_PARAMS
+author: windows-driver-content
+description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+old-location: netvista\dot11_association_params.htm
+old-project: netvista
+ms.assetid: 74382195-ee1d-4b01-b882-2f357d801a25
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.dot11_association_params, PDOT11_ASSOCIATION_PARAMS structure pointer [Network Drivers Starting with Windows Vista], PDOT11_ASSOCIATION_PARAMS, Native_802.11_data_types_08a8e9e4-9b11-47f6-a3e0-baa25a63bd6f.xml, DOT11_ASSOCIATION_PARAMS structure [Network Drivers Starting with Windows Vista], windot11/PDOT11_ASSOCIATION_PARAMS, DOT11_ASSOCIATION_PARAMS, *PDOT11_ASSOCIATION_PARAMS, windot11/DOT11_ASSOCIATION_PARAMS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: windot11.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7 and later versions of the Windows operating   systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	windot11.h
+apiname:
+-	DOT11_ASSOCIATION_PARAMS
+product: Windows
+targetos: Windows
+req.typenames: "*PDOT11_ASSOCIATION_PARAMS, DOT11_ASSOCIATION_PARAMS"
+req.product: Windows 10 or later.
 ---
 
 # DOT11_ASSOCIATION_PARAMS structure

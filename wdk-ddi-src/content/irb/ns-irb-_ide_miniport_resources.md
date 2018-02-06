@@ -1,41 +1,46 @@
 ---
-UID : NS:irb._IDE_MINIPORT_RESOURCES
-title : "_IDE_MINIPORT_RESOURCES"
-author : windows-driver-content
-description : The IDE_MINIPORT_RESOURCES structure is used by the port driver to provide the miniport driver with resources.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
-old-location : storage\ide_miniport_resources.htm
-old-project : storage
-ms.assetid : 867b6152-9846-484f-9eac-07d0f24d55df
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : "*PIDE_MINIPORT_RESOURCES, irb/IDE_MINIPORT_RESOURCES, structs-ATA_28df7197-d4b0-4279-a4db-e9b1269f6ba7.xml, irb/PIDE_MINIPORT_RESOURCES, _IDE_MINIPORT_RESOURCES, PIDE_MINIPORT_RESOURCES structure pointer [Storage Devices], storage.ide_miniport_resources, IDE_MINIPORT_RESOURCES structure [Storage Devices], PIDE_MINIPORT_RESOURCES, IDE_MINIPORT_RESOURCES"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : irb.h
-req.include-header : Irb.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PIDE_MINIPORT_RESOURCES, IDE_MINIPORT_RESOURCES"
+UID: NS:irb._IDE_MINIPORT_RESOURCES
+title: "_IDE_MINIPORT_RESOURCES"
+author: windows-driver-content
+description: The IDE_MINIPORT_RESOURCES structure is used by the port driver to provide the miniport driver with resources.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
+old-location: storage\ide_miniport_resources.htm
+old-project: storage
+ms.assetid: 867b6152-9846-484f-9eac-07d0f24d55df
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: "*PIDE_MINIPORT_RESOURCES, irb/IDE_MINIPORT_RESOURCES, structs-ATA_28df7197-d4b0-4279-a4db-e9b1269f6ba7.xml, irb/PIDE_MINIPORT_RESOURCES, _IDE_MINIPORT_RESOURCES, PIDE_MINIPORT_RESOURCES structure pointer [Storage Devices], storage.ide_miniport_resources, IDE_MINIPORT_RESOURCES structure [Storage Devices], PIDE_MINIPORT_RESOURCES, IDE_MINIPORT_RESOURCES"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: irb.h
+req.include-header: Irb.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	irb.h
+apiname:
+-	IDE_MINIPORT_RESOURCES
+product: Windows
+targetos: Windows
+req.typenames: "*PIDE_MINIPORT_RESOURCES, IDE_MINIPORT_RESOURCES"
 ---
 
 # _IDE_MINIPORT_RESOURCES structure

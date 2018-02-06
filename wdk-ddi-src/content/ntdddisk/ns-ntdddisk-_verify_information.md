@@ -1,41 +1,46 @@
 ---
-UID : NS:ntdddisk._VERIFY_INFORMATION
-title : "_VERIFY_INFORMATION"
-author : windows-driver-content
-description : The VERIFY_INFORMATION structure provides information used to verify the existence of a disk extent.
-old-location : storage\verify_information.htm
-old-project : storage
-ms.assetid : 7bb5c2ff-9bdb-4958-b290-9edb18d02668
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : ntdddisk/VERIFY_INFORMATION, storage.verify_information, PVERIFY_INFORMATION structure pointer [Storage Devices], structs-disk_fbed0038-effc-40d8-8814-921dfd627a94.xml, *PVERIFY_INFORMATION, _VERIFY_INFORMATION, PVERIFY_INFORMATION, ntdddisk/PVERIFY_INFORMATION, VERIFY_INFORMATION structure [Storage Devices], VERIFY_INFORMATION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntdddisk.h
-req.include-header : Ntdddisk.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VERIFY_INFORMATION, *PVERIFY_INFORMATION
+UID: NS:ntdddisk._VERIFY_INFORMATION
+title: "_VERIFY_INFORMATION"
+author: windows-driver-content
+description: The VERIFY_INFORMATION structure provides information used to verify the existence of a disk extent.
+old-location: storage\verify_information.htm
+old-project: storage
+ms.assetid: 7bb5c2ff-9bdb-4958-b290-9edb18d02668
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: ntdddisk/VERIFY_INFORMATION, storage.verify_information, PVERIFY_INFORMATION structure pointer [Storage Devices], structs-disk_fbed0038-effc-40d8-8814-921dfd627a94.xml, *PVERIFY_INFORMATION, _VERIFY_INFORMATION, PVERIFY_INFORMATION, ntdddisk/PVERIFY_INFORMATION, VERIFY_INFORMATION structure [Storage Devices], VERIFY_INFORMATION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntdddisk.h
+req.include-header: Ntdddisk.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntdddisk.h
+apiname:
+-	VERIFY_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: VERIFY_INFORMATION, *PVERIFY_INFORMATION
 ---
 
 # _VERIFY_INFORMATION structure

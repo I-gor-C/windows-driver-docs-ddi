@@ -1,41 +1,46 @@
 ---
-UID : NS:hbapiwmi._MSFC_FCAdapterHBAAttributes
-title : "_MSFC_FCAdapterHBAAttributes"
-author : windows-driver-content
-description : The MSFC_FCAdapterHBAAttributes structure is used by a WMI provider to expose attribute information associated with a fibre channel adapter.
-old-location : storage\msfc_fcadapterhbaattributes.htm
-old-project : storage
-ms.assetid : 5efe0ede-b55f-499e-9f95-66652cd8a872
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : MSFC_FCAdapterHBAAttributes structure [Storage Devices], PMSFC_FCAdapterHBAAttributes, MSFC_FCAdapterHBAAttributes, hbapiwmi/PMSFC_FCAdapterHBAAttributes, _MSFC_FCAdapterHBAAttributes, *PMSFC_FCAdapterHBAAttributes, structs-Fibre_07d902b9-2da0-4bca-94ab-db837beff481.xml, storage.msfc_fcadapterhbaattributes, hbapiwmi/MSFC_FCAdapterHBAAttributes, PMSFC_FCAdapterHBAAttributes structure pointer [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : hbapiwmi.h
-req.include-header : Hbapiwmi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : MSFC_FCAdapterHBAAttributes, *PMSFC_FCAdapterHBAAttributes
+UID: NS:hbapiwmi._MSFC_FCAdapterHBAAttributes
+title: "_MSFC_FCAdapterHBAAttributes"
+author: windows-driver-content
+description: The MSFC_FCAdapterHBAAttributes structure is used by a WMI provider to expose attribute information associated with a fibre channel adapter.
+old-location: storage\msfc_fcadapterhbaattributes.htm
+old-project: storage
+ms.assetid: 5efe0ede-b55f-499e-9f95-66652cd8a872
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: MSFC_FCAdapterHBAAttributes structure [Storage Devices], PMSFC_FCAdapterHBAAttributes, MSFC_FCAdapterHBAAttributes, hbapiwmi/PMSFC_FCAdapterHBAAttributes, _MSFC_FCAdapterHBAAttributes, *PMSFC_FCAdapterHBAAttributes, structs-Fibre_07d902b9-2da0-4bca-94ab-db837beff481.xml, storage.msfc_fcadapterhbaattributes, hbapiwmi/MSFC_FCAdapterHBAAttributes, PMSFC_FCAdapterHBAAttributes structure pointer [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: hbapiwmi.h
+req.include-header: Hbapiwmi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hbapiwmi.h
+apiname:
+-	MSFC_FCAdapterHBAAttributes
+product: Windows
+targetos: Windows
+req.typenames: MSFC_FCAdapterHBAAttributes, *PMSFC_FCAdapterHBAAttributes
 ---
 
 # _MSFC_FCAdapterHBAAttributes structure

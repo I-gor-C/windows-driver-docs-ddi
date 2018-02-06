@@ -1,41 +1,46 @@
 ---
-UID : NF:portcls.IPortClsPower.UnregisterAdapterPowerManagement
-title : IPortClsPower::UnregisterAdapterPowerManagement method
-author : windows-driver-content
-description : The UnregisterAdapterPowerManagement method unregisters the adapter's power management interface with PortCls.
-old-location : audio\iportclspower_unregisteradapterpowermanagement.htm
-old-project : audio
-ms.assetid : 4c8734b1-d7f5-476b-a85f-1d3f4df888b9
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : IPortClsPower::UnregisterAdapterPowerManagement, audio.iportclspower_unregisteradapterpowermanagement, UnregisterAdapterPowerManagement, audmp-routines_3dca5fa9-542d-437d-a2d9-9eef51b5f2ea.xml, IPortClsPower, IPortClsPower interface [Audio Devices], UnregisterAdapterPowerManagement method, UnregisterAdapterPowerManagement method [Audio Devices], UnregisterAdapterPowerManagement method [Audio Devices], IPortClsPower interface, portcls/IPortClsPower::UnregisterAdapterPowerManagement
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : portcls.h
-req.include-header : Portcls.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 7 and later versions of Windwows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : portcls.h
-req.dll : 
-req.irql : PASSIVE_LEVEL.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.IPortClsPower.UnregisterAdapterPowerManagement
+title: IPortClsPower::UnregisterAdapterPowerManagement method
+author: windows-driver-content
+description: The UnregisterAdapterPowerManagement method unregisters the adapter's power management interface with PortCls.
+old-location: audio\iportclspower_unregisteradapterpowermanagement.htm
+old-project: audio
+ms.assetid: 4c8734b1-d7f5-476b-a85f-1d3f4df888b9
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: IPortClsPower::UnregisterAdapterPowerManagement, audio.iportclspower_unregisteradapterpowermanagement, UnregisterAdapterPowerManagement, audmp-routines_3dca5fa9-542d-437d-a2d9-9eef51b5f2ea.xml, IPortClsPower, IPortClsPower interface [Audio Devices], UnregisterAdapterPowerManagement method, UnregisterAdapterPowerManagement method [Audio Devices], UnregisterAdapterPowerManagement method [Audio Devices], IPortClsPower interface, portcls/IPortClsPower::UnregisterAdapterPowerManagement
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: portcls.h
+req.include-header: Portcls.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 7 and later versions of Windwows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: portcls.h
+req.dll: 
+req.irql: PASSIVE_LEVEL.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	portcls.h
+apiname:
+-	IPortClsPower.UnregisterAdapterPowerManagement
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

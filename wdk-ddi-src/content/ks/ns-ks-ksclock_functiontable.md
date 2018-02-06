@@ -1,41 +1,46 @@
 ---
-UID : NS:ks.KSCLOCK_FUNCTIONTABLE
-title : KSCLOCK_FUNCTIONTABLE
-author : windows-driver-content
-description : The KSCLOCK_FUNCTIONTABLE structure describes a function table for the master clock.
-old-location : stream\ksclock_functiontable.htm
-old-project : stream
-ms.assetid : ed16588e-1c63-411d-b5c8-a8151a218328
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ks/PKSCLOCK_FUNCTIONTABLE, PKSCLOCK_FUNCTIONTABLE, KSCLOCK_FUNCTIONTABLE structure [Streaming Media Devices], PKSCLOCK_FUNCTIONTABLE structure pointer [Streaming Media Devices], ks-struct_b86dda38-016f-4116-9770-5b447c664b2e.xml, stream.ksclock_functiontable, KSCLOCK_FUNCTIONTABLE, ks/KSCLOCK_FUNCTIONTABLE, *PKSCLOCK_FUNCTIONTABLE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKSCLOCK_FUNCTIONTABLE, KSCLOCK_FUNCTIONTABLE"
+UID: NS:ks.KSCLOCK_FUNCTIONTABLE
+title: KSCLOCK_FUNCTIONTABLE
+author: windows-driver-content
+description: The KSCLOCK_FUNCTIONTABLE structure describes a function table for the master clock.
+old-location: stream\ksclock_functiontable.htm
+old-project: stream
+ms.assetid: ed16588e-1c63-411d-b5c8-a8151a218328
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ks/PKSCLOCK_FUNCTIONTABLE, PKSCLOCK_FUNCTIONTABLE, KSCLOCK_FUNCTIONTABLE structure [Streaming Media Devices], PKSCLOCK_FUNCTIONTABLE structure pointer [Streaming Media Devices], ks-struct_b86dda38-016f-4116-9770-5b447c664b2e.xml, stream.ksclock_functiontable, KSCLOCK_FUNCTIONTABLE, ks/KSCLOCK_FUNCTIONTABLE, *PKSCLOCK_FUNCTIONTABLE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	KSCLOCK_FUNCTIONTABLE
+product: Windows
+targetos: Windows
+req.typenames: "*PKSCLOCK_FUNCTIONTABLE, KSCLOCK_FUNCTIONTABLE"
 ---
 
 # KSCLOCK_FUNCTIONTABLE structure

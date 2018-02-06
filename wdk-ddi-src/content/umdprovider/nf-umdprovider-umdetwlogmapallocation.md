@@ -1,42 +1,47 @@
 ---
-UID : NF:umdprovider.UMDEtwLogMapAllocation
-title : UMDEtwLogMapAllocation function
-author : windows-driver-content
-description : Describes how a Microsoft DirectX graphics kernel subsystem (Dxgkrnl.sys) memory allocation, or a portion of the allocation, is being used.
-old-location : display\umdetwlogmapallocation.htm
-old-project : display
-ms.assetid : 60456f6a-3de7-46ae-b486-f53041ce1508
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.umdetwlogmapallocation, UMDEtwLogMapAllocation, UMDEtwLogMapAllocation function [Display Devices], umdprovider/UMDEtwLogMapAllocation
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : umdprovider.h
-req.include-header : Umdprovider.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : UMDETW_ALLOCATION_SEMANTIC
-req.product : Windows 10 or later.
+UID: NF:umdprovider.UMDEtwLogMapAllocation
+title: UMDEtwLogMapAllocation function
+author: windows-driver-content
+description: Describes how a Microsoft DirectX graphics kernel subsystem (Dxgkrnl.sys) memory allocation, or a portion of the allocation, is being used.
+old-location: display\umdetwlogmapallocation.htm
+old-project: display
+ms.assetid: 60456f6a-3de7-46ae-b486-f53041ce1508
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.umdetwlogmapallocation, UMDEtwLogMapAllocation, UMDEtwLogMapAllocation function [Display Devices], umdprovider/UMDEtwLogMapAllocation
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: umdprovider.h
+req.include-header: Umdprovider.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	umdprovider.h
+apiname:
+-	UMDEtwLogMapAllocation
+product: Windows
+targetos: Windows
+req.typenames: UMDETW_ALLOCATION_SEMANTIC
+req.product: Windows 10 or later.
 ---
 
 

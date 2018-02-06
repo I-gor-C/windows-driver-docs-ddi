@@ -1,41 +1,46 @@
 ---
-UID : NC:ks.PFNKSPINIRPCOMPLETION
-title : PFNKSPINIRPCOMPLETION
-author : windows-driver-content
-description : An AVStream minidriver's AVStrMiniPinIrpCompletion routine is called when an IRP completes a pass around the circuit and the frame that is associated with the IRP is about to be recycled or retired.
-old-location : stream\avstrminipinirpcompletion.htm
-old-project : stream
-ms.assetid : 46b29026-b3a9-49cc-8f3d-0318516526d2
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.avstrminipinirpcompletion, AVStrMiniPinIrpCompletion, AVStrMiniPinIrpCompletion routine [Streaming Media Devices], AVStrMiniPinIrpCompletion, PFNKSPINIRPCOMPLETION, PFNKSPINIRPCOMPLETION, ks/AVStrMiniPinIrpCompletion, avstclbk_fabf9c16-a37b-4101-9468-dc247545aea0.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KEYWORDSELECTOR
+UID: NC:ks.PFNKSPINIRPCOMPLETION
+title: PFNKSPINIRPCOMPLETION
+author: windows-driver-content
+description: An AVStream minidriver's AVStrMiniPinIrpCompletion routine is called when an IRP completes a pass around the circuit and the frame that is associated with the IRP is about to be recycled or retired.
+old-location: stream\avstrminipinirpcompletion.htm
+old-project: stream
+ms.assetid: 46b29026-b3a9-49cc-8f3d-0318516526d2
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.avstrminipinirpcompletion, AVStrMiniPinIrpCompletion, AVStrMiniPinIrpCompletion routine [Streaming Media Devices], AVStrMiniPinIrpCompletion, PFNKSPINIRPCOMPLETION, PFNKSPINIRPCOMPLETION, ks/AVStrMiniPinIrpCompletion, avstclbk_fabf9c16-a37b-4101-9468-dc247545aea0.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	ks.h
+apiname:
+-	AVStrMiniPinIrpCompletion
+product: Windows
+targetos: Windows
+req.typenames: KEYWORDSELECTOR
 ---
 
 

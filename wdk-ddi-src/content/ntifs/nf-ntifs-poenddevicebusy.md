@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.PoEndDeviceBusy
-title : PoEndDeviceBusy function
-author : windows-driver-content
-description : The PoEndDeviceBusy routine marks the end of a period of time in which the device is busy.
-old-location : kernel\poenddevicebusy.htm
-old-project : kernel
-ms.assetid : 5ba5cfe7-a745-497e-b5ce-8c7b3d4929f5
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/PoEndDeviceBusy, kernel.poenddevicebusy, PoEndDeviceBusy routine [Kernel-Mode Driver Architecture], PoEndDeviceBusy, portn_edd72e85-e155-4a0c-9d6a-836ad448bb61.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 7.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.PoEndDeviceBusy
+title: PoEndDeviceBusy function
+author: windows-driver-content
+description: The PoEndDeviceBusy routine marks the end of a period of time in which the device is busy.
+old-location: kernel\poenddevicebusy.htm
+old-project: kernel
+ms.assetid: 5ba5cfe7-a745-497e-b5ce-8c7b3d4929f5
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/PoEndDeviceBusy, kernel.poenddevicebusy, PoEndDeviceBusy routine [Kernel-Mode Driver Architecture], PoEndDeviceBusy, portn_edd72e85-e155-4a0c-9d6a-836ad448bb61.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 7.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	PoEndDeviceBusy
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

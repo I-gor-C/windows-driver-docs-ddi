@@ -1,42 +1,47 @@
 ---
-UID : NC:video.PDRIVER_IO_PORT_UCHAR
-title : PDRIVER_IO_PORT_UCHAR
-author : windows-driver-content
-description : SvgaHwIoPortUchar traps an I/O port to which a full-screen MS-DOS application in an x86-based machine is sending UCHAR-sized data.
-old-location : display\svgahwioportuchar.htm
-old-project : display
-ms.assetid : 91e2dc51-0f3a-4cda-abe6-72893fd4da79
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.svgahwioportuchar, SvgaHwIoPortUchar callback function [Display Devices], SvgaHwIoPortUchar, PDRIVER_IO_PORT_UCHAR, PDRIVER_IO_PORT_UCHAR, video/SvgaHwIoPortUchar, VideoMiniport_Functions_d926584b-82e3-463e-ad50-b04d065a1d9d.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VHF_CONFIG, *PVHF_CONFIG
-req.product : Windows 10 or later.
+UID: NC:video.PDRIVER_IO_PORT_UCHAR
+title: PDRIVER_IO_PORT_UCHAR
+author: windows-driver-content
+description: SvgaHwIoPortUchar traps an I/O port to which a full-screen MS-DOS application in an x86-based machine is sending UCHAR-sized data.
+old-location: display\svgahwioportuchar.htm
+old-project: display
+ms.assetid: 91e2dc51-0f3a-4cda-abe6-72893fd4da79
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.svgahwioportuchar, SvgaHwIoPortUchar callback function [Display Devices], SvgaHwIoPortUchar, PDRIVER_IO_PORT_UCHAR, PDRIVER_IO_PORT_UCHAR, video/SvgaHwIoPortUchar, VideoMiniport_Functions_d926584b-82e3-463e-ad50-b04d065a1d9d.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	video.h
+apiname:
+-	SvgaHwIoPortUchar
+product: Windows
+targetos: Windows
+req.typenames: VHF_CONFIG, *PVHF_CONFIG
+req.product: Windows 10 or later.
 ---
 
 

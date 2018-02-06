@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmthk._D3DKMT_CURRENTDISPLAYMODE
-title : "_D3DKMT_CURRENTDISPLAYMODE"
-author : windows-driver-content
-description : The D3DKMT_CURRENTDISPLAYMODE structure describes the current display mode of the specified video source.
-old-location : display\d3dkmt_currentdisplaymode.htm
-old-project : display
-ms.assetid : 8ba027f9-3671-461c-bae6-2da0059cf0ab
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DKMT_CURRENTDISPLAYMODE structure [Display Devices], d3dkmthk/D3DKMT_CURRENTDISPLAYMODE, display.d3dkmt_currentdisplaymode, D3DKMT_CURRENTDISPLAYMODE, OpenGL_Structs_9af2b5dc-c342-4644-a3db-db9649b1fc9c.xml, _D3DKMT_CURRENTDISPLAYMODE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_CURRENTDISPLAYMODE
+UID: NS:d3dkmthk._D3DKMT_CURRENTDISPLAYMODE
+title: "_D3DKMT_CURRENTDISPLAYMODE"
+author: windows-driver-content
+description: The D3DKMT_CURRENTDISPLAYMODE structure describes the current display mode of the specified video source.
+old-location: display\d3dkmt_currentdisplaymode.htm
+old-project: display
+ms.assetid: 8ba027f9-3671-461c-bae6-2da0059cf0ab
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DKMT_CURRENTDISPLAYMODE structure [Display Devices], d3dkmthk/D3DKMT_CURRENTDISPLAYMODE, display.d3dkmt_currentdisplaymode, D3DKMT_CURRENTDISPLAYMODE, OpenGL_Structs_9af2b5dc-c342-4644-a3db-db9649b1fc9c.xml, _D3DKMT_CURRENTDISPLAYMODE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmthk.h
+apiname:
+-	D3DKMT_CURRENTDISPLAYMODE
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_CURRENTDISPLAYMODE
 ---
 
 # _D3DKMT_CURRENTDISPLAYMODE structure

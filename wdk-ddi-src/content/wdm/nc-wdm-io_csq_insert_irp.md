@@ -1,42 +1,47 @@
 ---
-UID : NC:wdm.IO_CSQ_INSERT_IRP
-title : IO_CSQ_INSERT_IRP
-author : windows-driver-content
-description : The CsqInsertIrp routine is used by the system to insert an IRP into a driver-implemented, cancel-safe IRP queue.
-old-location : kernel\csqinsertirp.htm
-old-project : kernel
-ms.assetid : 453ca575-be7f-47ee-9201-0f1ede16420c
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.csqinsertirp, CsqInsertIrp routine [Kernel-Mode Driver Architecture], CsqInsertIrp, IO_CSQ_INSERT_IRP, IO_CSQ_INSERT_IRP, wdm/CsqInsertIrp, DrvrRtns_84a81857-afd6-491c-829f-34063a5b1958.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
-req.product : Windows 10 or later.
+UID: NC:wdm.IO_CSQ_INSERT_IRP
+title: IO_CSQ_INSERT_IRP
+author: windows-driver-content
+description: The CsqInsertIrp routine is used by the system to insert an IRP into a driver-implemented, cancel-safe IRP queue.
+old-location: kernel\csqinsertirp.htm
+old-project: kernel
+ms.assetid: 453ca575-be7f-47ee-9201-0f1ede16420c
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.csqinsertirp, CsqInsertIrp routine [Kernel-Mode Driver Architecture], CsqInsertIrp, IO_CSQ_INSERT_IRP, IO_CSQ_INSERT_IRP, wdm/CsqInsertIrp, DrvrRtns_84a81857-afd6-491c-829f-34063a5b1958.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Wdm.h
+apiname:
+-	CsqInsertIrp
+product: Windows
+targetos: Windows
+req.typenames: WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+req.product: Windows 10 or later.
 ---
 
 

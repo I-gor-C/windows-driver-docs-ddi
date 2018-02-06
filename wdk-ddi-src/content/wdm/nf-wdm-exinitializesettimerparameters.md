@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.ExInitializeSetTimerParameters
-title : ExInitializeSetTimerParameters function
-author : windows-driver-content
-description : The ExInitializeSetTimerParameters routine initializes an EXT_SET_PARAMETERS structure.
-old-location : kernel\exinitializesettimerparameters.htm
-old-project : kernel
-ms.assetid : 43A07E6E-C69F-4D6C-9B9C-EB7FFDF7651E
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ExInitializeSetTimerParameters, kernel.exinitializesettimerparameters, ExInitializeSetTimerParameters routine [Kernel-Mode Driver Architecture], wdm/ExInitializeSetTimerParameters
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available starting with Windows 8.1.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : Any level.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ExInitializeSetTimerParameters
+title: ExInitializeSetTimerParameters function
+author: windows-driver-content
+description: The ExInitializeSetTimerParameters routine initializes an EXT_SET_PARAMETERS structure.
+old-location: kernel\exinitializesettimerparameters.htm
+old-project: kernel
+ms.assetid: 43A07E6E-C69F-4D6C-9B9C-EB7FFDF7651E
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ExInitializeSetTimerParameters, kernel.exinitializesettimerparameters, ExInitializeSetTimerParameters routine [Kernel-Mode Driver Architecture], wdm/ExInitializeSetTimerParameters
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available starting with Windows 8.1.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: Any level.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	ExInitializeSetTimerParameters
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddser.IOCTL_SERIAL_SET_MODEM_CONTROL
-title : IOCTL_SERIAL_SET_MODEM_CONTROL
-author : windows-driver-content
-description : The IOCTL_SERIAL_SET_MODEM_CONTROL request sets the modem control register (MCR) in the UART. No parameter checking is done on the client-supplied register settings.
-old-location : serports\ioctl_serial_set_modem_control.htm
-old-project : serports
-ms.assetid : 3ec5c4ab-d5da-44c7-9a62-c25d04dbef41
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : serports.ioctl_serial_set_modem_control, IOCTL_SERIAL_SET_MODEM_CONTROL control code [Serial Ports], IOCTL_SERIAL_SET_MODEM_CONTROL, ntddser/IOCTL_SERIAL_SET_MODEM_CONTROL, serref_a7d7db4d-c889-4a99-b21b-9efb533901a9.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddser.h
-req.include-header : Ntddser.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SD_REQUEST_FUNCTION
+UID: NI:ntddser.IOCTL_SERIAL_SET_MODEM_CONTROL
+title: IOCTL_SERIAL_SET_MODEM_CONTROL
+author: windows-driver-content
+description: The IOCTL_SERIAL_SET_MODEM_CONTROL request sets the modem control register (MCR) in the UART. No parameter checking is done on the client-supplied register settings.
+old-location: serports\ioctl_serial_set_modem_control.htm
+old-project: serports
+ms.assetid: 3ec5c4ab-d5da-44c7-9a62-c25d04dbef41
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: serports.ioctl_serial_set_modem_control, IOCTL_SERIAL_SET_MODEM_CONTROL control code [Serial Ports], IOCTL_SERIAL_SET_MODEM_CONTROL, ntddser/IOCTL_SERIAL_SET_MODEM_CONTROL, serref_a7d7db4d-c889-4a99-b21b-9efb533901a9.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddser.h
+req.include-header: Ntddser.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddser.h
+apiname:
+-	IOCTL_SERIAL_SET_MODEM_CONTROL
+product: Windows
+targetos: Windows
+req.typenames: SD_REQUEST_FUNCTION
 ---
 
 # IOCTL_SERIAL_SET_MODEM_CONTROL IOCTL

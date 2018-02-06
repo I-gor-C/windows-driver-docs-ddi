@@ -1,41 +1,46 @@
 ---
-UID : NN:dbgeng.IDebugAdvanced
-title : IDebugAdvanced
-author : windows-driver-content
-description : IDebugAdvanced interface
-old-location : debugger\idebugadvanced.htm
-old-project : debugger
-ms.assetid : 773c93fe-1eec-4951-960e-67164dcb41ce
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : debugger.idebugadvanced, IDebugAdvanced interface [Windows Debugging], IDebugAdvanced interface [Windows Debugging], described, IDebugAdvanced, dbgeng/IDebugAdvanced, IDebugAdvanced_73a2f722-f225-466b-aecc-2c7e6999e25f.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NN:dbgeng.IDebugAdvanced
+title: IDebugAdvanced
+author: windows-driver-content
+description: IDebugAdvanced interface
+old-location: debugger\idebugadvanced.htm
+old-project: debugger
+ms.assetid: 773c93fe-1eec-4951-960e-67164dcb41ce
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: debugger.idebugadvanced, IDebugAdvanced interface [Windows Debugging], IDebugAdvanced interface [Windows Debugging], described, IDebugAdvanced, dbgeng/IDebugAdvanced, IDebugAdvanced_73a2f722-f225-466b-aecc-2c7e6999e25f.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugAdvanced
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 # IDebugAdvanced interface

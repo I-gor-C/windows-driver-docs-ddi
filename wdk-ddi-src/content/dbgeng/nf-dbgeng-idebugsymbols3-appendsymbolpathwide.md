@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugSymbols3.AppendSymbolPathWide
-title : IDebugSymbols3::AppendSymbolPathWide method
-author : windows-driver-content
-description : The AppendSymbolPathWide method appends directories to the symbol path.
-old-location : debugger\appendsymbolpathwide.htm
-old-project : debugger
-ms.assetid : 184f40ff-be43-482c-8620-382f11f95548
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : AppendSymbolPathWide method [Windows Debugging], debugger.appendsymbolpathwide, IDebugSymbols3::AppendSymbolPathWide, IDebugSymbols3 interface [Windows Debugging], AppendSymbolPathWide method, AppendSymbolPathWide method [Windows Debugging], IDebugSymbols3 interface, AppendSymbolPathWide, IDebugSymbols3, dbgeng/IDebugSymbols3::AppendSymbolPathWide
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSymbols3.AppendSymbolPathWide
+title: IDebugSymbols3::AppendSymbolPathWide method
+author: windows-driver-content
+description: The AppendSymbolPathWide method appends directories to the symbol path.
+old-location: debugger\appendsymbolpathwide.htm
+old-project: debugger
+ms.assetid: 184f40ff-be43-482c-8620-382f11f95548
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: AppendSymbolPathWide method [Windows Debugging], debugger.appendsymbolpathwide, IDebugSymbols3::AppendSymbolPathWide, IDebugSymbols3 interface [Windows Debugging], AppendSymbolPathWide method, AppendSymbolPathWide method [Windows Debugging], IDebugSymbols3 interface, AppendSymbolPathWide, IDebugSymbols3, dbgeng/IDebugSymbols3::AppendSymbolPathWide
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Dbgeng.h
+apiname:
+-	IDebugSymbols3.AppendSymbolPathWide
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NS:storport._SCSI_WMI_REQUEST_BLOCK
-title : "_SCSI_WMI_REQUEST_BLOCK"
-author : windows-driver-content
-description : This structure is a special version of a SCSI_REQUEST_BLOCK for use with WMI commands.
-old-location : storage\scsi_wmi_request_block.htm
-old-project : storage
-ms.assetid : 6dc10c3a-b47e-42c3-a209-34977fb219f1
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : PSCSI_WMI_REQUEST_BLOCK, storage.scsi_wmi_request_block, _SCSI_WMI_REQUEST_BLOCK, *PSCSI_WMI_REQUEST_BLOCK, SCSI_WMI_REQUEST_BLOCK structure [Storage Devices], srb/PSCSI_WMI_REQUEST_BLOCK, structs-scsibus_6188bca6-990b-4471-b8ea-2cd5b2b27d51.xml, SCSI_WMI_REQUEST_BLOCK, PSCSI_WMI_REQUEST_BLOCK structure pointer [Storage Devices], srb/SCSI_WMI_REQUEST_BLOCK
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : storport.h
-req.include-header : Storport.h, Srb.h, Storport.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SCSI_WMI_REQUEST_BLOCK, *PSCSI_WMI_REQUEST_BLOCK
-req.product : Windows 10 or later.
+UID: NS:storport._SCSI_WMI_REQUEST_BLOCK
+title: "_SCSI_WMI_REQUEST_BLOCK"
+author: windows-driver-content
+description: This structure is a special version of a SCSI_REQUEST_BLOCK for use with WMI commands.
+old-location: storage\scsi_wmi_request_block.htm
+old-project: storage
+ms.assetid: 6dc10c3a-b47e-42c3-a209-34977fb219f1
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: PSCSI_WMI_REQUEST_BLOCK, storage.scsi_wmi_request_block, _SCSI_WMI_REQUEST_BLOCK, *PSCSI_WMI_REQUEST_BLOCK, SCSI_WMI_REQUEST_BLOCK structure [Storage Devices], srb/PSCSI_WMI_REQUEST_BLOCK, structs-scsibus_6188bca6-990b-4471-b8ea-2cd5b2b27d51.xml, SCSI_WMI_REQUEST_BLOCK, PSCSI_WMI_REQUEST_BLOCK structure pointer [Storage Devices], srb/SCSI_WMI_REQUEST_BLOCK
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: storport.h
+req.include-header: Storport.h, Srb.h, Storport.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	srb.h
+apiname:
+-	SCSI_WMI_REQUEST_BLOCK
+product: Windows
+targetos: Windows
+req.typenames: SCSI_WMI_REQUEST_BLOCK, *PSCSI_WMI_REQUEST_BLOCK
+req.product: Windows 10 or later.
 ---
 
 # _SCSI_WMI_REQUEST_BLOCK structure

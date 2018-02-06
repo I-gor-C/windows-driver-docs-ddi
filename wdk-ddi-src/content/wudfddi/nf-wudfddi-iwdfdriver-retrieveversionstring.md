@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFDriver.RetrieveVersionString
-title : IWDFDriver::RetrieveVersionString method
-author : windows-driver-content
-description : The RetrieveVersionString method retrieves the version of the framework.
-old-location : wdf\iwdfdriver_retrieveversionstring.htm
-old-project : wdf
-ms.assetid : 2fa320df-bafd-42f4-a0a1-14151c39d68a
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : IWDFDriver::RetrieveVersionString, RetrieveVersionString method, IWDFDriver, wdf.iwdfdriver_retrieveversionstring, RetrieveVersionString method, IWDFDriver interface, IWDFDriver interface, RetrieveVersionString method, RetrieveVersionString, umdf.iwdfdriver_retrieveversionstring, UMDFDriverObjectRef_fea0fb04-a861-44b6-8552-150454f9933d.xml, wudfddi/IWDFDriver::RetrieveVersionString
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.5
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFDriver.RetrieveVersionString
+title: IWDFDriver::RetrieveVersionString method
+author: windows-driver-content
+description: The RetrieveVersionString method retrieves the version of the framework.
+old-location: wdf\iwdfdriver_retrieveversionstring.htm
+old-project: wdf
+ms.assetid: 2fa320df-bafd-42f4-a0a1-14151c39d68a
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: IWDFDriver::RetrieveVersionString, RetrieveVersionString method, IWDFDriver, wdf.iwdfdriver_retrieveversionstring, RetrieveVersionString method, IWDFDriver interface, IWDFDriver interface, RetrieveVersionString method, RetrieveVersionString, umdf.iwdfdriver_retrieveversionstring, UMDFDriverObjectRef_fea0fb04-a861-44b6-8552-150454f9933d.xml, wudfddi/IWDFDriver::RetrieveVersionString
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.5
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFDriver.RetrieveVersionString
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

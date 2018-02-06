@@ -1,41 +1,46 @@
 ---
-UID : NC:ndis.PROTOCOL_CM_INCOMING_CALL_COMPLETE
-title : PROTOCOL_CM_INCOMING_CALL_COMPLETE
-author : windows-driver-content
-description : The ProtocolCmIncomingCallComplete function is required.
-old-location : netvista\protocolcmincomingcallcomplete.htm
-old-project : netvista
-ms.assetid : 353e929b-17c8-47e8-82fd-b646e93a5b9a
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.protocolcmincomingcallcomplete, ProtocolCmIncomingCallComplete callback function [Network Drivers Starting with Windows Vista], ProtocolCmIncomingCallComplete, PROTOCOL_CM_INCOMING_CALL_COMPLETE, PROTOCOL_CM_INCOMING_CALL_COMPLETE, ndis/ProtocolCmIncomingCallComplete, condis_call_manager_ref_0760b8c9-29b8-40ff-b8a9-03e4c4f792e2.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see       ProtocolCmIncomingCallComplete (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see       ProtocolCmIncomingCallComplete (NDIS 5.1)) in Windows XP.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
+UID: NC:ndis.PROTOCOL_CM_INCOMING_CALL_COMPLETE
+title: PROTOCOL_CM_INCOMING_CALL_COMPLETE
+author: windows-driver-content
+description: The ProtocolCmIncomingCallComplete function is required.
+old-location: netvista\protocolcmincomingcallcomplete.htm
+old-project: netvista
+ms.assetid: 353e929b-17c8-47e8-82fd-b646e93a5b9a
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.protocolcmincomingcallcomplete, ProtocolCmIncomingCallComplete callback function [Network Drivers Starting with Windows Vista], ProtocolCmIncomingCallComplete, PROTOCOL_CM_INCOMING_CALL_COMPLETE, PROTOCOL_CM_INCOMING_CALL_COMPLETE, ndis/ProtocolCmIncomingCallComplete, condis_call_manager_ref_0760b8c9-29b8-40ff-b8a9-03e4c4f792e2.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see       ProtocolCmIncomingCallComplete (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see       ProtocolCmIncomingCallComplete (NDIS 5.1)) in Windows XP.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ndis.h
+apiname:
+-	ProtocolCmIncomingCallComplete
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_OPENADAPTER
-title : PFND3DDDI_OPENADAPTER
-author : windows-driver-content
-description : The OpenAdapter function creates a graphics adapter object that is referenced in subsequent calls.
-old-location : display\openadapter.htm
-old-project : display
-ms.assetid : 41dc9ee4-e9bc-4ebd-9b90-6446ded6ea16
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.openadapter, OpenAdapter callback function [Display Devices], OpenAdapter, PFND3DDDI_OPENADAPTER, PFND3DDDI_OPENADAPTER, d3dumddi/OpenAdapter, UserModeDisplayDriver_Functions_1b93a0e5-3f89-47aa-9e63-3ae50f1acd1e.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_OPENADAPTER
+title: PFND3DDDI_OPENADAPTER
+author: windows-driver-content
+description: The OpenAdapter function creates a graphics adapter object that is referenced in subsequent calls.
+old-location: display\openadapter.htm
+old-project: display
+ms.assetid: 41dc9ee4-e9bc-4ebd-9b90-6446ded6ea16
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.openadapter, OpenAdapter callback function [Display Devices], OpenAdapter, PFND3DDDI_OPENADAPTER, PFND3DDDI_OPENADAPTER, d3dumddi/OpenAdapter, UserModeDisplayDriver_Functions_1b93a0e5-3f89-47aa-9e63-3ae50f1acd1e.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	OpenAdapter
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

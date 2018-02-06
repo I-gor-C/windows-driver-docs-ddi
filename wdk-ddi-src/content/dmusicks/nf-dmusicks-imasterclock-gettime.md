@@ -1,41 +1,46 @@
 ---
-UID : NF:dmusicks.IMasterClock.GetTime
-title : IMasterClock::GetTime method
-author : windows-driver-content
-description : The GetTime method retrieves the current reference time read from the master clock.
-old-location : audio\imasterclock_gettime.htm
-old-project : audio
-ms.assetid : 9e88a94d-ce25-43ee-8187-30b406e8d9e4
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : dmusicks/IMasterClock::GetTime, IMasterClock, GetTime method [Audio Devices], IMasterClock interface, IMasterClock interface [Audio Devices], GetTime method, IMasterClock::GetTime, audmp-routines_08af6e05-c432-4560-91fb-f17687291fc0.xml, audio.imasterclock_gettime, GetTime, GetTime method [Audio Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dmusicks.h
-req.include-header : Dmusicks.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dmusicks.h
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DMUS_STREAM_TYPE
+UID: NF:dmusicks.IMasterClock.GetTime
+title: IMasterClock::GetTime method
+author: windows-driver-content
+description: The GetTime method retrieves the current reference time read from the master clock.
+old-location: audio\imasterclock_gettime.htm
+old-project: audio
+ms.assetid: 9e88a94d-ce25-43ee-8187-30b406e8d9e4
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: dmusicks/IMasterClock::GetTime, IMasterClock, GetTime method [Audio Devices], IMasterClock interface, IMasterClock interface [Audio Devices], GetTime method, IMasterClock::GetTime, audmp-routines_08af6e05-c432-4560-91fb-f17687291fc0.xml, audio.imasterclock_gettime, GetTime, GetTime method [Audio Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dmusicks.h
+req.include-header: Dmusicks.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dmusicks.h
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dmusicks.h
+apiname:
+-	IMasterClock.GetTime
+product: Windows
+targetos: Windows
+req.typenames: DMUS_STREAM_TYPE
 ---
 
 

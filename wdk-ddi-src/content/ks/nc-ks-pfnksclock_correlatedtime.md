@@ -1,41 +1,46 @@
 ---
-UID : NC:ks.PFNKSCLOCK_CORRELATEDTIME
-title : PFNKSCLOCK_CORRELATEDTIME
-author : windows-driver-content
-description : KStrClockGetCorrelatedTime is a system-supplied routine that retrieves both the current system time and the corresponding clock tick count since boot.
-old-location : stream\kstrclockgetcorrelatedtime.htm
-old-project : stream
-ms.assetid : 1fc71718-a1fb-4e82-9805-7830e761cd6d
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.kstrclockgetcorrelatedtime, KStrClockGetCorrelatedTime, KStrClockGetCorrelatedTime routine [Streaming Media Devices], KStrClockGetCorrelatedTime, PFNKSCLOCK_CORRELATEDTIME, PFNKSCLOCK_CORRELATEDTIME, ks/KStrClockGetCorrelatedTime, ksfunc_dd229adf-e2be-44ac-bda2-f947b0f559a3.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KEYWORDSELECTOR
+UID: NC:ks.PFNKSCLOCK_CORRELATEDTIME
+title: PFNKSCLOCK_CORRELATEDTIME
+author: windows-driver-content
+description: KStrClockGetCorrelatedTime is a system-supplied routine that retrieves both the current system time and the corresponding clock tick count since boot.
+old-location: stream\kstrclockgetcorrelatedtime.htm
+old-project: stream
+ms.assetid: 1fc71718-a1fb-4e82-9805-7830e761cd6d
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.kstrclockgetcorrelatedtime, KStrClockGetCorrelatedTime, KStrClockGetCorrelatedTime routine [Streaming Media Devices], KStrClockGetCorrelatedTime, PFNKSCLOCK_CORRELATEDTIME, PFNKSCLOCK_CORRELATEDTIME, ks/KStrClockGetCorrelatedTime, ksfunc_dd229adf-e2be-44ac-bda2-f947b0f559a3.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	ks.h
+apiname:
+-	KStrClockGetCorrelatedTime
+product: Windows
+targetos: Windows
+req.typenames: KEYWORDSELECTOR
 ---
 
 

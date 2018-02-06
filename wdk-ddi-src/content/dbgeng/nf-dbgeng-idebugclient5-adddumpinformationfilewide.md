@@ -1,41 +1,47 @@
 ---
-UID : NF:dbgeng.IDebugClient5.AddDumpInformationFileWide
-title : IDebugClient5::AddDumpInformationFileWide method
-author : windows-driver-content
-description : The AddDumpInformationFileWide method registers additional files containing supporting information that will be used when opening a dump file. The ASCII version of this method is AddDumpInformationFile.
-old-location : debugger\adddumpinformationfilewide.htm
-old-project : debugger
-ms.assetid : 0b6318de-4f8e-43e8-ad86-c1fc52097662
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : AddDumpInformationFileWide method [Windows Debugging], IDebugClient5 interface, AddDumpInformationFileWide, AddDumpInformationFileWide method [Windows Debugging], dbgeng/IDebugClient4::AddDumpInformationFileWide, debugger.adddumpinformationfilewide, IDebugClient5 interface [Windows Debugging], AddDumpInformationFileWide method, IDebugClient5::AddDumpInformationFileWide, IDebugClient4::AddDumpInformationFileWide, IDebugClient_515044fe-647d-447a-bb74-5738d4d08d6d.xml, IDebugClient4 interface [Windows Debugging], AddDumpInformationFileWide method, IDebugClient5, AddDumpInformationFileWide method [Windows Debugging], IDebugClient4 interface, dbgeng/IDebugClient5::AddDumpInformationFileWide
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugClient5.AddDumpInformationFileWide
+title: IDebugClient5::AddDumpInformationFileWide method
+author: windows-driver-content
+description: The AddDumpInformationFileWide method registers additional files containing supporting information that will be used when opening a dump file. The ASCII version of this method is AddDumpInformationFile.
+old-location: debugger\adddumpinformationfilewide.htm
+old-project: debugger
+ms.assetid: 0b6318de-4f8e-43e8-ad86-c1fc52097662
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: AddDumpInformationFileWide method [Windows Debugging], IDebugClient5 interface, AddDumpInformationFileWide, AddDumpInformationFileWide method [Windows Debugging], dbgeng/IDebugClient4::AddDumpInformationFileWide, debugger.adddumpinformationfilewide, IDebugClient5 interface [Windows Debugging], AddDumpInformationFileWide method, IDebugClient5::AddDumpInformationFileWide, IDebugClient4::AddDumpInformationFileWide, IDebugClient_515044fe-647d-447a-bb74-5738d4d08d6d.xml, IDebugClient4 interface [Windows Debugging], AddDumpInformationFileWide method, IDebugClient5, AddDumpInformationFileWide method [Windows Debugging], IDebugClient4 interface, dbgeng/IDebugClient5::AddDumpInformationFileWide
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugClient4.AddDumpInformationFileWide
+-	IDebugClient5.AddDumpInformationFileWide
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

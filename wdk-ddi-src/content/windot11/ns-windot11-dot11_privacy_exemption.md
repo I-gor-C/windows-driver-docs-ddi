@@ -1,42 +1,47 @@
 ---
-UID : NS:windot11.DOT11_PRIVACY_EXEMPTION
-title : DOT11_PRIVACY_EXEMPTION
-author : windows-driver-content
-description : Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
-old-location : netvista\dot11_privacy_exemption.htm
-old-project : netvista
-ms.assetid : ee4499d0-3275-419d-9ab2-89edd77e0374
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : windot11/PDOT11_PRIVACY_EXEMPTION, PDOT11_PRIVACY_EXEMPTION structure pointer [Network Drivers Starting with Windows Vista], netvista.dot11_privacy_exemption, Native_802.11_data_types_8dd63374-57b1-4dc8-9dca-76dcc5ade9fd.xml, windot11/DOT11_PRIVACY_EXEMPTION, PDOT11_PRIVACY_EXEMPTION, DOT11_PRIVACY_EXEMPTION, DOT11_PRIVACY_EXEMPTION structure [Network Drivers Starting with Windows Vista], *PDOT11_PRIVACY_EXEMPTION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : windot11.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating   systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT11_PRIVACY_EXEMPTION, *PDOT11_PRIVACY_EXEMPTION
-req.product : Windows 10 or later.
+UID: NS:windot11.DOT11_PRIVACY_EXEMPTION
+title: DOT11_PRIVACY_EXEMPTION
+author: windows-driver-content
+description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+old-location: netvista\dot11_privacy_exemption.htm
+old-project: netvista
+ms.assetid: ee4499d0-3275-419d-9ab2-89edd77e0374
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: windot11/PDOT11_PRIVACY_EXEMPTION, PDOT11_PRIVACY_EXEMPTION structure pointer [Network Drivers Starting with Windows Vista], netvista.dot11_privacy_exemption, Native_802.11_data_types_8dd63374-57b1-4dc8-9dca-76dcc5ade9fd.xml, windot11/DOT11_PRIVACY_EXEMPTION, PDOT11_PRIVACY_EXEMPTION, DOT11_PRIVACY_EXEMPTION, DOT11_PRIVACY_EXEMPTION structure [Network Drivers Starting with Windows Vista], *PDOT11_PRIVACY_EXEMPTION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: windot11.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	windot11.h
+apiname:
+-	DOT11_PRIVACY_EXEMPTION
+product: Windows
+targetos: Windows
+req.typenames: DOT11_PRIVACY_EXEMPTION, *PDOT11_PRIVACY_EXEMPTION
+req.product: Windows 10 or later.
 ---
 
 # DOT11_PRIVACY_EXEMPTION structure

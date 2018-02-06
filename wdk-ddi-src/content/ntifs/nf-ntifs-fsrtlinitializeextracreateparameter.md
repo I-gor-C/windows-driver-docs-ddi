@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.FsRtlInitializeExtraCreateParameter
-title : FsRtlInitializeExtraCreateParameter function
-author : windows-driver-content
-description : The FsRtlInitializeExtraCreateParameter routine initializes an extra create parameter (ECP) context structure.
-old-location : ifsk\fsrtlinitializeextracreateparameter.htm
-old-project : ifsk
-ms.assetid : e3be12e4-84f3-4bd5-af9a-26ad89948e50
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.fsrtlinitializeextracreateparameter, ntifs/FsRtlInitializeExtraCreateParameter, fsrtlref_266d4d18-e024-42e8-8ca1-fa8b6fabef9b.xml, FsRtlInitializeExtraCreateParameter routine [Installable File System Drivers], FsRtlInitializeExtraCreateParameter
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : The FsRtlInitializeExtraCreateParameter routine is available starting with Windows 7.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.FsRtlInitializeExtraCreateParameter
+title: FsRtlInitializeExtraCreateParameter function
+author: windows-driver-content
+description: The FsRtlInitializeExtraCreateParameter routine initializes an extra create parameter (ECP) context structure.
+old-location: ifsk\fsrtlinitializeextracreateparameter.htm
+old-project: ifsk
+ms.assetid: e3be12e4-84f3-4bd5-af9a-26ad89948e50
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.fsrtlinitializeextracreateparameter, ntifs/FsRtlInitializeExtraCreateParameter, fsrtlref_266d4d18-e024-42e8-8ca1-fa8b6fabef9b.xml, FsRtlInitializeExtraCreateParameter routine [Installable File System Drivers], FsRtlInitializeExtraCreateParameter
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: The FsRtlInitializeExtraCreateParameter routine is available starting with Windows 7.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	FsRtlInitializeExtraCreateParameter
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

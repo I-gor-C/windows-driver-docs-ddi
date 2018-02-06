@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisFDirectOidRequestComplete
-title : NdisFDirectOidRequestComplete function
-author : windows-driver-content
-description : Filter drivers call the NdisFDirectOidRequestComplete function to return the final status of a direct OID request for which the driver's FilterDirectOidRequest function returned NDIS_STATUS_PENDING.
-old-location : netvista\ndisfdirectoidrequestcomplete.htm
-old-project : netvista
-ms.assetid : b6b4d4f4-63d5-496c-9082-f2e8d1a174ec
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : ndis_request_direct_ref_b61f2fdf-0fb8-4df8-8637-a4db671d008f.xml, NdisFDirectOidRequestComplete function [Network Drivers Starting with Windows Vista], netvista.ndisfdirectoidrequestcomplete, NdisFDirectOidRequestComplete, ndis/NdisFDirectOidRequestComplete
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported in NDIS 6.1 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisFDirectOidRequestComplete
+title: NdisFDirectOidRequestComplete function
+author: windows-driver-content
+description: Filter drivers call the NdisFDirectOidRequestComplete function to return the final status of a direct OID request for which the driver's FilterDirectOidRequest function returned NDIS_STATUS_PENDING.
+old-location: netvista\ndisfdirectoidrequestcomplete.htm
+old-project: netvista
+ms.assetid: b6b4d4f4-63d5-496c-9082-f2e8d1a174ec
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: ndis_request_direct_ref_b61f2fdf-0fb8-4df8-8637-a4db671d008f.xml, NdisFDirectOidRequestComplete function [Network Drivers Starting with Windows Vista], netvista.ndisfdirectoidrequestcomplete, NdisFDirectOidRequestComplete, ndis/NdisFDirectOidRequestComplete
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported in NDIS 6.1 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisFDirectOidRequestComplete
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

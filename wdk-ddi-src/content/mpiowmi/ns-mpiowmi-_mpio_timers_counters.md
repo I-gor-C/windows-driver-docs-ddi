@@ -1,41 +1,46 @@
 ---
-UID : NS:mpiowmi._MPIO_TIMERS_COUNTERS
-title : "_MPIO_TIMERS_COUNTERS"
-author : windows-driver-content
-description : The MPIO_TIMERS_COUNTERS structure controls the timer counters that affect all devices whose controlling DSMs do not implement independent timer counter settings.
-old-location : storage\mpio_timers_counters.htm
-old-project : storage
-ms.assetid : edbca8b0-53c1-4538-ac96-52238d75168d
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : mpiowmi/PMPIO_TIMERS_COUNTERS, _MPIO_TIMERS_COUNTERS, PMPIO_TIMERS_COUNTERS, mpiowmi/MPIO_TIMERS_COUNTERS, MPIO_TIMERS_COUNTERS structure [Storage Devices], PMPIO_TIMERS_COUNTERS structure pointer [Storage Devices], MPIO_TIMERS_COUNTERS, storage.mpio_timers_counters, *PMPIO_TIMERS_COUNTERS, structs-scsibus_4e4255c8-94e3-4eb0-bf6b-e5c8cddba010.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : mpiowmi.h
-req.include-header : Mpiowmi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PMPIO_TIMERS_COUNTERS, MPIO_TIMERS_COUNTERS"
+UID: NS:mpiowmi._MPIO_TIMERS_COUNTERS
+title: "_MPIO_TIMERS_COUNTERS"
+author: windows-driver-content
+description: The MPIO_TIMERS_COUNTERS structure controls the timer counters that affect all devices whose controlling DSMs do not implement independent timer counter settings.
+old-location: storage\mpio_timers_counters.htm
+old-project: storage
+ms.assetid: edbca8b0-53c1-4538-ac96-52238d75168d
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: mpiowmi/PMPIO_TIMERS_COUNTERS, _MPIO_TIMERS_COUNTERS, PMPIO_TIMERS_COUNTERS, mpiowmi/MPIO_TIMERS_COUNTERS, MPIO_TIMERS_COUNTERS structure [Storage Devices], PMPIO_TIMERS_COUNTERS structure pointer [Storage Devices], MPIO_TIMERS_COUNTERS, storage.mpio_timers_counters, *PMPIO_TIMERS_COUNTERS, structs-scsibus_4e4255c8-94e3-4eb0-bf6b-e5c8cddba010.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: mpiowmi.h
+req.include-header: Mpiowmi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	mpiowmi.h
+apiname:
+-	MPIO_TIMERS_COUNTERS
+product: Windows
+targetos: Windows
+req.typenames: "*PMPIO_TIMERS_COUNTERS, MPIO_TIMERS_COUNTERS"
 ---
 
 # _MPIO_TIMERS_COUNTERS structure

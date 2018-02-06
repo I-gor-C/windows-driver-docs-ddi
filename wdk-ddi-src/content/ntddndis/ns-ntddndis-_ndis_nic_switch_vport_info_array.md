@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddndis._NDIS_NIC_SWITCH_VPORT_INFO_ARRAY
-title : "_NDIS_NIC_SWITCH_VPORT_INFO_ARRAY"
-author : windows-driver-content
-description : The NDIS_NIC_SWITCH_VPORT_INFO_ARRAY structure specifies an array. Each element in the array specifies the attributes of a virtual port (VPort) that has been created on a network adapter's network adapter switch.
-old-location : netvista\ndis_nic_switch_vport_info_array.htm
-old-project : netvista
-ms.assetid : 64bb0edf-b281-40cc-b36e-6ae1fb71ccb4
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : "_NDIS_NIC_SWITCH_VPORT_INFO_ARRAY, NDIS_NIC_SWITCH_VPORT_INFO_ARRAY, *PNDIS_NIC_SWITCH_VPORT_INFO_ARRAY, PNDIS_NIC_SWITCH_VPORT_INFO_ARRAY structure pointer [Network Drivers Starting with Windows Vista], ntddndis/NDIS_NIC_SWITCH_VPORT_INFO_ARRAY, netvista.ndis_nic_switch_vport_info_array, PNDIS_NIC_SWITCH_VPORT_INFO_ARRAY, NDIS_NIC_SWITCH_VPORT_INFO_ARRAY structure [Network Drivers Starting with Windows Vista], ntddndis/PNDIS_NIC_SWITCH_VPORT_INFO_ARRAY"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.30 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_NIC_SWITCH_VPORT_INFO_ARRAY, *PNDIS_NIC_SWITCH_VPORT_INFO_ARRAY
+UID: NS:ntddndis._NDIS_NIC_SWITCH_VPORT_INFO_ARRAY
+title: "_NDIS_NIC_SWITCH_VPORT_INFO_ARRAY"
+author: windows-driver-content
+description: The NDIS_NIC_SWITCH_VPORT_INFO_ARRAY structure specifies an array. Each element in the array specifies the attributes of a virtual port (VPort) that has been created on a network adapter's network adapter switch.
+old-location: netvista\ndis_nic_switch_vport_info_array.htm
+old-project: netvista
+ms.assetid: 64bb0edf-b281-40cc-b36e-6ae1fb71ccb4
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: "_NDIS_NIC_SWITCH_VPORT_INFO_ARRAY, NDIS_NIC_SWITCH_VPORT_INFO_ARRAY, *PNDIS_NIC_SWITCH_VPORT_INFO_ARRAY, PNDIS_NIC_SWITCH_VPORT_INFO_ARRAY structure pointer [Network Drivers Starting with Windows Vista], ntddndis/NDIS_NIC_SWITCH_VPORT_INFO_ARRAY, netvista.ndis_nic_switch_vport_info_array, PNDIS_NIC_SWITCH_VPORT_INFO_ARRAY, NDIS_NIC_SWITCH_VPORT_INFO_ARRAY structure [Network Drivers Starting with Windows Vista], ntddndis/PNDIS_NIC_SWITCH_VPORT_INFO_ARRAY"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.30 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddndis.h
+apiname:
+-	NDIS_NIC_SWITCH_VPORT_INFO_ARRAY
+product: Windows
+targetos: Windows
+req.typenames: NDIS_NIC_SWITCH_VPORT_INFO_ARRAY, *PNDIS_NIC_SWITCH_VPORT_INFO_ARRAY
 ---
 
 # _NDIS_NIC_SWITCH_VPORT_INFO_ARRAY structure

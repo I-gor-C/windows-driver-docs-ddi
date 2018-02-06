@@ -1,41 +1,46 @@
 ---
-UID : NS:dxgiddi.DXGI_DDI_BASE_CALLBACKS
-title : DXGI_DDI_BASE_CALLBACKS
-author : windows-driver-content
-description : The DXGI_DDI_BASE_CALLBACKS structure contains pointers to Microsoft Direct3D 10 runtime callback functions that the user-mode display driver can use.
-old-location : display\dxgi_ddi_base_callbacks.htm
-old-project : display
-ms.assetid : dd1690e2-7eef-4086-a3e1-9ca456b79a6f
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : UMDisplayDriver_Dx10param_Structs_6622df62-429f-438b-aa1a-61fd7fb8df65.xml, DXGI_DDI_BASE_CALLBACKS structure [Display Devices], DXGI_DDI_BASE_CALLBACKS, display.dxgi_ddi_base_callbacks, dxgiddi/DXGI_DDI_BASE_CALLBACKS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : dxgiddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGI_DDI_BASE_CALLBACKS
+UID: NS:dxgiddi.DXGI_DDI_BASE_CALLBACKS
+title: DXGI_DDI_BASE_CALLBACKS
+author: windows-driver-content
+description: The DXGI_DDI_BASE_CALLBACKS structure contains pointers to Microsoft Direct3D 10 runtime callback functions that the user-mode display driver can use.
+old-location: display\dxgi_ddi_base_callbacks.htm
+old-project: display
+ms.assetid: dd1690e2-7eef-4086-a3e1-9ca456b79a6f
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: UMDisplayDriver_Dx10param_Structs_6622df62-429f-438b-aa1a-61fd7fb8df65.xml, DXGI_DDI_BASE_CALLBACKS structure [Display Devices], DXGI_DDI_BASE_CALLBACKS, display.dxgi_ddi_base_callbacks, dxgiddi/DXGI_DDI_BASE_CALLBACKS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: dxgiddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	dxgiddi.h
+apiname:
+-	DXGI_DDI_BASE_CALLBACKS
+product: Windows
+targetos: Windows
+req.typenames: DXGI_DDI_BASE_CALLBACKS
 ---
 
 # DXGI_DDI_BASE_CALLBACKS structure

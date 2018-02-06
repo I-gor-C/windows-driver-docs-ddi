@@ -1,41 +1,46 @@
 ---
-UID : NS:ehstorioctl._ENUM_PDO_RESULTS
-title : "_ENUM_PDO_RESULTS"
-author : windows-driver-content
-description : This structure describes a result set of Physical Device Objects (PDOs) that are enumerated with IOCTL_EHSTOR_DEVICE_ENUMERATE_PDOS.
-old-location : storage\enum_pdo_results.htm
-old-project : storage
-ms.assetid : 80553c9e-3e80-4219-8cc0-2bd4dd6fa76b
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : ehstorioctl/PENUM_PDO_RESULTS, storage.enum_pdo_results, PENUM_PDO_RESULTS, *PENUM_PDO_RESULTS, ENUM_PDO_RESULTS structure [Storage Devices], PENUM_PDO_RESULTS structure pointer [Storage Devices], ehstorioctl/ENUM_PDO_RESULTS, structs-silo_45277a1e-1ca6-4bce-a952-b26860796f51.xml, _ENUM_PDO_RESULTS, ENUM_PDO_RESULTS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ehstorioctl.h
-req.include-header : EhStorIoctl.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PENUM_PDO_RESULTS, ENUM_PDO_RESULTS"
+UID: NS:ehstorioctl._ENUM_PDO_RESULTS
+title: "_ENUM_PDO_RESULTS"
+author: windows-driver-content
+description: This structure describes a result set of Physical Device Objects (PDOs) that are enumerated with IOCTL_EHSTOR_DEVICE_ENUMERATE_PDOS.
+old-location: storage\enum_pdo_results.htm
+old-project: storage
+ms.assetid: 80553c9e-3e80-4219-8cc0-2bd4dd6fa76b
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: ehstorioctl/PENUM_PDO_RESULTS, storage.enum_pdo_results, PENUM_PDO_RESULTS, *PENUM_PDO_RESULTS, ENUM_PDO_RESULTS structure [Storage Devices], PENUM_PDO_RESULTS structure pointer [Storage Devices], ehstorioctl/ENUM_PDO_RESULTS, structs-silo_45277a1e-1ca6-4bce-a952-b26860796f51.xml, _ENUM_PDO_RESULTS, ENUM_PDO_RESULTS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ehstorioctl.h
+req.include-header: EhStorIoctl.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	EhStorIoctl.h
+apiname:
+-	ENUM_PDO_RESULTS
+product: Windows
+targetos: Windows
+req.typenames: "*PENUM_PDO_RESULTS, ENUM_PDO_RESULTS"
 ---
 
 # _ENUM_PDO_RESULTS structure

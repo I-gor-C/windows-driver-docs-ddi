@@ -1,41 +1,46 @@
 ---
-UID : NS:dispmprt._DXGK_AGP_INTERFACE
-title : "_DXGK_AGP_INTERFACE"
-author : windows-driver-content
-description : The DXGK_AGP_INTERFACE structure contains pointers to functions in the AGP interface, which is implemented by the display port driver.
-old-location : display\dxgk_agp_interface.htm
-old-project : display
-ms.assetid : ebaa2aba-426f-4f5f-b2bf-a8433cdc9205
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : "*PDXGK_AGP_INTERFACE, PDXGK_AGP_INTERFACE structure pointer [Display Devices], _DXGK_AGP_INTERFACE, dispmprt/DXGK_AGP_INTERFACE, display.dxgk_agp_interface, DmStructs_787b846e-2c2b-4fba-aa99-979a195c4305.xml, dispmprt/PDXGK_AGP_INTERFACE, DXGK_AGP_INTERFACE, PDXGK_AGP_INTERFACE, DXGK_AGP_INTERFACE structure [Display Devices]"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : dispmprt.h
-req.include-header : Dispmprt.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_AGP_INTERFACE, *PDXGK_AGP_INTERFACE
+UID: NS:dispmprt._DXGK_AGP_INTERFACE
+title: "_DXGK_AGP_INTERFACE"
+author: windows-driver-content
+description: The DXGK_AGP_INTERFACE structure contains pointers to functions in the AGP interface, which is implemented by the display port driver.
+old-location: display\dxgk_agp_interface.htm
+old-project: display
+ms.assetid: ebaa2aba-426f-4f5f-b2bf-a8433cdc9205
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: "*PDXGK_AGP_INTERFACE, PDXGK_AGP_INTERFACE structure pointer [Display Devices], _DXGK_AGP_INTERFACE, dispmprt/DXGK_AGP_INTERFACE, display.dxgk_agp_interface, DmStructs_787b846e-2c2b-4fba-aa99-979a195c4305.xml, dispmprt/PDXGK_AGP_INTERFACE, DXGK_AGP_INTERFACE, PDXGK_AGP_INTERFACE, DXGK_AGP_INTERFACE structure [Display Devices]"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: dispmprt.h
+req.include-header: Dispmprt.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	dispmprt.h
+apiname:
+-	DXGK_AGP_INTERFACE
+product: Windows
+targetos: Windows
+req.typenames: DXGK_AGP_INTERFACE, *PDXGK_AGP_INTERFACE
 ---
 
 # _DXGK_AGP_INTERFACE structure

@@ -1,41 +1,46 @@
 ---
-UID : NN:dbgeng.IDebugSymbols
-title : IDebugSymbols
-author : windows-driver-content
-description : IDebugSymbols interface
-old-location : debugger\idebugsymbols.htm
-old-project : debugger
-ms.assetid : 8040db26-0405-4dd3-87c5-b89d812549b5
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : debugger.idebugsymbols, IDebugSymbols interface [Windows Debugging], IDebugSymbols interface [Windows Debugging], described, IDebugSymbols, dbgeng/IDebugSymbols, IDebugSymbols_4046a7ad-b8ed-4a10-991e-f7d63f9e35d0.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NN:dbgeng.IDebugSymbols
+title: IDebugSymbols
+author: windows-driver-content
+description: IDebugSymbols interface
+old-location: debugger\idebugsymbols.htm
+old-project: debugger
+ms.assetid: 8040db26-0405-4dd3-87c5-b89d812549b5
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: debugger.idebugsymbols, IDebugSymbols interface [Windows Debugging], IDebugSymbols interface [Windows Debugging], described, IDebugSymbols, dbgeng/IDebugSymbols, IDebugSymbols_4046a7ad-b8ed-4a10-991e-f7d63f9e35d0.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugSymbols
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 # IDebugSymbols interface

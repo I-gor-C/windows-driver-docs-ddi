@@ -1,42 +1,47 @@
 ---
-UID : NC:video.PMINIPORT_SYNCHRONIZE_ROUTINE
-title : PMINIPORT_SYNCHRONIZE_ROUTINE
-author : windows-driver-content
-description : HwVidSynchronizeExecutionCallback is an optional miniport driver function, passed in calls to VideoPortSynchronizeExecution.
-old-location : display\hwvidsynchronizeexecutioncallback.htm
-old-project : display
-ms.assetid : 04e3bac6-c905-4c95-bd1b-e85b46c4296d
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.hwvidsynchronizeexecutioncallback, HwVidSynchronizeExecutionCallback callback function [Display Devices], HwVidSynchronizeExecutionCallback, PMINIPORT_SYNCHRONIZE_ROUTINE, PMINIPORT_SYNCHRONIZE_ROUTINE, video/HwVidSynchronizeExecutionCallback, VideoMiniport_Functions_98ebe64f-4ba9-475b-8095-b97dceaaf946.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VHF_CONFIG, *PVHF_CONFIG
-req.product : Windows 10 or later.
+UID: NC:video.PMINIPORT_SYNCHRONIZE_ROUTINE
+title: PMINIPORT_SYNCHRONIZE_ROUTINE
+author: windows-driver-content
+description: HwVidSynchronizeExecutionCallback is an optional miniport driver function, passed in calls to VideoPortSynchronizeExecution.
+old-location: display\hwvidsynchronizeexecutioncallback.htm
+old-project: display
+ms.assetid: 04e3bac6-c905-4c95-bd1b-e85b46c4296d
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.hwvidsynchronizeexecutioncallback, HwVidSynchronizeExecutionCallback callback function [Display Devices], HwVidSynchronizeExecutionCallback, PMINIPORT_SYNCHRONIZE_ROUTINE, PMINIPORT_SYNCHRONIZE_ROUTINE, video/HwVidSynchronizeExecutionCallback, VideoMiniport_Functions_98ebe64f-4ba9-475b-8095-b97dceaaf946.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	video.h
+apiname:
+-	HwVidSynchronizeExecutionCallback
+product: Windows
+targetos: Windows
+req.typenames: VHF_CONFIG, *PVHF_CONFIG
+req.product: Windows 10 or later.
 ---
 
 

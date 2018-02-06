@@ -1,42 +1,48 @@
 ---
-UID : NF:storport.StorPortGetDataInBufferScatterGatherList
-title : StorPortGetDataInBufferScatterGatherList function
-author : windows-driver-content
-description : Returns the scatter-gather list associated with the input data buffer of a SCSI request block (SRB).
-old-location : storage\storportgetdatainbufferscattergatherlist.htm
-old-project : storage
-ms.assetid : 015592AE-4AF6-48C8-BF79-6B22A6FCAB98
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : StorPortGetDataInBufferScatterGatherList routine [Storage Devices], storage.storportgetdatainbufferscattergatherlist, storport/StorPortGetDataInBufferScatterGatherList, StorPortGetDataInBufferScatterGatherList
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Storport.lib
-req.dll : 
-req.irql : Any
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STOR_SPINLOCK
-req.product : Windows 10 or later.
+UID: NF:storport.StorPortGetDataInBufferScatterGatherList
+title: StorPortGetDataInBufferScatterGatherList function
+author: windows-driver-content
+description: Returns the scatter-gather list associated with the input data buffer of a SCSI request block (SRB).
+old-location: storage\storportgetdatainbufferscattergatherlist.htm
+old-project: storage
+ms.assetid: 015592AE-4AF6-48C8-BF79-6B22A6FCAB98
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: StorPortGetDataInBufferScatterGatherList routine [Storage Devices], storage.storportgetdatainbufferscattergatherlist, storport/StorPortGetDataInBufferScatterGatherList, StorPortGetDataInBufferScatterGatherList
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Storport.lib
+req.dll: 
+req.irql: Any
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Storport.lib
+-	Storport.dll
+apiname:
+-	StorPortGetDataInBufferScatterGatherList
+product: Windows
+targetos: Windows
+req.typenames: STOR_SPINLOCK
+req.product: Windows 10 or later.
 ---
 
 

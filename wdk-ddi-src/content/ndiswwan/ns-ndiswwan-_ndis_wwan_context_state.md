@@ -1,41 +1,46 @@
 ---
-UID : NS:ndiswwan._NDIS_WWAN_CONTEXT_STATE
-title : "_NDIS_WWAN_CONTEXT_STATE"
-author : windows-driver-content
-description : The NDIS_WWAN_CONTEXT_STATE structure represents the Packet Data Protocol (PDP) context state of the MB device.
-old-location : netvista\ndis_wwan_context_state.htm
-old-project : netvista
-ms.assetid : 7918ee03-c1cb-4a38-8773-4a01832357d2
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : ndiswwan/NDIS_WWAN_CONTEXT_STATE, netvista.ndis_wwan_context_state, PNDIS_WWAN_CONTEXT_STATE structure pointer [Network Drivers Starting with Windows Vista], _NDIS_WWAN_CONTEXT_STATE, *PNDIS_WWAN_CONTEXT_STATE, ndiswwan/PNDIS_WWAN_CONTEXT_STATE, NDIS_WWAN_CONTEXT_STATE, PNDIS_WWAN_CONTEXT_STATE, NDIS_WWAN_CONTEXT_STATE structure [Network Drivers Starting with Windows Vista], WwanRef_87098fc7-4dbd-4331-81a4-53d425cc0bb0.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndiswwan.h
-req.include-header : Ndiswwan.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_WWAN_CONTEXT_STATE, *PNDIS_WWAN_CONTEXT_STATE
+UID: NS:ndiswwan._NDIS_WWAN_CONTEXT_STATE
+title: "_NDIS_WWAN_CONTEXT_STATE"
+author: windows-driver-content
+description: The NDIS_WWAN_CONTEXT_STATE structure represents the Packet Data Protocol (PDP) context state of the MB device.
+old-location: netvista\ndis_wwan_context_state.htm
+old-project: netvista
+ms.assetid: 7918ee03-c1cb-4a38-8773-4a01832357d2
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: ndiswwan/NDIS_WWAN_CONTEXT_STATE, netvista.ndis_wwan_context_state, PNDIS_WWAN_CONTEXT_STATE structure pointer [Network Drivers Starting with Windows Vista], _NDIS_WWAN_CONTEXT_STATE, *PNDIS_WWAN_CONTEXT_STATE, ndiswwan/PNDIS_WWAN_CONTEXT_STATE, NDIS_WWAN_CONTEXT_STATE, PNDIS_WWAN_CONTEXT_STATE, NDIS_WWAN_CONTEXT_STATE structure [Network Drivers Starting with Windows Vista], WwanRef_87098fc7-4dbd-4331-81a4-53d425cc0bb0.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndiswwan.h
+req.include-header: Ndiswwan.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndiswwan.h
+apiname:
+-	NDIS_WWAN_CONTEXT_STATE
+product: Windows
+targetos: Windows
+req.typenames: NDIS_WWAN_CONTEXT_STATE, *PNDIS_WWAN_CONTEXT_STATE
 ---
 
 # _NDIS_WWAN_CONTEXT_STATE structure

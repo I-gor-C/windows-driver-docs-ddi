@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.KeTryToAcquireSpinLockAtDpcLevel
-title : KeTryToAcquireSpinLockAtDpcLevel function
-author : windows-driver-content
-description : The KeTryToAcquireSpinLockAtDpcLevel routine attempts to acquire a spin lock at DISPATCH_LEVEL.
-old-location : kernel\ketrytoacquirespinlockatdpclevel.htm
-old-project : kernel
-ms.assetid : b7791969-027e-4df7-b720-1eb612597c56
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.ketrytoacquirespinlockatdpclevel, k105_416ac5db-d064-4ced-8cf8-311aca8dae7f.xml, KeTryToAcquireSpinLockAtDpcLevel, KeTryToAcquireSpinLockAtDpcLevel routine [Kernel-Mode Driver Architecture], wdm/KeTryToAcquireSpinLockAtDpcLevel
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Server 2003 with Service Pack 1 (SP1) and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : SpinLock, SpinlockRelease, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : DISPATCH_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.KeTryToAcquireSpinLockAtDpcLevel
+title: KeTryToAcquireSpinLockAtDpcLevel function
+author: windows-driver-content
+description: The KeTryToAcquireSpinLockAtDpcLevel routine attempts to acquire a spin lock at DISPATCH_LEVEL.
+old-location: kernel\ketrytoacquirespinlockatdpclevel.htm
+old-project: kernel
+ms.assetid: b7791969-027e-4df7-b720-1eb612597c56
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.ketrytoacquirespinlockatdpclevel, k105_416ac5db-d064-4ced-8cf8-311aca8dae7f.xml, KeTryToAcquireSpinLockAtDpcLevel, KeTryToAcquireSpinLockAtDpcLevel routine [Kernel-Mode Driver Architecture], wdm/KeTryToAcquireSpinLockAtDpcLevel
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Server 2003 with Service Pack 1 (SP1) and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: SpinLock, SpinlockRelease, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: DISPATCH_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	KeTryToAcquireSpinLockAtDpcLevel
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._D3DDDIENCRYPTED_BLOCK_INFO
-title : "_D3DDDIENCRYPTED_BLOCK_INFO"
-author : windows-driver-content
-description : The D3DDDIENCRYPTED_BLOCK_INFO structure describes the portions of a buffer that are encrypted.
-old-location : display\d3dddiencrypted_block_info.htm
-old-project : display
-ms.assetid : a02f782f-6918-479a-b3de-9443df2e9ffe
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DDDIENCRYPTED_BLOCK_INFO structure [Display Devices], D3DDDIENCRYPTED_BLOCK_INFO, _D3DDDIENCRYPTED_BLOCK_INFO, D3D_other_Structs_ca22516f-415c-47ff-9ba5-b837171cf77e.xml, display.d3dddiencrypted_block_info, d3dumddi/D3DDDIENCRYPTED_BLOCK_INFO
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : D3DDDIENCRYPTED_BLOCK_INFO is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDIENCRYPTED_BLOCK_INFO
+UID: NS:d3dumddi._D3DDDIENCRYPTED_BLOCK_INFO
+title: "_D3DDDIENCRYPTED_BLOCK_INFO"
+author: windows-driver-content
+description: The D3DDDIENCRYPTED_BLOCK_INFO structure describes the portions of a buffer that are encrypted.
+old-location: display\d3dddiencrypted_block_info.htm
+old-project: display
+ms.assetid: a02f782f-6918-479a-b3de-9443df2e9ffe
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DDDIENCRYPTED_BLOCK_INFO structure [Display Devices], D3DDDIENCRYPTED_BLOCK_INFO, _D3DDDIENCRYPTED_BLOCK_INFO, D3D_other_Structs_ca22516f-415c-47ff-9ba5-b837171cf77e.xml, display.d3dddiencrypted_block_info, d3dumddi/D3DDDIENCRYPTED_BLOCK_INFO
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: D3DDDIENCRYPTED_BLOCK_INFO is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	D3DDDIENCRYPTED_BLOCK_INFO
+product: Windows
+targetos: Windows
+req.typenames: D3DDDIENCRYPTED_BLOCK_INFO
 ---
 
 # _D3DDDIENCRYPTED_BLOCK_INFO structure

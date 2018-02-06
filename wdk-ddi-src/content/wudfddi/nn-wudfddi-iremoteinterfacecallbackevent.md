@@ -1,42 +1,47 @@
 ---
-UID : NN:wudfddi.IRemoteInterfaceCallbackEvent
-title : IRemoteInterfaceCallbackEvent
-author : windows-driver-content
-description : The IRemoteInterfaceCallbackEvent interface provides a callback function that the framework calls to notify the driver about device events that are associated with a device interface.
-old-location : wdf\iremoteinterfacecallbackevent.htm
-old-project : wdf
-ms.assetid : 72b68ed0-d14c-44b1-b848-40c427fe6c9a
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.iremoteinterfacecallbackevent, IRemoteInterfaceCallbackEvent interface, IRemoteInterfaceCallbackEvent interface, described, IRemoteInterfaceCallbackEvent, wudfddi/IRemoteInterfaceCallbackEvent, UMDFIoTargetObjectRef_9ce0aebc-e132-4d0e-b575-7ef1e19d9c30.xml, umdf.iremoteinterfacecallbackevent
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : wudfddi.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NN:wudfddi.IRemoteInterfaceCallbackEvent
+title: IRemoteInterfaceCallbackEvent
+author: windows-driver-content
+description: The IRemoteInterfaceCallbackEvent interface provides a callback function that the framework calls to notify the driver about device events that are associated with a device interface.
+old-location: wdf\iremoteinterfacecallbackevent.htm
+old-project: wdf
+ms.assetid: 72b68ed0-d14c-44b1-b848-40c427fe6c9a
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.iremoteinterfacecallbackevent, IRemoteInterfaceCallbackEvent interface, IRemoteInterfaceCallbackEvent interface, described, IRemoteInterfaceCallbackEvent, wudfddi/IRemoteInterfaceCallbackEvent, UMDFIoTargetObjectRef_9ce0aebc-e132-4d0e-b575-7ef1e19d9c30.xml, umdf.iremoteinterfacecallbackevent
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: wudfddi.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	wudfddi.h
+apiname:
+-	IRemoteInterfaceCallbackEvent
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 # IRemoteInterfaceCallbackEvent interface

@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGKARG_FLIPOVERLAY
-title : "_DXGKARG_FLIPOVERLAY"
-author : windows-driver-content
-description : The DXGKARG_FLIPOVERLAY structure describes a new allocation to display for the overlay.
-old-location : display\dxgkarg_flipoverlay.htm
-old-project : display
-ms.assetid : c5396581-e9f2-47eb-bb82-1e54f5def4d0
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DmStructs_8ff06344-e7f5-44b1-95fc-d3b363428d43.xml, display.dxgkarg_flipoverlay, DXGKARG_FLIPOVERLAY, d3dkmddi/DXGKARG_FLIPOVERLAY, _DXGKARG_FLIPOVERLAY, DXGKARG_FLIPOVERLAY structure [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGKARG_FLIPOVERLAY
+UID: NS:d3dkmddi._DXGKARG_FLIPOVERLAY
+title: "_DXGKARG_FLIPOVERLAY"
+author: windows-driver-content
+description: The DXGKARG_FLIPOVERLAY structure describes a new allocation to display for the overlay.
+old-location: display\dxgkarg_flipoverlay.htm
+old-project: display
+ms.assetid: c5396581-e9f2-47eb-bb82-1e54f5def4d0
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DmStructs_8ff06344-e7f5-44b1-95fc-d3b363428d43.xml, display.dxgkarg_flipoverlay, DXGKARG_FLIPOVERLAY, d3dkmddi/DXGKARG_FLIPOVERLAY, _DXGKARG_FLIPOVERLAY, DXGKARG_FLIPOVERLAY structure [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DXGKARG_FLIPOVERLAY
+product: Windows
+targetos: Windows
+req.typenames: DXGKARG_FLIPOVERLAY
 ---
 
 # _DXGKARG_FLIPOVERLAY structure

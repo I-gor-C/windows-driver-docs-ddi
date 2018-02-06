@@ -1,42 +1,48 @@
 ---
-UID : NF:wdm.IoCheckShareAccessEx
-title : IoCheckShareAccessEx function
-author : windows-driver-content
-description : The IoCheckShareAccessEx routine is called by file system drivers (FSDs) or other highest-level drivers to check whether shared access to a file object is permitted.
-old-location : kernel\iocheckshareaccessex.htm
-old-project : kernel
-ms.assetid : E6CDE415-FCC2-4039-B6DD-168113D9A490
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : IoCheckShareAccessEx, wdm/IoCheckShareAccessEx, kernel.iocheckshareaccessex, IoCheckShareAccessEx routine [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : 
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 7 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ntoskrnl.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.IoCheckShareAccessEx
+title: IoCheckShareAccessEx function
+author: windows-driver-content
+description: The IoCheckShareAccessEx routine is called by file system drivers (FSDs) or other highest-level drivers to check whether shared access to a file object is permitted.
+old-location: kernel\iocheckshareaccessex.htm
+old-project: kernel
+ms.assetid: E6CDE415-FCC2-4039-B6DD-168113D9A490
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: IoCheckShareAccessEx, wdm/IoCheckShareAccessEx, kernel.iocheckshareaccessex, IoCheckShareAccessEx routine [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: 
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 7 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ntoskrnl.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ntoskrnl.lib
+-	ntoskrnl.dll
+apiname:
+-	IoCheckShareAccessEx
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

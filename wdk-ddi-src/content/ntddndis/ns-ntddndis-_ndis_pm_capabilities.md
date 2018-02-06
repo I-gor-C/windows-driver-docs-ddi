@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddndis._NDIS_PM_CAPABILITIES
-title : "_NDIS_PM_CAPABILITIES"
-author : windows-driver-content
-description : The NDIS_PM_CAPABILITIES structure specifies power management capabilities of a network adapter.
-old-location : netvista\ndis_pm_capabilities.htm
-old-project : netvista
-ms.assetid : 713c8ecc-e0a5-480a-9c53-e331aeaeb38e
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NDIS_PM_CAPABILITIES structure [Network Drivers Starting with Windows Vista], miniport_power_management_ref_e70356b9-5c5a-4b38-b413-553a772da8b6.xml, _NDIS_PM_CAPABILITIES, PNDIS_PM_CAPABILITIES, ntddndis/NDIS_PM_CAPABILITIES, NDIS_PM_CAPABILITIES, PNDIS_PM_CAPABILITIES structure pointer [Network Drivers Starting with Windows Vista], *PNDIS_PM_CAPABILITIES, ntddndis/PNDIS_PM_CAPABILITIES, netvista.ndis_pm_capabilities
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddndis.h
-req.include-header : Ntddndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.20 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_PM_CAPABILITIES, *PNDIS_PM_CAPABILITIES
+UID: NS:ntddndis._NDIS_PM_CAPABILITIES
+title: "_NDIS_PM_CAPABILITIES"
+author: windows-driver-content
+description: The NDIS_PM_CAPABILITIES structure specifies power management capabilities of a network adapter.
+old-location: netvista\ndis_pm_capabilities.htm
+old-project: netvista
+ms.assetid: 713c8ecc-e0a5-480a-9c53-e331aeaeb38e
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NDIS_PM_CAPABILITIES structure [Network Drivers Starting with Windows Vista], miniport_power_management_ref_e70356b9-5c5a-4b38-b413-553a772da8b6.xml, _NDIS_PM_CAPABILITIES, PNDIS_PM_CAPABILITIES, ntddndis/NDIS_PM_CAPABILITIES, NDIS_PM_CAPABILITIES, PNDIS_PM_CAPABILITIES structure pointer [Network Drivers Starting with Windows Vista], *PNDIS_PM_CAPABILITIES, ntddndis/PNDIS_PM_CAPABILITIES, netvista.ndis_pm_capabilities
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddndis.h
+req.include-header: Ntddndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.20 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddndis.h
+apiname:
+-	NDIS_PM_CAPABILITIES
+product: Windows
+targetos: Windows
+req.typenames: NDIS_PM_CAPABILITIES, *PNDIS_PM_CAPABILITIES
 ---
 
 # _NDIS_PM_CAPABILITIES structure

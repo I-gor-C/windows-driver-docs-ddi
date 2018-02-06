@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfusb.IWDFUsbTargetDevice.FormatRequestForControlTransfer
-title : IWDFUsbTargetDevice::FormatRequestForControlTransfer method
-author : windows-driver-content
-description : The FormatRequestForControlTransfer method formats an I/O request object for a USB control transfer.
-old-location : wdf\iwdfusbtargetdevice_formatrequestforcontroltransfer.htm
-old-project : wdf
-ms.assetid : 7f75fbaa-06e8-4c4d-b1ee-c89a55889295
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : UMDFUSBref_01a86f28-7a72-4d7b-a2f5-1e254fb26192.xml, wdf.iwdfusbtargetdevice_formatrequestforcontroltransfer, IWDFUsbTargetDevice, umdf.iwdfusbtargetdevice_formatrequestforcontroltransfer, FormatRequestForControlTransfer, IWDFUsbTargetDevice interface, FormatRequestForControlTransfer method, wudfusb/IWDFUsbTargetDevice::FormatRequestForControlTransfer, FormatRequestForControlTransfer method, IWDFUsbTargetDevice interface, FormatRequestForControlTransfer method, IWDFUsbTargetDevice::FormatRequestForControlTransfer
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfusb.h
-req.include-header : Wudfusb.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.5
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfusb.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
-req.product : Windows 10 or later.
+UID: NF:wudfusb.IWDFUsbTargetDevice.FormatRequestForControlTransfer
+title: IWDFUsbTargetDevice::FormatRequestForControlTransfer method
+author: windows-driver-content
+description: The FormatRequestForControlTransfer method formats an I/O request object for a USB control transfer.
+old-location: wdf\iwdfusbtargetdevice_formatrequestforcontroltransfer.htm
+old-project: wdf
+ms.assetid: 7f75fbaa-06e8-4c4d-b1ee-c89a55889295
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: UMDFUSBref_01a86f28-7a72-4d7b-a2f5-1e254fb26192.xml, wdf.iwdfusbtargetdevice_formatrequestforcontroltransfer, IWDFUsbTargetDevice, umdf.iwdfusbtargetdevice_formatrequestforcontroltransfer, FormatRequestForControlTransfer, IWDFUsbTargetDevice interface, FormatRequestForControlTransfer method, wudfusb/IWDFUsbTargetDevice::FormatRequestForControlTransfer, FormatRequestForControlTransfer method, IWDFUsbTargetDevice interface, FormatRequestForControlTransfer method, IWDFUsbTargetDevice::FormatRequestForControlTransfer
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfusb.h
+req.include-header: Wudfusb.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.5
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfusb.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFUsbTargetDevice.FormatRequestForControlTransfer
+product: Windows
+targetos: Windows
+req.typenames: WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
+req.product: Windows 10 or later.
 ---
 
 

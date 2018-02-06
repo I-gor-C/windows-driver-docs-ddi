@@ -1,41 +1,46 @@
 ---
-UID : NF:fcb.RxInferFileType
-title : RxInferFileType function
-author : windows-driver-content
-description : RxInferFileType tries to infer the file type (directory or non-directory) from a member in the RX_CONTEXT structure.
-old-location : ifsk\rxinferfiletype.htm
-old-project : ifsk
-ms.assetid : 340b304c-5484-4d98-9ef4-8814c68443a0
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.rxinferfiletype, rxref_e020604c-fa08-40f3-895d-425347c73307.xml, fcb/RxInferFileType, RxInferFileType function [Installable File System Drivers], RxInferFileType
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fcb.h
-req.include-header : Rxcontx.h, Nodetype.h, Mrxfcb.h, Fcb.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FA_ENTRY, *PFA_ENTRY
+UID: NF:fcb.RxInferFileType
+title: RxInferFileType function
+author: windows-driver-content
+description: RxInferFileType tries to infer the file type (directory or non-directory) from a member in the RX_CONTEXT structure.
+old-location: ifsk\rxinferfiletype.htm
+old-project: ifsk
+ms.assetid: 340b304c-5484-4d98-9ef4-8814c68443a0
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.rxinferfiletype, rxref_e020604c-fa08-40f3-895d-425347c73307.xml, fcb/RxInferFileType, RxInferFileType function [Installable File System Drivers], RxInferFileType
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fcb.h
+req.include-header: Rxcontx.h, Nodetype.h, Mrxfcb.h, Fcb.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	fcb.h
+apiname:
+-	RxInferFileType
+product: Windows
+targetos: Windows
+req.typenames: FA_ENTRY, *PFA_ENTRY
 ---
 
 

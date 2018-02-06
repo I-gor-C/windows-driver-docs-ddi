@@ -1,42 +1,47 @@
 ---
-UID : NC:wdm.GET_IDLE_WAKE_INFO
-title : GET_IDLE_WAKE_INFO
-author : windows-driver-content
-description : The GetIdleWakeInfo routine enables the driver for a device to discover the device power states from which the device can signal a wake event.
-old-location : kernel\getidlewakeinfo.htm
-old-project : kernel
-ms.assetid : 51DE471E-5409-4ED9-BC50-29D18E8F5A16
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.getidlewakeinfo, GetIdleWakeInfo routine [Kernel-Mode Driver Architecture], GetIdleWakeInfo, GET_IDLE_WAKE_INFO, GET_IDLE_WAKE_INFO, wdm/GetIdleWakeInfo
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdm.h
-req.include-header : Wdm.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
-req.product : Windows 10 or later.
+UID: NC:wdm.GET_IDLE_WAKE_INFO
+title: GET_IDLE_WAKE_INFO
+author: windows-driver-content
+description: The GetIdleWakeInfo routine enables the driver for a device to discover the device power states from which the device can signal a wake event.
+old-location: kernel\getidlewakeinfo.htm
+old-project: kernel
+ms.assetid: 51DE471E-5409-4ED9-BC50-29D18E8F5A16
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.getidlewakeinfo, GetIdleWakeInfo routine [Kernel-Mode Driver Architecture], GetIdleWakeInfo, GET_IDLE_WAKE_INFO, GET_IDLE_WAKE_INFO, wdm/GetIdleWakeInfo
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdm.h
+req.include-header: Wdm.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Wdm.h
+apiname:
+-	GetIdleWakeInfo
+product: Windows
+targetos: Windows
+req.typenames: WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+req.product: Windows 10 or later.
 ---
 
 

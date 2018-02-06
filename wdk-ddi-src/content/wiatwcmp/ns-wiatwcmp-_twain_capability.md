@@ -1,42 +1,47 @@
 ---
-UID : NS:wiatwcmp._TWAIN_CAPABILITY
-title : "_TWAIN_CAPABILITY"
-author : windows-driver-content
-description : The TWAIN_CAPABILITY structure holds information used when a TWAIN-compatible application communicates with a WIA driver.
-old-location : image\twain_capability.htm
-old-project : image
-ms.assetid : 79a2155d-eb06-4095-9fe6-b95d93e46211
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : "*PTWAIN_CAPABILITY, image.twain_capability, PTWAIN_CAPABILITY structure pointer [Imaging Devices], TWAIN_CAPABILITY, _TWAIN_CAPABILITY, PTWAIN_CAPABILITY, TWAIN_CAPABILITY structure [Imaging Devices], wiastrct_12204cb8-d0ad-46d5-a741-4522ba28006b.xml, wiatwcmp/TWAIN_CAPABILITY, wiatwcmp/PTWAIN_CAPABILITY"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wiatwcmp.h
-req.include-header : Wiatwcmp.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Me and in Windows XP and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PTWAIN_CAPABILITY, TWAIN_CAPABILITY"
-req.product : Windows 10 or later.
+UID: NS:wiatwcmp._TWAIN_CAPABILITY
+title: "_TWAIN_CAPABILITY"
+author: windows-driver-content
+description: The TWAIN_CAPABILITY structure holds information used when a TWAIN-compatible application communicates with a WIA driver.
+old-location: image\twain_capability.htm
+old-project: image
+ms.assetid: 79a2155d-eb06-4095-9fe6-b95d93e46211
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: "*PTWAIN_CAPABILITY, image.twain_capability, PTWAIN_CAPABILITY structure pointer [Imaging Devices], TWAIN_CAPABILITY, _TWAIN_CAPABILITY, PTWAIN_CAPABILITY, TWAIN_CAPABILITY structure [Imaging Devices], wiastrct_12204cb8-d0ad-46d5-a741-4522ba28006b.xml, wiatwcmp/TWAIN_CAPABILITY, wiatwcmp/PTWAIN_CAPABILITY"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wiatwcmp.h
+req.include-header: Wiatwcmp.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Me and in Windows XP and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wiatwcmp.h
+apiname:
+-	TWAIN_CAPABILITY
+product: Windows
+targetos: Windows
+req.typenames: "*PTWAIN_CAPABILITY, TWAIN_CAPABILITY"
+req.product: Windows 10 or later.
 ---
 
 # _TWAIN_CAPABILITY structure

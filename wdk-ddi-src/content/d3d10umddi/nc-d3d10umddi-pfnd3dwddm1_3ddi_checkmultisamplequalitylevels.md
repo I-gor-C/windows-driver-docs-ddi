@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3DWDDM1_3DDI_CHECKMULTISAMPLEQUALITYLEVELS
-title : PFND3DWDDM1_3DDI_CHECKMULTISAMPLEQUALITYLEVELS
-author : windows-driver-content
-description : Retrieves the number of quality levels that the device supports for the specified number of samples. Supported.
-old-location : display\checkmultisamplequalitylevels_d3d11_2_.htm
-old-project : display
-ms.assetid : A3AD5F2F-4FB9-407C-A436-A0B5F96002D7
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.checkmultisamplequalitylevels_d3d11_2_, CheckMultisampleQualityLevels callback function [Display Devices], CheckMultisampleQualityLevels, PFND3DWDDM1_3DDI_CHECKMULTISAMPLEQUALITYLEVELS, PFND3DWDDM1_3DDI_CHECKMULTISAMPLEQUALITYLEVELS, d3d10umddi/CheckMultisampleQualityLevels
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8.1,WDDM 1.3
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3DWDDM1_3DDI_CHECKMULTISAMPLEQUALITYLEVELS
+title: PFND3DWDDM1_3DDI_CHECKMULTISAMPLEQUALITYLEVELS
+author: windows-driver-content
+description: Retrieves the number of quality levels that the device supports for the specified number of samples. Supported.
+old-location: display\checkmultisamplequalitylevels_d3d11_2_.htm
+old-project: display
+ms.assetid: A3AD5F2F-4FB9-407C-A436-A0B5F96002D7
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.checkmultisamplequalitylevels_d3d11_2_, CheckMultisampleQualityLevels callback function [Display Devices], CheckMultisampleQualityLevels, PFND3DWDDM1_3DDI_CHECKMULTISAMPLEQUALITYLEVELS, PFND3DWDDM1_3DDI_CHECKMULTISAMPLEQUALITYLEVELS, d3d10umddi/CheckMultisampleQualityLevels
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8.1,WDDM 1.3
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	D3d10umddi.h
+apiname:
+-	CheckMultisampleQualityLevels
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

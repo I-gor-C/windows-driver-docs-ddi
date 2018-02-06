@@ -1,42 +1,47 @@
 ---
-UID : NC:wdm.IO_CSQ_PEEK_NEXT_IRP
-title : IO_CSQ_PEEK_NEXT_IRP
-author : windows-driver-content
-description : The CsqPeekNextIrp routine is used by the system to find the next matching IRP in a driver-implemented, cancel-safe IRP queue.
-old-location : kernel\csqpeeknextirp.htm
-old-project : kernel
-ms.assetid : 0968fea0-4c66-497f-8a01-baacc90b2458
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.csqpeeknextirp, CsqPeekNextIrp routine [Kernel-Mode Driver Architecture], CsqPeekNextIrp, IO_CSQ_PEEK_NEXT_IRP, IO_CSQ_PEEK_NEXT_IRP, wdm/CsqPeekNextIrp, DrvrRtns_83ba77b2-17fa-4fdc-bfaf-c41289f54da9.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
-req.product : Windows 10 or later.
+UID: NC:wdm.IO_CSQ_PEEK_NEXT_IRP
+title: IO_CSQ_PEEK_NEXT_IRP
+author: windows-driver-content
+description: The CsqPeekNextIrp routine is used by the system to find the next matching IRP in a driver-implemented, cancel-safe IRP queue.
+old-location: kernel\csqpeeknextirp.htm
+old-project: kernel
+ms.assetid: 0968fea0-4c66-497f-8a01-baacc90b2458
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.csqpeeknextirp, CsqPeekNextIrp routine [Kernel-Mode Driver Architecture], CsqPeekNextIrp, IO_CSQ_PEEK_NEXT_IRP, IO_CSQ_PEEK_NEXT_IRP, wdm/CsqPeekNextIrp, DrvrRtns_83ba77b2-17fa-4fdc-bfaf-c41289f54da9.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Wdm.h
+apiname:
+-	CsqPeekNextIrp
+product: Windows
+targetos: Windows
+req.typenames: WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+req.product: Windows 10 or later.
 ---
 
 

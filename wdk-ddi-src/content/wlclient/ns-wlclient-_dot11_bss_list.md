@@ -1,42 +1,47 @@
 ---
-UID : NS:wlclient._DOT11_BSS_LIST
-title : "_DOT11_BSS_LIST"
-author : windows-driver-content
-description : Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
-old-location : netvista\dot11_bss_list.htm
-old-project : netvista
-ms.assetid : e5c31c4d-8c46-4af1-90de-0311cc90c6c0
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : "*PDOT11_BSS_LIST, netvista.dot11_bss_list, DOT11_BSS_LIST structure [Network Drivers Starting with Windows Vista], _DOT11_BSS_LIST, wlclient/DOT11_BSS_LIST, DOT11_BSS_LIST, PDOT11_BSS_LIST structure pointer [Network Drivers Starting with Windows Vista], Native_802.11_data_types_9b32efe4-bc69-4e6b-9475-449a77c110da.xml, PDOT11_BSS_LIST, wlclient/PDOT11_BSS_LIST"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wlclient.h
-req.include-header : Wlclient.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating   systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDOT11_BSS_LIST, DOT11_BSS_LIST"
-req.product : Windows 10 or later.
+UID: NS:wlclient._DOT11_BSS_LIST
+title: "_DOT11_BSS_LIST"
+author: windows-driver-content
+description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+old-location: netvista\dot11_bss_list.htm
+old-project: netvista
+ms.assetid: e5c31c4d-8c46-4af1-90de-0311cc90c6c0
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: "*PDOT11_BSS_LIST, netvista.dot11_bss_list, DOT11_BSS_LIST structure [Network Drivers Starting with Windows Vista], _DOT11_BSS_LIST, wlclient/DOT11_BSS_LIST, DOT11_BSS_LIST, PDOT11_BSS_LIST structure pointer [Network Drivers Starting with Windows Vista], Native_802.11_data_types_9b32efe4-bc69-4e6b-9475-449a77c110da.xml, PDOT11_BSS_LIST, wlclient/PDOT11_BSS_LIST"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wlclient.h
+req.include-header: Wlclient.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wlclient.h
+apiname:
+-	DOT11_BSS_LIST
+product: Windows
+targetos: Windows
+req.typenames: "*PDOT11_BSS_LIST, DOT11_BSS_LIST"
+req.product: Windows 10 or later.
 ---
 
 # _DOT11_BSS_LIST structure

@@ -1,41 +1,46 @@
 ---
-UID : NS:d3d10umddi.D3D11_1DDIARG_VIDEODECODERBEGINFRAME
-title : D3D11_1DDIARG_VIDEODECODERBEGINFRAME
-author : windows-driver-content
-description : Specifies a content key in a call to the VideoDecoderBeginFrame function.
-old-location : display\d3d11_1ddiarg_videodecoderbeginframe.htm
-old-project : display
-ms.assetid : e2664aec-dc96-4cf6-921b-ccd4ee6cf04e
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3D11_1DDIARG_VIDEODECODERBEGINFRAME, d3d10umddi/D3D11_1DDIARG_VIDEODECODERBEGINFRAME, display.d3d11_1ddiarg_videodecoderbeginframe, D3D11_1DDIARG_VIDEODECODERBEGINFRAME structure [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3D11_1DDIARG_VIDEODECODERBEGINFRAME
+UID: NS:d3d10umddi.D3D11_1DDIARG_VIDEODECODERBEGINFRAME
+title: D3D11_1DDIARG_VIDEODECODERBEGINFRAME
+author: windows-driver-content
+description: Specifies a content key in a call to the VideoDecoderBeginFrame function.
+old-location: display\d3d11_1ddiarg_videodecoderbeginframe.htm
+old-project: display
+ms.assetid: e2664aec-dc96-4cf6-921b-ccd4ee6cf04e
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3D11_1DDIARG_VIDEODECODERBEGINFRAME, d3d10umddi/D3D11_1DDIARG_VIDEODECODERBEGINFRAME, display.d3d11_1ddiarg_videodecoderbeginframe, D3D11_1DDIARG_VIDEODECODERBEGINFRAME structure [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	D3d10umddi.h
+apiname:
+-	D3D11_1DDIARG_VIDEODECODERBEGINFRAME
+product: Windows
+targetos: Windows
+req.typenames: D3D11_1DDIARG_VIDEODECODERBEGINFRAME
 ---
 
 # D3D11_1DDIARG_VIDEODECODERBEGINFRAME structure

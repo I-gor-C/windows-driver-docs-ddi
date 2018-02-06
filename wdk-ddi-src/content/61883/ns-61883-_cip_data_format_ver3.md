@@ -1,41 +1,46 @@
 ---
-UID : NS:61883._CIP_DATA_FORMAT_VER3
-title : "_CIP_DATA_FORMAT_VER3"
-author : windows-driver-content
-description : This structure is used by CipDataFormat.
-old-location : ieee\cip_data_format_ver3.htm
-old-project : IEEE
-ms.assetid : A7EDC949-A2C6-43E9-9CA0-886FEE5282F5
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : PCIP_DATA_FORMAT_VER3, 61883/CIP_DATA_FORMAT_VER3, CIP_DATA_FORMAT_VER3, _CIP_DATA_FORMAT_VER3, 61883/PCIP_DATA_FORMAT_VER3, PCIP_DATA_FORMAT_VER3 structure pointer [Buses], CIP_DATA_FORMAT, *PCIP_DATA_FORMAT, *PCIP_DATA_FORMAT_VER3, IEEE.cip_data_format_ver3, CIP_DATA_FORMAT_VER3 structure [Buses]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : 61883.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : CIP_DATA_FORMAT_VER3, *PCIP_DATA_FORMAT_VER3
+UID: NS:61883._CIP_DATA_FORMAT_VER3
+title: "_CIP_DATA_FORMAT_VER3"
+author: windows-driver-content
+description: This structure is used by CipDataFormat.
+old-location: ieee\cip_data_format_ver3.htm
+old-project: IEEE
+ms.assetid: A7EDC949-A2C6-43E9-9CA0-886FEE5282F5
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: PCIP_DATA_FORMAT_VER3, 61883/CIP_DATA_FORMAT_VER3, CIP_DATA_FORMAT_VER3, _CIP_DATA_FORMAT_VER3, 61883/PCIP_DATA_FORMAT_VER3, PCIP_DATA_FORMAT_VER3 structure pointer [Buses], CIP_DATA_FORMAT, *PCIP_DATA_FORMAT, *PCIP_DATA_FORMAT_VER3, IEEE.cip_data_format_ver3, CIP_DATA_FORMAT_VER3 structure [Buses]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: 61883.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	61883.h
+apiname:
+-	CIP_DATA_FORMAT_VER3
+product: Windows
+targetos: Windows
+req.typenames: CIP_DATA_FORMAT_VER3, *PCIP_DATA_FORMAT_VER3
 ---
 
 # _CIP_DATA_FORMAT_VER3 structure

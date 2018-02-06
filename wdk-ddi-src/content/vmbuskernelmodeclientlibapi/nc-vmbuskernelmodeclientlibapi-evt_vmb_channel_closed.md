@@ -1,42 +1,47 @@
 ---
-UID : NC:vmbuskernelmodeclientlibapi.EVT_VMB_CHANNEL_CLOSED
-title : EVT_VMB_CHANNEL_CLOSED
-author : windows-driver-content
-description : The EvtVmbChannelClosed callback function is invoked when the client endpoint in the guest virtual machine closes a channel by using the VmbChannelDisable function, or the opposite endpoint rescinds or closes the channel.
-old-location : netvista\evt_vmb_channel_closed.htm
-old-project : netvista
-ms.assetid : 457FADB8-4126-43A8-AA38-E3D722728459
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.evt_vmb_channel_closed, EvtVmbChannelClosed callback function [Network Drivers Starting with Windows Vista], EvtVmbChannelClosed, EVT_VMB_CHANNEL_CLOSED, EVT_VMB_CHANNEL_CLOSED, vmbuskernelmodeclientlibapi/EvtVmbChannelClosed, PFN_VMB_CHANNEL_CLOSED callback function pointer [Network Drivers Starting with Windows Vista], PFN_VMB_CHANNEL_CLOSED
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : vmbuskernelmodeclientlibapi.h
-req.include-header : VmbusKernelModeClientLibApi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PVIDEO_PORT_AGP_SERVICES, VIDEO_PORT_AGP_SERVICES"
-req.product : Windows 10 or later.
+UID: NC:vmbuskernelmodeclientlibapi.EVT_VMB_CHANNEL_CLOSED
+title: EVT_VMB_CHANNEL_CLOSED
+author: windows-driver-content
+description: The EvtVmbChannelClosed callback function is invoked when the client endpoint in the guest virtual machine closes a channel by using the VmbChannelDisable function, or the opposite endpoint rescinds or closes the channel.
+old-location: netvista\evt_vmb_channel_closed.htm
+old-project: netvista
+ms.assetid: 457FADB8-4126-43A8-AA38-E3D722728459
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.evt_vmb_channel_closed, EvtVmbChannelClosed callback function [Network Drivers Starting with Windows Vista], EvtVmbChannelClosed, EVT_VMB_CHANNEL_CLOSED, EVT_VMB_CHANNEL_CLOSED, vmbuskernelmodeclientlibapi/EvtVmbChannelClosed, PFN_VMB_CHANNEL_CLOSED callback function pointer [Network Drivers Starting with Windows Vista], PFN_VMB_CHANNEL_CLOSED
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: vmbuskernelmodeclientlibapi.h
+req.include-header: VmbusKernelModeClientLibApi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	VmbusKernelModeClientLibApi.h
+apiname:
+-	PFN_VMB_CHANNEL_CLOSED
+product: Windows
+targetos: Windows
+req.typenames: "*PVIDEO_PORT_AGP_SERVICES, VIDEO_PORT_AGP_SERVICES"
+req.product: Windows 10 or later.
 ---
 
 

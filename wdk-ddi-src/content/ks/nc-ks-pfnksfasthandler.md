@@ -1,41 +1,46 @@
 ---
-UID : NC:ks.PFNKSFASTHANDLER
-title : PFNKSFASTHANDLER
-author : windows-driver-content
-description : KStrFastHandler is a driver-supplied routine that handles a property or method request without the creation of an IRP.
-old-location : stream\kstrfasthandler.htm
-old-project : stream
-ms.assetid : 9a72cdb5-2b57-4331-9836-82653732decf
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.kstrfasthandler, KStrFastHandler routine [Streaming Media Devices], KStrFastHandler, PFNKSFASTHANDLER, PFNKSFASTHANDLER, ks/KStrFastHandler, ksfunc_e78a76eb-b3e6-4864-bae2-49536d3a9d52.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KEYWORDSELECTOR
+UID: NC:ks.PFNKSFASTHANDLER
+title: PFNKSFASTHANDLER
+author: windows-driver-content
+description: KStrFastHandler is a driver-supplied routine that handles a property or method request without the creation of an IRP.
+old-location: stream\kstrfasthandler.htm
+old-project: stream
+ms.assetid: 9a72cdb5-2b57-4331-9836-82653732decf
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.kstrfasthandler, KStrFastHandler routine [Streaming Media Devices], KStrFastHandler, PFNKSFASTHANDLER, PFNKSFASTHANDLER, ks/KStrFastHandler, ksfunc_e78a76eb-b3e6-4864-bae2-49536d3a9d52.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	ks.h
+apiname:
+-	KStrFastHandler
+product: Windows
+targetos: Windows
+req.typenames: KEYWORDSELECTOR
 ---
 
 

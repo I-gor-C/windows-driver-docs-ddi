@@ -1,41 +1,46 @@
 ---
-UID : NF:ks.IKsReferenceClock.GetPhysicalTime
-title : IKsReferenceClock::GetPhysicalTime method
-author : windows-driver-content
-description : The IKsReferenceClock::GetPhysicalTime method queries the associated reference clock for the current physical time.
-old-location : stream\iksreferenceclock_getphysicaltime.htm
-old-project : stream
-ms.assetid : 96c8d5ef-e9ab-40a6-88e1-56efdb7157b7
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ks/IKsReferenceClock::GetPhysicalTime, IKsReferenceClock::GetPhysicalTime, avintfc_a80ef73b-383a-48b2-b3ea-49e5469c7bca.xml, GetPhysicalTime, stream.iksreferenceclock_getphysicaltime, IKsReferenceClock, GetPhysicalTime method [Streaming Media Devices], IKsReferenceClock interface [Streaming Media Devices], GetPhysicalTime method, GetPhysicalTime method [Streaming Media Devices], IKsReferenceClock interface
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : ks.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.IKsReferenceClock.GetPhysicalTime
+title: IKsReferenceClock::GetPhysicalTime method
+author: windows-driver-content
+description: The IKsReferenceClock::GetPhysicalTime method queries the associated reference clock for the current physical time.
+old-location: stream\iksreferenceclock_getphysicaltime.htm
+old-project: stream
+ms.assetid: 96c8d5ef-e9ab-40a6-88e1-56efdb7157b7
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ks/IKsReferenceClock::GetPhysicalTime, IKsReferenceClock::GetPhysicalTime, avintfc_a80ef73b-383a-48b2-b3ea-49e5469c7bca.xml, GetPhysicalTime, stream.iksreferenceclock_getphysicaltime, IKsReferenceClock, GetPhysicalTime method [Streaming Media Devices], IKsReferenceClock interface [Streaming Media Devices], GetPhysicalTime method, GetPhysicalTime method [Streaming Media Devices], IKsReferenceClock interface
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: ks.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	ks.h
+apiname:
+-	IKsReferenceClock.GetPhysicalTime
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

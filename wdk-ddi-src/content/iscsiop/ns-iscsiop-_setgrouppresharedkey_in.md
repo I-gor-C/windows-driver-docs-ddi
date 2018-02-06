@@ -1,41 +1,46 @@
 ---
-UID : NS:iscsiop._SetGroupPresharedKey_IN
-title : "_SetGroupPresharedKey_IN"
-author : windows-driver-content
-description : The SetGroupPresharedKey_IN structure holds the input data for the SetGroupPresharedKey method.
-old-location : storage\setgrouppresharedkey_in.htm
-old-project : storage
-ms.assetid : fe5e1f75-ebd0-4856-bb77-14efb52fbce0
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.setgrouppresharedkey_in, PSetGroupPresharedKey_IN, PSetGroupPresharedKey_IN structure pointer [Storage Devices], *PSetGroupPresharedKey_IN, iscsiop/SetGroupPresharedKey_IN, SetGroupPresharedKey_IN, structs-iSCSI_0109dfff-f30e-4f15-ab25-4a290b2fc2f4.xml, _SetGroupPresharedKey_IN, iscsiop/PSetGroupPresharedKey_IN, SetGroupPresharedKey_IN structure [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : iscsiop.h
-req.include-header : Iscsiop.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSetGroupPresharedKey_IN, SetGroupPresharedKey_IN"
+UID: NS:iscsiop._SetGroupPresharedKey_IN
+title: "_SetGroupPresharedKey_IN"
+author: windows-driver-content
+description: The SetGroupPresharedKey_IN structure holds the input data for the SetGroupPresharedKey method.
+old-location: storage\setgrouppresharedkey_in.htm
+old-project: storage
+ms.assetid: fe5e1f75-ebd0-4856-bb77-14efb52fbce0
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.setgrouppresharedkey_in, PSetGroupPresharedKey_IN, PSetGroupPresharedKey_IN structure pointer [Storage Devices], *PSetGroupPresharedKey_IN, iscsiop/SetGroupPresharedKey_IN, SetGroupPresharedKey_IN, structs-iSCSI_0109dfff-f30e-4f15-ab25-4a290b2fc2f4.xml, _SetGroupPresharedKey_IN, iscsiop/PSetGroupPresharedKey_IN, SetGroupPresharedKey_IN structure [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: iscsiop.h
+req.include-header: Iscsiop.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	iscsiop.h
+apiname:
+-	SetGroupPresharedKey_IN
+product: Windows
+targetos: Windows
+req.typenames: "*PSetGroupPresharedKey_IN, SetGroupPresharedKey_IN"
 ---
 
 # _SetGroupPresharedKey_IN structure

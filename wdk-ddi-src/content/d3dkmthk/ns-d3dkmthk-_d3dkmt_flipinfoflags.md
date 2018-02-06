@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmthk._D3DKMT_FLIPINFOFLAGS
-title : "_D3DKMT_FLIPINFOFLAGS"
-author : windows-driver-content
-description : The D3DKMT_FLIPINFOFLAGS structure identifies flipping capabilities of the display miniport driver that the OpenGL installable client driver (ICD) obtains by calling the D3DKMTQueryAdapterInfo function.
-old-location : display\d3dkmt_flipinfoflags.htm
-old-project : display
-ms.assetid : 61b6d477-5a4c-475c-8605-5ede592e75c1
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3dkmthk/D3DKMT_FLIPINFOFLAGS, OpenGL_Structs_2e8d2e1b-7ae8-4ac4-916d-5cace7ef043e.xml, D3DKMT_FLIPINFOFLAGS structure [Display Devices], display.d3dkmt_flipinfoflags, D3DKMT_FLIPINFOFLAGS, _D3DKMT_FLIPINFOFLAGS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_FLIPINFOFLAGS
+UID: NS:d3dkmthk._D3DKMT_FLIPINFOFLAGS
+title: "_D3DKMT_FLIPINFOFLAGS"
+author: windows-driver-content
+description: The D3DKMT_FLIPINFOFLAGS structure identifies flipping capabilities of the display miniport driver that the OpenGL installable client driver (ICD) obtains by calling the D3DKMTQueryAdapterInfo function.
+old-location: display\d3dkmt_flipinfoflags.htm
+old-project: display
+ms.assetid: 61b6d477-5a4c-475c-8605-5ede592e75c1
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3dkmthk/D3DKMT_FLIPINFOFLAGS, OpenGL_Structs_2e8d2e1b-7ae8-4ac4-916d-5cace7ef043e.xml, D3DKMT_FLIPINFOFLAGS structure [Display Devices], display.d3dkmt_flipinfoflags, D3DKMT_FLIPINFOFLAGS, _D3DKMT_FLIPINFOFLAGS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmthk.h
+apiname:
+-	D3DKMT_FLIPINFOFLAGS
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_FLIPINFOFLAGS
 ---
 
 # _D3DKMT_FLIPINFOFLAGS structure

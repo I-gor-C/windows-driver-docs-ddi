@@ -1,42 +1,47 @@
 ---
-UID : NC:wdfdmaenabler.EVT_WDF_DMA_ENABLER_SELFMANAGED_IO_START
-title : EVT_WDF_DMA_ENABLER_SELFMANAGED_IO_START
-author : windows-driver-content
-description : A driver's EvtDmaEnablerSelfManagedIoStart event callback function starts a DMA device's self-managed I/O operations.
-old-location : wdf\evtdmaenablerselfmanagediostart.htm
-old-project : wdf
-ms.assetid : 397791c1-c394-48ae-b6cf-42f4494438f1
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.evtdmaenablerselfmanagediostart, EvtDmaEnablerSelfManagedIoStart callback function, EvtDmaEnablerSelfManagedIoStart, EVT_WDF_DMA_ENABLER_SELFMANAGED_IO_START, EVT_WDF_DMA_ENABLER_SELFMANAGED_IO_START, wdfdmaenabler/EvtDmaEnablerSelfManagedIoStart, DFDmaObjectRef_6ccb5cb2-c30f-4ae0-a47e-cb58e24de25b.xml, kmdf.evtdmaenablerselfmanagediostart
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdfdmaenabler.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDF_REMOVE_LOCK_OPTIONS, WDF_REMOVE_LOCK_OPTIONS"
-req.product : Windows 10 or later.
+UID: NC:wdfdmaenabler.EVT_WDF_DMA_ENABLER_SELFMANAGED_IO_START
+title: EVT_WDF_DMA_ENABLER_SELFMANAGED_IO_START
+author: windows-driver-content
+description: A driver's EvtDmaEnablerSelfManagedIoStart event callback function starts a DMA device's self-managed I/O operations.
+old-location: wdf\evtdmaenablerselfmanagediostart.htm
+old-project: wdf
+ms.assetid: 397791c1-c394-48ae-b6cf-42f4494438f1
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.evtdmaenablerselfmanagediostart, EvtDmaEnablerSelfManagedIoStart callback function, EvtDmaEnablerSelfManagedIoStart, EVT_WDF_DMA_ENABLER_SELFMANAGED_IO_START, EVT_WDF_DMA_ENABLER_SELFMANAGED_IO_START, wdfdmaenabler/EvtDmaEnablerSelfManagedIoStart, DFDmaObjectRef_6ccb5cb2-c30f-4ae0-a47e-cb58e24de25b.xml, kmdf.evtdmaenablerselfmanagediostart
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdfdmaenabler.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	WdfDmaEnabler.h
+apiname:
+-	EvtDmaEnablerSelfManagedIoStart
+product: Windows
+targetos: Windows
+req.typenames: "*PWDF_REMOVE_LOCK_OPTIONS, WDF_REMOVE_LOCK_OPTIONS"
+req.product: Windows 10 or later.
 ---
 
 

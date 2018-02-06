@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFIoQueue.Stop
-title : IWDFIoQueue::Stop method
-author : windows-driver-content
-description : The Stop method prevents an I/O queue from delivering I/O requests, but the queue receives and stores new requests.
-old-location : wdf\iwdfioqueue_stop.htm
-old-project : wdf
-ms.assetid : 4ad9410a-f3ec-445a-b509-7666a81e1427
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wudfddi/IWDFIoQueue::Stop, IWDFIoQueue interface, Stop method, IWDFIoQueue::Stop, Stop method, umdf.iwdfioqueue_stop, IWDFIoQueue, wdf.iwdfioqueue_stop, Stop, UMDFQueueObjectRef_c45e9686-2484-4c8d-857d-4dc12c8f2fd7.xml, Stop method, IWDFIoQueue interface
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.5
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFIoQueue.Stop
+title: IWDFIoQueue::Stop method
+author: windows-driver-content
+description: The Stop method prevents an I/O queue from delivering I/O requests, but the queue receives and stores new requests.
+old-location: wdf\iwdfioqueue_stop.htm
+old-project: wdf
+ms.assetid: 4ad9410a-f3ec-445a-b509-7666a81e1427
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wudfddi/IWDFIoQueue::Stop, IWDFIoQueue interface, Stop method, IWDFIoQueue::Stop, Stop method, umdf.iwdfioqueue_stop, IWDFIoQueue, wdf.iwdfioqueue_stop, Stop, UMDFQueueObjectRef_c45e9686-2484-4c8d-857d-4dc12c8f2fd7.xml, Stop method, IWDFIoQueue interface
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.5
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFIoQueue.Stop
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

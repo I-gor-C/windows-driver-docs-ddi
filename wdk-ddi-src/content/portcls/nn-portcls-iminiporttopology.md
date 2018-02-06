@@ -1,41 +1,46 @@
 ---
-UID : NN:portcls.IMiniportTopology
-title : IMiniportTopology
-author : windows-driver-content
-description : The IMiniportTopology interface is the primary interface of a Topology miniport driver.
-old-location : audio\iminiporttopology.htm
-old-project : audio
-ms.assetid : f66129df-07c4-4472-aa14-6c4d9578a92d
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : audio.iminiporttopology, IMiniportTopology interface [Audio Devices], IMiniportTopology interface [Audio Devices], described, IMiniportTopology, portcls/IMiniportTopology, audmp-routines_c2137cf2-ab04-4b0b-aeda-d50fe3225324.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : portcls.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Portcls.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NN:portcls.IMiniportTopology
+title: IMiniportTopology
+author: windows-driver-content
+description: The IMiniportTopology interface is the primary interface of a Topology miniport driver.
+old-location: audio\iminiporttopology.htm
+old-project: audio
+ms.assetid: f66129df-07c4-4472-aa14-6c4d9578a92d
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: audio.iminiporttopology, IMiniportTopology interface [Audio Devices], IMiniportTopology interface [Audio Devices], described, IMiniportTopology, portcls/IMiniportTopology, audmp-routines_c2137cf2-ab04-4b0b-aeda-d50fe3225324.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: portcls.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Portcls.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	portcls.h
+apiname:
+-	IMiniportTopology
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 # IMiniportTopology interface

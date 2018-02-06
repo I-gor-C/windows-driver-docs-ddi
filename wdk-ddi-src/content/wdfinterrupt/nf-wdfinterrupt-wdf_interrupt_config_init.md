@@ -1,42 +1,47 @@
 ---
-UID : NF:wdfinterrupt.WDF_INTERRUPT_CONFIG_INIT
-title : WDF_INTERRUPT_CONFIG_INIT function
-author : windows-driver-content
-description : The WDF_INTERRUPT_CONFIG_INIT function initializes a WDF_INTERRUPT_CONFIG structure.
-old-location : wdf\wdf_interrupt_config_init.htm
-old-project : wdf
-ms.assetid : e81ec3da-a863-467f-82ec-1fa7ee6401b1
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdfinterrupt/WDF_INTERRUPT_CONFIG_INIT, WDF_INTERRUPT_CONFIG_INIT, wdf.wdf_interrupt_config_init, kmdf.wdf_interrupt_config_init, WDF_INTERRUPT_CONFIG_INIT function, DFInterruptObjectRef_eb73ee25-bee4-4c0a-a070-7893bd5b699a.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfinterrupt.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_INTERRUPT_PRIORITY, *PWDF_INTERRUPT_PRIORITY
-req.product : Windows 10 or later.
+UID: NF:wdfinterrupt.WDF_INTERRUPT_CONFIG_INIT
+title: WDF_INTERRUPT_CONFIG_INIT function
+author: windows-driver-content
+description: The WDF_INTERRUPT_CONFIG_INIT function initializes a WDF_INTERRUPT_CONFIG structure.
+old-location: wdf\wdf_interrupt_config_init.htm
+old-project: wdf
+ms.assetid: e81ec3da-a863-467f-82ec-1fa7ee6401b1
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdfinterrupt/WDF_INTERRUPT_CONFIG_INIT, WDF_INTERRUPT_CONFIG_INIT, wdf.wdf_interrupt_config_init, kmdf.wdf_interrupt_config_init, WDF_INTERRUPT_CONFIG_INIT function, DFInterruptObjectRef_eb73ee25-bee4-4c0a-a070-7893bd5b699a.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfinterrupt.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfinterrupt.h
+apiname:
+-	WDF_INTERRUPT_CONFIG_INIT
+product: Windows
+targetos: Windows
+req.typenames: WDF_INTERRUPT_PRIORITY, *PWDF_INTERRUPT_PRIORITY
+req.product: Windows 10 or later.
 ---
 
 

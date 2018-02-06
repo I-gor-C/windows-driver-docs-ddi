@@ -1,42 +1,47 @@
 ---
-UID : NS:usbbusif._USB_BUS_INTERFACE_USBDI_V0
-title : "_USB_BUS_INTERFACE_USBDI_V0"
-author : windows-driver-content
-description : The USB_BUS_INTERFACE_USBDI_V0 structure is provided by the USB hub driver to allow USB clients to make direct calls to the hub driver without allocating IRPs.
-old-location : buses\usb_bus_interface_usbdi_v0.htm
-old-project : usbref
-ms.assetid : f21ba9f4-9571-4918-8f10-97bd308c69f3
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : PUSB_BUS_INTERFACE_USBDI_V0 structure pointer [Buses], PUSB_BUS_INTERFACE_USBDI_V0, usbinterKR_2af580ba-2b3f-4f20-808a-5cd5d42b8ada.xml, _USB_BUS_INTERFACE_USBDI_V0, usbbusif/USB_BUS_INTERFACE_USBDI_V0, USB_BUS_INTERFACE_USBDI_V0, *PUSB_BUS_INTERFACE_USBDI_V0, usbbusif/PUSB_BUS_INTERFACE_USBDI_V0, buses.usb_bus_interface_usbdi_v0, USB_BUS_INTERFACE_USBDI_V0 structure [Buses]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : usbbusif.h
-req.include-header : Usbbusif.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : USB_BUS_INTERFACE_USBDI_V0, *PUSB_BUS_INTERFACE_USBDI_V0
-req.product : Windows 10 or later.
+UID: NS:usbbusif._USB_BUS_INTERFACE_USBDI_V0
+title: "_USB_BUS_INTERFACE_USBDI_V0"
+author: windows-driver-content
+description: The USB_BUS_INTERFACE_USBDI_V0 structure is provided by the USB hub driver to allow USB clients to make direct calls to the hub driver without allocating IRPs.
+old-location: buses\usb_bus_interface_usbdi_v0.htm
+old-project: usbref
+ms.assetid: f21ba9f4-9571-4918-8f10-97bd308c69f3
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: PUSB_BUS_INTERFACE_USBDI_V0 structure pointer [Buses], PUSB_BUS_INTERFACE_USBDI_V0, usbinterKR_2af580ba-2b3f-4f20-808a-5cd5d42b8ada.xml, _USB_BUS_INTERFACE_USBDI_V0, usbbusif/USB_BUS_INTERFACE_USBDI_V0, USB_BUS_INTERFACE_USBDI_V0, *PUSB_BUS_INTERFACE_USBDI_V0, usbbusif/PUSB_BUS_INTERFACE_USBDI_V0, buses.usb_bus_interface_usbdi_v0, USB_BUS_INTERFACE_USBDI_V0 structure [Buses]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: usbbusif.h
+req.include-header: Usbbusif.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	usbbusif.h
+apiname:
+-	USB_BUS_INTERFACE_USBDI_V0
+product: Windows
+targetos: Windows
+req.typenames: USB_BUS_INTERFACE_USBDI_V0, *PUSB_BUS_INTERFACE_USBDI_V0
+req.product: Windows 10 or later.
 ---
 
 # _USB_BUS_INTERFACE_USBDI_V0 structure

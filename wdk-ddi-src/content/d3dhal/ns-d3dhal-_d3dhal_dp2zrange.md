@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dhal._D3DHAL_DP2ZRANGE
-title : "_D3DHAL_DP2ZRANGE"
-author : windows-driver-content
-description : The D3DHAL_DP2ZRANGE structure specifies z-range minimum and maximum in D3dDrawPrimitives2.
-old-location : display\d3dhal_dp2zrange.htm
-old-project : display
-ms.assetid : 329e0036-2d67-465f-a049-a36648622003
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DHAL_DP2ZRANGE, D3DHAL_DP2ZRANGE structure [Display Devices], d3dstrct_327e85bf-81c0-420e-b229-e389115fcab3.xml, d3dhal/D3DHAL_DP2ZRANGE, LPD3DHAL_DP2ZRANGE structure pointer [Display Devices], _D3DHAL_DP2ZRANGE, *LPD3DHAL_DP2ZRANGE, display.d3dhal_dp2zrange, d3dhal/LPD3DHAL_DP2ZRANGE, LPD3DHAL_DP2ZRANGE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dhal.h
-req.include-header : D3dhal.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DHAL_DP2ZRANGE
+UID: NS:d3dhal._D3DHAL_DP2ZRANGE
+title: "_D3DHAL_DP2ZRANGE"
+author: windows-driver-content
+description: The D3DHAL_DP2ZRANGE structure specifies z-range minimum and maximum in D3dDrawPrimitives2.
+old-location: display\d3dhal_dp2zrange.htm
+old-project: display
+ms.assetid: 329e0036-2d67-465f-a049-a36648622003
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DHAL_DP2ZRANGE, D3DHAL_DP2ZRANGE structure [Display Devices], d3dstrct_327e85bf-81c0-420e-b229-e389115fcab3.xml, d3dhal/D3DHAL_DP2ZRANGE, LPD3DHAL_DP2ZRANGE structure pointer [Display Devices], _D3DHAL_DP2ZRANGE, *LPD3DHAL_DP2ZRANGE, display.d3dhal_dp2zrange, d3dhal/LPD3DHAL_DP2ZRANGE, LPD3DHAL_DP2ZRANGE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dhal.h
+req.include-header: D3dhal.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dhal.h
+apiname:
+-	D3DHAL_DP2ZRANGE
+product: Windows
+targetos: Windows
+req.typenames: D3DHAL_DP2ZRANGE
 ---
 
 # _D3DHAL_DP2ZRANGE structure

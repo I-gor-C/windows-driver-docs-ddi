@@ -1,41 +1,46 @@
 ---
-UID : NF:filterpipeline.IPrintPipelineFilter.InitializeFilter
-title : IPrintPipelineFilter::InitializeFilter method
-author : windows-driver-content
-description : The InitializeFilter method initializes a filter.
-old-location : print\iprintpipelinefilter_initializefilter.htm
-old-project : print
-ms.assetid : a28a8ee0-24df-45b5-8850-f3b3984b3b64
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : filterpipeline_cb281bce-8f53-4ade-91c1-2791baff0817.xml, IPrintPipelineFilter, IPrintPipelineFilter::InitializeFilter, filterpipeline/IPrintPipelineFilter::InitializeFilter, InitializeFilter, InitializeFilter method [Print Devices], InitializeFilter method [Print Devices], IPrintPipelineFilter interface, print.iprintpipelinefilter_initializefilter, IPrintPipelineFilter interface [Print Devices], InitializeFilter method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : filterpipeline.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : Filterpipeline.idl
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : filterpipeline.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:filterpipeline.IPrintPipelineFilter.InitializeFilter
+title: IPrintPipelineFilter::InitializeFilter method
+author: windows-driver-content
+description: The InitializeFilter method initializes a filter.
+old-location: print\iprintpipelinefilter_initializefilter.htm
+old-project: print
+ms.assetid: a28a8ee0-24df-45b5-8850-f3b3984b3b64
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: filterpipeline_cb281bce-8f53-4ade-91c1-2791baff0817.xml, IPrintPipelineFilter, IPrintPipelineFilter::InitializeFilter, filterpipeline/IPrintPipelineFilter::InitializeFilter, InitializeFilter, InitializeFilter method [Print Devices], InitializeFilter method [Print Devices], IPrintPipelineFilter interface, print.iprintpipelinefilter_initializefilter, IPrintPipelineFilter interface [Print Devices], InitializeFilter method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: filterpipeline.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: Filterpipeline.idl
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: filterpipeline.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	filterpipeline.h
+apiname:
+-	IPrintPipelineFilter.InitializeFilter
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

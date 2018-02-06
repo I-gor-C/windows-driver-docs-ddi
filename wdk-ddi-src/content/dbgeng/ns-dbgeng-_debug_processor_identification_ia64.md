@@ -1,41 +1,46 @@
 ---
-UID : NS:dbgeng._DEBUG_PROCESSOR_IDENTIFICATION_IA64
-title : "_DEBUG_PROCESSOR_IDENTIFICATION_IA64"
-author : windows-driver-content
-description : Identifies an Intel Itanium architecture (IA64) processor.
-old-location : debugger\debug_processor_identification_ia64.htm
-old-project : debugger
-ms.assetid : 8827D989-EB59-4474-97D8-9CD9BF24FCC1
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : debugger.debug_processor_identification_ia64, dbgeng/DEBUG_PROCESSOR_IDENTIFICATION_IA64, DEBUG_PROCESSOR_IDENTIFICATION_IA64, *PDEBUG_PROCESSOR_IDENTIFICATION_IA64, PDEBUG_PROCESSOR_IDENTIFICATION_IA64, dbgeng/PDEBUG_PROCESSOR_IDENTIFICATION_IA64, PDEBUG_PROCESSOR_IDENTIFICATION_IA64 structure pointer [Windows Debugging], DEBUG_PROCESSOR_IDENTIFICATION_IA64 structure [Windows Debugging], _DEBUG_PROCESSOR_IDENTIFICATION_IA64
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : dbgeng.h
-req.include-header : DbgEng.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DEBUG_PROCESSOR_IDENTIFICATION_IA64, *PDEBUG_PROCESSOR_IDENTIFICATION_IA64
+UID: NS:dbgeng._DEBUG_PROCESSOR_IDENTIFICATION_IA64
+title: "_DEBUG_PROCESSOR_IDENTIFICATION_IA64"
+author: windows-driver-content
+description: Identifies an Intel Itanium architecture (IA64) processor.
+old-location: debugger\debug_processor_identification_ia64.htm
+old-project: debugger
+ms.assetid: 8827D989-EB59-4474-97D8-9CD9BF24FCC1
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: debugger.debug_processor_identification_ia64, dbgeng/DEBUG_PROCESSOR_IDENTIFICATION_IA64, DEBUG_PROCESSOR_IDENTIFICATION_IA64, *PDEBUG_PROCESSOR_IDENTIFICATION_IA64, PDEBUG_PROCESSOR_IDENTIFICATION_IA64, dbgeng/PDEBUG_PROCESSOR_IDENTIFICATION_IA64, PDEBUG_PROCESSOR_IDENTIFICATION_IA64 structure pointer [Windows Debugging], DEBUG_PROCESSOR_IDENTIFICATION_IA64 structure [Windows Debugging], _DEBUG_PROCESSOR_IDENTIFICATION_IA64
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: dbgeng.h
+req.include-header: DbgEng.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	DbgEng.h
+apiname:
+-	DEBUG_PROCESSOR_IDENTIFICATION_IA64
+product: Windows
+targetos: Windows
+req.typenames: DEBUG_PROCESSOR_IDENTIFICATION_IA64, *PDEBUG_PROCESSOR_IDENTIFICATION_IA64
 ---
 
 # _DEBUG_PROCESSOR_IDENTIFICATION_IA64 structure

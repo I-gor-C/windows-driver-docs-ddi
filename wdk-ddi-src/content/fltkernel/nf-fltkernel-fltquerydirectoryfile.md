@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltQueryDirectoryFile
-title : FltQueryDirectoryFile function
-author : windows-driver-content
-description : The FltQueryDirectoryFile routine returns various kinds of information about files in the directory specified by a given file object.
-old-location : ifsk\fltquerydirectoryfile.htm
-old-project : ifsk
-ms.assetid : d77dfcc7-a7a7-4027-9831-42b1b79738d0
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : fltkernel/FltQueryDirectoryFile, FltQueryDirectoryFile routine [Installable File System Drivers], ifsk.fltquerydirectoryfile, FltApiRef_p_to_z_d91e48f4-f6a2-4f36-a5f6-9e39821446c2.xml, FltQueryDirectoryFile
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : This routine is available starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltQueryDirectoryFile
+title: FltQueryDirectoryFile function
+author: windows-driver-content
+description: The FltQueryDirectoryFile routine returns various kinds of information about files in the directory specified by a given file object.
+old-location: ifsk\fltquerydirectoryfile.htm
+old-project: ifsk
+ms.assetid: d77dfcc7-a7a7-4027-9831-42b1b79738d0
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: fltkernel/FltQueryDirectoryFile, FltQueryDirectoryFile routine [Installable File System Drivers], ifsk.fltquerydirectoryfile, FltApiRef_p_to_z_d91e48f4-f6a2-4f36-a5f6-9e39821446c2.xml, FltQueryDirectoryFile
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: This routine is available starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltQueryDirectoryFile
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

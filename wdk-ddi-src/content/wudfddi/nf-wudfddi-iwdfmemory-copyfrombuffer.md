@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFMemory.CopyFromBuffer
-title : IWDFMemory::CopyFromBuffer method
-author : windows-driver-content
-description : The CopyFromBuffer method safely copies data from the specified source buffer to a memory object.
-old-location : wdf\iwdfmemory_copyfrombuffer.htm
-old-project : wdf
-ms.assetid : d8e56186-f801-4684-8919-236d2429310f
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wudfddi/IWDFMemory::CopyFromBuffer, umdf.iwdfmemory_copyfrombuffer, CopyFromBuffer, UMDFMemoryObjectRef_ca676a5f-0dba-423a-9013-3bb95974371a.xml, IWDFMemory::CopyFromBuffer, CopyFromBuffer method, IWDFMemory interface, IWDFMemory, wdf.iwdfmemory_copyfrombuffer, CopyFromBuffer method, IWDFMemory interface, CopyFromBuffer method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.5
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFMemory.CopyFromBuffer
+title: IWDFMemory::CopyFromBuffer method
+author: windows-driver-content
+description: The CopyFromBuffer method safely copies data from the specified source buffer to a memory object.
+old-location: wdf\iwdfmemory_copyfrombuffer.htm
+old-project: wdf
+ms.assetid: d8e56186-f801-4684-8919-236d2429310f
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wudfddi/IWDFMemory::CopyFromBuffer, umdf.iwdfmemory_copyfrombuffer, CopyFromBuffer, UMDFMemoryObjectRef_ca676a5f-0dba-423a-9013-3bb95974371a.xml, IWDFMemory::CopyFromBuffer, CopyFromBuffer method, IWDFMemory interface, IWDFMemory, wdf.iwdfmemory_copyfrombuffer, CopyFromBuffer method, IWDFMemory interface, CopyFromBuffer method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.5
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFMemory.CopyFromBuffer
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

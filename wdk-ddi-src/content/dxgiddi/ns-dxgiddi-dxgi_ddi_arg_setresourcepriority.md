@@ -1,41 +1,46 @@
 ---
-UID : NS:dxgiddi.DXGI_DDI_ARG_SETRESOURCEPRIORITY
-title : DXGI_DDI_ARG_SETRESOURCEPRIORITY
-author : windows-driver-content
-description : The DXGI_DDI_ARG_SETRESOURCEPRIORITY structure describes parameters for setting the priority level of a resource.
-old-location : display\dxgi_ddi_arg_setresourcepriority.htm
-old-project : display
-ms.assetid : 9d3f5687-bc49-4831-bf56-5d4201ed45de
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgi_ddi_arg_setresourcepriority, UMDisplayDriver_Dx10param_Structs_fda8895f-9cc7-496b-ae2e-bf6b076fc0b3.xml, DXGI_DDI_ARG_SETRESOURCEPRIORITY, dxgiddi/DXGI_DDI_ARG_SETRESOURCEPRIORITY, DXGI_DDI_ARG_SETRESOURCEPRIORITY structure [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : dxgiddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGI_DDI_ARG_SETRESOURCEPRIORITY
+UID: NS:dxgiddi.DXGI_DDI_ARG_SETRESOURCEPRIORITY
+title: DXGI_DDI_ARG_SETRESOURCEPRIORITY
+author: windows-driver-content
+description: The DXGI_DDI_ARG_SETRESOURCEPRIORITY structure describes parameters for setting the priority level of a resource.
+old-location: display\dxgi_ddi_arg_setresourcepriority.htm
+old-project: display
+ms.assetid: 9d3f5687-bc49-4831-bf56-5d4201ed45de
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgi_ddi_arg_setresourcepriority, UMDisplayDriver_Dx10param_Structs_fda8895f-9cc7-496b-ae2e-bf6b076fc0b3.xml, DXGI_DDI_ARG_SETRESOURCEPRIORITY, dxgiddi/DXGI_DDI_ARG_SETRESOURCEPRIORITY, DXGI_DDI_ARG_SETRESOURCEPRIORITY structure [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: dxgiddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	dxgiddi.h
+apiname:
+-	DXGI_DDI_ARG_SETRESOURCEPRIORITY
+product: Windows
+targetos: Windows
+req.typenames: DXGI_DDI_ARG_SETRESOURCEPRIORITY
 ---
 
 # DXGI_DDI_ARG_SETRESOURCEPRIORITY structure

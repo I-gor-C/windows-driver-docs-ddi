@@ -1,41 +1,47 @@
 ---
-UID : NF:fwpmk.FwpmBfeStateSubscribeChanges0
-title : FwpmBfeStateSubscribeChanges0 function
-author : windows-driver-content
-description : The FwpmBfeStateSubscribeChanges0 function registers a callback function that is called whenever there is a change to the state of the filter engine.Note  FwpmBfeStateSubscribeChanges0 is a specific version of FwpmBfeStateSubscribeChanges.
-old-location : netvista\fwpmbfestatesubscribechanges0.htm
-old-project : netvista
-ms.assetid : 375af8a1-9e05-4830-9074-6313b4e082d9
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : fwpmk/FwpmBfeStateSubscribeChanges0, FwpmBfeStateSubscribeChanges0, wfp_ref_2_funct_2_fwpm_79b78030-bb8c-462d-98fc-6f3818dead3d.xml, FwpmBfeStateSubscribeChanges0 function [Network Drivers Starting with Windows Vista], netvista.fwpmbfestatesubscribechanges0
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fwpmk.h
-req.include-header : Fwpmk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Fwpkclnt.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : INSTANCE_PARTIAL_INFORMATION, PINSTANCE_PARTIAL_INFORMATION
+UID: NF:fwpmk.FwpmBfeStateSubscribeChanges0
+title: FwpmBfeStateSubscribeChanges0 function
+author: windows-driver-content
+description: The FwpmBfeStateSubscribeChanges0 function registers a callback function that is called whenever there is a change to the state of the filter engine.Note  FwpmBfeStateSubscribeChanges0 is a specific version of FwpmBfeStateSubscribeChanges.
+old-location: netvista\fwpmbfestatesubscribechanges0.htm
+old-project: netvista
+ms.assetid: 375af8a1-9e05-4830-9074-6313b4e082d9
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: fwpmk/FwpmBfeStateSubscribeChanges0, FwpmBfeStateSubscribeChanges0, wfp_ref_2_funct_2_fwpm_79b78030-bb8c-462d-98fc-6f3818dead3d.xml, FwpmBfeStateSubscribeChanges0 function [Network Drivers Starting with Windows Vista], netvista.fwpmbfestatesubscribechanges0
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fwpmk.h
+req.include-header: Fwpmk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Fwpkclnt.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	fwpkclnt.lib
+-	fwpkclnt.dll
+apiname:
+-	FwpmBfeStateSubscribeChanges0
+product: Windows
+targetos: Windows
+req.typenames: INSTANCE_PARTIAL_INFORMATION, PINSTANCE_PARTIAL_INFORMATION
 ---
 
 

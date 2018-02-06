@@ -1,42 +1,48 @@
 ---
-UID : NF:storport.StorPortInitialize
-title : StorPortInitialize function
-author : windows-driver-content
-description : The StorPortInitilize routine initializes the port driver parameters and extension data. StorPortInitilize also saves the adapter information provided from the miniport driver.
-old-location : storage\storportinitialize.htm
-old-project : storage
-ms.assetid : b560ce42-3c5c-4766-bb9c-6590b7113ecd
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storprt_c60ad9af-507c-42e1-9f8a-04e3378bc37b.xml, storport/StorPortInitialize, StorPortInitialize, StorPortInitialize routine [Storage Devices], storage.storportinitialize
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Storport.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STOR_SPINLOCK
-req.product : Windows 10 or later.
+UID: NF:storport.StorPortInitialize
+title: StorPortInitialize function
+author: windows-driver-content
+description: The StorPortInitilize routine initializes the port driver parameters and extension data. StorPortInitilize also saves the adapter information provided from the miniport driver.
+old-location: storage\storportinitialize.htm
+old-project: storage
+ms.assetid: b560ce42-3c5c-4766-bb9c-6590b7113ecd
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storprt_c60ad9af-507c-42e1-9f8a-04e3378bc37b.xml, storport/StorPortInitialize, StorPortInitialize, StorPortInitialize routine [Storage Devices], storage.storportinitialize
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Storport.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Storport.lib
+-	Storport.dll
+apiname:
+-	StorPortInitialize
+product: Windows
+targetos: Windows
+req.typenames: STOR_SPINLOCK
+req.product: Windows 10 or later.
 ---
 
 

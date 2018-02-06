@@ -1,41 +1,47 @@
 ---
-UID : NF:ntddk.RtlCompareString
-title : RtlCompareString function
-author : windows-driver-content
-description : The RtlCompareString routine compares two counted strings.
-old-location : kernel\rtlcomparestring.htm
-old-project : kernel
-ms.assetid : 59d023d4-a2b4-4183-9572-cb48621c76fb
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.rtlcomparestring, k109_a794007b-a40a-4081-8302-f7426c4ceaef.xml, RtlCompareString, RtlCompareString routine [Kernel-Mode Driver Architecture], ntddk/RtlCompareString
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntddk.h
-req.include-header : Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe (kernel mode); Ntdll.dll (user mode)
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.RtlCompareString
+title: RtlCompareString function
+author: windows-driver-content
+description: The RtlCompareString routine compares two counted strings.
+old-location: kernel\rtlcomparestring.htm
+old-project: kernel
+ms.assetid: 59d023d4-a2b4-4183-9572-cb48621c76fb
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.rtlcomparestring, k109_a794007b-a40a-4081-8302-f7426c4ceaef.xml, RtlCompareString, RtlCompareString routine [Kernel-Mode Driver Architecture], ntddk/RtlCompareString
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntddk.h
+req.include-header: Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe (kernel mode); Ntdll.dll (user mode)
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+-	Ntdll.dll
+apiname:
+-	RtlCompareString
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFIoQueue.PurgeSynchronously
-title : IWDFIoQueue::PurgeSynchronously method
-author : windows-driver-content
-description : The PurgeSynchronously method directs the framework to reject new incoming I/O requests and to cancel all outstanding requests. The method returns after all outstanding requests are canceled.
-old-location : wdf\iwdfioqueue_purgesynchronously.htm
-old-project : wdf
-ms.assetid : a714dffd-ca88-40cf-95ef-cf15384e0c02
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : PurgeSynchronously method, IWDFIoQueue interface, IWDFIoQueue interface, PurgeSynchronously method, PurgeSynchronously, wudfddi/IWDFIoQueue::PurgeSynchronously, IWDFIoQueue, umdf.iwdfioqueue_purgesynchronously, PurgeSynchronously method, UMDFQueueObjectRef_c146c969-5b34-4aa0-af8e-9edec10f4c46.xml, wdf.iwdfioqueue_purgesynchronously, IWDFIoQueue::PurgeSynchronously
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.5
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFIoQueue.PurgeSynchronously
+title: IWDFIoQueue::PurgeSynchronously method
+author: windows-driver-content
+description: The PurgeSynchronously method directs the framework to reject new incoming I/O requests and to cancel all outstanding requests. The method returns after all outstanding requests are canceled.
+old-location: wdf\iwdfioqueue_purgesynchronously.htm
+old-project: wdf
+ms.assetid: a714dffd-ca88-40cf-95ef-cf15384e0c02
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: PurgeSynchronously method, IWDFIoQueue interface, IWDFIoQueue interface, PurgeSynchronously method, PurgeSynchronously, wudfddi/IWDFIoQueue::PurgeSynchronously, IWDFIoQueue, umdf.iwdfioqueue_purgesynchronously, PurgeSynchronously method, UMDFQueueObjectRef_c146c969-5b34-4aa0-af8e-9edec10f4c46.xml, wdf.iwdfioqueue_purgesynchronously, IWDFIoQueue::PurgeSynchronously
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.5
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFIoQueue.PurgeSynchronously
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

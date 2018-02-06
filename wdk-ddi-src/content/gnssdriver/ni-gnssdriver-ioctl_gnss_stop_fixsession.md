@@ -1,41 +1,46 @@
 ---
-UID : NI:gnssdriver.IOCTL_GNSS_STOP_FIXSESSION
-title : IOCTL_GNSS_STOP_FIXSESSION
-author : windows-driver-content
-description : The IOCTL_GNSS_STOP_FIXSESSION control code is used by the GNSS adapter to stop an active fix session.
-old-location : sensors\ioctl_gnss_stop_fixsession.htm
-old-project : sensors
-ms.assetid : 3A15A61A-8822-4E20-9979-B89BFA092281
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : sensors.ioctl_gnss_stop_fixsession, IOCTL_GNSS_STOP_FIXSESSION control code [Sensor Devices], IOCTL_GNSS_STOP_FIXSESSION, gnssdriver/IOCTL_GNSS_STOP_FIXSESSION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : gnssdriver.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : GNSS_SUPL_CERT_ACTION
+UID: NI:gnssdriver.IOCTL_GNSS_STOP_FIXSESSION
+title: IOCTL_GNSS_STOP_FIXSESSION
+author: windows-driver-content
+description: The IOCTL_GNSS_STOP_FIXSESSION control code is used by the GNSS adapter to stop an active fix session.
+old-location: sensors\ioctl_gnss_stop_fixsession.htm
+old-project: sensors
+ms.assetid: 3A15A61A-8822-4E20-9979-B89BFA092281
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: sensors.ioctl_gnss_stop_fixsession, IOCTL_GNSS_STOP_FIXSESSION control code [Sensor Devices], IOCTL_GNSS_STOP_FIXSESSION, gnssdriver/IOCTL_GNSS_STOP_FIXSESSION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: gnssdriver.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	gnssdriver.h
+apiname:
+-	IOCTL_GNSS_STOP_FIXSESSION
+product: Windows
+targetos: Windows
+req.typenames: GNSS_SUPL_CERT_ACTION
 ---
 
 # IOCTL_GNSS_STOP_FIXSESSION IOCTL

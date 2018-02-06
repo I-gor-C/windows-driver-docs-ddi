@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugBreakpoint2.GetOffsetExpressionWide
-title : IDebugBreakpoint2::GetOffsetExpressionWide method
-author : windows-driver-content
-description : The GetOffsetExpressionWide method returns the expression string that evaluates to the location that triggers a breakpoint.
-old-location : debugger\getoffsetexpressionwide.htm
-old-project : debugger
-ms.assetid : bd4b32b1-e8ba-485f-bfb6-15c8c44926af
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : debugger.getoffsetexpressionwide, dbgeng/IDebugBreakpoint2::GetOffsetExpressionWide, GetOffsetExpressionWide method [Windows Debugging], IDebugBreakpoint2 interface, IDebugBreakpoint2, IDebugBreakpoint2::GetOffsetExpressionWide, GetOffsetExpressionWide method [Windows Debugging], GetOffsetExpressionWide, IDebugBreakpoint2 interface [Windows Debugging], GetOffsetExpressionWide method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugBreakpoint2.GetOffsetExpressionWide
+title: IDebugBreakpoint2::GetOffsetExpressionWide method
+author: windows-driver-content
+description: The GetOffsetExpressionWide method returns the expression string that evaluates to the location that triggers a breakpoint.
+old-location: debugger\getoffsetexpressionwide.htm
+old-project: debugger
+ms.assetid: bd4b32b1-e8ba-485f-bfb6-15c8c44926af
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: debugger.getoffsetexpressionwide, dbgeng/IDebugBreakpoint2::GetOffsetExpressionWide, GetOffsetExpressionWide method [Windows Debugging], IDebugBreakpoint2 interface, IDebugBreakpoint2, IDebugBreakpoint2::GetOffsetExpressionWide, GetOffsetExpressionWide method [Windows Debugging], GetOffsetExpressionWide, IDebugBreakpoint2 interface [Windows Debugging], GetOffsetExpressionWide method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugBreakpoint2.GetOffsetExpressionWide
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

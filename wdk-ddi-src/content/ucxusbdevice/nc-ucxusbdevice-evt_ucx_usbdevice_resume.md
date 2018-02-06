@@ -1,42 +1,47 @@
 ---
-UID : NC:ucxusbdevice.EVT_UCX_USBDEVICE_RESUME
-title : EVT_UCX_USBDEVICE_RESUME
-author : windows-driver-content
-description : UCX invokes this callback function to resume a device from suspend state.
-old-location : buses\evt_ucx_usbdevice_resume.htm
-old-project : usbref
-ms.assetid : 876D9754-B3AA-42C5-8BDD-60CFD4F78951
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : buses.evt_ucx_usbdevice_resume, EvtUcxDeviceResume callback function [Buses], EvtUcxDeviceResume, EVT_UCX_USBDEVICE_RESUME, EVT_UCX_USBDEVICE_RESUME, ucxusbdevice/EvtUcxDeviceResume, *PFN_UCX_USBDEVICE_RESUME callback function [Buses], *PFN_UCX_USBDEVICE_RESUME
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ucxusbdevice.h
-req.include-header : Ucxclass.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10, version 1709
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSTREAM_INFO, STREAM_INFO"
-req.product : Windows 10 or later.
+UID: NC:ucxusbdevice.EVT_UCX_USBDEVICE_RESUME
+title: EVT_UCX_USBDEVICE_RESUME
+author: windows-driver-content
+description: UCX invokes this callback function to resume a device from suspend state.
+old-location: buses\evt_ucx_usbdevice_resume.htm
+old-project: usbref
+ms.assetid: 876D9754-B3AA-42C5-8BDD-60CFD4F78951
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: buses.evt_ucx_usbdevice_resume, EvtUcxDeviceResume callback function [Buses], EvtUcxDeviceResume, EVT_UCX_USBDEVICE_RESUME, EVT_UCX_USBDEVICE_RESUME, ucxusbdevice/EvtUcxDeviceResume, *PFN_UCX_USBDEVICE_RESUME callback function [Buses], *PFN_UCX_USBDEVICE_RESUME
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ucxusbdevice.h
+req.include-header: Ucxclass.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10, version 1709
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	ucxusbdevice.h
+apiname:
+-	*PFN_UCX_USBDEVICE_RESUME
+product: Windows
+targetos: Windows
+req.typenames: "*PSTREAM_INFO, STREAM_INFO"
+req.product: Windows 10 or later.
 ---
 
 

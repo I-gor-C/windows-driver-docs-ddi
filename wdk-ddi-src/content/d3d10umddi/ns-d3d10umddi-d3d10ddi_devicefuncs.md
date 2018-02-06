@@ -1,41 +1,46 @@
 ---
-UID : NS:d3d10umddi.D3D10DDI_DEVICEFUNCS
-title : D3D10DDI_DEVICEFUNCS
-author : windows-driver-content
-description : The D3D10DDI_DEVICEFUNCS structure contains functions that the user-mode display driver can implement to render graphics primitives and process state changes.
-old-location : display\d3d10ddi_devicefuncs.htm
-old-project : display
-ms.assetid : 005f4fc0-2b22-47bf-a129-59b2dc4ff052
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3D10DDI_DEVICEFUNCS structure [Display Devices], display.d3d10ddi_devicefuncs, UMDisplayDriver_Dx10param_Structs_4d7e9e93-233d-4726-af26-bcaf0cbf149a.xml, d3d10umddi/D3D10DDI_DEVICEFUNCS, D3D10DDI_DEVICEFUNCS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3D10DDI_DEVICEFUNCS
+UID: NS:d3d10umddi.D3D10DDI_DEVICEFUNCS
+title: D3D10DDI_DEVICEFUNCS
+author: windows-driver-content
+description: The D3D10DDI_DEVICEFUNCS structure contains functions that the user-mode display driver can implement to render graphics primitives and process state changes.
+old-location: display\d3d10ddi_devicefuncs.htm
+old-project: display
+ms.assetid: 005f4fc0-2b22-47bf-a129-59b2dc4ff052
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3D10DDI_DEVICEFUNCS structure [Display Devices], display.d3d10ddi_devicefuncs, UMDisplayDriver_Dx10param_Structs_4d7e9e93-233d-4726-af26-bcaf0cbf149a.xml, d3d10umddi/D3D10DDI_DEVICEFUNCS, D3D10DDI_DEVICEFUNCS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	D3D10DDI_DEVICEFUNCS
+product: Windows
+targetos: Windows
+req.typenames: D3D10DDI_DEVICEFUNCS
 ---
 
 # D3D10DDI_DEVICEFUNCS structure

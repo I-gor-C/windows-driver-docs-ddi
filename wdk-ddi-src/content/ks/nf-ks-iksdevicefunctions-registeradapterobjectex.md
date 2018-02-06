@@ -1,41 +1,46 @@
 ---
-UID : NF:ks.IKsDeviceFunctions.RegisterAdapterObjectEx
-title : IKsDeviceFunctions::RegisterAdapterObjectEx method
-author : windows-driver-content
-description : The IKsDeviceFunctions::RegisterAdapterObjectEx method registers a DMA adapter object with AVStream. All drivers compiled for Win64 platforms should use this method instead of KsDeviceRegisterAdapterObject.
-old-location : stream\iksdevicefunctions_registeradapterobjectex.htm
-old-project : stream
-ms.assetid : e5dc54a6-e26a-455b-9990-92f5cfece923
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : RegisterAdapterObjectEx method [Streaming Media Devices], avintfc_ffa27a2d-8330-498f-bec2-dbde3c665671.xml, IKsDeviceFunctions::RegisterAdapterObjectEx, RegisterAdapterObjectEx, ks/IKsDeviceFunctions::RegisterAdapterObjectEx, RegisterAdapterObjectEx method [Streaming Media Devices], IKsDeviceFunctions interface, IKsDeviceFunctions, IKsDeviceFunctions interface [Streaming Media Devices], RegisterAdapterObjectEx method, stream.iksdevicefunctions_registeradapterobjectex
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Microsoft Windows Server 2003 with Service Pack 1 (SP1) and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : ks.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.IKsDeviceFunctions.RegisterAdapterObjectEx
+title: IKsDeviceFunctions::RegisterAdapterObjectEx method
+author: windows-driver-content
+description: The IKsDeviceFunctions::RegisterAdapterObjectEx method registers a DMA adapter object with AVStream. All drivers compiled for Win64 platforms should use this method instead of KsDeviceRegisterAdapterObject.
+old-location: stream\iksdevicefunctions_registeradapterobjectex.htm
+old-project: stream
+ms.assetid: e5dc54a6-e26a-455b-9990-92f5cfece923
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: RegisterAdapterObjectEx method [Streaming Media Devices], avintfc_ffa27a2d-8330-498f-bec2-dbde3c665671.xml, IKsDeviceFunctions::RegisterAdapterObjectEx, RegisterAdapterObjectEx, ks/IKsDeviceFunctions::RegisterAdapterObjectEx, RegisterAdapterObjectEx method [Streaming Media Devices], IKsDeviceFunctions interface, IKsDeviceFunctions, IKsDeviceFunctions interface [Streaming Media Devices], RegisterAdapterObjectEx method, stream.iksdevicefunctions_registeradapterobjectex
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Microsoft Windows Server 2003 with Service Pack 1 (SP1) and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: ks.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	ks.h
+apiname:
+-	IKsDeviceFunctions.RegisterAdapterObjectEx
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

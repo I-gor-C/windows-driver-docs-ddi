@@ -1,41 +1,46 @@
 ---
-UID : NF:portcls.IUnregisterPhysicalConnection.UnregisterPhysicalConnection
-title : IUnregisterPhysicalConnection::UnregisterPhysicalConnection method
-author : windows-driver-content
-description : The UnregisterPhysicalConnection method deletes the registration of a physical connection that was registered by a previous call to PcRegisterPhysicalConnection.
-old-location : audio\iunregisterphysicalconnection_unregisterphysicalconnection.htm
-old-project : audio
-ms.assetid : e8b99549-0fe2-4c8a-ad93-6689ebddee40
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : UnregisterPhysicalConnection, audmp-routines_5ecc7a84-6d2c-4514-9de8-cb1e4c60a61c.xml, IUnregisterPhysicalConnection::UnregisterPhysicalConnection, IUnregisterPhysicalConnection interface [Audio Devices], UnregisterPhysicalConnection method, UnregisterPhysicalConnection method [Audio Devices], portcls/IUnregisterPhysicalConnection::UnregisterPhysicalConnection, audio.iunregisterphysicalconnection_unregisterphysicalconnection, UnregisterPhysicalConnection method [Audio Devices], IUnregisterPhysicalConnection interface, IUnregisterPhysicalConnection
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : portcls.h
-req.include-header : Portcls.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : portcls.h
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.IUnregisterPhysicalConnection.UnregisterPhysicalConnection
+title: IUnregisterPhysicalConnection::UnregisterPhysicalConnection method
+author: windows-driver-content
+description: The UnregisterPhysicalConnection method deletes the registration of a physical connection that was registered by a previous call to PcRegisterPhysicalConnection.
+old-location: audio\iunregisterphysicalconnection_unregisterphysicalconnection.htm
+old-project: audio
+ms.assetid: e8b99549-0fe2-4c8a-ad93-6689ebddee40
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: UnregisterPhysicalConnection, audmp-routines_5ecc7a84-6d2c-4514-9de8-cb1e4c60a61c.xml, IUnregisterPhysicalConnection::UnregisterPhysicalConnection, IUnregisterPhysicalConnection interface [Audio Devices], UnregisterPhysicalConnection method, UnregisterPhysicalConnection method [Audio Devices], portcls/IUnregisterPhysicalConnection::UnregisterPhysicalConnection, audio.iunregisterphysicalconnection_unregisterphysicalconnection, UnregisterPhysicalConnection method [Audio Devices], IUnregisterPhysicalConnection interface, IUnregisterPhysicalConnection
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: portcls.h
+req.include-header: Portcls.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: portcls.h
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	portcls.h
+apiname:
+-	IUnregisterPhysicalConnection.UnregisterPhysicalConnection
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NF:rxce.RxCeInitiateVCDisconnect
-title : RxCeInitiateVCDisconnect function
-author : windows-driver-content
-description : RxCeInitiateVCDisconnect initiates a disconnect on the virtual circuit.
-old-location : ifsk\rxceinitiatevcdisconnect.htm
-old-project : ifsk
-ms.assetid : 978ddc02-9ff0-4798-879c-e4bc99081dcb
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.rxceinitiatevcdisconnect, rxref_1893aa5d-dda4-49f7-b4bb-dc9bdd75154a.xml, rxce/RxCeInitiateVCDisconnect, RxCeInitiateVCDisconnect, RxCeInitiateVCDisconnect function [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : rxce.h
-req.include-header : Rxce.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*LPRILWRITEPHONEBOOKENTRYPARAMS, RILWRITEPHONEBOOKENTRYPARAMS"
-req.product : Windows 10 or later.
+UID: NF:rxce.RxCeInitiateVCDisconnect
+title: RxCeInitiateVCDisconnect function
+author: windows-driver-content
+description: RxCeInitiateVCDisconnect initiates a disconnect on the virtual circuit.
+old-location: ifsk\rxceinitiatevcdisconnect.htm
+old-project: ifsk
+ms.assetid: 978ddc02-9ff0-4798-879c-e4bc99081dcb
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.rxceinitiatevcdisconnect, rxref_1893aa5d-dda4-49f7-b4bb-dc9bdd75154a.xml, rxce/RxCeInitiateVCDisconnect, RxCeInitiateVCDisconnect, RxCeInitiateVCDisconnect function [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: rxce.h
+req.include-header: Rxce.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	rxce.h
+apiname:
+-	RxCeInitiateVCDisconnect
+product: Windows
+targetos: Windows
+req.typenames: "*LPRILWRITEPHONEBOOKENTRYPARAMS, RILWRITEPHONEBOOKENTRYPARAMS"
+req.product: Windows 10 or later.
 ---
 
 

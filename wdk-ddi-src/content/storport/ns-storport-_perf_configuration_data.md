@@ -1,42 +1,47 @@
 ---
-UID : NS:storport._PERF_CONFIGURATION_DATA
-title : "_PERF_CONFIGURATION_DATA"
-author : windows-driver-content
-description : The PERF_CONFIGURATION_DATA structure describes the performance optimizations that are supported by the StorPortInitializePerfOpts routine.
-old-location : storage\perf_configuration_data.htm
-old-project : storage
-ms.assetid : 47db8f0f-9f3b-44d9-8110-dc0b79d0e26a
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.perf_configuration_data, structs-storport_3ff35217-29b1-43ab-a6e4-72aeaf90e931.xml, PPERF_CONFIGURATION_DATA structure pointer [Storage Devices], PERF_CONFIGURATION_DATA structure [Storage Devices], PERF_CONFIGURATION_DATA, _PERF_CONFIGURATION_DATA, storport/PERF_CONFIGURATION_DATA, *PPERF_CONFIGURATION_DATA, storport/PPERF_CONFIGURATION_DATA, PPERF_CONFIGURATION_DATA
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PERF_CONFIGURATION_DATA, *PPERF_CONFIGURATION_DATA
-req.product : Windows 10 or later.
+UID: NS:storport._PERF_CONFIGURATION_DATA
+title: "_PERF_CONFIGURATION_DATA"
+author: windows-driver-content
+description: The PERF_CONFIGURATION_DATA structure describes the performance optimizations that are supported by the StorPortInitializePerfOpts routine.
+old-location: storage\perf_configuration_data.htm
+old-project: storage
+ms.assetid: 47db8f0f-9f3b-44d9-8110-dc0b79d0e26a
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.perf_configuration_data, structs-storport_3ff35217-29b1-43ab-a6e4-72aeaf90e931.xml, PPERF_CONFIGURATION_DATA structure pointer [Storage Devices], PERF_CONFIGURATION_DATA structure [Storage Devices], PERF_CONFIGURATION_DATA, _PERF_CONFIGURATION_DATA, storport/PERF_CONFIGURATION_DATA, *PPERF_CONFIGURATION_DATA, storport/PPERF_CONFIGURATION_DATA, PPERF_CONFIGURATION_DATA
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	storport.h
+apiname:
+-	PERF_CONFIGURATION_DATA
+product: Windows
+targetos: Windows
+req.typenames: PERF_CONFIGURATION_DATA, *PPERF_CONFIGURATION_DATA
+req.product: Windows 10 or later.
 ---
 
 # _PERF_CONFIGURATION_DATA structure

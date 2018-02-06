@@ -1,41 +1,50 @@
 ---
-UID : NF:dbgeng.IDebugClient5.OutputServers
-title : IDebugClient5::OutputServers method
-author : windows-driver-content
-description : The OutputServers method lists the servers running on a given computer.
-old-location : debugger\outputservers.htm
-old-project : debugger
-ms.assetid : cb08e0d9-8c4b-4b7f-be3d-4e7c87d7f3d4
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : dbgeng/IDebugClient::OutputServers, OutputServers method [Windows Debugging], IDebugClient3 interface, IDebugClient3 interface [Windows Debugging], OutputServers method, IDebugClient4 interface [Windows Debugging], OutputServers method, OutputServers, OutputServers method [Windows Debugging], IDebugClient2 interface, IDebugClient5 interface [Windows Debugging], OutputServers method, dbgeng/IDebugClient2::OutputServers, dbgeng/IDebugClient4::OutputServers, OutputServers method [Windows Debugging], IDebugClient4::OutputServers, IDebugClient interface [Windows Debugging], OutputServers method, IDebugClient3::OutputServers, OutputServers method [Windows Debugging], IDebugClient4 interface, dbgeng/IDebugClient3::OutputServers, IDebugClient2 interface [Windows Debugging], OutputServers method, IDebugClient_8fecfb37-5e4d-4a2b-af1e-df081e636337.xml, debugger.outputservers, dbgeng/IDebugClient5::OutputServers, OutputServers method [Windows Debugging], IDebugClient5 interface, IDebugClient::OutputServers, OutputServers method [Windows Debugging], IDebugClient interface, IDebugClient5::OutputServers, IDebugClient2::OutputServers, IDebugClient5
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugClient5.OutputServers
+title: IDebugClient5::OutputServers method
+author: windows-driver-content
+description: The OutputServers method lists the servers running on a given computer.
+old-location: debugger\outputservers.htm
+old-project: debugger
+ms.assetid: cb08e0d9-8c4b-4b7f-be3d-4e7c87d7f3d4
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: dbgeng/IDebugClient::OutputServers, OutputServers method [Windows Debugging], IDebugClient3 interface, IDebugClient3 interface [Windows Debugging], OutputServers method, IDebugClient4 interface [Windows Debugging], OutputServers method, OutputServers, OutputServers method [Windows Debugging], IDebugClient2 interface, IDebugClient5 interface [Windows Debugging], OutputServers method, dbgeng/IDebugClient2::OutputServers, dbgeng/IDebugClient4::OutputServers, OutputServers method [Windows Debugging], IDebugClient4::OutputServers, IDebugClient interface [Windows Debugging], OutputServers method, IDebugClient3::OutputServers, OutputServers method [Windows Debugging], IDebugClient4 interface, dbgeng/IDebugClient3::OutputServers, IDebugClient2 interface [Windows Debugging], OutputServers method, IDebugClient_8fecfb37-5e4d-4a2b-af1e-df081e636337.xml, debugger.outputservers, dbgeng/IDebugClient5::OutputServers, OutputServers method [Windows Debugging], IDebugClient5 interface, IDebugClient::OutputServers, OutputServers method [Windows Debugging], IDebugClient interface, IDebugClient5::OutputServers, IDebugClient2::OutputServers, IDebugClient5
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugClient.OutputServers
+-	IDebugClient2.OutputServers
+-	IDebugClient3.OutputServers
+-	IDebugClient4.OutputServers
+-	IDebugClient5.OutputServers
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

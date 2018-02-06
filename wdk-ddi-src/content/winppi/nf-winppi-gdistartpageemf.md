@@ -1,42 +1,49 @@
 ---
-UID : NF:winppi.GdiStartPageEMF
-title : GdiStartPageEMF function
-author : windows-driver-content
-description : The GdiStartPageEMF function performs initialization operations for a physical page of an EMF-formatted print job.
-old-location : print\gdistartpageemf.htm
-old-project : print
-ms.assetid : 963c809f-da89-4f27-ba8b-3de8cdcec179
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : gdifnc_fbb09921-04b5-49e2-b8a7-fe23657a0f4f.xml, winppi/GdiStartPageEMF, print.gdistartpageemf, GdiStartPageEMF, GdiStartPageEMF function [Print Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : winppi.h
-req.include-header : Winppi.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Gdi32.Lib
-req.dll : Gdi32.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDOT11_WPS_DEVICE_NAME, DOT11_WPS_DEVICE_NAME"
-req.product : Windows 10 or later.
+UID: NF:winppi.GdiStartPageEMF
+title: GdiStartPageEMF function
+author: windows-driver-content
+description: The GdiStartPageEMF function performs initialization operations for a physical page of an EMF-formatted print job.
+old-location: print\gdistartpageemf.htm
+old-project: print
+ms.assetid: 963c809f-da89-4f27-ba8b-3de8cdcec179
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: gdifnc_fbb09921-04b5-49e2-b8a7-fe23657a0f4f.xml, winppi/GdiStartPageEMF, print.gdistartpageemf, GdiStartPageEMF, GdiStartPageEMF function [Print Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: winppi.h
+req.include-header: Winppi.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Gdi32.Lib
+req.dll: Gdi32.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Gdi32.dll
+-	Ext-MS-Win-GDI-Internal-Desktop-L1-1-0.dll
+-	GDI32Full.dll
+apiname:
+-	GdiStartPageEMF
+product: Windows
+targetos: Windows
+req.typenames: "*PDOT11_WPS_DEVICE_NAME, DOT11_WPS_DEVICE_NAME"
+req.product: Windows 10 or later.
 ---
 
 

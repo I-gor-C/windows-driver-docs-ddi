@@ -1,41 +1,46 @@
 ---
-UID : NS:hbapiwmi._HBAFCPID
-title : "_HBAFCPID"
-author : windows-driver-content
-description : The HBAFCPID structure contains information that uniquely identifies a logical unit on a fibre channel network.
-old-location : storage\hbafcpid.htm
-old-project : storage
-ms.assetid : a4fa3093-a328-4d90-bc51-0e7a6db1ed58
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : hbapiwmi/PHBAFCPID, PHBAFCPID, structs-Fibre_d993c5b6-2b58-4fae-981a-8096cd9c9bd0.xml, HBAFCPID structure [Storage Devices], PHBAFCPID structure pointer [Storage Devices], _HBAFCPID, HBAFCPID, storage.hbafcpid, hbapiwmi/HBAFCPID, *PHBAFCPID
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : hbapiwmi.h
-req.include-header : Hbapiwmi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PHBAFCPID, HBAFCPID"
+UID: NS:hbapiwmi._HBAFCPID
+title: "_HBAFCPID"
+author: windows-driver-content
+description: The HBAFCPID structure contains information that uniquely identifies a logical unit on a fibre channel network.
+old-location: storage\hbafcpid.htm
+old-project: storage
+ms.assetid: a4fa3093-a328-4d90-bc51-0e7a6db1ed58
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: hbapiwmi/PHBAFCPID, PHBAFCPID, structs-Fibre_d993c5b6-2b58-4fae-981a-8096cd9c9bd0.xml, HBAFCPID structure [Storage Devices], PHBAFCPID structure pointer [Storage Devices], _HBAFCPID, HBAFCPID, storage.hbafcpid, hbapiwmi/HBAFCPID, *PHBAFCPID
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: hbapiwmi.h
+req.include-header: Hbapiwmi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hbapiwmi.h
+apiname:
+-	HBAFCPID
+product: Windows
+targetos: Windows
+req.typenames: "*PHBAFCPID, HBAFCPID"
 ---
 
 # _HBAFCPID structure

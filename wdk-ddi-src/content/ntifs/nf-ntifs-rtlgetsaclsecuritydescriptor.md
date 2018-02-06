@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.RtlGetSaclSecurityDescriptor
-title : RtlGetSaclSecurityDescriptor function
-author : windows-driver-content
-description : The RtlGetSaclSecurityDescriptor routine returns a pointer to the system ACL (SACL) for a security descriptor.
-old-location : ifsk\rtlgetsaclsecuritydescriptor.htm
-old-project : ifsk
-ms.assetid : 5dd4b15a-63e1-4b80-a156-bc44aeeafb0e
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ntifs/RtlGetSaclSecurityDescriptor, rtlref_708c4a48-6840-426d-9c64-1eff896e8446.xml, RtlGetSaclSecurityDescriptor, ifsk.rtlgetsaclsecuritydescriptor, RtlGetSaclSecurityDescriptor routine [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : This routine is available on Microsoft Windows Server 2003 SP1 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.RtlGetSaclSecurityDescriptor
+title: RtlGetSaclSecurityDescriptor function
+author: windows-driver-content
+description: The RtlGetSaclSecurityDescriptor routine returns a pointer to the system ACL (SACL) for a security descriptor.
+old-location: ifsk\rtlgetsaclsecuritydescriptor.htm
+old-project: ifsk
+ms.assetid: 5dd4b15a-63e1-4b80-a156-bc44aeeafb0e
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ntifs/RtlGetSaclSecurityDescriptor, rtlref_708c4a48-6840-426d-9c64-1eff896e8446.xml, RtlGetSaclSecurityDescriptor, ifsk.rtlgetsaclsecuritydescriptor, RtlGetSaclSecurityDescriptor routine [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: This routine is available on Microsoft Windows Server 2003 SP1 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	RtlGetSaclSecurityDescriptor
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

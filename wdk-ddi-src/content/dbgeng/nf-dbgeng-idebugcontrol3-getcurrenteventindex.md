@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugControl3.GetCurrentEventIndex
-title : IDebugControl3::GetCurrentEventIndex method
-author : windows-driver-content
-description : The GetCurrentEventIndex method returns the index of the current event within the current list of events for the current target, if such a list exists.
-old-location : debugger\getcurrenteventindex.htm
-old-project : debugger
-ms.assetid : 148cf294-0410-4704-93ce-338529a214ad
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : GetCurrentEventIndex method [Windows Debugging], IDebugControl_7aec300e-651e-46c6-a4e7-d4ed2b9ca674.xml, GetCurrentEventIndex method [Windows Debugging], IDebugControl3 interface, IDebugControl3, IDebugControl3 interface [Windows Debugging], GetCurrentEventIndex method, GetCurrentEventIndex, dbgeng/IDebugControl3::GetCurrentEventIndex, debugger.getcurrenteventindex, IDebugControl3::GetCurrentEventIndex
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl3.GetCurrentEventIndex
+title: IDebugControl3::GetCurrentEventIndex method
+author: windows-driver-content
+description: The GetCurrentEventIndex method returns the index of the current event within the current list of events for the current target, if such a list exists.
+old-location: debugger\getcurrenteventindex.htm
+old-project: debugger
+ms.assetid: 148cf294-0410-4704-93ce-338529a214ad
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: GetCurrentEventIndex method [Windows Debugging], IDebugControl_7aec300e-651e-46c6-a4e7-d4ed2b9ca674.xml, GetCurrentEventIndex method [Windows Debugging], IDebugControl3 interface, IDebugControl3, IDebugControl3 interface [Windows Debugging], GetCurrentEventIndex method, GetCurrentEventIndex, dbgeng/IDebugControl3::GetCurrentEventIndex, debugger.getcurrenteventindex, IDebugControl3::GetCurrentEventIndex
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl3.GetCurrentEventIndex
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

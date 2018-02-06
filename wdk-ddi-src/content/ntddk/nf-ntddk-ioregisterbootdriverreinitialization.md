@@ -1,41 +1,46 @@
 ---
-UID : NF:ntddk.IoRegisterBootDriverReinitialization
-title : IoRegisterBootDriverReinitialization function
-author : windows-driver-content
-description : The IoRegisterBootDriverReinitialization routine is called by a boot driver to register the driver's reinitialization routine with the I/O manager to be called after all devices have been enumerated and started.
-old-location : kernel\ioregisterbootdriverreinitialization.htm
-old-project : kernel
-ms.assetid : af1c1f4b-7710-4cf7-9596-32d11db98abb
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.ioregisterbootdriverreinitialization, IoRegisterBootDriverReinitialization, IoRegisterBootDriverReinitialization routine [Kernel-Mode Driver Architecture], k104_492655f7-02ee-48ad-83b8-80ac50716b89.xml, ntddk/IoRegisterBootDriverReinitialization
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntddk.h
-req.include-header : Ntifs.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.IoRegisterBootDriverReinitialization
+title: IoRegisterBootDriverReinitialization function
+author: windows-driver-content
+description: The IoRegisterBootDriverReinitialization routine is called by a boot driver to register the driver's reinitialization routine with the I/O manager to be called after all devices have been enumerated and started.
+old-location: kernel\ioregisterbootdriverreinitialization.htm
+old-project: kernel
+ms.assetid: af1c1f4b-7710-4cf7-9596-32d11db98abb
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.ioregisterbootdriverreinitialization, IoRegisterBootDriverReinitialization, IoRegisterBootDriverReinitialization routine [Kernel-Mode Driver Architecture], k104_492655f7-02ee-48ad-83b8-80ac50716b89.xml, ntddk/IoRegisterBootDriverReinitialization
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntddk.h
+req.include-header: Ntifs.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoRegisterBootDriverReinitialization
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

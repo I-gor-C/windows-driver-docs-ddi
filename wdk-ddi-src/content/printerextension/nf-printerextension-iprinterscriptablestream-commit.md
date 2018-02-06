@@ -1,42 +1,47 @@
 ---
-UID : NF:printerextension.IPrinterScriptableStream.Commit
-title : IPrinterScriptableStream::Commit method
-author : windows-driver-content
-description : Commits the operation.
-old-location : print\iprinterscriptablestream__commit.htm
-old-project : print
-ms.assetid : 5BA1417B-B78B-4582-9DDC-D542413B4BD8
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : print.iprinterscriptablestream__commit, Commit method [Print Devices], IPrinterScriptableStream::Commit, Commit method [Print Devices], IPrinterScriptableStream interface, IPrinterScriptableStream, printerextension/IPrinterScriptableStream::Commit, Commit, IPrinterScriptableStream interface [Print Devices], Commit method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : printerextension.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : printerextension.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PrintSchemaSelectionType
-req.product : Windows 10 or later.
+UID: NF:printerextension.IPrinterScriptableStream.Commit
+title: IPrinterScriptableStream::Commit method
+author: windows-driver-content
+description: Commits the operation.
+old-location: print\iprinterscriptablestream__commit.htm
+old-project: print
+ms.assetid: 5BA1417B-B78B-4582-9DDC-D542413B4BD8
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: print.iprinterscriptablestream__commit, Commit method [Print Devices], IPrinterScriptableStream::Commit, Commit method [Print Devices], IPrinterScriptableStream interface, IPrinterScriptableStream, printerextension/IPrinterScriptableStream::Commit, Commit, IPrinterScriptableStream interface [Print Devices], Commit method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: printerextension.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: printerextension.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Printerextension.h
+apiname:
+-	IPrinterScriptableStream.Commit
+product: Windows
+targetos: Windows
+req.typenames: PrintSchemaSelectionType
+req.product: Windows 10 or later.
 ---
 
 

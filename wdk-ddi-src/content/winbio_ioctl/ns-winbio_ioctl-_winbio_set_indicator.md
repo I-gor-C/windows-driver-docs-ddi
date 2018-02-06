@@ -1,42 +1,47 @@
 ---
-UID : NS:winbio_ioctl._WINBIO_SET_INDICATOR
-title : "_WINBIO_SET_INDICATOR"
-author : windows-driver-content
-description : The WINBIO_SET_INDICATOR structure is the IN payload for IOCTL_BIOMETRIC_SET_INDICATOR.
-old-location : biometric\winbio_set_indicator.htm
-old-project : biometric
-ms.assetid : c4410845-3c7b-445e-80ec-25694b122a0e
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : biometric_ref_2ee60af8-1872-4932-9db7-9c3c27e29ddf.xml, PWINBIO_SET_INDICATOR, WINBIO_SET_INDICATOR structure [Biometric Devices], winbio_ioctl/WINBIO_SET_INDICATOR, *PWINBIO_SET_INDICATOR, WINBIO_SET_INDICATOR, _WINBIO_SET_INDICATOR, biometric.winbio_set_indicator, PWINBIO_SET_INDICATOR structure pointer [Biometric Devices], winbio_ioctl/PWINBIO_SET_INDICATOR
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : winbio_ioctl.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WINBIO_SET_INDICATOR, *PWINBIO_SET_INDICATOR
-req.product : Windows 10 or later.
+UID: NS:winbio_ioctl._WINBIO_SET_INDICATOR
+title: "_WINBIO_SET_INDICATOR"
+author: windows-driver-content
+description: The WINBIO_SET_INDICATOR structure is the IN payload for IOCTL_BIOMETRIC_SET_INDICATOR.
+old-location: biometric\winbio_set_indicator.htm
+old-project: biometric
+ms.assetid: c4410845-3c7b-445e-80ec-25694b122a0e
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: biometric_ref_2ee60af8-1872-4932-9db7-9c3c27e29ddf.xml, PWINBIO_SET_INDICATOR, WINBIO_SET_INDICATOR structure [Biometric Devices], winbio_ioctl/WINBIO_SET_INDICATOR, *PWINBIO_SET_INDICATOR, WINBIO_SET_INDICATOR, _WINBIO_SET_INDICATOR, biometric.winbio_set_indicator, PWINBIO_SET_INDICATOR structure pointer [Biometric Devices], winbio_ioctl/PWINBIO_SET_INDICATOR
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: winbio_ioctl.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	winbio_ioctl.h
+apiname:
+-	WINBIO_SET_INDICATOR
+product: Windows
+targetos: Windows
+req.typenames: WINBIO_SET_INDICATOR, *PWINBIO_SET_INDICATOR
+req.product: Windows 10 or later.
 ---
 
 # _WINBIO_SET_INDICATOR structure

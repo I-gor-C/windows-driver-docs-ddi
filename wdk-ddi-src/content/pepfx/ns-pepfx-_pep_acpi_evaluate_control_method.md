@@ -1,41 +1,46 @@
 ---
-UID : NS:pepfx._PEP_ACPI_EVALUATE_CONTROL_METHOD
-title : "_PEP_ACPI_EVALUATE_CONTROL_METHOD"
-author : windows-driver-content
-description : The PEP_ACPI_EVALUATE_CONTROL_METHOD structure specifies an ACPI control method to evaluate, an input argument to supply to this method, and an output buffer for the result of the evaluation.
-old-location : kernel\pep_acpi_evaluate_control_method.htm
-old-project : kernel
-ms.assetid : FFCC5947-1DD5-4AD5-A414-94BDC013D1A7
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : "_PEP_ACPI_EVALUATE_CONTROL_METHOD, PEP_ACPI_EVALUATE_CONTROL_METHOD structure [Kernel-Mode Driver Architecture], kernel.pep_acpi_evaluate_control_method, PPEP_ACPI_EVALUATE_CONTROL_METHOD, pepfx/PEP_ACPI_EVALUATE_CONTROL_METHOD, *PPEP_ACPI_EVALUATE_CONTROL_METHOD, pepfx/PPEP_ACPI_EVALUATE_CONTROL_METHOD, PEP_ACPI_EVALUATE_CONTROL_METHOD, PPEP_ACPI_EVALUATE_CONTROL_METHOD structure pointer [Kernel-Mode Driver Architecture]"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : pepfx.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with Windows 10.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPEP_ACPI_EVALUATE_CONTROL_METHOD, PEP_ACPI_EVALUATE_CONTROL_METHOD"
+UID: NS:pepfx._PEP_ACPI_EVALUATE_CONTROL_METHOD
+title: "_PEP_ACPI_EVALUATE_CONTROL_METHOD"
+author: windows-driver-content
+description: The PEP_ACPI_EVALUATE_CONTROL_METHOD structure specifies an ACPI control method to evaluate, an input argument to supply to this method, and an output buffer for the result of the evaluation.
+old-location: kernel\pep_acpi_evaluate_control_method.htm
+old-project: kernel
+ms.assetid: FFCC5947-1DD5-4AD5-A414-94BDC013D1A7
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: "_PEP_ACPI_EVALUATE_CONTROL_METHOD, PEP_ACPI_EVALUATE_CONTROL_METHOD structure [Kernel-Mode Driver Architecture], kernel.pep_acpi_evaluate_control_method, PPEP_ACPI_EVALUATE_CONTROL_METHOD, pepfx/PEP_ACPI_EVALUATE_CONTROL_METHOD, *PPEP_ACPI_EVALUATE_CONTROL_METHOD, pepfx/PPEP_ACPI_EVALUATE_CONTROL_METHOD, PEP_ACPI_EVALUATE_CONTROL_METHOD, PPEP_ACPI_EVALUATE_CONTROL_METHOD structure pointer [Kernel-Mode Driver Architecture]"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: pepfx.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows 10.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	pepfx.h
+apiname:
+-	PEP_ACPI_EVALUATE_CONTROL_METHOD
+product: Windows
+targetos: Windows
+req.typenames: "*PPEP_ACPI_EVALUATE_CONTROL_METHOD, PEP_ACPI_EVALUATE_CONTROL_METHOD"
 ---
 
 # _PEP_ACPI_EVALUATE_CONTROL_METHOD structure

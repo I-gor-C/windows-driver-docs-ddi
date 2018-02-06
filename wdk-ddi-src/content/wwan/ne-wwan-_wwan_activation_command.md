@@ -1,42 +1,47 @@
 ---
-UID : NE:wwan._WWAN_ACTIVATION_COMMAND
-title : "_WWAN_ACTIVATION_COMMAND"
-author : windows-driver-content
-description : The WWAN_ACTIVATION_COMMAND enumeration lists the Packet Data Protocol (PDP) activation commands that are supported by the MB device.
-old-location : netvista\wwan_activation_command.htm
-old-project : netvista
-ms.assetid : e9d25ac3-8ffc-4137-8409-731d8caaa730
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : WwanActivationCommandDeactivate, WwanActivationCommandMax, wwan/WwanActivationCommandActivate, *PWWAN_ACTIVATION_COMMAND, WWAN_ACTIVATION_COMMAND enumeration [Network Drivers Starting with Windows Vista], PWWAN_ACTIVATION_COMMAND, netvista.wwan_activation_command, WwanActivationCommandActivate, wwan/PWWAN_ACTIVATION_COMMAND, PWWAN_ACTIVATION_COMMAND enumeration pointer [Network Drivers Starting with Windows Vista], wwan/WwanActivationCommandMax, WwanRef_55137856-bb05-49ac-b318-cc6922a90445.xml, WWAN_ACTIVATION_COMMAND, _WWAN_ACTIVATION_COMMAND, wwan/WWAN_ACTIVATION_COMMAND, wwan/WwanActivationCommandDeactivate
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : wwan.h
-req.include-header : Wwan.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWWAN_ACTIVATION_COMMAND, WWAN_ACTIVATION_COMMAND"
-req.product : Windows 10 or later.
+UID: NE:wwan._WWAN_ACTIVATION_COMMAND
+title: "_WWAN_ACTIVATION_COMMAND"
+author: windows-driver-content
+description: The WWAN_ACTIVATION_COMMAND enumeration lists the Packet Data Protocol (PDP) activation commands that are supported by the MB device.
+old-location: netvista\wwan_activation_command.htm
+old-project: netvista
+ms.assetid: e9d25ac3-8ffc-4137-8409-731d8caaa730
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: WwanActivationCommandDeactivate, WwanActivationCommandMax, wwan/WwanActivationCommandActivate, *PWWAN_ACTIVATION_COMMAND, WWAN_ACTIVATION_COMMAND enumeration [Network Drivers Starting with Windows Vista], PWWAN_ACTIVATION_COMMAND, netvista.wwan_activation_command, WwanActivationCommandActivate, wwan/PWWAN_ACTIVATION_COMMAND, PWWAN_ACTIVATION_COMMAND enumeration pointer [Network Drivers Starting with Windows Vista], wwan/WwanActivationCommandMax, WwanRef_55137856-bb05-49ac-b318-cc6922a90445.xml, WWAN_ACTIVATION_COMMAND, _WWAN_ACTIVATION_COMMAND, wwan/WWAN_ACTIVATION_COMMAND, wwan/WwanActivationCommandDeactivate
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: wwan.h
+req.include-header: Wwan.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wwan.h
+apiname:
+-	WWAN_ACTIVATION_COMMAND
+product: Windows
+targetos: Windows
+req.typenames: "*PWWAN_ACTIVATION_COMMAND, WWAN_ACTIVATION_COMMAND"
+req.product: Windows 10 or later.
 ---
 
 # _WWAN_ACTIVATION_COMMAND Enumeration
@@ -55,22 +60,22 @@ typedef enum _WWAN_ACTIVATION_COMMAND {
 ## Constants
 
 <table>
-
-<tr>
-<td>WwanActivationCommandActivate</td>
-<td>Activate PDP context.</td>
-</tr>
-
-<tr>
-<td>WwanActivationCommandDeactivate</td>
-<td>Deactivate a currently activated PDP context identified by 
+            
+                <tr>
+                    <td>WwanActivationCommandActivate</td>
+                    <td>Activate PDP context.</td>
+                </tr>
+            
+                <tr>
+                    <td>WwanActivationCommandDeactivate</td>
+                    <td>Deactivate a currently activated PDP context identified by 
      <b>ConnectionId</b> .</td>
-</tr>
-
-<tr>
-<td>WwanActivationCommandMax</td>
-<td>The total number of supported activation commands.</td>
-</tr>
+                </tr>
+            
+                <tr>
+                    <td>WwanActivationCommandMax</td>
+                    <td>The total number of supported activation commands.</td>
+                </tr>
 </table>
 
 
@@ -80,9 +85,9 @@ typedef enum _WWAN_ACTIVATION_COMMAND {
 | **Windows version** | Available in Windows 7 and later versions of Windows. Available in Windows 7 and later versions of Windows. |
 | **Header** | wwan.h (include Wwan.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\wwan\ns-wwan-_wwan_set_context_state.md">WWAN_SET_CONTEXT_STATE</a>
+        <a href="..\wwan\ns-wwan-_wwan_set_context_state.md">WWAN_SET_CONTEXT_STATE</a>
 
  
 

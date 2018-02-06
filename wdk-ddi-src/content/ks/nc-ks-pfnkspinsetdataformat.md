@@ -1,41 +1,46 @@
 ---
-UID : NC:ks.PFNKSPINSETDATAFORMAT
-title : PFNKSPINSETDATAFORMAT
-author : windows-driver-content
-description : An AVStream minidriver's AVStrMiniPinSetDataFormat routine is called at pin creation time to verify that the previously agreed upon data format is acceptable for this KSPIN structure and a match for this KSDATARANGE structure.
-old-location : stream\avstrminipinsetdataformat.htm
-old-project : stream
-ms.assetid : f38222e8-f432-4a28-ba2f-2e4f60edd762
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.avstrminipinsetdataformat, AVStrMiniPinSetDataFormat, AVStrMiniPinSetDataFormat routine [Streaming Media Devices], AVStrMiniPinSetDataFormat, PFNKSPINSETDATAFORMAT, PFNKSPINSETDATAFORMAT, ks/AVStrMiniPinSetDataFormat, avstclbk_c72cee40-d3d3-45df-8ece-2eb0a8b52e38.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KEYWORDSELECTOR
+UID: NC:ks.PFNKSPINSETDATAFORMAT
+title: PFNKSPINSETDATAFORMAT
+author: windows-driver-content
+description: An AVStream minidriver's AVStrMiniPinSetDataFormat routine is called at pin creation time to verify that the previously agreed upon data format is acceptable for this KSPIN structure and a match for this KSDATARANGE structure.
+old-location: stream\avstrminipinsetdataformat.htm
+old-project: stream
+ms.assetid: f38222e8-f432-4a28-ba2f-2e4f60edd762
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.avstrminipinsetdataformat, AVStrMiniPinSetDataFormat, AVStrMiniPinSetDataFormat routine [Streaming Media Devices], AVStrMiniPinSetDataFormat, PFNKSPINSETDATAFORMAT, PFNKSPINSETDATAFORMAT, ks/AVStrMiniPinSetDataFormat, avstclbk_c72cee40-d3d3-45df-8ece-2eb0a8b52e38.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	ks.h
+apiname:
+-	AVStrMiniPinSetDataFormat
+product: Windows
+targetos: Windows
+req.typenames: KEYWORDSELECTOR
 ---
 
 

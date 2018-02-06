@@ -1,41 +1,46 @@
 ---
-UID : NI:ntdddisk.IOCTL_DISK_CREATE_DISK
-title : IOCTL_DISK_CREATE_DISK
-author : windows-driver-content
-description : Creates an empty partition for the device object.
-old-location : storage\ioctl_disk_create_disk.htm
-old-project : storage
-ms.assetid : 9ec6835c-43b8-4878-9ddf-1ca7c24435c2
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_disk_create_disk, IOCTL_DISK_CREATE_DISK control code [Storage Devices], IOCTL_DISK_CREATE_DISK, ntdddisk/IOCTL_DISK_CREATE_DISK, k307_1520ab81-e89f-4531-a6ac-0998e1b1b658.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntdddisk.h
-req.include-header : Ntdddisk.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DETECTION_TYPE
+UID: NI:ntdddisk.IOCTL_DISK_CREATE_DISK
+title: IOCTL_DISK_CREATE_DISK
+author: windows-driver-content
+description: Creates an empty partition for the device object.
+old-location: storage\ioctl_disk_create_disk.htm
+old-project: storage
+ms.assetid: 9ec6835c-43b8-4878-9ddf-1ca7c24435c2
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_disk_create_disk, IOCTL_DISK_CREATE_DISK control code [Storage Devices], IOCTL_DISK_CREATE_DISK, ntdddisk/IOCTL_DISK_CREATE_DISK, k307_1520ab81-e89f-4531-a6ac-0998e1b1b658.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntdddisk.h
+req.include-header: Ntdddisk.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntdddisk.h
+apiname:
+-	IOCTL_DISK_CREATE_DISK
+product: Windows
+targetos: Windows
+req.typenames: DETECTION_TYPE
 ---
 
 # IOCTL_DISK_CREATE_DISK IOCTL

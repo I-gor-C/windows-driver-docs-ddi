@@ -1,41 +1,46 @@
 ---
-UID : NS:ndiswwan._NDIS_WWAN_SET_PREFERRED_PROVIDERS
-title : "_NDIS_WWAN_SET_PREFERRED_PROVIDERS"
-author : windows-driver-content
-description : The NDIS_WWAN_SET_PREFERRED_PROVIDERS structure represents the list of preferred providers associated with the MB device.
-old-location : netvista\ndis_wwan_set_preferred_providers.htm
-old-project : netvista
-ms.assetid : 6741d440-0e17-4b2d-a642-0335d1f936cf
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.ndis_wwan_set_preferred_providers, ndiswwan/NDIS_WWAN_SET_PREFERRED_PROVIDERS, NDIS_WWAN_SET_PREFERRED_PROVIDERS structure [Network Drivers Starting with Windows Vista], ndiswwan/PNDIS_WWAN_SET_PREFERRED_PROVIDERS, PNDIS_WWAN_SET_PREFERRED_PROVIDERS, _NDIS_WWAN_SET_PREFERRED_PROVIDERS, *PNDIS_WWAN_SET_PREFERRED_PROVIDERS, WwanRef_9e9b42a9-813f-4440-a112-9af4bc172d4e.xml, PNDIS_WWAN_SET_PREFERRED_PROVIDERS structure pointer [Network Drivers Starting with Windows Vista], NDIS_WWAN_SET_PREFERRED_PROVIDERS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndiswwan.h
-req.include-header : Ndiswwan.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_WWAN_SET_PREFERRED_PROVIDERS, *PNDIS_WWAN_SET_PREFERRED_PROVIDERS
+UID: NS:ndiswwan._NDIS_WWAN_SET_PREFERRED_PROVIDERS
+title: "_NDIS_WWAN_SET_PREFERRED_PROVIDERS"
+author: windows-driver-content
+description: The NDIS_WWAN_SET_PREFERRED_PROVIDERS structure represents the list of preferred providers associated with the MB device.
+old-location: netvista\ndis_wwan_set_preferred_providers.htm
+old-project: netvista
+ms.assetid: 6741d440-0e17-4b2d-a642-0335d1f936cf
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.ndis_wwan_set_preferred_providers, ndiswwan/NDIS_WWAN_SET_PREFERRED_PROVIDERS, NDIS_WWAN_SET_PREFERRED_PROVIDERS structure [Network Drivers Starting with Windows Vista], ndiswwan/PNDIS_WWAN_SET_PREFERRED_PROVIDERS, PNDIS_WWAN_SET_PREFERRED_PROVIDERS, _NDIS_WWAN_SET_PREFERRED_PROVIDERS, *PNDIS_WWAN_SET_PREFERRED_PROVIDERS, WwanRef_9e9b42a9-813f-4440-a112-9af4bc172d4e.xml, PNDIS_WWAN_SET_PREFERRED_PROVIDERS structure pointer [Network Drivers Starting with Windows Vista], NDIS_WWAN_SET_PREFERRED_PROVIDERS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndiswwan.h
+req.include-header: Ndiswwan.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndiswwan.h
+apiname:
+-	NDIS_WWAN_SET_PREFERRED_PROVIDERS
+product: Windows
+targetos: Windows
+req.typenames: NDIS_WWAN_SET_PREFERRED_PROVIDERS, *PNDIS_WWAN_SET_PREFERRED_PROVIDERS
 ---
 
 # _NDIS_WWAN_SET_PREFERRED_PROVIDERS structure

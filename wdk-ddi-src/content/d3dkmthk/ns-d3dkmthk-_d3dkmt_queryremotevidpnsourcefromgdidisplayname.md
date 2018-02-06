@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmthk._D3DKMT_QUERYREMOTEVIDPNSOURCEFROMGDIDISPLAYNAME
-title : "_D3DKMT_QUERYREMOTEVIDPNSOURCEFROMGDIDISPLAYNAME"
-author : windows-driver-content
-description : Describes information that is required to map a GDI display name to a remote video present network (VidPN) source ID.
-old-location : display\d3dkmt_queryremotevidpnsourcefromgdidisplayname.htm
-old-project : display
-ms.assetid : ac0ec68a-1f2c-4a39-bf88-0e69d50b1279
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3dkmthk/D3DKMT_QUERYREMOTEVIDPNSOURCEFROMGDIDISPLAYNAME, D3DKMT_QUERYREMOTEVIDPNSOURCEFROMGDIDISPLAYNAME, display.d3dkmt_queryremotevidpnsourcefromgdidisplayname, _D3DKMT_QUERYREMOTEVIDPNSOURCEFROMGDIDISPLAYNAME, D3DKMT_QUERYREMOTEVIDPNSOURCEFROMGDIDISPLAYNAME structure [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_QUERYREMOTEVIDPNSOURCEFROMGDIDISPLAYNAME
+UID: NS:d3dkmthk._D3DKMT_QUERYREMOTEVIDPNSOURCEFROMGDIDISPLAYNAME
+title: "_D3DKMT_QUERYREMOTEVIDPNSOURCEFROMGDIDISPLAYNAME"
+author: windows-driver-content
+description: Describes information that is required to map a GDI display name to a remote video present network (VidPN) source ID.
+old-location: display\d3dkmt_queryremotevidpnsourcefromgdidisplayname.htm
+old-project: display
+ms.assetid: ac0ec68a-1f2c-4a39-bf88-0e69d50b1279
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3dkmthk/D3DKMT_QUERYREMOTEVIDPNSOURCEFROMGDIDISPLAYNAME, D3DKMT_QUERYREMOTEVIDPNSOURCEFROMGDIDISPLAYNAME, display.d3dkmt_queryremotevidpnsourcefromgdidisplayname, _D3DKMT_QUERYREMOTEVIDPNSOURCEFROMGDIDISPLAYNAME, D3DKMT_QUERYREMOTEVIDPNSOURCEFROMGDIDISPLAYNAME structure [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	D3dkmthk.h
+apiname:
+-	D3DKMT_QUERYREMOTEVIDPNSOURCEFROMGDIDISPLAYNAME
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_QUERYREMOTEVIDPNSOURCEFROMGDIDISPLAYNAME
 ---
 
 # _D3DKMT_QUERYREMOTEVIDPNSOURCEFROMGDIDISPLAYNAME structure

@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddsysenv.IOCTL_SYSENV_QUERY_VARIABLE_INFO
-title : IOCTL_SYSENV_QUERY_VARIABLE_INFO
-author : windows-driver-content
-description : Returns information about system environment variables using SysEnv device.
-old-location : kernel\ioctl_ioctl_sysenv_query_variable_info.htm
-old-project : kernel
-ms.assetid : 4056202F-2292-40A5-BE1D-8C1A6FA79B50
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.ioctl_ioctl_sysenv_query_variable_info, IOCTL_SYSENV_QUERY_VARIABLE_INFO control code [Kernel-Mode Driver Architecture], IOCTL_SYSENV_QUERY_VARIABLE_INFO, ntddsysenv/IOCTL_SYSENV_QUERY_VARIABLE_INFO
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddsysenv.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STORAGE_ZONE_GROUP, *PSTORAGE_ZONE_GROUP
+UID: NI:ntddsysenv.IOCTL_SYSENV_QUERY_VARIABLE_INFO
+title: IOCTL_SYSENV_QUERY_VARIABLE_INFO
+author: windows-driver-content
+description: Returns information about system environment variables using SysEnv device.
+old-location: kernel\ioctl_ioctl_sysenv_query_variable_info.htm
+old-project: kernel
+ms.assetid: 4056202F-2292-40A5-BE1D-8C1A6FA79B50
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.ioctl_ioctl_sysenv_query_variable_info, IOCTL_SYSENV_QUERY_VARIABLE_INFO control code [Kernel-Mode Driver Architecture], IOCTL_SYSENV_QUERY_VARIABLE_INFO, ntddsysenv/IOCTL_SYSENV_QUERY_VARIABLE_INFO
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddsysenv.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddsysenv.h
+apiname:
+-	IOCTL_SYSENV_QUERY_VARIABLE_INFO
+product: Windows
+targetos: Windows
+req.typenames: STORAGE_ZONE_GROUP, *PSTORAGE_ZONE_GROUP
 ---
 
 # IOCTL_SYSENV_QUERY_VARIABLE_INFO IOCTL

@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.WAVEFORMATEXTENSIBLE
-title : WAVEFORMATEXTENSIBLE
-author : windows-driver-content
-description : The WAVEFORMATEXTENSIBLE structure specifies the format of an audio wave stream.
-old-location : audio\waveformatextensible.htm
-old-project : audio
-ms.assetid : 54bcb18e-df4b-471c-b121-4db75ce5c49b
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : audio.waveformatextensible, WAVEFORMATEXTENSIBLE structure [Audio Devices], WAVEFORMATEXTENSIBLE, PWAVEFORMATEXTENSIBLE structure pointer [Audio Devices], ksmedia/WAVEFORMATEXTENSIBLE, aud-prop_d40f094e-44f9-4baa-8a15-03e4fb369501.xml, ksmedia/PWAVEFORMATEXTENSIBLE, *PWAVEFORMATEXTENSIBLE, PWAVEFORMATEXTENSIBLE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Mmreg.h, Ksmedia.h, Mmreg.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WAVEFORMATEXTENSIBLE, *PWAVEFORMATEXTENSIBLE
+UID: NS:ksmedia.WAVEFORMATEXTENSIBLE
+title: WAVEFORMATEXTENSIBLE
+author: windows-driver-content
+description: The WAVEFORMATEXTENSIBLE structure specifies the format of an audio wave stream.
+old-location: audio\waveformatextensible.htm
+old-project: audio
+ms.assetid: 54bcb18e-df4b-471c-b121-4db75ce5c49b
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: audio.waveformatextensible, WAVEFORMATEXTENSIBLE structure [Audio Devices], WAVEFORMATEXTENSIBLE, PWAVEFORMATEXTENSIBLE structure pointer [Audio Devices], ksmedia/WAVEFORMATEXTENSIBLE, aud-prop_d40f094e-44f9-4baa-8a15-03e4fb369501.xml, ksmedia/PWAVEFORMATEXTENSIBLE, *PWAVEFORMATEXTENSIBLE, PWAVEFORMATEXTENSIBLE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Mmreg.h, Ksmedia.h, Mmreg.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	WAVEFORMATEXTENSIBLE
+product: Windows
+targetos: Windows
+req.typenames: WAVEFORMATEXTENSIBLE, *PWAVEFORMATEXTENSIBLE
 ---
 
 # WAVEFORMATEXTENSIBLE structure

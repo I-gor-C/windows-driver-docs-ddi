@@ -1,41 +1,46 @@
 ---
-UID : NS:d3d12umddi.D3D12DDI_VIDEO_PROCESS_OUTPUT_STREAM_DESC_0032
-title : D3D12DDI_VIDEO_PROCESS_OUTPUT_STREAM_DESC_0032
-author : windows-driver-content
-description : Describes output stream properties for the video processor.
-old-location : display\d3d12ddi_video_process_output_stream_desc_0032.htm
-old-project : display
-ms.assetid : 5A995E97-4522-44CD-89C3-521724142D7F
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3D12DDI_VIDEO_PROCESS_OUTPUT_STREAM_DESC_0032 structure [Display Devices], D3D12DDI_VIDEO_PROCESS_OUTPUT_STREAM_DESC_0032, d3d12umddi/D3D12DDI_VIDEO_PROCESS_OUTPUT_STREAM_DESC_0032, display.d3d12ddi_video_process_output_stream_desc_0032
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3d12umddi.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3D12DDI_VIDEO_PROCESS_OUTPUT_STREAM_DESC_0032
+UID: NS:d3d12umddi.D3D12DDI_VIDEO_PROCESS_OUTPUT_STREAM_DESC_0032
+title: D3D12DDI_VIDEO_PROCESS_OUTPUT_STREAM_DESC_0032
+author: windows-driver-content
+description: Describes output stream properties for the video processor.
+old-location: display\d3d12ddi_video_process_output_stream_desc_0032.htm
+old-project: display
+ms.assetid: 5A995E97-4522-44CD-89C3-521724142D7F
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3D12DDI_VIDEO_PROCESS_OUTPUT_STREAM_DESC_0032 structure [Display Devices], D3D12DDI_VIDEO_PROCESS_OUTPUT_STREAM_DESC_0032, d3d12umddi/D3D12DDI_VIDEO_PROCESS_OUTPUT_STREAM_DESC_0032, display.d3d12ddi_video_process_output_stream_desc_0032
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3d12umddi.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3d12umddi.h
+apiname:
+-	D3D12DDI_VIDEO_PROCESS_OUTPUT_STREAM_DESC_0032
+product: Windows
+targetos: Windows
+req.typenames: D3D12DDI_VIDEO_PROCESS_OUTPUT_STREAM_DESC_0032
 ---
 
 # D3D12DDI_VIDEO_PROCESS_OUTPUT_STREAM_DESC_0032 structure

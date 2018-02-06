@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddndis._NDIS_NDK_LOCAL_ENDPOINTS
-title : "_NDIS_NDK_LOCAL_ENDPOINTS"
-author : windows-driver-content
-description : The NDIS_NDK_LOCAL_ENDPOINTS structure describes the NDK local endpoints that are on a miniport adapter.
-old-location : netvista\ndis_ndk_local_endpoints.htm
-old-project : netvista
-ms.assetid : AF14B883-780E-42BE-9D8F-75C17011425B
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : ntddndis/PNDIS_NDK_LOCAL_ENDPOINTS, NDIS_NDK_LOCAL_ENDPOINTS structure [Network Drivers Starting with Windows Vista], _NDIS_NDK_LOCAL_ENDPOINTS, NDIS_NDK_LOCAL_ENDPOINTS, netvista.ndis_ndk_local_endpoints, PNDIS_NDK_LOCAL_ENDPOINTS structure pointer [Network Drivers Starting with Windows Vista], PNDIS_NDK_LOCAL_ENDPOINTS, ntddndis/NDIS_NDK_LOCAL_ENDPOINTS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : None supported,Supported in NDIS 6.30 and later.
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_NDK_LOCAL_ENDPOINTS
+UID: NS:ntddndis._NDIS_NDK_LOCAL_ENDPOINTS
+title: "_NDIS_NDK_LOCAL_ENDPOINTS"
+author: windows-driver-content
+description: The NDIS_NDK_LOCAL_ENDPOINTS structure describes the NDK local endpoints that are on a miniport adapter.
+old-location: netvista\ndis_ndk_local_endpoints.htm
+old-project: netvista
+ms.assetid: AF14B883-780E-42BE-9D8F-75C17011425B
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: ntddndis/PNDIS_NDK_LOCAL_ENDPOINTS, NDIS_NDK_LOCAL_ENDPOINTS structure [Network Drivers Starting with Windows Vista], _NDIS_NDK_LOCAL_ENDPOINTS, NDIS_NDK_LOCAL_ENDPOINTS, netvista.ndis_ndk_local_endpoints, PNDIS_NDK_LOCAL_ENDPOINTS structure pointer [Network Drivers Starting with Windows Vista], PNDIS_NDK_LOCAL_ENDPOINTS, ntddndis/NDIS_NDK_LOCAL_ENDPOINTS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: None supported,Supported in NDIS 6.30 and later.
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddndis.h
+apiname:
+-	NDIS_NDK_LOCAL_ENDPOINTS
+product: Windows
+targetos: Windows
+req.typenames: NDIS_NDK_LOCAL_ENDPOINTS
 ---
 
 # _NDIS_NDK_LOCAL_ENDPOINTS structure

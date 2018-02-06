@@ -1,42 +1,47 @@
 ---
-UID : NC:wdm.GET_SET_DEVICE_DATA
-title : GET_SET_DEVICE_DATA
-author : windows-driver-content
-description : The GetBusData routine reads data from the device's configuration space.
-old-location : kernel\getbusdata.htm
-old-project : kernel
-ms.assetid : F5BDB3DF-6AC9-424E-BC69-27071F3D3820
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.getbusdata, GetBusData routine [Kernel-Mode Driver Architecture], GetBusData, GET_SET_DEVICE_DATA, GET_SET_DEVICE_DATA, wdm/GetBusData, kernel.busgetdevicedata, drvr_interface_f4fd2eab-5924-4ffa-b39e-fd7e0f74e5df.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdm.h
-req.include-header : Ntddk.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
-req.product : Windows 10 or later.
+UID: NC:wdm.GET_SET_DEVICE_DATA
+title: GET_SET_DEVICE_DATA
+author: windows-driver-content
+description: The GetBusData routine reads data from the device's configuration space.
+old-location: kernel\getbusdata.htm
+old-project: kernel
+ms.assetid: F5BDB3DF-6AC9-424E-BC69-27071F3D3820
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.getbusdata, GetBusData routine [Kernel-Mode Driver Architecture], GetBusData, GET_SET_DEVICE_DATA, GET_SET_DEVICE_DATA, wdm/GetBusData, kernel.busgetdevicedata, drvr_interface_f4fd2eab-5924-4ffa-b39e-fd7e0f74e5df.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdm.h
+req.include-header: Ntddk.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	wdm.h
+apiname:
+-	GetBusData
+product: Windows
+targetos: Windows
+req.typenames: WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+req.product: Windows 10 or later.
 ---
 
 

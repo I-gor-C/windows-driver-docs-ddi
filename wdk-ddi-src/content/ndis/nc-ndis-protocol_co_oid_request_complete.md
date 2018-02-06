@@ -1,41 +1,46 @@
 ---
-UID : NC:ndis.PROTOCOL_CO_OID_REQUEST_COMPLETE
-title : PROTOCOL_CO_OID_REQUEST_COMPLETE
-author : windows-driver-content
-description : The ProtocolCoOidRequestComplete function completes the processing of an asynchronous CoNDIS OID request.Note  You must declare the function by using the PROTOCOL_CO_OID_REQUEST_COMPLETE type.
-old-location : netvista\protocolcooidrequestcomplete.htm
-old-project : netvista
-ms.assetid : 16883c64-3cc6-4f50-8be7-7c58c422a717
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.protocolcooidrequestcomplete, ProtocolCoOidRequestComplete callback function [Network Drivers Starting with Windows Vista], ProtocolCoOidRequestComplete, PROTOCOL_CO_OID_REQUEST_COMPLETE, PROTOCOL_CO_OID_REQUEST_COMPLETE, ndis/ProtocolCoOidRequestComplete, condis_request_ref_14f11d94-41dd-44b1-9117-20c8d22278aa.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL (see Remarks section)"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
+UID: NC:ndis.PROTOCOL_CO_OID_REQUEST_COMPLETE
+title: PROTOCOL_CO_OID_REQUEST_COMPLETE
+author: windows-driver-content
+description: The ProtocolCoOidRequestComplete function completes the processing of an asynchronous CoNDIS OID request.Note  You must declare the function by using the PROTOCOL_CO_OID_REQUEST_COMPLETE type.
+old-location: netvista\protocolcooidrequestcomplete.htm
+old-project: netvista
+ms.assetid: 16883c64-3cc6-4f50-8be7-7c58c422a717
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.protocolcooidrequestcomplete, ProtocolCoOidRequestComplete callback function [Network Drivers Starting with Windows Vista], ProtocolCoOidRequestComplete, PROTOCOL_CO_OID_REQUEST_COMPLETE, PROTOCOL_CO_OID_REQUEST_COMPLETE, ndis/ProtocolCoOidRequestComplete, condis_request_ref_14f11d94-41dd-44b1-9117-20c8d22278aa.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL (see Remarks section)"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ndis.h
+apiname:
+-	ProtocolCoOidRequestComplete
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 

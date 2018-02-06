@@ -1,41 +1,50 @@
 ---
-UID : NF:dbgeng.IDebugClient5.ExitDispatch
-title : IDebugClient5::ExitDispatch method
-author : windows-driver-content
-description : The ExitDispatch method causes the DispatchCallbacks method to return.
-old-location : debugger\exitdispatch.htm
-old-project : debugger
-ms.assetid : c4db90d9-d6d3-4bab-ac3a-6b94b0818f53
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : ExitDispatch method [Windows Debugging], IDebugClient3::ExitDispatch, IDebugClient2 interface [Windows Debugging], ExitDispatch method, IDebugClient interface [Windows Debugging], ExitDispatch method, debugger.exitdispatch, dbgeng/IDebugClient3::ExitDispatch, ExitDispatch method [Windows Debugging], IDebugClient3 interface, dbgeng/IDebugClient5::ExitDispatch, IDebugClient3 interface [Windows Debugging], ExitDispatch method, IDebugClient5 interface [Windows Debugging], ExitDispatch method, ExitDispatch method [Windows Debugging], IDebugClient4 interface, ExitDispatch method [Windows Debugging], IDebugClient interface, dbgeng/IDebugClient2::ExitDispatch, ExitDispatch method [Windows Debugging], IDebugClient5 interface, IDebugClient5::ExitDispatch, IDebugClient4 interface [Windows Debugging], ExitDispatch method, IDebugClient::ExitDispatch, ExitDispatch, ExitDispatch method [Windows Debugging], IDebugClient2 interface, IDebugClient2::ExitDispatch, dbgeng/IDebugClient4::ExitDispatch, IDebugClient4::ExitDispatch, dbgeng/IDebugClient::ExitDispatch, IDebugClient5, IDebugClient_5c4cc320-694e-481a-814d-a77653548f7d.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugClient5.ExitDispatch
+title: IDebugClient5::ExitDispatch method
+author: windows-driver-content
+description: The ExitDispatch method causes the DispatchCallbacks method to return.
+old-location: debugger\exitdispatch.htm
+old-project: debugger
+ms.assetid: c4db90d9-d6d3-4bab-ac3a-6b94b0818f53
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: ExitDispatch method [Windows Debugging], IDebugClient3::ExitDispatch, IDebugClient2 interface [Windows Debugging], ExitDispatch method, IDebugClient interface [Windows Debugging], ExitDispatch method, debugger.exitdispatch, dbgeng/IDebugClient3::ExitDispatch, ExitDispatch method [Windows Debugging], IDebugClient3 interface, dbgeng/IDebugClient5::ExitDispatch, IDebugClient3 interface [Windows Debugging], ExitDispatch method, IDebugClient5 interface [Windows Debugging], ExitDispatch method, ExitDispatch method [Windows Debugging], IDebugClient4 interface, ExitDispatch method [Windows Debugging], IDebugClient interface, dbgeng/IDebugClient2::ExitDispatch, ExitDispatch method [Windows Debugging], IDebugClient5 interface, IDebugClient5::ExitDispatch, IDebugClient4 interface [Windows Debugging], ExitDispatch method, IDebugClient::ExitDispatch, ExitDispatch, ExitDispatch method [Windows Debugging], IDebugClient2 interface, IDebugClient2::ExitDispatch, dbgeng/IDebugClient4::ExitDispatch, IDebugClient4::ExitDispatch, dbgeng/IDebugClient::ExitDispatch, IDebugClient5, IDebugClient_5c4cc320-694e-481a-814d-a77653548f7d.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugClient.ExitDispatch
+-	IDebugClient2.ExitDispatch
+-	IDebugClient3.ExitDispatch
+-	IDebugClient4.ExitDispatch
+-	IDebugClient5.ExitDispatch
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

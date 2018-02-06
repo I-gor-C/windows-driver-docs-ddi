@@ -1,42 +1,50 @@
 ---
-UID : NF:wdfusb.WdfUsbTargetPipeFormatRequestForReset
-title : WdfUsbTargetPipeFormatRequestForReset function
-author : windows-driver-content
-description : The WdfUsbTargetPipeFormatRequestForReset method builds a reset request for a specified USB pipe, but it does not send the request.
-old-location : wdf\wdfusbtargetpipeformatrequestforreset.htm
-old-project : wdf
-ms.assetid : 10f5296c-6be2-4f88-952b-b23e518b844a
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : PFN_WDFUSBTARGETPIPEFORMATREQUESTFORRESET, WdfUsbTargetPipeFormatRequestForReset, DFUsbRef_5a1aa46c-9d8a-4e6b-9003-723a65c314f3.xml, WdfUsbTargetPipeFormatRequestForReset method, wdfusb/WdfUsbTargetPipeFormatRequestForReset, wdf.wdfusbtargetpipeformatrequestforreset, kmdf.wdfusbtargetpipeformatrequestforreset
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfusb.h
-req.include-header : Wdfusb.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2, RequestFormattedValid, RequestForUrbXrb, RequestSendAndForgetNoFormatting, RequestSendAndForgetNoFormatting2, UsbKmdfIrql, UsbKmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfusb.WdfUsbTargetPipeFormatRequestForReset
+title: WdfUsbTargetPipeFormatRequestForReset function
+author: windows-driver-content
+description: The WdfUsbTargetPipeFormatRequestForReset method builds a reset request for a specified USB pipe, but it does not send the request.
+old-location: wdf\wdfusbtargetpipeformatrequestforreset.htm
+old-project: wdf
+ms.assetid: 10f5296c-6be2-4f88-952b-b23e518b844a
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: PFN_WDFUSBTARGETPIPEFORMATREQUESTFORRESET, WdfUsbTargetPipeFormatRequestForReset, DFUsbRef_5a1aa46c-9d8a-4e6b-9003-723a65c314f3.xml, WdfUsbTargetPipeFormatRequestForReset method, wdfusb/WdfUsbTargetPipeFormatRequestForReset, wdf.wdfusbtargetpipeformatrequestforreset, kmdf.wdfusbtargetpipeformatrequestforreset
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfusb.h
+req.include-header: Wdfusb.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2, RequestFormattedValid, RequestForUrbXrb, RequestSendAndForgetNoFormatting, RequestSendAndForgetNoFormatting2, UsbKmdfIrql, UsbKmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+-	WUDFx02000.dll
+-	WUDFx02000.dll.dll
+apiname:
+-	WdfUsbTargetPipeFormatRequestForReset
+product: Windows
+targetos: Windows
+req.typenames: WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
+req.product: Windows 10 or later.
 ---
 
 

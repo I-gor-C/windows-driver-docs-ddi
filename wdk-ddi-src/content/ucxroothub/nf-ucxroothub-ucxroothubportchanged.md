@@ -1,42 +1,47 @@
 ---
-UID : NF:ucxroothub.UcxRootHubPortChanged
-title : UcxRootHubPortChanged function
-author : windows-driver-content
-description : Notifies UCX about a new port change event on the host controller.
-old-location : buses\_ucxroothubportchanged.htm
-old-project : usbref
-ms.assetid : 7984308D-4C8E-4481-8770-2430552B00E8
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : buses._ucxroothubportchanged, ucxroothub/UcxRootHubPortChanged, UcxRootHubPortChanged method [Buses], UcxRootHubPortChanged
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ucxroothub.h
-req.include-header : Ucxclass.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TRISTATE
-req.product : Windows 10 or later.
+UID: NF:ucxroothub.UcxRootHubPortChanged
+title: UcxRootHubPortChanged function
+author: windows-driver-content
+description: Notifies UCX about a new port change event on the host controller.
+old-location: buses\_ucxroothubportchanged.htm
+old-project: usbref
+ms.assetid: 7984308D-4C8E-4481-8770-2430552B00E8
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: buses._ucxroothubportchanged, ucxroothub/UcxRootHubPortChanged, UcxRootHubPortChanged method [Buses], UcxRootHubPortChanged
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ucxroothub.h
+req.include-header: Ucxclass.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	ucxroothub.h
+apiname:
+-	UcxRootHubPortChanged
+product: Windows
+targetos: Windows
+req.typenames: TRISTATE
+req.product: Windows 10 or later.
 ---
 
 

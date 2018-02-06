@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFIoRequest.CancelSentRequest
-title : IWDFIoRequest::CancelSentRequest method
-author : windows-driver-content
-description : The CancelSentRequest method attempts to cancel the I/O request that the driver previously submitted to an I/O target.
-old-location : wdf\iwdfiorequest_cancelsentrequest.htm
-old-project : wdf
-ms.assetid : 1951a2e8-c2f0-42bc-9deb-8d2a049817c4
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wudfddi/IWDFIoRequest::CancelSentRequest, CancelSentRequest method, CancelSentRequest method, IWDFIoRequest interface, CancelSentRequest, IWDFIoRequest::CancelSentRequest, IWDFIoRequest interface, CancelSentRequest method, UMDFRequestObjectRef_cf439791-044b-4cd8-8a1c-eafc7b266897.xml, wdf.iwdfiorequest_cancelsentrequest, umdf.iwdfiorequest_cancelsentrequest, IWDFIoRequest
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.5
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFIoRequest.CancelSentRequest
+title: IWDFIoRequest::CancelSentRequest method
+author: windows-driver-content
+description: The CancelSentRequest method attempts to cancel the I/O request that the driver previously submitted to an I/O target.
+old-location: wdf\iwdfiorequest_cancelsentrequest.htm
+old-project: wdf
+ms.assetid: 1951a2e8-c2f0-42bc-9deb-8d2a049817c4
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wudfddi/IWDFIoRequest::CancelSentRequest, CancelSentRequest method, CancelSentRequest method, IWDFIoRequest interface, CancelSentRequest, IWDFIoRequest::CancelSentRequest, IWDFIoRequest interface, CancelSentRequest method, UMDFRequestObjectRef_cf439791-044b-4cd8-8a1c-eafc7b266897.xml, wdf.iwdfiorequest_cancelsentrequest, umdf.iwdfiorequest_cancelsentrequest, IWDFIoRequest
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.5
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFIoRequest.CancelSentRequest
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

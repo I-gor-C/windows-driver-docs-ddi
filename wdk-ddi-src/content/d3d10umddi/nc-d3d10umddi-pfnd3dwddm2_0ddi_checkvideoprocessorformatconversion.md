@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3DWDDM2_0DDI_CHECKVIDEOPROCESSORFORMATCONVERSION
-title : PFND3DWDDM2_0DDI_CHECKVIDEOPROCESSORFORMATCONVERSION
-author : windows-driver-content
-description : Indicates whether the driver supports a specific format/color-space conversion combination. This function must be implemented by Windows Display Driver Model (WDDM) 2.0 or later drivers.
-old-location : display\checkvideoprocessorformatconversion.htm
-old-project : display
-ms.assetid : 70A741CC-9D1B-4ECC-BB3A-6ACF6893691A
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.checkvideoprocessorformatconversion, CheckVideoProcessorFormatConversion callback function [Display Devices], CheckVideoProcessorFormatConversion, d3d10umddi/CheckVideoProcessorFormatConversion
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3DWDDM2_0DDI_CHECKVIDEOPROCESSORFORMATCONVERSION
+title: PFND3DWDDM2_0DDI_CHECKVIDEOPROCESSORFORMATCONVERSION
+author: windows-driver-content
+description: Indicates whether the driver supports a specific format/color-space conversion combination. This function must be implemented by Windows Display Driver Model (WDDM) 2.0 or later drivers.
+old-location: display\checkvideoprocessorformatconversion.htm
+old-project: display
+ms.assetid: 70A741CC-9D1B-4ECC-BB3A-6ACF6893691A
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.checkvideoprocessorformatconversion, CheckVideoProcessorFormatConversion callback function [Display Devices], CheckVideoProcessorFormatConversion, d3d10umddi/CheckVideoProcessorFormatConversion
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	D3d10umddi.h
+apiname:
+-	CheckVideoProcessorFormatConversion
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

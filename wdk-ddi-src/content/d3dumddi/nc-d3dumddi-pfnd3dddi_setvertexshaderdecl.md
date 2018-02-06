@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_SETVERTEXSHADERDECL
-title : PFND3DDDI_SETVERTEXSHADERDECL
-author : windows-driver-content
-description : The SetVertexShaderDecl function sets the vertex shader declaration so that all of the subsequent drawing operations use that declaration.
-old-location : display\setvertexshaderdecl.htm
-old-project : display
-ms.assetid : 6387d632-78e2-4594-a58a-b11b2e831cc0
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.setvertexshaderdecl, SetVertexShaderDecl callback function [Display Devices], SetVertexShaderDecl, PFND3DDDI_SETVERTEXSHADERDECL, PFND3DDDI_SETVERTEXSHADERDECL, d3dumddi/SetVertexShaderDecl, UserModeDisplayDriver_Functions_83e6bdef-65e0-4357-aa4c-51e20cbeb6d5.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_SETVERTEXSHADERDECL
+title: PFND3DDDI_SETVERTEXSHADERDECL
+author: windows-driver-content
+description: The SetVertexShaderDecl function sets the vertex shader declaration so that all of the subsequent drawing operations use that declaration.
+old-location: display\setvertexshaderdecl.htm
+old-project: display
+ms.assetid: 6387d632-78e2-4594-a58a-b11b2e831cc0
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.setvertexshaderdecl, SetVertexShaderDecl callback function [Display Devices], SetVertexShaderDecl, PFND3DDDI_SETVERTEXSHADERDECL, PFND3DDDI_SETVERTEXSHADERDECL, d3dumddi/SetVertexShaderDecl, UserModeDisplayDriver_Functions_83e6bdef-65e0-4357-aa4c-51e20cbeb6d5.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	SetVertexShaderDecl
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

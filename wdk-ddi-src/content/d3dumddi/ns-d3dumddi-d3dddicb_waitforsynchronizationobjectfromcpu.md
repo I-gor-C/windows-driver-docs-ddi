@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi.D3DDDICB_WAITFORSYNCHRONIZATIONOBJECTFROMCPU
-title : D3DDDICB_WAITFORSYNCHRONIZATIONOBJECTFROMCPU
-author : windows-driver-content
-description : D3DDDICB_WAITFORSYNCHRONIZATIONOBJECTFROMCPU is used with pfnWaitForSynchronizationObjectFromCpuCb to wait for a monitored fence to reach a certain value.
-old-location : display\d3dddicb_waitforsynchronizationobjectfromcpu.htm
-old-project : display
-ms.assetid : 0F5BEDBF-6871-4343-88D1-85E7620171EF
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.d3dddicb_waitforsynchronizationobjectfromcpu, WaitAny, D3DDDICB_WAITFORSYNCHRONIZATIONOBJECTFROMCPU, D3DDDICB_WAITFORSYNCHRONIZATIONOBJECTFROMCPU structure [Display Devices], d3dumddi/D3DDDICB_WAITFORSYNCHRONIZATIONOBJECTFROMCPU
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDICB_WAITFORSYNCHRONIZATIONOBJECTFROMCPU
+UID: NS:d3dumddi.D3DDDICB_WAITFORSYNCHRONIZATIONOBJECTFROMCPU
+title: D3DDDICB_WAITFORSYNCHRONIZATIONOBJECTFROMCPU
+author: windows-driver-content
+description: D3DDDICB_WAITFORSYNCHRONIZATIONOBJECTFROMCPU is used with pfnWaitForSynchronizationObjectFromCpuCb to wait for a monitored fence to reach a certain value.
+old-location: display\d3dddicb_waitforsynchronizationobjectfromcpu.htm
+old-project: display
+ms.assetid: 0F5BEDBF-6871-4343-88D1-85E7620171EF
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.d3dddicb_waitforsynchronizationobjectfromcpu, WaitAny, D3DDDICB_WAITFORSYNCHRONIZATIONOBJECTFROMCPU, D3DDDICB_WAITFORSYNCHRONIZATIONOBJECTFROMCPU structure [Display Devices], d3dumddi/D3DDDICB_WAITFORSYNCHRONIZATIONOBJECTFROMCPU
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	D3DDDICB_WAITFORSYNCHRONIZATIONOBJECTFROMCPU
+product: Windows
+targetos: Windows
+req.typenames: D3DDDICB_WAITFORSYNCHRONIZATIONOBJECTFROMCPU
 ---
 
 # D3DDDICB_WAITFORSYNCHRONIZATIONOBJECTFROMCPU structure

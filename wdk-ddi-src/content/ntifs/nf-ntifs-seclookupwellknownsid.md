@@ -1,41 +1,47 @@
 ---
-UID : NF:ntifs.SecLookupWellKnownSid
-title : SecLookupWellKnownSid function
-author : windows-driver-content
-description : SecLookupWellKnownSid accepts a well-known security identifier (SID) type as input and retrieves the local security identifier (SID) for this well known SID.
-old-location : ifsk\seclookupwellknownsid.htm
-old-project : ifsk
-ms.assetid : fbf06a28-d6f8-424c-95e0-ce24653cac64
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : SecLookupWellKnownSid function [Installable File System Drivers], SecLookupWellKnownSid, ksecddref_4c0053b3-cdaa-4cdc-a4d3-6329ccf64f98.xml, ntifs/SecLookupWellKnownSid, ifsk.seclookupwellknownsid
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : This SecLookupWellKnownSid function is only available starting with Windows Server 2003.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ksecdd.lib
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.SecLookupWellKnownSid
+title: SecLookupWellKnownSid function
+author: windows-driver-content
+description: SecLookupWellKnownSid accepts a well-known security identifier (SID) type as input and retrieves the local security identifier (SID) for this well known SID.
+old-location: ifsk\seclookupwellknownsid.htm
+old-project: ifsk
+ms.assetid: fbf06a28-d6f8-424c-95e0-ce24653cac64
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: SecLookupWellKnownSid function [Installable File System Drivers], SecLookupWellKnownSid, ksecddref_4c0053b3-cdaa-4cdc-a4d3-6329ccf64f98.xml, ntifs/SecLookupWellKnownSid, ifsk.seclookupwellknownsid
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: This SecLookupWellKnownSid function is only available starting with Windows Server 2003.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ksecdd.lib
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ksecdd.lib
+-	Ksecdd.dll
+apiname:
+-	SecLookupWellKnownSid
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

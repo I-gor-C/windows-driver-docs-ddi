@@ -1,42 +1,47 @@
 ---
-UID : NI:scsiscan.IOCTL_SCSISCAN_CMD
-title : IOCTL_SCSISCAN_CMD
-author : windows-driver-content
-description : Creates a customized SCSI control descriptor block (CDB) and sends it to the kernel-mode still image driver for SCSI buses.
-old-location : image\ioctl_scsiscan_cmd.htm
-old-project : image
-ms.assetid : af1f4107-f537-4b94-b9b4-c97429878fef
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : image.ioctl_scsiscan_cmd, IOCTL_SCSISCAN_CMD control code [Imaging Devices], IOCTL_SCSISCAN_CMD, scsiscan/IOCTL_SCSISCAN_CMD, stifnc_da087c9b-101a-47c9-b546-ba887b05dca0.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : scsiscan.h
-req.include-header : Scsiscan.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PZONE_DESCRIPTIOR, ZONE_DESCRIPTIOR"
-req.product : Windows 10 or later.
+UID: NI:scsiscan.IOCTL_SCSISCAN_CMD
+title: IOCTL_SCSISCAN_CMD
+author: windows-driver-content
+description: Creates a customized SCSI control descriptor block (CDB) and sends it to the kernel-mode still image driver for SCSI buses.
+old-location: image\ioctl_scsiscan_cmd.htm
+old-project: image
+ms.assetid: af1f4107-f537-4b94-b9b4-c97429878fef
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: image.ioctl_scsiscan_cmd, IOCTL_SCSISCAN_CMD control code [Imaging Devices], IOCTL_SCSISCAN_CMD, scsiscan/IOCTL_SCSISCAN_CMD, stifnc_da087c9b-101a-47c9-b546-ba887b05dca0.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: scsiscan.h
+req.include-header: Scsiscan.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Scsiscan.h
+apiname:
+-	IOCTL_SCSISCAN_CMD
+product: Windows
+targetos: Windows
+req.typenames: "*PZONE_DESCRIPTIOR, ZONE_DESCRIPTIOR"
+req.product: Windows 10 or later.
 ---
 
 # IOCTL_SCSISCAN_CMD IOCTL

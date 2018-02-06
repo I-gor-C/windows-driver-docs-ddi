@@ -1,41 +1,46 @@
 ---
-UID : NS:ndiswwan._NDIS_WWAN_DEVICE_SERVICE_EVENT
-title : "_NDIS_WWAN_DEVICE_SERVICE_EVENT"
-author : windows-driver-content
-description : The NDIS_WWAN_DEVICE_SERVICE_EVENT structure describes unsolicited device service data that were not initiated by commands from Windows.
-old-location : netvista\ndis_wwan_device_service_event.htm
-old-project : netvista
-ms.assetid : 43205AA6-2B1A-4D04-9AF8-E0EB53253F5B
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : "_NDIS_WWAN_DEVICE_SERVICE_EVENT, PNDIS_WWAN_DEVICE_SERVICE_EVENT structure pointer [Network Drivers Starting with Windows Vista], ndiswwan/PNDIS_WWAN_DEVICE_SERVICE_EVENT, PNDIS_WWAN_DEVICE_SERVICE_EVENT, NDIS_WWAN_DEVICE_SERVICE_EVENT structure [Network Drivers Starting with Windows Vista], *PNDIS_WWAN_DEVICE_SERVICE_EVENT, NDIS_WWAN_DEVICE_SERVICE_EVENT, netvista.ndis_wwan_device_service_event, ndiswwan/NDIS_WWAN_DEVICE_SERVICE_EVENT"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndiswwan.h
-req.include-header : Ndiswwan.h
-req.target-type : Windows
-req.target-min-winverclnt : Versions:\_Supported in Windows 8 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_WWAN_DEVICE_SERVICE_EVENT, *PNDIS_WWAN_DEVICE_SERVICE_EVENT
+UID: NS:ndiswwan._NDIS_WWAN_DEVICE_SERVICE_EVENT
+title: "_NDIS_WWAN_DEVICE_SERVICE_EVENT"
+author: windows-driver-content
+description: The NDIS_WWAN_DEVICE_SERVICE_EVENT structure describes unsolicited device service data that were not initiated by commands from Windows.
+old-location: netvista\ndis_wwan_device_service_event.htm
+old-project: netvista
+ms.assetid: 43205AA6-2B1A-4D04-9AF8-E0EB53253F5B
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: "_NDIS_WWAN_DEVICE_SERVICE_EVENT, PNDIS_WWAN_DEVICE_SERVICE_EVENT structure pointer [Network Drivers Starting with Windows Vista], ndiswwan/PNDIS_WWAN_DEVICE_SERVICE_EVENT, PNDIS_WWAN_DEVICE_SERVICE_EVENT, NDIS_WWAN_DEVICE_SERVICE_EVENT structure [Network Drivers Starting with Windows Vista], *PNDIS_WWAN_DEVICE_SERVICE_EVENT, NDIS_WWAN_DEVICE_SERVICE_EVENT, netvista.ndis_wwan_device_service_event, ndiswwan/NDIS_WWAN_DEVICE_SERVICE_EVENT"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndiswwan.h
+req.include-header: Ndiswwan.h
+req.target-type: Windows
+req.target-min-winverclnt: Versions:\_Supported in Windows 8 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndiswwan.h
+apiname:
+-	NDIS_WWAN_DEVICE_SERVICE_EVENT
+product: Windows
+targetos: Windows
+req.typenames: NDIS_WWAN_DEVICE_SERVICE_EVENT, *PNDIS_WWAN_DEVICE_SERVICE_EVENT
 ---
 
 # _NDIS_WWAN_DEVICE_SERVICE_EVENT structure

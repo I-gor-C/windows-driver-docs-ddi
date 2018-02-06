@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugControl4.GetManagedStatus
-title : IDebugControl4::GetManagedStatus method
-author : windows-driver-content
-description : Provides feedback on the engine's use of the runtime debugging APIs provided by the common language runtime (CLR).
-old-location : debugger\idebugcontrol4_getmanagedstatus.htm
-old-project : debugger
-ms.assetid : C2D32ABB-5ABE-4580-9577-1144569EA8E1
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : GetManagedStatus, debugger.idebugcontrol4_getmanagedstatus, GetManagedStatus method [Windows Debugging], IDebugControl4 interface, IDebugControl4::GetManagedStatus, GetManagedStatus method [Windows Debugging], IDebugControl4 interface [Windows Debugging], GetManagedStatus method, dbgeng/IDebugControl4::GetManagedStatus, IDebugControl4
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl4.GetManagedStatus
+title: IDebugControl4::GetManagedStatus method
+author: windows-driver-content
+description: Provides feedback on the engine's use of the runtime debugging APIs provided by the common language runtime (CLR).
+old-location: debugger\idebugcontrol4_getmanagedstatus.htm
+old-project: debugger
+ms.assetid: C2D32ABB-5ABE-4580-9577-1144569EA8E1
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: GetManagedStatus, debugger.idebugcontrol4_getmanagedstatus, GetManagedStatus method [Windows Debugging], IDebugControl4 interface, IDebugControl4::GetManagedStatus, GetManagedStatus method [Windows Debugging], IDebugControl4 interface [Windows Debugging], GetManagedStatus method, dbgeng/IDebugControl4::GetManagedStatus, IDebugControl4
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl4.GetManagedStatus
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NF:wdfqueryinterface.WDF_QUERY_INTERFACE_CONFIG_INIT
-title : WDF_QUERY_INTERFACE_CONFIG_INIT function
-author : windows-driver-content
-description : The WDF_QUERY_INTERFACE_CONFIG_INIT function initializes a driver's WDF_QUERY_INTERFACE_CONFIG structure.
-old-location : wdf\wdf_query_interface_config_init.htm
-old-project : wdf
-ms.assetid : 509f4fa5-37c8-4098-aade-767aad5d6d6a
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : kmdf.wdf_query_interface_config_init, WDF_QUERY_INTERFACE_CONFIG_INIT function, WDF_QUERY_INTERFACE_CONFIG_INIT, wdfqueryinterface/WDF_QUERY_INTERFACE_CONFIG_INIT, wdf.wdf_query_interface_config_init, DFDeviceObjectDriverDefIntRef_d7e26200-d711-4c81-92d6-d2c2c1f052b0.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfqueryinterface.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_PDO_EVENT_CALLBACKS, *PWDF_PDO_EVENT_CALLBACKS
-req.product : Windows 10 or later.
+UID: NF:wdfqueryinterface.WDF_QUERY_INTERFACE_CONFIG_INIT
+title: WDF_QUERY_INTERFACE_CONFIG_INIT function
+author: windows-driver-content
+description: The WDF_QUERY_INTERFACE_CONFIG_INIT function initializes a driver's WDF_QUERY_INTERFACE_CONFIG structure.
+old-location: wdf\wdf_query_interface_config_init.htm
+old-project: wdf
+ms.assetid: 509f4fa5-37c8-4098-aade-767aad5d6d6a
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: kmdf.wdf_query_interface_config_init, WDF_QUERY_INTERFACE_CONFIG_INIT function, WDF_QUERY_INTERFACE_CONFIG_INIT, wdfqueryinterface/WDF_QUERY_INTERFACE_CONFIG_INIT, wdf.wdf_query_interface_config_init, DFDeviceObjectDriverDefIntRef_d7e26200-d711-4c81-92d6-d2c2c1f052b0.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfqueryinterface.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdfqueryinterface.h
+apiname:
+-	WDF_QUERY_INTERFACE_CONFIG_INIT
+product: Windows
+targetos: Windows
+req.typenames: WDF_PDO_EVENT_CALLBACKS, *PWDF_PDO_EVENT_CALLBACKS
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFIoRequest2.GetEffectiveIoType
-title : IWDFIoRequest2::GetEffectiveIoType method
-author : windows-driver-content
-description : The GetEffectiveIoType method returns the buffer access method that UMDF is using for the data buffers of the I/O request that the IWDFIoRequest2 interface represents.
-old-location : wdf\iwdfiorequest2_geteffectiveiotype.htm
-old-project : wdf
-ms.assetid : 76909efd-99ca-4e47-9c81-8a48608c2543
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.iwdfiorequest2_geteffectiveiotype, GetEffectiveIoType, wudfddi/IWDFIoRequest2::GetEffectiveIoType, umdf.iwdfiorequest2_geteffectiveiotype, IWDFIoRequest2, GetEffectiveIoType method, IWDFIoRequest2::GetEffectiveIoType, IWDFIoRequest2 interface, GetEffectiveIoType method, GetEffectiveIoType method, IWDFIoRequest2 interface, UMDFRequestObjectRef_cfea225a-09a5-4aed-8576-de9c44c18b81.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.9
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFIoRequest2.GetEffectiveIoType
+title: IWDFIoRequest2::GetEffectiveIoType method
+author: windows-driver-content
+description: The GetEffectiveIoType method returns the buffer access method that UMDF is using for the data buffers of the I/O request that the IWDFIoRequest2 interface represents.
+old-location: wdf\iwdfiorequest2_geteffectiveiotype.htm
+old-project: wdf
+ms.assetid: 76909efd-99ca-4e47-9c81-8a48608c2543
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.iwdfiorequest2_geteffectiveiotype, GetEffectiveIoType, wudfddi/IWDFIoRequest2::GetEffectiveIoType, umdf.iwdfiorequest2_geteffectiveiotype, IWDFIoRequest2, GetEffectiveIoType method, IWDFIoRequest2::GetEffectiveIoType, IWDFIoRequest2 interface, GetEffectiveIoType method, GetEffectiveIoType method, IWDFIoRequest2 interface, UMDFRequestObjectRef_cfea225a-09a5-4aed-8576-de9c44c18b81.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.9
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFIoRequest2.GetEffectiveIoType
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

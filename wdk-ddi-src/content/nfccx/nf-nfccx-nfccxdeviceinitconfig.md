@@ -1,41 +1,46 @@
 ---
-UID : NF:nfccx.NfcCxDeviceInitConfig
-title : NfcCxDeviceInitConfig function
-author : windows-driver-content
-description : Called by the client driver during its AddDevice routine to perform DeviceInit functions. During this process the following I/O callback functions are also exchanged:
-old-location : nfpdrivers\_nfccxdeviceinitconfig_.htm
-old-project : nfpdrivers
-ms.assetid : 98047C0F-B419-4DFE-8143-BD3917650878
-ms.author : windowsdriverdev
-ms.date : 12/18/2017
-ms.keywords : NfcCxDeviceInitConfig, NfcCxDeviceInitConfig function [Near-Field Proximity Drivers], nfccx/NfcCxDeviceInitConfig, nfpdrivers._nfccxdeviceinitconfig_
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : nfccx.h
-req.include-header : Ncidef.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : None supported
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Nfccxstub.lib
-req.dll : NfcCx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NFC_CX_TRANSPORT_TYPE, *PNFC_CX_TRANSPORT_TYPE
+UID: NF:nfccx.NfcCxDeviceInitConfig
+title: NfcCxDeviceInitConfig function
+author: windows-driver-content
+description: Called by the client driver during its AddDevice routine to perform DeviceInit functions. During this process the following I/O callback functions are also exchanged:
+old-location: nfpdrivers\_nfccxdeviceinitconfig_.htm
+old-project: nfpdrivers
+ms.assetid: 98047C0F-B419-4DFE-8143-BD3917650878
+ms.author: windowsdriverdev
+ms.date: 12/18/2017
+ms.keywords: NfcCxDeviceInitConfig, NfcCxDeviceInitConfig function [Near-Field Proximity Drivers], nfccx/NfcCxDeviceInitConfig, nfpdrivers._nfccxdeviceinitconfig_
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: nfccx.h
+req.include-header: Ncidef.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: None supported
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Nfccxstub.lib
+req.dll: NfcCx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NfcCx.dll
+apiname:
+-	NfcCxDeviceInitConfig
+product: Windows
+targetos: Windows
+req.typenames: NFC_CX_TRANSPORT_TYPE, *PNFC_CX_TRANSPORT_TYPE
 ---
 
 

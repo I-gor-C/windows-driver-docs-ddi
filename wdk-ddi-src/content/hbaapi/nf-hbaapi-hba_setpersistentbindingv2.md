@@ -1,41 +1,46 @@
 ---
-UID : NF:hbaapi.HBA_SetPersistentBindingV2
-title : HBA_SetPersistentBindingV2 function
-author : windows-driver-content
-description : The HBA_SetPersistentBindingV2 routine establishes a set of bindings between operating system and fibre channel protocol (FCP) identifiers for the logical units that the HBA can enumerate on the specified port.
-old-location : storage\hba_setpersistentbindingv2.htm
-old-project : storage
-ms.assetid : b0b32954-62d1-4434-892f-67106b0f8ef7
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.hba_setpersistentbindingv2, HBA_SetPersistentBindingV2, hbaapi/HBA_SetPersistentBindingV2, HBA_SetPersistentBindingV2 routine [Storage Devices], fibreHBA_rtns_b081179f-690d-4646-ae40-1737c5933394.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : hbaapi.h
-req.include-header : Hbaapi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Hbaapi.lib
-req.dll : Hbaapi.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HBA_WWNTYPE
+UID: NF:hbaapi.HBA_SetPersistentBindingV2
+title: HBA_SetPersistentBindingV2 function
+author: windows-driver-content
+description: The HBA_SetPersistentBindingV2 routine establishes a set of bindings between operating system and fibre channel protocol (FCP) identifiers for the logical units that the HBA can enumerate on the specified port.
+old-location: storage\hba_setpersistentbindingv2.htm
+old-project: storage
+ms.assetid: b0b32954-62d1-4434-892f-67106b0f8ef7
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.hba_setpersistentbindingv2, HBA_SetPersistentBindingV2, hbaapi/HBA_SetPersistentBindingV2, HBA_SetPersistentBindingV2 routine [Storage Devices], fibreHBA_rtns_b081179f-690d-4646-ae40-1737c5933394.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: hbaapi.h
+req.include-header: Hbaapi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Hbaapi.lib
+req.dll: Hbaapi.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Hbaapi.dll
+apiname:
+-	HBA_SetPersistentBindingV2
+product: Windows
+targetos: Windows
+req.typenames: HBA_WWNTYPE
 ---
 
 

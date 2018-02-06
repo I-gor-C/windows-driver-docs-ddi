@@ -1,42 +1,47 @@
 ---
-UID : NF:winsplp.RemovePrintDeviceObject
-title : RemovePrintDeviceObject function
-author : windows-driver-content
-description : The RemovePrintDeviceObject function removes a device object from a print provider queue.
-old-location : print\removeprintdeviceobject.htm
-old-project : print
-ms.assetid : D94A669E-4293-4235-8BC4-C7883BB0C83C
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : RemovePrintDeviceObject, RemovePrintDeviceObject function [Print Devices], winsplp/RemovePrintDeviceObject, print.removeprintdeviceobject
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : winsplp.h
-req.include-header : Winspool.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : WinSpool.lib
-req.dll : WinSpool.drv
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NOTIFICATION_CONFIG_FLAGS
-req.product : Windows 10 or later.
+UID: NF:winsplp.RemovePrintDeviceObject
+title: RemovePrintDeviceObject function
+author: windows-driver-content
+description: The RemovePrintDeviceObject function removes a device object from a print provider queue.
+old-location: print\removeprintdeviceobject.htm
+old-project: print
+ms.assetid: D94A669E-4293-4235-8BC4-C7883BB0C83C
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: RemovePrintDeviceObject, RemovePrintDeviceObject function [Print Devices], winsplp/RemovePrintDeviceObject, print.removeprintdeviceobject
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: winsplp.h
+req.include-header: Winspool.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: WinSpool.lib
+req.dll: WinSpool.drv
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	WinSpool.drv
+apiname:
+-	RemovePrintDeviceObject
+product: Windows
+targetos: Windows
+req.typenames: NOTIFICATION_CONFIG_FLAGS
+req.product: Windows 10 or later.
 ---
 
 

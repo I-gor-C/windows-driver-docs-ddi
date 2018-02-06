@@ -1,42 +1,47 @@
 ---
-UID : NS:prntfont._MAPTABLE
-title : "_MAPTABLE"
-author : windows-driver-content
-description : The MAPTABLE structure is one of the structures used to define the contents of glyph translation table files (.gtt files).
-old-location : print\maptable.htm
-old-project : print
-ms.assetid : d3dcf7b0-4244-41c1-801e-cf41b20f2d54
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : prntfont/MAPTABLE, PMAPTABLE, *PMAPTABLE, MAPTABLE structure [Print Devices], prntfont/PMAPTABLE, print.maptable, PMAPTABLE structure pointer [Print Devices], print_unidrv-pscript_fonts_c98fd60e-c56a-4f76-8408-e6680bc49525.xml, _MAPTABLE, MAPTABLE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : prntfont.h
-req.include-header : Prntfont.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PMAPTABLE, MAPTABLE"
-req.product : Windows 10 or later.
+UID: NS:prntfont._MAPTABLE
+title: "_MAPTABLE"
+author: windows-driver-content
+description: The MAPTABLE structure is one of the structures used to define the contents of glyph translation table files (.gtt files).
+old-location: print\maptable.htm
+old-project: print
+ms.assetid: d3dcf7b0-4244-41c1-801e-cf41b20f2d54
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: prntfont/MAPTABLE, PMAPTABLE, *PMAPTABLE, MAPTABLE structure [Print Devices], prntfont/PMAPTABLE, print.maptable, PMAPTABLE structure pointer [Print Devices], print_unidrv-pscript_fonts_c98fd60e-c56a-4f76-8408-e6680bc49525.xml, _MAPTABLE, MAPTABLE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: prntfont.h
+req.include-header: Prntfont.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	prntfont.h
+apiname:
+-	MAPTABLE
+product: Windows
+targetos: Windows
+req.typenames: "*PMAPTABLE, MAPTABLE"
+req.product: Windows 10 or later.
 ---
 
 # _MAPTABLE structure

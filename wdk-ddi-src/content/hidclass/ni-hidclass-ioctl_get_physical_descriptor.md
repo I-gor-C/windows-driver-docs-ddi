@@ -1,41 +1,46 @@
 ---
-UID : NI:hidclass.IOCTL_GET_PHYSICAL_DESCRIPTOR
-title : IOCTL_GET_PHYSICAL_DESCRIPTOR
-author : windows-driver-content
-description : The IOCTL_GET_PHYSICAL_DESCRIPTOR request obtains the physical descriptor of a top-level collection.
-old-location : hid\ioctl_get_physical_descriptor.htm
-old-project : hid
-ms.assetid : cf15dd7f-4568-40c7-b2e4-7cec8239df0b
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : hid.ioctl_get_physical_descriptor, IOCTL_GET_PHYSICAL_DESCRIPTOR control code [Human Input Devices], IOCTL_GET_PHYSICAL_DESCRIPTOR, hidclass/IOCTL_GET_PHYSICAL_DESCRIPTOR, hidioreq_3a61c6d2-a97a-47d6-86b1-317e22775271.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : hidclass.h
-req.include-header : Hidclass.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HDAUDIO_STREAM_FORMAT, *PHDAUDIO_STREAM_FORMAT
+UID: NI:hidclass.IOCTL_GET_PHYSICAL_DESCRIPTOR
+title: IOCTL_GET_PHYSICAL_DESCRIPTOR
+author: windows-driver-content
+description: The IOCTL_GET_PHYSICAL_DESCRIPTOR request obtains the physical descriptor of a top-level collection.
+old-location: hid\ioctl_get_physical_descriptor.htm
+old-project: hid
+ms.assetid: cf15dd7f-4568-40c7-b2e4-7cec8239df0b
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: hid.ioctl_get_physical_descriptor, IOCTL_GET_PHYSICAL_DESCRIPTOR control code [Human Input Devices], IOCTL_GET_PHYSICAL_DESCRIPTOR, hidclass/IOCTL_GET_PHYSICAL_DESCRIPTOR, hidioreq_3a61c6d2-a97a-47d6-86b1-317e22775271.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: hidclass.h
+req.include-header: Hidclass.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hidclass.h
+apiname:
+-	IOCTL_GET_PHYSICAL_DESCRIPTOR
+product: Windows
+targetos: Windows
+req.typenames: HDAUDIO_STREAM_FORMAT, *PHDAUDIO_STREAM_FORMAT
 ---
 
 # IOCTL_GET_PHYSICAL_DESCRIPTOR IOCTL

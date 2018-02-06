@@ -1,41 +1,46 @@
 ---
-UID : NF:drmk.IDrmAudioStream.SetContentId
-title : IDrmAudioStream::SetContentId method
-author : windows-driver-content
-description : The SetContentId method sets the DRM content ID and its assigned DRM content rights on a KS audio stream.
-old-location : audio\idrmaudiostream_setcontentid.htm
-old-project : audio
-ms.assetid : 0e9d13e8-c351-4730-8f00-6c149f824af0
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : audmp-routines_66106418-566d-4203-a6d6-faae74a6db13.xml, drmk/IDrmAudioStream::SetContentId, IDrmAudioStream, audio.idrmaudiostream_setcontentid, IDrmAudioStream interface [Audio Devices], SetContentId method, SetContentId, SetContentId method [Audio Devices], IDrmAudioStream interface, SetContentId method [Audio Devices], IDrmAudioStream::SetContentId
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : drmk.h
-req.include-header : Drmk.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : drmk.h
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDI_TX_METADATA, *PWDI_TX_METADATA
+UID: NF:drmk.IDrmAudioStream.SetContentId
+title: IDrmAudioStream::SetContentId method
+author: windows-driver-content
+description: The SetContentId method sets the DRM content ID and its assigned DRM content rights on a KS audio stream.
+old-location: audio\idrmaudiostream_setcontentid.htm
+old-project: audio
+ms.assetid: 0e9d13e8-c351-4730-8f00-6c149f824af0
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: audmp-routines_66106418-566d-4203-a6d6-faae74a6db13.xml, drmk/IDrmAudioStream::SetContentId, IDrmAudioStream, audio.idrmaudiostream_setcontentid, IDrmAudioStream interface [Audio Devices], SetContentId method, SetContentId, SetContentId method [Audio Devices], IDrmAudioStream interface, SetContentId method [Audio Devices], IDrmAudioStream::SetContentId
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: drmk.h
+req.include-header: Drmk.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: drmk.h
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	drmk.h
+apiname:
+-	IDrmAudioStream.SetContentId
+product: Windows
+targetos: Windows
+req.typenames: WDI_TX_METADATA, *PWDI_TX_METADATA
 ---
 
 

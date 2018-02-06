@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisSynchronousOidRequest
-title : NdisSynchronousOidRequest function
-author : windows-driver-content
-description : Protocol drivers call the NdisSynchronousOidRequest function to originate a new Synchronous OID request and issue it to underlying drivers.
-old-location : netvista\ndissynchronousoidrequest.htm
-old-project : netvista
-ms.assetid : BF539DDA-59ED-4010-88BC-3C7D8DC475EF
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NdisSynchronousOidRequest, NdisSynchronousOidRequest function [Network Drivers Starting with Windows Vista], netvista.ndissynchronousoidrequest, ndis/NdisSynchronousOidRequest
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Windows 10, version 1709
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisSynchronousOidRequest
+title: NdisSynchronousOidRequest function
+author: windows-driver-content
+description: Protocol drivers call the NdisSynchronousOidRequest function to originate a new Synchronous OID request and issue it to underlying drivers.
+old-location: netvista\ndissynchronousoidrequest.htm
+old-project: netvista
+ms.assetid: BF539DDA-59ED-4010-88BC-3C7D8DC475EF
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NdisSynchronousOidRequest, NdisSynchronousOidRequest function [Network Drivers Starting with Windows Vista], netvista.ndissynchronousoidrequest, ndis/NdisSynchronousOidRequest
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Windows 10, version 1709
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisSynchronousOidRequest
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

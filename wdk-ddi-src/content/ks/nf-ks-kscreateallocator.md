@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsCreateAllocator
-title : KsCreateAllocator function
-author : windows-driver-content
-description : The KsCreateAllocator function creates a handle to an allocator for the given sink connection handle. This function does not complete the IRP or set the status in the IRP.
-old-location : stream\kscreateallocator.htm
-old-project : stream
-ms.assetid : c67e036c-9f4c-447e-94bb-73cf215c865a
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ks/KsCreateAllocator, KsCreateAllocator function [Streaming Media Devices], stream.kscreateallocator, KsCreateAllocator, ksfunc_cc89b86b-fdd7-4e08-83b1-0df712fccaa4.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL (See Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsCreateAllocator
+title: KsCreateAllocator function
+author: windows-driver-content
+description: The KsCreateAllocator function creates a handle to an allocator for the given sink connection handle. This function does not complete the IRP or set the status in the IRP.
+old-location: stream\kscreateallocator.htm
+old-project: stream
+ms.assetid: c67e036c-9f4c-447e-94bb-73cf215c865a
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ks/KsCreateAllocator, KsCreateAllocator function [Streaming Media Devices], stream.kscreateallocator, KsCreateAllocator, ksfunc_cc89b86b-fdd7-4e08-83b1-0df712fccaa4.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL (See Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ks.lib
+-	ks.dll
+apiname:
+-	KsCreateAllocator
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

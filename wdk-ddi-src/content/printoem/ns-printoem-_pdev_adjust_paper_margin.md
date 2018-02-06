@@ -1,42 +1,47 @@
 ---
-UID : NS:printoem._PDEV_ADJUST_PAPER_MARGIN
-title : "_PDEV_ADJUST_PAPER_MARGIN"
-author : windows-driver-content
-description : The PDEV_ADJUST_PAPER_MARGIN structure specifies the imageable printing area.
-old-location : print\pdev_adjust_paper_margin.htm
-old-project : print
-ms.assetid : f44a0a42-1fa1-4dd2-bd9f-74b0d0ed823e
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : PDEV_ADJUST_PAPER_MARGIN, print.pdev_adjust_paper_margin, printoem/PDEV_ADJUST_PAPER_MARGIN, PDEV_ADJUST_PAPER_MARGIN structure [Print Devices], _PDEV_ADJUST_PAPER_MARGIN, print_unidrv-pscript_rendering_09d49312-b306-40c0-ad25-bc3669e8eedd.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : printoem.h
-req.include-header : Prcomoem.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PDEV_ADJUST_PAPER_MARGIN
-req.product : Windows 10 or later.
+UID: NS:printoem._PDEV_ADJUST_PAPER_MARGIN
+title: "_PDEV_ADJUST_PAPER_MARGIN"
+author: windows-driver-content
+description: The PDEV_ADJUST_PAPER_MARGIN structure specifies the imageable printing area.
+old-location: print\pdev_adjust_paper_margin.htm
+old-project: print
+ms.assetid: f44a0a42-1fa1-4dd2-bd9f-74b0d0ed823e
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: PDEV_ADJUST_PAPER_MARGIN, print.pdev_adjust_paper_margin, printoem/PDEV_ADJUST_PAPER_MARGIN, PDEV_ADJUST_PAPER_MARGIN structure [Print Devices], _PDEV_ADJUST_PAPER_MARGIN, print_unidrv-pscript_rendering_09d49312-b306-40c0-ad25-bc3669e8eedd.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: printoem.h
+req.include-header: Prcomoem.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	printoem.h
+apiname:
+-	PDEV_ADJUST_PAPER_MARGIN
+product: Windows
+targetos: Windows
+req.typenames: PDEV_ADJUST_PAPER_MARGIN
+req.product: Windows 10 or later.
 ---
 
 # _PDEV_ADJUST_PAPER_MARGIN structure

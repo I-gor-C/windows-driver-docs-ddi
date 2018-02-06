@@ -1,41 +1,46 @@
 ---
-UID : NS:ntdddisk._PARTITION_INFORMATION
-title : "_PARTITION_INFORMATION"
-author : windows-driver-content
-description : The PARTITION_INFORMATION structure contains partition information for a partition with a traditional AT-style Master Boot Record (MBR).
-old-location : storage\partition_information.htm
-old-project : storage
-ms.assetid : 06c3ed56-3640-431d-a4f0-bf3228a02cc2
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : PARTITION_INFORMATION structure [Storage Devices], ntdddisk/PPARTITION_INFORMATION, _PARTITION_INFORMATION, *PPARTITION_INFORMATION, ntdddisk/PARTITION_INFORMATION, storage.partition_information, PPARTITION_INFORMATION structure pointer [Storage Devices], PPARTITION_INFORMATION, PARTITION_INFORMATION, structs-disk_19ff49c5-6929-46fb-a9c2-4850969a99a8.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntdddisk.h
-req.include-header : Ntdddisk.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PARTITION_INFORMATION, *PPARTITION_INFORMATION
+UID: NS:ntdddisk._PARTITION_INFORMATION
+title: "_PARTITION_INFORMATION"
+author: windows-driver-content
+description: The PARTITION_INFORMATION structure contains partition information for a partition with a traditional AT-style Master Boot Record (MBR).
+old-location: storage\partition_information.htm
+old-project: storage
+ms.assetid: 06c3ed56-3640-431d-a4f0-bf3228a02cc2
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: PARTITION_INFORMATION structure [Storage Devices], ntdddisk/PPARTITION_INFORMATION, _PARTITION_INFORMATION, *PPARTITION_INFORMATION, ntdddisk/PARTITION_INFORMATION, storage.partition_information, PPARTITION_INFORMATION structure pointer [Storage Devices], PPARTITION_INFORMATION, PARTITION_INFORMATION, structs-disk_19ff49c5-6929-46fb-a9c2-4850969a99a8.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntdddisk.h
+req.include-header: Ntdddisk.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntdddisk.h
+apiname:
+-	PARTITION_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: PARTITION_INFORMATION, *PPARTITION_INFORMATION
 ---
 
 # _PARTITION_INFORMATION structure

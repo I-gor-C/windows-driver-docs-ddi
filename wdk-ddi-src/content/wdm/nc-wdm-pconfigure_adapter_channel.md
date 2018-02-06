@@ -1,42 +1,47 @@
 ---
-UID : NC:wdm.PCONFIGURE_ADAPTER_CHANNEL
-title : PCONFIGURE_ADAPTER_CHANNEL
-author : windows-driver-content
-description : The ConfigureAdapterChannel routine invokes a custom function that is implemented by the DMA controller represented by an adapter object.
-old-location : kernel\configureadapterchannel.htm
-old-project : kernel
-ms.assetid : 964B305F-5B9E-4705-89BA-DBAE43464FB1
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.configureadapterchannel, ConfigureAdapterChannel, ConfigureAdapterChannel callback function [Kernel-Mode Driver Architecture], ConfigureAdapterChannel, PCONFIGURE_ADAPTER_CHANNEL, PCONFIGURE_ADAPTER_CHANNEL, wdm/ConfigureAdapterChannel
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
-req.product : Windows 10 or later.
+UID: NC:wdm.PCONFIGURE_ADAPTER_CHANNEL
+title: PCONFIGURE_ADAPTER_CHANNEL
+author: windows-driver-content
+description: The ConfigureAdapterChannel routine invokes a custom function that is implemented by the DMA controller represented by an adapter object.
+old-location: kernel\configureadapterchannel.htm
+old-project: kernel
+ms.assetid: 964B305F-5B9E-4705-89BA-DBAE43464FB1
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.configureadapterchannel, ConfigureAdapterChannel, ConfigureAdapterChannel callback function [Kernel-Mode Driver Architecture], ConfigureAdapterChannel, PCONFIGURE_ADAPTER_CHANNEL, PCONFIGURE_ADAPTER_CHANNEL, wdm/ConfigureAdapterChannel
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Wdm.h
+apiname:
+-	ConfigureAdapterChannel
+product: Windows
+targetos: Windows
+req.typenames: WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+req.product: Windows 10 or later.
 ---
 
 

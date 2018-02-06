@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dukmdt.D3DDDI_EVICT_FLAGS
-title : D3DDDI_EVICT_FLAGS
-author : windows-driver-content
-description : D3DDDI_EVICT_FLAGS specifies the eviction behavior.
-old-location : display\d3dddi_evict_flags.htm
-old-project : display
-ms.assetid : 443671F1-98F5-4F9F-900B-37E3E50770CE
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DDDI_EVICT_FLAGS, D3DDDI_EVICT_FLAGS structure [Display Devices], display.d3dddi_evict_flags, d3dukmdt/D3DDDI_EVICT_FLAGS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dukmdt.h
-req.include-header : D3dumddi.h, D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDI_EVICT_FLAGS
+UID: NS:d3dukmdt.D3DDDI_EVICT_FLAGS
+title: D3DDDI_EVICT_FLAGS
+author: windows-driver-content
+description: D3DDDI_EVICT_FLAGS specifies the eviction behavior.
+old-location: display\d3dddi_evict_flags.htm
+old-project: display
+ms.assetid: 443671F1-98F5-4F9F-900B-37E3E50770CE
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DDDI_EVICT_FLAGS, D3DDDI_EVICT_FLAGS structure [Display Devices], display.d3dddi_evict_flags, d3dukmdt/D3DDDI_EVICT_FLAGS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dukmdt.h
+req.include-header: D3dumddi.h, D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dukmdt.h
+apiname:
+-	D3DDDI_EVICT_FLAGS
+product: Windows
+targetos: Windows
+req.typenames: D3DDDI_EVICT_FLAGS
 ---
 
 # D3DDDI_EVICT_FLAGS structure

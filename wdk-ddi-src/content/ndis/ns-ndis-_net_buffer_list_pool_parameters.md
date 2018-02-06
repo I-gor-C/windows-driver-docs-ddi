@@ -1,41 +1,46 @@
 ---
-UID : NS:ndis._NET_BUFFER_LIST_POOL_PARAMETERS
-title : "_NET_BUFFER_LIST_POOL_PARAMETERS"
-author : windows-driver-content
-description : The NET_BUFFER_LIST_POOL_PARAMETERS structure defines the parameters for a pool of NET_BUFFER_LIST structures.
-old-location : netvista\net_buffer_list_pool_parameters.htm
-old-project : netvista
-ms.assetid : DBB172A0-957E-4FAC-9727-D72B060E3193
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : ndis/NET_BUFFER_LIST_POOL_PARAMETERS, *PNET_BUFFER_LIST_POOL_PARAMETERS, NET_BUFFER_LIST_POOL_PARAMETERS, _NET_BUFFER_LIST_POOL_PARAMETERS, PNET_BUFFER_LIST_POOL_PARAMETERS, ndis/PNET_BUFFER_LIST_POOL_PARAMETERS, NET_BUFFER_LIST_POOL_PARAMETERS structure [Network Drivers Starting with Windows Vista], PNET_BUFFER_LIST_POOL_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], netvista.net_buffer_list_pool_parameters
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : See Remarks section
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PNET_BUFFER_LIST_POOL_PARAMETERS, NET_BUFFER_LIST_POOL_PARAMETERS"
+UID: NS:ndis._NET_BUFFER_LIST_POOL_PARAMETERS
+title: "_NET_BUFFER_LIST_POOL_PARAMETERS"
+author: windows-driver-content
+description: The NET_BUFFER_LIST_POOL_PARAMETERS structure defines the parameters for a pool of NET_BUFFER_LIST structures.
+old-location: netvista\net_buffer_list_pool_parameters.htm
+old-project: netvista
+ms.assetid: DBB172A0-957E-4FAC-9727-D72B060E3193
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: ndis/NET_BUFFER_LIST_POOL_PARAMETERS, *PNET_BUFFER_LIST_POOL_PARAMETERS, NET_BUFFER_LIST_POOL_PARAMETERS, _NET_BUFFER_LIST_POOL_PARAMETERS, PNET_BUFFER_LIST_POOL_PARAMETERS, ndis/PNET_BUFFER_LIST_POOL_PARAMETERS, NET_BUFFER_LIST_POOL_PARAMETERS structure [Network Drivers Starting with Windows Vista], PNET_BUFFER_LIST_POOL_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], netvista.net_buffer_list_pool_parameters
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: See Remarks section
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndis.h
+apiname:
+-	NET_BUFFER_LIST_POOL_PARAMETERS
+product: Windows
+targetos: Windows
+req.typenames: "*PNET_BUFFER_LIST_POOL_PARAMETERS, NET_BUFFER_LIST_POOL_PARAMETERS"
 ---
 
 # _NET_BUFFER_LIST_POOL_PARAMETERS structure

@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IPnpCallbackSelfManagedIo.OnSelfManagedIoFlush
-title : IPnpCallbackSelfManagedIo::OnSelfManagedIoFlush method
-author : windows-driver-content
-description : The OnSelfManagedIoFlush method flushes the device for a device's self-managed I/O operations.
-old-location : wdf\ipnpcallbackselfmanagedio_onselfmanagedioflush.htm
-old-project : wdf
-ms.assetid : dee0e30b-ad03-43e4-8a0c-07d3782d7857
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : OnSelfManagedIoFlush method, OnSelfManagedIoFlush, wdf.ipnpcallbackselfmanagedio_onselfmanagedioflush, wudfddi/IPnpCallbackSelfManagedIo::OnSelfManagedIoFlush, UMDFDeviceObjectRef_ddf0d0a2-a913-4e15-b482-16cae945c4a2.xml, umdf.ipnpcallbackselfmanagedio_onselfmanagedioflush, IPnpCallbackSelfManagedIo::OnSelfManagedIoFlush, IPnpCallbackSelfManagedIo interface, OnSelfManagedIoFlush method, OnSelfManagedIoFlush method, IPnpCallbackSelfManagedIo interface, IPnpCallbackSelfManagedIo
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IPnpCallbackSelfManagedIo.OnSelfManagedIoFlush
+title: IPnpCallbackSelfManagedIo::OnSelfManagedIoFlush method
+author: windows-driver-content
+description: The OnSelfManagedIoFlush method flushes the device for a device's self-managed I/O operations.
+old-location: wdf\ipnpcallbackselfmanagedio_onselfmanagedioflush.htm
+old-project: wdf
+ms.assetid: dee0e30b-ad03-43e4-8a0c-07d3782d7857
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: OnSelfManagedIoFlush method, OnSelfManagedIoFlush, wdf.ipnpcallbackselfmanagedio_onselfmanagedioflush, wudfddi/IPnpCallbackSelfManagedIo::OnSelfManagedIoFlush, UMDFDeviceObjectRef_ddf0d0a2-a913-4e15-b482-16cae945c4a2.xml, umdf.ipnpcallbackselfmanagedio_onselfmanagedioflush, IPnpCallbackSelfManagedIo::OnSelfManagedIoFlush, IPnpCallbackSelfManagedIo interface, OnSelfManagedIoFlush method, OnSelfManagedIoFlush method, IPnpCallbackSelfManagedIo interface, IPnpCallbackSelfManagedIo
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Wudfddi.h
+apiname:
+-	IPnpCallbackSelfManagedIo.OnSelfManagedIoFlush
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

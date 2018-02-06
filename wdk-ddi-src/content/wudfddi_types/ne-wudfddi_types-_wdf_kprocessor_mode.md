@@ -1,42 +1,47 @@
 ---
-UID : NE:wudfddi_types._WDF_KPROCESSOR_MODE
-title : "_WDF_KPROCESSOR_MODE"
-author : windows-driver-content
-description : The WDF_KPROCESSOR_MODE enumeration type identifies the processor modes in which a thread can execute.
-old-location : wdf\wdf_kprocessor_mode.htm
-old-project : wdf
-ms.assetid : b50be4c2-4575-42b9-953d-9ddb3c3e696c
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wudfddi_types/WdfUserMode, PWDF_KPROCESSOR_MODE enumeration pointer, wudfddi_types/WdfKProcessorModeMaximum, _WDF_KPROCESSOR_MODE, wudfddi_types/WdfKProcessorModeInvalid, wudfddi_types/WDF_KPROCESSOR_MODE, WDF_KPROCESSOR_MODE enumeration, WdfUserMode, WdfKProcessorModeMaximum, wdf.wdf_kprocessor_mode, WdfKProcessorModeInvalid, umdf.wdf_kprocessor_mode, *PWDF_KPROCESSOR_MODE, WdfKernelMode, wudfddi_types/WdfKernelMode, umdfstructs_581a9b17-c059-4dc8-9784-8dce0d6a4e7d.xml, wudfddi_types/PWDF_KPROCESSOR_MODE, WDF_KPROCESSOR_MODE, PWDF_KPROCESSOR_MODE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : wudfddi_types.h
-req.include-header : Wudfddi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.9
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDF_KPROCESSOR_MODE, WDF_KPROCESSOR_MODE"
-req.product : Windows 10 or later.
+UID: NE:wudfddi_types._WDF_KPROCESSOR_MODE
+title: "_WDF_KPROCESSOR_MODE"
+author: windows-driver-content
+description: The WDF_KPROCESSOR_MODE enumeration type identifies the processor modes in which a thread can execute.
+old-location: wdf\wdf_kprocessor_mode.htm
+old-project: wdf
+ms.assetid: b50be4c2-4575-42b9-953d-9ddb3c3e696c
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wudfddi_types/WdfUserMode, PWDF_KPROCESSOR_MODE enumeration pointer, wudfddi_types/WdfKProcessorModeMaximum, _WDF_KPROCESSOR_MODE, wudfddi_types/WdfKProcessorModeInvalid, wudfddi_types/WDF_KPROCESSOR_MODE, WDF_KPROCESSOR_MODE enumeration, WdfUserMode, WdfKProcessorModeMaximum, wdf.wdf_kprocessor_mode, WdfKProcessorModeInvalid, umdf.wdf_kprocessor_mode, *PWDF_KPROCESSOR_MODE, WdfKernelMode, wudfddi_types/WdfKernelMode, umdfstructs_581a9b17-c059-4dc8-9784-8dce0d6a4e7d.xml, wudfddi_types/PWDF_KPROCESSOR_MODE, WDF_KPROCESSOR_MODE, PWDF_KPROCESSOR_MODE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: wudfddi_types.h
+req.include-header: Wudfddi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.9
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wudfddi_types.h
+apiname:
+-	WDF_KPROCESSOR_MODE
+product: Windows
+targetos: Windows
+req.typenames: "*PWDF_KPROCESSOR_MODE, WDF_KPROCESSOR_MODE"
+req.product: Windows 10 or later.
 ---
 
 # _WDF_KPROCESSOR_MODE Enumeration
@@ -57,31 +62,31 @@ typedef enum _WDF_KPROCESSOR_MODE {
 ## Constants
 
 <table>
-
-<tr>
-<td>WdfKernelMode</td>
-<td>The processor mode is kernel mode.</td>
-</tr>
-
-<tr>
-<td>WdfKProcessorModeInvalid</td>
-<td>Reserved for system use.</td>
-</tr>
-
-<tr>
-<td>WdfKProcessorModeMaximum</td>
-<td>Valid enumeration values were exceeded.</td>
-</tr>
-
-<tr>
-<td>WdfUserMode</td>
-<td>The processor mode is user mode.</td>
-</tr>
+            
+                <tr>
+                    <td>WdfKernelMode</td>
+                    <td>The processor mode is kernel mode.</td>
+                </tr>
+            
+                <tr>
+                    <td>WdfKProcessorModeInvalid</td>
+                    <td>Reserved for system use.</td>
+                </tr>
+            
+                <tr>
+                    <td>WdfKProcessorModeMaximum</td>
+                    <td>Valid enumeration values were exceeded.</td>
+                </tr>
+            
+                <tr>
+                    <td>WdfUserMode</td>
+                    <td>The processor mode is user mode.</td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-The <b>WDF_KPROCESSOR_MODE</b> enumeration type is return type for <a href="https://msdn.microsoft.com/library/windows/hardware/ff559002">IWDFIoRequest2::GetRequestorMode</a>.
+        The <b>WDF_KPROCESSOR_MODE</b> enumeration type is return type for <a href="https://msdn.microsoft.com/library/windows/hardware/ff559002">IWDFIoRequest2::GetRequestorMode</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -89,9 +94,9 @@ The <b>WDF_KPROCESSOR_MODE</b> enumeration type is return type for <a href="http
 | **Minimum UMDF version** | 1.9 |
 | **Header** | wudfddi_types.h (include Wudfddi.h) |
 
-## See Also
+    ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559002">IWDFIoRequest2::GetRequestorMode</a>
+        <a href="https://msdn.microsoft.com/library/windows/hardware/ff559002">IWDFIoRequest2::GetRequestorMode</a>
 
  
 

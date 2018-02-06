@@ -1,41 +1,46 @@
 ---
-UID : NS:ndis._NDIS_MINIPORT_PAUSE_PARAMETERS
-title : "_NDIS_MINIPORT_PAUSE_PARAMETERS"
-author : windows-driver-content
-description : The NDIS_MINIPORT_PAUSE_PARAMETERS structure defines pause parameters for miniport adapters.
-old-location : netvista\ndis_miniport_pause_parameters.htm
-old-project : netvista
-ms.assetid : 2d442ff7-37dd-4288-aadf-1ae04f98364c
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : "_NDIS_MINIPORT_PAUSE_PARAMETERS, NDIS_MINIPORT_PAUSE_PARAMETERS structure [Network Drivers Starting with Windows Vista], miniport_structures_ref_cd7d1bc3-5c65-45c5-8e45-f23619dafff8.xml, netvista.ndis_miniport_pause_parameters, ndis/NDIS_MINIPORT_PAUSE_PARAMETERS, PNDIS_MINIPORT_PAUSE_PARAMETERS, *PNDIS_MINIPORT_PAUSE_PARAMETERS, PNDIS_MINIPORT_PAUSE_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], ndis/PNDIS_MINIPORT_PAUSE_PARAMETERS, NDIS_MINIPORT_PAUSE_PARAMETERS"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : See Remarks section
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PNDIS_MINIPORT_PAUSE_PARAMETERS, NDIS_MINIPORT_PAUSE_PARAMETERS"
+UID: NS:ndis._NDIS_MINIPORT_PAUSE_PARAMETERS
+title: "_NDIS_MINIPORT_PAUSE_PARAMETERS"
+author: windows-driver-content
+description: The NDIS_MINIPORT_PAUSE_PARAMETERS structure defines pause parameters for miniport adapters.
+old-location: netvista\ndis_miniport_pause_parameters.htm
+old-project: netvista
+ms.assetid: 2d442ff7-37dd-4288-aadf-1ae04f98364c
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: "_NDIS_MINIPORT_PAUSE_PARAMETERS, NDIS_MINIPORT_PAUSE_PARAMETERS structure [Network Drivers Starting with Windows Vista], miniport_structures_ref_cd7d1bc3-5c65-45c5-8e45-f23619dafff8.xml, netvista.ndis_miniport_pause_parameters, ndis/NDIS_MINIPORT_PAUSE_PARAMETERS, PNDIS_MINIPORT_PAUSE_PARAMETERS, *PNDIS_MINIPORT_PAUSE_PARAMETERS, PNDIS_MINIPORT_PAUSE_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], ndis/PNDIS_MINIPORT_PAUSE_PARAMETERS, NDIS_MINIPORT_PAUSE_PARAMETERS"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: See Remarks section
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndis.h
+apiname:
+-	NDIS_MINIPORT_PAUSE_PARAMETERS
+product: Windows
+targetos: Windows
+req.typenames: "*PNDIS_MINIPORT_PAUSE_PARAMETERS, NDIS_MINIPORT_PAUSE_PARAMETERS"
 ---
 
 # _NDIS_MINIPORT_PAUSE_PARAMETERS structure

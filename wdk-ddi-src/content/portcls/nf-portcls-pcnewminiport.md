@@ -1,41 +1,47 @@
 ---
-UID : NF:portcls.PcNewMiniport
-title : PcNewMiniport function
-author : windows-driver-content
-description : The PcNewMiniport function creates an instance of one of the system-supplied miniport drivers that are built into the PortCls system driver, portcls.sys.
-old-location : audio\pcnewminiport.htm
-old-project : audio
-ms.assetid : 15046dc7-42ae-4ebe-acb9-2b0bbad1e833
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : PcNewMiniport function [Audio Devices], audpc-routines_d0b1d8e9-e4e0-44de-8854-a1b18eac9ff5.xml, audio.pcnewminiport, portcls/PcNewMiniport, PcNewMiniport
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : portcls.h
-req.include-header : Portcls.h
-req.target-type : Universal
-req.target-min-winverclnt : The PortCls system driver implements the PcNewMiniport function in Microsoft Windows 98/Me and in Windows 2000 and later operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Portcls.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.PcNewMiniport
+title: PcNewMiniport function
+author: windows-driver-content
+description: The PcNewMiniport function creates an instance of one of the system-supplied miniport drivers that are built into the PortCls system driver, portcls.sys.
+old-location: audio\pcnewminiport.htm
+old-project: audio
+ms.assetid: 15046dc7-42ae-4ebe-acb9-2b0bbad1e833
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: PcNewMiniport function [Audio Devices], audpc-routines_d0b1d8e9-e4e0-44de-8854-a1b18eac9ff5.xml, audio.pcnewminiport, portcls/PcNewMiniport, PcNewMiniport
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: portcls.h
+req.include-header: Portcls.h
+req.target-type: Universal
+req.target-min-winverclnt: The PortCls system driver implements the PcNewMiniport function in Microsoft Windows 98/Me and in Windows 2000 and later operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Portcls.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Portcls.lib
+-	Portcls.dll
+apiname:
+-	PcNewMiniport
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.SeCreateClientSecurityFromSubjectContext
-title : SeCreateClientSecurityFromSubjectContext function
-author : windows-driver-content
-description : The SeCreateClientSecurityFromSubjectContext routine retrieves the access token for a security subject context and uses the result to initialize a security client context with the information needed to call SeImpersonateClientEx.
-old-location : ifsk\secreateclientsecurityfromsubjectcontext.htm
-old-project : ifsk
-ms.assetid : 3b3b12b8-05f7-40e6-909c-b99bf18cc299
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.secreateclientsecurityfromsubjectcontext, seref_fac27935-a941-48f6-a27b-7ca56bd1f9e2.xml, SeCreateClientSecurityFromSubjectContext routine [Installable File System Drivers], SeCreateClientSecurityFromSubjectContext, ntifs/SeCreateClientSecurityFromSubjectContext
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : This routine is available on Microsoft Windows 2000 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.SeCreateClientSecurityFromSubjectContext
+title: SeCreateClientSecurityFromSubjectContext function
+author: windows-driver-content
+description: The SeCreateClientSecurityFromSubjectContext routine retrieves the access token for a security subject context and uses the result to initialize a security client context with the information needed to call SeImpersonateClientEx.
+old-location: ifsk\secreateclientsecurityfromsubjectcontext.htm
+old-project: ifsk
+ms.assetid: 3b3b12b8-05f7-40e6-909c-b99bf18cc299
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.secreateclientsecurityfromsubjectcontext, seref_fac27935-a941-48f6-a27b-7ca56bd1f9e2.xml, SeCreateClientSecurityFromSubjectContext routine [Installable File System Drivers], SeCreateClientSecurityFromSubjectContext, ntifs/SeCreateClientSecurityFromSubjectContext
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: This routine is available on Microsoft Windows 2000 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	SeCreateClientSecurityFromSubjectContext
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

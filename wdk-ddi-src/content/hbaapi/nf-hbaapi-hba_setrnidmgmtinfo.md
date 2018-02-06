@@ -1,41 +1,46 @@
 ---
-UID : NF:hbaapi.HBA_SetRNIDMgmtInfo
-title : HBA_SetRNIDMgmtInfo function
-author : windows-driver-content
-description : The HBA_SetRNIDMgmtInfo routine programs the HBA to return the indicated request node identification information data (RNID).
-old-location : storage\hba_setrnidmgmtinfo.htm
-old-project : storage
-ms.assetid : 0c4fbe80-03f2-4ee0-b766-c1ccaa8e83c2
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.hba_setrnidmgmtinfo, HBA_SetRNIDMgmtInfo, HBA_SetRNIDMgmtInfo routine [Storage Devices], fibreHBA_rtns_ebe3859b-fe8c-42c6-a4a7-9d756489d818.xml, hbaapi/HBA_SetRNIDMgmtInfo
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : hbaapi.h
-req.include-header : Hbaapi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Hbaapi.lib
-req.dll : Hbaapi.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HBA_WWNTYPE
+UID: NF:hbaapi.HBA_SetRNIDMgmtInfo
+title: HBA_SetRNIDMgmtInfo function
+author: windows-driver-content
+description: The HBA_SetRNIDMgmtInfo routine programs the HBA to return the indicated request node identification information data (RNID).
+old-location: storage\hba_setrnidmgmtinfo.htm
+old-project: storage
+ms.assetid: 0c4fbe80-03f2-4ee0-b766-c1ccaa8e83c2
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.hba_setrnidmgmtinfo, HBA_SetRNIDMgmtInfo, HBA_SetRNIDMgmtInfo routine [Storage Devices], fibreHBA_rtns_ebe3859b-fe8c-42c6-a4a7-9d756489d818.xml, hbaapi/HBA_SetRNIDMgmtInfo
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: hbaapi.h
+req.include-header: Hbaapi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Hbaapi.lib
+req.dll: Hbaapi.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Hbaapi.dll
+apiname:
+-	HBA_SetRNIDMgmtInfo
+product: Windows
+targetos: Windows
+req.typenames: HBA_WWNTYPE
 ---
 
 

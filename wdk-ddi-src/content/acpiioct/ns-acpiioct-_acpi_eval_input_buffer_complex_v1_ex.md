@@ -1,41 +1,46 @@
 ---
-UID : NS:acpiioct._ACPI_EVAL_INPUT_BUFFER_COMPLEX_V1_EX
-title : "_ACPI_EVAL_INPUT_BUFFER_COMPLEX_V1_EX"
-author : windows-driver-content
-description : The ACPI_EVAL_INPUT_BUFFER_COMPLEX_EX structure is used as input to an IOCTL_ACPI_EVAL_METHOD_EX request and to an IOCTL_ACPI_ASYNC_EVAL_METHOD_EX request.
-old-location : acpi\acpi_eval_input_buffer_complex_ex.htm
-old-project : acpi
-ms.assetid : 6053f535-da9c-4f9d-885f-01f29cabd9ee
-ms.author : windowsdriverdev
-ms.date : 12/31/2017
-ms.keywords : acpiioct/PACPI_EVAL_INPUT_BUFFER_COMPLEX_V1_EX, PACPI_EVAL_INPUT_BUFFER_COMPLEX_V1_EX structure pointer [ACPI Devices], ACPI_EVAL_INPUT_BUFFER_COMPLEX_V1_EX structure [ACPI Devices], acpi-meth-eval-ref_d66cba5a-75fb-4127-9f7f-d0ecf08c4b6e.xml, PACPI_EVAL_INPUT_BUFFER_COMPLEX_V1_EX, ACPI_EVAL_INPUT_BUFFER_COMPLEX_EX, acpi.acpi_eval_input_buffer_complex_ex, *PACPI_EVAL_INPUT_BUFFER_COMPLEX_EX, *PACPI_EVAL_INPUT_BUFFER_COMPLEX_V1_EX, ACPI_EVAL_INPUT_BUFFER_COMPLEX_V1_EX, _ACPI_EVAL_INPUT_BUFFER_COMPLEX_V1_EX, acpiioct/ACPI_EVAL_INPUT_BUFFER_COMPLEX_V1_EX
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : acpiioct.h
-req.include-header : Acpiioct.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows Vista and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PACPI_EVAL_INPUT_BUFFER_COMPLEX_V1_EX, ACPI_EVAL_INPUT_BUFFER_COMPLEX_EX, ACPI_EVAL_INPUT_BUFFER_COMPLEX_V1_EX, *PACPI_EVAL_INPUT_BUFFER_COMPLEX_EX"
+UID: NS:acpiioct._ACPI_EVAL_INPUT_BUFFER_COMPLEX_V1_EX
+title: "_ACPI_EVAL_INPUT_BUFFER_COMPLEX_V1_EX"
+author: windows-driver-content
+description: The ACPI_EVAL_INPUT_BUFFER_COMPLEX_EX structure is used as input to an IOCTL_ACPI_EVAL_METHOD_EX request and to an IOCTL_ACPI_ASYNC_EVAL_METHOD_EX request.
+old-location: acpi\acpi_eval_input_buffer_complex_ex.htm
+old-project: acpi
+ms.assetid: 6053f535-da9c-4f9d-885f-01f29cabd9ee
+ms.author: windowsdriverdev
+ms.date: 12/31/2017
+ms.keywords: acpiioct/PACPI_EVAL_INPUT_BUFFER_COMPLEX_V1_EX, PACPI_EVAL_INPUT_BUFFER_COMPLEX_V1_EX structure pointer [ACPI Devices], ACPI_EVAL_INPUT_BUFFER_COMPLEX_V1_EX structure [ACPI Devices], acpi-meth-eval-ref_d66cba5a-75fb-4127-9f7f-d0ecf08c4b6e.xml, PACPI_EVAL_INPUT_BUFFER_COMPLEX_V1_EX, ACPI_EVAL_INPUT_BUFFER_COMPLEX_EX, acpi.acpi_eval_input_buffer_complex_ex, *PACPI_EVAL_INPUT_BUFFER_COMPLEX_EX, *PACPI_EVAL_INPUT_BUFFER_COMPLEX_V1_EX, ACPI_EVAL_INPUT_BUFFER_COMPLEX_V1_EX, _ACPI_EVAL_INPUT_BUFFER_COMPLEX_V1_EX, acpiioct/ACPI_EVAL_INPUT_BUFFER_COMPLEX_V1_EX
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: acpiioct.h
+req.include-header: Acpiioct.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows Vista and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Acpiioct.h
+apiname:
+-	ACPI_EVAL_INPUT_BUFFER_COMPLEX_V1_EX
+product: Windows
+targetos: Windows
+req.typenames: "*PACPI_EVAL_INPUT_BUFFER_COMPLEX_V1_EX, ACPI_EVAL_INPUT_BUFFER_COMPLEX_EX, ACPI_EVAL_INPUT_BUFFER_COMPLEX_V1_EX, *PACPI_EVAL_INPUT_BUFFER_COMPLEX_EX"
 ---
 
 # _ACPI_EVAL_INPUT_BUFFER_COMPLEX_V1_EX structure

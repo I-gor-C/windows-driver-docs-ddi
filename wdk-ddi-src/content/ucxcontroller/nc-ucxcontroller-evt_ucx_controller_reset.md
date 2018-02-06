@@ -1,42 +1,47 @@
 ---
-UID : NC:ucxcontroller.EVT_UCX_CONTROLLER_RESET
-title : EVT_UCX_CONTROLLER_RESET
-author : windows-driver-content
-description : The client driver's implementation that UCX calls to reset the controller.
-old-location : buses\evt_ucx_controller_reset.htm
-old-project : usbref
-ms.assetid : 8c01d677-5ce4-44f6-8342-2152e851de87
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : buses.evt_ucx_controller_reset, EvtUcxControllerReset callback function [Buses], EvtUcxControllerReset, EVT_UCX_CONTROLLER_RESET, EVT_UCX_CONTROLLER_RESET, ucxcontroller/EvtUcxControllerReset, PEVT_UCX_CONTROLLER_RESET callback function pointer [Buses], PEVT_UCX_CONTROLLER_RESET
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ucxcontroller.h
-req.include-header : Ucxclass.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUCM_PD_REQUEST_DATA_OBJECT, UCM_PD_REQUEST_DATA_OBJECT"
-req.product : Windows 10 or later.
+UID: NC:ucxcontroller.EVT_UCX_CONTROLLER_RESET
+title: EVT_UCX_CONTROLLER_RESET
+author: windows-driver-content
+description: The client driver's implementation that UCX calls to reset the controller.
+old-location: buses\evt_ucx_controller_reset.htm
+old-project: usbref
+ms.assetid: 8c01d677-5ce4-44f6-8342-2152e851de87
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: buses.evt_ucx_controller_reset, EvtUcxControllerReset callback function [Buses], EvtUcxControllerReset, EVT_UCX_CONTROLLER_RESET, EVT_UCX_CONTROLLER_RESET, ucxcontroller/EvtUcxControllerReset, PEVT_UCX_CONTROLLER_RESET callback function pointer [Buses], PEVT_UCX_CONTROLLER_RESET
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ucxcontroller.h
+req.include-header: Ucxclass.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ucxcontroller.h
+apiname:
+-	PEVT_UCX_CONTROLLER_RESET
+product: Windows
+targetos: Windows
+req.typenames: "*PUCM_PD_REQUEST_DATA_OBJECT, UCM_PD_REQUEST_DATA_OBJECT"
+req.product: Windows 10 or later.
 ---
 
 

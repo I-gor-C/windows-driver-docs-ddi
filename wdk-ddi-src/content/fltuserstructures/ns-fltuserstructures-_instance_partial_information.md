@@ -1,41 +1,46 @@
 ---
-UID : NS:fltuserstructures._INSTANCE_PARTIAL_INFORMATION
-title : "_INSTANCE_PARTIAL_INFORMATION"
-author : windows-driver-content
-description : The INSTANCE_PARTIAL_INFORMATION structure contains partial information for a minifilter instance.
-old-location : ifsk\instance_partial_information.htm
-old-project : ifsk
-ms.assetid : cabcb39c-1f8d-41dc-a6ec-78f3fb3911cf
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : INSTANCE_PARTIAL_INFORMATION, fltuserstructures/INSTANCE_PARTIAL_INFORMATION, PINSTANCE_PARTIAL_INFORMATION, ifsk.instance_partial_information, FltSystemStructures_10279757-e7e1-49a9-aa12-184a830e1db7.xml, INSTANCE_PARTIAL_INFORMATION structure [Installable File System Drivers], fltuserstructures/PINSTANCE_PARTIAL_INFORMATION, PINSTANCE_PARTIAL_INFORMATION structure pointer [Installable File System Drivers], _INSTANCE_PARTIAL_INFORMATION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : fltuserstructures.h
-req.include-header : FltUser.h, Fltkernel.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : INSTANCE_PARTIAL_INFORMATION, PINSTANCE_PARTIAL_INFORMATION
+UID: NS:fltuserstructures._INSTANCE_PARTIAL_INFORMATION
+title: "_INSTANCE_PARTIAL_INFORMATION"
+author: windows-driver-content
+description: The INSTANCE_PARTIAL_INFORMATION structure contains partial information for a minifilter instance.
+old-location: ifsk\instance_partial_information.htm
+old-project: ifsk
+ms.assetid: cabcb39c-1f8d-41dc-a6ec-78f3fb3911cf
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: INSTANCE_PARTIAL_INFORMATION, fltuserstructures/INSTANCE_PARTIAL_INFORMATION, PINSTANCE_PARTIAL_INFORMATION, ifsk.instance_partial_information, FltSystemStructures_10279757-e7e1-49a9-aa12-184a830e1db7.xml, INSTANCE_PARTIAL_INFORMATION structure [Installable File System Drivers], fltuserstructures/PINSTANCE_PARTIAL_INFORMATION, PINSTANCE_PARTIAL_INFORMATION structure pointer [Installable File System Drivers], _INSTANCE_PARTIAL_INFORMATION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: fltuserstructures.h
+req.include-header: FltUser.h, Fltkernel.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	fltuserstructures.h
+apiname:
+-	INSTANCE_PARTIAL_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: INSTANCE_PARTIAL_INFORMATION, PINSTANCE_PARTIAL_INFORMATION
 ---
 
 # _INSTANCE_PARTIAL_INFORMATION structure

@@ -1,42 +1,47 @@
 ---
-UID : NF:storport.StorPortGetSystemPortNumber
-title : StorPortGetSystemPortNumber function
-author : windows-driver-content
-description : The StorPortGetSystemPortNumber routine retrieves the system assigned port number for a storage adapter.
-old-location : storage\storportgetsystemportnumber.htm
-old-project : storage
-ms.assetid : D1205C85-6F23-4D08-A146-2FA8C00FD6E9
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storport/StorPortGetSystemPortNumber, StorPortGetSystemPortNumber routine [Storage Devices], storage.storportgetsystemportnumber, StorPortGetSystemPortNumber
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : storport.h
-req.include-header : 
-req.target-type : Universal
-req.target-min-winverclnt : Available in starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STOR_SPINLOCK
-req.product : Windows 10 or later.
+UID: NF:storport.StorPortGetSystemPortNumber
+title: StorPortGetSystemPortNumber function
+author: windows-driver-content
+description: The StorPortGetSystemPortNumber routine retrieves the system assigned port number for a storage adapter.
+old-location: storage\storportgetsystemportnumber.htm
+old-project: storage
+ms.assetid: D1205C85-6F23-4D08-A146-2FA8C00FD6E9
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storport/StorPortGetSystemPortNumber, StorPortGetSystemPortNumber routine [Storage Devices], storage.storportgetsystemportnumber, StorPortGetSystemPortNumber
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: storport.h
+req.include-header: 
+req.target-type: Universal
+req.target-min-winverclnt: Available in starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	storport.h
+apiname:
+-	StorPortGetSystemPortNumber
+product: Windows
+targetos: Windows
+req.typenames: STOR_SPINLOCK
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.ExDeletePagedLookasideList
-title : ExDeletePagedLookasideList function
-author : windows-driver-content
-description : The ExDeletePagedLookasideList routine destroys a paged lookaside list.
-old-location : kernel\exdeletepagedlookasidelist.htm
-old-project : kernel
-ms.assetid : da3784a8-6fc5-47cc-932e-52ec16392e49
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ExDeletePagedLookasideList routine [Kernel-Mode Driver Architecture], wdm/ExDeletePagedLookasideList, ExDeletePagedLookasideList, k102_6e78a15a-e6e1-4282-a8de-a4f38f74ebc6.xml, kernel.exdeletepagedlookasidelist
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : IrqlExApcLte2, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ExDeletePagedLookasideList
+title: ExDeletePagedLookasideList function
+author: windows-driver-content
+description: The ExDeletePagedLookasideList routine destroys a paged lookaside list.
+old-location: kernel\exdeletepagedlookasidelist.htm
+old-project: kernel
+ms.assetid: da3784a8-6fc5-47cc-932e-52ec16392e49
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ExDeletePagedLookasideList routine [Kernel-Mode Driver Architecture], wdm/ExDeletePagedLookasideList, ExDeletePagedLookasideList, k102_6e78a15a-e6e1-4282-a8de-a4f38f74ebc6.xml, kernel.exdeletepagedlookasidelist
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: IrqlExApcLte2, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ExDeletePagedLookasideList
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltSetIoPriorityHintIntoFileObject
-title : FltSetIoPriorityHintIntoFileObject function
-author : windows-driver-content
-description : The FltSetIoPriorityHintIntoFileObject routine is used by a minifilter driver to set the I/O priority information in a file object.
-old-location : ifsk\fltsetiopriorityhintintofileobject.htm
-old-project : ifsk
-ms.assetid : 95a56ca3-e223-49ec-9151-bedb3f3597c3
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : fltkernel/FltSetIoPriorityHintIntoFileObject, ifsk.fltsetiopriorityhintintofileobject, FltSetIoPriorityHintIntoFileObject routine [Installable File System Drivers], FltSetIoPriorityHintIntoFileObject, FltApiRef_p_to_z_981cae2b-b29c-4890-a462-163031a668d3.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : FltKernel.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltSetIoPriorityHintIntoFileObject
+title: FltSetIoPriorityHintIntoFileObject function
+author: windows-driver-content
+description: The FltSetIoPriorityHintIntoFileObject routine is used by a minifilter driver to set the I/O priority information in a file object.
+old-location: ifsk\fltsetiopriorityhintintofileobject.htm
+old-project: ifsk
+ms.assetid: 95a56ca3-e223-49ec-9151-bedb3f3597c3
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: fltkernel/FltSetIoPriorityHintIntoFileObject, ifsk.fltsetiopriorityhintintofileobject, FltSetIoPriorityHintIntoFileObject routine [Installable File System Drivers], FltSetIoPriorityHintIntoFileObject, FltApiRef_p_to_z_981cae2b-b29c-4890-a462-163031a668d3.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: FltKernel.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltSetIoPriorityHintIntoFileObject
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

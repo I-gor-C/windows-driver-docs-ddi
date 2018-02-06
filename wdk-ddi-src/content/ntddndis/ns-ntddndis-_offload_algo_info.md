@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddndis._OFFLOAD_ALGO_INFO
-title : "_OFFLOAD_ALGO_INFO"
-author : windows-driver-content
-description : The OFFLOAD_ALGO_INFO structure specifies an algorithm used for a security association (SA).
-old-location : netvista\offload_algo_info.htm
-old-project : netvista
-ms.assetid : 119a8c88-f181-40f5-8a12-5d663c5a1534
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : ntddndis/POFFLOAD_ALGO_INFO, OFFLOAD_ALGO_INFO structure [Network Drivers Starting with Windows Vista], *POFFLOAD_ALGO_INFO, ntddndis/OFFLOAD_ALGO_INFO, _OFFLOAD_ALGO_INFO, netvista.offload_algo_info, OFFLOAD_ALGO_INFO, 216offload_d10cb479-3fe8-468d-925b-c8358d88ef2b.xml, POFFLOAD_ALGO_INFO structure pointer [Network Drivers Starting with Windows Vista], POFFLOAD_ALGO_INFO
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*POFFLOAD_ALGO_INFO, OFFLOAD_ALGO_INFO"
+UID: NS:ntddndis._OFFLOAD_ALGO_INFO
+title: "_OFFLOAD_ALGO_INFO"
+author: windows-driver-content
+description: The OFFLOAD_ALGO_INFO structure specifies an algorithm used for a security association (SA).
+old-location: netvista\offload_algo_info.htm
+old-project: netvista
+ms.assetid: 119a8c88-f181-40f5-8a12-5d663c5a1534
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: ntddndis/POFFLOAD_ALGO_INFO, OFFLOAD_ALGO_INFO structure [Network Drivers Starting with Windows Vista], *POFFLOAD_ALGO_INFO, ntddndis/OFFLOAD_ALGO_INFO, _OFFLOAD_ALGO_INFO, netvista.offload_algo_info, OFFLOAD_ALGO_INFO, 216offload_d10cb479-3fe8-468d-925b-c8358d88ef2b.xml, POFFLOAD_ALGO_INFO structure pointer [Network Drivers Starting with Windows Vista], POFFLOAD_ALGO_INFO
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddndis.h
+apiname:
+-	OFFLOAD_ALGO_INFO
+product: Windows
+targetos: Windows
+req.typenames: "*POFFLOAD_ALGO_INFO, OFFLOAD_ALGO_INFO"
 ---
 
 # _OFFLOAD_ALGO_INFO structure

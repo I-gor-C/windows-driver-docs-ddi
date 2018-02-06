@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._D3DDDICB_SETDISPLAYMODE
-title : "_D3DDDICB_SETDISPLAYMODE"
-author : windows-driver-content
-description : The D3DDDICB_SETDISPLAYMODE structure describes the primary allocation that is used to scan out to the display.
-old-location : display\d3dddicb_setdisplaymode.htm
-old-project : display
-ms.assetid : d2f6d53b-2dd7-46ed-8d1e-dea264da4046
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3D_param_Structs_4aeee940-b195-4020-ad42-b69a2f34f93e.xml, _D3DDDICB_SETDISPLAYMODE, display.d3dddicb_setdisplaymode, d3dumddi/D3DDDICB_SETDISPLAYMODE, D3DDDICB_SETDISPLAYMODE structure [Display Devices], D3DDDICB_SETDISPLAYMODE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDICB_SETDISPLAYMODE
+UID: NS:d3dumddi._D3DDDICB_SETDISPLAYMODE
+title: "_D3DDDICB_SETDISPLAYMODE"
+author: windows-driver-content
+description: The D3DDDICB_SETDISPLAYMODE structure describes the primary allocation that is used to scan out to the display.
+old-location: display\d3dddicb_setdisplaymode.htm
+old-project: display
+ms.assetid: d2f6d53b-2dd7-46ed-8d1e-dea264da4046
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3D_param_Structs_4aeee940-b195-4020-ad42-b69a2f34f93e.xml, _D3DDDICB_SETDISPLAYMODE, display.d3dddicb_setdisplaymode, d3dumddi/D3DDDICB_SETDISPLAYMODE, D3DDDICB_SETDISPLAYMODE structure [Display Devices], D3DDDICB_SETDISPLAYMODE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	D3DDDICB_SETDISPLAYMODE
+product: Windows
+targetos: Windows
+req.typenames: D3DDDICB_SETDISPLAYMODE
 ---
 
 # _D3DDDICB_SETDISPLAYMODE structure

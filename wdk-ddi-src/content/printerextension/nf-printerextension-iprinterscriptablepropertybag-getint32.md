@@ -1,42 +1,47 @@
 ---
-UID : NF:printerextension.IPrinterScriptablePropertyBag.GetInt32
-title : IPrinterScriptablePropertyBag::GetInt32 method
-author : windows-driver-content
-description : Gets an integer property.
-old-location : print\iprinterscriptablepropertybag_getint32.htm
-old-project : print
-ms.assetid : 0E1089E4-5FE4-4769-A244-3E1979E4DE46
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : GetInt32 method [Print Devices], printerextension/IPrinterScriptablePropertyBag::GetInt32, IPrinterScriptablePropertyBag, print.iprinterscriptablepropertybag_getint32, IPrinterScriptablePropertyBag interface [Print Devices], GetInt32 method, IPrinterScriptablePropertyBag::GetInt32, GetInt32, GetInt32 method [Print Devices], IPrinterScriptablePropertyBag interface
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : printerextension.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : printerextension.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PrintSchemaSelectionType
-req.product : Windows 10 or later.
+UID: NF:printerextension.IPrinterScriptablePropertyBag.GetInt32
+title: IPrinterScriptablePropertyBag::GetInt32 method
+author: windows-driver-content
+description: Gets an integer property.
+old-location: print\iprinterscriptablepropertybag_getint32.htm
+old-project: print
+ms.assetid: 0E1089E4-5FE4-4769-A244-3E1979E4DE46
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: GetInt32 method [Print Devices], printerextension/IPrinterScriptablePropertyBag::GetInt32, IPrinterScriptablePropertyBag, print.iprinterscriptablepropertybag_getint32, IPrinterScriptablePropertyBag interface [Print Devices], GetInt32 method, IPrinterScriptablePropertyBag::GetInt32, GetInt32, GetInt32 method [Print Devices], IPrinterScriptablePropertyBag interface
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: printerextension.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: printerextension.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Printerextension.h
+apiname:
+-	IPrinterScriptablePropertyBag.GetInt32
+product: Windows
+targetos: Windows
+req.typenames: PrintSchemaSelectionType
+req.product: Windows 10 or later.
 ---
 
 

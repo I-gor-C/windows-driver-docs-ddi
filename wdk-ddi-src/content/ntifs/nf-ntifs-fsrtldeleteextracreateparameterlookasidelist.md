@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.FsRtlDeleteExtraCreateParameterLookasideList
-title : FsRtlDeleteExtraCreateParameterLookasideList function
-author : windows-driver-content
-description : The FsRtlDeleteExtraCreateParameterLookasideList routine frees an extra create parameter (ECP) lookaside list.
-old-location : ifsk\fsrtldeleteextracreateparameterlookasidelist.htm
-old-project : ifsk
-ms.assetid : 786635b4-db99-4b35-9fb5-23233997d091
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ntifs/FsRtlDeleteExtraCreateParameterLookasideList, FsRtlDeleteExtraCreateParameterLookasideList, FsRtlDeleteExtraCreateParameterLookasideList routine [Installable File System Drivers], fsrtlref_43144ea3-5cbc-43ce-b3f8-4101b1e3aeaa.xml, ifsk.fsrtldeleteextracreateparameterlookasidelist
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : FsRtlDeleteExtraCreateParameterLookasideList is available starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.FsRtlDeleteExtraCreateParameterLookasideList
+title: FsRtlDeleteExtraCreateParameterLookasideList function
+author: windows-driver-content
+description: The FsRtlDeleteExtraCreateParameterLookasideList routine frees an extra create parameter (ECP) lookaside list.
+old-location: ifsk\fsrtldeleteextracreateparameterlookasidelist.htm
+old-project: ifsk
+ms.assetid: 786635b4-db99-4b35-9fb5-23233997d091
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ntifs/FsRtlDeleteExtraCreateParameterLookasideList, FsRtlDeleteExtraCreateParameterLookasideList, FsRtlDeleteExtraCreateParameterLookasideList routine [Installable File System Drivers], fsrtlref_43144ea3-5cbc-43ce-b3f8-4101b1e3aeaa.xml, ifsk.fsrtldeleteextracreateparameterlookasidelist
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: FsRtlDeleteExtraCreateParameterLookasideList is available starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	FsRtlDeleteExtraCreateParameterLookasideList
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:bthsdpddi._BTHDDI_SDP_NODE_INTERFACE
-title : "_BTHDDI_SDP_NODE_INTERFACE"
-author : windows-driver-content
-description : The BTHDDI_SDP_NODE_INTERFACE structure provides functions for manipulating SDP records, including converting them to and from a tree representation that profile drivers can more easily parse.
-old-location : bltooth\bthddi_sdp_node_interface.htm
-old-project : bltooth
-ms.assetid : c9aeaaed-f017-4b23-b867-d704c4f8afb6
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : BTHDDI_SDP_NODE_INTERFACE, BTHDDI_SDP_NODE_INTERFACE structure [Bluetooth Devices], bth_structs_54f8f76d-9f12-491d-b189-c4e2fdd9b364.xml, bltooth.bthddi_sdp_node_interface, bthsdpddi/BTHDDI_SDP_NODE_INTERFACE, PBTHDDI_SDP_NODE_INTERFACE structure pointer [Bluetooth Devices], _BTHDDI_SDP_NODE_INTERFACE, PBTHDDI_SDP_NODE_INTERFACE, bthsdpddi/PBTHDDI_SDP_NODE_INTERFACE, *PBTHDDI_SDP_NODE_INTERFACE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : bthsdpddi.h
-req.include-header : BthSdpddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Versions:\_Supported in Windows Vista, and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= PASSIVE_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PBTHDDI_SDP_NODE_INTERFACE, BTHDDI_SDP_NODE_INTERFACE"
+UID: NS:bthsdpddi._BTHDDI_SDP_NODE_INTERFACE
+title: "_BTHDDI_SDP_NODE_INTERFACE"
+author: windows-driver-content
+description: The BTHDDI_SDP_NODE_INTERFACE structure provides functions for manipulating SDP records, including converting them to and from a tree representation that profile drivers can more easily parse.
+old-location: bltooth\bthddi_sdp_node_interface.htm
+old-project: bltooth
+ms.assetid: c9aeaaed-f017-4b23-b867-d704c4f8afb6
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: BTHDDI_SDP_NODE_INTERFACE, BTHDDI_SDP_NODE_INTERFACE structure [Bluetooth Devices], bth_structs_54f8f76d-9f12-491d-b189-c4e2fdd9b364.xml, bltooth.bthddi_sdp_node_interface, bthsdpddi/BTHDDI_SDP_NODE_INTERFACE, PBTHDDI_SDP_NODE_INTERFACE structure pointer [Bluetooth Devices], _BTHDDI_SDP_NODE_INTERFACE, PBTHDDI_SDP_NODE_INTERFACE, bthsdpddi/PBTHDDI_SDP_NODE_INTERFACE, *PBTHDDI_SDP_NODE_INTERFACE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: bthsdpddi.h
+req.include-header: BthSdpddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Versions:\_Supported in Windows Vista, and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= PASSIVE_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	bthsdpddi.h
+apiname:
+-	BTHDDI_SDP_NODE_INTERFACE
+product: Windows
+targetos: Windows
+req.typenames: "*PBTHDDI_SDP_NODE_INTERFACE, BTHDDI_SDP_NODE_INTERFACE"
 ---
 
 # _BTHDDI_SDP_NODE_INTERFACE structure

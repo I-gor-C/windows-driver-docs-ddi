@@ -1,41 +1,46 @@
 ---
-UID : NF:hbaapi.HBA_ScsiReadCapacityV2
-title : HBA_ScsiReadCapacityV2 function
-author : windows-driver-content
-description : The HBA_ScsiReadCapacityV2 routine sends a SCSI read capacity command to the indicated remote port.
-old-location : storage\hba_scsireadcapacityv2.htm
-old-project : storage
-ms.assetid : 8347e1ef-1285-43a9-bea7-a9a59ec0dfd0
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.hba_scsireadcapacityv2, HBA_ScsiReadCapacityV2 routine [Storage Devices], HBA_ScsiReadCapacityV2, hbaapi/HBA_ScsiReadCapacityV2, fibreHBA_rtns_8ac08e6d-79aa-4eee-a352-aa8ff51ec85f.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : hbaapi.h
-req.include-header : Hbaapi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Hbaapi.lib
-req.dll : Hbaapi.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HBA_WWNTYPE
+UID: NF:hbaapi.HBA_ScsiReadCapacityV2
+title: HBA_ScsiReadCapacityV2 function
+author: windows-driver-content
+description: The HBA_ScsiReadCapacityV2 routine sends a SCSI read capacity command to the indicated remote port.
+old-location: storage\hba_scsireadcapacityv2.htm
+old-project: storage
+ms.assetid: 8347e1ef-1285-43a9-bea7-a9a59ec0dfd0
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.hba_scsireadcapacityv2, HBA_ScsiReadCapacityV2 routine [Storage Devices], HBA_ScsiReadCapacityV2, hbaapi/HBA_ScsiReadCapacityV2, fibreHBA_rtns_8ac08e6d-79aa-4eee-a352-aa8ff51ec85f.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: hbaapi.h
+req.include-header: Hbaapi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Hbaapi.lib
+req.dll: Hbaapi.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Hbaapi.dll
+apiname:
+-	HBA_ScsiReadCapacityV2
+product: Windows
+targetos: Windows
+req.typenames: HBA_WWNTYPE
 ---
 
 

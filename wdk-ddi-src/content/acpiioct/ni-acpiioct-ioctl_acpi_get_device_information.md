@@ -1,41 +1,46 @@
 ---
-UID : NI:acpiioct.IOCTL_ACPI_GET_DEVICE_INFORMATION
-title : IOCTL_ACPI_GET_DEVICE_INFORMATION
-author : windows-driver-content
-description : A driver for a device can use the IOCTL_ACPI_GET_DEVICE_INFORMATION device control request to obtain fine-grained identification information about its device.
-old-location : acpi\ioctl_acpi_get_device_information.htm
-old-project : acpi
-ms.assetid : 08C27EC1-0948-4E8F-A391-01FE2C1A34DB
-ms.author : windowsdriverdev
-ms.date : 12/31/2017
-ms.keywords : acpi.ioctl_acpi_get_device_information, IOCTL_ACPI_GET_DEVICE_INFORMATION control code [ACPI Devices], IOCTL_ACPI_GET_DEVICE_INFORMATION, acpiioct/IOCTL_ACPI_GET_DEVICE_INFORMATION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : acpiioct.h
-req.include-header : Acpiioct.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : UNIT_ISOCH_PARAMS, *PUNIT_ISOCH_PARAMS
+UID: NI:acpiioct.IOCTL_ACPI_GET_DEVICE_INFORMATION
+title: IOCTL_ACPI_GET_DEVICE_INFORMATION
+author: windows-driver-content
+description: A driver for a device can use the IOCTL_ACPI_GET_DEVICE_INFORMATION device control request to obtain fine-grained identification information about its device.
+old-location: acpi\ioctl_acpi_get_device_information.htm
+old-project: acpi
+ms.assetid: 08C27EC1-0948-4E8F-A391-01FE2C1A34DB
+ms.author: windowsdriverdev
+ms.date: 12/31/2017
+ms.keywords: acpi.ioctl_acpi_get_device_information, IOCTL_ACPI_GET_DEVICE_INFORMATION control code [ACPI Devices], IOCTL_ACPI_GET_DEVICE_INFORMATION, acpiioct/IOCTL_ACPI_GET_DEVICE_INFORMATION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: acpiioct.h
+req.include-header: Acpiioct.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Acpiioct.h
+apiname:
+-	IOCTL_ACPI_GET_DEVICE_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: UNIT_ISOCH_PARAMS, *PUNIT_ISOCH_PARAMS
 ---
 
 # IOCTL_ACPI_GET_DEVICE_INFORMATION IOCTL

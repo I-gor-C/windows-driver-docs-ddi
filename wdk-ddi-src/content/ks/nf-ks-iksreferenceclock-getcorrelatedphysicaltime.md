@@ -1,41 +1,46 @@
 ---
-UID : NF:ks.IKsReferenceClock.GetCorrelatedPhysicalTime
-title : IKsReferenceClock::GetCorrelatedPhysicalTime method
-author : windows-driver-content
-description : The IKsReferenceClock::GetCorrelatedPhysicalTime method queries the associated reference clock for the current physical time and retrieves the correlated system time.
-old-location : stream\iksreferenceclock_getcorrelatedphysicaltime.htm
-old-project : stream
-ms.assetid : b80f6e20-410d-4984-8535-782a84c6af7e
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : GetCorrelatedPhysicalTime, avintfc_d0686a3a-47ab-4dbc-87ec-ee56e357b4ea.xml, ks/IKsReferenceClock::GetCorrelatedPhysicalTime, IKsReferenceClock::GetCorrelatedPhysicalTime, IKsReferenceClock, stream.iksreferenceclock_getcorrelatedphysicaltime, GetCorrelatedPhysicalTime method [Streaming Media Devices], IKsReferenceClock interface [Streaming Media Devices], GetCorrelatedPhysicalTime method, GetCorrelatedPhysicalTime method [Streaming Media Devices], IKsReferenceClock interface
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : ks.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.IKsReferenceClock.GetCorrelatedPhysicalTime
+title: IKsReferenceClock::GetCorrelatedPhysicalTime method
+author: windows-driver-content
+description: The IKsReferenceClock::GetCorrelatedPhysicalTime method queries the associated reference clock for the current physical time and retrieves the correlated system time.
+old-location: stream\iksreferenceclock_getcorrelatedphysicaltime.htm
+old-project: stream
+ms.assetid: b80f6e20-410d-4984-8535-782a84c6af7e
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: GetCorrelatedPhysicalTime, avintfc_d0686a3a-47ab-4dbc-87ec-ee56e357b4ea.xml, ks/IKsReferenceClock::GetCorrelatedPhysicalTime, IKsReferenceClock::GetCorrelatedPhysicalTime, IKsReferenceClock, stream.iksreferenceclock_getcorrelatedphysicaltime, GetCorrelatedPhysicalTime method [Streaming Media Devices], IKsReferenceClock interface [Streaming Media Devices], GetCorrelatedPhysicalTime method, GetCorrelatedPhysicalTime method [Streaming Media Devices], IKsReferenceClock interface
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: ks.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	ks.h
+apiname:
+-	IKsReferenceClock.GetCorrelatedPhysicalTime
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

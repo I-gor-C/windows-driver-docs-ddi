@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.SYSAUDIO_CREATE_VIRTUAL_SOURCE
-title : SYSAUDIO_CREATE_VIRTUAL_SOURCE
-author : windows-driver-content
-description : The SYSAUDIO_CREATE_VIRTUAL_SOURCE structure is used to create a mixer-line virtual source such as a volume control or mute.
-old-location : audio\sysaudio_create_virtual_source.htm
-old-project : audio
-ms.assetid : c9024cf0-aa0c-4652-89c1-3f2e6f622b3d
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : PSYSAUDIO_CREATE_VIRTUAL_SOURCE, audio.sysaudio_create_virtual_source, SYSAUDIO_CREATE_VIRTUAL_SOURCE, aud-prop_b5e1f1ed-6007-4f2a-89eb-dcabeb0777e6.xml, PSYSAUDIO_CREATE_VIRTUAL_SOURCE structure pointer [Audio Devices], SYSAUDIO_CREATE_VIRTUAL_SOURCE structure [Audio Devices], *PSYSAUDIO_CREATE_VIRTUAL_SOURCE, ksmedia/PSYSAUDIO_CREATE_VIRTUAL_SOURCE, ksmedia/SYSAUDIO_CREATE_VIRTUAL_SOURCE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSYSAUDIO_CREATE_VIRTUAL_SOURCE, SYSAUDIO_CREATE_VIRTUAL_SOURCE"
+UID: NS:ksmedia.SYSAUDIO_CREATE_VIRTUAL_SOURCE
+title: SYSAUDIO_CREATE_VIRTUAL_SOURCE
+author: windows-driver-content
+description: The SYSAUDIO_CREATE_VIRTUAL_SOURCE structure is used to create a mixer-line virtual source such as a volume control or mute.
+old-location: audio\sysaudio_create_virtual_source.htm
+old-project: audio
+ms.assetid: c9024cf0-aa0c-4652-89c1-3f2e6f622b3d
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: PSYSAUDIO_CREATE_VIRTUAL_SOURCE, audio.sysaudio_create_virtual_source, SYSAUDIO_CREATE_VIRTUAL_SOURCE, aud-prop_b5e1f1ed-6007-4f2a-89eb-dcabeb0777e6.xml, PSYSAUDIO_CREATE_VIRTUAL_SOURCE structure pointer [Audio Devices], SYSAUDIO_CREATE_VIRTUAL_SOURCE structure [Audio Devices], *PSYSAUDIO_CREATE_VIRTUAL_SOURCE, ksmedia/PSYSAUDIO_CREATE_VIRTUAL_SOURCE, ksmedia/SYSAUDIO_CREATE_VIRTUAL_SOURCE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	SYSAUDIO_CREATE_VIRTUAL_SOURCE
+product: Windows
+targetos: Windows
+req.typenames: "*PSYSAUDIO_CREATE_VIRTUAL_SOURCE, SYSAUDIO_CREATE_VIRTUAL_SOURCE"
 ---
 
 # SYSAUDIO_CREATE_VIRTUAL_SOURCE structure

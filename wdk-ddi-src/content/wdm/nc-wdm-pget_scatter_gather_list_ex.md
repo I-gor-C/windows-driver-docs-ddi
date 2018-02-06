@@ -1,42 +1,47 @@
 ---
-UID : NC:wdm.PGET_SCATTER_GATHER_LIST_EX
-title : PGET_SCATTER_GATHER_LIST_EX
-author : windows-driver-content
-description : The GetScatterGatherListEx routine allocates the resources that are required for a DMA transfer, builds a scatter/gather list, and calls the driver-supplied AdapterListControl routine to initiate the DMA transfer.
-old-location : kernel\getscattergatherlistex.htm
-old-project : kernel
-ms.assetid : BDEC9AFC-2BA1-4E2C-83B4-F21B220B8B3B
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.getscattergatherlistex, GetScatterGatherListEx, GetScatterGatherListEx callback function [Kernel-Mode Driver Architecture], GetScatterGatherListEx, PGET_SCATTER_GATHER_LIST_EX, PGET_SCATTER_GATHER_LIST_EX, wdm/GetScatterGatherListEx, DMA_SYNCHRONOUS_CALLBACK
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
-req.product : Windows 10 or later.
+UID: NC:wdm.PGET_SCATTER_GATHER_LIST_EX
+title: PGET_SCATTER_GATHER_LIST_EX
+author: windows-driver-content
+description: The GetScatterGatherListEx routine allocates the resources that are required for a DMA transfer, builds a scatter/gather list, and calls the driver-supplied AdapterListControl routine to initiate the DMA transfer.
+old-location: kernel\getscattergatherlistex.htm
+old-project: kernel
+ms.assetid: BDEC9AFC-2BA1-4E2C-83B4-F21B220B8B3B
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.getscattergatherlistex, GetScatterGatherListEx, GetScatterGatherListEx callback function [Kernel-Mode Driver Architecture], GetScatterGatherListEx, PGET_SCATTER_GATHER_LIST_EX, PGET_SCATTER_GATHER_LIST_EX, wdm/GetScatterGatherListEx, DMA_SYNCHRONOUS_CALLBACK
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Wdm.h
+apiname:
+-	GetScatterGatherListEx
+product: Windows
+targetos: Windows
+req.typenames: WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.FsRtlAllocateExtraCreateParameterList
-title : FsRtlAllocateExtraCreateParameterList function
-author : windows-driver-content
-description : The FsRtlAllocateExtraCreateParameterList routine allocates paged pool memory for an ECP_LIST structure and generates a pointer to that structure.
-old-location : ifsk\fsrtlallocateextracreateparameterlist.htm
-old-project : ifsk
-ms.assetid : 93888920-73b2-41e4-8d49-e5235ee93307
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : fsrtlref_2d552d23-4312-4203-91fb-c6cf6fb39681.xml, FsRtlAllocateExtraCreateParameterList, ifsk.fsrtlallocateextracreateparameterlist, ntifs/FsRtlAllocateExtraCreateParameterList, FsRtlAllocateExtraCreateParameterList routine [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : The FsRtlAllocateExtraCreateParameterList routine is available starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.FsRtlAllocateExtraCreateParameterList
+title: FsRtlAllocateExtraCreateParameterList function
+author: windows-driver-content
+description: The FsRtlAllocateExtraCreateParameterList routine allocates paged pool memory for an ECP_LIST structure and generates a pointer to that structure.
+old-location: ifsk\fsrtlallocateextracreateparameterlist.htm
+old-project: ifsk
+ms.assetid: 93888920-73b2-41e4-8d49-e5235ee93307
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: fsrtlref_2d552d23-4312-4203-91fb-c6cf6fb39681.xml, FsRtlAllocateExtraCreateParameterList, ifsk.fsrtlallocateextracreateparameterlist, ntifs/FsRtlAllocateExtraCreateParameterList, FsRtlAllocateExtraCreateParameterList routine [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: The FsRtlAllocateExtraCreateParameterList routine is available starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	FsRtlAllocateExtraCreateParameterList
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

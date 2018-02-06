@@ -1,41 +1,46 @@
 ---
-UID : NS:ntifs._SID_AND_ATTRIBUTES
-title : "_SID_AND_ATTRIBUTES"
-author : windows-driver-content
-description : The SID_AND_ATTRIBUTES structure represents a security identifier (SID) and its attributes. SIDs are used to uniquely identify users or groups.
-old-location : ifsk\sid_and_attributes.htm
-old-project : ifsk
-ms.assetid : 37c299ab-16a6-4fa2-8ac9-55d75cc98f60
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : PSID_AND_ATTRIBUTES structure pointer [Installable File System Drivers], ifsk.sid_and_attributes, securitystructures_b0075789-13b6-4324-965b-33a162bff18b.xml, SID_AND_ATTRIBUTES, ntifs/SID_AND_ATTRIBUTES, _SID_AND_ATTRIBUTES, *PSID_AND_ATTRIBUTES, ntifs/PSID_AND_ATTRIBUTES, SID_AND_ATTRIBUTES structure [Installable File System Drivers], PSID_AND_ATTRIBUTES
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSID_AND_ATTRIBUTES, SID_AND_ATTRIBUTES"
+UID: NS:ntifs._SID_AND_ATTRIBUTES
+title: "_SID_AND_ATTRIBUTES"
+author: windows-driver-content
+description: The SID_AND_ATTRIBUTES structure represents a security identifier (SID) and its attributes. SIDs are used to uniquely identify users or groups.
+old-location: ifsk\sid_and_attributes.htm
+old-project: ifsk
+ms.assetid: 37c299ab-16a6-4fa2-8ac9-55d75cc98f60
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: PSID_AND_ATTRIBUTES structure pointer [Installable File System Drivers], ifsk.sid_and_attributes, securitystructures_b0075789-13b6-4324-965b-33a162bff18b.xml, SID_AND_ATTRIBUTES, ntifs/SID_AND_ATTRIBUTES, _SID_AND_ATTRIBUTES, *PSID_AND_ATTRIBUTES, ntifs/PSID_AND_ATTRIBUTES, SID_AND_ATTRIBUTES structure [Installable File System Drivers], PSID_AND_ATTRIBUTES
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntifs.h
+apiname:
+-	SID_AND_ATTRIBUTES
+product: Windows
+targetos: Windows
+req.typenames: "*PSID_AND_ATTRIBUTES, SID_AND_ATTRIBUTES"
 ---
 
 # _SID_AND_ATTRIBUTES structure

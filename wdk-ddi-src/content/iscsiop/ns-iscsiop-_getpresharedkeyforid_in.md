@@ -1,41 +1,46 @@
 ---
-UID : NS:iscsiop._GetPresharedKeyForId_IN
-title : "_GetPresharedKeyForId_IN"
-author : windows-driver-content
-description : The GetPresharedKeyForId_IN structure holds the input data for the GetPresharedKeyForId method.
-old-location : storage\getpresharedkeyforid_in.htm
-old-project : storage
-ms.assetid : 4b3d3c5d-c34c-4ed8-bf62-1d885442ee1e
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : structs-iSCSI_2bdada81-7b98-40cd-bc44-e23e53118c60.xml, iscsiop/GetPresharedKeyForId_IN, *PGetPresharedKeyForId_IN, _GetPresharedKeyForId_IN, PGetPresharedKeyForId_IN, storage.getpresharedkeyforid_in, PGetPresharedKeyForId_IN structure pointer [Storage Devices], GetPresharedKeyForId_IN, GetPresharedKeyForId_IN structure [Storage Devices], iscsiop/PGetPresharedKeyForId_IN
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : iscsiop.h
-req.include-header : Iscsiop.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PGetPresharedKeyForId_IN, GetPresharedKeyForId_IN"
+UID: NS:iscsiop._GetPresharedKeyForId_IN
+title: "_GetPresharedKeyForId_IN"
+author: windows-driver-content
+description: The GetPresharedKeyForId_IN structure holds the input data for the GetPresharedKeyForId method.
+old-location: storage\getpresharedkeyforid_in.htm
+old-project: storage
+ms.assetid: 4b3d3c5d-c34c-4ed8-bf62-1d885442ee1e
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: structs-iSCSI_2bdada81-7b98-40cd-bc44-e23e53118c60.xml, iscsiop/GetPresharedKeyForId_IN, *PGetPresharedKeyForId_IN, _GetPresharedKeyForId_IN, PGetPresharedKeyForId_IN, storage.getpresharedkeyforid_in, PGetPresharedKeyForId_IN structure pointer [Storage Devices], GetPresharedKeyForId_IN, GetPresharedKeyForId_IN structure [Storage Devices], iscsiop/PGetPresharedKeyForId_IN
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: iscsiop.h
+req.include-header: Iscsiop.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	iscsiop.h
+apiname:
+-	GetPresharedKeyForId_IN
+product: Windows
+targetos: Windows
+req.typenames: "*PGetPresharedKeyForId_IN, GetPresharedKeyForId_IN"
 ---
 
 # _GetPresharedKeyForId_IN structure

@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGK_CHECK_MULTIPLANE_OVERLAY_SUPPORT_PLANE
-title : "_DXGK_CHECK_MULTIPLANE_OVERLAY_SUPPORT_PLANE"
-author : windows-driver-content
-description : Specifies the support attributes that the hardware provides for multiplane overlays.
-old-location : display\dxgk_check_multiplane_overlay_support_plane.htm
-old-project : display
-ms.assetid : 28CC4BE1-D4C1-4D22-885B-D50BE5AD6EE6
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DXGK_CHECK_MULTIPLANE_OVERLAY_SUPPORT_PLANE, _DXGK_CHECK_MULTIPLANE_OVERLAY_SUPPORT_PLANE, display.dxgk_check_multiplane_overlay_support_plane, d3dkmddi/DXGK_CHECK_MULTIPLANE_OVERLAY_SUPPORT_PLANE, DXGK_CHECK_MULTIPLANE_OVERLAY_SUPPORT_PLANE structure [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8.1
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_CHECK_MULTIPLANE_OVERLAY_SUPPORT_PLANE
+UID: NS:d3dkmddi._DXGK_CHECK_MULTIPLANE_OVERLAY_SUPPORT_PLANE
+title: "_DXGK_CHECK_MULTIPLANE_OVERLAY_SUPPORT_PLANE"
+author: windows-driver-content
+description: Specifies the support attributes that the hardware provides for multiplane overlays.
+old-location: display\dxgk_check_multiplane_overlay_support_plane.htm
+old-project: display
+ms.assetid: 28CC4BE1-D4C1-4D22-885B-D50BE5AD6EE6
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DXGK_CHECK_MULTIPLANE_OVERLAY_SUPPORT_PLANE, _DXGK_CHECK_MULTIPLANE_OVERLAY_SUPPORT_PLANE, display.dxgk_check_multiplane_overlay_support_plane, d3dkmddi/DXGK_CHECK_MULTIPLANE_OVERLAY_SUPPORT_PLANE, DXGK_CHECK_MULTIPLANE_OVERLAY_SUPPORT_PLANE structure [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8.1
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	D3dkmddi.h
+apiname:
+-	DXGK_CHECK_MULTIPLANE_OVERLAY_SUPPORT_PLANE
+product: Windows
+targetos: Windows
+req.typenames: DXGK_CHECK_MULTIPLANE_OVERLAY_SUPPORT_PLANE
 ---
 
 # _DXGK_CHECK_MULTIPLANE_OVERLAY_SUPPORT_PLANE structure

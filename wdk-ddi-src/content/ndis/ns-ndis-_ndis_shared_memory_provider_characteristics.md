@@ -1,41 +1,46 @@
 ---
-UID : NS:ndis._NDIS_SHARED_MEMORY_PROVIDER_CHARACTERISTICS
-title : "_NDIS_SHARED_MEMORY_PROVIDER_CHARACTERISTICS"
-author : windows-driver-content
-description : The NDIS_SHARED_MEMORY_PROVIDER_CHARACTERISTICS structure specifies shared memory provider characteristics.
-old-location : netvista\ndis_shared_memory_provider_characteristics.htm
-old-project : netvista
-ms.assetid : 45001da1-5fe3-4383-8da7-31e3ee115c1f
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : ndis_shared_memory_ref_0cb54ab1-d469-4fa0-833a-eb17e1441e76.xml, *PNDIS_SHARED_MEMORY_PROVIDER_CHARACTERISTICS, NDIS_SHARED_MEMORY_PROVIDER_CHARACTERISTICS, NDIS_SHARED_MEMORY_PROVIDER_CHARACTERISTICS structure [Network Drivers Starting with Windows Vista], PNDIS_SHARED_MEMORY_PROVIDER_CHARACTERISTICS, PNDIS_SHARED_MEMORY_PROVIDER_CHARACTERISTICS structure pointer [Network Drivers Starting with Windows Vista], ndis/NDIS_SHARED_MEMORY_PROVIDER_CHARACTERISTICS, netvista.ndis_shared_memory_provider_characteristics, _NDIS_SHARED_MEMORY_PROVIDER_CHARACTERISTICS, ndis/PNDIS_SHARED_MEMORY_PROVIDER_CHARACTERISTICS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.20 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : See Remarks section
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_PROVIDER_CHARACTERISTICS, *PNDIS_SHARED_MEMORY_PROVIDER_CHARACTERISTICS
+UID: NS:ndis._NDIS_SHARED_MEMORY_PROVIDER_CHARACTERISTICS
+title: "_NDIS_SHARED_MEMORY_PROVIDER_CHARACTERISTICS"
+author: windows-driver-content
+description: The NDIS_SHARED_MEMORY_PROVIDER_CHARACTERISTICS structure specifies shared memory provider characteristics.
+old-location: netvista\ndis_shared_memory_provider_characteristics.htm
+old-project: netvista
+ms.assetid: 45001da1-5fe3-4383-8da7-31e3ee115c1f
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: ndis_shared_memory_ref_0cb54ab1-d469-4fa0-833a-eb17e1441e76.xml, *PNDIS_SHARED_MEMORY_PROVIDER_CHARACTERISTICS, NDIS_SHARED_MEMORY_PROVIDER_CHARACTERISTICS, NDIS_SHARED_MEMORY_PROVIDER_CHARACTERISTICS structure [Network Drivers Starting with Windows Vista], PNDIS_SHARED_MEMORY_PROVIDER_CHARACTERISTICS, PNDIS_SHARED_MEMORY_PROVIDER_CHARACTERISTICS structure pointer [Network Drivers Starting with Windows Vista], ndis/NDIS_SHARED_MEMORY_PROVIDER_CHARACTERISTICS, netvista.ndis_shared_memory_provider_characteristics, _NDIS_SHARED_MEMORY_PROVIDER_CHARACTERISTICS, ndis/PNDIS_SHARED_MEMORY_PROVIDER_CHARACTERISTICS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.20 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: See Remarks section
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndis.h
+apiname:
+-	NDIS_SHARED_MEMORY_PROVIDER_CHARACTERISTICS
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_PROVIDER_CHARACTERISTICS, *PNDIS_SHARED_MEMORY_PROVIDER_CHARACTERISTICS
 ---
 
 # _NDIS_SHARED_MEMORY_PROVIDER_CHARACTERISTICS structure

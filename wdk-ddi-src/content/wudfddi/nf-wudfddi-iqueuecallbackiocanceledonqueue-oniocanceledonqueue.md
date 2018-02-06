@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IQueueCallbackIoCanceledOnQueue.OnIoCanceledOnQueue
-title : IQueueCallbackIoCanceledOnQueue::OnIoCanceledOnQueue method
-author : windows-driver-content
-description : A driver's OnIoCanceledOnQueue event callback function informs the driver that an I/O request was canceled while it was in an I/O queue.
-old-location : wdf\iqueuecallbackiocanceledonqueue_oniocanceledonqueue.htm
-old-project : wdf
-ms.assetid : 901ff312-d1bb-46bf-b8e6-6abc47fa3c7f
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wudfddi/IQueueCallbackIoCanceledOnQueue::OnIoCanceledOnQueue, IQueueCallbackIoCanceledOnQueue::OnIoCanceledOnQueue, IQueueCallbackIoCanceledOnQueue interface, OnIoCanceledOnQueue method, IQueueCallbackIoCanceledOnQueue, OnIoCanceledOnQueue method, IQueueCallbackIoCanceledOnQueue interface, wdf.iqueuecallbackiocanceledonqueue_oniocanceledonqueue, OnIoCanceledOnQueue, umdf.iqueuecallbackiocanceledonqueue_oniocanceledonqueue, UMDFQueueObjectRef_e80a1257-b51e-46f8-8e9f-0fff3b830587.xml, OnIoCanceledOnQueue method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.9
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IQueueCallbackIoCanceledOnQueue.OnIoCanceledOnQueue
+title: IQueueCallbackIoCanceledOnQueue::OnIoCanceledOnQueue method
+author: windows-driver-content
+description: A driver's OnIoCanceledOnQueue event callback function informs the driver that an I/O request was canceled while it was in an I/O queue.
+old-location: wdf\iqueuecallbackiocanceledonqueue_oniocanceledonqueue.htm
+old-project: wdf
+ms.assetid: 901ff312-d1bb-46bf-b8e6-6abc47fa3c7f
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wudfddi/IQueueCallbackIoCanceledOnQueue::OnIoCanceledOnQueue, IQueueCallbackIoCanceledOnQueue::OnIoCanceledOnQueue, IQueueCallbackIoCanceledOnQueue interface, OnIoCanceledOnQueue method, IQueueCallbackIoCanceledOnQueue, OnIoCanceledOnQueue method, IQueueCallbackIoCanceledOnQueue interface, wdf.iqueuecallbackiocanceledonqueue_oniocanceledonqueue, OnIoCanceledOnQueue, umdf.iqueuecallbackiocanceledonqueue_oniocanceledonqueue, UMDFQueueObjectRef_e80a1257-b51e-46f8-8e9f-0fff3b830587.xml, OnIoCanceledOnQueue method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.9
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Wudfddi.h
+apiname:
+-	IQueueCallbackIoCanceledOnQueue.OnIoCanceledOnQueue
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

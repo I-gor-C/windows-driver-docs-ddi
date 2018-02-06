@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltCreateCommunicationPort
-title : FltCreateCommunicationPort function
-author : windows-driver-content
-description : FltCreateCommunicationPort creates a communication server port on which a minifilter driver can receive connection requests from user-mode applications.
-old-location : ifsk\fltcreatecommunicationport.htm
-old-project : ifsk
-ms.assetid : 9987ed6b-7792-4035-9640-9ee9595e854a
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : fltkernel/FltCreateCommunicationPort, FltApiRef_a_to_d_77aa523f-3374-41e7-9b9f-ed0d9e5b3094.xml, FltCreateCommunicationPort function [Installable File System Drivers], FltCreateCommunicationPort, ifsk.fltcreatecommunicationport
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltCreateCommunicationPort
+title: FltCreateCommunicationPort function
+author: windows-driver-content
+description: FltCreateCommunicationPort creates a communication server port on which a minifilter driver can receive connection requests from user-mode applications.
+old-location: ifsk\fltcreatecommunicationport.htm
+old-project: ifsk
+ms.assetid: 9987ed6b-7792-4035-9640-9ee9595e854a
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: fltkernel/FltCreateCommunicationPort, FltApiRef_a_to_d_77aa523f-3374-41e7-9b9f-ed0d9e5b3094.xml, FltCreateCommunicationPort function [Installable File System Drivers], FltCreateCommunicationPort, ifsk.fltcreatecommunicationport
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltCreateCommunicationPort
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

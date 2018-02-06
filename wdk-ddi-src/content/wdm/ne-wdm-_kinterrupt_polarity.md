@@ -1,42 +1,47 @@
 ---
-UID : NE:wdm._KINTERRUPT_POLARITY
-title : "_KINTERRUPT_POLARITY"
-author : windows-driver-content
-description : The KINTERRUPT_POLARITY enumeration indicates how a device signals an interrupt request on an interrupt line.
-old-location : kernel\kinterrupt_polarity.htm
-old-project : kernel
-ms.assetid : 2fcc4597-b169-43a8-b2bb-dd2dd66f29dc
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : InterruptActiveBothTriggerHigh, wdm/InterruptActiveHigh, wdm/InterruptRisingEdge, wdm/PKINTERRUPT_POLARITY, InterruptActiveLow, InterruptActiveBoth, InterruptPolarityUnknown, *PKINTERRUPT_POLARITY, wdm/InterruptActiveBothTriggerLow, InterruptFallingEdge, InterruptActiveHigh, PKINTERRUPT_POLARITY, wdm/InterruptFallingEdge, KINTERRUPT_POLARITY enumeration [Kernel-Mode Driver Architecture], InterruptRisingEdge, PKINTERRUPT_POLARITY enumeration pointer [Kernel-Mode Driver Architecture], wdm/InterruptPolarityUnknown, InterruptActiveBothTriggerLow, wdm/InterruptActiveBothTriggerHigh, kernel.kinterrupt_polarity, wdm/InterruptActiveBoth, wdm/KINTERRUPT_POLARITY, sysenum_56e5681d-ea77-4385-bd47-4add306a4fe8.xml, _KINTERRUPT_POLARITY, wdm/InterruptActiveLow, KINTERRUPT_POLARITY
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KINTERRUPT_POLARITY, *PKINTERRUPT_POLARITY
-req.product : Windows 10 or later.
+UID: NE:wdm._KINTERRUPT_POLARITY
+title: "_KINTERRUPT_POLARITY"
+author: windows-driver-content
+description: The KINTERRUPT_POLARITY enumeration indicates how a device signals an interrupt request on an interrupt line.
+old-location: kernel\kinterrupt_polarity.htm
+old-project: kernel
+ms.assetid: 2fcc4597-b169-43a8-b2bb-dd2dd66f29dc
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: InterruptActiveBothTriggerHigh, wdm/InterruptActiveHigh, wdm/InterruptRisingEdge, wdm/PKINTERRUPT_POLARITY, InterruptActiveLow, InterruptActiveBoth, InterruptPolarityUnknown, *PKINTERRUPT_POLARITY, wdm/InterruptActiveBothTriggerLow, InterruptFallingEdge, InterruptActiveHigh, PKINTERRUPT_POLARITY, wdm/InterruptFallingEdge, KINTERRUPT_POLARITY enumeration [Kernel-Mode Driver Architecture], InterruptRisingEdge, PKINTERRUPT_POLARITY enumeration pointer [Kernel-Mode Driver Architecture], wdm/InterruptPolarityUnknown, InterruptActiveBothTriggerLow, wdm/InterruptActiveBothTriggerHigh, kernel.kinterrupt_polarity, wdm/InterruptActiveBoth, wdm/KINTERRUPT_POLARITY, sysenum_56e5681d-ea77-4385-bd47-4add306a4fe8.xml, _KINTERRUPT_POLARITY, wdm/InterruptActiveLow, KINTERRUPT_POLARITY
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	KINTERRUPT_POLARITY
+product: Windows
+targetos: Windows
+req.typenames: KINTERRUPT_POLARITY, *PKINTERRUPT_POLARITY
+req.product: Windows 10 or later.
 ---
 
 # _KINTERRUPT_POLARITY Enumeration
@@ -59,60 +64,60 @@ typedef enum _KINTERRUPT_POLARITY {
 ## Constants
 
 <table>
-
-<tr>
-<td>InterruptActiveBoth</td>
-<td>Active-both interrupt. The interrupt input type is edge-triggered, and an interrupt request is indicated by a low-to-high or a high-to-low transition on the interrupt line. After a low-to-high transition signals an interrupt request, the interrupt line remains high until a high-to-low transition signals the next interrupt request. Similarly, after a high-to-low transition signals an interrupt request, the interrupt line remains low until a low-to-high transition signals the next interrupt request.</td>
-</tr>
-
-<tr>
-<td>InterruptActiveBothTriggerHigh</td>
-<td>Reserved for use by the operating system.</td>
-</tr>
-
-<tr>
-<td>InterruptActiveBothTriggerLow</td>
-<td>Reserved for use by the operating system.</td>
-</tr>
-
-<tr>
-<td>InterruptActiveHigh</td>
-<td>Active-high interrupt. The interrupt input type is level-triggered, and an interrupt request is indicated by a high signal level on the interrupt line. The request remains active as long as the line remains high.</td>
-</tr>
-
-<tr>
-<td>InterruptActiveLow</td>
-<td>Active-low interrupt. The interrupt input type is level-triggered, and an interrupt request is indicated by a low signal level on the interrupt line. The request remains active as long as the line remains low.</td>
-</tr>
-
-<tr>
-<td>InterruptFallingEdge</td>
-<td>Falling-edge-triggered interrupt. The interrupt input type is edge-triggered, and an interrupt request is indicated by a high-to-low transition on the interrupt line.</td>
-</tr>
-
-<tr>
-<td>InterruptPolarityUnknown</td>
-<td>The interrupt polarity is unknown.</td>
-</tr>
-
-<tr>
-<td>InterruptRisingEdge</td>
-<td>Rising-edge-triggered interrupt. The interrupt input type is edge-triggered, and an interrupt request is indicated by a low-to-high transition on the interrupt line.</td>
-</tr>
+            
+                <tr>
+                    <td>InterruptActiveBoth</td>
+                    <td>Active-both interrupt. The interrupt input type is edge-triggered, and an interrupt request is indicated by a low-to-high or a high-to-low transition on the interrupt line. After a low-to-high transition signals an interrupt request, the interrupt line remains high until a high-to-low transition signals the next interrupt request. Similarly, after a high-to-low transition signals an interrupt request, the interrupt line remains low until a low-to-high transition signals the next interrupt request.</td>
+                </tr>
+            
+                <tr>
+                    <td>InterruptActiveBothTriggerHigh</td>
+                    <td>Reserved for use by the operating system.</td>
+                </tr>
+            
+                <tr>
+                    <td>InterruptActiveBothTriggerLow</td>
+                    <td>Reserved for use by the operating system.</td>
+                </tr>
+            
+                <tr>
+                    <td>InterruptActiveHigh</td>
+                    <td>Active-high interrupt. The interrupt input type is level-triggered, and an interrupt request is indicated by a high signal level on the interrupt line. The request remains active as long as the line remains high.</td>
+                </tr>
+            
+                <tr>
+                    <td>InterruptActiveLow</td>
+                    <td>Active-low interrupt. The interrupt input type is level-triggered, and an interrupt request is indicated by a low signal level on the interrupt line. The request remains active as long as the line remains low.</td>
+                </tr>
+            
+                <tr>
+                    <td>InterruptFallingEdge</td>
+                    <td>Falling-edge-triggered interrupt. The interrupt input type is edge-triggered, and an interrupt request is indicated by a high-to-low transition on the interrupt line.</td>
+                </tr>
+            
+                <tr>
+                    <td>InterruptPolarityUnknown</td>
+                    <td>The interrupt polarity is unknown.</td>
+                </tr>
+            
+                <tr>
+                    <td>InterruptRisingEdge</td>
+                    <td>Rising-edge-triggered interrupt. The interrupt input type is edge-triggered, and an interrupt request is indicated by a low-to-high transition on the interrupt line.</td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-A <b>KINTERRUPT_POLARITY</b> enumeration constant is frequently used in conjunction with a <a href="..\wdm\ne-wdm-_kinterrupt_mode.md">KINTERRUPT_MODE</a> enumeration constant to describe an interrupt signal. A <b>KINTERRUPT_MODE</b> enumeration constant indicates whether the interrupt signal from a device is level-triggered or edge-triggered.
+        A <b>KINTERRUPT_POLARITY</b> enumeration constant is frequently used in conjunction with a <a href="..\wdm\ne-wdm-_kinterrupt_mode.md">KINTERRUPT_MODE</a> enumeration constant to describe an interrupt signal. A <b>KINTERRUPT_MODE</b> enumeration constant indicates whether the interrupt signal from a device is level-triggered or edge-triggered.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\wdm\ne-wdm-_kinterrupt_mode.md">KINTERRUPT_MODE</a>
+        <a href="..\wdm\ne-wdm-_kinterrupt_mode.md">KINTERRUPT_MODE</a>
 
  
 

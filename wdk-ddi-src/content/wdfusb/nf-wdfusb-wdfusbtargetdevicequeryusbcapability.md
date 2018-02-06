@@ -1,42 +1,50 @@
 ---
-UID : NF:wdfusb.WdfUsbTargetDeviceQueryUsbCapability
-title : WdfUsbTargetDeviceQueryUsbCapability function
-author : windows-driver-content
-description : The WdfUsbTargetDeviceQueryUsbCapability method determines whether the host controller and USB driver stack support a specific capability.
-old-location : wdf\wdfusbtargetdevicequeryusbcapability.htm
-old-project : wdf
-ms.assetid : B6C3E94F-AFC9-45EC-91F1-F0E3586DBDA1
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : PFN_WDFUSBTARGETDEVICEQUERYUSBCAPABILITY, wdfusb/WdfUsbTargetDeviceQueryUsbCapability, kmdf.wdfusbtargetdevicequeryusbcapability, wdf.wdfusbtargetdevicequeryusbcapability, WdfUsbTargetDeviceQueryUsbCapability, WdfUsbTargetDeviceQueryUsbCapability method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfusb.h
-req.include-header : Wdfusb.h
-req.target-type : Universal
-req.target-min-winverclnt : Windows Vista
-req.target-min-winversvr : 
-req.kmdf-ver : 1.11
-req.umdf-ver : 2.0
-req.ddi-compliance : DriverCreate
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfusb.WdfUsbTargetDeviceQueryUsbCapability
+title: WdfUsbTargetDeviceQueryUsbCapability function
+author: windows-driver-content
+description: The WdfUsbTargetDeviceQueryUsbCapability method determines whether the host controller and USB driver stack support a specific capability.
+old-location: wdf\wdfusbtargetdevicequeryusbcapability.htm
+old-project: wdf
+ms.assetid: B6C3E94F-AFC9-45EC-91F1-F0E3586DBDA1
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: PFN_WDFUSBTARGETDEVICEQUERYUSBCAPABILITY, wdfusb/WdfUsbTargetDeviceQueryUsbCapability, kmdf.wdfusbtargetdevicequeryusbcapability, wdf.wdfusbtargetdevicequeryusbcapability, WdfUsbTargetDeviceQueryUsbCapability, WdfUsbTargetDeviceQueryUsbCapability method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfusb.h
+req.include-header: Wdfusb.h
+req.target-type: Universal
+req.target-min-winverclnt: Windows Vista
+req.target-min-winversvr: 
+req.kmdf-ver: 1.11
+req.umdf-ver: 2.0
+req.ddi-compliance: DriverCreate
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+-	WUDFx02000.dll
+-	WUDFx02000.dll.dll
+apiname:
+-	WdfUsbTargetDeviceQueryUsbCapability
+product: Windows
+targetos: Windows
+req.typenames: WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
+req.product: Windows 10 or later.
 ---
 
 

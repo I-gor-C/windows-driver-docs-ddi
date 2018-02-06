@@ -1,41 +1,46 @@
 ---
-UID : NS:fltkernel._FLT_OPERATION_REGISTRATION
-title : "_FLT_OPERATION_REGISTRATION"
-author : windows-driver-content
-description : The FLT_OPERATION_REGISTRATION structure is used to register operation callback routines.
-old-location : ifsk\flt_operation_registration.htm
-old-project : ifsk
-ms.assetid : 5e3f9a29-660e-46f1-bf25-5bad8b91e32c
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : PFLT_OPERATION_REGISTRATION structure pointer [Installable File System Drivers], fltkernel/PFLT_OPERATION_REGISTRATION, fltkernel/FLT_OPERATION_REGISTRATION, ifsk.flt_operation_registration, FLT_OPERATION_REGISTRATION structure [Installable File System Drivers], FltSystemStructures_35ea4d15-ff73-4562-b150-d7c3e3d0823c.xml, *PFLT_OPERATION_REGISTRATION, PFLT_OPERATION_REGISTRATION, FLT_OPERATION_REGISTRATION, _FLT_OPERATION_REGISTRATION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FLT_OPERATION_REGISTRATION, *PFLT_OPERATION_REGISTRATION
+UID: NS:fltkernel._FLT_OPERATION_REGISTRATION
+title: "_FLT_OPERATION_REGISTRATION"
+author: windows-driver-content
+description: The FLT_OPERATION_REGISTRATION structure is used to register operation callback routines.
+old-location: ifsk\flt_operation_registration.htm
+old-project: ifsk
+ms.assetid: 5e3f9a29-660e-46f1-bf25-5bad8b91e32c
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: PFLT_OPERATION_REGISTRATION structure pointer [Installable File System Drivers], fltkernel/PFLT_OPERATION_REGISTRATION, fltkernel/FLT_OPERATION_REGISTRATION, ifsk.flt_operation_registration, FLT_OPERATION_REGISTRATION structure [Installable File System Drivers], FltSystemStructures_35ea4d15-ff73-4562-b150-d7c3e3d0823c.xml, *PFLT_OPERATION_REGISTRATION, PFLT_OPERATION_REGISTRATION, FLT_OPERATION_REGISTRATION, _FLT_OPERATION_REGISTRATION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	fltkernel.h
+apiname:
+-	FLT_OPERATION_REGISTRATION
+product: Windows
+targetos: Windows
+req.typenames: FLT_OPERATION_REGISTRATION, *PFLT_OPERATION_REGISTRATION
 ---
 
 # _FLT_OPERATION_REGISTRATION structure

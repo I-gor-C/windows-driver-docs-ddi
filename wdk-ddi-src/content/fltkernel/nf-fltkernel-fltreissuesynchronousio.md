@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltReissueSynchronousIo
-title : FltReissueSynchronousIo function
-author : windows-driver-content
-description : FltReissueSynchronousIo initiates a new synchronous I/O operation that uses the parameters from a previously synchronized I/O operation.
-old-location : ifsk\fltreissuesynchronousio.htm
-old-project : ifsk
-ms.assetid : 5feba526-17f3-4969-9199-93cb2a36e937
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltReissueSynchronousIo function [Installable File System Drivers], FltReissueSynchronousIo, fltkernel/FltReissueSynchronousIo, FltApiRef_p_to_z_c86041cf-780e-4754-b580-6665573bdb88.xml, ifsk.fltreissuesynchronousio
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : FltKernel.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Microsoft Windows 2000 Update Rollup 1 for SP4, Windows XP SP2, Windows Server 2003 SP1, and later operating systems. Not available in Windows 2000 SP4 and earlier operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltReissueSynchronousIo
+title: FltReissueSynchronousIo function
+author: windows-driver-content
+description: FltReissueSynchronousIo initiates a new synchronous I/O operation that uses the parameters from a previously synchronized I/O operation.
+old-location: ifsk\fltreissuesynchronousio.htm
+old-project: ifsk
+ms.assetid: 5feba526-17f3-4969-9199-93cb2a36e937
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltReissueSynchronousIo function [Installable File System Drivers], FltReissueSynchronousIo, fltkernel/FltReissueSynchronousIo, FltApiRef_p_to_z_c86041cf-780e-4754-b580-6665573bdb88.xml, ifsk.fltreissuesynchronousio
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: FltKernel.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Microsoft Windows 2000 Update Rollup 1 for SP4, Windows XP SP2, Windows Server 2003 SP1, and later operating systems. Not available in Windows 2000 SP4 and earlier operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltReissueSynchronousIo
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

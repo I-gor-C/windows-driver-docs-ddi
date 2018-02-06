@@ -1,41 +1,47 @@
 ---
-UID : NF:fwpsk.FwpsvSwitchEventsSubscribe0
-title : FwpsvSwitchEventsSubscribe0 function
-author : windows-driver-content
-description : The FwpsvSwitchEventsSubscribe0 function registers callback entry points for virtual switch layer events such as virtual port creation and deletion.Note  FwpsvSwitchEventsSubscribe0 is a specific version of FwpsvSwitchEventsSubscribe.
-old-location : netvista\fwpsvswitcheventssubscribe0.htm
-old-project : netvista
-ms.assetid : 479ff048-f57f-42ca-8787-f87ed055fdbf
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : FwpsvSwitchEventsSubscribe0 function [Network Drivers Starting with Windows Vista], FwpsvSwitchEventsSubscribe0, fwpsk/FwpsvSwitchEventsSubscribe0, netvista.fwpsvswitcheventssubscribe0
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fwpsk.h
-req.include-header : Fwpsk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Fwpkclnt.lib
-req.dll : 
-req.irql : "<= PASSIVE_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FWPS_VSWITCH_EVENT_TYPE
+UID: NF:fwpsk.FwpsvSwitchEventsSubscribe0
+title: FwpsvSwitchEventsSubscribe0 function
+author: windows-driver-content
+description: The FwpsvSwitchEventsSubscribe0 function registers callback entry points for virtual switch layer events such as virtual port creation and deletion.Note  FwpsvSwitchEventsSubscribe0 is a specific version of FwpsvSwitchEventsSubscribe.
+old-location: netvista\fwpsvswitcheventssubscribe0.htm
+old-project: netvista
+ms.assetid: 479ff048-f57f-42ca-8787-f87ed055fdbf
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: FwpsvSwitchEventsSubscribe0 function [Network Drivers Starting with Windows Vista], FwpsvSwitchEventsSubscribe0, fwpsk/FwpsvSwitchEventsSubscribe0, netvista.fwpsvswitcheventssubscribe0
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fwpsk.h
+req.include-header: Fwpsk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Fwpkclnt.lib
+req.dll: 
+req.irql: "<= PASSIVE_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	fwpkclnt.lib
+-	fwpkclnt.dll
+apiname:
+-	FwpsvSwitchEventsSubscribe0
+product: Windows
+targetos: Windows
+req.typenames: FWPS_VSWITCH_EVENT_TYPE
 ---
 
 

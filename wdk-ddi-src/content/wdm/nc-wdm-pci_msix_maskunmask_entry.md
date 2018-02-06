@@ -1,42 +1,47 @@
 ---
-UID : NC:wdm.PCI_MSIX_MASKUNMASK_ENTRY
-title : PCI_MSIX_MASKUNMASK_ENTRY
-author : windows-driver-content
-description : The MaskTableEntry routine masks an interrupt in the MSI-X hardware interrupt table.
-old-location : kernel\masktableentry.htm
-old-project : kernel
-ms.assetid : ADD9AA38-594D-413A-BE8B-BCC6B62EAA8E
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.masktableentry, MaskTableEntry routine [Kernel-Mode Driver Architecture], MaskTableEntry, PCI_MSIX_MASKUNMASK_ENTRY, PCI_MSIX_MASKUNMASK_ENTRY, wdm/MaskTableEntry, kernel.msixmasktableentry, drvr_interface_c4246cdd-8a44-423e-b145-fae6e1e96716.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista with Service Pack 1 (SP1), Windows Server 2008, and later versions of the Windows operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DIRQL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
-req.product : Windows 10 or later.
+UID: NC:wdm.PCI_MSIX_MASKUNMASK_ENTRY
+title: PCI_MSIX_MASKUNMASK_ENTRY
+author: windows-driver-content
+description: The MaskTableEntry routine masks an interrupt in the MSI-X hardware interrupt table.
+old-location: kernel\masktableentry.htm
+old-project: kernel
+ms.assetid: ADD9AA38-594D-413A-BE8B-BCC6B62EAA8E
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.masktableentry, MaskTableEntry routine [Kernel-Mode Driver Architecture], MaskTableEntry, PCI_MSIX_MASKUNMASK_ENTRY, PCI_MSIX_MASKUNMASK_ENTRY, wdm/MaskTableEntry, kernel.msixmasktableentry, drvr_interface_c4246cdd-8a44-423e-b145-fae6e1e96716.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista with Service Pack 1 (SP1), Windows Server 2008, and later versions of the Windows operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DIRQL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Wdm.h
+apiname:
+-	MaskTableEntry
+product: Windows
+targetos: Windows
+req.typenames: WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+req.product: Windows 10 or later.
 ---
 
 

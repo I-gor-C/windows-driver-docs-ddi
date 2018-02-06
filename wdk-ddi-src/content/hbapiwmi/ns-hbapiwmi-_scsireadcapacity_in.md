@@ -1,41 +1,46 @@
 ---
-UID : NS:hbapiwmi._ScsiReadCapacity_IN
-title : "_ScsiReadCapacity_IN"
-author : windows-driver-content
-description : The ScsiReadCapacity_IN structure is used to deliver input parameter data to the ScsiReadCapacity WMI method.
-old-location : storage\scsireadcapacity_in2.htm
-old-project : storage
-ms.assetid : 6d5aa608-9ee7-45a6-bd2f-13a5b8338437
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : ScsiReadCapacity_IN structure [Storage Devices], ScsiReadCapacity_IN, _ScsiReadCapacity_IN, storage.scsireadcapacity_in2, hbapiwmi/ScsiReadCapacity_IN, hbapiwmi/PScsiReadCapacity_IN, structs-Fibre_235165a1-b938-461a-9e4d-f555eae34119.xml, *PScsiReadCapacity_IN, PScsiReadCapacity_IN structure pointer [Storage Devices], PScsiReadCapacity_IN
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : hbapiwmi.h
-req.include-header : Hbapiwmi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PScsiReadCapacity_IN, ScsiReadCapacity_IN"
+UID: NS:hbapiwmi._ScsiReadCapacity_IN
+title: "_ScsiReadCapacity_IN"
+author: windows-driver-content
+description: The ScsiReadCapacity_IN structure is used to deliver input parameter data to the ScsiReadCapacity WMI method.
+old-location: storage\scsireadcapacity_in2.htm
+old-project: storage
+ms.assetid: 6d5aa608-9ee7-45a6-bd2f-13a5b8338437
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: ScsiReadCapacity_IN structure [Storage Devices], ScsiReadCapacity_IN, _ScsiReadCapacity_IN, storage.scsireadcapacity_in2, hbapiwmi/ScsiReadCapacity_IN, hbapiwmi/PScsiReadCapacity_IN, structs-Fibre_235165a1-b938-461a-9e4d-f555eae34119.xml, *PScsiReadCapacity_IN, PScsiReadCapacity_IN structure pointer [Storage Devices], PScsiReadCapacity_IN
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: hbapiwmi.h
+req.include-header: Hbapiwmi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Hbapiwmi.h
+apiname:
+-	ScsiReadCapacity_IN
+product: Windows
+targetos: Windows
+req.typenames: "*PScsiReadCapacity_IN, ScsiReadCapacity_IN"
 ---
 
 # _ScsiReadCapacity_IN structure

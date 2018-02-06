@@ -1,41 +1,46 @@
 ---
-UID : NC:dbgeng.PDEBUG_EXTENSION_CALL
-title : PDEBUG_EXTENSION_CALL
-author : windows-driver-content
-description : Callback functions of the type PDEBUG_EXTENSION_CALL are called by the engine to execute extension commands. You can give these functions any name you want, as long as it contains no uppercase letters.
-old-location : debugger\pdebug_extension_call.htm
-old-project : debugger
-ms.assetid : 325af2f4-9fb7-4fb3-9294-cd6d20d803c6
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : debugger.pdebug_extension_call, DebugExtensionCall, PDEBUG_EXTENSION_CALL function pointer [Windows Debugging], PDEBUG_EXTENSION_CALL, dbgeng/PDEBUG_EXTENSION_CALL, Extensions_Ref_fc621d91-0419-4ae3-8e53-71f4c522c318.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : dbgeng.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NC:dbgeng.PDEBUG_EXTENSION_CALL
+title: PDEBUG_EXTENSION_CALL
+author: windows-driver-content
+description: Callback functions of the type PDEBUG_EXTENSION_CALL are called by the engine to execute extension commands. You can give these functions any name you want, as long as it contains no uppercase letters.
+old-location: debugger\pdebug_extension_call.htm
+old-project: debugger
+ms.assetid: 325af2f4-9fb7-4fb3-9294-cd6d20d803c6
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: debugger.pdebug_extension_call, DebugExtensionCall, PDEBUG_EXTENSION_CALL function pointer [Windows Debugging], PDEBUG_EXTENSION_CALL, dbgeng/PDEBUG_EXTENSION_CALL, Extensions_Ref_fc621d91-0419-4ae3-8e53-71f4c522c318.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: dbgeng.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	dbgeng.h
+apiname:
+-	DebugExtensionCall
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

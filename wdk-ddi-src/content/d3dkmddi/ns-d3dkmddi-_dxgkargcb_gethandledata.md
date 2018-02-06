@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGKARGCB_GETHANDLEDATA
-title : "_DXGKARGCB_GETHANDLEDATA"
-author : windows-driver-content
-description : The DXGKARGCB_GETHANDLEDATA structure describes a handle to private data.
-old-location : display\dxgkargcb_gethandledata.htm
-old-project : display
-ms.assetid : 22a03f0b-71c3-4942-b5da-ca588e17d346
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DmStructs_6ae35474-ffde-4e60-8324-b6266cc54fd8.xml, display.dxgkargcb_gethandledata, DXGKARGCB_GETHANDLEDATA, DXGKARGCB_GETHANDLEDATA structure [Display Devices], _DXGKARGCB_GETHANDLEDATA, d3dkmddi/DXGKARGCB_GETHANDLEDATA
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGKARGCB_GETHANDLEDATA
+UID: NS:d3dkmddi._DXGKARGCB_GETHANDLEDATA
+title: "_DXGKARGCB_GETHANDLEDATA"
+author: windows-driver-content
+description: The DXGKARGCB_GETHANDLEDATA structure describes a handle to private data.
+old-location: display\dxgkargcb_gethandledata.htm
+old-project: display
+ms.assetid: 22a03f0b-71c3-4942-b5da-ca588e17d346
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DmStructs_6ae35474-ffde-4e60-8324-b6266cc54fd8.xml, display.dxgkargcb_gethandledata, DXGKARGCB_GETHANDLEDATA, DXGKARGCB_GETHANDLEDATA structure [Display Devices], _DXGKARGCB_GETHANDLEDATA, d3dkmddi/DXGKARGCB_GETHANDLEDATA
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DXGKARGCB_GETHANDLEDATA
+product: Windows
+targetos: Windows
+req.typenames: DXGKARGCB_GETHANDLEDATA
 ---
 
 # _DXGKARGCB_GETHANDLEDATA structure

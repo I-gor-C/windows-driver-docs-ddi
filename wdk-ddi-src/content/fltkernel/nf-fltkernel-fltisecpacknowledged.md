@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltIsEcpAcknowledged
-title : FltIsEcpAcknowledged function
-author : windows-driver-content
-description : The FltIsEcpAcknowledged routine is used to determine if a given extra create parameter context structure (ECP) has been marked as acknowledged.
-old-location : ifsk\fltisecpacknowledged.htm
-old-project : ifsk
-ms.assetid : ae4f4dfd-2a1d-4116-b56c-f7250697cf9e
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : fltkernel/FltIsEcpAcknowledged, FltIsEcpAcknowledged, FltApiRef_e_to_o_a5a70461-2108-4e8f-a01b-0fec773f6010.xml, ifsk.fltisecpacknowledged, FltIsEcpAcknowledged routine [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : This routine is available starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : FltMgr.sys
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltIsEcpAcknowledged
+title: FltIsEcpAcknowledged function
+author: windows-driver-content
+description: The FltIsEcpAcknowledged routine is used to determine if a given extra create parameter context structure (ECP) has been marked as acknowledged.
+old-location: ifsk\fltisecpacknowledged.htm
+old-project: ifsk
+ms.assetid: ae4f4dfd-2a1d-4116-b56c-f7250697cf9e
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: fltkernel/FltIsEcpAcknowledged, FltIsEcpAcknowledged, FltApiRef_e_to_o_a5a70461-2108-4e8f-a01b-0fec773f6010.xml, ifsk.fltisecpacknowledged, FltIsEcpAcknowledged routine [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: This routine is available starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: FltMgr.sys
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	FltMgr.sys
+apiname:
+-	FltIsEcpAcknowledged
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugControl4.GetBreakpointById2
-title : IDebugControl4::GetBreakpointById2 method
-author : windows-driver-content
-description : The GetBreakpointById2 method returns the breakpoint with the specified breakpoint ID.
-old-location : debugger\getbreakpointbyid2.htm
-old-project : debugger
-ms.assetid : 110eaa8a-d564-4900-8a08-d081572a5f43
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugControl4::GetBreakpointById2, debugger.getbreakpointbyid2, IDebugControl4 interface [Windows Debugging], GetBreakpointById2 method, GetBreakpointById2 method [Windows Debugging], dbgeng/IDebugControl4::GetBreakpointById2, GetBreakpointById2, IDebugControl4, GetBreakpointById2 method [Windows Debugging], IDebugControl4 interface
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl4.GetBreakpointById2
+title: IDebugControl4::GetBreakpointById2 method
+author: windows-driver-content
+description: The GetBreakpointById2 method returns the breakpoint with the specified breakpoint ID.
+old-location: debugger\getbreakpointbyid2.htm
+old-project: debugger
+ms.assetid: 110eaa8a-d564-4900-8a08-d081572a5f43
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugControl4::GetBreakpointById2, debugger.getbreakpointbyid2, IDebugControl4 interface [Windows Debugging], GetBreakpointById2 method, GetBreakpointById2 method [Windows Debugging], dbgeng/IDebugControl4::GetBreakpointById2, GetBreakpointById2, IDebugControl4, GetBreakpointById2 method [Windows Debugging], IDebugControl4 interface
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl4.GetBreakpointById2
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

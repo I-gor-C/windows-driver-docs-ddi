@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dhal._D3DHAL_DP2DRAWINDEXEDPRIMITIVE
-title : "_D3DHAL_DP2DRAWINDEXEDPRIMITIVE"
-author : windows-driver-content
-description : DirectX 8.0 and later versions only.
-old-location : display\d3dhal_dp2drawindexedprimitive.htm
-old-project : display
-ms.assetid : b28290c7-2c02-4422-af7b-4188d6f54b54
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3dstrct_61b06507-bfbe-4733-ac52-03d27bac0a07.xml, *LPD3DHAL_DP2DRAWINDEXEDPRIMITIVE, display.d3dhal_dp2drawindexedprimitive, LPD3DHAL_DP2DRAWINDEXEDPRIMITIVE, d3dhal/LPD3DHAL_DP2DRAWINDEXEDPRIMITIVE, D3DHAL_DP2DRAWINDEXEDPRIMITIVE structure [Display Devices], D3DHAL_DP2DRAWINDEXEDPRIMITIVE, _D3DHAL_DP2DRAWINDEXEDPRIMITIVE, LPD3DHAL_DP2DRAWINDEXEDPRIMITIVE structure pointer [Display Devices], d3dhal/D3DHAL_DP2DRAWINDEXEDPRIMITIVE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dhal.h
-req.include-header : D3dhal.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DHAL_DP2DRAWINDEXEDPRIMITIVE
+UID: NS:d3dhal._D3DHAL_DP2DRAWINDEXEDPRIMITIVE
+title: "_D3DHAL_DP2DRAWINDEXEDPRIMITIVE"
+author: windows-driver-content
+description: DirectX 8.0 and later versions only.
+old-location: display\d3dhal_dp2drawindexedprimitive.htm
+old-project: display
+ms.assetid: b28290c7-2c02-4422-af7b-4188d6f54b54
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3dstrct_61b06507-bfbe-4733-ac52-03d27bac0a07.xml, *LPD3DHAL_DP2DRAWINDEXEDPRIMITIVE, display.d3dhal_dp2drawindexedprimitive, LPD3DHAL_DP2DRAWINDEXEDPRIMITIVE, d3dhal/LPD3DHAL_DP2DRAWINDEXEDPRIMITIVE, D3DHAL_DP2DRAWINDEXEDPRIMITIVE structure [Display Devices], D3DHAL_DP2DRAWINDEXEDPRIMITIVE, _D3DHAL_DP2DRAWINDEXEDPRIMITIVE, LPD3DHAL_DP2DRAWINDEXEDPRIMITIVE structure pointer [Display Devices], d3dhal/D3DHAL_DP2DRAWINDEXEDPRIMITIVE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dhal.h
+req.include-header: D3dhal.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dhal.h
+apiname:
+-	D3DHAL_DP2DRAWINDEXEDPRIMITIVE
+product: Windows
+targetos: Windows
+req.typenames: D3DHAL_DP2DRAWINDEXEDPRIMITIVE
 ---
 
 # _D3DHAL_DP2DRAWINDEXEDPRIMITIVE structure

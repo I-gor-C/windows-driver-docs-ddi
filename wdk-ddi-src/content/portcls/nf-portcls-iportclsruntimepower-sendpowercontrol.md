@@ -1,41 +1,46 @@
 ---
-UID : NF:portcls.IPortClsRuntimePower.SendPowerControl
-title : IPortClsRuntimePower::SendPowerControl method
-author : windows-driver-content
-description : The port class driver (PortCls) uses the SendPowerControl method to send power control codes to the audio adapter.
-old-location : audio\iportclsruntimepower_sendpowercontrol.htm
-old-project : audio
-ms.assetid : 04B8EE71-59F9-4DE4-AD36-846632D3EBB4
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : IPortClsRuntimePower interface [Audio Devices], SendPowerControl method, IPortClsRuntimePower, SendPowerControl, SendPowerControl method [Audio Devices], IPortClsRuntimePower interface, IPortClsRuntimePower::SendPowerControl, portcls/IPortClsRuntimePower::SendPowerControl, SendPowerControl method [Audio Devices], audio.iportclsruntimepower_sendpowercontrol
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : portcls.h
-req.include-header : 
-req.target-type : Universal
-req.target-min-winverclnt : Windows 7
-req.target-min-winversvr : Windows Server 2003
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : portcls.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.IPortClsRuntimePower.SendPowerControl
+title: IPortClsRuntimePower::SendPowerControl method
+author: windows-driver-content
+description: The port class driver (PortCls) uses the SendPowerControl method to send power control codes to the audio adapter.
+old-location: audio\iportclsruntimepower_sendpowercontrol.htm
+old-project: audio
+ms.assetid: 04B8EE71-59F9-4DE4-AD36-846632D3EBB4
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: IPortClsRuntimePower interface [Audio Devices], SendPowerControl method, IPortClsRuntimePower, SendPowerControl, SendPowerControl method [Audio Devices], IPortClsRuntimePower interface, IPortClsRuntimePower::SendPowerControl, portcls/IPortClsRuntimePower::SendPowerControl, SendPowerControl method [Audio Devices], audio.iportclsruntimepower_sendpowercontrol
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: portcls.h
+req.include-header: 
+req.target-type: Universal
+req.target-min-winverclnt: Windows 7
+req.target-min-winversvr: Windows Server 2003
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: portcls.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Portcls.h
+apiname:
+-	IPortClsRuntimePower.SendPowerControl
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

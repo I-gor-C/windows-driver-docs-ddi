@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGK_PRESENTMULTIPLANEOVERLAYINFO
-title : "_DXGK_PRESENTMULTIPLANEOVERLAYINFO"
-author : windows-driver-content
-description : Specifies info on a VidPN input and an overlay plane to display.
-old-location : display\dxgk_presentmultiplaneoverlayinfo.htm
-old-project : display
-ms.assetid : b9cc78f3-b8b5-4a54-87b2-321b75ed9a21
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : "_DXGK_PRESENTMULTIPLANEOVERLAYINFO, DXGK_PRESENTMULTIPLANEOVERLAYINFO structure [Display Devices], DXGK_PRESENTMULTIPLANEOVERLAYINFO, display.dxgk_presentmultiplaneoverlayinfo, d3dkmddi/DXGK_PRESENTMULTIPLANEOVERLAYINFO"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8.1
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PRESENTMULTIPLANEOVERLAYINFO
+UID: NS:d3dkmddi._DXGK_PRESENTMULTIPLANEOVERLAYINFO
+title: "_DXGK_PRESENTMULTIPLANEOVERLAYINFO"
+author: windows-driver-content
+description: Specifies info on a VidPN input and an overlay plane to display.
+old-location: display\dxgk_presentmultiplaneoverlayinfo.htm
+old-project: display
+ms.assetid: b9cc78f3-b8b5-4a54-87b2-321b75ed9a21
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: "_DXGK_PRESENTMULTIPLANEOVERLAYINFO, DXGK_PRESENTMULTIPLANEOVERLAYINFO structure [Display Devices], DXGK_PRESENTMULTIPLANEOVERLAYINFO, display.dxgk_presentmultiplaneoverlayinfo, d3dkmddi/DXGK_PRESENTMULTIPLANEOVERLAYINFO"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8.1
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	D3dkmddi.h
+apiname:
+-	DXGK_PRESENTMULTIPLANEOVERLAYINFO
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PRESENTMULTIPLANEOVERLAYINFO
 ---
 
 # _DXGK_PRESENTMULTIPLANEOVERLAYINFO structure

@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.tagKS_RGBQUAD
-title : tagKS_RGBQUAD
-author : windows-driver-content
-description : The KS_RGBQUAD structure describes a color consisting of relative intensities of red, green, and blue, ranging from 0 to 255 (0x0 to 0xff).
-old-location : stream\ks_rgbquad.htm
-old-project : stream
-ms.assetid : 49231293-286b-486d-b8f9-b44bdb845e7b
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : tagKS_RGBQUAD, PKS_RGBQUAD, ksmedia/PKS_RGBQUAD, PKS_RGBQUAD structure pointer [Streaming Media Devices], vidcapstruct_c081668e-9e81-4c30-89d1-b4c26dc9a300.xml, KS_RGBQUAD, *PKS_RGBQUAD, stream.ks_rgbquad, ksmedia/KS_RGBQUAD, KS_RGBQUAD structure [Streaming Media Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKS_RGBQUAD, KS_RGBQUAD"
+UID: NS:ksmedia.tagKS_RGBQUAD
+title: tagKS_RGBQUAD
+author: windows-driver-content
+description: The KS_RGBQUAD structure describes a color consisting of relative intensities of red, green, and blue, ranging from 0 to 255 (0x0 to 0xff).
+old-location: stream\ks_rgbquad.htm
+old-project: stream
+ms.assetid: 49231293-286b-486d-b8f9-b44bdb845e7b
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: tagKS_RGBQUAD, PKS_RGBQUAD, ksmedia/PKS_RGBQUAD, PKS_RGBQUAD structure pointer [Streaming Media Devices], vidcapstruct_c081668e-9e81-4c30-89d1-b4c26dc9a300.xml, KS_RGBQUAD, *PKS_RGBQUAD, stream.ks_rgbquad, ksmedia/KS_RGBQUAD, KS_RGBQUAD structure [Streaming Media Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	KS_RGBQUAD
+product: Windows
+targetos: Windows
+req.typenames: "*PKS_RGBQUAD, KS_RGBQUAD"
 ---
 
 # tagKS_RGBQUAD structure

@@ -1,41 +1,46 @@
 ---
-UID : NC:netdispumdddi.PFN_REPORT_SESSION_STATUS
-title : PFN_REPORT_SESSION_STATUS
-author : windows-driver-content
-description : Called by the user-mode display driver to report the status of the current Miracast connected session.The data type of this function is PFN_REPORT_SESSION_STATUS.
-old-location : display\reportsessionstatus.htm
-old-project : display
-ms.assetid : a3e44e55-5c6a-4a79-8caa-3a3b9db6b456
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.reportsessionstatus, PFN_REPORT_SESSION_STATUS, ReportSessionStatus callback function [Display Devices], ReportSessionStatus, PFN_REPORT_SESSION_STATUS, PFN_REPORT_SESSION_STATUS, netdispumdddi/ReportSessionStatus
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : netdispumdddi.h
-req.include-header : Netdispumdddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8.1
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDK_SRQ_DISPATCH
+UID: NC:netdispumdddi.PFN_REPORT_SESSION_STATUS
+title: PFN_REPORT_SESSION_STATUS
+author: windows-driver-content
+description: Called by the user-mode display driver to report the status of the current Miracast connected session.The data type of this function is PFN_REPORT_SESSION_STATUS.
+old-location: display\reportsessionstatus.htm
+old-project: display
+ms.assetid: a3e44e55-5c6a-4a79-8caa-3a3b9db6b456
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.reportsessionstatus, PFN_REPORT_SESSION_STATUS, ReportSessionStatus callback function [Display Devices], ReportSessionStatus, PFN_REPORT_SESSION_STATUS, PFN_REPORT_SESSION_STATUS, netdispumdddi/ReportSessionStatus
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: netdispumdddi.h
+req.include-header: Netdispumdddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8.1
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Netdispumdddi.h
+apiname:
+-	ReportSessionStatus
+product: Windows
+targetos: Windows
+req.typenames: NDK_SRQ_DISPATCH
 ---
 
 

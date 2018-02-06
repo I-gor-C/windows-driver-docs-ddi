@@ -1,42 +1,47 @@
 ---
-UID : NN:printerextension.IPrintSchemaCapabilities2
-title : IPrintSchemaCapabilities2
-author : windows-driver-content
-description : The IPrintSchemaCapabilities2 interface represents an extension to the IPrintSchemaCapabilities object, which provides wrapper methods over a print capabilities document.
-old-location : print\iprintschemacapabilities2.htm
-old-project : print
-ms.assetid : 1C361DC6-6517-4845-BEA6-09D2BB3B3232
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : print.iprintschemacapabilities2, IPrintSchemaCapabilities2 interface [Print Devices], IPrintSchemaCapabilities2 interface [Print Devices], described, IPrintSchemaCapabilities2, printerextension/IPrintSchemaCapabilities2
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : printerextension.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8.1
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : printerextension.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PrintSchemaSelectionType
-req.product : Windows 10 or later.
+UID: NN:printerextension.IPrintSchemaCapabilities2
+title: IPrintSchemaCapabilities2
+author: windows-driver-content
+description: The IPrintSchemaCapabilities2 interface represents an extension to the IPrintSchemaCapabilities object, which provides wrapper methods over a print capabilities document.
+old-location: print\iprintschemacapabilities2.htm
+old-project: print
+ms.assetid: 1C361DC6-6517-4845-BEA6-09D2BB3B3232
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: print.iprintschemacapabilities2, IPrintSchemaCapabilities2 interface [Print Devices], IPrintSchemaCapabilities2 interface [Print Devices], described, IPrintSchemaCapabilities2, printerextension/IPrintSchemaCapabilities2
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: printerextension.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8.1
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: printerextension.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Printerextension.h
+apiname:
+-	IPrintSchemaCapabilities2
+product: Windows
+targetos: Windows
+req.typenames: PrintSchemaSelectionType
+req.product: Windows 10 or later.
 ---
 
 # IPrintSchemaCapabilities2 interface

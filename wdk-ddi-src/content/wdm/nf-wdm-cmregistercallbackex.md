@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.CmRegisterCallbackEx
-title : CmRegisterCallbackEx function
-author : windows-driver-content
-description : The CmRegisterCallbackEx routine registers a RegistryCallback routine.
-old-location : kernel\cmregistercallbackex.htm
-old-project : kernel
-ms.assetid : 7ec7d9a4-3c6f-4b67-abbb-1e0dcbf6fb90
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : CmRegisterCallbackEx routine [Kernel-Mode Driver Architecture], kernel.cmregistercallbackex, CmRegisterCallbackEx, wdm/CmRegisterCallbackEx, ConfigMgrRef_60ae8a2c-45c7-4b5e-ae19-916402b47903.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : IrqlExApcLte2, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<=APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.CmRegisterCallbackEx
+title: CmRegisterCallbackEx function
+author: windows-driver-content
+description: The CmRegisterCallbackEx routine registers a RegistryCallback routine.
+old-location: kernel\cmregistercallbackex.htm
+old-project: kernel
+ms.assetid: 7ec7d9a4-3c6f-4b67-abbb-1e0dcbf6fb90
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: CmRegisterCallbackEx routine [Kernel-Mode Driver Architecture], kernel.cmregistercallbackex, CmRegisterCallbackEx, wdm/CmRegisterCallbackEx, ConfigMgrRef_60ae8a2c-45c7-4b5e-ae19-916402b47903.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: IrqlExApcLte2, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<=APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	CmRegisterCallbackEx
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGKARG_CREATEOVERLAY
-title : "_DXGKARG_CREATEOVERLAY"
-author : windows-driver-content
-description : The DXGKARG_CREATEOVERLAY structure describes parameters to create an overlay.
-old-location : display\dxgkarg_createoverlay.htm
-old-project : display
-ms.assetid : f95ef083-2b2f-4e13-ad60-6bc7da0fec33
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : "_DXGKARG_CREATEOVERLAY, DXGKARG_CREATEOVERLAY structure [Display Devices], *INOUT_PDXGKARG_CREATEOVERLAY, DXGKARG_CREATEOVERLAY, d3dkmddi/DXGKARG_CREATEOVERLAY, display.dxgkarg_createoverlay, DmStructs_935ab2cb-070a-4700-8ace-62c4c44c42b5.xml"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGKARG_CREATEOVERLAY
+UID: NS:d3dkmddi._DXGKARG_CREATEOVERLAY
+title: "_DXGKARG_CREATEOVERLAY"
+author: windows-driver-content
+description: The DXGKARG_CREATEOVERLAY structure describes parameters to create an overlay.
+old-location: display\dxgkarg_createoverlay.htm
+old-project: display
+ms.assetid: f95ef083-2b2f-4e13-ad60-6bc7da0fec33
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: "_DXGKARG_CREATEOVERLAY, DXGKARG_CREATEOVERLAY structure [Display Devices], *INOUT_PDXGKARG_CREATEOVERLAY, DXGKARG_CREATEOVERLAY, d3dkmddi/DXGKARG_CREATEOVERLAY, display.dxgkarg_createoverlay, DmStructs_935ab2cb-070a-4700-8ace-62c4c44c42b5.xml"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DXGKARG_CREATEOVERLAY
+product: Windows
+targetos: Windows
+req.typenames: DXGKARG_CREATEOVERLAY
 ---
 
 # _DXGKARG_CREATEOVERLAY structure

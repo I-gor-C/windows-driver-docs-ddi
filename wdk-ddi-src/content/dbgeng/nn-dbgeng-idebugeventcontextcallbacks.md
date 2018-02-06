@@ -1,41 +1,46 @@
 ---
-UID : NN:dbgeng.IDebugEventContextCallbacks
-title : IDebugEventContextCallbacks
-author : windows-driver-content
-description : This interface supports event context callbacks and replaces the use of the IDebugClient::SetEventCallbacks method.
-old-location : debugger\idebugeventcontextcallbacks.htm
-old-project : debugger
-ms.assetid : F4FAA5C9-B7D9-43B6-8B1D-CA790522900C
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : debugger.idebugeventcontextcallbacks, IDebugEventContextCallbacks interface [Windows Debugging], IDebugEventContextCallbacks interface [Windows Debugging], described, IDebugEventContextCallbacks, dbgeng/IDebugEventContextCallbacks
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NN:dbgeng.IDebugEventContextCallbacks
+title: IDebugEventContextCallbacks
+author: windows-driver-content
+description: This interface supports event context callbacks and replaces the use of the IDebugClient::SetEventCallbacks method.
+old-location: debugger\idebugeventcontextcallbacks.htm
+old-project: debugger
+ms.assetid: F4FAA5C9-B7D9-43B6-8B1D-CA790522900C
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: debugger.idebugeventcontextcallbacks, IDebugEventContextCallbacks interface [Windows Debugging], IDebugEventContextCallbacks interface [Windows Debugging], described, IDebugEventContextCallbacks, dbgeng/IDebugEventContextCallbacks
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugEventContextCallbacks
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 # IDebugEventContextCallbacks interface

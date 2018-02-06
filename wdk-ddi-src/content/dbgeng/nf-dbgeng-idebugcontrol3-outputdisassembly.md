@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugControl3.OutputDisassembly
-title : IDebugControl3::OutputDisassembly method
-author : windows-driver-content
-description : The OutputDisassembly method disassembles a processor instruction and sends the disassembly to the output callbacks.
-old-location : debugger\outputdisassembly.htm
-old-project : debugger
-ms.assetid : 2a9944a4-3885-4e83-b20e-040cffcbf85b
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugControl interface [Windows Debugging], OutputDisassembly method, dbgeng/IDebugControl3::OutputDisassembly, IDebugControl::OutputDisassembly, OutputDisassembly method [Windows Debugging], IDebugControl2::OutputDisassembly, dbgeng/IDebugControl::OutputDisassembly, OutputDisassembly method [Windows Debugging], IDebugControl3 interface, IDebugControl3::OutputDisassembly, IDebugControl3, dbgeng/IDebugControl2::OutputDisassembly, OutputDisassembly method [Windows Debugging], IDebugControl interface, IDebugControl_9f2641b6-ca40-4f1f-85e6-911bb0ab82f8.xml, OutputDisassembly method [Windows Debugging], IDebugControl2 interface, debugger.outputdisassembly, OutputDisassembly, IDebugControl2 interface [Windows Debugging], OutputDisassembly method, IDebugControl3 interface [Windows Debugging], OutputDisassembly method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl3.OutputDisassembly
+title: IDebugControl3::OutputDisassembly method
+author: windows-driver-content
+description: The OutputDisassembly method disassembles a processor instruction and sends the disassembly to the output callbacks.
+old-location: debugger\outputdisassembly.htm
+old-project: debugger
+ms.assetid: 2a9944a4-3885-4e83-b20e-040cffcbf85b
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugControl interface [Windows Debugging], OutputDisassembly method, dbgeng/IDebugControl3::OutputDisassembly, IDebugControl::OutputDisassembly, OutputDisassembly method [Windows Debugging], IDebugControl2::OutputDisassembly, dbgeng/IDebugControl::OutputDisassembly, OutputDisassembly method [Windows Debugging], IDebugControl3 interface, IDebugControl3::OutputDisassembly, IDebugControl3, dbgeng/IDebugControl2::OutputDisassembly, OutputDisassembly method [Windows Debugging], IDebugControl interface, IDebugControl_9f2641b6-ca40-4f1f-85e6-911bb0ab82f8.xml, OutputDisassembly method [Windows Debugging], IDebugControl2 interface, debugger.outputdisassembly, OutputDisassembly, IDebugControl2 interface [Windows Debugging], OutputDisassembly method, IDebugControl3 interface [Windows Debugging], OutputDisassembly method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl.OutputDisassembly
+-	IDebugControl2.OutputDisassembly
+-	IDebugControl3.OutputDisassembly
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

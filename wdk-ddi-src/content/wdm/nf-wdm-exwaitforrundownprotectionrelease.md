@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.ExWaitForRundownProtectionRelease
-title : ExWaitForRundownProtectionRelease function
-author : windows-driver-content
-description : The ExWaitForRundownProtectionRelease routine waits until all drivers that have already been granted run-down protection complete their accesses of the shared object.
-old-location : kernel\exwaitforrundownprotectionrelease.htm
-old-project : kernel
-ms.assetid : 96786C19-29C4-4030-9429-0B3CB7F3DF11
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/ExWaitForRundownProtectionRelease, kernel.exwaitforrundownprotectionrelease, ExWaitForRundownProtectionRelease routine [Kernel-Mode Driver Architecture], ExWaitForRundownProtectionRelease
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows XP.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : HwStorPortProhibitedDDIs, SpNoWait
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ExWaitForRundownProtectionRelease
+title: ExWaitForRundownProtectionRelease function
+author: windows-driver-content
+description: The ExWaitForRundownProtectionRelease routine waits until all drivers that have already been granted run-down protection complete their accesses of the shared object.
+old-location: kernel\exwaitforrundownprotectionrelease.htm
+old-project: kernel
+ms.assetid: 96786C19-29C4-4030-9429-0B3CB7F3DF11
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/ExWaitForRundownProtectionRelease, kernel.exwaitforrundownprotectionrelease, ExWaitForRundownProtectionRelease routine [Kernel-Mode Driver Architecture], ExWaitForRundownProtectionRelease
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows XP.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: HwStorPortProhibitedDDIs, SpNoWait
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ExWaitForRundownProtectionRelease
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

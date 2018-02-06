@@ -1,42 +1,47 @@
 ---
-UID : NE:wwan._WWAN_DEVICE_TYPE
-title : "_WWAN_DEVICE_TYPE"
-author : windows-driver-content
-description : The WWAN_DEVICE_TYPE enumeration lists the different device types that describe the MB device.
-old-location : netvista\wwan_device_type.htm
-old-project : netvista
-ms.assetid : ad99b2b0-d62a-4e3e-a368-b9109f0fefb4
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : wwan/WwanDeviceTypeUnknown, WwanDeviceTypeUnknown, WwanDeviceTypeRemovable, wwan/WwanDeviceTypeRemote, _WWAN_DEVICE_TYPE, PWWAN_DEVICE_TYPE enumeration pointer [Network Drivers Starting with Windows Vista], WWAN_DEVICE_TYPE, wwan/WwanDeviceTypeRemovable, WwanDeviceTypeRemote, wwan/WWAN_DEVICE_TYPE, wwan/WwanDeviceTypeEmbedded, WwanRef_7a7adc94-ea69-4327-b9b6-467a1c784979.xml, wwan/WwanDeviceTypeMax, *PWWAN_DEVICE_TYPE, WWAN_DEVICE_TYPE enumeration [Network Drivers Starting with Windows Vista], netvista.wwan_device_type, wwan/PWWAN_DEVICE_TYPE, WwanDeviceTypeMax, PWWAN_DEVICE_TYPE, WwanDeviceTypeEmbedded
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : wwan.h
-req.include-header : Wwan.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWWAN_DEVICE_TYPE, WWAN_DEVICE_TYPE"
-req.product : Windows 10 or later.
+UID: NE:wwan._WWAN_DEVICE_TYPE
+title: "_WWAN_DEVICE_TYPE"
+author: windows-driver-content
+description: The WWAN_DEVICE_TYPE enumeration lists the different device types that describe the MB device.
+old-location: netvista\wwan_device_type.htm
+old-project: netvista
+ms.assetid: ad99b2b0-d62a-4e3e-a368-b9109f0fefb4
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: wwan/WwanDeviceTypeUnknown, WwanDeviceTypeUnknown, WwanDeviceTypeRemovable, wwan/WwanDeviceTypeRemote, _WWAN_DEVICE_TYPE, PWWAN_DEVICE_TYPE enumeration pointer [Network Drivers Starting with Windows Vista], WWAN_DEVICE_TYPE, wwan/WwanDeviceTypeRemovable, WwanDeviceTypeRemote, wwan/WWAN_DEVICE_TYPE, wwan/WwanDeviceTypeEmbedded, WwanRef_7a7adc94-ea69-4327-b9b6-467a1c784979.xml, wwan/WwanDeviceTypeMax, *PWWAN_DEVICE_TYPE, WWAN_DEVICE_TYPE enumeration [Network Drivers Starting with Windows Vista], netvista.wwan_device_type, wwan/PWWAN_DEVICE_TYPE, WwanDeviceTypeMax, PWWAN_DEVICE_TYPE, WwanDeviceTypeEmbedded
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: wwan.h
+req.include-header: Wwan.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wwan.h
+apiname:
+-	WWAN_DEVICE_TYPE
+product: Windows
+targetos: Windows
+req.typenames: "*PWWAN_DEVICE_TYPE, WWAN_DEVICE_TYPE"
+req.product: Windows 10 or later.
 ---
 
 # _WWAN_DEVICE_TYPE Enumeration
@@ -56,31 +61,31 @@ typedef enum _WWAN_DEVICE_TYPE {
 ## Constants
 
 <table>
-
-<tr>
-<td>WwanDeviceTypeEmbedded</td>
-<td>The device type is embedded in the system.</td>
-</tr>
-
-<tr>
-<td>WwanDeviceTypeMax</td>
-<td>The total number of supported device types.</td>
-</tr>
-
-<tr>
-<td>WwanDeviceTypeRemote</td>
-<td>The device type is remote. For example, a tethered cellular phone modem.</td>
-</tr>
-
-<tr>
-<td>WwanDeviceTypeRemovable</td>
-<td>The device type is removable.</td>
-</tr>
-
-<tr>
-<td>WwanDeviceTypeUnknown</td>
-<td>The device type is unknown.</td>
-</tr>
+            
+                <tr>
+                    <td>WwanDeviceTypeEmbedded</td>
+                    <td>The device type is embedded in the system.</td>
+                </tr>
+            
+                <tr>
+                    <td>WwanDeviceTypeMax</td>
+                    <td>The total number of supported device types.</td>
+                </tr>
+            
+                <tr>
+                    <td>WwanDeviceTypeRemote</td>
+                    <td>The device type is remote. For example, a tethered cellular phone modem.</td>
+                </tr>
+            
+                <tr>
+                    <td>WwanDeviceTypeRemovable</td>
+                    <td>The device type is removable.</td>
+                </tr>
+            
+                <tr>
+                    <td>WwanDeviceTypeUnknown</td>
+                    <td>The device type is unknown.</td>
+                </tr>
 </table>
 
 
@@ -90,9 +95,9 @@ typedef enum _WWAN_DEVICE_TYPE {
 | **Windows version** | Available in Windows 7 and later versions of Windows. Available in Windows 7 and later versions of Windows. |
 | **Header** | wwan.h (include Wwan.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\wwan\ns-wwan-_wwan_device_caps.md">WWAN_DEVICE_CAPS</a>
+        <a href="..\wwan\ns-wwan-_wwan_device_caps.md">WWAN_DEVICE_CAPS</a>
 
  
 

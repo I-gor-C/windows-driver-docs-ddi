@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGK_MONITORSOURCEMODESET_INTERFACE
-title : "_DXGK_MONITORSOURCEMODESET_INTERFACE"
-author : windows-driver-content
-description : The DXGK_MONITORSOURCEMODESET_INTERFACE structure contains pointers to functions that belong to the Monitor Source Mode Set interface, which is implemented by the video present network (VidPN) manager.
-old-location : display\dxgk_monitorsourcemodeset_interface.htm
-old-project : display
-ms.assetid : ceab36a0-3be1-41d8-82c0-8393f93e5f42
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DXGK_MONITORSOURCEMODESET_INTERFACE structure [Display Devices], d3dkmddi/DXGK_MONITORSOURCEMODESET_INTERFACE, DmStructs_c4c7e928-09db-424f-8ac7-7efffc71d06e.xml, display.dxgk_monitorsourcemodeset_interface, DXGK_MONITORSOURCEMODESET_INTERFACE, _DXGK_MONITORSOURCEMODESET_INTERFACE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_MONITORSOURCEMODESET_INTERFACE
+UID: NS:d3dkmddi._DXGK_MONITORSOURCEMODESET_INTERFACE
+title: "_DXGK_MONITORSOURCEMODESET_INTERFACE"
+author: windows-driver-content
+description: The DXGK_MONITORSOURCEMODESET_INTERFACE structure contains pointers to functions that belong to the Monitor Source Mode Set interface, which is implemented by the video present network (VidPN) manager.
+old-location: display\dxgk_monitorsourcemodeset_interface.htm
+old-project: display
+ms.assetid: ceab36a0-3be1-41d8-82c0-8393f93e5f42
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DXGK_MONITORSOURCEMODESET_INTERFACE structure [Display Devices], d3dkmddi/DXGK_MONITORSOURCEMODESET_INTERFACE, DmStructs_c4c7e928-09db-424f-8ac7-7efffc71d06e.xml, display.dxgk_monitorsourcemodeset_interface, DXGK_MONITORSOURCEMODESET_INTERFACE, _DXGK_MONITORSOURCEMODESET_INTERFACE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DXGK_MONITORSOURCEMODESET_INTERFACE
+product: Windows
+targetos: Windows
+req.typenames: DXGK_MONITORSOURCEMODESET_INTERFACE
 ---
 
 # _DXGK_MONITORSOURCEMODESET_INTERFACE structure

@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3D11_1DDI_ENCRYPTIONBLT
-title : PFND3D11_1DDI_ENCRYPTIONBLT
-author : windows-driver-content
-description : Reads encrypted data from a protected surface.
-old-location : display\encryptionblt1.htm
-old-project : display
-ms.assetid : ea6f1b8c-d65a-4d6d-a7ae-998374bf5bfb
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.encryptionblt1, EncryptionBlt callback function [Display Devices], EncryptionBlt, PFND3D11_1DDI_ENCRYPTIONBLT, PFND3D11_1DDI_ENCRYPTIONBLT, d3d10umddi/EncryptionBlt, display.pfnencryptionblt1
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3D11_1DDI_ENCRYPTIONBLT
+title: PFND3D11_1DDI_ENCRYPTIONBLT
+author: windows-driver-content
+description: Reads encrypted data from a protected surface.
+old-location: display\encryptionblt1.htm
+old-project: display
+ms.assetid: ea6f1b8c-d65a-4d6d-a7ae-998374bf5bfb
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.encryptionblt1, EncryptionBlt callback function [Display Devices], EncryptionBlt, PFND3D11_1DDI_ENCRYPTIONBLT, PFND3D11_1DDI_ENCRYPTIONBLT, d3d10umddi/EncryptionBlt, display.pfnencryptionblt1
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	D3d10umddi.h
+apiname:
+-	EncryptionBlt
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

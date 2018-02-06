@@ -1,42 +1,47 @@
 ---
-UID : NS:rilapitypes.RILUICCLOCKSTATE
-title : RILUICCLOCKSTATE
-author : windows-driver-content
-description : This structure represents a RILUICCLOCKSTATE.
-old-location : netvista\riluicclockstate.htm
-old-project : netvista
-ms.assetid : bc27f7b8-8de0-4eae-a22b-0e5c76378b1a
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : "*LPRILUICCLOCKSTATE, RILUICCLOCKSTATE structure [Network Drivers Starting with Windows Vista], rilapitypes/RILUICCLOCKSTATE, RILUICCLOCKSTATE, netvista.riluicclockstate"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : rilapitypes.h
-req.include-header : Rilapitypes.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*LPRILUICCLOCKSTATE, RILUICCLOCKSTATE"
-req.product : Windows 10 or later.
+UID: NS:rilapitypes.RILUICCLOCKSTATE
+title: RILUICCLOCKSTATE
+author: windows-driver-content
+description: This structure represents a RILUICCLOCKSTATE.
+old-location: netvista\riluicclockstate.htm
+old-project: netvista
+ms.assetid: bc27f7b8-8de0-4eae-a22b-0e5c76378b1a
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: "*LPRILUICCLOCKSTATE, RILUICCLOCKSTATE structure [Network Drivers Starting with Windows Vista], rilapitypes/RILUICCLOCKSTATE, RILUICCLOCKSTATE, netvista.riluicclockstate"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: rilapitypes.h
+req.include-header: Rilapitypes.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	rilapitypes.h
+apiname:
+-	RILUICCLOCKSTATE
+product: Windows
+targetos: Windows
+req.typenames: "*LPRILUICCLOCKSTATE, RILUICCLOCKSTATE"
+req.product: Windows 10 or later.
 ---
 
 # RILUICCLOCKSTATE structure

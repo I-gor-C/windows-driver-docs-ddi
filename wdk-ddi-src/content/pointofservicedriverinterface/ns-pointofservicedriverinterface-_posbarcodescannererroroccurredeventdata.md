@@ -1,41 +1,46 @@
 ---
-UID : NS:pointofservicedriverinterface._PosBarcodeScannerErrorOccurredEventData
-title : "_PosBarcodeScannerErrorOccurredEventData"
-author : windows-driver-content
-description : This structure contains the error data that is passed to the BarcodeScannerErrorOccurred event.
-old-location : pos\posbarcodescannererroroccurredeventdata.htm
-old-project : pos
-ms.assetid : c9e18ed0-bc34-49ed-a31e-20c82d43860f
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : pos.posbarcodescannererroroccurredeventdata, PosBarcodeScannerErrorOccurredEventData, _PosBarcodeScannerErrorOccurredEventData, PosBarcodeScannerErrorOccurredEventData structure, pointofservicedriverinterface/PosBarcodeScannerErrorOccurredEventData
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : pointofservicedriverinterface.h
-req.include-header : PointOfServiceDriverInterface.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PosBarcodeScannerErrorOccurredEventData
+UID: NS:pointofservicedriverinterface._PosBarcodeScannerErrorOccurredEventData
+title: "_PosBarcodeScannerErrorOccurredEventData"
+author: windows-driver-content
+description: This structure contains the error data that is passed to the BarcodeScannerErrorOccurred event.
+old-location: pos\posbarcodescannererroroccurredeventdata.htm
+old-project: pos
+ms.assetid: c9e18ed0-bc34-49ed-a31e-20c82d43860f
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: pos.posbarcodescannererroroccurredeventdata, PosBarcodeScannerErrorOccurredEventData, _PosBarcodeScannerErrorOccurredEventData, PosBarcodeScannerErrorOccurredEventData structure, pointofservicedriverinterface/PosBarcodeScannerErrorOccurredEventData
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: pointofservicedriverinterface.h
+req.include-header: PointOfServiceDriverInterface.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	PointOfServiceDriverInterface.h
+apiname:
+-	PosBarcodeScannerErrorOccurredEventData
+product: Windows
+targetos: Windows
+req.typenames: PosBarcodeScannerErrorOccurredEventData
 ---
 
 # _PosBarcodeScannerErrorOccurredEventData structure

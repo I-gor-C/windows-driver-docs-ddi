@@ -1,41 +1,46 @@
 ---
-UID : NI:parallel.IOCTL_INTERNAL_PARALLEL_CONNECT_INTERRUPT
-title : IOCTL_INTERNAL_PARALLEL_CONNECT_INTERRUPT
-author : windows-driver-content
-description : The IOCTL_INTERNAL_PARALLEL_CONNECT_INTERRUPT request connects an optional interrupt service routine and an optional deferred port check routine to a parallel port.
-old-location : parports\ioctl_internal_parallel_connect_interrupt.htm
-old-project : parports
-ms.assetid : 8cf5f2fc-e298-4f5b-bca4-3034e8a4a061
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : parports.ioctl_internal_parallel_connect_interrupt, IOCTL_INTERNAL_PARALLEL_CONNECT_INTERRUPT control code [Parallel Ports], IOCTL_INTERNAL_PARALLEL_CONNECT_INTERRUPT, parallel/IOCTL_INTERNAL_PARALLEL_CONNECT_INTERRUPT, cisspd_b43103ce-7b3e-413b-914c-fbaf1d7789ee.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : parallel.h
-req.include-header : Parallel.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RILGBATOKEN, *LPRILGBATOKEN
+UID: NI:parallel.IOCTL_INTERNAL_PARALLEL_CONNECT_INTERRUPT
+title: IOCTL_INTERNAL_PARALLEL_CONNECT_INTERRUPT
+author: windows-driver-content
+description: The IOCTL_INTERNAL_PARALLEL_CONNECT_INTERRUPT request connects an optional interrupt service routine and an optional deferred port check routine to a parallel port.
+old-location: parports\ioctl_internal_parallel_connect_interrupt.htm
+old-project: parports
+ms.assetid: 8cf5f2fc-e298-4f5b-bca4-3034e8a4a061
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: parports.ioctl_internal_parallel_connect_interrupt, IOCTL_INTERNAL_PARALLEL_CONNECT_INTERRUPT control code [Parallel Ports], IOCTL_INTERNAL_PARALLEL_CONNECT_INTERRUPT, parallel/IOCTL_INTERNAL_PARALLEL_CONNECT_INTERRUPT, cisspd_b43103ce-7b3e-413b-914c-fbaf1d7789ee.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: parallel.h
+req.include-header: Parallel.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	parallel.h
+apiname:
+-	IOCTL_INTERNAL_PARALLEL_CONNECT_INTERRUPT
+product: Windows
+targetos: Windows
+req.typenames: RILGBATOKEN, *LPRILGBATOKEN
 ---
 
 # IOCTL_INTERNAL_PARALLEL_CONNECT_INTERRUPT IOCTL

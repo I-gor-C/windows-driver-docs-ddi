@@ -1,42 +1,47 @@
 ---
-UID : NS:srb._SRBEX_DATA_PNP
-title : "_SRBEX_DATA_PNP"
-author : windows-driver-content
-description : The SRBEX_DATA_PNP structure contains the request data for an extended plug and play (PNP) SRB.
-old-location : storage\srbex_data_pnp.htm
-old-project : storage
-ms.assetid : CB64AF68-C40D-44F0-8F52-6BF05E23E5E1
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : StorStartDevice, storport/PSRBEX_DATA_PNP, StorStopDevice, *PSRBEX_DATA_PNP, StorQueryCapabilities, storage.srbex_data_pnp, PSRBEX_DATA_PNP, PSRBEX_DATA_PNP structure pointer [Storage Devices], StorRemoveDevice, StorFilterResourceRequirements, StorSupriseRemoval, _SRBEX_DATA_PNP, storport/SRBEX_DATA_PNP, StorQueryResourceRequirements, SRBEX_DATA_PNP, SRBEX_DATA_PNP structure [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : srb.h
-req.include-header : Storport.h, Srb.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SRBEX_DATA_PNP, *PSRBEX_DATA_PNP
-req.product : Windows 10 or later.
+UID: NS:srb._SRBEX_DATA_PNP
+title: "_SRBEX_DATA_PNP"
+author: windows-driver-content
+description: The SRBEX_DATA_PNP structure contains the request data for an extended plug and play (PNP) SRB.
+old-location: storage\srbex_data_pnp.htm
+old-project: storage
+ms.assetid: CB64AF68-C40D-44F0-8F52-6BF05E23E5E1
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: StorStartDevice, storport/PSRBEX_DATA_PNP, StorStopDevice, *PSRBEX_DATA_PNP, StorQueryCapabilities, storage.srbex_data_pnp, PSRBEX_DATA_PNP, PSRBEX_DATA_PNP structure pointer [Storage Devices], StorRemoveDevice, StorFilterResourceRequirements, StorSupriseRemoval, _SRBEX_DATA_PNP, storport/SRBEX_DATA_PNP, StorQueryResourceRequirements, SRBEX_DATA_PNP, SRBEX_DATA_PNP structure [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: srb.h
+req.include-header: Storport.h, Srb.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Storport.h
+apiname:
+-	SRBEX_DATA_PNP
+product: Windows
+targetos: Windows
+req.typenames: SRBEX_DATA_PNP, *PSRBEX_DATA_PNP
+req.product: Windows 10 or later.
 ---
 
 # _SRBEX_DATA_PNP structure

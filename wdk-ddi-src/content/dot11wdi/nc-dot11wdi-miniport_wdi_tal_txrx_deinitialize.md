@@ -1,41 +1,46 @@
 ---
-UID : NC:dot11wdi.MINIPORT_WDI_TAL_TXRX_DEINITIALIZE
-title : MINIPORT_WDI_TAL_TXRX_DEINITIALIZE
-author : windows-driver-content
-description : The MiniportWdiTalTxRxDeinitialize handler function is invoked in the context of miniport halt. The functional components RXEngine and TxEngine have already been stopped and any pending data frames completed/returned.
-old-location : netvista\miniportwditaltxrxdeinitialize.htm
-old-project : netvista
-ms.assetid : E8A77709-7E35-4FFC-B7EC-19E5256AB55F
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.miniportwditaltxrxdeinitialize, MiniportWdiTalTxRxDeinitialize callback function [Network Drivers Starting with Windows Vista], MiniportWdiTalTxRxDeinitialize, MINIPORT_WDI_TAL_TXRX_DEINITIALIZE, MINIPORT_WDI_TAL_TXRX_DEINITIALIZE, dot11wdi/MiniportWdiTalTxRxDeinitialize
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : dot11wdi.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SYNTH_STATS, *PSYNTH_STATS
+UID: NC:dot11wdi.MINIPORT_WDI_TAL_TXRX_DEINITIALIZE
+title: MINIPORT_WDI_TAL_TXRX_DEINITIALIZE
+author: windows-driver-content
+description: The MiniportWdiTalTxRxDeinitialize handler function is invoked in the context of miniport halt. The functional components RXEngine and TxEngine have already been stopped and any pending data frames completed/returned.
+old-location: netvista\miniportwditaltxrxdeinitialize.htm
+old-project: netvista
+ms.assetid: E8A77709-7E35-4FFC-B7EC-19E5256AB55F
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.miniportwditaltxrxdeinitialize, MiniportWdiTalTxRxDeinitialize callback function [Network Drivers Starting with Windows Vista], MiniportWdiTalTxRxDeinitialize, MINIPORT_WDI_TAL_TXRX_DEINITIALIZE, MINIPORT_WDI_TAL_TXRX_DEINITIALIZE, dot11wdi/MiniportWdiTalTxRxDeinitialize
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: dot11wdi.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	dot11wdi.h
+apiname:
+-	MiniportWdiTalTxRxDeinitialize
+product: Windows
+targetos: Windows
+req.typenames: SYNTH_STATS, *PSYNTH_STATS
 ---
 
 

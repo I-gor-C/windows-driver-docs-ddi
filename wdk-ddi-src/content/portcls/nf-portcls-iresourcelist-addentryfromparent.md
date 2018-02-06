@@ -1,41 +1,46 @@
 ---
-UID : NF:portcls.IResourceList.AddEntryFromParent
-title : IResourceList::AddEntryFromParent method
-author : windows-driver-content
-description : The AddEntryFromParent method adds to a resource list an entry found in the resource list's parent list.
-old-location : audio\iresourcelist_addentryfromparent.htm
-old-project : audio
-ms.assetid : 83733c17-1f1f-4be6-ae14-aa921e481a73
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : IResourceList, audmp-routines_428c97a0-498d-4732-a2cc-5be2af2aa64c.xml, IResourceList interface [Audio Devices], AddEntryFromParent method, AddEntryFromParent method [Audio Devices], IResourceList interface, AddEntryFromParent method [Audio Devices], portcls/IResourceList::AddEntryFromParent, IResourceList::AddEntryFromParent, audio.iresourcelist_addentryfromparent, AddEntryFromParent
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : portcls.h
-req.include-header : Portcls.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : portcls.h
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.IResourceList.AddEntryFromParent
+title: IResourceList::AddEntryFromParent method
+author: windows-driver-content
+description: The AddEntryFromParent method adds to a resource list an entry found in the resource list's parent list.
+old-location: audio\iresourcelist_addentryfromparent.htm
+old-project: audio
+ms.assetid: 83733c17-1f1f-4be6-ae14-aa921e481a73
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: IResourceList, audmp-routines_428c97a0-498d-4732-a2cc-5be2af2aa64c.xml, IResourceList interface [Audio Devices], AddEntryFromParent method, AddEntryFromParent method [Audio Devices], IResourceList interface, AddEntryFromParent method [Audio Devices], portcls/IResourceList::AddEntryFromParent, IResourceList::AddEntryFromParent, audio.iresourcelist_addentryfromparent, AddEntryFromParent
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: portcls.h
+req.include-header: Portcls.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: portcls.h
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	portcls.h
+apiname:
+-	IResourceList.AddEntryFromParent
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

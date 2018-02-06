@@ -1,41 +1,46 @@
 ---
-UID : NF:portcls.IResourceList.TranslatedList
-title : IResourceList::TranslatedList method
-author : windows-driver-content
-description : The TranslatedList method returns the list of translated resources.
-old-location : audio\iresourcelist_translatedlist.htm
-old-project : audio
-ms.assetid : 6bc4f939-dbc8-4d9a-95f9-b5ec97a47a8a
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : IResourceList, IResourceList::TranslatedList, TranslatedList method [Audio Devices], IResourceList interface, audio.iresourcelist_translatedlist, audmp-routines_d74c0767-97d9-4488-82f1-51cde4dc8259.xml, TranslatedList method [Audio Devices], portcls/IResourceList::TranslatedList, TranslatedList, IResourceList interface [Audio Devices], TranslatedList method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : portcls.h
-req.include-header : Portcls.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : portcls.h
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.IResourceList.TranslatedList
+title: IResourceList::TranslatedList method
+author: windows-driver-content
+description: The TranslatedList method returns the list of translated resources.
+old-location: audio\iresourcelist_translatedlist.htm
+old-project: audio
+ms.assetid: 6bc4f939-dbc8-4d9a-95f9-b5ec97a47a8a
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: IResourceList, IResourceList::TranslatedList, TranslatedList method [Audio Devices], IResourceList interface, audio.iresourcelist_translatedlist, audmp-routines_d74c0767-97d9-4488-82f1-51cde4dc8259.xml, TranslatedList method [Audio Devices], portcls/IResourceList::TranslatedList, TranslatedList, IResourceList interface [Audio Devices], TranslatedList method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: portcls.h
+req.include-header: Portcls.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: portcls.h
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	portcls.h
+apiname:
+-	IResourceList.TranslatedList
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

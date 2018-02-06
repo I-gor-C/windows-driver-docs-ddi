@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmthk._D3DKMT_UPDATEOVERLAY
-title : "_D3DKMT_UPDATEOVERLAY"
-author : windows-driver-content
-description : The D3DKMT_UPDATEOVERLAY structure describes parameters for modifying an overlay.
-old-location : display\d3dkmt_updateoverlay.htm
-old-project : display
-ms.assetid : 4e7d4d09-067b-4658-ab2a-319dc9e6d8db
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.d3dkmt_updateoverlay, D3DKMT_UPDATEOVERLAY, _D3DKMT_UPDATEOVERLAY, d3dkmthk/D3DKMT_UPDATEOVERLAY, D3DKMT_UPDATEOVERLAY structure [Display Devices], OpenGL_Structs_763acbbf-27ad-4d91-903f-7200b7d7e0cf.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_UPDATEOVERLAY
+UID: NS:d3dkmthk._D3DKMT_UPDATEOVERLAY
+title: "_D3DKMT_UPDATEOVERLAY"
+author: windows-driver-content
+description: The D3DKMT_UPDATEOVERLAY structure describes parameters for modifying an overlay.
+old-location: display\d3dkmt_updateoverlay.htm
+old-project: display
+ms.assetid: 4e7d4d09-067b-4658-ab2a-319dc9e6d8db
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.d3dkmt_updateoverlay, D3DKMT_UPDATEOVERLAY, _D3DKMT_UPDATEOVERLAY, d3dkmthk/D3DKMT_UPDATEOVERLAY, D3DKMT_UPDATEOVERLAY structure [Display Devices], OpenGL_Structs_763acbbf-27ad-4d91-903f-7200b7d7e0cf.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmthk.h
+apiname:
+-	D3DKMT_UPDATEOVERLAY
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_UPDATEOVERLAY
 ---
 
 # _D3DKMT_UPDATEOVERLAY structure

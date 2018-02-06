@@ -1,42 +1,48 @@
 ---
-UID : NF:wdm.ClfsMgmtRemovePolicy
-title : ClfsMgmtRemovePolicy function
-author : windows-driver-content
-description : The ClfsMgmtRemovePolicy routine resets a log's CLFS_MGMT_POLICY structure to its default value.
-old-location : kernel\clfsmgmtremovepolicy.htm
-old-project : kernel
-ms.assetid : 6f0ae6fc-4f2f-4a1a-ac2f-93689f6b7d50
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ClfsMgmtRemovePolicy routine [Kernel-Mode Driver Architecture], wdm/ClfsMgmtRemovePolicy, kernel.clfsmgmtremovepolicy, ClfsMgmtRemovePolicy, Clfs_management_70e3d576-6891-4379-a25b-d880222db235.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Clfs.lib
-req.dll : Clfs.sys
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ClfsMgmtRemovePolicy
+title: ClfsMgmtRemovePolicy function
+author: windows-driver-content
+description: The ClfsMgmtRemovePolicy routine resets a log's CLFS_MGMT_POLICY structure to its default value.
+old-location: kernel\clfsmgmtremovepolicy.htm
+old-project: kernel
+ms.assetid: 6f0ae6fc-4f2f-4a1a-ac2f-93689f6b7d50
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ClfsMgmtRemovePolicy routine [Kernel-Mode Driver Architecture], wdm/ClfsMgmtRemovePolicy, kernel.clfsmgmtremovepolicy, ClfsMgmtRemovePolicy, Clfs_management_70e3d576-6891-4379-a25b-d880222db235.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Clfs.lib
+req.dll: Clfs.sys
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Clfs.sys
+-	Ext-MS-Win-fs-clfs-l1-1-0.dll
+apiname:
+-	ClfsMgmtRemovePolicy
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

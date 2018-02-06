@@ -1,42 +1,47 @@
 ---
-UID : NS:wdm._OB_CALLBACK_REGISTRATION
-title : "_OB_CALLBACK_REGISTRATION"
-author : windows-driver-content
-description : The OB_CALLBACK_REGISTRATION structure specifies the parameters when the ObRegisterCallbacks routine registers ObjectPreCallback and ObjectPostCallback callback routines.
-old-location : kernel\ob_callback_registration.htm
-old-project : kernel
-ms.assetid : e288b050-0875-4c9b-aa72-47845861755a
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kstruct_c_8357a6f5-881d-4840-a530-454383ba3ddd.xml, wdm/OB_CALLBACK_REGISTRATION, POB_CALLBACK_REGISTRATION, POB_CALLBACK_REGISTRATION structure pointer [Kernel-Mode Driver Architecture], wdm/POB_CALLBACK_REGISTRATION, OB_CALLBACK_REGISTRATION, kernel.ob_callback_registration, *POB_CALLBACK_REGISTRATION, _OB_CALLBACK_REGISTRATION, OB_CALLBACK_REGISTRATION structure [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows Server 2008.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : OB_CALLBACK_REGISTRATION, *POB_CALLBACK_REGISTRATION
-req.product : Windows 10 or later.
+UID: NS:wdm._OB_CALLBACK_REGISTRATION
+title: "_OB_CALLBACK_REGISTRATION"
+author: windows-driver-content
+description: The OB_CALLBACK_REGISTRATION structure specifies the parameters when the ObRegisterCallbacks routine registers ObjectPreCallback and ObjectPostCallback callback routines.
+old-location: kernel\ob_callback_registration.htm
+old-project: kernel
+ms.assetid: e288b050-0875-4c9b-aa72-47845861755a
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kstruct_c_8357a6f5-881d-4840-a530-454383ba3ddd.xml, wdm/OB_CALLBACK_REGISTRATION, POB_CALLBACK_REGISTRATION, POB_CALLBACK_REGISTRATION structure pointer [Kernel-Mode Driver Architecture], wdm/POB_CALLBACK_REGISTRATION, OB_CALLBACK_REGISTRATION, kernel.ob_callback_registration, *POB_CALLBACK_REGISTRATION, _OB_CALLBACK_REGISTRATION, OB_CALLBACK_REGISTRATION structure [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows Server 2008.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	OB_CALLBACK_REGISTRATION
+product: Windows
+targetos: Windows
+req.typenames: OB_CALLBACK_REGISTRATION, *POB_CALLBACK_REGISTRATION
+req.product: Windows 10 or later.
 ---
 
 # _OB_CALLBACK_REGISTRATION structure

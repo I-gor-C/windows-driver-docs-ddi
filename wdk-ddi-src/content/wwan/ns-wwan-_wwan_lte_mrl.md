@@ -1,42 +1,47 @@
 ---
-UID : NS:wwan._WWAN_LTE_MRL
-title : "_WWAN_LTE_MRL"
-author : windows-driver-content
-description : The WWAN_LTE_MRL structure represents the measured results list (MRL) of neighboring LTE cells.
-old-location : netvista\wwan_lte_mrl.htm
-old-project : netvista
-ms.assetid : 5959B7A7-147D-4F20-82CC-EC1DEAAE3494
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : WWAN_LTE_MRL structure [Network Drivers Starting with Windows Vista], _WWAN_LTE_MRL, WWAN_LTE_MRL, PWWAN_LTE_MRL, PWWAN_LTE_MRL structure pointer [Network Drivers Starting with Windows Vista], wwan/WWAN_LTE_MRL, netvista.wwan_lte_mrl, wwan/PWWAN_LTE_MRL, *PWWAN_LTE_MRL
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wwan.h
-req.include-header : Wwan.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10, version 1709
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWWAN_LTE_MRL, WWAN_LTE_MRL"
-req.product : Windows 10 or later.
+UID: NS:wwan._WWAN_LTE_MRL
+title: "_WWAN_LTE_MRL"
+author: windows-driver-content
+description: The WWAN_LTE_MRL structure represents the measured results list (MRL) of neighboring LTE cells.
+old-location: netvista\wwan_lte_mrl.htm
+old-project: netvista
+ms.assetid: 5959B7A7-147D-4F20-82CC-EC1DEAAE3494
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: WWAN_LTE_MRL structure [Network Drivers Starting with Windows Vista], _WWAN_LTE_MRL, WWAN_LTE_MRL, PWWAN_LTE_MRL, PWWAN_LTE_MRL structure pointer [Network Drivers Starting with Windows Vista], wwan/WWAN_LTE_MRL, netvista.wwan_lte_mrl, wwan/PWWAN_LTE_MRL, *PWWAN_LTE_MRL
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wwan.h
+req.include-header: Wwan.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10, version 1709
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wwan.h
+apiname:
+-	WWAN_LTE_MRL
+product: Windows
+targetos: Windows
+req.typenames: "*PWWAN_LTE_MRL, WWAN_LTE_MRL"
+req.product: Windows 10 or later.
 ---
 
 # _WWAN_LTE_MRL structure

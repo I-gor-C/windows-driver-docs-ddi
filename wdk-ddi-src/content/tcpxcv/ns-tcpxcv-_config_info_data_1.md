@@ -1,42 +1,47 @@
 ---
-UID : NS:tcpxcv._CONFIG_INFO_DATA_1
-title : "_CONFIG_INFO_DATA_1"
-author : windows-driver-content
-description : The XcvData function uses a CONFIG_INFO_DATA_1 structure when it obtains configuration data for a particular port.
-old-location : print\config_info_data_1.htm
-old-project : print
-ms.assetid : abf484e4-6a11-4727-b195-5eaf6683113e
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : "_CONFIG_INFO_DATA_1, print.config_info_data_1, tcpxcv/CONFIG_INFO_DATA_1, PCONFIG_INFO_DATA_1 structure pointer [Print Devices], tcpxcv/PCONFIG_INFO_DATA_1, PCONFIG_INFO_DATA_1, *PCONFIG_INFO_DATA_1, CONFIG_INFO_DATA_1 structure [Print Devices], CONFIG_INFO_DATA_1, spoolfnc_b18027cc-7df5-452c-81cd-b62bfa5395f3.xml"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : tcpxcv.h
-req.include-header : Tcpxcv.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PCONFIG_INFO_DATA_1, CONFIG_INFO_DATA_1"
-req.product : Windows 10 or later.
+UID: NS:tcpxcv._CONFIG_INFO_DATA_1
+title: "_CONFIG_INFO_DATA_1"
+author: windows-driver-content
+description: The XcvData function uses a CONFIG_INFO_DATA_1 structure when it obtains configuration data for a particular port.
+old-location: print\config_info_data_1.htm
+old-project: print
+ms.assetid: abf484e4-6a11-4727-b195-5eaf6683113e
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: "_CONFIG_INFO_DATA_1, print.config_info_data_1, tcpxcv/CONFIG_INFO_DATA_1, PCONFIG_INFO_DATA_1 structure pointer [Print Devices], tcpxcv/PCONFIG_INFO_DATA_1, PCONFIG_INFO_DATA_1, *PCONFIG_INFO_DATA_1, CONFIG_INFO_DATA_1 structure [Print Devices], CONFIG_INFO_DATA_1, spoolfnc_b18027cc-7df5-452c-81cd-b62bfa5395f3.xml"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: tcpxcv.h
+req.include-header: Tcpxcv.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	tcpxcv.h
+apiname:
+-	CONFIG_INFO_DATA_1
+product: Windows
+targetos: Windows
+req.typenames: "*PCONFIG_INFO_DATA_1, CONFIG_INFO_DATA_1"
+req.product: Windows 10 or later.
 ---
 
 # _CONFIG_INFO_DATA_1 structure

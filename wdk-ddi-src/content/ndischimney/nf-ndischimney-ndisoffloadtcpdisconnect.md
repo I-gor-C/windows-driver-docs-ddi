@@ -1,41 +1,47 @@
 ---
-UID : NF:ndischimney.NdisOffloadTcpDisconnect
-title : NdisOffloadTcpDisconnect function
-author : windows-driver-content
-description : A protocol or intermediate driver calls the NdisOffloadTcpDisconnect function to close the send half of an offloaded TCP connection.
-old-location : netvista\ndisoffloadtcpdisconnect.htm
-old-project : netvista
-ms.assetid : f8abff30-b641-4581-8532-8292993ca9f6
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NdisOffloadTcpDisconnect function [Network Drivers Starting with Windows Vista], tcp_chim_ndis_func_7b795689-321d-4d4f-992f-668d53bcf11b.xml, netvista.ndisoffloadtcpdisconnect, ndischimney/NdisOffloadTcpDisconnect, NdisOffloadTcpDisconnect
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndischimney.h
-req.include-header : Ndischimney.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PD_BUFFER_VIRTUAL_SUBNET_INFO
+UID: NF:ndischimney.NdisOffloadTcpDisconnect
+title: NdisOffloadTcpDisconnect function
+author: windows-driver-content
+description: A protocol or intermediate driver calls the NdisOffloadTcpDisconnect function to close the send half of an offloaded TCP connection.
+old-location: netvista\ndisoffloadtcpdisconnect.htm
+old-project: netvista
+ms.assetid: f8abff30-b641-4581-8532-8292993ca9f6
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NdisOffloadTcpDisconnect function [Network Drivers Starting with Windows Vista], tcp_chim_ndis_func_7b795689-321d-4d4f-992f-668d53bcf11b.xml, netvista.ndisoffloadtcpdisconnect, ndischimney/NdisOffloadTcpDisconnect, NdisOffloadTcpDisconnect
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndischimney.h
+req.include-header: Ndischimney.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisOffloadTcpDisconnect
+product: Windows
+targetos: Windows
+req.typenames: PD_BUFFER_VIRTUAL_SUBNET_INFO
 ---
 
 

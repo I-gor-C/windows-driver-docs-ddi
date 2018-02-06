@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisMCoIndicateReceiveNetBufferLists
-title : NdisMCoIndicateReceiveNetBufferLists function
-author : windows-driver-content
-description : The NdisMCoIndicateReceiveNetBufferLists function indicates that the miniport driver received data from the network.
-old-location : netvista\ndismcoindicatereceivenetbufferlists.htm
-old-project : netvista
-ms.assetid : dabd472f-9877-4434-a534-e07a047e092f
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : ndis/NdisMCoIndicateReceiveNetBufferLists, NdisMCoIndicateReceiveNetBufferLists, condis_sendrcv_ref_98f228ff-027c-4b60-b469-3d9ead72ed6f.xml, netvista.ndismcoindicatereceivenetbufferlists, NdisMCoIndicateReceiveNetBufferLists function [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_MCO_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisMCoIndicateReceiveNetBufferLists
+title: NdisMCoIndicateReceiveNetBufferLists function
+author: windows-driver-content
+description: The NdisMCoIndicateReceiveNetBufferLists function indicates that the miniport driver received data from the network.
+old-location: netvista\ndismcoindicatereceivenetbufferlists.htm
+old-project: netvista
+ms.assetid: dabd472f-9877-4434-a534-e07a047e092f
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: ndis/NdisMCoIndicateReceiveNetBufferLists, NdisMCoIndicateReceiveNetBufferLists, condis_sendrcv_ref_98f228ff-027c-4b60-b469-3d9ead72ed6f.xml, netvista.ndismcoindicatereceivenetbufferlists, NdisMCoIndicateReceiveNetBufferLists function [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_MCO_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisMCoIndicateReceiveNetBufferLists
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

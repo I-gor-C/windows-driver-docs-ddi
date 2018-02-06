@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugControl4.GetBreakpointByIndex2
-title : IDebugControl4::GetBreakpointByIndex2 method
-author : windows-driver-content
-description : The GetBreakpointByIndex2 method returns the breakpoint located at the specified index.
-old-location : debugger\getbreakpointbyindex2.htm
-old-project : debugger
-ms.assetid : 3487addb-e196-4295-95fc-0590802e766a
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : GetBreakpointByIndex2, GetBreakpointByIndex2 method [Windows Debugging], GetBreakpointByIndex2 method [Windows Debugging], IDebugControl4 interface, dbgeng/IDebugControl4::GetBreakpointByIndex2, debugger.getbreakpointbyindex2, IDebugControl4::GetBreakpointByIndex2, IDebugControl4, IDebugControl4 interface [Windows Debugging], GetBreakpointByIndex2 method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl4.GetBreakpointByIndex2
+title: IDebugControl4::GetBreakpointByIndex2 method
+author: windows-driver-content
+description: The GetBreakpointByIndex2 method returns the breakpoint located at the specified index.
+old-location: debugger\getbreakpointbyindex2.htm
+old-project: debugger
+ms.assetid: 3487addb-e196-4295-95fc-0590802e766a
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: GetBreakpointByIndex2, GetBreakpointByIndex2 method [Windows Debugging], GetBreakpointByIndex2 method [Windows Debugging], IDebugControl4 interface, dbgeng/IDebugControl4::GetBreakpointByIndex2, debugger.getbreakpointbyindex2, IDebugControl4::GetBreakpointByIndex2, IDebugControl4, IDebugControl4 interface [Windows Debugging], GetBreakpointByIndex2 method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl4.GetBreakpointByIndex2
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

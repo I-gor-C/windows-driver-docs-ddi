@@ -1,42 +1,47 @@
 ---
-UID : NF:wdbgexts.ReadIoSpaceEx
-title : ReadIoSpaceEx function
-author : windows-driver-content
-description : The ReadIoSpaceEx function is an extended version of ReadIoSpace.
-old-location : debugger\readiospaceex.htm
-old-project : debugger
-ms.assetid : de0681e6-c716-4879-8e07-daacc092d18f
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : wdbgexts/ReadIoSpaceEx, ReadIoSpaceEx function [Windows Debugging], ReadIoSpaceEx, debugger.readiospaceex, WdbgExts_Ref_96fa3635-35d1-4d58-835a-96754480170a.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdbgexts.h
-req.include-header : Wdbgexts.h, Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXT_TDOP
-req.product : Windows 10 or later.
+UID: NF:wdbgexts.ReadIoSpaceEx
+title: ReadIoSpaceEx function
+author: windows-driver-content
+description: The ReadIoSpaceEx function is an extended version of ReadIoSpace.
+old-location: debugger\readiospaceex.htm
+old-project: debugger
+ms.assetid: de0681e6-c716-4879-8e07-daacc092d18f
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: wdbgexts/ReadIoSpaceEx, ReadIoSpaceEx function [Windows Debugging], ReadIoSpaceEx, debugger.readiospaceex, WdbgExts_Ref_96fa3635-35d1-4d58-835a-96754480170a.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdbgexts.h
+req.include-header: Wdbgexts.h, Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdbgexts.h
+apiname:
+-	ReadIoSpaceEx
+product: Windows
+targetos: Windows
+req.typenames: EXT_TDOP
+req.product: Windows 10 or later.
 ---
 
 

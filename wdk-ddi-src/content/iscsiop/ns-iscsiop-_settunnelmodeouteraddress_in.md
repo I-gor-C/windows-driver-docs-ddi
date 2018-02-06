@@ -1,41 +1,46 @@
 ---
-UID : NS:iscsiop._SetTunnelModeOuterAddress_IN
-title : "_SetTunnelModeOuterAddress_IN"
-author : windows-driver-content
-description : The SetTunnelModeOuterAddress_IN structure holds the input data for the SetTunnelModeOuterAddress method.
-old-location : storage\settunnelmodeouteraddress_in.htm
-old-project : storage
-ms.assetid : 3f698252-213f-482c-8c8f-624f0c370705
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : PSetTunnelModeOuterAddress_IN structure pointer [Storage Devices], PSetTunnelModeOuterAddress_IN, storage.settunnelmodeouteraddress_in, *PSetTunnelModeOuterAddress_IN, iscsiop/PSetTunnelModeOuterAddress_IN, _SetTunnelModeOuterAddress_IN, iscsiop/SetTunnelModeOuterAddress_IN, structs-iSCSI_d86148f6-e3d0-42b3-9e1d-3f341545f0b8.xml, SetTunnelModeOuterAddress_IN, SetTunnelModeOuterAddress_IN structure [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : iscsiop.h
-req.include-header : Iscsiop.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SetTunnelModeOuterAddress_IN, *PSetTunnelModeOuterAddress_IN
+UID: NS:iscsiop._SetTunnelModeOuterAddress_IN
+title: "_SetTunnelModeOuterAddress_IN"
+author: windows-driver-content
+description: The SetTunnelModeOuterAddress_IN structure holds the input data for the SetTunnelModeOuterAddress method.
+old-location: storage\settunnelmodeouteraddress_in.htm
+old-project: storage
+ms.assetid: 3f698252-213f-482c-8c8f-624f0c370705
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: PSetTunnelModeOuterAddress_IN structure pointer [Storage Devices], PSetTunnelModeOuterAddress_IN, storage.settunnelmodeouteraddress_in, *PSetTunnelModeOuterAddress_IN, iscsiop/PSetTunnelModeOuterAddress_IN, _SetTunnelModeOuterAddress_IN, iscsiop/SetTunnelModeOuterAddress_IN, structs-iSCSI_d86148f6-e3d0-42b3-9e1d-3f341545f0b8.xml, SetTunnelModeOuterAddress_IN, SetTunnelModeOuterAddress_IN structure [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: iscsiop.h
+req.include-header: Iscsiop.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	iscsiop.h
+apiname:
+-	SetTunnelModeOuterAddress_IN
+product: Windows
+targetos: Windows
+req.typenames: SetTunnelModeOuterAddress_IN, *PSetTunnelModeOuterAddress_IN
 ---
 
 # _SetTunnelModeOuterAddress_IN structure

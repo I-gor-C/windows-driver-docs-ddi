@@ -1,42 +1,47 @@
 ---
-UID : NS:wdm._PCI_CAPABILITIES_HEADER
-title : "_PCI_CAPABILITIES_HEADER"
-author : windows-driver-content
-description : The PCI_CAPABILITIES_HEADER structure defines a header that is present in every PCI capability structure.
-old-location : pci\pci_capabilities_header.htm
-old-project : PCI
-ms.assetid : 6a2ee9be-03bc-436d-91c7-f00222911b19
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : "*PPCI_CAPABILITIES_HEADER, PCI_CAPABILITIES_HEADER, wdm/PPCI_CAPABILITIES_HEADER, PCI_CAPABILITIES_HEADER structure [Buses], PPCI_CAPABILITIES_HEADER structure pointer [Buses], PPCI_CAPABILITIES_HEADER, pci_struct_4e7e5552-8a1b-4081-9197-df863319b01d.xml, wdm/PCI_CAPABILITIES_HEADER, _PCI_CAPABILITIES_HEADER, PCI.pci_capabilities_header"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : Wdm.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PCI_CAPABILITIES_HEADER, *PPCI_CAPABILITIES_HEADER
-req.product : Windows 10 or later.
+UID: NS:wdm._PCI_CAPABILITIES_HEADER
+title: "_PCI_CAPABILITIES_HEADER"
+author: windows-driver-content
+description: The PCI_CAPABILITIES_HEADER structure defines a header that is present in every PCI capability structure.
+old-location: pci\pci_capabilities_header.htm
+old-project: PCI
+ms.assetid: 6a2ee9be-03bc-436d-91c7-f00222911b19
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: "*PPCI_CAPABILITIES_HEADER, PCI_CAPABILITIES_HEADER, wdm/PPCI_CAPABILITIES_HEADER, PCI_CAPABILITIES_HEADER structure [Buses], PPCI_CAPABILITIES_HEADER structure pointer [Buses], PPCI_CAPABILITIES_HEADER, pci_struct_4e7e5552-8a1b-4081-9197-df863319b01d.xml, wdm/PCI_CAPABILITIES_HEADER, _PCI_CAPABILITIES_HEADER, PCI.pci_capabilities_header"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: Wdm.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdm.h
+apiname:
+-	PCI_CAPABILITIES_HEADER
+product: Windows
+targetos: Windows
+req.typenames: PCI_CAPABILITIES_HEADER, *PPCI_CAPABILITIES_HEADER
+req.product: Windows 10 or later.
 ---
 
 # _PCI_CAPABILITIES_HEADER structure

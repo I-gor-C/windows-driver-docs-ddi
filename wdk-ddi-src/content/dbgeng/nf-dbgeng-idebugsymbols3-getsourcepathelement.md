@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugSymbols3.GetSourcePathElement
-title : IDebugSymbols3::GetSourcePathElement method
-author : windows-driver-content
-description : The GetSourcePathElement method returns an element from the source path.
-old-location : debugger\getsourcepathelement.htm
-old-project : debugger
-ms.assetid : 69507aed-ff32-46f2-8efb-68c1a7288bfb
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : GetSourcePathElement method [Windows Debugging], IDebugSymbols interface [Windows Debugging], GetSourcePathElement method, IDebugSymbols2::GetSourcePathElement, dbgeng/IDebugSymbols::GetSourcePathElement, IDebugSymbols2 interface [Windows Debugging], GetSourcePathElement method, GetSourcePathElement method [Windows Debugging], IDebugSymbols3 interface, GetSourcePathElement method [Windows Debugging], IDebugSymbols interface, IDebugSymbols3, GetSourcePathElement, GetSourcePathElement method [Windows Debugging], IDebugSymbols2 interface, dbgeng/IDebugSymbols2::GetSourcePathElement, IDebugSymbols_517435f9-812c-43c2-bf82-5924de7955a2.xml, debugger.getsourcepathelement, IDebugSymbols::GetSourcePathElement, IDebugSymbols3 interface [Windows Debugging], GetSourcePathElement method, IDebugSymbols3::GetSourcePathElement, dbgeng/IDebugSymbols3::GetSourcePathElement
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSymbols3.GetSourcePathElement
+title: IDebugSymbols3::GetSourcePathElement method
+author: windows-driver-content
+description: The GetSourcePathElement method returns an element from the source path.
+old-location: debugger\getsourcepathelement.htm
+old-project: debugger
+ms.assetid: 69507aed-ff32-46f2-8efb-68c1a7288bfb
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: GetSourcePathElement method [Windows Debugging], IDebugSymbols interface [Windows Debugging], GetSourcePathElement method, IDebugSymbols2::GetSourcePathElement, dbgeng/IDebugSymbols::GetSourcePathElement, IDebugSymbols2 interface [Windows Debugging], GetSourcePathElement method, GetSourcePathElement method [Windows Debugging], IDebugSymbols3 interface, GetSourcePathElement method [Windows Debugging], IDebugSymbols interface, IDebugSymbols3, GetSourcePathElement, GetSourcePathElement method [Windows Debugging], IDebugSymbols2 interface, dbgeng/IDebugSymbols2::GetSourcePathElement, IDebugSymbols_517435f9-812c-43c2-bf82-5924de7955a2.xml, debugger.getsourcepathelement, IDebugSymbols::GetSourcePathElement, IDebugSymbols3 interface [Windows Debugging], GetSourcePathElement method, IDebugSymbols3::GetSourcePathElement, dbgeng/IDebugSymbols3::GetSourcePathElement
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugSymbols.GetSourcePathElement
+-	IDebugSymbols2.GetSourcePathElement
+-	IDebugSymbols3.GetSourcePathElement
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

@@ -1,42 +1,48 @@
 ---
-UID : NF:winsplp.OpenPrintProcessor
-title : OpenPrintProcessor function
-author : windows-driver-content
-description : A print processor's OpenPrintProcessor function prepares the print processor for printing a job and returns a handle.
-old-location : print\openprintprocessor.htm
-old-project : print
-ms.assetid : bab79fb6-1bb0-48ec-9d60-fcb6e679b758
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : spoolfnc_b8a185f0-4289-49bb-bb98-b6f54b66fa70.xml, OpenPrintProcessor function [Print Devices], winsplp/OpenPrintProcessor, OpenPrintProcessor, print.openprintprocessor
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : winsplp.h
-req.include-header : Winsplp.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Nwprint.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NOTIFICATION_CONFIG_FLAGS
-req.product : Windows 10 or later.
+UID: NF:winsplp.OpenPrintProcessor
+title: OpenPrintProcessor function
+author: windows-driver-content
+description: A print processor's OpenPrintProcessor function prepares the print processor for printing a job and returns a handle.
+old-location: print\openprintprocessor.htm
+old-project: print
+ms.assetid: bab79fb6-1bb0-48ec-9d60-fcb6e679b758
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: spoolfnc_b8a185f0-4289-49bb-bb98-b6f54b66fa70.xml, OpenPrintProcessor function [Print Devices], winsplp/OpenPrintProcessor, OpenPrintProcessor, print.openprintprocessor
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: winsplp.h
+req.include-header: Winsplp.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Nwprint.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Nwprint.lib
+-	Nwprint.dll
+apiname:
+-	OpenPrintProcessor
+product: Windows
+targetos: Windows
+req.typenames: NOTIFICATION_CONFIG_FLAGS
+req.product: Windows 10 or later.
 ---
 
 

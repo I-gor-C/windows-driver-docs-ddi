@@ -1,41 +1,46 @@
 ---
-UID : NS:hwnclx._HWN_CLIENT_REGISTRATION_PACKET
-title : "_HWN_CLIENT_REGISTRATION_PACKET"
-author : windows-driver-content
-description : Hardware Notification client driver registration packet that is passed to the class extension when a client driver is registered. Contains version information and client driver callback functions.
-old-location : gpiobtn\_hwn_client_registration_packet.htm
-old-project : gpiobtn
-ms.assetid : bf8ac72b-c3d6-4965-a1e9-2408d2fa2196
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : "_HWN_CLIENT_REGISTRATION_PACKET, HWN_CLIENT_REGISTRATION_PACKET, hwnclx/HWN_CLIENT_REGISTRATION_PACKET, HWN_CLIENT_REGISTRATION_PACKET structure, gpiobtn._hwn_client_registration_packet, *PHWN_CLIENT_REGISTRATION_PACKET"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : hwnclx.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10, version 1709
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HWN_CLIENT_REGISTRATION_PACKET, *PHWN_CLIENT_REGISTRATION_PACKET
+UID: NS:hwnclx._HWN_CLIENT_REGISTRATION_PACKET
+title: "_HWN_CLIENT_REGISTRATION_PACKET"
+author: windows-driver-content
+description: Hardware Notification client driver registration packet that is passed to the class extension when a client driver is registered. Contains version information and client driver callback functions.
+old-location: gpiobtn\_hwn_client_registration_packet.htm
+old-project: gpiobtn
+ms.assetid: bf8ac72b-c3d6-4965-a1e9-2408d2fa2196
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: "_HWN_CLIENT_REGISTRATION_PACKET, HWN_CLIENT_REGISTRATION_PACKET, hwnclx/HWN_CLIENT_REGISTRATION_PACKET, HWN_CLIENT_REGISTRATION_PACKET structure, gpiobtn._hwn_client_registration_packet, *PHWN_CLIENT_REGISTRATION_PACKET"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: hwnclx.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10, version 1709
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Hwnclx.h
+apiname:
+-	HWN_CLIENT_REGISTRATION_PACKET
+product: Windows
+targetos: Windows
+req.typenames: HWN_CLIENT_REGISTRATION_PACKET, *PHWN_CLIENT_REGISTRATION_PACKET
 ---
 
 # _HWN_CLIENT_REGISTRATION_PACKET structure

@@ -1,42 +1,50 @@
 ---
-UID : NF:wdfdevice.WdfDeviceInitSetIoTypeEx
-title : WdfDeviceInitSetIoTypeEx function
-author : windows-driver-content
-description : The WdfDeviceInitSetIoTypeEx method sets the method or preference for how a driver will access the data buffers that are included in read and write requests, as well as device I/O control requests, for a specified device.
-old-location : wdf\wdfdeviceinitsetiotypeex.htm
-old-project : wdf
-ms.assetid : 3746D618-C92C-43AB-A45A-2188D572105D
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WdfDeviceInitSetIoTypeEx method, PFN_WDFDEVICEINITSETIOTYPEEX, WdfDeviceInitSetIoTypeEx, wdf.wdfdeviceinitassigniotype, wdfdevice/WdfDeviceInitSetIoTypeEx, wdf.wdfdeviceinitsetiotypeex
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfdevice.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.13
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_STATE_NOTIFICATION_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfdevice.WdfDeviceInitSetIoTypeEx
+title: WdfDeviceInitSetIoTypeEx function
+author: windows-driver-content
+description: The WdfDeviceInitSetIoTypeEx method sets the method or preference for how a driver will access the data buffers that are included in read and write requests, as well as device I/O control requests, for a specified device.
+old-location: wdf\wdfdeviceinitsetiotypeex.htm
+old-project: wdf
+ms.assetid: 3746D618-C92C-43AB-A45A-2188D572105D
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WdfDeviceInitSetIoTypeEx method, PFN_WDFDEVICEINITSETIOTYPEEX, WdfDeviceInitSetIoTypeEx, wdf.wdfdeviceinitassigniotype, wdfdevice/WdfDeviceInitSetIoTypeEx, wdf.wdfdeviceinitsetiotypeex
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfdevice.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.13
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+-	WUDFx02000.dll
+-	WUDFx02000.dll.dll
+apiname:
+-	WdfDeviceInitSetIoTypeEx
+product: Windows
+targetos: Windows
+req.typenames: WDF_STATE_NOTIFICATION_TYPE
+req.product: Windows 10 or later.
 ---
 
 

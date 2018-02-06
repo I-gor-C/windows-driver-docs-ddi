@@ -1,41 +1,47 @@
 ---
-UID : NF:ntddk.ZwTerminateProcess
-title : ZwTerminateProcess function
-author : windows-driver-content
-description : The ZwTerminateProcess routine terminates a process and all of its threads.
-old-location : kernel\zwterminateprocess.htm
-old-project : kernel
-ms.assetid : 3b5e6de3-f1f4-4d7f-8c97-56a20a453ca3
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : NtTerminateProcess, ZwTerminateProcess routine [Kernel-Mode Driver Architecture], ntddk/NtTerminateProcess, k111_72c76674-5372-4662-9097-53d850d49afe.xml, ntddk/ZwTerminateProcess, kernel.zwterminateprocess, ZwTerminateProcess
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.ZwTerminateProcess
+title: ZwTerminateProcess function
+author: windows-driver-content
+description: The ZwTerminateProcess routine terminates a process and all of its threads.
+old-location: kernel\zwterminateprocess.htm
+old-project: kernel
+ms.assetid: 3b5e6de3-f1f4-4d7f-8c97-56a20a453ca3
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: NtTerminateProcess, ZwTerminateProcess routine [Kernel-Mode Driver Architecture], ntddk/NtTerminateProcess, k111_72c76674-5372-4662-9097-53d850d49afe.xml, ntddk/ZwTerminateProcess, kernel.zwterminateprocess, ZwTerminateProcess
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ZwTerminateProcess
+-	NtTerminateProcess
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

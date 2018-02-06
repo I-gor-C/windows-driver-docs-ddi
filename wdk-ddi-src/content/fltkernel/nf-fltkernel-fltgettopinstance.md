@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltGetTopInstance
-title : FltGetTopInstance function
-author : windows-driver-content
-description : The FltGetTopInstance routine returns an opaque instance pointer for the minifilter driver instance that is attached at the top of the instance stack for a given volume.
-old-location : ifsk\fltgettopinstance.htm
-old-project : ifsk
-ms.assetid : 5c805b9d-0b9a-4fbb-8b96-3ac11a6e4898
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : fltkernel/FltGetTopInstance, FltGetTopInstance, FltGetTopInstance routine [Installable File System Drivers], FltApiRef_e_to_o_3f4205c4-12aa-43d4-b67f-258665d81164.xml, ifsk.fltgettopinstance
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltGetTopInstance
+title: FltGetTopInstance function
+author: windows-driver-content
+description: The FltGetTopInstance routine returns an opaque instance pointer for the minifilter driver instance that is attached at the top of the instance stack for a given volume.
+old-location: ifsk\fltgettopinstance.htm
+old-project: ifsk
+ms.assetid: 5c805b9d-0b9a-4fbb-8b96-3ac11a6e4898
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: fltkernel/FltGetTopInstance, FltGetTopInstance, FltGetTopInstance routine [Installable File System Drivers], FltApiRef_e_to_o_3f4205c4-12aa-43d4-b67f-258665d81164.xml, ifsk.fltgettopinstance
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltGetTopInstance
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

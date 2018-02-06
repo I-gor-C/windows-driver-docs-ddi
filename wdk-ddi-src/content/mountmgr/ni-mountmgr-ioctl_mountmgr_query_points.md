@@ -1,41 +1,46 @@
 ---
-UID : NI:mountmgr.IOCTL_MOUNTMGR_QUERY_POINTS
-title : IOCTL_MOUNTMGR_QUERY_POINTS
-author : windows-driver-content
-description : This IOCTL returns triples that consist of a persistent symbolic link name for the volume (that is, a mount point), a unique ID for the volume, and a nonpersistent device name (such as &#0034;\Device\HarddiskVolume1&#0034;) for the volume.
-old-location : storage\ioctl_mountmgr_query_points.htm
-old-project : storage
-ms.assetid : 2b7f947c-2fb1-4b59-bf73-a6f0e1478be2
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_mountmgr_query_points, IOCTL_MOUNTMGR_QUERY_POINTS control code [Storage Devices], IOCTL_MOUNTMGR_QUERY_POINTS, mountmgr/IOCTL_MOUNTMGR_QUERY_POINTS, k307_2d7b44e3-c40f-4626-aad0-5e1cf8843685.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : mountmgr.h
-req.include-header : Mountmgr.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PMOUNTDEV_UNIQUE_ID, MOUNTDEV_UNIQUE_ID"
+UID: NI:mountmgr.IOCTL_MOUNTMGR_QUERY_POINTS
+title: IOCTL_MOUNTMGR_QUERY_POINTS
+author: windows-driver-content
+description: This IOCTL returns triples that consist of a persistent symbolic link name for the volume (that is, a mount point), a unique ID for the volume, and a nonpersistent device name (such as &#0034;\Device\HarddiskVolume1&#0034;) for the volume.
+old-location: storage\ioctl_mountmgr_query_points.htm
+old-project: storage
+ms.assetid: 2b7f947c-2fb1-4b59-bf73-a6f0e1478be2
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_mountmgr_query_points, IOCTL_MOUNTMGR_QUERY_POINTS control code [Storage Devices], IOCTL_MOUNTMGR_QUERY_POINTS, mountmgr/IOCTL_MOUNTMGR_QUERY_POINTS, k307_2d7b44e3-c40f-4626-aad0-5e1cf8843685.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: mountmgr.h
+req.include-header: Mountmgr.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Mountmgr.h
+apiname:
+-	IOCTL_MOUNTMGR_QUERY_POINTS
+product: Windows
+targetos: Windows
+req.typenames: "*PMOUNTDEV_UNIQUE_ID, MOUNTDEV_UNIQUE_ID"
 ---
 
 # IOCTL_MOUNTMGR_QUERY_POINTS IOCTL

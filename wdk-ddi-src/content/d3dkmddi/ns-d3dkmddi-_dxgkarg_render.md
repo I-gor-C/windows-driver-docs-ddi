@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGKARG_RENDER
-title : "_DXGKARG_RENDER"
-author : windows-driver-content
-description : The DXGKARG_RENDER structure describes members for generating a direct memory access (DMA) buffer from a command buffer.
-old-location : display\dxgkarg_render.htm
-old-project : display
-ms.assetid : 592553cb-21db-4c8d-b855-d9bc6a2d9579
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : "*INOUT_PDXGKARG_RENDER, DXGKARG_RENDER, DmStructs_a297ffab-b45d-4c92-820c-0ef11849445e.xml, DXGKARG_RENDER structure [Display Devices], display.dxgkarg_render, _DXGKARG_RENDER, d3dkmddi/DXGKARG_RENDER"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGKARG_RENDER
+UID: NS:d3dkmddi._DXGKARG_RENDER
+title: "_DXGKARG_RENDER"
+author: windows-driver-content
+description: The DXGKARG_RENDER structure describes members for generating a direct memory access (DMA) buffer from a command buffer.
+old-location: display\dxgkarg_render.htm
+old-project: display
+ms.assetid: 592553cb-21db-4c8d-b855-d9bc6a2d9579
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: "*INOUT_PDXGKARG_RENDER, DXGKARG_RENDER, DmStructs_a297ffab-b45d-4c92-820c-0ef11849445e.xml, DXGKARG_RENDER structure [Display Devices], display.dxgkarg_render, _DXGKARG_RENDER, d3dkmddi/DXGKARG_RENDER"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DXGKARG_RENDER
+product: Windows
+targetos: Windows
+req.typenames: DXGKARG_RENDER
 ---
 
 # _DXGKARG_RENDER structure

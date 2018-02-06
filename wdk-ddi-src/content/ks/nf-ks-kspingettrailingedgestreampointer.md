@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsPinGetTrailingEdgeStreamPointer
-title : KsPinGetTrailingEdgeStreamPointer function
-author : windows-driver-content
-description : The KsPinGetTrailingEdgeStreamPointer function acquires the trailing edge stream pointer for the queue associated with the specified pin.
-old-location : stream\kspingettrailingedgestreampointer.htm
-old-project : stream
-ms.assetid : 763f1f66-4d83-44aa-9db5-206cf6b6f9b1
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ks/KsPinGetTrailingEdgeStreamPointer, avfunc_3fd3182e-6e4d-4654-9de7-e9cea1086e3e.xml, stream.kspingettrailingedgestreampointer, KsPinGetTrailingEdgeStreamPointer function [Streaming Media Devices], KsPinGetTrailingEdgeStreamPointer
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsPinGetTrailingEdgeStreamPointer
+title: KsPinGetTrailingEdgeStreamPointer function
+author: windows-driver-content
+description: The KsPinGetTrailingEdgeStreamPointer function acquires the trailing edge stream pointer for the queue associated with the specified pin.
+old-location: stream\kspingettrailingedgestreampointer.htm
+old-project: stream
+ms.assetid: 763f1f66-4d83-44aa-9db5-206cf6b6f9b1
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ks/KsPinGetTrailingEdgeStreamPointer, avfunc_3fd3182e-6e4d-4654-9de7-e9cea1086e3e.xml, stream.kspingettrailingedgestreampointer, KsPinGetTrailingEdgeStreamPointer function [Streaming Media Devices], KsPinGetTrailingEdgeStreamPointer
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsPinGetTrailingEdgeStreamPointer
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

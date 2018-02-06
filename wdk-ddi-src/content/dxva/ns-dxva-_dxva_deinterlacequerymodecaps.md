@@ -1,41 +1,46 @@
 ---
-UID : NS:dxva._DXVA_DeinterlaceQueryModeCaps
-title : "_DXVA_DeinterlaceQueryModeCaps"
-author : windows-driver-content
-description : The DXVA_DeinterlaceQueryModeCaps structure describes a deinterlacing mode.
-old-location : display\dxva_deinterlacequerymodecaps.htm
-old-project : display
-ms.assetid : 4978e4f6-23e3-4381-be4e-550292101013
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DXVA_DeinterlaceQueryModeCaps structure [Display Devices], dxva/DXVA_DeinterlaceQueryModeCaps, _DXVA_DeinterlaceQueryModeCaps, display.dxva_deinterlacequerymodecaps, DXVA_DeinterlaceQueryModeCaps, dxvaref_a9b0a8a8-0a11-417c-a356-6b39cb1f7ddb.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : dxva.h
-req.include-header : Dxva.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXVA_DeinterlaceQueryModeCaps
+UID: NS:dxva._DXVA_DeinterlaceQueryModeCaps
+title: "_DXVA_DeinterlaceQueryModeCaps"
+author: windows-driver-content
+description: The DXVA_DeinterlaceQueryModeCaps structure describes a deinterlacing mode.
+old-location: display\dxva_deinterlacequerymodecaps.htm
+old-project: display
+ms.assetid: 4978e4f6-23e3-4381-be4e-550292101013
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DXVA_DeinterlaceQueryModeCaps structure [Display Devices], dxva/DXVA_DeinterlaceQueryModeCaps, _DXVA_DeinterlaceQueryModeCaps, display.dxva_deinterlacequerymodecaps, DXVA_DeinterlaceQueryModeCaps, dxvaref_a9b0a8a8-0a11-417c-a356-6b39cb1f7ddb.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: dxva.h
+req.include-header: Dxva.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	dxva.h
+apiname:
+-	DXVA_DeinterlaceQueryModeCaps
+product: Windows
+targetos: Windows
+req.typenames: DXVA_DeinterlaceQueryModeCaps
 ---
 
 # _DXVA_DeinterlaceQueryModeCaps structure

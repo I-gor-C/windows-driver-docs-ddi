@@ -1,42 +1,47 @@
 ---
-UID : NF:winddiui.DevQueryPrintEx
-title : DevQueryPrintEx function
-author : windows-driver-content
-description : A printer interface DLL's DevQueryPrintEx function determines if a specified print job is compatible with the printer's current configuration and can therefore be printed.
-old-location : print\devqueryprintex.htm
-old-project : print
-ms.assetid : f4cd0fe6-acdc-43e6-8dd7-7b547b1ec7cc
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : print.devqueryprintex, print_interface-graphics_37504c69-c747-4758-928c-1ebd60e64c94.xml, DevQueryPrintEx, winddiui/DevQueryPrintEx, DevQueryPrintEx function [Print Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : winddiui.h
-req.include-header : Winddiui.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Winspool.lib
-req.dll : WinSpool.drv
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WINBIO_VERSION, *PWINBIO_VERSION
-req.product : Windows 10 or later.
+UID: NF:winddiui.DevQueryPrintEx
+title: DevQueryPrintEx function
+author: windows-driver-content
+description: A printer interface DLL's DevQueryPrintEx function determines if a specified print job is compatible with the printer's current configuration and can therefore be printed.
+old-location: print\devqueryprintex.htm
+old-project: print
+ms.assetid: f4cd0fe6-acdc-43e6-8dd7-7b547b1ec7cc
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: print.devqueryprintex, print_interface-graphics_37504c69-c747-4758-928c-1ebd60e64c94.xml, DevQueryPrintEx, winddiui/DevQueryPrintEx, DevQueryPrintEx function [Print Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: winddiui.h
+req.include-header: Winddiui.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Winspool.lib
+req.dll: WinSpool.drv
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	WinSpool.drv
+apiname:
+-	DevQueryPrintEx
+product: Windows
+targetos: Windows
+req.typenames: WINBIO_VERSION, *PWINBIO_VERSION
+req.product: Windows 10 or later.
 ---
 
 

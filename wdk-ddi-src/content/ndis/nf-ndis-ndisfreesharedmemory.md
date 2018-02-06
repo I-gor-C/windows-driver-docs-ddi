@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisFreeSharedMemory
-title : NdisFreeSharedMemory function
-author : windows-driver-content
-description : The NdisFreeSharedMemory function frees shared memory that a driver allocated from a shared memory provider.
-old-location : netvista\ndisfreesharedmemory.htm
-old-project : netvista
-ms.assetid : 5d0a1790-cec0-4c28-85dd-5f4d7d518d63
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : ndis_shared_memory_ref_b020f3ba-6e10-422f-9342-650236ace5f8.xml, NdisFreeSharedMemory function [Network Drivers Starting with Windows Vista], NdisFreeSharedMemory, netvista.ndisfreesharedmemory, ndis/NdisFreeSharedMemory
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported in NDIS 6.20 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisFreeSharedMemory
+title: NdisFreeSharedMemory function
+author: windows-driver-content
+description: The NdisFreeSharedMemory function frees shared memory that a driver allocated from a shared memory provider.
+old-location: netvista\ndisfreesharedmemory.htm
+old-project: netvista
+ms.assetid: 5d0a1790-cec0-4c28-85dd-5f4d7d518d63
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: ndis_shared_memory_ref_b020f3ba-6e10-422f-9342-650236ace5f8.xml, NdisFreeSharedMemory function [Network Drivers Starting with Windows Vista], NdisFreeSharedMemory, netvista.ndisfreesharedmemory, ndis/NdisFreeSharedMemory
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported in NDIS 6.20 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisFreeSharedMemory
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

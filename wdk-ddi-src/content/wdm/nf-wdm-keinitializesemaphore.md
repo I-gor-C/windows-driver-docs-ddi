@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.KeInitializeSemaphore
-title : KeInitializeSemaphore function
-author : windows-driver-content
-description : The KeInitializeSemaphore routine initializes a semaphore object with a specified count and specifies an upper limit that the count can attain.
-old-location : kernel\keinitializesemaphore.htm
-old-project : kernel
-ms.assetid : 447a7ba5-8357-4383-987f-51f5b3c9996c
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : k105_a966274e-6afe-4569-ae7c-65dccbb3f1dc.xml, KeInitializeSemaphore routine [Kernel-Mode Driver Architecture], KeInitializeSemaphore, wdm/KeInitializeSemaphore, kernel.keinitializesemaphore
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : IrqlKeDispatchLte, PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.KeInitializeSemaphore
+title: KeInitializeSemaphore function
+author: windows-driver-content
+description: The KeInitializeSemaphore routine initializes a semaphore object with a specified count and specifies an upper limit that the count can attain.
+old-location: kernel\keinitializesemaphore.htm
+old-project: kernel
+ms.assetid: 447a7ba5-8357-4383-987f-51f5b3c9996c
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: k105_a966274e-6afe-4569-ae7c-65dccbb3f1dc.xml, KeInitializeSemaphore routine [Kernel-Mode Driver Architecture], KeInitializeSemaphore, wdm/KeInitializeSemaphore, kernel.keinitializesemaphore
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: IrqlKeDispatchLte, PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	KeInitializeSemaphore
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

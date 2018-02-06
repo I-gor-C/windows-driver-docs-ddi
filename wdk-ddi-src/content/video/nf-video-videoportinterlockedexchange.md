@@ -1,42 +1,47 @@
 ---
-UID : NF:video.VideoPortInterlockedExchange
-title : VideoPortInterlockedExchange function
-author : windows-driver-content
-description : The VideoPortInterlockedExchange function locks or unlocks a block of memory by setting a user-defined lock variable to TRUE or FALSE, respectively. It returns the previously-held value of the lock variable.
-old-location : display\videoportinterlockedexchange.htm
-old-project : display
-ms.assetid : a01f1552-7bc5-4ae7-a195-c4cfc3553595
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : VideoPortInterlockedExchange function [Display Devices], display.videoportinterlockedexchange, video/VideoPortInterlockedExchange, VideoPortInterlockedExchange, VideoPort_Functions_2b2228a1-aca1-4661-ab6a-8747213bcd26.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows 2000 and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Videoprt.lib
-req.dll : Videoprt.sys
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_PORT_SERVICES
-req.product : Windows 10 or later.
+UID: NF:video.VideoPortInterlockedExchange
+title: VideoPortInterlockedExchange function
+author: windows-driver-content
+description: The VideoPortInterlockedExchange function locks or unlocks a block of memory by setting a user-defined lock variable to TRUE or FALSE, respectively. It returns the previously-held value of the lock variable.
+old-location: display\videoportinterlockedexchange.htm
+old-project: display
+ms.assetid: a01f1552-7bc5-4ae7-a195-c4cfc3553595
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: VideoPortInterlockedExchange function [Display Devices], display.videoportinterlockedexchange, video/VideoPortInterlockedExchange, VideoPortInterlockedExchange, VideoPort_Functions_2b2228a1-aca1-4661-ab6a-8747213bcd26.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows 2000 and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Videoprt.lib
+req.dll: Videoprt.sys
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Videoprt.sys
+apiname:
+-	VideoPortInterlockedExchange
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_PORT_SERVICES
+req.product: Windows 10 or later.
 ---
 
 

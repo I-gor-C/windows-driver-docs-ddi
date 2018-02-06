@@ -1,42 +1,49 @@
 ---
-UID : NF:wdm.TmRollbackTransaction
-title : TmRollbackTransaction function
-author : windows-driver-content
-description : The TmRollbackTransaction routine initiates a rollback operation for a specified transaction.
-old-location : kernel\tmrollbacktransaction.htm
-old-project : kernel
-ms.assetid : 5626a92e-bd26-41a3-8475-916efb2292ff
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : TmRollbackTransaction, kernel.tmrollbacktransaction, TmRollbackTransaction routine [Kernel-Mode Driver Architecture], ktm_ref_5ea93853-7ca0-4db2-b5ca-3329b5c7f0f0.xml, wdm/TmRollbackTransaction
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later operating system versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.TmRollbackTransaction
+title: TmRollbackTransaction function
+author: windows-driver-content
+description: The TmRollbackTransaction routine initiates a rollback operation for a specified transaction.
+old-location: kernel\tmrollbacktransaction.htm
+old-project: kernel
+ms.assetid: 5626a92e-bd26-41a3-8475-916efb2292ff
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: TmRollbackTransaction, kernel.tmrollbacktransaction, TmRollbackTransaction routine [Kernel-Mode Driver Architecture], ktm_ref_5ea93853-7ca0-4db2-b5ca-3329b5c7f0f0.xml, wdm/TmRollbackTransaction
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later operating system versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+-	Ext-MS-Win-ntos-tm-l1-1-0.dll
+-	tm.sys
+apiname:
+-	TmRollbackTransaction
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

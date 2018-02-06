@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dhal._D3DHAL_DP2POINTS
-title : "_D3DHAL_DP2POINTS"
-author : windows-driver-content
-description : One or more D3DHAL_DP2POINTS structures are parsed from the command buffer by the D3dDrawPrimitives2 callback when the D3DHAL_DP2COMMAND structure's bCommand member is set to D3DDP2OP_POINTS, and are used to render the specified points.
-old-location : display\d3dhal_dp2points.htm
-old-project : display
-ms.assetid : 9987ed83-7aa1-4e07-a85b-26607000ecba
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DHAL_DP2POINTS structure [Display Devices], d3dstrct_ab7299b5-74b9-43bb-8784-6c1249e23f2f.xml, d3dhal/LPD3DHAL_DP2POINTS, LPD3DHAL_DP2POINTS, D3DHAL_DP2POINTS, *LPD3DHAL_DP2POINTS, LPD3DHAL_DP2POINTS structure pointer [Display Devices], d3dhal/D3DHAL_DP2POINTS, display.d3dhal_dp2points, _D3DHAL_DP2POINTS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dhal.h
-req.include-header : D3dhal.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*LPD3DHAL_DP2POINTS, D3DHAL_DP2POINTS"
+UID: NS:d3dhal._D3DHAL_DP2POINTS
+title: "_D3DHAL_DP2POINTS"
+author: windows-driver-content
+description: One or more D3DHAL_DP2POINTS structures are parsed from the command buffer by the D3dDrawPrimitives2 callback when the D3DHAL_DP2COMMAND structure's bCommand member is set to D3DDP2OP_POINTS, and are used to render the specified points.
+old-location: display\d3dhal_dp2points.htm
+old-project: display
+ms.assetid: 9987ed83-7aa1-4e07-a85b-26607000ecba
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DHAL_DP2POINTS structure [Display Devices], d3dstrct_ab7299b5-74b9-43bb-8784-6c1249e23f2f.xml, d3dhal/LPD3DHAL_DP2POINTS, LPD3DHAL_DP2POINTS, D3DHAL_DP2POINTS, *LPD3DHAL_DP2POINTS, LPD3DHAL_DP2POINTS structure pointer [Display Devices], d3dhal/D3DHAL_DP2POINTS, display.d3dhal_dp2points, _D3DHAL_DP2POINTS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dhal.h
+req.include-header: D3dhal.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dhal.h
+apiname:
+-	D3DHAL_DP2POINTS
+product: Windows
+targetos: Windows
+req.typenames: "*LPD3DHAL_DP2POINTS, D3DHAL_DP2POINTS"
 ---
 
 # _D3DHAL_DP2POINTS structure

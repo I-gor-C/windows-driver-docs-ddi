@@ -1,41 +1,49 @@
 ---
-UID : NF:dbgeng.IDebugDataSpaces4.CheckLowMemory
-title : IDebugDataSpaces4::CheckLowMemory method
-author : windows-driver-content
-description : The CheckLowMemory method checks for memory corruption in the low 4 GB of memory.
-old-location : debugger\checklowmemory.htm
-old-project : debugger
-ms.assetid : b7e3bb5c-d4c7-469e-aa2d-fa9a98706c2f
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : CheckLowMemory, CheckLowMemory method [Windows Debugging], IDebugDataSpaces2 interface, IDebugDataSpaces interface [Windows Debugging], CheckLowMemory method, IDebugDataSpaces2::CheckLowMemory, dbgeng/IDebugDataSpaces2::CheckLowMemory, CheckLowMemory method [Windows Debugging], IDebugDataSpaces3 interface [Windows Debugging], CheckLowMemory method, IDebugDataSpaces3::CheckLowMemory, CheckLowMemory method [Windows Debugging], IDebugDataSpaces3 interface, dbgeng/IDebugDataSpaces::CheckLowMemory, IDebugDataSpaces4::CheckLowMemory, IDebugDataSpaces2 interface [Windows Debugging], CheckLowMemory method, IDebugDataSpaces4 interface [Windows Debugging], CheckLowMemory method, dbgeng/IDebugDataSpaces3::CheckLowMemory, IDebugDataSpaces_6682f39e-295a-4dae-b8a3-d83b1d5e41be.xml, IDebugDataSpaces4, debugger.checklowmemory, dbgeng/IDebugDataSpaces4::CheckLowMemory, IDebugDataSpaces::CheckLowMemory, CheckLowMemory method [Windows Debugging], IDebugDataSpaces interface, CheckLowMemory method [Windows Debugging], IDebugDataSpaces4 interface
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugDataSpaces4.CheckLowMemory
+title: IDebugDataSpaces4::CheckLowMemory method
+author: windows-driver-content
+description: The CheckLowMemory method checks for memory corruption in the low 4 GB of memory.
+old-location: debugger\checklowmemory.htm
+old-project: debugger
+ms.assetid: b7e3bb5c-d4c7-469e-aa2d-fa9a98706c2f
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: CheckLowMemory, CheckLowMemory method [Windows Debugging], IDebugDataSpaces2 interface, IDebugDataSpaces interface [Windows Debugging], CheckLowMemory method, IDebugDataSpaces2::CheckLowMemory, dbgeng/IDebugDataSpaces2::CheckLowMemory, CheckLowMemory method [Windows Debugging], IDebugDataSpaces3 interface [Windows Debugging], CheckLowMemory method, IDebugDataSpaces3::CheckLowMemory, CheckLowMemory method [Windows Debugging], IDebugDataSpaces3 interface, dbgeng/IDebugDataSpaces::CheckLowMemory, IDebugDataSpaces4::CheckLowMemory, IDebugDataSpaces2 interface [Windows Debugging], CheckLowMemory method, IDebugDataSpaces4 interface [Windows Debugging], CheckLowMemory method, dbgeng/IDebugDataSpaces3::CheckLowMemory, IDebugDataSpaces_6682f39e-295a-4dae-b8a3-d83b1d5e41be.xml, IDebugDataSpaces4, debugger.checklowmemory, dbgeng/IDebugDataSpaces4::CheckLowMemory, IDebugDataSpaces::CheckLowMemory, CheckLowMemory method [Windows Debugging], IDebugDataSpaces interface, CheckLowMemory method [Windows Debugging], IDebugDataSpaces4 interface
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Dbgeng.h
+apiname:
+-	IDebugDataSpaces.CheckLowMemory
+-	IDebugDataSpaces2.CheckLowMemory
+-	IDebugDataSpaces3.CheckLowMemory
+-	IDebugDataSpaces4.CheckLowMemory
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

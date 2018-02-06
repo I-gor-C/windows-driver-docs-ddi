@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.FsRtlIncrementCcFastReadResourceMiss
-title : FsRtlIncrementCcFastReadResourceMiss function
-author : windows-driver-content
-description : The FsRtlIncrementCcFastReadResourceMiss routine increments the CcFastReadNotPossible performance counter in a per processor control block of cache manager system counters.
-old-location : ifsk\fsrtlincrementccfastreadresourcemiss.htm
-old-project : ifsk
-ms.assetid : 38264afe-e324-455d-b81a-7dafae8abc1c
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FsRtlIncrementCcFastReadResourceMiss, ntifs/FsRtlIncrementCcFastReadResourceMiss, fsrtlref_4eb3905b-e599-451e-ba6c-29b800b277a5.xml, FsRtlIncrementCcFastReadResourceMiss routine [Installable File System Drivers], ifsk.fsrtlincrementccfastreadresourcemiss
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : This routine is available on Microsoft Windows XP and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.FsRtlIncrementCcFastReadResourceMiss
+title: FsRtlIncrementCcFastReadResourceMiss function
+author: windows-driver-content
+description: The FsRtlIncrementCcFastReadResourceMiss routine increments the CcFastReadNotPossible performance counter in a per processor control block of cache manager system counters.
+old-location: ifsk\fsrtlincrementccfastreadresourcemiss.htm
+old-project: ifsk
+ms.assetid: 38264afe-e324-455d-b81a-7dafae8abc1c
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FsRtlIncrementCcFastReadResourceMiss, ntifs/FsRtlIncrementCcFastReadResourceMiss, fsrtlref_4eb3905b-e599-451e-ba6c-29b800b277a5.xml, FsRtlIncrementCcFastReadResourceMiss routine [Installable File System Drivers], ifsk.fsrtlincrementccfastreadresourcemiss
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: This routine is available on Microsoft Windows XP and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	FsRtlIncrementCcFastReadResourceMiss
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NN:dbgeng.IDebugOutputCallbacksWide
-title : IDebugOutputCallbacksWide
-author : windows-driver-content
-description : IDebugOutputCallbacksWide interface
-old-location : debugger\idebugoutputcallbackswide.htm
-old-project : debugger
-ms.assetid : 2f0c10f7-009a-4108-ad23-d6b6e2e1257e
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : debugger.idebugoutputcallbackswide, IDebugOutputCallbacksWide interface [Windows Debugging], IDebugOutputCallbacksWide interface [Windows Debugging], described, IDebugOutputCallbacksWide, dbgeng/IDebugOutputCallbacksWide
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NN:dbgeng.IDebugOutputCallbacksWide
+title: IDebugOutputCallbacksWide
+author: windows-driver-content
+description: IDebugOutputCallbacksWide interface
+old-location: debugger\idebugoutputcallbackswide.htm
+old-project: debugger
+ms.assetid: 2f0c10f7-009a-4108-ad23-d6b6e2e1257e
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: debugger.idebugoutputcallbackswide, IDebugOutputCallbacksWide interface [Windows Debugging], IDebugOutputCallbacksWide interface [Windows Debugging], described, IDebugOutputCallbacksWide, dbgeng/IDebugOutputCallbacksWide
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugOutputCallbacksWide
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 # IDebugOutputCallbacksWide interface

@@ -1,41 +1,47 @@
 ---
-UID : NF:ntifs.ZwLockFile
-title : ZwLockFile function
-author : windows-driver-content
-description : The ZwLockFile routine requests a byte-range lock for the specified file.
-old-location : kernel\zwlockfile.htm
-old-project : kernel
-ms.assetid : d5d4d13c-93d9-4531-85ff-d3fa0e52ecc1
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : k111_267331a3-5339-46ce-a0b6-d7b2e0aba68f.xml, ZwLockFile routine [Kernel-Mode Driver Architecture], kernel.zwlockfile, ZwLockFile, ntifs/NtLockFile, ntifs/ZwLockFile, NtLockFile
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h, FltKernel.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 7.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.ZwLockFile
+title: ZwLockFile function
+author: windows-driver-content
+description: The ZwLockFile routine requests a byte-range lock for the specified file.
+old-location: kernel\zwlockfile.htm
+old-project: kernel
+ms.assetid: d5d4d13c-93d9-4531-85ff-d3fa0e52ecc1
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: k111_267331a3-5339-46ce-a0b6-d7b2e0aba68f.xml, ZwLockFile routine [Kernel-Mode Driver Architecture], kernel.zwlockfile, ZwLockFile, ntifs/NtLockFile, ntifs/ZwLockFile, NtLockFile
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h, FltKernel.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 7.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ZwLockFile
+-	NtLockFile
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

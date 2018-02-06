@@ -1,41 +1,46 @@
 ---
-UID : NC:dispmprt.DXGKDDI_START_DEVICE
-title : DXGKDDI_START_DEVICE
-author : windows-driver-content
-description : The DxgkDdiStartDevice function prepares a display adapter to receive I/O requests.
-old-location : display\dxgkddistartdevice.htm
-old-project : display
-ms.assetid : ffacbb39-2581-4207-841d-28ce57fbc64d
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkddistartdevice, DxgkDdiStartDevice callback function [Display Devices], DxgkDdiStartDevice, DXGKDDI_START_DEVICE, DXGKDDI_START_DEVICE, dispmprt/DxgkDdiStartDevice, DmFunctions_3b4ea5b7-9ccb-408f-9f37-693965ee99cf.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : dispmprt.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Available starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
+UID: NC:dispmprt.DXGKDDI_START_DEVICE
+title: DXGKDDI_START_DEVICE
+author: windows-driver-content
+description: The DxgkDdiStartDevice function prepares a display adapter to receive I/O requests.
+old-location: display\dxgkddistartdevice.htm
+old-project: display
+ms.assetid: ffacbb39-2581-4207-841d-28ce57fbc64d
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkddistartdevice, DxgkDdiStartDevice callback function [Display Devices], DxgkDdiStartDevice, DXGKDDI_START_DEVICE, DXGKDDI_START_DEVICE, dispmprt/DxgkDdiStartDevice, DmFunctions_3b4ea5b7-9ccb-408f-9f37-693965ee99cf.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: dispmprt.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Available starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	dispmprt.h
+apiname:
+-	DxgkDdiStartDevice
+product: Windows
+targetos: Windows
+req.typenames: SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ---
 
 

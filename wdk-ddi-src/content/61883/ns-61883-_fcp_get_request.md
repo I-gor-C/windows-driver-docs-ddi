@@ -1,41 +1,46 @@
 ---
-UID : NS:61883._FCP_GET_REQUEST
-title : "_FCP_GET_REQUEST"
-author : windows-driver-content
-description : This structure is used for a get request.
-old-location : ieee\fcp_get_request.htm
-old-project : IEEE
-ms.assetid : 4DD05230-E9CA-4067-984B-7F0540FE8079
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : IEEE.fcp_get_request, PFCP_GET_REQUEST structure pointer [Buses], 61883/FCP_GET_REQUEST, _FCP_GET_REQUEST, FCP_GET_REQUEST structure [Buses], PFCP_GET_REQUEST, *PFCP_GET_REQUEST, FCP_GET_REQUEST, 61883/PFCP_GET_REQUEST
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : 61883.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FCP_GET_REQUEST, *PFCP_GET_REQUEST
+UID: NS:61883._FCP_GET_REQUEST
+title: "_FCP_GET_REQUEST"
+author: windows-driver-content
+description: This structure is used for a get request.
+old-location: ieee\fcp_get_request.htm
+old-project: IEEE
+ms.assetid: 4DD05230-E9CA-4067-984B-7F0540FE8079
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: IEEE.fcp_get_request, PFCP_GET_REQUEST structure pointer [Buses], 61883/FCP_GET_REQUEST, _FCP_GET_REQUEST, FCP_GET_REQUEST structure [Buses], PFCP_GET_REQUEST, *PFCP_GET_REQUEST, FCP_GET_REQUEST, 61883/PFCP_GET_REQUEST
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: 61883.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	61883.h
+apiname:
+-	FCP_GET_REQUEST
+product: Windows
+targetos: Windows
+req.typenames: FCP_GET_REQUEST, *PFCP_GET_REQUEST
 ---
 
 # _FCP_GET_REQUEST structure

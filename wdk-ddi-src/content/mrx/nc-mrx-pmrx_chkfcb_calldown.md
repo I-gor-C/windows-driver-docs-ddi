@@ -1,41 +1,46 @@
 ---
-UID : NC:mrx.PMRX_CHKFCB_CALLDOWN
-title : PMRX_CHKFCB_CALLDOWN
-author : windows-driver-content
-description : The MRxAreFilesAliased routine is called by RDBSS to request the network mini-redirector to determine if two FCB structures represent the same file.
-old-location : ifsk\mrxarefilesaliased.htm
-old-project : ifsk
-ms.assetid : 273266b3-98f4-4c93-a06b-8e149440ad24
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.mrxarefilesaliased, MRxAreFilesAliased, MRxAreFilesAliased routine [Installable File System Drivers], MRxAreFilesAliased, PMRX_CHKFCB_CALLDOWN, PMRX_CHKFCB_CALLDOWN, mrx/MRxAreFilesAliased, mrxref_5d6e6988-84d7-43ac-860e-4f184686a9e6.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : mrx.h
-req.include-header : Mrx.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SetDSMCounters_IN, *PSetDSMCounters_IN
+UID: NC:mrx.PMRX_CHKFCB_CALLDOWN
+title: PMRX_CHKFCB_CALLDOWN
+author: windows-driver-content
+description: The MRxAreFilesAliased routine is called by RDBSS to request the network mini-redirector to determine if two FCB structures represent the same file.
+old-location: ifsk\mrxarefilesaliased.htm
+old-project: ifsk
+ms.assetid: 273266b3-98f4-4c93-a06b-8e149440ad24
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.mrxarefilesaliased, MRxAreFilesAliased, MRxAreFilesAliased routine [Installable File System Drivers], MRxAreFilesAliased, PMRX_CHKFCB_CALLDOWN, PMRX_CHKFCB_CALLDOWN, mrx/MRxAreFilesAliased, mrxref_5d6e6988-84d7-43ac-860e-4f184686a9e6.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: mrx.h
+req.include-header: Mrx.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	mrx.h
+apiname:
+-	MRxAreFilesAliased
+product: Windows
+targetos: Windows
+req.typenames: SetDSMCounters_IN, *PSetDSMCounters_IN
 ---
 
 

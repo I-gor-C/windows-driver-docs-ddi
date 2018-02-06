@@ -1,42 +1,47 @@
 ---
-UID : NC:wdfdevice.EVT_WDF_DEVICE_RELATIONS_QUERY
-title : EVT_WDF_DEVICE_RELATIONS_QUERY
-author : windows-driver-content
-description : A driver's EvtDeviceRelationsQuery event callback reports changes in the relationships among devices that are supported by the driver.
-old-location : wdf\evtdevicerelationsquery.htm
-old-project : wdf
-ms.assetid : 3a156696-1dd5-4383-a0cc-8d07ec92bdbf
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.evtdevicerelationsquery, EvtDeviceRelationsQuery callback function, EvtDeviceRelationsQuery, EVT_WDF_DEVICE_RELATIONS_QUERY, EVT_WDF_DEVICE_RELATIONS_QUERY, wdfdevice/EvtDeviceRelationsQuery, DFDeviceObjectGeneralRef_b34ffaf4-1e73-4463-87fd-31350656a7a5.xml, kmdf.evtdevicerelationsquery
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdfdevice.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_DEVICE_SHUTDOWN_FLAGS
-req.product : Windows 10 or later.
+UID: NC:wdfdevice.EVT_WDF_DEVICE_RELATIONS_QUERY
+title: EVT_WDF_DEVICE_RELATIONS_QUERY
+author: windows-driver-content
+description: A driver's EvtDeviceRelationsQuery event callback reports changes in the relationships among devices that are supported by the driver.
+old-location: wdf\evtdevicerelationsquery.htm
+old-project: wdf
+ms.assetid: 3a156696-1dd5-4383-a0cc-8d07ec92bdbf
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.evtdevicerelationsquery, EvtDeviceRelationsQuery callback function, EvtDeviceRelationsQuery, EVT_WDF_DEVICE_RELATIONS_QUERY, EVT_WDF_DEVICE_RELATIONS_QUERY, wdfdevice/EvtDeviceRelationsQuery, DFDeviceObjectGeneralRef_b34ffaf4-1e73-4463-87fd-31350656a7a5.xml, kmdf.evtdevicerelationsquery
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdfdevice.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Wdfdevice.h
+apiname:
+-	EvtDeviceRelationsQuery
+product: Windows
+targetos: Windows
+req.typenames: WDF_DEVICE_SHUTDOWN_FLAGS
+req.product: Windows 10 or later.
 ---
 
 

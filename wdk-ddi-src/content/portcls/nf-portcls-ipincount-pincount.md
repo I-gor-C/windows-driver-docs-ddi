@@ -1,41 +1,46 @@
 ---
-UID : NF:portcls.IPinCount.PinCount
-title : IPinCount::PinCount method
-author : windows-driver-content
-description : The PinCount method queries the miniport driver for its pin count.
-old-location : audio\ipincount_pincount.htm
-old-project : audio
-ms.assetid : 8b7a49cc-5061-475b-ac03-cbf43954c413
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : audio.ipincount_pincount, PinCount method [Audio Devices], IPinCount interface, audmp-routines_bded3ce8-936c-4391-901f-df6b2061c7c3.xml, IPinCount, PinCount method [Audio Devices], IPinCount interface [Audio Devices], PinCount method, PinCount, portcls/IPinCount::PinCount, IPinCount::PinCount
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : portcls.h
-req.include-header : Portcls.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : portcls.h
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.IPinCount.PinCount
+title: IPinCount::PinCount method
+author: windows-driver-content
+description: The PinCount method queries the miniport driver for its pin count.
+old-location: audio\ipincount_pincount.htm
+old-project: audio
+ms.assetid: 8b7a49cc-5061-475b-ac03-cbf43954c413
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: audio.ipincount_pincount, PinCount method [Audio Devices], IPinCount interface, audmp-routines_bded3ce8-936c-4391-901f-df6b2061c7c3.xml, IPinCount, PinCount method [Audio Devices], IPinCount interface [Audio Devices], PinCount method, PinCount, portcls/IPinCount::PinCount, IPinCount::PinCount
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: portcls.h
+req.include-header: Portcls.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: portcls.h
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	portcls.h
+apiname:
+-	IPinCount.PinCount
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

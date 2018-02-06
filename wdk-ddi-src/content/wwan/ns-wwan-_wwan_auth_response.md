@@ -1,42 +1,47 @@
 ---
-UID : NS:wwan._WWAN_AUTH_RESPONSE
-title : "_WWAN_AUTH_RESPONSE"
-author : windows-driver-content
-description : The WWAN_AUTH_RESPONSE structure represents an authentication challenge response.
-old-location : netvista\wwan_auth_response.htm
-old-project : netvista
-ms.assetid : CD0B90A1-032D-4F09-827F-E80607AE4EA7
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : WWAN_AUTH_RESPONSE structure [Network Drivers Starting with Windows Vista], wwan/PWWAN_AUTH_RESPONSE, _WWAN_AUTH_RESPONSE, *PWWAN_AUTH_RESPONSE, WWAN_AUTH_RESPONSE, wwan/WWAN_AUTH_RESPONSE, netvista.wwan_auth_response, PWWAN_AUTH_RESPONSE structure pointer [Network Drivers Starting with Windows Vista], PWWAN_AUTH_RESPONSE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wwan.h
-req.include-header : Wwan.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with  Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WWAN_AUTH_RESPONSE, *PWWAN_AUTH_RESPONSE
-req.product : Windows 10 or later.
+UID: NS:wwan._WWAN_AUTH_RESPONSE
+title: "_WWAN_AUTH_RESPONSE"
+author: windows-driver-content
+description: The WWAN_AUTH_RESPONSE structure represents an authentication challenge response.
+old-location: netvista\wwan_auth_response.htm
+old-project: netvista
+ms.assetid: CD0B90A1-032D-4F09-827F-E80607AE4EA7
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: WWAN_AUTH_RESPONSE structure [Network Drivers Starting with Windows Vista], wwan/PWWAN_AUTH_RESPONSE, _WWAN_AUTH_RESPONSE, *PWWAN_AUTH_RESPONSE, WWAN_AUTH_RESPONSE, wwan/WWAN_AUTH_RESPONSE, netvista.wwan_auth_response, PWWAN_AUTH_RESPONSE structure pointer [Network Drivers Starting with Windows Vista], PWWAN_AUTH_RESPONSE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wwan.h
+req.include-header: Wwan.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with  Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wwan.h
+apiname:
+-	WWAN_AUTH_RESPONSE
+product: Windows
+targetos: Windows
+req.typenames: WWAN_AUTH_RESPONSE, *PWWAN_AUTH_RESPONSE
+req.product: Windows 10 or later.
 ---
 
 # _WWAN_AUTH_RESPONSE structure

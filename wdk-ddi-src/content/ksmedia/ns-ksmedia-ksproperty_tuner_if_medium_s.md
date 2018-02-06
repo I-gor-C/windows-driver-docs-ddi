@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.KSPROPERTY_TUNER_IF_MEDIUM_S
-title : KSPROPERTY_TUNER_IF_MEDIUM_S
-author : windows-driver-content
-description : The KSPROPERTY_TUNER_IF_MEDIUM_S structure returns the Medium GUID for the pin that is capable of supporting tuning to an intermediate frequency.
-old-location : stream\ksproperty_tuner_if_medium_s.htm
-old-project : stream
-ms.assetid : 19f79b01-1a3c-4695-96ec-2f7410f6b4aa
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : "*PKSPROPERTY_TUNER_IF_MEDIUM_S, PKSPROPERTY_TUNER_IF_MEDIUM_S structure pointer [Streaming Media Devices], stream.ksproperty_tuner_if_medium_s, KSPROPERTY_TUNER_IF_MEDIUM_S, KSPROPERTY_TUNER_IF_MEDIUM_S structure [Streaming Media Devices], PKSPROPERTY_TUNER_IF_MEDIUM_S, ksmedia/KSPROPERTY_TUNER_IF_MEDIUM_S, ksmedia/PKSPROPERTY_TUNER_IF_MEDIUM_S, vidcapstruct_8fb32d31-0264-49c3-b8de-3773e37441cc.xml"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKSPROPERTY_TUNER_IF_MEDIUM_S, KSPROPERTY_TUNER_IF_MEDIUM_S"
+UID: NS:ksmedia.KSPROPERTY_TUNER_IF_MEDIUM_S
+title: KSPROPERTY_TUNER_IF_MEDIUM_S
+author: windows-driver-content
+description: The KSPROPERTY_TUNER_IF_MEDIUM_S structure returns the Medium GUID for the pin that is capable of supporting tuning to an intermediate frequency.
+old-location: stream\ksproperty_tuner_if_medium_s.htm
+old-project: stream
+ms.assetid: 19f79b01-1a3c-4695-96ec-2f7410f6b4aa
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: "*PKSPROPERTY_TUNER_IF_MEDIUM_S, PKSPROPERTY_TUNER_IF_MEDIUM_S structure pointer [Streaming Media Devices], stream.ksproperty_tuner_if_medium_s, KSPROPERTY_TUNER_IF_MEDIUM_S, KSPROPERTY_TUNER_IF_MEDIUM_S structure [Streaming Media Devices], PKSPROPERTY_TUNER_IF_MEDIUM_S, ksmedia/KSPROPERTY_TUNER_IF_MEDIUM_S, ksmedia/PKSPROPERTY_TUNER_IF_MEDIUM_S, vidcapstruct_8fb32d31-0264-49c3-b8de-3773e37441cc.xml"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	KSPROPERTY_TUNER_IF_MEDIUM_S
+product: Windows
+targetos: Windows
+req.typenames: "*PKSPROPERTY_TUNER_IF_MEDIUM_S, KSPROPERTY_TUNER_IF_MEDIUM_S"
 ---
 
 # KSPROPERTY_TUNER_IF_MEDIUM_S structure

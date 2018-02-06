@@ -1,41 +1,46 @@
 ---
-UID : NC:pepfx.PEPCALLBACKNOTIFYDPM
-title : PEPCALLBACKNOTIFYDPM
-author : windows-driver-content
-description : An AcceptDeviceNotification event callback routine handles device power management (DPM) notifications from the Windows power management framework (PoFx).
-old-location : kernel\acceptdevicenotification.htm
-old-project : kernel
-ms.assetid : 56446DA9-EAE9-4EEF-9299-892B7384D506
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.acceptdevicenotification, AcceptDeviceNotification routine [Kernel-Mode Driver Architecture], AcceptDeviceNotification, PEPCALLBACKNOTIFYDPM, PEPCALLBACKNOTIFYDPM, pepfx/AcceptDeviceNotification
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : pepfx.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with Windows 10.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VPCI_PNP_ID, *PVPCI_PNP_ID
+UID: NC:pepfx.PEPCALLBACKNOTIFYDPM
+title: PEPCALLBACKNOTIFYDPM
+author: windows-driver-content
+description: An AcceptDeviceNotification event callback routine handles device power management (DPM) notifications from the Windows power management framework (PoFx).
+old-location: kernel\acceptdevicenotification.htm
+old-project: kernel
+ms.assetid: 56446DA9-EAE9-4EEF-9299-892B7384D506
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.acceptdevicenotification, AcceptDeviceNotification routine [Kernel-Mode Driver Architecture], AcceptDeviceNotification, PEPCALLBACKNOTIFYDPM, PEPCALLBACKNOTIFYDPM, pepfx/AcceptDeviceNotification
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: pepfx.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows 10.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	pepfx.h
+apiname:
+-	AcceptDeviceNotification
+product: Windows
+targetos: Windows
+req.typenames: VPCI_PNP_ID, *PVPCI_PNP_ID
 ---
 
 

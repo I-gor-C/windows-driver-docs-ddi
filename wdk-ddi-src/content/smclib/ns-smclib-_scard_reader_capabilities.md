@@ -1,42 +1,47 @@
 ---
-UID : NS:smclib._SCARD_READER_CAPABILITIES
-title : "_SCARD_READER_CAPABILITIES"
-author : windows-driver-content
-description : The SCARD_READER_CAPABILITIES structure holds state information about the smart card reader.
-old-location : smartcrd\scard_reader_capabilities.htm
-old-project : smartcrd
-ms.assetid : f55b74d0-d545-419a-87fb-c320f789aaf4
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : "*PSCARD_READER_CAPABILITIES, SCARD_READER_CAPABILITIES, smclib/SCARD_READER_CAPABILITIES, smclib/*PSCARD_READER_CAPABILITIES, _SCARD_READER_CAPABILITIES, scstruct_bf7b8868-e647-42c5-8e1d-18681db95b08.xml, *PSCARD_READER_CAPABILITIES structure [Smart Card Reader Devices], SCARD_READER_CAPABILITIES structure [Smart Card Reader Devices], smartcrd.scard_reader_capabilities"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : smclib.h
-req.include-header : Smclib.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SCARD_READER_CAPABILITIES, *PSCARD_READER_CAPABILITIES
-req.product : Windows 10 or later.
+UID: NS:smclib._SCARD_READER_CAPABILITIES
+title: "_SCARD_READER_CAPABILITIES"
+author: windows-driver-content
+description: The SCARD_READER_CAPABILITIES structure holds state information about the smart card reader.
+old-location: smartcrd\scard_reader_capabilities.htm
+old-project: smartcrd
+ms.assetid: f55b74d0-d545-419a-87fb-c320f789aaf4
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: "*PSCARD_READER_CAPABILITIES, SCARD_READER_CAPABILITIES, smclib/SCARD_READER_CAPABILITIES, smclib/*PSCARD_READER_CAPABILITIES, _SCARD_READER_CAPABILITIES, scstruct_bf7b8868-e647-42c5-8e1d-18681db95b08.xml, *PSCARD_READER_CAPABILITIES structure [Smart Card Reader Devices], SCARD_READER_CAPABILITIES structure [Smart Card Reader Devices], smartcrd.scard_reader_capabilities"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: smclib.h
+req.include-header: Smclib.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Smclib.h
+apiname:
+-	SCARD_READER_CAPABILITIES
+product: Windows
+targetos: Windows
+req.typenames: SCARD_READER_CAPABILITIES, *PSCARD_READER_CAPABILITIES
+req.product: Windows 10 or later.
 ---
 
 # _SCARD_READER_CAPABILITIES structure

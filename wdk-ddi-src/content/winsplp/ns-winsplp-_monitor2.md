@@ -1,42 +1,47 @@
 ---
-UID : NS:winsplp._MONITOR2
-title : "_MONITOR2"
-author : windows-driver-content
-description : The MONITOR2 structure contains pointers to the functions defined by print monitors.
-old-location : print\monitor2.htm
-old-project : print
-ms.assetid : 0bfb5119-2034-4e63-9fbe-e2ff42a352d6
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : winsplp/LPMONITOR2, print.monitor2, winsplp/MONITOR2, winsplp/PMONITOR2, *LPMONITOR2, MONITOR2 structure [Print Devices], LPMONITOR2, _MONITOR2, PMONITOR2 structure pointer [Print Devices], *PMONITOR2, spoolfnc_db4ec1e7-1368-4695-bae0-91fd5dcd8a1a.xml, PMONITOR2, MONITOR2, LPMONITOR2 structure pointer [Print Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : winsplp.h
-req.include-header : Winsplp.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PMONITOR2, *LPMONITOR2, MONITOR2"
-req.product : Windows 10 or later.
+UID: NS:winsplp._MONITOR2
+title: "_MONITOR2"
+author: windows-driver-content
+description: The MONITOR2 structure contains pointers to the functions defined by print monitors.
+old-location: print\monitor2.htm
+old-project: print
+ms.assetid: 0bfb5119-2034-4e63-9fbe-e2ff42a352d6
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: winsplp/LPMONITOR2, print.monitor2, winsplp/MONITOR2, winsplp/PMONITOR2, *LPMONITOR2, MONITOR2 structure [Print Devices], LPMONITOR2, _MONITOR2, PMONITOR2 structure pointer [Print Devices], *PMONITOR2, spoolfnc_db4ec1e7-1368-4695-bae0-91fd5dcd8a1a.xml, PMONITOR2, MONITOR2, LPMONITOR2 structure pointer [Print Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: winsplp.h
+req.include-header: Winsplp.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	winsplp.h
+apiname:
+-	MONITOR2
+product: Windows
+targetos: Windows
+req.typenames: "*PMONITOR2, *LPMONITOR2, MONITOR2"
+req.product: Windows 10 or later.
 ---
 
 # _MONITOR2 structure

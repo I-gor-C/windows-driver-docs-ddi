@@ -1,42 +1,47 @@
 ---
-UID : NC:wdfdevice.EVT_WDF_DEVICE_DISARM_WAKE_FROM_S0
-title : EVT_WDF_DEVICE_DISARM_WAKE_FROM_S0
-author : windows-driver-content
-description : A driver's EvtDeviceDisarmWakeFromS0 event callback function disarms (that is, disables) a device's ability to trigger a wake signal while in a low-power device state, if the system remains in the system working state (S0).
-old-location : wdf\evtdevicedisarmwakefroms0.htm
-old-project : wdf
-ms.assetid : e944c299-d0b4-4ee3-8f46-0458807e4cee
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.evtdevicedisarmwakefroms0, EvtDeviceDisarmWakeFromS0 callback function, EvtDeviceDisarmWakeFromS0, EVT_WDF_DEVICE_DISARM_WAKE_FROM_S0, EVT_WDF_DEVICE_DISARM_WAKE_FROM_S0, wdfdevice/EvtDeviceDisarmWakeFromS0, DFDeviceObjectGeneralRef_75c64592-ec2c-471f-9f9d-484ab181e432.xml, kmdf.evtdevicedisarmwakefroms0
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdfdevice.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_DEVICE_SHUTDOWN_FLAGS
-req.product : Windows 10 or later.
+UID: NC:wdfdevice.EVT_WDF_DEVICE_DISARM_WAKE_FROM_S0
+title: EVT_WDF_DEVICE_DISARM_WAKE_FROM_S0
+author: windows-driver-content
+description: A driver's EvtDeviceDisarmWakeFromS0 event callback function disarms (that is, disables) a device's ability to trigger a wake signal while in a low-power device state, if the system remains in the system working state (S0).
+old-location: wdf\evtdevicedisarmwakefroms0.htm
+old-project: wdf
+ms.assetid: e944c299-d0b4-4ee3-8f46-0458807e4cee
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.evtdevicedisarmwakefroms0, EvtDeviceDisarmWakeFromS0 callback function, EvtDeviceDisarmWakeFromS0, EVT_WDF_DEVICE_DISARM_WAKE_FROM_S0, EVT_WDF_DEVICE_DISARM_WAKE_FROM_S0, wdfdevice/EvtDeviceDisarmWakeFromS0, DFDeviceObjectGeneralRef_75c64592-ec2c-471f-9f9d-484ab181e432.xml, kmdf.evtdevicedisarmwakefroms0
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdfdevice.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Wdfdevice.h
+apiname:
+-	EvtDeviceDisarmWakeFromS0
+product: Windows
+targetos: Windows
+req.typenames: WDF_DEVICE_SHUTDOWN_FLAGS
+req.product: Windows 10 or later.
 ---
 
 

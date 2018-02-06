@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._DDRAW_CAPS
-title : "_DDRAW_CAPS"
-author : windows-driver-content
-description : The DDRAW_CAPS structure describes general Microsoft DirectDraw capabilities that the user-mode display driver supports.
-old-location : display\ddraw_caps.htm
-old-project : display
-ms.assetid : 023e3780-bc88-446b-b235-8853807fb05a
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DDRAW_CAPS, _DDRAW_CAPS, D3D_other_Structs_5e02fa0c-95ae-4b62-aaa3-7530aec9aee5.xml, DDRAW_CAPS structure [Display Devices], d3dumddi/DDRAW_CAPS, display.ddraw_caps
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DDRAW_CAPS
+UID: NS:d3dumddi._DDRAW_CAPS
+title: "_DDRAW_CAPS"
+author: windows-driver-content
+description: The DDRAW_CAPS structure describes general Microsoft DirectDraw capabilities that the user-mode display driver supports.
+old-location: display\ddraw_caps.htm
+old-project: display
+ms.assetid: 023e3780-bc88-446b-b235-8853807fb05a
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DDRAW_CAPS, _DDRAW_CAPS, D3D_other_Structs_5e02fa0c-95ae-4b62-aaa3-7530aec9aee5.xml, DDRAW_CAPS structure [Display Devices], d3dumddi/DDRAW_CAPS, display.ddraw_caps
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	DDRAW_CAPS
+product: Windows
+targetos: Windows
+req.typenames: DDRAW_CAPS
 ---
 
 # _DDRAW_CAPS structure

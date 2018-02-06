@@ -1,41 +1,46 @@
 ---
-UID : NS:ks._KSFILTER_DISPATCH
-title : "_KSFILTER_DISPATCH"
-author : windows-driver-content
-description : The KSFILTER_DISPATCH structure describes the client callbacks that are made to notify the client of certain events on a given filter type.
-old-location : stream\ksfilter_dispatch.htm
-old-project : stream
-ms.assetid : 3b84c06f-774e-45e1-9a64-711749bb3a88
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : "*PKSFILTER_DISPATCH, avstruct_cfadb813-12c3-4960-89d7-72a75db1684a.xml, KSFILTER_DISPATCH, KSFILTER_DISPATCH structure [Streaming Media Devices], ks/KSFILTER_DISPATCH, PKSFILTER_DISPATCH structure pointer [Streaming Media Devices], ks/PKSFILTER_DISPATCH, _KSFILTER_DISPATCH, PKSFILTER_DISPATCH, stream.ksfilter_dispatch"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and in Microsoft DirectX 8.0 and later versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KSFILTER_DISPATCH, *PKSFILTER_DISPATCH
+UID: NS:ks._KSFILTER_DISPATCH
+title: "_KSFILTER_DISPATCH"
+author: windows-driver-content
+description: The KSFILTER_DISPATCH structure describes the client callbacks that are made to notify the client of certain events on a given filter type.
+old-location: stream\ksfilter_dispatch.htm
+old-project: stream
+ms.assetid: 3b84c06f-774e-45e1-9a64-711749bb3a88
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: "*PKSFILTER_DISPATCH, avstruct_cfadb813-12c3-4960-89d7-72a75db1684a.xml, KSFILTER_DISPATCH, KSFILTER_DISPATCH structure [Streaming Media Devices], ks/KSFILTER_DISPATCH, PKSFILTER_DISPATCH structure pointer [Streaming Media Devices], ks/PKSFILTER_DISPATCH, _KSFILTER_DISPATCH, PKSFILTER_DISPATCH, stream.ksfilter_dispatch"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and in Microsoft DirectX 8.0 and later versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	KSFILTER_DISPATCH
+product: Windows
+targetos: Windows
+req.typenames: KSFILTER_DISPATCH, *PKSFILTER_DISPATCH
 ---
 
 # _KSFILTER_DISPATCH structure

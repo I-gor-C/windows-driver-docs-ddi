@@ -1,41 +1,46 @@
 ---
-UID : NN:portcls.IMiniportWaveRT
-title : IMiniportWaveRT
-author : windows-driver-content
-description : The IMiniportWaveRT interface is the primary interface that is exposed by the miniport driver for a WaveRT audio device.
-old-location : audio\iminiportwavert.htm
-old-project : audio
-ms.assetid : 5b98802e-c1a8-4613-85fe-f734ecc4670a
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : audio.iminiportwavert, IMiniportWaveRT interface [Audio Devices], IMiniportWaveRT interface [Audio Devices], described, IMiniportWaveRT, portcls/IMiniportWaveRT, audmp-routines_8d8d9bf9-09f1-4c1f-9113-c03e506e4edb.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : portcls.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Portcls.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NN:portcls.IMiniportWaveRT
+title: IMiniportWaveRT
+author: windows-driver-content
+description: The IMiniportWaveRT interface is the primary interface that is exposed by the miniport driver for a WaveRT audio device.
+old-location: audio\iminiportwavert.htm
+old-project: audio
+ms.assetid: 5b98802e-c1a8-4613-85fe-f734ecc4670a
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: audio.iminiportwavert, IMiniportWaveRT interface [Audio Devices], IMiniportWaveRT interface [Audio Devices], described, IMiniportWaveRT, portcls/IMiniportWaveRT, audmp-routines_8d8d9bf9-09f1-4c1f-9113-c03e506e4edb.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: portcls.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Portcls.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	portcls.h
+apiname:
+-	IMiniportWaveRT
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 # IMiniportWaveRT interface

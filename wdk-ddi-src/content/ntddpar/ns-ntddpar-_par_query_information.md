@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddpar._PAR_QUERY_INFORMATION
-title : "_PAR_QUERY_INFORMATION"
-author : windows-driver-content
-description : The PAR_QUERY_INFORMATION structure specifies the operating status of a parallel port.
-old-location : parports\par_query_information.htm
-old-project : parports
-ms.assetid : 3115b0c2-0190-4c5c-8b31-dbafddc9c44d
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : ntddpar/PAR_QUERY_INFORMATION, PAR_QUERY_INFORMATION, parports.par_query_information, PPAR_QUERY_INFORMATION structure pointer [Parallel Ports], cisspd_d7d19b6f-e1a0-4ad7-b0ee-b8e291e63956.xml, ntddpar/PPAR_QUERY_INFORMATION, PAR_QUERY_INFORMATION structure [Parallel Ports], *PPAR_QUERY_INFORMATION, _PAR_QUERY_INFORMATION, PPAR_QUERY_INFORMATION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddpar.h
-req.include-header : Ntddpar.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PAR_QUERY_INFORMATION, *PPAR_QUERY_INFORMATION
+UID: NS:ntddpar._PAR_QUERY_INFORMATION
+title: "_PAR_QUERY_INFORMATION"
+author: windows-driver-content
+description: The PAR_QUERY_INFORMATION structure specifies the operating status of a parallel port.
+old-location: parports\par_query_information.htm
+old-project: parports
+ms.assetid: 3115b0c2-0190-4c5c-8b31-dbafddc9c44d
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: ntddpar/PAR_QUERY_INFORMATION, PAR_QUERY_INFORMATION, parports.par_query_information, PPAR_QUERY_INFORMATION structure pointer [Parallel Ports], cisspd_d7d19b6f-e1a0-4ad7-b0ee-b8e291e63956.xml, ntddpar/PPAR_QUERY_INFORMATION, PAR_QUERY_INFORMATION structure [Parallel Ports], *PPAR_QUERY_INFORMATION, _PAR_QUERY_INFORMATION, PPAR_QUERY_INFORMATION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddpar.h
+req.include-header: Ntddpar.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddpar.h
+apiname:
+-	PAR_QUERY_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: PAR_QUERY_INFORMATION, *PPAR_QUERY_INFORMATION
 ---
 
 # _PAR_QUERY_INFORMATION structure

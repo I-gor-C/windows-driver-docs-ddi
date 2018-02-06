@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddcdrm._CDROM_EXCLUSIVE_LOCK
-title : "_CDROM_EXCLUSIVE_LOCK"
-author : windows-driver-content
-description : The CDROM_EXCLUSIVE_LOCK structure is used with the IOCTL_CDROM_EXCLUSIVE_ACCESS request to lock a CD-ROM device for exclusive access.
-old-location : storage\cdrom_exclusive_lock.htm
-old-project : storage
-ms.assetid : 8c94cdb2-965a-448c-aa97-f7aae9550662
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : "*PCDROM_EXCLUSIVE_LOCK, storage.cdrom_exclusive_lock, PCDROM_EXCLUSIVE_LOCK, PCDROM_EXCLUSIVE_LOCK structure pointer [Storage Devices], CDROM_EXCLUSIVE_LOCK, ntddcdrm/PCDROM_EXCLUSIVE_LOCK, structs-CD-ROM_98cdead9-8c28-497a-9ba3-f686e87554ea.xml, ntddcdrm/CDROM_EXCLUSIVE_LOCK, _CDROM_EXCLUSIVE_LOCK, CDROM_EXCLUSIVE_LOCK structure [Storage Devices]"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddcdrm.h
-req.include-header : Ntddcdrm.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : CDROM_EXCLUSIVE_LOCK, *PCDROM_EXCLUSIVE_LOCK
+UID: NS:ntddcdrm._CDROM_EXCLUSIVE_LOCK
+title: "_CDROM_EXCLUSIVE_LOCK"
+author: windows-driver-content
+description: The CDROM_EXCLUSIVE_LOCK structure is used with the IOCTL_CDROM_EXCLUSIVE_ACCESS request to lock a CD-ROM device for exclusive access.
+old-location: storage\cdrom_exclusive_lock.htm
+old-project: storage
+ms.assetid: 8c94cdb2-965a-448c-aa97-f7aae9550662
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: "*PCDROM_EXCLUSIVE_LOCK, storage.cdrom_exclusive_lock, PCDROM_EXCLUSIVE_LOCK, PCDROM_EXCLUSIVE_LOCK structure pointer [Storage Devices], CDROM_EXCLUSIVE_LOCK, ntddcdrm/PCDROM_EXCLUSIVE_LOCK, structs-CD-ROM_98cdead9-8c28-497a-9ba3-f686e87554ea.xml, ntddcdrm/CDROM_EXCLUSIVE_LOCK, _CDROM_EXCLUSIVE_LOCK, CDROM_EXCLUSIVE_LOCK structure [Storage Devices]"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddcdrm.h
+req.include-header: Ntddcdrm.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddcdrm.h
+apiname:
+-	CDROM_EXCLUSIVE_LOCK
+product: Windows
+targetos: Windows
+req.typenames: CDROM_EXCLUSIVE_LOCK, *PCDROM_EXCLUSIVE_LOCK
 ---
 
 # _CDROM_EXCLUSIVE_LOCK structure

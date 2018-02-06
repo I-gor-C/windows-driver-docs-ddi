@@ -1,41 +1,46 @@
 ---
-UID : NE:pointofservicedriverinterface._MsrCardType
-title : "_MsrCardType"
-author : windows-driver-content
-description : This enumeration defines the kinds of magnetic stripe cards.
-old-location : pos\msrcardtype.htm
-old-project : pos
-ms.assetid : aa7af210-fb5e-49a1-911f-cb1e90c2ac26
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : pointofservicedriverinterface/MsrCardType_Aamva, MsrCardType_Bank, _MsrCardType, pos.msrcardtype, pointofservicedriverinterface/MsrCardType_Bank, pointofservicedriverinterface/MsrCardType, pointofservicedriverinterface/MsrCardType_ExtendedBase, MsrCardType_Aamva, MsrCardType, MsrCardType_Unknown, MsrCardType_ExtendedBase, pointofservicedriverinterface/MsrCardType_Unknown, MsrCardType enumeration
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : pointofservicedriverinterface.h
-req.include-header : Pointofservicedriverinterface.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Called at PASSIVE_LEVEL.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : MsrCardType
+UID: NE:pointofservicedriverinterface._MsrCardType
+title: "_MsrCardType"
+author: windows-driver-content
+description: This enumeration defines the kinds of magnetic stripe cards.
+old-location: pos\msrcardtype.htm
+old-project: pos
+ms.assetid: aa7af210-fb5e-49a1-911f-cb1e90c2ac26
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: pointofservicedriverinterface/MsrCardType_Aamva, MsrCardType_Bank, _MsrCardType, pos.msrcardtype, pointofservicedriverinterface/MsrCardType_Bank, pointofservicedriverinterface/MsrCardType, pointofservicedriverinterface/MsrCardType_ExtendedBase, MsrCardType_Aamva, MsrCardType, MsrCardType_Unknown, MsrCardType_ExtendedBase, pointofservicedriverinterface/MsrCardType_Unknown, MsrCardType enumeration
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: pointofservicedriverinterface.h
+req.include-header: Pointofservicedriverinterface.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Called at PASSIVE_LEVEL.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	pointofservicedriverinterface.h
+apiname:
+-	MsrCardType
+product: Windows
+targetos: Windows
+req.typenames: MsrCardType
 ---
 
 # _MsrCardType Enumeration
@@ -54,26 +59,26 @@ typedef enum _MsrCardType {
 ## Constants
 
 <table>
-
-<tr>
-<td>MsrCardType_Aamva</td>
-<td>American Association of Motor Vehicle Administrators (AAMVA) card.</td>
-</tr>
-
-<tr>
-<td>MsrCardType_Bank</td>
-<td>Bank card.</td>
-</tr>
-
-<tr>
-<td>MsrCardType_ExtendedBase</td>
-<td>Vendor-specific card.</td>
-</tr>
-
-<tr>
-<td>MsrCardType_Unknown</td>
-<td>Unknown card type.</td>
-</tr>
+            
+                <tr>
+                    <td>MsrCardType_Aamva</td>
+                    <td>American Association of Motor Vehicle Administrators (AAMVA) card.</td>
+                </tr>
+            
+                <tr>
+                    <td>MsrCardType_Bank</td>
+                    <td>Bank card.</td>
+                </tr>
+            
+                <tr>
+                    <td>MsrCardType_ExtendedBase</td>
+                    <td>Vendor-specific card.</td>
+                </tr>
+            
+                <tr>
+                    <td>MsrCardType_Unknown</td>
+                    <td>Unknown card type.</td>
+                </tr>
 </table>
 
 

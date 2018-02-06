@@ -1,41 +1,46 @@
 ---
-UID : NS:hbaapi.HBA_LibraryAttributes
-title : HBA_LibraryAttributes
-author : windows-driver-content
-description : The HBA_LibraryAttributes structure holds the library attributes.
-old-location : storage\hba_libraryattributes.htm
-old-project : storage
-ms.assetid : 9dc03c5d-5e14-4399-b282-f0385a85a16c
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : hbaapi/PHBA_LIBRARYATTRIBUTES, PHBA_LIBRARYATTRIBUTES structure pointer [Storage Devices], storage.hba_libraryattributes, hbaapi/HBA_LibraryAttributes, HBA_LibraryAttributes, structs-Fibre_1be227ba-622d-475f-811e-2d65de5cbaa8.xml, HBA_LibraryAttributes structure [Storage Devices], HBA_LIBRARYATTRIBUTES, *PHBA_LIBRARYATTRIBUTES, HBA_LIBRARYATTRIBUTES structure [Storage Devices], PHBA_LIBRARYATTRIBUTES
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : hbaapi.h
-req.include-header : Hbaapi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PHBA_LIBRARYATTRIBUTES, HBA_LIBRARYATTRIBUTES"
+UID: NS:hbaapi.HBA_LibraryAttributes
+title: HBA_LibraryAttributes
+author: windows-driver-content
+description: The HBA_LibraryAttributes structure holds the library attributes.
+old-location: storage\hba_libraryattributes.htm
+old-project: storage
+ms.assetid: 9dc03c5d-5e14-4399-b282-f0385a85a16c
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: hbaapi/PHBA_LIBRARYATTRIBUTES, PHBA_LIBRARYATTRIBUTES structure pointer [Storage Devices], storage.hba_libraryattributes, hbaapi/HBA_LibraryAttributes, HBA_LibraryAttributes, structs-Fibre_1be227ba-622d-475f-811e-2d65de5cbaa8.xml, HBA_LibraryAttributes structure [Storage Devices], HBA_LIBRARYATTRIBUTES, *PHBA_LIBRARYATTRIBUTES, HBA_LIBRARYATTRIBUTES structure [Storage Devices], PHBA_LIBRARYATTRIBUTES
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: hbaapi.h
+req.include-header: Hbaapi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hbaapi.h
+apiname:
+-	HBA_LIBRARYATTRIBUTES
+product: Windows
+targetos: Windows
+req.typenames: "*PHBA_LIBRARYATTRIBUTES, HBA_LIBRARYATTRIBUTES"
 ---
 
 # HBA_LibraryAttributes structure

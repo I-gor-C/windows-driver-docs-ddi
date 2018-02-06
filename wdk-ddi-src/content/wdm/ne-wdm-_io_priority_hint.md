@@ -1,42 +1,47 @@
 ---
-UID : NE:wdm._IO_PRIORITY_HINT
-title : "_IO_PRIORITY_HINT"
-author : windows-driver-content
-description : The IO_PRIORITY_HINT enumeration type specifies the priority hint for an IRP.
-old-location : kernel\io_priority_hint.htm
-old-project : kernel
-ms.assetid : 38d19398-b34f-4934-b643-df119ebd9711
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/IoPriorityVeryLow, sysenum_0b8187d9-c762-45d2-a310-294c3c696608.xml, wdm/IO_PRIORITY_HINT, wdm/IoPriorityCritical, _IO_PRIORITY_HINT, wdm/IoPriorityLow, IoPriorityHigh, wdm/IoPriorityHigh, IoPriorityNormal, wdm/IoPriorityNormal, MaxIoPriorityTypes, IoPriorityVeryLow, IO_PRIORITY_HINT enumeration [Kernel-Mode Driver Architecture], wdm/MaxIoPriorityTypes, IoPriorityCritical, IO_PRIORITY_HINT, IoPriorityLow, kernel.io_priority_hint
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : IO_PRIORITY_HINT
-req.product : Windows 10 or later.
+UID: NE:wdm._IO_PRIORITY_HINT
+title: "_IO_PRIORITY_HINT"
+author: windows-driver-content
+description: The IO_PRIORITY_HINT enumeration type specifies the priority hint for an IRP.
+old-location: kernel\io_priority_hint.htm
+old-project: kernel
+ms.assetid: 38d19398-b34f-4934-b643-df119ebd9711
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/IoPriorityVeryLow, sysenum_0b8187d9-c762-45d2-a310-294c3c696608.xml, wdm/IO_PRIORITY_HINT, wdm/IoPriorityCritical, _IO_PRIORITY_HINT, wdm/IoPriorityLow, IoPriorityHigh, wdm/IoPriorityHigh, IoPriorityNormal, wdm/IoPriorityNormal, MaxIoPriorityTypes, IoPriorityVeryLow, IO_PRIORITY_HINT enumeration [Kernel-Mode Driver Architecture], wdm/MaxIoPriorityTypes, IoPriorityCritical, IO_PRIORITY_HINT, IoPriorityLow, kernel.io_priority_hint
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdm.h
+apiname:
+-	IO_PRIORITY_HINT
+product: Windows
+targetos: Windows
+req.typenames: IO_PRIORITY_HINT
+req.product: Windows 10 or later.
 ---
 
 # _IO_PRIORITY_HINT Enumeration
@@ -57,50 +62,50 @@ typedef enum _IO_PRIORITY_HINT {
 ## Constants
 
 <table>
-
-<tr>
-<td>IoPriorityCritical</td>
-<td>Specifies the highest-priority hint level. This value is reserved for use by the system.</td>
-</tr>
-
-<tr>
-<td>IoPriorityHigh</td>
-<td>Specifies a high-priority hint level. This value is reserved for use by the system.</td>
-</tr>
-
-<tr>
-<td>IoPriorityLow</td>
-<td>Specifies a low-priority hint level.</td>
-</tr>
-
-<tr>
-<td>IoPriorityNormal</td>
-<td>Specifies a normal-priority hint level. This value is the default setting for an IRP.</td>
-</tr>
-
-<tr>
-<td>IoPriorityVeryLow</td>
-<td>Specifies the lowest possible priority hint level. The system uses this value for background I/O operations.</td>
-</tr>
-
-<tr>
-<td>MaxIoPriorityTypes</td>
-<td>Marks the limit for priority hints. Any priority hint value must be less than <b>MaxIoPriorityTypes</b>.</td>
-</tr>
+            
+                <tr>
+                    <td>IoPriorityCritical</td>
+                    <td>Specifies the highest-priority hint level. This value is reserved for use by the system.</td>
+                </tr>
+            
+                <tr>
+                    <td>IoPriorityHigh</td>
+                    <td>Specifies a high-priority hint level. This value is reserved for use by the system.</td>
+                </tr>
+            
+                <tr>
+                    <td>IoPriorityLow</td>
+                    <td>Specifies a low-priority hint level.</td>
+                </tr>
+            
+                <tr>
+                    <td>IoPriorityNormal</td>
+                    <td>Specifies a normal-priority hint level. This value is the default setting for an IRP.</td>
+                </tr>
+            
+                <tr>
+                    <td>IoPriorityVeryLow</td>
+                    <td>Specifies the lowest possible priority hint level. The system uses this value for background I/O operations.</td>
+                </tr>
+            
+                <tr>
+                    <td>MaxIoPriorityTypes</td>
+                    <td>Marks the limit for priority hints. Any priority hint value must be less than <b>MaxIoPriorityTypes</b>.</td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-For more information about priority hints, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565403">Using IRP Priority Hints</a>.
+        For more information about priority hints, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565403">Using IRP Priority Hints</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\wdm\nf-wdm-iosetiopriorityhint.md">IoSetIoPriorityHint</a>
+        <a href="..\wdm\nf-wdm-iosetiopriorityhint.md">IoSetIoPriorityHint</a>
 
 <a href="..\wdm\nf-wdm-iogetiopriorityhint.md">IoGetIoPriorityHint</a>
 

@@ -1,42 +1,47 @@
 ---
-UID : NE:rilapitypes.RILUMTSMRLPARAMMASK
-title : RILUMTSMRLPARAMMASK
-author : windows-driver-content
-description : This enumeration describes the RILUMTSMRLPARAMMASK.
-old-location : netvista\rilumtsmrlparammask.htm
-old-project : netvista
-ms.assetid : ba1f48ab-f301-4ae8-b56e-92eb6e3601f2
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : RIL_PARAM_UMTSMRL_PRIMARY_SC, RIL_PARAM_UMTSMRL_CELLID, netvista.rilumtsmrlparammask, rilapitypes/RIL_PARAM_UMTSMRL_MNC, rilapitypes/RILUMTSMRLPARAMMASK, rilapitypes/RIL_PARAM_UMTSMRL_CELLID, rilapitypes/RIL_PARAM_UMTSMRL_MCC, RIL_PARAM_UMTSMRL_MNC, RIL_PARAM_UMTSMRL_ECNO, RILUMTSMRLPARAMMASK, RIL_PARAM_UMTSMRL_PATHLOSS, RILUMTSMRLPARAMMASK enumeration [Network Drivers Starting with Windows Vista], rilapitypes/RIL_PARAM_UMTSMRL_ALL, RIL_PARAM_UMTSMRL_MCC, rilapitypes/RIL_PARAM_UMTSMRL_PRIMARY_SC, rilapitypes/RIL_PARAM_UMTSMRL_RSCP, rilapitypes/RIL_PARAM_UMTSMRL_PATHLOSS, RIL_PARAM_UMTSMRL_UARFCN, rilapitypes/RIL_PARAM_UMTSMRL_UARFCN, rilapitypes/RIL_PARAM_UMTSMRL_LAC, RIL_PARAM_UMTSMRL_LAC, RIL_PARAM_UMTSMRL_ALL, rilapitypes/RIL_PARAM_UMTSMRL_ECNO, RIL_PARAM_UMTSMRL_RSCP
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : rilapitypes.h
-req.include-header : Rilapitypes.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RILUMTSMRLPARAMMASK
-req.product : Windows 10 or later.
+UID: NE:rilapitypes.RILUMTSMRLPARAMMASK
+title: RILUMTSMRLPARAMMASK
+author: windows-driver-content
+description: This enumeration describes the RILUMTSMRLPARAMMASK.
+old-location: netvista\rilumtsmrlparammask.htm
+old-project: netvista
+ms.assetid: ba1f48ab-f301-4ae8-b56e-92eb6e3601f2
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: RIL_PARAM_UMTSMRL_PRIMARY_SC, RIL_PARAM_UMTSMRL_CELLID, netvista.rilumtsmrlparammask, rilapitypes/RIL_PARAM_UMTSMRL_MNC, rilapitypes/RILUMTSMRLPARAMMASK, rilapitypes/RIL_PARAM_UMTSMRL_CELLID, rilapitypes/RIL_PARAM_UMTSMRL_MCC, RIL_PARAM_UMTSMRL_MNC, RIL_PARAM_UMTSMRL_ECNO, RILUMTSMRLPARAMMASK, RIL_PARAM_UMTSMRL_PATHLOSS, RILUMTSMRLPARAMMASK enumeration [Network Drivers Starting with Windows Vista], rilapitypes/RIL_PARAM_UMTSMRL_ALL, RIL_PARAM_UMTSMRL_MCC, rilapitypes/RIL_PARAM_UMTSMRL_PRIMARY_SC, rilapitypes/RIL_PARAM_UMTSMRL_RSCP, rilapitypes/RIL_PARAM_UMTSMRL_PATHLOSS, RIL_PARAM_UMTSMRL_UARFCN, rilapitypes/RIL_PARAM_UMTSMRL_UARFCN, rilapitypes/RIL_PARAM_UMTSMRL_LAC, RIL_PARAM_UMTSMRL_LAC, RIL_PARAM_UMTSMRL_ALL, rilapitypes/RIL_PARAM_UMTSMRL_ECNO, RIL_PARAM_UMTSMRL_RSCP
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: rilapitypes.h
+req.include-header: Rilapitypes.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	rilapitypes.h
+apiname:
+-	RILUMTSMRLPARAMMASK
+product: Windows
+targetos: Windows
+req.typenames: RILUMTSMRLPARAMMASK
+req.product: Windows 10 or later.
 ---
 
 # RILUMTSMRLPARAMMASK Enumeration
@@ -62,61 +67,61 @@ enum RILUMTSMRLPARAMMASK  {
 ## Constants
 
 <table>
-
-<tr>
-<td>RIL_PARAM_UMTSMRL_ALL</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_PARAM_UMTSMRL_CELLID</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_PARAM_UMTSMRL_ECNO</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_PARAM_UMTSMRL_LAC</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_PARAM_UMTSMRL_MCC</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_PARAM_UMTSMRL_MNC</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_PARAM_UMTSMRL_PATHLOSS</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_PARAM_UMTSMRL_PRIMARY_SC</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_PARAM_UMTSMRL_RSCP</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_PARAM_UMTSMRL_UARFCN</td>
-<td></td>
-</tr>
+            
+                <tr>
+                    <td>RIL_PARAM_UMTSMRL_ALL</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_UMTSMRL_CELLID</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_UMTSMRL_ECNO</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_UMTSMRL_LAC</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_UMTSMRL_MCC</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_UMTSMRL_MNC</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_UMTSMRL_PATHLOSS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_UMTSMRL_PRIMARY_SC</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_UMTSMRL_RSCP</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_UMTSMRL_UARFCN</td>
+                    <td></td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-Networks will vary, but the following table summarizes which items are returned for common UMTS networks. 
+        Networks will vary, but the following table summarizes which items are returned for common UMTS networks. 
 
 <b>Serving network</b>
 <table>
@@ -521,9 +526,9 @@ No
 | ---- |:---- |
 | **Header** | rilapitypes.h (include Rilapitypes.h) |
 
-## See Also
+    ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn946509">Cellular COM enumerations</a>
+        <a href="https://msdn.microsoft.com/library/windows/hardware/dn946509">Cellular COM enumerations</a>
 
  
 

@@ -1,42 +1,47 @@
 ---
-UID : NS:sensorsdef.SENSOR_PROPERTY_LIST
-title : SENSOR_PROPERTY_LIST
-author : windows-driver-content
-description : This structure contains a list of all SENSOR_VALUE_PAIR structures for each sensor. This structure is returned by calling ReadFile.
-old-location : sensors\sensor_property_list.htm
-old-project : sensors
-ms.assetid : 03E03BB9-95DB-49C0-AF14-FFF1998C98A7
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : PSENSOR_PROPERTY_LIST structure pointer [Sensor Devices], *PSENSOR_PROPERTY_LIST, PSENSOR_PROPERTY_LIST, sensorsdef/PSENSOR_PROPERTY_LIST, SENSOR_PROPERTY_LIST structure [Sensor Devices], sensors.sensor_property_list, SENSOR_PROPERTY_LIST, sensorsdef/SENSOR_PROPERTY_LIST
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : sensorsdef.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8.1
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSENSOR_PROPERTY_LIST, SENSOR_PROPERTY_LIST"
-req.product : Windows 10 or later.
+UID: NS:sensorsdef.SENSOR_PROPERTY_LIST
+title: SENSOR_PROPERTY_LIST
+author: windows-driver-content
+description: This structure contains a list of all SENSOR_VALUE_PAIR structures for each sensor. This structure is returned by calling ReadFile.
+old-location: sensors\sensor_property_list.htm
+old-project: sensors
+ms.assetid: 03E03BB9-95DB-49C0-AF14-FFF1998C98A7
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: PSENSOR_PROPERTY_LIST structure pointer [Sensor Devices], *PSENSOR_PROPERTY_LIST, PSENSOR_PROPERTY_LIST, sensorsdef/PSENSOR_PROPERTY_LIST, SENSOR_PROPERTY_LIST structure [Sensor Devices], sensors.sensor_property_list, SENSOR_PROPERTY_LIST, sensorsdef/SENSOR_PROPERTY_LIST
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: sensorsdef.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8.1
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Sensorsdef.h
+apiname:
+-	SENSOR_PROPERTY_LIST
+product: Windows
+targetos: Windows
+req.typenames: "*PSENSOR_PROPERTY_LIST, SENSOR_PROPERTY_LIST"
+req.product: Windows 10 or later.
 ---
 
 # SENSOR_PROPERTY_LIST structure

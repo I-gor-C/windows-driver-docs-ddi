@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.MmUnlockPagableImageSection
-title : MmUnlockPagableImageSection function
-author : windows-driver-content
-description : The MmUnlockPagableImageSection routine releases a section of driver code or driver data, previously locked into system space with MmLockPagableCodeSection, MmLockPagableDataSection or MmLockPagableSectionByHandle, so the section can be paged out again.
-old-location : kernel\mmunlockpagableimagesection.htm
-old-project : kernel
-ms.assetid : 3a6e3029-d378-4e42-8556-e3640cfdb392
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : k106_1420e152-a858-4256-87ed-8fa78ee76379.xml, MmUnlockPagableImageSection, kernel.mmunlockpagableimagesection, wdm/MmUnlockPagableImageSection, MmUnlockPagableImageSection routine [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : IrqlMmApcLte, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<=APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.MmUnlockPagableImageSection
+title: MmUnlockPagableImageSection function
+author: windows-driver-content
+description: The MmUnlockPagableImageSection routine releases a section of driver code or driver data, previously locked into system space with MmLockPagableCodeSection, MmLockPagableDataSection or MmLockPagableSectionByHandle, so the section can be paged out again.
+old-location: kernel\mmunlockpagableimagesection.htm
+old-project: kernel
+ms.assetid: 3a6e3029-d378-4e42-8556-e3640cfdb392
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: k106_1420e152-a858-4256-87ed-8fa78ee76379.xml, MmUnlockPagableImageSection, kernel.mmunlockpagableimagesection, wdm/MmUnlockPagableImageSection, MmUnlockPagableImageSection routine [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: IrqlMmApcLte, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<=APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	MmUnlockPagableImageSection
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

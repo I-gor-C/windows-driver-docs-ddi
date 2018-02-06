@@ -1,42 +1,47 @@
 ---
-UID : NF:winddiui.DrvQueryColorProfile
-title : DrvQueryColorProfile function
-author : windows-driver-content
-description : The DrvQueryColorProfile function allows a printer interface DLL to specify an ICC profile to use for color management.
-old-location : print\drvquerycolorprofile.htm
-old-project : print
-ms.assetid : f6eec5a1-7d73-415f-84d9-1ec3f512abaf
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : winddiui/DrvQueryColorProfile, DrvQueryColorProfile function [Print Devices], print.drvquerycolorprofile, DrvQueryColorProfile, print_interface-graphics_fce84759-2add-41bc-b4e5-c2b66e3abf04.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : winddiui.h
-req.include-header : Winddiui.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WINBIO_VERSION, *PWINBIO_VERSION
-req.product : Windows 10 or later.
+UID: NF:winddiui.DrvQueryColorProfile
+title: DrvQueryColorProfile function
+author: windows-driver-content
+description: The DrvQueryColorProfile function allows a printer interface DLL to specify an ICC profile to use for color management.
+old-location: print\drvquerycolorprofile.htm
+old-project: print
+ms.assetid: f6eec5a1-7d73-415f-84d9-1ec3f512abaf
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: winddiui/DrvQueryColorProfile, DrvQueryColorProfile function [Print Devices], print.drvquerycolorprofile, DrvQueryColorProfile, print_interface-graphics_fce84759-2add-41bc-b4e5-c2b66e3abf04.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: winddiui.h
+req.include-header: Winddiui.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	winddiui.h
+apiname:
+-	DrvQueryColorProfile
+product: Windows
+targetos: Windows
+req.typenames: WINBIO_VERSION, *PWINBIO_VERSION
+req.product: Windows 10 or later.
 ---
 
 

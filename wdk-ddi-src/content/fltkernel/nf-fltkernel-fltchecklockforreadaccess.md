@@ -1,41 +1,47 @@
 ---
-UID : NF:fltkernel.FltCheckLockForReadAccess
-title : FltCheckLockForReadAccess function
-author : windows-driver-content
-description : The FltCheckLockForReadAccess routine determines whether the caller has read access to a locked byte range of a file.
-old-location : ifsk\fltchecklockforreadaccess.htm
-old-project : ifsk
-ms.assetid : 18920aaa-ae43-48ec-a06d-69ccaf75ebd8
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : fltkernel/FltCheckLockForReadAccess, FltApiRef_a_to_d_24bd7e02-fdc4-44a3-8d1a-1bb164d26769.xml, FltCheckLockForReadAccess, FltCheckLockForReadAccess routine [Installable File System Drivers], ifsk.fltchecklockforreadaccess
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltCheckLockForReadAccess
+title: FltCheckLockForReadAccess function
+author: windows-driver-content
+description: The FltCheckLockForReadAccess routine determines whether the caller has read access to a locked byte range of a file.
+old-location: ifsk\fltchecklockforreadaccess.htm
+old-project: ifsk
+ms.assetid: 18920aaa-ae43-48ec-a06d-69ccaf75ebd8
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: fltkernel/FltCheckLockForReadAccess, FltApiRef_a_to_d_24bd7e02-fdc4-44a3-8d1a-1bb164d26769.xml, FltCheckLockForReadAccess, FltCheckLockForReadAccess routine [Installable File System Drivers], ifsk.fltchecklockforreadaccess
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	FltMgr.lib
+-	FltMgr.dll
+apiname:
+-	FltCheckLockForReadAccess
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

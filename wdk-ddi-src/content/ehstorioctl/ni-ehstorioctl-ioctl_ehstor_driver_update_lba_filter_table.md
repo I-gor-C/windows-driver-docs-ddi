@@ -1,41 +1,46 @@
 ---
-UID : NI:ehstorioctl.IOCTL_EHSTOR_DRIVER_UPDATE_LBA_FILTER_TABLE
-title : IOCTL_EHSTOR_DRIVER_UPDATE_LBA_FILTER_TABLE
-author : windows-driver-content
-description : This IOCTL is used to inform the enhanced storage (EHSTOR) class driver of changes to the LBA filter table.
-old-location : storage\ioctl_ehstor_driver_update_lba_filter_table.htm
-old-project : storage
-ms.assetid : 295EE3CC-4244-4411-9684-7C5D38B10EA9
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_ehstor_driver_update_lba_filter_table, IOCTL_EHSTOR_DRIVER_UPDATE_LBA_FILTER_TABLE control code [Storage Devices], IOCTL_EHSTOR_DRIVER_UPDATE_LBA_FILTER_TABLE, ehstorioctl/IOCTL_EHSTOR_DRIVER_UPDATE_LBA_FILTER_TABLE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ehstorioctl.h
-req.include-header : EhStorIoctl.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows 8
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PDO_TYPE
+UID: NI:ehstorioctl.IOCTL_EHSTOR_DRIVER_UPDATE_LBA_FILTER_TABLE
+title: IOCTL_EHSTOR_DRIVER_UPDATE_LBA_FILTER_TABLE
+author: windows-driver-content
+description: This IOCTL is used to inform the enhanced storage (EHSTOR) class driver of changes to the LBA filter table.
+old-location: storage\ioctl_ehstor_driver_update_lba_filter_table.htm
+old-project: storage
+ms.assetid: 295EE3CC-4244-4411-9684-7C5D38B10EA9
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_ehstor_driver_update_lba_filter_table, IOCTL_EHSTOR_DRIVER_UPDATE_LBA_FILTER_TABLE control code [Storage Devices], IOCTL_EHSTOR_DRIVER_UPDATE_LBA_FILTER_TABLE, ehstorioctl/IOCTL_EHSTOR_DRIVER_UPDATE_LBA_FILTER_TABLE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ehstorioctl.h
+req.include-header: EhStorIoctl.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows 8
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	EhStorIoctl.h
+apiname:
+-	IOCTL_EHSTOR_DRIVER_UPDATE_LBA_FILTER_TABLE
+product: Windows
+targetos: Windows
+req.typenames: PDO_TYPE
 ---
 
 # IOCTL_EHSTOR_DRIVER_UPDATE_LBA_FILTER_TABLE IOCTL

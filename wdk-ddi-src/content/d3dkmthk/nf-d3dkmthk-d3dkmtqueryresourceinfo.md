@@ -1,41 +1,49 @@
 ---
-UID : NF:d3dkmthk.D3DKMTQueryResourceInfo
-title : D3DKMTQueryResourceInfo function
-author : windows-driver-content
-description : The D3DKMTQueryResourceInfo function retrieves information about a shared resource.
-old-location : display\d3dkmtqueryresourceinfo.htm
-old-project : display
-ms.assetid : d195634e-d626-43c9-8212-f32b95c1f526
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DKMTQueryResourceInfo, OpenGL_Functions_77dad2ba-a352-4b1a-b2be-53c41589bf90.xml, D3DKMTQueryResourceInfo function [Display Devices], display.d3dkmtqueryresourceinfo, d3dkmthk/D3DKMTQueryResourceInfo
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Gdi32.lib
-req.dll : Gdi32.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_DRIVERVERSION
+UID: NF:d3dkmthk.D3DKMTQueryResourceInfo
+title: D3DKMTQueryResourceInfo function
+author: windows-driver-content
+description: The D3DKMTQueryResourceInfo function retrieves information about a shared resource.
+old-location: display\d3dkmtqueryresourceinfo.htm
+old-project: display
+ms.assetid: d195634e-d626-43c9-8212-f32b95c1f526
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DKMTQueryResourceInfo, OpenGL_Functions_77dad2ba-a352-4b1a-b2be-53c41589bf90.xml, D3DKMTQueryResourceInfo function [Display Devices], display.d3dkmtqueryresourceinfo, d3dkmthk/D3DKMTQueryResourceInfo
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Gdi32.lib
+req.dll: Gdi32.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Gdi32.dll
+-	API-MS-Win-dx-d3dkmt-l1-1-0.dll
+-	API-MS-Win-dx-d3dkmt-l1-1-1.dll
+-	API-MS-Win-DX-D3DKMT-L1-1-2.dll
+apiname:
+-	D3DKMTQueryResourceInfo
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_DRIVERVERSION
 ---
 
 

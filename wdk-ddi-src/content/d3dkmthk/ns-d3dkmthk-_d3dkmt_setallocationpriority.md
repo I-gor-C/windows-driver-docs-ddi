@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmthk._D3DKMT_SETALLOCATIONPRIORITY
-title : "_D3DKMT_SETALLOCATIONPRIORITY"
-author : windows-driver-content
-description : The D3DKMT_SETALLOCATIONPRIORITY structure describes the priority level to set a resource or list of allocations to.
-old-location : display\d3dkmt_setallocationpriority.htm
-old-project : display
-ms.assetid : 3135b9fa-17f0-410a-b563-57fd1548f495
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DKMT_SETALLOCATIONPRIORITY, OpenGL_Structs_9afc3b7a-fcd5-4fb4-bfb9-5e752b225a4e.xml, display.d3dkmt_setallocationpriority, D3DKMT_SETALLOCATIONPRIORITY structure [Display Devices], d3dkmthk/D3DKMT_SETALLOCATIONPRIORITY, _D3DKMT_SETALLOCATIONPRIORITY
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_SETALLOCATIONPRIORITY
+UID: NS:d3dkmthk._D3DKMT_SETALLOCATIONPRIORITY
+title: "_D3DKMT_SETALLOCATIONPRIORITY"
+author: windows-driver-content
+description: The D3DKMT_SETALLOCATIONPRIORITY structure describes the priority level to set a resource or list of allocations to.
+old-location: display\d3dkmt_setallocationpriority.htm
+old-project: display
+ms.assetid: 3135b9fa-17f0-410a-b563-57fd1548f495
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DKMT_SETALLOCATIONPRIORITY, OpenGL_Structs_9afc3b7a-fcd5-4fb4-bfb9-5e752b225a4e.xml, display.d3dkmt_setallocationpriority, D3DKMT_SETALLOCATIONPRIORITY structure [Display Devices], d3dkmthk/D3DKMT_SETALLOCATIONPRIORITY, _D3DKMT_SETALLOCATIONPRIORITY
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmthk.h
+apiname:
+-	D3DKMT_SETALLOCATIONPRIORITY
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_SETALLOCATIONPRIORITY
 ---
 
 # _D3DKMT_SETALLOCATIONPRIORITY structure

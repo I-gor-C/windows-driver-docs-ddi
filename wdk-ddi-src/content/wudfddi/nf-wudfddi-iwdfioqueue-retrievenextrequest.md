@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFIoQueue.RetrieveNextRequest
-title : IWDFIoQueue::RetrieveNextRequest method
-author : windows-driver-content
-description : The RetrieveNextRequest method retrieves the next I/O request from an I/O queue.
-old-location : wdf\iwdfioqueue_retrievenextrequest.htm
-old-project : wdf
-ms.assetid : 2d9dbfc8-7563-4c47-9b34-27cce2b847b2
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : IWDFIoQueue::RetrieveNextRequest, wudfddi/IWDFIoQueue::RetrieveNextRequest, IWDFIoQueue interface, RetrieveNextRequest method, RetrieveNextRequest, wdf.iwdfioqueue_retrievenextrequest, RetrieveNextRequest method, IWDFIoQueue interface, umdf.iwdfioqueue_retrievenextrequest, RetrieveNextRequest method, UMDFQueueObjectRef_d76f57ad-f8d5-4a09-861f-26c6d5e6a709.xml, IWDFIoQueue
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.5
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFIoQueue.RetrieveNextRequest
+title: IWDFIoQueue::RetrieveNextRequest method
+author: windows-driver-content
+description: The RetrieveNextRequest method retrieves the next I/O request from an I/O queue.
+old-location: wdf\iwdfioqueue_retrievenextrequest.htm
+old-project: wdf
+ms.assetid: 2d9dbfc8-7563-4c47-9b34-27cce2b847b2
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: IWDFIoQueue::RetrieveNextRequest, wudfddi/IWDFIoQueue::RetrieveNextRequest, IWDFIoQueue interface, RetrieveNextRequest method, RetrieveNextRequest, wdf.iwdfioqueue_retrievenextrequest, RetrieveNextRequest method, IWDFIoQueue interface, umdf.iwdfioqueue_retrievenextrequest, RetrieveNextRequest method, UMDFQueueObjectRef_d76f57ad-f8d5-4a09-861f-26c6d5e6a709.xml, IWDFIoQueue
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.5
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFIoQueue.RetrieveNextRequest
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

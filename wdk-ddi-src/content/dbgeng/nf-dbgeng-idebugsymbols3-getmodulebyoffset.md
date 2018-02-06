@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugSymbols3.GetModuleByOffset
-title : IDebugSymbols3::GetModuleByOffset method
-author : windows-driver-content
-description : The GetModuleByOffset method searches through the target's modules for one whose memory allocation includes the specified location.
-old-location : debugger\getmodulebyoffset.htm
-old-project : debugger
-ms.assetid : ff51d0d1-47f1-4df6-b671-d74f791d778b
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : GetModuleByOffset, dbgeng/IDebugSymbols3::GetModuleByOffset, IDebugSymbols interface [Windows Debugging], GetModuleByOffset method, GetModuleByOffset method [Windows Debugging], IDebugSymbols interface, debugger.getmodulebyoffset, IDebugSymbols_2f5375ce-a9f1-4e86-ab82-7f35edc716c2.xml, IDebugSymbols3 interface [Windows Debugging], GetModuleByOffset method, dbgeng/IDebugSymbols2::GetModuleByOffset, GetModuleByOffset method [Windows Debugging], IDebugSymbols2::GetModuleByOffset, GetModuleByOffset method [Windows Debugging], IDebugSymbols2 interface, IDebugSymbols2 interface [Windows Debugging], GetModuleByOffset method, IDebugSymbols::GetModuleByOffset, IDebugSymbols3, dbgeng/IDebugSymbols::GetModuleByOffset, IDebugSymbols3::GetModuleByOffset, GetModuleByOffset method [Windows Debugging], IDebugSymbols3 interface
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSymbols3.GetModuleByOffset
+title: IDebugSymbols3::GetModuleByOffset method
+author: windows-driver-content
+description: The GetModuleByOffset method searches through the target's modules for one whose memory allocation includes the specified location.
+old-location: debugger\getmodulebyoffset.htm
+old-project: debugger
+ms.assetid: ff51d0d1-47f1-4df6-b671-d74f791d778b
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: GetModuleByOffset, dbgeng/IDebugSymbols3::GetModuleByOffset, IDebugSymbols interface [Windows Debugging], GetModuleByOffset method, GetModuleByOffset method [Windows Debugging], IDebugSymbols interface, debugger.getmodulebyoffset, IDebugSymbols_2f5375ce-a9f1-4e86-ab82-7f35edc716c2.xml, IDebugSymbols3 interface [Windows Debugging], GetModuleByOffset method, dbgeng/IDebugSymbols2::GetModuleByOffset, GetModuleByOffset method [Windows Debugging], IDebugSymbols2::GetModuleByOffset, GetModuleByOffset method [Windows Debugging], IDebugSymbols2 interface, IDebugSymbols2 interface [Windows Debugging], GetModuleByOffset method, IDebugSymbols::GetModuleByOffset, IDebugSymbols3, dbgeng/IDebugSymbols::GetModuleByOffset, IDebugSymbols3::GetModuleByOffset, GetModuleByOffset method [Windows Debugging], IDebugSymbols3 interface
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugSymbols.GetModuleByOffset
+-	IDebugSymbols2.GetModuleByOffset
+-	IDebugSymbols3.GetModuleByOffset
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

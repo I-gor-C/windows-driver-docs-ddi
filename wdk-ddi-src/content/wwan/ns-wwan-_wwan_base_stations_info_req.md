@@ -1,42 +1,47 @@
 ---
-UID : NS:wwan._WWAN_BASE_STATIONS_INFO_REQ
-title : "_WWAN_BASE_STATIONS_INFO_REQ"
-author : windows-driver-content
-description : The WWAN_BASE_STATIONS_INFO_REQ structure represents the aspects of cellular base stations information that are requested in a base stations information query.
-old-location : netvista\wwan_base_stations_info_req.htm
-old-project : netvista
-ms.assetid : 1948F98B-1F0B-4EB3-A2FF-01DA159B5EEB
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.wwan_base_stations_info_req, WWAN_BASE_STATIONS_INFO_REQ, WWAN_BASE_STATIONS_INFO_REQ structure [Network Drivers Starting with Windows Vista], wwan/PWWAN_BASE_STATIONS_INFO_REQ, _WWAN_BASE_STATIONS_INFO_REQ, PWWAN_BASE_STATIONS_INFO_REQ, *PWWAN_BASE_STATIONS_INFO_REQ, PWWAN_BASE_STATIONS_INFO_REQ structure pointer [Network Drivers Starting with Windows Vista], wwan/WWAN_BASE_STATIONS_INFO_REQ
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wwan.h
-req.include-header : Wwan.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10, version 1709
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WWAN_BASE_STATIONS_INFO_REQ, *PWWAN_BASE_STATIONS_INFO_REQ
-req.product : Windows 10 or later.
+UID: NS:wwan._WWAN_BASE_STATIONS_INFO_REQ
+title: "_WWAN_BASE_STATIONS_INFO_REQ"
+author: windows-driver-content
+description: The WWAN_BASE_STATIONS_INFO_REQ structure represents the aspects of cellular base stations information that are requested in a base stations information query.
+old-location: netvista\wwan_base_stations_info_req.htm
+old-project: netvista
+ms.assetid: 1948F98B-1F0B-4EB3-A2FF-01DA159B5EEB
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.wwan_base_stations_info_req, WWAN_BASE_STATIONS_INFO_REQ, WWAN_BASE_STATIONS_INFO_REQ structure [Network Drivers Starting with Windows Vista], wwan/PWWAN_BASE_STATIONS_INFO_REQ, _WWAN_BASE_STATIONS_INFO_REQ, PWWAN_BASE_STATIONS_INFO_REQ, *PWWAN_BASE_STATIONS_INFO_REQ, PWWAN_BASE_STATIONS_INFO_REQ structure pointer [Network Drivers Starting with Windows Vista], wwan/WWAN_BASE_STATIONS_INFO_REQ
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wwan.h
+req.include-header: Wwan.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10, version 1709
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wwan.h
+apiname:
+-	WWAN_BASE_STATIONS_INFO_REQ
+product: Windows
+targetos: Windows
+req.typenames: WWAN_BASE_STATIONS_INFO_REQ, *PWWAN_BASE_STATIONS_INFO_REQ
+req.product: Windows 10 or later.
 ---
 
 # _WWAN_BASE_STATIONS_INFO_REQ structure

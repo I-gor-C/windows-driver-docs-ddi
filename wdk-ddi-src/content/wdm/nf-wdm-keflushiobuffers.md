@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.KeFlushIoBuffers
-title : KeFlushIoBuffers function
-author : windows-driver-content
-description : The KeFlushIoBuffers routine flushes the memory region described by an MDL from caches of all processors.
-old-location : kernel\keflushiobuffers.htm
-old-project : kernel
-ms.assetid : 76954a20-7cd7-454b-a965-8c3f0cdb6e8f
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : KeFlushIoBuffers, kernel.keflushiobuffers, KeFlushIoBuffers routine [Kernel-Mode Driver Architecture], wdm/KeFlushIoBuffers, k105_265e110c-5dad-444c-a97d-6693d7996c51.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : MdlAfterReqCompletedIntIoctlA, MdlAfterReqCompletedIoctlA, MdlAfterReqCompletedReadA, MdlAfterReqCompletedWriteA
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.KeFlushIoBuffers
+title: KeFlushIoBuffers function
+author: windows-driver-content
+description: The KeFlushIoBuffers routine flushes the memory region described by an MDL from caches of all processors.
+old-location: kernel\keflushiobuffers.htm
+old-project: kernel
+ms.assetid: 76954a20-7cd7-454b-a965-8c3f0cdb6e8f
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: KeFlushIoBuffers, kernel.keflushiobuffers, KeFlushIoBuffers routine [Kernel-Mode Driver Architecture], wdm/KeFlushIoBuffers, k105_265e110c-5dad-444c-a97d-6693d7996c51.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: MdlAfterReqCompletedIntIoctlA, MdlAfterReqCompletedIoctlA, MdlAfterReqCompletedReadA, MdlAfterReqCompletedWriteA
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	KeFlushIoBuffers
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

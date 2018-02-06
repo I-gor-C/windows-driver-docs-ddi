@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.ExInitializeDeleteTimerParameters
-title : ExInitializeDeleteTimerParameters function
-author : windows-driver-content
-description : The ExInitializeDeleteTimerParameters routine initializes an EXT_DELETE_PARAMETERS structure.
-old-location : kernel\exinitializedeletetimerparameters.htm
-old-project : kernel
-ms.assetid : 2AD23AE1-05FF-44AF-807F-1ABD9D0D24DA
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ExInitializeDeleteTimerParameters routine [Kernel-Mode Driver Architecture], ExInitializeDeleteTimerParameters, wdm/ExInitializeDeleteTimerParameters, kernel.exinitializedeletetimerparameters
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available starting with Windows 8.1.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : Any level.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ExInitializeDeleteTimerParameters
+title: ExInitializeDeleteTimerParameters function
+author: windows-driver-content
+description: The ExInitializeDeleteTimerParameters routine initializes an EXT_DELETE_PARAMETERS structure.
+old-location: kernel\exinitializedeletetimerparameters.htm
+old-project: kernel
+ms.assetid: 2AD23AE1-05FF-44AF-807F-1ABD9D0D24DA
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ExInitializeDeleteTimerParameters routine [Kernel-Mode Driver Architecture], ExInitializeDeleteTimerParameters, wdm/ExInitializeDeleteTimerParameters, kernel.exinitializedeletetimerparameters
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available starting with Windows 8.1.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: Any level.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	ExInitializeDeleteTimerParameters
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

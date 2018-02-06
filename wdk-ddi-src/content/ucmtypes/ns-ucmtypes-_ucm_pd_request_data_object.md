@@ -1,42 +1,47 @@
 ---
-UID : NS:ucmtypes._UCM_PD_REQUEST_DATA_OBJECT
-title : "_UCM_PD_REQUEST_DATA_OBJECT"
-author : windows-driver-content
-description : Describes a Request Data Object (RDO). For information about these members, see the Power Delivery specification.
-old-location : buses\ucm_pd_request_data_object.htm
-old-project : usbref
-ms.assetid : 2F5CC46B-3BFC-4C69-A9C8-C4BC4864E84B
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : "_UCM_PD_REQUEST_DATA_OBJECT, PUCM_PD_REQUEST_DATA_OBJECT, ucmtypes/PUCM_PD_REQUEST_DATA_OBJECT, ucmtypes/UCM_PD_REQUEST_DATA_OBJECT, UCM_PD_REQUEST_DATA_OBJECT union [Buses], UCM_PD_REQUEST_DATA_OBJECT, PUCM_PD_REQUEST_DATA_OBJECT union pointer [Buses], *PUCM_PD_REQUEST_DATA_OBJECT, buses.ucm_pd_request_data_object"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ucmtypes.h
-req.include-header : Ucmcx.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 1.15
-req.umdf-ver : 2.15
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUCM_PD_REQUEST_DATA_OBJECT, UCM_PD_REQUEST_DATA_OBJECT"
-req.product : Windows 10 or later.
+UID: NS:ucmtypes._UCM_PD_REQUEST_DATA_OBJECT
+title: "_UCM_PD_REQUEST_DATA_OBJECT"
+author: windows-driver-content
+description: Describes a Request Data Object (RDO). For information about these members, see the Power Delivery specification.
+old-location: buses\ucm_pd_request_data_object.htm
+old-project: usbref
+ms.assetid: 2F5CC46B-3BFC-4C69-A9C8-C4BC4864E84B
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: "_UCM_PD_REQUEST_DATA_OBJECT, PUCM_PD_REQUEST_DATA_OBJECT, ucmtypes/PUCM_PD_REQUEST_DATA_OBJECT, ucmtypes/UCM_PD_REQUEST_DATA_OBJECT, UCM_PD_REQUEST_DATA_OBJECT union [Buses], UCM_PD_REQUEST_DATA_OBJECT, PUCM_PD_REQUEST_DATA_OBJECT union pointer [Buses], *PUCM_PD_REQUEST_DATA_OBJECT, buses.ucm_pd_request_data_object"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ucmtypes.h
+req.include-header: Ucmcx.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 1.15
+req.umdf-ver: 2.15
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ucmtypes.h
+apiname:
+-	UCM_PD_REQUEST_DATA_OBJECT
+product: Windows
+targetos: Windows
+req.typenames: "*PUCM_PD_REQUEST_DATA_OBJECT, UCM_PD_REQUEST_DATA_OBJECT"
+req.product: Windows 10 or later.
 ---
 
 # _UCM_PD_REQUEST_DATA_OBJECT structure

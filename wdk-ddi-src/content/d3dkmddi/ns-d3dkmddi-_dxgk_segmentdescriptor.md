@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGK_SEGMENTDESCRIPTOR
-title : "_DXGK_SEGMENTDESCRIPTOR"
-author : windows-driver-content
-description : The DXGK_SEGMENTDESCRIPTOR structure contains information about a segment that the driver supports.
-old-location : display\dxgk_segmentdescriptor.htm
-old-project : display
-ms.assetid : d9d79c58-6ef6-4917-b499-fd5a70dc8829
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgk_segmentdescriptor, _DXGK_SEGMENTDESCRIPTOR, DXGK_SEGMENTDESCRIPTOR, d3dkmddi/DXGK_SEGMENTDESCRIPTOR, DmStructs_129432bb-660c-4779-9860-dcc97f3a6ee4.xml, DXGK_SEGMENTDESCRIPTOR structure [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_SEGMENTDESCRIPTOR
+UID: NS:d3dkmddi._DXGK_SEGMENTDESCRIPTOR
+title: "_DXGK_SEGMENTDESCRIPTOR"
+author: windows-driver-content
+description: The DXGK_SEGMENTDESCRIPTOR structure contains information about a segment that the driver supports.
+old-location: display\dxgk_segmentdescriptor.htm
+old-project: display
+ms.assetid: d9d79c58-6ef6-4917-b499-fd5a70dc8829
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgk_segmentdescriptor, _DXGK_SEGMENTDESCRIPTOR, DXGK_SEGMENTDESCRIPTOR, d3dkmddi/DXGK_SEGMENTDESCRIPTOR, DmStructs_129432bb-660c-4779-9860-dcc97f3a6ee4.xml, DXGK_SEGMENTDESCRIPTOR structure [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DXGK_SEGMENTDESCRIPTOR
+product: Windows
+targetos: Windows
+req.typenames: DXGK_SEGMENTDESCRIPTOR
 ---
 
 # _DXGK_SEGMENTDESCRIPTOR structure

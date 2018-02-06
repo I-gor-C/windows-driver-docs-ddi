@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.RtlGetCompressionWorkSpaceSize
-title : RtlGetCompressionWorkSpaceSize function
-author : windows-driver-content
-description : The RtlGetCompressionWorkSpaceSize function is used to determine the correct size of the WorkSpace buffer for the RtlCompressBuffer and RtlDecompressFragment functions.
-old-location : ifsk\rtlgetcompressionworkspacesize.htm
-old-project : ifsk
-ms.assetid : f0e856f8-9c01-4219-b521-ab4a5c9bc35c
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ntifs/RtlGetCompressionWorkSpaceSize, ifsk.rtlgetcompressionworkspacesize, RtlGetCompressionWorkSpaceSize, rtlref_26332738-6278-49f9-b948-87bcb7e68c83.xml, RtlGetCompressionWorkSpaceSize function [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Fltkernel.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows XP and all later versions of Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.RtlGetCompressionWorkSpaceSize
+title: RtlGetCompressionWorkSpaceSize function
+author: windows-driver-content
+description: The RtlGetCompressionWorkSpaceSize function is used to determine the correct size of the WorkSpace buffer for the RtlCompressBuffer and RtlDecompressFragment functions.
+old-location: ifsk\rtlgetcompressionworkspacesize.htm
+old-project: ifsk
+ms.assetid: f0e856f8-9c01-4219-b521-ab4a5c9bc35c
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ntifs/RtlGetCompressionWorkSpaceSize, ifsk.rtlgetcompressionworkspacesize, RtlGetCompressionWorkSpaceSize, rtlref_26332738-6278-49f9-b948-87bcb7e68c83.xml, RtlGetCompressionWorkSpaceSize function [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Fltkernel.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows XP and all later versions of Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	RtlGetCompressionWorkSpaceSize
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

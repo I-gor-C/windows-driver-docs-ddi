@@ -1,42 +1,47 @@
 ---
-UID : NS:wdfusb._WDF_USB_DEVICE_SELECT_CONFIG_PARAMS
-title : "_WDF_USB_DEVICE_SELECT_CONFIG_PARAMS"
-author : windows-driver-content
-description : The WDF_USB_DEVICE_SELECT_CONFIG_PARAMS structure specifies USB device configuration parameters.
-old-location : wdf\wdf_usb_device_select_config_params.htm
-old-project : wdf
-ms.assetid : d48484eb-a7bf-4ca7-9d18-4c4c166db90c
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : kmdf.wdf_usb_device_select_config_params, *PWDF_USB_DEVICE_SELECT_CONFIG_PARAMS, PWDF_USB_DEVICE_SELECT_CONFIG_PARAMS structure pointer, PWDF_USB_DEVICE_SELECT_CONFIG_PARAMS, WDF_USB_DEVICE_SELECT_CONFIG_PARAMS structure, wdfusb/PWDF_USB_DEVICE_SELECT_CONFIG_PARAMS, WDF_USB_DEVICE_SELECT_CONFIG_PARAMS, _WDF_USB_DEVICE_SELECT_CONFIG_PARAMS, DFUsbRef_1f6335f1-ec4c-413e-b176-46b1bdf70d46.xml, wdf.wdf_usb_device_select_config_params, wdfusb/WDF_USB_DEVICE_SELECT_CONFIG_PARAMS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdfusb.h
-req.include-header : Wdfusb.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDF_USB_DEVICE_SELECT_CONFIG_PARAMS, WDF_USB_DEVICE_SELECT_CONFIG_PARAMS"
-req.product : Windows 10 or later.
+UID: NS:wdfusb._WDF_USB_DEVICE_SELECT_CONFIG_PARAMS
+title: "_WDF_USB_DEVICE_SELECT_CONFIG_PARAMS"
+author: windows-driver-content
+description: The WDF_USB_DEVICE_SELECT_CONFIG_PARAMS structure specifies USB device configuration parameters.
+old-location: wdf\wdf_usb_device_select_config_params.htm
+old-project: wdf
+ms.assetid: d48484eb-a7bf-4ca7-9d18-4c4c166db90c
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: kmdf.wdf_usb_device_select_config_params, *PWDF_USB_DEVICE_SELECT_CONFIG_PARAMS, PWDF_USB_DEVICE_SELECT_CONFIG_PARAMS structure pointer, PWDF_USB_DEVICE_SELECT_CONFIG_PARAMS, WDF_USB_DEVICE_SELECT_CONFIG_PARAMS structure, wdfusb/PWDF_USB_DEVICE_SELECT_CONFIG_PARAMS, WDF_USB_DEVICE_SELECT_CONFIG_PARAMS, _WDF_USB_DEVICE_SELECT_CONFIG_PARAMS, DFUsbRef_1f6335f1-ec4c-413e-b176-46b1bdf70d46.xml, wdf.wdf_usb_device_select_config_params, wdfusb/WDF_USB_DEVICE_SELECT_CONFIG_PARAMS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdfusb.h
+req.include-header: Wdfusb.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfusb.h
+apiname:
+-	WDF_USB_DEVICE_SELECT_CONFIG_PARAMS
+product: Windows
+targetos: Windows
+req.typenames: "*PWDF_USB_DEVICE_SELECT_CONFIG_PARAMS, WDF_USB_DEVICE_SELECT_CONFIG_PARAMS"
+req.product: Windows 10 or later.
 ---
 
 # _WDF_USB_DEVICE_SELECT_CONFIG_PARAMS structure

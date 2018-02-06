@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.IoInitializeDpcRequest
-title : IoInitializeDpcRequest function
-author : windows-driver-content
-description : The IoInitializeDpcRequest routine registers a driver-supplied DpcForIsr routine.
-old-location : kernel\ioinitializedpcrequest.htm
-old-project : kernel
-ms.assetid : d4685c23-7461-4539-9f7c-80f9760bf706
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : IoInitializeDpcRequest, wdm/IoInitializeDpcRequest, kernel.ioinitializedpcrequest, k104_6b13de62-4cbe-4902-8c60-67d873873047.xml, IoInitializeDpcRequest routine [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.IoInitializeDpcRequest
+title: IoInitializeDpcRequest function
+author: windows-driver-content
+description: The IoInitializeDpcRequest routine registers a driver-supplied DpcForIsr routine.
+old-location: kernel\ioinitializedpcrequest.htm
+old-project: kernel
+ms.assetid: d4685c23-7461-4539-9f7c-80f9760bf706
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: IoInitializeDpcRequest, wdm/IoInitializeDpcRequest, kernel.ioinitializedpcrequest, k104_6b13de62-4cbe-4902-8c60-67d873873047.xml, IoInitializeDpcRequest routine [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	IoInitializeDpcRequest
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

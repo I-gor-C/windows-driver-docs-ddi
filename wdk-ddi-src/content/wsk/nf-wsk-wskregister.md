@@ -1,42 +1,48 @@
 ---
-UID : NF:wsk.WskRegister
-title : WskRegister function
-author : windows-driver-content
-description : The WskRegister function registers a WSK application, given the application's WSK client Network Programming Interface (NPI).
-old-location : netvista\wskregister.htm
-old-project : netvista
-ms.assetid : 340933ad-1a71-421c-b1e1-360aa9c441fd
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : WskRegister function [Network Drivers Starting with Windows Vista], netvista.wskregister, wsk/WskRegister, WskRegister, wskref_21a26aab-f817-457f-bfde-28bcf1e2c8d0.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wsk.h
-req.include-header : Wsk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating   systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Netio.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WNODE_HEADER, *PWNODE_HEADER
-req.product : Windows 10 or later.
+UID: NF:wsk.WskRegister
+title: WskRegister function
+author: windows-driver-content
+description: The WskRegister function registers a WSK application, given the application's WSK client Network Programming Interface (NPI).
+old-location: netvista\wskregister.htm
+old-project: netvista
+ms.assetid: 340933ad-1a71-421c-b1e1-360aa9c441fd
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: WskRegister function [Network Drivers Starting with Windows Vista], netvista.wskregister, wsk/WskRegister, WskRegister, wskref_21a26aab-f817-457f-bfde-28bcf1e2c8d0.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wsk.h
+req.include-header: Wsk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Netio.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Netio.lib
+-	Netio.dll
+apiname:
+-	WskRegister
+product: Windows
+targetos: Windows
+req.typenames: WNODE_HEADER, *PWNODE_HEADER
+req.product: Windows 10 or later.
 ---
 
 

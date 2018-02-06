@@ -1,41 +1,46 @@
 ---
-UID : NC:ntddk.PSHED_PI_ENABLE_ERROR_SOURCE
-title : PSHED_PI_ENABLE_ERROR_SOURCE
-author : windows-driver-content
-description : A PSHED plug-in's EnableErrorSource callback function enables an error source.
-old-location : whea\enableerrorsource.htm
-old-project : whea
-ms.assetid : f2bc3b38-003e-4078-9bbd-d535e8971491
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : whea.enableerrorsource, EnableErrorSource callback function [WHEA Drivers and Applications], EnableErrorSource, PSHED_PI_ENABLE_ERROR_SOURCE, PSHED_PI_ENABLE_ERROR_SOURCE, ntddk/EnableErrorSource, whearef_d2fcd602-03f5-466c-bd90-abd81f15ec38.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PFILTER_INITIALIZATION_DATA, FILTER_INITIALIZATION_DATA"
+UID: NC:ntddk.PSHED_PI_ENABLE_ERROR_SOURCE
+title: PSHED_PI_ENABLE_ERROR_SOURCE
+author: windows-driver-content
+description: A PSHED plug-in's EnableErrorSource callback function enables an error source.
+old-location: whea\enableerrorsource.htm
+old-project: whea
+ms.assetid: f2bc3b38-003e-4078-9bbd-d535e8971491
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: whea.enableerrorsource, EnableErrorSource callback function [WHEA Drivers and Applications], EnableErrorSource, PSHED_PI_ENABLE_ERROR_SOURCE, PSHED_PI_ENABLE_ERROR_SOURCE, ntddk/EnableErrorSource, whearef_d2fcd602-03f5-466c-bd90-abd81f15ec38.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ntddk.h
+apiname:
+-	EnableErrorSource
+product: Windows
+targetos: Windows
+req.typenames: "*PFILTER_INITIALIZATION_DATA, FILTER_INITIALIZATION_DATA"
 ---
 
 

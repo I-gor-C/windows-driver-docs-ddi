@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.ExQueueWorkItem
-title : ExQueueWorkItem function
-author : windows-driver-content
-description : ExQueueWorkItem inserts a given work item into a queue from which a system worker thread removes the item and gives control to the routine that the caller supplied to ExInitializeWorkItem.
-old-location : ifsk\exqueueworkitem.htm
-old-project : ifsk
-ms.assetid : 287affe1-c5d4-4b36-8017-d1fef6088cf8
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ExQueueWorkItem, exref_67f4ac82-4b9b-4545-8641-2d1f8b0eb9ab.xml, ExQueueWorkItem routine [Installable File System Drivers], ifsk.exqueueworkitem, wdm/ExQueueWorkItem
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntifs.h, Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ExQueueWorkItem
+title: ExQueueWorkItem function
+author: windows-driver-content
+description: ExQueueWorkItem inserts a given work item into a queue from which a system worker thread removes the item and gives control to the routine that the caller supplied to ExInitializeWorkItem.
+old-location: ifsk\exqueueworkitem.htm
+old-project: ifsk
+ms.assetid: 287affe1-c5d4-4b36-8017-d1fef6088cf8
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ExQueueWorkItem, exref_67f4ac82-4b9b-4545-8641-2d1f8b0eb9ab.xml, ExQueueWorkItem routine [Installable File System Drivers], ifsk.exqueueworkitem, wdm/ExQueueWorkItem
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntifs.h, Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ExQueueWorkItem
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

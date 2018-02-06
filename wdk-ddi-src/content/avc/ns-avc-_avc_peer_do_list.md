@@ -1,41 +1,46 @@
 ---
-UID : NS:avc._AVC_PEER_DO_LIST
-title : "_AVC_PEER_DO_LIST"
-author : windows-driver-content
-description : The AVC_PEER_DO_LIST describes all nonvirtual (peer) instances of avc.sys.
-old-location : stream\avc_peer_do_list.htm
-old-project : stream
-ms.assetid : 5420df9b-35e7-49b4-97dc-a1d61623551c
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.avc_peer_do_list, AVC_PEER_DO_LIST, avcref_69feff07-d80c-4d5a-a5d8-fe942dfc5e26.xml, avc/AVC_PEER_DO_LIST, AVC_PEER_DO_LIST structure [Streaming Media Devices], avc/PAVC_PEER_DO_LIST, _AVC_PEER_DO_LIST, *PAVC_PEER_DO_LIST, PAVC_PEER_DO_LIST, PAVC_PEER_DO_LIST structure pointer [Streaming Media Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : avc.h
-req.include-header : Avc.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PAVC_PEER_DO_LIST, AVC_PEER_DO_LIST"
+UID: NS:avc._AVC_PEER_DO_LIST
+title: "_AVC_PEER_DO_LIST"
+author: windows-driver-content
+description: The AVC_PEER_DO_LIST describes all nonvirtual (peer) instances of avc.sys.
+old-location: stream\avc_peer_do_list.htm
+old-project: stream
+ms.assetid: 5420df9b-35e7-49b4-97dc-a1d61623551c
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.avc_peer_do_list, AVC_PEER_DO_LIST, avcref_69feff07-d80c-4d5a-a5d8-fe942dfc5e26.xml, avc/AVC_PEER_DO_LIST, AVC_PEER_DO_LIST structure [Streaming Media Devices], avc/PAVC_PEER_DO_LIST, _AVC_PEER_DO_LIST, *PAVC_PEER_DO_LIST, PAVC_PEER_DO_LIST, PAVC_PEER_DO_LIST structure pointer [Streaming Media Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: avc.h
+req.include-header: Avc.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	avc.h
+apiname:
+-	AVC_PEER_DO_LIST
+product: Windows
+targetos: Windows
+req.typenames: "*PAVC_PEER_DO_LIST, AVC_PEER_DO_LIST"
 ---
 
 # _AVC_PEER_DO_LIST structure

@@ -1,42 +1,47 @@
 ---
-UID : NS:wdfrequest._WDF_REQUEST_FORWARD_OPTIONS
-title : "_WDF_REQUEST_FORWARD_OPTIONS"
-author : windows-driver-content
-description : The WDF_REQUEST_FORWARD_OPTIONS structure contains options for requeuing an I/O request from a child device's I/O queue to the parent device's I/O queue.
-old-location : wdf\wdf_request_forward_options.htm
-old-project : wdf
-ms.assetid : 61ec4a05-749d-4d60-9bd7-ad121b6fd90f
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WDF_REQUEST_FORWARD_OPTIONS, wdfrequest/PWDF_REQUEST_FORWARD_OPTIONS, _WDF_REQUEST_FORWARD_OPTIONS, wdfrequest/WDF_REQUEST_FORWARD_OPTIONS, DFRequestObjectRef_878a982e-6fe9-4bfc-ad5c-165ef7590b79.xml, *PWDF_REQUEST_FORWARD_OPTIONS, PWDF_REQUEST_FORWARD_OPTIONS, WDF_REQUEST_FORWARD_OPTIONS structure, kmdf.wdf_request_forward_options, PWDF_REQUEST_FORWARD_OPTIONS structure pointer, wdf.wdf_request_forward_options
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdfrequest.h
-req.include-header : Wdf.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.9
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_REQUEST_FORWARD_OPTIONS, *PWDF_REQUEST_FORWARD_OPTIONS
-req.product : Windows 10 or later.
+UID: NS:wdfrequest._WDF_REQUEST_FORWARD_OPTIONS
+title: "_WDF_REQUEST_FORWARD_OPTIONS"
+author: windows-driver-content
+description: The WDF_REQUEST_FORWARD_OPTIONS structure contains options for requeuing an I/O request from a child device's I/O queue to the parent device's I/O queue.
+old-location: wdf\wdf_request_forward_options.htm
+old-project: wdf
+ms.assetid: 61ec4a05-749d-4d60-9bd7-ad121b6fd90f
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WDF_REQUEST_FORWARD_OPTIONS, wdfrequest/PWDF_REQUEST_FORWARD_OPTIONS, _WDF_REQUEST_FORWARD_OPTIONS, wdfrequest/WDF_REQUEST_FORWARD_OPTIONS, DFRequestObjectRef_878a982e-6fe9-4bfc-ad5c-165ef7590b79.xml, *PWDF_REQUEST_FORWARD_OPTIONS, PWDF_REQUEST_FORWARD_OPTIONS, WDF_REQUEST_FORWARD_OPTIONS structure, kmdf.wdf_request_forward_options, PWDF_REQUEST_FORWARD_OPTIONS structure pointer, wdf.wdf_request_forward_options
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdfrequest.h
+req.include-header: Wdf.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.9
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfrequest.h
+apiname:
+-	WDF_REQUEST_FORWARD_OPTIONS
+product: Windows
+targetos: Windows
+req.typenames: WDF_REQUEST_FORWARD_OPTIONS, *PWDF_REQUEST_FORWARD_OPTIONS
+req.product: Windows 10 or later.
 ---
 
 # _WDF_REQUEST_FORWARD_OPTIONS structure

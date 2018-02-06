@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3D11_1DDI_CREATEPIXELSHADER
-title : PFND3D11_1DDI_CREATEPIXELSHADER
-author : windows-driver-content
-description : Converts pixel shader code into a hardware-specific format and associates this code with a shader handle.
-old-location : display\createpixelshader_d3d11_1_.htm
-old-project : display
-ms.assetid : 8b5d6d2e-6a08-4841-8df5-ca88368a4e26
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.createpixelshader_d3d11_1_, CreatePixelShader(D3D11_1) callback function [Display Devices], CreatePixelShader(D3D11_1), PFND3D11_1DDI_CREATEPIXELSHADER, PFND3D11_1DDI_CREATEPIXELSHADER, d3d10umddi/CreatePixelShader(D3D11_1), display.pfncreatepixelshader
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3D11_1DDI_CREATEPIXELSHADER
+title: PFND3D11_1DDI_CREATEPIXELSHADER
+author: windows-driver-content
+description: Converts pixel shader code into a hardware-specific format and associates this code with a shader handle.
+old-location: display\createpixelshader_d3d11_1_.htm
+old-project: display
+ms.assetid: 8b5d6d2e-6a08-4841-8df5-ca88368a4e26
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.createpixelshader_d3d11_1_, CreatePixelShader(D3D11_1) callback function [Display Devices], CreatePixelShader(D3D11_1), PFND3D11_1DDI_CREATEPIXELSHADER, PFND3D11_1DDI_CREATEPIXELSHADER, d3d10umddi/CreatePixelShader(D3D11_1), display.pfncreatepixelshader
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	D3d10umddi.h
+apiname:
+-	CreatePixelShader(D3D11_1)
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

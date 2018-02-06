@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFNamedPropertyStore.GetNameAt
-title : IWDFNamedPropertyStore::GetNameAt method
-author : windows-driver-content
-description : The GetNameAt method retrieves the name of a property.
-old-location : wdf\iwdfnamedpropertystore_getnameat.htm
-old-project : wdf
-ms.assetid : f6ebf45b-b411-4684-b430-0b17a56ec0c0
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wudfddi/IWDFNamedPropertyStore::GetNameAt, GetNameAt, IWDFNamedPropertyStore interface, GetNameAt method, IWDFNamedPropertyStore, umdf.iwdfnamedpropertystore_getnameat, GetNameAt method, IWDFNamedPropertyStore interface, GetNameAt method, IWDFNamedPropertyStore::GetNameAt, UMDFPropertyStoreObjectRef_d7568b53-9673-4344-bbbc-100fc19aaba5.xml, wdf.iwdfnamedpropertystore_getnameat
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.5
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFNamedPropertyStore.GetNameAt
+title: IWDFNamedPropertyStore::GetNameAt method
+author: windows-driver-content
+description: The GetNameAt method retrieves the name of a property.
+old-location: wdf\iwdfnamedpropertystore_getnameat.htm
+old-project: wdf
+ms.assetid: f6ebf45b-b411-4684-b430-0b17a56ec0c0
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wudfddi/IWDFNamedPropertyStore::GetNameAt, GetNameAt, IWDFNamedPropertyStore interface, GetNameAt method, IWDFNamedPropertyStore, umdf.iwdfnamedpropertystore_getnameat, GetNameAt method, IWDFNamedPropertyStore interface, GetNameAt method, IWDFNamedPropertyStore::GetNameAt, UMDFPropertyStoreObjectRef_d7568b53-9673-4344-bbbc-100fc19aaba5.xml, wdf.iwdfnamedpropertystore_getnameat
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.5
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFNamedPropertyStore.GetNameAt
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

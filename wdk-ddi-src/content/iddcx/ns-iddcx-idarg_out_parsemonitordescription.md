@@ -1,41 +1,46 @@
 ---
-UID : NS:iddcx.IDARG_OUT_PARSEMONITORDESCRIPTION
-title : IDARG_OUT_PARSEMONITORDESCRIPTION
-author : windows-driver-content
-description : Gives information about the number of monitor modes and preferred monitor mode of a monitor.
-old-location : display\idarg_out_parsemonitordescription.htm
-old-project : display
-ms.assetid : 30f4c178-5ef8-4650-b396-1e4bc9cc9125
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.idarg_out_parsemonitordescription, IDARG_OUT_PARSEMONITORDESCRIPTION, iddcx/IDARG_OUT_PARSEMONITORDESCRIPTION, IDARG_OUT_PARSEMONITORDESCRIPTION structure [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : iddcx.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NS:iddcx.IDARG_OUT_PARSEMONITORDESCRIPTION
+title: IDARG_OUT_PARSEMONITORDESCRIPTION
+author: windows-driver-content
+description: Gives information about the number of monitor modes and preferred monitor mode of a monitor.
+old-location: display\idarg_out_parsemonitordescription.htm
+old-project: display
+ms.assetid: 30f4c178-5ef8-4650-b396-1e4bc9cc9125
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.idarg_out_parsemonitordescription, IDARG_OUT_PARSEMONITORDESCRIPTION, iddcx/IDARG_OUT_PARSEMONITORDESCRIPTION, IDARG_OUT_PARSEMONITORDESCRIPTION structure [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: iddcx.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	iddcx.h
+apiname:
+-	IDARG_OUT_PARSEMONITORDESCRIPTION
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 # IDARG_OUT_PARSEMONITORDESCRIPTION structure

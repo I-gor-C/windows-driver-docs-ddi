@@ -1,41 +1,46 @@
 ---
-UID : NS:pepfx._PEP_PPM_IDLE_EXECUTE_V2
-title : "_PEP_PPM_IDLE_EXECUTE_V2"
-author : windows-driver-content
-description : The PEP_PPM_IDLE_EXECUTE_V2 structure specifies the idle state that the processor is to enter.
-old-location : kernel\pep_ppm_idle_execute_v2.htm
-old-project : kernel
-ms.assetid : 28CF8291-E7C3-4289-909C-C89D350A9D83
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : "_PEP_PPM_IDLE_EXECUTE_V2, pepfx/PPEP_PPM_IDLE_EXECUTE_V2, *PPEP_PPM_IDLE_EXECUTE_V2, PPEP_PPM_IDLE_EXECUTE_V2 structure pointer [Kernel-Mode Driver Architecture], pepfx/PEP_PPM_IDLE_EXECUTE_V2, PEP_PPM_IDLE_EXECUTE_V2, PPEP_PPM_IDLE_EXECUTE_V2, PEP_PPM_IDLE_EXECUTE_V2 structure [Kernel-Mode Driver Architecture], kernel.pep_ppm_idle_execute_v2"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : pepfx.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with Windows 10.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PEP_PPM_IDLE_EXECUTE_V2, *PPEP_PPM_IDLE_EXECUTE_V2
+UID: NS:pepfx._PEP_PPM_IDLE_EXECUTE_V2
+title: "_PEP_PPM_IDLE_EXECUTE_V2"
+author: windows-driver-content
+description: The PEP_PPM_IDLE_EXECUTE_V2 structure specifies the idle state that the processor is to enter.
+old-location: kernel\pep_ppm_idle_execute_v2.htm
+old-project: kernel
+ms.assetid: 28CF8291-E7C3-4289-909C-C89D350A9D83
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: "_PEP_PPM_IDLE_EXECUTE_V2, pepfx/PPEP_PPM_IDLE_EXECUTE_V2, *PPEP_PPM_IDLE_EXECUTE_V2, PPEP_PPM_IDLE_EXECUTE_V2 structure pointer [Kernel-Mode Driver Architecture], pepfx/PEP_PPM_IDLE_EXECUTE_V2, PEP_PPM_IDLE_EXECUTE_V2, PPEP_PPM_IDLE_EXECUTE_V2, PEP_PPM_IDLE_EXECUTE_V2 structure [Kernel-Mode Driver Architecture], kernel.pep_ppm_idle_execute_v2"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: pepfx.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows 10.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	pepfx.h
+apiname:
+-	PEP_PPM_IDLE_EXECUTE_V2
+product: Windows
+targetos: Windows
+req.typenames: PEP_PPM_IDLE_EXECUTE_V2, *PPEP_PPM_IDLE_EXECUTE_V2
 ---
 
 # _PEP_PPM_IDLE_EXECUTE_V2 structure

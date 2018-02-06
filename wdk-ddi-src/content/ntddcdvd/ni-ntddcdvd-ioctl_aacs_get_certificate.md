@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddcdvd.IOCTL_AACS_GET_CERTIFICATE
-title : IOCTL_AACS_GET_CERTIFICATE
-author : windows-driver-content
-description : Queries the logical unit for the device certificate.
-old-location : storage\ioctl_aacs_get_certificate.htm
-old-project : storage
-ms.assetid : 1245f9c3-702c-48d8-8ecd-c0ce40d520b3
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_aacs_get_certificate, IOCTL_AACS_GET_CERTIFICATE control code [Storage Devices], IOCTL_AACS_GET_CERTIFICATE, ntddcdvd/IOCTL_AACS_GET_CERTIFICATE, k307_53c85a18-def4-48b8-bc19-12347714d191.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddcdvd.h
-req.include-header : Ntddcdvd.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DVD_STRUCTURE_FORMAT, *PDVD_STRUCTURE_FORMAT
+UID: NI:ntddcdvd.IOCTL_AACS_GET_CERTIFICATE
+title: IOCTL_AACS_GET_CERTIFICATE
+author: windows-driver-content
+description: Queries the logical unit for the device certificate.
+old-location: storage\ioctl_aacs_get_certificate.htm
+old-project: storage
+ms.assetid: 1245f9c3-702c-48d8-8ecd-c0ce40d520b3
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_aacs_get_certificate, IOCTL_AACS_GET_CERTIFICATE control code [Storage Devices], IOCTL_AACS_GET_CERTIFICATE, ntddcdvd/IOCTL_AACS_GET_CERTIFICATE, k307_53c85a18-def4-48b8-bc19-12347714d191.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddcdvd.h
+req.include-header: Ntddcdvd.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddcdvd.h
+apiname:
+-	IOCTL_AACS_GET_CERTIFICATE
+product: Windows
+targetos: Windows
+req.typenames: DVD_STRUCTURE_FORMAT, *PDVD_STRUCTURE_FORMAT
 ---
 
 # IOCTL_AACS_GET_CERTIFICATE IOCTL

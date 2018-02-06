@@ -1,41 +1,46 @@
 ---
-UID : NL:dbgeng.DebugBaseEventCallbacksWide
-title : DebugBaseEventCallbacksWide
-author : windows-driver-content
-description : The DebugBaseEventCallbacksWide class provides a base implementation of the IDebugEventCallbacksWide interface.
-old-location : debugger\debugbaseeventcallbackswide.htm
-old-project : debugger
-ms.assetid : 38AD8472-1BA3-42EA-99CE-E91098A5B334
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : debugger.debugbaseeventcallbackswide, DebugBaseEventCallbacksWide class [Windows Debugging], DebugBaseEventCallbacksWide class [Windows Debugging], described, DebugBaseEventCallbacksWide, dbgeng/DebugBaseEventCallbacksWide
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : class
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NL:dbgeng.DebugBaseEventCallbacksWide
+title: DebugBaseEventCallbacksWide
+author: windows-driver-content
+description: The DebugBaseEventCallbacksWide class provides a base implementation of the IDebugEventCallbacksWide interface.
+old-location: debugger\debugbaseeventcallbackswide.htm
+old-project: debugger
+ms.assetid: 38AD8472-1BA3-42EA-99CE-E91098A5B334
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: debugger.debugbaseeventcallbackswide, DebugBaseEventCallbacksWide class [Windows Debugging], DebugBaseEventCallbacksWide class [Windows Debugging], described, DebugBaseEventCallbacksWide, dbgeng/DebugBaseEventCallbacksWide
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: class
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	DebugBaseEventCallbacksWide
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 # DebugBaseEventCallbacksWide Class

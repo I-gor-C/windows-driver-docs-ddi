@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddndis._NDIS_SWITCH_NIC_SAVE_STATE
-title : "_NDIS_SWITCH_NIC_SAVE_STATE"
-author : windows-driver-content
-description : The NDIS_SWITCH_NIC_SAVE_STATE structure specifies the run-time state information for a Hyper-V extensible switch port. The extensible switch extension uses this structure to save or restore run-time port information.
-old-location : netvista\ndis_switch_nic_save_state.htm
-old-project : netvista
-ms.assetid : FBC2EE79-9D36-4CA9-A7BC-9C422DE51B13
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : PNDIS_SWITCH_NIC_SAVE_STATE, netvista.ndis_switch_nic_save_state, ntddndis/NDIS_SWITCH_NIC_SAVE_STATE, PNDIS_SWITCH_NIC_SAVE_STATE structure pointer [Network Drivers Starting with Windows Vista], *PNDIS_SWITCH_NIC_SAVE_STATE, NDIS_SWITCH_NIC_SAVE_STATE structure [Network Drivers Starting with Windows Vista], NDIS_SWITCH_NIC_SAVE_STATE, ntddndis/PNDIS_SWITCH_NIC_SAVE_STATE, _NDIS_SWITCH_NIC_SAVE_STATE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddndis.h
-req.include-header : Ndis.h, Fwpsk.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.30 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SWITCH_NIC_SAVE_STATE, *PNDIS_SWITCH_NIC_SAVE_STATE
+UID: NS:ntddndis._NDIS_SWITCH_NIC_SAVE_STATE
+title: "_NDIS_SWITCH_NIC_SAVE_STATE"
+author: windows-driver-content
+description: The NDIS_SWITCH_NIC_SAVE_STATE structure specifies the run-time state information for a Hyper-V extensible switch port. The extensible switch extension uses this structure to save or restore run-time port information.
+old-location: netvista\ndis_switch_nic_save_state.htm
+old-project: netvista
+ms.assetid: FBC2EE79-9D36-4CA9-A7BC-9C422DE51B13
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: PNDIS_SWITCH_NIC_SAVE_STATE, netvista.ndis_switch_nic_save_state, ntddndis/NDIS_SWITCH_NIC_SAVE_STATE, PNDIS_SWITCH_NIC_SAVE_STATE structure pointer [Network Drivers Starting with Windows Vista], *PNDIS_SWITCH_NIC_SAVE_STATE, NDIS_SWITCH_NIC_SAVE_STATE structure [Network Drivers Starting with Windows Vista], NDIS_SWITCH_NIC_SAVE_STATE, ntddndis/PNDIS_SWITCH_NIC_SAVE_STATE, _NDIS_SWITCH_NIC_SAVE_STATE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddndis.h
+req.include-header: Ndis.h, Fwpsk.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.30 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddndis.h
+apiname:
+-	NDIS_SWITCH_NIC_SAVE_STATE
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SWITCH_NIC_SAVE_STATE, *PNDIS_SWITCH_NIC_SAVE_STATE
 ---
 
 # _NDIS_SWITCH_NIC_SAVE_STATE structure

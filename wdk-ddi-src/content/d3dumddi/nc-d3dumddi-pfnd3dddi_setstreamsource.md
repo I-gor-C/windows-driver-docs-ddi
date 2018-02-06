@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_SETSTREAMSOURCE
-title : PFND3DDDI_SETSTREAMSOURCE
-author : windows-driver-content
-description : The SetStreamSource function binds a portion of a vertex stream source to a vertex buffer.
-old-location : display\setstreamsource.htm
-old-project : display
-ms.assetid : 669dbabc-91fb-40f9-a034-11c3c2e70436
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.setstreamsource, SetStreamSource callback function [Display Devices], SetStreamSource, PFND3DDDI_SETSTREAMSOURCE, PFND3DDDI_SETSTREAMSOURCE, d3dumddi/SetStreamSource, UserModeDisplayDriver_Functions_c84f438f-92b5-4d01-8d27-275deedc29e4.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_SETSTREAMSOURCE
+title: PFND3DDDI_SETSTREAMSOURCE
+author: windows-driver-content
+description: The SetStreamSource function binds a portion of a vertex stream source to a vertex buffer.
+old-location: display\setstreamsource.htm
+old-project: display
+ms.assetid: 669dbabc-91fb-40f9-a034-11c3c2e70436
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.setstreamsource, SetStreamSource callback function [Display Devices], SetStreamSource, PFND3DDDI_SETSTREAMSOURCE, PFND3DDDI_SETSTREAMSOURCE, d3dumddi/SetStreamSource, UserModeDisplayDriver_Functions_c84f438f-92b5-4d01-8d27-275deedc29e4.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	SetStreamSource
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

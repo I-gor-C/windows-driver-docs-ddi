@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddmmc._FEATURE_HEADER
-title : "_FEATURE_HEADER"
-author : windows-driver-content
-description : The FEATURE_HEADER structure is used in conjunction with the IOCTL_CDROM_GET_CONFIGURATION request to report header information for both feature and profile descriptors.
-old-location : storage\feature_header.htm
-old-project : storage
-ms.assetid : 61831fbb-48ad-4831-8b69-7b1a5cafa629
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.feature_header, ntddmmc/FEATURE_HEADER, FEATURE_HEADER, FEATURE_HEADER structure [Storage Devices], *PFEATURE_HEADER, structs-CD-ROM_41d7886f-d383-4416-8f89-b40f1bb0bc7f.xml, PFEATURE_HEADER structure pointer [Storage Devices], PFEATURE_HEADER, _FEATURE_HEADER, ntddmmc/PFEATURE_HEADER
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddmmc.h
-req.include-header : Ntddcdrm.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FEATURE_HEADER, *PFEATURE_HEADER
+UID: NS:ntddmmc._FEATURE_HEADER
+title: "_FEATURE_HEADER"
+author: windows-driver-content
+description: The FEATURE_HEADER structure is used in conjunction with the IOCTL_CDROM_GET_CONFIGURATION request to report header information for both feature and profile descriptors.
+old-location: storage\feature_header.htm
+old-project: storage
+ms.assetid: 61831fbb-48ad-4831-8b69-7b1a5cafa629
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.feature_header, ntddmmc/FEATURE_HEADER, FEATURE_HEADER, FEATURE_HEADER structure [Storage Devices], *PFEATURE_HEADER, structs-CD-ROM_41d7886f-d383-4416-8f89-b40f1bb0bc7f.xml, PFEATURE_HEADER structure pointer [Storage Devices], PFEATURE_HEADER, _FEATURE_HEADER, ntddmmc/PFEATURE_HEADER
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddmmc.h
+req.include-header: Ntddcdrm.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddmmc.h
+apiname:
+-	FEATURE_HEADER
+product: Windows
+targetos: Windows
+req.typenames: FEATURE_HEADER, *PFEATURE_HEADER
 ---
 
 # _FEATURE_HEADER structure

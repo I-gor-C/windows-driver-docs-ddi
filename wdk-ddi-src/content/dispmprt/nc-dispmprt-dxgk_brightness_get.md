@@ -1,41 +1,46 @@
 ---
-UID : NC:dispmprt.DXGK_BRIGHTNESS_GET
-title : DXGK_BRIGHTNESS_GET
-author : windows-driver-content
-description : The DxgkDdiGetBrightness function retrieves the currently active brightness level of an integrated display panel.
-old-location : display\dxgkddigetbrightness.htm
-old-project : display
-ms.assetid : e226cd36-45af-4d80-9aba-8919b267483b
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkddigetbrightness, DxgkDdiGetBrightness callback function [Display Devices], DxgkDdiGetBrightness, DXGK_BRIGHTNESS_GET, DXGK_BRIGHTNESS_GET, dispmprt/DxgkDdiGetBrightness, DmFunctions_be286481-7cef-4059-acb2-cac6554eb346.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : dispmprt.h
-req.include-header : Dispmprt.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
+UID: NC:dispmprt.DXGK_BRIGHTNESS_GET
+title: DXGK_BRIGHTNESS_GET
+author: windows-driver-content
+description: The DxgkDdiGetBrightness function retrieves the currently active brightness level of an integrated display panel.
+old-location: display\dxgkddigetbrightness.htm
+old-project: display
+ms.assetid: e226cd36-45af-4d80-9aba-8919b267483b
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkddigetbrightness, DxgkDdiGetBrightness callback function [Display Devices], DxgkDdiGetBrightness, DXGK_BRIGHTNESS_GET, DXGK_BRIGHTNESS_GET, dispmprt/DxgkDdiGetBrightness, DmFunctions_be286481-7cef-4059-acb2-cac6554eb346.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: dispmprt.h
+req.include-header: Dispmprt.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	dispmprt.h
+apiname:
+-	DxgkDdiGetBrightness
+product: Windows
+targetos: Windows
+req.typenames: SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ---
 
 

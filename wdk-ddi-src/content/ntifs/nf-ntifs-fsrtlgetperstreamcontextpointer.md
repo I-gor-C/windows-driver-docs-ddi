@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.FsRtlGetPerStreamContextPointer
-title : FsRtlGetPerStreamContextPointer macro
-author : windows-driver-content
-description : The FsRtlGetPerStreamContextPointer macro returns the file system's stream context for a file stream.
-old-location : ifsk\fsrtlgetperstreamcontextpointer.htm
-old-project : ifsk
-ms.assetid : f3f9294a-23c0-450a-ae29-22add8176540
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ntifs/FsRtlGetPerStreamContextPointer, FsRtlGetPerStreamContextPointer function [Installable File System Drivers], ifsk.fsrtlgetperstreamcontextpointer, FsRtlGetPerStreamContextPointer, fsrtlref_c7e152d7-1815-435e-852a-975962e355a6.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : macro
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Desktop
-req.target-min-winverclnt : The FsRtlGetPerStreamContextPointer macro is available on Microsoft Windows XP and later, and on the Update Rollup for Windows 2000 Service Pack 4 (SP4).
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : ntifs.h
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.FsRtlGetPerStreamContextPointer
+title: FsRtlGetPerStreamContextPointer macro
+author: windows-driver-content
+description: The FsRtlGetPerStreamContextPointer macro returns the file system's stream context for a file stream.
+old-location: ifsk\fsrtlgetperstreamcontextpointer.htm
+old-project: ifsk
+ms.assetid: f3f9294a-23c0-450a-ae29-22add8176540
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ntifs/FsRtlGetPerStreamContextPointer, FsRtlGetPerStreamContextPointer function [Installable File System Drivers], ifsk.fsrtlgetperstreamcontextpointer, FsRtlGetPerStreamContextPointer, fsrtlref_c7e152d7-1815-435e-852a-975962e355a6.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: macro
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Desktop
+req.target-min-winverclnt: The FsRtlGetPerStreamContextPointer macro is available on Microsoft Windows XP and later, and on the Update Rollup for Windows 2000 Service Pack 4 (SP4).
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: ntifs.h
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntifs.h
+apiname:
+-	FsRtlGetPerStreamContextPointer
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

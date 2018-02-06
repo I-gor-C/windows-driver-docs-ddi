@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.PoFxStartDevicePowerManagement
-title : PoFxStartDevicePowerManagement function
-author : windows-driver-content
-description : The PoFxStartDevicePowerManagement routine completes the registration of a device with the power management framework (PoFx) and starts device power management.
-old-location : kernel\pofxstartdevicepowermanagement.htm
-old-project : kernel
-ms.assetid : DA034B30-203E-4418-B5BD-1094B3D438FE
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : PoFxStartDevicePowerManagement routine [Kernel-Mode Driver Architecture], wdm/PoFxStartDevicePowerManagement, PoFxStartDevicePowerManagement, kernel.pofxstartdevicepowermanagement
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : 
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ntoskrnl.lib
-req.dll : Ntoskrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.PoFxStartDevicePowerManagement
+title: PoFxStartDevicePowerManagement function
+author: windows-driver-content
+description: The PoFxStartDevicePowerManagement routine completes the registration of a device with the power management framework (PoFx) and starts device power management.
+old-location: kernel\pofxstartdevicepowermanagement.htm
+old-project: kernel
+ms.assetid: DA034B30-203E-4418-B5BD-1094B3D438FE
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: PoFxStartDevicePowerManagement routine [Kernel-Mode Driver Architecture], wdm/PoFxStartDevicePowerManagement, PoFxStartDevicePowerManagement, kernel.pofxstartdevicepowermanagement
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: 
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ntoskrnl.lib
+req.dll: Ntoskrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Ntoskrnl.exe
+apiname:
+-	PoFxStartDevicePowerManagement
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

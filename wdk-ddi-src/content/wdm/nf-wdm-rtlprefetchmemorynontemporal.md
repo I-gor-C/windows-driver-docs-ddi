@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.RtlPrefetchMemoryNonTemporal
-title : RtlPrefetchMemoryNonTemporal function
-author : windows-driver-content
-description : The RtlPrefetchMemoryNonTemporal routine provides a hint to the processor that a buffer should be temporarily moved into the processor cache.
-old-location : kernel\rtlprefetchmemorynontemporal.htm
-old-project : kernel
-ms.assetid : d11c3414-86c8-4b68-829e-4523519c5299
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : RtlPrefetchMemoryNonTemporal routine [Kernel-Mode Driver Architecture], wdm/RtlPrefetchMemoryNonTemporal, RtlPrefetchMemoryNonTemporal, kernel.rtlprefetchmemorynontemporal, k109_795dffef-c947-4f0b-a8ab-fcc0cb6cc630.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Ntddk.h, Wdm.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Server 2003 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.RtlPrefetchMemoryNonTemporal
+title: RtlPrefetchMemoryNonTemporal function
+author: windows-driver-content
+description: The RtlPrefetchMemoryNonTemporal routine provides a hint to the processor that a buffer should be temporarily moved into the processor cache.
+old-location: kernel\rtlprefetchmemorynontemporal.htm
+old-project: kernel
+ms.assetid: d11c3414-86c8-4b68-829e-4523519c5299
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: RtlPrefetchMemoryNonTemporal routine [Kernel-Mode Driver Architecture], wdm/RtlPrefetchMemoryNonTemporal, RtlPrefetchMemoryNonTemporal, kernel.rtlprefetchmemorynontemporal, k109_795dffef-c947-4f0b-a8ab-fcc0cb6cc630.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Ntddk.h, Wdm.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Server 2003 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	RtlPrefetchMemoryNonTemporal
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NC:dispmprt.DXGKCB_UNMAP_MEMORY
-title : DXGKCB_UNMAP_MEMORY
-author : windows-driver-content
-description : The DxgkCbUnmapMemory function unmaps a range of addresses previously mapped by DxgkCbMapMemory.
-old-location : display\dxgkcbunmapmemory.htm
-old-project : display
-ms.assetid : 71e8eb0e-599b-44cf-955b-828f6667edf6
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkcbunmapmemory, DxgkCbUnmapMemory callback function [Display Devices], DxgkCbUnmapMemory, DXGKCB_UNMAP_MEMORY, DXGKCB_UNMAP_MEMORY, dispmprt/DxgkCbUnmapMemory, DpFunctions_d0ba5b02-22ab-4fad-a54a-1e402f538456.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : dispmprt.h
-req.include-header : Dispmprt.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
+UID: NC:dispmprt.DXGKCB_UNMAP_MEMORY
+title: DXGKCB_UNMAP_MEMORY
+author: windows-driver-content
+description: The DxgkCbUnmapMemory function unmaps a range of addresses previously mapped by DxgkCbMapMemory.
+old-location: display\dxgkcbunmapmemory.htm
+old-project: display
+ms.assetid: 71e8eb0e-599b-44cf-955b-828f6667edf6
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkcbunmapmemory, DxgkCbUnmapMemory callback function [Display Devices], DxgkCbUnmapMemory, DXGKCB_UNMAP_MEMORY, DXGKCB_UNMAP_MEMORY, dispmprt/DxgkCbUnmapMemory, DpFunctions_d0ba5b02-22ab-4fad-a54a-1e402f538456.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: dispmprt.h
+req.include-header: Dispmprt.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	dispmprt.h
+apiname:
+-	DxgkCbUnmapMemory
+product: Windows
+targetos: Windows
+req.typenames: SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ---
 
 

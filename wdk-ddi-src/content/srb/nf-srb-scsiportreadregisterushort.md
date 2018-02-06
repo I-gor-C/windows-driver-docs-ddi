@@ -1,42 +1,48 @@
 ---
-UID : NF:srb.ScsiPortReadRegisterUshort
-title : ScsiPortReadRegisterUshort function
-author : windows-driver-content
-description : The ScsiPortReadRegisterUshort routine reads a USHORT value from the HBA.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future.
-old-location : storage\scsiportreadregisterushort.htm
-old-project : storage
-ms.assetid : 192a525e-6a42-4bd0-9c50-d13741469a48
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : ScsiPortReadRegisterUshort, ScsiPortReadRegisterUshort routine [Storage Devices], srb/ScsiPortReadRegisterUshort, storage.scsiportreadregisterushort, scsiprt_342c6cc3-090e-4bea-be54-1a52f50d8276.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : srb.h
-req.include-header : Miniport.h, Scsi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Scsiport.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SPB_CONTROLLER_CONFIG, *PSPB_CONTROLLER_CONFIG
-req.product : Windows 10 or later.
+UID: NF:srb.ScsiPortReadRegisterUshort
+title: ScsiPortReadRegisterUshort function
+author: windows-driver-content
+description: The ScsiPortReadRegisterUshort routine reads a USHORT value from the HBA.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future.
+old-location: storage\scsiportreadregisterushort.htm
+old-project: storage
+ms.assetid: 192a525e-6a42-4bd0-9c50-d13741469a48
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: ScsiPortReadRegisterUshort, ScsiPortReadRegisterUshort routine [Storage Devices], srb/ScsiPortReadRegisterUshort, storage.scsiportreadregisterushort, scsiprt_342c6cc3-090e-4bea-be54-1a52f50d8276.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: srb.h
+req.include-header: Miniport.h, Scsi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Scsiport.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Scsiport.lib
+-	Scsiport.dll
+apiname:
+-	ScsiPortReadRegisterUshort
+product: Windows
+targetos: Windows
+req.typenames: SPB_CONTROLLER_CONFIG, *PSPB_CONTROLLER_CONFIG
+req.product: Windows 10 or later.
 ---
 
 

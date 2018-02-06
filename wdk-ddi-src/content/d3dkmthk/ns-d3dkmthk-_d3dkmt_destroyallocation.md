@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmthk._D3DKMT_DESTROYALLOCATION
-title : "_D3DKMT_DESTROYALLOCATION"
-author : windows-driver-content
-description : The D3DKMT_DESTROYALLOCATION structure describes parameters for releasing allocations.
-old-location : display\d3dkmt_destroyallocation.htm
-old-project : display
-ms.assetid : ba85b333-9a43-421a-8687-9630e792cadf
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3dkmthk/D3DKMT_DESTROYALLOCATION, display.d3dkmt_destroyallocation, D3DKMT_DESTROYALLOCATION, OpenGL_Structs_46425135-17f7-4b12-8e01-1247e3e1ab63.xml, _D3DKMT_DESTROYALLOCATION, D3DKMT_DESTROYALLOCATION structure [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_DESTROYALLOCATION
+UID: NS:d3dkmthk._D3DKMT_DESTROYALLOCATION
+title: "_D3DKMT_DESTROYALLOCATION"
+author: windows-driver-content
+description: The D3DKMT_DESTROYALLOCATION structure describes parameters for releasing allocations.
+old-location: display\d3dkmt_destroyallocation.htm
+old-project: display
+ms.assetid: ba85b333-9a43-421a-8687-9630e792cadf
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3dkmthk/D3DKMT_DESTROYALLOCATION, display.d3dkmt_destroyallocation, D3DKMT_DESTROYALLOCATION, OpenGL_Structs_46425135-17f7-4b12-8e01-1247e3e1ab63.xml, _D3DKMT_DESTROYALLOCATION, D3DKMT_DESTROYALLOCATION structure [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmthk.h
+apiname:
+-	D3DKMT_DESTROYALLOCATION
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_DESTROYALLOCATION
 ---
 
 # _D3DKMT_DESTROYALLOCATION structure

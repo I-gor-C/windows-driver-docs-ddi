@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.RtlUTF8ToUnicodeN
-title : RtlUTF8ToUnicodeN function
-author : windows-driver-content
-description : The RtlUTF8ToUnicodeN routine converts a UTF-8 string to a Unicode string.
-old-location : kernel\rtlutf8tounicoden.htm
-old-project : kernel
-ms.assetid : 0b5f791a-9814-4058-8ee0-8f113ca3ade2
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : RtlUTF8ToUnicodeN, RtlUTF8ToUnicodeN routine [Kernel-Mode Driver Architecture], kernel.rtlutf8tounicoden, wdm/RtlUTF8ToUnicodeN, k109_67399c4f-a942-4493-b141-6824b6de570c.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h, Wdm.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 7 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.RtlUTF8ToUnicodeN
+title: RtlUTF8ToUnicodeN function
+author: windows-driver-content
+description: The RtlUTF8ToUnicodeN routine converts a UTF-8 string to a Unicode string.
+old-location: kernel\rtlutf8tounicoden.htm
+old-project: kernel
+ms.assetid: 0b5f791a-9814-4058-8ee0-8f113ca3ade2
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: RtlUTF8ToUnicodeN, RtlUTF8ToUnicodeN routine [Kernel-Mode Driver Architecture], kernel.rtlutf8tounicoden, wdm/RtlUTF8ToUnicodeN, k109_67399c4f-a942-4493-b141-6824b6de570c.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h, Wdm.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 7 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	RtlUTF8ToUnicodeN
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

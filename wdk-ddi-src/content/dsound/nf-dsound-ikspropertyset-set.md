@@ -1,41 +1,46 @@
 ---
-UID : NF:dsound.IKsPropertySet.Set
-title : IKsPropertySet::Set method
-author : windows-driver-content
-description : The Set method sets a property identified by a property-set GUID and a property identifier.
-old-location : stream\ikspropertyset_set.htm
-old-project : stream
-ms.assetid : 959a78e2-b5c8-47b0-97b1-52d9565a6dab
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : Set method [Streaming Media Devices], Set method [Streaming Media Devices], IKsPropertySet interface, IKsPropertySet::Set, stream.ikspropertyset_set, Set, ksproxy/IKsPropertySet::Set, ksproxy_957cf2a5-1dc6-4e89-86c5-b2f01d913b66.xml, IKsPropertySet, IKsPropertySet interface [Streaming Media Devices], Set method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dsound.h
-req.include-header : Ksproxy.h, Ksproxy.h, Dsound.h, Ksproxy.h, Ksproxy.h, Dsound.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dsound.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDRMRIGHTS, DRMRIGHTS"
+UID: NF:dsound.IKsPropertySet.Set
+title: IKsPropertySet::Set method
+author: windows-driver-content
+description: The Set method sets a property identified by a property-set GUID and a property identifier.
+old-location: stream\ikspropertyset_set.htm
+old-project: stream
+ms.assetid: 959a78e2-b5c8-47b0-97b1-52d9565a6dab
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: Set method [Streaming Media Devices], Set method [Streaming Media Devices], IKsPropertySet interface, IKsPropertySet::Set, stream.ikspropertyset_set, Set, ksproxy/IKsPropertySet::Set, ksproxy_957cf2a5-1dc6-4e89-86c5-b2f01d913b66.xml, IKsPropertySet, IKsPropertySet interface [Streaming Media Devices], Set method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dsound.h
+req.include-header: Ksproxy.h, Ksproxy.h, Dsound.h, Ksproxy.h, Ksproxy.h, Dsound.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dsound.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	ksproxy.h
+apiname:
+-	IKsPropertySet.Set
+product: Windows
+targetos: Windows
+req.typenames: "*PDRMRIGHTS, DRMRIGHTS"
 ---
 
 

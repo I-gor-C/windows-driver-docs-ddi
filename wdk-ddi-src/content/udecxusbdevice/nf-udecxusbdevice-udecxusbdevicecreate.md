@@ -1,42 +1,48 @@
 ---
-UID : NF:udecxusbdevice.UdecxUsbDeviceCreate
-title : UdecxUsbDeviceCreate function
-author : windows-driver-content
-description : Creates a USB Device Emulation (UDE) device object.
-old-location : buses\udecxusbdevicecreate.htm
-old-project : usbref
-ms.assetid : 2AA67B06-F87F-47E3-A80F-154993BAF0E8
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : udecxusbdevice/UdecxUsbDeviceCreate, UdecxUsbDeviceCreate function [Buses], UdecxUsbDeviceCreate, buses.udecxusbdevicecreate
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : udecxusbdevice.h
-req.include-header : Udecx.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 1.15
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Udecxstub.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUDECX_USB_DEVICE_WAKE_SETTING, UDECX_USB_DEVICE_WAKE_SETTING"
-req.product : Windows 10 or later.
+UID: NF:udecxusbdevice.UdecxUsbDeviceCreate
+title: UdecxUsbDeviceCreate function
+author: windows-driver-content
+description: Creates a USB Device Emulation (UDE) device object.
+old-location: buses\udecxusbdevicecreate.htm
+old-project: usbref
+ms.assetid: 2AA67B06-F87F-47E3-A80F-154993BAF0E8
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: udecxusbdevice/UdecxUsbDeviceCreate, UdecxUsbDeviceCreate function [Buses], UdecxUsbDeviceCreate, buses.udecxusbdevicecreate
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: udecxusbdevice.h
+req.include-header: Udecx.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 1.15
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Udecxstub.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Udecxstub.lib
+-	Udecxstub.dll
+apiname:
+-	UdecxUsbDeviceCreate
+product: Windows
+targetos: Windows
+req.typenames: "*PUDECX_USB_DEVICE_WAKE_SETTING, UDECX_USB_DEVICE_WAKE_SETTING"
+req.product: Windows 10 or later.
 ---
 
 

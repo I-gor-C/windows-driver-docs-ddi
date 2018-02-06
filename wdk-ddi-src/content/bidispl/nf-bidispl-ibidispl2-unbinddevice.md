@@ -1,42 +1,46 @@
 ---
-UID : NF:bidispl.IBidiSpl2.UnbindDevice
-title : IBidiSpl2::UnbindDevice method
-author : windows-driver-content
-description : The IBidiSpl2::UnbindDevice method releases a printer from a bidirectional printer communication (bidi communication) request.
-old-location : print\ibidispl2_ibidispl2__unbinddevice.htm
-old-project : print
-ms.assetid : 26f3fc82-051d-4827-8b59-ac2c99f4d2c5
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : IBidiSpl2::IBidiSpl2::UnbindDevice, bidispl/IBidiSpl2::IBidiSpl2::UnbindDevice, gdi.ibidispl2_ibidispl2__unbinddevice, IBidiSpl2::UnbindDevice method [Print Devices], IBidiSpl2 interface, print.ibidispl2_ibidispl2__unbinddevice, IBidiSpl2, IBidiSpl2::UnbindDevice method [Print Devices], IBidiSpl2 interface [Print Devices], IBidiSpl2::UnbindDevice method, IBidiSpl2::UnbindDevice, UnbindDevice, _win32_IBidiSpl2_UnbindDevice
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : bidispl.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Windows Vista
-req.target-min-winversvr : Windows Server 2008
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : bidispl.h
-req.dll : Bidispl.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
+UID: NF:bidispl.IBidiSpl2.UnbindDevice
+title: IBidiSpl2::UnbindDevice method
+author: windows-driver-content
+description: The IBidiSpl2::UnbindDevice method releases a printer from a bidirectional printer communication (bidi communication) request.
+old-location: print\ibidispl2_ibidispl2__unbinddevice.htm
+old-project: print
+ms.assetid: 26f3fc82-051d-4827-8b59-ac2c99f4d2c5
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: IBidiSpl2::IBidiSpl2::UnbindDevice, bidispl/IBidiSpl2::IBidiSpl2::UnbindDevice, gdi.ibidispl2_ibidispl2__unbinddevice, IBidiSpl2::UnbindDevice method [Print Devices], IBidiSpl2 interface, print.ibidispl2_ibidispl2__unbinddevice, IBidiSpl2, IBidiSpl2::UnbindDevice method [Print Devices], IBidiSpl2 interface [Print Devices], IBidiSpl2::UnbindDevice method, IBidiSpl2::UnbindDevice, UnbindDevice, _win32_IBidiSpl2_UnbindDevice
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: bidispl.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Windows Vista
+req.target-min-winversvr: Windows Server 2008
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: bidispl.h
+req.dll: Bidispl.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	bidispl.dll
+apiname:
 -	IBidiSpl2.IBidiSpl2::UnbindDevice
-product : Windows
-targetos : Windows
-req.typenames : "*PMPEG2_TRANSPORT_STRIDE, MPEG2_TRANSPORT_STRIDE"
+product: Windows
+targetos: Windows
+req.typenames: "*PMPEG2_TRANSPORT_STRIDE, MPEG2_TRANSPORT_STRIDE"
 ---
 
 

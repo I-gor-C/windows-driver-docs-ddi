@@ -1,41 +1,46 @@
 ---
-UID : NC:ndis.FILTER_STATUS
-title : FILTER_STATUS
-author : windows-driver-content
-description : The FilterStatus function indicates status changes that are reported by NDIS or an underlying driver.Note  You must declare the function by using the FILTER_STATUS type.
-old-location : netvista\filterstatus.htm
-old-project : netvista
-ms.assetid : 051ce37c-a7a5-4367-9495-023fc51349ba
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.filterstatus, FilterStatus callback function [Network Drivers Starting with Windows Vista], FilterStatus, FILTER_STATUS, FILTER_STATUS, ndis/FilterStatus, ndis_status_ref_4bddf4b3-3869-4e47-ba86-021e9f25484b.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
+UID: NC:ndis.FILTER_STATUS
+title: FILTER_STATUS
+author: windows-driver-content
+description: The FilterStatus function indicates status changes that are reported by NDIS or an underlying driver.Note  You must declare the function by using the FILTER_STATUS type.
+old-location: netvista\filterstatus.htm
+old-project: netvista
+ms.assetid: 051ce37c-a7a5-4367-9495-023fc51349ba
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.filterstatus, FilterStatus callback function [Network Drivers Starting with Windows Vista], FilterStatus, FILTER_STATUS, FILTER_STATUS, ndis/FilterStatus, ndis_status_ref_4bddf4b3-3869-4e47-ba86-021e9f25484b.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ndis.h
+apiname:
+-	FilterStatus
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 

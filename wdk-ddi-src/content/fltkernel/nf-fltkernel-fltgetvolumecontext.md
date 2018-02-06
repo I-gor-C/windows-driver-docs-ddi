@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltGetVolumeContext
-title : FltGetVolumeContext function
-author : windows-driver-content
-description : The FltGetVolumeContext routine retrieves a context that was set for a volume by a given minifilter driver.
-old-location : ifsk\fltgetvolumecontext.htm
-old-project : ifsk
-ms.assetid : daa7d15f-580a-4668-9159-834e18b28c1f
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltGetVolumeContext routine [Installable File System Drivers], ifsk.fltgetvolumecontext, FltApiRef_e_to_o_8cec5d5c-18c3-4ffe-be18-fffcfc8d0c14.xml, FltGetVolumeContext, fltkernel/FltGetVolumeContext
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltGetVolumeContext
+title: FltGetVolumeContext function
+author: windows-driver-content
+description: The FltGetVolumeContext routine retrieves a context that was set for a volume by a given minifilter driver.
+old-location: ifsk\fltgetvolumecontext.htm
+old-project: ifsk
+ms.assetid: daa7d15f-580a-4668-9159-834e18b28c1f
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltGetVolumeContext routine [Installable File System Drivers], ifsk.fltgetvolumecontext, FltApiRef_e_to_o_8cec5d5c-18c3-4ffe-be18-fffcfc8d0c14.xml, FltGetVolumeContext, fltkernel/FltGetVolumeContext
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltGetVolumeContext
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

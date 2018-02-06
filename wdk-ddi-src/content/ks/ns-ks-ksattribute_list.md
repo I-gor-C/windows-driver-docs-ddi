@@ -1,41 +1,46 @@
 ---
-UID : NS:ks.KSATTRIBUTE_LIST
-title : KSATTRIBUTE_LIST
-author : windows-driver-content
-description : The KSATTRIBUTE_LIST structure contains an attribute defined in a KSATTRIBUTE structure.
-old-location : stream\ksattribute_list.htm
-old-project : stream
-ms.assetid : 4E533E77-9288-45DF-8C93-2A6EACADF9FF
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : PKSATTRIBUTE_LIST structure pointer [Streaming Media Devices], *PKSATTRIBUTE_LIST, stream.ksattribute_list, KSATTRIBUTE_LIST structure [Streaming Media Devices], ks/KSATTRIBUTE_LIST, ks/PKSATTRIBUTE_LIST, KSATTRIBUTE_LIST, PKSATTRIBUTE_LIST
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKSATTRIBUTE_LIST, KSATTRIBUTE_LIST"
+UID: NS:ks.KSATTRIBUTE_LIST
+title: KSATTRIBUTE_LIST
+author: windows-driver-content
+description: The KSATTRIBUTE_LIST structure contains an attribute defined in a KSATTRIBUTE structure.
+old-location: stream\ksattribute_list.htm
+old-project: stream
+ms.assetid: 4E533E77-9288-45DF-8C93-2A6EACADF9FF
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: PKSATTRIBUTE_LIST structure pointer [Streaming Media Devices], *PKSATTRIBUTE_LIST, stream.ksattribute_list, KSATTRIBUTE_LIST structure [Streaming Media Devices], ks/KSATTRIBUTE_LIST, ks/PKSATTRIBUTE_LIST, KSATTRIBUTE_LIST, PKSATTRIBUTE_LIST
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ks.h
+apiname:
+-	KSATTRIBUTE_LIST
+product: Windows
+targetos: Windows
+req.typenames: "*PKSATTRIBUTE_LIST, KSATTRIBUTE_LIST"
 ---
 
 # KSATTRIBUTE_LIST structure

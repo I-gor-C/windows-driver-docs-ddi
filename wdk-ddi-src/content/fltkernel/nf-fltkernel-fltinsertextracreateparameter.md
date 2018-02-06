@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltInsertExtraCreateParameter
-title : FltInsertExtraCreateParameter function
-author : windows-driver-content
-description : The FltInsertExtraCreateParameter routine inserts an extra create parameter (ECP) context structure into an ECP list.
-old-location : ifsk\fltinsertextracreateparameter.htm
-old-project : ifsk
-ms.assetid : b4cc03e9-225f-491f-97df-064fdedc8182
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : fltkernel/FltInsertExtraCreateParameter, FltInsertExtraCreateParameter, ifsk.fltinsertextracreateparameter, FltInsertExtraCreateParameter routine [Installable File System Drivers], FltApiRef_e_to_o_70a06c18-83e1-45cc-be8c-87945a2a320e.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : This routine is available starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltInsertExtraCreateParameter
+title: FltInsertExtraCreateParameter function
+author: windows-driver-content
+description: The FltInsertExtraCreateParameter routine inserts an extra create parameter (ECP) context structure into an ECP list.
+old-location: ifsk\fltinsertextracreateparameter.htm
+old-project: ifsk
+ms.assetid: b4cc03e9-225f-491f-97df-064fdedc8182
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: fltkernel/FltInsertExtraCreateParameter, FltInsertExtraCreateParameter, ifsk.fltinsertextracreateparameter, FltInsertExtraCreateParameter routine [Installable File System Drivers], FltApiRef_e_to_o_70a06c18-83e1-45cc-be8c-87945a2a320e.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: This routine is available starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltInsertExtraCreateParameter
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

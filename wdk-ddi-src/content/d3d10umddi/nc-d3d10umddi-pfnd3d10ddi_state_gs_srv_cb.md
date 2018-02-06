@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3D10DDI_STATE_GS_SRV_CB
-title : PFND3D10DDI_STATE_GS_SRV_CB
-author : windows-driver-content
-description : The pfnStateGsSrvCb function causes the Microsoft Direct3D 10 runtime to refresh the geometry shader constant shader resource view state.
-old-location : display\pfnstategssrvcb.htm
-old-project : display
-ms.assetid : 4ab7444f-face-4ad0-a73c-18dd0b59a344
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.pfnstategssrvcb, pfnStateGsSrvCb callback function [Display Devices], pfnStateGsSrvCb, PFND3D10DDI_STATE_GS_SRV_CB, PFND3D10DDI_STATE_GS_SRV_CB, d3d10umddi/pfnStateGsSrvCb, d3d10state_functions_a19053b4-243c-4158-baf0-2eee3ba01dc5.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3D10DDI_STATE_GS_SRV_CB
+title: PFND3D10DDI_STATE_GS_SRV_CB
+author: windows-driver-content
+description: The pfnStateGsSrvCb function causes the Microsoft Direct3D 10 runtime to refresh the geometry shader constant shader resource view state.
+old-location: display\pfnstategssrvcb.htm
+old-project: display
+ms.assetid: 4ab7444f-face-4ad0-a73c-18dd0b59a344
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.pfnstategssrvcb, pfnStateGsSrvCb callback function [Display Devices], pfnStateGsSrvCb, PFND3D10DDI_STATE_GS_SRV_CB, PFND3D10DDI_STATE_GS_SRV_CB, d3d10umddi/pfnStateGsSrvCb, d3d10state_functions_a19053b4-243c-4158-baf0-2eee3ba01dc5.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	pfnStateGsSrvCb
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

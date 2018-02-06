@@ -1,41 +1,46 @@
 ---
-UID : NE:ntddk._PHYSICAL_COUNTER_RESOURCE_DESCRIPTOR_TYPE
-title : "_PHYSICAL_COUNTER_RESOURCE_DESCRIPTOR_TYPE"
-author : windows-driver-content
-description : The PHYSICAL_COUNTER_RESOURCE_DESCRIPTOR_TYPE enumeration contains constants that indicate the type of hardware performance counter resource that is described by a PHYSICAL_COUNTER_RESOURCE_DESCRIPTOR structure.
-old-location : kernel\physical_counter_resource_descriptor_type.htm
-old-project : kernel
-ms.assetid : 58fa1312-eb21-405d-85de-59ea69d9447f
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ntddk/ResourceTypeExtendedCounterConfiguration, ResourceTypeMax, PHYSICAL_COUNTER_RESOURCE_DESCRIPTOR_TYPE, ntddk/ResourceTypeRange, _PHYSICAL_COUNTER_RESOURCE_DESCRIPTOR_TYPE, PHYSICAL_COUNTER_RESOURCE_DESCRIPTOR_TYPE enumeration [Kernel-Mode Driver Architecture], kernel.physical_counter_resource_descriptor_type, ResourceTypeOverflow, ResourceTypeRange, ntddk/ResourceTypeOverflow, ResourceTypeSingle, ResourceTypeExtendedCounterConfiguration, ntddk/ResourceTypeMax, sysenum_cb8d2405-4299-4e91-9f55-dc9c84587148.xml, ntddk/PHYSICAL_COUNTER_RESOURCE_DESCRIPTOR_TYPE, ntddk/ResourceTypeSingle
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : ntddk.h
-req.include-header : Ntddk.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in Windows 7 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PHYSICAL_COUNTER_RESOURCE_DESCRIPTOR_TYPE
+UID: NE:ntddk._PHYSICAL_COUNTER_RESOURCE_DESCRIPTOR_TYPE
+title: "_PHYSICAL_COUNTER_RESOURCE_DESCRIPTOR_TYPE"
+author: windows-driver-content
+description: The PHYSICAL_COUNTER_RESOURCE_DESCRIPTOR_TYPE enumeration contains constants that indicate the type of hardware performance counter resource that is described by a PHYSICAL_COUNTER_RESOURCE_DESCRIPTOR structure.
+old-location: kernel\physical_counter_resource_descriptor_type.htm
+old-project: kernel
+ms.assetid: 58fa1312-eb21-405d-85de-59ea69d9447f
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ntddk/ResourceTypeExtendedCounterConfiguration, ResourceTypeMax, PHYSICAL_COUNTER_RESOURCE_DESCRIPTOR_TYPE, ntddk/ResourceTypeRange, _PHYSICAL_COUNTER_RESOURCE_DESCRIPTOR_TYPE, PHYSICAL_COUNTER_RESOURCE_DESCRIPTOR_TYPE enumeration [Kernel-Mode Driver Architecture], kernel.physical_counter_resource_descriptor_type, ResourceTypeOverflow, ResourceTypeRange, ntddk/ResourceTypeOverflow, ResourceTypeSingle, ResourceTypeExtendedCounterConfiguration, ntddk/ResourceTypeMax, sysenum_cb8d2405-4299-4e91-9f55-dc9c84587148.xml, ntddk/PHYSICAL_COUNTER_RESOURCE_DESCRIPTOR_TYPE, ntddk/ResourceTypeSingle
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: ntddk.h
+req.include-header: Ntddk.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in Windows 7 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddk.h
+apiname:
+-	PHYSICAL_COUNTER_RESOURCE_DESCRIPTOR_TYPE
+product: Windows
+targetos: Windows
+req.typenames: PHYSICAL_COUNTER_RESOURCE_DESCRIPTOR_TYPE
 ---
 
 # _PHYSICAL_COUNTER_RESOURCE_DESCRIPTOR_TYPE Enumeration
@@ -55,36 +60,36 @@ typedef enum _PHYSICAL_COUNTER_RESOURCE_DESCRIPTOR_TYPE {
 ## Constants
 
 <table>
-
-<tr>
-<td>ResourceTypeExtendedCounterConfiguration</td>
-<td>An extended counter configuration register address. The register address is contained in the <b>u.ExtendedRegisterAddress</b> member of the <b>PHYSICAL_COUNTER_RESOURCE_DESCRIPTOR</b> structure. This value is used only on Intel NetBurst systems.</td>
-</tr>
-
-<tr>
-<td>ResourceTypeMax</td>
-<td>The maximum value in this enumeration type.</td>
-</tr>
-
-<tr>
-<td>ResourceTypeOverflow</td>
-<td>A counter overflow interrupt. The <b>u</b> member of the <b>PHYSICAL_COUNTER_RESOURCE_DESCRIPTOR</b> structure is not used for this counter resource type.</td>
-</tr>
-
-<tr>
-<td>ResourceTypeRange</td>
-<td>A range of counter indexes. The counter indexes are described by the <b>u.Range</b> member of the <b>PHYSICAL_COUNTER_RESOURCE_DESCRIPTOR</b> structure.</td>
-</tr>
-
-<tr>
-<td>ResourceTypeSingle</td>
-<td>A single hardware counter. The counter is described by the <b>u.CounterIndex</b> member of the <b>PHYSICAL_COUNTER_RESOURCE_DESCRIPTOR</b> structure.</td>
-</tr>
+            
+                <tr>
+                    <td>ResourceTypeExtendedCounterConfiguration</td>
+                    <td>An extended counter configuration register address. The register address is contained in the <b>u.ExtendedRegisterAddress</b> member of the <b>PHYSICAL_COUNTER_RESOURCE_DESCRIPTOR</b> structure. This value is used only on Intel NetBurst systems.</td>
+                </tr>
+            
+                <tr>
+                    <td>ResourceTypeMax</td>
+                    <td>The maximum value in this enumeration type.</td>
+                </tr>
+            
+                <tr>
+                    <td>ResourceTypeOverflow</td>
+                    <td>A counter overflow interrupt. The <b>u</b> member of the <b>PHYSICAL_COUNTER_RESOURCE_DESCRIPTOR</b> structure is not used for this counter resource type.</td>
+                </tr>
+            
+                <tr>
+                    <td>ResourceTypeRange</td>
+                    <td>A range of counter indexes. The counter indexes are described by the <b>u.Range</b> member of the <b>PHYSICAL_COUNTER_RESOURCE_DESCRIPTOR</b> structure.</td>
+                </tr>
+            
+                <tr>
+                    <td>ResourceTypeSingle</td>
+                    <td>A single hardware counter. The counter is described by the <b>u.CounterIndex</b> member of the <b>PHYSICAL_COUNTER_RESOURCE_DESCRIPTOR</b> structure.</td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-The <b>Type</b> member of a <b>PHYSICAL_COUNTER_RESOURCE_DESCRIPTOR</b> structure uses a <b>PHYSICAL_COUNTER_RESOURCE_DESCRIPTOR_TYPE</b> enumeration constant to indicate the type of counter resource that is described by the structure.
+        The <b>Type</b> member of a <b>PHYSICAL_COUNTER_RESOURCE_DESCRIPTOR</b> structure uses a <b>PHYSICAL_COUNTER_RESOURCE_DESCRIPTOR_TYPE</b> enumeration constant to indicate the type of counter resource that is described by the structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -92,9 +97,9 @@ The <b>Type</b> member of a <b>PHYSICAL_COUNTER_RESOURCE_DESCRIPTOR</b> structur
 | **Windows version** | Supported in Windows 7 and later versions of Windows. Supported in Windows 7 and later versions of Windows. |
 | **Header** | ntddk.h (include Ntddk.h, Ntifs.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\ntddk\ns-ntddk-_physical_counter_resource_descriptor.md">PHYSICAL_COUNTER_RESOURCE_DESCRIPTOR</a>
+        <a href="..\ntddk\ns-ntddk-_physical_counter_resource_descriptor.md">PHYSICAL_COUNTER_RESOURCE_DESCRIPTOR</a>
 
  
 

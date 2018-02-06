@@ -1,41 +1,47 @@
 ---
-UID : NF:portcls.PcForwardContentToDeviceObject
-title : PcForwardContentToDeviceObject function
-author : windows-driver-content
-description : The PcForwardContentToDeviceObject function accepts a device object representing a device to which the caller intends to forward protected content.
-old-location : audio\pcforwardcontenttodeviceobject.htm
-old-project : audio
-ms.assetid : 24891f90-422f-4104-97f4-395205e2b862
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : PcForwardContentToDeviceObject, audpc-routines_1dec7e58-07b2-41ce-82d3-5f0670bbc273.xml, PcForwardContentToDeviceObject function [Audio Devices], portcls/PcForwardContentToDeviceObject, audio.pcforwardcontenttodeviceobject
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : portcls.h
-req.include-header : Portcls.h
-req.target-type : Universal
-req.target-min-winverclnt : The PortCls system driver implements the PcForwardContentToDeviceObject function in Microsoft Windows XP and later operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Portcls.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.PcForwardContentToDeviceObject
+title: PcForwardContentToDeviceObject function
+author: windows-driver-content
+description: The PcForwardContentToDeviceObject function accepts a device object representing a device to which the caller intends to forward protected content.
+old-location: audio\pcforwardcontenttodeviceobject.htm
+old-project: audio
+ms.assetid: 24891f90-422f-4104-97f4-395205e2b862
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: PcForwardContentToDeviceObject, audpc-routines_1dec7e58-07b2-41ce-82d3-5f0670bbc273.xml, PcForwardContentToDeviceObject function [Audio Devices], portcls/PcForwardContentToDeviceObject, audio.pcforwardcontenttodeviceobject
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: portcls.h
+req.include-header: Portcls.h
+req.target-type: Universal
+req.target-min-winverclnt: The PortCls system driver implements the PcForwardContentToDeviceObject function in Microsoft Windows XP and later operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Portcls.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Portcls.lib
+-	Portcls.dll
+apiname:
+-	PcForwardContentToDeviceObject
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

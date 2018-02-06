@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddndis._NDIS_RECEIVE_FILTER_GLOBAL_PARAMETERS
-title : "_NDIS_RECEIVE_FILTER_GLOBAL_PARAMETERS"
-author : windows-driver-content
-description : The NDIS_RECEIVE_FILTER_GLOBAL_PARAMETERS structure specifies the receive filtering features that are enabled or disabled on a network adapter.NDIS receive filters are used in the following NDIS interfaces:NDIS Packet Coalescing.
-old-location : netvista\ndis_receive_filter_global_parameters.htm
-old-project : netvista
-ms.assetid : 4ec36054-ba61-4862-b185-7473a6806804
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : "_NDIS_RECEIVE_FILTER_GLOBAL_PARAMETERS, NDIS_RECEIVE_FILTER_GLOBAL_PARAMETERS structure [Network Drivers Starting with Windows Vista], ntddndis/NDIS_RECEIVE_FILTER_GLOBAL_PARAMETERS, NDIS_RECEIVE_FILTER_GLOBAL_PARAMETERS, virtual_machine_queue_ref_b51ed6bf-8c3c-41f5-a9ef-a5ec3a720ef2.xml, netvista.ndis_receive_filter_global_parameters, PNDIS_RECEIVE_FILTER_GLOBAL_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], *PNDIS_RECEIVE_FILTER_GLOBAL_PARAMETERS, PNDIS_RECEIVE_FILTER_GLOBAL_PARAMETERS, ntddndis/PNDIS_RECEIVE_FILTER_GLOBAL_PARAMETERS"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.20 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_RECEIVE_FILTER_GLOBAL_PARAMETERS, *PNDIS_RECEIVE_FILTER_GLOBAL_PARAMETERS
+UID: NS:ntddndis._NDIS_RECEIVE_FILTER_GLOBAL_PARAMETERS
+title: "_NDIS_RECEIVE_FILTER_GLOBAL_PARAMETERS"
+author: windows-driver-content
+description: The NDIS_RECEIVE_FILTER_GLOBAL_PARAMETERS structure specifies the receive filtering features that are enabled or disabled on a network adapter.NDIS receive filters are used in the following NDIS interfaces:NDIS Packet Coalescing.
+old-location: netvista\ndis_receive_filter_global_parameters.htm
+old-project: netvista
+ms.assetid: 4ec36054-ba61-4862-b185-7473a6806804
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: "_NDIS_RECEIVE_FILTER_GLOBAL_PARAMETERS, NDIS_RECEIVE_FILTER_GLOBAL_PARAMETERS structure [Network Drivers Starting with Windows Vista], ntddndis/NDIS_RECEIVE_FILTER_GLOBAL_PARAMETERS, NDIS_RECEIVE_FILTER_GLOBAL_PARAMETERS, virtual_machine_queue_ref_b51ed6bf-8c3c-41f5-a9ef-a5ec3a720ef2.xml, netvista.ndis_receive_filter_global_parameters, PNDIS_RECEIVE_FILTER_GLOBAL_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], *PNDIS_RECEIVE_FILTER_GLOBAL_PARAMETERS, PNDIS_RECEIVE_FILTER_GLOBAL_PARAMETERS, ntddndis/PNDIS_RECEIVE_FILTER_GLOBAL_PARAMETERS"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.20 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddndis.h
+apiname:
+-	NDIS_RECEIVE_FILTER_GLOBAL_PARAMETERS
+product: Windows
+targetos: Windows
+req.typenames: NDIS_RECEIVE_FILTER_GLOBAL_PARAMETERS, *PNDIS_RECEIVE_FILTER_GLOBAL_PARAMETERS
 ---
 
 # _NDIS_RECEIVE_FILTER_GLOBAL_PARAMETERS structure

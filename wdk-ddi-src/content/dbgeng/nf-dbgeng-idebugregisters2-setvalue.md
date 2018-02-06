@@ -1,41 +1,47 @@
 ---
-UID : NF:dbgeng.IDebugRegisters2.SetValue
-title : IDebugRegisters2::SetValue method
-author : windows-driver-content
-description : The SetValue method sets the value of one of the target's registers.
-old-location : debugger\setvalue.htm
-old-project : debugger
-ms.assetid : 78c7bdea-cba5-40df-b9d7-09c7d98b0403
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : dbgeng/IDebugRegisters::SetValue, IDebugRegisters interface [Windows Debugging], SetValue method, IDebugRegisters2 interface [Windows Debugging], SetValue method, SetValue, SetValue method [Windows Debugging], IDebugRegisters2 interface, dbgeng/IDebugRegisters2::SetValue, IDebugRegisters2::SetValue, SetValue method [Windows Debugging], SetValue method [Windows Debugging], IDebugRegisters interface, IDebugRegisters2, IDebugRegisters::SetValue, debugger.setvalue, IDebugRegisters_f704c31f-5062-47d7-9f44-35bc85e0d0aa.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : DbgEng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugRegisters2.SetValue
+title: IDebugRegisters2::SetValue method
+author: windows-driver-content
+description: The SetValue method sets the value of one of the target's registers.
+old-location: debugger\setvalue.htm
+old-project: debugger
+ms.assetid: 78c7bdea-cba5-40df-b9d7-09c7d98b0403
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: dbgeng/IDebugRegisters::SetValue, IDebugRegisters interface [Windows Debugging], SetValue method, IDebugRegisters2 interface [Windows Debugging], SetValue method, SetValue, SetValue method [Windows Debugging], IDebugRegisters2 interface, dbgeng/IDebugRegisters2::SetValue, IDebugRegisters2::SetValue, SetValue method [Windows Debugging], SetValue method [Windows Debugging], IDebugRegisters interface, IDebugRegisters2, IDebugRegisters::SetValue, debugger.setvalue, IDebugRegisters_f704c31f-5062-47d7-9f44-35bc85e0d0aa.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: DbgEng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugRegisters.SetValue
+-	IDebugRegisters2.SetValue
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

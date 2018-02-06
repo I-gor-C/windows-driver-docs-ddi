@@ -1,41 +1,46 @@
 ---
-UID : NF:hbaapi.HBA_SendCTPassThru
-title : HBA_SendCTPassThru function
-author : windows-driver-content
-description : The HBA_SendCTPassThru routine sends a common transport (CT) pass-through command.
-old-location : storage\hba_sendctpassthru.htm
-old-project : storage
-ms.assetid : adfdb968-5ba3-43af-899a-7172c9ecf46c
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : HBA_SendCTPassThru routine [Storage Devices], HBA_SendCTPassThru, storage.hba_sendctpassthru, hbaapi/HBA_SendCTPassThru, fibreHBA_rtns_cae90bb3-cdb2-47fe-92b8-e2bffefa338d.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : hbaapi.h
-req.include-header : Hbaapi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Hbaapi.lib
-req.dll : Hbaapi.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HBA_WWNTYPE
+UID: NF:hbaapi.HBA_SendCTPassThru
+title: HBA_SendCTPassThru function
+author: windows-driver-content
+description: The HBA_SendCTPassThru routine sends a common transport (CT) pass-through command.
+old-location: storage\hba_sendctpassthru.htm
+old-project: storage
+ms.assetid: adfdb968-5ba3-43af-899a-7172c9ecf46c
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: HBA_SendCTPassThru routine [Storage Devices], HBA_SendCTPassThru, storage.hba_sendctpassthru, hbaapi/HBA_SendCTPassThru, fibreHBA_rtns_cae90bb3-cdb2-47fe-92b8-e2bffefa338d.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: hbaapi.h
+req.include-header: Hbaapi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Hbaapi.lib
+req.dll: Hbaapi.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Hbaapi.dll
+apiname:
+-	HBA_SendCTPassThru
+product: Windows
+targetos: Windows
+req.typenames: HBA_WWNTYPE
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:bthddi._BRB_L2CA_REGISTER_SERVER
-title : "_BRB_L2CA_REGISTER_SERVER"
-author : windows-driver-content
-description : A profile driver uses the _BRB_L2CA_REGISTER_SERVER structure to register itself as a server capable of receiving L2CAP connections from remote Bluetooth devices.
-old-location : bltooth\_brb_l2ca_register_server.htm
-old-project : bltooth
-ms.assetid : b7eca29a-7e3c-4cfc-b285-42faca263c5e
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : bth_structs_c803cec6-8a80-4d75-9c81-fd479ee37a97.xml, _BRB_L2CA_REGISTER_SERVER, _BRB_L2CA_REGISTER_SERVER structure [Bluetooth Devices], bthddi/_BRB_L2CA_REGISTER_SERVER, bltooth._brb_l2ca_register_server
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : bthddi.h
-req.include-header : Bthddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Versions:\_Supported in Windows Vista, and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback   function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access   paged memory)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NS:bthddi._BRB_L2CA_REGISTER_SERVER
+title: "_BRB_L2CA_REGISTER_SERVER"
+author: windows-driver-content
+description: A profile driver uses the _BRB_L2CA_REGISTER_SERVER structure to register itself as a server capable of receiving L2CAP connections from remote Bluetooth devices.
+old-location: bltooth\_brb_l2ca_register_server.htm
+old-project: bltooth
+ms.assetid: b7eca29a-7e3c-4cfc-b285-42faca263c5e
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: bth_structs_c803cec6-8a80-4d75-9c81-fd479ee37a97.xml, _BRB_L2CA_REGISTER_SERVER, _BRB_L2CA_REGISTER_SERVER structure [Bluetooth Devices], bthddi/_BRB_L2CA_REGISTER_SERVER, bltooth._brb_l2ca_register_server
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: bthddi.h
+req.include-header: Bthddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Versions:\_Supported in Windows Vista, and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback   function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access   paged memory)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	bthddi.h
+apiname:
+-	_BRB_L2CA_REGISTER_SERVER
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 # _BRB_L2CA_REGISTER_SERVER structure

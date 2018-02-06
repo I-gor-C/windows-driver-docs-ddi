@@ -1,41 +1,46 @@
 ---
-UID : NI:nfcsedev.IOCTL_NFCSE_SET_CARD_EMULATION_MODE
-title : IOCTL_NFCSE_SET_CARD_EMULATION_MODE
-author : windows-driver-content
-description : The IOCTL_NFCSE_SET_CARD_EMULATION_MODE control code sets whether the specified secure element is exposed in card emulation mode.
-old-location : nfpdrivers\ioctl_nfcse_set_card_emulation_mode.htm
-old-project : nfpdrivers
-ms.assetid : B7E55FDE-573C-4F45-869C-A3EE253BD777
-ms.author : windowsdriverdev
-ms.date : 12/18/2017
-ms.keywords : nfpdrivers.ioctl_nfcse_set_card_emulation_mode, IOCTL_NFCSE_SET_CARD_EMULATION_MODE control code [Near-Field Proximity Drivers], IOCTL_NFCSE_SET_CARD_EMULATION_MODE, nfcsedev/IOCTL_NFCSE_SET_CARD_EMULATION_MODE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : nfcsedev.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSECURE_ELEMENT_TYPE, SECURE_ELEMENT_TYPE"
+UID: NI:nfcsedev.IOCTL_NFCSE_SET_CARD_EMULATION_MODE
+title: IOCTL_NFCSE_SET_CARD_EMULATION_MODE
+author: windows-driver-content
+description: The IOCTL_NFCSE_SET_CARD_EMULATION_MODE control code sets whether the specified secure element is exposed in card emulation mode.
+old-location: nfpdrivers\ioctl_nfcse_set_card_emulation_mode.htm
+old-project: nfpdrivers
+ms.assetid: B7E55FDE-573C-4F45-869C-A3EE253BD777
+ms.author: windowsdriverdev
+ms.date: 12/18/2017
+ms.keywords: nfpdrivers.ioctl_nfcse_set_card_emulation_mode, IOCTL_NFCSE_SET_CARD_EMULATION_MODE control code [Near-Field Proximity Drivers], IOCTL_NFCSE_SET_CARD_EMULATION_MODE, nfcsedev/IOCTL_NFCSE_SET_CARD_EMULATION_MODE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: nfcsedev.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	nfcsedev.h
+apiname:
+-	IOCTL_NFCSE_SET_CARD_EMULATION_MODE
+product: Windows
+targetos: Windows
+req.typenames: "*PSECURE_ELEMENT_TYPE, SECURE_ELEMENT_TYPE"
 ---
 
 # IOCTL_NFCSE_SET_CARD_EMULATION_MODE IOCTL

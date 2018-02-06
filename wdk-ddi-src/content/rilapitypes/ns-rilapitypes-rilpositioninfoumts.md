@@ -1,42 +1,47 @@
 ---
-UID : NS:rilapitypes.RILPOSITIONINFOUMTS
-title : RILPOSITIONINFOUMTS
-author : windows-driver-content
-description : This structure represents a RILPOSITIONINFOUMTS.
-old-location : netvista\rilpositioninfoumts.htm
-old-project : netvista
-ms.assetid : c17760c4-6f75-41e8-84a5-f13e26735af5
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.rilpositioninfoumts, *LPRILPOSITIONINFOUMTS, rilapitypes/RILPOSITIONINFOUMTS, RILPOSITIONINFOUMTS structure [Network Drivers Starting with Windows Vista], RILPOSITIONINFOUMTS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : rilapitypes.h
-req.include-header : Rilapitypes.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RILPOSITIONINFOUMTS, *LPRILPOSITIONINFOUMTS
-req.product : Windows 10 or later.
+UID: NS:rilapitypes.RILPOSITIONINFOUMTS
+title: RILPOSITIONINFOUMTS
+author: windows-driver-content
+description: This structure represents a RILPOSITIONINFOUMTS.
+old-location: netvista\rilpositioninfoumts.htm
+old-project: netvista
+ms.assetid: c17760c4-6f75-41e8-84a5-f13e26735af5
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.rilpositioninfoumts, *LPRILPOSITIONINFOUMTS, rilapitypes/RILPOSITIONINFOUMTS, RILPOSITIONINFOUMTS structure [Network Drivers Starting with Windows Vista], RILPOSITIONINFOUMTS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: rilapitypes.h
+req.include-header: Rilapitypes.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	rilapitypes.h
+apiname:
+-	RILPOSITIONINFOUMTS
+product: Windows
+targetos: Windows
+req.typenames: RILPOSITIONINFOUMTS, *LPRILPOSITIONINFOUMTS
+req.product: Windows 10 or later.
 ---
 
 # RILPOSITIONINFOUMTS structure

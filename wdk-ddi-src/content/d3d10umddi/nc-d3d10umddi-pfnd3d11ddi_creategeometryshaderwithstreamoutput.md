@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3D11DDI_CREATEGEOMETRYSHADERWITHSTREAMOUTPUT
-title : PFND3D11DDI_CREATEGEOMETRYSHADERWITHSTREAMOUTPUT
-author : windows-driver-content
-description : The CreateGeometryShaderWithStreamOutput(D3D11) function creates a geometry shader with stream output.
-old-location : display\creategeometryshaderwithstreamoutput_d3d11_.htm
-old-project : display
-ms.assetid : 86970ea4-e7d2-4fc3-9f97-75a946a21a17
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.creategeometryshaderwithstreamoutput_d3d11_, CreateGeometryShaderWithStreamOutput callback function [Display Devices], CreateGeometryShaderWithStreamOutput, PFND3D11DDI_CREATEGEOMETRYSHADERWITHSTREAMOUTPUT, PFND3D11DDI_CREATEGEOMETRYSHADERWITHSTREAMOUTPUT, d3d10umddi/CreateGeometryShaderWithStreamOutput, UserModeDisplayDriverDx11_Functions_65b14f27-0df8-421d-95bb-f8a4ebc7c1c1.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : CreateGeometryShaderWithStreamOutput(D3D11) is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3D11DDI_CREATEGEOMETRYSHADERWITHSTREAMOUTPUT
+title: PFND3D11DDI_CREATEGEOMETRYSHADERWITHSTREAMOUTPUT
+author: windows-driver-content
+description: The CreateGeometryShaderWithStreamOutput(D3D11) function creates a geometry shader with stream output.
+old-location: display\creategeometryshaderwithstreamoutput_d3d11_.htm
+old-project: display
+ms.assetid: 86970ea4-e7d2-4fc3-9f97-75a946a21a17
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.creategeometryshaderwithstreamoutput_d3d11_, CreateGeometryShaderWithStreamOutput callback function [Display Devices], CreateGeometryShaderWithStreamOutput, PFND3D11DDI_CREATEGEOMETRYSHADERWITHSTREAMOUTPUT, PFND3D11DDI_CREATEGEOMETRYSHADERWITHSTREAMOUTPUT, d3d10umddi/CreateGeometryShaderWithStreamOutput, UserModeDisplayDriverDx11_Functions_65b14f27-0df8-421d-95bb-f8a4ebc7c1c1.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: CreateGeometryShaderWithStreamOutput(D3D11) is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	CreateGeometryShaderWithStreamOutput
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltEnlistInTransaction
-title : FltEnlistInTransaction function
-author : windows-driver-content
-description : The FltEnlistInTransaction routine enlists a minifilter driver in a given transaction.
-old-location : ifsk\fltenlistintransaction.htm
-old-project : ifsk
-ms.assetid : c4b82596-824f-488e-96cd-17bd850494e5
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : fltkernel/FltEnlistInTransaction, FltApiRef_e_to_o_85856df2-46c0-457b-bc10-2e6a8d32f5bb.xml, ifsk.fltenlistintransaction, FltEnlistInTransaction routine [Installable File System Drivers], FltEnlistInTransaction
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : This routine is available on Windows Vista and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : FltMgr.sys
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltEnlistInTransaction
+title: FltEnlistInTransaction function
+author: windows-driver-content
+description: The FltEnlistInTransaction routine enlists a minifilter driver in a given transaction.
+old-location: ifsk\fltenlistintransaction.htm
+old-project: ifsk
+ms.assetid: c4b82596-824f-488e-96cd-17bd850494e5
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: fltkernel/FltEnlistInTransaction, FltApiRef_e_to_o_85856df2-46c0-457b-bc10-2e6a8d32f5bb.xml, ifsk.fltenlistintransaction, FltEnlistInTransaction routine [Installable File System Drivers], FltEnlistInTransaction
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: This routine is available on Windows Vista and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: FltMgr.sys
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	FltMgr.sys
+apiname:
+-	FltEnlistInTransaction
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

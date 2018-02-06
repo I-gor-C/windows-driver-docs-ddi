@@ -1,41 +1,46 @@
 ---
-UID : NF:hbaapi.HBA_GetEventBuffer
-title : HBA_GetEventBuffer function
-author : windows-driver-content
-description : The HBA_GetEventBuffer routine retrieves the indicated number of events, if available, from the HBA's event queue.
-old-location : storage\hba_geteventbuffer.htm
-old-project : storage
-ms.assetid : 0f06b154-7d85-4a60-b354-bd61fbc597dc
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : fibreHBA_rtns_782019e1-826f-486d-b8c7-6d58c097aa1d.xml, storage.hba_geteventbuffer, HBA_GetEventBuffer, hbaapi/HBA_GetEventBuffer, HBA_GetEventBuffer routine [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : hbaapi.h
-req.include-header : Hbaapi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Hbaapi.lib
-req.dll : Hbaapi.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HBA_WWNTYPE
+UID: NF:hbaapi.HBA_GetEventBuffer
+title: HBA_GetEventBuffer function
+author: windows-driver-content
+description: The HBA_GetEventBuffer routine retrieves the indicated number of events, if available, from the HBA's event queue.
+old-location: storage\hba_geteventbuffer.htm
+old-project: storage
+ms.assetid: 0f06b154-7d85-4a60-b354-bd61fbc597dc
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: fibreHBA_rtns_782019e1-826f-486d-b8c7-6d58c097aa1d.xml, storage.hba_geteventbuffer, HBA_GetEventBuffer, hbaapi/HBA_GetEventBuffer, HBA_GetEventBuffer routine [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: hbaapi.h
+req.include-header: Hbaapi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Hbaapi.lib
+req.dll: Hbaapi.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Hbaapi.dll
+apiname:
+-	HBA_GetEventBuffer
+product: Windows
+targetos: Windows
+req.typenames: HBA_WWNTYPE
 ---
 
 

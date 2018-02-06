@@ -1,41 +1,46 @@
 ---
-UID : NS:hbapiwmi._MSFC_PortEvent
-title : "_MSFC_PortEvent"
-author : windows-driver-content
-description : A WMI provider uses the MSFC_PortEvent structure to report port events for the indicated adapter.
-old-location : storage\msfc_portevent.htm
-old-project : storage
-ms.assetid : bf9e2d58-9379-4b88-9043-580a97ec7cd9
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : PMSFC_PortEvent structure pointer [Storage Devices], storage.msfc_portevent, hbapiwmi/PMSFC_PortEvent, structs-Fibre_21739c44-07d2-412e-bc03-3cc25b14bb9d.xml, _MSFC_PortEvent, hbapiwmi/MSFC_PortEvent, PMSFC_PortEvent, MSFC_PortEvent structure [Storage Devices], MSFC_PortEvent, *PMSFC_PortEvent
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : hbapiwmi.h
-req.include-header : Hbapiwmi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PMSFC_PortEvent, MSFC_PortEvent"
+UID: NS:hbapiwmi._MSFC_PortEvent
+title: "_MSFC_PortEvent"
+author: windows-driver-content
+description: A WMI provider uses the MSFC_PortEvent structure to report port events for the indicated adapter.
+old-location: storage\msfc_portevent.htm
+old-project: storage
+ms.assetid: bf9e2d58-9379-4b88-9043-580a97ec7cd9
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: PMSFC_PortEvent structure pointer [Storage Devices], storage.msfc_portevent, hbapiwmi/PMSFC_PortEvent, structs-Fibre_21739c44-07d2-412e-bc03-3cc25b14bb9d.xml, _MSFC_PortEvent, hbapiwmi/MSFC_PortEvent, PMSFC_PortEvent, MSFC_PortEvent structure [Storage Devices], MSFC_PortEvent, *PMSFC_PortEvent
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: hbapiwmi.h
+req.include-header: Hbapiwmi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hbapiwmi.h
+apiname:
+-	MSFC_PortEvent
+product: Windows
+targetos: Windows
+req.typenames: "*PMSFC_PortEvent, MSFC_PortEvent"
 ---
 
 # _MSFC_PortEvent structure

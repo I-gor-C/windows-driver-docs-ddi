@@ -1,41 +1,46 @@
 ---
-UID : NC:netdispumdddi.PFN_DATARATE_NOTIFICATION
-title : PFN_DATARATE_NOTIFICATION
-author : windows-driver-content
-description : Called by the operating system to notify the Miracast user-mode driver that the bit rate of the Miracast network link has changed. This function is registered with the operating system when the RegisterForDataRateNotifications function is called.
-old-location : display\pfndataratenotify.htm
-old-project : display
-ms.assetid : 5eb004d1-7cf8-45a3-aad5-2932b1a83bb8
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.pfndataratenotify, pfnDataRateNotify callback function [Display Devices], pfnDataRateNotify, PFN_DATARATE_NOTIFICATION, PFN_DATARATE_NOTIFICATION, netdispumdddi/pfnDataRateNotify
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : netdispumdddi.h
-req.include-header : Netdispumdddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8.1
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDK_SRQ_DISPATCH
+UID: NC:netdispumdddi.PFN_DATARATE_NOTIFICATION
+title: PFN_DATARATE_NOTIFICATION
+author: windows-driver-content
+description: Called by the operating system to notify the Miracast user-mode driver that the bit rate of the Miracast network link has changed. This function is registered with the operating system when the RegisterForDataRateNotifications function is called.
+old-location: display\pfndataratenotify.htm
+old-project: display
+ms.assetid: 5eb004d1-7cf8-45a3-aad5-2932b1a83bb8
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.pfndataratenotify, pfnDataRateNotify callback function [Display Devices], pfnDataRateNotify, PFN_DATARATE_NOTIFICATION, PFN_DATARATE_NOTIFICATION, netdispumdddi/pfnDataRateNotify
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: netdispumdddi.h
+req.include-header: Netdispumdddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8.1
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Netdispumdddi.h
+apiname:
+-	pfnDataRateNotify
+product: Windows
+targetos: Windows
+req.typenames: NDK_SRQ_DISPATCH
 ---
 
 

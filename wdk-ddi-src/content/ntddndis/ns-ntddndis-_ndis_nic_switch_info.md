@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddndis._NDIS_NIC_SWITCH_INFO
-title : "_NDIS_NIC_SWITCH_INFO"
-author : windows-driver-content
-description : The NDIS_NIC_SWITCH_INFO structure specifies the information about a network adapter switch on a network adapter.
-old-location : netvista\ndis_nic_switch_info.htm
-old-project : netvista
-ms.assetid : 0da6927f-c940-4e46-a63a-2127bd7fa63d
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : PNDIS_NIC_SWITCH_INFO, *PNDIS_NIC_SWITCH_INFO, NDIS_NIC_SWITCH_INFO structure [Network Drivers Starting with Windows Vista], ntddndis/NDIS_NIC_SWITCH_INFO, ntddndis/PNDIS_NIC_SWITCH_INFO, netvista.ndis_nic_switch_info, _NDIS_NIC_SWITCH_INFO, PNDIS_NIC_SWITCH_INFO structure pointer [Network Drivers Starting with Windows Vista], NDIS_NIC_SWITCH_INFO
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.30 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_NIC_SWITCH_INFO, *PNDIS_NIC_SWITCH_INFO
+UID: NS:ntddndis._NDIS_NIC_SWITCH_INFO
+title: "_NDIS_NIC_SWITCH_INFO"
+author: windows-driver-content
+description: The NDIS_NIC_SWITCH_INFO structure specifies the information about a network adapter switch on a network adapter.
+old-location: netvista\ndis_nic_switch_info.htm
+old-project: netvista
+ms.assetid: 0da6927f-c940-4e46-a63a-2127bd7fa63d
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: PNDIS_NIC_SWITCH_INFO, *PNDIS_NIC_SWITCH_INFO, NDIS_NIC_SWITCH_INFO structure [Network Drivers Starting with Windows Vista], ntddndis/NDIS_NIC_SWITCH_INFO, ntddndis/PNDIS_NIC_SWITCH_INFO, netvista.ndis_nic_switch_info, _NDIS_NIC_SWITCH_INFO, PNDIS_NIC_SWITCH_INFO structure pointer [Network Drivers Starting with Windows Vista], NDIS_NIC_SWITCH_INFO
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.30 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddndis.h
+apiname:
+-	NDIS_NIC_SWITCH_INFO
+product: Windows
+targetos: Windows
+req.typenames: NDIS_NIC_SWITCH_INFO, *PNDIS_NIC_SWITCH_INFO
 ---
 
 # _NDIS_NIC_SWITCH_INFO structure

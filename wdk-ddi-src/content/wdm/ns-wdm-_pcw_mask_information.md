@@ -1,38 +1,38 @@
 ---
-UID : NS:wdm._PCW_MASK_INFORMATION
-title : _PCW_MASK_INFORMATION
-author : windows-driver-content
-description : The PCW_MASK_INFORMATION structure supplies details about the notification to send to the provider. This information is passed as part of the Info parameter to the PcwCallback function. This mask information is included in PCW_CALLBACK_INFORMATION.
-old-location : devtest\pcw_mask_information.htm
-old-project : devtest
-ms.assetid : 5519aec9-9a02-4571-8809-fa8273269ea5
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : _PCW_MASK_INFORMATION, PCW_MASK_INFORMATION, *PPCW_MASK_INFORMATION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.alt-api : PCW_MASK_INFORMATION
-req.alt-loc : wdm.h
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-req.typenames : PCW_MASK_INFORMATION, *PPCW_MASK_INFORMATION
-req.product : Windows 10 or later.
+UID: NS:wdm._PCW_MASK_INFORMATION
+title: _PCW_MASK_INFORMATION
+author: windows-driver-content
+description: The PCW_MASK_INFORMATION structure supplies details about the notification to send to the provider. This information is passed as part of the Info parameter to the PcwCallback function. This mask information is included in PCW_CALLBACK_INFORMATION.
+old-location: devtest\pcw_mask_information.htm
+old-project: devtest
+ms.assetid: 5519aec9-9a02-4571-8809-fa8273269ea5
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: _PCW_MASK_INFORMATION, PCW_MASK_INFORMATION, *PPCW_MASK_INFORMATION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.alt-api: PCW_MASK_INFORMATION
+req.alt-loc: wdm.h
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+req.typenames: PCW_MASK_INFORMATION, *PPCW_MASK_INFORMATION
+req.product: Windows 10 or later.
 ---
 
 # _PCW_MASK_INFORMATION structure

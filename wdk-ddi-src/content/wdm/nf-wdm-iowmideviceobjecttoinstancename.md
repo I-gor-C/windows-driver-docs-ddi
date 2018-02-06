@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.IoWMIDeviceObjectToInstanceName
-title : IoWMIDeviceObjectToInstanceName function
-author : windows-driver-content
-description : The IoWMIDeviceObjectToInstanceName routine determines the instance name for the WMI class instance implemented by the driver that is specified by a device object.
-old-location : kernel\iowmideviceobjecttoinstancename.htm
-old-project : kernel
-ms.assetid : 18692c0d-8b74-495d-b66a-2873837ff797
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/IoWMIDeviceObjectToInstanceName, IoWMIDeviceObjectToInstanceName, kernel.iowmideviceobjecttoinstancename, IoWMIDeviceObjectToInstanceName routine [Kernel-Mode Driver Architecture], k104_9341dc2b-c948-44bd-891d-a530a8676259.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows XP and later versions of the Windows operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.IoWMIDeviceObjectToInstanceName
+title: IoWMIDeviceObjectToInstanceName function
+author: windows-driver-content
+description: The IoWMIDeviceObjectToInstanceName routine determines the instance name for the WMI class instance implemented by the driver that is specified by a device object.
+old-location: kernel\iowmideviceobjecttoinstancename.htm
+old-project: kernel
+ms.assetid: 18692c0d-8b74-495d-b66a-2873837ff797
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/IoWMIDeviceObjectToInstanceName, IoWMIDeviceObjectToInstanceName, kernel.iowmideviceobjecttoinstancename, IoWMIDeviceObjectToInstanceName routine [Kernel-Mode Driver Architecture], k104_9341dc2b-c948-44bd-891d-a530a8676259.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows XP and later versions of the Windows operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoWMIDeviceObjectToInstanceName
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

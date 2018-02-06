@@ -1,42 +1,48 @@
 ---
-UID : NF:wdftimer.WDF_TIMER_CONFIG_INIT
-title : WDF_TIMER_CONFIG_INIT function
-author : windows-driver-content
-description : The WDF_TIMER_CONFIG_INIT function initializes a WDF_TIMER_CONFIG structure for a timer that will use a single due time.
-old-location : wdf\wdf_timer_config_init.htm
-old-project : wdf
-ms.assetid : 2bf613ff-e178-4a33-a1ae-ea6d4bb78d0a
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.wdf_timer_config_init, WDF_TIMER_CONFIG_INIT function, kmdf.wdf_timer_config_init, DFTimerObjectRef_aed045cc-b5e1-4e47-8f6b-41d6b858c9f2.xml, WDF_TIMER_CONFIG_INIT, wdftimer/WDF_TIMER_CONFIG_INIT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdftimer.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : None
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_REQUEST_SEND_OPTIONS, *PWDF_REQUEST_SEND_OPTIONS
-req.product : Windows 10 or later.
+UID: NF:wdftimer.WDF_TIMER_CONFIG_INIT
+title: WDF_TIMER_CONFIG_INIT function
+author: windows-driver-content
+description: The WDF_TIMER_CONFIG_INIT function initializes a WDF_TIMER_CONFIG structure for a timer that will use a single due time.
+old-location: wdf\wdf_timer_config_init.htm
+old-project: wdf
+ms.assetid: 2bf613ff-e178-4a33-a1ae-ea6d4bb78d0a
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.wdf_timer_config_init, WDF_TIMER_CONFIG_INIT function, kmdf.wdf_timer_config_init, DFTimerObjectRef_aed045cc-b5e1-4e47-8f6b-41d6b858c9f2.xml, WDF_TIMER_CONFIG_INIT, wdftimer/WDF_TIMER_CONFIG_INIT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdftimer.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: None
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	None
+-	None.dll
+apiname:
+-	WDF_TIMER_CONFIG_INIT
+product: Windows
+targetos: Windows
+req.typenames: WDF_REQUEST_SEND_OPTIONS, *PWDF_REQUEST_SEND_OPTIONS
+req.product: Windows 10 or later.
 ---
 
 

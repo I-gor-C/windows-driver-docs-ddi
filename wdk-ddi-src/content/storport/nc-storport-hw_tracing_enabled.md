@@ -1,42 +1,47 @@
 ---
-UID : NC:storport.HW_TRACING_ENABLED
-title : HW_TRACING_ENABLED
-author : windows-driver-content
-description : The HwStorTracingEnabled callback routine enables the Storport to notify a miniport that event tracing is enabled.
-old-location : storage\hwstortracingenabled.htm
-old-project : storage
-ms.assetid : 2B56A2D3-1FA6-4212-A83C-3C20D826353B
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.hwstortracingenabled, HwStorTracingEnabled routine [Storage Devices], HwStorTracingEnabled, HW_TRACING_ENABLED, HW_TRACING_ENABLED, storport/HwStorTracingEnabled
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 8 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSTORAGE_DEVICE_UNIQUE_IDENTIFIER, STORAGE_DEVICE_UNIQUE_IDENTIFIER"
-req.product : Windows 10 or later.
+UID: NC:storport.HW_TRACING_ENABLED
+title: HW_TRACING_ENABLED
+author: windows-driver-content
+description: The HwStorTracingEnabled callback routine enables the Storport to notify a miniport that event tracing is enabled.
+old-location: storage\hwstortracingenabled.htm
+old-project: storage
+ms.assetid: 2B56A2D3-1FA6-4212-A83C-3C20D826353B
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.hwstortracingenabled, HwStorTracingEnabled routine [Storage Devices], HwStorTracingEnabled, HW_TRACING_ENABLED, HW_TRACING_ENABLED, storport/HwStorTracingEnabled
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 8 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Storport.h
+apiname:
+-	HwStorTracingEnabled
+product: Windows
+targetos: Windows
+req.typenames: "*PSTORAGE_DEVICE_UNIQUE_IDENTIFIER, STORAGE_DEVICE_UNIQUE_IDENTIFIER"
+req.product: Windows 10 or later.
 ---
 
 

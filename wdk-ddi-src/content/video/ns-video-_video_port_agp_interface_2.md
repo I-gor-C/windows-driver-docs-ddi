@@ -1,42 +1,47 @@
 ---
-UID : NS:video._VIDEO_PORT_AGP_INTERFACE_2
-title : "_VIDEO_PORT_AGP_INTERFACE_2"
-author : windows-driver-content
-description : The VIDEO_PORT_AGP_INTERFACE_2 structure describes the AGP service routines provided by the video port driver.
-old-location : display\video_port_agp_interface_2.htm
-old-project : display
-ms.assetid : 626cbf2d-2841-4b52-b17d-5377aa2f6264
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : video/PVIDEO_PORT_AGP_INTERFACE_2, Video_Structs_99a2957c-7304-4e59-9609-748a5d7b878b.xml, *PVIDEO_PORT_AGP_INTERFACE_2, VIDEO_PORT_AGP_INTERFACE_2 structure [Display Devices], display.video_port_agp_interface_2, VIDEO_PORT_AGP_INTERFACE_2, _VIDEO_PORT_AGP_INTERFACE_2, PVIDEO_PORT_AGP_INTERFACE_2, video/VIDEO_PORT_AGP_INTERFACE_2, PVIDEO_PORT_AGP_INTERFACE_2 structure pointer [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PVIDEO_PORT_AGP_INTERFACE_2, VIDEO_PORT_AGP_INTERFACE_2"
-req.product : Windows 10 or later.
+UID: NS:video._VIDEO_PORT_AGP_INTERFACE_2
+title: "_VIDEO_PORT_AGP_INTERFACE_2"
+author: windows-driver-content
+description: The VIDEO_PORT_AGP_INTERFACE_2 structure describes the AGP service routines provided by the video port driver.
+old-location: display\video_port_agp_interface_2.htm
+old-project: display
+ms.assetid: 626cbf2d-2841-4b52-b17d-5377aa2f6264
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: video/PVIDEO_PORT_AGP_INTERFACE_2, Video_Structs_99a2957c-7304-4e59-9609-748a5d7b878b.xml, *PVIDEO_PORT_AGP_INTERFACE_2, VIDEO_PORT_AGP_INTERFACE_2 structure [Display Devices], display.video_port_agp_interface_2, VIDEO_PORT_AGP_INTERFACE_2, _VIDEO_PORT_AGP_INTERFACE_2, PVIDEO_PORT_AGP_INTERFACE_2, video/VIDEO_PORT_AGP_INTERFACE_2, PVIDEO_PORT_AGP_INTERFACE_2 structure pointer [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	video.h
+apiname:
+-	VIDEO_PORT_AGP_INTERFACE_2
+product: Windows
+targetos: Windows
+req.typenames: "*PVIDEO_PORT_AGP_INTERFACE_2, VIDEO_PORT_AGP_INTERFACE_2"
+req.product: Windows 10 or later.
 ---
 
 # _VIDEO_PORT_AGP_INTERFACE_2 structure

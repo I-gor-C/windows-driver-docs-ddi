@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.ExAcquireSharedWaitForExclusive
-title : ExAcquireSharedWaitForExclusive function
-author : windows-driver-content
-description : The ExAcquireSharedWaitForExclusive routine acquires the given resource for shared access if shared access can be granted and there are no exclusive waiters.
-old-location : kernel\exacquiresharedwaitforexclusive.htm
-old-project : kernel
-ms.assetid : 745b014d-7ab4-4e07-a24c-7a74949a9d7b
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/ExAcquireSharedWaitForExclusive, k102_505fe2a0-5751-4481-a545-2091828463ce.xml, ExAcquireSharedWaitForExclusive routine [Kernel-Mode Driver Architecture], ExAcquireSharedWaitForExclusive, kernel.exacquiresharedwaitforexclusive
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : IrqlExApcLte3, WithinCriticalRegion, HwStorPortProhibitedDDIs, SpNoWait, WithinCriticalRegion(storport)
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ExAcquireSharedWaitForExclusive
+title: ExAcquireSharedWaitForExclusive function
+author: windows-driver-content
+description: The ExAcquireSharedWaitForExclusive routine acquires the given resource for shared access if shared access can be granted and there are no exclusive waiters.
+old-location: kernel\exacquiresharedwaitforexclusive.htm
+old-project: kernel
+ms.assetid: 745b014d-7ab4-4e07-a24c-7a74949a9d7b
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/ExAcquireSharedWaitForExclusive, k102_505fe2a0-5751-4481-a545-2091828463ce.xml, ExAcquireSharedWaitForExclusive routine [Kernel-Mode Driver Architecture], ExAcquireSharedWaitForExclusive, kernel.exacquiresharedwaitforexclusive
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: IrqlExApcLte3, WithinCriticalRegion, HwStorPortProhibitedDDIs, SpNoWait, WithinCriticalRegion(storport)
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ExAcquireSharedWaitForExclusive
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

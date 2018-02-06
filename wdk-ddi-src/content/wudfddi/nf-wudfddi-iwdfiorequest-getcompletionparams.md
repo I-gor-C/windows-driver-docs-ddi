@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFIoRequest.GetCompletionParams
-title : IWDFIoRequest::GetCompletionParams method
-author : windows-driver-content
-description : The GetCompletionParams method retrieves the parameters object for the completion of an I/O request object.
-old-location : wdf\iwdfiorequest_getcompletionparams.htm
-old-project : wdf
-ms.assetid : aaca14ff-9ea2-43f4-bfa9-9151d855c3af
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : IWDFIoRequest interface, GetCompletionParams method, wudfddi/IWDFIoRequest::GetCompletionParams, GetCompletionParams method, IWDFIoRequest, GetCompletionParams method, IWDFIoRequest interface, umdf.iwdfiorequest_getcompletionparams, GetCompletionParams, UMDFRequestObjectRef_dbfb5f9c-c1ad-425d-9bcb-627cc961d00d.xml, wdf.iwdfiorequest_getcompletionparams, IWDFIoRequest::GetCompletionParams
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.5
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFIoRequest.GetCompletionParams
+title: IWDFIoRequest::GetCompletionParams method
+author: windows-driver-content
+description: The GetCompletionParams method retrieves the parameters object for the completion of an I/O request object.
+old-location: wdf\iwdfiorequest_getcompletionparams.htm
+old-project: wdf
+ms.assetid: aaca14ff-9ea2-43f4-bfa9-9151d855c3af
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: IWDFIoRequest interface, GetCompletionParams method, wudfddi/IWDFIoRequest::GetCompletionParams, GetCompletionParams method, IWDFIoRequest, GetCompletionParams method, IWDFIoRequest interface, umdf.iwdfiorequest_getcompletionparams, GetCompletionParams, UMDFRequestObjectRef_dbfb5f9c-c1ad-425d-9bcb-627cc961d00d.xml, wdf.iwdfiorequest_getcompletionparams, IWDFIoRequest::GetCompletionParams
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.5
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFIoRequest.GetCompletionParams
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

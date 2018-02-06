@@ -1,41 +1,46 @@
 ---
-UID : NN:ks.IKsReferenceClock
-title : IKsReferenceClock
-author : windows-driver-content
-description : The IKsReferenceClock interface is a COM-style interface that is provided by AVStream on all pins. The pin passes the request onto the master clock.
-old-location : stream\iksreferenceclock.htm
-old-project : stream
-ms.assetid : 92a84bf3-34bf-4ee7-97c0-f5e6427c0464
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.iksreferenceclock, IKsReferenceClock interface [Streaming Media Devices], IKsReferenceClock interface [Streaming Media Devices], described, IKsReferenceClock, ks/IKsReferenceClock, avintfc_7146002a-d8ab-4789-b752-863f8b2d94d2.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : ks.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NN:ks.IKsReferenceClock
+title: IKsReferenceClock
+author: windows-driver-content
+description: The IKsReferenceClock interface is a COM-style interface that is provided by AVStream on all pins. The pin passes the request onto the master clock.
+old-location: stream\iksreferenceclock.htm
+old-project: stream
+ms.assetid: 92a84bf3-34bf-4ee7-97c0-f5e6427c0464
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.iksreferenceclock, IKsReferenceClock interface [Streaming Media Devices], IKsReferenceClock interface [Streaming Media Devices], described, IKsReferenceClock, ks/IKsReferenceClock, avintfc_7146002a-d8ab-4789-b752-863f8b2d94d2.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: ks.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	ks.h
+apiname:
+-	IKsReferenceClock
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 # IKsReferenceClock interface

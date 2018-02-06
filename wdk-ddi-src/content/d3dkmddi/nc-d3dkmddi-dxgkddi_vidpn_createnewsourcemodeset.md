@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dkmddi.DXGKDDI_VIDPN_CREATENEWSOURCEMODESET
-title : DXGKDDI_VIDPN_CREATENEWSOURCEMODESET
-author : windows-driver-content
-description : The pfnCreateNewSourceModeSet function creates a new source mode set object within a specified VidPN object.
-old-location : display\dxgk_vidpn_interface_pfncreatenewsourcemodeset.htm
-old-project : display
-ms.assetid : d46ffa49-6e75-4cd4-9d14-aa2c9fa671be
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgk_vidpn_interface_pfncreatenewsourcemodeset, pfnCreateNewSourceModeSet callback function [Display Devices], pfnCreateNewSourceModeSet, DXGKDDI_VIDPN_CREATENEWSOURCEMODESET, DXGKDDI_VIDPN_CREATENEWSOURCEMODESET, d3dkmddi/pfnCreateNewSourceModeSet, VidPnFunctions_13c4227c-f1d3-4191-a085-5ed298fe11e7.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
+UID: NC:d3dkmddi.DXGKDDI_VIDPN_CREATENEWSOURCEMODESET
+title: DXGKDDI_VIDPN_CREATENEWSOURCEMODESET
+author: windows-driver-content
+description: The pfnCreateNewSourceModeSet function creates a new source mode set object within a specified VidPN object.
+old-location: display\dxgk_vidpn_interface_pfncreatenewsourcemodeset.htm
+old-project: display
+ms.assetid: d46ffa49-6e75-4cd4-9d14-aa2c9fa671be
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgk_vidpn_interface_pfncreatenewsourcemodeset, pfnCreateNewSourceModeSet callback function [Display Devices], pfnCreateNewSourceModeSet, DXGKDDI_VIDPN_CREATENEWSOURCEMODESET, DXGKDDI_VIDPN_CREATENEWSOURCEMODESET, d3dkmddi/pfnCreateNewSourceModeSet, VidPnFunctions_13c4227c-f1d3-4191-a085-5ed298fe11e7.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	pfnCreateNewSourceModeSet
+product: Windows
+targetos: Windows
+req.typenames: DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
 

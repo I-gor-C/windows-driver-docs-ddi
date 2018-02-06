@@ -1,42 +1,47 @@
 ---
-UID : NC:scsiwmi.PSCSIWMI_QUERY_REGINFO
-title : PSCSIWMI_QUERY_REGINFO
-author : windows-driver-content
-description : A miniport driver's HwScsiWmiQueryReginfo routine is called to obtain information about the data and event blocks to be registered on behalf of the miniport driver by the SCSI port driver.
-old-location : storage\hwscsiwmiqueryreginfo.htm
-old-project : storage
-ms.assetid : 416f8629-324f-4698-bbe9-699f5d53011e
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.hwscsiwmiqueryreginfo, HwScsiWmiQueryReginfo callback function [Storage Devices], HwScsiWmiQueryReginfo, PSCSIWMI_QUERY_REGINFO, PSCSIWMI_QUERY_REGINFO, scsiwmi/HwScsiWmiQueryReginfo, Scsimini_16dc5cef-69cd-488a-b941-9819951a3652.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : scsiwmi.h
-req.include-header : Scsiwmi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SCSISCAN_INFO, *PSCSISCAN_INFO
-req.product : Windows 10 or later.
+UID: NC:scsiwmi.PSCSIWMI_QUERY_REGINFO
+title: PSCSIWMI_QUERY_REGINFO
+author: windows-driver-content
+description: A miniport driver's HwScsiWmiQueryReginfo routine is called to obtain information about the data and event blocks to be registered on behalf of the miniport driver by the SCSI port driver.
+old-location: storage\hwscsiwmiqueryreginfo.htm
+old-project: storage
+ms.assetid: 416f8629-324f-4698-bbe9-699f5d53011e
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.hwscsiwmiqueryreginfo, HwScsiWmiQueryReginfo callback function [Storage Devices], HwScsiWmiQueryReginfo, PSCSIWMI_QUERY_REGINFO, PSCSIWMI_QUERY_REGINFO, scsiwmi/HwScsiWmiQueryReginfo, Scsimini_16dc5cef-69cd-488a-b941-9819951a3652.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: scsiwmi.h
+req.include-header: Scsiwmi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	scsiwmi.h
+apiname:
+-	HwScsiWmiQueryReginfo
+product: Windows
+targetos: Windows
+req.typenames: SCSISCAN_INFO, *PSCSISCAN_INFO
+req.product: Windows 10 or later.
 ---
 
 

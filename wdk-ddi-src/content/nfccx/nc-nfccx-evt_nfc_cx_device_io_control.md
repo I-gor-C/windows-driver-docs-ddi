@@ -1,41 +1,46 @@
 ---
-UID : NC:nfccx.EVT_NFC_CX_DEVICE_IO_CONTROL
-title : EVT_NFC_CX_DEVICE_IO_CONTROL
-author : windows-driver-content
-description : Called by the NFC CX to send an unhandled IOCTL to the client driver.
-old-location : nfpdrivers\evtnfccxdeviceiocontrol_.htm
-old-project : nfpdrivers
-ms.assetid : 45512F88-D4B8-4488-99EB-B47EE7443425
-ms.author : windowsdriverdev
-ms.date : 12/18/2017
-ms.keywords : nfpdrivers.evtnfccxdeviceiocontrol_, EvtNfcCxDeviceIoControl callback function [Near-Field Proximity Drivers], EvtNfcCxDeviceIoControl, EVT_NFC_CX_DEVICE_IO_CONTROL, EVT_NFC_CX_DEVICE_IO_CONTROL, nfccx/EvtNfcCxDeviceIoControl
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : nfccx.h
-req.include-header : Ncidef.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : None supported
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Requires same
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NPI_REGISTRATION_INSTANCE
+UID: NC:nfccx.EVT_NFC_CX_DEVICE_IO_CONTROL
+title: EVT_NFC_CX_DEVICE_IO_CONTROL
+author: windows-driver-content
+description: Called by the NFC CX to send an unhandled IOCTL to the client driver.
+old-location: nfpdrivers\evtnfccxdeviceiocontrol_.htm
+old-project: nfpdrivers
+ms.assetid: 45512F88-D4B8-4488-99EB-B47EE7443425
+ms.author: windowsdriverdev
+ms.date: 12/18/2017
+ms.keywords: nfpdrivers.evtnfccxdeviceiocontrol_, EvtNfcCxDeviceIoControl callback function [Near-Field Proximity Drivers], EvtNfcCxDeviceIoControl, EVT_NFC_CX_DEVICE_IO_CONTROL, EVT_NFC_CX_DEVICE_IO_CONTROL, nfccx/EvtNfcCxDeviceIoControl
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: nfccx.h
+req.include-header: Ncidef.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: None supported
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Requires same
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	nfccx.h
+apiname:
+-	EvtNfcCxDeviceIoControl
+product: Windows
+targetos: Windows
+req.typenames: NPI_REGISTRATION_INSTANCE
 ---
 
 

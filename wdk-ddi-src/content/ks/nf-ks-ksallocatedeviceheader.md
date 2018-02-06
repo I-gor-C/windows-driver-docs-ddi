@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsAllocateDeviceHeader
-title : KsAllocateDeviceHeader function
-author : windows-driver-content
-description : The KsAllocateDeviceHeader function allocates and initializes the required device extension header.
-old-location : stream\ksallocatedeviceheader.htm
-old-project : stream
-ms.assetid : 554f03bf-cacd-401b-aa34-fcfe1c31091e
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.ksallocatedeviceheader, KsAllocateDeviceHeader function [Streaming Media Devices], KsAllocateDeviceHeader, ksfunc_715031de-7d7e-4e24-8e1c-072c7bc271fb.xml, ks/KsAllocateDeviceHeader
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : "< DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsAllocateDeviceHeader
+title: KsAllocateDeviceHeader function
+author: windows-driver-content
+description: The KsAllocateDeviceHeader function allocates and initializes the required device extension header.
+old-location: stream\ksallocatedeviceheader.htm
+old-project: stream
+ms.assetid: 554f03bf-cacd-401b-aa34-fcfe1c31091e
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.ksallocatedeviceheader, KsAllocateDeviceHeader function [Streaming Media Devices], KsAllocateDeviceHeader, ksfunc_715031de-7d7e-4e24-8e1c-072c7bc271fb.xml, ks/KsAllocateDeviceHeader
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: "< DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsAllocateDeviceHeader
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

@@ -1,41 +1,47 @@
 ---
-UID : NF:netioddk.NmrClientAttachProvider
-title : NmrClientAttachProvider function
-author : windows-driver-content
-description : The NmrClientAttachProvider function attaches a client module to a provider module.
-old-location : netvista\nmrclientattachprovider.htm
-old-project : netvista
-ms.assetid : dca8f82b-f058-4765-890c-973f8462c2f5
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : nmrref_6d66009c-5262-4a75-986d-1eb91dcc61a2.xml, NmrClientAttachProvider, netioddk/NmrClientAttachProvider, netvista.nmrclientattachprovider, NmrClientAttachProvider function [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : netioddk.h
-req.include-header : Wsk.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating   systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Netio.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NET_DMA_PROVIDER_CHARACTERISTICS, *PNET_DMA_PROVIDER_CHARACTERISTICS
+UID: NF:netioddk.NmrClientAttachProvider
+title: NmrClientAttachProvider function
+author: windows-driver-content
+description: The NmrClientAttachProvider function attaches a client module to a provider module.
+old-location: netvista\nmrclientattachprovider.htm
+old-project: netvista
+ms.assetid: dca8f82b-f058-4765-890c-973f8462c2f5
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: nmrref_6d66009c-5262-4a75-986d-1eb91dcc61a2.xml, NmrClientAttachProvider, netioddk/NmrClientAttachProvider, netvista.nmrclientattachprovider, NmrClientAttachProvider function [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: netioddk.h
+req.include-header: Wsk.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Netio.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	netio.lib
+-	netio.dll
+apiname:
+-	NmrClientAttachProvider
+product: Windows
+targetos: Windows
+req.typenames: NET_DMA_PROVIDER_CHARACTERISTICS, *PNET_DMA_PROVIDER_CHARACTERISTICS
 ---
 
 

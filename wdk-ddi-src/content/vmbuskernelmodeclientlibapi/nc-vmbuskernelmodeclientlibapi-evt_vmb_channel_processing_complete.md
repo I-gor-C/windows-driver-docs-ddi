@@ -1,42 +1,47 @@
 ---
-UID : NC:vmbuskernelmodeclientlibapi.EVT_VMB_CHANNEL_PROCESSING_COMPLETE
-title : EVT_VMB_CHANNEL_PROCESSING_COMPLETE
-author : windows-driver-content
-description : The EvtVmbChannelProcessingComplete callback function is invoked when a group of packets has been delivered by the EvtVmbChannelProcessPacket function, if there is a pause before delivering subsequent packets.
-old-location : netvista\evt_vmb_channel_processing_complete.htm
-old-project : netvista
-ms.assetid : E30A169E-0EC6-4128-B268-5FC1CD37A877
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.evt_vmb_channel_processing_complete, EvtVmbChannelProcessingComplete callback function [Network Drivers Starting with Windows Vista], EvtVmbChannelProcessingComplete, EVT_VMB_CHANNEL_PROCESSING_COMPLETE, EVT_VMB_CHANNEL_PROCESSING_COMPLETE, vmbuskernelmodeclientlibapi/EvtVmbChannelProcessingComplete, PFN_VMB_CHANNEL_PROCESSING_COMPLETE callback function pointer [Network Drivers Starting with Windows Vista], PFN_VMB_CHANNEL_PROCESSING_COMPLETE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : vmbuskernelmodeclientlibapi.h
-req.include-header : VmbusKernelModeClientLibApi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PVIDEO_PORT_AGP_SERVICES, VIDEO_PORT_AGP_SERVICES"
-req.product : Windows 10 or later.
+UID: NC:vmbuskernelmodeclientlibapi.EVT_VMB_CHANNEL_PROCESSING_COMPLETE
+title: EVT_VMB_CHANNEL_PROCESSING_COMPLETE
+author: windows-driver-content
+description: The EvtVmbChannelProcessingComplete callback function is invoked when a group of packets has been delivered by the EvtVmbChannelProcessPacket function, if there is a pause before delivering subsequent packets.
+old-location: netvista\evt_vmb_channel_processing_complete.htm
+old-project: netvista
+ms.assetid: E30A169E-0EC6-4128-B268-5FC1CD37A877
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.evt_vmb_channel_processing_complete, EvtVmbChannelProcessingComplete callback function [Network Drivers Starting with Windows Vista], EvtVmbChannelProcessingComplete, EVT_VMB_CHANNEL_PROCESSING_COMPLETE, EVT_VMB_CHANNEL_PROCESSING_COMPLETE, vmbuskernelmodeclientlibapi/EvtVmbChannelProcessingComplete, PFN_VMB_CHANNEL_PROCESSING_COMPLETE callback function pointer [Network Drivers Starting with Windows Vista], PFN_VMB_CHANNEL_PROCESSING_COMPLETE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: vmbuskernelmodeclientlibapi.h
+req.include-header: VmbusKernelModeClientLibApi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	VmbusKernelModeClientLibApi.h
+apiname:
+-	PFN_VMB_CHANNEL_PROCESSING_COMPLETE
+product: Windows
+targetos: Windows
+req.typenames: "*PVIDEO_PORT_AGP_SERVICES, VIDEO_PORT_AGP_SERVICES"
+req.product: Windows 10 or later.
 ---
 
 

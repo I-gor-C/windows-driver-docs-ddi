@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._D3DDDICB_WAITFORSYNCHRONIZATIONOBJECT2
-title : "_D3DDDICB_WAITFORSYNCHRONIZATIONOBJECT2"
-author : windows-driver-content
-description : Describes the parameters that are required to set up the wait in a call to the pfnWaitForSynchronizationObject2Cb function.
-old-location : display\d3dddicb_waitforsynchronizationobject2.htm
-old-project : display
-ms.assetid : b5dbd1f3-4475-41d2-879a-34618b28b485
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DDDICB_WAITFORSYNCHRONIZATIONOBJECT2, d3dumddi/D3DDDICB_WAITFORSYNCHRONIZATIONOBJECT2, D3DDDICB_WAITFORSYNCHRONIZATIONOBJECT2 structure [Display Devices], display.d3dddicb_waitforsynchronizationobject2, _D3DDDICB_WAITFORSYNCHRONIZATIONOBJECT2
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDICB_WAITFORSYNCHRONIZATIONOBJECT2
+UID: NS:d3dumddi._D3DDDICB_WAITFORSYNCHRONIZATIONOBJECT2
+title: "_D3DDDICB_WAITFORSYNCHRONIZATIONOBJECT2"
+author: windows-driver-content
+description: Describes the parameters that are required to set up the wait in a call to the pfnWaitForSynchronizationObject2Cb function.
+old-location: display\d3dddicb_waitforsynchronizationobject2.htm
+old-project: display
+ms.assetid: b5dbd1f3-4475-41d2-879a-34618b28b485
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DDDICB_WAITFORSYNCHRONIZATIONOBJECT2, d3dumddi/D3DDDICB_WAITFORSYNCHRONIZATIONOBJECT2, D3DDDICB_WAITFORSYNCHRONIZATIONOBJECT2 structure [Display Devices], display.d3dddicb_waitforsynchronizationobject2, _D3DDDICB_WAITFORSYNCHRONIZATIONOBJECT2
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	D3dumddi.h
+apiname:
+-	D3DDDICB_WAITFORSYNCHRONIZATIONOBJECT2
+product: Windows
+targetos: Windows
+req.typenames: D3DDDICB_WAITFORSYNCHRONIZATIONOBJECT2
 ---
 
 # _D3DDDICB_WAITFORSYNCHRONIZATIONOBJECT2 structure

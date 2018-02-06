@@ -1,41 +1,46 @@
 ---
-UID : NF:mcd.ChangerExchangeMedium
-title : ChangerExchangeMedium function
-author : windows-driver-content
-description : ChangerExchangeMedium handles the device-specific aspects of a device-control IRP with the IOCTL code IOCTL_CHANGER_EXCHANGE_MEDIUM.
-old-location : storage\changerexchangemedium.htm
-old-project : storage
-ms.assetid : 4cb6e9af-ddd0-48d9-9f07-43c828e4187b
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : ChangerExchangeMedium function [Storage Devices], storage.changerexchangemedium, ChangerExchangeMedium, chgrmini_1a4e68fa-4ef3-4f1e-ab2c-ca26b138fc14.xml, mcd/ChangerExchangeMedium
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : mcd.h
-req.include-header : Mcd.h, Ntddchgr.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : LAMP_INTENSITY_WHITE
+UID: NF:mcd.ChangerExchangeMedium
+title: ChangerExchangeMedium function
+author: windows-driver-content
+description: ChangerExchangeMedium handles the device-specific aspects of a device-control IRP with the IOCTL code IOCTL_CHANGER_EXCHANGE_MEDIUM.
+old-location: storage\changerexchangemedium.htm
+old-project: storage
+ms.assetid: 4cb6e9af-ddd0-48d9-9f07-43c828e4187b
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: ChangerExchangeMedium function [Storage Devices], storage.changerexchangemedium, ChangerExchangeMedium, chgrmini_1a4e68fa-4ef3-4f1e-ab2c-ca26b138fc14.xml, mcd/ChangerExchangeMedium
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: mcd.h
+req.include-header: Mcd.h, Ntddchgr.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	mcd.h
+apiname:
+-	ChangerExchangeMedium
+product: Windows
+targetos: Windows
+req.typenames: LAMP_INTENSITY_WHITE
 ---
 
 

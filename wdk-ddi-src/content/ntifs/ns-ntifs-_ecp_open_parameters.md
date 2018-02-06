@@ -1,41 +1,46 @@
 ---
-UID : NS:ntifs._ECP_OPEN_PARAMETERS
-title : "_ECP_OPEN_PARAMETERS"
-author : windows-driver-content
-description : The ECP_OPEN_PARAMETERS structure allows a caller to specify the purpose of opening of a file without interfering with existing handles and/or oplocks on the file.
-old-location : ifsk\ecp_open_parameters.htm
-old-project : ifsk
-ms.assetid : 1223C77A-EAEC-4FCF-B2CC-F1E2935AF5CB
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ntifs/PECP_OPEN_PARAMETERS, ifsk.ecp_open_parameters, *PECP_OPEN_PARAMETERS, PECP_OPEN_PARAMETERS structure pointer [Installable File System Drivers], ECP_OPEN_PARAMETERS structure [Installable File System Drivers], ntifs/ECP_OPEN_PARAMETERS, _ECP_OPEN_PARAMETERS, PECP_OPEN_PARAMETERS, ECP_OPEN_PARAMETERS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows 10, version 1709.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PECP_OPEN_PARAMETERS, ECP_OPEN_PARAMETERS"
+UID: NS:ntifs._ECP_OPEN_PARAMETERS
+title: "_ECP_OPEN_PARAMETERS"
+author: windows-driver-content
+description: The ECP_OPEN_PARAMETERS structure allows a caller to specify the purpose of opening of a file without interfering with existing handles and/or oplocks on the file.
+old-location: ifsk\ecp_open_parameters.htm
+old-project: ifsk
+ms.assetid: 1223C77A-EAEC-4FCF-B2CC-F1E2935AF5CB
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ntifs/PECP_OPEN_PARAMETERS, ifsk.ecp_open_parameters, *PECP_OPEN_PARAMETERS, PECP_OPEN_PARAMETERS structure pointer [Installable File System Drivers], ECP_OPEN_PARAMETERS structure [Installable File System Drivers], ntifs/ECP_OPEN_PARAMETERS, _ECP_OPEN_PARAMETERS, PECP_OPEN_PARAMETERS, ECP_OPEN_PARAMETERS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows 10, version 1709.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntifs.h
+apiname:
+-	ECP_OPEN_PARAMETERS
+product: Windows
+targetos: Windows
+req.typenames: "*PECP_OPEN_PARAMETERS, ECP_OPEN_PARAMETERS"
 ---
 
 # _ECP_OPEN_PARAMETERS structure

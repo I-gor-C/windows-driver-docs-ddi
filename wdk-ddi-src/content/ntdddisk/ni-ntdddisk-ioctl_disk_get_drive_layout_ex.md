@@ -1,41 +1,46 @@
 ---
-UID : NI:ntdddisk.IOCTL_DISK_GET_DRIVE_LAYOUT_EX
-title : IOCTL_DISK_GET_DRIVE_LAYOUT_EX
-author : windows-driver-content
-description : Returns information about the number of partitions, disk signature, and features of each partition on a disk. (Floppy drivers need not handle this request.).
-old-location : storage\ioctl_disk_get_drive_layout_ex.htm
-old-project : storage
-ms.assetid : b0ffd1a6-aaa1-4001-a02b-6c0693b7ec5c
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_disk_get_drive_layout_ex, IOCTL_DISK_GET_DRIVE_LAYOUT_EX control code [Storage Devices], IOCTL_DISK_GET_DRIVE_LAYOUT_EX, ntdddisk/IOCTL_DISK_GET_DRIVE_LAYOUT_EX, k307_81993d9b-900f-412c-ac07-f0765114141f.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntdddisk.h
-req.include-header : Ntdddisk.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DETECTION_TYPE
+UID: NI:ntdddisk.IOCTL_DISK_GET_DRIVE_LAYOUT_EX
+title: IOCTL_DISK_GET_DRIVE_LAYOUT_EX
+author: windows-driver-content
+description: Returns information about the number of partitions, disk signature, and features of each partition on a disk. (Floppy drivers need not handle this request.).
+old-location: storage\ioctl_disk_get_drive_layout_ex.htm
+old-project: storage
+ms.assetid: b0ffd1a6-aaa1-4001-a02b-6c0693b7ec5c
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_disk_get_drive_layout_ex, IOCTL_DISK_GET_DRIVE_LAYOUT_EX control code [Storage Devices], IOCTL_DISK_GET_DRIVE_LAYOUT_EX, ntdddisk/IOCTL_DISK_GET_DRIVE_LAYOUT_EX, k307_81993d9b-900f-412c-ac07-f0765114141f.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntdddisk.h
+req.include-header: Ntdddisk.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntdddisk.h
+apiname:
+-	IOCTL_DISK_GET_DRIVE_LAYOUT_EX
+product: Windows
+targetos: Windows
+req.typenames: DETECTION_TYPE
 ---
 
 # IOCTL_DISK_GET_DRIVE_LAYOUT_EX IOCTL

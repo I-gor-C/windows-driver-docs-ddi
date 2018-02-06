@@ -1,42 +1,48 @@
 ---
-UID : NF:wdm.NtPowerInformation
-title : NtPowerInformation function
-author : windows-driver-content
-description : The ZwPowerInformation routine sets or retrieves system power information.
-old-location : kernel\zwpowerinformation.htm
-old-project : kernel
-ms.assetid : BA1D5AD2-E3E5-42CB-8E77-627B23078F80
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : NtPowerInformation, kernel.zwpowerinformation, wdm/NtPowerInformation, PlatformInformation, ZwPowerInformation, wdm/ZwPowerInformation, ZwPowerInformation routine [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h
-req.target-type : Universal
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ntoskrnl.lib
-req.dll : Ntoskrnl.lib
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.NtPowerInformation
+title: NtPowerInformation function
+author: windows-driver-content
+description: The ZwPowerInformation routine sets or retrieves system power information.
+old-location: kernel\zwpowerinformation.htm
+old-project: kernel
+ms.assetid: BA1D5AD2-E3E5-42CB-8E77-627B23078F80
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: NtPowerInformation, kernel.zwpowerinformation, wdm/NtPowerInformation, PlatformInformation, ZwPowerInformation, wdm/ZwPowerInformation, ZwPowerInformation routine [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h
+req.target-type: Universal
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ntoskrnl.lib
+req.dll: Ntoskrnl.lib
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Ntoskrnl.lib
+apiname:
+-	ZwPowerInformation
+-	NtPowerInformation
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:ks.KSPIN_DESCRIPTOR
-title : KSPIN_DESCRIPTOR
-author : windows-driver-content
-description : The KSPIN_DESCRIPTOR structure describes the basic KSPROPSETID_Pin properties of a pin type.
-old-location : stream\kspin_descriptor.htm
-old-project : stream
-ms.assetid : 0e7fccd1-1ced-41e7-8e75-8f4fa496ea06
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ks/KSPIN_DESCRIPTOR, PKSPIN_DESCRIPTOR structure pointer [Streaming Media Devices], KSPIN_DESCRIPTOR structure [Streaming Media Devices], KSPIN_DESCRIPTOR, ks-struct_adeadb36-6cf2-4c36-a1b4-a7852e98303f.xml, ks/PKSPIN_DESCRIPTOR, *PKSPIN_DESCRIPTOR, stream.kspin_descriptor, PKSPIN_DESCRIPTOR
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKSPIN_DESCRIPTOR, KSPIN_DESCRIPTOR"
+UID: NS:ks.KSPIN_DESCRIPTOR
+title: KSPIN_DESCRIPTOR
+author: windows-driver-content
+description: The KSPIN_DESCRIPTOR structure describes the basic KSPROPSETID_Pin properties of a pin type.
+old-location: stream\kspin_descriptor.htm
+old-project: stream
+ms.assetid: 0e7fccd1-1ced-41e7-8e75-8f4fa496ea06
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ks/KSPIN_DESCRIPTOR, PKSPIN_DESCRIPTOR structure pointer [Streaming Media Devices], KSPIN_DESCRIPTOR structure [Streaming Media Devices], KSPIN_DESCRIPTOR, ks-struct_adeadb36-6cf2-4c36-a1b4-a7852e98303f.xml, ks/PKSPIN_DESCRIPTOR, *PKSPIN_DESCRIPTOR, stream.kspin_descriptor, PKSPIN_DESCRIPTOR
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	KSPIN_DESCRIPTOR
+product: Windows
+targetos: Windows
+req.typenames: "*PKSPIN_DESCRIPTOR, KSPIN_DESCRIPTOR"
 ---
 
 # KSPIN_DESCRIPTOR structure

@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_SIGNALSYNCHRONIZATIONOBJECTCB
-title : PFND3DDDI_SIGNALSYNCHRONIZATIONOBJECTCB
-author : windows-driver-content
-description : The pfnSignalSynchronizationObjectCb function inserts a signal on the specified synchronization objects in the specified context DMA stream.
-old-location : display\pfnsignalsynchronizationobjectcb.htm
-old-project : display
-ms.assetid : 12ffa230-2c26-4cd3-ae83-f753a0b6ba38
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.pfnsignalsynchronizationobjectcb, pfnSignalSynchronizationObjectCb callback function [Display Devices], pfnSignalSynchronizationObjectCb, PFND3DDDI_SIGNALSYNCHRONIZATIONOBJECTCB, PFND3DDDI_SIGNALSYNCHRONIZATIONOBJECTCB, d3dumddi/pfnSignalSynchronizationObjectCb, D3Druntime_Functions_7bda6d91-797a-4f72-9182-e30b9fb1963a.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_SIGNALSYNCHRONIZATIONOBJECTCB
+title: PFND3DDDI_SIGNALSYNCHRONIZATIONOBJECTCB
+author: windows-driver-content
+description: The pfnSignalSynchronizationObjectCb function inserts a signal on the specified synchronization objects in the specified context DMA stream.
+old-location: display\pfnsignalsynchronizationobjectcb.htm
+old-project: display
+ms.assetid: 12ffa230-2c26-4cd3-ae83-f753a0b6ba38
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.pfnsignalsynchronizationobjectcb, pfnSignalSynchronizationObjectCb callback function [Display Devices], pfnSignalSynchronizationObjectCb, PFND3DDDI_SIGNALSYNCHRONIZATIONOBJECTCB, PFND3DDDI_SIGNALSYNCHRONIZATIONOBJECTCB, d3dumddi/pfnSignalSynchronizationObjectCb, D3Druntime_Functions_7bda6d91-797a-4f72-9182-e30b9fb1963a.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	pfnSignalSynchronizationObjectCb
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

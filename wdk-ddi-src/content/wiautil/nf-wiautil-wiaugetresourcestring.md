@@ -1,42 +1,47 @@
 ---
-UID : NF:wiautil.wiauGetResourceString
-title : wiauGetResourceString function
-author : windows-driver-content
-description : The wiauGetResourceString function gets a resource string, storing it as a BSTR.
-old-location : image\wiaugetresourcestring.htm
-old-project : image
-ms.assetid : b042702a-46ff-4ec9-8a92-af8516802e64
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : wiauGetResourceString function [Imaging Devices], wiauFncs_aa163759-0e49-4612-9f6c-78bd6534a62e.xml, wiautil/wiauGetResourceString, image.wiaugetresourcestring, wiauGetResourceString
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wiautil.h
-req.include-header : Wiautil.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows XP and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SKIP_AMOUNT
-req.product : Windows 10 or later.
+UID: NF:wiautil.wiauGetResourceString
+title: wiauGetResourceString function
+author: windows-driver-content
+description: The wiauGetResourceString function gets a resource string, storing it as a BSTR.
+old-location: image\wiaugetresourcestring.htm
+old-project: image
+ms.assetid: b042702a-46ff-4ec9-8a92-af8516802e64
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: wiauGetResourceString function [Imaging Devices], wiauFncs_aa163759-0e49-4612-9f6c-78bd6534a62e.xml, wiautil/wiauGetResourceString, image.wiaugetresourcestring, wiauGetResourceString
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wiautil.h
+req.include-header: Wiautil.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows XP and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wiautil.h
+apiname:
+-	wiauGetResourceString
+product: Windows
+targetos: Windows
+req.typenames: SKIP_AMOUNT
+req.product: Windows 10 or later.
 ---
 
 

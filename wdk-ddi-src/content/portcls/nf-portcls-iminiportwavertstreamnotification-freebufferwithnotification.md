@@ -1,41 +1,46 @@
 ---
-UID : NF:portcls.IMiniportWaveRTStreamNotification.FreeBufferWithNotification
-title : IMiniportWaveRTStreamNotification::FreeBufferWithNotification method
-author : windows-driver-content
-description : The FreeBufferWithNotification method is used to free an audio buffer previously allocated with a call to IMiniportWaveRTStreamNotification::AllocateBufferWithNotification.
-old-location : audio\iminiportwavertstreamnotification_freebufferwithnotification.htm
-old-project : audio
-ms.assetid : 2ec9222b-d9e7-4386-ac66-30c5436f549d
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : IMiniportWaveRTStreamNotification, audmp-routines_7b323e6d-c060-4d8a-beb1-88303e45bc0e.xml, audio.iminiportwavertstreamnotification_freebufferwithnotification, portcls/IMiniportWaveRTStreamNotification::FreeBufferWithNotification, IMiniportWaveRTStreamNotification interface [Audio Devices], FreeBufferWithNotification method, FreeBufferWithNotification, FreeBufferWithNotification method [Audio Devices], IMiniportWaveRTStreamNotification interface, IMiniportWaveRTStreamNotification::FreeBufferWithNotification, FreeBufferWithNotification method [Audio Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : portcls.h
-req.include-header : 
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : portcls.h
-req.dll : 
-req.irql : Passive level.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.IMiniportWaveRTStreamNotification.FreeBufferWithNotification
+title: IMiniportWaveRTStreamNotification::FreeBufferWithNotification method
+author: windows-driver-content
+description: The FreeBufferWithNotification method is used to free an audio buffer previously allocated with a call to IMiniportWaveRTStreamNotification::AllocateBufferWithNotification.
+old-location: audio\iminiportwavertstreamnotification_freebufferwithnotification.htm
+old-project: audio
+ms.assetid: 2ec9222b-d9e7-4386-ac66-30c5436f549d
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: IMiniportWaveRTStreamNotification, audmp-routines_7b323e6d-c060-4d8a-beb1-88303e45bc0e.xml, audio.iminiportwavertstreamnotification_freebufferwithnotification, portcls/IMiniportWaveRTStreamNotification::FreeBufferWithNotification, IMiniportWaveRTStreamNotification interface [Audio Devices], FreeBufferWithNotification method, FreeBufferWithNotification, FreeBufferWithNotification method [Audio Devices], IMiniportWaveRTStreamNotification interface, IMiniportWaveRTStreamNotification::FreeBufferWithNotification, FreeBufferWithNotification method [Audio Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: portcls.h
+req.include-header: 
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: portcls.h
+req.dll: 
+req.irql: Passive level.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	portcls.h
+apiname:
+-	IMiniportWaveRTStreamNotification.FreeBufferWithNotification
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

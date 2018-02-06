@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia._KSCAMERA_PROFILE_MEDIAINFO
-title : "_KSCAMERA_PROFILE_MEDIAINFO"
-author : windows-driver-content
-description : This structure contains the relevant media type information presented for each camera profile.
-old-location : stream\kscamera_profile_mediainfo.htm
-old-project : stream
-ms.assetid : 55B9F032-A3F5-434E-9EB6-CB832DC0EB45
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : PKSCAMERA_PROFILE_MEDIAINFO, ksmedia/PKSCAMERA_PROFILE_MEDIAINFO, PKSCAMERA_PROFILE_MEDIAINFO structure pointer [Streaming Media Devices], KSCAMERA_PROFILE_MEDIAINFO, KSCAMERA_PROFILE_MEDIAINFO structure [Streaming Media Devices], stream.kscamera_profile_mediainfo, ksmedia/KSCAMERA_PROFILE_MEDIAINFO, _KSCAMERA_PROFILE_MEDIAINFO, *PKSCAMERA_PROFILE_MEDIAINFO
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KSCAMERA_PROFILE_MEDIAINFO, *PKSCAMERA_PROFILE_MEDIAINFO
+UID: NS:ksmedia._KSCAMERA_PROFILE_MEDIAINFO
+title: "_KSCAMERA_PROFILE_MEDIAINFO"
+author: windows-driver-content
+description: This structure contains the relevant media type information presented for each camera profile.
+old-location: stream\kscamera_profile_mediainfo.htm
+old-project: stream
+ms.assetid: 55B9F032-A3F5-434E-9EB6-CB832DC0EB45
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: PKSCAMERA_PROFILE_MEDIAINFO, ksmedia/PKSCAMERA_PROFILE_MEDIAINFO, PKSCAMERA_PROFILE_MEDIAINFO structure pointer [Streaming Media Devices], KSCAMERA_PROFILE_MEDIAINFO, KSCAMERA_PROFILE_MEDIAINFO structure [Streaming Media Devices], stream.kscamera_profile_mediainfo, ksmedia/KSCAMERA_PROFILE_MEDIAINFO, _KSCAMERA_PROFILE_MEDIAINFO, *PKSCAMERA_PROFILE_MEDIAINFO
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ksmedia.h
+apiname:
+-	KSCAMERA_PROFILE_MEDIAINFO
+product: Windows
+targetos: Windows
+req.typenames: KSCAMERA_PROFILE_MEDIAINFO, *PKSCAMERA_PROFILE_MEDIAINFO
 ---
 
 # _KSCAMERA_PROFILE_MEDIAINFO structure

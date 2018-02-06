@@ -1,42 +1,48 @@
 ---
-UID : NF:strmini.StreamClassDebugPrint
-title : StreamClassDebugPrint function
-author : windows-driver-content
-description : In a checked build environment, the minidriver can use the StreamClassDebugPrint routine to print debug messages to the application window and to the Debugger Command window.
-old-location : stream\streamclassdebugprint.htm
-old-project : stream
-ms.assetid : a8b7efd2-7773-44dc-92de-85b03c31ada8
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : strmini/StreamClassDebugPrint, StreamClassDebugPrint, stream.streamclassdebugprint, strclass-routines_858a2dd4-ee74-44de-9293-05bd804c315d.xml, StreamClassDebugPrint routine [Streaming Media Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : strmini.h
-req.include-header : Strmini.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Stream.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSTREAM_PRIORITY, STREAM_PRIORITY"
-req.product : Windows 10 or later.
+UID: NF:strmini.StreamClassDebugPrint
+title: StreamClassDebugPrint function
+author: windows-driver-content
+description: In a checked build environment, the minidriver can use the StreamClassDebugPrint routine to print debug messages to the application window and to the Debugger Command window.
+old-location: stream\streamclassdebugprint.htm
+old-project: stream
+ms.assetid: a8b7efd2-7773-44dc-92de-85b03c31ada8
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: strmini/StreamClassDebugPrint, StreamClassDebugPrint, stream.streamclassdebugprint, strclass-routines_858a2dd4-ee74-44de-9293-05bd804c315d.xml, StreamClassDebugPrint routine [Streaming Media Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: strmini.h
+req.include-header: Strmini.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Stream.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Stream.lib
+-	Stream.dll
+apiname:
+-	StreamClassDebugPrint
+product: Windows
+targetos: Windows
+req.typenames: "*PSTREAM_PRIORITY, STREAM_PRIORITY"
+req.product: Windows 10 or later.
 ---
 
 

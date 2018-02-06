@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dkmddi.DXGKCB_MAPCONTEXTALLOCATION
-title : DXGKCB_MAPCONTEXTALLOCATION
-author : windows-driver-content
-description : Maps a graphics processing unit (GPU) virtual address to the specified context allocation.
-old-location : display\dxgkcbmapcontextallocation.htm
-old-project : display
-ms.assetid : 8EAC322D-B666-428A-99A3-96E489611832
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkcbmapcontextallocation, DxgkCbMapContextAllocation callback function [Display Devices], DxgkCbMapContextAllocation, DXGKCB_MAPCONTEXTALLOCATION, DXGKCB_MAPCONTEXTALLOCATION, d3dkmddi/DxgkCbMapContextAllocation
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
+UID: NC:d3dkmddi.DXGKCB_MAPCONTEXTALLOCATION
+title: DXGKCB_MAPCONTEXTALLOCATION
+author: windows-driver-content
+description: Maps a graphics processing unit (GPU) virtual address to the specified context allocation.
+old-location: display\dxgkcbmapcontextallocation.htm
+old-project: display
+ms.assetid: 8EAC322D-B666-428A-99A3-96E489611832
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkcbmapcontextallocation, DxgkCbMapContextAllocation callback function [Display Devices], DxgkCbMapContextAllocation, DXGKCB_MAPCONTEXTALLOCATION, DXGKCB_MAPCONTEXTALLOCATION, d3dkmddi/DxgkCbMapContextAllocation
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DxgkCbMapContextAllocation
+product: Windows
+targetos: Windows
+req.typenames: DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
 

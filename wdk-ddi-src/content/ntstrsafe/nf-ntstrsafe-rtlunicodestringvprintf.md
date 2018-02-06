@@ -1,41 +1,47 @@
 ---
-UID : NF:ntstrsafe.RtlUnicodeStringVPrintf
-title : RtlUnicodeStringVPrintf function
-author : windows-driver-content
-description : The RtlUnicodeStringVPrintf function creates a text string, with formatting that is based on supplied formatting information, and stores the string in a UNICODE_STRING structure.
-old-location : kernel\rtlunicodestringvprintf.htm
-old-project : kernel
-ms.assetid : d8ca2c47-e3b6-4ead-8d8e-2b2a4fe97658
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : safestrings_45fb9433-8fea-42ec-83fc-772e943a3169.xml, RtlUnicodeStringVPrintf function [Kernel-Mode Driver Architecture], kernel.rtlunicodestringvprintf, ntstrsafe/RtlUnicodeStringVPrintf, RtlUnicodeStringVPrintf
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntstrsafe.h
-req.include-header : Ntstrsafe.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows XP with Service Pack 1 (SP1) and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ntstrsafe.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : BATTERY_REPORTING_SCALE, *PBATTERY_REPORTING_SCALE
+UID: NF:ntstrsafe.RtlUnicodeStringVPrintf
+title: RtlUnicodeStringVPrintf function
+author: windows-driver-content
+description: The RtlUnicodeStringVPrintf function creates a text string, with formatting that is based on supplied formatting information, and stores the string in a UNICODE_STRING structure.
+old-location: kernel\rtlunicodestringvprintf.htm
+old-project: kernel
+ms.assetid: d8ca2c47-e3b6-4ead-8d8e-2b2a4fe97658
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: safestrings_45fb9433-8fea-42ec-83fc-772e943a3169.xml, RtlUnicodeStringVPrintf function [Kernel-Mode Driver Architecture], kernel.rtlunicodestringvprintf, ntstrsafe/RtlUnicodeStringVPrintf, RtlUnicodeStringVPrintf
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntstrsafe.h
+req.include-header: Ntstrsafe.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows XP with Service Pack 1 (SP1) and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ntstrsafe.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ntstrsafe.lib
+-	Ntstrsafe.dll
+apiname:
+-	RtlUnicodeStringVPrintf
+product: Windows
+targetos: Windows
+req.typenames: BATTERY_REPORTING_SCALE, *PBATTERY_REPORTING_SCALE
 ---
 
 

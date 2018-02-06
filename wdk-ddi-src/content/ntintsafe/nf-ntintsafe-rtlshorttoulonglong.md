@@ -1,41 +1,46 @@
 ---
-UID : NF:ntintsafe.RtlShortToULongLong
-title : RtlShortToULongLong function
-author : windows-driver-content
-description : Converts a value of type SHORT to a value of type ULONGLONG.
-old-location : kernel\rtlshorttoulonglong.htm
-old-project : kernel
-ms.assetid : DC25A607-F329-44F2-8D26-A6F7E3050A33
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : RtlShortToULongLong function [Kernel-Mode Driver Architecture], kernel.rtlshorttoulonglong, RtlShortToULongLong, ntintsafe/RtlShortToULongLong
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntintsafe.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PUBLIC_OBJECT_TYPE_INFORMATION, *PPUBLIC_OBJECT_TYPE_INFORMATION
+UID: NF:ntintsafe.RtlShortToULongLong
+title: RtlShortToULongLong function
+author: windows-driver-content
+description: Converts a value of type SHORT to a value of type ULONGLONG.
+old-location: kernel\rtlshorttoulonglong.htm
+old-project: kernel
+ms.assetid: DC25A607-F329-44F2-8D26-A6F7E3050A33
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: RtlShortToULongLong function [Kernel-Mode Driver Architecture], kernel.rtlshorttoulonglong, RtlShortToULongLong, ntintsafe/RtlShortToULongLong
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntintsafe.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntintsafe.h
+apiname:
+-	RtlShortToULongLong
+product: Windows
+targetos: Windows
+req.typenames: PUBLIC_OBJECT_TYPE_INFORMATION, *PPUBLIC_OBJECT_TYPE_INFORMATION
 ---
 
 

@@ -1,42 +1,50 @@
 ---
-UID : NF:wdfdevice.WdfDeviceSetDeviceInterfaceState
-title : WdfDeviceSetDeviceInterfaceState function
-author : windows-driver-content
-description : The WdfDeviceSetDeviceInterfaceState method enables or disables a device interface for a specified device.
-old-location : wdf\wdfdevicesetdeviceinterfacestate.htm
-old-project : wdf
-ms.assetid : 345003fc-fdc3-4529-bb15-c9e380e77bba
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : kmdf.wdfdevicesetdeviceinterfacestate, WdfDeviceSetDeviceInterfaceState, DFDeviceObjectGeneralRef_bfed99aa-ad4c-4339-aeb9-f7d73039f0b9.xml, PFN_WDFDEVICESETDEVICEINTERFACESTATE, wdfdevice/WdfDeviceSetDeviceInterfaceState, wdf.wdfdevicesetdeviceinterfacestate, WdfDeviceSetDeviceInterfaceState method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfdevice.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_STATE_NOTIFICATION_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfdevice.WdfDeviceSetDeviceInterfaceState
+title: WdfDeviceSetDeviceInterfaceState function
+author: windows-driver-content
+description: The WdfDeviceSetDeviceInterfaceState method enables or disables a device interface for a specified device.
+old-location: wdf\wdfdevicesetdeviceinterfacestate.htm
+old-project: wdf
+ms.assetid: 345003fc-fdc3-4529-bb15-c9e380e77bba
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: kmdf.wdfdevicesetdeviceinterfacestate, WdfDeviceSetDeviceInterfaceState, DFDeviceObjectGeneralRef_bfed99aa-ad4c-4339-aeb9-f7d73039f0b9.xml, PFN_WDFDEVICESETDEVICEINTERFACESTATE, wdfdevice/WdfDeviceSetDeviceInterfaceState, wdf.wdfdevicesetdeviceinterfacestate, WdfDeviceSetDeviceInterfaceState method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfdevice.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+-	WUDFx02000.dll
+-	WUDFx02000.dll.dll
+apiname:
+-	WdfDeviceSetDeviceInterfaceState
+product: Windows
+targetos: Windows
+req.typenames: WDF_STATE_NOTIFICATION_TYPE
+req.product: Windows 10 or later.
 ---
 
 

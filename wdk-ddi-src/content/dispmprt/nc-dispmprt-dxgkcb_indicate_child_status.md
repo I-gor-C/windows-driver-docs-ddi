@@ -1,41 +1,46 @@
 ---
-UID : NC:dispmprt.DXGKCB_INDICATE_CHILD_STATUS
-title : DXGKCB_INDICATE_CHILD_STATUS
-author : windows-driver-content
-description : The DxgkCbIndicateChildStatus function records the current status of a specified child device of a display adapter.
-old-location : display\dxgkcbindicatechildstatus.htm
-old-project : display
-ms.assetid : 780a8867-bba1-4b1b-a941-b55bfe087b7b
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkcbindicatechildstatus, DxgkCbIndicateChildStatus callback function [Display Devices], DxgkCbIndicateChildStatus, DXGKCB_INDICATE_CHILD_STATUS, DXGKCB_INDICATE_CHILD_STATUS, dispmprt/DxgkCbIndicateChildStatus, DpFunctions_db80be21-a515-411f-beb0-64f7514c11f4.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : dispmprt.h
-req.include-header : Dispmprt.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
+UID: NC:dispmprt.DXGKCB_INDICATE_CHILD_STATUS
+title: DXGKCB_INDICATE_CHILD_STATUS
+author: windows-driver-content
+description: The DxgkCbIndicateChildStatus function records the current status of a specified child device of a display adapter.
+old-location: display\dxgkcbindicatechildstatus.htm
+old-project: display
+ms.assetid: 780a8867-bba1-4b1b-a941-b55bfe087b7b
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkcbindicatechildstatus, DxgkCbIndicateChildStatus callback function [Display Devices], DxgkCbIndicateChildStatus, DXGKCB_INDICATE_CHILD_STATUS, DXGKCB_INDICATE_CHILD_STATUS, dispmprt/DxgkCbIndicateChildStatus, DpFunctions_db80be21-a515-411f-beb0-64f7514c11f4.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: dispmprt.h
+req.include-header: Dispmprt.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	dispmprt.h
+apiname:
+-	DxgkCbIndicateChildStatus
+product: Windows
+targetos: Windows
+req.typenames: SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ---
 
 

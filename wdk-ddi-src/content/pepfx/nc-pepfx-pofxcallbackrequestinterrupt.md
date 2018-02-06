@@ -1,41 +1,46 @@
 ---
-UID : NC:pepfx.POFXCALLBACKREQUESTINTERRUPT
-title : POFXCALLBACKREQUESTINTERRUPT
-author : windows-driver-content
-description : The RequestInterrupt routine requests that the operating system replay an edge-triggered interrupt that might have been lost while the hardware platform was in a low-power state.
-old-location : kernel\requestinterrupt.htm
-old-project : kernel
-ms.assetid : B999405D-D6A5-4DFF-A902-F9C938C29063
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.requestinterrupt, RequestInterrupt, RequestInterrupt routine [Kernel-Mode Driver Architecture], RequestInterrupt, POFXCALLBACKREQUESTINTERRUPT, POFXCALLBACKREQUESTINTERRUPT, pepfx/RequestInterrupt
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : pepfx.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with Windows 10.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= HIGH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VPCI_PNP_ID, *PVPCI_PNP_ID
+UID: NC:pepfx.POFXCALLBACKREQUESTINTERRUPT
+title: POFXCALLBACKREQUESTINTERRUPT
+author: windows-driver-content
+description: The RequestInterrupt routine requests that the operating system replay an edge-triggered interrupt that might have been lost while the hardware platform was in a low-power state.
+old-location: kernel\requestinterrupt.htm
+old-project: kernel
+ms.assetid: B999405D-D6A5-4DFF-A902-F9C938C29063
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.requestinterrupt, RequestInterrupt, RequestInterrupt routine [Kernel-Mode Driver Architecture], RequestInterrupt, POFXCALLBACKREQUESTINTERRUPT, POFXCALLBACKREQUESTINTERRUPT, pepfx/RequestInterrupt
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: pepfx.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows 10.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= HIGH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	pepfx.h
+apiname:
+-	RequestInterrupt
+product: Windows
+targetos: Windows
+req.typenames: VPCI_PNP_ID, *PVPCI_PNP_ID
 ---
 
 

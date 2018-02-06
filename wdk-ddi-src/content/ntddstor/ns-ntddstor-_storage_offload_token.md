@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddstor._STORAGE_OFFLOAD_TOKEN
-title : "_STORAGE_OFFLOAD_TOKEN"
-author : windows-driver-content
-description : The STORAGE_OFFLOAD_TOKEN structure contains a token value that serves as a representation of a data set range within a file on a volume. This structure is used in performing offload reads and writes.
-old-location : storage\storage_offload_token.htm
-old-project : storage
-ms.assetid : C9A0E3A8-CAB6-420D-A0FC-C598CFC9CB12
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : "_STORAGE_OFFLOAD_TOKEN, STORAGE_OFFLOAD_TOKEN structure [Storage Devices], STORAGE_OFFLOAD_TOKEN, PSTORAGE_OFFLOAD_TOKEN structure pointer [Storage Devices], STORAGE_OFFLOAD_TOKEN_TYPE_ZERO_DATA, Any other value, *PSTORAGE_OFFLOAD_TOKEN, PSTORAGE_OFFLOAD_TOKEN, ntddstor/PSTORAGE_OFFLOAD_TOKEN, storage.storage_offload_token, ntddstor/STORAGE_OFFLOAD_TOKEN"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddstor.h
-req.include-header : Ntddstor.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STORAGE_OFFLOAD_TOKEN, *PSTORAGE_OFFLOAD_TOKEN
+UID: NS:ntddstor._STORAGE_OFFLOAD_TOKEN
+title: "_STORAGE_OFFLOAD_TOKEN"
+author: windows-driver-content
+description: The STORAGE_OFFLOAD_TOKEN structure contains a token value that serves as a representation of a data set range within a file on a volume. This structure is used in performing offload reads and writes.
+old-location: storage\storage_offload_token.htm
+old-project: storage
+ms.assetid: C9A0E3A8-CAB6-420D-A0FC-C598CFC9CB12
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: "_STORAGE_OFFLOAD_TOKEN, STORAGE_OFFLOAD_TOKEN structure [Storage Devices], STORAGE_OFFLOAD_TOKEN, PSTORAGE_OFFLOAD_TOKEN structure pointer [Storage Devices], STORAGE_OFFLOAD_TOKEN_TYPE_ZERO_DATA, Any other value, *PSTORAGE_OFFLOAD_TOKEN, PSTORAGE_OFFLOAD_TOKEN, ntddstor/PSTORAGE_OFFLOAD_TOKEN, storage.storage_offload_token, ntddstor/STORAGE_OFFLOAD_TOKEN"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddstor.h
+req.include-header: Ntddstor.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddstor.h
+apiname:
+-	STORAGE_OFFLOAD_TOKEN
+product: Windows
+targetos: Windows
+req.typenames: STORAGE_OFFLOAD_TOKEN, *PSTORAGE_OFFLOAD_TOKEN
 ---
 
 # _STORAGE_OFFLOAD_TOKEN structure

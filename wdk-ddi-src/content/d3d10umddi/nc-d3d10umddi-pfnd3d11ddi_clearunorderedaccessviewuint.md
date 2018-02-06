@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3D11DDI_CLEARUNORDEREDACCESSVIEWUINT
-title : PFND3D11DDI_CLEARUNORDEREDACCESSVIEWUINT
-author : windows-driver-content
-description : The ClearUnorderedAccessViewUINT function clears the specified unordered-access view by setting it to a constant value.
-old-location : display\clearunorderedaccessviewuint.htm
-old-project : display
-ms.assetid : 7cdc81a9-e468-4da8-bc32-9e9cea1fd60d
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.clearunorderedaccessviewuint, ClearUnorderedAccessViewUINT callback function [Display Devices], ClearUnorderedAccessViewUINT, PFND3D11DDI_CLEARUNORDEREDACCESSVIEWUINT, PFND3D11DDI_CLEARUNORDEREDACCESSVIEWUINT, d3d10umddi/ClearUnorderedAccessViewUINT, UserModeDisplayDriverDx11_Functions_c31370b0-9955-4ccb-b540-92b15fc27cc5.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : ClearUnorderedAccessViewUINT is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3D11DDI_CLEARUNORDEREDACCESSVIEWUINT
+title: PFND3D11DDI_CLEARUNORDEREDACCESSVIEWUINT
+author: windows-driver-content
+description: The ClearUnorderedAccessViewUINT function clears the specified unordered-access view by setting it to a constant value.
+old-location: display\clearunorderedaccessviewuint.htm
+old-project: display
+ms.assetid: 7cdc81a9-e468-4da8-bc32-9e9cea1fd60d
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.clearunorderedaccessviewuint, ClearUnorderedAccessViewUINT callback function [Display Devices], ClearUnorderedAccessViewUINT, PFND3D11DDI_CLEARUNORDEREDACCESSVIEWUINT, PFND3D11DDI_CLEARUNORDEREDACCESSVIEWUINT, d3d10umddi/ClearUnorderedAccessViewUINT, UserModeDisplayDriverDx11_Functions_c31370b0-9955-4ccb-b540-92b15fc27cc5.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: ClearUnorderedAccessViewUINT is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	ClearUnorderedAccessViewUINT
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

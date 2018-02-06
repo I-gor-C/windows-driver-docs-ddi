@@ -1,42 +1,47 @@
 ---
-UID : NC:wdm.REQUEST_POWER_COMPLETE
-title : REQUEST_POWER_COMPLETE
-author : windows-driver-content
-description : The PowerCompletion callback routine completes the processing of a power IRP.
-old-location : kernel\powercompletion.htm
-old-project : kernel
-ms.assetid : 2272790e-324a-4bd4-86ed-b76305a2940b
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.powercompletion, PowerCompletion routine [Kernel-Mode Driver Architecture], PowerCompletion, REQUEST_POWER_COMPLETE, REQUEST_POWER_COMPLETE, wdm/PowerCompletion
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported in Windows 2000 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Called at IRQL <= DISPATCH_LEVEL (see Remarks section).
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
-req.product : Windows 10 or later.
+UID: NC:wdm.REQUEST_POWER_COMPLETE
+title: REQUEST_POWER_COMPLETE
+author: windows-driver-content
+description: The PowerCompletion callback routine completes the processing of a power IRP.
+old-location: kernel\powercompletion.htm
+old-project: kernel
+ms.assetid: 2272790e-324a-4bd4-86ed-b76305a2940b
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.powercompletion, PowerCompletion routine [Kernel-Mode Driver Architecture], PowerCompletion, REQUEST_POWER_COMPLETE, REQUEST_POWER_COMPLETE, wdm/PowerCompletion
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported in Windows 2000 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Called at IRQL <= DISPATCH_LEVEL (see Remarks section).
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Wdm.h
+apiname:
+-	PowerCompletion
+product: Windows
+targetos: Windows
+req.typenames: WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+req.product: Windows 10 or later.
 ---
 
 

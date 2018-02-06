@@ -1,41 +1,46 @@
 ---
-UID : NC:ks.PFNKSADDEVENT
-title : PFNKSADDEVENT
-author : windows-driver-content
-description : An AVStream minidriver's AVStrMiniAddEvent routine is called when a client registers to be notified of an event. This routine is optional.
-old-location : stream\avstrminiaddevent.htm
-old-project : stream
-ms.assetid : ff80bbc7-93b1-4319-a549-f896ce0f4611
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.avstrminiaddevent, AVStrMiniAddEvent, AVStrMiniAddEvent routine [Streaming Media Devices], AVStrMiniAddEvent, PFNKSADDEVENT, PFNKSADDEVENT, ks/AVStrMiniAddEvent, avstclbk_31147072-c3de-4b02-9fb1-b7f67765acc4.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KEYWORDSELECTOR
+UID: NC:ks.PFNKSADDEVENT
+title: PFNKSADDEVENT
+author: windows-driver-content
+description: An AVStream minidriver's AVStrMiniAddEvent routine is called when a client registers to be notified of an event. This routine is optional.
+old-location: stream\avstrminiaddevent.htm
+old-project: stream
+ms.assetid: ff80bbc7-93b1-4319-a549-f896ce0f4611
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.avstrminiaddevent, AVStrMiniAddEvent, AVStrMiniAddEvent routine [Streaming Media Devices], AVStrMiniAddEvent, PFNKSADDEVENT, PFNKSADDEVENT, ks/AVStrMiniAddEvent, avstclbk_31147072-c3de-4b02-9fb1-b7f67765acc4.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	ks.h
+apiname:
+-	AVStrMiniAddEvent
+product: Windows
+targetos: Windows
+req.typenames: KEYWORDSELECTOR
 ---
 
 

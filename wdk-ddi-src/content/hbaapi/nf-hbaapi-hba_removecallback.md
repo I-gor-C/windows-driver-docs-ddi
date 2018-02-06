@@ -1,41 +1,46 @@
 ---
-UID : NF:hbaapi.HBA_RemoveCallback
-title : HBA_RemoveCallback function
-author : windows-driver-content
-description : The HBA_RemoveCallback routine de-registers a callback routine.
-old-location : storage\hba_removecallback.htm
-old-project : storage
-ms.assetid : 9b97e93c-a375-4df7-9d2d-86f1ad72b62d
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : hbaapi/HBA_RemoveCallback, fibreHBA_rtns_f0c88702-5544-4e66-ac3e-a5f8303bfb08.xml, storage.hba_removecallback, HBA_RemoveCallback, HBA_RemoveCallback routine [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : hbaapi.h
-req.include-header : Hbaapi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Hbaapi.lib
-req.dll : Hbaapi.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HBA_WWNTYPE
+UID: NF:hbaapi.HBA_RemoveCallback
+title: HBA_RemoveCallback function
+author: windows-driver-content
+description: The HBA_RemoveCallback routine de-registers a callback routine.
+old-location: storage\hba_removecallback.htm
+old-project: storage
+ms.assetid: 9b97e93c-a375-4df7-9d2d-86f1ad72b62d
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: hbaapi/HBA_RemoveCallback, fibreHBA_rtns_f0c88702-5544-4e66-ac3e-a5f8303bfb08.xml, storage.hba_removecallback, HBA_RemoveCallback, HBA_RemoveCallback routine [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: hbaapi.h
+req.include-header: Hbaapi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Hbaapi.lib
+req.dll: Hbaapi.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Hbaapi.dll
+apiname:
+-	HBA_RemoveCallback
+product: Windows
+targetos: Windows
+req.typenames: HBA_WWNTYPE
 ---
 
 

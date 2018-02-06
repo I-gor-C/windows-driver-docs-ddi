@@ -1,41 +1,46 @@
 ---
-UID : NF:ntddk.RtlRunOnceBeginInitialize
-title : RtlRunOnceBeginInitialize function
-author : windows-driver-content
-description : The RtlRunOnceBeginInitialize routine begins a one-time initialization.
-old-location : kernel\rtlrunoncebegininitialize.htm
-old-project : kernel
-ms.assetid : ed96b2ec-95ea-47a6-a3b0-f4d018e0c8e2
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.rtlrunoncebegininitialize, k109_f7299ad8-4567-4ad8-a13c-2329a12af6ea.xml, ntddk/RtlRunOnceBeginInitialize, RtlRunOnceBeginInitialize routine [Kernel-Mode Driver Architecture], RtlRunOnceBeginInitialize
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.RtlRunOnceBeginInitialize
+title: RtlRunOnceBeginInitialize function
+author: windows-driver-content
+description: The RtlRunOnceBeginInitialize routine begins a one-time initialization.
+old-location: kernel\rtlrunoncebegininitialize.htm
+old-project: kernel
+ms.assetid: ed96b2ec-95ea-47a6-a3b0-f4d018e0c8e2
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.rtlrunoncebegininitialize, k109_f7299ad8-4567-4ad8-a13c-2329a12af6ea.xml, ntddk/RtlRunOnceBeginInitialize, RtlRunOnceBeginInitialize routine [Kernel-Mode Driver Architecture], RtlRunOnceBeginInitialize
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	RtlRunOnceBeginInitialize
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

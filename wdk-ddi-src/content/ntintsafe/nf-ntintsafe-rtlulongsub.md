@@ -1,41 +1,46 @@
 ---
-UID : NF:ntintsafe.RtlULongSub
-title : RtlULongSub function
-author : windows-driver-content
-description : Subtracts one value of type ULONG from another.
-old-location : kernel\rtlulongsub.htm
-old-project : kernel
-ms.assetid : 54776F17-C7EE-46DB-BA3F-2F545240FC61
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : RtlULongSub, ntintsafe/RtlULongSub, kernel.rtlulongsub, RtlULongSub function [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntintsafe.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PUBLIC_OBJECT_TYPE_INFORMATION, *PPUBLIC_OBJECT_TYPE_INFORMATION
+UID: NF:ntintsafe.RtlULongSub
+title: RtlULongSub function
+author: windows-driver-content
+description: Subtracts one value of type ULONG from another.
+old-location: kernel\rtlulongsub.htm
+old-project: kernel
+ms.assetid: 54776F17-C7EE-46DB-BA3F-2F545240FC61
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: RtlULongSub, ntintsafe/RtlULongSub, kernel.rtlulongsub, RtlULongSub function [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntintsafe.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntintsafe.h
+apiname:
+-	RtlULongSub
+product: Windows
+targetos: Windows
+req.typenames: PUBLIC_OBJECT_TYPE_INFORMATION, *PPUBLIC_OBJECT_TYPE_INFORMATION
 ---
 
 

@@ -1,41 +1,49 @@
 ---
-UID : NF:dbgeng.IDebugSystemObjects4.GetNumberThreads
-title : IDebugSystemObjects4::GetNumberThreads method
-author : windows-driver-content
-description : The GetNumberThreads method returns the number of threads in the current process.
-old-location : debugger\getnumberthreads.htm
-old-project : debugger
-ms.assetid : f56da2d0-4c4c-4302-a87b-c672dec25d9f
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : GetNumberThreads method [Windows Debugging], IDebugSystemObjects2 interface [Windows Debugging], GetNumberThreads method, IDebugSystemObjects4 interface [Windows Debugging], GetNumberThreads method, debugger.getnumberthreads, dbgeng/IDebugSystemObjects::GetNumberThreads, GetNumberThreads method [Windows Debugging], IDebugSystemObjects4 interface, IDebugSystemObjects3 interface [Windows Debugging], GetNumberThreads method, IDebugSystemObjects interface [Windows Debugging], GetNumberThreads method, dbgeng/IDebugSystemObjects4::GetNumberThreads, GetNumberThreads method [Windows Debugging], IDebugSystemObjects2 interface, dbgeng/IDebugSystemObjects3::GetNumberThreads, IDebugSystemObjects::GetNumberThreads, IDebugSystemObjects4, IDebugSystemObjects3::GetNumberThreads, GetNumberThreads, IDebugSystemObjects2::GetNumberThreads, IDebugSystemObjects4::GetNumberThreads, GetNumberThreads method [Windows Debugging], IDebugSystemObjects3 interface, IDebugSystemObjects_47d86764-4881-4178-97fa-d6c8732dbb1a.xml, GetNumberThreads method [Windows Debugging], IDebugSystemObjects interface, dbgeng/IDebugSystemObjects2::GetNumberThreads
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSystemObjects4.GetNumberThreads
+title: IDebugSystemObjects4::GetNumberThreads method
+author: windows-driver-content
+description: The GetNumberThreads method returns the number of threads in the current process.
+old-location: debugger\getnumberthreads.htm
+old-project: debugger
+ms.assetid: f56da2d0-4c4c-4302-a87b-c672dec25d9f
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: GetNumberThreads method [Windows Debugging], IDebugSystemObjects2 interface [Windows Debugging], GetNumberThreads method, IDebugSystemObjects4 interface [Windows Debugging], GetNumberThreads method, debugger.getnumberthreads, dbgeng/IDebugSystemObjects::GetNumberThreads, GetNumberThreads method [Windows Debugging], IDebugSystemObjects4 interface, IDebugSystemObjects3 interface [Windows Debugging], GetNumberThreads method, IDebugSystemObjects interface [Windows Debugging], GetNumberThreads method, dbgeng/IDebugSystemObjects4::GetNumberThreads, GetNumberThreads method [Windows Debugging], IDebugSystemObjects2 interface, dbgeng/IDebugSystemObjects3::GetNumberThreads, IDebugSystemObjects::GetNumberThreads, IDebugSystemObjects4, IDebugSystemObjects3::GetNumberThreads, GetNumberThreads, IDebugSystemObjects2::GetNumberThreads, IDebugSystemObjects4::GetNumberThreads, GetNumberThreads method [Windows Debugging], IDebugSystemObjects3 interface, IDebugSystemObjects_47d86764-4881-4178-97fa-d6c8732dbb1a.xml, GetNumberThreads method [Windows Debugging], IDebugSystemObjects interface, dbgeng/IDebugSystemObjects2::GetNumberThreads
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugSystemObjects.GetNumberThreads
+-	IDebugSystemObjects2.GetNumberThreads
+-	IDebugSystemObjects3.GetNumberThreads
+-	IDebugSystemObjects4.GetNumberThreads
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

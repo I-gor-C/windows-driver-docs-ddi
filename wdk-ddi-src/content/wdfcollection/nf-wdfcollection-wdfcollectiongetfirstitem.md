@@ -1,42 +1,50 @@
 ---
-UID : NF:wdfcollection.WdfCollectionGetFirstItem
-title : WdfCollectionGetFirstItem function
-author : windows-driver-content
-description : The WdfCollectionGetFirstItem method returns a handle to the first object that is in an object collection.
-old-location : wdf\wdfcollectiongetfirstitem.htm
-old-project : wdf
-ms.assetid : 4884de4d-6e5f-4c9f-bd49-2fc58481e9c6
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : PFN_WDFCOLLECTIONGETFIRSTITEM, WdfCollectionGetFirstItem method, WdfCollectionGetFirstItem, DFCollectionObjectRef_1a816492-f120-48f9-9c10-88f71947008c.xml, kmdf.wdfcollectiongetfirstitem, wdf.wdfcollectiongetfirstitem, wdfcollection/WdfCollectionGetFirstItem
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfcollection.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDF_CHILD_RETRIEVE_INFO, WDF_CHILD_RETRIEVE_INFO"
-req.product : Windows 10 or later.
+UID: NF:wdfcollection.WdfCollectionGetFirstItem
+title: WdfCollectionGetFirstItem function
+author: windows-driver-content
+description: The WdfCollectionGetFirstItem method returns a handle to the first object that is in an object collection.
+old-location: wdf\wdfcollectiongetfirstitem.htm
+old-project: wdf
+ms.assetid: 4884de4d-6e5f-4c9f-bd49-2fc58481e9c6
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: PFN_WDFCOLLECTIONGETFIRSTITEM, WdfCollectionGetFirstItem method, WdfCollectionGetFirstItem, DFCollectionObjectRef_1a816492-f120-48f9-9c10-88f71947008c.xml, kmdf.wdfcollectiongetfirstitem, wdf.wdfcollectiongetfirstitem, wdfcollection/WdfCollectionGetFirstItem
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfcollection.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+-	WUDFx02000.dll
+-	WUDFx02000.dll.dll
+apiname:
+-	WdfCollectionGetFirstItem
+product: Windows
+targetos: Windows
+req.typenames: "*PWDF_CHILD_RETRIEVE_INFO, WDF_CHILD_RETRIEVE_INFO"
+req.product: Windows 10 or later.
 ---
 
 

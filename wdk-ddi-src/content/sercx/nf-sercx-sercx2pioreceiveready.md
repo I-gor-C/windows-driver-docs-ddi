@@ -1,42 +1,47 @@
 ---
-UID : NF:sercx.SerCx2PioReceiveReady
-title : SerCx2PioReceiveReady function
-author : windows-driver-content
-description : The SerCx2PioReceiveReady method notifies version 2 of the serial framework extension (SerCx2) that data is available to be read from the receive FIFO in the serial controller.
-old-location : serports\sercx2pioreceiveready.htm
-old-project : serports
-ms.assetid : 81DE84F8-7D2D-464F-BA5D-4D92D0EE9149
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : SerCx2PioReceiveReady method [Serial Ports], serports.sercx2pioreceiveready, 2/SerCx2PioReceiveReady, SerCx2PioReceiveReady
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : sercx.h
-req.include-header : 
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 8.1.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSERCX_STATUS, SERCX_STATUS"
-req.product : Windows 10 or later.
+UID: NF:sercx.SerCx2PioReceiveReady
+title: SerCx2PioReceiveReady function
+author: windows-driver-content
+description: The SerCx2PioReceiveReady method notifies version 2 of the serial framework extension (SerCx2) that data is available to be read from the receive FIFO in the serial controller.
+old-location: serports\sercx2pioreceiveready.htm
+old-project: serports
+ms.assetid: 81DE84F8-7D2D-464F-BA5D-4D92D0EE9149
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: SerCx2PioReceiveReady method [Serial Ports], serports.sercx2pioreceiveready, 2/SerCx2PioReceiveReady, SerCx2PioReceiveReady
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: sercx.h
+req.include-header: 
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 8.1.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	2.0\Sercx.h
+apiname:
+-	SerCx2PioReceiveReady
+product: Windows
+targetos: Windows
+req.typenames: "*PSERCX_STATUS, SERCX_STATUS"
+req.product: Windows 10 or later.
 ---
 
 

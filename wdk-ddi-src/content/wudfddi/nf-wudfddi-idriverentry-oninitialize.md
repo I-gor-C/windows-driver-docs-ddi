@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IDriverEntry.OnInitialize
-title : IDriverEntry::OnInitialize method
-author : windows-driver-content
-description : The OnInitialize method performs any operations that are necessary to initialize a driver.
-old-location : wdf\idriverentry_oninitialize.htm
-old-project : wdf
-ms.assetid : c676588e-348b-4840-9873-6b1bb2454987
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.idriverentry_oninitialize, IDriverEntry::OnInitialize, OnInitialize method, IDriverEntry interface, umdf.idriverentry_oninitialize, OnInitialize method, UMDFDriverObjectRef_01ebb7b4-69bb-4597-b21a-d3ff6cf3bc24.xml, wudfddi/IDriverEntry::OnInitialize, IDriverEntry, OnInitialize, IDriverEntry interface, OnInitialize method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IDriverEntry.OnInitialize
+title: IDriverEntry::OnInitialize method
+author: windows-driver-content
+description: The OnInitialize method performs any operations that are necessary to initialize a driver.
+old-location: wdf\idriverentry_oninitialize.htm
+old-project: wdf
+ms.assetid: c676588e-348b-4840-9873-6b1bb2454987
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.idriverentry_oninitialize, IDriverEntry::OnInitialize, OnInitialize method, IDriverEntry interface, umdf.idriverentry_oninitialize, OnInitialize method, UMDFDriverObjectRef_01ebb7b4-69bb-4597-b21a-d3ff6cf3bc24.xml, wudfddi/IDriverEntry::OnInitialize, IDriverEntry, OnInitialize, IDriverEntry interface, OnInitialize method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Wudfddi.h
+apiname:
+-	IDriverEntry.OnInitialize
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

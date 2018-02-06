@@ -1,41 +1,46 @@
 ---
-UID : NS:pmi._PMI_THRESHOLD_CONFIGURATION
-title : "_PMI_THRESHOLD_CONFIGURATION"
-author : windows-driver-content
-description : The PMI_THRESHOLD_CONFIGURATION structure contains information about the threshold configuration of the power meter.
-old-location : powermeter\pmi_threshold_configuration.htm
-old-project : powermeter
-ms.assetid : f2a76389-575d-425b-afe6-27fb93e101eb
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : pmi/PMI_THRESHOLD_CONFIGURATION, PPMI_THRESHOLD_CONFIGURATION, *PPMI_THRESHOLD_CONFIGURATION, PPMI_THRESHOLD_CONFIGURATION structure pointer [Power Metering and Budgeting Devices], PMI_THRESHOLD_CONFIGURATION structure [Power Metering and Budgeting Devices], PMI_THRESHOLD_CONFIGURATION, _PMI_THRESHOLD_CONFIGURATION, PowerMeterRef_0c5ec9e4-4a74-4fcc-b134-e66cd14f0352.xml, powermeter.pmi_threshold_configuration, pmi/PPMI_THRESHOLD_CONFIGURATION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : pmi.h
-req.include-header : Pmi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7, Windows Server 2008 R2, and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PMI_THRESHOLD_CONFIGURATION, *PPMI_THRESHOLD_CONFIGURATION
+UID: NS:pmi._PMI_THRESHOLD_CONFIGURATION
+title: "_PMI_THRESHOLD_CONFIGURATION"
+author: windows-driver-content
+description: The PMI_THRESHOLD_CONFIGURATION structure contains information about the threshold configuration of the power meter.
+old-location: powermeter\pmi_threshold_configuration.htm
+old-project: powermeter
+ms.assetid: f2a76389-575d-425b-afe6-27fb93e101eb
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: pmi/PMI_THRESHOLD_CONFIGURATION, PPMI_THRESHOLD_CONFIGURATION, *PPMI_THRESHOLD_CONFIGURATION, PPMI_THRESHOLD_CONFIGURATION structure pointer [Power Metering and Budgeting Devices], PMI_THRESHOLD_CONFIGURATION structure [Power Metering and Budgeting Devices], PMI_THRESHOLD_CONFIGURATION, _PMI_THRESHOLD_CONFIGURATION, PowerMeterRef_0c5ec9e4-4a74-4fcc-b134-e66cd14f0352.xml, powermeter.pmi_threshold_configuration, pmi/PPMI_THRESHOLD_CONFIGURATION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: pmi.h
+req.include-header: Pmi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7, Windows Server 2008 R2, and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	pmi.h
+apiname:
+-	PMI_THRESHOLD_CONFIGURATION
+product: Windows
+targetos: Windows
+req.typenames: PMI_THRESHOLD_CONFIGURATION, *PPMI_THRESHOLD_CONFIGURATION
 ---
 
 # _PMI_THRESHOLD_CONFIGURATION structure

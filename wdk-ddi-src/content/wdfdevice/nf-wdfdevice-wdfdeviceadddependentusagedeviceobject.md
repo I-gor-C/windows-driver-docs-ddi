@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfdevice.WdfDeviceAddDependentUsageDeviceObject
-title : WdfDeviceAddDependentUsageDeviceObject function
-author : windows-driver-content
-description : The WdfDeviceAddDependentUsageDeviceObject method indicates that a specified device depends on another device when the specified device is used to store special files.
-old-location : wdf\wdfdeviceadddependentusagedeviceobject.htm
-old-project : wdf
-ms.assetid : 025046e2-ffa1-4210-b4aa-ab3d6b211066
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : PFN_WDFDEVICEADDDEPENDENTUSAGEDEVICEOBJECT, wdfdevice/WdfDeviceAddDependentUsageDeviceObject, WdfDeviceAddDependentUsageDeviceObject, WdfDeviceAddDependentUsageDeviceObject method, wdf.wdfdeviceadddependentusagedeviceobject, kmdf.wdfdeviceadddependentusagedeviceobject, DFDeviceObjectGeneralRef_b31f8226-abd2-49a0-af66-ace2d05a6f17.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfdevice.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_STATE_NOTIFICATION_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfdevice.WdfDeviceAddDependentUsageDeviceObject
+title: WdfDeviceAddDependentUsageDeviceObject function
+author: windows-driver-content
+description: The WdfDeviceAddDependentUsageDeviceObject method indicates that a specified device depends on another device when the specified device is used to store special files.
+old-location: wdf\wdfdeviceadddependentusagedeviceobject.htm
+old-project: wdf
+ms.assetid: 025046e2-ffa1-4210-b4aa-ab3d6b211066
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: PFN_WDFDEVICEADDDEPENDENTUSAGEDEVICEOBJECT, wdfdevice/WdfDeviceAddDependentUsageDeviceObject, WdfDeviceAddDependentUsageDeviceObject, WdfDeviceAddDependentUsageDeviceObject method, wdf.wdfdeviceadddependentusagedeviceobject, kmdf.wdfdeviceadddependentusagedeviceobject, DFDeviceObjectGeneralRef_b31f8226-abd2-49a0-af66-ace2d05a6f17.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfdevice.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfDeviceAddDependentUsageDeviceObject
+product: Windows
+targetos: Windows
+req.typenames: WDF_STATE_NOTIFICATION_TYPE
+req.product: Windows 10 or later.
 ---
 
 

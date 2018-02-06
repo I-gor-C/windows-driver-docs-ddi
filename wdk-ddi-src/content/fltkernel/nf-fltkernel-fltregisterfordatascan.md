@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltRegisterForDataScan
-title : FltRegisterForDataScan function
-author : windows-driver-content
-description : The FltRegisterForDataScan routine enables data scanning for the volume attached to the minifilter instance.
-old-location : ifsk\fltregisterfordatascan.htm
-old-project : ifsk
-ms.assetid : E603975A-B927-475A-9DEA-2D01C1249819
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltRegisterForDataScan, fltkernel/FltRegisterForDataScan, FltRegisterForDataScan routine [Installable File System Drivers], ifsk.fltregisterfordatascan
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : The FltRegisterForDataScan routine is available starting with   Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltRegisterForDataScan
+title: FltRegisterForDataScan function
+author: windows-driver-content
+description: The FltRegisterForDataScan routine enables data scanning for the volume attached to the minifilter instance.
+old-location: ifsk\fltregisterfordatascan.htm
+old-project: ifsk
+ms.assetid: E603975A-B927-475A-9DEA-2D01C1249819
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltRegisterForDataScan, fltkernel/FltRegisterForDataScan, FltRegisterForDataScan routine [Installable File System Drivers], ifsk.fltregisterfordatascan
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: The FltRegisterForDataScan routine is available starting with   Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltRegisterForDataScan
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

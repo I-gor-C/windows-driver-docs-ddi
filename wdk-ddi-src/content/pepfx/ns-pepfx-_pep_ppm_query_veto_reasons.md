@@ -1,41 +1,46 @@
 ---
-UID : NS:pepfx._PEP_PPM_QUERY_VETO_REASONS
-title : "_PEP_PPM_QUERY_VETO_REASONS"
-author : windows-driver-content
-description : The PEP_PPM_QUERY_VETO_REASONS structure specifies the total number of veto reasons that the PEP uses in calls to the ProcessorIdleVeto and PlatformIdleVeto routines.
-old-location : kernel\pep_ppm_query_veto_reasons.htm
-old-project : kernel
-ms.assetid : 59D0D139-00E4-4EEE-A326-0A2979B2085B
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : PEP_PPM_QUERY_VETO_REASONS structure [Kernel-Mode Driver Architecture], PEP_PPM_QUERY_VETO_REASONS, pepfx/PPEP_PPM_QUERY_VETO_REASONS, kernel.pep_ppm_query_veto_reasons, *PPEP_PPM_QUERY_VETO_REASONS, _PEP_PPM_QUERY_VETO_REASONS, pepfx/PEP_PPM_QUERY_VETO_REASONS, PPEP_PPM_QUERY_VETO_REASONS structure pointer [Kernel-Mode Driver Architecture], PPEP_PPM_QUERY_VETO_REASONS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : pepfx.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with Windows 10.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PEP_PPM_QUERY_VETO_REASONS, *PPEP_PPM_QUERY_VETO_REASONS
+UID: NS:pepfx._PEP_PPM_QUERY_VETO_REASONS
+title: "_PEP_PPM_QUERY_VETO_REASONS"
+author: windows-driver-content
+description: The PEP_PPM_QUERY_VETO_REASONS structure specifies the total number of veto reasons that the PEP uses in calls to the ProcessorIdleVeto and PlatformIdleVeto routines.
+old-location: kernel\pep_ppm_query_veto_reasons.htm
+old-project: kernel
+ms.assetid: 59D0D139-00E4-4EEE-A326-0A2979B2085B
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: PEP_PPM_QUERY_VETO_REASONS structure [Kernel-Mode Driver Architecture], PEP_PPM_QUERY_VETO_REASONS, pepfx/PPEP_PPM_QUERY_VETO_REASONS, kernel.pep_ppm_query_veto_reasons, *PPEP_PPM_QUERY_VETO_REASONS, _PEP_PPM_QUERY_VETO_REASONS, pepfx/PEP_PPM_QUERY_VETO_REASONS, PPEP_PPM_QUERY_VETO_REASONS structure pointer [Kernel-Mode Driver Architecture], PPEP_PPM_QUERY_VETO_REASONS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: pepfx.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows 10.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	pepfx.h
+apiname:
+-	PEP_PPM_QUERY_VETO_REASONS
+product: Windows
+targetos: Windows
+req.typenames: PEP_PPM_QUERY_VETO_REASONS, *PPEP_PPM_QUERY_VETO_REASONS
 ---
 
 # _PEP_PPM_QUERY_VETO_REASONS structure

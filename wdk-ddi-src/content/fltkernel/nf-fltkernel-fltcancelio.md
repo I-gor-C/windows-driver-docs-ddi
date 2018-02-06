@@ -1,41 +1,47 @@
 ---
-UID : NF:fltkernel.FltCancelIo
-title : FltCancelIo function
-author : windows-driver-content
-description : The FltCancelIo routine cancels an I/O operation.
-old-location : ifsk\fltcancelio.htm
-old-project : ifsk
-ms.assetid : 30f2345d-6ed8-475f-879a-d3218039fded
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltCancelIo, fltkernel/FltCancelIo, FltApiRef_a_to_d_e539a1bb-9dd4-4e1b-ac10-b5f742923839.xml, FltCancelIo routine [Installable File System Drivers], ifsk.fltcancelio
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : FltKernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltCancelIo
+title: FltCancelIo function
+author: windows-driver-content
+description: The FltCancelIo routine cancels an I/O operation.
+old-location: ifsk\fltcancelio.htm
+old-project: ifsk
+ms.assetid: 30f2345d-6ed8-475f-879a-d3218039fded
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltCancelIo, fltkernel/FltCancelIo, FltApiRef_a_to_d_e539a1bb-9dd4-4e1b-ac10-b5f742923839.xml, FltCancelIo routine [Installable File System Drivers], ifsk.fltcancelio
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: FltKernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	FltMgr.lib
+-	FltMgr.dll
+apiname:
+-	FltCancelIo
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.RtlIsValidOemCharacter
-title : RtlIsValidOemCharacter function
-author : windows-driver-content
-description : The RtlIsValidOemCharacter routine determines if the specified Unicode character can be mapped to a valid OEM character.
-old-location : ifsk\rtlisvalidoemcharacter.htm
-old-project : ifsk
-ms.assetid : 76040e0d-a43c-4e3d-aaaa-b84fc2613603
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.rtlisvalidoemcharacter, ntifs/RtlIsValidOemCharacter, rtlref_ebbaa5fc-63da-4eef-b8ac-be10a6e062a0.xml, RtlIsValidOemCharacter, RtlIsValidOemCharacter routine [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : This routine is available on Microsoft Windows 2000 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.RtlIsValidOemCharacter
+title: RtlIsValidOemCharacter function
+author: windows-driver-content
+description: The RtlIsValidOemCharacter routine determines if the specified Unicode character can be mapped to a valid OEM character.
+old-location: ifsk\rtlisvalidoemcharacter.htm
+old-project: ifsk
+ms.assetid: 76040e0d-a43c-4e3d-aaaa-b84fc2613603
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.rtlisvalidoemcharacter, ntifs/RtlIsValidOemCharacter, rtlref_ebbaa5fc-63da-4eef-b8ac-be10a6e062a0.xml, RtlIsValidOemCharacter, RtlIsValidOemCharacter routine [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: This routine is available on Microsoft Windows 2000 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	RtlIsValidOemCharacter
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

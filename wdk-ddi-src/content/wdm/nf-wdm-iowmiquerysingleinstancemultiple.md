@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.IoWMIQuerySingleInstanceMultiple
-title : IoWMIQuerySingleInstanceMultiple function
-author : windows-driver-content
-description : The IoWMIQuerySingleInstanceMultiple routine returns all WMI data block instances that implement the specified WMI classes with the specified instance names.
-old-location : kernel\iowmiquerysingleinstancemultiple.htm
-old-project : kernel
-ms.assetid : c0e011b5-804c-4f0d-a125-a083a0f83d50
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : IoWMIQuerySingleInstanceMultiple routine [Kernel-Mode Driver Architecture], wdm/IoWMIQuerySingleInstanceMultiple, kernel.iowmiquerysingleinstancemultiple, IoWMIQuerySingleInstanceMultiple, k104_bd0dace0-1c4b-4e21-9e2c-7c3060878881.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows XP and later versions of the Windows operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.IoWMIQuerySingleInstanceMultiple
+title: IoWMIQuerySingleInstanceMultiple function
+author: windows-driver-content
+description: The IoWMIQuerySingleInstanceMultiple routine returns all WMI data block instances that implement the specified WMI classes with the specified instance names.
+old-location: kernel\iowmiquerysingleinstancemultiple.htm
+old-project: kernel
+ms.assetid: c0e011b5-804c-4f0d-a125-a083a0f83d50
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: IoWMIQuerySingleInstanceMultiple routine [Kernel-Mode Driver Architecture], wdm/IoWMIQuerySingleInstanceMultiple, kernel.iowmiquerysingleinstancemultiple, IoWMIQuerySingleInstanceMultiple, k104_bd0dace0-1c4b-4e21-9e2c-7c3060878881.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows XP and later versions of the Windows operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoWMIQuerySingleInstanceMultiple
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

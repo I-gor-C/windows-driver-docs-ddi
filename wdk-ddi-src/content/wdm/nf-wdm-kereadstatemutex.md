@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.KeReadStateMutex
-title : KeReadStateMutex function
-author : windows-driver-content
-description : The KeReadStateMutex routine returns the current state, signaled or not-signaled, of the specified mutex object.
-old-location : kernel\kereadstatemutex.htm
-old-project : kernel
-ms.assetid : b23d846a-a1d4-4b2a-ab3c-8076302ff3fc
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/KeReadStateMutex, KeReadStateMutex routine [Kernel-Mode Driver Architecture], k105_37175048-e4ee-4b79-93f3-013195192b4c.xml, kernel.kereadstatemutex, KeReadStateMutex
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.KeReadStateMutex
+title: KeReadStateMutex function
+author: windows-driver-content
+description: The KeReadStateMutex routine returns the current state, signaled or not-signaled, of the specified mutex object.
+old-location: kernel\kereadstatemutex.htm
+old-project: kernel
+ms.assetid: b23d846a-a1d4-4b2a-ab3c-8076302ff3fc
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/KeReadStateMutex, KeReadStateMutex routine [Kernel-Mode Driver Architecture], k105_37175048-e4ee-4b79-93f3-013195192b4c.xml, kernel.kereadstatemutex, KeReadStateMutex
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	KeReadStateMutex
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

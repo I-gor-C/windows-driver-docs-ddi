@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFIoRequest.GetCreateParameters
-title : IWDFIoRequest::GetCreateParameters method
-author : windows-driver-content
-description : The GetCreateParameters method retrieves the request parameters for a create-type request.
-old-location : wdf\iwdfiorequest_getcreateparameters.htm
-old-project : wdf
-ms.assetid : 1bc6eed2-c6bd-448f-8f78-630cca4cd29a
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : GetCreateParameters method, wudfddi/IWDFIoRequest::GetCreateParameters, GetCreateParameters, IWDFIoRequest interface, GetCreateParameters method, wdf.iwdfiorequest_getcreateparameters, umdf.iwdfiorequest_getcreateparameters, UMDFRequestObjectRef_ac352dd9-a9e0-4741-abfe-92482dd25112.xml, IWDFIoRequest::GetCreateParameters, GetCreateParameters method, IWDFIoRequest interface, IWDFIoRequest
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.5
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFIoRequest.GetCreateParameters
+title: IWDFIoRequest::GetCreateParameters method
+author: windows-driver-content
+description: The GetCreateParameters method retrieves the request parameters for a create-type request.
+old-location: wdf\iwdfiorequest_getcreateparameters.htm
+old-project: wdf
+ms.assetid: 1bc6eed2-c6bd-448f-8f78-630cca4cd29a
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: GetCreateParameters method, wudfddi/IWDFIoRequest::GetCreateParameters, GetCreateParameters, IWDFIoRequest interface, GetCreateParameters method, wdf.iwdfiorequest_getcreateparameters, umdf.iwdfiorequest_getcreateparameters, UMDFRequestObjectRef_ac352dd9-a9e0-4741-abfe-92482dd25112.xml, IWDFIoRequest::GetCreateParameters, GetCreateParameters method, IWDFIoRequest interface, IWDFIoRequest
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.5
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFIoRequest.GetCreateParameters
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,50 @@
 ---
-UID : NF:dbgeng.IDebugClient5.GetRunningProcessSystemIdByExecutableName
-title : IDebugClient5::GetRunningProcessSystemIdByExecutableName method
-author : windows-driver-content
-description : The GetRunningProcessSystemIdByExecutableName method searches for a process with a given executable file name and return its process ID.
-old-location : debugger\getrunningprocesssystemidbyexecutablename.htm
-old-project : debugger
-ms.assetid : 67e231b4-c693-4824-b895-b7f3085e6f4e
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugClient2 interface [Windows Debugging], GetRunningProcessSystemIdByExecutableName method, debugger.getrunningprocesssystemidbyexecutablename, GetRunningProcessSystemIdByExecutableName method [Windows Debugging], IDebugClient5 interface, GetRunningProcessSystemIdByExecutableName method [Windows Debugging], IDebugClient3 interface, IDebugClient_c7e63b9d-45fe-4125-9fbf-984de939b089.xml, IDebugClient::GetRunningProcessSystemIdByExecutableName, dbgeng/IDebugClient2::GetRunningProcessSystemIdByExecutableName, IDebugClient5 interface [Windows Debugging], GetRunningProcessSystemIdByExecutableName method, GetRunningProcessSystemIdByExecutableName method [Windows Debugging], IDebugClient interface, IDebugClient2::GetRunningProcessSystemIdByExecutableName, IDebugClient5::GetRunningProcessSystemIdByExecutableName, IDebugClient4 interface [Windows Debugging], GetRunningProcessSystemIdByExecutableName method, IDebugClient4::GetRunningProcessSystemIdByExecutableName, IDebugClient5, GetRunningProcessSystemIdByExecutableName method [Windows Debugging], IDebugClient4 interface, GetRunningProcessSystemIdByExecutableName, IDebugClient3 interface [Windows Debugging], GetRunningProcessSystemIdByExecutableName method, GetRunningProcessSystemIdByExecutableName method [Windows Debugging], IDebugClient2 interface, dbgeng/IDebugClient5::GetRunningProcessSystemIdByExecutableName, IDebugClient interface [Windows Debugging], GetRunningProcessSystemIdByExecutableName method, dbgeng/IDebugClient3::GetRunningProcessSystemIdByExecutableName, IDebugClient3::GetRunningProcessSystemIdByExecutableName, dbgeng/IDebugClient4::GetRunningProcessSystemIdByExecutableName, dbgeng/IDebugClient::GetRunningProcessSystemIdByExecutableName, GetRunningProcessSystemIdByExecutableName method [Windows Debugging]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugClient5.GetRunningProcessSystemIdByExecutableName
+title: IDebugClient5::GetRunningProcessSystemIdByExecutableName method
+author: windows-driver-content
+description: The GetRunningProcessSystemIdByExecutableName method searches for a process with a given executable file name and return its process ID.
+old-location: debugger\getrunningprocesssystemidbyexecutablename.htm
+old-project: debugger
+ms.assetid: 67e231b4-c693-4824-b895-b7f3085e6f4e
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugClient2 interface [Windows Debugging], GetRunningProcessSystemIdByExecutableName method, debugger.getrunningprocesssystemidbyexecutablename, GetRunningProcessSystemIdByExecutableName method [Windows Debugging], IDebugClient5 interface, GetRunningProcessSystemIdByExecutableName method [Windows Debugging], IDebugClient3 interface, IDebugClient_c7e63b9d-45fe-4125-9fbf-984de939b089.xml, IDebugClient::GetRunningProcessSystemIdByExecutableName, dbgeng/IDebugClient2::GetRunningProcessSystemIdByExecutableName, IDebugClient5 interface [Windows Debugging], GetRunningProcessSystemIdByExecutableName method, GetRunningProcessSystemIdByExecutableName method [Windows Debugging], IDebugClient interface, IDebugClient2::GetRunningProcessSystemIdByExecutableName, IDebugClient5::GetRunningProcessSystemIdByExecutableName, IDebugClient4 interface [Windows Debugging], GetRunningProcessSystemIdByExecutableName method, IDebugClient4::GetRunningProcessSystemIdByExecutableName, IDebugClient5, GetRunningProcessSystemIdByExecutableName method [Windows Debugging], IDebugClient4 interface, GetRunningProcessSystemIdByExecutableName, IDebugClient3 interface [Windows Debugging], GetRunningProcessSystemIdByExecutableName method, GetRunningProcessSystemIdByExecutableName method [Windows Debugging], IDebugClient2 interface, dbgeng/IDebugClient5::GetRunningProcessSystemIdByExecutableName, IDebugClient interface [Windows Debugging], GetRunningProcessSystemIdByExecutableName method, dbgeng/IDebugClient3::GetRunningProcessSystemIdByExecutableName, IDebugClient3::GetRunningProcessSystemIdByExecutableName, dbgeng/IDebugClient4::GetRunningProcessSystemIdByExecutableName, dbgeng/IDebugClient::GetRunningProcessSystemIdByExecutableName, GetRunningProcessSystemIdByExecutableName method [Windows Debugging]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugClient.GetRunningProcessSystemIdByExecutableName
+-	IDebugClient2.GetRunningProcessSystemIdByExecutableName
+-	IDebugClient3.GetRunningProcessSystemIdByExecutableName
+-	IDebugClient4.GetRunningProcessSystemIdByExecutableName
+-	IDebugClient5.GetRunningProcessSystemIdByExecutableName
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

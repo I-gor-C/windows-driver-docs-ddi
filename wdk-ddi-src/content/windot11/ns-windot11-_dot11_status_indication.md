@@ -1,42 +1,47 @@
 ---
-UID : NS:windot11._DOT11_STATUS_INDICATION
-title : "_DOT11_STATUS_INDICATION"
-author : windows-driver-content
-description : Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
-old-location : netvista\dot11_status_indication.htm
-old-project : netvista
-ms.assetid : 77b2eae8-1fa5-4f87-97e4-713bfca627b2
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : windot11/DOT11_STATUS_INDICATION, PDOT11_STATUS_INDICATION, windot11/PDOT11_STATUS_INDICATION, Native_802.11_data_types_4bd90807-e039-426f-a5d9-daa7bca20bad.xml, *PDOT11_STATUS_INDICATION, netvista.dot11_status_indication, PDOT11_STATUS_INDICATION structure pointer [Network Drivers Starting with Windows Vista], DOT11_STATUS_INDICATION structure [Network Drivers Starting with Windows Vista], DOT11_STATUS_INDICATION, _DOT11_STATUS_INDICATION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : windot11.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating   systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDOT11_STATUS_INDICATION, DOT11_STATUS_INDICATION"
-req.product : Windows 10 or later.
+UID: NS:windot11._DOT11_STATUS_INDICATION
+title: "_DOT11_STATUS_INDICATION"
+author: windows-driver-content
+description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+old-location: netvista\dot11_status_indication.htm
+old-project: netvista
+ms.assetid: 77b2eae8-1fa5-4f87-97e4-713bfca627b2
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: windot11/DOT11_STATUS_INDICATION, PDOT11_STATUS_INDICATION, windot11/PDOT11_STATUS_INDICATION, Native_802.11_data_types_4bd90807-e039-426f-a5d9-daa7bca20bad.xml, *PDOT11_STATUS_INDICATION, netvista.dot11_status_indication, PDOT11_STATUS_INDICATION structure pointer [Network Drivers Starting with Windows Vista], DOT11_STATUS_INDICATION structure [Network Drivers Starting with Windows Vista], DOT11_STATUS_INDICATION, _DOT11_STATUS_INDICATION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: windot11.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	windot11.h
+apiname:
+-	DOT11_STATUS_INDICATION
+product: Windows
+targetos: Windows
+req.typenames: "*PDOT11_STATUS_INDICATION, DOT11_STATUS_INDICATION"
+req.product: Windows 10 or later.
 ---
 
 # _DOT11_STATUS_INDICATION structure

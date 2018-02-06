@@ -1,42 +1,47 @@
 ---
-UID : NS:wwan._WWAN_AUTH_SIM_RESPONSE
-title : "_WWAN_AUTH_SIM_RESPONSE"
-author : windows-driver-content
-description : The WWAN_AUTH_SIM_RESPONSE structure represents a response to a SIM authentication challenge.
-old-location : netvista\wwan_auth_sim_response.htm
-old-project : netvista
-ms.assetid : C259CA95-D119-47EB-A32D-9C9E284B6CD4
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.wwan_auth_sim_response, _WWAN_AUTH_SIM_RESPONSE, WWAN_AUTH_SIM_RESPONSE structure [Network Drivers Starting with Windows Vista], wwan/WWAN_AUTH_SIM_RESPONSE, PWWAN_AUTH_SIM_RESPONSE, *PWWAN_AUTH_SIM_RESPONSE, WWAN_AUTH_SIM_RESPONSE, wwan/PWWAN_AUTH_SIM_RESPONSE, PWWAN_AUTH_SIM_RESPONSE structure pointer [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wwan.h
-req.include-header : Wwan.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with  Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WWAN_AUTH_SIM_RESPONSE, *PWWAN_AUTH_SIM_RESPONSE
-req.product : Windows 10 or later.
+UID: NS:wwan._WWAN_AUTH_SIM_RESPONSE
+title: "_WWAN_AUTH_SIM_RESPONSE"
+author: windows-driver-content
+description: The WWAN_AUTH_SIM_RESPONSE structure represents a response to a SIM authentication challenge.
+old-location: netvista\wwan_auth_sim_response.htm
+old-project: netvista
+ms.assetid: C259CA95-D119-47EB-A32D-9C9E284B6CD4
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.wwan_auth_sim_response, _WWAN_AUTH_SIM_RESPONSE, WWAN_AUTH_SIM_RESPONSE structure [Network Drivers Starting with Windows Vista], wwan/WWAN_AUTH_SIM_RESPONSE, PWWAN_AUTH_SIM_RESPONSE, *PWWAN_AUTH_SIM_RESPONSE, WWAN_AUTH_SIM_RESPONSE, wwan/PWWAN_AUTH_SIM_RESPONSE, PWWAN_AUTH_SIM_RESPONSE structure pointer [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wwan.h
+req.include-header: Wwan.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with  Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wwan.h
+apiname:
+-	WWAN_AUTH_SIM_RESPONSE
+product: Windows
+targetos: Windows
+req.typenames: WWAN_AUTH_SIM_RESPONSE, *PWWAN_AUTH_SIM_RESPONSE
+req.product: Windows 10 or later.
 ---
 
 # _WWAN_AUTH_SIM_RESPONSE structure

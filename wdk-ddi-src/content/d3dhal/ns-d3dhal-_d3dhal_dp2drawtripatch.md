@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dhal._D3DHAL_DP2DRAWTRIPATCH
-title : "_D3DHAL_DP2DRAWTRIPATCH"
-author : windows-driver-content
-description : DirectX 8.0 and later versions only.
-old-location : display\d3dhal_dp2drawtripatch.htm
-old-project : display
-ms.assetid : 79985523-5665-4879-af04-fd53725d6d07
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DHAL_DP2DRAWTRIPATCH structure [Display Devices], d3dstrct_0cad313a-b700-4aff-a111-3bd5472ea75d.xml, *LPD3DHAL_DP2DRAWTRIPATCH, D3DHAL_DP2DRAWTRIPATCH, _D3DHAL_DP2DRAWTRIPATCH, LPD3DHAL_DP2DRAWTRIPATCH structure pointer [Display Devices], display.d3dhal_dp2drawtripatch, d3dhal/LPD3DHAL_DP2DRAWTRIPATCH, d3dhal/D3DHAL_DP2DRAWTRIPATCH, LPD3DHAL_DP2DRAWTRIPATCH
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dhal.h
-req.include-header : D3dhal.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DHAL_DP2DRAWTRIPATCH
+UID: NS:d3dhal._D3DHAL_DP2DRAWTRIPATCH
+title: "_D3DHAL_DP2DRAWTRIPATCH"
+author: windows-driver-content
+description: DirectX 8.0 and later versions only.
+old-location: display\d3dhal_dp2drawtripatch.htm
+old-project: display
+ms.assetid: 79985523-5665-4879-af04-fd53725d6d07
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DHAL_DP2DRAWTRIPATCH structure [Display Devices], d3dstrct_0cad313a-b700-4aff-a111-3bd5472ea75d.xml, *LPD3DHAL_DP2DRAWTRIPATCH, D3DHAL_DP2DRAWTRIPATCH, _D3DHAL_DP2DRAWTRIPATCH, LPD3DHAL_DP2DRAWTRIPATCH structure pointer [Display Devices], display.d3dhal_dp2drawtripatch, d3dhal/LPD3DHAL_DP2DRAWTRIPATCH, d3dhal/D3DHAL_DP2DRAWTRIPATCH, LPD3DHAL_DP2DRAWTRIPATCH
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dhal.h
+req.include-header: D3dhal.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dhal.h
+apiname:
+-	D3DHAL_DP2DRAWTRIPATCH
+product: Windows
+targetos: Windows
+req.typenames: D3DHAL_DP2DRAWTRIPATCH
 ---
 
 # _D3DHAL_DP2DRAWTRIPATCH structure

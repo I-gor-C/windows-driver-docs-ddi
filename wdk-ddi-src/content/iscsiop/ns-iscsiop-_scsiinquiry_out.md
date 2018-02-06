@@ -1,41 +1,46 @@
 ---
-UID : NS:iscsiop._ScsiInquiry_OUT
-title : "_ScsiInquiry_OUT"
-author : windows-driver-content
-description : The ScsiInquiry_OUT structure holds the output data for the ScsiInquiry method.
-old-location : storage\scsiinquiry_out.htm
-old-project : storage
-ms.assetid : ac3ec079-61a5-42fe-a1c0-b7626e5f32d2
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : PScsiInquiry_OUT, storage.scsiinquiry_out, PScsiInquiry_OUT structure pointer [Storage Devices], *PScsiInquiry_OUT, ScsiInquiry_OUT, _ScsiInquiry_OUT, iscsiop/PScsiInquiry_OUT, ScsiInquiry_OUT structure [Storage Devices], iscsiop/ScsiInquiry_OUT, structs-iSCSI_0c90b572-8a05-4a75-86ce-5b12d82a1c2f.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : iscsiop.h
-req.include-header : Iscsiop.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : ScsiInquiry_OUT, *PScsiInquiry_OUT
+UID: NS:iscsiop._ScsiInquiry_OUT
+title: "_ScsiInquiry_OUT"
+author: windows-driver-content
+description: The ScsiInquiry_OUT structure holds the output data for the ScsiInquiry method.
+old-location: storage\scsiinquiry_out.htm
+old-project: storage
+ms.assetid: ac3ec079-61a5-42fe-a1c0-b7626e5f32d2
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: PScsiInquiry_OUT, storage.scsiinquiry_out, PScsiInquiry_OUT structure pointer [Storage Devices], *PScsiInquiry_OUT, ScsiInquiry_OUT, _ScsiInquiry_OUT, iscsiop/PScsiInquiry_OUT, ScsiInquiry_OUT structure [Storage Devices], iscsiop/ScsiInquiry_OUT, structs-iSCSI_0c90b572-8a05-4a75-86ce-5b12d82a1c2f.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: iscsiop.h
+req.include-header: Iscsiop.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	iscsiop.h
+apiname:
+-	ScsiInquiry_OUT
+product: Windows
+targetos: Windows
+req.typenames: ScsiInquiry_OUT, *PScsiInquiry_OUT
 ---
 
 # _ScsiInquiry_OUT structure

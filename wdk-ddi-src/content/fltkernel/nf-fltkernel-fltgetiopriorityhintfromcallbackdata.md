@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltGetIoPriorityHintFromCallbackData
-title : FltGetIoPriorityHintFromCallbackData function
-author : windows-driver-content
-description : The FltGetIoPriorityHintFromCallbackData routine is used by a minifilter driver to get IO priority information from callback data.
-old-location : ifsk\fltgetiopriorityhintfromcallbackdata.htm
-old-project : ifsk
-ms.assetid : feb3428c-ab18-4bd5-bf8a-81c7aaab0413
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltGetIoPriorityHintFromCallbackData, ifsk.fltgetiopriorityhintfromcallbackdata, FltGetIoPriorityHintFromCallbackData routine [Installable File System Drivers], FltApiRef_e_to_o_ce313b29-9c88-47f7-9a7f-a4ad9945ade1.xml, fltkernel/FltGetIoPriorityHintFromCallbackData
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : FltKernel.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltGetIoPriorityHintFromCallbackData
+title: FltGetIoPriorityHintFromCallbackData function
+author: windows-driver-content
+description: The FltGetIoPriorityHintFromCallbackData routine is used by a minifilter driver to get IO priority information from callback data.
+old-location: ifsk\fltgetiopriorityhintfromcallbackdata.htm
+old-project: ifsk
+ms.assetid: feb3428c-ab18-4bd5-bf8a-81c7aaab0413
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltGetIoPriorityHintFromCallbackData, ifsk.fltgetiopriorityhintfromcallbackdata, FltGetIoPriorityHintFromCallbackData routine [Installable File System Drivers], FltApiRef_e_to_o_ce313b29-9c88-47f7-9a7f-a4ad9945ade1.xml, fltkernel/FltGetIoPriorityHintFromCallbackData
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: FltKernel.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltGetIoPriorityHintFromCallbackData
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

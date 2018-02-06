@@ -1,42 +1,48 @@
 ---
-UID : NF:wdm.ZwCreateTransaction
-title : ZwCreateTransaction function
-author : windows-driver-content
-description : The ZwCreateTransaction routine creates a transaction object.
-old-location : kernel\zwcreatetransaction.htm
-old-project : kernel
-ms.assetid : b4c2dd68-3c1a-46d3-ab9c-be2291ed80f4
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.zwcreatetransaction, wdm/ZwCreateTransaction, NtCreateTransaction, ZwCreateTransaction routine [Kernel-Mode Driver Architecture], ktm_ref_8f89322d-b0ef-4711-9f1a-5e83b44e3740.xml, ZwCreateTransaction, wdm/NtCreateTransaction
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later operating system versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ZwCreateTransaction
+title: ZwCreateTransaction function
+author: windows-driver-content
+description: The ZwCreateTransaction routine creates a transaction object.
+old-location: kernel\zwcreatetransaction.htm
+old-project: kernel
+ms.assetid: b4c2dd68-3c1a-46d3-ab9c-be2291ed80f4
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.zwcreatetransaction, wdm/ZwCreateTransaction, NtCreateTransaction, ZwCreateTransaction routine [Kernel-Mode Driver Architecture], ktm_ref_8f89322d-b0ef-4711-9f1a-5e83b44e3740.xml, ZwCreateTransaction, wdm/NtCreateTransaction
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later operating system versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ZwCreateTransaction
+-	NtCreateTransaction
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

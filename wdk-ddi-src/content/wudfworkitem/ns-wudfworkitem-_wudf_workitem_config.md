@@ -1,42 +1,47 @@
 ---
-UID : NS:wudfworkitem._WUDF_WORKITEM_CONFIG
-title : "_WUDF_WORKITEM_CONFIG"
-author : windows-driver-content
-description : The WUDF_WORKITEM_CONFIG structure contains information that is associated with a work item.
-old-location : wdf\wudf_workitem_config.htm
-old-project : wdf
-ms.assetid : 877C6641-30F9-44BC-9286-3B1D880482C9
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : PWUDF_WORKITEM_CONFIG structure pointer, wudfworkitem/PWUDF_WORKITEM_CONFIG, WUDF_WORKITEM_CONFIG structure, umdf.wudf_workitem_config, wudfworkitem/WUDF_WORKITEM_CONFIG, PWUDF_WORKITEM_CONFIG, _WUDF_WORKITEM_CONFIG, wdf.wudf_workitem_config, *PWUDF_WORKITEM_CONFIG, WUDF_WORKITEM_CONFIG
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wudfworkitem.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.11
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWUDF_WORKITEM_CONFIG, WUDF_WORKITEM_CONFIG"
-req.product : Windows 10 or later.
+UID: NS:wudfworkitem._WUDF_WORKITEM_CONFIG
+title: "_WUDF_WORKITEM_CONFIG"
+author: windows-driver-content
+description: The WUDF_WORKITEM_CONFIG structure contains information that is associated with a work item.
+old-location: wdf\wudf_workitem_config.htm
+old-project: wdf
+ms.assetid: 877C6641-30F9-44BC-9286-3B1D880482C9
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: PWUDF_WORKITEM_CONFIG structure pointer, wudfworkitem/PWUDF_WORKITEM_CONFIG, WUDF_WORKITEM_CONFIG structure, umdf.wudf_workitem_config, wudfworkitem/WUDF_WORKITEM_CONFIG, PWUDF_WORKITEM_CONFIG, _WUDF_WORKITEM_CONFIG, wdf.wudf_workitem_config, *PWUDF_WORKITEM_CONFIG, WUDF_WORKITEM_CONFIG
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wudfworkitem.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.11
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wudfworkitem.h
+apiname:
+-	WUDF_WORKITEM_CONFIG
+product: Windows
+targetos: Windows
+req.typenames: "*PWUDF_WORKITEM_CONFIG, WUDF_WORKITEM_CONFIG"
+req.product: Windows 10 or later.
 ---
 
 # _WUDF_WORKITEM_CONFIG structure

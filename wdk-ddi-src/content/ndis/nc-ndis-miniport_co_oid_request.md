@@ -1,41 +1,46 @@
 ---
-UID : NC:ndis.MINIPORT_CO_OID_REQUEST
-title : MINIPORT_CO_OID_REQUEST
-author : windows-driver-content
-description : The MiniportCoOidRequest function handles an OID request to query or set information in CoNDIS miniport driver.Note  You must declare the function by using the MINIPORT_CO_OID_REQUEST type.
-old-location : netvista\miniportcooidrequest.htm
-old-project : netvista
-ms.assetid : 903bcdc5-9d42-4067-a054-057edc95ccf7
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.miniportcooidrequest, MiniportCoOidRequest callback function [Network Drivers Starting with Windows Vista], MiniportCoOidRequest, MINIPORT_CO_OID_REQUEST, MINIPORT_CO_OID_REQUEST, ndis/MiniportCoOidRequest, condis_request_ref_fff124d4-8671-441b-817f-30b4275dca68.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
+UID: NC:ndis.MINIPORT_CO_OID_REQUEST
+title: MINIPORT_CO_OID_REQUEST
+author: windows-driver-content
+description: The MiniportCoOidRequest function handles an OID request to query or set information in CoNDIS miniport driver.Note  You must declare the function by using the MINIPORT_CO_OID_REQUEST type.
+old-location: netvista\miniportcooidrequest.htm
+old-project: netvista
+ms.assetid: 903bcdc5-9d42-4067-a054-057edc95ccf7
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.miniportcooidrequest, MiniportCoOidRequest callback function [Network Drivers Starting with Windows Vista], MiniportCoOidRequest, MINIPORT_CO_OID_REQUEST, MINIPORT_CO_OID_REQUEST, ndis/MiniportCoOidRequest, condis_request_ref_fff124d4-8671-441b-817f-30b4275dca68.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ndis.h
+apiname:
+-	MiniportCoOidRequest
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 

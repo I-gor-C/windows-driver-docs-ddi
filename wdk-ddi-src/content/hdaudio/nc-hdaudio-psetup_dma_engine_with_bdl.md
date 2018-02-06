@@ -1,41 +1,46 @@
 ---
-UID : NC:hdaudio.PSETUP_DMA_ENGINE_WITH_BDL
-title : PSETUP_DMA_ENGINE_WITH_BDL
-author : windows-driver-content
-description : The SetupDmaEngineWithBdl routine sets up a DMA engine to use a caller-allocated DMA buffer.The function pointer type for a SetupDmaEngineWithBdl routine is defined as:
-old-location : audio\setupdmaenginewithbdl.htm
-old-project : audio
-ms.assetid : 2760579b-9922-4709-a049-a73f3abd5043
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : audio.setupdmaenginewithbdl, SetupDmaEngineWithBdl callback function [Audio Devices], SetupDmaEngineWithBdl, PSETUP_DMA_ENGINE_WITH_BDL, PSETUP_DMA_ENGINE_WITH_BDL, hdaudio/SetupDmaEngineWithBdl, aud-prop2_7d264dff-4f47-4a5a-a587-636c57a12a9d.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : hdaudio.h
-req.include-header : Hdaudio.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT
+UID: NC:hdaudio.PSETUP_DMA_ENGINE_WITH_BDL
+title: PSETUP_DMA_ENGINE_WITH_BDL
+author: windows-driver-content
+description: The SetupDmaEngineWithBdl routine sets up a DMA engine to use a caller-allocated DMA buffer.The function pointer type for a SetupDmaEngineWithBdl routine is defined as:
+old-location: audio\setupdmaenginewithbdl.htm
+old-project: audio
+ms.assetid: 2760579b-9922-4709-a049-a73f3abd5043
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: audio.setupdmaenginewithbdl, SetupDmaEngineWithBdl callback function [Audio Devices], SetupDmaEngineWithBdl, PSETUP_DMA_ENGINE_WITH_BDL, PSETUP_DMA_ENGINE_WITH_BDL, hdaudio/SetupDmaEngineWithBdl, aud-prop2_7d264dff-4f47-4a5a-a587-636c57a12a9d.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: hdaudio.h
+req.include-header: Hdaudio.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	hdaudio.h
+apiname:
+-	SetupDmaEngineWithBdl
+product: Windows
+targetos: Windows
+req.typenames: SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT
 ---
 
 

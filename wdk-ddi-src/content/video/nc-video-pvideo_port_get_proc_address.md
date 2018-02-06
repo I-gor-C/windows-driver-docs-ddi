@@ -1,42 +1,47 @@
 ---
-UID : NC:video.PVIDEO_PORT_GET_PROC_ADDRESS
-title : PVIDEO_PORT_GET_PROC_ADDRESS
-author : windows-driver-content
-description : The VideoPortGetProcAddress callback routine retrieves the address of a Windows 2000 or later video port driver function.
-old-location : display\videoportgetprocaddress.htm
-old-project : display
-ms.assetid : f4263cc6-2065-475a-b618-6a5735c5f66e
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.videoportgetprocaddress, VideoPortGetProcAddress callback function [Display Devices], VideoPortGetProcAddress, PVIDEO_PORT_GET_PROC_ADDRESS, PVIDEO_PORT_GET_PROC_ADDRESS, video/VideoPortGetProcAddress, VideoPort_Functions_303c9139-f7bd-4334-9379-ca5e167e4618.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows 2000 and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VHF_CONFIG, *PVHF_CONFIG
-req.product : Windows 10 or later.
+UID: NC:video.PVIDEO_PORT_GET_PROC_ADDRESS
+title: PVIDEO_PORT_GET_PROC_ADDRESS
+author: windows-driver-content
+description: The VideoPortGetProcAddress callback routine retrieves the address of a Windows 2000 or later video port driver function.
+old-location: display\videoportgetprocaddress.htm
+old-project: display
+ms.assetid: f4263cc6-2065-475a-b618-6a5735c5f66e
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.videoportgetprocaddress, VideoPortGetProcAddress callback function [Display Devices], VideoPortGetProcAddress, PVIDEO_PORT_GET_PROC_ADDRESS, PVIDEO_PORT_GET_PROC_ADDRESS, video/VideoPortGetProcAddress, VideoPort_Functions_303c9139-f7bd-4334-9379-ca5e167e4618.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows 2000 and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	video.h
+apiname:
+-	VideoPortGetProcAddress
+product: Windows
+targetos: Windows
+req.typenames: VHF_CONFIG, *PVHF_CONFIG
+req.product: Windows 10 or later.
 ---
 
 

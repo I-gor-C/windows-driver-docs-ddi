@@ -1,42 +1,47 @@
 ---
-UID : NI:usbscan.IOCTL_GET_VERSION
-title : IOCTL_GET_VERSION
-author : windows-driver-content
-description : Returns the version number of the driver.
-old-location : image\ioctl_get_version.htm
-old-project : image
-ms.assetid : 0521cd73-a3ae-4c7e-b244-4477b69ffc6f
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : image.ioctl_get_version, IOCTL_GET_VERSION control code [Imaging Devices], IOCTL_GET_VERSION, usbscan/IOCTL_GET_VERSION, stifnc_9ed7f2fc-763d-4090-8f25-e9a154055169.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : usbscan.h
-req.include-header : Usbscan.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RAW_PIPE_TYPE
-req.product : Windows 10 or later.
+UID: NI:usbscan.IOCTL_GET_VERSION
+title: IOCTL_GET_VERSION
+author: windows-driver-content
+description: Returns the version number of the driver.
+old-location: image\ioctl_get_version.htm
+old-project: image
+ms.assetid: 0521cd73-a3ae-4c7e-b244-4477b69ffc6f
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: image.ioctl_get_version, IOCTL_GET_VERSION control code [Imaging Devices], IOCTL_GET_VERSION, usbscan/IOCTL_GET_VERSION, stifnc_9ed7f2fc-763d-4090-8f25-e9a154055169.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: usbscan.h
+req.include-header: Usbscan.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Usbscan.h
+apiname:
+-	IOCTL_GET_VERSION
+product: Windows
+targetos: Windows
+req.typenames: RAW_PIPE_TYPE
+req.product: Windows 10 or later.
 ---
 
 # IOCTL_GET_VERSION IOCTL

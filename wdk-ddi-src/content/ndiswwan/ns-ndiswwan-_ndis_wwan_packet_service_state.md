@@ -1,41 +1,46 @@
 ---
-UID : NS:ndiswwan._NDIS_WWAN_PACKET_SERVICE_STATE
-title : "_NDIS_WWAN_PACKET_SERVICE_STATE"
-author : windows-driver-content
-description : The NDIS_WWAN_PACKET_SERVICE_STATE structure represents the packet service attachment state of the MB device.
-old-location : netvista\ndis_wwan_packet_service_state.htm
-old-project : netvista
-ms.assetid : 63dbd674-32b3-4843-8349-706c3c0380e5
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : WwanRef_b676b582-9e62-4e40-adbf-fe924103ebb6.xml, PNDIS_WWAN_PACKET_SERVICE_STATE, NDIS_WWAN_PACKET_SERVICE_STATE, netvista.ndis_wwan_packet_service_state, NDIS_WWAN_PACKET_SERVICE_STATE structure [Network Drivers Starting with Windows Vista], PNDIS_WWAN_PACKET_SERVICE_STATE structure pointer [Network Drivers Starting with Windows Vista], ndiswwan/NDIS_WWAN_PACKET_SERVICE_STATE, *PNDIS_WWAN_PACKET_SERVICE_STATE, ndiswwan/PNDIS_WWAN_PACKET_SERVICE_STATE, _NDIS_WWAN_PACKET_SERVICE_STATE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndiswwan.h
-req.include-header : Ndiswwan.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_WWAN_PACKET_SERVICE_STATE, *PNDIS_WWAN_PACKET_SERVICE_STATE
+UID: NS:ndiswwan._NDIS_WWAN_PACKET_SERVICE_STATE
+title: "_NDIS_WWAN_PACKET_SERVICE_STATE"
+author: windows-driver-content
+description: The NDIS_WWAN_PACKET_SERVICE_STATE structure represents the packet service attachment state of the MB device.
+old-location: netvista\ndis_wwan_packet_service_state.htm
+old-project: netvista
+ms.assetid: 63dbd674-32b3-4843-8349-706c3c0380e5
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: WwanRef_b676b582-9e62-4e40-adbf-fe924103ebb6.xml, PNDIS_WWAN_PACKET_SERVICE_STATE, NDIS_WWAN_PACKET_SERVICE_STATE, netvista.ndis_wwan_packet_service_state, NDIS_WWAN_PACKET_SERVICE_STATE structure [Network Drivers Starting with Windows Vista], PNDIS_WWAN_PACKET_SERVICE_STATE structure pointer [Network Drivers Starting with Windows Vista], ndiswwan/NDIS_WWAN_PACKET_SERVICE_STATE, *PNDIS_WWAN_PACKET_SERVICE_STATE, ndiswwan/PNDIS_WWAN_PACKET_SERVICE_STATE, _NDIS_WWAN_PACKET_SERVICE_STATE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndiswwan.h
+req.include-header: Ndiswwan.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndiswwan.h
+apiname:
+-	NDIS_WWAN_PACKET_SERVICE_STATE
+product: Windows
+targetos: Windows
+req.typenames: NDIS_WWAN_PACKET_SERVICE_STATE, *PNDIS_WWAN_PACKET_SERVICE_STATE
 ---
 
 # _NDIS_WWAN_PACKET_SERVICE_STATE structure

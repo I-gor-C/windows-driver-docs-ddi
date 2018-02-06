@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dkmddi.DXGKDDI_VIDPNTOPOLOGY_ACQUIREFIRSTPATHINFO
-title : DXGKDDI_VIDPNTOPOLOGY_ACQUIREFIRSTPATHINFO
-author : windows-driver-content
-description : The pfnAcquireFirstPathInfo structure returns a descriptor of the first path in a specified VidPN topology object.
-old-location : display\dxgk_vidpntopology_interface_pfnacquirefirstpathinfo.htm
-old-project : display
-ms.assetid : b5dc35dc-f4fb-4209-9a4d-50dc11f16216
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgk_vidpntopology_interface_pfnacquirefirstpathinfo, pfnAcquireFirstPathInfo callback function [Display Devices], pfnAcquireFirstPathInfo, DXGKDDI_VIDPNTOPOLOGY_ACQUIREFIRSTPATHINFO, DXGKDDI_VIDPNTOPOLOGY_ACQUIREFIRSTPATHINFO, d3dkmddi/pfnAcquireFirstPathInfo, VidPnFunctions_d45dd9b3-775b-41a6-a5e4-8fb226ed7ea4.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
+UID: NC:d3dkmddi.DXGKDDI_VIDPNTOPOLOGY_ACQUIREFIRSTPATHINFO
+title: DXGKDDI_VIDPNTOPOLOGY_ACQUIREFIRSTPATHINFO
+author: windows-driver-content
+description: The pfnAcquireFirstPathInfo structure returns a descriptor of the first path in a specified VidPN topology object.
+old-location: display\dxgk_vidpntopology_interface_pfnacquirefirstpathinfo.htm
+old-project: display
+ms.assetid: b5dc35dc-f4fb-4209-9a4d-50dc11f16216
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgk_vidpntopology_interface_pfnacquirefirstpathinfo, pfnAcquireFirstPathInfo callback function [Display Devices], pfnAcquireFirstPathInfo, DXGKDDI_VIDPNTOPOLOGY_ACQUIREFIRSTPATHINFO, DXGKDDI_VIDPNTOPOLOGY_ACQUIREFIRSTPATHINFO, d3dkmddi/pfnAcquireFirstPathInfo, VidPnFunctions_d45dd9b3-775b-41a6-a5e4-8fb226ed7ea4.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	pfnAcquireFirstPathInfo
+product: Windows
+targetos: Windows
+req.typenames: DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
 

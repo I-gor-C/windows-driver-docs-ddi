@@ -1,41 +1,50 @@
 ---
-UID : NF:dbgeng.IDebugClient5.StartServer
-title : IDebugClient5::StartServer method
-author : windows-driver-content
-description : The StartServer method starts a debugging server.
-old-location : debugger\startserver.htm
-old-project : debugger
-ms.assetid : 52b1c590-a62b-4e27-a267-1862cb76e6d4
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugClient::StartServer, IDebugClient interface [Windows Debugging], StartServer method, IDebugClient2 interface [Windows Debugging], StartServer method, StartServer, StartServer method [Windows Debugging], IDebugClient5 interface, IDebugClient5::StartServer, IDebugClient_5ca142fb-bb02-4484-adf0-9337f53d0bdc.xml, IDebugClient3::StartServer, IDebugClient2::StartServer, IDebugClient4 interface [Windows Debugging], StartServer method, debugger.startserver, StartServer method [Windows Debugging], IDebugClient3 interface, dbgeng/IDebugClient::StartServer, IDebugClient3 interface [Windows Debugging], StartServer method, IDebugClient5 interface [Windows Debugging], StartServer method, StartServer method [Windows Debugging], IDebugClient interface, StartServer method [Windows Debugging], IDebugClient2 interface, StartServer method [Windows Debugging], IDebugClient4 interface, IDebugClient4::StartServer, dbgeng/IDebugClient2::StartServer, StartServer method [Windows Debugging], dbgeng/IDebugClient5::StartServer, dbgeng/IDebugClient3::StartServer, IDebugClient5, dbgeng/IDebugClient4::StartServer
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugClient5.StartServer
+title: IDebugClient5::StartServer method
+author: windows-driver-content
+description: The StartServer method starts a debugging server.
+old-location: debugger\startserver.htm
+old-project: debugger
+ms.assetid: 52b1c590-a62b-4e27-a267-1862cb76e6d4
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugClient::StartServer, IDebugClient interface [Windows Debugging], StartServer method, IDebugClient2 interface [Windows Debugging], StartServer method, StartServer, StartServer method [Windows Debugging], IDebugClient5 interface, IDebugClient5::StartServer, IDebugClient_5ca142fb-bb02-4484-adf0-9337f53d0bdc.xml, IDebugClient3::StartServer, IDebugClient2::StartServer, IDebugClient4 interface [Windows Debugging], StartServer method, debugger.startserver, StartServer method [Windows Debugging], IDebugClient3 interface, dbgeng/IDebugClient::StartServer, IDebugClient3 interface [Windows Debugging], StartServer method, IDebugClient5 interface [Windows Debugging], StartServer method, StartServer method [Windows Debugging], IDebugClient interface, StartServer method [Windows Debugging], IDebugClient2 interface, StartServer method [Windows Debugging], IDebugClient4 interface, IDebugClient4::StartServer, dbgeng/IDebugClient2::StartServer, StartServer method [Windows Debugging], dbgeng/IDebugClient5::StartServer, dbgeng/IDebugClient3::StartServer, IDebugClient5, dbgeng/IDebugClient4::StartServer
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugClient.StartServer
+-	IDebugClient2.StartServer
+-	IDebugClient3.StartServer
+-	IDebugClient4.StartServer
+-	IDebugClient5.StartServer
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

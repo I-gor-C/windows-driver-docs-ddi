@@ -1,42 +1,50 @@
 ---
-UID : NF:wdfrequest.WdfRequestGetCompletionParams
-title : WdfRequestGetCompletionParams function
-author : windows-driver-content
-description : The WdfRequestGetCompletionParams method retrieves the I/O completion parameters that are associated with a specified framework request object.
-old-location : wdf\wdfrequestgetcompletionparams.htm
-old-project : wdf
-ms.assetid : 167bb0f3-a484-443b-8bc4-bb2bbcecc19a
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WdfRequestGetCompletionParams method, WdfRequestGetCompletionParams, kmdf.wdfrequestgetcompletionparams, PFN_WDFREQUESTGETCOMPLETIONPARAMS, wdfrequest/WdfRequestGetCompletionParams, DFRequestObjectRef_032fe29a-4000-4d97-92fb-50462d2c1bea.xml, wdf.wdfrequestgetcompletionparams
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfrequest.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : DriverCreate, InvalidReqAccess, InvalidReqAccessLocal, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_REQUEST_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfrequest.WdfRequestGetCompletionParams
+title: WdfRequestGetCompletionParams function
+author: windows-driver-content
+description: The WdfRequestGetCompletionParams method retrieves the I/O completion parameters that are associated with a specified framework request object.
+old-location: wdf\wdfrequestgetcompletionparams.htm
+old-project: wdf
+ms.assetid: 167bb0f3-a484-443b-8bc4-bb2bbcecc19a
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WdfRequestGetCompletionParams method, WdfRequestGetCompletionParams, kmdf.wdfrequestgetcompletionparams, PFN_WDFREQUESTGETCOMPLETIONPARAMS, wdfrequest/WdfRequestGetCompletionParams, DFRequestObjectRef_032fe29a-4000-4d97-92fb-50462d2c1bea.xml, wdf.wdfrequestgetcompletionparams
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfrequest.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: DriverCreate, InvalidReqAccess, InvalidReqAccessLocal, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+-	WUDFx02000.dll
+-	WUDFx02000.dll.dll
+apiname:
+-	WdfRequestGetCompletionParams
+product: Windows
+targetos: Windows
+req.typenames: WDF_REQUEST_TYPE
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._D3DDDICB_UNLOCK
-title : "_D3DDDICB_UNLOCK"
-author : windows-driver-content
-description : The D3DDDICB_UNLOCK structure describes allocations to unlock.
-old-location : display\d3dddicb_unlock.htm
-old-project : display
-ms.assetid : 1e0e6313-1dfa-4b68-8f58-bfa79f3124d6
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.d3dddicb_unlock, D3DDDICB_UNLOCK, D3D_param_Structs_91515cd5-00b4-4ad6-a8a5-ff216ddec171.xml, d3dumddi/D3DDDICB_UNLOCK, _D3DDDICB_UNLOCK, D3DDDICB_UNLOCK structure [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDICB_UNLOCK
+UID: NS:d3dumddi._D3DDDICB_UNLOCK
+title: "_D3DDDICB_UNLOCK"
+author: windows-driver-content
+description: The D3DDDICB_UNLOCK structure describes allocations to unlock.
+old-location: display\d3dddicb_unlock.htm
+old-project: display
+ms.assetid: 1e0e6313-1dfa-4b68-8f58-bfa79f3124d6
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.d3dddicb_unlock, D3DDDICB_UNLOCK, D3D_param_Structs_91515cd5-00b4-4ad6-a8a5-ff216ddec171.xml, d3dumddi/D3DDDICB_UNLOCK, _D3DDDICB_UNLOCK, D3DDDICB_UNLOCK structure [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	D3DDDICB_UNLOCK
+product: Windows
+targetos: Windows
+req.typenames: D3DDDICB_UNLOCK
 ---
 
 # _D3DDDICB_UNLOCK structure

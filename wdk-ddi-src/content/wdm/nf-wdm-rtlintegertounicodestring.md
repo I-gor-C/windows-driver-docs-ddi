@@ -1,42 +1,48 @@
 ---
-UID : NF:wdm.RtlIntegerToUnicodeString
-title : RtlIntegerToUnicodeString function
-author : windows-driver-content
-description : The RtlIntegerToUnicodeString routine converts an unsigned integer value to a null-terminated string of one or more Unicode characters in the specified base.
-old-location : kernel\rtlintegertounicodestring.htm
-old-project : kernel
-ms.assetid : d9c82a97-a8fb-4c23-aa9c-23711d98fd8b
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : RtlIntegerToUnicodeString routine [Kernel-Mode Driver Architecture], kernel.rtlintegertounicodestring, wdm/RtlIntegerToUnicodeString, k109_2ed50455-f426-4072-be25-cab15c4c79cc.xml, RtlIntegerToUnicodeString
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe (kernel mode); Ntdll.dll (user mode)
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.RtlIntegerToUnicodeString
+title: RtlIntegerToUnicodeString function
+author: windows-driver-content
+description: The RtlIntegerToUnicodeString routine converts an unsigned integer value to a null-terminated string of one or more Unicode characters in the specified base.
+old-location: kernel\rtlintegertounicodestring.htm
+old-project: kernel
+ms.assetid: d9c82a97-a8fb-4c23-aa9c-23711d98fd8b
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: RtlIntegerToUnicodeString routine [Kernel-Mode Driver Architecture], kernel.rtlintegertounicodestring, wdm/RtlIntegerToUnicodeString, k109_2ed50455-f426-4072-be25-cab15c4c79cc.xml, RtlIntegerToUnicodeString
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe (kernel mode); Ntdll.dll (user mode)
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+-	Ntdll.dll
+apiname:
+-	RtlIntegerToUnicodeString
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

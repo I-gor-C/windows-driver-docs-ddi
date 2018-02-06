@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dhal._D3DHAL_CALLBACKS
-title : "_D3DHAL_CALLBACKS"
-author : windows-driver-content
-description : D3DHAL_CALLBACKS is one of several callback structures that describe the Direct3D support provided by the driver.
-old-location : display\d3dhal_callbacks.htm
-old-project : display
-ms.assetid : 3b045732-a41f-47e7-9835-41e3ef54f14c
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : LPD3DHAL_CALLBACKS, d3dstrct_2dc02d2c-6ae9-4f2e-9cb3-470926980537.xml, D3DHAL_CALLBACKS structure [Display Devices], display.d3dhal_callbacks, *LPD3DHAL_CALLBACKS, LPD3DHAL_CALLBACKS structure pointer [Display Devices], _D3DHAL_CALLBACKS, D3DHAL_CALLBACKS, d3dhal/LPD3DHAL_CALLBACKS, d3dhal/D3DHAL_CALLBACKS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dhal.h
-req.include-header : D3dhal.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DHAL_CALLBACKS, *LPD3DHAL_CALLBACKS
+UID: NS:d3dhal._D3DHAL_CALLBACKS
+title: "_D3DHAL_CALLBACKS"
+author: windows-driver-content
+description: D3DHAL_CALLBACKS is one of several callback structures that describe the Direct3D support provided by the driver.
+old-location: display\d3dhal_callbacks.htm
+old-project: display
+ms.assetid: 3b045732-a41f-47e7-9835-41e3ef54f14c
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: LPD3DHAL_CALLBACKS, d3dstrct_2dc02d2c-6ae9-4f2e-9cb3-470926980537.xml, D3DHAL_CALLBACKS structure [Display Devices], display.d3dhal_callbacks, *LPD3DHAL_CALLBACKS, LPD3DHAL_CALLBACKS structure pointer [Display Devices], _D3DHAL_CALLBACKS, D3DHAL_CALLBACKS, d3dhal/LPD3DHAL_CALLBACKS, d3dhal/D3DHAL_CALLBACKS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dhal.h
+req.include-header: D3dhal.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dhal.h
+apiname:
+-	D3DHAL_CALLBACKS
+product: Windows
+targetos: Windows
+req.typenames: D3DHAL_CALLBACKS, *LPD3DHAL_CALLBACKS
 ---
 
 # _D3DHAL_CALLBACKS structure

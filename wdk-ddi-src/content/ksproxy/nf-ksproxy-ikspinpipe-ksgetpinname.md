@@ -1,41 +1,46 @@
 ---
-UID : NF:ksproxy.IKsPinPipe.KsGetPinName
-title : IKsPinPipe::KsGetPinName method
-author : windows-driver-content
-description : Returns the name of a pin.
-old-location : stream\ikspinpipe_ksgetpinname.htm
-old-project : stream
-ms.assetid : 2757FF0D-C84E-4309-AFD4-D9FE1F4D77CE
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KsGetPinName, KsGetPinName method [Streaming Media Devices], IKsPinPipe, stream.ikspinpipe_ksgetpinname, IKsPinPipe::KsGetPinName, IKsPinPipe interface [Streaming Media Devices], KsGetPinName method, KsGetPinName method [Streaming Media Devices], IKsPinPipe interface, ksproxy/IKsPinPipe::KsGetPinName
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : ksproxy.h
-req.include-header : Ksproxy.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : ksproxy.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PIPE_STATE
+UID: NF:ksproxy.IKsPinPipe.KsGetPinName
+title: IKsPinPipe::KsGetPinName method
+author: windows-driver-content
+description: Returns the name of a pin.
+old-location: stream\ikspinpipe_ksgetpinname.htm
+old-project: stream
+ms.assetid: 2757FF0D-C84E-4309-AFD4-D9FE1F4D77CE
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KsGetPinName, KsGetPinName method [Streaming Media Devices], IKsPinPipe, stream.ikspinpipe_ksgetpinname, IKsPinPipe::KsGetPinName, IKsPinPipe interface [Streaming Media Devices], KsGetPinName method, KsGetPinName method [Streaming Media Devices], IKsPinPipe interface, ksproxy/IKsPinPipe::KsGetPinName
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: ksproxy.h
+req.include-header: Ksproxy.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: ksproxy.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	ksproxy.h
+apiname:
+-	IKsPinPipe.KsGetPinName
+product: Windows
+targetos: Windows
+req.typenames: PIPE_STATE
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NS:srb._SRBEX_DATA
-title : "_SRBEX_DATA"
-author : windows-driver-content
-description : The SRBEX_DATA structure is the generalized format for containing extended SRB data.
-old-location : storage\srbex_data.htm
-old-project : storage
-ms.assetid : 15FB9877-6339-484B-83D5-6AD44EEE1D6E
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : "_SRBEX_DATA, *PSRBEX_DATA, SrbExDataTypeScsiCdb32, SrbExDataTypeBidirectional, PSRBEX_DATA, SRBEX_DATA, SrbExDataTypeIoInfo, storport/PSRBEX_DATA, SrbExDataTypePower, SrbExDataTypeUnknown, PSRBEX_DATA structure pointer [Storage Devices], SrbExDataTypeScsiCdb16, SrbExDataTypeScsiCdbVar, SRBEX_DATA structure [Storage Devices], SrbExDataTypePnp, storage.srbex_data, storport/SRBEX_DATA, SrbExDataTypeWmi"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : srb.h
-req.include-header : Storport.h, Srb.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSRBEX_DATA, SRBEX_DATA"
-req.product : Windows 10 or later.
+UID: NS:srb._SRBEX_DATA
+title: "_SRBEX_DATA"
+author: windows-driver-content
+description: The SRBEX_DATA structure is the generalized format for containing extended SRB data.
+old-location: storage\srbex_data.htm
+old-project: storage
+ms.assetid: 15FB9877-6339-484B-83D5-6AD44EEE1D6E
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: "_SRBEX_DATA, *PSRBEX_DATA, SrbExDataTypeScsiCdb32, SrbExDataTypeBidirectional, PSRBEX_DATA, SRBEX_DATA, SrbExDataTypeIoInfo, storport/PSRBEX_DATA, SrbExDataTypePower, SrbExDataTypeUnknown, PSRBEX_DATA structure pointer [Storage Devices], SrbExDataTypeScsiCdb16, SrbExDataTypeScsiCdbVar, SRBEX_DATA structure [Storage Devices], SrbExDataTypePnp, storage.srbex_data, storport/SRBEX_DATA, SrbExDataTypeWmi"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: srb.h
+req.include-header: Storport.h, Srb.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Storport.h
+apiname:
+-	SRBEX_DATA
+product: Windows
+targetos: Windows
+req.typenames: "*PSRBEX_DATA, SRBEX_DATA"
+req.product: Windows 10 or later.
 ---
 
 # _SRBEX_DATA structure

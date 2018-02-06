@@ -1,42 +1,47 @@
 ---
-UID : NF:wiamindr_lh.IWiaMiniDrv.drvAnalyzeItem
-title : IWiaMiniDrv::drvAnalyzeItem method
-author : windows-driver-content
-description : The IWiaMiniDrv::drvAnalyzeItem method inspects an item, and creates subitems, if necessary.
-old-location : image\iwiaminidrv_drvanalyzeitem.htm
-old-project : image
-ms.assetid : e742f898-e663-431d-870e-bb0fe7e89b5a
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : IWiaMiniDrv, drvAnalyzeItem method [Imaging Devices], IWiaMiniDrv interface, image.iwiaminidrv_drvanalyzeitem, wiamindr_lh/IWiaMiniDrv::drvAnalyzeItem, MiniDrv_dfa93eeb-ea39-44b6-b465-5bff0f056763.xml, IWiaMiniDrv interface [Imaging Devices], drvAnalyzeItem method, drvAnalyzeItem method [Imaging Devices], IWiaMiniDrv::drvAnalyzeItem, drvAnalyzeItem
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wiamindr_lh.h
-req.include-header : Wiamindr.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Me and in Windows XP and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wiamindr_lh.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SCANWINDOW, *PSCANWINDOW
-req.product : Windows 10 or later.
+UID: NF:wiamindr_lh.IWiaMiniDrv.drvAnalyzeItem
+title: IWiaMiniDrv::drvAnalyzeItem method
+author: windows-driver-content
+description: The IWiaMiniDrv::drvAnalyzeItem method inspects an item, and creates subitems, if necessary.
+old-location: image\iwiaminidrv_drvanalyzeitem.htm
+old-project: image
+ms.assetid: e742f898-e663-431d-870e-bb0fe7e89b5a
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: IWiaMiniDrv, drvAnalyzeItem method [Imaging Devices], IWiaMiniDrv interface, image.iwiaminidrv_drvanalyzeitem, wiamindr_lh/IWiaMiniDrv::drvAnalyzeItem, MiniDrv_dfa93eeb-ea39-44b6-b465-5bff0f056763.xml, IWiaMiniDrv interface [Imaging Devices], drvAnalyzeItem method, drvAnalyzeItem method [Imaging Devices], IWiaMiniDrv::drvAnalyzeItem, drvAnalyzeItem
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wiamindr_lh.h
+req.include-header: Wiamindr.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Me and in Windows XP and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wiamindr_lh.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	wiamindr_lh.h
+apiname:
+-	IWiaMiniDrv.drvAnalyzeItem
+product: Windows
+targetos: Windows
+req.typenames: SCANWINDOW, *PSCANWINDOW
+req.product: Windows 10 or later.
 ---
 
 

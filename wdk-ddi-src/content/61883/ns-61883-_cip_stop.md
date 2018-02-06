@@ -1,41 +1,46 @@
 ---
-UID : NS:61883._CIP_STOP
-title : "_CIP_STOP"
-author : windows-driver-content
-description : This structure is used to stop transmission or reception.
-old-location : ieee\cip_stop.htm
-old-project : IEEE
-ms.assetid : FE396C2C-B099-47F4-9C27-93D420D54103
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : 61883/PCIP_STOP, _CIP_STOP, CIP_STOP structure [Buses], PCIP_STOP, CIP_STOP, *PCIP_STOP, IEEE.cip_stop, 61883/CIP_STOP, PCIP_STOP structure pointer [Buses]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : 61883.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PCIP_STOP, CIP_STOP"
+UID: NS:61883._CIP_STOP
+title: "_CIP_STOP"
+author: windows-driver-content
+description: This structure is used to stop transmission or reception.
+old-location: ieee\cip_stop.htm
+old-project: IEEE
+ms.assetid: FE396C2C-B099-47F4-9C27-93D420D54103
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: 61883/PCIP_STOP, _CIP_STOP, CIP_STOP structure [Buses], PCIP_STOP, CIP_STOP, *PCIP_STOP, IEEE.cip_stop, 61883/CIP_STOP, PCIP_STOP structure pointer [Buses]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: 61883.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	61883.h
+apiname:
+-	CIP_STOP
+product: Windows
+targetos: Windows
+req.typenames: "*PCIP_STOP, CIP_STOP"
 ---
 
 # _CIP_STOP structure

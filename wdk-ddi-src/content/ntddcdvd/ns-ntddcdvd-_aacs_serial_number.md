@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddcdvd._AACS_SERIAL_NUMBER
-title : "_AACS_SERIAL_NUMBER"
-author : windows-driver-content
-description : The AACS_SERIAL_NUMBER structure contains an Advanced Access Content System (AACS) serial number and corresponding message authentication code (MAC).
-old-location : storage\aacs_serial_number.htm
-old-project : storage
-ms.assetid : 1436c8a5-9160-41d8-acc1-0af6acadfdba
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : "_AACS_SERIAL_NUMBER, storage.aacs_serial_number, PAACS_SERIAL_NUMBER structure pointer [Storage Devices], PAACS_SERIAL_NUMBER, AACS_SERIAL_NUMBER structure [Storage Devices], *PAACS_SERIAL_NUMBER, AACS_SERIAL_NUMBER, ntddcdvd/AACS_SERIAL_NUMBER, structs-DVD_baba43db-de96-4f55-9d26-46cc56dce390.xml, ntddcdvd/PAACS_SERIAL_NUMBER"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddcdvd.h
-req.include-header : Ntddcdvd.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PAACS_SERIAL_NUMBER, AACS_SERIAL_NUMBER"
+UID: NS:ntddcdvd._AACS_SERIAL_NUMBER
+title: "_AACS_SERIAL_NUMBER"
+author: windows-driver-content
+description: The AACS_SERIAL_NUMBER structure contains an Advanced Access Content System (AACS) serial number and corresponding message authentication code (MAC).
+old-location: storage\aacs_serial_number.htm
+old-project: storage
+ms.assetid: 1436c8a5-9160-41d8-acc1-0af6acadfdba
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: "_AACS_SERIAL_NUMBER, storage.aacs_serial_number, PAACS_SERIAL_NUMBER structure pointer [Storage Devices], PAACS_SERIAL_NUMBER, AACS_SERIAL_NUMBER structure [Storage Devices], *PAACS_SERIAL_NUMBER, AACS_SERIAL_NUMBER, ntddcdvd/AACS_SERIAL_NUMBER, structs-DVD_baba43db-de96-4f55-9d26-46cc56dce390.xml, ntddcdvd/PAACS_SERIAL_NUMBER"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddcdvd.h
+req.include-header: Ntddcdvd.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddcdvd.h
+apiname:
+-	AACS_SERIAL_NUMBER
+product: Windows
+targetos: Windows
+req.typenames: "*PAACS_SERIAL_NUMBER, AACS_SERIAL_NUMBER"
 ---
 
 # _AACS_SERIAL_NUMBER structure

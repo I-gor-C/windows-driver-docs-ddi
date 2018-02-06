@@ -1,41 +1,46 @@
 ---
-UID : NS:d3d10umddi.D3D11_1DDI_VIDEO_PROCESSOR_FILTER_RANGE
-title : D3D11_1DDI_VIDEO_PROCESSOR_FILTER_RANGE
-author : windows-driver-content
-description : Defines the range of supported values for an image filter.
-old-location : display\d3d11_1ddi_video_processor_filter_range.htm
-old-project : display
-ms.assetid : 9dc93d92-ccdc-488b-a5dd-a2efe783cbb3
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.d3d11_1ddi_video_processor_filter_range, D3D11_1DDI_VIDEO_PROCESSOR_FILTER_RANGE structure [Display Devices], D3D11_1DDI_VIDEO_PROCESSOR_FILTER_RANGE, d3d10umddi/D3D11_1DDI_VIDEO_PROCESSOR_FILTER_RANGE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3D11_1DDI_VIDEO_PROCESSOR_FILTER_RANGE
+UID: NS:d3d10umddi.D3D11_1DDI_VIDEO_PROCESSOR_FILTER_RANGE
+title: D3D11_1DDI_VIDEO_PROCESSOR_FILTER_RANGE
+author: windows-driver-content
+description: Defines the range of supported values for an image filter.
+old-location: display\d3d11_1ddi_video_processor_filter_range.htm
+old-project: display
+ms.assetid: 9dc93d92-ccdc-488b-a5dd-a2efe783cbb3
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.d3d11_1ddi_video_processor_filter_range, D3D11_1DDI_VIDEO_PROCESSOR_FILTER_RANGE structure [Display Devices], D3D11_1DDI_VIDEO_PROCESSOR_FILTER_RANGE, d3d10umddi/D3D11_1DDI_VIDEO_PROCESSOR_FILTER_RANGE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	D3d10umddi.h
+apiname:
+-	D3D11_1DDI_VIDEO_PROCESSOR_FILTER_RANGE
+product: Windows
+targetos: Windows
+req.typenames: D3D11_1DDI_VIDEO_PROCESSOR_FILTER_RANGE
 ---
 
 # D3D11_1DDI_VIDEO_PROCESSOR_FILTER_RANGE structure

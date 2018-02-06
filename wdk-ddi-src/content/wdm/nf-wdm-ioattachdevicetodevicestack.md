@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.IoAttachDeviceToDeviceStack
-title : IoAttachDeviceToDeviceStack function
-author : windows-driver-content
-description : The IoAttachDeviceToDeviceStack routine attaches the caller's device object to the highest device object in the chain and returns a pointer to the previously highest device object.
-old-location : kernel\ioattachdevicetodevicestack.htm
-old-project : kernel
-ms.assetid : 6377f980-dd56-4bef-91e7-7557866132d6
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : IoAttachDeviceToDeviceStack, IoAttachDeviceToDeviceStack routine [Kernel-Mode Driver Architecture], kernel.ioattachdevicetodevicestack, wdm/IoAttachDeviceToDeviceStack, k104_18c6aeef-4362-49f9-88a3-6d2a970eb0d7.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : AddDevice, PnpSameDeviceObject, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.IoAttachDeviceToDeviceStack
+title: IoAttachDeviceToDeviceStack function
+author: windows-driver-content
+description: The IoAttachDeviceToDeviceStack routine attaches the caller's device object to the highest device object in the chain and returns a pointer to the previously highest device object.
+old-location: kernel\ioattachdevicetodevicestack.htm
+old-project: kernel
+ms.assetid: 6377f980-dd56-4bef-91e7-7557866132d6
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: IoAttachDeviceToDeviceStack, IoAttachDeviceToDeviceStack routine [Kernel-Mode Driver Architecture], kernel.ioattachdevicetodevicestack, wdm/IoAttachDeviceToDeviceStack, k104_18c6aeef-4362-49f9-88a3-6d2a970eb0d7.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: AddDevice, PnpSameDeviceObject, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoAttachDeviceToDeviceStack
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

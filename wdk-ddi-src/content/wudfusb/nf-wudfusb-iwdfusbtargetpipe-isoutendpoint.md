@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfusb.IWDFUsbTargetPipe.IsOutEndPoint
-title : IWDFUsbTargetPipe::IsOutEndPoint method
-author : windows-driver-content
-description : The IsOutEndPoint method determines whether a USB pipe (endpoint) is an OUT pipe.
-old-location : wdf\iwdfusbtargetpipe_isoutendpoint.htm
-old-project : wdf
-ms.assetid : cb6c5b25-ea21-44cb-8b67-c5266c8bc1e4
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : IWDFUsbTargetPipe, umdf.iwdfusbtargetpipe_isoutendpoint, wudfusb/IWDFUsbTargetPipe::IsOutEndPoint, IWDFUsbTargetPipe interface, IsOutEndPoint method, IsOutEndPoint method, IWDFUsbTargetPipe interface, wdf.iwdfusbtargetpipe_isoutendpoint, IWDFUsbTargetPipe::IsOutEndPoint, UMDFUSBref_fc7a24f7-0bd6-4bb2-a9df-30d09e3b5e68.xml, IsOutEndPoint method, IsOutEndPoint
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfusb.h
-req.include-header : Wudfusb.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.5
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfusb.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
-req.product : Windows 10 or later.
+UID: NF:wudfusb.IWDFUsbTargetPipe.IsOutEndPoint
+title: IWDFUsbTargetPipe::IsOutEndPoint method
+author: windows-driver-content
+description: The IsOutEndPoint method determines whether a USB pipe (endpoint) is an OUT pipe.
+old-location: wdf\iwdfusbtargetpipe_isoutendpoint.htm
+old-project: wdf
+ms.assetid: cb6c5b25-ea21-44cb-8b67-c5266c8bc1e4
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: IWDFUsbTargetPipe, umdf.iwdfusbtargetpipe_isoutendpoint, wudfusb/IWDFUsbTargetPipe::IsOutEndPoint, IWDFUsbTargetPipe interface, IsOutEndPoint method, IsOutEndPoint method, IWDFUsbTargetPipe interface, wdf.iwdfusbtargetpipe_isoutendpoint, IWDFUsbTargetPipe::IsOutEndPoint, UMDFUSBref_fc7a24f7-0bd6-4bb2-a9df-30d09e3b5e68.xml, IsOutEndPoint method, IsOutEndPoint
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfusb.h
+req.include-header: Wudfusb.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.5
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfusb.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFUsbTargetPipe.IsOutEndPoint
+product: Windows
+targetos: Windows
+req.typenames: WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
+req.product: Windows 10 or later.
 ---
 
 

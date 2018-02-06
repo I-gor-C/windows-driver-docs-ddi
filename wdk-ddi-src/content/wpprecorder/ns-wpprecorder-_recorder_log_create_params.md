@@ -1,38 +1,38 @@
 ---
-UID : NS:wpprecorder._RECORDER_LOG_CREATE_PARAMS
-title : _RECORDER_LOG_CREATE_PARAMS
-author : windows-driver-content
-description : The RECORDER_LOG_CREATE_PARAMS structure is an input parameter to the WppRecorderLogCreate method.
-old-location : devtest\recorder_log_create_params.htm
-old-project : devtest
-ms.assetid : 6BEB44C2-BB35-420F-B4A0-925FFAD7473C
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : _RECORDER_LOG_CREATE_PARAMS, RECORDER_LOG_CREATE_PARAMS, *PRECORDER_LOG_CREATE_PARAMS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wpprecorder.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.alt-api : RECORDER_LOG_CREATE_PARAMS
-req.alt-loc : Wpprecorder.h
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-req.typenames : RECORDER_LOG_CREATE_PARAMS, *PRECORDER_LOG_CREATE_PARAMS
-req.product : Windows 10 or later.
+UID: NS:wpprecorder._RECORDER_LOG_CREATE_PARAMS
+title: _RECORDER_LOG_CREATE_PARAMS
+author: windows-driver-content
+description: The RECORDER_LOG_CREATE_PARAMS structure is an input parameter to the WppRecorderLogCreate method.
+old-location: devtest\recorder_log_create_params.htm
+old-project: devtest
+ms.assetid: 6BEB44C2-BB35-420F-B4A0-925FFAD7473C
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: _RECORDER_LOG_CREATE_PARAMS, RECORDER_LOG_CREATE_PARAMS, *PRECORDER_LOG_CREATE_PARAMS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wpprecorder.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.alt-api: RECORDER_LOG_CREATE_PARAMS
+req.alt-loc: Wpprecorder.h
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+req.typenames: RECORDER_LOG_CREATE_PARAMS, *PRECORDER_LOG_CREATE_PARAMS
+req.product: Windows 10 or later.
 ---
 
 # _RECORDER_LOG_CREATE_PARAMS structure

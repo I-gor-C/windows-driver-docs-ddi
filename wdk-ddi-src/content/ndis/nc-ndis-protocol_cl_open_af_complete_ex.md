@@ -1,41 +1,46 @@
 ---
-UID : NC:ndis.PROTOCOL_CL_OPEN_AF_COMPLETE_EX
-title : PROTOCOL_CL_OPEN_AF_COMPLETE_EX
-author : windows-driver-content
-description : The ProtocolClOpenAfCompleteEx function completes the opening of an address family (AF) that was started when a CoNDIS client called the NdisClOpenAddressFamilyEx function.Note  You must declare the function by using the PROTOCOL_CL_OPEN_AF_COMPLETE_EX type. For more information, see the following Examples section.
-old-location : netvista\protocolclopenafcompleteex.htm
-old-project : netvista
-ms.assetid : 03ddbbfd-8fe8-44b6-8d3e-12a7bf6f8f6b
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.protocolclopenafcompleteex, ProtocolClOpenAfCompleteEx callback function [Network Drivers Starting with Windows Vista], ProtocolClOpenAfCompleteEx, PROTOCOL_CL_OPEN_AF_COMPLETE_EX, PROTOCOL_CL_OPEN_AF_COMPLETE_EX, ndis/ProtocolClOpenAfCompleteEx, condis_client_ref_8b7e876e-d2b2-4676-8120-aa18f717cca2.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
+UID: NC:ndis.PROTOCOL_CL_OPEN_AF_COMPLETE_EX
+title: PROTOCOL_CL_OPEN_AF_COMPLETE_EX
+author: windows-driver-content
+description: The ProtocolClOpenAfCompleteEx function completes the opening of an address family (AF) that was started when a CoNDIS client called the NdisClOpenAddressFamilyEx function.Note  You must declare the function by using the PROTOCOL_CL_OPEN_AF_COMPLETE_EX type. For more information, see the following Examples section.
+old-location: netvista\protocolclopenafcompleteex.htm
+old-project: netvista
+ms.assetid: 03ddbbfd-8fe8-44b6-8d3e-12a7bf6f8f6b
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.protocolclopenafcompleteex, ProtocolClOpenAfCompleteEx callback function [Network Drivers Starting with Windows Vista], ProtocolClOpenAfCompleteEx, PROTOCOL_CL_OPEN_AF_COMPLETE_EX, PROTOCOL_CL_OPEN_AF_COMPLETE_EX, ndis/ProtocolClOpenAfCompleteEx, condis_client_ref_8b7e876e-d2b2-4676-8120-aa18f717cca2.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ndis.h
+apiname:
+-	ProtocolClOpenAfCompleteEx
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 

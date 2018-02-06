@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltGetIoPriorityHintFromThread
-title : FltGetIoPriorityHintFromThread function
-author : windows-driver-content
-description : The FltGetIoPriorityHintFromThread routine is used by a minifilter driver to get IO priority information from a thread.
-old-location : ifsk\fltgetiopriorityhintfromthread.htm
-old-project : ifsk
-ms.assetid : e79f7cf2-8d3e-42b9-810b-068afa60fb6e
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltGetIoPriorityHintFromThread routine [Installable File System Drivers], fltkernel/FltGetIoPriorityHintFromThread, FltGetIoPriorityHintFromThread, FltApiRef_e_to_o_edc8f8c5-8be8-45a7-9936-c2146e5fd4b6.xml, ifsk.fltgetiopriorityhintfromthread
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : FltKernel.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltGetIoPriorityHintFromThread
+title: FltGetIoPriorityHintFromThread function
+author: windows-driver-content
+description: The FltGetIoPriorityHintFromThread routine is used by a minifilter driver to get IO priority information from a thread.
+old-location: ifsk\fltgetiopriorityhintfromthread.htm
+old-project: ifsk
+ms.assetid: e79f7cf2-8d3e-42b9-810b-068afa60fb6e
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltGetIoPriorityHintFromThread routine [Installable File System Drivers], fltkernel/FltGetIoPriorityHintFromThread, FltGetIoPriorityHintFromThread, FltApiRef_e_to_o_edc8f8c5-8be8-45a7-9936-c2146e5fd4b6.xml, ifsk.fltgetiopriorityhintfromthread
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: FltKernel.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltGetIoPriorityHintFromThread
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:ntifs._FILE_GET_EA_INFORMATION
-title : "_FILE_GET_EA_INFORMATION"
-author : windows-driver-content
-description : The FILE_GET_EA_INFORMATION structure is used to query for extended-attribute (EA) information.
-old-location : ifsk\file_get_ea_information.htm
-old-project : ifsk
-ms.assetid : 2abaf505-b890-43b6-a277-d930417bdcb8
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ntifs/PFILE_GET_EA_INFORMATION, ntifs/FILE_GET_EA_INFORMATION, FILE_GET_EA_INFORMATION structure [Installable File System Drivers], FILE_GET_EA_INFORMATION, ifsk.file_get_ea_information, PFILE_GET_EA_INFORMATION, _FILE_GET_EA_INFORMATION, fileinformationstructures_42834ee3-151e-4844-bd66-a20775e364b4.xml, *PFILE_GET_EA_INFORMATION, PFILE_GET_EA_INFORMATION structure pointer [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntifs.h
-req.include-header : Ntifs.h, Fltkernel.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PFILE_GET_EA_INFORMATION, FILE_GET_EA_INFORMATION"
+UID: NS:ntifs._FILE_GET_EA_INFORMATION
+title: "_FILE_GET_EA_INFORMATION"
+author: windows-driver-content
+description: The FILE_GET_EA_INFORMATION structure is used to query for extended-attribute (EA) information.
+old-location: ifsk\file_get_ea_information.htm
+old-project: ifsk
+ms.assetid: 2abaf505-b890-43b6-a277-d930417bdcb8
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ntifs/PFILE_GET_EA_INFORMATION, ntifs/FILE_GET_EA_INFORMATION, FILE_GET_EA_INFORMATION structure [Installable File System Drivers], FILE_GET_EA_INFORMATION, ifsk.file_get_ea_information, PFILE_GET_EA_INFORMATION, _FILE_GET_EA_INFORMATION, fileinformationstructures_42834ee3-151e-4844-bd66-a20775e364b4.xml, *PFILE_GET_EA_INFORMATION, PFILE_GET_EA_INFORMATION structure pointer [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntifs.h
+req.include-header: Ntifs.h, Fltkernel.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntifs.h
+apiname:
+-	FILE_GET_EA_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: "*PFILE_GET_EA_INFORMATION, FILE_GET_EA_INFORMATION"
 ---
 
 # _FILE_GET_EA_INFORMATION structure

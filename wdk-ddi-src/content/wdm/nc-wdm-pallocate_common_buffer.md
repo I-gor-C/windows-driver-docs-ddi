@@ -1,42 +1,47 @@
 ---
-UID : NC:wdm.PALLOCATE_COMMON_BUFFER
-title : PALLOCATE_COMMON_BUFFER
-author : windows-driver-content
-description : The AllocateCommonBuffer routine allocates memory and maps it so that it is simultaneously accessible from both the processor and a device for DMA operations.
-old-location : kernel\allocatecommonbuffer.htm
-old-project : kernel
-ms.assetid : 4edaae35-8ac4-4a7a-949b-8a86b45ff391
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.allocatecommonbuffer, AllocateCommonBuffer, AllocateCommonBuffer callback function [Kernel-Mode Driver Architecture], AllocateCommonBuffer, PALLOCATE_COMMON_BUFFER, PALLOCATE_COMMON_BUFFER, wdm/AllocateCommonBuffer, kdma_0e4a27db-db3e-48db-81c2-d83a342a0cbc.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : IrqlDispatch
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
-req.product : Windows 10 or later.
+UID: NC:wdm.PALLOCATE_COMMON_BUFFER
+title: PALLOCATE_COMMON_BUFFER
+author: windows-driver-content
+description: The AllocateCommonBuffer routine allocates memory and maps it so that it is simultaneously accessible from both the processor and a device for DMA operations.
+old-location: kernel\allocatecommonbuffer.htm
+old-project: kernel
+ms.assetid: 4edaae35-8ac4-4a7a-949b-8a86b45ff391
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.allocatecommonbuffer, AllocateCommonBuffer, AllocateCommonBuffer callback function [Kernel-Mode Driver Architecture], AllocateCommonBuffer, PALLOCATE_COMMON_BUFFER, PALLOCATE_COMMON_BUFFER, wdm/AllocateCommonBuffer, kdma_0e4a27db-db3e-48db-81c2-d83a342a0cbc.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: IrqlDispatch
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Wdm.h
+apiname:
+-	AllocateCommonBuffer
+product: Windows
+targetos: Windows
+req.typenames: WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+req.product: Windows 10 or later.
 ---
 
 

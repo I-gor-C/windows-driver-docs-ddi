@@ -1,41 +1,46 @@
 ---
-UID : NF:fcb.RxCreateNetFcb
-title : RxCreateNetFcb function
-author : windows-driver-content
-description : RxCreateNetFCB allocates, initializes, and inserts a new FCB structure into the in-memory data structures for a V_NET_ROOT that this FCB is being opened on. The structure allocated has space for a SRV_OPEN and an FOBX structure.
-old-location : ifsk\rxcreatenetfcb.htm
-old-project : ifsk
-ms.assetid : 8be20f25-d72d-4c4d-be05-abb38cdd492d
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : fcb/RxCreateNetFcb, rxref_d5f0cde4-daba-475d-9a63-b56047cc24e2.xml, ifsk.rxcreatenetfcb, RxCreateNetFcb function [Installable File System Drivers], RxCreateNetFcb
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fcb.h
-req.include-header : Rxcontx.h, Mrxfcb.h, Fcb.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FA_ENTRY, *PFA_ENTRY
+UID: NF:fcb.RxCreateNetFcb
+title: RxCreateNetFcb function
+author: windows-driver-content
+description: RxCreateNetFCB allocates, initializes, and inserts a new FCB structure into the in-memory data structures for a V_NET_ROOT that this FCB is being opened on. The structure allocated has space for a SRV_OPEN and an FOBX structure.
+old-location: ifsk\rxcreatenetfcb.htm
+old-project: ifsk
+ms.assetid: 8be20f25-d72d-4c4d-be05-abb38cdd492d
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: fcb/RxCreateNetFcb, rxref_d5f0cde4-daba-475d-9a63-b56047cc24e2.xml, ifsk.rxcreatenetfcb, RxCreateNetFcb function [Installable File System Drivers], RxCreateNetFcb
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fcb.h
+req.include-header: Rxcontx.h, Mrxfcb.h, Fcb.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	fcb.h
+apiname:
+-	RxCreateNetFcb
+product: Windows
+targetos: Windows
+req.typenames: FA_ENTRY, *PFA_ENTRY
 ---
 
 

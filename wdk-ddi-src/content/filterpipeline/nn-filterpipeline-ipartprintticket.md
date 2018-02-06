@@ -1,41 +1,46 @@
 ---
-UID : NN:filterpipeline.IPartPrintTicket
-title : IPartPrintTicket
-author : windows-driver-content
-description : The IPartPrintTicket interface is the abstraction for a print ticket in an XPS document.
-old-location : print\ipartprintticket.htm
-old-project : print
-ms.assetid : 16dda4bb-69ff-420f-9802-7d7e0598928f
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : print.ipartprintticket, IPartPrintTicket interface [Print Devices], IPartPrintTicket interface [Print Devices], described, IPartPrintTicket, filterpipeline/IPartPrintTicket, filterpipeline_8b4eb977-4519-487f-a8b1-1d48cbb96aac.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : filterpipeline.h
-req.include-header : Filterpipeline.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : filterpipeline.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NN:filterpipeline.IPartPrintTicket
+title: IPartPrintTicket
+author: windows-driver-content
+description: The IPartPrintTicket interface is the abstraction for a print ticket in an XPS document.
+old-location: print\ipartprintticket.htm
+old-project: print
+ms.assetid: 16dda4bb-69ff-420f-9802-7d7e0598928f
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: print.ipartprintticket, IPartPrintTicket interface [Print Devices], IPartPrintTicket interface [Print Devices], described, IPartPrintTicket, filterpipeline/IPartPrintTicket, filterpipeline_8b4eb977-4519-487f-a8b1-1d48cbb96aac.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: filterpipeline.h
+req.include-header: Filterpipeline.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: filterpipeline.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	filterpipeline.h
+apiname:
+-	IPartPrintTicket
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 # IPartPrintTicket interface

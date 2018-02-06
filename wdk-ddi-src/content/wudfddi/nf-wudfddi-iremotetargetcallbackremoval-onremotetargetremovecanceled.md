@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IRemoteTargetCallbackRemoval.OnRemoteTargetRemoveCanceled
-title : IRemoteTargetCallbackRemoval::OnRemoteTargetRemoveCanceled method
-author : windows-driver-content
-description : A UMDF-based driver's OnRemoteTargetRemoveCanceled event callback function performs operations that are necessary when the operating system cancels the removal of a remote I/O target's device.
-old-location : wdf\iremotetargetcallbackremoval_onremotetargetremovecanceled.htm
-old-project : wdf
-ms.assetid : 26a6e9e7-f1bb-4174-a640-f665cecfd191
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : IRemoteTargetCallbackRemoval, OnRemoteTargetRemoveCanceled method, OnRemoteTargetRemoveCanceled, OnRemoteTargetRemoveCanceled method, IRemoteTargetCallbackRemoval interface, IRemoteTargetCallbackRemoval::OnRemoteTargetRemoveCanceled, UMDFIoTargetObjectRef_aa4d89fd-ad91-46ea-a55d-4c89d65da13e.xml, umdf.iremotetargetcallbackremoval_onremotetargetremovecanceled, IRemoteTargetCallbackRemoval interface, OnRemoteTargetRemoveCanceled method, wudfddi/IRemoteTargetCallbackRemoval::OnRemoteTargetRemoveCanceled, wdf.iremotetargetcallbackremoval_onremotetargetremovecanceled
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.9
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IRemoteTargetCallbackRemoval.OnRemoteTargetRemoveCanceled
+title: IRemoteTargetCallbackRemoval::OnRemoteTargetRemoveCanceled method
+author: windows-driver-content
+description: A UMDF-based driver's OnRemoteTargetRemoveCanceled event callback function performs operations that are necessary when the operating system cancels the removal of a remote I/O target's device.
+old-location: wdf\iremotetargetcallbackremoval_onremotetargetremovecanceled.htm
+old-project: wdf
+ms.assetid: 26a6e9e7-f1bb-4174-a640-f665cecfd191
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: IRemoteTargetCallbackRemoval, OnRemoteTargetRemoveCanceled method, OnRemoteTargetRemoveCanceled, OnRemoteTargetRemoveCanceled method, IRemoteTargetCallbackRemoval interface, IRemoteTargetCallbackRemoval::OnRemoteTargetRemoveCanceled, UMDFIoTargetObjectRef_aa4d89fd-ad91-46ea-a55d-4c89d65da13e.xml, umdf.iremotetargetcallbackremoval_onremotetargetremovecanceled, IRemoteTargetCallbackRemoval interface, OnRemoteTargetRemoveCanceled method, wudfddi/IRemoteTargetCallbackRemoval::OnRemoteTargetRemoveCanceled, wdf.iremotetargetcallbackremoval_onremotetargetremovecanceled
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.9
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Wudfddi.h
+apiname:
+-	IRemoteTargetCallbackRemoval.OnRemoteTargetRemoveCanceled
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

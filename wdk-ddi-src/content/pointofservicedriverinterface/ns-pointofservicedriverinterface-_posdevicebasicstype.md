@@ -1,41 +1,46 @@
 ---
-UID : NS:pointofservicedriverinterface._PosDeviceBasicsType
-title : "_PosDeviceBasicsType"
-author : windows-driver-content
-description : This structure indicates the type of device, version, and recommended buffer size as specified by the driver.
-old-location : pos\posdevicebasicstype.htm
-old-project : pos
-ms.assetid : 5f882f37-0554-48c0-b4a0-026d42452f56
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : PosDeviceBasicsType structure, PosDeviceBasicsType, pos.posdevicebasicstype, pointofservicedriverinterface/PosDeviceBasicsType, _PosDeviceBasicsType
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : pointofservicedriverinterface.h
-req.include-header : PointOfServiceDriverInterface.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PosDeviceBasicsType
+UID: NS:pointofservicedriverinterface._PosDeviceBasicsType
+title: "_PosDeviceBasicsType"
+author: windows-driver-content
+description: This structure indicates the type of device, version, and recommended buffer size as specified by the driver.
+old-location: pos\posdevicebasicstype.htm
+old-project: pos
+ms.assetid: 5f882f37-0554-48c0-b4a0-026d42452f56
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: PosDeviceBasicsType structure, PosDeviceBasicsType, pos.posdevicebasicstype, pointofservicedriverinterface/PosDeviceBasicsType, _PosDeviceBasicsType
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: pointofservicedriverinterface.h
+req.include-header: PointOfServiceDriverInterface.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	PointOfServiceDriverInterface.h
+apiname:
+-	PosDeviceBasicsType
+product: Windows
+targetos: Windows
+req.typenames: PosDeviceBasicsType
 ---
 
 # _PosDeviceBasicsType structure

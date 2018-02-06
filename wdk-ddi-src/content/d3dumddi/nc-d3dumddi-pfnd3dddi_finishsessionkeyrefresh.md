@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_FINISHSESSIONKEYREFRESH
-title : PFND3DDDI_FINISHSESSIONKEYREFRESH
-author : windows-driver-content
-description : The FinishSessionKeyRefresh function indicates that all buffers from that point in time use the updated session key value.
-old-location : display\finishsessionkeyrefresh.htm
-old-project : display
-ms.assetid : e245f6f9-f4ea-429d-8421-be4fef1bf17e
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.finishsessionkeyrefresh, FinishSessionKeyRefresh callback function [Display Devices], FinishSessionKeyRefresh, PFND3DDDI_FINISHSESSIONKEYREFRESH, PFND3DDDI_FINISHSESSIONKEYREFRESH, d3dumddi/FinishSessionKeyRefresh, UserModeDisplayDriver_Functions_6b7be711-8539-4b49-99d0-efbd424b33cc.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : The FinishSessionKeyRefresh function is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_FINISHSESSIONKEYREFRESH
+title: PFND3DDDI_FINISHSESSIONKEYREFRESH
+author: windows-driver-content
+description: The FinishSessionKeyRefresh function indicates that all buffers from that point in time use the updated session key value.
+old-location: display\finishsessionkeyrefresh.htm
+old-project: display
+ms.assetid: e245f6f9-f4ea-429d-8421-be4fef1bf17e
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.finishsessionkeyrefresh, FinishSessionKeyRefresh callback function [Display Devices], FinishSessionKeyRefresh, PFND3DDDI_FINISHSESSIONKEYREFRESH, PFND3DDDI_FINISHSESSIONKEYREFRESH, d3dumddi/FinishSessionKeyRefresh, UserModeDisplayDriver_Functions_6b7be711-8539-4b49-99d0-efbd424b33cc.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: The FinishSessionKeyRefresh function is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	FinishSessionKeyRefresh
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

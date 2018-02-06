@@ -1,41 +1,46 @@
 ---
-UID : NS:pepfx._PEP_PROCESSOR_PARK_PREFERENCE
-title : "_PEP_PROCESSOR_PARK_PREFERENCE"
-author : windows-driver-content
-description : The PEP_PROCESSOR_PARK_PREFERENCE structure indicates the preferences of the operating system and platform extension plug-in (PEP) regarding whether the specified processor should be parked to reduce power consumption.
-old-location : kernel\pep_processor_park_preference.htm
-old-project : kernel
-ms.assetid : AADA3F1E-DEE8-42E3-B0B8-9EA276F46F86
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : PEP_PROCESSOR_PARK_PREFERENCE structure [Kernel-Mode Driver Architecture], pepfx/PEP_PROCESSOR_PARK_PREFERENCE, PPEP_PROCESSOR_PARK_PREFERENCE, pepfx/PPEP_PROCESSOR_PARK_PREFERENCE, _PEP_PROCESSOR_PARK_PREFERENCE, PPEP_PROCESSOR_PARK_PREFERENCE structure pointer [Kernel-Mode Driver Architecture], *PPEP_PROCESSOR_PARK_PREFERENCE, PEP_PROCESSOR_PARK_PREFERENCE, kernel.pep_processor_park_preference
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : pepfx.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with Windows 10.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PEP_PROCESSOR_PARK_PREFERENCE, *PPEP_PROCESSOR_PARK_PREFERENCE
+UID: NS:pepfx._PEP_PROCESSOR_PARK_PREFERENCE
+title: "_PEP_PROCESSOR_PARK_PREFERENCE"
+author: windows-driver-content
+description: The PEP_PROCESSOR_PARK_PREFERENCE structure indicates the preferences of the operating system and platform extension plug-in (PEP) regarding whether the specified processor should be parked to reduce power consumption.
+old-location: kernel\pep_processor_park_preference.htm
+old-project: kernel
+ms.assetid: AADA3F1E-DEE8-42E3-B0B8-9EA276F46F86
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: PEP_PROCESSOR_PARK_PREFERENCE structure [Kernel-Mode Driver Architecture], pepfx/PEP_PROCESSOR_PARK_PREFERENCE, PPEP_PROCESSOR_PARK_PREFERENCE, pepfx/PPEP_PROCESSOR_PARK_PREFERENCE, _PEP_PROCESSOR_PARK_PREFERENCE, PPEP_PROCESSOR_PARK_PREFERENCE structure pointer [Kernel-Mode Driver Architecture], *PPEP_PROCESSOR_PARK_PREFERENCE, PEP_PROCESSOR_PARK_PREFERENCE, kernel.pep_processor_park_preference
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: pepfx.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows 10.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	pepfx.h
+apiname:
+-	PEP_PROCESSOR_PARK_PREFERENCE
+product: Windows
+targetos: Windows
+req.typenames: PEP_PROCESSOR_PARK_PREFERENCE, *PPEP_PROCESSOR_PARK_PREFERENCE
 ---
 
 # _PEP_PROCESSOR_PARK_PREFERENCE structure

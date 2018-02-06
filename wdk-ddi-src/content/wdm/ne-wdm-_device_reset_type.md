@@ -1,42 +1,47 @@
 ---
-UID : NE:wdm._DEVICE_RESET_TYPE
-title : "_DEVICE_RESET_TYPE"
-author : windows-driver-content
-description : The DEVICE_RESET_TYPE enumeration specifies the type of device reset that is being requested by a call to the DeviceReset routine of the GUID_DEVICE_RESET_INTERFACE_STANDARD interface.
-old-location : kernel\device_reset_type.htm
-old-project : kernel
-ms.assetid : 598044D9-8B99-453C-96FE-9B04C980BB3A
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/DEVICE_RESET_TYPE, DEVICE_RESET_TYPE, wdm/FunctionLevelDeviceReset, PlatformLevelDeviceReset, DEVICE_RESET_TYPE enumeration [Kernel-Mode Driver Architecture], FunctionLevelDeviceReset, wdm/PlatformLevelDeviceReset, kernel.device_reset_type, _DEVICE_RESET_TYPE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : wdm.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DEVICE_RESET_TYPE
-req.product : Windows 10 or later.
+UID: NE:wdm._DEVICE_RESET_TYPE
+title: "_DEVICE_RESET_TYPE"
+author: windows-driver-content
+description: The DEVICE_RESET_TYPE enumeration specifies the type of device reset that is being requested by a call to the DeviceReset routine of the GUID_DEVICE_RESET_INTERFACE_STANDARD interface.
+old-location: kernel\device_reset_type.htm
+old-project: kernel
+ms.assetid: 598044D9-8B99-453C-96FE-9B04C980BB3A
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/DEVICE_RESET_TYPE, DEVICE_RESET_TYPE, wdm/FunctionLevelDeviceReset, PlatformLevelDeviceReset, DEVICE_RESET_TYPE enumeration [Kernel-Mode Driver Architecture], FunctionLevelDeviceReset, wdm/PlatformLevelDeviceReset, kernel.device_reset_type, _DEVICE_RESET_TYPE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: wdm.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	DEVICE_RESET_TYPE
+product: Windows
+targetos: Windows
+req.typenames: DEVICE_RESET_TYPE
+req.product: Windows 10 or later.
 ---
 
 # _DEVICE_RESET_TYPE Enumeration
@@ -53,16 +58,16 @@ typedef enum _DEVICE_RESET_TYPE {
 ## Constants
 
 <table>
-
-<tr>
-<td>FunctionLevelDeviceReset</td>
-<td>A function-level device reset, which is restricted to a specific device.</td>
-</tr>
-
-<tr>
-<td>PlatformLevelDeviceReset</td>
-<td>A platform-level device reset, which affects a specific device and all other devices that are connected to it via the same power rail or reset line.</td>
-</tr>
+            
+                <tr>
+                    <td>FunctionLevelDeviceReset</td>
+                    <td>A function-level device reset, which is restricted to a specific device.</td>
+                </tr>
+            
+                <tr>
+                    <td>PlatformLevelDeviceReset</td>
+                    <td>A platform-level device reset, which affects a specific device and all other devices that are connected to it via the same power rail or reset line.</td>
+                </tr>
 </table>
 
 
@@ -71,9 +76,9 @@ typedef enum _DEVICE_RESET_TYPE {
 | ---- |:---- |
 | **Header** | wdm.h |
 
-## See Also
+    ## See Also
 
-<a href="..\wdm\ns-wdm-_device_reset_interface_standard.md">DEVICE_RESET_INTERFACE_STANDARD</a>
+        <a href="..\wdm\ns-wdm-_device_reset_interface_standard.md">DEVICE_RESET_INTERFACE_STANDARD</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/dn939354">DeviceReset</a>
 

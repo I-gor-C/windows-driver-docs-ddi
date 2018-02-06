@@ -1,41 +1,47 @@
 ---
-UID : NF:fwpsk.FwpsRedirectHandleCreate0
-title : FwpsRedirectHandleCreate0 function
-author : windows-driver-content
-description : The FwpsRedirectHandleCreate0 function creates a handle that connection redirection functions can use to redirect connections to a local process.
-old-location : netvista\fwpsredirecthandlecreate0.htm
-old-project : netvista
-ms.assetid : 841f3885-509a-457e-854d-e8ead657de54
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : FwpsRedirectHandleCreate0 function [Network Drivers Starting with Windows Vista], FwpsRedirectHandleCreate0, fwpsk/FwpsRedirectHandleCreate0, netvista.fwpsredirecthandlecreate0
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fwpsk.h
-req.include-header : Fwpsk.h
-req.target-type : Universal
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Fwpkclnt.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FWPS_VSWITCH_EVENT_TYPE
+UID: NF:fwpsk.FwpsRedirectHandleCreate0
+title: FwpsRedirectHandleCreate0 function
+author: windows-driver-content
+description: The FwpsRedirectHandleCreate0 function creates a handle that connection redirection functions can use to redirect connections to a local process.
+old-location: netvista\fwpsredirecthandlecreate0.htm
+old-project: netvista
+ms.assetid: 841f3885-509a-457e-854d-e8ead657de54
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: FwpsRedirectHandleCreate0 function [Network Drivers Starting with Windows Vista], FwpsRedirectHandleCreate0, fwpsk/FwpsRedirectHandleCreate0, netvista.fwpsredirecthandlecreate0
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fwpsk.h
+req.include-header: Fwpsk.h
+req.target-type: Universal
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Fwpkclnt.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	fwpkclnt.lib
+-	fwpkclnt.dll
+apiname:
+-	FwpsRedirectHandleCreate0
+product: Windows
+targetos: Windows
+req.typenames: FWPS_VSWITCH_EVENT_TYPE
 ---
 
 

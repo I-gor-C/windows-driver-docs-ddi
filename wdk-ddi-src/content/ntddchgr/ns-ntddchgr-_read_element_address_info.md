@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddchgr._READ_ELEMENT_ADDRESS_INFO
-title : "_READ_ELEMENT_ADDRESS_INFO"
-author : windows-driver-content
-description : This structure is to retrieve changer elements based on a search criterion specified in a call to the ChangerQueryVolumeTags routine.
-old-location : storage\read_element_address_info.htm
-old-project : storage
-ms.assetid : 5fc5b38e-8eef-4ba0-9f29-025df55e4525
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : ntddchgr/PREAD_ELEMENT_ADDRESS_INFO, READ_ELEMENT_ADDRESS_INFO structure [Storage Devices], structs-changer_5137d1a1-82bb-4333-b555-45bc1c8cc0bf.xml, PREAD_ELEMENT_ADDRESS_INFO, _READ_ELEMENT_ADDRESS_INFO, ntddchgr/READ_ELEMENT_ADDRESS_INFO, PREAD_ELEMENT_ADDRESS_INFO structure pointer [Storage Devices], storage.read_element_address_info, READ_ELEMENT_ADDRESS_INFO, *PREAD_ELEMENT_ADDRESS_INFO
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddchgr.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PREAD_ELEMENT_ADDRESS_INFO, READ_ELEMENT_ADDRESS_INFO"
+UID: NS:ntddchgr._READ_ELEMENT_ADDRESS_INFO
+title: "_READ_ELEMENT_ADDRESS_INFO"
+author: windows-driver-content
+description: This structure is to retrieve changer elements based on a search criterion specified in a call to the ChangerQueryVolumeTags routine.
+old-location: storage\read_element_address_info.htm
+old-project: storage
+ms.assetid: 5fc5b38e-8eef-4ba0-9f29-025df55e4525
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: ntddchgr/PREAD_ELEMENT_ADDRESS_INFO, READ_ELEMENT_ADDRESS_INFO structure [Storage Devices], structs-changer_5137d1a1-82bb-4333-b555-45bc1c8cc0bf.xml, PREAD_ELEMENT_ADDRESS_INFO, _READ_ELEMENT_ADDRESS_INFO, ntddchgr/READ_ELEMENT_ADDRESS_INFO, PREAD_ELEMENT_ADDRESS_INFO structure pointer [Storage Devices], storage.read_element_address_info, READ_ELEMENT_ADDRESS_INFO, *PREAD_ELEMENT_ADDRESS_INFO
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddchgr.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddchgr.h
+apiname:
+-	READ_ELEMENT_ADDRESS_INFO
+product: Windows
+targetos: Windows
+req.typenames: "*PREAD_ELEMENT_ADDRESS_INFO, READ_ELEMENT_ADDRESS_INFO"
 ---
 
 # _READ_ELEMENT_ADDRESS_INFO structure

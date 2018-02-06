@@ -1,41 +1,46 @@
 ---
-UID : NS:ntifs._FSRTL_PER_STREAM_CONTEXT
-title : "_FSRTL_PER_STREAM_CONTEXT"
-author : windows-driver-content
-description : The FSRTL_PER_STREAM_CONTEXT structure contains context information that a file system filter driver maintains about a file stream.
-old-location : ifsk\fsrtl_per_stream_context.htm
-old-project : ifsk
-ms.assetid : 108c224c-ae42-414f-951d-cb225059d525
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FSRTL_PER_STREAM_CONTEXT structure [Installable File System Drivers], ntifs/FSRTL_PER_STREAM_CONTEXT, contextstructures_c3576880-65f8-4340-b1d2-82d66f8e4f30.xml, FSRTL_PER_STREAM_CONTEXT, _FSRTL_PER_STREAM_CONTEXT, PFSRTL_PER_STREAM_CONTEXT, *PFSRTL_PER_STREAM_CONTEXT, PFSRTL_PER_STREAM_CONTEXT structure pointer [Installable File System Drivers], ntifs/PFSRTL_PER_STREAM_CONTEXT, ifsk.fsrtl_per_stream_context
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : This structure is available on Microsoft Windows XP and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FSRTL_PER_STREAM_CONTEXT, *PFSRTL_PER_STREAM_CONTEXT
+UID: NS:ntifs._FSRTL_PER_STREAM_CONTEXT
+title: "_FSRTL_PER_STREAM_CONTEXT"
+author: windows-driver-content
+description: The FSRTL_PER_STREAM_CONTEXT structure contains context information that a file system filter driver maintains about a file stream.
+old-location: ifsk\fsrtl_per_stream_context.htm
+old-project: ifsk
+ms.assetid: 108c224c-ae42-414f-951d-cb225059d525
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FSRTL_PER_STREAM_CONTEXT structure [Installable File System Drivers], ntifs/FSRTL_PER_STREAM_CONTEXT, contextstructures_c3576880-65f8-4340-b1d2-82d66f8e4f30.xml, FSRTL_PER_STREAM_CONTEXT, _FSRTL_PER_STREAM_CONTEXT, PFSRTL_PER_STREAM_CONTEXT, *PFSRTL_PER_STREAM_CONTEXT, PFSRTL_PER_STREAM_CONTEXT structure pointer [Installable File System Drivers], ntifs/PFSRTL_PER_STREAM_CONTEXT, ifsk.fsrtl_per_stream_context
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: This structure is available on Microsoft Windows XP and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntifs.h
+apiname:
+-	FSRTL_PER_STREAM_CONTEXT
+product: Windows
+targetos: Windows
+req.typenames: FSRTL_PER_STREAM_CONTEXT, *PFSRTL_PER_STREAM_CONTEXT
 ---
 
 # _FSRTL_PER_STREAM_CONTEXT structure

@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.MmMapLockedPages
-title : MmMapLockedPages function
-author : windows-driver-content
-description : The MmMapLockedPages routine is obsolete for Windows 2000 and later versions of Windows, and for Windows Me.
-old-location : kernel\mmmaplockedpages.htm
-old-project : kernel
-ms.assetid : f27b7622-614b-4c9e-8253-51f4638e5eb0
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/MmMapLockedPages, MmMapLockedPages, kernel.mmmaplockedpages, k106_009bdc6a-6bbc-4a7f-927e-ea5c6de8fa95.xml, MmMapLockedPages routine [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Obsolete for Windows 2000 and later versions of Windows, and for Windows Me. This routine is supported only for WDM drivers that must run on Windows 98. Otherwise, use MmMapLockedPagesSpecifyCache.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.MmMapLockedPages
+title: MmMapLockedPages function
+author: windows-driver-content
+description: The MmMapLockedPages routine is obsolete for Windows 2000 and later versions of Windows, and for Windows Me.
+old-location: kernel\mmmaplockedpages.htm
+old-project: kernel
+ms.assetid: f27b7622-614b-4c9e-8253-51f4638e5eb0
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/MmMapLockedPages, MmMapLockedPages, kernel.mmmaplockedpages, k106_009bdc6a-6bbc-4a7f-927e-ea5c6de8fa95.xml, MmMapLockedPages routine [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Obsolete for Windows 2000 and later versions of Windows, and for Windows Me. This routine is supported only for WDM drivers that must run on Windows 98. Otherwise, use MmMapLockedPagesSpecifyCache.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	MmMapLockedPages
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

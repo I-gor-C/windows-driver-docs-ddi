@@ -1,42 +1,47 @@
 ---
-UID : NS:wmistr.tagWNODE_SINGLE_INSTANCE
-title : tagWNODE_SINGLE_INSTANCE
-author : windows-driver-content
-description : The WNODE_SINGLE_INSTANCE structure contains values for all data items in one instance of a data block.
-old-location : kernel\wnode_single_instance.htm
-old-project : kernel
-ms.assetid : 03e922af-f42a-4801-adc5-fc7a0b90f4a7
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : PWNODE_SINGLE_INSTANCE, tagWNODE_SINGLE_INSTANCE, WNODE_SINGLE_INSTANCE structure [Kernel-Mode Driver Architecture], PWNODE_SINGLE_INSTANCE structure pointer [Kernel-Mode Driver Architecture], wmistr/WNODE_SINGLE_INSTANCE, WNODE_SINGLE_INSTANCE, wmistr/PWNODE_SINGLE_INSTANCE, kernel.wnode_single_instance, kstruct_d_c6ae2ea3-5e64-466d-b479-02a9eea71b20.xml, *PWNODE_SINGLE_INSTANCE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wmistr.h
-req.include-header : Wmistr.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WNODE_SINGLE_INSTANCE, *PWNODE_SINGLE_INSTANCE
-req.product : Windows 10 or later.
+UID: NS:wmistr.tagWNODE_SINGLE_INSTANCE
+title: tagWNODE_SINGLE_INSTANCE
+author: windows-driver-content
+description: The WNODE_SINGLE_INSTANCE structure contains values for all data items in one instance of a data block.
+old-location: kernel\wnode_single_instance.htm
+old-project: kernel
+ms.assetid: 03e922af-f42a-4801-adc5-fc7a0b90f4a7
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: PWNODE_SINGLE_INSTANCE, tagWNODE_SINGLE_INSTANCE, WNODE_SINGLE_INSTANCE structure [Kernel-Mode Driver Architecture], PWNODE_SINGLE_INSTANCE structure pointer [Kernel-Mode Driver Architecture], wmistr/WNODE_SINGLE_INSTANCE, WNODE_SINGLE_INSTANCE, wmistr/PWNODE_SINGLE_INSTANCE, kernel.wnode_single_instance, kstruct_d_c6ae2ea3-5e64-466d-b479-02a9eea71b20.xml, *PWNODE_SINGLE_INSTANCE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wmistr.h
+req.include-header: Wmistr.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wmistr.h
+apiname:
+-	WNODE_SINGLE_INSTANCE
+product: Windows
+targetos: Windows
+req.typenames: WNODE_SINGLE_INSTANCE, *PWNODE_SINGLE_INSTANCE
+req.product: Windows 10 or later.
 ---
 
 # tagWNODE_SINGLE_INSTANCE structure

@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.KeInitializeMutex
-title : KeInitializeMutex function
-author : windows-driver-content
-description : The KeInitializeMutex routine initializes a mutex object, setting it to a signaled state.
-old-location : kernel\keinitializemutex.htm
-old-project : kernel
-ms.assetid : dca6c4a7-66e0-4bdd-9fdd-a32d49836980
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : k105_0e268ff3-6e9d-41ab-acfd-0bb71e973115.xml, wdm/KeInitializeMutex, KeInitializeMutex routine [Kernel-Mode Driver Architecture], KeInitializeMutex, kernel.keinitializemutex
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.KeInitializeMutex
+title: KeInitializeMutex function
+author: windows-driver-content
+description: The KeInitializeMutex routine initializes a mutex object, setting it to a signaled state.
+old-location: kernel\keinitializemutex.htm
+old-project: kernel
+ms.assetid: dca6c4a7-66e0-4bdd-9fdd-a32d49836980
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: k105_0e268ff3-6e9d-41ab-acfd-0bb71e973115.xml, wdm/KeInitializeMutex, KeInitializeMutex routine [Kernel-Mode Driver Architecture], KeInitializeMutex, kernel.keinitializemutex
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	KeInitializeMutex
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

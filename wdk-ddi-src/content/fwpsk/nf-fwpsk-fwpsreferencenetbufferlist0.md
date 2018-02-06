@@ -1,41 +1,47 @@
 ---
-UID : NF:fwpsk.FwpsReferenceNetBufferList0
-title : FwpsReferenceNetBufferList0 function
-author : windows-driver-content
-description : The FwpsReferenceNetBufferList0 function increments the reference count for a NET_BUFFER_LIST structure.Note  FwpsReferenceNetBufferList0 is a specific version of FwpsReferenceNetBufferList.
-old-location : netvista\fwpsreferencenetbufferlist0.htm
-old-project : netvista
-ms.assetid : ff387b49-fecb-41d0-aac5-0a83eb8835d6
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.fwpsreferencenetbufferlist0, fwpsk/FwpsReferenceNetBufferList0, wfp_ref_2_funct_3_fwps_R-Z_87b01939-7e75-4049-ae3a-07db074a3e62.xml, FwpsReferenceNetBufferList0 function [Network Drivers Starting with Windows Vista], FwpsReferenceNetBufferList0
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fwpsk.h
-req.include-header : Fwpsk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Fwpkclnt.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FWPS_VSWITCH_EVENT_TYPE
+UID: NF:fwpsk.FwpsReferenceNetBufferList0
+title: FwpsReferenceNetBufferList0 function
+author: windows-driver-content
+description: The FwpsReferenceNetBufferList0 function increments the reference count for a NET_BUFFER_LIST structure.Note  FwpsReferenceNetBufferList0 is a specific version of FwpsReferenceNetBufferList.
+old-location: netvista\fwpsreferencenetbufferlist0.htm
+old-project: netvista
+ms.assetid: ff387b49-fecb-41d0-aac5-0a83eb8835d6
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.fwpsreferencenetbufferlist0, fwpsk/FwpsReferenceNetBufferList0, wfp_ref_2_funct_3_fwps_R-Z_87b01939-7e75-4049-ae3a-07db074a3e62.xml, FwpsReferenceNetBufferList0 function [Network Drivers Starting with Windows Vista], FwpsReferenceNetBufferList0
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fwpsk.h
+req.include-header: Fwpsk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Fwpkclnt.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	fwpkclnt.lib
+-	fwpkclnt.dll
+apiname:
+-	FwpsReferenceNetBufferList0
+product: Windows
+targetos: Windows
+req.typenames: FWPS_VSWITCH_EVENT_TYPE
 ---
 
 

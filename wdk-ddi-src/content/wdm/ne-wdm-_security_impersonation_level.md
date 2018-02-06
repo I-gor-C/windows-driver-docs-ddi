@@ -1,42 +1,47 @@
 ---
-UID : NE:wdm._SECURITY_IMPERSONATION_LEVEL
-title : "_SECURITY_IMPERSONATION_LEVEL"
-author : windows-driver-content
-description : The SECURITY_IMPERSONATION_LEVEL enumeration type contains values that specify security impersonation levels. Security impersonation levels govern the degree to which a server process can act on behalf of a client process.
-old-location : ifsk\security_impersonation_level.htm
-old-project : ifsk
-ms.assetid : 6033b33f-74cd-4034-baff-a931b7add370
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : "*PSECURITY_IMPERSONATION_LEVEL, wdm/SECURITY_IMPERSONATION_LEVEL, wdm/PSECURITY_IMPERSONATION_LEVEL, PSECURITY_IMPERSONATION_LEVEL, SECURITY_IMPERSONATION_LEVEL, SECURITY_IMPERSONATION_LEVEL enumeration [Installable File System Drivers], _SECURITY_IMPERSONATION_LEVEL, SecurityDelegation, wdm/SecurityIdentification, PSECURITY_IMPERSONATION_LEVEL enumeration pointer [Installable File System Drivers], SecurityIdentification, securitystructures_d049c4aa-1df4-46b1-b789-01f04e939de2.xml, SecurityAnonymous, wdm/SecurityAnonymous, ifsk.security_impersonation_level, SecurityImpersonation, wdm/SecurityImpersonation, wdm/SecurityDelegation"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h, Fltkernel.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSECURITY_IMPERSONATION_LEVEL, SECURITY_IMPERSONATION_LEVEL"
-req.product : Windows 10 or later.
+UID: NE:wdm._SECURITY_IMPERSONATION_LEVEL
+title: "_SECURITY_IMPERSONATION_LEVEL"
+author: windows-driver-content
+description: The SECURITY_IMPERSONATION_LEVEL enumeration type contains values that specify security impersonation levels. Security impersonation levels govern the degree to which a server process can act on behalf of a client process.
+old-location: ifsk\security_impersonation_level.htm
+old-project: ifsk
+ms.assetid: 6033b33f-74cd-4034-baff-a931b7add370
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: "*PSECURITY_IMPERSONATION_LEVEL, wdm/SECURITY_IMPERSONATION_LEVEL, wdm/PSECURITY_IMPERSONATION_LEVEL, PSECURITY_IMPERSONATION_LEVEL, SECURITY_IMPERSONATION_LEVEL, SECURITY_IMPERSONATION_LEVEL enumeration [Installable File System Drivers], _SECURITY_IMPERSONATION_LEVEL, SecurityDelegation, wdm/SecurityIdentification, PSECURITY_IMPERSONATION_LEVEL enumeration pointer [Installable File System Drivers], SecurityIdentification, securitystructures_d049c4aa-1df4-46b1-b789-01f04e939de2.xml, SecurityAnonymous, wdm/SecurityAnonymous, ifsk.security_impersonation_level, SecurityImpersonation, wdm/SecurityImpersonation, wdm/SecurityDelegation"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h, Fltkernel.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdm.h
+apiname:
+-	SECURITY_IMPERSONATION_LEVEL
+product: Windows
+targetos: Windows
+req.typenames: "*PSECURITY_IMPERSONATION_LEVEL, SECURITY_IMPERSONATION_LEVEL"
+req.product: Windows 10 or later.
 ---
 
 # _SECURITY_IMPERSONATION_LEVEL Enumeration
@@ -55,33 +60,33 @@ typedef enum _SECURITY_IMPERSONATION_LEVEL {
 ## Constants
 
 <table>
-
-<tr>
-<td>SecurityAnonymous</td>
-<td>The server process cannot obtain identification information about the client and it cannot impersonate the client. It is defined with no value given, and thus, by ANSI C rules, defaults to a value of zero.</td>
-</tr>
-
-<tr>
-<td>SecurityDelegation</td>
-<td>The server process can impersonate the client's security context on remote systems. 
+            
+                <tr>
+                    <td>SecurityAnonymous</td>
+                    <td>The server process cannot obtain identification information about the client and it cannot impersonate the client. It is defined with no value given, and thus, by ANSI C rules, defaults to a value of zero.</td>
+                </tr>
+            
+                <tr>
+                    <td>SecurityDelegation</td>
+                    <td>The server process can impersonate the client's security context on remote systems. 
 
  This impersonation level is supported starting with Windows 2000.</td>
-</tr>
-
-<tr>
-<td>SecurityIdentification</td>
-<td>The server process can obtain information about the client, such as security identifiers and privileges, but it cannot impersonate the client. This is useful for servers that export their own objects -- for example, database products that export tables and views. Using the retrieved client-security information, the server can make access-validation decisions without being able to utilize other services using the client's security context.</td>
-</tr>
-
-<tr>
-<td>SecurityImpersonation</td>
-<td>The server process can impersonate the client's security context on its local system. The server cannot impersonate the client on remote systems.</td>
-</tr>
+                </tr>
+            
+                <tr>
+                    <td>SecurityIdentification</td>
+                    <td>The server process can obtain information about the client, such as security identifiers and privileges, but it cannot impersonate the client. This is useful for servers that export their own objects -- for example, database products that export tables and views. Using the retrieved client-security information, the server can make access-validation decisions without being able to utilize other services using the client's security context.</td>
+                </tr>
+            
+                <tr>
+                    <td>SecurityImpersonation</td>
+                    <td>The server process can impersonate the client's security context on its local system. The server cannot impersonate the client on remote systems.</td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-Impersonation is the ability of a process to take on the security attributes of another process.
+        Impersonation is the ability of a process to take on the security attributes of another process.
 <div class="alert"><b>Note</b>  Be aware of the following derived types:<pre class="syntax" xml:space="preserve"><code>#define DEFAULT_IMPERSONATION_LEVEL SecurityImpersonation
 #define SECURITY_MAX_IMPERSONATION_LEVEL SecurityDelegation
 #define SECURITY_MIN_IMPERSONATION_LEVEL SecurityAnonymous // Windows XP and later only</code></pre>
@@ -92,9 +97,9 @@ Impersonation is the ability of a process to take on the security attributes of 
 | ---- |:---- |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h, Fltkernel.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\ntifs\nf-ntifs-psimpersonateclient.md">PsImpersonateClient</a>
+        <a href="..\ntifs\nf-ntifs-psimpersonateclient.md">PsImpersonateClient</a>
 
 <a href="..\wdm\ns-wdm-_security_subject_context.md">SECURITY_SUBJECT_CONTEXT</a>
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddchgr._CHANGER_ELEMENT_LIST
-title : "_CHANGER_ELEMENT_LIST"
-author : windows-driver-content
-description : The CHANGER_ELEMENT_LIST structure indicates a range of elements of a single type.
-old-location : storage\changer_element_list.htm
-old-project : storage
-ms.assetid : 6e85eaa7-d622-4b05-9efd-c1b6b7789c03
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : "*PCHANGER_ELEMENT_LIST, _CHANGER_ELEMENT_LIST, ntddchgr/CHANGER_ELEMENT_LIST, PCHANGER_ELEMENT_LIST, structs-changer_e1782d96-458d-49a5-9885-c853d835ba0a.xml, ntddchgr/PCHANGER_ELEMENT_LIST, PCHANGER_ELEMENT_LIST structure pointer [Storage Devices], CHANGER_ELEMENT_LIST, CHANGER_ELEMENT_LIST structure [Storage Devices], storage.changer_element_list"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddchgr.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PCHANGER_ELEMENT_LIST, CHANGER_ELEMENT_LIST"
+UID: NS:ntddchgr._CHANGER_ELEMENT_LIST
+title: "_CHANGER_ELEMENT_LIST"
+author: windows-driver-content
+description: The CHANGER_ELEMENT_LIST structure indicates a range of elements of a single type.
+old-location: storage\changer_element_list.htm
+old-project: storage
+ms.assetid: 6e85eaa7-d622-4b05-9efd-c1b6b7789c03
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: "*PCHANGER_ELEMENT_LIST, _CHANGER_ELEMENT_LIST, ntddchgr/CHANGER_ELEMENT_LIST, PCHANGER_ELEMENT_LIST, structs-changer_e1782d96-458d-49a5-9885-c853d835ba0a.xml, ntddchgr/PCHANGER_ELEMENT_LIST, PCHANGER_ELEMENT_LIST structure pointer [Storage Devices], CHANGER_ELEMENT_LIST, CHANGER_ELEMENT_LIST structure [Storage Devices], storage.changer_element_list"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddchgr.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddchgr.h
+apiname:
+-	CHANGER_ELEMENT_LIST
+product: Windows
+targetos: Windows
+req.typenames: "*PCHANGER_ELEMENT_LIST, CHANGER_ELEMENT_LIST"
 ---
 
 # _CHANGER_ELEMENT_LIST structure

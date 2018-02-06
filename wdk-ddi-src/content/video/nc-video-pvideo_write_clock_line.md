@@ -1,42 +1,47 @@
 ---
-UID : NC:video.PVIDEO_WRITE_CLOCK_LINE
-title : PVIDEO_WRITE_CLOCK_LINE
-author : windows-driver-content
-description : WriteClockLine sets the I2C serial clock line to high or low.
-old-location : display\writeclockline.htm
-old-project : display
-ms.assetid : 4dfd6223-420e-4087-b5bd-8277575321f7
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.writeclockline, WriteClockLine callback function [Display Devices], WriteClockLine, PVIDEO_WRITE_CLOCK_LINE, PVIDEO_WRITE_CLOCK_LINE, video/WriteClockLine, VideoMiniport_Functions_7d36df35-ac09-4a82-af0c-47a733617d9a.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VHF_CONFIG, *PVHF_CONFIG
-req.product : Windows 10 or later.
+UID: NC:video.PVIDEO_WRITE_CLOCK_LINE
+title: PVIDEO_WRITE_CLOCK_LINE
+author: windows-driver-content
+description: WriteClockLine sets the I2C serial clock line to high or low.
+old-location: display\writeclockline.htm
+old-project: display
+ms.assetid: 4dfd6223-420e-4087-b5bd-8277575321f7
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.writeclockline, WriteClockLine callback function [Display Devices], WriteClockLine, PVIDEO_WRITE_CLOCK_LINE, PVIDEO_WRITE_CLOCK_LINE, video/WriteClockLine, VideoMiniport_Functions_7d36df35-ac09-4a82-af0c-47a733617d9a.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	video.h
+apiname:
+-	WriteClockLine
+product: Windows
+targetos: Windows
+req.typenames: VHF_CONFIG, *PVHF_CONFIG
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NS:winspool._BIDI_RESPONSE_CONTAINER
-title : "_BIDI_RESPONSE_CONTAINER"
-author : windows-driver-content
-description : The BIDI_RESPONSE_CONTAINER structure is a container for a list of bidi responses.
-old-location : print\bidi_response_container.htm
-old-project : print
-ms.assetid : 26924dd2-ac67-408c-87e0-5cfb3281fe75
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : PBIDI_RESPONSE_CONTAINER, _BIDI_RESPONSE_CONTAINER, winspool/LPBIDI_RESPONSE_CONTAINER, LPBIDI_RESPONSE_CONTAINER structure pointer [Print Devices], winspool/PBIDI_RESPONSE_CONTAINER, *LPBIDI_RESPONSE_CONTAINER, spoolfnc_79e5354d-1fc1-4156-8be9-028ebcd14b16.xml, winspool/BIDI_RESPONSE_CONTAINER, LPBIDI_RESPONSE_CONTAINER, BIDI_RESPONSE_CONTAINER, *PBIDI_RESPONSE_CONTAINER, print.bidi_response_container, BIDI_RESPONSE_CONTAINER structure [Print Devices], PBIDI_RESPONSE_CONTAINER structure pointer [Print Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : winspool.h
-req.include-header : Winspool.h
-req.target-type : Windows
-req.target-min-winverclnt : This structure is available in Windows XP and later operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PBIDI_RESPONSE_CONTAINER, BIDI_RESPONSE_CONTAINER, *LPBIDI_RESPONSE_CONTAINER"
-req.product : Windows 10 or later.
+UID: NS:winspool._BIDI_RESPONSE_CONTAINER
+title: "_BIDI_RESPONSE_CONTAINER"
+author: windows-driver-content
+description: The BIDI_RESPONSE_CONTAINER structure is a container for a list of bidi responses.
+old-location: print\bidi_response_container.htm
+old-project: print
+ms.assetid: 26924dd2-ac67-408c-87e0-5cfb3281fe75
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: PBIDI_RESPONSE_CONTAINER, _BIDI_RESPONSE_CONTAINER, winspool/LPBIDI_RESPONSE_CONTAINER, LPBIDI_RESPONSE_CONTAINER structure pointer [Print Devices], winspool/PBIDI_RESPONSE_CONTAINER, *LPBIDI_RESPONSE_CONTAINER, spoolfnc_79e5354d-1fc1-4156-8be9-028ebcd14b16.xml, winspool/BIDI_RESPONSE_CONTAINER, LPBIDI_RESPONSE_CONTAINER, BIDI_RESPONSE_CONTAINER, *PBIDI_RESPONSE_CONTAINER, print.bidi_response_container, BIDI_RESPONSE_CONTAINER structure [Print Devices], PBIDI_RESPONSE_CONTAINER structure pointer [Print Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: winspool.h
+req.include-header: Winspool.h
+req.target-type: Windows
+req.target-min-winverclnt: This structure is available in Windows XP and later operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	winspool.h
+apiname:
+-	BIDI_RESPONSE_CONTAINER
+product: Windows
+targetos: Windows
+req.typenames: "*PBIDI_RESPONSE_CONTAINER, BIDI_RESPONSE_CONTAINER, *LPBIDI_RESPONSE_CONTAINER"
+req.product: Windows 10 or later.
 ---
 
 # _BIDI_RESPONSE_CONTAINER structure

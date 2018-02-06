@@ -1,42 +1,50 @@
 ---
-UID : NF:wdfobject.WdfObjectContextGetObject
-title : WdfObjectContextGetObject function
-author : windows-driver-content
-description : The WdfObjectContextGetObject method returns a handle to the framework object that a specified context space belongs to.
-old-location : wdf\wdfobjectcontextgetobject.htm
-old-project : wdf
-ms.assetid : 7288a7e5-8e64-4ac3-9779-edc27a3888bb
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : kmdf.wdfobjectcontextgetobject, DFGenObjectRef_cf11ce54-dbb0-4835-919d-6f0bec903e2d.xml, WdfObjectContextGetObject method, wdfobject/WdfObjectContextGetObject, PFN_WDFOBJECTCONTEXTGETOBJECT, WdfObjectContextGetObject, wdf.wdfobjectcontextgetobject
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfobject.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : DriverCreate
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_SYNCHRONIZATION_SCOPE
-req.product : Windows 10 or later.
+UID: NF:wdfobject.WdfObjectContextGetObject
+title: WdfObjectContextGetObject function
+author: windows-driver-content
+description: The WdfObjectContextGetObject method returns a handle to the framework object that a specified context space belongs to.
+old-location: wdf\wdfobjectcontextgetobject.htm
+old-project: wdf
+ms.assetid: 7288a7e5-8e64-4ac3-9779-edc27a3888bb
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: kmdf.wdfobjectcontextgetobject, DFGenObjectRef_cf11ce54-dbb0-4835-919d-6f0bec903e2d.xml, WdfObjectContextGetObject method, wdfobject/WdfObjectContextGetObject, PFN_WDFOBJECTCONTEXTGETOBJECT, WdfObjectContextGetObject, wdf.wdfobjectcontextgetobject
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfobject.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: DriverCreate
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+-	WUDFx02000.dll
+-	WUDFx02000.dll.dll
+apiname:
+-	WdfObjectContextGetObject
+product: Windows
+targetos: Windows
+req.typenames: WDF_SYNCHRONIZATION_SCOPE
+req.product: Windows 10 or later.
 ---
 
 

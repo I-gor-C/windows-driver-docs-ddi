@@ -1,42 +1,47 @@
 ---
-UID : NS:rxcontx._RX_CONTEXT
-title : "_RX_CONTEXT"
-author : windows-driver-content
-description : The RX_CONTEXT structure encapsulates an IRP for use by RDBSS, network mini-redirectors, and the file system.
-old-location : ifsk\rx_context.htm
-old-project : ifsk
-ms.assetid : 5eb83a7a-d6dd-445f-89a8-91cdf67512af
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : RX_CONTEXT, PRX_CONTEXT structure pointer [Installable File System Drivers], _RX_CONTEXT, PRX_CONTEXT, *PRX_CONTEXT, ifsk.rx_context, rxstructures_29a918c5-d689-4e7d-84fe-dfd8901ee484.xml, RX_CONTEXT structure [Installable File System Drivers], rxcontx/RX_CONTEXT, rxcontx/PRX_CONTEXT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : rxcontx.h
-req.include-header : Rx.h, Rxcontx.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RX_CONTEXT, *PRX_CONTEXT
-req.product : Windows 10 or later.
+UID: NS:rxcontx._RX_CONTEXT
+title: "_RX_CONTEXT"
+author: windows-driver-content
+description: The RX_CONTEXT structure encapsulates an IRP for use by RDBSS, network mini-redirectors, and the file system.
+old-location: ifsk\rx_context.htm
+old-project: ifsk
+ms.assetid: 5eb83a7a-d6dd-445f-89a8-91cdf67512af
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: RX_CONTEXT, PRX_CONTEXT structure pointer [Installable File System Drivers], _RX_CONTEXT, PRX_CONTEXT, *PRX_CONTEXT, ifsk.rx_context, rxstructures_29a918c5-d689-4e7d-84fe-dfd8901ee484.xml, RX_CONTEXT structure [Installable File System Drivers], rxcontx/RX_CONTEXT, rxcontx/PRX_CONTEXT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: rxcontx.h
+req.include-header: Rx.h, Rxcontx.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	rxcontx.h
+apiname:
+-	RX_CONTEXT
+product: Windows
+targetos: Windows
+req.typenames: RX_CONTEXT, *PRX_CONTEXT
+req.product: Windows 10 or later.
 ---
 
 # _RX_CONTEXT structure

@@ -1,41 +1,46 @@
 ---
-UID : NE:ks.KS_SEEKING_FLAGS
-title : KS_SEEKING_FLAGS
-author : windows-driver-content
-description : The KS_SEEKING_FLAGS enumeration lists positioning options that can be used in conjunction with the KSPROPERTY_POSITIONS structure.
-old-location : stream\ks_seeking_flags.htm
-old-project : stream
-ms.assetid : 8e27872e-4f38-4d0e-92bc-5e759a9db195
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KS_SEEKING_FLAGS enumeration [Streaming Media Devices], KS_SEEKING_AbsolutePositioning, ks/KS_SEEKING_AbsolutePositioning, ks/KS_SEEKING_IncrementalPositioning, stream.ks_seeking_flags, KS_SEEKING_PositioningBitsMask, ks/KS_SEEKING_PositioningBitsMask, ks/KS_SEEKING_SeekToKeyFrame, ks/KS_SEEKING_NoPositioning, KS_SEEKING_SeekToKeyFrame, KS_SEEKING_FLAGS, KS_SEEKING_ReturnTime, ks/KS_SEEKING_ReturnTime, ks-struct_edea1d66-55d6-4705-ae8f-b940946b87e0.xml, KS_SEEKING_NoPositioning, KS_SEEKING_RelativePositioning, ks/KS_SEEKING_RelativePositioning, ks/KS_SEEKING_FLAGS, KS_SEEKING_IncrementalPositioning
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KS_SEEKING_FLAGS
+UID: NE:ks.KS_SEEKING_FLAGS
+title: KS_SEEKING_FLAGS
+author: windows-driver-content
+description: The KS_SEEKING_FLAGS enumeration lists positioning options that can be used in conjunction with the KSPROPERTY_POSITIONS structure.
+old-location: stream\ks_seeking_flags.htm
+old-project: stream
+ms.assetid: 8e27872e-4f38-4d0e-92bc-5e759a9db195
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KS_SEEKING_FLAGS enumeration [Streaming Media Devices], KS_SEEKING_AbsolutePositioning, ks/KS_SEEKING_AbsolutePositioning, ks/KS_SEEKING_IncrementalPositioning, stream.ks_seeking_flags, KS_SEEKING_PositioningBitsMask, ks/KS_SEEKING_PositioningBitsMask, ks/KS_SEEKING_SeekToKeyFrame, ks/KS_SEEKING_NoPositioning, KS_SEEKING_SeekToKeyFrame, KS_SEEKING_FLAGS, KS_SEEKING_ReturnTime, ks/KS_SEEKING_ReturnTime, ks-struct_edea1d66-55d6-4705-ae8f-b940946b87e0.xml, KS_SEEKING_NoPositioning, KS_SEEKING_RelativePositioning, ks/KS_SEEKING_RelativePositioning, ks/KS_SEEKING_FLAGS, KS_SEEKING_IncrementalPositioning
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	KS_SEEKING_FLAGS
+product: Windows
+targetos: Windows
+req.typenames: KS_SEEKING_FLAGS
 ---
 
 # KS_SEEKING_FLAGS Enumeration
@@ -57,55 +62,55 @@ typedef enum  {
 ## Constants
 
 <table>
-
-<tr>
-<td>KS_SEEKING_AbsolutePositioning</td>
-<td></td>
-</tr>
-
-<tr>
-<td>KS_SEEKING_IncrementalPositioning</td>
-<td></td>
-</tr>
-
-<tr>
-<td>KS_SEEKING_NoPositioning</td>
-<td></td>
-</tr>
-
-<tr>
-<td>KS_SEEKING_PositioningBitsMask</td>
-<td></td>
-</tr>
-
-<tr>
-<td>KS_SEEKING_RelativePositioning</td>
-<td></td>
-</tr>
-
-<tr>
-<td>KS_SEEKING_ReturnTime</td>
-<td></td>
-</tr>
-
-<tr>
-<td>KS_SEEKING_SeekToKeyFrame</td>
-<td></td>
-</tr>
+            
+                <tr>
+                    <td>KS_SEEKING_AbsolutePositioning</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>KS_SEEKING_IncrementalPositioning</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>KS_SEEKING_NoPositioning</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>KS_SEEKING_PositioningBitsMask</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>KS_SEEKING_RelativePositioning</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>KS_SEEKING_ReturnTime</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>KS_SEEKING_SeekToKeyFrame</td>
+                    <td></td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-The minidriver sets these flag values in a <a href="..\ks\ns-ks-ksproperty_positions.md">KSPROPERTY_POSITIONS</a> structure that it then submits in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff565185">KSPROPERTY_MEDIASEEKING_POSITIONS</a> property request.
+        The minidriver sets these flag values in a <a href="..\ks\ns-ks-ksproperty_positions.md">KSPROPERTY_POSITIONS</a> structure that it then submits in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff565185">KSPROPERTY_MEDIASEEKING_POSITIONS</a> property request.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
 | **Header** | ks.h (include Ks.h) |
 
-## See Also
+    ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565185">KSPROPERTY_MEDIASEEKING_POSITIONS</a>
+        <a href="https://msdn.microsoft.com/library/windows/hardware/ff565185">KSPROPERTY_MEDIASEEKING_POSITIONS</a>
 
 <a href="..\ks\ns-ks-ksproperty_positions.md">KSPROPERTY_POSITIONS</a>
 

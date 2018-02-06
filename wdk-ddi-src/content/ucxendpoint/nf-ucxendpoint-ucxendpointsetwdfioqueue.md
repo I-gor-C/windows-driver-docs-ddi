@@ -1,42 +1,47 @@
 ---
-UID : NF:ucxendpoint.UcxEndpointSetWdfIoQueue
-title : UcxEndpointSetWdfIoQueue function
-author : windows-driver-content
-description : Sets a framework queue on the specified endpoint object.
-old-location : buses\_ucxendpointsetwdfioqueue.htm
-old-project : usbref
-ms.assetid : DC23B286-8A52-4642-B345-D76802C83C55
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : UcxEndpointSetWdfIoQueue, UcxEndpointSetWdfIoQueue method [Buses], buses._ucxendpointsetwdfioqueue
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ucxendpoint.h
-req.include-header : Ucxclass.h, Ucxendpoint.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : UCX_ENDPOINT_CHARACTERISTIC_TYPE
-req.product : Windows 10 or later.
+UID: NF:ucxendpoint.UcxEndpointSetWdfIoQueue
+title: UcxEndpointSetWdfIoQueue function
+author: windows-driver-content
+description: Sets a framework queue on the specified endpoint object.
+old-location: buses\_ucxendpointsetwdfioqueue.htm
+old-project: usbref
+ms.assetid: DC23B286-8A52-4642-B345-D76802C83C55
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: UcxEndpointSetWdfIoQueue, UcxEndpointSetWdfIoQueue method [Buses], buses._ucxendpointsetwdfioqueue
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ucxendpoint.h
+req.include-header: Ucxclass.h, Ucxendpoint.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	ucxendpoint.h
+apiname:
+-	UcxEndpointSetWdfIoQueue
+product: Windows
+targetos: Windows
+req.typenames: UCX_ENDPOINT_CHARACTERISTIC_TYPE
+req.product: Windows 10 or later.
 ---
 
 

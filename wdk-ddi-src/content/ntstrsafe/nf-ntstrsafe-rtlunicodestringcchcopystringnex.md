@@ -1,41 +1,47 @@
 ---
-UID : NF:ntstrsafe.RtlUnicodeStringCchCopyStringNEx
-title : RtlUnicodeStringCchCopyStringNEx function
-author : windows-driver-content
-description : The RtlUnicodeStringCchCopyStringNEx function copies a string into a UNICODE_STRING structure while limiting the size of the copied string.
-old-location : kernel\rtlunicodestringcchcopystringnex.htm
-old-project : kernel
-ms.assetid : abbb1afd-b5a4-4be2-9cca-c5c5d7e0aa51
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.rtlunicodestringcchcopystringnex, RtlUnicodeStringCchCopyStringNEx, ntstrsafe/RtlUnicodeStringCchCopyStringNEx, RtlUnicodeStringCchCopyStringNEx function [Kernel-Mode Driver Architecture], safestrings_3c97192f-198f-4ab5-8c56-7a73d501be0b.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntstrsafe.h
-req.include-header : Ntstrsafe.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available starting with Windows XP with Service Pack 1 (SP1).
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ntstrsafe.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : BATTERY_REPORTING_SCALE, *PBATTERY_REPORTING_SCALE
+UID: NF:ntstrsafe.RtlUnicodeStringCchCopyStringNEx
+title: RtlUnicodeStringCchCopyStringNEx function
+author: windows-driver-content
+description: The RtlUnicodeStringCchCopyStringNEx function copies a string into a UNICODE_STRING structure while limiting the size of the copied string.
+old-location: kernel\rtlunicodestringcchcopystringnex.htm
+old-project: kernel
+ms.assetid: abbb1afd-b5a4-4be2-9cca-c5c5d7e0aa51
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.rtlunicodestringcchcopystringnex, RtlUnicodeStringCchCopyStringNEx, ntstrsafe/RtlUnicodeStringCchCopyStringNEx, RtlUnicodeStringCchCopyStringNEx function [Kernel-Mode Driver Architecture], safestrings_3c97192f-198f-4ab5-8c56-7a73d501be0b.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntstrsafe.h
+req.include-header: Ntstrsafe.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available starting with Windows XP with Service Pack 1 (SP1).
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ntstrsafe.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ntstrsafe.lib
+-	Ntstrsafe.dll
+apiname:
+-	RtlUnicodeStringCchCopyStringNEx
+product: Windows
+targetos: Windows
+req.typenames: BATTERY_REPORTING_SCALE, *PBATTERY_REPORTING_SCALE
 ---
 
 

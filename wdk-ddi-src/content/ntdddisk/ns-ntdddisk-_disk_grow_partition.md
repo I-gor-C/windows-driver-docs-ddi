@@ -1,41 +1,46 @@
 ---
-UID : NS:ntdddisk._DISK_GROW_PARTITION
-title : "_DISK_GROW_PARTITION"
-author : windows-driver-content
-description : The DISK_GROW_PARTITION structure is used in conjunction with the IOCTL_DISK_GROW_PARTITION request to enlarge a partition.
-old-location : storage\disk_grow_partition.htm
-old-project : storage
-ms.assetid : cab9877c-3b7b-4644-83eb-0aa1e9fc77b9
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : PDISK_GROW_PARTITION structure pointer [Storage Devices], _DISK_GROW_PARTITION, DISK_GROW_PARTITION structure [Storage Devices], ntdddisk/PDISK_GROW_PARTITION, ntdddisk/DISK_GROW_PARTITION, storage.disk_grow_partition, PDISK_GROW_PARTITION, structs-disk_cc7d52cd-b0b6-4e5c-a323-6d513f37e602.xml, DISK_GROW_PARTITION, *PDISK_GROW_PARTITION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntdddisk.h
-req.include-header : Ntdddisk.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDISK_GROW_PARTITION, DISK_GROW_PARTITION"
+UID: NS:ntdddisk._DISK_GROW_PARTITION
+title: "_DISK_GROW_PARTITION"
+author: windows-driver-content
+description: The DISK_GROW_PARTITION structure is used in conjunction with the IOCTL_DISK_GROW_PARTITION request to enlarge a partition.
+old-location: storage\disk_grow_partition.htm
+old-project: storage
+ms.assetid: cab9877c-3b7b-4644-83eb-0aa1e9fc77b9
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: PDISK_GROW_PARTITION structure pointer [Storage Devices], _DISK_GROW_PARTITION, DISK_GROW_PARTITION structure [Storage Devices], ntdddisk/PDISK_GROW_PARTITION, ntdddisk/DISK_GROW_PARTITION, storage.disk_grow_partition, PDISK_GROW_PARTITION, structs-disk_cc7d52cd-b0b6-4e5c-a323-6d513f37e602.xml, DISK_GROW_PARTITION, *PDISK_GROW_PARTITION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntdddisk.h
+req.include-header: Ntdddisk.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntdddisk.h
+apiname:
+-	DISK_GROW_PARTITION
+product: Windows
+targetos: Windows
+req.typenames: "*PDISK_GROW_PARTITION, DISK_GROW_PARTITION"
 ---
 
 # _DISK_GROW_PARTITION structure

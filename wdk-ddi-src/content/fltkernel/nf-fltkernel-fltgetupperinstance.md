@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltGetUpperInstance
-title : FltGetUpperInstance function
-author : windows-driver-content
-description : The FltGetUpperInstance routine returns an opaque instance pointer for the next higher minifilter driver instance, if there is one, that is attached above a given minifilter driver instance on the same volume.
-old-location : ifsk\fltgetupperinstance.htm
-old-project : ifsk
-ms.assetid : 01e7760c-b10c-497e-9cab-4d839c2ce5ff
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltGetUpperInstance, ifsk.fltgetupperinstance, FltApiRef_e_to_o_7629f1a6-0a5e-46a2-8423-bd7466548a2f.xml, fltkernel/FltGetUpperInstance, FltGetUpperInstance routine [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltGetUpperInstance
+title: FltGetUpperInstance function
+author: windows-driver-content
+description: The FltGetUpperInstance routine returns an opaque instance pointer for the next higher minifilter driver instance, if there is one, that is attached above a given minifilter driver instance on the same volume.
+old-location: ifsk\fltgetupperinstance.htm
+old-project: ifsk
+ms.assetid: 01e7760c-b10c-497e-9cab-4d839c2ce5ff
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltGetUpperInstance, ifsk.fltgetupperinstance, FltApiRef_e_to_o_7629f1a6-0a5e-46a2-8423-bd7466548a2f.xml, fltkernel/FltGetUpperInstance, FltGetUpperInstance routine [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltGetUpperInstance
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

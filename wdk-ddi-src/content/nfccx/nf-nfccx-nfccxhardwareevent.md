@@ -1,41 +1,46 @@
 ---
-UID : NF:nfccx.NfcCxHardwareEvent
-title : NfcCxHardwareEvent function
-author : windows-driver-content
-description : Called by the client driver when a hardware event occurs like D0Entry and D0Exit callbacks to start or stop the device. For drivers that require firmware download on initialization or boot-up, it is recommended to move this call to a separate work item. However, the client driver is responsible for the following:
-old-location : nfpdrivers\_nfccxhardwareevent.htm
-old-project : nfpdrivers
-ms.assetid : 5D108897-93D9-4C67-9138-86C608AD8C4C
-ms.author : windowsdriverdev
-ms.date : 12/18/2017
-ms.keywords : NfcCxHardwareEvent method [Near-Field Proximity Drivers], NfcCxHardwareEvent, nfpdrivers._nfccxhardwareevent, nfccx/NfcCxHardwareEvent
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : nfccx.h
-req.include-header : Ncidef.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : None supported
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Nfccxstub.lib
-req.dll : NfcCx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NFC_CX_TRANSPORT_TYPE, *PNFC_CX_TRANSPORT_TYPE
+UID: NF:nfccx.NfcCxHardwareEvent
+title: NfcCxHardwareEvent function
+author: windows-driver-content
+description: Called by the client driver when a hardware event occurs like D0Entry and D0Exit callbacks to start or stop the device. For drivers that require firmware download on initialization or boot-up, it is recommended to move this call to a separate work item. However, the client driver is responsible for the following:
+old-location: nfpdrivers\_nfccxhardwareevent.htm
+old-project: nfpdrivers
+ms.assetid: 5D108897-93D9-4C67-9138-86C608AD8C4C
+ms.author: windowsdriverdev
+ms.date: 12/18/2017
+ms.keywords: NfcCxHardwareEvent method [Near-Field Proximity Drivers], NfcCxHardwareEvent, nfpdrivers._nfccxhardwareevent, nfccx/NfcCxHardwareEvent
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: nfccx.h
+req.include-header: Ncidef.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: None supported
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Nfccxstub.lib
+req.dll: NfcCx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NfcCx.dll
+apiname:
+-	NfcCxHardwareEvent
+product: Windows
+targetos: Windows
+req.typenames: NFC_CX_TRANSPORT_TYPE, *PNFC_CX_TRANSPORT_TYPE
 ---
 
 

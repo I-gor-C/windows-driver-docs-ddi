@@ -1,41 +1,49 @@
 ---
-UID : NF:d3dkmthk.D3DKMTDestroyAllocation2
-title : D3DKMTDestroyAllocation2 function
-author : windows-driver-content
-description : The D3DKMTDestroyAllocation2 function releases a resource, a list of allocations, or both.
-old-location : display\d3dkmtdestroyallocation2.htm
-old-project : display
-ms.assetid : C66CD2FB-AD45-4666-ACD4-6555ED681935
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DKMTDestroyAllocation2 function [Display Devices], D3DKMTDestroyAllocation2, d3dkmthk/D3DKMTDestroyAllocation2, display.d3dkmtdestroyallocation2
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Universal
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : GDI32.lib
-req.dll : GDI32.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_DRIVERVERSION
+UID: NF:d3dkmthk.D3DKMTDestroyAllocation2
+title: D3DKMTDestroyAllocation2 function
+author: windows-driver-content
+description: The D3DKMTDestroyAllocation2 function releases a resource, a list of allocations, or both.
+old-location: display\d3dkmtdestroyallocation2.htm
+old-project: display
+ms.assetid: C66CD2FB-AD45-4666-ACD4-6555ED681935
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DKMTDestroyAllocation2 function [Display Devices], D3DKMTDestroyAllocation2, d3dkmthk/D3DKMTDestroyAllocation2, display.d3dkmtdestroyallocation2
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Universal
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: GDI32.lib
+req.dll: GDI32.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	GDI32.dll
+-	API-MS-Win-DX-D3DKMT-L1-1-1.dll
+-	GDI32.dll
+-	API-MS-Win-DX-D3DKMT-L1-1-2.dll
+apiname:
+-	D3DKMTDestroyAllocation2
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_DRIVERVERSION
 ---
 
 

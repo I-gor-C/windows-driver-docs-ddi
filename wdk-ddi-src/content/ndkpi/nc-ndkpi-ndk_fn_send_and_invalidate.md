@@ -1,41 +1,46 @@
 ---
-UID : NC:ndkpi.NDK_FN_SEND_AND_INVALIDATE
-title : NDK_FN_SEND_AND_INVALIDATE
-author : windows-driver-content
-description : The NdkSendAndInvalidate (NDK_FN_SEND_AND_INVALIDATE) function posts a send request on an NDK queue pair (QP) and supplies a token to be invalidated at the remote peer upon receive completion.
-old-location : netvista\ndk_fn_send_and_invalidate.htm
-old-project : netvista
-ms.assetid : 7E344DFA-159A-4084-905A-0A0F9F102051
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.ndk_fn_send_and_invalidate, NDK_FN_SEND_AND_INVALIDATE callback function [Network Drivers Starting with Windows Vista], NDK_FN_SEND_AND_INVALIDATE, NDK_FN_SEND_AND_INVALIDATE, NDK_FN_SEND_AND_INVALIDATE, ndkpi/NDK_FN_SEND_AND_INVALIDATE, NDK_OP_FLAG_SILENT_SUCCESS, NDK_OP_FLAG_READ_FENCE, NDK_OP_FLAG_SEND_AND_SOLICIT_EVENT, NDK_OP_FLAG_INLINE, NDK_OP_FLAG_DEFER
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ndkpi.h
-req.include-header : Ndkpi.h
-req.target-type : Windows
-req.target-min-winverclnt : None supported,Supported in NDIS 6.40 and later.
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_WWAN_VISIBLE_PROVIDERS, *PNDIS_WWAN_VISIBLE_PROVIDERS
+UID: NC:ndkpi.NDK_FN_SEND_AND_INVALIDATE
+title: NDK_FN_SEND_AND_INVALIDATE
+author: windows-driver-content
+description: The NdkSendAndInvalidate (NDK_FN_SEND_AND_INVALIDATE) function posts a send request on an NDK queue pair (QP) and supplies a token to be invalidated at the remote peer upon receive completion.
+old-location: netvista\ndk_fn_send_and_invalidate.htm
+old-project: netvista
+ms.assetid: 7E344DFA-159A-4084-905A-0A0F9F102051
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.ndk_fn_send_and_invalidate, NDK_FN_SEND_AND_INVALIDATE callback function [Network Drivers Starting with Windows Vista], NDK_FN_SEND_AND_INVALIDATE, NDK_FN_SEND_AND_INVALIDATE, NDK_FN_SEND_AND_INVALIDATE, ndkpi/NDK_FN_SEND_AND_INVALIDATE, NDK_OP_FLAG_SILENT_SUCCESS, NDK_OP_FLAG_READ_FENCE, NDK_OP_FLAG_SEND_AND_SOLICIT_EVENT, NDK_OP_FLAG_INLINE, NDK_OP_FLAG_DEFER
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ndkpi.h
+req.include-header: Ndkpi.h
+req.target-type: Windows
+req.target-min-winverclnt: None supported,Supported in NDIS 6.40 and later.
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	ndkpi.h
+apiname:
+-	NDK_FN_SEND_AND_INVALIDATE
+product: Windows
+targetos: Windows
+req.typenames: NDIS_WWAN_VISIBLE_PROVIDERS, *PNDIS_WWAN_VISIBLE_PROVIDERS
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.FsRtlIsLeadDbcsCharacter
-title : FsRtlIsLeadDbcsCharacter macro
-author : windows-driver-content
-description : The FsRtlIsLeadDbcsCharacter macro determines whether a character is a lead byte (the first byte of a character) in a double-byte character set (DBCS).
-old-location : ifsk\fsrtlisleaddbcscharacter.htm
-old-project : ifsk
-ms.assetid : 3cbae037-6205-4315-8ff7-0c67a91c4c69
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FsRtlIsLeadDbcsCharacter, ntifs/FsRtlIsLeadDbcsCharacter, ifsk.fsrtlisleaddbcscharacter, fsrtlref_758a5e18-3446-43c4-8cce-baecdf727f98.xml, FsRtlIsLeadDbcsCharacter function [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : macro
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : ntifs.h
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.FsRtlIsLeadDbcsCharacter
+title: FsRtlIsLeadDbcsCharacter macro
+author: windows-driver-content
+description: The FsRtlIsLeadDbcsCharacter macro determines whether a character is a lead byte (the first byte of a character) in a double-byte character set (DBCS).
+old-location: ifsk\fsrtlisleaddbcscharacter.htm
+old-project: ifsk
+ms.assetid: 3cbae037-6205-4315-8ff7-0c67a91c4c69
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FsRtlIsLeadDbcsCharacter, ntifs/FsRtlIsLeadDbcsCharacter, ifsk.fsrtlisleaddbcscharacter, fsrtlref_758a5e18-3446-43c4-8cce-baecdf727f98.xml, FsRtlIsLeadDbcsCharacter function [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: macro
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: ntifs.h
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntifs.h
+apiname:
+-	FsRtlIsLeadDbcsCharacter
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

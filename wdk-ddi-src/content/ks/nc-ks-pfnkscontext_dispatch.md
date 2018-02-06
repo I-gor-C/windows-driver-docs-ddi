@@ -1,41 +1,46 @@
 ---
-UID : NC:ks.PFNKSCONTEXT_DISPATCH
-title : PFNKSCONTEXT_DISPATCH
-author : windows-driver-content
-description : A streaming minidriver's KStrContextDispatch routine is called to process IRP_MJ_POWER IRPs.
-old-location : stream\kstrcontextdispatch.htm
-old-project : stream
-ms.assetid : be96eb59-6128-41bd-ad31-38f0d1a4e656
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.kstrcontextdispatch, KStrContextDispatch routine [Streaming Media Devices], KStrContextDispatch, PFNKSCONTEXT_DISPATCH, PFNKSCONTEXT_DISPATCH, ks/KStrContextDispatch, ksfunc_b607dd80-6da6-4364-9452-4c2e53c54343.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KEYWORDSELECTOR
+UID: NC:ks.PFNKSCONTEXT_DISPATCH
+title: PFNKSCONTEXT_DISPATCH
+author: windows-driver-content
+description: A streaming minidriver's KStrContextDispatch routine is called to process IRP_MJ_POWER IRPs.
+old-location: stream\kstrcontextdispatch.htm
+old-project: stream
+ms.assetid: be96eb59-6128-41bd-ad31-38f0d1a4e656
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.kstrcontextdispatch, KStrContextDispatch routine [Streaming Media Devices], KStrContextDispatch, PFNKSCONTEXT_DISPATCH, PFNKSCONTEXT_DISPATCH, ks/KStrContextDispatch, ksfunc_b607dd80-6da6-4364-9452-4c2e53c54343.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	ks.h
+apiname:
+-	KStrContextDispatch
+product: Windows
+targetos: Windows
+req.typenames: KEYWORDSELECTOR
 ---
 
 

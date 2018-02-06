@@ -1,12 +1,12 @@
 ---
-UID : NA:d4drvif
-ms.assetid : caf37378-22f9-3683-8178-815716ae30bc
-ms.author : windowsdriverdev
-ms.date : 01/18/18
-ms.keywords : 
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : portal
+UID: NA:d4drvif
+ms.assetid: caf37378-22f9-3683-8178-815716ae30bc
+ms.author: windowsdriverdev
+ms.date: 01/18/18
+ms.keywords: 
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: portal
 ---
 
 # d4drvif.h header

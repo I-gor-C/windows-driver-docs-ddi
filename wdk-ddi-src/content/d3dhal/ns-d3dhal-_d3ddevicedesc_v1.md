@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dhal._D3DDeviceDesc_V1
-title : "_D3DDeviceDesc_V1"
-author : windows-driver-content
-description : Obsolete in DirectX 8.0 and later versions; see Remarks. The D3DDEVICEDESC_V1 structure describes the 3D capabilities of a device.
-old-location : display\d3ddevicedesc_v1.htm
-old-project : display
-ms.assetid : 363e4044-e835-43e6-96ce-0fdccdd7fb52
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DDEVICEDESC_V1, _D3DDeviceDesc_V1, D3DDEVICEDESC_V1 structure [Display Devices], LPD3DDEVICEDESC_V1 structure pointer [Display Devices], LPD3DDEVICEDESC_V1, display.d3ddevicedesc_v1, *LPD3DDEVICEDESC_V1, d3dhal/LPD3DDEVICEDESC_V1, d3dstrct_111d5153-fb7f-4c2b-acc5-65818723e263.xml, d3dhal/D3DDEVICEDESC_V1
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dhal.h
-req.include-header : D3dhal.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*LPD3DDEVICEDESC_V1, D3DDEVICEDESC_V1"
+UID: NS:d3dhal._D3DDeviceDesc_V1
+title: "_D3DDeviceDesc_V1"
+author: windows-driver-content
+description: Obsolete in DirectX 8.0 and later versions; see Remarks. The D3DDEVICEDESC_V1 structure describes the 3D capabilities of a device.
+old-location: display\d3ddevicedesc_v1.htm
+old-project: display
+ms.assetid: 363e4044-e835-43e6-96ce-0fdccdd7fb52
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DDEVICEDESC_V1, _D3DDeviceDesc_V1, D3DDEVICEDESC_V1 structure [Display Devices], LPD3DDEVICEDESC_V1 structure pointer [Display Devices], LPD3DDEVICEDESC_V1, display.d3ddevicedesc_v1, *LPD3DDEVICEDESC_V1, d3dhal/LPD3DDEVICEDESC_V1, d3dstrct_111d5153-fb7f-4c2b-acc5-65818723e263.xml, d3dhal/D3DDEVICEDESC_V1
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dhal.h
+req.include-header: D3dhal.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dhal.h
+apiname:
+-	D3DDEVICEDESC_V1
+product: Windows
+targetos: Windows
+req.typenames: "*LPD3DDEVICEDESC_V1, D3DDEVICEDESC_V1"
 ---
 
 # _D3DDeviceDesc_V1 structure

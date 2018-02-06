@@ -1,41 +1,46 @@
 ---
-UID : NS:ndis._NDIS_PROTOCOL_CO_CHARACTERISTICS
-title : "_NDIS_PROTOCOL_CO_CHARACTERISTICS"
-author : windows-driver-content
-description : The NDIS_PROTOCOL_CO_CHARACTERISTICS structure specifies CoNDIS entry points for CoNDIS protocol drivers.
-old-location : netvista\ndis_protocol_co_characteristics.htm
-old-project : netvista
-ms.assetid : 855e3231-502c-4c6f-99f9-7ad85354ccd5
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : PNDIS_PROTOCOL_CO_CHARACTERISTICS, condis_structures_ref_a4228b74-0f76-4800-ad95-e7ef3d92df42.xml, *PNDIS_PROTOCOL_CO_CHARACTERISTICS, PNDIS_PROTOCOL_CO_CHARACTERISTICS structure pointer [Network Drivers Starting with Windows Vista], ndis/PNDIS_PROTOCOL_CO_CHARACTERISTICS, ndis/NDIS_PROTOCOL_CO_CHARACTERISTICS, _NDIS_PROTOCOL_CO_CHARACTERISTICS, netvista.ndis_protocol_co_characteristics, NDIS_PROTOCOL_CO_CHARACTERISTICS structure [Network Drivers Starting with Windows Vista], NDIS_PROTOCOL_CO_CHARACTERISTICS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : See Remarks section
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_PROTOCOL_CO_CHARACTERISTICS, *PNDIS_PROTOCOL_CO_CHARACTERISTICS
+UID: NS:ndis._NDIS_PROTOCOL_CO_CHARACTERISTICS
+title: "_NDIS_PROTOCOL_CO_CHARACTERISTICS"
+author: windows-driver-content
+description: The NDIS_PROTOCOL_CO_CHARACTERISTICS structure specifies CoNDIS entry points for CoNDIS protocol drivers.
+old-location: netvista\ndis_protocol_co_characteristics.htm
+old-project: netvista
+ms.assetid: 855e3231-502c-4c6f-99f9-7ad85354ccd5
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: PNDIS_PROTOCOL_CO_CHARACTERISTICS, condis_structures_ref_a4228b74-0f76-4800-ad95-e7ef3d92df42.xml, *PNDIS_PROTOCOL_CO_CHARACTERISTICS, PNDIS_PROTOCOL_CO_CHARACTERISTICS structure pointer [Network Drivers Starting with Windows Vista], ndis/PNDIS_PROTOCOL_CO_CHARACTERISTICS, ndis/NDIS_PROTOCOL_CO_CHARACTERISTICS, _NDIS_PROTOCOL_CO_CHARACTERISTICS, netvista.ndis_protocol_co_characteristics, NDIS_PROTOCOL_CO_CHARACTERISTICS structure [Network Drivers Starting with Windows Vista], NDIS_PROTOCOL_CO_CHARACTERISTICS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: See Remarks section
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndis.h
+apiname:
+-	NDIS_PROTOCOL_CO_CHARACTERISTICS
+product: Windows
+targetos: Windows
+req.typenames: NDIS_PROTOCOL_CO_CHARACTERISTICS, *PNDIS_PROTOCOL_CO_CHARACTERISTICS
 ---
 
 # _NDIS_PROTOCOL_CO_CHARACTERISTICS structure

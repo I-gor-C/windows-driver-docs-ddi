@@ -1,42 +1,47 @@
 ---
-UID : NS:wdm._RESOURCEMANAGER_BASIC_INFORMATION
-title : "_RESOURCEMANAGER_BASIC_INFORMATION"
-author : windows-driver-content
-description : The RESOURCEMANAGER_BASIC INFORMATION structure contains information about a resource manager object.
-old-location : kernel\resourcemanager_basic_information.htm
-old-project : kernel
-ms.assetid : b5295760-7f0e-4973-9ce3-4aa35ea5211b
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.resourcemanager_basic_information, _RESOURCEMANAGER_BASIC_INFORMATION, wdm/RESOURCEMANAGER_BASIC_INFORMATION, PRESOURCEMANAGER_BASIC_INFORMATION, wdm/PRESOURCEMANAGER_BASIC_INFORMATION, *PRESOURCEMANAGER_BASIC_INFORMATION, PRESOURCEMANAGER_BASIC_INFORMATION structure pointer [Kernel-Mode Driver Architecture], RESOURCEMANAGER_BASIC_INFORMATION structure [Kernel-Mode Driver Architecture], ktm_ref_bcc9f19b-2cd4-45da-b5df-1f28e832d48e.xml, RESOURCEMANAGER_BASIC_INFORMATION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later operating system versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PRESOURCEMANAGER_BASIC_INFORMATION, RESOURCEMANAGER_BASIC_INFORMATION"
-req.product : Windows 10 or later.
+UID: NS:wdm._RESOURCEMANAGER_BASIC_INFORMATION
+title: "_RESOURCEMANAGER_BASIC_INFORMATION"
+author: windows-driver-content
+description: The RESOURCEMANAGER_BASIC INFORMATION structure contains information about a resource manager object.
+old-location: kernel\resourcemanager_basic_information.htm
+old-project: kernel
+ms.assetid: b5295760-7f0e-4973-9ce3-4aa35ea5211b
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.resourcemanager_basic_information, _RESOURCEMANAGER_BASIC_INFORMATION, wdm/RESOURCEMANAGER_BASIC_INFORMATION, PRESOURCEMANAGER_BASIC_INFORMATION, wdm/PRESOURCEMANAGER_BASIC_INFORMATION, *PRESOURCEMANAGER_BASIC_INFORMATION, PRESOURCEMANAGER_BASIC_INFORMATION structure pointer [Kernel-Mode Driver Architecture], RESOURCEMANAGER_BASIC_INFORMATION structure [Kernel-Mode Driver Architecture], ktm_ref_bcc9f19b-2cd4-45da-b5df-1f28e832d48e.xml, RESOURCEMANAGER_BASIC_INFORMATION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later operating system versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	RESOURCEMANAGER_BASIC_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: "*PRESOURCEMANAGER_BASIC_INFORMATION, RESOURCEMANAGER_BASIC_INFORMATION"
+req.product: Windows 10 or later.
 ---
 
 # _RESOURCEMANAGER_BASIC_INFORMATION structure

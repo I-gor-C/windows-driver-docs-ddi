@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_GETENCRYPTIONBLTKEY
-title : PFND3DDDI_GETENCRYPTIONBLTKEY
-author : windows-driver-content
-description : The GetEncryptionBltKey function returns the key that is used to decrypt the data that the driver's EncryptionBlt function returns.
-old-location : display\getencryptionbltkey.htm
-old-project : display
-ms.assetid : b3c3e792-bc8a-485e-a208-66b7d921cc15
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.getencryptionbltkey, GetEncryptionBltKey callback function [Display Devices], GetEncryptionBltKey, PFND3DDDI_GETENCRYPTIONBLTKEY, PFND3DDDI_GETENCRYPTIONBLTKEY, d3dumddi/GetEncryptionBltKey, UserModeDisplayDriver_Functions_c20ad527-141e-404f-a52e-47b893b2a2bb.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : GetEncryptionBltKey is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_GETENCRYPTIONBLTKEY
+title: PFND3DDDI_GETENCRYPTIONBLTKEY
+author: windows-driver-content
+description: The GetEncryptionBltKey function returns the key that is used to decrypt the data that the driver's EncryptionBlt function returns.
+old-location: display\getencryptionbltkey.htm
+old-project: display
+ms.assetid: b3c3e792-bc8a-485e-a208-66b7d921cc15
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.getencryptionbltkey, GetEncryptionBltKey callback function [Display Devices], GetEncryptionBltKey, PFND3DDDI_GETENCRYPTIONBLTKEY, PFND3DDDI_GETENCRYPTIONBLTKEY, d3dumddi/GetEncryptionBltKey, UserModeDisplayDriver_Functions_c20ad527-141e-404f-a52e-47b893b2a2bb.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: GetEncryptionBltKey is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	GetEncryptionBltKey
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

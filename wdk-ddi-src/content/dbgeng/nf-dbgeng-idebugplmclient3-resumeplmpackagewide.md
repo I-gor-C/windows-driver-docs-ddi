@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugPlmClient3.ResumePlmPackageWide
-title : IDebugPlmClient3::ResumePlmPackageWide method
-author : windows-driver-content
-description : Resumes a Process Lifecycle Management (PLM) package.
-old-location : debugger\idebugplmclient3_resumeplmpackagewide.htm
-old-project : debugger
-ms.assetid : CC69357E-425B-440B-93D0-918E8586D5DF
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : ResumePlmPackageWide method [Windows Debugging], IDebugPlmClient3, dbgeng/IDebugPlmClient3::ResumePlmPackageWide, debugger.idebugplmclient3_resumeplmpackagewide, IDebugPlmClient3::ResumePlmPackageWide, IDebugPlmClient3 interface [Windows Debugging], ResumePlmPackageWide method, ResumePlmPackageWide, ResumePlmPackageWide method [Windows Debugging], IDebugPlmClient3 interface
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugPlmClient3.ResumePlmPackageWide
+title: IDebugPlmClient3::ResumePlmPackageWide method
+author: windows-driver-content
+description: Resumes a Process Lifecycle Management (PLM) package.
+old-location: debugger\idebugplmclient3_resumeplmpackagewide.htm
+old-project: debugger
+ms.assetid: CC69357E-425B-440B-93D0-918E8586D5DF
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: ResumePlmPackageWide method [Windows Debugging], IDebugPlmClient3, dbgeng/IDebugPlmClient3::ResumePlmPackageWide, debugger.idebugplmclient3_resumeplmpackagewide, IDebugPlmClient3::ResumePlmPackageWide, IDebugPlmClient3 interface [Windows Debugging], ResumePlmPackageWide method, ResumePlmPackageWide, ResumePlmPackageWide method [Windows Debugging], IDebugPlmClient3 interface
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugPlmClient3.ResumePlmPackageWide
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

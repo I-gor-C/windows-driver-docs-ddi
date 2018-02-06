@@ -1,41 +1,46 @@
 ---
-UID : NC:ndis.PROTOCOL_OPEN_ADAPTER_COMPLETE_EX
-title : PROTOCOL_OPEN_ADAPTER_COMPLETE_EX
-author : windows-driver-content
-description : NDIS calls a protocol driver's ProtocolOpenAdapterCompleteEx function to complete an open adapter operation for which the NdisOpenAdapterEx function returned NDIS_STATUS_PENDING.Note  You must declare the function by using the PROTOCOL_OPEN_ADAPTER_COMPLETE_EX type. For more information, see the following Examples section.
-old-location : netvista\protocolopenadaptercompleteex.htm
-old-project : netvista
-ms.assetid : 59d18822-8ce2-4506-90d7-9f1cdc7a9e10
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.protocolopenadaptercompleteex, ProtocolOpenAdapterCompleteEx callback function [Network Drivers Starting with Windows Vista], ProtocolOpenAdapterCompleteEx, PROTOCOL_OPEN_ADAPTER_COMPLETE_EX, PROTOCOL_OPEN_ADAPTER_COMPLETE_EX, ndis/ProtocolOpenAdapterCompleteEx, protocol_functions_ref_d47f5a23-aa11-4fc8-9dec-a1ecb3184d9a.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
+UID: NC:ndis.PROTOCOL_OPEN_ADAPTER_COMPLETE_EX
+title: PROTOCOL_OPEN_ADAPTER_COMPLETE_EX
+author: windows-driver-content
+description: NDIS calls a protocol driver's ProtocolOpenAdapterCompleteEx function to complete an open adapter operation for which the NdisOpenAdapterEx function returned NDIS_STATUS_PENDING.Note  You must declare the function by using the PROTOCOL_OPEN_ADAPTER_COMPLETE_EX type. For more information, see the following Examples section.
+old-location: netvista\protocolopenadaptercompleteex.htm
+old-project: netvista
+ms.assetid: 59d18822-8ce2-4506-90d7-9f1cdc7a9e10
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.protocolopenadaptercompleteex, ProtocolOpenAdapterCompleteEx callback function [Network Drivers Starting with Windows Vista], ProtocolOpenAdapterCompleteEx, PROTOCOL_OPEN_ADAPTER_COMPLETE_EX, PROTOCOL_OPEN_ADAPTER_COMPLETE_EX, ndis/ProtocolOpenAdapterCompleteEx, protocol_functions_ref_d47f5a23-aa11-4fc8-9dec-a1ecb3184d9a.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ndis.h
+apiname:
+-	ProtocolOpenAdapterCompleteEx
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 

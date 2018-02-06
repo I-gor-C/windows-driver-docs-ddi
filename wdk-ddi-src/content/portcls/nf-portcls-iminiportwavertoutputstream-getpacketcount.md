@@ -1,41 +1,46 @@
 ---
-UID : NF:portcls.IMiniportWaveRTOutputStream.GetPacketCount
-title : IMiniportWaveRTOutputStream::GetPacketCount method
-author : windows-driver-content
-description : GetPacketCount returns the (1-based) count of packets completely transferred from the WaveRT buffer into hardware.
-old-location : audio\iminiportwavertoutputstream_getpacketcount.htm
-old-project : audio
-ms.assetid : F2870421-2A6F-4E63-AC91-E251E0B67C06
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : GetPacketCount method [Audio Devices], IMiniportWaveRTOutputStream interface, portcls/IMiniportWaveRTOutputStream::GetPacketCount, IMiniportWaveRTOutputStream::GetPacketCount, GetPacketCount method [Audio Devices], IMiniportWaveRTOutputStream interface [Audio Devices], GetPacketCount method, GetPacketCount, audio.iminiportwavertoutputstream_getpacketcount, IMiniportWaveRTOutputStream
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : portcls.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 10 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : portcls.h
-req.dll : 
-req.irql : Passive level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.IMiniportWaveRTOutputStream.GetPacketCount
+title: IMiniportWaveRTOutputStream::GetPacketCount method
+author: windows-driver-content
+description: GetPacketCount returns the (1-based) count of packets completely transferred from the WaveRT buffer into hardware.
+old-location: audio\iminiportwavertoutputstream_getpacketcount.htm
+old-project: audio
+ms.assetid: F2870421-2A6F-4E63-AC91-E251E0B67C06
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: GetPacketCount method [Audio Devices], IMiniportWaveRTOutputStream interface, portcls/IMiniportWaveRTOutputStream::GetPacketCount, IMiniportWaveRTOutputStream::GetPacketCount, GetPacketCount method [Audio Devices], IMiniportWaveRTOutputStream interface [Audio Devices], GetPacketCount method, GetPacketCount, audio.iminiportwavertoutputstream_getpacketcount, IMiniportWaveRTOutputStream
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: portcls.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 10 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: portcls.h
+req.dll: 
+req.irql: Passive level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	portcls.h
+apiname:
+-	IMiniportWaveRTOutputStream.GetPacketCount
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

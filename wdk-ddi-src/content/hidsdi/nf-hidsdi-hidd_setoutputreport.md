@@ -1,41 +1,46 @@
 ---
-UID : NF:hidsdi.HidD_SetOutputReport
-title : HidD_SetOutputReport function
-author : windows-driver-content
-description : The HidD_SetOutputReport routine sends an output report to a top-level collection.
-old-location : hid\hidd_setoutputreport.htm
-old-project : hid
-ms.assetid : a4ec7a17-40c4-4812-a62a-585b3b486578
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : hidsdi/HidD_SetOutputReport, HidD_SetOutputReport routine [Human Input Devices], hidfunc_eb711fe9-fdf1-4757-90c1-6c4e115f3805.xml, HidD_SetOutputReport, hid.hidd_setoutputreport
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : hidsdi.h
-req.include-header : Hidsdi.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows XP and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Hid.lib
-req.dll : Hid.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PHID_MINIDRIVER_REGISTRATION, HID_MINIDRIVER_REGISTRATION"
+UID: NF:hidsdi.HidD_SetOutputReport
+title: HidD_SetOutputReport function
+author: windows-driver-content
+description: The HidD_SetOutputReport routine sends an output report to a top-level collection.
+old-location: hid\hidd_setoutputreport.htm
+old-project: hid
+ms.assetid: a4ec7a17-40c4-4812-a62a-585b3b486578
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: hidsdi/HidD_SetOutputReport, HidD_SetOutputReport routine [Human Input Devices], hidfunc_eb711fe9-fdf1-4757-90c1-6c4e115f3805.xml, HidD_SetOutputReport, hid.hidd_setoutputreport
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: hidsdi.h
+req.include-header: Hidsdi.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows XP and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Hid.lib
+req.dll: Hid.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Hid.dll
+apiname:
+-	HidD_SetOutputReport
+product: Windows
+targetos: Windows
+req.typenames: "*PHID_MINIDRIVER_REGISTRATION, HID_MINIDRIVER_REGISTRATION"
 ---
 
 

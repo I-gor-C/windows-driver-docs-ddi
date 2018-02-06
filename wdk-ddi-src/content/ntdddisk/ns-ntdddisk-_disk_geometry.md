@@ -1,41 +1,46 @@
 ---
-UID : NS:ntdddisk._DISK_GEOMETRY
-title : "_DISK_GEOMETRY"
-author : windows-driver-content
-description : The DISK_GEOMETRY structure is obsolete and provided only to support existing drivers.
-old-location : storage\disk_geometry.htm
-old-project : storage
-ms.assetid : f92d1f63-4361-4775-88f8-be1c9bf781ef
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : ntdddisk/PDISK_GEOMETRY, structs-disk_3ad908b7-8f42-4a06-914e-92b631cc1a56.xml, PDISK_GEOMETRY structure pointer [Storage Devices], *PDISK_GEOMETRY, DISK_GEOMETRY structure [Storage Devices], ntdddisk/DISK_GEOMETRY, storage.disk_geometry, PDISK_GEOMETRY, DISK_GEOMETRY, _DISK_GEOMETRY
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntdddisk.h
-req.include-header : Ntdddisk.h, Ntddk.h, Ntdddisk.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDISK_GEOMETRY, DISK_GEOMETRY"
+UID: NS:ntdddisk._DISK_GEOMETRY
+title: "_DISK_GEOMETRY"
+author: windows-driver-content
+description: The DISK_GEOMETRY structure is obsolete and provided only to support existing drivers.
+old-location: storage\disk_geometry.htm
+old-project: storage
+ms.assetid: f92d1f63-4361-4775-88f8-be1c9bf781ef
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: ntdddisk/PDISK_GEOMETRY, structs-disk_3ad908b7-8f42-4a06-914e-92b631cc1a56.xml, PDISK_GEOMETRY structure pointer [Storage Devices], *PDISK_GEOMETRY, DISK_GEOMETRY structure [Storage Devices], ntdddisk/DISK_GEOMETRY, storage.disk_geometry, PDISK_GEOMETRY, DISK_GEOMETRY, _DISK_GEOMETRY
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntdddisk.h
+req.include-header: Ntdddisk.h, Ntddk.h, Ntdddisk.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntdddisk.h
+apiname:
+-	DISK_GEOMETRY
+product: Windows
+targetos: Windows
+req.typenames: "*PDISK_GEOMETRY, DISK_GEOMETRY"
 ---
 
 # _DISK_GEOMETRY structure

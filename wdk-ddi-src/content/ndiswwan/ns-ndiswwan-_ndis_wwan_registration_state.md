@@ -1,41 +1,46 @@
 ---
-UID : NS:ndiswwan._NDIS_WWAN_REGISTRATION_STATE
-title : "_NDIS_WWAN_REGISTRATION_STATE"
-author : windows-driver-content
-description : The NDIS_WWAN_REGISTRATION_STATE structure represents the registration state of the MB device.
-old-location : netvista\ndis_wwan_registration_state.htm
-old-project : netvista
-ms.assetid : 3e38880f-b242-400a-babf-531c8daf7a19
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : WwanRef_7f854298-d100-4b4c-8748-a7eb07c9ac38.xml, PNDIS_WWAN_REGISTRATION_STATE, *PNDIS_WWAN_REGISTRATION_STATE, PNDIS_WWAN_REGISTRATION_STATE structure pointer [Network Drivers Starting with Windows Vista], NDIS_WWAN_REGISTRATION_STATE structure [Network Drivers Starting with Windows Vista], NDIS_WWAN_REGISTRATION_STATE, ndiswwan/NDIS_WWAN_REGISTRATION_STATE, _NDIS_WWAN_REGISTRATION_STATE, netvista.ndis_wwan_registration_state, ndiswwan/PNDIS_WWAN_REGISTRATION_STATE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndiswwan.h
-req.include-header : Ndiswwan.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_WWAN_REGISTRATION_STATE, *PNDIS_WWAN_REGISTRATION_STATE
+UID: NS:ndiswwan._NDIS_WWAN_REGISTRATION_STATE
+title: "_NDIS_WWAN_REGISTRATION_STATE"
+author: windows-driver-content
+description: The NDIS_WWAN_REGISTRATION_STATE structure represents the registration state of the MB device.
+old-location: netvista\ndis_wwan_registration_state.htm
+old-project: netvista
+ms.assetid: 3e38880f-b242-400a-babf-531c8daf7a19
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: WwanRef_7f854298-d100-4b4c-8748-a7eb07c9ac38.xml, PNDIS_WWAN_REGISTRATION_STATE, *PNDIS_WWAN_REGISTRATION_STATE, PNDIS_WWAN_REGISTRATION_STATE structure pointer [Network Drivers Starting with Windows Vista], NDIS_WWAN_REGISTRATION_STATE structure [Network Drivers Starting with Windows Vista], NDIS_WWAN_REGISTRATION_STATE, ndiswwan/NDIS_WWAN_REGISTRATION_STATE, _NDIS_WWAN_REGISTRATION_STATE, netvista.ndis_wwan_registration_state, ndiswwan/PNDIS_WWAN_REGISTRATION_STATE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndiswwan.h
+req.include-header: Ndiswwan.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndiswwan.h
+apiname:
+-	NDIS_WWAN_REGISTRATION_STATE
+product: Windows
+targetos: Windows
+req.typenames: NDIS_WWAN_REGISTRATION_STATE, *PNDIS_WWAN_REGISTRATION_STATE
 ---
 
 # _NDIS_WWAN_REGISTRATION_STATE structure

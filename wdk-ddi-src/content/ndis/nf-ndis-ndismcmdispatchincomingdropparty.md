@@ -1,41 +1,46 @@
 ---
-UID : NF:ndis.NdisMCmDispatchIncomingDropParty
-title : NdisMCmDispatchIncomingDropParty macro
-author : windows-driver-content
-description : NdisMCmDispatchIncomingDropParty notifies a client that it should remove a particular party on a multipoint VC.
-old-location : netvista\ndismcmdispatchincomingdropparty.htm
-old-project : netvista
-ms.assetid : 4549b6f4-5138-4724-959c-a36b38c319fd
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NdisMCmDispatchIncomingDropParty, condis_mcm_ref_1a170d75-7913-4068-b047-206b531d42c6.xml, ndis/NdisMCmDispatchIncomingDropParty, netvista.ndismcmdispatchincomingdropparty, NdisMCmDispatchIncomingDropParty macro [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : macro
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see       NdisMCmDispatchIncomingDropParty (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see       NdisMCmDispatchIncomingDropParty (NDIS 5.1)) in Windows XP.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_MCM_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : ndis.h
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisMCmDispatchIncomingDropParty
+title: NdisMCmDispatchIncomingDropParty macro
+author: windows-driver-content
+description: NdisMCmDispatchIncomingDropParty notifies a client that it should remove a particular party on a multipoint VC.
+old-location: netvista\ndismcmdispatchincomingdropparty.htm
+old-project: netvista
+ms.assetid: 4549b6f4-5138-4724-959c-a36b38c319fd
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NdisMCmDispatchIncomingDropParty, condis_mcm_ref_1a170d75-7913-4068-b047-206b531d42c6.xml, ndis/NdisMCmDispatchIncomingDropParty, netvista.ndismcmdispatchincomingdropparty, NdisMCmDispatchIncomingDropParty macro [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: macro
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see       NdisMCmDispatchIncomingDropParty (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see       NdisMCmDispatchIncomingDropParty (NDIS 5.1)) in Windows XP.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_MCM_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: ndis.h
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndis.h
+apiname:
+-	NdisMCmDispatchIncomingDropParty
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

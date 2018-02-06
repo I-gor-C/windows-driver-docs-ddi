@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.tagKS_AnalogVideoInfo
-title : tagKS_AnalogVideoInfo
-author : windows-driver-content
-description : The KS_ANALOGVIDEOINFO structure describes an analog video stream.
-old-location : stream\ks_analogvideoinfo.htm
-old-project : stream
-ms.assetid : a3562a08-c567-4bb5-9de2-aaa561687b88
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.ks_analogvideoinfo, PKS_ANALOGVIDEOINFO, vidcapstruct_1a351d21-929d-4a84-863a-cf590d82c16b.xml, ksmedia/KS_ANALOGVIDEOINFO, KS_ANALOGVIDEOINFO structure [Streaming Media Devices], *PKS_ANALOGVIDEOINFO, PKS_ANALOGVIDEOINFO structure pointer [Streaming Media Devices], tagKS_AnalogVideoInfo, ksmedia/PKS_ANALOGVIDEOINFO, KS_ANALOGVIDEOINFO
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KS_ANALOGVIDEOINFO, *PKS_ANALOGVIDEOINFO
+UID: NS:ksmedia.tagKS_AnalogVideoInfo
+title: tagKS_AnalogVideoInfo
+author: windows-driver-content
+description: The KS_ANALOGVIDEOINFO structure describes an analog video stream.
+old-location: stream\ks_analogvideoinfo.htm
+old-project: stream
+ms.assetid: a3562a08-c567-4bb5-9de2-aaa561687b88
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.ks_analogvideoinfo, PKS_ANALOGVIDEOINFO, vidcapstruct_1a351d21-929d-4a84-863a-cf590d82c16b.xml, ksmedia/KS_ANALOGVIDEOINFO, KS_ANALOGVIDEOINFO structure [Streaming Media Devices], *PKS_ANALOGVIDEOINFO, PKS_ANALOGVIDEOINFO structure pointer [Streaming Media Devices], tagKS_AnalogVideoInfo, ksmedia/PKS_ANALOGVIDEOINFO, KS_ANALOGVIDEOINFO
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	KS_ANALOGVIDEOINFO
+product: Windows
+targetos: Windows
+req.typenames: KS_ANALOGVIDEOINFO, *PKS_ANALOGVIDEOINFO
 ---
 
 # tagKS_AnalogVideoInfo structure

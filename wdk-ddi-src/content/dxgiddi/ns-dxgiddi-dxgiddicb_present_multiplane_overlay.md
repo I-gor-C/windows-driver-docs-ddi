@@ -1,41 +1,46 @@
 ---
-UID : NS:dxgiddi.DXGIDDICB_PRESENT_MULTIPLANE_OVERLAY
-title : DXGIDDICB_PRESENT_MULTIPLANE_OVERLAY
-author : windows-driver-content
-description : Describes multiplane overlay allocations that content is copied to and from.
-old-location : display\dxgiddicb_present_multiplane_overlay.htm
-old-project : display
-ms.assetid : 4f240d75-e7c5-4ba2-a0f0-22280aaaefd6
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DXGIDDICB_PRESENT_MULTIPLANE_OVERLAY structure [Display Devices], display.dxgiddicb_present_multiplane_overlay, dxgiddi/DXGIDDICB_PRESENT_MULTIPLANE_OVERLAY, DXGIDDICB_PRESENT_MULTIPLANE_OVERLAY
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : dxgiddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8.1
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGIDDICB_PRESENT_MULTIPLANE_OVERLAY
+UID: NS:dxgiddi.DXGIDDICB_PRESENT_MULTIPLANE_OVERLAY
+title: DXGIDDICB_PRESENT_MULTIPLANE_OVERLAY
+author: windows-driver-content
+description: Describes multiplane overlay allocations that content is copied to and from.
+old-location: display\dxgiddicb_present_multiplane_overlay.htm
+old-project: display
+ms.assetid: 4f240d75-e7c5-4ba2-a0f0-22280aaaefd6
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DXGIDDICB_PRESENT_MULTIPLANE_OVERLAY structure [Display Devices], display.dxgiddicb_present_multiplane_overlay, dxgiddi/DXGIDDICB_PRESENT_MULTIPLANE_OVERLAY, DXGIDDICB_PRESENT_MULTIPLANE_OVERLAY
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: dxgiddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8.1
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Dxgiddi.h
+apiname:
+-	DXGIDDICB_PRESENT_MULTIPLANE_OVERLAY
+product: Windows
+targetos: Windows
+req.typenames: DXGIDDICB_PRESENT_MULTIPLANE_OVERLAY
 ---
 
 # DXGIDDICB_PRESENT_MULTIPLANE_OVERLAY structure

@@ -1,41 +1,46 @@
 ---
-UID : NS:ndisndk._NDIS_OPEN_NDK_ADAPTER_PARAMETERS
-title : "_NDIS_OPEN_NDK_ADAPTER_PARAMETERS"
-author : windows-driver-content
-description : The NDIS_OPEN_NDK_ADAPTER_PARAMETERS structure specifies parameters to open an NDK adapter instance on the NDK-capable miniport adapter.
-old-location : netvista\ndis_open_ndk_adapter_parameters.htm
-old-project : netvista
-ms.assetid : AC8D4FA1-59E0-4934-A6C5-EA2E645C53FA
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.ndis_open_ndk_adapter_parameters, NDIS_OPEN_NDK_ADAPTER_PARAMETERS, PNDIS_OPEN_NDK_ADAPTER_PARAMETERS, PNDIS_OPEN_NDK_ADAPTER_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], _NDIS_OPEN_NDK_ADAPTER_PARAMETERS, NDIS_OPEN_NDK_ADAPTER_PARAMETERS structure [Network Drivers Starting with Windows Vista], ndisndk/PNDIS_OPEN_NDK_ADAPTER_PARAMETERS, *PNDIS_OPEN_NDK_ADAPTER_PARAMETERS, ndisndk/NDIS_OPEN_NDK_ADAPTER_PARAMETERS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndisndk.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : None supported,Supported in NDIS 6.30 and later.
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_OPEN_NDK_ADAPTER_PARAMETERS, *PNDIS_OPEN_NDK_ADAPTER_PARAMETERS
+UID: NS:ndisndk._NDIS_OPEN_NDK_ADAPTER_PARAMETERS
+title: "_NDIS_OPEN_NDK_ADAPTER_PARAMETERS"
+author: windows-driver-content
+description: The NDIS_OPEN_NDK_ADAPTER_PARAMETERS structure specifies parameters to open an NDK adapter instance on the NDK-capable miniport adapter.
+old-location: netvista\ndis_open_ndk_adapter_parameters.htm
+old-project: netvista
+ms.assetid: AC8D4FA1-59E0-4934-A6C5-EA2E645C53FA
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.ndis_open_ndk_adapter_parameters, NDIS_OPEN_NDK_ADAPTER_PARAMETERS, PNDIS_OPEN_NDK_ADAPTER_PARAMETERS, PNDIS_OPEN_NDK_ADAPTER_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], _NDIS_OPEN_NDK_ADAPTER_PARAMETERS, NDIS_OPEN_NDK_ADAPTER_PARAMETERS structure [Network Drivers Starting with Windows Vista], ndisndk/PNDIS_OPEN_NDK_ADAPTER_PARAMETERS, *PNDIS_OPEN_NDK_ADAPTER_PARAMETERS, ndisndk/NDIS_OPEN_NDK_ADAPTER_PARAMETERS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndisndk.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: None supported,Supported in NDIS 6.30 and later.
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndisndk.h
+apiname:
+-	NDIS_OPEN_NDK_ADAPTER_PARAMETERS
+product: Windows
+targetos: Windows
+req.typenames: NDIS_OPEN_NDK_ADAPTER_PARAMETERS, *PNDIS_OPEN_NDK_ADAPTER_PARAMETERS
 ---
 
 # _NDIS_OPEN_NDK_ADAPTER_PARAMETERS structure

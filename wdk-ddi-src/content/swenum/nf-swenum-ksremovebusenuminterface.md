@@ -1,42 +1,48 @@
 ---
-UID : NF:swenum.KsRemoveBusEnumInterface
-title : KsRemoveBusEnumInterface function
-author : windows-driver-content
-description : The KsRemoveBusEnumInterface function removes an interface to the demand-load bus enumerator object.
-old-location : stream\ksremovebusenuminterface.htm
-old-project : stream
-ms.assetid : 4b1da622-9a48-4c18-9eee-a99830bd26af
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ksfunc_cf6401bc-80bf-4678-80f9-89c23b333bdc.xml, stream.ksremovebusenuminterface, KsRemoveBusEnumInterface, KsRemoveBusEnumInterface function [Streaming Media Devices], swenum/KsRemoveBusEnumInterface
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : swenum.h
-req.include-header : Swenum.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STREAM_TIME_REFERENCE, *PSTREAM_TIME_REFERENCE
-req.product : Windows 10 or later.
+UID: NF:swenum.KsRemoveBusEnumInterface
+title: KsRemoveBusEnumInterface function
+author: windows-driver-content
+description: The KsRemoveBusEnumInterface function removes an interface to the demand-load bus enumerator object.
+old-location: stream\ksremovebusenuminterface.htm
+old-project: stream
+ms.assetid: 4b1da622-9a48-4c18-9eee-a99830bd26af
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ksfunc_cf6401bc-80bf-4678-80f9-89c23b333bdc.xml, stream.ksremovebusenuminterface, KsRemoveBusEnumInterface, KsRemoveBusEnumInterface function [Streaming Media Devices], swenum/KsRemoveBusEnumInterface
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: swenum.h
+req.include-header: Swenum.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsRemoveBusEnumInterface
+product: Windows
+targetos: Windows
+req.typenames: STREAM_TIME_REFERENCE, *PSTREAM_TIME_REFERENCE
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NC:dot11wdi.NDIS_WDI_TX_DEQUEUE_IND
-title : NDIS_WDI_TX_DEQUEUE_IND
-author : windows-driver-content
-description : The NdisWdiTxDequeueIndication callback function is called in the context of a MiniportWdiTxDataSend or MiniportWdiTxTalSend by the IHV miniport to dequeue frames from WDI to the IHV miniport.
-old-location : netvista\ndiswditxdequeueindication.htm
-old-project : netvista
-ms.assetid : ACCB45DA-1233-4276-A0F5-466E50D9377B
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.ndiswditxdequeueindication, NdisWdiTxDequeueIndication callback function [Network Drivers Starting with Windows Vista], NdisWdiTxDequeueIndication, NDIS_WDI_TX_DEQUEUE_IND, NDIS_WDI_TX_DEQUEUE_IND, dot11wdi/NdisWdiTxDequeueIndication
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : dot11wdi.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SYNTH_STATS, *PSYNTH_STATS
+UID: NC:dot11wdi.NDIS_WDI_TX_DEQUEUE_IND
+title: NDIS_WDI_TX_DEQUEUE_IND
+author: windows-driver-content
+description: The NdisWdiTxDequeueIndication callback function is called in the context of a MiniportWdiTxDataSend or MiniportWdiTxTalSend by the IHV miniport to dequeue frames from WDI to the IHV miniport.
+old-location: netvista\ndiswditxdequeueindication.htm
+old-project: netvista
+ms.assetid: ACCB45DA-1233-4276-A0F5-466E50D9377B
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.ndiswditxdequeueindication, NdisWdiTxDequeueIndication callback function [Network Drivers Starting with Windows Vista], NdisWdiTxDequeueIndication, NDIS_WDI_TX_DEQUEUE_IND, NDIS_WDI_TX_DEQUEUE_IND, dot11wdi/NdisWdiTxDequeueIndication
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: dot11wdi.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	dot11wdi.h
+apiname:
+-	NdisWdiTxDequeueIndication
+product: Windows
+targetos: Windows
+req.typenames: SYNTH_STATS, *PSYNTH_STATS
 ---
 
 

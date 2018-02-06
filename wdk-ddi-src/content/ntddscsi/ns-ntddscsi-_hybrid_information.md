@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddscsi._HYBRID_INFORMATION
-title : "_HYBRID_INFORMATION"
-author : windows-driver-content
-description : The HYBRID_INFORMATION structure contains hybrid disk capability information.
-old-location : storage\hybrid_information.htm
-old-project : storage
-ms.assetid : 5CD8E422-8CEE-43E8-9703-520FDBE6BF5E
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : NvCacheTypeWriteBack, NvCacheTypeWriteThrough, NvCacheStatusDisabling, NvCacheStatusEnabled, PHYBRID_INFORMATION, HYBRID_INFORMATION, *PHYBRID_INFORMATION, storage.hybrid_information, ntddscsi/HYBRID_INFORMATION, ntddscsi/PHYBRID_INFORMATION, PHYBRID_INFORMATION structure pointer [Storage Devices], _HYBRID_INFORMATION, NvCacheTypeUnknown, NvCacheNone, HYBRID_INFORMATION structure [Storage Devices], NvCacheStatusUnknown, NvCacheStatusDisabled
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddscsi.h
-req.include-header : Ntddscsi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows 8.1.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HYBRID_INFORMATION, *PHYBRID_INFORMATION
+UID: NS:ntddscsi._HYBRID_INFORMATION
+title: "_HYBRID_INFORMATION"
+author: windows-driver-content
+description: The HYBRID_INFORMATION structure contains hybrid disk capability information.
+old-location: storage\hybrid_information.htm
+old-project: storage
+ms.assetid: 5CD8E422-8CEE-43E8-9703-520FDBE6BF5E
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: NvCacheTypeWriteBack, NvCacheTypeWriteThrough, NvCacheStatusDisabling, NvCacheStatusEnabled, PHYBRID_INFORMATION, HYBRID_INFORMATION, *PHYBRID_INFORMATION, storage.hybrid_information, ntddscsi/HYBRID_INFORMATION, ntddscsi/PHYBRID_INFORMATION, PHYBRID_INFORMATION structure pointer [Storage Devices], _HYBRID_INFORMATION, NvCacheTypeUnknown, NvCacheNone, HYBRID_INFORMATION structure [Storage Devices], NvCacheStatusUnknown, NvCacheStatusDisabled
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddscsi.h
+req.include-header: Ntddscsi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows 8.1.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddscsi.h
+apiname:
+-	HYBRID_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: HYBRID_INFORMATION, *PHYBRID_INFORMATION
 ---
 
 # _HYBRID_INFORMATION structure

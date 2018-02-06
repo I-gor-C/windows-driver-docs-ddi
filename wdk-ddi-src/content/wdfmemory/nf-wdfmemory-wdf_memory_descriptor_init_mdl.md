@@ -1,42 +1,47 @@
 ---
-UID : NF:wdfmemory.WDF_MEMORY_DESCRIPTOR_INIT_MDL
-title : WDF_MEMORY_DESCRIPTOR_INIT_MDL function
-author : windows-driver-content
-description : The WDF_MEMORY_DESCRIPTOR_INIT_MDL function initializes a WDF_MEMORY_DESCRIPTOR structure so that it describes a specified memory descriptor list (MDL).
-old-location : wdf\wdf_memory_descriptor_init_mdl.htm
-old-project : wdf
-ms.assetid : 2f46b268-2d8c-455a-81e3-a79f48e704c7
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WDF_MEMORY_DESCRIPTOR_INIT_MDL function, WDF_MEMORY_DESCRIPTOR_INIT_MDL, wdf.wdf_memory_descriptor_init_mdl, DFMemoryObjectRef_f5eb00be-fd17-49bf-87dd-4fde1b06d65e.xml, kmdf.wdf_memory_descriptor_init_mdl, wdfmemory/WDF_MEMORY_DESCRIPTOR_INIT_MDL
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfmemory.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : MdlAfterReqCompletedIntIoctlA, MdlAfterReqCompletedIoctlA, MdlAfterReqCompletedReadA, MdlAfterReqCompletedWriteA
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_MEMORY_DESCRIPTOR_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfmemory.WDF_MEMORY_DESCRIPTOR_INIT_MDL
+title: WDF_MEMORY_DESCRIPTOR_INIT_MDL function
+author: windows-driver-content
+description: The WDF_MEMORY_DESCRIPTOR_INIT_MDL function initializes a WDF_MEMORY_DESCRIPTOR structure so that it describes a specified memory descriptor list (MDL).
+old-location: wdf\wdf_memory_descriptor_init_mdl.htm
+old-project: wdf
+ms.assetid: 2f46b268-2d8c-455a-81e3-a79f48e704c7
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WDF_MEMORY_DESCRIPTOR_INIT_MDL function, WDF_MEMORY_DESCRIPTOR_INIT_MDL, wdf.wdf_memory_descriptor_init_mdl, DFMemoryObjectRef_f5eb00be-fd17-49bf-87dd-4fde1b06d65e.xml, kmdf.wdf_memory_descriptor_init_mdl, wdfmemory/WDF_MEMORY_DESCRIPTOR_INIT_MDL
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfmemory.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: MdlAfterReqCompletedIntIoctlA, MdlAfterReqCompletedIoctlA, MdlAfterReqCompletedReadA, MdlAfterReqCompletedWriteA
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfmemory.h
+apiname:
+-	WDF_MEMORY_DESCRIPTOR_INIT_MDL
+product: Windows
+targetos: Windows
+req.typenames: WDF_MEMORY_DESCRIPTOR_TYPE
+req.product: Windows 10 or later.
 ---
 
 

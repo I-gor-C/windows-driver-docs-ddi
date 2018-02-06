@@ -1,41 +1,46 @@
 ---
-UID : NS:iscsiop._SetInitiatorNodeName_OUT
-title : "_SetInitiatorNodeName_OUT"
-author : windows-driver-content
-description : The SetInitiatorNodeName_OUT structure holds the output data for the SetInitiatorNodeName method.
-old-location : storage\setinitiatornodename_out.htm
-old-project : storage
-ms.assetid : f3417648-f9f9-402f-b3a3-d09c0b7e5fdd
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : iscsiop/PSetInitiatorNodeName_OUT, structs-iSCSI_35ce4900-1703-4562-abe0-155215893c5f.xml, PSetInitiatorNodeName_OUT structure pointer [Storage Devices], SetInitiatorNodeName_OUT, iscsiop/SetInitiatorNodeName_OUT, _SetInitiatorNodeName_OUT, SetInitiatorNodeName_OUT structure [Storage Devices], storage.setinitiatornodename_out, *PSetInitiatorNodeName_OUT, PSetInitiatorNodeName_OUT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : iscsiop.h
-req.include-header : Iscsiop.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSetInitiatorNodeName_OUT, SetInitiatorNodeName_OUT"
+UID: NS:iscsiop._SetInitiatorNodeName_OUT
+title: "_SetInitiatorNodeName_OUT"
+author: windows-driver-content
+description: The SetInitiatorNodeName_OUT structure holds the output data for the SetInitiatorNodeName method.
+old-location: storage\setinitiatornodename_out.htm
+old-project: storage
+ms.assetid: f3417648-f9f9-402f-b3a3-d09c0b7e5fdd
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: iscsiop/PSetInitiatorNodeName_OUT, structs-iSCSI_35ce4900-1703-4562-abe0-155215893c5f.xml, PSetInitiatorNodeName_OUT structure pointer [Storage Devices], SetInitiatorNodeName_OUT, iscsiop/SetInitiatorNodeName_OUT, _SetInitiatorNodeName_OUT, SetInitiatorNodeName_OUT structure [Storage Devices], storage.setinitiatornodename_out, *PSetInitiatorNodeName_OUT, PSetInitiatorNodeName_OUT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: iscsiop.h
+req.include-header: Iscsiop.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	iscsiop.h
+apiname:
+-	SetInitiatorNodeName_OUT
+product: Windows
+targetos: Windows
+req.typenames: "*PSetInitiatorNodeName_OUT, SetInitiatorNodeName_OUT"
 ---
 
 # _SetInitiatorNodeName_OUT structure

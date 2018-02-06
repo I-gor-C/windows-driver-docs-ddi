@@ -1,41 +1,47 @@
 ---
-UID : NF:fwpsk.FwpsNetBufferListRemoveContext0
-title : FwpsNetBufferListRemoveContext0 function
-author : windows-driver-content
-description : The FwpsNetBufferListRemoveContext0 function removes the context associated with a network buffer list.Note  FwpsNetBufferListRemoveContext0 is a specific version of FwpsNetBufferListRemoveContext.
-old-location : netvista\fwpsnetbufferlistremovecontext0.htm
-old-project : netvista
-ms.assetid : bd3aa1a2-3ff5-47e4-93f6-5cb2022ec630
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : FwpsNetBufferListRemoveContext0 function [Network Drivers Starting with Windows Vista], wfp_ref_2_funct_3_fwps_J-Q_320b667d-7f90-4a71-acff-e5b0b216ea3c.xml, netvista.fwpsnetbufferlistremovecontext0, FwpsNetBufferListRemoveContext0, fwpsk/FwpsNetBufferListRemoveContext0
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fwpsk.h
-req.include-header : Fwpsk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with  Windows 7.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Fwpkclnt.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FWPS_VSWITCH_EVENT_TYPE
+UID: NF:fwpsk.FwpsNetBufferListRemoveContext0
+title: FwpsNetBufferListRemoveContext0 function
+author: windows-driver-content
+description: The FwpsNetBufferListRemoveContext0 function removes the context associated with a network buffer list.Note  FwpsNetBufferListRemoveContext0 is a specific version of FwpsNetBufferListRemoveContext.
+old-location: netvista\fwpsnetbufferlistremovecontext0.htm
+old-project: netvista
+ms.assetid: bd3aa1a2-3ff5-47e4-93f6-5cb2022ec630
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: FwpsNetBufferListRemoveContext0 function [Network Drivers Starting with Windows Vista], wfp_ref_2_funct_3_fwps_J-Q_320b667d-7f90-4a71-acff-e5b0b216ea3c.xml, netvista.fwpsnetbufferlistremovecontext0, FwpsNetBufferListRemoveContext0, fwpsk/FwpsNetBufferListRemoveContext0
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fwpsk.h
+req.include-header: Fwpsk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with  Windows 7.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Fwpkclnt.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	fwpkclnt.lib
+-	fwpkclnt.dll
+apiname:
+-	FwpsNetBufferListRemoveContext0
+product: Windows
+targetos: Windows
+req.typenames: FWPS_VSWITCH_EVENT_TYPE
 ---
 
 

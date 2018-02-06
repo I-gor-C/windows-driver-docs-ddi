@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dkmddi.DXGKDDI_PREEMPTCOMMAND
-title : DXGKDDI_PREEMPTCOMMAND
-author : windows-driver-content
-description : The DxgkDdiPreemptCommand function preempts a direct memory access (DMA) buffer that was previously submitted to and currently queued in the hardware command execution unit.
-old-location : display\dxgkddipreemptcommand.htm
-old-project : display
-ms.assetid : 8cea02d4-f25e-4ff4-8c9e-aa360a764c4b
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkddipreemptcommand, DxgkDdiPreemptCommand callback function [Display Devices], DxgkDdiPreemptCommand, DXGKDDI_PREEMPTCOMMAND, DXGKDDI_PREEMPTCOMMAND, d3dkmddi/DxgkDdiPreemptCommand, DmFunctions_a378e47e-622c-41bf-95e7-21e4088d7026.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dkmddi.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : DISPATCH_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
+UID: NC:d3dkmddi.DXGKDDI_PREEMPTCOMMAND
+title: DXGKDDI_PREEMPTCOMMAND
+author: windows-driver-content
+description: The DxgkDdiPreemptCommand function preempts a direct memory access (DMA) buffer that was previously submitted to and currently queued in the hardware command execution unit.
+old-location: display\dxgkddipreemptcommand.htm
+old-project: display
+ms.assetid: 8cea02d4-f25e-4ff4-8c9e-aa360a764c4b
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkddipreemptcommand, DxgkDdiPreemptCommand callback function [Display Devices], DxgkDdiPreemptCommand, DXGKDDI_PREEMPTCOMMAND, DXGKDDI_PREEMPTCOMMAND, d3dkmddi/DxgkDdiPreemptCommand, DmFunctions_a378e47e-622c-41bf-95e7-21e4088d7026.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dkmddi.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: DISPATCH_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DxgkDdiPreemptCommand
+product: Windows
+targetos: Windows
+req.typenames: DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
 

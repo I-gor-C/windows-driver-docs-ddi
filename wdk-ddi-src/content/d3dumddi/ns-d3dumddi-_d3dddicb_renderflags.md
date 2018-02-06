@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._D3DDDICB_RENDERFLAGS
-title : "_D3DDDICB_RENDERFLAGS"
-author : windows-driver-content
-description : The D3DDDICB_RENDERFLAGS structure identifies information about a command buffer to be rendered.
-old-location : display\d3dddicb_renderflags.htm
-old-project : display
-ms.assetid : 18ae8ec2-a9e9-40e2-8b11-93fd163a801d
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : "_D3DDDICB_RENDERFLAGS, D3DDDICB_RENDERFLAGS structure [Display Devices], d3dumddi/D3DDDICB_RENDERFLAGS, D3DDDICB_RENDERFLAGS, display.d3dddicb_renderflags, D3D_other_Structs_559cfa58-5c9b-470e-aa4b-6c145045ed82.xml"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDICB_RENDERFLAGS
+UID: NS:d3dumddi._D3DDDICB_RENDERFLAGS
+title: "_D3DDDICB_RENDERFLAGS"
+author: windows-driver-content
+description: The D3DDDICB_RENDERFLAGS structure identifies information about a command buffer to be rendered.
+old-location: display\d3dddicb_renderflags.htm
+old-project: display
+ms.assetid: 18ae8ec2-a9e9-40e2-8b11-93fd163a801d
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: "_D3DDDICB_RENDERFLAGS, D3DDDICB_RENDERFLAGS structure [Display Devices], d3dumddi/D3DDDICB_RENDERFLAGS, D3DDDICB_RENDERFLAGS, display.d3dddicb_renderflags, D3D_other_Structs_559cfa58-5c9b-470e-aa4b-6c145045ed82.xml"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	D3DDDICB_RENDERFLAGS
+product: Windows
+targetos: Windows
+req.typenames: D3DDDICB_RENDERFLAGS
 ---
 
 # _D3DDDICB_RENDERFLAGS structure

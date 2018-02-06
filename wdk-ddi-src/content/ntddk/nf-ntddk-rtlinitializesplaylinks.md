@@ -1,41 +1,46 @@
 ---
-UID : NF:ntddk.RtlInitializeSplayLinks
-title : RtlInitializeSplayLinks function
-author : windows-driver-content
-description : The RtlInitializeSplayLinks routine initializes a splay link node.
-old-location : ifsk\rtlinitializesplaylinks.htm
-old-project : ifsk
-ms.assetid : 34818dc0-d241-4f5f-a202-08200fbc23a3
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : RtlInitializeSplayLinks routine [Installable File System Drivers], ifsk.rtlinitializesplaylinks, RtlInitializeSplayLinks, rtlref_20e818cf-6afb-4699-b760-bbd7964b576c.xml, ntddk/RtlInitializeSplayLinks
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntddk.h
-req.include-header : Ntddk.h, Ntifs.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.RtlInitializeSplayLinks
+title: RtlInitializeSplayLinks function
+author: windows-driver-content
+description: The RtlInitializeSplayLinks routine initializes a splay link node.
+old-location: ifsk\rtlinitializesplaylinks.htm
+old-project: ifsk
+ms.assetid: 34818dc0-d241-4f5f-a202-08200fbc23a3
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: RtlInitializeSplayLinks routine [Installable File System Drivers], ifsk.rtlinitializesplaylinks, RtlInitializeSplayLinks, rtlref_20e818cf-6afb-4699-b760-bbd7964b576c.xml, ntddk/RtlInitializeSplayLinks
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntddk.h
+req.include-header: Ntddk.h, Ntifs.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddk.h
+apiname:
+-	RtlInitializeSplayLinks
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

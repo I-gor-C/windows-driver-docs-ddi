@@ -1,42 +1,49 @@
 ---
-UID : NF:wdm.TmRollbackEnlistment
-title : TmRollbackEnlistment function
-author : windows-driver-content
-description : The TmRollbackEnlistment routine rolls back a specified enlistment.
-old-location : kernel\tmrollbackenlistment.htm
-old-project : kernel
-ms.assetid : 1f089f2c-73e2-4c77-a398-0d369aafdf3a
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : TmRollbackEnlistment, wdm/TmRollbackEnlistment, TmRollbackEnlistment routine [Kernel-Mode Driver Architecture], ktm_ref_adca7b83-77e1-4c1d-9ed8-aac2c713d43c.xml, kernel.tmrollbackenlistment
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later operating system versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.TmRollbackEnlistment
+title: TmRollbackEnlistment function
+author: windows-driver-content
+description: The TmRollbackEnlistment routine rolls back a specified enlistment.
+old-location: kernel\tmrollbackenlistment.htm
+old-project: kernel
+ms.assetid: 1f089f2c-73e2-4c77-a398-0d369aafdf3a
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: TmRollbackEnlistment, wdm/TmRollbackEnlistment, TmRollbackEnlistment routine [Kernel-Mode Driver Architecture], ktm_ref_adca7b83-77e1-4c1d-9ed8-aac2c713d43c.xml, kernel.tmrollbackenlistment
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later operating system versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+-	Ext-MS-Win-ntos-tm-l1-1-0.dll
+-	tm.sys
+apiname:
+-	TmRollbackEnlistment
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._DXVADDI_VALUERANGE
-title : "_DXVADDI_VALUERANGE"
-author : windows-driver-content
-description : The DXVADDI_VALUERANGE structure describes values of a property (such as, the value spread and default value).
-old-location : display\dxvaddi_valuerange.htm
-old-project : display
-ms.assetid : c3013da9-8db4-4346-9be8-77b2c6de3f59
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxvaddi_valuerange, DXVA2_Structs_37c2cd52-30c3-4e99-918f-6a538547bdd2.xml, DXVADDI_VALUERANGE, DXVADDI_VALUERANGE structure [Display Devices], d3dumddi/DXVADDI_VALUERANGE, _DXVADDI_VALUERANGE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXVADDI_VALUERANGE
+UID: NS:d3dumddi._DXVADDI_VALUERANGE
+title: "_DXVADDI_VALUERANGE"
+author: windows-driver-content
+description: The DXVADDI_VALUERANGE structure describes values of a property (such as, the value spread and default value).
+old-location: display\dxvaddi_valuerange.htm
+old-project: display
+ms.assetid: c3013da9-8db4-4346-9be8-77b2c6de3f59
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxvaddi_valuerange, DXVA2_Structs_37c2cd52-30c3-4e99-918f-6a538547bdd2.xml, DXVADDI_VALUERANGE, DXVADDI_VALUERANGE structure [Display Devices], d3dumddi/DXVADDI_VALUERANGE, _DXVADDI_VALUERANGE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	DXVADDI_VALUERANGE
+product: Windows
+targetos: Windows
+req.typenames: DXVADDI_VALUERANGE
 ---
 
 # _DXVADDI_VALUERANGE structure

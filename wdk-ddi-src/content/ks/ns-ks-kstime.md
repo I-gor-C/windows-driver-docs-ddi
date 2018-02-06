@@ -1,41 +1,46 @@
 ---
-UID : NS:ks.KSTIME
-title : KSTIME
-author : windows-driver-content
-description : The KSTIME structure specifies a time stamp that can be used to indicate stream position.
-old-location : stream\kstime.htm
-old-project : stream
-ms.assetid : e026a539-7aa5-4205-970d-cf452e4471da
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ks/PKSTIME, KSTIME, *PKSTIME, KSTIME structure [Streaming Media Devices], stream.kstime, PKSTIME structure pointer [Streaming Media Devices], ks/KSTIME, PKSTIME, ks-struct_9db70ddb-ae2c-464b-a481-6927adef449c.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KSTIME, *PKSTIME
+UID: NS:ks.KSTIME
+title: KSTIME
+author: windows-driver-content
+description: The KSTIME structure specifies a time stamp that can be used to indicate stream position.
+old-location: stream\kstime.htm
+old-project: stream
+ms.assetid: e026a539-7aa5-4205-970d-cf452e4471da
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ks/PKSTIME, KSTIME, *PKSTIME, KSTIME structure [Streaming Media Devices], stream.kstime, PKSTIME structure pointer [Streaming Media Devices], ks/KSTIME, PKSTIME, ks-struct_9db70ddb-ae2c-464b-a481-6927adef449c.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	KSTIME
+product: Windows
+targetos: Windows
+req.typenames: KSTIME, *PKSTIME
 ---
 
 # KSTIME structure

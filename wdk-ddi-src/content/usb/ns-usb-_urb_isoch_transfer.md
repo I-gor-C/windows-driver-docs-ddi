@@ -1,42 +1,47 @@
 ---
-UID : NS:usb._URB_ISOCH_TRANSFER
-title : "_URB_ISOCH_TRANSFER"
-author : windows-driver-content
-description : The _URB_ISOCH_TRANSFER structure is used by USB client drivers to send data to or retrieve data from an isochronous transfer pipe.
-old-location : buses\_urb_isoch_transfer.htm
-old-project : usbref
-ms.assetid : b021211a-3f72-47ff-9e69-bbf3807f4ec4
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : "_URB_ISOCH_TRANSFER structure [Buses], _URB_ISOCH_TRANSFER, buses._urb_isoch_transfer, usb/_URB_ISOCH_TRANSFER, USBD_START_ISO_TRANSFER_ASAP, USBD_TRANSFER_DIRECTION_IN, usbstrct_5a064ef7-b08f-405f-8d73-22fea138ac29.xml, USBD_SHORT_TRANSFER_OK"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : usb.h
-req.include-header : Usb.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
-req.product : Windows 10 or later.
+UID: NS:usb._URB_ISOCH_TRANSFER
+title: "_URB_ISOCH_TRANSFER"
+author: windows-driver-content
+description: The _URB_ISOCH_TRANSFER structure is used by USB client drivers to send data to or retrieve data from an isochronous transfer pipe.
+old-location: buses\_urb_isoch_transfer.htm
+old-project: usbref
+ms.assetid: b021211a-3f72-47ff-9e69-bbf3807f4ec4
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: "_URB_ISOCH_TRANSFER structure [Buses], _URB_ISOCH_TRANSFER, buses._urb_isoch_transfer, usb/_URB_ISOCH_TRANSFER, USBD_START_ISO_TRANSFER_ASAP, USBD_TRANSFER_DIRECTION_IN, usbstrct_5a064ef7-b08f-405f-8d73-22fea138ac29.xml, USBD_SHORT_TRANSFER_OK"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: usb.h
+req.include-header: Usb.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	usb.h
+apiname:
+-	_URB_ISOCH_TRANSFER
+product: Windows
+targetos: Windows
+req.typenames: 
+req.product: Windows 10 or later.
 ---
 
 # _URB_ISOCH_TRANSFER structure

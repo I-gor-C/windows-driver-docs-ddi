@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugSymbols3.AppendSymbolPath
-title : IDebugSymbols3::AppendSymbolPath method
-author : windows-driver-content
-description : The AppendSymbolPath method appends directories to the symbol path.
-old-location : debugger\appendsymbolpath.htm
-old-project : debugger
-ms.assetid : 99a0ded5-2a73-40c9-99f4-82d31395aa62
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugSymbols interface [Windows Debugging], AppendSymbolPath method, IDebugSymbols2::AppendSymbolPath, AppendSymbolPath method [Windows Debugging], AppendSymbolPath method [Windows Debugging], IDebugSymbols2 interface, AppendSymbolPath method [Windows Debugging], IDebugSymbols3 interface, dbgeng/IDebugSymbols3::AppendSymbolPath, dbgeng/IDebugSymbols::AppendSymbolPath, AppendSymbolPath method [Windows Debugging], IDebugSymbols interface, AppendSymbolPath, dbgeng/IDebugSymbols2::AppendSymbolPath, IDebugSymbols2 interface [Windows Debugging], AppendSymbolPath method, IDebugSymbols3::AppendSymbolPath, IDebugSymbols_cc73a8f6-3cf1-40a1-8cb5-712eeca0b883.xml, IDebugSymbols3 interface [Windows Debugging], AppendSymbolPath method, IDebugSymbols3, IDebugSymbols::AppendSymbolPath, debugger.appendsymbolpath
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSymbols3.AppendSymbolPath
+title: IDebugSymbols3::AppendSymbolPath method
+author: windows-driver-content
+description: The AppendSymbolPath method appends directories to the symbol path.
+old-location: debugger\appendsymbolpath.htm
+old-project: debugger
+ms.assetid: 99a0ded5-2a73-40c9-99f4-82d31395aa62
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugSymbols interface [Windows Debugging], AppendSymbolPath method, IDebugSymbols2::AppendSymbolPath, AppendSymbolPath method [Windows Debugging], AppendSymbolPath method [Windows Debugging], IDebugSymbols2 interface, AppendSymbolPath method [Windows Debugging], IDebugSymbols3 interface, dbgeng/IDebugSymbols3::AppendSymbolPath, dbgeng/IDebugSymbols::AppendSymbolPath, AppendSymbolPath method [Windows Debugging], IDebugSymbols interface, AppendSymbolPath, dbgeng/IDebugSymbols2::AppendSymbolPath, IDebugSymbols2 interface [Windows Debugging], AppendSymbolPath method, IDebugSymbols3::AppendSymbolPath, IDebugSymbols_cc73a8f6-3cf1-40a1-8cb5-712eeca0b883.xml, IDebugSymbols3 interface [Windows Debugging], AppendSymbolPath method, IDebugSymbols3, IDebugSymbols::AppendSymbolPath, debugger.appendsymbolpath
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Dbgeng.h
+apiname:
+-	IDebugSymbols.AppendSymbolPath
+-	IDebugSymbols2.AppendSymbolPath
+-	IDebugSymbols3.AppendSymbolPath
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:hdaudio._HDAUDIO_BUS_INTERFACE_BDL
-title : "_HDAUDIO_BUS_INTERFACE_BDL"
-author : windows-driver-content
-description : The HDAUDIO_BUS_INTERFACE_BDL structure specifies the information that a client requires to call the routines in the HDAUDIO_BUS_INTERFACE_BDL version of the HD Audio DDI. Another variant of this DDI is specified by the HDAUDIO_BUS_INTERFACE structure.
-old-location : audio\hdaudio_bus_interface_bdl.htm
-old-project : audio
-ms.assetid : 64523c09-35dd-45df-beed-ce8afb740f5d
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : aud-prop2_f9b041b3-76fd-4176-9fc8-32eeda46cc32.xml, hdaudio/HDAUDIO_BUS_INTERFACE_BDL, PHDAUDIO_BUS_INTERFACE_BDL structure pointer [Audio Devices], HDAUDIO_BUS_INTERFACE_BDL, hdaudio/PHDAUDIO_BUS_INTERFACE_BDL, HDAUDIO_BUS_INTERFACE_BDL structure [Audio Devices], audio.hdaudio_bus_interface_bdl, *PHDAUDIO_BUS_INTERFACE_BDL, PHDAUDIO_BUS_INTERFACE_BDL, _HDAUDIO_BUS_INTERFACE_BDL
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : hdaudio.h
-req.include-header : Hdaudio.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HDAUDIO_BUS_INTERFACE_BDL, *PHDAUDIO_BUS_INTERFACE_BDL
+UID: NS:hdaudio._HDAUDIO_BUS_INTERFACE_BDL
+title: "_HDAUDIO_BUS_INTERFACE_BDL"
+author: windows-driver-content
+description: The HDAUDIO_BUS_INTERFACE_BDL structure specifies the information that a client requires to call the routines in the HDAUDIO_BUS_INTERFACE_BDL version of the HD Audio DDI. Another variant of this DDI is specified by the HDAUDIO_BUS_INTERFACE structure.
+old-location: audio\hdaudio_bus_interface_bdl.htm
+old-project: audio
+ms.assetid: 64523c09-35dd-45df-beed-ce8afb740f5d
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: aud-prop2_f9b041b3-76fd-4176-9fc8-32eeda46cc32.xml, hdaudio/HDAUDIO_BUS_INTERFACE_BDL, PHDAUDIO_BUS_INTERFACE_BDL structure pointer [Audio Devices], HDAUDIO_BUS_INTERFACE_BDL, hdaudio/PHDAUDIO_BUS_INTERFACE_BDL, HDAUDIO_BUS_INTERFACE_BDL structure [Audio Devices], audio.hdaudio_bus_interface_bdl, *PHDAUDIO_BUS_INTERFACE_BDL, PHDAUDIO_BUS_INTERFACE_BDL, _HDAUDIO_BUS_INTERFACE_BDL
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: hdaudio.h
+req.include-header: Hdaudio.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hdaudio.h
+apiname:
+-	HDAUDIO_BUS_INTERFACE_BDL
+product: Windows
+targetos: Windows
+req.typenames: HDAUDIO_BUS_INTERFACE_BDL, *PHDAUDIO_BUS_INTERFACE_BDL
 ---
 
 # _HDAUDIO_BUS_INTERFACE_BDL structure

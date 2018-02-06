@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_CREATEDECODEDEVICE
-title : PFND3DDDI_CREATEDECODEDEVICE
-author : windows-driver-content
-description : The CreateDecodeDevice function creates a Microsoft DirectX Video Acceleration (DirectX VA) decode device that is used to decode video.
-old-location : display\createdecodedevice.htm
-old-project : display
-ms.assetid : 4d9a062a-2fdf-4e55-a335-c03c5d5665ff
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.createdecodedevice, CreateDecodeDevice callback function [Display Devices], CreateDecodeDevice, PFND3DDDI_CREATEDECODEDEVICE, PFND3DDDI_CREATEDECODEDEVICE, d3dumddi/CreateDecodeDevice, UserModeDisplayDriver_Functions_a6618d5f-ea60-467f-bc0b-e1fe3ee268fe.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_CREATEDECODEDEVICE
+title: PFND3DDDI_CREATEDECODEDEVICE
+author: windows-driver-content
+description: The CreateDecodeDevice function creates a Microsoft DirectX Video Acceleration (DirectX VA) decode device that is used to decode video.
+old-location: display\createdecodedevice.htm
+old-project: display
+ms.assetid: 4d9a062a-2fdf-4e55-a335-c03c5d5665ff
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.createdecodedevice, CreateDecodeDevice callback function [Display Devices], CreateDecodeDevice, PFND3DDDI_CREATEDECODEDEVICE, PFND3DDDI_CREATEDECODEDEVICE, d3dumddi/CreateDecodeDevice, UserModeDisplayDriver_Functions_a6618d5f-ea60-467f-bc0b-e1fe3ee268fe.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	CreateDecodeDevice
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

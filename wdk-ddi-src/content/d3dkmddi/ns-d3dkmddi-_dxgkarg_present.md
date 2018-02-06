@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGKARG_PRESENT
-title : "_DXGKARG_PRESENT"
-author : windows-driver-content
-description : The DXGKARG_PRESENT structure describes a source-to-primary copy operation.
-old-location : display\dxgkarg_present.htm
-old-project : display
-ms.assetid : 1bf91677-fa9e-4738-b8ea-efce90a52859
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : "_DXGKARG_PRESENT, d3dkmddi/DXGKARG_PRESENT, DmStructs_cbe9fbba-047c-468e-bb52-0f90c4e2b75c.xml, DXGKARG_PRESENT, display.dxgkarg_present, *INOUT_PDXGKARG_PRESENT, DXGKARG_PRESENT structure [Display Devices]"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGKARG_PRESENT
+UID: NS:d3dkmddi._DXGKARG_PRESENT
+title: "_DXGKARG_PRESENT"
+author: windows-driver-content
+description: The DXGKARG_PRESENT structure describes a source-to-primary copy operation.
+old-location: display\dxgkarg_present.htm
+old-project: display
+ms.assetid: 1bf91677-fa9e-4738-b8ea-efce90a52859
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: "_DXGKARG_PRESENT, d3dkmddi/DXGKARG_PRESENT, DmStructs_cbe9fbba-047c-468e-bb52-0f90c4e2b75c.xml, DXGKARG_PRESENT, display.dxgkarg_present, *INOUT_PDXGKARG_PRESENT, DXGKARG_PRESENT structure [Display Devices]"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DXGKARG_PRESENT
+product: Windows
+targetos: Windows
+req.typenames: DXGKARG_PRESENT
 ---
 
 # _DXGKARG_PRESENT structure

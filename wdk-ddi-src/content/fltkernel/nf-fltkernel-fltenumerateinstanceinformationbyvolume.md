@@ -1,41 +1,47 @@
 ---
-UID : NF:fltkernel.FltEnumerateInstanceInformationByVolume
-title : FltEnumerateInstanceInformationByVolume function
-author : windows-driver-content
-description : The FltEnumerateInstanceInformationByVolume routine provides information about minifilter driver instances and legacy filter drivers (Windows Vista only) that are attached to a given volume.
-old-location : ifsk\fltenumerateinstanceinformationbyvolume.htm
-old-project : ifsk
-ms.assetid : 2bccd6db-5538-43f3-a4b2-7d14b1cf12d7
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.fltenumerateinstanceinformationbyvolume, FltApiRef_e_to_o_682cf119-8631-4725-b2cc-eb0218acb4d7.xml, FltEnumerateInstanceInformationByVolume routine [Installable File System Drivers], fltkernel/FltEnumerateInstanceInformationByVolume, FltEnumerateInstanceInformationByVolume
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : FltKernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltEnumerateInstanceInformationByVolume
+title: FltEnumerateInstanceInformationByVolume function
+author: windows-driver-content
+description: The FltEnumerateInstanceInformationByVolume routine provides information about minifilter driver instances and legacy filter drivers (Windows Vista only) that are attached to a given volume.
+old-location: ifsk\fltenumerateinstanceinformationbyvolume.htm
+old-project: ifsk
+ms.assetid: 2bccd6db-5538-43f3-a4b2-7d14b1cf12d7
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.fltenumerateinstanceinformationbyvolume, FltApiRef_e_to_o_682cf119-8631-4725-b2cc-eb0218acb4d7.xml, FltEnumerateInstanceInformationByVolume routine [Installable File System Drivers], fltkernel/FltEnumerateInstanceInformationByVolume, FltEnumerateInstanceInformationByVolume
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: FltKernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	FltMgr.lib
+-	FltMgr.dll
+apiname:
+-	FltEnumerateInstanceInformationByVolume
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

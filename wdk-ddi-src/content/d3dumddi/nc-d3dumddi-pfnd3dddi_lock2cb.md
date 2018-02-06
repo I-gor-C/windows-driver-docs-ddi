@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_LOCK2CB
-title : PFND3DDDI_LOCK2CB
-author : windows-driver-content
-description : The pfnLock2Cb function locks an allocation and obtains a pointer to the allocation from the display miniport driver or video memory manager.
-old-location : display\pfnlock2cb.htm
-old-project : display
-ms.assetid : C046F34A-4304-4B96-8D7A-7A951016437F
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.pfnlock2cb, pfnLock2Cb callback function [Display Devices], pfnLock2Cb, PFND3DDDI_LOCK2CB, PFND3DDDI_LOCK2CB, d3dumddi/pfnLock2Cb
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_LOCK2CB
+title: PFND3DDDI_LOCK2CB
+author: windows-driver-content
+description: The pfnLock2Cb function locks an allocation and obtains a pointer to the allocation from the display miniport driver or video memory manager.
+old-location: display\pfnlock2cb.htm
+old-project: display
+ms.assetid: C046F34A-4304-4B96-8D7A-7A951016437F
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.pfnlock2cb, pfnLock2Cb callback function [Display Devices], pfnLock2Cb, PFND3DDDI_LOCK2CB, PFND3DDDI_LOCK2CB, d3dumddi/pfnLock2Cb
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	pfnLock2Cb
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

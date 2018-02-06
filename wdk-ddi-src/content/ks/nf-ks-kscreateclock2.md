@@ -1,41 +1,46 @@
 ---
-UID : NF:ks.KsCreateClock2
-title : KsCreateClock2 function
-author : windows-driver-content
-description : Creates a handle to a clock instance. Call this function after the Component Object Model (COM) is initialized.
-old-location : stream\kscreateclock2.htm
-old-project : stream
-ms.assetid : b70d4a57-c687-40b8-bbf2-4a0a2fbf4863
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ks/KsCreateClock2, KsCreateClock2, stream.kscreateclock2, KsCreateClock2 function [Streaming Media Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsCreateClock2
+title: KsCreateClock2 function
+author: windows-driver-content
+description: Creates a handle to a clock instance. Call this function after the Component Object Model (COM) is initialized.
+old-location: stream\kscreateclock2.htm
+old-project: stream
+ms.assetid: b70d4a57-c687-40b8-bbf2-4a0a2fbf4863
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ks/KsCreateClock2, KsCreateClock2, stream.kscreateclock2, KsCreateClock2 function [Streaming Media Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ks.h
+apiname:
+-	KsCreateClock2
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

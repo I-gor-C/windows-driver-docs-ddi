@@ -1,42 +1,47 @@
 ---
-UID : NI:winsmcrd.IOCTL_SMARTCARD_GET_ATTRIBUTE
-title : IOCTL_SMARTCARD_GET_ATTRIBUTE
-author : windows-driver-content
-description : The IOCTL_SMARTCARD_GET_ATTRIBUTE control code queries for smart card attribues.
-old-location : nfpdrivers\ioctl_smartcard_get_attribute.htm
-old-project : nfpdrivers
-ms.assetid : 5B5F4CA1-0E49-4D60-AD78-3294C80844E1
-ms.author : windowsdriverdev
-ms.date : 12/18/2017
-ms.keywords : nfpdrivers.ioctl_smartcard_get_attribute, IOCTL_SMARTCARD_GET_ATTRIBUTE control code [Near-Field Proximity Drivers], IOCTL_SMARTCARD_GET_ATTRIBUTE, winsmcrd/IOCTL_SMARTCARD_GET_ATTRIBUTE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : winsmcrd.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDOT11_WPS_DEVICE_NAME, DOT11_WPS_DEVICE_NAME"
-req.product : Windows 10 or later.
+UID: NI:winsmcrd.IOCTL_SMARTCARD_GET_ATTRIBUTE
+title: IOCTL_SMARTCARD_GET_ATTRIBUTE
+author: windows-driver-content
+description: The IOCTL_SMARTCARD_GET_ATTRIBUTE control code queries for smart card attribues.
+old-location: nfpdrivers\ioctl_smartcard_get_attribute.htm
+old-project: nfpdrivers
+ms.assetid: 5B5F4CA1-0E49-4D60-AD78-3294C80844E1
+ms.author: windowsdriverdev
+ms.date: 12/18/2017
+ms.keywords: nfpdrivers.ioctl_smartcard_get_attribute, IOCTL_SMARTCARD_GET_ATTRIBUTE control code [Near-Field Proximity Drivers], IOCTL_SMARTCARD_GET_ATTRIBUTE, winsmcrd/IOCTL_SMARTCARD_GET_ATTRIBUTE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: winsmcrd.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	winsmcrd.h
+apiname:
+-	IOCTL_SMARTCARD_GET_ATTRIBUTE
+product: Windows
+targetos: Windows
+req.typenames: "*PDOT11_WPS_DEVICE_NAME, DOT11_WPS_DEVICE_NAME"
+req.product: Windows 10 or later.
 ---
 
 # IOCTL_SMARTCARD_GET_ATTRIBUTE IOCTL

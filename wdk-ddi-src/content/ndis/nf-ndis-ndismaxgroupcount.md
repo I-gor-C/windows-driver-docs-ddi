@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisMaxGroupCount
-title : NdisMaxGroupCount function
-author : windows-driver-content
-description : The NdisMaxGroupCount function returns the maximum number of processor groups in the local computer system.
-old-location : netvista\ndismaxgroupcount.htm
-old-project : netvista
-ms.assetid : 080707c5-cf46-4066-a241-684cdae37fee
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.ndismaxgroupcount, NdisMaxGroupCount, NdisMaxGroupCount function [Network Drivers Starting with Windows Vista], ndis_processor_group_ref_5744be61-71b7-4abc-ad66-30b26558c0ac.xml, ndis/NdisMaxGroupCount
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported in NDIS 6.20 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisMaxGroupCount
+title: NdisMaxGroupCount function
+author: windows-driver-content
+description: The NdisMaxGroupCount function returns the maximum number of processor groups in the local computer system.
+old-location: netvista\ndismaxgroupcount.htm
+old-project: netvista
+ms.assetid: 080707c5-cf46-4066-a241-684cdae37fee
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.ndismaxgroupcount, NdisMaxGroupCount, NdisMaxGroupCount function [Network Drivers Starting with Windows Vista], ndis_processor_group_ref_5744be61-71b7-4abc-ad66-30b26558c0ac.xml, ndis/NdisMaxGroupCount
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported in NDIS 6.20 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisMaxGroupCount
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

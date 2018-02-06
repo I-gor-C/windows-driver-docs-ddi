@@ -1,41 +1,46 @@
 ---
-UID : NI:nfpdev.IOCTL_NFP_GET_NEXT_TRANSMITTED_MESSAGE
-title : IOCTL_NFP_GET_NEXT_TRANSMITTED_MESSAGE
-author : windows-driver-content
-description : A client interested in receiving notifications that a message has been transmitted will send the IOCTL_NFP_GET_NEXT_TRANSMITTED_MESSAGE request to the proximity driver.
-old-location : nfpdrivers\ioctl_nfp_get_next_transmitted_message.htm
-old-project : nfpdrivers
-ms.assetid : 3E8B47B5-D774-4D37-BA57-FAB49C9DE9A3
-ms.author : windowsdriverdev
-ms.date : 12/18/2017
-ms.keywords : nfpdrivers.ioctl_nfp_get_next_transmitted_message, IOCTL_NFP_GET_NEXT_TRANSMITTED_MESSAGE, _IOCTL_NFP_GET_NEXT_TRANSMITTED_MESSAGE, IOCTL_NFP_GET_NEXT_TRANSMITTED_MESSAGE control code [Near-Field Proximity Drivers], IOCTL_NFP_GET_NEXT_TRANSMITTED_MESSAGE, nfpdev/IOCTL_NFP_GET_NEXT_TRANSMITTED_MESSAGE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : nfpdev.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SECURE_ELEMENT_TECH_ROUTING_INFO, *PSECURE_ELEMENT_TECH_ROUTING_INFO
+UID: NI:nfpdev.IOCTL_NFP_GET_NEXT_TRANSMITTED_MESSAGE
+title: IOCTL_NFP_GET_NEXT_TRANSMITTED_MESSAGE
+author: windows-driver-content
+description: A client interested in receiving notifications that a message has been transmitted will send the IOCTL_NFP_GET_NEXT_TRANSMITTED_MESSAGE request to the proximity driver.
+old-location: nfpdrivers\ioctl_nfp_get_next_transmitted_message.htm
+old-project: nfpdrivers
+ms.assetid: 3E8B47B5-D774-4D37-BA57-FAB49C9DE9A3
+ms.author: windowsdriverdev
+ms.date: 12/18/2017
+ms.keywords: nfpdrivers.ioctl_nfp_get_next_transmitted_message, IOCTL_NFP_GET_NEXT_TRANSMITTED_MESSAGE, _IOCTL_NFP_GET_NEXT_TRANSMITTED_MESSAGE, IOCTL_NFP_GET_NEXT_TRANSMITTED_MESSAGE control code [Near-Field Proximity Drivers], IOCTL_NFP_GET_NEXT_TRANSMITTED_MESSAGE, nfpdev/IOCTL_NFP_GET_NEXT_TRANSMITTED_MESSAGE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: nfpdev.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	nfpdev.h
+apiname:
+-	IOCTL_NFP_GET_NEXT_TRANSMITTED_MESSAGE
+product: Windows
+targetos: Windows
+req.typenames: SECURE_ELEMENT_TECH_ROUTING_INFO, *PSECURE_ELEMENT_TECH_ROUTING_INFO
 ---
 
 # IOCTL_NFP_GET_NEXT_TRANSMITTED_MESSAGE IOCTL

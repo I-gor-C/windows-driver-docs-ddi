@@ -1,41 +1,46 @@
 ---
-UID : NF:fcb.RxFinalizeVNetRoot
-title : RxFinalizeVNetRoot function
-author : windows-driver-content
-description : RxFinalizeVNetRoot finalizes the given V_NET_ROOT structure. The caller must have an exclusive lock on the netname table associated with the device object.
-old-location : ifsk\rxfinalizevnetroot.htm
-old-project : ifsk
-ms.assetid : 7a24d8b4-cd07-453c-9813-d794b75b039e
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : fcb/RxFinalizeVNetRoot, rxref_1c20872c-4783-4c7d-a1fa-44ca6170ab00.xml, RxFinalizeVNetRoot function [Installable File System Drivers], RxFinalizeVNetRoot, ifsk.rxfinalizevnetroot
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fcb.h
-req.include-header : Mrxfcb.h, Fcb.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FA_ENTRY, *PFA_ENTRY
+UID: NF:fcb.RxFinalizeVNetRoot
+title: RxFinalizeVNetRoot function
+author: windows-driver-content
+description: RxFinalizeVNetRoot finalizes the given V_NET_ROOT structure. The caller must have an exclusive lock on the netname table associated with the device object.
+old-location: ifsk\rxfinalizevnetroot.htm
+old-project: ifsk
+ms.assetid: 7a24d8b4-cd07-453c-9813-d794b75b039e
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: fcb/RxFinalizeVNetRoot, rxref_1c20872c-4783-4c7d-a1fa-44ca6170ab00.xml, RxFinalizeVNetRoot function [Installable File System Drivers], RxFinalizeVNetRoot, ifsk.rxfinalizevnetroot
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fcb.h
+req.include-header: Mrxfcb.h, Fcb.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	fcb.h
+apiname:
+-	RxFinalizeVNetRoot
+product: Windows
+targetos: Windows
+req.typenames: FA_ENTRY, *PFA_ENTRY
 ---
 
 

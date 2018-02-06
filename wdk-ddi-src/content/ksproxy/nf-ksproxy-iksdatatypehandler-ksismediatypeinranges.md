@@ -1,41 +1,46 @@
 ---
-UID : NF:ksproxy.IKsDataTypeHandler.KsIsMediaTypeInRanges
-title : IKsDataTypeHandler::KsIsMediaTypeInRanges method
-author : windows-driver-content
-description : The KsIsMediaTypeInRanges method validates that a media type is within the provided data ranges.
-old-location : stream\iksdatatypehandler_ksismediatypeinranges.htm
-old-project : stream
-ms.assetid : 354dcd2b-fa63-4574-94d8-149e3f199751
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ksproxy/IKsDataTypeHandler::KsIsMediaTypeInRanges, KsIsMediaTypeInRanges, ksproxy_ebd4f24e-02a2-4228-b11b-890693ece498.xml, IKsDataTypeHandler interface [Streaming Media Devices], KsIsMediaTypeInRanges method, KsIsMediaTypeInRanges method [Streaming Media Devices], IKsDataTypeHandler, IKsDataTypeHandler::KsIsMediaTypeInRanges, KsIsMediaTypeInRanges method [Streaming Media Devices], IKsDataTypeHandler interface, stream.iksdatatypehandler_ksismediatypeinranges
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : ksproxy.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : ksproxy.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PIPE_STATE
+UID: NF:ksproxy.IKsDataTypeHandler.KsIsMediaTypeInRanges
+title: IKsDataTypeHandler::KsIsMediaTypeInRanges method
+author: windows-driver-content
+description: The KsIsMediaTypeInRanges method validates that a media type is within the provided data ranges.
+old-location: stream\iksdatatypehandler_ksismediatypeinranges.htm
+old-project: stream
+ms.assetid: 354dcd2b-fa63-4574-94d8-149e3f199751
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ksproxy/IKsDataTypeHandler::KsIsMediaTypeInRanges, KsIsMediaTypeInRanges, ksproxy_ebd4f24e-02a2-4228-b11b-890693ece498.xml, IKsDataTypeHandler interface [Streaming Media Devices], KsIsMediaTypeInRanges method, KsIsMediaTypeInRanges method [Streaming Media Devices], IKsDataTypeHandler, IKsDataTypeHandler::KsIsMediaTypeInRanges, KsIsMediaTypeInRanges method [Streaming Media Devices], IKsDataTypeHandler interface, stream.iksdatatypehandler_ksismediatypeinranges
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: ksproxy.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: ksproxy.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	ksproxy.h
+apiname:
+-	IKsDataTypeHandler.KsIsMediaTypeInRanges
+product: Windows
+targetos: Windows
+req.typenames: PIPE_STATE
 ---
 
 

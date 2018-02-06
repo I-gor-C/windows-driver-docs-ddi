@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsAddIrpToCancelableQueue
-title : KsAddIrpToCancelableQueue function
-author : windows-driver-content
-description : The KsAddIrpToCancelableQueue function adds an IRP to a queue of cancelable IRPs, thus allowing the IRP to be canceled. If the IRP had been previously set to a canceled state, the KsAddIrpToCancelableQueue function completes the canceling of that IRP.
-old-location : stream\ksaddirptocancelablequeue.htm
-old-project : stream
-ms.assetid : 399ca0d6-6355-40f8-ac2c-c69d7ae699e1
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KsAddIrpToCancelableQueue, KsAddIrpToCancelableQueue function [Streaming Media Devices], ks/KsAddIrpToCancelableQueue, stream.ksaddirptocancelablequeue, ksfunc_8a3caaa5-29ca-4c55-a3f6-8214808954b3.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsAddIrpToCancelableQueue
+title: KsAddIrpToCancelableQueue function
+author: windows-driver-content
+description: The KsAddIrpToCancelableQueue function adds an IRP to a queue of cancelable IRPs, thus allowing the IRP to be canceled. If the IRP had been previously set to a canceled state, the KsAddIrpToCancelableQueue function completes the canceling of that IRP.
+old-location: stream\ksaddirptocancelablequeue.htm
+old-project: stream
+ms.assetid: 399ca0d6-6355-40f8-ac2c-c69d7ae699e1
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KsAddIrpToCancelableQueue, KsAddIrpToCancelableQueue function [Streaming Media Devices], ks/KsAddIrpToCancelableQueue, stream.ksaddirptocancelablequeue, ksfunc_8a3caaa5-29ca-4c55-a3f6-8214808954b3.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsAddIrpToCancelableQueue
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

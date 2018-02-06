@@ -1,42 +1,47 @@
 ---
-UID : NC:wdfio.EVT_WDF_IO_QUEUE_IO_READ
-title : EVT_WDF_IO_QUEUE_IO_READ
-author : windows-driver-content
-description : A driver's EvtIoRead event callback function processes a specified read request.
-old-location : wdf\evtioread.htm
-old-project : wdf
-ms.assetid : d6fbb153-1355-4e94-b5d3-a218bd8c565d
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.evtioread, EvtIoRead callback function, EvtIoRead, EVT_WDF_IO_QUEUE_IO_READ, EVT_WDF_IO_QUEUE_IO_READ, wdfio/EvtIoRead, DFQueueObjectRef_d5f59efc-e7db-4c3e-9845-5ba0c4949cd5.xml, kmdf.evtioread
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdfio.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL (see Remarks section)"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_INTERRUPT_INFO, *PWDF_INTERRUPT_INFO
-req.product : Windows 10 or later.
+UID: NC:wdfio.EVT_WDF_IO_QUEUE_IO_READ
+title: EVT_WDF_IO_QUEUE_IO_READ
+author: windows-driver-content
+description: A driver's EvtIoRead event callback function processes a specified read request.
+old-location: wdf\evtioread.htm
+old-project: wdf
+ms.assetid: d6fbb153-1355-4e94-b5d3-a218bd8c565d
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.evtioread, EvtIoRead callback function, EvtIoRead, EVT_WDF_IO_QUEUE_IO_READ, EVT_WDF_IO_QUEUE_IO_READ, wdfio/EvtIoRead, DFQueueObjectRef_d5f59efc-e7db-4c3e-9845-5ba0c4949cd5.xml, kmdf.evtioread
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdfio.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL (see Remarks section)"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Wdfio.h
+apiname:
+-	EvtIoRead
+product: Windows
+targetos: Windows
+req.typenames: WDF_INTERRUPT_INFO, *PWDF_INTERRUPT_INFO
+req.product: Windows 10 or later.
 ---
 
 

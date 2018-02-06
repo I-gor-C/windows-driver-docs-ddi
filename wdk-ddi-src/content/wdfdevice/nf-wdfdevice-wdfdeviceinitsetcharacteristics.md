@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfdevice.WdfDeviceInitSetCharacteristics
-title : WdfDeviceInitSetCharacteristics function
-author : windows-driver-content
-description : The WdfDeviceInitSetCharacteristics method sets device characteristics for a specified device.
-old-location : wdf\wdfdeviceinitsetcharacteristics.htm
-old-project : wdf
-ms.assetid : 2937d9f1-f838-4ec4-972d-21ff43097590
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WdfDeviceInitSetCharacteristics method, WdfDeviceInitSetCharacteristics, wdf.wdfdeviceinitsetcharacteristics, DFDeviceObjectGeneralRef_7dd76de2-8621-45ed-a309-c958ac1c365d.xml, wdfdevice/WdfDeviceInitSetCharacteristics, PFN_WDFDEVICEINITSETCHARACTERISTICS, kmdf.wdfdeviceinitsetcharacteristics
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfdevice.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : ChildDeviceInitAPI, ControlDeviceInitAPI, DeviceInitAPI, DriverCreate, KmdfIrql, KmdfIrql2, PdoDeviceInitAPI
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_STATE_NOTIFICATION_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfdevice.WdfDeviceInitSetCharacteristics
+title: WdfDeviceInitSetCharacteristics function
+author: windows-driver-content
+description: The WdfDeviceInitSetCharacteristics method sets device characteristics for a specified device.
+old-location: wdf\wdfdeviceinitsetcharacteristics.htm
+old-project: wdf
+ms.assetid: 2937d9f1-f838-4ec4-972d-21ff43097590
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WdfDeviceInitSetCharacteristics method, WdfDeviceInitSetCharacteristics, wdf.wdfdeviceinitsetcharacteristics, DFDeviceObjectGeneralRef_7dd76de2-8621-45ed-a309-c958ac1c365d.xml, wdfdevice/WdfDeviceInitSetCharacteristics, PFN_WDFDEVICEINITSETCHARACTERISTICS, kmdf.wdfdeviceinitsetcharacteristics
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfdevice.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: ChildDeviceInitAPI, ControlDeviceInitAPI, DeviceInitAPI, DriverCreate, KmdfIrql, KmdfIrql2, PdoDeviceInitAPI
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfDeviceInitSetCharacteristics
+product: Windows
+targetos: Windows
+req.typenames: WDF_STATE_NOTIFICATION_TYPE
+req.product: Windows 10 or later.
 ---
 
 

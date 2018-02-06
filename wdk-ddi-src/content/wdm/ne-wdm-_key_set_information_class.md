@@ -1,42 +1,47 @@
 ---
-UID : NE:wdm._KEY_SET_INFORMATION_CLASS
-title : "_KEY_SET_INFORMATION_CLASS"
-author : windows-driver-content
-description : The KEY_SET_INFORMATION_CLASS enumeration type represents the type of information to set for a registry key.
-old-location : kernel\key_set_information_class.htm
-old-project : kernel
-ms.assetid : 95a8f683-642c-4f33-9536-08f497567f87
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : KeyWow64FlagsInformation, wdm/KeyWow64FlagsInformation, KeySetDebugInformation, wdm/MaxKeySetInfoClass, wdm/KeyControlFlagsInformation, KeySetVirtualizationInformation, wdm/KeySetVirtualizationInformation, kernel.key_set_information_class, KeyControlFlagsInformation, wdm/KeySetHandleTagsInformation, wdm/KEY_SET_INFORMATION_CLASS, KeyWriteTimeInformation, sysenum_b2121228-e221-424c-8e84-cd213d91716b.xml, wdm/KeyWriteTimeInformation, KeySetHandleTagsInformation, MaxKeySetInfoClass, _KEY_SET_INFORMATION_CLASS, KEY_SET_INFORMATION_CLASS, KEY_SET_INFORMATION_CLASS enumeration [Kernel-Mode Driver Architecture], wdm/KeySetDebugInformation
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows XP.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KEY_SET_INFORMATION_CLASS
-req.product : Windows 10 or later.
+UID: NE:wdm._KEY_SET_INFORMATION_CLASS
+title: "_KEY_SET_INFORMATION_CLASS"
+author: windows-driver-content
+description: The KEY_SET_INFORMATION_CLASS enumeration type represents the type of information to set for a registry key.
+old-location: kernel\key_set_information_class.htm
+old-project: kernel
+ms.assetid: 95a8f683-642c-4f33-9536-08f497567f87
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: KeyWow64FlagsInformation, wdm/KeyWow64FlagsInformation, KeySetDebugInformation, wdm/MaxKeySetInfoClass, wdm/KeyControlFlagsInformation, KeySetVirtualizationInformation, wdm/KeySetVirtualizationInformation, kernel.key_set_information_class, KeyControlFlagsInformation, wdm/KeySetHandleTagsInformation, wdm/KEY_SET_INFORMATION_CLASS, KeyWriteTimeInformation, sysenum_b2121228-e221-424c-8e84-cd213d91716b.xml, wdm/KeyWriteTimeInformation, KeySetHandleTagsInformation, MaxKeySetInfoClass, _KEY_SET_INFORMATION_CLASS, KEY_SET_INFORMATION_CLASS, KEY_SET_INFORMATION_CLASS enumeration [Kernel-Mode Driver Architecture], wdm/KeySetDebugInformation
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows XP.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	KEY_SET_INFORMATION_CLASS
+product: Windows
+targetos: Windows
+req.typenames: KEY_SET_INFORMATION_CLASS
+req.product: Windows 10 or later.
 ---
 
 # _KEY_SET_INFORMATION_CLASS Enumeration
@@ -58,51 +63,51 @@ typedef enum _KEY_SET_INFORMATION_CLASS {
 ## Constants
 
 <table>
-
-<tr>
-<td>KeyControlFlagsInformation</td>
-<td>Reserved for system use.</td>
-</tr>
-
-<tr>
-<td>KeySetDebugInformation</td>
-<td>Reserved for system use.</td>
-</tr>
-
-<tr>
-<td>KeySetHandleTagsInformation</td>
-<td>Reserved for system use.</td>
-</tr>
-
-<tr>
-<td>KeySetLayerInformation</td>
-<td></td>
-</tr>
-
-<tr>
-<td>KeySetVirtualizationInformation</td>
-<td>Reserved for system use.</td>
-</tr>
-
-<tr>
-<td>KeyWow64FlagsInformation</td>
-<td>Reserved for system use.</td>
-</tr>
-
-<tr>
-<td>KeyWriteTimeInformation</td>
-<td>Indicates that a <a href="..\wdm\ns-wdm-_key_write_time_information.md">KEY_WRITE_TIME_INFORMATION</a> structure is supplied.</td>
-</tr>
-
-<tr>
-<td>MaxKeySetInfoClass</td>
-<td>This member constant is always the maximum value in the enumeration.</td>
-</tr>
+            
+                <tr>
+                    <td>KeyControlFlagsInformation</td>
+                    <td>Reserved for system use.</td>
+                </tr>
+            
+                <tr>
+                    <td>KeySetDebugInformation</td>
+                    <td>Reserved for system use.</td>
+                </tr>
+            
+                <tr>
+                    <td>KeySetHandleTagsInformation</td>
+                    <td>Reserved for system use.</td>
+                </tr>
+            
+                <tr>
+                    <td>KeySetLayerInformation</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>KeySetVirtualizationInformation</td>
+                    <td>Reserved for system use.</td>
+                </tr>
+            
+                <tr>
+                    <td>KeyWow64FlagsInformation</td>
+                    <td>Reserved for system use.</td>
+                </tr>
+            
+                <tr>
+                    <td>KeyWriteTimeInformation</td>
+                    <td>Indicates that a <a href="..\wdm\ns-wdm-_key_write_time_information.md">KEY_WRITE_TIME_INFORMATION</a> structure is supplied.</td>
+                </tr>
+            
+                <tr>
+                    <td>MaxKeySetInfoClass</td>
+                    <td>This member constant is always the maximum value in the enumeration.</td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-A <a href="https://msdn.microsoft.com/library/windows/hardware/ff560903">RegistryCallback</a> routine can receive a pointer to a <b>KEY_SET_INFORMATION_CLASS</b> structure as an input parameter.
+        A <a href="https://msdn.microsoft.com/library/windows/hardware/ff560903">RegistryCallback</a> routine can receive a pointer to a <b>KEY_SET_INFORMATION_CLASS</b> structure as an input parameter.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -110,9 +115,9 @@ A <a href="https://msdn.microsoft.com/library/windows/hardware/ff560903">Registr
 | **Windows version** | Available starting with Windows XP. Available starting with Windows XP. |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
-## See Also
+    ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560903">RegistryCallback</a>
+        <a href="https://msdn.microsoft.com/library/windows/hardware/ff560903">RegistryCallback</a>
 
 <a href="..\wdm\ns-wdm-_key_write_time_information.md">KEY_WRITE_TIME_INFORMATION</a>
 

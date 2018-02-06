@@ -1,41 +1,46 @@
 ---
-UID : NF:ndis.MINIPORT_SYNCHRONOUS_OID_REQUEST
-title : MINIPORT_SYNCHRONOUS_OID_REQUEST function
-author : windows-driver-content
-description : NDIS calls a miniport driver's MiniportSynchronousOidRequest callback function to issue a Synchronous OID request.
-old-location : netvista\miniport_synchronous_oid_request.htm
-old-project : netvista
-ms.assetid : 0DDF9CF8-91F6-4D7C-A8E8-FC425BF155CB
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : MiniportSynchronousOidRequest, ndis/MiniportSynchronousOidRequest, MINIPORT_SYNCHRONOUS_OID_REQUEST, MiniportSynchronousOidRequest function [Network Drivers Starting with Windows Vista], netvista.miniport_synchronous_oid_request
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10, version 1709
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.MINIPORT_SYNCHRONOUS_OID_REQUEST
+title: MINIPORT_SYNCHRONOUS_OID_REQUEST function
+author: windows-driver-content
+description: NDIS calls a miniport driver's MiniportSynchronousOidRequest callback function to issue a Synchronous OID request.
+old-location: netvista\miniport_synchronous_oid_request.htm
+old-project: netvista
+ms.assetid: 0DDF9CF8-91F6-4D7C-A8E8-FC425BF155CB
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: MiniportSynchronousOidRequest, ndis/MiniportSynchronousOidRequest, MINIPORT_SYNCHRONOUS_OID_REQUEST, MiniportSynchronousOidRequest function [Network Drivers Starting with Windows Vista], netvista.miniport_synchronous_oid_request
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10, version 1709
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ndis.h
+apiname:
+-	MiniportSynchronousOidRequest
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

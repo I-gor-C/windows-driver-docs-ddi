@@ -1,42 +1,47 @@
 ---
-UID : NS:storport.PRI_RESERVATION_DESCRIPTOR
-title : PRI_RESERVATION_DESCRIPTOR
-author : windows-driver-content
-description : The PRI_RESERVATION_DESCRIPTOR structure is used to construct the PRI_RESERVATION_LIST structure that is returned in response to a Persistent Reserve In command with ServiceAction = RESERVATION_ACTION_READ_RESERVATIONS.
-old-location : storage\pri_reservation_descriptor.htm
-old-project : storage
-ms.assetid : f03506f6-404e-4635-a9ad-f2f36164ff2f
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : PRI_RESERVATION_DESCRIPTOR structure [Storage Devices], structs-general_96e112cc-0cf3-442d-bb3a-7bcad8a95220.xml, storport/PPRI_RESERVATION_DESCRIPTOR, PPRI_RESERVATION_DESCRIPTOR, PRI_RESERVATION_DESCRIPTOR, *PPRI_RESERVATION_DESCRIPTOR, storport/PRI_RESERVATION_DESCRIPTOR, PPRI_RESERVATION_DESCRIPTOR structure pointer [Storage Devices], storage.pri_reservation_descriptor
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : storport.h
-req.include-header : Ntddstor.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPRI_RESERVATION_DESCRIPTOR, PRI_RESERVATION_DESCRIPTOR"
-req.product : Windows 10 or later.
+UID: NS:storport.PRI_RESERVATION_DESCRIPTOR
+title: PRI_RESERVATION_DESCRIPTOR
+author: windows-driver-content
+description: The PRI_RESERVATION_DESCRIPTOR structure is used to construct the PRI_RESERVATION_LIST structure that is returned in response to a Persistent Reserve In command with ServiceAction = RESERVATION_ACTION_READ_RESERVATIONS.
+old-location: storage\pri_reservation_descriptor.htm
+old-project: storage
+ms.assetid: f03506f6-404e-4635-a9ad-f2f36164ff2f
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: PRI_RESERVATION_DESCRIPTOR structure [Storage Devices], structs-general_96e112cc-0cf3-442d-bb3a-7bcad8a95220.xml, storport/PPRI_RESERVATION_DESCRIPTOR, PPRI_RESERVATION_DESCRIPTOR, PRI_RESERVATION_DESCRIPTOR, *PPRI_RESERVATION_DESCRIPTOR, storport/PRI_RESERVATION_DESCRIPTOR, PPRI_RESERVATION_DESCRIPTOR structure pointer [Storage Devices], storage.pri_reservation_descriptor
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: storport.h
+req.include-header: Ntddstor.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	storport.h
+apiname:
+-	PRI_RESERVATION_DESCRIPTOR
+product: Windows
+targetos: Windows
+req.typenames: "*PPRI_RESERVATION_DESCRIPTOR, PRI_RESERVATION_DESCRIPTOR"
+req.product: Windows 10 or later.
 ---
 
 # PRI_RESERVATION_DESCRIPTOR structure

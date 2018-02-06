@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._DXVADDI_DECODEBUFFERDESC
-title : "_DXVADDI_DECODEBUFFERDESC"
-author : windows-driver-content
-description : The DXVADDI_DECODEBUFFERDESC structure describes a buffer that is currently passed from the host decoder to the accelerator.
-old-location : display\dxvaddi_decodebufferdesc.htm
-old-project : display
-ms.assetid : 809b4cf8-e4c5-4cb6-b58f-8b6b98111361
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DXVADDI_DECODEBUFFERDESC, display.dxvaddi_decodebufferdesc, DXVADDI_DECODEBUFFERDESC structure [Display Devices], _DXVADDI_DECODEBUFFERDESC, d3dumddi/DXVADDI_DECODEBUFFERDESC, DXVA2_Structs_0946584e-3d1f-4bb4-95d5-7ae2c669814a.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXVADDI_DECODEBUFFERDESC
+UID: NS:d3dumddi._DXVADDI_DECODEBUFFERDESC
+title: "_DXVADDI_DECODEBUFFERDESC"
+author: windows-driver-content
+description: The DXVADDI_DECODEBUFFERDESC structure describes a buffer that is currently passed from the host decoder to the accelerator.
+old-location: display\dxvaddi_decodebufferdesc.htm
+old-project: display
+ms.assetid: 809b4cf8-e4c5-4cb6-b58f-8b6b98111361
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DXVADDI_DECODEBUFFERDESC, display.dxvaddi_decodebufferdesc, DXVADDI_DECODEBUFFERDESC structure [Display Devices], _DXVADDI_DECODEBUFFERDESC, d3dumddi/DXVADDI_DECODEBUFFERDESC, DXVA2_Structs_0946584e-3d1f-4bb4-95d5-7ae2c669814a.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	DXVADDI_DECODEBUFFERDESC
+product: Windows
+targetos: Windows
+req.typenames: DXVADDI_DECODEBUFFERDESC
 ---
 
 # _DXVADDI_DECODEBUFFERDESC structure

@@ -1,41 +1,46 @@
 ---
-UID : NF:portcls.IServiceGroup.SupportDelayedService
-title : IServiceGroup::SupportDelayedService method
-author : windows-driver-content
-description : The SupportDelayedService method indicates that the service group should prepare to support delayed service.
-old-location : audio\iservicegroup_supportdelayedservice.htm
-old-project : audio
-ms.assetid : ca9fc65f-299d-4d23-b98e-471daf07f413
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : IServiceGroup::SupportDelayedService, audio.iservicegroup_supportdelayedservice, portcls/IServiceGroup::SupportDelayedService, audmp-routines_6eb53e77-9437-43b5-8a5c-e33e15cb9cf3.xml, SupportDelayedService method [Audio Devices], IServiceGroup, SupportDelayedService method [Audio Devices], IServiceGroup interface, SupportDelayedService, IServiceGroup interface [Audio Devices], SupportDelayedService method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : portcls.h
-req.include-header : Portcls.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : portcls.h
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.IServiceGroup.SupportDelayedService
+title: IServiceGroup::SupportDelayedService method
+author: windows-driver-content
+description: The SupportDelayedService method indicates that the service group should prepare to support delayed service.
+old-location: audio\iservicegroup_supportdelayedservice.htm
+old-project: audio
+ms.assetid: ca9fc65f-299d-4d23-b98e-471daf07f413
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: IServiceGroup::SupportDelayedService, audio.iservicegroup_supportdelayedservice, portcls/IServiceGroup::SupportDelayedService, audmp-routines_6eb53e77-9437-43b5-8a5c-e33e15cb9cf3.xml, SupportDelayedService method [Audio Devices], IServiceGroup, SupportDelayedService method [Audio Devices], IServiceGroup interface, SupportDelayedService, IServiceGroup interface [Audio Devices], SupportDelayedService method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: portcls.h
+req.include-header: Portcls.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: portcls.h
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	portcls.h
+apiname:
+-	IServiceGroup.SupportDelayedService
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

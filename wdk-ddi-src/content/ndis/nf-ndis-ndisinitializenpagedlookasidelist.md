@@ -1,41 +1,46 @@
 ---
-UID : NF:ndis.NdisInitializeNPagedLookasideList
-title : NdisInitializeNPagedLookasideList function
-author : windows-driver-content
-description : The NdisInitializeNPagedLookasideList function initializes a lookaside list. After a successful initialization, nonpaged fixed-size blocks can be allocated from and freed to the lookaside list.
-old-location : netvista\ndisinitializenpagedlookasidelist.htm
-old-project : netvista
-ms.assetid : d240f2cc-18a6-4c2d-889f-e25a9486d5fe
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : ndis/NdisInitializeNPagedLookasideList, netvista.ndisinitializenpagedlookasidelist, NdisInitializeNPagedLookasideList function [Network Drivers Starting with Windows Vista], NdisInitializeNPagedLookasideList, ndis_lookaside_ref_edf7a9cc-c6bc-405b-88bb-c27331c38069.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see       NdisInitializeNPagedLookasideList (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see         NdisInitializeNPagedLookasideList (NDIS 5.1)) in Windows XP.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_Miscellaneous_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL (see Remarks section)"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisInitializeNPagedLookasideList
+title: NdisInitializeNPagedLookasideList function
+author: windows-driver-content
+description: The NdisInitializeNPagedLookasideList function initializes a lookaside list. After a successful initialization, nonpaged fixed-size blocks can be allocated from and freed to the lookaside list.
+old-location: netvista\ndisinitializenpagedlookasidelist.htm
+old-project: netvista
+ms.assetid: d240f2cc-18a6-4c2d-889f-e25a9486d5fe
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: ndis/NdisInitializeNPagedLookasideList, netvista.ndisinitializenpagedlookasidelist, NdisInitializeNPagedLookasideList function [Network Drivers Starting with Windows Vista], NdisInitializeNPagedLookasideList, ndis_lookaside_ref_edf7a9cc-c6bc-405b-88bb-c27331c38069.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see       NdisInitializeNPagedLookasideList (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see         NdisInitializeNPagedLookasideList (NDIS 5.1)) in Windows XP.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_Miscellaneous_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL (see Remarks section)"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndis.h
+apiname:
+-	NdisInitializeNPagedLookasideList
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NF:hbaapi.HBA_FreeLibrary
-title : HBA_FreeLibrary function
-author : windows-driver-content
-description : The HBA_FreeLibrary routine releases system resources associated with fibre channel HBA library.
-old-location : storage\hba_freelibrary.htm
-old-project : storage
-ms.assetid : 513cdedc-2ecd-4b02-a85b-5abd9c0c7fcd
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : fibreHBA_rtns_ae252017-7aa2-4d15-a387-26ec34cc964c.xml, storage.hba_freelibrary, hbaapi/HBA_FreeLibrary, HBA_FreeLibrary routine [Storage Devices], HBA_FreeLibrary
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : hbaapi.h
-req.include-header : Hbaapi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Hbaapi.lib
-req.dll : Hbaapi.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HBA_WWNTYPE
+UID: NF:hbaapi.HBA_FreeLibrary
+title: HBA_FreeLibrary function
+author: windows-driver-content
+description: The HBA_FreeLibrary routine releases system resources associated with fibre channel HBA library.
+old-location: storage\hba_freelibrary.htm
+old-project: storage
+ms.assetid: 513cdedc-2ecd-4b02-a85b-5abd9c0c7fcd
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: fibreHBA_rtns_ae252017-7aa2-4d15-a387-26ec34cc964c.xml, storage.hba_freelibrary, hbaapi/HBA_FreeLibrary, HBA_FreeLibrary routine [Storage Devices], HBA_FreeLibrary
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: hbaapi.h
+req.include-header: Hbaapi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Hbaapi.lib
+req.dll: Hbaapi.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Hbaapi.dll
+apiname:
+-	HBA_FreeLibrary
+product: Windows
+targetos: Windows
+req.typenames: HBA_WWNTYPE
 ---
 
 

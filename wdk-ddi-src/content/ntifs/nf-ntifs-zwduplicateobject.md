@@ -1,41 +1,48 @@
 ---
-UID : NF:ntifs.ZwDuplicateObject
-title : ZwDuplicateObject function
-author : windows-driver-content
-description : The ZwDuplicateObject routine creates a handle that is a duplicate of the specified source handle.
-old-location : kernel\zwduplicateobject.htm
-old-project : kernel
-ms.assetid : 9a922379-b439-4f94-9eb1-7c229318382c
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ntifs/NtDuplicateObject, ntifs/ZwDuplicateObject, ZwDuplicateObject routine [Kernel-Mode Driver Architecture], NtDuplicateObject, kernel.zwduplicateobject, ZwDuplicateObject
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntdef.h, Ntifs.h, Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ntoskrnl.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.ZwDuplicateObject
+title: ZwDuplicateObject function
+author: windows-driver-content
+description: The ZwDuplicateObject routine creates a handle that is a duplicate of the specified source handle.
+old-location: kernel\zwduplicateobject.htm
+old-project: kernel
+ms.assetid: 9a922379-b439-4f94-9eb1-7c229318382c
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ntifs/NtDuplicateObject, ntifs/ZwDuplicateObject, ZwDuplicateObject routine [Kernel-Mode Driver Architecture], NtDuplicateObject, kernel.zwduplicateobject, ZwDuplicateObject
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntdef.h, Ntifs.h, Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ntoskrnl.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ntoskrnl.lib
+-	ntoskrnl.dll
+apiname:
+-	ZwDuplicateObject
+-	NtDuplicateObject
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

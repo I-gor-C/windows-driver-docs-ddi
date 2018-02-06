@@ -1,41 +1,46 @@
 ---
-UID : NS:hidpddi._HIDP_REPORT_IDS
-title : "_HIDP_REPORT_IDS"
-author : windows-driver-content
-description : Contains report ID information for a top-level collection.
-old-location : hid\hidp_report_ids.htm
-old-project : hid
-ms.assetid : C88B77C3-01CB-4E8C-83A4-EB9AFB122327
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : HIDP_REPORT_IDS structure [Human Input Devices], PHIDP_REPORT_IDS structure pointer [Human Input Devices], hidpddi/PHIDP_REPORT_IDS, _HIDP_REPORT_IDS, hidpddi/HIDP_REPORT_IDS, hid.hidp_report_ids, *PHIDP_REPORT_IDS, HIDP_REPORT_IDS, PHIDP_REPORT_IDS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : hidpddi.h
-req.include-header : Hidpddi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HIDP_REPORT_IDS, *PHIDP_REPORT_IDS
+UID: NS:hidpddi._HIDP_REPORT_IDS
+title: "_HIDP_REPORT_IDS"
+author: windows-driver-content
+description: Contains report ID information for a top-level collection.
+old-location: hid\hidp_report_ids.htm
+old-project: hid
+ms.assetid: C88B77C3-01CB-4E8C-83A4-EB9AFB122327
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: HIDP_REPORT_IDS structure [Human Input Devices], PHIDP_REPORT_IDS structure pointer [Human Input Devices], hidpddi/PHIDP_REPORT_IDS, _HIDP_REPORT_IDS, hidpddi/HIDP_REPORT_IDS, hid.hidp_report_ids, *PHIDP_REPORT_IDS, HIDP_REPORT_IDS, PHIDP_REPORT_IDS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: hidpddi.h
+req.include-header: Hidpddi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Hidpddi.h
+apiname:
+-	HIDP_REPORT_IDS
+product: Windows
+targetos: Windows
+req.typenames: HIDP_REPORT_IDS, *PHIDP_REPORT_IDS
 ---
 
 # _HIDP_REPORT_IDS structure

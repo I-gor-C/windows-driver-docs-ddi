@@ -1,42 +1,47 @@
 ---
-UID : NS:wdm._DRIVER_OBJECT
-title : "_DRIVER_OBJECT"
-author : windows-driver-content
-description : Each driver object represents the image of a loaded kernel-mode driver.
-old-location : kernel\driver_object.htm
-old-project : kernel
-ms.assetid : 512e3fd5-7ea5-423c-a628-0db6b30fd708
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/PDRIVER_OBJECT, kernel.driver_object, _DRIVER_OBJECT, DRIVER_OBJECT structure [Kernel-Mode Driver Architecture], *PDRIVER_OBJECT, kstruct_a_dfe1b66c-d3bf-43ff-b3ee-b6edfd4f1616.xml, PDRIVER_OBJECT structure pointer [Kernel-Mode Driver Architecture], DRIVER_OBJECT, wdm/DRIVER_OBJECT, PDRIVER_OBJECT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDRIVER_OBJECT, DRIVER_OBJECT"
-req.product : Windows 10 or later.
+UID: NS:wdm._DRIVER_OBJECT
+title: "_DRIVER_OBJECT"
+author: windows-driver-content
+description: Each driver object represents the image of a loaded kernel-mode driver.
+old-location: kernel\driver_object.htm
+old-project: kernel
+ms.assetid: 512e3fd5-7ea5-423c-a628-0db6b30fd708
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/PDRIVER_OBJECT, kernel.driver_object, _DRIVER_OBJECT, DRIVER_OBJECT structure [Kernel-Mode Driver Architecture], *PDRIVER_OBJECT, kstruct_a_dfe1b66c-d3bf-43ff-b3ee-b6edfd4f1616.xml, PDRIVER_OBJECT structure pointer [Kernel-Mode Driver Architecture], DRIVER_OBJECT, wdm/DRIVER_OBJECT, PDRIVER_OBJECT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	DRIVER_OBJECT
+product: Windows
+targetos: Windows
+req.typenames: "*PDRIVER_OBJECT, DRIVER_OBJECT"
+req.product: Windows 10 or later.
 ---
 
 # _DRIVER_OBJECT structure

@@ -1,42 +1,48 @@
 ---
-UID : NF:wdm.ZwDeleteKey
-title : ZwDeleteKey function
-author : windows-driver-content
-description : The ZwDeleteKey routine deletes an open key from the registry.
-old-location : kernel\zwdeletekey.htm
-old-project : kernel
-ms.assetid : 16bde6b6-6e05-4a4d-a0c3-79bb811305d1
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ZwDeleteKey, wdm/ZwDeleteKey, kernel.zwdeletekey, ZwDeleteKey routine [Kernel-Mode Driver Architecture], wdm/NtDeleteKey, k111_b55bc28e-3539-424e-86b5-f7457e90cc61.xml, NtDeleteKey
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : IrqlZwPassive, PowerIrpDDis, ZwRegistryCreate, ZwRegistryOpen, HwStorPortProhibitedDDIs, ZwRegistryCreate(storport), ZwRegistryOpen(storport)
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ZwDeleteKey
+title: ZwDeleteKey function
+author: windows-driver-content
+description: The ZwDeleteKey routine deletes an open key from the registry.
+old-location: kernel\zwdeletekey.htm
+old-project: kernel
+ms.assetid: 16bde6b6-6e05-4a4d-a0c3-79bb811305d1
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ZwDeleteKey, wdm/ZwDeleteKey, kernel.zwdeletekey, ZwDeleteKey routine [Kernel-Mode Driver Architecture], wdm/NtDeleteKey, k111_b55bc28e-3539-424e-86b5-f7457e90cc61.xml, NtDeleteKey
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: IrqlZwPassive, PowerIrpDDis, ZwRegistryCreate, ZwRegistryOpen, HwStorPortProhibitedDDIs, ZwRegistryCreate(storport), ZwRegistryOpen(storport)
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ZwDeleteKey
+-	NtDeleteKey
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.FsRtlValidateReparsePointBuffer
-title : FsRtlValidateReparsePointBuffer function
-author : windows-driver-content
-description : The FsRtlValidateReparsePointBuffer routine verifies that the specified reparse point buffer is valid.
-old-location : ifsk\fsrtlvalidatereparsepointbuffer.htm
-old-project : ifsk
-ms.assetid : fb67b116-12f5-4eef-ab05-f2056ccec4e3
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FsRtlValidateReparsePointBuffer routine [Installable File System Drivers], ntifs/FsRtlValidateReparsePointBuffer, ifsk.fsrtlvalidatereparsepointbuffer, FsRtlValidateReparsePointBuffer, fsrtlref_809c9e16-62b6-4a08-82d5-d6e86e7844ff.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : FltKernel.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.FsRtlValidateReparsePointBuffer
+title: FsRtlValidateReparsePointBuffer function
+author: windows-driver-content
+description: The FsRtlValidateReparsePointBuffer routine verifies that the specified reparse point buffer is valid.
+old-location: ifsk\fsrtlvalidatereparsepointbuffer.htm
+old-project: ifsk
+ms.assetid: fb67b116-12f5-4eef-ab05-f2056ccec4e3
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FsRtlValidateReparsePointBuffer routine [Installable File System Drivers], ntifs/FsRtlValidateReparsePointBuffer, ifsk.fsrtlvalidatereparsepointbuffer, FsRtlValidateReparsePointBuffer, fsrtlref_809c9e16-62b6-4a08-82d5-d6e86e7844ff.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: FltKernel.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	FsRtlValidateReparsePointBuffer
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NF:rxprocs.RxIsThisACscAgentOpen
-title : RxIsThisACscAgentOpen function
-author : windows-driver-content
-description : RxIsThisACscAgentOpen determines if a file open was made by a user-mode client-side caching agent.
-old-location : ifsk\rxisthisacscagentopen.htm
-old-project : ifsk
-ms.assetid : b3bd9b9f-e859-4d7f-9735-5995cb3ef6e8
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : RxIsThisACscAgentOpen, RxIsThisACscAgentOpen function [Installable File System Drivers], rxref_1d515511-d1dd-4090-9c9d-b87960d56f5c.xml, ifsk.rxisthisacscagentopen, rxprocs/RxIsThisACscAgentOpen
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : rxprocs.h
-req.include-header : Rxcontx.h, Rxprocs.h
-req.target-type : Desktop
-req.target-min-winverclnt : The RxIsThisACscAgentOpen routine is only available on Windows Server 2003 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RX_CONTEXT, *PRX_CONTEXT
-req.product : Windows 10 or later.
+UID: NF:rxprocs.RxIsThisACscAgentOpen
+title: RxIsThisACscAgentOpen function
+author: windows-driver-content
+description: RxIsThisACscAgentOpen determines if a file open was made by a user-mode client-side caching agent.
+old-location: ifsk\rxisthisacscagentopen.htm
+old-project: ifsk
+ms.assetid: b3bd9b9f-e859-4d7f-9735-5995cb3ef6e8
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: RxIsThisACscAgentOpen, RxIsThisACscAgentOpen function [Installable File System Drivers], rxref_1d515511-d1dd-4090-9c9d-b87960d56f5c.xml, ifsk.rxisthisacscagentopen, rxprocs/RxIsThisACscAgentOpen
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: rxprocs.h
+req.include-header: Rxcontx.h, Rxprocs.h
+req.target-type: Desktop
+req.target-min-winverclnt: The RxIsThisACscAgentOpen routine is only available on Windows Server 2003 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	rxprocs.h
+apiname:
+-	RxIsThisACscAgentOpen
+product: Windows
+targetos: Windows
+req.typenames: RX_CONTEXT, *PRX_CONTEXT
+req.product: Windows 10 or later.
 ---
 
 

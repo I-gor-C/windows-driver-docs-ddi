@@ -1,41 +1,46 @@
 ---
-UID : NE:d3dkmdt._D3DKMDT_MONITOR_FREQUENCY_RANGE_CONSTRAINT
-title : "_D3DKMDT_MONITOR_FREQUENCY_RANGE_CONSTRAINT"
-author : windows-driver-content
-description : The D3DKMDT_MONITOR_FREQUENCY_RANGE_CONSTRAINT enumeration is used to indicate the type of constraint under which a monitor frequency range is supported.
-old-location : display\d3dkmdt_monitor_frequency_range_constraint.htm
-old-project : display
-ms.assetid : 12bf26fc-86c2-4b9b-82d4-1e8b2e38fa79
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3dkmdt/D3DKMDT_MFRC_ACTIVESIZE, D3DKMDT_MFRC_ACTIVESIZE, D3DKMDT_MONITOR_FREQUENCY_RANGE_CONSTRAINT, D3DKMDT_MONITOR_FREQUENCY_RANGE_CONSTRAINT enumeration [Display Devices], D3DKMDT_MFRC_UNINITIALIZED, d3dkmdt/D3DKMDT_MONITOR_FREQUENCY_RANGE_CONSTRAINT, d3dkmdt/D3DKMDT_MFRC_UNINITIALIZED, DmEnums_923a6c46-3d71-4d26-8f28-2bf5c6f4bd32.xml, d3dkmdt/D3DKMDT_MFRC_MAXPIXELRATE, display.d3dkmdt_monitor_frequency_range_constraint, D3DKMDT_MFRC_MAXPIXELRATE, _D3DKMDT_MONITOR_FREQUENCY_RANGE_CONSTRAINT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : d3dkmdt.h
-req.include-header : D3dkmdt.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMDT_MONITOR_FREQUENCY_RANGE_CONSTRAINT
+UID: NE:d3dkmdt._D3DKMDT_MONITOR_FREQUENCY_RANGE_CONSTRAINT
+title: "_D3DKMDT_MONITOR_FREQUENCY_RANGE_CONSTRAINT"
+author: windows-driver-content
+description: The D3DKMDT_MONITOR_FREQUENCY_RANGE_CONSTRAINT enumeration is used to indicate the type of constraint under which a monitor frequency range is supported.
+old-location: display\d3dkmdt_monitor_frequency_range_constraint.htm
+old-project: display
+ms.assetid: 12bf26fc-86c2-4b9b-82d4-1e8b2e38fa79
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3dkmdt/D3DKMDT_MFRC_ACTIVESIZE, D3DKMDT_MFRC_ACTIVESIZE, D3DKMDT_MONITOR_FREQUENCY_RANGE_CONSTRAINT, D3DKMDT_MONITOR_FREQUENCY_RANGE_CONSTRAINT enumeration [Display Devices], D3DKMDT_MFRC_UNINITIALIZED, d3dkmdt/D3DKMDT_MONITOR_FREQUENCY_RANGE_CONSTRAINT, d3dkmdt/D3DKMDT_MFRC_UNINITIALIZED, DmEnums_923a6c46-3d71-4d26-8f28-2bf5c6f4bd32.xml, d3dkmdt/D3DKMDT_MFRC_MAXPIXELRATE, display.d3dkmdt_monitor_frequency_range_constraint, D3DKMDT_MFRC_MAXPIXELRATE, _D3DKMDT_MONITOR_FREQUENCY_RANGE_CONSTRAINT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: d3dkmdt.h
+req.include-header: D3dkmdt.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmdt.h
+apiname:
+-	D3DKMDT_MONITOR_FREQUENCY_RANGE_CONSTRAINT
+product: Windows
+targetos: Windows
+req.typenames: D3DKMDT_MONITOR_FREQUENCY_RANGE_CONSTRAINT
 ---
 
 # _D3DKMDT_MONITOR_FREQUENCY_RANGE_CONSTRAINT Enumeration
@@ -53,26 +58,26 @@ typedef enum _D3DKMDT_MONITOR_FREQUENCY_RANGE_CONSTRAINT {
 ## Constants
 
 <table>
-
-<tr>
-<td>D3DKMDT_MFRC_ACTIVESIZE</td>
-<td>Indicates that the constraint is an active region size.</td>
-</tr>
-
-<tr>
-<td>D3DKMDT_MFRC_MAXPIXELRATE</td>
-<td>Indicates that the constraint is a pixel rate.</td>
-</tr>
-
-<tr>
-<td>D3DKMDT_MFRC_UNINITIALIZED</td>
-<td>Indicates that a variable of type D3DKMDT_MONITOR_FREQUENCY_RANGE_CONSTRAINT has not yet been assigned a meaningful value.</td>
-</tr>
+            
+                <tr>
+                    <td>D3DKMDT_MFRC_ACTIVESIZE</td>
+                    <td>Indicates that the constraint is an active region size.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DKMDT_MFRC_MAXPIXELRATE</td>
+                    <td>Indicates that the constraint is a pixel rate.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DKMDT_MFRC_UNINITIALIZED</td>
+                    <td>Indicates that a variable of type D3DKMDT_MONITOR_FREQUENCY_RANGE_CONSTRAINT has not yet been assigned a meaningful value.</td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-The <b>ConstraintType</b> member of a <a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_monitor_frequency_range.md">D3DKMDT_MONITOR_FREQUENCY_RANGE</a> structure is a value from the D3DKMDT_MONITOR_FREQUENCY_RANGE_CONSTRAINT enumeration.
+        The <b>ConstraintType</b> member of a <a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_monitor_frequency_range.md">D3DKMDT_MONITOR_FREQUENCY_RANGE</a> structure is a value from the D3DKMDT_MONITOR_FREQUENCY_RANGE_CONSTRAINT enumeration.
 
 ## Requirements
 | &nbsp; | &nbsp; |

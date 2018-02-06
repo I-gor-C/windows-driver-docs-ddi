@@ -1,41 +1,46 @@
 ---
-UID : NS:ndis._NDIS_CONFIGURATION_PARAMETER
-title : "_NDIS_CONFIGURATION_PARAMETER"
-author : windows-driver-content
-description : The NDIS_CONFIGURATION_PARAMETER structure contains the data and type of a named entry in the registry.
-old-location : netvista\ndis_configuration_parameter.htm
-old-project : netvista
-ms.assetid : 80250799-4263-43c0-85d5-f1c1c1fb0bae
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : PNDIS_CONFIGURATION_PARAMETER, netvista.ndis_configuration_parameter, ndis/PNDIS_CONFIGURATION_PARAMETER, *PNDIS_CONFIGURATION_PARAMETER, ndis_configuration_ref_14664bdb-06c7-4d27-b71b-d6a69f3e3396.xml, NDIS_CONFIGURATION_PARAMETER, NDIS_CONFIGURATION_PARAMETER structure [Network Drivers Starting with Windows Vista], ndis/NDIS_CONFIGURATION_PARAMETER, PNDIS_CONFIGURATION_PARAMETER structure pointer [Network Drivers Starting with Windows Vista], _NDIS_CONFIGURATION_PARAMETER
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers in Windows Vista. Supported for NDIS   5.1 drivers in Windows XP.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : See Remarks section
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PNDIS_CONFIGURATION_PARAMETER, NDIS_CONFIGURATION_PARAMETER"
+UID: NS:ndis._NDIS_CONFIGURATION_PARAMETER
+title: "_NDIS_CONFIGURATION_PARAMETER"
+author: windows-driver-content
+description: The NDIS_CONFIGURATION_PARAMETER structure contains the data and type of a named entry in the registry.
+old-location: netvista\ndis_configuration_parameter.htm
+old-project: netvista
+ms.assetid: 80250799-4263-43c0-85d5-f1c1c1fb0bae
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: PNDIS_CONFIGURATION_PARAMETER, netvista.ndis_configuration_parameter, ndis/PNDIS_CONFIGURATION_PARAMETER, *PNDIS_CONFIGURATION_PARAMETER, ndis_configuration_ref_14664bdb-06c7-4d27-b71b-d6a69f3e3396.xml, NDIS_CONFIGURATION_PARAMETER, NDIS_CONFIGURATION_PARAMETER structure [Network Drivers Starting with Windows Vista], ndis/NDIS_CONFIGURATION_PARAMETER, PNDIS_CONFIGURATION_PARAMETER structure pointer [Network Drivers Starting with Windows Vista], _NDIS_CONFIGURATION_PARAMETER
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers in Windows Vista. Supported for NDIS   5.1 drivers in Windows XP.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: See Remarks section
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndis.h
+apiname:
+-	NDIS_CONFIGURATION_PARAMETER
+product: Windows
+targetos: Windows
+req.typenames: "*PNDIS_CONFIGURATION_PARAMETER, NDIS_CONFIGURATION_PARAMETER"
 ---
 
 # _NDIS_CONFIGURATION_PARAMETER structure

@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddser.IOCTL_SERIAL_GET_BAUD_RATE
-title : IOCTL_SERIAL_GET_BAUD_RATE
-author : windows-driver-content
-description : The IOCTL_SERIAL_GET_BAUD_RATE request returns the baud rate at which the serial port is currently configured to transmit and receive data.
-old-location : serports\ioctl_serial_get_baud_rate.htm
-old-project : serports
-ms.assetid : 074ab68e-7cd5-44e4-b3f6-2d6ddc5f3095
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : serports.ioctl_serial_get_baud_rate, IOCTL_SERIAL_GET_BAUD_RATE control code [Serial Ports], IOCTL_SERIAL_GET_BAUD_RATE, ntddser/IOCTL_SERIAL_GET_BAUD_RATE, serref_d3a435b0-2934-465a-9c60-91210895755e.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddser.h
-req.include-header : Ntddser.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SD_REQUEST_FUNCTION
+UID: NI:ntddser.IOCTL_SERIAL_GET_BAUD_RATE
+title: IOCTL_SERIAL_GET_BAUD_RATE
+author: windows-driver-content
+description: The IOCTL_SERIAL_GET_BAUD_RATE request returns the baud rate at which the serial port is currently configured to transmit and receive data.
+old-location: serports\ioctl_serial_get_baud_rate.htm
+old-project: serports
+ms.assetid: 074ab68e-7cd5-44e4-b3f6-2d6ddc5f3095
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: serports.ioctl_serial_get_baud_rate, IOCTL_SERIAL_GET_BAUD_RATE control code [Serial Ports], IOCTL_SERIAL_GET_BAUD_RATE, ntddser/IOCTL_SERIAL_GET_BAUD_RATE, serref_d3a435b0-2934-465a-9c60-91210895755e.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddser.h
+req.include-header: Ntddser.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddser.h
+apiname:
+-	IOCTL_SERIAL_GET_BAUD_RATE
+product: Windows
+targetos: Windows
+req.typenames: SD_REQUEST_FUNCTION
 ---
 
 # IOCTL_SERIAL_GET_BAUD_RATE IOCTL

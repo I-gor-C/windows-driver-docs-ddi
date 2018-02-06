@@ -1,41 +1,46 @@
 ---
-UID : NF:dmusicks.IMiniportDMus.NewStream
-title : IMiniportDMus::NewStream method
-author : windows-driver-content
-description : The NewStream method creates a new instance of a logical stream associated with a specified physical channel.
-old-location : audio\iminiportdmus_newstream.htm
-old-project : audio
-ms.assetid : aa221279-8d59-4f6f-8fc6-ad09e36a12a9
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : audmp-routines_a6630d1b-4a9d-4d4e-973a-09d541d7db70.xml, IMiniportDMus, NewStream method [Audio Devices], IMiniportDMus interface, dmusicks/IMiniportDMus::NewStream, audio.iminiportdmus_newstream, IMiniportDMus interface [Audio Devices], NewStream method, NewStream method [Audio Devices], NewStream, IMiniportDMus::NewStream
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dmusicks.h
-req.include-header : Dmusicks.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dmusicks.h
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DMUS_STREAM_TYPE
+UID: NF:dmusicks.IMiniportDMus.NewStream
+title: IMiniportDMus::NewStream method
+author: windows-driver-content
+description: The NewStream method creates a new instance of a logical stream associated with a specified physical channel.
+old-location: audio\iminiportdmus_newstream.htm
+old-project: audio
+ms.assetid: aa221279-8d59-4f6f-8fc6-ad09e36a12a9
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: audmp-routines_a6630d1b-4a9d-4d4e-973a-09d541d7db70.xml, IMiniportDMus, NewStream method [Audio Devices], IMiniportDMus interface, dmusicks/IMiniportDMus::NewStream, audio.iminiportdmus_newstream, IMiniportDMus interface [Audio Devices], NewStream method, NewStream method [Audio Devices], NewStream, IMiniportDMus::NewStream
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dmusicks.h
+req.include-header: Dmusicks.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dmusicks.h
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dmusicks.h
+apiname:
+-	IMiniportDMus.NewStream
+product: Windows
+targetos: Windows
+req.typenames: DMUS_STREAM_TYPE
 ---
 
 

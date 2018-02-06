@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisReadNetworkAddress
-title : NdisReadNetworkAddress function
-author : windows-driver-content
-description : The NdisReadNetworkAddress function returns the software-configurable network address that was stored in the registry for a NIC when it was installed in the machine.
-old-location : netvista\ndisreadnetworkaddress.htm
-old-project : netvista
-ms.assetid : 42519c60-6dc6-4c20-a2e8-954d9610a982
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.ndisreadnetworkaddress, ndis_configuration_ref_459fbfae-4235-4f60-9b10-02c60defc236.xml, ndis/NdisReadNetworkAddress, NdisReadNetworkAddress, NdisReadNetworkAddress function [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported for NDIS 6.0 and later drivers in Windows Vista and later. Supported for NDIS 5.1 drivers (see    NdisReadNetworkAddress (NDIS   5.1)) in Windows XP and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_Miscellaneous_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisReadNetworkAddress
+title: NdisReadNetworkAddress function
+author: windows-driver-content
+description: The NdisReadNetworkAddress function returns the software-configurable network address that was stored in the registry for a NIC when it was installed in the machine.
+old-location: netvista\ndisreadnetworkaddress.htm
+old-project: netvista
+ms.assetid: 42519c60-6dc6-4c20-a2e8-954d9610a982
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.ndisreadnetworkaddress, ndis_configuration_ref_459fbfae-4235-4f60-9b10-02c60defc236.xml, ndis/NdisReadNetworkAddress, NdisReadNetworkAddress, NdisReadNetworkAddress function [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported for NDIS 6.0 and later drivers in Windows Vista and later. Supported for NDIS 5.1 drivers (see    NdisReadNetworkAddress (NDIS   5.1)) in Windows XP and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_Miscellaneous_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisReadNetworkAddress
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

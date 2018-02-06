@@ -1,41 +1,46 @@
 ---
-UID : NC:dxgiddi.PFNDDXGIDDI_PRESENT_MULTIPLANE_OVERLAYCB
-title : PFNDDXGIDDI_PRESENT_MULTIPLANE_OVERLAYCB
-author : windows-driver-content
-description : Called by the Microsoft DirectX Graphics Infrastructure (DXGI) runtime to notify the user-mode display driver that an application finished rendering and requests that the driver display the source surface by either copying or flipping or that the driver perform a color-fill operation. Must be implemented by Windows Display Driver Model (WDDM) 1.3 or later drivers that support multiplane overlays.
-old-location : display\pfnpresentmultiplaneoverlay__dxgi_.htm
-old-project : display
-ms.assetid : C6EB96AC-0D5B-4D75-9B44-B1744F6A4360
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.pfnpresentmultiplaneoverlay__dxgi_, pfnPresentMultiPlaneOverlayCb callback function [Display Devices], pfnPresentMultiPlaneOverlayCb, PFNDDXGIDDI_PRESENT_MULTIPLANE_OVERLAYCB, PFNDDXGIDDI_PRESENT_MULTIPLANE_OVERLAYCB, dxgiddi/pfnPresentMultiPlaneOverlayCb
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : dxgiddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8.1
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDRMRIGHTS, DRMRIGHTS"
+UID: NC:dxgiddi.PFNDDXGIDDI_PRESENT_MULTIPLANE_OVERLAYCB
+title: PFNDDXGIDDI_PRESENT_MULTIPLANE_OVERLAYCB
+author: windows-driver-content
+description: Called by the Microsoft DirectX Graphics Infrastructure (DXGI) runtime to notify the user-mode display driver that an application finished rendering and requests that the driver display the source surface by either copying or flipping or that the driver perform a color-fill operation. Must be implemented by Windows Display Driver Model (WDDM) 1.3 or later drivers that support multiplane overlays.
+old-location: display\pfnpresentmultiplaneoverlay__dxgi_.htm
+old-project: display
+ms.assetid: C6EB96AC-0D5B-4D75-9B44-B1744F6A4360
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.pfnpresentmultiplaneoverlay__dxgi_, pfnPresentMultiPlaneOverlayCb callback function [Display Devices], pfnPresentMultiPlaneOverlayCb, PFNDDXGIDDI_PRESENT_MULTIPLANE_OVERLAYCB, PFNDDXGIDDI_PRESENT_MULTIPLANE_OVERLAYCB, dxgiddi/pfnPresentMultiPlaneOverlayCb
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: dxgiddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8.1
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Dxgiddi.h
+apiname:
+-	pfnPresentMultiPlaneOverlayCb
+product: Windows
+targetos: Windows
+req.typenames: "*PDRMRIGHTS, DRMRIGHTS"
 ---
 
 

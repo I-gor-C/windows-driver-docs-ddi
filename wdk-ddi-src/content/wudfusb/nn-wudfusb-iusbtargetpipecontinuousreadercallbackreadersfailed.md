@@ -1,42 +1,47 @@
 ---
-UID : NN:wudfusb.IUsbTargetPipeContinuousReaderCallbackReadersFailed
-title : IUsbTargetPipeContinuousReaderCallbackReadersFailed
-author : windows-driver-content
-description : IUsbTargetPipeContinuousReaderCallbackReadersFailed is a driver-supplied interface.
-old-location : wdf\iusbtargetpipecontinuousreadercallbackreadersfailed.htm
-old-project : wdf
-ms.assetid : d0b68976-f7aa-4b0d-b6bb-258ad2c2e506
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.iusbtargetpipecontinuousreadercallbackreadersfailed, IUsbTargetPipeContinuousReaderCallbackReadersFailed interface, IUsbTargetPipeContinuousReaderCallbackReadersFailed interface, described, IUsbTargetPipeContinuousReaderCallbackReadersFailed, wudfusb/IUsbTargetPipeContinuousReaderCallbackReadersFailed, UMDFUSBref_c38e329c-f04a-4675-ad3b-25677fddedf9.xml, umdf.iusbtargetpipecontinuousreadercallbackreadersfailed
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : wudfusb.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfusb.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
-req.product : Windows 10 or later.
+UID: NN:wudfusb.IUsbTargetPipeContinuousReaderCallbackReadersFailed
+title: IUsbTargetPipeContinuousReaderCallbackReadersFailed
+author: windows-driver-content
+description: IUsbTargetPipeContinuousReaderCallbackReadersFailed is a driver-supplied interface.
+old-location: wdf\iusbtargetpipecontinuousreadercallbackreadersfailed.htm
+old-project: wdf
+ms.assetid: d0b68976-f7aa-4b0d-b6bb-258ad2c2e506
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.iusbtargetpipecontinuousreadercallbackreadersfailed, IUsbTargetPipeContinuousReaderCallbackReadersFailed interface, IUsbTargetPipeContinuousReaderCallbackReadersFailed interface, described, IUsbTargetPipeContinuousReaderCallbackReadersFailed, wudfusb/IUsbTargetPipeContinuousReaderCallbackReadersFailed, UMDFUSBref_c38e329c-f04a-4675-ad3b-25677fddedf9.xml, umdf.iusbtargetpipecontinuousreadercallbackreadersfailed
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: wudfusb.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfusb.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	wudfusb.h
+apiname:
+-	IUsbTargetPipeContinuousReaderCallbackReadersFailed
+product: Windows
+targetos: Windows
+req.typenames: WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
+req.product: Windows 10 or later.
 ---
 
 # IUsbTargetPipeContinuousReaderCallbackReadersFailed interface

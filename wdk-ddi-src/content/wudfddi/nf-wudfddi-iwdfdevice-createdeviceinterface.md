@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFDevice.CreateDeviceInterface
-title : IWDFDevice::CreateDeviceInterface method
-author : windows-driver-content
-description : The CreateDeviceInterface method creates an instance of a device interface class.
-old-location : wdf\iwdfdevice_createdeviceinterface.htm
-old-project : wdf
-ms.assetid : 0a88cbb6-66be-4ef7-93da-27d7ce169779
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : UMDFDeviceObjectRef_11606922-8b72-434f-a739-fd0c653ea026.xml, umdf.iwdfdevice_createdeviceinterface, wdf.iwdfdevice_createdeviceinterface, IWDFDevice::CreateDeviceInterface, IWDFDevice interface, CreateDeviceInterface method, CreateDeviceInterface method, wudfddi/IWDFDevice::CreateDeviceInterface, IWDFDevice, CreateDeviceInterface method, IWDFDevice interface, CreateDeviceInterface
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.5
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFDevice.CreateDeviceInterface
+title: IWDFDevice::CreateDeviceInterface method
+author: windows-driver-content
+description: The CreateDeviceInterface method creates an instance of a device interface class.
+old-location: wdf\iwdfdevice_createdeviceinterface.htm
+old-project: wdf
+ms.assetid: 0a88cbb6-66be-4ef7-93da-27d7ce169779
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: UMDFDeviceObjectRef_11606922-8b72-434f-a739-fd0c653ea026.xml, umdf.iwdfdevice_createdeviceinterface, wdf.iwdfdevice_createdeviceinterface, IWDFDevice::CreateDeviceInterface, IWDFDevice interface, CreateDeviceInterface method, CreateDeviceInterface method, wudfddi/IWDFDevice::CreateDeviceInterface, IWDFDevice, CreateDeviceInterface method, IWDFDevice interface, CreateDeviceInterface
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.5
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFDevice.CreateDeviceInterface
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

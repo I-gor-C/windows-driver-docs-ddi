@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._D3DDDICB_QUERYADAPTERINFO
-title : "_D3DDDICB_QUERYADAPTERINFO"
-author : windows-driver-content
-description : The D3DDDICB_QUERYADAPTERINFO structure contains information that describes the graphics adapter.
-old-location : display\d3dddicb_queryadapterinfo.htm
-old-project : display
-ms.assetid : 484406a5-54be-49fa-839a-2e55747020f4
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.d3dddicb_queryadapterinfo, d3dumddi/D3DDDICB_QUERYADAPTERINFO, D3D_param_Structs_24ed4d09-d2ff-4b79-95fc-5a1c7d146faa.xml, D3DDDICB_QUERYADAPTERINFO, D3DDDICB_QUERYADAPTERINFO structure [Display Devices], _D3DDDICB_QUERYADAPTERINFO
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDICB_QUERYADAPTERINFO
+UID: NS:d3dumddi._D3DDDICB_QUERYADAPTERINFO
+title: "_D3DDDICB_QUERYADAPTERINFO"
+author: windows-driver-content
+description: The D3DDDICB_QUERYADAPTERINFO structure contains information that describes the graphics adapter.
+old-location: display\d3dddicb_queryadapterinfo.htm
+old-project: display
+ms.assetid: 484406a5-54be-49fa-839a-2e55747020f4
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.d3dddicb_queryadapterinfo, d3dumddi/D3DDDICB_QUERYADAPTERINFO, D3D_param_Structs_24ed4d09-d2ff-4b79-95fc-5a1c7d146faa.xml, D3DDDICB_QUERYADAPTERINFO, D3DDDICB_QUERYADAPTERINFO structure [Display Devices], _D3DDDICB_QUERYADAPTERINFO
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	D3DDDICB_QUERYADAPTERINFO
+product: Windows
+targetos: Windows
+req.typenames: D3DDDICB_QUERYADAPTERINFO
 ---
 
 # _D3DDDICB_QUERYADAPTERINFO structure

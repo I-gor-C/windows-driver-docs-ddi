@@ -1,42 +1,47 @@
 ---
-UID : NF:printerextension.IPrintSchemaTicket.GetCapabilities
-title : IPrintSchemaTicket::GetCapabilities method
-author : windows-driver-content
-description : Gets an IPrintSchemaCapabilities object that represents the printer capabilities based on the current settings of this IPrintSchemaTicket object.
-old-location : print\iprintschematicket_getcapabilities.htm
-old-project : print
-ms.assetid : 5556BD5E-6489-4CCF-8C62-DDA53AD9F368
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : GetCapabilities, print.iprintschematicket_getcapabilities, IPrintSchemaTicket interface [Print Devices], GetCapabilities method, GetCapabilities method [Print Devices], IPrintSchemaTicket::GetCapabilities, GetCapabilities method [Print Devices], IPrintSchemaTicket interface, IPrintSchemaTicket, printerextension/IPrintSchemaTicket::GetCapabilities
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : printerextension.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : printerextension.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PrintSchemaSelectionType
-req.product : Windows 10 or later.
+UID: NF:printerextension.IPrintSchemaTicket.GetCapabilities
+title: IPrintSchemaTicket::GetCapabilities method
+author: windows-driver-content
+description: Gets an IPrintSchemaCapabilities object that represents the printer capabilities based on the current settings of this IPrintSchemaTicket object.
+old-location: print\iprintschematicket_getcapabilities.htm
+old-project: print
+ms.assetid: 5556BD5E-6489-4CCF-8C62-DDA53AD9F368
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: GetCapabilities, print.iprintschematicket_getcapabilities, IPrintSchemaTicket interface [Print Devices], GetCapabilities method, GetCapabilities method [Print Devices], IPrintSchemaTicket::GetCapabilities, GetCapabilities method [Print Devices], IPrintSchemaTicket interface, IPrintSchemaTicket, printerextension/IPrintSchemaTicket::GetCapabilities
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: printerextension.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: printerextension.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	printerextension.h
+apiname:
+-	IPrintSchemaTicket.GetCapabilities
+product: Windows
+targetos: Windows
+req.typenames: PrintSchemaSelectionType
+req.product: Windows 10 or later.
 ---
 
 

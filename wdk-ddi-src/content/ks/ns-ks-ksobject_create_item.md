@@ -1,41 +1,46 @@
 ---
-UID : NS:ks.KSOBJECT_CREATE_ITEM
-title : KSOBJECT_CREATE_ITEM
-author : windows-driver-content
-description : The KSOBJECT_CREATE_ITEM structure is used to look up the string passed to a create request.
-old-location : stream\ksobject_create_item.htm
-old-project : stream
-ms.assetid : 9c047a7c-cdfc-47e1-beae-f8f326c187ee
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ks/PKSOBJECT_CREATE_ITEM, KSOBJECT_CREATE_ITEM structure [Streaming Media Devices], *PKSOBJECT_CREATE_ITEM, KSOBJECT_CREATE_ITEM, PKSOBJECT_CREATE_ITEM structure pointer [Streaming Media Devices], ks/KSOBJECT_CREATE_ITEM, PKSOBJECT_CREATE_ITEM, ks-struct_d09f00c9-44ef-44fa-b46e-2ab540797a53.xml, stream.ksobject_create_item
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KSOBJECT_CREATE_ITEM, *PKSOBJECT_CREATE_ITEM
+UID: NS:ks.KSOBJECT_CREATE_ITEM
+title: KSOBJECT_CREATE_ITEM
+author: windows-driver-content
+description: The KSOBJECT_CREATE_ITEM structure is used to look up the string passed to a create request.
+old-location: stream\ksobject_create_item.htm
+old-project: stream
+ms.assetid: 9c047a7c-cdfc-47e1-beae-f8f326c187ee
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ks/PKSOBJECT_CREATE_ITEM, KSOBJECT_CREATE_ITEM structure [Streaming Media Devices], *PKSOBJECT_CREATE_ITEM, KSOBJECT_CREATE_ITEM, PKSOBJECT_CREATE_ITEM structure pointer [Streaming Media Devices], ks/KSOBJECT_CREATE_ITEM, PKSOBJECT_CREATE_ITEM, ks-struct_d09f00c9-44ef-44fa-b46e-2ab540797a53.xml, stream.ksobject_create_item
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	KSOBJECT_CREATE_ITEM
+product: Windows
+targetos: Windows
+req.typenames: KSOBJECT_CREATE_ITEM, *PKSOBJECT_CREATE_ITEM
 ---
 
 # KSOBJECT_CREATE_ITEM structure

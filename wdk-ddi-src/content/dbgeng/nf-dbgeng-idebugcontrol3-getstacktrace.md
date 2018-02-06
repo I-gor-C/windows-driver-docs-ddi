@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugControl3.GetStackTrace
-title : IDebugControl3::GetStackTrace method
-author : windows-driver-content
-description : The GetStackTrace method returns the frames at the top of the specified call stack.
-old-location : debugger\getstacktrace.htm
-old-project : debugger
-ms.assetid : 2d07e6a3-b560-4d9b-aece-0368d5929867
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : GetStackTrace method [Windows Debugging], IDebugControl2 interface, IDebugControl2::GetStackTrace, IDebugControl::GetStackTrace, dbgeng/IDebugControl3::GetStackTrace, IDebugControl2 interface [Windows Debugging], GetStackTrace method, dbgeng/IDebugControl2::GetStackTrace, GetStackTrace method [Windows Debugging], IDebugControl3 interface, GetStackTrace method [Windows Debugging], IDebugControl interface, IDebugControl3, IDebugControl3::GetStackTrace, GetStackTrace method [Windows Debugging], IDebugControl_ef51127a-c022-4e3d-bb63-55553daea893.xml, IDebugControl3 interface [Windows Debugging], GetStackTrace method, debugger.getstacktrace, dbgeng/IDebugControl::GetStackTrace, GetStackTrace, IDebugControl interface [Windows Debugging], GetStackTrace method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl3.GetStackTrace
+title: IDebugControl3::GetStackTrace method
+author: windows-driver-content
+description: The GetStackTrace method returns the frames at the top of the specified call stack.
+old-location: debugger\getstacktrace.htm
+old-project: debugger
+ms.assetid: 2d07e6a3-b560-4d9b-aece-0368d5929867
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: GetStackTrace method [Windows Debugging], IDebugControl2 interface, IDebugControl2::GetStackTrace, IDebugControl::GetStackTrace, dbgeng/IDebugControl3::GetStackTrace, IDebugControl2 interface [Windows Debugging], GetStackTrace method, dbgeng/IDebugControl2::GetStackTrace, GetStackTrace method [Windows Debugging], IDebugControl3 interface, GetStackTrace method [Windows Debugging], IDebugControl interface, IDebugControl3, IDebugControl3::GetStackTrace, GetStackTrace method [Windows Debugging], IDebugControl_ef51127a-c022-4e3d-bb63-55553daea893.xml, IDebugControl3 interface [Windows Debugging], GetStackTrace method, debugger.getstacktrace, dbgeng/IDebugControl::GetStackTrace, GetStackTrace, IDebugControl interface [Windows Debugging], GetStackTrace method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl.GetStackTrace
+-	IDebugControl2.GetStackTrace
+-	IDebugControl3.GetStackTrace
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

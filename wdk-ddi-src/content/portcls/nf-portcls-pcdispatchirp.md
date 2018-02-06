@@ -1,41 +1,47 @@
 ---
-UID : NF:portcls.PcDispatchIrp
-title : PcDispatchIrp function
-author : windows-driver-content
-description : The PcDispatchIrp function dispatches an IRP to the PortCls system driver's default handler.
-old-location : audio\pcdispatchirp.htm
-old-project : audio
-ms.assetid : 01add66e-a007-4b1d-add6-c5be71dd0d61
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : portcls/PcDispatchIrp, PcDispatchIrp, audio.pcdispatchirp, PcDispatchIrp function [Audio Devices], audpc-routines_c87193c2-a8f8-4ba1-bf47-422fb5ff452d.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : portcls.h
-req.include-header : 
-req.target-type : Universal
-req.target-min-winverclnt : The PortCls system driver implements the PcDispatchIrp function in Microsoft Windows 98/Me and in Windows 2000 and later operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Portcls.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.PcDispatchIrp
+title: PcDispatchIrp function
+author: windows-driver-content
+description: The PcDispatchIrp function dispatches an IRP to the PortCls system driver's default handler.
+old-location: audio\pcdispatchirp.htm
+old-project: audio
+ms.assetid: 01add66e-a007-4b1d-add6-c5be71dd0d61
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: portcls/PcDispatchIrp, PcDispatchIrp, audio.pcdispatchirp, PcDispatchIrp function [Audio Devices], audpc-routines_c87193c2-a8f8-4ba1-bf47-422fb5ff452d.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: portcls.h
+req.include-header: 
+req.target-type: Universal
+req.target-min-winverclnt: The PortCls system driver implements the PcDispatchIrp function in Microsoft Windows 98/Me and in Windows 2000 and later operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Portcls.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Portcls.lib
+-	Portcls.dll
+apiname:
+-	PcDispatchIrp
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

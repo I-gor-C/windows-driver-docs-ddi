@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddndis._NDIS_OBJECT_HEADER
-title : "_NDIS_OBJECT_HEADER"
-author : windows-driver-content
-description : The NDIS_OBJECT_HEADER structure packages the object type, version, and size information that is required in many NDIS 6.0 structures.
-old-location : netvista\ndis_object_header.htm
-old-project : netvista
-ms.assetid : 59d1a9b0-a4d0-4a24-aa2f-2167b0f53caa
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.ndis_object_header, ntddndis/PNDIS_OBJECT_HEADER, ntddndis/NDIS_OBJECT_HEADER, NDIS_OBJECT_HEADER structure [Network Drivers Starting with Windows Vista], PNDIS_OBJECT_HEADER, _NDIS_OBJECT_HEADER, PNDIS_OBJECT_HEADER structure pointer [Network Drivers Starting with Windows Vista], *PNDIS_OBJECT_HEADER, ndis_object_ref_c4593f06-bd96-4bbe-8e94-d8b7b1cf413b.xml, NDIS_OBJECT_HEADER
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_OBJECT_HEADER, *PNDIS_OBJECT_HEADER
+UID: NS:ntddndis._NDIS_OBJECT_HEADER
+title: "_NDIS_OBJECT_HEADER"
+author: windows-driver-content
+description: The NDIS_OBJECT_HEADER structure packages the object type, version, and size information that is required in many NDIS 6.0 structures.
+old-location: netvista\ndis_object_header.htm
+old-project: netvista
+ms.assetid: 59d1a9b0-a4d0-4a24-aa2f-2167b0f53caa
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.ndis_object_header, ntddndis/PNDIS_OBJECT_HEADER, ntddndis/NDIS_OBJECT_HEADER, NDIS_OBJECT_HEADER structure [Network Drivers Starting with Windows Vista], PNDIS_OBJECT_HEADER, _NDIS_OBJECT_HEADER, PNDIS_OBJECT_HEADER structure pointer [Network Drivers Starting with Windows Vista], *PNDIS_OBJECT_HEADER, ndis_object_ref_c4593f06-bd96-4bbe-8e94-d8b7b1cf413b.xml, NDIS_OBJECT_HEADER
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddndis.h
+apiname:
+-	NDIS_OBJECT_HEADER
+product: Windows
+targetos: Windows
+req.typenames: NDIS_OBJECT_HEADER, *PNDIS_OBJECT_HEADER
 ---
 
 # _NDIS_OBJECT_HEADER structure

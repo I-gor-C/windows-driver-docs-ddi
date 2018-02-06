@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugControl3.SetNextEventIndex
-title : IDebugControl3::SetNextEventIndex method
-author : windows-driver-content
-description : The SetNextEventIndex method sets the next event for the current target by selecting the event from the static list of events for the target, if such a list exists.
-old-location : debugger\setnexteventindex.htm
-old-project : debugger
-ms.assetid : fbff721a-fdd9-4343-b9a9-92f41fb21ba2
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugControl3 interface [Windows Debugging], SetNextEventIndex method, SetNextEventIndex method [Windows Debugging], IDebugControl3 interface, IDebugControl3, IDebugControl3::SetNextEventIndex, SetNextEventIndex method [Windows Debugging], SetNextEventIndex, debugger.setnexteventindex, IDebugControl_9a902b9c-c621-4d71-bae7-d3fd288b1cd8.xml, dbgeng/IDebugControl3::SetNextEventIndex
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl3.SetNextEventIndex
+title: IDebugControl3::SetNextEventIndex method
+author: windows-driver-content
+description: The SetNextEventIndex method sets the next event for the current target by selecting the event from the static list of events for the target, if such a list exists.
+old-location: debugger\setnexteventindex.htm
+old-project: debugger
+ms.assetid: fbff721a-fdd9-4343-b9a9-92f41fb21ba2
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugControl3 interface [Windows Debugging], SetNextEventIndex method, SetNextEventIndex method [Windows Debugging], IDebugControl3 interface, IDebugControl3, IDebugControl3::SetNextEventIndex, SetNextEventIndex method [Windows Debugging], SetNextEventIndex, debugger.setnexteventindex, IDebugControl_9a902b9c-c621-4d71-bae7-d3fd288b1cd8.xml, dbgeng/IDebugControl3::SetNextEventIndex
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl3.SetNextEventIndex
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

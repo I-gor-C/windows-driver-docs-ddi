@@ -1,42 +1,50 @@
 ---
-UID : NF:wdfregistry.WdfRegistryAssignULong
-title : WdfRegistryAssignULong function
-author : windows-driver-content
-description : The WdfRegistryAssignULong method assigns a specified unsigned long word value to a specified value name in the registry.
-old-location : wdf\wdfregistryassignulong.htm
-old-project : wdf
-ms.assetid : a5a160a7-3408-4d26-83c8-2f5a7b6acaf1
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : PFN_WDFREGISTRYASSIGNULONG, WdfRegistryAssignULong, kmdf.wdfregistryassignulong, wdfregistry/WdfRegistryAssignULong, wdf.wdfregistryassignulong, WdfRegistryAssignULong method, DFRegKeyObjectRef_2f35ea01-ade1-4bf1-a55b-6613021fcd04.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfregistry.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_QUERY_INTERFACE_CONFIG, *PWDF_QUERY_INTERFACE_CONFIG
-req.product : Windows 10 or later.
+UID: NF:wdfregistry.WdfRegistryAssignULong
+title: WdfRegistryAssignULong function
+author: windows-driver-content
+description: The WdfRegistryAssignULong method assigns a specified unsigned long word value to a specified value name in the registry.
+old-location: wdf\wdfregistryassignulong.htm
+old-project: wdf
+ms.assetid: a5a160a7-3408-4d26-83c8-2f5a7b6acaf1
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: PFN_WDFREGISTRYASSIGNULONG, WdfRegistryAssignULong, kmdf.wdfregistryassignulong, wdfregistry/WdfRegistryAssignULong, wdf.wdfregistryassignulong, WdfRegistryAssignULong method, DFRegKeyObjectRef_2f35ea01-ade1-4bf1-a55b-6613021fcd04.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfregistry.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+-	WUDFx02000.dll
+-	WUDFx02000.dll.dll
+apiname:
+-	WdfRegistryAssignULong
+product: Windows
+targetos: Windows
+req.typenames: WDF_QUERY_INTERFACE_CONFIG, *PWDF_QUERY_INTERFACE_CONFIG
+req.product: Windows 10 or later.
 ---
 
 

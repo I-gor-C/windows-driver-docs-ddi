@@ -1,41 +1,46 @@
 ---
-UID : NS:ntifs._FILE_OBJECTID_INFORMATION
-title : "_FILE_OBJECTID_INFORMATION"
-author : windows-driver-content
-description : The FILE_OBJECTID_INFORMATION structure is used to query for object ID information for the files in a directory on an NTFS volume.
-old-location : ifsk\file_objectid_information.htm
-old-project : ifsk
-ms.assetid : bbbaf48b-78c3-4a4b-801b-2fe3c0112a68
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FILE_OBJECTID_INFORMATION structure [Installable File System Drivers], FILE_OBJECTID_INFORMATION, ntifs/PFILE_OBJECTID_INFORMATION, ntifs/FILE_OBJECTID_INFORMATION, ifsk.file_objectid_information, *PFILE_OBJECTID_INFORMATION, fileinformationstructures_330b72bc-0a91-45d2-b4c9-04d065e0545e.xml, _FILE_OBJECTID_INFORMATION, PFILE_OBJECTID_INFORMATION, PFILE_OBJECTID_INFORMATION structure pointer [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntifs.h
-req.include-header : Ntifs.h, Fltkernel.h
-req.target-type : Windows
-req.target-min-winverclnt : This structure is available on Microsoft Windows 2000 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FILE_OBJECTID_INFORMATION, *PFILE_OBJECTID_INFORMATION
+UID: NS:ntifs._FILE_OBJECTID_INFORMATION
+title: "_FILE_OBJECTID_INFORMATION"
+author: windows-driver-content
+description: The FILE_OBJECTID_INFORMATION structure is used to query for object ID information for the files in a directory on an NTFS volume.
+old-location: ifsk\file_objectid_information.htm
+old-project: ifsk
+ms.assetid: bbbaf48b-78c3-4a4b-801b-2fe3c0112a68
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FILE_OBJECTID_INFORMATION structure [Installable File System Drivers], FILE_OBJECTID_INFORMATION, ntifs/PFILE_OBJECTID_INFORMATION, ntifs/FILE_OBJECTID_INFORMATION, ifsk.file_objectid_information, *PFILE_OBJECTID_INFORMATION, fileinformationstructures_330b72bc-0a91-45d2-b4c9-04d065e0545e.xml, _FILE_OBJECTID_INFORMATION, PFILE_OBJECTID_INFORMATION, PFILE_OBJECTID_INFORMATION structure pointer [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntifs.h
+req.include-header: Ntifs.h, Fltkernel.h
+req.target-type: Windows
+req.target-min-winverclnt: This structure is available on Microsoft Windows 2000 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntifs.h
+apiname:
+-	FILE_OBJECTID_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: FILE_OBJECTID_INFORMATION, *PFILE_OBJECTID_INFORMATION
 ---
 
 # _FILE_OBJECTID_INFORMATION structure

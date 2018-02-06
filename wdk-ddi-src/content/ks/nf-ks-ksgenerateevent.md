@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsGenerateEvent
-title : KsGenerateEvent function
-author : windows-driver-content
-description : The KsGenerateEvent function generates a standard event notification given an event entry structure.
-old-location : stream\ksgenerateevent.htm
-old-project : stream
-ms.assetid : 4f142e5f-7d8a-47e0-8757-8c6e527a2472
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KsGenerateEvent function [Streaming Media Devices], ks/KsGenerateEvent, stream.ksgenerateevent, ksfunc_929fd3d4-2f02-4106-b8cd-25c3fb13ba05.xml, KsGenerateEvent
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : Any level (See Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsGenerateEvent
+title: KsGenerateEvent function
+author: windows-driver-content
+description: The KsGenerateEvent function generates a standard event notification given an event entry structure.
+old-location: stream\ksgenerateevent.htm
+old-project: stream
+ms.assetid: 4f142e5f-7d8a-47e0-8757-8c6e527a2472
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KsGenerateEvent function [Streaming Media Devices], ks/KsGenerateEvent, stream.ksgenerateevent, ksfunc_929fd3d4-2f02-4106-b8cd-25c3fb13ba05.xml, KsGenerateEvent
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: Any level (See Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsGenerateEvent
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

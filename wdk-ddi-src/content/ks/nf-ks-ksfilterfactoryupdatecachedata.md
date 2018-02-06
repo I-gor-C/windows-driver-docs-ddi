@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsFilterFactoryUpdateCacheData
-title : KsFilterFactoryUpdateCacheData function
-author : windows-driver-content
-description : The KsFilterFactoryUpdateCacheData function updates the FilterData registry key and the Medium cache (a set of registry keys) for a given filter factory.
-old-location : stream\ksfilterfactoryupdatecachedata.htm
-old-project : stream
-ms.assetid : a5c868a5-0e79-482b-9694-02cae2de99ca
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KsFilterFactoryUpdateCacheData function [Streaming Media Devices], KsFilterFactoryUpdateCacheData, ks/KsFilterFactoryUpdateCacheData, avfunc_2fdbd12c-b074-415e-8de3-bfbe61ef198a.xml, stream.ksfilterfactoryupdatecachedata
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 9.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsFilterFactoryUpdateCacheData
+title: KsFilterFactoryUpdateCacheData function
+author: windows-driver-content
+description: The KsFilterFactoryUpdateCacheData function updates the FilterData registry key and the Medium cache (a set of registry keys) for a given filter factory.
+old-location: stream\ksfilterfactoryupdatecachedata.htm
+old-project: stream
+ms.assetid: a5c868a5-0e79-482b-9694-02cae2de99ca
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KsFilterFactoryUpdateCacheData function [Streaming Media Devices], KsFilterFactoryUpdateCacheData, ks/KsFilterFactoryUpdateCacheData, avfunc_2fdbd12c-b074-415e-8de3-bfbe61ef198a.xml, stream.ksfilterfactoryupdatecachedata
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 9.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsFilterFactoryUpdateCacheData
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

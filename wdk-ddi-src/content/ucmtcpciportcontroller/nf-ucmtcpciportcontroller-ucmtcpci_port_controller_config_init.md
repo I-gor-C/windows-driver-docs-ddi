@@ -1,42 +1,47 @@
 ---
-UID : NF:ucmtcpciportcontroller.UCMTCPCI_PORT_CONTROLLER_CONFIG_INIT
-title : UCMTCPCI_PORT_CONTROLLER_CONFIG_INIT function
-author : windows-driver-content
-description : Initializes the UCMTCPCI_PORT_CONTROLLER_CONFIG structure.
-old-location : buses\ucmtcpci_port_controller_config_init.htm
-old-project : usbref
-ms.assetid : 8e9718e1-2f7c-4322-a34d-2faa45f4f97e
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : buses.ucmtcpci_port_controller_config_init, UCMTCPCI_PORT_CONTROLLER_CONFIG_INIT, UCMTCPCI_PORT_CONTROLLER_CONFIG_INIT method [Buses], ucmtcpciportcontroller/UCMTCPCI_PORT_CONTROLLER_CONFIG_INIT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ucmtcpciportcontroller.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : UCMTCPCI_PORT_CONTROLLER_ALERT_TYPE
-req.product : Windows 10 or later.
+UID: NF:ucmtcpciportcontroller.UCMTCPCI_PORT_CONTROLLER_CONFIG_INIT
+title: UCMTCPCI_PORT_CONTROLLER_CONFIG_INIT function
+author: windows-driver-content
+description: Initializes the UCMTCPCI_PORT_CONTROLLER_CONFIG structure.
+old-location: buses\ucmtcpci_port_controller_config_init.htm
+old-project: usbref
+ms.assetid: 8e9718e1-2f7c-4322-a34d-2faa45f4f97e
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: buses.ucmtcpci_port_controller_config_init, UCMTCPCI_PORT_CONTROLLER_CONFIG_INIT, UCMTCPCI_PORT_CONTROLLER_CONFIG_INIT method [Buses], ucmtcpciportcontroller/UCMTCPCI_PORT_CONTROLLER_CONFIG_INIT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ucmtcpciportcontroller.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ucmtcpciportcontroller.h
+apiname:
+-	UCMTCPCI_PORT_CONTROLLER_CONFIG_INIT
+product: Windows
+targetos: Windows
+req.typenames: UCMTCPCI_PORT_CONTROLLER_ALERT_TYPE
+req.product: Windows 10 or later.
 ---
 
 

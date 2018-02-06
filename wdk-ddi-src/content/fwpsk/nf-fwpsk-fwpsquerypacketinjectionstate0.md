@@ -1,41 +1,47 @@
 ---
-UID : NF:fwpsk.FwpsQueryPacketInjectionState0
-title : FwpsQueryPacketInjectionState0 function
-author : windows-driver-content
-description : The FwpsQueryPacketInjectionState0 function is called by a callout to query the injection state of packet data.Note  FwpsQueryPacketInjectionState0 is a specific version of FwpsQueryPacketInjectionState.
-old-location : netvista\fwpsquerypacketinjectionstate0.htm
-old-project : netvista
-ms.assetid : 785d99a5-a8c9-4763-bdd4-e26f604f6be7
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.fwpsquerypacketinjectionstate0, FwpsQueryPacketInjectionState0, fwpsk/FwpsQueryPacketInjectionState0, wfp_ref_2_funct_3_fwps_J-Q_2eb3c709-15f8-46de-a55d-b4e99c085740.xml, FwpsQueryPacketInjectionState0 function [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fwpsk.h
-req.include-header : Fwpsk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Fwpkclnt.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FWPS_VSWITCH_EVENT_TYPE
+UID: NF:fwpsk.FwpsQueryPacketInjectionState0
+title: FwpsQueryPacketInjectionState0 function
+author: windows-driver-content
+description: The FwpsQueryPacketInjectionState0 function is called by a callout to query the injection state of packet data.Note  FwpsQueryPacketInjectionState0 is a specific version of FwpsQueryPacketInjectionState.
+old-location: netvista\fwpsquerypacketinjectionstate0.htm
+old-project: netvista
+ms.assetid: 785d99a5-a8c9-4763-bdd4-e26f604f6be7
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.fwpsquerypacketinjectionstate0, FwpsQueryPacketInjectionState0, fwpsk/FwpsQueryPacketInjectionState0, wfp_ref_2_funct_3_fwps_J-Q_2eb3c709-15f8-46de-a55d-b4e99c085740.xml, FwpsQueryPacketInjectionState0 function [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fwpsk.h
+req.include-header: Fwpsk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Fwpkclnt.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	fwpkclnt.lib
+-	fwpkclnt.dll
+apiname:
+-	FwpsQueryPacketInjectionState0
+product: Windows
+targetos: Windows
+req.typenames: FWPS_VSWITCH_EVENT_TYPE
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.SeImpersonateClientEx
-title : SeImpersonateClientEx function
-author : windows-driver-content
-description : The SeImpersonateClientEx routine causes a thread to impersonate a user.
-old-location : ifsk\seimpersonateclientex.htm
-old-project : ifsk
-ms.assetid : 7a5043b9-2517-454a-a8d3-1ea09143c81a
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ntifs/SeImpersonateClientEx, SeImpersonateClientEx, ifsk.seimpersonateclientex, seref_557d14bb-0d77-4bc8-8c75-57bb3c789963.xml, SeImpersonateClientEx routine [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 2000 and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.SeImpersonateClientEx
+title: SeImpersonateClientEx function
+author: windows-driver-content
+description: The SeImpersonateClientEx routine causes a thread to impersonate a user.
+old-location: ifsk\seimpersonateclientex.htm
+old-project: ifsk
+ms.assetid: 7a5043b9-2517-454a-a8d3-1ea09143c81a
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ntifs/SeImpersonateClientEx, SeImpersonateClientEx, ifsk.seimpersonateclientex, seref_557d14bb-0d77-4bc8-8c75-57bb3c789963.xml, SeImpersonateClientEx routine [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 2000 and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	SeImpersonateClientEx
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

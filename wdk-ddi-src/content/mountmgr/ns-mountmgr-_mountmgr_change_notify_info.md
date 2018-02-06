@@ -1,41 +1,46 @@
 ---
-UID : NS:mountmgr._MOUNTMGR_CHANGE_NOTIFY_INFO
-title : "_MOUNTMGR_CHANGE_NOTIFY_INFO"
-author : windows-driver-content
-description : The MOUNTMGR_CHANGE_NOTIFY_INFO structure is used by the mount manager to send epic numbers to its clients and vice versa.
-old-location : storage\mountmgr_change_notify_info.htm
-old-project : storage
-ms.assetid : 3b1bb2be-2abb-414a-bf68-9d06e53c2808
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : MOUNTMGR_CHANGE_NOTIFY_INFO structure [Storage Devices], PMOUNTMGR_CHANGE_NOTIFY_INFO, storage.mountmgr_change_notify_info, mountmgr/MOUNTMGR_CHANGE_NOTIFY_INFO, PMOUNTMGR_CHANGE_NOTIFY_INFO structure pointer [Storage Devices], mountmgr/PMOUNTMGR_CHANGE_NOTIFY_INFO, structs-mntmgr_4d6cf8d3-c3cd-4ff5-8ff0-7fac5946d6a5.xml, *PMOUNTMGR_CHANGE_NOTIFY_INFO, _MOUNTMGR_CHANGE_NOTIFY_INFO, MOUNTMGR_CHANGE_NOTIFY_INFO
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : mountmgr.h
-req.include-header : Mountmgr.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : MOUNTMGR_CHANGE_NOTIFY_INFO, *PMOUNTMGR_CHANGE_NOTIFY_INFO
+UID: NS:mountmgr._MOUNTMGR_CHANGE_NOTIFY_INFO
+title: "_MOUNTMGR_CHANGE_NOTIFY_INFO"
+author: windows-driver-content
+description: The MOUNTMGR_CHANGE_NOTIFY_INFO structure is used by the mount manager to send epic numbers to its clients and vice versa.
+old-location: storage\mountmgr_change_notify_info.htm
+old-project: storage
+ms.assetid: 3b1bb2be-2abb-414a-bf68-9d06e53c2808
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: MOUNTMGR_CHANGE_NOTIFY_INFO structure [Storage Devices], PMOUNTMGR_CHANGE_NOTIFY_INFO, storage.mountmgr_change_notify_info, mountmgr/MOUNTMGR_CHANGE_NOTIFY_INFO, PMOUNTMGR_CHANGE_NOTIFY_INFO structure pointer [Storage Devices], mountmgr/PMOUNTMGR_CHANGE_NOTIFY_INFO, structs-mntmgr_4d6cf8d3-c3cd-4ff5-8ff0-7fac5946d6a5.xml, *PMOUNTMGR_CHANGE_NOTIFY_INFO, _MOUNTMGR_CHANGE_NOTIFY_INFO, MOUNTMGR_CHANGE_NOTIFY_INFO
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: mountmgr.h
+req.include-header: Mountmgr.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	mountmgr.h
+apiname:
+-	MOUNTMGR_CHANGE_NOTIFY_INFO
+product: Windows
+targetos: Windows
+req.typenames: MOUNTMGR_CHANGE_NOTIFY_INFO, *PMOUNTMGR_CHANGE_NOTIFY_INFO
 ---
 
 # _MOUNTMGR_CHANGE_NOTIFY_INFO structure

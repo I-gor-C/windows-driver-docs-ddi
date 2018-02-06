@@ -1,41 +1,46 @@
 ---
-UID : NC:fwpsk.FWPS_CALLOUT_NOTIFY_FN1
-title : FWPS_CALLOUT_NOTIFY_FN1
-author : windows-driver-content
-description : The filter engine calls a callout's notifyFn1 callout function to notify the callout driver about events that are associated with the callout.Note  notifyFn1 is the specific version of notifyFn used in Windows 7 and later.
-old-location : netvista\notifyfn1.htm
-old-project : netvista
-ms.assetid : 3f377049-cc5f-427d-9b09-5e49e4b305c5
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.notifyfn1, notifyFn1 callback function [Network Drivers Starting with Windows Vista], notifyFn1, FWPS_CALLOUT_NOTIFY_FN1, FWPS_CALLOUT_NOTIFY_FN1, fwpsk/notifyFn1, wfp_ref_2_funct_4_callout_0cbdb762-b5f8-4c14-a361-a44589e1d663.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : fwpsk.h
-req.include-header : Fwpsk.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows 7.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : INSTANCE_PARTIAL_INFORMATION, PINSTANCE_PARTIAL_INFORMATION
+UID: NC:fwpsk.FWPS_CALLOUT_NOTIFY_FN1
+title: FWPS_CALLOUT_NOTIFY_FN1
+author: windows-driver-content
+description: The filter engine calls a callout's notifyFn1 callout function to notify the callout driver about events that are associated with the callout.Note  notifyFn1 is the specific version of notifyFn used in Windows 7 and later.
+old-location: netvista\notifyfn1.htm
+old-project: netvista
+ms.assetid: 3f377049-cc5f-427d-9b09-5e49e4b305c5
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.notifyfn1, notifyFn1 callback function [Network Drivers Starting with Windows Vista], notifyFn1, FWPS_CALLOUT_NOTIFY_FN1, FWPS_CALLOUT_NOTIFY_FN1, fwpsk/notifyFn1, wfp_ref_2_funct_4_callout_0cbdb762-b5f8-4c14-a361-a44589e1d663.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: fwpsk.h
+req.include-header: Fwpsk.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows 7.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Fwpsk.h
+apiname:
+-	notifyFn1
+product: Windows
+targetos: Windows
+req.typenames: INSTANCE_PARTIAL_INFORMATION, PINSTANCE_PARTIAL_INFORMATION
 ---
 
 

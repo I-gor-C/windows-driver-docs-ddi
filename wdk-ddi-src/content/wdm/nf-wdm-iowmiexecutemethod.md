@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.IoWMIExecuteMethod
-title : IoWMIExecuteMethod function
-author : windows-driver-content
-description : The IoWMIExecuteMethod routine runs a WMI class method on the specified WMI data block instance.
-old-location : kernel\iowmiexecutemethod.htm
-old-project : kernel
-ms.assetid : 462165e5-2823-4559-bd3e-18850d442cdb
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/IoWMIExecuteMethod, k104_9625e06a-3c5a-4950-80be-cc3fb536453c.xml, IoWMIExecuteMethod, kernel.iowmiexecutemethod, IoWMIExecuteMethod routine [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows XP and later versions of the Windows operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.IoWMIExecuteMethod
+title: IoWMIExecuteMethod function
+author: windows-driver-content
+description: The IoWMIExecuteMethod routine runs a WMI class method on the specified WMI data block instance.
+old-location: kernel\iowmiexecutemethod.htm
+old-project: kernel
+ms.assetid: 462165e5-2823-4559-bd3e-18850d442cdb
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/IoWMIExecuteMethod, k104_9625e06a-3c5a-4950-80be-cc3fb536453c.xml, IoWMIExecuteMethod, kernel.iowmiexecutemethod, IoWMIExecuteMethod routine [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows XP and later versions of the Windows operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoWMIExecuteMethod
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

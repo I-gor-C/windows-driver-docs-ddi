@@ -1,41 +1,46 @@
 ---
-UID : NS:ntdddisk._PARTITION_INFORMATION_MBR
-title : "_PARTITION_INFORMATION_MBR"
-author : windows-driver-content
-description : PARTITION_INFORMATION_MBR contains information for a Master Boot Record partition that is not held in common with a GUID Partition Table partition.
-old-location : storage\partition_information_mbr.htm
-old-project : storage
-ms.assetid : 846f3a1c-ee0a-42d2-bdf1-7bf09406c955
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : PPARTITION_INFORMATION_MBR, PARTITION_INFORMATION_MBR, PPARTITION_INFORMATION_MBR structure pointer [Storage Devices], ntdddisk/PPARTITION_INFORMATION_MBR, PARTITION_INFORMATION_MBR structure [Storage Devices], *PPARTITION_INFORMATION_MBR, _PARTITION_INFORMATION_MBR, storage.partition_information_mbr, ntdddisk/PARTITION_INFORMATION_MBR, structs-disk_c386ea16-c8d7-4a5e-8e61-d8e8ddead136.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntdddisk.h
-req.include-header : Ntddk.h, Ntdddisk.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPARTITION_INFORMATION_MBR, PARTITION_INFORMATION_MBR"
+UID: NS:ntdddisk._PARTITION_INFORMATION_MBR
+title: "_PARTITION_INFORMATION_MBR"
+author: windows-driver-content
+description: PARTITION_INFORMATION_MBR contains information for a Master Boot Record partition that is not held in common with a GUID Partition Table partition.
+old-location: storage\partition_information_mbr.htm
+old-project: storage
+ms.assetid: 846f3a1c-ee0a-42d2-bdf1-7bf09406c955
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: PPARTITION_INFORMATION_MBR, PARTITION_INFORMATION_MBR, PPARTITION_INFORMATION_MBR structure pointer [Storage Devices], ntdddisk/PPARTITION_INFORMATION_MBR, PARTITION_INFORMATION_MBR structure [Storage Devices], *PPARTITION_INFORMATION_MBR, _PARTITION_INFORMATION_MBR, storage.partition_information_mbr, ntdddisk/PARTITION_INFORMATION_MBR, structs-disk_c386ea16-c8d7-4a5e-8e61-d8e8ddead136.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntdddisk.h
+req.include-header: Ntddk.h, Ntdddisk.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntdddisk.h
+apiname:
+-	PARTITION_INFORMATION_MBR
+product: Windows
+targetos: Windows
+req.typenames: "*PPARTITION_INFORMATION_MBR, PARTITION_INFORMATION_MBR"
 ---
 
 # _PARTITION_INFORMATION_MBR structure

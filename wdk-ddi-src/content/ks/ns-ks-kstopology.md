@@ -1,41 +1,46 @@
 ---
-UID : NS:ks.KSTOPOLOGY
-title : KSTOPOLOGY
-author : windows-driver-content
-description : The KSTOPOLOGY structure describes the topology of pins and nodes.
-old-location : stream\kstopology.htm
-old-project : stream
-ms.assetid : 8dbd37ed-5d71-43bd-a3ca-caa5b0d08075
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KSTOPOLOGY structure [Streaming Media Devices], *PKSTOPOLOGY, ks/KSTOPOLOGY, KSTOPOLOGY, PKSTOPOLOGY, stream.kstopology, PKSTOPOLOGY structure pointer [Streaming Media Devices], ks-struct_1d55c5f9-18d4-43d0-9fe9-291134e84115.xml, ks/PKSTOPOLOGY
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KSTOPOLOGY, *PKSTOPOLOGY
+UID: NS:ks.KSTOPOLOGY
+title: KSTOPOLOGY
+author: windows-driver-content
+description: The KSTOPOLOGY structure describes the topology of pins and nodes.
+old-location: stream\kstopology.htm
+old-project: stream
+ms.assetid: 8dbd37ed-5d71-43bd-a3ca-caa5b0d08075
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KSTOPOLOGY structure [Streaming Media Devices], *PKSTOPOLOGY, ks/KSTOPOLOGY, KSTOPOLOGY, PKSTOPOLOGY, stream.kstopology, PKSTOPOLOGY structure pointer [Streaming Media Devices], ks-struct_1d55c5f9-18d4-43d0-9fe9-291134e84115.xml, ks/PKSTOPOLOGY
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	KSTOPOLOGY
+product: Windows
+targetos: Windows
+req.typenames: KSTOPOLOGY, *PKSTOPOLOGY
 ---
 
 # KSTOPOLOGY structure

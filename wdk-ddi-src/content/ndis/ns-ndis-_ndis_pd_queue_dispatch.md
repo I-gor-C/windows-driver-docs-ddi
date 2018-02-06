@@ -1,41 +1,46 @@
 ---
-UID : NS:ndis._NDIS_PD_QUEUE_DISPATCH
-title : "_NDIS_PD_QUEUE_DISPATCH"
-author : windows-driver-content
-description : This structure contains a provider's driver routines for receive or transmit queues.
-old-location : netvista\ndis_pd_queue_dispatch.htm
-old-project : netvista
-ms.assetid : F9738CF9-AAC8-413C-A890-D6FAD7EEFD54
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : ndis/NDIS_PD_QUEUE_DISPATCH, ndis/PNDIS_PD_QUEUE_DISPATCH, NDIS_PD_QUEUE_DISPATCH, PNDIS_PD_QUEUE_DISPATCH structure pointer [Network Drivers Starting with Windows Vista], PNDIS_PD_QUEUE_DISPATCH, _NDIS_PD_QUEUE_DISPATCH, netvista.ndis_pd_queue_dispatch, NDIS_PD_QUEUE_DISPATCH structure [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndis.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : See Remarks section
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_PD_QUEUE_DISPATCH
+UID: NS:ndis._NDIS_PD_QUEUE_DISPATCH
+title: "_NDIS_PD_QUEUE_DISPATCH"
+author: windows-driver-content
+description: This structure contains a provider's driver routines for receive or transmit queues.
+old-location: netvista\ndis_pd_queue_dispatch.htm
+old-project: netvista
+ms.assetid: F9738CF9-AAC8-413C-A890-D6FAD7EEFD54
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: ndis/NDIS_PD_QUEUE_DISPATCH, ndis/PNDIS_PD_QUEUE_DISPATCH, NDIS_PD_QUEUE_DISPATCH, PNDIS_PD_QUEUE_DISPATCH structure pointer [Network Drivers Starting with Windows Vista], PNDIS_PD_QUEUE_DISPATCH, _NDIS_PD_QUEUE_DISPATCH, netvista.ndis_pd_queue_dispatch, NDIS_PD_QUEUE_DISPATCH structure [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndis.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: See Remarks section
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ndis.h
+apiname:
+-	NDIS_PD_QUEUE_DISPATCH
+product: Windows
+targetos: Windows
+req.typenames: NDIS_PD_QUEUE_DISPATCH
 ---
 
 # _NDIS_PD_QUEUE_DISPATCH structure

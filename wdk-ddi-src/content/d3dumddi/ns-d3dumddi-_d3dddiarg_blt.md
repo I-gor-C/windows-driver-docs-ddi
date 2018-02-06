@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._D3DDDIARG_BLT
-title : "_D3DDDIARG_BLT"
-author : windows-driver-content
-description : The D3DDDIARG_BLT structure describes the parameters of a bit-block transfer (bitblt).
-old-location : display\d3dddiarg_blt.htm
-old-project : display
-ms.assetid : 9663d0fe-7397-49d7-b860-e466a9311aca
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.d3dddiarg_blt, UMDisplayDriver_param_Structs_1c7d23e1-c05e-42b6-802e-4a69a80006c8.xml, _D3DDDIARG_BLT, D3DDDIARG_BLT structure [Display Devices], D3DDDIARG_BLT, d3dumddi/D3DDDIARG_BLT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDIARG_BLT
+UID: NS:d3dumddi._D3DDDIARG_BLT
+title: "_D3DDDIARG_BLT"
+author: windows-driver-content
+description: The D3DDDIARG_BLT structure describes the parameters of a bit-block transfer (bitblt).
+old-location: display\d3dddiarg_blt.htm
+old-project: display
+ms.assetid: 9663d0fe-7397-49d7-b860-e466a9311aca
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.d3dddiarg_blt, UMDisplayDriver_param_Structs_1c7d23e1-c05e-42b6-802e-4a69a80006c8.xml, _D3DDDIARG_BLT, D3DDDIARG_BLT structure [Display Devices], D3DDDIARG_BLT, d3dumddi/D3DDDIARG_BLT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	D3DDDIARG_BLT
+product: Windows
+targetos: Windows
+req.typenames: D3DDDIARG_BLT
 ---
 
 # _D3DDDIARG_BLT structure

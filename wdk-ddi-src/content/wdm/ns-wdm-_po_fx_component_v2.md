@@ -1,42 +1,47 @@
 ---
-UID : NS:wdm._PO_FX_COMPONENT_V2
-title : "_PO_FX_COMPONENT_V2"
-author : windows-driver-content
-description : The PO_FX_COMPONENT structure describes the power state attributes of a component in a device.
-old-location : kernel\po_fx_component.htm
-old-project : kernel
-ms.assetid : 4ACCA041-C638-4124-AFC1-3F34671C9EF8
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : PO_FX_COMPONENT, wdm/PO_FX_COMPONENT_V2, _PO_FX_COMPONENT_V2, wdm/PO_FX_COMPONENT, kernel.po_fx_component, PO_FX_COMPONENT_V2 structure [Kernel-Mode Driver Architecture], PO_FX_COMPONENT_V2, PO_FX_COMPONENT structure [Kernel-Mode Driver Architecture], PO_FX_COMPONENT_V1, PPO_FX_COMPONENT_V2 structure pointer [Kernel-Mode Driver Architecture], _PO_FX_COMPONENT_V1, *PPO_FX_COMPONENT_V1, PPO_FX_COMPONENT_V2, *PPO_FX_COMPONENT, *PPO_FX_COMPONENT_V2, wdm/PPO_FX_COMPONENT_V2
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPO_FX_COMPONENT_V2, PO_FX_COMPONENT_V2"
-req.product : Windows 10 or later.
+UID: NS:wdm._PO_FX_COMPONENT_V2
+title: "_PO_FX_COMPONENT_V2"
+author: windows-driver-content
+description: The PO_FX_COMPONENT structure describes the power state attributes of a component in a device.
+old-location: kernel\po_fx_component.htm
+old-project: kernel
+ms.assetid: 4ACCA041-C638-4124-AFC1-3F34671C9EF8
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: PO_FX_COMPONENT, wdm/PO_FX_COMPONENT_V2, _PO_FX_COMPONENT_V2, wdm/PO_FX_COMPONENT, kernel.po_fx_component, PO_FX_COMPONENT_V2 structure [Kernel-Mode Driver Architecture], PO_FX_COMPONENT_V2, PO_FX_COMPONENT structure [Kernel-Mode Driver Architecture], PO_FX_COMPONENT_V1, PPO_FX_COMPONENT_V2 structure pointer [Kernel-Mode Driver Architecture], _PO_FX_COMPONENT_V1, *PPO_FX_COMPONENT_V1, PPO_FX_COMPONENT_V2, *PPO_FX_COMPONENT, *PPO_FX_COMPONENT_V2, wdm/PPO_FX_COMPONENT_V2
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	PO_FX_COMPONENT_V2
+product: Windows
+targetos: Windows
+req.typenames: "*PPO_FX_COMPONENT_V2, PO_FX_COMPONENT_V2"
+req.product: Windows 10 or later.
 ---
 
 # _PO_FX_COMPONENT_V2 structure

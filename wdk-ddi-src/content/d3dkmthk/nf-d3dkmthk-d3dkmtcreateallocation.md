@@ -1,41 +1,49 @@
 ---
-UID : NF:d3dkmthk.D3DKMTCreateAllocation
-title : D3DKMTCreateAllocation function
-author : windows-driver-content
-description : The D3DKMTCreateAllocation function creates allocations of system or video memory.
-old-location : display\d3dkmtcreateallocation.htm
-old-project : display
-ms.assetid : 1374ad6f-3a79-4db1-acc9-28c8bd9aa93d
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DKMTCreateAllocation, d3dkmthk/D3DKMTCreateAllocation, display.d3dkmtcreateallocation, D3DKMTCreateAllocation function [Display Devices], PFND3DKMT_CREATEALLOCATION, OpenGL_Functions_dfd80d2b-c3c7-4aca-833c-153090153b96.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Gdi32.lib
-req.dll : Gdi32.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_DRIVERVERSION
+UID: NF:d3dkmthk.D3DKMTCreateAllocation
+title: D3DKMTCreateAllocation function
+author: windows-driver-content
+description: The D3DKMTCreateAllocation function creates allocations of system or video memory.
+old-location: display\d3dkmtcreateallocation.htm
+old-project: display
+ms.assetid: 1374ad6f-3a79-4db1-acc9-28c8bd9aa93d
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DKMTCreateAllocation, d3dkmthk/D3DKMTCreateAllocation, display.d3dkmtcreateallocation, D3DKMTCreateAllocation function [Display Devices], PFND3DKMT_CREATEALLOCATION, OpenGL_Functions_dfd80d2b-c3c7-4aca-833c-153090153b96.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Gdi32.lib
+req.dll: Gdi32.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Gdi32.dll
+-	API-MS-Win-dx-d3dkmt-l1-1-0.dll
+-	API-MS-Win-dx-d3dkmt-l1-1-1.dll
+-	API-MS-Win-DX-D3DKMT-L1-1-2.dll
+apiname:
+-	D3DKMTCreateAllocation
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_DRIVERVERSION
 ---
 
 

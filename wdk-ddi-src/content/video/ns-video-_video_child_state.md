@@ -1,42 +1,47 @@
 ---
-UID : NS:video._VIDEO_CHILD_STATE
-title : "_VIDEO_CHILD_STATE"
-author : windows-driver-content
-description : The VIDEO_CHILD_STATE structure contains information about a child device and the state into which it should be placed.
-old-location : display\video_child_state.htm
-old-project : display
-ms.assetid : 69a2eebb-9294-4fc1-871a-587792f84f35
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : PVIDEO_CHILD_STATE structure pointer [Display Devices], PVIDEO_CHILD_STATE, display.video_child_state, video/PVIDEO_CHILD_STATE, _VIDEO_CHILD_STATE, video/VIDEO_CHILD_STATE, *PVIDEO_CHILD_STATE, VIDEO_CHILD_STATE structure [Display Devices], VIDEO_CHILD_STATE, Video_Structs_330b2d6d-13da-4949-9827-73e7829931b6.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_CHILD_STATE, *PVIDEO_CHILD_STATE
-req.product : Windows 10 or later.
+UID: NS:video._VIDEO_CHILD_STATE
+title: "_VIDEO_CHILD_STATE"
+author: windows-driver-content
+description: The VIDEO_CHILD_STATE structure contains information about a child device and the state into which it should be placed.
+old-location: display\video_child_state.htm
+old-project: display
+ms.assetid: 69a2eebb-9294-4fc1-871a-587792f84f35
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: PVIDEO_CHILD_STATE structure pointer [Display Devices], PVIDEO_CHILD_STATE, display.video_child_state, video/PVIDEO_CHILD_STATE, _VIDEO_CHILD_STATE, video/VIDEO_CHILD_STATE, *PVIDEO_CHILD_STATE, VIDEO_CHILD_STATE structure [Display Devices], VIDEO_CHILD_STATE, Video_Structs_330b2d6d-13da-4949-9827-73e7829931b6.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	video.h
+apiname:
+-	VIDEO_CHILD_STATE
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_CHILD_STATE, *PVIDEO_CHILD_STATE
+req.product: Windows 10 or later.
 ---
 
 # _VIDEO_CHILD_STATE structure

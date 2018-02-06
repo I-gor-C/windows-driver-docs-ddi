@@ -1,42 +1,47 @@
 ---
-UID : NF:wia_lh.IWiaTransferCallback.GetNextStream
-title : IWiaTransferCallback::GetNextStream method
-author : windows-driver-content
-description : The IWiaTransferCallback::GetNextStream method is implemented by an image processing filter.
-old-location : image\iwiatransfercallback_getnextstream.htm
-old-project : image
-ms.assetid : 025c29d3-1167-4aa3-8399-01dab5729267
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : GetNextStream method [Imaging Devices], IWiaTransferCallback interface, IWiaTransferCallback::GetNextStream, IWiaTransferCallback, GetNextStream, image.iwiatransfercallback_getnextstream, wia_lh/IWiaTransferCallback::GetNextStream, GetNextStream method [Imaging Devices], IWiaTransferCallback interface [Imaging Devices], GetNextStream method, IWiaTransfercallback_155c3198-1ed9-46a9-b6d8-0d6029bf0803.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wia_lh.h
-req.include-header : Wia.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wia_lh.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : BMP_IMAGE_INFO, *PBMP_IMAGE_INFO
-req.product : Windows 10 or later.
+UID: NF:wia_lh.IWiaTransferCallback.GetNextStream
+title: IWiaTransferCallback::GetNextStream method
+author: windows-driver-content
+description: The IWiaTransferCallback::GetNextStream method is implemented by an image processing filter.
+old-location: image\iwiatransfercallback_getnextstream.htm
+old-project: image
+ms.assetid: 025c29d3-1167-4aa3-8399-01dab5729267
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: GetNextStream method [Imaging Devices], IWiaTransferCallback interface, IWiaTransferCallback::GetNextStream, IWiaTransferCallback, GetNextStream, image.iwiatransfercallback_getnextstream, wia_lh/IWiaTransferCallback::GetNextStream, GetNextStream method [Imaging Devices], IWiaTransferCallback interface [Imaging Devices], GetNextStream method, IWiaTransfercallback_155c3198-1ed9-46a9-b6d8-0d6029bf0803.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wia_lh.h
+req.include-header: Wia.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wia_lh.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	wia_lh.h
+apiname:
+-	IWiaTransferCallback.GetNextStream
+product: Windows
+targetos: Windows
+req.typenames: BMP_IMAGE_INFO, *PBMP_IMAGE_INFO
+req.product: Windows 10 or later.
 ---
 
 

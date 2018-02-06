@@ -1,42 +1,47 @@
 ---
-UID : NC:wdfwmi.EVT_WDF_WMI_INSTANCE_SET_INSTANCE
-title : EVT_WDF_WMI_INSTANCE_SET_INSTANCE
-author : windows-driver-content
-description : A driver's EvtWmiInstanceSetInstance callback function sets all of a WMI data provider's instance data to values that a WMI client supplies.
-old-location : wdf\evtwmiinstancesetinstance.htm
-old-project : wdf
-ms.assetid : defd33c5-90ae-40c9-9123-7c3de2c77f35
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.evtwmiinstancesetinstance, EvtWmiInstanceSetInstance callback function, EvtWmiInstanceSetInstance, EVT_WDF_WMI_INSTANCE_SET_INSTANCE, EVT_WDF_WMI_INSTANCE_SET_INSTANCE, wdfwmi/EvtWmiInstanceSetInstance, DFWMIRef_28837d36-7a7e-4468-adbc-826bf4c75ef0.xml, kmdf.evtwmiinstancesetinstance
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdfwmi.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_USB_REQUEST_COMPLETION_PARAMS, *PWDF_USB_REQUEST_COMPLETION_PARAMS
-req.product : Windows 10 or later.
+UID: NC:wdfwmi.EVT_WDF_WMI_INSTANCE_SET_INSTANCE
+title: EVT_WDF_WMI_INSTANCE_SET_INSTANCE
+author: windows-driver-content
+description: A driver's EvtWmiInstanceSetInstance callback function sets all of a WMI data provider's instance data to values that a WMI client supplies.
+old-location: wdf\evtwmiinstancesetinstance.htm
+old-project: wdf
+ms.assetid: defd33c5-90ae-40c9-9123-7c3de2c77f35
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.evtwmiinstancesetinstance, EvtWmiInstanceSetInstance callback function, EvtWmiInstanceSetInstance, EVT_WDF_WMI_INSTANCE_SET_INSTANCE, EVT_WDF_WMI_INSTANCE_SET_INSTANCE, wdfwmi/EvtWmiInstanceSetInstance, DFWMIRef_28837d36-7a7e-4468-adbc-826bf4c75ef0.xml, kmdf.evtwmiinstancesetinstance
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdfwmi.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	WdfWMI.h
+apiname:
+-	EvtWmiInstanceSetInstance
+product: Windows
+targetos: Windows
+req.typenames: WDF_USB_REQUEST_COMPLETION_PARAMS, *PWDF_USB_REQUEST_COMPLETION_PARAMS
+req.product: Windows 10 or later.
 ---
 
 

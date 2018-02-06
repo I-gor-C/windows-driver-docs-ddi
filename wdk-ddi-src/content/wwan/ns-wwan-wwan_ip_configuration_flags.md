@@ -1,42 +1,47 @@
 ---
-UID : NS:wwan.WWAN_IP_CONFIGURATION_FLAGS
-title : WWAN_IP_CONFIGURATION_FLAGS
-author : windows-driver-content
-description : The WWAN_IP_CONFIGURATION_FLAGS structure represents flags that describe the availability of the IP address, gateway, DNS server, and/or MTU information of a PDP context.
-old-location : netvista\wwan_ip_configuration_flags.htm
-old-project : netvista
-ms.assetid : 5157F48F-E1D3-4B22-BBB0-0FC7965C794B
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : WWAN_IP_CONFIGURATION_FLAGS union [Network Drivers Starting with Windows Vista], wwan/WWAN_IP_CONFIGURATION_FLAGS, WWAN_IP_CONFIGURATION_FLAGS, netvista.wwan_ip_configuration_flags
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wwan.h
-req.include-header : Wwan.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 8.1 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WWAN_IP_CONFIGURATION_FLAGS
-req.product : Windows 10 or later.
+UID: NS:wwan.WWAN_IP_CONFIGURATION_FLAGS
+title: WWAN_IP_CONFIGURATION_FLAGS
+author: windows-driver-content
+description: The WWAN_IP_CONFIGURATION_FLAGS structure represents flags that describe the availability of the IP address, gateway, DNS server, and/or MTU information of a PDP context.
+old-location: netvista\wwan_ip_configuration_flags.htm
+old-project: netvista
+ms.assetid: 5157F48F-E1D3-4B22-BBB0-0FC7965C794B
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: WWAN_IP_CONFIGURATION_FLAGS union [Network Drivers Starting with Windows Vista], wwan/WWAN_IP_CONFIGURATION_FLAGS, WWAN_IP_CONFIGURATION_FLAGS, netvista.wwan_ip_configuration_flags
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wwan.h
+req.include-header: Wwan.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 8.1 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wwan.h
+apiname:
+-	WWAN_IP_CONFIGURATION_FLAGS
+product: Windows
+targetos: Windows
+req.typenames: WWAN_IP_CONFIGURATION_FLAGS
+req.product: Windows 10 or later.
 ---
 
 # WWAN_IP_CONFIGURATION_FLAGS structure

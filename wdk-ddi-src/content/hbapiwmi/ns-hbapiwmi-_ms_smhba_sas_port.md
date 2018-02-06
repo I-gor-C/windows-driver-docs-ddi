@@ -1,41 +1,46 @@
 ---
-UID : NS:hbapiwmi._MS_SMHBA_SAS_Port
-title : "_MS_SMHBA_SAS_Port"
-author : windows-driver-content
-description : The MS_SMHBA_SAS_Port structure is used to report the SAS port information.
-old-location : storage\ms_smhba_sas_port.htm
-old-project : storage
-ms.assetid : d294d97a-e6b2-4ab3-bebf-e545aa2f862d
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : "_MS_SMHBA_SAS_Port, PMS_SMHBA_SAS_Port, hbapiwmi/PMS_SMHBA_SAS_Port, PMS_SMHBA_SAS_Port structure pointer [Storage Devices], storage.ms_smhba_sas_port, structs-Fibre_c7678d06-756a-4733-bdff-35571ff2c571.xml, *PMS_SMHBA_SAS_Port, MS_SMHBA_SAS_Port structure [Storage Devices], hbapiwmi/MS_SMHBA_SAS_Port, MS_SMHBA_SAS_Port"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : hbapiwmi.h
-req.include-header : Hbapiwmi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : MS_SMHBA_SAS_Port, *PMS_SMHBA_SAS_Port
+UID: NS:hbapiwmi._MS_SMHBA_SAS_Port
+title: "_MS_SMHBA_SAS_Port"
+author: windows-driver-content
+description: The MS_SMHBA_SAS_Port structure is used to report the SAS port information.
+old-location: storage\ms_smhba_sas_port.htm
+old-project: storage
+ms.assetid: d294d97a-e6b2-4ab3-bebf-e545aa2f862d
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: "_MS_SMHBA_SAS_Port, PMS_SMHBA_SAS_Port, hbapiwmi/PMS_SMHBA_SAS_Port, PMS_SMHBA_SAS_Port structure pointer [Storage Devices], storage.ms_smhba_sas_port, structs-Fibre_c7678d06-756a-4733-bdff-35571ff2c571.xml, *PMS_SMHBA_SAS_Port, MS_SMHBA_SAS_Port structure [Storage Devices], hbapiwmi/MS_SMHBA_SAS_Port, MS_SMHBA_SAS_Port"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: hbapiwmi.h
+req.include-header: Hbapiwmi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hbapiwmi.h
+apiname:
+-	MS_SMHBA_SAS_Port
+product: Windows
+targetos: Windows
+req.typenames: MS_SMHBA_SAS_Port, *PMS_SMHBA_SAS_Port
 ---
 
 # _MS_SMHBA_SAS_Port structure

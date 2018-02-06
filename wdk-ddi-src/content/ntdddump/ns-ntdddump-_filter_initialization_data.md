@@ -1,41 +1,46 @@
 ---
-UID : NS:ntdddump._FILTER_INITIALIZATION_DATA
-title : "_FILTER_INITIALIZATION_DATA"
-author : windows-driver-content
-description : The filter driver fills in a FILTER_INITIALIZATION_DATA structure and returns it to the crash dump driver.
-old-location : storage\filter_initialization_data.htm
-old-project : storage
-ms.assetid : 71f9d0c2-ffc9-4fe1-ae95-f38a1d1e82df
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : DUMP_FILTER_FLAG_SYSTEM_SUPPORT_READ, ntdddump/FILTER_INITIALIZATION_DATA, _FILTER_INITIALIZATION_DATA, storage.filter_initialization_data, PFILTER_INITIALIZATION_DATA, DUMP_FILTER_MAJOR_VERSION, FILTER_INITIALIZATION_DATA structure [Storage Devices], FILTER_INITIALIZATION_DATA, DUMP_FILTER_MAJOR_VERSION_1, DUMP_FILTER_CRITICAL, structs-filter_5efcc842-8111-4808-9b70-14d63dd91ba5.xml, *PFILTER_INITIALIZATION_DATA, PFILTER_INITIALIZATION_DATA structure pointer [Storage Devices], ntdddump/PFILTER_INITIALIZATION_DATA
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntdddump.h
-req.include-header : Ntdddump.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows Vista and Windows Server 2008.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PFILTER_INITIALIZATION_DATA, FILTER_INITIALIZATION_DATA"
+UID: NS:ntdddump._FILTER_INITIALIZATION_DATA
+title: "_FILTER_INITIALIZATION_DATA"
+author: windows-driver-content
+description: The filter driver fills in a FILTER_INITIALIZATION_DATA structure and returns it to the crash dump driver.
+old-location: storage\filter_initialization_data.htm
+old-project: storage
+ms.assetid: 71f9d0c2-ffc9-4fe1-ae95-f38a1d1e82df
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: DUMP_FILTER_FLAG_SYSTEM_SUPPORT_READ, ntdddump/FILTER_INITIALIZATION_DATA, _FILTER_INITIALIZATION_DATA, storage.filter_initialization_data, PFILTER_INITIALIZATION_DATA, DUMP_FILTER_MAJOR_VERSION, FILTER_INITIALIZATION_DATA structure [Storage Devices], FILTER_INITIALIZATION_DATA, DUMP_FILTER_MAJOR_VERSION_1, DUMP_FILTER_CRITICAL, structs-filter_5efcc842-8111-4808-9b70-14d63dd91ba5.xml, *PFILTER_INITIALIZATION_DATA, PFILTER_INITIALIZATION_DATA structure pointer [Storage Devices], ntdddump/PFILTER_INITIALIZATION_DATA
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntdddump.h
+req.include-header: Ntdddump.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows Vista and Windows Server 2008.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntdddump.h
+apiname:
+-	FILTER_INITIALIZATION_DATA
+product: Windows
+targetos: Windows
+req.typenames: "*PFILTER_INITIALIZATION_DATA, FILTER_INITIALIZATION_DATA"
 ---
 
 # _FILTER_INITIALIZATION_DATA structure

@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dukmdt._D3DDDI_SYNCHRONIZATIONOBJECT_FLAGS
-title : "_D3DDDI_SYNCHRONIZATIONOBJECT_FLAGS"
-author : windows-driver-content
-description : Identifies attributes of a synchronization object.
-old-location : display\d3dddi_synchronizationobject_flags.htm
-old-project : display
-ms.assetid : 57e5ea18-ccdd-40a7-9ff5-4d6b94908e7c
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : "_D3DDDI_SYNCHRONIZATIONOBJECT_FLAGS, D3DDDI_SYNCHRONIZATIONOBJECT_FLAGS, d3dukmdt/D3DDDI_SYNCHRONIZATIONOBJECT_FLAGS, D3D_other_Structs_3d266c5b-53c9-47d1-abe9-f492d05660a4.xml, D3DDDI_SYNCHRONIZATIONOBJECT_FLAGS structure [Display Devices], display.d3dddi_synchronizationobject_flags"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dukmdt.h
-req.include-header : D3dumddi.h, D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : D3DDDI_SYNCHRONIZATIONOBJECT_FLAGS is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDI_SYNCHRONIZATIONOBJECT_FLAGS
+UID: NS:d3dukmdt._D3DDDI_SYNCHRONIZATIONOBJECT_FLAGS
+title: "_D3DDDI_SYNCHRONIZATIONOBJECT_FLAGS"
+author: windows-driver-content
+description: Identifies attributes of a synchronization object.
+old-location: display\d3dddi_synchronizationobject_flags.htm
+old-project: display
+ms.assetid: 57e5ea18-ccdd-40a7-9ff5-4d6b94908e7c
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: "_D3DDDI_SYNCHRONIZATIONOBJECT_FLAGS, D3DDDI_SYNCHRONIZATIONOBJECT_FLAGS, d3dukmdt/D3DDDI_SYNCHRONIZATIONOBJECT_FLAGS, D3D_other_Structs_3d266c5b-53c9-47d1-abe9-f492d05660a4.xml, D3DDDI_SYNCHRONIZATIONOBJECT_FLAGS structure [Display Devices], display.d3dddi_synchronizationobject_flags"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dukmdt.h
+req.include-header: D3dumddi.h, D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: D3DDDI_SYNCHRONIZATIONOBJECT_FLAGS is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dukmdt.h
+apiname:
+-	D3DDDI_SYNCHRONIZATIONOBJECT_FLAGS
+product: Windows
+targetos: Windows
+req.typenames: D3DDDI_SYNCHRONIZATIONOBJECT_FLAGS
 ---
 
 # _D3DDDI_SYNCHRONIZATIONOBJECT_FLAGS structure

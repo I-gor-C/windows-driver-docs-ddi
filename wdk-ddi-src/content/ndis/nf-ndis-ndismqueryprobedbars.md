@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisMQueryProbedBars
-title : NdisMQueryProbedBars function
-author : windows-driver-content
-description : A miniport driver calls the NdisMQueryProbedBars function to obtain the values of a network adapter's PCI Express (PCIe) Base Address Registers (BARs).
-old-location : netvista\ndismqueryprobedbars.htm
-old-project : netvista
-ms.assetid : 39deba08-3ff0-4037-b530-0cb4a01fc758
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.ndismqueryprobedbars, ndis/NdisMQueryProbedBars, NdisMQueryProbedBars function [Network Drivers Starting with Windows Vista], NdisMQueryProbedBars
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported in NDIS 6.30 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisMQueryProbedBars
+title: NdisMQueryProbedBars function
+author: windows-driver-content
+description: A miniport driver calls the NdisMQueryProbedBars function to obtain the values of a network adapter's PCI Express (PCIe) Base Address Registers (BARs).
+old-location: netvista\ndismqueryprobedbars.htm
+old-project: netvista
+ms.assetid: 39deba08-3ff0-4037-b530-0cb4a01fc758
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.ndismqueryprobedbars, ndis/NdisMQueryProbedBars, NdisMQueryProbedBars function [Network Drivers Starting with Windows Vista], NdisMQueryProbedBars
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported in NDIS 6.30 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisMQueryProbedBars
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

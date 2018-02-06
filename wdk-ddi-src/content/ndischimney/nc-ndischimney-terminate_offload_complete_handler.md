@@ -1,41 +1,46 @@
 ---
-UID : NC:ndischimney.TERMINATE_OFFLOAD_COMPLETE_HANDLER
-title : TERMINATE_OFFLOAD_COMPLETE_HANDLER
-author : windows-driver-content
-description : NDIS calls a protocol or intermediate driver's ProtocolTerminateOffloadComplete function to complete a terminate offload operation that the driver previously initiated by calling the NdisTerminateOffload function.
-old-location : netvista\protocolterminateoffloadcomplete.htm
-old-project : netvista
-ms.assetid : 614d36e8-38ac-49a7-8711-7a6c6646309c
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.protocolterminateoffloadcomplete, ProtocolTerminateOffloadComplete callback function [Network Drivers Starting with Windows Vista], ProtocolTerminateOffloadComplete, TERMINATE_OFFLOAD_COMPLETE_HANDLER, TERMINATE_OFFLOAD_COMPLETE_HANDLER, ndischimney/ProtocolTerminateOffloadComplete, tcp_chim_protocol_func_77bcd97e-dea4-41e4-aae5-3aef1a616a45.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ndischimney.h
-req.include-header : Ndischimney.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PD_BUFFER_VIRTUAL_SUBNET_INFO
+UID: NC:ndischimney.TERMINATE_OFFLOAD_COMPLETE_HANDLER
+title: TERMINATE_OFFLOAD_COMPLETE_HANDLER
+author: windows-driver-content
+description: NDIS calls a protocol or intermediate driver's ProtocolTerminateOffloadComplete function to complete a terminate offload operation that the driver previously initiated by calling the NdisTerminateOffload function.
+old-location: netvista\protocolterminateoffloadcomplete.htm
+old-project: netvista
+ms.assetid: 614d36e8-38ac-49a7-8711-7a6c6646309c
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.protocolterminateoffloadcomplete, ProtocolTerminateOffloadComplete callback function [Network Drivers Starting with Windows Vista], ProtocolTerminateOffloadComplete, TERMINATE_OFFLOAD_COMPLETE_HANDLER, TERMINATE_OFFLOAD_COMPLETE_HANDLER, ndischimney/ProtocolTerminateOffloadComplete, tcp_chim_protocol_func_77bcd97e-dea4-41e4-aae5-3aef1a616a45.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ndischimney.h
+req.include-header: Ndischimney.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ndischimney.h
+apiname:
+-	ProtocolTerminateOffloadComplete
+product: Windows
+targetos: Windows
+req.typenames: PD_BUFFER_VIRTUAL_SUBNET_INFO
 ---
 
 

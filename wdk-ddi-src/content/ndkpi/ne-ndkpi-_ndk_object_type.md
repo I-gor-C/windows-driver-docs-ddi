@@ -1,41 +1,46 @@
 ---
-UID : NE:ndkpi._NDK_OBJECT_TYPE
-title : "_NDK_OBJECT_TYPE"
-author : windows-driver-content
-description : The NDK_OBJECT_TYPE enumeration defines types of Network Direct Kernel (NDK) objects.
-old-location : netvista\ndk_object_type.htm
-old-project : netvista
-ms.assetid : 8CB39DF6-00DA-4480-A44E-62CAF1DB35CE
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NDK_OBJECT_TYPE enumeration [Network Drivers Starting with Windows Vista], NdkObjectTypeConnector, NdkObjectTypeListener, ndkpi/NdkObjectTypeSharedEndpoint, ndkpi/NdkObjectTypeQp, ndkpi/NdkObjectTypePd, NdkObjectTypeSharedEndpoint, ndkpi/NdkObjectTypeListener, netvista.ndk_object_type, ndkpi/NdkObjectTypeMr, NdkObjectTypeMax, ndkpi/NdkObjectTypeAdapter, ndkpi/NDK_OBJECT_TYPE, ndkpi/NdkObjectTypeConnector, ndkpi/NdkObjectTypeMw, NdkObjectTypeSrq, NdkObjectTypeCq, ndkpi/NdkObjectTypeCq, ndkpi/NdkObjectTypeUndefined, NDK_OBJECT_TYPE, NdkObjectTypeUndefined, NdkObjectTypeMr, NdkObjectTypeMw, NdkObjectTypePd, ndkpi/NdkObjectTypeMax, NdkObjectTypeAdapter, NdkObjectTypeQp, ndkpi/NdkObjectTypeSrq, _NDK_OBJECT_TYPE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : ndkpi.h
-req.include-header : Ndkpi.h
-req.target-type : Windows
-req.target-min-winverclnt : None supported,Supported in NDIS 6.30 and later.
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDK_OBJECT_TYPE
+UID: NE:ndkpi._NDK_OBJECT_TYPE
+title: "_NDK_OBJECT_TYPE"
+author: windows-driver-content
+description: The NDK_OBJECT_TYPE enumeration defines types of Network Direct Kernel (NDK) objects.
+old-location: netvista\ndk_object_type.htm
+old-project: netvista
+ms.assetid: 8CB39DF6-00DA-4480-A44E-62CAF1DB35CE
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NDK_OBJECT_TYPE enumeration [Network Drivers Starting with Windows Vista], NdkObjectTypeConnector, NdkObjectTypeListener, ndkpi/NdkObjectTypeSharedEndpoint, ndkpi/NdkObjectTypeQp, ndkpi/NdkObjectTypePd, NdkObjectTypeSharedEndpoint, ndkpi/NdkObjectTypeListener, netvista.ndk_object_type, ndkpi/NdkObjectTypeMr, NdkObjectTypeMax, ndkpi/NdkObjectTypeAdapter, ndkpi/NDK_OBJECT_TYPE, ndkpi/NdkObjectTypeConnector, ndkpi/NdkObjectTypeMw, NdkObjectTypeSrq, NdkObjectTypeCq, ndkpi/NdkObjectTypeCq, ndkpi/NdkObjectTypeUndefined, NDK_OBJECT_TYPE, NdkObjectTypeUndefined, NdkObjectTypeMr, NdkObjectTypeMw, NdkObjectTypePd, ndkpi/NdkObjectTypeMax, NdkObjectTypeAdapter, NdkObjectTypeQp, ndkpi/NdkObjectTypeSrq, _NDK_OBJECT_TYPE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: ndkpi.h
+req.include-header: Ndkpi.h
+req.target-type: Windows
+req.target-min-winverclnt: None supported,Supported in NDIS 6.30 and later.
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndkpi.h
+apiname:
+-	NDK_OBJECT_TYPE
+product: Windows
+targetos: Windows
+req.typenames: NDK_OBJECT_TYPE
 ---
 
 # _NDK_OBJECT_TYPE Enumeration
@@ -62,71 +67,71 @@ typedef enum _NDK_OBJECT_TYPE {
 ## Constants
 
 <table>
-
-<tr>
-<td>NdkObjectTypeAdapter</td>
-<td>Specifies an NDK adapter object (<a href="..\ndkpi\ns-ndkpi-_ndk_adapter.md">NDK_ADAPTER</a>).</td>
-</tr>
-
-<tr>
-<td>NdkObjectTypeConnector</td>
-<td>Specifies an NDK connector object (<a href="..\ndkpi\ns-ndkpi-_ndk_connector.md">NDK_CONNECTOR</a>).</td>
-</tr>
-
-<tr>
-<td>NdkObjectTypeCq</td>
-<td>Specifies an NDK completion queue (CQ) object (<a href="..\ndkpi\ns-ndkpi-_ndk_cq.md">NDK_CQ</a>).</td>
-</tr>
-
-<tr>
-<td>NdkObjectTypeListener</td>
-<td>Specifies an NDK listener object (<a href="..\ndkpi\ns-ndkpi-_ndk_listener.md">NDK_LISTENER</a>).</td>
-</tr>
-
-<tr>
-<td>NdkObjectTypeMax</td>
-<td>The maximum value for this enumeration. This value might change in future versions of the header files and binaries.</td>
-</tr>
-
-<tr>
-<td>NdkObjectTypeMr</td>
-<td>Specifies an NDK memory region (MR) object (<a href="..\ndkpi\ns-ndkpi-_ndk_mr.md">NDK_MR</a>).</td>
-</tr>
-
-<tr>
-<td>NdkObjectTypeMw</td>
-<td>Specifies an NDK memory window (MW) object (<a href="..\ndkpi\ns-ndkpi-_ndk_mw.md">NDK_MW</a>).</td>
-</tr>
-
-<tr>
-<td>NdkObjectTypePd</td>
-<td>Specifies an NDK protection domain (PD) object (<a href="..\ndkpi\ns-ndkpi-_ndk_pd.md">NDK_PD</a>).</td>
-</tr>
-
-<tr>
-<td>NdkObjectTypeQp</td>
-<td>Specifies an NDK queue pair (QP) object (<a href="..\ndkpi\ns-ndkpi-_ndk_qp.md">NDK_QP</a>).</td>
-</tr>
-
-<tr>
-<td>NdkObjectTypeSharedEndpoint</td>
-<td>Specifies an NDK shared endpoint object (<a href="..\ndkpi\ns-ndkpi-_ndk_shared_endpoint.md">NDK_SHARED_ENDPOINT</a>).</td>
-</tr>
-
-<tr>
-<td>NdkObjectTypeSrq</td>
-<td>Specifies an NDK shared receive queue (SRQ) object (<a href="..\ndkpi\ns-ndkpi-_ndk_srq.md">NDK_SRQ</a>).</td>
-</tr>
-
-<tr>
-<td>NdkObjectTypeUndefined</td>
-<td>Specifies  an undefined NDK  object.</td>
-</tr>
+            
+                <tr>
+                    <td>NdkObjectTypeAdapter</td>
+                    <td>Specifies an NDK adapter object (<a href="..\ndkpi\ns-ndkpi-_ndk_adapter.md">NDK_ADAPTER</a>).</td>
+                </tr>
+            
+                <tr>
+                    <td>NdkObjectTypeConnector</td>
+                    <td>Specifies an NDK connector object (<a href="..\ndkpi\ns-ndkpi-_ndk_connector.md">NDK_CONNECTOR</a>).</td>
+                </tr>
+            
+                <tr>
+                    <td>NdkObjectTypeCq</td>
+                    <td>Specifies an NDK completion queue (CQ) object (<a href="..\ndkpi\ns-ndkpi-_ndk_cq.md">NDK_CQ</a>).</td>
+                </tr>
+            
+                <tr>
+                    <td>NdkObjectTypeListener</td>
+                    <td>Specifies an NDK listener object (<a href="..\ndkpi\ns-ndkpi-_ndk_listener.md">NDK_LISTENER</a>).</td>
+                </tr>
+            
+                <tr>
+                    <td>NdkObjectTypeMax</td>
+                    <td>The maximum value for this enumeration. This value might change in future versions of the header files and binaries.</td>
+                </tr>
+            
+                <tr>
+                    <td>NdkObjectTypeMr</td>
+                    <td>Specifies an NDK memory region (MR) object (<a href="..\ndkpi\ns-ndkpi-_ndk_mr.md">NDK_MR</a>).</td>
+                </tr>
+            
+                <tr>
+                    <td>NdkObjectTypeMw</td>
+                    <td>Specifies an NDK memory window (MW) object (<a href="..\ndkpi\ns-ndkpi-_ndk_mw.md">NDK_MW</a>).</td>
+                </tr>
+            
+                <tr>
+                    <td>NdkObjectTypePd</td>
+                    <td>Specifies an NDK protection domain (PD) object (<a href="..\ndkpi\ns-ndkpi-_ndk_pd.md">NDK_PD</a>).</td>
+                </tr>
+            
+                <tr>
+                    <td>NdkObjectTypeQp</td>
+                    <td>Specifies an NDK queue pair (QP) object (<a href="..\ndkpi\ns-ndkpi-_ndk_qp.md">NDK_QP</a>).</td>
+                </tr>
+            
+                <tr>
+                    <td>NdkObjectTypeSharedEndpoint</td>
+                    <td>Specifies an NDK shared endpoint object (<a href="..\ndkpi\ns-ndkpi-_ndk_shared_endpoint.md">NDK_SHARED_ENDPOINT</a>).</td>
+                </tr>
+            
+                <tr>
+                    <td>NdkObjectTypeSrq</td>
+                    <td>Specifies an NDK shared receive queue (SRQ) object (<a href="..\ndkpi\ns-ndkpi-_ndk_srq.md">NDK_SRQ</a>).</td>
+                </tr>
+            
+                <tr>
+                    <td>NdkObjectTypeUndefined</td>
+                    <td>Specifies  an undefined NDK  object.</td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-NDK objects include an <a href="..\ndkpi\ns-ndkpi-_ndk_object_header.md">NDK_OBJECT_HEADER</a> structure that packages the object type,  version, and other information.
+        NDK objects include an <a href="..\ndkpi\ns-ndkpi-_ndk_object_header.md">NDK_OBJECT_HEADER</a> structure that packages the object type,  version, and other information.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -134,9 +139,9 @@ NDK objects include an <a href="..\ndkpi\ns-ndkpi-_ndk_object_header.md">NDK_OBJ
 | **Windows version** | None supported,Supported in NDIS 6.30 and later. None supported,Supported in NDIS 6.30 and later. |
 | **Header** | ndkpi.h (include Ndkpi.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\ndkpi\ns-ndkpi-_ndk_adapter.md">NDK_ADAPTER</a>
+        <a href="..\ndkpi\ns-ndkpi-_ndk_adapter.md">NDK_ADAPTER</a>
 
 <a href="..\ndkpi\ns-ndkpi-_ndk_cq.md">NDK_CQ</a>
 

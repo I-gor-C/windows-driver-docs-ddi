@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.SeQueryInformationToken
-title : SeQueryInformationToken function
-author : windows-driver-content
-description : The SeQueryInformationToken routine retrieves a specified type of information about an access token. The calling process must have appropriate access rights to obtain the information.
-old-location : ifsk\sequeryinformationtoken.htm
-old-project : ifsk
-ms.assetid : 97e28b53-8b4c-4f76-b6bb-21dad2233463
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.sequeryinformationtoken, ntifs/SeQueryInformationToken, SeQueryInformationToken, SeQueryInformationToken routine [Installable File System Drivers], seref_80e09bda-ef06-4a25-ab50-d405f5539759.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : This routine is available on Microsoft Windows 2000 and later versions of the operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.SeQueryInformationToken
+title: SeQueryInformationToken function
+author: windows-driver-content
+description: The SeQueryInformationToken routine retrieves a specified type of information about an access token. The calling process must have appropriate access rights to obtain the information.
+old-location: ifsk\sequeryinformationtoken.htm
+old-project: ifsk
+ms.assetid: 97e28b53-8b4c-4f76-b6bb-21dad2233463
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.sequeryinformationtoken, ntifs/SeQueryInformationToken, SeQueryInformationToken, SeQueryInformationToken routine [Installable File System Drivers], seref_80e09bda-ef06-4a25-ab50-d405f5539759.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: This routine is available on Microsoft Windows 2000 and later versions of the operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	SeQueryInformationToken
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

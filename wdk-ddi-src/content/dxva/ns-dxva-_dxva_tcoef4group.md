@@ -1,41 +1,46 @@
 ---
-UID : NS:dxva._DXVA_TCoef4Group
-title : "_DXVA_TCoef4Group"
-author : windows-driver-content
-description : The DXVA_TCoef4Group structure is sent by the host decoder to the accelerator to specify the IDCT coefficient values.
-old-location : display\dxva_tcoef4group.htm
-old-project : display
-ms.assetid : f7ffe847-58ae-42a9-86fd-50a757134b45
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : dxva/DXVA_TCoef4Group, dxvaref_40a4dc23-1488-41ad-ba76-296384236d78.xml, display.dxva_tcoef4group, dxva/LPDXVA_TCoef4Group, *LPDXVA_TCoef4Group, LPDXVA_TCoef4Group structure pointer [Display Devices], _DXVA_TCoef4Group, LPDXVA_TCoef4Group, DXVA_TCoef4Group structure [Display Devices], DXVA_TCoef4Group
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : dxva.h
-req.include-header : Dxva.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*LPDXVA_TCoef4Group, DXVA_TCoef4Group"
+UID: NS:dxva._DXVA_TCoef4Group
+title: "_DXVA_TCoef4Group"
+author: windows-driver-content
+description: The DXVA_TCoef4Group structure is sent by the host decoder to the accelerator to specify the IDCT coefficient values.
+old-location: display\dxva_tcoef4group.htm
+old-project: display
+ms.assetid: f7ffe847-58ae-42a9-86fd-50a757134b45
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: dxva/DXVA_TCoef4Group, dxvaref_40a4dc23-1488-41ad-ba76-296384236d78.xml, display.dxva_tcoef4group, dxva/LPDXVA_TCoef4Group, *LPDXVA_TCoef4Group, LPDXVA_TCoef4Group structure pointer [Display Devices], _DXVA_TCoef4Group, LPDXVA_TCoef4Group, DXVA_TCoef4Group structure [Display Devices], DXVA_TCoef4Group
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: dxva.h
+req.include-header: Dxva.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	dxva.h
+apiname:
+-	DXVA_TCoef4Group
+product: Windows
+targetos: Windows
+req.typenames: "*LPDXVA_TCoef4Group, DXVA_TCoef4Group"
 ---
 
 # _DXVA_TCoef4Group structure

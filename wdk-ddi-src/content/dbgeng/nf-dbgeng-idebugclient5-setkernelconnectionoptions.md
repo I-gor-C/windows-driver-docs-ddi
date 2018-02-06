@@ -1,41 +1,50 @@
 ---
-UID : NF:dbgeng.IDebugClient5.SetKernelConnectionOptions
-title : IDebugClient5::SetKernelConnectionOptions method
-author : windows-driver-content
-description : The SetKernelConnectionOptions method updates some of the connection options for a live kernel target.
-old-location : debugger\setkernelconnectionoptions.htm
-old-project : debugger
-ms.assetid : 0633c710-20c4-49c0-a680-a5eff9298265
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : dbgeng/IDebugClient::SetKernelConnectionOptions, dbgeng/IDebugClient3::SetKernelConnectionOptions, SetKernelConnectionOptions method [Windows Debugging], IDebugClient4 interface, SetKernelConnectionOptions method [Windows Debugging], SetKernelConnectionOptions method [Windows Debugging], IDebugClient3 interface, IDebugClient2::SetKernelConnectionOptions, SetKernelConnectionOptions method [Windows Debugging], IDebugClient5 interface, dbgeng/IDebugClient2::SetKernelConnectionOptions, SetKernelConnectionOptions method [Windows Debugging], IDebugClient interface, IDebugClient4 interface [Windows Debugging], SetKernelConnectionOptions method, IDebugClient::SetKernelConnectionOptions, debugger.setkernelconnectionoptions, IDebugClient_b7b26913-d776-41b9-b94a-d5fa685e5fa9.xml, IDebugClient interface [Windows Debugging], SetKernelConnectionOptions method, IDebugClient3::SetKernelConnectionOptions, IDebugClient2 interface [Windows Debugging], SetKernelConnectionOptions method, IDebugClient5::SetKernelConnectionOptions, dbgeng/IDebugClient5::SetKernelConnectionOptions, IDebugClient5, IDebugClient3 interface [Windows Debugging], SetKernelConnectionOptions method, SetKernelConnectionOptions, IDebugClient4::SetKernelConnectionOptions, SetKernelConnectionOptions method [Windows Debugging], IDebugClient2 interface, IDebugClient5 interface [Windows Debugging], SetKernelConnectionOptions method, dbgeng/IDebugClient4::SetKernelConnectionOptions
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugClient5.SetKernelConnectionOptions
+title: IDebugClient5::SetKernelConnectionOptions method
+author: windows-driver-content
+description: The SetKernelConnectionOptions method updates some of the connection options for a live kernel target.
+old-location: debugger\setkernelconnectionoptions.htm
+old-project: debugger
+ms.assetid: 0633c710-20c4-49c0-a680-a5eff9298265
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: dbgeng/IDebugClient::SetKernelConnectionOptions, dbgeng/IDebugClient3::SetKernelConnectionOptions, SetKernelConnectionOptions method [Windows Debugging], IDebugClient4 interface, SetKernelConnectionOptions method [Windows Debugging], SetKernelConnectionOptions method [Windows Debugging], IDebugClient3 interface, IDebugClient2::SetKernelConnectionOptions, SetKernelConnectionOptions method [Windows Debugging], IDebugClient5 interface, dbgeng/IDebugClient2::SetKernelConnectionOptions, SetKernelConnectionOptions method [Windows Debugging], IDebugClient interface, IDebugClient4 interface [Windows Debugging], SetKernelConnectionOptions method, IDebugClient::SetKernelConnectionOptions, debugger.setkernelconnectionoptions, IDebugClient_b7b26913-d776-41b9-b94a-d5fa685e5fa9.xml, IDebugClient interface [Windows Debugging], SetKernelConnectionOptions method, IDebugClient3::SetKernelConnectionOptions, IDebugClient2 interface [Windows Debugging], SetKernelConnectionOptions method, IDebugClient5::SetKernelConnectionOptions, dbgeng/IDebugClient5::SetKernelConnectionOptions, IDebugClient5, IDebugClient3 interface [Windows Debugging], SetKernelConnectionOptions method, SetKernelConnectionOptions, IDebugClient4::SetKernelConnectionOptions, SetKernelConnectionOptions method [Windows Debugging], IDebugClient2 interface, IDebugClient5 interface [Windows Debugging], SetKernelConnectionOptions method, dbgeng/IDebugClient4::SetKernelConnectionOptions
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugClient.SetKernelConnectionOptions
+-	IDebugClient2.SetKernelConnectionOptions
+-	IDebugClient3.SetKernelConnectionOptions
+-	IDebugClient4.SetKernelConnectionOptions
+-	IDebugClient5.SetKernelConnectionOptions
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

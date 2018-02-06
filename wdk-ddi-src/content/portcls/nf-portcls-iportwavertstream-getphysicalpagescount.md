@@ -1,41 +1,46 @@
 ---
-UID : NF:portcls.IPortWaveRTStream.GetPhysicalPagesCount
-title : IPortWaveRTStream::GetPhysicalPagesCount method
-author : windows-driver-content
-description : The GetPhysicalPagesCount method returns the count of the physical pages in a memory descriptor list (MDL).
-old-location : audio\iportwavertstream_getphysicalpagescount.htm
-old-project : audio
-ms.assetid : 8126af29-a7ee-4ab7-8902-45b4baf33b9e
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : GetPhysicalPagesCount method [Audio Devices], IPortWaveRTStream interface, portcls/IPortWaveRTStream::GetPhysicalPagesCount, audio.iportwavertstream_getphysicalpagescount, audmp-routines_bdc74102-0337-436b-b3ac-68187fb323a4.xml, IPortWaveRTStream::GetPhysicalPagesCount, GetPhysicalPagesCount method [Audio Devices], IPortWaveRTStream interface [Audio Devices], GetPhysicalPagesCount method, GetPhysicalPagesCount, IPortWaveRTStream
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : portcls.h
-req.include-header : 
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : portcls.h
-req.dll : 
-req.irql : Passive level.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.IPortWaveRTStream.GetPhysicalPagesCount
+title: IPortWaveRTStream::GetPhysicalPagesCount method
+author: windows-driver-content
+description: The GetPhysicalPagesCount method returns the count of the physical pages in a memory descriptor list (MDL).
+old-location: audio\iportwavertstream_getphysicalpagescount.htm
+old-project: audio
+ms.assetid: 8126af29-a7ee-4ab7-8902-45b4baf33b9e
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: GetPhysicalPagesCount method [Audio Devices], IPortWaveRTStream interface, portcls/IPortWaveRTStream::GetPhysicalPagesCount, audio.iportwavertstream_getphysicalpagescount, audmp-routines_bdc74102-0337-436b-b3ac-68187fb323a4.xml, IPortWaveRTStream::GetPhysicalPagesCount, GetPhysicalPagesCount method [Audio Devices], IPortWaveRTStream interface [Audio Devices], GetPhysicalPagesCount method, GetPhysicalPagesCount, IPortWaveRTStream
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: portcls.h
+req.include-header: 
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: portcls.h
+req.dll: 
+req.irql: Passive level.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Portcls.h
+apiname:
+-	IPortWaveRTStream.GetPhysicalPagesCount
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

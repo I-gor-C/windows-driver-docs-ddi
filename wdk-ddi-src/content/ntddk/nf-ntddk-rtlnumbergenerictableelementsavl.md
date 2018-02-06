@@ -1,41 +1,46 @@
 ---
-UID : NF:ntddk.RtlNumberGenericTableElementsAvl
-title : RtlNumberGenericTableElementsAvl function
-author : windows-driver-content
-description : The RtlNumberGenericTableElementsAvl routine returns the number of elements in a generic table.
-old-location : ifsk\rtlnumbergenerictableelementsavl.htm
-old-project : ifsk
-ms.assetid : CC67993A-99B1-41DC-9278-7A475EF87089
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : RtlNumberGenericTableElementsAvl, ntddk/RtlNumberGenericTableElementsAvl, ifsk.rtlnumbergenerictableelementsavl, RtlNumberGenericTableElementsAvl routine [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntddk.h
-req.include-header : Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows XP.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "< DISPATCH_LEVEL (see Remarks section)"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.RtlNumberGenericTableElementsAvl
+title: RtlNumberGenericTableElementsAvl function
+author: windows-driver-content
+description: The RtlNumberGenericTableElementsAvl routine returns the number of elements in a generic table.
+old-location: ifsk\rtlnumbergenerictableelementsavl.htm
+old-project: ifsk
+ms.assetid: CC67993A-99B1-41DC-9278-7A475EF87089
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: RtlNumberGenericTableElementsAvl, ntddk/RtlNumberGenericTableElementsAvl, ifsk.rtlnumbergenerictableelementsavl, RtlNumberGenericTableElementsAvl routine [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntddk.h
+req.include-header: Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows XP.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "< DISPATCH_LEVEL (see Remarks section)"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	RtlNumberGenericTableElementsAvl
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

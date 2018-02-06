@@ -1,42 +1,47 @@
 ---
-UID : NF:vmbuskernelmodeclientlibapi.VmbChannelRestoreFromBuffer
-title : VmbChannelRestoreFromBuffer function
-author : windows-driver-content
-description : The VmbChannelRestoreFromBuffer function restores the client state from previously saved state. The driver must check the return value of the function.
-old-location : netvista\vmbchannelrestorefrombuffer.htm
-old-project : netvista
-ms.assetid : 5A063585-AC45-44DF-BE21-FA1BB6283E6F
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : vmbuskernelmodeclientlibapi/VmbChannelRestoreFromBuffer, VmbChannelRestoreFromBuffer, VmbChannelRestoreFromBuffer function [Network Drivers Starting with Windows Vista], netvista.vmbchannelrestorefrombuffer
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : vmbuskernelmodeclientlibapi.h
-req.include-header : VmbusKernelModeClientLibApi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8.1
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 1.13
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PVIDEO_PORT_AGP_SERVICES, VIDEO_PORT_AGP_SERVICES"
-req.product : Windows 10 or later.
+UID: NF:vmbuskernelmodeclientlibapi.VmbChannelRestoreFromBuffer
+title: VmbChannelRestoreFromBuffer function
+author: windows-driver-content
+description: The VmbChannelRestoreFromBuffer function restores the client state from previously saved state. The driver must check the return value of the function.
+old-location: netvista\vmbchannelrestorefrombuffer.htm
+old-project: netvista
+ms.assetid: 5A063585-AC45-44DF-BE21-FA1BB6283E6F
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: vmbuskernelmodeclientlibapi/VmbChannelRestoreFromBuffer, VmbChannelRestoreFromBuffer, VmbChannelRestoreFromBuffer function [Network Drivers Starting with Windows Vista], netvista.vmbchannelrestorefrombuffer
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: vmbuskernelmodeclientlibapi.h
+req.include-header: VmbusKernelModeClientLibApi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8.1
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 1.13
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	VmbusKernelModeClientLibApi.h
+apiname:
+-	VmbChannelRestoreFromBuffer
+product: Windows
+targetos: Windows
+req.typenames: "*PVIDEO_PORT_AGP_SERVICES, VIDEO_PORT_AGP_SERVICES"
+req.product: Windows 10 or later.
 ---
 
 

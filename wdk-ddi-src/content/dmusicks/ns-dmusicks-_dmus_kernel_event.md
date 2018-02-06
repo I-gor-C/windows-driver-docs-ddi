@@ -1,41 +1,46 @@
 ---
-UID : NS:dmusicks._DMUS_KERNEL_EVENT
-title : "_DMUS_KERNEL_EVENT"
-author : windows-driver-content
-description : The DMUS_KERNEL_EVENT structure is used to package time-stamped music events.
-old-location : audio\dmus_kernel_event.htm
-old-project : audio
-ms.assetid : 652f64e2-310b-46c9-8b00-c827a7475b07
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : dmusicks/PDMUS_KERNEL_EVENT, PDMUS_KERNEL_EVENT structure pointer [Audio Devices], _DMUS_KERNEL_EVENT, dmusicks/DMUS_KERNEL_EVENT, audio.dmus_kernel_event, DMUS_KERNEL_EVENT structure [Audio Devices], aud-prop_b0db54b3-fff3-46f2-abd7-beb4fe189f8f.xml, *PDMUS_KERNEL_EVENT, PDMUS_KERNEL_EVENT, DMUS_KERNEL_EVENT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : dmusicks.h
-req.include-header : Dmusicks.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DMUS_KERNEL_EVENT, *PDMUS_KERNEL_EVENT
+UID: NS:dmusicks._DMUS_KERNEL_EVENT
+title: "_DMUS_KERNEL_EVENT"
+author: windows-driver-content
+description: The DMUS_KERNEL_EVENT structure is used to package time-stamped music events.
+old-location: audio\dmus_kernel_event.htm
+old-project: audio
+ms.assetid: 652f64e2-310b-46c9-8b00-c827a7475b07
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: dmusicks/PDMUS_KERNEL_EVENT, PDMUS_KERNEL_EVENT structure pointer [Audio Devices], _DMUS_KERNEL_EVENT, dmusicks/DMUS_KERNEL_EVENT, audio.dmus_kernel_event, DMUS_KERNEL_EVENT structure [Audio Devices], aud-prop_b0db54b3-fff3-46f2-abd7-beb4fe189f8f.xml, *PDMUS_KERNEL_EVENT, PDMUS_KERNEL_EVENT, DMUS_KERNEL_EVENT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: dmusicks.h
+req.include-header: Dmusicks.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	dmusicks.h
+apiname:
+-	DMUS_KERNEL_EVENT
+product: Windows
+targetos: Windows
+req.typenames: DMUS_KERNEL_EVENT, *PDMUS_KERNEL_EVENT
 ---
 
 # _DMUS_KERNEL_EVENT structure

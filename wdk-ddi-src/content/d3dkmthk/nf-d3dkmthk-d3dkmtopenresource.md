@@ -1,41 +1,49 @@
 ---
-UID : NF:d3dkmthk.D3DKMTOpenResource
-title : D3DKMTOpenResource function
-author : windows-driver-content
-description : The D3DKMTOpenResource function opens a shared resource.
-old-location : display\d3dkmtopenresource.htm
-old-project : display
-ms.assetid : 787ace79-c9ba-4e3e-9cee-0d07ef50ba35
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DKMTOpenResource function [Display Devices], OpenGL_Functions_ba035fe1-7970-45fc-a1c3-adddf285abd1.xml, d3dkmthk/D3DKMTOpenResource, display.d3dkmtopenresource, D3DKMTOpenResource
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Gdi32.lib
-req.dll : Gdi32.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_DRIVERVERSION
+UID: NF:d3dkmthk.D3DKMTOpenResource
+title: D3DKMTOpenResource function
+author: windows-driver-content
+description: The D3DKMTOpenResource function opens a shared resource.
+old-location: display\d3dkmtopenresource.htm
+old-project: display
+ms.assetid: 787ace79-c9ba-4e3e-9cee-0d07ef50ba35
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DKMTOpenResource function [Display Devices], OpenGL_Functions_ba035fe1-7970-45fc-a1c3-adddf285abd1.xml, d3dkmthk/D3DKMTOpenResource, display.d3dkmtopenresource, D3DKMTOpenResource
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Gdi32.lib
+req.dll: Gdi32.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Gdi32.dll
+-	API-MS-Win-DX-D3DKmt-l1-1-0.dll
+-	API-MS-Win-DX-D3DKmt-l1-1-1.dll
+-	API-MS-Win-DX-D3DKMT-L1-1-2.dll
+apiname:
+-	D3DKMTOpenResource
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_DRIVERVERSION
 ---
 
 

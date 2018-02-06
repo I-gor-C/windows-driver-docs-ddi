@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugSymbols4.GetNameByInlineContext
-title : IDebugSymbols4::GetNameByInlineContext method
-author : windows-driver-content
-description : Gets a name by inline context.
-old-location : debugger\idebugsymbols4_getnamebyinlinecontext.htm
-old-project : debugger
-ms.assetid : C87E70ED-FCB0-47B6-B6A3-A8EBC8E84058
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugSymbols4 interface [Windows Debugging], GetNameByInlineContext method, IDebugSymbols4::GetNameByInlineContext, GetNameByInlineContext, IDebugSymbols4, GetNameByInlineContext method [Windows Debugging], IDebugSymbols4 interface, dbgeng/IDebugSymbols4::GetNameByInlineContext, debugger.idebugsymbols4_getnamebyinlinecontext, GetNameByInlineContext method [Windows Debugging]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSymbols4.GetNameByInlineContext
+title: IDebugSymbols4::GetNameByInlineContext method
+author: windows-driver-content
+description: Gets a name by inline context.
+old-location: debugger\idebugsymbols4_getnamebyinlinecontext.htm
+old-project: debugger
+ms.assetid: C87E70ED-FCB0-47B6-B6A3-A8EBC8E84058
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugSymbols4 interface [Windows Debugging], GetNameByInlineContext method, IDebugSymbols4::GetNameByInlineContext, GetNameByInlineContext, IDebugSymbols4, GetNameByInlineContext method [Windows Debugging], IDebugSymbols4 interface, dbgeng/IDebugSymbols4::GetNameByInlineContext, debugger.idebugsymbols4_getnamebyinlinecontext, GetNameByInlineContext method [Windows Debugging]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Dbgeng.h
+apiname:
+-	IDebugSymbols4.GetNameByInlineContext
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

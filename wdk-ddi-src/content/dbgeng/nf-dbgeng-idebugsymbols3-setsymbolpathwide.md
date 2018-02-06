@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugSymbols3.SetSymbolPathWide
-title : IDebugSymbols3::SetSymbolPathWide method
-author : windows-driver-content
-description : The SetSymbolPathWide method sets the symbol path.
-old-location : debugger\setsymbolpathwide.htm
-old-project : debugger
-ms.assetid : 44ee3342-3677-4eee-8ddf-d0a01e9bb309
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : debugger.setsymbolpathwide, IDebugSymbols3 interface [Windows Debugging], SetSymbolPathWide method, IDebugSymbols3::SetSymbolPathWide, SetSymbolPathWide method [Windows Debugging], IDebugSymbols3 interface, dbgeng/IDebugSymbols3::SetSymbolPathWide, SetSymbolPathWide, IDebugSymbols3, SetSymbolPathWide method [Windows Debugging]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSymbols3.SetSymbolPathWide
+title: IDebugSymbols3::SetSymbolPathWide method
+author: windows-driver-content
+description: The SetSymbolPathWide method sets the symbol path.
+old-location: debugger\setsymbolpathwide.htm
+old-project: debugger
+ms.assetid: 44ee3342-3677-4eee-8ddf-d0a01e9bb309
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: debugger.setsymbolpathwide, IDebugSymbols3 interface [Windows Debugging], SetSymbolPathWide method, IDebugSymbols3::SetSymbolPathWide, SetSymbolPathWide method [Windows Debugging], IDebugSymbols3 interface, dbgeng/IDebugSymbols3::SetSymbolPathWide, SetSymbolPathWide, IDebugSymbols3, SetSymbolPathWide method [Windows Debugging]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugSymbols3.SetSymbolPathWide
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

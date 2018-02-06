@@ -1,41 +1,46 @@
 ---
-UID : NS:d3d10umddi.D3DWDDM1_3DDI_TILE_REGION_SIZE
-title : D3DWDDM1_3DDI_TILE_REGION_SIZE
-author : windows-driver-content
-description : Specifies a tiled region.
-old-location : display\d3dwddm1_3ddi_tile_region_size.htm
-old-project : display
-ms.assetid : 276ED4AC-15D9-4550-AC51-83320DE9D5B2
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3d10umddi/D3DWDDM1_3DDI_TILE_REGION_SIZE, D3DWDDM1_3DDI_TILE_REGION_SIZE structure [Display Devices], D3DWDDM1_3DDI_TILE_REGION_SIZE, display.d3dwddm1_3ddi_tile_region_size
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8.1,WDDM 1.3
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DWDDM1_3DDI_TILE_REGION_SIZE
+UID: NS:d3d10umddi.D3DWDDM1_3DDI_TILE_REGION_SIZE
+title: D3DWDDM1_3DDI_TILE_REGION_SIZE
+author: windows-driver-content
+description: Specifies a tiled region.
+old-location: display\d3dwddm1_3ddi_tile_region_size.htm
+old-project: display
+ms.assetid: 276ED4AC-15D9-4550-AC51-83320DE9D5B2
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3d10umddi/D3DWDDM1_3DDI_TILE_REGION_SIZE, D3DWDDM1_3DDI_TILE_REGION_SIZE structure [Display Devices], D3DWDDM1_3DDI_TILE_REGION_SIZE, display.d3dwddm1_3ddi_tile_region_size
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8.1,WDDM 1.3
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	D3d10umddi.h
+apiname:
+-	D3DWDDM1_3DDI_TILE_REGION_SIZE
+product: Windows
+targetos: Windows
+req.typenames: D3DWDDM1_3DDI_TILE_REGION_SIZE
 ---
 
 # D3DWDDM1_3DDI_TILE_REGION_SIZE structure

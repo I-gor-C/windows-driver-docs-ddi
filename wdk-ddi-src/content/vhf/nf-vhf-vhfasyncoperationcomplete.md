@@ -1,42 +1,48 @@
 ---
-UID : NF:vhf.VhfAsyncOperationComplete
-title : VhfAsyncOperationComplete function
-author : windows-driver-content
-description : The HID source driver calls this method to set the results of an asynchronous operation.
-old-location : hid\_vhfasyncoperationcomplete.htm
-old-project : hid
-ms.assetid : F28E6FC0-C2FE-4119-82D9-C38289340D3D
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : hid._vhfasyncoperationcomplete, vhf/VhfAsyncOperationComplete, VhfAsyncOperationComplete method [Human Input Devices], VhfAsyncOperationComplete
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : vhf.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : VhfKm.lib
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR, *PUSB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR
-req.product : Windows 10 or later.
+UID: NF:vhf.VhfAsyncOperationComplete
+title: VhfAsyncOperationComplete function
+author: windows-driver-content
+description: The HID source driver calls this method to set the results of an asynchronous operation.
+old-location: hid\_vhfasyncoperationcomplete.htm
+old-project: hid
+ms.assetid: F28E6FC0-C2FE-4119-82D9-C38289340D3D
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: hid._vhfasyncoperationcomplete, vhf/VhfAsyncOperationComplete, VhfAsyncOperationComplete method [Human Input Devices], VhfAsyncOperationComplete
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: vhf.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: VhfKm.lib
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	VhfKm.lib
+-	VhfKm.dll
+apiname:
+-	VhfAsyncOperationComplete
+product: Windows
+targetos: Windows
+req.typenames: USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR, *PUSB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR
+req.product: Windows 10 or later.
 ---
 
 

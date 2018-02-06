@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltRetrieveIoPriorityInfo
-title : FltRetrieveIoPriorityInfo function
-author : windows-driver-content
-description : The FltRetrieveIoPriorityInfo routine is used by a minifilter driver to retrieve priority information from a thread.
-old-location : ifsk\fltretrieveiopriorityinfo.htm
-old-project : ifsk
-ms.assetid : b764e55e-e58b-4a4f-a32f-84e3cfd5f8c4
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.fltretrieveiopriorityinfo, FltRetrieveIoPriorityInfo, FltApiRef_p_to_z_ac6da005-5f47-441d-8277-9beedb72c0ee.xml, fltkernel/FltRetrieveIoPriorityInfo, FltRetrieveIoPriorityInfo routine [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : This routine is available starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Fltmgr.lib
-req.dll : FltMgr.sys
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltRetrieveIoPriorityInfo
+title: FltRetrieveIoPriorityInfo function
+author: windows-driver-content
+description: The FltRetrieveIoPriorityInfo routine is used by a minifilter driver to retrieve priority information from a thread.
+old-location: ifsk\fltretrieveiopriorityinfo.htm
+old-project: ifsk
+ms.assetid: b764e55e-e58b-4a4f-a32f-84e3cfd5f8c4
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.fltretrieveiopriorityinfo, FltRetrieveIoPriorityInfo, FltApiRef_p_to_z_ac6da005-5f47-441d-8277-9beedb72c0ee.xml, fltkernel/FltRetrieveIoPriorityInfo, FltRetrieveIoPriorityInfo routine [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: This routine is available starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Fltmgr.lib
+req.dll: FltMgr.sys
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	FltMgr.sys
+apiname:
+-	FltRetrieveIoPriorityInfo
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

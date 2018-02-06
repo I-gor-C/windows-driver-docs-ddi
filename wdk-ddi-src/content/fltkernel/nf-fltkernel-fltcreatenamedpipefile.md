@@ -1,41 +1,47 @@
 ---
-UID : NF:fltkernel.FltCreateNamedPipeFile
-title : FltCreateNamedPipeFile function
-author : windows-driver-content
-description : Minifilter drivers call FltCreateNamedPipeFile to create a new pipe or open an existing pipe.
-old-location : ifsk\fltcreatenamedpipefile.htm
-old-project : ifsk
-ms.assetid : F4F3A591-B4BE-4367-A76A-820552F9B3B5
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FILE_PIPE_MESSAGE_MODE, FILE_PIPE_BYTE_STREAM_TYPE, ifsk.fltcreatenamedpipefile, FILE_PIPE_COMPLETE_OPERATION, FltCreateNamedPipeFile function [Installable File System Drivers], FILE_PIPE_MESSAGE_TYPE, FILE_PIPE_QUEUE_COMPLETION, FltCreateNamedPipeFile, fltkernel/FltCreateNamedPipeFile, FILE_PIPE_BYTE_STREAM_MODE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : FltKernel.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Fltmgr.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltCreateNamedPipeFile
+title: FltCreateNamedPipeFile function
+author: windows-driver-content
+description: Minifilter drivers call FltCreateNamedPipeFile to create a new pipe or open an existing pipe.
+old-location: ifsk\fltcreatenamedpipefile.htm
+old-project: ifsk
+ms.assetid: F4F3A591-B4BE-4367-A76A-820552F9B3B5
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FILE_PIPE_MESSAGE_MODE, FILE_PIPE_BYTE_STREAM_TYPE, ifsk.fltcreatenamedpipefile, FILE_PIPE_COMPLETE_OPERATION, FltCreateNamedPipeFile function [Installable File System Drivers], FILE_PIPE_MESSAGE_TYPE, FILE_PIPE_QUEUE_COMPLETION, FltCreateNamedPipeFile, fltkernel/FltCreateNamedPipeFile, FILE_PIPE_BYTE_STREAM_MODE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: FltKernel.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Fltmgr.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Fltmgr.lib
+-	Fltmgr.dll
+apiname:
+-	FltCreateNamedPipeFile
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

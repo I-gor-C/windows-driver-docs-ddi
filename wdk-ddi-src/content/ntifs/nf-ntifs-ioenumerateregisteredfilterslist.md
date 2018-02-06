@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.IoEnumerateRegisteredFiltersList
-title : IoEnumerateRegisteredFiltersList function
-author : windows-driver-content
-description : The IoEnumerateRegisteredFiltersList routine enumerates the file system filter drivers that have registered with the system.
-old-location : ifsk\ioenumerateregisteredfilterslist.htm
-old-project : ifsk
-ms.assetid : 7ac67110-bc92-457a-88f4-a21f2fa38174
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ioref_b1530889-7d8a-4fd7-a7d3-954b1c7012ca.xml, IoEnumerateRegisteredFiltersList routine [Installable File System Drivers], ifsk.ioenumerateregisteredfilterslist, IoEnumerateRegisteredFiltersList, ntifs/IoEnumerateRegisteredFiltersList
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : This routine is available on Update Rollup for Windows 2000 Service Pack 4 (SP4) and on Windows Server 2003 Service Pack 1 (SP1) and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.IoEnumerateRegisteredFiltersList
+title: IoEnumerateRegisteredFiltersList function
+author: windows-driver-content
+description: The IoEnumerateRegisteredFiltersList routine enumerates the file system filter drivers that have registered with the system.
+old-location: ifsk\ioenumerateregisteredfilterslist.htm
+old-project: ifsk
+ms.assetid: 7ac67110-bc92-457a-88f4-a21f2fa38174
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ioref_b1530889-7d8a-4fd7-a7d3-954b1c7012ca.xml, IoEnumerateRegisteredFiltersList routine [Installable File System Drivers], ifsk.ioenumerateregisteredfilterslist, IoEnumerateRegisteredFiltersList, ntifs/IoEnumerateRegisteredFiltersList
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: This routine is available on Update Rollup for Windows 2000 Service Pack 4 (SP4) and on Windows Server 2003 Service Pack 1 (SP1) and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoEnumerateRegisteredFiltersList
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

@@ -1,41 +1,47 @@
 ---
-UID : NF:gpioclx.GPIO_CLX_RegisterClient
-title : GPIO_CLX_RegisterClient function
-author : windows-driver-content
-description : The GPIO_CLX_RegisterClient method registers a general-purpose I/O (GPIO) controller driver as a client of the GPIO framework extension (GpioClx).
-old-location : gpio\gpio_clx_registerclient.htm
-old-project : GPIO
-ms.assetid : C87385E0-7B3F-44DA-90D0-E644C58AB375
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : GPIO.gpio_clx_registerclient, gpioclx/GPIO_CLX_RegisterClient, GPIO_CLX_RegisterClient, GPIO_CLX_RegisterClient method [Parallel Ports]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : gpioclx.h
-req.include-header : 
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Msgpioclxstub.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PGPIO_CONNECT_IO_PINS_MODE, GPIO_CONNECT_IO_PINS_MODE"
+UID: NF:gpioclx.GPIO_CLX_RegisterClient
+title: GPIO_CLX_RegisterClient function
+author: windows-driver-content
+description: The GPIO_CLX_RegisterClient method registers a general-purpose I/O (GPIO) controller driver as a client of the GPIO framework extension (GpioClx).
+old-location: gpio\gpio_clx_registerclient.htm
+old-project: GPIO
+ms.assetid: C87385E0-7B3F-44DA-90D0-E644C58AB375
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: GPIO.gpio_clx_registerclient, gpioclx/GPIO_CLX_RegisterClient, GPIO_CLX_RegisterClient, GPIO_CLX_RegisterClient method [Parallel Ports]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: gpioclx.h
+req.include-header: 
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Msgpioclxstub.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Msgpioclxstub.lib
+-	Msgpioclxstub.dll
+apiname:
+-	GPIO_CLX_RegisterClient
+product: Windows
+targetos: Windows
+req.typenames: "*PGPIO_CONNECT_IO_PINS_MODE, GPIO_CONNECT_IO_PINS_MODE"
 ---
 
 

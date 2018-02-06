@@ -1,42 +1,47 @@
 ---
-UID : NF:rxprocs.RxLogEventWithBufferDirect
-title : RxLogEventWithBufferDirect function
-author : windows-driver-content
-description : RxLogEventWithBufferDirect allocates an I/O error log structure, fills it in with information, and writes the entry to the I/O error log.
-old-location : ifsk\rxlogeventwithbufferdirect.htm
-old-project : ifsk
-ms.assetid : 09a7d452-efa1-4846-8077-1f6ce60515e7
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.rxlogeventwithbufferdirect, RxLogEventWithBufferDirect, rxprocs/RxLogEventWithBufferDirect, RxLogEventWithBufferDirect function [Installable File System Drivers], rxref_95cd6139-10e2-4cf1-bfd9-51b3d6dd1119.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : rxprocs.h
-req.include-header : Rxprocs.h, Rxstruc.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RX_CONTEXT, *PRX_CONTEXT
-req.product : Windows 10 or later.
+UID: NF:rxprocs.RxLogEventWithBufferDirect
+title: RxLogEventWithBufferDirect function
+author: windows-driver-content
+description: RxLogEventWithBufferDirect allocates an I/O error log structure, fills it in with information, and writes the entry to the I/O error log.
+old-location: ifsk\rxlogeventwithbufferdirect.htm
+old-project: ifsk
+ms.assetid: 09a7d452-efa1-4846-8077-1f6ce60515e7
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.rxlogeventwithbufferdirect, RxLogEventWithBufferDirect, rxprocs/RxLogEventWithBufferDirect, RxLogEventWithBufferDirect function [Installable File System Drivers], rxref_95cd6139-10e2-4cf1-bfd9-51b3d6dd1119.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: rxprocs.h
+req.include-header: Rxprocs.h, Rxstruc.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	rxprocs.h
+apiname:
+-	RxLogEventWithBufferDirect
+product: Windows
+targetos: Windows
+req.typenames: RX_CONTEXT, *PRX_CONTEXT
+req.product: Windows 10 or later.
 ---
 
 

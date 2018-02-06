@@ -1,41 +1,46 @@
 ---
-UID : NF:dmusicks.ISynthSinkDMus.Render
-title : ISynthSinkDMus::Render method
-author : windows-driver-content
-description : The Render method renders wave data into a destination sink.
-old-location : audio\isynthsinkdmus_render.htm
-old-project : audio
-ms.assetid : 731abdaf-f84b-4d4b-a6e0-ee11899fba27
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : ISynthSinkDMus interface [Audio Devices], Render method, dmusicks/ISynthSinkDMus::Render, audmp-routines_ada0270e-6234-4508-a323-f4bdaee295ce.xml, ISynthSinkDMus::Render, Render method [Audio Devices], ISynthSinkDMus interface, Render method [Audio Devices], Render, audio.isynthsinkdmus_render, ISynthSinkDMus
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dmusicks.h
-req.include-header : Dmusicks.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dmusicks.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DMUS_STREAM_TYPE
+UID: NF:dmusicks.ISynthSinkDMus.Render
+title: ISynthSinkDMus::Render method
+author: windows-driver-content
+description: The Render method renders wave data into a destination sink.
+old-location: audio\isynthsinkdmus_render.htm
+old-project: audio
+ms.assetid: 731abdaf-f84b-4d4b-a6e0-ee11899fba27
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: ISynthSinkDMus interface [Audio Devices], Render method, dmusicks/ISynthSinkDMus::Render, audmp-routines_ada0270e-6234-4508-a323-f4bdaee295ce.xml, ISynthSinkDMus::Render, Render method [Audio Devices], ISynthSinkDMus interface, Render method [Audio Devices], Render, audio.isynthsinkdmus_render, ISynthSinkDMus
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dmusicks.h
+req.include-header: Dmusicks.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dmusicks.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dmusicks.h
+apiname:
+-	ISynthSinkDMus.Render
+product: Windows
+targetos: Windows
+req.typenames: DMUS_STREAM_TYPE
 ---
 
 

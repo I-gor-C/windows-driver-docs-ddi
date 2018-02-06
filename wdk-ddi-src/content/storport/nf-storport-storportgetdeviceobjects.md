@@ -1,42 +1,47 @@
 ---
-UID : NF:storport.StorPortGetDeviceObjects
-title : StorPortGetDeviceObjects function
-author : windows-driver-content
-description : The StorPortGetDeviceObjects routine returns the device objects that are associated with the adapter device stack.
-old-location : storage\storportgetdeviceobjects.htm
-old-project : storage
-ms.assetid : e48b5048-5f5f-4efb-b7bf-2dd183074516
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.storportgetdeviceobjects, storport/StorPortGetDeviceObjects, StorPortGetDeviceObjects routine [Storage Devices], StorPortGetDeviceObjects, storprt_219d8794-88c3-49c6-82ea-a19f75c3ad1f.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STOR_SPINLOCK
-req.product : Windows 10 or later.
+UID: NF:storport.StorPortGetDeviceObjects
+title: StorPortGetDeviceObjects function
+author: windows-driver-content
+description: The StorPortGetDeviceObjects routine returns the device objects that are associated with the adapter device stack.
+old-location: storage\storportgetdeviceobjects.htm
+old-project: storage
+ms.assetid: e48b5048-5f5f-4efb-b7bf-2dd183074516
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.storportgetdeviceobjects, storport/StorPortGetDeviceObjects, StorPortGetDeviceObjects routine [Storage Devices], StorPortGetDeviceObjects, storprt_219d8794-88c3-49c6-82ea-a19f75c3ad1f.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	storport.h
+apiname:
+-	StorPortGetDeviceObjects
+product: Windows
+targetos: Windows
+req.typenames: STOR_SPINLOCK
+req.product: Windows 10 or later.
 ---
 
 

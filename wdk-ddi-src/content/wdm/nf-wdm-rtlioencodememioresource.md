@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.RtlIoEncodeMemIoResource
-title : RtlIoEncodeMemIoResource function
-author : windows-driver-content
-description : The RtlIoEncodeMemIoResource routine updates an IO_RESOURCE_DESCRIPTOR structure to describe a range of memory or I/O port addresses.
-old-location : kernel\rtlioencodememioresource.htm
-old-project : kernel
-ms.assetid : b2f51d54-3fda-4cbf-a148-0572122ed9fa
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.rtlioencodememioresource, RtlIoEncodeMemIoResource, k109_2e51e72a-98c4-4600-8e9c-41251c3e9849.xml, RtlIoEncodeMemIoResource routine [Kernel-Mode Driver Architecture], wdm/RtlIoEncodeMemIoResource
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.RtlIoEncodeMemIoResource
+title: RtlIoEncodeMemIoResource function
+author: windows-driver-content
+description: The RtlIoEncodeMemIoResource routine updates an IO_RESOURCE_DESCRIPTOR structure to describe a range of memory or I/O port addresses.
+old-location: kernel\rtlioencodememioresource.htm
+old-project: kernel
+ms.assetid: b2f51d54-3fda-4cbf-a148-0572122ed9fa
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.rtlioencodememioresource, RtlIoEncodeMemIoResource, k109_2e51e72a-98c4-4600-8e9c-41251c3e9849.xml, RtlIoEncodeMemIoResource routine [Kernel-Mode Driver Architecture], wdm/RtlIoEncodeMemIoResource
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	RtlIoEncodeMemIoResource
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NN:ks.IKsControl
-title : IKsControl
-author : windows-driver-content
-description : The IKsControl interface is a COM-style interface implemented on AVStream filters and pins.
-old-location : stream\ikscontrol8.htm
-old-project : stream
-ms.assetid : 33eb0244-e0f3-4db7-b6df-2668e826fbd8
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.ikscontrol8, IKsControl interface [Streaming Media Devices], IKsControl interface [Streaming Media Devices], described, IKsControl, ks/IKsControl, avintfc_fc0ad706-c416-40f7-b213-5467fcebeb72.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NN:ks.IKsControl
+title: IKsControl
+author: windows-driver-content
+description: The IKsControl interface is a COM-style interface implemented on AVStream filters and pins.
+old-location: stream\ikscontrol8.htm
+old-project: stream
+ms.assetid: 33eb0244-e0f3-4db7-b6df-2668e826fbd8
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.ikscontrol8, IKsControl interface [Streaming Media Devices], IKsControl interface [Streaming Media Devices], described, IKsControl, ks/IKsControl, avintfc_fc0ad706-c416-40f7-b213-5467fcebeb72.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Ks.h
+apiname:
+-	IKsControl
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 # IKsControl interface

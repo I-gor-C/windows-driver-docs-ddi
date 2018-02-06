@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_DESTROYDECODEDEVICE
-title : PFND3DDDI_DESTROYDECODEDEVICE
-author : windows-driver-content
-description : The DestroyDecodeDevice function releases resources for a Microsoft DirectX Video Acceleration (VA) decode device.
-old-location : display\destroydecodedevice.htm
-old-project : display
-ms.assetid : 3685e58b-8d67-4b01-a8a0-8a794d653637
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.destroydecodedevice, DestroyDecodeDevice callback function [Display Devices], DestroyDecodeDevice, PFND3DDDI_DESTROYDECODEDEVICE, PFND3DDDI_DESTROYDECODEDEVICE, d3dumddi/DestroyDecodeDevice, UserModeDisplayDriver_Functions_1a057944-edfe-4010-8726-9ac1deef11e6.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_DESTROYDECODEDEVICE
+title: PFND3DDDI_DESTROYDECODEDEVICE
+author: windows-driver-content
+description: The DestroyDecodeDevice function releases resources for a Microsoft DirectX Video Acceleration (VA) decode device.
+old-location: display\destroydecodedevice.htm
+old-project: display
+ms.assetid: 3685e58b-8d67-4b01-a8a0-8a794d653637
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.destroydecodedevice, DestroyDecodeDevice callback function [Display Devices], DestroyDecodeDevice, PFND3DDDI_DESTROYDECODEDEVICE, PFND3DDDI_DESTROYDECODEDEVICE, d3dumddi/DestroyDecodeDevice, UserModeDisplayDriver_Functions_1a057944-edfe-4010-8726-9ac1deef11e6.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	DestroyDecodeDevice
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

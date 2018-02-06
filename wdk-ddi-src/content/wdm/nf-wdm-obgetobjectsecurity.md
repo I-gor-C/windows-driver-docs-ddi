@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.ObGetObjectSecurity
-title : ObGetObjectSecurity function
-author : windows-driver-content
-description : The ObGetObjectSecurity routine gets the security descriptor for a given object.
-old-location : kernel\obgetobjectsecurity.htm
-old-project : kernel
-ms.assetid : 8ac8d3ff-68ec-4e23-bbf9-0a9b7fa13ce3
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : k107_a0c800de-984a-427f-b308-415f831e5d34.xml, ObGetObjectSecurity, wdm/ObGetObjectSecurity, ObGetObjectSecurity routine [Kernel-Mode Driver Architecture], kernel.obgetobjectsecurity
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : IrqlApcLte, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ObGetObjectSecurity
+title: ObGetObjectSecurity function
+author: windows-driver-content
+description: The ObGetObjectSecurity routine gets the security descriptor for a given object.
+old-location: kernel\obgetobjectsecurity.htm
+old-project: kernel
+ms.assetid: 8ac8d3ff-68ec-4e23-bbf9-0a9b7fa13ce3
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: k107_a0c800de-984a-427f-b308-415f831e5d34.xml, ObGetObjectSecurity, wdm/ObGetObjectSecurity, ObGetObjectSecurity routine [Kernel-Mode Driver Architecture], kernel.obgetobjectsecurity
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: IrqlApcLte, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ObGetObjectSecurity
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

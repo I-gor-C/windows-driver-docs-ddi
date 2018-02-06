@@ -1,41 +1,46 @@
 ---
-UID : NS:avcstrm._AVC_STREAM_REQUEST_BLOCK
-title : "_AVC_STREAM_REQUEST_BLOCK"
-author : windows-driver-content
-description : The AVC_STREAM_REQUEST_BLOCK structure describes an AV/C streaming request to be processed by avcstrm.sys.
-old-location : stream\avc_stream_request_block.htm
-old-project : stream
-ms.assetid : 077fc4ab-94a0-42eb-a0c5-684e447cb038
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : avcstrm/PAVC_STREAM_REQUEST_BLOCK, AVC_STREAM_REQUEST_BLOCK, PAVC_STREAM_REQUEST_BLOCK structure pointer [Streaming Media Devices], stream.avc_stream_request_block, *PAVC_STREAM_REQUEST_BLOCK, PAVC_STREAM_REQUEST_BLOCK, _AVC_STREAM_REQUEST_BLOCK, avcstrm/AVC_STREAM_REQUEST_BLOCK, avcsref_1ea2a63f-ba4a-4fc3-834c-0f0a88de5023.xml, AVC_STREAM_REQUEST_BLOCK structure [Streaming Media Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : avcstrm.h
-req.include-header : Avcstrm.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PAVC_STREAM_REQUEST_BLOCK, AVC_STREAM_REQUEST_BLOCK"
+UID: NS:avcstrm._AVC_STREAM_REQUEST_BLOCK
+title: "_AVC_STREAM_REQUEST_BLOCK"
+author: windows-driver-content
+description: The AVC_STREAM_REQUEST_BLOCK structure describes an AV/C streaming request to be processed by avcstrm.sys.
+old-location: stream\avc_stream_request_block.htm
+old-project: stream
+ms.assetid: 077fc4ab-94a0-42eb-a0c5-684e447cb038
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: avcstrm/PAVC_STREAM_REQUEST_BLOCK, AVC_STREAM_REQUEST_BLOCK, PAVC_STREAM_REQUEST_BLOCK structure pointer [Streaming Media Devices], stream.avc_stream_request_block, *PAVC_STREAM_REQUEST_BLOCK, PAVC_STREAM_REQUEST_BLOCK, _AVC_STREAM_REQUEST_BLOCK, avcstrm/AVC_STREAM_REQUEST_BLOCK, avcsref_1ea2a63f-ba4a-4fc3-834c-0f0a88de5023.xml, AVC_STREAM_REQUEST_BLOCK structure [Streaming Media Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: avcstrm.h
+req.include-header: Avcstrm.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	avcstrm.h
+apiname:
+-	AVC_STREAM_REQUEST_BLOCK
+product: Windows
+targetos: Windows
+req.typenames: "*PAVC_STREAM_REQUEST_BLOCK, AVC_STREAM_REQUEST_BLOCK"
 ---
 
 # _AVC_STREAM_REQUEST_BLOCK structure

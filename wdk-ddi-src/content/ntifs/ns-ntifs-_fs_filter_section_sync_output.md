@@ -1,41 +1,46 @@
 ---
-UID : NS:ntifs._FS_FILTER_SECTION_SYNC_OUTPUT
-title : "_FS_FILTER_SECTION_SYNC_OUTPUT"
-author : windows-driver-content
-description : The FS_FILTER_SECTION_SYNC_OUTPUT structure contains information describing the attributes of the section that is being created.
-old-location : ifsk\fs_filter_section_sync_output_.htm
-old-project : ifsk
-ms.assetid : 3378D971-B5D8-485B-8C58-BE5874445407
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : "_FS_FILTER_SECTION_SYNC_OUTPUT, ifsk.fs_filter_section_sync_output_, PFS_FILTER_SECTION_SYNC_OUTPUT structure pointer [Installable File System Drivers], *PFS_FILTER_SECTION_SYNC_OUTPUT, ntifs/PFS_FILTER_SECTION_SYNC_OUTPUT, ntifs/FS_FILTER_SECTION_SYNC_OUTPUT, PFS_FILTER_SECTION_SYNC_OUTPUT, FS_FILTER_SECTION_SYNC_OUTPUT structure [Installable File System Drivers], FS_FILTER_SECTION_SYNC_OUTPUT"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntifs.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PFS_FILTER_SECTION_SYNC_OUTPUT, FS_FILTER_SECTION_SYNC_OUTPUT"
+UID: NS:ntifs._FS_FILTER_SECTION_SYNC_OUTPUT
+title: "_FS_FILTER_SECTION_SYNC_OUTPUT"
+author: windows-driver-content
+description: The FS_FILTER_SECTION_SYNC_OUTPUT structure contains information describing the attributes of the section that is being created.
+old-location: ifsk\fs_filter_section_sync_output_.htm
+old-project: ifsk
+ms.assetid: 3378D971-B5D8-485B-8C58-BE5874445407
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: "_FS_FILTER_SECTION_SYNC_OUTPUT, ifsk.fs_filter_section_sync_output_, PFS_FILTER_SECTION_SYNC_OUTPUT structure pointer [Installable File System Drivers], *PFS_FILTER_SECTION_SYNC_OUTPUT, ntifs/PFS_FILTER_SECTION_SYNC_OUTPUT, ntifs/FS_FILTER_SECTION_SYNC_OUTPUT, PFS_FILTER_SECTION_SYNC_OUTPUT, FS_FILTER_SECTION_SYNC_OUTPUT structure [Installable File System Drivers], FS_FILTER_SECTION_SYNC_OUTPUT"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntifs.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntifs.h
+apiname:
+-	FS_FILTER_SECTION_SYNC_OUTPUT
+product: Windows
+targetos: Windows
+req.typenames: "*PFS_FILTER_SECTION_SYNC_OUTPUT, FS_FILTER_SECTION_SYNC_OUTPUT"
 ---
 
 # _FS_FILTER_SECTION_SYNC_OUTPUT structure

@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisGetNetBufferListProtocolId
-title : NdisGetNetBufferListProtocolId function
-author : windows-driver-content
-description : The NdisGetNetBufferListProtocolId function retrieves the protocol identifier from the NetBufferListInfo member of a NET_BUFFER_LIST structure.
-old-location : netvista\ndisgetnetbufferlistprotocolid.htm
-old-project : netvista
-ms.assetid : a90b1318-ce21-4483-b253-767674fe0a2f
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NdisGetNetBufferListProtocolId, netvista.ndisgetnetbufferlistprotocolid, ndis_netbuf_functions_ref_7ce217e7-6d68-4e22-af32-bc984c1b7677.xml, ndis/NdisGetNetBufferListProtocolId, NdisGetNetBufferListProtocolId function [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisGetNetBufferListProtocolId
+title: NdisGetNetBufferListProtocolId function
+author: windows-driver-content
+description: The NdisGetNetBufferListProtocolId function retrieves the protocol identifier from the NetBufferListInfo member of a NET_BUFFER_LIST structure.
+old-location: netvista\ndisgetnetbufferlistprotocolid.htm
+old-project: netvista
+ms.assetid: a90b1318-ce21-4483-b253-767674fe0a2f
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NdisGetNetBufferListProtocolId, netvista.ndisgetnetbufferlistprotocolid, ndis_netbuf_functions_ref_7ce217e7-6d68-4e22-af32-bc984c1b7677.xml, ndis/NdisGetNetBufferListProtocolId, NdisGetNetBufferListProtocolId function [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisGetNetBufferListProtocolId
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

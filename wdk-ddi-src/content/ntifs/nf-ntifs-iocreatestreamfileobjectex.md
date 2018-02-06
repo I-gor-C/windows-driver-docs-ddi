@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.IoCreateStreamFileObjectEx
-title : IoCreateStreamFileObjectEx function
-author : windows-driver-content
-description : The IoCreateStreamFileObjectEx routine creates a new stream file object.
-old-location : ifsk\iocreatestreamfileobjectex.htm
-old-project : ifsk
-ms.assetid : 1ecf4536-9669-4437-8919-3c7b0e4a9183
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ntifs/IoCreateStreamFileObjectEx, IoCreateStreamFileObjectEx routine [Installable File System Drivers], ifsk.iocreatestreamfileobjectex, IoCreateStreamFileObjectEx, ioref_0c92890a-e4ae-4a25-b1cb-8097361674ee.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : This routine is available on Microsoft Windows XP and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.IoCreateStreamFileObjectEx
+title: IoCreateStreamFileObjectEx function
+author: windows-driver-content
+description: The IoCreateStreamFileObjectEx routine creates a new stream file object.
+old-location: ifsk\iocreatestreamfileobjectex.htm
+old-project: ifsk
+ms.assetid: 1ecf4536-9669-4437-8919-3c7b0e4a9183
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ntifs/IoCreateStreamFileObjectEx, IoCreateStreamFileObjectEx routine [Installable File System Drivers], ifsk.iocreatestreamfileobjectex, IoCreateStreamFileObjectEx, ioref_0c92890a-e4ae-4a25-b1cb-8097361674ee.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: This routine is available on Microsoft Windows XP and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoCreateStreamFileObjectEx
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

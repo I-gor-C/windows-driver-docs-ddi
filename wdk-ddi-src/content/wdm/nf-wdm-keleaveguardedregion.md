@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.KeLeaveGuardedRegion
-title : KeLeaveGuardedRegion function
-author : windows-driver-content
-description : The KeLeaveGuardedRegion routine exits a guarded region entered by KeEnterGuardedRegion.
-old-location : kernel\keleaveguardedregion.htm
-old-project : kernel
-ms.assetid : 189a3589-0d43-4f87-b889-f1f092190ffa
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : KeLeaveGuardedRegion routine [Kernel-Mode Driver Architecture], KeLeaveGuardedRegion, wdm/KeLeaveGuardedRegion, kernel.keleaveguardedregion, k105_a2582957-39b0-45dd-810c-7ab03d97d6a6.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Server 2003 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : GuardedRegions, IrqlKeApcLte2, WithinCriticalRegion, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.KeLeaveGuardedRegion
+title: KeLeaveGuardedRegion function
+author: windows-driver-content
+description: The KeLeaveGuardedRegion routine exits a guarded region entered by KeEnterGuardedRegion.
+old-location: kernel\keleaveguardedregion.htm
+old-project: kernel
+ms.assetid: 189a3589-0d43-4f87-b889-f1f092190ffa
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: KeLeaveGuardedRegion routine [Kernel-Mode Driver Architecture], KeLeaveGuardedRegion, wdm/KeLeaveGuardedRegion, kernel.keleaveguardedregion, k105_a2582957-39b0-45dd-810c-7ab03d97d6a6.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Server 2003 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: GuardedRegions, IrqlKeApcLte2, WithinCriticalRegion, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	KeLeaveGuardedRegion
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

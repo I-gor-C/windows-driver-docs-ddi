@@ -1,42 +1,48 @@
 ---
-UID : NF:usbcamdi.USBCAMD_DriverEntry
-title : USBCAMD_DriverEntry function
-author : windows-driver-content
-description : The USBCAMD_DriverEntry function registers the minidriver with USBCAMD, effectively binding USBCAMD and the minidriver together.
-old-location : stream\usbcamd_driverentry.htm
-old-project : stream
-ms.assetid : ac77b121-2495-4739-8c8f-96d6c48e4dc6
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.usbcamd_driverentry, usbcamdi/USBCAMD_DriverEntry, usbcmdpr_3aeb66f4-1729-400c-af6d-6e1290c9fe3b.xml, USBCAMD_DriverEntry function [Streaming Media Devices], USBCAMD_DriverEntry
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : usbcamdi.h
-req.include-header : Usbcamdi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Usbcamd2.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUSB_BUS_INTERFACE_USBDI_V3, USB_BUS_INTERFACE_USBDI_V3"
-req.product : Windows 10 or later.
+UID: NF:usbcamdi.USBCAMD_DriverEntry
+title: USBCAMD_DriverEntry function
+author: windows-driver-content
+description: The USBCAMD_DriverEntry function registers the minidriver with USBCAMD, effectively binding USBCAMD and the minidriver together.
+old-location: stream\usbcamd_driverentry.htm
+old-project: stream
+ms.assetid: ac77b121-2495-4739-8c8f-96d6c48e4dc6
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.usbcamd_driverentry, usbcamdi/USBCAMD_DriverEntry, usbcmdpr_3aeb66f4-1729-400c-af6d-6e1290c9fe3b.xml, USBCAMD_DriverEntry function [Streaming Media Devices], USBCAMD_DriverEntry
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: usbcamdi.h
+req.include-header: Usbcamdi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Usbcamd2.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	usbcamd2.lib
+-	usbcamd2.dll
+apiname:
+-	USBCAMD_DriverEntry
+product: Windows
+targetos: Windows
+req.typenames: "*PUSB_BUS_INTERFACE_USBDI_V3, USB_BUS_INTERFACE_USBDI_V3"
+req.product: Windows 10 or later.
 ---
 
 

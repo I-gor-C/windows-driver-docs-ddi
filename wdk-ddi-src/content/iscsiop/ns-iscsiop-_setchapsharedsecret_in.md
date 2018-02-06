@@ -1,41 +1,46 @@
 ---
-UID : NS:iscsiop._SetCHAPSharedSecret_IN
-title : "_SetCHAPSharedSecret_IN"
-author : windows-driver-content
-description : The SetCHAPSharedSecret_IN structure holds the input data for the SetCHAPSharedSecret method.
-old-location : storage\setchapsharedsecret_in.htm
-old-project : storage
-ms.assetid : d352785b-982f-4469-bee8-6274c0ce1cd6
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : SetCHAPSharedSecret_IN, SetCHAPSharedSecret_IN structure [Storage Devices], PSetCHAPSharedSecret_IN structure pointer [Storage Devices], iscsiop/SetCHAPSharedSecret_IN, _SetCHAPSharedSecret_IN, *PSetCHAPSharedSecret_IN, iscsiop/PSetCHAPSharedSecret_IN, PSetCHAPSharedSecret_IN, structs-iSCSI_e0aefea0-989e-4834-b812-ae02da2e6f34.xml, storage.setchapsharedsecret_in
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : iscsiop.h
-req.include-header : Iscsiop.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSetCHAPSharedSecret_IN, SetCHAPSharedSecret_IN"
+UID: NS:iscsiop._SetCHAPSharedSecret_IN
+title: "_SetCHAPSharedSecret_IN"
+author: windows-driver-content
+description: The SetCHAPSharedSecret_IN structure holds the input data for the SetCHAPSharedSecret method.
+old-location: storage\setchapsharedsecret_in.htm
+old-project: storage
+ms.assetid: d352785b-982f-4469-bee8-6274c0ce1cd6
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: SetCHAPSharedSecret_IN, SetCHAPSharedSecret_IN structure [Storage Devices], PSetCHAPSharedSecret_IN structure pointer [Storage Devices], iscsiop/SetCHAPSharedSecret_IN, _SetCHAPSharedSecret_IN, *PSetCHAPSharedSecret_IN, iscsiop/PSetCHAPSharedSecret_IN, PSetCHAPSharedSecret_IN, structs-iSCSI_e0aefea0-989e-4834-b812-ae02da2e6f34.xml, storage.setchapsharedsecret_in
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: iscsiop.h
+req.include-header: Iscsiop.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	iscsiop.h
+apiname:
+-	SetCHAPSharedSecret_IN
+product: Windows
+targetos: Windows
+req.typenames: "*PSetCHAPSharedSecret_IN, SetCHAPSharedSecret_IN"
 ---
 
 # _SetCHAPSharedSecret_IN structure

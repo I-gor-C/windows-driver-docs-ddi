@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFDevice3.ReadFromHardware
-title : IWDFDevice3::ReadFromHardware method
-author : windows-driver-content
-description : The ReadFromHardware method is used internally by the framework. Do not use.
-old-location : wdf\iwdfdevice3_readfromhardware.htm
-old-project : wdf
-ms.assetid : 19B472D0-D607-4874-ADB9-232C379B0DFD
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : IWDFDevice3 interface, ReadFromHardware method, wdf.iwdfdevice3_readfromhardware, ReadFromHardware method, IWDFDevice3 interface, IWDFDevice3::ReadFromHardware, ReadFromHardware method, wudfddi/IWDFDevice3::ReadFromHardware, IWDFDevice3, ReadFromHardware, umdf.iwdfdevice3_readfromhardware
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.11
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFDevice3.ReadFromHardware
+title: IWDFDevice3::ReadFromHardware method
+author: windows-driver-content
+description: The ReadFromHardware method is used internally by the framework. Do not use.
+old-location: wdf\iwdfdevice3_readfromhardware.htm
+old-project: wdf
+ms.assetid: 19B472D0-D607-4874-ADB9-232C379B0DFD
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: IWDFDevice3 interface, ReadFromHardware method, wdf.iwdfdevice3_readfromhardware, ReadFromHardware method, IWDFDevice3 interface, IWDFDevice3::ReadFromHardware, ReadFromHardware method, wudfddi/IWDFDevice3::ReadFromHardware, IWDFDevice3, ReadFromHardware, umdf.iwdfdevice3_readfromhardware
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.11
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFDevice3.ReadFromHardware
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

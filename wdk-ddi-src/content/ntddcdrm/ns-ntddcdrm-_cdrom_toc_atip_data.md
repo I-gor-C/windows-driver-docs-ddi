@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddcdrm._CDROM_TOC_ATIP_DATA
-title : "_CDROM_TOC_ATIP_DATA"
-author : windows-driver-content
-description : Device control IRPs with a control code of IOCTL_CDROM_READ_TOC_EX and a format of CDROM_READ_TOC_EX_FORMAT_ATIP return their output data in this header structure followed by a series of descriptors of type CDROM_TOC_ATIP_DATA_BLOCK.
-old-location : storage\cdrom_toc_atip_data.htm
-old-project : storage
-ms.assetid : 4caf59d4-262a-49e3-8b66-9cf29ed5cee5
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : "_CDROM_TOC_ATIP_DATA, storage.cdrom_toc_atip_data, CDROM_TOC_ATIP_DATA structure [Storage Devices], PCDROM_TOC_ATIP_DATA, *PCDROM_TOC_ATIP_DATA, ntddcdrm/CDROM_TOC_ATIP_DATA, ntddcdrm/PCDROM_TOC_ATIP_DATA, CDROM_TOC_ATIP_DATA, structs-CD-ROM_57534148-0c2f-4182-8b0e-3fe4ed10505e.xml, PCDROM_TOC_ATIP_DATA structure pointer [Storage Devices]"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddcdrm.h
-req.include-header : Ntddcdrm.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PCDROM_TOC_ATIP_DATA, CDROM_TOC_ATIP_DATA"
+UID: NS:ntddcdrm._CDROM_TOC_ATIP_DATA
+title: "_CDROM_TOC_ATIP_DATA"
+author: windows-driver-content
+description: Device control IRPs with a control code of IOCTL_CDROM_READ_TOC_EX and a format of CDROM_READ_TOC_EX_FORMAT_ATIP return their output data in this header structure followed by a series of descriptors of type CDROM_TOC_ATIP_DATA_BLOCK.
+old-location: storage\cdrom_toc_atip_data.htm
+old-project: storage
+ms.assetid: 4caf59d4-262a-49e3-8b66-9cf29ed5cee5
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: "_CDROM_TOC_ATIP_DATA, storage.cdrom_toc_atip_data, CDROM_TOC_ATIP_DATA structure [Storage Devices], PCDROM_TOC_ATIP_DATA, *PCDROM_TOC_ATIP_DATA, ntddcdrm/CDROM_TOC_ATIP_DATA, ntddcdrm/PCDROM_TOC_ATIP_DATA, CDROM_TOC_ATIP_DATA, structs-CD-ROM_57534148-0c2f-4182-8b0e-3fe4ed10505e.xml, PCDROM_TOC_ATIP_DATA structure pointer [Storage Devices]"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddcdrm.h
+req.include-header: Ntddcdrm.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddcdrm.h
+apiname:
+-	CDROM_TOC_ATIP_DATA
+product: Windows
+targetos: Windows
+req.typenames: "*PCDROM_TOC_ATIP_DATA, CDROM_TOC_ATIP_DATA"
 ---
 
 # _CDROM_TOC_ATIP_DATA structure

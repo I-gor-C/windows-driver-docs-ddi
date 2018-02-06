@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.KeStallExecutionProcessor
-title : KeStallExecutionProcessor function
-author : windows-driver-content
-description : The KeStallExecutionProcessor routine stalls the caller on the current processor for a specified time interval.
-old-location : kernel\kestallexecutionprocessor.htm
-old-project : kernel
-ms.assetid : 9f03af94-0a29-42f4-84f1-09d8d1c97dd6
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : k105_47405815-7368-4100-b39d-43f5a242f5c1.xml, wdm/KeStallExecutionProcessor, KeStallExecutionProcessor, KeStallExecutionProcessor routine [Kernel-Mode Driver Architecture], kernel.kestallexecutionprocessor
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Hal.lib
-req.dll : Hal.dll
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.KeStallExecutionProcessor
+title: KeStallExecutionProcessor function
+author: windows-driver-content
+description: The KeStallExecutionProcessor routine stalls the caller on the current processor for a specified time interval.
+old-location: kernel\kestallexecutionprocessor.htm
+old-project: kernel
+ms.assetid: 9f03af94-0a29-42f4-84f1-09d8d1c97dd6
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: k105_47405815-7368-4100-b39d-43f5a242f5c1.xml, wdm/KeStallExecutionProcessor, KeStallExecutionProcessor, KeStallExecutionProcessor routine [Kernel-Mode Driver Architecture], kernel.kestallexecutionprocessor
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Hal.lib
+req.dll: Hal.dll
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Hal.dll
+apiname:
+-	KeStallExecutionProcessor
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

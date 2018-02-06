@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.RtlUpcaseUnicodeStringToOemString
-title : RtlUpcaseUnicodeStringToOemString function
-author : windows-driver-content
-description : The RtlUpcaseUnicodeStringToOemString routine translates a given Unicode source string into an uppercase OEM string using the current system OEM code page.
-old-location : ifsk\rtlupcaseunicodestringtooemstring.htm
-old-project : ifsk
-ms.assetid : 3d81c5e4-780b-4b1f-ad3a-6d59cab5650f
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : rtlref_a98f9782-c665-40fa-af3d-47eb2bef27d9.xml, RtlUpcaseUnicodeStringToOemString routine [Installable File System Drivers], RtlUpcaseUnicodeStringToOemString, ifsk.rtlupcaseunicodestringtooemstring, ntifs/RtlUpcaseUnicodeStringToOemString
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "< DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.RtlUpcaseUnicodeStringToOemString
+title: RtlUpcaseUnicodeStringToOemString function
+author: windows-driver-content
+description: The RtlUpcaseUnicodeStringToOemString routine translates a given Unicode source string into an uppercase OEM string using the current system OEM code page.
+old-location: ifsk\rtlupcaseunicodestringtooemstring.htm
+old-project: ifsk
+ms.assetid: 3d81c5e4-780b-4b1f-ad3a-6d59cab5650f
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: rtlref_a98f9782-c665-40fa-af3d-47eb2bef27d9.xml, RtlUpcaseUnicodeStringToOemString routine [Installable File System Drivers], RtlUpcaseUnicodeStringToOemString, ifsk.rtlupcaseunicodestringtooemstring, ntifs/RtlUpcaseUnicodeStringToOemString
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "< DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	RtlUpcaseUnicodeStringToOemString
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

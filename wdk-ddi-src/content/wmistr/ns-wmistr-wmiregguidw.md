@@ -1,42 +1,47 @@
 ---
-UID : NS:wmistr.WMIREGGUIDW
-title : WMIREGGUIDW
-author : windows-driver-content
-description : The WMIREGGUID structure contains new or updated registration information for a data block or event block.
-old-location : kernel\wmiregguid.htm
-old-project : kernel
-ms.assetid : f9f240ea-5689-4d33-8da7-b1cb7e66bc5b
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : "*PWMIREGGUIDW, kstruct_d_1e7b2ada-5e56-42ed-bd0a-ec9bf25796f2.xml, kernel.wmiregguid, wmistr/WMIREGGUID, wmistr/PWMIREGGUID, PWMIREGGUID, WMIREGGUID structure [Kernel-Mode Driver Architecture], WMIREGGUIDW structure [Kernel-Mode Driver Architecture], WMIREGGUID, WMIREGGUIDW, PWMIREGGUID structure pointer [Kernel-Mode Driver Architecture]"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wmistr.h
-req.include-header : Wmistr.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WMIREGGUIDW, *PWMIREGGUIDW
-req.product : Windows 10 or later.
+UID: NS:wmistr.WMIREGGUIDW
+title: WMIREGGUIDW
+author: windows-driver-content
+description: The WMIREGGUID structure contains new or updated registration information for a data block or event block.
+old-location: kernel\wmiregguid.htm
+old-project: kernel
+ms.assetid: f9f240ea-5689-4d33-8da7-b1cb7e66bc5b
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: "*PWMIREGGUIDW, kstruct_d_1e7b2ada-5e56-42ed-bd0a-ec9bf25796f2.xml, kernel.wmiregguid, wmistr/WMIREGGUID, wmistr/PWMIREGGUID, PWMIREGGUID, WMIREGGUID structure [Kernel-Mode Driver Architecture], WMIREGGUIDW structure [Kernel-Mode Driver Architecture], WMIREGGUID, WMIREGGUIDW, PWMIREGGUID structure pointer [Kernel-Mode Driver Architecture]"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wmistr.h
+req.include-header: Wmistr.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wmistr.h
+apiname:
+-	WMIREGGUID
+product: Windows
+targetos: Windows
+req.typenames: WMIREGGUIDW, *PWMIREGGUIDW
+req.product: Windows 10 or later.
 ---
 
 # WMIREGGUIDW structure

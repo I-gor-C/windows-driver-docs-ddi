@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_SETMARKERMODE
-title : PFND3DDDI_SETMARKERMODE
-author : windows-driver-content
-description : Notifies the user-mode display driver that it should support a type of Event Tracing for Windows (ETW) marker event.
-old-location : display\pfnsetmarkermode.htm
-old-project : display
-ms.assetid : D45750D9-F722-4208-8D00-E14FD9C009CB
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.pfnsetmarkermode, pfnSetMarkerMode callback function [Display Devices], pfnSetMarkerMode, PFND3DDDI_SETMARKERMODE, PFND3DDDI_SETMARKERMODE, d3dumddi/pfnSetMarkerMode
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8.1,WDDM 1.3 and later
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_SETMARKERMODE
+title: PFND3DDDI_SETMARKERMODE
+author: windows-driver-content
+description: Notifies the user-mode display driver that it should support a type of Event Tracing for Windows (ETW) marker event.
+old-location: display\pfnsetmarkermode.htm
+old-project: display
+ms.assetid: D45750D9-F722-4208-8D00-E14FD9C009CB
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.pfnsetmarkermode, pfnSetMarkerMode callback function [Display Devices], pfnSetMarkerMode, PFND3DDDI_SETMARKERMODE, PFND3DDDI_SETMARKERMODE, d3dumddi/pfnSetMarkerMode
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8.1,WDDM 1.3 and later
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	D3dumddi.h
+apiname:
+-	pfnSetMarkerMode
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

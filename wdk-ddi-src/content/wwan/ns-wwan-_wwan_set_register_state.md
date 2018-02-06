@@ -1,42 +1,47 @@
 ---
-UID : NS:wwan._WWAN_SET_REGISTER_STATE
-title : "_WWAN_SET_REGISTER_STATE"
-author : windows-driver-content
-description : The WWAN_SET_REGISTER_STATE structure represents the command to set the MB device's registration mode and the network provider it should register with.
-old-location : netvista\wwan_set_register_state.htm
-old-project : netvista
-ms.assetid : 617e80c2-2823-4393-81eb-b2cbd2b21be8
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : WWAN_SET_REGISTER_STATE, WwanRef_17ed9aa3-5b69-4f1a-8c7e-fa39d6146615.xml, WWAN_SET_REGISTER_STATE structure [Network Drivers Starting with Windows Vista], wwan/PWWAN_SET_REGISTER_STATE, _WWAN_SET_REGISTER_STATE, PWWAN_SET_REGISTER_STATE structure pointer [Network Drivers Starting with Windows Vista], netvista.wwan_set_register_state, PWWAN_SET_REGISTER_STATE, *PWWAN_SET_REGISTER_STATE, wwan/WWAN_SET_REGISTER_STATE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wwan.h
-req.include-header : Wwan.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WWAN_SET_REGISTER_STATE, *PWWAN_SET_REGISTER_STATE
-req.product : Windows 10 or later.
+UID: NS:wwan._WWAN_SET_REGISTER_STATE
+title: "_WWAN_SET_REGISTER_STATE"
+author: windows-driver-content
+description: The WWAN_SET_REGISTER_STATE structure represents the command to set the MB device's registration mode and the network provider it should register with.
+old-location: netvista\wwan_set_register_state.htm
+old-project: netvista
+ms.assetid: 617e80c2-2823-4393-81eb-b2cbd2b21be8
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: WWAN_SET_REGISTER_STATE, WwanRef_17ed9aa3-5b69-4f1a-8c7e-fa39d6146615.xml, WWAN_SET_REGISTER_STATE structure [Network Drivers Starting with Windows Vista], wwan/PWWAN_SET_REGISTER_STATE, _WWAN_SET_REGISTER_STATE, PWWAN_SET_REGISTER_STATE structure pointer [Network Drivers Starting with Windows Vista], netvista.wwan_set_register_state, PWWAN_SET_REGISTER_STATE, *PWWAN_SET_REGISTER_STATE, wwan/WWAN_SET_REGISTER_STATE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wwan.h
+req.include-header: Wwan.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wwan.h
+apiname:
+-	WWAN_SET_REGISTER_STATE
+product: Windows
+targetos: Windows
+req.typenames: WWAN_SET_REGISTER_STATE, *PWWAN_SET_REGISTER_STATE
+req.product: Windows 10 or later.
 ---
 
 # _WWAN_SET_REGISTER_STATE structure

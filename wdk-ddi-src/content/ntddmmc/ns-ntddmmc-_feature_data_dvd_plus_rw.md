@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddmmc._FEATURE_DATA_DVD_PLUS_RW
-title : "_FEATURE_DATA_DVD_PLUS_RW"
-author : windows-driver-content
-description : The FEATURE_DATA_DVD_PLUS_RW structure contains information about the DVD+RW feature.
-old-location : storage\feature_data_dvd_plus_rw.htm
-old-project : storage
-ms.assetid : 55cbef36-dea7-4f7c-ac43-fb819b61a858
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : "_FEATURE_DATA_DVD_PLUS_RW, *PFEATURE_DATA_DVD_PLUS_RW, PFEATURE_DATA_DVD_PLUS_RW structure pointer [Storage Devices], ntddmmc/FEATURE_DATA_DVD_PLUS_RW, storage.feature_data_dvd_plus_rw, PFEATURE_DATA_DVD_PLUS_RW, structs-CD-ROM_8b49bf86-5e1a-42a3-9bb6-ba6afca60375.xml, ntddmmc/PFEATURE_DATA_DVD_PLUS_RW, FEATURE_DATA_DVD_PLUS_RW, FEATURE_DATA_DVD_PLUS_RW structure [Storage Devices]"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddmmc.h
-req.include-header : Ntddcdrm.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PFEATURE_DATA_DVD_PLUS_RW, FEATURE_DATA_DVD_PLUS_RW"
+UID: NS:ntddmmc._FEATURE_DATA_DVD_PLUS_RW
+title: "_FEATURE_DATA_DVD_PLUS_RW"
+author: windows-driver-content
+description: The FEATURE_DATA_DVD_PLUS_RW structure contains information about the DVD+RW feature.
+old-location: storage\feature_data_dvd_plus_rw.htm
+old-project: storage
+ms.assetid: 55cbef36-dea7-4f7c-ac43-fb819b61a858
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: "_FEATURE_DATA_DVD_PLUS_RW, *PFEATURE_DATA_DVD_PLUS_RW, PFEATURE_DATA_DVD_PLUS_RW structure pointer [Storage Devices], ntddmmc/FEATURE_DATA_DVD_PLUS_RW, storage.feature_data_dvd_plus_rw, PFEATURE_DATA_DVD_PLUS_RW, structs-CD-ROM_8b49bf86-5e1a-42a3-9bb6-ba6afca60375.xml, ntddmmc/PFEATURE_DATA_DVD_PLUS_RW, FEATURE_DATA_DVD_PLUS_RW, FEATURE_DATA_DVD_PLUS_RW structure [Storage Devices]"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddmmc.h
+req.include-header: Ntddcdrm.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddmmc.h
+apiname:
+-	FEATURE_DATA_DVD_PLUS_RW
+product: Windows
+targetos: Windows
+req.typenames: "*PFEATURE_DATA_DVD_PLUS_RW, FEATURE_DATA_DVD_PLUS_RW"
 ---
 
 # _FEATURE_DATA_DVD_PLUS_RW structure

@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisMResetMiniport
-title : NdisMResetMiniport function
-author : windows-driver-content
-description : A miniport driver calls the NdisMResetMiniport function to trigger a later reset operation from NDIS.
-old-location : netvista\ndismresetminiport.htm
-old-project : netvista
-ms.assetid : 614C6E21-00D0-4F57-9E09-D1BAB166BA42
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NdisMResetMiniport, ndis/NdisMResetMiniport, NdisMResetMiniport function [Network Drivers Starting with Windows Vista], netvista.ndismresetminiport
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported in NDIS 6.30 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisMResetMiniport
+title: NdisMResetMiniport function
+author: windows-driver-content
+description: A miniport driver calls the NdisMResetMiniport function to trigger a later reset operation from NDIS.
+old-location: netvista\ndismresetminiport.htm
+old-project: netvista
+ms.assetid: 614C6E21-00D0-4F57-9E09-D1BAB166BA42
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NdisMResetMiniport, ndis/NdisMResetMiniport, NdisMResetMiniport function [Network Drivers Starting with Windows Vista], netvista.ndismresetminiport
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported in NDIS 6.30 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisMResetMiniport
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

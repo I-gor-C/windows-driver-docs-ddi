@@ -1,41 +1,46 @@
 ---
-UID : NF:d3dkmthk.D3DKMTEnumAdapters
-title : D3DKMTEnumAdapters function
-author : windows-driver-content
-description : Enumerates all graphics adapters on the system.
-old-location : display\d3dkmtenumadapters.htm
-old-project : display
-ms.assetid : 07c0aeac-0f82-492a-aa98-0ba5a962b9cf
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3dkmthk/D3DKMTEnumAdapters, display.d3dkmtenumadapters, PFND3DKMT_ENUMADAPTERS, D3DKMTEnumAdapters, D3DKMTEnumAdapters function [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Universal
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Gdi32.lib
-req.dll : Gdi32.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_DRIVERVERSION
+UID: NF:d3dkmthk.D3DKMTEnumAdapters
+title: D3DKMTEnumAdapters function
+author: windows-driver-content
+description: Enumerates all graphics adapters on the system.
+old-location: display\d3dkmtenumadapters.htm
+old-project: display
+ms.assetid: 07c0aeac-0f82-492a-aa98-0ba5a962b9cf
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3dkmthk/D3DKMTEnumAdapters, display.d3dkmtenumadapters, PFND3DKMT_ENUMADAPTERS, D3DKMTEnumAdapters, D3DKMTEnumAdapters function [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Universal
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Gdi32.lib
+req.dll: Gdi32.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Gdi32.dll
+apiname:
+-	D3DKMTEnumAdapters
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_DRIVERVERSION
 ---
 
 

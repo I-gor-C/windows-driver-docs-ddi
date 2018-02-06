@@ -1,42 +1,47 @@
 ---
-UID : NC:spbcx.EVT_SPB_CONTROLLER_SEQUENCE
-title : EVT_SPB_CONTROLLER_SEQUENCE
-author : windows-driver-content
-description : An SPB controller driver's EvtSpbControllerIoSequence event callback function performs a sequence of data transfers between the specified target device and the buffers that are supplied with the sequence request.
-old-location : spb\evtspbcontrolleriosequence.htm
-old-project : SPB
-ms.assetid : C56F1528-5FDA-4BC9-AB32-7882FB0F7713
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : SPB.evtspbcontrolleriosequence, EvtSpbControllerIoSequence callback function [Buses], EvtSpbControllerIoSequence, EVT_SPB_CONTROLLER_SEQUENCE, EVT_SPB_CONTROLLER_SEQUENCE, spbcx/EvtSpbControllerIoSequence
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : spbcx.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Supported starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Called at IRQL <= DISPATCH_LEVEL.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SPB_TRANSFER_LIST_ENTRY, *PSPB_TRANSFER_LIST_ENTRY
-req.product : Windows 10 or later.
+UID: NC:spbcx.EVT_SPB_CONTROLLER_SEQUENCE
+title: EVT_SPB_CONTROLLER_SEQUENCE
+author: windows-driver-content
+description: An SPB controller driver's EvtSpbControllerIoSequence event callback function performs a sequence of data transfers between the specified target device and the buffers that are supplied with the sequence request.
+old-location: spb\evtspbcontrolleriosequence.htm
+old-project: SPB
+ms.assetid: C56F1528-5FDA-4BC9-AB32-7882FB0F7713
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: SPB.evtspbcontrolleriosequence, EvtSpbControllerIoSequence callback function [Buses], EvtSpbControllerIoSequence, EVT_SPB_CONTROLLER_SEQUENCE, EVT_SPB_CONTROLLER_SEQUENCE, spbcx/EvtSpbControllerIoSequence
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: spbcx.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Supported starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Called at IRQL <= DISPATCH_LEVEL.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Spbcx.h
+apiname:
+-	EvtSpbControllerIoSequence
+product: Windows
+targetos: Windows
+req.typenames: SPB_TRANSFER_LIST_ENTRY, *PSPB_TRANSFER_LIST_ENTRY
+req.product: Windows 10 or later.
 ---
 
 

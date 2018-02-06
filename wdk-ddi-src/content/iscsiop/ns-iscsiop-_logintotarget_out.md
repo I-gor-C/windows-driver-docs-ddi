@@ -1,41 +1,46 @@
 ---
-UID : NS:iscsiop._LoginToTarget_OUT
-title : "_LoginToTarget_OUT"
-author : windows-driver-content
-description : The LoginToTarget_OUT structure holds the output data for the LoginToTarget method.
-old-location : storage\logintotarget_out.htm
-old-project : storage
-ms.assetid : 569816dc-3b92-45da-a1b8-ce4b504b6592
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : PLoginToTarget_OUT structure pointer [Storage Devices], iscsiop/PLoginToTarget_OUT, LoginToTarget_OUT, *PLoginToTarget_OUT, LoginToTarget_OUT structure [Storage Devices], PLoginToTarget_OUT, structs-iSCSI_8fefca89-dd27-4a01-90a1-76ed16e79568.xml, iscsiop/LoginToTarget_OUT, _LoginToTarget_OUT, storage.logintotarget_out
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : iscsiop.h
-req.include-header : Iscsiop.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : LoginToTarget_OUT, *PLoginToTarget_OUT
+UID: NS:iscsiop._LoginToTarget_OUT
+title: "_LoginToTarget_OUT"
+author: windows-driver-content
+description: The LoginToTarget_OUT structure holds the output data for the LoginToTarget method.
+old-location: storage\logintotarget_out.htm
+old-project: storage
+ms.assetid: 569816dc-3b92-45da-a1b8-ce4b504b6592
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: PLoginToTarget_OUT structure pointer [Storage Devices], iscsiop/PLoginToTarget_OUT, LoginToTarget_OUT, *PLoginToTarget_OUT, LoginToTarget_OUT structure [Storage Devices], PLoginToTarget_OUT, structs-iSCSI_8fefca89-dd27-4a01-90a1-76ed16e79568.xml, iscsiop/LoginToTarget_OUT, _LoginToTarget_OUT, storage.logintotarget_out
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: iscsiop.h
+req.include-header: Iscsiop.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	iscsiop.h
+apiname:
+-	LoginToTarget_OUT
+product: Windows
+targetos: Windows
+req.typenames: LoginToTarget_OUT, *PLoginToTarget_OUT
 ---
 
 # _LoginToTarget_OUT structure

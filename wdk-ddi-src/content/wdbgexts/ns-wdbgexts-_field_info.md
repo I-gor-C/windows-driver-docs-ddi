@@ -1,42 +1,47 @@
 ---
-UID : NS:wdbgexts._FIELD_INFO
-title : "_FIELD_INFO"
-author : windows-driver-content
-description : The FIELD_INFO structure is used by the IG_DUMP_SYMBOL_INFOIoctl operation to provide information about a member in a structure.
-old-location : debugger\field_info.htm
-old-project : debugger
-ms.assetid : 627b14dc-9b13-464c-ba23-6e91bef2b940
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : WdbgExts_Ref_4c79e59a-cd12-4ad9-affb-b7f0bd7689fb.xml, _FIELD_INFO, FIELD_INFO, PFIELD_INFO, debugger.field_info, wdbgexts/PFIELD_INFO, PFIELD_INFO structure pointer [Windows Debugging], wdbgexts/FIELD_INFO, *PFIELD_INFO, FIELD_INFO structure [Windows Debugging]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdbgexts.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PFIELD_INFO, FIELD_INFO"
-req.product : Windows 10 or later.
+UID: NS:wdbgexts._FIELD_INFO
+title: "_FIELD_INFO"
+author: windows-driver-content
+description: The FIELD_INFO structure is used by the IG_DUMP_SYMBOL_INFOIoctl operation to provide information about a member in a structure.
+old-location: debugger\field_info.htm
+old-project: debugger
+ms.assetid: 627b14dc-9b13-464c-ba23-6e91bef2b940
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: WdbgExts_Ref_4c79e59a-cd12-4ad9-affb-b7f0bd7689fb.xml, _FIELD_INFO, FIELD_INFO, PFIELD_INFO, debugger.field_info, wdbgexts/PFIELD_INFO, PFIELD_INFO structure pointer [Windows Debugging], wdbgexts/FIELD_INFO, *PFIELD_INFO, FIELD_INFO structure [Windows Debugging]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdbgexts.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	WdbgExts.h
+apiname:
+-	FIELD_INFO
+product: Windows
+targetos: Windows
+req.typenames: "*PFIELD_INFO, FIELD_INFO"
+req.product: Windows 10 or later.
 ---
 
 # _FIELD_INFO structure

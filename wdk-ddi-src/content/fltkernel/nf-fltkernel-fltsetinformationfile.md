@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltSetInformationFile
-title : FltSetInformationFile function
-author : windows-driver-content
-description : FltSetInformationFile sets information for a given file.
-old-location : ifsk\fltsetinformationfile.htm
-old-project : ifsk
-ms.assetid : 8d0a91ef-9fb0-45a6-979a-614aed1703a5
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : fltkernel/FltSetInformationFile, ifsk.fltsetinformationfile, FltSetInformationFile function [Installable File System Drivers], FltApiRef_p_to_z_310caf59-cf9a-488a-8632-f0d8d5e14769.xml, FltSetInformationFile
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltSetInformationFile
+title: FltSetInformationFile function
+author: windows-driver-content
+description: FltSetInformationFile sets information for a given file.
+old-location: ifsk\fltsetinformationfile.htm
+old-project: ifsk
+ms.assetid: 8d0a91ef-9fb0-45a6-979a-614aed1703a5
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: fltkernel/FltSetInformationFile, ifsk.fltsetinformationfile, FltSetInformationFile function [Installable File System Drivers], FltApiRef_p_to_z_310caf59-cf9a-488a-8632-f0d8d5e14769.xml, FltSetInformationFile
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltSetInformationFile
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

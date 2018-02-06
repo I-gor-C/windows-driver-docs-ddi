@@ -1,42 +1,48 @@
 ---
-UID : NF:wdm.ExSetTimer
-title : ExSetTimer function
-author : windows-driver-content
-description : The ExSetTimer routine starts a timer operation and sets the timer to expire at the specified due time.
-old-location : kernel\exsettimer.htm
-old-project : kernel
-ms.assetid : 0320AB36-CA88-40E7-859E-B940401474DD
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ExSetTimer routine [Kernel-Mode Driver Architecture], kernel.exsettimer, ExSetTimer, wdm/ExSetTimer
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 8.1.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ntoskrnl.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ExSetTimer
+title: ExSetTimer function
+author: windows-driver-content
+description: The ExSetTimer routine starts a timer operation and sets the timer to expire at the specified due time.
+old-location: kernel\exsettimer.htm
+old-project: kernel
+ms.assetid: 0320AB36-CA88-40E7-859E-B940401474DD
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ExSetTimer routine [Kernel-Mode Driver Architecture], kernel.exsettimer, ExSetTimer, wdm/ExSetTimer
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 8.1.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ntoskrnl.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ntoskrnl.lib
+-	ntoskrnl.dll
+apiname:
+-	ExSetTimer
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

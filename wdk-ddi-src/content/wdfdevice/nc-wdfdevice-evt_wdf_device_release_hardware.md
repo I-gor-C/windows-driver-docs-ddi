@@ -1,42 +1,47 @@
 ---
-UID : NC:wdfdevice.EVT_WDF_DEVICE_RELEASE_HARDWARE
-title : EVT_WDF_DEVICE_RELEASE_HARDWARE
-author : windows-driver-content
-description : A driver's EvtDeviceReleaseHardware event callback function performs operations that are needed when a device is no longer accessible.
-old-location : wdf\evtdevicereleasehardware.htm
-old-project : wdf
-ms.assetid : b4c17e57-688c-4c76-892c-5c8abbf83f20
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.evtdevicereleasehardware, EvtDeviceReleaseHardware callback function, EvtDeviceReleaseHardware, EVT_WDF_DEVICE_RELEASE_HARDWARE, EVT_WDF_DEVICE_RELEASE_HARDWARE, wdfdevice/EvtDeviceReleaseHardware, DFDeviceObjectGeneralRef_aaaf477b-f2be-4b26-a607-cb057d976dc1.xml, kmdf.evtdevicereleasehardware
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdfdevice.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_DEVICE_SHUTDOWN_FLAGS
-req.product : Windows 10 or later.
+UID: NC:wdfdevice.EVT_WDF_DEVICE_RELEASE_HARDWARE
+title: EVT_WDF_DEVICE_RELEASE_HARDWARE
+author: windows-driver-content
+description: A driver's EvtDeviceReleaseHardware event callback function performs operations that are needed when a device is no longer accessible.
+old-location: wdf\evtdevicereleasehardware.htm
+old-project: wdf
+ms.assetid: b4c17e57-688c-4c76-892c-5c8abbf83f20
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.evtdevicereleasehardware, EvtDeviceReleaseHardware callback function, EvtDeviceReleaseHardware, EVT_WDF_DEVICE_RELEASE_HARDWARE, EVT_WDF_DEVICE_RELEASE_HARDWARE, wdfdevice/EvtDeviceReleaseHardware, DFDeviceObjectGeneralRef_aaaf477b-f2be-4b26-a607-cb057d976dc1.xml, kmdf.evtdevicereleasehardware
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdfdevice.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Wdfdevice.h
+apiname:
+-	EvtDeviceReleaseHardware
+product: Windows
+targetos: Windows
+req.typenames: WDF_DEVICE_SHUTDOWN_FLAGS
+req.product: Windows 10 or later.
 ---
 
 

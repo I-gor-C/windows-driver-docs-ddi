@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._D3DDDICB_RECLAIMALLOCATIONS
-title : "_D3DDDICB_RECLAIMALLOCATIONS"
-author : windows-driver-content
-description : Describes video memory resources that are to be reclaimed and that the user-mode display driver previously offered for reuse. Used with the pfnReclaimAllocationsCb function.
-old-location : display\d3dddicb_reclaimallocations.htm
-old-project : display
-ms.assetid : 61c8fdbf-b003-4caa-af13-ba6f1e22400c
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : "_D3DDDICB_RECLAIMALLOCATIONS, d3dumddi/D3DDDICB_RECLAIMALLOCATIONS, display.d3dddicb_reclaimallocations, D3DDDICB_RECLAIMALLOCATIONS, D3DDDICB_RECLAIMALLOCATIONS structure [Display Devices]"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDICB_RECLAIMALLOCATIONS
+UID: NS:d3dumddi._D3DDDICB_RECLAIMALLOCATIONS
+title: "_D3DDDICB_RECLAIMALLOCATIONS"
+author: windows-driver-content
+description: Describes video memory resources that are to be reclaimed and that the user-mode display driver previously offered for reuse. Used with the pfnReclaimAllocationsCb function.
+old-location: display\d3dddicb_reclaimallocations.htm
+old-project: display
+ms.assetid: 61c8fdbf-b003-4caa-af13-ba6f1e22400c
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: "_D3DDDICB_RECLAIMALLOCATIONS, d3dumddi/D3DDDICB_RECLAIMALLOCATIONS, display.d3dddicb_reclaimallocations, D3DDDICB_RECLAIMALLOCATIONS, D3DDDICB_RECLAIMALLOCATIONS structure [Display Devices]"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	D3dumddi.h
+apiname:
+-	D3DDDICB_RECLAIMALLOCATIONS
+product: Windows
+targetos: Windows
+req.typenames: D3DDDICB_RECLAIMALLOCATIONS
 ---
 
 # _D3DDDICB_RECLAIMALLOCATIONS structure

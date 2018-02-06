@@ -1,41 +1,46 @@
 ---
-UID : NS:ndkpi._NDK_CQ
-title : "_NDK_CQ"
-author : windows-driver-content
-description : The NDK_CQ structure specifies the attributes of an NDK completion queue (CQ) object.
-old-location : netvista\ndk_cq.htm
-old-project : netvista
-ms.assetid : FE5E1E5F-3EEC-4FF4-B275-E2B086ADCDCC
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : PNDK_CQ structure pointer [Network Drivers Starting with Windows Vista], NDK_CQ structure [Network Drivers Starting with Windows Vista], _NDK_CQ, ndkpi/PNDK_CQ, netvista.ndk_cq, NDK_CQ, ndkpi/NDK_CQ, PNDK_CQ
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndkpi.h
-req.include-header : Ndkpi.h
-req.target-type : Windows
-req.target-min-winverclnt : None supported,Supported in NDIS 6.30 and later.
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDK_CQ
+UID: NS:ndkpi._NDK_CQ
+title: "_NDK_CQ"
+author: windows-driver-content
+description: The NDK_CQ structure specifies the attributes of an NDK completion queue (CQ) object.
+old-location: netvista\ndk_cq.htm
+old-project: netvista
+ms.assetid: FE5E1E5F-3EEC-4FF4-B275-E2B086ADCDCC
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: PNDK_CQ structure pointer [Network Drivers Starting with Windows Vista], NDK_CQ structure [Network Drivers Starting with Windows Vista], _NDK_CQ, ndkpi/PNDK_CQ, netvista.ndk_cq, NDK_CQ, ndkpi/NDK_CQ, PNDK_CQ
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndkpi.h
+req.include-header: Ndkpi.h
+req.target-type: Windows
+req.target-min-winverclnt: None supported,Supported in NDIS 6.30 and later.
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndkpi.h
+apiname:
+-	NDK_CQ
+product: Windows
+targetos: Windows
+req.typenames: NDK_CQ
 ---
 
 # _NDK_CQ structure

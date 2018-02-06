@@ -1,41 +1,46 @@
 ---
-UID : NF:portcls.PcAddStreamResource
-title : PcAddStreamResource function
-author : windows-driver-content
-description : PcAddStreamResource adds a stream resource.
-old-location : audio\pcaddstreamresource.htm
-old-project : audio
-ms.assetid : CADB17C6-07EA-4497-AA73-4AECCC1D0A45
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : portcls/PcAddStreamResource, audio.pcaddstreamresource, PcAddStreamResource function [Audio Devices], PcAddStreamResource
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : portcls.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Portcls.lib
-req.dll : NA
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.PcAddStreamResource
+title: PcAddStreamResource function
+author: windows-driver-content
+description: PcAddStreamResource adds a stream resource.
+old-location: audio\pcaddstreamresource.htm
+old-project: audio
+ms.assetid: CADB17C6-07EA-4497-AA73-4AECCC1D0A45
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: portcls/PcAddStreamResource, audio.pcaddstreamresource, PcAddStreamResource function [Audio Devices], PcAddStreamResource
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: portcls.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Portcls.lib
+req.dll: NA
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NA
+apiname:
+-	PcAddStreamResource
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

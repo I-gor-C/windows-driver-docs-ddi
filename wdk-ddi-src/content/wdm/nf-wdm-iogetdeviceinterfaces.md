@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.IoGetDeviceInterfaces
-title : IoGetDeviceInterfaces function
-author : windows-driver-content
-description : The IoGetDeviceInterfaces routine returns a list of device interface instances of a particular device interface class (such as all devices on the system that support a HID interface).
-old-location : kernel\iogetdeviceinterfaces.htm
-old-project : kernel
-ms.assetid : a980fe92-ccd9-4a23-b324-ae8ef4e10345
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.iogetdeviceinterfaces, IoGetDeviceInterfaces routine [Kernel-Mode Driver Architecture], k104_c4286fdb-9b4e-42e4-a1f6-fb3a79d556a7.xml, IoGetDeviceInterfaces, wdm/IoGetDeviceInterfaces
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : MarkPower, MarkPowerDown, MarkQueryRelations, MarkStartDevice, PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.IoGetDeviceInterfaces
+title: IoGetDeviceInterfaces function
+author: windows-driver-content
+description: The IoGetDeviceInterfaces routine returns a list of device interface instances of a particular device interface class (such as all devices on the system that support a HID interface).
+old-location: kernel\iogetdeviceinterfaces.htm
+old-project: kernel
+ms.assetid: a980fe92-ccd9-4a23-b324-ae8ef4e10345
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.iogetdeviceinterfaces, IoGetDeviceInterfaces routine [Kernel-Mode Driver Architecture], k104_c4286fdb-9b4e-42e4-a1f6-fb3a79d556a7.xml, IoGetDeviceInterfaces, wdm/IoGetDeviceInterfaces
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: MarkPower, MarkPowerDown, MarkQueryRelations, MarkStartDevice, PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoGetDeviceInterfaces
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

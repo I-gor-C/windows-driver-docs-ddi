@@ -1,42 +1,47 @@
 ---
-UID : NS:wlanihvtypes._DOT11EXT_IHV_SSID_LIST
-title : "_DOT11EXT_IHV_SSID_LIST"
-author : windows-driver-content
-description : Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
-old-location : netvista\dot11ext_ihv_ssid_list.htm
-old-project : netvista
-ms.assetid : 10ef8868-5a65-4ed9-9f1d-440cda30cba4
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : PDOT11EXT_IHV_SSID_LIST, Native_802.11_data_types_c4e6c252-de57-4173-b6e1-df48dca0404f.xml, PDOT11EXT_IHV_SSID_LIST structure pointer [Network Drivers Starting with Windows Vista], netvista.dot11ext_ihv_ssid_list, wlanihvtypes/DOT11EXT_IHV_SSID_LIST, DOT11EXT_IHV_SSID_LIST structure [Network Drivers Starting with Windows Vista], *PDOT11EXT_IHV_SSID_LIST, DOT11EXT_IHV_SSID_LIST, wlanihvtypes/PDOT11EXT_IHV_SSID_LIST, _DOT11EXT_IHV_SSID_LIST
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wlanihvtypes.h
-req.include-header : Wlanihv.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating   systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDOT11EXT_IHV_SSID_LIST, DOT11EXT_IHV_SSID_LIST"
-req.product : Windows 10 or later.
+UID: NS:wlanihvtypes._DOT11EXT_IHV_SSID_LIST
+title: "_DOT11EXT_IHV_SSID_LIST"
+author: windows-driver-content
+description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+old-location: netvista\dot11ext_ihv_ssid_list.htm
+old-project: netvista
+ms.assetid: 10ef8868-5a65-4ed9-9f1d-440cda30cba4
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: PDOT11EXT_IHV_SSID_LIST, Native_802.11_data_types_c4e6c252-de57-4173-b6e1-df48dca0404f.xml, PDOT11EXT_IHV_SSID_LIST structure pointer [Network Drivers Starting with Windows Vista], netvista.dot11ext_ihv_ssid_list, wlanihvtypes/DOT11EXT_IHV_SSID_LIST, DOT11EXT_IHV_SSID_LIST structure [Network Drivers Starting with Windows Vista], *PDOT11EXT_IHV_SSID_LIST, DOT11EXT_IHV_SSID_LIST, wlanihvtypes/PDOT11EXT_IHV_SSID_LIST, _DOT11EXT_IHV_SSID_LIST
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wlanihvtypes.h
+req.include-header: Wlanihv.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wlanihvtypes.h
+apiname:
+-	DOT11EXT_IHV_SSID_LIST
+product: Windows
+targetos: Windows
+req.typenames: "*PDOT11EXT_IHV_SSID_LIST, DOT11EXT_IHV_SSID_LIST"
+req.product: Windows 10 or later.
 ---
 
 # _DOT11EXT_IHV_SSID_LIST structure

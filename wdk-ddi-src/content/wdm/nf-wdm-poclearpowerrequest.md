@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.PoClearPowerRequest
-title : PoClearPowerRequest function
-author : windows-driver-content
-description : The PoClearPowerRequest routine decrements the count for the specified power request type.
-old-location : kernel\poclearpowerrequest.htm
-old-project : kernel
-ms.assetid : d3754cca-81a4-42d2-a728-9f7e3270a4ee
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : PoClearPowerRequest routine [Kernel-Mode Driver Architecture], PoClearPowerRequest, portn_683a4a08-b6e3-4d6c-adfa-00d075db06f9.xml, wdm/PoClearPowerRequest, kernel.poclearpowerrequest
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 7.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.PoClearPowerRequest
+title: PoClearPowerRequest function
+author: windows-driver-content
+description: The PoClearPowerRequest routine decrements the count for the specified power request type.
+old-location: kernel\poclearpowerrequest.htm
+old-project: kernel
+ms.assetid: d3754cca-81a4-42d2-a728-9f7e3270a4ee
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: PoClearPowerRequest routine [Kernel-Mode Driver Architecture], PoClearPowerRequest, portn_683a4a08-b6e3-4d6c-adfa-00d075db06f9.xml, wdm/PoClearPowerRequest, kernel.poclearpowerrequest
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 7.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	PoClearPowerRequest
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

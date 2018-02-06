@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia._KSAUDIOMODULE_DESCRIPTOR
-title : "_KSAUDIOMODULE_DESCRIPTOR"
-author : windows-driver-content
-description : The KSAUDIOMODULE_DESCRIPTOR structure describes the static, external properties of audio modules.
-old-location : audio\ksaudiomodule_descriptor.htm
-old-project : audio
-ms.assetid : 3A991D49-B873-4C03-8A5B-D91EB5E63192
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : "*PKSAUDIOMODULE_DESCRIPTOR, _KSAUDIOMODULE_DESCRIPTOR, KSAUDIOMODULE_DESCRIPTOR structure [Audio Devices], PKSAUDIOMODULE_DESCRIPTOR structure pointer [Audio Devices], PKSAUDIOMODULE_DESCRIPTOR, ksmedia/KSAUDIOMODULE_DESCRIPTOR, KSAUDIOMODULE_DESCRIPTOR, audio.ksaudiomodule_descriptor, ksmedia/PKSAUDIOMODULE_DESCRIPTOR"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10, version 1703
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKSAUDIOMODULE_DESCRIPTOR, KSAUDIOMODULE_DESCRIPTOR"
+UID: NS:ksmedia._KSAUDIOMODULE_DESCRIPTOR
+title: "_KSAUDIOMODULE_DESCRIPTOR"
+author: windows-driver-content
+description: The KSAUDIOMODULE_DESCRIPTOR structure describes the static, external properties of audio modules.
+old-location: audio\ksaudiomodule_descriptor.htm
+old-project: audio
+ms.assetid: 3A991D49-B873-4C03-8A5B-D91EB5E63192
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: "*PKSAUDIOMODULE_DESCRIPTOR, _KSAUDIOMODULE_DESCRIPTOR, KSAUDIOMODULE_DESCRIPTOR structure [Audio Devices], PKSAUDIOMODULE_DESCRIPTOR structure pointer [Audio Devices], PKSAUDIOMODULE_DESCRIPTOR, ksmedia/KSAUDIOMODULE_DESCRIPTOR, KSAUDIOMODULE_DESCRIPTOR, audio.ksaudiomodule_descriptor, ksmedia/PKSAUDIOMODULE_DESCRIPTOR"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10, version 1703
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ksmedia.h
+apiname:
+-	KSAUDIOMODULE_DESCRIPTOR
+product: Windows
+targetos: Windows
+req.typenames: "*PKSAUDIOMODULE_DESCRIPTOR, KSAUDIOMODULE_DESCRIPTOR"
 ---
 
 # _KSAUDIOMODULE_DESCRIPTOR structure

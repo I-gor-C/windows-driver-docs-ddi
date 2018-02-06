@@ -1,41 +1,46 @@
 ---
-UID : NS:ntdddisk._DISK_GEOMETRY_EX
-title : "_DISK_GEOMETRY_EX"
-author : windows-driver-content
-description : The DISK_GEOMETRY_EX structure is a variable-length structure composed of a DISK_GEOMETRY structure followed by a DISK_PARTITION_INFO structure followed, in turn, by a DISK_DETECTION_INFO structure.
-old-location : storage\disk_geometry_ex.htm
-old-project : storage
-ms.assetid : 6397c0dd-4dc7-49fa-85a7-841f6c2b30d8
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : ntdddisk/PDISK_GEOMETRY_EX, PDISK_GEOMETRY_EX, *PDISK_GEOMETRY_EX, ntdddisk/DISK_GEOMETRY_EX, PDISK_GEOMETRY_EX structure pointer [Storage Devices], structs-disk_58b543a6-c9ee-4acf-9012-6572e9e9e627.xml, storage.disk_geometry_ex, _DISK_GEOMETRY_EX, DISK_GEOMETRY_EX, DISK_GEOMETRY_EX structure [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntdddisk.h
-req.include-header : Ntdddisk.h, Ntddk.h, Ntdddisk.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDISK_GEOMETRY_EX, DISK_GEOMETRY_EX"
+UID: NS:ntdddisk._DISK_GEOMETRY_EX
+title: "_DISK_GEOMETRY_EX"
+author: windows-driver-content
+description: The DISK_GEOMETRY_EX structure is a variable-length structure composed of a DISK_GEOMETRY structure followed by a DISK_PARTITION_INFO structure followed, in turn, by a DISK_DETECTION_INFO structure.
+old-location: storage\disk_geometry_ex.htm
+old-project: storage
+ms.assetid: 6397c0dd-4dc7-49fa-85a7-841f6c2b30d8
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: ntdddisk/PDISK_GEOMETRY_EX, PDISK_GEOMETRY_EX, *PDISK_GEOMETRY_EX, ntdddisk/DISK_GEOMETRY_EX, PDISK_GEOMETRY_EX structure pointer [Storage Devices], structs-disk_58b543a6-c9ee-4acf-9012-6572e9e9e627.xml, storage.disk_geometry_ex, _DISK_GEOMETRY_EX, DISK_GEOMETRY_EX, DISK_GEOMETRY_EX structure [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntdddisk.h
+req.include-header: Ntdddisk.h, Ntddk.h, Ntdddisk.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntdddisk.h
+apiname:
+-	DISK_GEOMETRY_EX
+product: Windows
+targetos: Windows
+req.typenames: "*PDISK_GEOMETRY_EX, DISK_GEOMETRY_EX"
 ---
 
 # _DISK_GEOMETRY_EX structure

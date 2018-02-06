@@ -1,41 +1,46 @@
 ---
-UID : NS:ntifs._TOKEN_CONTROL
-title : "_TOKEN_CONTROL"
-author : windows-driver-content
-description : The TOKEN_CONTROL structure contains information that identifies an access token.
-old-location : ifsk\token_control.htm
-old-project : ifsk
-ms.assetid : 3e0d41f4-4918-4768-a341-25d27f0a8af0
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : TOKEN_CONTROL, ntifs/TOKEN_CONTROL, ifsk.token_control, TOKEN_CONTROL structure [Installable File System Drivers], securitystructures_26958d39-4a12-4979-b0cc-7a880e3d2384.xml, PTOKEN_CONTROL, _TOKEN_CONTROL, *PTOKEN_CONTROL, PTOKEN_CONTROL structure pointer [Installable File System Drivers], ntifs/PTOKEN_CONTROL
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_CONTROL, *PTOKEN_CONTROL
+UID: NS:ntifs._TOKEN_CONTROL
+title: "_TOKEN_CONTROL"
+author: windows-driver-content
+description: The TOKEN_CONTROL structure contains information that identifies an access token.
+old-location: ifsk\token_control.htm
+old-project: ifsk
+ms.assetid: 3e0d41f4-4918-4768-a341-25d27f0a8af0
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: TOKEN_CONTROL, ntifs/TOKEN_CONTROL, ifsk.token_control, TOKEN_CONTROL structure [Installable File System Drivers], securitystructures_26958d39-4a12-4979-b0cc-7a880e3d2384.xml, PTOKEN_CONTROL, _TOKEN_CONTROL, *PTOKEN_CONTROL, PTOKEN_CONTROL structure pointer [Installable File System Drivers], ntifs/PTOKEN_CONTROL
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntifs.h
+apiname:
+-	TOKEN_CONTROL
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_CONTROL, *PTOKEN_CONTROL
 ---
 
 # _TOKEN_CONTROL structure

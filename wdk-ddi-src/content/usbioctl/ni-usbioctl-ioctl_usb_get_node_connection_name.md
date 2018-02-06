@@ -1,42 +1,47 @@
 ---
-UID : NI:usbioctl.IOCTL_USB_GET_NODE_CONNECTION_NAME
-title : IOCTL_USB_GET_NODE_CONNECTION_NAME
-author : windows-driver-content
-description : The IOCTL_USB_GET_NODE_CONNECTION_NAME I/O control request is used with the USB_NODE_CONNECTION_NAME structure to retrieve the symbolic link name of the hub that is attached to the downstream port.IOCTL_USB_GET_NODE_CONNECTION_NAME is a user-mode I/O control request. This request targets the USB hub device (GUID_DEVINTERFACE_USB_HUB).
-old-location : buses\ioctl_usb_get_node_connection_name.htm
-old-project : usbref
-ms.assetid : c4374b79-5143-4a35-aa4f-07fee7ea4fd3
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : buses.ioctl_usb_get_node_connection_name, IOCTL_USB_GET_NODE_CONNECTION_NAME control code [Buses], IOCTL_USB_GET_NODE_CONNECTION_NAME, usbioctl/IOCTL_USB_GET_NODE_CONNECTION_NAME, usbirp_d571c9e6-0caf-4746-bd69-b55fa6a3a407.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : usbioctl.h
-req.include-header : Usbioctl.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : USB_HUB_TYPE
-req.product : Windows 10 or later.
+UID: NI:usbioctl.IOCTL_USB_GET_NODE_CONNECTION_NAME
+title: IOCTL_USB_GET_NODE_CONNECTION_NAME
+author: windows-driver-content
+description: The IOCTL_USB_GET_NODE_CONNECTION_NAME I/O control request is used with the USB_NODE_CONNECTION_NAME structure to retrieve the symbolic link name of the hub that is attached to the downstream port.IOCTL_USB_GET_NODE_CONNECTION_NAME is a user-mode I/O control request. This request targets the USB hub device (GUID_DEVINTERFACE_USB_HUB).
+old-location: buses\ioctl_usb_get_node_connection_name.htm
+old-project: usbref
+ms.assetid: c4374b79-5143-4a35-aa4f-07fee7ea4fd3
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: buses.ioctl_usb_get_node_connection_name, IOCTL_USB_GET_NODE_CONNECTION_NAME control code [Buses], IOCTL_USB_GET_NODE_CONNECTION_NAME, usbioctl/IOCTL_USB_GET_NODE_CONNECTION_NAME, usbirp_d571c9e6-0caf-4746-bd69-b55fa6a3a407.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: usbioctl.h
+req.include-header: Usbioctl.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Usbioctl.h
+apiname:
+-	IOCTL_USB_GET_NODE_CONNECTION_NAME
+product: Windows
+targetos: Windows
+req.typenames: USB_HUB_TYPE
+req.product: Windows 10 or later.
 ---
 
 # IOCTL_USB_GET_NODE_CONNECTION_NAME IOCTL

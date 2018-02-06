@@ -1,41 +1,47 @@
 ---
-UID : NF:fltkernel.FltDeletePushLock
-title : FltDeletePushLock function
-author : windows-driver-content
-description : The FltDeletePushLock routine deletes a given push lock.
-old-location : ifsk\fltdeletepushlock.htm
-old-project : ifsk
-ms.assetid : 93b4914c-53a1-4594-ac8d-4be1b0c9e4d7
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : fltkernel/FltDeletePushLock, FltApiRef_a_to_d_876710d9-ee11-413f-8889-f9a34cb423fd.xml, ifsk.fltdeletepushlock, FltDeletePushLock, FltDeletePushLock routine [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltDeletePushLock
+title: FltDeletePushLock function
+author: windows-driver-content
+description: The FltDeletePushLock routine deletes a given push lock.
+old-location: ifsk\fltdeletepushlock.htm
+old-project: ifsk
+ms.assetid: 93b4914c-53a1-4594-ac8d-4be1b0c9e4d7
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: fltkernel/FltDeletePushLock, FltApiRef_a_to_d_876710d9-ee11-413f-8889-f9a34cb423fd.xml, ifsk.fltdeletepushlock, FltDeletePushLock, FltDeletePushLock routine [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	FltMgr.lib
+-	FltMgr.dll
+apiname:
+-	FltDeletePushLock
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

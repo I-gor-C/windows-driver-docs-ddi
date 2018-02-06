@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltCbdqDisable
-title : FltCbdqDisable function
-author : windows-driver-content
-description : FltCbdqDisable disables a minifilter driver's callback data queue.
-old-location : ifsk\fltcbdqdisable.htm
-old-project : ifsk
-ms.assetid : 7024d611-533c-43d3-91cf-a678b8359793
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltCbdqDisable, fltkernel/FltCbdqDisable, FltCbdqDisable function [Installable File System Drivers], FltApiRef_a_to_d_12682977-5b03-4656-ad7b-8f37bb8da66b.xml, ifsk.fltcbdqdisable
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltCbdqDisable
+title: FltCbdqDisable function
+author: windows-driver-content
+description: FltCbdqDisable disables a minifilter driver's callback data queue.
+old-location: ifsk\fltcbdqdisable.htm
+old-project: ifsk
+ms.assetid: 7024d611-533c-43d3-91cf-a678b8359793
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltCbdqDisable, fltkernel/FltCbdqDisable, FltCbdqDisable function [Installable File System Drivers], FltApiRef_a_to_d_12682977-5b03-4656-ad7b-8f37bb8da66b.xml, ifsk.fltcbdqdisable
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	fltkernel.h
+apiname:
+-	FltCbdqDisable
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

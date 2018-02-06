@@ -1,42 +1,47 @@
 ---
-UID : NS:wmilib._WMIGUIDREGINFO
-title : "_WMIGUIDREGINFO"
-author : windows-driver-content
-description : The WMIGUIDREGINFO structure contains registration information for a given data block or event block exposed by a driver that uses the WMI library support routines.
-old-location : kernel\wmiguidreginfo.htm
-old-project : kernel
-ms.assetid : 8bf36e54-5caa-4dc6-b659-ea0c1ac450f0
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : WMIGUIDREGINFO, *PWMIGUIDREGINFO, kernel.wmiguidreginfo, WMIGUIDREGINFO structure [Kernel-Mode Driver Architecture], wmilib/PWMIGUIDREGINFO, wmilib/WMIGUIDREGINFO, PWMIGUIDREGINFO structure pointer [Kernel-Mode Driver Architecture], kstruct_d_aeedb315-3e08-4af9-9a37-afd06166a662.xml, PWMIGUIDREGINFO, _WMIGUIDREGINFO
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wmilib.h
-req.include-header : Wmilib.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WMIGUIDREGINFO, *PWMIGUIDREGINFO
-req.product : Windows 10 or later.
+UID: NS:wmilib._WMIGUIDREGINFO
+title: "_WMIGUIDREGINFO"
+author: windows-driver-content
+description: The WMIGUIDREGINFO structure contains registration information for a given data block or event block exposed by a driver that uses the WMI library support routines.
+old-location: kernel\wmiguidreginfo.htm
+old-project: kernel
+ms.assetid: 8bf36e54-5caa-4dc6-b659-ea0c1ac450f0
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: WMIGUIDREGINFO, *PWMIGUIDREGINFO, kernel.wmiguidreginfo, WMIGUIDREGINFO structure [Kernel-Mode Driver Architecture], wmilib/PWMIGUIDREGINFO, wmilib/WMIGUIDREGINFO, PWMIGUIDREGINFO structure pointer [Kernel-Mode Driver Architecture], kstruct_d_aeedb315-3e08-4af9-9a37-afd06166a662.xml, PWMIGUIDREGINFO, _WMIGUIDREGINFO
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wmilib.h
+req.include-header: Wmilib.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wmilib.h
+apiname:
+-	WMIGUIDREGINFO
+product: Windows
+targetos: Windows
+req.typenames: WMIGUIDREGINFO, *PWMIGUIDREGINFO
+req.product: Windows 10 or later.
 ---
 
 # _WMIGUIDREGINFO structure

@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGK_TRANSFERFLAGS
-title : "_DXGK_TRANSFERFLAGS"
-author : windows-driver-content
-description : The DXGK_TRANSFERFLAGS structure identifies the type of transfer operation to set up in a call to the DxgkDdiBuildPagingBuffer function.
-old-location : display\dxgk_transferflags.htm
-old-project : display
-ms.assetid : b56657ac-98ff-482a-a2af-ffbfb8602248
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : "_DXGK_TRANSFERFLAGS, DXGK_TRANSFERFLAGS, DmStructs_91973ccf-775f-4e97-bb1a-17cd1343a4f8.xml, display.dxgk_transferflags, d3dkmddi/DXGK_TRANSFERFLAGS, DXGK_TRANSFERFLAGS structure [Display Devices]"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_TRANSFERFLAGS
+UID: NS:d3dkmddi._DXGK_TRANSFERFLAGS
+title: "_DXGK_TRANSFERFLAGS"
+author: windows-driver-content
+description: The DXGK_TRANSFERFLAGS structure identifies the type of transfer operation to set up in a call to the DxgkDdiBuildPagingBuffer function.
+old-location: display\dxgk_transferflags.htm
+old-project: display
+ms.assetid: b56657ac-98ff-482a-a2af-ffbfb8602248
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: "_DXGK_TRANSFERFLAGS, DXGK_TRANSFERFLAGS, DmStructs_91973ccf-775f-4e97-bb1a-17cd1343a4f8.xml, display.dxgk_transferflags, d3dkmddi/DXGK_TRANSFERFLAGS, DXGK_TRANSFERFLAGS structure [Display Devices]"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DXGK_TRANSFERFLAGS
+product: Windows
+targetos: Windows
+req.typenames: DXGK_TRANSFERFLAGS
 ---
 
 # _DXGK_TRANSFERFLAGS structure

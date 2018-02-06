@@ -1,41 +1,46 @@
 ---
-UID : NS:61883._FCP_SEND_REQUEST
-title : "_FCP_SEND_REQUEST"
-author : windows-driver-content
-description : This structure is used for a send request.
-old-location : ieee\fcp_send_request.htm
-old-project : IEEE
-ms.assetid : 82F36729-57E0-49AB-8C2D-BCBA6EED33EE
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : 61883/FCP_SEND_REQUEST, IEEE.fcp_send_request, PFCP_SEND_REQUEST structure pointer [Buses], FCP_SEND_REQUEST, _FCP_SEND_REQUEST, *PFCP_REQUEST, FCP_REQUEST, *PFCP_SEND_REQUEST, FCP_SEND_REQUEST structure [Buses], PFCP_SEND_REQUEST, 61883/PFCP_SEND_REQUEST
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : 61883.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FCP_SEND_REQUEST, *PFCP_SEND_REQUEST, *PFCP_REQUEST, FCP_REQUEST
+UID: NS:61883._FCP_SEND_REQUEST
+title: "_FCP_SEND_REQUEST"
+author: windows-driver-content
+description: This structure is used for a send request.
+old-location: ieee\fcp_send_request.htm
+old-project: IEEE
+ms.assetid: 82F36729-57E0-49AB-8C2D-BCBA6EED33EE
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: 61883/FCP_SEND_REQUEST, IEEE.fcp_send_request, PFCP_SEND_REQUEST structure pointer [Buses], FCP_SEND_REQUEST, _FCP_SEND_REQUEST, *PFCP_REQUEST, FCP_REQUEST, *PFCP_SEND_REQUEST, FCP_SEND_REQUEST structure [Buses], PFCP_SEND_REQUEST, 61883/PFCP_SEND_REQUEST
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: 61883.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	61883.h
+apiname:
+-	FCP_SEND_REQUEST
+product: Windows
+targetos: Windows
+req.typenames: FCP_SEND_REQUEST, *PFCP_SEND_REQUEST, *PFCP_REQUEST, FCP_REQUEST
 ---
 
 # _FCP_SEND_REQUEST structure

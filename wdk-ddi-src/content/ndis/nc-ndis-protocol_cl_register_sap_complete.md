@@ -1,41 +1,46 @@
 ---
-UID : NC:ndis.PROTOCOL_CL_REGISTER_SAP_COMPLETE
-title : PROTOCOL_CL_REGISTER_SAP_COMPLETE
-author : windows-driver-content
-description : A connection-oriented NDIS client that accepts incoming calls must have a ProtocolClRegisterSapComplete function to complete the asynchronous operations that it initiates with NdisClRegisterSap.
-old-location : netvista\protocolclregistersapcomplete.htm
-old-project : netvista
-ms.assetid : b0a2a224-3353-4f20-b14f-ed5d633a6ead
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.protocolclregistersapcomplete, ProtocolClRegisterSapComplete callback function [Network Drivers Starting with Windows Vista], ProtocolClRegisterSapComplete, PROTOCOL_CL_REGISTER_SAP_COMPLETE, PROTOCOL_CL_REGISTER_SAP_COMPLETE, ndis/ProtocolClRegisterSapComplete, condis_client_ref_6f2cf710-53e9-43ce-8b9a-46ec76d1146d.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see       ProtocolClRegisterSapComplete (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see       ProtocolClRegisterSapComplete (NDIS 5.1)) in Windows XP.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
+UID: NC:ndis.PROTOCOL_CL_REGISTER_SAP_COMPLETE
+title: PROTOCOL_CL_REGISTER_SAP_COMPLETE
+author: windows-driver-content
+description: A connection-oriented NDIS client that accepts incoming calls must have a ProtocolClRegisterSapComplete function to complete the asynchronous operations that it initiates with NdisClRegisterSap.
+old-location: netvista\protocolclregistersapcomplete.htm
+old-project: netvista
+ms.assetid: b0a2a224-3353-4f20-b14f-ed5d633a6ead
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.protocolclregistersapcomplete, ProtocolClRegisterSapComplete callback function [Network Drivers Starting with Windows Vista], ProtocolClRegisterSapComplete, PROTOCOL_CL_REGISTER_SAP_COMPLETE, PROTOCOL_CL_REGISTER_SAP_COMPLETE, ndis/ProtocolClRegisterSapComplete, condis_client_ref_6f2cf710-53e9-43ce-8b9a-46ec76d1146d.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see       ProtocolClRegisterSapComplete (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see       ProtocolClRegisterSapComplete (NDIS 5.1)) in Windows XP.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ndis.h
+apiname:
+-	ProtocolClRegisterSapComplete
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 

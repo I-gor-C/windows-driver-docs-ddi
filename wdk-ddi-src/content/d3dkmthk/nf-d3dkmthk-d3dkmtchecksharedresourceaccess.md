@@ -1,41 +1,49 @@
 ---
-UID : NF:d3dkmthk.D3DKMTCheckSharedResourceAccess
-title : D3DKMTCheckSharedResourceAccess function
-author : windows-driver-content
-description : The D3DKMTCheckSharedResourceAccess function determines if a process can access a shared resource.
-old-location : display\d3dkmtchecksharedresourceaccess.htm
-old-project : display
-ms.assetid : ca1861d3-a838-4b4a-9304-e75dcca04f0d
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : OpenGL_Functions_b9ffd997-0bfe-47ad-a769-c2ed8148fe4b.xml, D3DKMTCheckSharedResourceAccess function [Display Devices], display.d3dkmtchecksharedresourceaccess, D3DKMTCheckSharedResourceAccess, PFND3DKMT_CHECKSHAREDRESOURCEACCESS, d3dkmthk/D3DKMTCheckSharedResourceAccess
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Universal
-req.target-min-winverclnt : D3DKMTCheckSharedResourceAccess is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Gdi32.lib
-req.dll : Gdi32.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_DRIVERVERSION
+UID: NF:d3dkmthk.D3DKMTCheckSharedResourceAccess
+title: D3DKMTCheckSharedResourceAccess function
+author: windows-driver-content
+description: The D3DKMTCheckSharedResourceAccess function determines if a process can access a shared resource.
+old-location: display\d3dkmtchecksharedresourceaccess.htm
+old-project: display
+ms.assetid: ca1861d3-a838-4b4a-9304-e75dcca04f0d
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: OpenGL_Functions_b9ffd997-0bfe-47ad-a769-c2ed8148fe4b.xml, D3DKMTCheckSharedResourceAccess function [Display Devices], display.d3dkmtchecksharedresourceaccess, D3DKMTCheckSharedResourceAccess, PFND3DKMT_CHECKSHAREDRESOURCEACCESS, d3dkmthk/D3DKMTCheckSharedResourceAccess
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Universal
+req.target-min-winverclnt: D3DKMTCheckSharedResourceAccess is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Gdi32.lib
+req.dll: Gdi32.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Gdi32.dll
+-	API-MS-Win-dx-d3dkmt-l1-1-0.dll
+-	API-MS-Win-dx-d3dkmt-l1-1-1.dll
+-	API-MS-Win-DX-D3DKMT-L1-1-2.dll
+apiname:
+-	D3DKMTCheckSharedResourceAccess
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_DRIVERVERSION
 ---
 
 

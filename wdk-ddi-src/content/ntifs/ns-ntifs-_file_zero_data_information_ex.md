@@ -1,41 +1,46 @@
 ---
-UID : NS:ntifs._FILE_ZERO_DATA_INFORMATION_EX
-title : "_FILE_ZERO_DATA_INFORMATION_EX"
-author : windows-driver-content
-description : Contains a range of a file to set to zeros.
-old-location : ifsk\file_zero_data_information_ex.htm
-old-project : ifsk
-ms.assetid : 429C644C-C784-4C0E-96C3-EC82698F6624
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : "*PFILE_ZERO_DATA_INFORMATION_EX, ntifs/PFILE_ZERO_DATA_INFORMATION_EX, PFILE_ZERO_DATA_INFORMATION_EX structure pointer [Installable File System Drivers], PFILE_ZERO_DATA_INFORMATION_EX, ifsk.file_zero_data_information_ex, _FILE_ZERO_DATA_INFORMATION_EX, FILE_ZERO_DATA_INFORMATION_EX structure [Installable File System Drivers], ntifs/FILE_ZERO_DATA_INFORMATION_EX, FILE_ZERO_DATA_INFORMATION_EX"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FILE_ZERO_DATA_INFORMATION_EX, *PFILE_ZERO_DATA_INFORMATION_EX
+UID: NS:ntifs._FILE_ZERO_DATA_INFORMATION_EX
+title: "_FILE_ZERO_DATA_INFORMATION_EX"
+author: windows-driver-content
+description: Contains a range of a file to set to zeros.
+old-location: ifsk\file_zero_data_information_ex.htm
+old-project: ifsk
+ms.assetid: 429C644C-C784-4C0E-96C3-EC82698F6624
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: "*PFILE_ZERO_DATA_INFORMATION_EX, ntifs/PFILE_ZERO_DATA_INFORMATION_EX, PFILE_ZERO_DATA_INFORMATION_EX structure pointer [Installable File System Drivers], PFILE_ZERO_DATA_INFORMATION_EX, ifsk.file_zero_data_information_ex, _FILE_ZERO_DATA_INFORMATION_EX, FILE_ZERO_DATA_INFORMATION_EX structure [Installable File System Drivers], ntifs/FILE_ZERO_DATA_INFORMATION_EX, FILE_ZERO_DATA_INFORMATION_EX"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntifs.h
+apiname:
+-	FILE_ZERO_DATA_INFORMATION_EX
+product: Windows
+targetos: Windows
+req.typenames: FILE_ZERO_DATA_INFORMATION_EX, *PFILE_ZERO_DATA_INFORMATION_EX
 ---
 
 # _FILE_ZERO_DATA_INFORMATION_EX structure

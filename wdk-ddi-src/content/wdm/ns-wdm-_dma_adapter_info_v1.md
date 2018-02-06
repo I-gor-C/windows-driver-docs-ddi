@@ -1,42 +1,47 @@
 ---
-UID : NS:wdm._DMA_ADAPTER_INFO_V1
-title : "_DMA_ADAPTER_INFO_V1"
-author : windows-driver-content
-description : The DMA_ADAPTER_INFO_V1 structure describes the capabilities of the system DMA controller that is represented by an adapter object.
-old-location : kernel\dma_adapter_info_v1.htm
-old-project : kernel
-ms.assetid : 5BB089B8-4384-450D-BC81-9D9D068CF4EB
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : PDMA_ADAPTER_INFO_V1, wdm/PDMA_ADAPTER_INFO_V1, DMA_ADAPTER_INFO_V1 structure [Kernel-Mode Driver Architecture], PDMA_ADAPTER_INFO_V1 structure pointer [Kernel-Mode Driver Architecture], DMA_ADAPTER_INFO_V1, kernel.dma_adapter_info_v1, _DMA_ADAPTER_INFO_V1, *PDMA_ADAPTER_INFO_V1, wdm/DMA_ADAPTER_INFO_V1
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDMA_ADAPTER_INFO_V1, DMA_ADAPTER_INFO_V1"
-req.product : Windows 10 or later.
+UID: NS:wdm._DMA_ADAPTER_INFO_V1
+title: "_DMA_ADAPTER_INFO_V1"
+author: windows-driver-content
+description: The DMA_ADAPTER_INFO_V1 structure describes the capabilities of the system DMA controller that is represented by an adapter object.
+old-location: kernel\dma_adapter_info_v1.htm
+old-project: kernel
+ms.assetid: 5BB089B8-4384-450D-BC81-9D9D068CF4EB
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: PDMA_ADAPTER_INFO_V1, wdm/PDMA_ADAPTER_INFO_V1, DMA_ADAPTER_INFO_V1 structure [Kernel-Mode Driver Architecture], PDMA_ADAPTER_INFO_V1 structure pointer [Kernel-Mode Driver Architecture], DMA_ADAPTER_INFO_V1, kernel.dma_adapter_info_v1, _DMA_ADAPTER_INFO_V1, *PDMA_ADAPTER_INFO_V1, wdm/DMA_ADAPTER_INFO_V1
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	DMA_ADAPTER_INFO_V1
+product: Windows
+targetos: Windows
+req.typenames: "*PDMA_ADAPTER_INFO_V1, DMA_ADAPTER_INFO_V1"
+req.product: Windows 10 or later.
 ---
 
 # _DMA_ADAPTER_INFO_V1 structure

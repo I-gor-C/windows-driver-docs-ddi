@@ -1,41 +1,46 @@
 ---
-UID : NN:portcls.IMiniportWavePci
-title : IMiniportWavePci
-author : windows-driver-content
-description : The IMiniportWavePci interface is the primary interface that is exposed by the miniport driver for a WavePci audio device.
-old-location : audio\iminiportwavepci.htm
-old-project : audio
-ms.assetid : 74619f9b-cd67-47f2-8c67-6fb42b794b9a
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : audio.iminiportwavepci, IMiniportWavePci interface [Audio Devices], IMiniportWavePci interface [Audio Devices], described, IMiniportWavePci, portcls/IMiniportWavePci, audmp-routines_bd4a9d9c-d3eb-40bc-93d9-277abe4ee258.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : portcls.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Portcls.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NN:portcls.IMiniportWavePci
+title: IMiniportWavePci
+author: windows-driver-content
+description: The IMiniportWavePci interface is the primary interface that is exposed by the miniport driver for a WavePci audio device.
+old-location: audio\iminiportwavepci.htm
+old-project: audio
+ms.assetid: 74619f9b-cd67-47f2-8c67-6fb42b794b9a
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: audio.iminiportwavepci, IMiniportWavePci interface [Audio Devices], IMiniportWavePci interface [Audio Devices], described, IMiniportWavePci, portcls/IMiniportWavePci, audmp-routines_bd4a9d9c-d3eb-40bc-93d9-277abe4ee258.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: portcls.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Portcls.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	portcls.h
+apiname:
+-	IMiniportWavePci
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 # IMiniportWavePci interface

@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi_hwaccess.READ_REGISTER_BUFFER_USHORT
-title : READ_REGISTER_BUFFER_USHORT function
-author : windows-driver-content
-description : The READ_REGISTER_BUFFER_USHORT function reads a number of USHORT values from the specified register address into a buffer.
-old-location : wdf\read_register_buffer_ushort.htm
-old-project : wdf
-ms.assetid : 0CA07C11-7E46-4225-AC61-5183C322604E
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : umdf.read_register_buffer_ushort, wdf.read_register_buffer_ushort, wudfddi_hwaccess/READ_REGISTER_BUFFER_USHORT, READ_REGISTER_BUFFER_USHORT, READ_REGISTER_BUFFER_USHORT function
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wudfddi_hwaccess.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.11
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : UMDF_IO_TARGET_OPEN_PARAMS, *PUMDF_IO_TARGET_OPEN_PARAMS
-req.product : Windows 10 or later.
+UID: NF:wudfddi_hwaccess.READ_REGISTER_BUFFER_USHORT
+title: READ_REGISTER_BUFFER_USHORT function
+author: windows-driver-content
+description: The READ_REGISTER_BUFFER_USHORT function reads a number of USHORT values from the specified register address into a buffer.
+old-location: wdf\read_register_buffer_ushort.htm
+old-project: wdf
+ms.assetid: 0CA07C11-7E46-4225-AC61-5183C322604E
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: umdf.read_register_buffer_ushort, wdf.read_register_buffer_ushort, wudfddi_hwaccess/READ_REGISTER_BUFFER_USHORT, READ_REGISTER_BUFFER_USHORT, READ_REGISTER_BUFFER_USHORT function
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wudfddi_hwaccess.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.11
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wudfddi_hwaccess.h
+apiname:
+-	READ_REGISTER_BUFFER_USHORT
+product: Windows
+targetos: Windows
+req.typenames: UMDF_IO_TARGET_OPEN_PARAMS, *PUMDF_IO_TARGET_OPEN_PARAMS
+req.product: Windows 10 or later.
 ---
 
 

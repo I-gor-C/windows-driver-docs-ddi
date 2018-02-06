@@ -1,41 +1,46 @@
 ---
-UID : NE:ntddk._SOC_SUBSYSTEM_TYPE
-title : "_SOC_SUBSYSTEM_TYPE"
-author : windows-driver-content
-description : The SOC_SYBSYSTEM_TYPE enumeration defines different types of System on a Chip (SoC) subsystems.
-old-location : whea\soc_sybsystem_type.htm
-old-project : whea
-ms.assetid : 179D61E3-C2EE-4821-93F8-DB763892DD3D
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : ntddk/SOC_SUBSYSTEM_WIRELESS_MODEM, SOC_SUBSYS_SENSORS, ntddk/SOC_SUBSYS_WIRELSS_CONNECTIVITY, _SOC_SUBSYSTEM_TYPE, SOC_SUBSYSTEM_WIRELESS_MODEM, SOC_SUBSYS_WIRELSS_CONNECTIVITY, SOC_SUBSYS_AUDIO_DSP, ntddk/SOC_SUBSYS_AUDIO_DSP, ntddk/SOC_SUBSYS_SENSORS, SOC_SUBSYS_VENDOR_DEFINED, whea.soc_sybsystem_type, *PSOC_SUBSYSTEM_TYPE, ntddk/SOC_SUBSYS_VENDOR_DEFINED, SOC_SUBSYSTEM_TYPE, ntddk/SOC_SUBSYSTEM_TYPE, SOC_SUBSYSTEM_TYPE enumeration [WHEA Drivers and Applications]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : ntddk.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSOC_SUBSYSTEM_TYPE, SOC_SUBSYSTEM_TYPE"
+UID: NE:ntddk._SOC_SUBSYSTEM_TYPE
+title: "_SOC_SUBSYSTEM_TYPE"
+author: windows-driver-content
+description: The SOC_SYBSYSTEM_TYPE enumeration defines different types of System on a Chip (SoC) subsystems.
+old-location: whea\soc_sybsystem_type.htm
+old-project: whea
+ms.assetid: 179D61E3-C2EE-4821-93F8-DB763892DD3D
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: ntddk/SOC_SUBSYSTEM_WIRELESS_MODEM, SOC_SUBSYS_SENSORS, ntddk/SOC_SUBSYS_WIRELSS_CONNECTIVITY, _SOC_SUBSYSTEM_TYPE, SOC_SUBSYSTEM_WIRELESS_MODEM, SOC_SUBSYS_WIRELSS_CONNECTIVITY, SOC_SUBSYS_AUDIO_DSP, ntddk/SOC_SUBSYS_AUDIO_DSP, ntddk/SOC_SUBSYS_SENSORS, SOC_SUBSYS_VENDOR_DEFINED, whea.soc_sybsystem_type, *PSOC_SUBSYSTEM_TYPE, ntddk/SOC_SUBSYS_VENDOR_DEFINED, SOC_SUBSYSTEM_TYPE, ntddk/SOC_SUBSYSTEM_TYPE, SOC_SUBSYSTEM_TYPE enumeration [WHEA Drivers and Applications]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: ntddk.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddk.h
+apiname:
+-	SOC_SUBSYSTEM_TYPE
+product: Windows
+targetos: Windows
+req.typenames: "*PSOC_SUBSYSTEM_TYPE, SOC_SUBSYSTEM_TYPE"
 ---
 
 # _SOC_SUBSYSTEM_TYPE Enumeration
@@ -65,31 +70,31 @@ typedef enum _SOC_SUBSYSTEM_TYPE {
 ## Constants
 
 <table>
-
-<tr>
-<td>SOC_SUBSYS_AUDIO_DSP</td>
-<td>Audio digital signal processor (DSP)</td>
-</tr>
-
-<tr>
-<td>SOC_SUBSYS_SENSORS</td>
-<td>Sensors</td>
-</tr>
-
-<tr>
-<td>SOC_SUBSYS_VENDOR_DEFINED</td>
-<td>Subsystem types in the range 0x10000 through 0x80000000 are reserved for independent hardware vendors.</td>
-</tr>
-
-<tr>
-<td>SOC_SUBSYS_WIRELESS_MODEM</td>
-<td></td>
-</tr>
-
-<tr>
-<td>SOC_SUBSYS_WIRELSS_CONNECTIVITY</td>
-<td>Wireless connectivity</td>
-</tr>
+            
+                <tr>
+                    <td>SOC_SUBSYS_AUDIO_DSP</td>
+                    <td>Audio digital signal processor (DSP)</td>
+                </tr>
+            
+                <tr>
+                    <td>SOC_SUBSYS_SENSORS</td>
+                    <td>Sensors</td>
+                </tr>
+            
+                <tr>
+                    <td>SOC_SUBSYS_VENDOR_DEFINED</td>
+                    <td>Subsystem types in the range 0x10000 through 0x80000000 are reserved for independent hardware vendors.</td>
+                </tr>
+            
+                <tr>
+                    <td>SOC_SUBSYS_WIRELESS_MODEM</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>SOC_SUBSYS_WIRELSS_CONNECTIVITY</td>
+                    <td>Wireless connectivity</td>
+                </tr>
 </table>
 
 

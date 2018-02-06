@@ -1,41 +1,50 @@
 ---
-UID : NF:dbgeng.IDebugClient5.GetIdentity
-title : IDebugClient5::GetIdentity method
-author : windows-driver-content
-description : The GetIdentity method returns a string describing the computer and user this client represents.
-old-location : debugger\getidentity.htm
-old-project : debugger
-ms.assetid : 1d4e7c69-bc32-43f6-b45b-fcee2e04dc26
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : GetIdentity method [Windows Debugging], IDebugClient2 interface, GetIdentity method [Windows Debugging], IDebugClient4::GetIdentity, GetIdentity method [Windows Debugging], IDebugClient5 interface, IDebugClient5::GetIdentity, dbgeng/IDebugClient::GetIdentity, IDebugClient4 interface [Windows Debugging], GetIdentity method, IDebugClient3 interface [Windows Debugging], GetIdentity method, IDebugClient2 interface [Windows Debugging], GetIdentity method, dbgeng/IDebugClient5::GetIdentity, GetIdentity method [Windows Debugging], IDebugClient interface, IDebugClient interface [Windows Debugging], GetIdentity method, IDebugClient::GetIdentity, IDebugClient_7c54bffa-5190-49f5-919d-16bfb851ae36.xml, dbgeng/IDebugClient4::GetIdentity, IDebugClient3::GetIdentity, IDebugClient2::GetIdentity, dbgeng/IDebugClient3::GetIdentity, debugger.getidentity, GetIdentity, GetIdentity method [Windows Debugging], IDebugClient4 interface, GetIdentity method [Windows Debugging], IDebugClient3 interface, IDebugClient5 interface [Windows Debugging], GetIdentity method, dbgeng/IDebugClient2::GetIdentity, IDebugClient5
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugClient5.GetIdentity
+title: IDebugClient5::GetIdentity method
+author: windows-driver-content
+description: The GetIdentity method returns a string describing the computer and user this client represents.
+old-location: debugger\getidentity.htm
+old-project: debugger
+ms.assetid: 1d4e7c69-bc32-43f6-b45b-fcee2e04dc26
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: GetIdentity method [Windows Debugging], IDebugClient2 interface, GetIdentity method [Windows Debugging], IDebugClient4::GetIdentity, GetIdentity method [Windows Debugging], IDebugClient5 interface, IDebugClient5::GetIdentity, dbgeng/IDebugClient::GetIdentity, IDebugClient4 interface [Windows Debugging], GetIdentity method, IDebugClient3 interface [Windows Debugging], GetIdentity method, IDebugClient2 interface [Windows Debugging], GetIdentity method, dbgeng/IDebugClient5::GetIdentity, GetIdentity method [Windows Debugging], IDebugClient interface, IDebugClient interface [Windows Debugging], GetIdentity method, IDebugClient::GetIdentity, IDebugClient_7c54bffa-5190-49f5-919d-16bfb851ae36.xml, dbgeng/IDebugClient4::GetIdentity, IDebugClient3::GetIdentity, IDebugClient2::GetIdentity, dbgeng/IDebugClient3::GetIdentity, debugger.getidentity, GetIdentity, GetIdentity method [Windows Debugging], IDebugClient4 interface, GetIdentity method [Windows Debugging], IDebugClient3 interface, IDebugClient5 interface [Windows Debugging], GetIdentity method, dbgeng/IDebugClient2::GetIdentity, IDebugClient5
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugClient.GetIdentity
+-	IDebugClient2.GetIdentity
+-	IDebugClient3.GetIdentity
+-	IDebugClient4.GetIdentity
+-	IDebugClient5.GetIdentity
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

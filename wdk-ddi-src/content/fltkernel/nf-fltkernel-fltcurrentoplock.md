@@ -1,41 +1,47 @@
 ---
-UID : NF:fltkernel.FltCurrentOplock
-title : FltCurrentOplock function
-author : windows-driver-content
-description : A minifilter driver calls the FltCurrentOplock routine to determine whether there are any opportunistic locks (oplocks) on a file.
-old-location : ifsk\fltcurrentoplock.htm
-old-project : ifsk
-ms.assetid : e503b016-3271-4cce-a7fc-09c04b56716d
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltCurrentOplock routine [Installable File System Drivers], FltCurrentOplock, FltApiRef_a_to_d_cda1ee2b-1ce2-40a3-8e55-25846f59f611.xml, fltkernel/FltCurrentOplock, ifsk.fltcurrentoplock
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : The FltCurrentOplock routine is available starting with Windows 7.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltCurrentOplock
+title: FltCurrentOplock function
+author: windows-driver-content
+description: A minifilter driver calls the FltCurrentOplock routine to determine whether there are any opportunistic locks (oplocks) on a file.
+old-location: ifsk\fltcurrentoplock.htm
+old-project: ifsk
+ms.assetid: e503b016-3271-4cce-a7fc-09c04b56716d
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltCurrentOplock routine [Installable File System Drivers], FltCurrentOplock, FltApiRef_a_to_d_cda1ee2b-1ce2-40a3-8e55-25846f59f611.xml, fltkernel/FltCurrentOplock, ifsk.fltcurrentoplock
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: The FltCurrentOplock routine is available starting with Windows 7.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	FltMgr.lib
+-	FltMgr.dll
+apiname:
+-	FltCurrentOplock
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

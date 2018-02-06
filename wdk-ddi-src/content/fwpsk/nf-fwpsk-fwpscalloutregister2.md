@@ -1,41 +1,47 @@
 ---
-UID : NF:fwpsk.FwpsCalloutRegister2
-title : FwpsCalloutRegister2 function
-author : windows-driver-content
-description : The FwpsCalloutRegister2 function registers a callout with the filter engine.Note  FwpsCalloutRegister2 is the specific version of FwpsCalloutRegister used in Windows 8 and later.
-old-location : netvista\fwpscalloutregister2.htm
-old-project : netvista
-ms.assetid : 7e60d536-607f-469f-8de4-5f6b77443b3e
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : FwpsCalloutRegister2 function [Network Drivers Starting with Windows Vista], fwpsk/FwpsCalloutRegister2, netvista.fwpscalloutregister2, FwpsCalloutRegister2
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fwpsk.h
-req.include-header : Fwpsk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Fwpkclnt.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FWPS_VSWITCH_EVENT_TYPE
+UID: NF:fwpsk.FwpsCalloutRegister2
+title: FwpsCalloutRegister2 function
+author: windows-driver-content
+description: The FwpsCalloutRegister2 function registers a callout with the filter engine.Note  FwpsCalloutRegister2 is the specific version of FwpsCalloutRegister used in Windows 8 and later.
+old-location: netvista\fwpscalloutregister2.htm
+old-project: netvista
+ms.assetid: 7e60d536-607f-469f-8de4-5f6b77443b3e
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: FwpsCalloutRegister2 function [Network Drivers Starting with Windows Vista], fwpsk/FwpsCalloutRegister2, netvista.fwpscalloutregister2, FwpsCalloutRegister2
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fwpsk.h
+req.include-header: Fwpsk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Fwpkclnt.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Fwpkclnt.lib
+-	Fwpkclnt.dll
+apiname:
+-	FwpsCalloutRegister2
+product: Windows
+targetos: Windows
+req.typenames: FWPS_VSWITCH_EVENT_TYPE
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:d3d10umddi.D3D11DDIARG_BUFFER_RENDERTARGETVIEW
-title : D3D11DDIARG_BUFFER_RENDERTARGETVIEW
-author : windows-driver-content
-description : The D3D11DDIARG_BUFFER_RENDERTARGETVIEW structure describes a buffer that is used to create a render target view in a call to the CreateRenderTargetView function.
-old-location : display\d3d11ddiarg_buffer_rendertargetview.htm
-old-project : display
-ms.assetid : 1c89b4bd-7473-4da6-afbe-4103f3f3d7be
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : UMDisplayDriver_Dx11param_Structs_1e10bcbc-ad5c-47b4-a36d-d1d471e38a7e.xml, D3D11DDIARG_BUFFER_RENDERTARGETVIEW, D3D11DDIARG_BUFFER_RENDERTARGETVIEW structure [Display Devices], d3d10umddi/D3D11DDIARG_BUFFER_RENDERTARGETVIEW, display.d3d11ddiarg_buffer_rendertargetview
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Windows
-req.target-min-winverclnt : D3D11DDIARG_BUFFER_RENDERTARGETVIEW is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3D11DDIARG_BUFFER_RENDERTARGETVIEW
+UID: NS:d3d10umddi.D3D11DDIARG_BUFFER_RENDERTARGETVIEW
+title: D3D11DDIARG_BUFFER_RENDERTARGETVIEW
+author: windows-driver-content
+description: The D3D11DDIARG_BUFFER_RENDERTARGETVIEW structure describes a buffer that is used to create a render target view in a call to the CreateRenderTargetView function.
+old-location: display\d3d11ddiarg_buffer_rendertargetview.htm
+old-project: display
+ms.assetid: 1c89b4bd-7473-4da6-afbe-4103f3f3d7be
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: UMDisplayDriver_Dx11param_Structs_1e10bcbc-ad5c-47b4-a36d-d1d471e38a7e.xml, D3D11DDIARG_BUFFER_RENDERTARGETVIEW, D3D11DDIARG_BUFFER_RENDERTARGETVIEW structure [Display Devices], d3d10umddi/D3D11DDIARG_BUFFER_RENDERTARGETVIEW, display.d3d11ddiarg_buffer_rendertargetview
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Windows
+req.target-min-winverclnt: D3D11DDIARG_BUFFER_RENDERTARGETVIEW is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	D3D11DDIARG_BUFFER_RENDERTARGETVIEW
+product: Windows
+targetos: Windows
+req.typenames: D3D11DDIARG_BUFFER_RENDERTARGETVIEW
 ---
 
 # D3D11DDIARG_BUFFER_RENDERTARGETVIEW structure

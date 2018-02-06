@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisFRestartFilter
-title : NdisFRestartFilter function
-author : windows-driver-content
-description : A filter driver calls the NdisFRestartFilter function to request NDIS to initiate a restart operation for a filter module.
-old-location : netvista\ndisfrestartfilter.htm
-old-project : netvista
-ms.assetid : 8b0fc032-3ec0-4e18-a5f5-6409db8ae42d
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NdisFRestartFilter function [Network Drivers Starting with Windows Vista], NdisFRestartFilter, ndis/NdisFRestartFilter, netvista.ndisfrestartfilter, filter_ndis_functions_ref_c95250d0-3081-40cc-a39f-0d5c1ce51925.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_Filter_Driver_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisFRestartFilter
+title: NdisFRestartFilter function
+author: windows-driver-content
+description: A filter driver calls the NdisFRestartFilter function to request NDIS to initiate a restart operation for a filter module.
+old-location: netvista\ndisfrestartfilter.htm
+old-project: netvista
+ms.assetid: 8b0fc032-3ec0-4e18-a5f5-6409db8ae42d
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NdisFRestartFilter function [Network Drivers Starting with Windows Vista], NdisFRestartFilter, ndis/NdisFRestartFilter, netvista.ndisfrestartfilter, filter_ndis_functions_ref_c95250d0-3081-40cc-a39f-0d5c1ce51925.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_Filter_Driver_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisFRestartFilter
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dkmddi.DXGKDDI_MONITOR_RELEASEMONITORSOURCEMODESET
-title : DXGKDDI_MONITOR_RELEASEMONITORSOURCEMODESET
-author : windows-driver-content
-description : The pfnReleaseMonitorSourceModeSet function releases a handle to a monitor source mode set object.
-old-location : display\dxgk_monitor_interface_pfnreleasemonitorsourcemodeset.htm
-old-project : display
-ms.assetid : af5f4a1b-232c-4192-96b4-8fa31dfe3019
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgk_monitor_interface_pfnreleasemonitorsourcemodeset, pfnReleaseMonitorSourceModeSet callback function [Display Devices], pfnReleaseMonitorSourceModeSet, DXGKDDI_MONITOR_RELEASEMONITORSOURCEMODESET, DXGKDDI_MONITOR_RELEASEMONITORSOURCEMODESET, d3dkmddi/pfnReleaseMonitorSourceModeSet, VidPnFunctions_5f8e1fd8-b807-4da2-901e-0284e21d858e.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
+UID: NC:d3dkmddi.DXGKDDI_MONITOR_RELEASEMONITORSOURCEMODESET
+title: DXGKDDI_MONITOR_RELEASEMONITORSOURCEMODESET
+author: windows-driver-content
+description: The pfnReleaseMonitorSourceModeSet function releases a handle to a monitor source mode set object.
+old-location: display\dxgk_monitor_interface_pfnreleasemonitorsourcemodeset.htm
+old-project: display
+ms.assetid: af5f4a1b-232c-4192-96b4-8fa31dfe3019
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgk_monitor_interface_pfnreleasemonitorsourcemodeset, pfnReleaseMonitorSourceModeSet callback function [Display Devices], pfnReleaseMonitorSourceModeSet, DXGKDDI_MONITOR_RELEASEMONITORSOURCEMODESET, DXGKDDI_MONITOR_RELEASEMONITORSOURCEMODESET, d3dkmddi/pfnReleaseMonitorSourceModeSet, VidPnFunctions_5f8e1fd8-b807-4da2-901e-0284e21d858e.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	pfnReleaseMonitorSourceModeSet
+product: Windows
+targetos: Windows
+req.typenames: DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
 

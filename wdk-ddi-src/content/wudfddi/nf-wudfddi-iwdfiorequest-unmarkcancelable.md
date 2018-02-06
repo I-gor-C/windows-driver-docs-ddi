@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFIoRequest.UnmarkCancelable
-title : IWDFIoRequest::UnmarkCancelable method
-author : windows-driver-content
-description : The UnmarkCancelable method disables the canceling of an I/O request.
-old-location : wdf\iwdfiorequest_unmarkcancelable.htm
-old-project : wdf
-ms.assetid : 5a3fa72c-241e-4270-92eb-70f135d79871
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : IWDFIoRequest::UnmarkCancelable, UnmarkCancelable method, UMDFRequestObjectRef_365794c9-1bce-43ef-8ce5-83affed9b18e.xml, wudfddi/IWDFIoRequest::UnmarkCancelable, umdf.iwdfiorequest_unmarkcancelable, IWDFIoRequest interface, UnmarkCancelable method, wdf.iwdfiorequest_unmarkcancelable, UnmarkCancelable, UnmarkCancelable method, IWDFIoRequest interface, IWDFIoRequest
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.5
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFIoRequest.UnmarkCancelable
+title: IWDFIoRequest::UnmarkCancelable method
+author: windows-driver-content
+description: The UnmarkCancelable method disables the canceling of an I/O request.
+old-location: wdf\iwdfiorequest_unmarkcancelable.htm
+old-project: wdf
+ms.assetid: 5a3fa72c-241e-4270-92eb-70f135d79871
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: IWDFIoRequest::UnmarkCancelable, UnmarkCancelable method, UMDFRequestObjectRef_365794c9-1bce-43ef-8ce5-83affed9b18e.xml, wudfddi/IWDFIoRequest::UnmarkCancelable, umdf.iwdfiorequest_unmarkcancelable, IWDFIoRequest interface, UnmarkCancelable method, wdf.iwdfiorequest_unmarkcancelable, UnmarkCancelable, UnmarkCancelable method, IWDFIoRequest interface, IWDFIoRequest
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.5
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFIoRequest.UnmarkCancelable
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

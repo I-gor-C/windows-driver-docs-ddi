@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltOplockIsSharedRequest
-title : FltOplockIsSharedRequest function
-author : windows-driver-content
-description : The FltOplockIsSharedRequest routine determines if a request for an opportunistic lock (oplock) wants a shared oplock.
-old-location : ifsk\fltoplockissharedrequest.htm
-old-project : ifsk
-ms.assetid : 5387e22a-88df-413f-a6d1-2e208381df67
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltOplockIsSharedRequest, fltkernel/FltOplockIsSharedRequest, ifsk.fltoplockissharedrequest, FltApiRef_e_to_o_93f74880-eb0d-4040-82a0-e0cb4bfb2cba.xml, FltOplockIsSharedRequest routine [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : The FltOplockIsSharedRequest routine is available starting with Windows 7.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltOplockIsSharedRequest
+title: FltOplockIsSharedRequest function
+author: windows-driver-content
+description: The FltOplockIsSharedRequest routine determines if a request for an opportunistic lock (oplock) wants a shared oplock.
+old-location: ifsk\fltoplockissharedrequest.htm
+old-project: ifsk
+ms.assetid: 5387e22a-88df-413f-a6d1-2e208381df67
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltOplockIsSharedRequest, fltkernel/FltOplockIsSharedRequest, ifsk.fltoplockissharedrequest, FltApiRef_e_to_o_93f74880-eb0d-4040-82a0-e0cb4bfb2cba.xml, FltOplockIsSharedRequest routine [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: The FltOplockIsSharedRequest routine is available starting with Windows 7.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltOplockIsSharedRequest
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

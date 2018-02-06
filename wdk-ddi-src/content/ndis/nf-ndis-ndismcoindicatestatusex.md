@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisMCoIndicateStatusEx
-title : NdisMCoIndicateStatusEx function
-author : windows-driver-content
-description : The NdisMCoIndicateStatusEx function reports a change in the status of a CoNDIS miniport adapter.
-old-location : netvista\ndismcoindicatestatusex.htm
-old-project : netvista
-ms.assetid : e6d5bd94-d9cb-462f-84e4-bf9d70961e95
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NdisMCoIndicateStatusEx, netvista.ndismcoindicatestatusex, NdisMCoIndicateStatusEx function [Network Drivers Starting with Windows Vista], condis_status_ref_1a0c27e2-e728-4b1d-8e45-9305869d3bfc.xml, ndis/NdisMCoIndicateStatusEx
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_MCO_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisMCoIndicateStatusEx
+title: NdisMCoIndicateStatusEx function
+author: windows-driver-content
+description: The NdisMCoIndicateStatusEx function reports a change in the status of a CoNDIS miniport adapter.
+old-location: netvista\ndismcoindicatestatusex.htm
+old-project: netvista
+ms.assetid: e6d5bd94-d9cb-462f-84e4-bf9d70961e95
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NdisMCoIndicateStatusEx, netvista.ndismcoindicatestatusex, NdisMCoIndicateStatusEx function [Network Drivers Starting with Windows Vista], condis_status_ref_1a0c27e2-e728-4b1d-8e45-9305869d3bfc.xml, ndis/NdisMCoIndicateStatusEx
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_MCO_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisMCoIndicateStatusEx
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

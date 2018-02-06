@@ -1,42 +1,47 @@
 ---
-UID : NS:usbioctl._USB_NODE_CONNECTION_INFORMATION_EX_V2_FLAGS
-title : "_USB_NODE_CONNECTION_INFORMATION_EX_V2_FLAGS"
-author : windows-driver-content
-description : The USB_NODE_CONNECTION_INFORMATION_EX_V2_FLAGS union is used to indicate the speed at which a USB 3.0 device is currently operating and whether it can operate at higher speed, when attached to a particular port.
-old-location : buses\usb_node_connection_information_ex_v2_flags.htm
-old-project : usbref
-ms.assetid : F066CE0E-3247-4C42-9EF6-8A6EB0C0BC71
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : PUSB_NODE_CONNECTION_INFORMATION_EX_V2_FLAGS, USB_NODE_CONNECTION_INFORMATION_EX_V2_FLAGS union [Buses], PUSB_NODE_CONNECTION_INFORMATION_EX_V2_FLAGS union pointer [Buses], usbioctl/PUSB_NODE_CONNECTION_INFORMATION_EX_V2_FLAGS, usbioctl/USB_NODE_CONNECTION_INFORMATION_EX_V2_FLAGS, _USB_NODE_CONNECTION_INFORMATION_EX_V2_FLAGS, *PUSB_NODE_CONNECTION_INFORMATION_EX_V2_FLAGS, USB_NODE_CONNECTION_INFORMATION_EX_V2_FLAGS, buses.usb_node_connection_information_ex_v2_flags
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : usbioctl.h
-req.include-header : Usbioctl.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : None supported
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUSB_NODE_CONNECTION_INFORMATION_EX_V2_FLAGS, USB_NODE_CONNECTION_INFORMATION_EX_V2_FLAGS"
-req.product : Windows 10 or later.
+UID: NS:usbioctl._USB_NODE_CONNECTION_INFORMATION_EX_V2_FLAGS
+title: "_USB_NODE_CONNECTION_INFORMATION_EX_V2_FLAGS"
+author: windows-driver-content
+description: The USB_NODE_CONNECTION_INFORMATION_EX_V2_FLAGS union is used to indicate the speed at which a USB 3.0 device is currently operating and whether it can operate at higher speed, when attached to a particular port.
+old-location: buses\usb_node_connection_information_ex_v2_flags.htm
+old-project: usbref
+ms.assetid: F066CE0E-3247-4C42-9EF6-8A6EB0C0BC71
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: PUSB_NODE_CONNECTION_INFORMATION_EX_V2_FLAGS, USB_NODE_CONNECTION_INFORMATION_EX_V2_FLAGS union [Buses], PUSB_NODE_CONNECTION_INFORMATION_EX_V2_FLAGS union pointer [Buses], usbioctl/PUSB_NODE_CONNECTION_INFORMATION_EX_V2_FLAGS, usbioctl/USB_NODE_CONNECTION_INFORMATION_EX_V2_FLAGS, _USB_NODE_CONNECTION_INFORMATION_EX_V2_FLAGS, *PUSB_NODE_CONNECTION_INFORMATION_EX_V2_FLAGS, USB_NODE_CONNECTION_INFORMATION_EX_V2_FLAGS, buses.usb_node_connection_information_ex_v2_flags
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: usbioctl.h
+req.include-header: Usbioctl.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: None supported
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Usbioctl.h
+apiname:
+-	USB_NODE_CONNECTION_INFORMATION_EX_V2_FLAGS
+product: Windows
+targetos: Windows
+req.typenames: "*PUSB_NODE_CONNECTION_INFORMATION_EX_V2_FLAGS, USB_NODE_CONNECTION_INFORMATION_EX_V2_FLAGS"
+req.product: Windows 10 or later.
 ---
 
 # _USB_NODE_CONNECTION_INFORMATION_EX_V2_FLAGS structure

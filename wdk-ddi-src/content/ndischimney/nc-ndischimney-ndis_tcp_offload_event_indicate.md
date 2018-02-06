@@ -1,41 +1,46 @@
 ---
-UID : NC:ndischimney.NDIS_TCP_OFFLOAD_EVENT_INDICATE
-title : NDIS_TCP_OFFLOAD_EVENT_INDICATE
-author : windows-driver-content
-description : An offload target calls the NdisTcpOffloadEventHandler function to indicate an event that pertains to an offloaded TCP connection.
-old-location : netvista\ndistcpoffloadeventhandler.htm
-old-project : netvista
-ms.assetid : b62e8a07-fe7b-4c52-8795-19e4bb889b6e
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.ndistcpoffloadeventhandler, NdisTcpOffloadEventHandler callback function [Network Drivers Starting with Windows Vista], NdisTcpOffloadEventHandler, NDIS_TCP_OFFLOAD_EVENT_INDICATE, NDIS_TCP_OFFLOAD_EVENT_INDICATE, ndischimney/NdisTcpOffloadEventHandler, tcp_chim_ndis_func_24cca7c4-aa36-4ff3-8896-93bd0b8517af.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ndischimney.h
-req.include-header : Ndischimney.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : DISPATCH_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PD_BUFFER_VIRTUAL_SUBNET_INFO
+UID: NC:ndischimney.NDIS_TCP_OFFLOAD_EVENT_INDICATE
+title: NDIS_TCP_OFFLOAD_EVENT_INDICATE
+author: windows-driver-content
+description: An offload target calls the NdisTcpOffloadEventHandler function to indicate an event that pertains to an offloaded TCP connection.
+old-location: netvista\ndistcpoffloadeventhandler.htm
+old-project: netvista
+ms.assetid: b62e8a07-fe7b-4c52-8795-19e4bb889b6e
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.ndistcpoffloadeventhandler, NdisTcpOffloadEventHandler callback function [Network Drivers Starting with Windows Vista], NdisTcpOffloadEventHandler, NDIS_TCP_OFFLOAD_EVENT_INDICATE, NDIS_TCP_OFFLOAD_EVENT_INDICATE, ndischimney/NdisTcpOffloadEventHandler, tcp_chim_ndis_func_24cca7c4-aa36-4ff3-8896-93bd0b8517af.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ndischimney.h
+req.include-header: Ndischimney.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: DISPATCH_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	ndischimney.h
+apiname:
+-	NdisTcpOffloadEventHandler
+product: Windows
+targetos: Windows
+req.typenames: PD_BUFFER_VIRTUAL_SUBNET_INFO
 ---
 
 

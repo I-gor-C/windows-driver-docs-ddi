@@ -1,42 +1,47 @@
 ---
-UID : NS:wiamicro.VAL
-title : VAL
-author : windows-driver-content
-description : The VAL structure is used by the microdriver and WIA Flatbed driver to pass information between each other.
-old-location : image\val.htm
-old-project : image
-ms.assetid : 9c9cf520-3249-4c1e-9d0d-e07f7127117e
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : "*PVAL, PVAL structure pointer [Imaging Devices], VAL, image.val, wiamicro/VAL, PVAL, MicroDrv_397b66fc-2f8e-434e-88ac-24b5cdd415d5.xml, wiamicro/PVAL, VAL structure [Imaging Devices]"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wiamicro.h
-req.include-header : Wiamicro.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Me and in Windows XP and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VAL, *PVAL
-req.product : Windows 10 or later.
+UID: NS:wiamicro.VAL
+title: VAL
+author: windows-driver-content
+description: The VAL structure is used by the microdriver and WIA Flatbed driver to pass information between each other.
+old-location: image\val.htm
+old-project: image
+ms.assetid: 9c9cf520-3249-4c1e-9d0d-e07f7127117e
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: "*PVAL, PVAL structure pointer [Imaging Devices], VAL, image.val, wiamicro/VAL, PVAL, MicroDrv_397b66fc-2f8e-434e-88ac-24b5cdd415d5.xml, wiamicro/PVAL, VAL structure [Imaging Devices]"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wiamicro.h
+req.include-header: Wiamicro.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Me and in Windows XP and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wiamicro.h
+apiname:
+-	VAL
+product: Windows
+targetos: Windows
+req.typenames: VAL, *PVAL
+req.product: Windows 10 or later.
 ---
 
 # VAL structure

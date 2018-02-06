@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFDevice3.CreateInterrupt
-title : IWDFDevice3::CreateInterrupt method
-author : windows-driver-content
-description : The CreateInterrupt method creates a framework interrupt object.
-old-location : wdf\iwdfdevice3_createinterrupt.htm
-old-project : wdf
-ms.assetid : EE68BED8-5FDC-4590-8E95-B228F1DFD32D
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : CreateInterrupt, IWDFDevice3 interface, CreateInterrupt method, wdf.iwdfdevice3_createinterrupt, CreateInterrupt method, umdf.iwdfdevice3_createinterrupt, IWDFDevice3::CreateInterrupt, wudfddi/IWDFDevice3::CreateInterrupt, CreateInterrupt method, IWDFDevice3 interface, IWDFDevice3
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.11
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFDevice3.CreateInterrupt
+title: IWDFDevice3::CreateInterrupt method
+author: windows-driver-content
+description: The CreateInterrupt method creates a framework interrupt object.
+old-location: wdf\iwdfdevice3_createinterrupt.htm
+old-project: wdf
+ms.assetid: EE68BED8-5FDC-4590-8E95-B228F1DFD32D
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: CreateInterrupt, IWDFDevice3 interface, CreateInterrupt method, wdf.iwdfdevice3_createinterrupt, CreateInterrupt method, umdf.iwdfdevice3_createinterrupt, IWDFDevice3::CreateInterrupt, wudfddi/IWDFDevice3::CreateInterrupt, CreateInterrupt method, IWDFDevice3 interface, IWDFDevice3
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.11
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFDevice3.CreateInterrupt
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

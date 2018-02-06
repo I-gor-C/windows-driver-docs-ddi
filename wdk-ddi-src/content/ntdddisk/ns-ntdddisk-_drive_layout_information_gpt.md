@@ -1,41 +1,46 @@
 ---
-UID : NS:ntdddisk._DRIVE_LAYOUT_INFORMATION_GPT
-title : "_DRIVE_LAYOUT_INFORMATION_GPT"
-author : windows-driver-content
-description : The DRIVE_LAYOUT_INFORMATION_GPT structure reports the drive signature for a GUID Partition Table partition.
-old-location : storage\drive_layout_information_gpt.htm
-old-project : storage
-ms.assetid : d99180e0-d989-470c-b330-23372938ab25
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : DRIVE_LAYOUT_INFORMATION_GPT structure [Storage Devices], *PDRIVE_LAYOUT_INFORMATION_GPT, ntdddisk/PDRIVE_LAYOUT_INFORMATION_GPT, DRIVE_LAYOUT_INFORMATION_GPT, storage.drive_layout_information_gpt, PDRIVE_LAYOUT_INFORMATION_GPT structure pointer [Storage Devices], _DRIVE_LAYOUT_INFORMATION_GPT, structs-disk_eca2e047-5de8-4960-9066-28eb0dfedb95.xml, PDRIVE_LAYOUT_INFORMATION_GPT, ntdddisk/DRIVE_LAYOUT_INFORMATION_GPT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntdddisk.h
-req.include-header : Ntddk.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDRIVE_LAYOUT_INFORMATION_GPT, DRIVE_LAYOUT_INFORMATION_GPT"
+UID: NS:ntdddisk._DRIVE_LAYOUT_INFORMATION_GPT
+title: "_DRIVE_LAYOUT_INFORMATION_GPT"
+author: windows-driver-content
+description: The DRIVE_LAYOUT_INFORMATION_GPT structure reports the drive signature for a GUID Partition Table partition.
+old-location: storage\drive_layout_information_gpt.htm
+old-project: storage
+ms.assetid: d99180e0-d989-470c-b330-23372938ab25
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: DRIVE_LAYOUT_INFORMATION_GPT structure [Storage Devices], *PDRIVE_LAYOUT_INFORMATION_GPT, ntdddisk/PDRIVE_LAYOUT_INFORMATION_GPT, DRIVE_LAYOUT_INFORMATION_GPT, storage.drive_layout_information_gpt, PDRIVE_LAYOUT_INFORMATION_GPT structure pointer [Storage Devices], _DRIVE_LAYOUT_INFORMATION_GPT, structs-disk_eca2e047-5de8-4960-9066-28eb0dfedb95.xml, PDRIVE_LAYOUT_INFORMATION_GPT, ntdddisk/DRIVE_LAYOUT_INFORMATION_GPT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntdddisk.h
+req.include-header: Ntddk.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntdddisk.h
+apiname:
+-	DRIVE_LAYOUT_INFORMATION_GPT
+product: Windows
+targetos: Windows
+req.typenames: "*PDRIVE_LAYOUT_INFORMATION_GPT, DRIVE_LAYOUT_INFORMATION_GPT"
 ---
 
 # _DRIVE_LAYOUT_INFORMATION_GPT structure

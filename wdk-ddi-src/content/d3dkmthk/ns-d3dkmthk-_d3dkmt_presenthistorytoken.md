@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmthk._D3DKMT_PRESENTHISTORYTOKEN
-title : "_D3DKMT_PRESENTHISTORYTOKEN"
-author : windows-driver-content
-description : The D3DKMT_PRESENTHISTORYTOKEN structure identifies a type of present operation.
-old-location : display\d3dkmt_presenthistorytoken.htm
-old-project : display
-ms.assetid : d3571412-d853-496b-a651-2c8860a28e9d
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3dkmthk/D3DKMT_PRESENTHISTORYTOKEN, D3DKMT_PRESENTHISTORYTOKEN, D3DKMT_PRESENTHISTORYTOKEN structure [Display Devices], display.d3dkmt_presenthistorytoken, _D3DKMT_PRESENTHISTORYTOKEN, OpenGL_Structs_6a454620-8217-4119-bbdd-4caa83169e27.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Windows
-req.target-min-winverclnt : D3DKMT_PRESENTHISTORYTOKEN is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_PRESENTHISTORYTOKEN
+UID: NS:d3dkmthk._D3DKMT_PRESENTHISTORYTOKEN
+title: "_D3DKMT_PRESENTHISTORYTOKEN"
+author: windows-driver-content
+description: The D3DKMT_PRESENTHISTORYTOKEN structure identifies a type of present operation.
+old-location: display\d3dkmt_presenthistorytoken.htm
+old-project: display
+ms.assetid: d3571412-d853-496b-a651-2c8860a28e9d
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3dkmthk/D3DKMT_PRESENTHISTORYTOKEN, D3DKMT_PRESENTHISTORYTOKEN, D3DKMT_PRESENTHISTORYTOKEN structure [Display Devices], display.d3dkmt_presenthistorytoken, _D3DKMT_PRESENTHISTORYTOKEN, OpenGL_Structs_6a454620-8217-4119-bbdd-4caa83169e27.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Windows
+req.target-min-winverclnt: D3DKMT_PRESENTHISTORYTOKEN is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmthk.h
+apiname:
+-	D3DKMT_PRESENTHISTORYTOKEN
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_PRESENTHISTORYTOKEN
 ---
 
 # _D3DKMT_PRESENTHISTORYTOKEN structure

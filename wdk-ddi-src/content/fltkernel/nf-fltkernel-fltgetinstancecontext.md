@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltGetInstanceContext
-title : FltGetInstanceContext function
-author : windows-driver-content
-description : The FltGetInstanceContext routine retrieves a context that was set for an instance by a given minifilter driver.
-old-location : ifsk\fltgetinstancecontext.htm
-old-project : ifsk
-ms.assetid : 74bbffcd-27a9-4a9e-b625-64f9860f2c66
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltGetInstanceContext routine [Installable File System Drivers], ifsk.fltgetinstancecontext, FltApiRef_e_to_o_8d05bb2a-ad52-454b-89d6-b15413c34e7f.xml, FltGetInstanceContext, fltkernel/FltGetInstanceContext
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltGetInstanceContext
+title: FltGetInstanceContext function
+author: windows-driver-content
+description: The FltGetInstanceContext routine retrieves a context that was set for an instance by a given minifilter driver.
+old-location: ifsk\fltgetinstancecontext.htm
+old-project: ifsk
+ms.assetid: 74bbffcd-27a9-4a9e-b625-64f9860f2c66
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltGetInstanceContext routine [Installable File System Drivers], ifsk.fltgetinstancecontext, FltApiRef_e_to_o_8d05bb2a-ad52-454b-89d6-b15413c34e7f.xml, FltGetInstanceContext, fltkernel/FltGetInstanceContext
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltGetInstanceContext
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

@@ -1,42 +1,49 @@
 ---
-UID : NF:wdm.TmReferenceEnlistmentKey
-title : TmReferenceEnlistmentKey function
-author : windows-driver-content
-description : The TmReferenceEnlistmentKey routine increments the reference count for the key of a specified enlistment object and retrieves the key.
-old-location : kernel\tmreferenceenlistmentkey.htm
-old-project : kernel
-ms.assetid : c4fd9a56-8743-4099-b261-43c1afc2a5f1
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : TmReferenceEnlistmentKey routine [Kernel-Mode Driver Architecture], wdm/TmReferenceEnlistmentKey, kernel.tmreferenceenlistmentkey, ktm_ref_9e57ee05-1004-4d3d-9fa6-9eb473057bbf.xml, TmReferenceEnlistmentKey
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later operating system versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.TmReferenceEnlistmentKey
+title: TmReferenceEnlistmentKey function
+author: windows-driver-content
+description: The TmReferenceEnlistmentKey routine increments the reference count for the key of a specified enlistment object and retrieves the key.
+old-location: kernel\tmreferenceenlistmentkey.htm
+old-project: kernel
+ms.assetid: c4fd9a56-8743-4099-b261-43c1afc2a5f1
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: TmReferenceEnlistmentKey routine [Kernel-Mode Driver Architecture], wdm/TmReferenceEnlistmentKey, kernel.tmreferenceenlistmentkey, ktm_ref_9e57ee05-1004-4d3d-9fa6-9eb473057bbf.xml, TmReferenceEnlistmentKey
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later operating system versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+-	Ext-MS-Win-ntos-tm-l1-1-0.dll
+-	tm.sys
+apiname:
+-	TmReferenceEnlistmentKey
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

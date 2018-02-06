@@ -1,42 +1,47 @@
 ---
-UID : NF:wiamdef.wiasSetValidRangeLong
-title : wiasSetValidRangeLong function
-author : windows-driver-content
-description : The wiasSetValidRangeLong function specifies the range of valid values for a WIA_PROP_RANGE property of type VT_I4.
-old-location : image\wiassetvalidrangelong.htm
-old-project : image
-ms.assetid : ff4badb5-ab27-4deb-864a-51165290bca4
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : wiasFncs_3ee53b59-4ef4-4c35-8544-1ac7a8729212.xml, wiamdef/wiasSetValidRangeLong, wiasSetValidRangeLong function [Imaging Devices], image.wiassetvalidrangelong, wiasSetValidRangeLong
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wiamdef.h
-req.include-header : Wiamdef.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wiaservc.lib
-req.dll : Wiaservc.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*LPDEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2, DEVICEDIALOGDATA2"
-req.product : Windows 10 or later.
+UID: NF:wiamdef.wiasSetValidRangeLong
+title: wiasSetValidRangeLong function
+author: windows-driver-content
+description: The wiasSetValidRangeLong function specifies the range of valid values for a WIA_PROP_RANGE property of type VT_I4.
+old-location: image\wiassetvalidrangelong.htm
+old-project: image
+ms.assetid: ff4badb5-ab27-4deb-864a-51165290bca4
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: wiasFncs_3ee53b59-4ef4-4c35-8544-1ac7a8729212.xml, wiamdef/wiasSetValidRangeLong, wiasSetValidRangeLong function [Imaging Devices], image.wiassetvalidrangelong, wiasSetValidRangeLong
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wiamdef.h
+req.include-header: Wiamdef.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wiaservc.lib
+req.dll: Wiaservc.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Wiaservc.dll
+apiname:
+-	wiasSetValidRangeLong
+product: Windows
+targetos: Windows
+req.typenames: "*LPDEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2, DEVICEDIALOGDATA2"
+req.product: Windows 10 or later.
 ---
 
 

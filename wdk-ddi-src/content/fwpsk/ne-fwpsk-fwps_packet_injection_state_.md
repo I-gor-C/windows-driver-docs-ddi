@@ -1,41 +1,46 @@
 ---
-UID : NE:fwpsk.FWPS_PACKET_INJECTION_STATE_
-title : FWPS_PACKET_INJECTION_STATE_
-author : windows-driver-content
-description : The FWPS_PACKET_INJECTION_STATE enumeration type specifies the injection state of a network buffer list.
-old-location : netvista\fwps_packet_injection_state.htm
-old-project : netvista
-ms.assetid : 0fc60bae-2191-4e19-85c5-ed06f09225f0
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : fwpsk/FWPS_PACKET_INJECTION_STATE, FWPS_PACKET_NOT_INJECTED, FWPS_PACKET_INJECTED_BY_OTHER, FWPS_PACKET_PREVIOUSLY_INJECTED_BY_SELF, fwpsk/FWPS_PACKET_INJECTION_STATE_MAX, fwpsk/FWPS_PACKET_PREVIOUSLY_INJECTED_BY_SELF, fwpsk/FWPS_PACKET_NOT_INJECTED, FWPS_PACKET_INJECTION_STATE_, wfp_ref_4_enum_d8d574f4-6323-43e0-924f-09639f6aec10.xml, FWPS_PACKET_INJECTION_STATE, netvista.fwps_packet_injection_state, fwpsk/FWPS_PACKET_INJECTED_BY_SELF, FWPS_PACKET_INJECTION_STATE_MAX, FWPS_PACKET_INJECTION_STATE enumeration [Network Drivers Starting with Windows Vista], fwpsk/FWPS_PACKET_INJECTED_BY_OTHER, FWPS_PACKET_INJECTED_BY_SELF
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : fwpsk.h
-req.include-header : Fwpsk.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with  Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FWPS_PACKET_INJECTION_STATE
+UID: NE:fwpsk.FWPS_PACKET_INJECTION_STATE_
+title: FWPS_PACKET_INJECTION_STATE_
+author: windows-driver-content
+description: The FWPS_PACKET_INJECTION_STATE enumeration type specifies the injection state of a network buffer list.
+old-location: netvista\fwps_packet_injection_state.htm
+old-project: netvista
+ms.assetid: 0fc60bae-2191-4e19-85c5-ed06f09225f0
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: fwpsk/FWPS_PACKET_INJECTION_STATE, FWPS_PACKET_NOT_INJECTED, FWPS_PACKET_INJECTED_BY_OTHER, FWPS_PACKET_PREVIOUSLY_INJECTED_BY_SELF, fwpsk/FWPS_PACKET_INJECTION_STATE_MAX, fwpsk/FWPS_PACKET_PREVIOUSLY_INJECTED_BY_SELF, fwpsk/FWPS_PACKET_NOT_INJECTED, FWPS_PACKET_INJECTION_STATE_, wfp_ref_4_enum_d8d574f4-6323-43e0-924f-09639f6aec10.xml, FWPS_PACKET_INJECTION_STATE, netvista.fwps_packet_injection_state, fwpsk/FWPS_PACKET_INJECTED_BY_SELF, FWPS_PACKET_INJECTION_STATE_MAX, FWPS_PACKET_INJECTION_STATE enumeration [Network Drivers Starting with Windows Vista], fwpsk/FWPS_PACKET_INJECTED_BY_OTHER, FWPS_PACKET_INJECTED_BY_SELF
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: fwpsk.h
+req.include-header: Fwpsk.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with  Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	fwpsk.h
+apiname:
+-	FWPS_PACKET_INJECTION_STATE
+product: Windows
+targetos: Windows
+req.typenames: FWPS_PACKET_INJECTION_STATE
 ---
 
 # FWPS_PACKET_INJECTION_STATE_ Enumeration
@@ -56,41 +61,41 @@ typedef enum FWPS_PACKET_INJECTION_STATE_ {
 ## Constants
 
 <table>
-
-<tr>
-<td>FWPS_PACKET_INJECTED_BY_OTHER</td>
-<td>The packet was injected using an injection handle other than one passed by a call
+            
+                <tr>
+                    <td>FWPS_PACKET_INJECTED_BY_OTHER</td>
+                    <td>The packet was injected using an injection handle other than one passed by a call
      to one of the 
      <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff545018">packet injection functions</a>.</td>
-</tr>
-
-<tr>
-<td>FWPS_PACKET_INJECTED_BY_SELF</td>
-<td>The packet was injected using an injection handle passed by a call to one of the 
+                </tr>
+            
+                <tr>
+                    <td>FWPS_PACKET_INJECTED_BY_SELF</td>
+                    <td>The packet was injected using an injection handle passed by a call to one of the 
      <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff545018">packet injection functions</a>.</td>
-</tr>
-
-<tr>
-<td>FWPS_PACKET_INJECTION_STATE_MAX</td>
-<td>The maximum value for this enumeration. This value might change in future versions of the NDIS
+                </tr>
+            
+                <tr>
+                    <td>FWPS_PACKET_INJECTION_STATE_MAX</td>
+                    <td>The maximum value for this enumeration. This value might change in future versions of the NDIS
      header files and binaries.</td>
-</tr>
-
-<tr>
-<td>FWPS_PACKET_NOT_INJECTED</td>
-<td>The packet was not injected by any of the 
+                </tr>
+            
+                <tr>
+                    <td>FWPS_PACKET_NOT_INJECTED</td>
+                    <td>The packet was not injected by any of the 
      <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff545018">packet injection functions</a>. A
      packet that originated from the TCP/IP stack will be at this state.</td>
-</tr>
-
-<tr>
-<td>FWPS_PACKET_PREVIOUSLY_INJECTED_BY_SELF</td>
-<td>The packet was injected by using an injection handle passed by a call to one of the
+                </tr>
+            
+                <tr>
+                    <td>FWPS_PACKET_PREVIOUSLY_INJECTED_BY_SELF</td>
+                    <td>The packet was injected by using an injection handle passed by a call to one of the
      
      <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff545018">packet injection functions</a>, but
      the packet was later cloned and reinjected by an additional call to a packet injection function,
      possibly using a different injection handle.</td>
-</tr>
+                </tr>
 </table>
 
 

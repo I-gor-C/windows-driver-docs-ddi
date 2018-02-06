@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._D3DDDICB_QUERYRESIDENCY
-title : "_D3DDDICB_QUERYRESIDENCY"
-author : windows-driver-content
-description : The D3DDDICB_QUERYRESIDENCY structure describes the residency status of a resource or list of allocations.
-old-location : display\d3dddicb_queryresidency.htm
-old-project : display
-ms.assetid : 43dafaea-06cd-49bb-99ab-99708b1a93cb
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.d3dddicb_queryresidency, D3DDDICB_QUERYRESIDENCY structure [Display Devices], d3dumddi/D3DDDICB_QUERYRESIDENCY, _D3DDDICB_QUERYRESIDENCY, D3DDDICB_QUERYRESIDENCY, D3D_param_Structs_196c35e7-414d-465f-b5e5-695848a4c642.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDICB_QUERYRESIDENCY
+UID: NS:d3dumddi._D3DDDICB_QUERYRESIDENCY
+title: "_D3DDDICB_QUERYRESIDENCY"
+author: windows-driver-content
+description: The D3DDDICB_QUERYRESIDENCY structure describes the residency status of a resource or list of allocations.
+old-location: display\d3dddicb_queryresidency.htm
+old-project: display
+ms.assetid: 43dafaea-06cd-49bb-99ab-99708b1a93cb
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.d3dddicb_queryresidency, D3DDDICB_QUERYRESIDENCY structure [Display Devices], d3dumddi/D3DDDICB_QUERYRESIDENCY, _D3DDDICB_QUERYRESIDENCY, D3DDDICB_QUERYRESIDENCY, D3D_param_Structs_196c35e7-414d-465f-b5e5-695848a4c642.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	D3DDDICB_QUERYRESIDENCY
+product: Windows
+targetos: Windows
+req.typenames: D3DDDICB_QUERYRESIDENCY
 ---
 
 # _D3DDDICB_QUERYRESIDENCY structure

@@ -1,42 +1,47 @@
 ---
-UID : NS:winspool._BIDI_RESPONSE_DATA
-title : "_BIDI_RESPONSE_DATA"
-author : windows-driver-content
-description : The BIDI_RESPONSE_DATA structure holds a single bidi response.
-old-location : print\bidi_response_data.htm
-old-project : print
-ms.assetid : 8e56ef0a-c652-4fca-ad87-4a0495c8de2e
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : winspool/PBIDI_RESPONSE_DATA, spoolfnc_eb6aa91d-8fbc-4079-a8b8-57d5c3ff7abf.xml, _BIDI_RESPONSE_DATA, *PBIDI_RESPONSE_DATA, winspool/BIDI_RESPONSE_DATA, LPBIDI_RESPONSE_DATA structure pointer [Print Devices], winspool/LPBIDI_RESPONSE_DATA, LPBIDI_RESPONSE_DATA, BIDI_RESPONSE_DATA, *LPBIDI_RESPONSE_DATA, print.bidi_response_data, PBIDI_RESPONSE_DATA, BIDI_RESPONSE_DATA structure [Print Devices], PBIDI_RESPONSE_DATA structure pointer [Print Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : winspool.h
-req.include-header : Winspool.h
-req.target-type : Windows
-req.target-min-winverclnt : This structure is available in Windows XP and later operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PBIDI_RESPONSE_DATA, BIDI_RESPONSE_DATA, *LPBIDI_RESPONSE_DATA"
-req.product : Windows 10 or later.
+UID: NS:winspool._BIDI_RESPONSE_DATA
+title: "_BIDI_RESPONSE_DATA"
+author: windows-driver-content
+description: The BIDI_RESPONSE_DATA structure holds a single bidi response.
+old-location: print\bidi_response_data.htm
+old-project: print
+ms.assetid: 8e56ef0a-c652-4fca-ad87-4a0495c8de2e
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: winspool/PBIDI_RESPONSE_DATA, spoolfnc_eb6aa91d-8fbc-4079-a8b8-57d5c3ff7abf.xml, _BIDI_RESPONSE_DATA, *PBIDI_RESPONSE_DATA, winspool/BIDI_RESPONSE_DATA, LPBIDI_RESPONSE_DATA structure pointer [Print Devices], winspool/LPBIDI_RESPONSE_DATA, LPBIDI_RESPONSE_DATA, BIDI_RESPONSE_DATA, *LPBIDI_RESPONSE_DATA, print.bidi_response_data, PBIDI_RESPONSE_DATA, BIDI_RESPONSE_DATA structure [Print Devices], PBIDI_RESPONSE_DATA structure pointer [Print Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: winspool.h
+req.include-header: Winspool.h
+req.target-type: Windows
+req.target-min-winverclnt: This structure is available in Windows XP and later operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	winspool.h
+apiname:
+-	BIDI_RESPONSE_DATA
+product: Windows
+targetos: Windows
+req.typenames: "*PBIDI_RESPONSE_DATA, BIDI_RESPONSE_DATA, *LPBIDI_RESPONSE_DATA"
+req.product: Windows 10 or later.
 ---
 
 # _BIDI_RESPONSE_DATA structure

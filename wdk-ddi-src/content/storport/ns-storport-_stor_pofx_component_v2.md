@@ -1,42 +1,47 @@
 ---
-UID : NS:storport._STOR_POFX_COMPONENT_V2
-title : "_STOR_POFX_COMPONENT_V2"
-author : windows-driver-content
-description : The STOR_POFX_COMPONENT_V2 structure describes the power state attributes of a storage device component.
-old-location : storage\stor_pofx_component_v2.htm
-old-project : storage
-ms.assetid : 2FF6B375-C213-48AC-9497-6CE3F1170BAA
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : STOR_POFX_COMPONENT_V2, _STOR_POFX_COMPONENT_V2, PSTOR_POFX_COMPONENT_V2 structure pointer [Storage Devices], *PSTOR_POFX_COMPONENT_V2, storport/STOR_POFX_COMPONENT, STOR_POFX_COMPONENT_V2 structure [Storage Devices], storport/PSTOR_POFX_COMPONENT_V2, PSTOR_POFX_COMPONENT_V2, storage.stor_pofx_component_v2
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : storport.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with Windows 10.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STOR_POFX_COMPONENT_V2, *PSTOR_POFX_COMPONENT_V2
-req.product : Windows 10 or later.
+UID: NS:storport._STOR_POFX_COMPONENT_V2
+title: "_STOR_POFX_COMPONENT_V2"
+author: windows-driver-content
+description: The STOR_POFX_COMPONENT_V2 structure describes the power state attributes of a storage device component.
+old-location: storage\stor_pofx_component_v2.htm
+old-project: storage
+ms.assetid: 2FF6B375-C213-48AC-9497-6CE3F1170BAA
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: STOR_POFX_COMPONENT_V2, _STOR_POFX_COMPONENT_V2, PSTOR_POFX_COMPONENT_V2 structure pointer [Storage Devices], *PSTOR_POFX_COMPONENT_V2, storport/STOR_POFX_COMPONENT, STOR_POFX_COMPONENT_V2 structure [Storage Devices], storport/PSTOR_POFX_COMPONENT_V2, PSTOR_POFX_COMPONENT_V2, storage.stor_pofx_component_v2
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: storport.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows 10.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	storport.h
+apiname:
+-	STOR_POFX_COMPONENT_V2
+product: Windows
+targetos: Windows
+req.typenames: STOR_POFX_COMPONENT_V2, *PSTOR_POFX_COMPONENT_V2
+req.product: Windows 10 or later.
 ---
 
 # _STOR_POFX_COMPONENT_V2 structure

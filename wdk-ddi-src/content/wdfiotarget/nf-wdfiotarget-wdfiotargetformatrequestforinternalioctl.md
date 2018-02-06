@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfiotarget.WdfIoTargetFormatRequestForInternalIoctl
-title : WdfIoTargetFormatRequestForInternalIoctl function
-author : windows-driver-content
-description : The WdfIoTargetFormatRequestForInternalIoctl method builds an internal device control request for an I/O target but does not send the request.
-old-location : wdf\wdfiotargetformatrequestforinternalioctl.htm
-old-project : wdf
-ms.assetid : 201ba120-9f64-4b69-87f0-a368b2e0344d
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : PFN_WDFIOTARGETFORMATREQUESTFORINTERNALIOCTL, WdfIoTargetFormatRequestForInternalIoctl method, wdf.wdfiotargetformatrequestforinternalioctl, kmdf.wdfiotargetformatrequestforinternalioctl, DFIOTargetRef_be699aa7-773f-4395-9328-4c4d595c3aba.xml, WdfIoTargetFormatRequestForInternalIoctl, wdfiotarget/WdfIoTargetFormatRequestForInternalIoctl
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfiotarget.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2, RequestFormattedValid, RequestSendAndForgetNoFormatting, RequestSendAndForgetNoFormatting2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDF_IO_TARGET_STATE, WDF_IO_TARGET_STATE"
-req.product : Windows 10 or later.
+UID: NF:wdfiotarget.WdfIoTargetFormatRequestForInternalIoctl
+title: WdfIoTargetFormatRequestForInternalIoctl function
+author: windows-driver-content
+description: The WdfIoTargetFormatRequestForInternalIoctl method builds an internal device control request for an I/O target but does not send the request.
+old-location: wdf\wdfiotargetformatrequestforinternalioctl.htm
+old-project: wdf
+ms.assetid: 201ba120-9f64-4b69-87f0-a368b2e0344d
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: PFN_WDFIOTARGETFORMATREQUESTFORINTERNALIOCTL, WdfIoTargetFormatRequestForInternalIoctl method, wdf.wdfiotargetformatrequestforinternalioctl, kmdf.wdfiotargetformatrequestforinternalioctl, DFIOTargetRef_be699aa7-773f-4395-9328-4c4d595c3aba.xml, WdfIoTargetFormatRequestForInternalIoctl, wdfiotarget/WdfIoTargetFormatRequestForInternalIoctl
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfiotarget.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2, RequestFormattedValid, RequestSendAndForgetNoFormatting, RequestSendAndForgetNoFormatting2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfIoTargetFormatRequestForInternalIoctl
+product: Windows
+targetos: Windows
+req.typenames: "*PWDF_IO_TARGET_STATE, WDF_IO_TARGET_STATE"
+req.product: Windows 10 or later.
 ---
 
 

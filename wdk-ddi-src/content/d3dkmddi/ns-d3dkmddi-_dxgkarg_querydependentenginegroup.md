@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGKARG_QUERYDEPENDENTENGINEGROUP
-title : "_DXGKARG_QUERYDEPENDENTENGINEGROUP"
-author : windows-driver-content
-description : Describes all nodes on the physical display adapter (engine) that are to be queried when the display port driver's GPU scheduler calls the DxgkDdiQueryDependentEngineGroup function to query node dependencies.
-old-location : display\dxgkarg_querydependentenginegroup.htm
-old-project : display
-ms.assetid : 6b1d6465-83bd-42c4-be1f-d7a2cfb74483
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3dkmddi/DXGKARG_QUERYDEPENDENTENGINEGROUP, _DXGKARG_QUERYDEPENDENTENGINEGROUP, DXGKARG_QUERYDEPENDENTENGINEGROUP structure [Display Devices], display.dxgkarg_querydependentenginegroup, *INOUT_DXGKARG_QUERYDEPENDENTENGINEGROUP, DXGKARG_QUERYDEPENDENTENGINEGROUP
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGKARG_QUERYDEPENDENTENGINEGROUP
+UID: NS:d3dkmddi._DXGKARG_QUERYDEPENDENTENGINEGROUP
+title: "_DXGKARG_QUERYDEPENDENTENGINEGROUP"
+author: windows-driver-content
+description: Describes all nodes on the physical display adapter (engine) that are to be queried when the display port driver's GPU scheduler calls the DxgkDdiQueryDependentEngineGroup function to query node dependencies.
+old-location: display\dxgkarg_querydependentenginegroup.htm
+old-project: display
+ms.assetid: 6b1d6465-83bd-42c4-be1f-d7a2cfb74483
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3dkmddi/DXGKARG_QUERYDEPENDENTENGINEGROUP, _DXGKARG_QUERYDEPENDENTENGINEGROUP, DXGKARG_QUERYDEPENDENTENGINEGROUP structure [Display Devices], display.dxgkarg_querydependentenginegroup, *INOUT_DXGKARG_QUERYDEPENDENTENGINEGROUP, DXGKARG_QUERYDEPENDENTENGINEGROUP
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	D3dkmddi.h
+apiname:
+-	DXGKARG_QUERYDEPENDENTENGINEGROUP
+product: Windows
+targetos: Windows
+req.typenames: DXGKARG_QUERYDEPENDENTENGINEGROUP
 ---
 
 # _DXGKARG_QUERYDEPENDENTENGINEGROUP structure

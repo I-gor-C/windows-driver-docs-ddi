@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfcore.WDF_REL_TIMEOUT_IN_US
-title : WDF_REL_TIMEOUT_IN_US function
-author : windows-driver-content
-description : The WDF_REL_TIMEOUT_IN_US function converts a specified number of microseconds to a relative time value.
-old-location : wdf\wdf_rel_timeout_in_us.htm
-old-project : wdf
-ms.assetid : 202c9741-140e-4d6e-961b-fb92f690e743
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.wdf_rel_timeout_in_us, DFTimerObjectRef_40b7f958-a289-43c2-ba4b-7085cc1659ee.xml, WDF_REL_TIMEOUT_IN_US function, kmdf.wdf_rel_timeout_in_us, wdfcore/WDF_REL_TIMEOUT_IN_US, WDF_REL_TIMEOUT_IN_US
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfcore.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : None
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_DEVICE_SHUTDOWN_FLAGS
-req.product : Windows 10 or later.
+UID: NF:wdfcore.WDF_REL_TIMEOUT_IN_US
+title: WDF_REL_TIMEOUT_IN_US function
+author: windows-driver-content
+description: The WDF_REL_TIMEOUT_IN_US function converts a specified number of microseconds to a relative time value.
+old-location: wdf\wdf_rel_timeout_in_us.htm
+old-project: wdf
+ms.assetid: 202c9741-140e-4d6e-961b-fb92f690e743
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.wdf_rel_timeout_in_us, DFTimerObjectRef_40b7f958-a289-43c2-ba4b-7085cc1659ee.xml, WDF_REL_TIMEOUT_IN_US function, kmdf.wdf_rel_timeout_in_us, wdfcore/WDF_REL_TIMEOUT_IN_US, WDF_REL_TIMEOUT_IN_US
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfcore.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: None
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	None
+-	None.dll
+apiname:
+-	WDF_REL_TIMEOUT_IN_US
+product: Windows
+targetos: Windows
+req.typenames: WDF_DEVICE_SHUTDOWN_FLAGS
+req.product: Windows 10 or later.
 ---
 
 

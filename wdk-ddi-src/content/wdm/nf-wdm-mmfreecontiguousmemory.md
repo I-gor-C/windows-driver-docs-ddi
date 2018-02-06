@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.MmFreeContiguousMemory
-title : MmFreeContiguousMemory function
-author : windows-driver-content
-description : The MmFreeContiguousMemory routine releases a range of physically contiguous memory that was allocated by an MmAllocateContiguousMemoryXxx routine.
-old-location : kernel\mmfreecontiguousmemory.htm
-old-project : kernel
-ms.assetid : 485c9b03-eb45-4c86-9292-ccd51ba7b080
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : MmFreeContiguousMemory, wdm/MmFreeContiguousMemory, MmFreeContiguousMemory routine [Kernel-Mode Driver Architecture], kernel.mmfreecontiguousmemory, k106_1b930a75-7382-4a6c-a638-3e7675f43f83.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : IrqlMmDispatch, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.MmFreeContiguousMemory
+title: MmFreeContiguousMemory function
+author: windows-driver-content
+description: The MmFreeContiguousMemory routine releases a range of physically contiguous memory that was allocated by an MmAllocateContiguousMemoryXxx routine.
+old-location: kernel\mmfreecontiguousmemory.htm
+old-project: kernel
+ms.assetid: 485c9b03-eb45-4c86-9292-ccd51ba7b080
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: MmFreeContiguousMemory, wdm/MmFreeContiguousMemory, MmFreeContiguousMemory routine [Kernel-Mode Driver Architecture], kernel.mmfreecontiguousmemory, k106_1b930a75-7382-4a6c-a638-3e7675f43f83.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: IrqlMmDispatch, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	MmFreeContiguousMemory
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

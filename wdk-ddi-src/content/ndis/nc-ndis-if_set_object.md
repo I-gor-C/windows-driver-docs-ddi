@@ -1,41 +1,46 @@
 ---
-UID : NC:ndis.IF_SET_OBJECT
-title : IF_SET_OBJECT
-author : windows-driver-content
-description : The ProviderSetObject function sets information that is associated with a network interface.
-old-location : netvista\providersetobject.htm
-old-project : netvista
-ms.assetid : e5dcb46e-5a8a-45b7-b6aa-150a9cec0155
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.providersetobject, ProviderSetObject callback function [Network Drivers Starting with Windows Vista], ProviderSetObject, IF_SET_OBJECT, IF_SET_OBJECT, ndis/ProviderSetObject, *IFP_SET_OBJECT callback function [Network Drivers Starting with Windows Vista], *IFP_SET_OBJECT, net_if_provider_functions_ref_8da505c4-dd64-43c8-a6a4-ad13cc4b18d0.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
+UID: NC:ndis.IF_SET_OBJECT
+title: IF_SET_OBJECT
+author: windows-driver-content
+description: The ProviderSetObject function sets information that is associated with a network interface.
+old-location: netvista\providersetobject.htm
+old-project: netvista
+ms.assetid: e5dcb46e-5a8a-45b7-b6aa-150a9cec0155
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.providersetobject, ProviderSetObject callback function [Network Drivers Starting with Windows Vista], ProviderSetObject, IF_SET_OBJECT, IF_SET_OBJECT, ndis/ProviderSetObject, *IFP_SET_OBJECT callback function [Network Drivers Starting with Windows Vista], *IFP_SET_OBJECT, net_if_provider_functions_ref_8da505c4-dd64-43c8-a6a4-ad13cc4b18d0.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ndis.h
+apiname:
+-	*IFP_SET_OBJECT
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 

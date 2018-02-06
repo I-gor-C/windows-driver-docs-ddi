@@ -1,42 +1,47 @@
 ---
-UID : NE:wdfwmi._WDF_WMI_PROVIDER_CONTROL
-title : "_WDF_WMI_PROVIDER_CONTROL"
-author : windows-driver-content
-description : The WDF_WMI_PROVIDER_CONTROL enumeration defines the type of control functions that a WMI data provider can support.
-old-location : wdf\wdf_wmi_provider_control.htm
-old-project : wdf
-ms.assetid : c545b0a6-bb36-47a7-b55c-ee7eed5ade3a
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : "_WDF_WMI_PROVIDER_CONTROL, wdfwmi/WDF_WMI_PROVIDER_CONTROL, WdfWmiEventControl, WDF_WMI_PROVIDER_CONTROL, WDF_WMI_PROVIDER_CONTROL enumeration, kmdf.wdf_wmi_provider_control, wdfwmi/WdfWmiInstanceControl, WdfWmiControlInvalid, wdf.wdf_wmi_provider_control, DFWMIRef_a78e583c-59b7-4af3-a07f-8b774916f664.xml, WdfWmiInstanceControl, wdfwmi/WdfWmiEventControl, wdfwmi/WdfWmiControlInvalid"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : wdfwmi.h
-req.include-header : Wdf.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_WMI_PROVIDER_CONTROL
-req.product : Windows 10 or later.
+UID: NE:wdfwmi._WDF_WMI_PROVIDER_CONTROL
+title: "_WDF_WMI_PROVIDER_CONTROL"
+author: windows-driver-content
+description: The WDF_WMI_PROVIDER_CONTROL enumeration defines the type of control functions that a WMI data provider can support.
+old-location: wdf\wdf_wmi_provider_control.htm
+old-project: wdf
+ms.assetid: c545b0a6-bb36-47a7-b55c-ee7eed5ade3a
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: "_WDF_WMI_PROVIDER_CONTROL, wdfwmi/WDF_WMI_PROVIDER_CONTROL, WdfWmiEventControl, WDF_WMI_PROVIDER_CONTROL, WDF_WMI_PROVIDER_CONTROL enumeration, kmdf.wdf_wmi_provider_control, wdfwmi/WdfWmiInstanceControl, WdfWmiControlInvalid, wdf.wdf_wmi_provider_control, DFWMIRef_a78e583c-59b7-4af3-a07f-8b774916f664.xml, WdfWmiInstanceControl, wdfwmi/WdfWmiEventControl, wdfwmi/WdfWmiControlInvalid"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: wdfwmi.h
+req.include-header: Wdf.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfwmi.h
+apiname:
+-	WDF_WMI_PROVIDER_CONTROL
+product: Windows
+targetos: Windows
+req.typenames: WDF_WMI_PROVIDER_CONTROL
+req.product: Windows 10 or later.
 ---
 
 # _WDF_WMI_PROVIDER_CONTROL Enumeration
@@ -56,26 +61,26 @@ typedef enum _WDF_WMI_PROVIDER_CONTROL {
 ## Constants
 
 <table>
-
-<tr>
-<td>WdfWmiControlInvalid</td>
-<td>For internal use only.</td>
-</tr>
-
-<tr>
-<td>WdfWmiEventControl</td>
-<td>The driver must enable or disable delivering events for a provider instance.</td>
-</tr>
-
-<tr>
-<td>WdfWmiInstanceControl</td>
-<td>The driver must enable or disable collecting data for a provider instance.</td>
-</tr>
+            
+                <tr>
+                    <td>WdfWmiControlInvalid</td>
+                    <td>For internal use only.</td>
+                </tr>
+            
+                <tr>
+                    <td>WdfWmiEventControl</td>
+                    <td>The driver must enable or disable delivering events for a provider instance.</td>
+                </tr>
+            
+                <tr>
+                    <td>WdfWmiInstanceControl</td>
+                    <td>The driver must enable or disable collecting data for a provider instance.</td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-The <b>WDF_WMI_PROVIDER_CONTROL</b> enumeration is used as an input parameter to the <a href="..\wdfwmi\nf-wdfwmi-wdfwmiproviderisenabled.md">WdfWmiProviderIsEnabled</a> method and the driver's <a href="..\wdfwmi\nc-wdfwmi-evt_wdf_wmi_provider_function_control.md">EvtWmiProviderFunctionControl</a> callback function.
+        The <b>WDF_WMI_PROVIDER_CONTROL</b> enumeration is used as an input parameter to the <a href="..\wdfwmi\nf-wdfwmi-wdfwmiproviderisenabled.md">WdfWmiProviderIsEnabled</a> method and the driver's <a href="..\wdfwmi\nc-wdfwmi-evt_wdf_wmi_provider_function_control.md">EvtWmiProviderFunctionControl</a> callback function.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -83,9 +88,9 @@ The <b>WDF_WMI_PROVIDER_CONTROL</b> enumeration is used as an input parameter to
 | **Minimum KMDF version** | 1.0 |
 | **Header** | wdfwmi.h (include Wdf.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\wdfwmi\nc-wdfwmi-evt_wdf_wmi_provider_function_control.md">EvtWmiProviderFunctionControl</a>
+        <a href="..\wdfwmi\nc-wdfwmi-evt_wdf_wmi_provider_function_control.md">EvtWmiProviderFunctionControl</a>
 
 <a href="..\wdfwmi\nf-wdfwmi-wdfwmiproviderisenabled.md">WdfWmiProviderIsEnabled</a>
 

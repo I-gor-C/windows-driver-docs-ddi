@@ -1,41 +1,46 @@
 ---
-UID : NS:ehstorbandmgmt._BAND_TABLE
-title : "_BAND_TABLE"
-author : windows-driver-content
-description : The BAND_TABLE structure contains the table of bands returned from an IOCTL_EHSTOR_BANDMGMT_ENUMERATE_BANDS request.
-old-location : storage\band_table.htm
-old-project : storage
-ms.assetid : 2714E346-6BDD-49EF-9820-6B82F8F29380
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : ehstorbandmgmt/PBAND_TABLE, _BAND_TABLE, ehstorbandmgmt/BAND_TABLE, BAND_TABLE, PBAND_TABLE, storage.band_table, *PBAND_TABLE, PBAND_TABLE structure pointer [Storage Devices], BAND_TABLE structure [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ehstorbandmgmt.h
-req.include-header : EhStorBandMgmt.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows 8
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PBAND_TABLE, BAND_TABLE"
+UID: NS:ehstorbandmgmt._BAND_TABLE
+title: "_BAND_TABLE"
+author: windows-driver-content
+description: The BAND_TABLE structure contains the table of bands returned from an IOCTL_EHSTOR_BANDMGMT_ENUMERATE_BANDS request.
+old-location: storage\band_table.htm
+old-project: storage
+ms.assetid: 2714E346-6BDD-49EF-9820-6B82F8F29380
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: ehstorbandmgmt/PBAND_TABLE, _BAND_TABLE, ehstorbandmgmt/BAND_TABLE, BAND_TABLE, PBAND_TABLE, storage.band_table, *PBAND_TABLE, PBAND_TABLE structure pointer [Storage Devices], BAND_TABLE structure [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ehstorbandmgmt.h
+req.include-header: EhStorBandMgmt.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows 8
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	EhStorBandMgmt.h
+apiname:
+-	BAND_TABLE
+product: Windows
+targetos: Windows
+req.typenames: "*PBAND_TABLE, BAND_TABLE"
 ---
 
 # _BAND_TABLE structure

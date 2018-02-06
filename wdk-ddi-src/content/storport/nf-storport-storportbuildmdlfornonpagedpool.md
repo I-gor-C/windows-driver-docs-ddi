@@ -1,42 +1,47 @@
 ---
-UID : NF:storport.StorPortBuildMdlForNonPagedPool
-title : StorPortBuildMdlForNonPagedPool function
-author : windows-driver-content
-description : The StorPortBuildMdlForNonPagedPool routine updates the MDL to describe the associated non-paged memory.
-old-location : storage\storportbuildmdlfornonpagedpool.htm
-old-project : storage
-ms.assetid : f22dbf1e-4b40-4294-bca5-3011f0a97644
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storport/StorPortBuildMdlForNonPagedPool, storprt_98151881-8a9f-4bf9-8365-ec50aecced4f.xml, StorPortBuildMdlForNonPagedPool routine [Storage Devices], StorPortBuildMdlForNonPagedPool, storage.storportbuildmdlfornonpagedpool
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : StorPortIrql
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STOR_SPINLOCK
-req.product : Windows 10 or later.
+UID: NF:storport.StorPortBuildMdlForNonPagedPool
+title: StorPortBuildMdlForNonPagedPool function
+author: windows-driver-content
+description: The StorPortBuildMdlForNonPagedPool routine updates the MDL to describe the associated non-paged memory.
+old-location: storage\storportbuildmdlfornonpagedpool.htm
+old-project: storage
+ms.assetid: f22dbf1e-4b40-4294-bca5-3011f0a97644
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storport/StorPortBuildMdlForNonPagedPool, storprt_98151881-8a9f-4bf9-8365-ec50aecced4f.xml, StorPortBuildMdlForNonPagedPool routine [Storage Devices], StorPortBuildMdlForNonPagedPool, storage.storportbuildmdlfornonpagedpool
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: StorPortIrql
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	storport.h
+apiname:
+-	StorPortBuildMdlForNonPagedPool
+product: Windows
+targetos: Windows
+req.typenames: STOR_SPINLOCK
+req.product: Windows 10 or later.
 ---
 
 

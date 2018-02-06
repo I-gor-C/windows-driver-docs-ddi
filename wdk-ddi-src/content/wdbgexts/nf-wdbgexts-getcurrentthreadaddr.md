@@ -1,42 +1,47 @@
 ---
-UID : NF:wdbgexts.GetCurrentThreadAddr
-title : GetCurrentThreadAddr function
-author : windows-driver-content
-description : The GetCurrentThreadAddr function returns the location of the system data that describes the current thread.
-old-location : debugger\getcurrentthreadaddr.htm
-old-project : debugger
-ms.assetid : 0664199b-da65-4b07-958e-d7972b39cefd
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : GetCurrentThreadAddr function [Windows Debugging], GetCurrentThreadAddr, WdbgExts_Ref_03db8f68-2e64-4530-bf35-df2a6f0d7736.xml, debugger.getcurrentthreadaddr, wdbgexts/GetCurrentThreadAddr
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdbgexts.h
-req.include-header : Wdbgexts.h, Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXT_TDOP
-req.product : Windows 10 or later.
+UID: NF:wdbgexts.GetCurrentThreadAddr
+title: GetCurrentThreadAddr function
+author: windows-driver-content
+description: The GetCurrentThreadAddr function returns the location of the system data that describes the current thread.
+old-location: debugger\getcurrentthreadaddr.htm
+old-project: debugger
+ms.assetid: 0664199b-da65-4b07-958e-d7972b39cefd
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: GetCurrentThreadAddr function [Windows Debugging], GetCurrentThreadAddr, WdbgExts_Ref_03db8f68-2e64-4530-bf35-df2a6f0d7736.xml, debugger.getcurrentthreadaddr, wdbgexts/GetCurrentThreadAddr
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdbgexts.h
+req.include-header: Wdbgexts.h, Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdbgexts.h
+apiname:
+-	GetCurrentThreadAddr
+product: Windows
+targetos: Windows
+req.typenames: EXT_TDOP
+req.product: Windows 10 or later.
 ---
 
 

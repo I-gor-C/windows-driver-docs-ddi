@@ -1,41 +1,46 @@
 ---
-UID : NF:namcache.RxNameCacheFinalize
-title : RxNameCacheFinalize function
-author : windows-driver-content
-description : RxNameCacheFinalize releases the storage for all of the NAME_CACHE entries associated with a NAME_CACHE_CONTROL structure.
-old-location : ifsk\rxnamecachefinalize.htm
-old-project : ifsk
-ms.assetid : e40ac123-86a9-4a69-bb13-a118f2fd42f1
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : RxNameCacheFinalize, namcache/RxNameCacheFinalize, rxref_34ec3c3b-20b2-425a-8d12-4a2d685ffb2f.xml, RxNameCacheFinalize function [Installable File System Drivers], ifsk.rxnamecachefinalize
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : namcache.h
-req.include-header : Namcache.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
+UID: NF:namcache.RxNameCacheFinalize
+title: RxNameCacheFinalize function
+author: windows-driver-content
+description: RxNameCacheFinalize releases the storage for all of the NAME_CACHE entries associated with a NAME_CACHE_CONTROL structure.
+old-location: ifsk\rxnamecachefinalize.htm
+old-project: ifsk
+ms.assetid: e40ac123-86a9-4a69-bb13-a118f2fd42f1
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: RxNameCacheFinalize, namcache/RxNameCacheFinalize, rxref_34ec3c3b-20b2-425a-8d12-4a2d685ffb2f.xml, RxNameCacheFinalize function [Installable File System Drivers], ifsk.rxnamecachefinalize
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: namcache.h
+req.include-header: Namcache.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	namcache.h
+apiname:
+-	RxNameCacheFinalize
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 

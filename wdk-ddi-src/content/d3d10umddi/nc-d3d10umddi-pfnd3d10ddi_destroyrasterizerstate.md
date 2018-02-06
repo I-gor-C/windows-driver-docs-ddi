@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3D10DDI_DESTROYRASTERIZERSTATE
-title : PFND3D10DDI_DESTROYRASTERIZERSTATE
-author : windows-driver-content
-description : The DestroyRasterizerState function destroys the specified rasterizer state object. The rasterizer state object can be destoyed only if it is not currently bound to a display device.
-old-location : display\destroyrasterizerstate.htm
-old-project : display
-ms.assetid : 7d730528-dc97-4490-a9fa-3d7916eef2e6
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.destroyrasterizerstate, DestroyRasterizerState callback function [Display Devices], DestroyRasterizerState, PFND3D10DDI_DESTROYRASTERIZERSTATE, PFND3D10DDI_DESTROYRASTERIZERSTATE, d3d10umddi/DestroyRasterizerState, UserModeDisplayDriverDx10_Functions_09ed2d7c-4191-4b5e-a18f-b42177106145.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3D10DDI_DESTROYRASTERIZERSTATE
+title: PFND3D10DDI_DESTROYRASTERIZERSTATE
+author: windows-driver-content
+description: The DestroyRasterizerState function destroys the specified rasterizer state object. The rasterizer state object can be destoyed only if it is not currently bound to a display device.
+old-location: display\destroyrasterizerstate.htm
+old-project: display
+ms.assetid: 7d730528-dc97-4490-a9fa-3d7916eef2e6
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.destroyrasterizerstate, DestroyRasterizerState callback function [Display Devices], DestroyRasterizerState, PFND3D10DDI_DESTROYRASTERIZERSTATE, PFND3D10DDI_DESTROYRASTERIZERSTATE, d3d10umddi/DestroyRasterizerState, UserModeDisplayDriverDx10_Functions_09ed2d7c-4191-4b5e-a18f-b42177106145.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	DestroyRasterizerState
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

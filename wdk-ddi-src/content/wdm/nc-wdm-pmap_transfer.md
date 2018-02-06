@@ -1,42 +1,47 @@
 ---
-UID : NC:wdm.PMAP_TRANSFER
-title : PMAP_TRANSFER
-author : windows-driver-content
-description : The MapTransfer routine sets up map registers for an adapter object to map a DMA transfer from a locked-down buffer.
-old-location : kernel\maptransfer.htm
-old-project : kernel
-ms.assetid : 50126ab8-3094-497e-96f8-e41255d275e3
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.maptransfer, MapTransfer, MapTransfer callback function [Kernel-Mode Driver Architecture], MapTransfer, PMAP_TRANSFER, PMAP_TRANSFER, wdm/MapTransfer, kdma_4bc30c1d-1d83-424f-9c58-cd92c5e9d331.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : IrqlDispatch
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
-req.product : Windows 10 or later.
+UID: NC:wdm.PMAP_TRANSFER
+title: PMAP_TRANSFER
+author: windows-driver-content
+description: The MapTransfer routine sets up map registers for an adapter object to map a DMA transfer from a locked-down buffer.
+old-location: kernel\maptransfer.htm
+old-project: kernel
+ms.assetid: 50126ab8-3094-497e-96f8-e41255d275e3
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.maptransfer, MapTransfer, MapTransfer callback function [Kernel-Mode Driver Architecture], MapTransfer, PMAP_TRANSFER, PMAP_TRANSFER, wdm/MapTransfer, kdma_4bc30c1d-1d83-424f-9c58-cd92c5e9d331.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: IrqlDispatch
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	wdm.h
+apiname:
+-	MapTransfer
+product: Windows
+targetos: Windows
+req.typenames: WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+req.product: Windows 10 or later.
 ---
 
 

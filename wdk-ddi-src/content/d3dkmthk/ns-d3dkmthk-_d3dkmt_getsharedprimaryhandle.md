@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmthk._D3DKMT_GETSHAREDPRIMARYHANDLE
-title : "_D3DKMT_GETSHAREDPRIMARYHANDLE"
-author : windows-driver-content
-description : The D3DKMT_GETSHAREDPRIMARYHANDLE structure describes the parameters that are required to retrieve the global shared handle for the primary surface.
-old-location : display\d3dkmt_getsharedprimaryhandle.htm
-old-project : display
-ms.assetid : 59c45a0e-54c3-4301-8e65-409d6c728325
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3dkmthk/D3DKMT_GETSHAREDPRIMARYHANDLE, OpenGL_Structs_322563d8-5546-4b10-bd74-101f3ffb633a.xml, _D3DKMT_GETSHAREDPRIMARYHANDLE, D3DKMT_GETSHAREDPRIMARYHANDLE, display.d3dkmt_getsharedprimaryhandle, D3DKMT_GETSHAREDPRIMARYHANDLE structure [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_GETSHAREDPRIMARYHANDLE
+UID: NS:d3dkmthk._D3DKMT_GETSHAREDPRIMARYHANDLE
+title: "_D3DKMT_GETSHAREDPRIMARYHANDLE"
+author: windows-driver-content
+description: The D3DKMT_GETSHAREDPRIMARYHANDLE structure describes the parameters that are required to retrieve the global shared handle for the primary surface.
+old-location: display\d3dkmt_getsharedprimaryhandle.htm
+old-project: display
+ms.assetid: 59c45a0e-54c3-4301-8e65-409d6c728325
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3dkmthk/D3DKMT_GETSHAREDPRIMARYHANDLE, OpenGL_Structs_322563d8-5546-4b10-bd74-101f3ffb633a.xml, _D3DKMT_GETSHAREDPRIMARYHANDLE, D3DKMT_GETSHAREDPRIMARYHANDLE, display.d3dkmt_getsharedprimaryhandle, D3DKMT_GETSHAREDPRIMARYHANDLE structure [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmthk.h
+apiname:
+-	D3DKMT_GETSHAREDPRIMARYHANDLE
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_GETSHAREDPRIMARYHANDLE
 ---
 
 # _D3DKMT_GETSHAREDPRIMARYHANDLE structure

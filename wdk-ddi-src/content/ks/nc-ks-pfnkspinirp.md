@@ -1,41 +1,46 @@
 ---
-UID : NC:ks.PFNKSPINIRP
-title : PFNKSPINIRP
-author : windows-driver-content
-description : An AVStream minidriver's routine is called when an activity on the pin is performed and it receives these IRPs:IRP_MJ_CREATEIRP_MJ_CLOSE
-old-location : stream\avstrminipincreate.htm
-old-project : stream
-ms.assetid : 85e91b13-96c8-4422-b9b7-90f6cecbb2a5
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.avstrminipincreate, AVStrMiniPinCreate, AVStrMiniPinCreate routine [Streaming Media Devices], AVStrMiniPinCreate, PFNKSPINIRP, PFNKSPINIRP, ks/AVStrMiniPinCreate, avstclbk_0feeeb85-88fe-43d7-83e4-399b0c26aa53.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (See Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KEYWORDSELECTOR
+UID: NC:ks.PFNKSPINIRP
+title: PFNKSPINIRP
+author: windows-driver-content
+description: An AVStream minidriver's routine is called when an activity on the pin is performed and it receives these IRPs:IRP_MJ_CREATEIRP_MJ_CLOSE
+old-location: stream\avstrminipincreate.htm
+old-project: stream
+ms.assetid: 85e91b13-96c8-4422-b9b7-90f6cecbb2a5
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.avstrminipincreate, AVStrMiniPinCreate, AVStrMiniPinCreate routine [Streaming Media Devices], AVStrMiniPinCreate, PFNKSPINIRP, PFNKSPINIRP, ks/AVStrMiniPinCreate, avstclbk_0feeeb85-88fe-43d7-83e4-399b0c26aa53.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (See Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	ks.h
+apiname:
+-	AVStrMiniPinCreate
+product: Windows
+targetos: Windows
+req.typenames: KEYWORDSELECTOR
 ---
 
 

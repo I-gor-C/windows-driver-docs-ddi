@@ -1,41 +1,46 @@
 ---
-UID : NC:ndis.MINIPORT_CO_CREATE_VC
-title : MINIPORT_CO_CREATE_VC
-author : windows-driver-content
-description : The MiniportCoCreateVc function is required for connection-oriented miniports.
-old-location : netvista\miniportcocreatevc.htm
-old-project : netvista
-ms.assetid : 99eaba29-ce17-4e79-878e-5fdf7411e56c
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.miniportcocreatevc, MiniportCoCreateVc callback function [Network Drivers Starting with Windows Vista], MiniportCoCreateVc, MINIPORT_CO_CREATE_VC, MINIPORT_CO_CREATE_VC, ndis/MiniportCoCreateVc, condis_miniport_ref_73192f8d-af71-40f8-8118-52124bc38e94.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see    MiniportCoCreateVc (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    MiniportCoCreateVc (NDIS   5.1)) in Windows XP.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
+UID: NC:ndis.MINIPORT_CO_CREATE_VC
+title: MINIPORT_CO_CREATE_VC
+author: windows-driver-content
+description: The MiniportCoCreateVc function is required for connection-oriented miniports.
+old-location: netvista\miniportcocreatevc.htm
+old-project: netvista
+ms.assetid: 99eaba29-ce17-4e79-878e-5fdf7411e56c
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.miniportcocreatevc, MiniportCoCreateVc callback function [Network Drivers Starting with Windows Vista], MiniportCoCreateVc, MINIPORT_CO_CREATE_VC, MINIPORT_CO_CREATE_VC, ndis/MiniportCoCreateVc, condis_miniport_ref_73192f8d-af71-40f8-8118-52124bc38e94.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    MiniportCoCreateVc (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    MiniportCoCreateVc (NDIS   5.1)) in Windows XP.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ndis.h
+apiname:
+-	MiniportCoCreateVc
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 

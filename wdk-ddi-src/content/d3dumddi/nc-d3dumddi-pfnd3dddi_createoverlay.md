@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_CREATEOVERLAY
-title : PFND3DDDI_CREATEOVERLAY
-author : windows-driver-content
-description : The CreateOverlay function allocates overlay hardware and makes the overlay visible.
-old-location : display\createoverlay.htm
-old-project : display
-ms.assetid : 761377ff-95a6-426b-8372-3f347870f9c4
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.createoverlay, CreateOverlay callback function [Display Devices], CreateOverlay, PFND3DDDI_CREATEOVERLAY, PFND3DDDI_CREATEOVERLAY, d3dumddi/CreateOverlay, UserModeDisplayDriver_Functions_8418bf74-3398-4913-9002-2f0b2a0941fb.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_CREATEOVERLAY
+title: PFND3DDDI_CREATEOVERLAY
+author: windows-driver-content
+description: The CreateOverlay function allocates overlay hardware and makes the overlay visible.
+old-location: display\createoverlay.htm
+old-project: display
+ms.assetid: 761377ff-95a6-426b-8372-3f347870f9c4
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.createoverlay, CreateOverlay callback function [Display Devices], CreateOverlay, PFND3DDDI_CREATEOVERLAY, PFND3DDDI_CREATEOVERLAY, d3dumddi/CreateOverlay, UserModeDisplayDriver_Functions_8418bf74-3398-4913-9002-2f0b2a0941fb.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	CreateOverlay
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:hbaapi.HBA_PortAttributes
-title : HBA_PortAttributes
-author : windows-driver-content
-description : The structure is used by the HBA_GetPortAttributesByWWN fibre channel HBA library routine to report the attributes for a specified remote fibre channel port.
-old-location : storage\hba_portattributes.htm
-old-project : storage
-ms.assetid : 7628c68b-b851-4b41-a86b-aa54e7cd6ddf
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.hba_portattributes, PHBA_PORTATTRIBUTES structure pointer [Storage Devices], HBA_PORTATTRIBUTES structure [Storage Devices], HBA_PortAttributes structure [Storage Devices], HBA_PortAttributes, *PHBA_PORTATTRIBUTES, HBA_PORTATTRIBUTES, hbaapi/PHBA_PORTATTRIBUTES, PHBA_PORTATTRIBUTES, hbaapi/HBA_PortAttributes, structs-Fibre_86dd88a9-06cc-4e24-a665-f4fa240795fb.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : hbaapi.h
-req.include-header : Hbaapi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HBA_PORTATTRIBUTES, *PHBA_PORTATTRIBUTES
+UID: NS:hbaapi.HBA_PortAttributes
+title: HBA_PortAttributes
+author: windows-driver-content
+description: The structure is used by the HBA_GetPortAttributesByWWN fibre channel HBA library routine to report the attributes for a specified remote fibre channel port.
+old-location: storage\hba_portattributes.htm
+old-project: storage
+ms.assetid: 7628c68b-b851-4b41-a86b-aa54e7cd6ddf
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.hba_portattributes, PHBA_PORTATTRIBUTES structure pointer [Storage Devices], HBA_PORTATTRIBUTES structure [Storage Devices], HBA_PortAttributes structure [Storage Devices], HBA_PortAttributes, *PHBA_PORTATTRIBUTES, HBA_PORTATTRIBUTES, hbaapi/PHBA_PORTATTRIBUTES, PHBA_PORTATTRIBUTES, hbaapi/HBA_PortAttributes, structs-Fibre_86dd88a9-06cc-4e24-a665-f4fa240795fb.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: hbaapi.h
+req.include-header: Hbaapi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hbaapi.h
+apiname:
+-	HBA_PORTATTRIBUTES
+product: Windows
+targetos: Windows
+req.typenames: HBA_PORTATTRIBUTES, *PHBA_PORTATTRIBUTES
 ---
 
 # HBA_PortAttributes structure

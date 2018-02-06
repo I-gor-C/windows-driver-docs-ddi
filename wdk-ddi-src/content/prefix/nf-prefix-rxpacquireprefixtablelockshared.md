@@ -1,42 +1,47 @@
 ---
-UID : NF:prefix.RxpAcquirePrefixTableLockShared
-title : RxpAcquirePrefixTableLockShared function
-author : windows-driver-content
-description : RxpAcquirePrefixTableLockShared acquires the prefix table lock shared.
-old-location : ifsk\rxpacquireprefixtablelockshared.htm
-old-project : ifsk
-ms.assetid : 89924d1d-80c2-4778-9647-c3add9e7d013
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : RxpAcquirePrefixTableLockShared, rxref_340b65e8-2dba-4895-8cdf-e3464d14f5a3.xml, prefix/RxpAcquirePrefixTableLockShared, RxpAcquirePrefixTableLockShared function [Installable File System Drivers], ifsk.rxpacquireprefixtablelockshared
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : prefix.h
-req.include-header : Prefix.h
-req.target-type : Desktop
-req.target-min-winverclnt : On Windows Server 2003, the RxpAcquirePrefixTableLockShared routine is implemented as a macro. This routine is only available onWindows XP and Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SHIMOPTS, *PSHIMOPTS
-req.product : Windows 10 or later.
+UID: NF:prefix.RxpAcquirePrefixTableLockShared
+title: RxpAcquirePrefixTableLockShared function
+author: windows-driver-content
+description: RxpAcquirePrefixTableLockShared acquires the prefix table lock shared.
+old-location: ifsk\rxpacquireprefixtablelockshared.htm
+old-project: ifsk
+ms.assetid: 89924d1d-80c2-4778-9647-c3add9e7d013
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: RxpAcquirePrefixTableLockShared, rxref_340b65e8-2dba-4895-8cdf-e3464d14f5a3.xml, prefix/RxpAcquirePrefixTableLockShared, RxpAcquirePrefixTableLockShared function [Installable File System Drivers], ifsk.rxpacquireprefixtablelockshared
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: prefix.h
+req.include-header: Prefix.h
+req.target-type: Desktop
+req.target-min-winverclnt: On Windows Server 2003, the RxpAcquirePrefixTableLockShared routine is implemented as a macro. This routine is only available onWindows XP and Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	prefix.h
+apiname:
+-	RxpAcquirePrefixTableLockShared
+product: Windows
+targetos: Windows
+req.typenames: SHIMOPTS, *PSHIMOPTS
+req.product: Windows 10 or later.
 ---
 
 

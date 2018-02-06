@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfiotarget.WdfIoTargetWdmGetTargetPhysicalDevice
-title : WdfIoTargetWdmGetTargetPhysicalDevice function
-author : windows-driver-content
-description : The WdfIoTargetWdmGetTargetPhysicalDevice method returns a pointer to the Windows Driver Model (WDM) physical device object (PDO) that represents a remote I/O target's device.
-old-location : wdf\wdfiotargetwdmgettargetphysicaldevice.htm
-old-project : wdf
-ms.assetid : ad24f1b4-ac7f-46df-8f8d-14c956c73a34
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdfiotarget/WdfIoTargetWdmGetTargetPhysicalDevice, kmdf.wdfiotargetwdmgettargetphysicaldevice, WdfIoTargetWdmGetTargetPhysicalDevice, WdfIoTargetWdmGetTargetPhysicalDevice method, wdf.wdfiotargetwdmgettargetphysicaldevice, DFIOTargetRef_43beb595-b555-4253-8a54-495e9e14f071.xml, PFN_WDFIOTARGETWDMGETTARGETPHYSICALDEVICE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfiotarget.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDF_IO_TARGET_STATE, WDF_IO_TARGET_STATE"
-req.product : Windows 10 or later.
+UID: NF:wdfiotarget.WdfIoTargetWdmGetTargetPhysicalDevice
+title: WdfIoTargetWdmGetTargetPhysicalDevice function
+author: windows-driver-content
+description: The WdfIoTargetWdmGetTargetPhysicalDevice method returns a pointer to the Windows Driver Model (WDM) physical device object (PDO) that represents a remote I/O target's device.
+old-location: wdf\wdfiotargetwdmgettargetphysicaldevice.htm
+old-project: wdf
+ms.assetid: ad24f1b4-ac7f-46df-8f8d-14c956c73a34
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdfiotarget/WdfIoTargetWdmGetTargetPhysicalDevice, kmdf.wdfiotargetwdmgettargetphysicaldevice, WdfIoTargetWdmGetTargetPhysicalDevice, WdfIoTargetWdmGetTargetPhysicalDevice method, wdf.wdfiotargetwdmgettargetphysicaldevice, DFIOTargetRef_43beb595-b555-4253-8a54-495e9e14f071.xml, PFN_WDFIOTARGETWDMGETTARGETPHYSICALDEVICE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfiotarget.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfIoTargetWdmGetTargetPhysicalDevice
+product: Windows
+targetos: Windows
+req.typenames: "*PWDF_IO_TARGET_STATE, WDF_IO_TARGET_STATE"
+req.product: Windows 10 or later.
 ---
 
 

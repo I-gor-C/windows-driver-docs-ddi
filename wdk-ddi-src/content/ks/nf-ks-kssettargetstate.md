@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsSetTargetState
-title : KsSetTargetState function
-author : windows-driver-content
-description : Sets the enabled state of a target device associated with the specified object header.
-old-location : stream\kssettargetstate.htm
-old-project : stream
-ms.assetid : 36f14936-8cc6-4488-aa0f-343e4fbb84e3
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KsSetTargetState, ksfunc_7e05a5c0-2c82-4b20-a199-3955c61c6e40.xml, ks/KsSetTargetState, KsSetTargetState function [Streaming Media Devices], stream.kssettargetstate
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsSetTargetState
+title: KsSetTargetState function
+author: windows-driver-content
+description: Sets the enabled state of a target device associated with the specified object header.
+old-location: stream\kssettargetstate.htm
+old-project: stream
+ms.assetid: 36f14936-8cc6-4488-aa0f-343e4fbb84e3
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KsSetTargetState, ksfunc_7e05a5c0-2c82-4b20-a199-3955c61c6e40.xml, ks/KsSetTargetState, KsSetTargetState function [Streaming Media Devices], stream.kssettargetstate
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsSetTargetState
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

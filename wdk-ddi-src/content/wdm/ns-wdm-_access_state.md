@@ -1,42 +1,47 @@
 ---
-UID : NS:wdm._ACCESS_STATE
-title : "_ACCESS_STATE"
-author : windows-driver-content
-description : The ACCESS_STATE structure describes the state of an access in progress.
-old-location : ifsk\access_state.htm
-old-project : ifsk
-ms.assetid : 3d1d6407-f853-48d5-bd54-2eacece48b84
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : wdm/PACCESS_STATE, securitystructures_41c08d1c-9d46-4df7-a1fe-dc274e8b3fe7.xml, ACCESS_STATE structure [Installable File System Drivers], PACCESS_STATE, *PACCESS_STATE, ACCESS_STATE, PACCESS_STATE structure pointer [Installable File System Drivers], _ACCESS_STATE, wdm/ACCESS_STATE, ifsk.access_state
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PACCESS_STATE, ACCESS_STATE"
-req.product : Windows 10 or later.
+UID: NS:wdm._ACCESS_STATE
+title: "_ACCESS_STATE"
+author: windows-driver-content
+description: The ACCESS_STATE structure describes the state of an access in progress.
+old-location: ifsk\access_state.htm
+old-project: ifsk
+ms.assetid: 3d1d6407-f853-48d5-bd54-2eacece48b84
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: wdm/PACCESS_STATE, securitystructures_41c08d1c-9d46-4df7-a1fe-dc274e8b3fe7.xml, ACCESS_STATE structure [Installable File System Drivers], PACCESS_STATE, *PACCESS_STATE, ACCESS_STATE, PACCESS_STATE structure pointer [Installable File System Drivers], _ACCESS_STATE, wdm/ACCESS_STATE, ifsk.access_state
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	ACCESS_STATE
+product: Windows
+targetos: Windows
+req.typenames: "*PACCESS_STATE, ACCESS_STATE"
+req.product: Windows 10 or later.
 ---
 
 # _ACCESS_STATE structure

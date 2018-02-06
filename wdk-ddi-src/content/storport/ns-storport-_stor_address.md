@@ -1,42 +1,47 @@
 ---
-UID : NS:storport._STOR_ADDRESS
-title : "_STOR_ADDRESS"
-author : windows-driver-content
-description : A general structure for holding a storage device address.
-old-location : storage\stor_address.htm
-old-project : storage
-ms.assetid : 464AE3EA-D941-430F-8362-B66F4D00AE50
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : STOR_ADDRESS_TYPE_BTL8, PSTOR_ADDRESS structure pointer [Storage Devices], storport/PSTOR_ADDRESS, STOR_ADDRESS_TYPE_UNKNOWN, STOR_ADDRESS, _STOR_ADDRESS, storage.stor_address, STOR_ADDRESS structure [Storage Devices], PSTOR_ADDRESS, *PSTOR_ADDRESS, storport/STOR_ADDRESS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : storport.h
-req.include-header : Storport.h, Scsi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STOR_ADDRESS, *PSTOR_ADDRESS
-req.product : Windows 10 or later.
+UID: NS:storport._STOR_ADDRESS
+title: "_STOR_ADDRESS"
+author: windows-driver-content
+description: A general structure for holding a storage device address.
+old-location: storage\stor_address.htm
+old-project: storage
+ms.assetid: 464AE3EA-D941-430F-8362-B66F4D00AE50
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: STOR_ADDRESS_TYPE_BTL8, PSTOR_ADDRESS structure pointer [Storage Devices], storport/PSTOR_ADDRESS, STOR_ADDRESS_TYPE_UNKNOWN, STOR_ADDRESS, _STOR_ADDRESS, storage.stor_address, STOR_ADDRESS structure [Storage Devices], PSTOR_ADDRESS, *PSTOR_ADDRESS, storport/STOR_ADDRESS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: storport.h
+req.include-header: Storport.h, Scsi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Storport.h
+apiname:
+-	STOR_ADDRESS
+product: Windows
+targetos: Windows
+req.typenames: STOR_ADDRESS, *PSTOR_ADDRESS
+req.product: Windows 10 or later.
 ---
 
 # _STOR_ADDRESS structure

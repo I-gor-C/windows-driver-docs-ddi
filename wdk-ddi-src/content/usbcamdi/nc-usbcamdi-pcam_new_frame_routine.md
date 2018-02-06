@@ -1,42 +1,47 @@
 ---
-UID : NC:usbcamdi.PCAM_NEW_FRAME_ROUTINE
-title : PCAM_NEW_FRAME_ROUTINE
-author : windows-driver-content
-description : A camera minidriver's CamNewVideoFrame callback function initializes a new video frame context structure.
-old-location : stream\camnewvideoframe.htm
-old-project : stream
-ms.assetid : b647cc94-e5eb-494f-b103-22aa30da8946
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.camnewvideoframe, CamNewVideoFrame, CamNewVideoFrame callback function [Streaming Media Devices], CamNewVideoFrame, PCAM_NEW_FRAME_ROUTINE, PCAM_NEW_FRAME_ROUTINE, usbcamdi/CamNewVideoFrame, usbcmdpr_5f488227-2c1a-497e-975a-dc2b388f8489.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : usbcamdi.h
-req.include-header : Usbcamdi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : DISPATCH_LEVEL (See Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUSB_BUS_INTERFACE_USBDI_V3, USB_BUS_INTERFACE_USBDI_V3"
-req.product : Windows 10 or later.
+UID: NC:usbcamdi.PCAM_NEW_FRAME_ROUTINE
+title: PCAM_NEW_FRAME_ROUTINE
+author: windows-driver-content
+description: A camera minidriver's CamNewVideoFrame callback function initializes a new video frame context structure.
+old-location: stream\camnewvideoframe.htm
+old-project: stream
+ms.assetid: b647cc94-e5eb-494f-b103-22aa30da8946
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.camnewvideoframe, CamNewVideoFrame, CamNewVideoFrame callback function [Streaming Media Devices], CamNewVideoFrame, PCAM_NEW_FRAME_ROUTINE, PCAM_NEW_FRAME_ROUTINE, usbcamdi/CamNewVideoFrame, usbcmdpr_5f488227-2c1a-497e-975a-dc2b388f8489.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: usbcamdi.h
+req.include-header: Usbcamdi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: DISPATCH_LEVEL (See Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	usbcamdi.h
+apiname:
+-	CamNewVideoFrame
+product: Windows
+targetos: Windows
+req.typenames: "*PUSB_BUS_INTERFACE_USBDI_V3, USB_BUS_INTERFACE_USBDI_V3"
+req.product: Windows 10 or later.
 ---
 
 

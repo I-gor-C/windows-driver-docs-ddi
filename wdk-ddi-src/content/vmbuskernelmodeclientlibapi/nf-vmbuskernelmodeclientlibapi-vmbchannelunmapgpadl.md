@@ -1,42 +1,47 @@
 ---
-UID : NF:vmbuskernelmodeclientlibapi.VmbChannelUnmapGpadl
-title : VmbChannelUnmapGpadl function
-author : windows-driver-content
-description : The VmbChannelUnmapGpadl function unmaps a Guest Physical Address Descriptor List (GPADL) mapped using by the VmbChannelMapGpadl function. The buffer must no longer be in use by the server before this function is called.
-old-location : netvista\vmbchannelunmapgpadl.htm
-old-project : netvista
-ms.assetid : EE300158-D7D8-4353-B205-362232A22568
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : VmbChannelUnmapGpadl, netvista.vmbchannelunmapgpadl, vmbuskernelmodeclientlibapi/VmbChannelUnmapGpadl, VmbChannelUnmapGpadl function [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : vmbuskernelmodeclientlibapi.h
-req.include-header : VmbusKernelModeClientLibApi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8.1
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 1.13
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PVIDEO_PORT_AGP_SERVICES, VIDEO_PORT_AGP_SERVICES"
-req.product : Windows 10 or later.
+UID: NF:vmbuskernelmodeclientlibapi.VmbChannelUnmapGpadl
+title: VmbChannelUnmapGpadl function
+author: windows-driver-content
+description: The VmbChannelUnmapGpadl function unmaps a Guest Physical Address Descriptor List (GPADL) mapped using by the VmbChannelMapGpadl function. The buffer must no longer be in use by the server before this function is called.
+old-location: netvista\vmbchannelunmapgpadl.htm
+old-project: netvista
+ms.assetid: EE300158-D7D8-4353-B205-362232A22568
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: VmbChannelUnmapGpadl, netvista.vmbchannelunmapgpadl, vmbuskernelmodeclientlibapi/VmbChannelUnmapGpadl, VmbChannelUnmapGpadl function [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: vmbuskernelmodeclientlibapi.h
+req.include-header: VmbusKernelModeClientLibApi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8.1
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 1.13
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	VmbusKernelModeClientLibApi.h
+apiname:
+-	VmbChannelUnmapGpadl
+product: Windows
+targetos: Windows
+req.typenames: "*PVIDEO_PORT_AGP_SERVICES, VIDEO_PORT_AGP_SERVICES"
+req.product: Windows 10 or later.
 ---
 
 

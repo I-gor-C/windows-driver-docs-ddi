@@ -1,41 +1,46 @@
 ---
-UID : NS:ehstorbandmgmt._SET_BAND_SECURITY_PARAMETERS
-title : "_SET_BAND_SECURITY_PARAMETERS"
-author : windows-driver-content
-description : The parameters to set security properties for a band on a storage device for a IOCTL_EHSTOR_BANDMGMT_SET_BAND_SECURITY request are specified in a SET_BAND_SECURITY_PARAMETERS structure.
-old-location : storage\set_band_security_parameters.htm
-old-project : storage
-ms.assetid : D1703D6F-A453-4E3E-8705-344469D61412
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : PSET_BAND_SECURITY_PARAMETERS structure pointer [Storage Devices], ehstorbandmgmt/SET_BAND_SECURITY_PARAMETERS, PSET_BAND_SECURITY_PARAMETERS, _SET_BAND_SECURITY_PARAMETERS, *PSET_BAND_SECURITY_PARAMETERS, ehstorbandmgmt/PSET_BAND_SECURITY_PARAMETERS, SET_BAND_SECURITY_PARAMETERS, SETBANDSEC_AUTHKEY_CACHING_ENABLED, storage.set_band_security_parameters, SET_BAND_SECURITY_PARAMETERS structure [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ehstorbandmgmt.h
-req.include-header : EhStorBandMgmt.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows 8
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SET_BAND_SECURITY_PARAMETERS, *PSET_BAND_SECURITY_PARAMETERS
+UID: NS:ehstorbandmgmt._SET_BAND_SECURITY_PARAMETERS
+title: "_SET_BAND_SECURITY_PARAMETERS"
+author: windows-driver-content
+description: The parameters to set security properties for a band on a storage device for a IOCTL_EHSTOR_BANDMGMT_SET_BAND_SECURITY request are specified in a SET_BAND_SECURITY_PARAMETERS structure.
+old-location: storage\set_band_security_parameters.htm
+old-project: storage
+ms.assetid: D1703D6F-A453-4E3E-8705-344469D61412
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: PSET_BAND_SECURITY_PARAMETERS structure pointer [Storage Devices], ehstorbandmgmt/SET_BAND_SECURITY_PARAMETERS, PSET_BAND_SECURITY_PARAMETERS, _SET_BAND_SECURITY_PARAMETERS, *PSET_BAND_SECURITY_PARAMETERS, ehstorbandmgmt/PSET_BAND_SECURITY_PARAMETERS, SET_BAND_SECURITY_PARAMETERS, SETBANDSEC_AUTHKEY_CACHING_ENABLED, storage.set_band_security_parameters, SET_BAND_SECURITY_PARAMETERS structure [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ehstorbandmgmt.h
+req.include-header: EhStorBandMgmt.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows 8
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	EhStorBandMgmt.h
+apiname:
+-	SET_BAND_SECURITY_PARAMETERS
+product: Windows
+targetos: Windows
+req.typenames: SET_BAND_SECURITY_PARAMETERS, *PSET_BAND_SECURITY_PARAMETERS
 ---
 
 # _SET_BAND_SECURITY_PARAMETERS structure

@@ -1,41 +1,50 @@
 ---
-UID : NF:dbgeng.IDebugClient5.GetOtherOutputMask
-title : IDebugClient5::GetOtherOutputMask method
-author : windows-driver-content
-description : The GetOtherOutputMask method returns the output mask for another client.
-old-location : debugger\getotheroutputmask.htm
-old-project : debugger
-ms.assetid : b2334012-0aeb-43a2-aa5f-ecc51949ac46
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : GetOtherOutputMask method [Windows Debugging], IDebugClient interface, GetOtherOutputMask, IDebugClient3::GetOtherOutputMask, IDebugClient::GetOtherOutputMask, IDebugClient interface [Windows Debugging], GetOtherOutputMask method, IDebugClient3 interface [Windows Debugging], GetOtherOutputMask method, dbgeng/IDebugClient5::GetOtherOutputMask, GetOtherOutputMask method [Windows Debugging], GetOtherOutputMask method [Windows Debugging], IDebugClient2 interface, dbgeng/IDebugClient3::GetOtherOutputMask, GetOtherOutputMask method [Windows Debugging], IDebugClient3 interface, IDebugClient4 interface [Windows Debugging], GetOtherOutputMask method, IDebugClient5 interface [Windows Debugging], GetOtherOutputMask method, dbgeng/IDebugClient::GetOtherOutputMask, IDebugClient5::GetOtherOutputMask, IDebugClient4::GetOtherOutputMask, debugger.getotheroutputmask, IDebugClient2::GetOtherOutputMask, dbgeng/IDebugClient4::GetOtherOutputMask, IDebugClient2 interface [Windows Debugging], GetOtherOutputMask method, GetOtherOutputMask method [Windows Debugging], IDebugClient5 interface, dbgeng/IDebugClient2::GetOtherOutputMask, GetOtherOutputMask method [Windows Debugging], IDebugClient4 interface, IDebugClient_780a02ad-2f51-4142-a0d2-74220bf52623.xml, IDebugClient5
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugClient5.GetOtherOutputMask
+title: IDebugClient5::GetOtherOutputMask method
+author: windows-driver-content
+description: The GetOtherOutputMask method returns the output mask for another client.
+old-location: debugger\getotheroutputmask.htm
+old-project: debugger
+ms.assetid: b2334012-0aeb-43a2-aa5f-ecc51949ac46
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: GetOtherOutputMask method [Windows Debugging], IDebugClient interface, GetOtherOutputMask, IDebugClient3::GetOtherOutputMask, IDebugClient::GetOtherOutputMask, IDebugClient interface [Windows Debugging], GetOtherOutputMask method, IDebugClient3 interface [Windows Debugging], GetOtherOutputMask method, dbgeng/IDebugClient5::GetOtherOutputMask, GetOtherOutputMask method [Windows Debugging], GetOtherOutputMask method [Windows Debugging], IDebugClient2 interface, dbgeng/IDebugClient3::GetOtherOutputMask, GetOtherOutputMask method [Windows Debugging], IDebugClient3 interface, IDebugClient4 interface [Windows Debugging], GetOtherOutputMask method, IDebugClient5 interface [Windows Debugging], GetOtherOutputMask method, dbgeng/IDebugClient::GetOtherOutputMask, IDebugClient5::GetOtherOutputMask, IDebugClient4::GetOtherOutputMask, debugger.getotheroutputmask, IDebugClient2::GetOtherOutputMask, dbgeng/IDebugClient4::GetOtherOutputMask, IDebugClient2 interface [Windows Debugging], GetOtherOutputMask method, GetOtherOutputMask method [Windows Debugging], IDebugClient5 interface, dbgeng/IDebugClient2::GetOtherOutputMask, GetOtherOutputMask method [Windows Debugging], IDebugClient4 interface, IDebugClient_780a02ad-2f51-4142-a0d2-74220bf52623.xml, IDebugClient5
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugClient.GetOtherOutputMask
+-	IDebugClient2.GetOtherOutputMask
+-	IDebugClient3.GetOtherOutputMask
+-	IDebugClient4.GetOtherOutputMask
+-	IDebugClient5.GetOtherOutputMask
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

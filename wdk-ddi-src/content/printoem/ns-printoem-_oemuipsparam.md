@@ -1,42 +1,47 @@
 ---
-UID : NS:printoem._OEMUIPSPARAM
-title : "_OEMUIPSPARAM"
-author : windows-driver-content
-description : The OEMUIPSPARAM structure is passed to a user interface plug-in's IPrintOemUI::DevicePropertySheets and IPrintOemUI::DocumentPropertySheets methods.
-old-location : print\oemuipsparam.htm
-old-project : print
-ms.assetid : e7708b33-b032-41b9-84f9-6c5b38044f9c
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : print.oemuipsparam, printoem/POEMUIPSPARAM, POEMUIPSPARAM, POEMUIPSPARAM structure pointer [Print Devices], *POEMUIPSPARAM, printoem/OEMUIPSPARAM, OEMUIPSPARAM, print_unidrv-pscript_ui_7a4c3f10-5a2d-45da-99e4-bbd6ee0fb8bf.xml, _OEMUIPSPARAM, OEMUIPSPARAM structure [Print Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : printoem.h
-req.include-header : Printoem.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : OEMUIPSPARAM, *POEMUIPSPARAM
-req.product : Windows 10 or later.
+UID: NS:printoem._OEMUIPSPARAM
+title: "_OEMUIPSPARAM"
+author: windows-driver-content
+description: The OEMUIPSPARAM structure is passed to a user interface plug-in's IPrintOemUI::DevicePropertySheets and IPrintOemUI::DocumentPropertySheets methods.
+old-location: print\oemuipsparam.htm
+old-project: print
+ms.assetid: e7708b33-b032-41b9-84f9-6c5b38044f9c
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: print.oemuipsparam, printoem/POEMUIPSPARAM, POEMUIPSPARAM, POEMUIPSPARAM structure pointer [Print Devices], *POEMUIPSPARAM, printoem/OEMUIPSPARAM, OEMUIPSPARAM, print_unidrv-pscript_ui_7a4c3f10-5a2d-45da-99e4-bbd6ee0fb8bf.xml, _OEMUIPSPARAM, OEMUIPSPARAM structure [Print Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: printoem.h
+req.include-header: Printoem.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	printoem.h
+apiname:
+-	OEMUIPSPARAM
+product: Windows
+targetos: Windows
+req.typenames: OEMUIPSPARAM, *POEMUIPSPARAM
+req.product: Windows 10 or later.
 ---
 
 # _OEMUIPSPARAM structure

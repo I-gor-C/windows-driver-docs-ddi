@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugRegisters2.GetPseudoIndexByName
-title : IDebugRegisters2::GetPseudoIndexByName method
-author : windows-driver-content
-description : The GetPseudoIndexByName method returns the index of a pseudo-register.
-old-location : debugger\getpseudoindexbyname.htm
-old-project : debugger
-ms.assetid : 0973d8d8-53df-47aa-be65-71045c2e6006
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : debugger.getpseudoindexbyname, GetPseudoIndexByName method [Windows Debugging], IDebugRegisters2 interface, GetPseudoIndexByName method [Windows Debugging], IDebugRegisters_95580025-4059-4a5b-bd68-d7ebfa20607e.xml, IDebugRegisters2 interface [Windows Debugging], GetPseudoIndexByName method, dbgeng/IDebugRegisters2::GetPseudoIndexByName, IDebugRegisters2, GetPseudoIndexByName, IDebugRegisters2::GetPseudoIndexByName
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : DbgEng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugRegisters2.GetPseudoIndexByName
+title: IDebugRegisters2::GetPseudoIndexByName method
+author: windows-driver-content
+description: The GetPseudoIndexByName method returns the index of a pseudo-register.
+old-location: debugger\getpseudoindexbyname.htm
+old-project: debugger
+ms.assetid: 0973d8d8-53df-47aa-be65-71045c2e6006
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: debugger.getpseudoindexbyname, GetPseudoIndexByName method [Windows Debugging], IDebugRegisters2 interface, GetPseudoIndexByName method [Windows Debugging], IDebugRegisters_95580025-4059-4a5b-bd68-d7ebfa20607e.xml, IDebugRegisters2 interface [Windows Debugging], GetPseudoIndexByName method, dbgeng/IDebugRegisters2::GetPseudoIndexByName, IDebugRegisters2, GetPseudoIndexByName, IDebugRegisters2::GetPseudoIndexByName
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: DbgEng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugRegisters2.GetPseudoIndexByName
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

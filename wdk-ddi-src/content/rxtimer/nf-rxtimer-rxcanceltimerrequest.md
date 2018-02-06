@@ -1,42 +1,47 @@
 ---
-UID : NF:rxtimer.RxCancelTimerRequest
-title : RxCancelTimerRequest function
-author : windows-driver-content
-description : RxCancelTimerRequest cancels a recurrent timer request. The request to be canceled is identified by the worker thread routine and associated context.
-old-location : ifsk\rxcanceltimerrequest.htm
-old-project : ifsk
-ms.assetid : b5aeb972-3e52-4cdc-842b-7848bb2f8dc7
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : RxCancelTimerRequest routine [Installable File System Drivers], rxtimer/RxCancelTimerRequest, RxCancelTimerRequest, rxref_f9950992-18a5-4418-a18d-e105ecdc74ff.xml, ifsk.rxcanceltimerrequest
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : rxtimer.h
-req.include-header : Rxtimer.h, Rxworkq.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RX_CONTEXT, *PRX_CONTEXT
-req.product : Windows 10 or later.
+UID: NF:rxtimer.RxCancelTimerRequest
+title: RxCancelTimerRequest function
+author: windows-driver-content
+description: RxCancelTimerRequest cancels a recurrent timer request. The request to be canceled is identified by the worker thread routine and associated context.
+old-location: ifsk\rxcanceltimerrequest.htm
+old-project: ifsk
+ms.assetid: b5aeb972-3e52-4cdc-842b-7848bb2f8dc7
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: RxCancelTimerRequest routine [Installable File System Drivers], rxtimer/RxCancelTimerRequest, RxCancelTimerRequest, rxref_f9950992-18a5-4418-a18d-e105ecdc74ff.xml, ifsk.rxcanceltimerrequest
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: rxtimer.h
+req.include-header: Rxtimer.h, Rxworkq.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	rxtimer.h
+apiname:
+-	RxCancelTimerRequest
+product: Windows
+targetos: Windows
+req.typenames: RX_CONTEXT, *PRX_CONTEXT
+req.product: Windows 10 or later.
 ---
 
 

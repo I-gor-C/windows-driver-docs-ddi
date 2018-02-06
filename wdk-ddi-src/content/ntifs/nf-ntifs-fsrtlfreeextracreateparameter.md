@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.FsRtlFreeExtraCreateParameter
-title : FsRtlFreeExtraCreateParameter function
-author : windows-driver-content
-description : The FsRtlFreeExtraCreateParameter routine frees the memory for an ECP context structure.
-old-location : ifsk\fsrtlfreeextracreateparameter.htm
-old-project : ifsk
-ms.assetid : c46cdfd3-36c4-420d-9dbf-d6f0bede460e
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : fsrtlref_bbee8298-87e1-4487-bf56-b2dd76913d47.xml, FsRtlFreeExtraCreateParameter, ifsk.fsrtlfreeextracreateparameter, FsRtlFreeExtraCreateParameter routine [Installable File System Drivers], ntifs/FsRtlFreeExtraCreateParameter
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : The FsRtlFreeExtraCreateParameter routine is available starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.FsRtlFreeExtraCreateParameter
+title: FsRtlFreeExtraCreateParameter function
+author: windows-driver-content
+description: The FsRtlFreeExtraCreateParameter routine frees the memory for an ECP context structure.
+old-location: ifsk\fsrtlfreeextracreateparameter.htm
+old-project: ifsk
+ms.assetid: c46cdfd3-36c4-420d-9dbf-d6f0bede460e
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: fsrtlref_bbee8298-87e1-4487-bf56-b2dd76913d47.xml, FsRtlFreeExtraCreateParameter, ifsk.fsrtlfreeextracreateparameter, FsRtlFreeExtraCreateParameter routine [Installable File System Drivers], ntifs/FsRtlFreeExtraCreateParameter
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: The FsRtlFreeExtraCreateParameter routine is available starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	FsRtlFreeExtraCreateParameter
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

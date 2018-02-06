@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._GETENCRYPTIONBLTKEY
-title : "_GETENCRYPTIONBLTKEY"
-author : windows-driver-content
-description : The _GETENCRYPTIONBLTKEY structure describes an encrypted bit-block transfer (bitblt) session for which the GetEncryptionBltKey function retrieves the encryption key.
-old-location : display\d3dddiarg_getencryptionbltkey.htm
-old-project : display
-ms.assetid : 6f481646-b665-46cb-b551-10515b8603c5
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : "_GETENCRYPTIONBLTKEY structure [Display Devices], _GETENCRYPTIONBLTKEY, D3DDDIARG_GETENCRYPTIONBLTKEY, D3DDDIARG_GETENCRYPTIONBLTKEY structure [Display Devices], display.d3dddiarg_getencryptionbltkey, UMDisplayDriver_param_Structs_ecaf1a03-2c4a-450e-a17a-2cc309e7c2e4.xml, d3dumddi/_GETENCRYPTIONBLTKEY"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : D3DDDIARG_GETENCRYPTIONBLTKEY is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDIARG_GETENCRYPTIONBLTKEY
+UID: NS:d3dumddi._GETENCRYPTIONBLTKEY
+title: "_GETENCRYPTIONBLTKEY"
+author: windows-driver-content
+description: The _GETENCRYPTIONBLTKEY structure describes an encrypted bit-block transfer (bitblt) session for which the GetEncryptionBltKey function retrieves the encryption key.
+old-location: display\d3dddiarg_getencryptionbltkey.htm
+old-project: display
+ms.assetid: 6f481646-b665-46cb-b551-10515b8603c5
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: "_GETENCRYPTIONBLTKEY structure [Display Devices], _GETENCRYPTIONBLTKEY, D3DDDIARG_GETENCRYPTIONBLTKEY, D3DDDIARG_GETENCRYPTIONBLTKEY structure [Display Devices], display.d3dddiarg_getencryptionbltkey, UMDisplayDriver_param_Structs_ecaf1a03-2c4a-450e-a17a-2cc309e7c2e4.xml, d3dumddi/_GETENCRYPTIONBLTKEY"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: D3DDDIARG_GETENCRYPTIONBLTKEY is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	D3DDDIARG_GETENCRYPTIONBLTKEY
+product: Windows
+targetos: Windows
+req.typenames: D3DDDIARG_GETENCRYPTIONBLTKEY
 ---
 
 # _GETENCRYPTIONBLTKEY structure

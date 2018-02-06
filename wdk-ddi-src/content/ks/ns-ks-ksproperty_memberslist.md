@@ -1,41 +1,46 @@
 ---
-UID : NS:ks.KSPROPERTY_MEMBERSLIST
-title : KSPROPERTY_MEMBERSLIST
-author : windows-driver-content
-description : The KSPROPERTY_MEMBERSLIST structure contains a list of legal values or ranges for a property.
-old-location : stream\ksproperty_memberslist.htm
-old-project : stream
-ms.assetid : 2354da98-8663-4758-add7-3ac4350f563c
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ks/PKSPROPERTY_MEMBERSLIST, stream.ksproperty_memberslist, ks-struct_44a818f7-bffd-4aa5-aa30-b6376c0593ca.xml, PKSPROPERTY_MEMBERSLIST structure pointer [Streaming Media Devices], KSPROPERTY_MEMBERSLIST structure [Streaming Media Devices], KSPROPERTY_MEMBERSLIST, ks/KSPROPERTY_MEMBERSLIST, PKSPROPERTY_MEMBERSLIST, *PKSPROPERTY_MEMBERSLIST
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKSPROPERTY_MEMBERSLIST, KSPROPERTY_MEMBERSLIST"
+UID: NS:ks.KSPROPERTY_MEMBERSLIST
+title: KSPROPERTY_MEMBERSLIST
+author: windows-driver-content
+description: The KSPROPERTY_MEMBERSLIST structure contains a list of legal values or ranges for a property.
+old-location: stream\ksproperty_memberslist.htm
+old-project: stream
+ms.assetid: 2354da98-8663-4758-add7-3ac4350f563c
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ks/PKSPROPERTY_MEMBERSLIST, stream.ksproperty_memberslist, ks-struct_44a818f7-bffd-4aa5-aa30-b6376c0593ca.xml, PKSPROPERTY_MEMBERSLIST structure pointer [Streaming Media Devices], KSPROPERTY_MEMBERSLIST structure [Streaming Media Devices], KSPROPERTY_MEMBERSLIST, ks/KSPROPERTY_MEMBERSLIST, PKSPROPERTY_MEMBERSLIST, *PKSPROPERTY_MEMBERSLIST
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	KSPROPERTY_MEMBERSLIST
+product: Windows
+targetos: Windows
+req.typenames: "*PKSPROPERTY_MEMBERSLIST, KSPROPERTY_MEMBERSLIST"
 ---
 
 # KSPROPERTY_MEMBERSLIST structure

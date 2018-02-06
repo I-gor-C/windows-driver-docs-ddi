@@ -1,41 +1,50 @@
 ---
-UID : NF:dbgeng.IDebugClient5.AddProcessOptions
-title : IDebugClient5::AddProcessOptions method
-author : windows-driver-content
-description : The AddProcessOptions method adds the process options to those options that affect the current process.
-old-location : debugger\addprocessoptions.htm
-old-project : debugger
-ms.assetid : eb5f1d91-cfad-48e6-b578-64b64034222f
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : debugger.addprocessoptions, IDebugClient3::AddProcessOptions, IDebugClient5::AddProcessOptions, IDebugClient2 interface [Windows Debugging], AddProcessOptions method, dbgeng/IDebugClient2::AddProcessOptions, AddProcessOptions method [Windows Debugging], IDebugClient interface, AddProcessOptions method [Windows Debugging], IDebugClient4 interface, dbgeng/IDebugClient3::AddProcessOptions, AddProcessOptions method [Windows Debugging], IDebugClient2 interface, IDebugClient2::AddProcessOptions, IDebugClient_995041c9-9380-4a66-b9f8-d74d68398a44.xml, AddProcessOptions method [Windows Debugging], IDebugClient5 interface, dbgeng/IDebugClient5::AddProcessOptions, IDebugClient3 interface [Windows Debugging], AddProcessOptions method, AddProcessOptions method [Windows Debugging], AddProcessOptions method [Windows Debugging], IDebugClient3 interface, AddProcessOptions, IDebugClient4 interface [Windows Debugging], AddProcessOptions method, IDebugClient5 interface [Windows Debugging], AddProcessOptions method, IDebugClient::AddProcessOptions, dbgeng/IDebugClient4::AddProcessOptions, dbgeng/IDebugClient::AddProcessOptions, IDebugClient interface [Windows Debugging], AddProcessOptions method, IDebugClient5, IDebugClient4::AddProcessOptions
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugClient5.AddProcessOptions
+title: IDebugClient5::AddProcessOptions method
+author: windows-driver-content
+description: The AddProcessOptions method adds the process options to those options that affect the current process.
+old-location: debugger\addprocessoptions.htm
+old-project: debugger
+ms.assetid: eb5f1d91-cfad-48e6-b578-64b64034222f
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: debugger.addprocessoptions, IDebugClient3::AddProcessOptions, IDebugClient5::AddProcessOptions, IDebugClient2 interface [Windows Debugging], AddProcessOptions method, dbgeng/IDebugClient2::AddProcessOptions, AddProcessOptions method [Windows Debugging], IDebugClient interface, AddProcessOptions method [Windows Debugging], IDebugClient4 interface, dbgeng/IDebugClient3::AddProcessOptions, AddProcessOptions method [Windows Debugging], IDebugClient2 interface, IDebugClient2::AddProcessOptions, IDebugClient_995041c9-9380-4a66-b9f8-d74d68398a44.xml, AddProcessOptions method [Windows Debugging], IDebugClient5 interface, dbgeng/IDebugClient5::AddProcessOptions, IDebugClient3 interface [Windows Debugging], AddProcessOptions method, AddProcessOptions method [Windows Debugging], AddProcessOptions method [Windows Debugging], IDebugClient3 interface, AddProcessOptions, IDebugClient4 interface [Windows Debugging], AddProcessOptions method, IDebugClient5 interface [Windows Debugging], AddProcessOptions method, IDebugClient::AddProcessOptions, dbgeng/IDebugClient4::AddProcessOptions, dbgeng/IDebugClient::AddProcessOptions, IDebugClient interface [Windows Debugging], AddProcessOptions method, IDebugClient5, IDebugClient4::AddProcessOptions
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugClient.AddProcessOptions
+-	IDebugClient2.AddProcessOptions
+-	IDebugClient3.AddProcessOptions
+-	IDebugClient4.AddProcessOptions
+-	IDebugClient5.AddProcessOptions
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

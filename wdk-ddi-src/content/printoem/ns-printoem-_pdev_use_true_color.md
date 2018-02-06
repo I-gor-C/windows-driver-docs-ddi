@@ -1,42 +1,47 @@
 ---
-UID : NS:printoem._PDEV_USE_TRUE_COLOR
-title : "_PDEV_USE_TRUE_COLOR"
-author : windows-driver-content
-description : The PDEV_USE_TRUE_COLOR structure indicates whether the output color space should be color or grayscale.
-old-location : print\pdev_use_true_color.htm
-old-project : print
-ms.assetid : 75ffe04a-4d77-4486-8fc7-35b0b6144b99
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : PDEV_USE_TRUE_COLOR, _PDEV_USE_TRUE_COLOR, PDEV_USE_TRUE_COLOR structure [Print Devices], print_unidrv-pscript_rendering_bac188d1-ddd5-44e6-b2f1-7c617d6c4b6f.xml, printoem/PDEV_USE_TRUE_COLOR, print.pdev_use_true_color
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : printoem.h
-req.include-header : Prcomoem.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PDEV_USE_TRUE_COLOR
-req.product : Windows 10 or later.
+UID: NS:printoem._PDEV_USE_TRUE_COLOR
+title: "_PDEV_USE_TRUE_COLOR"
+author: windows-driver-content
+description: The PDEV_USE_TRUE_COLOR structure indicates whether the output color space should be color or grayscale.
+old-location: print\pdev_use_true_color.htm
+old-project: print
+ms.assetid: 75ffe04a-4d77-4486-8fc7-35b0b6144b99
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: PDEV_USE_TRUE_COLOR, _PDEV_USE_TRUE_COLOR, PDEV_USE_TRUE_COLOR structure [Print Devices], print_unidrv-pscript_rendering_bac188d1-ddd5-44e6-b2f1-7c617d6c4b6f.xml, printoem/PDEV_USE_TRUE_COLOR, print.pdev_use_true_color
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: printoem.h
+req.include-header: Prcomoem.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	printoem.h
+apiname:
+-	PDEV_USE_TRUE_COLOR
+product: Windows
+targetos: Windows
+req.typenames: PDEV_USE_TRUE_COLOR
+req.product: Windows 10 or later.
 ---
 
 # _PDEV_USE_TRUE_COLOR structure

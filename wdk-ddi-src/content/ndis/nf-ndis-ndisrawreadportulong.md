@@ -1,41 +1,46 @@
 ---
-UID : NF:ndis.NdisRawReadPortUlong
-title : NdisRawReadPortUlong macro
-author : windows-driver-content
-description : NdisRawReadPortUlong reads a ULONG value from a given I/O port on the NIC.
-old-location : netvista\ndisrawreadportulong.htm
-old-project : netvista
-ms.assetid : 40ecda3a-67ff-48b6-8ee9-7527c7bd9c6c
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NdisRawReadPortUlong, ndis/NdisRawReadPortUlong, netvista.ndisrawreadportulong, miniport_port_raw_ref_a5c1ea12-2ff0-4546-9244-8137c365eb8f.xml, NdisRawReadPortUlong macro [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : macro
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisRawReadPortUlong (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisRawReadPortUlong (NDIS   5.1)) in Windows XP.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : ndis.h
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisRawReadPortUlong
+title: NdisRawReadPortUlong macro
+author: windows-driver-content
+description: NdisRawReadPortUlong reads a ULONG value from a given I/O port on the NIC.
+old-location: netvista\ndisrawreadportulong.htm
+old-project: netvista
+ms.assetid: 40ecda3a-67ff-48b6-8ee9-7527c7bd9c6c
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NdisRawReadPortUlong, ndis/NdisRawReadPortUlong, netvista.ndisrawreadportulong, miniport_port_raw_ref_a5c1ea12-2ff0-4546-9244-8137c365eb8f.xml, NdisRawReadPortUlong macro [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: macro
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisRawReadPortUlong (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisRawReadPortUlong (NDIS   5.1)) in Windows XP.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: ndis.h
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndis.h
+apiname:
+-	NdisRawReadPortUlong
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

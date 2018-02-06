@@ -1,41 +1,46 @@
 ---
-UID : NC:ndis.PROTOCOL_CL_MAKE_CALL_COMPLETE
-title : PROTOCOL_CL_MAKE_CALL_COMPLETE
-author : windows-driver-content
-description : The ProtocolClMakeCallComplete function is used by connection-oriented NDIS clients that make outgoing calls.
-old-location : netvista\protocolclmakecallcomplete.htm
-old-project : netvista
-ms.assetid : 6bb69f78-8dab-46a7-84fb-7bc17e894535
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.protocolclmakecallcomplete, ProtocolClMakeCallComplete callback function [Network Drivers Starting with Windows Vista], ProtocolClMakeCallComplete, PROTOCOL_CL_MAKE_CALL_COMPLETE, PROTOCOL_CL_MAKE_CALL_COMPLETE, ndis/ProtocolClMakeCallComplete, condis_client_ref_1c839b17-947a-44cb-85d1-d6246b82a827.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see    ProtocolClMakeCallComplete   (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    ProtocolClMakeCallComplete   (NDIS 5.1)) in Windows XP.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
+UID: NC:ndis.PROTOCOL_CL_MAKE_CALL_COMPLETE
+title: PROTOCOL_CL_MAKE_CALL_COMPLETE
+author: windows-driver-content
+description: The ProtocolClMakeCallComplete function is used by connection-oriented NDIS clients that make outgoing calls.
+old-location: netvista\protocolclmakecallcomplete.htm
+old-project: netvista
+ms.assetid: 6bb69f78-8dab-46a7-84fb-7bc17e894535
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.protocolclmakecallcomplete, ProtocolClMakeCallComplete callback function [Network Drivers Starting with Windows Vista], ProtocolClMakeCallComplete, PROTOCOL_CL_MAKE_CALL_COMPLETE, PROTOCOL_CL_MAKE_CALL_COMPLETE, ndis/ProtocolClMakeCallComplete, condis_client_ref_1c839b17-947a-44cb-85d1-d6246b82a827.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    ProtocolClMakeCallComplete   (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    ProtocolClMakeCallComplete   (NDIS 5.1)) in Windows XP.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ndis.h
+apiname:
+-	ProtocolClMakeCallComplete
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 

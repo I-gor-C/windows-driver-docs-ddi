@@ -1,42 +1,47 @@
 ---
-UID : NF:sercx.SerCxRetrieveReceiveMdl
-title : SerCxRetrieveReceiveMdl function
-author : windows-driver-content
-description : The SerCxRetrieveReceiveMdl method retrieves the MDL that describes the buffer to use to receive the next block of input data.
-old-location : serports\sercxretrievereceivemdl.htm
-old-project : serports
-ms.assetid : 7BC76F62-CA51-4C3F-BBF0-0B192EE871E6
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : serports.sercxretrievereceivemdl, SerCxRetrieveReceiveMdl method [Serial Ports], SerCxRetrieveReceiveMdl, 1/SerCxRetrieveReceiveMdl
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : sercx.h
-req.include-header : 
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSERCX_STATUS, SERCX_STATUS"
-req.product : Windows 10 or later.
+UID: NF:sercx.SerCxRetrieveReceiveMdl
+title: SerCxRetrieveReceiveMdl function
+author: windows-driver-content
+description: The SerCxRetrieveReceiveMdl method retrieves the MDL that describes the buffer to use to receive the next block of input data.
+old-location: serports\sercxretrievereceivemdl.htm
+old-project: serports
+ms.assetid: 7BC76F62-CA51-4C3F-BBF0-0B192EE871E6
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: serports.sercxretrievereceivemdl, SerCxRetrieveReceiveMdl method [Serial Ports], SerCxRetrieveReceiveMdl, 1/SerCxRetrieveReceiveMdl
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: sercx.h
+req.include-header: 
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	1.0\Sercx.h
+apiname:
+-	SerCxRetrieveReceiveMdl
+product: Windows
+targetos: Windows
+req.typenames: "*PSERCX_STATUS, SERCX_STATUS"
+req.product: Windows 10 or later.
 ---
 
 

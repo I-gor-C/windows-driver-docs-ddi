@@ -1,41 +1,46 @@
 ---
-UID : NS:d3d10umddi.D3D11DDIARG_CREATEUNORDEREDACCESSVIEW
-title : D3D11DDIARG_CREATEUNORDEREDACCESSVIEW
-author : windows-driver-content
-description : The D3D11DDIARG_CREATEUNORDEREDACCESSVIEW structure describes the unordered access view to create.
-old-location : display\d3d11ddiarg_createunorderedaccessview.htm
-old-project : display
-ms.assetid : 3c977fe6-d0f9-4edc-abeb-0725d68a482d
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3D11DDIARG_CREATEUNORDEREDACCESSVIEW, display.d3d11ddiarg_createunorderedaccessview, UMDisplayDriver_Dx11param_Structs_e6b10da8-f790-4182-926a-a7f183dcd59b.xml, d3d10umddi/D3D11DDIARG_CREATEUNORDEREDACCESSVIEW, D3D11DDIARG_CREATEUNORDEREDACCESSVIEW structure [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Windows
-req.target-min-winverclnt : D3D11DDIARG_CREATEUNORDEREDACCESSVIEW is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3D11DDIARG_CREATEUNORDEREDACCESSVIEW
+UID: NS:d3d10umddi.D3D11DDIARG_CREATEUNORDEREDACCESSVIEW
+title: D3D11DDIARG_CREATEUNORDEREDACCESSVIEW
+author: windows-driver-content
+description: The D3D11DDIARG_CREATEUNORDEREDACCESSVIEW structure describes the unordered access view to create.
+old-location: display\d3d11ddiarg_createunorderedaccessview.htm
+old-project: display
+ms.assetid: 3c977fe6-d0f9-4edc-abeb-0725d68a482d
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3D11DDIARG_CREATEUNORDEREDACCESSVIEW, display.d3d11ddiarg_createunorderedaccessview, UMDisplayDriver_Dx11param_Structs_e6b10da8-f790-4182-926a-a7f183dcd59b.xml, d3d10umddi/D3D11DDIARG_CREATEUNORDEREDACCESSVIEW, D3D11DDIARG_CREATEUNORDEREDACCESSVIEW structure [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Windows
+req.target-min-winverclnt: D3D11DDIARG_CREATEUNORDEREDACCESSVIEW is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	D3D11DDIARG_CREATEUNORDEREDACCESSVIEW
+product: Windows
+targetos: Windows
+req.typenames: D3D11DDIARG_CREATEUNORDEREDACCESSVIEW
 ---
 
 # D3D11DDIARG_CREATEUNORDEREDACCESSVIEW structure

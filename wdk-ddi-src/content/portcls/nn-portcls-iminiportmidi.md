@@ -1,41 +1,46 @@
 ---
-UID : NN:portcls.IMiniportMidi
-title : IMiniportMidi
-author : windows-driver-content
-description : The IMiniportMidi interface is the primary interface for a MIDI miniport driver for a MIDI synthesizer device.
-old-location : audio\iminiportmidi.htm
-old-project : audio
-ms.assetid : 42170a24-377c-4cc5-962e-97ed74302d63
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : audio.iminiportmidi, IMiniportMidi interface [Audio Devices], IMiniportMidi interface [Audio Devices], described, IMiniportMidi, portcls/IMiniportMidi, audmp-routines_bba7ae00-6719-49dd-9770-9292a96f42ec.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : portcls.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Portcls.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NN:portcls.IMiniportMidi
+title: IMiniportMidi
+author: windows-driver-content
+description: The IMiniportMidi interface is the primary interface for a MIDI miniport driver for a MIDI synthesizer device.
+old-location: audio\iminiportmidi.htm
+old-project: audio
+ms.assetid: 42170a24-377c-4cc5-962e-97ed74302d63
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: audio.iminiportmidi, IMiniportMidi interface [Audio Devices], IMiniportMidi interface [Audio Devices], described, IMiniportMidi, portcls/IMiniportMidi, audmp-routines_bba7ae00-6719-49dd-9770-9292a96f42ec.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: portcls.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Portcls.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	portcls.h
+apiname:
+-	IMiniportMidi
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 # IMiniportMidi interface

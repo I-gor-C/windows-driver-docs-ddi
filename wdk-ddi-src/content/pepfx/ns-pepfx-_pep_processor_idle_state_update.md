@@ -1,41 +1,46 @@
 ---
-UID : NS:pepfx._PEP_PROCESSOR_IDLE_STATE_UPDATE
-title : "_PEP_PROCESSOR_IDLE_STATE_UPDATE"
-author : windows-driver-content
-description : The PEP_PROCESSOR_IDLE_STATE_UPDATE structure contains the updated properties of a processor idle state.
-old-location : kernel\pep_processor_idle_state_update.htm
-old-project : kernel
-ms.assetid : A05617FB-5105-4FCA-807F-C49F32BD1399
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.pep_processor_idle_state_update, PEP_PROCESSOR_IDLE_STATE_UPDATE structure [Kernel-Mode Driver Architecture], _PEP_PROCESSOR_IDLE_STATE_UPDATE, *PPEP_PROCESSOR_IDLE_STATE_UPDATE, pepfx/PEP_PROCESSOR_IDLE_STATE_UPDATE, pepfx/PPEP_PROCESSOR_IDLE_STATE_UPDATE, PPEP_PROCESSOR_IDLE_STATE_UPDATE, PEP_PROCESSOR_IDLE_STATE_UPDATE, PPEP_PROCESSOR_IDLE_STATE_UPDATE structure pointer [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : pepfx.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with Windows 10.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPEP_PROCESSOR_IDLE_STATE_UPDATE, PEP_PROCESSOR_IDLE_STATE_UPDATE"
+UID: NS:pepfx._PEP_PROCESSOR_IDLE_STATE_UPDATE
+title: "_PEP_PROCESSOR_IDLE_STATE_UPDATE"
+author: windows-driver-content
+description: The PEP_PROCESSOR_IDLE_STATE_UPDATE structure contains the updated properties of a processor idle state.
+old-location: kernel\pep_processor_idle_state_update.htm
+old-project: kernel
+ms.assetid: A05617FB-5105-4FCA-807F-C49F32BD1399
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.pep_processor_idle_state_update, PEP_PROCESSOR_IDLE_STATE_UPDATE structure [Kernel-Mode Driver Architecture], _PEP_PROCESSOR_IDLE_STATE_UPDATE, *PPEP_PROCESSOR_IDLE_STATE_UPDATE, pepfx/PEP_PROCESSOR_IDLE_STATE_UPDATE, pepfx/PPEP_PROCESSOR_IDLE_STATE_UPDATE, PPEP_PROCESSOR_IDLE_STATE_UPDATE, PEP_PROCESSOR_IDLE_STATE_UPDATE, PPEP_PROCESSOR_IDLE_STATE_UPDATE structure pointer [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: pepfx.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows 10.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	pepfx.h
+apiname:
+-	PEP_PROCESSOR_IDLE_STATE_UPDATE
+product: Windows
+targetos: Windows
+req.typenames: "*PPEP_PROCESSOR_IDLE_STATE_UPDATE, PEP_PROCESSOR_IDLE_STATE_UPDATE"
 ---
 
 # _PEP_PROCESSOR_IDLE_STATE_UPDATE structure

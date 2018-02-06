@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfpdo.WdfPdoInitAssignContainerID
-title : WdfPdoInitAssignContainerID function
-author : windows-driver-content
-description : The WdfPdoInitAssignContainerID method updates the container ID for a child device.
-old-location : wdf\wdfpdoinitassigncontainerid.htm
-old-project : wdf
-ms.assetid : 603bff9f-fd18-40bd-9b2b-8f013f99ec61
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : DFDeviceObjectFdoPdoRef_b744c1d7-e24f-4936-8921-cf5b7dd4ad68.xml, WdfPdoInitAssignContainerID method, kmdf.wdfpdoinitassigncontainerid, wdf.wdfpdoinitassigncontainerid, WdfPdoInitAssignContainerID, wdfpdo/WdfPdoInitAssignContainerID, PFN_WDFPDOINITASSIGNCONTAINERID
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfpdo.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.9
-req.umdf-ver : 
-req.ddi-compliance : DriverCreate
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDF_OBJECT_CONTEXT_TYPE_INFO, WDF_OBJECT_CONTEXT_TYPE_INFO"
-req.product : Windows 10 or later.
+UID: NF:wdfpdo.WdfPdoInitAssignContainerID
+title: WdfPdoInitAssignContainerID function
+author: windows-driver-content
+description: The WdfPdoInitAssignContainerID method updates the container ID for a child device.
+old-location: wdf\wdfpdoinitassigncontainerid.htm
+old-project: wdf
+ms.assetid: 603bff9f-fd18-40bd-9b2b-8f013f99ec61
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: DFDeviceObjectFdoPdoRef_b744c1d7-e24f-4936-8921-cf5b7dd4ad68.xml, WdfPdoInitAssignContainerID method, kmdf.wdfpdoinitassigncontainerid, wdf.wdfpdoinitassigncontainerid, WdfPdoInitAssignContainerID, wdfpdo/WdfPdoInitAssignContainerID, PFN_WDFPDOINITASSIGNCONTAINERID
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfpdo.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.9
+req.umdf-ver: 
+req.ddi-compliance: DriverCreate
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfPdoInitAssignContainerID
+product: Windows
+targetos: Windows
+req.typenames: "*PWDF_OBJECT_CONTEXT_TYPE_INFO, WDF_OBJECT_CONTEXT_TYPE_INFO"
+req.product: Windows 10 or later.
 ---
 
 

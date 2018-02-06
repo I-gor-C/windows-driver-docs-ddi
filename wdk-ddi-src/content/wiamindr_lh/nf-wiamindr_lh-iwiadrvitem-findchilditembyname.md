@@ -1,42 +1,47 @@
 ---
-UID : NF:wiamindr_lh.IWiaDrvItem.FindChildItemByName
-title : IWiaDrvItem::FindChildItemByName method
-author : windows-driver-content
-description : The IWiaDrvItem::FindChildItemByName method searches the driver item tree for a specific child item.
-old-location : image\iwiadrvitem_findchilditembyname.htm
-old-project : image
-ms.assetid : 04f446f2-cd59-4191-be0c-60140ecee3b2
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : IWiaDrvItem::FindChildItemByName, DrvItem_afe8c47f-ebf9-484e-94bf-fdcd4713ea2a.xml, FindChildItemByName method [Imaging Devices], FindChildItemByName, IWiaDrvItem, FindChildItemByName method [Imaging Devices], IWiaDrvItem interface, wiamindr_lh/IWiaDrvItem::FindChildItemByName, IWiaDrvItem interface [Imaging Devices], FindChildItemByName method, image.iwiadrvitem_findchilditembyname
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wiamindr_lh.h
-req.include-header : Wiamindr.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Me and in Windows XP and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wiamindr_lh.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SCANWINDOW, *PSCANWINDOW
-req.product : Windows 10 or later.
+UID: NF:wiamindr_lh.IWiaDrvItem.FindChildItemByName
+title: IWiaDrvItem::FindChildItemByName method
+author: windows-driver-content
+description: The IWiaDrvItem::FindChildItemByName method searches the driver item tree for a specific child item.
+old-location: image\iwiadrvitem_findchilditembyname.htm
+old-project: image
+ms.assetid: 04f446f2-cd59-4191-be0c-60140ecee3b2
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: IWiaDrvItem::FindChildItemByName, DrvItem_afe8c47f-ebf9-484e-94bf-fdcd4713ea2a.xml, FindChildItemByName method [Imaging Devices], FindChildItemByName, IWiaDrvItem, FindChildItemByName method [Imaging Devices], IWiaDrvItem interface, wiamindr_lh/IWiaDrvItem::FindChildItemByName, IWiaDrvItem interface [Imaging Devices], FindChildItemByName method, image.iwiadrvitem_findchilditembyname
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wiamindr_lh.h
+req.include-header: Wiamindr.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Me and in Windows XP and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wiamindr_lh.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	wiamindr_lh.h
+apiname:
+-	IWiaDrvItem.FindChildItemByName
+product: Windows
+targetos: Windows
+req.typenames: SCANWINDOW, *PSCANWINDOW
+req.product: Windows 10 or later.
 ---
 
 

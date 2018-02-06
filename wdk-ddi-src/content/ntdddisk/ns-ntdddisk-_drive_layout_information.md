@@ -1,41 +1,46 @@
 ---
-UID : NS:ntdddisk._DRIVE_LAYOUT_INFORMATION
-title : "_DRIVE_LAYOUT_INFORMATION"
-author : windows-driver-content
-description : The DRIVE_LAYOUT_INFORMATION structure is obsolete and is provided only to support existing drivers.
-old-location : storage\drive_layout_information.htm
-old-project : storage
-ms.assetid : 980cd307-9048-4054-be8e-967d15862a14
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : PDRIVE_LAYOUT_INFORMATION, PDRIVE_LAYOUT_INFORMATION structure pointer [Storage Devices], structs-disk_4b519d3d-0729-4390-a2e2-b5eb37738db1.xml, _DRIVE_LAYOUT_INFORMATION, DRIVE_LAYOUT_INFORMATION, *PDRIVE_LAYOUT_INFORMATION, ntdddisk/PDRIVE_LAYOUT_INFORMATION, ntdddisk/DRIVE_LAYOUT_INFORMATION, DRIVE_LAYOUT_INFORMATION structure [Storage Devices], storage.drive_layout_information
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntdddisk.h
-req.include-header : Ntdddisk.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDRIVE_LAYOUT_INFORMATION, DRIVE_LAYOUT_INFORMATION"
+UID: NS:ntdddisk._DRIVE_LAYOUT_INFORMATION
+title: "_DRIVE_LAYOUT_INFORMATION"
+author: windows-driver-content
+description: The DRIVE_LAYOUT_INFORMATION structure is obsolete and is provided only to support existing drivers.
+old-location: storage\drive_layout_information.htm
+old-project: storage
+ms.assetid: 980cd307-9048-4054-be8e-967d15862a14
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: PDRIVE_LAYOUT_INFORMATION, PDRIVE_LAYOUT_INFORMATION structure pointer [Storage Devices], structs-disk_4b519d3d-0729-4390-a2e2-b5eb37738db1.xml, _DRIVE_LAYOUT_INFORMATION, DRIVE_LAYOUT_INFORMATION, *PDRIVE_LAYOUT_INFORMATION, ntdddisk/PDRIVE_LAYOUT_INFORMATION, ntdddisk/DRIVE_LAYOUT_INFORMATION, DRIVE_LAYOUT_INFORMATION structure [Storage Devices], storage.drive_layout_information
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntdddisk.h
+req.include-header: Ntdddisk.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntdddisk.h
+apiname:
+-	DRIVE_LAYOUT_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: "*PDRIVE_LAYOUT_INFORMATION, DRIVE_LAYOUT_INFORMATION"
 ---
 
 # _DRIVE_LAYOUT_INFORMATION structure

@@ -1,42 +1,47 @@
 ---
-UID : NS:printoem._GETINFO_STDVAR
-title : "_GETINFO_STDVAR"
-author : windows-driver-content
-description : The GETINFO_STDVAR structure is used as input to the UNIFONTOBJ_GetInfo callback function.
-old-location : print\getinfo_stdvar.htm
-old-project : print
-ms.assetid : 9f2ae88c-34a4-46b3-9571-5f2f023b7d6b
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : print.getinfo_stdvar, print_unidrv-pscript_rendering_3a08d48b-215f-4acc-89ef-849a2b826ce7.xml, GETINFO_STDVAR structure [Print Devices], _GETINFO_STDVAR, *PGETINFO_STDVAR, GETINFO_STDVAR, PGETINFO_STDVAR structure pointer [Print Devices], printoem/PGETINFO_STDVAR, PGETINFO_STDVAR, printoem/GETINFO_STDVAR
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : printoem.h
-req.include-header : Printoem.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PGETINFO_STDVAR, GETINFO_STDVAR"
-req.product : Windows 10 or later.
+UID: NS:printoem._GETINFO_STDVAR
+title: "_GETINFO_STDVAR"
+author: windows-driver-content
+description: The GETINFO_STDVAR structure is used as input to the UNIFONTOBJ_GetInfo callback function.
+old-location: print\getinfo_stdvar.htm
+old-project: print
+ms.assetid: 9f2ae88c-34a4-46b3-9571-5f2f023b7d6b
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: print.getinfo_stdvar, print_unidrv-pscript_rendering_3a08d48b-215f-4acc-89ef-849a2b826ce7.xml, GETINFO_STDVAR structure [Print Devices], _GETINFO_STDVAR, *PGETINFO_STDVAR, GETINFO_STDVAR, PGETINFO_STDVAR structure pointer [Print Devices], printoem/PGETINFO_STDVAR, PGETINFO_STDVAR, printoem/GETINFO_STDVAR
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: printoem.h
+req.include-header: Printoem.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	printoem.h
+apiname:
+-	GETINFO_STDVAR
+product: Windows
+targetos: Windows
+req.typenames: "*PGETINFO_STDVAR, GETINFO_STDVAR"
+req.product: Windows 10 or later.
 ---
 
 # _GETINFO_STDVAR structure

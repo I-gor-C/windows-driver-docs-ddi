@@ -1,41 +1,46 @@
 ---
-UID : NS:fltkernel._FLT_CONTEXT_REGISTRATION
-title : "_FLT_CONTEXT_REGISTRATION"
-author : windows-driver-content
-description : The FLT_CONTEXT_REGISTRATION structure is used to register context types.
-old-location : ifsk\flt_context_registration.htm
-old-project : ifsk
-ms.assetid : 6316acfa-c19c-4705-becb-b89c3feed6a3
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.flt_context_registration, _FLT_CONTEXT_REGISTRATION, FLT_CONTEXT_REGISTRATION, FltSystemStructures_534c1657-6f7c-42fa-b8df-2a64ed6edf3a.xml, PFLT_CONTEXT_REGISTRATION, fltkernel/PFLT_CONTEXT_REGISTRATION, PFLT_CONTEXT_REGISTRATION structure pointer [Installable File System Drivers], fltkernel/FLT_CONTEXT_REGISTRATION, FLT_CONTEXT_REGISTRATION structure [Installable File System Drivers], *PFLT_CONTEXT_REGISTRATION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FLT_CONTEXT_REGISTRATION, *PFLT_CONTEXT_REGISTRATION
+UID: NS:fltkernel._FLT_CONTEXT_REGISTRATION
+title: "_FLT_CONTEXT_REGISTRATION"
+author: windows-driver-content
+description: The FLT_CONTEXT_REGISTRATION structure is used to register context types.
+old-location: ifsk\flt_context_registration.htm
+old-project: ifsk
+ms.assetid: 6316acfa-c19c-4705-becb-b89c3feed6a3
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.flt_context_registration, _FLT_CONTEXT_REGISTRATION, FLT_CONTEXT_REGISTRATION, FltSystemStructures_534c1657-6f7c-42fa-b8df-2a64ed6edf3a.xml, PFLT_CONTEXT_REGISTRATION, fltkernel/PFLT_CONTEXT_REGISTRATION, PFLT_CONTEXT_REGISTRATION structure pointer [Installable File System Drivers], fltkernel/FLT_CONTEXT_REGISTRATION, FLT_CONTEXT_REGISTRATION structure [Installable File System Drivers], *PFLT_CONTEXT_REGISTRATION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	fltkernel.h
+apiname:
+-	FLT_CONTEXT_REGISTRATION
+product: Windows
+targetos: Windows
+req.typenames: FLT_CONTEXT_REGISTRATION, *PFLT_CONTEXT_REGISTRATION
 ---
 
 # _FLT_CONTEXT_REGISTRATION structure

@@ -1,41 +1,46 @@
 ---
-UID : NI:ks.IOCTL_KS_PROPERTY
-title : IOCTL_KS_PROPERTY
-author : windows-driver-content
-description : An application can use IOCTL_KS_PROPERTY to get or set properties, or to determine the properties supported by a KS object. The application passes IOCTL_KS_PROPERTY with the parameters described below to the KsSynchronousDeviceControl function.
-old-location : stream\ioctl_ks_property.htm
-old-project : stream
-ms.assetid : 66f29543-9677-4bae-baa4-6be8ebc52b66
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.ioctl_ks_property, IOCTL_KS_PROPERTY control code [Streaming Media Devices], IOCTL_KS_PROPERTY, ks/IOCTL_KS_PROPERTY, ks-ioctl_58152402-30ed-4938-af47-9e6a1838fec1.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NI:ks.IOCTL_KS_PROPERTY
+title: IOCTL_KS_PROPERTY
+author: windows-driver-content
+description: An application can use IOCTL_KS_PROPERTY to get or set properties, or to determine the properties supported by a KS object. The application passes IOCTL_KS_PROPERTY with the parameters described below to the KsSynchronousDeviceControl function.
+old-location: stream\ioctl_ks_property.htm
+old-project: stream
+ms.assetid: 66f29543-9677-4bae-baa4-6be8ebc52b66
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.ioctl_ks_property, IOCTL_KS_PROPERTY control code [Streaming Media Devices], IOCTL_KS_PROPERTY, ks/IOCTL_KS_PROPERTY, ks-ioctl_58152402-30ed-4938-af47-9e6a1838fec1.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	IOCTL_KS_PROPERTY
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 # IOCTL_KS_PROPERTY IOCTL

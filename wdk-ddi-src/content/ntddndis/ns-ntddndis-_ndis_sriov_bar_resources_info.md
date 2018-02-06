@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddndis._NDIS_SRIOV_BAR_RESOURCES_INFO
-title : "_NDIS_SRIOV_BAR_RESOURCES_INFO"
-author : windows-driver-content
-description : The NDIS_SRIOV_BAR_RESOURCES_INFO structure specifies the PCI Express (PCIe) Base Address Register (BAR) of a network adapter's PCIe Virtual Function (VF).
-old-location : netvista\ndis_sriov_bar_resources_info.htm
-old-project : netvista
-ms.assetid : e5a5ac98-171d-4a31-8bc6-400f613b7dc9
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : "_NDIS_SRIOV_BAR_RESOURCES_INFO, ntddndis/PNDIS_SRIOV_BAR_RESOURCES_INFO, NDIS_SRIOV_BAR_RESOURCES_INFO, netvista.ndis_sriov_bar_resources_info, PNDIS_SRIOV_BAR_RESOURCES_INFO structure pointer [Network Drivers Starting with Windows Vista], NDIS_SRIOV_BAR_RESOURCES_INFO structure [Network Drivers Starting with Windows Vista], *PNDIS_SRIOV_BAR_RESOURCES_INFO, PNDIS_SRIOV_BAR_RESOURCES_INFO, ntddndis/NDIS_SRIOV_BAR_RESOURCES_INFO"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.30 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PNDIS_SRIOV_BAR_RESOURCES_INFO, NDIS_SRIOV_BAR_RESOURCES_INFO"
+UID: NS:ntddndis._NDIS_SRIOV_BAR_RESOURCES_INFO
+title: "_NDIS_SRIOV_BAR_RESOURCES_INFO"
+author: windows-driver-content
+description: The NDIS_SRIOV_BAR_RESOURCES_INFO structure specifies the PCI Express (PCIe) Base Address Register (BAR) of a network adapter's PCIe Virtual Function (VF).
+old-location: netvista\ndis_sriov_bar_resources_info.htm
+old-project: netvista
+ms.assetid: e5a5ac98-171d-4a31-8bc6-400f613b7dc9
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: "_NDIS_SRIOV_BAR_RESOURCES_INFO, ntddndis/PNDIS_SRIOV_BAR_RESOURCES_INFO, NDIS_SRIOV_BAR_RESOURCES_INFO, netvista.ndis_sriov_bar_resources_info, PNDIS_SRIOV_BAR_RESOURCES_INFO structure pointer [Network Drivers Starting with Windows Vista], NDIS_SRIOV_BAR_RESOURCES_INFO structure [Network Drivers Starting with Windows Vista], *PNDIS_SRIOV_BAR_RESOURCES_INFO, PNDIS_SRIOV_BAR_RESOURCES_INFO, ntddndis/NDIS_SRIOV_BAR_RESOURCES_INFO"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.30 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddndis.h
+apiname:
+-	NDIS_SRIOV_BAR_RESOURCES_INFO
+product: Windows
+targetos: Windows
+req.typenames: "*PNDIS_SRIOV_BAR_RESOURCES_INFO, NDIS_SRIOV_BAR_RESOURCES_INFO"
 ---
 
 # _NDIS_SRIOV_BAR_RESOURCES_INFO structure

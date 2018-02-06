@@ -1,42 +1,47 @@
 ---
-UID : NS:sddef._SDCMD_DESCRIPTOR
-title : "_SDCMD_DESCRIPTOR"
-author : windows-driver-content
-description : The SDCMD_DESCRIPTOR structure defines a Secure Digital (SD) card command.
-old-location : sd\sdcmd_descriptor.htm
-old-project : SD
-ms.assetid : 7c49c394-d0b3-4594-a623-0a13825bdcec
-ms.author : windowsdriverdev
-ms.date : 12/18/2017
-ms.keywords : "_SDCMD_DESCRIPTOR, SDCMD_DESCRIPTOR, sd-structs_20a7faa8-4e91-49cc-94eb-13bd584a25a3.xml, sddef/SDCMD_DESCRIPTOR, PSDCMD_DESCRIPTOR, SD.sdcmd_descriptor, sddef/PSDCMD_DESCRIPTOR, SDCMD_DESCRIPTOR structure [Buses], *PSDCMD_DESCRIPTOR, PSDCMD_DESCRIPTOR structure pointer [Buses]"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : sddef.h
-req.include-header : Sddef.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SDCMD_DESCRIPTOR, *PSDCMD_DESCRIPTOR
-req.product : Windows 10 or later.
+UID: NS:sddef._SDCMD_DESCRIPTOR
+title: "_SDCMD_DESCRIPTOR"
+author: windows-driver-content
+description: The SDCMD_DESCRIPTOR structure defines a Secure Digital (SD) card command.
+old-location: sd\sdcmd_descriptor.htm
+old-project: SD
+ms.assetid: 7c49c394-d0b3-4594-a623-0a13825bdcec
+ms.author: windowsdriverdev
+ms.date: 12/18/2017
+ms.keywords: "_SDCMD_DESCRIPTOR, SDCMD_DESCRIPTOR, sd-structs_20a7faa8-4e91-49cc-94eb-13bd584a25a3.xml, sddef/SDCMD_DESCRIPTOR, PSDCMD_DESCRIPTOR, SD.sdcmd_descriptor, sddef/PSDCMD_DESCRIPTOR, SDCMD_DESCRIPTOR structure [Buses], *PSDCMD_DESCRIPTOR, PSDCMD_DESCRIPTOR structure pointer [Buses]"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: sddef.h
+req.include-header: Sddef.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	sddef.h
+apiname:
+-	SDCMD_DESCRIPTOR
+product: Windows
+targetos: Windows
+req.typenames: SDCMD_DESCRIPTOR, *PSDCMD_DESCRIPTOR
+req.product: Windows 10 or later.
 ---
 
 # _SDCMD_DESCRIPTOR structure

@@ -1,41 +1,46 @@
 ---
-UID : NS:dispmprt._DXGKRNL_INTERFACE
-title : "_DXGKRNL_INTERFACE"
-author : windows-driver-content
-description : The DXGKRNL_INTERFACE structure contains a handle to a display adapter and a set of function pointers.
-old-location : display\dxgkrnl_interface2.htm
-old-project : display
-ms.assetid : d97d3ec6-aaa5-4f4a-a39f-42c09473b18e
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : dispmprt/PDXGKRNL_INTERFACE, PDXGKRNL_INTERFACE structure pointer [Display Devices], DXGKDDI_INTERFACE_VERSION_VISTA, DmStructs_86ab8b5f-f30b-4ad3-ac4d-34fc3a864f27.xml, DXGKRNL_INTERFACE, dispmprt/DXGKRNL_INTERFACE, _DXGKRNL_INTERFACE, DXGKDDI_INTERFACE_VERSION_VISTA_SP1, display.dxgkrnl_interface2, DXGKDDI_INTERFACE_VERSION_VISTA_WIN7, *PDXGKRNL_INTERFACE, PDXGKRNL_INTERFACE, DXGKDDI_INTERFACE_VERSION_WIN8, DXGKRNL_INTERFACE structure [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : dispmprt.h
-req.include-header : Dispmprt.h
-req.target-type : Windows
-req.target-min-winverclnt : Available beginning with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDXGKRNL_INTERFACE, DXGKRNL_INTERFACE"
+UID: NS:dispmprt._DXGKRNL_INTERFACE
+title: "_DXGKRNL_INTERFACE"
+author: windows-driver-content
+description: The DXGKRNL_INTERFACE structure contains a handle to a display adapter and a set of function pointers.
+old-location: display\dxgkrnl_interface2.htm
+old-project: display
+ms.assetid: d97d3ec6-aaa5-4f4a-a39f-42c09473b18e
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: dispmprt/PDXGKRNL_INTERFACE, PDXGKRNL_INTERFACE structure pointer [Display Devices], DXGKDDI_INTERFACE_VERSION_VISTA, DmStructs_86ab8b5f-f30b-4ad3-ac4d-34fc3a864f27.xml, DXGKRNL_INTERFACE, dispmprt/DXGKRNL_INTERFACE, _DXGKRNL_INTERFACE, DXGKDDI_INTERFACE_VERSION_VISTA_SP1, display.dxgkrnl_interface2, DXGKDDI_INTERFACE_VERSION_VISTA_WIN7, *PDXGKRNL_INTERFACE, PDXGKRNL_INTERFACE, DXGKDDI_INTERFACE_VERSION_WIN8, DXGKRNL_INTERFACE structure [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: dispmprt.h
+req.include-header: Dispmprt.h
+req.target-type: Windows
+req.target-min-winverclnt: Available beginning with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Dispmprt.h
+apiname:
+-	DXGKRNL_INTERFACE
+product: Windows
+targetos: Windows
+req.typenames: "*PDXGKRNL_INTERFACE, DXGKRNL_INTERFACE"
 ---
 
 # _DXGKRNL_INTERFACE structure

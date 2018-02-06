@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmthk._D3DKMT_DESTROYOVERLAY
-title : "_D3DKMT_DESTROYOVERLAY"
-author : windows-driver-content
-description : The D3DKMT_DESTROYOVERLAY structure contains the handle to the overlay to destroy.
-old-location : display\d3dkmt_destroyoverlay.htm
-old-project : display
-ms.assetid : b1b8554f-8d6b-4c2e-b6b8-fcbfc97f5dd9
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DKMT_DESTROYOVERLAY, display.d3dkmt_destroyoverlay, D3DKMT_DESTROYOVERLAY structure [Display Devices], _D3DKMT_DESTROYOVERLAY, OpenGL_Structs_57b46d39-5b2c-4d58-9daa-e1460168fe55.xml, d3dkmthk/D3DKMT_DESTROYOVERLAY
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_DESTROYOVERLAY
+UID: NS:d3dkmthk._D3DKMT_DESTROYOVERLAY
+title: "_D3DKMT_DESTROYOVERLAY"
+author: windows-driver-content
+description: The D3DKMT_DESTROYOVERLAY structure contains the handle to the overlay to destroy.
+old-location: display\d3dkmt_destroyoverlay.htm
+old-project: display
+ms.assetid: b1b8554f-8d6b-4c2e-b6b8-fcbfc97f5dd9
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DKMT_DESTROYOVERLAY, display.d3dkmt_destroyoverlay, D3DKMT_DESTROYOVERLAY structure [Display Devices], _D3DKMT_DESTROYOVERLAY, OpenGL_Structs_57b46d39-5b2c-4d58-9daa-e1460168fe55.xml, d3dkmthk/D3DKMT_DESTROYOVERLAY
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmthk.h
+apiname:
+-	D3DKMT_DESTROYOVERLAY
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_DESTROYOVERLAY
 ---
 
 # _D3DKMT_DESTROYOVERLAY structure

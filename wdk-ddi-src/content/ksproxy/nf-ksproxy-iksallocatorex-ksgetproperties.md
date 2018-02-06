@@ -1,41 +1,46 @@
 ---
-UID : NF:ksproxy.IKsAllocatorEx.KsGetProperties
-title : IKsAllocatorEx::KsGetProperties method
-author : windows-driver-content
-description : Returns the properties for an allocator.
-old-location : stream\iksallocatorex_ksgetproperties.htm
-old-project : stream
-ms.assetid : 82F2FE7D-D02B-47A1-8FC7-2D5CFC4CADA1
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KsGetProperties method [Streaming Media Devices], IKsAllocatorEx interface, IKsAllocatorEx interface [Streaming Media Devices], KsGetProperties method, ksproxy/IKsAllocatorEx::KsGetProperties, KsGetProperties, KsGetProperties method [Streaming Media Devices], IKsAllocatorEx, IKsAllocatorEx::KsGetProperties, stream.iksallocatorex_ksgetproperties
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : ksproxy.h
-req.include-header : Ksproxy.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : ksproxy.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PIPE_STATE
+UID: NF:ksproxy.IKsAllocatorEx.KsGetProperties
+title: IKsAllocatorEx::KsGetProperties method
+author: windows-driver-content
+description: Returns the properties for an allocator.
+old-location: stream\iksallocatorex_ksgetproperties.htm
+old-project: stream
+ms.assetid: 82F2FE7D-D02B-47A1-8FC7-2D5CFC4CADA1
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KsGetProperties method [Streaming Media Devices], IKsAllocatorEx interface, IKsAllocatorEx interface [Streaming Media Devices], KsGetProperties method, ksproxy/IKsAllocatorEx::KsGetProperties, KsGetProperties, KsGetProperties method [Streaming Media Devices], IKsAllocatorEx, IKsAllocatorEx::KsGetProperties, stream.iksallocatorex_ksgetproperties
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: ksproxy.h
+req.include-header: Ksproxy.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: ksproxy.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	ksproxy.h
+apiname:
+-	IKsAllocatorEx.KsGetProperties
+product: Windows
+targetos: Windows
+req.typenames: PIPE_STATE
 ---
 
 

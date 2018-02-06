@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddstor._STORAGE_PROPERTY_QUERY
-title : "_STORAGE_PROPERTY_QUERY"
-author : windows-driver-content
-description : This structure is used in conjunction with IOCTL_STORAGE_QUERY_PROPERTY to retrieve the properties of a storage device or adapter.
-old-location : storage\storage_property_query.htm
-old-project : storage
-ms.assetid : 5f8e4fbd-706c-4694-bcba-927474a66e86
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : PSTORAGE_PROPERTY_QUERY structure pointer [Storage Devices], ntddstor/STORAGE_PROPERTY_QUERY, STORAGE_PROPERTY_QUERY structure [Storage Devices], structs-general_3b25ee3b-72f2-4f41-8c76-a1764bea86af.xml, PSTORAGE_PROPERTY_QUERY, *PSTORAGE_PROPERTY_QUERY, _STORAGE_PROPERTY_QUERY, storage.storage_property_query, ntddstor/PSTORAGE_PROPERTY_QUERY, STORAGE_PROPERTY_QUERY
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddstor.h
-req.include-header : Ntddstor.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSTORAGE_PROPERTY_QUERY, STORAGE_PROPERTY_QUERY"
+UID: NS:ntddstor._STORAGE_PROPERTY_QUERY
+title: "_STORAGE_PROPERTY_QUERY"
+author: windows-driver-content
+description: This structure is used in conjunction with IOCTL_STORAGE_QUERY_PROPERTY to retrieve the properties of a storage device or adapter.
+old-location: storage\storage_property_query.htm
+old-project: storage
+ms.assetid: 5f8e4fbd-706c-4694-bcba-927474a66e86
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: PSTORAGE_PROPERTY_QUERY structure pointer [Storage Devices], ntddstor/STORAGE_PROPERTY_QUERY, STORAGE_PROPERTY_QUERY structure [Storage Devices], structs-general_3b25ee3b-72f2-4f41-8c76-a1764bea86af.xml, PSTORAGE_PROPERTY_QUERY, *PSTORAGE_PROPERTY_QUERY, _STORAGE_PROPERTY_QUERY, storage.storage_property_query, ntddstor/PSTORAGE_PROPERTY_QUERY, STORAGE_PROPERTY_QUERY
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddstor.h
+req.include-header: Ntddstor.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddstor.h
+apiname:
+-	STORAGE_PROPERTY_QUERY
+product: Windows
+targetos: Windows
+req.typenames: "*PSTORAGE_PROPERTY_QUERY, STORAGE_PROPERTY_QUERY"
 ---
 
 # _STORAGE_PROPERTY_QUERY structure

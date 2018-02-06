@@ -1,41 +1,47 @@
 ---
-UID : NF:fwpsk.FwpsCalloutRegister0
-title : FwpsCalloutRegister0 function
-author : windows-driver-content
-description : The FwpsCalloutRegister0 function registers a callout with the filter engine.Note  FwpsCalloutRegister0 is the specific version of FwpsCalloutRegister used in Windows Vista and later.
-old-location : netvista\fwpscalloutregister0.htm
-old-project : netvista
-ms.assetid : 1f003775-4b93-44cd-8c58-18e0e3fb5656
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : FwpsCalloutRegister0 function [Network Drivers Starting with Windows Vista], netvista.fwpscalloutregister0, wfp_ref_2_funct_3_fwps_C_a1902e8d-fa04-4d2c-ab39-04d313d01833.xml, FwpsCalloutRegister0, fwpsk/FwpsCalloutRegister0
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fwpsk.h
-req.include-header : Fwpsk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Fwpkclnt.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FWPS_VSWITCH_EVENT_TYPE
+UID: NF:fwpsk.FwpsCalloutRegister0
+title: FwpsCalloutRegister0 function
+author: windows-driver-content
+description: The FwpsCalloutRegister0 function registers a callout with the filter engine.Note  FwpsCalloutRegister0 is the specific version of FwpsCalloutRegister used in Windows Vista and later.
+old-location: netvista\fwpscalloutregister0.htm
+old-project: netvista
+ms.assetid: 1f003775-4b93-44cd-8c58-18e0e3fb5656
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: FwpsCalloutRegister0 function [Network Drivers Starting with Windows Vista], netvista.fwpscalloutregister0, wfp_ref_2_funct_3_fwps_C_a1902e8d-fa04-4d2c-ab39-04d313d01833.xml, FwpsCalloutRegister0, fwpsk/FwpsCalloutRegister0
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fwpsk.h
+req.include-header: Fwpsk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Fwpkclnt.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Fwpkclnt.lib
+-	Fwpkclnt.dll
+apiname:
+-	FwpsCalloutRegister0
+product: Windows
+targetos: Windows
+req.typenames: FWPS_VSWITCH_EVENT_TYPE
 ---
 
 

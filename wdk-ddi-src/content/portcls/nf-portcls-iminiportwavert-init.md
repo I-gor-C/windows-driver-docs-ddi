@@ -1,41 +1,46 @@
 ---
-UID : NF:portcls.IMiniportWaveRT.Init
-title : IMiniportWaveRT::Init method
-author : windows-driver-content
-description : The Init method initializes the WaveRT miniport driver object.
-old-location : audio\iminiportwavert_init.htm
-old-project : audio
-ms.assetid : f25be064-6ad4-42e8-87a5-188978d093fb
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : audmp-routines_3304baaf-f3bf-43f1-908b-5cf47b084ee1.xml, IMiniportWaveRT interface [Audio Devices], Init method, IMiniportWaveRT, Init, Init method [Audio Devices], IMiniportWaveRT interface, Init method [Audio Devices], IMiniportWaveRT::Init, audio.iminiportwavert_init, portcls/IMiniportWaveRT::Init
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : portcls.h
-req.include-header : 
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : portcls.h
-req.dll : 
-req.irql : Passive level.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.IMiniportWaveRT.Init
+title: IMiniportWaveRT::Init method
+author: windows-driver-content
+description: The Init method initializes the WaveRT miniport driver object.
+old-location: audio\iminiportwavert_init.htm
+old-project: audio
+ms.assetid: f25be064-6ad4-42e8-87a5-188978d093fb
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: audmp-routines_3304baaf-f3bf-43f1-908b-5cf47b084ee1.xml, IMiniportWaveRT interface [Audio Devices], Init method, IMiniportWaveRT, Init, Init method [Audio Devices], IMiniportWaveRT interface, Init method [Audio Devices], IMiniportWaveRT::Init, audio.iminiportwavert_init, portcls/IMiniportWaveRT::Init
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: portcls.h
+req.include-header: 
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: portcls.h
+req.dll: 
+req.irql: Passive level.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	portcls.h
+apiname:
+-	IMiniportWaveRT.Init
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

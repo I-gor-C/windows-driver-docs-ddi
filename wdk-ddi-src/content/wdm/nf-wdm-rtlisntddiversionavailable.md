@@ -1,42 +1,48 @@
 ---
-UID : NF:wdm.RtlIsNtDdiVersionAvailable
-title : RtlIsNtDdiVersionAvailable function
-author : windows-driver-content
-description : The RtlIsNtDdiVersionAvailable routine determines if a specified version of the Microsoft Windows device driver interface (DDI) is available.
-old-location : kernel\rtlisntddiversionavailable.htm
-old-project : kernel
-ms.assetid : 54017f67-b01f-48bd-a5bb-598902672c4f
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : k109_62b3efdd-6678-4e88-92cb-eaacff80bfab.xml, RtlIsNtDdiVersionAvailable, wdm/RtlIsNtDdiVersionAvailable, RtlIsNtDdiVersionAvailable routine [Kernel-Mode Driver Architecture], kernel.rtlisntddiversionavailable
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows Vista. A compatibility library supports this routine in earlier versions of Windows (see Remarks section).
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Rtlver.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.RtlIsNtDdiVersionAvailable
+title: RtlIsNtDdiVersionAvailable function
+author: windows-driver-content
+description: The RtlIsNtDdiVersionAvailable routine determines if a specified version of the Microsoft Windows device driver interface (DDI) is available.
+old-location: kernel\rtlisntddiversionavailable.htm
+old-project: kernel
+ms.assetid: 54017f67-b01f-48bd-a5bb-598902672c4f
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: k109_62b3efdd-6678-4e88-92cb-eaacff80bfab.xml, RtlIsNtDdiVersionAvailable, wdm/RtlIsNtDdiVersionAvailable, RtlIsNtDdiVersionAvailable routine [Kernel-Mode Driver Architecture], kernel.rtlisntddiversionavailable
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows Vista. A compatibility library supports this routine in earlier versions of Windows (see Remarks section).
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Rtlver.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Rtlver.lib
+-	Rtlver.dll
+apiname:
+-	RtlIsNtDdiVersionAvailable
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

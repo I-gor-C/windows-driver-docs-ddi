@@ -1,41 +1,46 @@
 ---
-UID : NF:ndis.NdisRawWritePortUshort
-title : NdisRawWritePortUshort macro
-author : windows-driver-content
-description : NdisRawWritePortUshort writes a USHORT value to an I/O port on the NIC.
-old-location : netvista\ndisrawwriteportushort.htm
-old-project : netvista
-ms.assetid : f8ad7d35-5832-4258-8666-2c0f1f893f10
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NdisRawWritePortUshort, netvista.ndisrawwriteportushort, NdisRawWritePortUshort macro [Network Drivers Starting with Windows Vista], ndis/NdisRawWritePortUshort, miniport_port_raw_ref_6c164b75-fcfb-4251-803a-ca7cbe623b4d.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : macro
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisRawWritePortUshort (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisRawWritePortUshort (NDIS   5.1)) in Windows XP.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : ndis.h
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisRawWritePortUshort
+title: NdisRawWritePortUshort macro
+author: windows-driver-content
+description: NdisRawWritePortUshort writes a USHORT value to an I/O port on the NIC.
+old-location: netvista\ndisrawwriteportushort.htm
+old-project: netvista
+ms.assetid: f8ad7d35-5832-4258-8666-2c0f1f893f10
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NdisRawWritePortUshort, netvista.ndisrawwriteportushort, NdisRawWritePortUshort macro [Network Drivers Starting with Windows Vista], ndis/NdisRawWritePortUshort, miniport_port_raw_ref_6c164b75-fcfb-4251-803a-ca7cbe623b4d.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: macro
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisRawWritePortUshort (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisRawWritePortUshort (NDIS   5.1)) in Windows XP.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: ndis.h
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndis.h
+apiname:
+-	NdisRawWritePortUshort
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

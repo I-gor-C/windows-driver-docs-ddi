@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.IoSetDeviceInterfaceState
-title : IoSetDeviceInterfaceState function
-author : windows-driver-content
-description : The IoSetDeviceInterfaceState routine enables or disables an instance of a previously registered device interface class.
-old-location : kernel\iosetdeviceinterfacestate.htm
-old-project : kernel
-ms.assetid : 071b5f2a-7129-4de5-9577-f2aa22f23765
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : IoSetDeviceInterfaceState routine [Kernel-Mode Driver Architecture], k104_da5493d0-6dd5-4404-a647-6c23825df29c.xml, wdm/IoSetDeviceInterfaceState, IoSetDeviceInterfaceState, kernel.iosetdeviceinterfacestate
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : IrqlIoPassive1, LowerDriverReturn, PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.IoSetDeviceInterfaceState
+title: IoSetDeviceInterfaceState function
+author: windows-driver-content
+description: The IoSetDeviceInterfaceState routine enables or disables an instance of a previously registered device interface class.
+old-location: kernel\iosetdeviceinterfacestate.htm
+old-project: kernel
+ms.assetid: 071b5f2a-7129-4de5-9577-f2aa22f23765
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: IoSetDeviceInterfaceState routine [Kernel-Mode Driver Architecture], k104_da5493d0-6dd5-4404-a647-6c23825df29c.xml, wdm/IoSetDeviceInterfaceState, IoSetDeviceInterfaceState, kernel.iosetdeviceinterfacestate
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: IrqlIoPassive1, LowerDriverReturn, PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoSetDeviceInterfaceState
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

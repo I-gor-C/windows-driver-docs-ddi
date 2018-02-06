@@ -1,41 +1,46 @@
 ---
-UID : NS:ndis._NDIS_DEVICE_OBJECT_ATTRIBUTES
-title : "_NDIS_DEVICE_OBJECT_ATTRIBUTES"
-author : windows-driver-content
-description : The NDIS_DEVICE_OBJECT_ATTRIBUTES structure defines the attributes of a device that an NDIS filter or miniport driver can pass to the NdisRegisterDeviceEx function.
-old-location : netvista\ndis_device_object_attributes.htm
-old-project : netvista
-ms.assetid : 658e1597-eacf-4e9e-9f10-37f7646d38ad
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NDIS_DEVICE_OBJECT_ATTRIBUTES structure [Network Drivers Starting with Windows Vista], PNDIS_DEVICE_OBJECT_ATTRIBUTES structure pointer [Network Drivers Starting with Windows Vista], ndis/NDIS_DEVICE_OBJECT_ATTRIBUTES, _NDIS_DEVICE_OBJECT_ATTRIBUTES, NDIS_DEVICE_OBJECT_ATTRIBUTES, netvista.ndis_device_object_attributes, PNDIS_DEVICE_OBJECT_ATTRIBUTES, ndis/PNDIS_DEVICE_OBJECT_ATTRIBUTES, ndis_devices_ref_85d7040d-1d34-42e4-ab6b-ef03ed95eeb9.xml, *PNDIS_DEVICE_OBJECT_ATTRIBUTES
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : See Remarks section
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PNDIS_DEVICE_OBJECT_ATTRIBUTES, NDIS_DEVICE_OBJECT_ATTRIBUTES"
+UID: NS:ndis._NDIS_DEVICE_OBJECT_ATTRIBUTES
+title: "_NDIS_DEVICE_OBJECT_ATTRIBUTES"
+author: windows-driver-content
+description: The NDIS_DEVICE_OBJECT_ATTRIBUTES structure defines the attributes of a device that an NDIS filter or miniport driver can pass to the NdisRegisterDeviceEx function.
+old-location: netvista\ndis_device_object_attributes.htm
+old-project: netvista
+ms.assetid: 658e1597-eacf-4e9e-9f10-37f7646d38ad
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NDIS_DEVICE_OBJECT_ATTRIBUTES structure [Network Drivers Starting with Windows Vista], PNDIS_DEVICE_OBJECT_ATTRIBUTES structure pointer [Network Drivers Starting with Windows Vista], ndis/NDIS_DEVICE_OBJECT_ATTRIBUTES, _NDIS_DEVICE_OBJECT_ATTRIBUTES, NDIS_DEVICE_OBJECT_ATTRIBUTES, netvista.ndis_device_object_attributes, PNDIS_DEVICE_OBJECT_ATTRIBUTES, ndis/PNDIS_DEVICE_OBJECT_ATTRIBUTES, ndis_devices_ref_85d7040d-1d34-42e4-ab6b-ef03ed95eeb9.xml, *PNDIS_DEVICE_OBJECT_ATTRIBUTES
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: See Remarks section
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndis.h
+apiname:
+-	NDIS_DEVICE_OBJECT_ATTRIBUTES
+product: Windows
+targetos: Windows
+req.typenames: "*PNDIS_DEVICE_OBJECT_ATTRIBUTES, NDIS_DEVICE_OBJECT_ATTRIBUTES"
 ---
 
 # _NDIS_DEVICE_OBJECT_ATTRIBUTES structure

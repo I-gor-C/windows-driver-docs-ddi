@@ -1,41 +1,46 @@
 ---
-UID : NN:filterpipeline.IXpsDocumentConsumer
-title : IXpsDocumentConsumer
-author : windows-driver-content
-description : A filter uses the IXpsDocumentConsumer interface when it generates XPS content for the pipeline to consume.
-old-location : print\ixpsdocumentconsumer.htm
-old-project : print
-ms.assetid : 98e603e6-2786-4bc8-ad8a-0e91b0d444d8
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : print.ixpsdocumentconsumer, IXpsDocumentConsumer interface [Print Devices], IXpsDocumentConsumer interface [Print Devices], described, IXpsDocumentConsumer, filterpipeline/IXpsDocumentConsumer, filterpipeline_230eb0f6-427a-4986-b8ad-bc1d41853d67.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : filterpipeline.h
-req.include-header : Filterpipeline.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : filterpipeline.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NN:filterpipeline.IXpsDocumentConsumer
+title: IXpsDocumentConsumer
+author: windows-driver-content
+description: A filter uses the IXpsDocumentConsumer interface when it generates XPS content for the pipeline to consume.
+old-location: print\ixpsdocumentconsumer.htm
+old-project: print
+ms.assetid: 98e603e6-2786-4bc8-ad8a-0e91b0d444d8
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: print.ixpsdocumentconsumer, IXpsDocumentConsumer interface [Print Devices], IXpsDocumentConsumer interface [Print Devices], described, IXpsDocumentConsumer, filterpipeline/IXpsDocumentConsumer, filterpipeline_230eb0f6-427a-4986-b8ad-bc1d41853d67.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: filterpipeline.h
+req.include-header: Filterpipeline.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: filterpipeline.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	filterpipeline.h
+apiname:
+-	IXpsDocumentConsumer
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 # IXpsDocumentConsumer interface

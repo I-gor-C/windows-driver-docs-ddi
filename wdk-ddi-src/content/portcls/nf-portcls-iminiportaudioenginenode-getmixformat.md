@@ -1,41 +1,46 @@
 ---
-UID : NF:portcls.IMiniportAudioEngineNode.GetMixFormat
-title : IMiniportAudioEngineNode::GetMixFormat method
-author : windows-driver-content
-description : Gets the audio data format for the audio engine mixer.
-old-location : audio\iminiportaudioenginenode_getmixformat.htm
-old-project : audio
-ms.assetid : CB0DD6C8-DFB3-42E0-B38F-341677A72E29
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : IMiniportAudioEngineNode::GetMixFormat, GetMixFormat, audio.iminiportaudioenginenode_getmixformat, GetMixFormat method [Audio Devices], IMiniportAudioEngineNode interface, portcls/IMiniportAudioEngineNode::GetMixFormat, IMiniportAudioEngineNode interface [Audio Devices], GetMixFormat method, IMiniportAudioEngineNode, GetMixFormat method [Audio Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : portcls.h
-req.include-header : 
-req.target-type : Universal
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : portcls.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.IMiniportAudioEngineNode.GetMixFormat
+title: IMiniportAudioEngineNode::GetMixFormat method
+author: windows-driver-content
+description: Gets the audio data format for the audio engine mixer.
+old-location: audio\iminiportaudioenginenode_getmixformat.htm
+old-project: audio
+ms.assetid: CB0DD6C8-DFB3-42E0-B38F-341677A72E29
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: IMiniportAudioEngineNode::GetMixFormat, GetMixFormat, audio.iminiportaudioenginenode_getmixformat, GetMixFormat method [Audio Devices], IMiniportAudioEngineNode interface, portcls/IMiniportAudioEngineNode::GetMixFormat, IMiniportAudioEngineNode interface [Audio Devices], GetMixFormat method, IMiniportAudioEngineNode, GetMixFormat method [Audio Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: portcls.h
+req.include-header: 
+req.target-type: Universal
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: portcls.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Portcls.h
+apiname:
+-	IMiniportAudioEngineNode.GetMixFormat
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

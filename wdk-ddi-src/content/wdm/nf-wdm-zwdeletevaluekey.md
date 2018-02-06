@@ -1,42 +1,48 @@
 ---
-UID : NF:wdm.ZwDeleteValueKey
-title : ZwDeleteValueKey function
-author : windows-driver-content
-description : The ZwDeleteValueKey routine deletes a value entry matching a name from an open key in the registry. If no such entry exists, an error is returned.
-old-location : kernel\zwdeletevaluekey.htm
-old-project : kernel
-ms.assetid : e7fc9290-8f24-4b9f-822a-0bdce50dafb9
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.zwdeletevaluekey, ZwDeleteValueKey routine [Kernel-Mode Driver Architecture], ZwDeleteValueKey, wdm/ZwDeleteValueKey, wdm/NtDeleteValueKey, k111_81ff5c8c-442c-4ddd-9166-5445b964893a.xml, NtDeleteValueKey
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h, Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ZwDeleteValueKey
+title: ZwDeleteValueKey function
+author: windows-driver-content
+description: The ZwDeleteValueKey routine deletes a value entry matching a name from an open key in the registry. If no such entry exists, an error is returned.
+old-location: kernel\zwdeletevaluekey.htm
+old-project: kernel
+ms.assetid: e7fc9290-8f24-4b9f-822a-0bdce50dafb9
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.zwdeletevaluekey, ZwDeleteValueKey routine [Kernel-Mode Driver Architecture], ZwDeleteValueKey, wdm/ZwDeleteValueKey, wdm/NtDeleteValueKey, k111_81ff5c8c-442c-4ddd-9166-5445b964893a.xml, NtDeleteValueKey
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h, Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ZwDeleteValueKey
+-	NtDeleteValueKey
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

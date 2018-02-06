@@ -1,41 +1,46 @@
 ---
-UID : NS:hbaapi.HBA_FcpScsiEntryV2
-title : HBA_FcpScsiEntryV2
-author : windows-driver-content
-description : The HBA_FcpScsiEntryV2 structure defines a mapping between an operating system identifier for a logical unit and the corresponding fibre channel protocol (FCP) identifier for the logical unit.
-old-location : storage\hba_fcpscsientryv2.htm
-old-project : storage
-ms.assetid : 28f0118b-8c16-4075-8dc9-78e1e2636f02
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : hbaapi/PHBA_FCPSCSIENTRYV2, PHBA_FCPSCSIENTRYV2, storage.hba_fcpscsientryv2, HBA_FCPSCSIENTRYV2, HBA_FcpScsiEntryV2 structure [Storage Devices], HBA_FcpScsiEntryV2, hbaapi/HBA_FcpScsiEntryV2, PHBA_FCPSCSIENTRYV2 structure pointer [Storage Devices], HBA_FCPSCSIENTRYV2 structure [Storage Devices], structs-Fibre_b450dd9b-aeb7-4ba1-86df-4bdc6ef34e5a.xml, *PHBA_FCPSCSIENTRYV2
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : hbaapi.h
-req.include-header : Hbaapi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HBA_FCPSCSIENTRYV2, *PHBA_FCPSCSIENTRYV2
+UID: NS:hbaapi.HBA_FcpScsiEntryV2
+title: HBA_FcpScsiEntryV2
+author: windows-driver-content
+description: The HBA_FcpScsiEntryV2 structure defines a mapping between an operating system identifier for a logical unit and the corresponding fibre channel protocol (FCP) identifier for the logical unit.
+old-location: storage\hba_fcpscsientryv2.htm
+old-project: storage
+ms.assetid: 28f0118b-8c16-4075-8dc9-78e1e2636f02
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: hbaapi/PHBA_FCPSCSIENTRYV2, PHBA_FCPSCSIENTRYV2, storage.hba_fcpscsientryv2, HBA_FCPSCSIENTRYV2, HBA_FcpScsiEntryV2 structure [Storage Devices], HBA_FcpScsiEntryV2, hbaapi/HBA_FcpScsiEntryV2, PHBA_FCPSCSIENTRYV2 structure pointer [Storage Devices], HBA_FCPSCSIENTRYV2 structure [Storage Devices], structs-Fibre_b450dd9b-aeb7-4ba1-86df-4bdc6ef34e5a.xml, *PHBA_FCPSCSIENTRYV2
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: hbaapi.h
+req.include-header: Hbaapi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hbaapi.h
+apiname:
+-	HBA_FCPSCSIENTRYV2
+product: Windows
+targetos: Windows
+req.typenames: HBA_FCPSCSIENTRYV2, *PHBA_FCPSCSIENTRYV2
 ---
 
 # HBA_FcpScsiEntryV2 structure

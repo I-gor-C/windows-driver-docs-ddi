@@ -1,41 +1,46 @@
 ---
-UID : NC:dispmprt.DXGKDDI_I2C_RECEIVE_DATA_FROM_DISPLAY
-title : DXGKDDI_I2C_RECEIVE_DATA_FROM_DISPLAY
-author : windows-driver-content
-description : The DxgkDdiI2CReceiveDataFromDisplay returns data received from an I2C device in a monitor.
-old-location : display\dxgkddii2creceivedatafromdisplay.htm
-old-project : display
-ms.assetid : 7b412180-e453-4ae4-95a5-e5393e1d9197
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkddii2creceivedatafromdisplay, DxgkDdiI2CReceiveDataFromDisplay callback function [Display Devices], DxgkDdiI2CReceiveDataFromDisplay, DXGKDDI_I2C_RECEIVE_DATA_FROM_DISPLAY, DXGKDDI_I2C_RECEIVE_DATA_FROM_DISPLAY, dispmprt/DxgkDdiI2CReceiveDataFromDisplay, DmFunctions_5fcf0936-1f93-4445-9a80-545ad88b472b.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : dispmprt.h
-req.include-header : Dispmprt.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
+UID: NC:dispmprt.DXGKDDI_I2C_RECEIVE_DATA_FROM_DISPLAY
+title: DXGKDDI_I2C_RECEIVE_DATA_FROM_DISPLAY
+author: windows-driver-content
+description: The DxgkDdiI2CReceiveDataFromDisplay returns data received from an I2C device in a monitor.
+old-location: display\dxgkddii2creceivedatafromdisplay.htm
+old-project: display
+ms.assetid: 7b412180-e453-4ae4-95a5-e5393e1d9197
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkddii2creceivedatafromdisplay, DxgkDdiI2CReceiveDataFromDisplay callback function [Display Devices], DxgkDdiI2CReceiveDataFromDisplay, DXGKDDI_I2C_RECEIVE_DATA_FROM_DISPLAY, DXGKDDI_I2C_RECEIVE_DATA_FROM_DISPLAY, dispmprt/DxgkDdiI2CReceiveDataFromDisplay, DmFunctions_5fcf0936-1f93-4445-9a80-545ad88b472b.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: dispmprt.h
+req.include-header: Dispmprt.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	dispmprt.h
+apiname:
+-	DxgkDdiI2CReceiveDataFromDisplay
+product: Windows
+targetos: Windows
+req.typenames: SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ---
 
 

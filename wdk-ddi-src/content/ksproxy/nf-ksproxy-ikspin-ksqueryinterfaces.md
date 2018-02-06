@@ -1,41 +1,46 @@
 ---
-UID : NF:ksproxy.IKsPin.KsQueryInterfaces
-title : IKsPin::KsQueryInterfaces method
-author : windows-driver-content
-description : The KsQueryInterfaces method retrieves interfaces that a pin supports.
-old-location : stream\ikspin_ksqueryinterfaces.htm
-old-project : stream
-ms.assetid : e8b0a1c0-c018-4556-b43c-fae4f7cf43de
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KsQueryInterfaces method [Streaming Media Devices], KsQueryInterfaces, stream.ikspin_ksqueryinterfaces, KsQueryInterfaces method [Streaming Media Devices], IKsPin interface, ksproxy_6a22f676-b7bd-4212-a79a-3a02da890e9f.xml, IKsPin interface [Streaming Media Devices], KsQueryInterfaces method, IKsPin::KsQueryInterfaces, ksproxy/IKsPin::KsQueryInterfaces, IKsPin
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : ksproxy.h
-req.include-header : Ksproxy.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : ksproxy.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PIPE_STATE
+UID: NF:ksproxy.IKsPin.KsQueryInterfaces
+title: IKsPin::KsQueryInterfaces method
+author: windows-driver-content
+description: The KsQueryInterfaces method retrieves interfaces that a pin supports.
+old-location: stream\ikspin_ksqueryinterfaces.htm
+old-project: stream
+ms.assetid: e8b0a1c0-c018-4556-b43c-fae4f7cf43de
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KsQueryInterfaces method [Streaming Media Devices], KsQueryInterfaces, stream.ikspin_ksqueryinterfaces, KsQueryInterfaces method [Streaming Media Devices], IKsPin interface, ksproxy_6a22f676-b7bd-4212-a79a-3a02da890e9f.xml, IKsPin interface [Streaming Media Devices], KsQueryInterfaces method, IKsPin::KsQueryInterfaces, ksproxy/IKsPin::KsQueryInterfaces, IKsPin
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: ksproxy.h
+req.include-header: Ksproxy.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: ksproxy.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	ksproxy.h
+apiname:
+-	IKsPin.KsQueryInterfaces
+product: Windows
+targetos: Windows
+req.typenames: PIPE_STATE
 ---
 
 

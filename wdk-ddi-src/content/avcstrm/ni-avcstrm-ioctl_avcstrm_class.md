@@ -1,41 +1,46 @@
 ---
-UID : NI:avcstrm.IOCTL_AVCSTRM_CLASS
-title : IOCTL_AVCSTRM_CLASS
-author : windows-driver-content
-description : An AV/C subunit driver uses the IRP_MJ_INTERNAL_DEVICE_CONTROL IRP, with the IoControlCode member set to IOCTL_AVCSTRM_CLASS, to communicate with avcstrm.sys.
-old-location : stream\ioctl_avcstrm_class.htm
-old-project : stream
-ms.assetid : 50a5cbe1-acae-461f-892b-c1a3b5b218b3
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.ioctl_avcstrm_class, IOCTL_AVCSTRM_CLASS control code [Streaming Media Devices], IOCTL_AVCSTRM_CLASS, avcstrm/IOCTL_AVCSTRM_CLASS, avcsref_0e06e31a-7520-4162-8441-210cc367f65f.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : avcstrm.h
-req.include-header : Avcstrm.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : AVCSTRM_FUNCTION
+UID: NI:avcstrm.IOCTL_AVCSTRM_CLASS
+title: IOCTL_AVCSTRM_CLASS
+author: windows-driver-content
+description: An AV/C subunit driver uses the IRP_MJ_INTERNAL_DEVICE_CONTROL IRP, with the IoControlCode member set to IOCTL_AVCSTRM_CLASS, to communicate with avcstrm.sys.
+old-location: stream\ioctl_avcstrm_class.htm
+old-project: stream
+ms.assetid: 50a5cbe1-acae-461f-892b-c1a3b5b218b3
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.ioctl_avcstrm_class, IOCTL_AVCSTRM_CLASS control code [Streaming Media Devices], IOCTL_AVCSTRM_CLASS, avcstrm/IOCTL_AVCSTRM_CLASS, avcsref_0e06e31a-7520-4162-8441-210cc367f65f.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: avcstrm.h
+req.include-header: Avcstrm.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	avcstrm.h
+apiname:
+-	IOCTL_AVCSTRM_CLASS
+product: Windows
+targetos: Windows
+req.typenames: AVCSTRM_FUNCTION
 ---
 
 # IOCTL_AVCSTRM_CLASS IOCTL

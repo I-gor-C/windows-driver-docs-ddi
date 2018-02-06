@@ -1,41 +1,47 @@
 ---
-UID : NF:portcls.PcCompleteIrp
-title : PcCompleteIrp function
-author : windows-driver-content
-description : The PcCompleteIrp function completes an IRP that was previously marked as pending.
-old-location : audio\pccompleteirp.htm
-old-project : audio
-ms.assetid : fa0b36bf-0628-4136-9ca7-1d20823969ff
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : portcls/PcCompleteIrp, PcCompleteIrp function [Audio Devices], audio.pccompleteirp, PcCompleteIrp, audpc-routines_f61145f8-9e55-4b2a-a3aa-37f7be4f4df3.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : portcls.h
-req.include-header : Portcls.h
-req.target-type : Universal
-req.target-min-winverclnt : The PortCls system driver implements the PcCompleteIrp function in Microsoft Windows 98/Me and in Windows 2000 and later operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Portcls.lib
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.PcCompleteIrp
+title: PcCompleteIrp function
+author: windows-driver-content
+description: The PcCompleteIrp function completes an IRP that was previously marked as pending.
+old-location: audio\pccompleteirp.htm
+old-project: audio
+ms.assetid: fa0b36bf-0628-4136-9ca7-1d20823969ff
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: portcls/PcCompleteIrp, PcCompleteIrp function [Audio Devices], audio.pccompleteirp, PcCompleteIrp, audpc-routines_f61145f8-9e55-4b2a-a3aa-37f7be4f4df3.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: portcls.h
+req.include-header: Portcls.h
+req.target-type: Universal
+req.target-min-winverclnt: The PortCls system driver implements the PcCompleteIrp function in Microsoft Windows 98/Me and in Windows 2000 and later operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Portcls.lib
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Portcls.lib
+-	Portcls.dll
+apiname:
+-	PcCompleteIrp
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

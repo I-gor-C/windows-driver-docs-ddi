@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._D3DDDIARG_SETPALETTE
-title : "_D3DDDIARG_SETPALETTE"
-author : windows-driver-content
-description : The D3DDDIARG_SETPALETTE structure describes how to associate a palette with a texture.
-old-location : display\d3dddiarg_setpalette.htm
-old-project : display
-ms.assetid : 265912e2-2076-4435-811f-70a3dd1a0bd7
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3dumddi/D3DDDIARG_SETPALETTE, D3DDDIARG_SETPALETTE, UMDisplayDriver_param_Structs_6fb950bf-0a0f-4d87-950d-7030251ed074.xml, display.d3dddiarg_setpalette, _D3DDDIARG_SETPALETTE, D3DDDIARG_SETPALETTE structure [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDIARG_SETPALETTE
+UID: NS:d3dumddi._D3DDDIARG_SETPALETTE
+title: "_D3DDDIARG_SETPALETTE"
+author: windows-driver-content
+description: The D3DDDIARG_SETPALETTE structure describes how to associate a palette with a texture.
+old-location: display\d3dddiarg_setpalette.htm
+old-project: display
+ms.assetid: 265912e2-2076-4435-811f-70a3dd1a0bd7
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3dumddi/D3DDDIARG_SETPALETTE, D3DDDIARG_SETPALETTE, UMDisplayDriver_param_Structs_6fb950bf-0a0f-4d87-950d-7030251ed074.xml, display.d3dddiarg_setpalette, _D3DDDIARG_SETPALETTE, D3DDDIARG_SETPALETTE structure [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	D3DDDIARG_SETPALETTE
+product: Windows
+targetos: Windows
+req.typenames: D3DDDIARG_SETPALETTE
 ---
 
 # _D3DDDIARG_SETPALETTE structure

@@ -1,42 +1,47 @@
 ---
-UID : NF:video.VideoPortFreeDeviceBase
-title : VideoPortFreeDeviceBase function
-author : windows-driver-content
-description : The VideoPortFreeDeviceBase function frees a range of bus-relative device I/O ports or memory addresses previously mapped into the system address space. It does this by calling VideoPortGetDeviceBase.
-old-location : display\videoportfreedevicebase.htm
-old-project : display
-ms.assetid : 5b165237-f6fb-449c-878d-0ee09076d203
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.videoportfreedevicebase, VideoPort_Functions_cdbada9a-c5be-48e3-90e7-9414a055350c.xml, VideoPortFreeDeviceBase function [Display Devices], VideoPortFreeDeviceBase, video/VideoPortFreeDeviceBase
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows 2000 and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Videoprt.lib
-req.dll : Videoprt.sys
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_PORT_SERVICES
-req.product : Windows 10 or later.
+UID: NF:video.VideoPortFreeDeviceBase
+title: VideoPortFreeDeviceBase function
+author: windows-driver-content
+description: The VideoPortFreeDeviceBase function frees a range of bus-relative device I/O ports or memory addresses previously mapped into the system address space. It does this by calling VideoPortGetDeviceBase.
+old-location: display\videoportfreedevicebase.htm
+old-project: display
+ms.assetid: 5b165237-f6fb-449c-878d-0ee09076d203
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.videoportfreedevicebase, VideoPort_Functions_cdbada9a-c5be-48e3-90e7-9414a055350c.xml, VideoPortFreeDeviceBase function [Display Devices], VideoPortFreeDeviceBase, video/VideoPortFreeDeviceBase
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows 2000 and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Videoprt.lib
+req.dll: Videoprt.sys
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Videoprt.sys
+apiname:
+-	VideoPortFreeDeviceBase
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_PORT_SERVICES
+req.product: Windows 10 or later.
 ---
 
 

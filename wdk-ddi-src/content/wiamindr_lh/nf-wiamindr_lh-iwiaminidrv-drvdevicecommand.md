@@ -1,42 +1,47 @@
 ---
-UID : NF:wiamindr_lh.IWiaMiniDrv.drvDeviceCommand
-title : IWiaMiniDrv::drvDeviceCommand method
-author : windows-driver-content
-description : The IWiaMiniDrv::drvDeviceCommand method issues a command to a WIA device.
-old-location : image\iwiaminidrv_drvdevicecommand.htm
-old-project : image
-ms.assetid : e17c81a6-8c4e-41f0-bd98-f7a9a0f20893
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : IWiaMiniDrv::drvDeviceCommand, image.iwiaminidrv_drvdevicecommand, wiamindr_lh/IWiaMiniDrv::drvDeviceCommand, IWiaMiniDrv, MiniDrv_a65ceaef-73bf-4fd1-9d56-2a4b208f54a3.xml, IWiaMiniDrv interface [Imaging Devices], drvDeviceCommand method, drvDeviceCommand method [Imaging Devices], IWiaMiniDrv interface, drvDeviceCommand, drvDeviceCommand method [Imaging Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wiamindr_lh.h
-req.include-header : Wiamindr.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Me and in Windows XP and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wiamindr_lh.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SCANWINDOW, *PSCANWINDOW
-req.product : Windows 10 or later.
+UID: NF:wiamindr_lh.IWiaMiniDrv.drvDeviceCommand
+title: IWiaMiniDrv::drvDeviceCommand method
+author: windows-driver-content
+description: The IWiaMiniDrv::drvDeviceCommand method issues a command to a WIA device.
+old-location: image\iwiaminidrv_drvdevicecommand.htm
+old-project: image
+ms.assetid: e17c81a6-8c4e-41f0-bd98-f7a9a0f20893
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: IWiaMiniDrv::drvDeviceCommand, image.iwiaminidrv_drvdevicecommand, wiamindr_lh/IWiaMiniDrv::drvDeviceCommand, IWiaMiniDrv, MiniDrv_a65ceaef-73bf-4fd1-9d56-2a4b208f54a3.xml, IWiaMiniDrv interface [Imaging Devices], drvDeviceCommand method, drvDeviceCommand method [Imaging Devices], IWiaMiniDrv interface, drvDeviceCommand, drvDeviceCommand method [Imaging Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wiamindr_lh.h
+req.include-header: Wiamindr.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Me and in Windows XP and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wiamindr_lh.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	wiamindr_lh.h
+apiname:
+-	IWiaMiniDrv.drvDeviceCommand
+product: Windows
+targetos: Windows
+req.typenames: SCANWINDOW, *PSCANWINDOW
+req.product: Windows 10 or later.
 ---
 
 

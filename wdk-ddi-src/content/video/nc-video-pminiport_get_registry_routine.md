@@ -1,42 +1,47 @@
 ---
-UID : NC:video.PMINIPORT_GET_REGISTRY_ROUTINE
-title : PMINIPORT_GET_REGISTRY_ROUTINE
-author : windows-driver-content
-description : HwVidQueryNamedValueCallback processes the specified data retrieved from the registry.
-old-location : display\hwvidquerynamedvaluecallback.htm
-old-project : display
-ms.assetid : 90020700-b9c8-42e6-bafa-908cbc3eb233
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.hwvidquerynamedvaluecallback, HwVidQueryNamedValueCallback callback function [Display Devices], HwVidQueryNamedValueCallback, PMINIPORT_GET_REGISTRY_ROUTINE, PMINIPORT_GET_REGISTRY_ROUTINE, video/HwVidQueryNamedValueCallback, VideoMiniport_Functions_4e6a63e7-cf5f-4cb6-9e9a-10286e40d762.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VHF_CONFIG, *PVHF_CONFIG
-req.product : Windows 10 or later.
+UID: NC:video.PMINIPORT_GET_REGISTRY_ROUTINE
+title: PMINIPORT_GET_REGISTRY_ROUTINE
+author: windows-driver-content
+description: HwVidQueryNamedValueCallback processes the specified data retrieved from the registry.
+old-location: display\hwvidquerynamedvaluecallback.htm
+old-project: display
+ms.assetid: 90020700-b9c8-42e6-bafa-908cbc3eb233
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.hwvidquerynamedvaluecallback, HwVidQueryNamedValueCallback callback function [Display Devices], HwVidQueryNamedValueCallback, PMINIPORT_GET_REGISTRY_ROUTINE, PMINIPORT_GET_REGISTRY_ROUTINE, video/HwVidQueryNamedValueCallback, VideoMiniport_Functions_4e6a63e7-cf5f-4cb6-9e9a-10286e40d762.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	video.h
+apiname:
+-	HwVidQueryNamedValueCallback
+product: Windows
+targetos: Windows
+req.typenames: VHF_CONFIG, *PVHF_CONFIG
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NF:portcls.IPortMidi.RegisterServiceGroup
-title : IPortMidi::RegisterServiceGroup method
-author : windows-driver-content
-description : The RegisterServiceGroup method registers the service group to be used for the IPortMidi::Notify method.
-old-location : audio\iportmidi_registerservicegroup.htm
-old-project : audio
-ms.assetid : 8e6b967f-7114-4231-bcfc-23637cd83268
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : RegisterServiceGroup, IPortMidi::RegisterServiceGroup, portcls/IPortMidi::RegisterServiceGroup, IPortMidi, audio.iportmidi_registerservicegroup, RegisterServiceGroup method [Audio Devices], IPortMidi interface [Audio Devices], RegisterServiceGroup method, RegisterServiceGroup method [Audio Devices], IPortMidi interface, audmp-routines_ff2228bf-489d-4980-a317-e9cb89e4f394.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : portcls.h
-req.include-header : Portcls.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : portcls.h
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.IPortMidi.RegisterServiceGroup
+title: IPortMidi::RegisterServiceGroup method
+author: windows-driver-content
+description: The RegisterServiceGroup method registers the service group to be used for the IPortMidi::Notify method.
+old-location: audio\iportmidi_registerservicegroup.htm
+old-project: audio
+ms.assetid: 8e6b967f-7114-4231-bcfc-23637cd83268
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: RegisterServiceGroup, IPortMidi::RegisterServiceGroup, portcls/IPortMidi::RegisterServiceGroup, IPortMidi, audio.iportmidi_registerservicegroup, RegisterServiceGroup method [Audio Devices], IPortMidi interface [Audio Devices], RegisterServiceGroup method, RegisterServiceGroup method [Audio Devices], IPortMidi interface, audmp-routines_ff2228bf-489d-4980-a317-e9cb89e4f394.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: portcls.h
+req.include-header: Portcls.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: portcls.h
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	portcls.h
+apiname:
+-	IPortMidi.RegisterServiceGroup
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

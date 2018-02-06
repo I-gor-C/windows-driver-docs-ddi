@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmdt._DXGKMDT_OPM_COPP_COMPATIBLE_GET_INFO_PARAMETERS
-title : "_DXGKMDT_OPM_COPP_COMPATIBLE_GET_INFO_PARAMETERS"
-author : windows-driver-content
-description : The DXGKMDT_OPM_COPP_COMPATIBLE_GET_INFO_PARAMETERS structure contains parameters that are used to retrieve information from a protected output object in a call to the DxgkDdiOPMGetCOPPCompatibleInformation function.
-old-location : display\dxgkmdt_opm_copp_compatible_get_info_parameters.htm
-old-project : display
-ms.assetid : 51422f72-5dae-43d0-9bf2-c24403addb56
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkmdt_opm_copp_compatible_get_info_parameters, d3dkmdt/PDXGKMDT_OPM_COPP_COMPATIBLE_GET_INFO_PARAMETERS, DXGKMDT_OPM_COPP_COMPATIBLE_GET_INFO_PARAMETERS, _DXGKMDT_OPM_COPP_COMPATIBLE_GET_INFO_PARAMETERS, *PDXGKMDT_OPM_COPP_COMPATIBLE_GET_INFO_PARAMETERS, DXGKMDT_OPM_COPP_COMPATIBLE_GET_INFO_PARAMETERS structure [Display Devices], PDXGKMDT_OPM_COPP_COMPATIBLE_GET_INFO_PARAMETERS structure pointer [Display Devices], d3dkmdt/DXGKMDT_OPM_COPP_COMPATIBLE_GET_INFO_PARAMETERS, DmStructs_2e356de0-a1ca-4f75-a3f2-c72be3bdf87f.xml, PDXGKMDT_OPM_COPP_COMPATIBLE_GET_INFO_PARAMETERS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmdt.h
-req.include-header : D3dkmdt.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGKMDT_OPM_COPP_COMPATIBLE_GET_INFO_PARAMETERS, *PDXGKMDT_OPM_COPP_COMPATIBLE_GET_INFO_PARAMETERS
+UID: NS:d3dkmdt._DXGKMDT_OPM_COPP_COMPATIBLE_GET_INFO_PARAMETERS
+title: "_DXGKMDT_OPM_COPP_COMPATIBLE_GET_INFO_PARAMETERS"
+author: windows-driver-content
+description: The DXGKMDT_OPM_COPP_COMPATIBLE_GET_INFO_PARAMETERS structure contains parameters that are used to retrieve information from a protected output object in a call to the DxgkDdiOPMGetCOPPCompatibleInformation function.
+old-location: display\dxgkmdt_opm_copp_compatible_get_info_parameters.htm
+old-project: display
+ms.assetid: 51422f72-5dae-43d0-9bf2-c24403addb56
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkmdt_opm_copp_compatible_get_info_parameters, d3dkmdt/PDXGKMDT_OPM_COPP_COMPATIBLE_GET_INFO_PARAMETERS, DXGKMDT_OPM_COPP_COMPATIBLE_GET_INFO_PARAMETERS, _DXGKMDT_OPM_COPP_COMPATIBLE_GET_INFO_PARAMETERS, *PDXGKMDT_OPM_COPP_COMPATIBLE_GET_INFO_PARAMETERS, DXGKMDT_OPM_COPP_COMPATIBLE_GET_INFO_PARAMETERS structure [Display Devices], PDXGKMDT_OPM_COPP_COMPATIBLE_GET_INFO_PARAMETERS structure pointer [Display Devices], d3dkmdt/DXGKMDT_OPM_COPP_COMPATIBLE_GET_INFO_PARAMETERS, DmStructs_2e356de0-a1ca-4f75-a3f2-c72be3bdf87f.xml, PDXGKMDT_OPM_COPP_COMPATIBLE_GET_INFO_PARAMETERS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmdt.h
+req.include-header: D3dkmdt.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmdt.h
+apiname:
+-	DXGKMDT_OPM_COPP_COMPATIBLE_GET_INFO_PARAMETERS
+product: Windows
+targetos: Windows
+req.typenames: DXGKMDT_OPM_COPP_COMPATIBLE_GET_INFO_PARAMETERS, *PDXGKMDT_OPM_COPP_COMPATIBLE_GET_INFO_PARAMETERS
 ---
 
 # _DXGKMDT_OPM_COPP_COMPATIBLE_GET_INFO_PARAMETERS structure

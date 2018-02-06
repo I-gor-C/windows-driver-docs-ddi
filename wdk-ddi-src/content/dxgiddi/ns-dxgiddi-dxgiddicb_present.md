@@ -1,41 +1,46 @@
 ---
-UID : NS:dxgiddi.DXGIDDICB_PRESENT
-title : DXGIDDICB_PRESENT
-author : windows-driver-content
-description : The DXGIDDICB_PRESENT structure describes allocations that content is copied to and from.
-old-location : display\dxgiddicb_present.htm
-old-project : display
-ms.assetid : 1d766004-c6bb-40c6-ad5d-d2bea53649d3
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : UMDisplayDriver_Dx10param_Structs_932d6171-c487-44f6-834e-5d57b3e14515.xml, display.dxgiddicb_present, dxgiddi/DXGIDDICB_PRESENT, DXGIDDICB_PRESENT, DXGIDDICB_PRESENT structure [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : dxgiddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGIDDICB_PRESENT
+UID: NS:dxgiddi.DXGIDDICB_PRESENT
+title: DXGIDDICB_PRESENT
+author: windows-driver-content
+description: The DXGIDDICB_PRESENT structure describes allocations that content is copied to and from.
+old-location: display\dxgiddicb_present.htm
+old-project: display
+ms.assetid: 1d766004-c6bb-40c6-ad5d-d2bea53649d3
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: UMDisplayDriver_Dx10param_Structs_932d6171-c487-44f6-834e-5d57b3e14515.xml, display.dxgiddicb_present, dxgiddi/DXGIDDICB_PRESENT, DXGIDDICB_PRESENT, DXGIDDICB_PRESENT structure [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: dxgiddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	dxgiddi.h
+apiname:
+-	DXGIDDICB_PRESENT
+product: Windows
+targetos: Windows
+req.typenames: DXGIDDICB_PRESENT
 ---
 
 # DXGIDDICB_PRESENT structure

@@ -1,41 +1,46 @@
 ---
-UID : NF:irb.AtaPortRequestTimer
-title : AtaPortRequestTimer function
-author : windows-driver-content
-description : The AtaPortRequestTimer routine requests a timer callback.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
-old-location : storage\ataportrequesttimer.htm
-old-project : storage
-ms.assetid : b057ae2e-53ae-4da9-8668-1ebca3c80998
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ataportrequesttimer, irb/AtaPortRequestTimer, AtaPortRequestTimer routine [Storage Devices], AtaPortRequestTimer, atartns_604a8d41-c918-4121-97ef-10d3a7fbf3b4.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : irb.h
-req.include-header : Ata.h, Irb.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : IDE_POWER_STATE
+UID: NF:irb.AtaPortRequestTimer
+title: AtaPortRequestTimer function
+author: windows-driver-content
+description: The AtaPortRequestTimer routine requests a timer callback.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
+old-location: storage\ataportrequesttimer.htm
+old-project: storage
+ms.assetid: b057ae2e-53ae-4da9-8668-1ebca3c80998
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ataportrequesttimer, irb/AtaPortRequestTimer, AtaPortRequestTimer routine [Storage Devices], AtaPortRequestTimer, atartns_604a8d41-c918-4121-97ef-10d3a7fbf3b4.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: irb.h
+req.include-header: Ata.h, Irb.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	irb.h
+apiname:
+-	AtaPortRequestTimer
+product: Windows
+targetos: Windows
+req.typenames: IDE_POWER_STATE
 ---
 
 

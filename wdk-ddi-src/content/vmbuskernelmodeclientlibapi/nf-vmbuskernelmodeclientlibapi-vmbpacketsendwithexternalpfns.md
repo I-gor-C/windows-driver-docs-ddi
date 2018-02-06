@@ -1,42 +1,47 @@
 ---
-UID : NF:vmbuskernelmodeclientlibapi.VmbPacketSendWithExternalPfns
-title : VmbPacketSendWithExternalPfns function
-author : windows-driver-content
-description : The VmbPacketSendWithExternalPfns function sends the data in a packet buffer or external data as an array of Page Frame Numbers (PFNs).
-old-location : netvista\vmbpacketsendwithexternalpfns.htm
-old-project : netvista
-ms.assetid : 50AACCAB-EFEA-42B7-8A34-FE110C7CDEED
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : VmbPacketSendWithExternalPfns function [Network Drivers Starting with Windows Vista], netvista.vmbpacketsendwithexternalpfns, VmbPacketSendWithExternalPfns, vmbuskernelmodeclientlibapi/VmbPacketSendWithExternalPfns, VMBUS_CHANNEL_FORMAT_FLAG_PAGED_BUFFER, VMBUS_CHANNEL_FORMAT_FLAG_WAIT_FOR_COMPLETION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : vmbuskernelmodeclientlibapi.h
-req.include-header : VmbusKernelModeClientLibApi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8.1
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 1.13
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PVIDEO_PORT_AGP_SERVICES, VIDEO_PORT_AGP_SERVICES"
-req.product : Windows 10 or later.
+UID: NF:vmbuskernelmodeclientlibapi.VmbPacketSendWithExternalPfns
+title: VmbPacketSendWithExternalPfns function
+author: windows-driver-content
+description: The VmbPacketSendWithExternalPfns function sends the data in a packet buffer or external data as an array of Page Frame Numbers (PFNs).
+old-location: netvista\vmbpacketsendwithexternalpfns.htm
+old-project: netvista
+ms.assetid: 50AACCAB-EFEA-42B7-8A34-FE110C7CDEED
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: VmbPacketSendWithExternalPfns function [Network Drivers Starting with Windows Vista], netvista.vmbpacketsendwithexternalpfns, VmbPacketSendWithExternalPfns, vmbuskernelmodeclientlibapi/VmbPacketSendWithExternalPfns, VMBUS_CHANNEL_FORMAT_FLAG_PAGED_BUFFER, VMBUS_CHANNEL_FORMAT_FLAG_WAIT_FOR_COMPLETION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: vmbuskernelmodeclientlibapi.h
+req.include-header: VmbusKernelModeClientLibApi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8.1
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 1.13
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	VmbusKernelModeClientLibApi.h
+apiname:
+-	VmbPacketSendWithExternalPfns
+product: Windows
+targetos: Windows
+req.typenames: "*PVIDEO_PORT_AGP_SERVICES, VIDEO_PORT_AGP_SERVICES"
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:pep_x._PEP_PROCESSOR_IDLE_CONSTRAINTS
-title : "_PEP_PROCESSOR_IDLE_CONSTRAINTS"
-author : windows-driver-content
-description : The PEP_PROCESSOR_IDLE_CONSTRAINTS structure specifies a set of constraints that the PEP uses to select a processor idle state.
-old-location : kernel\pep_processor_idle_constraints.htm
-old-project : kernel
-ms.assetid : E2939DFA-52EC-4AA7-ACC6-63D60603A24D
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : PEP_PROCESSOR_IDLE_CONSTRAINTS structure [Kernel-Mode Driver Architecture], PPEP_PROCESSOR_IDLE_CONSTRAINTS structure pointer [Kernel-Mode Driver Architecture], pep_x/PPEP_PROCESSOR_IDLE_CONSTRAINTS, PPEP_PROCESSOR_IDLE_CONSTRAINTS, kernel.pep_processor_idle_constraints, pep_x/PEP_PROCESSOR_IDLE_CONSTRAINTS, *PPEP_PROCESSOR_IDLE_CONSTRAINTS, _PEP_PROCESSOR_IDLE_CONSTRAINTS, PEP_PROCESSOR_IDLE_CONSTRAINTS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : pep_x.h
-req.include-header : Pepfx.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with Windows 10.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPEP_PROCESSOR_IDLE_CONSTRAINTS, PEP_PROCESSOR_IDLE_CONSTRAINTS"
+UID: NS:pep_x._PEP_PROCESSOR_IDLE_CONSTRAINTS
+title: "_PEP_PROCESSOR_IDLE_CONSTRAINTS"
+author: windows-driver-content
+description: The PEP_PROCESSOR_IDLE_CONSTRAINTS structure specifies a set of constraints that the PEP uses to select a processor idle state.
+old-location: kernel\pep_processor_idle_constraints.htm
+old-project: kernel
+ms.assetid: E2939DFA-52EC-4AA7-ACC6-63D60603A24D
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: PEP_PROCESSOR_IDLE_CONSTRAINTS structure [Kernel-Mode Driver Architecture], PPEP_PROCESSOR_IDLE_CONSTRAINTS structure pointer [Kernel-Mode Driver Architecture], pep_x/PPEP_PROCESSOR_IDLE_CONSTRAINTS, PPEP_PROCESSOR_IDLE_CONSTRAINTS, kernel.pep_processor_idle_constraints, pep_x/PEP_PROCESSOR_IDLE_CONSTRAINTS, *PPEP_PROCESSOR_IDLE_CONSTRAINTS, _PEP_PROCESSOR_IDLE_CONSTRAINTS, PEP_PROCESSOR_IDLE_CONSTRAINTS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: pep_x.h
+req.include-header: Pepfx.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows 10.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	pep_x.h
+apiname:
+-	PEP_PROCESSOR_IDLE_CONSTRAINTS
+product: Windows
+targetos: Windows
+req.typenames: "*PPEP_PROCESSOR_IDLE_CONSTRAINTS, PEP_PROCESSOR_IDLE_CONSTRAINTS"
 ---
 
 # _PEP_PROCESSOR_IDLE_CONSTRAINTS structure

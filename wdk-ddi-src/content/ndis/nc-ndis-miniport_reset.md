@@ -1,41 +1,46 @@
 ---
-UID : NC:ndis.MINIPORT_RESET
-title : MINIPORT_RESET
-author : windows-driver-content
-description : NDIS calls an NDIS miniport driver's MiniportResetEx function to initiate a reset of a network interface card (NIC). For more information, see Miniport Adapter Check-for-Hang and Reset Operations and Miniport Driver Hardware Reset.
-old-location : netvista\miniportresetex.htm
-old-project : netvista
-ms.assetid : 15f82163-a1b5-4cef-a53e-8a97adb2cd92
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.miniportresetex, MiniportResetEx callback function [Network Drivers Starting with Windows Vista], MiniportResetEx, MINIPORT_RESET, MINIPORT_RESET, ndis/MiniportResetEx, miniport_functions_ref_13afeb89-4956-4a8d-ade8-8d17a4a84128.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
+UID: NC:ndis.MINIPORT_RESET
+title: MINIPORT_RESET
+author: windows-driver-content
+description: NDIS calls an NDIS miniport driver's MiniportResetEx function to initiate a reset of a network interface card (NIC). For more information, see Miniport Adapter Check-for-Hang and Reset Operations and Miniport Driver Hardware Reset.
+old-location: netvista\miniportresetex.htm
+old-project: netvista
+ms.assetid: 15f82163-a1b5-4cef-a53e-8a97adb2cd92
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.miniportresetex, MiniportResetEx callback function [Network Drivers Starting with Windows Vista], MiniportResetEx, MINIPORT_RESET, MINIPORT_RESET, ndis/MiniportResetEx, miniport_functions_ref_13afeb89-4956-4a8d-ade8-8d17a4a84128.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ndis.h
+apiname:
+-	MiniportResetEx
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 

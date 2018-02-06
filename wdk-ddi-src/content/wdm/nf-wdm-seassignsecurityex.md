@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.SeAssignSecurityEx
-title : SeAssignSecurityEx function
-author : windows-driver-content
-description : The SeAssignSecurityEx routine builds a self-relative security descriptor for a new object given the following optional parameters:\_a security descriptor of the object's parent directory, an explicit security descriptor for the object, and the object type.
-old-location : kernel\seassignsecurityex.htm
-old-project : kernel
-ms.assetid : 94f6d3a3-7f0d-4f57-8240-3c4a10cf4488
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : k110_e014ad32-3cbd-47e6-908b-65357203ee59.xml, kernel.seassignsecurityex, wdm/SeAssignSecurityEx, SeAssignSecurityEx routine [Kernel-Mode Driver Architecture], SeAssignSecurityEx
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.SeAssignSecurityEx
+title: SeAssignSecurityEx function
+author: windows-driver-content
+description: The SeAssignSecurityEx routine builds a self-relative security descriptor for a new object given the following optional parameters:\_a security descriptor of the object's parent directory, an explicit security descriptor for the object, and the object type.
+old-location: kernel\seassignsecurityex.htm
+old-project: kernel
+ms.assetid: 94f6d3a3-7f0d-4f57-8240-3c4a10cf4488
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: k110_e014ad32-3cbd-47e6-908b-65357203ee59.xml, kernel.seassignsecurityex, wdm/SeAssignSecurityEx, SeAssignSecurityEx routine [Kernel-Mode Driver Architecture], SeAssignSecurityEx
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	SeAssignSecurityEx
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

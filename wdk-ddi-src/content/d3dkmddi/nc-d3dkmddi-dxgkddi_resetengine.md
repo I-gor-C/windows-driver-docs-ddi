@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dkmddi.DXGKDDI_RESETENGINE
-title : DXGKDDI_RESETENGINE
-author : windows-driver-content
-description : The display port driver's GPU scheduler calls this function to reset an active node on a physical display adapter when the scheduler detects a timeout condition on the adapter.
-old-location : display\dxgkddiresetengine.htm
-old-project : display
-ms.assetid : 9c2097b2-5742-422c-a650-7efff2484970
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkddiresetengine, DxgkDdiResetEngine callback function [Display Devices], DxgkDdiResetEngine, DXGKDDI_RESETENGINE, DXGKDDI_RESETENGINE, d3dkmddi/DxgkDdiResetEngine
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dkmddi.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
+UID: NC:d3dkmddi.DXGKDDI_RESETENGINE
+title: DXGKDDI_RESETENGINE
+author: windows-driver-content
+description: The display port driver's GPU scheduler calls this function to reset an active node on a physical display adapter when the scheduler detects a timeout condition on the adapter.
+old-location: display\dxgkddiresetengine.htm
+old-project: display
+ms.assetid: 9c2097b2-5742-422c-a650-7efff2484970
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkddiresetengine, DxgkDdiResetEngine callback function [Display Devices], DxgkDdiResetEngine, DXGKDDI_RESETENGINE, DXGKDDI_RESETENGINE, d3dkmddi/DxgkDdiResetEngine
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dkmddi.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	D3dkmddi.h
+apiname:
+-	DxgkDdiResetEngine
+product: Windows
+targetos: Windows
+req.typenames: DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
 

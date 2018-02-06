@@ -1,42 +1,50 @@
 ---
-UID : NF:wdfregistry.WdfRegistryAssignUnicodeString
-title : WdfRegistryAssignUnicodeString function
-author : windows-driver-content
-description : The WdfRegistryAssignUnicodeString method assigns a specified Unicode string to a specified value name in the registry.
-old-location : wdf\wdfregistryassignunicodestring.htm
-old-project : wdf
-ms.assetid : 3a614b58-8230-4137-aae9-5c50e94bea5e
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : kmdf.wdfregistryassignunicodestring, PFN_WDFREGISTRYASSIGNUNICODESTRING, DFRegKeyObjectRef_83d456aa-06de-47c9-94df-b5b9684a95ac.xml, WdfRegistryAssignUnicodeString, WdfRegistryAssignUnicodeString method, wdfregistry/WdfRegistryAssignUnicodeString, wdf.wdfregistryassignunicodestring
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfregistry.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_QUERY_INTERFACE_CONFIG, *PWDF_QUERY_INTERFACE_CONFIG
-req.product : Windows 10 or later.
+UID: NF:wdfregistry.WdfRegistryAssignUnicodeString
+title: WdfRegistryAssignUnicodeString function
+author: windows-driver-content
+description: The WdfRegistryAssignUnicodeString method assigns a specified Unicode string to a specified value name in the registry.
+old-location: wdf\wdfregistryassignunicodestring.htm
+old-project: wdf
+ms.assetid: 3a614b58-8230-4137-aae9-5c50e94bea5e
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: kmdf.wdfregistryassignunicodestring, PFN_WDFREGISTRYASSIGNUNICODESTRING, DFRegKeyObjectRef_83d456aa-06de-47c9-94df-b5b9684a95ac.xml, WdfRegistryAssignUnicodeString, WdfRegistryAssignUnicodeString method, wdfregistry/WdfRegistryAssignUnicodeString, wdf.wdfregistryassignunicodestring
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfregistry.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+-	WUDFx02000.dll
+-	WUDFx02000.dll.dll
+apiname:
+-	WdfRegistryAssignUnicodeString
+product: Windows
+targetos: Windows
+req.typenames: WDF_QUERY_INTERFACE_CONFIG, *PWDF_QUERY_INTERFACE_CONFIG
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:hbapiwmi._GetFCPStatistics_OUT
-title : "_GetFCPStatistics_OUT"
-author : windows-driver-content
-description : The GetFCPStatistics_OUT structure is used by the miniport driver to report the output parameters of the GetFCPStatistics WMI method.
-old-location : storage\getfcpstatistics_out.htm
-old-project : storage
-ms.assetid : 150773a3-a3a9-41a7-9985-4387bba5a766
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : hbapiwmi/PGetFCPStatistics_OUT, *PGetFCPStatistics_OUT, PGetFCPStatistics_OUT, _GetFCPStatistics_OUT, PGetFCPStatistics_OUT structure pointer [Storage Devices], GetFCPStatistics_OUT structure [Storage Devices], storage.getfcpstatistics_out, structs-Fibre_cb7a0157-9213-4c4f-adbe-5855d8cca225.xml, hbapiwmi/GetFCPStatistics_OUT, GetFCPStatistics_OUT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : hbapiwmi.h
-req.include-header : Hbapiwmi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PGetFCPStatistics_OUT, GetFCPStatistics_OUT"
+UID: NS:hbapiwmi._GetFCPStatistics_OUT
+title: "_GetFCPStatistics_OUT"
+author: windows-driver-content
+description: The GetFCPStatistics_OUT structure is used by the miniport driver to report the output parameters of the GetFCPStatistics WMI method.
+old-location: storage\getfcpstatistics_out.htm
+old-project: storage
+ms.assetid: 150773a3-a3a9-41a7-9985-4387bba5a766
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: hbapiwmi/PGetFCPStatistics_OUT, *PGetFCPStatistics_OUT, PGetFCPStatistics_OUT, _GetFCPStatistics_OUT, PGetFCPStatistics_OUT structure pointer [Storage Devices], GetFCPStatistics_OUT structure [Storage Devices], storage.getfcpstatistics_out, structs-Fibre_cb7a0157-9213-4c4f-adbe-5855d8cca225.xml, hbapiwmi/GetFCPStatistics_OUT, GetFCPStatistics_OUT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: hbapiwmi.h
+req.include-header: Hbapiwmi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hbapiwmi.h
+apiname:
+-	GetFCPStatistics_OUT
+product: Windows
+targetos: Windows
+req.typenames: "*PGetFCPStatistics_OUT, GetFCPStatistics_OUT"
 ---
 
 # _GetFCPStatistics_OUT structure

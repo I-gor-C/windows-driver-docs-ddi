@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.IoRegisterPlugPlayNotification
-title : IoRegisterPlugPlayNotification function
-author : windows-driver-content
-description : The IoRegisterPlugPlayNotification routine registers a Plug and Play (PnP) notification callback routine to be called when a PnP event of the specified category occurs.
-old-location : kernel\ioregisterplugplaynotification.htm
-old-project : kernel
-ms.assetid : 06fd10ab-3478-4b01-b678-24944f17fa9d
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.ioregisterplugplaynotification, k104_2210e60c-f9ca-4848-8aab-7b01d2d2ffd7.xml, IoRegisterPlugPlayNotification, wdm/IoRegisterPlugPlayNotification, IoRegisterPlugPlayNotification routine [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : MarkPower, MarkPowerDown, MarkQueryRelations, MarkStartDevice, PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.IoRegisterPlugPlayNotification
+title: IoRegisterPlugPlayNotification function
+author: windows-driver-content
+description: The IoRegisterPlugPlayNotification routine registers a Plug and Play (PnP) notification callback routine to be called when a PnP event of the specified category occurs.
+old-location: kernel\ioregisterplugplaynotification.htm
+old-project: kernel
+ms.assetid: 06fd10ab-3478-4b01-b678-24944f17fa9d
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.ioregisterplugplaynotification, k104_2210e60c-f9ca-4848-8aab-7b01d2d2ffd7.xml, IoRegisterPlugPlayNotification, wdm/IoRegisterPlugPlayNotification, IoRegisterPlugPlayNotification routine [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: MarkPower, MarkPowerDown, MarkQueryRelations, MarkStartDevice, PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoRegisterPlugPlayNotification
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NF:ntddk.PsRemoveLoadImageNotifyRoutine
-title : PsRemoveLoadImageNotifyRoutine function
-author : windows-driver-content
-description : The PsRemoveLoadImageNotifyRoutine routine removes a callback routine that was registered by the PsSetLoadImageNotifyRoutine routine.
-old-location : kernel\psremoveloadimagenotifyroutine.htm
-old-project : kernel
-ms.assetid : 5491f9fb-8f87-41ed-9629-18318554ad90
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : k108_50aeae5b-9276-4e93-8192-70a51bd87ab4.xml, PsRemoveLoadImageNotifyRoutine routine [Kernel-Mode Driver Architecture], ntddk/PsRemoveLoadImageNotifyRoutine, PsRemoveLoadImageNotifyRoutine, kernel.psremoveloadimagenotifyroutine
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<=APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.PsRemoveLoadImageNotifyRoutine
+title: PsRemoveLoadImageNotifyRoutine function
+author: windows-driver-content
+description: The PsRemoveLoadImageNotifyRoutine routine removes a callback routine that was registered by the PsSetLoadImageNotifyRoutine routine.
+old-location: kernel\psremoveloadimagenotifyroutine.htm
+old-project: kernel
+ms.assetid: 5491f9fb-8f87-41ed-9629-18318554ad90
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: k108_50aeae5b-9276-4e93-8192-70a51bd87ab4.xml, PsRemoveLoadImageNotifyRoutine routine [Kernel-Mode Driver Architecture], ntddk/PsRemoveLoadImageNotifyRoutine, PsRemoveLoadImageNotifyRoutine, kernel.psremoveloadimagenotifyroutine
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<=APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	PsRemoveLoadImageNotifyRoutine
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

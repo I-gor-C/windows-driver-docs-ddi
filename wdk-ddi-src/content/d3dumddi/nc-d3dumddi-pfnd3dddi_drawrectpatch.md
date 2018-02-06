@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_DRAWRECTPATCH
-title : PFND3DDDI_DRAWRECTPATCH
-author : windows-driver-content
-description : The DrawRectPatch function draws a new or cached rectangular patch or updates the specification of a previously defined patch.
-old-location : display\drawrectpatch.htm
-old-project : display
-ms.assetid : c0e3046c-f2af-4406-ac5a-c3e44f40b1fd
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.drawrectpatch, DrawRectPatch callback function [Display Devices], DrawRectPatch, PFND3DDDI_DRAWRECTPATCH, PFND3DDDI_DRAWRECTPATCH, d3dumddi/DrawRectPatch, UserModeDisplayDriver_Functions_a32bf010-d5a9-4cf7-b885-4f0fb407a4ad.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_DRAWRECTPATCH
+title: PFND3DDDI_DRAWRECTPATCH
+author: windows-driver-content
+description: The DrawRectPatch function draws a new or cached rectangular patch or updates the specification of a previously defined patch.
+old-location: display\drawrectpatch.htm
+old-project: display
+ms.assetid: c0e3046c-f2af-4406-ac5a-c3e44f40b1fd
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.drawrectpatch, DrawRectPatch callback function [Display Devices], DrawRectPatch, PFND3DDDI_DRAWRECTPATCH, PFND3DDDI_DRAWRECTPATCH, d3dumddi/DrawRectPatch, UserModeDisplayDriver_Functions_a32bf010-d5a9-4cf7-b885-4f0fb407a4ad.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	DrawRectPatch
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

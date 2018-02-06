@@ -1,42 +1,47 @@
 ---
-UID : NF:storport.StorPortGetCurrentProcessorNumber
-title : StorPortGetCurrentProcessorNumber function
-author : windows-driver-content
-description : The StorPortGetCurrentProcessorNumber routine retrieves the current processor number from the kernel.
-old-location : storage\storportgetcurrentprocessornumber.htm
-old-project : storage
-ms.assetid : 10d77823-fcaa-43c3-b55e-74f2da97ecf0
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : StorPortGetCurrentProcessorNumber routine [Storage Devices], storport/StorPortGetCurrentProcessorNumber, storage.storportgetcurrentprocessornumber, StorPortGetCurrentProcessorNumber, storprt_ac4d7e8b-eeb7-4b10-9c9e-cfe9acfddb24.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 7.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : StorPortIrql
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STOR_SPINLOCK
-req.product : Windows 10 or later.
+UID: NF:storport.StorPortGetCurrentProcessorNumber
+title: StorPortGetCurrentProcessorNumber function
+author: windows-driver-content
+description: The StorPortGetCurrentProcessorNumber routine retrieves the current processor number from the kernel.
+old-location: storage\storportgetcurrentprocessornumber.htm
+old-project: storage
+ms.assetid: 10d77823-fcaa-43c3-b55e-74f2da97ecf0
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: StorPortGetCurrentProcessorNumber routine [Storage Devices], storport/StorPortGetCurrentProcessorNumber, storage.storportgetcurrentprocessornumber, StorPortGetCurrentProcessorNumber, storprt_ac4d7e8b-eeb7-4b10-9c9e-cfe9acfddb24.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 7.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: StorPortIrql
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	storport.h
+apiname:
+-	StorPortGetCurrentProcessorNumber
+product: Windows
+targetos: Windows
+req.typenames: STOR_SPINLOCK
+req.product: Windows 10 or later.
 ---
 
 

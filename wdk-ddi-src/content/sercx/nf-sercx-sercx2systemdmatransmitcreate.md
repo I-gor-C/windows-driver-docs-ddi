@@ -1,42 +1,47 @@
 ---
-UID : NF:sercx.SerCx2SystemDmaTransmitCreate
-title : SerCx2SystemDmaTransmitCreate function
-author : windows-driver-content
-description : The SerCx2SystemDmaTransmitCreate method creates a SerCx2 system-DMA-transmit object, which version 2 of the serial framework extension (SerCx2) uses to perform system-DMA-transmit transactions.
-old-location : serports\sercx2systemdmatransmitcreate.htm
-old-project : serports
-ms.assetid : CD0FA4A2-9E09-4F76-A332-858CC5D61651
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : serports.sercx2systemdmatransmitcreate, SerCx2SystemDmaTransmitCreate method [Serial Ports], 2/SerCx2SystemDmaTransmitCreate, SerCx2SystemDmaTransmitCreate
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : sercx.h
-req.include-header : 
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 8.1.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSERCX_STATUS, SERCX_STATUS"
-req.product : Windows 10 or later.
+UID: NF:sercx.SerCx2SystemDmaTransmitCreate
+title: SerCx2SystemDmaTransmitCreate function
+author: windows-driver-content
+description: The SerCx2SystemDmaTransmitCreate method creates a SerCx2 system-DMA-transmit object, which version 2 of the serial framework extension (SerCx2) uses to perform system-DMA-transmit transactions.
+old-location: serports\sercx2systemdmatransmitcreate.htm
+old-project: serports
+ms.assetid: CD0FA4A2-9E09-4F76-A332-858CC5D61651
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: serports.sercx2systemdmatransmitcreate, SerCx2SystemDmaTransmitCreate method [Serial Ports], 2/SerCx2SystemDmaTransmitCreate, SerCx2SystemDmaTransmitCreate
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: sercx.h
+req.include-header: 
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 8.1.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	2.0\Sercx.h
+apiname:
+-	SerCx2SystemDmaTransmitCreate
+product: Windows
+targetos: Windows
+req.typenames: "*PSERCX_STATUS, SERCX_STATUS"
+req.product: Windows 10 or later.
 ---
 
 

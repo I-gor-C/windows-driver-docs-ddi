@@ -1,41 +1,46 @@
 ---
-UID : NC:ntddk.PSHED_PI_ATTEMPT_ERROR_RECOVERY
-title : PSHED_PI_ATTEMPT_ERROR_RECOVERY
-author : windows-driver-content
-description : A PSHED plug-in's AttemptRecovery callback function attempts to recover from a recoverable hardware error.
-old-location : whea\attemptrecovery.htm
-old-project : whea
-ms.assetid : e7186c16-f093-4a64-aa25-03e9ce0f967e
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : whea.attemptrecovery, AttemptRecovery callback function [WHEA Drivers and Applications], AttemptRecovery, PSHED_PI_ATTEMPT_ERROR_RECOVERY, PSHED_PI_ATTEMPT_ERROR_RECOVERY, ntddk/AttemptRecovery, whearef_e6307253-0f45-4613-b384-ad737da27031.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= HIGH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PFILTER_INITIALIZATION_DATA, FILTER_INITIALIZATION_DATA"
+UID: NC:ntddk.PSHED_PI_ATTEMPT_ERROR_RECOVERY
+title: PSHED_PI_ATTEMPT_ERROR_RECOVERY
+author: windows-driver-content
+description: A PSHED plug-in's AttemptRecovery callback function attempts to recover from a recoverable hardware error.
+old-location: whea\attemptrecovery.htm
+old-project: whea
+ms.assetid: e7186c16-f093-4a64-aa25-03e9ce0f967e
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: whea.attemptrecovery, AttemptRecovery callback function [WHEA Drivers and Applications], AttemptRecovery, PSHED_PI_ATTEMPT_ERROR_RECOVERY, PSHED_PI_ATTEMPT_ERROR_RECOVERY, ntddk/AttemptRecovery, whearef_e6307253-0f45-4613-b384-ad737da27031.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= HIGH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ntddk.h
+apiname:
+-	AttemptRecovery
+product: Windows
+targetos: Windows
+req.typenames: "*PFILTER_INITIALIZATION_DATA, FILTER_INITIALIZATION_DATA"
 ---
 
 

@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsStreamPointerScheduleTimeout
-title : KsStreamPointerScheduleTimeout function
-author : windows-driver-content
-description : The KsStreamPointerScheduleTimeout function registers a timeout callback with AVStream for the given stream pointer.
-old-location : stream\ksstreampointerscheduletimeout.htm
-old-project : stream
-ms.assetid : 143c4ca2-91ae-49c3-80e0-e7959e4bd297
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : avfunc_bde904b2-cfb8-45d1-80a1-ef1046d60276.xml, ks/KsStreamPointerScheduleTimeout, KsStreamPointerScheduleTimeout function [Streaming Media Devices], KsStreamPointerScheduleTimeout, stream.ksstreampointerscheduletimeout
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsStreamPointerScheduleTimeout
+title: KsStreamPointerScheduleTimeout function
+author: windows-driver-content
+description: The KsStreamPointerScheduleTimeout function registers a timeout callback with AVStream for the given stream pointer.
+old-location: stream\ksstreampointerscheduletimeout.htm
+old-project: stream
+ms.assetid: 143c4ca2-91ae-49c3-80e0-e7959e4bd297
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: avfunc_bde904b2-cfb8-45d1-80a1-ef1046d60276.xml, ks/KsStreamPointerScheduleTimeout, KsStreamPointerScheduleTimeout function [Streaming Media Devices], KsStreamPointerScheduleTimeout, stream.ksstreampointerscheduletimeout
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsStreamPointerScheduleTimeout
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

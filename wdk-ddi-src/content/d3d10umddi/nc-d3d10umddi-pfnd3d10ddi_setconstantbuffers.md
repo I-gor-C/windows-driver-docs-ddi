@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3D10DDI_SETCONSTANTBUFFERS
-title : PFND3D10DDI_SETCONSTANTBUFFERS
-author : windows-driver-content
-description : The CsSetConstantBuffers function sets constant buffers for a compute shader.
-old-location : display\cssetconstantbuffers.htm
-old-project : display
-ms.assetid : 159ee0ac-7ddf-4ffd-a07f-3d58130b90e8
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.cssetconstantbuffers, CsSetConstantBuffers callback function [Display Devices], CsSetConstantBuffers, PFND3D10DDI_SETCONSTANTBUFFERS, PFND3D10DDI_SETCONSTANTBUFFERS, d3d10umddi/CsSetConstantBuffers, UserModeDisplayDriverDx11_Functions_ae0b7e35-f8c5-428d-97d0-e22d5b609c72.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : CsSetConstantBuffers is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3D10DDI_SETCONSTANTBUFFERS
+title: PFND3D10DDI_SETCONSTANTBUFFERS
+author: windows-driver-content
+description: The CsSetConstantBuffers function sets constant buffers for a compute shader.
+old-location: display\cssetconstantbuffers.htm
+old-project: display
+ms.assetid: 159ee0ac-7ddf-4ffd-a07f-3d58130b90e8
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.cssetconstantbuffers, CsSetConstantBuffers callback function [Display Devices], CsSetConstantBuffers, PFND3D10DDI_SETCONSTANTBUFFERS, PFND3D10DDI_SETCONSTANTBUFFERS, d3d10umddi/CsSetConstantBuffers, UserModeDisplayDriverDx11_Functions_ae0b7e35-f8c5-428d-97d0-e22d5b609c72.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: CsSetConstantBuffers is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	CsSetConstantBuffers
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

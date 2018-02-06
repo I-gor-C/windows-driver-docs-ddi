@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfrequest.WdfRequestForwardToParentDeviceIoQueue
-title : WdfRequestForwardToParentDeviceIoQueue function
-author : windows-driver-content
-description : The WdfRequestForwardToParentDeviceIoQueue method requeues an I/O request from a child device's I/O queue to a specified I/O queue of the child's parent device.
-old-location : wdf\wdfrequestforwardtoparentdeviceioqueue.htm
-old-project : wdf
-ms.assetid : 81511d81-206c-420b-a956-42cf68b57fc4
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WdfRequestForwardToParentDeviceIoQueue, DFRequestObjectRef_0bfa4a8a-7b79-4256-84df-5bdabfff234b.xml, wdfrequest/WdfRequestForwardToParentDeviceIoQueue, PFN_WDFREQUESTFORWARDTOPARENTDEVICEIOQUEUE, WdfRequestForwardToParentDeviceIoQueue method, wdf.wdfrequestforwardtoparentdeviceioqueue, kmdf.wdfrequestforwardtoparentdeviceioqueue
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfrequest.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.9
-req.umdf-ver : 
-req.ddi-compliance : DriverCreate
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_REQUEST_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfrequest.WdfRequestForwardToParentDeviceIoQueue
+title: WdfRequestForwardToParentDeviceIoQueue function
+author: windows-driver-content
+description: The WdfRequestForwardToParentDeviceIoQueue method requeues an I/O request from a child device's I/O queue to a specified I/O queue of the child's parent device.
+old-location: wdf\wdfrequestforwardtoparentdeviceioqueue.htm
+old-project: wdf
+ms.assetid: 81511d81-206c-420b-a956-42cf68b57fc4
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WdfRequestForwardToParentDeviceIoQueue, DFRequestObjectRef_0bfa4a8a-7b79-4256-84df-5bdabfff234b.xml, wdfrequest/WdfRequestForwardToParentDeviceIoQueue, PFN_WDFREQUESTFORWARDTOPARENTDEVICEIOQUEUE, WdfRequestForwardToParentDeviceIoQueue method, wdf.wdfrequestforwardtoparentdeviceioqueue, kmdf.wdfrequestforwardtoparentdeviceioqueue
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfrequest.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.9
+req.umdf-ver: 
+req.ddi-compliance: DriverCreate
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfRequestForwardToParentDeviceIoQueue
+product: Windows
+targetos: Windows
+req.typenames: WDF_REQUEST_TYPE
+req.product: Windows 10 or later.
 ---
 
 

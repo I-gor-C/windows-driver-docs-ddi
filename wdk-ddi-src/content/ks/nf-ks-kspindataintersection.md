@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsPinDataIntersection
-title : KsPinDataIntersection function
-author : windows-driver-content
-description : The KsPinDataIntersection function handles the KSPROPERTY_PIN_DATAINTERSECTION property through a callback function and performs much of the initial validation of the parameters that are passed.
-old-location : stream\kspindataintersection.htm
-old-project : stream
-ms.assetid : e4bf090d-35ec-42fd-8b6e-ce51734adba5
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.kspindataintersection, KsPinDataIntersection function [Streaming Media Devices], ks/KsPinDataIntersection, KsPinDataIntersection, ksfunc_33b743b3-4045-49cb-a5d4-f6aede715223.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsPinDataIntersection
+title: KsPinDataIntersection function
+author: windows-driver-content
+description: The KsPinDataIntersection function handles the KSPROPERTY_PIN_DATAINTERSECTION property through a callback function and performs much of the initial validation of the parameters that are passed.
+old-location: stream\kspindataintersection.htm
+old-project: stream
+ms.assetid: e4bf090d-35ec-42fd-8b6e-ce51734adba5
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.kspindataintersection, KsPinDataIntersection function [Streaming Media Devices], ks/KsPinDataIntersection, KsPinDataIntersection, ksfunc_33b743b3-4045-49cb-a5d4-f6aede715223.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsPinDataIntersection
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddmmc._FEATURE_DATA_WRITE_ONCE
-title : "_FEATURE_DATA_WRITE_ONCE"
-author : windows-driver-content
-description : The FEATURE_DATA_WRITE_ONCE structure holds information for the Write Once feature.
-old-location : storage\feature_data_write_once.htm
-old-project : storage
-ms.assetid : d8352a73-6b3e-4890-a4ae-000d453d1143
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : "_FEATURE_DATA_WRITE_ONCE, PFEATURE_DATA_WRITE_ONCE, structs-CD-ROM_d10e83bf-73ef-43e2-901f-20ca3edea1ac.xml, storage.feature_data_write_once, ntddmmc/PFEATURE_DATA_WRITE_ONCE, PFEATURE_DATA_WRITE_ONCE structure pointer [Storage Devices], ntddmmc/FEATURE_DATA_WRITE_ONCE, *PFEATURE_DATA_WRITE_ONCE, FEATURE_DATA_WRITE_ONCE structure [Storage Devices], FEATURE_DATA_WRITE_ONCE"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddmmc.h
-req.include-header : Ntddcdrm.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FEATURE_DATA_WRITE_ONCE, *PFEATURE_DATA_WRITE_ONCE
+UID: NS:ntddmmc._FEATURE_DATA_WRITE_ONCE
+title: "_FEATURE_DATA_WRITE_ONCE"
+author: windows-driver-content
+description: The FEATURE_DATA_WRITE_ONCE structure holds information for the Write Once feature.
+old-location: storage\feature_data_write_once.htm
+old-project: storage
+ms.assetid: d8352a73-6b3e-4890-a4ae-000d453d1143
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: "_FEATURE_DATA_WRITE_ONCE, PFEATURE_DATA_WRITE_ONCE, structs-CD-ROM_d10e83bf-73ef-43e2-901f-20ca3edea1ac.xml, storage.feature_data_write_once, ntddmmc/PFEATURE_DATA_WRITE_ONCE, PFEATURE_DATA_WRITE_ONCE structure pointer [Storage Devices], ntddmmc/FEATURE_DATA_WRITE_ONCE, *PFEATURE_DATA_WRITE_ONCE, FEATURE_DATA_WRITE_ONCE structure [Storage Devices], FEATURE_DATA_WRITE_ONCE"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddmmc.h
+req.include-header: Ntddcdrm.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddmmc.h
+apiname:
+-	FEATURE_DATA_WRITE_ONCE
+product: Windows
+targetos: Windows
+req.typenames: FEATURE_DATA_WRITE_ONCE, *PFEATURE_DATA_WRITE_ONCE
 ---
 
 # _FEATURE_DATA_WRITE_ONCE structure

@@ -1,41 +1,46 @@
 ---
-UID : NF:portcls.IMiniportWavePciStream.MappingAvailable
-title : IMiniportWavePciStream::MappingAvailable method
-author : windows-driver-content
-description : The MappingAvailable method indicates that a new mapping is available.
-old-location : audio\iminiportwavepcistream_mappingavailable.htm
-old-project : audio
-ms.assetid : 11126cc9-43a1-41b1-adc9-13af57157d74
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : audio.iminiportwavepcistream_mappingavailable, IMiniportWavePciStream interface [Audio Devices], MappingAvailable method, MappingAvailable method [Audio Devices], IMiniportWavePciStream, audmp-routines_931efc43-ec71-4b60-905a-47ec374da31e.xml, MappingAvailable method [Audio Devices], IMiniportWavePciStream interface, IMiniportWavePciStream::MappingAvailable, portcls/IMiniportWavePciStream::MappingAvailable, MappingAvailable
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : portcls.h
-req.include-header : Portcls.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : portcls.h
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL (see Remarks section)"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.IMiniportWavePciStream.MappingAvailable
+title: IMiniportWavePciStream::MappingAvailable method
+author: windows-driver-content
+description: The MappingAvailable method indicates that a new mapping is available.
+old-location: audio\iminiportwavepcistream_mappingavailable.htm
+old-project: audio
+ms.assetid: 11126cc9-43a1-41b1-adc9-13af57157d74
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: audio.iminiportwavepcistream_mappingavailable, IMiniportWavePciStream interface [Audio Devices], MappingAvailable method, MappingAvailable method [Audio Devices], IMiniportWavePciStream, audmp-routines_931efc43-ec71-4b60-905a-47ec374da31e.xml, MappingAvailable method [Audio Devices], IMiniportWavePciStream interface, IMiniportWavePciStream::MappingAvailable, portcls/IMiniportWavePciStream::MappingAvailable, MappingAvailable
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: portcls.h
+req.include-header: Portcls.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: portcls.h
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL (see Remarks section)"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Portcls.h
+apiname:
+-	IMiniportWavePciStream.MappingAvailable
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsPinSubmitFrame
-title : KsPinSubmitFrame function
-author : windows-driver-content
-description : If a pin has been placed into injection mode by a call to KsPinRegisterFrameReturnCallback, the KsPinSubmitFrame function submits a frame directly into the transport circuit.
-old-location : stream\kspinsubmitframe.htm
-old-project : stream
-ms.assetid : 3fdb83b2-85b7-4f86-9a59-a42138000214
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.kspinsubmitframe, avfunc_ce7c4c71-c404-4061-a2e5-b9f4c15df4a2.xml, KsPinSubmitFrame function [Streaming Media Devices], KsPinSubmitFrame, ks/KsPinSubmitFrame
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsPinSubmitFrame
+title: KsPinSubmitFrame function
+author: windows-driver-content
+description: If a pin has been placed into injection mode by a call to KsPinRegisterFrameReturnCallback, the KsPinSubmitFrame function submits a frame directly into the transport circuit.
+old-location: stream\kspinsubmitframe.htm
+old-project: stream
+ms.assetid: 3fdb83b2-85b7-4f86-9a59-a42138000214
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.kspinsubmitframe, avfunc_ce7c4c71-c404-4061-a2e5-b9f4c15df4a2.xml, KsPinSubmitFrame function [Streaming Media Devices], KsPinSubmitFrame, ks/KsPinSubmitFrame
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsPinSubmitFrame
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

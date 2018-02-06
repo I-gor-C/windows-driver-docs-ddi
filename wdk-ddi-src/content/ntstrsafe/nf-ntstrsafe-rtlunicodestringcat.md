@@ -1,41 +1,47 @@
 ---
-UID : NF:ntstrsafe.RtlUnicodeStringCat
-title : RtlUnicodeStringCat function
-author : windows-driver-content
-description : The RtlUnicodeStringCat function concatenates two strings that are contained in UNICODE_STRING structures.
-old-location : kernel\rtlunicodestringcat.htm
-old-project : kernel
-ms.assetid : 15b9ff74-5ca7-4459-af02-b6dc7cd201bf
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : RtlUnicodeStringCat function [Kernel-Mode Driver Architecture], kernel.rtlunicodestringcat, safestrings_5d3ef5c7-f2cd-4de8-a043-5474c803183c.xml, RtlUnicodeStringCat, ntstrsafe/RtlUnicodeStringCat
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntstrsafe.h
-req.include-header : Ntstrsafe.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows XP with Service Pack 1 (SP1) and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ntstrsafe.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : BATTERY_REPORTING_SCALE, *PBATTERY_REPORTING_SCALE
+UID: NF:ntstrsafe.RtlUnicodeStringCat
+title: RtlUnicodeStringCat function
+author: windows-driver-content
+description: The RtlUnicodeStringCat function concatenates two strings that are contained in UNICODE_STRING structures.
+old-location: kernel\rtlunicodestringcat.htm
+old-project: kernel
+ms.assetid: 15b9ff74-5ca7-4459-af02-b6dc7cd201bf
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: RtlUnicodeStringCat function [Kernel-Mode Driver Architecture], kernel.rtlunicodestringcat, safestrings_5d3ef5c7-f2cd-4de8-a043-5474c803183c.xml, RtlUnicodeStringCat, ntstrsafe/RtlUnicodeStringCat
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntstrsafe.h
+req.include-header: Ntstrsafe.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows XP with Service Pack 1 (SP1) and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ntstrsafe.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ntstrsafe.lib
+-	Ntstrsafe.dll
+apiname:
+-	RtlUnicodeStringCat
+product: Windows
+targetos: Windows
+req.typenames: BATTERY_REPORTING_SCALE, *PBATTERY_REPORTING_SCALE
 ---
 
 

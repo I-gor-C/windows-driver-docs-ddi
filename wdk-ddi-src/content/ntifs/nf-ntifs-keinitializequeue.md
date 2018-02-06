@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.KeInitializeQueue
-title : KeInitializeQueue function
-author : windows-driver-content
-description : The KeInitializeQueue routine initializes a queue object on which threads can wait for entries.
-old-location : ifsk\keinitializequeue.htm
-old-project : ifsk
-ms.assetid : 8dd47333-679a-482b-bd45-1e73505b3fea
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ntifs/KeInitializeQueue, KeInitializeQueue, keref_85ea0829-c42c-4411-8ad9-a32d8eb0a40f.xml, KeInitializeQueue routine [Installable File System Drivers], ifsk.keinitializequeue
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.KeInitializeQueue
+title: KeInitializeQueue function
+author: windows-driver-content
+description: The KeInitializeQueue routine initializes a queue object on which threads can wait for entries.
+old-location: ifsk\keinitializequeue.htm
+old-project: ifsk
+ms.assetid: 8dd47333-679a-482b-bd45-1e73505b3fea
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ntifs/KeInitializeQueue, KeInitializeQueue, keref_85ea0829-c42c-4411-8ad9-a32d8eb0a40f.xml, KeInitializeQueue routine [Installable File System Drivers], ifsk.keinitializequeue
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	KeInitializeQueue
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

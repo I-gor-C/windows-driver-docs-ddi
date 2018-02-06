@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmthk._D3DKMT_WORKINGSETINFO
-title : "_D3DKMT_WORKINGSETINFO"
-author : windows-driver-content
-description : The D3DKMT_WORKINGSETINFO structure describes information about the graphics adapter's working set that the OpenGL installable client driver (ICD) obtains by calling the D3DKMTQueryAdapterInfo function.
-old-location : display\d3dkmt_workingsetinfo.htm
-old-project : display
-ms.assetid : 1a5b75e4-abdd-4916-b2b5-4dbb53a525ae
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DKMT_WORKINGSETINFO, OpenGL_Structs_a3992911-10eb-48fe-a755-fe14e68fbaa8.xml, d3dkmthk/D3DKMT_WORKINGSETINFO, _D3DKMT_WORKINGSETINFO, D3DKMT_WORKINGSETINFO structure [Display Devices], display.d3dkmt_workingsetinfo
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_WORKINGSETINFO
+UID: NS:d3dkmthk._D3DKMT_WORKINGSETINFO
+title: "_D3DKMT_WORKINGSETINFO"
+author: windows-driver-content
+description: The D3DKMT_WORKINGSETINFO structure describes information about the graphics adapter's working set that the OpenGL installable client driver (ICD) obtains by calling the D3DKMTQueryAdapterInfo function.
+old-location: display\d3dkmt_workingsetinfo.htm
+old-project: display
+ms.assetid: 1a5b75e4-abdd-4916-b2b5-4dbb53a525ae
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DKMT_WORKINGSETINFO, OpenGL_Structs_a3992911-10eb-48fe-a755-fe14e68fbaa8.xml, d3dkmthk/D3DKMT_WORKINGSETINFO, _D3DKMT_WORKINGSETINFO, D3DKMT_WORKINGSETINFO structure [Display Devices], display.d3dkmt_workingsetinfo
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmthk.h
+apiname:
+-	D3DKMT_WORKINGSETINFO
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_WORKINGSETINFO
 ---
 
 # _D3DKMT_WORKINGSETINFO structure

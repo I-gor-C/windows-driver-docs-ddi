@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._DXVAHDDDI_VPDEVCAPS
-title : "_DXVAHDDDI_VPDEVCAPS"
-author : windows-driver-content
-description : The DXVAHDDDI_VPDEVCAPS structure describes the video processor capabilities that the decode device supports.
-old-location : display\dxvahdddi_vpdevcaps.htm
-old-project : display
-ms.assetid : 25b15c20-e23a-438f-a02e-aedc26498828
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DXVAHDDDI_DEVICE_CAPS, DXVAHDDDI_VPDEVCAPS structure [Display Devices], d3dumddi/DXVAHDDDI_VPDEVCAPS, display.dxvahdddi_vpdevcaps, DXVAHDDDI_INPUT_FORMAT_CAPS, DXVAHDDDI_FEATURE_CAPS, _DXVAHDDDI_VPDEVCAPS, DXVAHDDDI_FILTER_CAPS, DXVAHDDDI_VPDEVCAPS, DXVA2_Structs_263db2a4-3026-44e3-a2b7-82cbf773bfa5.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : DXVAHDDDI_VPDEVCAPS is supported starting with Windows 7.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXVAHDDDI_VPDEVCAPS
+UID: NS:d3dumddi._DXVAHDDDI_VPDEVCAPS
+title: "_DXVAHDDDI_VPDEVCAPS"
+author: windows-driver-content
+description: The DXVAHDDDI_VPDEVCAPS structure describes the video processor capabilities that the decode device supports.
+old-location: display\dxvahdddi_vpdevcaps.htm
+old-project: display
+ms.assetid: 25b15c20-e23a-438f-a02e-aedc26498828
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DXVAHDDDI_DEVICE_CAPS, DXVAHDDDI_VPDEVCAPS structure [Display Devices], d3dumddi/DXVAHDDDI_VPDEVCAPS, display.dxvahdddi_vpdevcaps, DXVAHDDDI_INPUT_FORMAT_CAPS, DXVAHDDDI_FEATURE_CAPS, _DXVAHDDDI_VPDEVCAPS, DXVAHDDDI_FILTER_CAPS, DXVAHDDDI_VPDEVCAPS, DXVA2_Structs_263db2a4-3026-44e3-a2b7-82cbf773bfa5.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: DXVAHDDDI_VPDEVCAPS is supported starting with Windows 7.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	DXVAHDDDI_VPDEVCAPS
+product: Windows
+targetos: Windows
+req.typenames: DXVAHDDDI_VPDEVCAPS
 ---
 
 # _DXVAHDDDI_VPDEVCAPS structure

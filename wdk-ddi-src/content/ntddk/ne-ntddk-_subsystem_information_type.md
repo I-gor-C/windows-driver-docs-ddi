@@ -1,41 +1,46 @@
 ---
-UID : NE:ntddk._SUBSYSTEM_INFORMATION_TYPE
-title : "_SUBSYSTEM_INFORMATION_TYPE"
-author : windows-driver-content
-description : Indicates the type of subsystem for a process or thread. This enumeration is used in NtQueryInformationProcess and NtQueryInformationThread calls.
-old-location : kernel\subsystem_information_type.htm
-old-project : kernel
-ms.assetid : B1E334BF-AAB3-410D-8D10-A750E8459E42
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : "*PSUBSYSTEM_INFORMATION_TYPE, _SUBSYSTEM_INFORMATION_TYPE, SUBSYSTEM_INFORMATION_TYPE enumeration [Kernel-Mode Driver Architecture], SubsystemInformationTypeWSL, SubsystemInformationTypeWin32, ntddk/SubsystemInformationTypeWSL, ntddk/SubsystemInformationTypeWin32, kernel.subsystem_information_type, MaxSubsystemInformationType, ntddk/MaxSubsystemInformationType, SUBSYSTEM_INFORMATION_TYPE, ntddk/SUBSYSTEM_INFORMATION_TYPE"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : ntddk.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSUBSYSTEM_INFORMATION_TYPE, SUBSYSTEM_INFORMATION_TYPE"
+UID: NE:ntddk._SUBSYSTEM_INFORMATION_TYPE
+title: "_SUBSYSTEM_INFORMATION_TYPE"
+author: windows-driver-content
+description: Indicates the type of subsystem for a process or thread. This enumeration is used in NtQueryInformationProcess and NtQueryInformationThread calls.
+old-location: kernel\subsystem_information_type.htm
+old-project: kernel
+ms.assetid: B1E334BF-AAB3-410D-8D10-A750E8459E42
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: "*PSUBSYSTEM_INFORMATION_TYPE, _SUBSYSTEM_INFORMATION_TYPE, SUBSYSTEM_INFORMATION_TYPE enumeration [Kernel-Mode Driver Architecture], SubsystemInformationTypeWSL, SubsystemInformationTypeWin32, ntddk/SubsystemInformationTypeWSL, ntddk/SubsystemInformationTypeWin32, kernel.subsystem_information_type, MaxSubsystemInformationType, ntddk/MaxSubsystemInformationType, SUBSYSTEM_INFORMATION_TYPE, ntddk/SUBSYSTEM_INFORMATION_TYPE"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: ntddk.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddk.h
+apiname:
+-	SUBSYSTEM_INFORMATION_TYPE
+product: Windows
+targetos: Windows
+req.typenames: "*PSUBSYSTEM_INFORMATION_TYPE, SUBSYSTEM_INFORMATION_TYPE"
 ---
 
 # _SUBSYSTEM_INFORMATION_TYPE Enumeration
@@ -53,26 +58,26 @@ typedef enum _SUBSYSTEM_INFORMATION_TYPE {
 ## Constants
 
 <table>
-
-<tr>
-<td>MaxSubsystemInformationType</td>
-<td>Reserved.</td>
-</tr>
-
-<tr>
-<td>SubsystemInformationTypeWin32</td>
-<td>The subsystem type for the process or thread is Win32.</td>
-</tr>
-
-<tr>
-<td>SubsystemInformationTypeWSL</td>
-<td>The subsystem type for the process or thread is Windows Subsystem for Linux (WSL). For this process, these members of  the <a href="..\ntddk\ns-ntddk-_ps_create_notify_info.md">PS_CREATE_NOTIFY_INFO</a> structure are set as follows:
+            
+                <tr>
+                    <td>MaxSubsystemInformationType</td>
+                    <td>Reserved.</td>
+                </tr>
+            
+                <tr>
+                    <td>SubsystemInformationTypeWin32</td>
+                    <td>The subsystem type for the process or thread is Win32.</td>
+                </tr>
+            
+                <tr>
+                    <td>SubsystemInformationTypeWSL</td>
+                    <td>The subsystem type for the process or thread is Windows Subsystem for Linux (WSL). For this process, these members of  the <a href="..\ntddk\ns-ntddk-_ps_create_notify_info.md">PS_CREATE_NOTIFY_INFO</a> structure are set as follows:
 <ul>
 <li>The <b>FileObject</b> member is the NTFS file object from LxFs or DriveFs, the file system that is used for interoperability with Windows. </li>
 <li>The <b>ImageFileName</b> member is the Linux path of the image file. </li>
 <li>The <b>CommandLine</b> member is the Linux NULL-separated command line. </li>
 </ul> The preceding member values may be NULL.</td>
-</tr>
+                </tr>
 </table>
 
 
@@ -81,9 +86,9 @@ typedef enum _SUBSYSTEM_INFORMATION_TYPE {
 | ---- |:---- |
 | **Header** | ntddk.h |
 
-## See Also
+    ## See Also
 
-<a href="https://msdn.microsoft.com/ca292efc-1ea9-4c0f-b0a7-1cfb35d69f81">NtQueryInformationThread</a>
+        <a href="https://msdn.microsoft.com/ca292efc-1ea9-4c0f-b0a7-1cfb35d69f81">NtQueryInformationThread</a>
 
 <a href="https://msdn.microsoft.com/0eae7899-c40b-4a5f-9e9c-adae021885e7">NtQueryInformationProcess</a>
 

@@ -1,42 +1,47 @@
 ---
-UID : NC:usbcamdi.PCAM_PROCESS_RAW_FRAME_ROUTINE_EX
-title : PCAM_PROCESS_RAW_FRAME_ROUTINE_EX
-author : windows-driver-content
-description : A camera minidriver's CamProcessRawVideoFrameEx callback function decodes a raw video frame.
-old-location : stream\camprocessrawvideoframeex.htm
-old-project : stream
-ms.assetid : 07b0d1ea-c099-474e-8dc8-cddec44836e2
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.camprocessrawvideoframeex, CamProcessRawVideoFrameEx, CamProcessRawVideoFrameEx routine [Streaming Media Devices], CamProcessRawVideoFrameEx, PCAM_PROCESS_RAW_FRAME_ROUTINE_EX, PCAM_PROCESS_RAW_FRAME_ROUTINE_EX, usbcamdi/CamProcessRawVideoFrameEx, usbcmdpr_7ca6e89a-089c-4cf0-83e3-6324357a8566.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : usbcamdi.h
-req.include-header : Usbcamdi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUSB_BUS_INTERFACE_USBDI_V3, USB_BUS_INTERFACE_USBDI_V3"
-req.product : Windows 10 or later.
+UID: NC:usbcamdi.PCAM_PROCESS_RAW_FRAME_ROUTINE_EX
+title: PCAM_PROCESS_RAW_FRAME_ROUTINE_EX
+author: windows-driver-content
+description: A camera minidriver's CamProcessRawVideoFrameEx callback function decodes a raw video frame.
+old-location: stream\camprocessrawvideoframeex.htm
+old-project: stream
+ms.assetid: 07b0d1ea-c099-474e-8dc8-cddec44836e2
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.camprocessrawvideoframeex, CamProcessRawVideoFrameEx, CamProcessRawVideoFrameEx routine [Streaming Media Devices], CamProcessRawVideoFrameEx, PCAM_PROCESS_RAW_FRAME_ROUTINE_EX, PCAM_PROCESS_RAW_FRAME_ROUTINE_EX, usbcamdi/CamProcessRawVideoFrameEx, usbcmdpr_7ca6e89a-089c-4cf0-83e3-6324357a8566.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: usbcamdi.h
+req.include-header: Usbcamdi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	usbcamdi.h
+apiname:
+-	CamProcessRawVideoFrameEx
+product: Windows
+targetos: Windows
+req.typenames: "*PUSB_BUS_INTERFACE_USBDI_V3, USB_BUS_INTERFACE_USBDI_V3"
+req.product: Windows 10 or later.
 ---
 
 

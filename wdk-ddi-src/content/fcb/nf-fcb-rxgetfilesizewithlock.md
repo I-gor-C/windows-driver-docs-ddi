@@ -1,41 +1,46 @@
 ---
-UID : NF:fcb.RxGetFileSizeWithLock
-title : RxGetFileSizeWithLock function
-author : windows-driver-content
-description : RxGetFileSizeWithLock gets the file size in the FCB structure using a lock to ensure that the 64-bit value is read consistently.
-old-location : ifsk\rxgetfilesizewithlock.htm
-old-project : ifsk
-ms.assetid : f58c2a7a-0782-47a7-84e6-98df541c875d
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : RxGetFileSizeWithLock function [Installable File System Drivers], ifsk.rxgetfilesizewithlock, fcb/RxGetFileSizeWithLock, rxref_15aee1e0-d82a-45ea-ad0b-e610347c62fe.xml, RxGetFileSizeWithLock
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fcb.h
-req.include-header : Mrxfcb.h, Fcb.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FA_ENTRY, *PFA_ENTRY
+UID: NF:fcb.RxGetFileSizeWithLock
+title: RxGetFileSizeWithLock function
+author: windows-driver-content
+description: RxGetFileSizeWithLock gets the file size in the FCB structure using a lock to ensure that the 64-bit value is read consistently.
+old-location: ifsk\rxgetfilesizewithlock.htm
+old-project: ifsk
+ms.assetid: f58c2a7a-0782-47a7-84e6-98df541c875d
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: RxGetFileSizeWithLock function [Installable File System Drivers], ifsk.rxgetfilesizewithlock, fcb/RxGetFileSizeWithLock, rxref_15aee1e0-d82a-45ea-ad0b-e610347c62fe.xml, RxGetFileSizeWithLock
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fcb.h
+req.include-header: Mrxfcb.h, Fcb.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	fcb.h
+apiname:
+-	RxGetFileSizeWithLock
+product: Windows
+targetos: Windows
+req.typenames: FA_ENTRY, *PFA_ENTRY
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NS:storport._STOR_LIST_ENTRY
-title : "_STOR_LIST_ENTRY"
-author : windows-driver-content
-description : A STOR_LIST_ENTRY structure describes an entry in a doubly linked list or serves as the header for such a list.
-old-location : storage\stor_list_entry.htm
-old-project : storage
-ms.assetid : 41E713D9-9499-40EB-8B21-DDB73362BAE3
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storport/PSTOR_LIST_ENTRY, PSTOR_LIST_ENTRY, STOR_LIST_ENTRY, _STOR_LIST_ENTRY, *PSTOR_LIST_ENTRY, storport/STOR_LIST_ENTRY, storage.stor_list_entry, STOR_LIST_ENTRY structure [Storage Devices], PSTOR_LIST_ENTRY structure pointer [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STOR_LIST_ENTRY, *PSTOR_LIST_ENTRY
-req.product : Windows 10 or later.
+UID: NS:storport._STOR_LIST_ENTRY
+title: "_STOR_LIST_ENTRY"
+author: windows-driver-content
+description: A STOR_LIST_ENTRY structure describes an entry in a doubly linked list or serves as the header for such a list.
+old-location: storage\stor_list_entry.htm
+old-project: storage
+ms.assetid: 41E713D9-9499-40EB-8B21-DDB73362BAE3
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storport/PSTOR_LIST_ENTRY, PSTOR_LIST_ENTRY, STOR_LIST_ENTRY, _STOR_LIST_ENTRY, *PSTOR_LIST_ENTRY, storport/STOR_LIST_ENTRY, storage.stor_list_entry, STOR_LIST_ENTRY structure [Storage Devices], PSTOR_LIST_ENTRY structure pointer [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	storport.h
+apiname:
+-	STOR_LIST_ENTRY
+product: Windows
+targetos: Windows
+req.typenames: STOR_LIST_ENTRY, *PSTOR_LIST_ENTRY
+req.product: Windows 10 or later.
 ---
 
 # _STOR_LIST_ENTRY structure

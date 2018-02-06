@@ -1,42 +1,48 @@
 ---
-UID : NF:wdm.ClfsReadNextLogRecord
-title : ClfsReadNextLogRecord function
-author : windows-driver-content
-description : The ClfsReadNextLogRecord routine reads the next record in a sequence, relative to the current record in a read context.
-old-location : kernel\clfsreadnextlogrecord.htm
-old-project : kernel
-ms.assetid : 4990f3d7-e48c-49ee-9384-4bcad93c9281
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : Clfs_4e00ce69-12c3-48c1-ba3b-1c85158afc12.xml, ClfsReadNextLogRecord, ClfsReadNextLogRecord routine [Kernel-Mode Driver Architecture], wdm/ClfsReadNextLogRecord, kernel.clfsreadnextlogrecord
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Clfs.lib
-req.dll : Clfs.sys
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ClfsReadNextLogRecord
+title: ClfsReadNextLogRecord function
+author: windows-driver-content
+description: The ClfsReadNextLogRecord routine reads the next record in a sequence, relative to the current record in a read context.
+old-location: kernel\clfsreadnextlogrecord.htm
+old-project: kernel
+ms.assetid: 4990f3d7-e48c-49ee-9384-4bcad93c9281
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: Clfs_4e00ce69-12c3-48c1-ba3b-1c85158afc12.xml, ClfsReadNextLogRecord, ClfsReadNextLogRecord routine [Kernel-Mode Driver Architecture], wdm/ClfsReadNextLogRecord, kernel.clfsreadnextlogrecord
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Clfs.lib
+req.dll: Clfs.sys
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Clfs.sys
+-	Ext-MS-Win-fs-clfs-l1-1-0.dll
+apiname:
+-	ClfsReadNextLogRecord
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

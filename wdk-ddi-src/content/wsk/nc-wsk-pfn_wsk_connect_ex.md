@@ -1,42 +1,47 @@
 ---
-UID : NC:wsk.PFN_WSK_CONNECT_EX
-title : PFN_WSK_CONNECT_EX
-author : windows-driver-content
-description : The WskConnectEx function connects a connection-oriented or stream socket to a remote transport address.WskConnectEx is similar to WskConnect except that it can also optionally send a buffer of data during or after connection synchronization.
-old-location : netvista\wskconnectex.htm
-old-project : netvista
-ms.assetid : 1BC518E9-747C-4406-8A2A-40A3BCB0A3AA
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.wskconnectex, WskConnectEx callback function [Network Drivers Starting with Windows Vista], WskConnectEx, PFN_WSK_CONNECT_EX, PFN_WSK_CONNECT_EX, wsk/WskConnectEx
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wsk.h
-req.include-header : Wsk.h
-req.target-type : Universal
-req.target-min-winverclnt : Windows 10, version 1703
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WNODE_HEADER, *PWNODE_HEADER
-req.product : Windows 10 or later.
+UID: NC:wsk.PFN_WSK_CONNECT_EX
+title: PFN_WSK_CONNECT_EX
+author: windows-driver-content
+description: The WskConnectEx function connects a connection-oriented or stream socket to a remote transport address.WskConnectEx is similar to WskConnect except that it can also optionally send a buffer of data during or after connection synchronization.
+old-location: netvista\wskconnectex.htm
+old-project: netvista
+ms.assetid: 1BC518E9-747C-4406-8A2A-40A3BCB0A3AA
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.wskconnectex, WskConnectEx callback function [Network Drivers Starting with Windows Vista], WskConnectEx, PFN_WSK_CONNECT_EX, PFN_WSK_CONNECT_EX, wsk/WskConnectEx
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wsk.h
+req.include-header: Wsk.h
+req.target-type: Universal
+req.target-min-winverclnt: Windows 10, version 1703
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	wsk.h
+apiname:
+-	WskConnectEx
+product: Windows
+targetos: Windows
+req.typenames: WNODE_HEADER, *PWNODE_HEADER
+req.product: Windows 10 or later.
 ---
 
 

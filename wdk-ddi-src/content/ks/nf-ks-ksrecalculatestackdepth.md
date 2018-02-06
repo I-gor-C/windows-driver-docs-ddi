@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsRecalculateStackDepth
-title : KsRecalculateStackDepth function
-author : windows-driver-content
-description : The KsRecalculateStackDepth function recalculates the maximum stack depth required by the underlying device object based on all of the objects that have set a target device (they have added themselves to the object list on the underlying device object using the KsSetTargetDeviceObject function). If the PnP device object has been set on the underlying device header using KsSetDevicePnpAndBaseObject, that device is also taken into account when calculating the maximum stack depth.
-old-location : stream\ksrecalculatestackdepth.htm
-old-project : stream
-ms.assetid : 0b8f23a5-af8a-4b99-8f17-092076523914
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KsRecalculateStackDepth function [Streaming Media Devices], ksfunc_745f6176-dc53-467f-885e-028da49b81a1.xml, stream.ksrecalculatestackdepth, ks/KsRecalculateStackDepth, KsRecalculateStackDepth
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsRecalculateStackDepth
+title: KsRecalculateStackDepth function
+author: windows-driver-content
+description: The KsRecalculateStackDepth function recalculates the maximum stack depth required by the underlying device object based on all of the objects that have set a target device (they have added themselves to the object list on the underlying device object using the KsSetTargetDeviceObject function). If the PnP device object has been set on the underlying device header using KsSetDevicePnpAndBaseObject, that device is also taken into account when calculating the maximum stack depth.
+old-location: stream\ksrecalculatestackdepth.htm
+old-project: stream
+ms.assetid: 0b8f23a5-af8a-4b99-8f17-092076523914
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KsRecalculateStackDepth function [Streaming Media Devices], ksfunc_745f6176-dc53-467f-885e-028da49b81a1.xml, stream.ksrecalculatestackdepth, ks/KsRecalculateStackDepth, KsRecalculateStackDepth
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsRecalculateStackDepth
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

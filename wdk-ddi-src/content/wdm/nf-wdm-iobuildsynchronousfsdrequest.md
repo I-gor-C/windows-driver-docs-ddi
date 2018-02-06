@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.IoBuildSynchronousFsdRequest
-title : IoBuildSynchronousFsdRequest function
-author : windows-driver-content
-description : The IoBuildSynchronousFsdRequest routine allocates and sets up an IRP for a synchronously processed I/O request.
-old-location : kernel\iobuildsynchronousfsdrequest.htm
-old-project : kernel
-ms.assetid : b6d257cb-5384-44fe-bcff-67c67439ad08
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/IoBuildSynchronousFsdRequest, IoBuildSynchronousFsdRequest, k104_94704d64-ce8d-4a4d-82e3-974cda66dd54.xml, IoBuildSynchronousFsdRequest routine [Kernel-Mode Driver Architecture], kernel.iobuildsynchronousfsdrequest
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : ForwardedAtBadIrqlFsdSync, IoBuildSynchronousFsdRequestNoFree, IoBuildSynchronousFsdRequestWait, IoBuildSynchronousFsdRequestWaitTimeout, PowerIrpDDis, SignalEventInCompletion, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.IoBuildSynchronousFsdRequest
+title: IoBuildSynchronousFsdRequest function
+author: windows-driver-content
+description: The IoBuildSynchronousFsdRequest routine allocates and sets up an IRP for a synchronously processed I/O request.
+old-location: kernel\iobuildsynchronousfsdrequest.htm
+old-project: kernel
+ms.assetid: b6d257cb-5384-44fe-bcff-67c67439ad08
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/IoBuildSynchronousFsdRequest, IoBuildSynchronousFsdRequest, k104_94704d64-ce8d-4a4d-82e3-974cda66dd54.xml, IoBuildSynchronousFsdRequest routine [Kernel-Mode Driver Architecture], kernel.iobuildsynchronousfsdrequest
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: ForwardedAtBadIrqlFsdSync, IoBuildSynchronousFsdRequestNoFree, IoBuildSynchronousFsdRequestWait, IoBuildSynchronousFsdRequestWaitTimeout, PowerIrpDDis, SignalEventInCompletion, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoBuildSynchronousFsdRequest
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

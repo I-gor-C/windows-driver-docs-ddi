@@ -1,41 +1,46 @@
 ---
-UID : NS:pepfx._PEP_WORK_ACPI_NOTIFY
-title : "_PEP_WORK_ACPI_NOTIFY"
-author : windows-driver-content
-description : The PEP_WORK_ACPI_NOTIFY structure contains the ACPI Notify code for a device that has generated a hardware event.
-old-location : kernel\pep_work_acpi_notify.htm
-old-project : kernel
-ms.assetid : DFFDDF13-B8C7-4AB0-B2C9-9F34D19B21AE
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : pepfx/PEP_WORK_ACPI_NOTIFY, kernel.pep_work_acpi_notify, PPEP_WORK_ACPI_NOTIFY, PPEP_WORK_ACPI_NOTIFY structure pointer [Kernel-Mode Driver Architecture], _PEP_WORK_ACPI_NOTIFY, PEP_WORK_ACPI_NOTIFY, *PPEP_WORK_ACPI_NOTIFY, pepfx/PPEP_WORK_ACPI_NOTIFY, PEP_WORK_ACPI_NOTIFY structure [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : pepfx.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with Windows 10.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPEP_WORK_ACPI_NOTIFY, PEP_WORK_ACPI_NOTIFY"
+UID: NS:pepfx._PEP_WORK_ACPI_NOTIFY
+title: "_PEP_WORK_ACPI_NOTIFY"
+author: windows-driver-content
+description: The PEP_WORK_ACPI_NOTIFY structure contains the ACPI Notify code for a device that has generated a hardware event.
+old-location: kernel\pep_work_acpi_notify.htm
+old-project: kernel
+ms.assetid: DFFDDF13-B8C7-4AB0-B2C9-9F34D19B21AE
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: pepfx/PEP_WORK_ACPI_NOTIFY, kernel.pep_work_acpi_notify, PPEP_WORK_ACPI_NOTIFY, PPEP_WORK_ACPI_NOTIFY structure pointer [Kernel-Mode Driver Architecture], _PEP_WORK_ACPI_NOTIFY, PEP_WORK_ACPI_NOTIFY, *PPEP_WORK_ACPI_NOTIFY, pepfx/PPEP_WORK_ACPI_NOTIFY, PEP_WORK_ACPI_NOTIFY structure [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: pepfx.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows 10.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	pepfx.h
+apiname:
+-	PEP_WORK_ACPI_NOTIFY
+product: Windows
+targetos: Windows
+req.typenames: "*PPEP_WORK_ACPI_NOTIFY, PEP_WORK_ACPI_NOTIFY"
 ---
 
 # _PEP_WORK_ACPI_NOTIFY structure

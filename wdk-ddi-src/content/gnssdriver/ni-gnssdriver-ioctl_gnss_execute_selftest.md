@@ -1,41 +1,46 @@
 ---
-UID : NI:gnssdriver.IOCTL_GNSS_EXECUTE_SELFTEST
-title : IOCTL_GNSS_EXECUTE_SELFTEST
-author : windows-driver-content
-description : The IOCTL_GNSS_EXECUTE_SELFTEST control code is used by the GNSS manufacturing test application to initiate a self test in the GNSS lower stack.
-old-location : sensors\ioctl_gnss_execute_selftest.htm
-old-project : sensors
-ms.assetid : EAD10523-FFA0-4B08-BCBD-A20C90A1B8F6
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : sensors.ioctl_gnss_execute_selftest, IOCTL_GNSS_EXECUTE_SELFTEST control code [Sensor Devices], IOCTL_GNSS_EXECUTE_SELFTEST, gnssdriver/IOCTL_GNSS_EXECUTE_SELFTEST
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : gnssdriver.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : GNSS_SUPL_CERT_ACTION
+UID: NI:gnssdriver.IOCTL_GNSS_EXECUTE_SELFTEST
+title: IOCTL_GNSS_EXECUTE_SELFTEST
+author: windows-driver-content
+description: The IOCTL_GNSS_EXECUTE_SELFTEST control code is used by the GNSS manufacturing test application to initiate a self test in the GNSS lower stack.
+old-location: sensors\ioctl_gnss_execute_selftest.htm
+old-project: sensors
+ms.assetid: EAD10523-FFA0-4B08-BCBD-A20C90A1B8F6
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: sensors.ioctl_gnss_execute_selftest, IOCTL_GNSS_EXECUTE_SELFTEST control code [Sensor Devices], IOCTL_GNSS_EXECUTE_SELFTEST, gnssdriver/IOCTL_GNSS_EXECUTE_SELFTEST
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: gnssdriver.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	gnssdriver.h
+apiname:
+-	IOCTL_GNSS_EXECUTE_SELFTEST
+product: Windows
+targetos: Windows
+req.typenames: GNSS_SUPL_CERT_ACTION
 ---
 
 # IOCTL_GNSS_EXECUTE_SELFTEST IOCTL

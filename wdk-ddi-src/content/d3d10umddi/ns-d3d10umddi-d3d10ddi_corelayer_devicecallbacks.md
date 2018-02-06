@@ -1,41 +1,46 @@
 ---
-UID : NS:d3d10umddi.D3D10DDI_CORELAYER_DEVICECALLBACKS
-title : D3D10DDI_CORELAYER_DEVICECALLBACKS
-author : windows-driver-content
-description : The D3D10DDI_CORELAYER_DEVICECALLBACKS structure contains Microsoft Direct3D 10 runtime callback functions that the user-mode display driver can use.
-old-location : display\d3d10ddi_corelayer_devicecallbacks.htm
-old-project : display
-ms.assetid : cced2221-7e8c-432a-9963-3b1de67037a3
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3d10umddi/D3D10DDI_CORELAYER_DEVICECALLBACKS, D3D10DDI_CORELAYER_DEVICECALLBACKS, D3D10DDI_CORELAYER_DEVICECALLBACKS structure [Display Devices], display.d3d10ddi_corelayer_devicecallbacks, UMDisplayDriver_Dx10param_Structs_4c7782a0-4963-4f18-802e-98c8eb39c1a1.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3D10DDI_CORELAYER_DEVICECALLBACKS
+UID: NS:d3d10umddi.D3D10DDI_CORELAYER_DEVICECALLBACKS
+title: D3D10DDI_CORELAYER_DEVICECALLBACKS
+author: windows-driver-content
+description: The D3D10DDI_CORELAYER_DEVICECALLBACKS structure contains Microsoft Direct3D 10 runtime callback functions that the user-mode display driver can use.
+old-location: display\d3d10ddi_corelayer_devicecallbacks.htm
+old-project: display
+ms.assetid: cced2221-7e8c-432a-9963-3b1de67037a3
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3d10umddi/D3D10DDI_CORELAYER_DEVICECALLBACKS, D3D10DDI_CORELAYER_DEVICECALLBACKS, D3D10DDI_CORELAYER_DEVICECALLBACKS structure [Display Devices], display.d3d10ddi_corelayer_devicecallbacks, UMDisplayDriver_Dx10param_Structs_4c7782a0-4963-4f18-802e-98c8eb39c1a1.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	D3D10DDI_CORELAYER_DEVICECALLBACKS
+product: Windows
+targetos: Windows
+req.typenames: D3D10DDI_CORELAYER_DEVICECALLBACKS
 ---
 
 # D3D10DDI_CORELAYER_DEVICECALLBACKS structure

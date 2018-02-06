@@ -1,41 +1,46 @@
 ---
-UID : NE:ksmedia.KS_TUNER_STRATEGY
-title : KS_TUNER_STRATEGY
-author : windows-driver-content
-description : The KS_TUNER_STRATEGY enumeration defines tuning method strategies.
-old-location : stream\ks_tuner_strategy.htm
-old-project : stream
-ms.assetid : 333b1b11-cc6e-4546-9638-e5dcb4c2607c
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KS_TUNER_STRATEGY_SIGNAL_STRENGTH, ksmedia/KS_TUNER_STRATEGY_SIGNAL_STRENGTH, KS_TUNER_STRATEGY enumeration [Streaming Media Devices], KS_TUNER_STRATEGY_PLL, ksmedia/KS_TUNER_STRATEGY_PLL, ksmedia/KS_TUNER_STRATEGY, KS_TUNER_STRATEGY_DRIVER_TUNES, ksmedia/KS_TUNER_STRATEGY_DRIVER_TUNES, stream.ks_tuner_strategy, KS_TUNER_STRATEGY, vidcapstruct_99c03903-7b57-44ea-8c11-a3017931dfca.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KS_TUNER_STRATEGY
+UID: NE:ksmedia.KS_TUNER_STRATEGY
+title: KS_TUNER_STRATEGY
+author: windows-driver-content
+description: The KS_TUNER_STRATEGY enumeration defines tuning method strategies.
+old-location: stream\ks_tuner_strategy.htm
+old-project: stream
+ms.assetid: 333b1b11-cc6e-4546-9638-e5dcb4c2607c
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KS_TUNER_STRATEGY_SIGNAL_STRENGTH, ksmedia/KS_TUNER_STRATEGY_SIGNAL_STRENGTH, KS_TUNER_STRATEGY enumeration [Streaming Media Devices], KS_TUNER_STRATEGY_PLL, ksmedia/KS_TUNER_STRATEGY_PLL, ksmedia/KS_TUNER_STRATEGY, KS_TUNER_STRATEGY_DRIVER_TUNES, ksmedia/KS_TUNER_STRATEGY_DRIVER_TUNES, stream.ks_tuner_strategy, KS_TUNER_STRATEGY, vidcapstruct_99c03903-7b57-44ea-8c11-a3017931dfca.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	KS_TUNER_STRATEGY
+product: Windows
+targetos: Windows
+req.typenames: KS_TUNER_STRATEGY
 ---
 
 # KS_TUNER_STRATEGY Enumeration
@@ -53,21 +58,21 @@ typedef enum  {
 ## Constants
 
 <table>
-
-<tr>
-<td>KS_TUNER_STRATEGY_DRIVER_TUNES</td>
-<td>The minidriver has total control over the fine tuning process. No fine tuning is done by <i>Kstvtune.ax</i>.</td>
-</tr>
-
-<tr>
-<td>KS_TUNER_STRATEGY_PLL</td>
-<td>The tuning accuracy for the device is measured by a phase locked loop (PLL) offset.</td>
-</tr>
-
-<tr>
-<td>KS_TUNER_STRATEGY_SIGNAL_STRENGTH</td>
-<td>The tuning accuracy for the device is measured by signal strength.</td>
-</tr>
+            
+                <tr>
+                    <td>KS_TUNER_STRATEGY_DRIVER_TUNES</td>
+                    <td>The minidriver has total control over the fine tuning process. No fine tuning is done by <i>Kstvtune.ax</i>.</td>
+                </tr>
+            
+                <tr>
+                    <td>KS_TUNER_STRATEGY_PLL</td>
+                    <td>The tuning accuracy for the device is measured by a phase locked loop (PLL) offset.</td>
+                </tr>
+            
+                <tr>
+                    <td>KS_TUNER_STRATEGY_SIGNAL_STRENGTH</td>
+                    <td>The tuning accuracy for the device is measured by signal strength.</td>
+                </tr>
 </table>
 
 
@@ -76,9 +81,9 @@ typedef enum  {
 | ---- |:---- |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\ksmedia\ns-ksmedia-ksproperty_tuner_mode_caps_s.md">KSPROPERTY_TUNER_MODE_CAPS_S</a>
+        <a href="..\ksmedia\ns-ksmedia-ksproperty_tuner_mode_caps_s.md">KSPROPERTY_TUNER_MODE_CAPS_S</a>
 
  
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:hbaapi.HBA_PortStatistics
-title : HBA_PortStatistics
-author : windows-driver-content
-description : The HBA_PortStatistics structure contains statistical information about a port.
-old-location : storage\hba_portstatistics.htm
-old-project : storage
-ms.assetid : 3a0d6633-b4a6-4864-96ae-4f91de11daa1
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : "*PHBA_PORTSTATISTICS, PHBA_PORTSTATISTICS, storage.hba_portstatistics, *PSMHBA_FCPHYSTATISTICS, hbaapi/PHBA_PORTSTATISTICS, PHBA_PORTSTATISTICS structure pointer [Storage Devices], hbaapi/HBA_PortStatistics, HBA_PORTSTATISTICS structure [Storage Devices], HBA_PORTSTATISTICS, HBA_PortStatistics, HBA_PortStatistics structure [Storage Devices], SMHBA_FCPHYSTATISTICS, structs-Fibre_4c6c7237-af5e-415a-a7db-db594b1a5968.xml"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : hbaapi.h
-req.include-header : Hbaapi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HBA_PORTSTATISTICS, *PHBA_PORTSTATISTICS
+UID: NS:hbaapi.HBA_PortStatistics
+title: HBA_PortStatistics
+author: windows-driver-content
+description: The HBA_PortStatistics structure contains statistical information about a port.
+old-location: storage\hba_portstatistics.htm
+old-project: storage
+ms.assetid: 3a0d6633-b4a6-4864-96ae-4f91de11daa1
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: "*PHBA_PORTSTATISTICS, PHBA_PORTSTATISTICS, storage.hba_portstatistics, *PSMHBA_FCPHYSTATISTICS, hbaapi/PHBA_PORTSTATISTICS, PHBA_PORTSTATISTICS structure pointer [Storage Devices], hbaapi/HBA_PortStatistics, HBA_PORTSTATISTICS structure [Storage Devices], HBA_PORTSTATISTICS, HBA_PortStatistics, HBA_PortStatistics structure [Storage Devices], SMHBA_FCPHYSTATISTICS, structs-Fibre_4c6c7237-af5e-415a-a7db-db594b1a5968.xml"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: hbaapi.h
+req.include-header: Hbaapi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hbaapi.h
+apiname:
+-	HBA_PORTSTATISTICS
+product: Windows
+targetos: Windows
+req.typenames: HBA_PORTSTATISTICS, *PHBA_PORTSTATISTICS
 ---
 
 # HBA_PortStatistics structure

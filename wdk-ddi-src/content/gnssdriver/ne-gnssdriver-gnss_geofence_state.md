@@ -1,41 +1,46 @@
 ---
-UID : NE:gnssdriver.GNSS_GEOFENCE_STATE
-title : GNSS_GEOFENCE_STATE
-author : windows-driver-content
-description : GNSS_GEOFENCE_STATE enumerates the various states of a single geofence.
-old-location : sensors\gnss_geofence_state.htm
-old-project : sensors
-ms.assetid : 881363B2-CF4C-4D18-9F45-829771A2D325
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : GNSS_GeofenceState_Exited, gnssdriver/GNSS_GeofenceState_Entered, GNSS_GeofenceState_Unknown, GNSS_GEOFENCE_STATE, GNSS_GEOFENCE_STATE enumeration [Sensor Devices], GNSS_GeofenceState_Entered, gnssdriver/GNSS_GeofenceState_Exited, sensors.gnss_geofence_state, gnssdriver/GNSS_GEOFENCE_STATE, gnssdriver/GNSS_GeofenceState_Unknown
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : gnssdriver.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : GNSS_GEOFENCE_STATE
+UID: NE:gnssdriver.GNSS_GEOFENCE_STATE
+title: GNSS_GEOFENCE_STATE
+author: windows-driver-content
+description: GNSS_GEOFENCE_STATE enumerates the various states of a single geofence.
+old-location: sensors\gnss_geofence_state.htm
+old-project: sensors
+ms.assetid: 881363B2-CF4C-4D18-9F45-829771A2D325
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: GNSS_GeofenceState_Exited, gnssdriver/GNSS_GeofenceState_Entered, GNSS_GeofenceState_Unknown, GNSS_GEOFENCE_STATE, GNSS_GEOFENCE_STATE enumeration [Sensor Devices], GNSS_GeofenceState_Entered, gnssdriver/GNSS_GeofenceState_Exited, sensors.gnss_geofence_state, gnssdriver/GNSS_GEOFENCE_STATE, gnssdriver/GNSS_GeofenceState_Unknown
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: gnssdriver.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	gnssdriver.h
+apiname:
+-	GNSS_GEOFENCE_STATE
+product: Windows
+targetos: Windows
+req.typenames: GNSS_GEOFENCE_STATE
 ---
 
 # GNSS_GEOFENCE_STATE Enumeration
@@ -53,26 +58,26 @@ typedef enum  {
 ## Constants
 
 <table>
-
-<tr>
-<td>GNSS_GeofenceState_Entered</td>
-<td>The geofence has been entered.</td>
-</tr>
-
-<tr>
-<td>GNSS_GeofenceState_Exited</td>
-<td>The geofence has been exited.</td>
-</tr>
-
-<tr>
-<td>GNSS_GeofenceState_Unknown</td>
-<td>The state of the geofence is unknown.</td>
-</tr>
+            
+                <tr>
+                    <td>GNSS_GeofenceState_Entered</td>
+                    <td>The geofence has been entered.</td>
+                </tr>
+            
+                <tr>
+                    <td>GNSS_GeofenceState_Exited</td>
+                    <td>The geofence has been exited.</td>
+                </tr>
+            
+                <tr>
+                    <td>GNSS_GeofenceState_Unknown</td>
+                    <td>The state of the geofence is unknown.</td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-The following bitmasks are used by the HLOS to request state-change alerts for geofences:
+        The following bitmasks are used by the HLOS to request state-change alerts for geofences:
 <pre class="syntax" xml:space="preserve"><code>#define GNSS_GEOFENCEALERTTYPE_ENTRY  GNSS_GeofenceState_Entered    // Enter Geofence
 #define GNSS_GEOFENCEALERTTYPE_EXIT   GNSS_GeofenceState_Exited     // Exit Geofence
 </code></pre>An entry alert is raised when the previous state of the geofence was unknown or exited and the device has now entered the geofence.

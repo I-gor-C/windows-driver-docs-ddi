@@ -1,42 +1,47 @@
 ---
-UID : NF:rxcontx.__RxSynchronizeBlockingOperations
-title : "__RxSynchronizeBlockingOperations function"
-author : windows-driver-content
-description : "__RxSynchronizeBlockingOperations synchronizes blocking I/O requests to the same work queue."
-old-location : ifsk\__rxsynchronizeblockingoperations.htm
-old-project : ifsk
-ms.assetid : e957f8bc-2ce3-4b9c-819e-ee068b39c4a0
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : "__RxSynchronizeBlockingOperations, rxcontx/__RxSynchronizeBlockingOperations, __RxSynchronizeBlockingOperations function [Installable File System Drivers], rxref_d35d9118-8942-402e-8c78-3168a2d9ad73.xml, ifsk.__rxsynchronizeblockingoperations"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : rxcontx.h
-req.include-header : Rxcontx.h
-req.target-type : Desktop
-req.target-min-winverclnt : The __RxSynchronizeBlockingOperations routine is only available on Windows Server 2003.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*LPRILWRITEPHONEBOOKENTRYPARAMS, RILWRITEPHONEBOOKENTRYPARAMS"
-req.product : Windows 10 or later.
+UID: NF:rxcontx.__RxSynchronizeBlockingOperations
+title: "__RxSynchronizeBlockingOperations function"
+author: windows-driver-content
+description: "__RxSynchronizeBlockingOperations synchronizes blocking I/O requests to the same work queue."
+old-location: ifsk\__rxsynchronizeblockingoperations.htm
+old-project: ifsk
+ms.assetid: e957f8bc-2ce3-4b9c-819e-ee068b39c4a0
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: "__RxSynchronizeBlockingOperations, rxcontx/__RxSynchronizeBlockingOperations, __RxSynchronizeBlockingOperations function [Installable File System Drivers], rxref_d35d9118-8942-402e-8c78-3168a2d9ad73.xml, ifsk.__rxsynchronizeblockingoperations"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: rxcontx.h
+req.include-header: Rxcontx.h
+req.target-type: Desktop
+req.target-min-winverclnt: The __RxSynchronizeBlockingOperations routine is only available on Windows Server 2003.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	rxcontx.h
+apiname:
+-	__RxSynchronizeBlockingOperations
+product: Windows
+targetos: Windows
+req.typenames: "*LPRILWRITEPHONEBOOKENTRYPARAMS, RILWRITEPHONEBOOKENTRYPARAMS"
+req.product: Windows 10 or later.
 ---
 
 

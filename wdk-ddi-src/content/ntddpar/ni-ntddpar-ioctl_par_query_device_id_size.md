@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddpar.IOCTL_PAR_QUERY_DEVICE_ID_SIZE
-title : IOCTL_PAR_QUERY_DEVICE_ID_SIZE
-author : windows-driver-content
-description : The IOCTL_PAR_QUERY_DEVICE_ID_SIZE request returns the size, in bytes, of a buffer that can hold a device's IEEE 1284 device ID and a NULL terminator.
-old-location : parports\ioctl_par_query_device_id_size.htm
-old-project : parports
-ms.assetid : f593e36e-8c2b-4cdc-ade1-d1e260f37667
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : parports.ioctl_par_query_device_id_size, IOCTL_PAR_QUERY_DEVICE_ID_SIZE control code [Parallel Ports], IOCTL_PAR_QUERY_DEVICE_ID_SIZE, ntddpar/IOCTL_PAR_QUERY_DEVICE_ID_SIZE, cisspd_a1c3f5cd-d1bc-40e5-a1e0-dc4306107826.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddpar.h
-req.include-header : Ntddpar.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*POFFLOAD_SECURITY_ASSOCIATION, OFFLOAD_SECURITY_ASSOCIATION"
+UID: NI:ntddpar.IOCTL_PAR_QUERY_DEVICE_ID_SIZE
+title: IOCTL_PAR_QUERY_DEVICE_ID_SIZE
+author: windows-driver-content
+description: The IOCTL_PAR_QUERY_DEVICE_ID_SIZE request returns the size, in bytes, of a buffer that can hold a device's IEEE 1284 device ID and a NULL terminator.
+old-location: parports\ioctl_par_query_device_id_size.htm
+old-project: parports
+ms.assetid: f593e36e-8c2b-4cdc-ade1-d1e260f37667
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: parports.ioctl_par_query_device_id_size, IOCTL_PAR_QUERY_DEVICE_ID_SIZE control code [Parallel Ports], IOCTL_PAR_QUERY_DEVICE_ID_SIZE, ntddpar/IOCTL_PAR_QUERY_DEVICE_ID_SIZE, cisspd_a1c3f5cd-d1bc-40e5-a1e0-dc4306107826.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddpar.h
+req.include-header: Ntddpar.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddpar.h
+apiname:
+-	IOCTL_PAR_QUERY_DEVICE_ID_SIZE
+product: Windows
+targetos: Windows
+req.typenames: "*POFFLOAD_SECURITY_ASSOCIATION, OFFLOAD_SECURITY_ASSOCIATION"
 ---
 
 # IOCTL_PAR_QUERY_DEVICE_ID_SIZE IOCTL

@@ -1,42 +1,47 @@
 ---
-UID : NC:ufxclient.EVT_UFX_DEVICE_TEST_MODE_SET
-title : EVT_UFX_DEVICE_TEST_MODE_SET
-author : windows-driver-content
-description : The client driver's implementation to set the test mode of the function controller.
-old-location : buses\evt_ufx_device_test_mode_set.htm
-old-project : usbref
-ms.assetid : 24B17B8E-C2F0-4CA8-AA9D-5EE86EB20CCC
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : buses.evt_ufx_device_test_mode_set, EvtUfxDeviceTestModeSet callback function [Buses], EvtUfxDeviceTestModeSet, EVT_UFX_DEVICE_TEST_MODE_SET, EVT_UFX_DEVICE_TEST_MODE_SET, ufxclient/EvtUfxDeviceTestModeSet, PFN_UFX_DEVICE_TEST_MODE_SET callback function pointer [Buses], PFN_UFX_DEVICE_TEST_MODE_SET
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ufxclient.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUFX_HARDWARE_FAILURE_CONTEXT, UFX_HARDWARE_FAILURE_CONTEXT"
-req.product : Windows 10 or later.
+UID: NC:ufxclient.EVT_UFX_DEVICE_TEST_MODE_SET
+title: EVT_UFX_DEVICE_TEST_MODE_SET
+author: windows-driver-content
+description: The client driver's implementation to set the test mode of the function controller.
+old-location: buses\evt_ufx_device_test_mode_set.htm
+old-project: usbref
+ms.assetid: 24B17B8E-C2F0-4CA8-AA9D-5EE86EB20CCC
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: buses.evt_ufx_device_test_mode_set, EvtUfxDeviceTestModeSet callback function [Buses], EvtUfxDeviceTestModeSet, EVT_UFX_DEVICE_TEST_MODE_SET, EVT_UFX_DEVICE_TEST_MODE_SET, ufxclient/EvtUfxDeviceTestModeSet, PFN_UFX_DEVICE_TEST_MODE_SET callback function pointer [Buses], PFN_UFX_DEVICE_TEST_MODE_SET
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ufxclient.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ufxclient.h
+apiname:
+-	PFN_UFX_DEVICE_TEST_MODE_SET
+product: Windows
+targetos: Windows
+req.typenames: "*PUFX_HARDWARE_FAILURE_CONTEXT, UFX_HARDWARE_FAILURE_CONTEXT"
+req.product: Windows 10 or later.
 ---
 
 

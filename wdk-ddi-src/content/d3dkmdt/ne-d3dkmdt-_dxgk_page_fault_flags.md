@@ -1,41 +1,46 @@
 ---
-UID : NE:d3dkmdt._DXGK_PAGE_FAULT_FLAGS
-title : "_DXGK_PAGE_FAULT_FLAGS"
-author : windows-driver-content
-description : DXGK_PAGE_FAULT_FLAGS enumeration describes the nature of the page fault that has occurred and the prescribed OS recovery action.
-old-location : display\dxgk_page_fault_flags.htm
-old-project : display
-ms.assetid : 3AF0646D-5405-4A35-8352-7E32BCA5DD24
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DXGK_PAGE_FAULT_FATAL_HARDWARE_ERROR, DXGK_PAGE_FAULT_ADAPTER_RESET_REQUIRED, DXGK_PAGE_FAULT_FLAGS, d3dkmdt/DXGK_PAGE_FAULT_FENCE_INVALID, DXGK_PAGE_FAULT_IOMMU, _DXGK_PAGE_FAULT_FLAGS, DXGK_PAGE_FAULT_WRITE, DXGK_PAGE_FAULT_FENCE_INVALID, d3dkmdt/DXGK_PAGE_FAULT_IOMMU, d3dkmdt/DXGK_PAGE_FAULT_WRITE, d3dkmdt/DXGK_PAGE_FAULT_ENGINE_RESET_REQUIRED, DXGK_PAGE_FAULT_FLAGS enumeration [Display Devices], display.dxgk_page_fault_flags, d3dkmdt/DXGK_PAGE_FAULT_ADAPTER_RESET_REQUIRED, d3dkmdt/DXGK_PAGE_FAULT_FATAL_HARDWARE_ERROR, d3dkmdt/DXGK_PAGE_FAULT_FLAGS, DXGK_PAGE_FAULT_ENGINE_RESET_REQUIRED
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : d3dkmdt.h
-req.include-header : D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PAGE_FAULT_FLAGS
+UID: NE:d3dkmdt._DXGK_PAGE_FAULT_FLAGS
+title: "_DXGK_PAGE_FAULT_FLAGS"
+author: windows-driver-content
+description: DXGK_PAGE_FAULT_FLAGS enumeration describes the nature of the page fault that has occurred and the prescribed OS recovery action.
+old-location: display\dxgk_page_fault_flags.htm
+old-project: display
+ms.assetid: 3AF0646D-5405-4A35-8352-7E32BCA5DD24
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DXGK_PAGE_FAULT_FATAL_HARDWARE_ERROR, DXGK_PAGE_FAULT_ADAPTER_RESET_REQUIRED, DXGK_PAGE_FAULT_FLAGS, d3dkmdt/DXGK_PAGE_FAULT_FENCE_INVALID, DXGK_PAGE_FAULT_IOMMU, _DXGK_PAGE_FAULT_FLAGS, DXGK_PAGE_FAULT_WRITE, DXGK_PAGE_FAULT_FENCE_INVALID, d3dkmdt/DXGK_PAGE_FAULT_IOMMU, d3dkmdt/DXGK_PAGE_FAULT_WRITE, d3dkmdt/DXGK_PAGE_FAULT_ENGINE_RESET_REQUIRED, DXGK_PAGE_FAULT_FLAGS enumeration [Display Devices], display.dxgk_page_fault_flags, d3dkmdt/DXGK_PAGE_FAULT_ADAPTER_RESET_REQUIRED, d3dkmdt/DXGK_PAGE_FAULT_FATAL_HARDWARE_ERROR, d3dkmdt/DXGK_PAGE_FAULT_FLAGS, DXGK_PAGE_FAULT_ENGINE_RESET_REQUIRED
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: d3dkmdt.h
+req.include-header: D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	D3dkmdt.h
+apiname:
+-	DXGK_PAGE_FAULT_FLAGS
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PAGE_FAULT_FLAGS
 ---
 
 # _DXGK_PAGE_FAULT_FLAGS Enumeration
@@ -56,48 +61,48 @@ typedef enum _DXGK_PAGE_FAULT_FLAGS {
 ## Constants
 
 <table>
-
-<tr>
-<td>DXGK_PAGE_FAULT_ADAPTER_RESET_REQUIRED</td>
-<td>When set, this indicates that the fault put the GPU into a state that requires a full adapter reset.</td>
-</tr>
-
-<tr>
-<td>DXGK_PAGE_FAULT_ENGINE_RESET_REQUIRED</td>
-<td>When set, this indicates that the fault put the GPU into a state that requires a GPU engine reset.</td>
-</tr>
-
-<tr>
-<td>DXGK_PAGE_FAULT_FATAL_HARDWARE_ERROR</td>
-<td>When set, this indicates that the system hardware, not just the GPU, cannot continue, and the OS should issue a bugcheck.</td>
-</tr>
-
-<tr>
-<td>DXGK_PAGE_FAULT_FENCE_INVALID</td>
-<td>When set, this indicates that a faulting packet could not be determined. In this case, the OS will have to perform a GPU reset action to clear the GPU error state, and one of the subsequent bits will have to be set.
+            
+                <tr>
+                    <td>DXGK_PAGE_FAULT_ADAPTER_RESET_REQUIRED</td>
+                    <td>When set, this indicates that the fault put the GPU into a state that requires a full adapter reset.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXGK_PAGE_FAULT_ENGINE_RESET_REQUIRED</td>
+                    <td>When set, this indicates that the fault put the GPU into a state that requires a GPU engine reset.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXGK_PAGE_FAULT_FATAL_HARDWARE_ERROR</td>
+                    <td>When set, this indicates that the system hardware, not just the GPU, cannot continue, and the OS should issue a bugcheck.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXGK_PAGE_FAULT_FENCE_INVALID</td>
+                    <td>When set, this indicates that a faulting packet could not be determined. In this case, the OS will have to perform a GPU reset action to clear the GPU error state, and one of the subsequent bits will have to be set.
 
 When not set, this indicates that the DMA packet submitted with <b>FaultedFenceId</b> (in the <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkargcb_notify_interrupt_data.md">DXGKARGCB_NOTIFY_INTERRUPT_DATA</a> structure) was the cause of the fault. Similar to how the preemption and completion fences are handled, the OS will treat all pending packets with fence IDs less than <b>FaultedFenceId</b> as completed, and the driver will be required to advance its notion of the completed fence ID to <b>FaultedFenceId</b>.</td>
-</tr>
-
-<tr>
-<td>DXGK_PAGE_FAULT_HW_CONTEXT_VALID</td>
-<td></td>
-</tr>
-
-<tr>
-<td>DXGK_PAGE_FAULT_IOMMU</td>
-<td>When set, this indicates that the faulting GPU's virtual address was mapped using IoMmu. When not set, the faulting GPU's virtual address was mapped using the GPU's memory management unit.</td>
-</tr>
-
-<tr>
-<td>DXGK_PAGE_FAULT_PROCESS_HANDLE_VALID</td>
-<td></td>
-</tr>
-
-<tr>
-<td>DXGK_PAGE_FAULT_WRITE</td>
-<td>When set, this indicates that the faulted GPU virtual operation was a write operation.</td>
-</tr>
+                </tr>
+            
+                <tr>
+                    <td>DXGK_PAGE_FAULT_HW_CONTEXT_VALID</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>DXGK_PAGE_FAULT_IOMMU</td>
+                    <td>When set, this indicates that the faulting GPU's virtual address was mapped using IoMmu. When not set, the faulting GPU's virtual address was mapped using the GPU's memory management unit.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXGK_PAGE_FAULT_PROCESS_HANDLE_VALID</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>DXGK_PAGE_FAULT_WRITE</td>
+                    <td>When set, this indicates that the faulted GPU virtual operation was a write operation.</td>
+                </tr>
 </table>
 
 
@@ -107,9 +112,9 @@ When not set, this indicates that the DMA packet submitted with <b>FaultedFenceI
 | **Windows version** | Windows 10 Windows 10 |
 | **Header** | d3dkmdt.h (include D3dkmddi.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkargcb_notify_interrupt_data.md">DXGKARGCB_NOTIFY_INTERRUPT_DATA</a>
+        <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkargcb_notify_interrupt_data.md">DXGKARGCB_NOTIFY_INTERRUPT_DATA</a>
 
  
 

@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFDevice3.MapIoSpace
-title : IWDFDevice3::MapIoSpace method
-author : windows-driver-content
-description : The MapIoSpace method maps the given physical address range to system address space and returns a pseudo base address.
-old-location : wdf\iwdfdevice3_mapiospace.htm
-old-project : wdf
-ms.assetid : 243C7299-7C74-408A-8FB9-32FB3315251F
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : IWDFDevice3 interface, MapIoSpace method, MapIoSpace method, umdf.iwdfdevice3_mapiospace, MapIoSpace, MapIoSpace method, IWDFDevice3 interface, IWDFDevice3::\_MapIoSpace, wudfddi/IWDFDevice3::\_MapIoSpace, IWDFDevice3::MapIoSpace, IWDFDevice3, wdf.iwdfdevice3_mapiospace
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.11
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFDevice3.MapIoSpace
+title: IWDFDevice3::MapIoSpace method
+author: windows-driver-content
+description: The MapIoSpace method maps the given physical address range to system address space and returns a pseudo base address.
+old-location: wdf\iwdfdevice3_mapiospace.htm
+old-project: wdf
+ms.assetid: 243C7299-7C74-408A-8FB9-32FB3315251F
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: IWDFDevice3 interface, MapIoSpace method, MapIoSpace method, umdf.iwdfdevice3_mapiospace, MapIoSpace, MapIoSpace method, IWDFDevice3 interface, IWDFDevice3::\_MapIoSpace, wudfddi/IWDFDevice3::\_MapIoSpace, IWDFDevice3::MapIoSpace, IWDFDevice3, wdf.iwdfdevice3_mapiospace
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.11
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFDevice3.MapIoSpace
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

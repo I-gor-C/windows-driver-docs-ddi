@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddcdrm._CDROM_EXCEPTION_PERFORMANCE_DESCRIPTOR
-title : "_CDROM_EXCEPTION_PERFORMANCE_DESCRIPTOR"
-author : windows-driver-content
-description : The CDROM_EXCEPTION_PERFORMANCE_DESCRIPTOR structure indicates that the result data from the IOCTL_CDROM_GET_PERFORMANCE I/O control request is for exception conditions.
-old-location : storage\cdrom_exception_performance_descriptor.htm
-old-project : storage
-ms.assetid : 054C8E89-D0A6-46D1-A5AA-2BE73931BB7A
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.cdrom_exception_performance_descriptor, CDROM_EXCEPTION_PERFORMANCE_DESCRIPTOR, CDROM_EXCEPTION_PERFORMANCE_DESCRIPTOR structure [Storage Devices], PCDROM_EXCEPTION_PERFORMANCE_DESCRIPTOR, _CDROM_EXCEPTION_PERFORMANCE_DESCRIPTOR, ntddcdrm/CDROM_EXCEPTION_PERFORMANCE_DESCRIPTOR, *PCDROM_EXCEPTION_PERFORMANCE_DESCRIPTOR, PCDROM_EXCEPTION_PERFORMANCE_DESCRIPTOR structure pointer [Storage Devices], ntddcdrm/PCDROM_EXCEPTION_PERFORMANCE_DESCRIPTOR
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddcdrm.h
-req.include-header : Ntddcdrm.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PCDROM_EXCEPTION_PERFORMANCE_DESCRIPTOR, CDROM_EXCEPTION_PERFORMANCE_DESCRIPTOR"
+UID: NS:ntddcdrm._CDROM_EXCEPTION_PERFORMANCE_DESCRIPTOR
+title: "_CDROM_EXCEPTION_PERFORMANCE_DESCRIPTOR"
+author: windows-driver-content
+description: The CDROM_EXCEPTION_PERFORMANCE_DESCRIPTOR structure indicates that the result data from the IOCTL_CDROM_GET_PERFORMANCE I/O control request is for exception conditions.
+old-location: storage\cdrom_exception_performance_descriptor.htm
+old-project: storage
+ms.assetid: 054C8E89-D0A6-46D1-A5AA-2BE73931BB7A
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.cdrom_exception_performance_descriptor, CDROM_EXCEPTION_PERFORMANCE_DESCRIPTOR, CDROM_EXCEPTION_PERFORMANCE_DESCRIPTOR structure [Storage Devices], PCDROM_EXCEPTION_PERFORMANCE_DESCRIPTOR, _CDROM_EXCEPTION_PERFORMANCE_DESCRIPTOR, ntddcdrm/CDROM_EXCEPTION_PERFORMANCE_DESCRIPTOR, *PCDROM_EXCEPTION_PERFORMANCE_DESCRIPTOR, PCDROM_EXCEPTION_PERFORMANCE_DESCRIPTOR structure pointer [Storage Devices], ntddcdrm/PCDROM_EXCEPTION_PERFORMANCE_DESCRIPTOR
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddcdrm.h
+req.include-header: Ntddcdrm.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddcdrm.h
+apiname:
+-	CDROM_EXCEPTION_PERFORMANCE_DESCRIPTOR
+product: Windows
+targetos: Windows
+req.typenames: "*PCDROM_EXCEPTION_PERFORMANCE_DESCRIPTOR, CDROM_EXCEPTION_PERFORMANCE_DESCRIPTOR"
 ---
 
 # _CDROM_EXCEPTION_PERFORMANCE_DESCRIPTOR structure

@@ -1,42 +1,47 @@
 ---
-UID : NF:rxcontx.RxInitializeContext
-title : RxInitializeContext function
-author : windows-driver-content
-description : RxInitializeContext initializes an existing RX_CONTEXT data structure.
-old-location : ifsk\rxinitializecontext.htm
-old-project : ifsk
-ms.assetid : 71b595be-61ac-4a8f-af5e-d504e5091e0c
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : RxInitializeContext function [Installable File System Drivers], rxref_4092dc37-eda5-4293-ab39-bec3ed2753f6.xml, ifsk.rxinitializecontext, rxcontx/RxInitializeContext, RxInitializeContext
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : rxcontx.h
-req.include-header : Rxprocs.h  rxcontx.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*LPRILWRITEPHONEBOOKENTRYPARAMS, RILWRITEPHONEBOOKENTRYPARAMS"
-req.product : Windows 10 or later.
+UID: NF:rxcontx.RxInitializeContext
+title: RxInitializeContext function
+author: windows-driver-content
+description: RxInitializeContext initializes an existing RX_CONTEXT data structure.
+old-location: ifsk\rxinitializecontext.htm
+old-project: ifsk
+ms.assetid: 71b595be-61ac-4a8f-af5e-d504e5091e0c
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: RxInitializeContext function [Installable File System Drivers], rxref_4092dc37-eda5-4293-ab39-bec3ed2753f6.xml, ifsk.rxinitializecontext, rxcontx/RxInitializeContext, RxInitializeContext
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: rxcontx.h
+req.include-header: Rxprocs.h  rxcontx.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	rxcontx.h
+apiname:
+-	RxInitializeContext
+product: Windows
+targetos: Windows
+req.typenames: "*LPRILWRITEPHONEBOOKENTRYPARAMS, RILWRITEPHONEBOOKENTRYPARAMS"
+req.product: Windows 10 or later.
 ---
 
 

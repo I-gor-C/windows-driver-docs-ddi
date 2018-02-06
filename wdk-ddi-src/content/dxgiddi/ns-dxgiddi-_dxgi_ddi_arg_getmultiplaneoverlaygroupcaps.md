@@ -1,41 +1,46 @@
 ---
-UID : NS:dxgiddi._DXGI_DDI_ARG_GETMULTIPLANEOVERLAYGROUPCAPS
-title : "_DXGI_DDI_ARG_GETMULTIPLANEOVERLAYGROUPCAPS"
-author : windows-driver-content
-description : Used in a call to the pfnGetMultiplaneOverlayGroupCaps function to get a group of overlay plane capabilities.
-old-location : display\dxgi_ddi_arg_getmultiplaneoverlaygroupcaps.htm
-old-project : display
-ms.assetid : C63125FA-7ADF-406A-A729-67C6ACA47D96
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DXGI_DDI_ARG_GETMULTIPLANEOVERLAYGROUPCAPS structure [Display Devices], display.dxgi_ddi_arg_getmultiplaneoverlaygroupcaps, _DXGI_DDI_ARG_GETMULTIPLANEOVERLAYGROUPCAPS, dxgiddi/DXGI_DDI_ARG_GETMULTIPLANEOVERLAYGROUPCAPS, DXGI_DDI_ARG_GETMULTIPLANEOVERLAYGROUPCAPS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : dxgiddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8.1
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGI_DDI_ARG_GETMULTIPLANEOVERLAYGROUPCAPS
+UID: NS:dxgiddi._DXGI_DDI_ARG_GETMULTIPLANEOVERLAYGROUPCAPS
+title: "_DXGI_DDI_ARG_GETMULTIPLANEOVERLAYGROUPCAPS"
+author: windows-driver-content
+description: Used in a call to the pfnGetMultiplaneOverlayGroupCaps function to get a group of overlay plane capabilities.
+old-location: display\dxgi_ddi_arg_getmultiplaneoverlaygroupcaps.htm
+old-project: display
+ms.assetid: C63125FA-7ADF-406A-A729-67C6ACA47D96
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DXGI_DDI_ARG_GETMULTIPLANEOVERLAYGROUPCAPS structure [Display Devices], display.dxgi_ddi_arg_getmultiplaneoverlaygroupcaps, _DXGI_DDI_ARG_GETMULTIPLANEOVERLAYGROUPCAPS, dxgiddi/DXGI_DDI_ARG_GETMULTIPLANEOVERLAYGROUPCAPS, DXGI_DDI_ARG_GETMULTIPLANEOVERLAYGROUPCAPS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: dxgiddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8.1
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Dxgiddi.h
+apiname:
+-	DXGI_DDI_ARG_GETMULTIPLANEOVERLAYGROUPCAPS
+product: Windows
+targetos: Windows
+req.typenames: DXGI_DDI_ARG_GETMULTIPLANEOVERLAYGROUPCAPS
 ---
 
 # _DXGI_DDI_ARG_GETMULTIPLANEOVERLAYGROUPCAPS structure

@@ -1,42 +1,47 @@
 ---
-UID : NF:printerextension.IPrinterQueue.SendBidiQuery
-title : IPrinterQueue::SendBidiQuery method
-author : windows-driver-content
-description : Performs an asynchronous refresh operation with the specified query, and invokes the IPrinterQueueEvent::OnBidiResponseReceived method.
-old-location : print\iprinterqueue_sendbidiquery.htm
-old-project : print
-ms.assetid : E98A121A-514A-4437-A542-E8629697B7EA
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : printerextension/IPrinterQueue::SendBidiQuery, print.iprinterqueue_sendbidiquery, SendBidiQuery method [Print Devices], IPrinterQueue::SendBidiQuery, IPrinterQueue, IPrinterQueue interface [Print Devices], SendBidiQuery method, SendBidiQuery method [Print Devices], IPrinterQueue interface, SendBidiQuery
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : printerextension.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : printerextension.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PrintSchemaSelectionType
-req.product : Windows 10 or later.
+UID: NF:printerextension.IPrinterQueue.SendBidiQuery
+title: IPrinterQueue::SendBidiQuery method
+author: windows-driver-content
+description: Performs an asynchronous refresh operation with the specified query, and invokes the IPrinterQueueEvent::OnBidiResponseReceived method.
+old-location: print\iprinterqueue_sendbidiquery.htm
+old-project: print
+ms.assetid: E98A121A-514A-4437-A542-E8629697B7EA
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: printerextension/IPrinterQueue::SendBidiQuery, print.iprinterqueue_sendbidiquery, SendBidiQuery method [Print Devices], IPrinterQueue::SendBidiQuery, IPrinterQueue, IPrinterQueue interface [Print Devices], SendBidiQuery method, SendBidiQuery method [Print Devices], IPrinterQueue interface, SendBidiQuery
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: printerextension.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: printerextension.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Printerextension.h
+apiname:
+-	IPrinterQueue.SendBidiQuery
+product: Windows
+targetos: Windows
+req.typenames: PrintSchemaSelectionType
+req.product: Windows 10 or later.
 ---
 
 

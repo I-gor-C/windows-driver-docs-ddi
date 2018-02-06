@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugSymbols3.FindSourceFileWide
-title : IDebugSymbols3::FindSourceFileWide method
-author : windows-driver-content
-description : The FindSourceFileWide method searches the source path for a specified source file.
-old-location : debugger\findsourcefilewide.htm
-old-project : debugger
-ms.assetid : a21be482-7640-4e72-a8af-00bb10216fa8
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugSymbols3 interface [Windows Debugging], FindSourceFileWide method, FindSourceFileWide method [Windows Debugging], IDebugSymbols3 interface, FindSourceFileWide, FindSourceFileWide method [Windows Debugging], dbgeng/IDebugSymbols3::FindSourceFileWide, debugger.findsourcefilewide, IDebugSymbols3, IDebugSymbols3::FindSourceFileWide
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSymbols3.FindSourceFileWide
+title: IDebugSymbols3::FindSourceFileWide method
+author: windows-driver-content
+description: The FindSourceFileWide method searches the source path for a specified source file.
+old-location: debugger\findsourcefilewide.htm
+old-project: debugger
+ms.assetid: a21be482-7640-4e72-a8af-00bb10216fa8
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugSymbols3 interface [Windows Debugging], FindSourceFileWide method, FindSourceFileWide method [Windows Debugging], IDebugSymbols3 interface, FindSourceFileWide, FindSourceFileWide method [Windows Debugging], dbgeng/IDebugSymbols3::FindSourceFileWide, debugger.findsourcefilewide, IDebugSymbols3, IDebugSymbols3::FindSourceFileWide
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugSymbols3.FindSourceFileWide
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

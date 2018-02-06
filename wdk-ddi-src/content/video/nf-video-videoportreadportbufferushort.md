@@ -1,42 +1,47 @@
 ---
-UID : NF:video.VideoPortReadPortBufferUshort
-title : VideoPortReadPortBufferUshort function
-author : windows-driver-content
-description : The VideoPortReadPortBufferUshort function reads a number of USHORT values from a mapped I/O port and writes them into a buffer.
-old-location : display\videoportreadportbufferushort.htm
-old-project : display
-ms.assetid : 3ad19dc0-f301-4367-b867-6bc714fd3d5e
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : VideoPortReadPortBufferUshort function [Display Devices], VideoPort_Functions_598e11ff-25be-4b55-a86f-130100ed0972.xml, video/VideoPortReadPortBufferUshort, VideoPortReadPortBufferUshort, display.videoportreadportbufferushort
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows 2000 and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Videoprt.lib
-req.dll : Videoprt.sys
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_PORT_SERVICES
-req.product : Windows 10 or later.
+UID: NF:video.VideoPortReadPortBufferUshort
+title: VideoPortReadPortBufferUshort function
+author: windows-driver-content
+description: The VideoPortReadPortBufferUshort function reads a number of USHORT values from a mapped I/O port and writes them into a buffer.
+old-location: display\videoportreadportbufferushort.htm
+old-project: display
+ms.assetid: 3ad19dc0-f301-4367-b867-6bc714fd3d5e
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: VideoPortReadPortBufferUshort function [Display Devices], VideoPort_Functions_598e11ff-25be-4b55-a86f-130100ed0972.xml, video/VideoPortReadPortBufferUshort, VideoPortReadPortBufferUshort, display.videoportreadportbufferushort
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows 2000 and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Videoprt.lib
+req.dll: Videoprt.sys
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Videoprt.sys
+apiname:
+-	VideoPortReadPortBufferUshort
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_PORT_SERVICES
+req.product: Windows 10 or later.
 ---
 
 

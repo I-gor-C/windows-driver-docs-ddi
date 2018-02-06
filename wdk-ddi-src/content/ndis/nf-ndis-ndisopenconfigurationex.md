@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisOpenConfigurationEx
-title : NdisOpenConfigurationEx function
-author : windows-driver-content
-description : NDIS drivers call the NdisOpenConfigurationEx function to get a configuration handle that allows access to configuration parameters in the registry.
-old-location : netvista\ndisopenconfigurationex.htm
-old-project : netvista
-ms.assetid : 76539106-6d8d-4a80-9c74-a6a4ca37c40e
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NdisOpenConfigurationEx function [Network Drivers Starting with Windows Vista], netvista.ndisopenconfigurationex, ndis_configuration_ref_c1d84b46-85f5-4a0a-9a5f-d553fea94027.xml, NdisOpenConfigurationEx, ndis/NdisOpenConfigurationEx
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_Miscellaneous_Function, NdisOpenConfigurationEx
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisOpenConfigurationEx
+title: NdisOpenConfigurationEx function
+author: windows-driver-content
+description: NDIS drivers call the NdisOpenConfigurationEx function to get a configuration handle that allows access to configuration parameters in the registry.
+old-location: netvista\ndisopenconfigurationex.htm
+old-project: netvista
+ms.assetid: 76539106-6d8d-4a80-9c74-a6a4ca37c40e
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NdisOpenConfigurationEx function [Network Drivers Starting with Windows Vista], netvista.ndisopenconfigurationex, ndis_configuration_ref_c1d84b46-85f5-4a0a-9a5f-d553fea94027.xml, NdisOpenConfigurationEx, ndis/NdisOpenConfigurationEx
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_Miscellaneous_Function, NdisOpenConfigurationEx
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisOpenConfigurationEx
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

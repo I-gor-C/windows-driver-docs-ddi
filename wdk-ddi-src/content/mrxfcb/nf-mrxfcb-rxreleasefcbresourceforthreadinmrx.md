@@ -1,41 +1,46 @@
 ---
-UID : NF:mrxfcb.RxReleaseFcbResourceForThreadInMRx
-title : RxReleaseFcbResourceForThreadInMRx function
-author : windows-driver-content
-description : RxReleaseFcbResourceForThreadInMRx releases the FCB resource acquired by a network mini-redirector driver with a particular thread ID.
-old-location : ifsk\rxreleasefcbresourceforthreadinmrx.htm
-old-project : ifsk
-ms.assetid : 86b6f18b-4088-4fa3-ace3-f083f61ef0d0
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : mrxfcb/RxReleaseFcbResourceForThreadInMRx, RxReleaseFcbResourceForThreadInMRx function [Installable File System Drivers], RxReleaseFcbResourceForThreadInMRx, ifsk.rxreleasefcbresourceforthreadinmrx, rxref_bed9a8b0-1761-413e-b816-599b51a7f305.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : mrxfcb.h
-req.include-header : Mrxfcb.h
-req.target-type : Desktop
-req.target-min-winverclnt : RxReleaseFcbResourceForThreadInMRx is only available on Windows Server 2003 SP1 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SetDSMCounters_IN, *PSetDSMCounters_IN
+UID: NF:mrxfcb.RxReleaseFcbResourceForThreadInMRx
+title: RxReleaseFcbResourceForThreadInMRx function
+author: windows-driver-content
+description: RxReleaseFcbResourceForThreadInMRx releases the FCB resource acquired by a network mini-redirector driver with a particular thread ID.
+old-location: ifsk\rxreleasefcbresourceforthreadinmrx.htm
+old-project: ifsk
+ms.assetid: 86b6f18b-4088-4fa3-ace3-f083f61ef0d0
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: mrxfcb/RxReleaseFcbResourceForThreadInMRx, RxReleaseFcbResourceForThreadInMRx function [Installable File System Drivers], RxReleaseFcbResourceForThreadInMRx, ifsk.rxreleasefcbresourceforthreadinmrx, rxref_bed9a8b0-1761-413e-b816-599b51a7f305.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: mrxfcb.h
+req.include-header: Mrxfcb.h
+req.target-type: Desktop
+req.target-min-winverclnt: RxReleaseFcbResourceForThreadInMRx is only available on Windows Server 2003 SP1 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	mrxfcb.h
+apiname:
+-	RxReleaseFcbResourceForThreadInMRx
+product: Windows
+targetos: Windows
+req.typenames: SetDSMCounters_IN, *PSetDSMCounters_IN
 ---
 
 

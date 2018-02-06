@@ -1,41 +1,46 @@
 ---
-UID : NI:mountdev.IOCTL_MOUNTDEV_LINK_CREATED
-title : IOCTL_MOUNTDEV_LINK_CREATED
-author : windows-driver-content
-description : Support for this IOCTL by the mount manager clients is optional. The mount manager uses this IOCTL to alert the client driver that a persistent name has been assigned to its volume. The input for this IOCTL is the persistent name assigned.
-old-location : storage\ioctl_mountdev_link_created.htm
-old-project : storage
-ms.assetid : 98ccf623-8232-4bcb-bd72-39dd31c7ede3
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_mountdev_link_created, IOCTL_MOUNTDEV_LINK_CREATED control code [Storage Devices], IOCTL_MOUNTDEV_LINK_CREATED, mountdev/IOCTL_MOUNTDEV_LINK_CREATED, k307_b93a8e67-8e02-4d7d-aac2-a11f3d4297c2.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : mountdev.h
-req.include-header : Mountmgr.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PZONE_DESCRIPTIOR, ZONE_DESCRIPTIOR"
+UID: NI:mountdev.IOCTL_MOUNTDEV_LINK_CREATED
+title: IOCTL_MOUNTDEV_LINK_CREATED
+author: windows-driver-content
+description: Support for this IOCTL by the mount manager clients is optional. The mount manager uses this IOCTL to alert the client driver that a persistent name has been assigned to its volume. The input for this IOCTL is the persistent name assigned.
+old-location: storage\ioctl_mountdev_link_created.htm
+old-project: storage
+ms.assetid: 98ccf623-8232-4bcb-bd72-39dd31c7ede3
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_mountdev_link_created, IOCTL_MOUNTDEV_LINK_CREATED control code [Storage Devices], IOCTL_MOUNTDEV_LINK_CREATED, mountdev/IOCTL_MOUNTDEV_LINK_CREATED, k307_b93a8e67-8e02-4d7d-aac2-a11f3d4297c2.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: mountdev.h
+req.include-header: Mountmgr.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	mountdev.h
+apiname:
+-	IOCTL_MOUNTDEV_LINK_CREATED
+product: Windows
+targetos: Windows
+req.typenames: "*PZONE_DESCRIPTIOR, ZONE_DESCRIPTIOR"
 ---
 
 # IOCTL_MOUNTDEV_LINK_CREATED IOCTL

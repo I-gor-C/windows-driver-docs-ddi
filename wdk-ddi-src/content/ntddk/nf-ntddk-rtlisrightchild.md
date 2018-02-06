@@ -1,41 +1,46 @@
 ---
-UID : NF:ntddk.RtlIsRightChild
-title : RtlIsRightChild macro
-author : windows-driver-content
-description : The RtlIsRightChild routine determines whether a given splay link is the right child of a node in a splay link tree.
-old-location : ifsk\rtlisrightchild.htm
-old-project : ifsk
-ms.assetid : 23951fb8-35ab-4a05-b09b-d7f69057a5ad
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.rtlisrightchild, rtlref_741652e3-af4f-4e7b-978a-e6355db283a9.xml, ntddk/RtlIsRightChild, RtlIsRightChild, RtlIsRightChild routine [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : macro
-req.header : ntddk.h
-req.include-header : Ntddk.h, Ntifs.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : ntddk.h
-req.dll : 
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.RtlIsRightChild
+title: RtlIsRightChild macro
+author: windows-driver-content
+description: The RtlIsRightChild routine determines whether a given splay link is the right child of a node in a splay link tree.
+old-location: ifsk\rtlisrightchild.htm
+old-project: ifsk
+ms.assetid: 23951fb8-35ab-4a05-b09b-d7f69057a5ad
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.rtlisrightchild, rtlref_741652e3-af4f-4e7b-978a-e6355db283a9.xml, ntddk/RtlIsRightChild, RtlIsRightChild, RtlIsRightChild routine [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: macro
+req.header: ntddk.h
+req.include-header: Ntddk.h, Ntifs.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: ntddk.h
+req.dll: 
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddk.h
+apiname:
+-	RtlIsRightChild
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

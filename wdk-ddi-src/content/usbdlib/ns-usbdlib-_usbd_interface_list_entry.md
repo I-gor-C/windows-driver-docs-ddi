@@ -1,42 +1,47 @@
 ---
-UID : NS:usbdlib._USBD_INTERFACE_LIST_ENTRY
-title : "_USBD_INTERFACE_LIST_ENTRY"
-author : windows-driver-content
-description : The USBD_INTERFACE_LIST_ENTRY structure is used by USB client drivers to create an array of interfaces to be inserted into a configuration request.
-old-location : buses\usbd_interface_list_entry.htm
-old-project : usbref
-ms.assetid : 9b729c52-b03b-4b53-ae1a-9a025585ba7b
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : buses.usbd_interface_list_entry, PUSBD_INTERFACE_LIST_ENTRY structure pointer [Buses], PUSBD_INTERFACE_LIST_ENTRY, usbstrct_f42a04be-c6c2-44c6-ae18-725929020420.xml, usbdlib/PUSBD_INTERFACE_LIST_ENTRY, usbdlib/USBD_INTERFACE_LIST_ENTRY, *PUSBD_INTERFACE_LIST_ENTRY, USBD_INTERFACE_LIST_ENTRY, USBD_INTERFACE_LIST_ENTRY structure [Buses], _USBD_INTERFACE_LIST_ENTRY
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : usbdlib.h
-req.include-header : Usbdlib.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : USBD_INTERFACE_LIST_ENTRY, *PUSBD_INTERFACE_LIST_ENTRY
-req.product : Windows 10 or later.
+UID: NS:usbdlib._USBD_INTERFACE_LIST_ENTRY
+title: "_USBD_INTERFACE_LIST_ENTRY"
+author: windows-driver-content
+description: The USBD_INTERFACE_LIST_ENTRY structure is used by USB client drivers to create an array of interfaces to be inserted into a configuration request.
+old-location: buses\usbd_interface_list_entry.htm
+old-project: usbref
+ms.assetid: 9b729c52-b03b-4b53-ae1a-9a025585ba7b
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: buses.usbd_interface_list_entry, PUSBD_INTERFACE_LIST_ENTRY structure pointer [Buses], PUSBD_INTERFACE_LIST_ENTRY, usbstrct_f42a04be-c6c2-44c6-ae18-725929020420.xml, usbdlib/PUSBD_INTERFACE_LIST_ENTRY, usbdlib/USBD_INTERFACE_LIST_ENTRY, *PUSBD_INTERFACE_LIST_ENTRY, USBD_INTERFACE_LIST_ENTRY, USBD_INTERFACE_LIST_ENTRY structure [Buses], _USBD_INTERFACE_LIST_ENTRY
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: usbdlib.h
+req.include-header: Usbdlib.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	usbdlib.h
+apiname:
+-	USBD_INTERFACE_LIST_ENTRY
+product: Windows
+targetos: Windows
+req.typenames: USBD_INTERFACE_LIST_ENTRY, *PUSBD_INTERFACE_LIST_ENTRY
+req.product: Windows 10 or later.
 ---
 
 # _USBD_INTERFACE_LIST_ENTRY structure

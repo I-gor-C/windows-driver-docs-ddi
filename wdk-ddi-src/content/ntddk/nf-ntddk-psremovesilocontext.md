@@ -1,41 +1,46 @@
 ---
-UID : NF:ntddk.PsRemoveSiloContext
-title : PsRemoveSiloContext function
-author : windows-driver-content
-description : This routine removes an object that was inserted in the Silo.
-old-location : kernel\psremovesilocontext.htm
-old-project : kernel
-ms.assetid : 3323EF1B-9EB3-4D56-A9A5-0A8397F8A235
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.psremovesilocontext, PsRemoveSiloContext, PsRemoveSiloContext routine [Kernel-Mode Driver Architecture], ntddk/PsRemoveSiloContext
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntddk.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10, version 1607
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.PsRemoveSiloContext
+title: PsRemoveSiloContext function
+author: windows-driver-content
+description: This routine removes an object that was inserted in the Silo.
+old-location: kernel\psremovesilocontext.htm
+old-project: kernel
+ms.assetid: 3323EF1B-9EB3-4D56-A9A5-0A8397F8A235
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.psremovesilocontext, PsRemoveSiloContext, PsRemoveSiloContext routine [Kernel-Mode Driver Architecture], ntddk/PsRemoveSiloContext
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntddk.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10, version 1607
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddk.h
+apiname:
+-	PsRemoveSiloContext
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

@@ -1,42 +1,46 @@
 ---
-UID : NF:bidispl.IBidiRequest.SetInputData
-title : IBidiRequest::SetInputData method
-author : windows-driver-content
-description : The IBidiRequest::SetInputData method sets the data to send to the printer.
-old-location : print\ibidirequest_ibidirequest__setinputdata.htm
-old-project : print
-ms.assetid : 8db7b5cd-b03f-4973-8711-8ac022bfb2b5
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : bidispl/IBidiRequest::IBidiRequest::SetInputData, IBidiRequest interface [Print Devices], IBidiRequest::SetInputData method, IBidiRequest::SetInputData, BIDI_BOOL, SetInputData, IBidiRequest::SetInputData method [Print Devices], BIDI_ENUM, BIDI_NULL, BIDI_FLOAT, BIDI_INT, IBidiRequest::IBidiRequest::SetInputData, BIDI_BLOB, _win32_IBidiRequest_SetInputData, BIDI_STRING, IBidiRequest, IBidiRequest::SetInputData method [Print Devices], IBidiRequest interface, gdi.ibidirequest_ibidirequest__setinputdata, print.ibidirequest_ibidirequest__setinputdata, BIDI_TEXT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : bidispl.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Windows XP
-req.target-min-winversvr : Windows Server 2003
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : bidispl.h
-req.dll : Bidispl.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
+UID: NF:bidispl.IBidiRequest.SetInputData
+title: IBidiRequest::SetInputData method
+author: windows-driver-content
+description: The IBidiRequest::SetInputData method sets the data to send to the printer.
+old-location: print\ibidirequest_ibidirequest__setinputdata.htm
+old-project: print
+ms.assetid: 8db7b5cd-b03f-4973-8711-8ac022bfb2b5
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: bidispl/IBidiRequest::IBidiRequest::SetInputData, IBidiRequest interface [Print Devices], IBidiRequest::SetInputData method, IBidiRequest::SetInputData, BIDI_BOOL, SetInputData, IBidiRequest::SetInputData method [Print Devices], BIDI_ENUM, BIDI_NULL, BIDI_FLOAT, BIDI_INT, IBidiRequest::IBidiRequest::SetInputData, BIDI_BLOB, _win32_IBidiRequest_SetInputData, BIDI_STRING, IBidiRequest, IBidiRequest::SetInputData method [Print Devices], IBidiRequest interface, gdi.ibidirequest_ibidirequest__setinputdata, print.ibidirequest_ibidirequest__setinputdata, BIDI_TEXT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: bidispl.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Windows XP
+req.target-min-winversvr: Windows Server 2003
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: bidispl.h
+req.dll: Bidispl.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	bidispl.dll
+apiname:
 -	IBidiRequest.IBidiRequest::SetInputData
-product : Windows
-targetos : Windows
-req.typenames : "*PMPEG2_TRANSPORT_STRIDE, MPEG2_TRANSPORT_STRIDE"
+product: Windows
+targetos: Windows
+req.typenames: "*PMPEG2_TRANSPORT_STRIDE, MPEG2_TRANSPORT_STRIDE"
 ---
 
 

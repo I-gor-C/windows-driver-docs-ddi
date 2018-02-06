@@ -1,41 +1,46 @@
 ---
-UID : NF:ksproxy.IKsDataTypeHandler.KsPrepareIoOperation
-title : IKsDataTypeHandler::KsPrepareIoOperation method
-author : windows-driver-content
-description : The KsPrepareIoOperation method initializes the extended header and prepares the media sample for an I/O operation.
-old-location : stream\iksdatatypehandler_ksprepareiooperation.htm
-old-project : stream
-ms.assetid : 16411d58-5fff-430f-b96d-78eed1dbb01c
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KsPrepareIoOperation method [Streaming Media Devices], IKsDataTypeHandler interface, IKsDataTypeHandler::KsPrepareIoOperation, stream.iksdatatypehandler_ksprepareiooperation, IKsDataTypeHandler, KsPrepareIoOperation method [Streaming Media Devices], KsPrepareIoOperation, ksproxy/IKsDataTypeHandler::KsPrepareIoOperation, IKsDataTypeHandler interface [Streaming Media Devices], KsPrepareIoOperation method, ksproxy_24b2f3a8-8870-434e-9f15-71fa363d3215.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : ksproxy.h
-req.include-header : Ksproxy.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : ksproxy.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PIPE_STATE
+UID: NF:ksproxy.IKsDataTypeHandler.KsPrepareIoOperation
+title: IKsDataTypeHandler::KsPrepareIoOperation method
+author: windows-driver-content
+description: The KsPrepareIoOperation method initializes the extended header and prepares the media sample for an I/O operation.
+old-location: stream\iksdatatypehandler_ksprepareiooperation.htm
+old-project: stream
+ms.assetid: 16411d58-5fff-430f-b96d-78eed1dbb01c
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KsPrepareIoOperation method [Streaming Media Devices], IKsDataTypeHandler interface, IKsDataTypeHandler::KsPrepareIoOperation, stream.iksdatatypehandler_ksprepareiooperation, IKsDataTypeHandler, KsPrepareIoOperation method [Streaming Media Devices], KsPrepareIoOperation, ksproxy/IKsDataTypeHandler::KsPrepareIoOperation, IKsDataTypeHandler interface [Streaming Media Devices], KsPrepareIoOperation method, ksproxy_24b2f3a8-8870-434e-9f15-71fa363d3215.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: ksproxy.h
+req.include-header: Ksproxy.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: ksproxy.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	ksproxy.h
+apiname:
+-	IKsDataTypeHandler.KsPrepareIoOperation
+product: Windows
+targetos: Windows
+req.typenames: PIPE_STATE
 ---
 
 

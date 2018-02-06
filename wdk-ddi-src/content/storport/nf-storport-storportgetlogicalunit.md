@@ -1,42 +1,48 @@
 ---
-UID : NF:storport.StorPortGetLogicalUnit
-title : StorPortGetLogicalUnit function
-author : windows-driver-content
-description : The StorPortGetLogicalUnit routine returns a pointer to the miniport driver's per-logical-unit storage area.
-old-location : storage\storportgetlogicalunit.htm
-old-project : storage
-ms.assetid : c8972d8b-9eba-4276-af63-1096a76b104f
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storprt_065c9617-06c6-4795-9743-14cd5803d9f9.xml, storage.storportgetlogicalunit, StorPortGetLogicalUnit, storport/StorPortGetLogicalUnit, StorPortGetLogicalUnit routine [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows XP and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Storport.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STOR_SPINLOCK
-req.product : Windows 10 or later.
+UID: NF:storport.StorPortGetLogicalUnit
+title: StorPortGetLogicalUnit function
+author: windows-driver-content
+description: The StorPortGetLogicalUnit routine returns a pointer to the miniport driver's per-logical-unit storage area.
+old-location: storage\storportgetlogicalunit.htm
+old-project: storage
+ms.assetid: c8972d8b-9eba-4276-af63-1096a76b104f
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storprt_065c9617-06c6-4795-9743-14cd5803d9f9.xml, storage.storportgetlogicalunit, StorPortGetLogicalUnit, storport/StorPortGetLogicalUnit, StorPortGetLogicalUnit routine [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows XP and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Storport.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Storport.lib
+-	Storport.dll
+apiname:
+-	StorPortGetLogicalUnit
+product: Windows
+targetos: Windows
+req.typenames: STOR_SPINLOCK
+req.product: Windows 10 or later.
 ---
 
 

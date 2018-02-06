@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugControl3.OutputCurrentState
-title : IDebugControl3::OutputCurrentState method
-author : windows-driver-content
-description : The OutputCurrentState method prints the current state of the current target to the debugger console.
-old-location : debugger\outputcurrentstate.htm
-old-project : debugger
-ms.assetid : 3d176438-5551-48a4-b757-81c14d84c075
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : dbgeng/IDebugControl2::OutputCurrentState, OutputCurrentState method [Windows Debugging], IDebugControl interface [Windows Debugging], OutputCurrentState method, IDebugControl::OutputCurrentState, IDebugControl2::OutputCurrentState, IDebugControl3, dbgeng/IDebugControl3::OutputCurrentState, IDebugControl3::OutputCurrentState, OutputCurrentState method [Windows Debugging], IDebugControl3 interface, OutputCurrentState method [Windows Debugging], IDebugControl2 interface, OutputCurrentState, OutputCurrentState method [Windows Debugging], IDebugControl interface, IDebugControl_1a038e3b-1bf3-47d0-8e40-b2ebc3506308.xml, IDebugControl3 interface [Windows Debugging], OutputCurrentState method, dbgeng/IDebugControl::OutputCurrentState, IDebugControl2 interface [Windows Debugging], OutputCurrentState method, debugger.outputcurrentstate
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl3.OutputCurrentState
+title: IDebugControl3::OutputCurrentState method
+author: windows-driver-content
+description: The OutputCurrentState method prints the current state of the current target to the debugger console.
+old-location: debugger\outputcurrentstate.htm
+old-project: debugger
+ms.assetid: 3d176438-5551-48a4-b757-81c14d84c075
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: dbgeng/IDebugControl2::OutputCurrentState, OutputCurrentState method [Windows Debugging], IDebugControl interface [Windows Debugging], OutputCurrentState method, IDebugControl::OutputCurrentState, IDebugControl2::OutputCurrentState, IDebugControl3, dbgeng/IDebugControl3::OutputCurrentState, IDebugControl3::OutputCurrentState, OutputCurrentState method [Windows Debugging], IDebugControl3 interface, OutputCurrentState method [Windows Debugging], IDebugControl2 interface, OutputCurrentState, OutputCurrentState method [Windows Debugging], IDebugControl interface, IDebugControl_1a038e3b-1bf3-47d0-8e40-b2ebc3506308.xml, IDebugControl3 interface [Windows Debugging], OutputCurrentState method, dbgeng/IDebugControl::OutputCurrentState, IDebugControl2 interface [Windows Debugging], OutputCurrentState method, debugger.outputcurrentstate
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl.OutputCurrentState
+-	IDebugControl2.OutputCurrentState
+-	IDebugControl3.OutputCurrentState
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

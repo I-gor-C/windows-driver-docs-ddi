@@ -1,42 +1,47 @@
 ---
-UID : NS:wdfdevice._WDF_POWER_POLICY_EVENT_CALLBACKS
-title : "_WDF_POWER_POLICY_EVENT_CALLBACKS"
-author : windows-driver-content
-description : The WDF_POWER_POLICY_EVENT_CALLBACKS structure contains pointers to a driver's power policy event callback functions.
-old-location : wdf\wdf_power_policy_event_callbacks.htm
-old-project : wdf
-ms.assetid : 6932c938-e477-4a18-9ada-bb3864c6a6f1
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : "_WDF_POWER_POLICY_EVENT_CALLBACKS, PWDF_POWER_POLICY_EVENT_CALLBACKS, wdfdevice/PWDF_POWER_POLICY_EVENT_CALLBACKS, wdf.wdf_power_policy_event_callbacks, kmdf.wdf_power_policy_event_callbacks, WDF_POWER_POLICY_EVENT_CALLBACKS structure, PWDF_POWER_POLICY_EVENT_CALLBACKS structure pointer, DFDeviceObjectGeneralRef_d4970639-86cb-4b83-8ac8-a7662ebca017.xml, wdfdevice/WDF_POWER_POLICY_EVENT_CALLBACKS, WDF_POWER_POLICY_EVENT_CALLBACKS, *PWDF_POWER_POLICY_EVENT_CALLBACKS"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdfdevice.h
-req.include-header : Wdf.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_POWER_POLICY_EVENT_CALLBACKS, *PWDF_POWER_POLICY_EVENT_CALLBACKS
-req.product : Windows 10 or later.
+UID: NS:wdfdevice._WDF_POWER_POLICY_EVENT_CALLBACKS
+title: "_WDF_POWER_POLICY_EVENT_CALLBACKS"
+author: windows-driver-content
+description: The WDF_POWER_POLICY_EVENT_CALLBACKS structure contains pointers to a driver's power policy event callback functions.
+old-location: wdf\wdf_power_policy_event_callbacks.htm
+old-project: wdf
+ms.assetid: 6932c938-e477-4a18-9ada-bb3864c6a6f1
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: "_WDF_POWER_POLICY_EVENT_CALLBACKS, PWDF_POWER_POLICY_EVENT_CALLBACKS, wdfdevice/PWDF_POWER_POLICY_EVENT_CALLBACKS, wdf.wdf_power_policy_event_callbacks, kmdf.wdf_power_policy_event_callbacks, WDF_POWER_POLICY_EVENT_CALLBACKS structure, PWDF_POWER_POLICY_EVENT_CALLBACKS structure pointer, DFDeviceObjectGeneralRef_d4970639-86cb-4b83-8ac8-a7662ebca017.xml, wdfdevice/WDF_POWER_POLICY_EVENT_CALLBACKS, WDF_POWER_POLICY_EVENT_CALLBACKS, *PWDF_POWER_POLICY_EVENT_CALLBACKS"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdfdevice.h
+req.include-header: Wdf.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfdevice.h
+apiname:
+-	WDF_POWER_POLICY_EVENT_CALLBACKS
+product: Windows
+targetos: Windows
+req.typenames: WDF_POWER_POLICY_EVENT_CALLBACKS, *PWDF_POWER_POLICY_EVENT_CALLBACKS
+req.product: Windows 10 or later.
 ---
 
 # _WDF_POWER_POLICY_EVENT_CALLBACKS structure

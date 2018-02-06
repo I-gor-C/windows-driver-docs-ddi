@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugControl4.GetEventIndexDescriptionWide
-title : IDebugControl4::GetEventIndexDescriptionWide method
-author : windows-driver-content
-description : The GetEventIndexDescriptionWide method describes the specified event in a static list of events for the current target.
-old-location : debugger\geteventindexdescriptionwide.htm
-old-project : debugger
-ms.assetid : 0153ee1d-93b3-497c-9fbf-e285c3730f72
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : GetEventIndexDescriptionWide method [Windows Debugging], IDebugControl4 interface, dbgeng/IDebugControl4::GetEventIndexDescriptionWide, IDebugControl4 interface [Windows Debugging], GetEventIndexDescriptionWide method, IDebugControl4::GetEventIndexDescriptionWide, GetEventIndexDescriptionWide, debugger.geteventindexdescriptionwide, IDebugControl4, GetEventIndexDescriptionWide method [Windows Debugging]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl4.GetEventIndexDescriptionWide
+title: IDebugControl4::GetEventIndexDescriptionWide method
+author: windows-driver-content
+description: The GetEventIndexDescriptionWide method describes the specified event in a static list of events for the current target.
+old-location: debugger\geteventindexdescriptionwide.htm
+old-project: debugger
+ms.assetid: 0153ee1d-93b3-497c-9fbf-e285c3730f72
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: GetEventIndexDescriptionWide method [Windows Debugging], IDebugControl4 interface, dbgeng/IDebugControl4::GetEventIndexDescriptionWide, IDebugControl4 interface [Windows Debugging], GetEventIndexDescriptionWide method, IDebugControl4::GetEventIndexDescriptionWide, GetEventIndexDescriptionWide, debugger.geteventindexdescriptionwide, IDebugControl4, GetEventIndexDescriptionWide method [Windows Debugging]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl4.GetEventIndexDescriptionWide
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

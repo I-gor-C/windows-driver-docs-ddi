@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddvol.IOCTL_VOLUME_READ_PLEX
-title : IOCTL_VOLUME_READ_PLEX
-author : windows-driver-content
-description : Performs a read on a specific plex of a volume.
-old-location : storage\ioctl_volume_read_plex.htm
-old-project : storage
-ms.assetid : 187e15d2-b527-4dab-81ea-498663363f8b
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_volume_read_plex, IOCTL_VOLUME_READ_PLEX control code [Storage Devices], IOCTL_VOLUME_READ_PLEX, ntddvol/IOCTL_VOLUME_READ_PLEX, k307_9f88e325-8c32-4be3-acaa-5df77ee023c2.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddvol.h
-req.include-header : Ntddvol.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows XP.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_WIN32K_CALLBACKS_PARAMS, *PVIDEO_WIN32K_CALLBACKS_PARAMS
+UID: NI:ntddvol.IOCTL_VOLUME_READ_PLEX
+title: IOCTL_VOLUME_READ_PLEX
+author: windows-driver-content
+description: Performs a read on a specific plex of a volume.
+old-location: storage\ioctl_volume_read_plex.htm
+old-project: storage
+ms.assetid: 187e15d2-b527-4dab-81ea-498663363f8b
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_volume_read_plex, IOCTL_VOLUME_READ_PLEX control code [Storage Devices], IOCTL_VOLUME_READ_PLEX, ntddvol/IOCTL_VOLUME_READ_PLEX, k307_9f88e325-8c32-4be3-acaa-5df77ee023c2.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddvol.h
+req.include-header: Ntddvol.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows XP.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddvol.h
+apiname:
+-	IOCTL_VOLUME_READ_PLEX
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_WIN32K_CALLBACKS_PARAMS, *PVIDEO_WIN32K_CALLBACKS_PARAMS
 ---
 
 # IOCTL_VOLUME_READ_PLEX IOCTL

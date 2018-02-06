@@ -1,41 +1,46 @@
 ---
-UID : NF:portcls.IPortWaveRTStream.UnmapAllocatedPages
-title : IPortWaveRTStream::UnmapAllocatedPages method
-author : windows-driver-content
-description : The UnmapAllocatedPages method releases a mapping.
-old-location : audio\iportwavertstream_unmapallocatedpages.htm
-old-project : audio
-ms.assetid : 558636ed-4bab-42bc-8925-df01e032439a
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : UnmapAllocatedPages method [Audio Devices], audmp-routines_2d402b1b-6951-48db-89bb-81f3cc7e0076.xml, audio.iportwavertstream_unmapallocatedpages, UnmapAllocatedPages method [Audio Devices], IPortWaveRTStream interface, portcls/IPortWaveRTStream::UnmapAllocatedPages, IPortWaveRTStream::UnmapAllocatedPages, UnmapAllocatedPages, IPortWaveRTStream interface [Audio Devices], UnmapAllocatedPages method, IPortWaveRTStream
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : portcls.h
-req.include-header : 
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : portcls.h
-req.dll : 
-req.irql : Passive level.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.IPortWaveRTStream.UnmapAllocatedPages
+title: IPortWaveRTStream::UnmapAllocatedPages method
+author: windows-driver-content
+description: The UnmapAllocatedPages method releases a mapping.
+old-location: audio\iportwavertstream_unmapallocatedpages.htm
+old-project: audio
+ms.assetid: 558636ed-4bab-42bc-8925-df01e032439a
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: UnmapAllocatedPages method [Audio Devices], audmp-routines_2d402b1b-6951-48db-89bb-81f3cc7e0076.xml, audio.iportwavertstream_unmapallocatedpages, UnmapAllocatedPages method [Audio Devices], IPortWaveRTStream interface, portcls/IPortWaveRTStream::UnmapAllocatedPages, IPortWaveRTStream::UnmapAllocatedPages, UnmapAllocatedPages, IPortWaveRTStream interface [Audio Devices], UnmapAllocatedPages method, IPortWaveRTStream
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: portcls.h
+req.include-header: 
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: portcls.h
+req.dll: 
+req.irql: Passive level.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Portcls.h
+apiname:
+-	IPortWaveRTStream.UnmapAllocatedPages
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

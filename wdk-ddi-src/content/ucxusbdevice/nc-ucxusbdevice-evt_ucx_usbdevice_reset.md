@@ -1,42 +1,47 @@
 ---
-UID : NC:ucxusbdevice.EVT_UCX_USBDEVICE_RESET
-title : EVT_UCX_USBDEVICE_RESET
-author : windows-driver-content
-description : The client driver's implementation that UCX calls when the port to which the device is attached is reset.
-old-location : buses\evt_ucx_usbdevice_reset.htm
-old-project : usbref
-ms.assetid : 6876e35c-f293-4849-915f-c686a9d91dd1
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : buses.evt_ucx_usbdevice_reset, EvtUcxUsbDeviceReset callback function [Buses], EvtUcxUsbDeviceReset, EVT_UCX_USBDEVICE_RESET, EVT_UCX_USBDEVICE_RESET, ucxusbdevice/EvtUcxUsbDeviceReset, PEVT_UCX_USBDEVICE_RESET callback function pointer [Buses], PEVT_UCX_USBDEVICE_RESET
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ucxusbdevice.h
-req.include-header : Ucxclass.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : DISPATCH_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSTREAM_INFO, STREAM_INFO"
-req.product : Windows 10 or later.
+UID: NC:ucxusbdevice.EVT_UCX_USBDEVICE_RESET
+title: EVT_UCX_USBDEVICE_RESET
+author: windows-driver-content
+description: The client driver's implementation that UCX calls when the port to which the device is attached is reset.
+old-location: buses\evt_ucx_usbdevice_reset.htm
+old-project: usbref
+ms.assetid: 6876e35c-f293-4849-915f-c686a9d91dd1
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: buses.evt_ucx_usbdevice_reset, EvtUcxUsbDeviceReset callback function [Buses], EvtUcxUsbDeviceReset, EVT_UCX_USBDEVICE_RESET, EVT_UCX_USBDEVICE_RESET, ucxusbdevice/EvtUcxUsbDeviceReset, PEVT_UCX_USBDEVICE_RESET callback function pointer [Buses], PEVT_UCX_USBDEVICE_RESET
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ucxusbdevice.h
+req.include-header: Ucxclass.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: DISPATCH_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	ucxusbdevice.h
+apiname:
+-	PEVT_UCX_USBDEVICE_RESET
+product: Windows
+targetos: Windows
+req.typenames: "*PSTREAM_INFO, STREAM_INFO"
+req.product: Windows 10 or later.
 ---
 
 

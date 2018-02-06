@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddstor._DEVICE_MEDIA_INFO
-title : "_DEVICE_MEDIA_INFO"
-author : windows-driver-content
-description : A storage class driver returns an array of DEVICE_MEDIA_INFO structures, embedded in a GET_MEDIA_TYPES structure, in response to an IOCTL_STORAGE_GET_MEDIA_TYPES_EX device-control request.
-old-location : storage\device_media_info.htm
-old-project : storage
-ms.assetid : 87906511-7bcb-4f4d-9383-44b0501536e3
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : structs-general_e2c363ff-f053-45be-a807-f90480c0ae1f.xml, ntddstor/DEVICE_MEDIA_INFO, ntddstor/PDEVICE_MEDIA_INFO, MEDIA_WRITE_PROTECTED, MEDIA_WRITE_ONCE, storage.device_media_info, MEDIA_ERASEABLE, _DEVICE_MEDIA_INFO, PDEVICE_MEDIA_INFO structure pointer [Storage Devices], MEDIA_READ_WRITE, PDEVICE_MEDIA_INFO, MEDIA_CURRENTLY_MOUNTED, DEVICE_MEDIA_INFO, MEDIA_READ_ONLY, *PDEVICE_MEDIA_INFO, DEVICE_MEDIA_INFO structure [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddstor.h
-req.include-header : Ntddstor.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDEVICE_MEDIA_INFO, DEVICE_MEDIA_INFO"
+UID: NS:ntddstor._DEVICE_MEDIA_INFO
+title: "_DEVICE_MEDIA_INFO"
+author: windows-driver-content
+description: A storage class driver returns an array of DEVICE_MEDIA_INFO structures, embedded in a GET_MEDIA_TYPES structure, in response to an IOCTL_STORAGE_GET_MEDIA_TYPES_EX device-control request.
+old-location: storage\device_media_info.htm
+old-project: storage
+ms.assetid: 87906511-7bcb-4f4d-9383-44b0501536e3
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: structs-general_e2c363ff-f053-45be-a807-f90480c0ae1f.xml, ntddstor/DEVICE_MEDIA_INFO, ntddstor/PDEVICE_MEDIA_INFO, MEDIA_WRITE_PROTECTED, MEDIA_WRITE_ONCE, storage.device_media_info, MEDIA_ERASEABLE, _DEVICE_MEDIA_INFO, PDEVICE_MEDIA_INFO structure pointer [Storage Devices], MEDIA_READ_WRITE, PDEVICE_MEDIA_INFO, MEDIA_CURRENTLY_MOUNTED, DEVICE_MEDIA_INFO, MEDIA_READ_ONLY, *PDEVICE_MEDIA_INFO, DEVICE_MEDIA_INFO structure [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddstor.h
+req.include-header: Ntddstor.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddstor.h
+apiname:
+-	DEVICE_MEDIA_INFO
+product: Windows
+targetos: Windows
+req.typenames: "*PDEVICE_MEDIA_INFO, DEVICE_MEDIA_INFO"
 ---
 
 # _DEVICE_MEDIA_INFO structure

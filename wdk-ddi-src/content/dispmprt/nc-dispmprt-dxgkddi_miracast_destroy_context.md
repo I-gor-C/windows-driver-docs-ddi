@@ -1,41 +1,46 @@
 ---
-UID : NC:dispmprt.DXGKDDI_MIRACAST_DESTROY_CONTEXT
-title : DXGKDDI_MIRACAST_DESTROY_CONTEXT
-author : windows-driver-content
-description : Destroys an instance of a Miracast device.
-old-location : display\dxgkddimiracastdestroycontext.htm
-old-project : display
-ms.assetid : 2DEEB379-C9E8-45E4-920D-D94F8C27A4EF
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkddimiracastdestroycontext, DxgkDdiMiracastDestroyContext callback function [Display Devices], DxgkDdiMiracastDestroyContext, DXGKDDI_MIRACAST_DESTROY_CONTEXT, DXGKDDI_MIRACAST_DESTROY_CONTEXT, dispmprt/DxgkDdiMiracastDestroyContext
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : dispmprt.h
-req.include-header : Dispmprt.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8.1
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
+UID: NC:dispmprt.DXGKDDI_MIRACAST_DESTROY_CONTEXT
+title: DXGKDDI_MIRACAST_DESTROY_CONTEXT
+author: windows-driver-content
+description: Destroys an instance of a Miracast device.
+old-location: display\dxgkddimiracastdestroycontext.htm
+old-project: display
+ms.assetid: 2DEEB379-C9E8-45E4-920D-D94F8C27A4EF
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkddimiracastdestroycontext, DxgkDdiMiracastDestroyContext callback function [Display Devices], DxgkDdiMiracastDestroyContext, DXGKDDI_MIRACAST_DESTROY_CONTEXT, DXGKDDI_MIRACAST_DESTROY_CONTEXT, dispmprt/DxgkDdiMiracastDestroyContext
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: dispmprt.h
+req.include-header: Dispmprt.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8.1
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Dispmprt.h
+apiname:
+-	DxgkDdiMiracastDestroyContext
+product: Windows
+targetos: Windows
+req.typenames: SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ---
 
 

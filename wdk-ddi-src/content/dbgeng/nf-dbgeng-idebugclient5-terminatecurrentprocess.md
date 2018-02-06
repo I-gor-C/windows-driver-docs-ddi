@@ -1,41 +1,49 @@
 ---
-UID : NF:dbgeng.IDebugClient5.TerminateCurrentProcess
-title : IDebugClient5::TerminateCurrentProcess method
-author : windows-driver-content
-description : The TerminateCurrentProcess method attempts to terminate the current process.
-old-location : debugger\terminatecurrentprocess.htm
-old-project : debugger
-ms.assetid : 8d3798f2-dd43-4703-bd33-8f2c3f738122
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugClient3::TerminateCurrentProcess, dbgeng/IDebugClient5::TerminateCurrentProcess, TerminateCurrentProcess method [Windows Debugging], dbgeng/IDebugClient4::TerminateCurrentProcess, TerminateCurrentProcess method [Windows Debugging], IDebugClient5 interface, debugger.terminatecurrentprocess, IDebugClient2 interface [Windows Debugging], TerminateCurrentProcess method, dbgeng/IDebugClient2::TerminateCurrentProcess, IDebugClient2::TerminateCurrentProcess, IDebugClient5 interface [Windows Debugging], TerminateCurrentProcess method, TerminateCurrentProcess method [Windows Debugging], IDebugClient2 interface, TerminateCurrentProcess method [Windows Debugging], IDebugClient3 interface, IDebugClient3 interface [Windows Debugging], TerminateCurrentProcess method, IDebugClient4 interface [Windows Debugging], TerminateCurrentProcess method, IDebugClient_7129a1e4-f1a5-4dff-a45c-bf759ae410cf.xml, dbgeng/IDebugClient3::TerminateCurrentProcess, IDebugClient4::TerminateCurrentProcess, TerminateCurrentProcess method [Windows Debugging], IDebugClient4 interface, TerminateCurrentProcess, IDebugClient5::TerminateCurrentProcess, IDebugClient5
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugClient5.TerminateCurrentProcess
+title: IDebugClient5::TerminateCurrentProcess method
+author: windows-driver-content
+description: The TerminateCurrentProcess method attempts to terminate the current process.
+old-location: debugger\terminatecurrentprocess.htm
+old-project: debugger
+ms.assetid: 8d3798f2-dd43-4703-bd33-8f2c3f738122
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugClient3::TerminateCurrentProcess, dbgeng/IDebugClient5::TerminateCurrentProcess, TerminateCurrentProcess method [Windows Debugging], dbgeng/IDebugClient4::TerminateCurrentProcess, TerminateCurrentProcess method [Windows Debugging], IDebugClient5 interface, debugger.terminatecurrentprocess, IDebugClient2 interface [Windows Debugging], TerminateCurrentProcess method, dbgeng/IDebugClient2::TerminateCurrentProcess, IDebugClient2::TerminateCurrentProcess, IDebugClient5 interface [Windows Debugging], TerminateCurrentProcess method, TerminateCurrentProcess method [Windows Debugging], IDebugClient2 interface, TerminateCurrentProcess method [Windows Debugging], IDebugClient3 interface, IDebugClient3 interface [Windows Debugging], TerminateCurrentProcess method, IDebugClient4 interface [Windows Debugging], TerminateCurrentProcess method, IDebugClient_7129a1e4-f1a5-4dff-a45c-bf759ae410cf.xml, dbgeng/IDebugClient3::TerminateCurrentProcess, IDebugClient4::TerminateCurrentProcess, TerminateCurrentProcess method [Windows Debugging], IDebugClient4 interface, TerminateCurrentProcess, IDebugClient5::TerminateCurrentProcess, IDebugClient5
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugClient2.TerminateCurrentProcess
+-	IDebugClient3.TerminateCurrentProcess
+-	IDebugClient4.TerminateCurrentProcess
+-	IDebugClient5.TerminateCurrentProcess
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

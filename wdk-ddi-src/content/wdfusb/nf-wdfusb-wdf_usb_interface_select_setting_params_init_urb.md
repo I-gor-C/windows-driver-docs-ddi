@@ -1,42 +1,47 @@
 ---
-UID : NF:wdfusb.WDF_USB_INTERFACE_SELECT_SETTING_PARAMS_INIT_URB
-title : WDF_USB_INTERFACE_SELECT_SETTING_PARAMS_INIT_URB function
-author : windows-driver-content
-description : The WDF_USB_INTERFACE_SELECT_SETTING_PARAMS_INIT_URB function initializes a WDF_USB_INTERFACE_SELECT_SETTING_PARAMS structure so that a driver can select a USB interface by specifying a URB.
-old-location : wdf\wdf_usb_interface_select_setting_params_init_urb.htm
-old-project : wdf
-ms.assetid : 0c11941e-d0fc-4b0f-bf18-9920d371dd09
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : kmdf.wdf_usb_interface_select_setting_params_init_urb, WDF_USB_INTERFACE_SELECT_SETTING_PARAMS_INIT_URB, WDF_USB_INTERFACE_SELECT_SETTING_PARAMS_INIT_URB function, wdfusb/WDF_USB_INTERFACE_SELECT_SETTING_PARAMS_INIT_URB, wdf.wdf_usb_interface_select_setting_params_init_urb, DFUsbRef_90777ed2-7cfd-422f-ba5b-423fd051e142.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfusb.h
-req.include-header : Wdfusb.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfusb.WDF_USB_INTERFACE_SELECT_SETTING_PARAMS_INIT_URB
+title: WDF_USB_INTERFACE_SELECT_SETTING_PARAMS_INIT_URB function
+author: windows-driver-content
+description: The WDF_USB_INTERFACE_SELECT_SETTING_PARAMS_INIT_URB function initializes a WDF_USB_INTERFACE_SELECT_SETTING_PARAMS structure so that a driver can select a USB interface by specifying a URB.
+old-location: wdf\wdf_usb_interface_select_setting_params_init_urb.htm
+old-project: wdf
+ms.assetid: 0c11941e-d0fc-4b0f-bf18-9920d371dd09
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: kmdf.wdf_usb_interface_select_setting_params_init_urb, WDF_USB_INTERFACE_SELECT_SETTING_PARAMS_INIT_URB, WDF_USB_INTERFACE_SELECT_SETTING_PARAMS_INIT_URB function, wdfusb/WDF_USB_INTERFACE_SELECT_SETTING_PARAMS_INIT_URB, wdf.wdf_usb_interface_select_setting_params_init_urb, DFUsbRef_90777ed2-7cfd-422f-ba5b-423fd051e142.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfusb.h
+req.include-header: Wdfusb.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfusb.h
+apiname:
+-	WDF_USB_INTERFACE_SELECT_SETTING_PARAMS_INIT_URB
+product: Windows
+targetos: Windows
+req.typenames: WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
+req.product: Windows 10 or later.
 ---
 
 

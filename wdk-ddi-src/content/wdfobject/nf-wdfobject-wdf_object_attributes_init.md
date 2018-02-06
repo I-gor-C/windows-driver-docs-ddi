@@ -1,42 +1,47 @@
 ---
-UID : NF:wdfobject.WDF_OBJECT_ATTRIBUTES_INIT
-title : WDF_OBJECT_ATTRIBUTES_INIT function
-author : windows-driver-content
-description : The WDF_OBJECT_ATTRIBUTES_INIT function initializes a driver's WDF_OBJECT_ATTRIBUTES structure.
-old-location : wdf\wdf_object_attributes_init.htm
-old-project : wdf
-ms.assetid : c8412ad0-a3c2-41cf-aed6-32b244bc3969
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdfobject/WDF_OBJECT_ATTRIBUTES_INIT, kmdf.wdf_object_attributes_init, WDF_OBJECT_ATTRIBUTES_INIT, WDF_OBJECT_ATTRIBUTES_INIT function, wdf.wdf_object_attributes_init, DFGenObjectRef_2d1e5e34-5637-4301-807c-ad525d4cb34b.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfobject.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_SYNCHRONIZATION_SCOPE
-req.product : Windows 10 or later.
+UID: NF:wdfobject.WDF_OBJECT_ATTRIBUTES_INIT
+title: WDF_OBJECT_ATTRIBUTES_INIT function
+author: windows-driver-content
+description: The WDF_OBJECT_ATTRIBUTES_INIT function initializes a driver's WDF_OBJECT_ATTRIBUTES structure.
+old-location: wdf\wdf_object_attributes_init.htm
+old-project: wdf
+ms.assetid: c8412ad0-a3c2-41cf-aed6-32b244bc3969
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdfobject/WDF_OBJECT_ATTRIBUTES_INIT, kmdf.wdf_object_attributes_init, WDF_OBJECT_ATTRIBUTES_INIT, WDF_OBJECT_ATTRIBUTES_INIT function, wdf.wdf_object_attributes_init, DFGenObjectRef_2d1e5e34-5637-4301-807c-ad525d4cb34b.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfobject.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfobject.h
+apiname:
+-	WDF_OBJECT_ATTRIBUTES_INIT
+product: Windows
+targetos: Windows
+req.typenames: WDF_SYNCHRONIZATION_SCOPE
+req.product: Windows 10 or later.
 ---
 
 

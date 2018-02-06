@@ -1,41 +1,49 @@
 ---
-UID : NF:d3dkmthk.D3DKMTOfferAllocations
-title : D3DKMTOfferAllocations function
-author : windows-driver-content
-description : Offers video memory allocations for reuse.
-old-location : display\d3dkmtofferallocations.htm
-old-project : display
-ms.assetid : 3cc84381-fa1e-4c6c-bb5b-459a93676cfd
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.d3dkmtofferallocations, D3DKMTOfferAllocations function [Display Devices], D3DKMTOfferAllocations, d3dkmthk/D3DKMTOfferAllocations, PFND3DKMT_OFFERALLOCATIONS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Universal
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Gdi32.lib
-req.dll : Gdi32.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_DRIVERVERSION
+UID: NF:d3dkmthk.D3DKMTOfferAllocations
+title: D3DKMTOfferAllocations function
+author: windows-driver-content
+description: Offers video memory allocations for reuse.
+old-location: display\d3dkmtofferallocations.htm
+old-project: display
+ms.assetid: 3cc84381-fa1e-4c6c-bb5b-459a93676cfd
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.d3dkmtofferallocations, D3DKMTOfferAllocations function [Display Devices], D3DKMTOfferAllocations, d3dkmthk/D3DKMTOfferAllocations, PFND3DKMT_OFFERALLOCATIONS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Universal
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Gdi32.lib
+req.dll: Gdi32.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Gdi32.dll
+-	API-MS-Win-DX-D3DKmt-l1-1-0.dll
+-	API-MS-Win-DX-D3DKmt-l1-1-1.dll
+-	API-MS-Win-DX-D3DKMT-L1-1-2.dll
+apiname:
+-	D3DKMTOfferAllocations
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_DRIVERVERSION
 ---
 
 

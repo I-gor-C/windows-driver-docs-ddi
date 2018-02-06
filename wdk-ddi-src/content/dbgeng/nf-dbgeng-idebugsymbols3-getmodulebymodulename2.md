@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugSymbols3.GetModuleByModuleName2
-title : IDebugSymbols3::GetModuleByModuleName2 method
-author : windows-driver-content
-description : The GetModuleByModuleName2 method searches through the process's modules for one with the specified name.
-old-location : debugger\getmodulebymodulename2.htm
-old-project : debugger
-ms.assetid : 25ebb316-e801-44fa-bb80-dffe9051db7e
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : debugger.getmodulebymodulename2, GetModuleByModuleName2, IDebugSymbols3::GetModuleByModuleName2, GetModuleByModuleName2 method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols_f5630cfb-3af4-4722-8851-0a12523fbf82.xml, GetModuleByModuleName2 method [Windows Debugging], dbgeng/IDebugSymbols3::GetModuleByModuleName2, IDebugSymbols3 interface [Windows Debugging], GetModuleByModuleName2 method, IDebugSymbols3
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSymbols3.GetModuleByModuleName2
+title: IDebugSymbols3::GetModuleByModuleName2 method
+author: windows-driver-content
+description: The GetModuleByModuleName2 method searches through the process's modules for one with the specified name.
+old-location: debugger\getmodulebymodulename2.htm
+old-project: debugger
+ms.assetid: 25ebb316-e801-44fa-bb80-dffe9051db7e
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: debugger.getmodulebymodulename2, GetModuleByModuleName2, IDebugSymbols3::GetModuleByModuleName2, GetModuleByModuleName2 method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols_f5630cfb-3af4-4722-8851-0a12523fbf82.xml, GetModuleByModuleName2 method [Windows Debugging], dbgeng/IDebugSymbols3::GetModuleByModuleName2, IDebugSymbols3 interface [Windows Debugging], GetModuleByModuleName2 method, IDebugSymbols3
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugSymbols3.GetModuleByModuleName2
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

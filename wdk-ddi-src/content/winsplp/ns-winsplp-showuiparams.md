@@ -1,42 +1,47 @@
 ---
-UID : NS:winsplp.SHOWUIPARAMS
-title : SHOWUIPARAMS
-author : windows-driver-content
-description : The SplPromptUIInUsersSession function uses the SHOWUIPARAMS structure to hold information about the appearance and behavior of a message box.
-old-location : print\showuiparams.htm
-old-project : print
-ms.assetid : 63ee7f5c-ca95-4c2d-be17-56a769188f8c
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : spoolfnc_bf6ce7c8-8b86-40c9-9b03-64c3e3366a04.xml, *PSHOWUIPARAMS, winsplp/SHOWUIPARAMS, PSHOWUIPARAMS, winsplp/PSHOWUIPARAMS, SHOWUIPARAMS, SHOWUIPARAMS structure [Print Devices], print.showuiparams, PSHOWUIPARAMS structure pointer [Print Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : winsplp.h
-req.include-header : Winsplp.h
-req.target-type : Windows
-req.target-min-winverclnt : This function is available in Windows XP and later operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SHOWUIPARAMS, *PSHOWUIPARAMS
-req.product : Windows 10 or later.
+UID: NS:winsplp.SHOWUIPARAMS
+title: SHOWUIPARAMS
+author: windows-driver-content
+description: The SplPromptUIInUsersSession function uses the SHOWUIPARAMS structure to hold information about the appearance and behavior of a message box.
+old-location: print\showuiparams.htm
+old-project: print
+ms.assetid: 63ee7f5c-ca95-4c2d-be17-56a769188f8c
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: spoolfnc_bf6ce7c8-8b86-40c9-9b03-64c3e3366a04.xml, *PSHOWUIPARAMS, winsplp/SHOWUIPARAMS, PSHOWUIPARAMS, winsplp/PSHOWUIPARAMS, SHOWUIPARAMS, SHOWUIPARAMS structure [Print Devices], print.showuiparams, PSHOWUIPARAMS structure pointer [Print Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: winsplp.h
+req.include-header: Winsplp.h
+req.target-type: Windows
+req.target-min-winverclnt: This function is available in Windows XP and later operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	winsplp.h
+apiname:
+-	SHOWUIPARAMS
+product: Windows
+targetos: Windows
+req.typenames: SHOWUIPARAMS, *PSHOWUIPARAMS
+req.product: Windows 10 or later.
 ---
 
 # SHOWUIPARAMS structure

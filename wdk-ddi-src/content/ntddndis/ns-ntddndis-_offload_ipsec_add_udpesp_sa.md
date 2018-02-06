@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddndis._OFFLOAD_IPSEC_ADD_UDPESP_SA
-title : "_OFFLOAD_IPSEC_ADD_UDPESP_SA"
-author : windows-driver-content
-description : The OFFLOAD_IPSEC_ADD_UDPESP_SA structure contains information for each security association (SA) that a miniport driver adds for UDP-encapsulated ESP packets to a NIC.
-old-location : netvista\offload_ipsec_add_udpesp_sa.htm
-old-project : netvista
-ms.assetid : 4d3f554f-2733-4896-827c-14e92e8034ce
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : POFFLOAD_IPSEC_ADD_UDPESP_SA, netvista.offload_ipsec_add_udpesp_sa, OFFLOAD_IPSEC_ADD_UDPESP_SA structure [Network Drivers Starting with Windows Vista], _OFFLOAD_IPSEC_ADD_UDPESP_SA, ntddndis/OFFLOAD_IPSEC_ADD_UDPESP_SA, *POFFLOAD_IPSEC_ADD_UDPESP_SA, 216offload_081b17de-1f16-44c7-9888-5d0388c081d9.xml, POFFLOAD_IPSEC_ADD_UDPESP_SA structure pointer [Network Drivers Starting with Windows Vista], ntddndis/POFFLOAD_IPSEC_ADD_UDPESP_SA, OFFLOAD_IPSEC_ADD_UDPESP_SA
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*POFFLOAD_IPSEC_ADD_UDPESP_SA, OFFLOAD_IPSEC_ADD_UDPESP_SA"
+UID: NS:ntddndis._OFFLOAD_IPSEC_ADD_UDPESP_SA
+title: "_OFFLOAD_IPSEC_ADD_UDPESP_SA"
+author: windows-driver-content
+description: The OFFLOAD_IPSEC_ADD_UDPESP_SA structure contains information for each security association (SA) that a miniport driver adds for UDP-encapsulated ESP packets to a NIC.
+old-location: netvista\offload_ipsec_add_udpesp_sa.htm
+old-project: netvista
+ms.assetid: 4d3f554f-2733-4896-827c-14e92e8034ce
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: POFFLOAD_IPSEC_ADD_UDPESP_SA, netvista.offload_ipsec_add_udpesp_sa, OFFLOAD_IPSEC_ADD_UDPESP_SA structure [Network Drivers Starting with Windows Vista], _OFFLOAD_IPSEC_ADD_UDPESP_SA, ntddndis/OFFLOAD_IPSEC_ADD_UDPESP_SA, *POFFLOAD_IPSEC_ADD_UDPESP_SA, 216offload_081b17de-1f16-44c7-9888-5d0388c081d9.xml, POFFLOAD_IPSEC_ADD_UDPESP_SA structure pointer [Network Drivers Starting with Windows Vista], ntddndis/POFFLOAD_IPSEC_ADD_UDPESP_SA, OFFLOAD_IPSEC_ADD_UDPESP_SA
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddndis.h
+apiname:
+-	OFFLOAD_IPSEC_ADD_UDPESP_SA
+product: Windows
+targetos: Windows
+req.typenames: "*POFFLOAD_IPSEC_ADD_UDPESP_SA, OFFLOAD_IPSEC_ADD_UDPESP_SA"
 ---
 
 # _OFFLOAD_IPSEC_ADD_UDPESP_SA structure

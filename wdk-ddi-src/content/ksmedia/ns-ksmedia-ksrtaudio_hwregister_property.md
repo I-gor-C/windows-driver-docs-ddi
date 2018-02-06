@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.KSRTAUDIO_HWREGISTER_PROPERTY
-title : KSRTAUDIO_HWREGISTER_PROPERTY
-author : windows-driver-content
-description : The KSRTAUDIO_HWREGISTRY_PROPERTY structure appends a register base address to a KSPROPERTY structure.
-old-location : audio\ksrtaudio_hwregister_property.htm
-old-project : audio
-ms.assetid : 200577b9-44de-45ca-8b4f-904eabb1a4ce
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : ksmedia/KSRTAUDIO_HWREGISTER_PROPERTY, ksmedia/PKSRTAUDIO_HWREGISTER_PROPERTY, *PKSRTAUDIO_HWREGISTER_PROPERTY, PKSRTAUDIO_HWREGISTER_PROPERTY, audio.ksrtaudio_hwregister_property, aud-prop_d554442a-4677-4fc6-a305-ef02d5caffef.xml, KSRTAUDIO_HWREGISTER_PROPERTY, KSRTAUDIO_HWREGISTER_PROPERTY structure [Audio Devices], PKSRTAUDIO_HWREGISTER_PROPERTY structure pointer [Audio Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKSRTAUDIO_HWREGISTER_PROPERTY, KSRTAUDIO_HWREGISTER_PROPERTY"
+UID: NS:ksmedia.KSRTAUDIO_HWREGISTER_PROPERTY
+title: KSRTAUDIO_HWREGISTER_PROPERTY
+author: windows-driver-content
+description: The KSRTAUDIO_HWREGISTRY_PROPERTY structure appends a register base address to a KSPROPERTY structure.
+old-location: audio\ksrtaudio_hwregister_property.htm
+old-project: audio
+ms.assetid: 200577b9-44de-45ca-8b4f-904eabb1a4ce
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: ksmedia/KSRTAUDIO_HWREGISTER_PROPERTY, ksmedia/PKSRTAUDIO_HWREGISTER_PROPERTY, *PKSRTAUDIO_HWREGISTER_PROPERTY, PKSRTAUDIO_HWREGISTER_PROPERTY, audio.ksrtaudio_hwregister_property, aud-prop_d554442a-4677-4fc6-a305-ef02d5caffef.xml, KSRTAUDIO_HWREGISTER_PROPERTY, KSRTAUDIO_HWREGISTER_PROPERTY structure [Audio Devices], PKSRTAUDIO_HWREGISTER_PROPERTY structure pointer [Audio Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	KSRTAUDIO_HWREGISTER_PROPERTY
+product: Windows
+targetos: Windows
+req.typenames: "*PKSRTAUDIO_HWREGISTER_PROPERTY, KSRTAUDIO_HWREGISTER_PROPERTY"
 ---
 
 # KSRTAUDIO_HWREGISTER_PROPERTY structure

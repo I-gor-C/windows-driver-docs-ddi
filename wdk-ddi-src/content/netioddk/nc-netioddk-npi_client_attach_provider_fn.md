@@ -1,41 +1,46 @@
 ---
-UID : NC:netioddk.NPI_CLIENT_ATTACH_PROVIDER_FN
-title : NPI_CLIENT_ATTACH_PROVIDER_FN
-author : windows-driver-content
-description : A client module's ClientAttachProvider callback function attaches the client module to a provider module.
-old-location : netvista\clientattachprovider.htm
-old-project : netvista
-ms.assetid : 8f8abdb1-d018-4404-a80a-74017c324a0f
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.clientattachprovider, ClientAttachProvider callback function [Network Drivers Starting with Windows Vista], ClientAttachProvider, NPI_CLIENT_ATTACH_PROVIDER_FN, NPI_CLIENT_ATTACH_PROVIDER_FN, netioddk/ClientAttachProvider, PNPI_CLIENT_ATTACH_PROVIDER_FN callback function [Network Drivers Starting with Windows Vista], PNPI_CLIENT_ATTACH_PROVIDER_FN, nmrref_36b8ce1f-6570-40a1-b6f9-5d6782aac61d.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : netioddk.h
-req.include-header : Wsk.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating   systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NET_DMA_PROVIDER_CHARACTERISTICS, *PNET_DMA_PROVIDER_CHARACTERISTICS
+UID: NC:netioddk.NPI_CLIENT_ATTACH_PROVIDER_FN
+title: NPI_CLIENT_ATTACH_PROVIDER_FN
+author: windows-driver-content
+description: A client module's ClientAttachProvider callback function attaches the client module to a provider module.
+old-location: netvista\clientattachprovider.htm
+old-project: netvista
+ms.assetid: 8f8abdb1-d018-4404-a80a-74017c324a0f
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.clientattachprovider, ClientAttachProvider callback function [Network Drivers Starting with Windows Vista], ClientAttachProvider, NPI_CLIENT_ATTACH_PROVIDER_FN, NPI_CLIENT_ATTACH_PROVIDER_FN, netioddk/ClientAttachProvider, PNPI_CLIENT_ATTACH_PROVIDER_FN callback function [Network Drivers Starting with Windows Vista], PNPI_CLIENT_ATTACH_PROVIDER_FN, nmrref_36b8ce1f-6570-40a1-b6f9-5d6782aac61d.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: netioddk.h
+req.include-header: Wsk.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	netioddk.h
+apiname:
+-	PNPI_CLIENT_ATTACH_PROVIDER_FN
+product: Windows
+targetos: Windows
+req.typenames: NET_DMA_PROVIDER_CHARACTERISTICS, *PNET_DMA_PROVIDER_CHARACTERISTICS
 ---
 
 

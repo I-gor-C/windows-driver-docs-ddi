@@ -1,41 +1,46 @@
 ---
-UID : NI:bthioctl.IOCTL_BTH_GET_DEVICE_INFO
-title : IOCTL_BTH_GET_DEVICE_INFO
-author : windows-driver-content
-description : The IOCTL_BTH_GET_DEVICE_INFO request returns information about all cached, previously discovered remote radios that are Bluetooth-enabled.
-old-location : bltooth\ioctl_bth_get_device_info.htm
-old-project : bltooth
-ms.assetid : 99bc222f-9c27-45b7-ade1-2401dfa41d7c
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : bltooth.ioctl_bth_get_device_info, IOCTL_BTH_GET_DEVICE_INFO control code [Bluetooth Devices], IOCTL_BTH_GET_DEVICE_INFO, bthioctl/IOCTL_BTH_GET_DEVICE_INFO, bth_ioctls_427504e3-7414-4d2c-b835-b612ed73ce01.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : bthioctl.h
-req.include-header : Bthioctl.h
-req.target-type : Windows
-req.target-min-winverclnt : Versions:\_Supported in Windows Vista, and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= PASSIVE_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HFP_BYPASS_CODEC_ID_V1, *PHFP_BYPASS_CODEC_ID_V1
+UID: NI:bthioctl.IOCTL_BTH_GET_DEVICE_INFO
+title: IOCTL_BTH_GET_DEVICE_INFO
+author: windows-driver-content
+description: The IOCTL_BTH_GET_DEVICE_INFO request returns information about all cached, previously discovered remote radios that are Bluetooth-enabled.
+old-location: bltooth\ioctl_bth_get_device_info.htm
+old-project: bltooth
+ms.assetid: 99bc222f-9c27-45b7-ade1-2401dfa41d7c
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: bltooth.ioctl_bth_get_device_info, IOCTL_BTH_GET_DEVICE_INFO control code [Bluetooth Devices], IOCTL_BTH_GET_DEVICE_INFO, bthioctl/IOCTL_BTH_GET_DEVICE_INFO, bth_ioctls_427504e3-7414-4d2c-b835-b612ed73ce01.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: bthioctl.h
+req.include-header: Bthioctl.h
+req.target-type: Windows
+req.target-min-winverclnt: Versions:\_Supported in Windows Vista, and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= PASSIVE_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Bthioctl.h
+apiname:
+-	IOCTL_BTH_GET_DEVICE_INFO
+product: Windows
+targetos: Windows
+req.typenames: HFP_BYPASS_CODEC_ID_V1, *PHFP_BYPASS_CODEC_ID_V1
 ---
 
 # IOCTL_BTH_GET_DEVICE_INFO IOCTL

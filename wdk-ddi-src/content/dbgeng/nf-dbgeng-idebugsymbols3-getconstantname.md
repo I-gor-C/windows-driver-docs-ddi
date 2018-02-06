@@ -1,41 +1,47 @@
 ---
-UID : NF:dbgeng.IDebugSymbols3.GetConstantName
-title : IDebugSymbols3::GetConstantName method
-author : windows-driver-content
-description : The GetConstantName method returns the name of the specified constant.
-old-location : debugger\getconstantname.htm
-old-project : debugger
-ms.assetid : bb308ee7-e8bc-49c0-b1f9-199af7dca289
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugSymbols2::GetConstantName, GetConstantName method [Windows Debugging], IDebugSymbols3 interface, dbgeng/IDebugSymbols2::GetConstantName, GetConstantName method [Windows Debugging], IDebugSymbols2 interface, debugger.getconstantname, IDebugSymbols2 interface [Windows Debugging], GetConstantName method, IDebugSymbols3 interface [Windows Debugging], GetConstantName method, GetConstantName, IDebugSymbols_438111b4-a0f4-40cc-aadc-8b1d2c67b219.xml, dbgeng/IDebugSymbols3::GetConstantName, GetConstantName method [Windows Debugging], IDebugSymbols3, IDebugSymbols3::GetConstantName
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSymbols3.GetConstantName
+title: IDebugSymbols3::GetConstantName method
+author: windows-driver-content
+description: The GetConstantName method returns the name of the specified constant.
+old-location: debugger\getconstantname.htm
+old-project: debugger
+ms.assetid: bb308ee7-e8bc-49c0-b1f9-199af7dca289
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugSymbols2::GetConstantName, GetConstantName method [Windows Debugging], IDebugSymbols3 interface, dbgeng/IDebugSymbols2::GetConstantName, GetConstantName method [Windows Debugging], IDebugSymbols2 interface, debugger.getconstantname, IDebugSymbols2 interface [Windows Debugging], GetConstantName method, IDebugSymbols3 interface [Windows Debugging], GetConstantName method, GetConstantName, IDebugSymbols_438111b4-a0f4-40cc-aadc-8b1d2c67b219.xml, dbgeng/IDebugSymbols3::GetConstantName, GetConstantName method [Windows Debugging], IDebugSymbols3, IDebugSymbols3::GetConstantName
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugSymbols2.GetConstantName
+-	IDebugSymbols3.GetConstantName
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NS:scsi.BLOCK_DEVICE_TOKEN_DESCRIPTOR
-title : BLOCK_DEVICE_TOKEN_DESCRIPTOR
-author : windows-driver-content
-description : BLOCK_DEVICE_TOKEN_DESCRIPTOR contains the token returned from a the POPULATE TOKEN command for an offload read data operation.
-old-location : storage\block_device_token_descriptor.htm
-old-project : storage
-ms.assetid : AD4E4EF6-F033-4226-9DC6-A6E55E965B4C
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : scsi/PBLOCK_DEVICE_TOKEN_DESCRIPTOR, scsi/BLOCK_DEVICE_TOKEN_DESCRIPTOR, PBLOCK_DEVICE_TOKEN_DESCRIPTOR, BLOCK_DEVICE_TOKEN_DESCRIPTOR, PBLOCK_DEVICE_TOKEN_DESCRIPTOR structure pointer [Storage Devices], BLOCK_DEVICE_TOKEN_DESCRIPTOR structure [Storage Devices], *PBLOCK_DEVICE_TOKEN_DESCRIPTOR, storage.block_device_token_descriptor
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : scsi.h
-req.include-header : Scsi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PBLOCK_DEVICE_TOKEN_DESCRIPTOR, BLOCK_DEVICE_TOKEN_DESCRIPTOR"
-req.product : Windows 10 or later.
+UID: NS:scsi.BLOCK_DEVICE_TOKEN_DESCRIPTOR
+title: BLOCK_DEVICE_TOKEN_DESCRIPTOR
+author: windows-driver-content
+description: BLOCK_DEVICE_TOKEN_DESCRIPTOR contains the token returned from a the POPULATE TOKEN command for an offload read data operation.
+old-location: storage\block_device_token_descriptor.htm
+old-project: storage
+ms.assetid: AD4E4EF6-F033-4226-9DC6-A6E55E965B4C
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: scsi/PBLOCK_DEVICE_TOKEN_DESCRIPTOR, scsi/BLOCK_DEVICE_TOKEN_DESCRIPTOR, PBLOCK_DEVICE_TOKEN_DESCRIPTOR, BLOCK_DEVICE_TOKEN_DESCRIPTOR, PBLOCK_DEVICE_TOKEN_DESCRIPTOR structure pointer [Storage Devices], BLOCK_DEVICE_TOKEN_DESCRIPTOR structure [Storage Devices], *PBLOCK_DEVICE_TOKEN_DESCRIPTOR, storage.block_device_token_descriptor
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: scsi.h
+req.include-header: Scsi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	scsi.h
+apiname:
+-	BLOCK_DEVICE_TOKEN_DESCRIPTOR
+product: Windows
+targetos: Windows
+req.typenames: "*PBLOCK_DEVICE_TOKEN_DESCRIPTOR, BLOCK_DEVICE_TOKEN_DESCRIPTOR"
+req.product: Windows 10 or later.
 ---
 
 # BLOCK_DEVICE_TOKEN_DESCRIPTOR structure

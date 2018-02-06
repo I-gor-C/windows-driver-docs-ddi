@@ -1,42 +1,47 @@
 ---
-UID : NS:wwan._WWAN_SMS_SEND_CDMA
-title : "_WWAN_SMS_SEND_CDMA"
-author : windows-driver-content
-description : The WWAN_SMS_SEND_CDMA structure represents a CDMA-based SMS text message to send.
-old-location : netvista\wwan_sms_send_cdma.htm
-old-project : netvista
-ms.assetid : e05b7391-7852-45c7-aed0-36c95b4e475b
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.wwan_sms_send_cdma, WwanRef_0b4ec978-8685-46a6-b1dd-556606660614.xml, WWAN_SMS_SEND_CDMA structure [Network Drivers Starting with Windows Vista], PWWAN_SMS_SEND_CDMA structure pointer [Network Drivers Starting with Windows Vista], _WWAN_SMS_SEND_CDMA, *PWWAN_SMS_SEND_CDMA, wwan/WWAN_SMS_SEND_CDMA, wwan/PWWAN_SMS_SEND_CDMA, PWWAN_SMS_SEND_CDMA, WWAN_SMS_SEND_CDMA
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wwan.h
-req.include-header : Wwan.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WWAN_SMS_SEND_CDMA, *PWWAN_SMS_SEND_CDMA
-req.product : Windows 10 or later.
+UID: NS:wwan._WWAN_SMS_SEND_CDMA
+title: "_WWAN_SMS_SEND_CDMA"
+author: windows-driver-content
+description: The WWAN_SMS_SEND_CDMA structure represents a CDMA-based SMS text message to send.
+old-location: netvista\wwan_sms_send_cdma.htm
+old-project: netvista
+ms.assetid: e05b7391-7852-45c7-aed0-36c95b4e475b
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.wwan_sms_send_cdma, WwanRef_0b4ec978-8685-46a6-b1dd-556606660614.xml, WWAN_SMS_SEND_CDMA structure [Network Drivers Starting with Windows Vista], PWWAN_SMS_SEND_CDMA structure pointer [Network Drivers Starting with Windows Vista], _WWAN_SMS_SEND_CDMA, *PWWAN_SMS_SEND_CDMA, wwan/WWAN_SMS_SEND_CDMA, wwan/PWWAN_SMS_SEND_CDMA, PWWAN_SMS_SEND_CDMA, WWAN_SMS_SEND_CDMA
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wwan.h
+req.include-header: Wwan.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wwan.h
+apiname:
+-	WWAN_SMS_SEND_CDMA
+product: Windows
+targetos: Windows
+req.typenames: WWAN_SMS_SEND_CDMA, *PWWAN_SMS_SEND_CDMA
+req.product: Windows 10 or later.
 ---
 
 # _WWAN_SMS_SEND_CDMA structure

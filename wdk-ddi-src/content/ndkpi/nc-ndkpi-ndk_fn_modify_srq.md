@@ -1,41 +1,46 @@
 ---
-UID : NC:ndkpi.NDK_FN_MODIFY_SRQ
-title : NDK_FN_MODIFY_SRQ
-author : windows-driver-content
-description : The NdkModifySrq (NDK_FN_MODIFY_SRQ) function modifies the size and notification threshold of an NDK shared receive queue (SRQ).
-old-location : netvista\ndk_fn_modify_srq.htm
-old-project : netvista
-ms.assetid : ABB42AC6-8483-420C-B9A9-063C91E4FB13
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.ndk_fn_modify_srq, NdkModifySrq callback function [Network Drivers Starting with Windows Vista], NdkModifySrq, NDK_FN_MODIFY_SRQ, NDK_FN_MODIFY_SRQ, ndkpi/NdkModifySrq
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ndkpi.h
-req.include-header : Ndkpi.h
-req.target-type : Windows
-req.target-min-winverclnt : None supported,Supported in NDIS 6.30 and later.
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_WWAN_VISIBLE_PROVIDERS, *PNDIS_WWAN_VISIBLE_PROVIDERS
+UID: NC:ndkpi.NDK_FN_MODIFY_SRQ
+title: NDK_FN_MODIFY_SRQ
+author: windows-driver-content
+description: The NdkModifySrq (NDK_FN_MODIFY_SRQ) function modifies the size and notification threshold of an NDK shared receive queue (SRQ).
+old-location: netvista\ndk_fn_modify_srq.htm
+old-project: netvista
+ms.assetid: ABB42AC6-8483-420C-B9A9-063C91E4FB13
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.ndk_fn_modify_srq, NdkModifySrq callback function [Network Drivers Starting with Windows Vista], NdkModifySrq, NDK_FN_MODIFY_SRQ, NDK_FN_MODIFY_SRQ, ndkpi/NdkModifySrq
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ndkpi.h
+req.include-header: Ndkpi.h
+req.target-type: Windows
+req.target-min-winverclnt: None supported,Supported in NDIS 6.30 and later.
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	ndkpi.h
+apiname:
+-	NdkModifySrq
+product: Windows
+targetos: Windows
+req.typenames: NDIS_WWAN_VISIBLE_PROVIDERS, *PNDIS_WWAN_VISIBLE_PROVIDERS
 ---
 
 

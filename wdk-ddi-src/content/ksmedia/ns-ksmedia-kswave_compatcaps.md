@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.KSWAVE_COMPATCAPS
-title : KSWAVE_COMPATCAPS
-author : windows-driver-content
-description : The KSWAVE_COMPATCAPS structure is used to describe the compatible capabilities of a device.
-old-location : stream\kswave_compatcaps.htm
-old-project : stream
-ms.assetid : 92e6090e-6a31-45d9-ac6d-a20bf180f12e
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : "*PKSWAVE_COMPATCAPS, dvdref_496e945d-fb6d-47da-8668-4cb8f1b265e6.xml, PKSWAVE_COMPATCAPS structure pointer [Streaming Media Devices], ksmedia/PKSWAVE_COMPATCAPS, stream.kswave_compatcaps, PKSWAVE_COMPATCAPS, KSWAVE_COMPATCAPS structure [Streaming Media Devices], ksmedia/KSWAVE_COMPATCAPS, KSWAVE_COMPATCAPS"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KSWAVE_COMPATCAPS, *PKSWAVE_COMPATCAPS
+UID: NS:ksmedia.KSWAVE_COMPATCAPS
+title: KSWAVE_COMPATCAPS
+author: windows-driver-content
+description: The KSWAVE_COMPATCAPS structure is used to describe the compatible capabilities of a device.
+old-location: stream\kswave_compatcaps.htm
+old-project: stream
+ms.assetid: 92e6090e-6a31-45d9-ac6d-a20bf180f12e
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: "*PKSWAVE_COMPATCAPS, dvdref_496e945d-fb6d-47da-8668-4cb8f1b265e6.xml, PKSWAVE_COMPATCAPS structure pointer [Streaming Media Devices], ksmedia/PKSWAVE_COMPATCAPS, stream.kswave_compatcaps, PKSWAVE_COMPATCAPS, KSWAVE_COMPATCAPS structure [Streaming Media Devices], ksmedia/KSWAVE_COMPATCAPS, KSWAVE_COMPATCAPS"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	KSWAVE_COMPATCAPS
+product: Windows
+targetos: Windows
+req.typenames: KSWAVE_COMPATCAPS, *PKSWAVE_COMPATCAPS
 ---
 
 # KSWAVE_COMPATCAPS structure

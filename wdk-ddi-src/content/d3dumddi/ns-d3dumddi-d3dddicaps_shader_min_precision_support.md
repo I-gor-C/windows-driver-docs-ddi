@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi.D3DDDICAPS_SHADER_MIN_PRECISION_SUPPORT
-title : D3DDDICAPS_SHADER_MIN_PRECISION_SUPPORT
-author : windows-driver-content
-description : Describes precision support options for shaders in the user-mode display driver.
-old-location : display\d3dddicaps_shader_min_precision_support.htm
-old-project : display
-ms.assetid : c3ad65e7-8a91-464b-9a7f-e5c47ee54048
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3dumddi/D3DDDICAPS_SHADER_MIN_PRECISION_SUPPORT, display.d3dddicaps_shader_min_precision_support, D3DDDICAPS_SHADER_MIN_PRECISION_SUPPORT structure [Display Devices], D3DDDICAPS_SHADER_MIN_PRECISION_SUPPORT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDICAPS_SHADER_MIN_PRECISION_SUPPORT
+UID: NS:d3dumddi.D3DDDICAPS_SHADER_MIN_PRECISION_SUPPORT
+title: D3DDDICAPS_SHADER_MIN_PRECISION_SUPPORT
+author: windows-driver-content
+description: Describes precision support options for shaders in the user-mode display driver.
+old-location: display\d3dddicaps_shader_min_precision_support.htm
+old-project: display
+ms.assetid: c3ad65e7-8a91-464b-9a7f-e5c47ee54048
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3dumddi/D3DDDICAPS_SHADER_MIN_PRECISION_SUPPORT, display.d3dddicaps_shader_min_precision_support, D3DDDICAPS_SHADER_MIN_PRECISION_SUPPORT structure [Display Devices], D3DDDICAPS_SHADER_MIN_PRECISION_SUPPORT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	D3dumddi.h
+apiname:
+-	D3DDDICAPS_SHADER_MIN_PRECISION_SUPPORT
+product: Windows
+targetos: Windows
+req.typenames: D3DDDICAPS_SHADER_MIN_PRECISION_SUPPORT
 ---
 
 # D3DDDICAPS_SHADER_MIN_PRECISION_SUPPORT structure

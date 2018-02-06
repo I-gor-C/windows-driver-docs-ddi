@@ -1,41 +1,46 @@
 ---
-UID : NS:d3d12umddi.D3D12DDIARG_CREATE_VIDEO_DECODER_HEAP_0033
-title : D3D12DDIARG_CREATE_VIDEO_DECODER_HEAP_0033
-author : windows-driver-content
-description : Create a video decoder heap.
-old-location : display\d3d12ddiarg-create-video-decoder-heap-0033.htm
-old-project : display
-ms.assetid : 158411ee-6cc1-466d-b772-fe380b55baef
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3D12DDIARG_CREATE_VIDEO_DECODER_HEAP_0033 structure [Display Devices], d3d12umddi/D3D12DDIARG_CREATE_VIDEO_DECODER_HEAP_0033, display.d3d12ddiarg-create-video-decoder-heap-0033, D3D12DDIARG_CREATE_VIDEO_DECODER_HEAP_0033
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3d12umddi.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3D12DDIARG_CREATE_VIDEO_DECODER_HEAP_0033
+UID: NS:d3d12umddi.D3D12DDIARG_CREATE_VIDEO_DECODER_HEAP_0033
+title: D3D12DDIARG_CREATE_VIDEO_DECODER_HEAP_0033
+author: windows-driver-content
+description: Create a video decoder heap.
+old-location: display\d3d12ddiarg-create-video-decoder-heap-0033.htm
+old-project: display
+ms.assetid: 158411ee-6cc1-466d-b772-fe380b55baef
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3D12DDIARG_CREATE_VIDEO_DECODER_HEAP_0033 structure [Display Devices], d3d12umddi/D3D12DDIARG_CREATE_VIDEO_DECODER_HEAP_0033, display.d3d12ddiarg-create-video-decoder-heap-0033, D3D12DDIARG_CREATE_VIDEO_DECODER_HEAP_0033
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3d12umddi.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3d12umddi.h
+apiname:
+-	D3D12DDIARG_CREATE_VIDEO_DECODER_HEAP_0033
+product: Windows
+targetos: Windows
+req.typenames: D3D12DDIARG_CREATE_VIDEO_DECODER_HEAP_0033
 ---
 
 # D3D12DDIARG_CREATE_VIDEO_DECODER_HEAP_0033 structure

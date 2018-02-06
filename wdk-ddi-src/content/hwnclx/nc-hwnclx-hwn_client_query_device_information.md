@@ -1,41 +1,46 @@
 ---
-UID : NC:hwnclx.HWN_CLIENT_QUERY_DEVICE_INFORMATION
-title : HWN_CLIENT_QUERY_DEVICE_INFORMATION
-author : windows-driver-content
-description : Implemented by the client driver to retrieve hardware notification component attributes.
-old-location : gpiobtn\hwn_client_query_device_information.htm
-old-project : gpiobtn
-ms.assetid : e67f0384-79a8-4040-aab4-bf5b865ad989
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : gpiobtn.hwn_client_query_device_information, HwnClientQueryDeviceInformation callback function, HwnClientQueryDeviceInformation, HWN_CLIENT_QUERY_DEVICE_INFORMATION, HWN_CLIENT_QUERY_DEVICE_INFORMATION, hwnclx/HwnClientQueryDeviceInformation, PHWN_CLIENT_QUERY_DEVICE_INFORMATION callback function pointer, PHWN_CLIENT_QUERY_DEVICE_INFORMATION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : hwnclx.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10, version 1709
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HPMI_QUERY_CAPABILITIES_RESPONSE, *PHPMI_QUERY_CAPABILITIES_RESPONSE
+UID: NC:hwnclx.HWN_CLIENT_QUERY_DEVICE_INFORMATION
+title: HWN_CLIENT_QUERY_DEVICE_INFORMATION
+author: windows-driver-content
+description: Implemented by the client driver to retrieve hardware notification component attributes.
+old-location: gpiobtn\hwn_client_query_device_information.htm
+old-project: gpiobtn
+ms.assetid: e67f0384-79a8-4040-aab4-bf5b865ad989
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: gpiobtn.hwn_client_query_device_information, HwnClientQueryDeviceInformation callback function, HwnClientQueryDeviceInformation, HWN_CLIENT_QUERY_DEVICE_INFORMATION, HWN_CLIENT_QUERY_DEVICE_INFORMATION, hwnclx/HwnClientQueryDeviceInformation, PHWN_CLIENT_QUERY_DEVICE_INFORMATION callback function pointer, PHWN_CLIENT_QUERY_DEVICE_INFORMATION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: hwnclx.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10, version 1709
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Hwnclx.h
+apiname:
+-	PHWN_CLIENT_QUERY_DEVICE_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: HPMI_QUERY_CAPABILITIES_RESPONSE, *PHPMI_QUERY_CAPABILITIES_RESPONSE
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.KeInsertDeviceQueue
-title : KeInsertDeviceQueue function
-author : windows-driver-content
-description : The KeInsertDeviceQueue routine acquires the spin lock for the specified device queue object and, if the device queue is set to a busy state, queues the specified entry.
-old-location : kernel\keinsertdevicequeue.htm
-old-project : kernel
-ms.assetid : d0e634e0-f0b4-49a7-9df5-7af0842154f4
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : KeInsertDeviceQueue, k105_a527fbb6-bb60-4051-9983-e960d9406abe.xml, wdm/KeInsertDeviceQueue, KeInsertDeviceQueue routine [Kernel-Mode Driver Architecture], kernel.keinsertdevicequeue
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : IrqlDispatch, MarkingQueuedIrps, HwStorPortProhibitedDDIs, IrqlDispatch(storport)
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : DISPATCH_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.KeInsertDeviceQueue
+title: KeInsertDeviceQueue function
+author: windows-driver-content
+description: The KeInsertDeviceQueue routine acquires the spin lock for the specified device queue object and, if the device queue is set to a busy state, queues the specified entry.
+old-location: kernel\keinsertdevicequeue.htm
+old-project: kernel
+ms.assetid: d0e634e0-f0b4-49a7-9df5-7af0842154f4
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: KeInsertDeviceQueue, k105_a527fbb6-bb60-4051-9983-e960d9406abe.xml, wdm/KeInsertDeviceQueue, KeInsertDeviceQueue routine [Kernel-Mode Driver Architecture], kernel.keinsertdevicequeue
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: IrqlDispatch, MarkingQueuedIrps, HwStorPortProhibitedDDIs, IrqlDispatch(storport)
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: DISPATCH_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	KeInsertDeviceQueue
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

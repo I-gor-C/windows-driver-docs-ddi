@@ -1,41 +1,46 @@
 ---
-UID : NF:nfccx.NfcCxRegisterSequenceHandler
-title : NfcCxRegisterSequenceHandler function
-author : windows-driver-content
-description : Called by the client driver during initialization to register for handling specific sequences.
-old-location : nfpdrivers\_nfccxregistersequencehandler.htm
-old-project : nfpdrivers
-ms.assetid : 30957475-D02B-434D-9FAB-BBCD5732DCA5
-ms.author : windowsdriverdev
-ms.date : 12/18/2017
-ms.keywords : NfcCxRegisterSequenceHandler, NfcCxRegisterSequenceHandler method [Near-Field Proximity Drivers], nfccx/NfcCxRegisterSequenceHandler, nfpdrivers._nfccxregistersequencehandler
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : nfccx.h
-req.include-header : Ncidef.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : None supported
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Nfccxstub.lib
-req.dll : NfcCx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NFC_CX_TRANSPORT_TYPE, *PNFC_CX_TRANSPORT_TYPE
+UID: NF:nfccx.NfcCxRegisterSequenceHandler
+title: NfcCxRegisterSequenceHandler function
+author: windows-driver-content
+description: Called by the client driver during initialization to register for handling specific sequences.
+old-location: nfpdrivers\_nfccxregistersequencehandler.htm
+old-project: nfpdrivers
+ms.assetid: 30957475-D02B-434D-9FAB-BBCD5732DCA5
+ms.author: windowsdriverdev
+ms.date: 12/18/2017
+ms.keywords: NfcCxRegisterSequenceHandler, NfcCxRegisterSequenceHandler method [Near-Field Proximity Drivers], nfccx/NfcCxRegisterSequenceHandler, nfpdrivers._nfccxregistersequencehandler
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: nfccx.h
+req.include-header: Ncidef.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: None supported
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Nfccxstub.lib
+req.dll: NfcCx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NfcCx.dll
+apiname:
+-	NfcCxRegisterSequenceHandler
+product: Windows
+targetos: Windows
+req.typenames: NFC_CX_TRANSPORT_TYPE, *PNFC_CX_TRANSPORT_TYPE
 ---
 
 

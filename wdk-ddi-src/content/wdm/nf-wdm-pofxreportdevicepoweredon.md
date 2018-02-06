@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.PoFxReportDevicePoweredOn
-title : PoFxReportDevicePoweredOn function
-author : windows-driver-content
-description : The PoFxReportDevicePoweredOn routine notifies the power management framework (PoFx) that the device completed the requested transition to the D0 (fully on) power state.
-old-location : kernel\pofxreportdevicepoweredon.htm
-old-project : kernel
-ms.assetid : 3138F5D7-CF7E-47B4-817C-AFF00C310AD5
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.pofxreportdevicepoweredon, PoFxReportDevicePoweredOn, wdm/PoFxReportDevicePoweredOn, PoFxReportDevicePoweredOn routine [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : 
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ntoskrnl.lib
-req.dll : Ntoskrnl.exe
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.PoFxReportDevicePoweredOn
+title: PoFxReportDevicePoweredOn function
+author: windows-driver-content
+description: The PoFxReportDevicePoweredOn routine notifies the power management framework (PoFx) that the device completed the requested transition to the D0 (fully on) power state.
+old-location: kernel\pofxreportdevicepoweredon.htm
+old-project: kernel
+ms.assetid: 3138F5D7-CF7E-47B4-817C-AFF00C310AD5
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.pofxreportdevicepoweredon, PoFxReportDevicePoweredOn, wdm/PoFxReportDevicePoweredOn, PoFxReportDevicePoweredOn routine [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: 
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ntoskrnl.lib
+req.dll: Ntoskrnl.exe
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Ntoskrnl.exe
+apiname:
+-	PoFxReportDevicePoweredOn
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

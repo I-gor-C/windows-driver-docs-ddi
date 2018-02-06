@@ -1,41 +1,46 @@
 ---
-UID : NI:ntdd8042.IOCTL_INTERNAL_I8042_HOOK_MOUSE
-title : IOCTL_INTERNAL_I8042_HOOK_MOUSE
-author : windows-driver-content
-description : The IOCTL_INTERNAL_I8042_HOOK_MOUSE request adds an ISR callback routine to the I8042prt mouse ISR.
-old-location : hid\ioctl_internal_i8042_hook_mouse.htm
-old-project : hid
-ms.assetid : 606b9ae4-186c-47b1-84aa-3d380eaad672
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : hid.ioctl_internal_i8042_hook_mouse, IOCTL_INTERNAL_I8042_HOOK_MOUSE control code [Human Input Devices], IOCTL_INTERNAL_I8042_HOOK_MOUSE, ntdd8042/IOCTL_INTERNAL_I8042_HOOK_MOUSE, mfilref_d95cd233-bc97-4bd6-8675-2560b83f4715.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntdd8042.h
-req.include-header : Ntdd8042.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : MOUSE_STATE, *PMOUSE_STATE
+UID: NI:ntdd8042.IOCTL_INTERNAL_I8042_HOOK_MOUSE
+title: IOCTL_INTERNAL_I8042_HOOK_MOUSE
+author: windows-driver-content
+description: The IOCTL_INTERNAL_I8042_HOOK_MOUSE request adds an ISR callback routine to the I8042prt mouse ISR.
+old-location: hid\ioctl_internal_i8042_hook_mouse.htm
+old-project: hid
+ms.assetid: 606b9ae4-186c-47b1-84aa-3d380eaad672
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: hid.ioctl_internal_i8042_hook_mouse, IOCTL_INTERNAL_I8042_HOOK_MOUSE control code [Human Input Devices], IOCTL_INTERNAL_I8042_HOOK_MOUSE, ntdd8042/IOCTL_INTERNAL_I8042_HOOK_MOUSE, mfilref_d95cd233-bc97-4bd6-8675-2560b83f4715.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntdd8042.h
+req.include-header: Ntdd8042.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntdd8042.h
+apiname:
+-	IOCTL_INTERNAL_I8042_HOOK_MOUSE
+product: Windows
+targetos: Windows
+req.typenames: MOUSE_STATE, *PMOUSE_STATE
 ---
 
 # IOCTL_INTERNAL_I8042_HOOK_MOUSE IOCTL

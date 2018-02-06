@@ -1,41 +1,46 @@
 ---
-UID : NI:mountdev.IOCTL_MOUNTDEV_LINK_DELETED
-title : IOCTL_MOUNTDEV_LINK_DELETED
-author : windows-driver-content
-description : Support for this IOCTL by the mount manager clients is optional. It alerts the mount manager client that a persistent name associated with it has been deleted. The input for this IOCTL is the persistent name that was deleted.
-old-location : storage\ioctl_mountdev_link_deleted.htm
-old-project : storage
-ms.assetid : 6fd0696d-5b8d-4502-bbdb-a013bee2e9d4
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_mountdev_link_deleted, IOCTL_MOUNTDEV_LINK_DELETED control code [Storage Devices], IOCTL_MOUNTDEV_LINK_DELETED, mountdev/IOCTL_MOUNTDEV_LINK_DELETED, k307_b0ab5504-dac9-410f-bb73-bbb5876e4a59.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : mountdev.h
-req.include-header : Mountmgr.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PZONE_DESCRIPTIOR, ZONE_DESCRIPTIOR"
+UID: NI:mountdev.IOCTL_MOUNTDEV_LINK_DELETED
+title: IOCTL_MOUNTDEV_LINK_DELETED
+author: windows-driver-content
+description: Support for this IOCTL by the mount manager clients is optional. It alerts the mount manager client that a persistent name associated with it has been deleted. The input for this IOCTL is the persistent name that was deleted.
+old-location: storage\ioctl_mountdev_link_deleted.htm
+old-project: storage
+ms.assetid: 6fd0696d-5b8d-4502-bbdb-a013bee2e9d4
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_mountdev_link_deleted, IOCTL_MOUNTDEV_LINK_DELETED control code [Storage Devices], IOCTL_MOUNTDEV_LINK_DELETED, mountdev/IOCTL_MOUNTDEV_LINK_DELETED, k307_b0ab5504-dac9-410f-bb73-bbb5876e4a59.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: mountdev.h
+req.include-header: Mountmgr.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	mountdev.h
+apiname:
+-	IOCTL_MOUNTDEV_LINK_DELETED
+product: Windows
+targetos: Windows
+req.typenames: "*PZONE_DESCRIPTIOR, ZONE_DESCRIPTIOR"
 ---
 
 # IOCTL_MOUNTDEV_LINK_DELETED IOCTL

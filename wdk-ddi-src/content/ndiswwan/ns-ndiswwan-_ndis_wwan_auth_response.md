@@ -1,41 +1,46 @@
 ---
-UID : NS:ndiswwan._NDIS_WWAN_AUTH_RESPONSE
-title : "_NDIS_WWAN_AUTH_RESPONSE"
-author : windows-driver-content
-description : The NDIS_WWAN_AUTH_RESPONSE structure represents a response from one of the authentication methods.
-old-location : netvista\ndis_wwan_auth_response.htm
-old-project : netvista
-ms.assetid : 9F991E80-5155-45CE-9547-7354EE7EC4DB
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.ndis_wwan_auth_response, ndiswwan/NDIS_WWAN_AUTH_RESPONSE, *PNDIS_WWAN_AUTH_RESPONSE, ndiswwan/PNDIS_WWAN_AUTH_RESPONSE, NDIS_WWAN_AUTH_RESPONSE structure [Network Drivers Starting with Windows Vista], PNDIS_WWAN_AUTH_RESPONSE structure pointer [Network Drivers Starting with Windows Vista], NDIS_WWAN_AUTH_RESPONSE, PNDIS_WWAN_AUTH_RESPONSE, _NDIS_WWAN_AUTH_RESPONSE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndiswwan.h
-req.include-header : Ndiswwan.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with  Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_WWAN_AUTH_RESPONSE, *PNDIS_WWAN_AUTH_RESPONSE
+UID: NS:ndiswwan._NDIS_WWAN_AUTH_RESPONSE
+title: "_NDIS_WWAN_AUTH_RESPONSE"
+author: windows-driver-content
+description: The NDIS_WWAN_AUTH_RESPONSE structure represents a response from one of the authentication methods.
+old-location: netvista\ndis_wwan_auth_response.htm
+old-project: netvista
+ms.assetid: 9F991E80-5155-45CE-9547-7354EE7EC4DB
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.ndis_wwan_auth_response, ndiswwan/NDIS_WWAN_AUTH_RESPONSE, *PNDIS_WWAN_AUTH_RESPONSE, ndiswwan/PNDIS_WWAN_AUTH_RESPONSE, NDIS_WWAN_AUTH_RESPONSE structure [Network Drivers Starting with Windows Vista], PNDIS_WWAN_AUTH_RESPONSE structure pointer [Network Drivers Starting with Windows Vista], NDIS_WWAN_AUTH_RESPONSE, PNDIS_WWAN_AUTH_RESPONSE, _NDIS_WWAN_AUTH_RESPONSE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndiswwan.h
+req.include-header: Ndiswwan.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with  Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndiswwan.h
+apiname:
+-	NDIS_WWAN_AUTH_RESPONSE
+product: Windows
+targetos: Windows
+req.typenames: NDIS_WWAN_AUTH_RESPONSE, *PNDIS_WWAN_AUTH_RESPONSE
 ---
 
 # _NDIS_WWAN_AUTH_RESPONSE structure

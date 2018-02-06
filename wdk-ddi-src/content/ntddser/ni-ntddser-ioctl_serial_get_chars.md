@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddser.IOCTL_SERIAL_GET_CHARS
-title : IOCTL_SERIAL_GET_CHARS
-author : windows-driver-content
-description : The IOCTL_SERIAL_GET_CHARS request retrieves the special characters that the serial controller driver uses with handshake flow control. The special characters are described by a SERIAL_CHARS structure.
-old-location : serports\ioctl_serial_get_chars.htm
-old-project : serports
-ms.assetid : f8ebf57a-1d2f-4362-8713-c37b6ef62cb6
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : serports.ioctl_serial_get_chars, IOCTL_SERIAL_GET_CHARS control code [Serial Ports], IOCTL_SERIAL_GET_CHARS, ntddser/IOCTL_SERIAL_GET_CHARS, serref_103c18cc-6260-4a9d-8f2f-01ef8b82aebe.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddser.h
-req.include-header : Ntddser.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SD_REQUEST_FUNCTION
+UID: NI:ntddser.IOCTL_SERIAL_GET_CHARS
+title: IOCTL_SERIAL_GET_CHARS
+author: windows-driver-content
+description: The IOCTL_SERIAL_GET_CHARS request retrieves the special characters that the serial controller driver uses with handshake flow control. The special characters are described by a SERIAL_CHARS structure.
+old-location: serports\ioctl_serial_get_chars.htm
+old-project: serports
+ms.assetid: f8ebf57a-1d2f-4362-8713-c37b6ef62cb6
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: serports.ioctl_serial_get_chars, IOCTL_SERIAL_GET_CHARS control code [Serial Ports], IOCTL_SERIAL_GET_CHARS, ntddser/IOCTL_SERIAL_GET_CHARS, serref_103c18cc-6260-4a9d-8f2f-01ef8b82aebe.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddser.h
+req.include-header: Ntddser.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddser.h
+apiname:
+-	IOCTL_SERIAL_GET_CHARS
+product: Windows
+targetos: Windows
+req.typenames: SD_REQUEST_FUNCTION
 ---
 
 # IOCTL_SERIAL_GET_CHARS IOCTL

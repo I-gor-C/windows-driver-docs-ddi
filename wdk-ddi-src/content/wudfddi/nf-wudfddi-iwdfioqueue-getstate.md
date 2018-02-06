@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFIoQueue.GetState
-title : IWDFIoQueue::GetState method
-author : windows-driver-content
-description : The GetState method retrieves the state of an I/O queue.
-old-location : wdf\iwdfioqueue_getstate.htm
-old-project : wdf
-ms.assetid : 42dc9bbe-b00d-4187-ab07-0c268a061298
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : umdf.iwdfioqueue_getstate, wudfddi/IWDFIoQueue::GetState, IWDFIoQueue::GetState, wdf.iwdfioqueue_getstate, GetState method, IWDFIoQueue interface, GetState method, GetState, GetState method, IWDFIoQueue interface, IWDFIoQueue, UMDFQueueObjectRef_81051128-228b-476a-b27f-5c542558d8a8.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.5
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFIoQueue.GetState
+title: IWDFIoQueue::GetState method
+author: windows-driver-content
+description: The GetState method retrieves the state of an I/O queue.
+old-location: wdf\iwdfioqueue_getstate.htm
+old-project: wdf
+ms.assetid: 42dc9bbe-b00d-4187-ab07-0c268a061298
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: umdf.iwdfioqueue_getstate, wudfddi/IWDFIoQueue::GetState, IWDFIoQueue::GetState, wdf.iwdfioqueue_getstate, GetState method, IWDFIoQueue interface, GetState method, GetState, GetState method, IWDFIoQueue interface, IWDFIoQueue, UMDFQueueObjectRef_81051128-228b-476a-b27f-5c542558d8a8.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.5
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFIoQueue.GetState
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

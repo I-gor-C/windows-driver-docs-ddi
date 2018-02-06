@@ -1,41 +1,46 @@
 ---
-UID : NI:hidport.IOCTL_HID_ACTIVATE_DEVICE
-title : IOCTL_HID_ACTIVATE_DEVICE
-author : windows-driver-content
-description : The IOCTL_HID_ACTIVATE_DEVICE request activates a HIDClass device, which makes it ready for I/O operations.
-old-location : hid\ioctl_hid_activate_device.htm
-old-project : hid
-ms.assetid : 5d2f218c-a9a5-4149-8fde-898171dfc9a7
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : hid.ioctl_hid_activate_device, IOCTL_HID_ACTIVATE_DEVICE control code [Human Input Devices], IOCTL_HID_ACTIVATE_DEVICE, hidport/IOCTL_HID_ACTIVATE_DEVICE, hidioreq_031bb843-02fe-4859-acf2-4bcbfaaea657.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : hidport.h
-req.include-header : Hidport.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : USAGE_AND_PAGE, *PUSAGE_AND_PAGE
+UID: NI:hidport.IOCTL_HID_ACTIVATE_DEVICE
+title: IOCTL_HID_ACTIVATE_DEVICE
+author: windows-driver-content
+description: The IOCTL_HID_ACTIVATE_DEVICE request activates a HIDClass device, which makes it ready for I/O operations.
+old-location: hid\ioctl_hid_activate_device.htm
+old-project: hid
+ms.assetid: 5d2f218c-a9a5-4149-8fde-898171dfc9a7
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: hid.ioctl_hid_activate_device, IOCTL_HID_ACTIVATE_DEVICE control code [Human Input Devices], IOCTL_HID_ACTIVATE_DEVICE, hidport/IOCTL_HID_ACTIVATE_DEVICE, hidioreq_031bb843-02fe-4859-acf2-4bcbfaaea657.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: hidport.h
+req.include-header: Hidport.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hidport.h
+apiname:
+-	IOCTL_HID_ACTIVATE_DEVICE
+product: Windows
+targetos: Windows
+req.typenames: USAGE_AND_PAGE, *PUSAGE_AND_PAGE
 ---
 
 # IOCTL_HID_ACTIVATE_DEVICE IOCTL

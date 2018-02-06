@@ -1,42 +1,47 @@
 ---
-UID : NE:ucmtcpciportcontroller._UCMTCPCI_PORT_CONTROLLER_ALERT_TYPE
-title : "_UCMTCPCI_PORT_CONTROLLER_ALERT_TYPE"
-author : windows-driver-content
-description : Defines generic alert values that are used to indicate the type of hardware alert received on the port controller.
-old-location : buses\ucmtcpci_port_controller_alert_type.htm
-old-project : usbref
-ms.assetid : 77162a25-b5aa-45d0-ac4d-6500df9782de
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ucmtcpciportcontroller/UcmTcpciPortControllerAlertVbusVoltageAlarmLo, UcmTcpciPortControllerAlertCCStatus, ucmtcpciportcontroller/UcmTcpciPortControllerAlertPowerStatus, ucmtcpciportcontroller/UcmTcpciPortControllerAlertVbusVoltageAlarmHi, ucmtcpciportcontroller/UcmTcpciPortControllerAlertCCStatus, ucmtcpciportcontroller/UcmTcpciPortControllerAlertRxBufferOverflow, UcmTcpciPortControllerAlertVbusVoltageAlarmHi, ucmtcpciportcontroller/UcmTcpciPortControllerAlertReceiveSOPMessageStatus, buses.ucmtcpci_port_controller_alert_type, UcmTcpciPortControllerAlertFault, UCMTCPCI_PORT_CONTROLLER_ALERT_TYPE, UcmTcpciPortControllerAlertTransmitSOPMessageSuccessful, ucmtcpciportcontroller/UcmTcpciPortControllerAlertTransmitSOPMessageDiscarded, UcmTcpciPortControllerAlertReceivedHardReset, UcmTcpciPortControllerAlertReceiveSOPMessageStatus, UcmTcpciPortControllerAlertTransmitSOPMessageDiscarded, UcmTcpciPortControllerAlertTransmitSOPMessageFailed, UcmTcpciPortControllerAlertInvalid, UcmTcpciPortControllerAlertVbusSinkDisconnectDetected, UCMTCPCI_PORT_CONTROLLER_ALERT_TYPE enumeration [Buses], ucmtcpciportcontroller/UcmTcpciPortControllerAlertVbusSinkDisconnectDetected, UcmTcpciPortControllerAlertPowerStatus, ucmtcpciportcontroller/UcmTcpciPortControllerAlertFault, _UCMTCPCI_PORT_CONTROLLER_ALERT_TYPE, ucmtcpciportcontroller/UCMTCPCI_PORT_CONTROLLER_ALERT_TYPE, ucmtcpciportcontroller/UcmTcpciPortControllerAlertTransmitSOPMessageFailed, ucmtcpciportcontroller/UcmTcpciPortControllerAlertInvalid, UcmTcpciPortControllerAlertVbusVoltageAlarmLo, ucmtcpciportcontroller/UcmTcpciPortControllerAlertTransmitSOPMessageSuccessful, UcmTcpciPortControllerAlertRxBufferOverflow, ucmtcpciportcontroller/UcmTcpciPortControllerAlertReceivedHardReset
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : ucmtcpciportcontroller.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : UCMTCPCI_PORT_CONTROLLER_ALERT_TYPE
-req.product : Windows 10 or later.
+UID: NE:ucmtcpciportcontroller._UCMTCPCI_PORT_CONTROLLER_ALERT_TYPE
+title: "_UCMTCPCI_PORT_CONTROLLER_ALERT_TYPE"
+author: windows-driver-content
+description: Defines generic alert values that are used to indicate the type of hardware alert received on the port controller.
+old-location: buses\ucmtcpci_port_controller_alert_type.htm
+old-project: usbref
+ms.assetid: 77162a25-b5aa-45d0-ac4d-6500df9782de
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ucmtcpciportcontroller/UcmTcpciPortControllerAlertVbusVoltageAlarmLo, UcmTcpciPortControllerAlertCCStatus, ucmtcpciportcontroller/UcmTcpciPortControllerAlertPowerStatus, ucmtcpciportcontroller/UcmTcpciPortControllerAlertVbusVoltageAlarmHi, ucmtcpciportcontroller/UcmTcpciPortControllerAlertCCStatus, ucmtcpciportcontroller/UcmTcpciPortControllerAlertRxBufferOverflow, UcmTcpciPortControllerAlertVbusVoltageAlarmHi, ucmtcpciportcontroller/UcmTcpciPortControllerAlertReceiveSOPMessageStatus, buses.ucmtcpci_port_controller_alert_type, UcmTcpciPortControllerAlertFault, UCMTCPCI_PORT_CONTROLLER_ALERT_TYPE, UcmTcpciPortControllerAlertTransmitSOPMessageSuccessful, ucmtcpciportcontroller/UcmTcpciPortControllerAlertTransmitSOPMessageDiscarded, UcmTcpciPortControllerAlertReceivedHardReset, UcmTcpciPortControllerAlertReceiveSOPMessageStatus, UcmTcpciPortControllerAlertTransmitSOPMessageDiscarded, UcmTcpciPortControllerAlertTransmitSOPMessageFailed, UcmTcpciPortControllerAlertInvalid, UcmTcpciPortControllerAlertVbusSinkDisconnectDetected, UCMTCPCI_PORT_CONTROLLER_ALERT_TYPE enumeration [Buses], ucmtcpciportcontroller/UcmTcpciPortControllerAlertVbusSinkDisconnectDetected, UcmTcpciPortControllerAlertPowerStatus, ucmtcpciportcontroller/UcmTcpciPortControllerAlertFault, _UCMTCPCI_PORT_CONTROLLER_ALERT_TYPE, ucmtcpciportcontroller/UCMTCPCI_PORT_CONTROLLER_ALERT_TYPE, ucmtcpciportcontroller/UcmTcpciPortControllerAlertTransmitSOPMessageFailed, ucmtcpciportcontroller/UcmTcpciPortControllerAlertInvalid, UcmTcpciPortControllerAlertVbusVoltageAlarmLo, ucmtcpciportcontroller/UcmTcpciPortControllerAlertTransmitSOPMessageSuccessful, UcmTcpciPortControllerAlertRxBufferOverflow, ucmtcpciportcontroller/UcmTcpciPortControllerAlertReceivedHardReset
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: ucmtcpciportcontroller.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ucmtcpciportcontroller.h
+apiname:
+-	UCMTCPCI_PORT_CONTROLLER_ALERT_TYPE
+product: Windows
+targetos: Windows
+req.typenames: UCMTCPCI_PORT_CONTROLLER_ALERT_TYPE
+req.product: Windows 10 or later.
 ---
 
 # _UCMTCPCI_PORT_CONTROLLER_ALERT_TYPE Enumeration
@@ -64,79 +69,79 @@ typedef enum _UCMTCPCI_PORT_CONTROLLER_ALERT_TYPE {
 ## Constants
 
 <table>
-
-<tr>
-<td>UcmTcpciPortControllerAlertCCStatus</td>
-<td>Indicates a
+            
+                <tr>
+                    <td>UcmTcpciPortControllerAlertCCStatus</td>
+                    <td>Indicates a
                         
                     CC status change alert.</td>
-</tr>
-
-<tr>
-<td>UcmTcpciPortControllerAlertFault</td>
-<td>Indicates that a Fault has occurred.</td>
-</tr>
-
-<tr>
-<td>UcmTcpciPortControllerAlertInvalid</td>
-<td>The alert is invalid.</td>
-</tr>
-
-<tr>
-<td>UcmTcpciPortControllerAlertPowerStatus</td>
-<td>Indicates a
+                </tr>
+            
+                <tr>
+                    <td>UcmTcpciPortControllerAlertFault</td>
+                    <td>Indicates that a Fault has occurred.</td>
+                </tr>
+            
+                <tr>
+                    <td>UcmTcpciPortControllerAlertInvalid</td>
+                    <td>The alert is invalid.</td>
+                </tr>
+            
+                <tr>
+                    <td>UcmTcpciPortControllerAlertPowerStatus</td>
+                    <td>Indicates a
                         
                     power status change alert.</td>
-</tr>
-
-<tr>
-<td>UcmTcpciPortControllerAlertReceivedHardReset</td>
-<td>Indicates a hard Reset alert.</td>
-</tr>
-
-<tr>
-<td>UcmTcpciPortControllerAlertReceiveSOPMessageStatus</td>
-<td>Indicates an SOP message alert.</td>
-</tr>
-
-<tr>
-<td>UcmTcpciPortControllerAlertRxBufferOverflow</td>
-<td>Indicates that the
+                </tr>
+            
+                <tr>
+                    <td>UcmTcpciPortControllerAlertReceivedHardReset</td>
+                    <td>Indicates a hard Reset alert.</td>
+                </tr>
+            
+                <tr>
+                    <td>UcmTcpciPortControllerAlertReceiveSOPMessageStatus</td>
+                    <td>Indicates an SOP message alert.</td>
+                </tr>
+            
+                <tr>
+                    <td>UcmTcpciPortControllerAlertRxBufferOverflow</td>
+                    <td>Indicates that the
                         
                      TCPC Rx buffer has overflowed.</td>
-</tr>
-
-<tr>
-<td>UcmTcpciPortControllerAlertTransmitSOPMessageDiscarded</td>
-<td>Indicates that the
+                </tr>
+            
+                <tr>
+                    <td>UcmTcpciPortControllerAlertTransmitSOPMessageDiscarded</td>
+                    <td>Indicates that the
                         
                     SOP message transmission was not sent due to an incoming receive message.</td>
-</tr>
-
-<tr>
-<td>UcmTcpciPortControllerAlertTransmitSOPMessageFailed</td>
-<td>Indicates that the SOP message transmission was not successful.</td>
-</tr>
-
-<tr>
-<td>UcmTcpciPortControllerAlertTransmitSOPMessageSuccessful</td>
-<td>Indicates that the SOP message transmission was successful.</td>
-</tr>
-
-<tr>
-<td>UcmTcpciPortControllerAlertVbusSinkDisconnectDetected</td>
-<td>Indicates that a VBUS Sink Disconnect Threshold crossing has been detected</td>
-</tr>
-
-<tr>
-<td>UcmTcpciPortControllerAlertVbusVoltageAlarmHi</td>
-<td>Indicates a high-voltage alarm.</td>
-</tr>
-
-<tr>
-<td>UcmTcpciPortControllerAlertVbusVoltageAlarmLo</td>
-<td>Indicates a low-voltage alarm.</td>
-</tr>
+                </tr>
+            
+                <tr>
+                    <td>UcmTcpciPortControllerAlertTransmitSOPMessageFailed</td>
+                    <td>Indicates that the SOP message transmission was not successful.</td>
+                </tr>
+            
+                <tr>
+                    <td>UcmTcpciPortControllerAlertTransmitSOPMessageSuccessful</td>
+                    <td>Indicates that the SOP message transmission was successful.</td>
+                </tr>
+            
+                <tr>
+                    <td>UcmTcpciPortControllerAlertVbusSinkDisconnectDetected</td>
+                    <td>Indicates that a VBUS Sink Disconnect Threshold crossing has been detected</td>
+                </tr>
+            
+                <tr>
+                    <td>UcmTcpciPortControllerAlertVbusVoltageAlarmHi</td>
+                    <td>Indicates a high-voltage alarm.</td>
+                </tr>
+            
+                <tr>
+                    <td>UcmTcpciPortControllerAlertVbusVoltageAlarmLo</td>
+                    <td>Indicates a low-voltage alarm.</td>
+                </tr>
 </table>
 
 
@@ -145,9 +150,9 @@ typedef enum _UCMTCPCI_PORT_CONTROLLER_ALERT_TYPE {
 | ---- |:---- |
 | **Header** | ucmtcpciportcontroller.h |
 
-## See Also
+    ## See Also
 
-<a href="..\ucmtcpciportcontroller\ns-ucmtcpciportcontroller-_ucmtcpci_port_controller_alert_data.md">UCMTCPCI_PORT_CONTROLLER_ALERT_DATA</a>
+        <a href="..\ucmtcpciportcontroller\ns-ucmtcpciportcontroller-_ucmtcpci_port_controller_alert_data.md">UCMTCPCI_PORT_CONTROLLER_ALERT_DATA</a>
 
  
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGKARG_COLLECTDBGINFO
-title : "_DXGKARG_COLLECTDBGINFO"
-author : windows-driver-content
-description : The DXGKARG_COLLECTDBGINFO structure describes information for a debug report.
-old-location : display\dxgkarg_collectdbginfo.htm
-old-project : display
-ms.assetid : f0dd72b5-9ab4-4511-b913-b0e456ea8950
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DmStructs_c3c19a4c-8536-474b-bca4-8b5af32fc4c8.xml, DXGKARG_COLLECTDBGINFO, VIDEO_ENGINE_TIMEOUT_DETECTED, display.dxgkarg_collectdbginfo, DXGKARG_COLLECTDBGINFO structure [Display Devices], d3dkmddi/DXGKARG_COLLECTDBGINFO, VIDEO_TDR_TIMEOUT_DETECTED, _DXGKARG_COLLECTDBGINFO
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGKARG_COLLECTDBGINFO
+UID: NS:d3dkmddi._DXGKARG_COLLECTDBGINFO
+title: "_DXGKARG_COLLECTDBGINFO"
+author: windows-driver-content
+description: The DXGKARG_COLLECTDBGINFO structure describes information for a debug report.
+old-location: display\dxgkarg_collectdbginfo.htm
+old-project: display
+ms.assetid: f0dd72b5-9ab4-4511-b913-b0e456ea8950
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DmStructs_c3c19a4c-8536-474b-bca4-8b5af32fc4c8.xml, DXGKARG_COLLECTDBGINFO, VIDEO_ENGINE_TIMEOUT_DETECTED, display.dxgkarg_collectdbginfo, DXGKARG_COLLECTDBGINFO structure [Display Devices], d3dkmddi/DXGKARG_COLLECTDBGINFO, VIDEO_TDR_TIMEOUT_DETECTED, _DXGKARG_COLLECTDBGINFO
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DXGKARG_COLLECTDBGINFO
+product: Windows
+targetos: Windows
+req.typenames: DXGKARG_COLLECTDBGINFO
 ---
 
 # _DXGKARG_COLLECTDBGINFO structure

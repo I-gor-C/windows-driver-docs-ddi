@@ -1,41 +1,46 @@
 ---
-UID : NC:pcivirt.READ_WRITE_MITIGATED_REGISTER
-title : READ_WRITE_MITIGATED_REGISTER
-author : windows-driver-content
-description : Reads or writes to mitigated address spaces.
-old-location : pci\read_write_mitigated_registers.htm
-old-project : PCI
-ms.assetid : 7cd45484-0fee-4b8e-aa35-4142883c146e
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : PCI.read_write_mitigated_registers, ReadWriteMitigatedRegister callback function [Buses], ReadWriteMitigatedRegister, READ_WRITE_MITIGATED_REGISTER, READ_WRITE_MITIGATED_REGISTER, pcivirt/ReadWriteMitigatedRegister, *PREAD_WRITE_MITIGATED_REGISTER callback function pointer [Buses], *PREAD_WRITE_MITIGATED_REGISTER
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : pcivirt.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PARCLASS_INFORMATION, *PPARCLASS_INFORMATION
+UID: NC:pcivirt.READ_WRITE_MITIGATED_REGISTER
+title: READ_WRITE_MITIGATED_REGISTER
+author: windows-driver-content
+description: Reads or writes to mitigated address spaces.
+old-location: pci\read_write_mitigated_registers.htm
+old-project: PCI
+ms.assetid: 7cd45484-0fee-4b8e-aa35-4142883c146e
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: PCI.read_write_mitigated_registers, ReadWriteMitigatedRegister callback function [Buses], ReadWriteMitigatedRegister, READ_WRITE_MITIGATED_REGISTER, READ_WRITE_MITIGATED_REGISTER, pcivirt/ReadWriteMitigatedRegister, *PREAD_WRITE_MITIGATED_REGISTER callback function pointer [Buses], *PREAD_WRITE_MITIGATED_REGISTER
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: pcivirt.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Pcivirt.h
+apiname:
+-	*PREAD_WRITE_MITIGATED_REGISTER
+product: Windows
+targetos: Windows
+req.typenames: PARCLASS_INFORMATION, *PPARCLASS_INFORMATION
 ---
 
 

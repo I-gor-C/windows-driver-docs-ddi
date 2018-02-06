@@ -1,41 +1,47 @@
 ---
-UID : NF:ntifs.NtOpenProcessTokenEx
-title : NtOpenProcessTokenEx function
-author : windows-driver-content
-description : The ZwOpenProcessTokenEx routine opens the access token associated with a process.
-old-location : kernel\zwopenprocesstokenex.htm
-old-project : kernel
-ms.assetid : 2ea6f764-b884-4764-a2ff-19d0170f9b31
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ZwOpenProcessTokenEx, k111_ab983257-9c27-4f73-af7c-d903de3a33d3.xml, ZwOpenProcessTokenEx routine [Kernel-Mode Driver Architecture], ntifs/NtOpenProcessTokenEx, NtOpenProcessTokenEx, kernel.zwopenprocesstokenex, ntifs/ZwOpenProcessTokenEx
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows XP and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.NtOpenProcessTokenEx
+title: NtOpenProcessTokenEx function
+author: windows-driver-content
+description: The ZwOpenProcessTokenEx routine opens the access token associated with a process.
+old-location: kernel\zwopenprocesstokenex.htm
+old-project: kernel
+ms.assetid: 2ea6f764-b884-4764-a2ff-19d0170f9b31
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ZwOpenProcessTokenEx, k111_ab983257-9c27-4f73-af7c-d903de3a33d3.xml, ZwOpenProcessTokenEx routine [Kernel-Mode Driver Architecture], ntifs/NtOpenProcessTokenEx, NtOpenProcessTokenEx, kernel.zwopenprocesstokenex, ntifs/ZwOpenProcessTokenEx
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows XP and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ZwOpenProcessTokenEx
+-	NtOpenProcessTokenEx
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

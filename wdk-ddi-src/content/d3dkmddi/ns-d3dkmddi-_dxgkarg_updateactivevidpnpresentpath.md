@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGKARG_UPDATEACTIVEVIDPNPRESENTPATH
-title : "_DXGKARG_UPDATEACTIVEVIDPNPRESENTPATH"
-author : windows-driver-content
-description : The DXGKARG_UPDATEACTIVEVIDPNPRESENTPATH structure contains a D3DKMDT_VIDPN_PRESENT_PATH structure, which contains arguments for the DxgkDdiUpdateActiveVidPnPresentPath function.
-old-location : display\dxgkarg_updateactivevidpnpresentpath.htm
-old-project : display
-ms.assetid : 6a4d43fd-f118-4424-93e8-57f72b56f929
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DXGKARG_UPDATEACTIVEVIDPNPRESENTPATH structure [Display Devices], DXGKARG_UPDATEACTIVEVIDPNPRESENTPATH, DmStructs_b8d80ff5-189d-4bd2-8b3f-f5ebeadee78f.xml, _DXGKARG_UPDATEACTIVEVIDPNPRESENTPATH, d3dkmddi/DXGKARG_UPDATEACTIVEVIDPNPRESENTPATH, display.dxgkarg_updateactivevidpnpresentpath
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGKARG_UPDATEACTIVEVIDPNPRESENTPATH
+UID: NS:d3dkmddi._DXGKARG_UPDATEACTIVEVIDPNPRESENTPATH
+title: "_DXGKARG_UPDATEACTIVEVIDPNPRESENTPATH"
+author: windows-driver-content
+description: The DXGKARG_UPDATEACTIVEVIDPNPRESENTPATH structure contains a D3DKMDT_VIDPN_PRESENT_PATH structure, which contains arguments for the DxgkDdiUpdateActiveVidPnPresentPath function.
+old-location: display\dxgkarg_updateactivevidpnpresentpath.htm
+old-project: display
+ms.assetid: 6a4d43fd-f118-4424-93e8-57f72b56f929
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DXGKARG_UPDATEACTIVEVIDPNPRESENTPATH structure [Display Devices], DXGKARG_UPDATEACTIVEVIDPNPRESENTPATH, DmStructs_b8d80ff5-189d-4bd2-8b3f-f5ebeadee78f.xml, _DXGKARG_UPDATEACTIVEVIDPNPRESENTPATH, d3dkmddi/DXGKARG_UPDATEACTIVEVIDPNPRESENTPATH, display.dxgkarg_updateactivevidpnpresentpath
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DXGKARG_UPDATEACTIVEVIDPNPRESENTPATH
+product: Windows
+targetos: Windows
+req.typenames: DXGKARG_UPDATEACTIVEVIDPNPRESENTPATH
 ---
 
 # _DXGKARG_UPDATEACTIVEVIDPNPRESENTPATH structure

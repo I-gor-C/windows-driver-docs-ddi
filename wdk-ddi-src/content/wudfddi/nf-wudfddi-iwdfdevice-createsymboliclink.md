@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFDevice.CreateSymbolicLink
-title : IWDFDevice::CreateSymbolicLink method
-author : windows-driver-content
-description : The CreateSymbolicLink method creates a symbolic link for the device.
-old-location : wdf\iwdfdevice_createsymboliclink.htm
-old-project : wdf
-ms.assetid : 15984217-e789-457c-b20f-c3d51741f5d3
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : CreateSymbolicLink method, IWDFDevice interface, CreateSymbolicLink method, IWDFDevice interface, CreateSymbolicLink method, UMDFDeviceObjectRef_20b93e0a-a676-44f7-bbd0-d2749dd7a0b8.xml, IWDFDevice::CreateSymbolicLink, umdf.iwdfdevice_createsymboliclink, IWDFDevice, wdf.iwdfdevice_createsymboliclink, wudfddi/IWDFDevice::CreateSymbolicLink, CreateSymbolicLink
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.5
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFDevice.CreateSymbolicLink
+title: IWDFDevice::CreateSymbolicLink method
+author: windows-driver-content
+description: The CreateSymbolicLink method creates a symbolic link for the device.
+old-location: wdf\iwdfdevice_createsymboliclink.htm
+old-project: wdf
+ms.assetid: 15984217-e789-457c-b20f-c3d51741f5d3
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: CreateSymbolicLink method, IWDFDevice interface, CreateSymbolicLink method, IWDFDevice interface, CreateSymbolicLink method, UMDFDeviceObjectRef_20b93e0a-a676-44f7-bbd0-d2749dd7a0b8.xml, IWDFDevice::CreateSymbolicLink, umdf.iwdfdevice_createsymboliclink, IWDFDevice, wdf.iwdfdevice_createsymboliclink, wudfddi/IWDFDevice::CreateSymbolicLink, CreateSymbolicLink
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.5
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFDevice.CreateSymbolicLink
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

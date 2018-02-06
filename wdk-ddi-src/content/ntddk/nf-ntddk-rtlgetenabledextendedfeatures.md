@@ -1,41 +1,50 @@
 ---
-UID : NF:ntddk.RtlGetEnabledExtendedFeatures
-title : RtlGetEnabledExtendedFeatures function
-author : windows-driver-content
-description : The RtlGetEnabledExtendedFeatures routine returns a mask of extended processor features that are enabled by the system.
-old-location : kernel\rtlgetenabledextendedfeatures.htm
-old-project : kernel
-ms.assetid : c23d3bfd-a83c-4480-b5a1-b057201ea279
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : k109_94843b2d-9abe-4b82-a781-dd2863ddc9c1.xml, XSTATE_MASK_GSSE, wdm/RtlGetEnabledExtendedFeatures, RtlGetEnabledExtendedFeatures routine [Kernel-Mode Driver Architecture], XSTATE_MASK_LEGACY_FLOATING_POINT, RtlGetEnabledExtendedFeatures, kernel.rtlgetenabledextendedfeatures, XSTATE_MASK_LEGACY, XSTATE_MASK_LEGACY_SSE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntddk.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 7 and later versions of the Windows operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ntdll.lib (user mode); NtosKrnl.lib (kernel mode); OneCoreUAP.lib on Windows 10
-req.dll : NtDll.dll (user mode); NtosKrnl.exe (kernel mode)
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.RtlGetEnabledExtendedFeatures
+title: RtlGetEnabledExtendedFeatures function
+author: windows-driver-content
+description: The RtlGetEnabledExtendedFeatures routine returns a mask of extended processor features that are enabled by the system.
+old-location: kernel\rtlgetenabledextendedfeatures.htm
+old-project: kernel
+ms.assetid: c23d3bfd-a83c-4480-b5a1-b057201ea279
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: k109_94843b2d-9abe-4b82-a781-dd2863ddc9c1.xml, XSTATE_MASK_GSSE, wdm/RtlGetEnabledExtendedFeatures, RtlGetEnabledExtendedFeatures routine [Kernel-Mode Driver Architecture], XSTATE_MASK_LEGACY_FLOATING_POINT, RtlGetEnabledExtendedFeatures, kernel.rtlgetenabledextendedfeatures, XSTATE_MASK_LEGACY, XSTATE_MASK_LEGACY_SSE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntddk.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 7 and later versions of the Windows operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ntdll.lib (user mode); NtosKrnl.lib (kernel mode); OneCoreUAP.lib on Windows 10
+req.dll: NtDll.dll (user mode); NtosKrnl.exe (kernel mode)
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtDll.dll
+-	NtosKrnl.exe
+-	API-MS-Win-Core-XState-l1-1-0.dll
+-	API-MS-Win-Core-XState-l1-1-1.dll
+-	API-MS-Win-Core-XState-L1-1-2.dll
+apiname:
+-	RtlGetEnabledExtendedFeatures
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

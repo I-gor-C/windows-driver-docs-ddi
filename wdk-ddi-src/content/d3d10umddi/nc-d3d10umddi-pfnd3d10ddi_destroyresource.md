@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3D10DDI_DESTROYRESOURCE
-title : PFND3D10DDI_DESTROYRESOURCE
-author : windows-driver-content
-description : The DestroyResource(D3D10) function destroys the specified resource object. The resource object can be destoyed only if it is not currently bound to a display device, and if all views that refer to the resource are also destroyed.
-old-location : display\destroyresource_d3d10_.htm
-old-project : display
-ms.assetid : 3ff77844-eeee-4fda-8798-2e240bc51379
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.destroyresource_d3d10_, DestroyResource callback function [Display Devices], DestroyResource, PFND3D10DDI_DESTROYRESOURCE, PFND3D10DDI_DESTROYRESOURCE, d3d10umddi/DestroyResource, UserModeDisplayDriverDx10_Functions_59a8abb1-fb74-49b0-a6b8-c0e867f9d7d6.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3D10DDI_DESTROYRESOURCE
+title: PFND3D10DDI_DESTROYRESOURCE
+author: windows-driver-content
+description: The DestroyResource(D3D10) function destroys the specified resource object. The resource object can be destoyed only if it is not currently bound to a display device, and if all views that refer to the resource are also destroyed.
+old-location: display\destroyresource_d3d10_.htm
+old-project: display
+ms.assetid: 3ff77844-eeee-4fda-8798-2e240bc51379
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.destroyresource_d3d10_, DestroyResource callback function [Display Devices], DestroyResource, PFND3D10DDI_DESTROYRESOURCE, PFND3D10DDI_DESTROYRESOURCE, d3d10umddi/DestroyResource, UserModeDisplayDriverDx10_Functions_59a8abb1-fb74-49b0-a6b8-c0e867f9d7d6.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	DestroyResource
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

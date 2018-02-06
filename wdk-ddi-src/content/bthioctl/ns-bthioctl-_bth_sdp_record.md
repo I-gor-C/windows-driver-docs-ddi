@@ -1,41 +1,46 @@
 ---
-UID : NS:bthioctl._BTH_SDP_RECORD
-title : "_BTH_SDP_RECORD"
-author : windows-driver-content
-description : The BTH_SDP_RECORD structure contains information about an SDP record that is to be added to the local SDP server.
-old-location : bltooth\bth_sdp_record.htm
-old-project : bltooth
-ms.assetid : 29aeb49a-1647-46ee-a88e-f088f8a2548f
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : "*PBTH_SDP_RECORD, bthioctl/PBTH_SDP_RECORD, bthioctl/BTH_SDP_RECORD, BTH_SDP_RECORD structure [Bluetooth Devices], bth_structs_e77453a7-05d1-403d-9552-972368d7a76c.xml, _BTH_SDP_RECORD, bltooth.bth_sdp_record, BTH_SDP_RECORD, PBTH_SDP_RECORD, PBTH_SDP_RECORD structure pointer [Bluetooth Devices]"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : bthioctl.h
-req.include-header : Bthioctl.h
-req.target-type : Windows
-req.target-min-winverclnt : Versions:\_Supported in Windows Vista, and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= PASSIVE_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : BTH_SDP_RECORD, *PBTH_SDP_RECORD
+UID: NS:bthioctl._BTH_SDP_RECORD
+title: "_BTH_SDP_RECORD"
+author: windows-driver-content
+description: The BTH_SDP_RECORD structure contains information about an SDP record that is to be added to the local SDP server.
+old-location: bltooth\bth_sdp_record.htm
+old-project: bltooth
+ms.assetid: 29aeb49a-1647-46ee-a88e-f088f8a2548f
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: "*PBTH_SDP_RECORD, bthioctl/PBTH_SDP_RECORD, bthioctl/BTH_SDP_RECORD, BTH_SDP_RECORD structure [Bluetooth Devices], bth_structs_e77453a7-05d1-403d-9552-972368d7a76c.xml, _BTH_SDP_RECORD, bltooth.bth_sdp_record, BTH_SDP_RECORD, PBTH_SDP_RECORD, PBTH_SDP_RECORD structure pointer [Bluetooth Devices]"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: bthioctl.h
+req.include-header: Bthioctl.h
+req.target-type: Windows
+req.target-min-winverclnt: Versions:\_Supported in Windows Vista, and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= PASSIVE_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	bthioctl.h
+apiname:
+-	BTH_SDP_RECORD
+product: Windows
+targetos: Windows
+req.typenames: BTH_SDP_RECORD, *PBTH_SDP_RECORD
 ---
 
 # _BTH_SDP_RECORD structure

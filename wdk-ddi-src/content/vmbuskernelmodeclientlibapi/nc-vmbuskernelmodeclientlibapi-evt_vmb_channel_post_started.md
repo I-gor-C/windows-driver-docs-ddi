@@ -1,42 +1,47 @@
 ---
-UID : NC:vmbuskernelmodeclientlibapi.EVT_VMB_CHANNEL_POST_STARTED
-title : EVT_VMB_CHANNEL_POST_STARTED
-author : windows-driver-content
-description : The EvtVmbChannelPostStarted callback function is invoked at either endpoint after packets can be received from the opposite endpoint.
-old-location : netvista\evt_vmb_channel_post_started.htm
-old-project : netvista
-ms.assetid : 0F48459F-BA02-4A0E-9228-BC064A6AD150
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.evt_vmb_channel_post_started, EvtVmbChannelPostStarted callback function [Network Drivers Starting with Windows Vista], EvtVmbChannelPostStarted, EVT_VMB_CHANNEL_POST_STARTED, EVT_VMB_CHANNEL_POST_STARTED, vmbuskernelmodeclientlibapi/EvtVmbChannelPostStarted, PFN_VMB_CHANNEL_POST_STARTED callback function pointer [Network Drivers Starting with Windows Vista], PFN_VMB_CHANNEL_POST_STARTED
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : vmbuskernelmodeclientlibapi.h
-req.include-header : VmbusKernelModeClientLibApi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PVIDEO_PORT_AGP_SERVICES, VIDEO_PORT_AGP_SERVICES"
-req.product : Windows 10 or later.
+UID: NC:vmbuskernelmodeclientlibapi.EVT_VMB_CHANNEL_POST_STARTED
+title: EVT_VMB_CHANNEL_POST_STARTED
+author: windows-driver-content
+description: The EvtVmbChannelPostStarted callback function is invoked at either endpoint after packets can be received from the opposite endpoint.
+old-location: netvista\evt_vmb_channel_post_started.htm
+old-project: netvista
+ms.assetid: 0F48459F-BA02-4A0E-9228-BC064A6AD150
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.evt_vmb_channel_post_started, EvtVmbChannelPostStarted callback function [Network Drivers Starting with Windows Vista], EvtVmbChannelPostStarted, EVT_VMB_CHANNEL_POST_STARTED, EVT_VMB_CHANNEL_POST_STARTED, vmbuskernelmodeclientlibapi/EvtVmbChannelPostStarted, PFN_VMB_CHANNEL_POST_STARTED callback function pointer [Network Drivers Starting with Windows Vista], PFN_VMB_CHANNEL_POST_STARTED
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: vmbuskernelmodeclientlibapi.h
+req.include-header: VmbusKernelModeClientLibApi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	VmbusKernelModeClientLibApi.h
+apiname:
+-	PFN_VMB_CHANNEL_POST_STARTED
+product: Windows
+targetos: Windows
+req.typenames: "*PVIDEO_PORT_AGP_SERVICES, VIDEO_PORT_AGP_SERVICES"
+req.product: Windows 10 or later.
 ---
 
 

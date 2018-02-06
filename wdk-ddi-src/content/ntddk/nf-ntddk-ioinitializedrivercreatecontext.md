@@ -1,41 +1,46 @@
 ---
-UID : NF:ntddk.IoInitializeDriverCreateContext
-title : IoInitializeDriverCreateContext function
-author : windows-driver-content
-description : The IoInitializeDriverCreateContext routine initializes a caller-allocated variable of type IO_DRIVER_CREATE_CONTEXT.
-old-location : ifsk\ioinitializedrivercreatecontext.htm
-old-project : ifsk
-ms.assetid : 1d35ed3e-d14f-43ad-9c11-38aa37e76492
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : IoInitializeDriverCreateContext, ntddk/IoInitializeDriverCreateContext, ifsk.ioinitializedrivercreatecontext, IoInitializeDriverCreateContext routine [Installable File System Drivers], ioref_d9c833b9-0246-49b7-83c5-ef02ef562e17.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntddk.h
-req.include-header : Ntddk.h, Ntifs.h, Fltkernel.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.IoInitializeDriverCreateContext
+title: IoInitializeDriverCreateContext function
+author: windows-driver-content
+description: The IoInitializeDriverCreateContext routine initializes a caller-allocated variable of type IO_DRIVER_CREATE_CONTEXT.
+old-location: ifsk\ioinitializedrivercreatecontext.htm
+old-project: ifsk
+ms.assetid: 1d35ed3e-d14f-43ad-9c11-38aa37e76492
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: IoInitializeDriverCreateContext, ntddk/IoInitializeDriverCreateContext, ifsk.ioinitializedrivercreatecontext, IoInitializeDriverCreateContext routine [Installable File System Drivers], ioref_d9c833b9-0246-49b7-83c5-ef02ef562e17.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntddk.h
+req.include-header: Ntddk.h, Ntifs.h, Fltkernel.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddk.h
+apiname:
+-	IoInitializeDriverCreateContext
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

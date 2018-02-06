@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.RtlInt64ToUnicodeString
-title : RtlInt64ToUnicodeString function
-author : windows-driver-content
-description : The RtlInt64ToUnicodeString routine converts a specified unsigned 64-bit integer value to a Unicode string that represents the value in a specified base.
-old-location : kernel\rtlint64tounicodestring.htm
-old-project : kernel
-ms.assetid : 36f146a7-cdc2-4b88-bd9a-5008bf94c180
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : RtlInt64ToUnicodeString, kernel.rtlint64tounicodestring, RtlInt64ToUnicodeString routine [Kernel-Mode Driver Architecture], k109_b6248e50-c6e8-4c61-a9f0-83fb434bd69c.xml, wdm/RtlInt64ToUnicodeString
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.RtlInt64ToUnicodeString
+title: RtlInt64ToUnicodeString function
+author: windows-driver-content
+description: The RtlInt64ToUnicodeString routine converts a specified unsigned 64-bit integer value to a Unicode string that represents the value in a specified base.
+old-location: kernel\rtlint64tounicodestring.htm
+old-project: kernel
+ms.assetid: 36f146a7-cdc2-4b88-bd9a-5008bf94c180
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: RtlInt64ToUnicodeString, kernel.rtlint64tounicodestring, RtlInt64ToUnicodeString routine [Kernel-Mode Driver Architecture], k109_b6248e50-c6e8-4c61-a9f0-83fb434bd69c.xml, wdm/RtlInt64ToUnicodeString
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	RtlInt64ToUnicodeString
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

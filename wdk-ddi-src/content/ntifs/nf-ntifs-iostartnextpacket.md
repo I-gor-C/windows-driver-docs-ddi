@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.IoStartNextPacket
-title : IoStartNextPacket function
-author : windows-driver-content
-description : The IoStartNextPacket routine dequeues the next IRP, if any, from the given device object's associated device queue and calls the driver's StartIo routine.
-old-location : kernel\iostartnextpacket.htm
-old-project : kernel
-ms.assetid : f1197dfd-03d7-4ac2-8f11-60da413e32b2
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : k104_5a02a1fa-cf0e-43b0-a4e8-db1da8ad110c.xml, IoStartNextPacket routine [Kernel-Mode Driver Architecture], wdm/IoStartNextPacket, kernel.iostartnextpacket, IoStartNextPacket
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : IrqlDispatch, SpinLockSafe, StartIoRecursion, HwStorPortProhibitedDDIs, IrqlDispatch(storport), SpinLockSafe(storport)
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : DISPATCH_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.IoStartNextPacket
+title: IoStartNextPacket function
+author: windows-driver-content
+description: The IoStartNextPacket routine dequeues the next IRP, if any, from the given device object's associated device queue and calls the driver's StartIo routine.
+old-location: kernel\iostartnextpacket.htm
+old-project: kernel
+ms.assetid: f1197dfd-03d7-4ac2-8f11-60da413e32b2
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: k104_5a02a1fa-cf0e-43b0-a4e8-db1da8ad110c.xml, IoStartNextPacket routine [Kernel-Mode Driver Architecture], wdm/IoStartNextPacket, kernel.iostartnextpacket, IoStartNextPacket
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: IrqlDispatch, SpinLockSafe, StartIoRecursion, HwStorPortProhibitedDDIs, IrqlDispatch(storport), SpinLockSafe(storport)
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: DISPATCH_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoStartNextPacket
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

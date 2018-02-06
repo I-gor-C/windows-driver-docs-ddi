@@ -1,41 +1,47 @@
 ---
-UID : NF:dbgeng.IDebugDataSpaces4.GetNextTagged
-title : IDebugDataSpaces4::GetNextTagged method
-author : windows-driver-content
-description : The GetNextTagged method returns the GUID for the next block of tagged data in the enumeration.
-old-location : debugger\getnexttagged.htm
-old-project : debugger
-ms.assetid : 529ef33a-adad-4242-96a8-01cdd273cc35
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : debugger.getnexttagged, GetNextTagged method [Windows Debugging], IDebugDataSpaces3::GetNextTagged, dbgeng/IDebugDataSpaces4::GetNextTagged, GetNextTagged method [Windows Debugging], IDebugDataSpaces3 interface, GetNextTagged, dbgeng/IDebugDataSpaces3::GetNextTagged, GetNextTagged method [Windows Debugging], IDebugDataSpaces4 interface, IDebugDataSpaces4 interface [Windows Debugging], GetNextTagged method, IDebugDataSpaces_24254a63-1fcd-4ad9-a370-6b0760ed37cd.xml, IDebugDataSpaces4, IDebugDataSpaces4::GetNextTagged, IDebugDataSpaces3 interface [Windows Debugging], GetNextTagged method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugDataSpaces4.GetNextTagged
+title: IDebugDataSpaces4::GetNextTagged method
+author: windows-driver-content
+description: The GetNextTagged method returns the GUID for the next block of tagged data in the enumeration.
+old-location: debugger\getnexttagged.htm
+old-project: debugger
+ms.assetid: 529ef33a-adad-4242-96a8-01cdd273cc35
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: debugger.getnexttagged, GetNextTagged method [Windows Debugging], IDebugDataSpaces3::GetNextTagged, dbgeng/IDebugDataSpaces4::GetNextTagged, GetNextTagged method [Windows Debugging], IDebugDataSpaces3 interface, GetNextTagged, dbgeng/IDebugDataSpaces3::GetNextTagged, GetNextTagged method [Windows Debugging], IDebugDataSpaces4 interface, IDebugDataSpaces4 interface [Windows Debugging], GetNextTagged method, IDebugDataSpaces_24254a63-1fcd-4ad9-a370-6b0760ed37cd.xml, IDebugDataSpaces4, IDebugDataSpaces4::GetNextTagged, IDebugDataSpaces3 interface [Windows Debugging], GetNextTagged method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugDataSpaces3.GetNextTagged
+-	IDebugDataSpaces4.GetNextTagged
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

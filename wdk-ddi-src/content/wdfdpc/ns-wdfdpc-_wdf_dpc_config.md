@@ -1,42 +1,47 @@
 ---
-UID : NS:wdfdpc._WDF_DPC_CONFIG
-title : "_WDF_DPC_CONFIG"
-author : windows-driver-content
-description : The WDF_DPC_CONFIG structure contains configuration information for a DPC object.
-old-location : wdf\wdf_dpc_config.htm
-old-project : wdf
-ms.assetid : e4203a9d-98f4-47f2-80ea-51074e4c0713
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WDF_DPC_CONFIG structure, kmdf.wdf_dpc_config, _WDF_DPC_CONFIG, wdfdpc/PWDF_DPC_CONFIG, PWDF_DPC_CONFIG structure pointer, WDF_DPC_CONFIG, PWDF_DPC_CONFIG, *PWDF_DPC_CONFIG, wdfdpc/WDF_DPC_CONFIG, DFDpcObjectRef_797caee0-a119-4bae-837b-461e74022868.xml, wdf.wdf_dpc_config
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdfdpc.h
-req.include-header : Wdf.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDF_DPC_CONFIG, WDF_DPC_CONFIG"
-req.product : Windows 10 or later.
+UID: NS:wdfdpc._WDF_DPC_CONFIG
+title: "_WDF_DPC_CONFIG"
+author: windows-driver-content
+description: The WDF_DPC_CONFIG structure contains configuration information for a DPC object.
+old-location: wdf\wdf_dpc_config.htm
+old-project: wdf
+ms.assetid: e4203a9d-98f4-47f2-80ea-51074e4c0713
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WDF_DPC_CONFIG structure, kmdf.wdf_dpc_config, _WDF_DPC_CONFIG, wdfdpc/PWDF_DPC_CONFIG, PWDF_DPC_CONFIG structure pointer, WDF_DPC_CONFIG, PWDF_DPC_CONFIG, *PWDF_DPC_CONFIG, wdfdpc/WDF_DPC_CONFIG, DFDpcObjectRef_797caee0-a119-4bae-837b-461e74022868.xml, wdf.wdf_dpc_config
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdfdpc.h
+req.include-header: Wdf.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfdpc.h
+apiname:
+-	WDF_DPC_CONFIG
+product: Windows
+targetos: Windows
+req.typenames: "*PWDF_DPC_CONFIG, WDF_DPC_CONFIG"
+req.product: Windows 10 or later.
 ---
 
 # _WDF_DPC_CONFIG structure

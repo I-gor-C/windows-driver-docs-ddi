@@ -1,41 +1,47 @@
 ---
-UID : NC:d3dkmddi.DXGKDDI_DESTROYPROCESS
-title : DXGKDDI_DESTROYPROCESS
-author : windows-driver-content
-description : DxgkDdiDestroyProcess destroys a kernel mode driver process object.
-old-location : display\dxgkddidestroyprocess.htm
-old-project : display
-ms.assetid : C5117F9B-876D-4F74-B528-47698666B44B
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkddidestroyprocess, DxgkDdiDestroyProcess callback function [Display Devices], DxgkDdiDestroyProcess, DXGKDDI_DESTROYPROCESS, DXGKDDI_DESTROYPROCESS, dispmprt/DxgkDdiDestroyProcess, d3dkmddi/DxgkDdiDestroyProcess
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dkmddi.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
+UID: NC:d3dkmddi.DXGKDDI_DESTROYPROCESS
+title: DXGKDDI_DESTROYPROCESS
+author: windows-driver-content
+description: DxgkDdiDestroyProcess destroys a kernel mode driver process object.
+old-location: display\dxgkddidestroyprocess.htm
+old-project: display
+ms.assetid: C5117F9B-876D-4F74-B528-47698666B44B
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkddidestroyprocess, DxgkDdiDestroyProcess callback function [Display Devices], DxgkDdiDestroyProcess, DXGKDDI_DESTROYPROCESS, DXGKDDI_DESTROYPROCESS, dispmprt/DxgkDdiDestroyProcess, d3dkmddi/DxgkDdiDestroyProcess
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dkmddi.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	dispmprt.h
+-	d3dkmddi.h
+apiname:
+-	DxgkDdiDestroyProcess
+product: Windows
+targetos: Windows
+req.typenames: DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
 

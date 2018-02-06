@@ -1,41 +1,46 @@
 ---
-UID : NN:portcls.IPortWMIRegistration
-title : IPortWMIRegistration
-author : windows-driver-content
-description : The IPortWMIRegistration interface is provided in Windows 7 and later versions of Windows. This interface allows the miniport driver to coordinate Event Tracing for Windows (ETW) registration between PortCls and the miniport driver.
-old-location : audio\iportwmiregistration.htm
-old-project : audio
-ms.assetid : 0fb18e82-4853-459f-b8d3-4841ca3d8301
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : audio.iportwmiregistration, IPortWMIRegistration interface [Audio Devices], IPortWMIRegistration interface [Audio Devices], described, IPortWMIRegistration, portcls/IPortWMIRegistration, audmp-routines_c7591b25-80f3-4d0e-ac6b-bc1dea55adb1.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : portcls.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Portcls.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NN:portcls.IPortWMIRegistration
+title: IPortWMIRegistration
+author: windows-driver-content
+description: The IPortWMIRegistration interface is provided in Windows 7 and later versions of Windows. This interface allows the miniport driver to coordinate Event Tracing for Windows (ETW) registration between PortCls and the miniport driver.
+old-location: audio\iportwmiregistration.htm
+old-project: audio
+ms.assetid: 0fb18e82-4853-459f-b8d3-4841ca3d8301
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: audio.iportwmiregistration, IPortWMIRegistration interface [Audio Devices], IPortWMIRegistration interface [Audio Devices], described, IPortWMIRegistration, portcls/IPortWMIRegistration, audmp-routines_c7591b25-80f3-4d0e-ac6b-bc1dea55adb1.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: portcls.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Portcls.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	portcls.h
+apiname:
+-	IPortWMIRegistration
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 # IPortWMIRegistration interface

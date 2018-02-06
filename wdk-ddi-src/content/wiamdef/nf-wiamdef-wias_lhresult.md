@@ -1,42 +1,47 @@
 ---
-UID : NF:wiamdef.WIAS_LHRESULT
-title : WIAS_LHRESULT macro
-author : windows-driver-content
-description : The WIAS_LHRESULT macro is obsolete for Windows Vista and later. It is recommended that the WIAS_HRESULT macro be used instead. The WIAS_LHRESULT macro translates an HRESULT value into a string and writes the string to the diagnostic log file.
-old-location : image\wias_lhresult.htm
-old-project : image
-ms.assetid : dcc02735-632f-4b86-ac4f-833c8dcba1c5
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : WIAS_LHRESULT macro [Imaging Devices], wiamdef/WIAS_LHRESULT, image.wias_lhresult, IWiaLog_f9693b87-6464-423a-9b50-f715f3b35f36.xml, WIAS_LHRESULT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : macro
-req.header : wiamdef.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Me, Windows XP, and later. Obsolete for Windows Vista and later. Use WIAS_HRESULT instead.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wiamdef.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*LPDEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2, DEVICEDIALOGDATA2"
-req.product : Windows 10 or later.
+UID: NF:wiamdef.WIAS_LHRESULT
+title: WIAS_LHRESULT macro
+author: windows-driver-content
+description: The WIAS_LHRESULT macro is obsolete for Windows Vista and later. It is recommended that the WIAS_HRESULT macro be used instead. The WIAS_LHRESULT macro translates an HRESULT value into a string and writes the string to the diagnostic log file.
+old-location: image\wias_lhresult.htm
+old-project: image
+ms.assetid: dcc02735-632f-4b86-ac4f-833c8dcba1c5
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: WIAS_LHRESULT macro [Imaging Devices], wiamdef/WIAS_LHRESULT, image.wias_lhresult, IWiaLog_f9693b87-6464-423a-9b50-f715f3b35f36.xml, WIAS_LHRESULT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: macro
+req.header: wiamdef.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Me, Windows XP, and later. Obsolete for Windows Vista and later. Use WIAS_HRESULT instead.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wiamdef.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wiamdef.h
+apiname:
+-	WIAS_LHRESULT
+product: Windows
+targetos: Windows
+req.typenames: "*LPDEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2, DEVICEDIALOGDATA2"
+req.product: Windows 10 or later.
 ---
 
 

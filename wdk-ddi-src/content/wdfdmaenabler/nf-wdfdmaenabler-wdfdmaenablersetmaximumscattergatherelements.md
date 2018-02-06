@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfdmaenabler.WdfDmaEnablerSetMaximumScatterGatherElements
-title : WdfDmaEnablerSetMaximumScatterGatherElements function
-author : windows-driver-content
-description : The WdfDmaEnablerSetMaximumScatterGatherElements method sets the maximum number of scatter/gather elements that a device supports, for a specified DMA enabler object.
-old-location : wdf\wdfdmaenablersetmaximumscattergatherelements.htm
-old-project : wdf
-ms.assetid : fdfcb8bc-bc42-4c34-ae19-b40401bea41e
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WdfDmaEnablerSetMaximumScatterGatherElements, WdfDmaEnablerSetMaximumScatterGatherElements method, wdf.wdfdmaenablersetmaximumscattergatherelements, PFN_WDFDMAENABLERSETMAXIMUMSCATTERGATHERELEMENTS, wdfdmaenabler/WdfDmaEnablerSetMaximumScatterGatherElements, DFDmaObjectRef_d9f2c46d-5981-4997-96b6-5a9db0dbfd8d.xml, kmdf.wdfdmaenablersetmaximumscattergatherelements
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfdmaenabler.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_DMA_PROFILE
-req.product : Windows 10 or later.
+UID: NF:wdfdmaenabler.WdfDmaEnablerSetMaximumScatterGatherElements
+title: WdfDmaEnablerSetMaximumScatterGatherElements function
+author: windows-driver-content
+description: The WdfDmaEnablerSetMaximumScatterGatherElements method sets the maximum number of scatter/gather elements that a device supports, for a specified DMA enabler object.
+old-location: wdf\wdfdmaenablersetmaximumscattergatherelements.htm
+old-project: wdf
+ms.assetid: fdfcb8bc-bc42-4c34-ae19-b40401bea41e
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WdfDmaEnablerSetMaximumScatterGatherElements, WdfDmaEnablerSetMaximumScatterGatherElements method, wdf.wdfdmaenablersetmaximumscattergatherelements, PFN_WDFDMAENABLERSETMAXIMUMSCATTERGATHERELEMENTS, wdfdmaenabler/WdfDmaEnablerSetMaximumScatterGatherElements, DFDmaObjectRef_d9f2c46d-5981-4997-96b6-5a9db0dbfd8d.xml, kmdf.wdfdmaenablersetmaximumscattergatherelements
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfdmaenabler.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfDmaEnablerSetMaximumScatterGatherElements
+product: Windows
+targetos: Windows
+req.typenames: WDF_DMA_PROFILE
+req.product: Windows 10 or later.
 ---
 
 

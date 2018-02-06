@@ -1,42 +1,47 @@
 ---
-UID : NN:printerextension.IPrintSchemaFeature
-title : IPrintSchemaFeature
-author : windows-driver-content
-description : Exposes a Print Schema Feature element.
-old-location : print\iprintschemafeature_interface.htm
-old-project : print
-ms.assetid : AAC2A60B-9E70-4809-969A-68783A91B093
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : print.iprintschemafeature_interface, IPrintSchemaFeature interface [Print Devices], IPrintSchemaFeature interface [Print Devices], described, IPrintSchemaFeature, printerextension/IPrintSchemaFeature
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : printerextension.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : printerextension.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PrintSchemaSelectionType
-req.product : Windows 10 or later.
+UID: NN:printerextension.IPrintSchemaFeature
+title: IPrintSchemaFeature
+author: windows-driver-content
+description: Exposes a Print Schema Feature element.
+old-location: print\iprintschemafeature_interface.htm
+old-project: print
+ms.assetid: AAC2A60B-9E70-4809-969A-68783A91B093
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: print.iprintschemafeature_interface, IPrintSchemaFeature interface [Print Devices], IPrintSchemaFeature interface [Print Devices], described, IPrintSchemaFeature, printerextension/IPrintSchemaFeature
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: printerextension.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: printerextension.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Printerextension.h
+apiname:
+-	IPrintSchemaFeature
+product: Windows
+targetos: Windows
+req.typenames: PrintSchemaSelectionType
+req.product: Windows 10 or later.
 ---
 
 # IPrintSchemaFeature interface

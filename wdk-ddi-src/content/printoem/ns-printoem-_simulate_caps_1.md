@@ -1,42 +1,47 @@
 ---
-UID : NS:printoem._SIMULATE_CAPS_1
-title : "_SIMULATE_CAPS_1"
-author : windows-driver-content
-description : The SIMULATE_CAPS_1 structure contains information about the types of simulations a spooler supports.
-old-location : print\simulate_caps_1.htm
-old-project : print
-ms.assetid : 17f5d8bf-a3e7-4ff5-9019-24c66875b786
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : print.simulate_caps_1, _SIMULATE_CAPS_1, printoem/PSIMULATE_CAPS_1, SIMULATE_CAPS_1, PSIMULATE_CAPS_1 structure pointer [Print Devices], PSIMULATE_CAPS_1, *PSIMULATE_CAPS_1, SIMULATE_CAPS_1 structure [Print Devices], printoem/SIMULATE_CAPS_1, print_interface-graphics_cb1ba0de-be04-4b11-a746-97fd3f2bc213.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : printoem.h
-req.include-header : Printoem.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSIMULATE_CAPS_1, SIMULATE_CAPS_1"
-req.product : Windows 10 or later.
+UID: NS:printoem._SIMULATE_CAPS_1
+title: "_SIMULATE_CAPS_1"
+author: windows-driver-content
+description: The SIMULATE_CAPS_1 structure contains information about the types of simulations a spooler supports.
+old-location: print\simulate_caps_1.htm
+old-project: print
+ms.assetid: 17f5d8bf-a3e7-4ff5-9019-24c66875b786
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: print.simulate_caps_1, _SIMULATE_CAPS_1, printoem/PSIMULATE_CAPS_1, SIMULATE_CAPS_1, PSIMULATE_CAPS_1 structure pointer [Print Devices], PSIMULATE_CAPS_1, *PSIMULATE_CAPS_1, SIMULATE_CAPS_1 structure [Print Devices], printoem/SIMULATE_CAPS_1, print_interface-graphics_cb1ba0de-be04-4b11-a746-97fd3f2bc213.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: printoem.h
+req.include-header: Printoem.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	printoem.h
+apiname:
+-	SIMULATE_CAPS_1
+product: Windows
+targetos: Windows
+req.typenames: "*PSIMULATE_CAPS_1, SIMULATE_CAPS_1"
+req.product: Windows 10 or later.
 ---
 
 # _SIMULATE_CAPS_1 structure

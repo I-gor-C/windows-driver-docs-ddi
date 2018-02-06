@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisGetRssProcessorInformation
-title : NdisGetRssProcessorInformation function
-author : windows-driver-content
-description : The NdisGetRssProcessorInformation function retrieves information about the set of processors that a miniport driver must use for receive side scaling (RSS).
-old-location : netvista\ndisgetrssprocessorinformation.htm
-old-project : netvista
-ms.assetid : 0da022d5-7294-4780-bab8-119ff6385abf
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : ndis_processor_group_ref_167a091b-01dd-4e5d-bee8-01f5aa9f56fd.xml, NdisGetRssProcessorInformation function [Network Drivers Starting with Windows Vista], netvista.ndisgetrssprocessorinformation, NdisGetRssProcessorInformation, ndis/NdisGetRssProcessorInformation
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported in NDIS 6.20 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisGetRssProcessorInformation
+title: NdisGetRssProcessorInformation function
+author: windows-driver-content
+description: The NdisGetRssProcessorInformation function retrieves information about the set of processors that a miniport driver must use for receive side scaling (RSS).
+old-location: netvista\ndisgetrssprocessorinformation.htm
+old-project: netvista
+ms.assetid: 0da022d5-7294-4780-bab8-119ff6385abf
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: ndis_processor_group_ref_167a091b-01dd-4e5d-bee8-01f5aa9f56fd.xml, NdisGetRssProcessorInformation function [Network Drivers Starting with Windows Vista], netvista.ndisgetrssprocessorinformation, NdisGetRssProcessorInformation, ndis/NdisGetRssProcessorInformation
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported in NDIS 6.20 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisGetRssProcessorInformation
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

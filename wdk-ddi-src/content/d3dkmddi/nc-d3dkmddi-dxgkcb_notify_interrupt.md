@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dkmddi.DXGKCB_NOTIFY_INTERRUPT
-title : DXGKCB_NOTIFY_INTERRUPT
-author : windows-driver-content
-description : The DxgkCbNotifyInterrupt function informs the graphics processing unit (GPU) scheduler about a graphics hardware update at interrupt-service-routine (ISR) time.
-old-location : display\dxgkcbnotifyinterrupt.htm
-old-project : display
-ms.assetid : 7968d26d-0195-463d-8954-e7ebef4f9dea
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkcbnotifyinterrupt, DxgkCbNotifyInterrupt callback function [Display Devices], DxgkCbNotifyInterrupt, DXGKCB_NOTIFY_INTERRUPT, DXGKCB_NOTIFY_INTERRUPT, d3dkmddi/DxgkCbNotifyInterrupt, DpFunctions_fdb60c96-9eec-4e57-a4bd-1b97ad99769b.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
+UID: NC:d3dkmddi.DXGKCB_NOTIFY_INTERRUPT
+title: DXGKCB_NOTIFY_INTERRUPT
+author: windows-driver-content
+description: The DxgkCbNotifyInterrupt function informs the graphics processing unit (GPU) scheduler about a graphics hardware update at interrupt-service-routine (ISR) time.
+old-location: display\dxgkcbnotifyinterrupt.htm
+old-project: display
+ms.assetid: 7968d26d-0195-463d-8954-e7ebef4f9dea
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkcbnotifyinterrupt, DxgkCbNotifyInterrupt callback function [Display Devices], DxgkCbNotifyInterrupt, DXGKCB_NOTIFY_INTERRUPT, DXGKCB_NOTIFY_INTERRUPT, d3dkmddi/DxgkCbNotifyInterrupt, DpFunctions_fdb60c96-9eec-4e57-a4bd-1b97ad99769b.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DxgkCbNotifyInterrupt
+product: Windows
+targetos: Windows
+req.typenames: DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NC:wdm.ALLOCATE_FUNCTION_EX
-title : ALLOCATE_FUNCTION_EX
-author : windows-driver-content
-description : The LookasideListAllocateEx routine allocates the storage for a new lookaside-list entry when a client requests an entry from a lookaside list that is empty.
-old-location : kernel\lookasidelistallocateex.htm
-old-project : kernel
-ms.assetid : 4c9df63e-b0cb-4a49-9a01-9fc8f8c592f6
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.lookasidelistallocateex, LookasideListAllocateEx routine [Kernel-Mode Driver Architecture], LookasideListAllocateEx, ALLOCATE_FUNCTION_EX, ALLOCATE_FUNCTION_EX, wdm/LookasideListAllocateEx, DrvrRtns_a8e59075-4ed4-49d3-a516-6cee5b6390c8.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported in Windows Vista and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
-req.product : Windows 10 or later.
+UID: NC:wdm.ALLOCATE_FUNCTION_EX
+title: ALLOCATE_FUNCTION_EX
+author: windows-driver-content
+description: The LookasideListAllocateEx routine allocates the storage for a new lookaside-list entry when a client requests an entry from a lookaside list that is empty.
+old-location: kernel\lookasidelistallocateex.htm
+old-project: kernel
+ms.assetid: 4c9df63e-b0cb-4a49-9a01-9fc8f8c592f6
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.lookasidelistallocateex, LookasideListAllocateEx routine [Kernel-Mode Driver Architecture], LookasideListAllocateEx, ALLOCATE_FUNCTION_EX, ALLOCATE_FUNCTION_EX, wdm/LookasideListAllocateEx, DrvrRtns_a8e59075-4ed4-49d3-a516-6cee5b6390c8.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported in Windows Vista and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Wdm.h
+apiname:
+-	LookasideListAllocateEx
+product: Windows
+targetos: Windows
+req.typenames: WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+req.product: Windows 10 or later.
 ---
 
 

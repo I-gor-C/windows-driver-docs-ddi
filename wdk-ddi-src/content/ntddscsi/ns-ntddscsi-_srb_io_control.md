@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddscsi._SRB_IO_CONTROL
-title : "_SRB_IO_CONTROL"
-author : windows-driver-content
-description : SRB_IO_CONTROL structure
-old-location : storage\srb_io_control.htm
-old-project : storage
-ms.assetid : 754d2a4c-6a22-4c25-87e2-e30e87b9c1ba
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : "_SRB_IO_CONTROL, PSRB_IO_CONTROL, structs-scsibus_d7cd0432-d4be-4609-a3f9-91ef842caf7e.xml, PSRB_IO_CONTROL structure pointer [Storage Devices], SRB_IO_CONTROL structure [Storage Devices], ntddscsi/SRB_IO_CONTROL, SRB_IO_CONTROL, *PSRB_IO_CONTROL, ntddscsi/PSRB_IO_CONTROL, storage.srb_io_control"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddscsi.h
-req.include-header : Ntddscsi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSRB_IO_CONTROL, SRB_IO_CONTROL"
+UID: NS:ntddscsi._SRB_IO_CONTROL
+title: "_SRB_IO_CONTROL"
+author: windows-driver-content
+description: SRB_IO_CONTROL structure
+old-location: storage\srb_io_control.htm
+old-project: storage
+ms.assetid: 754d2a4c-6a22-4c25-87e2-e30e87b9c1ba
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: "_SRB_IO_CONTROL, PSRB_IO_CONTROL, structs-scsibus_d7cd0432-d4be-4609-a3f9-91ef842caf7e.xml, PSRB_IO_CONTROL structure pointer [Storage Devices], SRB_IO_CONTROL structure [Storage Devices], ntddscsi/SRB_IO_CONTROL, SRB_IO_CONTROL, *PSRB_IO_CONTROL, ntddscsi/PSRB_IO_CONTROL, storage.srb_io_control"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddscsi.h
+req.include-header: Ntddscsi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddscsi.h
+apiname:
+-	SRB_IO_CONTROL
+product: Windows
+targetos: Windows
+req.typenames: "*PSRB_IO_CONTROL, SRB_IO_CONTROL"
 ---
 
 # _SRB_IO_CONTROL structure

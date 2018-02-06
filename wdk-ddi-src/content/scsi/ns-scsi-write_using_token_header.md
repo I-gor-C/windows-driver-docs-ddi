@@ -1,42 +1,47 @@
 ---
-UID : NS:scsi.WRITE_USING_TOKEN_HEADER
-title : WRITE_USING_TOKEN_HEADER
-author : windows-driver-content
-description : The WRITE_USING_TOKEN_HEADER structure describes the destination data locations for an offload write data operation.
-old-location : storage\write_using_token_header.htm
-old-project : storage
-ms.assetid : A46ED23A-7DB0-4792-B903-F748BCDAD55E
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : scsi/WRITE_USING_TOKEN_HEADER, storage.write_using_token_header, PWRITE_USING_TOKEN_HEADER structure pointer [Storage Devices], WRITE_USING_TOKEN_HEADER, WRITE_USING_TOKEN_HEADER structure [Storage Devices], *PWRITE_USING_TOKEN_HEADER, scsi/PWRITE_USING_TOKEN_HEADER, PWRITE_USING_TOKEN_HEADER
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : scsi.h
-req.include-header : Scsi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WRITE_USING_TOKEN_HEADER, *PWRITE_USING_TOKEN_HEADER
-req.product : Windows 10 or later.
+UID: NS:scsi.WRITE_USING_TOKEN_HEADER
+title: WRITE_USING_TOKEN_HEADER
+author: windows-driver-content
+description: The WRITE_USING_TOKEN_HEADER structure describes the destination data locations for an offload write data operation.
+old-location: storage\write_using_token_header.htm
+old-project: storage
+ms.assetid: A46ED23A-7DB0-4792-B903-F748BCDAD55E
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: scsi/WRITE_USING_TOKEN_HEADER, storage.write_using_token_header, PWRITE_USING_TOKEN_HEADER structure pointer [Storage Devices], WRITE_USING_TOKEN_HEADER, WRITE_USING_TOKEN_HEADER structure [Storage Devices], *PWRITE_USING_TOKEN_HEADER, scsi/PWRITE_USING_TOKEN_HEADER, PWRITE_USING_TOKEN_HEADER
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: scsi.h
+req.include-header: Scsi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	scsi.h
+apiname:
+-	WRITE_USING_TOKEN_HEADER
+product: Windows
+targetos: Windows
+req.typenames: WRITE_USING_TOKEN_HEADER, *PWRITE_USING_TOKEN_HEADER
+req.product: Windows 10 or later.
 ---
 
 # WRITE_USING_TOKEN_HEADER structure

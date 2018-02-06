@@ -1,41 +1,46 @@
 ---
-UID : NC:ndis.MINIPORT_INITIALIZE
-title : MINIPORT_INITIALIZE
-author : windows-driver-content
-description : NDIS calls a miniport driver's MiniportInitializeEx function to initialize a miniport adapter for network I/O operations.
-old-location : netvista\miniportinitializeex.htm
-old-project : netvista
-ms.assetid : b146fa81-005b-4a6c-962d-4cb023ea790e
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.miniportinitializeex, MiniportInitializeEx callback function [Network Drivers Starting with Windows Vista], MiniportInitializeEx, MINIPORT_INITIALIZE, MINIPORT_INITIALIZE, ndis/MiniportInitializeEx, miniport_functions_ref_d98605bf-4032-4cfe-8529-2d0bebc9e29e.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
+UID: NC:ndis.MINIPORT_INITIALIZE
+title: MINIPORT_INITIALIZE
+author: windows-driver-content
+description: NDIS calls a miniport driver's MiniportInitializeEx function to initialize a miniport adapter for network I/O operations.
+old-location: netvista\miniportinitializeex.htm
+old-project: netvista
+ms.assetid: b146fa81-005b-4a6c-962d-4cb023ea790e
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.miniportinitializeex, MiniportInitializeEx callback function [Network Drivers Starting with Windows Vista], MiniportInitializeEx, MINIPORT_INITIALIZE, MINIPORT_INITIALIZE, ndis/MiniportInitializeEx, miniport_functions_ref_d98605bf-4032-4cfe-8529-2d0bebc9e29e.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ndis.h
+apiname:
+-	MiniportInitializeEx
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 

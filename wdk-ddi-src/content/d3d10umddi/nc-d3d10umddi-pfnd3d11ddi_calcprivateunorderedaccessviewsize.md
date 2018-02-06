@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3D11DDI_CALCPRIVATEUNORDEREDACCESSVIEWSIZE
-title : PFND3D11DDI_CALCPRIVATEUNORDEREDACCESSVIEWSIZE
-author : windows-driver-content
-description : The CalcPrivateUnorderedAccessViewSize function determines the size of the user-mode display driver's private region of memory (that is, the size of internal driver structures, not the size of the resource video memory) for an unordered access view.
-old-location : display\calcprivateunorderedaccessviewsize.htm
-old-project : display
-ms.assetid : 6aca5d33-c8c6-4c6b-a66a-e28a958cbc2e
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.calcprivateunorderedaccessviewsize, CalcPrivateUnorderedAccessViewSize callback function [Display Devices], CalcPrivateUnorderedAccessViewSize, PFND3D11DDI_CALCPRIVATEUNORDEREDACCESSVIEWSIZE, PFND3D11DDI_CALCPRIVATEUNORDEREDACCESSVIEWSIZE, d3d10umddi/CalcPrivateUnorderedAccessViewSize, UserModeDisplayDriverDx11_Functions_bc7bfd55-2032-4df8-8a68-32672fe72b4b.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : CalcPrivateUnorderedAccessViewSize is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3D11DDI_CALCPRIVATEUNORDEREDACCESSVIEWSIZE
+title: PFND3D11DDI_CALCPRIVATEUNORDEREDACCESSVIEWSIZE
+author: windows-driver-content
+description: The CalcPrivateUnorderedAccessViewSize function determines the size of the user-mode display driver's private region of memory (that is, the size of internal driver structures, not the size of the resource video memory) for an unordered access view.
+old-location: display\calcprivateunorderedaccessviewsize.htm
+old-project: display
+ms.assetid: 6aca5d33-c8c6-4c6b-a66a-e28a958cbc2e
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.calcprivateunorderedaccessviewsize, CalcPrivateUnorderedAccessViewSize callback function [Display Devices], CalcPrivateUnorderedAccessViewSize, PFND3D11DDI_CALCPRIVATEUNORDEREDACCESSVIEWSIZE, PFND3D11DDI_CALCPRIVATEUNORDEREDACCESSVIEWSIZE, d3d10umddi/CalcPrivateUnorderedAccessViewSize, UserModeDisplayDriverDx11_Functions_bc7bfd55-2032-4df8-8a68-32672fe72b4b.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: CalcPrivateUnorderedAccessViewSize is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	CalcPrivateUnorderedAccessViewSize
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

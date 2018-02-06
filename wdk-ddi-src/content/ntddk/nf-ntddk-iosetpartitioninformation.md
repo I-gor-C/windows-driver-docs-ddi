@@ -1,41 +1,46 @@
 ---
-UID : NF:ntddk.IoSetPartitionInformation
-title : IoSetPartitionInformation function
-author : windows-driver-content
-description : The IoSetPartitionInformation routine is obsolete and is provided only to support existing drivers.
-old-location : storage\iosetpartitioninformation.htm
-old-project : storage
-ms.assetid : 3f1a6e3f-3bbc-4cc5-8efe-e3cf6ac3adf5
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : IoSetPartitionInformation routine [Storage Devices], rtns-disk_58012dfd-a95d-4af6-a09d-e1a4bcb458e2.xml, IoSetPartitionInformation, storage.iosetpartitioninformation, ntddk/IoSetPartitionInformation
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL (See Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.IoSetPartitionInformation
+title: IoSetPartitionInformation function
+author: windows-driver-content
+description: The IoSetPartitionInformation routine is obsolete and is provided only to support existing drivers.
+old-location: storage\iosetpartitioninformation.htm
+old-project: storage
+ms.assetid: 3f1a6e3f-3bbc-4cc5-8efe-e3cf6ac3adf5
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: IoSetPartitionInformation routine [Storage Devices], rtns-disk_58012dfd-a95d-4af6-a09d-e1a4bcb458e2.xml, IoSetPartitionInformation, storage.iosetpartitioninformation, ntddk/IoSetPartitionInformation
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL (See Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoSetPartitionInformation
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

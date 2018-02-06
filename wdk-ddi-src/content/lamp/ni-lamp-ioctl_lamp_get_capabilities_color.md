@@ -1,41 +1,46 @@
 ---
-UID : NI:lamp.IOCTL_LAMP_GET_CAPABILITIES_COLOR
-title : IOCTL_LAMP_GET_CAPABILITIES_COLOR
-author : windows-driver-content
-description : The IOCTL_LAMP_GET_CAPABILITIES_COLOR control code queries the capabilities of the lamp when the device is configured to emit color light.
-old-location : stream\ioctl_lamp_get_capabilities_color.htm
-old-project : stream
-ms.assetid : CC7B1824-E397-414A-8EB6-130AEC031304
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.ioctl_lamp_get_capabilities_color, IOCTL_LAMP_GET_CAPABILITIES_COLOR control code [Streaming Media Devices], IOCTL_LAMP_GET_CAPABILITIES_COLOR, lamp/IOCTL_LAMP_GET_CAPABILITIES_COLOR
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : lamp.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : LAMP_MODE
+UID: NI:lamp.IOCTL_LAMP_GET_CAPABILITIES_COLOR
+title: IOCTL_LAMP_GET_CAPABILITIES_COLOR
+author: windows-driver-content
+description: The IOCTL_LAMP_GET_CAPABILITIES_COLOR control code queries the capabilities of the lamp when the device is configured to emit color light.
+old-location: stream\ioctl_lamp_get_capabilities_color.htm
+old-project: stream
+ms.assetid: CC7B1824-E397-414A-8EB6-130AEC031304
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.ioctl_lamp_get_capabilities_color, IOCTL_LAMP_GET_CAPABILITIES_COLOR control code [Streaming Media Devices], IOCTL_LAMP_GET_CAPABILITIES_COLOR, lamp/IOCTL_LAMP_GET_CAPABILITIES_COLOR
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: lamp.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	lamp.h
+apiname:
+-	IOCTL_LAMP_GET_CAPABILITIES_COLOR
+product: Windows
+targetos: Windows
+req.typenames: LAMP_MODE
 ---
 
 # IOCTL_LAMP_GET_CAPABILITIES_COLOR IOCTL

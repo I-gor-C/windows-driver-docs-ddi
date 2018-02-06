@@ -1,41 +1,46 @@
 ---
-UID : NI:bthioctl.IOCTL_INTERNAL_BTH_SUBMIT_BRB
-title : IOCTL_INTERNAL_BTH_SUBMIT_BRB
-author : windows-driver-content
-description : Profile drivers use IOCTL_INTERNAL_BTH_SUBMIT_BRB to submit a Bluetooth Request Block (BRB) to the Bluetooth driver stack.
-old-location : bltooth\ioctl_internal_bth_submit_brb.htm
-old-project : bltooth
-ms.assetid : 60e4ee90-81d4-47a1-aed4-ee39b9fe3174
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : bltooth.ioctl_internal_bth_submit_brb, IOCTL_INTERNAL_BTH_SUBMIT_BRB control code [Bluetooth Devices], IOCTL_INTERNAL_BTH_SUBMIT_BRB, bthioctl/IOCTL_INTERNAL_BTH_SUBMIT_BRB, bth_ioctls_4b5e6ea0-3c6d-4453-9822-df845ebc2038.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : bthioctl.h
-req.include-header : BthIoctl.h
-req.target-type : Windows
-req.target-min-winverclnt : Versions:\_Supported in Windows Vista, and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= PASSIVE_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HFP_BYPASS_CODEC_ID_V1, *PHFP_BYPASS_CODEC_ID_V1
+UID: NI:bthioctl.IOCTL_INTERNAL_BTH_SUBMIT_BRB
+title: IOCTL_INTERNAL_BTH_SUBMIT_BRB
+author: windows-driver-content
+description: Profile drivers use IOCTL_INTERNAL_BTH_SUBMIT_BRB to submit a Bluetooth Request Block (BRB) to the Bluetooth driver stack.
+old-location: bltooth\ioctl_internal_bth_submit_brb.htm
+old-project: bltooth
+ms.assetid: 60e4ee90-81d4-47a1-aed4-ee39b9fe3174
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: bltooth.ioctl_internal_bth_submit_brb, IOCTL_INTERNAL_BTH_SUBMIT_BRB control code [Bluetooth Devices], IOCTL_INTERNAL_BTH_SUBMIT_BRB, bthioctl/IOCTL_INTERNAL_BTH_SUBMIT_BRB, bth_ioctls_4b5e6ea0-3c6d-4453-9822-df845ebc2038.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: bthioctl.h
+req.include-header: BthIoctl.h
+req.target-type: Windows
+req.target-min-winverclnt: Versions:\_Supported in Windows Vista, and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= PASSIVE_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	BthIoctl.h
+apiname:
+-	IOCTL_INTERNAL_BTH_SUBMIT_BRB
+product: Windows
+targetos: Windows
+req.typenames: HFP_BYPASS_CODEC_ID_V1, *PHFP_BYPASS_CODEC_ID_V1
 ---
 
 # IOCTL_INTERNAL_BTH_SUBMIT_BRB IOCTL

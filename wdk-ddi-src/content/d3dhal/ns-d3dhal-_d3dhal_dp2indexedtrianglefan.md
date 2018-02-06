@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dhal._D3DHAL_DP2INDEXEDTRIANGLEFAN
-title : "_D3DHAL_DP2INDEXEDTRIANGLEFAN"
-author : windows-driver-content
-description : D3DHAL_DP2INDEXEDTRIANGLEFAN is parsed from the command buffer by the D3dDrawPrimitives2 callback when the D3DHAL_DP2COMMAND structure's bCommand member is set to D3DDP2OP_INDEXEDTRIANGLEFAN, and is used to render a sequence of connected triangles using vertex indices. All of the triangles share a common vertex.
-old-location : display\d3dhal_dp2indexedtrianglefan.htm
-old-project : display
-ms.assetid : cdc3dd16-6bf2-495c-8df1-aa9c670d1e7a
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3dstrct_72b499fd-e571-4dbb-a9b8-c2debf754b41.xml, D3DHAL_DP2INDEXEDTRIANGLEFAN, LPD3DHAL_DP2INDEXEDTRIANGLEFAN structure pointer [Display Devices], LPD3DHAL_DP2INDEXEDTRIANGLEFAN, D3DHAL_DP2INDEXEDTRIANGLEFAN structure [Display Devices], _D3DHAL_DP2INDEXEDTRIANGLEFAN, d3dhal/LPD3DHAL_DP2INDEXEDTRIANGLEFAN, *LPD3DHAL_DP2INDEXEDTRIANGLEFAN, display.d3dhal_dp2indexedtrianglefan, d3dhal/D3DHAL_DP2INDEXEDTRIANGLEFAN
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dhal.h
-req.include-header : D3dhal.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*LPD3DHAL_DP2INDEXEDTRIANGLEFAN, D3DHAL_DP2INDEXEDTRIANGLEFAN"
+UID: NS:d3dhal._D3DHAL_DP2INDEXEDTRIANGLEFAN
+title: "_D3DHAL_DP2INDEXEDTRIANGLEFAN"
+author: windows-driver-content
+description: D3DHAL_DP2INDEXEDTRIANGLEFAN is parsed from the command buffer by the D3dDrawPrimitives2 callback when the D3DHAL_DP2COMMAND structure's bCommand member is set to D3DDP2OP_INDEXEDTRIANGLEFAN, and is used to render a sequence of connected triangles using vertex indices. All of the triangles share a common vertex.
+old-location: display\d3dhal_dp2indexedtrianglefan.htm
+old-project: display
+ms.assetid: cdc3dd16-6bf2-495c-8df1-aa9c670d1e7a
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3dstrct_72b499fd-e571-4dbb-a9b8-c2debf754b41.xml, D3DHAL_DP2INDEXEDTRIANGLEFAN, LPD3DHAL_DP2INDEXEDTRIANGLEFAN structure pointer [Display Devices], LPD3DHAL_DP2INDEXEDTRIANGLEFAN, D3DHAL_DP2INDEXEDTRIANGLEFAN structure [Display Devices], _D3DHAL_DP2INDEXEDTRIANGLEFAN, d3dhal/LPD3DHAL_DP2INDEXEDTRIANGLEFAN, *LPD3DHAL_DP2INDEXEDTRIANGLEFAN, display.d3dhal_dp2indexedtrianglefan, d3dhal/D3DHAL_DP2INDEXEDTRIANGLEFAN
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dhal.h
+req.include-header: D3dhal.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dhal.h
+apiname:
+-	D3DHAL_DP2INDEXEDTRIANGLEFAN
+product: Windows
+targetos: Windows
+req.typenames: "*LPD3DHAL_DP2INDEXEDTRIANGLEFAN, D3DHAL_DP2INDEXEDTRIANGLEFAN"
 ---
 
 # _D3DHAL_DP2INDEXEDTRIANGLEFAN structure

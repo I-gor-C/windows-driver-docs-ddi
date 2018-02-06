@@ -1,42 +1,50 @@
 ---
-UID : NF:wdfrequest.WdfRequestRetrieveOutputBuffer
-title : WdfRequestRetrieveOutputBuffer function
-author : windows-driver-content
-description : The WdfRequestRetrieveOutputBuffer method retrieves an I/O request's output buffer.
-old-location : wdf\wdfrequestretrieveoutputbuffer.htm
-old-project : wdf
-ms.assetid : 5f12dd97-d8e7-4fef-91bf-00243c0cdd52
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdfrequest/WdfRequestRetrieveOutputBuffer, kmdf.wdfrequestretrieveoutputbuffer, DFRequestObjectRef_05ab728b-3b70-4095-acca-294443797557.xml, WdfRequestRetrieveOutputBuffer, wdf.wdfrequestretrieveoutputbuffer, PFN_WDFREQUESTRETRIEVEOUTPUTBUFFER, WdfRequestRetrieveOutputBuffer method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfrequest.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : BufAfterReqCompletedIntIoctl, BufAfterReqCompletedIntIoctlA, BufAfterReqCompletedIoctl, BufAfterReqCompletedIoctlA, BufAfterReqCompletedRead, BufAfterReqCompletedReadA, BufAfterReqCompletedWrite, DriverCreate, InvalidReqAccess, InvalidReqAccessLocal, KmdfIrql, KmdfIrql2, OutputBufferAPI
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_REQUEST_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfrequest.WdfRequestRetrieveOutputBuffer
+title: WdfRequestRetrieveOutputBuffer function
+author: windows-driver-content
+description: The WdfRequestRetrieveOutputBuffer method retrieves an I/O request's output buffer.
+old-location: wdf\wdfrequestretrieveoutputbuffer.htm
+old-project: wdf
+ms.assetid: 5f12dd97-d8e7-4fef-91bf-00243c0cdd52
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdfrequest/WdfRequestRetrieveOutputBuffer, kmdf.wdfrequestretrieveoutputbuffer, DFRequestObjectRef_05ab728b-3b70-4095-acca-294443797557.xml, WdfRequestRetrieveOutputBuffer, wdf.wdfrequestretrieveoutputbuffer, PFN_WDFREQUESTRETRIEVEOUTPUTBUFFER, WdfRequestRetrieveOutputBuffer method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfrequest.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: BufAfterReqCompletedIntIoctl, BufAfterReqCompletedIntIoctlA, BufAfterReqCompletedIoctl, BufAfterReqCompletedIoctlA, BufAfterReqCompletedRead, BufAfterReqCompletedReadA, BufAfterReqCompletedWrite, DriverCreate, InvalidReqAccess, InvalidReqAccessLocal, KmdfIrql, KmdfIrql2, OutputBufferAPI
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+-	WUDFx02000.dll
+-	WUDFx02000.dll.dll
+apiname:
+-	WdfRequestRetrieveOutputBuffer
+product: Windows
+targetos: Windows
+req.typenames: WDF_REQUEST_TYPE
+req.product: Windows 10 or later.
 ---
 
 

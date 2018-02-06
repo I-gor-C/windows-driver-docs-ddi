@@ -1,41 +1,49 @@
 ---
-UID : NF:dbgeng.IDebugSystemObjects4.GetCurrentThreadDataOffset
-title : IDebugSystemObjects4::GetCurrentThreadDataOffset method
-author : windows-driver-content
-description : The GetCurrentThreadDataOffset method returns the location of the system data structure for the current thread.
-old-location : debugger\getcurrentthreaddataoffset.htm
-old-project : debugger
-ms.assetid : 7837c049-fdca-4f90-9f38-2ec91ed8703b
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugSystemObjects3::GetCurrentThreadDataOffset, GetCurrentThreadDataOffset method [Windows Debugging], IDebugSystemObjects3 interface, IDebugSystemObjects3 interface [Windows Debugging], GetCurrentThreadDataOffset method, IDebugSystemObjects interface [Windows Debugging], GetCurrentThreadDataOffset method, GetCurrentThreadDataOffset, GetCurrentThreadDataOffset method [Windows Debugging], IDebugSystemObjects4 interface, GetCurrentThreadDataOffset method [Windows Debugging], IDebugSystemObjects interface, IDebugSystemObjects4, IDebugSystemObjects4::GetCurrentThreadDataOffset, GetCurrentThreadDataOffset method [Windows Debugging], IDebugSystemObjects_5d09a9f7-d6a3-49ed-b872-1b9ee5173d28.xml, dbgeng/IDebugSystemObjects3::GetCurrentThreadDataOffset, IDebugSystemObjects2 interface [Windows Debugging], GetCurrentThreadDataOffset method, IDebugSystemObjects2::GetCurrentThreadDataOffset, dbgeng/IDebugSystemObjects4::GetCurrentThreadDataOffset, debugger.getcurrentthreaddataoffset, dbgeng/IDebugSystemObjects2::GetCurrentThreadDataOffset, IDebugSystemObjects::GetCurrentThreadDataOffset, dbgeng/IDebugSystemObjects::GetCurrentThreadDataOffset, GetCurrentThreadDataOffset method [Windows Debugging], IDebugSystemObjects2 interface, IDebugSystemObjects4 interface [Windows Debugging], GetCurrentThreadDataOffset method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSystemObjects4.GetCurrentThreadDataOffset
+title: IDebugSystemObjects4::GetCurrentThreadDataOffset method
+author: windows-driver-content
+description: The GetCurrentThreadDataOffset method returns the location of the system data structure for the current thread.
+old-location: debugger\getcurrentthreaddataoffset.htm
+old-project: debugger
+ms.assetid: 7837c049-fdca-4f90-9f38-2ec91ed8703b
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugSystemObjects3::GetCurrentThreadDataOffset, GetCurrentThreadDataOffset method [Windows Debugging], IDebugSystemObjects3 interface, IDebugSystemObjects3 interface [Windows Debugging], GetCurrentThreadDataOffset method, IDebugSystemObjects interface [Windows Debugging], GetCurrentThreadDataOffset method, GetCurrentThreadDataOffset, GetCurrentThreadDataOffset method [Windows Debugging], IDebugSystemObjects4 interface, GetCurrentThreadDataOffset method [Windows Debugging], IDebugSystemObjects interface, IDebugSystemObjects4, IDebugSystemObjects4::GetCurrentThreadDataOffset, GetCurrentThreadDataOffset method [Windows Debugging], IDebugSystemObjects_5d09a9f7-d6a3-49ed-b872-1b9ee5173d28.xml, dbgeng/IDebugSystemObjects3::GetCurrentThreadDataOffset, IDebugSystemObjects2 interface [Windows Debugging], GetCurrentThreadDataOffset method, IDebugSystemObjects2::GetCurrentThreadDataOffset, dbgeng/IDebugSystemObjects4::GetCurrentThreadDataOffset, debugger.getcurrentthreaddataoffset, dbgeng/IDebugSystemObjects2::GetCurrentThreadDataOffset, IDebugSystemObjects::GetCurrentThreadDataOffset, dbgeng/IDebugSystemObjects::GetCurrentThreadDataOffset, GetCurrentThreadDataOffset method [Windows Debugging], IDebugSystemObjects2 interface, IDebugSystemObjects4 interface [Windows Debugging], GetCurrentThreadDataOffset method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugSystemObjects.GetCurrentThreadDataOffset
+-	IDebugSystemObjects2.GetCurrentThreadDataOffset
+-	IDebugSystemObjects3.GetCurrentThreadDataOffset
+-	IDebugSystemObjects4.GetCurrentThreadDataOffset
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

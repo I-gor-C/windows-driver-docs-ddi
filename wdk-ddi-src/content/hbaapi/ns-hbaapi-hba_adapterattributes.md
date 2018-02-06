@@ -1,41 +1,46 @@
 ---
-UID : NS:hbaapi.HBA_AdapterAttributes
-title : HBA_AdapterAttributes
-author : windows-driver-content
-description : The HBA_AdapterAttributes structure is used in conjunction with the HBA_GetAdapterAttributes routine to report the attributes of an HBA.
-old-location : storage\hba_adapterattributes.htm
-old-project : storage
-ms.assetid : d86a5810-7014-41d5-bd88-3a1bd50032da
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : HBA_ADAPTERATTRIBUTES structure [Storage Devices], structs-Fibre_364bd5e8-0276-425b-a1f9-9659aabecd19.xml, HBA_AdapterAttributes structure [Storage Devices], PHBA_ADAPTERATTRIBUTES structure pointer [Storage Devices], hbaapi/HBA_AdapterAttributes, hbaapi/PHBA_ADAPTERATTRIBUTES, HBA_AdapterAttributes, storage.hba_adapterattributes, HBA_ADAPTERATTRIBUTES, *PHBA_ADAPTERATTRIBUTES, PHBA_ADAPTERATTRIBUTES
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : hbaapi.h
-req.include-header : Hbaapi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PHBA_ADAPTERATTRIBUTES, HBA_ADAPTERATTRIBUTES"
+UID: NS:hbaapi.HBA_AdapterAttributes
+title: HBA_AdapterAttributes
+author: windows-driver-content
+description: The HBA_AdapterAttributes structure is used in conjunction with the HBA_GetAdapterAttributes routine to report the attributes of an HBA.
+old-location: storage\hba_adapterattributes.htm
+old-project: storage
+ms.assetid: d86a5810-7014-41d5-bd88-3a1bd50032da
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: HBA_ADAPTERATTRIBUTES structure [Storage Devices], structs-Fibre_364bd5e8-0276-425b-a1f9-9659aabecd19.xml, HBA_AdapterAttributes structure [Storage Devices], PHBA_ADAPTERATTRIBUTES structure pointer [Storage Devices], hbaapi/HBA_AdapterAttributes, hbaapi/PHBA_ADAPTERATTRIBUTES, HBA_AdapterAttributes, storage.hba_adapterattributes, HBA_ADAPTERATTRIBUTES, *PHBA_ADAPTERATTRIBUTES, PHBA_ADAPTERATTRIBUTES
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: hbaapi.h
+req.include-header: Hbaapi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hbaapi.h
+apiname:
+-	HBA_ADAPTERATTRIBUTES
+product: Windows
+targetos: Windows
+req.typenames: "*PHBA_ADAPTERATTRIBUTES, HBA_ADAPTERATTRIBUTES"
 ---
 
 # HBA_AdapterAttributes structure

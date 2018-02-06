@@ -1,41 +1,46 @@
 ---
-UID : NC:dispmprt.DXGKCB_WRITE_DEVICE_SPACE
-title : DXGKCB_WRITE_DEVICE_SPACE
-author : windows-driver-content
-description : The DxgkCbWriteDeviceSpace function writes to a device configuration space or the expansion ROM of a display adapter.
-old-location : display\dxgkcbwritedevicespace.htm
-old-project : display
-ms.assetid : 797d6b0c-91a4-4923-ad40-937cfde50067
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkcbwritedevicespace, DxgkCbWriteDeviceSpace callback function [Display Devices], DxgkCbWriteDeviceSpace, DXGKCB_WRITE_DEVICE_SPACE, DXGKCB_WRITE_DEVICE_SPACE, dispmprt/DxgkCbWriteDeviceSpace, DpFunctions_947b42ba-4121-4f21-b361-29a63278feb0.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : dispmprt.h
-req.include-header : Dispmprt.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
+UID: NC:dispmprt.DXGKCB_WRITE_DEVICE_SPACE
+title: DXGKCB_WRITE_DEVICE_SPACE
+author: windows-driver-content
+description: The DxgkCbWriteDeviceSpace function writes to a device configuration space or the expansion ROM of a display adapter.
+old-location: display\dxgkcbwritedevicespace.htm
+old-project: display
+ms.assetid: 797d6b0c-91a4-4923-ad40-937cfde50067
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkcbwritedevicespace, DxgkCbWriteDeviceSpace callback function [Display Devices], DxgkCbWriteDeviceSpace, DXGKCB_WRITE_DEVICE_SPACE, DXGKCB_WRITE_DEVICE_SPACE, dispmprt/DxgkCbWriteDeviceSpace, DpFunctions_947b42ba-4121-4f21-b361-29a63278feb0.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: dispmprt.h
+req.include-header: Dispmprt.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	dispmprt.h
+apiname:
+-	DxgkCbWriteDeviceSpace
+product: Windows
+targetos: Windows
+req.typenames: SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ---
 
 

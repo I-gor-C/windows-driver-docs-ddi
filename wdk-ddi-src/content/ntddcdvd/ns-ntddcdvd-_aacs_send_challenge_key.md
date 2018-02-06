@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddcdvd._AACS_SEND_CHALLENGE_KEY
-title : "_AACS_SEND_CHALLENGE_KEY"
-author : windows-driver-content
-description : The AACS_SEND_CHALLENGE_KEY structure is defined as a challenge key that host software sends to an Advanced Access Content System (AACS) device.
-old-location : storage\aacs_send_challenge_key.htm
-old-project : storage
-ms.assetid : 3985c396-7e85-46b6-8790-1ec45931a4ab
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : ntddcdvd/PAACS_SEND_CHALLENGE_KEY, PAACS_SEND_CHALLENGE_KEY, storage.aacs_send_challenge_key, AACS_SEND_CHALLENGE_KEY structure [Storage Devices], structs-DVD_f9e8ef67-414c-4a98-82ab-88674dabe24b.xml, AACS_SEND_CHALLENGE_KEY, _AACS_SEND_CHALLENGE_KEY, *PAACS_SEND_CHALLENGE_KEY, ntddcdvd/AACS_SEND_CHALLENGE_KEY, PAACS_SEND_CHALLENGE_KEY structure pointer [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddcdvd.h
-req.include-header : Ntddcdvd.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PAACS_SEND_CHALLENGE_KEY, AACS_SEND_CHALLENGE_KEY"
+UID: NS:ntddcdvd._AACS_SEND_CHALLENGE_KEY
+title: "_AACS_SEND_CHALLENGE_KEY"
+author: windows-driver-content
+description: The AACS_SEND_CHALLENGE_KEY structure is defined as a challenge key that host software sends to an Advanced Access Content System (AACS) device.
+old-location: storage\aacs_send_challenge_key.htm
+old-project: storage
+ms.assetid: 3985c396-7e85-46b6-8790-1ec45931a4ab
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: ntddcdvd/PAACS_SEND_CHALLENGE_KEY, PAACS_SEND_CHALLENGE_KEY, storage.aacs_send_challenge_key, AACS_SEND_CHALLENGE_KEY structure [Storage Devices], structs-DVD_f9e8ef67-414c-4a98-82ab-88674dabe24b.xml, AACS_SEND_CHALLENGE_KEY, _AACS_SEND_CHALLENGE_KEY, *PAACS_SEND_CHALLENGE_KEY, ntddcdvd/AACS_SEND_CHALLENGE_KEY, PAACS_SEND_CHALLENGE_KEY structure pointer [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddcdvd.h
+req.include-header: Ntddcdvd.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddcdvd.h
+apiname:
+-	AACS_SEND_CHALLENGE_KEY
+product: Windows
+targetos: Windows
+req.typenames: "*PAACS_SEND_CHALLENGE_KEY, AACS_SEND_CHALLENGE_KEY"
 ---
 
 # _AACS_SEND_CHALLENGE_KEY structure

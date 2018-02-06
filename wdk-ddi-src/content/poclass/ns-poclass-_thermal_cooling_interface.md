@@ -1,41 +1,46 @@
 ---
-UID : NS:poclass._THERMAL_COOLING_INTERFACE
-title : "_THERMAL_COOLING_INTERFACE"
-author : windows-driver-content
-description : The THERMAL_COOLING_INTERFACE structure enables the operating system to control the thermal management settings of a device.
-old-location : kernel\thermal_cooling_interface.htm
-old-project : kernel
-ms.assetid : 1636CA34-7F5F-4690-B2AB-2882F0E91D74
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : "_THERMAL_COOLING_INTERFACE, *PTHERMAL_COOLING_INTERFACE, *PTHERMAL_DEVICE_INTERFACE, poclass/THERMAL_COOLING_INTERFACE, THERMAL_COOLING_INTERFACE, PTHERMAL_COOLING_INTERFACE, kernel.thermal_cooling_interface, THERMAL_COOLING_INTERFACE structure [Kernel-Mode Driver Architecture], THERMAL_DEVICE_INTERFACE, PTHERMAL_COOLING_INTERFACE structure pointer [Kernel-Mode Driver Architecture], poclass/PTHERMAL_COOLING_INTERFACE"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : poclass.h
-req.include-header : Poclass.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Called at PASSIVE_LEVEL.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PTHERMAL_COOLING_INTERFACE, THERMAL_COOLING_INTERFACE"
+UID: NS:poclass._THERMAL_COOLING_INTERFACE
+title: "_THERMAL_COOLING_INTERFACE"
+author: windows-driver-content
+description: The THERMAL_COOLING_INTERFACE structure enables the operating system to control the thermal management settings of a device.
+old-location: kernel\thermal_cooling_interface.htm
+old-project: kernel
+ms.assetid: 1636CA34-7F5F-4690-B2AB-2882F0E91D74
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: "_THERMAL_COOLING_INTERFACE, *PTHERMAL_COOLING_INTERFACE, *PTHERMAL_DEVICE_INTERFACE, poclass/THERMAL_COOLING_INTERFACE, THERMAL_COOLING_INTERFACE, PTHERMAL_COOLING_INTERFACE, kernel.thermal_cooling_interface, THERMAL_COOLING_INTERFACE structure [Kernel-Mode Driver Architecture], THERMAL_DEVICE_INTERFACE, PTHERMAL_COOLING_INTERFACE structure pointer [Kernel-Mode Driver Architecture], poclass/PTHERMAL_COOLING_INTERFACE"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: poclass.h
+req.include-header: Poclass.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Called at PASSIVE_LEVEL.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Poclass.h
+apiname:
+-	THERMAL_COOLING_INTERFACE
+product: Windows
+targetos: Windows
+req.typenames: "*PTHERMAL_COOLING_INTERFACE, THERMAL_COOLING_INTERFACE"
 ---
 
 # _THERMAL_COOLING_INTERFACE structure

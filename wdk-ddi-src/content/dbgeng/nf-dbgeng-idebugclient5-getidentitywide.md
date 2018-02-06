@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugClient5.GetIdentityWide
-title : IDebugClient5::GetIdentityWide method
-author : windows-driver-content
-description : The GetIdentityWide method returns a string describing the computer and user this client represents.
-old-location : debugger\getidentitywide.htm
-old-project : debugger
-ms.assetid : 8e55f829-2f55-4b83-8e0d-2554246a5d59
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : dbgeng/IDebugClient5::GetIdentityWide, IDebugClient5::GetIdentityWide, GetIdentityWide method [Windows Debugging], IDebugClient5 interface, IDebugClient5 interface [Windows Debugging], GetIdentityWide method, GetIdentityWide method [Windows Debugging], debugger.getidentitywide, GetIdentityWide, IDebugClient5
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugClient5.GetIdentityWide
+title: IDebugClient5::GetIdentityWide method
+author: windows-driver-content
+description: The GetIdentityWide method returns a string describing the computer and user this client represents.
+old-location: debugger\getidentitywide.htm
+old-project: debugger
+ms.assetid: 8e55f829-2f55-4b83-8e0d-2554246a5d59
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: dbgeng/IDebugClient5::GetIdentityWide, IDebugClient5::GetIdentityWide, GetIdentityWide method [Windows Debugging], IDebugClient5 interface, IDebugClient5 interface [Windows Debugging], GetIdentityWide method, GetIdentityWide method [Windows Debugging], debugger.getidentitywide, GetIdentityWide, IDebugClient5
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugClient5.GetIdentityWide
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

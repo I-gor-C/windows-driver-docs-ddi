@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.PoFxSetComponentResidency
-title : PoFxSetComponentResidency function
-author : windows-driver-content
-description : The PoFxSetComponentResidency routine sets the estimated time for how long a component is likely to remain idle after the component enters the idle condition.
-old-location : kernel\pofxsetcomponentresidency.htm
-old-project : kernel
-ms.assetid : B4216BA1-FC5C-4A3B-BB74-E071BD2048F8
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/PoFxSetComponentResidency, PoFxSetComponentResidency routine [Kernel-Mode Driver Architecture], kernel.pofxsetcomponentresidency, PoFxSetComponentResidency
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : 
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ntoskrnl.lib
-req.dll : Ntoskrnl.exe
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.PoFxSetComponentResidency
+title: PoFxSetComponentResidency function
+author: windows-driver-content
+description: The PoFxSetComponentResidency routine sets the estimated time for how long a component is likely to remain idle after the component enters the idle condition.
+old-location: kernel\pofxsetcomponentresidency.htm
+old-project: kernel
+ms.assetid: B4216BA1-FC5C-4A3B-BB74-E071BD2048F8
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/PoFxSetComponentResidency, PoFxSetComponentResidency routine [Kernel-Mode Driver Architecture], kernel.pofxsetcomponentresidency, PoFxSetComponentResidency
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: 
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ntoskrnl.lib
+req.dll: Ntoskrnl.exe
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Ntoskrnl.exe
+apiname:
+-	PoFxSetComponentResidency
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

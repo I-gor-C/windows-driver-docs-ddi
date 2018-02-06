@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltUninitializeOplock
-title : FltUninitializeOplock function
-author : windows-driver-content
-description : FltUninitializeOplock uninitializes an opportunistic lock (oplock) pointer.
-old-location : ifsk\fltuninitializeoplock.htm
-old-project : ifsk
-ms.assetid : 6379014a-f9bc-4e86-93da-83d90f009a3b
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltUninitializeOplock function [Installable File System Drivers], fltkernel/FltUninitializeOplock, FltApiRef_p_to_z_d759e280-7507-44ae-8155-578320562c8b.xml, ifsk.fltuninitializeoplock, FltUninitializeOplock
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltUninitializeOplock
+title: FltUninitializeOplock function
+author: windows-driver-content
+description: FltUninitializeOplock uninitializes an opportunistic lock (oplock) pointer.
+old-location: ifsk\fltuninitializeoplock.htm
+old-project: ifsk
+ms.assetid: 6379014a-f9bc-4e86-93da-83d90f009a3b
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltUninitializeOplock function [Installable File System Drivers], fltkernel/FltUninitializeOplock, FltApiRef_p_to_z_d759e280-7507-44ae-8155-578320562c8b.xml, ifsk.fltuninitializeoplock, FltUninitializeOplock
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltUninitializeOplock
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddk._WHEA_FIRMWARE_ERROR_RECORD_REFERENCE
-title : "_WHEA_FIRMWARE_ERROR_RECORD_REFERENCE"
-author : windows-driver-content
-description : The WHEA_FIRMWARE_ERROR_RECORD_REFERENCE structure describes a reference to a firmware error record that is specific to the Itanium processor architecture.
-old-location : whea\whea_firmware_error_record_reference.htm
-old-project : whea
-ms.assetid : 950a9b93-ef69-4075-9231-eb481a53c617
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : whearef_b43d8c6f-f768-47a1-9494-4a4bfac7d586.xml, PWHEA_FIRMWARE_ERROR_RECORD_REFERENCE, whea.whea_firmware_error_record_reference, ntddk/PWHEA_FIRMWARE_ERROR_RECORD_REFERENCE, WHEA_FIRMWARE_ERROR_RECORD_REFERENCE structure [WHEA Drivers and Applications], ntddk/WHEA_FIRMWARE_ERROR_RECORD_REFERENCE, _WHEA_FIRMWARE_ERROR_RECORD_REFERENCE, WHEA_FIRMWARE_ERROR_RECORD_REFERENCE, PWHEA_FIRMWARE_ERROR_RECORD_REFERENCE structure pointer [WHEA Drivers and Applications], WHEA_FIRMWARE_RECORD, *PWHEA_FIRMWARE_RECORD, *PWHEA_FIRMWARE_ERROR_RECORD_REFERENCE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_FIRMWARE_ERROR_RECORD_REFERENCE, *PWHEA_FIRMWARE_ERROR_RECORD_REFERENCE
+UID: NS:ntddk._WHEA_FIRMWARE_ERROR_RECORD_REFERENCE
+title: "_WHEA_FIRMWARE_ERROR_RECORD_REFERENCE"
+author: windows-driver-content
+description: The WHEA_FIRMWARE_ERROR_RECORD_REFERENCE structure describes a reference to a firmware error record that is specific to the Itanium processor architecture.
+old-location: whea\whea_firmware_error_record_reference.htm
+old-project: whea
+ms.assetid: 950a9b93-ef69-4075-9231-eb481a53c617
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: whearef_b43d8c6f-f768-47a1-9494-4a4bfac7d586.xml, PWHEA_FIRMWARE_ERROR_RECORD_REFERENCE, whea.whea_firmware_error_record_reference, ntddk/PWHEA_FIRMWARE_ERROR_RECORD_REFERENCE, WHEA_FIRMWARE_ERROR_RECORD_REFERENCE structure [WHEA Drivers and Applications], ntddk/WHEA_FIRMWARE_ERROR_RECORD_REFERENCE, _WHEA_FIRMWARE_ERROR_RECORD_REFERENCE, WHEA_FIRMWARE_ERROR_RECORD_REFERENCE, PWHEA_FIRMWARE_ERROR_RECORD_REFERENCE structure pointer [WHEA Drivers and Applications], WHEA_FIRMWARE_RECORD, *PWHEA_FIRMWARE_RECORD, *PWHEA_FIRMWARE_ERROR_RECORD_REFERENCE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddk.h
+apiname:
+-	WHEA_FIRMWARE_ERROR_RECORD_REFERENCE
+product: Windows
+targetos: Windows
+req.typenames: WHEA_FIRMWARE_ERROR_RECORD_REFERENCE, *PWHEA_FIRMWARE_ERROR_RECORD_REFERENCE
 ---
 
 # _WHEA_FIRMWARE_ERROR_RECORD_REFERENCE structure

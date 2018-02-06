@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3D11DDI_STATE_HS_SAMPLER_CB
-title : PFND3D11DDI_STATE_HS_SAMPLER_CB
-author : windows-driver-content
-description : The pfnStateHsSamplerCb function causes the Microsoft Direct3D 11 runtime to refresh the hull shader sample state.
-old-location : display\pfnstatehssamplercb.htm
-old-project : display
-ms.assetid : 95475c7a-874c-45e9-ab92-1c3983315446
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.pfnstatehssamplercb, pfnStateHsSamplerCb callback function [Display Devices], pfnStateHsSamplerCb, PFND3D11DDI_STATE_HS_SAMPLER_CB, PFND3D11DDI_STATE_HS_SAMPLER_CB, d3d10umddi/pfnStateHsSamplerCb, d3d11state_functions_36ac0f95-b5df-45d2-bae7-38c2ea1986b7.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : pfnStateHsSamplerCb is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3D11DDI_STATE_HS_SAMPLER_CB
+title: PFND3D11DDI_STATE_HS_SAMPLER_CB
+author: windows-driver-content
+description: The pfnStateHsSamplerCb function causes the Microsoft Direct3D 11 runtime to refresh the hull shader sample state.
+old-location: display\pfnstatehssamplercb.htm
+old-project: display
+ms.assetid: 95475c7a-874c-45e9-ab92-1c3983315446
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.pfnstatehssamplercb, pfnStateHsSamplerCb callback function [Display Devices], pfnStateHsSamplerCb, PFND3D11DDI_STATE_HS_SAMPLER_CB, PFND3D11DDI_STATE_HS_SAMPLER_CB, d3d10umddi/pfnStateHsSamplerCb, d3d11state_functions_36ac0f95-b5df-45d2-bae7-38c2ea1986b7.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: pfnStateHsSamplerCb is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	pfnStateHsSamplerCb
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

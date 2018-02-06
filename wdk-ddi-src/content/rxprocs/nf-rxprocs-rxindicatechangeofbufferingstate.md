@@ -1,42 +1,47 @@
 ---
-UID : NF:rxprocs.RxIndicateChangeOfBufferingState
-title : RxIndicateChangeOfBufferingState function
-author : windows-driver-content
-description : RxIndicateChangeOfBufferingState is called to register a change buffering state request (an oplock break indication, for example) for later processing. If necessary, worker thread routines for further processing are activated.
-old-location : ifsk\rxindicatechangeofbufferingstate.htm
-old-project : ifsk
-ms.assetid : 981f5a33-a4f1-438c-8fcf-03a5ab4c0e44
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : rxref_4a7ba539-c0b8-4c3b-b642-c272d262310b.xml, rxprocs/RxIndicateChangeOfBufferingState, ifsk.rxindicatechangeofbufferingstate, RxIndicateChangeOfBufferingState routine [Installable File System Drivers], RxIndicateChangeOfBufferingState
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : rxprocs.h
-req.include-header : Rxprocs.h, Struchdr.h, Fcb.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RX_CONTEXT, *PRX_CONTEXT
-req.product : Windows 10 or later.
+UID: NF:rxprocs.RxIndicateChangeOfBufferingState
+title: RxIndicateChangeOfBufferingState function
+author: windows-driver-content
+description: RxIndicateChangeOfBufferingState is called to register a change buffering state request (an oplock break indication, for example) for later processing. If necessary, worker thread routines for further processing are activated.
+old-location: ifsk\rxindicatechangeofbufferingstate.htm
+old-project: ifsk
+ms.assetid: 981f5a33-a4f1-438c-8fcf-03a5ab4c0e44
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: rxref_4a7ba539-c0b8-4c3b-b642-c272d262310b.xml, rxprocs/RxIndicateChangeOfBufferingState, ifsk.rxindicatechangeofbufferingstate, RxIndicateChangeOfBufferingState routine [Installable File System Drivers], RxIndicateChangeOfBufferingState
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: rxprocs.h
+req.include-header: Rxprocs.h, Struchdr.h, Fcb.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	rxprocs.h
+apiname:
+-	RxIndicateChangeOfBufferingState
+product: Windows
+targetos: Windows
+req.typenames: RX_CONTEXT, *PRX_CONTEXT
+req.product: Windows 10 or later.
 ---
 
 

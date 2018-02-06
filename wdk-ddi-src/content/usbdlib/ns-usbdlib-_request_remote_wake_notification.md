@@ -1,42 +1,47 @@
 ---
-UID : NS:usbdlib._REQUEST_REMOTE_WAKE_NOTIFICATION
-title : "_REQUEST_REMOTE_WAKE_NOTIFICATION"
-author : windows-driver-content
-description : The purpose of the REQUEST_REMOTE_WAKE_NOTIFICATION structure is to specify input parameters for the IOCTL_INTERNAL_USB_REQUEST_REMOTE_WAKE_NOTIFICATION I/O control request.
-old-location : buses\usbdevice_remote_wake_notification.htm
-old-project : usbref
-ms.assetid : 229B22AC-8252-4D94-BDB5-F1132BF4AE4C
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : usbdlib/PREQUEST_REMOTE_WAKE_NOTIFICATION, buses.usbdevice_remote_wake_notification, REQUEST_REMOTE_WAKE_NOTIFICATION structure [Buses], PREQUEST_REMOTE_WAKE_NOTIFICATION structure pointer [Buses], *PREQUEST_REMOTE_WAKE_NOTIFICATION, usbdlib/REQUEST_REMOTE_WAKE_NOTIFICATION, REQUEST_REMOTE_WAKE_NOTIFICATION, _REQUEST_REMOTE_WAKE_NOTIFICATION, PREQUEST_REMOTE_WAKE_NOTIFICATION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : usbdlib.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : REQUEST_REMOTE_WAKE_NOTIFICATION, *PREQUEST_REMOTE_WAKE_NOTIFICATION
-req.product : Windows 10 or later.
+UID: NS:usbdlib._REQUEST_REMOTE_WAKE_NOTIFICATION
+title: "_REQUEST_REMOTE_WAKE_NOTIFICATION"
+author: windows-driver-content
+description: The purpose of the REQUEST_REMOTE_WAKE_NOTIFICATION structure is to specify input parameters for the IOCTL_INTERNAL_USB_REQUEST_REMOTE_WAKE_NOTIFICATION I/O control request.
+old-location: buses\usbdevice_remote_wake_notification.htm
+old-project: usbref
+ms.assetid: 229B22AC-8252-4D94-BDB5-F1132BF4AE4C
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: usbdlib/PREQUEST_REMOTE_WAKE_NOTIFICATION, buses.usbdevice_remote_wake_notification, REQUEST_REMOTE_WAKE_NOTIFICATION structure [Buses], PREQUEST_REMOTE_WAKE_NOTIFICATION structure pointer [Buses], *PREQUEST_REMOTE_WAKE_NOTIFICATION, usbdlib/REQUEST_REMOTE_WAKE_NOTIFICATION, REQUEST_REMOTE_WAKE_NOTIFICATION, _REQUEST_REMOTE_WAKE_NOTIFICATION, PREQUEST_REMOTE_WAKE_NOTIFICATION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: usbdlib.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Usbdlib.h
+apiname:
+-	REQUEST_REMOTE_WAKE_NOTIFICATION
+product: Windows
+targetos: Windows
+req.typenames: REQUEST_REMOTE_WAKE_NOTIFICATION, *PREQUEST_REMOTE_WAKE_NOTIFICATION
+req.product: Windows 10 or later.
 ---
 
 # _REQUEST_REMOTE_WAKE_NOTIFICATION structure

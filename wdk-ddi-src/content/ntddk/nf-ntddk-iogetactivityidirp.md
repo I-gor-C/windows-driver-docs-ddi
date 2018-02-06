@@ -1,41 +1,46 @@
 ---
-UID : NF:ntddk.IoGetActivityIdIrp
-title : IoGetActivityIdIrp function
-author : windows-driver-content
-description : The IoGetActivityIdIrp routine retrieves the current activity ID associated with an IRP.
-old-location : kernel\iogetactivityidirp.htm
-old-project : kernel
-ms.assetid : FAFF65EF-F1D8-4B54-B281-D5C4AC124E32
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : IoGetActivityIdIrp routine [Kernel-Mode Driver Architecture], kernel.iogetactivityidirp, IoGetActivityIdIrp, ntddk/IoGetActivityIdIrp
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.IoGetActivityIdIrp
+title: IoGetActivityIdIrp function
+author: windows-driver-content
+description: The IoGetActivityIdIrp routine retrieves the current activity ID associated with an IRP.
+old-location: kernel\iogetactivityidirp.htm
+old-project: kernel
+ms.assetid: FAFF65EF-F1D8-4B54-B281-D5C4AC124E32
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: IoGetActivityIdIrp routine [Kernel-Mode Driver Architecture], kernel.iogetactivityidirp, IoGetActivityIdIrp, ntddk/IoGetActivityIdIrp
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoGetActivityIdIrp
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

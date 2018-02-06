@@ -1,42 +1,47 @@
 ---
-UID : NS:usb._URB_SELECT_CONFIGURATION
-title : "_URB_SELECT_CONFIGURATION"
-author : windows-driver-content
-description : The _URB_SELECT_CONFIGURATION structure is used by client drivers to select a configuration for a USB device.
-old-location : buses\_urb_select_configuration.htm
-old-project : usbref
-ms.assetid : a6a4963b-64d7-4f46-bc19-16925929e7c7
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : usbstrct_cfe530e7-f16f-4d45-96e9-e1603bde77b9.xml, usb/_URB_SELECT_CONFIGURATION, _URB_SELECT_CONFIGURATION structure [Buses], _URB_SELECT_CONFIGURATION, buses._urb_select_configuration
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : usb.h
-req.include-header : Usb.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
-req.product : Windows 10 or later.
+UID: NS:usb._URB_SELECT_CONFIGURATION
+title: "_URB_SELECT_CONFIGURATION"
+author: windows-driver-content
+description: The _URB_SELECT_CONFIGURATION structure is used by client drivers to select a configuration for a USB device.
+old-location: buses\_urb_select_configuration.htm
+old-project: usbref
+ms.assetid: a6a4963b-64d7-4f46-bc19-16925929e7c7
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: usbstrct_cfe530e7-f16f-4d45-96e9-e1603bde77b9.xml, usb/_URB_SELECT_CONFIGURATION, _URB_SELECT_CONFIGURATION structure [Buses], _URB_SELECT_CONFIGURATION, buses._urb_select_configuration
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: usb.h
+req.include-header: Usb.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	usb.h
+apiname:
+-	_URB_SELECT_CONFIGURATION
+product: Windows
+targetos: Windows
+req.typenames: 
+req.product: Windows 10 or later.
 ---
 
 # _URB_SELECT_CONFIGURATION structure

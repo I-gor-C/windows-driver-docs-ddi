@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsGetFirstChild
-title : KsGetFirstChild function
-author : windows-driver-content
-description : The KsGetFirstChild function returns the first AVStream child object of Object.
-old-location : stream\ksgetfirstchild.htm
-old-project : stream
-ms.assetid : f7ff16ac-fe20-4998-a8b3-d1d02c418938
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KsGetFirstChild, ks/KsGetFirstChild, stream.ksgetfirstchild, KsGetFirstChild function [Streaming Media Devices], avfunc_cfdde7e3-bc8b-46df-abf4-fe43ac9b0bfc.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsGetFirstChild
+title: KsGetFirstChild function
+author: windows-driver-content
+description: The KsGetFirstChild function returns the first AVStream child object of Object.
+old-location: stream\ksgetfirstchild.htm
+old-project: stream
+ms.assetid: f7ff16ac-fe20-4998-a8b3-d1d02c418938
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KsGetFirstChild, ks/KsGetFirstChild, stream.ksgetfirstchild, KsGetFirstChild function [Streaming Media Devices], avfunc_cfdde7e3-bc8b-46df-abf4-fe43ac9b0bfc.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsGetFirstChild
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

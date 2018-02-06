@@ -1,41 +1,46 @@
 ---
-UID : NC:pepfx.PEPCALLBACKPOWERONCRASHDUMPDEVICE
-title : PEPCALLBACKPOWERONCRASHDUMPDEVICE
-author : windows-driver-content
-description : The PowerOnDumpDeviceCallback callback routine turns on the crash-dump device.
-old-location : kernel\powerondumpdevicecallback.htm
-old-project : kernel
-ms.assetid : 83E5D362-BC3C-4480-9904-6ABBB26DAFF2
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.powerondumpdevicecallback, PowerOnDumpDeviceCallback routine [Kernel-Mode Driver Architecture], PowerOnDumpDeviceCallback, PEPCALLBACKPOWERONCRASHDUMPDEVICE, PEPCALLBACKPOWERONCRASHDUMPDEVICE, pepfx/PowerOnDumpDeviceCallback
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : pepfx.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with Windows 10.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Called at HIGH_LEVEL.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VPCI_PNP_ID, *PVPCI_PNP_ID
+UID: NC:pepfx.PEPCALLBACKPOWERONCRASHDUMPDEVICE
+title: PEPCALLBACKPOWERONCRASHDUMPDEVICE
+author: windows-driver-content
+description: The PowerOnDumpDeviceCallback callback routine turns on the crash-dump device.
+old-location: kernel\powerondumpdevicecallback.htm
+old-project: kernel
+ms.assetid: 83E5D362-BC3C-4480-9904-6ABBB26DAFF2
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.powerondumpdevicecallback, PowerOnDumpDeviceCallback routine [Kernel-Mode Driver Architecture], PowerOnDumpDeviceCallback, PEPCALLBACKPOWERONCRASHDUMPDEVICE, PEPCALLBACKPOWERONCRASHDUMPDEVICE, pepfx/PowerOnDumpDeviceCallback
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: pepfx.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows 10.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Called at HIGH_LEVEL.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	pepfx.h
+apiname:
+-	PowerOnDumpDeviceCallback
+product: Windows
+targetos: Windows
+req.typenames: VPCI_PNP_ID, *PVPCI_PNP_ID
 ---
 
 

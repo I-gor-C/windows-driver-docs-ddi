@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.SYSAUDIO_ATTACH_VIRTUAL_SOURCE
-title : SYSAUDIO_ATTACH_VIRTUAL_SOURCE
-author : windows-driver-content
-description : The SYSAUDIO_ATTACH_VIRTUAL_SOURCE structure is used to attach a mixer-line virtual source (for example, a volume or mute control) to a mixer pin on the virtual audio device.
-old-location : audio\sysaudio_attach_virtual_source.htm
-old-project : audio
-ms.assetid : 1215cf8e-8e94-4da4-9fb9-2212e8386abd
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : ksmedia/SYSAUDIO_ATTACH_VIRTUAL_SOURCE, audio.sysaudio_attach_virtual_source, *PSYSAUDIO_ATTACH_VIRTUAL_SOURCE, SYSAUDIO_ATTACH_VIRTUAL_SOURCE, ksmedia/PSYSAUDIO_ATTACH_VIRTUAL_SOURCE, SYSAUDIO_ATTACH_VIRTUAL_SOURCE structure [Audio Devices], PSYSAUDIO_ATTACH_VIRTUAL_SOURCE structure pointer [Audio Devices], PSYSAUDIO_ATTACH_VIRTUAL_SOURCE, aud-prop_5fce938d-a784-46cf-a65b-3eb0d19db2f8.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSYSAUDIO_ATTACH_VIRTUAL_SOURCE, SYSAUDIO_ATTACH_VIRTUAL_SOURCE"
+UID: NS:ksmedia.SYSAUDIO_ATTACH_VIRTUAL_SOURCE
+title: SYSAUDIO_ATTACH_VIRTUAL_SOURCE
+author: windows-driver-content
+description: The SYSAUDIO_ATTACH_VIRTUAL_SOURCE structure is used to attach a mixer-line virtual source (for example, a volume or mute control) to a mixer pin on the virtual audio device.
+old-location: audio\sysaudio_attach_virtual_source.htm
+old-project: audio
+ms.assetid: 1215cf8e-8e94-4da4-9fb9-2212e8386abd
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: ksmedia/SYSAUDIO_ATTACH_VIRTUAL_SOURCE, audio.sysaudio_attach_virtual_source, *PSYSAUDIO_ATTACH_VIRTUAL_SOURCE, SYSAUDIO_ATTACH_VIRTUAL_SOURCE, ksmedia/PSYSAUDIO_ATTACH_VIRTUAL_SOURCE, SYSAUDIO_ATTACH_VIRTUAL_SOURCE structure [Audio Devices], PSYSAUDIO_ATTACH_VIRTUAL_SOURCE structure pointer [Audio Devices], PSYSAUDIO_ATTACH_VIRTUAL_SOURCE, aud-prop_5fce938d-a784-46cf-a65b-3eb0d19db2f8.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	SYSAUDIO_ATTACH_VIRTUAL_SOURCE
+product: Windows
+targetos: Windows
+req.typenames: "*PSYSAUDIO_ATTACH_VIRTUAL_SOURCE, SYSAUDIO_ATTACH_VIRTUAL_SOURCE"
 ---
 
 # SYSAUDIO_ATTACH_VIRTUAL_SOURCE structure

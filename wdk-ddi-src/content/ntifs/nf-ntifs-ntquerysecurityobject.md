@@ -1,41 +1,47 @@
 ---
-UID : NF:ntifs.NtQuerySecurityObject
-title : NtQuerySecurityObject function
-author : windows-driver-content
-description : The ZwQuerySecurityObject routine retrieves a copy of an object's security descriptor.
-old-location : kernel\zwquerysecurityobject.htm
-old-project : kernel
-ms.assetid : bc3c494d-890c-4699-a272-62cbcc234cdd
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ntifs/ZwQuerySecurityObject, ntifs/NtQuerySecurityObject, k111_50bbb447-b993-4020-a8d7-e54f0b31e84e.xml, ZwQuerySecurityObject routine [Kernel-Mode Driver Architecture], NtQuerySecurityObject, ZwQuerySecurityObject, kernel.zwquerysecurityobject
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows XP and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.NtQuerySecurityObject
+title: NtQuerySecurityObject function
+author: windows-driver-content
+description: The ZwQuerySecurityObject routine retrieves a copy of an object's security descriptor.
+old-location: kernel\zwquerysecurityobject.htm
+old-project: kernel
+ms.assetid: bc3c494d-890c-4699-a272-62cbcc234cdd
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ntifs/ZwQuerySecurityObject, ntifs/NtQuerySecurityObject, k111_50bbb447-b993-4020-a8d7-e54f0b31e84e.xml, ZwQuerySecurityObject routine [Kernel-Mode Driver Architecture], NtQuerySecurityObject, ZwQuerySecurityObject, kernel.zwquerysecurityobject
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows XP and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ZwQuerySecurityObject
+-	NtQuerySecurityObject
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

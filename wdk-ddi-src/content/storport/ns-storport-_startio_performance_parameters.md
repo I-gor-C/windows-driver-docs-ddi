@@ -1,42 +1,47 @@
 ---
-UID : NS:storport._STARTIO_PERFORMANCE_PARAMETERS
-title : "_STARTIO_PERFORMANCE_PARAMETERS"
-author : windows-driver-content
-description : The STARTIO_PERFORMANCE_PARAMETERS structure describes the performance parameters that are returned to the miniport driver by the StorPortGetStartIoPerfParams routine.
-old-location : storage\startio_performance_parameters.htm
-old-project : storage
-ms.assetid : 984a8584-ebdd-4e93-868b-1537a3615c1b
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : PSTARTIO_PERFORMANCE_PARAMETERS structure pointer [Storage Devices], PSTARTIO_PERFORMANCE_PARAMETERS, _STARTIO_PERFORMANCE_PARAMETERS, storage.startio_performance_parameters, storport/STARTIO_PERFORMANCE_PARAMETERS, storport/PSTARTIO_PERFORMANCE_PARAMETERS, structs-storport_6f0f3ae8-51e3-4c3e-91e1-4603b04b6f08.xml, STARTIO_PERFORMANCE_PARAMETERS, STARTIO_PERFORMANCE_PARAMETERS structure [Storage Devices], *PSTARTIO_PERFORMANCE_PARAMETERS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSTARTIO_PERFORMANCE_PARAMETERS, STARTIO_PERFORMANCE_PARAMETERS"
-req.product : Windows 10 or later.
+UID: NS:storport._STARTIO_PERFORMANCE_PARAMETERS
+title: "_STARTIO_PERFORMANCE_PARAMETERS"
+author: windows-driver-content
+description: The STARTIO_PERFORMANCE_PARAMETERS structure describes the performance parameters that are returned to the miniport driver by the StorPortGetStartIoPerfParams routine.
+old-location: storage\startio_performance_parameters.htm
+old-project: storage
+ms.assetid: 984a8584-ebdd-4e93-868b-1537a3615c1b
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: PSTARTIO_PERFORMANCE_PARAMETERS structure pointer [Storage Devices], PSTARTIO_PERFORMANCE_PARAMETERS, _STARTIO_PERFORMANCE_PARAMETERS, storage.startio_performance_parameters, storport/STARTIO_PERFORMANCE_PARAMETERS, storport/PSTARTIO_PERFORMANCE_PARAMETERS, structs-storport_6f0f3ae8-51e3-4c3e-91e1-4603b04b6f08.xml, STARTIO_PERFORMANCE_PARAMETERS, STARTIO_PERFORMANCE_PARAMETERS structure [Storage Devices], *PSTARTIO_PERFORMANCE_PARAMETERS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	storport.h
+apiname:
+-	STARTIO_PERFORMANCE_PARAMETERS
+product: Windows
+targetos: Windows
+req.typenames: "*PSTARTIO_PERFORMANCE_PARAMETERS, STARTIO_PERFORMANCE_PARAMETERS"
+req.product: Windows 10 or later.
 ---
 
 # _STARTIO_PERFORMANCE_PARAMETERS structure

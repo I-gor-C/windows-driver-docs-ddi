@@ -1,41 +1,46 @@
 ---
-UID : NS:ntifs._SYSTEM_SCOPED_POLICY_ID_ACE
-title : "_SYSTEM_SCOPED_POLICY_ID_ACE"
-author : windows-driver-content
-description : The SYSTEM_SCOPED_POLICY_ID_ACE structure defines an access-control entry (ACE) for the system access-control list (ACL) specifying rights for a scoped policy identifer.
-old-location : ifsk\system_scoped_policy_id_ace.htm
-old-project : ifsk
-ms.assetid : 2867CA25-B140-4EBA-A8F9-57C12C3700CF
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : SYSTEM_SCOPED_POLICY_ID_ACE structure [Installable File System Drivers], _SYSTEM_SCOPED_POLICY_ID_ACE, ifsk.system_scoped_policy_id_ace, PSYSTEM_SCOPED_POLICY_ID_ACE, SYSTEM_SCOPED_POLICY_ID_ACE, PSYSTEM_SCOPED_POLICY_ID_ACE structure pointer [Installable File System Drivers], *PSYSTEM_SCOPED_POLICY_ID_ACE, ntifs/PSYSTEM_SCOPED_POLICY_ID_ACE, ntifs/SYSTEM_SCOPED_POLICY_ID_ACE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SYSTEM_SCOPED_POLICY_ID_ACE, *PSYSTEM_SCOPED_POLICY_ID_ACE
+UID: NS:ntifs._SYSTEM_SCOPED_POLICY_ID_ACE
+title: "_SYSTEM_SCOPED_POLICY_ID_ACE"
+author: windows-driver-content
+description: The SYSTEM_SCOPED_POLICY_ID_ACE structure defines an access-control entry (ACE) for the system access-control list (ACL) specifying rights for a scoped policy identifer.
+old-location: ifsk\system_scoped_policy_id_ace.htm
+old-project: ifsk
+ms.assetid: 2867CA25-B140-4EBA-A8F9-57C12C3700CF
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: SYSTEM_SCOPED_POLICY_ID_ACE structure [Installable File System Drivers], _SYSTEM_SCOPED_POLICY_ID_ACE, ifsk.system_scoped_policy_id_ace, PSYSTEM_SCOPED_POLICY_ID_ACE, SYSTEM_SCOPED_POLICY_ID_ACE, PSYSTEM_SCOPED_POLICY_ID_ACE structure pointer [Installable File System Drivers], *PSYSTEM_SCOPED_POLICY_ID_ACE, ntifs/PSYSTEM_SCOPED_POLICY_ID_ACE, ntifs/SYSTEM_SCOPED_POLICY_ID_ACE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntifs.h
+apiname:
+-	SYSTEM_SCOPED_POLICY_ID_ACE
+product: Windows
+targetos: Windows
+req.typenames: SYSTEM_SCOPED_POLICY_ID_ACE, *PSYSTEM_SCOPED_POLICY_ID_ACE
 ---
 
 # _SYSTEM_SCOPED_POLICY_ID_ACE structure

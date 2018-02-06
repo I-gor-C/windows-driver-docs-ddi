@@ -1,41 +1,47 @@
 ---
-UID : NF:bdasup.BdaCommitChanges
-title : BdaCommitChanges function
-author : windows-driver-content
-description : The BdaCommitChanges function commits the changes to BDA topology that have occurred since the last call to the BdaStartChanges function.
-old-location : stream\bdacommitchanges.htm
-old-project : stream
-ms.assetid : 89bac523-65f1-462e-a734-285cda9e33ac
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.bdacommitchanges, bdaref_41fbbc81-4461-47a2-ba7a-725b696329f3.xml, BdaCommitChanges, bdasup/BdaCommitChanges, BdaCommitChanges function [Streaming Media Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : bdasup.h
-req.include-header : Bdasup.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available on Microsoft Windows XP and later operating systems. BdaCommitChanges is available on the Windows 2000 platform only if Microsoft DirectX 9.0 and later is installed on that platform.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Bdasup.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KSP_BDA_NODE_PIN, *PKSP_BDA_NODE_PIN
+UID: NF:bdasup.BdaCommitChanges
+title: BdaCommitChanges function
+author: windows-driver-content
+description: The BdaCommitChanges function commits the changes to BDA topology that have occurred since the last call to the BdaStartChanges function.
+old-location: stream\bdacommitchanges.htm
+old-project: stream
+ms.assetid: 89bac523-65f1-462e-a734-285cda9e33ac
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.bdacommitchanges, bdaref_41fbbc81-4461-47a2-ba7a-725b696329f3.xml, BdaCommitChanges, bdasup/BdaCommitChanges, BdaCommitChanges function [Streaming Media Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: bdasup.h
+req.include-header: Bdasup.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available on Microsoft Windows XP and later operating systems. BdaCommitChanges is available on the Windows 2000 platform only if Microsoft DirectX 9.0 and later is installed on that platform.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Bdasup.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Bdasup.lib
+-	Bdasup.dll
+apiname:
+-	BdaCommitChanges
+product: Windows
+targetos: Windows
+req.typenames: KSP_BDA_NODE_PIN, *PKSP_BDA_NODE_PIN
 ---
 
 

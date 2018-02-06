@@ -1,41 +1,46 @@
 ---
-UID : NS:mpiodisk._DSM_QueryUniqueId
-title : "_DSM_QueryUniqueId"
-author : windows-driver-content
-description : The DSM_QueryUniqueId structure is used to query the DSM for a unique identifier.
-old-location : storage\dsm_queryuniqueid.htm
-old-project : storage
-ms.assetid : 023390a1-e878-4f1f-a5c2-1545a6786aaa
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : "_DSM_QueryUniqueId, storage.dsm_queryuniqueid, DSM_QueryUniqueId, mpiodisk/DSM_QueryUniqueId, structs-scsibus_eb6e8cc6-4b6a-468f-a14c-7a11c827ef30.xml, DSM_QueryUniqueId structure [Storage Devices], PDSM_QueryUniqueId, mpiodisk/PDSM_QueryUniqueId, PDSM_QueryUniqueId structure pointer [Storage Devices], *PDSM_QueryUniqueId"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : mpiodisk.h
-req.include-header : Mpiowmi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DSM_QueryUniqueId, *PDSM_QueryUniqueId
+UID: NS:mpiodisk._DSM_QueryUniqueId
+title: "_DSM_QueryUniqueId"
+author: windows-driver-content
+description: The DSM_QueryUniqueId structure is used to query the DSM for a unique identifier.
+old-location: storage\dsm_queryuniqueid.htm
+old-project: storage
+ms.assetid: 023390a1-e878-4f1f-a5c2-1545a6786aaa
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: "_DSM_QueryUniqueId, storage.dsm_queryuniqueid, DSM_QueryUniqueId, mpiodisk/DSM_QueryUniqueId, structs-scsibus_eb6e8cc6-4b6a-468f-a14c-7a11c827ef30.xml, DSM_QueryUniqueId structure [Storage Devices], PDSM_QueryUniqueId, mpiodisk/PDSM_QueryUniqueId, PDSM_QueryUniqueId structure pointer [Storage Devices], *PDSM_QueryUniqueId"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: mpiodisk.h
+req.include-header: Mpiowmi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	mpiodisk.h
+apiname:
+-	DSM_QueryUniqueId
+product: Windows
+targetos: Windows
+req.typenames: DSM_QueryUniqueId, *PDSM_QueryUniqueId
 ---
 
 # _DSM_QueryUniqueId structure

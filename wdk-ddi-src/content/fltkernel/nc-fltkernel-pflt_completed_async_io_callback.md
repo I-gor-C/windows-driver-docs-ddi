@@ -1,41 +1,46 @@
 ---
-UID : NC:fltkernel.PFLT_COMPLETED_ASYNC_IO_CALLBACK
-title : PFLT_COMPLETED_ASYNC_IO_CALLBACK
-author : windows-driver-content
-description : A minifilter driver that initiates an asynchronous I/O operation can specify a routine of type PFLT_COMPLETED_ASYNC_IO_CALLBACK routine to be called when the operation is completed.
-old-location : ifsk\pflt_completed_async_io_callback.htm
-old-project : ifsk
-ms.assetid : 920e4236-9078-41c6-befb-9e82accbfa59
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.pflt_completed_async_io_callback, PFLT_COMPLETED_ASYNC_IO_CALLBACK function pointer [Installable File System Drivers], PFLT_COMPLETED_ASYNC_IO_CALLBACK, fltkernel/PFLT_COMPLETED_ASYNC_IO_CALLBACK, FltCallbacks_b85c12a6-7d3b-4d0c-9d21-9d9613aa057c.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NC:fltkernel.PFLT_COMPLETED_ASYNC_IO_CALLBACK
+title: PFLT_COMPLETED_ASYNC_IO_CALLBACK
+author: windows-driver-content
+description: A minifilter driver that initiates an asynchronous I/O operation can specify a routine of type PFLT_COMPLETED_ASYNC_IO_CALLBACK routine to be called when the operation is completed.
+old-location: ifsk\pflt_completed_async_io_callback.htm
+old-project: ifsk
+ms.assetid: 920e4236-9078-41c6-befb-9e82accbfa59
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.pflt_completed_async_io_callback, PFLT_COMPLETED_ASYNC_IO_CALLBACK function pointer [Installable File System Drivers], PFLT_COMPLETED_ASYNC_IO_CALLBACK, fltkernel/PFLT_COMPLETED_ASYNC_IO_CALLBACK, FltCallbacks_b85c12a6-7d3b-4d0c-9d21-9d9613aa057c.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	fltkernel.h
+apiname:
+-	PFLT_COMPLETED_ASYNC_IO_CALLBACK
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

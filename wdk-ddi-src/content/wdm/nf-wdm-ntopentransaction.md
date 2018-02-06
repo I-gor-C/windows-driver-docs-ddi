@@ -1,42 +1,48 @@
 ---
-UID : NF:wdm.NtOpenTransaction
-title : NtOpenTransaction function
-author : windows-driver-content
-description : The ZwOpenTransaction routine obtains a handle to an existing transaction object.
-old-location : kernel\zwopentransaction.htm
-old-project : kernel
-ms.assetid : 5ffa50af-24e6-4dab-81cc-6ac26356e9c6
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ktm_ref_ed0e1a06-e5e2-4328-aeeb-d56a78d6a757.xml, ZwOpenTransaction routine [Kernel-Mode Driver Architecture], ZwOpenTransaction, kernel.zwopentransaction, wdm/ZwOpenTransaction, wdm/NtOpenTransaction, NtOpenTransaction
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later operating system versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.NtOpenTransaction
+title: NtOpenTransaction function
+author: windows-driver-content
+description: The ZwOpenTransaction routine obtains a handle to an existing transaction object.
+old-location: kernel\zwopentransaction.htm
+old-project: kernel
+ms.assetid: 5ffa50af-24e6-4dab-81cc-6ac26356e9c6
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ktm_ref_ed0e1a06-e5e2-4328-aeeb-d56a78d6a757.xml, ZwOpenTransaction routine [Kernel-Mode Driver Architecture], ZwOpenTransaction, kernel.zwopentransaction, wdm/ZwOpenTransaction, wdm/NtOpenTransaction, NtOpenTransaction
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later operating system versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ZwOpenTransaction
+-	NtOpenTransaction
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

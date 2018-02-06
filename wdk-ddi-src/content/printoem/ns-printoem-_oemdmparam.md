@@ -1,42 +1,47 @@
 ---
-UID : NS:printoem._OEMDMPARAM
-title : "_OEMDMPARAM"
-author : windows-driver-content
-description : The OEMDMPARAM structure is used as an input parameter to the IPrintOemUI::DevMode, IPrintOemUni::DevMode, and IPrintOemPS::DevMode methods.
-old-location : print\oemdmparam.htm
-old-project : print
-ms.assetid : 625980d1-47eb-4427-a9e8-967b1873bbd6
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : OEMDMPARAM structure [Print Devices], printoem/POEMDMPARAM, _OEMDMPARAM, print.oemdmparam, POEMDMPARAM structure pointer [Print Devices], OEMDMPARAM, *POEMDMPARAM, print_unidrv-pscript_ui_49535272-ec29-4133-8105-0ce9b31808a2.xml, printoem/OEMDMPARAM, POEMDMPARAM
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : printoem.h
-req.include-header : Printoem.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*POEMDMPARAM, OEMDMPARAM"
-req.product : Windows 10 or later.
+UID: NS:printoem._OEMDMPARAM
+title: "_OEMDMPARAM"
+author: windows-driver-content
+description: The OEMDMPARAM structure is used as an input parameter to the IPrintOemUI::DevMode, IPrintOemUni::DevMode, and IPrintOemPS::DevMode methods.
+old-location: print\oemdmparam.htm
+old-project: print
+ms.assetid: 625980d1-47eb-4427-a9e8-967b1873bbd6
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: OEMDMPARAM structure [Print Devices], printoem/POEMDMPARAM, _OEMDMPARAM, print.oemdmparam, POEMDMPARAM structure pointer [Print Devices], OEMDMPARAM, *POEMDMPARAM, print_unidrv-pscript_ui_49535272-ec29-4133-8105-0ce9b31808a2.xml, printoem/OEMDMPARAM, POEMDMPARAM
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: printoem.h
+req.include-header: Printoem.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	printoem.h
+apiname:
+-	OEMDMPARAM
+product: Windows
+targetos: Windows
+req.typenames: "*POEMDMPARAM, OEMDMPARAM"
+req.product: Windows 10 or later.
 ---
 
 # _OEMDMPARAM structure

@@ -1,42 +1,47 @@
 ---
-UID : NN:printerextension.IPrintSchemaAsyncOperation
-title : IPrintSchemaAsyncOperation
-author : windows-driver-content
-description : Represents an asynchronous operation context for validation, merge or commit operations.
-old-location : print\iprintschemaasyncoperation_interface.htm
-old-project : print
-ms.assetid : CEA80412-4B19-493B-A85E-625915D77CA5
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : print.iprintschemaasyncoperation_interface, IPrintSchemaAsyncOperation interface [Print Devices], IPrintSchemaAsyncOperation interface [Print Devices], described, IPrintSchemaAsyncOperation, printerextension/IPrintSchemaAsyncOperation
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : printerextension.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : printerextension.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PrintSchemaSelectionType
-req.product : Windows 10 or later.
+UID: NN:printerextension.IPrintSchemaAsyncOperation
+title: IPrintSchemaAsyncOperation
+author: windows-driver-content
+description: Represents an asynchronous operation context for validation, merge or commit operations.
+old-location: print\iprintschemaasyncoperation_interface.htm
+old-project: print
+ms.assetid: CEA80412-4B19-493B-A85E-625915D77CA5
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: print.iprintschemaasyncoperation_interface, IPrintSchemaAsyncOperation interface [Print Devices], IPrintSchemaAsyncOperation interface [Print Devices], described, IPrintSchemaAsyncOperation, printerextension/IPrintSchemaAsyncOperation
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: printerextension.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: printerextension.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Printerextension.h
+apiname:
+-	IPrintSchemaAsyncOperation
+product: Windows
+targetos: Windows
+req.typenames: PrintSchemaSelectionType
+req.product: Windows 10 or later.
 ---
 
 # IPrintSchemaAsyncOperation interface

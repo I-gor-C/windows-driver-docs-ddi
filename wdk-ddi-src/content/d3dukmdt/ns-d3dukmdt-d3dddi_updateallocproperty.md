@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dukmdt.D3DDDI_UPDATEALLOCPROPERTY
-title : D3DDDI_UPDATEALLOCPROPERTY
-author : windows-driver-content
-description : D3DDDI_UPDATEALLOCPROPERTY describes the parameters needed to update an allocation.
-old-location : display\d3dddi_updateallocproperty.htm
-old-project : display
-ms.assetid : 4A8EBF10-23A3-4D91-BCF7-8FD4D0708949
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.d3dddi_updateallocproperty, D3DDDI_UPDATEALLOCPROPERTY, D3DDDI_UPDATEALLOCPROPERTY structure [Display Devices], d3dukmdt/D3DDDI_UPDATEALLOCPROPERTY
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dukmdt.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 10 and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDI_UPDATEALLOCPROPERTY
+UID: NS:d3dukmdt.D3DDDI_UPDATEALLOCPROPERTY
+title: D3DDDI_UPDATEALLOCPROPERTY
+author: windows-driver-content
+description: D3DDDI_UPDATEALLOCPROPERTY describes the parameters needed to update an allocation.
+old-location: display\d3dddi_updateallocproperty.htm
+old-project: display
+ms.assetid: 4A8EBF10-23A3-4D91-BCF7-8FD4D0708949
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.d3dddi_updateallocproperty, D3DDDI_UPDATEALLOCPROPERTY, D3DDDI_UPDATEALLOCPROPERTY structure [Display Devices], d3dukmdt/D3DDDI_UPDATEALLOCPROPERTY
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dukmdt.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 10 and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dukmdt.h
+apiname:
+-	D3DDDI_UPDATEALLOCPROPERTY
+product: Windows
+targetos: Windows
+req.typenames: D3DDDI_UPDATEALLOCPROPERTY
 ---
 
 # D3DDDI_UPDATEALLOCPROPERTY structure

@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugControl4.GetExtensionFunctionWide
-title : IDebugControl4::GetExtensionFunctionWide method
-author : windows-driver-content
-description : The GetExtensionFunctionWide method returns a pointer to an extension function from an extension library.
-old-location : debugger\getextensionfunctionwide.htm
-old-project : debugger
-ms.assetid : 351859d5-89fb-4756-a75b-fd4048cb20ef
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : debugger.getextensionfunctionwide, dbgeng/IDebugControl4::GetExtensionFunctionWide, GetExtensionFunctionWide, IDebugControl4::GetExtensionFunctionWide, GetExtensionFunctionWide method [Windows Debugging], IDebugControl4 interface, IDebugControl4 interface [Windows Debugging], GetExtensionFunctionWide method, IDebugControl4, GetExtensionFunctionWide method [Windows Debugging]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl4.GetExtensionFunctionWide
+title: IDebugControl4::GetExtensionFunctionWide method
+author: windows-driver-content
+description: The GetExtensionFunctionWide method returns a pointer to an extension function from an extension library.
+old-location: debugger\getextensionfunctionwide.htm
+old-project: debugger
+ms.assetid: 351859d5-89fb-4756-a75b-fd4048cb20ef
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: debugger.getextensionfunctionwide, dbgeng/IDebugControl4::GetExtensionFunctionWide, GetExtensionFunctionWide, IDebugControl4::GetExtensionFunctionWide, GetExtensionFunctionWide method [Windows Debugging], IDebugControl4 interface, IDebugControl4 interface [Windows Debugging], GetExtensionFunctionWide method, IDebugControl4, GetExtensionFunctionWide method [Windows Debugging]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl4.GetExtensionFunctionWide
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

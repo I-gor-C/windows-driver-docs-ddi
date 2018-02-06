@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugControl3.GetPageSize
-title : IDebugControl3::GetPageSize method
-author : windows-driver-content
-description : The GetPageSize method returns the page size for the effective processor mode.
-old-location : debugger\getpagesize.htm
-old-project : debugger
-ms.assetid : 26f11dfb-3fc3-4804-a294-2dfc674b4a73
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugControl2::GetPageSize, IDebugControl::GetPageSize, dbgeng/IDebugControl3::GetPageSize, IDebugControl3, GetPageSize method [Windows Debugging], dbgeng/IDebugControl2::GetPageSize, debugger.getpagesize, dbgeng/IDebugControl::GetPageSize, GetPageSize method [Windows Debugging], IDebugControl3 interface, IDebugControl interface [Windows Debugging], GetPageSize method, GetPageSize method [Windows Debugging], IDebugControl2 interface, IDebugControl3 interface [Windows Debugging], GetPageSize method, IDebugControl2 interface [Windows Debugging], GetPageSize method, IDebugControl3::GetPageSize, GetPageSize, GetPageSize method [Windows Debugging], IDebugControl interface, IDebugControl_b38e4c0a-5992-4afe-b684-2eb65b3a0271.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl3.GetPageSize
+title: IDebugControl3::GetPageSize method
+author: windows-driver-content
+description: The GetPageSize method returns the page size for the effective processor mode.
+old-location: debugger\getpagesize.htm
+old-project: debugger
+ms.assetid: 26f11dfb-3fc3-4804-a294-2dfc674b4a73
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugControl2::GetPageSize, IDebugControl::GetPageSize, dbgeng/IDebugControl3::GetPageSize, IDebugControl3, GetPageSize method [Windows Debugging], dbgeng/IDebugControl2::GetPageSize, debugger.getpagesize, dbgeng/IDebugControl::GetPageSize, GetPageSize method [Windows Debugging], IDebugControl3 interface, IDebugControl interface [Windows Debugging], GetPageSize method, GetPageSize method [Windows Debugging], IDebugControl2 interface, IDebugControl3 interface [Windows Debugging], GetPageSize method, IDebugControl2 interface [Windows Debugging], GetPageSize method, IDebugControl3::GetPageSize, GetPageSize, GetPageSize method [Windows Debugging], IDebugControl interface, IDebugControl_b38e4c0a-5992-4afe-b684-2eb65b3a0271.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl.GetPageSize
+-	IDebugControl2.GetPageSize
+-	IDebugControl3.GetPageSize
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

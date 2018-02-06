@@ -1,41 +1,47 @@
 ---
-UID : NF:ntifs.NtQueryDirectoryFile
-title : NtQueryDirectoryFile function
-author : windows-driver-content
-description : The ZwQueryDirectoryFile routine returns various kinds of information about files in the directory specified by a given file handle.
-old-location : kernel\zwquerydirectoryfile.htm
-old-project : kernel
-ms.assetid : 47e88095-fab3-4fa2-814e-db04ce864e7e
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : k111_ffed894d-20dc-416e-8759-073a0cee3229.xml, ZwQueryDirectoryFile, kernel.zwquerydirectoryfile, ZwQueryDirectoryFile routine [Kernel-Mode Driver Architecture], ntifs/NtQueryDirectoryFile, ntifs/ZwQueryDirectoryFile, NtQueryDirectoryFile
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows XP.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.NtQueryDirectoryFile
+title: NtQueryDirectoryFile function
+author: windows-driver-content
+description: The ZwQueryDirectoryFile routine returns various kinds of information about files in the directory specified by a given file handle.
+old-location: kernel\zwquerydirectoryfile.htm
+old-project: kernel
+ms.assetid: 47e88095-fab3-4fa2-814e-db04ce864e7e
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: k111_ffed894d-20dc-416e-8759-073a0cee3229.xml, ZwQueryDirectoryFile, kernel.zwquerydirectoryfile, ZwQueryDirectoryFile routine [Kernel-Mode Driver Architecture], ntifs/NtQueryDirectoryFile, ntifs/ZwQueryDirectoryFile, NtQueryDirectoryFile
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows XP.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ZwQueryDirectoryFile
+-	NtQueryDirectoryFile
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

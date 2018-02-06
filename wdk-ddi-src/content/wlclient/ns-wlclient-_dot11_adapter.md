@@ -1,42 +1,47 @@
 ---
-UID : NS:wlclient._DOT11_ADAPTER
-title : "_DOT11_ADAPTER"
-author : windows-driver-content
-description : Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
-old-location : netvista\dot11_adapter.htm
-old-project : netvista
-ms.assetid : dae4c499-86c7-4f2b-bd5a-df2a62cdb77f
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : wlclient/DOT11_ADAPTER, DOT11_ADAPTER, DOT11_ADAPTER structure [Network Drivers Starting with Windows Vista], netvista.dot11_adapter, _DOT11_ADAPTER, PDOT11_ADAPTER structure pointer [Network Drivers Starting with Windows Vista], wlclient/PDOT11_ADAPTER, *PDOT11_ADAPTER, Native_802.11_data_types_0575eb35-d3de-41ad-a956-1714e642b8b5.xml, PDOT11_ADAPTER
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wlclient.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating   systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDOT11_ADAPTER, DOT11_ADAPTER"
-req.product : Windows 10 or later.
+UID: NS:wlclient._DOT11_ADAPTER
+title: "_DOT11_ADAPTER"
+author: windows-driver-content
+description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+old-location: netvista\dot11_adapter.htm
+old-project: netvista
+ms.assetid: dae4c499-86c7-4f2b-bd5a-df2a62cdb77f
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: wlclient/DOT11_ADAPTER, DOT11_ADAPTER, DOT11_ADAPTER structure [Network Drivers Starting with Windows Vista], netvista.dot11_adapter, _DOT11_ADAPTER, PDOT11_ADAPTER structure pointer [Network Drivers Starting with Windows Vista], wlclient/PDOT11_ADAPTER, *PDOT11_ADAPTER, Native_802.11_data_types_0575eb35-d3de-41ad-a956-1714e642b8b5.xml, PDOT11_ADAPTER
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wlclient.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wlclient.h
+apiname:
+-	DOT11_ADAPTER
+product: Windows
+targetos: Windows
+req.typenames: "*PDOT11_ADAPTER, DOT11_ADAPTER"
+req.product: Windows 10 or later.
 ---
 
 # _DOT11_ADAPTER structure

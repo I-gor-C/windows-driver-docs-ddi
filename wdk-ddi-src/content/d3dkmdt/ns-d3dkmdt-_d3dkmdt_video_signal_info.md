@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmdt._D3DKMDT_VIDEO_SIGNAL_INFO
-title : "_D3DKMDT_VIDEO_SIGNAL_INFO"
-author : windows-driver-content
-description : The D3DKMDT_VIDEO_SIGNAL_INFO structure contains information about a video signal driven by a video output on a display adapter.
-old-location : display\d3dkmdt_video_signal_info.htm
-old-project : display
-ms.assetid : 38d0a655-265b-46e0-8af3-de6757025588
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.d3dkmdt_video_signal_info, DmStructs_10882170-8ccd-481d-bb36-b0a1f706e395.xml, d3dkmdt/D3DKMDT_VIDEO_SIGNAL_INFO, D3DKMDT_VIDEO_SIGNAL_INFO, _D3DKMDT_VIDEO_SIGNAL_INFO, D3DKMDT_VIDEO_SIGNAL_INFO structure [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmdt.h
-req.include-header : D3dkmdt.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMDT_VIDEO_SIGNAL_INFO
+UID: NS:d3dkmdt._D3DKMDT_VIDEO_SIGNAL_INFO
+title: "_D3DKMDT_VIDEO_SIGNAL_INFO"
+author: windows-driver-content
+description: The D3DKMDT_VIDEO_SIGNAL_INFO structure contains information about a video signal driven by a video output on a display adapter.
+old-location: display\d3dkmdt_video_signal_info.htm
+old-project: display
+ms.assetid: 38d0a655-265b-46e0-8af3-de6757025588
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.d3dkmdt_video_signal_info, DmStructs_10882170-8ccd-481d-bb36-b0a1f706e395.xml, d3dkmdt/D3DKMDT_VIDEO_SIGNAL_INFO, D3DKMDT_VIDEO_SIGNAL_INFO, _D3DKMDT_VIDEO_SIGNAL_INFO, D3DKMDT_VIDEO_SIGNAL_INFO structure [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmdt.h
+req.include-header: D3dkmdt.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmdt.h
+apiname:
+-	D3DKMDT_VIDEO_SIGNAL_INFO
+product: Windows
+targetos: Windows
+req.typenames: D3DKMDT_VIDEO_SIGNAL_INFO
 ---
 
 # _D3DKMDT_VIDEO_SIGNAL_INFO structure

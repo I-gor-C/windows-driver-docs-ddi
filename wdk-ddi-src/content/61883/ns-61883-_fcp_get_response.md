@@ -1,41 +1,46 @@
 ---
-UID : NS:61883._FCP_GET_RESPONSE
-title : "_FCP_GET_RESPONSE"
-author : windows-driver-content
-description : The structure is used in a request yjsy retrieves the next FCP response from the queue of requests maintained by the IEC-61883 protocol driver.
-old-location : ieee\fcp_get_response.htm
-old-project : IEEE
-ms.assetid : 1CE962A4-7F99-4F81-8B85-265A4225B88A
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : PFCP_GET_RESPONSE structure pointer [Buses], _FCP_GET_RESPONSE, *PFCP_GET_RESPONSE, 61883/FCP_GET_RESPONSE, FCP_RESPONSE, 61883/PFCP_GET_RESPONSE, IEEE.fcp_get_response, PFCP_GET_RESPONSE, FCP_GET_RESPONSE, FCP_GET_RESPONSE structure [Buses], *PFCP_RESPONSE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : 61883.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PFCP_RESPONSE, *PFCP_GET_RESPONSE, FCP_GET_RESPONSE, FCP_RESPONSE"
+UID: NS:61883._FCP_GET_RESPONSE
+title: "_FCP_GET_RESPONSE"
+author: windows-driver-content
+description: The structure is used in a request yjsy retrieves the next FCP response from the queue of requests maintained by the IEC-61883 protocol driver.
+old-location: ieee\fcp_get_response.htm
+old-project: IEEE
+ms.assetid: 1CE962A4-7F99-4F81-8B85-265A4225B88A
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: PFCP_GET_RESPONSE structure pointer [Buses], _FCP_GET_RESPONSE, *PFCP_GET_RESPONSE, 61883/FCP_GET_RESPONSE, FCP_RESPONSE, 61883/PFCP_GET_RESPONSE, IEEE.fcp_get_response, PFCP_GET_RESPONSE, FCP_GET_RESPONSE, FCP_GET_RESPONSE structure [Buses], *PFCP_RESPONSE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: 61883.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	61883.h
+apiname:
+-	FCP_GET_RESPONSE
+product: Windows
+targetos: Windows
+req.typenames: "*PFCP_RESPONSE, *PFCP_GET_RESPONSE, FCP_GET_RESPONSE, FCP_RESPONSE"
 ---
 
 # _FCP_GET_RESPONSE structure

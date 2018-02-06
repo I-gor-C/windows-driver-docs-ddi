@@ -1,42 +1,47 @@
 ---
-UID : NC:wlanihv.DOT11EXT_REQUEST_VIRTUAL_STATION
-title : DOT11EXT_REQUEST_VIRTUAL_STATION
-author : windows-driver-content
-description : Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
-old-location : netvista\dot11extrequestvirtualstation.htm
-old-project : netvista
-ms.assetid : a7f6d53a-439e-4274-80b0-9fb183459824
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.dot11extrequestvirtualstation, Dot11ExtRequestVirtualStation callback function [Network Drivers Starting with Windows Vista], Dot11ExtRequestVirtualStation, DOT11EXT_REQUEST_VIRTUAL_STATION, DOT11EXT_REQUEST_VIRTUAL_STATION, wlanihv/Dot11ExtRequestVirtualStation, Native_802.11_IHV_Ext_d118b82f-9abc-4878-b76f-4aabf93b38ea.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wlanihv.h
-req.include-header : Wlanihv.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows 7 and later versions of the Windows operating   systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDRIVER_INFO_8W, DRIVER_INFO_8W, *LPDRIVER_INFO_8W"
-req.product : Windows 10 or later.
+UID: NC:wlanihv.DOT11EXT_REQUEST_VIRTUAL_STATION
+title: DOT11EXT_REQUEST_VIRTUAL_STATION
+author: windows-driver-content
+description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+old-location: netvista\dot11extrequestvirtualstation.htm
+old-project: netvista
+ms.assetid: a7f6d53a-439e-4274-80b0-9fb183459824
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.dot11extrequestvirtualstation, Dot11ExtRequestVirtualStation callback function [Network Drivers Starting with Windows Vista], Dot11ExtRequestVirtualStation, DOT11EXT_REQUEST_VIRTUAL_STATION, DOT11EXT_REQUEST_VIRTUAL_STATION, wlanihv/Dot11ExtRequestVirtualStation, Native_802.11_IHV_Ext_d118b82f-9abc-4878-b76f-4aabf93b38ea.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wlanihv.h
+req.include-header: Wlanihv.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows 7 and later versions of the Windows operating   systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	wlanihv.h
+apiname:
+-	Dot11ExtRequestVirtualStation
+product: Windows
+targetos: Windows
+req.typenames: "*PDRIVER_INFO_8W, DRIVER_INFO_8W, *LPDRIVER_INFO_8W"
+req.product: Windows 10 or later.
 ---
 
 

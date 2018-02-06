@@ -1,42 +1,47 @@
 ---
-UID : NF:umdprovider.UMDEtwUnregister
-title : UMDEtwUnregister function
-author : windows-driver-content
-description : Unregisters the event trace provider. Call this function before the user-mode driver is unloaded. After this function is called, the driver should not make any other calls to log events.
-old-location : display\umdetwunregister.htm
-old-project : display
-ms.assetid : 19ab8771-2a86-469a-98e4-3d295a458b90
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : umdprovider/UMDEtwUnregister, UMDEtwUnregister, UMDEtwUnregister function [Display Devices], display.umdetwunregister
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : umdprovider.h
-req.include-header : Umdprovider.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : UMDETW_ALLOCATION_SEMANTIC
-req.product : Windows 10 or later.
+UID: NF:umdprovider.UMDEtwUnregister
+title: UMDEtwUnregister function
+author: windows-driver-content
+description: Unregisters the event trace provider. Call this function before the user-mode driver is unloaded. After this function is called, the driver should not make any other calls to log events.
+old-location: display\umdetwunregister.htm
+old-project: display
+ms.assetid: 19ab8771-2a86-469a-98e4-3d295a458b90
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: umdprovider/UMDEtwUnregister, UMDEtwUnregister, UMDEtwUnregister function [Display Devices], display.umdetwunregister
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: umdprovider.h
+req.include-header: Umdprovider.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	umdprovider.h
+apiname:
+-	UMDEtwUnregister
+product: Windows
+targetos: Windows
+req.typenames: UMDETW_ALLOCATION_SEMANTIC
+req.product: Windows 10 or later.
 ---
 
 

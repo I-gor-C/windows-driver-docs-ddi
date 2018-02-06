@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.KSDATARANGE_AUDIO
-title : KSDATARANGE_AUDIO
-author : windows-driver-content
-description : The KSDATARANGE_AUDIO structure specifies a range of audio formats.
-old-location : audio\ksdatarange_audio.htm
-old-project : audio
-ms.assetid : 53631f26-8377-4ab5-83db-ed241c11643a
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : PKSDATARANGE_AUDIO, KSDATARANGE_AUDIO structure [Audio Devices], audio.ksdatarange_audio, aud-prop_9a59d4cd-4c84-4c22-8a36-741cf53ec08d.xml, ksmedia/PKSDATARANGE_AUDIO, PKSDATARANGE_AUDIO structure pointer [Audio Devices], KSDATARANGE_AUDIO, *PKSDATARANGE_AUDIO, ksmedia/KSDATARANGE_AUDIO
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKSDATARANGE_AUDIO, KSDATARANGE_AUDIO"
+UID: NS:ksmedia.KSDATARANGE_AUDIO
+title: KSDATARANGE_AUDIO
+author: windows-driver-content
+description: The KSDATARANGE_AUDIO structure specifies a range of audio formats.
+old-location: audio\ksdatarange_audio.htm
+old-project: audio
+ms.assetid: 53631f26-8377-4ab5-83db-ed241c11643a
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: PKSDATARANGE_AUDIO, KSDATARANGE_AUDIO structure [Audio Devices], audio.ksdatarange_audio, aud-prop_9a59d4cd-4c84-4c22-8a36-741cf53ec08d.xml, ksmedia/PKSDATARANGE_AUDIO, PKSDATARANGE_AUDIO structure pointer [Audio Devices], KSDATARANGE_AUDIO, *PKSDATARANGE_AUDIO, ksmedia/KSDATARANGE_AUDIO
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	KSDATARANGE_AUDIO
+product: Windows
+targetos: Windows
+req.typenames: "*PKSDATARANGE_AUDIO, KSDATARANGE_AUDIO"
 ---
 
 # KSDATARANGE_AUDIO structure

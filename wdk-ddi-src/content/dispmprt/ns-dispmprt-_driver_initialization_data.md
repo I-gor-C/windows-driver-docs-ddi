@@ -1,41 +1,46 @@
 ---
-UID : NS:dispmprt._DRIVER_INITIALIZATION_DATA
-title : "_DRIVER_INITIALIZATION_DATA"
-author : windows-driver-content
-description : The DRIVER_INITIALIZATION_DATA structure contains pointers to functions implemented by the display miniport driver.
-old-location : display\driver_initialization_data.htm
-old-project : display
-ms.assetid : 3ab00f9c-7ce9-41bf-85c5-96be31d19719
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : "_DRIVER_INITIALIZATION_DATA, dispmprt/PDRIVER_INITIALIZATION_DATA, DmStructs_7b91bf58-dfda-4c7c-ae26-21e577bdc152.xml, PDRIVER_INITIALIZATION_DATA, *PDRIVER_INITIALIZATION_DATA, DRIVER_INITIALIZATION_DATA, PDRIVER_INITIALIZATION_DATA structure pointer [Display Devices], DRIVER_INITIALIZATION_DATA structure [Display Devices], dispmprt/DRIVER_INITIALIZATION_DATA, display.driver_initialization_data"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : dispmprt.h
-req.include-header : Dispmprt.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DRIVER_INITIALIZATION_DATA, *PDRIVER_INITIALIZATION_DATA
+UID: NS:dispmprt._DRIVER_INITIALIZATION_DATA
+title: "_DRIVER_INITIALIZATION_DATA"
+author: windows-driver-content
+description: The DRIVER_INITIALIZATION_DATA structure contains pointers to functions implemented by the display miniport driver.
+old-location: display\driver_initialization_data.htm
+old-project: display
+ms.assetid: 3ab00f9c-7ce9-41bf-85c5-96be31d19719
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: "_DRIVER_INITIALIZATION_DATA, dispmprt/PDRIVER_INITIALIZATION_DATA, DmStructs_7b91bf58-dfda-4c7c-ae26-21e577bdc152.xml, PDRIVER_INITIALIZATION_DATA, *PDRIVER_INITIALIZATION_DATA, DRIVER_INITIALIZATION_DATA, PDRIVER_INITIALIZATION_DATA structure pointer [Display Devices], DRIVER_INITIALIZATION_DATA structure [Display Devices], dispmprt/DRIVER_INITIALIZATION_DATA, display.driver_initialization_data"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: dispmprt.h
+req.include-header: Dispmprt.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Dispmprt.h
+apiname:
+-	DRIVER_INITIALIZATION_DATA
+product: Windows
+targetos: Windows
+req.typenames: DRIVER_INITIALIZATION_DATA, *PDRIVER_INITIALIZATION_DATA
 ---
 
 # _DRIVER_INITIALIZATION_DATA structure

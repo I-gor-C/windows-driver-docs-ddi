@@ -1,41 +1,46 @@
 ---
-UID : NS:1394._SET_LOCAL_HOST_PROPS2
-title : "_SET_LOCAL_HOST_PROPS2"
-author : windows-driver-content
-description : SET_LOCAL_HOST_PROPS2 sets a lower bound on the value the bus will use for its gap count.
-old-location : ieee\set_local_host_props2.htm
-old-project : IEEE
-ms.assetid : ec4b8630-500d-494a-9a86-2f9cf9f9227b
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : IEEE.set_local_host_props2, PSET_LOCAL_HOST_PROPS2, SET_LOCAL_HOST_PROPS2 structure [Buses], 1394/SET_LOCAL_HOST_PROPS2, 1394/PSET_LOCAL_HOST_PROPS2, _SET_LOCAL_HOST_PROPS2, *PSET_LOCAL_HOST_PROPS2, SET_LOCAL_HOST_PROPS2, 1394stct_e2833905-04e9-4824-a437-4b9f724aaaa4.xml, PSET_LOCAL_HOST_PROPS2 structure pointer [Buses]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : 1394.h
-req.include-header : 1394.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSET_LOCAL_HOST_PROPS2, SET_LOCAL_HOST_PROPS2"
+UID: NS:1394._SET_LOCAL_HOST_PROPS2
+title: "_SET_LOCAL_HOST_PROPS2"
+author: windows-driver-content
+description: SET_LOCAL_HOST_PROPS2 sets a lower bound on the value the bus will use for its gap count.
+old-location: ieee\set_local_host_props2.htm
+old-project: IEEE
+ms.assetid: ec4b8630-500d-494a-9a86-2f9cf9f9227b
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: IEEE.set_local_host_props2, PSET_LOCAL_HOST_PROPS2, SET_LOCAL_HOST_PROPS2 structure [Buses], 1394/SET_LOCAL_HOST_PROPS2, 1394/PSET_LOCAL_HOST_PROPS2, _SET_LOCAL_HOST_PROPS2, *PSET_LOCAL_HOST_PROPS2, SET_LOCAL_HOST_PROPS2, 1394stct_e2833905-04e9-4824-a437-4b9f724aaaa4.xml, PSET_LOCAL_HOST_PROPS2 structure pointer [Buses]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: 1394.h
+req.include-header: 1394.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	1394.h
+apiname:
+-	SET_LOCAL_HOST_PROPS2
+product: Windows
+targetos: Windows
+req.typenames: "*PSET_LOCAL_HOST_PROPS2, SET_LOCAL_HOST_PROPS2"
 ---
 
 # _SET_LOCAL_HOST_PROPS2 structure

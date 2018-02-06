@@ -1,41 +1,47 @@
 ---
-UID : NF:hidpi.HidP_GetButtonCaps
-title : HidP_GetButtonCaps function
-author : windows-driver-content
-description : The HidP_GetButtonCaps routine returns a button capability array that describes all the HID control buttons in a top-level collection for a specified type of HID report.
-old-location : hid\hidp_getbuttoncaps.htm
-old-project : hid
-ms.assetid : 228b95b0-1087-422f-a995-809743c6103e
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : HidP_GetButtonCaps, hid.hidp_getbuttoncaps, hidfunc_57425ae7-03dd-42b7-b9b3-0581569ab442.xml, HidP_GetButtonCaps routine [Human Input Devices], hidpi/HidP_GetButtonCaps
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : hidpi.h
-req.include-header : Hidpi.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 2000 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Hidparse.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HIDP_REPORT_TYPE
+UID: NF:hidpi.HidP_GetButtonCaps
+title: HidP_GetButtonCaps function
+author: windows-driver-content
+description: The HidP_GetButtonCaps routine returns a button capability array that describes all the HID control buttons in a top-level collection for a specified type of HID report.
+old-location: hid\hidp_getbuttoncaps.htm
+old-project: hid
+ms.assetid: 228b95b0-1087-422f-a995-809743c6103e
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: HidP_GetButtonCaps, hid.hidp_getbuttoncaps, hidfunc_57425ae7-03dd-42b7-b9b3-0581569ab442.xml, HidP_GetButtonCaps routine [Human Input Devices], hidpi/HidP_GetButtonCaps
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: hidpi.h
+req.include-header: Hidpi.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 2000 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Hidparse.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Hidparse.lib
+-	Hidparse.dll
+apiname:
+-	HidP_GetButtonCaps
+product: Windows
+targetos: Windows
+req.typenames: HIDP_REPORT_TYPE
 ---
 
 

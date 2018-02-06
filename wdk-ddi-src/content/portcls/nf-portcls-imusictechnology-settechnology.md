@@ -1,41 +1,46 @@
 ---
-UID : NF:portcls.IMusicTechnology.SetTechnology
-title : IMusicTechnology::SetTechnology method
-author : windows-driver-content
-description : The SetTechnology method changes the Technology member of each KSDATARANGE_MUSIC structure in the data ranges for the miniport driver's pins.
-old-location : audio\imusictechnology_settechnology.htm
-old-project : audio
-ms.assetid : 7e32b408-930d-4ef4-960e-1a0da5ef6803
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : audio.imusictechnology_settechnology, portcls/IMusicTechnology::SetTechnology, SetTechnology method [Audio Devices], IMusicTechnology interface, audmp-routines_d1d6abaa-c4b8-4dce-8ce5-9fc12cc87852.xml, IMusicTechnology::SetTechnology, SetTechnology method [Audio Devices], SetTechnology, IMusicTechnology interface [Audio Devices], SetTechnology method, IMusicTechnology
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : portcls.h
-req.include-header : Portcls.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : portcls.h
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.IMusicTechnology.SetTechnology
+title: IMusicTechnology::SetTechnology method
+author: windows-driver-content
+description: The SetTechnology method changes the Technology member of each KSDATARANGE_MUSIC structure in the data ranges for the miniport driver's pins.
+old-location: audio\imusictechnology_settechnology.htm
+old-project: audio
+ms.assetid: 7e32b408-930d-4ef4-960e-1a0da5ef6803
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: audio.imusictechnology_settechnology, portcls/IMusicTechnology::SetTechnology, SetTechnology method [Audio Devices], IMusicTechnology interface, audmp-routines_d1d6abaa-c4b8-4dce-8ce5-9fc12cc87852.xml, IMusicTechnology::SetTechnology, SetTechnology method [Audio Devices], SetTechnology, IMusicTechnology interface [Audio Devices], SetTechnology method, IMusicTechnology
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: portcls.h
+req.include-header: Portcls.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: portcls.h
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	portcls.h
+apiname:
+-	IMusicTechnology.SetTechnology
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

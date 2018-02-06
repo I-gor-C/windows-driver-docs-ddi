@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddchgr.IOCTL_CHANGER_INITIALIZE_ELEMENT_STATUS
-title : IOCTL_CHANGER_INITIALIZE_ELEMENT_STATUS
-author : windows-driver-content
-description : Initializes the status of all elements or of specified number of elements of a particular type.
-old-location : storage\ioctl_changer_initialize_element_status.htm
-old-project : storage
-ms.assetid : 25cbb42a-7263-47b7-84c7-cfcb41a858c8
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_changer_initialize_element_status, IOCTL_CHANGER_INITIALIZE_ELEMENT_STATUS control code [Storage Devices], IOCTL_CHANGER_INITIALIZE_ELEMENT_STATUS, ntddchgr/IOCTL_CHANGER_INITIALIZE_ELEMENT_STATUS, k307_c36a7809-093c-4172-8443-58d178e9dd87.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddchgr.h
-req.include-header : Ntddchgr.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PELEMENT_TYPE, ELEMENT_TYPE"
+UID: NI:ntddchgr.IOCTL_CHANGER_INITIALIZE_ELEMENT_STATUS
+title: IOCTL_CHANGER_INITIALIZE_ELEMENT_STATUS
+author: windows-driver-content
+description: Initializes the status of all elements or of specified number of elements of a particular type.
+old-location: storage\ioctl_changer_initialize_element_status.htm
+old-project: storage
+ms.assetid: 25cbb42a-7263-47b7-84c7-cfcb41a858c8
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_changer_initialize_element_status, IOCTL_CHANGER_INITIALIZE_ELEMENT_STATUS control code [Storage Devices], IOCTL_CHANGER_INITIALIZE_ELEMENT_STATUS, ntddchgr/IOCTL_CHANGER_INITIALIZE_ELEMENT_STATUS, k307_c36a7809-093c-4172-8443-58d178e9dd87.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddchgr.h
+req.include-header: Ntddchgr.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddchgr.h
+apiname:
+-	IOCTL_CHANGER_INITIALIZE_ELEMENT_STATUS
+product: Windows
+targetos: Windows
+req.typenames: "*PELEMENT_TYPE, ELEMENT_TYPE"
 ---
 
 # IOCTL_CHANGER_INITIALIZE_ELEMENT_STATUS IOCTL

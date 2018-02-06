@@ -1,42 +1,47 @@
 ---
-UID : NC:wsk.PFN_WSK_GET_NAME_INFO
-title : PFN_WSK_GET_NAME_INFO
-author : windows-driver-content
-description : The WskGetNameInfo function provides protocol-independent translation from a transport address to a host name.
-old-location : netvista\wskgetnameinfo.htm
-old-project : netvista
-ms.assetid : 99e10a70-90a7-4d96-ae5f-ba82d8c4c1a8
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.wskgetnameinfo, WskGetNameInfo callback function [Network Drivers Starting with Windows Vista], WskGetNameInfo, PFN_WSK_GET_NAME_INFO, PFN_WSK_GET_NAME_INFO, wsk/WskGetNameInfo, wskref_cebad0ad-55bc-4fae-9c73-5a501417ea5c.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wsk.h
-req.include-header : Wsk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 7 and later versions of the Windows operating   systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WNODE_HEADER, *PWNODE_HEADER
-req.product : Windows 10 or later.
+UID: NC:wsk.PFN_WSK_GET_NAME_INFO
+title: PFN_WSK_GET_NAME_INFO
+author: windows-driver-content
+description: The WskGetNameInfo function provides protocol-independent translation from a transport address to a host name.
+old-location: netvista\wskgetnameinfo.htm
+old-project: netvista
+ms.assetid: 99e10a70-90a7-4d96-ae5f-ba82d8c4c1a8
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.wskgetnameinfo, WskGetNameInfo callback function [Network Drivers Starting with Windows Vista], WskGetNameInfo, PFN_WSK_GET_NAME_INFO, PFN_WSK_GET_NAME_INFO, wsk/WskGetNameInfo, wskref_cebad0ad-55bc-4fae-9c73-5a501417ea5c.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wsk.h
+req.include-header: Wsk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 7 and later versions of the Windows operating   systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	wsk.h
+apiname:
+-	WskGetNameInfo
+product: Windows
+targetos: Windows
+req.typenames: WNODE_HEADER, *PWNODE_HEADER
+req.product: Windows 10 or later.
 ---
 
 

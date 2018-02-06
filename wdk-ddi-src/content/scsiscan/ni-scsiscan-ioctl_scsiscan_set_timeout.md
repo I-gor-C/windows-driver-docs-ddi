@@ -1,42 +1,47 @@
 ---
-UID : NI:scsiscan.IOCTL_SCSISCAN_SET_TIMEOUT
-title : IOCTL_SCSISCAN_SET_TIMEOUT
-author : windows-driver-content
-description : The IOCTL_SCSISCAN_SET_TIMEOUT control code modifies the time-out value used by the kernel-mode still image driver for SCSI buses when it accesses a device.
-old-location : image\ioctl_scsiscan_set_timeout.htm
-old-project : image
-ms.assetid : 987816b3-ea5f-4689-b81f-f6d3328516c4
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : image.ioctl_scsiscan_set_timeout, IOCTL_SCSISCAN_SET_TIMEOUT control code [Imaging Devices], IOCTL_SCSISCAN_SET_TIMEOUT, scsiscan/IOCTL_SCSISCAN_SET_TIMEOUT, stifnc_2b449c8c-c9b5-4f5a-be93-7efc1d8610bc.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : scsiscan.h
-req.include-header : Scsiscan.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PZONE_DESCRIPTIOR, ZONE_DESCRIPTIOR"
-req.product : Windows 10 or later.
+UID: NI:scsiscan.IOCTL_SCSISCAN_SET_TIMEOUT
+title: IOCTL_SCSISCAN_SET_TIMEOUT
+author: windows-driver-content
+description: The IOCTL_SCSISCAN_SET_TIMEOUT control code modifies the time-out value used by the kernel-mode still image driver for SCSI buses when it accesses a device.
+old-location: image\ioctl_scsiscan_set_timeout.htm
+old-project: image
+ms.assetid: 987816b3-ea5f-4689-b81f-f6d3328516c4
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: image.ioctl_scsiscan_set_timeout, IOCTL_SCSISCAN_SET_TIMEOUT control code [Imaging Devices], IOCTL_SCSISCAN_SET_TIMEOUT, scsiscan/IOCTL_SCSISCAN_SET_TIMEOUT, stifnc_2b449c8c-c9b5-4f5a-be93-7efc1d8610bc.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: scsiscan.h
+req.include-header: Scsiscan.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	scsiscan.h
+apiname:
+-	IOCTL_SCSISCAN_SET_TIMEOUT
+product: Windows
+targetos: Windows
+req.typenames: "*PZONE_DESCRIPTIOR, ZONE_DESCRIPTIOR"
+req.product: Windows 10 or later.
 ---
 
 # IOCTL_SCSISCAN_SET_TIMEOUT IOCTL

@@ -1,41 +1,46 @@
 ---
-UID : NS:bdamedia.KSP_NODE_ESPID
-title : KSP_NODE_ESPID
-author : windows-driver-content
-description : The KSP_NODE_ESPID structure describes property and node type for an Entitlement Control Message (ECM) map node along with the packet identifier (PID) for an elementary stream that the ECM map node processes.
-old-location : stream\ksp_node_espid.htm
-old-project : stream
-ms.assetid : c5d0dbd8-bcce-436b-8fa7-bcb2b5c4ba59
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : bdamedia/PKSP_NODE_ESPID, PKSP_NODE_ESPID structure pointer [Streaming Media Devices], bdaref_aef92a8d-df0e-4283-b06a-4ece33b91809.xml, KSP_NODE_ESPID, stream.ksp_node_espid, KSP_NODE_ESPID structure [Streaming Media Devices], PKSP_NODE_ESPID, *PKSP_NODE_ESPID, bdamedia/KSP_NODE_ESPID
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : bdamedia.h
-req.include-header : Bdamedia.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KSP_NODE_ESPID, *PKSP_NODE_ESPID
+UID: NS:bdamedia.KSP_NODE_ESPID
+title: KSP_NODE_ESPID
+author: windows-driver-content
+description: The KSP_NODE_ESPID structure describes property and node type for an Entitlement Control Message (ECM) map node along with the packet identifier (PID) for an elementary stream that the ECM map node processes.
+old-location: stream\ksp_node_espid.htm
+old-project: stream
+ms.assetid: c5d0dbd8-bcce-436b-8fa7-bcb2b5c4ba59
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: bdamedia/PKSP_NODE_ESPID, PKSP_NODE_ESPID structure pointer [Streaming Media Devices], bdaref_aef92a8d-df0e-4283-b06a-4ece33b91809.xml, KSP_NODE_ESPID, stream.ksp_node_espid, KSP_NODE_ESPID structure [Streaming Media Devices], PKSP_NODE_ESPID, *PKSP_NODE_ESPID, bdamedia/KSP_NODE_ESPID
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: bdamedia.h
+req.include-header: Bdamedia.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	bdamedia.h
+apiname:
+-	KSP_NODE_ESPID
+product: Windows
+targetos: Windows
+req.typenames: KSP_NODE_ESPID, *PKSP_NODE_ESPID
 ---
 
 # KSP_NODE_ESPID structure

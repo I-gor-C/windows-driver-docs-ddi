@@ -1,41 +1,47 @@
 ---
-UID : NF:ntifs.FsRtlIssueDeviceIoControl
-title : FsRtlIssueDeviceIoControl function
-author : windows-driver-content
-description : The FsRtlIssueDeviceIoControl routine sends a synchronous device I/O control request to a target device object.
-old-location : ifsk\fsrtlissuedeviceiocontrol.htm
-old-project : ifsk
-ms.assetid : 3BB31389-EB1B-4443-9FCF-70B420D71126
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.fsrtlissuedeviceiocontrol, ntifs/FsRtlIssueDeviceIoControl, FsRtlIssueDeviceIoControl, FsRtlIssueDeviceIoControl routine [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ntoskrnl.lib
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.FsRtlIssueDeviceIoControl
+title: FsRtlIssueDeviceIoControl function
+author: windows-driver-content
+description: The FsRtlIssueDeviceIoControl routine sends a synchronous device I/O control request to a target device object.
+old-location: ifsk\fsrtlissuedeviceiocontrol.htm
+old-project: ifsk
+ms.assetid: 3BB31389-EB1B-4443-9FCF-70B420D71126
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.fsrtlissuedeviceiocontrol, ntifs/FsRtlIssueDeviceIoControl, FsRtlIssueDeviceIoControl, FsRtlIssueDeviceIoControl routine [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ntoskrnl.lib
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ntoskrnl.lib
+-	ntoskrnl.dll
+apiname:
+-	FsRtlIssueDeviceIoControl
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

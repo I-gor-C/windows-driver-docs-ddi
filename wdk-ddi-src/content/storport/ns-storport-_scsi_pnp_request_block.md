@@ -1,42 +1,47 @@
 ---
-UID : NS:storport._SCSI_PNP_REQUEST_BLOCK
-title : "_SCSI_PNP_REQUEST_BLOCK"
-author : windows-driver-content
-description : TheSCSI_PNP_REQUEST_BLOCK structure is a special version of a SCSI_REQUEST_BLOCK that is used for plug and play (PNP) requests.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future.
-old-location : storage\scsi_pnp_request_block.htm
-old-project : storage
-ms.assetid : 0627065b-62c2-4df8-973c-b4fb5811296e
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storport/PSCSI_PNP_REQUEST_BLOCK, *PSCSI_PNP_REQUEST_BLOCK, SCSI_PNP_REQUEST_BLOCK, StorStartDevice, storport/SCSI_PNP_REQUEST_BLOCK, StorStopDevice, storage.scsi_pnp_request_block, SCSI_PNP_REQUEST_BLOCK structure [Storage Devices], StorQueryCapabilities, _SCSI_PNP_REQUEST_BLOCK, PSCSI_PNP_REQUEST_BLOCK, StorRemoveDevice, StorFilterResourceRequirements, StorSupriseRemoval, PSCSI_PNP_REQUEST_BLOCK structure pointer [Storage Devices], structs-storport_d08ea849-f1d6-4584-b6a4-df7127f6873d.xml, StorQueryResourceRequirements
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSCSI_PNP_REQUEST_BLOCK, SCSI_PNP_REQUEST_BLOCK"
-req.product : Windows 10 or later.
+UID: NS:storport._SCSI_PNP_REQUEST_BLOCK
+title: "_SCSI_PNP_REQUEST_BLOCK"
+author: windows-driver-content
+description: TheSCSI_PNP_REQUEST_BLOCK structure is a special version of a SCSI_REQUEST_BLOCK that is used for plug and play (PNP) requests.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future.
+old-location: storage\scsi_pnp_request_block.htm
+old-project: storage
+ms.assetid: 0627065b-62c2-4df8-973c-b4fb5811296e
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storport/PSCSI_PNP_REQUEST_BLOCK, *PSCSI_PNP_REQUEST_BLOCK, SCSI_PNP_REQUEST_BLOCK, StorStartDevice, storport/SCSI_PNP_REQUEST_BLOCK, StorStopDevice, storage.scsi_pnp_request_block, SCSI_PNP_REQUEST_BLOCK structure [Storage Devices], StorQueryCapabilities, _SCSI_PNP_REQUEST_BLOCK, PSCSI_PNP_REQUEST_BLOCK, StorRemoveDevice, StorFilterResourceRequirements, StorSupriseRemoval, PSCSI_PNP_REQUEST_BLOCK structure pointer [Storage Devices], structs-storport_d08ea849-f1d6-4584-b6a4-df7127f6873d.xml, StorQueryResourceRequirements
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	storport.h
+apiname:
+-	SCSI_PNP_REQUEST_BLOCK
+product: Windows
+targetos: Windows
+req.typenames: "*PSCSI_PNP_REQUEST_BLOCK, SCSI_PNP_REQUEST_BLOCK"
+req.product: Windows 10 or later.
 ---
 
 # _SCSI_PNP_REQUEST_BLOCK structure

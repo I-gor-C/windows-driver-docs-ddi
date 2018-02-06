@@ -1,41 +1,46 @@
 ---
-UID : NI:hidport.IOCTL_HID_WRITE_REPORT
-title : IOCTL_HID_WRITE_REPORT
-author : windows-driver-content
-description : The IOCTL_HID_WRITE_REPORT request sends a HID report to a HIDClass device.
-old-location : hid\ioctl_hid_write_report.htm
-old-project : hid
-ms.assetid : 30b56c97-f135-4603-a5f0-3ed2105aae59
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : hid.ioctl_hid_write_report, IOCTL_HID_WRITE_REPORT control code [Human Input Devices], IOCTL_HID_WRITE_REPORT, hidport/IOCTL_HID_WRITE_REPORT, hidioreq_0b1eb214-55b0-4659-bdf7-866cf03a7be6.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : hidport.h
-req.include-header : Hidport.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : USAGE_AND_PAGE, *PUSAGE_AND_PAGE
+UID: NI:hidport.IOCTL_HID_WRITE_REPORT
+title: IOCTL_HID_WRITE_REPORT
+author: windows-driver-content
+description: The IOCTL_HID_WRITE_REPORT request sends a HID report to a HIDClass device.
+old-location: hid\ioctl_hid_write_report.htm
+old-project: hid
+ms.assetid: 30b56c97-f135-4603-a5f0-3ed2105aae59
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: hid.ioctl_hid_write_report, IOCTL_HID_WRITE_REPORT control code [Human Input Devices], IOCTL_HID_WRITE_REPORT, hidport/IOCTL_HID_WRITE_REPORT, hidioreq_0b1eb214-55b0-4659-bdf7-866cf03a7be6.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: hidport.h
+req.include-header: Hidport.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hidport.h
+apiname:
+-	IOCTL_HID_WRITE_REPORT
+product: Windows
+targetos: Windows
+req.typenames: USAGE_AND_PAGE, *PUSAGE_AND_PAGE
 ---
 
 # IOCTL_HID_WRITE_REPORT IOCTL

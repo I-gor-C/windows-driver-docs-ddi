@@ -1,42 +1,47 @@
 ---
-UID : NS:wwan._WWAN_SET_UICC_RESET
-title : "_WWAN_SET_UICC_RESET"
-author : windows-driver-content
-description : The WWAN_SET_UICC_RESET structure represents the passthrough action the MB host specifies for a modem miniport adapter after it resets a UICC smart card.
-old-location : netvista\wwan_set_uicc_reset.htm
-old-project : netvista
-ms.assetid : 33711459-70C8-43D2-974D-B90EC0DD8ED6
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : WWAN_SET_UICC_RESET structure [Network Drivers Starting with Windows Vista], wwan/WWAN_SET_UICC_RESET, netvista.wwan_set_uicc_reset, PWWAN_SET_UICC_RESET, PWWAN_SET_UICC_RESET structure pointer [Network Drivers Starting with Windows Vista], *PWWAN_SET_UICC_RESET, WWAN_SET_UICC_RESET, _WWAN_SET_UICC_RESET, wwan/PWWAN_SET_UICC_RESET
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wwan.h
-req.include-header : Wwan.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10, version 1709
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWWAN_SET_UICC_RESET, WWAN_SET_UICC_RESET"
-req.product : Windows 10 or later.
+UID: NS:wwan._WWAN_SET_UICC_RESET
+title: "_WWAN_SET_UICC_RESET"
+author: windows-driver-content
+description: The WWAN_SET_UICC_RESET structure represents the passthrough action the MB host specifies for a modem miniport adapter after it resets a UICC smart card.
+old-location: netvista\wwan_set_uicc_reset.htm
+old-project: netvista
+ms.assetid: 33711459-70C8-43D2-974D-B90EC0DD8ED6
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: WWAN_SET_UICC_RESET structure [Network Drivers Starting with Windows Vista], wwan/WWAN_SET_UICC_RESET, netvista.wwan_set_uicc_reset, PWWAN_SET_UICC_RESET, PWWAN_SET_UICC_RESET structure pointer [Network Drivers Starting with Windows Vista], *PWWAN_SET_UICC_RESET, WWAN_SET_UICC_RESET, _WWAN_SET_UICC_RESET, wwan/PWWAN_SET_UICC_RESET
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wwan.h
+req.include-header: Wwan.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10, version 1709
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wwan.h
+apiname:
+-	WWAN_SET_UICC_RESET
+product: Windows
+targetos: Windows
+req.typenames: "*PWWAN_SET_UICC_RESET, WWAN_SET_UICC_RESET"
+req.product: Windows 10 or later.
 ---
 
 # _WWAN_SET_UICC_RESET structure

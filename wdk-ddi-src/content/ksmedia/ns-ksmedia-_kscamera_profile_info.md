@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia._KSCAMERA_PROFILE_INFO
-title : "_KSCAMERA_PROFILE_INFO"
-author : windows-driver-content
-description : The KSCAMERA_PROFILE_INFO structure is used to uniquely identify a given profile.
-old-location : stream\kscamera_profile_info.htm
-old-project : stream
-ms.assetid : 566052ED-2FD8-46A9-8C4E-9FED660D93BF
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KSCAMERA_PROFILE_INFO, ksmedia/PKSCAMERA_PROFILE_INFO, KSCAMERA_PROFILE_INFO structure [Streaming Media Devices], PKSCAMERA_PROFILE_INFO, *PKSCAMERA_PROFILE_INFO, _KSCAMERA_PROFILE_INFO, stream.kscamera_profile_info, ksmedia/KSCAMERA_PROFILE_INFO, PKSCAMERA_PROFILE_INFO structure pointer [Streaming Media Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKSCAMERA_PROFILE_INFO, KSCAMERA_PROFILE_INFO"
+UID: NS:ksmedia._KSCAMERA_PROFILE_INFO
+title: "_KSCAMERA_PROFILE_INFO"
+author: windows-driver-content
+description: The KSCAMERA_PROFILE_INFO structure is used to uniquely identify a given profile.
+old-location: stream\kscamera_profile_info.htm
+old-project: stream
+ms.assetid: 566052ED-2FD8-46A9-8C4E-9FED660D93BF
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KSCAMERA_PROFILE_INFO, ksmedia/PKSCAMERA_PROFILE_INFO, KSCAMERA_PROFILE_INFO structure [Streaming Media Devices], PKSCAMERA_PROFILE_INFO, *PKSCAMERA_PROFILE_INFO, _KSCAMERA_PROFILE_INFO, stream.kscamera_profile_info, ksmedia/KSCAMERA_PROFILE_INFO, PKSCAMERA_PROFILE_INFO structure pointer [Streaming Media Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	KSCAMERA_PROFILE_INFO
+product: Windows
+targetos: Windows
+req.typenames: "*PKSCAMERA_PROFILE_INFO, KSCAMERA_PROFILE_INFO"
 ---
 
 # _KSCAMERA_PROFILE_INFO structure

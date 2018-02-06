@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfdevice.WdfDeviceSetAlignmentRequirement
-title : WdfDeviceSetAlignmentRequirement function
-author : windows-driver-content
-description : The WdfDeviceSetAlignmentRequirement method registers the driver's preferred address alignment for the data buffers that the device uses during memory transfer operations.
-old-location : wdf\wdfdevicesetalignmentrequirement.htm
-old-project : wdf
-ms.assetid : 47e857d0-1423-45e5-a5a5-54507b8fa315
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : PFN_WDFDEVICESETALIGNMENTREQUIREMENT, WdfDeviceSetAlignmentRequirement method, wdfdevice/WdfDeviceSetAlignmentRequirement, DFDeviceObjectGeneralRef_9648c639-95b8-4dd9-8d30-8fb6352fe5f6.xml, kmdf.wdfdevicesetalignmentrequirement, WdfDeviceSetAlignmentRequirement, wdf.wdfdevicesetalignmentrequirement
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfdevice.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_STATE_NOTIFICATION_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfdevice.WdfDeviceSetAlignmentRequirement
+title: WdfDeviceSetAlignmentRequirement function
+author: windows-driver-content
+description: The WdfDeviceSetAlignmentRequirement method registers the driver's preferred address alignment for the data buffers that the device uses during memory transfer operations.
+old-location: wdf\wdfdevicesetalignmentrequirement.htm
+old-project: wdf
+ms.assetid: 47e857d0-1423-45e5-a5a5-54507b8fa315
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: PFN_WDFDEVICESETALIGNMENTREQUIREMENT, WdfDeviceSetAlignmentRequirement method, wdfdevice/WdfDeviceSetAlignmentRequirement, DFDeviceObjectGeneralRef_9648c639-95b8-4dd9-8d30-8fb6352fe5f6.xml, kmdf.wdfdevicesetalignmentrequirement, WdfDeviceSetAlignmentRequirement, wdf.wdfdevicesetalignmentrequirement
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfdevice.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfDeviceSetAlignmentRequirement
+product: Windows
+targetos: Windows
+req.typenames: WDF_STATE_NOTIFICATION_TYPE
+req.product: Windows 10 or later.
 ---
 
 

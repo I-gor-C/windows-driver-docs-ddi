@@ -1,41 +1,46 @@
 ---
-UID : NI:ntdddisk.IOCTL_DISK_SET_DRIVE_LAYOUT_EX
-title : IOCTL_DISK_SET_DRIVE_LAYOUT_EX
-author : windows-driver-content
-description : Repartitions a disk as specified. (Floppy drivers need not handle this request.).
-old-location : storage\ioctl_disk_set_drive_layout_ex.htm
-old-project : storage
-ms.assetid : ef0da533-4514-4de4-a4d2-8a0f1b5de12f
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_disk_set_drive_layout_ex, IOCTL_DISK_SET_DRIVE_LAYOUT_EX control code [Storage Devices], IOCTL_DISK_SET_DRIVE_LAYOUT_EX, ntdddisk/IOCTL_DISK_SET_DRIVE_LAYOUT_EX, k307_4f25801a-eda0-42b1-9969-47f01f39c3fb.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntdddisk.h
-req.include-header : Ntdddisk.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DETECTION_TYPE
+UID: NI:ntdddisk.IOCTL_DISK_SET_DRIVE_LAYOUT_EX
+title: IOCTL_DISK_SET_DRIVE_LAYOUT_EX
+author: windows-driver-content
+description: Repartitions a disk as specified. (Floppy drivers need not handle this request.).
+old-location: storage\ioctl_disk_set_drive_layout_ex.htm
+old-project: storage
+ms.assetid: ef0da533-4514-4de4-a4d2-8a0f1b5de12f
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_disk_set_drive_layout_ex, IOCTL_DISK_SET_DRIVE_LAYOUT_EX control code [Storage Devices], IOCTL_DISK_SET_DRIVE_LAYOUT_EX, ntdddisk/IOCTL_DISK_SET_DRIVE_LAYOUT_EX, k307_4f25801a-eda0-42b1-9969-47f01f39c3fb.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntdddisk.h
+req.include-header: Ntdddisk.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntdddisk.h
+apiname:
+-	IOCTL_DISK_SET_DRIVE_LAYOUT_EX
+product: Windows
+targetos: Windows
+req.typenames: DETECTION_TYPE
 ---
 
 # IOCTL_DISK_SET_DRIVE_LAYOUT_EX IOCTL

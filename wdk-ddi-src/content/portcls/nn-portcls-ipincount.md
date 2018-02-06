@@ -1,41 +1,46 @@
 ---
-UID : NN:portcls.IPinCount
-title : IPinCount
-author : windows-driver-content
-description : The IPinCount interface provides a means for the miniport driver to monitor and manipulate its pin counts dynamically as pins are instantiated and closed.
-old-location : audio\ipincount.htm
-old-project : audio
-ms.assetid : 9e02584a-4c65-4400-b06e-58ba095c8dd0
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : audio.ipincount, IPinCount interface [Audio Devices], IPinCount interface [Audio Devices], described, IPinCount, portcls/IPinCount, audmp-routines_05698591-4c80-4f02-a420-a87afff949ad.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : portcls.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Portcls.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NN:portcls.IPinCount
+title: IPinCount
+author: windows-driver-content
+description: The IPinCount interface provides a means for the miniport driver to monitor and manipulate its pin counts dynamically as pins are instantiated and closed.
+old-location: audio\ipincount.htm
+old-project: audio
+ms.assetid: 9e02584a-4c65-4400-b06e-58ba095c8dd0
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: audio.ipincount, IPinCount interface [Audio Devices], IPinCount interface [Audio Devices], described, IPinCount, portcls/IPinCount, audmp-routines_05698591-4c80-4f02-a420-a87afff949ad.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: portcls.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Portcls.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	portcls.h
+apiname:
+-	IPinCount
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 # IPinCount interface

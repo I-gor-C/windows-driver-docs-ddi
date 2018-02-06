@@ -1,42 +1,47 @@
 ---
-UID : NC:udecxusbdevice.EVT_UDECX_USB_DEVICE_ENDPOINT_ADD
-title : EVT_UDECX_USB_DEVICE_ENDPOINT_ADD
-author : windows-driver-content
-description : The USB device emulation class extension (UdeCx) invokes this callback function to request the client driver to create a dynamic endpoint on the virtual USB device.
-old-location : buses\evt_udecx_usb_device_endpoint_add.htm
-old-project : usbref
-ms.assetid : 82E17C75-BE81-4263-AC04-D3C93505917D
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : buses.evt_udecx_usb_device_endpoint_add, EvtUsbDeviceEndpointAdd callback function [Buses], EvtUsbDeviceEndpointAdd, EVT_UDECX_USB_DEVICE_ENDPOINT_ADD, EVT_UDECX_USB_DEVICE_ENDPOINT_ADD, udecxusbdevice/EvtUsbDeviceEndpointAdd
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : udecxusbdevice.h
-req.include-header : Udecx.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 1.15
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : USB_DEVICE_PORT_PATH, *PUSB_DEVICE_PORT_PATH
-req.product : Windows 10 or later.
+UID: NC:udecxusbdevice.EVT_UDECX_USB_DEVICE_ENDPOINT_ADD
+title: EVT_UDECX_USB_DEVICE_ENDPOINT_ADD
+author: windows-driver-content
+description: The USB device emulation class extension (UdeCx) invokes this callback function to request the client driver to create a dynamic endpoint on the virtual USB device.
+old-location: buses\evt_udecx_usb_device_endpoint_add.htm
+old-project: usbref
+ms.assetid: 82E17C75-BE81-4263-AC04-D3C93505917D
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: buses.evt_udecx_usb_device_endpoint_add, EvtUsbDeviceEndpointAdd callback function [Buses], EvtUsbDeviceEndpointAdd, EVT_UDECX_USB_DEVICE_ENDPOINT_ADD, EVT_UDECX_USB_DEVICE_ENDPOINT_ADD, udecxusbdevice/EvtUsbDeviceEndpointAdd
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: udecxusbdevice.h
+req.include-header: Udecx.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 1.15
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	UdecxUsbDevice.h
+apiname:
+-	EvtUsbDeviceEndpointAdd
+product: Windows
+targetos: Windows
+req.typenames: USB_DEVICE_PORT_PATH, *PUSB_DEVICE_PORT_PATH
+req.product: Windows 10 or later.
 ---
 
 

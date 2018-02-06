@@ -1,42 +1,47 @@
 ---
-UID : NS:rilapitypes.RILSENDUICCTOOLKITENVELOPEPARAMS
-title : RILSENDUICCTOOLKITENVELOPEPARAMS
-author : windows-driver-content
-description : This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
-old-location : netvista\rilsenduicctoolkitenvelopeparams_2.htm
-old-project : netvista
-ms.assetid : 17bf24fe-bee5-4e08-8e3f-b9d4a03e147e
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.rilsenduicctoolkitenvelopeparams_2, rilapitypes/RILSENDUICCTOOLKITENVELOPEPARAMS, *LPRILSENDUICCTOOLKITENVELOPEPARAMS, RILSENDUICCTOOLKITENVELOPEPARAMS, RILSENDUICCTOOLKITENVELOPEPARAMS structure [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : rilapitypes.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*LPRILSENDUICCTOOLKITENVELOPEPARAMS, RILSENDUICCTOOLKITENVELOPEPARAMS"
-req.product : Windows 10 or later.
+UID: NS:rilapitypes.RILSENDUICCTOOLKITENVELOPEPARAMS
+title: RILSENDUICCTOOLKITENVELOPEPARAMS
+author: windows-driver-content
+description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+old-location: netvista\rilsenduicctoolkitenvelopeparams_2.htm
+old-project: netvista
+ms.assetid: 17bf24fe-bee5-4e08-8e3f-b9d4a03e147e
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.rilsenduicctoolkitenvelopeparams_2, rilapitypes/RILSENDUICCTOOLKITENVELOPEPARAMS, *LPRILSENDUICCTOOLKITENVELOPEPARAMS, RILSENDUICCTOOLKITENVELOPEPARAMS, RILSENDUICCTOOLKITENVELOPEPARAMS structure [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: rilapitypes.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	rilapitypes.h
+apiname:
+-	RILSENDUICCTOOLKITENVELOPEPARAMS
+product: Windows
+targetos: Windows
+req.typenames: "*LPRILSENDUICCTOOLKITENVELOPEPARAMS, RILSENDUICCTOOLKITENVELOPEPARAMS"
+req.product: Windows 10 or later.
 ---
 
 # RILSENDUICCTOOLKITENVELOPEPARAMS structure

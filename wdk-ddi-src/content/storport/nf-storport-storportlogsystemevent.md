@@ -1,42 +1,47 @@
 ---
-UID : NF:storport.StorPortLogSystemEvent
-title : StorPortLogSystemEvent function
-author : windows-driver-content
-description : The StorPortLogSystemEvent routine gives miniport drivers full access to the capabilities of the Windows kernel event facility, enabling miniport drivers to create event log entries that are truly useful in troubleshooting storage issues.
-old-location : storage\storportlogsystemevent.htm
-old-project : storage
-ms.assetid : 720245ff-8c97-4b8d-8406-f6b712fa74c9
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storport/StorPortLogSystemEvent, storage.storportlogsystemevent, storprt_15a23037-a0e9-4768-ab20-80d6fe7d8a56.xml, StorPortLogSystemEvent, StorPortLogSystemEvent routine [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : StorPortIrql
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STOR_SPINLOCK
-req.product : Windows 10 or later.
+UID: NF:storport.StorPortLogSystemEvent
+title: StorPortLogSystemEvent function
+author: windows-driver-content
+description: The StorPortLogSystemEvent routine gives miniport drivers full access to the capabilities of the Windows kernel event facility, enabling miniport drivers to create event log entries that are truly useful in troubleshooting storage issues.
+old-location: storage\storportlogsystemevent.htm
+old-project: storage
+ms.assetid: 720245ff-8c97-4b8d-8406-f6b712fa74c9
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storport/StorPortLogSystemEvent, storage.storportlogsystemevent, storprt_15a23037-a0e9-4768-ab20-80d6fe7d8a56.xml, StorPortLogSystemEvent, StorPortLogSystemEvent routine [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: StorPortIrql
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	storport.h
+apiname:
+-	StorPortLogSystemEvent
+product: Windows
+targetos: Windows
+req.typenames: STOR_SPINLOCK
+req.product: Windows 10 or later.
 ---
 
 

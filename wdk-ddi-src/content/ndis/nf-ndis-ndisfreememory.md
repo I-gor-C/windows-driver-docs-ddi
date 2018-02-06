@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisFreeMemory
-title : NdisFreeMemory function
-author : windows-driver-content
-description : The NdisFreeMemory function releases a block of memory that was previously allocated with the NdisAllocateMemoryWithTagPriority function.
-old-location : netvista\ndisfreememory.htm
-old-project : netvista
-ms.assetid : 0096fef7-2a5a-45cd-8e54-dc1ec0e84237
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NdisFreeMemory, ndis/NdisFreeMemory, NdisFreeMemory function [Network Drivers Starting with Windows Vista], netvista.ndisfreememory, ndis_memory_ref_a178b0d7-8966-4356-8f63-3293605a6655.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisFreeMemory (NDIS 5.1)) in   Windows Vista. Supported for NDIS 5.1 drivers (see    NdisFreeMemory (NDIS 5.1)) in   Windows XP.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_Miscellaneous_Function, NdisQueryBindInstanceName
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : See Remarks section
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisFreeMemory
+title: NdisFreeMemory function
+author: windows-driver-content
+description: The NdisFreeMemory function releases a block of memory that was previously allocated with the NdisAllocateMemoryWithTagPriority function.
+old-location: netvista\ndisfreememory.htm
+old-project: netvista
+ms.assetid: 0096fef7-2a5a-45cd-8e54-dc1ec0e84237
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NdisFreeMemory, ndis/NdisFreeMemory, NdisFreeMemory function [Network Drivers Starting with Windows Vista], netvista.ndisfreememory, ndis_memory_ref_a178b0d7-8966-4356-8f63-3293605a6655.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisFreeMemory (NDIS 5.1)) in   Windows Vista. Supported for NDIS 5.1 drivers (see    NdisFreeMemory (NDIS 5.1)) in   Windows XP.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_Miscellaneous_Function, NdisQueryBindInstanceName
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: See Remarks section
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisFreeMemory
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

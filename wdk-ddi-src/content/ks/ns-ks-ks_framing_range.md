@@ -1,41 +1,46 @@
 ---
-UID : NS:ks.KS_FRAMING_RANGE
-title : KS_FRAMING_RANGE
-author : windows-driver-content
-description : The KS_FRAMING_RANGE structure specifies a range for frame sizes for a given framing item.
-old-location : stream\ks_framing_range.htm
-old-project : stream
-ms.assetid : 3263b290-2966-4e19-9828-b91e7b2efa55
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KS_FRAMING_RANGE, PKS_FRAMING_RANGE, ks/KS_FRAMING_RANGE, PKS_FRAMING_RANGE structure pointer [Streaming Media Devices], ks/PKS_FRAMING_RANGE, ks-struct_a489de91-e530-4185-9344-0ab4fe426cc8.xml, KS_FRAMING_RANGE structure [Streaming Media Devices], stream.ks_framing_range, *PKS_FRAMING_RANGE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KS_FRAMING_RANGE, *PKS_FRAMING_RANGE
+UID: NS:ks.KS_FRAMING_RANGE
+title: KS_FRAMING_RANGE
+author: windows-driver-content
+description: The KS_FRAMING_RANGE structure specifies a range for frame sizes for a given framing item.
+old-location: stream\ks_framing_range.htm
+old-project: stream
+ms.assetid: 3263b290-2966-4e19-9828-b91e7b2efa55
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KS_FRAMING_RANGE, PKS_FRAMING_RANGE, ks/KS_FRAMING_RANGE, PKS_FRAMING_RANGE structure pointer [Streaming Media Devices], ks/PKS_FRAMING_RANGE, ks-struct_a489de91-e530-4185-9344-0ab4fe426cc8.xml, KS_FRAMING_RANGE structure [Streaming Media Devices], stream.ks_framing_range, *PKS_FRAMING_RANGE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	KS_FRAMING_RANGE
+product: Windows
+targetos: Windows
+req.typenames: KS_FRAMING_RANGE, *PKS_FRAMING_RANGE
 ---
 
 # KS_FRAMING_RANGE structure

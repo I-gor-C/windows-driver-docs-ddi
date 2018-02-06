@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.KSPROPERTY_TUNER_FREQUENCY_S
-title : KSPROPERTY_TUNER_FREQUENCY_S
-author : windows-driver-content
-description : The KSPROPERTY_TUNER_FREQUENCY_S structure describes the frequency of a TV or radio tuner device.
-old-location : stream\ksproperty_tuner_frequency_s.htm
-old-project : stream
-ms.assetid : 19d2c3cc-69e3-4216-9eb7-32b522fe058b
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : PKSPROPERTY_TUNER_FREQUENCY_S structure pointer [Streaming Media Devices], vidcapstruct_7757eed6-a41b-4bcd-ad7b-05aca3b54cd0.xml, *PKSPROPERTY_TUNER_FREQUENCY_S, KSPROPERTY_TUNER_FREQUENCY_S, PKSPROPERTY_TUNER_FREQUENCY_S, KSPROPERTY_TUNER_FREQUENCY_S structure [Streaming Media Devices], ksmedia/KSPROPERTY_TUNER_FREQUENCY_S, stream.ksproperty_tuner_frequency_s, ksmedia/PKSPROPERTY_TUNER_FREQUENCY_S
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KSPROPERTY_TUNER_FREQUENCY_S, *PKSPROPERTY_TUNER_FREQUENCY_S
+UID: NS:ksmedia.KSPROPERTY_TUNER_FREQUENCY_S
+title: KSPROPERTY_TUNER_FREQUENCY_S
+author: windows-driver-content
+description: The KSPROPERTY_TUNER_FREQUENCY_S structure describes the frequency of a TV or radio tuner device.
+old-location: stream\ksproperty_tuner_frequency_s.htm
+old-project: stream
+ms.assetid: 19d2c3cc-69e3-4216-9eb7-32b522fe058b
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: PKSPROPERTY_TUNER_FREQUENCY_S structure pointer [Streaming Media Devices], vidcapstruct_7757eed6-a41b-4bcd-ad7b-05aca3b54cd0.xml, *PKSPROPERTY_TUNER_FREQUENCY_S, KSPROPERTY_TUNER_FREQUENCY_S, PKSPROPERTY_TUNER_FREQUENCY_S, KSPROPERTY_TUNER_FREQUENCY_S structure [Streaming Media Devices], ksmedia/KSPROPERTY_TUNER_FREQUENCY_S, stream.ksproperty_tuner_frequency_s, ksmedia/PKSPROPERTY_TUNER_FREQUENCY_S
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	KSPROPERTY_TUNER_FREQUENCY_S
+product: Windows
+targetos: Windows
+req.typenames: KSPROPERTY_TUNER_FREQUENCY_S, *PKSPROPERTY_TUNER_FREQUENCY_S
 ---
 
 # KSPROPERTY_TUNER_FREQUENCY_S structure

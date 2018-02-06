@@ -1,41 +1,46 @@
 ---
-UID : NS:netdispumdddi.MIRACAST_DATARATE_STATS
-title : MIRACAST_DATARATE_STATS
-author : windows-driver-content
-description : Contains info used in the wireless display (Miracast) pfnDataRateNotify function about the audio/video encoder bit rate and failed or retried Wi-Fi frames.
-old-location : display\miracast_datarate_stats.htm
-old-project : display
-ms.assetid : d4249b81-0ee7-49dd-9886-cdc5842f02d8
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : netdispumdddi/MIRACAST_DATARATE_STATS, display.miracast_datarate_stats, MIRACAST_DATARATE_STATS, MIRACAST_DATARATE_STATS structure [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : netdispumdddi.h
-req.include-header : Netdispumdddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8.1
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : MIRACAST_DATARATE_STATS
+UID: NS:netdispumdddi.MIRACAST_DATARATE_STATS
+title: MIRACAST_DATARATE_STATS
+author: windows-driver-content
+description: Contains info used in the wireless display (Miracast) pfnDataRateNotify function about the audio/video encoder bit rate and failed or retried Wi-Fi frames.
+old-location: display\miracast_datarate_stats.htm
+old-project: display
+ms.assetid: d4249b81-0ee7-49dd-9886-cdc5842f02d8
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: netdispumdddi/MIRACAST_DATARATE_STATS, display.miracast_datarate_stats, MIRACAST_DATARATE_STATS, MIRACAST_DATARATE_STATS structure [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: netdispumdddi.h
+req.include-header: Netdispumdddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8.1
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Netdispumdddi.h
+apiname:
+-	MIRACAST_DATARATE_STATS
+product: Windows
+targetos: Windows
+req.typenames: MIRACAST_DATARATE_STATS
 ---
 
 # MIRACAST_DATARATE_STATS structure

@@ -1,42 +1,50 @@
 ---
-UID : NF:srb.ScsiPortNotification
-title : ScsiPortNotification function
-author : windows-driver-content
-description : The ScsiPortNotification routine informs the operating system-specific port driver of certain events, such as when a miniport driver completes a request or is ready to start another SRB, as well as when the HBA indicates certain SCSI error conditions that occurred during an operation.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. Instead, we recommend using the Storport driver and Storport miniport driver models.
-old-location : storage\scsiportnotification.htm
-old-project : storage
-ms.assetid : 27da3881-4c47-492c-868e-ce72210e9d6f
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : srb/ScsiPortNotification, ScsiPortNotification routine [Storage Devices], storage.scsiportnotification, scsiprt_0e410e4a-e7bb-448b-9d4d-c2a5db63fe02.xml, ScsiPortNotification
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : srb.h
-req.include-header : Miniport.h, Scsi.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Scsiport.lib; Storport.lib
-req.dll : 
-req.irql : "(See Remarks section)"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SPB_CONTROLLER_CONFIG, *PSPB_CONTROLLER_CONFIG
-req.product : Windows 10 or later.
+UID: NF:srb.ScsiPortNotification
+title: ScsiPortNotification function
+author: windows-driver-content
+description: The ScsiPortNotification routine informs the operating system-specific port driver of certain events, such as when a miniport driver completes a request or is ready to start another SRB, as well as when the HBA indicates certain SCSI error conditions that occurred during an operation.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. Instead, we recommend using the Storport driver and Storport miniport driver models.
+old-location: storage\scsiportnotification.htm
+old-project: storage
+ms.assetid: 27da3881-4c47-492c-868e-ce72210e9d6f
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: srb/ScsiPortNotification, ScsiPortNotification routine [Storage Devices], storage.scsiportnotification, scsiprt_0e410e4a-e7bb-448b-9d4d-c2a5db63fe02.xml, ScsiPortNotification
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: srb.h
+req.include-header: Miniport.h, Scsi.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Scsiport.lib; Storport.lib
+req.dll: 
+req.irql: "(See Remarks section)"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	scsiport.lib
+-	scsiport.dll
+-	storport.lib
+-	storport.dll
+apiname:
+-	ScsiPortNotification
+product: Windows
+targetos: Windows
+req.typenames: SPB_CONTROLLER_CONFIG, *PSPB_CONTROLLER_CONFIG
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NF:vmbuskernelmodeclientlibapi.VmbChannelSaveEnd
-title : VmbChannelSaveEnd function
-author : windows-driver-content
-description : The VmbChannelSaveEnd function cleans up any resources that were allocated for saving state of a channel.
-old-location : netvista\vmbchannelsaveend.htm
-old-project : netvista
-ms.assetid : 0E61AF98-DC71-4234-B337-71B2AF65D858
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : VmbChannelSaveEnd, netvista.vmbchannelsaveend, vmbuskernelmodeclientlibapi/VmbChannelSaveEnd, VmbChannelSaveEnd function [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : vmbuskernelmodeclientlibapi.h
-req.include-header : VmbusKernelModeClientLibApi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8.1
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 1.13
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PVIDEO_PORT_AGP_SERVICES, VIDEO_PORT_AGP_SERVICES"
-req.product : Windows 10 or later.
+UID: NF:vmbuskernelmodeclientlibapi.VmbChannelSaveEnd
+title: VmbChannelSaveEnd function
+author: windows-driver-content
+description: The VmbChannelSaveEnd function cleans up any resources that were allocated for saving state of a channel.
+old-location: netvista\vmbchannelsaveend.htm
+old-project: netvista
+ms.assetid: 0E61AF98-DC71-4234-B337-71B2AF65D858
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: VmbChannelSaveEnd, netvista.vmbchannelsaveend, vmbuskernelmodeclientlibapi/VmbChannelSaveEnd, VmbChannelSaveEnd function [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: vmbuskernelmodeclientlibapi.h
+req.include-header: VmbusKernelModeClientLibApi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8.1
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 1.13
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	VmbusKernelModeClientLibApi.h
+apiname:
+-	VmbChannelSaveEnd
+product: Windows
+targetos: Windows
+req.typenames: "*PVIDEO_PORT_AGP_SERVICES, VIDEO_PORT_AGP_SERVICES"
+req.product: Windows 10 or later.
 ---
 
 

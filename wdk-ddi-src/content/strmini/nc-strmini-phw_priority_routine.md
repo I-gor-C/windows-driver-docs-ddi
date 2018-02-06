@@ -1,42 +1,47 @@
 ---
-UID : NC:strmini.PHW_PRIORITY_ROUTINE
-title : PHW_PRIORITY_ROUTINE
-author : windows-driver-content
-description : StrMiniPriorityRoutine is a minidriver-supplied callback routine to be executed at a specified priority level.
-old-location : stream\strminipriorityroutine.htm
-old-project : stream
-ms.assetid : 775ab6aa-eda7-4774-8fe8-8b1838b3972f
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.strminipriorityroutine, StrMiniPriorityRoutine routine [Streaming Media Devices], StrMiniPriorityRoutine, PHW_PRIORITY_ROUTINE, PHW_PRIORITY_ROUTINE, strmini/StrMiniPriorityRoutine, strmini-routines_718339c9-e072-4d3e-a9ec-a0ce2cce4f90.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : strmini.h
-req.include-header : Strmini.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PZONE_DESCRIPTIOR, ZONE_DESCRIPTIOR"
-req.product : Windows 10 or later.
+UID: NC:strmini.PHW_PRIORITY_ROUTINE
+title: PHW_PRIORITY_ROUTINE
+author: windows-driver-content
+description: StrMiniPriorityRoutine is a minidriver-supplied callback routine to be executed at a specified priority level.
+old-location: stream\strminipriorityroutine.htm
+old-project: stream
+ms.assetid: 775ab6aa-eda7-4774-8fe8-8b1838b3972f
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.strminipriorityroutine, StrMiniPriorityRoutine routine [Streaming Media Devices], StrMiniPriorityRoutine, PHW_PRIORITY_ROUTINE, PHW_PRIORITY_ROUTINE, strmini/StrMiniPriorityRoutine, strmini-routines_718339c9-e072-4d3e-a9ec-a0ce2cce4f90.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: strmini.h
+req.include-header: Strmini.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	strmini.h
+apiname:
+-	StrMiniPriorityRoutine
+product: Windows
+targetos: Windows
+req.typenames: "*PZONE_DESCRIPTIOR, ZONE_DESCRIPTIOR"
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,42 +1,50 @@
 ---
-UID : NF:wdfiotarget.WdfIoTargetOpen
-title : WdfIoTargetOpen function
-author : windows-driver-content
-description : The WdfIoTargetOpen method opens a remote I/O target so the driver can send I/O requests to it.
-old-location : wdf\wdfiotargetopen.htm
-old-project : wdf
-ms.assetid : 6ea2e6dd-9794-4214-8fb1-db563f49b33a
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WdfIoTargetOpen method, DFIOTargetRef_72899f0c-58db-461c-b02c-5e99d5a0f875.xml, kmdf.wdfiotargetopen, WdfIoTargetOpen, wdfiotarget/WdfIoTargetOpen, PFN_WDFIOTARGETOPEN, wdf.wdfiotargetopen
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfiotarget.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDF_IO_TARGET_STATE, WDF_IO_TARGET_STATE"
-req.product : Windows 10 or later.
+UID: NF:wdfiotarget.WdfIoTargetOpen
+title: WdfIoTargetOpen function
+author: windows-driver-content
+description: The WdfIoTargetOpen method opens a remote I/O target so the driver can send I/O requests to it.
+old-location: wdf\wdfiotargetopen.htm
+old-project: wdf
+ms.assetid: 6ea2e6dd-9794-4214-8fb1-db563f49b33a
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WdfIoTargetOpen method, DFIOTargetRef_72899f0c-58db-461c-b02c-5e99d5a0f875.xml, kmdf.wdfiotargetopen, WdfIoTargetOpen, wdfiotarget/WdfIoTargetOpen, PFN_WDFIOTARGETOPEN, wdf.wdfiotargetopen
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfiotarget.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+-	WUDFx02000.dll
+-	WUDFx02000.dll.dll
+apiname:
+-	WdfIoTargetOpen
+product: Windows
+targetos: Windows
+req.typenames: "*PWDF_IO_TARGET_STATE, WDF_IO_TARGET_STATE"
+req.product: Windows 10 or later.
 ---
 
 

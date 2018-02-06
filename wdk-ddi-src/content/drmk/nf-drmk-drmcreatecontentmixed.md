@@ -1,41 +1,47 @@
 ---
-UID : NF:drmk.DrmCreateContentMixed
-title : DrmCreateContentMixed function
-author : windows-driver-content
-description : The DrmCreateContentMixed function creates a DRM content ID to identify a KS audio stream containing mixed content from a number of streams.
-old-location : audio\drmcreatecontentmixed.htm
-old-project : audio
-ms.assetid : cec501d9-17e3-46a1-929e-4f9ba35ba721
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : aud-prop2_19a8815e-db9d-43a9-ad5a-c081a1af4f99.xml, drmk/DrmCreateContentMixed, DrmCreateContentMixed, audio.drmcreatecontentmixed, DrmCreateContentMixed function [Audio Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : drmk.h
-req.include-header : Drmk.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Drmk.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDI_TX_METADATA, *PWDI_TX_METADATA
+UID: NF:drmk.DrmCreateContentMixed
+title: DrmCreateContentMixed function
+author: windows-driver-content
+description: The DrmCreateContentMixed function creates a DRM content ID to identify a KS audio stream containing mixed content from a number of streams.
+old-location: audio\drmcreatecontentmixed.htm
+old-project: audio
+ms.assetid: cec501d9-17e3-46a1-929e-4f9ba35ba721
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: aud-prop2_19a8815e-db9d-43a9-ad5a-c081a1af4f99.xml, drmk/DrmCreateContentMixed, DrmCreateContentMixed, audio.drmcreatecontentmixed, DrmCreateContentMixed function [Audio Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: drmk.h
+req.include-header: Drmk.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Drmk.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Drmk.lib
+-	Drmk.dll
+apiname:
+-	DrmCreateContentMixed
+product: Windows
+targetos: Windows
+req.typenames: WDI_TX_METADATA, *PWDI_TX_METADATA
 ---
 
 

@@ -1,41 +1,47 @@
 ---
-UID : NF:ntifs.ZwCreateEvent
-title : ZwCreateEvent function
-author : windows-driver-content
-description : The ZwCreateEvent routine creates an event object, sets the initial state of the event to the specified value, and opens a handle to the object with the specified desired access.
-old-location : kernel\zwcreateevent.htm
-old-project : kernel
-ms.assetid : c11265fb-df9d-405e-ac9f-e868ab392e7b
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ntifs/NtCreateEvent, ntifs/ZwCreateEvent, ZwCreateEvent, NtCreateEvent, kernel.zwcreateevent, ZwCreateEvent routine [Kernel-Mode Driver Architecture], k111_53554a99-3112-4f70-8c00-9d632a74d15b.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows XP.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.ZwCreateEvent
+title: ZwCreateEvent function
+author: windows-driver-content
+description: The ZwCreateEvent routine creates an event object, sets the initial state of the event to the specified value, and opens a handle to the object with the specified desired access.
+old-location: kernel\zwcreateevent.htm
+old-project: kernel
+ms.assetid: c11265fb-df9d-405e-ac9f-e868ab392e7b
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ntifs/NtCreateEvent, ntifs/ZwCreateEvent, ZwCreateEvent, NtCreateEvent, kernel.zwcreateevent, ZwCreateEvent routine [Kernel-Mode Driver Architecture], k111_53554a99-3112-4f70-8c00-9d632a74d15b.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows XP.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ZwCreateEvent
+-	NtCreateEvent
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

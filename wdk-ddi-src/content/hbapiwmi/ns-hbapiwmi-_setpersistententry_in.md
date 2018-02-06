@@ -1,41 +1,46 @@
 ---
-UID : NS:hbapiwmi._SetPersistentEntry_IN
-title : "_SetPersistentEntry_IN"
-author : windows-driver-content
-description : The SetPersistentEntry_IN structure is used by a WMI client to deliver the input parameter data of the SetPersistentEntry WMI method to the HBA miniport driver.
-old-location : storage\setpersistententry_in.htm
-old-project : storage
-ms.assetid : f088a623-e6e8-4810-a7ab-90348f669dac
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : hbapiwmi/PSetPersistentEntry_IN, PSetPersistentEntry_IN, _SetPersistentEntry_IN, PSetPersistentEntry_IN structure pointer [Storage Devices], SetPersistentEntry_IN structure [Storage Devices], structs-Fibre_7382da5e-059a-4e11-9db7-dbc3dae24928.xml, storage.setpersistententry_in, SetPersistentEntry_IN, *PSetPersistentEntry_IN, hbapiwmi/SetPersistentEntry_IN
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : hbapiwmi.h
-req.include-header : Hbapiwmi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSetPersistentEntry_IN, SetPersistentEntry_IN"
+UID: NS:hbapiwmi._SetPersistentEntry_IN
+title: "_SetPersistentEntry_IN"
+author: windows-driver-content
+description: The SetPersistentEntry_IN structure is used by a WMI client to deliver the input parameter data of the SetPersistentEntry WMI method to the HBA miniport driver.
+old-location: storage\setpersistententry_in.htm
+old-project: storage
+ms.assetid: f088a623-e6e8-4810-a7ab-90348f669dac
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: hbapiwmi/PSetPersistentEntry_IN, PSetPersistentEntry_IN, _SetPersistentEntry_IN, PSetPersistentEntry_IN structure pointer [Storage Devices], SetPersistentEntry_IN structure [Storage Devices], structs-Fibre_7382da5e-059a-4e11-9db7-dbc3dae24928.xml, storage.setpersistententry_in, SetPersistentEntry_IN, *PSetPersistentEntry_IN, hbapiwmi/SetPersistentEntry_IN
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: hbapiwmi.h
+req.include-header: Hbapiwmi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hbapiwmi.h
+apiname:
+-	SetPersistentEntry_IN
+product: Windows
+targetos: Windows
+req.typenames: "*PSetPersistentEntry_IN, SetPersistentEntry_IN"
 ---
 
 # _SetPersistentEntry_IN structure

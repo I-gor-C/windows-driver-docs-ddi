@@ -1,42 +1,47 @@
 ---
-UID : NN:wudfusb.IWDFUsbRequestCompletionParams
-title : IWDFUsbRequestCompletionParams
-author : windows-driver-content
-description : The IWDFUsbRequestCompletionParams interface exposes the parameters object for the completion of a USB request object. The parameters object is primarily required for asynchronous I/O and layered drivers.
-old-location : wdf\iwdfusbrequestcompletionparams.htm
-old-project : wdf
-ms.assetid : 50a0c8c9-06c6-48c9-a799-0949cf415f6e
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.iwdfusbrequestcompletionparams, IWDFUsbRequestCompletionParams interface, IWDFUsbRequestCompletionParams interface, described, IWDFUsbRequestCompletionParams, wudfusb/IWDFUsbRequestCompletionParams, UMDFRequestObjectRef_f55ce370-f488-405f-a104-9a85fcab6cbb.xml, umdf.iwdfusbrequestcompletionparams
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : wudfusb.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.5
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfusb.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
-req.product : Windows 10 or later.
+UID: NN:wudfusb.IWDFUsbRequestCompletionParams
+title: IWDFUsbRequestCompletionParams
+author: windows-driver-content
+description: The IWDFUsbRequestCompletionParams interface exposes the parameters object for the completion of a USB request object. The parameters object is primarily required for asynchronous I/O and layered drivers.
+old-location: wdf\iwdfusbrequestcompletionparams.htm
+old-project: wdf
+ms.assetid: 50a0c8c9-06c6-48c9-a799-0949cf415f6e
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.iwdfusbrequestcompletionparams, IWDFUsbRequestCompletionParams interface, IWDFUsbRequestCompletionParams interface, described, IWDFUsbRequestCompletionParams, wudfusb/IWDFUsbRequestCompletionParams, UMDFRequestObjectRef_f55ce370-f488-405f-a104-9a85fcab6cbb.xml, umdf.iwdfusbrequestcompletionparams
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: wudfusb.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.5
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfusb.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFUsbRequestCompletionParams
+product: Windows
+targetos: Windows
+req.typenames: WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
+req.product: Windows 10 or later.
 ---
 
 # IWDFUsbRequestCompletionParams interface

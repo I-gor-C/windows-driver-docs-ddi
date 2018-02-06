@@ -1,41 +1,47 @@
 ---
-UID : NF:hidpi.HidP_GetData
-title : HidP_GetData function
-author : windows-driver-content
-description : The HidP_GetData routine returns, for a specified report, an array of HIDP_DATA structures that identify the data indices of all HID control buttons that are currently set to ON (1), and the data indices and data associated with all HID control values.
-old-location : hid\hidp_getdata.htm
-old-project : hid
-ms.assetid : 37cbd329-81c3-40ef-be42-4a64c4a1ec3a
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : hidpi/HidP_GetData, hidfunc_7d8a50f7-0ed4-4ba7-9ca4-70204c2a2699.xml, HidP_GetData, HidP_GetData routine [Human Input Devices], hid.hidp_getdata
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : hidpi.h
-req.include-header : Hidpi.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 2000 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Hidparse.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HIDP_REPORT_TYPE
+UID: NF:hidpi.HidP_GetData
+title: HidP_GetData function
+author: windows-driver-content
+description: The HidP_GetData routine returns, for a specified report, an array of HIDP_DATA structures that identify the data indices of all HID control buttons that are currently set to ON (1), and the data indices and data associated with all HID control values.
+old-location: hid\hidp_getdata.htm
+old-project: hid
+ms.assetid: 37cbd329-81c3-40ef-be42-4a64c4a1ec3a
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: hidpi/HidP_GetData, hidfunc_7d8a50f7-0ed4-4ba7-9ca4-70204c2a2699.xml, HidP_GetData, HidP_GetData routine [Human Input Devices], hid.hidp_getdata
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: hidpi.h
+req.include-header: Hidpi.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 2000 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Hidparse.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Hidparse.lib
+-	Hidparse.dll
+apiname:
+-	HidP_GetData
+product: Windows
+targetos: Windows
+req.typenames: HIDP_REPORT_TYPE
 ---
 
 

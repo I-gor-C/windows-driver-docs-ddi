@@ -1,42 +1,47 @@
 ---
-UID : NC:wmilib.WMI_SET_DATAITEM_CALLBACK
-title : WMI_SET_DATAITEM_CALLBACK
-author : windows-driver-content
-description : The DpWmiSetDataItem routine changes a single data item in an instance of a data block. This routine is optional.
-old-location : kernel\dpwmisetdataitem.htm
-old-project : kernel
-ms.assetid : 409adf29-7f2b-465b-aa2d-28bbcc31a574
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.dpwmisetdataitem, DpWmiSetDataItem, DpWmiSetDataItem callback function [Kernel-Mode Driver Architecture], DpWmiSetDataItem, WMI_SET_DATAITEM_CALLBACK, WMI_SET_DATAITEM_CALLBACK, wmilib/DpWmiSetDataItem, k903_d7afb1fc-f867-4c63-b0d6-8280a41d60f5.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wmilib.h
-req.include-header : Wmilib.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Called at PASSIVE_LEVEL.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WMI_CHANGER_PROBLEM_DEVICE_ERROR, *PWMI_CHANGER_PROBLEM_DEVICE_ERROR
-req.product : Windows 10 or later.
+UID: NC:wmilib.WMI_SET_DATAITEM_CALLBACK
+title: WMI_SET_DATAITEM_CALLBACK
+author: windows-driver-content
+description: The DpWmiSetDataItem routine changes a single data item in an instance of a data block. This routine is optional.
+old-location: kernel\dpwmisetdataitem.htm
+old-project: kernel
+ms.assetid: 409adf29-7f2b-465b-aa2d-28bbcc31a574
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.dpwmisetdataitem, DpWmiSetDataItem, DpWmiSetDataItem callback function [Kernel-Mode Driver Architecture], DpWmiSetDataItem, WMI_SET_DATAITEM_CALLBACK, WMI_SET_DATAITEM_CALLBACK, wmilib/DpWmiSetDataItem, k903_d7afb1fc-f867-4c63-b0d6-8280a41d60f5.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wmilib.h
+req.include-header: Wmilib.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Called at PASSIVE_LEVEL.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Wmilib.h
+apiname:
+-	DpWmiSetDataItem
+product: Windows
+targetos: Windows
+req.typenames: WMI_CHANGER_PROBLEM_DEVICE_ERROR, *PWMI_CHANGER_PROBLEM_DEVICE_ERROR
+req.product: Windows 10 or later.
 ---
 
 

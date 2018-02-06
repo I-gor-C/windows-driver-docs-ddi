@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugControl3.GetPossibleExecutingProcessorTypes
-title : IDebugControl3::GetPossibleExecutingProcessorTypes method
-author : windows-driver-content
-description : The GetPossibleExecutingProcessorTypes method returns the processor types that are supported by the computer running the current target.
-old-location : debugger\getpossibleexecutingprocessortypes.htm
-old-project : debugger
-ms.assetid : fb11b655-2528-447f-9f5e-3c9e4e040156
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : GetPossibleExecutingProcessorTypes, dbgeng/IDebugControl::GetPossibleExecutingProcessorTypes, IDebugControl::GetPossibleExecutingProcessorTypes, dbgeng/IDebugControl3::GetPossibleExecutingProcessorTypes, IDebugControl3, IDebugControl3 interface [Windows Debugging], GetPossibleExecutingProcessorTypes method, IDebugControl3::GetPossibleExecutingProcessorTypes, IDebugControl interface [Windows Debugging], GetPossibleExecutingProcessorTypes method, IDebugControl2 interface [Windows Debugging], GetPossibleExecutingProcessorTypes method, GetPossibleExecutingProcessorTypes method [Windows Debugging], IDebugControl2 interface, IDebugControl2::GetPossibleExecutingProcessorTypes, GetPossibleExecutingProcessorTypes method [Windows Debugging], IDebugControl3 interface, GetPossibleExecutingProcessorTypes method [Windows Debugging], IDebugControl interface, IDebugControl_582811e7-4eb0-4b94-a5d0-8c903ea8c2fe.xml, debugger.getpossibleexecutingprocessortypes, GetPossibleExecutingProcessorTypes method [Windows Debugging], dbgeng/IDebugControl2::GetPossibleExecutingProcessorTypes
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl3.GetPossibleExecutingProcessorTypes
+title: IDebugControl3::GetPossibleExecutingProcessorTypes method
+author: windows-driver-content
+description: The GetPossibleExecutingProcessorTypes method returns the processor types that are supported by the computer running the current target.
+old-location: debugger\getpossibleexecutingprocessortypes.htm
+old-project: debugger
+ms.assetid: fb11b655-2528-447f-9f5e-3c9e4e040156
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: GetPossibleExecutingProcessorTypes, dbgeng/IDebugControl::GetPossibleExecutingProcessorTypes, IDebugControl::GetPossibleExecutingProcessorTypes, dbgeng/IDebugControl3::GetPossibleExecutingProcessorTypes, IDebugControl3, IDebugControl3 interface [Windows Debugging], GetPossibleExecutingProcessorTypes method, IDebugControl3::GetPossibleExecutingProcessorTypes, IDebugControl interface [Windows Debugging], GetPossibleExecutingProcessorTypes method, IDebugControl2 interface [Windows Debugging], GetPossibleExecutingProcessorTypes method, GetPossibleExecutingProcessorTypes method [Windows Debugging], IDebugControl2 interface, IDebugControl2::GetPossibleExecutingProcessorTypes, GetPossibleExecutingProcessorTypes method [Windows Debugging], IDebugControl3 interface, GetPossibleExecutingProcessorTypes method [Windows Debugging], IDebugControl interface, IDebugControl_582811e7-4eb0-4b94-a5d0-8c903ea8c2fe.xml, debugger.getpossibleexecutingprocessortypes, GetPossibleExecutingProcessorTypes method [Windows Debugging], dbgeng/IDebugControl2::GetPossibleExecutingProcessorTypes
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl.GetPossibleExecutingProcessorTypes
+-	IDebugControl2.GetPossibleExecutingProcessorTypes
+-	IDebugControl3.GetPossibleExecutingProcessorTypes
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

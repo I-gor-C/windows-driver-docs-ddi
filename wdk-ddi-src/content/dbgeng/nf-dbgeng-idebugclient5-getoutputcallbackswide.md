@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugClient5.GetOutputCallbacksWide
-title : IDebugClient5::GetOutputCallbacksWide method
-author : windows-driver-content
-description : The GetOutputCallbacksWide method returns the output callbacks object registered with the client.
-old-location : debugger\getoutputcallbackswide.htm
-old-project : debugger
-ms.assetid : b93f756b-50b1-450f-8d70-5d1633b61fcf
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : GetOutputCallbacksWide method [Windows Debugging], dbgeng/IDebugClient5::GetOutputCallbacksWide, GetOutputCallbacksWide method [Windows Debugging], IDebugClient5 interface, IDebugClient5 interface [Windows Debugging], GetOutputCallbacksWide method, IDebugClient5::GetOutputCallbacksWide, debugger.getoutputcallbackswide, GetOutputCallbacksWide, IDebugClient5
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugClient5.GetOutputCallbacksWide
+title: IDebugClient5::GetOutputCallbacksWide method
+author: windows-driver-content
+description: The GetOutputCallbacksWide method returns the output callbacks object registered with the client.
+old-location: debugger\getoutputcallbackswide.htm
+old-project: debugger
+ms.assetid: b93f756b-50b1-450f-8d70-5d1633b61fcf
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: GetOutputCallbacksWide method [Windows Debugging], dbgeng/IDebugClient5::GetOutputCallbacksWide, GetOutputCallbacksWide method [Windows Debugging], IDebugClient5 interface, IDebugClient5 interface [Windows Debugging], GetOutputCallbacksWide method, IDebugClient5::GetOutputCallbacksWide, debugger.getoutputcallbackswide, GetOutputCallbacksWide, IDebugClient5
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugClient5.GetOutputCallbacksWide
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

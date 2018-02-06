@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugControl3.GetNumberPossibleExecutingProcessorTypes
-title : IDebugControl3::GetNumberPossibleExecutingProcessorTypes method
-author : windows-driver-content
-description : The GetNumberPossibleExecutingProcessorTypes method returns the number of processor types that are supported by the computer running the current target.
-old-location : debugger\getnumberpossibleexecutingprocessortypes.htm
-old-project : debugger
-ms.assetid : 9e4ca8a6-f33f-4403-a52f-f242ce40aac8
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugControl_62f066c6-6ffb-4323-ad82-786a8a763783.xml, dbgeng/IDebugControl::GetNumberPossibleExecutingProcessorTypes, GetNumberPossibleExecutingProcessorTypes, IDebugControl interface [Windows Debugging], GetNumberPossibleExecutingProcessorTypes method, GetNumberPossibleExecutingProcessorTypes method [Windows Debugging], dbgeng/IDebugControl2::GetNumberPossibleExecutingProcessorTypes, GetNumberPossibleExecutingProcessorTypes method [Windows Debugging], IDebugControl2 interface, IDebugControl3::GetNumberPossibleExecutingProcessorTypes, IDebugControl3, dbgeng/IDebugControl3::GetNumberPossibleExecutingProcessorTypes, IDebugControl3 interface [Windows Debugging], GetNumberPossibleExecutingProcessorTypes method, debugger.getnumberpossibleexecutingprocessortypes, GetNumberPossibleExecutingProcessorTypes method [Windows Debugging], IDebugControl interface, IDebugControl2 interface [Windows Debugging], GetNumberPossibleExecutingProcessorTypes method, IDebugControl2::GetNumberPossibleExecutingProcessorTypes, IDebugControl::GetNumberPossibleExecutingProcessorTypes, GetNumberPossibleExecutingProcessorTypes method [Windows Debugging], IDebugControl3 interface
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl3.GetNumberPossibleExecutingProcessorTypes
+title: IDebugControl3::GetNumberPossibleExecutingProcessorTypes method
+author: windows-driver-content
+description: The GetNumberPossibleExecutingProcessorTypes method returns the number of processor types that are supported by the computer running the current target.
+old-location: debugger\getnumberpossibleexecutingprocessortypes.htm
+old-project: debugger
+ms.assetid: 9e4ca8a6-f33f-4403-a52f-f242ce40aac8
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugControl_62f066c6-6ffb-4323-ad82-786a8a763783.xml, dbgeng/IDebugControl::GetNumberPossibleExecutingProcessorTypes, GetNumberPossibleExecutingProcessorTypes, IDebugControl interface [Windows Debugging], GetNumberPossibleExecutingProcessorTypes method, GetNumberPossibleExecutingProcessorTypes method [Windows Debugging], dbgeng/IDebugControl2::GetNumberPossibleExecutingProcessorTypes, GetNumberPossibleExecutingProcessorTypes method [Windows Debugging], IDebugControl2 interface, IDebugControl3::GetNumberPossibleExecutingProcessorTypes, IDebugControl3, dbgeng/IDebugControl3::GetNumberPossibleExecutingProcessorTypes, IDebugControl3 interface [Windows Debugging], GetNumberPossibleExecutingProcessorTypes method, debugger.getnumberpossibleexecutingprocessortypes, GetNumberPossibleExecutingProcessorTypes method [Windows Debugging], IDebugControl interface, IDebugControl2 interface [Windows Debugging], GetNumberPossibleExecutingProcessorTypes method, IDebugControl2::GetNumberPossibleExecutingProcessorTypes, IDebugControl::GetNumberPossibleExecutingProcessorTypes, GetNumberPossibleExecutingProcessorTypes method [Windows Debugging], IDebugControl3 interface
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl.GetNumberPossibleExecutingProcessorTypes
+-	IDebugControl2.GetNumberPossibleExecutingProcessorTypes
+-	IDebugControl3.GetNumberPossibleExecutingProcessorTypes
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NS:wdm._FILE_IO_PRIORITY_HINT_INFORMATION
-title : "_FILE_IO_PRIORITY_HINT_INFORMATION"
-author : windows-driver-content
-description : The FILE_IO_PRIORITY_HINT_INFORMATION structure is used by the ZwQueryInformationFile and ZwSetInformationFile routines to query and set the default IRP priority hint for requests on the specified file handle.
-old-location : kernel\file_io_priority_hint_information.htm
-old-project : kernel
-ms.assetid : 55f88d42-8411-49f0-bc40-7ccc268b3cc5
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kstruct_b_babd0cbe-1870-4d71-86c5-06c438691202.xml, _FILE_IO_PRIORITY_HINT_INFORMATION, PFILE_IO_PRIORITY_HINT_INFORMATION structure pointer [Kernel-Mode Driver Architecture], *PFILE_IO_PRIORITY_HINT_INFORMATION, FILE_IO_PRIORITY_HINT_INFORMATION, FILE_IO_PRIORITY_HINT_INFORMATION structure [Kernel-Mode Driver Architecture], PFILE_IO_PRIORITY_HINT_INFORMATION, wdm/PFILE_IO_PRIORITY_HINT_INFORMATION, wdm/FILE_IO_PRIORITY_HINT_INFORMATION, kernel.file_io_priority_hint_information
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FILE_IO_PRIORITY_HINT_INFORMATION, *PFILE_IO_PRIORITY_HINT_INFORMATION
-req.product : Windows 10 or later.
+UID: NS:wdm._FILE_IO_PRIORITY_HINT_INFORMATION
+title: "_FILE_IO_PRIORITY_HINT_INFORMATION"
+author: windows-driver-content
+description: The FILE_IO_PRIORITY_HINT_INFORMATION structure is used by the ZwQueryInformationFile and ZwSetInformationFile routines to query and set the default IRP priority hint for requests on the specified file handle.
+old-location: kernel\file_io_priority_hint_information.htm
+old-project: kernel
+ms.assetid: 55f88d42-8411-49f0-bc40-7ccc268b3cc5
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kstruct_b_babd0cbe-1870-4d71-86c5-06c438691202.xml, _FILE_IO_PRIORITY_HINT_INFORMATION, PFILE_IO_PRIORITY_HINT_INFORMATION structure pointer [Kernel-Mode Driver Architecture], *PFILE_IO_PRIORITY_HINT_INFORMATION, FILE_IO_PRIORITY_HINT_INFORMATION, FILE_IO_PRIORITY_HINT_INFORMATION structure [Kernel-Mode Driver Architecture], PFILE_IO_PRIORITY_HINT_INFORMATION, wdm/PFILE_IO_PRIORITY_HINT_INFORMATION, wdm/FILE_IO_PRIORITY_HINT_INFORMATION, kernel.file_io_priority_hint_information
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	FILE_IO_PRIORITY_HINT_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: FILE_IO_PRIORITY_HINT_INFORMATION, *PFILE_IO_PRIORITY_HINT_INFORMATION
+req.product: Windows 10 or later.
 ---
 
 # _FILE_IO_PRIORITY_HINT_INFORMATION structure

@@ -1,42 +1,48 @@
 ---
-UID : NF:wdm.RtlIsServicePackVersionInstalled
-title : RtlIsServicePackVersionInstalled function
-author : windows-driver-content
-description : The RtlIsServicePackVersionInstalled routine determines if a specified service pack version of the Microsoft Windows device driver interface (DDI) is installed.
-old-location : kernel\rtlisservicepackversioninstalled.htm
-old-project : kernel
-ms.assetid : 1314ffb5-e6e2-4c22-bc67-388da3bcbe79
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : RtlIsServicePackVersionInstalled routine [Kernel-Mode Driver Architecture], RtlIsServicePackVersionInstalled, kernel.rtlisservicepackversioninstalled, wdm/RtlIsServicePackVersionInstalled, k109_1552acd9-7036-45d2-bd1c-57b7a2154ecb.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later versions of Windows. A compatibility library supports this routine in earlier versions of Windows (see Remarks section).
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Rtlver.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.RtlIsServicePackVersionInstalled
+title: RtlIsServicePackVersionInstalled function
+author: windows-driver-content
+description: The RtlIsServicePackVersionInstalled routine determines if a specified service pack version of the Microsoft Windows device driver interface (DDI) is installed.
+old-location: kernel\rtlisservicepackversioninstalled.htm
+old-project: kernel
+ms.assetid: 1314ffb5-e6e2-4c22-bc67-388da3bcbe79
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: RtlIsServicePackVersionInstalled routine [Kernel-Mode Driver Architecture], RtlIsServicePackVersionInstalled, kernel.rtlisservicepackversioninstalled, wdm/RtlIsServicePackVersionInstalled, k109_1552acd9-7036-45d2-bd1c-57b7a2154ecb.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later versions of Windows. A compatibility library supports this routine in earlier versions of Windows (see Remarks section).
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Rtlver.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Rtlver.lib
+-	Rtlver.dll
+apiname:
+-	RtlIsServicePackVersionInstalled
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

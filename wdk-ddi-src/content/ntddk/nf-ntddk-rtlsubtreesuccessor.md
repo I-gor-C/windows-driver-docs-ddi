@@ -1,41 +1,46 @@
 ---
-UID : NF:ntddk.RtlSubtreeSuccessor
-title : RtlSubtreeSuccessor function
-author : windows-driver-content
-description : The RtlSubtreeSuccessor routine returns a pointer to the successor of the specified node within the subtree that is rooted at that node.
-old-location : ifsk\rtlsubtreesuccessor.htm
-old-project : ifsk
-ms.assetid : de592c2a-6f52-48ef-b2ee-253d83cafa80
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : RtlSubtreeSuccessor routine [Installable File System Drivers], rtlref_65e50284-427f-47d9-92c7-719b8bc1bab5.xml, RtlSubtreeSuccessor, ifsk.rtlsubtreesuccessor, ntddk/RtlSubtreeSuccessor
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntddk.h
-req.include-header : Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : This routine is available on Microsoft Windows 2000 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.RtlSubtreeSuccessor
+title: RtlSubtreeSuccessor function
+author: windows-driver-content
+description: The RtlSubtreeSuccessor routine returns a pointer to the successor of the specified node within the subtree that is rooted at that node.
+old-location: ifsk\rtlsubtreesuccessor.htm
+old-project: ifsk
+ms.assetid: de592c2a-6f52-48ef-b2ee-253d83cafa80
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: RtlSubtreeSuccessor routine [Installable File System Drivers], rtlref_65e50284-427f-47d9-92c7-719b8bc1bab5.xml, RtlSubtreeSuccessor, ifsk.rtlsubtreesuccessor, ntddk/RtlSubtreeSuccessor
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntddk.h
+req.include-header: Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: This routine is available on Microsoft Windows 2000 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	RtlSubtreeSuccessor
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

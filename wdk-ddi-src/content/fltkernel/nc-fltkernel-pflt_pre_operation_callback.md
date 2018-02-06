@@ -1,41 +1,46 @@
 ---
-UID : NC:fltkernel.PFLT_PRE_OPERATION_CALLBACK
-title : PFLT_PRE_OPERATION_CALLBACK
-author : windows-driver-content
-description : A minifilter driver's PFLT_PRE_OPERATION_CALLBACK routine performs pre-operation processing for I/O operations.
-old-location : ifsk\pflt_pre_operation_callback.htm
-old-project : ifsk
-ms.assetid : 758a480a-b52c-45e4-8c78-74c805c61e07
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.pflt_pre_operation_callback, PFLT_PRE_OPERATION_CALLBACK function pointer [Installable File System Drivers], PFLT_PRE_OPERATION_CALLBACK, fltkernel/PFLT_PRE_OPERATION_CALLBACK, FltCallbacks_cfde61cc-2054-4263-8697-aa50a1c9d267.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : fltkernel.h
-req.include-header : FltKernel.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Microsoft Windows 2000 Update Rollup 1 for SP4, Windows XP SP2, Windows Server 2003 SP1, and later Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : See Remarks section
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NC:fltkernel.PFLT_PRE_OPERATION_CALLBACK
+title: PFLT_PRE_OPERATION_CALLBACK
+author: windows-driver-content
+description: A minifilter driver's PFLT_PRE_OPERATION_CALLBACK routine performs pre-operation processing for I/O operations.
+old-location: ifsk\pflt_pre_operation_callback.htm
+old-project: ifsk
+ms.assetid: 758a480a-b52c-45e4-8c78-74c805c61e07
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.pflt_pre_operation_callback, PFLT_PRE_OPERATION_CALLBACK function pointer [Installable File System Drivers], PFLT_PRE_OPERATION_CALLBACK, fltkernel/PFLT_PRE_OPERATION_CALLBACK, FltCallbacks_cfde61cc-2054-4263-8697-aa50a1c9d267.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: fltkernel.h
+req.include-header: FltKernel.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Microsoft Windows 2000 Update Rollup 1 for SP4, Windows XP SP2, Windows Server 2003 SP1, and later Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: See Remarks section
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	fltkernel.h
+apiname:
+-	PFLT_PRE_OPERATION_CALLBACK
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

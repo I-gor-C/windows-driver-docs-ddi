@@ -1,41 +1,46 @@
 ---
-UID : NC:dispmprt.DXGKDDI_QUERY_DEVICE_DESCRIPTOR
-title : DXGKDDI_QUERY_DEVICE_DESCRIPTOR
-author : windows-driver-content
-description : The DxgkDdiQueryDeviceDescriptor function returns a descriptor for a child device of a display adapter or for an external device (typically a monitor) connected to a child device of a display adapter.
-old-location : display\dxgkddiquerydevicedescriptor.htm
-old-project : display
-ms.assetid : 0dfcc012-9fff-40b6-b71f-da2ca229896c
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkddiquerydevicedescriptor, DxgkDdiQueryDeviceDescriptor callback function [Display Devices], DxgkDdiQueryDeviceDescriptor, DXGKDDI_QUERY_DEVICE_DESCRIPTOR, DXGKDDI_QUERY_DEVICE_DESCRIPTOR, dispmprt/DxgkDdiQueryDeviceDescriptor, DmFunctions_84688704-46fd-40d6-993e-298c6d3d5dcd.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : dispmprt.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
+UID: NC:dispmprt.DXGKDDI_QUERY_DEVICE_DESCRIPTOR
+title: DXGKDDI_QUERY_DEVICE_DESCRIPTOR
+author: windows-driver-content
+description: The DxgkDdiQueryDeviceDescriptor function returns a descriptor for a child device of a display adapter or for an external device (typically a monitor) connected to a child device of a display adapter.
+old-location: display\dxgkddiquerydevicedescriptor.htm
+old-project: display
+ms.assetid: 0dfcc012-9fff-40b6-b71f-da2ca229896c
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkddiquerydevicedescriptor, DxgkDdiQueryDeviceDescriptor callback function [Display Devices], DxgkDdiQueryDeviceDescriptor, DXGKDDI_QUERY_DEVICE_DESCRIPTOR, DXGKDDI_QUERY_DEVICE_DESCRIPTOR, dispmprt/DxgkDdiQueryDeviceDescriptor, DmFunctions_84688704-46fd-40d6-993e-298c6d3d5dcd.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: dispmprt.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	dispmprt.h
+apiname:
+-	DxgkDdiQueryDeviceDescriptor
+product: Windows
+targetos: Windows
+req.typenames: SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ---
 
 

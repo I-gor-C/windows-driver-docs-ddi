@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfinterrupt.WUDF_INTERRUPT_CONFIG_INIT
-title : WUDF_INTERRUPT_CONFIG_INIT function
-author : windows-driver-content
-description : The WUDF_INTERRUPT_CONFIG_INIT function initializes a WUDF_INTERRUPT_CONFIG structure.
-old-location : wdf\wudf_interrupt_config_init.htm
-old-project : wdf
-ms.assetid : 71011FDF-547E-4FF0-9015-E8E09FDF950E
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.wudf_interrupt_config_init, WUDF_INTERRUPT_CONFIG_INIT, WUDF_INTERRUPT_CONFIG_INIT function, wudfinterrupt/WUDF_INTERRUPT_CONFIG_INIT, umdf.wudf_interrupt_config_init
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wudfinterrupt.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.11
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_INTERRUPT_PRIORITY, *PWDF_INTERRUPT_PRIORITY
-req.product : Windows 10 or later.
+UID: NF:wudfinterrupt.WUDF_INTERRUPT_CONFIG_INIT
+title: WUDF_INTERRUPT_CONFIG_INIT function
+author: windows-driver-content
+description: The WUDF_INTERRUPT_CONFIG_INIT function initializes a WUDF_INTERRUPT_CONFIG structure.
+old-location: wdf\wudf_interrupt_config_init.htm
+old-project: wdf
+ms.assetid: 71011FDF-547E-4FF0-9015-E8E09FDF950E
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.wudf_interrupt_config_init, WUDF_INTERRUPT_CONFIG_INIT, WUDF_INTERRUPT_CONFIG_INIT function, wudfinterrupt/WUDF_INTERRUPT_CONFIG_INIT, umdf.wudf_interrupt_config_init
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wudfinterrupt.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.11
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wudfinterrupt.h
+apiname:
+-	WUDF_INTERRUPT_CONFIG_INIT
+product: Windows
+targetos: Windows
+req.typenames: WDF_INTERRUPT_PRIORITY, *PWDF_INTERRUPT_PRIORITY
+req.product: Windows 10 or later.
 ---
 
 

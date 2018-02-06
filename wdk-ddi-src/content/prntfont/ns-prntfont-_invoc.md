@@ -1,42 +1,47 @@
 ---
-UID : NS:prntfont._INVOC
-title : "_INVOC"
-author : windows-driver-content
-description : The INVOC structure is used for describing printer command strings in Unidrv font metrics files (.ufm files) and glyph translation table files (.gtt files).
-old-location : print\invoc.htm
-old-project : print
-ms.assetid : 5eeaa7f7-dc99-4cf7-846c-801954cc9040
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : PINVOC structure pointer [Print Devices], _INVOC, print_unidrv-pscript_fonts_1c5bebe8-a2ca-4049-bcce-defd8622761b.xml, print.invoc, INVOC structure [Print Devices], INVOC, prntfont/PINVOC, PINVOC, *PINVOC, prntfont/INVOC
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : prntfont.h
-req.include-header : Prntfont.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : INVOC, *PINVOC
-req.product : Windows 10 or later.
+UID: NS:prntfont._INVOC
+title: "_INVOC"
+author: windows-driver-content
+description: The INVOC structure is used for describing printer command strings in Unidrv font metrics files (.ufm files) and glyph translation table files (.gtt files).
+old-location: print\invoc.htm
+old-project: print
+ms.assetid: 5eeaa7f7-dc99-4cf7-846c-801954cc9040
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: PINVOC structure pointer [Print Devices], _INVOC, print_unidrv-pscript_fonts_1c5bebe8-a2ca-4049-bcce-defd8622761b.xml, print.invoc, INVOC structure [Print Devices], INVOC, prntfont/PINVOC, PINVOC, *PINVOC, prntfont/INVOC
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: prntfont.h
+req.include-header: Prntfont.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	prntfont.h
+apiname:
+-	INVOC
+product: Windows
+targetos: Windows
+req.typenames: INVOC, *PINVOC
+req.product: Windows 10 or later.
 ---
 
 # _INVOC structure

@@ -1,42 +1,47 @@
 ---
-UID : NC:video.PVIDEO_HW_LEGACYRESOURCES
-title : PVIDEO_HW_LEGACYRESOURCES
-author : windows-driver-content
-description : HwVidLegacyResources returns a list of resources that are not listed in a device's PCI configuration space but that are decoded by the device.
-old-location : display\hwvidlegacyresources.htm
-old-project : display
-ms.assetid : 015086e9-70b4-4756-9945-c9da17829e90
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.hwvidlegacyresources, HwVidLegacyResources callback function [Display Devices], HwVidLegacyResources, PVIDEO_HW_LEGACYRESOURCES, PVIDEO_HW_LEGACYRESOURCES, video/HwVidLegacyResources, VideoMiniport_Functions_a629bf4d-8f16-4d71-ab88-c691160a5df7.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VHF_CONFIG, *PVHF_CONFIG
-req.product : Windows 10 or later.
+UID: NC:video.PVIDEO_HW_LEGACYRESOURCES
+title: PVIDEO_HW_LEGACYRESOURCES
+author: windows-driver-content
+description: HwVidLegacyResources returns a list of resources that are not listed in a device's PCI configuration space but that are decoded by the device.
+old-location: display\hwvidlegacyresources.htm
+old-project: display
+ms.assetid: 015086e9-70b4-4756-9945-c9da17829e90
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.hwvidlegacyresources, HwVidLegacyResources callback function [Display Devices], HwVidLegacyResources, PVIDEO_HW_LEGACYRESOURCES, PVIDEO_HW_LEGACYRESOURCES, video/HwVidLegacyResources, VideoMiniport_Functions_a629bf4d-8f16-4d71-ab88-c691160a5df7.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	video.h
+apiname:
+-	HwVidLegacyResources
+product: Windows
+targetos: Windows
+req.typenames: VHF_CONFIG, *PVHF_CONFIG
+req.product: Windows 10 or later.
 ---
 
 

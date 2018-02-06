@@ -1,42 +1,47 @@
 ---
-UID : NF:wdffileobject.WdfFileObjectGetRelatedFileObject
-title : WdfFileObjectGetRelatedFileObject function
-author : windows-driver-content
-description : The WdfFileObjectGetRelatedFileObject method retrieves the related file object to a framework file object.
-old-location : wdf\wdffileobjectgetrelatedfileobject.htm
-old-project : wdf
-ms.assetid : EB00FF6B-144B-4256-A362-D593FD4CFC98
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : PFN_WDFFILEOBJECTGETRELATEDFILEOBJECT, WdfFileObjectGetRelatedFileObject method, wdffileobject/WdfFileObjectGetRelatedFileObject, WdfFileObjectGetRelatedFileObject, wdf.wdffileobjectgetrelatedfileobject
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdffileobject.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : Windows 8.1
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : WUDFx02000.lib
-req.dll : WUDFx02000.dll; TBD
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_FILE_INFORMATION_CLASS, *PWDF_FILE_INFORMATION_CLASS
-req.product : Windows 10 or later.
+UID: NF:wdffileobject.WdfFileObjectGetRelatedFileObject
+title: WdfFileObjectGetRelatedFileObject function
+author: windows-driver-content
+description: The WdfFileObjectGetRelatedFileObject method retrieves the related file object to a framework file object.
+old-location: wdf\wdffileobjectgetrelatedfileobject.htm
+old-project: wdf
+ms.assetid: EB00FF6B-144B-4256-A362-D593FD4CFC98
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: PFN_WDFFILEOBJECTGETRELATEDFILEOBJECT, WdfFileObjectGetRelatedFileObject method, wdffileobject/WdfFileObjectGetRelatedFileObject, WdfFileObjectGetRelatedFileObject, wdf.wdffileobjectgetrelatedfileobject
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdffileobject.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: Windows 8.1
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: WUDFx02000.lib
+req.dll: WUDFx02000.dll; TBD
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	WUDFx02000.dll
+apiname:
+-	WdfFileObjectGetRelatedFileObject
+product: Windows
+targetos: Windows
+req.typenames: WDF_FILE_INFORMATION_CLASS, *PWDF_FILE_INFORMATION_CLASS
+req.product: Windows 10 or later.
 ---
 
 

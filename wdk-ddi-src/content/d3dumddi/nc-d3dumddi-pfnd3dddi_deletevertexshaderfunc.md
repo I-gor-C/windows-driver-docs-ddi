@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_DELETEVERTEXSHADERFUNC
-title : PFND3DDDI_DELETEVERTEXSHADERFUNC
-author : windows-driver-content
-description : The DeleteVertexShaderFunc function cleans up driver-side resources that are associated with vertex shader code.
-old-location : display\deletevertexshaderfunc.htm
-old-project : display
-ms.assetid : 780fc47c-bbb9-400a-a2f3-cdce4a18072f
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.deletevertexshaderfunc, DeleteVertexShaderFunc callback function [Display Devices], DeleteVertexShaderFunc, PFND3DDDI_DELETEVERTEXSHADERFUNC, PFND3DDDI_DELETEVERTEXSHADERFUNC, d3dumddi/DeleteVertexShaderFunc, UserModeDisplayDriver_Functions_fda8f115-6f28-4295-b74e-14f32168a616.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_DELETEVERTEXSHADERFUNC
+title: PFND3DDDI_DELETEVERTEXSHADERFUNC
+author: windows-driver-content
+description: The DeleteVertexShaderFunc function cleans up driver-side resources that are associated with vertex shader code.
+old-location: display\deletevertexshaderfunc.htm
+old-project: display
+ms.assetid: 780fc47c-bbb9-400a-a2f3-cdce4a18072f
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.deletevertexshaderfunc, DeleteVertexShaderFunc callback function [Display Devices], DeleteVertexShaderFunc, PFND3DDDI_DELETEVERTEXSHADERFUNC, PFND3DDDI_DELETEVERTEXSHADERFUNC, d3dumddi/DeleteVertexShaderFunc, UserModeDisplayDriver_Functions_fda8f115-6f28-4295-b74e-14f32168a616.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	DeleteVertexShaderFunc
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NS:wiamindr_lh._WIA_PROPERTY_INFO
-title : "_WIA_PROPERTY_INFO"
-author : windows-driver-content
-description : The WIA_PROPERTY_INFO structure is used to store default access and valid value information for an item property of arbitrary type.
-old-location : image\wia_property_info.htm
-old-project : image
-ms.assetid : 9ab9edb8-aa37-4c28-81c9-3e41751f14ed
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : PWIA_PROPERTY_INFO structure pointer [Imaging Devices], *PWIA_PROPERTY_INFO, _WIA_PROPERTY_INFO, wiamindr_lh/PWIA_PROPERTY_INFO, image.wia_property_info, PWIA_PROPERTY_INFO, WIA_PROPERTY_INFO structure [Imaging Devices], wiastrct_6e0091b3-43a3-473b-88e4-ec41533a5b0e.xml, WIA_PROPERTY_INFO, wiamindr_lh/WIA_PROPERTY_INFO
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wiamindr_lh.h
-req.include-header : Wiamindr.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Me and in Windows XP and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WIA_PROPERTY_INFO, *PWIA_PROPERTY_INFO
-req.product : Windows 10 or later.
+UID: NS:wiamindr_lh._WIA_PROPERTY_INFO
+title: "_WIA_PROPERTY_INFO"
+author: windows-driver-content
+description: The WIA_PROPERTY_INFO structure is used to store default access and valid value information for an item property of arbitrary type.
+old-location: image\wia_property_info.htm
+old-project: image
+ms.assetid: 9ab9edb8-aa37-4c28-81c9-3e41751f14ed
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: PWIA_PROPERTY_INFO structure pointer [Imaging Devices], *PWIA_PROPERTY_INFO, _WIA_PROPERTY_INFO, wiamindr_lh/PWIA_PROPERTY_INFO, image.wia_property_info, PWIA_PROPERTY_INFO, WIA_PROPERTY_INFO structure [Imaging Devices], wiastrct_6e0091b3-43a3-473b-88e4-ec41533a5b0e.xml, WIA_PROPERTY_INFO, wiamindr_lh/WIA_PROPERTY_INFO
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wiamindr_lh.h
+req.include-header: Wiamindr.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Me and in Windows XP and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wiamindr_lh.h
+apiname:
+-	WIA_PROPERTY_INFO
+product: Windows
+targetos: Windows
+req.typenames: WIA_PROPERTY_INFO, *PWIA_PROPERTY_INFO
+req.product: Windows 10 or later.
 ---
 
 # _WIA_PROPERTY_INFO structure

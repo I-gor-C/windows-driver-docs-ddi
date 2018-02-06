@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddchgr._CHANGER_SEND_VOLUME_TAG_INFORMATION
-title : "_CHANGER_SEND_VOLUME_TAG_INFORMATION"
-author : windows-driver-content
-description : This structure is passed to the ChangerQueryVolumeTags routine and is used to specify a search criterion for retrieving changer elements.
-old-location : storage\changer_send_volume_tag_information.htm
-old-project : storage
-ms.assetid : cfe0673c-1dcb-4c4e-9ec4-8d9f27919c85
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : structs-changer_3f8d7f13-bf38-41fe-aa74-bbd9083bbbb6.xml, CHANGER_SEND_VOLUME_TAG_INFORMATION structure [Storage Devices], ntddchgr/CHANGER_SEND_VOLUME_TAG_INFORMATION, CHANGER_SEND_VOLUME_TAG_INFORMATION, *PCHANGER_SEND_VOLUME_TAG_INFORMATION, ntddchgr/PCHANGER_SEND_VOLUME_TAG_INFORMATION, PCHANGER_SEND_VOLUME_TAG_INFORMATION structure pointer [Storage Devices], _CHANGER_SEND_VOLUME_TAG_INFORMATION, PCHANGER_SEND_VOLUME_TAG_INFORMATION, storage.changer_send_volume_tag_information
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddchgr.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PCHANGER_SEND_VOLUME_TAG_INFORMATION, CHANGER_SEND_VOLUME_TAG_INFORMATION"
+UID: NS:ntddchgr._CHANGER_SEND_VOLUME_TAG_INFORMATION
+title: "_CHANGER_SEND_VOLUME_TAG_INFORMATION"
+author: windows-driver-content
+description: This structure is passed to the ChangerQueryVolumeTags routine and is used to specify a search criterion for retrieving changer elements.
+old-location: storage\changer_send_volume_tag_information.htm
+old-project: storage
+ms.assetid: cfe0673c-1dcb-4c4e-9ec4-8d9f27919c85
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: structs-changer_3f8d7f13-bf38-41fe-aa74-bbd9083bbbb6.xml, CHANGER_SEND_VOLUME_TAG_INFORMATION structure [Storage Devices], ntddchgr/CHANGER_SEND_VOLUME_TAG_INFORMATION, CHANGER_SEND_VOLUME_TAG_INFORMATION, *PCHANGER_SEND_VOLUME_TAG_INFORMATION, ntddchgr/PCHANGER_SEND_VOLUME_TAG_INFORMATION, PCHANGER_SEND_VOLUME_TAG_INFORMATION structure pointer [Storage Devices], _CHANGER_SEND_VOLUME_TAG_INFORMATION, PCHANGER_SEND_VOLUME_TAG_INFORMATION, storage.changer_send_volume_tag_information
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddchgr.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddchgr.h
+apiname:
+-	CHANGER_SEND_VOLUME_TAG_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: "*PCHANGER_SEND_VOLUME_TAG_INFORMATION, CHANGER_SEND_VOLUME_TAG_INFORMATION"
 ---
 
 # _CHANGER_SEND_VOLUME_TAG_INFORMATION structure

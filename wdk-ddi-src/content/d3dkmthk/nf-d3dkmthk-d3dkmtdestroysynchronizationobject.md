@@ -1,41 +1,49 @@
 ---
-UID : NF:d3dkmthk.D3DKMTDestroySynchronizationObject
-title : D3DKMTDestroySynchronizationObject function
-author : windows-driver-content
-description : The D3DKMTDestroySynchronizationObject function destroys a kernel-mode synchronization object.
-old-location : display\d3dkmtdestroysynchronizationobject.htm
-old-project : display
-ms.assetid : 38e77d21-a386-4de8-8d1c-db48434828c6
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.d3dkmtdestroysynchronizationobject, D3DKMTDestroySynchronizationObject, D3DKMTDestroySynchronizationObject function [Display Devices], d3dkmthk/D3DKMTDestroySynchronizationObject, OpenGL_Functions_181e72ed-9dd7-4b4c-b6e6-9231a2603f20.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Gdi32.lib
-req.dll : Gdi32.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_DRIVERVERSION
+UID: NF:d3dkmthk.D3DKMTDestroySynchronizationObject
+title: D3DKMTDestroySynchronizationObject function
+author: windows-driver-content
+description: The D3DKMTDestroySynchronizationObject function destroys a kernel-mode synchronization object.
+old-location: display\d3dkmtdestroysynchronizationobject.htm
+old-project: display
+ms.assetid: 38e77d21-a386-4de8-8d1c-db48434828c6
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.d3dkmtdestroysynchronizationobject, D3DKMTDestroySynchronizationObject, D3DKMTDestroySynchronizationObject function [Display Devices], d3dkmthk/D3DKMTDestroySynchronizationObject, OpenGL_Functions_181e72ed-9dd7-4b4c-b6e6-9231a2603f20.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Gdi32.lib
+req.dll: Gdi32.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Gdi32.dll
+-	API-MS-Win-dx-d3dkmt-l1-1-0.dll
+-	API-MS-Win-dx-d3dkmt-l1-1-1.dll
+-	API-MS-Win-DX-D3DKMT-L1-1-2.dll
+apiname:
+-	D3DKMTDestroySynchronizationObject
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_DRIVERVERSION
 ---
 
 

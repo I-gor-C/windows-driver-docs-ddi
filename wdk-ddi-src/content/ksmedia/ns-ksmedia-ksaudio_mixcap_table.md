@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.KSAUDIO_MIXCAP_TABLE
-title : KSAUDIO_MIXCAP_TABLE
-author : windows-driver-content
-description : The KSAUDIO_MIXCAP_TABLE structure specifies the mixing capabilities of a supermixer node (KSNODETYPE_SUPERMIX). This structure is used to get or set the data value for the KSPROPERTY_AUDIO_MIX_LEVEL_CAPS property.
-old-location : audio\ksaudio_mixcap_table.htm
-old-project : audio
-ms.assetid : 508d73f6-1660-4663-87f5-8dbd1dff153a
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : ksmedia/PKSAUDIO_MIXCAP_TABLE, PKSAUDIO_MIXCAP_TABLE structure pointer [Audio Devices], ksmedia/KSAUDIO_MIXCAP_TABLE, *PKSAUDIO_MIXCAP_TABLE, audio.ksaudio_mixcap_table, KSAUDIO_MIXCAP_TABLE structure [Audio Devices], KSAUDIO_MIXCAP_TABLE, PKSAUDIO_MIXCAP_TABLE, aud-prop_42fdfffa-fb37-4a29-8015-065cec552815.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKSAUDIO_MIXCAP_TABLE, KSAUDIO_MIXCAP_TABLE"
+UID: NS:ksmedia.KSAUDIO_MIXCAP_TABLE
+title: KSAUDIO_MIXCAP_TABLE
+author: windows-driver-content
+description: The KSAUDIO_MIXCAP_TABLE structure specifies the mixing capabilities of a supermixer node (KSNODETYPE_SUPERMIX). This structure is used to get or set the data value for the KSPROPERTY_AUDIO_MIX_LEVEL_CAPS property.
+old-location: audio\ksaudio_mixcap_table.htm
+old-project: audio
+ms.assetid: 508d73f6-1660-4663-87f5-8dbd1dff153a
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: ksmedia/PKSAUDIO_MIXCAP_TABLE, PKSAUDIO_MIXCAP_TABLE structure pointer [Audio Devices], ksmedia/KSAUDIO_MIXCAP_TABLE, *PKSAUDIO_MIXCAP_TABLE, audio.ksaudio_mixcap_table, KSAUDIO_MIXCAP_TABLE structure [Audio Devices], KSAUDIO_MIXCAP_TABLE, PKSAUDIO_MIXCAP_TABLE, aud-prop_42fdfffa-fb37-4a29-8015-065cec552815.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	KSAUDIO_MIXCAP_TABLE
+product: Windows
+targetos: Windows
+req.typenames: "*PKSAUDIO_MIXCAP_TABLE, KSAUDIO_MIXCAP_TABLE"
 ---
 
 # KSAUDIO_MIXCAP_TABLE structure

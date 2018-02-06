@@ -1,42 +1,47 @@
 ---
-UID : NC:videoagp.PAGP_RELEASE_VIRTUAL
-title : PAGP_RELEASE_VIRTUAL
-author : windows-driver-content
-description : The AgpReleaseVirtual function frees system memory reserved by a previous call to AgpReserveVirtual.
-old-location : display\agpreleasevirtual.htm
-old-project : display
-ms.assetid : 4e880b39-e0ee-4801-86b7-ffc06ed415ab
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.agpreleasevirtual, AgpReleaseVirtual callback function [Display Devices], AgpReleaseVirtual, PAGP_RELEASE_VIRTUAL, PAGP_RELEASE_VIRTUAL, videoagp/AgpReleaseVirtual, VideoPort_Functions_4ea0bf12-5d18-4704-9efe-7d8a65a44f1f.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : videoagp.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows 2000 and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VP_SCATTER_GATHER_LIST, *PVP_SCATTER_GATHER_LIST
-req.product : Windows 10 or later.
+UID: NC:videoagp.PAGP_RELEASE_VIRTUAL
+title: PAGP_RELEASE_VIRTUAL
+author: windows-driver-content
+description: The AgpReleaseVirtual function frees system memory reserved by a previous call to AgpReserveVirtual.
+old-location: display\agpreleasevirtual.htm
+old-project: display
+ms.assetid: 4e880b39-e0ee-4801-86b7-ffc06ed415ab
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.agpreleasevirtual, AgpReleaseVirtual callback function [Display Devices], AgpReleaseVirtual, PAGP_RELEASE_VIRTUAL, PAGP_RELEASE_VIRTUAL, videoagp/AgpReleaseVirtual, VideoPort_Functions_4ea0bf12-5d18-4704-9efe-7d8a65a44f1f.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: videoagp.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows 2000 and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	videoagp.h
+apiname:
+-	AgpReleaseVirtual
+product: Windows
+targetos: Windows
+req.typenames: VP_SCATTER_GATHER_LIST, *PVP_SCATTER_GATHER_LIST
+req.product: Windows 10 or later.
 ---
 
 

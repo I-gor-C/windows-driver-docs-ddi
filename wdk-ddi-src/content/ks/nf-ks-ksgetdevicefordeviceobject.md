@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsGetDeviceForDeviceObject
-title : KsGetDeviceForDeviceObject function
-author : windows-driver-content
-description : The KsGetDeviceForDeviceObject function returns the AVStream device structure for a given functional device object.
-old-location : stream\ksgetdevicefordeviceobject.htm
-old-project : stream
-ms.assetid : 2fe72d9d-1423-4db9-be38-f2bca7dbc56d
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.ksgetdevicefordeviceobject, avfunc_2bc27061-02ce-488f-94b4-087e9f264614.xml, KsGetDeviceForDeviceObject function [Streaming Media Devices], KsGetDeviceForDeviceObject, ks/KsGetDeviceForDeviceObject
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsGetDeviceForDeviceObject
+title: KsGetDeviceForDeviceObject function
+author: windows-driver-content
+description: The KsGetDeviceForDeviceObject function returns the AVStream device structure for a given functional device object.
+old-location: stream\ksgetdevicefordeviceobject.htm
+old-project: stream
+ms.assetid: 2fe72d9d-1423-4db9-be38-f2bca7dbc56d
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.ksgetdevicefordeviceobject, avfunc_2bc27061-02ce-488f-94b4-087e9f264614.xml, KsGetDeviceForDeviceObject function [Streaming Media Devices], KsGetDeviceForDeviceObject, ks/KsGetDeviceForDeviceObject
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsGetDeviceForDeviceObject
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

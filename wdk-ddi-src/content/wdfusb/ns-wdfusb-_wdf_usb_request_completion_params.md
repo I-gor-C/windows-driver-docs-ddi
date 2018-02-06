@@ -1,42 +1,47 @@
 ---
-UID : NS:wdfusb._WDF_USB_REQUEST_COMPLETION_PARAMS
-title : "_WDF_USB_REQUEST_COMPLETION_PARAMS"
-author : windows-driver-content
-description : The WDF_USB_REQUEST_COMPLETION_PARAMS structure contains parameters that are associated with the completion of an I/O request for a USB device.
-old-location : wdf\wdf_usb_request_completion_params.htm
-old-project : wdf
-ms.assetid : cd29d27c-9da2-477f-898e-13ee480aac9e
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WDF_USB_REQUEST_COMPLETION_PARAMS structure, wdfusb/PWDF_USB_REQUEST_COMPLETION_PARAMS, wdfusb/WDF_USB_REQUEST_COMPLETION_PARAMS, PWDF_USB_REQUEST_COMPLETION_PARAMS structure pointer, PWDF_USB_REQUEST_COMPLETION_PARAMS, kmdf.wdf_usb_request_completion_params, _WDF_USB_REQUEST_COMPLETION_PARAMS, wdf.wdf_usb_request_completion_params, DFUsbRef_14574f86-fd65-41df-be8e-557f6fe09c4f.xml, *PWDF_USB_REQUEST_COMPLETION_PARAMS, WDF_USB_REQUEST_COMPLETION_PARAMS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdfusb.h
-req.include-header : Wdfusb.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_USB_REQUEST_COMPLETION_PARAMS, *PWDF_USB_REQUEST_COMPLETION_PARAMS
-req.product : Windows 10 or later.
+UID: NS:wdfusb._WDF_USB_REQUEST_COMPLETION_PARAMS
+title: "_WDF_USB_REQUEST_COMPLETION_PARAMS"
+author: windows-driver-content
+description: The WDF_USB_REQUEST_COMPLETION_PARAMS structure contains parameters that are associated with the completion of an I/O request for a USB device.
+old-location: wdf\wdf_usb_request_completion_params.htm
+old-project: wdf
+ms.assetid: cd29d27c-9da2-477f-898e-13ee480aac9e
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WDF_USB_REQUEST_COMPLETION_PARAMS structure, wdfusb/PWDF_USB_REQUEST_COMPLETION_PARAMS, wdfusb/WDF_USB_REQUEST_COMPLETION_PARAMS, PWDF_USB_REQUEST_COMPLETION_PARAMS structure pointer, PWDF_USB_REQUEST_COMPLETION_PARAMS, kmdf.wdf_usb_request_completion_params, _WDF_USB_REQUEST_COMPLETION_PARAMS, wdf.wdf_usb_request_completion_params, DFUsbRef_14574f86-fd65-41df-be8e-557f6fe09c4f.xml, *PWDF_USB_REQUEST_COMPLETION_PARAMS, WDF_USB_REQUEST_COMPLETION_PARAMS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdfusb.h
+req.include-header: Wdfusb.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfusb.h
+apiname:
+-	WDF_USB_REQUEST_COMPLETION_PARAMS
+product: Windows
+targetos: Windows
+req.typenames: WDF_USB_REQUEST_COMPLETION_PARAMS, *PWDF_USB_REQUEST_COMPLETION_PARAMS
+req.product: Windows 10 or later.
 ---
 
 # _WDF_USB_REQUEST_COMPLETION_PARAMS structure

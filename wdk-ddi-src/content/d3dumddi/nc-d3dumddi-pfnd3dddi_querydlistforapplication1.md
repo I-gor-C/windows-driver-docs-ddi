@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_QUERYDLISTFORAPPLICATION1
-title : PFND3DDDI_QUERYDLISTFORAPPLICATION1
-author : windows-driver-content
-description : Called during Microsoft Direct3D initialization on a hybrid system to determine which GPU an application should run on. A dList is a list of applications that need cross-adapter shared surfaces for high-performance rendering on the discrete GPU.
-old-location : display\querydlistforapplication1.htm
-old-project : display
-ms.assetid : 4F27E884-D21C-483D-9E53-02D405D02F10
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.querydlistforapplication1, QueryDListForApplication callback function [Display Devices], QueryDListForApplication, PFND3DDDI_QUERYDLISTFORAPPLICATION1, PFND3DDDI_QUERYDLISTFORAPPLICATION1, d3dumddi/QueryDListForApplication
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8.1,WDDM 1.3 and later
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_QUERYDLISTFORAPPLICATION1
+title: PFND3DDDI_QUERYDLISTFORAPPLICATION1
+author: windows-driver-content
+description: Called during Microsoft Direct3D initialization on a hybrid system to determine which GPU an application should run on. A dList is a list of applications that need cross-adapter shared surfaces for high-performance rendering on the discrete GPU.
+old-location: display\querydlistforapplication1.htm
+old-project: display
+ms.assetid: 4F27E884-D21C-483D-9E53-02D405D02F10
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.querydlistforapplication1, QueryDListForApplication callback function [Display Devices], QueryDListForApplication, PFND3DDDI_QUERYDLISTFORAPPLICATION1, PFND3DDDI_QUERYDLISTFORAPPLICATION1, d3dumddi/QueryDListForApplication
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8.1,WDDM 1.3 and later
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	D3dumddi.h
+apiname:
+-	QueryDListForApplication
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

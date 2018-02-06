@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddcdrm._CDROM_STREAMING_CONTROL
-title : "_CDROM_STREAMING_CONTROL"
-author : windows-driver-content
-description : The CDROM_STREAMING_CONTROL structure is used as an input parameter to the IOCTL_CDROM_ENABLE_STREAMING IOCTL.
-old-location : storage\cdrom_streaming_control.htm
-old-project : storage
-ms.assetid : 71D4008C-1F04-408B-93DF-DDE6FD352701
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : PCDROM_STREAMING_CONTROL, *PCDROM_STREAMING_CONTROL, _CDROM_STREAMING_CONTROL, CDROM_STREAMING_CONTROL, ntddcdrm/PCDROM_STREAMING_CONTROL, ntddcdrm/CDROM_STREAMING_CONTROL, CDROM_STREAMING_CONTROL structure [Storage Devices], PCDROM_STREAMING_CONTROL structure pointer [Storage Devices], storage.cdrom_streaming_control
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddcdrm.h
-req.include-header : Ntddcdrm.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : CDROM_STREAMING_CONTROL, *PCDROM_STREAMING_CONTROL
+UID: NS:ntddcdrm._CDROM_STREAMING_CONTROL
+title: "_CDROM_STREAMING_CONTROL"
+author: windows-driver-content
+description: The CDROM_STREAMING_CONTROL structure is used as an input parameter to the IOCTL_CDROM_ENABLE_STREAMING IOCTL.
+old-location: storage\cdrom_streaming_control.htm
+old-project: storage
+ms.assetid: 71D4008C-1F04-408B-93DF-DDE6FD352701
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: PCDROM_STREAMING_CONTROL, *PCDROM_STREAMING_CONTROL, _CDROM_STREAMING_CONTROL, CDROM_STREAMING_CONTROL, ntddcdrm/PCDROM_STREAMING_CONTROL, ntddcdrm/CDROM_STREAMING_CONTROL, CDROM_STREAMING_CONTROL structure [Storage Devices], PCDROM_STREAMING_CONTROL structure pointer [Storage Devices], storage.cdrom_streaming_control
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddcdrm.h
+req.include-header: Ntddcdrm.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddcdrm.h
+apiname:
+-	CDROM_STREAMING_CONTROL
+product: Windows
+targetos: Windows
+req.typenames: CDROM_STREAMING_CONTROL, *PCDROM_STREAMING_CONTROL
 ---
 
 # _CDROM_STREAMING_CONTROL structure

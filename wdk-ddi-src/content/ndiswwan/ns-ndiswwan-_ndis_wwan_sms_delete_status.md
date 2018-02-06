@@ -1,41 +1,46 @@
 ---
-UID : NS:ndiswwan._NDIS_WWAN_SMS_DELETE_STATUS
-title : "_NDIS_WWAN_SMS_DELETE_STATUS"
-author : windows-driver-content
-description : The NDIS_WWAN_SMS_DELETE_STATUS structure represents the status of a deleted SMS text message.
-old-location : netvista\ndis_wwan_sms_delete_status.htm
-old-project : netvista
-ms.assetid : 78591487-d534-4e9e-852a-5826b8a98a9b
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NDIS_WWAN_SMS_DELETE_STATUS structure [Network Drivers Starting with Windows Vista], ndiswwan/PNDIS_WWAN_SMS_DELETE_STATUS, _NDIS_WWAN_SMS_DELETE_STATUS, WwanRef_aa4755ba-7eac-42ef-8901-170593ed60af.xml, netvista.ndis_wwan_sms_delete_status, ndiswwan/NDIS_WWAN_SMS_DELETE_STATUS, NDIS_WWAN_SMS_DELETE_STATUS, *PNDIS_WWAN_SMS_DELETE_STATUS, PNDIS_WWAN_SMS_DELETE_STATUS structure pointer [Network Drivers Starting with Windows Vista], PNDIS_WWAN_SMS_DELETE_STATUS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndiswwan.h
-req.include-header : Ndiswwan.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_WWAN_SMS_DELETE_STATUS, *PNDIS_WWAN_SMS_DELETE_STATUS
+UID: NS:ndiswwan._NDIS_WWAN_SMS_DELETE_STATUS
+title: "_NDIS_WWAN_SMS_DELETE_STATUS"
+author: windows-driver-content
+description: The NDIS_WWAN_SMS_DELETE_STATUS structure represents the status of a deleted SMS text message.
+old-location: netvista\ndis_wwan_sms_delete_status.htm
+old-project: netvista
+ms.assetid: 78591487-d534-4e9e-852a-5826b8a98a9b
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NDIS_WWAN_SMS_DELETE_STATUS structure [Network Drivers Starting with Windows Vista], ndiswwan/PNDIS_WWAN_SMS_DELETE_STATUS, _NDIS_WWAN_SMS_DELETE_STATUS, WwanRef_aa4755ba-7eac-42ef-8901-170593ed60af.xml, netvista.ndis_wwan_sms_delete_status, ndiswwan/NDIS_WWAN_SMS_DELETE_STATUS, NDIS_WWAN_SMS_DELETE_STATUS, *PNDIS_WWAN_SMS_DELETE_STATUS, PNDIS_WWAN_SMS_DELETE_STATUS structure pointer [Network Drivers Starting with Windows Vista], PNDIS_WWAN_SMS_DELETE_STATUS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndiswwan.h
+req.include-header: Ndiswwan.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndiswwan.h
+apiname:
+-	NDIS_WWAN_SMS_DELETE_STATUS
+product: Windows
+targetos: Windows
+req.typenames: NDIS_WWAN_SMS_DELETE_STATUS, *PNDIS_WWAN_SMS_DELETE_STATUS
 ---
 
 # _NDIS_WWAN_SMS_DELETE_STATUS structure

@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dhal._D3DHAL_DP2SETSTREAMSOURCEUM
-title : "_D3DHAL_DP2SETSTREAMSOURCEUM"
-author : windows-driver-content
-description : DirectX 8.0 and later versions only. The D3DHAL_DP2SETSTREAMSOURCEUM structure is used to bind a vertex stream source to a user memory buffer for D3dDrawPrimitives2.
-old-location : display\d3dhal_dp2setstreamsourceum.htm
-old-project : display
-ms.assetid : 42a8c14d-3b73-4d9a-a902-d4bf2b46ddf8
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DHAL_DP2SETSTREAMSOURCEUM, *LPD3DHAL_DP2SETSTREAMSOURCEUM, LPD3DHAL_DP2SETSTREAMSOURCEUM, LPD3DHAL_DP2SETSTREAMSOURCEUM structure pointer [Display Devices], d3dstrct_58dd4856-1fc8-4772-96db-77ff9b81afbf.xml, _D3DHAL_DP2SETSTREAMSOURCEUM, display.d3dhal_dp2setstreamsourceum, d3dhal/LPD3DHAL_DP2SETSTREAMSOURCEUM, d3dhal/D3DHAL_DP2SETSTREAMSOURCEUM, D3DHAL_DP2SETSTREAMSOURCEUM structure [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dhal.h
-req.include-header : D3dhal.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DHAL_DP2SETSTREAMSOURCEUM
+UID: NS:d3dhal._D3DHAL_DP2SETSTREAMSOURCEUM
+title: "_D3DHAL_DP2SETSTREAMSOURCEUM"
+author: windows-driver-content
+description: DirectX 8.0 and later versions only. The D3DHAL_DP2SETSTREAMSOURCEUM structure is used to bind a vertex stream source to a user memory buffer for D3dDrawPrimitives2.
+old-location: display\d3dhal_dp2setstreamsourceum.htm
+old-project: display
+ms.assetid: 42a8c14d-3b73-4d9a-a902-d4bf2b46ddf8
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DHAL_DP2SETSTREAMSOURCEUM, *LPD3DHAL_DP2SETSTREAMSOURCEUM, LPD3DHAL_DP2SETSTREAMSOURCEUM, LPD3DHAL_DP2SETSTREAMSOURCEUM structure pointer [Display Devices], d3dstrct_58dd4856-1fc8-4772-96db-77ff9b81afbf.xml, _D3DHAL_DP2SETSTREAMSOURCEUM, display.d3dhal_dp2setstreamsourceum, d3dhal/LPD3DHAL_DP2SETSTREAMSOURCEUM, d3dhal/D3DHAL_DP2SETSTREAMSOURCEUM, D3DHAL_DP2SETSTREAMSOURCEUM structure [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dhal.h
+req.include-header: D3dhal.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dhal.h
+apiname:
+-	D3DHAL_DP2SETSTREAMSOURCEUM
+product: Windows
+targetos: Windows
+req.typenames: D3DHAL_DP2SETSTREAMSOURCEUM
 ---
 
 # _D3DHAL_DP2SETSTREAMSOURCEUM structure

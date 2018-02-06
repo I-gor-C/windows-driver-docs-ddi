@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.FsRtlInitExtraCreateParameterLookasideList
-title : FsRtlInitExtraCreateParameterLookasideList function
-author : windows-driver-content
-description : The FsRtlInitExtraCreateParameterLookasideList routine initializes a paged or nonpaged pool lookaside list used for the allocation of one or more extra create parameter context structures (ECPs) of fixed size.
-old-location : ifsk\fsrtlinitextracreateparameterlookasidelist.htm
-old-project : ifsk
-ms.assetid : 30ad87de-a371-415b-b77f-513369fed098
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ntifs/FsRtlInitExtraCreateParameterLookasideList, fsrtlref_4b4e21ec-cfcc-45b7-bcb9-74dbc7c486ac.xml, FsRtlInitExtraCreateParameterLookasideList, FsRtlInitExtraCreateParameterLookasideList routine [Installable File System Drivers], ifsk.fsrtlinitextracreateparameterlookasidelist
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : The FsRtlInitExtraCreateParameterLookasideList routine is available starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.FsRtlInitExtraCreateParameterLookasideList
+title: FsRtlInitExtraCreateParameterLookasideList function
+author: windows-driver-content
+description: The FsRtlInitExtraCreateParameterLookasideList routine initializes a paged or nonpaged pool lookaside list used for the allocation of one or more extra create parameter context structures (ECPs) of fixed size.
+old-location: ifsk\fsrtlinitextracreateparameterlookasidelist.htm
+old-project: ifsk
+ms.assetid: 30ad87de-a371-415b-b77f-513369fed098
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ntifs/FsRtlInitExtraCreateParameterLookasideList, fsrtlref_4b4e21ec-cfcc-45b7-bcb9-74dbc7c486ac.xml, FsRtlInitExtraCreateParameterLookasideList, FsRtlInitExtraCreateParameterLookasideList routine [Installable File System Drivers], ifsk.fsrtlinitextracreateparameterlookasidelist
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: The FsRtlInitExtraCreateParameterLookasideList routine is available starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	FsRtlInitExtraCreateParameterLookasideList
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

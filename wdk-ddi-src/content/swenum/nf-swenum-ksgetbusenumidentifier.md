@@ -1,42 +1,48 @@
 ---
-UID : NF:swenum.KsGetBusEnumIdentifier
-title : KsGetBusEnumIdentifier function
-author : windows-driver-content
-description : The KsGetBusEnumIdentifier function retrieves the software bus enumerator identifier for the bus device associated with the given IRP.
-old-location : stream\ksgetbusenumidentifier.htm
-old-project : stream
-ms.assetid : 50e14e01-5879-4a84-a8c2-f03c953dbeec
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KsGetBusEnumIdentifier function [Streaming Media Devices], ksfunc_c001aace-8c97-48cb-ae8b-9e7075d51960.xml, swenum/KsGetBusEnumIdentifier, KsGetBusEnumIdentifier, stream.ksgetbusenumidentifier
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : swenum.h
-req.include-header : Swenum.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STREAM_TIME_REFERENCE, *PSTREAM_TIME_REFERENCE
-req.product : Windows 10 or later.
+UID: NF:swenum.KsGetBusEnumIdentifier
+title: KsGetBusEnumIdentifier function
+author: windows-driver-content
+description: The KsGetBusEnumIdentifier function retrieves the software bus enumerator identifier for the bus device associated with the given IRP.
+old-location: stream\ksgetbusenumidentifier.htm
+old-project: stream
+ms.assetid: 50e14e01-5879-4a84-a8c2-f03c953dbeec
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KsGetBusEnumIdentifier function [Streaming Media Devices], ksfunc_c001aace-8c97-48cb-ae8b-9e7075d51960.xml, swenum/KsGetBusEnumIdentifier, KsGetBusEnumIdentifier, stream.ksgetbusenumidentifier
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: swenum.h
+req.include-header: Swenum.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsGetBusEnumIdentifier
+product: Windows
+targetos: Windows
+req.typenames: STREAM_TIME_REFERENCE, *PSTREAM_TIME_REFERENCE
+req.product: Windows 10 or later.
 ---
 
 

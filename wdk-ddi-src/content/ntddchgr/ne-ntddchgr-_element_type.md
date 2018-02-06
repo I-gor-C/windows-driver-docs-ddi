@@ -1,41 +1,46 @@
 ---
-UID : NE:ntddchgr._ELEMENT_TYPE
-title : "_ELEMENT_TYPE"
-author : windows-driver-content
-description : The ELEMENT_TYPE enumeration provides a list of changer element types defined by the SCSI-3 specification.
-old-location : storage\element_type.htm
-old-project : storage
-ms.assetid : 909e0645-3824-40ff-bec9-128a9939eb1e
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : structs-changer_e97997e8-4dc3-46e9-897e-3ded47adf8b8.xml, ChangerDrive, _ELEMENT_TYPE, ntddchgr/PELEMENT_TYPE, ntddchgr/ChangerDoor, ChangerDoor, ntddchgr/AllElements, ntddchgr/ELEMENT_TYPE, ChangerTransport, ntddchgr/ChangerTransport, ChangerSlot, ChangerIEPort, ntddchgr/ChangerMaxElement, AllElements, ChangerMaxElement, ntddchgr/ChangerIEPort, ntddchgr/ChangerKeypad, ELEMENT_TYPE enumeration [Storage Devices], ntddchgr/ChangerSlot, PELEMENT_TYPE, ChangerKeypad, ELEMENT_TYPE, ntddchgr/ChangerDrive, *PELEMENT_TYPE, storage.element_type, PELEMENT_TYPE enumeration pointer [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : ntddchgr.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PELEMENT_TYPE, ELEMENT_TYPE"
+UID: NE:ntddchgr._ELEMENT_TYPE
+title: "_ELEMENT_TYPE"
+author: windows-driver-content
+description: The ELEMENT_TYPE enumeration provides a list of changer element types defined by the SCSI-3 specification.
+old-location: storage\element_type.htm
+old-project: storage
+ms.assetid: 909e0645-3824-40ff-bec9-128a9939eb1e
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: structs-changer_e97997e8-4dc3-46e9-897e-3ded47adf8b8.xml, ChangerDrive, _ELEMENT_TYPE, ntddchgr/PELEMENT_TYPE, ntddchgr/ChangerDoor, ChangerDoor, ntddchgr/AllElements, ntddchgr/ELEMENT_TYPE, ChangerTransport, ntddchgr/ChangerTransport, ChangerSlot, ChangerIEPort, ntddchgr/ChangerMaxElement, AllElements, ChangerMaxElement, ntddchgr/ChangerIEPort, ntddchgr/ChangerKeypad, ELEMENT_TYPE enumeration [Storage Devices], ntddchgr/ChangerSlot, PELEMENT_TYPE, ChangerKeypad, ELEMENT_TYPE, ntddchgr/ChangerDrive, *PELEMENT_TYPE, storage.element_type, PELEMENT_TYPE enumeration pointer [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: ntddchgr.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddchgr.h
+apiname:
+-	ELEMENT_TYPE
+product: Windows
+targetos: Windows
+req.typenames: "*PELEMENT_TYPE, ELEMENT_TYPE"
 ---
 
 # _ELEMENT_TYPE Enumeration
@@ -58,46 +63,46 @@ typedef enum _ELEMENT_TYPE {
 ## Constants
 
 <table>
-
-<tr>
-<td>AllElements</td>
-<td>Indicates all elements of a changer, including its robotic transport, drives, slots, and IEport. <b>AllElements</b> is valid only in a <a href="..\mcd\nf-mcd-changergetelementstatus.md">ChangerGetElementStatus</a> or <a href="..\mcd\nf-mcd-changerinitializeelementstatus.md">ChangerInitializeElementStatus</a> call.</td>
-</tr>
-
-<tr>
-<td>ChangerDoor</td>
-<td>Indicates a mechanism that provides access to all media in a changer at one time (as compared to an IEport that provides access to one or more, but not all, media). For example, a large front door or a magazine that contains all media in the changer are elements of this type. <b>ChangerDoor</b> is valid only in a <a href="..\mcd\nf-mcd-changersetaccess.md">ChangerSetAccess</a> call.</td>
-</tr>
-
-<tr>
-<td>ChangerDrive</td>
-<td>Indicates a data transfer element where data can be read from and written to media.</td>
-</tr>
-
-<tr>
-<td>ChangerIEPort</td>
-<td>Indicates an import/export element (IEport), which is a single or multiple-cartridge access port in some changers. An element is an IEport only if it is possible to move a piece of media from a slot to the IEport.</td>
-</tr>
-
-<tr>
-<td>ChangerKeypad</td>
-<td>Indicates the keypad or other input control on the front panel of a changer. <b>ChangerKeypad</b> is valid only in a <a href="..\mcd\nf-mcd-changersetaccess.md">ChangerSetAccess</a> call.</td>
-</tr>
-
-<tr>
-<td>ChangerMaxElement</td>
-<td>Indicates the upper limit of the enumerators in this enumeration.</td>
-</tr>
-
-<tr>
-<td>ChangerSlot</td>
-<td>Indicates a storage element, which is a slot in the changer in which media is stored when not mounted in a drive.</td>
-</tr>
-
-<tr>
-<td>ChangerTransport</td>
-<td>Indicates the changer's robotic transport element, which is used to move media between IEports, slots, and drives.</td>
-</tr>
+            
+                <tr>
+                    <td>AllElements</td>
+                    <td>Indicates all elements of a changer, including its robotic transport, drives, slots, and IEport. <b>AllElements</b> is valid only in a <a href="..\mcd\nf-mcd-changergetelementstatus.md">ChangerGetElementStatus</a> or <a href="..\mcd\nf-mcd-changerinitializeelementstatus.md">ChangerInitializeElementStatus</a> call.</td>
+                </tr>
+            
+                <tr>
+                    <td>ChangerDoor</td>
+                    <td>Indicates a mechanism that provides access to all media in a changer at one time (as compared to an IEport that provides access to one or more, but not all, media). For example, a large front door or a magazine that contains all media in the changer are elements of this type. <b>ChangerDoor</b> is valid only in a <a href="..\mcd\nf-mcd-changersetaccess.md">ChangerSetAccess</a> call.</td>
+                </tr>
+            
+                <tr>
+                    <td>ChangerDrive</td>
+                    <td>Indicates a data transfer element where data can be read from and written to media.</td>
+                </tr>
+            
+                <tr>
+                    <td>ChangerIEPort</td>
+                    <td>Indicates an import/export element (IEport), which is a single or multiple-cartridge access port in some changers. An element is an IEport only if it is possible to move a piece of media from a slot to the IEport.</td>
+                </tr>
+            
+                <tr>
+                    <td>ChangerKeypad</td>
+                    <td>Indicates the keypad or other input control on the front panel of a changer. <b>ChangerKeypad</b> is valid only in a <a href="..\mcd\nf-mcd-changersetaccess.md">ChangerSetAccess</a> call.</td>
+                </tr>
+            
+                <tr>
+                    <td>ChangerMaxElement</td>
+                    <td>Indicates the upper limit of the enumerators in this enumeration.</td>
+                </tr>
+            
+                <tr>
+                    <td>ChangerSlot</td>
+                    <td>Indicates a storage element, which is a slot in the changer in which media is stored when not mounted in a drive.</td>
+                </tr>
+            
+                <tr>
+                    <td>ChangerTransport</td>
+                    <td>Indicates the changer's robotic transport element, which is used to move media between IEports, slots, and drives.</td>
+                </tr>
 </table>
 
 
@@ -106,9 +111,9 @@ typedef enum _ELEMENT_TYPE {
 | ---- |:---- |
 | **Header** | ntddchgr.h |
 
-## See Also
+    ## See Also
 
-<a href="..\mcd\nf-mcd-changerinitializeelementstatus.md">ChangerInitializeElementStatus</a>
+        <a href="..\mcd\nf-mcd-changerinitializeelementstatus.md">ChangerInitializeElementStatus</a>
 
 <a href="..\mcd\nf-mcd-changersetaccess.md">ChangerSetAccess</a>
 

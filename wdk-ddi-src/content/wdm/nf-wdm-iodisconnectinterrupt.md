@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.IoDisconnectInterrupt
-title : IoDisconnectInterrupt function
-author : windows-driver-content
-description : The IoDisconnectInterrupt routine releases a device driver's set of interrupt object(s) when the device is paused or removed, or when the driver is being unloaded.
-old-location : kernel\iodisconnectinterrupt.htm
-old-project : kernel
-ms.assetid : 06130ec3-7031-4c40-932a-7342c26b7e15
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : IoDisconnectInterrupt routine [Kernel-Mode Driver Architecture], kernel.iodisconnectinterrupt, wdm/IoDisconnectInterrupt, IoDisconnectInterrupt, k104_6ed94efc-9513-4ad3-87d0-cec41e912876.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : IrqlIoPassive4, PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.IoDisconnectInterrupt
+title: IoDisconnectInterrupt function
+author: windows-driver-content
+description: The IoDisconnectInterrupt routine releases a device driver's set of interrupt object(s) when the device is paused or removed, or when the driver is being unloaded.
+old-location: kernel\iodisconnectinterrupt.htm
+old-project: kernel
+ms.assetid: 06130ec3-7031-4c40-932a-7342c26b7e15
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: IoDisconnectInterrupt routine [Kernel-Mode Driver Architecture], kernel.iodisconnectinterrupt, wdm/IoDisconnectInterrupt, IoDisconnectInterrupt, k104_6ed94efc-9513-4ad3-87d0-cec41e912876.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: IrqlIoPassive4, PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoDisconnectInterrupt
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

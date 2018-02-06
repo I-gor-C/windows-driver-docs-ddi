@@ -1,42 +1,47 @@
 ---
-UID : NS:printoem._DEVOBJ
-title : "_DEVOBJ"
-author : windows-driver-content
-description : The DEVOBJ structure is used as an input argument to several of a rendering plug-in's COM interface methods.
-old-location : print\devobj.htm
-old-project : print
-ms.assetid : cdcd0437-e4fc-4041-827f-caa3c435325c
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : "_DEVOBJ, printoem/DEVOBJ, *PDEVOBJ, DEVOBJ structure [Print Devices], print.devobj, print_unidrv-pscript_rendering_defda1bb-3862-4b55-a7bf-38b040667c97.xml, DEVOBJ"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : printoem.h
-req.include-header : Printoem.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDEVOBJ, DEVOBJ"
-req.product : Windows 10 or later.
+UID: NS:printoem._DEVOBJ
+title: "_DEVOBJ"
+author: windows-driver-content
+description: The DEVOBJ structure is used as an input argument to several of a rendering plug-in's COM interface methods.
+old-location: print\devobj.htm
+old-project: print
+ms.assetid: cdcd0437-e4fc-4041-827f-caa3c435325c
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: "_DEVOBJ, printoem/DEVOBJ, *PDEVOBJ, DEVOBJ structure [Print Devices], print.devobj, print_unidrv-pscript_rendering_defda1bb-3862-4b55-a7bf-38b040667c97.xml, DEVOBJ"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: printoem.h
+req.include-header: Printoem.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	printoem.h
+apiname:
+-	DEVOBJ
+product: Windows
+targetos: Windows
+req.typenames: "*PDEVOBJ, DEVOBJ"
+req.product: Windows 10 or later.
 ---
 
 # _DEVOBJ structure

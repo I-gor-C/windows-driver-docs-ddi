@@ -1,41 +1,46 @@
 ---
-UID : NS:acpiioct._ACPI_ENUM_CHILD
-title : "_ACPI_ENUM_CHILD"
-author : windows-driver-content
-description : The ACPI_ENUM_CHILD structure is a member of the ACPI_ENUM_CHILDREN_OUTPUT_BUFFER structure and contains the full path and name of an object in an ACPI namespace.
-old-location : acpi\acpi_enum_child.htm
-old-project : acpi
-ms.assetid : baa0292a-b327-4fc0-9235-b1b977f93bf9
-ms.author : windowsdriverdev
-ms.date : 12/31/2017
-ms.keywords : ACPI_ENUM_CHILD structure [ACPI Devices], _ACPI_ENUM_CHILD, acpi-meth-eval-ref_7ffcb8d5-da55-4ed9-88db-8f954d01852b.xml, ACPI_ENUM_CHILD, acpiioct/ACPI_ENUM_CHILD, *PACPI_ENUM_CHILD, acpi.acpi_enum_child
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : acpiioct.h
-req.include-header : Acpiioct.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows Vista and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : ACPI_ENUM_CHILD
+UID: NS:acpiioct._ACPI_ENUM_CHILD
+title: "_ACPI_ENUM_CHILD"
+author: windows-driver-content
+description: The ACPI_ENUM_CHILD structure is a member of the ACPI_ENUM_CHILDREN_OUTPUT_BUFFER structure and contains the full path and name of an object in an ACPI namespace.
+old-location: acpi\acpi_enum_child.htm
+old-project: acpi
+ms.assetid: baa0292a-b327-4fc0-9235-b1b977f93bf9
+ms.author: windowsdriverdev
+ms.date: 12/31/2017
+ms.keywords: ACPI_ENUM_CHILD structure [ACPI Devices], _ACPI_ENUM_CHILD, acpi-meth-eval-ref_7ffcb8d5-da55-4ed9-88db-8f954d01852b.xml, ACPI_ENUM_CHILD, acpiioct/ACPI_ENUM_CHILD, *PACPI_ENUM_CHILD, acpi.acpi_enum_child
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: acpiioct.h
+req.include-header: Acpiioct.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows Vista and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Acpiioct.h
+apiname:
+-	ACPI_ENUM_CHILD
+product: Windows
+targetos: Windows
+req.typenames: ACPI_ENUM_CHILD
 ---
 
 # _ACPI_ENUM_CHILD structure

@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dhal._D3DHAL_DP2INDEXEDLINESTRIP
-title : "_D3DHAL_DP2INDEXEDLINESTRIP"
-author : windows-driver-content
-description : D3DHAL_DP2INDEXEDLINESTRIP is parsed from the command buffer by the D3dDrawPrimitives2 callback when the D3DHAL_DP2COMMAND structure's bCommand member is set to D3DDP2OP_INDEXEDLINESTRIP, and is used to render a sequence of connected line segments using vertex indices.
-old-location : display\d3dhal_dp2indexedlinestrip.htm
-old-project : display
-ms.assetid : 92809162-c39e-4dbb-9ab1-a5b6535d5beb
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3dstrct_ab23071d-9180-48d0-b14c-7c8005652968.xml, *LPD3DHAL_DP2INDEXEDLINESTRIP, display.d3dhal_dp2indexedlinestrip, d3dhal/D3DHAL_DP2INDEXEDLINESTRIP, _D3DHAL_DP2INDEXEDLINESTRIP, D3DHAL_DP2INDEXEDLINESTRIP structure [Display Devices], D3DHAL_DP2INDEXEDLINESTRIP, LPD3DHAL_DP2INDEXEDLINESTRIP, LPD3DHAL_DP2INDEXEDLINESTRIP structure pointer [Display Devices], d3dhal/LPD3DHAL_DP2INDEXEDLINESTRIP
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dhal.h
-req.include-header : D3dhal.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*LPD3DHAL_DP2INDEXEDLINESTRIP, D3DHAL_DP2INDEXEDLINESTRIP"
+UID: NS:d3dhal._D3DHAL_DP2INDEXEDLINESTRIP
+title: "_D3DHAL_DP2INDEXEDLINESTRIP"
+author: windows-driver-content
+description: D3DHAL_DP2INDEXEDLINESTRIP is parsed from the command buffer by the D3dDrawPrimitives2 callback when the D3DHAL_DP2COMMAND structure's bCommand member is set to D3DDP2OP_INDEXEDLINESTRIP, and is used to render a sequence of connected line segments using vertex indices.
+old-location: display\d3dhal_dp2indexedlinestrip.htm
+old-project: display
+ms.assetid: 92809162-c39e-4dbb-9ab1-a5b6535d5beb
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3dstrct_ab23071d-9180-48d0-b14c-7c8005652968.xml, *LPD3DHAL_DP2INDEXEDLINESTRIP, display.d3dhal_dp2indexedlinestrip, d3dhal/D3DHAL_DP2INDEXEDLINESTRIP, _D3DHAL_DP2INDEXEDLINESTRIP, D3DHAL_DP2INDEXEDLINESTRIP structure [Display Devices], D3DHAL_DP2INDEXEDLINESTRIP, LPD3DHAL_DP2INDEXEDLINESTRIP, LPD3DHAL_DP2INDEXEDLINESTRIP structure pointer [Display Devices], d3dhal/LPD3DHAL_DP2INDEXEDLINESTRIP
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dhal.h
+req.include-header: D3dhal.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dhal.h
+apiname:
+-	D3DHAL_DP2INDEXEDLINESTRIP
+product: Windows
+targetos: Windows
+req.typenames: "*LPD3DHAL_DP2INDEXEDLINESTRIP, D3DHAL_DP2INDEXEDLINESTRIP"
 ---
 
 # _D3DHAL_DP2INDEXEDLINESTRIP structure

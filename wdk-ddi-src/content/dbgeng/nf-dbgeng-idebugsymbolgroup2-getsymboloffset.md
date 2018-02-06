@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugSymbolGroup2.GetSymbolOffset
-title : IDebugSymbolGroup2::GetSymbolOffset method
-author : windows-driver-content
-description : The GetSymbolOffset method retrieves the location in the process's virtual address space of a symbol in a symbol group, if the symbol has an absolute address.
-old-location : debugger\getsymboloffset.htm
-old-project : debugger
-ms.assetid : da3ddebc-109e-43fb-a0e9-fd89d90dbbc7
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugSymbolGroup2 interface [Windows Debugging], GetSymbolOffset method, IDebugSymbolGroup2, debugger.getsymboloffset, IDebugSymbolGroup2::GetSymbolOffset, ComOther_11a91301-541c-4bc3-aa1e-614db8170e03.xml, GetSymbolOffset method [Windows Debugging], dbgeng/IDebugSymbolGroup2::GetSymbolOffset, GetSymbolOffset, GetSymbolOffset method [Windows Debugging], IDebugSymbolGroup2 interface
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSymbolGroup2.GetSymbolOffset
+title: IDebugSymbolGroup2::GetSymbolOffset method
+author: windows-driver-content
+description: The GetSymbolOffset method retrieves the location in the process's virtual address space of a symbol in a symbol group, if the symbol has an absolute address.
+old-location: debugger\getsymboloffset.htm
+old-project: debugger
+ms.assetid: da3ddebc-109e-43fb-a0e9-fd89d90dbbc7
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugSymbolGroup2 interface [Windows Debugging], GetSymbolOffset method, IDebugSymbolGroup2, debugger.getsymboloffset, IDebugSymbolGroup2::GetSymbolOffset, ComOther_11a91301-541c-4bc3-aa1e-614db8170e03.xml, GetSymbolOffset method [Windows Debugging], dbgeng/IDebugSymbolGroup2::GetSymbolOffset, GetSymbolOffset, GetSymbolOffset method [Windows Debugging], IDebugSymbolGroup2 interface
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugSymbolGroup2.GetSymbolOffset
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

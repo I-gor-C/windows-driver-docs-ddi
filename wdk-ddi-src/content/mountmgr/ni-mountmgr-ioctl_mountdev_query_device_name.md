@@ -1,41 +1,46 @@
 ---
-UID : NI:mountmgr.IOCTL_MOUNTDEV_QUERY_DEVICE_NAME
-title : IOCTL_MOUNTDEV_QUERY_DEVICE_NAME
-author : windows-driver-content
-description : Support for this IOCTL by the mount manager clients is mandatory.
-old-location : storage\ioctl_mountdev_query_device_name.htm
-old-project : storage
-ms.assetid : 3df96552-d4f6-4d1c-bc07-3eff5f3eabfb
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_mountdev_query_device_name, IOCTL_MOUNTDEV_QUERY_DEVICE_NAME control code [Storage Devices], IOCTL_MOUNTDEV_QUERY_DEVICE_NAME, mountmgr/IOCTL_MOUNTDEV_QUERY_DEVICE_NAME, k307_4a0b9087-3740-4467-aa0f-ca7f56b8ae13.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : mountmgr.h
-req.include-header : Mountmgr.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PMOUNTDEV_UNIQUE_ID, MOUNTDEV_UNIQUE_ID"
+UID: NI:mountmgr.IOCTL_MOUNTDEV_QUERY_DEVICE_NAME
+title: IOCTL_MOUNTDEV_QUERY_DEVICE_NAME
+author: windows-driver-content
+description: Support for this IOCTL by the mount manager clients is mandatory.
+old-location: storage\ioctl_mountdev_query_device_name.htm
+old-project: storage
+ms.assetid: 3df96552-d4f6-4d1c-bc07-3eff5f3eabfb
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_mountdev_query_device_name, IOCTL_MOUNTDEV_QUERY_DEVICE_NAME control code [Storage Devices], IOCTL_MOUNTDEV_QUERY_DEVICE_NAME, mountmgr/IOCTL_MOUNTDEV_QUERY_DEVICE_NAME, k307_4a0b9087-3740-4467-aa0f-ca7f56b8ae13.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: mountmgr.h
+req.include-header: Mountmgr.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Mountmgr.h
+apiname:
+-	IOCTL_MOUNTDEV_QUERY_DEVICE_NAME
+product: Windows
+targetos: Windows
+req.typenames: "*PMOUNTDEV_UNIQUE_ID, MOUNTDEV_UNIQUE_ID"
 ---
 
 # IOCTL_MOUNTDEV_QUERY_DEVICE_NAME IOCTL

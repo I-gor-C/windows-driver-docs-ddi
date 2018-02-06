@@ -1,41 +1,46 @@
 ---
-UID : NC:dispmprt.DXGK_BRIGHTNESS_SET
-title : DXGK_BRIGHTNESS_SET
-author : windows-driver-content
-description : The DxgkDdiSetBrightness function sets a new brightness level.
-old-location : display\dxgkddisetbrightness.htm
-old-project : display
-ms.assetid : 83609679-20df-463d-ac3a-bb8a87897608
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkddisetbrightness, DxgkDdiSetBrightness callback function [Display Devices], DxgkDdiSetBrightness, DXGK_BRIGHTNESS_SET, DXGK_BRIGHTNESS_SET, dispmprt/DxgkDdiSetBrightness, DmFunctions_7b5ff27a-7a8f-4dee-8b3d-c9b0df76db6d.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : dispmprt.h
-req.include-header : Dispmprt.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
+UID: NC:dispmprt.DXGK_BRIGHTNESS_SET
+title: DXGK_BRIGHTNESS_SET
+author: windows-driver-content
+description: The DxgkDdiSetBrightness function sets a new brightness level.
+old-location: display\dxgkddisetbrightness.htm
+old-project: display
+ms.assetid: 83609679-20df-463d-ac3a-bb8a87897608
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkddisetbrightness, DxgkDdiSetBrightness callback function [Display Devices], DxgkDdiSetBrightness, DXGK_BRIGHTNESS_SET, DXGK_BRIGHTNESS_SET, dispmprt/DxgkDdiSetBrightness, DmFunctions_7b5ff27a-7a8f-4dee-8b3d-c9b0df76db6d.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: dispmprt.h
+req.include-header: Dispmprt.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	dispmprt.h
+apiname:
+-	DxgkDdiSetBrightness
+product: Windows
+targetos: Windows
+req.typenames: SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ---
 
 

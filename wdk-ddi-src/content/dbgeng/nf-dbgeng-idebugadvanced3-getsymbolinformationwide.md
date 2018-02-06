@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugAdvanced3.GetSymbolInformationWide
-title : IDebugAdvanced3::GetSymbolInformationWide method
-author : windows-driver-content
-description : The SetSymbolInformationWide method returns specified information about a symbol.
-old-location : debugger\getsymbolinformationwide.htm
-old-project : debugger
-ms.assetid : 8fa6a00d-ad4e-47e2-bffe-4d9d70846fd6
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugAdvanced3, GetSymbolInformationWide method [Windows Debugging], IDebugAdvanced3 interface, GetSymbolInformationWide, dbgeng/IDebugAdvanced3::GetSymbolInformationWide, IDebugAdvanced3 interface [Windows Debugging], GetSymbolInformationWide method, debugger.getsymbolinformationwide, IDebugAdvanced3::GetSymbolInformationWide, GetSymbolInformationWide method [Windows Debugging]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugAdvanced3.GetSymbolInformationWide
+title: IDebugAdvanced3::GetSymbolInformationWide method
+author: windows-driver-content
+description: The SetSymbolInformationWide method returns specified information about a symbol.
+old-location: debugger\getsymbolinformationwide.htm
+old-project: debugger
+ms.assetid: 8fa6a00d-ad4e-47e2-bffe-4d9d70846fd6
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugAdvanced3, GetSymbolInformationWide method [Windows Debugging], IDebugAdvanced3 interface, GetSymbolInformationWide, dbgeng/IDebugAdvanced3::GetSymbolInformationWide, IDebugAdvanced3 interface [Windows Debugging], GetSymbolInformationWide method, debugger.getsymbolinformationwide, IDebugAdvanced3::GetSymbolInformationWide, GetSymbolInformationWide method [Windows Debugging]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugAdvanced3.GetSymbolInformationWide
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

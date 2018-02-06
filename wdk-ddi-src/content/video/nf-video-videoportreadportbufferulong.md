@@ -1,42 +1,47 @@
 ---
-UID : NF:video.VideoPortReadPortBufferUlong
-title : VideoPortReadPortBufferUlong function
-author : windows-driver-content
-description : The VideoPortReadPortBufferUlong function reads a number of ULONG values from a mapped I/O port and writes them into a buffer.
-old-location : display\videoportreadportbufferulong.htm
-old-project : display
-ms.assetid : ecc09ca7-77fe-434f-9892-c2ae93d7d73c
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : video/VideoPortReadPortBufferUlong, display.videoportreadportbufferulong, VideoPort_Functions_a73970c1-c2cd-4d3c-a6e3-194eaacb978a.xml, VideoPortReadPortBufferUlong, VideoPortReadPortBufferUlong function [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows 2000 and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Videoprt.lib
-req.dll : Videoprt.sys
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_PORT_SERVICES
-req.product : Windows 10 or later.
+UID: NF:video.VideoPortReadPortBufferUlong
+title: VideoPortReadPortBufferUlong function
+author: windows-driver-content
+description: The VideoPortReadPortBufferUlong function reads a number of ULONG values from a mapped I/O port and writes them into a buffer.
+old-location: display\videoportreadportbufferulong.htm
+old-project: display
+ms.assetid: ecc09ca7-77fe-434f-9892-c2ae93d7d73c
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: video/VideoPortReadPortBufferUlong, display.videoportreadportbufferulong, VideoPort_Functions_a73970c1-c2cd-4d3c-a6e3-194eaacb978a.xml, VideoPortReadPortBufferUlong, VideoPortReadPortBufferUlong function [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows 2000 and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Videoprt.lib
+req.dll: Videoprt.sys
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Videoprt.sys
+apiname:
+-	VideoPortReadPortBufferUlong
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_PORT_SERVICES
+req.product: Windows 10 or later.
 ---
 
 

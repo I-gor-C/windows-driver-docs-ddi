@@ -1,42 +1,47 @@
 ---
-UID : NE:windot11._DOT11_POWER_MODE_REASON
-title : "_DOT11_POWER_MODE_REASON"
-author : windows-driver-content
-description : The DOT11_POWER_MODE_REASON lists the different reasons for changes to auto power save mode state.
-old-location : netvista\dot11_power_mode_reason.htm
-old-project : netvista
-ms.assetid : 0B8402B5-CFDA-402F-BA7A-A44478333C04
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : dot11_power_mode_reason_compliant_WFD_device, windot11/dot11_power_mode_reason_compliant_WFD_device, windot11/dot11_power_mode_reason_compliant_AP, windot11/dot11_power_mode_reason_legacy_WFD_device, windot11/dot11_power_mode_reason_others, _DOT11_POWER_MODE_REASON, dot11_power_mode_reason_noncompliant_AP, netvista.dot11_power_mode_reason, windot11/dot11_power_mode_reason_noncompliant_AP, dot11_power_mode_reason_compliant_AP, DOT11_POWER_MODE_REASON, windot11/dot11_power_mode_reason_no_change, DOT11_POWER_MODE_REASON enumeration [Network Drivers Starting with Windows Vista], windot11/DOT11_POWER_MODE_REASON, dot11_power_mode_reason_legacy_WFD_device, dot11_power_mode_reason_others, dot11_power_mode_reason_no_change
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : windot11.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with  Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT11_POWER_MODE_REASON
-req.product : Windows 10 or later.
+UID: NE:windot11._DOT11_POWER_MODE_REASON
+title: "_DOT11_POWER_MODE_REASON"
+author: windows-driver-content
+description: The DOT11_POWER_MODE_REASON lists the different reasons for changes to auto power save mode state.
+old-location: netvista\dot11_power_mode_reason.htm
+old-project: netvista
+ms.assetid: 0B8402B5-CFDA-402F-BA7A-A44478333C04
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: dot11_power_mode_reason_compliant_WFD_device, windot11/dot11_power_mode_reason_compliant_WFD_device, windot11/dot11_power_mode_reason_compliant_AP, windot11/dot11_power_mode_reason_legacy_WFD_device, windot11/dot11_power_mode_reason_others, _DOT11_POWER_MODE_REASON, dot11_power_mode_reason_noncompliant_AP, netvista.dot11_power_mode_reason, windot11/dot11_power_mode_reason_noncompliant_AP, dot11_power_mode_reason_compliant_AP, DOT11_POWER_MODE_REASON, windot11/dot11_power_mode_reason_no_change, DOT11_POWER_MODE_REASON enumeration [Network Drivers Starting with Windows Vista], windot11/DOT11_POWER_MODE_REASON, dot11_power_mode_reason_legacy_WFD_device, dot11_power_mode_reason_others, dot11_power_mode_reason_no_change
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: windot11.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with  Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Windot11.h
+apiname:
+-	DOT11_POWER_MODE_REASON
+product: Windows
+targetos: Windows
+req.typenames: DOT11_POWER_MODE_REASON
+req.product: Windows 10 or later.
 ---
 
 # _DOT11_POWER_MODE_REASON Enumeration
@@ -57,36 +62,36 @@ typedef enum _DOT11_POWER_MODE_REASON {
 ## Constants
 
 <table>
-
-<tr>
-<td>dot11_power_mode_reason_compliant_AP</td>
-<td>AP is compliant.</td>
-</tr>
-
-<tr>
-<td>dot11_power_mode_reason_compliant_WFD_device</td>
-<td>All connected WFD device can do PSM.</td>
-</tr>
-
-<tr>
-<td>dot11_power_mode_reason_legacy_WFD_device</td>
-<td>WFD device is legacy.</td>
-</tr>
-
-<tr>
-<td>dot11_power_mode_reason_no_change</td>
-<td>Device is initially in this state and has not changed since.</td>
-</tr>
-
-<tr>
-<td>dot11_power_mode_reason_noncompliant_AP</td>
-<td>AP is not compliant. As to be in CAM.</td>
-</tr>
-
-<tr>
-<td>dot11_power_mode_reason_others</td>
-<td>Other reason.</td>
-</tr>
+            
+                <tr>
+                    <td>dot11_power_mode_reason_compliant_AP</td>
+                    <td>AP is compliant.</td>
+                </tr>
+            
+                <tr>
+                    <td>dot11_power_mode_reason_compliant_WFD_device</td>
+                    <td>All connected WFD device can do PSM.</td>
+                </tr>
+            
+                <tr>
+                    <td>dot11_power_mode_reason_legacy_WFD_device</td>
+                    <td>WFD device is legacy.</td>
+                </tr>
+            
+                <tr>
+                    <td>dot11_power_mode_reason_no_change</td>
+                    <td>Device is initially in this state and has not changed since.</td>
+                </tr>
+            
+                <tr>
+                    <td>dot11_power_mode_reason_noncompliant_AP</td>
+                    <td>AP is not compliant. As to be in CAM.</td>
+                </tr>
+            
+                <tr>
+                    <td>dot11_power_mode_reason_others</td>
+                    <td>Other reason.</td>
+                </tr>
 </table>
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddvdeo.IOCTL_VIDEO_QUERY_COLOR_CAPABILITIES
-title : IOCTL_VIDEO_QUERY_COLOR_CAPABILITIES
-author : windows-driver-content
-description : Returns the color-capabilities information found in the VDDP description file for the adapter.
-old-location : display\ioctl_video_query_color_capabilities.htm
-old-project : display
-ms.assetid : ba1a1fcd-9551-41cb-b1f9-097b51a26380
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.ioctl_video_query_color_capabilities, IOCTL_VIDEO_QUERY_COLOR_CAPABILITIES control code [Display Devices], IOCTL_VIDEO_QUERY_COLOR_CAPABILITIES, ntddvdeo/IOCTL_VIDEO_QUERY_COLOR_CAPABILITIES, Video_IOCTLs_26b0d5c4-d7b5-4056-9d78-6b9fa9a8ab72.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddvdeo.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TAPE_WRITE_MARKS, *PTAPE_WRITE_MARKS
+UID: NI:ntddvdeo.IOCTL_VIDEO_QUERY_COLOR_CAPABILITIES
+title: IOCTL_VIDEO_QUERY_COLOR_CAPABILITIES
+author: windows-driver-content
+description: Returns the color-capabilities information found in the VDDP description file for the adapter.
+old-location: display\ioctl_video_query_color_capabilities.htm
+old-project: display
+ms.assetid: ba1a1fcd-9551-41cb-b1f9-097b51a26380
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.ioctl_video_query_color_capabilities, IOCTL_VIDEO_QUERY_COLOR_CAPABILITIES control code [Display Devices], IOCTL_VIDEO_QUERY_COLOR_CAPABILITIES, ntddvdeo/IOCTL_VIDEO_QUERY_COLOR_CAPABILITIES, Video_IOCTLs_26b0d5c4-d7b5-4056-9d78-6b9fa9a8ab72.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddvdeo.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddvdeo.h
+apiname:
+-	IOCTL_VIDEO_QUERY_COLOR_CAPABILITIES
+product: Windows
+targetos: Windows
+req.typenames: TAPE_WRITE_MARKS, *PTAPE_WRITE_MARKS
 ---
 
 # IOCTL_VIDEO_QUERY_COLOR_CAPABILITIES IOCTL

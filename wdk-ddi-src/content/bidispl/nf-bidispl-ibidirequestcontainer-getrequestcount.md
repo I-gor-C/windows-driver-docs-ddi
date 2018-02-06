@@ -1,42 +1,46 @@
 ---
-UID : NF:bidispl.IBidiRequestContainer.GetRequestCount
-title : IBidiRequestContainer::GetRequestCount method
-author : windows-driver-content
-description : The IBidiRequestContainer::GetRequestCount method gets the number of requests in the request list.
-old-location : print\ibidirequestcontainer_ibidirequestcontainer__getrequestcount.htm
-old-project : print
-ms.assetid : 4215ca86-9ceb-451d-8e67-992a8a3f9bab
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : gdi.ibidirequestcontainer_ibidirequestcontainer__getrequestcount, IBidiRequestContainer interface [Print Devices], IBidiRequestContainer::GetRequestCount method, print.ibidirequestcontainer_ibidirequestcontainer__getrequestcount, bidispl/IBidiRequestContainer::IBidiRequestContainer::GetRequestCount, IBidiRequestContainer::GetRequestCount method [Print Devices], IBidiRequestContainer interface, _win32_IBidiRequestContainer_GetRequestCount, IBidiRequestContainer::GetRequestCount method [Print Devices], GetRequestCount, IBidiRequestContainer::IBidiRequestContainer::GetRequestCount, IBidiRequestContainer, IBidiRequestContainer::GetRequestCount
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : bidispl.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Windows XP
-req.target-min-winversvr : Windows Server 2003
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : bidispl.h
-req.dll : Bidispl.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
+UID: NF:bidispl.IBidiRequestContainer.GetRequestCount
+title: IBidiRequestContainer::GetRequestCount method
+author: windows-driver-content
+description: The IBidiRequestContainer::GetRequestCount method gets the number of requests in the request list.
+old-location: print\ibidirequestcontainer_ibidirequestcontainer__getrequestcount.htm
+old-project: print
+ms.assetid: 4215ca86-9ceb-451d-8e67-992a8a3f9bab
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: gdi.ibidirequestcontainer_ibidirequestcontainer__getrequestcount, IBidiRequestContainer interface [Print Devices], IBidiRequestContainer::GetRequestCount method, print.ibidirequestcontainer_ibidirequestcontainer__getrequestcount, bidispl/IBidiRequestContainer::IBidiRequestContainer::GetRequestCount, IBidiRequestContainer::GetRequestCount method [Print Devices], IBidiRequestContainer interface, _win32_IBidiRequestContainer_GetRequestCount, IBidiRequestContainer::GetRequestCount method [Print Devices], GetRequestCount, IBidiRequestContainer::IBidiRequestContainer::GetRequestCount, IBidiRequestContainer, IBidiRequestContainer::GetRequestCount
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: bidispl.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Windows XP
+req.target-min-winversvr: Windows Server 2003
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: bidispl.h
+req.dll: Bidispl.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	bidispl.dll
+apiname:
 -	IBidiRequestContainer.IBidiRequestContainer::GetRequestCount
-product : Windows
-targetos : Windows
-req.typenames : "*PMPEG2_TRANSPORT_STRIDE, MPEG2_TRANSPORT_STRIDE"
+product: Windows
+targetos: Windows
+req.typenames: "*PMPEG2_TRANSPORT_STRIDE, MPEG2_TRANSPORT_STRIDE"
 ---
 
 

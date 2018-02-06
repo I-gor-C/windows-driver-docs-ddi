@@ -1,41 +1,49 @@
 ---
-UID : NF:irb.AtaPortWritePortBufferUlong
-title : AtaPortWritePortBufferUlong function
-author : windows-driver-content
-description : The AtaPortWritePortBufferUlong routine transfers the indicated number of ULONG values from a buffer to the HBA.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
-old-location : storage\ataportwriteportbufferulong.htm
-old-project : storage
-ms.assetid : 0ee4ef0a-1b6e-4e94-8a3d-ed5215dc5f31
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : atartns_877f49af-a38e-4468-896a-0e79a4e9effa.xml, AtaPortWritePortBufferUlong, storage.ataportwriteportbufferulong, AtaPortWritePortBufferUlong routine [Storage Devices], irb/AtaPortWritePortBufferUlong
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : irb.h
-req.include-header : Ata.h, Irb.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ataport.lib; Pciidex.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : IDE_POWER_STATE
+UID: NF:irb.AtaPortWritePortBufferUlong
+title: AtaPortWritePortBufferUlong function
+author: windows-driver-content
+description: The AtaPortWritePortBufferUlong routine transfers the indicated number of ULONG values from a buffer to the HBA.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
+old-location: storage\ataportwriteportbufferulong.htm
+old-project: storage
+ms.assetid: 0ee4ef0a-1b6e-4e94-8a3d-ed5215dc5f31
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: atartns_877f49af-a38e-4468-896a-0e79a4e9effa.xml, AtaPortWritePortBufferUlong, storage.ataportwriteportbufferulong, AtaPortWritePortBufferUlong routine [Storage Devices], irb/AtaPortWritePortBufferUlong
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: irb.h
+req.include-header: Ata.h, Irb.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ataport.lib; Pciidex.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ataport.lib
+-	ataport.dll
+-	pciidex.lib
+-	pciidex.dll
+apiname:
+-	AtaPortWritePortBufferUlong
+product: Windows
+targetos: Windows
+req.typenames: IDE_POWER_STATE
 ---
 
 

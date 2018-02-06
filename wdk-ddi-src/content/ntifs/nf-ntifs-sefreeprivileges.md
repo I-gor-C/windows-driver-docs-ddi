@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.SeFreePrivileges
-title : SeFreePrivileges function
-author : windows-driver-content
-description : The SeFreePrivileges routine frees a privilege set returned by SeAccessCheck.
-old-location : kernel\sefreeprivileges.htm
-old-project : kernel
-ms.assetid : 5b8ba64e-3147-45b4-9861-da2186c2ba10
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : SeFreePrivileges, SeFreePrivileges routine [Kernel-Mode Driver Architecture], seref_e40724d7-f170-4dbd-89a6-2cdcdd13e87d.xml, kernel.sefreeprivileges, ntifs/SeFreePrivileges
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.SeFreePrivileges
+title: SeFreePrivileges function
+author: windows-driver-content
+description: The SeFreePrivileges routine frees a privilege set returned by SeAccessCheck.
+old-location: kernel\sefreeprivileges.htm
+old-project: kernel
+ms.assetid: 5b8ba64e-3147-45b4-9861-da2186c2ba10
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: SeFreePrivileges, SeFreePrivileges routine [Kernel-Mode Driver Architecture], seref_e40724d7-f170-4dbd-89a6-2cdcdd13e87d.xml, kernel.sefreeprivileges, ntifs/SeFreePrivileges
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	SeFreePrivileges
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

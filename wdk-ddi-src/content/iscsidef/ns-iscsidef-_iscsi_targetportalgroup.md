@@ -1,41 +1,46 @@
 ---
-UID : NS:iscsidef._ISCSI_TargetPortalGroup
-title : "_ISCSI_TargetPortalGroup"
-author : windows-driver-content
-description : The ISCSI_TargetPortalGroup structure provides a definition of a target portal group.
-old-location : storage\iscsi_targetportalgroup.htm
-old-project : storage
-ms.assetid : 28f48224-90b8-45f5-b69d-6bb6a34f64e0
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : ISCSI_TargetPortalGroup structure [Storage Devices], structs-iSCSI_27b8d554-5021-49d0-837c-302e7ac033ed.xml, *PISCSI_TargetPortalGroup, ISCSI_TargetPortalGroup, iscsidef/PISCSI_TargetPortalGroup, PISCSI_TargetPortalGroup structure pointer [Storage Devices], _ISCSI_TargetPortalGroup, PISCSI_TargetPortalGroup, storage.iscsi_targetportalgroup, iscsidef/ISCSI_TargetPortalGroup
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : iscsidef.h
-req.include-header : Iscsidef.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PISCSI_TargetPortalGroup, ISCSI_TargetPortalGroup"
+UID: NS:iscsidef._ISCSI_TargetPortalGroup
+title: "_ISCSI_TargetPortalGroup"
+author: windows-driver-content
+description: The ISCSI_TargetPortalGroup structure provides a definition of a target portal group.
+old-location: storage\iscsi_targetportalgroup.htm
+old-project: storage
+ms.assetid: 28f48224-90b8-45f5-b69d-6bb6a34f64e0
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: ISCSI_TargetPortalGroup structure [Storage Devices], structs-iSCSI_27b8d554-5021-49d0-837c-302e7ac033ed.xml, *PISCSI_TargetPortalGroup, ISCSI_TargetPortalGroup, iscsidef/PISCSI_TargetPortalGroup, PISCSI_TargetPortalGroup structure pointer [Storage Devices], _ISCSI_TargetPortalGroup, PISCSI_TargetPortalGroup, storage.iscsi_targetportalgroup, iscsidef/ISCSI_TargetPortalGroup
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: iscsidef.h
+req.include-header: Iscsidef.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	iscsidef.h
+apiname:
+-	ISCSI_TargetPortalGroup
+product: Windows
+targetos: Windows
+req.typenames: "*PISCSI_TargetPortalGroup, ISCSI_TargetPortalGroup"
 ---
 
 # _ISCSI_TargetPortalGroup structure

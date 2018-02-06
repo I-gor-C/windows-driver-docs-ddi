@@ -1,41 +1,47 @@
 ---
-UID : NF:aux_klib.AuxKlibGetSystemFirmwareTable
-title : AuxKlibGetSystemFirmwareTable function
-author : windows-driver-content
-description : The AuxKlibGetSystemFirmwareTable routine retrieves the specified firmware table from the firmware table provider.
-old-location : kernel\auxklibgetsystemfirmwaretable.htm
-old-project : kernel
-ms.assetid : 548C850F-87AF-43E0-BD87-5531D9874D4D
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : AuxKlibGetSystemFirmwareTable routine [Kernel-Mode Driver Architecture], AuxKlibGetSystemFirmwareTable, aux_klib/AuxKlibGetSystemFirmwareTable, kernel.auxklibgetsystemfirmwaretable
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : aux_klib.h
-req.include-header : Aux_klib.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Aux_Klib.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : REPORT_ZONES_EXT_DATA, *PREPORT_ZONES_EXT_DATA
+UID: NF:aux_klib.AuxKlibGetSystemFirmwareTable
+title: AuxKlibGetSystemFirmwareTable function
+author: windows-driver-content
+description: The AuxKlibGetSystemFirmwareTable routine retrieves the specified firmware table from the firmware table provider.
+old-location: kernel\auxklibgetsystemfirmwaretable.htm
+old-project: kernel
+ms.assetid: 548C850F-87AF-43E0-BD87-5531D9874D4D
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: AuxKlibGetSystemFirmwareTable routine [Kernel-Mode Driver Architecture], AuxKlibGetSystemFirmwareTable, aux_klib/AuxKlibGetSystemFirmwareTable, kernel.auxklibgetsystemfirmwaretable
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: aux_klib.h
+req.include-header: Aux_klib.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Aux_Klib.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Aux_Klib.lib
+-	Aux_Klib.dll
+apiname:
+-	AuxKlibGetSystemFirmwareTable
+product: Windows
+targetos: Windows
+req.typenames: REPORT_ZONES_EXT_DATA, *PREPORT_ZONES_EXT_DATA
 ---
 
 

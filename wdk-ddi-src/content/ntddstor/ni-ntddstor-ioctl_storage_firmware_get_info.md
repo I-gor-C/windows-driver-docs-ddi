@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddstor.IOCTL_STORAGE_FIRMWARE_GET_INFO
-title : IOCTL_STORAGE_FIRMWARE_GET_INFO
-author : windows-driver-content
-description : A driver can use IOCTL_STORAGE_FIRMWARE_GET_INFO to query a storage device for detailed firmware information.
-old-location : storage\ioctl_storage_firmware_get_info.htm
-old-project : storage
-ms.assetid : AB5FA3A5-1187-4925-9EC0-62870851AED1
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_storage_firmware_get_info, IOCTL_STORAGE_FIRMWARE_GET_INFO control code [Storage Devices], IOCTL_STORAGE_FIRMWARE_GET_INFO, ntddstor/IOCTL_STORAGE_FIRMWARE_GET_INFO
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddstor.h
-req.include-header : Ntddstor.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STORAGE_ZONE_CONDITION, *PSTORAGE_ZONE_CONDITION
+UID: NI:ntddstor.IOCTL_STORAGE_FIRMWARE_GET_INFO
+title: IOCTL_STORAGE_FIRMWARE_GET_INFO
+author: windows-driver-content
+description: A driver can use IOCTL_STORAGE_FIRMWARE_GET_INFO to query a storage device for detailed firmware information.
+old-location: storage\ioctl_storage_firmware_get_info.htm
+old-project: storage
+ms.assetid: AB5FA3A5-1187-4925-9EC0-62870851AED1
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_storage_firmware_get_info, IOCTL_STORAGE_FIRMWARE_GET_INFO control code [Storage Devices], IOCTL_STORAGE_FIRMWARE_GET_INFO, ntddstor/IOCTL_STORAGE_FIRMWARE_GET_INFO
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddstor.h
+req.include-header: Ntddstor.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddstor.h
+apiname:
+-	IOCTL_STORAGE_FIRMWARE_GET_INFO
+product: Windows
+targetos: Windows
+req.typenames: STORAGE_ZONE_CONDITION, *PSTORAGE_ZONE_CONDITION
 ---
 
 # IOCTL_STORAGE_FIRMWARE_GET_INFO IOCTL

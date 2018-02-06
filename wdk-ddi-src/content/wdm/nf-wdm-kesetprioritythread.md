@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.KeSetPriorityThread
-title : KeSetPriorityThread function
-author : windows-driver-content
-description : The KeSetPriorityThread routine sets the run-time priority of a driver-created thread.
-old-location : kernel\kesetprioritythread.htm
-old-project : kernel
-ms.assetid : 400176a1-9192-424b-be37-9386cc3ffbb2
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : k105_b767dc2c-39ec-41de-8888-177d83de67c4.xml, wdm/KeSetPriorityThread, KeSetPriorityThread routine [Kernel-Mode Driver Architecture], kernel.kesetprioritythread, KeSetPriorityThread
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.KeSetPriorityThread
+title: KeSetPriorityThread function
+author: windows-driver-content
+description: The KeSetPriorityThread routine sets the run-time priority of a driver-created thread.
+old-location: kernel\kesetprioritythread.htm
+old-project: kernel
+ms.assetid: 400176a1-9192-424b-be37-9386cc3ffbb2
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: k105_b767dc2c-39ec-41de-8888-177d83de67c4.xml, wdm/KeSetPriorityThread, KeSetPriorityThread routine [Kernel-Mode Driver Architecture], kernel.kesetprioritythread, KeSetPriorityThread
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	KeSetPriorityThread
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:pmi._PMI_BUDGETING_CONFIGURATION
-title : "_PMI_BUDGETING_CONFIGURATION"
-author : windows-driver-content
-description : The PMI_BUDGETING_CONFIGURATION structure contains information about the current power budget of a power meter. A power budget defines how much power that the system can consume from the set of power supplies monitored by the power meter.
-old-location : powermeter\pmi_budgeting_configuration.htm
-old-project : powermeter
-ms.assetid : f9c3c289-30b8-4cec-8c38-198d1ba3d8ae
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : PPMI_BUDGETING_CONFIGURATION, *PPMI_BUDGETING_CONFIGURATION, pmi/PMI_BUDGETING_CONFIGURATION, powermeter.pmi_budgeting_configuration, PMI_BUDGETING_CONFIGURATION, PMI_BUDGETING_CONFIGURATION structure [Power Metering and Budgeting Devices], PPMI_BUDGETING_CONFIGURATION structure pointer [Power Metering and Budgeting Devices], PowerMeterRef_4f031bae-843f-473d-9f3c-d7caf7a9ef1a.xml, _PMI_BUDGETING_CONFIGURATION, pmi/PPMI_BUDGETING_CONFIGURATION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : pmi.h
-req.include-header : Pmi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7, Windows Server 2008 R2, and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PMI_BUDGETING_CONFIGURATION, *PPMI_BUDGETING_CONFIGURATION
+UID: NS:pmi._PMI_BUDGETING_CONFIGURATION
+title: "_PMI_BUDGETING_CONFIGURATION"
+author: windows-driver-content
+description: The PMI_BUDGETING_CONFIGURATION structure contains information about the current power budget of a power meter. A power budget defines how much power that the system can consume from the set of power supplies monitored by the power meter.
+old-location: powermeter\pmi_budgeting_configuration.htm
+old-project: powermeter
+ms.assetid: f9c3c289-30b8-4cec-8c38-198d1ba3d8ae
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: PPMI_BUDGETING_CONFIGURATION, *PPMI_BUDGETING_CONFIGURATION, pmi/PMI_BUDGETING_CONFIGURATION, powermeter.pmi_budgeting_configuration, PMI_BUDGETING_CONFIGURATION, PMI_BUDGETING_CONFIGURATION structure [Power Metering and Budgeting Devices], PPMI_BUDGETING_CONFIGURATION structure pointer [Power Metering and Budgeting Devices], PowerMeterRef_4f031bae-843f-473d-9f3c-d7caf7a9ef1a.xml, _PMI_BUDGETING_CONFIGURATION, pmi/PPMI_BUDGETING_CONFIGURATION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: pmi.h
+req.include-header: Pmi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7, Windows Server 2008 R2, and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	pmi.h
+apiname:
+-	PMI_BUDGETING_CONFIGURATION
+product: Windows
+targetos: Windows
+req.typenames: PMI_BUDGETING_CONFIGURATION, *PPMI_BUDGETING_CONFIGURATION
 ---
 
 # _PMI_BUDGETING_CONFIGURATION structure

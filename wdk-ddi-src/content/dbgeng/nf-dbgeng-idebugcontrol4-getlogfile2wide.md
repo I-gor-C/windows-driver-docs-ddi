@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugControl4.GetLogFile2Wide
-title : IDebugControl4::GetLogFile2Wide method
-author : windows-driver-content
-description : The GetLogFile2Wide method returns the name of the currently open log file.
-old-location : debugger\getlogfile2wide.htm
-old-project : debugger
-ms.assetid : 8c11811f-c3d3-494b-98d7-15540d5afb24
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugControl4 interface [Windows Debugging], GetLogFile2Wide method, GetLogFile2Wide method [Windows Debugging], GetLogFile2Wide, GetLogFile2Wide method [Windows Debugging], IDebugControl4 interface, dbgeng/IDebugControl4::GetLogFile2Wide, IDebugControl4::GetLogFile2Wide, IDebugControl4, debugger.getlogfile2wide
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl4.GetLogFile2Wide
+title: IDebugControl4::GetLogFile2Wide method
+author: windows-driver-content
+description: The GetLogFile2Wide method returns the name of the currently open log file.
+old-location: debugger\getlogfile2wide.htm
+old-project: debugger
+ms.assetid: 8c11811f-c3d3-494b-98d7-15540d5afb24
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugControl4 interface [Windows Debugging], GetLogFile2Wide method, GetLogFile2Wide method [Windows Debugging], GetLogFile2Wide, GetLogFile2Wide method [Windows Debugging], IDebugControl4 interface, dbgeng/IDebugControl4::GetLogFile2Wide, IDebugControl4::GetLogFile2Wide, IDebugControl4, debugger.getlogfile2wide
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl4.GetLogFile2Wide
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

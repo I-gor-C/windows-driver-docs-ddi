@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.KS_AM_ExactRateChange
-title : KS_AM_ExactRateChange
-author : windows-driver-content
-description : The KS_AM_ExactRateChange structure is not yet implemented.
-old-location : stream\ks_am_exactratechange.htm
-old-project : stream
-ms.assetid : c7ffc52a-e7cd-4ba1-9696-568719166713
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : PKS_AM_ExactRateChange, dvdref_bbe80dae-5cb8-45f8-a283-c0a2af794525.xml, KS_AM_ExactRateChange, *PKS_AM_ExactRateChange, PKS_AM_ExactRateChange structure pointer [Streaming Media Devices], ksmedia/KS_AM_ExactRateChange, ksmedia/PKS_AM_ExactRateChange, stream.ks_am_exactratechange, KS_AM_ExactRateChange structure [Streaming Media Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KS_AM_ExactRateChange, *PKS_AM_ExactRateChange
+UID: NS:ksmedia.KS_AM_ExactRateChange
+title: KS_AM_ExactRateChange
+author: windows-driver-content
+description: The KS_AM_ExactRateChange structure is not yet implemented.
+old-location: stream\ks_am_exactratechange.htm
+old-project: stream
+ms.assetid: c7ffc52a-e7cd-4ba1-9696-568719166713
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: PKS_AM_ExactRateChange, dvdref_bbe80dae-5cb8-45f8-a283-c0a2af794525.xml, KS_AM_ExactRateChange, *PKS_AM_ExactRateChange, PKS_AM_ExactRateChange structure pointer [Streaming Media Devices], ksmedia/KS_AM_ExactRateChange, ksmedia/PKS_AM_ExactRateChange, stream.ks_am_exactratechange, KS_AM_ExactRateChange structure [Streaming Media Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	KS_AM_ExactRateChange
+product: Windows
+targetos: Windows
+req.typenames: KS_AM_ExactRateChange, *PKS_AM_ExactRateChange
 ---
 
 # KS_AM_ExactRateChange structure

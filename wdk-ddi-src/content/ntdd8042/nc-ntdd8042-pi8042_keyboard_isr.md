@@ -1,41 +1,46 @@
 ---
-UID : NC:ntdd8042.PI8042_KEYBOARD_ISR
-title : PI8042_KEYBOARD_ISR
-author : windows-driver-content
-description : A PI8042_KEYBOARD_ISR-typed callback routine customizes the operation of the I8042prt keyboard ISR.
-old-location : hid\pi8042_keyboard_isr.htm
-old-project : hid
-ms.assetid : e21fa089-0650-4a3f-96f9-f479d36ef080
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : hid.pi8042_keyboard_isr, KeyboardIsr callback function [Human Input Devices], KeyboardIsr, PI8042_KEYBOARD_ISR, PI8042_KEYBOARD_ISR, ntdd8042/KeyboardIsr, i8042ref_34293f47-3e6c-4721-ab58-8ac531543c8e.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ntdd8042.h
-req.include-header : Ntdd8042.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : MSFC_VirtualFibrePortAttributes, *PMSFC_VirtualFibrePortAttributes
+UID: NC:ntdd8042.PI8042_KEYBOARD_ISR
+title: PI8042_KEYBOARD_ISR
+author: windows-driver-content
+description: A PI8042_KEYBOARD_ISR-typed callback routine customizes the operation of the I8042prt keyboard ISR.
+old-location: hid\pi8042_keyboard_isr.htm
+old-project: hid
+ms.assetid: e21fa089-0650-4a3f-96f9-f479d36ef080
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: hid.pi8042_keyboard_isr, KeyboardIsr callback function [Human Input Devices], KeyboardIsr, PI8042_KEYBOARD_ISR, PI8042_KEYBOARD_ISR, ntdd8042/KeyboardIsr, i8042ref_34293f47-3e6c-4721-ab58-8ac531543c8e.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ntdd8042.h
+req.include-header: Ntdd8042.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	ntdd8042.h
+apiname:
+-	KeyboardIsr
+product: Windows
+targetos: Windows
+req.typenames: MSFC_VirtualFibrePortAttributes, *PMSFC_VirtualFibrePortAttributes
 ---
 
 

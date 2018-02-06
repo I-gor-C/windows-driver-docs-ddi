@@ -1,41 +1,46 @@
 ---
-UID : NS:mountmgr._MOUNTMGR_CREATE_POINT_INPUT
-title : "_MOUNTMGR_CREATE_POINT_INPUT"
-author : windows-driver-content
-description : The MOUNTMGR_CREATE_POINT_INPUT structure is used by the mount manager to send a symbolic link name to a client that has requested symbolic link name by means of an IOCTL_MOUNTMGR_CREATE_POINT request.
-old-location : storage\mountmgr_create_point_input.htm
-old-project : storage
-ms.assetid : b53d5163-612d-4bfb-89f4-21457629e365
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : "_MOUNTMGR_CREATE_POINT_INPUT, *PMOUNTMGR_CREATE_POINT_INPUT, structs-mntmgr_24dea6c0-cfff-4f87-a8d3-c019aa5b46c3.xml, PMOUNTMGR_CREATE_POINT_INPUT, PMOUNTMGR_CREATE_POINT_INPUT structure pointer [Storage Devices], mountmgr/MOUNTMGR_CREATE_POINT_INPUT, MOUNTMGR_CREATE_POINT_INPUT, MOUNTMGR_CREATE_POINT_INPUT structure [Storage Devices], mountmgr/PMOUNTMGR_CREATE_POINT_INPUT, storage.mountmgr_create_point_input"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : mountmgr.h
-req.include-header : Mountmgr.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PMOUNTMGR_CREATE_POINT_INPUT, MOUNTMGR_CREATE_POINT_INPUT"
+UID: NS:mountmgr._MOUNTMGR_CREATE_POINT_INPUT
+title: "_MOUNTMGR_CREATE_POINT_INPUT"
+author: windows-driver-content
+description: The MOUNTMGR_CREATE_POINT_INPUT structure is used by the mount manager to send a symbolic link name to a client that has requested symbolic link name by means of an IOCTL_MOUNTMGR_CREATE_POINT request.
+old-location: storage\mountmgr_create_point_input.htm
+old-project: storage
+ms.assetid: b53d5163-612d-4bfb-89f4-21457629e365
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: "_MOUNTMGR_CREATE_POINT_INPUT, *PMOUNTMGR_CREATE_POINT_INPUT, structs-mntmgr_24dea6c0-cfff-4f87-a8d3-c019aa5b46c3.xml, PMOUNTMGR_CREATE_POINT_INPUT, PMOUNTMGR_CREATE_POINT_INPUT structure pointer [Storage Devices], mountmgr/MOUNTMGR_CREATE_POINT_INPUT, MOUNTMGR_CREATE_POINT_INPUT, MOUNTMGR_CREATE_POINT_INPUT structure [Storage Devices], mountmgr/PMOUNTMGR_CREATE_POINT_INPUT, storage.mountmgr_create_point_input"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: mountmgr.h
+req.include-header: Mountmgr.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	mountmgr.h
+apiname:
+-	MOUNTMGR_CREATE_POINT_INPUT
+product: Windows
+targetos: Windows
+req.typenames: "*PMOUNTMGR_CREATE_POINT_INPUT, MOUNTMGR_CREATE_POINT_INPUT"
 ---
 
 # _MOUNTMGR_CREATE_POINT_INPUT structure

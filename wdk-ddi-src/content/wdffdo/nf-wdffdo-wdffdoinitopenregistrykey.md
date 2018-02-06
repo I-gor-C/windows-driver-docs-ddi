@@ -1,42 +1,50 @@
 ---
-UID : NF:wdffdo.WdfFdoInitOpenRegistryKey
-title : WdfFdoInitOpenRegistryKey function
-author : windows-driver-content
-description : The WdfFdoInitOpenRegistryKey method opens a device's hardware key or a driver's software key in the registry and creates a framework registry-key object that represents the registry key.
-old-location : wdf\wdffdoinitopenregistrykey.htm
-old-project : wdf
-ms.assetid : 1b720e3e-8858-4567-ada3-30ac0dcf9696
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WdfFdoInitOpenRegistryKey method, kmdf.wdffdoinitopenregistrykey, wdf.wdffdoinitopenregistrykey, wdffdo/WdfFdoInitOpenRegistryKey, WdfFdoInitOpenRegistryKey, DFDeviceObjectFdoPdoRef_8768fe63-0134-467f-9610-0cdaf018f784.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdffdo.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : DeviceInitAPI, DriverCreate, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_DRIVER_VERSION_AVAILABLE_PARAMS, *PWDF_DRIVER_VERSION_AVAILABLE_PARAMS
-req.product : Windows 10 or later.
+UID: NF:wdffdo.WdfFdoInitOpenRegistryKey
+title: WdfFdoInitOpenRegistryKey function
+author: windows-driver-content
+description: The WdfFdoInitOpenRegistryKey method opens a device's hardware key or a driver's software key in the registry and creates a framework registry-key object that represents the registry key.
+old-location: wdf\wdffdoinitopenregistrykey.htm
+old-project: wdf
+ms.assetid: 1b720e3e-8858-4567-ada3-30ac0dcf9696
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WdfFdoInitOpenRegistryKey method, kmdf.wdffdoinitopenregistrykey, wdf.wdffdoinitopenregistrykey, wdffdo/WdfFdoInitOpenRegistryKey, WdfFdoInitOpenRegistryKey, DFDeviceObjectFdoPdoRef_8768fe63-0134-467f-9610-0cdaf018f784.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdffdo.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: DeviceInitAPI, DriverCreate, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+-	WUDFx02000.dll
+-	WUDFx02000.dll.dll
+apiname:
+-	WdfFdoInitOpenRegistryKey
+product: Windows
+targetos: Windows
+req.typenames: WDF_DRIVER_VERSION_AVAILABLE_PARAMS, *PWDF_DRIVER_VERSION_AVAILABLE_PARAMS
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddcdvd._AACS_CHALLENGE_KEY
-title : "_AACS_CHALLENGE_KEY"
-author : windows-driver-content
-description : The AACS_CHALLENGE_KEY structure contains the challenge key that the device sends to the host.
-old-location : storage\aacs_challenge_key.htm
-old-project : storage
-ms.assetid : b1eb7978-cbfc-4ffd-b345-a320e9152f03
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : AACS_CHALLENGE_KEY, _AACS_CHALLENGE_KEY, AACS_CHALLENGE_KEY structure [Storage Devices], PAACS_CHALLENGE_KEY, *PAACS_CHALLENGE_KEY, ntddcdvd/PAACS_CHALLENGE_KEY, storage.aacs_challenge_key, structs-DVD_7a8e1eeb-73f5-4d10-83c6-13bac3130c91.xml, ntddcdvd/AACS_CHALLENGE_KEY, PAACS_CHALLENGE_KEY structure pointer [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddcdvd.h
-req.include-header : Ntddcdvd.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PAACS_CHALLENGE_KEY, AACS_CHALLENGE_KEY"
+UID: NS:ntddcdvd._AACS_CHALLENGE_KEY
+title: "_AACS_CHALLENGE_KEY"
+author: windows-driver-content
+description: The AACS_CHALLENGE_KEY structure contains the challenge key that the device sends to the host.
+old-location: storage\aacs_challenge_key.htm
+old-project: storage
+ms.assetid: b1eb7978-cbfc-4ffd-b345-a320e9152f03
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: AACS_CHALLENGE_KEY, _AACS_CHALLENGE_KEY, AACS_CHALLENGE_KEY structure [Storage Devices], PAACS_CHALLENGE_KEY, *PAACS_CHALLENGE_KEY, ntddcdvd/PAACS_CHALLENGE_KEY, storage.aacs_challenge_key, structs-DVD_7a8e1eeb-73f5-4d10-83c6-13bac3130c91.xml, ntddcdvd/AACS_CHALLENGE_KEY, PAACS_CHALLENGE_KEY structure pointer [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddcdvd.h
+req.include-header: Ntddcdvd.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddcdvd.h
+apiname:
+-	AACS_CHALLENGE_KEY
+product: Windows
+targetos: Windows
+req.typenames: "*PAACS_CHALLENGE_KEY, AACS_CHALLENGE_KEY"
 ---
 
 # _AACS_CHALLENGE_KEY structure

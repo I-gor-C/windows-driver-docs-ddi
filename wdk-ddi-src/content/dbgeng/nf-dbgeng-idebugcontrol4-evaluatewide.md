@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugControl4.EvaluateWide
-title : IDebugControl4::EvaluateWide method
-author : windows-driver-content
-description : The EvaluateWide method evaluates an expression, returning the result.
-old-location : debugger\evaluatewide.htm
-old-project : debugger
-ms.assetid : 1a40e8a7-ba7b-4aaf-975f-4095f9ef7ba7
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : dbgeng/IDebugControl4::EvaluateWide, debugger.evaluatewide, EvaluateWide method [Windows Debugging], EvaluateWide, IDebugControl4::EvaluateWide, EvaluateWide method [Windows Debugging], IDebugControl4 interface, IDebugControl4, IDebugControl4 interface [Windows Debugging], EvaluateWide method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl4.EvaluateWide
+title: IDebugControl4::EvaluateWide method
+author: windows-driver-content
+description: The EvaluateWide method evaluates an expression, returning the result.
+old-location: debugger\evaluatewide.htm
+old-project: debugger
+ms.assetid: 1a40e8a7-ba7b-4aaf-975f-4095f9ef7ba7
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: dbgeng/IDebugControl4::EvaluateWide, debugger.evaluatewide, EvaluateWide method [Windows Debugging], EvaluateWide, IDebugControl4::EvaluateWide, EvaluateWide method [Windows Debugging], IDebugControl4 interface, IDebugControl4, IDebugControl4 interface [Windows Debugging], EvaluateWide method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl4.EvaluateWide
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

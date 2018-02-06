@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfresource.WdfIoResourceListAppendDescriptor
-title : WdfIoResourceListAppendDescriptor function
-author : windows-driver-content
-description : The WdfIoResourceListAppendDescriptor method adds a resource descriptor to the end of a resource requirements list's logical configuration.
-old-location : wdf\wdfioresourcelistappenddescriptor.htm
-old-project : wdf
-ms.assetid : da9213c1-e519-44ad-aabf-fd05bdbd2079
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : PFN_WDFIORESOURCELISTAPPENDDESCRIPTOR, WdfIoResourceListAppendDescriptor, wdfresource/WdfIoResourceListAppendDescriptor, DFResourceObjectRef_547a6869-7e4a-4140-9851-0b1ca9810eaa.xml, kmdf.wdfioresourcelistappenddescriptor, WdfIoResourceListAppendDescriptor method, wdf.wdfioresourcelistappenddescriptor
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfresource.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_REQUEST_SEND_OPTIONS, *PWDF_REQUEST_SEND_OPTIONS
-req.product : Windows 10 or later.
+UID: NF:wdfresource.WdfIoResourceListAppendDescriptor
+title: WdfIoResourceListAppendDescriptor function
+author: windows-driver-content
+description: The WdfIoResourceListAppendDescriptor method adds a resource descriptor to the end of a resource requirements list's logical configuration.
+old-location: wdf\wdfioresourcelistappenddescriptor.htm
+old-project: wdf
+ms.assetid: da9213c1-e519-44ad-aabf-fd05bdbd2079
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: PFN_WDFIORESOURCELISTAPPENDDESCRIPTOR, WdfIoResourceListAppendDescriptor, wdfresource/WdfIoResourceListAppendDescriptor, DFResourceObjectRef_547a6869-7e4a-4140-9851-0b1ca9810eaa.xml, kmdf.wdfioresourcelistappenddescriptor, WdfIoResourceListAppendDescriptor method, wdf.wdfioresourcelistappenddescriptor
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfresource.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfIoResourceListAppendDescriptor
+product: Windows
+targetos: Windows
+req.typenames: WDF_REQUEST_SEND_OPTIONS, *PWDF_REQUEST_SEND_OPTIONS
+req.product: Windows 10 or later.
 ---
 
 

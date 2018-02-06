@@ -1,42 +1,47 @@
 ---
-UID : NS:strmini._HW_STREAM_HEADER
-title : "_HW_STREAM_HEADER"
-author : windows-driver-content
-description : The HW_STREAM_HEADER structure describes the kernel streaming semantics supported by the minidriver as a whole, as part of a HW_STREAM_DESCRIPTOR structure.
-old-location : stream\hw_stream_header.htm
-old-project : stream
-ms.assetid : 1931c640-666b-4db5-8d05-eab43ae96665
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.hw_stream_header, _HW_STREAM_HEADER, strclass-struct_bf41c526-276a-4e94-9d27-97177a3164bc.xml, strmini/PHW_STREAM_HEADER, strmini/HW_STREAM_HEADER, PHW_STREAM_HEADER structure pointer [Streaming Media Devices], *PHW_STREAM_HEADER, PHW_STREAM_HEADER, HW_STREAM_HEADER structure [Streaming Media Devices], HW_STREAM_HEADER
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : strmini.h
-req.include-header : Strmini.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HW_STREAM_HEADER, *PHW_STREAM_HEADER
-req.product : Windows 10 or later.
+UID: NS:strmini._HW_STREAM_HEADER
+title: "_HW_STREAM_HEADER"
+author: windows-driver-content
+description: The HW_STREAM_HEADER structure describes the kernel streaming semantics supported by the minidriver as a whole, as part of a HW_STREAM_DESCRIPTOR structure.
+old-location: stream\hw_stream_header.htm
+old-project: stream
+ms.assetid: 1931c640-666b-4db5-8d05-eab43ae96665
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.hw_stream_header, _HW_STREAM_HEADER, strclass-struct_bf41c526-276a-4e94-9d27-97177a3164bc.xml, strmini/PHW_STREAM_HEADER, strmini/HW_STREAM_HEADER, PHW_STREAM_HEADER structure pointer [Streaming Media Devices], *PHW_STREAM_HEADER, PHW_STREAM_HEADER, HW_STREAM_HEADER structure [Streaming Media Devices], HW_STREAM_HEADER
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: strmini.h
+req.include-header: Strmini.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	strmini.h
+apiname:
+-	HW_STREAM_HEADER
+product: Windows
+targetos: Windows
+req.typenames: HW_STREAM_HEADER, *PHW_STREAM_HEADER
+req.product: Windows 10 or later.
 ---
 
 # _HW_STREAM_HEADER structure

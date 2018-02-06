@@ -1,42 +1,47 @@
 ---
-UID : NF:winsplp.WritePort
-title : WritePort function
-author : windows-driver-content
-description : A port monitor's WritePort function writes data to a printer port.
-old-location : print\writeport.htm
-old-project : print
-ms.assetid : 31229c78-0bea-44eb-9f1a-d1bce8a16a3e
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : winsplp/WritePort, WritePort function [Print Devices], spoolfnc_b4300d7a-1424-40e0-931f-08c727eb4174.xml, WritePort, print.writeport
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : winsplp.h
-req.include-header : Winsplp.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NOTIFICATION_CONFIG_FLAGS
-req.product : Windows 10 or later.
+UID: NF:winsplp.WritePort
+title: WritePort function
+author: windows-driver-content
+description: A port monitor's WritePort function writes data to a printer port.
+old-location: print\writeport.htm
+old-project: print
+ms.assetid: 31229c78-0bea-44eb-9f1a-d1bce8a16a3e
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: winsplp/WritePort, WritePort function [Print Devices], spoolfnc_b4300d7a-1424-40e0-931f-08c727eb4174.xml, WritePort, print.writeport
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: winsplp.h
+req.include-header: Winsplp.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	winsplp.h
+apiname:
+-	WritePort
+product: Windows
+targetos: Windows
+req.typenames: NOTIFICATION_CONFIG_FLAGS
+req.product: Windows 10 or later.
 ---
 
 

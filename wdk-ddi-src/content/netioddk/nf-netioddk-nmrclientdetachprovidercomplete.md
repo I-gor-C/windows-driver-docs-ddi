@@ -1,41 +1,47 @@
 ---
-UID : NF:netioddk.NmrClientDetachProviderComplete
-title : NmrClientDetachProviderComplete function
-author : windows-driver-content
-description : The NmrClientDetachProviderComplete function notifies the NMR that a client module has completed detaching from a provider module.
-old-location : netvista\nmrclientdetachprovidercomplete.htm
-old-project : netvista
-ms.assetid : e54864de-9558-44b1-9c5a-0f2ecc6516b1
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.nmrclientdetachprovidercomplete, netioddk/NmrClientDetachProviderComplete, NmrClientDetachProviderComplete, nmrref_7fb0e7ef-62a3-4dc4-a0e2-b38005056317.xml, NmrClientDetachProviderComplete function [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : netioddk.h
-req.include-header : Wsk.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating   systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Netio.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NET_DMA_PROVIDER_CHARACTERISTICS, *PNET_DMA_PROVIDER_CHARACTERISTICS
+UID: NF:netioddk.NmrClientDetachProviderComplete
+title: NmrClientDetachProviderComplete function
+author: windows-driver-content
+description: The NmrClientDetachProviderComplete function notifies the NMR that a client module has completed detaching from a provider module.
+old-location: netvista\nmrclientdetachprovidercomplete.htm
+old-project: netvista
+ms.assetid: e54864de-9558-44b1-9c5a-0f2ecc6516b1
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.nmrclientdetachprovidercomplete, netioddk/NmrClientDetachProviderComplete, NmrClientDetachProviderComplete, nmrref_7fb0e7ef-62a3-4dc4-a0e2-b38005056317.xml, NmrClientDetachProviderComplete function [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: netioddk.h
+req.include-header: Wsk.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Netio.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	netio.lib
+-	netio.dll
+apiname:
+-	NmrClientDetachProviderComplete
+product: Windows
+targetos: Windows
+req.typenames: NET_DMA_PROVIDER_CHARACTERISTICS, *PNET_DMA_PROVIDER_CHARACTERISTICS
 ---
 
 

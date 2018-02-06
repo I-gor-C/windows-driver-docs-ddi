@@ -1,41 +1,46 @@
 ---
-UID : NN:dbgeng.IDebugEventCallbacks
-title : IDebugEventCallbacks
-author : windows-driver-content
-description : IDebugEventCallbacks interface
-old-location : debugger\idebugeventcallbacks.htm
-old-project : debugger
-ms.assetid : f5e51d0e-0967-4e35-b24b-4bd99c975569
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : debugger.idebugeventcallbacks, IDebugEventCallbacks interface [Windows Debugging], IDebugEventCallbacks interface [Windows Debugging], described, IDebugEventCallbacks, dbgeng/IDebugEventCallbacks, ComCallbacks_72745555-ec34-41fa-9305-cf23357bcd17.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NN:dbgeng.IDebugEventCallbacks
+title: IDebugEventCallbacks
+author: windows-driver-content
+description: IDebugEventCallbacks interface
+old-location: debugger\idebugeventcallbacks.htm
+old-project: debugger
+ms.assetid: f5e51d0e-0967-4e35-b24b-4bd99c975569
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: debugger.idebugeventcallbacks, IDebugEventCallbacks interface [Windows Debugging], IDebugEventCallbacks interface [Windows Debugging], described, IDebugEventCallbacks, dbgeng/IDebugEventCallbacks, ComCallbacks_72745555-ec34-41fa-9305-cf23357bcd17.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugEventCallbacks
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 # IDebugEventCallbacks interface

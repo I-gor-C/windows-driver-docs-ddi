@@ -1,41 +1,46 @@
 ---
-UID : NS:ehstorioctl.tagSILO_COMMAND
-title : tagSILO_COMMAND
-author : windows-driver-content
-description : This structure describes a storage silo driver command.
-old-location : storage\silo_command.htm
-old-project : storage
-ms.assetid : 4d40ac4b-9aca-4be6-8d4f-db94c3daf4e8
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : tagSILO_COMMAND, ehstorioctl/PSILO_COMMAND, storage.silo_command, ehstorioctl/SILO_COMMAND, *PSILO_COMMAND, SILO_COMMAND, structs-silo_6058ee8b-c6ff-4e84-8b20-304bb6646a4f.xml, SILO_COMMAND structure [Storage Devices], PSILO_COMMAND structure pointer [Storage Devices], PSILO_COMMAND
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ehstorioctl.h
-req.include-header : EhStorIoctl.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSILO_COMMAND, SILO_COMMAND"
+UID: NS:ehstorioctl.tagSILO_COMMAND
+title: tagSILO_COMMAND
+author: windows-driver-content
+description: This structure describes a storage silo driver command.
+old-location: storage\silo_command.htm
+old-project: storage
+ms.assetid: 4d40ac4b-9aca-4be6-8d4f-db94c3daf4e8
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: tagSILO_COMMAND, ehstorioctl/PSILO_COMMAND, storage.silo_command, ehstorioctl/SILO_COMMAND, *PSILO_COMMAND, SILO_COMMAND, structs-silo_6058ee8b-c6ff-4e84-8b20-304bb6646a4f.xml, SILO_COMMAND structure [Storage Devices], PSILO_COMMAND structure pointer [Storage Devices], PSILO_COMMAND
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ehstorioctl.h
+req.include-header: EhStorIoctl.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	EhStorIoctl.h
+apiname:
+-	SILO_COMMAND
+product: Windows
+targetos: Windows
+req.typenames: "*PSILO_COMMAND, SILO_COMMAND"
 ---
 
 # tagSILO_COMMAND structure

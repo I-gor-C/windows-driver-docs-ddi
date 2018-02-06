@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGKARG_GETPOSTCOMPOSITIONCAPS
-title : "_DXGKARG_GETPOSTCOMPOSITIONCAPS"
-author : windows-driver-content
-description : Arguments for the DxgkDdiGetPostCompositionCaps function.
-old-location : display\dxgkarg_getpostcompositioncaps.htm
-old-project : display
-ms.assetid : 0C8A0F83-9D12-46F1-A8B1-3BCF219A3BF7
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DXGKARG_GETPOSTCOMPOSITIONCAPS, *IN_OUT_PDXGKARG_GETPOSTCOMPOSITIONCAPS, DXGKARG_GETPOSTCOMPOSITIONCAPS structure [Display Devices], display.dxgkarg_getpostcompositioncaps, d3dkmddi/DXGKARG_GETPOSTCOMPOSITIONCAPS, _DXGKARG_GETPOSTCOMPOSITIONCAPS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGKARG_GETPOSTCOMPOSITIONCAPS
+UID: NS:d3dkmddi._DXGKARG_GETPOSTCOMPOSITIONCAPS
+title: "_DXGKARG_GETPOSTCOMPOSITIONCAPS"
+author: windows-driver-content
+description: Arguments for the DxgkDdiGetPostCompositionCaps function.
+old-location: display\dxgkarg_getpostcompositioncaps.htm
+old-project: display
+ms.assetid: 0C8A0F83-9D12-46F1-A8B1-3BCF219A3BF7
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DXGKARG_GETPOSTCOMPOSITIONCAPS, *IN_OUT_PDXGKARG_GETPOSTCOMPOSITIONCAPS, DXGKARG_GETPOSTCOMPOSITIONCAPS structure [Display Devices], display.dxgkarg_getpostcompositioncaps, d3dkmddi/DXGKARG_GETPOSTCOMPOSITIONCAPS, _DXGKARG_GETPOSTCOMPOSITIONCAPS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DXGKARG_GETPOSTCOMPOSITIONCAPS
+product: Windows
+targetos: Windows
+req.typenames: DXGKARG_GETPOSTCOMPOSITIONCAPS
 ---
 
 # _DXGKARG_GETPOSTCOMPOSITIONCAPS structure

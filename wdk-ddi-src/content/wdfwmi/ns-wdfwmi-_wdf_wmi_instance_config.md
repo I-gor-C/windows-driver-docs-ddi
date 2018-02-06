@@ -1,42 +1,47 @@
 ---
-UID : NS:wdfwmi._WDF_WMI_INSTANCE_CONFIG
-title : "_WDF_WMI_INSTANCE_CONFIG"
-author : windows-driver-content
-description : The WDF_WMI_INSTANCE_CONFIG structure contains configuration information for an instance of a WMI data provider.
-old-location : wdf\wdf_wmi_instance_config.htm
-old-project : wdf
-ms.assetid : b2b2fd0c-c331-4132-b037-05c816626563
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : DFWMIRef_20be4139-3dcc-425e-9aaf-2851ceb794fb.xml, kmdf.wdf_wmi_instance_config, PWDF_WMI_INSTANCE_CONFIG structure pointer, WDF_WMI_INSTANCE_CONFIG structure, WDF_WMI_INSTANCE_CONFIG, wdfwmi/PWDF_WMI_INSTANCE_CONFIG, PWDF_WMI_INSTANCE_CONFIG, _WDF_WMI_INSTANCE_CONFIG, *PWDF_WMI_INSTANCE_CONFIG, wdf.wdf_wmi_instance_config, wdfwmi/WDF_WMI_INSTANCE_CONFIG
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdfwmi.h
-req.include-header : Wdf.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_WMI_INSTANCE_CONFIG, *PWDF_WMI_INSTANCE_CONFIG
-req.product : Windows 10 or later.
+UID: NS:wdfwmi._WDF_WMI_INSTANCE_CONFIG
+title: "_WDF_WMI_INSTANCE_CONFIG"
+author: windows-driver-content
+description: The WDF_WMI_INSTANCE_CONFIG structure contains configuration information for an instance of a WMI data provider.
+old-location: wdf\wdf_wmi_instance_config.htm
+old-project: wdf
+ms.assetid: b2b2fd0c-c331-4132-b037-05c816626563
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: DFWMIRef_20be4139-3dcc-425e-9aaf-2851ceb794fb.xml, kmdf.wdf_wmi_instance_config, PWDF_WMI_INSTANCE_CONFIG structure pointer, WDF_WMI_INSTANCE_CONFIG structure, WDF_WMI_INSTANCE_CONFIG, wdfwmi/PWDF_WMI_INSTANCE_CONFIG, PWDF_WMI_INSTANCE_CONFIG, _WDF_WMI_INSTANCE_CONFIG, *PWDF_WMI_INSTANCE_CONFIG, wdf.wdf_wmi_instance_config, wdfwmi/WDF_WMI_INSTANCE_CONFIG
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdfwmi.h
+req.include-header: Wdf.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfwmi.h
+apiname:
+-	WDF_WMI_INSTANCE_CONFIG
+product: Windows
+targetos: Windows
+req.typenames: WDF_WMI_INSTANCE_CONFIG, *PWDF_WMI_INSTANCE_CONFIG
+req.product: Windows 10 or later.
 ---
 
 # _WDF_WMI_INSTANCE_CONFIG structure

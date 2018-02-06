@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_DXVAHD_SETVIDEOPROCESSSTREAMSTATE
-title : PFND3DDDI_DXVAHD_SETVIDEOPROCESSSTREAMSTATE
-author : windows-driver-content
-description : The SetVideoProcessStreamState function sets the stream state for a video processor.
-old-location : display\setvideoprocessstreamstate.htm
-old-project : display
-ms.assetid : b48fbe58-056a-4c3b-8e1e-c65515c21ee4
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.setvideoprocessstreamstate, SetVideoProcessStreamState callback function [Display Devices], SetVideoProcessStreamState, PFND3DDDI_DXVAHD_SETVIDEOPROCESSSTREAMSTATE, PFND3DDDI_DXVAHD_SETVIDEOPROCESSSTREAMSTATE, d3dumddi/SetVideoProcessStreamState, UserModeDisplayDriver_Functions_3860b09d-ba06-4b9e-bf6d-65e7b90135fd.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : SetVideoProcessStreamState is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_DXVAHD_SETVIDEOPROCESSSTREAMSTATE
+title: PFND3DDDI_DXVAHD_SETVIDEOPROCESSSTREAMSTATE
+author: windows-driver-content
+description: The SetVideoProcessStreamState function sets the stream state for a video processor.
+old-location: display\setvideoprocessstreamstate.htm
+old-project: display
+ms.assetid: b48fbe58-056a-4c3b-8e1e-c65515c21ee4
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.setvideoprocessstreamstate, SetVideoProcessStreamState callback function [Display Devices], SetVideoProcessStreamState, PFND3DDDI_DXVAHD_SETVIDEOPROCESSSTREAMSTATE, PFND3DDDI_DXVAHD_SETVIDEOPROCESSSTREAMSTATE, d3dumddi/SetVideoProcessStreamState, UserModeDisplayDriver_Functions_3860b09d-ba06-4b9e-bf6d-65e7b90135fd.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: SetVideoProcessStreamState is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	SetVideoProcessStreamState
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

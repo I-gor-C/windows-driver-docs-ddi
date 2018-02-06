@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.KeSetTargetProcessorDpcEx
-title : KeSetTargetProcessorDpcEx function
-author : windows-driver-content
-description : The KeSetTargetProcessorDpcEx routine specifies the processor that a DPC routine will run on.
-old-location : kernel\kesettargetprocessordpcex.htm
-old-project : kernel
-ms.assetid : a21f3304-9181-4027-9a7e-d590037b4b0f
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/KeSetTargetProcessorDpcEx, k105_86dff32b-f370-4233-a3ec-d8fb3cc5b4cc.xml, KeSetTargetProcessorDpcEx routine [Kernel-Mode Driver Architecture], KeSetTargetProcessorDpcEx, kernel.kesettargetprocessordpcex
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 7.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.KeSetTargetProcessorDpcEx
+title: KeSetTargetProcessorDpcEx function
+author: windows-driver-content
+description: The KeSetTargetProcessorDpcEx routine specifies the processor that a DPC routine will run on.
+old-location: kernel\kesettargetprocessordpcex.htm
+old-project: kernel
+ms.assetid: a21f3304-9181-4027-9a7e-d590037b4b0f
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/KeSetTargetProcessorDpcEx, k105_86dff32b-f370-4233-a3ec-d8fb3cc5b4cc.xml, KeSetTargetProcessorDpcEx routine [Kernel-Mode Driver Architecture], KeSetTargetProcessorDpcEx, kernel.kesettargetprocessordpcex
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 7.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	KeSetTargetProcessorDpcEx
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

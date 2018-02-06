@@ -1,41 +1,46 @@
 ---
-UID : NS:iddcx.IDDCX_FRAME_STATISTICS
-title : IDDCX_FRAME_STATISTICS
-author : windows-driver-content
-description : Gives information about the current frame being processed.
-old-location : display\iddcx_frame_statistics.htm
-old-project : display
-ms.assetid : 5099ff37-eed9-44fd-8254-3828b8c5d8bd
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.iddcx_frame_statistics, IDDCX_FRAME_STATISTICS, IDDCX_FRAME_STATISTICS structure [Display Devices], iddcx/IDDCX_FRAME_STATISTICS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : iddcx.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NS:iddcx.IDDCX_FRAME_STATISTICS
+title: IDDCX_FRAME_STATISTICS
+author: windows-driver-content
+description: Gives information about the current frame being processed.
+old-location: display\iddcx_frame_statistics.htm
+old-project: display
+ms.assetid: 5099ff37-eed9-44fd-8254-3828b8c5d8bd
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.iddcx_frame_statistics, IDDCX_FRAME_STATISTICS, IDDCX_FRAME_STATISTICS structure [Display Devices], iddcx/IDDCX_FRAME_STATISTICS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: iddcx.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	iddcx.h
+apiname:
+-	IDDCX_FRAME_STATISTICS
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 # IDDCX_FRAME_STATISTICS structure

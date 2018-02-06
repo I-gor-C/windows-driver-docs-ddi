@@ -1,42 +1,48 @@
 ---
-UID : NF:strmini.StreamClassGetNextEvent
-title : StreamClassGetNextEvent function
-author : windows-driver-content
-description : Minidrivers can use the StreamClassGetNextEvent routine to search the event queue of a device or of a particular stream.
-old-location : stream\streamclassgetnextevent.htm
-old-project : stream
-ms.assetid : a2f83163-4529-4627-8959-2b4cd6b88828
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : StreamClassGetNextEvent, strmini/StreamClassGetNextEvent, strclass-routines_5a606366-379b-400b-b039-8722f084e3c6.xml, stream.streamclassgetnextevent, StreamClassGetNextEvent routine [Streaming Media Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : strmini.h
-req.include-header : Strmini.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Stream.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSTREAM_PRIORITY, STREAM_PRIORITY"
-req.product : Windows 10 or later.
+UID: NF:strmini.StreamClassGetNextEvent
+title: StreamClassGetNextEvent function
+author: windows-driver-content
+description: Minidrivers can use the StreamClassGetNextEvent routine to search the event queue of a device or of a particular stream.
+old-location: stream\streamclassgetnextevent.htm
+old-project: stream
+ms.assetid: a2f83163-4529-4627-8959-2b4cd6b88828
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: StreamClassGetNextEvent, strmini/StreamClassGetNextEvent, strclass-routines_5a606366-379b-400b-b039-8722f084e3c6.xml, stream.streamclassgetnextevent, StreamClassGetNextEvent routine [Streaming Media Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: strmini.h
+req.include-header: Strmini.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Stream.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Stream.lib
+-	Stream.dll
+apiname:
+-	StreamClassGetNextEvent
+product: Windows
+targetos: Windows
+req.typenames: "*PSTREAM_PRIORITY, STREAM_PRIORITY"
+req.product: Windows 10 or later.
 ---
 
 

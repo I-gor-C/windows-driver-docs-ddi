@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGKARG_PRESENT_DISPLAYONLY
-title : "_DXGKARG_PRESENT_DISPLAYONLY"
-author : windows-driver-content
-description : Indicates how a kernel mode display-only driver (KMDOD) is to perform a present operation.
-old-location : display\dxgkarg_present_displayonly.htm
-old-project : display
-ms.assetid : 7679d4f2-55c6-458c-afd3-020c3b7fd7e2
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkarg_present_displayonly, DXGKARG_PRESENT_DISPLAYONLY, d3dkmddi/DXGKARG_PRESENT_DISPLAYONLY, DXGKARG_PRESENT_DISPLAYONLY structure [Display Devices], _DXGKARG_PRESENT_DISPLAYONLY
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGKARG_PRESENT_DISPLAYONLY
+UID: NS:d3dkmddi._DXGKARG_PRESENT_DISPLAYONLY
+title: "_DXGKARG_PRESENT_DISPLAYONLY"
+author: windows-driver-content
+description: Indicates how a kernel mode display-only driver (KMDOD) is to perform a present operation.
+old-location: display\dxgkarg_present_displayonly.htm
+old-project: display
+ms.assetid: 7679d4f2-55c6-458c-afd3-020c3b7fd7e2
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkarg_present_displayonly, DXGKARG_PRESENT_DISPLAYONLY, d3dkmddi/DXGKARG_PRESENT_DISPLAYONLY, DXGKARG_PRESENT_DISPLAYONLY structure [Display Devices], _DXGKARG_PRESENT_DISPLAYONLY
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	D3dkmddi.h
+apiname:
+-	DXGKARG_PRESENT_DISPLAYONLY
+product: Windows
+targetos: Windows
+req.typenames: DXGKARG_PRESENT_DISPLAYONLY
 ---
 
 # _DXGKARG_PRESENT_DISPLAYONLY structure

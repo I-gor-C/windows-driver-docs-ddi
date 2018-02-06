@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmthk._D3DKMT_UMDFILENAMEINFO
-title : "_D3DKMT_UMDFILENAMEINFO"
-author : windows-driver-content
-description : The D3DKMT_UMDFILENAMEINFO structure contains the name of an OpenGL ICD that is based on the specified version of the DirectX runtime.
-old-location : display\d3dkmt_umdfilenameinfo.htm
-old-project : display
-ms.assetid : 456aef5a-f297-4670-8a83-b468569d23ad
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : OpenGL_Structs_631f8c52-0978-4f26-bd6b-08348676795b.xml, D3DKMT_UMDFILENAMEINFO, D3DKMT_UMDFILENAMEINFO structure [Display Devices], _D3DKMT_UMDFILENAMEINFO, display.d3dkmt_umdfilenameinfo, d3dkmthk/D3DKMT_UMDFILENAMEINFO
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_UMDFILENAMEINFO
+UID: NS:d3dkmthk._D3DKMT_UMDFILENAMEINFO
+title: "_D3DKMT_UMDFILENAMEINFO"
+author: windows-driver-content
+description: The D3DKMT_UMDFILENAMEINFO structure contains the name of an OpenGL ICD that is based on the specified version of the DirectX runtime.
+old-location: display\d3dkmt_umdfilenameinfo.htm
+old-project: display
+ms.assetid: 456aef5a-f297-4670-8a83-b468569d23ad
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: OpenGL_Structs_631f8c52-0978-4f26-bd6b-08348676795b.xml, D3DKMT_UMDFILENAMEINFO, D3DKMT_UMDFILENAMEINFO structure [Display Devices], _D3DKMT_UMDFILENAMEINFO, display.d3dkmt_umdfilenameinfo, d3dkmthk/D3DKMT_UMDFILENAMEINFO
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmthk.h
+apiname:
+-	D3DKMT_UMDFILENAMEINFO
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_UMDFILENAMEINFO
 ---
 
 # _D3DKMT_UMDFILENAMEINFO structure

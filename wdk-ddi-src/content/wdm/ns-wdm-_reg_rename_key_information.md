@@ -1,42 +1,47 @@
 ---
-UID : NS:wdm._REG_RENAME_KEY_INFORMATION
-title : "_REG_RENAME_KEY_INFORMATION"
-author : windows-driver-content
-description : The REG_RENAME_KEY_INFORMATION structure contains the new name for a registry key whose name is about to be changed.
-old-location : kernel\reg_rename_key_information.htm
-old-project : kernel
-ms.assetid : 80ffa1dc-aa4f-40b4-936b-7e441b3b123d
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kstruct_d_f6416cfd-5ace-4366-81a5-87b233551c7a.xml, _REG_RENAME_KEY_INFORMATION, wdm/PREG_RENAME_KEY_INFORMATION, PREG_RENAME_KEY_INFORMATION structure pointer [Kernel-Mode Driver Architecture], PREG_RENAME_KEY_INFORMATION, REG_RENAME_KEY_INFORMATION, REG_RENAME_KEY_INFORMATION structure [Kernel-Mode Driver Architecture], kernel.reg_rename_key_information, *PREG_RENAME_KEY_INFORMATION, wdm/REG_RENAME_KEY_INFORMATION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : Available on Microsoft Windows XP and later versions of the Windows operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : REG_RENAME_KEY_INFORMATION, *PREG_RENAME_KEY_INFORMATION
-req.product : Windows 10 or later.
+UID: NS:wdm._REG_RENAME_KEY_INFORMATION
+title: "_REG_RENAME_KEY_INFORMATION"
+author: windows-driver-content
+description: The REG_RENAME_KEY_INFORMATION structure contains the new name for a registry key whose name is about to be changed.
+old-location: kernel\reg_rename_key_information.htm
+old-project: kernel
+ms.assetid: 80ffa1dc-aa4f-40b4-936b-7e441b3b123d
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kstruct_d_f6416cfd-5ace-4366-81a5-87b233551c7a.xml, _REG_RENAME_KEY_INFORMATION, wdm/PREG_RENAME_KEY_INFORMATION, PREG_RENAME_KEY_INFORMATION structure pointer [Kernel-Mode Driver Architecture], PREG_RENAME_KEY_INFORMATION, REG_RENAME_KEY_INFORMATION, REG_RENAME_KEY_INFORMATION structure [Kernel-Mode Driver Architecture], kernel.reg_rename_key_information, *PREG_RENAME_KEY_INFORMATION, wdm/REG_RENAME_KEY_INFORMATION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: Available on Microsoft Windows XP and later versions of the Windows operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdm.h
+apiname:
+-	REG_RENAME_KEY_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: REG_RENAME_KEY_INFORMATION, *PREG_RENAME_KEY_INFORMATION
+req.product: Windows 10 or later.
 ---
 
 # _REG_RENAME_KEY_INFORMATION structure

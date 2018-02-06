@@ -1,42 +1,47 @@
 ---
-UID : NC:ufxclient.EVT_UFX_DEVICE_PORT_DETECT
-title : EVT_UFX_DEVICE_PORT_DETECT
-author : windows-driver-content
-description : The client driver's implementation to initiate port detection.
-old-location : buses\evt_ufx_device_port_detect.htm
-old-project : usbref
-ms.assetid : EC32BFE8-6E93-4CEF-8EA8-856B0E431FCF
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : buses.evt_ufx_device_port_detect, EvtUfxDevicePortDetect callback function [Buses], EvtUfxDevicePortDetect, EVT_UFX_DEVICE_PORT_DETECT, EVT_UFX_DEVICE_PORT_DETECT, ufxclient/EvtUfxDevicePortDetect, PFN_UFX_DEVICE_PORT_DETECT callback function pointer [Buses], PFN_UFX_DEVICE_PORT_DETECT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ufxclient.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUFX_HARDWARE_FAILURE_CONTEXT, UFX_HARDWARE_FAILURE_CONTEXT"
-req.product : Windows 10 or later.
+UID: NC:ufxclient.EVT_UFX_DEVICE_PORT_DETECT
+title: EVT_UFX_DEVICE_PORT_DETECT
+author: windows-driver-content
+description: The client driver's implementation to initiate port detection.
+old-location: buses\evt_ufx_device_port_detect.htm
+old-project: usbref
+ms.assetid: EC32BFE8-6E93-4CEF-8EA8-856B0E431FCF
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: buses.evt_ufx_device_port_detect, EvtUfxDevicePortDetect callback function [Buses], EvtUfxDevicePortDetect, EVT_UFX_DEVICE_PORT_DETECT, EVT_UFX_DEVICE_PORT_DETECT, ufxclient/EvtUfxDevicePortDetect, PFN_UFX_DEVICE_PORT_DETECT callback function pointer [Buses], PFN_UFX_DEVICE_PORT_DETECT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ufxclient.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ufxclient.h
+apiname:
+-	PFN_UFX_DEVICE_PORT_DETECT
+product: Windows
+targetos: Windows
+req.typenames: "*PUFX_HARDWARE_FAILURE_CONTEXT, UFX_HARDWARE_FAILURE_CONTEXT"
+req.product: Windows 10 or later.
 ---
 
 

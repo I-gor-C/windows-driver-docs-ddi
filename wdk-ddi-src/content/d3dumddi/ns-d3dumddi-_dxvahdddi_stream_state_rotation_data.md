@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._DXVAHDDDI_STREAM_STATE_ROTATION_DATA
-title : "_DXVAHDDDI_STREAM_STATE_ROTATION_DATA"
-author : windows-driver-content
-description : Describes stream-state data that specifies the clockwise rotation of the display output surface.
-old-location : display\dxvahdddi_stream_state_rotation_data.htm
-old-project : display
-ms.assetid : 1c874df6-6b47-4501-9eaf-7c07f0172580
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxvahdddi_stream_state_rotation_data, _DXVAHDDDI_STREAM_STATE_ROTATION_DATA, DXVAHDDDI_STREAM_STATE_ROTATION_DATA, d3dumddi/DXVAHDDDI_STREAM_STATE_ROTATION_DATA, DXVAHDDDI_STREAM_STATE_ROTATION_DATA structure [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXVAHDDDI_STREAM_STATE_ROTATION_DATA
+UID: NS:d3dumddi._DXVAHDDDI_STREAM_STATE_ROTATION_DATA
+title: "_DXVAHDDDI_STREAM_STATE_ROTATION_DATA"
+author: windows-driver-content
+description: Describes stream-state data that specifies the clockwise rotation of the display output surface.
+old-location: display\dxvahdddi_stream_state_rotation_data.htm
+old-project: display
+ms.assetid: 1c874df6-6b47-4501-9eaf-7c07f0172580
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxvahdddi_stream_state_rotation_data, _DXVAHDDDI_STREAM_STATE_ROTATION_DATA, DXVAHDDDI_STREAM_STATE_ROTATION_DATA, d3dumddi/DXVAHDDDI_STREAM_STATE_ROTATION_DATA, DXVAHDDDI_STREAM_STATE_ROTATION_DATA structure [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	D3dumddi.h
+apiname:
+-	DXVAHDDDI_STREAM_STATE_ROTATION_DATA
+product: Windows
+targetos: Windows
+req.typenames: DXVAHDDDI_STREAM_STATE_ROTATION_DATA
 ---
 
 # _DXVAHDDDI_STREAM_STATE_ROTATION_DATA structure

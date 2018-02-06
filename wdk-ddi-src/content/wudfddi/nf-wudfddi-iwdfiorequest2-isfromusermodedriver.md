@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFIoRequest2.IsFromUserModeDriver
-title : IWDFIoRequest2::IsFromUserModeDriver method
-author : windows-driver-content
-description : The IsFromUserModeDriver method indicates whether an I/O request came from a user-mode driver or an application.
-old-location : wdf\iwdfiorequest2_isfromusermodedriver.htm
-old-project : wdf
-ms.assetid : 17a1e4d8-5438-42b6-b4a5-335e7bd57b1b
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : IsFromUserModeDriver method, IWDFIoRequest2 interface, umdf.iwdfiorequest2_isfromusermodedriver, UMDFRequestObjectRef_81f13df9-e0f7-4d16-9f85-e049a491e08d.xml, wdf.iwdfiorequest2_isfromusermodedriver, IWDFIoRequest2, IWDFIoRequest2::IsFromUserModeDriver, IWDFIoRequest2 interface, IsFromUserModeDriver method, IsFromUserModeDriver, IsFromUserModeDriver method, wudfddi/IWDFIoRequest2::IsFromUserModeDriver
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.9
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFIoRequest2.IsFromUserModeDriver
+title: IWDFIoRequest2::IsFromUserModeDriver method
+author: windows-driver-content
+description: The IsFromUserModeDriver method indicates whether an I/O request came from a user-mode driver or an application.
+old-location: wdf\iwdfiorequest2_isfromusermodedriver.htm
+old-project: wdf
+ms.assetid: 17a1e4d8-5438-42b6-b4a5-335e7bd57b1b
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: IsFromUserModeDriver method, IWDFIoRequest2 interface, umdf.iwdfiorequest2_isfromusermodedriver, UMDFRequestObjectRef_81f13df9-e0f7-4d16-9f85-e049a491e08d.xml, wdf.iwdfiorequest2_isfromusermodedriver, IWDFIoRequest2, IWDFIoRequest2::IsFromUserModeDriver, IWDFIoRequest2 interface, IsFromUserModeDriver method, IsFromUserModeDriver, IsFromUserModeDriver method, wudfddi/IWDFIoRequest2::IsFromUserModeDriver
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.9
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFIoRequest2.IsFromUserModeDriver
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

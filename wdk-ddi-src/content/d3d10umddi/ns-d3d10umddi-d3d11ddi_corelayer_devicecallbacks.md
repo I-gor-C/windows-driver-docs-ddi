@@ -1,41 +1,46 @@
 ---
-UID : NS:d3d10umddi.D3D11DDI_CORELAYER_DEVICECALLBACKS
-title : D3D11DDI_CORELAYER_DEVICECALLBACKS
-author : windows-driver-content
-description : The D3D11DDI_CORELAYER_DEVICECALLBACKS structure contains Microsoft Direct3D 11 runtime callback functions that the user-mode display driver can use.
-old-location : display\d3d11ddi_corelayer_devicecallbacks.htm
-old-project : display
-ms.assetid : 7a10b7e0-b062-4ec9-9883-7042f6e55505
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3d10umddi/D3D11DDI_CORELAYER_DEVICECALLBACKS, D3D11DDI_CORELAYER_DEVICECALLBACKS structure [Display Devices], display.d3d11ddi_corelayer_devicecallbacks, UMDisplayDriver_Dx11param_Structs_182fd279-98be-4418-b7ca-658d038cb39a.xml, D3D11DDI_CORELAYER_DEVICECALLBACKS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Windows
-req.target-min-winverclnt : D3D11DDI_CORELAYER_DEVICECALLBACKS is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3D11DDI_CORELAYER_DEVICECALLBACKS
+UID: NS:d3d10umddi.D3D11DDI_CORELAYER_DEVICECALLBACKS
+title: D3D11DDI_CORELAYER_DEVICECALLBACKS
+author: windows-driver-content
+description: The D3D11DDI_CORELAYER_DEVICECALLBACKS structure contains Microsoft Direct3D 11 runtime callback functions that the user-mode display driver can use.
+old-location: display\d3d11ddi_corelayer_devicecallbacks.htm
+old-project: display
+ms.assetid: 7a10b7e0-b062-4ec9-9883-7042f6e55505
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3d10umddi/D3D11DDI_CORELAYER_DEVICECALLBACKS, D3D11DDI_CORELAYER_DEVICECALLBACKS structure [Display Devices], display.d3d11ddi_corelayer_devicecallbacks, UMDisplayDriver_Dx11param_Structs_182fd279-98be-4418-b7ca-658d038cb39a.xml, D3D11DDI_CORELAYER_DEVICECALLBACKS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Windows
+req.target-min-winverclnt: D3D11DDI_CORELAYER_DEVICECALLBACKS is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	D3D11DDI_CORELAYER_DEVICECALLBACKS
+product: Windows
+targetos: Windows
+req.typenames: D3D11DDI_CORELAYER_DEVICECALLBACKS
 ---
 
 # D3D11DDI_CORELAYER_DEVICECALLBACKS structure

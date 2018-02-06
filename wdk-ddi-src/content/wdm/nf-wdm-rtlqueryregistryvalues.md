@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.RtlQueryRegistryValues
-title : RtlQueryRegistryValues function
-author : windows-driver-content
-description : The RtlQueryRegistryValues routine allows the caller to query several values from the registry subtree with a single call.
-old-location : kernel\rtlqueryregistryvalues.htm
-old-project : kernel
-ms.assetid : 6c6d0664-0c00-461b-bcac-13070511430c
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : RtlQueryRegistryValues, wdm/RtlQueryRegistryValues, RtlQueryRegistryValues routine [Kernel-Mode Driver Architecture], kernel.rtlqueryregistryvalues, k109_5a8cb907-8c49-4a88-9494-ff137cf6507d.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ntoskrnl.lib
-req.dll : Ntoskrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.RtlQueryRegistryValues
+title: RtlQueryRegistryValues function
+author: windows-driver-content
+description: The RtlQueryRegistryValues routine allows the caller to query several values from the registry subtree with a single call.
+old-location: kernel\rtlqueryregistryvalues.htm
+old-project: kernel
+ms.assetid: 6c6d0664-0c00-461b-bcac-13070511430c
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: RtlQueryRegistryValues, wdm/RtlQueryRegistryValues, RtlQueryRegistryValues routine [Kernel-Mode Driver Architecture], kernel.rtlqueryregistryvalues, k109_5a8cb907-8c49-4a88-9494-ff137cf6507d.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ntoskrnl.lib
+req.dll: Ntoskrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Ntoskrnl.exe
+apiname:
+-	RtlQueryRegistryValues
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

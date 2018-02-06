@@ -1,41 +1,49 @@
 ---
-UID : NF:dbgeng.IDebugSystemObjects4.GetThreadIdByHandle
-title : IDebugSystemObjects4::GetThreadIdByHandle method
-author : windows-driver-content
-description : The GetThreadIdByHandle method returns the engine thread ID for the specified thread. The thread is specified by its system handle.
-old-location : debugger\getthreadidbyhandle.htm
-old-project : debugger
-ms.assetid : 80962f29-9a11-456b-b083-bd0f4e26e954
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : GetThreadIdByHandle method [Windows Debugging], IDebugSystemObjects interface, GetThreadIdByHandle method [Windows Debugging], IDebugSystemObjects4 interface, GetThreadIdByHandle method [Windows Debugging], GetThreadIdByHandle, IDebugSystemObjects_d1cb023a-dd00-42bf-9827-e2ee98878964.xml, GetThreadIdByHandle method [Windows Debugging], IDebugSystemObjects3 interface, IDebugSystemObjects interface [Windows Debugging], GetThreadIdByHandle method, dbgeng/IDebugSystemObjects3::GetThreadIdByHandle, IDebugSystemObjects4, IDebugSystemObjects2::GetThreadIdByHandle, IDebugSystemObjects4::GetThreadIdByHandle, dbgeng/IDebugSystemObjects2::GetThreadIdByHandle, IDebugSystemObjects3::GetThreadIdByHandle, IDebugSystemObjects4 interface [Windows Debugging], GetThreadIdByHandle method, IDebugSystemObjects::GetThreadIdByHandle, dbgeng/IDebugSystemObjects4::GetThreadIdByHandle, debugger.getthreadidbyhandle, GetThreadIdByHandle method [Windows Debugging], IDebugSystemObjects2 interface, IDebugSystemObjects2 interface [Windows Debugging], GetThreadIdByHandle method, dbgeng/IDebugSystemObjects::GetThreadIdByHandle, IDebugSystemObjects3 interface [Windows Debugging], GetThreadIdByHandle method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSystemObjects4.GetThreadIdByHandle
+title: IDebugSystemObjects4::GetThreadIdByHandle method
+author: windows-driver-content
+description: The GetThreadIdByHandle method returns the engine thread ID for the specified thread. The thread is specified by its system handle.
+old-location: debugger\getthreadidbyhandle.htm
+old-project: debugger
+ms.assetid: 80962f29-9a11-456b-b083-bd0f4e26e954
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: GetThreadIdByHandle method [Windows Debugging], IDebugSystemObjects interface, GetThreadIdByHandle method [Windows Debugging], IDebugSystemObjects4 interface, GetThreadIdByHandle method [Windows Debugging], GetThreadIdByHandle, IDebugSystemObjects_d1cb023a-dd00-42bf-9827-e2ee98878964.xml, GetThreadIdByHandle method [Windows Debugging], IDebugSystemObjects3 interface, IDebugSystemObjects interface [Windows Debugging], GetThreadIdByHandle method, dbgeng/IDebugSystemObjects3::GetThreadIdByHandle, IDebugSystemObjects4, IDebugSystemObjects2::GetThreadIdByHandle, IDebugSystemObjects4::GetThreadIdByHandle, dbgeng/IDebugSystemObjects2::GetThreadIdByHandle, IDebugSystemObjects3::GetThreadIdByHandle, IDebugSystemObjects4 interface [Windows Debugging], GetThreadIdByHandle method, IDebugSystemObjects::GetThreadIdByHandle, dbgeng/IDebugSystemObjects4::GetThreadIdByHandle, debugger.getthreadidbyhandle, GetThreadIdByHandle method [Windows Debugging], IDebugSystemObjects2 interface, IDebugSystemObjects2 interface [Windows Debugging], GetThreadIdByHandle method, dbgeng/IDebugSystemObjects::GetThreadIdByHandle, IDebugSystemObjects3 interface [Windows Debugging], GetThreadIdByHandle method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugSystemObjects.GetThreadIdByHandle
+-	IDebugSystemObjects2.GetThreadIdByHandle
+-	IDebugSystemObjects3.GetThreadIdByHandle
+-	IDebugSystemObjects4.GetThreadIdByHandle
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

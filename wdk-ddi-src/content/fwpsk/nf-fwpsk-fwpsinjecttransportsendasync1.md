@@ -1,41 +1,47 @@
 ---
-UID : NF:fwpsk.FwpsInjectTransportSendAsync1
-title : FwpsInjectTransportSendAsync1 function
-author : windows-driver-content
-description : The FwpsInjectTransportSendAsync1 function injects packet data from the transport, datagram data, or ICMP error layers into the send data path.
-old-location : netvista\fwpsinjecttransportsendasync1.htm
-old-project : netvista
-ms.assetid : 74d91e43-d58a-4c2c-bfc9-4b0829a5f9f8
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : FwpsInjectTransportSendAsync1, fwpsk/FwpsInjectTransportSendAsync1, wfp_ref_2_funct_3_fwps_I_a1489474-a130-48de-b064-614dfb2e1db2.xml, FwpsInjectTransportSendAsync1 function [Network Drivers Starting with Windows Vista], netvista.fwpsinjecttransportsendasync1
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fwpsk.h
-req.include-header : Fwpsk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with  Windows 7.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Fwpkclnt.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FWPS_VSWITCH_EVENT_TYPE
+UID: NF:fwpsk.FwpsInjectTransportSendAsync1
+title: FwpsInjectTransportSendAsync1 function
+author: windows-driver-content
+description: The FwpsInjectTransportSendAsync1 function injects packet data from the transport, datagram data, or ICMP error layers into the send data path.
+old-location: netvista\fwpsinjecttransportsendasync1.htm
+old-project: netvista
+ms.assetid: 74d91e43-d58a-4c2c-bfc9-4b0829a5f9f8
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: FwpsInjectTransportSendAsync1, fwpsk/FwpsInjectTransportSendAsync1, wfp_ref_2_funct_3_fwps_I_a1489474-a130-48de-b064-614dfb2e1db2.xml, FwpsInjectTransportSendAsync1 function [Network Drivers Starting with Windows Vista], netvista.fwpsinjecttransportsendasync1
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fwpsk.h
+req.include-header: Fwpsk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with  Windows 7.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Fwpkclnt.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	fwpkclnt.lib
+-	fwpkclnt.dll
+apiname:
+-	FwpsInjectTransportSendAsync1
+product: Windows
+targetos: Windows
+req.typenames: FWPS_VSWITCH_EVENT_TYPE
 ---
 
 

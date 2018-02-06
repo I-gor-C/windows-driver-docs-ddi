@@ -1,41 +1,46 @@
 ---
-UID : NS:dispmprt._DXGK_FIRMWARE_TABLE_INTERFACE
-title : "_DXGK_FIRMWARE_TABLE_INTERFACE"
-author : windows-driver-content
-description : Contains pointers to functions in the System Firmware Table interface that the display miniport driver can call to enumerate and read the system firmware table.
-old-location : display\dxgk_firmware_table_interface.htm
-old-project : display
-ms.assetid : 22ba50eb-e428-433f-aca0-1d61f31fcd0c
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgk_firmware_table_interface, *PDXGK_FIRMWARE_TABLE_INTERFACE, DXGK_FIRMWARE_TABLE_INTERFACE structure [Display Devices], dispmprt/PDXGK_FIRMWARE_TABLE_INTERFACE, PDXGK_FIRMWARE_TABLE_INTERFACE structure pointer [Display Devices], _DXGK_FIRMWARE_TABLE_INTERFACE, DXGK_FIRMWARE_TABLE_INTERFACE, dispmprt/DXGK_FIRMWARE_TABLE_INTERFACE, PDXGK_FIRMWARE_TABLE_INTERFACE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : dispmprt.h
-req.include-header : Dispmprt.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDXGK_FIRMWARE_TABLE_INTERFACE, DXGK_FIRMWARE_TABLE_INTERFACE"
+UID: NS:dispmprt._DXGK_FIRMWARE_TABLE_INTERFACE
+title: "_DXGK_FIRMWARE_TABLE_INTERFACE"
+author: windows-driver-content
+description: Contains pointers to functions in the System Firmware Table interface that the display miniport driver can call to enumerate and read the system firmware table.
+old-location: display\dxgk_firmware_table_interface.htm
+old-project: display
+ms.assetid: 22ba50eb-e428-433f-aca0-1d61f31fcd0c
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgk_firmware_table_interface, *PDXGK_FIRMWARE_TABLE_INTERFACE, DXGK_FIRMWARE_TABLE_INTERFACE structure [Display Devices], dispmprt/PDXGK_FIRMWARE_TABLE_INTERFACE, PDXGK_FIRMWARE_TABLE_INTERFACE structure pointer [Display Devices], _DXGK_FIRMWARE_TABLE_INTERFACE, DXGK_FIRMWARE_TABLE_INTERFACE, dispmprt/DXGK_FIRMWARE_TABLE_INTERFACE, PDXGK_FIRMWARE_TABLE_INTERFACE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: dispmprt.h
+req.include-header: Dispmprt.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	dispmprt.h
+apiname:
+-	DXGK_FIRMWARE_TABLE_INTERFACE
+product: Windows
+targetos: Windows
+req.typenames: "*PDXGK_FIRMWARE_TABLE_INTERFACE, DXGK_FIRMWARE_TABLE_INTERFACE"
 ---
 
 # _DXGK_FIRMWARE_TABLE_INTERFACE structure

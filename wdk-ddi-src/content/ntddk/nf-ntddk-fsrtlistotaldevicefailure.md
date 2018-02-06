@@ -1,41 +1,46 @@
 ---
-UID : NF:ntddk.FsRtlIsTotalDeviceFailure
-title : FsRtlIsTotalDeviceFailure function
-author : windows-driver-content
-description : The FsRtlIsTotalDeviceFailure routine determines whether a media or other hardware failure has occurred.
-old-location : ifsk\fsrtlistotaldevicefailure.htm
-old-project : ifsk
-ms.assetid : 6d1a39ea-bdc0-47e2-94a5-69554f4b38c4
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ntddk/FsRtlIsTotalDeviceFailure, FsRtlIsTotalDeviceFailure routine [Installable File System Drivers], FsRtlIsTotalDeviceFailure, ifsk.fsrtlistotaldevicefailure, fsrtlref_b4ec70b9-8a76-4e47-905a-54238a0b9173.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Universal
-req.target-min-winverclnt : This routine is available on Microsoft Windows 2000 and later versions of Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.FsRtlIsTotalDeviceFailure
+title: FsRtlIsTotalDeviceFailure function
+author: windows-driver-content
+description: The FsRtlIsTotalDeviceFailure routine determines whether a media or other hardware failure has occurred.
+old-location: ifsk\fsrtlistotaldevicefailure.htm
+old-project: ifsk
+ms.assetid: 6d1a39ea-bdc0-47e2-94a5-69554f4b38c4
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ntddk/FsRtlIsTotalDeviceFailure, FsRtlIsTotalDeviceFailure routine [Installable File System Drivers], FsRtlIsTotalDeviceFailure, ifsk.fsrtlistotaldevicefailure, fsrtlref_b4ec70b9-8a76-4e47-905a-54238a0b9173.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Universal
+req.target-min-winverclnt: This routine is available on Microsoft Windows 2000 and later versions of Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	FsRtlIsTotalDeviceFailure
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

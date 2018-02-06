@@ -1,42 +1,47 @@
 ---
-UID : NS:wdfdevice._WDF_DEVICE_POWER_POLICY_WAKE_SETTINGS
-title : "_WDF_DEVICE_POWER_POLICY_WAKE_SETTINGS"
-author : windows-driver-content
-description : The WDF_DEVICE_POWER_POLICY_WAKE_SETTINGS structure contains driver-supplied information about a device's ability to wake itself and the system, when both are in a low-power state.
-old-location : wdf\wdf_device_power_policy_wake_settings.htm
-old-project : wdf
-ms.assetid : d7448873-aa96-4eac-a5be-16dff661ab40
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdfdevice/PWDF_DEVICE_POWER_POLICY_WAKE_SETTINGS, wdfdevice/WDF_DEVICE_POWER_POLICY_WAKE_SETTINGS, kmdf.wdf_device_power_policy_wake_settings, WDF_DEVICE_POWER_POLICY_WAKE_SETTINGS, wdf.wdf_device_power_policy_wake_settings, PWDF_DEVICE_POWER_POLICY_WAKE_SETTINGS, DFDeviceObjectGeneralRef_08482cf6-3f3d-44d2-b0f3-4856a23d94d0.xml, PWDF_DEVICE_POWER_POLICY_WAKE_SETTINGS structure pointer, WDF_DEVICE_POWER_POLICY_WAKE_SETTINGS structure, _WDF_DEVICE_POWER_POLICY_WAKE_SETTINGS, *PWDF_DEVICE_POWER_POLICY_WAKE_SETTINGS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdfdevice.h
-req.include-header : Wdf.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_DEVICE_POWER_POLICY_WAKE_SETTINGS, *PWDF_DEVICE_POWER_POLICY_WAKE_SETTINGS
-req.product : Windows 10 or later.
+UID: NS:wdfdevice._WDF_DEVICE_POWER_POLICY_WAKE_SETTINGS
+title: "_WDF_DEVICE_POWER_POLICY_WAKE_SETTINGS"
+author: windows-driver-content
+description: The WDF_DEVICE_POWER_POLICY_WAKE_SETTINGS structure contains driver-supplied information about a device's ability to wake itself and the system, when both are in a low-power state.
+old-location: wdf\wdf_device_power_policy_wake_settings.htm
+old-project: wdf
+ms.assetid: d7448873-aa96-4eac-a5be-16dff661ab40
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdfdevice/PWDF_DEVICE_POWER_POLICY_WAKE_SETTINGS, wdfdevice/WDF_DEVICE_POWER_POLICY_WAKE_SETTINGS, kmdf.wdf_device_power_policy_wake_settings, WDF_DEVICE_POWER_POLICY_WAKE_SETTINGS, wdf.wdf_device_power_policy_wake_settings, PWDF_DEVICE_POWER_POLICY_WAKE_SETTINGS, DFDeviceObjectGeneralRef_08482cf6-3f3d-44d2-b0f3-4856a23d94d0.xml, PWDF_DEVICE_POWER_POLICY_WAKE_SETTINGS structure pointer, WDF_DEVICE_POWER_POLICY_WAKE_SETTINGS structure, _WDF_DEVICE_POWER_POLICY_WAKE_SETTINGS, *PWDF_DEVICE_POWER_POLICY_WAKE_SETTINGS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdfdevice.h
+req.include-header: Wdf.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfdevice.h
+apiname:
+-	WDF_DEVICE_POWER_POLICY_WAKE_SETTINGS
+product: Windows
+targetos: Windows
+req.typenames: WDF_DEVICE_POWER_POLICY_WAKE_SETTINGS, *PWDF_DEVICE_POWER_POLICY_WAKE_SETTINGS
+req.product: Windows 10 or later.
 ---
 
 # _WDF_DEVICE_POWER_POLICY_WAKE_SETTINGS structure

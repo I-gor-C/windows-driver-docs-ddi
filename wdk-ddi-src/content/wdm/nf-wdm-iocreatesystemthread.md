@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.IoCreateSystemThread
-title : IoCreateSystemThread function
-author : windows-driver-content
-description : The IoCreateSystemThread routine creates a system thread that executes in kernel mode, and supplies a handle for the thread.
-old-location : kernel\iocreatesystemthread.htm
-old-project : kernel
-ms.assetid : B2879353-3917-46AA-89CC-A20F0BB78BC4
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/IoCreateSystemThread, IoCreateSystemThread routine [Kernel-Mode Driver Architecture], kernel.iocreatesystemthread, IoCreateSystemThread
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.IoCreateSystemThread
+title: IoCreateSystemThread function
+author: windows-driver-content
+description: The IoCreateSystemThread routine creates a system thread that executes in kernel mode, and supplies a handle for the thread.
+old-location: kernel\iocreatesystemthread.htm
+old-project: kernel
+ms.assetid: B2879353-3917-46AA-89CC-A20F0BB78BC4
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/IoCreateSystemThread, IoCreateSystemThread routine [Kernel-Mode Driver Architecture], kernel.iocreatesystemthread, IoCreateSystemThread
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoCreateSystemThread
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

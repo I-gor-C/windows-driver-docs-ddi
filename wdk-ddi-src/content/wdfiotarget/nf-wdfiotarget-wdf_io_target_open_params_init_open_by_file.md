@@ -1,42 +1,47 @@
 ---
-UID : NF:wdfiotarget.WDF_IO_TARGET_OPEN_PARAMS_INIT_OPEN_BY_FILE
-title : WDF_IO_TARGET_OPEN_PARAMS_INIT_OPEN_BY_FILE function
-author : windows-driver-content
-description : The WDF_IO_TARGET_OPEN_PARAMS_INIT_OPEN_BY_FILE function initializes a driver's WDF_IO_TARGET_OPEN_PARAMS structure so the driver can open an I/O target by specifying a filename.
-old-location : wdf\wdf_io_target_open_params_init_open_by_file.htm
-old-project : wdf
-ms.assetid : 6C8CA2A8-D39E-4524-A909-102D8310AC72
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WDF_IO_TARGET_OPEN_PARAMS_INIT_OPEN_BY_FILE function, wdf.wdf_io_target_open_params_init_open_by_file, WDF_IO_TARGET_OPEN_PARAMS_INIT_OPEN_BY_FILE, wdfiotarget/WDF_IO_TARGET_OPEN_PARAMS_INIT_OPEN_BY_FILE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfiotarget.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : Windows 8.1
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDF_IO_TARGET_STATE, WDF_IO_TARGET_STATE"
-req.product : Windows 10 or later.
+UID: NF:wdfiotarget.WDF_IO_TARGET_OPEN_PARAMS_INIT_OPEN_BY_FILE
+title: WDF_IO_TARGET_OPEN_PARAMS_INIT_OPEN_BY_FILE function
+author: windows-driver-content
+description: The WDF_IO_TARGET_OPEN_PARAMS_INIT_OPEN_BY_FILE function initializes a driver's WDF_IO_TARGET_OPEN_PARAMS structure so the driver can open an I/O target by specifying a filename.
+old-location: wdf\wdf_io_target_open_params_init_open_by_file.htm
+old-project: wdf
+ms.assetid: 6C8CA2A8-D39E-4524-A909-102D8310AC72
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WDF_IO_TARGET_OPEN_PARAMS_INIT_OPEN_BY_FILE function, wdf.wdf_io_target_open_params_init_open_by_file, WDF_IO_TARGET_OPEN_PARAMS_INIT_OPEN_BY_FILE, wdfiotarget/WDF_IO_TARGET_OPEN_PARAMS_INIT_OPEN_BY_FILE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfiotarget.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: Windows 8.1
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfiotarget.h
+apiname:
+-	WDF_IO_TARGET_OPEN_PARAMS_INIT_OPEN_BY_FILE
+product: Windows
+targetos: Windows
+req.typenames: "*PWDF_IO_TARGET_STATE, WDF_IO_TARGET_STATE"
+req.product: Windows 10 or later.
 ---
 
 

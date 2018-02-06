@@ -1,41 +1,46 @@
 ---
-UID : NS:hbapiwmi._SendRNID_IN
-title : "_SendRNID_IN"
-author : windows-driver-content
-description : The SendRNID_IN structure is used to deliver input parameter data to the SendRNID WMI method.
-old-location : storage\sendrnid_in.htm
-old-project : storage
-ms.assetid : 668c4d1a-52e8-49ea-bd19-e789dfa8dfa5
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : PSendRNID_IN structure pointer [Storage Devices], SendRNID_IN, structs-Fibre_506226e9-45f1-40d3-bd41-7b30fe16673e.xml, SendRNID_IN structure [Storage Devices], hbapiwmi/PSendRNID_IN, *PSendRNID_IN, storage.sendrnid_in, hbapiwmi/SendRNID_IN, _SendRNID_IN, PSendRNID_IN
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : hbapiwmi.h
-req.include-header : Hbapiwmi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSendRNID_IN, SendRNID_IN"
+UID: NS:hbapiwmi._SendRNID_IN
+title: "_SendRNID_IN"
+author: windows-driver-content
+description: The SendRNID_IN structure is used to deliver input parameter data to the SendRNID WMI method.
+old-location: storage\sendrnid_in.htm
+old-project: storage
+ms.assetid: 668c4d1a-52e8-49ea-bd19-e789dfa8dfa5
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: PSendRNID_IN structure pointer [Storage Devices], SendRNID_IN, structs-Fibre_506226e9-45f1-40d3-bd41-7b30fe16673e.xml, SendRNID_IN structure [Storage Devices], hbapiwmi/PSendRNID_IN, *PSendRNID_IN, storage.sendrnid_in, hbapiwmi/SendRNID_IN, _SendRNID_IN, PSendRNID_IN
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: hbapiwmi.h
+req.include-header: Hbapiwmi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hbapiwmi.h
+apiname:
+-	SendRNID_IN
+product: Windows
+targetos: Windows
+req.typenames: "*PSendRNID_IN, SendRNID_IN"
 ---
 
 # _SendRNID_IN structure

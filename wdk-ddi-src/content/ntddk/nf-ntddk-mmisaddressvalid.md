@@ -1,41 +1,46 @@
 ---
-UID : NF:ntddk.MmIsAddressValid
-title : MmIsAddressValid function
-author : windows-driver-content
-description : The MmIsAddressValid routine checks whether a page fault will occur for a read or write operation at a given virtual address.Warning  We do not recommend using this function.
-old-location : kernel\mmisaddressvalid.htm
-old-project : kernel
-ms.assetid : 328f9ffe-67ae-4ba5-98e4-b3b00068eb0e
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : MmIsAddressValid, kernel.mmisaddressvalid, ntddk/MmIsAddressValid, k106_5f0349a5-5fdb-4263-b91a-d00667729901.xml, MmIsAddressValid routine [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.MmIsAddressValid
+title: MmIsAddressValid function
+author: windows-driver-content
+description: The MmIsAddressValid routine checks whether a page fault will occur for a read or write operation at a given virtual address.Warning  We do not recommend using this function.
+old-location: kernel\mmisaddressvalid.htm
+old-project: kernel
+ms.assetid: 328f9ffe-67ae-4ba5-98e4-b3b00068eb0e
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: MmIsAddressValid, kernel.mmisaddressvalid, ntddk/MmIsAddressValid, k106_5f0349a5-5fdb-4263-b91a-d00667729901.xml, MmIsAddressValid routine [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	MmIsAddressValid
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

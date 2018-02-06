@@ -1,41 +1,46 @@
 ---
-UID : NF:portcls.IPortWavePciStream.TerminatePacket
-title : IPortWavePciStream::TerminatePacket method
-author : windows-driver-content
-description : The TerminatePacket method terminates the packet currently being mapped.
-old-location : audio\iportwavepcistream_terminatepacket.htm
-old-project : audio
-ms.assetid : b85c37ff-b8f0-43df-bce2-f8a85ec050a7
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : audmp-routines_7991fb3b-ea9a-4c58-acd5-7563752f415e.xml, TerminatePacket method [Audio Devices], IPortWavePciStream interface, IPortWavePciStream, audio.iportwavepcistream_terminatepacket, TerminatePacket method [Audio Devices], TerminatePacket, portcls/IPortWavePciStream::TerminatePacket, IPortWavePciStream::TerminatePacket, IPortWavePciStream interface [Audio Devices], TerminatePacket method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : portcls.h
-req.include-header : Portcls.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : portcls.h
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.IPortWavePciStream.TerminatePacket
+title: IPortWavePciStream::TerminatePacket method
+author: windows-driver-content
+description: The TerminatePacket method terminates the packet currently being mapped.
+old-location: audio\iportwavepcistream_terminatepacket.htm
+old-project: audio
+ms.assetid: b85c37ff-b8f0-43df-bce2-f8a85ec050a7
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: audmp-routines_7991fb3b-ea9a-4c58-acd5-7563752f415e.xml, TerminatePacket method [Audio Devices], IPortWavePciStream interface, IPortWavePciStream, audio.iportwavepcistream_terminatepacket, TerminatePacket method [Audio Devices], TerminatePacket, portcls/IPortWavePciStream::TerminatePacket, IPortWavePciStream::TerminatePacket, IPortWavePciStream interface [Audio Devices], TerminatePacket method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: portcls.h
+req.include-header: Portcls.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: portcls.h
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	portcls.h
+apiname:
+-	IPortWavePciStream.TerminatePacket
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

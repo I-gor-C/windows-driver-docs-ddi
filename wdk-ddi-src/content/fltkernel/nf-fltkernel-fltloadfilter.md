@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltLoadFilter
-title : FltLoadFilter function
-author : windows-driver-content
-description : The FltLoadFilter routine dynamically loads a minifilter driver into the currently running system.
-old-location : ifsk\fltloadfilter.htm
-old-project : ifsk
-ms.assetid : aecf5f5f-c0b7-487a-9db0-d01212aef094
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.fltloadfilter, fltkernel/FltLoadFilter, FltApiRef_e_to_o_3cdd26c1-dc25-4fa0-8ea1-a1458742cd45.xml, FltLoadFilter routine [Installable File System Drivers], FltLoadFilter
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltLoadFilter
+title: FltLoadFilter function
+author: windows-driver-content
+description: The FltLoadFilter routine dynamically loads a minifilter driver into the currently running system.
+old-location: ifsk\fltloadfilter.htm
+old-project: ifsk
+ms.assetid: aecf5f5f-c0b7-487a-9db0-d01212aef094
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.fltloadfilter, fltkernel/FltLoadFilter, FltApiRef_e_to_o_3cdd26c1-dc25-4fa0-8ea1-a1458742cd45.xml, FltLoadFilter routine [Installable File System Drivers], FltLoadFilter
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltLoadFilter
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

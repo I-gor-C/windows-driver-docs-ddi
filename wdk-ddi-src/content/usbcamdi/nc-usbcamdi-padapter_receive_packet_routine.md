@@ -1,42 +1,47 @@
 ---
-UID : NC:usbcamdi.PADAPTER_RECEIVE_PACKET_ROUTINE
-title : PADAPTER_RECEIVE_PACKET_ROUTINE
-author : windows-driver-content
-description : A camera minidriver's AdapterReceivePacket callback function processes adapter-based stream request blocks (SRBs) passed to it by the stream class driver.
-old-location : stream\adapterreceivepacket.htm
-old-project : stream
-ms.assetid : 8ee658bf-2243-4b1f-b4d6-5d9b6388e972
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.adapterreceivepacket, AdapterReceivePacket, AdapterReceivePacket callback function [Streaming Media Devices], AdapterReceivePacket, PADAPTER_RECEIVE_PACKET_ROUTINE, PADAPTER_RECEIVE_PACKET_ROUTINE, usbcamdi/AdapterReceivePacket, usbcmdpr_4f4422ba-64f3-4eee-8450-4a3b5715b910.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : usbcamdi.h
-req.include-header : Usbcamdi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUSB_BUS_INTERFACE_USBDI_V3, USB_BUS_INTERFACE_USBDI_V3"
-req.product : Windows 10 or later.
+UID: NC:usbcamdi.PADAPTER_RECEIVE_PACKET_ROUTINE
+title: PADAPTER_RECEIVE_PACKET_ROUTINE
+author: windows-driver-content
+description: A camera minidriver's AdapterReceivePacket callback function processes adapter-based stream request blocks (SRBs) passed to it by the stream class driver.
+old-location: stream\adapterreceivepacket.htm
+old-project: stream
+ms.assetid: 8ee658bf-2243-4b1f-b4d6-5d9b6388e972
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.adapterreceivepacket, AdapterReceivePacket, AdapterReceivePacket callback function [Streaming Media Devices], AdapterReceivePacket, PADAPTER_RECEIVE_PACKET_ROUTINE, PADAPTER_RECEIVE_PACKET_ROUTINE, usbcamdi/AdapterReceivePacket, usbcmdpr_4f4422ba-64f3-4eee-8450-4a3b5715b910.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: usbcamdi.h
+req.include-header: Usbcamdi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	usbcamdi.h
+apiname:
+-	AdapterReceivePacket
+product: Windows
+targetos: Windows
+req.typenames: "*PUSB_BUS_INTERFACE_USBDI_V3, USB_BUS_INTERFACE_USBDI_V3"
+req.product: Windows 10 or later.
 ---
 
 

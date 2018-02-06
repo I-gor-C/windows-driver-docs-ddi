@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.IoRegisterFsRegistrationChangeEx
-title : IoRegisterFsRegistrationChangeEx function
-author : windows-driver-content
-description : The IoRegisterFsRegistrationChangeEx routine registers a file system filter driver's notification routine to be called whenever a file system registers or unregisters itself as an active file system.
-old-location : ifsk\ioregisterfsregistrationchangeex.htm
-old-project : ifsk
-ms.assetid : e318e13b-8b6c-4593-93ce-17d2a1056ac2
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ioref_330f3a93-4d81-4a6b-9733-521558d255a6.xml, IoRegisterFsRegistrationChangeEx routine [Installable File System Drivers], IoRegisterFsRegistrationChangeEx, ifsk.ioregisterfsregistrationchangeex, ntifs/IoRegisterFsRegistrationChangeEx
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Desktop
-req.target-min-winverclnt : This routine is only available on the Update Rollup for Windows 2000 Service Pack 4 (SP4) operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.IoRegisterFsRegistrationChangeEx
+title: IoRegisterFsRegistrationChangeEx function
+author: windows-driver-content
+description: The IoRegisterFsRegistrationChangeEx routine registers a file system filter driver's notification routine to be called whenever a file system registers or unregisters itself as an active file system.
+old-location: ifsk\ioregisterfsregistrationchangeex.htm
+old-project: ifsk
+ms.assetid: e318e13b-8b6c-4593-93ce-17d2a1056ac2
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ioref_330f3a93-4d81-4a6b-9733-521558d255a6.xml, IoRegisterFsRegistrationChangeEx routine [Installable File System Drivers], IoRegisterFsRegistrationChangeEx, ifsk.ioregisterfsregistrationchangeex, ntifs/IoRegisterFsRegistrationChangeEx
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Desktop
+req.target-min-winverclnt: This routine is only available on the Update Rollup for Windows 2000 Service Pack 4 (SP4) operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntifs.h
+apiname:
+-	IoRegisterFsRegistrationChangeEx
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

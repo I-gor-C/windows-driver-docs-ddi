@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltGetEcpListFromCallbackData
-title : FltGetEcpListFromCallbackData function
-author : windows-driver-content
-description : The FltGetEcpListFromCallbackData routine returns a pointer to an extra create parameter context structure (ECP) list that is associated with a given create operation callback-data object.
-old-location : ifsk\fltgetecplistfromcallbackdata.htm
-old-project : ifsk
-ms.assetid : 4e172b98-81f8-4e20-a622-232378114cf3
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltGetEcpListFromCallbackData routine [Installable File System Drivers], FltApiRef_e_to_o_781f52ec-4262-4205-81bb-2a0e824f50af.xml, fltkernel/FltGetEcpListFromCallbackData, ifsk.fltgetecplistfromcallbackdata, FltGetEcpListFromCallbackData
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : This routine is available starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltGetEcpListFromCallbackData
+title: FltGetEcpListFromCallbackData function
+author: windows-driver-content
+description: The FltGetEcpListFromCallbackData routine returns a pointer to an extra create parameter context structure (ECP) list that is associated with a given create operation callback-data object.
+old-location: ifsk\fltgetecplistfromcallbackdata.htm
+old-project: ifsk
+ms.assetid: 4e172b98-81f8-4e20-a622-232378114cf3
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltGetEcpListFromCallbackData routine [Installable File System Drivers], FltApiRef_e_to_o_781f52ec-4262-4205-81bb-2a0e824f50af.xml, fltkernel/FltGetEcpListFromCallbackData, ifsk.fltgetecplistfromcallbackdata, FltGetEcpListFromCallbackData
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: This routine is available starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltGetEcpListFromCallbackData
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

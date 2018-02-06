@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltQueryVolumeInformation
-title : FltQueryVolumeInformation function
-author : windows-driver-content
-description : The FltQueryVolumeInformation routine retrieves information about the volume that the given instance is attached to.
-old-location : ifsk\fltqueryvolumeinformation.htm
-old-project : ifsk
-ms.assetid : 57b65e87-7f2d-44fc-84b9-e029c8075be3
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FileFsSizeInformation, fltkernel/FltQueryVolumeInformation, FltQueryVolumeInformation routine [Installable File System Drivers], FltApiRef_p_to_z_1b2db9a1-36d0-4503-bd97-7f24b68ad513.xml, FileFsSectorSizeInformation, FileFsDriverPathInformation, FltQueryVolumeInformation, FileFsVolumeInformation, ifsk.fltqueryvolumeinformation, FileFsAttributeInformation, FileFsDeviceInformation, FileFsControlInformation, FileFsObjectIdInformation, FileFsFullSizeInformation
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : FltKernel.h
-req.target-type : Universal
-req.target-min-winverclnt : Available and supported in Microsoft Windows 2000 Update Rollup 1 for SP4, Windows XP with Service Pack 2 (SP2), Windows Server 2003 SP1 and later  Windows operating systems. Not available or supported in Windows 2000 SP4 and earlier Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltQueryVolumeInformation
+title: FltQueryVolumeInformation function
+author: windows-driver-content
+description: The FltQueryVolumeInformation routine retrieves information about the volume that the given instance is attached to.
+old-location: ifsk\fltqueryvolumeinformation.htm
+old-project: ifsk
+ms.assetid: 57b65e87-7f2d-44fc-84b9-e029c8075be3
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FileFsSizeInformation, fltkernel/FltQueryVolumeInformation, FltQueryVolumeInformation routine [Installable File System Drivers], FltApiRef_p_to_z_1b2db9a1-36d0-4503-bd97-7f24b68ad513.xml, FileFsSectorSizeInformation, FileFsDriverPathInformation, FltQueryVolumeInformation, FileFsVolumeInformation, ifsk.fltqueryvolumeinformation, FileFsAttributeInformation, FileFsDeviceInformation, FileFsControlInformation, FileFsObjectIdInformation, FileFsFullSizeInformation
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: FltKernel.h
+req.target-type: Universal
+req.target-min-winverclnt: Available and supported in Microsoft Windows 2000 Update Rollup 1 for SP4, Windows XP with Service Pack 2 (SP2), Windows Server 2003 SP1 and later  Windows operating systems. Not available or supported in Windows 2000 SP4 and earlier Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltQueryVolumeInformation
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

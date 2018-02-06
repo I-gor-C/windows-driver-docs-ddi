@@ -1,41 +1,46 @@
 ---
-UID : NC:dispmprt.DXGK_BRIGHTNESS_SET_STATE
-title : DXGK_BRIGHTNESS_SET_STATE
-author : windows-driver-content
-description : Enables smooth brightness control on an integrated display panel.
-old-location : display\dxgkddisetbrightnessstate.htm
-old-project : display
-ms.assetid : 804046ff-0cc7-4ff0-be07-b574cb40fd2b
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkddisetbrightnessstate, DxgkDdiSetBrightnessState callback function [Display Devices], DxgkDdiSetBrightnessState, DXGK_BRIGHTNESS_SET_STATE, DXGK_BRIGHTNESS_SET_STATE, dispmprt/DxgkDdiSetBrightnessState
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : dispmprt.h
-req.include-header : Dispmprt.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
+UID: NC:dispmprt.DXGK_BRIGHTNESS_SET_STATE
+title: DXGK_BRIGHTNESS_SET_STATE
+author: windows-driver-content
+description: Enables smooth brightness control on an integrated display panel.
+old-location: display\dxgkddisetbrightnessstate.htm
+old-project: display
+ms.assetid: 804046ff-0cc7-4ff0-be07-b574cb40fd2b
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkddisetbrightnessstate, DxgkDdiSetBrightnessState callback function [Display Devices], DxgkDdiSetBrightnessState, DXGK_BRIGHTNESS_SET_STATE, DXGK_BRIGHTNESS_SET_STATE, dispmprt/DxgkDdiSetBrightnessState
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: dispmprt.h
+req.include-header: Dispmprt.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Dispmprt.h
+apiname:
+-	DxgkDdiSetBrightnessState
+product: Windows
+targetos: Windows
+req.typenames: SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.IoReleaseVpbSpinLock
-title : IoReleaseVpbSpinLock function
-author : windows-driver-content
-description : The IoReleaseVpbSpinLock routine releases the Volume Parameter Block (VPB) spin lock.
-old-location : ifsk\ioreleasevpbspinlock.htm
-old-project : ifsk
-ms.assetid : c0b93f32-4c5c-472c-8c13-3e441f86475f
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : IoReleaseVpbSpinLock routine [Installable File System Drivers], IoReleaseVpbSpinLock, ifsk.ioreleasevpbspinlock, ioref_6ccdef5f-9874-4e93-8d91-a05b80d5cecf.xml, ntifs/IoReleaseVpbSpinLock
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : DISPATCH_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.IoReleaseVpbSpinLock
+title: IoReleaseVpbSpinLock function
+author: windows-driver-content
+description: The IoReleaseVpbSpinLock routine releases the Volume Parameter Block (VPB) spin lock.
+old-location: ifsk\ioreleasevpbspinlock.htm
+old-project: ifsk
+ms.assetid: c0b93f32-4c5c-472c-8c13-3e441f86475f
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: IoReleaseVpbSpinLock routine [Installable File System Drivers], IoReleaseVpbSpinLock, ifsk.ioreleasevpbspinlock, ioref_6ccdef5f-9874-4e93-8d91-a05b80d5cecf.xml, ntifs/IoReleaseVpbSpinLock
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: DISPATCH_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoReleaseVpbSpinLock
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

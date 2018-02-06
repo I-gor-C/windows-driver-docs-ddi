@@ -1,41 +1,47 @@
 ---
-UID : NF:iointex.WdmlibIoGetAffinityInterrupt
-title : WdmlibIoGetAffinityInterrupt function
-author : windows-driver-content
-description : The WdmlibIoGetAffinityInterrupt function gets the group affinity of an interrupt object.
-old-location : kernel\wdmlibiogetaffinityinterrupt.htm
-old-project : kernel
-ms.assetid : E9E80EB4-C20B-4025-957B-32DC6FAE7F38
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : WdmlibIoGetAffinityInterrupt function [Kernel-Mode Driver Architecture], WdmlibIoGetAffinityInterrupt, iointex/IoGetAffinityInterrupt, kernel.wdmlibiogetaffinityinterrupt, IoGetAffinityInterrupt, iointex/WdmlibIoGetAffinityInterrupt
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : iointex.h
-req.include-header : Iointex.h, Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : LUID
+UID: NF:iointex.WdmlibIoGetAffinityInterrupt
+title: WdmlibIoGetAffinityInterrupt function
+author: windows-driver-content
+description: The WdmlibIoGetAffinityInterrupt function gets the group affinity of an interrupt object.
+old-location: kernel\wdmlibiogetaffinityinterrupt.htm
+old-project: kernel
+ms.assetid: E9E80EB4-C20B-4025-957B-32DC6FAE7F38
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: WdmlibIoGetAffinityInterrupt function [Kernel-Mode Driver Architecture], WdmlibIoGetAffinityInterrupt, iointex/IoGetAffinityInterrupt, kernel.wdmlibiogetaffinityinterrupt, IoGetAffinityInterrupt, iointex/WdmlibIoGetAffinityInterrupt
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: iointex.h
+req.include-header: Iointex.h, Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	WdmlibIoGetAffinityInterrupt
+-	IoGetAffinityInterrupt
+product: Windows
+targetos: Windows
+req.typenames: LUID
 ---
 
 

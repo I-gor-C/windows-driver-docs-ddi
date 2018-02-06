@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltSetInstanceContext
-title : FltSetInstanceContext function
-author : windows-driver-content
-description : FltSetInstanceContext sets a context for a minifilter driver instance.
-old-location : ifsk\fltsetinstancecontext.htm
-old-project : ifsk
-ms.assetid : ddeeb49b-7c7d-4faa-b2ae-cdb09adebce0
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltApiRef_p_to_z_a8984c00-54a9-427c-b33d-829b1db55149.xml, fltkernel/FltSetInstanceContext, ifsk.fltsetinstancecontext, FltSetInstanceContext function [Installable File System Drivers], FltSetInstanceContext
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : Available and supported in Microsoft Windows 2000 Update Rollup 1 for SP4, Windows XP SP2, Windows Server 2003 SP1, and later versions of the operating system. Not available nor supported on Windows 2000 SP4 and earlier operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltSetInstanceContext
+title: FltSetInstanceContext function
+author: windows-driver-content
+description: FltSetInstanceContext sets a context for a minifilter driver instance.
+old-location: ifsk\fltsetinstancecontext.htm
+old-project: ifsk
+ms.assetid: ddeeb49b-7c7d-4faa-b2ae-cdb09adebce0
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltApiRef_p_to_z_a8984c00-54a9-427c-b33d-829b1db55149.xml, fltkernel/FltSetInstanceContext, ifsk.fltsetinstancecontext, FltSetInstanceContext function [Installable File System Drivers], FltSetInstanceContext
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: Available and supported in Microsoft Windows 2000 Update Rollup 1 for SP4, Windows XP SP2, Windows Server 2003 SP1, and later versions of the operating system. Not available nor supported on Windows 2000 SP4 and earlier operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltSetInstanceContext
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

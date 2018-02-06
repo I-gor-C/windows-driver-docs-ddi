@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_SETPRIORITYCB
-title : PFND3DDDI_SETPRIORITYCB
-author : windows-driver-content
-description : The pfnSetPriorityCb function sets the priority level of a resource or list of allocations.
-old-location : display\pfnsetprioritycb.htm
-old-project : display
-ms.assetid : 1812cb0f-9232-4813-9c7b-74c9fa4d03cf
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.pfnsetprioritycb, pfnSetPriorityCb callback function [Display Devices], pfnSetPriorityCb, PFND3DDDI_SETPRIORITYCB, PFND3DDDI_SETPRIORITYCB, d3dumddi/pfnSetPriorityCb, D3Druntime_Functions_4bd6f90d-e958-43cc-8267-36d4d0448096.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_SETPRIORITYCB
+title: PFND3DDDI_SETPRIORITYCB
+author: windows-driver-content
+description: The pfnSetPriorityCb function sets the priority level of a resource or list of allocations.
+old-location: display\pfnsetprioritycb.htm
+old-project: display
+ms.assetid: 1812cb0f-9232-4813-9c7b-74c9fa4d03cf
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.pfnsetprioritycb, pfnSetPriorityCb callback function [Display Devices], pfnSetPriorityCb, PFND3DDDI_SETPRIORITYCB, PFND3DDDI_SETPRIORITYCB, d3dumddi/pfnSetPriorityCb, D3Druntime_Functions_4bd6f90d-e958-43cc-8267-36d4d0448096.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	pfnSetPriorityCb
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

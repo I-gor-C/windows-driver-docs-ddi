@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugControl3.GetLogMask
-title : IDebugControl3::GetLogMask method
-author : windows-driver-content
-description : The GetLogMask method returns the output mask for the currently open log file.
-old-location : debugger\getlogmask.htm
-old-project : debugger
-ms.assetid : 32d36b6d-9887-43ac-9314-fc682705131e
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : GetLogMask method [Windows Debugging], IDebugControl interface, dbgeng/IDebugControl2::GetLogMask, GetLogMask method [Windows Debugging], IDebugControl3 interface, IDebugControl_a3ef306a-5134-49c7-b589-65a4afaa90ac.xml, GetLogMask method [Windows Debugging], IDebugControl3 interface [Windows Debugging], GetLogMask method, GetLogMask method [Windows Debugging], IDebugControl2 interface, dbgeng/IDebugControl3::GetLogMask, IDebugControl3, dbgeng/IDebugControl::GetLogMask, IDebugControl::GetLogMask, GetLogMask, debugger.getlogmask, IDebugControl2 interface [Windows Debugging], GetLogMask method, IDebugControl3::GetLogMask, IDebugControl interface [Windows Debugging], GetLogMask method, IDebugControl2::GetLogMask
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl3.GetLogMask
+title: IDebugControl3::GetLogMask method
+author: windows-driver-content
+description: The GetLogMask method returns the output mask for the currently open log file.
+old-location: debugger\getlogmask.htm
+old-project: debugger
+ms.assetid: 32d36b6d-9887-43ac-9314-fc682705131e
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: GetLogMask method [Windows Debugging], IDebugControl interface, dbgeng/IDebugControl2::GetLogMask, GetLogMask method [Windows Debugging], IDebugControl3 interface, IDebugControl_a3ef306a-5134-49c7-b589-65a4afaa90ac.xml, GetLogMask method [Windows Debugging], IDebugControl3 interface [Windows Debugging], GetLogMask method, GetLogMask method [Windows Debugging], IDebugControl2 interface, dbgeng/IDebugControl3::GetLogMask, IDebugControl3, dbgeng/IDebugControl::GetLogMask, IDebugControl::GetLogMask, GetLogMask, debugger.getlogmask, IDebugControl2 interface [Windows Debugging], GetLogMask method, IDebugControl3::GetLogMask, IDebugControl interface [Windows Debugging], GetLogMask method, IDebugControl2::GetLogMask
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl.GetLogMask
+-	IDebugControl2.GetLogMask
+-	IDebugControl3.GetLogMask
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

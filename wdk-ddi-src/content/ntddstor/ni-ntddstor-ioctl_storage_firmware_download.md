@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddstor.IOCTL_STORAGE_FIRMWARE_DOWNLOAD
-title : IOCTL_STORAGE_FIRMWARE_DOWNLOAD
-author : windows-driver-content
-description : A driver can use IOCTL_STORAGE_FIRMWARE_DOWNLOAD to download a firmware image to a storage device, but does not activate it.
-old-location : storage\ioctl_storage_firmware_download.htm
-old-project : storage
-ms.assetid : D5572EE3-C277-494C-B288-A6E8F8A26A3E
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_storage_firmware_download, IOCTL_STORAGE_FIRMWARE_DOWNLOAD control code [Storage Devices], IOCTL_STORAGE_FIRMWARE_DOWNLOAD, ntddstor/IOCTL_STORAGE_FIRMWARE_DOWNLOAD
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddstor.h
-req.include-header : Ntddstor.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STORAGE_ZONE_CONDITION, *PSTORAGE_ZONE_CONDITION
+UID: NI:ntddstor.IOCTL_STORAGE_FIRMWARE_DOWNLOAD
+title: IOCTL_STORAGE_FIRMWARE_DOWNLOAD
+author: windows-driver-content
+description: A driver can use IOCTL_STORAGE_FIRMWARE_DOWNLOAD to download a firmware image to a storage device, but does not activate it.
+old-location: storage\ioctl_storage_firmware_download.htm
+old-project: storage
+ms.assetid: D5572EE3-C277-494C-B288-A6E8F8A26A3E
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_storage_firmware_download, IOCTL_STORAGE_FIRMWARE_DOWNLOAD control code [Storage Devices], IOCTL_STORAGE_FIRMWARE_DOWNLOAD, ntddstor/IOCTL_STORAGE_FIRMWARE_DOWNLOAD
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddstor.h
+req.include-header: Ntddstor.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddstor.h
+apiname:
+-	IOCTL_STORAGE_FIRMWARE_DOWNLOAD
+product: Windows
+targetos: Windows
+req.typenames: STORAGE_ZONE_CONDITION, *PSTORAGE_ZONE_CONDITION
 ---
 
 # IOCTL_STORAGE_FIRMWARE_DOWNLOAD IOCTL

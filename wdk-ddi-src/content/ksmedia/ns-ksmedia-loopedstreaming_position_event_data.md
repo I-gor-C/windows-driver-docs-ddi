@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.LOOPEDSTREAMING_POSITION_EVENT_DATA
-title : LOOPEDSTREAMING_POSITION_EVENT_DATA
-author : windows-driver-content
-description : The LOOPEDSTREAMING_POSITION_EVENT_DATA structure describes a position event in a looped buffer.
-old-location : audio\loopedstreaming_position_event_data.htm
-old-project : audio
-ms.assetid : c9ce4ff9-1c69-40c4-8d82-d1ec4e134f34
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : ksmedia/LOOPEDSTREAMING_POSITION_EVENT_DATA, audio.loopedstreaming_position_event_data, PLOOPEDSTREAMING_POSITION_EVENT_DATA, ksmedia/PLOOPEDSTREAMING_POSITION_EVENT_DATA, LOOPEDSTREAMING_POSITION_EVENT_DATA structure [Audio Devices], aud-prop_637593e4-087a-4856-95e2-cb99f9df3d0c.xml, LOOPEDSTREAMING_POSITION_EVENT_DATA, *PLOOPEDSTREAMING_POSITION_EVENT_DATA, PLOOPEDSTREAMING_POSITION_EVENT_DATA structure pointer [Audio Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PLOOPEDSTREAMING_POSITION_EVENT_DATA, LOOPEDSTREAMING_POSITION_EVENT_DATA"
+UID: NS:ksmedia.LOOPEDSTREAMING_POSITION_EVENT_DATA
+title: LOOPEDSTREAMING_POSITION_EVENT_DATA
+author: windows-driver-content
+description: The LOOPEDSTREAMING_POSITION_EVENT_DATA structure describes a position event in a looped buffer.
+old-location: audio\loopedstreaming_position_event_data.htm
+old-project: audio
+ms.assetid: c9ce4ff9-1c69-40c4-8d82-d1ec4e134f34
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: ksmedia/LOOPEDSTREAMING_POSITION_EVENT_DATA, audio.loopedstreaming_position_event_data, PLOOPEDSTREAMING_POSITION_EVENT_DATA, ksmedia/PLOOPEDSTREAMING_POSITION_EVENT_DATA, LOOPEDSTREAMING_POSITION_EVENT_DATA structure [Audio Devices], aud-prop_637593e4-087a-4856-95e2-cb99f9df3d0c.xml, LOOPEDSTREAMING_POSITION_EVENT_DATA, *PLOOPEDSTREAMING_POSITION_EVENT_DATA, PLOOPEDSTREAMING_POSITION_EVENT_DATA structure pointer [Audio Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	LOOPEDSTREAMING_POSITION_EVENT_DATA
+product: Windows
+targetos: Windows
+req.typenames: "*PLOOPEDSTREAMING_POSITION_EVENT_DATA, LOOPEDSTREAMING_POSITION_EVENT_DATA"
 ---
 
 # LOOPEDSTREAMING_POSITION_EVENT_DATA structure

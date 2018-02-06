@@ -1,41 +1,46 @@
 ---
-UID : NF:lowio.RxLowIoCompletion
-title : RxLowIoCompletion function
-author : windows-driver-content
-description : RxLowIoCompletion must be called by the network mini-redirector low I/O routines when they complete, if the low I/O routines have initially returned STATUS_PENDING.
-old-location : ifsk\rxlowiocompletion.htm
-old-project : ifsk
-ms.assetid : d9018a68-e72c-4149-a6a5-095654d0363c
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : lowio/RxLowIoCompletion, RxLowIoCompletion, rxref_9a8f198a-0177-42f5-9039-3f5d6a3fa14d.xml, RxLowIoCompletion routine [Installable File System Drivers], ifsk.rxlowiocompletion
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : lowio.h
-req.include-header : Lowio.h, Rxcontx.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : LAMP_INTENSITY_WHITE
+UID: NF:lowio.RxLowIoCompletion
+title: RxLowIoCompletion function
+author: windows-driver-content
+description: RxLowIoCompletion must be called by the network mini-redirector low I/O routines when they complete, if the low I/O routines have initially returned STATUS_PENDING.
+old-location: ifsk\rxlowiocompletion.htm
+old-project: ifsk
+ms.assetid: d9018a68-e72c-4149-a6a5-095654d0363c
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: lowio/RxLowIoCompletion, RxLowIoCompletion, rxref_9a8f198a-0177-42f5-9039-3f5d6a3fa14d.xml, RxLowIoCompletion routine [Installable File System Drivers], ifsk.rxlowiocompletion
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: lowio.h
+req.include-header: Lowio.h, Rxcontx.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	lowio.h
+apiname:
+-	RxLowIoCompletion
+product: Windows
+targetos: Windows
+req.typenames: LAMP_INTENSITY_WHITE
 ---
 
 

@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsReleaseControl
-title : KsReleaseControl function
-author : windows-driver-content
-description : The KsReleaseControl function releases the control mutex for Object.
-old-location : stream\ksreleasecontrol.htm
-old-project : stream
-ms.assetid : f585f1ad-7ed0-49b1-ab35-a6b879118b38
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KsReleaseControl function [Streaming Media Devices], ks/KsReleaseControl, KsReleaseControl, stream.ksreleasecontrol, avfunc_b568770e-1fe0-47d5-8fd4-ac210cd4be30.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsReleaseControl
+title: KsReleaseControl function
+author: windows-driver-content
+description: The KsReleaseControl function releases the control mutex for Object.
+old-location: stream\ksreleasecontrol.htm
+old-project: stream
+ms.assetid: f585f1ad-7ed0-49b1-ab35-a6b879118b38
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KsReleaseControl function [Streaming Media Devices], ks/KsReleaseControl, KsReleaseControl, stream.ksreleasecontrol, avfunc_b568770e-1fe0-47d5-8fd4-ac210cd4be30.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsReleaseControl
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

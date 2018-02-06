@@ -1,41 +1,46 @@
 ---
-UID : NS:hbapiwmi._MSFC_AdapterEvent
-title : "_MSFC_AdapterEvent"
-author : windows-driver-content
-description : The MSFC_AdapterEvent structure is used by HBA miniport drivers that support the T11 committee's Fibre Channel HBA API specification to report adapter events to WMI clients that have registered to be notified of these events.
-old-location : storage\msfc_adapterevent.htm
-old-project : storage
-ms.assetid : 235300a1-3941-4f9c-8327-4ce174493f3e
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : "_MSFC_AdapterEvent, PMSFC_AdapterEvent, MSFC_AdapterEvent, hbapiwmi/MSFC_AdapterEvent, structs-Fibre_b76954f6-f00c-429d-8428-5cf1997cb40d.xml, *PMSFC_AdapterEvent, storage.msfc_adapterevent, MSFC_AdapterEvent structure [Storage Devices], PMSFC_AdapterEvent structure pointer [Storage Devices], hbapiwmi/PMSFC_AdapterEvent"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : hbapiwmi.h
-req.include-header : Hbapiwmi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PMSFC_AdapterEvent, MSFC_AdapterEvent"
+UID: NS:hbapiwmi._MSFC_AdapterEvent
+title: "_MSFC_AdapterEvent"
+author: windows-driver-content
+description: The MSFC_AdapterEvent structure is used by HBA miniport drivers that support the T11 committee's Fibre Channel HBA API specification to report adapter events to WMI clients that have registered to be notified of these events.
+old-location: storage\msfc_adapterevent.htm
+old-project: storage
+ms.assetid: 235300a1-3941-4f9c-8327-4ce174493f3e
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: "_MSFC_AdapterEvent, PMSFC_AdapterEvent, MSFC_AdapterEvent, hbapiwmi/MSFC_AdapterEvent, structs-Fibre_b76954f6-f00c-429d-8428-5cf1997cb40d.xml, *PMSFC_AdapterEvent, storage.msfc_adapterevent, MSFC_AdapterEvent structure [Storage Devices], PMSFC_AdapterEvent structure pointer [Storage Devices], hbapiwmi/PMSFC_AdapterEvent"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: hbapiwmi.h
+req.include-header: Hbapiwmi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hbapiwmi.h
+apiname:
+-	MSFC_AdapterEvent
+product: Windows
+targetos: Windows
+req.typenames: "*PMSFC_AdapterEvent, MSFC_AdapterEvent"
 ---
 
 # _MSFC_AdapterEvent structure

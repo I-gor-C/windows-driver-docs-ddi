@@ -1,42 +1,47 @@
 ---
-UID : NE:wwan._WWAN_MODEM_CONFIG_MODE
-title : "_WWAN_MODEM_CONFIG_MODE"
-author : windows-driver-content
-description : The WWAN_MODEM_CONFIG_MODE enumeration lists modem configuration modes.
-old-location : netvista\wwan_modem_config_mode.htm
-old-project : netvista
-ms.assetid : 1AA3EDCC-EB6E-4118-8081-CA1914140683
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : WwanModemConfigModeHostCentric, wwan/WwanModemConfigModeModemCentric, PWWAN_MODEM_CONFIG_MODE, WwanModemConfigModeUnknown, wwan/WWAN_MODEM_CONFIG_MODE, WwanModemConfigModeModemCentric, WwanModemConfigModeMax, wwan/WwanModemConfigModeMax, PWWAN_MODEM_CONFIG_MODE enumeration pointer [Network Drivers Starting with Windows Vista], WWAN_MODEM_CONFIG_MODE enumeration [Network Drivers Starting with Windows Vista], wwan/WwanModemConfigModeHostCentric, wwan/PWWAN_MODEM_CONFIG_MODE, _WWAN_MODEM_CONFIG_MODE, *PWWAN_MODEM_CONFIG_MODE, wwan/WwanModemConfigModeUnknown, WWAN_MODEM_CONFIG_MODE, netvista.wwan_modem_config_mode
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : wwan.h
-req.include-header : Wwan.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10, version 1709
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWWAN_MODEM_CONFIG_MODE, WWAN_MODEM_CONFIG_MODE"
-req.product : Windows 10 or later.
+UID: NE:wwan._WWAN_MODEM_CONFIG_MODE
+title: "_WWAN_MODEM_CONFIG_MODE"
+author: windows-driver-content
+description: The WWAN_MODEM_CONFIG_MODE enumeration lists modem configuration modes.
+old-location: netvista\wwan_modem_config_mode.htm
+old-project: netvista
+ms.assetid: 1AA3EDCC-EB6E-4118-8081-CA1914140683
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: WwanModemConfigModeHostCentric, wwan/WwanModemConfigModeModemCentric, PWWAN_MODEM_CONFIG_MODE, WwanModemConfigModeUnknown, wwan/WWAN_MODEM_CONFIG_MODE, WwanModemConfigModeModemCentric, WwanModemConfigModeMax, wwan/WwanModemConfigModeMax, PWWAN_MODEM_CONFIG_MODE enumeration pointer [Network Drivers Starting with Windows Vista], WWAN_MODEM_CONFIG_MODE enumeration [Network Drivers Starting with Windows Vista], wwan/WwanModemConfigModeHostCentric, wwan/PWWAN_MODEM_CONFIG_MODE, _WWAN_MODEM_CONFIG_MODE, *PWWAN_MODEM_CONFIG_MODE, wwan/WwanModemConfigModeUnknown, WWAN_MODEM_CONFIG_MODE, netvista.wwan_modem_config_mode
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: wwan.h
+req.include-header: Wwan.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10, version 1709
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wwan.h
+apiname:
+-	WWAN_MODEM_CONFIG_MODE
+product: Windows
+targetos: Windows
+req.typenames: "*PWWAN_MODEM_CONFIG_MODE, WWAN_MODEM_CONFIG_MODE"
+req.product: Windows 10 or later.
 ---
 
 # _WWAN_MODEM_CONFIG_MODE Enumeration
@@ -55,32 +60,32 @@ typedef enum _WWAN_MODEM_CONFIG_MODE {
 ## Constants
 
 <table>
-
-<tr>
-<td>WwanModemConfigModeHostCentric</td>
-<td>The modem configuration mode is host centric. The host will inform the modem which configuration file the modem will use.</td>
-</tr>
-
-<tr>
-<td>WwanModemConfigModeMax</td>
-<td>The maximum value for this enumeration. This value might change in future versions of the NDIS
+            
+                <tr>
+                    <td>WwanModemConfigModeHostCentric</td>
+                    <td>The modem configuration mode is host centric. The host will inform the modem which configuration file the modem will use.</td>
+                </tr>
+            
+                <tr>
+                    <td>WwanModemConfigModeMax</td>
+                    <td>The maximum value for this enumeration. This value might change in future versions of the NDIS
      header files and binaries.</td>
-</tr>
-
-<tr>
-<td>WwanModemConfigModeModemCentric</td>
-<td>The modem configuration mode is modem centric. The modem is responsible for the selection process of configuration based on UICC info or any other vendor-specified algorithm.</td>
-</tr>
-
-<tr>
-<td>WwanModemConfigModeUnknown</td>
-<td>The modem configuration mode is currently not available.</td>
-</tr>
+                </tr>
+            
+                <tr>
+                    <td>WwanModemConfigModeModemCentric</td>
+                    <td>The modem configuration mode is modem centric. The modem is responsible for the selection process of configuration based on UICC info or any other vendor-specified algorithm.</td>
+                </tr>
+            
+                <tr>
+                    <td>WwanModemConfigModeUnknown</td>
+                    <td>The modem configuration mode is currently not available.</td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-The modem configuration mode shall not change during runtime. If a change is detected, it will be ignored by the OS.
+        The modem configuration mode shall not change during runtime. If a change is detected, it will be ignored by the OS.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -88,9 +93,9 @@ The modem configuration mode shall not change during runtime. If a change is det
 | **Windows version** | Windows 10, version 1709 Windows 10, version 1709 |
 | **Header** | wwan.h (include Wwan.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\wwan\ns-wwan-_wwan_modem_config_info.md">WWAN_MODEM_CONFIG_INFO</a>
+        <a href="..\wwan\ns-wwan-_wwan_modem_config_info.md">WWAN_MODEM_CONFIG_INFO</a>
 
  
 

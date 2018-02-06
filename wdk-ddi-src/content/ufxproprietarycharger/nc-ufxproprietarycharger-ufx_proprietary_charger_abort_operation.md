@@ -1,42 +1,47 @@
 ---
-UID : NC:ufxproprietarycharger.UFX_PROPRIETARY_CHARGER_ABORT_OPERATION
-title : UFX_PROPRIETARY_CHARGER_ABORT_OPERATION
-author : windows-driver-content
-description : The filter driver's implementation to abort a charger operation.
-old-location : buses\ufx_proprietary_charger_abort_operation.htm
-old-project : usbref
-ms.assetid : 32BCBE1C-BD0E-46D6-9C6D-6B8F1CE0E540
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : buses.ufx_proprietary_charger_abort_operation, UfxProprietaryChargerAbort callback function [Buses], UfxProprietaryChargerAbort, UFX_PROPRIETARY_CHARGER_ABORT_OPERATION, UFX_PROPRIETARY_CHARGER_ABORT_OPERATION, ufxproprietarycharger/UfxProprietaryChargerAbort, PFN_UFX_PROPRIETARY_CHARGER_ABORT_OPERATION callback function pointer [Buses], PFN_UFX_PROPRIETARY_CHARGER_ABORT_OPERATION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ufxproprietarycharger.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUFX_ENDPOINT_CALLBACKS, UFX_ENDPOINT_CALLBACKS"
-req.product : Windows 10 or later.
+UID: NC:ufxproprietarycharger.UFX_PROPRIETARY_CHARGER_ABORT_OPERATION
+title: UFX_PROPRIETARY_CHARGER_ABORT_OPERATION
+author: windows-driver-content
+description: The filter driver's implementation to abort a charger operation.
+old-location: buses\ufx_proprietary_charger_abort_operation.htm
+old-project: usbref
+ms.assetid: 32BCBE1C-BD0E-46D6-9C6D-6B8F1CE0E540
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: buses.ufx_proprietary_charger_abort_operation, UfxProprietaryChargerAbort callback function [Buses], UfxProprietaryChargerAbort, UFX_PROPRIETARY_CHARGER_ABORT_OPERATION, UFX_PROPRIETARY_CHARGER_ABORT_OPERATION, ufxproprietarycharger/UfxProprietaryChargerAbort, PFN_UFX_PROPRIETARY_CHARGER_ABORT_OPERATION callback function pointer [Buses], PFN_UFX_PROPRIETARY_CHARGER_ABORT_OPERATION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ufxproprietarycharger.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	ufxproprietarycharger.h
+apiname:
+-	PFN_UFX_PROPRIETARY_CHARGER_ABORT_OPERATION
+product: Windows
+targetos: Windows
+req.typenames: "*PUFX_ENDPOINT_CALLBACKS, UFX_ENDPOINT_CALLBACKS"
+req.product: Windows 10 or later.
 ---
 
 

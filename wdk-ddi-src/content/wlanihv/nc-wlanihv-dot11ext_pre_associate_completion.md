@@ -1,42 +1,47 @@
 ---
-UID : NC:wlanihv.DOT11EXT_PRE_ASSOCIATE_COMPLETION
-title : DOT11EXT_PRE_ASSOCIATE_COMPLETION
-author : windows-driver-content
-description : Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
-old-location : netvista\dot11extpreassociatecompletion.htm
-old-project : netvista
-ms.assetid : e617c0ac-0f02-4e15-ba11-81de6331b83d
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.dot11extpreassociatecompletion, Dot11ExtPreAssociateCompletion callback function [Network Drivers Starting with Windows Vista], Dot11ExtPreAssociateCompletion, DOT11EXT_PRE_ASSOCIATE_COMPLETION, DOT11EXT_PRE_ASSOCIATE_COMPLETION, wlanihv/Dot11ExtPreAssociateCompletion, Native_802.11_IHV_Ext_aca82f29-a84e-48e3-b239-754b5b49d99c.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wlanihv.h
-req.include-header : Wlanihv.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating   systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDRIVER_INFO_8W, DRIVER_INFO_8W, *LPDRIVER_INFO_8W"
-req.product : Windows 10 or later.
+UID: NC:wlanihv.DOT11EXT_PRE_ASSOCIATE_COMPLETION
+title: DOT11EXT_PRE_ASSOCIATE_COMPLETION
+author: windows-driver-content
+description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+old-location: netvista\dot11extpreassociatecompletion.htm
+old-project: netvista
+ms.assetid: e617c0ac-0f02-4e15-ba11-81de6331b83d
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.dot11extpreassociatecompletion, Dot11ExtPreAssociateCompletion callback function [Network Drivers Starting with Windows Vista], Dot11ExtPreAssociateCompletion, DOT11EXT_PRE_ASSOCIATE_COMPLETION, DOT11EXT_PRE_ASSOCIATE_COMPLETION, wlanihv/Dot11ExtPreAssociateCompletion, Native_802.11_IHV_Ext_aca82f29-a84e-48e3-b239-754b5b49d99c.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wlanihv.h
+req.include-header: Wlanihv.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	wlanihv.h
+apiname:
+-	Dot11ExtPreAssociateCompletion
+product: Windows
+targetos: Windows
+req.typenames: "*PDRIVER_INFO_8W, DRIVER_INFO_8W, *LPDRIVER_INFO_8W"
+req.product: Windows 10 or later.
 ---
 
 

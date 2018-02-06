@@ -1,41 +1,46 @@
 ---
-UID : NF:portcls.IMiniportStreamAudioEngineNode.GetStreamAttributeSteppings
-title : IMiniportStreamAudioEngineNode::GetStreamAttributeSteppings method
-author : windows-driver-content
-description : Gets the allowed stepping value for the audio stream attribute.
-old-location : audio\iminiportstreamaudioenginenode_getstreamattributesteppings.htm
-old-project : audio
-ms.assetid : 2EC0C859-5479-4A55-9180-DB9938400DF7
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : IMiniportStreamAudioEngineNode, GetStreamAttributeSteppings method [Audio Devices], IMiniportStreamAudioEngineNode interface, IMiniportStreamAudioEngineNode interface [Audio Devices], GetStreamAttributeSteppings method, GetStreamAttributeSteppings, portcls/IMiniportStreamAudioEngineNode::GetStreamAttributeSteppings, GetStreamAttributeSteppings method [Audio Devices], audio.iminiportstreamaudioenginenode_getstreamattributesteppings, IMiniportStreamAudioEngineNode::GetStreamAttributeSteppings
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : portcls.h
-req.include-header : 
-req.target-type : Universal
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : portcls.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.IMiniportStreamAudioEngineNode.GetStreamAttributeSteppings
+title: IMiniportStreamAudioEngineNode::GetStreamAttributeSteppings method
+author: windows-driver-content
+description: Gets the allowed stepping value for the audio stream attribute.
+old-location: audio\iminiportstreamaudioenginenode_getstreamattributesteppings.htm
+old-project: audio
+ms.assetid: 2EC0C859-5479-4A55-9180-DB9938400DF7
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: IMiniportStreamAudioEngineNode, GetStreamAttributeSteppings method [Audio Devices], IMiniportStreamAudioEngineNode interface, IMiniportStreamAudioEngineNode interface [Audio Devices], GetStreamAttributeSteppings method, GetStreamAttributeSteppings, portcls/IMiniportStreamAudioEngineNode::GetStreamAttributeSteppings, GetStreamAttributeSteppings method [Audio Devices], audio.iminiportstreamaudioenginenode_getstreamattributesteppings, IMiniportStreamAudioEngineNode::GetStreamAttributeSteppings
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: portcls.h
+req.include-header: 
+req.target-type: Universal
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: portcls.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Portcls.h
+apiname:
+-	IMiniportStreamAudioEngineNode.GetStreamAttributeSteppings
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

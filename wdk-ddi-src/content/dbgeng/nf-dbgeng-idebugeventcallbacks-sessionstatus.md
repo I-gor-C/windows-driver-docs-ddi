@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugEventCallbacks.SessionStatus
-title : IDebugEventCallbacks::SessionStatus method
-author : windows-driver-content
-description : The SessionStatus callback method is called by the engine when a change occurs in the debugger session.
-old-location : debugger\idebugeventcallbacks_sessionstatus.htm
-old-project : debugger
-ms.assetid : 127c4e48-87db-4735-8d3d-e01fed6a9cf0
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugEventCallbacks interface [Windows Debugging], SessionStatus method, IDebugEventCallbacks::SessionStatus, debugger.idebugeventcallbacks_sessionstatus, IDebugEventCallbacks, SessionStatus method [Windows Debugging], IDebugEventCallbacks interface, ComCallbacks_72cb31db-cc24-41b7-b891-65921c50ce12.xml, dbgeng/IDebugEventCallbacks::SessionStatus, SessionStatus, SessionStatus method [Windows Debugging]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugEventCallbacks.SessionStatus
+title: IDebugEventCallbacks::SessionStatus method
+author: windows-driver-content
+description: The SessionStatus callback method is called by the engine when a change occurs in the debugger session.
+old-location: debugger\idebugeventcallbacks_sessionstatus.htm
+old-project: debugger
+ms.assetid: 127c4e48-87db-4735-8d3d-e01fed6a9cf0
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugEventCallbacks interface [Windows Debugging], SessionStatus method, IDebugEventCallbacks::SessionStatus, debugger.idebugeventcallbacks_sessionstatus, IDebugEventCallbacks, SessionStatus method [Windows Debugging], IDebugEventCallbacks interface, ComCallbacks_72cb31db-cc24-41b7-b891-65921c50ce12.xml, dbgeng/IDebugEventCallbacks::SessionStatus, SessionStatus, SessionStatus method [Windows Debugging]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugEventCallbacks.SessionStatus
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

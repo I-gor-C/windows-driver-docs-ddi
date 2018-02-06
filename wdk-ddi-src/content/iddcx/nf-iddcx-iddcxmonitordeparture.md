@@ -1,41 +1,46 @@
 ---
-UID : NF:iddcx.IddCxMonitorDeparture
-title : IddCxMonitorDeparture function
-author : windows-driver-content
-description : An OS callback function the driver calls to report a monitor departure from the WDDM graphics adapter.
-old-location : display\iddcxmonitordeparture.htm
-old-project : display
-ms.assetid : d23f70ee-a58d-4db1-8f21-b27887d661b9
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : iddcx/IddCxMonitorDeparture, display.iddcxmonitordeparture, IddCxMonitorDeparture method [Display Devices], IddCxMonitorDeparture
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : iddcx.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "_Must_inspect_result_"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:iddcx.IddCxMonitorDeparture
+title: IddCxMonitorDeparture function
+author: windows-driver-content
+description: An OS callback function the driver calls to report a monitor departure from the WDDM graphics adapter.
+old-location: display\iddcxmonitordeparture.htm
+old-project: display
+ms.assetid: d23f70ee-a58d-4db1-8f21-b27887d661b9
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: iddcx/IddCxMonitorDeparture, display.iddcxmonitordeparture, IddCxMonitorDeparture method [Display Devices], IddCxMonitorDeparture
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: iddcx.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "_Must_inspect_result_"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	iddcx.h
+apiname:
+-	IddCxMonitorDeparture
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

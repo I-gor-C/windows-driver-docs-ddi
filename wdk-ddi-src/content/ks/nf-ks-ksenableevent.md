@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsEnableEvent
-title : KsEnableEvent function
-author : windows-driver-content
-description : The KsEnableEvent function enables events requested through IOCTL_KS_ENABLE_EVENT. It responds to all event identifiers defined by the sets. This function can only be called at PASSIVE_LEVEL.
-old-location : stream\ksenableevent.htm
-old-project : stream
-ms.assetid : 2338e583-4491-492e-b7e6-fa4e23485c22
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.ksenableevent, ks/KsEnableEvent, ksfunc_f6611298-cc8d-40eb-86e6-1287caff3ec0.xml, KsEnableEvent function [Streaming Media Devices], KsEnableEvent
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsEnableEvent
+title: KsEnableEvent function
+author: windows-driver-content
+description: The KsEnableEvent function enables events requested through IOCTL_KS_ENABLE_EVENT. It responds to all event identifiers defined by the sets. This function can only be called at PASSIVE_LEVEL.
+old-location: stream\ksenableevent.htm
+old-project: stream
+ms.assetid: 2338e583-4491-492e-b7e6-fa4e23485c22
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.ksenableevent, ks/KsEnableEvent, ksfunc_f6611298-cc8d-40eb-86e6-1287caff3ec0.xml, KsEnableEvent function [Streaming Media Devices], KsEnableEvent
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsEnableEvent
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

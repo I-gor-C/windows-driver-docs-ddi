@@ -1,42 +1,47 @@
 ---
-UID : NS:winspool._DRIVER_INFO_8W
-title : "_DRIVER_INFO_8W"
-author : windows-driver-content
-description : The DRIVER_INFO_8 structure contains printer driver information.
-old-location : print\driver_info_8.htm
-old-project : print
-ms.assetid : 95f62d57-300a-4179-868b-f14f29c58b4d
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : winspool/DRIVER_INFO_8, PDRIVER_INFO_8 structure pointer [Print Devices], *PDRIVER_INFO_8W, DRIVER_INFO_8, print.driver_info_8, *LPDRIVER_INFO_8W, *PDRIVER_INFO_8A, *LPDRIVER_INFO_8A, LPDRIVER_INFO_8, DRIVER_INFO_8 structure [Print Devices], PDRIVER_INFO_8, LPDRIVER_INFO_8 structure pointer [Print Devices], DRIVER_INFO_8W, winspool/LPDRIVER_INFO_8, print_ticket-package_dba844e8-6e97-4eaf-8de4-1003562e01d5.xml, _DRIVER_INFO_8W, DRIVER_INFO_8A, winspool/PDRIVER_INFO_8, _DRIVER_INFO_8A
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : winspool.h
-req.include-header : Winspool.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDRIVER_INFO_8W, DRIVER_INFO_8W, *LPDRIVER_INFO_8W"
-req.product : Windows 10 or later.
+UID: NS:winspool._DRIVER_INFO_8W
+title: "_DRIVER_INFO_8W"
+author: windows-driver-content
+description: The DRIVER_INFO_8 structure contains printer driver information.
+old-location: print\driver_info_8.htm
+old-project: print
+ms.assetid: 95f62d57-300a-4179-868b-f14f29c58b4d
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: winspool/DRIVER_INFO_8, PDRIVER_INFO_8 structure pointer [Print Devices], *PDRIVER_INFO_8W, DRIVER_INFO_8, print.driver_info_8, *LPDRIVER_INFO_8W, *PDRIVER_INFO_8A, *LPDRIVER_INFO_8A, LPDRIVER_INFO_8, DRIVER_INFO_8 structure [Print Devices], PDRIVER_INFO_8, LPDRIVER_INFO_8 structure pointer [Print Devices], DRIVER_INFO_8W, winspool/LPDRIVER_INFO_8, print_ticket-package_dba844e8-6e97-4eaf-8de4-1003562e01d5.xml, _DRIVER_INFO_8W, DRIVER_INFO_8A, winspool/PDRIVER_INFO_8, _DRIVER_INFO_8A
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: winspool.h
+req.include-header: Winspool.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	winspool.h
+apiname:
+-	DRIVER_INFO_8
+product: Windows
+targetos: Windows
+req.typenames: "*PDRIVER_INFO_8W, DRIVER_INFO_8W, *LPDRIVER_INFO_8W"
+req.product: Windows 10 or later.
 ---
 
 # _DRIVER_INFO_8W structure

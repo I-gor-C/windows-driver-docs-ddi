@@ -1,41 +1,46 @@
 ---
-UID : NI:pcivirt.IOCTL_SRIOV_NOTIFICATION
-title : IOCTL_SRIOV_NOTIFICATION
-author : windows-driver-content
-description : The request indicates that the virtualization stack wants to be notified when one of the events listed in SRIOV_PF_EVENT occurs.
-old-location : pci\ioctl-sriov-notification.htm
-old-project : PCI
-ms.assetid : 3f2d67e0-abab-40a1-b4a9-cb65e81884e9
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : PCI.ioctl-sriov-notification, IOCTL_SRIOV_NOTIFICATION control code [Buses], IOCTL_SRIOV_NOTIFICATION, pcivirt/IOCTL_SRIOV_NOTIFICATION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : pcivirt.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SRIOV_PF_EVENT, *PSRIOV_PF_EVENT
+UID: NI:pcivirt.IOCTL_SRIOV_NOTIFICATION
+title: IOCTL_SRIOV_NOTIFICATION
+author: windows-driver-content
+description: The request indicates that the virtualization stack wants to be notified when one of the events listed in SRIOV_PF_EVENT occurs.
+old-location: pci\ioctl-sriov-notification.htm
+old-project: PCI
+ms.assetid: 3f2d67e0-abab-40a1-b4a9-cb65e81884e9
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: PCI.ioctl-sriov-notification, IOCTL_SRIOV_NOTIFICATION control code [Buses], IOCTL_SRIOV_NOTIFICATION, pcivirt/IOCTL_SRIOV_NOTIFICATION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: pcivirt.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Pcivirt.h
+apiname:
+-	IOCTL_SRIOV_NOTIFICATION
+product: Windows
+targetos: Windows
+req.typenames: SRIOV_PF_EVENT, *PSRIOV_PF_EVENT
 ---
 
 # IOCTL_SRIOV_NOTIFICATION IOCTL

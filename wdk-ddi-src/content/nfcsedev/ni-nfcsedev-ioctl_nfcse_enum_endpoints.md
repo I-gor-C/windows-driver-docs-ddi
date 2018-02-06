@@ -1,41 +1,46 @@
 ---
-UID : NI:nfcsedev.IOCTL_NFCSE_ENUM_ENDPOINTS
-title : IOCTL_NFCSE_ENUM_ENDPOINTS
-author : windows-driver-content
-description : Returns information regarding the list of all the secure elements attached to the NFC controller.
-old-location : nfpdrivers\ioctl_nfcse_enum_endpoints.htm
-old-project : nfpdrivers
-ms.assetid : BDE62A2B-423E-4656-91CC-5EBDE50C6BB0
-ms.author : windowsdriverdev
-ms.date : 12/18/2017
-ms.keywords : nfpdrivers.ioctl_nfcse_enum_endpoints, IOCTL_NFCSE_ENUM_ENDPOINTS, _IOCTL_NFCSE_ENUM_ENDPOINTS, IOCTL_NFCSE_ENUM_ENDPOINTS control code [Near-Field Proximity Drivers], IOCTL_NFCSE_ENUM_ENDPOINTS, nfcsedev/IOCTL_NFCSE_ENUM_ENDPOINTS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : nfcsedev.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSECURE_ELEMENT_TYPE, SECURE_ELEMENT_TYPE"
+UID: NI:nfcsedev.IOCTL_NFCSE_ENUM_ENDPOINTS
+title: IOCTL_NFCSE_ENUM_ENDPOINTS
+author: windows-driver-content
+description: Returns information regarding the list of all the secure elements attached to the NFC controller.
+old-location: nfpdrivers\ioctl_nfcse_enum_endpoints.htm
+old-project: nfpdrivers
+ms.assetid: BDE62A2B-423E-4656-91CC-5EBDE50C6BB0
+ms.author: windowsdriverdev
+ms.date: 12/18/2017
+ms.keywords: nfpdrivers.ioctl_nfcse_enum_endpoints, IOCTL_NFCSE_ENUM_ENDPOINTS, _IOCTL_NFCSE_ENUM_ENDPOINTS, IOCTL_NFCSE_ENUM_ENDPOINTS control code [Near-Field Proximity Drivers], IOCTL_NFCSE_ENUM_ENDPOINTS, nfcsedev/IOCTL_NFCSE_ENUM_ENDPOINTS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: nfcsedev.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	nfcsedev.h
+apiname:
+-	IOCTL_NFCSE_ENUM_ENDPOINTS
+product: Windows
+targetos: Windows
+req.typenames: "*PSECURE_ELEMENT_TYPE, SECURE_ELEMENT_TYPE"
 ---
 
 # IOCTL_NFCSE_ENUM_ENDPOINTS IOCTL

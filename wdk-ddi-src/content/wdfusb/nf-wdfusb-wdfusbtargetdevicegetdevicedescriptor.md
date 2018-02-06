@@ -1,42 +1,50 @@
 ---
-UID : NF:wdfusb.WdfUsbTargetDeviceGetDeviceDescriptor
-title : WdfUsbTargetDeviceGetDeviceDescriptor function
-author : windows-driver-content
-description : The WdfUsbTargetDeviceGetDeviceDescriptor method retrieves the USB device descriptor for the USB device that is associated with a specified framework USB device object.
-old-location : wdf\wdfusbtargetdevicegetdevicedescriptor.htm
-old-project : wdf
-ms.assetid : b2c70976-00ce-4563-af60-0bbdd1a65540
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WdfUsbTargetDeviceGetDeviceDescriptor, wdf.wdfusbtargetdevicegetdevicedescriptor, WdfUsbTargetDeviceGetDeviceDescriptor method, wdfusb/WdfUsbTargetDeviceGetDeviceDescriptor, DFUsbRef_a59d2f05-4ecf-400f-823e-b2d2533020a2.xml, kmdf.wdfusbtargetdevicegetdevicedescriptor, PFN_WDFUSBTARGETDEVICEGETDEVICEDESCRIPTOR
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfusb.h
-req.include-header : Wdfusb.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2, UsbKmdfIrql, UsbKmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfusb.WdfUsbTargetDeviceGetDeviceDescriptor
+title: WdfUsbTargetDeviceGetDeviceDescriptor function
+author: windows-driver-content
+description: The WdfUsbTargetDeviceGetDeviceDescriptor method retrieves the USB device descriptor for the USB device that is associated with a specified framework USB device object.
+old-location: wdf\wdfusbtargetdevicegetdevicedescriptor.htm
+old-project: wdf
+ms.assetid: b2c70976-00ce-4563-af60-0bbdd1a65540
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WdfUsbTargetDeviceGetDeviceDescriptor, wdf.wdfusbtargetdevicegetdevicedescriptor, WdfUsbTargetDeviceGetDeviceDescriptor method, wdfusb/WdfUsbTargetDeviceGetDeviceDescriptor, DFUsbRef_a59d2f05-4ecf-400f-823e-b2d2533020a2.xml, kmdf.wdfusbtargetdevicegetdevicedescriptor, PFN_WDFUSBTARGETDEVICEGETDEVICEDESCRIPTOR
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfusb.h
+req.include-header: Wdfusb.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2, UsbKmdfIrql, UsbKmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+-	WUDFx02000.dll
+-	WUDFx02000.dll.dll
+apiname:
+-	WdfUsbTargetDeviceGetDeviceDescriptor
+product: Windows
+targetos: Windows
+req.typenames: WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
+req.product: Windows 10 or later.
 ---
 
 

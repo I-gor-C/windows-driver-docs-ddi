@@ -1,42 +1,47 @@
 ---
-UID : NF:storport.StorPortGetGroupAffinity
-title : StorPortGetGroupAffinity function
-author : windows-driver-content
-description : The StorPortGetGroupAffinity routine constructs a mask of the active processors in a requested group.
-old-location : storage\storportgetgroupaffinity.htm
-old-project : storage
-ms.assetid : eec0c985-fb59-4190-afb8-5eb62ac1edea
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storport/StorPortGetGroupAffinity, storprt_9fdfdc84-3e8f-4227-9799-4ccf08f802df.xml, storage.storportgetgroupaffinity, StorPortGetGroupAffinity, StorPortGetGroupAffinity routine [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 7 and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : StorPortIrql
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STOR_SPINLOCK
-req.product : Windows 10 or later.
+UID: NF:storport.StorPortGetGroupAffinity
+title: StorPortGetGroupAffinity function
+author: windows-driver-content
+description: The StorPortGetGroupAffinity routine constructs a mask of the active processors in a requested group.
+old-location: storage\storportgetgroupaffinity.htm
+old-project: storage
+ms.assetid: eec0c985-fb59-4190-afb8-5eb62ac1edea
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storport/StorPortGetGroupAffinity, storprt_9fdfdc84-3e8f-4227-9799-4ccf08f802df.xml, storage.storportgetgroupaffinity, StorPortGetGroupAffinity, StorPortGetGroupAffinity routine [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 7 and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: StorPortIrql
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	storport.h
+apiname:
+-	StorPortGetGroupAffinity
+product: Windows
+targetos: Windows
+req.typenames: STOR_SPINLOCK
+req.product: Windows 10 or later.
 ---
 
 

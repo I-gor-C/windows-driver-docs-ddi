@@ -1,42 +1,48 @@
 ---
-UID : NF:storport.StorPortGetBusData
-title : StorPortGetBusData function
-author : windows-driver-content
-description : The StorPortGetBusData routine retrieves the bus-specific configuration information necessary to initialize the HBA.
-old-location : storage\storportgetbusdata.htm
-old-project : storage
-ms.assetid : 19999e21-1afd-42ac-9809-b8ed4b6ac7e3
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storport/StorPortGetBusData, StorPortGetBusData, storage.storportgetbusdata, storprt_fb8cc730-c53e-49b6-abe5-6a0648200d32.xml, StorPortGetBusData routine [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Storport.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STOR_SPINLOCK
-req.product : Windows 10 or later.
+UID: NF:storport.StorPortGetBusData
+title: StorPortGetBusData function
+author: windows-driver-content
+description: The StorPortGetBusData routine retrieves the bus-specific configuration information necessary to initialize the HBA.
+old-location: storage\storportgetbusdata.htm
+old-project: storage
+ms.assetid: 19999e21-1afd-42ac-9809-b8ed4b6ac7e3
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storport/StorPortGetBusData, StorPortGetBusData, storage.storportgetbusdata, storprt_fb8cc730-c53e-49b6-abe5-6a0648200d32.xml, StorPortGetBusData routine [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Storport.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Storport.lib
+-	Storport.dll
+apiname:
+-	StorPortGetBusData
+product: Windows
+targetos: Windows
+req.typenames: STOR_SPINLOCK
+req.product: Windows 10 or later.
 ---
 
 

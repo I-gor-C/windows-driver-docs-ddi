@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisIfGetNetLuidFromInterfaceIndex
-title : NdisIfGetNetLuidFromInterfaceIndex function
-author : windows-driver-content
-description : The NdisIfGetNetLuidFromInterfaceIndex function gets the NET_LUID value that is associated with a network interface index.
-old-location : netvista\ndisifgetnetluidfrominterfaceindex.htm
-old-project : netvista
-ms.assetid : 3cfb7f31-93ae-47a2-8da8-becfbe045f5e
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.ndisifgetnetluidfrominterfaceindex, NdisIfGetNetLuidFromInterfaceIndex, NdisIfGetNetLuidFromInterfaceIndex function [Network Drivers Starting with Windows Vista], ndis/NdisIfGetNetLuidFromInterfaceIndex, net_if_functions_ref_eb50b72f-9bb0-4c02-88d3-dbb0fb1d82d1.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_Interfaces_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisIfGetNetLuidFromInterfaceIndex
+title: NdisIfGetNetLuidFromInterfaceIndex function
+author: windows-driver-content
+description: The NdisIfGetNetLuidFromInterfaceIndex function gets the NET_LUID value that is associated with a network interface index.
+old-location: netvista\ndisifgetnetluidfrominterfaceindex.htm
+old-project: netvista
+ms.assetid: 3cfb7f31-93ae-47a2-8da8-becfbe045f5e
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.ndisifgetnetluidfrominterfaceindex, NdisIfGetNetLuidFromInterfaceIndex, NdisIfGetNetLuidFromInterfaceIndex function [Network Drivers Starting with Windows Vista], ndis/NdisIfGetNetLuidFromInterfaceIndex, net_if_functions_ref_eb50b72f-9bb0-4c02-88d3-dbb0fb1d82d1.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_Interfaces_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisIfGetNetLuidFromInterfaceIndex
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

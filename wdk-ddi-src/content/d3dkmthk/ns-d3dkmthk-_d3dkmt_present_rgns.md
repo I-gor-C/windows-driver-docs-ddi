@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmthk._D3DKMT_PRESENT_RGNS
-title : "_D3DKMT_PRESENT_RGNS"
-author : windows-driver-content
-description : Specifies dirty and move regions in a present operation.
-old-location : display\d3dkmt_present_rgns.htm
-old-project : display
-ms.assetid : 90ae3382-0a2d-46cf-89e6-2148f0cbfc83
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.d3dkmt_present_rgns, _D3DKMT_PRESENT_RGNS, D3DKMT_PRESENT_RGNS structure [Display Devices], d3dkmthk/D3DKMT_PRESENT_RGNS, D3DKMT_PRESENT_RGNS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_PRESENT_RGNS
+UID: NS:d3dkmthk._D3DKMT_PRESENT_RGNS
+title: "_D3DKMT_PRESENT_RGNS"
+author: windows-driver-content
+description: Specifies dirty and move regions in a present operation.
+old-location: display\d3dkmt_present_rgns.htm
+old-project: display
+ms.assetid: 90ae3382-0a2d-46cf-89e6-2148f0cbfc83
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.d3dkmt_present_rgns, _D3DKMT_PRESENT_RGNS, D3DKMT_PRESENT_RGNS structure [Display Devices], d3dkmthk/D3DKMT_PRESENT_RGNS, D3DKMT_PRESENT_RGNS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	D3dkmthk.h
+apiname:
+-	D3DKMT_PRESENT_RGNS
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_PRESENT_RGNS
 ---
 
 # _D3DKMT_PRESENT_RGNS structure

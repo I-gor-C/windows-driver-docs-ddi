@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmthk._D3DKMT_OPENRESOURCEFROMNTHANDLE
-title : "_D3DKMT_OPENRESOURCEFROMNTHANDLE"
-author : windows-driver-content
-description : Describes information that is required to open a shared resource from an NT handle to the process. The shared resource can be a set of allocations, a keyed mutex, or a synchronization object.
-old-location : display\d3dkmt_openresourcefromnthandle.htm
-old-project : display
-ms.assetid : 3f595816-29b5-4efc-a00c-77597dd9fa48
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DKMT_OPENRESOURCEFROMNTHANDLE structure [Display Devices], D3DKMT_OPENRESOURCEFROMNTHANDLE, display.d3dkmt_openresourcefromnthandle, _D3DKMT_OPENRESOURCEFROMNTHANDLE, d3dkmthk/D3DKMT_OPENRESOURCEFROMNTHANDLE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_OPENRESOURCEFROMNTHANDLE
+UID: NS:d3dkmthk._D3DKMT_OPENRESOURCEFROMNTHANDLE
+title: "_D3DKMT_OPENRESOURCEFROMNTHANDLE"
+author: windows-driver-content
+description: Describes information that is required to open a shared resource from an NT handle to the process. The shared resource can be a set of allocations, a keyed mutex, or a synchronization object.
+old-location: display\d3dkmt_openresourcefromnthandle.htm
+old-project: display
+ms.assetid: 3f595816-29b5-4efc-a00c-77597dd9fa48
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DKMT_OPENRESOURCEFROMNTHANDLE structure [Display Devices], D3DKMT_OPENRESOURCEFROMNTHANDLE, display.d3dkmt_openresourcefromnthandle, _D3DKMT_OPENRESOURCEFROMNTHANDLE, d3dkmthk/D3DKMT_OPENRESOURCEFROMNTHANDLE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	D3dkmthk.h
+apiname:
+-	D3DKMT_OPENRESOURCEFROMNTHANDLE
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_OPENRESOURCEFROMNTHANDLE
 ---
 
 # _D3DKMT_OPENRESOURCEFROMNTHANDLE structure

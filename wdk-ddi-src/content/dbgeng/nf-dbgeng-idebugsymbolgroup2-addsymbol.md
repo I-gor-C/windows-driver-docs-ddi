@@ -1,41 +1,47 @@
 ---
-UID : NF:dbgeng.IDebugSymbolGroup2.AddSymbol
-title : IDebugSymbolGroup2::AddSymbol method
-author : windows-driver-content
-description : The AddSymbol method adds a symbol to a symbol group.
-old-location : debugger\addsymbol.htm
-old-project : debugger
-ms.assetid : b77de459-b5ac-4752-89eb-f24fdde36134
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : AddSymbol method [Windows Debugging], IDebugSymbolGroup interface, AddSymbol method [Windows Debugging], IDebugSymbolGroup2 interface, IDebugSymbolGroup2, AddSymbol, IDebugSymbolGroup2 interface [Windows Debugging], AddSymbol method, IDebugSymbolGroup2::AddSymbol, debugger.addsymbol, dbgeng/IDebugSymbolGroup::AddSymbol, IDebugSymbolGroup interface [Windows Debugging], AddSymbol method, ComOther_936851e7-6a8b-4b42-b339-9c8aa096d684.xml, dbgeng/IDebugSymbolGroup2::AddSymbol, IDebugSymbolGroup::AddSymbol, AddSymbol method [Windows Debugging]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSymbolGroup2.AddSymbol
+title: IDebugSymbolGroup2::AddSymbol method
+author: windows-driver-content
+description: The AddSymbol method adds a symbol to a symbol group.
+old-location: debugger\addsymbol.htm
+old-project: debugger
+ms.assetid: b77de459-b5ac-4752-89eb-f24fdde36134
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: AddSymbol method [Windows Debugging], IDebugSymbolGroup interface, AddSymbol method [Windows Debugging], IDebugSymbolGroup2 interface, IDebugSymbolGroup2, AddSymbol, IDebugSymbolGroup2 interface [Windows Debugging], AddSymbol method, IDebugSymbolGroup2::AddSymbol, debugger.addsymbol, dbgeng/IDebugSymbolGroup::AddSymbol, IDebugSymbolGroup interface [Windows Debugging], AddSymbol method, ComOther_936851e7-6a8b-4b42-b339-9c8aa096d684.xml, dbgeng/IDebugSymbolGroup2::AddSymbol, IDebugSymbolGroup::AddSymbol, AddSymbol method [Windows Debugging]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Dbgeng.h
+apiname:
+-	IDebugSymbolGroup.AddSymbol
+-	IDebugSymbolGroup2.AddSymbol
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

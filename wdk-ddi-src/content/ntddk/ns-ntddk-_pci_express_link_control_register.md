@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddk._PCI_EXPRESS_LINK_CONTROL_REGISTER
-title : "_PCI_EXPRESS_LINK_CONTROL_REGISTER"
-author : windows-driver-content
-description : The PCI_EXPRESS_LINK_CONTROL_REGISTER structure describes a PCI Express (PCIe) link control register of a PCIe capability structure.
-old-location : pci\pci_express_link_control_register.htm
-old-project : PCI
-ms.assetid : f4f8bd0d-fad7-4712-92ca-44d45969142d
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : ntddk/PPCI_EXPRESS_LINK_CONTROL_REGISTER, PCI_EXPRESS_LINK_CONTROL_REGISTER, PPCI_EXPRESS_LINK_CONTROL_REGISTER, PCI.pci_express_link_control_register, PCI_EXPRESS_LINK_CONTROL_REGISTER union [Buses], pci_struct_0fc5be0f-aae8-4d59-a569-030eb593e927.xml, ntddk/PCI_EXPRESS_LINK_CONTROL_REGISTER, *PPCI_EXPRESS_LINK_CONTROL_REGISTER, PPCI_EXPRESS_LINK_CONTROL_REGISTER union pointer [Buses], _PCI_EXPRESS_LINK_CONTROL_REGISTER
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPCI_EXPRESS_LINK_CONTROL_REGISTER, PCI_EXPRESS_LINK_CONTROL_REGISTER"
+UID: NS:ntddk._PCI_EXPRESS_LINK_CONTROL_REGISTER
+title: "_PCI_EXPRESS_LINK_CONTROL_REGISTER"
+author: windows-driver-content
+description: The PCI_EXPRESS_LINK_CONTROL_REGISTER structure describes a PCI Express (PCIe) link control register of a PCIe capability structure.
+old-location: pci\pci_express_link_control_register.htm
+old-project: PCI
+ms.assetid: f4f8bd0d-fad7-4712-92ca-44d45969142d
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: ntddk/PPCI_EXPRESS_LINK_CONTROL_REGISTER, PCI_EXPRESS_LINK_CONTROL_REGISTER, PPCI_EXPRESS_LINK_CONTROL_REGISTER, PCI.pci_express_link_control_register, PCI_EXPRESS_LINK_CONTROL_REGISTER union [Buses], pci_struct_0fc5be0f-aae8-4d59-a569-030eb593e927.xml, ntddk/PCI_EXPRESS_LINK_CONTROL_REGISTER, *PPCI_EXPRESS_LINK_CONTROL_REGISTER, PPCI_EXPRESS_LINK_CONTROL_REGISTER union pointer [Buses], _PCI_EXPRESS_LINK_CONTROL_REGISTER
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddk.h
+apiname:
+-	PCI_EXPRESS_LINK_CONTROL_REGISTER
+product: Windows
+targetos: Windows
+req.typenames: "*PPCI_EXPRESS_LINK_CONTROL_REGISTER, PCI_EXPRESS_LINK_CONTROL_REGISTER"
 ---
 
 # _PCI_EXPRESS_LINK_CONTROL_REGISTER structure

@@ -1,42 +1,47 @@
 ---
-UID : NS:windot11._DOT11_RECEIVED_GO_NEGOTIATION_CONFIRMATION_PARAMETERS
-title : "_DOT11_RECEIVED_GO_NEGOTIATION_CONFIRMATION_PARAMETERS"
-author : windows-driver-content
-description : The parameters for a received Group Owner (GO) negotiation confirmation are specified in a DOT11_RECEIVED_GO_NEGOTIATION_CONFIRMATION_PARAMETERS structure.
-old-location : netvista\dot11_received_go_negotiation_confirmation_parameters.htm
-old-project : netvista
-ms.assetid : 8FFCA7EB-BD0F-4EAF-BD5F-A98F2127DE77
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : "_DOT11_RECEIVED_GO_NEGOTIATION_CONFIRMATION_PARAMETERS, windot11/DOT11_RECEIVED_GO_NEGOTIATION_CONFIRMATION_PARAMETERS, DOT11_RECEIVED_GO_NEGOTIATION_CONFIRMATION_PARAMETERS structure [Network Drivers Starting with Windows Vista], netvista.dot11_received_go_negotiation_confirmation_parameters, windot11/PDOT11_RECEIVED_GO_NEGOTIATION_CONFIRMATION_PARAMETERS, PDOT11_RECEIVED_GO_NEGOTIATION_CONFIRMATION_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], DOT11_RECEIVED_GO_NEGOTIATION_CONFIRMATION_PARAMETERS, *PDOT11_RECEIVED_GO_NEGOTIATION_CONFIRMATION_PARAMETERS, PDOT11_RECEIVED_GO_NEGOTIATION_CONFIRMATION_PARAMETERS"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : windot11.h
-req.include-header : Windot11.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with   Windows 8,
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT11_RECEIVED_GO_NEGOTIATION_CONFIRMATION_PARAMETERS, *PDOT11_RECEIVED_GO_NEGOTIATION_CONFIRMATION_PARAMETERS
-req.product : Windows 10 or later.
+UID: NS:windot11._DOT11_RECEIVED_GO_NEGOTIATION_CONFIRMATION_PARAMETERS
+title: "_DOT11_RECEIVED_GO_NEGOTIATION_CONFIRMATION_PARAMETERS"
+author: windows-driver-content
+description: The parameters for a received Group Owner (GO) negotiation confirmation are specified in a DOT11_RECEIVED_GO_NEGOTIATION_CONFIRMATION_PARAMETERS structure.
+old-location: netvista\dot11_received_go_negotiation_confirmation_parameters.htm
+old-project: netvista
+ms.assetid: 8FFCA7EB-BD0F-4EAF-BD5F-A98F2127DE77
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: "_DOT11_RECEIVED_GO_NEGOTIATION_CONFIRMATION_PARAMETERS, windot11/DOT11_RECEIVED_GO_NEGOTIATION_CONFIRMATION_PARAMETERS, DOT11_RECEIVED_GO_NEGOTIATION_CONFIRMATION_PARAMETERS structure [Network Drivers Starting with Windows Vista], netvista.dot11_received_go_negotiation_confirmation_parameters, windot11/PDOT11_RECEIVED_GO_NEGOTIATION_CONFIRMATION_PARAMETERS, PDOT11_RECEIVED_GO_NEGOTIATION_CONFIRMATION_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], DOT11_RECEIVED_GO_NEGOTIATION_CONFIRMATION_PARAMETERS, *PDOT11_RECEIVED_GO_NEGOTIATION_CONFIRMATION_PARAMETERS, PDOT11_RECEIVED_GO_NEGOTIATION_CONFIRMATION_PARAMETERS"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: windot11.h
+req.include-header: Windot11.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with   Windows 8,
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Windot11.h
+apiname:
+-	DOT11_RECEIVED_GO_NEGOTIATION_CONFIRMATION_PARAMETERS
+product: Windows
+targetos: Windows
+req.typenames: DOT11_RECEIVED_GO_NEGOTIATION_CONFIRMATION_PARAMETERS, *PDOT11_RECEIVED_GO_NEGOTIATION_CONFIRMATION_PARAMETERS
+req.product: Windows 10 or later.
 ---
 
 # _DOT11_RECEIVED_GO_NEGOTIATION_CONFIRMATION_PARAMETERS structure

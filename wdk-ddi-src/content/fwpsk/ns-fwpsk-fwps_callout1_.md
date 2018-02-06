@@ -1,41 +1,46 @@
 ---
-UID : NS:fwpsk.FWPS_CALLOUT1_
-title : FWPS_CALLOUT1_
-author : windows-driver-content
-description : The FWPS_CALLOUT1 structure defines the data that is required for a callout driver to register a callout with the filter engine.Note  FWPS_CALLOUT1 is the specific version of FWPS_CALLOUT used in Windows 7 and later.
-old-location : netvista\fwps_callout1.htm
-old-project : netvista
-ms.assetid : d15c4cd4-b4f0-4363-988a-2bbb235b7b37
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.fwps_callout1, FWP_CALLOUT_FLAG_ENABLE_COMMIT_ADD_NOTIFY, FWP_CALLOUT_FLAG_ALLOW_RECLASSIFY, wfp_ref_3_struct_3_fwps_A-E_dd7d51e7-3270-4480-8845-067c010e2fca.xml, FWP_CALLOUT_FLAG_ALLOW_OFFLOAD, FWP_CALLOUT_FLAG_CONDITIONAL_ON_FLOW, fwpsk/FWPS_CALLOUT1, FWPS_CALLOUT1_, FWP_CALLOUT_FLAG_ALLOW_MID_STREAM_INSPECTION, FWPS_CALLOUT1, FWPS_CALLOUT1 structure [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : fwpsk.h
-req.include-header : Fwpsk.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows 7.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FWPS_CALLOUT1
+UID: NS:fwpsk.FWPS_CALLOUT1_
+title: FWPS_CALLOUT1_
+author: windows-driver-content
+description: The FWPS_CALLOUT1 structure defines the data that is required for a callout driver to register a callout with the filter engine.Note  FWPS_CALLOUT1 is the specific version of FWPS_CALLOUT used in Windows 7 and later.
+old-location: netvista\fwps_callout1.htm
+old-project: netvista
+ms.assetid: d15c4cd4-b4f0-4363-988a-2bbb235b7b37
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.fwps_callout1, FWP_CALLOUT_FLAG_ENABLE_COMMIT_ADD_NOTIFY, FWP_CALLOUT_FLAG_ALLOW_RECLASSIFY, wfp_ref_3_struct_3_fwps_A-E_dd7d51e7-3270-4480-8845-067c010e2fca.xml, FWP_CALLOUT_FLAG_ALLOW_OFFLOAD, FWP_CALLOUT_FLAG_CONDITIONAL_ON_FLOW, fwpsk/FWPS_CALLOUT1, FWPS_CALLOUT1_, FWP_CALLOUT_FLAG_ALLOW_MID_STREAM_INSPECTION, FWPS_CALLOUT1, FWPS_CALLOUT1 structure [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: fwpsk.h
+req.include-header: Fwpsk.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows 7.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	fwpsk.h
+apiname:
+-	FWPS_CALLOUT1
+product: Windows
+targetos: Windows
+req.typenames: FWPS_CALLOUT1
 ---
 
 # FWPS_CALLOUT1_ structure

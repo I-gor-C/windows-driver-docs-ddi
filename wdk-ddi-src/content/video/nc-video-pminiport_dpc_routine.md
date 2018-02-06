@@ -1,42 +1,47 @@
 ---
-UID : NC:video.PMINIPORT_DPC_ROUTINE
-title : PMINIPORT_DPC_ROUTINE
-author : windows-driver-content
-description : The HwVidDpcRoutine function is a miniport driver-implemented callback that is called when a queued DPC gets scheduled.
-old-location : display\hwviddpcroutine.htm
-old-project : display
-ms.assetid : d4b443a2-3665-4e7c-b84a-5388a8fe8681
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.hwviddpcroutine, HwVidDpcRoutine callback function [Display Devices], HwVidDpcRoutine, PMINIPORT_DPC_ROUTINE, PMINIPORT_DPC_ROUTINE, video/HwVidDpcRoutine, VideoMiniport_Functions_5d605867-89d7-44a9-b08b-c49ffaa90244.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VHF_CONFIG, *PVHF_CONFIG
-req.product : Windows 10 or later.
+UID: NC:video.PMINIPORT_DPC_ROUTINE
+title: PMINIPORT_DPC_ROUTINE
+author: windows-driver-content
+description: The HwVidDpcRoutine function is a miniport driver-implemented callback that is called when a queued DPC gets scheduled.
+old-location: display\hwviddpcroutine.htm
+old-project: display
+ms.assetid: d4b443a2-3665-4e7c-b84a-5388a8fe8681
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.hwviddpcroutine, HwVidDpcRoutine callback function [Display Devices], HwVidDpcRoutine, PMINIPORT_DPC_ROUTINE, PMINIPORT_DPC_ROUTINE, video/HwVidDpcRoutine, VideoMiniport_Functions_5d605867-89d7-44a9-b08b-c49ffaa90244.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	video.h
+apiname:
+-	HwVidDpcRoutine
+product: Windows
+targetos: Windows
+req.typenames: VHF_CONFIG, *PVHF_CONFIG
+req.product: Windows 10 or later.
 ---
 
 

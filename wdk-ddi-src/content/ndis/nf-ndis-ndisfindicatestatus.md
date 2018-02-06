@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisFIndicateStatus
-title : NdisFIndicateStatus function
-author : windows-driver-content
-description : The NdisFIndicateStatus function passes on a filtered status indication from an underlying driver or originates a status indication.
-old-location : netvista\ndisfindicatestatus.htm
-old-project : netvista
-ms.assetid : fd81d777-8479-41e3-8f71-e5f4134b60a0
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NdisFIndicateStatus, ndis_status_ref_e649b130-878b-4019-b377-dd099de6eb8e.xml, ndis/NdisFIndicateStatus, netvista.ndisfindicatestatus, NdisFIndicateStatus function [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_StatusIndication_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisFIndicateStatus
+title: NdisFIndicateStatus function
+author: windows-driver-content
+description: The NdisFIndicateStatus function passes on a filtered status indication from an underlying driver or originates a status indication.
+old-location: netvista\ndisfindicatestatus.htm
+old-project: netvista
+ms.assetid: fd81d777-8479-41e3-8f71-e5f4134b60a0
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NdisFIndicateStatus, ndis_status_ref_e649b130-878b-4019-b377-dd099de6eb8e.xml, ndis/NdisFIndicateStatus, netvista.ndisfindicatestatus, NdisFIndicateStatus function [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_StatusIndication_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisFIndicateStatus
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

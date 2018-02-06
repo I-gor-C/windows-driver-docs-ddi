@@ -1,42 +1,48 @@
 ---
-UID : NF:wdm.ZwOpenSymbolicLinkObject
-title : ZwOpenSymbolicLinkObject function
-author : windows-driver-content
-description : The ZwOpenSymbolicLinkObject routine opens an existing symbolic link.
-old-location : kernel\zwopensymboliclinkobject.htm
-old-project : kernel
-ms.assetid : 1b5b9410-1243-4fd4-b02a-fc262abf18c7
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.zwopensymboliclinkobject, wdm/ZwOpenSymbolicLinkObject, NtOpenSymbolicLinkObject, wdm/NtOpenSymbolicLinkObject, ZwOpenSymbolicLinkObject routine [Kernel-Mode Driver Architecture], k111_8f2ddd22-26d2-438f-8335-fcc261735592.xml, ZwOpenSymbolicLinkObject
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 2000 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ZwOpenSymbolicLinkObject
+title: ZwOpenSymbolicLinkObject function
+author: windows-driver-content
+description: The ZwOpenSymbolicLinkObject routine opens an existing symbolic link.
+old-location: kernel\zwopensymboliclinkobject.htm
+old-project: kernel
+ms.assetid: 1b5b9410-1243-4fd4-b02a-fc262abf18c7
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.zwopensymboliclinkobject, wdm/ZwOpenSymbolicLinkObject, NtOpenSymbolicLinkObject, wdm/NtOpenSymbolicLinkObject, ZwOpenSymbolicLinkObject routine [Kernel-Mode Driver Architecture], k111_8f2ddd22-26d2-438f-8335-fcc261735592.xml, ZwOpenSymbolicLinkObject
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 2000 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ZwOpenSymbolicLinkObject
+-	NtOpenSymbolicLinkObject
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

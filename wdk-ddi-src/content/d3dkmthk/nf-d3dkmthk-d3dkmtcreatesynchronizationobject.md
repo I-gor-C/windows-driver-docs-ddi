@@ -1,41 +1,49 @@
 ---
-UID : NF:d3dkmthk.D3DKMTCreateSynchronizationObject
-title : D3DKMTCreateSynchronizationObject function
-author : windows-driver-content
-description : The D3DKMTCreateSynchronizationObject function creates a kernel-mode synchronization object.
-old-location : display\d3dkmtcreatesynchronizationobject.htm
-old-project : display
-ms.assetid : c91686dc-1c6a-4d21-84e8-fd8a2803ff4e
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DKMTCreateSynchronizationObject, d3dkmthk/D3DKMTCreateSynchronizationObject, display.d3dkmtcreatesynchronizationobject, D3DKMTCreateSynchronizationObject function [Display Devices], OpenGL_Functions_505065c6-f259-4518-adb8-f7d0fa6b56a5.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Gdi32.lib
-req.dll : Gdi32.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_DRIVERVERSION
+UID: NF:d3dkmthk.D3DKMTCreateSynchronizationObject
+title: D3DKMTCreateSynchronizationObject function
+author: windows-driver-content
+description: The D3DKMTCreateSynchronizationObject function creates a kernel-mode synchronization object.
+old-location: display\d3dkmtcreatesynchronizationobject.htm
+old-project: display
+ms.assetid: c91686dc-1c6a-4d21-84e8-fd8a2803ff4e
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DKMTCreateSynchronizationObject, d3dkmthk/D3DKMTCreateSynchronizationObject, display.d3dkmtcreatesynchronizationobject, D3DKMTCreateSynchronizationObject function [Display Devices], OpenGL_Functions_505065c6-f259-4518-adb8-f7d0fa6b56a5.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Gdi32.lib
+req.dll: Gdi32.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Gdi32.dll
+-	API-MS-Win-dx-d3dkmt-l1-1-0.dll
+-	API-MS-Win-dx-d3dkmt-l1-1-1.dll
+-	API-MS-Win-DX-D3DKMT-L1-1-2.dll
+apiname:
+-	D3DKMTCreateSynchronizationObject
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_DRIVERVERSION
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NC:wdfpdo.EVT_WDF_DEVICE_SET_LOCK
-title : EVT_WDF_DEVICE_SET_LOCK
-author : windows-driver-content
-description : A driver's EvtDeviceSetLock event callback function locks the specified device so that it cannot be ejected, or unlocks the device so that it can be ejected.
-old-location : wdf\evtdevicesetlock.htm
-old-project : wdf
-ms.assetid : 2ac42710-9f44-4982-a0d9-c49048870aeb
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.evtdevicesetlock, EvtDeviceSetLock callback function, EvtDeviceSetLock, EVT_WDF_DEVICE_SET_LOCK, EVT_WDF_DEVICE_SET_LOCK, wdfpdo/EvtDeviceSetLock, DFDeviceObjectFdoPdoRef_932fbb3b-df8b-49ca-9b86-3d98b6fdd39f.xml, kmdf.evtdevicesetlock
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdfpdo.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDF_OBJECT_CONTEXT_TYPE_INFO, WDF_OBJECT_CONTEXT_TYPE_INFO"
-req.product : Windows 10 or later.
+UID: NC:wdfpdo.EVT_WDF_DEVICE_SET_LOCK
+title: EVT_WDF_DEVICE_SET_LOCK
+author: windows-driver-content
+description: A driver's EvtDeviceSetLock event callback function locks the specified device so that it cannot be ejected, or unlocks the device so that it can be ejected.
+old-location: wdf\evtdevicesetlock.htm
+old-project: wdf
+ms.assetid: 2ac42710-9f44-4982-a0d9-c49048870aeb
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.evtdevicesetlock, EvtDeviceSetLock callback function, EvtDeviceSetLock, EVT_WDF_DEVICE_SET_LOCK, EVT_WDF_DEVICE_SET_LOCK, wdfpdo/EvtDeviceSetLock, DFDeviceObjectFdoPdoRef_932fbb3b-df8b-49ca-9b86-3d98b6fdd39f.xml, kmdf.evtdevicesetlock
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdfpdo.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Wdfpdo.h
+apiname:
+-	EvtDeviceSetLock
+product: Windows
+targetos: Windows
+req.typenames: "*PWDF_OBJECT_CONTEXT_TYPE_INFO, WDF_OBJECT_CONTEXT_TYPE_INFO"
+req.product: Windows 10 or later.
 ---
 
 

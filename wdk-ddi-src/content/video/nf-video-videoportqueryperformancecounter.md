@@ -1,42 +1,47 @@
 ---
-UID : NF:video.VideoPortQueryPerformanceCounter
-title : VideoPortQueryPerformanceCounter function
-author : windows-driver-content
-description : The VideoPortQueryPerformanceCounter function provides the finest-grained running count available in the system.
-old-location : display\videoportqueryperformancecounter.htm
-old-project : display
-ms.assetid : 44e9fca2-54b1-427c-864d-f170a8a26f5e
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : video/VideoPortQueryPerformanceCounter, VideoPort_Functions_cd442a17-45fb-493b-b725-8bfbd12ed398.xml, display.videoportqueryperformancecounter, VideoPortQueryPerformanceCounter, VideoPortQueryPerformanceCounter function [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows XP and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Videoprt.lib
-req.dll : Videoprt.sys
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_PORT_SERVICES
-req.product : Windows 10 or later.
+UID: NF:video.VideoPortQueryPerformanceCounter
+title: VideoPortQueryPerformanceCounter function
+author: windows-driver-content
+description: The VideoPortQueryPerformanceCounter function provides the finest-grained running count available in the system.
+old-location: display\videoportqueryperformancecounter.htm
+old-project: display
+ms.assetid: 44e9fca2-54b1-427c-864d-f170a8a26f5e
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: video/VideoPortQueryPerformanceCounter, VideoPort_Functions_cd442a17-45fb-493b-b725-8bfbd12ed398.xml, display.videoportqueryperformancecounter, VideoPortQueryPerformanceCounter, VideoPortQueryPerformanceCounter function [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows XP and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Videoprt.lib
+req.dll: Videoprt.sys
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Videoprt.sys
+apiname:
+-	VideoPortQueryPerformanceCounter
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_PORT_SERVICES
+req.product: Windows 10 or later.
 ---
 
 

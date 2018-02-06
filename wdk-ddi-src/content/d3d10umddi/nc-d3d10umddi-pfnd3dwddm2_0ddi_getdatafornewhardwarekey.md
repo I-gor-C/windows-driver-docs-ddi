@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3DWDDM2_0DDI_GETDATAFORNEWHARDWAREKEY
-title : PFND3DWDDM2_0DDI_GETDATAFORNEWHARDWAREKEY
-author : windows-driver-content
-description : Allows the driver to return independent hardware vendor (IHV)-specific information used when initializing the new hardware key.
-old-location : display\getdatafornewhardwarekey.htm
-old-project : display
-ms.assetid : 0B365C66-2E6E-4DE9-A7A4-963965995F61
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.getdatafornewhardwarekey, pfnGetDataForNewHardwareKey callback function [Display Devices], pfnGetDataForNewHardwareKey, PFND3DWDDM2_0DDI_GETDATAFORNEWHARDWAREKEY, PFND3DWDDM2_0DDI_GETDATAFORNEWHARDWAREKEY, d3d10umddi/pfnGetDataForNewHardwareKey
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3DWDDM2_0DDI_GETDATAFORNEWHARDWAREKEY
+title: PFND3DWDDM2_0DDI_GETDATAFORNEWHARDWAREKEY
+author: windows-driver-content
+description: Allows the driver to return independent hardware vendor (IHV)-specific information used when initializing the new hardware key.
+old-location: display\getdatafornewhardwarekey.htm
+old-project: display
+ms.assetid: 0B365C66-2E6E-4DE9-A7A4-963965995F61
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.getdatafornewhardwarekey, pfnGetDataForNewHardwareKey callback function [Display Devices], pfnGetDataForNewHardwareKey, PFND3DWDDM2_0DDI_GETDATAFORNEWHARDWAREKEY, PFND3DWDDM2_0DDI_GETDATAFORNEWHARDWAREKEY, d3d10umddi/pfnGetDataForNewHardwareKey
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	D3d10umddi.h
+apiname:
+-	pfnGetDataForNewHardwareKey
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

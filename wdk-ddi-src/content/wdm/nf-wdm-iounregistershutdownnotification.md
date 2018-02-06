@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.IoUnregisterShutdownNotification
-title : IoUnregisterShutdownNotification function
-author : windows-driver-content
-description : The IoUnregisterShutdownNotification routine removes a registered driver from the shutdown notification queue.
-old-location : kernel\iounregistershutdownnotification.htm
-old-project : kernel
-ms.assetid : b48a38ff-60b9-4c01-ac71-4ae07010db1f
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/IoUnregisterShutdownNotification, kernel.iounregistershutdownnotification, IoUnregisterShutdownNotification, k104_f242a3dc-8338-4d64-bad7-0cca78c30a45.xml, IoUnregisterShutdownNotification routine [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : IrqlIoPassive5, PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.IoUnregisterShutdownNotification
+title: IoUnregisterShutdownNotification function
+author: windows-driver-content
+description: The IoUnregisterShutdownNotification routine removes a registered driver from the shutdown notification queue.
+old-location: kernel\iounregistershutdownnotification.htm
+old-project: kernel
+ms.assetid: b48a38ff-60b9-4c01-ac71-4ae07010db1f
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/IoUnregisterShutdownNotification, kernel.iounregistershutdownnotification, IoUnregisterShutdownNotification, k104_f242a3dc-8338-4d64-bad7-0cca78c30a45.xml, IoUnregisterShutdownNotification routine [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: IrqlIoPassive5, PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoUnregisterShutdownNotification
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

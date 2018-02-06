@@ -1,42 +1,47 @@
 ---
-UID : NS:usbioctl._USB_STOP_TRACKING_FOR_TIME_SYNC_INFORMATION
-title : "_USB_STOP_TRACKING_FOR_TIME_SYNC_INFORMATION"
-author : windows-driver-content
-description : The input buffer for the IOCTL_USB_STOP_TRACKING_FOR_TIME_SYNC request.
-old-location : buses\usb_stop_tracking_for_time_sync_information.htm
-old-project : usbref
-ms.assetid : FFD7979B-48E9-433C-86A9-255F4F422BBA
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : usbioctl/PUSB_STOP_TRACKING_FOR_TIME_SYNC_INFORMATION, usbioctl/USB_STOP_TRACKING_FOR_TIME_SYNC_INFORMATION, _USB_STOP_TRACKING_FOR_TIME_SYNC_INFORMATION, PUSB_STOP_TRACKING_FOR_TIME_SYNC_INFORMATION, USB_STOP_TRACKING_FOR_TIME_SYNC_INFORMATION, *PUSB_STOP_TRACKING_FOR_TIME_SYNC_INFORMATION, PUSB_STOP_TRACKING_FOR_TIME_SYNC_INFORMATION structure pointer [Buses], USB_STOP_TRACKING_FOR_TIME_SYNC_INFORMATION structure [Buses], buses.usb_stop_tracking_for_time_sync_information
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : usbioctl.h
-req.include-header : TBD
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : USB_STOP_TRACKING_FOR_TIME_SYNC_INFORMATION, *PUSB_STOP_TRACKING_FOR_TIME_SYNC_INFORMATION
-req.product : Windows 10 or later.
+UID: NS:usbioctl._USB_STOP_TRACKING_FOR_TIME_SYNC_INFORMATION
+title: "_USB_STOP_TRACKING_FOR_TIME_SYNC_INFORMATION"
+author: windows-driver-content
+description: The input buffer for the IOCTL_USB_STOP_TRACKING_FOR_TIME_SYNC request.
+old-location: buses\usb_stop_tracking_for_time_sync_information.htm
+old-project: usbref
+ms.assetid: FFD7979B-48E9-433C-86A9-255F4F422BBA
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: usbioctl/PUSB_STOP_TRACKING_FOR_TIME_SYNC_INFORMATION, usbioctl/USB_STOP_TRACKING_FOR_TIME_SYNC_INFORMATION, _USB_STOP_TRACKING_FOR_TIME_SYNC_INFORMATION, PUSB_STOP_TRACKING_FOR_TIME_SYNC_INFORMATION, USB_STOP_TRACKING_FOR_TIME_SYNC_INFORMATION, *PUSB_STOP_TRACKING_FOR_TIME_SYNC_INFORMATION, PUSB_STOP_TRACKING_FOR_TIME_SYNC_INFORMATION structure pointer [Buses], USB_STOP_TRACKING_FOR_TIME_SYNC_INFORMATION structure [Buses], buses.usb_stop_tracking_for_time_sync_information
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: usbioctl.h
+req.include-header: TBD
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	usbioctl.h
+apiname:
+-	USB_STOP_TRACKING_FOR_TIME_SYNC_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: USB_STOP_TRACKING_FOR_TIME_SYNC_INFORMATION, *PUSB_STOP_TRACKING_FOR_TIME_SYNC_INFORMATION
+req.product: Windows 10 or later.
 ---
 
 # _USB_STOP_TRACKING_FOR_TIME_SYNC_INFORMATION structure

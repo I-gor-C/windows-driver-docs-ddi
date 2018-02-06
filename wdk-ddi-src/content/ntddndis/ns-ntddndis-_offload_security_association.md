@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddndis._OFFLOAD_SECURITY_ASSOCIATION
-title : "_OFFLOAD_SECURITY_ASSOCIATION"
-author : windows-driver-content
-description : The OFFLOAD_SECURITY_ASSOCIATION structure specifies a single security association (SA).
-old-location : netvista\offload_security_association.htm
-old-project : netvista
-ms.assetid : 2c392a13-4db4-4b22-aacf-4450eb1e191c
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : "_OFFLOAD_SECURITY_ASSOCIATION, OFFLOAD_SECURITY_ASSOCIATION, OFFLOAD_SECURITY_ASSOCIATION structure [Network Drivers Starting with Windows Vista], netvista.offload_security_association, POFFLOAD_SECURITY_ASSOCIATION, ntddndis/POFFLOAD_SECURITY_ASSOCIATION, ntddndis/OFFLOAD_SECURITY_ASSOCIATION, POFFLOAD_SECURITY_ASSOCIATION structure pointer [Network Drivers Starting with Windows Vista], *POFFLOAD_SECURITY_ASSOCIATION, 216offload_3c6a958b-81b2-4f18-b974-b0669b6294e1.xml"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*POFFLOAD_SECURITY_ASSOCIATION, OFFLOAD_SECURITY_ASSOCIATION"
+UID: NS:ntddndis._OFFLOAD_SECURITY_ASSOCIATION
+title: "_OFFLOAD_SECURITY_ASSOCIATION"
+author: windows-driver-content
+description: The OFFLOAD_SECURITY_ASSOCIATION structure specifies a single security association (SA).
+old-location: netvista\offload_security_association.htm
+old-project: netvista
+ms.assetid: 2c392a13-4db4-4b22-aacf-4450eb1e191c
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: "_OFFLOAD_SECURITY_ASSOCIATION, OFFLOAD_SECURITY_ASSOCIATION, OFFLOAD_SECURITY_ASSOCIATION structure [Network Drivers Starting with Windows Vista], netvista.offload_security_association, POFFLOAD_SECURITY_ASSOCIATION, ntddndis/POFFLOAD_SECURITY_ASSOCIATION, ntddndis/OFFLOAD_SECURITY_ASSOCIATION, POFFLOAD_SECURITY_ASSOCIATION structure pointer [Network Drivers Starting with Windows Vista], *POFFLOAD_SECURITY_ASSOCIATION, 216offload_3c6a958b-81b2-4f18-b974-b0669b6294e1.xml"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddndis.h
+apiname:
+-	OFFLOAD_SECURITY_ASSOCIATION
+product: Windows
+targetos: Windows
+req.typenames: "*POFFLOAD_SECURITY_ASSOCIATION, OFFLOAD_SECURITY_ASSOCIATION"
 ---
 
 # _OFFLOAD_SECURITY_ASSOCIATION structure

@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.ExInterlockedAddLargeInteger
-title : ExInterlockedAddLargeInteger function
-author : windows-driver-content
-description : The ExInterlockedAddLargeInteger routine adds a large integer value to the specified variable as an atomic operation.
-old-location : kernel\exinterlockedaddlargeinteger.htm
-old-project : kernel
-ms.assetid : ace8405b-74a7-4797-8d3d-3caf673dace2
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.exinterlockedaddlargeinteger, ExInterlockedAddLargeInteger routine [Kernel-Mode Driver Architecture], wdm/ExInterlockedAddLargeInteger, k102_934a3a64-9f63-402c-8b55-db7e2b4d9d4b.xml, ExInterlockedAddLargeInteger
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 2000 and later versions of Windows. Not available in Windows 98 or Windows Me.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : Any level (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ExInterlockedAddLargeInteger
+title: ExInterlockedAddLargeInteger function
+author: windows-driver-content
+description: The ExInterlockedAddLargeInteger routine adds a large integer value to the specified variable as an atomic operation.
+old-location: kernel\exinterlockedaddlargeinteger.htm
+old-project: kernel
+ms.assetid: ace8405b-74a7-4797-8d3d-3caf673dace2
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.exinterlockedaddlargeinteger, ExInterlockedAddLargeInteger routine [Kernel-Mode Driver Architecture], wdm/ExInterlockedAddLargeInteger, k102_934a3a64-9f63-402c-8b55-db7e2b4d9d4b.xml, ExInterlockedAddLargeInteger
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 2000 and later versions of Windows. Not available in Windows 98 or Windows Me.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: Any level (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ExInterlockedAddLargeInteger
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

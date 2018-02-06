@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.IoCheckEaBufferValidity
-title : IoCheckEaBufferValidity function
-author : windows-driver-content
-description : The IoCheckEaBufferValidity routine checks whether the specified extended attribute (EA) buffer is valid.
-old-location : ifsk\iocheckeabuffervalidity.htm
-old-project : ifsk
-ms.assetid : 1f9a4fcb-0e70-4f13-bd38-e87bee909a26
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.iocheckeabuffervalidity, ntifs/IoCheckEaBufferValidity, IoCheckEaBufferValidity, IoCheckEaBufferValidity function [Installable File System Drivers], ioref_cda82410-a6a9-40df-83ac-c1376a129a7a.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "< DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.IoCheckEaBufferValidity
+title: IoCheckEaBufferValidity function
+author: windows-driver-content
+description: The IoCheckEaBufferValidity routine checks whether the specified extended attribute (EA) buffer is valid.
+old-location: ifsk\iocheckeabuffervalidity.htm
+old-project: ifsk
+ms.assetid: 1f9a4fcb-0e70-4f13-bd38-e87bee909a26
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.iocheckeabuffervalidity, ntifs/IoCheckEaBufferValidity, IoCheckEaBufferValidity, IoCheckEaBufferValidity function [Installable File System Drivers], ioref_cda82410-a6a9-40df-83ac-c1376a129a7a.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "< DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoCheckEaBufferValidity
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

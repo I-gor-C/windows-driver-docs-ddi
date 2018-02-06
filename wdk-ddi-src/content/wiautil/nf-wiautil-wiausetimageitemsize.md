@@ -1,42 +1,47 @@
 ---
-UID : NF:wiautil.wiauSetImageItemSize
-title : wiauSetImageItemSize function
-author : windows-driver-content
-description : The wiauSetImageItemSize function calculates the size and width, in bytes, for an image, based on the current WIA_IPA_FORMAT setting (described in the Microsoft Windows SDK documentation), and writes the new values to the appropriate properties.
-old-location : image\wiausetimageitemsize.htm
-old-project : image
-ms.assetid : 5bf56435-df81-4555-91ca-5419883bb1e8
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : wiauFncs_9def0e29-20fe-4e9b-b473-a2dbca9088da.xml, wiauSetImageItemSize function [Imaging Devices], wiauSetImageItemSize, wiautil/wiauSetImageItemSize, image.wiausetimageitemsize
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wiautil.h
-req.include-header : Wiautil.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows XP and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SKIP_AMOUNT
-req.product : Windows 10 or later.
+UID: NF:wiautil.wiauSetImageItemSize
+title: wiauSetImageItemSize function
+author: windows-driver-content
+description: The wiauSetImageItemSize function calculates the size and width, in bytes, for an image, based on the current WIA_IPA_FORMAT setting (described in the Microsoft Windows SDK documentation), and writes the new values to the appropriate properties.
+old-location: image\wiausetimageitemsize.htm
+old-project: image
+ms.assetid: 5bf56435-df81-4555-91ca-5419883bb1e8
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: wiauFncs_9def0e29-20fe-4e9b-b473-a2dbca9088da.xml, wiauSetImageItemSize function [Imaging Devices], wiauSetImageItemSize, wiautil/wiauSetImageItemSize, image.wiausetimageitemsize
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wiautil.h
+req.include-header: Wiautil.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows XP and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wiautil.h
+apiname:
+-	wiauSetImageItemSize
+product: Windows
+targetos: Windows
+req.typenames: SKIP_AMOUNT
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NF:portcls.IMiniportAudioEngineNode.GetEngineFormatSize
-title : IMiniportAudioEngineNode::GetEngineFormatSize method
-author : windows-driver-content
-description : Gets the format type and the buffer size for the audio engine's audio data format.
-old-location : audio\iminiportaudioenginenode_getengineformatsize.htm
-old-project : audio
-ms.assetid : 0874EC25-3ABE-410B-B5AC-E98020378D7E
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : GetEngineFormatSize method [Audio Devices], GetEngineFormatSize method [Audio Devices], IMiniportAudioEngineNode interface, audio.iminiportaudioenginenode_getengineformatsize, IMiniportAudioEngineNode::GetEngineFormatSize, GetEngineFormatSize, IMiniportAudioEngineNode interface [Audio Devices], GetEngineFormatSize method, portcls/IMiniportAudioEngineNode::GetEngineFormatSize, IMiniportAudioEngineNode
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : portcls.h
-req.include-header : 
-req.target-type : Universal
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : portcls.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.IMiniportAudioEngineNode.GetEngineFormatSize
+title: IMiniportAudioEngineNode::GetEngineFormatSize method
+author: windows-driver-content
+description: Gets the format type and the buffer size for the audio engine's audio data format.
+old-location: audio\iminiportaudioenginenode_getengineformatsize.htm
+old-project: audio
+ms.assetid: 0874EC25-3ABE-410B-B5AC-E98020378D7E
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: GetEngineFormatSize method [Audio Devices], GetEngineFormatSize method [Audio Devices], IMiniportAudioEngineNode interface, audio.iminiportaudioenginenode_getengineformatsize, IMiniportAudioEngineNode::GetEngineFormatSize, GetEngineFormatSize, IMiniportAudioEngineNode interface [Audio Devices], GetEngineFormatSize method, portcls/IMiniportAudioEngineNode::GetEngineFormatSize, IMiniportAudioEngineNode
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: portcls.h
+req.include-header: 
+req.target-type: Universal
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: portcls.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Portcls.h
+apiname:
+-	IMiniportAudioEngineNode.GetEngineFormatSize
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

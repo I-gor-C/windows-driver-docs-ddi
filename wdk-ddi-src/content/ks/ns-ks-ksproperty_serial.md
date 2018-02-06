@@ -1,41 +1,46 @@
 ---
-UID : NS:ks.KSPROPERTY_SERIAL
-title : KSPROPERTY_SERIAL
-author : windows-driver-content
-description : The KSPROPERTY_SERIAL structure is a header that is included for each property that follows a KSPROPERTY_SERIALHDR structure.
-old-location : stream\ksproperty_serial.htm
-old-project : stream
-ms.assetid : 751bf70d-0602-487a-82c7-efca075b8968
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : PKSPROPERTY_SERIAL structure pointer [Streaming Media Devices], KSPROPERTY_SERIAL, stream.ksproperty_serial, KSPROPERTY_SERIAL structure [Streaming Media Devices], *PKSPROPERTY_SERIAL, PKSPROPERTY_SERIAL, ks-struct_1d2733c1-6b2a-48e2-ae94-d108a011754e.xml, ks/PKSPROPERTY_SERIAL, ks/KSPROPERTY_SERIAL
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KSPROPERTY_SERIAL, *PKSPROPERTY_SERIAL
+UID: NS:ks.KSPROPERTY_SERIAL
+title: KSPROPERTY_SERIAL
+author: windows-driver-content
+description: The KSPROPERTY_SERIAL structure is a header that is included for each property that follows a KSPROPERTY_SERIALHDR structure.
+old-location: stream\ksproperty_serial.htm
+old-project: stream
+ms.assetid: 751bf70d-0602-487a-82c7-efca075b8968
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: PKSPROPERTY_SERIAL structure pointer [Streaming Media Devices], KSPROPERTY_SERIAL, stream.ksproperty_serial, KSPROPERTY_SERIAL structure [Streaming Media Devices], *PKSPROPERTY_SERIAL, PKSPROPERTY_SERIAL, ks-struct_1d2733c1-6b2a-48e2-ae94-d108a011754e.xml, ks/PKSPROPERTY_SERIAL, ks/KSPROPERTY_SERIAL
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	KSPROPERTY_SERIAL
+product: Windows
+targetos: Windows
+req.typenames: KSPROPERTY_SERIAL, *PKSPROPERTY_SERIAL
 ---
 
 # KSPROPERTY_SERIAL structure

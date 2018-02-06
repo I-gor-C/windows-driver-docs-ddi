@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.RtlCreateSecurityDescriptorRelative
-title : RtlCreateSecurityDescriptorRelative function
-author : windows-driver-content
-description : The RtlCreateSecurityDescriptorRelative routine initializes a new security descriptor in self-relative format.
-old-location : ifsk\rtlcreatesecuritydescriptorrelative.htm
-old-project : ifsk
-ms.assetid : feb9600a-e8ce-449a-8da8-2d9a2f10f581
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : rtlref_3130b278-4976-4371-952f-ab6fddeda7a9.xml, RtlCreateSecurityDescriptorRelative, RtlCreateSecurityDescriptorRelative routine [Installable File System Drivers], ntifs/RtlCreateSecurityDescriptorRelative, ifsk.rtlcreatesecuritydescriptorrelative
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Desktop
-req.target-min-winverclnt : This routine is available on Microsoft Windows 2000 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.RtlCreateSecurityDescriptorRelative
+title: RtlCreateSecurityDescriptorRelative function
+author: windows-driver-content
+description: The RtlCreateSecurityDescriptorRelative routine initializes a new security descriptor in self-relative format.
+old-location: ifsk\rtlcreatesecuritydescriptorrelative.htm
+old-project: ifsk
+ms.assetid: feb9600a-e8ce-449a-8da8-2d9a2f10f581
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: rtlref_3130b278-4976-4371-952f-ab6fddeda7a9.xml, RtlCreateSecurityDescriptorRelative, RtlCreateSecurityDescriptorRelative routine [Installable File System Drivers], ntifs/RtlCreateSecurityDescriptorRelative, ifsk.rtlcreatesecuritydescriptorrelative
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Desktop
+req.target-min-winverclnt: This routine is available on Microsoft Windows 2000 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	RtlCreateSecurityDescriptorRelative
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

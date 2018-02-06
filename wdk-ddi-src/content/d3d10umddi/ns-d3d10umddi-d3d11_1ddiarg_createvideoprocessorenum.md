@@ -1,41 +1,46 @@
 ---
-UID : NS:d3d10umddi.D3D11_1DDIARG_CREATEVIDEOPROCESSORENUM
-title : D3D11_1DDIARG_CREATEVIDEOPROCESSORENUM
-author : windows-driver-content
-description : Specifies the attributes of a video processor enumeration object.
-old-location : display\d3d11_1ddiarg_createvideoprocessorenum.htm
-old-project : display
-ms.assetid : 7edcd852-429f-4059-92bb-99c7874a9357
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3D11_1DDIARG_CREATEVIDEOPROCESSORENUM structure [Display Devices], d3d10umddi/D3D11_1DDIARG_CREATEVIDEOPROCESSORENUM, display.d3d11_1ddiarg_createvideoprocessorenum, D3D11_1DDIARG_CREATEVIDEOPROCESSORENUM
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3D11_1DDIARG_CREATEVIDEOPROCESSORENUM
+UID: NS:d3d10umddi.D3D11_1DDIARG_CREATEVIDEOPROCESSORENUM
+title: D3D11_1DDIARG_CREATEVIDEOPROCESSORENUM
+author: windows-driver-content
+description: Specifies the attributes of a video processor enumeration object.
+old-location: display\d3d11_1ddiarg_createvideoprocessorenum.htm
+old-project: display
+ms.assetid: 7edcd852-429f-4059-92bb-99c7874a9357
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3D11_1DDIARG_CREATEVIDEOPROCESSORENUM structure [Display Devices], d3d10umddi/D3D11_1DDIARG_CREATEVIDEOPROCESSORENUM, display.d3d11_1ddiarg_createvideoprocessorenum, D3D11_1DDIARG_CREATEVIDEOPROCESSORENUM
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	D3d10umddi.h
+apiname:
+-	D3D11_1DDIARG_CREATEVIDEOPROCESSORENUM
+product: Windows
+targetos: Windows
+req.typenames: D3D11_1DDIARG_CREATEVIDEOPROCESSORENUM
 ---
 
 # D3D11_1DDIARG_CREATEVIDEOPROCESSORENUM structure

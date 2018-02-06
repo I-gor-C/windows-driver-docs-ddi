@@ -1,41 +1,46 @@
 ---
-UID : NE:irb.IDE_POWER_STATE
-title : IDE_POWER_STATE
-author : windows-driver-content
-description : The IDE_POWER_STATE enumeration type indicates that power state of the device.
-old-location : storage\ide_power_state.htm
-old-project : storage
-ms.assetid : b54655ac-b7ac-4026-9d9d-75dd139ac059
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : irb/IdePowerUnSpecified, storage.ide_power_state, irb/IdePowerD0, IDE_POWER_STATE enumeration [Storage Devices], structs-ATA_82594916-763d-46c4-9a40-e1e4f0c32e13.xml, irb/IDE_POWER_STATE, irb/IdePowerD3, IDE_POWER_STATE, IdePowerD3, IdePowerD0, IdePowerUnSpecified
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : irb.h
-req.include-header : Irb.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : IDE_POWER_STATE
+UID: NE:irb.IDE_POWER_STATE
+title: IDE_POWER_STATE
+author: windows-driver-content
+description: The IDE_POWER_STATE enumeration type indicates that power state of the device.
+old-location: storage\ide_power_state.htm
+old-project: storage
+ms.assetid: b54655ac-b7ac-4026-9d9d-75dd139ac059
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: irb/IdePowerUnSpecified, storage.ide_power_state, irb/IdePowerD0, IDE_POWER_STATE enumeration [Storage Devices], structs-ATA_82594916-763d-46c4-9a40-e1e4f0c32e13.xml, irb/IDE_POWER_STATE, irb/IdePowerD3, IDE_POWER_STATE, IdePowerD3, IdePowerD0, IdePowerUnSpecified
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: irb.h
+req.include-header: Irb.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	irb.h
+apiname:
+-	IDE_POWER_STATE
+product: Windows
+targetos: Windows
+req.typenames: IDE_POWER_STATE
 ---
 
 # IDE_POWER_STATE Enumeration
@@ -54,35 +59,35 @@ typedef enum  {
 ## Constants
 
 <table>
-
-<tr>
-<td>IdePowerD0</td>
-<td>Indicates a device power level of 0.</td>
-</tr>
-
-<tr>
-<td>IdePowerD3</td>
-<td>Indicates a device power level of 3.</td>
-</tr>
-
-<tr>
-<td>IdePowerUnSpecified</td>
-<td>Indicates that the power level is unspecified.</td>
-</tr>
+            
+                <tr>
+                    <td>IdePowerD0</td>
+                    <td>Indicates a device power level of 0.</td>
+                </tr>
+            
+                <tr>
+                    <td>IdePowerD3</td>
+                    <td>Indicates a device power level of 3.</td>
+                </tr>
+            
+                <tr>
+                    <td>IdePowerUnSpecified</td>
+                    <td>Indicates that the power level is unspecified.</td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-The IDE_POWER_STATE enumeration type is used in conjunction with the <a href="..\irb\nf-irb-ataportrequestpowerstatechange.md">AtaPortRequestPowerStateChange</a> routine to request a power state transition for a device.
+        The IDE_POWER_STATE enumeration type is used in conjunction with the <a href="..\irb\nf-irb-ataportrequestpowerstatechange.md">AtaPortRequestPowerStateChange</a> routine to request a power state transition for a device.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
 | **Header** | irb.h (include Irb.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\irb\nf-irb-ataportrequestpowerstatechange.md">AtaPortRequestPowerStateChange</a>
+        <a href="..\irb\nf-irb-ataportrequestpowerstatechange.md">AtaPortRequestPowerStateChange</a>
 
  
 

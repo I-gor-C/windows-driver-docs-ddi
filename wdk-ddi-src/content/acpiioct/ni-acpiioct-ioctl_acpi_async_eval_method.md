@@ -1,41 +1,46 @@
 ---
-UID : NI:acpiioct.IOCTL_ACPI_ASYNC_EVAL_METHOD
-title : IOCTL_ACPI_ASYNC_EVAL_METHOD
-author : windows-driver-content
-description : A driver for a device can use the IOCTL_ACPI_ASYNC_EVAL_METHOD device control request to asynchronously evaluate an ACPI control method that is supported by the device.
-old-location : acpi\ioctl_acpi_async_eval_method.htm
-old-project : acpi
-ms.assetid : 43dcbd78-97c6-469e-9f66-f50959dc60e2
-ms.author : windowsdriverdev
-ms.date : 12/31/2017
-ms.keywords : acpi.ioctl_acpi_async_eval_method, IOCTL_ACPI_ASYNC_EVAL_METHOD control code [ACPI Devices], IOCTL_ACPI_ASYNC_EVAL_METHOD, acpiioct/IOCTL_ACPI_ASYNC_EVAL_METHOD, acpi-meth-eval-ref_9de8fe00-63ec-41e3-bb6b-9fd14d1a788f.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : acpiioct.h
-req.include-header : Acpiioct.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows Vista and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : UNIT_ISOCH_PARAMS, *PUNIT_ISOCH_PARAMS
+UID: NI:acpiioct.IOCTL_ACPI_ASYNC_EVAL_METHOD
+title: IOCTL_ACPI_ASYNC_EVAL_METHOD
+author: windows-driver-content
+description: A driver for a device can use the IOCTL_ACPI_ASYNC_EVAL_METHOD device control request to asynchronously evaluate an ACPI control method that is supported by the device.
+old-location: acpi\ioctl_acpi_async_eval_method.htm
+old-project: acpi
+ms.assetid: 43dcbd78-97c6-469e-9f66-f50959dc60e2
+ms.author: windowsdriverdev
+ms.date: 12/31/2017
+ms.keywords: acpi.ioctl_acpi_async_eval_method, IOCTL_ACPI_ASYNC_EVAL_METHOD control code [ACPI Devices], IOCTL_ACPI_ASYNC_EVAL_METHOD, acpiioct/IOCTL_ACPI_ASYNC_EVAL_METHOD, acpi-meth-eval-ref_9de8fe00-63ec-41e3-bb6b-9fd14d1a788f.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: acpiioct.h
+req.include-header: Acpiioct.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows Vista and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Acpiioct.h
+apiname:
+-	IOCTL_ACPI_ASYNC_EVAL_METHOD
+product: Windows
+targetos: Windows
+req.typenames: UNIT_ISOCH_PARAMS, *PUNIT_ISOCH_PARAMS
 ---
 
 # IOCTL_ACPI_ASYNC_EVAL_METHOD IOCTL

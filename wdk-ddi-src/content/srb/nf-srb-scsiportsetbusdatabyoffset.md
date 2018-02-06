@@ -1,42 +1,48 @@
 ---
-UID : NF:srb.ScsiPortSetBusDataByOffset
-title : ScsiPortSetBusDataByOffset function
-author : windows-driver-content
-description : The ScsiPortSetBusDataByOffset routine sets bus-configuration data for an adapter on a dynamically configurable I/O bus with a published, standard interface.
-old-location : storage\scsiportsetbusdatabyoffset.htm
-old-project : storage
-ms.assetid : 64f46049-fbf0-4d9b-b5fe-9877a964755f
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : ScsiPortSetBusDataByOffset, storage.scsiportsetbusdatabyoffset, srb/ScsiPortSetBusDataByOffset, scsiprt_83fdaa63-8e40-41e6-8f60-b9cc98c6eade.xml, ScsiPortSetBusDataByOffset routine [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : srb.h
-req.include-header : Miniport.h, Scsi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Scsiport.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SPB_CONTROLLER_CONFIG, *PSPB_CONTROLLER_CONFIG
-req.product : Windows 10 or later.
+UID: NF:srb.ScsiPortSetBusDataByOffset
+title: ScsiPortSetBusDataByOffset function
+author: windows-driver-content
+description: The ScsiPortSetBusDataByOffset routine sets bus-configuration data for an adapter on a dynamically configurable I/O bus with a published, standard interface.
+old-location: storage\scsiportsetbusdatabyoffset.htm
+old-project: storage
+ms.assetid: 64f46049-fbf0-4d9b-b5fe-9877a964755f
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: ScsiPortSetBusDataByOffset, storage.scsiportsetbusdatabyoffset, srb/ScsiPortSetBusDataByOffset, scsiprt_83fdaa63-8e40-41e6-8f60-b9cc98c6eade.xml, ScsiPortSetBusDataByOffset routine [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: srb.h
+req.include-header: Miniport.h, Scsi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Scsiport.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Scsiport.lib
+-	Scsiport.dll
+apiname:
+-	ScsiPortSetBusDataByOffset
+product: Windows
+targetos: Windows
+req.typenames: SPB_CONTROLLER_CONFIG, *PSPB_CONTROLLER_CONFIG
+req.product: Windows 10 or later.
 ---
 
 

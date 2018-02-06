@@ -1,42 +1,47 @@
 ---
-UID : NE:wdfrequest._WDF_REQUEST_REUSE_FLAGS
-title : "_WDF_REQUEST_REUSE_FLAGS"
-author : windows-driver-content
-description : The WDF_REQUEST_REUSE_FLAGS enumeration type defines flags that are used in a driver's WDF_REQUEST_REUSE_PARAMS structure.
-old-location : wdf\wdf_request_reuse_flags.htm
-old-project : wdf
-ms.assetid : 3d1f8f38-b875-4661-9941-4dec28b7e8fb
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WDF_REQUEST_REUSE_FLAGS enumeration, wdf.wdf_request_reuse_flags, WDF_REQUEST_REUSE_SET_NEW_IRP, WDF_REQUEST_REUSE_NO_FLAGS, _WDF_REQUEST_REUSE_FLAGS, wdfrequest/WDF_REQUEST_REUSE_FLAGS, wdfrequest/WDF_REQUEST_REUSE_SET_NEW_IRP, kmdf.wdf_request_reuse_flags, wdfrequest/WDF_REQUEST_REUSE_NO_FLAGS, DFRequestObjectRef_4b91ca45-4dbb-4942-83ce-72ca10170932.xml, WDF_REQUEST_REUSE_FLAGS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : wdfrequest.h
-req.include-header : Wdf.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_REQUEST_REUSE_FLAGS
-req.product : Windows 10 or later.
+UID: NE:wdfrequest._WDF_REQUEST_REUSE_FLAGS
+title: "_WDF_REQUEST_REUSE_FLAGS"
+author: windows-driver-content
+description: The WDF_REQUEST_REUSE_FLAGS enumeration type defines flags that are used in a driver's WDF_REQUEST_REUSE_PARAMS structure.
+old-location: wdf\wdf_request_reuse_flags.htm
+old-project: wdf
+ms.assetid: 3d1f8f38-b875-4661-9941-4dec28b7e8fb
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WDF_REQUEST_REUSE_FLAGS enumeration, wdf.wdf_request_reuse_flags, WDF_REQUEST_REUSE_SET_NEW_IRP, WDF_REQUEST_REUSE_NO_FLAGS, _WDF_REQUEST_REUSE_FLAGS, wdfrequest/WDF_REQUEST_REUSE_FLAGS, wdfrequest/WDF_REQUEST_REUSE_SET_NEW_IRP, kmdf.wdf_request_reuse_flags, wdfrequest/WDF_REQUEST_REUSE_NO_FLAGS, DFRequestObjectRef_4b91ca45-4dbb-4942-83ce-72ca10170932.xml, WDF_REQUEST_REUSE_FLAGS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: wdfrequest.h
+req.include-header: Wdf.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfrequest.h
+apiname:
+-	WDF_REQUEST_REUSE_FLAGS
+product: Windows
+targetos: Windows
+req.typenames: WDF_REQUEST_REUSE_FLAGS
+req.product: Windows 10 or later.
 ---
 
 # _WDF_REQUEST_REUSE_FLAGS Enumeration
@@ -55,16 +60,16 @@ typedef enum _WDF_REQUEST_REUSE_FLAGS {
 ## Constants
 
 <table>
-
-<tr>
-<td>WDF_REQUEST_REUSE_NO_FLAGS</td>
-<td>No flags are set.</td>
-</tr>
-
-<tr>
-<td>WDF_REQUEST_REUSE_SET_NEW_IRP</td>
-<td>The <b>NewIrp</b> member of the <a href="..\wdfrequest\ns-wdfrequest-_wdf_request_reuse_params.md">WDF_REQUEST_REUSE_PARAMS</a> structure is valid.</td>
-</tr>
+            
+                <tr>
+                    <td>WDF_REQUEST_REUSE_NO_FLAGS</td>
+                    <td>No flags are set.</td>
+                </tr>
+            
+                <tr>
+                    <td>WDF_REQUEST_REUSE_SET_NEW_IRP</td>
+                    <td>The <b>NewIrp</b> member of the <a href="..\wdfrequest\ns-wdfrequest-_wdf_request_reuse_params.md">WDF_REQUEST_REUSE_PARAMS</a> structure is valid.</td>
+                </tr>
 </table>
 
 
@@ -75,9 +80,9 @@ typedef enum _WDF_REQUEST_REUSE_FLAGS {
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfrequest.h (include Wdf.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\wdfrequest\ns-wdfrequest-_wdf_request_reuse_params.md">WDF_REQUEST_REUSE_PARAMS</a>
+        <a href="..\wdfrequest\ns-wdfrequest-_wdf_request_reuse_params.md">WDF_REQUEST_REUSE_PARAMS</a>
 
  
 

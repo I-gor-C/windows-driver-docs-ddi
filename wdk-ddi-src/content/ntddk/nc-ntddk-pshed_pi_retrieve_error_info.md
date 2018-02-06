@@ -1,41 +1,46 @@
 ---
-UID : NC:ntddk.PSHED_PI_RETRIEVE_ERROR_INFO
-title : PSHED_PI_RETRIEVE_ERROR_INFO
-author : windows-driver-content
-description : A PSHED plug-in's RetrieveErrorInfo callback function retrieves platform-specific error information about a hardware error that has occurred.
-old-location : whea\retrieveerrorinfo.htm
-old-project : whea
-ms.assetid : 4d299057-a1cc-4b53-8ab4-031672181e74
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : whea.retrieveerrorinfo, RetrieveErrorInfo callback function [WHEA Drivers and Applications], RetrieveErrorInfo, PSHED_PI_RETRIEVE_ERROR_INFO, PSHED_PI_RETRIEVE_ERROR_INFO, ntddk/RetrieveErrorInfo, whearef_f231db3f-6108-4229-895f-7e0281b5b3b8.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= HIGH_LEVEL (See Remarks section)"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PFILTER_INITIALIZATION_DATA, FILTER_INITIALIZATION_DATA"
+UID: NC:ntddk.PSHED_PI_RETRIEVE_ERROR_INFO
+title: PSHED_PI_RETRIEVE_ERROR_INFO
+author: windows-driver-content
+description: A PSHED plug-in's RetrieveErrorInfo callback function retrieves platform-specific error information about a hardware error that has occurred.
+old-location: whea\retrieveerrorinfo.htm
+old-project: whea
+ms.assetid: 4d299057-a1cc-4b53-8ab4-031672181e74
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: whea.retrieveerrorinfo, RetrieveErrorInfo callback function [WHEA Drivers and Applications], RetrieveErrorInfo, PSHED_PI_RETRIEVE_ERROR_INFO, PSHED_PI_RETRIEVE_ERROR_INFO, ntddk/RetrieveErrorInfo, whearef_f231db3f-6108-4229-895f-7e0281b5b3b8.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= HIGH_LEVEL (See Remarks section)"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ntddk.h
+apiname:
+-	RetrieveErrorInfo
+product: Windows
+targetos: Windows
+req.typenames: "*PFILTER_INITIALIZATION_DATA, FILTER_INITIALIZATION_DATA"
 ---
 
 

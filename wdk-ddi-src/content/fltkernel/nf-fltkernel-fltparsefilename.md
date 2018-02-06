@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltParseFileName
-title : FltParseFileName function
-author : windows-driver-content
-description : FltParseFileName parses the extension, stream, and final component from a file name string.
-old-location : ifsk\fltparsefilename.htm
-old-project : ifsk
-ms.assetid : 8d91390b-22a1-4e0b-8c9e-78c0872e7b21
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : fltkernel/FltParseFileName, FltParseFileName function [Installable File System Drivers], ifsk.fltparsefilename, FltApiRef_p_to_z_57a4d7c0-f653-4c91-a16b-1de79ef56342.xml, FltParseFileName
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows XP with Service Pack 2 (SP2) and later versions of the Windows operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltParseFileName
+title: FltParseFileName function
+author: windows-driver-content
+description: FltParseFileName parses the extension, stream, and final component from a file name string.
+old-location: ifsk\fltparsefilename.htm
+old-project: ifsk
+ms.assetid: 8d91390b-22a1-4e0b-8c9e-78c0872e7b21
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: fltkernel/FltParseFileName, FltParseFileName function [Installable File System Drivers], ifsk.fltparsefilename, FltApiRef_p_to_z_57a4d7c0-f653-4c91-a16b-1de79ef56342.xml, FltParseFileName
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows XP with Service Pack 2 (SP2) and later versions of the Windows operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltParseFileName
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

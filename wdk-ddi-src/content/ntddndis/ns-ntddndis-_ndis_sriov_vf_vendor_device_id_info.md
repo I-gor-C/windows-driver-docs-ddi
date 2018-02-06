@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddndis._NDIS_SRIOV_VF_VENDOR_DEVICE_ID_INFO
-title : "_NDIS_SRIOV_VF_VENDOR_DEVICE_ID_INFO"
-author : windows-driver-content
-description : The NDIS_SRIOV_VF_VENDOR_DEVICE_ID_INFO structure specifies the PCI Express (PCIe) vendor and device identifiers (IDs) for a PCIe Virtual Function (VF) network adapter.
-old-location : netvista\ndis_sriov_vf_vendor_device_id_info.htm
-old-project : netvista
-ms.assetid : ecf9f34a-ba05-4ad1-990c-b13d53fd78bb
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.ndis_sriov_vf_vendor_device_id_info, NDIS_SRIOV_VF_VENDOR_DEVICE_ID_INFO structure [Network Drivers Starting with Windows Vista], *PNDIS_SRIOV_VF_VENDOR_DEVICE_ID_INFO, ntddndis/NDIS_SRIOV_VF_VENDOR_DEVICE_ID_INFO, NDIS_SRIOV_VF_VENDOR_DEVICE_ID_INFO, PNDIS_SRIOV_VF_VENDOR_DEVICE_ID_INFO, _NDIS_SRIOV_VF_VENDOR_DEVICE_ID_INFO, PNDIS_SRIOV_VF_VENDOR_DEVICE_ID_INFO structure pointer [Network Drivers Starting with Windows Vista], ntddndis/PNDIS_SRIOV_VF_VENDOR_DEVICE_ID_INFO
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.30 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SRIOV_VF_VENDOR_DEVICE_ID_INFO, *PNDIS_SRIOV_VF_VENDOR_DEVICE_ID_INFO
+UID: NS:ntddndis._NDIS_SRIOV_VF_VENDOR_DEVICE_ID_INFO
+title: "_NDIS_SRIOV_VF_VENDOR_DEVICE_ID_INFO"
+author: windows-driver-content
+description: The NDIS_SRIOV_VF_VENDOR_DEVICE_ID_INFO structure specifies the PCI Express (PCIe) vendor and device identifiers (IDs) for a PCIe Virtual Function (VF) network adapter.
+old-location: netvista\ndis_sriov_vf_vendor_device_id_info.htm
+old-project: netvista
+ms.assetid: ecf9f34a-ba05-4ad1-990c-b13d53fd78bb
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.ndis_sriov_vf_vendor_device_id_info, NDIS_SRIOV_VF_VENDOR_DEVICE_ID_INFO structure [Network Drivers Starting with Windows Vista], *PNDIS_SRIOV_VF_VENDOR_DEVICE_ID_INFO, ntddndis/NDIS_SRIOV_VF_VENDOR_DEVICE_ID_INFO, NDIS_SRIOV_VF_VENDOR_DEVICE_ID_INFO, PNDIS_SRIOV_VF_VENDOR_DEVICE_ID_INFO, _NDIS_SRIOV_VF_VENDOR_DEVICE_ID_INFO, PNDIS_SRIOV_VF_VENDOR_DEVICE_ID_INFO structure pointer [Network Drivers Starting with Windows Vista], ntddndis/PNDIS_SRIOV_VF_VENDOR_DEVICE_ID_INFO
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.30 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddndis.h
+apiname:
+-	NDIS_SRIOV_VF_VENDOR_DEVICE_ID_INFO
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SRIOV_VF_VENDOR_DEVICE_ID_INFO, *PNDIS_SRIOV_VF_VENDOR_DEVICE_ID_INFO
 ---
 
 # _NDIS_SRIOV_VF_VENDOR_DEVICE_ID_INFO structure

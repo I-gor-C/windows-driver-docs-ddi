@@ -1,41 +1,46 @@
 ---
-UID : NE:d3dkmthk._D3DKMT_DEVICEEXECUTION_STATE
-title : "_D3DKMT_DEVICEEXECUTION_STATE"
-author : windows-driver-content
-description : Contains values that indicate the execution status for a device.
-old-location : display\d3dkmt_deviceexecution_state.htm
-old-project : display
-ms.assetid : 31935433-6fa4-4d1a-9ad4-879353102e71
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3dkmthk/D3DKMT_DEVICEEXECUTION_ERROR_DMAPAGEFAULT, d3dkmthk/D3DKMT_DEVICEEXECUTION_ERROR_DMAFAULT, _D3DKMT_DEVICEEXECUTION_STATE, d3dkmthk/D3DKMT_DEVICEEXECUTION_STOPPED, D3DKMT_DEVICEEXECUTION_HUNG, OpenGL_Structs_35637d1a-f40f-49f5-b774-777e02f22b68.xml, D3DKMT_DEVICEEXECUTION_ERROR_OUTOFMEMORY, D3DKMT_DEVICEEXECUTION_RESET, d3dkmthk/D3DKMT_DEVICEEXECUTION_STATE, d3dkmthk/, d3dkmthk/D3DKMT_DEVICEEXECUTION_HUNG, D3DKMT_DEVICEEXECUTION_STATE enumeration [Display Devices], D3DKMT_DEVICEEXECUTION_ACTIVE, D3DKMT_DEVICEEXECUTION_STOPPED, D3DKMT_DEVICEEXECUTION_ERROR_DMAPAGEFAULT, d3dkmthk/D3DKMT_DEVICEEXECUTION_ACTIVE, D3DKMT_DEVICEEXECUTION_STATE, display.d3dkmt_deviceexecution_state, d3dkmthk/D3DKMT_DEVICEEXECUTION_RESET, d3dkmthk/D3DKMT_DEVICEEXECUTION_ERROR_OUTOFMEMORY, D3DKMT_DEVICEEXECUTION_ERROR_DMAFAULT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_DEVICEEXECUTION_STATE
+UID: NE:d3dkmthk._D3DKMT_DEVICEEXECUTION_STATE
+title: "_D3DKMT_DEVICEEXECUTION_STATE"
+author: windows-driver-content
+description: Contains values that indicate the execution status for a device.
+old-location: display\d3dkmt_deviceexecution_state.htm
+old-project: display
+ms.assetid: 31935433-6fa4-4d1a-9ad4-879353102e71
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3dkmthk/D3DKMT_DEVICEEXECUTION_ERROR_DMAPAGEFAULT, d3dkmthk/D3DKMT_DEVICEEXECUTION_ERROR_DMAFAULT, _D3DKMT_DEVICEEXECUTION_STATE, d3dkmthk/D3DKMT_DEVICEEXECUTION_STOPPED, D3DKMT_DEVICEEXECUTION_HUNG, OpenGL_Structs_35637d1a-f40f-49f5-b774-777e02f22b68.xml, D3DKMT_DEVICEEXECUTION_ERROR_OUTOFMEMORY, D3DKMT_DEVICEEXECUTION_RESET, d3dkmthk/D3DKMT_DEVICEEXECUTION_STATE, d3dkmthk/, d3dkmthk/D3DKMT_DEVICEEXECUTION_HUNG, D3DKMT_DEVICEEXECUTION_STATE enumeration [Display Devices], D3DKMT_DEVICEEXECUTION_ACTIVE, D3DKMT_DEVICEEXECUTION_STOPPED, D3DKMT_DEVICEEXECUTION_ERROR_DMAPAGEFAULT, d3dkmthk/D3DKMT_DEVICEEXECUTION_ACTIVE, D3DKMT_DEVICEEXECUTION_STATE, display.d3dkmt_deviceexecution_state, d3dkmthk/D3DKMT_DEVICEEXECUTION_RESET, d3dkmthk/D3DKMT_DEVICEEXECUTION_ERROR_OUTOFMEMORY, D3DKMT_DEVICEEXECUTION_ERROR_DMAFAULT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmthk.h
+apiname:
+-	D3DKMT_DEVICEEXECUTION_STATE
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_DEVICEEXECUTION_STATE
 ---
 
 # _D3DKMT_DEVICEEXECUTION_STATE Enumeration
@@ -60,41 +65,41 @@ typedef enum _D3DKMT_DEVICEEXECUTION_STATE {
 ## Constants
 
 <table>
-
-<tr>
-<td>D3DKMT_DEVICEEXECUTION_ACTIVE</td>
-<td>The device is actively executing.</td>
-</tr>
-
-<tr>
-<td>D3DKMT_DEVICEEXECUTION_ERROR_DMAFAULT</td>
-<td>The display miniport driver reported a fault while processing a DMA buffer for the device. The device is unable to continue.</td>
-</tr>
-
-<tr>
-<td>D3DKMT_DEVICEEXECUTION_ERROR_DMAPAGEFAULT</td>
-<td>The display miniport driver reported a page fault while processing a DMA buffer for the device. The device is unable to continue.</td>
-</tr>
-
-<tr>
-<td>D3DKMT_DEVICEEXECUTION_ERROR_OUTOFMEMORY</td>
-<td>Even after the video memory manager split the DMA buffer, the video memory manager could not page-in all of the required allocations into video memory at the same time. The device is unable to continue.</td>
-</tr>
-
-<tr>
-<td>D3DKMT_DEVICEEXECUTION_HUNG</td>
-<td>The device is hung. The device is unable to continue.</td>
-</tr>
-
-<tr>
-<td>D3DKMT_DEVICEEXECUTION_RESET</td>
-<td>The device is reset.</td>
-</tr>
-
-<tr>
-<td>D3DKMT_DEVICEEXECUTION_STOPPED</td>
-<td>The device is stopped.</td>
-</tr>
+            
+                <tr>
+                    <td>D3DKMT_DEVICEEXECUTION_ACTIVE</td>
+                    <td>The device is actively executing.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DKMT_DEVICEEXECUTION_ERROR_DMAFAULT</td>
+                    <td>The display miniport driver reported a fault while processing a DMA buffer for the device. The device is unable to continue.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DKMT_DEVICEEXECUTION_ERROR_DMAPAGEFAULT</td>
+                    <td>The display miniport driver reported a page fault while processing a DMA buffer for the device. The device is unable to continue.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DKMT_DEVICEEXECUTION_ERROR_OUTOFMEMORY</td>
+                    <td>Even after the video memory manager split the DMA buffer, the video memory manager could not page-in all of the required allocations into video memory at the same time. The device is unable to continue.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DKMT_DEVICEEXECUTION_HUNG</td>
+                    <td>The device is hung. The device is unable to continue.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DKMT_DEVICEEXECUTION_RESET</td>
+                    <td>The device is reset.</td>
+                </tr>
+            
+                <tr>
+                    <td>D3DKMT_DEVICEEXECUTION_STOPPED</td>
+                    <td>The device is stopped.</td>
+                </tr>
 </table>
 
 
@@ -104,9 +109,9 @@ typedef enum _D3DKMT_DEVICEEXECUTION_STATE {
 | **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_getdevicestate.md">D3DKMT_GETDEVICESTATE</a>
+        <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_getdevicestate.md">D3DKMT_GETDEVICESTATE</a>
 
  
 

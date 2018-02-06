@@ -1,41 +1,49 @@
 ---
-UID : NN:ksproxy.IKsPin
-title : IKsPin
-author : windows-driver-content
-description : The IKsPin interface provides methods that control and retrieve information about a pin.
-old-location : stream\ikspin.htm
-old-project : stream
-ms.assetid : 4717300c-bc98-4e1f-83c3-cbd368b45140
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.ikspin, IKsPin interface [Streaming Media Devices], IKsPin interface [Streaming Media Devices], described, IKsPin, ksproxy/IKsPin, ksproxy_9a020f8a-1271-47ea-816f-1132e44b6f45.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : ksproxy.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ksproxy.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PIPE_STATE
+UID: NN:ksproxy.IKsPin
+title: IKsPin
+author: windows-driver-content
+description: The IKsPin interface provides methods that control and retrieve information about a pin.
+old-location: stream\ikspin.htm
+old-project: stream
+ms.assetid: 4717300c-bc98-4e1f-83c3-cbd368b45140
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.ikspin, IKsPin interface [Streaming Media Devices], IKsPin interface [Streaming Media Devices], described, IKsPin, ksproxy/IKsPin, ksproxy_9a020f8a-1271-47ea-816f-1132e44b6f45.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: ksproxy.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ksproxy.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	ksproxy.h
+apiname:
+-	IKsPin
+-	IKsPin.KsReceiveAllocator
+-	IKsPin.KsRenegotiateAllocator
+-	IKsPin.KsQualityNotify
+product: Windows
+targetos: Windows
+req.typenames: PIPE_STATE
 ---
 
 # IKsPin interface

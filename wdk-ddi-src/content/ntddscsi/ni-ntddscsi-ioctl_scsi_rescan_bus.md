@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddscsi.IOCTL_SCSI_RESCAN_BUS
-title : IOCTL_SCSI_RESCAN_BUS
-author : windows-driver-content
-description : Rescans the LUNs on the bus(es).
-old-location : storage\ioctl_scsi_rescan_bus.htm
-old-project : storage
-ms.assetid : d2b1ec10-3d59-469f-a92e-e28a6c2aef92
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_scsi_rescan_bus, IOCTL_SCSI_RESCAN_BUS control code [Storage Devices], IOCTL_SCSI_RESCAN_BUS, ntddscsi/IOCTL_SCSI_RESCAN_BUS, k307_36067418-9daa-4fed-a8a6-98fe65ca7fe2.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddscsi.h
-req.include-header : Ntddscsi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : MP_STORAGE_DIAGNOSTIC_TARGET_TYPE, *PMP_STORAGE_DIAGNOSTIC_TARGET_TYPE
+UID: NI:ntddscsi.IOCTL_SCSI_RESCAN_BUS
+title: IOCTL_SCSI_RESCAN_BUS
+author: windows-driver-content
+description: Rescans the LUNs on the bus(es).
+old-location: storage\ioctl_scsi_rescan_bus.htm
+old-project: storage
+ms.assetid: d2b1ec10-3d59-469f-a92e-e28a6c2aef92
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_scsi_rescan_bus, IOCTL_SCSI_RESCAN_BUS control code [Storage Devices], IOCTL_SCSI_RESCAN_BUS, ntddscsi/IOCTL_SCSI_RESCAN_BUS, k307_36067418-9daa-4fed-a8a6-98fe65ca7fe2.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddscsi.h
+req.include-header: Ntddscsi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddscsi.h
+apiname:
+-	IOCTL_SCSI_RESCAN_BUS
+product: Windows
+targetos: Windows
+req.typenames: MP_STORAGE_DIAGNOSTIC_TARGET_TYPE, *PMP_STORAGE_DIAGNOSTIC_TARGET_TYPE
 ---
 
 # IOCTL_SCSI_RESCAN_BUS IOCTL

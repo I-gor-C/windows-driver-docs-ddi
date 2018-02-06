@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddstor.IOCTL_STORAGE_DEVICE_POWER_CAP
-title : IOCTL_STORAGE_DEVICE_POWER_CAP
-author : windows-driver-content
-description : A driver can use IOCTL_STORAGE_DEVICE_POWER_CAP to specify a maximum operational power consumption level for a storage device.
-old-location : storage\ioctl_storage_device_power_cap.htm
-old-project : storage
-ms.assetid : 88DEC1F2-F0E7-4E95-9A46-D9E8EF72B1BB
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_storage_device_power_cap, IOCTL_STORAGE_DEVICE_POWER_CAP control code [Storage Devices], IOCTL_STORAGE_DEVICE_POWER_CAP, ntddstor/IOCTL_STORAGE_DEVICE_POWER_CAP
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddstor.h
-req.include-header : Ntddstor.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STORAGE_ZONE_CONDITION, *PSTORAGE_ZONE_CONDITION
+UID: NI:ntddstor.IOCTL_STORAGE_DEVICE_POWER_CAP
+title: IOCTL_STORAGE_DEVICE_POWER_CAP
+author: windows-driver-content
+description: A driver can use IOCTL_STORAGE_DEVICE_POWER_CAP to specify a maximum operational power consumption level for a storage device.
+old-location: storage\ioctl_storage_device_power_cap.htm
+old-project: storage
+ms.assetid: 88DEC1F2-F0E7-4E95-9A46-D9E8EF72B1BB
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_storage_device_power_cap, IOCTL_STORAGE_DEVICE_POWER_CAP control code [Storage Devices], IOCTL_STORAGE_DEVICE_POWER_CAP, ntddstor/IOCTL_STORAGE_DEVICE_POWER_CAP
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddstor.h
+req.include-header: Ntddstor.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddstor.h
+apiname:
+-	IOCTL_STORAGE_DEVICE_POWER_CAP
+product: Windows
+targetos: Windows
+req.typenames: STORAGE_ZONE_CONDITION, *PSTORAGE_ZONE_CONDITION
 ---
 
 # IOCTL_STORAGE_DEVICE_POWER_CAP IOCTL

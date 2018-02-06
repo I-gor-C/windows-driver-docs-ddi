@@ -1,41 +1,46 @@
 ---
-UID : NS:dxva._DXVA_PicResample
-title : "_DXVA_PicResample"
-author : windows-driver-content
-description : The DXVA_PicResample structure is sent by the host decoder to the accelerator to control the resampling process. This process is invoked when the bDXVA_Func variable is equal to 4.
-old-location : display\dxva_picresample.htm
-old-project : display
-ms.assetid : 29b26400-9b27-4bff-9c7e-d612d250da30
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxva_picresample, *LPDXVA_PicResample, _DXVA_PicResample, DXVA_PicResample structure [Display Devices], dxvaref_523256d7-10ef-4750-a065-bd4bb02c1fbe.xml, dxva/DXVA_PicResample, DXVA_PicResample, dxva/LPDXVA_PicResample, LPDXVA_PicResample structure pointer [Display Devices], LPDXVA_PicResample
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : dxva.h
-req.include-header : Dxva.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXVA_PicResample, *LPDXVA_PicResample
+UID: NS:dxva._DXVA_PicResample
+title: "_DXVA_PicResample"
+author: windows-driver-content
+description: The DXVA_PicResample structure is sent by the host decoder to the accelerator to control the resampling process. This process is invoked when the bDXVA_Func variable is equal to 4.
+old-location: display\dxva_picresample.htm
+old-project: display
+ms.assetid: 29b26400-9b27-4bff-9c7e-d612d250da30
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxva_picresample, *LPDXVA_PicResample, _DXVA_PicResample, DXVA_PicResample structure [Display Devices], dxvaref_523256d7-10ef-4750-a065-bd4bb02c1fbe.xml, dxva/DXVA_PicResample, DXVA_PicResample, dxva/LPDXVA_PicResample, LPDXVA_PicResample structure pointer [Display Devices], LPDXVA_PicResample
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: dxva.h
+req.include-header: Dxva.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	dxva.h
+apiname:
+-	DXVA_PicResample
+product: Windows
+targetos: Windows
+req.typenames: DXVA_PicResample, *LPDXVA_PicResample
 ---
 
 # _DXVA_PicResample structure

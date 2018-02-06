@@ -1,42 +1,47 @@
 ---
-UID : NS:wdm._CM_PARTIAL_RESOURCE_LIST
-title : "_CM_PARTIAL_RESOURCE_LIST"
-author : windows-driver-content
-description : The CM_PARTIAL_RESOURCE_LIST structure specifies a set of system hardware resources, of various types, assigned to a device. This structure is contained within a CM_FULL_RESOURCE_DESCRIPTOR structure.
-old-location : kernel\cm_partial_resource_list.htm
-old-project : kernel
-ms.assetid : f16b26f5-1f32-4c2e-83ec-0a0f79a4be85
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/CM_PARTIAL_RESOURCE_LIST, _CM_PARTIAL_RESOURCE_LIST, PCM_PARTIAL_RESOURCE_LIST, CM_PARTIAL_RESOURCE_LIST structure [Kernel-Mode Driver Architecture], wdm/PCM_PARTIAL_RESOURCE_LIST, *PCM_PARTIAL_RESOURCE_LIST, kstruct_a_26d7ed25-e580-41e2-ae9d-5e06eb263e3d.xml, CM_PARTIAL_RESOURCE_LIST, kernel.cm_partial_resource_list, PCM_PARTIAL_RESOURCE_LIST structure pointer [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : CM_PARTIAL_RESOURCE_LIST, *PCM_PARTIAL_RESOURCE_LIST
-req.product : Windows 10 or later.
+UID: NS:wdm._CM_PARTIAL_RESOURCE_LIST
+title: "_CM_PARTIAL_RESOURCE_LIST"
+author: windows-driver-content
+description: The CM_PARTIAL_RESOURCE_LIST structure specifies a set of system hardware resources, of various types, assigned to a device. This structure is contained within a CM_FULL_RESOURCE_DESCRIPTOR structure.
+old-location: kernel\cm_partial_resource_list.htm
+old-project: kernel
+ms.assetid: f16b26f5-1f32-4c2e-83ec-0a0f79a4be85
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/CM_PARTIAL_RESOURCE_LIST, _CM_PARTIAL_RESOURCE_LIST, PCM_PARTIAL_RESOURCE_LIST, CM_PARTIAL_RESOURCE_LIST structure [Kernel-Mode Driver Architecture], wdm/PCM_PARTIAL_RESOURCE_LIST, *PCM_PARTIAL_RESOURCE_LIST, kstruct_a_26d7ed25-e580-41e2-ae9d-5e06eb263e3d.xml, CM_PARTIAL_RESOURCE_LIST, kernel.cm_partial_resource_list, PCM_PARTIAL_RESOURCE_LIST structure pointer [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	CM_PARTIAL_RESOURCE_LIST
+product: Windows
+targetos: Windows
+req.typenames: CM_PARTIAL_RESOURCE_LIST, *PCM_PARTIAL_RESOURCE_LIST
+req.product: Windows 10 or later.
 ---
 
 # _CM_PARTIAL_RESOURCE_LIST structure

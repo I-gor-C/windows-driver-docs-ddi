@@ -1,42 +1,47 @@
 ---
-UID : NF:video.VideoPortDoDma
-title : VideoPortDoDma function
-author : windows-driver-content
-description : The VideoPortDoDma function is obsolete in Windows 2000 and later. VideoPortDoDma causes the miniport driver's HwVidStartDma function to be called.
-old-location : display\videoportdodma.htm
-old-project : display
-ms.assetid : a827df55-ff88-439a-8d56-fba8212105a6
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : VideoPortDoDma, VideoPortDoDma function [Display Devices], VideoPort_Functions_febc78ee-355f-4689-9da9-f67f829d8a32.xml, display.videoportdodma, video/VideoPortDoDma
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows 2000 and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Videoprt.lib
-req.dll : Videoprt.sys
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_PORT_SERVICES
-req.product : Windows 10 or later.
+UID: NF:video.VideoPortDoDma
+title: VideoPortDoDma function
+author: windows-driver-content
+description: The VideoPortDoDma function is obsolete in Windows 2000 and later. VideoPortDoDma causes the miniport driver's HwVidStartDma function to be called.
+old-location: display\videoportdodma.htm
+old-project: display
+ms.assetid: a827df55-ff88-439a-8d56-fba8212105a6
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: VideoPortDoDma, VideoPortDoDma function [Display Devices], VideoPort_Functions_febc78ee-355f-4689-9da9-f67f829d8a32.xml, display.videoportdodma, video/VideoPortDoDma
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows 2000 and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Videoprt.lib
+req.dll: Videoprt.sys
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Videoprt.sys
+apiname:
+-	VideoPortDoDma
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_PORT_SERVICES
+req.product: Windows 10 or later.
 ---
 
 

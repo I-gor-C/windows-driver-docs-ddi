@@ -1,41 +1,46 @@
 ---
-UID : NC:nfccx.EVT_NFC_CX_WRITE_NCI_PACKET
-title : EVT_NFC_CX_WRITE_NCI_PACKET
-author : windows-driver-content
-description : Called by the NFC CX to send a write packet to the client driver.
-old-location : nfpdrivers\evtnfccxwritencipacket.htm
-old-project : nfpdrivers
-ms.assetid : B734439A-E345-44CC-8FD0-8E38A718A773
-ms.author : windowsdriverdev
-ms.date : 12/18/2017
-ms.keywords : nfpdrivers.evtnfccxwritencipacket, EvtNfcCxWriteNciPacket callback function [Near-Field Proximity Drivers], EvtNfcCxWriteNciPacket, EVT_NFC_CX_WRITE_NCI_PACKET, EVT_NFC_CX_WRITE_NCI_PACKET, nfccx/EvtNfcCxWriteNciPacket
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : nfccx.h
-req.include-header : Ncidef.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : None supported
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Requires same
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NPI_REGISTRATION_INSTANCE
+UID: NC:nfccx.EVT_NFC_CX_WRITE_NCI_PACKET
+title: EVT_NFC_CX_WRITE_NCI_PACKET
+author: windows-driver-content
+description: Called by the NFC CX to send a write packet to the client driver.
+old-location: nfpdrivers\evtnfccxwritencipacket.htm
+old-project: nfpdrivers
+ms.assetid: B734439A-E345-44CC-8FD0-8E38A718A773
+ms.author: windowsdriverdev
+ms.date: 12/18/2017
+ms.keywords: nfpdrivers.evtnfccxwritencipacket, EvtNfcCxWriteNciPacket callback function [Near-Field Proximity Drivers], EvtNfcCxWriteNciPacket, EVT_NFC_CX_WRITE_NCI_PACKET, EVT_NFC_CX_WRITE_NCI_PACKET, nfccx/EvtNfcCxWriteNciPacket
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: nfccx.h
+req.include-header: Ncidef.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: None supported
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Requires same
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	nfccx.h
+apiname:
+-	EvtNfcCxWriteNciPacket
+product: Windows
+targetos: Windows
+req.typenames: NPI_REGISTRATION_INSTANCE
 ---
 
 

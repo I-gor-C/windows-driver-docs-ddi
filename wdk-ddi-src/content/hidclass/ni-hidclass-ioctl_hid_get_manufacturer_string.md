@@ -1,41 +1,46 @@
 ---
-UID : NI:hidclass.IOCTL_HID_GET_MANUFACTURER_STRING
-title : IOCTL_HID_GET_MANUFACTURER_STRING
-author : windows-driver-content
-description : The IOCTL_HID_GET_MANUFACTURER_STRING request obtains a top-level collection's embedded string that identifies the manufacturer of the device.
-old-location : hid\ioctl_hid_get_manufacturer_string.htm
-old-project : hid
-ms.assetid : 1a402deb-132c-4cda-a019-e044318e1910
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : hid.ioctl_hid_get_manufacturer_string, IOCTL_HID_GET_MANUFACTURER_STRING control code [Human Input Devices], IOCTL_HID_GET_MANUFACTURER_STRING, hidclass/IOCTL_HID_GET_MANUFACTURER_STRING, hidioreq_05724f70-c708-4f9a-ba51-fa2edabf56ed.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : hidclass.h
-req.include-header : Hidclass.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HDAUDIO_STREAM_FORMAT, *PHDAUDIO_STREAM_FORMAT
+UID: NI:hidclass.IOCTL_HID_GET_MANUFACTURER_STRING
+title: IOCTL_HID_GET_MANUFACTURER_STRING
+author: windows-driver-content
+description: The IOCTL_HID_GET_MANUFACTURER_STRING request obtains a top-level collection's embedded string that identifies the manufacturer of the device.
+old-location: hid\ioctl_hid_get_manufacturer_string.htm
+old-project: hid
+ms.assetid: 1a402deb-132c-4cda-a019-e044318e1910
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: hid.ioctl_hid_get_manufacturer_string, IOCTL_HID_GET_MANUFACTURER_STRING control code [Human Input Devices], IOCTL_HID_GET_MANUFACTURER_STRING, hidclass/IOCTL_HID_GET_MANUFACTURER_STRING, hidioreq_05724f70-c708-4f9a-ba51-fa2edabf56ed.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: hidclass.h
+req.include-header: Hidclass.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hidclass.h
+apiname:
+-	IOCTL_HID_GET_MANUFACTURER_STRING
+product: Windows
+targetos: Windows
+req.typenames: HDAUDIO_STREAM_FORMAT, *PHDAUDIO_STREAM_FORMAT
 ---
 
 # IOCTL_HID_GET_MANUFACTURER_STRING IOCTL

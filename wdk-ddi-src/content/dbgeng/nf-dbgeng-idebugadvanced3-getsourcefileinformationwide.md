@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugAdvanced3.GetSourceFileInformationWide
-title : IDebugAdvanced3::GetSourceFileInformationWide method
-author : windows-driver-content
-description : The GetSourceFileInformationWide method returns specified information about a source file.
-old-location : debugger\getsourcefileinformationwide.htm
-old-project : debugger
-ms.assetid : 1b7b26be-b7be-4dc7-9863-413f7293707c
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : debugger.getsourcefileinformationwide, IDebugAdvanced3, GetSourceFileInformationWide method [Windows Debugging], IDebugAdvanced3 interface, IDebugAdvanced3::GetSourceFileInformationWide, dbgeng/IDebugAdvanced3::GetSourceFileInformationWide, GetSourceFileInformationWide, IDebugAdvanced3 interface [Windows Debugging], GetSourceFileInformationWide method, GetSourceFileInformationWide method [Windows Debugging]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugAdvanced3.GetSourceFileInformationWide
+title: IDebugAdvanced3::GetSourceFileInformationWide method
+author: windows-driver-content
+description: The GetSourceFileInformationWide method returns specified information about a source file.
+old-location: debugger\getsourcefileinformationwide.htm
+old-project: debugger
+ms.assetid: 1b7b26be-b7be-4dc7-9863-413f7293707c
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: debugger.getsourcefileinformationwide, IDebugAdvanced3, GetSourceFileInformationWide method [Windows Debugging], IDebugAdvanced3 interface, IDebugAdvanced3::GetSourceFileInformationWide, dbgeng/IDebugAdvanced3::GetSourceFileInformationWide, GetSourceFileInformationWide, IDebugAdvanced3 interface [Windows Debugging], GetSourceFileInformationWide method, GetSourceFileInformationWide method [Windows Debugging]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugAdvanced3.GetSourceFileInformationWide
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

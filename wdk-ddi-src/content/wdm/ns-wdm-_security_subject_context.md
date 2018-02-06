@@ -1,42 +1,47 @@
 ---
-UID : NS:wdm._SECURITY_SUBJECT_CONTEXT
-title : "_SECURITY_SUBJECT_CONTEXT"
-author : windows-driver-content
-description : The SECURITY_SUBJECT_CONTEXT structure is used to capture subject security context for access validation and auditing.
-old-location : ifsk\security_subject_context.htm
-old-project : ifsk
-ms.assetid : c9879df5-38e9-4a9f-8196-8485e85b2933
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : securitystructures_e91a762f-82dc-4319-a479-8de15bce2bfd.xml, PSECURITY_SUBJECT_CONTEXT, *PSECURITY_SUBJECT_CONTEXT, _SECURITY_SUBJECT_CONTEXT, ifsk.security_subject_context, PSECURITY_SUBJECT_CONTEXT structure pointer [Installable File System Drivers], SECURITY_SUBJECT_CONTEXT, wdm/SECURITY_SUBJECT_CONTEXT, wdm/PSECURITY_SUBJECT_CONTEXT, SECURITY_SUBJECT_CONTEXT structure [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : Wdm.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SECURITY_SUBJECT_CONTEXT, *PSECURITY_SUBJECT_CONTEXT
-req.product : Windows 10 or later.
+UID: NS:wdm._SECURITY_SUBJECT_CONTEXT
+title: "_SECURITY_SUBJECT_CONTEXT"
+author: windows-driver-content
+description: The SECURITY_SUBJECT_CONTEXT structure is used to capture subject security context for access validation and auditing.
+old-location: ifsk\security_subject_context.htm
+old-project: ifsk
+ms.assetid: c9879df5-38e9-4a9f-8196-8485e85b2933
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: securitystructures_e91a762f-82dc-4319-a479-8de15bce2bfd.xml, PSECURITY_SUBJECT_CONTEXT, *PSECURITY_SUBJECT_CONTEXT, _SECURITY_SUBJECT_CONTEXT, ifsk.security_subject_context, PSECURITY_SUBJECT_CONTEXT structure pointer [Installable File System Drivers], SECURITY_SUBJECT_CONTEXT, wdm/SECURITY_SUBJECT_CONTEXT, wdm/PSECURITY_SUBJECT_CONTEXT, SECURITY_SUBJECT_CONTEXT structure [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: Wdm.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdm.h
+apiname:
+-	SECURITY_SUBJECT_CONTEXT
+product: Windows
+targetos: Windows
+req.typenames: SECURITY_SUBJECT_CONTEXT, *PSECURITY_SUBJECT_CONTEXT
+req.product: Windows 10 or later.
 ---
 
 # _SECURITY_SUBJECT_CONTEXT structure

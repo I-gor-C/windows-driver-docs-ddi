@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugSystemObjects4.GetCurrentSystemServerNameWide
-title : IDebugSystemObjects4::GetCurrentSystemServerNameWide method
-author : windows-driver-content
-description : Gets the server name for the current process.
-old-location : debugger\idebugsystemobjects4_getcurrentsystemservernamewide.htm
-old-project : debugger
-ms.assetid : 44BAB9BF-76E6-42C2-B8DD-EB1A960C429C
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : GetCurrentSystemServerNameWide method [Windows Debugging], IDebugSystemObjects4 interface, IDebugSystemObjects4::GetCurrentSystemServerNameWide, GetCurrentSystemServerNameWide method [Windows Debugging], IDebugSystemObjects4 interface [Windows Debugging], GetCurrentSystemServerNameWide method, GetCurrentSystemServerNameWide, dbgeng/IDebugSystemObjects4::GetCurrentSystemServerNameWide, debugger.idebugsystemobjects4_getcurrentsystemservernamewide, IDebugSystemObjects4
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSystemObjects4.GetCurrentSystemServerNameWide
+title: IDebugSystemObjects4::GetCurrentSystemServerNameWide method
+author: windows-driver-content
+description: Gets the server name for the current process.
+old-location: debugger\idebugsystemobjects4_getcurrentsystemservernamewide.htm
+old-project: debugger
+ms.assetid: 44BAB9BF-76E6-42C2-B8DD-EB1A960C429C
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: GetCurrentSystemServerNameWide method [Windows Debugging], IDebugSystemObjects4 interface, IDebugSystemObjects4::GetCurrentSystemServerNameWide, GetCurrentSystemServerNameWide method [Windows Debugging], IDebugSystemObjects4 interface [Windows Debugging], GetCurrentSystemServerNameWide method, GetCurrentSystemServerNameWide, dbgeng/IDebugSystemObjects4::GetCurrentSystemServerNameWide, debugger.idebugsystemobjects4_getcurrentsystemservernamewide, IDebugSystemObjects4
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Dbgeng.h
+apiname:
+-	IDebugSystemObjects4.GetCurrentSystemServerNameWide
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:hbapiwmi._GetPortAttributesByWWN_OUT
-title : "_GetPortAttributesByWWN_OUT"
-author : windows-driver-content
-description : The GetPortAttributesByWWN_OUT structure is used to report the output parameter data of the GetPortAttributesByWWN WMI method to the WMI client.
-old-location : storage\getportattributesbywwn_out.htm
-old-project : storage
-ms.assetid : 9a4d04de-2c44-4f13-ac6f-32e2fe879e4e
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : PGetPortAttributesByWWN_OUT structure pointer [Storage Devices], storage.getportattributesbywwn_out, GetPortAttributesByWWN_OUT structure [Storage Devices], _GetPortAttributesByWWN_OUT, GetPortAttributesByWWN_OUT, hbapiwmi/PGetPortAttributesByWWN_OUT, structs-Fibre_bf13c322-2b55-4113-8e04-5cacfecbea8e.xml, hbapiwmi/GetPortAttributesByWWN_OUT, PGetPortAttributesByWWN_OUT, *PGetPortAttributesByWWN_OUT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : hbapiwmi.h
-req.include-header : Hbapiwmi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : GetPortAttributesByWWN_OUT, *PGetPortAttributesByWWN_OUT
+UID: NS:hbapiwmi._GetPortAttributesByWWN_OUT
+title: "_GetPortAttributesByWWN_OUT"
+author: windows-driver-content
+description: The GetPortAttributesByWWN_OUT structure is used to report the output parameter data of the GetPortAttributesByWWN WMI method to the WMI client.
+old-location: storage\getportattributesbywwn_out.htm
+old-project: storage
+ms.assetid: 9a4d04de-2c44-4f13-ac6f-32e2fe879e4e
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: PGetPortAttributesByWWN_OUT structure pointer [Storage Devices], storage.getportattributesbywwn_out, GetPortAttributesByWWN_OUT structure [Storage Devices], _GetPortAttributesByWWN_OUT, GetPortAttributesByWWN_OUT, hbapiwmi/PGetPortAttributesByWWN_OUT, structs-Fibre_bf13c322-2b55-4113-8e04-5cacfecbea8e.xml, hbapiwmi/GetPortAttributesByWWN_OUT, PGetPortAttributesByWWN_OUT, *PGetPortAttributesByWWN_OUT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: hbapiwmi.h
+req.include-header: Hbapiwmi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hbapiwmi.h
+apiname:
+-	GetPortAttributesByWWN_OUT
+product: Windows
+targetos: Windows
+req.typenames: GetPortAttributesByWWN_OUT, *PGetPortAttributesByWWN_OUT
 ---
 
 # _GetPortAttributesByWWN_OUT structure

@@ -1,41 +1,46 @@
 ---
-UID : NS:lamp.LAMP_CAPABILITIES_WHITE
-title : LAMP_CAPABILITIES_WHITE
-author : windows-driver-content
-description : This structure is the I/O parameter type of IOCTL_LAMP_{GET|SET}_INTENSITY_WHITE.
-old-location : stream\lamp_capabilities_white.htm
-old-project : stream
-ms.assetid : F407B953-8B03-4053-A5F4-3E96E9F9645E
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : lamp/LAMP_CAPABILITIES_WHITE, stream.lamp_capabilities_white, LAMP_CAPABILITIES_WHITE, LAMP_CAPABILITIES_WHITE structure [Streaming Media Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : lamp.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : LAMP_CAPABILITIES_WHITE
+UID: NS:lamp.LAMP_CAPABILITIES_WHITE
+title: LAMP_CAPABILITIES_WHITE
+author: windows-driver-content
+description: This structure is the I/O parameter type of IOCTL_LAMP_{GET|SET}_INTENSITY_WHITE.
+old-location: stream\lamp_capabilities_white.htm
+old-project: stream
+ms.assetid: F407B953-8B03-4053-A5F4-3E96E9F9645E
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: lamp/LAMP_CAPABILITIES_WHITE, stream.lamp_capabilities_white, LAMP_CAPABILITIES_WHITE, LAMP_CAPABILITIES_WHITE structure [Streaming Media Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: lamp.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	lamp.h
+apiname:
+-	LAMP_CAPABILITIES_WHITE
+product: Windows
+targetos: Windows
+req.typenames: LAMP_CAPABILITIES_WHITE
 ---
 
 # LAMP_CAPABILITIES_WHITE structure

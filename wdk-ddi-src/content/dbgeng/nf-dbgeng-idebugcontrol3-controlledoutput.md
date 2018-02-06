@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugControl3.ControlledOutput
-title : IDebugControl3::ControlledOutput method
-author : windows-driver-content
-description : The ControlledOutput method formats a string and sends the result to output callbacks that were registered with some of the engine's clients.
-old-location : debugger\controlledoutput.htm
-old-project : debugger
-ms.assetid : d1a4aba3-9567-4d8e-980c-f6a85f54870e
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugControl::ControlledOutput, dbgeng/IDebugControl3::ControlledOutput, IDebugControl2::ControlledOutput, ControlledOutput method [Windows Debugging], ControlledOutput method [Windows Debugging], IDebugControl3 interface, IDebugControl interface [Windows Debugging], ControlledOutput method, IDebugControl2 interface [Windows Debugging], ControlledOutput method, IDebugControl3 interface [Windows Debugging], ControlledOutput method, IDebugControl3::ControlledOutput, dbgeng/IDebugControl2::ControlledOutput, IDebugControl3, ControlledOutput, IDebugControl_b35fb81f-3425-4a39-8c80-b6e8a161ba71.xml, debugger.controlledoutput, ControlledOutput method [Windows Debugging], IDebugControl interface, dbgeng/IDebugControl::ControlledOutput, ControlledOutput method [Windows Debugging], IDebugControl2 interface
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl3.ControlledOutput
+title: IDebugControl3::ControlledOutput method
+author: windows-driver-content
+description: The ControlledOutput method formats a string and sends the result to output callbacks that were registered with some of the engine's clients.
+old-location: debugger\controlledoutput.htm
+old-project: debugger
+ms.assetid: d1a4aba3-9567-4d8e-980c-f6a85f54870e
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugControl::ControlledOutput, dbgeng/IDebugControl3::ControlledOutput, IDebugControl2::ControlledOutput, ControlledOutput method [Windows Debugging], ControlledOutput method [Windows Debugging], IDebugControl3 interface, IDebugControl interface [Windows Debugging], ControlledOutput method, IDebugControl2 interface [Windows Debugging], ControlledOutput method, IDebugControl3 interface [Windows Debugging], ControlledOutput method, IDebugControl3::ControlledOutput, dbgeng/IDebugControl2::ControlledOutput, IDebugControl3, ControlledOutput, IDebugControl_b35fb81f-3425-4a39-8c80-b6e8a161ba71.xml, debugger.controlledoutput, ControlledOutput method [Windows Debugging], IDebugControl interface, dbgeng/IDebugControl::ControlledOutput, ControlledOutput method [Windows Debugging], IDebugControl2 interface
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Dbgeng.h
+apiname:
+-	IDebugControl.ControlledOutput
+-	IDebugControl2.ControlledOutput
+-	IDebugControl3.ControlledOutput
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

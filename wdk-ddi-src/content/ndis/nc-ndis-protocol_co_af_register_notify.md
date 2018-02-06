@@ -1,41 +1,46 @@
 ---
-UID : NC:ndis.PROTOCOL_CO_AF_REGISTER_NOTIFY
-title : PROTOCOL_CO_AF_REGISTER_NOTIFY
-author : windows-driver-content
-description : The ProtocolCoAfRegisterNotify function is used by connection-oriented NDIS clients.
-old-location : netvista\protocolcoafregisternotify.htm
-old-project : netvista
-ms.assetid : 272d99da-ef08-4ebd-90e7-74e99410b3f5
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.protocolcoafregisternotify, ProtocolCoAfRegisterNotify callback function [Network Drivers Starting with Windows Vista], ProtocolCoAfRegisterNotify, PROTOCOL_CO_AF_REGISTER_NOTIFY, PROTOCOL_CO_AF_REGISTER_NOTIFY, ndis/ProtocolCoAfRegisterNotify, condis_protocol_ref_aa4ed4ae-7fa9-4f92-9103-824fbe719739.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see    ProtocolCoAfRegisterNotify   (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    ProtocolCoAfRegisterNotify   (NDIS 5.1)) in Windows XP.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
+UID: NC:ndis.PROTOCOL_CO_AF_REGISTER_NOTIFY
+title: PROTOCOL_CO_AF_REGISTER_NOTIFY
+author: windows-driver-content
+description: The ProtocolCoAfRegisterNotify function is used by connection-oriented NDIS clients.
+old-location: netvista\protocolcoafregisternotify.htm
+old-project: netvista
+ms.assetid: 272d99da-ef08-4ebd-90e7-74e99410b3f5
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.protocolcoafregisternotify, ProtocolCoAfRegisterNotify callback function [Network Drivers Starting with Windows Vista], ProtocolCoAfRegisterNotify, PROTOCOL_CO_AF_REGISTER_NOTIFY, PROTOCOL_CO_AF_REGISTER_NOTIFY, ndis/ProtocolCoAfRegisterNotify, condis_protocol_ref_aa4ed4ae-7fa9-4f92-9103-824fbe719739.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    ProtocolCoAfRegisterNotify   (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    ProtocolCoAfRegisterNotify   (NDIS 5.1)) in Windows XP.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ndis.h
+apiname:
+-	ProtocolCoAfRegisterNotify
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 

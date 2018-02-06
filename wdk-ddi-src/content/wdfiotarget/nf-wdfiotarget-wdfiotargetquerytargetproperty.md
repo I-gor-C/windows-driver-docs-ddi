@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfiotarget.WdfIoTargetQueryTargetProperty
-title : WdfIoTargetQueryTargetProperty function
-author : windows-driver-content
-description : The WdfIoTargetQueryTargetProperty method retrieves a specified device property for a specified I/O target.
-old-location : wdf\wdfiotargetquerytargetproperty.htm
-old-project : wdf
-ms.assetid : 00987914-9fe2-4245-b463-ef362e31679d
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdfiotarget/WdfIoTargetQueryTargetProperty, PFN_WDFIOTARGETQUERYTARGETPROPERTY, DFIOTargetRef_33739a99-4af2-4e90-92e5-b75e785f1c2c.xml, WdfIoTargetQueryTargetProperty, kmdf.wdfiotargetquerytargetproperty, wdf.wdfiotargetquerytargetproperty, WdfIoTargetQueryTargetProperty method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfiotarget.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDF_IO_TARGET_STATE, WDF_IO_TARGET_STATE"
-req.product : Windows 10 or later.
+UID: NF:wdfiotarget.WdfIoTargetQueryTargetProperty
+title: WdfIoTargetQueryTargetProperty function
+author: windows-driver-content
+description: The WdfIoTargetQueryTargetProperty method retrieves a specified device property for a specified I/O target.
+old-location: wdf\wdfiotargetquerytargetproperty.htm
+old-project: wdf
+ms.assetid: 00987914-9fe2-4245-b463-ef362e31679d
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdfiotarget/WdfIoTargetQueryTargetProperty, PFN_WDFIOTARGETQUERYTARGETPROPERTY, DFIOTargetRef_33739a99-4af2-4e90-92e5-b75e785f1c2c.xml, WdfIoTargetQueryTargetProperty, kmdf.wdfiotargetquerytargetproperty, wdf.wdfiotargetquerytargetproperty, WdfIoTargetQueryTargetProperty method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfiotarget.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfIoTargetQueryTargetProperty
+product: Windows
+targetos: Windows
+req.typenames: "*PWDF_IO_TARGET_STATE, WDF_IO_TARGET_STATE"
+req.product: Windows 10 or later.
 ---
 
 

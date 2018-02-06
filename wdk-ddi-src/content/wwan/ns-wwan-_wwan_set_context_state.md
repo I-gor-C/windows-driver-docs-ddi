@@ -1,42 +1,47 @@
 ---
-UID : NS:wwan._WWAN_SET_CONTEXT_STATE
-title : "_WWAN_SET_CONTEXT_STATE"
-author : windows-driver-content
-description : The WWAN_SET_CONTEXT_STATE structure represents the command to set the Packet Data Protocol (PDP) context state of the MB device.
-old-location : netvista\wwan_set_context_state.htm
-old-project : netvista
-ms.assetid : f1ed31af-97a7-472e-b834-577470950335
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : wwan/PWWAN_SET_CONTEXT_STATE, WWAN_SET_CONTEXT_STATE structure [Network Drivers Starting with Windows Vista], PWWAN_SET_CONTEXT_STATE, WwanRef_a4c14223-1c16-4f87-8820-2a45f04bb62d.xml, _WWAN_SET_CONTEXT_STATE, PWWAN_SET_CONTEXT_STATE structure pointer [Network Drivers Starting with Windows Vista], WWAN_SET_CONTEXT_STATE, *PWWAN_SET_CONTEXT_STATE, netvista.wwan_set_context_state, wwan/WWAN_SET_CONTEXT_STATE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wwan.h
-req.include-header : Wwan.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 8 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWWAN_SET_CONTEXT_STATE, WWAN_SET_CONTEXT_STATE"
-req.product : Windows 10 or later.
+UID: NS:wwan._WWAN_SET_CONTEXT_STATE
+title: "_WWAN_SET_CONTEXT_STATE"
+author: windows-driver-content
+description: The WWAN_SET_CONTEXT_STATE structure represents the command to set the Packet Data Protocol (PDP) context state of the MB device.
+old-location: netvista\wwan_set_context_state.htm
+old-project: netvista
+ms.assetid: f1ed31af-97a7-472e-b834-577470950335
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: wwan/PWWAN_SET_CONTEXT_STATE, WWAN_SET_CONTEXT_STATE structure [Network Drivers Starting with Windows Vista], PWWAN_SET_CONTEXT_STATE, WwanRef_a4c14223-1c16-4f87-8820-2a45f04bb62d.xml, _WWAN_SET_CONTEXT_STATE, PWWAN_SET_CONTEXT_STATE structure pointer [Network Drivers Starting with Windows Vista], WWAN_SET_CONTEXT_STATE, *PWWAN_SET_CONTEXT_STATE, netvista.wwan_set_context_state, wwan/WWAN_SET_CONTEXT_STATE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wwan.h
+req.include-header: Wwan.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 8 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wwan.h
+apiname:
+-	WWAN_SET_CONTEXT_STATE
+product: Windows
+targetos: Windows
+req.typenames: "*PWWAN_SET_CONTEXT_STATE, WWAN_SET_CONTEXT_STATE"
+req.product: Windows 10 or later.
 ---
 
 # _WWAN_SET_CONTEXT_STATE structure

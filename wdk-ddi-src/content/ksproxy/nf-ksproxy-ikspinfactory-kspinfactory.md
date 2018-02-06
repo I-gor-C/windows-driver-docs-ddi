@@ -1,41 +1,46 @@
 ---
-UID : NF:ksproxy.IKsPinFactory.KsPinFactory
-title : IKsPinFactory::KsPinFactory method
-author : windows-driver-content
-description : The KsPinFactory method retrieves the identifier of a pin factory.
-old-location : stream\ikspinfactory_kspinfactory.htm
-old-project : stream
-ms.assetid : 939ea77d-f194-4751-b02b-80d5e83c46f4
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KsPinFactory method [Streaming Media Devices], stream.ikspinfactory_kspinfactory, KsPinFactory method [Streaming Media Devices], IKsPinFactory interface, KsPinFactory, ksproxy/IKsPinFactory::KsPinFactory, ksproxy_80504e51-334d-4dd8-a6ce-73de9b3b3729.xml, IKsPinFactory, IKsPinFactory::KsPinFactory, IKsPinFactory interface [Streaming Media Devices], KsPinFactory method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : ksproxy.h
-req.include-header : Ksproxy.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : ksproxy.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PIPE_STATE
+UID: NF:ksproxy.IKsPinFactory.KsPinFactory
+title: IKsPinFactory::KsPinFactory method
+author: windows-driver-content
+description: The KsPinFactory method retrieves the identifier of a pin factory.
+old-location: stream\ikspinfactory_kspinfactory.htm
+old-project: stream
+ms.assetid: 939ea77d-f194-4751-b02b-80d5e83c46f4
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KsPinFactory method [Streaming Media Devices], stream.ikspinfactory_kspinfactory, KsPinFactory method [Streaming Media Devices], IKsPinFactory interface, KsPinFactory, ksproxy/IKsPinFactory::KsPinFactory, ksproxy_80504e51-334d-4dd8-a6ce-73de9b3b3729.xml, IKsPinFactory, IKsPinFactory::KsPinFactory, IKsPinFactory interface [Streaming Media Devices], KsPinFactory method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: ksproxy.h
+req.include-header: Ksproxy.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: ksproxy.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	ksproxy.h
+apiname:
+-	IKsPinFactory.KsPinFactory
+product: Windows
+targetos: Windows
+req.typenames: PIPE_STATE
 ---
 
 

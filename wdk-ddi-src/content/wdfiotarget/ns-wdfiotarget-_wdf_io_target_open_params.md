@@ -1,42 +1,47 @@
 ---
-UID : NS:wdfiotarget._WDF_IO_TARGET_OPEN_PARAMS
-title : "_WDF_IO_TARGET_OPEN_PARAMS"
-author : windows-driver-content
-description : The WDF_IO_TARGET_OPEN_PARAMS structure contains parameters that the WdfIoTargetOpen method uses.
-old-location : wdf\wdf_io_target_open_params.htm
-old-project : wdf
-ms.assetid : 9539868c-127b-4781-9a73-b56fbfda3233
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : "*PWDF_IO_TARGET_OPEN_PARAMS, WDF_IO_TARGET_OPEN_PARAMS structure, PWDF_IO_TARGET_OPEN_PARAMS structure pointer, DFIOTargetRef_6363f7be-6768-4c90-88c4-88c5fdea0019.xml, wdfiotarget/WDF_IO_TARGET_OPEN_PARAMS, kmdf.wdf_io_target_open_params, wdfiotarget/PWDF_IO_TARGET_OPEN_PARAMS, _WDF_IO_TARGET_OPEN_PARAMS, PWDF_IO_TARGET_OPEN_PARAMS, WDF_IO_TARGET_OPEN_PARAMS, wdf.wdf_io_target_open_params"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdfiotarget.h
-req.include-header : Wdf.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_IO_TARGET_OPEN_PARAMS, *PWDF_IO_TARGET_OPEN_PARAMS
-req.product : Windows 10 or later.
+UID: NS:wdfiotarget._WDF_IO_TARGET_OPEN_PARAMS
+title: "_WDF_IO_TARGET_OPEN_PARAMS"
+author: windows-driver-content
+description: The WDF_IO_TARGET_OPEN_PARAMS structure contains parameters that the WdfIoTargetOpen method uses.
+old-location: wdf\wdf_io_target_open_params.htm
+old-project: wdf
+ms.assetid: 9539868c-127b-4781-9a73-b56fbfda3233
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: "*PWDF_IO_TARGET_OPEN_PARAMS, WDF_IO_TARGET_OPEN_PARAMS structure, PWDF_IO_TARGET_OPEN_PARAMS structure pointer, DFIOTargetRef_6363f7be-6768-4c90-88c4-88c5fdea0019.xml, wdfiotarget/WDF_IO_TARGET_OPEN_PARAMS, kmdf.wdf_io_target_open_params, wdfiotarget/PWDF_IO_TARGET_OPEN_PARAMS, _WDF_IO_TARGET_OPEN_PARAMS, PWDF_IO_TARGET_OPEN_PARAMS, WDF_IO_TARGET_OPEN_PARAMS, wdf.wdf_io_target_open_params"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdfiotarget.h
+req.include-header: Wdf.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfiotarget.h
+apiname:
+-	WDF_IO_TARGET_OPEN_PARAMS
+product: Windows
+targetos: Windows
+req.typenames: WDF_IO_TARGET_OPEN_PARAMS, *PWDF_IO_TARGET_OPEN_PARAMS
+req.product: Windows 10 or later.
 ---
 
 # _WDF_IO_TARGET_OPEN_PARAMS structure

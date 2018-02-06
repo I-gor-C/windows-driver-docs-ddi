@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.PoRegisterDeviceForIdleDetection
-title : PoRegisterDeviceForIdleDetection function
-author : windows-driver-content
-description : The PoRegisterDeviceForIdleDetection routine enables or cancels idle detection and sets idle time-out values for a device.
-old-location : kernel\poregisterdeviceforidledetection.htm
-old-project : kernel
-ms.assetid : f786fa36-1faa-4e12-aec1-872b44c01a85
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.poregisterdeviceforidledetection, PoRegisterDeviceForIdleDetection routine [Kernel-Mode Driver Architecture], PoRegisterDeviceForIdleDetection, portn_be0ccb17-9465-4f61-a8ed-fa945f5340d6.xml, wdm/PoRegisterDeviceForIdleDetection
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.PoRegisterDeviceForIdleDetection
+title: PoRegisterDeviceForIdleDetection function
+author: windows-driver-content
+description: The PoRegisterDeviceForIdleDetection routine enables or cancels idle detection and sets idle time-out values for a device.
+old-location: kernel\poregisterdeviceforidledetection.htm
+old-project: kernel
+ms.assetid: f786fa36-1faa-4e12-aec1-872b44c01a85
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.poregisterdeviceforidledetection, PoRegisterDeviceForIdleDetection routine [Kernel-Mode Driver Architecture], PoRegisterDeviceForIdleDetection, portn_be0ccb17-9465-4f61-a8ed-fa945f5340d6.xml, wdm/PoRegisterDeviceForIdleDetection
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	PoRegisterDeviceForIdleDetection
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

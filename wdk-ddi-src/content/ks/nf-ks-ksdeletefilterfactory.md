@@ -1,41 +1,46 @@
 ---
-UID : NF:ks.KsDeleteFilterFactory
-title : KsDeleteFilterFactory macro
-author : windows-driver-content
-description : KsDeleteFilterFactory deletes a given filter factory.
-old-location : stream\ksdeletefilterfactory.htm
-old-project : stream
-ms.assetid : 4d946524-8ad2-45a0-91be-861b30b0c297
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.ksdeletefilterfactory, KsDeleteFilterFactory function [Streaming Media Devices], ks/KsDeleteFilterFactory, avfunc_60aeaa09-5563-47ea-a117-4b65a468b058.xml, KsDeleteFilterFactory
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : macro
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : ks.h
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsDeleteFilterFactory
+title: KsDeleteFilterFactory macro
+author: windows-driver-content
+description: KsDeleteFilterFactory deletes a given filter factory.
+old-location: stream\ksdeletefilterfactory.htm
+old-project: stream
+ms.assetid: 4d946524-8ad2-45a0-91be-861b30b0c297
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.ksdeletefilterfactory, KsDeleteFilterFactory function [Streaming Media Devices], ks/KsDeleteFilterFactory, avfunc_60aeaa09-5563-47ea-a117-4b65a468b058.xml, KsDeleteFilterFactory
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: macro
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: ks.h
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ks.h
+apiname:
+-	KsDeleteFilterFactory
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

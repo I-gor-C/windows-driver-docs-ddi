@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.RtlRemoveUnicodePrefix
-title : RtlRemoveUnicodePrefix function
-author : windows-driver-content
-description : The RtlRemoveUnicodePrefix routine removes an element from a prefix table.
-old-location : ifsk\rtlremoveunicodeprefix.htm
-old-project : ifsk
-ms.assetid : b2f996b1-0c1a-4ad5-a4c4-5d84ca94c5a1
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : RtlRemoveUnicodePrefix, rtlref_a6eb361a-f00b-4377-913c-8494c49d4064.xml, ifsk.rtlremoveunicodeprefix, RtlRemoveUnicodePrefix routine [Installable File System Drivers], ntifs/RtlRemoveUnicodePrefix
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Windows XP
-req.target-min-winversvr : Windows Server 2003
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "< DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.RtlRemoveUnicodePrefix
+title: RtlRemoveUnicodePrefix function
+author: windows-driver-content
+description: The RtlRemoveUnicodePrefix routine removes an element from a prefix table.
+old-location: ifsk\rtlremoveunicodeprefix.htm
+old-project: ifsk
+ms.assetid: b2f996b1-0c1a-4ad5-a4c4-5d84ca94c5a1
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: RtlRemoveUnicodePrefix, rtlref_a6eb361a-f00b-4377-913c-8494c49d4064.xml, ifsk.rtlremoveunicodeprefix, RtlRemoveUnicodePrefix routine [Installable File System Drivers], ntifs/RtlRemoveUnicodePrefix
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Windows XP
+req.target-min-winversvr: Windows Server 2003
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "< DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	RtlRemoveUnicodePrefix
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

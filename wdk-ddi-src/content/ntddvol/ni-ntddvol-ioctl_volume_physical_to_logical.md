@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddvol.IOCTL_VOLUME_PHYSICAL_TO_LOGICAL
-title : IOCTL_VOLUME_PHYSICAL_TO_LOGICAL
-author : windows-driver-content
-description : Returns the logical offset corresponding to a physical disk number and a physical offset.
-old-location : storage\ioctl_volume_physical_to_logical.htm
-old-project : storage
-ms.assetid : 3e127456-6387-4340-84c1-d613d8094f33
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_volume_physical_to_logical, IOCTL_VOLUME_PHYSICAL_TO_LOGICAL control code [Storage Devices], IOCTL_VOLUME_PHYSICAL_TO_LOGICAL, ntddvol/IOCTL_VOLUME_PHYSICAL_TO_LOGICAL, k307_7f4b8e45-1569-4d69-a33b-856b8587fe7b.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddvol.h
-req.include-header : Ntddvol.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows XP.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_WIN32K_CALLBACKS_PARAMS, *PVIDEO_WIN32K_CALLBACKS_PARAMS
+UID: NI:ntddvol.IOCTL_VOLUME_PHYSICAL_TO_LOGICAL
+title: IOCTL_VOLUME_PHYSICAL_TO_LOGICAL
+author: windows-driver-content
+description: Returns the logical offset corresponding to a physical disk number and a physical offset.
+old-location: storage\ioctl_volume_physical_to_logical.htm
+old-project: storage
+ms.assetid: 3e127456-6387-4340-84c1-d613d8094f33
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_volume_physical_to_logical, IOCTL_VOLUME_PHYSICAL_TO_LOGICAL control code [Storage Devices], IOCTL_VOLUME_PHYSICAL_TO_LOGICAL, ntddvol/IOCTL_VOLUME_PHYSICAL_TO_LOGICAL, k307_7f4b8e45-1569-4d69-a33b-856b8587fe7b.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddvol.h
+req.include-header: Ntddvol.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows XP.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddvol.h
+apiname:
+-	IOCTL_VOLUME_PHYSICAL_TO_LOGICAL
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_WIN32K_CALLBACKS_PARAMS, *PVIDEO_WIN32K_CALLBACKS_PARAMS
 ---
 
 # IOCTL_VOLUME_PHYSICAL_TO_LOGICAL IOCTL

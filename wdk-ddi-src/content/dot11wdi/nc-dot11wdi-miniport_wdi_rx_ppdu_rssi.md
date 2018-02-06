@@ -1,41 +1,46 @@
 ---
-UID : NC:dot11wdi.MINIPORT_WDI_RX_PPDU_RSSI
-title : MINIPORT_WDI_RX_PPDU_RSSI
-author : windows-driver-content
-description : The MiniportWdiRxPpduRssi handler function returns the absolute value of RSSI (in dB) for the PPDU. The RxMgr may request the RSSI only once per data indication using the PNET_BUFFER_LIST obtained from MiniportWdiRxGetMpdus.
-old-location : netvista\miniportwdirxppdurssi.htm
-old-project : netvista
-ms.assetid : 34C34C42-E5E1-44F6-AC81-ADC77206DED0
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.miniportwdirxppdurssi, MiniportWdiRxPpduRssi callback function [Network Drivers Starting with Windows Vista], MiniportWdiRxPpduRssi, MINIPORT_WDI_RX_PPDU_RSSI, MINIPORT_WDI_RX_PPDU_RSSI, dot11wdi/MiniportWdiRxPpduRssi
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : dot11wdi.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SYNTH_STATS, *PSYNTH_STATS
+UID: NC:dot11wdi.MINIPORT_WDI_RX_PPDU_RSSI
+title: MINIPORT_WDI_RX_PPDU_RSSI
+author: windows-driver-content
+description: The MiniportWdiRxPpduRssi handler function returns the absolute value of RSSI (in dB) for the PPDU. The RxMgr may request the RSSI only once per data indication using the PNET_BUFFER_LIST obtained from MiniportWdiRxGetMpdus.
+old-location: netvista\miniportwdirxppdurssi.htm
+old-project: netvista
+ms.assetid: 34C34C42-E5E1-44F6-AC81-ADC77206DED0
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.miniportwdirxppdurssi, MiniportWdiRxPpduRssi callback function [Network Drivers Starting with Windows Vista], MiniportWdiRxPpduRssi, MINIPORT_WDI_RX_PPDU_RSSI, MINIPORT_WDI_RX_PPDU_RSSI, dot11wdi/MiniportWdiRxPpduRssi
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: dot11wdi.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	dot11wdi.h
+apiname:
+-	MiniportWdiRxPpduRssi
+product: Windows
+targetos: Windows
+req.typenames: SYNTH_STATS, *PSYNTH_STATS
 ---
 
 

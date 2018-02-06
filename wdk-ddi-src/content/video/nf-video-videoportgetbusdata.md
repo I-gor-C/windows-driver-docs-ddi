@@ -1,42 +1,47 @@
 ---
-UID : NF:video.VideoPortGetBusData
-title : VideoPortGetBusData function
-author : windows-driver-content
-description : The VideoPortGetBusData function returns bus-type-specific configuration information.
-old-location : display\videoportgetbusdata.htm
-old-project : display
-ms.assetid : ebc5e74f-82ba-4c19-8dae-3ebe8c843fd2
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.videoportgetbusdata, VideoPortGetBusData, VideoPortGetBusData function [Display Devices], VideoPort_Functions_98b5cc14-84db-4611-a651-652eb434cae6.xml, video/VideoPortGetBusData
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows 2000 and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Videoprt.lib
-req.dll : Videoprt.sys
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_PORT_SERVICES
-req.product : Windows 10 or later.
+UID: NF:video.VideoPortGetBusData
+title: VideoPortGetBusData function
+author: windows-driver-content
+description: The VideoPortGetBusData function returns bus-type-specific configuration information.
+old-location: display\videoportgetbusdata.htm
+old-project: display
+ms.assetid: ebc5e74f-82ba-4c19-8dae-3ebe8c843fd2
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.videoportgetbusdata, VideoPortGetBusData, VideoPortGetBusData function [Display Devices], VideoPort_Functions_98b5cc14-84db-4611-a651-652eb434cae6.xml, video/VideoPortGetBusData
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows 2000 and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Videoprt.lib
+req.dll: Videoprt.sys
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Videoprt.sys
+apiname:
+-	VideoPortGetBusData
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_PORT_SERVICES
+req.product: Windows 10 or later.
 ---
 
 

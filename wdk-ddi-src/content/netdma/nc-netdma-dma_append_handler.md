@@ -1,41 +1,46 @@
 ---
-UID : NC:netdma.DMA_APPEND_HANDLER
-title : DMA_APPEND_HANDLER
-author : windows-driver-content
-description : The ProviderAppendDma function appends a linked list of DMA descriptors to the last descriptor on a DMA channel.
-old-location : netvista\providerappenddma.htm
-old-project : netvista
-ms.assetid : 51de8ddf-cbfc-4e49-b44a-207307a937e7
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.providerappenddma, ProviderAppendDma callback function [Network Drivers Starting with Windows Vista], ProviderAppendDma, DMA_APPEND_HANDLER, DMA_APPEND_HANDLER, netdma/ProviderAppendDma, netdma_ref_ce5895a2-ac0c-4b98-98be-9f95edf091d3.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : netdma.h
-req.include-header : Netdma.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported for NetDMA 2.0 drivers in Windows Server 2008. Supported for NetDMA 1.1   drivers in Windows Server 2008. Supported for NetDMA 1.0 drivers in Windows Server 2008 and Windows   Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : MIRACAST_DRIVER_INTERFACE, *PMIRACAST_DRIVER_INTERFACE
+UID: NC:netdma.DMA_APPEND_HANDLER
+title: DMA_APPEND_HANDLER
+author: windows-driver-content
+description: The ProviderAppendDma function appends a linked list of DMA descriptors to the last descriptor on a DMA channel.
+old-location: netvista\providerappenddma.htm
+old-project: netvista
+ms.assetid: 51de8ddf-cbfc-4e49-b44a-207307a937e7
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.providerappenddma, ProviderAppendDma callback function [Network Drivers Starting with Windows Vista], ProviderAppendDma, DMA_APPEND_HANDLER, DMA_APPEND_HANDLER, netdma/ProviderAppendDma, netdma_ref_ce5895a2-ac0c-4b98-98be-9f95edf091d3.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: netdma.h
+req.include-header: Netdma.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported for NetDMA 2.0 drivers in Windows Server 2008. Supported for NetDMA 1.1   drivers in Windows Server 2008. Supported for NetDMA 1.0 drivers in Windows Server 2008 and Windows   Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	netdma.h
+apiname:
+-	ProviderAppendDma
+product: Windows
+targetos: Windows
+req.typenames: MIRACAST_DRIVER_INTERFACE, *PMIRACAST_DRIVER_INTERFACE
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NE:wdm._POWER_STATE_TYPE
-title : "_POWER_STATE_TYPE"
-author : windows-driver-content
-description : The POWER_STATE_TYPE enumeration type indicates that a power state value is a system power state or a device power state.
-old-location : kernel\power_state_type.htm
-old-project : kernel
-ms.assetid : d0e97474-4119-4359-a9f9-644c82df7fab
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : DevicePowerState, PPOWER_STATE_TYPE, wdm/PPOWER_STATE_TYPE, wdm/SystemPowerState, sysenum_bdfdaea1-ec64-4b74-96d0-95641797ebb4.xml, *PPOWER_STATE_TYPE, POWER_STATE_TYPE enumeration [Kernel-Mode Driver Architecture], _POWER_STATE_TYPE, wdm/DevicePowerState, wdm/POWER_STATE_TYPE, PPOWER_STATE_TYPE enumeration pointer [Kernel-Mode Driver Architecture], POWER_STATE_TYPE, SystemPowerState, kernel.power_state_type
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPOWER_STATE_TYPE, POWER_STATE_TYPE"
-req.product : Windows 10 or later.
+UID: NE:wdm._POWER_STATE_TYPE
+title: "_POWER_STATE_TYPE"
+author: windows-driver-content
+description: The POWER_STATE_TYPE enumeration type indicates that a power state value is a system power state or a device power state.
+old-location: kernel\power_state_type.htm
+old-project: kernel
+ms.assetid: d0e97474-4119-4359-a9f9-644c82df7fab
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: DevicePowerState, PPOWER_STATE_TYPE, wdm/PPOWER_STATE_TYPE, wdm/SystemPowerState, sysenum_bdfdaea1-ec64-4b74-96d0-95641797ebb4.xml, *PPOWER_STATE_TYPE, POWER_STATE_TYPE enumeration [Kernel-Mode Driver Architecture], _POWER_STATE_TYPE, wdm/DevicePowerState, wdm/POWER_STATE_TYPE, PPOWER_STATE_TYPE enumeration pointer [Kernel-Mode Driver Architecture], POWER_STATE_TYPE, SystemPowerState, kernel.power_state_type
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	POWER_STATE_TYPE
+product: Windows
+targetos: Windows
+req.typenames: "*PPOWER_STATE_TYPE, POWER_STATE_TYPE"
+req.product: Windows 10 or later.
 ---
 
 # _POWER_STATE_TYPE Enumeration
@@ -53,30 +58,30 @@ typedef enum _POWER_STATE_TYPE {
 ## Constants
 
 <table>
-
-<tr>
-<td>DevicePowerState</td>
-<td>Indicates a <a href="..\wudfddi\ne-wudfddi-_device_power_state.md">DEVICE_POWER_STATE</a> value.</td>
-</tr>
-
-<tr>
-<td>SystemPowerState</td>
-<td>Indicates a <a href="..\wdm\ne-wdm-_system_power_state.md">SYSTEM_POWER_STATE</a> value.</td>
-</tr>
+            
+                <tr>
+                    <td>DevicePowerState</td>
+                    <td>Indicates a <a href="..\wudfddi\ne-wudfddi-_device_power_state.md">DEVICE_POWER_STATE</a> value.</td>
+                </tr>
+            
+                <tr>
+                    <td>SystemPowerState</td>
+                    <td>Indicates a <a href="..\wdm\ne-wdm-_system_power_state.md">SYSTEM_POWER_STATE</a> value.</td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-The <b>POWER_STATE_TYPE</b> enumeration type is used in conjunction with a value of type <a href="..\wdm\ns-wdm-_power_state.md">POWER_STATE</a> to indicate that the power state value is a system power state value or a device power state value. For an example, see <a href="..\wdm\nf-wdm-posetpowerstate.md">PoSetPowerState</a>.
+        The <b>POWER_STATE_TYPE</b> enumeration type is used in conjunction with a value of type <a href="..\wdm\ns-wdm-_power_state.md">POWER_STATE</a> to indicate that the power state value is a system power state value or a device power state value. For an example, see <a href="..\wdm\nf-wdm-posetpowerstate.md">PoSetPowerState</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\wdm\nf-wdm-posetpowerstate.md">PoSetPowerState</a>
+        <a href="..\wdm\nf-wdm-posetpowerstate.md">PoSetPowerState</a>
 
 <a href="..\wdm\ne-wdm-_system_power_state.md">SYSTEM_POWER_STATE</a>
 

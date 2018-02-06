@@ -1,41 +1,46 @@
 ---
-UID : NS:nfcsedev._SECURE_ELEMENT_ROUTING_TABLE_ENTRY
-title : "_SECURE_ELEMENT_ROUTING_TABLE_ENTRY"
-author : windows-driver-content
-description : SECURE_ELEMENT_ROUTING_TABLE_ENTRY is a member of SECURE_ELEMENT_ROUTING_TABLE.
-old-location : nfpdrivers\_secure_element_routing_table_entry.htm
-old-project : nfpdrivers
-ms.assetid : 199FEA6A-A57F-4B13-832A-65DB7729455F
-ms.author : windowsdriverdev
-ms.date : 12/18/2017
-ms.keywords : nfcsedev/P_SECURE_ELEMENT_ROUTING_TABLE_ENTRY, P_SECURE_ELEMENT_ROUTING_TABLE_ENTRY, SECURE_ELEMENT_ROUTING_TABLE_ENTRY, P_SECURE_ELEMENT_ROUTING_TABLE_ENTRY structure pointer [Near-Field Proximity Drivers], nfcsedev/_SECURE_ELEMENT_ROUTING_TABLE_ENTRY, _SECURE_ELEMENT_ROUTING_TABLE_ENTRY, nfpdrivers._secure_element_routing_table_entry, *PSECURE_ELEMENT_ROUTING_TABLE_ENTRY, SECURE_ELEMENT_ROUTING_TABLE_ENTRY structure [Near-Field Proximity Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : nfcsedev.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SECURE_ELEMENT_ROUTING_TABLE_ENTRY, *PSECURE_ELEMENT_ROUTING_TABLE_ENTRY
+UID: NS:nfcsedev._SECURE_ELEMENT_ROUTING_TABLE_ENTRY
+title: "_SECURE_ELEMENT_ROUTING_TABLE_ENTRY"
+author: windows-driver-content
+description: SECURE_ELEMENT_ROUTING_TABLE_ENTRY is a member of SECURE_ELEMENT_ROUTING_TABLE.
+old-location: nfpdrivers\_secure_element_routing_table_entry.htm
+old-project: nfpdrivers
+ms.assetid: 199FEA6A-A57F-4B13-832A-65DB7729455F
+ms.author: windowsdriverdev
+ms.date: 12/18/2017
+ms.keywords: nfcsedev/P_SECURE_ELEMENT_ROUTING_TABLE_ENTRY, P_SECURE_ELEMENT_ROUTING_TABLE_ENTRY, SECURE_ELEMENT_ROUTING_TABLE_ENTRY, P_SECURE_ELEMENT_ROUTING_TABLE_ENTRY structure pointer [Near-Field Proximity Drivers], nfcsedev/_SECURE_ELEMENT_ROUTING_TABLE_ENTRY, _SECURE_ELEMENT_ROUTING_TABLE_ENTRY, nfpdrivers._secure_element_routing_table_entry, *PSECURE_ELEMENT_ROUTING_TABLE_ENTRY, SECURE_ELEMENT_ROUTING_TABLE_ENTRY structure [Near-Field Proximity Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: nfcsedev.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	nfcsedev.h
+apiname:
+-	SECURE_ELEMENT_ROUTING_TABLE_ENTRY
+product: Windows
+targetos: Windows
+req.typenames: SECURE_ELEMENT_ROUTING_TABLE_ENTRY, *PSECURE_ELEMENT_ROUTING_TABLE_ENTRY
 ---
 
 # _SECURE_ELEMENT_ROUTING_TABLE_ENTRY structure

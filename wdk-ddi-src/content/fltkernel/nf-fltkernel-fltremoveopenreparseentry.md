@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltRemoveOpenReparseEntry
-title : FltRemoveOpenReparseEntry function
-author : windows-driver-content
-description : This routine removes an OPEN_REPARSE_LIST_ENTRY structure (added by FltAddOpenReparseEntry) from a create operation.
-old-location : ifsk\fltremoveopenreparseentry.htm
-old-project : ifsk
-ms.assetid : FD8C3A32-E578-47E9-9B2A-E1809D62F7B8
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : fltkernel/FltAddOpenReparseEntry, ifsk.fltremoveopenreparseentry, FltRemoveOpenReparseEntry, FltAddOpenReparseEntry, FltAddOpenReparseEntry routine [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10, version 1607
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "_IRQL_requires_max_(APC_LEVEL)"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltRemoveOpenReparseEntry
+title: FltRemoveOpenReparseEntry function
+author: windows-driver-content
+description: This routine removes an OPEN_REPARSE_LIST_ENTRY structure (added by FltAddOpenReparseEntry) from a create operation.
+old-location: ifsk\fltremoveopenreparseentry.htm
+old-project: ifsk
+ms.assetid: FD8C3A32-E578-47E9-9B2A-E1809D62F7B8
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: fltkernel/FltAddOpenReparseEntry, ifsk.fltremoveopenreparseentry, FltRemoveOpenReparseEntry, FltAddOpenReparseEntry, FltAddOpenReparseEntry routine [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10, version 1607
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "_IRQL_requires_max_(APC_LEVEL)"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	fltKernel.h
+apiname:
+-	FltAddOpenReparseEntry
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

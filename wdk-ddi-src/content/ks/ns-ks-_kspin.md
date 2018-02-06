@@ -1,41 +1,46 @@
 ---
-UID : NS:ks._KSPIN
-title : "_KSPIN"
-author : windows-driver-content
-description : The KSPIN structure describes an instantiated pin.
-old-location : stream\kspin.htm
-old-project : stream
-ms.assetid : 0d290872-0944-4599-9deb-9a4f7b2df0e5
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : "_KSPIN, PKSPIN structure pointer [Streaming Media Devices], ks/PKSPIN, avstruct_9453feff-ba40-4f54-bdb6-07f4f31548aa.xml, PKSPIN, stream.kspin, ks/KSPIN, *PKSPIN, KSPIN, KSPIN structure [Streaming Media Devices]"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and in Microsoft DirectX 8.0 and later versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKSPIN, KSPIN"
+UID: NS:ks._KSPIN
+title: "_KSPIN"
+author: windows-driver-content
+description: The KSPIN structure describes an instantiated pin.
+old-location: stream\kspin.htm
+old-project: stream
+ms.assetid: 0d290872-0944-4599-9deb-9a4f7b2df0e5
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: "_KSPIN, PKSPIN structure pointer [Streaming Media Devices], ks/PKSPIN, avstruct_9453feff-ba40-4f54-bdb6-07f4f31548aa.xml, PKSPIN, stream.kspin, ks/KSPIN, *PKSPIN, KSPIN, KSPIN structure [Streaming Media Devices]"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and in Microsoft DirectX 8.0 and later versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	KSPIN
+product: Windows
+targetos: Windows
+req.typenames: "*PKSPIN, KSPIN"
 ---
 
 # _KSPIN structure

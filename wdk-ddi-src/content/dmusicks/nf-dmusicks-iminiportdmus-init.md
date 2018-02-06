@@ -1,41 +1,46 @@
 ---
-UID : NF:dmusicks.IMiniportDMus.Init
-title : IMiniportDMus::Init method
-author : windows-driver-content
-description : The Init method initializes the DMus miniport object.
-old-location : audio\iminiportdmus_init.htm
-old-project : audio
-ms.assetid : 08111f70-d0cc-4abc-8bcd-86683af3eb32
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : audio.iminiportdmus_init, audmp-routines_016b2aed-13f3-4d9a-86c0-fbdbcbf55341.xml, IMiniportDMus, Init, IMiniportDMus::Init, IMiniportDMus interface [Audio Devices], Init method, Init method [Audio Devices], IMiniportDMus interface, Init method [Audio Devices], dmusicks/IMiniportDMus::Init
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dmusicks.h
-req.include-header : Dmusicks.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dmusicks.h
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DMUS_STREAM_TYPE
+UID: NF:dmusicks.IMiniportDMus.Init
+title: IMiniportDMus::Init method
+author: windows-driver-content
+description: The Init method initializes the DMus miniport object.
+old-location: audio\iminiportdmus_init.htm
+old-project: audio
+ms.assetid: 08111f70-d0cc-4abc-8bcd-86683af3eb32
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: audio.iminiportdmus_init, audmp-routines_016b2aed-13f3-4d9a-86c0-fbdbcbf55341.xml, IMiniportDMus, Init, IMiniportDMus::Init, IMiniportDMus interface [Audio Devices], Init method, Init method [Audio Devices], IMiniportDMus interface, Init method [Audio Devices], dmusicks/IMiniportDMus::Init
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dmusicks.h
+req.include-header: Dmusicks.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dmusicks.h
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dmusicks.h
+apiname:
+-	IMiniportDMus.Init
+product: Windows
+targetos: Windows
+req.typenames: DMUS_STREAM_TYPE
 ---
 
 

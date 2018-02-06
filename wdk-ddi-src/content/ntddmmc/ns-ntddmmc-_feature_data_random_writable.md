@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddmmc._FEATURE_DATA_RANDOM_WRITABLE
-title : "_FEATURE_DATA_RANDOM_WRITABLE"
-author : windows-driver-content
-description : The FEATURE_DATA_RANDOM_WRITABLE structure holds information about the Random Writable feature.
-old-location : storage\feature_data_random_writable.htm
-old-project : storage
-ms.assetid : b2637f5e-15b0-44ae-8cd0-98712e735998
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : structs-CD-ROM_fa825a20-a941-4af3-aabd-1b9f7e4e3ee6.xml, ntddmmc/FEATURE_DATA_RANDOM_WRITABLE, FEATURE_DATA_RANDOM_WRITABLE, ntddmmc/PFEATURE_DATA_RANDOM_WRITABLE, FEATURE_DATA_RANDOM_WRITABLE structure [Storage Devices], PFEATURE_DATA_RANDOM_WRITABLE structure pointer [Storage Devices], PFEATURE_DATA_RANDOM_WRITABLE, *PFEATURE_DATA_RANDOM_WRITABLE, storage.feature_data_random_writable, _FEATURE_DATA_RANDOM_WRITABLE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddmmc.h
-req.include-header : Ntddcdrm.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PFEATURE_DATA_RANDOM_WRITABLE, FEATURE_DATA_RANDOM_WRITABLE"
+UID: NS:ntddmmc._FEATURE_DATA_RANDOM_WRITABLE
+title: "_FEATURE_DATA_RANDOM_WRITABLE"
+author: windows-driver-content
+description: The FEATURE_DATA_RANDOM_WRITABLE structure holds information about the Random Writable feature.
+old-location: storage\feature_data_random_writable.htm
+old-project: storage
+ms.assetid: b2637f5e-15b0-44ae-8cd0-98712e735998
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: structs-CD-ROM_fa825a20-a941-4af3-aabd-1b9f7e4e3ee6.xml, ntddmmc/FEATURE_DATA_RANDOM_WRITABLE, FEATURE_DATA_RANDOM_WRITABLE, ntddmmc/PFEATURE_DATA_RANDOM_WRITABLE, FEATURE_DATA_RANDOM_WRITABLE structure [Storage Devices], PFEATURE_DATA_RANDOM_WRITABLE structure pointer [Storage Devices], PFEATURE_DATA_RANDOM_WRITABLE, *PFEATURE_DATA_RANDOM_WRITABLE, storage.feature_data_random_writable, _FEATURE_DATA_RANDOM_WRITABLE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddmmc.h
+req.include-header: Ntddcdrm.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddmmc.h
+apiname:
+-	FEATURE_DATA_RANDOM_WRITABLE
+product: Windows
+targetos: Windows
+req.typenames: "*PFEATURE_DATA_RANDOM_WRITABLE, FEATURE_DATA_RANDOM_WRITABLE"
 ---
 
 # _FEATURE_DATA_RANDOM_WRITABLE structure

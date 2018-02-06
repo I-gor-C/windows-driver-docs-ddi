@@ -1,41 +1,46 @@
 ---
-UID : NC:mrx.PMRX_CHANGE_BUFFERING_STATE_CALLDOWN
-title : PMRX_CHANGE_BUFFERING_STATE_CALLDOWN
-author : windows-driver-content
-description : TheMRxCompleteBufferingStateChangeRequest routine is called by RDBSS to notify the network mini-redirector that a buffering state change request has been completed.
-old-location : ifsk\mrxcompletebufferingstatechangerequest.htm
-old-project : ifsk
-ms.assetid : 1484dcca-e29c-495d-917c-1debefc91409
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.mrxcompletebufferingstatechangerequest, MRxCompleteBufferingStateChangeRequest routine [Installable File System Drivers], MRxCompleteBufferingStateChangeRequest, PMRX_CHANGE_BUFFERING_STATE_CALLDOWN, PMRX_CHANGE_BUFFERING_STATE_CALLDOWN, mrx/MRxCompleteBufferingStateChangeRequest, mrxref_5ac31893-1998-454a-a0c9-07d32e60d8db.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : mrx.h
-req.include-header : Mrx.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SetDSMCounters_IN, *PSetDSMCounters_IN
+UID: NC:mrx.PMRX_CHANGE_BUFFERING_STATE_CALLDOWN
+title: PMRX_CHANGE_BUFFERING_STATE_CALLDOWN
+author: windows-driver-content
+description: TheMRxCompleteBufferingStateChangeRequest routine is called by RDBSS to notify the network mini-redirector that a buffering state change request has been completed.
+old-location: ifsk\mrxcompletebufferingstatechangerequest.htm
+old-project: ifsk
+ms.assetid: 1484dcca-e29c-495d-917c-1debefc91409
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.mrxcompletebufferingstatechangerequest, MRxCompleteBufferingStateChangeRequest routine [Installable File System Drivers], MRxCompleteBufferingStateChangeRequest, PMRX_CHANGE_BUFFERING_STATE_CALLDOWN, PMRX_CHANGE_BUFFERING_STATE_CALLDOWN, mrx/MRxCompleteBufferingStateChangeRequest, mrxref_5ac31893-1998-454a-a0c9-07d32e60d8db.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: mrx.h
+req.include-header: Mrx.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	mrx.h
+apiname:
+-	MRxCompleteBufferingStateChangeRequest
+product: Windows
+targetos: Windows
+req.typenames: SetDSMCounters_IN, *PSetDSMCounters_IN
 ---
 
 

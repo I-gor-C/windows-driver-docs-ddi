@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsMergeAutomationTables
-title : KsMergeAutomationTables function
-author : windows-driver-content
-description : The KsMergeAutomationTables function merges two automation tables.
-old-location : stream\ksmergeautomationtables.htm
-old-project : stream
-ms.assetid : ef90f9da-3169-4b49-9ba2-2cab058e5d00
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ks/KsMergeAutomationTables, stream.ksmergeautomationtables, KsMergeAutomationTables, KsMergeAutomationTables function [Streaming Media Devices], avfunc_7e2146e2-0458-48ee-815a-8ea478187e07.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsMergeAutomationTables
+title: KsMergeAutomationTables function
+author: windows-driver-content
+description: The KsMergeAutomationTables function merges two automation tables.
+old-location: stream\ksmergeautomationtables.htm
+old-project: stream
+ms.assetid: ef90f9da-3169-4b49-9ba2-2cab058e5d00
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ks/KsMergeAutomationTables, stream.ksmergeautomationtables, KsMergeAutomationTables, KsMergeAutomationTables function [Streaming Media Devices], avfunc_7e2146e2-0458-48ee-815a-8ea478187e07.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsMergeAutomationTables
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

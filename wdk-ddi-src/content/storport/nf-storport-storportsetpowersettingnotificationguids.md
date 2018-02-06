@@ -1,42 +1,47 @@
 ---
-UID : NF:storport.StorPortSetPowerSettingNotificationGuids
-title : StorPortSetPowerSettingNotificationGuids function
-author : windows-driver-content
-description : The StorPortSetPowerSettingNotificationGuids routine enables a miniport to receive power setting notifications. The miniport registers an array of GUIDs which identify the power settings to receive power change notifications for.
-old-location : storage\storportsetpowersettingnotificationguids.htm
-old-project : storage
-ms.assetid : FB74E774-8CDE-4DE4-942E-10AF4BEFF63C
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storport/StorPortSetPowerSettingNotificationGuids, StorPortSetPowerSettingNotificationGuids routine [Storage Devices], storage.storportsetpowersettingnotificationguids, StorPortSetPowerSettingNotificationGuids, HIPM/DIPM Setting, Adaptive Setting
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : Any
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STOR_SPINLOCK
-req.product : Windows 10 or later.
+UID: NF:storport.StorPortSetPowerSettingNotificationGuids
+title: StorPortSetPowerSettingNotificationGuids function
+author: windows-driver-content
+description: The StorPortSetPowerSettingNotificationGuids routine enables a miniport to receive power setting notifications. The miniport registers an array of GUIDs which identify the power settings to receive power change notifications for.
+old-location: storage\storportsetpowersettingnotificationguids.htm
+old-project: storage
+ms.assetid: FB74E774-8CDE-4DE4-942E-10AF4BEFF63C
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storport/StorPortSetPowerSettingNotificationGuids, StorPortSetPowerSettingNotificationGuids routine [Storage Devices], storage.storportsetpowersettingnotificationguids, StorPortSetPowerSettingNotificationGuids, HIPM/DIPM Setting, Adaptive Setting
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: Any
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	storport.h
+apiname:
+-	StorPortSetPowerSettingNotificationGuids
+product: Windows
+targetos: Windows
+req.typenames: STOR_SPINLOCK
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.PoSetDeviceBusyEx
-title : PoSetDeviceBusyEx function
-author : windows-driver-content
-description : The PoSetDeviceBusyEx routine notifies the power manager that the device associated with the specified idle counter is busy.
-old-location : kernel\posetdevicebusyex.htm
-old-project : kernel
-ms.assetid : 3f4d01fe-84cb-424e-9107-e29c4e25d85c
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : PoSetDeviceBusyEx, wdm/PoSetDeviceBusyEx, portn_62143669-4381-4b4b-8d23-8b315d882c65.xml, PoSetDeviceBusyEx routine [Kernel-Mode Driver Architecture], kernel.posetdevicebusyex
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows Vista with SP1.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.PoSetDeviceBusyEx
+title: PoSetDeviceBusyEx function
+author: windows-driver-content
+description: The PoSetDeviceBusyEx routine notifies the power manager that the device associated with the specified idle counter is busy.
+old-location: kernel\posetdevicebusyex.htm
+old-project: kernel
+ms.assetid: 3f4d01fe-84cb-424e-9107-e29c4e25d85c
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: PoSetDeviceBusyEx, wdm/PoSetDeviceBusyEx, portn_62143669-4381-4b4b-8d23-8b315d882c65.xml, PoSetDeviceBusyEx routine [Kernel-Mode Driver Architecture], kernel.posetdevicebusyex
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows Vista with SP1.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	PoSetDeviceBusyEx
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

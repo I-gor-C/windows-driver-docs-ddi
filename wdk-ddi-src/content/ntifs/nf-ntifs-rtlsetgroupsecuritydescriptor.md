@@ -1,41 +1,47 @@
 ---
-UID : NF:ntifs.RtlSetGroupSecurityDescriptor
-title : RtlSetGroupSecurityDescriptor function
-author : windows-driver-content
-description : The RtlSetGroupSecurityDescriptor routine sets the primary group information of an absolute-format security descriptor. It replaces any primary group information that is already present in the security descriptor.
-old-location : ifsk\rtlsetgroupsecuritydescriptor.htm
-old-project : ifsk
-ms.assetid : f0473975-7ab6-46ba-bdb7-eb227e6bc258
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : RtlSetGroupSecurityDescriptor, ntifs/RtlSetGroupSecurityDescriptor, ifsk.rtlsetgroupsecuritydescriptor, rtlref_113e5ca7-5db3-4c93-a26f-c568e2164de9.xml, RtlSetGroupSecurityDescriptor routine [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : This routine is available on Microsoft Windows Server 2003 SP1 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe (kernel mode); Ntdll.dll (user mode)
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.RtlSetGroupSecurityDescriptor
+title: RtlSetGroupSecurityDescriptor function
+author: windows-driver-content
+description: The RtlSetGroupSecurityDescriptor routine sets the primary group information of an absolute-format security descriptor. It replaces any primary group information that is already present in the security descriptor.
+old-location: ifsk\rtlsetgroupsecuritydescriptor.htm
+old-project: ifsk
+ms.assetid: f0473975-7ab6-46ba-bdb7-eb227e6bc258
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: RtlSetGroupSecurityDescriptor, ntifs/RtlSetGroupSecurityDescriptor, ifsk.rtlsetgroupsecuritydescriptor, rtlref_113e5ca7-5db3-4c93-a26f-c568e2164de9.xml, RtlSetGroupSecurityDescriptor routine [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: This routine is available on Microsoft Windows Server 2003 SP1 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe (kernel mode); Ntdll.dll (user mode)
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+-	Ntdll.dll
+apiname:
+-	RtlSetGroupSecurityDescriptor
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:kbdmou._CONNECT_DATA
-title : "_CONNECT_DATA"
-author : windows-driver-content
-description : CONNECT_DATA specifies information that Kbdclass and Mouclass use to connect to a keyboard or mouse port.
-old-location : hid\connect_data__kbdclass_.htm
-old-project : hid
-ms.assetid : 8fdb5b1d-bbdb-4774-875a-7cdd047286f5
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : CONNECT_DATA structure [Human Input Devices], PCONNECT_DATA structure pointer [Human Input Devices], hid.connect_data__kbdclass_, CONNECT_DATA, kref_e50b6d57-99fa-41bd-979c-de2d83922af6.xml, kbdmou/CONNECT_DATA, kbdmou/PCONNECT_DATA, *PCONNECT_DATA, _CONNECT_DATA, PCONNECT_DATA
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : kbdmou.h
-req.include-header : Kbdmou.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PCONNECT_DATA, CONNECT_DATA"
+UID: NS:kbdmou._CONNECT_DATA
+title: "_CONNECT_DATA"
+author: windows-driver-content
+description: CONNECT_DATA specifies information that Kbdclass and Mouclass use to connect to a keyboard or mouse port.
+old-location: hid\connect_data__kbdclass_.htm
+old-project: hid
+ms.assetid: 8fdb5b1d-bbdb-4774-875a-7cdd047286f5
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: CONNECT_DATA structure [Human Input Devices], PCONNECT_DATA structure pointer [Human Input Devices], hid.connect_data__kbdclass_, CONNECT_DATA, kref_e50b6d57-99fa-41bd-979c-de2d83922af6.xml, kbdmou/CONNECT_DATA, kbdmou/PCONNECT_DATA, *PCONNECT_DATA, _CONNECT_DATA, PCONNECT_DATA
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: kbdmou.h
+req.include-header: Kbdmou.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	kbdmou.h
+apiname:
+-	CONNECT_DATA
+product: Windows
+targetos: Windows
+req.typenames: "*PCONNECT_DATA, CONNECT_DATA"
 ---
 
 # _CONNECT_DATA structure

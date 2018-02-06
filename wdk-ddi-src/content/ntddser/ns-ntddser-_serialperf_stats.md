@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddser._SERIALPERF_STATS
-title : "_SERIALPERF_STATS"
-author : windows-driver-content
-description : The SERIALPERF_STATS structure contains performance statistics for a serial port.
-old-location : serports\serialperf_stats.htm
-old-project : serports
-ms.assetid : 47CAAF39-40C6-4D7F-B8DA-5A60768E4CB0
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : PSERIALPERF_STATS structure pointer [Serial Ports], ntddser/PSERIALPERF_STATS, serports.serialperf_stats, _SERIALPERF_STATS, PSERIALPERF_STATS, SERIALPERF_STATS structure [Serial Ports], SERIALPERF_STATS, ntddser/SERIALPERF_STATS, *PSERIALPERF_STATS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddser.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSERIALPERF_STATS, SERIALPERF_STATS"
+UID: NS:ntddser._SERIALPERF_STATS
+title: "_SERIALPERF_STATS"
+author: windows-driver-content
+description: The SERIALPERF_STATS structure contains performance statistics for a serial port.
+old-location: serports\serialperf_stats.htm
+old-project: serports
+ms.assetid: 47CAAF39-40C6-4D7F-B8DA-5A60768E4CB0
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: PSERIALPERF_STATS structure pointer [Serial Ports], ntddser/PSERIALPERF_STATS, serports.serialperf_stats, _SERIALPERF_STATS, PSERIALPERF_STATS, SERIALPERF_STATS structure [Serial Ports], SERIALPERF_STATS, ntddser/SERIALPERF_STATS, *PSERIALPERF_STATS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddser.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddser.h
+apiname:
+-	SERIALPERF_STATS
+product: Windows
+targetos: Windows
+req.typenames: "*PSERIALPERF_STATS, SERIALPERF_STATS"
 ---
 
 # _SERIALPERF_STATS structure

@@ -1,42 +1,47 @@
 ---
-UID : NC:wdm.PCANCEL_ADAPTER_CHANNEL
-title : PCANCEL_ADAPTER_CHANNEL
-author : windows-driver-content
-description : The CancelAdapterChannel routine tries to cancel a pending request to allocate a DMA channel.
-old-location : kernel\canceladapterchannel.htm
-old-project : kernel
-ms.assetid : 3E510E2D-AC9B-4F00-B7FD-A67B1F3FEBA7
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.canceladapterchannel, CancelAdapterChannel, CancelAdapterChannel callback function [Kernel-Mode Driver Architecture], CancelAdapterChannel, PCANCEL_ADAPTER_CHANNEL, PCANCEL_ADAPTER_CHANNEL, wdm/CancelAdapterChannel
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
-req.product : Windows 10 or later.
+UID: NC:wdm.PCANCEL_ADAPTER_CHANNEL
+title: PCANCEL_ADAPTER_CHANNEL
+author: windows-driver-content
+description: The CancelAdapterChannel routine tries to cancel a pending request to allocate a DMA channel.
+old-location: kernel\canceladapterchannel.htm
+old-project: kernel
+ms.assetid: 3E510E2D-AC9B-4F00-B7FD-A67B1F3FEBA7
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.canceladapterchannel, CancelAdapterChannel, CancelAdapterChannel callback function [Kernel-Mode Driver Architecture], CancelAdapterChannel, PCANCEL_ADAPTER_CHANNEL, PCANCEL_ADAPTER_CHANNEL, wdm/CancelAdapterChannel
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Wdm.h
+apiname:
+-	CancelAdapterChannel
+product: Windows
+targetos: Windows
+req.typenames: WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+req.product: Windows 10 or later.
 ---
 
 

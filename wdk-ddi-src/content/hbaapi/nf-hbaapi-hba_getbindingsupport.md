@@ -1,41 +1,46 @@
 ---
-UID : NF:hbaapi.HBA_GetBindingSupport
-title : HBA_GetBindingSupport function
-author : windows-driver-content
-description : The HBA_GetBindingSupport routine retrieves the binding capabilities currently enabled for the specified port.
-old-location : storage\hba_getbindingsupport.htm
-old-project : storage
-ms.assetid : 60542ed9-fbb0-48a3-bc97-ce3db7b4ae10
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.hba_getbindingsupport, fibreHBA_rtns_98be4752-e595-4f33-b688-a373588c16f0.xml, HBA_GetBindingSupport, hbaapi/HBA_GetBindingSupport, HBA_GetBindingSupport routine [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : hbaapi.h
-req.include-header : Hbaapi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Hbaapi.lib
-req.dll : Hbaapi.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HBA_WWNTYPE
+UID: NF:hbaapi.HBA_GetBindingSupport
+title: HBA_GetBindingSupport function
+author: windows-driver-content
+description: The HBA_GetBindingSupport routine retrieves the binding capabilities currently enabled for the specified port.
+old-location: storage\hba_getbindingsupport.htm
+old-project: storage
+ms.assetid: 60542ed9-fbb0-48a3-bc97-ce3db7b4ae10
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.hba_getbindingsupport, fibreHBA_rtns_98be4752-e595-4f33-b688-a373588c16f0.xml, HBA_GetBindingSupport, hbaapi/HBA_GetBindingSupport, HBA_GetBindingSupport routine [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: hbaapi.h
+req.include-header: Hbaapi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Hbaapi.lib
+req.dll: Hbaapi.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Hbaapi.dll
+apiname:
+-	HBA_GetBindingSupport
+product: Windows
+targetos: Windows
+req.typenames: HBA_WWNTYPE
 ---
 
 

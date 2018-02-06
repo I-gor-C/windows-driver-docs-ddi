@@ -1,41 +1,46 @@
 ---
-UID : NS:ehstorioctl._LBA_FILTER_TABLE_ENTRY
-title : "_LBA_FILTER_TABLE_ENTRY"
-author : windows-driver-content
-description : The LBA_FILTER_TABLE_ENTRY structure contains an individual LBA range for the LBA_FILTER_TABLE sent in an IOCTL_EHSTOR_DRIVER_UPDATE_LBA_FILTER_TABLE request.
-old-location : storage\lba_filter_table_entry.htm
-old-project : storage
-ms.assetid : 092B54D7-FFEA-48BB-993E-14443BD0C7AA
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : PLBA_FILTER_TABLE_ENTRY structure pointer [Storage Devices], PLBA_FILTER_TABLE_ENTRY, LBA_FILTER_TABLE_ENTRY structure [Storage Devices], *PLBA_FILTER_TABLE_ENTRY, storage.lba_filter_table_entry, ehstorioctl/PLBA_FILTER_TABLE_ENTRY, LBA_FILTER_TABLE_ENTRY, _LBA_FILTER_TABLE_ENTRY, ehstorioctl/LBA_FILTER_TABLE_ENTRY
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ehstorioctl.h
-req.include-header : EhStorIoctl.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows 8
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : LBA_FILTER_TABLE_ENTRY, *PLBA_FILTER_TABLE_ENTRY
+UID: NS:ehstorioctl._LBA_FILTER_TABLE_ENTRY
+title: "_LBA_FILTER_TABLE_ENTRY"
+author: windows-driver-content
+description: The LBA_FILTER_TABLE_ENTRY structure contains an individual LBA range for the LBA_FILTER_TABLE sent in an IOCTL_EHSTOR_DRIVER_UPDATE_LBA_FILTER_TABLE request.
+old-location: storage\lba_filter_table_entry.htm
+old-project: storage
+ms.assetid: 092B54D7-FFEA-48BB-993E-14443BD0C7AA
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: PLBA_FILTER_TABLE_ENTRY structure pointer [Storage Devices], PLBA_FILTER_TABLE_ENTRY, LBA_FILTER_TABLE_ENTRY structure [Storage Devices], *PLBA_FILTER_TABLE_ENTRY, storage.lba_filter_table_entry, ehstorioctl/PLBA_FILTER_TABLE_ENTRY, LBA_FILTER_TABLE_ENTRY, _LBA_FILTER_TABLE_ENTRY, ehstorioctl/LBA_FILTER_TABLE_ENTRY
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ehstorioctl.h
+req.include-header: EhStorIoctl.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows 8
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	EhStorIoctl.h
+apiname:
+-	LBA_FILTER_TABLE_ENTRY
+product: Windows
+targetos: Windows
+req.typenames: LBA_FILTER_TABLE_ENTRY, *PLBA_FILTER_TABLE_ENTRY
 ---
 
 # _LBA_FILTER_TABLE_ENTRY structure

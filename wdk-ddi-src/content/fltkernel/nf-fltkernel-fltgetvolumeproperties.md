@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltGetVolumeProperties
-title : FltGetVolumeProperties function
-author : windows-driver-content
-description : The FltGetVolumeProperties routine returns volume property information for the given volume.
-old-location : ifsk\fltgetvolumeproperties.htm
-old-project : ifsk
-ms.assetid : 1e975626-fa47-456f-a2a9-48506c67cbe5
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltGetVolumeProperties, fltkernel/FltGetVolumeProperties, FltGetVolumeProperties routine [Installable File System Drivers], ifsk.fltgetvolumeproperties, FltApiRef_e_to_o_3afcdc71-3007-478e-8699-a1480ca118b8.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltGetVolumeProperties
+title: FltGetVolumeProperties function
+author: windows-driver-content
+description: The FltGetVolumeProperties routine returns volume property information for the given volume.
+old-location: ifsk\fltgetvolumeproperties.htm
+old-project: ifsk
+ms.assetid: 1e975626-fa47-456f-a2a9-48506c67cbe5
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltGetVolumeProperties, fltkernel/FltGetVolumeProperties, FltGetVolumeProperties routine [Installable File System Drivers], ifsk.fltgetvolumeproperties, FltApiRef_e_to_o_3afcdc71-3007-478e-8699-a1480ca118b8.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltGetVolumeProperties
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

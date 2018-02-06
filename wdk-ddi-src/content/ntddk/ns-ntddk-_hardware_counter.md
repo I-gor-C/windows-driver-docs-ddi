@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddk._HARDWARE_COUNTER
-title : "_HARDWARE_COUNTER"
-author : windows-driver-content
-description : The HARDWARE_COUNTER structure contains information about a hardware counter.
-old-location : kernel\hardware_counter.htm
-old-project : kernel
-ms.assetid : 15eeeb07-b71f-4868-8854-6a5034d3f8c6
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : HARDWARE_COUNTER, PHARDWARE_COUNTER structure pointer [Kernel-Mode Driver Architecture], _HARDWARE_COUNTER, ntddk/HARDWARE_COUNTER, kstruct_b_3e230097-13da-4e6b-bb89-baf3563c3570.xml, *PHARDWARE_COUNTER, PHARDWARE_COUNTER, ntddk/PHARDWARE_COUNTER, HARDWARE_COUNTER structure [Kernel-Mode Driver Architecture], kernel.hardware_counter
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in Windows 7 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HARDWARE_COUNTER, *PHARDWARE_COUNTER
+UID: NS:ntddk._HARDWARE_COUNTER
+title: "_HARDWARE_COUNTER"
+author: windows-driver-content
+description: The HARDWARE_COUNTER structure contains information about a hardware counter.
+old-location: kernel\hardware_counter.htm
+old-project: kernel
+ms.assetid: 15eeeb07-b71f-4868-8854-6a5034d3f8c6
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: HARDWARE_COUNTER, PHARDWARE_COUNTER structure pointer [Kernel-Mode Driver Architecture], _HARDWARE_COUNTER, ntddk/HARDWARE_COUNTER, kstruct_b_3e230097-13da-4e6b-bb89-baf3563c3570.xml, *PHARDWARE_COUNTER, PHARDWARE_COUNTER, ntddk/PHARDWARE_COUNTER, HARDWARE_COUNTER structure [Kernel-Mode Driver Architecture], kernel.hardware_counter
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in Windows 7 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddk.h
+apiname:
+-	HARDWARE_COUNTER
+product: Windows
+targetos: Windows
+req.typenames: HARDWARE_COUNTER, *PHARDWARE_COUNTER
 ---
 
 # _HARDWARE_COUNTER structure

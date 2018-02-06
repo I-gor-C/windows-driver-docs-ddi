@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_QUERYAUTHENTICATEDCHANNEL
-title : PFND3DDDI_QUERYAUTHENTICATEDCHANNEL
-author : windows-driver-content
-description : The QueryAuthenticatedChannel function queries an authenticated channel for capability and state information.
-old-location : display\queryauthenticatedchannel.htm
-old-project : display
-ms.assetid : 13b65b5a-9512-4d67-b629-479bdd74674e
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.queryauthenticatedchannel, QueryAuthenticatedChannel callback function [Display Devices], QueryAuthenticatedChannel, PFND3DDDI_QUERYAUTHENTICATEDCHANNEL, PFND3DDDI_QUERYAUTHENTICATEDCHANNEL, d3dumddi/QueryAuthenticatedChannel, UserModeDisplayDriver_Functions_4d4f5258-9b7c-42c8-b256-223b6b99d1f6.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : QueryAuthenticatedChannel is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_QUERYAUTHENTICATEDCHANNEL
+title: PFND3DDDI_QUERYAUTHENTICATEDCHANNEL
+author: windows-driver-content
+description: The QueryAuthenticatedChannel function queries an authenticated channel for capability and state information.
+old-location: display\queryauthenticatedchannel.htm
+old-project: display
+ms.assetid: 13b65b5a-9512-4d67-b629-479bdd74674e
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.queryauthenticatedchannel, QueryAuthenticatedChannel callback function [Display Devices], QueryAuthenticatedChannel, PFND3DDDI_QUERYAUTHENTICATEDCHANNEL, PFND3DDDI_QUERYAUTHENTICATEDCHANNEL, d3dumddi/QueryAuthenticatedChannel, UserModeDisplayDriver_Functions_4d4f5258-9b7c-42c8-b256-223b6b99d1f6.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: QueryAuthenticatedChannel is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	QueryAuthenticatedChannel
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NS:storport._MINIPORT_DUMP_POINTERS
-title : "_MINIPORT_DUMP_POINTERS"
-author : windows-driver-content
-description : A Storport miniport driver uses this structure to support the SCSI_REQUEST_BLOCK (SRB) function code SRB_FUNCTION_DUMP_POINTERS.
-old-location : storage\miniport_dump_pointers.htm
-old-project : storage
-ms.assetid : a61da8e7-6db0-4d89-bf68-8fa74c284720
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.miniport_dump_pointers, _MINIPORT_DUMP_POINTERS, storport/PMINIPORT_DUMP_POINTERS, structs-virtual_34ca963f-93fe-4e7d-8e02-02bde32cf2ef.xml, MINIPORT_DUMP_POINTERS structure [Storage Devices], MINIPORT_DUMP_POINTERS, PMINIPORT_DUMP_POINTERS, storport/MINIPORT_DUMP_POINTERS, *PMINIPORT_DUMP_POINTERS, PMINIPORT_DUMP_POINTERS structure pointer [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : MINIPORT_DUMP_POINTERS, *PMINIPORT_DUMP_POINTERS
-req.product : Windows 10 or later.
+UID: NS:storport._MINIPORT_DUMP_POINTERS
+title: "_MINIPORT_DUMP_POINTERS"
+author: windows-driver-content
+description: A Storport miniport driver uses this structure to support the SCSI_REQUEST_BLOCK (SRB) function code SRB_FUNCTION_DUMP_POINTERS.
+old-location: storage\miniport_dump_pointers.htm
+old-project: storage
+ms.assetid: a61da8e7-6db0-4d89-bf68-8fa74c284720
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.miniport_dump_pointers, _MINIPORT_DUMP_POINTERS, storport/PMINIPORT_DUMP_POINTERS, structs-virtual_34ca963f-93fe-4e7d-8e02-02bde32cf2ef.xml, MINIPORT_DUMP_POINTERS structure [Storage Devices], MINIPORT_DUMP_POINTERS, PMINIPORT_DUMP_POINTERS, storport/MINIPORT_DUMP_POINTERS, *PMINIPORT_DUMP_POINTERS, PMINIPORT_DUMP_POINTERS structure pointer [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	storport.h
+apiname:
+-	MINIPORT_DUMP_POINTERS
+product: Windows
+targetos: Windows
+req.typenames: MINIPORT_DUMP_POINTERS, *PMINIPORT_DUMP_POINTERS
+req.product: Windows 10 or later.
 ---
 
 # _MINIPORT_DUMP_POINTERS structure

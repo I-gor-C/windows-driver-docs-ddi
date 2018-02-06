@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.KeQueryTimeIncrement
-title : KeQueryTimeIncrement function
-author : windows-driver-content
-description : The KeQueryTimeIncrement routine returns the number of 100-nanosecond units that are added to the system time each time the interval clock interrupts.
-old-location : kernel\kequerytimeincrement.htm
-old-project : kernel
-ms.assetid : f8291e2b-a7a1-4a19-9137-fcd93e62bbaf
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : KeQueryTimeIncrement routine [Kernel-Mode Driver Architecture], wdm/KeQueryTimeIncrement, k105_dc7a4658-7d4b-4b60-a8c8-693c36d68b27.xml, KeQueryTimeIncrement, kernel.kequerytimeincrement
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.KeQueryTimeIncrement
+title: KeQueryTimeIncrement function
+author: windows-driver-content
+description: The KeQueryTimeIncrement routine returns the number of 100-nanosecond units that are added to the system time each time the interval clock interrupts.
+old-location: kernel\kequerytimeincrement.htm
+old-project: kernel
+ms.assetid: f8291e2b-a7a1-4a19-9137-fcd93e62bbaf
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: KeQueryTimeIncrement routine [Kernel-Mode Driver Architecture], wdm/KeQueryTimeIncrement, k105_dc7a4658-7d4b-4b60-a8c8-693c36d68b27.xml, KeQueryTimeIncrement, kernel.kequerytimeincrement
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	KeQueryTimeIncrement
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

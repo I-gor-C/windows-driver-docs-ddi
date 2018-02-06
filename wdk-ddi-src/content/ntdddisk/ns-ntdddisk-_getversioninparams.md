@@ -1,41 +1,46 @@
 ---
-UID : NS:ntdddisk._GETVERSIONINPARAMS
-title : "_GETVERSIONINPARAMS"
-author : windows-driver-content
-description : The GETVERSIONINPARAMS structure is used in conjunction with the SMART_GET_VERSION request to retrieve version information, a capabilities mask, and a bitmask for the indicated device.
-old-location : storage\getversioninparams.htm
-old-project : storage
-ms.assetid : dcbfa8d2-c2ea-43ae-9d77-ce95a430a514
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : ntdddisk/GETVERSIONINPARAMS, GETVERSIONINPARAMS structure [Storage Devices], ntdddisk/PGETVERSIONINPARAMS, ntdddisk/LPGETVERSIONINPARAMS, *LPGETVERSIONINPARAMS, *PGETVERSIONINPARAMS, PGETVERSIONINPARAMS structure pointer [Storage Devices], structs-IDE_5426037d-a75f-4b92-a935-e467d02ec8c7.xml, PGETVERSIONINPARAMS, storage.getversioninparams, _GETVERSIONINPARAMS, LPGETVERSIONINPARAMS, LPGETVERSIONINPARAMS structure pointer [Storage Devices], GETVERSIONINPARAMS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntdddisk.h
-req.include-header : Ntdddisk.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*LPGETVERSIONINPARAMS, *PGETVERSIONINPARAMS, GETVERSIONINPARAMS"
+UID: NS:ntdddisk._GETVERSIONINPARAMS
+title: "_GETVERSIONINPARAMS"
+author: windows-driver-content
+description: The GETVERSIONINPARAMS structure is used in conjunction with the SMART_GET_VERSION request to retrieve version information, a capabilities mask, and a bitmask for the indicated device.
+old-location: storage\getversioninparams.htm
+old-project: storage
+ms.assetid: dcbfa8d2-c2ea-43ae-9d77-ce95a430a514
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: ntdddisk/GETVERSIONINPARAMS, GETVERSIONINPARAMS structure [Storage Devices], ntdddisk/PGETVERSIONINPARAMS, ntdddisk/LPGETVERSIONINPARAMS, *LPGETVERSIONINPARAMS, *PGETVERSIONINPARAMS, PGETVERSIONINPARAMS structure pointer [Storage Devices], structs-IDE_5426037d-a75f-4b92-a935-e467d02ec8c7.xml, PGETVERSIONINPARAMS, storage.getversioninparams, _GETVERSIONINPARAMS, LPGETVERSIONINPARAMS, LPGETVERSIONINPARAMS structure pointer [Storage Devices], GETVERSIONINPARAMS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntdddisk.h
+req.include-header: Ntdddisk.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntdddisk.h
+apiname:
+-	GETVERSIONINPARAMS
+product: Windows
+targetos: Windows
+req.typenames: "*LPGETVERSIONINPARAMS, *PGETVERSIONINPARAMS, GETVERSIONINPARAMS"
 ---
 
 # _GETVERSIONINPARAMS structure

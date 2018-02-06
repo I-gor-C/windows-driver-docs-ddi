@@ -1,41 +1,49 @@
 ---
-UID : NF:dbgeng.IDebugDataSpaces4.ReadDebuggerData
-title : IDebugDataSpaces4::ReadDebuggerData method
-author : windows-driver-content
-description : The ReadDebuggerData method returns information about the target that the debugger engine has queried or determined during the current session.
-old-location : debugger\readdebuggerdata.htm
-old-project : debugger
-ms.assetid : 54e4d3b9-db9d-4844-938f-c8ca8819d182
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : ReadDebuggerData method [Windows Debugging], IDebugDataSpaces3 interface, ReadDebuggerData method [Windows Debugging], IDebugDataSpaces4::ReadDebuggerData, IDebugDataSpaces3::ReadDebuggerData, dbgeng/IDebugDataSpaces::ReadDebuggerData, IDebugDataSpaces3 interface [Windows Debugging], ReadDebuggerData method, IDebugDataSpaces2::ReadDebuggerData, IDebugDataSpaces4 interface [Windows Debugging], ReadDebuggerData method, dbgeng/IDebugDataSpaces2::ReadDebuggerData, IDebugDataSpaces2 interface [Windows Debugging], ReadDebuggerData method, debugger.readdebuggerdata, ReadDebuggerData method [Windows Debugging], IDebugDataSpaces interface, dbgeng/IDebugDataSpaces4::ReadDebuggerData, IDebugDataSpaces_618b8518-3e32-4518-8e4b-38f66484d554.xml, IDebugDataSpaces4, IDebugDataSpaces interface [Windows Debugging], ReadDebuggerData method, IDebugDataSpaces::ReadDebuggerData, ReadDebuggerData method [Windows Debugging], IDebugDataSpaces4 interface, ReadDebuggerData, dbgeng/IDebugDataSpaces3::ReadDebuggerData, ReadDebuggerData method [Windows Debugging], IDebugDataSpaces2 interface
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugDataSpaces4.ReadDebuggerData
+title: IDebugDataSpaces4::ReadDebuggerData method
+author: windows-driver-content
+description: The ReadDebuggerData method returns information about the target that the debugger engine has queried or determined during the current session.
+old-location: debugger\readdebuggerdata.htm
+old-project: debugger
+ms.assetid: 54e4d3b9-db9d-4844-938f-c8ca8819d182
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: ReadDebuggerData method [Windows Debugging], IDebugDataSpaces3 interface, ReadDebuggerData method [Windows Debugging], IDebugDataSpaces4::ReadDebuggerData, IDebugDataSpaces3::ReadDebuggerData, dbgeng/IDebugDataSpaces::ReadDebuggerData, IDebugDataSpaces3 interface [Windows Debugging], ReadDebuggerData method, IDebugDataSpaces2::ReadDebuggerData, IDebugDataSpaces4 interface [Windows Debugging], ReadDebuggerData method, dbgeng/IDebugDataSpaces2::ReadDebuggerData, IDebugDataSpaces2 interface [Windows Debugging], ReadDebuggerData method, debugger.readdebuggerdata, ReadDebuggerData method [Windows Debugging], IDebugDataSpaces interface, dbgeng/IDebugDataSpaces4::ReadDebuggerData, IDebugDataSpaces_618b8518-3e32-4518-8e4b-38f66484d554.xml, IDebugDataSpaces4, IDebugDataSpaces interface [Windows Debugging], ReadDebuggerData method, IDebugDataSpaces::ReadDebuggerData, ReadDebuggerData method [Windows Debugging], IDebugDataSpaces4 interface, ReadDebuggerData, dbgeng/IDebugDataSpaces3::ReadDebuggerData, ReadDebuggerData method [Windows Debugging], IDebugDataSpaces2 interface
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugDataSpaces.ReadDebuggerData
+-	IDebugDataSpaces2.ReadDebuggerData
+-	IDebugDataSpaces3.ReadDebuggerData
+-	IDebugDataSpaces4.ReadDebuggerData
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NF:ntddk.RtlGetElementGenericTableAvl
-title : RtlGetElementGenericTableAvl function
-author : windows-driver-content
-description : The RtlGetElementGenericTableAvl routine returns a pointer to the caller-supplied data for a particular generic Adelson-Velsky/Landis (AVL) table element.
-old-location : ifsk\rtlgetelementgenerictableavl.htm
-old-project : ifsk
-ms.assetid : c836dd4b-5c66-4302-9b2a-115cec418533
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : RtlGetElementGenericTableAvl, rtlref_c94e774b-baba-4be7-be6d-09b01544612b.xml, RtlGetElementGenericTableAvl routine [Installable File System Drivers], ifsk.rtlgetelementgenerictableavl, ntddk/RtlGetElementGenericTableAvl
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntddk.h
-req.include-header : Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available with Windows XP.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : Any level (See Remarks)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.RtlGetElementGenericTableAvl
+title: RtlGetElementGenericTableAvl function
+author: windows-driver-content
+description: The RtlGetElementGenericTableAvl routine returns a pointer to the caller-supplied data for a particular generic Adelson-Velsky/Landis (AVL) table element.
+old-location: ifsk\rtlgetelementgenerictableavl.htm
+old-project: ifsk
+ms.assetid: c836dd4b-5c66-4302-9b2a-115cec418533
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: RtlGetElementGenericTableAvl, rtlref_c94e774b-baba-4be7-be6d-09b01544612b.xml, RtlGetElementGenericTableAvl routine [Installable File System Drivers], ifsk.rtlgetelementgenerictableavl, ntddk/RtlGetElementGenericTableAvl
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntddk.h
+req.include-header: Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available with Windows XP.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: Any level (See Remarks)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	RtlGetElementGenericTableAvl
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

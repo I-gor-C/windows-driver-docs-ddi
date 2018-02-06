@@ -1,41 +1,46 @@
 ---
-UID : NS:ndischimney._PATH_OFFLOAD_STATE_CONST
-title : "_PATH_OFFLOAD_STATE_CONST"
-author : windows-driver-content
-description : The PATH_OFFLOAD_STATE_CONST structure contains the constant variables of a path state object.
-old-location : netvista\path_offload_state_const.htm
-old-project : netvista
-ms.assetid : a71f70f6-7731-457b-bd6d-b4a649f76f8b
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : PATH_OFFLOAD_STATE_CONST structure [Network Drivers Starting with Windows Vista], ndischimney/PPATH_OFFLOAD_STATE_CONST, PPATH_OFFLOAD_STATE_CONST, tcp_chim_struct_4412519c-3610-4f0a-a4c6-400ff661d205.xml, _PATH_OFFLOAD_STATE_CONST, ndischimney/PATH_OFFLOAD_STATE_CONST, PATH_OFFLOAD_STATE_CONST, *PPATH_OFFLOAD_STATE_CONST, PPATH_OFFLOAD_STATE_CONST structure pointer [Network Drivers Starting with Windows Vista], netvista.path_offload_state_const
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndischimney.h
-req.include-header : Ndischimney.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPATH_OFFLOAD_STATE_CONST, PATH_OFFLOAD_STATE_CONST"
+UID: NS:ndischimney._PATH_OFFLOAD_STATE_CONST
+title: "_PATH_OFFLOAD_STATE_CONST"
+author: windows-driver-content
+description: The PATH_OFFLOAD_STATE_CONST structure contains the constant variables of a path state object.
+old-location: netvista\path_offload_state_const.htm
+old-project: netvista
+ms.assetid: a71f70f6-7731-457b-bd6d-b4a649f76f8b
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: PATH_OFFLOAD_STATE_CONST structure [Network Drivers Starting with Windows Vista], ndischimney/PPATH_OFFLOAD_STATE_CONST, PPATH_OFFLOAD_STATE_CONST, tcp_chim_struct_4412519c-3610-4f0a-a4c6-400ff661d205.xml, _PATH_OFFLOAD_STATE_CONST, ndischimney/PATH_OFFLOAD_STATE_CONST, PATH_OFFLOAD_STATE_CONST, *PPATH_OFFLOAD_STATE_CONST, PPATH_OFFLOAD_STATE_CONST structure pointer [Network Drivers Starting with Windows Vista], netvista.path_offload_state_const
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndischimney.h
+req.include-header: Ndischimney.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndischimney.h
+apiname:
+-	PATH_OFFLOAD_STATE_CONST
+product: Windows
+targetos: Windows
+req.typenames: "*PPATH_OFFLOAD_STATE_CONST, PATH_OFFLOAD_STATE_CONST"
 ---
 
 # _PATH_OFFLOAD_STATE_CONST structure

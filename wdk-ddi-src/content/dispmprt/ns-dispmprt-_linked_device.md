@@ -1,41 +1,46 @@
 ---
-UID : NS:dispmprt._LINKED_DEVICE
-title : "_LINKED_DEVICE"
-author : windows-driver-content
-description : The LINKED_DEVICE structure holds information that describes a linked display adapter configuration.
-old-location : display\linked_device.htm
-old-project : display
-ms.assetid : 65289123-46b8-4a4b-985a-8087f4afd250
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.linked_device, dispmprt/PLINKED_DEVICE, DmStructs_3491af70-72fe-471c-b0f1-c00d6bffb242.xml, PLINKED_DEVICE, PLINKED_DEVICE structure pointer [Display Devices], LINKED_DEVICE, *PLINKED_DEVICE, _LINKED_DEVICE, LINKED_DEVICE structure [Display Devices], dispmprt/LINKED_DEVICE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : dispmprt.h
-req.include-header : Dispmprt.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : LINKED_DEVICE, *PLINKED_DEVICE
+UID: NS:dispmprt._LINKED_DEVICE
+title: "_LINKED_DEVICE"
+author: windows-driver-content
+description: The LINKED_DEVICE structure holds information that describes a linked display adapter configuration.
+old-location: display\linked_device.htm
+old-project: display
+ms.assetid: 65289123-46b8-4a4b-985a-8087f4afd250
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.linked_device, dispmprt/PLINKED_DEVICE, DmStructs_3491af70-72fe-471c-b0f1-c00d6bffb242.xml, PLINKED_DEVICE, PLINKED_DEVICE structure pointer [Display Devices], LINKED_DEVICE, *PLINKED_DEVICE, _LINKED_DEVICE, LINKED_DEVICE structure [Display Devices], dispmprt/LINKED_DEVICE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: dispmprt.h
+req.include-header: Dispmprt.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	dispmprt.h
+apiname:
+-	LINKED_DEVICE
+product: Windows
+targetos: Windows
+req.typenames: LINKED_DEVICE, *PLINKED_DEVICE
 ---
 
 # _LINKED_DEVICE structure

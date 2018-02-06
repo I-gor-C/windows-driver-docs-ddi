@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltPrepareComplete
-title : FltPrepareComplete function
-author : windows-driver-content
-description : The FltPrepareComplete routine acknowledges a TRANSACTION_NOTIFY_PREPARE notification.
-old-location : ifsk\fltpreparecomplete.htm
-old-project : ifsk
-ms.assetid : 5b6322a3-3813-4ca8-a966-d6b8bddbe794
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.fltpreparecomplete, FltPrepareComplete, FltApiRef_p_to_z_830f8ae7-b7b1-4c97-8415-9ba3f4f6c9ea.xml, FltPrepareComplete routine [Installable File System Drivers], fltkernel/FltPrepareComplete
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : The FltPrepareComplete routine is available on Windows Vista and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltPrepareComplete
+title: FltPrepareComplete function
+author: windows-driver-content
+description: The FltPrepareComplete routine acknowledges a TRANSACTION_NOTIFY_PREPARE notification.
+old-location: ifsk\fltpreparecomplete.htm
+old-project: ifsk
+ms.assetid: 5b6322a3-3813-4ca8-a966-d6b8bddbe794
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.fltpreparecomplete, FltPrepareComplete, FltApiRef_p_to_z_830f8ae7-b7b1-4c97-8415-9ba3f4f6c9ea.xml, FltPrepareComplete routine [Installable File System Drivers], fltkernel/FltPrepareComplete
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: The FltPrepareComplete routine is available on Windows Vista and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltPrepareComplete
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

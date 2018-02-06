@@ -1,42 +1,47 @@
 ---
-UID : NS:wdfusb._WDF_USB_CONTINUOUS_READER_CONFIG
-title : "_WDF_USB_CONTINUOUS_READER_CONFIG"
-author : windows-driver-content
-description : The WDF_USB_CONTINUOUS_READER_CONFIG structure contains information that the framework uses to configure a continuous reader for a USB pipe.
-old-location : wdf\wdf_usb_continuous_reader_config.htm
-old-project : wdf
-ms.assetid : 9b98d5f1-6052-4c52-b3d4-031c8a0db51c
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : PWDF_USB_CONTINUOUS_READER_CONFIG structure pointer, wdf.wdf_usb_continuous_reader_config, *PWDF_USB_CONTINUOUS_READER_CONFIG, DFUsbRef_f74973fe-cb6c-470f-acd8-805ff2ea3c19.xml, WDF_USB_CONTINUOUS_READER_CONFIG structure, kmdf.wdf_usb_continuous_reader_config, wdfusb/PWDF_USB_CONTINUOUS_READER_CONFIG, WDF_USB_CONTINUOUS_READER_CONFIG, _WDF_USB_CONTINUOUS_READER_CONFIG, PWDF_USB_CONTINUOUS_READER_CONFIG, wdfusb/WDF_USB_CONTINUOUS_READER_CONFIG
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdfusb.h
-req.include-header : Wdfusb.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDF_USB_CONTINUOUS_READER_CONFIG, WDF_USB_CONTINUOUS_READER_CONFIG"
-req.product : Windows 10 or later.
+UID: NS:wdfusb._WDF_USB_CONTINUOUS_READER_CONFIG
+title: "_WDF_USB_CONTINUOUS_READER_CONFIG"
+author: windows-driver-content
+description: The WDF_USB_CONTINUOUS_READER_CONFIG structure contains information that the framework uses to configure a continuous reader for a USB pipe.
+old-location: wdf\wdf_usb_continuous_reader_config.htm
+old-project: wdf
+ms.assetid: 9b98d5f1-6052-4c52-b3d4-031c8a0db51c
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: PWDF_USB_CONTINUOUS_READER_CONFIG structure pointer, wdf.wdf_usb_continuous_reader_config, *PWDF_USB_CONTINUOUS_READER_CONFIG, DFUsbRef_f74973fe-cb6c-470f-acd8-805ff2ea3c19.xml, WDF_USB_CONTINUOUS_READER_CONFIG structure, kmdf.wdf_usb_continuous_reader_config, wdfusb/PWDF_USB_CONTINUOUS_READER_CONFIG, WDF_USB_CONTINUOUS_READER_CONFIG, _WDF_USB_CONTINUOUS_READER_CONFIG, PWDF_USB_CONTINUOUS_READER_CONFIG, wdfusb/WDF_USB_CONTINUOUS_READER_CONFIG
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdfusb.h
+req.include-header: Wdfusb.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfusb.h
+apiname:
+-	WDF_USB_CONTINUOUS_READER_CONFIG
+product: Windows
+targetos: Windows
+req.typenames: "*PWDF_USB_CONTINUOUS_READER_CONFIG, WDF_USB_CONTINUOUS_READER_CONFIG"
+req.product: Windows 10 or later.
 ---
 
 # _WDF_USB_CONTINUOUS_READER_CONFIG structure

@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._D3DDDIARG_SETSTREAMSOURCEFREQ
-title : "_D3DDDIARG_SETSTREAMSOURCEFREQ"
-author : windows-driver-content
-description : The D3DDDIARG_SETSTREAMSOURCEFREQ structure describes how the frequency divisor for a portion of the vertex stream source is set.
-old-location : display\d3dddiarg_setstreamsourcefreq.htm
-old-project : display
-ms.assetid : 16bf65c7-26b0-404c-97c0-48eeb7c10b03
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.d3dddiarg_setstreamsourcefreq, D3DDDIARG_SETSTREAMSOURCEFREQ structure [Display Devices], UMDisplayDriver_param_Structs_2f63624d-43d6-4b38-8f22-050dac4a4965.xml, d3dumddi/D3DDDIARG_SETSTREAMSOURCEFREQ, D3DDDIARG_SETSTREAMSOURCEFREQ, _D3DDDIARG_SETSTREAMSOURCEFREQ
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDIARG_SETSTREAMSOURCEFREQ
+UID: NS:d3dumddi._D3DDDIARG_SETSTREAMSOURCEFREQ
+title: "_D3DDDIARG_SETSTREAMSOURCEFREQ"
+author: windows-driver-content
+description: The D3DDDIARG_SETSTREAMSOURCEFREQ structure describes how the frequency divisor for a portion of the vertex stream source is set.
+old-location: display\d3dddiarg_setstreamsourcefreq.htm
+old-project: display
+ms.assetid: 16bf65c7-26b0-404c-97c0-48eeb7c10b03
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.d3dddiarg_setstreamsourcefreq, D3DDDIARG_SETSTREAMSOURCEFREQ structure [Display Devices], UMDisplayDriver_param_Structs_2f63624d-43d6-4b38-8f22-050dac4a4965.xml, d3dumddi/D3DDDIARG_SETSTREAMSOURCEFREQ, D3DDDIARG_SETSTREAMSOURCEFREQ, _D3DDDIARG_SETSTREAMSOURCEFREQ
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	D3DDDIARG_SETSTREAMSOURCEFREQ
+product: Windows
+targetos: Windows
+req.typenames: D3DDDIARG_SETSTREAMSOURCEFREQ
 ---
 
 # _D3DDDIARG_SETSTREAMSOURCEFREQ structure

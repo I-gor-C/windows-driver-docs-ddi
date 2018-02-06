@@ -1,41 +1,46 @@
 ---
-UID : NS:pmi._PMI_CAPABILITIES
-title : "_PMI_CAPABILITIES"
-author : windows-driver-content
-description : The PMI_CAPABILITIES structure contains information about the power metering and budgeting capabilities of a power meter.
-old-location : powermeter\pmi_capabilities.htm
-old-project : powermeter
-ms.assetid : 7e564512-ff57-4bce-93c1-76e6034ec061
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : pmi/PMI_CAPABILITIES, *PPMI_CAPABILITIES, PPMI_CAPABILITIES, PMI_CAPABILITIES structure [Power Metering and Budgeting Devices], pmi/PPMI_CAPABILITIES, PPMI_CAPABILITIES structure pointer [Power Metering and Budgeting Devices], powermeter.pmi_capabilities, _PMI_CAPABILITIES, PMI_CAPABILITIES, PowerMeterRef_14d27676-6523-4aca-8ce7-c6c3e8794171.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : pmi.h
-req.include-header : Pmi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7, Windows Server 2008 R2, and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPMI_CAPABILITIES, PMI_CAPABILITIES"
+UID: NS:pmi._PMI_CAPABILITIES
+title: "_PMI_CAPABILITIES"
+author: windows-driver-content
+description: The PMI_CAPABILITIES structure contains information about the power metering and budgeting capabilities of a power meter.
+old-location: powermeter\pmi_capabilities.htm
+old-project: powermeter
+ms.assetid: 7e564512-ff57-4bce-93c1-76e6034ec061
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: pmi/PMI_CAPABILITIES, *PPMI_CAPABILITIES, PPMI_CAPABILITIES, PMI_CAPABILITIES structure [Power Metering and Budgeting Devices], pmi/PPMI_CAPABILITIES, PPMI_CAPABILITIES structure pointer [Power Metering and Budgeting Devices], powermeter.pmi_capabilities, _PMI_CAPABILITIES, PMI_CAPABILITIES, PowerMeterRef_14d27676-6523-4aca-8ce7-c6c3e8794171.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: pmi.h
+req.include-header: Pmi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7, Windows Server 2008 R2, and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	pmi.h
+apiname:
+-	PMI_CAPABILITIES
+product: Windows
+targetos: Windows
+req.typenames: "*PPMI_CAPABILITIES, PMI_CAPABILITIES"
 ---
 
 # _PMI_CAPABILITIES structure

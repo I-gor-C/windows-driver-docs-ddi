@@ -1,41 +1,46 @@
 ---
-UID : NS:irb._IDE_DEVICE_PARAMETERS
-title : "_IDE_DEVICE_PARAMETERS"
-author : windows-driver-content
-description : The IDE_DEVICE_PARAMETERS structure contains configuration information that the port driver provides to the miniport driver to configure a device.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
-old-location : storage\ide_device_parameters.htm
-old-project : storage
-ms.assetid : e2b908ce-df40-4d64-b8fd-77da18b4f6bd
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : irb/PIDE_DEVICE_PARAMETERS, IDE_DEVICE_PARAMETERS structure [Storage Devices], PIDE_DEVICE_PARAMETERS, storage.ide_device_parameters, structs-ATA_6cc8412c-2ce1-4261-91db-bc986a6836ff.xml, _IDE_DEVICE_PARAMETERS, *PIDE_DEVICE_PARAMETERS, IDE_DEVICE_PARAMETERS, PIDE_DEVICE_PARAMETERS structure pointer [Storage Devices], irb/IDE_DEVICE_PARAMETERS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : irb.h
-req.include-header : Irb.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : IDE_DEVICE_PARAMETERS, *PIDE_DEVICE_PARAMETERS
+UID: NS:irb._IDE_DEVICE_PARAMETERS
+title: "_IDE_DEVICE_PARAMETERS"
+author: windows-driver-content
+description: The IDE_DEVICE_PARAMETERS structure contains configuration information that the port driver provides to the miniport driver to configure a device.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
+old-location: storage\ide_device_parameters.htm
+old-project: storage
+ms.assetid: e2b908ce-df40-4d64-b8fd-77da18b4f6bd
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: irb/PIDE_DEVICE_PARAMETERS, IDE_DEVICE_PARAMETERS structure [Storage Devices], PIDE_DEVICE_PARAMETERS, storage.ide_device_parameters, structs-ATA_6cc8412c-2ce1-4261-91db-bc986a6836ff.xml, _IDE_DEVICE_PARAMETERS, *PIDE_DEVICE_PARAMETERS, IDE_DEVICE_PARAMETERS, PIDE_DEVICE_PARAMETERS structure pointer [Storage Devices], irb/IDE_DEVICE_PARAMETERS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: irb.h
+req.include-header: Irb.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	irb.h
+apiname:
+-	IDE_DEVICE_PARAMETERS
+product: Windows
+targetos: Windows
+req.typenames: IDE_DEVICE_PARAMETERS, *PIDE_DEVICE_PARAMETERS
 ---
 
 # _IDE_DEVICE_PARAMETERS structure

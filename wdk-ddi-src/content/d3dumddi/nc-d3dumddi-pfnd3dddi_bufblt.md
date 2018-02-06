@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_BUFBLT
-title : PFND3DDDI_BUFBLT
-author : windows-driver-content
-description : The BufBlt function performs a bit-block transfer (bitblt) operation from a source vertex or index buffer to a destination vertex or index buffer.
-old-location : display\bufblt.htm
-old-project : display
-ms.assetid : d75f3fad-3bcd-44ad-9bd5-f61f5346cf8d
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.bufblt, BufBlt callback function [Display Devices], BufBlt, PFND3DDDI_BUFBLT, PFND3DDDI_BUFBLT, d3dumddi/BufBlt, UserModeDisplayDriver_Functions_87f3469d-cae9-43e7-a0ae-d19bef34314e.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_BUFBLT
+title: PFND3DDDI_BUFBLT
+author: windows-driver-content
+description: The BufBlt function performs a bit-block transfer (bitblt) operation from a source vertex or index buffer to a destination vertex or index buffer.
+old-location: display\bufblt.htm
+old-project: display
+ms.assetid: d75f3fad-3bcd-44ad-9bd5-f61f5346cf8d
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.bufblt, BufBlt callback function [Display Devices], BufBlt, PFND3DDDI_BUFBLT, PFND3DDDI_BUFBLT, d3dumddi/BufBlt, UserModeDisplayDriver_Functions_87f3469d-cae9-43e7-a0ae-d19bef34314e.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	BufBlt
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

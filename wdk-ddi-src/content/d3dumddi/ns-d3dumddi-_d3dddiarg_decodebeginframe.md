@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._D3DDDIARG_DECODEBEGINFRAME
-title : "_D3DDDIARG_DECODEBEGINFRAME"
-author : windows-driver-content
-description : The D3DDDIARG_DECODEBEGINFRAME structure specifies the Microsoft DirectX Video Accelerator (VA) decoder that should start decoding a frame.
-old-location : display\d3dddiarg_decodebeginframe.htm
-old-project : display
-ms.assetid : 8219beee-b27c-4f81-aef7-8d38363d4645
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DDDIARG_DECODEBEGINFRAME structure [Display Devices], d3dumddi/D3DDDIARG_DECODEBEGINFRAME, D3DDDIARG_DECODEBEGINFRAME, _D3DDDIARG_DECODEBEGINFRAME, UMDisplayDriver_param_Structs_fdee5664-6d7b-4d54-ac34-69d216f05896.xml, display.d3dddiarg_decodebeginframe
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDIARG_DECODEBEGINFRAME
+UID: NS:d3dumddi._D3DDDIARG_DECODEBEGINFRAME
+title: "_D3DDDIARG_DECODEBEGINFRAME"
+author: windows-driver-content
+description: The D3DDDIARG_DECODEBEGINFRAME structure specifies the Microsoft DirectX Video Accelerator (VA) decoder that should start decoding a frame.
+old-location: display\d3dddiarg_decodebeginframe.htm
+old-project: display
+ms.assetid: 8219beee-b27c-4f81-aef7-8d38363d4645
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DDDIARG_DECODEBEGINFRAME structure [Display Devices], d3dumddi/D3DDDIARG_DECODEBEGINFRAME, D3DDDIARG_DECODEBEGINFRAME, _D3DDDIARG_DECODEBEGINFRAME, UMDisplayDriver_param_Structs_fdee5664-6d7b-4d54-ac34-69d216f05896.xml, display.d3dddiarg_decodebeginframe
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	D3DDDIARG_DECODEBEGINFRAME
+product: Windows
+targetos: Windows
+req.typenames: D3DDDIARG_DECODEBEGINFRAME
 ---
 
 # _D3DDDIARG_DECODEBEGINFRAME structure

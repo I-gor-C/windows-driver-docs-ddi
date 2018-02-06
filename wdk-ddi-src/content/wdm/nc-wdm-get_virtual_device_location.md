@@ -1,42 +1,47 @@
 ---
-UID : NC:wdm.GET_VIRTUAL_DEVICE_LOCATION
-title : GET_VIRTUAL_DEVICE_LOCATION
-author : windows-driver-content
-description : The GetLocation routine returns the device location of a PCI Express (PCIe) virtual function (VF) on a PCI bus. A device that supports the single root I/O virtualization (SR-IOV) interface can expose one or more VFs on the PCI bus.
-old-location : pci\getlocation.htm
-old-project : PCI
-ms.assetid : A08294EC-7A1B-4A2D-A425-D19ABDCB9DCA
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : PCI.getlocation, GetLocation routine, GetLocation, GET_VIRTUAL_DEVICE_LOCATION, GET_VIRTUAL_DEVICE_LOCATION, wdm/GetLocation
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdm.h
-req.include-header : Wdm.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported in Windows Server 2012 and later versions of Windows Server.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
-req.product : Windows 10 or later.
+UID: NC:wdm.GET_VIRTUAL_DEVICE_LOCATION
+title: GET_VIRTUAL_DEVICE_LOCATION
+author: windows-driver-content
+description: The GetLocation routine returns the device location of a PCI Express (PCIe) virtual function (VF) on a PCI bus. A device that supports the single root I/O virtualization (SR-IOV) interface can expose one or more VFs on the PCI bus.
+old-location: pci\getlocation.htm
+old-project: PCI
+ms.assetid: A08294EC-7A1B-4A2D-A425-D19ABDCB9DCA
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: PCI.getlocation, GetLocation routine, GetLocation, GET_VIRTUAL_DEVICE_LOCATION, GET_VIRTUAL_DEVICE_LOCATION, wdm/GetLocation
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdm.h
+req.include-header: Wdm.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported in Windows Server 2012 and later versions of Windows Server.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Wdm.h
+apiname:
+-	GetLocation
+product: Windows
+targetos: Windows
+req.typenames: WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+req.product: Windows 10 or later.
 ---
 
 

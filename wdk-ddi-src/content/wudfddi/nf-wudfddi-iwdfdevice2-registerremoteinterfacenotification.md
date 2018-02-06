@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFDevice2.RegisterRemoteInterfaceNotification
-title : IWDFDevice2::RegisterRemoteInterfaceNotification method
-author : windows-driver-content
-description : The RegisterRemoteInterfaceNotification method registers a driver to receive a notification when a specified device interface becomes available.
-old-location : wdf\iwdfdevice2_registerremoteinterfacenotification.htm
-old-project : wdf
-ms.assetid : 48e1fc20-03e7-42ef-b57c-9246a56df4ef
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RegisterRemoteInterfaceNotification, RegisterRemoteInterfaceNotification method, IWDFDevice2 interface, wdf.iwdfdevice2_registerremoteinterfacenotification, IWDFDevice2 interface, RegisterRemoteInterfaceNotification method, IWDFDevice2::RegisterRemoteInterfaceNotification, UMDFDeviceObjectRef_2629392c-5f58-4e33-be77-3422267c6a4b.xml, RegisterRemoteInterfaceNotification method, umdf.iwdfdevice2_registerremoteinterfacenotification, wudfddi/IWDFDevice2::RegisterRemoteInterfaceNotification, IWDFDevice2
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.9
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFDevice2.RegisterRemoteInterfaceNotification
+title: IWDFDevice2::RegisterRemoteInterfaceNotification method
+author: windows-driver-content
+description: The RegisterRemoteInterfaceNotification method registers a driver to receive a notification when a specified device interface becomes available.
+old-location: wdf\iwdfdevice2_registerremoteinterfacenotification.htm
+old-project: wdf
+ms.assetid: 48e1fc20-03e7-42ef-b57c-9246a56df4ef
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: RegisterRemoteInterfaceNotification, RegisterRemoteInterfaceNotification method, IWDFDevice2 interface, wdf.iwdfdevice2_registerremoteinterfacenotification, IWDFDevice2 interface, RegisterRemoteInterfaceNotification method, IWDFDevice2::RegisterRemoteInterfaceNotification, UMDFDeviceObjectRef_2629392c-5f58-4e33-be77-3422267c6a4b.xml, RegisterRemoteInterfaceNotification method, umdf.iwdfdevice2_registerremoteinterfacenotification, wudfddi/IWDFDevice2::RegisterRemoteInterfaceNotification, IWDFDevice2
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.9
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFDevice2.RegisterRemoteInterfaceNotification
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

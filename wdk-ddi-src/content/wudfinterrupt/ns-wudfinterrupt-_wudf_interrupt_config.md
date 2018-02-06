@@ -1,42 +1,47 @@
 ---
-UID : NS:wudfinterrupt._WUDF_INTERRUPT_CONFIG
-title : "_WUDF_INTERRUPT_CONFIG"
-author : windows-driver-content
-description : The WUDF_INTERRUPT_CONFIG structure contains configuration information for a device interrupt.
-old-location : wdf\wudf_interrupt_config.htm
-old-project : wdf
-ms.assetid : 7A849A10-2C47-42E2-8BEB-E1D979D3C893
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : PWUDF_INTERRUPT_CONFIG, wudfinterrupt/WUDF_INTERRUPT_CONFIG, umdf.wudf_interrupt_config, *PWUDF_INTERRUPT_CONFIG, _WUDF_INTERRUPT_CONFIG, WUDF_INTERRUPT_CONFIG structure, PWUDF_INTERRUPT_CONFIG structure pointer, WUDF_INTERRUPT_CONFIG, wdf.wudf_interrupt_config, wudfinterrupt/PWUDF_INTERRUPT_CONFIG
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wudfinterrupt.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.11
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WUDF_INTERRUPT_CONFIG, *PWUDF_INTERRUPT_CONFIG
-req.product : Windows 10 or later.
+UID: NS:wudfinterrupt._WUDF_INTERRUPT_CONFIG
+title: "_WUDF_INTERRUPT_CONFIG"
+author: windows-driver-content
+description: The WUDF_INTERRUPT_CONFIG structure contains configuration information for a device interrupt.
+old-location: wdf\wudf_interrupt_config.htm
+old-project: wdf
+ms.assetid: 7A849A10-2C47-42E2-8BEB-E1D979D3C893
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: PWUDF_INTERRUPT_CONFIG, wudfinterrupt/WUDF_INTERRUPT_CONFIG, umdf.wudf_interrupt_config, *PWUDF_INTERRUPT_CONFIG, _WUDF_INTERRUPT_CONFIG, WUDF_INTERRUPT_CONFIG structure, PWUDF_INTERRUPT_CONFIG structure pointer, WUDF_INTERRUPT_CONFIG, wdf.wudf_interrupt_config, wudfinterrupt/PWUDF_INTERRUPT_CONFIG
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wudfinterrupt.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.11
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wudfinterrupt.h
+apiname:
+-	WUDF_INTERRUPT_CONFIG
+product: Windows
+targetos: Windows
+req.typenames: WUDF_INTERRUPT_CONFIG, *PWUDF_INTERRUPT_CONFIG
+req.product: Windows 10 or later.
 ---
 
 # _WUDF_INTERRUPT_CONFIG structure

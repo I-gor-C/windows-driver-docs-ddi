@@ -1,41 +1,46 @@
 ---
-UID : NE:pmi.PMI_MEASUREMENT_UNIT
-title : PMI_MEASUREMENT_UNIT
-author : windows-driver-content
-description : The PMI_MEASUREMENT_UNIT enumeration defines the units of the PMI measurement data.
-old-location : powermeter\pmi_measurement_unit.htm
-old-project : powermeter
-ms.assetid : 31f0239e-86d3-43e8-8627-7e16bd58df87
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : PMI_MEASUREMENT_UNIT enumeration [Power Metering and Budgeting Devices], pmi/PmiMeasurementUnitMilliWatt, powermeter.pmi_measurement_unit, PMI_MEASUREMENT_UNIT, pmi/PMI_MEASUREMENT_UNIT, PmiMeasurementUnitMax, PmiMeasurementUnitMilliWatt, pmi/PmiMeasurementUnitMax, PowerMeterRef_7c2e4685-6992-455c-b584-9391e0ea8afa.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : pmi.h
-req.include-header : Pmi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7, Windows Server 2008 R2, and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PMI_MEASUREMENT_UNIT
+UID: NE:pmi.PMI_MEASUREMENT_UNIT
+title: PMI_MEASUREMENT_UNIT
+author: windows-driver-content
+description: The PMI_MEASUREMENT_UNIT enumeration defines the units of the PMI measurement data.
+old-location: powermeter\pmi_measurement_unit.htm
+old-project: powermeter
+ms.assetid: 31f0239e-86d3-43e8-8627-7e16bd58df87
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: PMI_MEASUREMENT_UNIT enumeration [Power Metering and Budgeting Devices], pmi/PmiMeasurementUnitMilliWatt, powermeter.pmi_measurement_unit, PMI_MEASUREMENT_UNIT, pmi/PMI_MEASUREMENT_UNIT, PmiMeasurementUnitMax, PmiMeasurementUnitMilliWatt, pmi/PmiMeasurementUnitMax, PowerMeterRef_7c2e4685-6992-455c-b584-9391e0ea8afa.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: pmi.h
+req.include-header: Pmi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7, Windows Server 2008 R2, and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	pmi.h
+apiname:
+-	PMI_MEASUREMENT_UNIT
+product: Windows
+targetos: Windows
+req.typenames: PMI_MEASUREMENT_UNIT
 ---
 
 # PMI_MEASUREMENT_UNIT Enumeration
@@ -52,21 +57,21 @@ typedef enum  {
 ## Constants
 
 <table>
-
-<tr>
-<td>PmiMeasurementUnitMax</td>
-<td>The maximum types of PMI measurement units.</td>
-</tr>
-
-<tr>
-<td>PmiMeasurementUnitMilliWatt</td>
-<td>The PMI measurement data is in units of milliwatts (mW).</td>
-</tr>
+            
+                <tr>
+                    <td>PmiMeasurementUnitMax</td>
+                    <td>The maximum types of PMI measurement units.</td>
+                </tr>
+            
+                <tr>
+                    <td>PmiMeasurementUnitMilliWatt</td>
+                    <td>The PMI measurement data is in units of milliwatts (mW).</td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-The <b>MeasurementUnit</b> member of the <a href="..\pmi\ns-pmi-_pmi_reported_capabilities.md">PMI_REPORTED_CAPABILITIES</a> structure contains information about the measurement units of the data that is contained within the structure. This structure is returned through a successful completion of an <a href="..\pmi\ni-pmi-ioctl_pmi_get_capabilities.md">IOCTL_PMI_GET_CAPABILITIES</a> request.
+        The <b>MeasurementUnit</b> member of the <a href="..\pmi\ns-pmi-_pmi_reported_capabilities.md">PMI_REPORTED_CAPABILITIES</a> structure contains information about the measurement units of the data that is contained within the structure. This structure is returned through a successful completion of an <a href="..\pmi\ni-pmi-ioctl_pmi_get_capabilities.md">IOCTL_PMI_GET_CAPABILITIES</a> request.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -74,9 +79,9 @@ The <b>MeasurementUnit</b> member of the <a href="..\pmi\ns-pmi-_pmi_reported_ca
 | **Windows version** | Available in Windows 7, Windows Server 2008 R2, and later versions of the Windows operating systems. Available in Windows 7, Windows Server 2008 R2, and later versions of the Windows operating systems. |
 | **Header** | pmi.h (include Pmi.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\pmi\ni-pmi-ioctl_pmi_get_capabilities.md">IOCTL_PMI_GET_CAPABILITIES</a>
+        <a href="..\pmi\ni-pmi-ioctl_pmi_get_capabilities.md">IOCTL_PMI_GET_CAPABILITIES</a>
 
 <a href="..\pmi\ns-pmi-_pmi_reported_capabilities.md">PMI_REPORTED_CAPABILITIES</a>
 

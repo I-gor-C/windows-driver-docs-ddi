@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugSymbols3.SetScopeFromJitDebugInfo
-title : IDebugSymbols3::SetScopeFromJitDebugInfo method
-author : windows-driver-content
-description : Recovers just-in-time (JIT) debugging information and sets current debugger scope context based on that information.
-old-location : debugger\idebugsymbols3_setscopefromjitdebuginfo.htm
-old-project : debugger
-ms.assetid : 75417373-AA1B-4297-863A-00EA97069573
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : SetScopeFromJitDebugInfo method [Windows Debugging], debugger.idebugsymbols3_setscopefromjitdebuginfo, dbgeng/IDebugSymbols3::SetScopeFromJitDebugInfo, IDebugSymbols3::SetScopeFromJitDebugInfo, IDebugSymbols3 interface [Windows Debugging], SetScopeFromJitDebugInfo method, SetScopeFromJitDebugInfo method [Windows Debugging], IDebugSymbols3 interface, SetScopeFromJitDebugInfo, IDebugSymbols3
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSymbols3.SetScopeFromJitDebugInfo
+title: IDebugSymbols3::SetScopeFromJitDebugInfo method
+author: windows-driver-content
+description: Recovers just-in-time (JIT) debugging information and sets current debugger scope context based on that information.
+old-location: debugger\idebugsymbols3_setscopefromjitdebuginfo.htm
+old-project: debugger
+ms.assetid: 75417373-AA1B-4297-863A-00EA97069573
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: SetScopeFromJitDebugInfo method [Windows Debugging], debugger.idebugsymbols3_setscopefromjitdebuginfo, dbgeng/IDebugSymbols3::SetScopeFromJitDebugInfo, IDebugSymbols3::SetScopeFromJitDebugInfo, IDebugSymbols3 interface [Windows Debugging], SetScopeFromJitDebugInfo method, SetScopeFromJitDebugInfo method [Windows Debugging], IDebugSymbols3 interface, SetScopeFromJitDebugInfo, IDebugSymbols3
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Dbgeng.h
+apiname:
+-	IDebugSymbols3.SetScopeFromJitDebugInfo
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NF:upssvc.UPSInit
-title : UPSInit function
-author : windows-driver-content
-description : The UPSInit function initializes a UPS minidriver, opens communication to the UPS unit, updates the registry, and causes the minidriver to start monitoring the UPS unit.
-old-location : battery\upsinit.htm
-old-project : battery
-ms.assetid : abcb1f9c-3de3-430c-87e0-6648d60ca420
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : UPSInit function [Battery Devices], upssvc/UPSInit, UPSInit, battery.upsinit, UPS_fns_855934b9-5f74-4308-9bed-5fd85d039247.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : upssvc.h
-req.include-header : Upssvc.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : UMDETW_ALLOCATION_USAGE
-req.product : Windows 10 or later.
+UID: NF:upssvc.UPSInit
+title: UPSInit function
+author: windows-driver-content
+description: The UPSInit function initializes a UPS minidriver, opens communication to the UPS unit, updates the registry, and causes the minidriver to start monitoring the UPS unit.
+old-location: battery\upsinit.htm
+old-project: battery
+ms.assetid: abcb1f9c-3de3-430c-87e0-6648d60ca420
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: UPSInit function [Battery Devices], upssvc/UPSInit, UPSInit, battery.upsinit, UPS_fns_855934b9-5f74-4308-9bed-5fd85d039247.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: upssvc.h
+req.include-header: Upssvc.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Upssvc.h
+apiname:
+-	UPSInit
+product: Windows
+targetos: Windows
+req.typenames: UMDETW_ALLOCATION_USAGE
+req.product: Windows 10 or later.
 ---
 
 

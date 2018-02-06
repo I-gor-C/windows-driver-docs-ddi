@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3D11DDI_STATE_CS_CONSTBUF_CB
-title : PFND3D11DDI_STATE_CS_CONSTBUF_CB
-author : windows-driver-content
-description : The pfnStateCsConstBufCb function causes the Microsoft Direct3D 11 runtime to refresh the compute shader constant buffer state.
-old-location : display\pfnstatecsconstbufcb.htm
-old-project : display
-ms.assetid : 13eeceff-e19e-4653-b29d-87567e486c28
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.pfnstatecsconstbufcb, pfnStateCsConstBufCb callback function [Display Devices], pfnStateCsConstBufCb, PFND3D11DDI_STATE_CS_CONSTBUF_CB, PFND3D11DDI_STATE_CS_CONSTBUF_CB, d3d10umddi/pfnStateCsConstBufCb, d3d11state_functions_05ec091d-7ac4-4a5c-9ae9-d782e01cb7e9.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : pfnStateCsConstBufCb is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3D11DDI_STATE_CS_CONSTBUF_CB
+title: PFND3D11DDI_STATE_CS_CONSTBUF_CB
+author: windows-driver-content
+description: The pfnStateCsConstBufCb function causes the Microsoft Direct3D 11 runtime to refresh the compute shader constant buffer state.
+old-location: display\pfnstatecsconstbufcb.htm
+old-project: display
+ms.assetid: 13eeceff-e19e-4653-b29d-87567e486c28
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.pfnstatecsconstbufcb, pfnStateCsConstBufCb callback function [Display Devices], pfnStateCsConstBufCb, PFND3D11DDI_STATE_CS_CONSTBUF_CB, PFND3D11DDI_STATE_CS_CONSTBUF_CB, d3d10umddi/pfnStateCsConstBufCb, d3d11state_functions_05ec091d-7ac4-4a5c-9ae9-d782e01cb7e9.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: pfnStateCsConstBufCb is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	pfnStateCsConstBufCb
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

@@ -1,41 +1,47 @@
 ---
-UID : NF:dbgeng.IDebugBreakpoint2.GetOffset
-title : IDebugBreakpoint2::GetOffset method
-author : windows-driver-content
-description : The GetOffset method returns the location that triggers a breakpoint.
-old-location : debugger\getoffset.htm
-old-project : debugger
-ms.assetid : 7da401c9-10c1-4a2b-91ea-c0f9f58fd87a
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : GetOffset, IDebugBreakpoint2 interface [Windows Debugging], GetOffset method, GetOffset method [Windows Debugging], ComOther_020a92c1-effa-4b14-9198-153641401e46.xml, IDebugBreakpoint2, IDebugBreakpoint::GetOffset, dbgeng/IDebugBreakpoint2::GetOffset, IDebugBreakpoint2::GetOffset, GetOffset method [Windows Debugging], IDebugBreakpoint interface, GetOffset method [Windows Debugging], IDebugBreakpoint2 interface, debugger.getoffset, IDebugBreakpoint interface [Windows Debugging], GetOffset method, dbgeng/IDebugBreakpoint::GetOffset
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugBreakpoint2.GetOffset
+title: IDebugBreakpoint2::GetOffset method
+author: windows-driver-content
+description: The GetOffset method returns the location that triggers a breakpoint.
+old-location: debugger\getoffset.htm
+old-project: debugger
+ms.assetid: 7da401c9-10c1-4a2b-91ea-c0f9f58fd87a
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: GetOffset, IDebugBreakpoint2 interface [Windows Debugging], GetOffset method, GetOffset method [Windows Debugging], ComOther_020a92c1-effa-4b14-9198-153641401e46.xml, IDebugBreakpoint2, IDebugBreakpoint::GetOffset, dbgeng/IDebugBreakpoint2::GetOffset, IDebugBreakpoint2::GetOffset, GetOffset method [Windows Debugging], IDebugBreakpoint interface, GetOffset method [Windows Debugging], IDebugBreakpoint2 interface, debugger.getoffset, IDebugBreakpoint interface [Windows Debugging], GetOffset method, dbgeng/IDebugBreakpoint::GetOffset
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugBreakpoint.GetOffset
+-	IDebugBreakpoint2.GetOffset
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:compstui._DLGPAGE
-title : "_DLGPAGE"
-author : windows-driver-content
-description : The DLGPAGE structure is used for specifying a property sheet page to CPSUI's ComPropSheet function. The structure's address is included in a COMPROPSHEETUI structure, and all member values are supplied by the ComPropSheet caller.
-old-location : print\dlgpage.htm
-old-project : print
-ms.assetid : 61fb66b9-afd7-4ec4-bbbb-66a287398484
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : "_DLGPAGE, cpsuifnc_5054b61d-a4fc-4017-a491-4d753ce3e137.xml, compstui/PDLGPAGE, *PDLGPAGE, print.dlgpage, DLGPAGE, PDLGPAGE, compstui/DLGPAGE, PDLGPAGE structure pointer [Print Devices], DLGPAGE structure [Print Devices]"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : compstui.h
-req.include-header : Compstui.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DLGPAGE, *PDLGPAGE
+UID: NS:compstui._DLGPAGE
+title: "_DLGPAGE"
+author: windows-driver-content
+description: The DLGPAGE structure is used for specifying a property sheet page to CPSUI's ComPropSheet function. The structure's address is included in a COMPROPSHEETUI structure, and all member values are supplied by the ComPropSheet caller.
+old-location: print\dlgpage.htm
+old-project: print
+ms.assetid: 61fb66b9-afd7-4ec4-bbbb-66a287398484
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: "_DLGPAGE, cpsuifnc_5054b61d-a4fc-4017-a491-4d753ce3e137.xml, compstui/PDLGPAGE, *PDLGPAGE, print.dlgpage, DLGPAGE, PDLGPAGE, compstui/DLGPAGE, PDLGPAGE structure pointer [Print Devices], DLGPAGE structure [Print Devices]"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: compstui.h
+req.include-header: Compstui.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	compstui.h
+apiname:
+-	DLGPAGE
+product: Windows
+targetos: Windows
+req.typenames: DLGPAGE, *PDLGPAGE
 ---
 
 # _DLGPAGE structure

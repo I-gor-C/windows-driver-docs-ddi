@@ -1,41 +1,49 @@
 ---
-UID : NF:dbgeng.IDebugSystemObjects4.GetCurrentProcessId
-title : IDebugSystemObjects4::GetCurrentProcessId method
-author : windows-driver-content
-description : The GetCurrentProcessId method returns the engine process ID for the current process.
-old-location : debugger\getcurrentprocessid.htm
-old-project : debugger
-ms.assetid : 5b256ccb-8f03-4936-8e03-9955c81384a5
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugSystemObjects interface [Windows Debugging], GetCurrentProcessId method, GetCurrentProcessId method [Windows Debugging], IDebugSystemObjects4 interface, dbgeng/IDebugSystemObjects3::GetCurrentProcessId, IDebugSystemObjects4::GetCurrentProcessId, dbgeng/IDebugSystemObjects::GetCurrentProcessId, debugger.getcurrentprocessid, GetCurrentProcessId method [Windows Debugging], IDebugSystemObjects interface, GetCurrentProcessId method [Windows Debugging], IDebugSystemObjects2 interface, dbgeng/IDebugSystemObjects2::GetCurrentProcessId, IDebugSystemObjects2 interface [Windows Debugging], GetCurrentProcessId method, dbgeng/IDebugSystemObjects4::GetCurrentProcessId, IDebugSystemObjects3 interface [Windows Debugging], GetCurrentProcessId method, GetCurrentProcessId, GetCurrentProcessId method [Windows Debugging], IDebugSystemObjects3 interface, IDebugSystemObjects4, GetCurrentProcessId method [Windows Debugging], IDebugSystemObjects3::GetCurrentProcessId, IDebugSystemObjects_9ae912e7-68db-45d0-8129-f55e5b3ee462.xml, IDebugSystemObjects2::GetCurrentProcessId, IDebugSystemObjects::GetCurrentProcessId, IDebugSystemObjects4 interface [Windows Debugging], GetCurrentProcessId method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSystemObjects4.GetCurrentProcessId
+title: IDebugSystemObjects4::GetCurrentProcessId method
+author: windows-driver-content
+description: The GetCurrentProcessId method returns the engine process ID for the current process.
+old-location: debugger\getcurrentprocessid.htm
+old-project: debugger
+ms.assetid: 5b256ccb-8f03-4936-8e03-9955c81384a5
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugSystemObjects interface [Windows Debugging], GetCurrentProcessId method, GetCurrentProcessId method [Windows Debugging], IDebugSystemObjects4 interface, dbgeng/IDebugSystemObjects3::GetCurrentProcessId, IDebugSystemObjects4::GetCurrentProcessId, dbgeng/IDebugSystemObjects::GetCurrentProcessId, debugger.getcurrentprocessid, GetCurrentProcessId method [Windows Debugging], IDebugSystemObjects interface, GetCurrentProcessId method [Windows Debugging], IDebugSystemObjects2 interface, dbgeng/IDebugSystemObjects2::GetCurrentProcessId, IDebugSystemObjects2 interface [Windows Debugging], GetCurrentProcessId method, dbgeng/IDebugSystemObjects4::GetCurrentProcessId, IDebugSystemObjects3 interface [Windows Debugging], GetCurrentProcessId method, GetCurrentProcessId, GetCurrentProcessId method [Windows Debugging], IDebugSystemObjects3 interface, IDebugSystemObjects4, GetCurrentProcessId method [Windows Debugging], IDebugSystemObjects3::GetCurrentProcessId, IDebugSystemObjects_9ae912e7-68db-45d0-8129-f55e5b3ee462.xml, IDebugSystemObjects2::GetCurrentProcessId, IDebugSystemObjects::GetCurrentProcessId, IDebugSystemObjects4 interface [Windows Debugging], GetCurrentProcessId method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugSystemObjects.GetCurrentProcessId
+-	IDebugSystemObjects2.GetCurrentProcessId
+-	IDebugSystemObjects3.GetCurrentProcessId
+-	IDebugSystemObjects4.GetCurrentProcessId
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

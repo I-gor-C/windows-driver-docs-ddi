@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddstor.IOCTL_STORAGE_CHECK_VERIFY
-title : IOCTL_STORAGE_CHECK_VERIFY
-author : windows-driver-content
-description : Determines whether the media has changed on a removable-media device that the caller has opened for read or write access.
-old-location : storage\ioctl_storage_check_verify.htm
-old-project : storage
-ms.assetid : 12e98642-2ed5-47d6-9461-9d6c52149749
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_storage_check_verify, IOCTL_STORAGE_CHECK_VERIFY control code [Storage Devices], IOCTL_STORAGE_CHECK_VERIFY, ntddstor/IOCTL_STORAGE_CHECK_VERIFY, k307_5ec9ef19-a741-4fb9-876e-7cfc35699dbe.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddstor.h
-req.include-header : Ntddstor.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STORAGE_ZONE_CONDITION, *PSTORAGE_ZONE_CONDITION
+UID: NI:ntddstor.IOCTL_STORAGE_CHECK_VERIFY
+title: IOCTL_STORAGE_CHECK_VERIFY
+author: windows-driver-content
+description: Determines whether the media has changed on a removable-media device that the caller has opened for read or write access.
+old-location: storage\ioctl_storage_check_verify.htm
+old-project: storage
+ms.assetid: 12e98642-2ed5-47d6-9461-9d6c52149749
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_storage_check_verify, IOCTL_STORAGE_CHECK_VERIFY control code [Storage Devices], IOCTL_STORAGE_CHECK_VERIFY, ntddstor/IOCTL_STORAGE_CHECK_VERIFY, k307_5ec9ef19-a741-4fb9-876e-7cfc35699dbe.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddstor.h
+req.include-header: Ntddstor.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddstor.h
+apiname:
+-	IOCTL_STORAGE_CHECK_VERIFY
+product: Windows
+targetos: Windows
+req.typenames: STORAGE_ZONE_CONDITION, *PSTORAGE_ZONE_CONDITION
 ---
 
 # IOCTL_STORAGE_CHECK_VERIFY IOCTL

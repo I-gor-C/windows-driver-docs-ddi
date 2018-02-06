@@ -1,41 +1,46 @@
 ---
-UID : NS:ndiswwan._NDIS_WWAN_SET_UICC_RESET
-title : "_NDIS_WWAN_SET_UICC_RESET"
-author : windows-driver-content
-description : The NDIS_WWAN_SET_UICC_RESET structure represents the passthrough action the MB host specifies for a modem miniport adapter after it resets a UICC card.
-old-location : netvista\ndis_wwan_set_uicc_reset.htm
-old-project : netvista
-ms.assetid : 98113BC2-317C-4FBD-B3A6-A14B3783D225
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : "*PNDIS_WWAN_SET_UICC_RESET, PNDIS_WWAN_SET_UICC_RESET structure pointer [Network Drivers Starting with Windows Vista], NDIS_WWAN_SET_UICC_RESET structure [Network Drivers Starting with Windows Vista], ndiswwan/PNDIS_WWAN_SET_UICC_RESET, NDIS_WWAN_SET_UICC_RESET, ndiswwan/NDIS_WWAN_SET_UICC_RESET, netvista.ndis_wwan_set_uicc_reset, PNDIS_WWAN_SET_UICC_RESET, _NDIS_WWAN_SET_UICC_RESET"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndiswwan.h
-req.include-header : Ndiswwan.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10, version 1709
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PNDIS_WWAN_SET_UICC_RESET, NDIS_WWAN_SET_UICC_RESET"
+UID: NS:ndiswwan._NDIS_WWAN_SET_UICC_RESET
+title: "_NDIS_WWAN_SET_UICC_RESET"
+author: windows-driver-content
+description: The NDIS_WWAN_SET_UICC_RESET structure represents the passthrough action the MB host specifies for a modem miniport adapter after it resets a UICC card.
+old-location: netvista\ndis_wwan_set_uicc_reset.htm
+old-project: netvista
+ms.assetid: 98113BC2-317C-4FBD-B3A6-A14B3783D225
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: "*PNDIS_WWAN_SET_UICC_RESET, PNDIS_WWAN_SET_UICC_RESET structure pointer [Network Drivers Starting with Windows Vista], NDIS_WWAN_SET_UICC_RESET structure [Network Drivers Starting with Windows Vista], ndiswwan/PNDIS_WWAN_SET_UICC_RESET, NDIS_WWAN_SET_UICC_RESET, ndiswwan/NDIS_WWAN_SET_UICC_RESET, netvista.ndis_wwan_set_uicc_reset, PNDIS_WWAN_SET_UICC_RESET, _NDIS_WWAN_SET_UICC_RESET"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndiswwan.h
+req.include-header: Ndiswwan.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10, version 1709
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndiswwan.h
+apiname:
+-	NDIS_WWAN_SET_UICC_RESET
+product: Windows
+targetos: Windows
+req.typenames: "*PNDIS_WWAN_SET_UICC_RESET, NDIS_WWAN_SET_UICC_RESET"
 ---
 
 # _NDIS_WWAN_SET_UICC_RESET structure

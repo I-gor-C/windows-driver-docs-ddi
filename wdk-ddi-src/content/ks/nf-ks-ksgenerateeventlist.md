@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsGenerateEventList
-title : KsGenerateEventList function
-author : windows-driver-content
-description : The KsGenerateEventList function enumerates the event list and searches for the specified event to generate.
-old-location : stream\ksgenerateeventlist.htm
-old-project : stream
-ms.assetid : 336dbbc1-0f3c-4a3f-b3b4-017f4d158bda
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KsGenerateEventList function [Streaming Media Devices], ksfunc_d4a351ab-f750-4486-99ae-72c42794bee0.xml, stream.ksgenerateeventlist, ks/KsGenerateEventList, KsGenerateEventList
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : Any level (See Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsGenerateEventList
+title: KsGenerateEventList function
+author: windows-driver-content
+description: The KsGenerateEventList function enumerates the event list and searches for the specified event to generate.
+old-location: stream\ksgenerateeventlist.htm
+old-project: stream
+ms.assetid: 336dbbc1-0f3c-4a3f-b3b4-017f4d158bda
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KsGenerateEventList function [Streaming Media Devices], ksfunc_d4a351ab-f750-4486-99ae-72c42794bee0.xml, stream.ksgenerateeventlist, ks/KsGenerateEventList, KsGenerateEventList
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: Any level (See Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsGenerateEventList
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

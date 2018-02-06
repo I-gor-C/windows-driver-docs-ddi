@@ -1,41 +1,46 @@
 ---
-UID : NI:acpiioct.IOCTL_ACPI_EVAL_METHOD_V1_EX
-title : IOCTL_ACPI_EVAL_METHOD_V1_EX
-author : windows-driver-content
-description : The IOCTL_ACPI_EVAL_METHOD_V1_EX control code synchronously evaluates an ACPI control method that is supported by the device.
-old-location : acpi\ioctl_acpi_eval_method_v1_ex.htm
-old-project : acpi
-ms.assetid : 2EACDAE2-C6B4-4906-AB1E-3A8FA781D528
-ms.author : windowsdriverdev
-ms.date : 12/31/2017
-ms.keywords : acpi.ioctl_acpi_eval_method_v1_ex, IOCTL_ACPI_EVAL_METHOD_V1_EX control code [ACPI Devices], IOCTL_ACPI_EVAL_METHOD_V1_EX, acpiioct/IOCTL_ACPI_EVAL_METHOD_V1_EX
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : acpiioct.h
-req.include-header : Acpiioct.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10, version 1709 and later versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : UNIT_ISOCH_PARAMS, *PUNIT_ISOCH_PARAMS
+UID: NI:acpiioct.IOCTL_ACPI_EVAL_METHOD_V1_EX
+title: IOCTL_ACPI_EVAL_METHOD_V1_EX
+author: windows-driver-content
+description: The IOCTL_ACPI_EVAL_METHOD_V1_EX control code synchronously evaluates an ACPI control method that is supported by the device.
+old-location: acpi\ioctl_acpi_eval_method_v1_ex.htm
+old-project: acpi
+ms.assetid: 2EACDAE2-C6B4-4906-AB1E-3A8FA781D528
+ms.author: windowsdriverdev
+ms.date: 12/31/2017
+ms.keywords: acpi.ioctl_acpi_eval_method_v1_ex, IOCTL_ACPI_EVAL_METHOD_V1_EX control code [ACPI Devices], IOCTL_ACPI_EVAL_METHOD_V1_EX, acpiioct/IOCTL_ACPI_EVAL_METHOD_V1_EX
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: acpiioct.h
+req.include-header: Acpiioct.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10, version 1709 and later versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Acpiioct.h
+apiname:
+-	IOCTL_ACPI_EVAL_METHOD_V1_EX
+product: Windows
+targetos: Windows
+req.typenames: UNIT_ISOCH_PARAMS, *PUNIT_ISOCH_PARAMS
 ---
 
 # IOCTL_ACPI_EVAL_METHOD_V1_EX IOCTL

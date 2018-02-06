@@ -1,41 +1,46 @@
 ---
-UID : NS:iscsicfg._MSiSCSI_TCPIPConfig
-title : "_MSiSCSI_TCPIPConfig"
-author : windows-driver-content
-description : The MSiSCSI_TCPIPConfig structure reports TCP/IP configuration information about one of the adapter's ports.
-old-location : storage\msiscsi_tcpipconfig.htm
-old-project : storage
-ms.assetid : 1f33d262-0488-46cb-a762-1f3e24cdd219
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : "_MSiSCSI_TCPIPConfig, PMSiSCSI_TCPIPConfig structure pointer [Storage Devices], iscsicfg/PMSiSCSI_TCPIPConfig, MSiSCSI_TCPIPConfig structure [Storage Devices], structs-iSCSI_4ca5e222-7926-4646-a915-014cf20caed1.xml, PMSiSCSI_TCPIPConfig, storage.msiscsi_tcpipconfig, iscsicfg/MSiSCSI_TCPIPConfig, MSiSCSI_TCPIPConfig, *PMSiSCSI_TCPIPConfig"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : iscsicfg.h
-req.include-header : Iscsicfg.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PMSiSCSI_TCPIPConfig, MSiSCSI_TCPIPConfig"
+UID: NS:iscsicfg._MSiSCSI_TCPIPConfig
+title: "_MSiSCSI_TCPIPConfig"
+author: windows-driver-content
+description: The MSiSCSI_TCPIPConfig structure reports TCP/IP configuration information about one of the adapter's ports.
+old-location: storage\msiscsi_tcpipconfig.htm
+old-project: storage
+ms.assetid: 1f33d262-0488-46cb-a762-1f3e24cdd219
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: "_MSiSCSI_TCPIPConfig, PMSiSCSI_TCPIPConfig structure pointer [Storage Devices], iscsicfg/PMSiSCSI_TCPIPConfig, MSiSCSI_TCPIPConfig structure [Storage Devices], structs-iSCSI_4ca5e222-7926-4646-a915-014cf20caed1.xml, PMSiSCSI_TCPIPConfig, storage.msiscsi_tcpipconfig, iscsicfg/MSiSCSI_TCPIPConfig, MSiSCSI_TCPIPConfig, *PMSiSCSI_TCPIPConfig"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: iscsicfg.h
+req.include-header: Iscsicfg.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	iscsicfg.h
+apiname:
+-	MSiSCSI_TCPIPConfig
+product: Windows
+targetos: Windows
+req.typenames: "*PMSiSCSI_TCPIPConfig, MSiSCSI_TCPIPConfig"
 ---
 
 # _MSiSCSI_TCPIPConfig structure

@@ -1,42 +1,47 @@
 ---
-UID : NS:wlanihv._DOT11EXT_APIS
-title : "_DOT11EXT_APIS"
-author : windows-driver-content
-description : Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
-old-location : netvista\dot11ext_apis.htm
-old-project : netvista
-ms.assetid : d533acbb-eb3b-4c49-a057-9a99faaacfc1
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : PDOT11EXT_APIS, *PDOT11EXT_APIS, DOT11EXT_APIS structure [Network Drivers Starting with Windows Vista], wlanihv/PDOT11EXT_APIS, PDOT11EXT_APIS structure pointer [Network Drivers Starting with Windows Vista], netvista.dot11ext_apis, Native_802.11_data_types_27860ed6-1413-4bc6-9cd0-fb4391dff322.xml, wlanihv/DOT11EXT_APIS, _DOT11EXT_APIS, DOT11EXT_APIS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wlanihv.h
-req.include-header : Wlanihv.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating   systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT11EXT_APIS, *PDOT11EXT_APIS
-req.product : Windows 10 or later.
+UID: NS:wlanihv._DOT11EXT_APIS
+title: "_DOT11EXT_APIS"
+author: windows-driver-content
+description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+old-location: netvista\dot11ext_apis.htm
+old-project: netvista
+ms.assetid: d533acbb-eb3b-4c49-a057-9a99faaacfc1
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: PDOT11EXT_APIS, *PDOT11EXT_APIS, DOT11EXT_APIS structure [Network Drivers Starting with Windows Vista], wlanihv/PDOT11EXT_APIS, PDOT11EXT_APIS structure pointer [Network Drivers Starting with Windows Vista], netvista.dot11ext_apis, Native_802.11_data_types_27860ed6-1413-4bc6-9cd0-fb4391dff322.xml, wlanihv/DOT11EXT_APIS, _DOT11EXT_APIS, DOT11EXT_APIS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wlanihv.h
+req.include-header: Wlanihv.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wlanihv.h
+apiname:
+-	DOT11EXT_APIS
+product: Windows
+targetos: Windows
+req.typenames: DOT11EXT_APIS, *PDOT11EXT_APIS
+req.product: Windows 10 or later.
 ---
 
 # _DOT11EXT_APIS structure

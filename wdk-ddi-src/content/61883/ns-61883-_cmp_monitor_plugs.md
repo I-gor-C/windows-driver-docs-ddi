@@ -1,41 +1,46 @@
 ---
-UID : NS:61883._CMP_MONITOR_PLUGS
-title : "_CMP_MONITOR_PLUGS"
-author : windows-driver-content
-description : This structure is used to monitor plug access. The request allows a driver to monitor all access to local oPCR and iPCR plugs.
-old-location : ieee\cmp_monitor_plugs.htm
-old-project : IEEE
-ms.assetid : D281BCBB-CDC6-442C-9A47-DF07D1BE1B28
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : 61883/PCMP_MONITOR_PLUGS, PCMP_MONITOR_PLUGS structure pointer [Buses], IEEE.cmp_monitor_plugs, CMP_MONITOR_PLUGS, 61883/CMP_MONITOR_PLUGS, *PCMP_MONITOR_PLUGS, _CMP_MONITOR_PLUGS, PCMP_MONITOR_PLUGS, CMP_MONITOR_PLUGS structure [Buses]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : 61883.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : CMP_MONITOR_PLUGS, *PCMP_MONITOR_PLUGS
+UID: NS:61883._CMP_MONITOR_PLUGS
+title: "_CMP_MONITOR_PLUGS"
+author: windows-driver-content
+description: This structure is used to monitor plug access. The request allows a driver to monitor all access to local oPCR and iPCR plugs.
+old-location: ieee\cmp_monitor_plugs.htm
+old-project: IEEE
+ms.assetid: D281BCBB-CDC6-442C-9A47-DF07D1BE1B28
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: 61883/PCMP_MONITOR_PLUGS, PCMP_MONITOR_PLUGS structure pointer [Buses], IEEE.cmp_monitor_plugs, CMP_MONITOR_PLUGS, 61883/CMP_MONITOR_PLUGS, *PCMP_MONITOR_PLUGS, _CMP_MONITOR_PLUGS, PCMP_MONITOR_PLUGS, CMP_MONITOR_PLUGS structure [Buses]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: 61883.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	61883.h
+apiname:
+-	CMP_MONITOR_PLUGS
+product: Windows
+targetos: Windows
+req.typenames: CMP_MONITOR_PLUGS, *PCMP_MONITOR_PLUGS
 ---
 
 # _CMP_MONITOR_PLUGS structure

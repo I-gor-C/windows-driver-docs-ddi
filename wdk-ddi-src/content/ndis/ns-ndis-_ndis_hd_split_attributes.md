@@ -1,41 +1,46 @@
 ---
-UID : NS:ndis._NDIS_HD_SPLIT_ATTRIBUTES
-title : "_NDIS_HD_SPLIT_ATTRIBUTES"
-author : windows-driver-content
-description : The NDIS_HD_SPLIT_ATTRIBUTES structure defines header-data split attributes, if any, that are associated with a miniport adapter.
-old-location : netvista\ndis_hd_split_attributes.htm
-old-project : netvista
-ms.assetid : c3e28d66-1fe8-4cb0-ada0-4292387da19a
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.ndis_hd_split_attributes, ndis/NDIS_HD_SPLIT_ATTRIBUTES, PNDIS_HD_SPLIT_ATTRIBUTES, _NDIS_HD_SPLIT_ATTRIBUTES, *PNDIS_HD_SPLIT_ATTRIBUTES, NDIS_HD_SPLIT_ATTRIBUTES structure [Network Drivers Starting with Windows Vista], header_data_split_ref_32bcb512-6620-48a5-8073-7b9ef0ef1f18.xml, PNDIS_HD_SPLIT_ATTRIBUTES structure pointer [Network Drivers Starting with Windows Vista], ndis/PNDIS_HD_SPLIT_ATTRIBUTES, NDIS_HD_SPLIT_ATTRIBUTES
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.1 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : See Remarks section
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_HD_SPLIT_ATTRIBUTES, *PNDIS_HD_SPLIT_ATTRIBUTES
+UID: NS:ndis._NDIS_HD_SPLIT_ATTRIBUTES
+title: "_NDIS_HD_SPLIT_ATTRIBUTES"
+author: windows-driver-content
+description: The NDIS_HD_SPLIT_ATTRIBUTES structure defines header-data split attributes, if any, that are associated with a miniport adapter.
+old-location: netvista\ndis_hd_split_attributes.htm
+old-project: netvista
+ms.assetid: c3e28d66-1fe8-4cb0-ada0-4292387da19a
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.ndis_hd_split_attributes, ndis/NDIS_HD_SPLIT_ATTRIBUTES, PNDIS_HD_SPLIT_ATTRIBUTES, _NDIS_HD_SPLIT_ATTRIBUTES, *PNDIS_HD_SPLIT_ATTRIBUTES, NDIS_HD_SPLIT_ATTRIBUTES structure [Network Drivers Starting with Windows Vista], header_data_split_ref_32bcb512-6620-48a5-8073-7b9ef0ef1f18.xml, PNDIS_HD_SPLIT_ATTRIBUTES structure pointer [Network Drivers Starting with Windows Vista], ndis/PNDIS_HD_SPLIT_ATTRIBUTES, NDIS_HD_SPLIT_ATTRIBUTES
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.1 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: See Remarks section
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndis.h
+apiname:
+-	NDIS_HD_SPLIT_ATTRIBUTES
+product: Windows
+targetos: Windows
+req.typenames: NDIS_HD_SPLIT_ATTRIBUTES, *PNDIS_HD_SPLIT_ATTRIBUTES
 ---
 
 # _NDIS_HD_SPLIT_ATTRIBUTES structure

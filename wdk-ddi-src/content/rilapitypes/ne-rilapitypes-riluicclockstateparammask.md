@@ -1,42 +1,47 @@
 ---
-UID : NE:rilapitypes.RILUICCLOCKSTATEPARAMMASK
-title : RILUICCLOCKSTATEPARAMMASK
-author : windows-driver-content
-description : This enumeration describes the RILUICCLOCKSTATEPARAMMASK.
-old-location : netvista\riluicclockstateparammask.htm
-old-project : netvista
-ms.assetid : 19366fbe-8a04-4a9f-9acc-8de0211e6e0d
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : RIL_PARAM_UICCLOCKSTATE_LOCKSTATE, RILUICCLOCKSTATEPARAMMASK, RIL_PARAM_UICCLOCKSTATE_UNBLOCKATTEMPTSLEFT, RIL_PARAM_UICCLOCKSTATE_VERIFYATTEMPTSLEFT, rilapitypes/RIL_PARAM_UICCLOCKSTATE_UICCLOCK, netvista.riluicclockstateparammask, rilapitypes/RIL_PARAM_UICCLOCKSTATE_UNBLOCKATTEMPTSLEFT, rilapitypes/RIL_PARAM_UICCLOCKSTATE_ALL, rilapitypes/RIL_PARAM_UICCLOCKSTATE_LOCKSTATE, RIL_PARAM_UICCLOCKSTATE_UICCLOCK, RIL_PARAM_UICCLOCKSTATE_ALL, rilapitypes/RIL_PARAM_UICCLOCKSTATE_VERIFYATTEMPTSLEFT, rilapitypes/RILUICCLOCKSTATEPARAMMASK, RILUICCLOCKSTATEPARAMMASK enumeration [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : rilapitypes.h
-req.include-header : Rilapitypes.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RILUICCLOCKSTATEPARAMMASK
-req.product : Windows 10 or later.
+UID: NE:rilapitypes.RILUICCLOCKSTATEPARAMMASK
+title: RILUICCLOCKSTATEPARAMMASK
+author: windows-driver-content
+description: This enumeration describes the RILUICCLOCKSTATEPARAMMASK.
+old-location: netvista\riluicclockstateparammask.htm
+old-project: netvista
+ms.assetid: 19366fbe-8a04-4a9f-9acc-8de0211e6e0d
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: RIL_PARAM_UICCLOCKSTATE_LOCKSTATE, RILUICCLOCKSTATEPARAMMASK, RIL_PARAM_UICCLOCKSTATE_UNBLOCKATTEMPTSLEFT, RIL_PARAM_UICCLOCKSTATE_VERIFYATTEMPTSLEFT, rilapitypes/RIL_PARAM_UICCLOCKSTATE_UICCLOCK, netvista.riluicclockstateparammask, rilapitypes/RIL_PARAM_UICCLOCKSTATE_UNBLOCKATTEMPTSLEFT, rilapitypes/RIL_PARAM_UICCLOCKSTATE_ALL, rilapitypes/RIL_PARAM_UICCLOCKSTATE_LOCKSTATE, RIL_PARAM_UICCLOCKSTATE_UICCLOCK, RIL_PARAM_UICCLOCKSTATE_ALL, rilapitypes/RIL_PARAM_UICCLOCKSTATE_VERIFYATTEMPTSLEFT, rilapitypes/RILUICCLOCKSTATEPARAMMASK, RILUICCLOCKSTATEPARAMMASK enumeration [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: rilapitypes.h
+req.include-header: Rilapitypes.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	rilapitypes.h
+apiname:
+-	RILUICCLOCKSTATEPARAMMASK
+product: Windows
+targetos: Windows
+req.typenames: RILUICCLOCKSTATEPARAMMASK
+req.product: Windows 10 or later.
 ---
 
 # RILUICCLOCKSTATEPARAMMASK Enumeration
@@ -57,31 +62,31 @@ enum RILUICCLOCKSTATEPARAMMASK {
 ## Constants
 
 <table>
-
-<tr>
-<td>RIL_PARAM_UICCLOCKSTATE_ALL</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_PARAM_UICCLOCKSTATE_LOCKSTATE</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_PARAM_UICCLOCKSTATE_UICCLOCK</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_PARAM_UICCLOCKSTATE_UNBLOCKATTEMPTSLEFT</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_PARAM_UICCLOCKSTATE_VERIFYATTEMPTSLEFT</td>
-<td></td>
-</tr>
+            
+                <tr>
+                    <td>RIL_PARAM_UICCLOCKSTATE_ALL</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_UICCLOCKSTATE_LOCKSTATE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_UICCLOCKSTATE_UICCLOCK</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_UICCLOCKSTATE_UNBLOCKATTEMPTSLEFT</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_UICCLOCKSTATE_VERIFYATTEMPTSLEFT</td>
+                    <td></td>
+                </tr>
 </table>
 
 
@@ -90,9 +95,9 @@ enum RILUICCLOCKSTATEPARAMMASK {
 | ---- |:---- |
 | **Header** | rilapitypes.h (include Rilapitypes.h) |
 
-## See Also
+    ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn946509">Cellular COM enumerations</a>
+        <a href="https://msdn.microsoft.com/library/windows/hardware/dn946509">Cellular COM enumerations</a>
 
  
 

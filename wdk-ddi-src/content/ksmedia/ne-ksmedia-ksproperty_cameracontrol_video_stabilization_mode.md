@@ -1,41 +1,46 @@
 ---
-UID : NE:ksmedia.KSPROPERTY_CAMERACONTROL_VIDEO_STABILIZATION_MODE
-title : KSPROPERTY_CAMERACONTROL_VIDEO_STABILIZATION_MODE
-author : windows-driver-content
-description : Used to specify camera video stabilization.
-old-location : stream\ksproperty_cameracontrol_video_stabilization_mode.htm
-old-project : stream
-ms.assetid : a6075509-1f88-4d24-8bac-2c7e047c8525
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ksmedia/KSPROPERTY_CAMERACONTROL_VIDEO_STABILIZATION_MODE_PROPERTY_ID, KSPROPERTY_CAMERACONTROL_VIDEO_STABILIZATION_MODE enumeration [Streaming Media Devices], ksmedia/KSPROPERTY_CAMERACONTROL_VIDEO_STABILIZATION_MODE, KSPROPERTY_CAMERACONTROL_VIDEO_STABILIZATION_MODE, KSPROPERTY_CAMERACONTROL_VIDEO_STABILIZATION_MODE_PROPERTY_ID, stream.ksproperty_cameracontrol_video_stabilization_mode
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KSPROPERTY_CAMERACONTROL_VIDEO_STABILIZATION_MODE
+UID: NE:ksmedia.KSPROPERTY_CAMERACONTROL_VIDEO_STABILIZATION_MODE
+title: KSPROPERTY_CAMERACONTROL_VIDEO_STABILIZATION_MODE
+author: windows-driver-content
+description: Used to specify camera video stabilization.
+old-location: stream\ksproperty_cameracontrol_video_stabilization_mode.htm
+old-project: stream
+ms.assetid: a6075509-1f88-4d24-8bac-2c7e047c8525
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ksmedia/KSPROPERTY_CAMERACONTROL_VIDEO_STABILIZATION_MODE_PROPERTY_ID, KSPROPERTY_CAMERACONTROL_VIDEO_STABILIZATION_MODE enumeration [Streaming Media Devices], ksmedia/KSPROPERTY_CAMERACONTROL_VIDEO_STABILIZATION_MODE, KSPROPERTY_CAMERACONTROL_VIDEO_STABILIZATION_MODE, KSPROPERTY_CAMERACONTROL_VIDEO_STABILIZATION_MODE_PROPERTY_ID, stream.ksproperty_cameracontrol_video_stabilization_mode
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ksmedia.h
+apiname:
+-	KSPROPERTY_CAMERACONTROL_VIDEO_STABILIZATION_MODE
+product: Windows
+targetos: Windows
+req.typenames: KSPROPERTY_CAMERACONTROL_VIDEO_STABILIZATION_MODE
 ---
 
 # KSPROPERTY_CAMERACONTROL_VIDEO_STABILIZATION_MODE Enumeration
@@ -51,11 +56,11 @@ typedef enum  {
 ## Constants
 
 <table>
-
-<tr>
-<td>KSPROPERTY_CAMERACONTROL_VIDEO_STABILIZATION_MODE_PROPERTY_ID</td>
-<td>The <a href="https://msdn.microsoft.com/library/windows/hardware/jj156043">KSPROPERTY_CAMERACONTROL_VIDEO_STABILIZATION_MODE_PROPERTY</a> property is used to specify video stabilization.</td>
-</tr>
+            
+                <tr>
+                    <td>KSPROPERTY_CAMERACONTROL_VIDEO_STABILIZATION_MODE_PROPERTY_ID</td>
+                    <td>The <a href="https://msdn.microsoft.com/library/windows/hardware/jj156043">KSPROPERTY_CAMERACONTROL_VIDEO_STABILIZATION_MODE_PROPERTY</a> property is used to specify video stabilization.</td>
+                </tr>
 </table>
 
 
@@ -65,9 +70,9 @@ typedef enum  {
 | **Windows version** | Windows 8 Windows 8 |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
-## See Also
+    ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/jj156043">KSPROPERTY_CAMERACONTROL_VIDEO_STABILIZATION_MODE_PROPERTY</a>
+        <a href="https://msdn.microsoft.com/library/windows/hardware/jj156043">KSPROPERTY_CAMERACONTROL_VIDEO_STABILIZATION_MODE_PROPERTY</a>
 
  
 

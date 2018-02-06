@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugControl5.GetContextStackTraceEx
-title : IDebugControl5::GetContextStackTraceEx method
-author : windows-driver-content
-description : The GetContextStackTraceEx method returns the frames at the top of the call stack, starting with an arbitrary register context and returning the reconstructed register context for each stack frame.
-old-location : debugger\idebugcontrol5_getcontextstacktraceex.htm
-old-project : debugger
-ms.assetid : 26B191ED-A38B-412D-93C3-E9A55216F91E
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : GetContextStackTraceEx, IDebugControl5 interface [Windows Debugging], GetContextStackTraceEx method, debugger.idebugcontrol5_getcontextstacktraceex, dbgeng/IDebugControl5::GetContextStackTraceEx, IDebugControl5::GetContextStackTraceEx, GetContextStackTraceEx method [Windows Debugging], IDebugControl5, GetContextStackTraceEx method [Windows Debugging], IDebugControl5 interface
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h, Ntddk.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl5.GetContextStackTraceEx
+title: IDebugControl5::GetContextStackTraceEx method
+author: windows-driver-content
+description: The GetContextStackTraceEx method returns the frames at the top of the call stack, starting with an arbitrary register context and returning the reconstructed register context for each stack frame.
+old-location: debugger\idebugcontrol5_getcontextstacktraceex.htm
+old-project: debugger
+ms.assetid: 26B191ED-A38B-412D-93C3-E9A55216F91E
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: GetContextStackTraceEx, IDebugControl5 interface [Windows Debugging], GetContextStackTraceEx method, debugger.idebugcontrol5_getcontextstacktraceex, dbgeng/IDebugControl5::GetContextStackTraceEx, IDebugControl5::GetContextStackTraceEx, GetContextStackTraceEx method [Windows Debugging], IDebugControl5, GetContextStackTraceEx method [Windows Debugging], IDebugControl5 interface
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h, Ntddk.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl5.GetContextStackTraceEx
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

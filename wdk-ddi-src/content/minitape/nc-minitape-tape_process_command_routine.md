@@ -1,41 +1,46 @@
 ---
-UID : NC:minitape.TAPE_PROCESS_COMMAND_ROUTINE
-title : TAPE_PROCESS_COMMAND_ROUTINE
-author : windows-driver-content
-description : TAPE_PROCESS_COMMAND_ROUTINE handles the device-specific aspects of an IOCTL request.
-old-location : storage\tapeminicreatepartition.htm
-old-project : storage
-ms.assetid : 6675d840-8b13-44ef-bbdb-84d683240175
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.tapeminicreatepartition, (*TAPE_PROCESS_COMMAND_ROUTINE) routine [Storage Devices], (*TAPE_PROCESS_COMMAND_ROUTINE), TAPE_PROCESS_COMMAND_ROUTINE, TAPE_PROCESS_COMMAND_ROUTINE, minitape/(*TAPE_PROCESS_COMMAND_ROUTINE), tapemini_34ae90ec-7f62-45f3-91e4-d64acfdbd797.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : minitape.h
-req.include-header : Minitape.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPROCESSOR_NUMBER, PROCESSOR_NUMBER"
+UID: NC:minitape.TAPE_PROCESS_COMMAND_ROUTINE
+title: TAPE_PROCESS_COMMAND_ROUTINE
+author: windows-driver-content
+description: TAPE_PROCESS_COMMAND_ROUTINE handles the device-specific aspects of an IOCTL request.
+old-location: storage\tapeminicreatepartition.htm
+old-project: storage
+ms.assetid: 6675d840-8b13-44ef-bbdb-84d683240175
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.tapeminicreatepartition, (*TAPE_PROCESS_COMMAND_ROUTINE) routine [Storage Devices], (*TAPE_PROCESS_COMMAND_ROUTINE), TAPE_PROCESS_COMMAND_ROUTINE, TAPE_PROCESS_COMMAND_ROUTINE, minitape/(*TAPE_PROCESS_COMMAND_ROUTINE), tapemini_34ae90ec-7f62-45f3-91e4-d64acfdbd797.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: minitape.h
+req.include-header: Minitape.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	minitape.h
+apiname:
+-	(*TAPE_PROCESS_COMMAND_ROUTINE)
+product: Windows
+targetos: Windows
+req.typenames: "*PPROCESSOR_NUMBER, PROCESSOR_NUMBER"
 ---
 
 

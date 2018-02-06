@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddk._WHEA_PCIXBUS_ERROR_SECTION_VALIDBITS
-title : "_WHEA_PCIXBUS_ERROR_SECTION_VALIDBITS"
-author : windows-driver-content
-description : The WHEA_PCIXBUS_ERROR_SECTION_VALIDBITS union describes which members of a WHEA_PCIXBUS_ERROR_SECTION structure contain valid data.
-old-location : whea\whea_pcixbus_error_section_validbits.htm
-old-project : whea
-ms.assetid : 85f14500-9cf6-42a6-a302-0990b99ddb5f
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : PWHEA_PCIXBUS_ERROR_SECTION_VALIDBITS, WHEA_PCIXBUS_ERROR_VALIDBITS, whearef_a01d7635-52ac-4b47-98f9-b09601dce4ff.xml, ntddk/WHEA_PCIXBUS_ERROR_SECTION_VALIDBITS, WHEA_PCIXBUS_ERROR_SECTION_VALIDBITS union [WHEA Drivers and Applications], _WHEA_PCIXBUS_ERROR_SECTION_VALIDBITS, ntddk/PWHEA_PCIXBUS_ERROR_SECTION_VALIDBITS, PWHEA_PCIXBUS_ERROR_SECTION_VALIDBITS union pointer [WHEA Drivers and Applications], *PWHEA_PCIXBUS_ERROR_SECTION_VALIDBITS, *PWHEA_PCIXBUS_ERROR_VALIDBITS, WHEA_PCIXBUS_ERROR_SECTION_VALIDBITS, whea.whea_pcixbus_error_section_validbits
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_PCIXBUS_ERROR_SECTION_VALIDBITS, *PWHEA_PCIXBUS_ERROR_SECTION_VALIDBITS
+UID: NS:ntddk._WHEA_PCIXBUS_ERROR_SECTION_VALIDBITS
+title: "_WHEA_PCIXBUS_ERROR_SECTION_VALIDBITS"
+author: windows-driver-content
+description: The WHEA_PCIXBUS_ERROR_SECTION_VALIDBITS union describes which members of a WHEA_PCIXBUS_ERROR_SECTION structure contain valid data.
+old-location: whea\whea_pcixbus_error_section_validbits.htm
+old-project: whea
+ms.assetid: 85f14500-9cf6-42a6-a302-0990b99ddb5f
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: PWHEA_PCIXBUS_ERROR_SECTION_VALIDBITS, WHEA_PCIXBUS_ERROR_VALIDBITS, whearef_a01d7635-52ac-4b47-98f9-b09601dce4ff.xml, ntddk/WHEA_PCIXBUS_ERROR_SECTION_VALIDBITS, WHEA_PCIXBUS_ERROR_SECTION_VALIDBITS union [WHEA Drivers and Applications], _WHEA_PCIXBUS_ERROR_SECTION_VALIDBITS, ntddk/PWHEA_PCIXBUS_ERROR_SECTION_VALIDBITS, PWHEA_PCIXBUS_ERROR_SECTION_VALIDBITS union pointer [WHEA Drivers and Applications], *PWHEA_PCIXBUS_ERROR_SECTION_VALIDBITS, *PWHEA_PCIXBUS_ERROR_VALIDBITS, WHEA_PCIXBUS_ERROR_SECTION_VALIDBITS, whea.whea_pcixbus_error_section_validbits
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddk.h
+apiname:
+-	WHEA_PCIXBUS_ERROR_SECTION_VALIDBITS
+product: Windows
+targetos: Windows
+req.typenames: WHEA_PCIXBUS_ERROR_SECTION_VALIDBITS, *PWHEA_PCIXBUS_ERROR_SECTION_VALIDBITS
 ---
 
 # _WHEA_PCIXBUS_ERROR_SECTION_VALIDBITS structure

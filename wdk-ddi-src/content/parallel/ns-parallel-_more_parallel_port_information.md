@@ -1,41 +1,46 @@
 ---
-UID : NS:parallel._MORE_PARALLEL_PORT_INFORMATION
-title : "_MORE_PARALLEL_PORT_INFORMATION"
-author : windows-driver-content
-description : The MORE_PARALLEL_PORT_INFORMATION structure specifies information about the system interface that supports the operation of a parallel port.
-old-location : parports\more_parallel_port_information.htm
-old-project : parports
-ms.assetid : b21bfbce-5436-4865-b291-2e55abc4aad1
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : PMORE_PARALLEL_PORT_INFORMATION structure pointer [Parallel Ports], PMORE_PARALLEL_PORT_INFORMATION, MORE_PARALLEL_PORT_INFORMATION, cisspd_0a671b2f-443c-4373-aeb0-8bf59c1d836b.xml, parallel/PMORE_PARALLEL_PORT_INFORMATION, *PMORE_PARALLEL_PORT_INFORMATION, parports.more_parallel_port_information, _MORE_PARALLEL_PORT_INFORMATION, parallel/MORE_PARALLEL_PORT_INFORMATION, MORE_PARALLEL_PORT_INFORMATION structure [Parallel Ports]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : parallel.h
-req.include-header : Parallel.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PMORE_PARALLEL_PORT_INFORMATION, MORE_PARALLEL_PORT_INFORMATION"
+UID: NS:parallel._MORE_PARALLEL_PORT_INFORMATION
+title: "_MORE_PARALLEL_PORT_INFORMATION"
+author: windows-driver-content
+description: The MORE_PARALLEL_PORT_INFORMATION structure specifies information about the system interface that supports the operation of a parallel port.
+old-location: parports\more_parallel_port_information.htm
+old-project: parports
+ms.assetid: b21bfbce-5436-4865-b291-2e55abc4aad1
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: PMORE_PARALLEL_PORT_INFORMATION structure pointer [Parallel Ports], PMORE_PARALLEL_PORT_INFORMATION, MORE_PARALLEL_PORT_INFORMATION, cisspd_0a671b2f-443c-4373-aeb0-8bf59c1d836b.xml, parallel/PMORE_PARALLEL_PORT_INFORMATION, *PMORE_PARALLEL_PORT_INFORMATION, parports.more_parallel_port_information, _MORE_PARALLEL_PORT_INFORMATION, parallel/MORE_PARALLEL_PORT_INFORMATION, MORE_PARALLEL_PORT_INFORMATION structure [Parallel Ports]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: parallel.h
+req.include-header: Parallel.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	parallel.h
+apiname:
+-	MORE_PARALLEL_PORT_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: "*PMORE_PARALLEL_PORT_INFORMATION, MORE_PARALLEL_PORT_INFORMATION"
 ---
 
 # _MORE_PARALLEL_PORT_INFORMATION structure

@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.KSAUDIO_CHANNEL_CONFIG
-title : KSAUDIO_CHANNEL_CONFIG
-author : windows-driver-content
-description : The KSAUDIO_CHANNEL_CONFIG structure specifies the configuration of channels within the data format of an audio stream.
-old-location : audio\ksaudio_channel_config.htm
-old-project : audio
-ms.assetid : 64e46fd5-f6bf-425d-b2a5-c938f8e565b9
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : "*PKSAUDIO_CHANNEL_CONFIG, KSAUDIO_CHANNEL_CONFIG structure [Audio Devices], ksmedia/KSAUDIO_CHANNEL_CONFIG, audio.ksaudio_channel_config, aud-prop_e81a721c-474b-4b51-8bed-df294a477050.xml, KSAUDIO_CHANNEL_CONFIG, PKSAUDIO_CHANNEL_CONFIG structure pointer [Audio Devices], ksmedia/PKSAUDIO_CHANNEL_CONFIG, PKSAUDIO_CHANNEL_CONFIG"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKSAUDIO_CHANNEL_CONFIG, KSAUDIO_CHANNEL_CONFIG"
+UID: NS:ksmedia.KSAUDIO_CHANNEL_CONFIG
+title: KSAUDIO_CHANNEL_CONFIG
+author: windows-driver-content
+description: The KSAUDIO_CHANNEL_CONFIG structure specifies the configuration of channels within the data format of an audio stream.
+old-location: audio\ksaudio_channel_config.htm
+old-project: audio
+ms.assetid: 64e46fd5-f6bf-425d-b2a5-c938f8e565b9
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: "*PKSAUDIO_CHANNEL_CONFIG, KSAUDIO_CHANNEL_CONFIG structure [Audio Devices], ksmedia/KSAUDIO_CHANNEL_CONFIG, audio.ksaudio_channel_config, aud-prop_e81a721c-474b-4b51-8bed-df294a477050.xml, KSAUDIO_CHANNEL_CONFIG, PKSAUDIO_CHANNEL_CONFIG structure pointer [Audio Devices], ksmedia/PKSAUDIO_CHANNEL_CONFIG, PKSAUDIO_CHANNEL_CONFIG"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	KSAUDIO_CHANNEL_CONFIG
+product: Windows
+targetos: Windows
+req.typenames: "*PKSAUDIO_CHANNEL_CONFIG, KSAUDIO_CHANNEL_CONFIG"
 ---
 
 # KSAUDIO_CHANNEL_CONFIG structure

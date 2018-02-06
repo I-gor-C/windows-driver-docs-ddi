@@ -1,41 +1,46 @@
 ---
-UID : NC:ndkpi.NDK_FN_BUILD_LAM
-title : NDK_FN_BUILD_LAM
-author : windows-driver-content
-description : The NdkBuildLam (NDK_FN_BUILD_LAM) function gets an adapter logical address mapping (LAM) from the NDK provider for a virtually contiguous memory region.
-old-location : netvista\ndk_fn_build_lam.htm
-old-project : netvista
-ms.assetid : 89183961-0A96-4ED0-8316-E6A2C99C929F
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.ndk_fn_build_lam, NdkBuildLam callback function [Network Drivers Starting with Windows Vista], NdkBuildLam, NDK_FN_BUILD_LAM, NDK_FN_BUILD_LAM, ndkpi/NdkBuildLam
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ndkpi.h
-req.include-header : Ndkpi.h
-req.target-type : Windows
-req.target-min-winverclnt : None supported,Supported in NDIS 6.30 and later.
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_WWAN_VISIBLE_PROVIDERS, *PNDIS_WWAN_VISIBLE_PROVIDERS
+UID: NC:ndkpi.NDK_FN_BUILD_LAM
+title: NDK_FN_BUILD_LAM
+author: windows-driver-content
+description: The NdkBuildLam (NDK_FN_BUILD_LAM) function gets an adapter logical address mapping (LAM) from the NDK provider for a virtually contiguous memory region.
+old-location: netvista\ndk_fn_build_lam.htm
+old-project: netvista
+ms.assetid: 89183961-0A96-4ED0-8316-E6A2C99C929F
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.ndk_fn_build_lam, NdkBuildLam callback function [Network Drivers Starting with Windows Vista], NdkBuildLam, NDK_FN_BUILD_LAM, NDK_FN_BUILD_LAM, ndkpi/NdkBuildLam
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ndkpi.h
+req.include-header: Ndkpi.h
+req.target-type: Windows
+req.target-min-winverclnt: None supported,Supported in NDIS 6.30 and later.
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	ndkpi.h
+apiname:
+-	NdkBuildLam
+product: Windows
+targetos: Windows
+req.typenames: NDIS_WWAN_VISIBLE_PROVIDERS, *PNDIS_WWAN_VISIBLE_PROVIDERS
 ---
 
 

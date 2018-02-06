@@ -1,41 +1,46 @@
 ---
-UID : NS:iscsidef._ISCSI_TargetMapping
-title : "_ISCSI_TargetMapping"
-author : windows-driver-content
-description : The ISCSI_TargetMapping structure maps a collection of logical unit numbers (LUNs) that are locally defined to a group of 64-bit iSCSI logical unit numbers.
-old-location : storage\iscsi_targetmapping.htm
-old-project : storage
-ms.assetid : 9b8c5024-5d37-4f85-be00-1a60dd9ab323
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : ISCSI_TargetMapping structure [Storage Devices], storage.iscsi_targetmapping, iscsidef/PISCSI_TargetMapping, *PISCSI_TargetMapping, ISCSI_TargetMapping, PISCSI_TargetMapping structure pointer [Storage Devices], structs-iSCSI_5512347c-9b89-4d14-9c84-4e7b9191dbfa.xml, PISCSI_TargetMapping, _ISCSI_TargetMapping, iscsidef/ISCSI_TargetMapping
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : iscsidef.h
-req.include-header : Iscsidef.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : ISCSI_TargetMapping, *PISCSI_TargetMapping
+UID: NS:iscsidef._ISCSI_TargetMapping
+title: "_ISCSI_TargetMapping"
+author: windows-driver-content
+description: The ISCSI_TargetMapping structure maps a collection of logical unit numbers (LUNs) that are locally defined to a group of 64-bit iSCSI logical unit numbers.
+old-location: storage\iscsi_targetmapping.htm
+old-project: storage
+ms.assetid: 9b8c5024-5d37-4f85-be00-1a60dd9ab323
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: ISCSI_TargetMapping structure [Storage Devices], storage.iscsi_targetmapping, iscsidef/PISCSI_TargetMapping, *PISCSI_TargetMapping, ISCSI_TargetMapping, PISCSI_TargetMapping structure pointer [Storage Devices], structs-iSCSI_5512347c-9b89-4d14-9c84-4e7b9191dbfa.xml, PISCSI_TargetMapping, _ISCSI_TargetMapping, iscsidef/ISCSI_TargetMapping
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: iscsidef.h
+req.include-header: Iscsidef.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	iscsidef.h
+apiname:
+-	ISCSI_TargetMapping
+product: Windows
+targetos: Windows
+req.typenames: ISCSI_TargetMapping, *PISCSI_TargetMapping
 ---
 
 # _ISCSI_TargetMapping structure

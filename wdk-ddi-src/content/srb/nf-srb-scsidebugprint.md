@@ -1,42 +1,48 @@
 ---
-UID : NF:srb.ScsiDebugPrint
-title : ScsiDebugPrint function
-author : windows-driver-content
-description : The ScsiDebugPrint routine prints debug information with a level of verbosity based on global values set in the kernel debugger or set in the registry and initialized when the system boots.
-old-location : storage\scsidebugprint.htm
-old-project : storage
-ms.assetid : bbf3ea14-1802-4433-9043-73bfc0c447bf
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : scsiprt_ef011e55-85be-4ec8-8ba3-3838417bcd15.xml, ScsiDebugPrint routine [Storage Devices], storage.scsidebugprint, srb/ScsiDebugPrint, ScsiDebugPrint
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : srb.h
-req.include-header : Miniport.h, Scsi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Scsiport.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SPB_CONTROLLER_CONFIG, *PSPB_CONTROLLER_CONFIG
-req.product : Windows 10 or later.
+UID: NF:srb.ScsiDebugPrint
+title: ScsiDebugPrint function
+author: windows-driver-content
+description: The ScsiDebugPrint routine prints debug information with a level of verbosity based on global values set in the kernel debugger or set in the registry and initialized when the system boots.
+old-location: storage\scsidebugprint.htm
+old-project: storage
+ms.assetid: bbf3ea14-1802-4433-9043-73bfc0c447bf
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: scsiprt_ef011e55-85be-4ec8-8ba3-3838417bcd15.xml, ScsiDebugPrint routine [Storage Devices], storage.scsidebugprint, srb/ScsiDebugPrint, ScsiDebugPrint
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: srb.h
+req.include-header: Miniport.h, Scsi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Scsiport.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Scsiport.lib
+-	Scsiport.dll
+apiname:
+-	ScsiDebugPrint
+product: Windows
+targetos: Windows
+req.typenames: SPB_CONTROLLER_CONFIG, *PSPB_CONTROLLER_CONFIG
+req.product: Windows 10 or later.
 ---
 
 

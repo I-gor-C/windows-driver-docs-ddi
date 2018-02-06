@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IRequestCallbackCancel.OnCancel
-title : IRequestCallbackCancel::OnCancel method
-author : windows-driver-content
-description : The OnCancel method is called when an application cancels an I/O operation through the Microsoft Win32 CancelIo, CancelIoEx, or CancelSynchronousIo function.
-old-location : wdf\irequestcallbackcancel_oncancel.htm
-old-project : wdf
-ms.assetid : 67c85eaa-bb47-4384-8e37-fdbbc879b352
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.irequestcallbackcancel_oncancel, OnCancel method, OnCancel, IRequestCallbackCancel, IRequestCallbackCancel::OnCancel, UMDFRequestObjectRef_bdb47237-28bf-4b07-9bcb-f8d029636d2d.xml, wudfddi/IRequestCallbackCancel::OnCancel, IRequestCallbackCancel interface, OnCancel method, OnCancel method, IRequestCallbackCancel interface, umdf.irequestcallbackcancel_oncancel
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IRequestCallbackCancel.OnCancel
+title: IRequestCallbackCancel::OnCancel method
+author: windows-driver-content
+description: The OnCancel method is called when an application cancels an I/O operation through the Microsoft Win32 CancelIo, CancelIoEx, or CancelSynchronousIo function.
+old-location: wdf\irequestcallbackcancel_oncancel.htm
+old-project: wdf
+ms.assetid: 67c85eaa-bb47-4384-8e37-fdbbc879b352
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.irequestcallbackcancel_oncancel, OnCancel method, OnCancel, IRequestCallbackCancel, IRequestCallbackCancel::OnCancel, UMDFRequestObjectRef_bdb47237-28bf-4b07-9bcb-f8d029636d2d.xml, wudfddi/IRequestCallbackCancel::OnCancel, IRequestCallbackCancel interface, OnCancel method, OnCancel method, IRequestCallbackCancel interface, umdf.irequestcallbackcancel_oncancel
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Wudfddi.h
+apiname:
+-	IRequestCallbackCancel.OnCancel
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

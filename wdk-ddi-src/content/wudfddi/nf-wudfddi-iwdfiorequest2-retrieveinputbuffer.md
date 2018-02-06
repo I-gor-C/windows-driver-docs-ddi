@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFIoRequest2.RetrieveInputBuffer
-title : IWDFIoRequest2::RetrieveInputBuffer method
-author : windows-driver-content
-description : The RequestRetrieveInputBuffer method retrieves an I/O request's input buffer.
-old-location : wdf\iwdfiorequest2_retrieveinputbuffer.htm
-old-project : wdf
-ms.assetid : f727d9b7-d7ea-4551-bc5a-7829f9807e02
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : UMDFRequestObjectRef_d4e2aa27-329a-4438-8010-579f8a3a3363.xml, umdf.iwdfiorequest2_retrieveinputbuffer, IWDFIoRequest2::RetrieveInputBuffer, IWDFIoRequest2, RetrieveInputBuffer method, IWDFIoRequest2 interface, wudfddi/IWDFIoRequest2::RetrieveInputBuffer, RetrieveInputBuffer, wdf.iwdfiorequest2_retrieveinputbuffer, RetrieveInputBuffer method, IWDFIoRequest2 interface, RetrieveInputBuffer method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.9
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFIoRequest2.RetrieveInputBuffer
+title: IWDFIoRequest2::RetrieveInputBuffer method
+author: windows-driver-content
+description: The RequestRetrieveInputBuffer method retrieves an I/O request's input buffer.
+old-location: wdf\iwdfiorequest2_retrieveinputbuffer.htm
+old-project: wdf
+ms.assetid: f727d9b7-d7ea-4551-bc5a-7829f9807e02
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: UMDFRequestObjectRef_d4e2aa27-329a-4438-8010-579f8a3a3363.xml, umdf.iwdfiorequest2_retrieveinputbuffer, IWDFIoRequest2::RetrieveInputBuffer, IWDFIoRequest2, RetrieveInputBuffer method, IWDFIoRequest2 interface, wudfddi/IWDFIoRequest2::RetrieveInputBuffer, RetrieveInputBuffer, wdf.iwdfiorequest2_retrieveinputbuffer, RetrieveInputBuffer method, IWDFIoRequest2 interface, RetrieveInputBuffer method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.9
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFIoRequest2.RetrieveInputBuffer
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

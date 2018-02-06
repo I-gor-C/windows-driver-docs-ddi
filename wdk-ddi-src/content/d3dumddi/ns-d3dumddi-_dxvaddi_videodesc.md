@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._DXVADDI_VIDEODESC
-title : "_DXVADDI_VIDEODESC"
-author : windows-driver-content
-description : The DXVADDI_VIDEODESC structure describes a video stream.
-old-location : display\dxvaddi_videodesc.htm
-old-project : display
-ms.assetid : 19121888-ad5c-4596-a7ec-a95fbffda685
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3dumddi/DXVADDI_VIDEODESC, display.dxvaddi_videodesc, DXVADDI_VIDEODESC, DXVA2_Structs_7e8c3d70-50a3-48f7-bc5e-4280a599e43d.xml, _DXVADDI_VIDEODESC, DXVADDI_VIDEODESC structure [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXVADDI_VIDEODESC
+UID: NS:d3dumddi._DXVADDI_VIDEODESC
+title: "_DXVADDI_VIDEODESC"
+author: windows-driver-content
+description: The DXVADDI_VIDEODESC structure describes a video stream.
+old-location: display\dxvaddi_videodesc.htm
+old-project: display
+ms.assetid: 19121888-ad5c-4596-a7ec-a95fbffda685
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3dumddi/DXVADDI_VIDEODESC, display.dxvaddi_videodesc, DXVADDI_VIDEODESC, DXVA2_Structs_7e8c3d70-50a3-48f7-bc5e-4280a599e43d.xml, _DXVADDI_VIDEODESC, DXVADDI_VIDEODESC structure [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	DXVADDI_VIDEODESC
+product: Windows
+targetos: Windows
+req.typenames: DXVADDI_VIDEODESC
 ---
 
 # _DXVADDI_VIDEODESC structure

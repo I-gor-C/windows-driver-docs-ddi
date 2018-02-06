@@ -1,42 +1,47 @@
 ---
-UID : NS:windot11._DOT11_MAC_ADDRESS
-title : "_DOT11_MAC_ADDRESS"
-author : windows-driver-content
-description : Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
-old-location : netvista\dot11_mac_address.htm
-old-project : netvista
-ms.assetid : 6b2b17fd-3695-4598-8d9a-be28e1bc5b53
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.dot11_mac_address, DOT11_MAC_ADDRESS structure [Network Drivers Starting with Windows Vista], _DOT11_MAC_ADDRESS, windot11/PDOT11_MAC_ADDRESS, DOT11_MAC_ADDRESS, PDOT11_MAC_ADDRESS, PDOT11_MAC_ADDRESS structure pointer [Network Drivers Starting with Windows Vista], *PDOT11_MAC_ADDRESS, windot11/DOT11_MAC_ADDRESS, Native_802.11_data_types_8ff45785-198d-48f0-99b5-b79a27753668.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : windot11.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating   systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT11_MAC_ADDRESS, *PDOT11_MAC_ADDRESS
-req.product : Windows 10 or later.
+UID: NS:windot11._DOT11_MAC_ADDRESS
+title: "_DOT11_MAC_ADDRESS"
+author: windows-driver-content
+description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+old-location: netvista\dot11_mac_address.htm
+old-project: netvista
+ms.assetid: 6b2b17fd-3695-4598-8d9a-be28e1bc5b53
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.dot11_mac_address, DOT11_MAC_ADDRESS structure [Network Drivers Starting with Windows Vista], _DOT11_MAC_ADDRESS, windot11/PDOT11_MAC_ADDRESS, DOT11_MAC_ADDRESS, PDOT11_MAC_ADDRESS, PDOT11_MAC_ADDRESS structure pointer [Network Drivers Starting with Windows Vista], *PDOT11_MAC_ADDRESS, windot11/DOT11_MAC_ADDRESS, Native_802.11_data_types_8ff45785-198d-48f0-99b5-b79a27753668.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: windot11.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	windot11.h
+apiname:
+-	DOT11_MAC_ADDRESS
+product: Windows
+targetos: Windows
+req.typenames: DOT11_MAC_ADDRESS, *PDOT11_MAC_ADDRESS
+req.product: Windows 10 or later.
 ---
 
 # _DOT11_MAC_ADDRESS structure

@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddscsi._MPIO_PASS_THROUGH_PATH_DIRECT
-title : "_MPIO_PASS_THROUGH_PATH_DIRECT"
-author : windows-driver-content
-description : The MPIO_PASS_THROUGH_PATH_DIRECT structure is used together with an IOCTL_MPIO_PASS_THROUGH_PATH_DIRECT request to instruct the port driver to send an embedded SCSI command to the target device.
-old-location : storage\mpio_pass_through_path_direct.htm
-old-project : storage
-ms.assetid : b4ddaee3-97af-46a6-982c-16b5f6966a08
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.mpio_pass_through_path_direct, _MPIO_PASS_THROUGH_PATH_DIRECT, PMPIO_PASS_THROUGH_PATH_DIRECT, *PMPIO_PASS_THROUGH_PATH_DIRECT, structs-scsibus_54825e13-2114-46d8-ab0f-84feb86b8f5c.xml, ntddscsi/MPIO_PASS_THROUGH_PATH_DIRECT, ntddscsi/PMPIO_PASS_THROUGH_PATH_DIRECT, MPIO_PASS_THROUGH_PATH_DIRECT structure [Storage Devices], PMPIO_PASS_THROUGH_PATH_DIRECT structure pointer [Storage Devices], MPIO_PASS_THROUGH_PATH_DIRECT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddscsi.h
-req.include-header : Ntddscsi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : MPIO_PASS_THROUGH_PATH_DIRECT, *PMPIO_PASS_THROUGH_PATH_DIRECT
+UID: NS:ntddscsi._MPIO_PASS_THROUGH_PATH_DIRECT
+title: "_MPIO_PASS_THROUGH_PATH_DIRECT"
+author: windows-driver-content
+description: The MPIO_PASS_THROUGH_PATH_DIRECT structure is used together with an IOCTL_MPIO_PASS_THROUGH_PATH_DIRECT request to instruct the port driver to send an embedded SCSI command to the target device.
+old-location: storage\mpio_pass_through_path_direct.htm
+old-project: storage
+ms.assetid: b4ddaee3-97af-46a6-982c-16b5f6966a08
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.mpio_pass_through_path_direct, _MPIO_PASS_THROUGH_PATH_DIRECT, PMPIO_PASS_THROUGH_PATH_DIRECT, *PMPIO_PASS_THROUGH_PATH_DIRECT, structs-scsibus_54825e13-2114-46d8-ab0f-84feb86b8f5c.xml, ntddscsi/MPIO_PASS_THROUGH_PATH_DIRECT, ntddscsi/PMPIO_PASS_THROUGH_PATH_DIRECT, MPIO_PASS_THROUGH_PATH_DIRECT structure [Storage Devices], PMPIO_PASS_THROUGH_PATH_DIRECT structure pointer [Storage Devices], MPIO_PASS_THROUGH_PATH_DIRECT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddscsi.h
+req.include-header: Ntddscsi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddscsi.h
+apiname:
+-	MPIO_PASS_THROUGH_PATH_DIRECT
+product: Windows
+targetos: Windows
+req.typenames: MPIO_PASS_THROUGH_PATH_DIRECT, *PMPIO_PASS_THROUGH_PATH_DIRECT
 ---
 
 # _MPIO_PASS_THROUGH_PATH_DIRECT structure

@@ -1,41 +1,46 @@
 ---
-UID : NS:ntifs._FILE_ALL_INFORMATION
-title : "_FILE_ALL_INFORMATION"
-author : windows-driver-content
-description : The FILE_ALL_INFORMATION structure is a container for several FILE_XXX_INFORMATION structures.
-old-location : kernel\file_all_information.htm
-old-project : kernel
-ms.assetid : 1b5f314c-6918-4cb8-a4e2-9ca0f4c5ea54
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : PFILE_ALL_INFORMATION, kernel.file_all_information, PFILE_ALL_INFORMATION structure pointer [Kernel-Mode Driver Architecture], kstruct_b_24c6b1da-76d1-46a9-838d-bb19af21d6f8.xml, FILE_ALL_INFORMATION structure [Kernel-Mode Driver Architecture], FILE_ALL_INFORMATION, ntifs/FILE_ALL_INFORMATION, *PFILE_ALL_INFORMATION, ntifs/PFILE_ALL_INFORMATION, _FILE_ALL_INFORMATION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntifs.h
-req.include-header : Ntifs.h, Fltkernel.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in Windows XP and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FILE_ALL_INFORMATION, *PFILE_ALL_INFORMATION
+UID: NS:ntifs._FILE_ALL_INFORMATION
+title: "_FILE_ALL_INFORMATION"
+author: windows-driver-content
+description: The FILE_ALL_INFORMATION structure is a container for several FILE_XXX_INFORMATION structures.
+old-location: kernel\file_all_information.htm
+old-project: kernel
+ms.assetid: 1b5f314c-6918-4cb8-a4e2-9ca0f4c5ea54
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: PFILE_ALL_INFORMATION, kernel.file_all_information, PFILE_ALL_INFORMATION structure pointer [Kernel-Mode Driver Architecture], kstruct_b_24c6b1da-76d1-46a9-838d-bb19af21d6f8.xml, FILE_ALL_INFORMATION structure [Kernel-Mode Driver Architecture], FILE_ALL_INFORMATION, ntifs/FILE_ALL_INFORMATION, *PFILE_ALL_INFORMATION, ntifs/PFILE_ALL_INFORMATION, _FILE_ALL_INFORMATION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntifs.h
+req.include-header: Ntifs.h, Fltkernel.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in Windows XP and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntifs.h
+apiname:
+-	FILE_ALL_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: FILE_ALL_INFORMATION, *PFILE_ALL_INFORMATION
 ---
 
 # _FILE_ALL_INFORMATION structure

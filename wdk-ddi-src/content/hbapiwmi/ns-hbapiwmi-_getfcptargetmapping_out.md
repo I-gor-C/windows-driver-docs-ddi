@@ -1,41 +1,46 @@
 ---
-UID : NS:hbapiwmi._GetFcpTargetMapping_OUT
-title : "_GetFcpTargetMapping_OUT"
-author : windows-driver-content
-description : The GetFcpTargetMapping_OUT structure is used to report the output parameter data of the GetFcpTargetMapping WMI method to the WMI client.
-old-location : storage\getfcptargetmapping_out.htm
-old-project : storage
-ms.assetid : a3a3050a-6fa2-4ace-87f2-41b8364f4d30
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.getfcptargetmapping_out, GetFcpTargetMapping_OUT structure [Storage Devices], _GetFcpTargetMapping_OUT, hbapiwmi/GetFcpTargetMapping_OUT, hbapiwmi/PGetFcpTargetMapping_OUT, structs-Fibre_ab6aca55-bb7c-4983-863c-de94e835a600.xml, GetFcpTargetMapping_OUT, *PGetFcpTargetMapping_OUT, PGetFcpTargetMapping_OUT, PGetFcpTargetMapping_OUT structure pointer [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : hbapiwmi.h
-req.include-header : Hbapiwmi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PGetFcpTargetMapping_OUT, GetFcpTargetMapping_OUT"
+UID: NS:hbapiwmi._GetFcpTargetMapping_OUT
+title: "_GetFcpTargetMapping_OUT"
+author: windows-driver-content
+description: The GetFcpTargetMapping_OUT structure is used to report the output parameter data of the GetFcpTargetMapping WMI method to the WMI client.
+old-location: storage\getfcptargetmapping_out.htm
+old-project: storage
+ms.assetid: a3a3050a-6fa2-4ace-87f2-41b8364f4d30
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.getfcptargetmapping_out, GetFcpTargetMapping_OUT structure [Storage Devices], _GetFcpTargetMapping_OUT, hbapiwmi/GetFcpTargetMapping_OUT, hbapiwmi/PGetFcpTargetMapping_OUT, structs-Fibre_ab6aca55-bb7c-4983-863c-de94e835a600.xml, GetFcpTargetMapping_OUT, *PGetFcpTargetMapping_OUT, PGetFcpTargetMapping_OUT, PGetFcpTargetMapping_OUT structure pointer [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: hbapiwmi.h
+req.include-header: Hbapiwmi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hbapiwmi.h
+apiname:
+-	GetFcpTargetMapping_OUT
+product: Windows
+targetos: Windows
+req.typenames: "*PGetFcpTargetMapping_OUT, GetFcpTargetMapping_OUT"
 ---
 
 # _GetFcpTargetMapping_OUT structure

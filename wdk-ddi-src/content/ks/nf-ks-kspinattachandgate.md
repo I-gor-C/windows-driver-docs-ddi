@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsPinAttachAndGate
-title : KsPinAttachAndGate function
-author : windows-driver-content
-description : The KsPinAttachAndGate function connects Pin as an input to a previously initialized AND gate, and connects AndGate as an input to the relevant filter's AND gate.
-old-location : stream\kspinattachandgate.htm
-old-project : stream
-ms.assetid : 63081b07-add8-49fc-b12d-6aa5c43356ce
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KsPinAttachAndGate function [Streaming Media Devices], stream.kspinattachandgate, avfunc_395e0cf9-ba21-4b20-a37b-7758d1bfeca0.xml, ks/KsPinAttachAndGate, KsPinAttachAndGate
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL (See Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsPinAttachAndGate
+title: KsPinAttachAndGate function
+author: windows-driver-content
+description: The KsPinAttachAndGate function connects Pin as an input to a previously initialized AND gate, and connects AndGate as an input to the relevant filter's AND gate.
+old-location: stream\kspinattachandgate.htm
+old-project: stream
+ms.assetid: 63081b07-add8-49fc-b12d-6aa5c43356ce
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KsPinAttachAndGate function [Streaming Media Devices], stream.kspinattachandgate, avfunc_395e0cf9-ba21-4b20-a37b-7758d1bfeca0.xml, ks/KsPinAttachAndGate, KsPinAttachAndGate
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL (See Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsPinAttachAndGate
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

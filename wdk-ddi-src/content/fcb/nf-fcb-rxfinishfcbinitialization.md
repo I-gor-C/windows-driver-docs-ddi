@@ -1,41 +1,46 @@
 ---
-UID : NF:fcb.RxFinishFcbInitialization
-title : RxFinishFcbInitialization function
-author : windows-driver-content
-description : RxFinishFcbInitialization is used to finish initializing an FCB after the successful completion of a create operation by the network mini-redirector.
-old-location : ifsk\rxfinishfcbinitialization.htm
-old-project : ifsk
-ms.assetid : 290d0b06-ccf7-4792-b7bb-556092845e55
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : rxref_436f96f7-35ed-484b-8963-4afa559d3cfb.xml, RxFinishFcbInitialization function [Installable File System Drivers], RDBSS_NTC_STORAGE_TYPE_FILE, ifsk.rxfinishfcbinitialization, RDBSS_NTC_SPOOLFILE, RDBSS_NTC_STORAGE_TYPE_DIRECTORY, RxFinishFcbInitialization, RDBSS_NTC_STORAGE_TYPE_UNKNOWN, fcb/RxFinishFcbInitialization, RDBSS_NTC_MAILSLOT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fcb.h
-req.include-header : Mrxfcb.h, Nodetype.h, Fcb.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FA_ENTRY, *PFA_ENTRY
+UID: NF:fcb.RxFinishFcbInitialization
+title: RxFinishFcbInitialization function
+author: windows-driver-content
+description: RxFinishFcbInitialization is used to finish initializing an FCB after the successful completion of a create operation by the network mini-redirector.
+old-location: ifsk\rxfinishfcbinitialization.htm
+old-project: ifsk
+ms.assetid: 290d0b06-ccf7-4792-b7bb-556092845e55
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: rxref_436f96f7-35ed-484b-8963-4afa559d3cfb.xml, RxFinishFcbInitialization function [Installable File System Drivers], RDBSS_NTC_STORAGE_TYPE_FILE, ifsk.rxfinishfcbinitialization, RDBSS_NTC_SPOOLFILE, RDBSS_NTC_STORAGE_TYPE_DIRECTORY, RxFinishFcbInitialization, RDBSS_NTC_STORAGE_TYPE_UNKNOWN, fcb/RxFinishFcbInitialization, RDBSS_NTC_MAILSLOT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fcb.h
+req.include-header: Mrxfcb.h, Nodetype.h, Fcb.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	fcb.h
+apiname:
+-	RxFinishFcbInitialization
+product: Windows
+targetos: Windows
+req.typenames: FA_ENTRY, *PFA_ENTRY
 ---
 
 

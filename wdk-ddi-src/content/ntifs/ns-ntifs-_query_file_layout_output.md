@@ -1,41 +1,46 @@
 ---
-UID : NS:ntifs._QUERY_FILE_LAYOUT_OUTPUT
-title : "_QUERY_FILE_LAYOUT_OUTPUT"
-author : windows-driver-content
-description : The QUERY_FILE_LAYOUT_OUTPUT structure serves as a header for the file layout entries that are returned from a FSCTL_QUERY_FILE_LAYOUT request.
-old-location : ifsk\query_file_layout_output.htm
-old-project : ifsk
-ms.assetid : 204893BE-8B89-4BE4-BEDB-BF28DBAAACE9
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.query_file_layout_output, QUERY_FILE_LAYOUT_OUTPUT structure [Installable File System Drivers], *PQUERY_FILE_LAYOUT_OUTPUT, ntifs/QUERY_FILE_LAYOUT_OUTPUT, PQUERY_FILE_LAYOUT_OUTPUT structure pointer [Installable File System Drivers], _QUERY_FILE_LAYOUT_OUTPUT, PQUERY_FILE_LAYOUT_OUTPUT, ntifs/PQUERY_FILE_LAYOUT_OUTPUT, QUERY_FILE_LAYOUT_OUTPUT, QUERY_FILE_LAYOUT_SINGLE_INSTANCED
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting in Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : QUERY_FILE_LAYOUT_OUTPUT, *PQUERY_FILE_LAYOUT_OUTPUT
+UID: NS:ntifs._QUERY_FILE_LAYOUT_OUTPUT
+title: "_QUERY_FILE_LAYOUT_OUTPUT"
+author: windows-driver-content
+description: The QUERY_FILE_LAYOUT_OUTPUT structure serves as a header for the file layout entries that are returned from a FSCTL_QUERY_FILE_LAYOUT request.
+old-location: ifsk\query_file_layout_output.htm
+old-project: ifsk
+ms.assetid: 204893BE-8B89-4BE4-BEDB-BF28DBAAACE9
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.query_file_layout_output, QUERY_FILE_LAYOUT_OUTPUT structure [Installable File System Drivers], *PQUERY_FILE_LAYOUT_OUTPUT, ntifs/QUERY_FILE_LAYOUT_OUTPUT, PQUERY_FILE_LAYOUT_OUTPUT structure pointer [Installable File System Drivers], _QUERY_FILE_LAYOUT_OUTPUT, PQUERY_FILE_LAYOUT_OUTPUT, ntifs/PQUERY_FILE_LAYOUT_OUTPUT, QUERY_FILE_LAYOUT_OUTPUT, QUERY_FILE_LAYOUT_SINGLE_INSTANCED
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting in Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntifs.h
+apiname:
+-	QUERY_FILE_LAYOUT_OUTPUT
+product: Windows
+targetos: Windows
+req.typenames: QUERY_FILE_LAYOUT_OUTPUT, *PQUERY_FILE_LAYOUT_OUTPUT
 ---
 
 # _QUERY_FILE_LAYOUT_OUTPUT structure

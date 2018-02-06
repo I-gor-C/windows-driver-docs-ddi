@@ -1,42 +1,47 @@
 ---
-UID : NC:video.PVIDEO_HW_POWER_SET
-title : PVIDEO_HW_POWER_SET
-author : windows-driver-content
-description : HwVidSetPowerState sets the power state of the specified device.
-old-location : display\hwvidsetpowerstate.htm
-old-project : display
-ms.assetid : d7800ab6-9d8f-47a7-b919-8b6b0197d163
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.hwvidsetpowerstate, HwVidSetPowerState callback function [Display Devices], HwVidSetPowerState, PVIDEO_HW_POWER_SET, PVIDEO_HW_POWER_SET, video/HwVidSetPowerState, VideoMiniport_Functions_22a6c5ae-0c31-48a6-8882-06edfea32c1a.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VHF_CONFIG, *PVHF_CONFIG
-req.product : Windows 10 or later.
+UID: NC:video.PVIDEO_HW_POWER_SET
+title: PVIDEO_HW_POWER_SET
+author: windows-driver-content
+description: HwVidSetPowerState sets the power state of the specified device.
+old-location: display\hwvidsetpowerstate.htm
+old-project: display
+ms.assetid: d7800ab6-9d8f-47a7-b919-8b6b0197d163
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.hwvidsetpowerstate, HwVidSetPowerState callback function [Display Devices], HwVidSetPowerState, PVIDEO_HW_POWER_SET, PVIDEO_HW_POWER_SET, video/HwVidSetPowerState, VideoMiniport_Functions_22a6c5ae-0c31-48a6-8882-06edfea32c1a.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	video.h
+apiname:
+-	HwVidSetPowerState
+product: Windows
+targetos: Windows
+req.typenames: VHF_CONFIG, *PVHF_CONFIG
+req.product: Windows 10 or later.
 ---
 
 

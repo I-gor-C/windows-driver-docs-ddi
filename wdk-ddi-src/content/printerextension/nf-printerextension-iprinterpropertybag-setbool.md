@@ -1,42 +1,47 @@
 ---
-UID : NF:printerextension.IPrinterPropertyBag.SetBool
-title : IPrinterPropertyBag::SetBool method
-author : windows-driver-content
-description : Writes a specified boolean property value.
-old-location : print\iprinterpropertybag_setbool.htm
-old-project : print
-ms.assetid : B97C3FE9-0AC8-4147-A394-3344EBBA0B4C
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : SetBool method [Print Devices], IPrinterPropertyBag interface, IPrinterPropertyBag::SetBool, printerextension/IPrinterPropertyBag::SetBool, print.iprinterpropertybag_setbool, IPrinterPropertyBag interface [Print Devices], SetBool method, IPrinterPropertyBag, SetBool, SetBool method [Print Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : printerextension.h
-req.include-header : Printerextension.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : printerextension.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PrintSchemaSelectionType
-req.product : Windows 10 or later.
+UID: NF:printerextension.IPrinterPropertyBag.SetBool
+title: IPrinterPropertyBag::SetBool method
+author: windows-driver-content
+description: Writes a specified boolean property value.
+old-location: print\iprinterpropertybag_setbool.htm
+old-project: print
+ms.assetid: B97C3FE9-0AC8-4147-A394-3344EBBA0B4C
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: SetBool method [Print Devices], IPrinterPropertyBag interface, IPrinterPropertyBag::SetBool, printerextension/IPrinterPropertyBag::SetBool, print.iprinterpropertybag_setbool, IPrinterPropertyBag interface [Print Devices], SetBool method, IPrinterPropertyBag, SetBool, SetBool method [Print Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: printerextension.h
+req.include-header: Printerextension.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: printerextension.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Printerextension.h
+apiname:
+-	IPrinterPropertyBag.SetBool
+product: Windows
+targetos: Windows
+req.typenames: PrintSchemaSelectionType
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,47 @@
 ---
-UID : NF:hidpi.HidP_GetUsagesEx
-title : HidP_GetUsagesEx function
-author : windows-driver-content
-description : The HidP_GetUsagesEx routine returns a list of the all the HID control button usages that are set to ON in a HID report.
-old-location : hid\hidp_getusagesex.htm
-old-project : hid
-ms.assetid : c799ecb6-3024-491c-90d5-70e1d21b1baf
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : hidfunc_2a2a6e4a-c966-43d7-8159-115bb6f2376c.xml, HidP_GetUsagesEx, hidpi/HidP_GetUsagesEx, HidP_GetUsagesEx routine [Human Input Devices], hid.hidp_getusagesex
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : hidpi.h
-req.include-header : Hidpi.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 2000 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Hidparse.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HIDP_REPORT_TYPE
+UID: NF:hidpi.HidP_GetUsagesEx
+title: HidP_GetUsagesEx function
+author: windows-driver-content
+description: The HidP_GetUsagesEx routine returns a list of the all the HID control button usages that are set to ON in a HID report.
+old-location: hid\hidp_getusagesex.htm
+old-project: hid
+ms.assetid: c799ecb6-3024-491c-90d5-70e1d21b1baf
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: hidfunc_2a2a6e4a-c966-43d7-8159-115bb6f2376c.xml, HidP_GetUsagesEx, hidpi/HidP_GetUsagesEx, HidP_GetUsagesEx routine [Human Input Devices], hid.hidp_getusagesex
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: hidpi.h
+req.include-header: Hidpi.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 2000 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Hidparse.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Hidparse.lib
+-	Hidparse.dll
+apiname:
+-	HidP_GetUsagesEx
+product: Windows
+targetos: Windows
+req.typenames: HIDP_REPORT_TYPE
 ---
 
 

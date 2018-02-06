@@ -1,41 +1,46 @@
 ---
-UID : NF:engextcpp.ExtRemoteTypedList.SetTypeAndLink
-title : ExtRemoteTypedList::SetTypeAndLink method
-author : windows-driver-content
-description : The SetTypeAndLink method sets the type information for the typed list.
-old-location : debugger\extremotetypedlist_settypeandlink.htm
-old-project : debugger
-ms.assetid : f6e2d8e3-294d-45d8-8fc6-33af3a746244
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : SetTypeAndLink, ExtRemoteTypedList class [Windows Debugging], SetTypeAndLink method, ExtRemoteTypedList, EngExtCpp_Ref_8867c503-5983-465c-bfb6-f13b21d325cc.xml, SetTypeAndLink method [Windows Debugging], SetTypeAndLink method [Windows Debugging], ExtRemoteTypedList class, debugger.extremotetypedlist_settypeandlink, ExtRemoteTypedList::SetTypeAndLink
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : engextcpp.hpp
-req.include-header : Engextcpp.hpp
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : engextcpp.hpp
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SILO_DRIVER_CAPABILITIES, *PSILO_DRIVER_CAPABILITIES
+UID: NF:engextcpp.ExtRemoteTypedList.SetTypeAndLink
+title: ExtRemoteTypedList::SetTypeAndLink method
+author: windows-driver-content
+description: The SetTypeAndLink method sets the type information for the typed list.
+old-location: debugger\extremotetypedlist_settypeandlink.htm
+old-project: debugger
+ms.assetid: f6e2d8e3-294d-45d8-8fc6-33af3a746244
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: SetTypeAndLink, ExtRemoteTypedList class [Windows Debugging], SetTypeAndLink method, ExtRemoteTypedList, EngExtCpp_Ref_8867c503-5983-465c-bfb6-f13b21d325cc.xml, SetTypeAndLink method [Windows Debugging], SetTypeAndLink method [Windows Debugging], ExtRemoteTypedList class, debugger.extremotetypedlist_settypeandlink, ExtRemoteTypedList::SetTypeAndLink
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: engextcpp.hpp
+req.include-header: Engextcpp.hpp
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: engextcpp.hpp
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	engextcpp.hpp
+apiname:
+-	ExtRemoteTypedList.SetTypeAndLink
+product: Windows
+targetos: Windows
+req.typenames: SILO_DRIVER_CAPABILITIES, *PSILO_DRIVER_CAPABILITIES
 ---
 
 

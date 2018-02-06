@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugSymbolGroup2.RemoveSymbolByNameWide
-title : IDebugSymbolGroup2::RemoveSymbolByNameWide method
-author : windows-driver-content
-description : The RemoveSymbolByNameWide method removes the specified symbol from a symbol group.
-old-location : debugger\removesymbolbynamewide.htm
-old-project : debugger
-ms.assetid : 12261b88-681e-4623-b5af-abaae756e3e1
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : dbgeng/IDebugSymbolGroup2::RemoveSymbolByNameWide, IDebugSymbolGroup2, RemoveSymbolByNameWide method [Windows Debugging], IDebugSymbolGroup2 interface, RemoveSymbolByNameWide method [Windows Debugging], IDebugSymbolGroup2 interface [Windows Debugging], RemoveSymbolByNameWide method, RemoveSymbolByNameWide, IDebugSymbolGroup2::RemoveSymbolByNameWide, debugger.removesymbolbynamewide
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSymbolGroup2.RemoveSymbolByNameWide
+title: IDebugSymbolGroup2::RemoveSymbolByNameWide method
+author: windows-driver-content
+description: The RemoveSymbolByNameWide method removes the specified symbol from a symbol group.
+old-location: debugger\removesymbolbynamewide.htm
+old-project: debugger
+ms.assetid: 12261b88-681e-4623-b5af-abaae756e3e1
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: dbgeng/IDebugSymbolGroup2::RemoveSymbolByNameWide, IDebugSymbolGroup2, RemoveSymbolByNameWide method [Windows Debugging], IDebugSymbolGroup2 interface, RemoveSymbolByNameWide method [Windows Debugging], IDebugSymbolGroup2 interface [Windows Debugging], RemoveSymbolByNameWide method, RemoveSymbolByNameWide, IDebugSymbolGroup2::RemoveSymbolByNameWide, debugger.removesymbolbynamewide
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugSymbolGroup2.RemoveSymbolByNameWide
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddndis._NDIS_NDK_CONNECTIONS
-title : "_NDIS_NDK_CONNECTIONS"
-author : windows-driver-content
-description : The NDIS_NDK_CONNECTIONS structure describes the NDK connections that are active on a miniport adapter.
-old-location : netvista\ndis_ndk_connections.htm
-old-project : netvista
-ms.assetid : 24149E73-6BA8-4C5E-8649-25A90A3D01AF
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NDIS_NDK_CONNECTIONS, ntddndis/NDIS_NDK_CONNECTIONS, PNDIS_NDK_CONNECTIONS structure pointer [Network Drivers Starting with Windows Vista], NDIS_NDK_CONNECTIONS structure [Network Drivers Starting with Windows Vista], ntddndis/PNDIS_NDK_CONNECTIONS, netvista.ndis_ndk_connections, PNDIS_NDK_CONNECTIONS, _NDIS_NDK_CONNECTIONS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : None supported,Supported in NDIS 6.30 and later.
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_NDK_CONNECTIONS
+UID: NS:ntddndis._NDIS_NDK_CONNECTIONS
+title: "_NDIS_NDK_CONNECTIONS"
+author: windows-driver-content
+description: The NDIS_NDK_CONNECTIONS structure describes the NDK connections that are active on a miniport adapter.
+old-location: netvista\ndis_ndk_connections.htm
+old-project: netvista
+ms.assetid: 24149E73-6BA8-4C5E-8649-25A90A3D01AF
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NDIS_NDK_CONNECTIONS, ntddndis/NDIS_NDK_CONNECTIONS, PNDIS_NDK_CONNECTIONS structure pointer [Network Drivers Starting with Windows Vista], NDIS_NDK_CONNECTIONS structure [Network Drivers Starting with Windows Vista], ntddndis/PNDIS_NDK_CONNECTIONS, netvista.ndis_ndk_connections, PNDIS_NDK_CONNECTIONS, _NDIS_NDK_CONNECTIONS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: None supported,Supported in NDIS 6.30 and later.
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddndis.h
+apiname:
+-	NDIS_NDK_CONNECTIONS
+product: Windows
+targetos: Windows
+req.typenames: NDIS_NDK_CONNECTIONS
 ---
 
 # _NDIS_NDK_CONNECTIONS structure

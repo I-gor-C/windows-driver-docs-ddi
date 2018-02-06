@@ -1,42 +1,47 @@
 ---
-UID : NS:winsplp._SPLCLIENT_INFO_1
-title : "_SPLCLIENT_INFO_1"
-author : windows-driver-content
-description : The SPLCLIENT_INFO_1 structure is used as input to the GenerateCopyFilePaths function that is exported by Point and Print DLLs.
-old-location : print\splclient_info_1.htm
-old-project : print
-ms.assetid : a9659f77-e84b-471a-a778-a4628d89ce19
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : LPSPLCLIENT_INFO_1 structure pointer [Print Devices], winsplp/SPLCLIENT_INFO_1, PSPLCLIENT_INFO_1 structure pointer [Print Devices], LPSPLCLIENT_INFO_1, poprfnc_45237404-33da-4fb0-9405-05c930c5445b.xml, SPLCLIENT_INFO_1, SPLCLIENT_INFO_1 structure [Print Devices], winsplp/PSPLCLIENT_INFO_1, winsplp/LPSPLCLIENT_INFO_1, PSPLCLIENT_INFO_1, _SPLCLIENT_INFO_1, *LPSPLCLIENT_INFO_1, *PSPLCLIENT_INFO_1, print.splclient_info_1
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : winsplp.h
-req.include-header : Winsplp.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSPLCLIENT_INFO_1, *LPSPLCLIENT_INFO_1, SPLCLIENT_INFO_1"
-req.product : Windows 10 or later.
+UID: NS:winsplp._SPLCLIENT_INFO_1
+title: "_SPLCLIENT_INFO_1"
+author: windows-driver-content
+description: The SPLCLIENT_INFO_1 structure is used as input to the GenerateCopyFilePaths function that is exported by Point and Print DLLs.
+old-location: print\splclient_info_1.htm
+old-project: print
+ms.assetid: a9659f77-e84b-471a-a778-a4628d89ce19
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: LPSPLCLIENT_INFO_1 structure pointer [Print Devices], winsplp/SPLCLIENT_INFO_1, PSPLCLIENT_INFO_1 structure pointer [Print Devices], LPSPLCLIENT_INFO_1, poprfnc_45237404-33da-4fb0-9405-05c930c5445b.xml, SPLCLIENT_INFO_1, SPLCLIENT_INFO_1 structure [Print Devices], winsplp/PSPLCLIENT_INFO_1, winsplp/LPSPLCLIENT_INFO_1, PSPLCLIENT_INFO_1, _SPLCLIENT_INFO_1, *LPSPLCLIENT_INFO_1, *PSPLCLIENT_INFO_1, print.splclient_info_1
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: winsplp.h
+req.include-header: Winsplp.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	winsplp.h
+apiname:
+-	SPLCLIENT_INFO_1
+product: Windows
+targetos: Windows
+req.typenames: "*PSPLCLIENT_INFO_1, *LPSPLCLIENT_INFO_1, SPLCLIENT_INFO_1"
+req.product: Windows 10 or later.
 ---
 
 # _SPLCLIENT_INFO_1 structure

@@ -1,42 +1,48 @@
 ---
-UID : NF:vmbuskernelmodeclientlibapi.VmbPacketSend
-title : VmbPacketSend function
-author : windows-driver-content
-description : The VmbPacketSend function sends the data in a packet buffer or external data Memory Descriptor List (MDL). The function associates that data with the VMBus packet object, which represents the packet throughout the lifetime of the transaction.
-old-location : netvista\vmbpacketsend.htm
-old-project : netvista
-ms.assetid : EBB981CB-0107-497A-B6E6-9271E22A8D5F
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.vmbpacketsend, vmbuskernelmodeclientlibapi/VmbPacketSend, VmbPacketSend function [Network Drivers Starting with Windows Vista], VMBUS_CHANNEL_FORMAT_FLAG_PAGED_BUFFER, VMBUS_CHANNEL_FORMAT_FLAG_WAIT_FOR_COMPLETION, VmbPacketSend
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : vmbuskernelmodeclientlibapi.h
-req.include-header : VmbusKernelModeClientLibApi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8.1
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 1.13
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Vmbkmcl.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PVIDEO_PORT_AGP_SERVICES, VIDEO_PORT_AGP_SERVICES"
-req.product : Windows 10 or later.
+UID: NF:vmbuskernelmodeclientlibapi.VmbPacketSend
+title: VmbPacketSend function
+author: windows-driver-content
+description: The VmbPacketSend function sends the data in a packet buffer or external data Memory Descriptor List (MDL). The function associates that data with the VMBus packet object, which represents the packet throughout the lifetime of the transaction.
+old-location: netvista\vmbpacketsend.htm
+old-project: netvista
+ms.assetid: EBB981CB-0107-497A-B6E6-9271E22A8D5F
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.vmbpacketsend, vmbuskernelmodeclientlibapi/VmbPacketSend, VmbPacketSend function [Network Drivers Starting with Windows Vista], VMBUS_CHANNEL_FORMAT_FLAG_PAGED_BUFFER, VMBUS_CHANNEL_FORMAT_FLAG_WAIT_FOR_COMPLETION, VmbPacketSend
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: vmbuskernelmodeclientlibapi.h
+req.include-header: VmbusKernelModeClientLibApi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8.1
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 1.13
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Vmbkmcl.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	vmbkmcl.lib
+-	vmbkmcl.dll
+apiname:
+-	VmbPacketSend
+product: Windows
+targetos: Windows
+req.typenames: "*PVIDEO_PORT_AGP_SERVICES, VIDEO_PORT_AGP_SERVICES"
+req.product: Windows 10 or later.
 ---
 
 

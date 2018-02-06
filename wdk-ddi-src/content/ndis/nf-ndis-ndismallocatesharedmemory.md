@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisMAllocateSharedMemory
-title : NdisMAllocateSharedMemory function
-author : windows-driver-content
-description : NdisMAllocateSharedMemory allocates and maps a host memory range so that the memory range is simultaneously accessible from both the host system and a DMA NIC.
-old-location : netvista\ndismallocatesharedmemory.htm
-old-project : netvista
-ms.assetid : 8eda6100-598f-405d-a9b3-74424c829a58
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : miniport_memory_shared_ref_c2bf3765-9335-488e-a320-7e955f95eed8.xml, NdisMAllocateSharedMemory function [Network Drivers Starting with Windows Vista], NdisMAllocateSharedMemory, netvista.ndismallocatesharedmemory, ndis/NdisMAllocateSharedMemory
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisMAllocateSharedMemory
+title: NdisMAllocateSharedMemory function
+author: windows-driver-content
+description: NdisMAllocateSharedMemory allocates and maps a host memory range so that the memory range is simultaneously accessible from both the host system and a DMA NIC.
+old-location: netvista\ndismallocatesharedmemory.htm
+old-project: netvista
+ms.assetid: 8eda6100-598f-405d-a9b3-74424c829a58
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: miniport_memory_shared_ref_c2bf3765-9335-488e-a320-7e955f95eed8.xml, NdisMAllocateSharedMemory function [Network Drivers Starting with Windows Vista], NdisMAllocateSharedMemory, netvista.ndismallocatesharedmemory, ndis/NdisMAllocateSharedMemory
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisMAllocateSharedMemory
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.tagKS_TVTUNER_CHANGE_INFO
-title : tagKS_TVTUNER_CHANGE_INFO
-author : windows-driver-content
-description : The KS_TVTUNER_CHANGE_INFO structure provides vertical blanking interval (VBI) codecs with information about the currently tuned channel.
-old-location : stream\ks_tvtuner_change_info.htm
-old-project : stream
-ms.assetid : 7bb04fbb-2894-4148-88c2-fbbebb000ec9
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : PKS_TVTUNER_CHANGE_INFO structure pointer [Streaming Media Devices], tagKS_TVTUNER_CHANGE_INFO, ksmedia/KS_TVTUNER_CHANGE_INFO, PKS_TVTUNER_CHANGE_INFO, vidcapstruct_225fdabf-bdaf-49df-a2e3-ace62a0a17e2.xml, KS_TVTUNER_CHANGE_INFO, stream.ks_tvtuner_change_info, KS_TVTUNER_CHANGE_INFO structure [Streaming Media Devices], ksmedia/PKS_TVTUNER_CHANGE_INFO, *PKS_TVTUNER_CHANGE_INFO
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKS_TVTUNER_CHANGE_INFO, KS_TVTUNER_CHANGE_INFO"
+UID: NS:ksmedia.tagKS_TVTUNER_CHANGE_INFO
+title: tagKS_TVTUNER_CHANGE_INFO
+author: windows-driver-content
+description: The KS_TVTUNER_CHANGE_INFO structure provides vertical blanking interval (VBI) codecs with information about the currently tuned channel.
+old-location: stream\ks_tvtuner_change_info.htm
+old-project: stream
+ms.assetid: 7bb04fbb-2894-4148-88c2-fbbebb000ec9
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: PKS_TVTUNER_CHANGE_INFO structure pointer [Streaming Media Devices], tagKS_TVTUNER_CHANGE_INFO, ksmedia/KS_TVTUNER_CHANGE_INFO, PKS_TVTUNER_CHANGE_INFO, vidcapstruct_225fdabf-bdaf-49df-a2e3-ace62a0a17e2.xml, KS_TVTUNER_CHANGE_INFO, stream.ks_tvtuner_change_info, KS_TVTUNER_CHANGE_INFO structure [Streaming Media Devices], ksmedia/PKS_TVTUNER_CHANGE_INFO, *PKS_TVTUNER_CHANGE_INFO
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	KS_TVTUNER_CHANGE_INFO
+product: Windows
+targetos: Windows
+req.typenames: "*PKS_TVTUNER_CHANGE_INFO, KS_TVTUNER_CHANGE_INFO"
 ---
 
 # tagKS_TVTUNER_CHANGE_INFO structure

@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.IoWMISuggestInstanceName
-title : IoWMISuggestInstanceName function
-author : windows-driver-content
-description : The IoWMISuggestInstanceName routine is used to request that WMI suggest a base name which a driver can use to build WMI instance names for the device.
-old-location : kernel\iowmisuggestinstancename.htm
-old-project : kernel
-ms.assetid : a07ff2f6-e67e-489e-a477-6dc4b4ce6fed
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : k104_dc84cc9c-d6ca-40d2-93af-f54a149be7d1.xml, IoWMISuggestInstanceName, IoWMISuggestInstanceName routine [Kernel-Mode Driver Architecture], wdm/IoWMISuggestInstanceName, kernel.iowmisuggestinstancename
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.IoWMISuggestInstanceName
+title: IoWMISuggestInstanceName function
+author: windows-driver-content
+description: The IoWMISuggestInstanceName routine is used to request that WMI suggest a base name which a driver can use to build WMI instance names for the device.
+old-location: kernel\iowmisuggestinstancename.htm
+old-project: kernel
+ms.assetid: a07ff2f6-e67e-489e-a477-6dc4b4ce6fed
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: k104_dc84cc9c-d6ca-40d2-93af-f54a149be7d1.xml, IoWMISuggestInstanceName, IoWMISuggestInstanceName routine [Kernel-Mode Driver Architecture], wdm/IoWMISuggestInstanceName, kernel.iowmisuggestinstancename
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoWMISuggestInstanceName
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

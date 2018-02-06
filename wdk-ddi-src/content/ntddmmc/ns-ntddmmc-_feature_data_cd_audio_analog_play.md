@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddmmc._FEATURE_DATA_CD_AUDIO_ANALOG_PLAY
-title : "_FEATURE_DATA_CD_AUDIO_ANALOG_PLAY"
-author : windows-driver-content
-description : The FEATURE_DATA_CD_AUDIO_ANALOG_PLAY structure holds information about the CD Audio External Play feature.
-old-location : storage\feature_data_cd_audio_analog_play.htm
-old-project : storage
-ms.assetid : 01c34bb8-b164-425d-b81c-7eefc08296e2
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : PFEATURE_DATA_CD_AUDIO_ANALOG_PLAY structure pointer [Storage Devices], FEATURE_DATA_CD_AUDIO_ANALOG_PLAY structure [Storage Devices], ntddmmc/PFEATURE_DATA_CD_AUDIO_ANALOG_PLAY, FEATURE_DATA_CD_AUDIO_ANALOG_PLAY, structs-CD-ROM_87a067ea-0911-429b-808a-102f9600ecac.xml, storage.feature_data_cd_audio_analog_play, _FEATURE_DATA_CD_AUDIO_ANALOG_PLAY, ntddmmc/FEATURE_DATA_CD_AUDIO_ANALOG_PLAY, *PFEATURE_DATA_CD_AUDIO_ANALOG_PLAY, PFEATURE_DATA_CD_AUDIO_ANALOG_PLAY
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddmmc.h
-req.include-header : Ntddcdrm.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FEATURE_DATA_CD_AUDIO_ANALOG_PLAY, *PFEATURE_DATA_CD_AUDIO_ANALOG_PLAY
+UID: NS:ntddmmc._FEATURE_DATA_CD_AUDIO_ANALOG_PLAY
+title: "_FEATURE_DATA_CD_AUDIO_ANALOG_PLAY"
+author: windows-driver-content
+description: The FEATURE_DATA_CD_AUDIO_ANALOG_PLAY structure holds information about the CD Audio External Play feature.
+old-location: storage\feature_data_cd_audio_analog_play.htm
+old-project: storage
+ms.assetid: 01c34bb8-b164-425d-b81c-7eefc08296e2
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: PFEATURE_DATA_CD_AUDIO_ANALOG_PLAY structure pointer [Storage Devices], FEATURE_DATA_CD_AUDIO_ANALOG_PLAY structure [Storage Devices], ntddmmc/PFEATURE_DATA_CD_AUDIO_ANALOG_PLAY, FEATURE_DATA_CD_AUDIO_ANALOG_PLAY, structs-CD-ROM_87a067ea-0911-429b-808a-102f9600ecac.xml, storage.feature_data_cd_audio_analog_play, _FEATURE_DATA_CD_AUDIO_ANALOG_PLAY, ntddmmc/FEATURE_DATA_CD_AUDIO_ANALOG_PLAY, *PFEATURE_DATA_CD_AUDIO_ANALOG_PLAY, PFEATURE_DATA_CD_AUDIO_ANALOG_PLAY
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddmmc.h
+req.include-header: Ntddcdrm.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddmmc.h
+apiname:
+-	FEATURE_DATA_CD_AUDIO_ANALOG_PLAY
+product: Windows
+targetos: Windows
+req.typenames: FEATURE_DATA_CD_AUDIO_ANALOG_PLAY, *PFEATURE_DATA_CD_AUDIO_ANALOG_PLAY
 ---
 
 # _FEATURE_DATA_CD_AUDIO_ANALOG_PLAY structure

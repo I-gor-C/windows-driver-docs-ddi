@@ -1,41 +1,46 @@
 ---
-UID : NS:d3d10umddi.D3D10DDIARG_TEX2D_SHADERRESOURCEVIEW
-title : D3D10DDIARG_TEX2D_SHADERRESOURCEVIEW
-author : windows-driver-content
-description : The D3D10DDIARG_TEX2D_SHADERRESOURCEVIEW structure describes a two-dimensional (2-D) texture that is used to create a shader resource view in a call to the CreateShaderResourceView function.
-old-location : display\d3d10ddiarg_tex2d_shaderresourceview.htm
-old-project : display
-ms.assetid : 2282d08e-e192-4a0f-972b-1441cea1fe7d
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3d10umddi/D3D10DDIARG_TEX2D_SHADERRESOURCEVIEW, D3D10DDIARG_TEX2D_SHADERRESOURCEVIEW, UMDisplayDriver_Dx10param_Structs_ebe6122b-f1bb-4f9d-b677-c721643fe227.xml, display.d3d10ddiarg_tex2d_shaderresourceview, D3D10DDIARG_TEX2D_SHADERRESOURCEVIEW structure [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3D10DDIARG_TEX2D_SHADERRESOURCEVIEW
+UID: NS:d3d10umddi.D3D10DDIARG_TEX2D_SHADERRESOURCEVIEW
+title: D3D10DDIARG_TEX2D_SHADERRESOURCEVIEW
+author: windows-driver-content
+description: The D3D10DDIARG_TEX2D_SHADERRESOURCEVIEW structure describes a two-dimensional (2-D) texture that is used to create a shader resource view in a call to the CreateShaderResourceView function.
+old-location: display\d3d10ddiarg_tex2d_shaderresourceview.htm
+old-project: display
+ms.assetid: 2282d08e-e192-4a0f-972b-1441cea1fe7d
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3d10umddi/D3D10DDIARG_TEX2D_SHADERRESOURCEVIEW, D3D10DDIARG_TEX2D_SHADERRESOURCEVIEW, UMDisplayDriver_Dx10param_Structs_ebe6122b-f1bb-4f9d-b677-c721643fe227.xml, display.d3d10ddiarg_tex2d_shaderresourceview, D3D10DDIARG_TEX2D_SHADERRESOURCEVIEW structure [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	D3D10DDIARG_TEX2D_SHADERRESOURCEVIEW
+product: Windows
+targetos: Windows
+req.typenames: D3D10DDIARG_TEX2D_SHADERRESOURCEVIEW
 ---
 
 # D3D10DDIARG_TEX2D_SHADERRESOURCEVIEW structure

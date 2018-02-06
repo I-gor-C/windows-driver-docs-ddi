@@ -1,41 +1,46 @@
 ---
-UID : NI:gnssdriver.IOCTL_GNSS_SEND_PLATFORM_CAPABILITY
-title : IOCTL_GNSS_SEND_PLATFORM_CAPABILITY
-author : windows-driver-content
-description : The IOCTL_GNSS_SEND_PLATFORM_CAPABILITY control code is used by the GNSS adapter to communicate the various location-specific platform capabilities.
-old-location : sensors\ioctl_gnss_send_platform_capability.htm
-old-project : sensors
-ms.assetid : EF979267-BDF3-4C42-B18E-C77E2584BC2D
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : sensors.ioctl_gnss_send_platform_capability, IOCTL_GNSS_SEND_PLATFORM_CAPABILITY control code [Sensor Devices], IOCTL_GNSS_SEND_PLATFORM_CAPABILITY, gnssdriver/IOCTL_GNSS_SEND_PLATFORM_CAPABILITY
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : gnssdriver.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : GNSS_SUPL_CERT_ACTION
+UID: NI:gnssdriver.IOCTL_GNSS_SEND_PLATFORM_CAPABILITY
+title: IOCTL_GNSS_SEND_PLATFORM_CAPABILITY
+author: windows-driver-content
+description: The IOCTL_GNSS_SEND_PLATFORM_CAPABILITY control code is used by the GNSS adapter to communicate the various location-specific platform capabilities.
+old-location: sensors\ioctl_gnss_send_platform_capability.htm
+old-project: sensors
+ms.assetid: EF979267-BDF3-4C42-B18E-C77E2584BC2D
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: sensors.ioctl_gnss_send_platform_capability, IOCTL_GNSS_SEND_PLATFORM_CAPABILITY control code [Sensor Devices], IOCTL_GNSS_SEND_PLATFORM_CAPABILITY, gnssdriver/IOCTL_GNSS_SEND_PLATFORM_CAPABILITY
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: gnssdriver.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	gnssdriver.h
+apiname:
+-	IOCTL_GNSS_SEND_PLATFORM_CAPABILITY
+product: Windows
+targetos: Windows
+req.typenames: GNSS_SUPL_CERT_ACTION
 ---
 
 # IOCTL_GNSS_SEND_PLATFORM_CAPABILITY IOCTL

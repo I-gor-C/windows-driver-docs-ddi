@@ -1,41 +1,46 @@
 ---
-UID : NS:avcstrm._CIP_HDR1
-title : "_CIP_HDR1"
-author : windows-driver-content
-description : The CIP_HDR1 structure describes the generic data structure of the two quadlet CIP headers (first quadlet of the pair).
-old-location : stream\cip_hdr1.htm
-old-project : stream
-ms.assetid : 15450f33-cb86-4c1d-87d7-2d77a1d66a81
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : "_CIP_HDR1, PCIP_HDR1 structure pointer [Streaming Media Devices], CIP_HDR1, stream.cip_hdr1, avcsref_bfb761c5-6eb2-459a-b75f-32c5e2d11700.xml, *PCIP_HDR1, avcstrm/PCIP_HDR1, PCIP_HDR1, avcstrm/CIP_HDR1, CIP_HDR1 structure [Streaming Media Devices]"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : avcstrm.h
-req.include-header : Avcstrm.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : CIP_HDR1, *PCIP_HDR1
+UID: NS:avcstrm._CIP_HDR1
+title: "_CIP_HDR1"
+author: windows-driver-content
+description: The CIP_HDR1 structure describes the generic data structure of the two quadlet CIP headers (first quadlet of the pair).
+old-location: stream\cip_hdr1.htm
+old-project: stream
+ms.assetid: 15450f33-cb86-4c1d-87d7-2d77a1d66a81
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: "_CIP_HDR1, PCIP_HDR1 structure pointer [Streaming Media Devices], CIP_HDR1, stream.cip_hdr1, avcsref_bfb761c5-6eb2-459a-b75f-32c5e2d11700.xml, *PCIP_HDR1, avcstrm/PCIP_HDR1, PCIP_HDR1, avcstrm/CIP_HDR1, CIP_HDR1 structure [Streaming Media Devices]"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: avcstrm.h
+req.include-header: Avcstrm.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	avcstrm.h
+apiname:
+-	CIP_HDR1
+product: Windows
+targetos: Windows
+req.typenames: CIP_HDR1, *PCIP_HDR1
 ---
 
 # _CIP_HDR1 structure

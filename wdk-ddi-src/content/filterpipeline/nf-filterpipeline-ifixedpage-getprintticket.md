@@ -1,41 +1,46 @@
 ---
-UID : NF:filterpipeline.IFixedPage.GetPrintTicket
-title : IFixedPage::GetPrintTicket method
-author : windows-driver-content
-description : The GetPrintTicket method gets the print ticket object for the fixed page.
-old-location : print\ifixedpage_getprintticket.htm
-old-project : print
-ms.assetid : 4a30efd9-8fef-4fef-8293-b7df5b954977
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : IFixedPage::GetPrintTicket, filterpipeline/IFixedPage::GetPrintTicket, IFixedPage, IFixedPage interface [Print Devices], GetPrintTicket method, filterpipeline_13ccb2a1-7898-41d1-b11f-55ca3cc881ab.xml, GetPrintTicket, GetPrintTicket method [Print Devices], IFixedPage interface, GetPrintTicket method [Print Devices], print.ifixedpage_getprintticket
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : filterpipeline.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : Filterpipeline.idl
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : filterpipeline.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:filterpipeline.IFixedPage.GetPrintTicket
+title: IFixedPage::GetPrintTicket method
+author: windows-driver-content
+description: The GetPrintTicket method gets the print ticket object for the fixed page.
+old-location: print\ifixedpage_getprintticket.htm
+old-project: print
+ms.assetid: 4a30efd9-8fef-4fef-8293-b7df5b954977
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: IFixedPage::GetPrintTicket, filterpipeline/IFixedPage::GetPrintTicket, IFixedPage, IFixedPage interface [Print Devices], GetPrintTicket method, filterpipeline_13ccb2a1-7898-41d1-b11f-55ca3cc881ab.xml, GetPrintTicket, GetPrintTicket method [Print Devices], IFixedPage interface, GetPrintTicket method [Print Devices], print.ifixedpage_getprintticket
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: filterpipeline.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: Filterpipeline.idl
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: filterpipeline.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	filterpipeline.h
+apiname:
+-	IFixedPage.GetPrintTicket
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

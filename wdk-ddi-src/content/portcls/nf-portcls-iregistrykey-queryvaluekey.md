@@ -1,41 +1,46 @@
 ---
-UID : NF:portcls.IRegistryKey.QueryValueKey
-title : IRegistryKey::QueryValueKey method
-author : windows-driver-content
-description : The QueryValueKey method retrieves information about a registry key's value entries, including their names, types, data sizes, and values.
-old-location : audio\iregistrykey_queryvaluekey.htm
-old-project : audio
-ms.assetid : 6339a8bf-ab32-48bc-aae6-2cce2a6a648d
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : QueryValueKey method [Audio Devices], IRegistryKey interface [Audio Devices], QueryValueKey method, audio.iregistrykey_queryvaluekey, audmp-routines_2b41aa08-8b71-45af-bcfa-c33723c82c13.xml, QueryValueKey method [Audio Devices], IRegistryKey interface, IRegistryKey, IRegistryKey::QueryValueKey, portcls/IRegistryKey::QueryValueKey, QueryValueKey
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : portcls.h
-req.include-header : Portcls.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : portcls.h
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.IRegistryKey.QueryValueKey
+title: IRegistryKey::QueryValueKey method
+author: windows-driver-content
+description: The QueryValueKey method retrieves information about a registry key's value entries, including their names, types, data sizes, and values.
+old-location: audio\iregistrykey_queryvaluekey.htm
+old-project: audio
+ms.assetid: 6339a8bf-ab32-48bc-aae6-2cce2a6a648d
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: QueryValueKey method [Audio Devices], IRegistryKey interface [Audio Devices], QueryValueKey method, audio.iregistrykey_queryvaluekey, audmp-routines_2b41aa08-8b71-45af-bcfa-c33723c82c13.xml, QueryValueKey method [Audio Devices], IRegistryKey interface, IRegistryKey, IRegistryKey::QueryValueKey, portcls/IRegistryKey::QueryValueKey, QueryValueKey
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: portcls.h
+req.include-header: Portcls.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: portcls.h
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	portcls.h
+apiname:
+-	IRegistryKey.QueryValueKey
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

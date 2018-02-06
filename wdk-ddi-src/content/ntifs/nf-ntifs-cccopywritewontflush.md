@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.CcCopyWriteWontFlush
-title : CcCopyWriteWontFlush function
-author : windows-driver-content
-description : The CcCopyWriteWontFlush macro determines whether the amount of data to be copied in a call to CcCopyWrite is small enough not to require immediate flushing to disk if CcCopyWrite is called with Wait set to FALSE.
-old-location : ifsk\cccopywritewontflush.htm
-old-project : ifsk
-ms.assetid : ad2b3372-f8b4-49dc-ba20-2ee89d60f41f
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : CcCopyWriteWontFlush function [Installable File System Drivers], CcCopyWriteWontFlush, ifsk.cccopywritewontflush, ntifs/CcCopyWriteWontFlush, ccref_a8540235-ac2e-4d04-8153-95e2dae5a650.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.CcCopyWriteWontFlush
+title: CcCopyWriteWontFlush function
+author: windows-driver-content
+description: The CcCopyWriteWontFlush macro determines whether the amount of data to be copied in a call to CcCopyWrite is small enough not to require immediate flushing to disk if CcCopyWrite is called with Wait set to FALSE.
+old-location: ifsk\cccopywritewontflush.htm
+old-project: ifsk
+ms.assetid: ad2b3372-f8b4-49dc-ba20-2ee89d60f41f
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: CcCopyWriteWontFlush function [Installable File System Drivers], CcCopyWriteWontFlush, ifsk.cccopywritewontflush, ntifs/CcCopyWriteWontFlush, ccref_a8540235-ac2e-4d04-8153-95e2dae5a650.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	CcCopyWriteWontFlush
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

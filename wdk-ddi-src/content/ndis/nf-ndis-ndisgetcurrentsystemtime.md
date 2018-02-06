@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisGetCurrentSystemTime
-title : NdisGetCurrentSystemTime macro
-author : windows-driver-content
-description : The NdisGetCurrentSystemTime function returns the current system time, suitable for setting timestamps.
-old-location : netvista\ndisgetcurrentsystemtime.htm
-old-project : netvista
-ms.assetid : eef32784-ea27-42c0-9a7a-74ce3d76665d
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : ndis_sysinfo_ref_cfd2358c-a52a-43d9-a07b-c64abb3e28b1.xml, NdisGetCurrentSystemTime, ndis/NdisGetCurrentSystemTime, NdisGetCurrentSystemTime macro [Network Drivers Starting with Windows Vista], netvista.ndisgetcurrentsystemtime
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : macro
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisGetCurrentSystemTime (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisGetCurrentSystemTime (NDIS   5.1)) in Windows XP.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisGetCurrentSystemTime
+title: NdisGetCurrentSystemTime macro
+author: windows-driver-content
+description: The NdisGetCurrentSystemTime function returns the current system time, suitable for setting timestamps.
+old-location: netvista\ndisgetcurrentsystemtime.htm
+old-project: netvista
+ms.assetid: eef32784-ea27-42c0-9a7a-74ce3d76665d
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: ndis_sysinfo_ref_cfd2358c-a52a-43d9-a07b-c64abb3e28b1.xml, NdisGetCurrentSystemTime, ndis/NdisGetCurrentSystemTime, NdisGetCurrentSystemTime macro [Network Drivers Starting with Windows Vista], netvista.ndisgetcurrentsystemtime
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: macro
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisGetCurrentSystemTime (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisGetCurrentSystemTime (NDIS   5.1)) in Windows XP.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisGetCurrentSystemTime
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

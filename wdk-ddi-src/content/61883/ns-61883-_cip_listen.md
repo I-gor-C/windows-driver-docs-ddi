@@ -1,41 +1,46 @@
 ---
-UID : NS:61883._CIP_LISTEN
-title : "_CIP_LISTEN"
-author : windows-driver-content
-description : This structure is used for a listen request. The request begins isochronous reception on the specified connection.
-old-location : ieee\cip_listen.htm
-old-project : IEEE
-ms.assetid : 362ABECF-66D3-4B0B-913B-59F7196D6BFD
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : 61883/CIP_LISTEN, *PCIP_LISTEN, PCIP_LISTEN structure pointer [Buses], CIP_LISTEN structure [Buses], CIP_LISTEN, IEEE.cip_listen, _CIP_LISTEN, PCIP_LISTEN, 61883/PCIP_LISTEN
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : 61883.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : CIP_LISTEN, *PCIP_LISTEN
+UID: NS:61883._CIP_LISTEN
+title: "_CIP_LISTEN"
+author: windows-driver-content
+description: This structure is used for a listen request. The request begins isochronous reception on the specified connection.
+old-location: ieee\cip_listen.htm
+old-project: IEEE
+ms.assetid: 362ABECF-66D3-4B0B-913B-59F7196D6BFD
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: 61883/CIP_LISTEN, *PCIP_LISTEN, PCIP_LISTEN structure pointer [Buses], CIP_LISTEN structure [Buses], CIP_LISTEN, IEEE.cip_listen, _CIP_LISTEN, PCIP_LISTEN, 61883/PCIP_LISTEN
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: 61883.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	61883.h
+apiname:
+-	CIP_LISTEN
+product: Windows
+targetos: Windows
+req.typenames: CIP_LISTEN, *PCIP_LISTEN
 ---
 
 # _CIP_LISTEN structure

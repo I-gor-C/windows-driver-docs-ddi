@@ -1,41 +1,46 @@
 ---
-UID : NN:dbgeng.IDebugOutputCallbacks2
-title : IDebugOutputCallbacks2
-author : windows-driver-content
-description : The IDebugOutputCallbacks2 interface allows clients to receive full debugger markup language (DML) content for presentation.
-old-location : debugger\idebugoutputcallbacks2.htm
-old-project : debugger
-ms.assetid : D35D8960-AD9F-4493-B6CD-3E3049CC3BBD
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : debugger.idebugoutputcallbacks2, IDebugOutputCallbacks2 interface [Windows Debugging], IDebugOutputCallbacks2 interface [Windows Debugging], described, IDebugOutputCallbacks2, dbgeng/IDebugOutputCallbacks2
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NN:dbgeng.IDebugOutputCallbacks2
+title: IDebugOutputCallbacks2
+author: windows-driver-content
+description: The IDebugOutputCallbacks2 interface allows clients to receive full debugger markup language (DML) content for presentation.
+old-location: debugger\idebugoutputcallbacks2.htm
+old-project: debugger
+ms.assetid: D35D8960-AD9F-4493-B6CD-3E3049CC3BBD
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: debugger.idebugoutputcallbacks2, IDebugOutputCallbacks2 interface [Windows Debugging], IDebugOutputCallbacks2 interface [Windows Debugging], described, IDebugOutputCallbacks2, dbgeng/IDebugOutputCallbacks2
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugOutputCallbacks2
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 # IDebugOutputCallbacks2 interface

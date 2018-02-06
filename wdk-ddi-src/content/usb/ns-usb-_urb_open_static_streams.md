@@ -1,42 +1,47 @@
 ---
-UID : NS:usb._URB_OPEN_STATIC_STREAMS
-title : "_URB_OPEN_STATIC_STREAMS"
-author : windows-driver-content
-description : The _URB_OPEN_STATIC_STREAMS structure is used by a USB client driver to open streams in the specified bulk endpoint.
-old-location : buses\_urb_open_basic_streams.htm
-old-project : usbref
-ms.assetid : B3C329D6-541B-410D-A9AB-AF91F1141DFD
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : "_URB_OPEN_STATIC_STREAMS, _URB_OPEN_STATIC_STREAMS structure [Buses], buses._urb_open_basic_streams, usb/_URB_OPEN_STATIC_STREAMS"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : usb.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
-req.product : Windows 10 or later.
+UID: NS:usb._URB_OPEN_STATIC_STREAMS
+title: "_URB_OPEN_STATIC_STREAMS"
+author: windows-driver-content
+description: The _URB_OPEN_STATIC_STREAMS structure is used by a USB client driver to open streams in the specified bulk endpoint.
+old-location: buses\_urb_open_basic_streams.htm
+old-project: usbref
+ms.assetid: B3C329D6-541B-410D-A9AB-AF91F1141DFD
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: "_URB_OPEN_STATIC_STREAMS, _URB_OPEN_STATIC_STREAMS structure [Buses], buses._urb_open_basic_streams, usb/_URB_OPEN_STATIC_STREAMS"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: usb.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Usb.h
+apiname:
+-	_URB_OPEN_STATIC_STREAMS
+product: Windows
+targetos: Windows
+req.typenames: 
+req.product: Windows 10 or later.
 ---
 
 # _URB_OPEN_STATIC_STREAMS structure

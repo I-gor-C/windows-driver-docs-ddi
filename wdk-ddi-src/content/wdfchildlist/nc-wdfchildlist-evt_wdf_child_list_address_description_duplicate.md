@@ -1,42 +1,47 @@
 ---
-UID : NC:wdfchildlist.EVT_WDF_CHILD_LIST_ADDRESS_DESCRIPTION_DUPLICATE
-title : EVT_WDF_CHILD_LIST_ADDRESS_DESCRIPTION_DUPLICATE
-author : windows-driver-content
-description : A driver's EvtChildListAddressDescriptionDuplicate event callback function duplicates a child address description.
-old-location : wdf\evtchildlistaddressdescriptionduplicate.htm
-old-project : wdf
-ms.assetid : 3b99401c-5a36-4ccd-b3a4-c5687310c29b
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.evtchildlistaddressdescriptionduplicate, EvtChildListAddressDescriptionDuplicate callback function, EvtChildListAddressDescriptionDuplicate, EVT_WDF_CHILD_LIST_ADDRESS_DESCRIPTION_DUPLICATE, EVT_WDF_CHILD_LIST_ADDRESS_DESCRIPTION_DUPLICATE, wdfchildlist/EvtChildListAddressDescriptionDuplicate, DFDeviceObjectChildListRef_5ade5582-8a35-49cb-a291-e6d972822138.xml, kmdf.evtchildlistaddressdescriptionduplicate
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdfchildlist.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDBGEXTS_THREAD_OS_INFO, WDBGEXTS_THREAD_OS_INFO"
-req.product : Windows 10 or later.
+UID: NC:wdfchildlist.EVT_WDF_CHILD_LIST_ADDRESS_DESCRIPTION_DUPLICATE
+title: EVT_WDF_CHILD_LIST_ADDRESS_DESCRIPTION_DUPLICATE
+author: windows-driver-content
+description: A driver's EvtChildListAddressDescriptionDuplicate event callback function duplicates a child address description.
+old-location: wdf\evtchildlistaddressdescriptionduplicate.htm
+old-project: wdf
+ms.assetid: 3b99401c-5a36-4ccd-b3a4-c5687310c29b
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.evtchildlistaddressdescriptionduplicate, EvtChildListAddressDescriptionDuplicate callback function, EvtChildListAddressDescriptionDuplicate, EVT_WDF_CHILD_LIST_ADDRESS_DESCRIPTION_DUPLICATE, EVT_WDF_CHILD_LIST_ADDRESS_DESCRIPTION_DUPLICATE, wdfchildlist/EvtChildListAddressDescriptionDuplicate, DFDeviceObjectChildListRef_5ade5582-8a35-49cb-a291-e6d972822138.xml, kmdf.evtchildlistaddressdescriptionduplicate
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdfchildlist.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	WdfChildlist.h
+apiname:
+-	EvtChildListAddressDescriptionDuplicate
+product: Windows
+targetos: Windows
+req.typenames: "*PWDBGEXTS_THREAD_OS_INFO, WDBGEXTS_THREAD_OS_INFO"
+req.product: Windows 10 or later.
 ---
 
 

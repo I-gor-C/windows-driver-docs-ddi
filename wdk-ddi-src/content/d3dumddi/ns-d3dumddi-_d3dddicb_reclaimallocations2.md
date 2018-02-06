@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._D3DDDICB_RECLAIMALLOCATIONS2
-title : "_D3DDDICB_RECLAIMALLOCATIONS2"
-author : windows-driver-content
-description : D3DDDICB_RECLAIMALLOCATIONS2 is used with pfnReclaimAllocations2Cb to describe video memory resources, previously offered for reuse by the driver, that are to be reclaimed.
-old-location : display\d3dddicb_reclaimallocations2.htm
-old-project : display
-ms.assetid : 952935E2-3216-40E5-8A4E-AA5D5E584F12
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DDDICB_RECLAIMALLOCATIONS2 structure [Display Devices], d3dumddi/D3DDDICB_RECLAIMALLOCATIONS2, display.d3dddicb_reclaimallocations2, _D3DDDICB_RECLAIMALLOCATIONS2, D3DDDICB_RECLAIMALLOCATIONS2
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDICB_RECLAIMALLOCATIONS2
+UID: NS:d3dumddi._D3DDDICB_RECLAIMALLOCATIONS2
+title: "_D3DDDICB_RECLAIMALLOCATIONS2"
+author: windows-driver-content
+description: D3DDDICB_RECLAIMALLOCATIONS2 is used with pfnReclaimAllocations2Cb to describe video memory resources, previously offered for reuse by the driver, that are to be reclaimed.
+old-location: display\d3dddicb_reclaimallocations2.htm
+old-project: display
+ms.assetid: 952935E2-3216-40E5-8A4E-AA5D5E584F12
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DDDICB_RECLAIMALLOCATIONS2 structure [Display Devices], d3dumddi/D3DDDICB_RECLAIMALLOCATIONS2, display.d3dddicb_reclaimallocations2, _D3DDDICB_RECLAIMALLOCATIONS2, D3DDDICB_RECLAIMALLOCATIONS2
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	D3DDDICB_RECLAIMALLOCATIONS2
+product: Windows
+targetos: Windows
+req.typenames: D3DDDICB_RECLAIMALLOCATIONS2
 ---
 
 # _D3DDDICB_RECLAIMALLOCATIONS2 structure

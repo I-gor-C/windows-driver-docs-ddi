@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.RtlFreeHeap
-title : RtlFreeHeap function
-author : windows-driver-content
-description : The RtlFreeHeap routine frees a memory block that was allocated from a heap by RtlAllocateHeap.
-old-location : ifsk\rtlfreeheap.htm
-old-project : ifsk
-ms.assetid : 5e8b6bd7-71e7-45ad-985c-fe197693ce05
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : RtlFreeHeap, RtlFreeHeap routine [Installable File System Drivers], rtlref_02e7cb93-ec45-41c9-8e58-72c221cece37.xml, ntifs/RtlFreeHeap, ifsk.rtlfreeheap
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting in Windows XP.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "< DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.RtlFreeHeap
+title: RtlFreeHeap function
+author: windows-driver-content
+description: The RtlFreeHeap routine frees a memory block that was allocated from a heap by RtlAllocateHeap.
+old-location: ifsk\rtlfreeheap.htm
+old-project: ifsk
+ms.assetid: 5e8b6bd7-71e7-45ad-985c-fe197693ce05
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: RtlFreeHeap, RtlFreeHeap routine [Installable File System Drivers], rtlref_02e7cb93-ec45-41c9-8e58-72c221cece37.xml, ntifs/RtlFreeHeap, ifsk.rtlfreeheap
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting in Windows XP.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "< DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	RtlFreeHeap
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

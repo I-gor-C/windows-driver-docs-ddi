@@ -1,42 +1,47 @@
 ---
-UID : NE:wdfchildlist._WDF_RETRIEVE_CHILD_FLAGS
-title : "_WDF_RETRIEVE_CHILD_FLAGS"
-author : windows-driver-content
-description : The WDF_RETRIEVE_CHILD_FLAGS enumeration defines flags that a driver can set before calling WdfChildListBeginIteration.
-old-location : wdf\wdf_retrieve_child_flags.htm
-old-project : wdf
-ms.assetid : 43294943-cc73-45d4-8e0b-e7d29420bb7e
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WdfRetrieveUnspecified, wdfchildlist/WdfRetrieveUnspecified, wdfchildlist/WdfRetrievePendingChildren, DFDeviceObjectChildListRef_f82096f7-f6f9-4e49-a3e3-2641f60f98d9.xml, WdfRetrievePendingChildren, WdfRetrieveAllChildren, wdfchildlist/WdfRetrieveAddedChildren, kmdf.wdf_retrieve_child_flags, WDF_RETRIEVE_CHILD_FLAGS enumeration, wdfchildlist/WdfRetrieveAllChildren, wdfchildlist/WDF_RETRIEVE_CHILD_FLAGS, WdfRetrieveAddedChildren, WdfRetrievePresentChildren, wdfchildlist/WdfRetrieveMissingChildren, _WDF_RETRIEVE_CHILD_FLAGS, wdf.wdf_retrieve_child_flags, WDF_RETRIEVE_CHILD_FLAGS, wdfchildlist/WdfRetrievePresentChildren, WdfRetrieveMissingChildren
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : wdfchildlist.h
-req.include-header : Wdf.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_RETRIEVE_CHILD_FLAGS
-req.product : Windows 10 or later.
+UID: NE:wdfchildlist._WDF_RETRIEVE_CHILD_FLAGS
+title: "_WDF_RETRIEVE_CHILD_FLAGS"
+author: windows-driver-content
+description: The WDF_RETRIEVE_CHILD_FLAGS enumeration defines flags that a driver can set before calling WdfChildListBeginIteration.
+old-location: wdf\wdf_retrieve_child_flags.htm
+old-project: wdf
+ms.assetid: 43294943-cc73-45d4-8e0b-e7d29420bb7e
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WdfRetrieveUnspecified, wdfchildlist/WdfRetrieveUnspecified, wdfchildlist/WdfRetrievePendingChildren, DFDeviceObjectChildListRef_f82096f7-f6f9-4e49-a3e3-2641f60f98d9.xml, WdfRetrievePendingChildren, WdfRetrieveAllChildren, wdfchildlist/WdfRetrieveAddedChildren, kmdf.wdf_retrieve_child_flags, WDF_RETRIEVE_CHILD_FLAGS enumeration, wdfchildlist/WdfRetrieveAllChildren, wdfchildlist/WDF_RETRIEVE_CHILD_FLAGS, WdfRetrieveAddedChildren, WdfRetrievePresentChildren, wdfchildlist/WdfRetrieveMissingChildren, _WDF_RETRIEVE_CHILD_FLAGS, wdf.wdf_retrieve_child_flags, WDF_RETRIEVE_CHILD_FLAGS, wdfchildlist/WdfRetrievePresentChildren, WdfRetrieveMissingChildren
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: wdfchildlist.h
+req.include-header: Wdf.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfchildlist.h
+apiname:
+-	WDF_RETRIEVE_CHILD_FLAGS
+product: Windows
+targetos: Windows
+req.typenames: WDF_RETRIEVE_CHILD_FLAGS
+req.product: Windows 10 or later.
 ---
 
 # _WDF_RETRIEVE_CHILD_FLAGS Enumeration
@@ -59,41 +64,41 @@ typedef enum _WDF_RETRIEVE_CHILD_FLAGS {
 ## Constants
 
 <table>
-
-<tr>
-<td>WdfRetrieveAddedChildren</td>
-<td>Calls to <a href="..\wdfchildlist\nf-wdfchildlist-wdfchildlistretrievenextdevice.md">WdfChildListRetrieveNextDevice</a> will retrieve child devices that are present or pending.</td>
-</tr>
-
-<tr>
-<td>WdfRetrieveAllChildren</td>
-<td>Calls to <a href="..\wdfchildlist\nf-wdfchildlist-wdfchildlistretrievenextdevice.md">WdfChildListRetrieveNextDevice</a> will retrieve child devices that are present, pending, or missing.</td>
-</tr>
-
-<tr>
-<td>WdfRetrieveMissingChildren</td>
-<td>Calls to <a href="..\wdfchildlist\nf-wdfchildlist-wdfchildlistretrievenextdevice.md">WdfChildListRetrieveNextDevice</a> will retrieve child devices that are marked as missing.</td>
-</tr>
-
-<tr>
-<td>WdfRetrievePendingChildren</td>
-<td>Calls to <a href="..\wdfchildlist\nf-wdfchildlist-wdfchildlistretrievenextdevice.md">WdfChildListRetrieveNextDevice</a> will retrieve child devices that the driver has reported as present, but for which a framework device object has not been created (because the framework has not called the driver's <a href="..\wdfchildlist\nc-wdfchildlist-evt_wdf_child_list_create_device.md">EvtChildListCreateDevice</a> callback function).</td>
-</tr>
-
-<tr>
-<td>WdfRetrievePresentChildren</td>
-<td>Calls to <a href="..\wdfchildlist\nf-wdfchildlist-wdfchildlistretrievenextdevice.md">WdfChildListRetrieveNextDevice</a> will retrieve child devices for which a framework device object exists.</td>
-</tr>
-
-<tr>
-<td>WdfRetrieveUnspecified</td>
-<td>Reserved for internal use only.</td>
-</tr>
+            
+                <tr>
+                    <td>WdfRetrieveAddedChildren</td>
+                    <td>Calls to <a href="..\wdfchildlist\nf-wdfchildlist-wdfchildlistretrievenextdevice.md">WdfChildListRetrieveNextDevice</a> will retrieve child devices that are present or pending.</td>
+                </tr>
+            
+                <tr>
+                    <td>WdfRetrieveAllChildren</td>
+                    <td>Calls to <a href="..\wdfchildlist\nf-wdfchildlist-wdfchildlistretrievenextdevice.md">WdfChildListRetrieveNextDevice</a> will retrieve child devices that are present, pending, or missing.</td>
+                </tr>
+            
+                <tr>
+                    <td>WdfRetrieveMissingChildren</td>
+                    <td>Calls to <a href="..\wdfchildlist\nf-wdfchildlist-wdfchildlistretrievenextdevice.md">WdfChildListRetrieveNextDevice</a> will retrieve child devices that are marked as missing.</td>
+                </tr>
+            
+                <tr>
+                    <td>WdfRetrievePendingChildren</td>
+                    <td>Calls to <a href="..\wdfchildlist\nf-wdfchildlist-wdfchildlistretrievenextdevice.md">WdfChildListRetrieveNextDevice</a> will retrieve child devices that the driver has reported as present, but for which a framework device object has not been created (because the framework has not called the driver's <a href="..\wdfchildlist\nc-wdfchildlist-evt_wdf_child_list_create_device.md">EvtChildListCreateDevice</a> callback function).</td>
+                </tr>
+            
+                <tr>
+                    <td>WdfRetrievePresentChildren</td>
+                    <td>Calls to <a href="..\wdfchildlist\nf-wdfchildlist-wdfchildlistretrievenextdevice.md">WdfChildListRetrieveNextDevice</a> will retrieve child devices for which a framework device object exists.</td>
+                </tr>
+            
+                <tr>
+                    <td>WdfRetrieveUnspecified</td>
+                    <td>Reserved for internal use only.</td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-Before calling <a href="..\wdfchildlist\nf-wdfchildlist-wdfchildlistbeginiteration.md">WdfChildListBeginIteration</a>, your driver must set <b>WDF_RETRIEVE_CHILD_FLAGS</b>-typed flags in a <a href="..\wdfchildlist\ns-wdfchildlist-_wdf_child_list_iterator.md">WDF_CHILD_LIST_ITERATOR</a> structure.
+        Before calling <a href="..\wdfchildlist\nf-wdfchildlist-wdfchildlistbeginiteration.md">WdfChildListBeginIteration</a>, your driver must set <b>WDF_RETRIEVE_CHILD_FLAGS</b>-typed flags in a <a href="..\wdfchildlist\ns-wdfchildlist-_wdf_child_list_iterator.md">WDF_CHILD_LIST_ITERATOR</a> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -101,9 +106,9 @@ Before calling <a href="..\wdfchildlist\nf-wdfchildlist-wdfchildlistbeginiterati
 | **Minimum KMDF version** | 1.0 |
 | **Header** | wdfchildlist.h (include Wdf.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\wdfchildlist\nf-wdfchildlist-wdfchildlistretrievenextdevice.md">WdfChildListRetrieveNextDevice</a>
+        <a href="..\wdfchildlist\nf-wdfchildlist-wdfchildlistretrievenextdevice.md">WdfChildListRetrieveNextDevice</a>
 
 <a href="..\wdfchildlist\ns-wdfchildlist-_wdf_child_list_iterator.md">WDF_CHILD_LIST_ITERATOR</a>
 

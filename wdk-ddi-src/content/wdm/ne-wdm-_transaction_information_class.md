@@ -1,42 +1,47 @@
 ---
-UID : NE:wdm._TRANSACTION_INFORMATION_CLASS
-title : "_TRANSACTION_INFORMATION_CLASS"
-author : windows-driver-content
-description : The TRANSACTION_INFORMATION_CLASS enumeration specifies the type of information that ZwSetInformationTransaction can set and ZwQueryInformationTransaction can retrieve for a transaction manager object.
-old-location : kernel\transaction_information_class.htm
-old-project : kernel
-ms.assetid : f3211114-8924-4e57-85a3-12471585652b
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : TransactionPropertiesInformation, _TRANSACTION_INFORMATION_CLASS, TransactionSuperiorEnlistmentInformation, wdm/TransactionPropertiesInformation, TransactionEnlistmentInformation, wdm/TransactionEnlistmentInformation, wdm/TransactionBasicInformation, kernel.transaction_information_class, ktm_ref_b02f7265-fb29-402a-b0d3-79427735f354.xml, TRANSACTION_INFORMATION_CLASS, TRANSACTION_INFORMATION_CLASS enumeration [Kernel-Mode Driver Architecture], TransactionBasicInformation, wdm/TransactionSuperiorEnlistmentInformation, wdm/TRANSACTION_INFORMATION_CLASS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TRANSACTION_INFORMATION_CLASS
-req.product : Windows 10 or later.
+UID: NE:wdm._TRANSACTION_INFORMATION_CLASS
+title: "_TRANSACTION_INFORMATION_CLASS"
+author: windows-driver-content
+description: The TRANSACTION_INFORMATION_CLASS enumeration specifies the type of information that ZwSetInformationTransaction can set and ZwQueryInformationTransaction can retrieve for a transaction manager object.
+old-location: kernel\transaction_information_class.htm
+old-project: kernel
+ms.assetid: f3211114-8924-4e57-85a3-12471585652b
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: TransactionPropertiesInformation, _TRANSACTION_INFORMATION_CLASS, TransactionSuperiorEnlistmentInformation, wdm/TransactionPropertiesInformation, TransactionEnlistmentInformation, wdm/TransactionEnlistmentInformation, wdm/TransactionBasicInformation, kernel.transaction_information_class, ktm_ref_b02f7265-fb29-402a-b0d3-79427735f354.xml, TRANSACTION_INFORMATION_CLASS, TRANSACTION_INFORMATION_CLASS enumeration [Kernel-Mode Driver Architecture], TransactionBasicInformation, wdm/TransactionSuperiorEnlistmentInformation, wdm/TRANSACTION_INFORMATION_CLASS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	TRANSACTION_INFORMATION_CLASS
+product: Windows
+targetos: Windows
+req.typenames: TRANSACTION_INFORMATION_CLASS
+req.product: Windows 10 or later.
 ---
 
 # _TRANSACTION_INFORMATION_CLASS Enumeration
@@ -55,26 +60,26 @@ typedef enum _TRANSACTION_INFORMATION_CLASS {
 ## Constants
 
 <table>
-
-<tr>
-<td>TransactionBasicInformation</td>
-<td>Information about a transaction manager object is stored in a <a href="..\wdm\ns-wdm-_transaction_basic_information.md">TRANSACTION_BASIC_INFORMATION</a> structure.</td>
-</tr>
-
-<tr>
-<td>TransactionEnlistmentInformation</td>
-<td>Information about a transaction manager object is stored in a <a href="..\wdm\ns-wdm-_transaction_enlistments_information.md">TRANSACTION_ENLISTMENTS_INFORMATION</a> structure.</td>
-</tr>
-
-<tr>
-<td>TransactionPropertiesInformation</td>
-<td>Information about a transaction manager object is stored in a <a href="..\wdm\ns-wdm-_transaction_properties_information.md">TRANSACTION_PROPERTIES_INFORMATION</a> structure.</td>
-</tr>
-
-<tr>
-<td>TransactionSuperiorEnlistmentInformation</td>
-<td>Information about a transaction manager object is stored in a <b>TRANSACTION_SUPERIOR_ENLISTMENT_INFORMATION</b> structure.</td>
-</tr>
+            
+                <tr>
+                    <td>TransactionBasicInformation</td>
+                    <td>Information about a transaction manager object is stored in a <a href="..\wdm\ns-wdm-_transaction_basic_information.md">TRANSACTION_BASIC_INFORMATION</a> structure.</td>
+                </tr>
+            
+                <tr>
+                    <td>TransactionEnlistmentInformation</td>
+                    <td>Information about a transaction manager object is stored in a <a href="..\wdm\ns-wdm-_transaction_enlistments_information.md">TRANSACTION_ENLISTMENTS_INFORMATION</a> structure.</td>
+                </tr>
+            
+                <tr>
+                    <td>TransactionPropertiesInformation</td>
+                    <td>Information about a transaction manager object is stored in a <a href="..\wdm\ns-wdm-_transaction_properties_information.md">TRANSACTION_PROPERTIES_INFORMATION</a> structure.</td>
+                </tr>
+            
+                <tr>
+                    <td>TransactionSuperiorEnlistmentInformation</td>
+                    <td>Information about a transaction manager object is stored in a <b>TRANSACTION_SUPERIOR_ENLISTMENT_INFORMATION</b> structure.</td>
+                </tr>
 </table>
 
 
@@ -84,9 +89,9 @@ typedef enum _TRANSACTION_INFORMATION_CLASS {
 | **Windows version** | Available starting with Windows Vista. Available starting with Windows Vista. |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\wdm\nf-wdm-zwsetinformationtransaction.md">ZwSetInformationTransaction</a>
+        <a href="..\wdm\nf-wdm-zwsetinformationtransaction.md">ZwSetInformationTransaction</a>
 
 <a href="..\wdm\nf-wdm-zwqueryinformationtransaction.md">ZwQueryInformationTransaction</a>
 

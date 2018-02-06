@@ -1,42 +1,47 @@
 ---
-UID : NF:umdprovider.UMDEtwRegister
-title : UMDEtwRegister function
-author : windows-driver-content
-description : Registers the event trace provider. The driver should call this function before it makes any calls to log events.
-old-location : display\umdetwregister.htm
-old-project : display
-ms.assetid : 03352d5d-122f-4818-965d-f5cc8231d6ed
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : umdprovider/UMDEtwRegister, display.umdetwregister, UMDEtwRegister, UMDEtwRegister function [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : umdprovider.h
-req.include-header : Umdprovider.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : UMDETW_ALLOCATION_SEMANTIC
-req.product : Windows 10 or later.
+UID: NF:umdprovider.UMDEtwRegister
+title: UMDEtwRegister function
+author: windows-driver-content
+description: Registers the event trace provider. The driver should call this function before it makes any calls to log events.
+old-location: display\umdetwregister.htm
+old-project: display
+ms.assetid: 03352d5d-122f-4818-965d-f5cc8231d6ed
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: umdprovider/UMDEtwRegister, display.umdetwregister, UMDEtwRegister, UMDEtwRegister function [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: umdprovider.h
+req.include-header: Umdprovider.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	umdprovider.h
+apiname:
+-	UMDEtwRegister
+product: Windows
+targetos: Windows
+req.typenames: UMDETW_ALLOCATION_SEMANTIC
+req.product: Windows 10 or later.
 ---
 
 

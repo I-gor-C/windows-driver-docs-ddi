@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGK_CREATEALLOCATIONFLAGS
-title : "_DXGK_CREATEALLOCATIONFLAGS"
-author : windows-driver-content
-description : The DXGK_CREATEALLOCATIONFLAGS structure identifies how to create allocations.
-old-location : display\dxgk_createallocationflags.htm
-old-project : display
-ms.assetid : 3c6c5515-855a-4016-a327-958959981f0f
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgk_createallocationflags, _DXGK_CREATEALLOCATIONFLAGS, d3dkmddi/DXGK_CREATEALLOCATIONFLAGS, DmStructs_320b15bf-5664-4fb9-9126-2c063ef75467.xml, DXGK_CREATEALLOCATIONFLAGS, DXGK_CREATEALLOCATIONFLAGS structure [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_CREATEALLOCATIONFLAGS
+UID: NS:d3dkmddi._DXGK_CREATEALLOCATIONFLAGS
+title: "_DXGK_CREATEALLOCATIONFLAGS"
+author: windows-driver-content
+description: The DXGK_CREATEALLOCATIONFLAGS structure identifies how to create allocations.
+old-location: display\dxgk_createallocationflags.htm
+old-project: display
+ms.assetid: 3c6c5515-855a-4016-a327-958959981f0f
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgk_createallocationflags, _DXGK_CREATEALLOCATIONFLAGS, d3dkmddi/DXGK_CREATEALLOCATIONFLAGS, DmStructs_320b15bf-5664-4fb9-9126-2c063ef75467.xml, DXGK_CREATEALLOCATIONFLAGS, DXGK_CREATEALLOCATIONFLAGS structure [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DXGK_CREATEALLOCATIONFLAGS
+product: Windows
+targetos: Windows
+req.typenames: DXGK_CREATEALLOCATIONFLAGS
 ---
 
 # _DXGK_CREATEALLOCATIONFLAGS structure

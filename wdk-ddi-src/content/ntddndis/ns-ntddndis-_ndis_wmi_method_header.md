@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddndis._NDIS_WMI_METHOD_HEADER
-title : "_NDIS_WMI_METHOD_HEADER"
-author : windows-driver-content
-description : The NDIS_WMI_METHOD_HEADER structure provides information about a GUID method request from WMI clients.
-old-location : netvista\ndis_wmi_method_header.htm
-old-project : netvista
-ms.assetid : c39a9438-d3be-4f01-96d5-01c7339a666a
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.ndis_wmi_method_header, PNDIS_WMI_METHOD_HEADER, NDIS_WMI_METHOD_HEADER, NDIS_WMI_METHOD_HEADER structure [Network Drivers Starting with Windows Vista], PNDIS_WMI_METHOD_HEADER structure pointer [Network Drivers Starting with Windows Vista], ndis_wmi_ref_fa232798-c72c-4823-806a-c8b7cf28001d.xml, ntddndis/PNDIS_WMI_METHOD_HEADER, _NDIS_WMI_METHOD_HEADER, *PNDIS_WMI_METHOD_HEADER, ntddndis/NDIS_WMI_METHOD_HEADER
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_WMI_METHOD_HEADER, *PNDIS_WMI_METHOD_HEADER
+UID: NS:ntddndis._NDIS_WMI_METHOD_HEADER
+title: "_NDIS_WMI_METHOD_HEADER"
+author: windows-driver-content
+description: The NDIS_WMI_METHOD_HEADER structure provides information about a GUID method request from WMI clients.
+old-location: netvista\ndis_wmi_method_header.htm
+old-project: netvista
+ms.assetid: c39a9438-d3be-4f01-96d5-01c7339a666a
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.ndis_wmi_method_header, PNDIS_WMI_METHOD_HEADER, NDIS_WMI_METHOD_HEADER, NDIS_WMI_METHOD_HEADER structure [Network Drivers Starting with Windows Vista], PNDIS_WMI_METHOD_HEADER structure pointer [Network Drivers Starting with Windows Vista], ndis_wmi_ref_fa232798-c72c-4823-806a-c8b7cf28001d.xml, ntddndis/PNDIS_WMI_METHOD_HEADER, _NDIS_WMI_METHOD_HEADER, *PNDIS_WMI_METHOD_HEADER, ntddndis/NDIS_WMI_METHOD_HEADER
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddndis.h
+apiname:
+-	NDIS_WMI_METHOD_HEADER
+product: Windows
+targetos: Windows
+req.typenames: NDIS_WMI_METHOD_HEADER, *PNDIS_WMI_METHOD_HEADER
 ---
 
 # _NDIS_WMI_METHOD_HEADER structure

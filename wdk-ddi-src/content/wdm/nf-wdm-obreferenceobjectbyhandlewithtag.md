@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.ObReferenceObjectByHandleWithTag
-title : ObReferenceObjectByHandleWithTag function
-author : windows-driver-content
-description : The ObReferenceObjectByHandleWithTag routine increments the reference count of the object that is identified by the specified handle, and writes a four-byte tag value to the object to support object reference tracing.
-old-location : kernel\obreferenceobjectbyhandlewithtag.htm
-old-project : kernel
-ms.assetid : f36beac8-e4fb-49ce-b49d-a1a8f32f19a5
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ObReferenceObjectByHandleWithTag routine [Kernel-Mode Driver Architecture], kernel.obreferenceobjectbyhandlewithtag, k107_431c6c60-e2bd-4d90-9054-b950195bbec3.xml, wdm/ObReferenceObjectByHandleWithTag, ObReferenceObjectByHandleWithTag
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h, Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 7 and later versions of the Windows operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ObReferenceObjectByHandleWithTag
+title: ObReferenceObjectByHandleWithTag function
+author: windows-driver-content
+description: The ObReferenceObjectByHandleWithTag routine increments the reference count of the object that is identified by the specified handle, and writes a four-byte tag value to the object to support object reference tracing.
+old-location: kernel\obreferenceobjectbyhandlewithtag.htm
+old-project: kernel
+ms.assetid: f36beac8-e4fb-49ce-b49d-a1a8f32f19a5
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ObReferenceObjectByHandleWithTag routine [Kernel-Mode Driver Architecture], kernel.obreferenceobjectbyhandlewithtag, k107_431c6c60-e2bd-4d90-9054-b950195bbec3.xml, wdm/ObReferenceObjectByHandleWithTag, ObReferenceObjectByHandleWithTag
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h, Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 7 and later versions of the Windows operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ObReferenceObjectByHandleWithTag
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

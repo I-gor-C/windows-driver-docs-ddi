@@ -1,42 +1,48 @@
 ---
-UID : NF:udecxusbdevice.UdecxUsbDeviceLinkPowerEntryComplete
-title : UdecxUsbDeviceLinkPowerEntryComplete function
-author : windows-driver-content
-description : Completes an asynchronous request for bringing the device out of a low power state.
-old-location : buses\udecxusbdevicelinkpowerentrycomplete.htm
-old-project : usbref
-ms.assetid : 0B8FF9EB-63E5-4532-B13C-CF0FF04D9A53
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : UdecxUsbDeviceLinkPowerEntryComplete function [Buses], buses.udecxusbdevicelinkpowerentrycomplete, UdecxUsbDeviceLinkPowerEntryComplete, udecxusbdevice/UdecxUsbDeviceLinkPowerEntryComplete
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : udecxusbdevice.h
-req.include-header : Udecx.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 1.15
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Udecxstub.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUDECX_USB_DEVICE_WAKE_SETTING, UDECX_USB_DEVICE_WAKE_SETTING"
-req.product : Windows 10 or later.
+UID: NF:udecxusbdevice.UdecxUsbDeviceLinkPowerEntryComplete
+title: UdecxUsbDeviceLinkPowerEntryComplete function
+author: windows-driver-content
+description: Completes an asynchronous request for bringing the device out of a low power state.
+old-location: buses\udecxusbdevicelinkpowerentrycomplete.htm
+old-project: usbref
+ms.assetid: 0B8FF9EB-63E5-4532-B13C-CF0FF04D9A53
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: UdecxUsbDeviceLinkPowerEntryComplete function [Buses], buses.udecxusbdevicelinkpowerentrycomplete, UdecxUsbDeviceLinkPowerEntryComplete, udecxusbdevice/UdecxUsbDeviceLinkPowerEntryComplete
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: udecxusbdevice.h
+req.include-header: Udecx.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 1.15
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Udecxstub.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Udecxstub.lib
+-	Udecxstub.dll
+apiname:
+-	UdecxUsbDeviceLinkPowerEntryComplete
+product: Windows
+targetos: Windows
+req.typenames: "*PUDECX_USB_DEVICE_WAKE_SETTING, UDECX_USB_DEVICE_WAKE_SETTING"
+req.product: Windows 10 or later.
 ---
 
 

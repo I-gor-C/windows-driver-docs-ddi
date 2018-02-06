@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsForwardAndCatchIrp
-title : KsForwardAndCatchIrp function
-author : windows-driver-content
-description : The KsForwardAndCatchIrp function forwards an IRP to the specified driver after initializing the next stack location, and regains control of the IRP on completion from that driver.
-old-location : stream\ksforwardandcatchirp.htm
-old-project : stream
-ms.assetid : 87a873c2-07d3-4f76-bc26-5fcae4b960e7
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KsForwardAndCatchIrp, ksfunc_db5ae1e5-b0c8-4703-866f-a3f060e5ffb3.xml, stream.ksforwardandcatchirp, ks/KsForwardAndCatchIrp, KsForwardAndCatchIrp function [Streaming Media Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsForwardAndCatchIrp
+title: KsForwardAndCatchIrp function
+author: windows-driver-content
+description: The KsForwardAndCatchIrp function forwards an IRP to the specified driver after initializing the next stack location, and regains control of the IRP on completion from that driver.
+old-location: stream\ksforwardandcatchirp.htm
+old-project: stream
+ms.assetid: 87a873c2-07d3-4f76-bc26-5fcae4b960e7
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KsForwardAndCatchIrp, ksfunc_db5ae1e5-b0c8-4703-866f-a3f060e5ffb3.xml, stream.ksforwardandcatchirp, ks/KsForwardAndCatchIrp, KsForwardAndCatchIrp function [Streaming Media Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsForwardAndCatchIrp
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

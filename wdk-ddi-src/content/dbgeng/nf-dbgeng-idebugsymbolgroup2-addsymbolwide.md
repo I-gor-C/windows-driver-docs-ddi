@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugSymbolGroup2.AddSymbolWide
-title : IDebugSymbolGroup2::AddSymbolWide method
-author : windows-driver-content
-description : The AddSymbolWide method adds a symbol to a symbol group.
-old-location : debugger\addsymbolwide.htm
-old-project : debugger
-ms.assetid : 1c363649-4eff-4ad1-bc31-b060e2eb15d5
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : AddSymbolWide method [Windows Debugging], IDebugSymbolGroup2 interface, IDebugSymbolGroup2, IDebugSymbolGroup2::AddSymbolWide, dbgeng/IDebugSymbolGroup2::AddSymbolWide, IDebugSymbolGroup2 interface [Windows Debugging], AddSymbolWide method, AddSymbolWide method [Windows Debugging], AddSymbolWide, debugger.addsymbolwide
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSymbolGroup2.AddSymbolWide
+title: IDebugSymbolGroup2::AddSymbolWide method
+author: windows-driver-content
+description: The AddSymbolWide method adds a symbol to a symbol group.
+old-location: debugger\addsymbolwide.htm
+old-project: debugger
+ms.assetid: 1c363649-4eff-4ad1-bc31-b060e2eb15d5
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: AddSymbolWide method [Windows Debugging], IDebugSymbolGroup2 interface, IDebugSymbolGroup2, IDebugSymbolGroup2::AddSymbolWide, dbgeng/IDebugSymbolGroup2::AddSymbolWide, IDebugSymbolGroup2 interface [Windows Debugging], AddSymbolWide method, AddSymbolWide method [Windows Debugging], AddSymbolWide, debugger.addsymbolwide
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Dbgeng.h
+apiname:
+-	IDebugSymbolGroup2.AddSymbolWide
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

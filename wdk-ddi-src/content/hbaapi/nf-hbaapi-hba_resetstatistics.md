@@ -1,41 +1,46 @@
 ---
-UID : NF:hbaapi.HBA_ResetStatistics
-title : HBA_ResetStatistics function
-author : windows-driver-content
-description : The HBA_ResetStatistics routine resets the statistics counters for the indicated port and HBA.
-old-location : storage\hba_resetstatistics.htm
-old-project : storage
-ms.assetid : 4e889905-9c5e-446c-8d0e-09e445f7c1a4
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.hba_resetstatistics, HBA_ResetStatistics, fibreHBA_rtns_37577fde-9a33-4fd7-8e80-abbd7458b4ef.xml, HBA_ResetStatistics routine [Storage Devices], hbaapi/HBA_ResetStatistics
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : hbaapi.h
-req.include-header : Hbaapi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Hbaapi.lib
-req.dll : Hbaapi.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HBA_WWNTYPE
+UID: NF:hbaapi.HBA_ResetStatistics
+title: HBA_ResetStatistics function
+author: windows-driver-content
+description: The HBA_ResetStatistics routine resets the statistics counters for the indicated port and HBA.
+old-location: storage\hba_resetstatistics.htm
+old-project: storage
+ms.assetid: 4e889905-9c5e-446c-8d0e-09e445f7c1a4
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.hba_resetstatistics, HBA_ResetStatistics, fibreHBA_rtns_37577fde-9a33-4fd7-8e80-abbd7458b4ef.xml, HBA_ResetStatistics routine [Storage Devices], hbaapi/HBA_ResetStatistics
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: hbaapi.h
+req.include-header: Hbaapi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Hbaapi.lib
+req.dll: Hbaapi.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Hbaapi.dll
+apiname:
+-	HBA_ResetStatistics
+product: Windows
+targetos: Windows
+req.typenames: HBA_WWNTYPE
 ---
 
 

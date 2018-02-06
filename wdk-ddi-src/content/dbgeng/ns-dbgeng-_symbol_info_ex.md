@@ -1,41 +1,46 @@
 ---
-UID : NS:dbgeng._SYMBOL_INFO_EX
-title : "_SYMBOL_INFO_EX"
-author : windows-driver-content
-description : The SYMBOL_INFO_EX structure describes the extended line symbol information.
-old-location : debugger\symbol_info_ex.htm
-old-project : debugger
-ms.assetid : BDB8179A-4A97-4E83-B4A4-7B8358B3510C
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : debugger.symbol_info_ex, dbgeng/SYMBOL_INFO_EX, dbgeng/PSYMBOL_INFO_EX, PSYMBOL_INFO_EX structure pointer [Windows Debugging], SYMBOL_INFO_EX structure [Windows Debugging], PSYMBOL_INFO_EX, _SYMBOL_INFO_EX, SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : dbgeng.h
-req.include-header : DbgEng.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
+UID: NS:dbgeng._SYMBOL_INFO_EX
+title: "_SYMBOL_INFO_EX"
+author: windows-driver-content
+description: The SYMBOL_INFO_EX structure describes the extended line symbol information.
+old-location: debugger\symbol_info_ex.htm
+old-project: debugger
+ms.assetid: BDB8179A-4A97-4E83-B4A4-7B8358B3510C
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: debugger.symbol_info_ex, dbgeng/SYMBOL_INFO_EX, dbgeng/PSYMBOL_INFO_EX, PSYMBOL_INFO_EX structure pointer [Windows Debugging], SYMBOL_INFO_EX structure [Windows Debugging], PSYMBOL_INFO_EX, _SYMBOL_INFO_EX, SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: dbgeng.h
+req.include-header: DbgEng.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	DbgEng.h
+apiname:
+-	SYMBOL_INFO_EX
+product: Windows
+targetos: Windows
+req.typenames: SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ---
 
 # _SYMBOL_INFO_EX structure

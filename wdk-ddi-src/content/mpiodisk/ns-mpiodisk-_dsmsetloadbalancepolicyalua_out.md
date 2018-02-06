@@ -1,41 +1,46 @@
 ---
-UID : NS:mpiodisk._DsmSetLoadBalancePolicyALUA_OUT
-title : "_DsmSetLoadBalancePolicyALUA_OUT"
-author : windows-driver-content
-description : The DsmSetLoadBalancePolicyALUA_OUT structure reports the output of the DsmSetLoadBalancePolicyALUA method.
-old-location : storage\dsmsetloadbalancepolicyalua_out.htm
-old-project : storage
-ms.assetid : 00c5f766-299e-4c07-a3e0-61077518a37a
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : "*PDsmSetLoadBalancePolicyALUA_OUT, PDsmSetLoadBalancePolicyALUA_OUT, mpiodisk/PDsmSetLoadBalancePolicyALUA_OUT, DsmSetLoadBalancePolicyALUA_OUT, structs-scsibus_59bfe47a-52c1-4a7c-95c4-784f0e8ae92e.xml, mpiodisk/DsmSetLoadBalancePolicyALUA_OUT, _DsmSetLoadBalancePolicyALUA_OUT, PDsmSetLoadBalancePolicyALUA_OUT structure pointer [Storage Devices], storage.dsmsetloadbalancepolicyalua_out, DsmSetLoadBalancePolicyALUA_OUT structure [Storage Devices]"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : mpiodisk.h
-req.include-header : Mpiowmi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDsmSetLoadBalancePolicyALUA_OUT, DsmSetLoadBalancePolicyALUA_OUT"
+UID: NS:mpiodisk._DsmSetLoadBalancePolicyALUA_OUT
+title: "_DsmSetLoadBalancePolicyALUA_OUT"
+author: windows-driver-content
+description: The DsmSetLoadBalancePolicyALUA_OUT structure reports the output of the DsmSetLoadBalancePolicyALUA method.
+old-location: storage\dsmsetloadbalancepolicyalua_out.htm
+old-project: storage
+ms.assetid: 00c5f766-299e-4c07-a3e0-61077518a37a
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: "*PDsmSetLoadBalancePolicyALUA_OUT, PDsmSetLoadBalancePolicyALUA_OUT, mpiodisk/PDsmSetLoadBalancePolicyALUA_OUT, DsmSetLoadBalancePolicyALUA_OUT, structs-scsibus_59bfe47a-52c1-4a7c-95c4-784f0e8ae92e.xml, mpiodisk/DsmSetLoadBalancePolicyALUA_OUT, _DsmSetLoadBalancePolicyALUA_OUT, PDsmSetLoadBalancePolicyALUA_OUT structure pointer [Storage Devices], storage.dsmsetloadbalancepolicyalua_out, DsmSetLoadBalancePolicyALUA_OUT structure [Storage Devices]"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: mpiodisk.h
+req.include-header: Mpiowmi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	mpiodisk.h
+apiname:
+-	DsmSetLoadBalancePolicyALUA_OUT
+product: Windows
+targetos: Windows
+req.typenames: "*PDsmSetLoadBalancePolicyALUA_OUT, DsmSetLoadBalancePolicyALUA_OUT"
 ---
 
 # _DsmSetLoadBalancePolicyALUA_OUT structure

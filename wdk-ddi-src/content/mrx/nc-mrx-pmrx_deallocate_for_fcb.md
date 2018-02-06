@@ -1,41 +1,46 @@
 ---
-UID : NC:mrx.PMRX_DEALLOCATE_FOR_FCB
-title : PMRX_DEALLOCATE_FOR_FCB
-author : windows-driver-content
-description : The MRxDeallocateForFcb routine is called by RDBSS to request that the network mini-redirector deallocate an FCB structure. This call is in response to a request to close a file system object.
-old-location : ifsk\mrxdeallocateforfcb.htm
-old-project : ifsk
-ms.assetid : 4347f481-cd8f-4a88-92e0-f6bc7a4b7ffb
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.mrxdeallocateforfcb, MRxDeallocateForFcb routine [Installable File System Drivers], MRxDeallocateForFcb, PMRX_DEALLOCATE_FOR_FCB, PMRX_DEALLOCATE_FOR_FCB, mrx/MRxDeallocateForFcb, mrxref_02a9e4a3-db00-48e1-ac2e-cd6a47ae4c37.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : mrx.h
-req.include-header : Mrx.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SetDSMCounters_IN, *PSetDSMCounters_IN
+UID: NC:mrx.PMRX_DEALLOCATE_FOR_FCB
+title: PMRX_DEALLOCATE_FOR_FCB
+author: windows-driver-content
+description: The MRxDeallocateForFcb routine is called by RDBSS to request that the network mini-redirector deallocate an FCB structure. This call is in response to a request to close a file system object.
+old-location: ifsk\mrxdeallocateforfcb.htm
+old-project: ifsk
+ms.assetid: 4347f481-cd8f-4a88-92e0-f6bc7a4b7ffb
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.mrxdeallocateforfcb, MRxDeallocateForFcb routine [Installable File System Drivers], MRxDeallocateForFcb, PMRX_DEALLOCATE_FOR_FCB, PMRX_DEALLOCATE_FOR_FCB, mrx/MRxDeallocateForFcb, mrxref_02a9e4a3-db00-48e1-ac2e-cd6a47ae4c37.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: mrx.h
+req.include-header: Mrx.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	mrx.h
+apiname:
+-	MRxDeallocateForFcb
+product: Windows
+targetos: Windows
+req.typenames: SetDSMCounters_IN, *PSetDSMCounters_IN
 ---
 
 

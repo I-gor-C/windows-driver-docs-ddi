@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGKARG_RENDERGDI
-title : "_DXGKARG_RENDERGDI"
-author : windows-driver-content
-description : The DXGKARG_RENDERGDI structure is used when submitting Windows Graphics Device Interface (GDI) commands for contexts that support virtual addressing.
-old-location : display\dxgkarg_rendergdi.htm
-old-project : display
-ms.assetid : E1DC536B-581E-43F8-99B2-776DC30EEBB7
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DXGKARG_RENDERGDI structure [Display Devices], display.dxgkarg_rendergdi, _DXGKARG_RENDERGDI, DXGKARG_RENDERGDI, *INOUT_PDXGKARG_RENDERGDI, d3dkmddi/DXGKARG_RENDERGDI
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGKARG_RENDERGDI
+UID: NS:d3dkmddi._DXGKARG_RENDERGDI
+title: "_DXGKARG_RENDERGDI"
+author: windows-driver-content
+description: The DXGKARG_RENDERGDI structure is used when submitting Windows Graphics Device Interface (GDI) commands for contexts that support virtual addressing.
+old-location: display\dxgkarg_rendergdi.htm
+old-project: display
+ms.assetid: E1DC536B-581E-43F8-99B2-776DC30EEBB7
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DXGKARG_RENDERGDI structure [Display Devices], display.dxgkarg_rendergdi, _DXGKARG_RENDERGDI, DXGKARG_RENDERGDI, *INOUT_PDXGKARG_RENDERGDI, d3dkmddi/DXGKARG_RENDERGDI
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DXGKARG_RENDERGDI
+product: Windows
+targetos: Windows
+req.typenames: DXGKARG_RENDERGDI
 ---
 
 # _DXGKARG_RENDERGDI structure

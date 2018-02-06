@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsInitializeDevice
-title : KsInitializeDevice function
-author : windows-driver-content
-description : The KsInitializeDevice function is called by AVStream to initialize the AVStream device class from within KsCreateDevice.
-old-location : stream\ksinitializedevice.htm
-old-project : stream
-ms.assetid : f33122d0-7661-454a-87f7-7b5795793376
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KsInitializeDevice, KsInitializeDevice function [Streaming Media Devices], avfunc_dfdb87f8-ade9-4ba6-87a3-440e9abb80b4.xml, ks/KsInitializeDevice, stream.ksinitializedevice
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsInitializeDevice
+title: KsInitializeDevice function
+author: windows-driver-content
+description: The KsInitializeDevice function is called by AVStream to initialize the AVStream device class from within KsCreateDevice.
+old-location: stream\ksinitializedevice.htm
+old-project: stream
+ms.assetid: f33122d0-7661-454a-87f7-7b5795793376
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KsInitializeDevice, KsInitializeDevice function [Streaming Media Devices], avfunc_dfdb87f8-ade9-4ba6-87a3-440e9abb80b4.xml, ks/KsInitializeDevice, stream.ksinitializedevice
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsInitializeDevice
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

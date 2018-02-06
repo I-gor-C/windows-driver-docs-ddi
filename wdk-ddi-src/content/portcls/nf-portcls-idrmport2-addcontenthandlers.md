@@ -1,41 +1,46 @@
 ---
-UID : NF:portcls.IDrmPort2.AddContentHandlers
-title : IDrmPort2::AddContentHandlers method
-author : windows-driver-content
-description : The AddContentHandlers method provides the system with a list of functions that handle protected content.
-old-location : audio\idrmport2_addcontenthandlers.htm
-old-project : audio
-ms.assetid : b65608f4-de9a-4bed-a966-586e50c50e45
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : AddContentHandlers method [Audio Devices], IDrmPort2 interface, IDrmPort2, AddContentHandlers, AddContentHandlers method [Audio Devices], IDrmPort2 interface [Audio Devices], AddContentHandlers method, audio.idrmport2_addcontenthandlers, portcls/IDrmPort2::AddContentHandlers, IDrmPort2::AddContentHandlers, audmp-routines_f2bbb2e7-eed1-4ffd-93d9-050dcb6b0b60.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : portcls.h
-req.include-header : Portcls.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : portcls.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.IDrmPort2.AddContentHandlers
+title: IDrmPort2::AddContentHandlers method
+author: windows-driver-content
+description: The AddContentHandlers method provides the system with a list of functions that handle protected content.
+old-location: audio\idrmport2_addcontenthandlers.htm
+old-project: audio
+ms.assetid: b65608f4-de9a-4bed-a966-586e50c50e45
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: AddContentHandlers method [Audio Devices], IDrmPort2 interface, IDrmPort2, AddContentHandlers, AddContentHandlers method [Audio Devices], IDrmPort2 interface [Audio Devices], AddContentHandlers method, audio.idrmport2_addcontenthandlers, portcls/IDrmPort2::AddContentHandlers, IDrmPort2::AddContentHandlers, audmp-routines_f2bbb2e7-eed1-4ffd-93d9-050dcb6b0b60.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: portcls.h
+req.include-header: Portcls.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: portcls.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	portcls.h
+apiname:
+-	IDrmPort2.AddContentHandlers
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

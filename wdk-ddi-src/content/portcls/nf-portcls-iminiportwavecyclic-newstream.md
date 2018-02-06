@@ -1,41 +1,46 @@
 ---
-UID : NF:portcls.IMiniportWaveCyclic.NewStream
-title : IMiniportWaveCyclic::NewStream method
-author : windows-driver-content
-description : The NewStream method creates a new instance of a logical stream that is associated with a specified physical channel.
-old-location : audio\iminiportwavecyclic_newstream.htm
-old-project : audio
-ms.assetid : a83c6eb9-a29a-4695-99d3-168dff68c4a2
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : IMiniportWaveCyclic::NewStream, audmp-routines_eb476e18-bd94-4665-a3df-3e95f91e1c5b.xml, portcls/IMiniportWaveCyclic::NewStream, IMiniportWaveCyclic, IMiniportWaveCyclic interface [Audio Devices], NewStream method, NewStream method [Audio Devices], IMiniportWaveCyclic interface, audio.iminiportwavecyclic_newstream, NewStream method [Audio Devices], NewStream
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : portcls.h
-req.include-header : Portcls.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : portcls.h
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.IMiniportWaveCyclic.NewStream
+title: IMiniportWaveCyclic::NewStream method
+author: windows-driver-content
+description: The NewStream method creates a new instance of a logical stream that is associated with a specified physical channel.
+old-location: audio\iminiportwavecyclic_newstream.htm
+old-project: audio
+ms.assetid: a83c6eb9-a29a-4695-99d3-168dff68c4a2
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: IMiniportWaveCyclic::NewStream, audmp-routines_eb476e18-bd94-4665-a3df-3e95f91e1c5b.xml, portcls/IMiniportWaveCyclic::NewStream, IMiniportWaveCyclic, IMiniportWaveCyclic interface [Audio Devices], NewStream method, NewStream method [Audio Devices], IMiniportWaveCyclic interface, audio.iminiportwavecyclic_newstream, NewStream method [Audio Devices], NewStream
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: portcls.h
+req.include-header: Portcls.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: portcls.h
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	portcls.h
+apiname:
+-	IMiniportWaveCyclic.NewStream
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

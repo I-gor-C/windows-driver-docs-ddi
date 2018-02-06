@@ -1,42 +1,49 @@
 ---
-UID : NF:wdm.TmCreateEnlistment
-title : TmCreateEnlistment function
-author : windows-driver-content
-description : The TmCreateEnlistment routine creates a new enlistment object for a transaction.
-old-location : kernel\tmcreateenlistment.htm
-old-project : kernel
-ms.assetid : 84fcbc30-993c-430b-a8b9-aefca44e478e
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/TmCreateEnlistment, kernel.tmcreateenlistment, TmCreateEnlistment, ktm_ref_79bc27ad-3c37-4396-9c9d-5bc429299db4.xml, TmCreateEnlistment routine [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later operating system versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.TmCreateEnlistment
+title: TmCreateEnlistment function
+author: windows-driver-content
+description: The TmCreateEnlistment routine creates a new enlistment object for a transaction.
+old-location: kernel\tmcreateenlistment.htm
+old-project: kernel
+ms.assetid: 84fcbc30-993c-430b-a8b9-aefca44e478e
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/TmCreateEnlistment, kernel.tmcreateenlistment, TmCreateEnlistment, ktm_ref_79bc27ad-3c37-4396-9c9d-5bc429299db4.xml, TmCreateEnlistment routine [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later operating system versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+-	Ext-MS-Win-ntos-tm-l1-1-0.dll
+-	tm.sys
+apiname:
+-	TmCreateEnlistment
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

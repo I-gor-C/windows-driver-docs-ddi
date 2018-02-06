@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisGetCurrentProcessorCounts
-title : NdisGetCurrentProcessorCounts function
-author : windows-driver-content
-description : The NdisGetCurrentProcessorCounts function returns counts for the current processor that a driver can use to determine CPU usage for a particular time interval.
-old-location : netvista\ndisgetcurrentprocessorcounts.htm
-old-project : netvista
-ms.assetid : 43a75def-0288-4615-ac85-b5e340aa11e6
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NdisGetCurrentProcessorCounts, netvista.ndisgetcurrentprocessorcounts, NdisGetCurrentProcessorCounts function [Network Drivers Starting with Windows Vista], ndis_sysinfo_ref_dab49118-724d-43e8-8d8d-05ebc7220f22.xml, ndis/NdisGetCurrentProcessorCounts
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported for NDIS 6.0 and later drivers in Windows Vista and later. Supported for NDIS 5.1 drivers (see       NdisGetCurrentProcessorCounts (NDIS 5.1)) in Windows XP and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_Miscellaneous_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisGetCurrentProcessorCounts
+title: NdisGetCurrentProcessorCounts function
+author: windows-driver-content
+description: The NdisGetCurrentProcessorCounts function returns counts for the current processor that a driver can use to determine CPU usage for a particular time interval.
+old-location: netvista\ndisgetcurrentprocessorcounts.htm
+old-project: netvista
+ms.assetid: 43a75def-0288-4615-ac85-b5e340aa11e6
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NdisGetCurrentProcessorCounts, netvista.ndisgetcurrentprocessorcounts, NdisGetCurrentProcessorCounts function [Network Drivers Starting with Windows Vista], ndis_sysinfo_ref_dab49118-724d-43e8-8d8d-05ebc7220f22.xml, ndis/NdisGetCurrentProcessorCounts
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported for NDIS 6.0 and later drivers in Windows Vista and later. Supported for NDIS 5.1 drivers (see       NdisGetCurrentProcessorCounts (NDIS 5.1)) in Windows XP and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_Miscellaneous_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisGetCurrentProcessorCounts
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

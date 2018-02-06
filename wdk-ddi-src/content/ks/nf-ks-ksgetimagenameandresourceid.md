@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsGetImageNameAndResourceId
-title : KsGetImageNameAndResourceId function
-author : windows-driver-content
-description : The KsGetImageNameAndResourceId function returns the image name and resource identifier that corresponds to the RegKey handle.
-old-location : stream\ksgetimagenameandresourceid.htm
-old-project : stream
-ms.assetid : e73c885c-94e2-42cf-ace6-1b7b62aa33f5
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KsGetImageNameAndResourceId function [Streaming Media Devices], stream.ksgetimagenameandresourceid, ksfunc_b4a55bde-4bbb-494e-969c-924547251e1d.xml, ks/KsGetImageNameAndResourceId, KsGetImageNameAndResourceId
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsGetImageNameAndResourceId
+title: KsGetImageNameAndResourceId function
+author: windows-driver-content
+description: The KsGetImageNameAndResourceId function returns the image name and resource identifier that corresponds to the RegKey handle.
+old-location: stream\ksgetimagenameandresourceid.htm
+old-project: stream
+ms.assetid: e73c885c-94e2-42cf-ace6-1b7b62aa33f5
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KsGetImageNameAndResourceId function [Streaming Media Devices], stream.ksgetimagenameandresourceid, ksfunc_b4a55bde-4bbb-494e-969c-924547251e1d.xml, ks/KsGetImageNameAndResourceId, KsGetImageNameAndResourceId
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsGetImageNameAndResourceId
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NS:sti._STI_DEVICE_STATUS
-title : "_STI_DEVICE_STATUS"
-author : windows-driver-content
-description : The STI_DEVICE_STATUS structure is used as a parameter to the IStiDevice::GetStatus and IStiUSD::GetStatus methods.
-old-location : image\sti_device_status.htm
-old-project : image
-ms.assetid : 40104e1f-b936-430b-9e8c-28738579f4c7
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : STI_DEVICE_STATUS structure [Imaging Devices], image.sti_device_status, PSTI_DEVICE_STATUS structure pointer [Imaging Devices], sti/PSTI_DEVICE_STATUS, sti/STI_DEVICE_STATUS, _STI_DEVICE_STATUS, PSTI_DEVICE_STATUS, stifnc_9581d5c4-a5c5-4115-8e9e-33f3da4806c6.xml, *PSTI_DEVICE_STATUS, STI_DEVICE_STATUS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : sti.h
-req.include-header : Sti.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STI_DEVICE_STATUS, *PSTI_DEVICE_STATUS
-req.product : Windows 10 or later.
+UID: NS:sti._STI_DEVICE_STATUS
+title: "_STI_DEVICE_STATUS"
+author: windows-driver-content
+description: The STI_DEVICE_STATUS structure is used as a parameter to the IStiDevice::GetStatus and IStiUSD::GetStatus methods.
+old-location: image\sti_device_status.htm
+old-project: image
+ms.assetid: 40104e1f-b936-430b-9e8c-28738579f4c7
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: STI_DEVICE_STATUS structure [Imaging Devices], image.sti_device_status, PSTI_DEVICE_STATUS structure pointer [Imaging Devices], sti/PSTI_DEVICE_STATUS, sti/STI_DEVICE_STATUS, _STI_DEVICE_STATUS, PSTI_DEVICE_STATUS, stifnc_9581d5c4-a5c5-4115-8e9e-33f3da4806c6.xml, *PSTI_DEVICE_STATUS, STI_DEVICE_STATUS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: sti.h
+req.include-header: Sti.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	sti.h
+apiname:
+-	STI_DEVICE_STATUS
+product: Windows
+targetos: Windows
+req.typenames: STI_DEVICE_STATUS, *PSTI_DEVICE_STATUS
+req.product: Windows 10 or later.
 ---
 
 # _STI_DEVICE_STATUS structure

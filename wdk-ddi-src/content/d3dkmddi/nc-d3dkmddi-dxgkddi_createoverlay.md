@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dkmddi.DXGKDDI_CREATEOVERLAY
-title : DXGKDDI_CREATEOVERLAY
-author : windows-driver-content
-description : The DxgkDdiCreateOverlay function enables the overlay hardware if the hardware is capable.
-old-location : display\dxgkddicreateoverlay.htm
-old-project : display
-ms.assetid : 1ccdd16d-fd76-4039-b538-86c77b4e8cbb
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkddicreateoverlay, DxgkDdiCreateOverlay callback function [Display Devices], DxgkDdiCreateOverlay, DXGKDDI_CREATEOVERLAY, DXGKDDI_CREATEOVERLAY, d3dkmddi/DxgkDdiCreateOverlay, DmFunctions_61539b38-d12a-4642-926c-70c1cf1df34b.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
+UID: NC:d3dkmddi.DXGKDDI_CREATEOVERLAY
+title: DXGKDDI_CREATEOVERLAY
+author: windows-driver-content
+description: The DxgkDdiCreateOverlay function enables the overlay hardware if the hardware is capable.
+old-location: display\dxgkddicreateoverlay.htm
+old-project: display
+ms.assetid: 1ccdd16d-fd76-4039-b538-86c77b4e8cbb
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkddicreateoverlay, DxgkDdiCreateOverlay callback function [Display Devices], DxgkDdiCreateOverlay, DXGKDDI_CREATEOVERLAY, DXGKDDI_CREATEOVERLAY, d3dkmddi/DxgkDdiCreateOverlay, DmFunctions_61539b38-d12a-4642-926c-70c1cf1df34b.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DxgkDdiCreateOverlay
+product: Windows
+targetos: Windows
+req.typenames: DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
 

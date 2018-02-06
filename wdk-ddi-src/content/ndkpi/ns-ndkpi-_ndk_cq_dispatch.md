@@ -1,41 +1,46 @@
 ---
-UID : NS:ndkpi._NDK_CQ_DISPATCH
-title : "_NDK_CQ_DISPATCH"
-author : windows-driver-content
-description : The NDK_CQ_DISPATCH structure specifies dispatch function entry points for the NDK completion queue (CQ) object.
-old-location : netvista\ndk_cq_dispatch.htm
-old-project : netvista
-ms.assetid : 632E4FE8-BA03-4232-80E1-5EB3CC760D14
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NDK_CQ_DISPATCH structure [Network Drivers Starting with Windows Vista], _NDK_CQ_DISPATCH, ndkpi/NDK_CQ_DISPATCH, PNDK_CQ_DISPATCH, NDK_CQ_DISPATCH, PNDK_CQ_DISPATCH structure pointer [Network Drivers Starting with Windows Vista], netvista.ndk_cq_dispatch, ndkpi/PNDK_CQ_DISPATCH
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndkpi.h
-req.include-header : Ndkpi.h
-req.target-type : Windows
-req.target-min-winverclnt : None supported,Supported in NDIS 6.30 and later.
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDK_CQ_DISPATCH
+UID: NS:ndkpi._NDK_CQ_DISPATCH
+title: "_NDK_CQ_DISPATCH"
+author: windows-driver-content
+description: The NDK_CQ_DISPATCH structure specifies dispatch function entry points for the NDK completion queue (CQ) object.
+old-location: netvista\ndk_cq_dispatch.htm
+old-project: netvista
+ms.assetid: 632E4FE8-BA03-4232-80E1-5EB3CC760D14
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NDK_CQ_DISPATCH structure [Network Drivers Starting with Windows Vista], _NDK_CQ_DISPATCH, ndkpi/NDK_CQ_DISPATCH, PNDK_CQ_DISPATCH, NDK_CQ_DISPATCH, PNDK_CQ_DISPATCH structure pointer [Network Drivers Starting with Windows Vista], netvista.ndk_cq_dispatch, ndkpi/PNDK_CQ_DISPATCH
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndkpi.h
+req.include-header: Ndkpi.h
+req.target-type: Windows
+req.target-min-winverclnt: None supported,Supported in NDIS 6.30 and later.
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndkpi.h
+apiname:
+-	NDK_CQ_DISPATCH
+product: Windows
+targetos: Windows
+req.typenames: NDK_CQ_DISPATCH
 ---
 
 # _NDK_CQ_DISPATCH structure

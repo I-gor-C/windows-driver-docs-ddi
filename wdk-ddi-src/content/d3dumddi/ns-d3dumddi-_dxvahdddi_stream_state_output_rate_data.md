@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._DXVAHDDDI_STREAM_STATE_OUTPUT_RATE_DATA
-title : "_DXVAHDDDI_STREAM_STATE_OUTPUT_RATE_DATA"
-author : windows-driver-content
-description : The DXVAHDDDI_STREAM_STATE_OUTPUT_RATE_DATA structure describes stream-state data that specifies the output rate of the input stream.
-old-location : display\dxvahdddi_stream_state_output_rate_data.htm
-old-project : display
-ms.assetid : 97523719-d22a-4390-ac4a-6240f24144bf
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : "_DXVAHDDDI_STREAM_STATE_OUTPUT_RATE_DATA, DXVAHDDDI_STREAM_STATE_OUTPUT_RATE_DATA structure [Display Devices], DXVAHDDDI_STREAM_STATE_OUTPUT_RATE_DATA, d3dumddi/DXVAHDDDI_STREAM_STATE_OUTPUT_RATE_DATA, display.dxvahdddi_stream_state_output_rate_data, DXVA2_Structs_32dedbf1-1052-4765-a0dd-4f536389dbb6.xml"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : DXVAHDDDI_STREAM_STATE_OUTPUT_RATE_DATA is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXVAHDDDI_STREAM_STATE_OUTPUT_RATE_DATA
+UID: NS:d3dumddi._DXVAHDDDI_STREAM_STATE_OUTPUT_RATE_DATA
+title: "_DXVAHDDDI_STREAM_STATE_OUTPUT_RATE_DATA"
+author: windows-driver-content
+description: The DXVAHDDDI_STREAM_STATE_OUTPUT_RATE_DATA structure describes stream-state data that specifies the output rate of the input stream.
+old-location: display\dxvahdddi_stream_state_output_rate_data.htm
+old-project: display
+ms.assetid: 97523719-d22a-4390-ac4a-6240f24144bf
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: "_DXVAHDDDI_STREAM_STATE_OUTPUT_RATE_DATA, DXVAHDDDI_STREAM_STATE_OUTPUT_RATE_DATA structure [Display Devices], DXVAHDDDI_STREAM_STATE_OUTPUT_RATE_DATA, d3dumddi/DXVAHDDDI_STREAM_STATE_OUTPUT_RATE_DATA, display.dxvahdddi_stream_state_output_rate_data, DXVA2_Structs_32dedbf1-1052-4765-a0dd-4f536389dbb6.xml"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: DXVAHDDDI_STREAM_STATE_OUTPUT_RATE_DATA is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	DXVAHDDDI_STREAM_STATE_OUTPUT_RATE_DATA
+product: Windows
+targetos: Windows
+req.typenames: DXVAHDDDI_STREAM_STATE_OUTPUT_RATE_DATA
 ---
 
 # _DXVAHDDDI_STREAM_STATE_OUTPUT_RATE_DATA structure

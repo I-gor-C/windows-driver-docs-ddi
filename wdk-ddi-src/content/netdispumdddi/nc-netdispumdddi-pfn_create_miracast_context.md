@@ -1,41 +1,46 @@
 ---
-UID : NC:netdispumdddi.PFN_CREATE_MIRACAST_CONTEXT
-title : PFN_CREATE_MIRACAST_CONTEXT
-author : windows-driver-content
-description : Called by the operating system to create a user-mode Miracast context.
-old-location : display\createmiracastcontext.htm
-old-project : display
-ms.assetid : 3b10ddd9-a48d-4f96-b35e-db017d1f9583
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.createmiracastcontext, CreateMiracastContext callback function [Display Devices], CreateMiracastContext, PFN_CREATE_MIRACAST_CONTEXT, PFN_CREATE_MIRACAST_CONTEXT, netdispumdddi/CreateMiracastContext
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : netdispumdddi.h
-req.include-header : Netdispumdddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8.1
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDK_SRQ_DISPATCH
+UID: NC:netdispumdddi.PFN_CREATE_MIRACAST_CONTEXT
+title: PFN_CREATE_MIRACAST_CONTEXT
+author: windows-driver-content
+description: Called by the operating system to create a user-mode Miracast context.
+old-location: display\createmiracastcontext.htm
+old-project: display
+ms.assetid: 3b10ddd9-a48d-4f96-b35e-db017d1f9583
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.createmiracastcontext, CreateMiracastContext callback function [Display Devices], CreateMiracastContext, PFN_CREATE_MIRACAST_CONTEXT, PFN_CREATE_MIRACAST_CONTEXT, netdispumdddi/CreateMiracastContext
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: netdispumdddi.h
+req.include-header: Netdispumdddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8.1
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Netdispumdddi.h
+apiname:
+-	CreateMiracastContext
+product: Windows
+targetos: Windows
+req.typenames: NDK_SRQ_DISPATCH
 ---
 
 

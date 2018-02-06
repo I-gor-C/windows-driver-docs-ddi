@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_GETMULTISAMPLEMETHODLISTCB
-title : PFND3DDDI_GETMULTISAMPLEMETHODLISTCB
-author : windows-driver-content
-description : The pfnGetMultisampleMethodListCb function retrieves a list of multiple-sample methods that are used for the given width, height, and format of an allocation.
-old-location : display\pfngetmultisamplemethodlistcb.htm
-old-project : display
-ms.assetid : 2e3f9ee9-83a0-4b81-a22b-594e5bd4d046
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.pfngetmultisamplemethodlistcb, pfnGetMultisampleMethodListCb callback function [Display Devices], pfnGetMultisampleMethodListCb, PFND3DDDI_GETMULTISAMPLEMETHODLISTCB, PFND3DDDI_GETMULTISAMPLEMETHODLISTCB, d3dumddi/pfnGetMultisampleMethodListCb, D3Druntime_Functions_301eb3f8-0145-40dc-8aa4-6b29a6876eee.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_GETMULTISAMPLEMETHODLISTCB
+title: PFND3DDDI_GETMULTISAMPLEMETHODLISTCB
+author: windows-driver-content
+description: The pfnGetMultisampleMethodListCb function retrieves a list of multiple-sample methods that are used for the given width, height, and format of an allocation.
+old-location: display\pfngetmultisamplemethodlistcb.htm
+old-project: display
+ms.assetid: 2e3f9ee9-83a0-4b81-a22b-594e5bd4d046
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.pfngetmultisamplemethodlistcb, pfnGetMultisampleMethodListCb callback function [Display Devices], pfnGetMultisampleMethodListCb, PFND3DDDI_GETMULTISAMPLEMETHODLISTCB, PFND3DDDI_GETMULTISAMPLEMETHODLISTCB, d3dumddi/pfnGetMultisampleMethodListCb, D3Druntime_Functions_301eb3f8-0145-40dc-8aa4-6b29a6876eee.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	pfnGetMultisampleMethodListCb
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

@@ -1,41 +1,47 @@
 ---
-UID : NF:dbgeng.IDebugControl3.GetCurrentTimeDate
-title : IDebugControl3::GetCurrentTimeDate method
-author : windows-driver-content
-description : The GetCurrentTimeDate method returns the time of the current target.
-old-location : debugger\getcurrenttimedate.htm
-old-project : debugger
-ms.assetid : 2b3c5a9d-32a9-4c2a-9f99-694b652c5653
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : GetCurrentTimeDate method [Windows Debugging], IDebugControl2::GetCurrentTimeDate, dbgeng/IDebugControl2::GetCurrentTimeDate, IDebugControl3::GetCurrentTimeDate, GetCurrentTimeDate, IDebugControl_166ad959-02b4-4b42-8acd-1456d224f9e7.xml, dbgeng/IDebugControl3::GetCurrentTimeDate, IDebugControl3, debugger.getcurrenttimedate, GetCurrentTimeDate method [Windows Debugging], IDebugControl3 interface, IDebugControl3 interface [Windows Debugging], GetCurrentTimeDate method, GetCurrentTimeDate method [Windows Debugging], IDebugControl2 interface, IDebugControl2 interface [Windows Debugging], GetCurrentTimeDate method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl3.GetCurrentTimeDate
+title: IDebugControl3::GetCurrentTimeDate method
+author: windows-driver-content
+description: The GetCurrentTimeDate method returns the time of the current target.
+old-location: debugger\getcurrenttimedate.htm
+old-project: debugger
+ms.assetid: 2b3c5a9d-32a9-4c2a-9f99-694b652c5653
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: GetCurrentTimeDate method [Windows Debugging], IDebugControl2::GetCurrentTimeDate, dbgeng/IDebugControl2::GetCurrentTimeDate, IDebugControl3::GetCurrentTimeDate, GetCurrentTimeDate, IDebugControl_166ad959-02b4-4b42-8acd-1456d224f9e7.xml, dbgeng/IDebugControl3::GetCurrentTimeDate, IDebugControl3, debugger.getcurrenttimedate, GetCurrentTimeDate method [Windows Debugging], IDebugControl3 interface, IDebugControl3 interface [Windows Debugging], GetCurrentTimeDate method, GetCurrentTimeDate method [Windows Debugging], IDebugControl2 interface, IDebugControl2 interface [Windows Debugging], GetCurrentTimeDate method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl2.GetCurrentTimeDate
+-	IDebugControl3.GetCurrentTimeDate
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

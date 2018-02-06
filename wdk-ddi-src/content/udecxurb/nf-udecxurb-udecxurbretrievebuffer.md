@@ -1,42 +1,48 @@
 ---
-UID : NF:udecxurb.UdecxUrbRetrieveBuffer
-title : UdecxUrbRetrieveBuffer function
-author : windows-driver-content
-description : Retrieves the transfer buffer of an URB from the specified framework request object sent to the endpoint queue.
-old-location : buses\udecxurbretrievebuffer.htm
-old-project : usbref
-ms.assetid : C2AE51AE-EEB6-49BB-A6E4-BBCE6A25C905
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : UdecxUrbRetrieveBuffer, buses.udecxurbretrievebuffer, UdecxUrbRetrieveBuffer function [Buses], udecxurb/UdecxUrbRetrieveBuffer
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : udecxurb.h
-req.include-header : Udecx.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 1.15
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Udecxstub.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : USB_DEVICE_PORT_PATH, *PUSB_DEVICE_PORT_PATH
-req.product : Windows 10 or later.
+UID: NF:udecxurb.UdecxUrbRetrieveBuffer
+title: UdecxUrbRetrieveBuffer function
+author: windows-driver-content
+description: Retrieves the transfer buffer of an URB from the specified framework request object sent to the endpoint queue.
+old-location: buses\udecxurbretrievebuffer.htm
+old-project: usbref
+ms.assetid: C2AE51AE-EEB6-49BB-A6E4-BBCE6A25C905
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: UdecxUrbRetrieveBuffer, buses.udecxurbretrievebuffer, UdecxUrbRetrieveBuffer function [Buses], udecxurb/UdecxUrbRetrieveBuffer
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: udecxurb.h
+req.include-header: Udecx.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 1.15
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Udecxstub.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Udecxstub.lib
+-	Udecxstub.dll
+apiname:
+-	UdecxUrbRetrieveBuffer
+product: Windows
+targetos: Windows
+req.typenames: USB_DEVICE_PORT_PATH, *PUSB_DEVICE_PORT_PATH
+req.product: Windows 10 or later.
 ---
 
 

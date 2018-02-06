@@ -1,41 +1,46 @@
 ---
-UID : NS:ntifs._ACCESS_ALLOWED_ACE
-title : "_ACCESS_ALLOWED_ACE"
-author : windows-driver-content
-description : The ACCESS_ALLOWED_ACE structure defines an access-control entry (ACE) for the discretionary access-control list (DACL) that controls access to an object.
-old-location : ifsk\access_allowed_ace.htm
-old-project : ifsk
-ms.assetid : 20373863-0850-4ccf-b94a-7d252ad15d20
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : "*PACCESS_ALLOWED_ACE, _ACCESS_ALLOWED_ACE, ntifs/ACCESS_ALLOWED_ACE, ifsk.access_allowed_ace, PACCESS_ALLOWED_ACE structure pointer [Installable File System Drivers], PACCESS_ALLOWED_ACE, ntifs/PACCESS_ALLOWED_ACE, ACCESS_ALLOWED_ACE, securitystructures_2dd3ec4a-0dc9-4268-8968-1a284b7124e6.xml, ACCESS_ALLOWED_ACE structure [Installable File System Drivers]"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : ACCESS_ALLOWED_ACE
+UID: NS:ntifs._ACCESS_ALLOWED_ACE
+title: "_ACCESS_ALLOWED_ACE"
+author: windows-driver-content
+description: The ACCESS_ALLOWED_ACE structure defines an access-control entry (ACE) for the discretionary access-control list (DACL) that controls access to an object.
+old-location: ifsk\access_allowed_ace.htm
+old-project: ifsk
+ms.assetid: 20373863-0850-4ccf-b94a-7d252ad15d20
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: "*PACCESS_ALLOWED_ACE, _ACCESS_ALLOWED_ACE, ntifs/ACCESS_ALLOWED_ACE, ifsk.access_allowed_ace, PACCESS_ALLOWED_ACE structure pointer [Installable File System Drivers], PACCESS_ALLOWED_ACE, ntifs/PACCESS_ALLOWED_ACE, ACCESS_ALLOWED_ACE, securitystructures_2dd3ec4a-0dc9-4268-8968-1a284b7124e6.xml, ACCESS_ALLOWED_ACE structure [Installable File System Drivers]"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntifs.h
+apiname:
+-	ACCESS_ALLOWED_ACE
+product: Windows
+targetos: Windows
+req.typenames: ACCESS_ALLOWED_ACE
 ---
 
 # _ACCESS_ALLOWED_ACE structure

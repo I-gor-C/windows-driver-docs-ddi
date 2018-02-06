@@ -1,42 +1,48 @@
 ---
-UID : NF:wdm.ClfsReadLogRecord
-title : ClfsReadLogRecord function
-author : windows-driver-content
-description : The ClfsReadLogRecord routine reads a target record in a CLFS stream and returns a read context that the caller can use to read the records preceding or following it in the stream.
-old-location : kernel\clfsreadlogrecord.htm
-old-project : kernel
-ms.assetid : 9bc64d00-3590-4bc2-aa1f-0d50bb0e628d
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ClfsReadLogRecord routine [Kernel-Mode Driver Architecture], ClfsReadLogRecord, Clfs_e829153c-541e-463a-9ff3-85200929e3d2.xml, wdm/ClfsReadLogRecord, kernel.clfsreadlogrecord
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Clfs.lib
-req.dll : Clfs.sys
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ClfsReadLogRecord
+title: ClfsReadLogRecord function
+author: windows-driver-content
+description: The ClfsReadLogRecord routine reads a target record in a CLFS stream and returns a read context that the caller can use to read the records preceding or following it in the stream.
+old-location: kernel\clfsreadlogrecord.htm
+old-project: kernel
+ms.assetid: 9bc64d00-3590-4bc2-aa1f-0d50bb0e628d
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ClfsReadLogRecord routine [Kernel-Mode Driver Architecture], ClfsReadLogRecord, Clfs_e829153c-541e-463a-9ff3-85200929e3d2.xml, wdm/ClfsReadLogRecord, kernel.clfsreadlogrecord
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Clfs.lib
+req.dll: Clfs.sys
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Clfs.sys
+-	Ext-MS-Win-fs-clfs-l1-1-0.dll
+apiname:
+-	ClfsReadLogRecord
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

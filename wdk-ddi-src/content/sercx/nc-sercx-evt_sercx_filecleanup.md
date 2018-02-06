@@ -1,42 +1,47 @@
 ---
-UID : NC:sercx.EVT_SERCX_FILECLEANUP
-title : EVT_SERCX_FILECLEANUP
-author : windows-driver-content
-description : The EvtSerCxFileCleanup event callback function notifies the serial controller driver that a client has closed the last handle to the file object that represents the serial controller device.
-old-location : serports\evtsercxfilecleanup.htm
-old-project : serports
-ms.assetid : D9E19BD1-2C44-4F86-9AEB-F50443FAE8DC
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : serports.evtsercxfilecleanup, EvtSerCxFileCleanup callback function [Serial Ports], EvtSerCxFileCleanup, EVT_SERCX_FILECLEANUP, EVT_SERCX_FILECLEANUP, 1/EvtSerCxFileCleanup
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : sercx.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Available starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Called at IRQL <= DISPATCH_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SENSOR_VALUE_PAIR, *PSENSOR_VALUE_PAIR
-req.product : Windows 10 or later.
+UID: NC:sercx.EVT_SERCX_FILECLEANUP
+title: EVT_SERCX_FILECLEANUP
+author: windows-driver-content
+description: The EvtSerCxFileCleanup event callback function notifies the serial controller driver that a client has closed the last handle to the file object that represents the serial controller device.
+old-location: serports\evtsercxfilecleanup.htm
+old-project: serports
+ms.assetid: D9E19BD1-2C44-4F86-9AEB-F50443FAE8DC
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: serports.evtsercxfilecleanup, EvtSerCxFileCleanup callback function [Serial Ports], EvtSerCxFileCleanup, EVT_SERCX_FILECLEANUP, EVT_SERCX_FILECLEANUP, 1/EvtSerCxFileCleanup
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: sercx.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Called at IRQL <= DISPATCH_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	1.0\Sercx.h
+apiname:
+-	EvtSerCxFileCleanup
+product: Windows
+targetos: Windows
+req.typenames: SENSOR_VALUE_PAIR, *PSENSOR_VALUE_PAIR
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,47 @@
 ---
-UID : NF:ntifs.RtlSubAuthoritySid
-title : RtlSubAuthoritySid function
-author : windows-driver-content
-description : The RtlSubAuthoritySid routine returns a pointer to a specified subauthority of a security identifier (SID).
-old-location : ifsk\rtlsubauthoritysid.htm
-old-project : ifsk
-ms.assetid : bd3f84ad-d617-4744-b423-1d82da3b05c0
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ntifs/RtlSubAuthoritySid, ifsk.rtlsubauthoritysid, RtlSubAuthoritySid, rtlref_d901f9ac-d7c4-49e1-871e-75aee9fa8c2b.xml, RtlSubAuthoritySid routine [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : This routine is available on Microsoft Windows 2000 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe (kernel mode); Ntdll.dll (user mode)
-req.irql : "< DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.RtlSubAuthoritySid
+title: RtlSubAuthoritySid function
+author: windows-driver-content
+description: The RtlSubAuthoritySid routine returns a pointer to a specified subauthority of a security identifier (SID).
+old-location: ifsk\rtlsubauthoritysid.htm
+old-project: ifsk
+ms.assetid: bd3f84ad-d617-4744-b423-1d82da3b05c0
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ntifs/RtlSubAuthoritySid, ifsk.rtlsubauthoritysid, RtlSubAuthoritySid, rtlref_d901f9ac-d7c4-49e1-871e-75aee9fa8c2b.xml, RtlSubAuthoritySid routine [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: This routine is available on Microsoft Windows 2000 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe (kernel mode); Ntdll.dll (user mode)
+req.irql: "< DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+-	Ntdll.dll
+apiname:
+-	RtlSubAuthoritySid
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

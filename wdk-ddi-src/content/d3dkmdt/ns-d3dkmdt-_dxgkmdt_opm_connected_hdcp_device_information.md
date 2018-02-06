@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmdt._DXGKMDT_OPM_CONNECTED_HDCP_DEVICE_INFORMATION
-title : "_DXGKMDT_OPM_CONNECTED_HDCP_DEVICE_INFORMATION"
-author : windows-driver-content
-description : The DXGKMDT_OPM_CONNECTED_HDCP_DEVICE_INFORMATION structure contains High-bandwidth Digital Content Protection (HDCP) information that is retrieved in a call to the DxgkDdiOPMGetInformation function.
-old-location : display\dxgkmdt_opm_connected_hdcp_device_information.htm
-old-project : display
-ms.assetid : 5f99d3e5-1fa2-43a9-98fb-347dfe85440a
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DXGKMDT_OPM_CONNECTED_HDCP_DEVICE_INFORMATION, _DXGKMDT_OPM_CONNECTED_HDCP_DEVICE_INFORMATION, display.dxgkmdt_opm_connected_hdcp_device_information, DXGKMDT_OPM_CONNECTED_HDCP_DEVICE_INFORMATION structure [Display Devices], d3dkmdt/DXGKMDT_OPM_CONNECTED_HDCP_DEVICE_INFORMATION, DmStructs_9c39e234-e0dd-4d2f-b1b4-e8745bcc69aa.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmdt.h
-req.include-header : D3dkmdt.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGKMDT_OPM_CONNECTED_HDCP_DEVICE_INFORMATION
+UID: NS:d3dkmdt._DXGKMDT_OPM_CONNECTED_HDCP_DEVICE_INFORMATION
+title: "_DXGKMDT_OPM_CONNECTED_HDCP_DEVICE_INFORMATION"
+author: windows-driver-content
+description: The DXGKMDT_OPM_CONNECTED_HDCP_DEVICE_INFORMATION structure contains High-bandwidth Digital Content Protection (HDCP) information that is retrieved in a call to the DxgkDdiOPMGetInformation function.
+old-location: display\dxgkmdt_opm_connected_hdcp_device_information.htm
+old-project: display
+ms.assetid: 5f99d3e5-1fa2-43a9-98fb-347dfe85440a
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DXGKMDT_OPM_CONNECTED_HDCP_DEVICE_INFORMATION, _DXGKMDT_OPM_CONNECTED_HDCP_DEVICE_INFORMATION, display.dxgkmdt_opm_connected_hdcp_device_information, DXGKMDT_OPM_CONNECTED_HDCP_DEVICE_INFORMATION structure [Display Devices], d3dkmdt/DXGKMDT_OPM_CONNECTED_HDCP_DEVICE_INFORMATION, DmStructs_9c39e234-e0dd-4d2f-b1b4-e8745bcc69aa.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmdt.h
+req.include-header: D3dkmdt.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmdt.h
+apiname:
+-	DXGKMDT_OPM_CONNECTED_HDCP_DEVICE_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: DXGKMDT_OPM_CONNECTED_HDCP_DEVICE_INFORMATION
 ---
 
 # _DXGKMDT_OPM_CONNECTED_HDCP_DEVICE_INFORMATION structure

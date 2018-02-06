@@ -1,41 +1,46 @@
 ---
-UID : NS:pepfx._PEP_REGISTER_COMPONENT_PERF_STATES
-title : "_PEP_REGISTER_COMPONENT_PERF_STATES"
-author : windows-driver-content
-description : The PEP_REGISTER_COMPONENT_PERF_STATES structure describes the performance states (P-states) of the specified component.
-old-location : kernel\pep_register_component_perf_states.htm
-old-project : kernel
-ms.assetid : 063ADC0A-3455-4966-A11C-BDD5BA08A685
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : PPEP_REGISTER_COMPONENT_PERF_STATES structure pointer [Kernel-Mode Driver Architecture], _PEP_REGISTER_COMPONENT_PERF_STATES, *PPEP_REGISTER_COMPONENT_PERF_STATES, pepfx/PEP_REGISTER_COMPONENT_PERF_STATES, kernel.pep_register_component_perf_states, PEP_REGISTER_COMPONENT_PERF_STATES, pepfx/PPEP_REGISTER_COMPONENT_PERF_STATES, PPEP_REGISTER_COMPONENT_PERF_STATES, PEP_REGISTER_COMPONENT_PERF_STATES structure [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : pepfx.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with Windows 10.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPEP_REGISTER_COMPONENT_PERF_STATES, PEP_REGISTER_COMPONENT_PERF_STATES"
+UID: NS:pepfx._PEP_REGISTER_COMPONENT_PERF_STATES
+title: "_PEP_REGISTER_COMPONENT_PERF_STATES"
+author: windows-driver-content
+description: The PEP_REGISTER_COMPONENT_PERF_STATES structure describes the performance states (P-states) of the specified component.
+old-location: kernel\pep_register_component_perf_states.htm
+old-project: kernel
+ms.assetid: 063ADC0A-3455-4966-A11C-BDD5BA08A685
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: PPEP_REGISTER_COMPONENT_PERF_STATES structure pointer [Kernel-Mode Driver Architecture], _PEP_REGISTER_COMPONENT_PERF_STATES, *PPEP_REGISTER_COMPONENT_PERF_STATES, pepfx/PEP_REGISTER_COMPONENT_PERF_STATES, kernel.pep_register_component_perf_states, PEP_REGISTER_COMPONENT_PERF_STATES, pepfx/PPEP_REGISTER_COMPONENT_PERF_STATES, PPEP_REGISTER_COMPONENT_PERF_STATES, PEP_REGISTER_COMPONENT_PERF_STATES structure [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: pepfx.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows 10.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	pepfx.h
+apiname:
+-	PEP_REGISTER_COMPONENT_PERF_STATES
+product: Windows
+targetos: Windows
+req.typenames: "*PPEP_REGISTER_COMPONENT_PERF_STATES, PEP_REGISTER_COMPONENT_PERF_STATES"
 ---
 
 # _PEP_REGISTER_COMPONENT_PERF_STATES structure

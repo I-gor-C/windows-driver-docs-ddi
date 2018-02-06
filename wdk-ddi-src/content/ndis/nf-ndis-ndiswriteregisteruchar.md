@@ -1,41 +1,46 @@
 ---
-UID : NF:ndis.NdisWriteRegisterUchar
-title : NdisWriteRegisterUchar macro
-author : windows-driver-content
-description : NdisWriteRegisterUchar is called by the miniport driver to write a UCHAR to a memory-mapped device register.
-old-location : netvista\ndiswriteregisteruchar.htm
-old-project : netvista
-ms.assetid : 8f720af6-d70a-4682-86f4-011e70a6f64f
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : ndis/NdisWriteRegisterUchar, miniport_register_ref_60f684ba-a2ca-4fa8-8a80-9e805fb5c453.xml, netvista.ndiswriteregisteruchar, NdisWriteRegisterUchar, NdisWriteRegisterUchar macro [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : macro
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisWriteRegisterUchar (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisWriteRegisterUchar (NDIS   5.1)) in Windows XP.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : ndis.h
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisWriteRegisterUchar
+title: NdisWriteRegisterUchar macro
+author: windows-driver-content
+description: NdisWriteRegisterUchar is called by the miniport driver to write a UCHAR to a memory-mapped device register.
+old-location: netvista\ndiswriteregisteruchar.htm
+old-project: netvista
+ms.assetid: 8f720af6-d70a-4682-86f4-011e70a6f64f
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: ndis/NdisWriteRegisterUchar, miniport_register_ref_60f684ba-a2ca-4fa8-8a80-9e805fb5c453.xml, netvista.ndiswriteregisteruchar, NdisWriteRegisterUchar, NdisWriteRegisterUchar macro [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: macro
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisWriteRegisterUchar (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisWriteRegisterUchar (NDIS   5.1)) in Windows XP.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: ndis.h
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndis.h
+apiname:
+-	NdisWriteRegisterUchar
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

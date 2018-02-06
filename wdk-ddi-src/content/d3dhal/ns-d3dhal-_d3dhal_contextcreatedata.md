@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dhal._D3DHAL_CONTEXTCREATEDATA
-title : "_D3DHAL_CONTEXTCREATEDATA"
-author : windows-driver-content
-description : The D3DHAL_CONTEXTCREATEDATA structure contains all of the information that the D3dContextCreate function requires to create a new context.
-old-location : display\d3dhal_contextcreatedata.htm
-old-project : display
-ms.assetid : 9ad169a8-81a7-497c-849a-c36be66caa8e
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DHAL_CONTEXTCREATEDATA structure [Display Devices], display.d3dhal_contextcreatedata, *LPD3DHAL_CONTEXTCREATEDATA, LPD3DHAL_CONTEXTCREATEDATA structure pointer [Display Devices], LPD3DHAL_CONTEXTCREATEDATA, d3dstrct_46c9dd06-302d-423b-8cd6-fc81a4227ab4.xml, d3dhal/D3DHAL_CONTEXTCREATEDATA, _D3DHAL_CONTEXTCREATEDATA, D3DHAL_CONTEXTCREATEDATA, d3dhal/LPD3DHAL_CONTEXTCREATEDATA
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dhal.h
-req.include-header : D3dhal.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DHAL_CONTEXTCREATEDATA
+UID: NS:d3dhal._D3DHAL_CONTEXTCREATEDATA
+title: "_D3DHAL_CONTEXTCREATEDATA"
+author: windows-driver-content
+description: The D3DHAL_CONTEXTCREATEDATA structure contains all of the information that the D3dContextCreate function requires to create a new context.
+old-location: display\d3dhal_contextcreatedata.htm
+old-project: display
+ms.assetid: 9ad169a8-81a7-497c-849a-c36be66caa8e
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DHAL_CONTEXTCREATEDATA structure [Display Devices], display.d3dhal_contextcreatedata, *LPD3DHAL_CONTEXTCREATEDATA, LPD3DHAL_CONTEXTCREATEDATA structure pointer [Display Devices], LPD3DHAL_CONTEXTCREATEDATA, d3dstrct_46c9dd06-302d-423b-8cd6-fc81a4227ab4.xml, d3dhal/D3DHAL_CONTEXTCREATEDATA, _D3DHAL_CONTEXTCREATEDATA, D3DHAL_CONTEXTCREATEDATA, d3dhal/LPD3DHAL_CONTEXTCREATEDATA
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dhal.h
+req.include-header: D3dhal.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dhal.h
+apiname:
+-	D3DHAL_CONTEXTCREATEDATA
+product: Windows
+targetos: Windows
+req.typenames: D3DHAL_CONTEXTCREATEDATA
 ---
 
 # _D3DHAL_CONTEXTCREATEDATA structure

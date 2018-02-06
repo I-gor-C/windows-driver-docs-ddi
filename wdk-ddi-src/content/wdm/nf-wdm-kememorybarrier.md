@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.KeMemoryBarrier
-title : KeMemoryBarrier function
-author : windows-driver-content
-description : The KeMemoryBarrier routine creates a barrier at its position in the code&#8212;across which the compiler and the processor cannot move any operations.
-old-location : kernel\kememorybarrier.htm
-old-project : kernel
-ms.assetid : e6ffb893-a79f-4cc0-9052-667b835f4ad3
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : KeMemoryBarrier, wdm/KeMemoryBarrier, KeMemoryBarrier routine [Kernel-Mode Driver Architecture], kernel.kememorybarrier, k105_972df62d-6449-40d7-9bfa-0c420cf8f106.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.KeMemoryBarrier
+title: KeMemoryBarrier function
+author: windows-driver-content
+description: The KeMemoryBarrier routine creates a barrier at its position in the code&#8212;across which the compiler and the processor cannot move any operations.
+old-location: kernel\kememorybarrier.htm
+old-project: kernel
+ms.assetid: e6ffb893-a79f-4cc0-9052-667b835f4ad3
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: KeMemoryBarrier, wdm/KeMemoryBarrier, KeMemoryBarrier routine [Kernel-Mode Driver Architecture], kernel.kememorybarrier, k105_972df62d-6449-40d7-9bfa-0c420cf8f106.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdm.h
+apiname:
+-	KeMemoryBarrier
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

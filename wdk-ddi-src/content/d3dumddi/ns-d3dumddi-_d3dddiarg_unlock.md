@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._D3DDDIARG_UNLOCK
-title : "_D3DDDIARG_UNLOCK"
-author : windows-driver-content
-description : The D3DDDIARG_UNLOCK structure describes a resource or a surface within the resource to unlock.
-old-location : display\d3dddiarg_unlock.htm
-old-project : display
-ms.assetid : e6e0b0fd-be80-4c44-9d7d-1b9476b44b65
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : UMDisplayDriver_param_Structs_ae4773cf-d43a-4468-8d6b-a4c4fa9b55fa.xml, D3DDDIARG_UNLOCK, display.d3dddiarg_unlock, D3DDDIARG_UNLOCK structure [Display Devices], d3dumddi/D3DDDIARG_UNLOCK, _D3DDDIARG_UNLOCK
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDIARG_UNLOCK
+UID: NS:d3dumddi._D3DDDIARG_UNLOCK
+title: "_D3DDDIARG_UNLOCK"
+author: windows-driver-content
+description: The D3DDDIARG_UNLOCK structure describes a resource or a surface within the resource to unlock.
+old-location: display\d3dddiarg_unlock.htm
+old-project: display
+ms.assetid: e6e0b0fd-be80-4c44-9d7d-1b9476b44b65
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: UMDisplayDriver_param_Structs_ae4773cf-d43a-4468-8d6b-a4c4fa9b55fa.xml, D3DDDIARG_UNLOCK, display.d3dddiarg_unlock, D3DDDIARG_UNLOCK structure [Display Devices], d3dumddi/D3DDDIARG_UNLOCK, _D3DDDIARG_UNLOCK
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	D3DDDIARG_UNLOCK
+product: Windows
+targetos: Windows
+req.typenames: D3DDDIARG_UNLOCK
 ---
 
 # _D3DDDIARG_UNLOCK structure

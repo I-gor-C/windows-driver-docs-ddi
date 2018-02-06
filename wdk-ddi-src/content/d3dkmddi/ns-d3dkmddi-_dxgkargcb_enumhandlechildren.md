@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGKARGCB_ENUMHANDLECHILDREN
-title : "_DXGKARGCB_ENUMHANDLECHILDREN"
-author : windows-driver-content
-description : The DXGKARGCB_ENUMHANDLECHILDREN structure describes a parent resource and the index of one of its child allocations.
-old-location : display\dxgkargcb_enumhandlechildren.htm
-old-project : display
-ms.assetid : da97b175-a24c-406d-9747-c84122781f79
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DmStructs_b02ec187-32ca-41ff-bfc3-03d058872b5d.xml, DXGKARGCB_ENUMHANDLECHILDREN structure [Display Devices], _DXGKARGCB_ENUMHANDLECHILDREN, DXGKARGCB_ENUMHANDLECHILDREN, d3dkmddi/DXGKARGCB_ENUMHANDLECHILDREN, display.dxgkargcb_enumhandlechildren
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGKARGCB_ENUMHANDLECHILDREN
+UID: NS:d3dkmddi._DXGKARGCB_ENUMHANDLECHILDREN
+title: "_DXGKARGCB_ENUMHANDLECHILDREN"
+author: windows-driver-content
+description: The DXGKARGCB_ENUMHANDLECHILDREN structure describes a parent resource and the index of one of its child allocations.
+old-location: display\dxgkargcb_enumhandlechildren.htm
+old-project: display
+ms.assetid: da97b175-a24c-406d-9747-c84122781f79
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DmStructs_b02ec187-32ca-41ff-bfc3-03d058872b5d.xml, DXGKARGCB_ENUMHANDLECHILDREN structure [Display Devices], _DXGKARGCB_ENUMHANDLECHILDREN, DXGKARGCB_ENUMHANDLECHILDREN, d3dkmddi/DXGKARGCB_ENUMHANDLECHILDREN, display.dxgkargcb_enumhandlechildren
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DXGKARGCB_ENUMHANDLECHILDREN
+product: Windows
+targetos: Windows
+req.typenames: DXGKARGCB_ENUMHANDLECHILDREN
 ---
 
 # _DXGKARGCB_ENUMHANDLECHILDREN structure

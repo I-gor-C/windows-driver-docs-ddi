@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugSymbols3.GetScopeSymbolGroup
-title : IDebugSymbols3::GetScopeSymbolGroup method
-author : windows-driver-content
-description : The GetScopeSymbolGroup method returns a symbol group containing the symbols in the current target's scope.
-old-location : debugger\getscopesymbolgroup.htm
-old-project : debugger
-ms.assetid : 002af3f1-4879-40e9-a5c6-bf62a3b26e02
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : GetScopeSymbolGroup method [Windows Debugging], IDebugSymbols2 interface, debugger.getscopesymbolgroup, IDebugSymbols interface [Windows Debugging], GetScopeSymbolGroup method, GetScopeSymbolGroup method [Windows Debugging], IDebugSymbols2::GetScopeSymbolGroup, dbgeng/IDebugSymbols3::GetScopeSymbolGroup, GetScopeSymbolGroup, dbgeng/IDebugSymbols2::GetScopeSymbolGroup, IDebugSymbols_a51f6be3-09dc-48a4-ae45-149fea6bfb1b.xml, dbgeng/IDebugSymbols::GetScopeSymbolGroup, IDebugSymbols2 interface [Windows Debugging], GetScopeSymbolGroup method, IDebugSymbols3::GetScopeSymbolGroup, GetScopeSymbolGroup method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols::GetScopeSymbolGroup, IDebugSymbols3, IDebugSymbols3 interface [Windows Debugging], GetScopeSymbolGroup method, GetScopeSymbolGroup method [Windows Debugging], IDebugSymbols interface
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSymbols3.GetScopeSymbolGroup
+title: IDebugSymbols3::GetScopeSymbolGroup method
+author: windows-driver-content
+description: The GetScopeSymbolGroup method returns a symbol group containing the symbols in the current target's scope.
+old-location: debugger\getscopesymbolgroup.htm
+old-project: debugger
+ms.assetid: 002af3f1-4879-40e9-a5c6-bf62a3b26e02
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: GetScopeSymbolGroup method [Windows Debugging], IDebugSymbols2 interface, debugger.getscopesymbolgroup, IDebugSymbols interface [Windows Debugging], GetScopeSymbolGroup method, GetScopeSymbolGroup method [Windows Debugging], IDebugSymbols2::GetScopeSymbolGroup, dbgeng/IDebugSymbols3::GetScopeSymbolGroup, GetScopeSymbolGroup, dbgeng/IDebugSymbols2::GetScopeSymbolGroup, IDebugSymbols_a51f6be3-09dc-48a4-ae45-149fea6bfb1b.xml, dbgeng/IDebugSymbols::GetScopeSymbolGroup, IDebugSymbols2 interface [Windows Debugging], GetScopeSymbolGroup method, IDebugSymbols3::GetScopeSymbolGroup, GetScopeSymbolGroup method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols::GetScopeSymbolGroup, IDebugSymbols3, IDebugSymbols3 interface [Windows Debugging], GetScopeSymbolGroup method, GetScopeSymbolGroup method [Windows Debugging], IDebugSymbols interface
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugSymbols.GetScopeSymbolGroup
+-	IDebugSymbols2.GetScopeSymbolGroup
+-	IDebugSymbols3.GetScopeSymbolGroup
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

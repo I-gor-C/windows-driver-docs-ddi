@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFIoRequest.GetFileObject
-title : IWDFIoRequest::GetFileObject method
-author : windows-driver-content
-description : The GetFileObject method retrieves a pointer to the IWDFFile interface that is associated with an I/O request.
-old-location : wdf\iwdfiorequest_getfileobject.htm
-old-project : wdf
-ms.assetid : 2d6567f1-9e2a-405f-ae8d-eb531cc29275
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.iwdfiorequest_getfileobject, umdf.iwdfiorequest_getfileobject, wudfddi/IWDFIoRequest::GetFileObject, UMDFRequestObjectRef_50a8506d-039a-448a-8459-30e89ac1021c.xml, GetFileObject method, GetFileObject method, IWDFIoRequest interface, IWDFIoRequest interface, GetFileObject method, GetFileObject, IWDFIoRequest::GetFileObject, IWDFIoRequest
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.5
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFIoRequest.GetFileObject
+title: IWDFIoRequest::GetFileObject method
+author: windows-driver-content
+description: The GetFileObject method retrieves a pointer to the IWDFFile interface that is associated with an I/O request.
+old-location: wdf\iwdfiorequest_getfileobject.htm
+old-project: wdf
+ms.assetid: 2d6567f1-9e2a-405f-ae8d-eb531cc29275
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.iwdfiorequest_getfileobject, umdf.iwdfiorequest_getfileobject, wudfddi/IWDFIoRequest::GetFileObject, UMDFRequestObjectRef_50a8506d-039a-448a-8459-30e89ac1021c.xml, GetFileObject method, GetFileObject method, IWDFIoRequest interface, IWDFIoRequest interface, GetFileObject method, GetFileObject, IWDFIoRequest::GetFileObject, IWDFIoRequest
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.5
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFIoRequest.GetFileObject
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,47 @@
 ---
-UID : NF:portcls.PcRegisterAdapterPowerManagement
-title : PcRegisterAdapterPowerManagement function
-author : windows-driver-content
-description : The PcRegisterAdapterPowerManagement function registers the adapter's power-management interface with the PortCls system driver.
-old-location : audio\pcregisteradapterpowermanagement.htm
-old-project : audio
-ms.assetid : a9e2537d-4d67-4495-b391-55f885b7041a
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : PcRegisterAdapterPowerManagement, PcRegisterAdapterPowerManagement function [Audio Devices], portcls/PcRegisterAdapterPowerManagement, audpc-routines_524bed01-a6ba-492c-9e18-7495de15be46.xml, audio.pcregisteradapterpowermanagement
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : portcls.h
-req.include-header : Portcls.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting in Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Portcls.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.PcRegisterAdapterPowerManagement
+title: PcRegisterAdapterPowerManagement function
+author: windows-driver-content
+description: The PcRegisterAdapterPowerManagement function registers the adapter's power-management interface with the PortCls system driver.
+old-location: audio\pcregisteradapterpowermanagement.htm
+old-project: audio
+ms.assetid: a9e2537d-4d67-4495-b391-55f885b7041a
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: PcRegisterAdapterPowerManagement, PcRegisterAdapterPowerManagement function [Audio Devices], portcls/PcRegisterAdapterPowerManagement, audpc-routines_524bed01-a6ba-492c-9e18-7495de15be46.xml, audio.pcregisteradapterpowermanagement
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: portcls.h
+req.include-header: Portcls.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting in Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Portcls.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Portcls.lib
+-	Portcls.dll
+apiname:
+-	PcRegisterAdapterPowerManagement
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

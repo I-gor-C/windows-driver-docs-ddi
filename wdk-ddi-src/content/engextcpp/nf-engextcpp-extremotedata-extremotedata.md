@@ -1,41 +1,46 @@
 ---
-UID : NF:engextcpp.ExtRemoteData.ExtRemoteData
-title : ExtRemoteData::ExtRemoteData method
-author : windows-driver-content
-description : The ExtRemoteData constructor creates a new instance of the ExtRemoteData class.
-old-location : debugger\extremotedata_extremotedata.htm
-old-project : debugger
-ms.assetid : c463169e-5e18-44bb-b954-8a99d24edd0c
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : ExtRemoteData, ExtRemoteData::ExtRemoteData, ExtRemoteData constructor [Windows Debugging], ExtRemoteData constructor [Windows Debugging], ExtRemoteData class, ExtRemoteData class [Windows Debugging], ExtRemoteData constructor, debugger.extremotedata_extremotedata, EngExtCpp_Ref_8e376094-9e23-4ea4-81e3-c47e6695a687.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : engextcpp.hpp
-req.include-header : Engextcpp.hpp
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : engextcpp.hpp
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SILO_DRIVER_CAPABILITIES, *PSILO_DRIVER_CAPABILITIES
+UID: NF:engextcpp.ExtRemoteData.ExtRemoteData
+title: ExtRemoteData::ExtRemoteData method
+author: windows-driver-content
+description: The ExtRemoteData constructor creates a new instance of the ExtRemoteData class.
+old-location: debugger\extremotedata_extremotedata.htm
+old-project: debugger
+ms.assetid: c463169e-5e18-44bb-b954-8a99d24edd0c
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: ExtRemoteData, ExtRemoteData::ExtRemoteData, ExtRemoteData constructor [Windows Debugging], ExtRemoteData constructor [Windows Debugging], ExtRemoteData class, ExtRemoteData class [Windows Debugging], ExtRemoteData constructor, debugger.extremotedata_extremotedata, EngExtCpp_Ref_8e376094-9e23-4ea4-81e3-c47e6695a687.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: engextcpp.hpp
+req.include-header: Engextcpp.hpp
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: engextcpp.hpp
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	engextcpp.hpp
+apiname:
+-	ExtRemoteData.ExtRemoteData
+product: Windows
+targetos: Windows
+req.typenames: SILO_DRIVER_CAPABILITIES, *PSILO_DRIVER_CAPABILITIES
 ---
 
 

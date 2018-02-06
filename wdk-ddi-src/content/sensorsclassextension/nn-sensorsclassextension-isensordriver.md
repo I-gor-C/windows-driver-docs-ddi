@@ -1,42 +1,48 @@
 ---
-UID : NN:sensorsclassextension.ISensorDriver
-title : ISensorDriver
-author : windows-driver-content
-description : The ISensorDriver interface provides callback methods that the sensor class extension uses to provide requests and notifications to the sensor driver.
-old-location : sensors\isensordriver.htm
-old-project : sensors
-ms.assetid : 4f468f1e-598e-46ae-b50e-28f73e73afda
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : sensors.isensordriver, ISensorDriver interface [Sensor Devices], ISensorDriver interface [Sensor Devices], described, ISensorDriver, sensorsclassextension/ISensorDriver, Sensor_IFaces_014342f2-5466-426b-bb11-cb4e89a7691a.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : sensorsclassextension.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : SensorsClassExtension.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SensorConnectionType
-req.product : Windows 10 or later.
+UID: NN:sensorsclassextension.ISensorDriver
+title: ISensorDriver
+author: windows-driver-content
+description: The ISensorDriver interface provides callback methods that the sensor class extension uses to provide requests and notifications to the sensor driver.
+old-location: sensors\isensordriver.htm
+old-project: sensors
+ms.assetid: 4f468f1e-598e-46ae-b50e-28f73e73afda
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: sensors.isensordriver, ISensorDriver interface [Sensor Devices], ISensorDriver interface [Sensor Devices], described, ISensorDriver, sensorsclassextension/ISensorDriver, Sensor_IFaces_014342f2-5466-426b-bb11-cb4e89a7691a.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: sensorsclassextension.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: SensorsClassExtension.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	SensorsClassExtension.lib
+-	SensorsClassExtension.dll
+apiname:
+-	ISensorDriver
+product: Windows
+targetos: Windows
+req.typenames: SensorConnectionType
+req.product: Windows 10 or later.
 ---
 
 # ISensorDriver interface

@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugControl6.GetExecutionStatusEx
-title : IDebugControl6::GetExecutionStatusEx method
-author : windows-driver-content
-description : The GetExecutionStatusEx method returns information about the execution status of the debugger engine.
-old-location : debugger\idebugcontrol6_getexecutionstatusex.htm
-old-project : debugger
-ms.assetid : C14A3106-AEF7-4BA2-9E21-32D8B2D5BD7E
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : GetExecutionStatusEx method [Windows Debugging], IDebugControl6 interface, debugger.idebugcontrol6_getexecutionstatusex, IDebugControl6::GetExecutionStatusEx, GetExecutionStatusEx, IDebugControl6 interface [Windows Debugging], GetExecutionStatusEx method, dbgeng/IDebugControl6::GetExecutionStatusEx, GetExecutionStatusEx method [Windows Debugging], IDebugControl6
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl6.GetExecutionStatusEx
+title: IDebugControl6::GetExecutionStatusEx method
+author: windows-driver-content
+description: The GetExecutionStatusEx method returns information about the execution status of the debugger engine.
+old-location: debugger\idebugcontrol6_getexecutionstatusex.htm
+old-project: debugger
+ms.assetid: C14A3106-AEF7-4BA2-9E21-32D8B2D5BD7E
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: GetExecutionStatusEx method [Windows Debugging], IDebugControl6 interface, debugger.idebugcontrol6_getexecutionstatusex, IDebugControl6::GetExecutionStatusEx, GetExecutionStatusEx, IDebugControl6 interface [Windows Debugging], GetExecutionStatusEx method, dbgeng/IDebugControl6::GetExecutionStatusEx, GetExecutionStatusEx method [Windows Debugging], IDebugControl6
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl6.GetExecutionStatusEx
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

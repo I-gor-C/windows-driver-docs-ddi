@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3D10DDI_CLOSEADAPTER
-title : PFND3D10DDI_CLOSEADAPTER
-author : windows-driver-content
-description : The CloseAdapter(D3D10) function releases resources for a graphics adapter object.
-old-location : display\closeadapter_d3d10_.htm
-old-project : display
-ms.assetid : bc7ccd91-becc-4596-a56a-562cfe9a18b9
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.closeadapter_d3d10_, CloseAdapter callback function [Display Devices], CloseAdapter, PFND3D10DDI_CLOSEADAPTER, PFND3D10DDI_CLOSEADAPTER, d3d10umddi/CloseAdapter, UserModeDisplayDriverDx10_Functions_0adac9d0-3334-4bee-86ef-4e1450b1feb0.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3D10DDI_CLOSEADAPTER
+title: PFND3D10DDI_CLOSEADAPTER
+author: windows-driver-content
+description: The CloseAdapter(D3D10) function releases resources for a graphics adapter object.
+old-location: display\closeadapter_d3d10_.htm
+old-project: display
+ms.assetid: bc7ccd91-becc-4596-a56a-562cfe9a18b9
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.closeadapter_d3d10_, CloseAdapter callback function [Display Devices], CloseAdapter, PFND3D10DDI_CLOSEADAPTER, PFND3D10DDI_CLOSEADAPTER, d3d10umddi/CloseAdapter, UserModeDisplayDriverDx10_Functions_0adac9d0-3334-4bee-86ef-4e1450b1feb0.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	CloseAdapter
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

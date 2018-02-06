@@ -1,42 +1,47 @@
 ---
-UID : NC:wdm.IO_SESSION_NOTIFICATION_FUNCTION
-title : IO_SESSION_NOTIFICATION_FUNCTION
-author : windows-driver-content
-description : The IO_SESSION_NOTIFICATION_FUNCTION function type defines a callback routine through which a driver receives notifications of changes in the state of user sessions that the driver is interested in.
-old-location : kernel\io_session_notification_function.htm
-old-project : kernel
-ms.assetid : ff7a5191-35d9-4927-9c23-7f5ad0cfd7ab
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.io_session_notification_function, IO_SESSION_NOTIFICATION_FUNCTION callback function [Kernel-Mode Driver Architecture], IO_SESSION_NOTIFICATION_FUNCTION, wdm/IO_SESSION_NOTIFICATION_FUNCTION, DrvrRtns_b956c11f-2757-437b-b406-958fdced8f94.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h, Fltkernel.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported in Windows 7 and later versions of the Windows operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Called at IRQL <= APC_LEVEL.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
-req.product : Windows 10 or later.
+UID: NC:wdm.IO_SESSION_NOTIFICATION_FUNCTION
+title: IO_SESSION_NOTIFICATION_FUNCTION
+author: windows-driver-content
+description: The IO_SESSION_NOTIFICATION_FUNCTION function type defines a callback routine through which a driver receives notifications of changes in the state of user sessions that the driver is interested in.
+old-location: kernel\io_session_notification_function.htm
+old-project: kernel
+ms.assetid: ff7a5191-35d9-4927-9c23-7f5ad0cfd7ab
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.io_session_notification_function, IO_SESSION_NOTIFICATION_FUNCTION callback function [Kernel-Mode Driver Architecture], IO_SESSION_NOTIFICATION_FUNCTION, wdm/IO_SESSION_NOTIFICATION_FUNCTION, DrvrRtns_b956c11f-2757-437b-b406-958fdced8f94.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h, Fltkernel.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported in Windows 7 and later versions of the Windows operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Called at IRQL <= APC_LEVEL.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Wdm.h
+apiname:
+-	IO_SESSION_NOTIFICATION_FUNCTION
+product: Windows
+targetos: Windows
+req.typenames: WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+req.product: Windows 10 or later.
 ---
 
 

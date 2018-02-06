@@ -1,42 +1,48 @@
 ---
-UID : NF:usbdlib.USBD_ParseDescriptors
-title : USBD_ParseDescriptors function
-author : windows-driver-content
-description : The USBD_ParseDescriptors routine searches a given configuration descriptor and returns a pointer to the first descriptor that matches the search criteria.
-old-location : buses\usbd_parsedescriptors.htm
-old-project : usbref
-ms.assetid : d6d90a4a-a67d-4ef3-82b8-7146970e30f3
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : buses.usbd_parsedescriptors, usbfunc_a66c16e5-451c-4d5b-a621-4c4969200acd.xml, USBD_ParseDescriptors, USBD_ParseDescriptors routine [Buses], usbdlib/USBD_ParseDescriptors
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : usbdlib.h
-req.include-header : Usbdlib.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Usbd.lib
-req.dll : 
-req.irql : "< DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : USBCAMD_DEVICE_DATA2, *PUSBCAMD_DEVICE_DATA2
-req.product : Windows 10 or later.
+UID: NF:usbdlib.USBD_ParseDescriptors
+title: USBD_ParseDescriptors function
+author: windows-driver-content
+description: The USBD_ParseDescriptors routine searches a given configuration descriptor and returns a pointer to the first descriptor that matches the search criteria.
+old-location: buses\usbd_parsedescriptors.htm
+old-project: usbref
+ms.assetid: d6d90a4a-a67d-4ef3-82b8-7146970e30f3
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: buses.usbd_parsedescriptors, usbfunc_a66c16e5-451c-4d5b-a621-4c4969200acd.xml, USBD_ParseDescriptors, USBD_ParseDescriptors routine [Buses], usbdlib/USBD_ParseDescriptors
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: usbdlib.h
+req.include-header: Usbdlib.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Usbd.lib
+req.dll: 
+req.irql: "< DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Usbd.lib
+-	Usbd.dll
+apiname:
+-	USBD_ParseDescriptors
+product: Windows
+targetos: Windows
+req.typenames: USBCAMD_DEVICE_DATA2, *PUSBCAMD_DEVICE_DATA2
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:iscsicfg._MSiSCSI_RADIUSConfig
-title : "_MSiSCSI_RADIUSConfig"
-author : windows-driver-content
-description : The MSiSCSI_RADIUSConfig structure provides information that the initiator requires to use the remote authentication dial-in user service (RADIUS).
-old-location : storage\msiscsi_radiusconfig.htm
-old-project : storage
-ms.assetid : 6f8be86e-2729-4aa9-982d-df323f05cf1c
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.msiscsi_radiusconfig, structs-iSCSI_9f8461c3-b370-4aed-a5a5-58f9dd276944.xml, MSiSCSI_RADIUSConfig, MSiSCSI_RADIUSConfig structure [Storage Devices], PMSiSCSI_RADIUSConfig, *PMSiSCSI_RADIUSConfig, iscsicfg/PMSiSCSI_RADIUSConfig, PMSiSCSI_RADIUSConfig structure pointer [Storage Devices], iscsicfg/MSiSCSI_RADIUSConfig, _MSiSCSI_RADIUSConfig
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : iscsicfg.h
-req.include-header : Iscsicfg.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : MSiSCSI_RADIUSConfig, *PMSiSCSI_RADIUSConfig
+UID: NS:iscsicfg._MSiSCSI_RADIUSConfig
+title: "_MSiSCSI_RADIUSConfig"
+author: windows-driver-content
+description: The MSiSCSI_RADIUSConfig structure provides information that the initiator requires to use the remote authentication dial-in user service (RADIUS).
+old-location: storage\msiscsi_radiusconfig.htm
+old-project: storage
+ms.assetid: 6f8be86e-2729-4aa9-982d-df323f05cf1c
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.msiscsi_radiusconfig, structs-iSCSI_9f8461c3-b370-4aed-a5a5-58f9dd276944.xml, MSiSCSI_RADIUSConfig, MSiSCSI_RADIUSConfig structure [Storage Devices], PMSiSCSI_RADIUSConfig, *PMSiSCSI_RADIUSConfig, iscsicfg/PMSiSCSI_RADIUSConfig, PMSiSCSI_RADIUSConfig structure pointer [Storage Devices], iscsicfg/MSiSCSI_RADIUSConfig, _MSiSCSI_RADIUSConfig
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: iscsicfg.h
+req.include-header: Iscsicfg.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	iscsicfg.h
+apiname:
+-	MSiSCSI_RADIUSConfig
+product: Windows
+targetos: Windows
+req.typenames: MSiSCSI_RADIUSConfig, *PMSiSCSI_RADIUSConfig
 ---
 
 # _MSiSCSI_RADIUSConfig structure

@@ -1,42 +1,47 @@
 ---
-UID : NI:usbioctl.IOCTL_INTERNAL_USB_UNREGISTER_COMPOSITE_DEVICE
-title : IOCTL_INTERNAL_USB_UNREGISTER_COMPOSITE_DEVICE
-author : windows-driver-content
-description : The IOCTL_INTERNAL_USB_UNREGISTER_COMPOSITE_DEVICE I/O request unregisters the driver of a USB multi-function device (composite driver) and releases all resources that are associated with registration.
-old-location : buses\ioctl_internal_usb_unregister_composite_driver.htm
-old-project : usbref
-ms.assetid : B9DD8FDB-CD78-41BD-BE43-A0F61695B3EB
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : buses.ioctl_internal_usb_unregister_composite_driver, IOCTL_INTERNAL_USB_UNREGISTER_COMPOSITE_DEVICE control code [Buses], IOCTL_INTERNAL_USB_UNREGISTER_COMPOSITE_DEVICE, usbioctl/IOCTL_INTERNAL_USB_UNREGISTER_COMPOSITE_DEVICE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : usbioctl.h
-req.include-header : Usbioctl.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : USB_HUB_TYPE
-req.product : Windows 10 or later.
+UID: NI:usbioctl.IOCTL_INTERNAL_USB_UNREGISTER_COMPOSITE_DEVICE
+title: IOCTL_INTERNAL_USB_UNREGISTER_COMPOSITE_DEVICE
+author: windows-driver-content
+description: The IOCTL_INTERNAL_USB_UNREGISTER_COMPOSITE_DEVICE I/O request unregisters the driver of a USB multi-function device (composite driver) and releases all resources that are associated with registration.
+old-location: buses\ioctl_internal_usb_unregister_composite_driver.htm
+old-project: usbref
+ms.assetid: B9DD8FDB-CD78-41BD-BE43-A0F61695B3EB
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: buses.ioctl_internal_usb_unregister_composite_driver, IOCTL_INTERNAL_USB_UNREGISTER_COMPOSITE_DEVICE control code [Buses], IOCTL_INTERNAL_USB_UNREGISTER_COMPOSITE_DEVICE, usbioctl/IOCTL_INTERNAL_USB_UNREGISTER_COMPOSITE_DEVICE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: usbioctl.h
+req.include-header: Usbioctl.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Usbioctl.h
+apiname:
+-	IOCTL_INTERNAL_USB_UNREGISTER_COMPOSITE_DEVICE
+product: Windows
+targetos: Windows
+req.typenames: USB_HUB_TYPE
+req.product: Windows 10 or later.
 ---
 
 # IOCTL_INTERNAL_USB_UNREGISTER_COMPOSITE_DEVICE IOCTL

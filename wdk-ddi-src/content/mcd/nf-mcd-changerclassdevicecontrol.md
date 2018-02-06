@@ -1,41 +1,46 @@
 ---
-UID : NF:mcd.ChangerClassDeviceControl
-title : ChangerClassDeviceControl function
-author : windows-driver-content
-description : The ChangerClassDeviceControl routine is called by a changer minidriver to allow the class driver perform device-independent aspects of a device control operation.
-old-location : storage\changerclassdevicecontrol.htm
-old-project : storage
-ms.assetid : 9107fa7b-b061-4505-aef7-be04587a4199
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : ChangerClassDeviceControl routine [Storage Devices], storage.changerclassdevicecontrol, chgrclas_0338541c-8796-485d-aa1c-20335ea4c6c5.xml, mcd/ChangerClassDeviceControl, ChangerClassDeviceControl
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : mcd.h
-req.include-header : Mcd.h, Ntddchgr.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : LAMP_INTENSITY_WHITE
+UID: NF:mcd.ChangerClassDeviceControl
+title: ChangerClassDeviceControl function
+author: windows-driver-content
+description: The ChangerClassDeviceControl routine is called by a changer minidriver to allow the class driver perform device-independent aspects of a device control operation.
+old-location: storage\changerclassdevicecontrol.htm
+old-project: storage
+ms.assetid: 9107fa7b-b061-4505-aef7-be04587a4199
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: ChangerClassDeviceControl routine [Storage Devices], storage.changerclassdevicecontrol, chgrclas_0338541c-8796-485d-aa1c-20335ea4c6c5.xml, mcd/ChangerClassDeviceControl, ChangerClassDeviceControl
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: mcd.h
+req.include-header: Mcd.h, Ntddchgr.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	mcd.h
+apiname:
+-	ChangerClassDeviceControl
+product: Windows
+targetos: Windows
+req.typenames: LAMP_INTENSITY_WHITE
 ---
 
 

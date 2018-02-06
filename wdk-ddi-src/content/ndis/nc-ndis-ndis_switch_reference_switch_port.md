@@ -1,41 +1,46 @@
 ---
-UID : NC:ndis.NDIS_SWITCH_REFERENCE_SWITCH_PORT
-title : NDIS_SWITCH_REFERENCE_SWITCH_PORT
-author : windows-driver-content
-description : The ReferenceSwitchPort function increments the Hyper-V extensible switch reference counter for an extensible switch port.
-old-location : netvista\ReferenceSwitchPort.htm
-old-project : netvista
-ms.assetid : 5FD2E931-AC9F-4157-9C45-F93261FC834D
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.ReferenceSwitchPort, ReferenceSwitchPort callback function [Network Drivers Starting with Windows Vista], ReferenceSwitchPort, NDIS_SWITCH_REFERENCE_SWITCH_PORT, NDIS_SWITCH_REFERENCE_SWITCH_PORT, ndis/ReferenceSwitchPort
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported in NDIS 6.30 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
+UID: NC:ndis.NDIS_SWITCH_REFERENCE_SWITCH_PORT
+title: NDIS_SWITCH_REFERENCE_SWITCH_PORT
+author: windows-driver-content
+description: The ReferenceSwitchPort function increments the Hyper-V extensible switch reference counter for an extensible switch port.
+old-location: netvista\ReferenceSwitchPort.htm
+old-project: netvista
+ms.assetid: 5FD2E931-AC9F-4157-9C45-F93261FC834D
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.ReferenceSwitchPort, ReferenceSwitchPort callback function [Network Drivers Starting with Windows Vista], ReferenceSwitchPort, NDIS_SWITCH_REFERENCE_SWITCH_PORT, NDIS_SWITCH_REFERENCE_SWITCH_PORT, ndis/ReferenceSwitchPort
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported in NDIS 6.30 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ndis.h
+apiname:
+-	ReferenceSwitchPort
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 

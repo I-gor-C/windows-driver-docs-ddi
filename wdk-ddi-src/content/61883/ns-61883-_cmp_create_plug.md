@@ -1,41 +1,46 @@
 ---
-UID : NS:61883._CMP_CREATE_PLUG
-title : "_CMP_CREATE_PLUG"
-author : windows-driver-content
-description : This structure is used to create a plug.
-old-location : ieee\cmp_create_plug.htm
-old-project : IEEE
-ms.assetid : 4FE3FE9E-9F00-431D-99F0-002B1368CE34
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : CMP_CREATE_PLUG structure [Buses], PCMP_CREATE_PLUG structure pointer [Buses], 61883/PCMP_CREATE_PLUG, CMP_CREATE_PLUG, _CMP_CREATE_PLUG, PCMP_CREATE_PLUG, IEEE.cmp_create_plug, 61883/CMP_CREATE_PLUG, *PCMP_CREATE_PLUG
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : 61883.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : CMP_CREATE_PLUG, *PCMP_CREATE_PLUG
+UID: NS:61883._CMP_CREATE_PLUG
+title: "_CMP_CREATE_PLUG"
+author: windows-driver-content
+description: This structure is used to create a plug.
+old-location: ieee\cmp_create_plug.htm
+old-project: IEEE
+ms.assetid: 4FE3FE9E-9F00-431D-99F0-002B1368CE34
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: CMP_CREATE_PLUG structure [Buses], PCMP_CREATE_PLUG structure pointer [Buses], 61883/PCMP_CREATE_PLUG, CMP_CREATE_PLUG, _CMP_CREATE_PLUG, PCMP_CREATE_PLUG, IEEE.cmp_create_plug, 61883/CMP_CREATE_PLUG, *PCMP_CREATE_PLUG
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: 61883.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	61883.h
+apiname:
+-	CMP_CREATE_PLUG
+product: Windows
+targetos: Windows
+req.typenames: CMP_CREATE_PLUG, *PCMP_CREATE_PLUG
 ---
 
 # _CMP_CREATE_PLUG structure

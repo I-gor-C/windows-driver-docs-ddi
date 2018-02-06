@@ -1,42 +1,47 @@
 ---
-UID : NF:wdfio.WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY_EXAMINE_INIT
-title : WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY_EXAMINE_INIT function
-author : windows-driver-content
-description : The WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY_EXAMINE_INIT function initializes a driver's WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY structure.
-old-location : wdf\wdf_io_queue_forward_progress_policy_examine_init.htm
-old-project : wdf
-ms.assetid : 3d1d7242-ff26-47e0-a1f6-ae67b27acf22
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY_EXAMINE_INIT, kmdf.wdf_io_queue_forward_progress_policy_examine_init, DFQueueObjectRef_bd2ff7de-f07f-4557-9051-d22f23a0530c.xml, wdf.wdf_io_queue_forward_progress_policy_examine_init, wdfio/WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY_EXAMINE_INIT, WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY_EXAMINE_INIT function
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfio.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.9
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_IO_QUEUE_STATE
-req.product : Windows 10 or later.
+UID: NF:wdfio.WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY_EXAMINE_INIT
+title: WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY_EXAMINE_INIT function
+author: windows-driver-content
+description: The WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY_EXAMINE_INIT function initializes a driver's WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY structure.
+old-location: wdf\wdf_io_queue_forward_progress_policy_examine_init.htm
+old-project: wdf
+ms.assetid: 3d1d7242-ff26-47e0-a1f6-ae67b27acf22
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY_EXAMINE_INIT, kmdf.wdf_io_queue_forward_progress_policy_examine_init, DFQueueObjectRef_bd2ff7de-f07f-4557-9051-d22f23a0530c.xml, wdf.wdf_io_queue_forward_progress_policy_examine_init, wdfio/WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY_EXAMINE_INIT, WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY_EXAMINE_INIT function
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfio.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.9
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfio.h
+apiname:
+-	WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY_EXAMINE_INIT
+product: Windows
+targetos: Windows
+req.typenames: WDF_IO_QUEUE_STATE
+req.product: Windows 10 or later.
 ---
 
 

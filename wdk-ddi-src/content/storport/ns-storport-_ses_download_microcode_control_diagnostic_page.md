@@ -1,42 +1,47 @@
 ---
-UID : NS:storport._SES_DOWNLOAD_MICROCODE_CONTROL_DIAGNOSTIC_PAGE
-title : "_SES_DOWNLOAD_MICROCODE_CONTROL_DIAGNOSTIC_PAGE"
-author : windows-driver-content
-description : The SES_DOWNLOAD_MICROCODE_CONTROL_DIAGNOSTIC_PAGE structure contains a vendor specific microcode (i.e., firmware) image for use by the enclosure services process.
-old-location : storage\ses_download_microcode_control_diagnostic_page.htm
-old-project : storage
-ms.assetid : 09c2746f-cfe4-41dc-82ce-0b7e0c348897
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : Reserved, Activate deferred microcode, SES_DOWNLOAD_MICROCODE_CONTROL_DIAGNOSTIC_PAGE, _SES_DOWNLOAD_MICROCODE_CONTROL_DIAGNOSTIC_PAGE, scsi/PSES_DOWNLOAD_MICROCODE_CONTROL_DIAGNOSTIC_PAGE, *PSES_DOWNLOAD_MICROCODE_CONTROL_DIAGNOSTIC_PAGE, PSES_DOWNLOAD_MICROCODE_CONTROL_DIAGNOSTIC_PAGE structure pointer [Storage Devices], scsi/SES_DOWNLOAD_MICROCODE_CONTROL_DIAGNOSTIC_PAGE, PSES_DOWNLOAD_MICROCODE_CONTROL_DIAGNOSTIC_PAGE, Download microcode with offsets, save, and defer activate, SES_DOWNLOAD_MICROCODE_CONTROL_DIAGNOSTIC_PAGE structure [Storage Devices], Download microcode with offsets, save, and activate, storage.ses_download_microcode_control_diagnostic_page
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : storport.h
-req.include-header : Minitape.h, Storport.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 10, version 1709 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SES_DOWNLOAD_MICROCODE_CONTROL_DIAGNOSTIC_PAGE, *PSES_DOWNLOAD_MICROCODE_CONTROL_DIAGNOSTIC_PAGE
-req.product : Windows 10 or later.
+UID: NS:storport._SES_DOWNLOAD_MICROCODE_CONTROL_DIAGNOSTIC_PAGE
+title: "_SES_DOWNLOAD_MICROCODE_CONTROL_DIAGNOSTIC_PAGE"
+author: windows-driver-content
+description: The SES_DOWNLOAD_MICROCODE_CONTROL_DIAGNOSTIC_PAGE structure contains a vendor specific microcode (i.e., firmware) image for use by the enclosure services process.
+old-location: storage\ses_download_microcode_control_diagnostic_page.htm
+old-project: storage
+ms.assetid: 09c2746f-cfe4-41dc-82ce-0b7e0c348897
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: Reserved, Activate deferred microcode, SES_DOWNLOAD_MICROCODE_CONTROL_DIAGNOSTIC_PAGE, _SES_DOWNLOAD_MICROCODE_CONTROL_DIAGNOSTIC_PAGE, scsi/PSES_DOWNLOAD_MICROCODE_CONTROL_DIAGNOSTIC_PAGE, *PSES_DOWNLOAD_MICROCODE_CONTROL_DIAGNOSTIC_PAGE, PSES_DOWNLOAD_MICROCODE_CONTROL_DIAGNOSTIC_PAGE structure pointer [Storage Devices], scsi/SES_DOWNLOAD_MICROCODE_CONTROL_DIAGNOSTIC_PAGE, PSES_DOWNLOAD_MICROCODE_CONTROL_DIAGNOSTIC_PAGE, Download microcode with offsets, save, and defer activate, SES_DOWNLOAD_MICROCODE_CONTROL_DIAGNOSTIC_PAGE structure [Storage Devices], Download microcode with offsets, save, and activate, storage.ses_download_microcode_control_diagnostic_page
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: storport.h
+req.include-header: Minitape.h, Storport.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 10, version 1709 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	scsi.h
+apiname:
+-	SES_DOWNLOAD_MICROCODE_CONTROL_DIAGNOSTIC_PAGE
+product: Windows
+targetos: Windows
+req.typenames: SES_DOWNLOAD_MICROCODE_CONTROL_DIAGNOSTIC_PAGE, *PSES_DOWNLOAD_MICROCODE_CONTROL_DIAGNOSTIC_PAGE
+req.product: Windows 10 or later.
 ---
 
 # _SES_DOWNLOAD_MICROCODE_CONTROL_DIAGNOSTIC_PAGE structure

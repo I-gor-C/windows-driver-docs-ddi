@@ -1,41 +1,46 @@
 ---
-UID : NF:lowio.RxLowIoGetBufferAddress
-title : RxLowIoGetBufferAddress function
-author : windows-driver-content
-description : RxLowIoGetBufferAddress returns the buffer corresponding to the MDL from LowIoContext structure of an RX_CONTEXT structure.
-old-location : ifsk\rxlowiogetbufferaddress.htm
-old-project : ifsk
-ms.assetid : a4d78135-38bc-4a34-98ce-d2712829124a
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : RxLowIoGetBufferAddress function [Installable File System Drivers], lowio/RxLowIoGetBufferAddress, rxref_b45afb50-cf03-4450-9e96-3d8f08392eb6.xml, ifsk.rxlowiogetbufferaddress, RxLowIoGetBufferAddress
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : lowio.h
-req.include-header : Rxcontx.h, Lowio.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : LAMP_INTENSITY_WHITE
+UID: NF:lowio.RxLowIoGetBufferAddress
+title: RxLowIoGetBufferAddress function
+author: windows-driver-content
+description: RxLowIoGetBufferAddress returns the buffer corresponding to the MDL from LowIoContext structure of an RX_CONTEXT structure.
+old-location: ifsk\rxlowiogetbufferaddress.htm
+old-project: ifsk
+ms.assetid: a4d78135-38bc-4a34-98ce-d2712829124a
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: RxLowIoGetBufferAddress function [Installable File System Drivers], lowio/RxLowIoGetBufferAddress, rxref_b45afb50-cf03-4450-9e96-3d8f08392eb6.xml, ifsk.rxlowiogetbufferaddress, RxLowIoGetBufferAddress
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: lowio.h
+req.include-header: Rxcontx.h, Lowio.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	lowio.h
+apiname:
+-	RxLowIoGetBufferAddress
+product: Windows
+targetos: Windows
+req.typenames: LAMP_INTENSITY_WHITE
 ---
 
 

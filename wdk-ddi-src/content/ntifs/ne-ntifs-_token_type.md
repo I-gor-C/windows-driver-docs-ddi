@@ -1,41 +1,46 @@
 ---
-UID : NE:ntifs._TOKEN_TYPE
-title : "_TOKEN_TYPE"
-author : windows-driver-content
-description : The TOKEN_TYPE enumeration type contains values that differentiate between a primary token and an impersonation token.
-old-location : ifsk\token_type.htm
-old-project : ifsk
-ms.assetid : 2ad78d17-9baa-45cf-a620-01c2ccd14338
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : PTOKEN_TYPE, PTOKEN_TYPE enumeration pointer [Installable File System Drivers], securitystructures_b570f2e6-2426-4c9d-8552-81131cf4bd66.xml, *PTOKEN_TYPE, TOKEN_TYPE enumeration [Installable File System Drivers], TOKEN_TYPE, TokenImpersonation, ntifs/TOKEN_TYPE, _TOKEN_TYPE, TokenPrimary, ntifs/TokenPrimary, ifsk.token_type, ntifs/PTOKEN_TYPE, ntifs/TokenImpersonation
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NE:ntifs._TOKEN_TYPE
+title: "_TOKEN_TYPE"
+author: windows-driver-content
+description: The TOKEN_TYPE enumeration type contains values that differentiate between a primary token and an impersonation token.
+old-location: ifsk\token_type.htm
+old-project: ifsk
+ms.assetid: 2ad78d17-9baa-45cf-a620-01c2ccd14338
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: PTOKEN_TYPE, PTOKEN_TYPE enumeration pointer [Installable File System Drivers], securitystructures_b570f2e6-2426-4c9d-8552-81131cf4bd66.xml, *PTOKEN_TYPE, TOKEN_TYPE enumeration [Installable File System Drivers], TOKEN_TYPE, TokenImpersonation, ntifs/TOKEN_TYPE, _TOKEN_TYPE, TokenPrimary, ntifs/TokenPrimary, ifsk.token_type, ntifs/PTOKEN_TYPE, ntifs/TokenImpersonation
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntifs.h
+apiname:
+-	TOKEN_TYPE
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 # _TOKEN_TYPE Enumeration
@@ -52,16 +57,16 @@ typedef enum _TOKEN_TYPE {
 ## Constants
 
 <table>
-
-<tr>
-<td>TokenImpersonation</td>
-<td>Indicates an impersonation token.</td>
-</tr>
-
-<tr>
-<td>TokenPrimary</td>
-<td>Indicates a primary token.</td>
-</tr>
+            
+                <tr>
+                    <td>TokenImpersonation</td>
+                    <td>Indicates an impersonation token.</td>
+                </tr>
+            
+                <tr>
+                    <td>TokenPrimary</td>
+                    <td>Indicates a primary token.</td>
+                </tr>
 </table>
 
 
@@ -70,9 +75,9 @@ typedef enum _TOKEN_TYPE {
 | ---- |:---- |
 | **Header** | ntifs.h (include Ntifs.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\ntifs\ns-ntifs-_token_statistics.md">TOKEN_STATISTICS</a>
+        <a href="..\ntifs\ns-ntifs-_token_statistics.md">TOKEN_STATISTICS</a>
 
 <a href="..\ntifs\nf-ntifs-zwsetinformationtoken.md">ZwSetInformationToken</a>
 

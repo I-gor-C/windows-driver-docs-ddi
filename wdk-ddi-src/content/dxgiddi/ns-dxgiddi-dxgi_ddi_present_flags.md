@@ -1,41 +1,46 @@
 ---
-UID : NS:dxgiddi.DXGI_DDI_PRESENT_FLAGS
-title : DXGI_DDI_PRESENT_FLAGS
-author : windows-driver-content
-description : Identifies how to perform a present operation.
-old-location : display\dxgi_ddi_present_flags.htm
-old-project : display
-ms.assetid : 87f3b66a-0fcb-4325-ae23-7f89d6b389e6
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DXGI_DDI_PRESENT_FLAGS, dxgiddi/DXGI_DDI_PRESENT_FLAGS, DXGI_DDI_PRESENT_FLAGS structure [Display Devices], display.dxgi_ddi_present_flags, UMDisplayDriver_Dx10param_Structs_75234d4d-acce-4f1f-804c-f7128d885c2f.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : dxgiddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGI_DDI_PRESENT_FLAGS
+UID: NS:dxgiddi.DXGI_DDI_PRESENT_FLAGS
+title: DXGI_DDI_PRESENT_FLAGS
+author: windows-driver-content
+description: Identifies how to perform a present operation.
+old-location: display\dxgi_ddi_present_flags.htm
+old-project: display
+ms.assetid: 87f3b66a-0fcb-4325-ae23-7f89d6b389e6
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DXGI_DDI_PRESENT_FLAGS, dxgiddi/DXGI_DDI_PRESENT_FLAGS, DXGI_DDI_PRESENT_FLAGS structure [Display Devices], display.dxgi_ddi_present_flags, UMDisplayDriver_Dx10param_Structs_75234d4d-acce-4f1f-804c-f7128d885c2f.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: dxgiddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	dxgiddi.h
+apiname:
+-	DXGI_DDI_PRESENT_FLAGS
+product: Windows
+targetos: Windows
+req.typenames: DXGI_DDI_PRESENT_FLAGS
 ---
 
 # DXGI_DDI_PRESENT_FLAGS structure

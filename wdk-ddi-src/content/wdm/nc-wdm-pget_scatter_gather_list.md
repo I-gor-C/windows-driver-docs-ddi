@@ -1,42 +1,47 @@
 ---
-UID : NC:wdm.PGET_SCATTER_GATHER_LIST
-title : PGET_SCATTER_GATHER_LIST
-author : windows-driver-content
-description : The GetScatterGatherList routine prepares the system for a DMA scatter/gather operation on behalf of the target device object, through either the system DMA controller or a bus-master adapter.
-old-location : kernel\getscattergatherlist.htm
-old-project : kernel
-ms.assetid : 44c597ed-a41e-4170-b75b-dcd61aa70350
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.getscattergatherlist, GetScatterGatherList, GetScatterGatherList callback function [Kernel-Mode Driver Architecture], GetScatterGatherList, PGET_SCATTER_GATHER_LIST, PGET_SCATTER_GATHER_LIST, ntddk/GetScatterGatherList, kdma_b451cb34-7181-4272-a1ef-0c8fc233a7fd.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows 2000 and later versions of Windows. Not supported in Windows 98 or Windows Me.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : IrqlDispatch, IrqlDispatch(storport)
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : DISPATCH_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
-req.product : Windows 10 or later.
+UID: NC:wdm.PGET_SCATTER_GATHER_LIST
+title: PGET_SCATTER_GATHER_LIST
+author: windows-driver-content
+description: The GetScatterGatherList routine prepares the system for a DMA scatter/gather operation on behalf of the target device object, through either the system DMA controller or a bus-master adapter.
+old-location: kernel\getscattergatherlist.htm
+old-project: kernel
+ms.assetid: 44c597ed-a41e-4170-b75b-dcd61aa70350
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.getscattergatherlist, GetScatterGatherList, GetScatterGatherList callback function [Kernel-Mode Driver Architecture], GetScatterGatherList, PGET_SCATTER_GATHER_LIST, PGET_SCATTER_GATHER_LIST, ntddk/GetScatterGatherList, kdma_b451cb34-7181-4272-a1ef-0c8fc233a7fd.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows 2000 and later versions of Windows. Not supported in Windows 98 or Windows Me.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: IrqlDispatch, IrqlDispatch(storport)
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: DISPATCH_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	ntddk.h
+apiname:
+-	GetScatterGatherList
+product: Windows
+targetos: Windows
+req.typenames: WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+req.product: Windows 10 or later.
 ---
 
 

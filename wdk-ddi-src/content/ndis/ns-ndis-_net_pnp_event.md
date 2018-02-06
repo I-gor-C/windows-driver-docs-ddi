@@ -1,41 +1,46 @@
 ---
-UID : NS:ndis._NET_PNP_EVENT
-title : "_NET_PNP_EVENT"
-author : windows-driver-content
-description : The NET_PNP_EVENT structure describes a network Plug and Play (PnP) event, an NDIS PnP event, or a power management event.
-old-location : netvista\net_pnp_event.htm
-old-project : netvista
-ms.assetid : b68fb279-c1d4-4f0b-8b04-b17a01a65560
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NET_PNP_EVENT, netvista.net_pnp_event, _NET_PNP_EVENT, *PNET_PNP_EVENT, ndis/PNET_PNP_EVENT, NET_PNP_EVENT structure [Network Drivers Starting with Windows Vista], PNET_PNP_EVENT structure pointer [Network Drivers Starting with Windows Vista], protocol_structures_ref_0d2da286-4352-4097-901d-d3eba45d31c2.xml, ndis/NET_PNP_EVENT, PNET_PNP_EVENT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 5.1, and NDIS 6.0 and later. For more information about the NDIS 5.1 version of this structure, see    NET_PNP_EVENT (NDIS 5.1).
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : See Remarks section
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PNET_PNP_EVENT, NET_PNP_EVENT"
+UID: NS:ndis._NET_PNP_EVENT
+title: "_NET_PNP_EVENT"
+author: windows-driver-content
+description: The NET_PNP_EVENT structure describes a network Plug and Play (PnP) event, an NDIS PnP event, or a power management event.
+old-location: netvista\net_pnp_event.htm
+old-project: netvista
+ms.assetid: b68fb279-c1d4-4f0b-8b04-b17a01a65560
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NET_PNP_EVENT, netvista.net_pnp_event, _NET_PNP_EVENT, *PNET_PNP_EVENT, ndis/PNET_PNP_EVENT, NET_PNP_EVENT structure [Network Drivers Starting with Windows Vista], PNET_PNP_EVENT structure pointer [Network Drivers Starting with Windows Vista], protocol_structures_ref_0d2da286-4352-4097-901d-d3eba45d31c2.xml, ndis/NET_PNP_EVENT, PNET_PNP_EVENT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 5.1, and NDIS 6.0 and later. For more information about the NDIS 5.1 version of this structure, see    NET_PNP_EVENT (NDIS 5.1).
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: See Remarks section
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndis.h
+apiname:
+-	NET_PNP_EVENT
+product: Windows
+targetos: Windows
+req.typenames: "*PNET_PNP_EVENT, NET_PNP_EVENT"
 ---
 
 # _NET_PNP_EVENT structure

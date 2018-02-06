@@ -1,42 +1,47 @@
 ---
-UID : NC:video.PDRIVER_IO_PORT_ULONG_STRING
-title : PDRIVER_IO_PORT_ULONG_STRING
-author : windows-driver-content
-description : SvgaHwIoPortUlongString traps an I/O port range to which a full-screen MS-DOS application in an x86-based machine is sending a sequence of ULONG-sized data.
-old-location : display\svgahwioportulongstring.htm
-old-project : display
-ms.assetid : 190adc75-7274-49e2-a9b6-2897168df091
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.svgahwioportulongstring, SvgaHwIoPortUlongString callback function [Display Devices], SvgaHwIoPortUlongString, PDRIVER_IO_PORT_ULONG_STRING, PDRIVER_IO_PORT_ULONG_STRING, video/SvgaHwIoPortUlongString, VideoMiniport_Functions_107f011d-c8c7-4f9f-ac81-4d0b33caa3da.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VHF_CONFIG, *PVHF_CONFIG
-req.product : Windows 10 or later.
+UID: NC:video.PDRIVER_IO_PORT_ULONG_STRING
+title: PDRIVER_IO_PORT_ULONG_STRING
+author: windows-driver-content
+description: SvgaHwIoPortUlongString traps an I/O port range to which a full-screen MS-DOS application in an x86-based machine is sending a sequence of ULONG-sized data.
+old-location: display\svgahwioportulongstring.htm
+old-project: display
+ms.assetid: 190adc75-7274-49e2-a9b6-2897168df091
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.svgahwioportulongstring, SvgaHwIoPortUlongString callback function [Display Devices], SvgaHwIoPortUlongString, PDRIVER_IO_PORT_ULONG_STRING, PDRIVER_IO_PORT_ULONG_STRING, video/SvgaHwIoPortUlongString, VideoMiniport_Functions_107f011d-c8c7-4f9f-ac81-4d0b33caa3da.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	video.h
+apiname:
+-	SvgaHwIoPortUlongString
+product: Windows
+targetos: Windows
+req.typenames: VHF_CONFIG, *PVHF_CONFIG
+req.product: Windows 10 or later.
 ---
 
 

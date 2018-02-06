@@ -1,41 +1,46 @@
 ---
-UID : NF:d3dkmdt.D3DKMDT_VPPR_GET_CONTENT_ROTATION_PART
-title : D3DKMDT_VPPR_GET_CONTENT_ROTATION_PART function
-author : windows-driver-content
-description : A helper function that extracts the rotation angle from a given value of the D3DKMDT_VIDPN_PRESENT_PATH_ROTATION enumeration.
-old-location : display\d3dkmdt_vppr_get_content_rotation_part.htm
-old-project : display
-ms.assetid : B533B0DD-B72C-4294-8E88-4C15EA1BB16E
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DKMDT_VPPR_GET_CONTENT_ROTATION_PART, display.d3dkmdt_vppr_get_content_rotation_part, d3dkmdt/D3DKMDT_VPPR_GET_CONTENT_ROTATION_PART, D3DKMDT_VPPR_GET_CONTENT_ROTATION_PART function [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : d3dkmdt.h
-req.include-header : D3dkmdt.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8.1,DXGKDDI_INTERFACE_VERSION >= DXGKDDI_INTERFACE_VERSION_WDDM1_3_PATH_INDEPENDENT_ROTATION
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_RENDER_PIPELINE_STAGE
+UID: NF:d3dkmdt.D3DKMDT_VPPR_GET_CONTENT_ROTATION_PART
+title: D3DKMDT_VPPR_GET_CONTENT_ROTATION_PART function
+author: windows-driver-content
+description: A helper function that extracts the rotation angle from a given value of the D3DKMDT_VIDPN_PRESENT_PATH_ROTATION enumeration.
+old-location: display\d3dkmdt_vppr_get_content_rotation_part.htm
+old-project: display
+ms.assetid: B533B0DD-B72C-4294-8E88-4C15EA1BB16E
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DKMDT_VPPR_GET_CONTENT_ROTATION_PART, display.d3dkmdt_vppr_get_content_rotation_part, d3dkmdt/D3DKMDT_VPPR_GET_CONTENT_ROTATION_PART, D3DKMDT_VPPR_GET_CONTENT_ROTATION_PART function [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: d3dkmdt.h
+req.include-header: D3dkmdt.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8.1,DXGKDDI_INTERFACE_VERSION >= DXGKDDI_INTERFACE_VERSION_WDDM1_3_PATH_INDEPENDENT_ROTATION
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	D3dkmdt.h
+apiname:
+-	D3DKMDT_VPPR_GET_CONTENT_ROTATION_PART
+product: Windows
+targetos: Windows
+req.typenames: DXGK_RENDER_PIPELINE_STAGE
 ---
 
 

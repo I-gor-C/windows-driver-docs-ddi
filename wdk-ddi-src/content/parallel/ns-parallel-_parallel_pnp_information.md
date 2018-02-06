@@ -1,41 +1,46 @@
 ---
-UID : NS:parallel._PARALLEL_PNP_INFORMATION
-title : "_PARALLEL_PNP_INFORMATION"
-author : windows-driver-content
-description : The PARALLEL_PNP_INFORMATION structure specifies information about the capabilities of a parallel port.
-old-location : parports\parallel_pnp_information.htm
-old-project : parports
-ms.assetid : 9288fc11-e19b-46dd-95e4-6de8c7cdc61d
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : parallel/PARALLEL_PNP_INFORMATION, parports.parallel_pnp_information, PPARALLEL_PNP_INFORMATION, *PPARALLEL_PNP_INFORMATION, PARALLEL_PNP_INFORMATION, PARALLEL_PNP_INFORMATION structure [Parallel Ports], _PARALLEL_PNP_INFORMATION, PPARALLEL_PNP_INFORMATION structure pointer [Parallel Ports], parallel/PPARALLEL_PNP_INFORMATION, cisspd_71ac405c-ab56-434c-a945-9afee36c0972.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : parallel.h
-req.include-header : Parallel.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPARALLEL_PNP_INFORMATION, PARALLEL_PNP_INFORMATION"
+UID: NS:parallel._PARALLEL_PNP_INFORMATION
+title: "_PARALLEL_PNP_INFORMATION"
+author: windows-driver-content
+description: The PARALLEL_PNP_INFORMATION structure specifies information about the capabilities of a parallel port.
+old-location: parports\parallel_pnp_information.htm
+old-project: parports
+ms.assetid: 9288fc11-e19b-46dd-95e4-6de8c7cdc61d
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: parallel/PARALLEL_PNP_INFORMATION, parports.parallel_pnp_information, PPARALLEL_PNP_INFORMATION, *PPARALLEL_PNP_INFORMATION, PARALLEL_PNP_INFORMATION, PARALLEL_PNP_INFORMATION structure [Parallel Ports], _PARALLEL_PNP_INFORMATION, PPARALLEL_PNP_INFORMATION structure pointer [Parallel Ports], parallel/PPARALLEL_PNP_INFORMATION, cisspd_71ac405c-ab56-434c-a945-9afee36c0972.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: parallel.h
+req.include-header: Parallel.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	parallel.h
+apiname:
+-	PARALLEL_PNP_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: "*PPARALLEL_PNP_INFORMATION, PARALLEL_PNP_INFORMATION"
 ---
 
 # _PARALLEL_PNP_INFORMATION structure

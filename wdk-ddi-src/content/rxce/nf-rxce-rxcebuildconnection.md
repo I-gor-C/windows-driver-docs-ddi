@@ -1,42 +1,47 @@
 ---
-UID : NF:rxce.RxCeBuildConnection
-title : RxCeBuildConnection function
-author : windows-driver-content
-description : RxCeBuildConnection establishes a connection between a local RDBSS connection address and a given remote address.
-old-location : ifsk\rxcebuildconnection.htm
-old-project : ifsk
-ms.assetid : 3d4c2e69-7cdc-4eee-b56c-b1485768e942
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : RxCeBuildConnection, rxce/RxCeBuildConnection, ifsk.rxcebuildconnection, rxref_cc87c9dd-c8e4-4283-96a8-bc2ec15be773.xml, RxCeBuildConnection function [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : rxce.h
-req.include-header : Rxce.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*LPRILWRITEPHONEBOOKENTRYPARAMS, RILWRITEPHONEBOOKENTRYPARAMS"
-req.product : Windows 10 or later.
+UID: NF:rxce.RxCeBuildConnection
+title: RxCeBuildConnection function
+author: windows-driver-content
+description: RxCeBuildConnection establishes a connection between a local RDBSS connection address and a given remote address.
+old-location: ifsk\rxcebuildconnection.htm
+old-project: ifsk
+ms.assetid: 3d4c2e69-7cdc-4eee-b56c-b1485768e942
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: RxCeBuildConnection, rxce/RxCeBuildConnection, ifsk.rxcebuildconnection, rxref_cc87c9dd-c8e4-4283-96a8-bc2ec15be773.xml, RxCeBuildConnection function [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: rxce.h
+req.include-header: Rxce.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	rxce.h
+apiname:
+-	RxCeBuildConnection
+product: Windows
+targetos: Windows
+req.typenames: "*LPRILWRITEPHONEBOOKENTRYPARAMS, RILWRITEPHONEBOOKENTRYPARAMS"
+req.product: Windows 10 or later.
 ---
 
 

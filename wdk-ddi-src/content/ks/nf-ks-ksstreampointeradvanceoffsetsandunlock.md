@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsStreamPointerAdvanceOffsetsAndUnlock
-title : KsStreamPointerAdvanceOffsetsAndUnlock function
-author : windows-driver-content
-description : The KsStreamPointerAdvanceOffsetsAndUnlock function advances StreamPointer the specified number of bytes into the stream (adjusting the OffsetIn and OffsetOut fields of StreamPointer as requested) and unlocks it.
-old-location : stream\ksstreampointeradvanceoffsetsandunlock.htm
-old-project : stream
-ms.assetid : bb15eb8e-b609-4110-b0de-71efb8ef1f5e
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.ksstreampointeradvanceoffsetsandunlock, ks/KsStreamPointerAdvanceOffsetsAndUnlock, KsStreamPointerAdvanceOffsetsAndUnlock function [Streaming Media Devices], KsStreamPointerAdvanceOffsetsAndUnlock, avfunc_5f1d19bb-e367-4df3-9423-0263bda1cd54.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsStreamPointerAdvanceOffsetsAndUnlock
+title: KsStreamPointerAdvanceOffsetsAndUnlock function
+author: windows-driver-content
+description: The KsStreamPointerAdvanceOffsetsAndUnlock function advances StreamPointer the specified number of bytes into the stream (adjusting the OffsetIn and OffsetOut fields of StreamPointer as requested) and unlocks it.
+old-location: stream\ksstreampointeradvanceoffsetsandunlock.htm
+old-project: stream
+ms.assetid: bb15eb8e-b609-4110-b0de-71efb8ef1f5e
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.ksstreampointeradvanceoffsetsandunlock, ks/KsStreamPointerAdvanceOffsetsAndUnlock, KsStreamPointerAdvanceOffsetsAndUnlock function [Streaming Media Devices], KsStreamPointerAdvanceOffsetsAndUnlock, avfunc_5f1d19bb-e367-4df3-9423-0263bda1cd54.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsStreamPointerAdvanceOffsetsAndUnlock
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

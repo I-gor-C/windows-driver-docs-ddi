@@ -1,42 +1,48 @@
 ---
-UID : NF:storport.StorPortWriteRegisterBufferUchar
-title : StorPortWriteRegisterBufferUchar function
-author : windows-driver-content
-description : The StorPortWriteRegisterBufferUchar routine transfers a given number of unsigned bytes from a buffer to the HBA.
-old-location : storage\storportwriteregisterbufferuchar.htm
-old-project : storage
-ms.assetid : af8126cd-e931-4106-b543-9c84ee110901
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : StorPortWriteRegisterBufferUchar routine [Storage Devices], storport/StorPortWriteRegisterBufferUchar, StorPortWriteRegisterBufferUchar, storprt_21fa4636-6492-4cb1-9281-6f116f1a7591.xml, storage.storportwriteregisterbufferuchar
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Storport.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STOR_SPINLOCK
-req.product : Windows 10 or later.
+UID: NF:storport.StorPortWriteRegisterBufferUchar
+title: StorPortWriteRegisterBufferUchar function
+author: windows-driver-content
+description: The StorPortWriteRegisterBufferUchar routine transfers a given number of unsigned bytes from a buffer to the HBA.
+old-location: storage\storportwriteregisterbufferuchar.htm
+old-project: storage
+ms.assetid: af8126cd-e931-4106-b543-9c84ee110901
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: StorPortWriteRegisterBufferUchar routine [Storage Devices], storport/StorPortWriteRegisterBufferUchar, StorPortWriteRegisterBufferUchar, storprt_21fa4636-6492-4cb1-9281-6f116f1a7591.xml, storage.storportwriteregisterbufferuchar
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Storport.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Storport.lib
+-	Storport.dll
+apiname:
+-	StorPortWriteRegisterBufferUchar
+product: Windows
+targetos: Windows
+req.typenames: STOR_SPINLOCK
+req.product: Windows 10 or later.
 ---
 
 

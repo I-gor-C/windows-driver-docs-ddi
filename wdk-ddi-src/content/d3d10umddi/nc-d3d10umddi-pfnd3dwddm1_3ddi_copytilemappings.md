@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3DWDDM1_3DDI_COPYTILEMAPPINGS
-title : PFND3DWDDM1_3DDI_COPYTILEMAPPINGS
-author : windows-driver-content
-description : Copies mappings from a source tiled resource to a destination tiled resource.
-old-location : display\copytilemappings.htm
-old-project : display
-ms.assetid : CB2CE5E7-DDD4-4782-BB91-67A2C562A975
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.copytilemappings, CopyTileMappings callback function [Display Devices], CopyTileMappings, PFND3DWDDM1_3DDI_COPYTILEMAPPINGS, PFND3DWDDM1_3DDI_COPYTILEMAPPINGS, d3d10umddi/CopyTileMappings
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8.1,WDDM 1.3
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3DWDDM1_3DDI_COPYTILEMAPPINGS
+title: PFND3DWDDM1_3DDI_COPYTILEMAPPINGS
+author: windows-driver-content
+description: Copies mappings from a source tiled resource to a destination tiled resource.
+old-location: display\copytilemappings.htm
+old-project: display
+ms.assetid: CB2CE5E7-DDD4-4782-BB91-67A2C562A975
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.copytilemappings, CopyTileMappings callback function [Display Devices], CopyTileMappings, PFND3DWDDM1_3DDI_COPYTILEMAPPINGS, PFND3DWDDM1_3DDI_COPYTILEMAPPINGS, d3d10umddi/CopyTileMappings
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8.1,WDDM 1.3
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	D3d10umddi.h
+apiname:
+-	CopyTileMappings
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

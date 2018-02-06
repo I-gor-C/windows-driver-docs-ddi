@@ -1,41 +1,46 @@
 ---
-UID : NN:portcls.IServiceSink
-title : IServiceSink
-author : windows-driver-content
-description : The IServiceSink interface encapsulates handling of a service request.
-old-location : audio\iservicesink.htm
-old-project : audio
-ms.assetid : 329ae226-02fb-438b-b461-da51e3afd6eb
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : audio.iservicesink, IServiceSink interface [Audio Devices], IServiceSink interface [Audio Devices], described, IServiceSink, portcls/IServiceSink, audmp-routines_68a03e77-6246-44e7-acad-6de0fbe10c41.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : portcls.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Portcls.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NN:portcls.IServiceSink
+title: IServiceSink
+author: windows-driver-content
+description: The IServiceSink interface encapsulates handling of a service request.
+old-location: audio\iservicesink.htm
+old-project: audio
+ms.assetid: 329ae226-02fb-438b-b461-da51e3afd6eb
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: audio.iservicesink, IServiceSink interface [Audio Devices], IServiceSink interface [Audio Devices], described, IServiceSink, portcls/IServiceSink, audmp-routines_68a03e77-6246-44e7-acad-6de0fbe10c41.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: portcls.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Portcls.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	portcls.h
+apiname:
+-	IServiceSink
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 # IServiceSink interface

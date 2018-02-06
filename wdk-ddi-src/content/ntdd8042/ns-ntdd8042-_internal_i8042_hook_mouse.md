@@ -1,41 +1,46 @@
 ---
-UID : NS:ntdd8042._INTERNAL_I8042_HOOK_MOUSE
-title : "_INTERNAL_I8042_HOOK_MOUSE"
-author : windows-driver-content
-description : INTERNAL_I8042_HOOK_MOUSE is used by I8042prt to connect an optional callback routine that supplements the operation of the mouse ISR. The callback can be supplied by an optional, vendor-supplied, upper-level filter driver.
-old-location : hid\internal_i8042_hook_mouse.htm
-old-project : hid
-ms.assetid : 7ac9fc14-9e94-412b-811a-6013d46020a0
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : ntdd8042/INTERNAL_I8042_HOOK_MOUSE, PINTERNAL_I8042_HOOK_MOUSE, *PINTERNAL_I8042_HOOK_MOUSE, hid.internal_i8042_hook_mouse, INTERNAL_I8042_HOOK_MOUSE, INTERNAL_I8042_HOOK_MOUSE structure [Human Input Devices], ntdd8042/PINTERNAL_I8042_HOOK_MOUSE, i8042ref_23133caf-3bd0-4160-8213-899e37b7703e.xml, PINTERNAL_I8042_HOOK_MOUSE structure pointer [Human Input Devices], _INTERNAL_I8042_HOOK_MOUSE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntdd8042.h
-req.include-header : Ntdd8042.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : INTERNAL_I8042_HOOK_MOUSE, *PINTERNAL_I8042_HOOK_MOUSE
+UID: NS:ntdd8042._INTERNAL_I8042_HOOK_MOUSE
+title: "_INTERNAL_I8042_HOOK_MOUSE"
+author: windows-driver-content
+description: INTERNAL_I8042_HOOK_MOUSE is used by I8042prt to connect an optional callback routine that supplements the operation of the mouse ISR. The callback can be supplied by an optional, vendor-supplied, upper-level filter driver.
+old-location: hid\internal_i8042_hook_mouse.htm
+old-project: hid
+ms.assetid: 7ac9fc14-9e94-412b-811a-6013d46020a0
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: ntdd8042/INTERNAL_I8042_HOOK_MOUSE, PINTERNAL_I8042_HOOK_MOUSE, *PINTERNAL_I8042_HOOK_MOUSE, hid.internal_i8042_hook_mouse, INTERNAL_I8042_HOOK_MOUSE, INTERNAL_I8042_HOOK_MOUSE structure [Human Input Devices], ntdd8042/PINTERNAL_I8042_HOOK_MOUSE, i8042ref_23133caf-3bd0-4160-8213-899e37b7703e.xml, PINTERNAL_I8042_HOOK_MOUSE structure pointer [Human Input Devices], _INTERNAL_I8042_HOOK_MOUSE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntdd8042.h
+req.include-header: Ntdd8042.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntdd8042.h
+apiname:
+-	INTERNAL_I8042_HOOK_MOUSE
+product: Windows
+targetos: Windows
+req.typenames: INTERNAL_I8042_HOOK_MOUSE, *PINTERNAL_I8042_HOOK_MOUSE
 ---
 
 # _INTERNAL_I8042_HOOK_MOUSE structure

@@ -1,41 +1,46 @@
 ---
-UID : NI:mountdev.IOCTL_MOUNTDEV_QUERY_SUGGESTED_LINK_NAME
-title : IOCTL_MOUNTDEV_QUERY_SUGGESTED_LINK_NAME
-author : windows-driver-content
-description : Support for this IOCTL by the mount manager clients is optional.
-old-location : storage\ioctl_mountdev_query_suggested_link_name.htm
-old-project : storage
-ms.assetid : 4afd8c7a-b7b4-4a02-a270-d4e29f5329f9
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_mountdev_query_suggested_link_name, IOCTL_MOUNTDEV_QUERY_SUGGESTED_LINK_NAME control code [Storage Devices], IOCTL_MOUNTDEV_QUERY_SUGGESTED_LINK_NAME, mountdev/IOCTL_MOUNTDEV_QUERY_SUGGESTED_LINK_NAME, k307_90b74e7c-57f6-4738-8a5e-d947c29c5aab.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : mountdev.h
-req.include-header : Mountdev.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PZONE_DESCRIPTIOR, ZONE_DESCRIPTIOR"
+UID: NI:mountdev.IOCTL_MOUNTDEV_QUERY_SUGGESTED_LINK_NAME
+title: IOCTL_MOUNTDEV_QUERY_SUGGESTED_LINK_NAME
+author: windows-driver-content
+description: Support for this IOCTL by the mount manager clients is optional.
+old-location: storage\ioctl_mountdev_query_suggested_link_name.htm
+old-project: storage
+ms.assetid: 4afd8c7a-b7b4-4a02-a270-d4e29f5329f9
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_mountdev_query_suggested_link_name, IOCTL_MOUNTDEV_QUERY_SUGGESTED_LINK_NAME control code [Storage Devices], IOCTL_MOUNTDEV_QUERY_SUGGESTED_LINK_NAME, mountdev/IOCTL_MOUNTDEV_QUERY_SUGGESTED_LINK_NAME, k307_90b74e7c-57f6-4738-8a5e-d947c29c5aab.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: mountdev.h
+req.include-header: Mountdev.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Mountdev.h
+apiname:
+-	IOCTL_MOUNTDEV_QUERY_SUGGESTED_LINK_NAME
+product: Windows
+targetos: Windows
+req.typenames: "*PZONE_DESCRIPTIOR, ZONE_DESCRIPTIOR"
 ---
 
 # IOCTL_MOUNTDEV_QUERY_SUGGESTED_LINK_NAME IOCTL

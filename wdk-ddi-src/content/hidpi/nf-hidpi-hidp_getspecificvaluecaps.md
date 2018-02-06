@@ -1,41 +1,47 @@
 ---
-UID : NF:hidpi.HidP_GetSpecificValueCaps
-title : HidP_GetSpecificValueCaps function
-author : windows-driver-content
-description : The HidP_GetSpecificValueCaps routine returns a value capability array that describes all HID control values that meet a specified selection criteria.
-old-location : hid\hidp_getspecificvaluecaps.htm
-old-project : hid
-ms.assetid : 0860733c-d28c-4916-a743-d5f6256cfca0
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : HidP_GetSpecificValueCaps routine [Human Input Devices], hidpi/HidP_GetSpecificValueCaps, hid.hidp_getspecificvaluecaps, HidP_GetSpecificValueCaps, hidfunc_627cf175-fa12-4082-9d13-8ec454be4a74.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : hidpi.h
-req.include-header : Hidpi.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 2000 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Hidparse.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HIDP_REPORT_TYPE
+UID: NF:hidpi.HidP_GetSpecificValueCaps
+title: HidP_GetSpecificValueCaps function
+author: windows-driver-content
+description: The HidP_GetSpecificValueCaps routine returns a value capability array that describes all HID control values that meet a specified selection criteria.
+old-location: hid\hidp_getspecificvaluecaps.htm
+old-project: hid
+ms.assetid: 0860733c-d28c-4916-a743-d5f6256cfca0
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: HidP_GetSpecificValueCaps routine [Human Input Devices], hidpi/HidP_GetSpecificValueCaps, hid.hidp_getspecificvaluecaps, HidP_GetSpecificValueCaps, hidfunc_627cf175-fa12-4082-9d13-8ec454be4a74.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: hidpi.h
+req.include-header: Hidpi.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 2000 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Hidparse.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Hidparse.lib
+-	Hidparse.dll
+apiname:
+-	HidP_GetSpecificValueCaps
+product: Windows
+targetos: Windows
+req.typenames: HIDP_REPORT_TYPE
 ---
 
 

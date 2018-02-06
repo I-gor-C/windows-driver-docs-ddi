@@ -1,42 +1,47 @@
 ---
-UID : NS:wdm._IO_ERROR_LOG_PACKET
-title : "_IO_ERROR_LOG_PACKET"
-author : windows-driver-content
-description : The IO_ERROR_LOG_PACKET structure serves as the header for an error log entry.
-old-location : kernel\io_error_log_packet.htm
-old-project : kernel
-ms.assetid : 4bf54017-d142-4534-8a5a-c7f267a1554b
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : IO_ERROR_LOG_PACKET, wdm/IO_ERROR_LOG_PACKET, *PIO_ERROR_LOG_PACKET, kernel.io_error_log_packet, PIO_ERROR_LOG_PACKET, kstruct_b_04c24dbc-a479-437c-adc2-b29294596564.xml, IO_ERROR_LOG_PACKET structure [Kernel-Mode Driver Architecture], _IO_ERROR_LOG_PACKET, PIO_ERROR_LOG_PACKET structure pointer [Kernel-Mode Driver Architecture], wdm/PIO_ERROR_LOG_PACKET
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PIO_ERROR_LOG_PACKET, IO_ERROR_LOG_PACKET"
-req.product : Windows 10 or later.
+UID: NS:wdm._IO_ERROR_LOG_PACKET
+title: "_IO_ERROR_LOG_PACKET"
+author: windows-driver-content
+description: The IO_ERROR_LOG_PACKET structure serves as the header for an error log entry.
+old-location: kernel\io_error_log_packet.htm
+old-project: kernel
+ms.assetid: 4bf54017-d142-4534-8a5a-c7f267a1554b
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: IO_ERROR_LOG_PACKET, wdm/IO_ERROR_LOG_PACKET, *PIO_ERROR_LOG_PACKET, kernel.io_error_log_packet, PIO_ERROR_LOG_PACKET, kstruct_b_04c24dbc-a479-437c-adc2-b29294596564.xml, IO_ERROR_LOG_PACKET structure [Kernel-Mode Driver Architecture], _IO_ERROR_LOG_PACKET, PIO_ERROR_LOG_PACKET structure pointer [Kernel-Mode Driver Architecture], wdm/PIO_ERROR_LOG_PACKET
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	IO_ERROR_LOG_PACKET
+product: Windows
+targetos: Windows
+req.typenames: "*PIO_ERROR_LOG_PACKET, IO_ERROR_LOG_PACKET"
+req.product: Windows 10 or later.
 ---
 
 # _IO_ERROR_LOG_PACKET structure

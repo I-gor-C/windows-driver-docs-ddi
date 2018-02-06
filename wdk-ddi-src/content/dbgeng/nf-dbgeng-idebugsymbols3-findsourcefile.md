@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugSymbols3.FindSourceFile
-title : IDebugSymbols3::FindSourceFile method
-author : windows-driver-content
-description : The FindSourceFile method searches the source path for a specified source file.
-old-location : debugger\findsourcefile.htm
-old-project : debugger
-ms.assetid : 960d02a8-0929-4ac5-acf8-8386cae543f8
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugSymbols2 interface [Windows Debugging], FindSourceFile method, debugger.findsourcefile, dbgeng/IDebugSymbols3::FindSourceFile, IDebugSymbols3 interface [Windows Debugging], FindSourceFile method, FindSourceFile, FindSourceFile method [Windows Debugging], IDebugSymbols2 interface, FindSourceFile method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols::FindSourceFile, dbgeng/IDebugSymbols2::FindSourceFile, IDebugSymbols interface [Windows Debugging], FindSourceFile method, dbgeng/IDebugSymbols::FindSourceFile, IDebugSymbols3::FindSourceFile, IDebugSymbols2::FindSourceFile, IDebugSymbols3, FindSourceFile method [Windows Debugging], IDebugSymbols interface, IDebugSymbols_4b585dd9-8278-457d-901a-89350f6643e4.xml, FindSourceFile method [Windows Debugging]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSymbols3.FindSourceFile
+title: IDebugSymbols3::FindSourceFile method
+author: windows-driver-content
+description: The FindSourceFile method searches the source path for a specified source file.
+old-location: debugger\findsourcefile.htm
+old-project: debugger
+ms.assetid: 960d02a8-0929-4ac5-acf8-8386cae543f8
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugSymbols2 interface [Windows Debugging], FindSourceFile method, debugger.findsourcefile, dbgeng/IDebugSymbols3::FindSourceFile, IDebugSymbols3 interface [Windows Debugging], FindSourceFile method, FindSourceFile, FindSourceFile method [Windows Debugging], IDebugSymbols2 interface, FindSourceFile method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols::FindSourceFile, dbgeng/IDebugSymbols2::FindSourceFile, IDebugSymbols interface [Windows Debugging], FindSourceFile method, dbgeng/IDebugSymbols::FindSourceFile, IDebugSymbols3::FindSourceFile, IDebugSymbols2::FindSourceFile, IDebugSymbols3, FindSourceFile method [Windows Debugging], IDebugSymbols interface, IDebugSymbols_4b585dd9-8278-457d-901a-89350f6643e4.xml, FindSourceFile method [Windows Debugging]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugSymbols.FindSourceFile
+-	IDebugSymbols2.FindSourceFile
+-	IDebugSymbols3.FindSourceFile
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

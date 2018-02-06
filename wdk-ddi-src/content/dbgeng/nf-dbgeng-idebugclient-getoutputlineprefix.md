@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugClient.GetOutputLinePrefix
-title : IDebugClient::GetOutputLinePrefix method
-author : windows-driver-content
-description : Gets the prefix used for multiple lines of output.
-old-location : debugger\idebugclient_getoutputlineprefix.htm
-old-project : debugger
-ms.assetid : FE836B10-1782-4B0E-9D4B-2740FE94B6E1
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : debugger.idebugclient_getoutputlineprefix, GetOutputLinePrefix, IDebugClient interface [Windows Debugging], GetOutputLinePrefix method, IDebugClient, GetOutputLinePrefix method [Windows Debugging], IDebugClient interface, dbgeng/IDebugClient::GetOutputLinePrefix, GetOutputLinePrefix method [Windows Debugging], IDebugClient::GetOutputLinePrefix
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugClient.GetOutputLinePrefix
+title: IDebugClient::GetOutputLinePrefix method
+author: windows-driver-content
+description: Gets the prefix used for multiple lines of output.
+old-location: debugger\idebugclient_getoutputlineprefix.htm
+old-project: debugger
+ms.assetid: FE836B10-1782-4B0E-9D4B-2740FE94B6E1
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: debugger.idebugclient_getoutputlineprefix, GetOutputLinePrefix, IDebugClient interface [Windows Debugging], GetOutputLinePrefix method, IDebugClient, GetOutputLinePrefix method [Windows Debugging], IDebugClient interface, dbgeng/IDebugClient::GetOutputLinePrefix, GetOutputLinePrefix method [Windows Debugging], IDebugClient::GetOutputLinePrefix
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugClient.GetOutputLinePrefix
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

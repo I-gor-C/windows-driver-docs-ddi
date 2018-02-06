@@ -1,42 +1,48 @@
 ---
-UID : NF:ursdevice.UrsDeviceInitInitialize
-title : UrsDeviceInitInitialize function
-author : windows-driver-content
-description : Initializes device initialization operations when the Plug and Play (PnP) manager reports the existence of a device.
-old-location : buses\ursdeviceinitinitialize.htm
-old-project : usbref
-ms.assetid : EFA83238-77DF-474D-8F8F-2400C9B23A00
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : UrsDeviceInitInitialize method [Buses], buses.ursdeviceinitinitialize, ursdevice/UrsDeviceInitInitialize, UrsDeviceInitInitialize
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ursdevice.h
-req.include-header : Urscx.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 1.15
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Urscxstub.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : UMDETW_ALLOCATION_USAGE
-req.product : Windows 10 or later.
+UID: NF:ursdevice.UrsDeviceInitInitialize
+title: UrsDeviceInitInitialize function
+author: windows-driver-content
+description: Initializes device initialization operations when the Plug and Play (PnP) manager reports the existence of a device.
+old-location: buses\ursdeviceinitinitialize.htm
+old-project: usbref
+ms.assetid: EFA83238-77DF-474D-8F8F-2400C9B23A00
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: UrsDeviceInitInitialize method [Buses], buses.ursdeviceinitinitialize, ursdevice/UrsDeviceInitInitialize, UrsDeviceInitInitialize
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ursdevice.h
+req.include-header: Urscx.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 1.15
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Urscxstub.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Urscxstub.lib
+-	Urscxstub.dll
+apiname:
+-	UrsDeviceInitInitialize
+product: Windows
+targetos: Windows
+req.typenames: UMDETW_ALLOCATION_USAGE
+req.product: Windows 10 or later.
 ---
 
 

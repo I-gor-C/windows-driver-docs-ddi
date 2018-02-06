@@ -1,42 +1,48 @@
 ---
-UID : NF:usbdlib.USBD_IsInterfaceVersionSupported
-title : USBD_IsInterfaceVersionSupported function
-author : windows-driver-content
-description : The USBD_IsInterfaceVersionSupported routine is called by a USB client driver to check whether the underlying USB driver stack supports a particular USBD interface version.
-old-location : buses\usbd_isusbdinterfaceversionsupported.htm
-old-project : usbref
-ms.assetid : AEA5B6AA-8EEA-4D82-9991-1DE32BAE7DCE
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : buses.usbd_isusbdinterfaceversionsupported, usbdlib/USBD_IsInterfaceVersionSupported, USBD_IsInterfaceVersionSupported routine [Buses], USBD_IsInterfaceVersionSupported
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : usbdlib.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Requires WDK for Windows 8. Targets Windows Vista and later versions of the Windows operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Usbdex.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : USBCAMD_DEVICE_DATA2, *PUSBCAMD_DEVICE_DATA2
-req.product : Windows 10 or later.
+UID: NF:usbdlib.USBD_IsInterfaceVersionSupported
+title: USBD_IsInterfaceVersionSupported function
+author: windows-driver-content
+description: The USBD_IsInterfaceVersionSupported routine is called by a USB client driver to check whether the underlying USB driver stack supports a particular USBD interface version.
+old-location: buses\usbd_isusbdinterfaceversionsupported.htm
+old-project: usbref
+ms.assetid: AEA5B6AA-8EEA-4D82-9991-1DE32BAE7DCE
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: buses.usbd_isusbdinterfaceversionsupported, usbdlib/USBD_IsInterfaceVersionSupported, USBD_IsInterfaceVersionSupported routine [Buses], USBD_IsInterfaceVersionSupported
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: usbdlib.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Requires WDK for Windows 8. Targets Windows Vista and later versions of the Windows operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Usbdex.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Usbdex.lib
+-	Usbdex.dll
+apiname:
+-	USBD_IsInterfaceVersionSupported
+product: Windows
+targetos: Windows
+req.typenames: USBCAMD_DEVICE_DATA2, *PUSBCAMD_DEVICE_DATA2
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NF:wdfusb.WDF_USB_CONTROL_SETUP_PACKET_INIT
-title : WDF_USB_CONTROL_SETUP_PACKET_INIT function
-author : windows-driver-content
-description : The WDF_USB_CONTROL_SETUP_PACKET_INIT function initializes a WDF_USB_CONTROL_SETUP_PACKET structure for a standard USB control transfer.
-old-location : wdf\wdf_usb_control_setup_packet_init.htm
-old-project : wdf
-ms.assetid : 4c17f679-6b01-4c6e-8dda-9aa43dc43dc6
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : kmdf.wdf_usb_control_setup_packet_init, WDF_USB_CONTROL_SETUP_PACKET_INIT, DFUsbRef_1789fa32-1646-43f8-9673-c0d935b92a4f.xml, wdfusb/WDF_USB_CONTROL_SETUP_PACKET_INIT, WDF_USB_CONTROL_SETUP_PACKET_INIT function, wdf.wdf_usb_control_setup_packet_init
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfusb.h
-req.include-header : Wdfusb.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfusb.WDF_USB_CONTROL_SETUP_PACKET_INIT
+title: WDF_USB_CONTROL_SETUP_PACKET_INIT function
+author: windows-driver-content
+description: The WDF_USB_CONTROL_SETUP_PACKET_INIT function initializes a WDF_USB_CONTROL_SETUP_PACKET structure for a standard USB control transfer.
+old-location: wdf\wdf_usb_control_setup_packet_init.htm
+old-project: wdf
+ms.assetid: 4c17f679-6b01-4c6e-8dda-9aa43dc43dc6
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: kmdf.wdf_usb_control_setup_packet_init, WDF_USB_CONTROL_SETUP_PACKET_INIT, DFUsbRef_1789fa32-1646-43f8-9673-c0d935b92a4f.xml, wdfusb/WDF_USB_CONTROL_SETUP_PACKET_INIT, WDF_USB_CONTROL_SETUP_PACKET_INIT function, wdf.wdf_usb_control_setup_packet_init
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfusb.h
+req.include-header: Wdfusb.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfusb.h
+apiname:
+-	WDF_USB_CONTROL_SETUP_PACKET_INIT
+product: Windows
+targetos: Windows
+req.typenames: WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
+req.product: Windows 10 or later.
 ---
 
 

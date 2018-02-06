@@ -1,41 +1,46 @@
 ---
-UID : NS:pepfx._PEP_PPM_IDLE_EXECUTE
-title : "_PEP_PPM_IDLE_EXECUTE"
-author : windows-driver-content
-description : The PEP_PPM_IDLE_EXECUTE structure specifies the idle state that the processor is to enter.
-old-location : kernel\pep_ppm_idle_execute.htm
-old-project : kernel
-ms.assetid : 88BE0C4E-0607-48D6-B0E1-7B35BFD70AD4
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : "*PPEP_PPM_IDLE_EXECUTE, PPEP_PPM_IDLE_EXECUTE, pepfx/PEP_PPM_IDLE_EXECUTE, pepfx/PPEP_PPM_IDLE_EXECUTE, _PEP_PPM_IDLE_EXECUTE, PPEP_PPM_IDLE_EXECUTE structure pointer [Kernel-Mode Driver Architecture], PEP_PPM_IDLE_EXECUTE structure [Kernel-Mode Driver Architecture], kernel.pep_ppm_idle_execute, PEP_PPM_IDLE_EXECUTE"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : pepfx.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with Windows 10.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PEP_PPM_IDLE_EXECUTE, *PPEP_PPM_IDLE_EXECUTE
+UID: NS:pepfx._PEP_PPM_IDLE_EXECUTE
+title: "_PEP_PPM_IDLE_EXECUTE"
+author: windows-driver-content
+description: The PEP_PPM_IDLE_EXECUTE structure specifies the idle state that the processor is to enter.
+old-location: kernel\pep_ppm_idle_execute.htm
+old-project: kernel
+ms.assetid: 88BE0C4E-0607-48D6-B0E1-7B35BFD70AD4
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: "*PPEP_PPM_IDLE_EXECUTE, PPEP_PPM_IDLE_EXECUTE, pepfx/PEP_PPM_IDLE_EXECUTE, pepfx/PPEP_PPM_IDLE_EXECUTE, _PEP_PPM_IDLE_EXECUTE, PPEP_PPM_IDLE_EXECUTE structure pointer [Kernel-Mode Driver Architecture], PEP_PPM_IDLE_EXECUTE structure [Kernel-Mode Driver Architecture], kernel.pep_ppm_idle_execute, PEP_PPM_IDLE_EXECUTE"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: pepfx.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows 10.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	pepfx.h
+apiname:
+-	PEP_PPM_IDLE_EXECUTE
+product: Windows
+targetos: Windows
+req.typenames: PEP_PPM_IDLE_EXECUTE, *PPEP_PPM_IDLE_EXECUTE
 ---
 
 # _PEP_PPM_IDLE_EXECUTE structure

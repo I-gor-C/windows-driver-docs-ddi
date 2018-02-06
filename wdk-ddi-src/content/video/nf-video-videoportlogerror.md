@@ -1,42 +1,47 @@
 ---
-UID : NF:video.VideoPortLogError
-title : VideoPortLogError function
-author : windows-driver-content
-description : The VideoPortLogError function logs errors to the system event log when a miniport driver detects a hardware error condition during I/O operations.
-old-location : display\videoportlogerror.htm
-old-project : display
-ms.assetid : d013aeb9-43a9-460f-a670-5b7bc9d3753d
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : VideoPort_Functions_18666bd9-b871-4e4c-9f31-bd5cbd505d52.xml, VideoPortLogError function [Display Devices], VideoPortLogError, video/VideoPortLogError, display.videoportlogerror
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows 2000 and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Videoprt.lib
-req.dll : Videoprt.sys
-req.irql : "<= DIRQL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_PORT_SERVICES
-req.product : Windows 10 or later.
+UID: NF:video.VideoPortLogError
+title: VideoPortLogError function
+author: windows-driver-content
+description: The VideoPortLogError function logs errors to the system event log when a miniport driver detects a hardware error condition during I/O operations.
+old-location: display\videoportlogerror.htm
+old-project: display
+ms.assetid: d013aeb9-43a9-460f-a670-5b7bc9d3753d
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: VideoPort_Functions_18666bd9-b871-4e4c-9f31-bd5cbd505d52.xml, VideoPortLogError function [Display Devices], VideoPortLogError, video/VideoPortLogError, display.videoportlogerror
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows 2000 and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Videoprt.lib
+req.dll: Videoprt.sys
+req.irql: "<= DIRQL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Videoprt.sys
+apiname:
+-	VideoPortLogError
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_PORT_SERVICES
+req.product: Windows 10 or later.
 ---
 
 

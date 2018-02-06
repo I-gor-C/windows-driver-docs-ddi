@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugControl3.Disassemble
-title : IDebugControl3::Disassemble method
-author : windows-driver-content
-description : The Disassemble method disassembles a processor instruction in the target's memory.
-old-location : debugger\disassemble.htm
-old-project : debugger
-ms.assetid : a512c846-6896-48ca-a234-b9a30a3bff06
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : debugger.disassemble, IDebugControl3::Disassemble, Disassemble method [Windows Debugging], IDebugControl3 interface, IDebugControl3 interface [Windows Debugging], Disassemble method, IDebugControl_7eb9fdc3-f2a0-4239-a035-9abb8e85cd28.xml, IDebugControl3, IDebugControl interface [Windows Debugging], Disassemble method, dbgeng/IDebugControl::Disassemble, IDebugControl2 interface [Windows Debugging], Disassemble method, Disassemble method [Windows Debugging], IDebugControl interface, dbgeng/IDebugControl3::Disassemble, Disassemble, Disassemble method [Windows Debugging], IDebugControl2::Disassemble, dbgeng/IDebugControl2::Disassemble, IDebugControl::Disassemble, Disassemble method [Windows Debugging], IDebugControl2 interface
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl3.Disassemble
+title: IDebugControl3::Disassemble method
+author: windows-driver-content
+description: The Disassemble method disassembles a processor instruction in the target's memory.
+old-location: debugger\disassemble.htm
+old-project: debugger
+ms.assetid: a512c846-6896-48ca-a234-b9a30a3bff06
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: debugger.disassemble, IDebugControl3::Disassemble, Disassemble method [Windows Debugging], IDebugControl3 interface, IDebugControl3 interface [Windows Debugging], Disassemble method, IDebugControl_7eb9fdc3-f2a0-4239-a035-9abb8e85cd28.xml, IDebugControl3, IDebugControl interface [Windows Debugging], Disassemble method, dbgeng/IDebugControl::Disassemble, IDebugControl2 interface [Windows Debugging], Disassemble method, Disassemble method [Windows Debugging], IDebugControl interface, dbgeng/IDebugControl3::Disassemble, Disassemble, Disassemble method [Windows Debugging], IDebugControl2::Disassemble, dbgeng/IDebugControl2::Disassemble, IDebugControl::Disassemble, Disassemble method [Windows Debugging], IDebugControl2 interface
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl.Disassemble
+-	IDebugControl2.Disassemble
+-	IDebugControl3.Disassemble
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

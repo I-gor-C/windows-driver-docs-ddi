@@ -1,42 +1,49 @@
 ---
-UID : NF:wdm.TmInitializeTransactionManager
-title : TmInitializeTransactionManager function
-author : windows-driver-content
-description : The TmInitializeTransactionManager routine initializes a transaction manager object.
-old-location : kernel\tminitializetransactionmanager_.htm
-old-project : kernel
-ms.assetid : A44B4B93-4EC7-4FC3-B64F-BF1FF19D067E
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : TmInitializeTransactionManager routine [Kernel-Mode Driver Architecture], wdm/TmInitializeTransactionManager, kernel.tminitializetransactionmanager_, TmInitializeTransactionManager
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : 
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.TmInitializeTransactionManager
+title: TmInitializeTransactionManager function
+author: windows-driver-content
+description: The TmInitializeTransactionManager routine initializes a transaction manager object.
+old-location: kernel\tminitializetransactionmanager_.htm
+old-project: kernel
+ms.assetid: A44B4B93-4EC7-4FC3-B64F-BF1FF19D067E
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: TmInitializeTransactionManager routine [Kernel-Mode Driver Architecture], wdm/TmInitializeTransactionManager, kernel.tminitializetransactionmanager_, TmInitializeTransactionManager
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: 
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Wdm.h
+-	Ext-MS-Win-ntos-tm-l1-1-0.dll
+-	tm.sys
+apiname:
+-	TmInitializeTransactionManager
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

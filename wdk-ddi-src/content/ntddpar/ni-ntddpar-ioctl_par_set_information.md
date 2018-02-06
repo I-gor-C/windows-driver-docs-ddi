@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddpar.IOCTL_PAR_SET_INFORMATION
-title : IOCTL_PAR_SET_INFORMATION
-author : windows-driver-content
-description : The IOCTL_PAR_SET_INFORMATION request resets and initializes a parallel device.
-old-location : parports\ioctl_par_set_information.htm
-old-project : parports
-ms.assetid : a54902d0-aa07-4cd0-8ef1-a3c17dff2ac9
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : parports.ioctl_par_set_information, IOCTL_PAR_SET_INFORMATION control code [Parallel Ports], IOCTL_PAR_SET_INFORMATION, ntddpar/IOCTL_PAR_SET_INFORMATION, cisspd_950d6397-7eff-4966-a734-0497f1a84257.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddpar.h
-req.include-header : Ntddpar.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*POFFLOAD_SECURITY_ASSOCIATION, OFFLOAD_SECURITY_ASSOCIATION"
+UID: NI:ntddpar.IOCTL_PAR_SET_INFORMATION
+title: IOCTL_PAR_SET_INFORMATION
+author: windows-driver-content
+description: The IOCTL_PAR_SET_INFORMATION request resets and initializes a parallel device.
+old-location: parports\ioctl_par_set_information.htm
+old-project: parports
+ms.assetid: a54902d0-aa07-4cd0-8ef1-a3c17dff2ac9
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: parports.ioctl_par_set_information, IOCTL_PAR_SET_INFORMATION control code [Parallel Ports], IOCTL_PAR_SET_INFORMATION, ntddpar/IOCTL_PAR_SET_INFORMATION, cisspd_950d6397-7eff-4966-a734-0497f1a84257.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddpar.h
+req.include-header: Ntddpar.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddpar.h
+apiname:
+-	IOCTL_PAR_SET_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: "*POFFLOAD_SECURITY_ASSOCIATION, OFFLOAD_SECURITY_ASSOCIATION"
 ---
 
 # IOCTL_PAR_SET_INFORMATION IOCTL

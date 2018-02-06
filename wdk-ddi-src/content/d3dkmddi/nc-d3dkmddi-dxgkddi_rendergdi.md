@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dkmddi.DXGKDDI_RENDERGDI
-title : DXGKDDI_RENDERGDI
-author : windows-driver-content
-description : DxgkDdiRenderGdi is used when submitting Windows Graphics Device Interface (GDI) commands for contexts that support virtual addressing.
-old-location : display\dxgkddirendergdi.htm
-old-project : display
-ms.assetid : 90C34125-FC32-46E3-81F7-6B2AACED9BAC
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkddirendergdi, DxgkDdiRenderGdi callback function [Display Devices], DxgkDdiRenderGdi, DXGKDDI_RENDERGDI, DXGKDDI_RENDERGDI, d3dkmddi/DxgkDdiRenderGdi
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dkmddi.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
+UID: NC:d3dkmddi.DXGKDDI_RENDERGDI
+title: DXGKDDI_RENDERGDI
+author: windows-driver-content
+description: DxgkDdiRenderGdi is used when submitting Windows Graphics Device Interface (GDI) commands for contexts that support virtual addressing.
+old-location: display\dxgkddirendergdi.htm
+old-project: display
+ms.assetid: 90C34125-FC32-46E3-81F7-6B2AACED9BAC
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkddirendergdi, DxgkDdiRenderGdi callback function [Display Devices], DxgkDdiRenderGdi, DXGKDDI_RENDERGDI, DXGKDDI_RENDERGDI, d3dkmddi/DxgkDdiRenderGdi
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dkmddi.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DxgkDdiRenderGdi
+product: Windows
+targetos: Windows
+req.typenames: DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
 

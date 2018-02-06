@@ -1,42 +1,47 @@
 ---
-UID : NF:sercx.SerCx2SaveReceiveFifoOnD0Exit
-title : SerCx2SaveReceiveFifoOnD0Exit function
-author : windows-driver-content
-description : The SerCx2SaveReceiveFifoOnD0Exit method informs version 2 of the serial framework extension (SerCx2) that the receive FIFO of the serial controller hardware contains data that should be saved before the serial controller enters a device low-power state.
-old-location : serports\sercx2savereceivefifoond0exit.htm
-old-project : serports
-ms.assetid : 689306DE-F83A-4C5D-B79A-DEBF2D5E79B3
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : SerCx2SaveReceiveFifoOnD0Exit method [Serial Ports], 2/SerCx2SaveReceiveFifoOnD0Exit, serports.sercx2savereceivefifoond0exit, SerCx2SaveReceiveFifoOnD0Exit
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : sercx.h
-req.include-header : 
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 8.1.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSERCX_STATUS, SERCX_STATUS"
-req.product : Windows 10 or later.
+UID: NF:sercx.SerCx2SaveReceiveFifoOnD0Exit
+title: SerCx2SaveReceiveFifoOnD0Exit function
+author: windows-driver-content
+description: The SerCx2SaveReceiveFifoOnD0Exit method informs version 2 of the serial framework extension (SerCx2) that the receive FIFO of the serial controller hardware contains data that should be saved before the serial controller enters a device low-power state.
+old-location: serports\sercx2savereceivefifoond0exit.htm
+old-project: serports
+ms.assetid: 689306DE-F83A-4C5D-B79A-DEBF2D5E79B3
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: SerCx2SaveReceiveFifoOnD0Exit method [Serial Ports], 2/SerCx2SaveReceiveFifoOnD0Exit, serports.sercx2savereceivefifoond0exit, SerCx2SaveReceiveFifoOnD0Exit
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: sercx.h
+req.include-header: 
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 8.1.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	2.0\Sercx.h
+apiname:
+-	SerCx2SaveReceiveFifoOnD0Exit
+product: Windows
+targetos: Windows
+req.typenames: "*PSERCX_STATUS, SERCX_STATUS"
+req.product: Windows 10 or later.
 ---
 
 

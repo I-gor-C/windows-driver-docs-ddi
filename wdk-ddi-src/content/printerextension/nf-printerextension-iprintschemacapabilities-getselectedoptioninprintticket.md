@@ -1,42 +1,47 @@
 ---
-UID : NF:printerextension.IPrintSchemaCapabilities.GetSelectedOptionInPrintTicket
-title : IPrintSchemaCapabilities::GetSelectedOptionInPrintTicket method
-author : windows-driver-content
-description : Gets the selected option for a feature in IPrintSchemaTicket.
-old-location : print\iprintschemacapabilities_getselectedoptioninprintticket.htm
-old-project : print
-ms.assetid : 6FAAEDFA-BABC-4406-8A8E-CACFCE3A38B5
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : IPrintSchemaCapabilities interface [Print Devices], GetSelectedOptionInPrintTicket method, GetSelectedOptionInPrintTicket, printerextension/IPrintSchemaCapabilities::GetSelectedOptionInPrintTicket, GetSelectedOptionInPrintTicket method [Print Devices], IPrintSchemaCapabilities, print.iprintschemacapabilities_getselectedoptioninprintticket, IPrintSchemaCapabilities::GetSelectedOptionInPrintTicket, GetSelectedOptionInPrintTicket method [Print Devices], IPrintSchemaCapabilities interface
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : printerextension.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : printerextension.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PrintSchemaSelectionType
-req.product : Windows 10 or later.
+UID: NF:printerextension.IPrintSchemaCapabilities.GetSelectedOptionInPrintTicket
+title: IPrintSchemaCapabilities::GetSelectedOptionInPrintTicket method
+author: windows-driver-content
+description: Gets the selected option for a feature in IPrintSchemaTicket.
+old-location: print\iprintschemacapabilities_getselectedoptioninprintticket.htm
+old-project: print
+ms.assetid: 6FAAEDFA-BABC-4406-8A8E-CACFCE3A38B5
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: IPrintSchemaCapabilities interface [Print Devices], GetSelectedOptionInPrintTicket method, GetSelectedOptionInPrintTicket, printerextension/IPrintSchemaCapabilities::GetSelectedOptionInPrintTicket, GetSelectedOptionInPrintTicket method [Print Devices], IPrintSchemaCapabilities, print.iprintschemacapabilities_getselectedoptioninprintticket, IPrintSchemaCapabilities::GetSelectedOptionInPrintTicket, GetSelectedOptionInPrintTicket method [Print Devices], IPrintSchemaCapabilities interface
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: printerextension.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: printerextension.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Printerextension.h
+apiname:
+-	IPrintSchemaCapabilities.GetSelectedOptionInPrintTicket
+product: Windows
+targetos: Windows
+req.typenames: PrintSchemaSelectionType
+req.product: Windows 10 or later.
 ---
 
 

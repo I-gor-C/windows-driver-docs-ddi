@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.MmIsDriverVerifyingByAddress
-title : MmIsDriverVerifyingByAddress function
-author : windows-driver-content
-description : The MmIsDriverVerifyingByAddress routine checks whether the kernel-mode driver that is identified by the specified image address is being verified or calls a driver that is being verified by Driver Verifier.
-old-location : kernel\mmisdriververifyingbyaddress.htm
-old-project : kernel
-ms.assetid : ccc20b5b-0f16-422d-8900-03b57f08b1bc
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.mmisdriververifyingbyaddress, MmIsDriverVerifyingByAddress, MmIsDriverVerifyingByAddress routine [Kernel-Mode Driver Architecture], wdm/MmIsDriverVerifyingByAddress, k106_37d22f13-de6a-4423-b148-9a7481570aaf.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<=APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.MmIsDriverVerifyingByAddress
+title: MmIsDriverVerifyingByAddress function
+author: windows-driver-content
+description: The MmIsDriverVerifyingByAddress routine checks whether the kernel-mode driver that is identified by the specified image address is being verified or calls a driver that is being verified by Driver Verifier.
+old-location: kernel\mmisdriververifyingbyaddress.htm
+old-project: kernel
+ms.assetid: ccc20b5b-0f16-422d-8900-03b57f08b1bc
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.mmisdriververifyingbyaddress, MmIsDriverVerifyingByAddress, MmIsDriverVerifyingByAddress routine [Kernel-Mode Driver Architecture], wdm/MmIsDriverVerifyingByAddress, k106_37d22f13-de6a-4423-b148-9a7481570aaf.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<=APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	MmIsDriverVerifyingByAddress
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

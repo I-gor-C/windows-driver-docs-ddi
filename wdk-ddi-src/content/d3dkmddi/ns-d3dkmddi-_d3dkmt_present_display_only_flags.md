@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._D3DKMT_PRESENT_DISPLAY_ONLY_FLAGS
-title : "_D3DKMT_PRESENT_DISPLAY_ONLY_FLAGS"
-author : windows-driver-content
-description : Indicates how a kernel mode display-only driver (KMDOD) is to perform a present operation.
-old-location : display\d3dkmt_present_display_only_flags.htm
-old-project : display
-ms.assetid : a45dfdeb-06d2-49c8-a6e1-f42a43857492
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DKMT_PRESENT_DISPLAY_ONLY_FLAGS, d3dkmddi/D3DKMT_PRESENT_DISPLAY_ONLY_FLAGS, _D3DKMT_PRESENT_DISPLAY_ONLY_FLAGS, D3DKMT_PRESENT_DISPLAY_ONLY_FLAGS structure [Display Devices], display.d3dkmt_present_display_only_flags
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_PRESENT_DISPLAY_ONLY_FLAGS
+UID: NS:d3dkmddi._D3DKMT_PRESENT_DISPLAY_ONLY_FLAGS
+title: "_D3DKMT_PRESENT_DISPLAY_ONLY_FLAGS"
+author: windows-driver-content
+description: Indicates how a kernel mode display-only driver (KMDOD) is to perform a present operation.
+old-location: display\d3dkmt_present_display_only_flags.htm
+old-project: display
+ms.assetid: a45dfdeb-06d2-49c8-a6e1-f42a43857492
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DKMT_PRESENT_DISPLAY_ONLY_FLAGS, d3dkmddi/D3DKMT_PRESENT_DISPLAY_ONLY_FLAGS, _D3DKMT_PRESENT_DISPLAY_ONLY_FLAGS, D3DKMT_PRESENT_DISPLAY_ONLY_FLAGS structure [Display Devices], display.d3dkmt_present_display_only_flags
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	D3dkmddi.h
+apiname:
+-	D3DKMT_PRESENT_DISPLAY_ONLY_FLAGS
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_PRESENT_DISPLAY_ONLY_FLAGS
 ---
 
 # _D3DKMT_PRESENT_DISPLAY_ONLY_FLAGS structure

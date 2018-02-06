@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisGroupActiveProcessorCount
-title : NdisGroupActiveProcessorCount function
-author : windows-driver-content
-description : The NdisGroupActiveProcessorCount function returns the number of processors that are currently active in a specified group.
-old-location : netvista\ndisgroupactiveprocessorcount.htm
-old-project : netvista
-ms.assetid : d6631aa7-e3ba-4768-a55a-6a66d1ee84c6
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NdisGroupActiveProcessorCount, ndis/NdisGroupActiveProcessorCount, ndis_processor_group_ref_43adb4cc-e1a6-4a67-ada7-47b38078e357.xml, netvista.ndisgroupactiveprocessorcount, NdisGroupActiveProcessorCount function [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported in NDIS 6.20 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisGroupActiveProcessorCount
+title: NdisGroupActiveProcessorCount function
+author: windows-driver-content
+description: The NdisGroupActiveProcessorCount function returns the number of processors that are currently active in a specified group.
+old-location: netvista\ndisgroupactiveprocessorcount.htm
+old-project: netvista
+ms.assetid: d6631aa7-e3ba-4768-a55a-6a66d1ee84c6
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NdisGroupActiveProcessorCount, ndis/NdisGroupActiveProcessorCount, ndis_processor_group_ref_43adb4cc-e1a6-4a67-ada7-47b38078e357.xml, netvista.ndisgroupactiveprocessorcount, NdisGroupActiveProcessorCount function [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported in NDIS 6.20 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisGroupActiveProcessorCount
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NS:rilapitypes.RILEUTRAMRL
-title : RILEUTRAMRL
-author : windows-driver-content
-description : This structure represents RILEUTRAMRL, which is a EUTRA (LTE) network measurement report.
-old-location : netvista\rileutramrl.htm
-old-project : netvista
-ms.assetid : 2dd695c4-ed3e-4278-b82e-6643aaded890
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : RILEUTRAMRL, netvista.rileutramrl, RILEUTRAMRL structure [Network Drivers Starting with Windows Vista], *LPRILEUTRAMRL, rilapitypes/RILEUTRAMRL
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : rilapitypes.h
-req.include-header : Rilapitypes.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*LPRILEUTRAMRL, RILEUTRAMRL"
-req.product : Windows 10 or later.
+UID: NS:rilapitypes.RILEUTRAMRL
+title: RILEUTRAMRL
+author: windows-driver-content
+description: This structure represents RILEUTRAMRL, which is a EUTRA (LTE) network measurement report.
+old-location: netvista\rileutramrl.htm
+old-project: netvista
+ms.assetid: 2dd695c4-ed3e-4278-b82e-6643aaded890
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: RILEUTRAMRL, netvista.rileutramrl, RILEUTRAMRL structure [Network Drivers Starting with Windows Vista], *LPRILEUTRAMRL, rilapitypes/RILEUTRAMRL
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: rilapitypes.h
+req.include-header: Rilapitypes.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	rilapitypes.h
+apiname:
+-	RILEUTRAMRL
+product: Windows
+targetos: Windows
+req.typenames: "*LPRILEUTRAMRL, RILEUTRAMRL"
+req.product: Windows 10 or later.
 ---
 
 # RILEUTRAMRL structure

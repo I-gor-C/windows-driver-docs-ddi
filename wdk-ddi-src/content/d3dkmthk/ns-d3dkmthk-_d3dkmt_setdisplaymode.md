@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmthk._D3DKMT_SETDISPLAYMODE
-title : "_D3DKMT_SETDISPLAYMODE"
-author : windows-driver-content
-description : The D3DKMT_SETDISPLAYMODE structure describes the primary allocation that is used for scanning out to the display.
-old-location : display\d3dkmt_setdisplaymode.htm
-old-project : display
-ms.assetid : cb590e18-59a4-4c4d-9d97-9f60c409c2e9
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DKMT_SETDISPLAYMODE structure [Display Devices], OpenGL_Structs_05a13119-df17-4380-8c9b-8af52c989c73.xml, d3dkmthk/D3DKMT_SETDISPLAYMODE, _D3DKMT_SETDISPLAYMODE, D3DKMT_SETDISPLAYMODE, display.d3dkmt_setdisplaymode
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_SETDISPLAYMODE
+UID: NS:d3dkmthk._D3DKMT_SETDISPLAYMODE
+title: "_D3DKMT_SETDISPLAYMODE"
+author: windows-driver-content
+description: The D3DKMT_SETDISPLAYMODE structure describes the primary allocation that is used for scanning out to the display.
+old-location: display\d3dkmt_setdisplaymode.htm
+old-project: display
+ms.assetid: cb590e18-59a4-4c4d-9d97-9f60c409c2e9
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DKMT_SETDISPLAYMODE structure [Display Devices], OpenGL_Structs_05a13119-df17-4380-8c9b-8af52c989c73.xml, d3dkmthk/D3DKMT_SETDISPLAYMODE, _D3DKMT_SETDISPLAYMODE, D3DKMT_SETDISPLAYMODE, display.d3dkmt_setdisplaymode
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmthk.h
+apiname:
+-	D3DKMT_SETDISPLAYMODE
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_SETDISPLAYMODE
 ---
 
 # _D3DKMT_SETDISPLAYMODE structure

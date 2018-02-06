@@ -1,41 +1,46 @@
 ---
-UID : NI:gpio.IOCTL_GPIO_CONTROLLER_SPECIFIC_FUNCTION
-title : IOCTL_GPIO_CONTROLLER_SPECIFIC_FUNCTION
-author : windows-driver-content
-description : The IOCTL_GPIO_CONTROLLER_SPECIFIC_FUNCTION I/O control code enables a client of the general-purpose I/O (GPIO) controller to request a controller-specific device-control operation.
-old-location : gpio\ioctl_gpio_controller_specific_function.htm
-old-project : GPIO
-ms.assetid : 9B62BF0B-A172-4131-9196-590188C747AD
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : GPIO.ioctl_gpio_controller_specific_function, IOCTL_GPIO_CONTROLLER_SPECIFIC_FUNCTION control code [Parallel Ports], IOCTL_GPIO_CONTROLLER_SPECIFIC_FUNCTION, gpio/IOCTL_GPIO_CONTROLLER_SPECIFIC_FUNCTION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : gpio.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PGNSS_V2UPL_NI_INFO, GNSS_V2UPL_NI_INFO"
+UID: NI:gpio.IOCTL_GPIO_CONTROLLER_SPECIFIC_FUNCTION
+title: IOCTL_GPIO_CONTROLLER_SPECIFIC_FUNCTION
+author: windows-driver-content
+description: The IOCTL_GPIO_CONTROLLER_SPECIFIC_FUNCTION I/O control code enables a client of the general-purpose I/O (GPIO) controller to request a controller-specific device-control operation.
+old-location: gpio\ioctl_gpio_controller_specific_function.htm
+old-project: GPIO
+ms.assetid: 9B62BF0B-A172-4131-9196-590188C747AD
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: GPIO.ioctl_gpio_controller_specific_function, IOCTL_GPIO_CONTROLLER_SPECIFIC_FUNCTION control code [Parallel Ports], IOCTL_GPIO_CONTROLLER_SPECIFIC_FUNCTION, gpio/IOCTL_GPIO_CONTROLLER_SPECIFIC_FUNCTION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: gpio.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Gpio.h
+apiname:
+-	IOCTL_GPIO_CONTROLLER_SPECIFIC_FUNCTION
+product: Windows
+targetos: Windows
+req.typenames: "*PGNSS_V2UPL_NI_INFO, GNSS_V2UPL_NI_INFO"
 ---
 
 # IOCTL_GPIO_CONTROLLER_SPECIFIC_FUNCTION IOCTL

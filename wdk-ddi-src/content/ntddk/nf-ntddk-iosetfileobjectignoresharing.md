@@ -1,41 +1,46 @@
 ---
-UID : NF:ntddk.IoSetFileObjectIgnoreSharing
-title : IoSetFileObjectIgnoreSharing function
-author : windows-driver-content
-description : The IoSetFileObjectIgnoreSharing routine sets a file object to ignore file sharing access checks.
-old-location : ifsk\iosetfileobjectignoresharing.htm
-old-project : ifsk
-ms.assetid : 14863379-0639-4D24-AFA4-AE2196328B87
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : IoSetFileObjectIgnoreSharing routine [Installable File System Drivers], ntddk/IoSetFileObjectIgnoreSharing, ifsk.iosetfileobjectignoresharing, IoSetFileObjectIgnoreSharing
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntddk.h
-req.include-header : Ntddk.h, Ntifs.h, Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : This routine is available starting with Windows 7.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : Any
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.IoSetFileObjectIgnoreSharing
+title: IoSetFileObjectIgnoreSharing function
+author: windows-driver-content
+description: The IoSetFileObjectIgnoreSharing routine sets a file object to ignore file sharing access checks.
+old-location: ifsk\iosetfileobjectignoresharing.htm
+old-project: ifsk
+ms.assetid: 14863379-0639-4D24-AFA4-AE2196328B87
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: IoSetFileObjectIgnoreSharing routine [Installable File System Drivers], ntddk/IoSetFileObjectIgnoreSharing, ifsk.iosetfileobjectignoresharing, IoSetFileObjectIgnoreSharing
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntddk.h
+req.include-header: Ntddk.h, Ntifs.h, Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: This routine is available starting with Windows 7.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: Any
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoSetFileObjectIgnoreSharing
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

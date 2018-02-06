@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddmmc._FEATURE_DATA_SECTOR_ERASABLE
-title : "_FEATURE_DATA_SECTOR_ERASABLE"
-author : windows-driver-content
-description : The FEATURE_DATA_SECTOR_ERASABLE structure contains information for the Sector Erasable feature.
-old-location : storage\feature_data_sector_erasable.htm
-old-project : storage
-ms.assetid : 6f714e13-a844-4afa-9002-52a5318a7659
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : PFEATURE_DATA_SECTOR_ERASABLE structure pointer [Storage Devices], FEATURE_DATA_SECTOR_ERASABLE structure [Storage Devices], PFEATURE_DATA_SECTOR_ERASABLE, structs-CD-ROM_e48f2e10-1b6d-4d5a-9e8d-b1fc45fd8509.xml, ntddmmc/PFEATURE_DATA_SECTOR_ERASABLE, ntddmmc/FEATURE_DATA_SECTOR_ERASABLE, *PFEATURE_DATA_SECTOR_ERASABLE, FEATURE_DATA_SECTOR_ERASABLE, storage.feature_data_sector_erasable, _FEATURE_DATA_SECTOR_ERASABLE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddmmc.h
-req.include-header : Ntddcdrm.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FEATURE_DATA_SECTOR_ERASABLE, *PFEATURE_DATA_SECTOR_ERASABLE
+UID: NS:ntddmmc._FEATURE_DATA_SECTOR_ERASABLE
+title: "_FEATURE_DATA_SECTOR_ERASABLE"
+author: windows-driver-content
+description: The FEATURE_DATA_SECTOR_ERASABLE structure contains information for the Sector Erasable feature.
+old-location: storage\feature_data_sector_erasable.htm
+old-project: storage
+ms.assetid: 6f714e13-a844-4afa-9002-52a5318a7659
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: PFEATURE_DATA_SECTOR_ERASABLE structure pointer [Storage Devices], FEATURE_DATA_SECTOR_ERASABLE structure [Storage Devices], PFEATURE_DATA_SECTOR_ERASABLE, structs-CD-ROM_e48f2e10-1b6d-4d5a-9e8d-b1fc45fd8509.xml, ntddmmc/PFEATURE_DATA_SECTOR_ERASABLE, ntddmmc/FEATURE_DATA_SECTOR_ERASABLE, *PFEATURE_DATA_SECTOR_ERASABLE, FEATURE_DATA_SECTOR_ERASABLE, storage.feature_data_sector_erasable, _FEATURE_DATA_SECTOR_ERASABLE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddmmc.h
+req.include-header: Ntddcdrm.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddmmc.h
+apiname:
+-	FEATURE_DATA_SECTOR_ERASABLE
+product: Windows
+targetos: Windows
+req.typenames: FEATURE_DATA_SECTOR_ERASABLE, *PFEATURE_DATA_SECTOR_ERASABLE
 ---
 
 # _FEATURE_DATA_SECTOR_ERASABLE structure

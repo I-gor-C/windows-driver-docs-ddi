@@ -1,42 +1,48 @@
 ---
-UID : NF:wdm.ZwOpenTransactionManager
-title : ZwOpenTransactionManager function
-author : windows-driver-content
-description : The ZwOpenTransactionManager routine obtains a handle to an existing transaction manager object.
-old-location : kernel\zwopentransactionmanager.htm
-old-project : kernel
-ms.assetid : b3eb40ad-cda9-4a2f-a794-670bd2ee9102
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : NtOpenTransactionManager, wdm/ZwOpenTransactionManager, wdm/NtOpenTransactionManager, ZwOpenTransactionManager, kernel.zwopentransactionmanager, ZwOpenTransactionManager routine [Kernel-Mode Driver Architecture], ktm_ref_26c2e5a4-0a1b-4d75-994a-88f45e213fe3.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later operating system versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ZwOpenTransactionManager
+title: ZwOpenTransactionManager function
+author: windows-driver-content
+description: The ZwOpenTransactionManager routine obtains a handle to an existing transaction manager object.
+old-location: kernel\zwopentransactionmanager.htm
+old-project: kernel
+ms.assetid: b3eb40ad-cda9-4a2f-a794-670bd2ee9102
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: NtOpenTransactionManager, wdm/ZwOpenTransactionManager, wdm/NtOpenTransactionManager, ZwOpenTransactionManager, kernel.zwopentransactionmanager, ZwOpenTransactionManager routine [Kernel-Mode Driver Architecture], ktm_ref_26c2e5a4-0a1b-4d75-994a-88f45e213fe3.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later operating system versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ZwOpenTransactionManager
+-	NtOpenTransactionManager
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

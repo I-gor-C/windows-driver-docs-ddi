@@ -1,41 +1,46 @@
 ---
-UID : NS:ndiswwan._NDIS_WWAN_SUBSCRIBE_DEVICE_SERVICE_EVENTS
-title : "_NDIS_WWAN_SUBSCRIBE_DEVICE_SERVICE_EVENTS"
-author : windows-driver-content
-description : The NDIS_WWAN_SUBSCRIBE_DEVICE_SERVICE_EVENTS structure encapsulates data for OID_WWAN_SUBSCRIBE_DEVICE_SERVICES_EVENTS.
-old-location : netvista\ndis_wwan_subscribe_device_service_events.htm
-old-project : netvista
-ms.assetid : 99A772EF-C67C-48B0-A3F9-0B32A14247D6
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : "*PNDIS_WWAN_SUBSCRIBE_DEVICE_SERVICE_EVENTS, netvista.ndis_wwan_subscribe_device_service_events, PNDIS_WWAN_SUBSCRIBE_DEVICE_SERVICE_EVENTS, _NDIS_WWAN_SUBSCRIBE_DEVICE_SERVICE_EVENTS, NDIS_WWAN_SUBSCRIBE_DEVICE_SERVICE_EVENTS, NDIS_WWAN_SUBSCRIBE_DEVICE_SERVICE_EVENTS structure [Network Drivers Starting with Windows Vista], ndiswwan/PNDIS_WWAN_SUBSCRIBE_DEVICE_SERVICE_EVENTS, ndiswwan/NDIS_WWAN_SUBSCRIBE_DEVICE_SERVICE_EVENTS, PNDIS_WWAN_SUBSCRIBE_DEVICE_SERVICE_EVENTS structure pointer [Network Drivers Starting with Windows Vista]"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndiswwan.h
-req.include-header : Ndiswwan.h
-req.target-type : Windows
-req.target-min-winverclnt : Versions:\_Supported in Windows 8 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_WWAN_SUBSCRIBE_DEVICE_SERVICE_EVENTS, *PNDIS_WWAN_SUBSCRIBE_DEVICE_SERVICE_EVENTS
+UID: NS:ndiswwan._NDIS_WWAN_SUBSCRIBE_DEVICE_SERVICE_EVENTS
+title: "_NDIS_WWAN_SUBSCRIBE_DEVICE_SERVICE_EVENTS"
+author: windows-driver-content
+description: The NDIS_WWAN_SUBSCRIBE_DEVICE_SERVICE_EVENTS structure encapsulates data for OID_WWAN_SUBSCRIBE_DEVICE_SERVICES_EVENTS.
+old-location: netvista\ndis_wwan_subscribe_device_service_events.htm
+old-project: netvista
+ms.assetid: 99A772EF-C67C-48B0-A3F9-0B32A14247D6
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: "*PNDIS_WWAN_SUBSCRIBE_DEVICE_SERVICE_EVENTS, netvista.ndis_wwan_subscribe_device_service_events, PNDIS_WWAN_SUBSCRIBE_DEVICE_SERVICE_EVENTS, _NDIS_WWAN_SUBSCRIBE_DEVICE_SERVICE_EVENTS, NDIS_WWAN_SUBSCRIBE_DEVICE_SERVICE_EVENTS, NDIS_WWAN_SUBSCRIBE_DEVICE_SERVICE_EVENTS structure [Network Drivers Starting with Windows Vista], ndiswwan/PNDIS_WWAN_SUBSCRIBE_DEVICE_SERVICE_EVENTS, ndiswwan/NDIS_WWAN_SUBSCRIBE_DEVICE_SERVICE_EVENTS, PNDIS_WWAN_SUBSCRIBE_DEVICE_SERVICE_EVENTS structure pointer [Network Drivers Starting with Windows Vista]"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndiswwan.h
+req.include-header: Ndiswwan.h
+req.target-type: Windows
+req.target-min-winverclnt: Versions:\_Supported in Windows 8 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndiswwan.h
+apiname:
+-	NDIS_WWAN_SUBSCRIBE_DEVICE_SERVICE_EVENTS
+product: Windows
+targetos: Windows
+req.typenames: NDIS_WWAN_SUBSCRIBE_DEVICE_SERVICE_EVENTS, *PNDIS_WWAN_SUBSCRIBE_DEVICE_SERVICE_EVENTS
 ---
 
 # _NDIS_WWAN_SUBSCRIBE_DEVICE_SERVICE_EVENTS structure

@@ -1,42 +1,48 @@
 ---
-UID : NF:storport.StorPortGetVirtualAddress
-title : StorPortGetVirtualAddress function
-author : windows-driver-content
-description : The StorPortGetVirtualAddress routine obtains a virtual address that maps to the indicated physical address.
-old-location : storage\storportgetvirtualaddress.htm
-old-project : storage
-ms.assetid : b7091dea-8a29-4ad3-a478-29bc28fd57ef
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storport/StorPortGetVirtualAddress, storage.storportgetvirtualaddress, storprt_5245f704-dce0-4683-8510-064ccbb4158c.xml, StorPortGetVirtualAddress, StorPortGetVirtualAddress routine [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Storport.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STOR_SPINLOCK
-req.product : Windows 10 or later.
+UID: NF:storport.StorPortGetVirtualAddress
+title: StorPortGetVirtualAddress function
+author: windows-driver-content
+description: The StorPortGetVirtualAddress routine obtains a virtual address that maps to the indicated physical address.
+old-location: storage\storportgetvirtualaddress.htm
+old-project: storage
+ms.assetid: b7091dea-8a29-4ad3-a478-29bc28fd57ef
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storport/StorPortGetVirtualAddress, storage.storportgetvirtualaddress, storprt_5245f704-dce0-4683-8510-064ccbb4158c.xml, StorPortGetVirtualAddress, StorPortGetVirtualAddress routine [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Storport.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Storport.lib
+-	Storport.dll
+apiname:
+-	StorPortGetVirtualAddress
+product: Windows
+targetos: Windows
+req.typenames: STOR_SPINLOCK
+req.product: Windows 10 or later.
 ---
 
 

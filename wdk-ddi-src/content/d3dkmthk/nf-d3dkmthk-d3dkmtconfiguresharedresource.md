@@ -1,41 +1,49 @@
 ---
-UID : NF:d3dkmthk.D3DKMTConfigureSharedResource
-title : D3DKMTConfigureSharedResource function
-author : windows-driver-content
-description : The D3DKMTConfigureSharedResource function configures a shared resource.
-old-location : display\d3dkmtconfiguresharedresource.htm
-old-project : display
-ms.assetid : 3664ef23-f7bc-4a94-8085-aa5a3d0ba550
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : OpenGL_Functions_f95f6a64-49a7-4a93-a544-6d4315f12212.xml, display.d3dkmtconfiguresharedresource, PFND3DKMT_CONFIGURESHAREDRESOURCE, D3DKMTConfigureSharedResource, D3DKMTConfigureSharedResource function [Display Devices], d3dkmthk/D3DKMTConfigureSharedResource
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Universal
-req.target-min-winverclnt : D3DKMTConfigureSharedResource is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Gdi32.lib
-req.dll : Gdi32.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_DRIVERVERSION
+UID: NF:d3dkmthk.D3DKMTConfigureSharedResource
+title: D3DKMTConfigureSharedResource function
+author: windows-driver-content
+description: The D3DKMTConfigureSharedResource function configures a shared resource.
+old-location: display\d3dkmtconfiguresharedresource.htm
+old-project: display
+ms.assetid: 3664ef23-f7bc-4a94-8085-aa5a3d0ba550
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: OpenGL_Functions_f95f6a64-49a7-4a93-a544-6d4315f12212.xml, display.d3dkmtconfiguresharedresource, PFND3DKMT_CONFIGURESHAREDRESOURCE, D3DKMTConfigureSharedResource, D3DKMTConfigureSharedResource function [Display Devices], d3dkmthk/D3DKMTConfigureSharedResource
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Universal
+req.target-min-winverclnt: D3DKMTConfigureSharedResource is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Gdi32.lib
+req.dll: Gdi32.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Gdi32.dll
+-	API-MS-Win-dx-d3dkmt-l1-1-0.dll
+-	API-MS-Win-dx-d3dkmt-l1-1-1.dll
+-	API-MS-Win-DX-D3DKMT-L1-1-2.dll
+apiname:
+-	D3DKMTConfigureSharedResource
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_DRIVERVERSION
 ---
 
 

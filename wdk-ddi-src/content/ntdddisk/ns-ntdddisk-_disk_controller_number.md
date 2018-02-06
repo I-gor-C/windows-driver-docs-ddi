@@ -1,41 +1,46 @@
 ---
-UID : NS:ntdddisk._DISK_CONTROLLER_NUMBER
-title : "_DISK_CONTROLLER_NUMBER"
-author : windows-driver-content
-description : DISK_CONTROLLER_NUMBER is used with IOCTL_DISK_CONTROLLER_NUMBER to retrieve the controller number and disk number of an IDE disk.
-old-location : storage\disk_controller_number.htm
-old-project : storage
-ms.assetid : 5dc9f04b-8d7c-4ac7-9518-8836d56d5eed
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : PDISK_CONTROLLER_NUMBER structure pointer [Storage Devices], *PDISK_CONTROLLER_NUMBER, PDISK_CONTROLLER_NUMBER, structs-disk_5cf21b24-f10f-4484-bb76-22dff0b4e32c.xml, _DISK_CONTROLLER_NUMBER, DISK_CONTROLLER_NUMBER, storage.disk_controller_number, ntdddisk/PDISK_CONTROLLER_NUMBER, ntdddisk/DISK_CONTROLLER_NUMBER, DISK_CONTROLLER_NUMBER structure [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntdddisk.h
-req.include-header : Ntdddisk.h, Ntddk.h, Ntdddisk.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDISK_CONTROLLER_NUMBER, DISK_CONTROLLER_NUMBER"
+UID: NS:ntdddisk._DISK_CONTROLLER_NUMBER
+title: "_DISK_CONTROLLER_NUMBER"
+author: windows-driver-content
+description: DISK_CONTROLLER_NUMBER is used with IOCTL_DISK_CONTROLLER_NUMBER to retrieve the controller number and disk number of an IDE disk.
+old-location: storage\disk_controller_number.htm
+old-project: storage
+ms.assetid: 5dc9f04b-8d7c-4ac7-9518-8836d56d5eed
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: PDISK_CONTROLLER_NUMBER structure pointer [Storage Devices], *PDISK_CONTROLLER_NUMBER, PDISK_CONTROLLER_NUMBER, structs-disk_5cf21b24-f10f-4484-bb76-22dff0b4e32c.xml, _DISK_CONTROLLER_NUMBER, DISK_CONTROLLER_NUMBER, storage.disk_controller_number, ntdddisk/PDISK_CONTROLLER_NUMBER, ntdddisk/DISK_CONTROLLER_NUMBER, DISK_CONTROLLER_NUMBER structure [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntdddisk.h
+req.include-header: Ntdddisk.h, Ntddk.h, Ntdddisk.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntdddisk.h
+apiname:
+-	DISK_CONTROLLER_NUMBER
+product: Windows
+targetos: Windows
+req.typenames: "*PDISK_CONTROLLER_NUMBER, DISK_CONTROLLER_NUMBER"
 ---
 
 # _DISK_CONTROLLER_NUMBER structure

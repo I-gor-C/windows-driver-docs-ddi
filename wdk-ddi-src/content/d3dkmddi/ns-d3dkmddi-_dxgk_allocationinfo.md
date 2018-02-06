@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGK_ALLOCATIONINFO
-title : "_DXGK_ALLOCATIONINFO"
-author : windows-driver-content
-description : The DXGK_ALLOCATIONINFO structure describes parameters for creating an allocation.
-old-location : display\dxgk_allocationinfo.htm
-old-project : display
-ms.assetid : d5767bd3-11f8-45a7-b760-3ed51c54c044
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : "_DXGK_ALLOCATIONINFO, d3dkmddi/DXGK_ALLOCATIONINFO, DXGK_ALLOCATIONINFO structure [Display Devices], DXGK_ALLOCATIONINFO, display.dxgk_allocationinfo, DmStructs_f571b666-75fd-477a-a8a7-673033d9284e.xml"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_ALLOCATIONINFO
+UID: NS:d3dkmddi._DXGK_ALLOCATIONINFO
+title: "_DXGK_ALLOCATIONINFO"
+author: windows-driver-content
+description: The DXGK_ALLOCATIONINFO structure describes parameters for creating an allocation.
+old-location: display\dxgk_allocationinfo.htm
+old-project: display
+ms.assetid: d5767bd3-11f8-45a7-b760-3ed51c54c044
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: "_DXGK_ALLOCATIONINFO, d3dkmddi/DXGK_ALLOCATIONINFO, DXGK_ALLOCATIONINFO structure [Display Devices], DXGK_ALLOCATIONINFO, display.dxgk_allocationinfo, DmStructs_f571b666-75fd-477a-a8a7-673033d9284e.xml"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DXGK_ALLOCATIONINFO
+product: Windows
+targetos: Windows
+req.typenames: DXGK_ALLOCATIONINFO
 ---
 
 # _DXGK_ALLOCATIONINFO structure

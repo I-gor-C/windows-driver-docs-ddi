@@ -1,41 +1,46 @@
 ---
-UID : NF:ntddk.RtlIsRoot
-title : RtlIsRoot macro
-author : windows-driver-content
-description : The RtlIsRoot routine determines whether the specified node is the root node of a splay link tree.
-old-location : ifsk\rtlisroot.htm
-old-project : ifsk
-ms.assetid : 74b3894e-972f-430b-bb8f-20fa46bf8b7d
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : RtlIsRoot routine [Installable File System Drivers], ifsk.rtlisroot, RtlIsRoot, rtlref_d7c73e66-d8b8-4a18-a987-d61f13f48dc4.xml, ntddk/RtlIsRoot
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : macro
-req.header : ntddk.h
-req.include-header : Ntddk.h, Ntifs.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : ntddk.h
-req.dll : 
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.RtlIsRoot
+title: RtlIsRoot macro
+author: windows-driver-content
+description: The RtlIsRoot routine determines whether the specified node is the root node of a splay link tree.
+old-location: ifsk\rtlisroot.htm
+old-project: ifsk
+ms.assetid: 74b3894e-972f-430b-bb8f-20fa46bf8b7d
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: RtlIsRoot routine [Installable File System Drivers], ifsk.rtlisroot, RtlIsRoot, rtlref_d7c73e66-d8b8-4a18-a987-d61f13f48dc4.xml, ntddk/RtlIsRoot
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: macro
+req.header: ntddk.h
+req.include-header: Ntddk.h, Ntifs.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: ntddk.h
+req.dll: 
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddk.h
+apiname:
+-	RtlIsRoot
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

@@ -1,38 +1,38 @@
 ---
-UID : NF:wdm.EtwUnregister
-title : EtwUnregister function
-author : windows-driver-content
-description : The EtwUnregister function unregisters the event provider and must be called before the provider exits.
-old-location : devtest\etwunregister.htm
-old-project : devtest
-ms.assetid : 205d0f4e-0a10-4e0e-8fea-4f1e5ed8c701
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : EtwUnregister
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.alt-api : EtwUnregister
-req.alt-loc : NtosKrnl.exe
-req.ddi-compliance : PowerIrpDDis
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.EtwUnregister
+title: EtwUnregister function
+author: windows-driver-content
+description: The EtwUnregister function unregisters the event provider and must be called before the provider exits.
+old-location: devtest\etwunregister.htm
+old-project: devtest
+ms.assetid: 205d0f4e-0a10-4e0e-8fea-4f1e5ed8c701
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: EtwUnregister
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.alt-api: EtwUnregister
+req.alt-loc: NtosKrnl.exe
+req.ddi-compliance: PowerIrpDDis
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

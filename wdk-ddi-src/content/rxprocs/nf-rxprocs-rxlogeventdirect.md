@@ -1,42 +1,47 @@
 ---
-UID : NF:rxprocs.RxLogEventDirect
-title : RxLogEventDirect function
-author : windows-driver-content
-description : RxLogEventDirect is called to log an error to the I/O error log. It is recommended that the RXLogEvent macro or the RxLogFailure macro be used instead of calling this routine directly.
-old-location : ifsk\rxlogeventdirect.htm
-old-project : ifsk
-ms.assetid : fc0bf8c4-cc0b-4f1e-bd4e-facf8f0d2a96
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : RxLogEventDirect, RxLogEventDirect routine [Installable File System Drivers], rxprocs/RxLogEventDirect, ifsk.rxlogeventdirect, rxref_654ffecc-ea49-44b8-b454-9f66e9519ddd.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : rxprocs.h
-req.include-header : Rxprocs.h, Rxstruc.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RX_CONTEXT, *PRX_CONTEXT
-req.product : Windows 10 or later.
+UID: NF:rxprocs.RxLogEventDirect
+title: RxLogEventDirect function
+author: windows-driver-content
+description: RxLogEventDirect is called to log an error to the I/O error log. It is recommended that the RXLogEvent macro or the RxLogFailure macro be used instead of calling this routine directly.
+old-location: ifsk\rxlogeventdirect.htm
+old-project: ifsk
+ms.assetid: fc0bf8c4-cc0b-4f1e-bd4e-facf8f0d2a96
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: RxLogEventDirect, RxLogEventDirect routine [Installable File System Drivers], rxprocs/RxLogEventDirect, ifsk.rxlogeventdirect, rxref_654ffecc-ea49-44b8-b454-9f66e9519ddd.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: rxprocs.h
+req.include-header: Rxprocs.h, Rxstruc.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	rxprocs.h
+apiname:
+-	RxLogEventDirect
+product: Windows
+targetos: Windows
+req.typenames: RX_CONTEXT, *PRX_CONTEXT
+req.product: Windows 10 or later.
 ---
 
 

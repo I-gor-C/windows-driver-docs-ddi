@@ -1,41 +1,46 @@
 ---
-UID : NS:iscsimgt._ISCSI_PortalInfo
-title : "_ISCSI_PortalInfo"
-author : windows-driver-content
-description : The ISCSI_PortalInfo structure contains information about an iSCSI portal.
-old-location : storage\iscsi_portalinfo.htm
-old-project : storage
-ms.assetid : 0ecfed3e-477a-4014-8491-1a8997ac5b90
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : iscsimgt/ISCSI_PortalInfo, iscsimgt/PISCSI_PortalInfo, storage.iscsi_portalinfo, _ISCSI_PortalInfo, ISCSI_PortalInfo, PISCSI_PortalInfo structure pointer [Storage Devices], structs-iSCSI_40fc24e8-364d-4698-911c-4128f471cdcd.xml, *PISCSI_PortalInfo, PISCSI_PortalInfo, ISCSI_PortalInfo structure [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : iscsimgt.h
-req.include-header : Iscsimgt.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : ISCSI_PortalInfo, *PISCSI_PortalInfo
+UID: NS:iscsimgt._ISCSI_PortalInfo
+title: "_ISCSI_PortalInfo"
+author: windows-driver-content
+description: The ISCSI_PortalInfo structure contains information about an iSCSI portal.
+old-location: storage\iscsi_portalinfo.htm
+old-project: storage
+ms.assetid: 0ecfed3e-477a-4014-8491-1a8997ac5b90
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: iscsimgt/ISCSI_PortalInfo, iscsimgt/PISCSI_PortalInfo, storage.iscsi_portalinfo, _ISCSI_PortalInfo, ISCSI_PortalInfo, PISCSI_PortalInfo structure pointer [Storage Devices], structs-iSCSI_40fc24e8-364d-4698-911c-4128f471cdcd.xml, *PISCSI_PortalInfo, PISCSI_PortalInfo, ISCSI_PortalInfo structure [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: iscsimgt.h
+req.include-header: Iscsimgt.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	iscsimgt.h
+apiname:
+-	ISCSI_PortalInfo
+product: Windows
+targetos: Windows
+req.typenames: ISCSI_PortalInfo, *PISCSI_PortalInfo
 ---
 
 # _ISCSI_PortalInfo structure

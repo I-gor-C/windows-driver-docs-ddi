@@ -1,41 +1,46 @@
 ---
-UID : NF:ks.KsPinAddEvent
-title : KsPinAddEvent function
-author : windows-driver-content
-description : The KsPinAddEvent function adds a specified event to Pin's event list.
-old-location : stream\kspinaddevent.htm
-old-project : stream
-ms.assetid : 1bb34062-f092-41a4-8d59-6937be7b5639
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KsPinAddEvent function [Streaming Media Devices], stream.kspinaddevent, KsPinAddEvent, avfunc_2291126f-31dd-4e37-a082-97f24e8b5bd9.xml, ks/KsPinAddEvent
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsPinAddEvent
+title: KsPinAddEvent function
+author: windows-driver-content
+description: The KsPinAddEvent function adds a specified event to Pin's event list.
+old-location: stream\kspinaddevent.htm
+old-project: stream
+ms.assetid: 1bb34062-f092-41a4-8d59-6937be7b5639
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KsPinAddEvent function [Streaming Media Devices], stream.kspinaddevent, KsPinAddEvent, avfunc_2291126f-31dd-4e37-a082-97f24e8b5bd9.xml, ks/KsPinAddEvent
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	KsPinAddEvent
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

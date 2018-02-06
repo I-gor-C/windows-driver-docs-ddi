@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddk._WHEA_PCIEXPRESS_ERROR_SECTION
-title : "_WHEA_PCIEXPRESS_ERROR_SECTION"
-author : windows-driver-content
-description : The WHEA_PCIEXPRESS_ERROR_SECTION structure describes PCI Express (PCIe) error data.
-old-location : whea\whea_pciexpress_error_section.htm
-old-project : whea
-ms.assetid : 1d96a799-6e52-49e0-b440-a8643111176f
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : ntddk/WHEA_PCIEXPRESS_ERROR_SECTION, whea.whea_pciexpress_error_section, PWHEA_PCIEXPRESS_ERROR_SECTION, _WHEA_PCIEXPRESS_ERROR_SECTION, *PWHEA_PCIEXPRESS_ERROR, WHEA_PCIEXPRESS_ERROR, *PWHEA_PCIEXPRESS_ERROR_SECTION, WHEA_PCIEXPRESS_ERROR_SECTION, PWHEA_PCIEXPRESS_ERROR_SECTION structure pointer [WHEA Drivers and Applications], ntddk/PWHEA_PCIEXPRESS_ERROR_SECTION, whearef_77796d60-3376-4d78-9b24-9ddb1e3d6132.xml, WHEA_PCIEXPRESS_ERROR_SECTION structure [WHEA Drivers and Applications]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_PCIEXPRESS_ERROR_SECTION, *PWHEA_PCIEXPRESS_ERROR_SECTION
+UID: NS:ntddk._WHEA_PCIEXPRESS_ERROR_SECTION
+title: "_WHEA_PCIEXPRESS_ERROR_SECTION"
+author: windows-driver-content
+description: The WHEA_PCIEXPRESS_ERROR_SECTION structure describes PCI Express (PCIe) error data.
+old-location: whea\whea_pciexpress_error_section.htm
+old-project: whea
+ms.assetid: 1d96a799-6e52-49e0-b440-a8643111176f
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: ntddk/WHEA_PCIEXPRESS_ERROR_SECTION, whea.whea_pciexpress_error_section, PWHEA_PCIEXPRESS_ERROR_SECTION, _WHEA_PCIEXPRESS_ERROR_SECTION, *PWHEA_PCIEXPRESS_ERROR, WHEA_PCIEXPRESS_ERROR, *PWHEA_PCIEXPRESS_ERROR_SECTION, WHEA_PCIEXPRESS_ERROR_SECTION, PWHEA_PCIEXPRESS_ERROR_SECTION structure pointer [WHEA Drivers and Applications], ntddk/PWHEA_PCIEXPRESS_ERROR_SECTION, whearef_77796d60-3376-4d78-9b24-9ddb1e3d6132.xml, WHEA_PCIEXPRESS_ERROR_SECTION structure [WHEA Drivers and Applications]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddk.h
+apiname:
+-	WHEA_PCIEXPRESS_ERROR_SECTION
+product: Windows
+targetos: Windows
+req.typenames: WHEA_PCIEXPRESS_ERROR_SECTION, *PWHEA_PCIEXPRESS_ERROR_SECTION
 ---
 
 # _WHEA_PCIEXPRESS_ERROR_SECTION structure

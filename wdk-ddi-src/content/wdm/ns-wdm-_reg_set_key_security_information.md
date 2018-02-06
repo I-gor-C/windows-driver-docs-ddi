@@ -1,42 +1,47 @@
 ---
-UID : NS:wdm._REG_SET_KEY_SECURITY_INFORMATION
-title : "_REG_SET_KEY_SECURITY_INFORMATION"
-author : windows-driver-content
-description : The REG_SET_KEY_SECURITY_INFORMATION structure specifies security information for a registry key object.
-old-location : kernel\reg_set_key_security_information.htm
-old-project : kernel
-ms.assetid : 196bad19-85a6-41a0-ac61-b70594a19f0f
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : PREG_SET_KEY_SECURITY_INFORMATION, *PREG_SET_KEY_SECURITY_INFORMATION, wdm/REG_SET_KEY_SECURITY_INFORMATION, kernel.reg_set_key_security_information, PREG_SET_KEY_SECURITY_INFORMATION structure pointer [Kernel-Mode Driver Architecture], REG_SET_KEY_SECURITY_INFORMATION, _REG_SET_KEY_SECURITY_INFORMATION, REG_SET_KEY_SECURITY_INFORMATION structure [Kernel-Mode Driver Architecture], kstruct_d_2154cf21-9f72-488b-ad13-687ada458991.xml, wdm/PREG_SET_KEY_SECURITY_INFORMATION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : Available on Windows Vista and later versions of the Windows operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PREG_SET_KEY_SECURITY_INFORMATION, REG_SET_KEY_SECURITY_INFORMATION"
-req.product : Windows 10 or later.
+UID: NS:wdm._REG_SET_KEY_SECURITY_INFORMATION
+title: "_REG_SET_KEY_SECURITY_INFORMATION"
+author: windows-driver-content
+description: The REG_SET_KEY_SECURITY_INFORMATION structure specifies security information for a registry key object.
+old-location: kernel\reg_set_key_security_information.htm
+old-project: kernel
+ms.assetid: 196bad19-85a6-41a0-ac61-b70594a19f0f
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: PREG_SET_KEY_SECURITY_INFORMATION, *PREG_SET_KEY_SECURITY_INFORMATION, wdm/REG_SET_KEY_SECURITY_INFORMATION, kernel.reg_set_key_security_information, PREG_SET_KEY_SECURITY_INFORMATION structure pointer [Kernel-Mode Driver Architecture], REG_SET_KEY_SECURITY_INFORMATION, _REG_SET_KEY_SECURITY_INFORMATION, REG_SET_KEY_SECURITY_INFORMATION structure [Kernel-Mode Driver Architecture], kstruct_d_2154cf21-9f72-488b-ad13-687ada458991.xml, wdm/PREG_SET_KEY_SECURITY_INFORMATION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: Available on Windows Vista and later versions of the Windows operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdm.h
+apiname:
+-	REG_SET_KEY_SECURITY_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: "*PREG_SET_KEY_SECURITY_INFORMATION, REG_SET_KEY_SECURITY_INFORMATION"
+req.product: Windows 10 or later.
 ---
 
 # _REG_SET_KEY_SECURITY_INFORMATION structure

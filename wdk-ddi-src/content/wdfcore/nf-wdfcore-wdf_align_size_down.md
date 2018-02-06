@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfcore.WDF_ALIGN_SIZE_DOWN
-title : WDF_ALIGN_SIZE_DOWN function
-author : windows-driver-content
-description : The WDF_ALIGN_SIZE_DOWN function returns the next-lower buffer size that is aligned to a specified alignment offset.
-old-location : wdf\wdf_align_size_down.htm
-old-project : wdf
-ms.assetid : b93c6420-b981-4bfe-b841-921cbe76f643
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WDF_ALIGN_SIZE_DOWN, wdfcore/WDF_ALIGN_SIZE_DOWN, WDF_ALIGN_SIZE_DOWN function, DFMemoryObjectRef_2b1a76a0-3de8-4cfd-8a87-83a883a6fa95.xml, kmdf.wdf_align_size_down, wdf.wdf_align_size_down
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfcore.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : Any IRQL.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_DEVICE_SHUTDOWN_FLAGS
-req.product : Windows 10 or later.
+UID: NF:wdfcore.WDF_ALIGN_SIZE_DOWN
+title: WDF_ALIGN_SIZE_DOWN function
+author: windows-driver-content
+description: The WDF_ALIGN_SIZE_DOWN function returns the next-lower buffer size that is aligned to a specified alignment offset.
+old-location: wdf\wdf_align_size_down.htm
+old-project: wdf
+ms.assetid: b93c6420-b981-4bfe-b841-921cbe76f643
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WDF_ALIGN_SIZE_DOWN, wdfcore/WDF_ALIGN_SIZE_DOWN, WDF_ALIGN_SIZE_DOWN function, DFMemoryObjectRef_2b1a76a0-3de8-4cfd-8a87-83a883a6fa95.xml, kmdf.wdf_align_size_down, wdf.wdf_align_size_down
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfcore.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: Any IRQL.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WDF_ALIGN_SIZE_DOWN
+product: Windows
+targetos: Windows
+req.typenames: WDF_DEVICE_SHUTDOWN_FLAGS
+req.product: Windows 10 or later.
 ---
 
 

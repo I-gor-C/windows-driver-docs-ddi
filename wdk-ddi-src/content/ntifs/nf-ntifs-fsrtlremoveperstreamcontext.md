@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.FsRtlRemovePerStreamContext
-title : FsRtlRemovePerStreamContext function
-author : windows-driver-content
-description : FsRtlRemovePerStreamContext removes a per-stream context structure from the list of per-stream contexts associated with a file stream.
-old-location : ifsk\fsrtlremoveperstreamcontext.htm
-old-project : ifsk
-ms.assetid : 4b046cfa-8f38-4910-8cb3-125395292bd2
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FsRtlRemovePerStreamContext, ifsk.fsrtlremoveperstreamcontext, fsrtlref_904bd4dd-c254-4762-8af6-dcc49aaa5c92.xml, FsRtlRemovePerStreamContext function [Installable File System Drivers], ntifs/FsRtlRemovePerStreamContext
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : This routine is available on Update Rollup for Windows 2000 Service Pack 4 (SP4) and on Microsoft Windows XP and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.FsRtlRemovePerStreamContext
+title: FsRtlRemovePerStreamContext function
+author: windows-driver-content
+description: FsRtlRemovePerStreamContext removes a per-stream context structure from the list of per-stream contexts associated with a file stream.
+old-location: ifsk\fsrtlremoveperstreamcontext.htm
+old-project: ifsk
+ms.assetid: 4b046cfa-8f38-4910-8cb3-125395292bd2
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FsRtlRemovePerStreamContext, ifsk.fsrtlremoveperstreamcontext, fsrtlref_904bd4dd-c254-4762-8af6-dcc49aaa5c92.xml, FsRtlRemovePerStreamContext function [Installable File System Drivers], ntifs/FsRtlRemovePerStreamContext
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: This routine is available on Update Rollup for Windows 2000 Service Pack 4 (SP4) and on Microsoft Windows XP and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	FsRtlRemovePerStreamContext
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

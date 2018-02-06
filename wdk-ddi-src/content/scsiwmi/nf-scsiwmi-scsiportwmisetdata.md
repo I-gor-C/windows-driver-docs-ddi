@@ -1,42 +1,47 @@
 ---
-UID : NF:scsiwmi.ScsiPortWmiSetData
-title : ScsiPortWmiSetData function
-author : windows-driver-content
-description : The ScsiPortWmiSetData routine updates the WNODE_ALL_DATA structure within the request context to specify the position and length of the data for an instance.
-old-location : storage\scsiportwmisetdata.htm
-old-project : storage
-ms.assetid : eb4578c9-48e5-4113-ba58-a3d71052f782
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : scsiprt_d35b9d5f-3bb4-4739-ab53-55a229eddb51.xml, scsiwmi/ScsiPortWmiSetData, ScsiPortWmiSetData routine [Storage Devices], ScsiPortWmiSetData, storage.scsiportwmisetdata
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : scsiwmi.h
-req.include-header : Miniport.h, Scsi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SCSIWMI_ENABLE_DISABLE_CONTROL
-req.product : Windows 10 or later.
+UID: NF:scsiwmi.ScsiPortWmiSetData
+title: ScsiPortWmiSetData function
+author: windows-driver-content
+description: The ScsiPortWmiSetData routine updates the WNODE_ALL_DATA structure within the request context to specify the position and length of the data for an instance.
+old-location: storage\scsiportwmisetdata.htm
+old-project: storage
+ms.assetid: eb4578c9-48e5-4113-ba58-a3d71052f782
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: scsiprt_d35b9d5f-3bb4-4739-ab53-55a229eddb51.xml, scsiwmi/ScsiPortWmiSetData, ScsiPortWmiSetData routine [Storage Devices], ScsiPortWmiSetData, storage.scsiportwmisetdata
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: scsiwmi.h
+req.include-header: Miniport.h, Scsi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Scsiwmi.h
+apiname:
+-	ScsiPortWmiSetData
+product: Windows
+targetos: Windows
+req.typenames: SCSIWMI_ENABLE_DISABLE_CONTROL
+req.product: Windows 10 or later.
 ---
 
 

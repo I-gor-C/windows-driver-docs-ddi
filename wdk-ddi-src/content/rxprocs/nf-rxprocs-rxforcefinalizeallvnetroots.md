@@ -1,42 +1,47 @@
 ---
-UID : NF:rxprocs.RxForceFinalizeAllVNetRoots
-title : RxForceFinalizeAllVNetRoots function
-author : windows-driver-content
-description : RxForceFinalizeAllVNetRoots force finalizes all the V_NET_ROOT structures associated with a given NET_ROOT structure. The caller must have an exclusive lock on the netname table associated with the device object.
-old-location : ifsk\rxforcefinalizeallvnetroots.htm
-old-project : ifsk
-ms.assetid : 39b64fc0-70e6-4bca-ac45-817b27681487
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : RxForceFinalizeAllVNetRoots, rxprocs/RxForceFinalizeAllVNetRoots, rxref_4202642f-d7a8-4649-8395-4f2e423ca062.xml, ifsk.rxforcefinalizeallvnetroots, RxForceFinalizeAllVNetRoots function [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : rxprocs.h
-req.include-header : Rxprocs.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RX_CONTEXT, *PRX_CONTEXT
-req.product : Windows 10 or later.
+UID: NF:rxprocs.RxForceFinalizeAllVNetRoots
+title: RxForceFinalizeAllVNetRoots function
+author: windows-driver-content
+description: RxForceFinalizeAllVNetRoots force finalizes all the V_NET_ROOT structures associated with a given NET_ROOT structure. The caller must have an exclusive lock on the netname table associated with the device object.
+old-location: ifsk\rxforcefinalizeallvnetroots.htm
+old-project: ifsk
+ms.assetid: 39b64fc0-70e6-4bca-ac45-817b27681487
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: RxForceFinalizeAllVNetRoots, rxprocs/RxForceFinalizeAllVNetRoots, rxref_4202642f-d7a8-4649-8395-4f2e423ca062.xml, ifsk.rxforcefinalizeallvnetroots, RxForceFinalizeAllVNetRoots function [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: rxprocs.h
+req.include-header: Rxprocs.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	rxprocs.h
+apiname:
+-	RxForceFinalizeAllVNetRoots
+product: Windows
+targetos: Windows
+req.typenames: RX_CONTEXT, *PRX_CONTEXT
+req.product: Windows 10 or later.
 ---
 
 

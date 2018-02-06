@@ -1,41 +1,46 @@
 ---
-UID : NF:nfccx.NfcCxUnregisterSequenceHandler
-title : NfcCxUnregisterSequenceHandler function
-author : windows-driver-content
-description : Called by the client driver during device shutdown to unregister for the previously registered sequence handler callback.
-old-location : nfpdrivers\_nfccxunregistersequencehandler.htm
-old-project : nfpdrivers
-ms.assetid : 689BF221-22CA-43B4-A5EB-ECE0B78F520B
-ms.author : windowsdriverdev
-ms.date : 12/18/2017
-ms.keywords : NfcCxUnregisterSequenceHandler, nfpdrivers._nfccxunregistersequencehandler, nfccx/NfcCxUnregisterSequenceHandler, NfcCxUnregisterSequenceHandler method [Near-Field Proximity Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : nfccx.h
-req.include-header : Ncidef.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : None supported
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Nfccxstub.lib
-req.dll : NfcCx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NFC_CX_TRANSPORT_TYPE, *PNFC_CX_TRANSPORT_TYPE
+UID: NF:nfccx.NfcCxUnregisterSequenceHandler
+title: NfcCxUnregisterSequenceHandler function
+author: windows-driver-content
+description: Called by the client driver during device shutdown to unregister for the previously registered sequence handler callback.
+old-location: nfpdrivers\_nfccxunregistersequencehandler.htm
+old-project: nfpdrivers
+ms.assetid: 689BF221-22CA-43B4-A5EB-ECE0B78F520B
+ms.author: windowsdriverdev
+ms.date: 12/18/2017
+ms.keywords: NfcCxUnregisterSequenceHandler, nfpdrivers._nfccxunregistersequencehandler, nfccx/NfcCxUnregisterSequenceHandler, NfcCxUnregisterSequenceHandler method [Near-Field Proximity Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: nfccx.h
+req.include-header: Ncidef.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: None supported
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Nfccxstub.lib
+req.dll: NfcCx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NfcCx.dll
+apiname:
+-	NfcCxUnregisterSequenceHandler
+product: Windows
+targetos: Windows
+req.typenames: NFC_CX_TRANSPORT_TYPE, *PNFC_CX_TRANSPORT_TYPE
 ---
 
 

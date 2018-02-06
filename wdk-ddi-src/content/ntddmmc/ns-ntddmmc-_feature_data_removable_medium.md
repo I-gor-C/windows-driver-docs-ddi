@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddmmc._FEATURE_DATA_REMOVABLE_MEDIUM
-title : "_FEATURE_DATA_REMOVABLE_MEDIUM"
-author : windows-driver-content
-description : The FEATURE_DATA_REMOVABLE_MEDIUM structure contains data for the removable medium feature.
-old-location : storage\feature_data_removable_medium.htm
-old-project : storage
-ms.assetid : b25feb68-75bb-4a9d-b842-e15f619a18c4
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.feature_data_removable_medium, structs-CD-ROM_f9ce701e-11b7-478e-969e-c2744477d348.xml, *PFEATURE_DATA_REMOVABLE_MEDIUM, _FEATURE_DATA_REMOVABLE_MEDIUM, PFEATURE_DATA_REMOVABLE_MEDIUM structure pointer [Storage Devices], FEATURE_DATA_REMOVABLE_MEDIUM structure [Storage Devices], PFEATURE_DATA_REMOVABLE_MEDIUM, FEATURE_DATA_REMOVABLE_MEDIUM, ntddmmc/PFEATURE_DATA_REMOVABLE_MEDIUM, ntddmmc/FEATURE_DATA_REMOVABLE_MEDIUM
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddmmc.h
-req.include-header : Ntddcdrm.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FEATURE_DATA_REMOVABLE_MEDIUM, *PFEATURE_DATA_REMOVABLE_MEDIUM
+UID: NS:ntddmmc._FEATURE_DATA_REMOVABLE_MEDIUM
+title: "_FEATURE_DATA_REMOVABLE_MEDIUM"
+author: windows-driver-content
+description: The FEATURE_DATA_REMOVABLE_MEDIUM structure contains data for the removable medium feature.
+old-location: storage\feature_data_removable_medium.htm
+old-project: storage
+ms.assetid: b25feb68-75bb-4a9d-b842-e15f619a18c4
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.feature_data_removable_medium, structs-CD-ROM_f9ce701e-11b7-478e-969e-c2744477d348.xml, *PFEATURE_DATA_REMOVABLE_MEDIUM, _FEATURE_DATA_REMOVABLE_MEDIUM, PFEATURE_DATA_REMOVABLE_MEDIUM structure pointer [Storage Devices], FEATURE_DATA_REMOVABLE_MEDIUM structure [Storage Devices], PFEATURE_DATA_REMOVABLE_MEDIUM, FEATURE_DATA_REMOVABLE_MEDIUM, ntddmmc/PFEATURE_DATA_REMOVABLE_MEDIUM, ntddmmc/FEATURE_DATA_REMOVABLE_MEDIUM
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddmmc.h
+req.include-header: Ntddcdrm.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddmmc.h
+apiname:
+-	FEATURE_DATA_REMOVABLE_MEDIUM
+product: Windows
+targetos: Windows
+req.typenames: FEATURE_DATA_REMOVABLE_MEDIUM, *PFEATURE_DATA_REMOVABLE_MEDIUM
 ---
 
 # _FEATURE_DATA_REMOVABLE_MEDIUM structure

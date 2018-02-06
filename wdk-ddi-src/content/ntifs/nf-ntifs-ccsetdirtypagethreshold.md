@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.CcSetDirtyPageThreshold
-title : CcSetDirtyPageThreshold function
-author : windows-driver-content
-description : The CcSetDirtyPageThreshold routine sets a per-file dirty page threshold on a cached file.
-old-location : ifsk\ccsetdirtypagethreshold.htm
-old-project : ifsk
-ms.assetid : ba7023d9-5130-4eea-9de9-034f5bf0b145
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : CcSetDirtyPageThreshold routine [Installable File System Drivers], ccref_df331e54-32a2-4a09-a1e6-7c1d69b2abcf.xml, CcSetDirtyPageThreshold, ntifs/CcSetDirtyPageThreshold, ifsk.ccsetdirtypagethreshold
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.CcSetDirtyPageThreshold
+title: CcSetDirtyPageThreshold function
+author: windows-driver-content
+description: The CcSetDirtyPageThreshold routine sets a per-file dirty page threshold on a cached file.
+old-location: ifsk\ccsetdirtypagethreshold.htm
+old-project: ifsk
+ms.assetid: ba7023d9-5130-4eea-9de9-034f5bf0b145
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: CcSetDirtyPageThreshold routine [Installable File System Drivers], ccref_df331e54-32a2-4a09-a1e6-7c1d69b2abcf.xml, CcSetDirtyPageThreshold, ntifs/CcSetDirtyPageThreshold, ifsk.ccsetdirtypagethreshold
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	CcSetDirtyPageThreshold
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

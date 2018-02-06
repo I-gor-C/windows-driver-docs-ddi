@@ -1,41 +1,46 @@
 ---
-UID : NF:ntddk.IoCreateDisk
-title : IoCreateDisk function
-author : windows-driver-content
-description : The IoCreateDisk routine initializes a raw disk by creating a new partition table.
-old-location : storage\iocreatedisk.htm
-old-project : storage
-ms.assetid : 0ad85551-a8d2-4f7f-958b-fe23111de340
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : IoCreateDisk, ntddk/IoCreateDisk, IoCreateDisk routine [Storage Devices], storage.iocreatedisk, rtns-disk_5f69686f-f812-4ccc-8bc8-4caa70230d20.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Universal
-req.target-min-winverclnt : This routine is only available on Windows XP and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.IoCreateDisk
+title: IoCreateDisk function
+author: windows-driver-content
+description: The IoCreateDisk routine initializes a raw disk by creating a new partition table.
+old-location: storage\iocreatedisk.htm
+old-project: storage
+ms.assetid: 0ad85551-a8d2-4f7f-958b-fe23111de340
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: IoCreateDisk, ntddk/IoCreateDisk, IoCreateDisk routine [Storage Devices], storage.iocreatedisk, rtns-disk_5f69686f-f812-4ccc-8bc8-4caa70230d20.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Universal
+req.target-min-winverclnt: This routine is only available on Windows XP and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoCreateDisk
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

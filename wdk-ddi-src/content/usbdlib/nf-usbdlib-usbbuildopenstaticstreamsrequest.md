@@ -1,42 +1,47 @@
 ---
-UID : NF:usbdlib.UsbBuildOpenStaticStreamsRequest
-title : UsbBuildOpenStaticStreamsRequest function
-author : windows-driver-content
-description : The UsbBuildOpenStaticStreamsRequest inline function formats an URB structure for an open-streams request. The request opens streams associated with the specified bulk endpoint.
-old-location : buses\usbbuildopenbasicstreamsrequest.htm
-old-project : usbref
-ms.assetid : B514B88E-2D1F-43F1-BF70-BC49294CFE93
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : buses.usbbuildopenbasicstreamsrequest, usbdlib/UsbBuildOpenStaticStreamsRequest, UsbBuildOpenStaticStreamsRequest, UsbBuildOpenStaticStreamsRequest function [Buses]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : usbdlib.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Requires WDK for Windows 8. Targets Windows Vista and later versions of the Windows operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : USBCAMD_DEVICE_DATA2, *PUSBCAMD_DEVICE_DATA2
-req.product : Windows 10 or later.
+UID: NF:usbdlib.UsbBuildOpenStaticStreamsRequest
+title: UsbBuildOpenStaticStreamsRequest function
+author: windows-driver-content
+description: The UsbBuildOpenStaticStreamsRequest inline function formats an URB structure for an open-streams request. The request opens streams associated with the specified bulk endpoint.
+old-location: buses\usbbuildopenbasicstreamsrequest.htm
+old-project: usbref
+ms.assetid: B514B88E-2D1F-43F1-BF70-BC49294CFE93
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: buses.usbbuildopenbasicstreamsrequest, usbdlib/UsbBuildOpenStaticStreamsRequest, UsbBuildOpenStaticStreamsRequest, UsbBuildOpenStaticStreamsRequest function [Buses]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: usbdlib.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Requires WDK for Windows 8. Targets Windows Vista and later versions of the Windows operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Usbdlib.h
+apiname:
+-	UsbBuildOpenStaticStreamsRequest
+product: Windows
+targetos: Windows
+req.typenames: USBCAMD_DEVICE_DATA2, *PUSBCAMD_DEVICE_DATA2
+req.product: Windows 10 or later.
 ---
 
 

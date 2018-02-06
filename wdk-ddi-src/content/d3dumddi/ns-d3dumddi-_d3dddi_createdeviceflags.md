@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._D3DDDI_CREATEDEVICEFLAGS
-title : "_D3DDDI_CREATEDEVICEFLAGS"
-author : windows-driver-content
-description : The D3DDDI_CREATEDEVICEFLAGS structure describes how to create a device.
-old-location : display\d3dddi_createdeviceflags.htm
-old-project : display
-ms.assetid : f9415dc9-352a-4e93-a0c1-2519c8c89762
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3D_other_Structs_45151acf-e91a-454b-be32-b7b7aaa619e9.xml, d3dumddi/D3DDDI_CREATEDEVICEFLAGS, _D3DDDI_CREATEDEVICEFLAGS, D3DDDI_CREATEDEVICEFLAGS structure [Display Devices], display.d3dddi_createdeviceflags, D3DDDI_CREATEDEVICEFLAGS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h, D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDI_CREATEDEVICEFLAGS
+UID: NS:d3dumddi._D3DDDI_CREATEDEVICEFLAGS
+title: "_D3DDDI_CREATEDEVICEFLAGS"
+author: windows-driver-content
+description: The D3DDDI_CREATEDEVICEFLAGS structure describes how to create a device.
+old-location: display\d3dddi_createdeviceflags.htm
+old-project: display
+ms.assetid: f9415dc9-352a-4e93-a0c1-2519c8c89762
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3D_other_Structs_45151acf-e91a-454b-be32-b7b7aaa619e9.xml, d3dumddi/D3DDDI_CREATEDEVICEFLAGS, _D3DDDI_CREATEDEVICEFLAGS, D3DDDI_CREATEDEVICEFLAGS structure [Display Devices], display.d3dddi_createdeviceflags, D3DDDI_CREATEDEVICEFLAGS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h, D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	D3DDDI_CREATEDEVICEFLAGS
+product: Windows
+targetos: Windows
+req.typenames: D3DDDI_CREATEDEVICEFLAGS
 ---
 
 # _D3DDDI_CREATEDEVICEFLAGS structure

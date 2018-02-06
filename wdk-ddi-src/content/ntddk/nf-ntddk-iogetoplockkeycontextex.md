@@ -1,41 +1,47 @@
 ---
-UID : NF:ntddk.IoGetOplockKeyContextEx
-title : IoGetOplockKeyContextEx function
-author : windows-driver-content
-description : The IoGetOplockKeyContextEx routine returns a parent and target oplock key context for a file object.
-old-location : ifsk\iogetoplockkeycontextex.htm
-old-project : ifsk
-ms.assetid : 2DFC2C13-19C4-4DFD-B18B-459B38521962
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ntddk/IoGetOplockKeyContextEx, ifsk.iogetoplockkeycontextex, IoGetOplockKeyContextEx routine [Installable File System Drivers], IoGetOplockKeyContextEx
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntddk.h
-req.include-header : 
-req.target-type : Universal
-req.target-min-winverclnt : The IoGetOplockKeyContextEx routine is available starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ntoskrnl.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.IoGetOplockKeyContextEx
+title: IoGetOplockKeyContextEx function
+author: windows-driver-content
+description: The IoGetOplockKeyContextEx routine returns a parent and target oplock key context for a file object.
+old-location: ifsk\iogetoplockkeycontextex.htm
+old-project: ifsk
+ms.assetid: 2DFC2C13-19C4-4DFD-B18B-459B38521962
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ntddk/IoGetOplockKeyContextEx, ifsk.iogetoplockkeycontextex, IoGetOplockKeyContextEx routine [Installable File System Drivers], IoGetOplockKeyContextEx
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntddk.h
+req.include-header: 
+req.target-type: Universal
+req.target-min-winverclnt: The IoGetOplockKeyContextEx routine is available starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ntoskrnl.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ntoskrnl.lib
+-	ntoskrnl.dll
+apiname:
+-	IoGetOplockKeyContextEx
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

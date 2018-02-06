@@ -1,41 +1,46 @@
 ---
-UID : NS:ks.KSSTREAM_HEADER
-title : KSSTREAM_HEADER
-author : windows-driver-content
-description : The KSSTREAM_HEADER structure is a variable-length structure that describes a packet of data to be read from or written to a streaming driver pin.
-old-location : stream\ksstream_header.htm
-old-project : stream
-ms.assetid : c1057dcf-2988-460d-b006-f6cf16ec969e
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : PKSSTREAM_HEADER, ks/KSSTREAM_HEADER, KSSTREAM_HEADER, *PKSSTREAM_HEADER, KSSTREAM_HEADER structure [Streaming Media Devices], ks-struct_6f951af2-bee6-49ee-9df5-5291b5d00045.xml, ks/PKSSTREAM_HEADER, stream.ksstream_header, PKSSTREAM_HEADER structure pointer [Streaming Media Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KSSTREAM_HEADER, *PKSSTREAM_HEADER
+UID: NS:ks.KSSTREAM_HEADER
+title: KSSTREAM_HEADER
+author: windows-driver-content
+description: The KSSTREAM_HEADER structure is a variable-length structure that describes a packet of data to be read from or written to a streaming driver pin.
+old-location: stream\ksstream_header.htm
+old-project: stream
+ms.assetid: c1057dcf-2988-460d-b006-f6cf16ec969e
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: PKSSTREAM_HEADER, ks/KSSTREAM_HEADER, KSSTREAM_HEADER, *PKSSTREAM_HEADER, KSSTREAM_HEADER structure [Streaming Media Devices], ks-struct_6f951af2-bee6-49ee-9df5-5291b5d00045.xml, ks/PKSSTREAM_HEADER, stream.ksstream_header, PKSSTREAM_HEADER structure pointer [Streaming Media Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	KSSTREAM_HEADER
+product: Windows
+targetos: Windows
+req.typenames: KSSTREAM_HEADER, *PKSSTREAM_HEADER
 ---
 
 # KSSTREAM_HEADER structure

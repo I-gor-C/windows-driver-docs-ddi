@@ -1,42 +1,47 @@
 ---
-UID : NC:usbcamdi.PFNUSBCAMD_BulkReadWrite
-title : PFNUSBCAMD_BulkReadWrite
-author : windows-driver-content
-description : The USBCAMD_BulkReadWrite service performs a read or write operation on the specified bulk pipe.
-old-location : stream\usbcamd_bulkreadwrite.htm
-old-project : stream
-ms.assetid : 4888e6a7-be44-4ed9-80be-9dd7641653ef
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.usbcamd_bulkreadwrite, USBCAMD_BulkReadWrite routine [Streaming Media Devices], USBCAMD_BulkReadWrite, PFNUSBCAMD_BulkReadWrite, PFNUSBCAMD_BulkReadWrite, usbcamdi/USBCAMD_BulkReadWrite, usbcmdpr_6044cfed-1a8c-48a5-ac28-16c8ac151fcc.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : usbcamdi.h
-req.include-header : Usbcamdi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUSB_BUS_INTERFACE_USBDI_V3, USB_BUS_INTERFACE_USBDI_V3"
-req.product : Windows 10 or later.
+UID: NC:usbcamdi.PFNUSBCAMD_BulkReadWrite
+title: PFNUSBCAMD_BulkReadWrite
+author: windows-driver-content
+description: The USBCAMD_BulkReadWrite service performs a read or write operation on the specified bulk pipe.
+old-location: stream\usbcamd_bulkreadwrite.htm
+old-project: stream
+ms.assetid: 4888e6a7-be44-4ed9-80be-9dd7641653ef
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.usbcamd_bulkreadwrite, USBCAMD_BulkReadWrite routine [Streaming Media Devices], USBCAMD_BulkReadWrite, PFNUSBCAMD_BulkReadWrite, PFNUSBCAMD_BulkReadWrite, usbcamdi/USBCAMD_BulkReadWrite, usbcmdpr_6044cfed-1a8c-48a5-ac28-16c8ac151fcc.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: usbcamdi.h
+req.include-header: Usbcamdi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	usbcamdi.h
+apiname:
+-	USBCAMD_BulkReadWrite
+product: Windows
+targetos: Windows
+req.typenames: "*PUSB_BUS_INTERFACE_USBDI_V3, USB_BUS_INTERFACE_USBDI_V3"
+req.product: Windows 10 or later.
 ---
 
 

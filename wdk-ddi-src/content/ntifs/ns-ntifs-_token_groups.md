@@ -1,41 +1,46 @@
 ---
-UID : NS:ntifs._TOKEN_GROUPS
-title : "_TOKEN_GROUPS"
-author : windows-driver-content
-description : TOKEN_GROUPS contains information about the group security identifiers (SID) in an access token.
-old-location : ifsk\token_groups.htm
-old-project : ifsk
-ms.assetid : 08faebdf-7e6d-4da4-a4c2-a0b57de437ce
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : TOKEN_GROUPS, _TOKEN_GROUPS, PTOKEN_GROUPS structure pointer [Installable File System Drivers], PTOKEN_GROUPS, ifsk.token_groups, securitystructures_97d0491f-87b4-4e76-8252-fad37cc94c1c.xml, TOKEN_GROUPS structure [Installable File System Drivers], ntifs/TOKEN_GROUPS, ntifs/PTOKEN_GROUPS, *PTOKEN_GROUPS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_GROUPS, *PTOKEN_GROUPS
+UID: NS:ntifs._TOKEN_GROUPS
+title: "_TOKEN_GROUPS"
+author: windows-driver-content
+description: TOKEN_GROUPS contains information about the group security identifiers (SID) in an access token.
+old-location: ifsk\token_groups.htm
+old-project: ifsk
+ms.assetid: 08faebdf-7e6d-4da4-a4c2-a0b57de437ce
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: TOKEN_GROUPS, _TOKEN_GROUPS, PTOKEN_GROUPS structure pointer [Installable File System Drivers], PTOKEN_GROUPS, ifsk.token_groups, securitystructures_97d0491f-87b4-4e76-8252-fad37cc94c1c.xml, TOKEN_GROUPS structure [Installable File System Drivers], ntifs/TOKEN_GROUPS, ntifs/PTOKEN_GROUPS, *PTOKEN_GROUPS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntifs.h
+apiname:
+-	TOKEN_GROUPS
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_GROUPS, *PTOKEN_GROUPS
 ---
 
 # _TOKEN_GROUPS structure

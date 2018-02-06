@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugSymbols3.GetOffsetByName
-title : IDebugSymbols3::GetOffsetByName method
-author : windows-driver-content
-description : The GetOffsetByName method returns the location of a symbol identified by name.
-old-location : debugger\getoffsetbyname.htm
-old-project : debugger
-ms.assetid : b6915215-3654-446b-b30d-b891f439a379
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : dbgeng/IDebugSymbols3::GetOffsetByName, IDebugSymbols_ef72e546-d27f-4cdf-9eeb-53151680c2d1.xml, debugger.getoffsetbyname, GetOffsetByName method [Windows Debugging], IDebugSymbols2 interface, IDebugSymbols2 interface [Windows Debugging], GetOffsetByName method, IDebugSymbols3::GetOffsetByName, IDebugSymbols interface [Windows Debugging], GetOffsetByName method, GetOffsetByName, IDebugSymbols::GetOffsetByName, GetOffsetByName method [Windows Debugging], IDebugSymbols interface, dbgeng/IDebugSymbols2::GetOffsetByName, GetOffsetByName method [Windows Debugging], IDebugSymbols3 interface, dbgeng/IDebugSymbols::GetOffsetByName, IDebugSymbols3, IDebugSymbols3 interface [Windows Debugging], GetOffsetByName method, IDebugSymbols2::GetOffsetByName, GetOffsetByName method [Windows Debugging]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSymbols3.GetOffsetByName
+title: IDebugSymbols3::GetOffsetByName method
+author: windows-driver-content
+description: The GetOffsetByName method returns the location of a symbol identified by name.
+old-location: debugger\getoffsetbyname.htm
+old-project: debugger
+ms.assetid: b6915215-3654-446b-b30d-b891f439a379
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: dbgeng/IDebugSymbols3::GetOffsetByName, IDebugSymbols_ef72e546-d27f-4cdf-9eeb-53151680c2d1.xml, debugger.getoffsetbyname, GetOffsetByName method [Windows Debugging], IDebugSymbols2 interface, IDebugSymbols2 interface [Windows Debugging], GetOffsetByName method, IDebugSymbols3::GetOffsetByName, IDebugSymbols interface [Windows Debugging], GetOffsetByName method, GetOffsetByName, IDebugSymbols::GetOffsetByName, GetOffsetByName method [Windows Debugging], IDebugSymbols interface, dbgeng/IDebugSymbols2::GetOffsetByName, GetOffsetByName method [Windows Debugging], IDebugSymbols3 interface, dbgeng/IDebugSymbols::GetOffsetByName, IDebugSymbols3, IDebugSymbols3 interface [Windows Debugging], GetOffsetByName method, IDebugSymbols2::GetOffsetByName, GetOffsetByName method [Windows Debugging]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugSymbols.GetOffsetByName
+-	IDebugSymbols2.GetOffsetByName
+-	IDebugSymbols3.GetOffsetByName
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NF:ksproxy.IKsControl.KsMethod
-title : IKsControl::KsMethod method
-author : windows-driver-content
-description : The KsMethod method sends a method to a KS object, along with any other defined support operations available on a method set.
-old-location : stream\ikscontrol_ksmethod.htm
-old-project : stream
-ms.assetid : 9f9121be-786d-4a1c-bb01-7bf3c1d3b6cf
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KsMethod method [Streaming Media Devices], KsMethod, ksproxy_700d1bc3-f01e-4fff-9976-f64cdfd54f82.xml, KsMethod method [Streaming Media Devices], IKsControl interface, IKsControl::KsMethod, IKsControl interface [Streaming Media Devices], KsMethod method, IKsControl, stream.ikscontrol_ksmethod, ksproxy/IKsControl::KsMethod
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : ksproxy.h
-req.include-header : Ksproxy.h
-req.target-type : DesktopMobile
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : ksproxy.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PIPE_STATE
+UID: NF:ksproxy.IKsControl.KsMethod
+title: IKsControl::KsMethod method
+author: windows-driver-content
+description: The KsMethod method sends a method to a KS object, along with any other defined support operations available on a method set.
+old-location: stream\ikscontrol_ksmethod.htm
+old-project: stream
+ms.assetid: 9f9121be-786d-4a1c-bb01-7bf3c1d3b6cf
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KsMethod method [Streaming Media Devices], KsMethod, ksproxy_700d1bc3-f01e-4fff-9976-f64cdfd54f82.xml, KsMethod method [Streaming Media Devices], IKsControl interface, IKsControl::KsMethod, IKsControl interface [Streaming Media Devices], KsMethod method, IKsControl, stream.ikscontrol_ksmethod, ksproxy/IKsControl::KsMethod
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: ksproxy.h
+req.include-header: Ksproxy.h
+req.target-type: DesktopMobile
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: ksproxy.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	ksproxy.h
+apiname:
+-	IKsControl.KsMethod
+product: Windows
+targetos: Windows
+req.typenames: PIPE_STATE
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddndis._NDIS_RECEIVE_FILTER_INFO
-title : "_NDIS_RECEIVE_FILTER_INFO"
-author : windows-driver-content
-description : The NDIS_RECEIVE_FILTER_INFO structure contains information about a receive filter that is currently configured on a miniport driver.
-old-location : netvista\ndis_receive_filter_info.htm
-old-project : netvista
-ms.assetid : 12029cfd-58d0-4621-8cbc-c07e68db61b8
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : PNDIS_RECEIVE_FILTER_INFO structure pointer [Network Drivers Starting with Windows Vista], netvista.ndis_receive_filter_info, NDIS_RECEIVE_FILTER_INFO, *PNDIS_RECEIVE_FILTER_INFO, ntddndis/PNDIS_RECEIVE_FILTER_INFO, PNDIS_RECEIVE_FILTER_INFO, _NDIS_RECEIVE_FILTER_INFO, virtual_machine_queue_ref_4c711292-ce17-4eb9-a051-c32f8ad6f49e.xml, ntddndis/NDIS_RECEIVE_FILTER_INFO, NDIS_RECEIVE_FILTER_INFO structure [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.20 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_RECEIVE_FILTER_INFO, *PNDIS_RECEIVE_FILTER_INFO
+UID: NS:ntddndis._NDIS_RECEIVE_FILTER_INFO
+title: "_NDIS_RECEIVE_FILTER_INFO"
+author: windows-driver-content
+description: The NDIS_RECEIVE_FILTER_INFO structure contains information about a receive filter that is currently configured on a miniport driver.
+old-location: netvista\ndis_receive_filter_info.htm
+old-project: netvista
+ms.assetid: 12029cfd-58d0-4621-8cbc-c07e68db61b8
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: PNDIS_RECEIVE_FILTER_INFO structure pointer [Network Drivers Starting with Windows Vista], netvista.ndis_receive_filter_info, NDIS_RECEIVE_FILTER_INFO, *PNDIS_RECEIVE_FILTER_INFO, ntddndis/PNDIS_RECEIVE_FILTER_INFO, PNDIS_RECEIVE_FILTER_INFO, _NDIS_RECEIVE_FILTER_INFO, virtual_machine_queue_ref_4c711292-ce17-4eb9-a051-c32f8ad6f49e.xml, ntddndis/NDIS_RECEIVE_FILTER_INFO, NDIS_RECEIVE_FILTER_INFO structure [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.20 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddndis.h
+apiname:
+-	NDIS_RECEIVE_FILTER_INFO
+product: Windows
+targetos: Windows
+req.typenames: NDIS_RECEIVE_FILTER_INFO, *PNDIS_RECEIVE_FILTER_INFO
 ---
 
 # _NDIS_RECEIVE_FILTER_INFO structure

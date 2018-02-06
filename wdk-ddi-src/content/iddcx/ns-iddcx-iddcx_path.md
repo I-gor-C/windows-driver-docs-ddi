@@ -1,41 +1,46 @@
 ---
-UID : NS:iddcx.IDDCX_PATH
-title : IDDCX_PATH
-author : windows-driver-content
-description : Call IDDCX_PATH_INIT to initialize this structure.
-old-location : display\iddcx_path.htm
-old-project : display
-ms.assetid : c0126718-6bb0-493c-9fdd-78ae372f8fd4
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : IDDCX_PATH structure [Display Devices], IDDCX_PATH, IDDCX_PATH structure structure [Display Devices], display.iddcx_path, iddcx/IDDCX_PATH, IDDCX_PATH structure, IDDCX_PATH structure pointer [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : iddcx.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NS:iddcx.IDDCX_PATH
+title: IDDCX_PATH
+author: windows-driver-content
+description: Call IDDCX_PATH_INIT to initialize this structure.
+old-location: display\iddcx_path.htm
+old-project: display
+ms.assetid: c0126718-6bb0-493c-9fdd-78ae372f8fd4
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: IDDCX_PATH structure [Display Devices], IDDCX_PATH, IDDCX_PATH structure structure [Display Devices], display.iddcx_path, iddcx/IDDCX_PATH, IDDCX_PATH structure, IDDCX_PATH structure pointer [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: iddcx.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	iddcx.h
+apiname:
+-	IDDCX_PATH
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 # IDDCX_PATH structure

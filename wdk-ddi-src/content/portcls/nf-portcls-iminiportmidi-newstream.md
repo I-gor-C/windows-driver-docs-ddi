@@ -1,41 +1,46 @@
 ---
-UID : NF:portcls.IMiniportMidi.NewStream
-title : IMiniportMidi::NewStream method
-author : windows-driver-content
-description : The NewStream method creates a new instance of a logical stream associated with a specified physical channel.
-old-location : audio\iminiportmidi_newstream.htm
-old-project : audio
-ms.assetid : 6760c893-0574-4fb1-b714-d506ebbd0872
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : IMiniportMidi interface [Audio Devices], NewStream method, NewStream method [Audio Devices], IMiniportMidi interface, audmp-routines_4cc2fc38-bf0b-467e-83d4-678189d8fc0f.xml, portcls/IMiniportMidi::NewStream, IMiniportMidi::NewStream, audio.iminiportmidi_newstream, NewStream method [Audio Devices], IMiniportMidi, NewStream
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : portcls.h
-req.include-header : Portcls.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : portcls.h
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.IMiniportMidi.NewStream
+title: IMiniportMidi::NewStream method
+author: windows-driver-content
+description: The NewStream method creates a new instance of a logical stream associated with a specified physical channel.
+old-location: audio\iminiportmidi_newstream.htm
+old-project: audio
+ms.assetid: 6760c893-0574-4fb1-b714-d506ebbd0872
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: IMiniportMidi interface [Audio Devices], NewStream method, NewStream method [Audio Devices], IMiniportMidi interface, audmp-routines_4cc2fc38-bf0b-467e-83d4-678189d8fc0f.xml, portcls/IMiniportMidi::NewStream, IMiniportMidi::NewStream, audio.iminiportmidi_newstream, NewStream method [Audio Devices], IMiniportMidi, NewStream
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: portcls.h
+req.include-header: Portcls.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: portcls.h
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	portcls.h
+apiname:
+-	IMiniportMidi.NewStream
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NF:wiamdef.WIAS_LWARNING
-title : WIAS_LWARNING macro
-author : windows-driver-content
-description : The WIAS_LWARNING macro is obsolete for Windows Vista and later.The WIAS_LWARNING macro writes a diagnostic WIA_WARNING message to the log file.
-old-location : image\wias_lwarning.htm
-old-project : image
-ms.assetid : 2959c470-1da7-4396-a591-7a356379f9de
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : WIAS_LWARNING macro [Imaging Devices], IWiaLog_bac21803-be4c-4ce0-a241-b9380cb627ab.xml, WIAS_LWARNING, image.wias_lwarning, wiamdef/WIAS_LWARNING
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : macro
-req.header : wiamdef.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Me, Windows XP, and later. Obsolete for Windows Vista and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wiamdef.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*LPDEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2, DEVICEDIALOGDATA2"
-req.product : Windows 10 or later.
+UID: NF:wiamdef.WIAS_LWARNING
+title: WIAS_LWARNING macro
+author: windows-driver-content
+description: The WIAS_LWARNING macro is obsolete for Windows Vista and later.The WIAS_LWARNING macro writes a diagnostic WIA_WARNING message to the log file.
+old-location: image\wias_lwarning.htm
+old-project: image
+ms.assetid: 2959c470-1da7-4396-a591-7a356379f9de
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: WIAS_LWARNING macro [Imaging Devices], IWiaLog_bac21803-be4c-4ce0-a241-b9380cb627ab.xml, WIAS_LWARNING, image.wias_lwarning, wiamdef/WIAS_LWARNING
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: macro
+req.header: wiamdef.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Me, Windows XP, and later. Obsolete for Windows Vista and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wiamdef.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wiamdef.h
+apiname:
+-	WIAS_LWARNING
+product: Windows
+targetos: Windows
+req.typenames: "*LPDEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2, DEVICEDIALOGDATA2"
+req.product: Windows 10 or later.
 ---
 
 

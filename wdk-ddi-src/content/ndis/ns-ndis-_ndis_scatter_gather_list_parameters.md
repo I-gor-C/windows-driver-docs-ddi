@@ -1,41 +1,46 @@
 ---
-UID : NS:ndis._NDIS_SCATTER_GATHER_LIST_PARAMETERS
-title : "_NDIS_SCATTER_GATHER_LIST_PARAMETERS"
-author : windows-driver-content
-description : The NDIS_SCATTER_GATHER_LIST_PARAMETERS structure specifies parameters that NDIS uses to build a scatter/gather list for a buffer.
-old-location : netvista\ndis_scatter_gather_list_parameters.htm
-old-project : netvista
-ms.assetid : 5c14a6ed-3180-41d6-a09a-b3ae0a0c8b36
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : ndis/PNDIS_SCATTER_GATHER_LIST_PARAMETERS, PNDIS_SCATTER_GATHER_LIST_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], NDIS_SCATTER_GATHER_LIST_PARAMETERS, ndis/NDIS_SCATTER_GATHER_LIST_PARAMETERS, ndis_shared_memory_ref_b74a7da6-25c0-4ede-8540-d8fd5ee88ca2.xml, PNDIS_SCATTER_GATHER_LIST_PARAMETERS, netvista.ndis_scatter_gather_list_parameters, *PNDIS_SCATTER_GATHER_LIST_PARAMETERS, NDIS_SCATTER_GATHER_LIST_PARAMETERS structure [Network Drivers Starting with Windows Vista], _NDIS_SCATTER_GATHER_LIST_PARAMETERS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.20 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : See Remarks section
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PNDIS_SCATTER_GATHER_LIST_PARAMETERS, NDIS_SCATTER_GATHER_LIST_PARAMETERS"
+UID: NS:ndis._NDIS_SCATTER_GATHER_LIST_PARAMETERS
+title: "_NDIS_SCATTER_GATHER_LIST_PARAMETERS"
+author: windows-driver-content
+description: The NDIS_SCATTER_GATHER_LIST_PARAMETERS structure specifies parameters that NDIS uses to build a scatter/gather list for a buffer.
+old-location: netvista\ndis_scatter_gather_list_parameters.htm
+old-project: netvista
+ms.assetid: 5c14a6ed-3180-41d6-a09a-b3ae0a0c8b36
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: ndis/PNDIS_SCATTER_GATHER_LIST_PARAMETERS, PNDIS_SCATTER_GATHER_LIST_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], NDIS_SCATTER_GATHER_LIST_PARAMETERS, ndis/NDIS_SCATTER_GATHER_LIST_PARAMETERS, ndis_shared_memory_ref_b74a7da6-25c0-4ede-8540-d8fd5ee88ca2.xml, PNDIS_SCATTER_GATHER_LIST_PARAMETERS, netvista.ndis_scatter_gather_list_parameters, *PNDIS_SCATTER_GATHER_LIST_PARAMETERS, NDIS_SCATTER_GATHER_LIST_PARAMETERS structure [Network Drivers Starting with Windows Vista], _NDIS_SCATTER_GATHER_LIST_PARAMETERS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.20 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: See Remarks section
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndis.h
+apiname:
+-	NDIS_SCATTER_GATHER_LIST_PARAMETERS
+product: Windows
+targetos: Windows
+req.typenames: "*PNDIS_SCATTER_GATHER_LIST_PARAMETERS, NDIS_SCATTER_GATHER_LIST_PARAMETERS"
 ---
 
 # _NDIS_SCATTER_GATHER_LIST_PARAMETERS structure

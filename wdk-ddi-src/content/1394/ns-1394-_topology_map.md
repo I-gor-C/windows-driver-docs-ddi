@@ -1,41 +1,46 @@
 ---
-UID : NS:1394._TOPOLOGY_MAP
-title : "_TOPOLOGY_MAP"
-author : windows-driver-content
-description : The TOPOLOGY_MAP structure is used to store an IEEE 1394 bus topology map. The relations between devices are found in the port members of the entries in TOP_Self_ID_Array.
-old-location : ieee\topology_map.htm
-old-project : IEEE
-ms.assetid : 0a4c7ffc-94f9-4068-b650-1da43e45d0ad
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : "_TOPOLOGY_MAP, 1394stct_4afaf64f-e60c-4521-91c7-82abefd49b55.xml, 1394/PTOPOLOGY_MAP, IEEE.topology_map, *PTOPOLOGY_MAP, PTOPOLOGY_MAP, 1394/TOPOLOGY_MAP, TOPOLOGY_MAP, PTOPOLOGY_MAP structure pointer [Buses], TOPOLOGY_MAP structure [Buses]"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : 1394.h
-req.include-header : 1394.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOPOLOGY_MAP, *PTOPOLOGY_MAP
+UID: NS:1394._TOPOLOGY_MAP
+title: "_TOPOLOGY_MAP"
+author: windows-driver-content
+description: The TOPOLOGY_MAP structure is used to store an IEEE 1394 bus topology map. The relations between devices are found in the port members of the entries in TOP_Self_ID_Array.
+old-location: ieee\topology_map.htm
+old-project: IEEE
+ms.assetid: 0a4c7ffc-94f9-4068-b650-1da43e45d0ad
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: "_TOPOLOGY_MAP, 1394stct_4afaf64f-e60c-4521-91c7-82abefd49b55.xml, 1394/PTOPOLOGY_MAP, IEEE.topology_map, *PTOPOLOGY_MAP, PTOPOLOGY_MAP, 1394/TOPOLOGY_MAP, TOPOLOGY_MAP, PTOPOLOGY_MAP structure pointer [Buses], TOPOLOGY_MAP structure [Buses]"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: 1394.h
+req.include-header: 1394.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	1394.h
+apiname:
+-	TOPOLOGY_MAP
+product: Windows
+targetos: Windows
+req.typenames: TOPOLOGY_MAP, *PTOPOLOGY_MAP
 ---
 
 # _TOPOLOGY_MAP structure

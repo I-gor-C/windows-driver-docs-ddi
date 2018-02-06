@@ -1,41 +1,46 @@
 ---
-UID : NS:ndkpi._NDK_RESULT
-title : "_NDK_RESULT"
-author : windows-driver-content
-description : The NDK_RESULT structure returns the results for an NDK request operation.
-old-location : netvista\ndk_result.htm
-old-project : netvista
-ms.assetid : B7898C81-E90D-4210-BEAE-1E629FCD7195
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : "_NDK_RESULT, NDK_RESULT, netvista.ndk_result, NDK_RESULT structure [Network Drivers Starting with Windows Vista], ndkpi/NDK_RESULT"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndkpi.h
-req.include-header : Ndkpi.h
-req.target-type : Windows
-req.target-min-winverclnt : None supported,Supported in NDIS 6.30 and later.
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDK_RESULT
+UID: NS:ndkpi._NDK_RESULT
+title: "_NDK_RESULT"
+author: windows-driver-content
+description: The NDK_RESULT structure returns the results for an NDK request operation.
+old-location: netvista\ndk_result.htm
+old-project: netvista
+ms.assetid: B7898C81-E90D-4210-BEAE-1E629FCD7195
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: "_NDK_RESULT, NDK_RESULT, netvista.ndk_result, NDK_RESULT structure [Network Drivers Starting with Windows Vista], ndkpi/NDK_RESULT"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndkpi.h
+req.include-header: Ndkpi.h
+req.target-type: Windows
+req.target-min-winverclnt: None supported,Supported in NDIS 6.30 and later.
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndkpi.h
+apiname:
+-	NDK_RESULT
+product: Windows
+targetos: Windows
+req.typenames: NDK_RESULT
 ---
 
 # _NDK_RESULT structure

@@ -1,41 +1,46 @@
 ---
-UID : NC:dot11wdi.MINIPORT_WDI_RX_GET_MPDUS
-title : MINIPORT_WDI_RX_GET_MPDUS
-author : windows-driver-content
-description : The MiniportWdiRxGetMpdus handler function returns a NET_BUFFER_LIST chain. Each NET_BUFFER_LIST represents one MPDU.
-old-location : netvista\miniportwdirxgetmpdus.htm
-old-project : netvista
-ms.assetid : 195F4143-4889-4788-BAF5-2F1ED6E4E50A
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.miniportwdirxgetmpdus, MiniportWdiRxGetMpdus callback function [Network Drivers Starting with Windows Vista], MiniportWdiRxGetMpdus, MINIPORT_WDI_RX_GET_MPDUS, MINIPORT_WDI_RX_GET_MPDUS, dot11wdi/MiniportWdiRxGetMpdus
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : dot11wdi.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SYNTH_STATS, *PSYNTH_STATS
+UID: NC:dot11wdi.MINIPORT_WDI_RX_GET_MPDUS
+title: MINIPORT_WDI_RX_GET_MPDUS
+author: windows-driver-content
+description: The MiniportWdiRxGetMpdus handler function returns a NET_BUFFER_LIST chain. Each NET_BUFFER_LIST represents one MPDU.
+old-location: netvista\miniportwdirxgetmpdus.htm
+old-project: netvista
+ms.assetid: 195F4143-4889-4788-BAF5-2F1ED6E4E50A
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.miniportwdirxgetmpdus, MiniportWdiRxGetMpdus callback function [Network Drivers Starting with Windows Vista], MiniportWdiRxGetMpdus, MINIPORT_WDI_RX_GET_MPDUS, MINIPORT_WDI_RX_GET_MPDUS, dot11wdi/MiniportWdiRxGetMpdus
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: dot11wdi.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	dot11wdi.h
+apiname:
+-	MiniportWdiRxGetMpdus
+product: Windows
+targetos: Windows
+req.typenames: SYNTH_STATS, *PSYNTH_STATS
 ---
 
 

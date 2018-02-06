@@ -1,41 +1,47 @@
 ---
-UID : NF:fwpsk.FwpsAleEndpointSetSecurityInfo0
-title : FwpsAleEndpointSetSecurityInfo0 function
-author : windows-driver-content
-description : The FwpsAleEndpointSetSecurityInfo0 function sets security information about the application layer enforcement (ALE) endpoint enumeration session.Note  FwpsAleEndpointSetSecurityInfo0 is a specific version of FwpsAleEndpointSetSecurityInfo.
-old-location : netvista\fwpsaleendpointsetsecurityinfo0.htm
-old-project : netvista
-ms.assetid : 7b7fed83-dcf8-466d-8bd7-42a5ed15cced
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.fwpsaleendpointsetsecurityinfo0, fwpsk/FwpsAleEndpointSetSecurityInfo0, FwpsAleEndpointSetSecurityInfo0, wfp_ref_2_funct_3_fwps_A-B_7999c73b-ee7d-4a54-b279-8a691a99d94d.xml, FwpsAleEndpointSetSecurityInfo0 function [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fwpsk.h
-req.include-header : Fwpsk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 7.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Fwpkclnt.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FWPS_VSWITCH_EVENT_TYPE
+UID: NF:fwpsk.FwpsAleEndpointSetSecurityInfo0
+title: FwpsAleEndpointSetSecurityInfo0 function
+author: windows-driver-content
+description: The FwpsAleEndpointSetSecurityInfo0 function sets security information about the application layer enforcement (ALE) endpoint enumeration session.Note  FwpsAleEndpointSetSecurityInfo0 is a specific version of FwpsAleEndpointSetSecurityInfo.
+old-location: netvista\fwpsaleendpointsetsecurityinfo0.htm
+old-project: netvista
+ms.assetid: 7b7fed83-dcf8-466d-8bd7-42a5ed15cced
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.fwpsaleendpointsetsecurityinfo0, fwpsk/FwpsAleEndpointSetSecurityInfo0, FwpsAleEndpointSetSecurityInfo0, wfp_ref_2_funct_3_fwps_A-B_7999c73b-ee7d-4a54-b279-8a691a99d94d.xml, FwpsAleEndpointSetSecurityInfo0 function [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fwpsk.h
+req.include-header: Fwpsk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 7.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Fwpkclnt.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	fwpkclnt.lib
+-	fwpkclnt.dll
+apiname:
+-	FwpsAleEndpointSetSecurityInfo0
+product: Windows
+targetos: Windows
+req.typenames: FWPS_VSWITCH_EVENT_TYPE
 ---
 
 

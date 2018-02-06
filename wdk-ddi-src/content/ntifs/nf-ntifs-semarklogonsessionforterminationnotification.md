@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.SeMarkLogonSessionForTerminationNotification
-title : SeMarkLogonSessionForTerminationNotification function
-author : windows-driver-content
-description : The SeMarkLogonSessionForTerminationNotification routine marks a logon session so that the caller's registered callback routine is called when the logon session terminates.
-old-location : ifsk\semarklogonsessionforterminationnotification.htm
-old-project : ifsk
-ms.assetid : ca259e03-4770-48ce-a4c0-a26159a172aa
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.semarklogonsessionforterminationnotification, SeMarkLogonSessionForTerminationNotification, ntifs/SeMarkLogonSessionForTerminationNotification, SeMarkLogonSessionForTerminationNotification routine [Installable File System Drivers], seref_417d6aa1-b506-463d-9506-3a3651873c4a.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.SeMarkLogonSessionForTerminationNotification
+title: SeMarkLogonSessionForTerminationNotification function
+author: windows-driver-content
+description: The SeMarkLogonSessionForTerminationNotification routine marks a logon session so that the caller's registered callback routine is called when the logon session terminates.
+old-location: ifsk\semarklogonsessionforterminationnotification.htm
+old-project: ifsk
+ms.assetid: ca259e03-4770-48ce-a4c0-a26159a172aa
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.semarklogonsessionforterminationnotification, SeMarkLogonSessionForTerminationNotification, ntifs/SeMarkLogonSessionForTerminationNotification, SeMarkLogonSessionForTerminationNotification routine [Installable File System Drivers], seref_417d6aa1-b506-463d-9506-3a3651873c4a.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	SeMarkLogonSessionForTerminationNotification
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

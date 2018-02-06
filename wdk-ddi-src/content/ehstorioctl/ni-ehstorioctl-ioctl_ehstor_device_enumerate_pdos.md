@@ -1,41 +1,46 @@
 ---
-UID : NI:ehstorioctl.IOCTL_EHSTOR_DEVICE_ENUMERATE_PDOS
-title : IOCTL_EHSTOR_DEVICE_ENUMERATE_PDOS
-author : windows-driver-content
-description : This IOCTL returns a result set containing the enumeration of all active storage Physical Device Objects (PDOs) associated with the given Addressable Command Target (ACT).
-old-location : storage\ioctl_ehstor_device_enumerate_pdos.htm
-old-project : storage
-ms.assetid : 900A8CAB-287D-4D92-B4CB-2959E87C8E67
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_ehstor_device_enumerate_pdos, IOCTL_EHSTOR_DEVICE_ENUMERATE_PDOS control code [Storage Devices], IOCTL_EHSTOR_DEVICE_ENUMERATE_PDOS, ehstorioctl/IOCTL_EHSTOR_DEVICE_ENUMERATE_PDOS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ehstorioctl.h
-req.include-header : EhStorIoctl.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PDO_TYPE
+UID: NI:ehstorioctl.IOCTL_EHSTOR_DEVICE_ENUMERATE_PDOS
+title: IOCTL_EHSTOR_DEVICE_ENUMERATE_PDOS
+author: windows-driver-content
+description: This IOCTL returns a result set containing the enumeration of all active storage Physical Device Objects (PDOs) associated with the given Addressable Command Target (ACT).
+old-location: storage\ioctl_ehstor_device_enumerate_pdos.htm
+old-project: storage
+ms.assetid: 900A8CAB-287D-4D92-B4CB-2959E87C8E67
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_ehstor_device_enumerate_pdos, IOCTL_EHSTOR_DEVICE_ENUMERATE_PDOS control code [Storage Devices], IOCTL_EHSTOR_DEVICE_ENUMERATE_PDOS, ehstorioctl/IOCTL_EHSTOR_DEVICE_ENUMERATE_PDOS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ehstorioctl.h
+req.include-header: EhStorIoctl.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	EhStorIoctl.h
+apiname:
+-	IOCTL_EHSTOR_DEVICE_ENUMERATE_PDOS
+product: Windows
+targetos: Windows
+req.typenames: PDO_TYPE
 ---
 
 # IOCTL_EHSTOR_DEVICE_ENUMERATE_PDOS IOCTL

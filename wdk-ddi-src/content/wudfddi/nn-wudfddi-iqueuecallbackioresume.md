@@ -1,42 +1,47 @@
 ---
-UID : NN:wudfddi.IQueueCallbackIoResume
-title : IQueueCallbackIoResume
-author : windows-driver-content
-description : The IQueueCallbackIoResume interface contains a method that resumes the processing of an I/O request from a queue.
-old-location : wdf\iqueuecallbackioresume.htm
-old-project : wdf
-ms.assetid : 3f27f104-7a06-4f81-9605-2a47c7de7e01
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.iqueuecallbackioresume, IQueueCallbackIoResume interface, IQueueCallbackIoResume interface, described, IQueueCallbackIoResume, wudfddi/IQueueCallbackIoResume, UMDFQueueObjectRef_3ee832e4-15ba-4c39-bb77-38ebbc91983d.xml, umdf.iqueuecallbackioresume
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : wudfddi.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NN:wudfddi.IQueueCallbackIoResume
+title: IQueueCallbackIoResume
+author: windows-driver-content
+description: The IQueueCallbackIoResume interface contains a method that resumes the processing of an I/O request from a queue.
+old-location: wdf\iqueuecallbackioresume.htm
+old-project: wdf
+ms.assetid: 3f27f104-7a06-4f81-9605-2a47c7de7e01
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.iqueuecallbackioresume, IQueueCallbackIoResume interface, IQueueCallbackIoResume interface, described, IQueueCallbackIoResume, wudfddi/IQueueCallbackIoResume, UMDFQueueObjectRef_3ee832e4-15ba-4c39-bb77-38ebbc91983d.xml, umdf.iqueuecallbackioresume
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: wudfddi.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	wudfddi.h
+apiname:
+-	IQueueCallbackIoResume
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 # IQueueCallbackIoResume interface

@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltGetSwappedBufferMdlAddress
-title : FltGetSwappedBufferMdlAddress function
-author : windows-driver-content
-description : The FltGetSwappedBufferMdlAddress routine returns the memory descriptor list (MDL) address for a buffer that was swapped in by a minifilter driver.
-old-location : ifsk\fltgetswappedbuffermdladdress.htm
-old-project : ifsk
-ms.assetid : 804263ec-8b3b-4a7c-9db4-ad524b807313
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.fltgetswappedbuffermdladdress, fltkernel/FltGetSwappedBufferMdlAddress, FltApiRef_e_to_o_7ebd2be1-79a1-4a5a-a9ab-7ca5023eb8fc.xml, FltGetSwappedBufferMdlAddress routine [Installable File System Drivers], FltGetSwappedBufferMdlAddress
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltGetSwappedBufferMdlAddress
+title: FltGetSwappedBufferMdlAddress function
+author: windows-driver-content
+description: The FltGetSwappedBufferMdlAddress routine returns the memory descriptor list (MDL) address for a buffer that was swapped in by a minifilter driver.
+old-location: ifsk\fltgetswappedbuffermdladdress.htm
+old-project: ifsk
+ms.assetid: 804263ec-8b3b-4a7c-9db4-ad524b807313
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.fltgetswappedbuffermdladdress, fltkernel/FltGetSwappedBufferMdlAddress, FltApiRef_e_to_o_7ebd2be1-79a1-4a5a-a9ab-7ca5023eb8fc.xml, FltGetSwappedBufferMdlAddress routine [Installable File System Drivers], FltGetSwappedBufferMdlAddress
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltGetSwappedBufferMdlAddress
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

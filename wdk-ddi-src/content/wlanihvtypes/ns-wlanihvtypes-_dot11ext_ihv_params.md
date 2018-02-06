@@ -1,42 +1,47 @@
 ---
-UID : NS:wlanihvtypes._DOT11EXT_IHV_PARAMS
-title : "_DOT11EXT_IHV_PARAMS"
-author : windows-driver-content
-description : Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
-old-location : netvista\dot11ext_ihv_params.htm
-old-project : netvista
-ms.assetid : 1264bfe7-3ab6-4ba0-aa41-cf81bc9bb687
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : "_DOT11EXT_IHV_PARAMS, DOT11EXT_IHV_PARAMS, PDOT11EXT_IHV_PARAMS, wlanihvtypes/DOT11EXT_IHV_PARAMS, wlanihvtypes/PDOT11EXT_IHV_PARAMS, DOT11EXT_IHV_PARAMS structure [Network Drivers Starting with Windows Vista], *PDOT11EXT_IHV_PARAMS, PDOT11EXT_IHV_PARAMS structure pointer [Network Drivers Starting with Windows Vista], Native_802.11_data_types_90966964-74cc-4ff7-ae77-2807ab20d869.xml, netvista.dot11ext_ihv_params"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wlanihvtypes.h
-req.include-header : Wlanihv.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating   systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDOT11EXT_IHV_PARAMS, DOT11EXT_IHV_PARAMS"
-req.product : Windows 10 or later.
+UID: NS:wlanihvtypes._DOT11EXT_IHV_PARAMS
+title: "_DOT11EXT_IHV_PARAMS"
+author: windows-driver-content
+description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+old-location: netvista\dot11ext_ihv_params.htm
+old-project: netvista
+ms.assetid: 1264bfe7-3ab6-4ba0-aa41-cf81bc9bb687
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: "_DOT11EXT_IHV_PARAMS, DOT11EXT_IHV_PARAMS, PDOT11EXT_IHV_PARAMS, wlanihvtypes/DOT11EXT_IHV_PARAMS, wlanihvtypes/PDOT11EXT_IHV_PARAMS, DOT11EXT_IHV_PARAMS structure [Network Drivers Starting with Windows Vista], *PDOT11EXT_IHV_PARAMS, PDOT11EXT_IHV_PARAMS structure pointer [Network Drivers Starting with Windows Vista], Native_802.11_data_types_90966964-74cc-4ff7-ae77-2807ab20d869.xml, netvista.dot11ext_ihv_params"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wlanihvtypes.h
+req.include-header: Wlanihv.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wlanihvtypes.h
+apiname:
+-	DOT11EXT_IHV_PARAMS
+product: Windows
+targetos: Windows
+req.typenames: "*PDOT11EXT_IHV_PARAMS, DOT11EXT_IHV_PARAMS"
+req.product: Windows 10 or later.
 ---
 
 # _DOT11EXT_IHV_PARAMS structure

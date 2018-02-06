@@ -1,42 +1,47 @@
 ---
-UID : NF:video.VideoPortGetDeviceData
-title : VideoPortGetDeviceData function
-author : windows-driver-content
-description : The VideoPortGetDeviceData function retrieves system-detected configuration information from the ..\Machine\Hardware\Description tree in the registry.
-old-location : display\videoportgetdevicedata.htm
-old-project : display
-ms.assetid : 95df7ed6-ac9e-4620-bc3c-54e45a123fdc
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : VideoPortGetDeviceData, display.videoportgetdevicedata, VideoPort_Functions_01e88665-7ecb-470e-b25b-21a3c62f7485.xml, video/VideoPortGetDeviceData, VideoPortGetDeviceData function [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows 2000 and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Videoprt.lib
-req.dll : Videoprt.sys
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_PORT_SERVICES
-req.product : Windows 10 or later.
+UID: NF:video.VideoPortGetDeviceData
+title: VideoPortGetDeviceData function
+author: windows-driver-content
+description: The VideoPortGetDeviceData function retrieves system-detected configuration information from the ..\Machine\Hardware\Description tree in the registry.
+old-location: display\videoportgetdevicedata.htm
+old-project: display
+ms.assetid: 95df7ed6-ac9e-4620-bc3c-54e45a123fdc
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: VideoPortGetDeviceData, display.videoportgetdevicedata, VideoPort_Functions_01e88665-7ecb-470e-b25b-21a3c62f7485.xml, video/VideoPortGetDeviceData, VideoPortGetDeviceData function [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows 2000 and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Videoprt.lib
+req.dll: Videoprt.sys
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Videoprt.sys
+apiname:
+-	VideoPortGetDeviceData
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_PORT_SERVICES
+req.product: Windows 10 or later.
 ---
 
 

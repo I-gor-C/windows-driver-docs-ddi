@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.PoGetSystemWake
-title : PoGetSystemWake function
-author : windows-driver-content
-description : The PoGetSystemWake routine determines whether a specified IRP has been marked as waking the system from a sleeping state.
-old-location : kernel\pogetsystemwake.htm
-old-project : kernel
-ms.assetid : f2e6bcd6-ed6b-4c88-af96-768284bddb24
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : PoGetSystemWake, PoGetSystemWake routine [Kernel-Mode Driver Architecture], wdm/PoGetSystemWake, kernel.pogetsystemwake, portn_0762df5c-0956-4561-9984-83c680bdd764.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.PoGetSystemWake
+title: PoGetSystemWake function
+author: windows-driver-content
+description: The PoGetSystemWake routine determines whether a specified IRP has been marked as waking the system from a sleeping state.
+old-location: kernel\pogetsystemwake.htm
+old-project: kernel
+ms.assetid: f2e6bcd6-ed6b-4c88-af96-768284bddb24
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: PoGetSystemWake, PoGetSystemWake routine [Kernel-Mode Driver Architecture], wdm/PoGetSystemWake, kernel.pogetsystemwake, portn_0762df5c-0956-4561-9984-83c680bdd764.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	PoGetSystemWake
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

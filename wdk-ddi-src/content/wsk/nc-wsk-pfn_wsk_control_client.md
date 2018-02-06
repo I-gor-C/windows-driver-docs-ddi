@@ -1,42 +1,47 @@
 ---
-UID : NC:wsk.PFN_WSK_CONTROL_CLIENT
-title : PFN_WSK_CONTROL_CLIENT
-author : windows-driver-content
-description : The WskControlClient function performs control operations on a WSK client object.
-old-location : netvista\wskcontrolclient.htm
-old-project : netvista
-ms.assetid : dad13c60-3511-4641-9182-71a1ce032a69
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.wskcontrolclient, WskControlClient callback function [Network Drivers Starting with Windows Vista], WskControlClient, PFN_WSK_CONTROL_CLIENT, PFN_WSK_CONTROL_CLIENT, wsk/WskControlClient, wskref_11f754a6-78c0-44ca-8dbc-75521ed659b7.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wsk.h
-req.include-header : Wsk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating   systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WNODE_HEADER, *PWNODE_HEADER
-req.product : Windows 10 or later.
+UID: NC:wsk.PFN_WSK_CONTROL_CLIENT
+title: PFN_WSK_CONTROL_CLIENT
+author: windows-driver-content
+description: The WskControlClient function performs control operations on a WSK client object.
+old-location: netvista\wskcontrolclient.htm
+old-project: netvista
+ms.assetid: dad13c60-3511-4641-9182-71a1ce032a69
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.wskcontrolclient, WskControlClient callback function [Network Drivers Starting with Windows Vista], WskControlClient, PFN_WSK_CONTROL_CLIENT, PFN_WSK_CONTROL_CLIENT, wsk/WskControlClient, wskref_11f754a6-78c0-44ca-8dbc-75521ed659b7.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wsk.h
+req.include-header: Wsk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	wsk.h
+apiname:
+-	WskControlClient
+product: Windows
+targetos: Windows
+req.typenames: WNODE_HEADER, *PWNODE_HEADER
+req.product: Windows 10 or later.
 ---
 
 

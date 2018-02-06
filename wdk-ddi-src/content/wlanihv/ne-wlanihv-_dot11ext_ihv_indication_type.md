@@ -1,42 +1,47 @@
 ---
-UID : NE:wlanihv._DOT11EXT_IHV_INDICATION_TYPE
-title : "_DOT11EXT_IHV_INDICATION_TYPE"
-author : windows-driver-content
-description : Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
-old-location : netvista\dot11ext_ihv_indication_type.htm
-old-project : netvista
-ms.assetid : c4cba30d-f0ba-424b-aa05-2717fa8fcc4e
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : IndicationTypeTkipMicFailure, IndicationTypePhyStateChange, IndicationTypePmkidCandidateList, PDOT11EXT_IHV_INDICATION_TYPE enumeration pointer [Network Drivers Starting with Windows Vista], wlanihv/IndicationTypePmkidCandidateList, wlanihv/IndicationTypeTkipMicFailure, PDOT11EXT_IHV_INDICATION_TYPE, *PDOT11EXT_IHV_INDICATION_TYPE, Native_802.11_data_types_57d8dd95-82d4-41e6-8ba3-b1ec5254b4b8.xml, wlanihv/IndicationTypePhyStateChange, wlanihv/PDOT11EXT_IHV_INDICATION_TYPE, IndicationTypeLinkQuality, IndicationTypeNicSpecificNotification, wlanihv/DOT11EXT_IHV_INDICATION_TYPE, _DOT11EXT_IHV_INDICATION_TYPE, DOT11EXT_IHV_INDICATION_TYPE, wlanihv/IndicationTypeNicSpecificNotification, DOT11EXT_IHV_INDICATION_TYPE enumeration [Network Drivers Starting with Windows Vista], wlanihv/IndicationTypeLinkQuality, netvista.dot11ext_ihv_indication_type
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : wlanihv.h
-req.include-header : Wlanihv.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating   systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDOT11EXT_IHV_INDICATION_TYPE, DOT11EXT_IHV_INDICATION_TYPE"
-req.product : Windows 10 or later.
+UID: NE:wlanihv._DOT11EXT_IHV_INDICATION_TYPE
+title: "_DOT11EXT_IHV_INDICATION_TYPE"
+author: windows-driver-content
+description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+old-location: netvista\dot11ext_ihv_indication_type.htm
+old-project: netvista
+ms.assetid: c4cba30d-f0ba-424b-aa05-2717fa8fcc4e
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: IndicationTypeTkipMicFailure, IndicationTypePhyStateChange, IndicationTypePmkidCandidateList, PDOT11EXT_IHV_INDICATION_TYPE enumeration pointer [Network Drivers Starting with Windows Vista], wlanihv/IndicationTypePmkidCandidateList, wlanihv/IndicationTypeTkipMicFailure, PDOT11EXT_IHV_INDICATION_TYPE, *PDOT11EXT_IHV_INDICATION_TYPE, Native_802.11_data_types_57d8dd95-82d4-41e6-8ba3-b1ec5254b4b8.xml, wlanihv/IndicationTypePhyStateChange, wlanihv/PDOT11EXT_IHV_INDICATION_TYPE, IndicationTypeLinkQuality, IndicationTypeNicSpecificNotification, wlanihv/DOT11EXT_IHV_INDICATION_TYPE, _DOT11EXT_IHV_INDICATION_TYPE, DOT11EXT_IHV_INDICATION_TYPE, wlanihv/IndicationTypeNicSpecificNotification, DOT11EXT_IHV_INDICATION_TYPE enumeration [Network Drivers Starting with Windows Vista], wlanihv/IndicationTypeLinkQuality, netvista.dot11ext_ihv_indication_type
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: wlanihv.h
+req.include-header: Wlanihv.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wlanihv.h
+apiname:
+-	DOT11EXT_IHV_INDICATION_TYPE
+product: Windows
+targetos: Windows
+req.typenames: "*PDOT11EXT_IHV_INDICATION_TYPE, DOT11EXT_IHV_INDICATION_TYPE"
+req.product: Windows 10 or later.
 ---
 
 # _DOT11EXT_IHV_INDICATION_TYPE Enumeration
@@ -57,31 +62,31 @@ typedef enum _DOT11EXT_IHV_INDICATION_TYPE {
 ## Constants
 
 <table>
-
-<tr>
-<td>IndicationTypeLinkQuality</td>
-<td>Indicates link quality.</td>
-</tr>
-
-<tr>
-<td>IndicationTypeNicSpecificNotification</td>
-<td>Indicates a NIC-specific notification.</td>
-</tr>
-
-<tr>
-<td>IndicationTypePhyStateChange</td>
-<td>Indicates a PHY state change.</td>
-</tr>
-
-<tr>
-<td>IndicationTypePmkidCandidateList</td>
-<td>Indicates a PMKID candidate list.</td>
-</tr>
-
-<tr>
-<td>IndicationTypeTkipMicFailure</td>
-<td>Indicates a TKIP MIC failure.</td>
-</tr>
+            
+                <tr>
+                    <td>IndicationTypeLinkQuality</td>
+                    <td>Indicates link quality.</td>
+                </tr>
+            
+                <tr>
+                    <td>IndicationTypeNicSpecificNotification</td>
+                    <td>Indicates a NIC-specific notification.</td>
+                </tr>
+            
+                <tr>
+                    <td>IndicationTypePhyStateChange</td>
+                    <td>Indicates a PHY state change.</td>
+                </tr>
+            
+                <tr>
+                    <td>IndicationTypePmkidCandidateList</td>
+                    <td>Indicates a PMKID candidate list.</td>
+                </tr>
+            
+                <tr>
+                    <td>IndicationTypeTkipMicFailure</td>
+                    <td>Indicates a TKIP MIC failure.</td>
+                </tr>
 </table>
 
 

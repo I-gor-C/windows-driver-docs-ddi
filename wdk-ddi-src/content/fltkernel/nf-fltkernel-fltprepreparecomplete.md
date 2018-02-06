@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltPrePrepareComplete
-title : FltPrePrepareComplete function
-author : windows-driver-content
-description : The FltPrePrepareComplete routine acknowledges a TRANSACTION_NOTIFY_PREPREPARE notification.
-old-location : ifsk\fltprepreparecomplete.htm
-old-project : ifsk
-ms.assetid : f4049af3-3a6f-40fc-a2a7-fd081b27170e
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltApiRef_p_to_z_d0d56c7a-abff-4cd2-a1c7-a511d1ac8903.xml, FltPrePrepareComplete, ifsk.fltprepreparecomplete, fltkernel/FltPrePrepareComplete, FltPrePrepareComplete routine [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : This routine is available on Windows Vista and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltPrePrepareComplete
+title: FltPrePrepareComplete function
+author: windows-driver-content
+description: The FltPrePrepareComplete routine acknowledges a TRANSACTION_NOTIFY_PREPREPARE notification.
+old-location: ifsk\fltprepreparecomplete.htm
+old-project: ifsk
+ms.assetid: f4049af3-3a6f-40fc-a2a7-fd081b27170e
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltApiRef_p_to_z_d0d56c7a-abff-4cd2-a1c7-a511d1ac8903.xml, FltPrePrepareComplete, ifsk.fltprepreparecomplete, fltkernel/FltPrePrepareComplete, FltPrePrepareComplete routine [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: This routine is available on Windows Vista and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltPrePrepareComplete
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NF:wia_lh.IWiaImageFilter.FilterPreviewImage
-title : IWiaImageFilter::FilterPreviewImage method
-author : windows-driver-content
-description : The IWiaImageFilter::FilterPreviewImage method is called by the WIA Preview component, when an application calls the IWiaPreview::UpdatePreview method.
-old-location : image\iwiaimagefilter_filterpreviewimage.htm
-old-project : image
-ms.assetid : 92e4ea13-156b-4d5e-8268-ddb45f6d7b50
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : image.iwiaimagefilter_filterpreviewimage, IWiaErrorHandler_22a9ad6b-b9f4-49e5-9c62-2d32fbaf3d02.xml, FilterPreviewImage, FilterPreviewImage method [Imaging Devices], IWiaImageFilter interface, IWiaImageFilter::FilterPreviewImage, IWiaImageFilter, FilterPreviewImage method [Imaging Devices], IWiaImageFilter interface [Imaging Devices], FilterPreviewImage method, wia_lh/IWiaImageFilter::FilterPreviewImage
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wia_lh.h
-req.include-header : Wia_lh.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wia_lh.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : BMP_IMAGE_INFO, *PBMP_IMAGE_INFO
-req.product : Windows 10 or later.
+UID: NF:wia_lh.IWiaImageFilter.FilterPreviewImage
+title: IWiaImageFilter::FilterPreviewImage method
+author: windows-driver-content
+description: The IWiaImageFilter::FilterPreviewImage method is called by the WIA Preview component, when an application calls the IWiaPreview::UpdatePreview method.
+old-location: image\iwiaimagefilter_filterpreviewimage.htm
+old-project: image
+ms.assetid: 92e4ea13-156b-4d5e-8268-ddb45f6d7b50
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: image.iwiaimagefilter_filterpreviewimage, IWiaErrorHandler_22a9ad6b-b9f4-49e5-9c62-2d32fbaf3d02.xml, FilterPreviewImage, FilterPreviewImage method [Imaging Devices], IWiaImageFilter interface, IWiaImageFilter::FilterPreviewImage, IWiaImageFilter, FilterPreviewImage method [Imaging Devices], IWiaImageFilter interface [Imaging Devices], FilterPreviewImage method, wia_lh/IWiaImageFilter::FilterPreviewImage
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wia_lh.h
+req.include-header: Wia_lh.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wia_lh.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	wia_lh.h
+apiname:
+-	IWiaImageFilter.FilterPreviewImage
+product: Windows
+targetos: Windows
+req.typenames: BMP_IMAGE_INFO, *PBMP_IMAGE_INFO
+req.product: Windows 10 or later.
 ---
 
 

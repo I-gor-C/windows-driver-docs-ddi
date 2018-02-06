@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugDataSpaces4.ReadUnicodeStringVirtualWide
-title : IDebugDataSpaces4::ReadUnicodeStringVirtualWide method
-author : windows-driver-content
-description : The ReadUnicodeStringVirtualWide method reads a null-terminated, Unicode string from the target.
-old-location : debugger\readunicodestringvirtualwide.htm
-old-project : debugger
-ms.assetid : 7c360f9a-83f6-4bc8-abb4-08d1b0c4fdc9
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugDataSpaces_c722fa7f-bbd2-4e0c-bd83-c59d2442ae26.xml, ReadUnicodeStringVirtualWide, IDebugDataSpaces4::ReadUnicodeStringVirtualWide, ReadUnicodeStringVirtualWide method [Windows Debugging], IDebugDataSpaces4 interface, ReadUnicodeStringVirtualWide method [Windows Debugging], IDebugDataSpaces4 interface [Windows Debugging], ReadUnicodeStringVirtualWide method, dbgeng/IDebugDataSpaces4::ReadUnicodeStringVirtualWide, IDebugDataSpaces4, debugger.readunicodestringvirtualwide
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugDataSpaces4.ReadUnicodeStringVirtualWide
+title: IDebugDataSpaces4::ReadUnicodeStringVirtualWide method
+author: windows-driver-content
+description: The ReadUnicodeStringVirtualWide method reads a null-terminated, Unicode string from the target.
+old-location: debugger\readunicodestringvirtualwide.htm
+old-project: debugger
+ms.assetid: 7c360f9a-83f6-4bc8-abb4-08d1b0c4fdc9
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugDataSpaces_c722fa7f-bbd2-4e0c-bd83-c59d2442ae26.xml, ReadUnicodeStringVirtualWide, IDebugDataSpaces4::ReadUnicodeStringVirtualWide, ReadUnicodeStringVirtualWide method [Windows Debugging], IDebugDataSpaces4 interface, ReadUnicodeStringVirtualWide method [Windows Debugging], IDebugDataSpaces4 interface [Windows Debugging], ReadUnicodeStringVirtualWide method, dbgeng/IDebugDataSpaces4::ReadUnicodeStringVirtualWide, IDebugDataSpaces4, debugger.readunicodestringvirtualwide
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugDataSpaces4.ReadUnicodeStringVirtualWide
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

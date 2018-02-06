@@ -1,42 +1,47 @@
 ---
-UID : NS:video._VIDEO_PORT_INT10_INTERFACE
-title : "_VIDEO_PORT_INT10_INTERFACE"
-author : windows-driver-content
-description : The VIDEO_PORT_INT10_INTERFACE structure provides a way to allocate and deallocate memory in another thread's context, read from and write to that memory, and make INT10 BIOS calls.
-old-location : display\video_port_int10_interface.htm
-old-project : display
-ms.assetid : 551b2255-c221-4a95-a812-dec34f09438b
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : PVIDEO_PORT_INT10_INTERFACE, VIDEO_PORT_INT10_INTERFACE, Video_Structs_b0f9d9fa-c989-4989-9f63-deb0ca211144.xml, _VIDEO_PORT_INT10_INTERFACE, *PVIDEO_PORT_INT10_INTERFACE, video/VIDEO_PORT_INT10_INTERFACE, PVIDEO_PORT_INT10_INTERFACE structure pointer [Display Devices], VIDEO_PORT_INT10_INTERFACE structure [Display Devices], display.video_port_int10_interface, video/PVIDEO_PORT_INT10_INTERFACE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PVIDEO_PORT_INT10_INTERFACE, VIDEO_PORT_INT10_INTERFACE"
-req.product : Windows 10 or later.
+UID: NS:video._VIDEO_PORT_INT10_INTERFACE
+title: "_VIDEO_PORT_INT10_INTERFACE"
+author: windows-driver-content
+description: The VIDEO_PORT_INT10_INTERFACE structure provides a way to allocate and deallocate memory in another thread's context, read from and write to that memory, and make INT10 BIOS calls.
+old-location: display\video_port_int10_interface.htm
+old-project: display
+ms.assetid: 551b2255-c221-4a95-a812-dec34f09438b
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: PVIDEO_PORT_INT10_INTERFACE, VIDEO_PORT_INT10_INTERFACE, Video_Structs_b0f9d9fa-c989-4989-9f63-deb0ca211144.xml, _VIDEO_PORT_INT10_INTERFACE, *PVIDEO_PORT_INT10_INTERFACE, video/VIDEO_PORT_INT10_INTERFACE, PVIDEO_PORT_INT10_INTERFACE structure pointer [Display Devices], VIDEO_PORT_INT10_INTERFACE structure [Display Devices], display.video_port_int10_interface, video/PVIDEO_PORT_INT10_INTERFACE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	video.h
+apiname:
+-	VIDEO_PORT_INT10_INTERFACE
+product: Windows
+targetos: Windows
+req.typenames: "*PVIDEO_PORT_INT10_INTERFACE, VIDEO_PORT_INT10_INTERFACE"
+req.product: Windows 10 or later.
 ---
 
 # _VIDEO_PORT_INT10_INTERFACE structure

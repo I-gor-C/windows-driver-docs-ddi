@@ -1,41 +1,46 @@
 ---
-UID : NS:ndis._NDIS_FILTER_ATTRIBUTES
-title : "_NDIS_FILTER_ATTRIBUTES"
-author : windows-driver-content
-description : The NDIS_FILTER_ATTRIBUTES structure defines the attributes of a filter module.
-old-location : netvista\ndis_filter_attributes.htm
-old-project : netvista
-ms.assetid : a377d809-4a6f-413e-a26a-446b4eca85ab
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.ndis_filter_attributes, NDIS_FILTER_ATTRIBUTES, filter_structures_ref_8711cb33-bba0-41ba-912b-af351c7e758d.xml, _NDIS_FILTER_ATTRIBUTES, ndis/PNDIS_FILTER_ATTRIBUTES, *PNDIS_FILTER_ATTRIBUTES, NDIS_FILTER_ATTRIBUTES structure [Network Drivers Starting with Windows Vista], ndis/NDIS_FILTER_ATTRIBUTES, PNDIS_FILTER_ATTRIBUTES structure pointer [Network Drivers Starting with Windows Vista], PNDIS_FILTER_ATTRIBUTES
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : See Remarks section
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_FILTER_ATTRIBUTES, *PNDIS_FILTER_ATTRIBUTES
+UID: NS:ndis._NDIS_FILTER_ATTRIBUTES
+title: "_NDIS_FILTER_ATTRIBUTES"
+author: windows-driver-content
+description: The NDIS_FILTER_ATTRIBUTES structure defines the attributes of a filter module.
+old-location: netvista\ndis_filter_attributes.htm
+old-project: netvista
+ms.assetid: a377d809-4a6f-413e-a26a-446b4eca85ab
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.ndis_filter_attributes, NDIS_FILTER_ATTRIBUTES, filter_structures_ref_8711cb33-bba0-41ba-912b-af351c7e758d.xml, _NDIS_FILTER_ATTRIBUTES, ndis/PNDIS_FILTER_ATTRIBUTES, *PNDIS_FILTER_ATTRIBUTES, NDIS_FILTER_ATTRIBUTES structure [Network Drivers Starting with Windows Vista], ndis/NDIS_FILTER_ATTRIBUTES, PNDIS_FILTER_ATTRIBUTES structure pointer [Network Drivers Starting with Windows Vista], PNDIS_FILTER_ATTRIBUTES
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: See Remarks section
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndis.h
+apiname:
+-	NDIS_FILTER_ATTRIBUTES
+product: Windows
+targetos: Windows
+req.typenames: NDIS_FILTER_ATTRIBUTES, *PNDIS_FILTER_ATTRIBUTES
 ---
 
 # _NDIS_FILTER_ATTRIBUTES structure

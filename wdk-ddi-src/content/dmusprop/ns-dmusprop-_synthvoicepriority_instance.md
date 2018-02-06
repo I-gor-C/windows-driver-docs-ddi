@@ -1,41 +1,46 @@
 ---
-UID : NS:dmusprop._SYNTHVOICEPRIORITY_INSTANCE
-title : "_SYNTHVOICEPRIORITY_INSTANCE"
-author : windows-driver-content
-description : The SYNTHVOICEPRIORITY_INSTANCE structure identifies a voice in a MIDI synthesizer by specifying the voice's channel group (set of 16 MIDI channels) and its channel number within that group.
-old-location : audio\synthvoicepriority_instance.htm
-old-project : audio
-ms.assetid : dc9acd16-c515-4e47-9a0b-9dec46e30f74
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : audio.synthvoicepriority_instance, dmusprop/SYNTHVOICEPRIORITY_INSTANCE, dmusprop/PSYNTHVOICEPRIORITY_INSTANCE, _SYNTHVOICEPRIORITY_INSTANCE, aud-prop_86a44512-a1b5-4380-a96a-5e9184ff71c2.xml, SYNTHVOICEPRIORITY_INSTANCE structure [Audio Devices], SYNTHVOICEPRIORITY_INSTANCE, *PSYNTHVOICEPRIORITY_INSTANCE, PSYNTHVOICEPRIORITY_INSTANCE structure pointer [Audio Devices], PSYNTHVOICEPRIORITY_INSTANCE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : dmusprop.h
-req.include-header : Dmusprop.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSYNTHVOICEPRIORITY_INSTANCE, SYNTHVOICEPRIORITY_INSTANCE"
+UID: NS:dmusprop._SYNTHVOICEPRIORITY_INSTANCE
+title: "_SYNTHVOICEPRIORITY_INSTANCE"
+author: windows-driver-content
+description: The SYNTHVOICEPRIORITY_INSTANCE structure identifies a voice in a MIDI synthesizer by specifying the voice's channel group (set of 16 MIDI channels) and its channel number within that group.
+old-location: audio\synthvoicepriority_instance.htm
+old-project: audio
+ms.assetid: dc9acd16-c515-4e47-9a0b-9dec46e30f74
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: audio.synthvoicepriority_instance, dmusprop/SYNTHVOICEPRIORITY_INSTANCE, dmusprop/PSYNTHVOICEPRIORITY_INSTANCE, _SYNTHVOICEPRIORITY_INSTANCE, aud-prop_86a44512-a1b5-4380-a96a-5e9184ff71c2.xml, SYNTHVOICEPRIORITY_INSTANCE structure [Audio Devices], SYNTHVOICEPRIORITY_INSTANCE, *PSYNTHVOICEPRIORITY_INSTANCE, PSYNTHVOICEPRIORITY_INSTANCE structure pointer [Audio Devices], PSYNTHVOICEPRIORITY_INSTANCE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: dmusprop.h
+req.include-header: Dmusprop.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	dmusprop.h
+apiname:
+-	SYNTHVOICEPRIORITY_INSTANCE
+product: Windows
+targetos: Windows
+req.typenames: "*PSYNTHVOICEPRIORITY_INSTANCE, SYNTHVOICEPRIORITY_INSTANCE"
 ---
 
 # _SYNTHVOICEPRIORITY_INSTANCE structure

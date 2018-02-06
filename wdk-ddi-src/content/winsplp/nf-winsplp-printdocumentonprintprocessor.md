@@ -1,42 +1,48 @@
 ---
-UID : NF:winsplp.PrintDocumentOnPrintProcessor
-title : PrintDocumentOnPrintProcessor function
-author : windows-driver-content
-description : A print processor's PrintDocumentOnPrintProcessor function converts a print job from a spooled format into raw data that can be sent to a print monitor.
-old-location : print\printdocumentonprintprocessor.htm
-old-project : print
-ms.assetid : 1360a699-e312-40be-bf2f-b73b1419cfc5
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : print.printdocumentonprintprocessor, spoolfnc_38f81d3c-62d9-4804-ad89-120c9a333a09.xml, PrintDocumentOnPrintProcessor function [Print Devices], PrintDocumentOnPrintProcessor, winsplp/PrintDocumentOnPrintProcessor
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : winsplp.h
-req.include-header : Winsplp.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Nwprint.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NOTIFICATION_CONFIG_FLAGS
-req.product : Windows 10 or later.
+UID: NF:winsplp.PrintDocumentOnPrintProcessor
+title: PrintDocumentOnPrintProcessor function
+author: windows-driver-content
+description: A print processor's PrintDocumentOnPrintProcessor function converts a print job from a spooled format into raw data that can be sent to a print monitor.
+old-location: print\printdocumentonprintprocessor.htm
+old-project: print
+ms.assetid: 1360a699-e312-40be-bf2f-b73b1419cfc5
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: print.printdocumentonprintprocessor, spoolfnc_38f81d3c-62d9-4804-ad89-120c9a333a09.xml, PrintDocumentOnPrintProcessor function [Print Devices], PrintDocumentOnPrintProcessor, winsplp/PrintDocumentOnPrintProcessor
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: winsplp.h
+req.include-header: Winsplp.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Nwprint.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Nwprint.lib
+-	Nwprint.dll
+apiname:
+-	PrintDocumentOnPrintProcessor
+product: Windows
+targetos: Windows
+req.typenames: NOTIFICATION_CONFIG_FLAGS
+req.product: Windows 10 or later.
 ---
 
 

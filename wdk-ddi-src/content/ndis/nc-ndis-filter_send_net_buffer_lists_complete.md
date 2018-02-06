@@ -1,41 +1,46 @@
 ---
-UID : NC:ndis.FILTER_SEND_NET_BUFFER_LISTS_COMPLETE
-title : FILTER_SEND_NET_BUFFER_LISTS_COMPLETE
-author : windows-driver-content
-description : NDIS calls the FilterSendNetBufferListsComplete function to complete a send request that a filter driver started by calling the NdisFSendNetBufferLists function.Note  You must declare the function by using the FILTER_SEND_NET_BUFFER_LISTS_COMPLETE type.
-old-location : netvista\filtersendnetbufferlistscomplete.htm
-old-project : netvista
-ms.assetid : 1a3a1e80-29f1-4f19-b3c7-9a8b189f18c4
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.filtersendnetbufferlistscomplete, FilterSendNetBufferListsComplete callback function [Network Drivers Starting with Windows Vista], FilterSendNetBufferListsComplete, FILTER_SEND_NET_BUFFER_LISTS_COMPLETE, FILTER_SEND_NET_BUFFER_LISTS_COMPLETE, ndis/FilterSendNetBufferListsComplete, filter_functions_ref_5022c19b-6433-4c57-aa68-20270400950b.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
+UID: NC:ndis.FILTER_SEND_NET_BUFFER_LISTS_COMPLETE
+title: FILTER_SEND_NET_BUFFER_LISTS_COMPLETE
+author: windows-driver-content
+description: NDIS calls the FilterSendNetBufferListsComplete function to complete a send request that a filter driver started by calling the NdisFSendNetBufferLists function.Note  You must declare the function by using the FILTER_SEND_NET_BUFFER_LISTS_COMPLETE type.
+old-location: netvista\filtersendnetbufferlistscomplete.htm
+old-project: netvista
+ms.assetid: 1a3a1e80-29f1-4f19-b3c7-9a8b189f18c4
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.filtersendnetbufferlistscomplete, FilterSendNetBufferListsComplete callback function [Network Drivers Starting with Windows Vista], FilterSendNetBufferListsComplete, FILTER_SEND_NET_BUFFER_LISTS_COMPLETE, FILTER_SEND_NET_BUFFER_LISTS_COMPLETE, ndis/FilterSendNetBufferListsComplete, filter_functions_ref_5022c19b-6433-4c57-aa68-20270400950b.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ndis.h
+apiname:
+-	FilterSendNetBufferListsComplete
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 

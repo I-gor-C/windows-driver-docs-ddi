@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfusb.WdfUsbTargetDeviceWdmGetConfigurationHandle
-title : WdfUsbTargetDeviceWdmGetConfigurationHandle function
-author : windows-driver-content
-description : The WdfUsbTargetDeviceWdmGetConfigurationHandle method returns the USBD_CONFIGURATION_HANDLE-typed handle that is associated with the current configuration of a specified USB device.
-old-location : wdf\wdfusbtargetdevicewdmgetconfigurationhandle.htm
-old-project : wdf
-ms.assetid : 7f501e5c-13dd-418d-9b9f-f984aed45cc0
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.wdfusbtargetdevicewdmgetconfigurationhandle, WdfUsbTargetDeviceWdmGetConfigurationHandle, DFUsbRef_503d3873-7148-4084-b56e-199b7437511b.xml, PFN_WDFUSBTARGETDEVICEWDMGETCONFIGURATIONHANDLE, wdfusb/WdfUsbTargetDeviceWdmGetConfigurationHandle, kmdf.wdfusbtargetdevicewdmgetconfigurationhandle, WdfUsbTargetDeviceWdmGetConfigurationHandle method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfusb.h
-req.include-header : Wdfusb.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2, UsbKmdfIrql, UsbKmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfusb.WdfUsbTargetDeviceWdmGetConfigurationHandle
+title: WdfUsbTargetDeviceWdmGetConfigurationHandle function
+author: windows-driver-content
+description: The WdfUsbTargetDeviceWdmGetConfigurationHandle method returns the USBD_CONFIGURATION_HANDLE-typed handle that is associated with the current configuration of a specified USB device.
+old-location: wdf\wdfusbtargetdevicewdmgetconfigurationhandle.htm
+old-project: wdf
+ms.assetid: 7f501e5c-13dd-418d-9b9f-f984aed45cc0
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.wdfusbtargetdevicewdmgetconfigurationhandle, WdfUsbTargetDeviceWdmGetConfigurationHandle, DFUsbRef_503d3873-7148-4084-b56e-199b7437511b.xml, PFN_WDFUSBTARGETDEVICEWDMGETCONFIGURATIONHANDLE, wdfusb/WdfUsbTargetDeviceWdmGetConfigurationHandle, kmdf.wdfusbtargetdevicewdmgetconfigurationhandle, WdfUsbTargetDeviceWdmGetConfigurationHandle method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfusb.h
+req.include-header: Wdfusb.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2, UsbKmdfIrql, UsbKmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfUsbTargetDeviceWdmGetConfigurationHandle
+product: Windows
+targetos: Windows
+req.typenames: WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
+req.product: Windows 10 or later.
 ---
 
 

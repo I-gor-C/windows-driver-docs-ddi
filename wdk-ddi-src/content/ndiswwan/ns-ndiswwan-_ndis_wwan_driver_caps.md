@@ -1,41 +1,46 @@
 ---
-UID : NS:ndiswwan._NDIS_WWAN_DRIVER_CAPS
-title : "_NDIS_WWAN_DRIVER_CAPS"
-author : windows-driver-content
-description : The NDIS_WWAN_DRIVER_CAPS structure represents the capabilities of the miniport driver.
-old-location : netvista\ndis_wwan_driver_caps.htm
-old-project : netvista
-ms.assetid : 413ea129-2c55-4e7f-ad7c-ce99840f7066
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : PNDIS_WWAN_DRIVER_CAPS structure pointer [Network Drivers Starting with Windows Vista], ndiswwan/NDIS_WWAN_DRIVER_CAPS, PNDIS_WWAN_DRIVER_CAPS, NDIS_WWAN_DRIVER_CAPS, WwanRef_9c8d6cfb-7f4b-47ac-879b-4c3ada7f9239.xml, NDIS_WWAN_DRIVER_CAPS structure [Network Drivers Starting with Windows Vista], netvista.ndis_wwan_driver_caps, *PNDIS_WWAN_DRIVER_CAPS, ndiswwan/PNDIS_WWAN_DRIVER_CAPS, _NDIS_WWAN_DRIVER_CAPS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndiswwan.h
-req.include-header : Ndiswwan.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_WWAN_DRIVER_CAPS, *PNDIS_WWAN_DRIVER_CAPS
+UID: NS:ndiswwan._NDIS_WWAN_DRIVER_CAPS
+title: "_NDIS_WWAN_DRIVER_CAPS"
+author: windows-driver-content
+description: The NDIS_WWAN_DRIVER_CAPS structure represents the capabilities of the miniport driver.
+old-location: netvista\ndis_wwan_driver_caps.htm
+old-project: netvista
+ms.assetid: 413ea129-2c55-4e7f-ad7c-ce99840f7066
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: PNDIS_WWAN_DRIVER_CAPS structure pointer [Network Drivers Starting with Windows Vista], ndiswwan/NDIS_WWAN_DRIVER_CAPS, PNDIS_WWAN_DRIVER_CAPS, NDIS_WWAN_DRIVER_CAPS, WwanRef_9c8d6cfb-7f4b-47ac-879b-4c3ada7f9239.xml, NDIS_WWAN_DRIVER_CAPS structure [Network Drivers Starting with Windows Vista], netvista.ndis_wwan_driver_caps, *PNDIS_WWAN_DRIVER_CAPS, ndiswwan/PNDIS_WWAN_DRIVER_CAPS, _NDIS_WWAN_DRIVER_CAPS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndiswwan.h
+req.include-header: Ndiswwan.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndiswwan.h
+apiname:
+-	NDIS_WWAN_DRIVER_CAPS
+product: Windows
+targetos: Windows
+req.typenames: NDIS_WWAN_DRIVER_CAPS, *PNDIS_WWAN_DRIVER_CAPS
 ---
 
 # _NDIS_WWAN_DRIVER_CAPS structure

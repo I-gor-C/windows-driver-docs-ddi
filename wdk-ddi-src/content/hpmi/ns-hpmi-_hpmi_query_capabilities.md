@@ -1,41 +1,46 @@
 ---
-UID : NS:hpmi._HPMI_QUERY_CAPABILITIES
-title : "_HPMI_QUERY_CAPABILITIES"
-author : windows-driver-content
-description : The HPMI_QUERY_CAPABILITIES structure is used to query HPMI capabilities.
-old-location : powermeter\hpmi_query_capabilities.htm
-old-project : powermeter
-ms.assetid : 9DEEB369-8B9E-40AA-9531-6B8138E5668F
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : "_HPMI_QUERY_CAPABILITIES, hpmi/PHPMI_QUERY_CAPABILITIES, PHPMI_QUERY_CAPABILITIES, PHPMI_QUERY_CAPABILITIES structure pointer [Power Metering and Budgeting Devices], hpmi/HPMI_QUERY_CAPABILITIES, powermeter.hpmi_query_capabilities, HPMI_QUERY_CAPABILITIES, *PHPMI_QUERY_CAPABILITIES, HPMI_QUERY_CAPABILITIES structure [Power Metering and Budgeting Devices]"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : hpmi.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 10, version 1709 and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HPMI_QUERY_CAPABILITIES, *PHPMI_QUERY_CAPABILITIES
+UID: NS:hpmi._HPMI_QUERY_CAPABILITIES
+title: "_HPMI_QUERY_CAPABILITIES"
+author: windows-driver-content
+description: The HPMI_QUERY_CAPABILITIES structure is used to query HPMI capabilities.
+old-location: powermeter\hpmi_query_capabilities.htm
+old-project: powermeter
+ms.assetid: 9DEEB369-8B9E-40AA-9531-6B8138E5668F
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: "_HPMI_QUERY_CAPABILITIES, hpmi/PHPMI_QUERY_CAPABILITIES, PHPMI_QUERY_CAPABILITIES, PHPMI_QUERY_CAPABILITIES structure pointer [Power Metering and Budgeting Devices], hpmi/HPMI_QUERY_CAPABILITIES, powermeter.hpmi_query_capabilities, HPMI_QUERY_CAPABILITIES, *PHPMI_QUERY_CAPABILITIES, HPMI_QUERY_CAPABILITIES structure [Power Metering and Budgeting Devices]"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: hpmi.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 10, version 1709 and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hpmi.h
+apiname:
+-	HPMI_QUERY_CAPABILITIES
+product: Windows
+targetos: Windows
+req.typenames: HPMI_QUERY_CAPABILITIES, *PHPMI_QUERY_CAPABILITIES
 ---
 
 # _HPMI_QUERY_CAPABILITIES structure

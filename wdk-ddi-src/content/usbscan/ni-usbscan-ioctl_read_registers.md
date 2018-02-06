@@ -1,42 +1,47 @@
 ---
-UID : NI:usbscan.IOCTL_READ_REGISTERS
-title : IOCTL_READ_REGISTERS
-author : windows-driver-content
-description : Reads from USB device registers, using the control pipe.
-old-location : image\ioctl_read_registers.htm
-old-project : image
-ms.assetid : b54c9a15-0d48-4aff-98e5-1f0dfc070ed6
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : image.ioctl_read_registers, IOCTL_READ_REGISTERS control code [Imaging Devices], IOCTL_READ_REGISTERS, usbscan/IOCTL_READ_REGISTERS, stifnc_68af86d1-7d3b-4d2c-a5af-983f0339d71f.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : usbscan.h
-req.include-header : Usbscan.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RAW_PIPE_TYPE
-req.product : Windows 10 or later.
+UID: NI:usbscan.IOCTL_READ_REGISTERS
+title: IOCTL_READ_REGISTERS
+author: windows-driver-content
+description: Reads from USB device registers, using the control pipe.
+old-location: image\ioctl_read_registers.htm
+old-project: image
+ms.assetid: b54c9a15-0d48-4aff-98e5-1f0dfc070ed6
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: image.ioctl_read_registers, IOCTL_READ_REGISTERS control code [Imaging Devices], IOCTL_READ_REGISTERS, usbscan/IOCTL_READ_REGISTERS, stifnc_68af86d1-7d3b-4d2c-a5af-983f0339d71f.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: usbscan.h
+req.include-header: Usbscan.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Usbscan.h
+apiname:
+-	IOCTL_READ_REGISTERS
+product: Windows
+targetos: Windows
+req.typenames: RAW_PIPE_TYPE
+req.product: Windows 10 or later.
 ---
 
 # IOCTL_READ_REGISTERS IOCTL

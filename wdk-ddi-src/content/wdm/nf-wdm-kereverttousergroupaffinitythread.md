@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.KeRevertToUserGroupAffinityThread
-title : KeRevertToUserGroupAffinityThread function
-author : windows-driver-content
-description : The KeRevertToUserGroupAffinityThread routine restores the group affinity of the calling thread to its original value at the time that the thread was created.
-old-location : kernel\kereverttousergroupaffinitythread.htm
-old-project : kernel
-ms.assetid : 13a1a106-0c5c-4c0e-964d-27e549e1c699
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : k105_be46d681-835f-40ba-8120-b8699e16ea0b.xml, KeRevertToUserGroupAffinityThread, wdm/KeRevertToUserGroupAffinityThread, kernel.kereverttousergroupaffinitythread, KeRevertToUserGroupAffinityThread routine [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Ntddk.h, Wdm.h, Ntddk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 7 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= DISPATCH_LEVEL (see Remarks section)."
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.KeRevertToUserGroupAffinityThread
+title: KeRevertToUserGroupAffinityThread function
+author: windows-driver-content
+description: The KeRevertToUserGroupAffinityThread routine restores the group affinity of the calling thread to its original value at the time that the thread was created.
+old-location: kernel\kereverttousergroupaffinitythread.htm
+old-project: kernel
+ms.assetid: 13a1a106-0c5c-4c0e-964d-27e549e1c699
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: k105_be46d681-835f-40ba-8120-b8699e16ea0b.xml, KeRevertToUserGroupAffinityThread, wdm/KeRevertToUserGroupAffinityThread, kernel.kereverttousergroupaffinitythread, KeRevertToUserGroupAffinityThread routine [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Ntddk.h, Wdm.h, Ntddk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 7 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= DISPATCH_LEVEL (see Remarks section)."
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	KeRevertToUserGroupAffinityThread
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

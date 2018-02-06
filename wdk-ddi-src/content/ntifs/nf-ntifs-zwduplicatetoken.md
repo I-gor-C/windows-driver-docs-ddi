@@ -1,41 +1,47 @@
 ---
-UID : NF:ntifs.ZwDuplicateToken
-title : ZwDuplicateToken function
-author : windows-driver-content
-description : The ZwDuplicateToken function creates a handle to a new access token that duplicates an existing token. This function can create either a primary token or an impersonation token.
-old-location : kernel\zwduplicatetoken.htm
-old-project : kernel
-ms.assetid : 89cc86aa-8ab0-4614-b92d-a1c627490d8d
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ZwDuplicateToken function [Kernel-Mode Driver Architecture], k111_5c46bc83-ec51-45f5-a3fc-e199f91d58ce.xml, ZwDuplicateToken, ntifs/NtDuplicateToken, kernel.zwduplicatetoken, ntifs/ZwDuplicateToken, NtDuplicateToken
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h, FltKernel.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.ZwDuplicateToken
+title: ZwDuplicateToken function
+author: windows-driver-content
+description: The ZwDuplicateToken function creates a handle to a new access token that duplicates an existing token. This function can create either a primary token or an impersonation token.
+old-location: kernel\zwduplicatetoken.htm
+old-project: kernel
+ms.assetid: 89cc86aa-8ab0-4614-b92d-a1c627490d8d
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ZwDuplicateToken function [Kernel-Mode Driver Architecture], k111_5c46bc83-ec51-45f5-a3fc-e199f91d58ce.xml, ZwDuplicateToken, ntifs/NtDuplicateToken, kernel.zwduplicatetoken, ntifs/ZwDuplicateToken, NtDuplicateToken
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h, FltKernel.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ZwDuplicateToken
+-	NtDuplicateToken
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

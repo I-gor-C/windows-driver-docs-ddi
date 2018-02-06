@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddndis._NDIS_PORT_ARRAY
-title : "_NDIS_PORT_ARRAY"
-author : windows-driver-content
-description : The NDIS_PORT_ARRAY structure specifies a list of NDIS ports and their associated characteristics.
-old-location : netvista\ndis_port_array.htm
-old-project : netvista
-ms.assetid : f77469d3-ce48-4e17-9fff-1af56296f61f
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : PNDIS_PORT_ARRAY, ntddndis/PNDIS_PORT_ARRAY, _NDIS_PORT_ARRAY, *PNDIS_PORT_ARRAY, NDIS_PORT_ARRAY, PNDIS_PORT_ARRAY structure pointer [Network Drivers Starting with Windows Vista], ndis_ports_ref_1bba9fc6-0cd9-40f7-92ad-20979dcaa400.xml, NDIS_PORT_ARRAY structure [Network Drivers Starting with Windows Vista], ntddndis/NDIS_PORT_ARRAY, netvista.ndis_port_array
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PNDIS_PORT_ARRAY, NDIS_PORT_ARRAY"
+UID: NS:ntddndis._NDIS_PORT_ARRAY
+title: "_NDIS_PORT_ARRAY"
+author: windows-driver-content
+description: The NDIS_PORT_ARRAY structure specifies a list of NDIS ports and their associated characteristics.
+old-location: netvista\ndis_port_array.htm
+old-project: netvista
+ms.assetid: f77469d3-ce48-4e17-9fff-1af56296f61f
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: PNDIS_PORT_ARRAY, ntddndis/PNDIS_PORT_ARRAY, _NDIS_PORT_ARRAY, *PNDIS_PORT_ARRAY, NDIS_PORT_ARRAY, PNDIS_PORT_ARRAY structure pointer [Network Drivers Starting with Windows Vista], ndis_ports_ref_1bba9fc6-0cd9-40f7-92ad-20979dcaa400.xml, NDIS_PORT_ARRAY structure [Network Drivers Starting with Windows Vista], ntddndis/NDIS_PORT_ARRAY, netvista.ndis_port_array
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddndis.h
+apiname:
+-	NDIS_PORT_ARRAY
+product: Windows
+targetos: Windows
+req.typenames: "*PNDIS_PORT_ARRAY, NDIS_PORT_ARRAY"
 ---
 
 # _NDIS_PORT_ARRAY structure

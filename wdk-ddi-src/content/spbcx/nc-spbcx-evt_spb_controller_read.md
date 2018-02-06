@@ -1,42 +1,47 @@
 ---
-UID : NC:spbcx.EVT_SPB_CONTROLLER_READ
-title : EVT_SPB_CONTROLLER_READ
-author : windows-driver-content
-description : An SPB controller driver's EvtSpbControllerIoRead event callback function reads data from the specified target device into the buffers that are supplied with the read request.
-old-location : spb\evtspbcontrollerioread.htm
-old-project : SPB
-ms.assetid : 2BC0E6E7-7EE1-487A-9276-AE8EBB3FFD43
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : SPB.evtspbcontrollerioread, EvtSpbControllerIoRead callback function [Buses], EvtSpbControllerIoRead, EVT_SPB_CONTROLLER_READ, EVT_SPB_CONTROLLER_READ, spbcx/EvtSpbControllerIoRead
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : spbcx.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Supported starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Called at IRQL <= DISPATCH_LEVEL.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SPB_TRANSFER_LIST_ENTRY, *PSPB_TRANSFER_LIST_ENTRY
-req.product : Windows 10 or later.
+UID: NC:spbcx.EVT_SPB_CONTROLLER_READ
+title: EVT_SPB_CONTROLLER_READ
+author: windows-driver-content
+description: An SPB controller driver's EvtSpbControllerIoRead event callback function reads data from the specified target device into the buffers that are supplied with the read request.
+old-location: spb\evtspbcontrollerioread.htm
+old-project: SPB
+ms.assetid: 2BC0E6E7-7EE1-487A-9276-AE8EBB3FFD43
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: SPB.evtspbcontrollerioread, EvtSpbControllerIoRead callback function [Buses], EvtSpbControllerIoRead, EVT_SPB_CONTROLLER_READ, EVT_SPB_CONTROLLER_READ, spbcx/EvtSpbControllerIoRead
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: spbcx.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Supported starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Called at IRQL <= DISPATCH_LEVEL.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Spbcx.h
+apiname:
+-	EvtSpbControllerIoRead
+product: Windows
+targetos: Windows
+req.typenames: SPB_TRANSFER_LIST_ENTRY, *PSPB_TRANSFER_LIST_ENTRY
+req.product: Windows 10 or later.
 ---
 
 

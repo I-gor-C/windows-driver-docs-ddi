@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugControl4.ControlledOutputVaListWide
-title : IDebugControl4::ControlledOutputVaListWide method
-author : windows-driver-content
-description : The ControlledOutputVaListWide method formats a string and sends the result to output callbacks that were registered with some of the engine's clients.
-old-location : debugger\controlledoutputvalistwide.htm
-old-project : debugger
-ms.assetid : 8576a20b-bdb8-47d9-a21e-689a315c6886
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugControl4 interface [Windows Debugging], ControlledOutputVaListWide method, ControlledOutputVaListWide, ControlledOutputVaListWide method [Windows Debugging], IDebugControl4 interface, ControlledOutputVaListWide method [Windows Debugging], dbgeng/IDebugControl4::ControlledOutputVaListWide, IDebugControl4::ControlledOutputVaListWide, IDebugControl4, debugger.controlledoutputvalistwide
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h, Stdarg.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl4.ControlledOutputVaListWide
+title: IDebugControl4::ControlledOutputVaListWide method
+author: windows-driver-content
+description: The ControlledOutputVaListWide method formats a string and sends the result to output callbacks that were registered with some of the engine's clients.
+old-location: debugger\controlledoutputvalistwide.htm
+old-project: debugger
+ms.assetid: 8576a20b-bdb8-47d9-a21e-689a315c6886
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugControl4 interface [Windows Debugging], ControlledOutputVaListWide method, ControlledOutputVaListWide, ControlledOutputVaListWide method [Windows Debugging], IDebugControl4 interface, ControlledOutputVaListWide method [Windows Debugging], dbgeng/IDebugControl4::ControlledOutputVaListWide, IDebugControl4::ControlledOutputVaListWide, IDebugControl4, debugger.controlledoutputvalistwide
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h, Stdarg.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Dbgeng.h
+apiname:
+-	IDebugControl4.ControlledOutputVaListWide
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

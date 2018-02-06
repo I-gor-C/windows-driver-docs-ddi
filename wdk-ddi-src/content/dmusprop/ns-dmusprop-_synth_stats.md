@@ -1,41 +1,46 @@
 ---
-UID : NS:dmusprop._SYNTH_STATS
-title : "_SYNTH_STATS"
-author : windows-driver-content
-description : The SYNTH_STATS structure specifies synthesizer performance statistics such as the number of voices playing, CPU usage, number of notes lost, amount of free memory, and peak volume level.
-old-location : audio\synth_stats.htm
-old-project : audio
-ms.assetid : bbe3552b-0289-4f7f-bdaa-8a6437594247
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : PSYNTH_STATS structure pointer [Audio Devices], dmusprop/PSYNTH_STATS, SYNTH_STATS, SYNTH_STATS structure [Audio Devices], PSYNTH_STATS, aud-prop_04ed015d-56c6-4275-8025-66e67ee6ce87.xml, audio.synth_stats, _SYNTH_STATS, dmusprop/SYNTH_STATS, *PSYNTH_STATS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : dmusprop.h
-req.include-header : Dmusprop.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SYNTH_STATS, *PSYNTH_STATS
+UID: NS:dmusprop._SYNTH_STATS
+title: "_SYNTH_STATS"
+author: windows-driver-content
+description: The SYNTH_STATS structure specifies synthesizer performance statistics such as the number of voices playing, CPU usage, number of notes lost, amount of free memory, and peak volume level.
+old-location: audio\synth_stats.htm
+old-project: audio
+ms.assetid: bbe3552b-0289-4f7f-bdaa-8a6437594247
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: PSYNTH_STATS structure pointer [Audio Devices], dmusprop/PSYNTH_STATS, SYNTH_STATS, SYNTH_STATS structure [Audio Devices], PSYNTH_STATS, aud-prop_04ed015d-56c6-4275-8025-66e67ee6ce87.xml, audio.synth_stats, _SYNTH_STATS, dmusprop/SYNTH_STATS, *PSYNTH_STATS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: dmusprop.h
+req.include-header: Dmusprop.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	dmusprop.h
+apiname:
+-	SYNTH_STATS
+product: Windows
+targetos: Windows
+req.typenames: SYNTH_STATS, *PSYNTH_STATS
 ---
 
 # _SYNTH_STATS structure

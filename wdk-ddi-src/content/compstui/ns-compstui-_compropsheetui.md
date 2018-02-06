@@ -1,41 +1,46 @@
 ---
-UID : NS:compstui._COMPROPSHEETUI
-title : "_COMPROPSHEETUI"
-author : windows-driver-content
-description : The COMPROPSHEETUI structure is used as an input parameter to CPSUI's ComPropSheet function, if the function code is CPSFUNC_ADD_PCOMPROPSHEETUI. All structure members must be supplied by the caller of ComPropSheet.
-old-location : print\compropsheetui.htm
-old-project : print
-ms.assetid : 7ebf46b7-5c31-482e-8644-a3d81f7dc5cc
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : COMPROPSHEETUI structure [Print Devices], compstui/COMPROPSHEETUI, PCOMPROPSHEETUI structure pointer [Print Devices], cpsuifnc_9b1aab20-fcd7-41b5-8bc5-959ae606d6b8.xml, *PCOMPROPSHEETUI, PCOMPROPSHEETUI, _COMPROPSHEETUI, print.compropsheetui, compstui/PCOMPROPSHEETUI, COMPROPSHEETUI
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : compstui.h
-req.include-header : Compstui.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PCOMPROPSHEETUI, COMPROPSHEETUI"
+UID: NS:compstui._COMPROPSHEETUI
+title: "_COMPROPSHEETUI"
+author: windows-driver-content
+description: The COMPROPSHEETUI structure is used as an input parameter to CPSUI's ComPropSheet function, if the function code is CPSFUNC_ADD_PCOMPROPSHEETUI. All structure members must be supplied by the caller of ComPropSheet.
+old-location: print\compropsheetui.htm
+old-project: print
+ms.assetid: 7ebf46b7-5c31-482e-8644-a3d81f7dc5cc
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: COMPROPSHEETUI structure [Print Devices], compstui/COMPROPSHEETUI, PCOMPROPSHEETUI structure pointer [Print Devices], cpsuifnc_9b1aab20-fcd7-41b5-8bc5-959ae606d6b8.xml, *PCOMPROPSHEETUI, PCOMPROPSHEETUI, _COMPROPSHEETUI, print.compropsheetui, compstui/PCOMPROPSHEETUI, COMPROPSHEETUI
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: compstui.h
+req.include-header: Compstui.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	compstui.h
+apiname:
+-	COMPROPSHEETUI
+product: Windows
+targetos: Windows
+req.typenames: "*PCOMPROPSHEETUI, COMPROPSHEETUI"
 ---
 
 # _COMPROPSHEETUI structure

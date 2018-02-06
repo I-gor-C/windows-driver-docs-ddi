@@ -1,41 +1,46 @@
 ---
-UID : NC:hdaudio.PGET_RESOURCE_INFORMATION
-title : PGET_RESOURCE_INFORMATION
-author : windows-driver-content
-description : The GetResourceInformation routine retrieves information about hardware resources.The function pointer type for a GetResourceInformation routine is defined as:
-old-location : audio\getresourceinformation.htm
-old-project : audio
-ms.assetid : ba1f0fa2-77dd-4ec3-86c8-c5d74465743f
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : audio.getresourceinformation, GetResourceInformation callback function [Audio Devices], GetResourceInformation, PGET_RESOURCE_INFORMATION, PGET_RESOURCE_INFORMATION, hdaudio/GetResourceInformation, aud-prop2_03b48e3f-0650-45eb-b1d2-0db5e2e98636.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : hdaudio.h
-req.include-header : Hdaudio.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT
+UID: NC:hdaudio.PGET_RESOURCE_INFORMATION
+title: PGET_RESOURCE_INFORMATION
+author: windows-driver-content
+description: The GetResourceInformation routine retrieves information about hardware resources.The function pointer type for a GetResourceInformation routine is defined as:
+old-location: audio\getresourceinformation.htm
+old-project: audio
+ms.assetid: ba1f0fa2-77dd-4ec3-86c8-c5d74465743f
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: audio.getresourceinformation, GetResourceInformation callback function [Audio Devices], GetResourceInformation, PGET_RESOURCE_INFORMATION, PGET_RESOURCE_INFORMATION, hdaudio/GetResourceInformation, aud-prop2_03b48e3f-0650-45eb-b1d2-0db5e2e98636.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: hdaudio.h
+req.include-header: Hdaudio.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	hdaudio.h
+apiname:
+-	GetResourceInformation
+product: Windows
+targetos: Windows
+req.typenames: SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT
 ---
 
 

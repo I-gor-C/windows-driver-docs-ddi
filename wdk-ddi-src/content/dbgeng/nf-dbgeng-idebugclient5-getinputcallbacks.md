@@ -1,41 +1,50 @@
 ---
-UID : NF:dbgeng.IDebugClient5.GetInputCallbacks
-title : IDebugClient5::GetInputCallbacks method
-author : windows-driver-content
-description : The GetInputCallbacks method returns the input callbacks object registered with this client.
-old-location : debugger\getinputcallbacks.htm
-old-project : debugger
-ms.assetid : 1788d9b6-5e5e-48b6-b746-fd078768892f
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : GetInputCallbacks method [Windows Debugging], debugger.getinputcallbacks, IDebugClient_ab365943-baaa-4a51-9c1b-d82086098b2f.xml, IDebugClient3 interface [Windows Debugging], GetInputCallbacks method, GetInputCallbacks, IDebugClient5 interface [Windows Debugging], GetInputCallbacks method, IDebugClient5::GetInputCallbacks, dbgeng/IDebugClient3::GetInputCallbacks, IDebugClient4 interface [Windows Debugging], GetInputCallbacks method, IDebugClient::GetInputCallbacks, IDebugClient4::GetInputCallbacks, dbgeng/IDebugClient4::GetInputCallbacks, dbgeng/IDebugClient5::GetInputCallbacks, dbgeng/IDebugClient2::GetInputCallbacks, IDebugClient interface [Windows Debugging], GetInputCallbacks method, GetInputCallbacks method [Windows Debugging], IDebugClient2 interface, IDebugClient2::GetInputCallbacks, dbgeng/IDebugClient::GetInputCallbacks, IDebugClient5, GetInputCallbacks method [Windows Debugging], IDebugClient3 interface, GetInputCallbacks method [Windows Debugging], IDebugClient5 interface, IDebugClient3::GetInputCallbacks, GetInputCallbacks method [Windows Debugging], IDebugClient interface, IDebugClient2 interface [Windows Debugging], GetInputCallbacks method, GetInputCallbacks method [Windows Debugging], IDebugClient4 interface
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugClient5.GetInputCallbacks
+title: IDebugClient5::GetInputCallbacks method
+author: windows-driver-content
+description: The GetInputCallbacks method returns the input callbacks object registered with this client.
+old-location: debugger\getinputcallbacks.htm
+old-project: debugger
+ms.assetid: 1788d9b6-5e5e-48b6-b746-fd078768892f
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: GetInputCallbacks method [Windows Debugging], debugger.getinputcallbacks, IDebugClient_ab365943-baaa-4a51-9c1b-d82086098b2f.xml, IDebugClient3 interface [Windows Debugging], GetInputCallbacks method, GetInputCallbacks, IDebugClient5 interface [Windows Debugging], GetInputCallbacks method, IDebugClient5::GetInputCallbacks, dbgeng/IDebugClient3::GetInputCallbacks, IDebugClient4 interface [Windows Debugging], GetInputCallbacks method, IDebugClient::GetInputCallbacks, IDebugClient4::GetInputCallbacks, dbgeng/IDebugClient4::GetInputCallbacks, dbgeng/IDebugClient5::GetInputCallbacks, dbgeng/IDebugClient2::GetInputCallbacks, IDebugClient interface [Windows Debugging], GetInputCallbacks method, GetInputCallbacks method [Windows Debugging], IDebugClient2 interface, IDebugClient2::GetInputCallbacks, dbgeng/IDebugClient::GetInputCallbacks, IDebugClient5, GetInputCallbacks method [Windows Debugging], IDebugClient3 interface, GetInputCallbacks method [Windows Debugging], IDebugClient5 interface, IDebugClient3::GetInputCallbacks, GetInputCallbacks method [Windows Debugging], IDebugClient interface, IDebugClient2 interface [Windows Debugging], GetInputCallbacks method, GetInputCallbacks method [Windows Debugging], IDebugClient4 interface
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugClient.GetInputCallbacks
+-	IDebugClient2.GetInputCallbacks
+-	IDebugClient3.GetInputCallbacks
+-	IDebugClient4.GetInputCallbacks
+-	IDebugClient5.GetInputCallbacks
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

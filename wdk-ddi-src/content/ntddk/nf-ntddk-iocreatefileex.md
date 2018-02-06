@@ -1,41 +1,46 @@
 ---
-UID : NF:ntddk.IoCreateFileEx
-title : IoCreateFileEx function
-author : windows-driver-content
-description : The IoCreateFileEx routine either causes a new file or directory to be created, or opens an existing file, device, directory, or volume and gives the caller a handle for the file object.
-old-location : ifsk\iocreatefileex.htm
-old-project : ifsk
-ms.assetid : 47d5e7e2-bc97-4413-b1ca-ef958288902c
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : IoCreateFileEx, IoCreateFileEx routine [Installable File System Drivers], ioref_7e2e6fcc-6ec5-4329-a855-c9f4a06b5434.xml, ifsk.iocreatefileex, ntddk/IoCreateFileEx
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntddk.h
-req.include-header : Ntddk.h, Ntifs.h, FltKernel.h
-req.target-type : Universal
-req.target-min-winverclnt : This routine is available starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.IoCreateFileEx
+title: IoCreateFileEx function
+author: windows-driver-content
+description: The IoCreateFileEx routine either causes a new file or directory to be created, or opens an existing file, device, directory, or volume and gives the caller a handle for the file object.
+old-location: ifsk\iocreatefileex.htm
+old-project: ifsk
+ms.assetid: 47d5e7e2-bc97-4413-b1ca-ef958288902c
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: IoCreateFileEx, IoCreateFileEx routine [Installable File System Drivers], ioref_7e2e6fcc-6ec5-4329-a855-c9f4a06b5434.xml, ifsk.iocreatefileex, ntddk/IoCreateFileEx
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntddk.h
+req.include-header: Ntddk.h, Ntifs.h, FltKernel.h
+req.target-type: Universal
+req.target-min-winverclnt: This routine is available starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoCreateFileEx
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

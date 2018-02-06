@@ -1,38 +1,38 @@
 ---
-UID : NF:wdm.EtwWriteTransfer
-title : EtwWriteTransfer function
-author : windows-driver-content
-description : The EtwWriteTransfer function marks an event that links two activities together; this type of event is referred to as a transfer event.
-old-location : devtest\etwwritetransfer.htm
-old-project : devtest
-ms.assetid : 72a1c2f4-5f20-4c00-baf5-3d48fe27f48d
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : EtwWriteTransfer
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.alt-api : EtwWriteTransfer
-req.alt-loc : NtosKrnl.exe
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : Any level (See Comments section.)
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.EtwWriteTransfer
+title: EtwWriteTransfer function
+author: windows-driver-content
+description: The EtwWriteTransfer function marks an event that links two activities together; this type of event is referred to as a transfer event.
+old-location: devtest\etwwritetransfer.htm
+old-project: devtest
+ms.assetid: 72a1c2f4-5f20-4c00-baf5-3d48fe27f48d
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: EtwWriteTransfer
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.alt-api: EtwWriteTransfer
+req.alt-loc: NtosKrnl.exe
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: Any level (See Comments section.)
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

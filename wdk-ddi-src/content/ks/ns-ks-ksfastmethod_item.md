@@ -1,41 +1,46 @@
 ---
-UID : NS:ks.KSFASTMETHOD_ITEM
-title : KSFASTMETHOD_ITEM
-author : windows-driver-content
-description : Drivers provide a structure of type KSFASTMETHOD_ITEM to support fast I/O dispatching.
-old-location : stream\ksfastmethod_item.htm
-old-project : stream
-ms.assetid : 71e59c73-d77d-4b10-9d13-f5d21338eb94
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.ksfastmethod_item, KSFASTMETHOD_ITEM, PKSFASTMETHOD_ITEM, ks-struct_1280212d-776c-4f9d-a00b-d880785c4cdf.xml, ks/PKSFASTMETHOD_ITEM, ks/KSFASTMETHOD_ITEM, PKSFASTMETHOD_ITEM structure pointer [Streaming Media Devices], *PKSFASTMETHOD_ITEM, KSFASTMETHOD_ITEM structure [Streaming Media Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKSFASTMETHOD_ITEM, KSFASTMETHOD_ITEM"
+UID: NS:ks.KSFASTMETHOD_ITEM
+title: KSFASTMETHOD_ITEM
+author: windows-driver-content
+description: Drivers provide a structure of type KSFASTMETHOD_ITEM to support fast I/O dispatching.
+old-location: stream\ksfastmethod_item.htm
+old-project: stream
+ms.assetid: 71e59c73-d77d-4b10-9d13-f5d21338eb94
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.ksfastmethod_item, KSFASTMETHOD_ITEM, PKSFASTMETHOD_ITEM, ks-struct_1280212d-776c-4f9d-a00b-d880785c4cdf.xml, ks/PKSFASTMETHOD_ITEM, ks/KSFASTMETHOD_ITEM, PKSFASTMETHOD_ITEM structure pointer [Streaming Media Devices], *PKSFASTMETHOD_ITEM, KSFASTMETHOD_ITEM structure [Streaming Media Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	KSFASTMETHOD_ITEM
+product: Windows
+targetos: Windows
+req.typenames: "*PKSFASTMETHOD_ITEM, KSFASTMETHOD_ITEM"
 ---
 
 # KSFASTMETHOD_ITEM structure

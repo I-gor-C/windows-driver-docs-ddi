@@ -1,41 +1,46 @@
 ---
-UID : NN:portcls.IPreFetchOffset
-title : IPreFetchOffset
-author : windows-driver-content
-description : The IPreFetchOffset interface controls the prefetch offset, which is the number of bytes separating the play and write cursors in a DirectSound output stream.
-old-location : audio\iprefetchoffset.htm
-old-project : audio
-ms.assetid : 8c6a3766-c959-4979-8dc9-3b5234003272
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : audio.iprefetchoffset, IPreFetchOffset interface [Audio Devices], IPreFetchOffset interface [Audio Devices], described, IPreFetchOffset, portcls/IPreFetchOffset, audmp-routines_71e52125-c3a2-4434-96f3-e3a66b482a3a.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : portcls.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Portcls.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NN:portcls.IPreFetchOffset
+title: IPreFetchOffset
+author: windows-driver-content
+description: The IPreFetchOffset interface controls the prefetch offset, which is the number of bytes separating the play and write cursors in a DirectSound output stream.
+old-location: audio\iprefetchoffset.htm
+old-project: audio
+ms.assetid: 8c6a3766-c959-4979-8dc9-3b5234003272
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: audio.iprefetchoffset, IPreFetchOffset interface [Audio Devices], IPreFetchOffset interface [Audio Devices], described, IPreFetchOffset, portcls/IPreFetchOffset, audmp-routines_71e52125-c3a2-4434-96f3-e3a66b482a3a.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: portcls.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Portcls.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	portcls.h
+apiname:
+-	IPreFetchOffset
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 # IPreFetchOffset interface

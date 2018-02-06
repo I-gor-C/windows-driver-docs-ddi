@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddmmc._FEATURE_DATA_RANDOM_READABLE
-title : "_FEATURE_DATA_RANDOM_READABLE"
-author : windows-driver-content
-description : The FEATURE_DATA_RANDOM_READABLE structure contains data for the random readable feature.
-old-location : storage\feature_data_random_readable.htm
-old-project : storage
-ms.assetid : c235a3aa-f8fe-4034-a645-ef85b2574fa0
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : PFEATURE_DATA_RANDOM_READABLE structure pointer [Storage Devices], storage.feature_data_random_readable, structs-CD-ROM_90540677-8abb-43d0-919a-821411398074.xml, FEATURE_DATA_RANDOM_READABLE structure [Storage Devices], _FEATURE_DATA_RANDOM_READABLE, ntddmmc/FEATURE_DATA_RANDOM_READABLE, ntddmmc/PFEATURE_DATA_RANDOM_READABLE, FEATURE_DATA_RANDOM_READABLE, *PFEATURE_DATA_RANDOM_READABLE, PFEATURE_DATA_RANDOM_READABLE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddmmc.h
-req.include-header : Ntddcdrm.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PFEATURE_DATA_RANDOM_READABLE, FEATURE_DATA_RANDOM_READABLE"
+UID: NS:ntddmmc._FEATURE_DATA_RANDOM_READABLE
+title: "_FEATURE_DATA_RANDOM_READABLE"
+author: windows-driver-content
+description: The FEATURE_DATA_RANDOM_READABLE structure contains data for the random readable feature.
+old-location: storage\feature_data_random_readable.htm
+old-project: storage
+ms.assetid: c235a3aa-f8fe-4034-a645-ef85b2574fa0
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: PFEATURE_DATA_RANDOM_READABLE structure pointer [Storage Devices], storage.feature_data_random_readable, structs-CD-ROM_90540677-8abb-43d0-919a-821411398074.xml, FEATURE_DATA_RANDOM_READABLE structure [Storage Devices], _FEATURE_DATA_RANDOM_READABLE, ntddmmc/FEATURE_DATA_RANDOM_READABLE, ntddmmc/PFEATURE_DATA_RANDOM_READABLE, FEATURE_DATA_RANDOM_READABLE, *PFEATURE_DATA_RANDOM_READABLE, PFEATURE_DATA_RANDOM_READABLE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddmmc.h
+req.include-header: Ntddcdrm.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddmmc.h
+apiname:
+-	FEATURE_DATA_RANDOM_READABLE
+product: Windows
+targetos: Windows
+req.typenames: "*PFEATURE_DATA_RANDOM_READABLE, FEATURE_DATA_RANDOM_READABLE"
 ---
 
 # _FEATURE_DATA_RANDOM_READABLE structure

@@ -1,41 +1,47 @@
 ---
-UID : NF:minitape.TapeClassZeroMemory
-title : TapeClassZeroMemory function
-author : windows-driver-content
-description : The TapeClassZeroMemory routine fills a buffer with zeros.
-old-location : storage\tapeclasszeromemory.htm
-old-project : storage
-ms.assetid : a1f15890-ded8-4aba-8b67-6f1fb1490178
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : TapeClassZeroMemory, TapeClassZeroMemory routine [Storage Devices], minitape/TapeClassZeroMemory, storage.tapeclasszeromemory, tapeclas_f48cbbef-af5f-4d1b-b79e-0982d4d09bde.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : minitape.h
-req.include-header : Minitape.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Tape.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TAPE_STATUS, *PTAPE_STATUS
+UID: NF:minitape.TapeClassZeroMemory
+title: TapeClassZeroMemory function
+author: windows-driver-content
+description: The TapeClassZeroMemory routine fills a buffer with zeros.
+old-location: storage\tapeclasszeromemory.htm
+old-project: storage
+ms.assetid: a1f15890-ded8-4aba-8b67-6f1fb1490178
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: TapeClassZeroMemory, TapeClassZeroMemory routine [Storage Devices], minitape/TapeClassZeroMemory, storage.tapeclasszeromemory, tapeclas_f48cbbef-af5f-4d1b-b79e-0982d4d09bde.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: minitape.h
+req.include-header: Minitape.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Tape.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Tape.lib
+-	Tape.dll
+apiname:
+-	TapeClassZeroMemory
+product: Windows
+targetos: Windows
+req.typenames: TAPE_STATUS, *PTAPE_STATUS
 ---
 
 

@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugControl3.GetNumberBreakpoints
-title : IDebugControl3::GetNumberBreakpoints method
-author : windows-driver-content
-description : The GetNumberBreakpoints method returns the number of breakpoints for the current process.
-old-location : debugger\getnumberbreakpoints.htm
-old-project : debugger
-ms.assetid : 9faffb72-3559-4db7-a02e-3d93dc751ac3
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : dbgeng/IDebugControl::GetNumberBreakpoints, debugger.getnumberbreakpoints, dbgeng/IDebugControl3::GetNumberBreakpoints, IDebugControl3::GetNumberBreakpoints, GetNumberBreakpoints, dbgeng/IDebugControl2::GetNumberBreakpoints, IDebugControl_c5b9bf83-0a0e-4570-8a05-04ca39a4d335.xml, IDebugControl3, IDebugControl2 interface [Windows Debugging], GetNumberBreakpoints method, GetNumberBreakpoints method [Windows Debugging], IDebugControl interface, IDebugControl interface [Windows Debugging], GetNumberBreakpoints method, IDebugControl::GetNumberBreakpoints, GetNumberBreakpoints method [Windows Debugging], IDebugControl2 interface, GetNumberBreakpoints method [Windows Debugging], IDebugControl2::GetNumberBreakpoints, IDebugControl3 interface [Windows Debugging], GetNumberBreakpoints method, GetNumberBreakpoints method [Windows Debugging], IDebugControl3 interface
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl3.GetNumberBreakpoints
+title: IDebugControl3::GetNumberBreakpoints method
+author: windows-driver-content
+description: The GetNumberBreakpoints method returns the number of breakpoints for the current process.
+old-location: debugger\getnumberbreakpoints.htm
+old-project: debugger
+ms.assetid: 9faffb72-3559-4db7-a02e-3d93dc751ac3
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: dbgeng/IDebugControl::GetNumberBreakpoints, debugger.getnumberbreakpoints, dbgeng/IDebugControl3::GetNumberBreakpoints, IDebugControl3::GetNumberBreakpoints, GetNumberBreakpoints, dbgeng/IDebugControl2::GetNumberBreakpoints, IDebugControl_c5b9bf83-0a0e-4570-8a05-04ca39a4d335.xml, IDebugControl3, IDebugControl2 interface [Windows Debugging], GetNumberBreakpoints method, GetNumberBreakpoints method [Windows Debugging], IDebugControl interface, IDebugControl interface [Windows Debugging], GetNumberBreakpoints method, IDebugControl::GetNumberBreakpoints, GetNumberBreakpoints method [Windows Debugging], IDebugControl2 interface, GetNumberBreakpoints method [Windows Debugging], IDebugControl2::GetNumberBreakpoints, IDebugControl3 interface [Windows Debugging], GetNumberBreakpoints method, GetNumberBreakpoints method [Windows Debugging], IDebugControl3 interface
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl.GetNumberBreakpoints
+-	IDebugControl2.GetNumberBreakpoints
+-	IDebugControl3.GetNumberBreakpoints
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

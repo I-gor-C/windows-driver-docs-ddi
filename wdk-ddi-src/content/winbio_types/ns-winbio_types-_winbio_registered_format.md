@@ -1,42 +1,47 @@
 ---
-UID : NS:winbio_types._WINBIO_REGISTERED_FORMAT
-title : "_WINBIO_REGISTERED_FORMAT"
-author : windows-driver-content
-description : The WINBIO_REGISTERED_FORMAT structure specifies a biometric data format.
-old-location : biometric\winbio_registered_format.htm
-old-project : biometric
-ms.assetid : 70591143-f429-4a6e-8f2a-cc1082f40f6e
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : winbio_types/WINBIO_REGISTERED_FORMAT, PWINBIO_REGISTERED_FORMAT, WINBIO_REGISTERED_FORMAT structure [Biometric Devices], biometric.winbio_registered_format, winbio_types/PWINBIO_REGISTERED_FORMAT, PWINBIO_REGISTERED_FORMAT structure pointer [Biometric Devices], biometric_ref_824bd2c9-98a7-4967-8416-82aadd8ec6ed.xml, *PWINBIO_REGISTERED_FORMAT, _WINBIO_REGISTERED_FORMAT, WINBIO_REGISTERED_FORMAT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : winbio_types.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WINBIO_REGISTERED_FORMAT, *PWINBIO_REGISTERED_FORMAT
-req.product : Windows 10 or later.
+UID: NS:winbio_types._WINBIO_REGISTERED_FORMAT
+title: "_WINBIO_REGISTERED_FORMAT"
+author: windows-driver-content
+description: The WINBIO_REGISTERED_FORMAT structure specifies a biometric data format.
+old-location: biometric\winbio_registered_format.htm
+old-project: biometric
+ms.assetid: 70591143-f429-4a6e-8f2a-cc1082f40f6e
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: winbio_types/WINBIO_REGISTERED_FORMAT, PWINBIO_REGISTERED_FORMAT, WINBIO_REGISTERED_FORMAT structure [Biometric Devices], biometric.winbio_registered_format, winbio_types/PWINBIO_REGISTERED_FORMAT, PWINBIO_REGISTERED_FORMAT structure pointer [Biometric Devices], biometric_ref_824bd2c9-98a7-4967-8416-82aadd8ec6ed.xml, *PWINBIO_REGISTERED_FORMAT, _WINBIO_REGISTERED_FORMAT, WINBIO_REGISTERED_FORMAT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: winbio_types.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	winbio_types.h
+apiname:
+-	WINBIO_REGISTERED_FORMAT
+product: Windows
+targetos: Windows
+req.typenames: WINBIO_REGISTERED_FORMAT, *PWINBIO_REGISTERED_FORMAT
+req.product: Windows 10 or later.
 ---
 
 # _WINBIO_REGISTERED_FORMAT structure

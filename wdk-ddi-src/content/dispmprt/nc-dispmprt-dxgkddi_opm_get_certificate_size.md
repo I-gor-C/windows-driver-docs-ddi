@@ -1,41 +1,46 @@
 ---
-UID : NC:dispmprt.DXGKDDI_OPM_GET_CERTIFICATE_SIZE
-title : DXGKDDI_OPM_GET_CERTIFICATE_SIZE
-author : windows-driver-content
-description : The DxgkDdiOPMGetCertificateSize function retrieves the size of a certificate of the given type.
-old-location : display\dxgkddiopmgetcertificatesize.htm
-old-project : display
-ms.assetid : fe4197ad-52a2-47b3-ad96-57ea73cd931f
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkddiopmgetcertificatesize, DxgkDdiOPMGetCertificateSize callback function [Display Devices], DxgkDdiOPMGetCertificateSize, DXGKDDI_OPM_GET_CERTIFICATE_SIZE, DXGKDDI_OPM_GET_CERTIFICATE_SIZE, dispmprt/DxgkDdiOPMGetCertificateSize, Dm_Opm_functions_62785ff7-3c52-4e07-b075-eb27de1236b8.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : dispmprt.h
-req.include-header : Dispmprt.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
+UID: NC:dispmprt.DXGKDDI_OPM_GET_CERTIFICATE_SIZE
+title: DXGKDDI_OPM_GET_CERTIFICATE_SIZE
+author: windows-driver-content
+description: The DxgkDdiOPMGetCertificateSize function retrieves the size of a certificate of the given type.
+old-location: display\dxgkddiopmgetcertificatesize.htm
+old-project: display
+ms.assetid: fe4197ad-52a2-47b3-ad96-57ea73cd931f
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkddiopmgetcertificatesize, DxgkDdiOPMGetCertificateSize callback function [Display Devices], DxgkDdiOPMGetCertificateSize, DXGKDDI_OPM_GET_CERTIFICATE_SIZE, DXGKDDI_OPM_GET_CERTIFICATE_SIZE, dispmprt/DxgkDdiOPMGetCertificateSize, Dm_Opm_functions_62785ff7-3c52-4e07-b075-eb27de1236b8.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: dispmprt.h
+req.include-header: Dispmprt.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	dispmprt.h
+apiname:
+-	DxgkDdiOPMGetCertificateSize
+product: Windows
+targetos: Windows
+req.typenames: SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ---
 
 

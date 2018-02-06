@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFInterrupt.TryToAcquireInterruptLock
-title : IWDFInterrupt::TryToAcquireInterruptLock method
-author : windows-driver-content
-description : The TryToAcquireInterruptLock method acquires the interrupt lock if no other thread has already acquired it.
-old-location : wdf\iwdfinterrupt_trytoacquireinterruptlock.htm
-old-project : wdf
-ms.assetid : 4A109CDF-C5DE-4BAE-AA4E-294EA5CE86C5
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wudfddi/IWDFInterrupt::TryToAcquireInterruptLock, TryToAcquireInterruptLock method, IWDFInterrupt interface, umdf.iwdfinterrupt_trytoacquireinterruptlock, wdf.iwdfinterrupt_trytoacquireinterruptlock, TryToAcquireInterruptLock method, IWDFInterrupt, IWDFInterrupt interface, TryToAcquireInterruptLock method, TryToAcquireInterruptLock, IWDFInterrupt::TryToAcquireInterruptLock
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.11
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFInterrupt.TryToAcquireInterruptLock
+title: IWDFInterrupt::TryToAcquireInterruptLock method
+author: windows-driver-content
+description: The TryToAcquireInterruptLock method acquires the interrupt lock if no other thread has already acquired it.
+old-location: wdf\iwdfinterrupt_trytoacquireinterruptlock.htm
+old-project: wdf
+ms.assetid: 4A109CDF-C5DE-4BAE-AA4E-294EA5CE86C5
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wudfddi/IWDFInterrupt::TryToAcquireInterruptLock, TryToAcquireInterruptLock method, IWDFInterrupt interface, umdf.iwdfinterrupt_trytoacquireinterruptlock, wdf.iwdfinterrupt_trytoacquireinterruptlock, TryToAcquireInterruptLock method, IWDFInterrupt, IWDFInterrupt interface, TryToAcquireInterruptLock method, TryToAcquireInterruptLock, IWDFInterrupt::TryToAcquireInterruptLock
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.11
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFInterrupt.TryToAcquireInterruptLock
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

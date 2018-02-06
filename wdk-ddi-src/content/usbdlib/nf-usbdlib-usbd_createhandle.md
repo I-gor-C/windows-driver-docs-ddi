@@ -1,42 +1,50 @@
 ---
-UID : NF:usbdlib.USBD_CreateHandle
-title : USBD_CreateHandle function
-author : windows-driver-content
-description : The USBD_CreateHandle routine is called by a WDM USB client driver to obtain a USBD handle. The routine registers the client driver with the underlying USB driver stack.
-old-location : buses\usbd_register.htm
-old-project : usbref
-ms.assetid : 97757CBA-8291-40A3-B247-D41E7FEB1D7C
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : usbdlib/USBD_CreateHandle, USBD_CreateHandle, buses.usbd_register, USBD_CreateHandle routine [Buses]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : usbdlib.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Requires WDK for Windows 8. Targets Windows Vista and later versions of the Windows operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Usbdex.lib; Ntstrsafe.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : USBCAMD_DEVICE_DATA2, *PUSBCAMD_DEVICE_DATA2
-req.product : Windows 10 or later.
+UID: NF:usbdlib.USBD_CreateHandle
+title: USBD_CreateHandle function
+author: windows-driver-content
+description: The USBD_CreateHandle routine is called by a WDM USB client driver to obtain a USBD handle. The routine registers the client driver with the underlying USB driver stack.
+old-location: buses\usbd_register.htm
+old-project: usbref
+ms.assetid: 97757CBA-8291-40A3-B247-D41E7FEB1D7C
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: usbdlib/USBD_CreateHandle, USBD_CreateHandle, buses.usbd_register, USBD_CreateHandle routine [Buses]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: usbdlib.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Requires WDK for Windows 8. Targets Windows Vista and later versions of the Windows operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Usbdex.lib; Ntstrsafe.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Usbdex.lib
+-	Usbdex.dll
+-	Ntstrsafe.lib
+-	Ntstrsafe.dll
+apiname:
+-	USBD_CreateHandle
+product: Windows
+targetos: Windows
+req.typenames: USBCAMD_DEVICE_DATA2, *PUSBCAMD_DEVICE_DATA2
+req.product: Windows 10 or later.
 ---
 
 

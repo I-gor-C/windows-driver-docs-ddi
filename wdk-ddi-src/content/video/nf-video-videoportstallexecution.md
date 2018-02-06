@@ -1,42 +1,47 @@
 ---
-UID : NF:video.VideoPortStallExecution
-title : VideoPortStallExecution function
-author : windows-driver-content
-description : The VideoPortStallExecution function retains control of the processor for the specified number of microseconds and returns to the caller.
-old-location : display\videoportstallexecution.htm
-old-project : display
-ms.assetid : 70b406f8-d9ac-4882-89bc-e257cbe06921
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : VideoPortStallExecution, display.videoportstallexecution, VideoPortStallExecution function [Display Devices], VideoPort_Functions_bda7e25d-a636-4ceb-ae47-c74435f9483a.xml, video/VideoPortStallExecution
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows 2000 and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Videoprt.lib
-req.dll : Videoprt.sys
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_PORT_SERVICES
-req.product : Windows 10 or later.
+UID: NF:video.VideoPortStallExecution
+title: VideoPortStallExecution function
+author: windows-driver-content
+description: The VideoPortStallExecution function retains control of the processor for the specified number of microseconds and returns to the caller.
+old-location: display\videoportstallexecution.htm
+old-project: display
+ms.assetid: 70b406f8-d9ac-4882-89bc-e257cbe06921
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: VideoPortStallExecution, display.videoportstallexecution, VideoPortStallExecution function [Display Devices], VideoPort_Functions_bda7e25d-a636-4ceb-ae47-c74435f9483a.xml, video/VideoPortStallExecution
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows 2000 and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Videoprt.lib
+req.dll: Videoprt.sys
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Videoprt.sys
+apiname:
+-	VideoPortStallExecution
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_PORT_SERVICES
+req.product: Windows 10 or later.
 ---
 
 

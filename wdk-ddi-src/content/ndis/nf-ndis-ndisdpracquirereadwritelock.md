@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisDprAcquireReadWriteLock
-title : NdisDprAcquireReadWriteLock function
-author : windows-driver-content
-description : The NdisDprAcquireReadWriteLock function acquires a lock that the caller uses for either write or read access to the resources that are shared among driver threads.Note  The read-write lock interface is deprecated for NDIS 6.20 and later drivers, which should use NdisAcquireRWLockRead or NdisAcquireRWLockWrite (setting NDIS_RWL_AT_DISPATCH_LEVEL in the Flags parameter) instead of NdisDprAcquireReadWriteLock.
-old-location : netvista\ndisdpracquirereadwritelock.htm
-old-project : netvista
-ms.assetid : 09B574FA-BCBA-4370-8F9F-BF30CE0BE52D
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NdisDprAcquireReadWriteLock function [Network Drivers Starting with Windows Vista], NdisDprAcquireReadWriteLock, ndis/NdisDprAcquireReadWriteLock, netvista.ndisdpracquirereadwritelock
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Deprecated for NDIS 6.20 and later drivers, which should use NdisAcquireRWLockRead or NdisAcquireRWLockWrite instead of NdisDprAcquireReadWriteLock. Supported in NDIS 6.0 and 6.1.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : "= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisDprAcquireReadWriteLock
+title: NdisDprAcquireReadWriteLock function
+author: windows-driver-content
+description: The NdisDprAcquireReadWriteLock function acquires a lock that the caller uses for either write or read access to the resources that are shared among driver threads.Note  The read-write lock interface is deprecated for NDIS 6.20 and later drivers, which should use NdisAcquireRWLockRead or NdisAcquireRWLockWrite (setting NDIS_RWL_AT_DISPATCH_LEVEL in the Flags parameter) instead of NdisDprAcquireReadWriteLock.
+old-location: netvista\ndisdpracquirereadwritelock.htm
+old-project: netvista
+ms.assetid: 09B574FA-BCBA-4370-8F9F-BF30CE0BE52D
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NdisDprAcquireReadWriteLock function [Network Drivers Starting with Windows Vista], NdisDprAcquireReadWriteLock, ndis/NdisDprAcquireReadWriteLock, netvista.ndisdpracquirereadwritelock
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Deprecated for NDIS 6.20 and later drivers, which should use NdisAcquireRWLockRead or NdisAcquireRWLockWrite instead of NdisDprAcquireReadWriteLock. Supported in NDIS 6.0 and 6.1.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: "= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisDprAcquireReadWriteLock
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

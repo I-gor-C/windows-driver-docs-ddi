@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.MmAllocateNodePagesForMdlEx
-title : MmAllocateNodePagesForMdlEx function
-author : windows-driver-content
-description : The MmAllocateNodePagesForMdlEx routine allocates nonpaged physical memory from an ideal node, and allocates an MDL structure to describe this memory.
-old-location : kernel\mmallocatenodepagesformdlex.htm
-old-project : kernel
-ms.assetid : 491327A4-87B5-4206-9D47-007CE14E1327
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.mmallocatenodepagesformdlex, MmAllocateNodePagesForMdlEx routine [Kernel-Mode Driver Architecture], wdm/MmAllocateNodePagesForMdlEx, MmAllocateNodePagesForMdlEx
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= DISPATCH_LEVEL (See Remarks section.)"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.MmAllocateNodePagesForMdlEx
+title: MmAllocateNodePagesForMdlEx function
+author: windows-driver-content
+description: The MmAllocateNodePagesForMdlEx routine allocates nonpaged physical memory from an ideal node, and allocates an MDL structure to describe this memory.
+old-location: kernel\mmallocatenodepagesformdlex.htm
+old-project: kernel
+ms.assetid: 491327A4-87B5-4206-9D47-007CE14E1327
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.mmallocatenodepagesformdlex, MmAllocateNodePagesForMdlEx routine [Kernel-Mode Driver Architecture], wdm/MmAllocateNodePagesForMdlEx, MmAllocateNodePagesForMdlEx
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= DISPATCH_LEVEL (See Remarks section.)"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	MmAllocateNodePagesForMdlEx
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

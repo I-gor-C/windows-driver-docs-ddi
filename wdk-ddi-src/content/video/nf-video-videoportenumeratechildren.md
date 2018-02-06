@@ -1,42 +1,47 @@
 ---
-UID : NF:video.VideoPortEnumerateChildren
-title : VideoPortEnumerateChildren function
-author : windows-driver-content
-description : The VideoPortEnumerateChildren function allows a video miniport driver to force a reenumeration of its child devices.
-old-location : display\videoportenumeratechildren.htm
-old-project : display
-ms.assetid : 41f081f3-4079-46f8-9d22-76a2d9e992b5
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.videoportenumeratechildren, video/VideoPortEnumerateChildren, VideoPortEnumerateChildren, VideoPort_Functions_8bc790f2-319f-41a6-9bf7-02a8605d2cc1.xml, VideoPortEnumerateChildren function [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows 2000 and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Videoprt.lib
-req.dll : Videoprt.sys
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_PORT_SERVICES
-req.product : Windows 10 or later.
+UID: NF:video.VideoPortEnumerateChildren
+title: VideoPortEnumerateChildren function
+author: windows-driver-content
+description: The VideoPortEnumerateChildren function allows a video miniport driver to force a reenumeration of its child devices.
+old-location: display\videoportenumeratechildren.htm
+old-project: display
+ms.assetid: 41f081f3-4079-46f8-9d22-76a2d9e992b5
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.videoportenumeratechildren, video/VideoPortEnumerateChildren, VideoPortEnumerateChildren, VideoPort_Functions_8bc790f2-319f-41a6-9bf7-02a8605d2cc1.xml, VideoPortEnumerateChildren function [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows 2000 and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Videoprt.lib
+req.dll: Videoprt.sys
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Videoprt.sys
+apiname:
+-	VideoPortEnumerateChildren
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_PORT_SERVICES
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,38 +1,38 @@
 ---
-UID : NS:wdm._PCW_CALLBACK_INFORMATION
-title : _PCW_CALLBACK_INFORMATION
-author : windows-driver-content
-description : The PCW_CALLBACK_INFORMATION union supplies details about the notification to send. A provider passes a pointer to this union as a parameter to the PcwCallback function.
-old-location : devtest\pcw_callback_information.htm
-old-project : devtest
-ms.assetid : cc1882a9-eba7-494c-9047-5c97b1e3c19b
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : _PCW_CALLBACK_INFORMATION, PCW_CALLBACK_INFORMATION, *PPCW_CALLBACK_INFORMATION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.alt-api : PCW_CALLBACK_INFORMATION
-req.alt-loc : wdm.h
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-req.typenames : PCW_CALLBACK_INFORMATION, *PPCW_CALLBACK_INFORMATION
-req.product : Windows 10 or later.
+UID: NS:wdm._PCW_CALLBACK_INFORMATION
+title: _PCW_CALLBACK_INFORMATION
+author: windows-driver-content
+description: The PCW_CALLBACK_INFORMATION union supplies details about the notification to send. A provider passes a pointer to this union as a parameter to the PcwCallback function.
+old-location: devtest\pcw_callback_information.htm
+old-project: devtest
+ms.assetid: cc1882a9-eba7-494c-9047-5c97b1e3c19b
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: _PCW_CALLBACK_INFORMATION, PCW_CALLBACK_INFORMATION, *PPCW_CALLBACK_INFORMATION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.alt-api: PCW_CALLBACK_INFORMATION
+req.alt-loc: wdm.h
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+req.typenames: PCW_CALLBACK_INFORMATION, *PPCW_CALLBACK_INFORMATION
+req.product: Windows 10 or later.
 ---
 
 # _PCW_CALLBACK_INFORMATION structure

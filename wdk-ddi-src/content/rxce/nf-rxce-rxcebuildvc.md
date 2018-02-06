@@ -1,42 +1,47 @@
 ---
-UID : NF:rxce.RxCeBuildVC
-title : RxCeBuildVC function
-author : windows-driver-content
-description : RxCeBuildVC adds a virtual circuit to a specified RDBSS connection..
-old-location : ifsk\rxcebuildvc.htm
-old-project : ifsk
-ms.assetid : b060bd22-113f-4f78-8763-d1d19cf198b8
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : RxCeBuildVC, rxce/RxCeBuildVC, RxCeBuildVC function [Installable File System Drivers], rxref_4f4f58c7-5970-4a86-883e-359e92bddaa3.xml, ifsk.rxcebuildvc
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : rxce.h
-req.include-header : Rxce.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*LPRILWRITEPHONEBOOKENTRYPARAMS, RILWRITEPHONEBOOKENTRYPARAMS"
-req.product : Windows 10 or later.
+UID: NF:rxce.RxCeBuildVC
+title: RxCeBuildVC function
+author: windows-driver-content
+description: RxCeBuildVC adds a virtual circuit to a specified RDBSS connection..
+old-location: ifsk\rxcebuildvc.htm
+old-project: ifsk
+ms.assetid: b060bd22-113f-4f78-8763-d1d19cf198b8
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: RxCeBuildVC, rxce/RxCeBuildVC, RxCeBuildVC function [Installable File System Drivers], rxref_4f4f58c7-5970-4a86-883e-359e92bddaa3.xml, ifsk.rxcebuildvc
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: rxce.h
+req.include-header: Rxce.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	rxce.h
+apiname:
+-	RxCeBuildVC
+product: Windows
+targetos: Windows
+req.typenames: "*LPRILWRITEPHONEBOOKENTRYPARAMS, RILWRITEPHONEBOOKENTRYPARAMS"
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:dxva._DXVA_COPPSetSignalingCmdData
-title : "_DXVA_COPPSetSignalingCmdData"
-author : windows-driver-content
-description : The DXVA_COPPSetSignalingCmdData structure describes how to protect the signal that goes through the physical connector associated with the DirectX VA COPP device.
-old-location : display\dxva_coppsetsignalingcmddata.htm
-old-project : display
-ms.assetid : 88318bb4-bfca-4557-93cb-703840fa692e
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DXVA_COPPSetSignalingCmdData, dxva/DXVA_COPPSetSignalingCmdData, display.dxva_coppsetsignalingcmddata, DXVA_COPPSetSignalingCmdData structure [Display Devices], dxvaref_2fd69b63-8cfc-427f-9616-4de12bd1a848.xml, _DXVA_COPPSetSignalingCmdData
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : dxva.h
-req.include-header : Dxva.h
-req.target-type : Windows
-req.target-min-winverclnt : This structure applies only to Windows Server 2003 with SP1 and later, and Windows XP with SP2 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXVA_COPPSetSignalingCmdData
+UID: NS:dxva._DXVA_COPPSetSignalingCmdData
+title: "_DXVA_COPPSetSignalingCmdData"
+author: windows-driver-content
+description: The DXVA_COPPSetSignalingCmdData structure describes how to protect the signal that goes through the physical connector associated with the DirectX VA COPP device.
+old-location: display\dxva_coppsetsignalingcmddata.htm
+old-project: display
+ms.assetid: 88318bb4-bfca-4557-93cb-703840fa692e
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DXVA_COPPSetSignalingCmdData, dxva/DXVA_COPPSetSignalingCmdData, display.dxva_coppsetsignalingcmddata, DXVA_COPPSetSignalingCmdData structure [Display Devices], dxvaref_2fd69b63-8cfc-427f-9616-4de12bd1a848.xml, _DXVA_COPPSetSignalingCmdData
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: dxva.h
+req.include-header: Dxva.h
+req.target-type: Windows
+req.target-min-winverclnt: This structure applies only to Windows Server 2003 with SP1 and later, and Windows XP with SP2 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	dxva.h
+apiname:
+-	DXVA_COPPSetSignalingCmdData
+product: Windows
+targetos: Windows
+req.typenames: DXVA_COPPSetSignalingCmdData
 ---
 
 # _DXVA_COPPSetSignalingCmdData structure

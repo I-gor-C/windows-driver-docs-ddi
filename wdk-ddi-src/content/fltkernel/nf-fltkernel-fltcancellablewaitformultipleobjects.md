@@ -1,41 +1,47 @@
 ---
-UID : NF:fltkernel.FltCancellableWaitForMultipleObjects
-title : FltCancellableWaitForMultipleObjects function
-author : windows-driver-content
-description : The FltCancellableWaitForMultipleObjects executes a cancelable wait operation (a wait that can be terminated) on one or more dispatcher objects.
-old-location : ifsk\fltcancellablewaitformultipleobjects.htm
-old-project : ifsk
-ms.assetid : 0afe431d-55dd-4aaa-bcbc-467ac3a7b604
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltCancellableWaitForMultipleObjects function [Installable File System Drivers], FltCancellableWaitForMultipleObjects, ifsk.fltcancellablewaitformultipleobjects, ntifs/FltCancellableWaitForMultipleObjects, FltApiRef_a_to_d_3f130d06-8af0-46c1-9db3-bd70d1cbabe1.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Ntifs.h, Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Microsoft Windows Vista and later versions of Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Fltmgr.lib
-req.dll : 
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltCancellableWaitForMultipleObjects
+title: FltCancellableWaitForMultipleObjects function
+author: windows-driver-content
+description: The FltCancellableWaitForMultipleObjects executes a cancelable wait operation (a wait that can be terminated) on one or more dispatcher objects.
+old-location: ifsk\fltcancellablewaitformultipleobjects.htm
+old-project: ifsk
+ms.assetid: 0afe431d-55dd-4aaa-bcbc-467ac3a7b604
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltCancellableWaitForMultipleObjects function [Installable File System Drivers], FltCancellableWaitForMultipleObjects, ifsk.fltcancellablewaitformultipleobjects, ntifs/FltCancellableWaitForMultipleObjects, FltApiRef_a_to_d_3f130d06-8af0-46c1-9db3-bd70d1cbabe1.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Ntifs.h, Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Microsoft Windows Vista and later versions of Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Fltmgr.lib
+req.dll: 
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	fltmgr.lib
+-	fltmgr.dll
+apiname:
+-	FltCancellableWaitForMultipleObjects
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

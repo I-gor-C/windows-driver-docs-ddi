@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddstor.IOCTL_STORAGE_PROTOCOL_COMMAND
-title : IOCTL_STORAGE_PROTOCOL_COMMAND
-author : windows-driver-content
-description : A driver can use IOCTL_STORAGE_PROTOCOL_COMMAND to pass vendor-specific commands to a storage device.
-old-location : storage\ioctl_storage_protocol_command.htm
-old-project : storage
-ms.assetid : 1AA59350-2475-4BF7-B447-42FDDB311882
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_storage_protocol_command, IOCTL_STORAGE_PROTOCOL_COMMAND control code [Storage Devices], IOCTL_STORAGE_PROTOCOL_COMMAND, ntddstor/IOCTL_STORAGE_PROTOCOL_COMMAND
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddstor.h
-req.include-header : Ntddstor.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STORAGE_ZONE_CONDITION, *PSTORAGE_ZONE_CONDITION
+UID: NI:ntddstor.IOCTL_STORAGE_PROTOCOL_COMMAND
+title: IOCTL_STORAGE_PROTOCOL_COMMAND
+author: windows-driver-content
+description: A driver can use IOCTL_STORAGE_PROTOCOL_COMMAND to pass vendor-specific commands to a storage device.
+old-location: storage\ioctl_storage_protocol_command.htm
+old-project: storage
+ms.assetid: 1AA59350-2475-4BF7-B447-42FDDB311882
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_storage_protocol_command, IOCTL_STORAGE_PROTOCOL_COMMAND control code [Storage Devices], IOCTL_STORAGE_PROTOCOL_COMMAND, ntddstor/IOCTL_STORAGE_PROTOCOL_COMMAND
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddstor.h
+req.include-header: Ntddstor.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddstor.h
+apiname:
+-	IOCTL_STORAGE_PROTOCOL_COMMAND
+product: Windows
+targetos: Windows
+req.typenames: STORAGE_ZONE_CONDITION, *PSTORAGE_ZONE_CONDITION
 ---
 
 # IOCTL_STORAGE_PROTOCOL_COMMAND IOCTL

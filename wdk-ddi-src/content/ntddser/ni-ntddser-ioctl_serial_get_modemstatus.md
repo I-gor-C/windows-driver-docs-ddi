@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddser.IOCTL_SERIAL_GET_MODEMSTATUS
-title : IOCTL_SERIAL_GET_MODEMSTATUS
-author : windows-driver-content
-description : The IOCTL_SERIAL_GET_MODEMSTATUS request updates the modem status, and returns the value of the modem status register before the update.
-old-location : serports\ioctl_serial_get_modemstatus.htm
-old-project : serports
-ms.assetid : d3926476-758d-4bc0-a1e8-114dc47dc846
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : serports.ioctl_serial_get_modemstatus, IOCTL_SERIAL_GET_MODEMSTATUS control code [Serial Ports], IOCTL_SERIAL_GET_MODEMSTATUS, ntddser/IOCTL_SERIAL_GET_MODEMSTATUS, serref_6948e4a9-43c8-4ebe-9a0c-c47a2d3f1a7a.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddser.h
-req.include-header : Ntddser.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SD_REQUEST_FUNCTION
+UID: NI:ntddser.IOCTL_SERIAL_GET_MODEMSTATUS
+title: IOCTL_SERIAL_GET_MODEMSTATUS
+author: windows-driver-content
+description: The IOCTL_SERIAL_GET_MODEMSTATUS request updates the modem status, and returns the value of the modem status register before the update.
+old-location: serports\ioctl_serial_get_modemstatus.htm
+old-project: serports
+ms.assetid: d3926476-758d-4bc0-a1e8-114dc47dc846
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: serports.ioctl_serial_get_modemstatus, IOCTL_SERIAL_GET_MODEMSTATUS control code [Serial Ports], IOCTL_SERIAL_GET_MODEMSTATUS, ntddser/IOCTL_SERIAL_GET_MODEMSTATUS, serref_6948e4a9-43c8-4ebe-9a0c-c47a2d3f1a7a.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddser.h
+req.include-header: Ntddser.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddser.h
+apiname:
+-	IOCTL_SERIAL_GET_MODEMSTATUS
+product: Windows
+targetos: Windows
+req.typenames: SD_REQUEST_FUNCTION
 ---
 
 # IOCTL_SERIAL_GET_MODEMSTATUS IOCTL

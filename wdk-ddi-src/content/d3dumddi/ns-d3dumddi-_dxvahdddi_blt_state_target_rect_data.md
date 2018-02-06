@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._DXVAHDDDI_BLT_STATE_TARGET_RECT_DATA
-title : "_DXVAHDDDI_BLT_STATE_TARGET_RECT_DATA"
-author : windows-driver-content
-description : The DXVAHDDDI_BLT_STATE_TARGET_RECT_DATA structure describes data that specifies the target rectangle of the output.
-old-location : display\dxvahdddi_blt_state_target_rect_data.htm
-old-project : display
-ms.assetid : d6b76b6b-59d9-441f-846e-fe89d26f631d
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DXVAHDDDI_BLT_STATE_TARGET_RECT_DATA structure [Display Devices], _DXVAHDDDI_BLT_STATE_TARGET_RECT_DATA, d3dumddi/DXVAHDDDI_BLT_STATE_TARGET_RECT_DATA, DXVAHDDDI_BLT_STATE_TARGET_RECT_DATA, DXVA2_Structs_bb978cee-d80a-429b-ac2c-1704539c55f7.xml, display.dxvahdddi_blt_state_target_rect_data
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : DXVAHDDDI_BLT_STATE_TARGET_RECT_DATA is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXVAHDDDI_BLT_STATE_TARGET_RECT_DATA
+UID: NS:d3dumddi._DXVAHDDDI_BLT_STATE_TARGET_RECT_DATA
+title: "_DXVAHDDDI_BLT_STATE_TARGET_RECT_DATA"
+author: windows-driver-content
+description: The DXVAHDDDI_BLT_STATE_TARGET_RECT_DATA structure describes data that specifies the target rectangle of the output.
+old-location: display\dxvahdddi_blt_state_target_rect_data.htm
+old-project: display
+ms.assetid: d6b76b6b-59d9-441f-846e-fe89d26f631d
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DXVAHDDDI_BLT_STATE_TARGET_RECT_DATA structure [Display Devices], _DXVAHDDDI_BLT_STATE_TARGET_RECT_DATA, d3dumddi/DXVAHDDDI_BLT_STATE_TARGET_RECT_DATA, DXVAHDDDI_BLT_STATE_TARGET_RECT_DATA, DXVA2_Structs_bb978cee-d80a-429b-ac2c-1704539c55f7.xml, display.dxvahdddi_blt_state_target_rect_data
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: DXVAHDDDI_BLT_STATE_TARGET_RECT_DATA is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	DXVAHDDDI_BLT_STATE_TARGET_RECT_DATA
+product: Windows
+targetos: Windows
+req.typenames: DXVAHDDDI_BLT_STATE_TARGET_RECT_DATA
 ---
 
 # _DXVAHDDDI_BLT_STATE_TARGET_RECT_DATA structure

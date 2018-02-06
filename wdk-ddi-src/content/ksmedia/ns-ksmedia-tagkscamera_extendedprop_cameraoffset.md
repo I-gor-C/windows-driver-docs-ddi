@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.tagKSCAMERA_EXTENDEDPROP_CAMERAOFFSET
-title : tagKSCAMERA_EXTENDEDPROP_CAMERAOFFSET
-author : windows-driver-content
-description : The KSCAMERA_EXTENDEDPROP_CAMERAOFFSET structure contains the parameters for the Camera Angle Offset Control property.
-old-location : stream\kscamera_extendedprop_cameraoffset.htm
-old-project : stream
-ms.assetid : D6C03D60-9FC4-4EF1-A7DD-4A91990D5CF1
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : "*PKSCAMERA_EXTENDEDPROP_CAMERAOFFSET, KSCAMERA_EXTENDEDPROP_CAMERAOFFSET structure [Streaming Media Devices], KSCAMERA_EXTENDEDPROP_CAMERAOFFSET, stream.kscamera_extendedprop_cameraoffset, PKSCAMERA_EXTENDEDPROP_CAMERAOFFSET, PKSCAMERA_EXTENDEDPROP_CAMERAOFFSET structure pointer [Streaming Media Devices], ksmedia/PKSCAMERA_EXTENDEDPROP_CAMERAOFFSET, tagKSCAMERA_EXTENDEDPROP_CAMERAOFFSET, ksmedia/KSCAMERA_EXTENDEDPROP_CAMERAOFFSET"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows 8.1.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKSCAMERA_EXTENDEDPROP_CAMERAOFFSET, KSCAMERA_EXTENDEDPROP_CAMERAOFFSET"
+UID: NS:ksmedia.tagKSCAMERA_EXTENDEDPROP_CAMERAOFFSET
+title: tagKSCAMERA_EXTENDEDPROP_CAMERAOFFSET
+author: windows-driver-content
+description: The KSCAMERA_EXTENDEDPROP_CAMERAOFFSET structure contains the parameters for the Camera Angle Offset Control property.
+old-location: stream\kscamera_extendedprop_cameraoffset.htm
+old-project: stream
+ms.assetid: D6C03D60-9FC4-4EF1-A7DD-4A91990D5CF1
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: "*PKSCAMERA_EXTENDEDPROP_CAMERAOFFSET, KSCAMERA_EXTENDEDPROP_CAMERAOFFSET structure [Streaming Media Devices], KSCAMERA_EXTENDEDPROP_CAMERAOFFSET, stream.kscamera_extendedprop_cameraoffset, PKSCAMERA_EXTENDEDPROP_CAMERAOFFSET, PKSCAMERA_EXTENDEDPROP_CAMERAOFFSET structure pointer [Streaming Media Devices], ksmedia/PKSCAMERA_EXTENDEDPROP_CAMERAOFFSET, tagKSCAMERA_EXTENDEDPROP_CAMERAOFFSET, ksmedia/KSCAMERA_EXTENDEDPROP_CAMERAOFFSET"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows 8.1.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ksmedia.h
+apiname:
+-	KSCAMERA_EXTENDEDPROP_CAMERAOFFSET
+product: Windows
+targetos: Windows
+req.typenames: "*PKSCAMERA_EXTENDEDPROP_CAMERAOFFSET, KSCAMERA_EXTENDEDPROP_CAMERAOFFSET"
 ---
 
 # tagKSCAMERA_EXTENDEDPROP_CAMERAOFFSET structure

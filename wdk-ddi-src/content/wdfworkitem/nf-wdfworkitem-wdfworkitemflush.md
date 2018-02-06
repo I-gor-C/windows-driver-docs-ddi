@@ -1,42 +1,50 @@
 ---
-UID : NF:wdfworkitem.WdfWorkItemFlush
-title : WdfWorkItemFlush function
-author : windows-driver-content
-description : The WdfWorkItemFlush method returns after a specified work item has been serviced.
-old-location : wdf\wdfworkitemflush.htm
-old-project : wdf
-ms.assetid : 5868dd01-17ba-4edf-b665-c90d2b1aa2ba
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : kmdf.wdfworkitemflush, PFN_WDFWORKITEMFLUSH, wdfworkitem/WdfWorkItemFlush, WdfWorkItemFlush, WdfWorkItemFlush method, wdf.wdfworkitemflush, DFWorkItemObjectRef_620a50e7-1995-4806-b71a-932f7fc7c35a.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfworkitem.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDF_WMI_PROVIDER_CONFIG, WDF_WMI_PROVIDER_CONFIG"
-req.product : Windows 10 or later.
+UID: NF:wdfworkitem.WdfWorkItemFlush
+title: WdfWorkItemFlush function
+author: windows-driver-content
+description: The WdfWorkItemFlush method returns after a specified work item has been serviced.
+old-location: wdf\wdfworkitemflush.htm
+old-project: wdf
+ms.assetid: 5868dd01-17ba-4edf-b665-c90d2b1aa2ba
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: kmdf.wdfworkitemflush, PFN_WDFWORKITEMFLUSH, wdfworkitem/WdfWorkItemFlush, WdfWorkItemFlush, WdfWorkItemFlush method, wdf.wdfworkitemflush, DFWorkItemObjectRef_620a50e7-1995-4806-b71a-932f7fc7c35a.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfworkitem.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+-	WUDFx02000.dll
+-	WUDFx02000.dll.dll
+apiname:
+-	WdfWorkItemFlush
+product: Windows
+targetos: Windows
+req.typenames: "*PWDF_WMI_PROVIDER_CONFIG, WDF_WMI_PROVIDER_CONFIG"
+req.product: Windows 10 or later.
 ---
 
 

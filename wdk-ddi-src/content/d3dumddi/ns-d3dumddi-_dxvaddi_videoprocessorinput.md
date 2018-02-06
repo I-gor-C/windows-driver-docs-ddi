@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._DXVADDI_VIDEOPROCESSORINPUT
-title : "_DXVADDI_VIDEOPROCESSORINPUT"
-author : windows-driver-content
-description : The DXVADDI_VIDEOPROCESSORINPUT structure describes a video stream that is processed by a video processing device type.
-old-location : display\dxvaddi_videoprocessorinput.htm
-old-project : display
-ms.assetid : 539d32a5-4566-4b8e-b9de-da8d5be3c2f2
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DXVA2_Structs_87cc7918-2fb5-4b73-a62c-ab9a3817c154.xml, _DXVADDI_VIDEOPROCESSORINPUT, display.dxvaddi_videoprocessorinput, d3dumddi/DXVADDI_VIDEOPROCESSORINPUT, DXVADDI_VIDEOPROCESSORINPUT, DXVADDI_VIDEOPROCESSORINPUT structure [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXVADDI_VIDEOPROCESSORINPUT
+UID: NS:d3dumddi._DXVADDI_VIDEOPROCESSORINPUT
+title: "_DXVADDI_VIDEOPROCESSORINPUT"
+author: windows-driver-content
+description: The DXVADDI_VIDEOPROCESSORINPUT structure describes a video stream that is processed by a video processing device type.
+old-location: display\dxvaddi_videoprocessorinput.htm
+old-project: display
+ms.assetid: 539d32a5-4566-4b8e-b9de-da8d5be3c2f2
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DXVA2_Structs_87cc7918-2fb5-4b73-a62c-ab9a3817c154.xml, _DXVADDI_VIDEOPROCESSORINPUT, display.dxvaddi_videoprocessorinput, d3dumddi/DXVADDI_VIDEOPROCESSORINPUT, DXVADDI_VIDEOPROCESSORINPUT, DXVADDI_VIDEOPROCESSORINPUT structure [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	DXVADDI_VIDEOPROCESSORINPUT
+product: Windows
+targetos: Windows
+req.typenames: DXVADDI_VIDEOPROCESSORINPUT
 ---
 
 # _DXVADDI_VIDEOPROCESSORINPUT structure

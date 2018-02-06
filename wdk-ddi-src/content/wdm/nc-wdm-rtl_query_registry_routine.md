@@ -1,42 +1,47 @@
 ---
-UID : NC:wdm.RTL_QUERY_REGISTRY_ROUTINE
-title : RTL_QUERY_REGISTRY_ROUTINE
-author : windows-driver-content
-description : The QueryRoutine routine provides information about a registry value that was requested in a preceding call to the RtlQueryRegistryValues routine.
-old-location : kernel\queryroutine.htm
-old-project : kernel
-ms.assetid : 28f9cfcd-ed2e-4760-9016-3542c27cb347
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.queryroutine, QueryRoutine routine [Kernel-Mode Driver Architecture], QueryRoutine, RTL_QUERY_REGISTRY_ROUTINE, RTL_QUERY_REGISTRY_ROUTINE, wdm/QueryRoutine, DrvrRtns_a5cd47f1-6d3c-495e-a83d-ccbd276c1728.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Called at PASSIVE_LEVEL.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
-req.product : Windows 10 or later.
+UID: NC:wdm.RTL_QUERY_REGISTRY_ROUTINE
+title: RTL_QUERY_REGISTRY_ROUTINE
+author: windows-driver-content
+description: The QueryRoutine routine provides information about a registry value that was requested in a preceding call to the RtlQueryRegistryValues routine.
+old-location: kernel\queryroutine.htm
+old-project: kernel
+ms.assetid: 28f9cfcd-ed2e-4760-9016-3542c27cb347
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.queryroutine, QueryRoutine routine [Kernel-Mode Driver Architecture], QueryRoutine, RTL_QUERY_REGISTRY_ROUTINE, RTL_QUERY_REGISTRY_ROUTINE, wdm/QueryRoutine, DrvrRtns_a5cd47f1-6d3c-495e-a83d-ccbd276c1728.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Called at PASSIVE_LEVEL.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Wdm.h
+apiname:
+-	QueryRoutine
+product: Windows
+targetos: Windows
+req.typenames: WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,42 +1,49 @@
 ---
-UID : NF:wdm.TmRecoverResourceManager
-title : TmRecoverResourceManager function
-author : windows-driver-content
-description : The TmRecoverResourceManager routine tries to recover the transaction that is associated with each enlistment of a specified resource manager object.
-old-location : kernel\tmrecoverresourcemanager.htm
-old-project : kernel
-ms.assetid : d327ea40-ce4d-4218-a367-919240a5a60c
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : TmRecoverResourceManager, kernel.tmrecoverresourcemanager, TmRecoverResourceManager routine [Kernel-Mode Driver Architecture], wdm/TmRecoverResourceManager, ktm_ref_e3f0b5e1-18fc-4edf-9270-f6d01e458166.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later operating system versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.TmRecoverResourceManager
+title: TmRecoverResourceManager function
+author: windows-driver-content
+description: The TmRecoverResourceManager routine tries to recover the transaction that is associated with each enlistment of a specified resource manager object.
+old-location: kernel\tmrecoverresourcemanager.htm
+old-project: kernel
+ms.assetid: d327ea40-ce4d-4218-a367-919240a5a60c
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: TmRecoverResourceManager, kernel.tmrecoverresourcemanager, TmRecoverResourceManager routine [Kernel-Mode Driver Architecture], wdm/TmRecoverResourceManager, ktm_ref_e3f0b5e1-18fc-4edf-9270-f6d01e458166.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later operating system versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+-	Ext-MS-Win-ntos-tm-l1-1-0.dll
+-	tm.sys
+apiname:
+-	TmRecoverResourceManager
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3D10DDI_RESOURCECOPY
-title : PFND3D10DDI_RESOURCECOPY
-author : windows-driver-content
-description : The ResourceCopy function copies an entire source resource to a destination resource.
-old-location : display\resourcecopy.htm
-old-project : display
-ms.assetid : 9a837f42-0bea-4425-b693-dd7947ac24b1
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.resourcecopy, ResourceCopy callback function [Display Devices], ResourceCopy, PFND3D10DDI_RESOURCECOPY, PFND3D10DDI_RESOURCECOPY, d3d10umddi/ResourceCopy, UserModeDisplayDriverDx10_Functions_40047363-38d4-4271-8c24-f9a7ea565079.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3D10DDI_RESOURCECOPY
+title: PFND3D10DDI_RESOURCECOPY
+author: windows-driver-content
+description: The ResourceCopy function copies an entire source resource to a destination resource.
+old-location: display\resourcecopy.htm
+old-project: display
+ms.assetid: 9a837f42-0bea-4425-b693-dd7947ac24b1
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.resourcecopy, ResourceCopy callback function [Display Devices], ResourceCopy, PFND3D10DDI_RESOURCECOPY, PFND3D10DDI_RESOURCECOPY, d3d10umddi/ResourceCopy, UserModeDisplayDriverDx10_Functions_40047363-38d4-4271-8c24-f9a7ea565079.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	ResourceCopy
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

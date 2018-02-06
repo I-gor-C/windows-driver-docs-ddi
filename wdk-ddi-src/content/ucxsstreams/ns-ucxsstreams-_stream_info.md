@@ -1,42 +1,47 @@
 ---
-UID : NS:ucxsstreams._STREAM_INFO
-title : "_STREAM_INFO"
-author : windows-driver-content
-description : This structure stores information about a stream associated with a bulk endpoint.
-old-location : buses\_stream_info.htm
-old-project : usbref
-ms.assetid : B8AE8866-AC13-4E7B-8815-70846DEECA12
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ucxsstreams/_STREAM_INFO, *PSTREAM_INFO, STREAM_INFO structure [Buses], P_STREAM_INFO, buses._stream_info, ucxsstreams/P_STREAM_INFO, STREAM_INFO, _STREAM_INFO, P_STREAM_INFO structure pointer [Buses]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ucxsstreams.h
-req.include-header : Ucxclass.h, Ucxstreams.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSTREAM_INFO, STREAM_INFO"
-req.product : Windows 10 or later.
+UID: NS:ucxsstreams._STREAM_INFO
+title: "_STREAM_INFO"
+author: windows-driver-content
+description: This structure stores information about a stream associated with a bulk endpoint.
+old-location: buses\_stream_info.htm
+old-project: usbref
+ms.assetid: B8AE8866-AC13-4E7B-8815-70846DEECA12
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ucxsstreams/_STREAM_INFO, *PSTREAM_INFO, STREAM_INFO structure [Buses], P_STREAM_INFO, buses._stream_info, ucxsstreams/P_STREAM_INFO, STREAM_INFO, _STREAM_INFO, P_STREAM_INFO structure pointer [Buses]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ucxsstreams.h
+req.include-header: Ucxclass.h, Ucxstreams.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ucxsstreams.h
+apiname:
+-	STREAM_INFO
+product: Windows
+targetos: Windows
+req.typenames: "*PSTREAM_INFO, STREAM_INFO"
+req.product: Windows 10 or later.
 ---
 
 # _STREAM_INFO structure

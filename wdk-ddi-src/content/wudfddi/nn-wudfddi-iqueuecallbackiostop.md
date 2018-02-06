@@ -1,42 +1,47 @@
 ---
-UID : NN:wudfddi.IQueueCallbackIoStop
-title : IQueueCallbackIoStop
-author : windows-driver-content
-description : The IQueueCallbackIoStop interface contains a method that stops the processing of an I/O request from a queue.
-old-location : wdf\iqueuecallbackiostop.htm
-old-project : wdf
-ms.assetid : 430ee7fd-cffb-452d-b2e8-0dc252987487
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.iqueuecallbackiostop, IQueueCallbackIoStop interface, IQueueCallbackIoStop interface, described, IQueueCallbackIoStop, wudfddi/IQueueCallbackIoStop, UMDFQueueObjectRef_cf62ed54-43d3-4a9e-8e82-85695bf30527.xml, umdf.iqueuecallbackiostop
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : wudfddi.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NN:wudfddi.IQueueCallbackIoStop
+title: IQueueCallbackIoStop
+author: windows-driver-content
+description: The IQueueCallbackIoStop interface contains a method that stops the processing of an I/O request from a queue.
+old-location: wdf\iqueuecallbackiostop.htm
+old-project: wdf
+ms.assetid: 430ee7fd-cffb-452d-b2e8-0dc252987487
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.iqueuecallbackiostop, IQueueCallbackIoStop interface, IQueueCallbackIoStop interface, described, IQueueCallbackIoStop, wudfddi/IQueueCallbackIoStop, UMDFQueueObjectRef_cf62ed54-43d3-4a9e-8e82-85695bf30527.xml, umdf.iqueuecallbackiostop
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: wudfddi.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	wudfddi.h
+apiname:
+-	IQueueCallbackIoStop
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 # IQueueCallbackIoStop interface

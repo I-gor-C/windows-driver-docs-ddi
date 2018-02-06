@@ -1,42 +1,47 @@
 ---
-UID : NC:ucxusbdevice.EVT_UCX_USBDEVICE_ENABLE
-title : EVT_UCX_USBDEVICE_ENABLE
-author : windows-driver-content
-description : The client driver's implementation that UCX calls to program information about the device and its default control endpoint into the controller.
-old-location : buses\evt_ucx_usbdevice_enable.htm
-old-project : usbref
-ms.assetid : ac46a6eb-c30d-4b1f-8e14-0ae44ae0d4f1
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : buses.evt_ucx_usbdevice_enable, EvtUcxUsbDeviceEnable callback function [Buses], EvtUcxUsbDeviceEnable, EVT_UCX_USBDEVICE_ENABLE, EVT_UCX_USBDEVICE_ENABLE, ucxusbdevice/EvtUcxUsbDeviceEnable, PEVT_UCX_USBDEVICE_ENABLE callback function pointer [Buses], PEVT_UCX_USBDEVICE_ENABLE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ucxusbdevice.h
-req.include-header : Ucxclass.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : DISPATCH_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSTREAM_INFO, STREAM_INFO"
-req.product : Windows 10 or later.
+UID: NC:ucxusbdevice.EVT_UCX_USBDEVICE_ENABLE
+title: EVT_UCX_USBDEVICE_ENABLE
+author: windows-driver-content
+description: The client driver's implementation that UCX calls to program information about the device and its default control endpoint into the controller.
+old-location: buses\evt_ucx_usbdevice_enable.htm
+old-project: usbref
+ms.assetid: ac46a6eb-c30d-4b1f-8e14-0ae44ae0d4f1
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: buses.evt_ucx_usbdevice_enable, EvtUcxUsbDeviceEnable callback function [Buses], EvtUcxUsbDeviceEnable, EVT_UCX_USBDEVICE_ENABLE, EVT_UCX_USBDEVICE_ENABLE, ucxusbdevice/EvtUcxUsbDeviceEnable, PEVT_UCX_USBDEVICE_ENABLE callback function pointer [Buses], PEVT_UCX_USBDEVICE_ENABLE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ucxusbdevice.h
+req.include-header: Ucxclass.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: DISPATCH_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	ucxusbdevice.h
+apiname:
+-	PEVT_UCX_USBDEVICE_ENABLE
+product: Windows
+targetos: Windows
+req.typenames: "*PSTREAM_INFO, STREAM_INFO"
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NC:wdfdevice.EVT_WDFDEVICE_WDM_POST_PO_FX_REGISTER_DEVICE
-title : EVT_WDFDEVICE_WDM_POST_PO_FX_REGISTER_DEVICE
-author : windows-driver-content
-description : The EvtDeviceWdmPostPoFxRegisterDevice callback function performs device-specific operations after the framework has registered with the power framework.
-old-location : wdf\evtdevicewdmpostpofxregisterdevice.htm
-old-project : wdf
-ms.assetid : 4CE227F5-9ED4-4484-AFBF-44D1260EB99D
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.evtdevicewdmpostpofxregisterdevice, EvtDeviceWdmPostPoFxRegisterDevice callback function, EvtDeviceWdmPostPoFxRegisterDevice, EVT_WDFDEVICE_WDM_POST_PO_FX_REGISTER_DEVICE, EVT_WDFDEVICE_WDM_POST_PO_FX_REGISTER_DEVICE, wdfdevice/EvtDeviceWdmPostPoFxRegisterDevice, kmdf.evtdevicewdmpostpofxregisterdevice
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdfdevice.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.11
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_DEVICE_SHUTDOWN_FLAGS
-req.product : Windows 10 or later.
+UID: NC:wdfdevice.EVT_WDFDEVICE_WDM_POST_PO_FX_REGISTER_DEVICE
+title: EVT_WDFDEVICE_WDM_POST_PO_FX_REGISTER_DEVICE
+author: windows-driver-content
+description: The EvtDeviceWdmPostPoFxRegisterDevice callback function performs device-specific operations after the framework has registered with the power framework.
+old-location: wdf\evtdevicewdmpostpofxregisterdevice.htm
+old-project: wdf
+ms.assetid: 4CE227F5-9ED4-4484-AFBF-44D1260EB99D
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.evtdevicewdmpostpofxregisterdevice, EvtDeviceWdmPostPoFxRegisterDevice callback function, EvtDeviceWdmPostPoFxRegisterDevice, EVT_WDFDEVICE_WDM_POST_PO_FX_REGISTER_DEVICE, EVT_WDFDEVICE_WDM_POST_PO_FX_REGISTER_DEVICE, wdfdevice/EvtDeviceWdmPostPoFxRegisterDevice, kmdf.evtdevicewdmpostpofxregisterdevice
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdfdevice.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.11
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Wdfdevice.h
+apiname:
+-	EvtDeviceWdmPostPoFxRegisterDevice
+product: Windows
+targetos: Windows
+req.typenames: WDF_DEVICE_SHUTDOWN_FLAGS
+req.product: Windows 10 or later.
 ---
 
 

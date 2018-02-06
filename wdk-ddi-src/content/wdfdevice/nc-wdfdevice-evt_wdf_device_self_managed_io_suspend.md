@@ -1,42 +1,47 @@
 ---
-UID : NC:wdfdevice.EVT_WDF_DEVICE_SELF_MANAGED_IO_SUSPEND
-title : EVT_WDF_DEVICE_SELF_MANAGED_IO_SUSPEND
-author : windows-driver-content
-description : A driver's EvtDeviceSelfManagedIoSuspend event callback function suspends a device's self-managed I/O operations.
-old-location : wdf\evtdeviceselfmanagediosuspend.htm
-old-project : wdf
-ms.assetid : 85a569ea-eb14-4453-9591-fc44afbd3a59
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.evtdeviceselfmanagediosuspend, EvtDeviceSelfManagedIoSuspend callback function, EvtDeviceSelfManagedIoSuspend, EVT_WDF_DEVICE_SELF_MANAGED_IO_SUSPEND, EVT_WDF_DEVICE_SELF_MANAGED_IO_SUSPEND, wdfdevice/EvtDeviceSelfManagedIoSuspend, DFDeviceObjectGeneralRef_10625e27-0ff8-47fa-aff0-ddca49c7f326.xml, kmdf.evtdeviceselfmanagediosuspend
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdfdevice.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_DEVICE_SHUTDOWN_FLAGS
-req.product : Windows 10 or later.
+UID: NC:wdfdevice.EVT_WDF_DEVICE_SELF_MANAGED_IO_SUSPEND
+title: EVT_WDF_DEVICE_SELF_MANAGED_IO_SUSPEND
+author: windows-driver-content
+description: A driver's EvtDeviceSelfManagedIoSuspend event callback function suspends a device's self-managed I/O operations.
+old-location: wdf\evtdeviceselfmanagediosuspend.htm
+old-project: wdf
+ms.assetid: 85a569ea-eb14-4453-9591-fc44afbd3a59
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.evtdeviceselfmanagediosuspend, EvtDeviceSelfManagedIoSuspend callback function, EvtDeviceSelfManagedIoSuspend, EVT_WDF_DEVICE_SELF_MANAGED_IO_SUSPEND, EVT_WDF_DEVICE_SELF_MANAGED_IO_SUSPEND, wdfdevice/EvtDeviceSelfManagedIoSuspend, DFDeviceObjectGeneralRef_10625e27-0ff8-47fa-aff0-ddca49c7f326.xml, kmdf.evtdeviceselfmanagediosuspend
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdfdevice.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Wdfdevice.h
+apiname:
+-	EvtDeviceSelfManagedIoSuspend
+product: Windows
+targetos: Windows
+req.typenames: WDF_DEVICE_SHUTDOWN_FLAGS
+req.product: Windows 10 or later.
 ---
 
 

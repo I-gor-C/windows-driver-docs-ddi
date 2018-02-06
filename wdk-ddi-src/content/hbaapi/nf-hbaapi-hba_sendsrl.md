@@ -1,41 +1,46 @@
 ---
-UID : NF:hbaapi.HBA_SendSRL
-title : HBA_SendSRL function
-author : windows-driver-content
-description : The HBA_SendSRL routine issues a scan remote loop (SRL) request through the specified HBA to a specified domain controller.
-old-location : storage\hba_sendsrl.htm
-old-project : storage
-ms.assetid : 455ff9c9-89d5-4c79-8b01-f0d731ac8d5a
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : hbaapi/HBA_SendSRL, storage.hba_sendsrl, HBA_SendSRL routine [Storage Devices], HBA_SendSRL, fibreHBA_rtns_30102c46-c07f-4d22-a0c7-83bea708c4b8.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : hbaapi.h
-req.include-header : Hbaapi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Hbaapi.lib
-req.dll : Hbaapi.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HBA_WWNTYPE
+UID: NF:hbaapi.HBA_SendSRL
+title: HBA_SendSRL function
+author: windows-driver-content
+description: The HBA_SendSRL routine issues a scan remote loop (SRL) request through the specified HBA to a specified domain controller.
+old-location: storage\hba_sendsrl.htm
+old-project: storage
+ms.assetid: 455ff9c9-89d5-4c79-8b01-f0d731ac8d5a
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: hbaapi/HBA_SendSRL, storage.hba_sendsrl, HBA_SendSRL routine [Storage Devices], HBA_SendSRL, fibreHBA_rtns_30102c46-c07f-4d22-a0c7-83bea708c4b8.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: hbaapi.h
+req.include-header: Hbaapi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Hbaapi.lib
+req.dll: Hbaapi.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Hbaapi.dll
+apiname:
+-	HBA_SendSRL
+product: Windows
+targetos: Windows
+req.typenames: HBA_WWNTYPE
 ---
 
 

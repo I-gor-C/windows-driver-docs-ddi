@@ -1,41 +1,46 @@
 ---
-UID : NE:ntddcdrm._STREAMING_CONTROL_REQUEST_TYPE
-title : "_STREAMING_CONTROL_REQUEST_TYPE"
-author : windows-driver-content
-description : The STREAMING_CONTROL_REQUEST_TYPE enumeration defines the CDROM streaming modes.
-old-location : storage\streaming_control_request_type.htm
-old-project : storage
-ms.assetid : A17F0E3C-402B-4484-B4AE-0583773AEDA8
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : ntddcdrm/ CdromStreamingEnableForWriteOnly, storage.streaming_control_request_type, STREAMING_CONTROL_REQUEST_TYPE enumeration [Storage Devices], ntddcdrm/STREAMING_CONTROL_REQUEST_TYPE, ntddcdrm/CdromStreamingDisable, CdromStreamingEnableForWriteOnly, CdromStreamingDisable, CdromStreamingEnableForReadOnly, ntddcdrm/CdromStreamingEnableForReadWrite, ntddcdrm/PSTREAMING_CONTROL_REQUEST_TYPE, CdromStreamingEnableForReadWrite, PSTREAMING_CONTROL_REQUEST_TYPE enumeration pointer [Storage Devices], PSTREAMING_CONTROL_REQUEST_TYPE, *PSTREAMING_CONTROL_REQUEST_TYPE, _STREAMING_CONTROL_REQUEST_TYPE, STREAMING_CONTROL_REQUEST_TYPE, ntddcdrm/CdromStreamingEnableForReadOnly
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : ntddcdrm.h
-req.include-header : Ntddcdrm.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSTREAMING_CONTROL_REQUEST_TYPE, STREAMING_CONTROL_REQUEST_TYPE"
+UID: NE:ntddcdrm._STREAMING_CONTROL_REQUEST_TYPE
+title: "_STREAMING_CONTROL_REQUEST_TYPE"
+author: windows-driver-content
+description: The STREAMING_CONTROL_REQUEST_TYPE enumeration defines the CDROM streaming modes.
+old-location: storage\streaming_control_request_type.htm
+old-project: storage
+ms.assetid: A17F0E3C-402B-4484-B4AE-0583773AEDA8
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: ntddcdrm/ CdromStreamingEnableForWriteOnly, storage.streaming_control_request_type, STREAMING_CONTROL_REQUEST_TYPE enumeration [Storage Devices], ntddcdrm/STREAMING_CONTROL_REQUEST_TYPE, ntddcdrm/CdromStreamingDisable, CdromStreamingEnableForWriteOnly, CdromStreamingDisable, CdromStreamingEnableForReadOnly, ntddcdrm/CdromStreamingEnableForReadWrite, ntddcdrm/PSTREAMING_CONTROL_REQUEST_TYPE, CdromStreamingEnableForReadWrite, PSTREAMING_CONTROL_REQUEST_TYPE enumeration pointer [Storage Devices], PSTREAMING_CONTROL_REQUEST_TYPE, *PSTREAMING_CONTROL_REQUEST_TYPE, _STREAMING_CONTROL_REQUEST_TYPE, STREAMING_CONTROL_REQUEST_TYPE, ntddcdrm/CdromStreamingEnableForReadOnly
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: ntddcdrm.h
+req.include-header: Ntddcdrm.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddcdrm.h
+apiname:
+-	STREAMING_CONTROL_REQUEST_TYPE
+product: Windows
+targetos: Windows
+req.typenames: "*PSTREAMING_CONTROL_REQUEST_TYPE, STREAMING_CONTROL_REQUEST_TYPE"
 ---
 
 # _STREAMING_CONTROL_REQUEST_TYPE Enumeration
@@ -54,26 +59,26 @@ typedef enum _STREAMING_CONTROL_REQUEST_TYPE {
 ## Constants
 
 <table>
-
-<tr>
-<td>CdromStreamingDisable</td>
-<td>Streaming read and streaming write requests will be disabled for the requested file handle.</td>
-</tr>
-
-<tr>
-<td>CdromStreamingEnableForReadOnly</td>
-<td>Streaming read requests will be enabled, and streaming write requests will be disabled, for the requested file handle.</td>
-</tr>
-
-<tr>
-<td>CdromStreamingEnableForReadWrite</td>
-<td>Streaming read and streaming write requests will be enabled for the requested file handle.</td>
-</tr>
-
-<tr>
-<td>CdromStreamingEnableForWriteOnly</td>
-<td>Streaming read requests will be disabled, and streaming write requests will be enabled, for the requested file handle.</td>
-</tr>
+            
+                <tr>
+                    <td>CdromStreamingDisable</td>
+                    <td>Streaming read and streaming write requests will be disabled for the requested file handle.</td>
+                </tr>
+            
+                <tr>
+                    <td>CdromStreamingEnableForReadOnly</td>
+                    <td>Streaming read requests will be enabled, and streaming write requests will be disabled, for the requested file handle.</td>
+                </tr>
+            
+                <tr>
+                    <td>CdromStreamingEnableForReadWrite</td>
+                    <td>Streaming read and streaming write requests will be enabled for the requested file handle.</td>
+                </tr>
+            
+                <tr>
+                    <td>CdromStreamingEnableForWriteOnly</td>
+                    <td>Streaming read requests will be disabled, and streaming write requests will be enabled, for the requested file handle.</td>
+                </tr>
 </table>
 
 
@@ -82,9 +87,9 @@ typedef enum _STREAMING_CONTROL_REQUEST_TYPE {
 | ---- |:---- |
 | **Header** | ntddcdrm.h (include Ntddcdrm.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_streaming_control.md">CDROM_STREAMING_CONTROL</a>
+        <a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_streaming_control.md">CDROM_STREAMING_CONTROL</a>
 
 <a href="..\ntddcdrm\ni-ntddcdrm-ioctl_cdrom_enable_streaming.md">IOCTL_CDROM_ENABLE_STREAMING</a>
 

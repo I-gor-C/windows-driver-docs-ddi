@@ -1,41 +1,46 @@
 ---
-UID : NF:ks.KsFilterFactoryGetDevice
-title : KsFilterFactoryGetDevice function
-author : windows-driver-content
-description : The KsFilterFactoryGetDevice function returns the AVStream device to which FilterFactory belongs.
-old-location : stream\ksfilterfactorygetdevice.htm
-old-project : stream
-ms.assetid : e5b7b014-3e06-49f2-8ccd-45d74592e349
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KsFilterFactoryGetDevice, ks/KsFilterFactoryGetDevice, avfunc_1e2ec536-69a1-4606-9d99-ebdebd25c89a.xml, KsFilterFactoryGetDevice function [Streaming Media Devices], stream.ksfilterfactorygetdevice
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsFilterFactoryGetDevice
+title: KsFilterFactoryGetDevice function
+author: windows-driver-content
+description: The KsFilterFactoryGetDevice function returns the AVStream device to which FilterFactory belongs.
+old-location: stream\ksfilterfactorygetdevice.htm
+old-project: stream
+ms.assetid: e5b7b014-3e06-49f2-8ccd-45d74592e349
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KsFilterFactoryGetDevice, ks/KsFilterFactoryGetDevice, avfunc_1e2ec536-69a1-4606-9d99-ebdebd25c89a.xml, KsFilterFactoryGetDevice function [Streaming Media Devices], stream.ksfilterfactorygetdevice
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	KsFilterFactoryGetDevice
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

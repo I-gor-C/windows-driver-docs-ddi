@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dkmddi.DXGKDDI_RELEASESWIZZLINGRANGE
-title : DXGKDDI_RELEASESWIZZLINGRANGE
-author : windows-driver-content
-description : The DxgkDdiReleaseSwizzlingRange function releases a swizzling range that the DxgkDdiAcquireSwizzlingRange function previously set up.
-old-location : display\dxgkddireleaseswizzlingrange.htm
-old-project : display
-ms.assetid : 6c583a48-baa4-429f-b2fc-5f86859617cc
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkddireleaseswizzlingrange, DxgkDdiReleaseSwizzlingRange callback function [Display Devices], DxgkDdiReleaseSwizzlingRange, DXGKDDI_RELEASESWIZZLINGRANGE, DXGKDDI_RELEASESWIZZLINGRANGE, d3dkmddi/DxgkDdiReleaseSwizzlingRange, DmFunctions_7dab2ff4-4f37-4b56-a15c-29dcf54f8b8d.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dkmddi.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
+UID: NC:d3dkmddi.DXGKDDI_RELEASESWIZZLINGRANGE
+title: DXGKDDI_RELEASESWIZZLINGRANGE
+author: windows-driver-content
+description: The DxgkDdiReleaseSwizzlingRange function releases a swizzling range that the DxgkDdiAcquireSwizzlingRange function previously set up.
+old-location: display\dxgkddireleaseswizzlingrange.htm
+old-project: display
+ms.assetid: 6c583a48-baa4-429f-b2fc-5f86859617cc
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkddireleaseswizzlingrange, DxgkDdiReleaseSwizzlingRange callback function [Display Devices], DxgkDdiReleaseSwizzlingRange, DXGKDDI_RELEASESWIZZLINGRANGE, DXGKDDI_RELEASESWIZZLINGRANGE, d3dkmddi/DxgkDdiReleaseSwizzlingRange, DmFunctions_7dab2ff4-4f37-4b56-a15c-29dcf54f8b8d.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dkmddi.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DxgkDdiReleaseSwizzlingRange
+product: Windows
+targetos: Windows
+req.typenames: DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
 

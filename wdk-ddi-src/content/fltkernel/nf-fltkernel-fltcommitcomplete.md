@@ -1,41 +1,47 @@
 ---
-UID : NF:fltkernel.FltCommitComplete
-title : FltCommitComplete function
-author : windows-driver-content
-description : The FltCommitComplete routine acknowledges a TRANSACTION_NOTIFY_COMMIT notification.
-old-location : ifsk\fltcommitcomplete.htm
-old-project : ifsk
-ms.assetid : 26c553d1-5a71-4e96-a5ef-56e8e364faca
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltCommitComplete, FltApiRef_a_to_d_fc4b72a5-52df-47f9-b119-68ccb02b14bc.xml, ifsk.fltcommitcomplete, fltkernel/FltCommitComplete, FltCommitComplete routine [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Fltmgr.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltCommitComplete
+title: FltCommitComplete function
+author: windows-driver-content
+description: The FltCommitComplete routine acknowledges a TRANSACTION_NOTIFY_COMMIT notification.
+old-location: ifsk\fltcommitcomplete.htm
+old-project: ifsk
+ms.assetid: 26c553d1-5a71-4e96-a5ef-56e8e364faca
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltCommitComplete, FltApiRef_a_to_d_fc4b72a5-52df-47f9-b119-68ccb02b14bc.xml, ifsk.fltcommitcomplete, fltkernel/FltCommitComplete, FltCommitComplete routine [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Fltmgr.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Fltmgr.lib
+-	Fltmgr.dll
+apiname:
+-	FltCommitComplete
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

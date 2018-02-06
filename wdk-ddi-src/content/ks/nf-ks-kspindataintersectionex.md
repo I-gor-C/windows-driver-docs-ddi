@@ -1,41 +1,46 @@
 ---
-UID : NF:ks.KsPinDataIntersectionEx
-title : KsPinDataIntersectionEx function
-author : windows-driver-content
-description : The KsPinDataIntersectionEx function handles the KSPROPERTY_PIN_DATAINTERSECTION through a callback function.
-old-location : stream\kspindataintersectionex.htm
-old-project : stream
-ms.assetid : 4d471d91-7b2c-441d-a640-4f66ef7f1b2f
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ks/KsPinDataIntersectionEx, ksfunc_22cbace6-b96b-44d7-9c30-24580f37dd58.xml, KsPinDataIntersectionEx function [Streaming Media Devices], KsPinDataIntersectionEx, stream.kspindataintersectionex
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsPinDataIntersectionEx
+title: KsPinDataIntersectionEx function
+author: windows-driver-content
+description: The KsPinDataIntersectionEx function handles the KSPROPERTY_PIN_DATAINTERSECTION through a callback function.
+old-location: stream\kspindataintersectionex.htm
+old-project: stream
+ms.assetid: 4d471d91-7b2c-441d-a640-4f66ef7f1b2f
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ks/KsPinDataIntersectionEx, ksfunc_22cbace6-b96b-44d7-9c30-24580f37dd58.xml, KsPinDataIntersectionEx function [Streaming Media Devices], KsPinDataIntersectionEx, stream.kspindataintersectionex
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	KsPinDataIntersectionEx
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NF:portcls.IInterruptSync.CallSynchronizedRoutine
-title : IInterruptSync::CallSynchronizedRoutine method
-author : windows-driver-content
-description : The CallSynchronizedRoutine method calls a routine that is not an interrupt service routine (ISR) but whose execution needs to be synchronized with ISRs.
-old-location : audio\iinterruptsync_callsynchronizedroutine.htm
-old-project : audio
-ms.assetid : 9895ee9a-4d8c-4cd4-8df4-fedaf864a178
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : CallSynchronizedRoutine method [Audio Devices], portcls/IInterruptSync::CallSynchronizedRoutine, IInterruptSync interface [Audio Devices], CallSynchronizedRoutine method, IInterruptSync::CallSynchronizedRoutine, audmp-routines_985e70ee-3e6b-4514-adb5-1b37f92c9ae4.xml, IInterruptSync, CallSynchronizedRoutine method [Audio Devices], IInterruptSync interface, CallSynchronizedRoutine, audio.iinterruptsync_callsynchronizedroutine
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : portcls.h
-req.include-header : Portcls.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : portcls.h
-req.dll : 
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.IInterruptSync.CallSynchronizedRoutine
+title: IInterruptSync::CallSynchronizedRoutine method
+author: windows-driver-content
+description: The CallSynchronizedRoutine method calls a routine that is not an interrupt service routine (ISR) but whose execution needs to be synchronized with ISRs.
+old-location: audio\iinterruptsync_callsynchronizedroutine.htm
+old-project: audio
+ms.assetid: 9895ee9a-4d8c-4cd4-8df4-fedaf864a178
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: CallSynchronizedRoutine method [Audio Devices], portcls/IInterruptSync::CallSynchronizedRoutine, IInterruptSync interface [Audio Devices], CallSynchronizedRoutine method, IInterruptSync::CallSynchronizedRoutine, audmp-routines_985e70ee-3e6b-4514-adb5-1b37f92c9ae4.xml, IInterruptSync, CallSynchronizedRoutine method [Audio Devices], IInterruptSync interface, CallSynchronizedRoutine, audio.iinterruptsync_callsynchronizedroutine
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: portcls.h
+req.include-header: Portcls.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: portcls.h
+req.dll: 
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	portcls.h
+apiname:
+-	IInterruptSync.CallSynchronizedRoutine
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

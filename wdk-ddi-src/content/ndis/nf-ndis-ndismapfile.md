@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisMapFile
-title : NdisMapFile function
-author : windows-driver-content
-description : The NdisMapFile function maps an already open file into a caller-accessible buffer if the file is currently unmapped.
-old-location : netvista\ndismapfile.htm
-old-project : netvista
-ms.assetid : 965bb4c7-826d-425b-b10d-2d5a29ca0f91
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : ndis/NdisMapFile, VOID, NdisMapFile, netvista.ndismapfile, NdisMapFile function [Network Drivers Starting with Windows Vista], ndis_file_ref_5bc73f64-8379-45bb-a37b-fe9a946af119.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisMapFile (NDIS 5.1)) in Windows   Vista. Supported for NDIS 5.1 drivers (see    NdisMapFile (NDIS 5.1)) in Windows   XP.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_Miscellaneous_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisMapFile
+title: NdisMapFile function
+author: windows-driver-content
+description: The NdisMapFile function maps an already open file into a caller-accessible buffer if the file is currently unmapped.
+old-location: netvista\ndismapfile.htm
+old-project: netvista
+ms.assetid: 965bb4c7-826d-425b-b10d-2d5a29ca0f91
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: ndis/NdisMapFile, VOID, NdisMapFile, netvista.ndismapfile, NdisMapFile function [Network Drivers Starting with Windows Vista], ndis_file_ref_5bc73f64-8379-45bb-a37b-fe9a946af119.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisMapFile (NDIS 5.1)) in Windows   Vista. Supported for NDIS 5.1 drivers (see    NdisMapFile (NDIS 5.1)) in Windows   XP.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_Miscellaneous_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisMapFile
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

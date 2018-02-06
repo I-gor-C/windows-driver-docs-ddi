@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dkmddi.DXGKDDI_VIDPNTOPOLOGY_CREATENEWPATHINFO
-title : DXGKDDI_VIDPNTOPOLOGY_CREATENEWPATHINFO
-author : windows-driver-content
-description : The pfnCreateNewPathInfo function returns a pointer to a D3DKMDT_VIDPN_PRESENT_PATH structure that the display miniport driver populates before calling pfnAddPath.
-old-location : display\dxgk_vidpntopology_interface_pfncreatenewpathinfo.htm
-old-project : display
-ms.assetid : 2d9a4e10-514d-4ea9-9d60-0bbb7cdca29d
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgk_vidpntopology_interface_pfncreatenewpathinfo, pfnCreateNewPathInfo callback function [Display Devices], pfnCreateNewPathInfo, DXGKDDI_VIDPNTOPOLOGY_CREATENEWPATHINFO, DXGKDDI_VIDPNTOPOLOGY_CREATENEWPATHINFO, d3dkmddi/pfnCreateNewPathInfo, VidPnFunctions_50591912-0f93-4049-a230-1fc5d96b2132.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
+UID: NC:d3dkmddi.DXGKDDI_VIDPNTOPOLOGY_CREATENEWPATHINFO
+title: DXGKDDI_VIDPNTOPOLOGY_CREATENEWPATHINFO
+author: windows-driver-content
+description: The pfnCreateNewPathInfo function returns a pointer to a D3DKMDT_VIDPN_PRESENT_PATH structure that the display miniport driver populates before calling pfnAddPath.
+old-location: display\dxgk_vidpntopology_interface_pfncreatenewpathinfo.htm
+old-project: display
+ms.assetid: 2d9a4e10-514d-4ea9-9d60-0bbb7cdca29d
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgk_vidpntopology_interface_pfncreatenewpathinfo, pfnCreateNewPathInfo callback function [Display Devices], pfnCreateNewPathInfo, DXGKDDI_VIDPNTOPOLOGY_CREATENEWPATHINFO, DXGKDDI_VIDPNTOPOLOGY_CREATENEWPATHINFO, d3dkmddi/pfnCreateNewPathInfo, VidPnFunctions_50591912-0f93-4049-a230-1fc5d96b2132.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	pfnCreateNewPathInfo
+product: Windows
+targetos: Windows
+req.typenames: DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
 

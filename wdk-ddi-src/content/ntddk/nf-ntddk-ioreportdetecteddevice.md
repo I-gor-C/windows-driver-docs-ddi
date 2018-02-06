@@ -1,41 +1,46 @@
 ---
-UID : NF:ntddk.IoReportDetectedDevice
-title : IoReportDetectedDevice function
-author : windows-driver-content
-description : The IoReportDetectedDevice routine reports a non-PnP device to the PnP manager.
-old-location : kernel\ioreportdetecteddevice.htm
-old-project : kernel
-ms.assetid : b7756f69-feab-4a28-88d5-0262f86db54b
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.ioreportdetecteddevice, IoReportDetectedDevice routine [Kernel-Mode Driver Architecture], IoReportDetectedDevice, ntddk/IoReportDetectedDevice, k104_b906486e-318a-49b5-aa6a-683c1889c10b.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.IoReportDetectedDevice
+title: IoReportDetectedDevice function
+author: windows-driver-content
+description: The IoReportDetectedDevice routine reports a non-PnP device to the PnP manager.
+old-location: kernel\ioreportdetecteddevice.htm
+old-project: kernel
+ms.assetid: b7756f69-feab-4a28-88d5-0262f86db54b
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.ioreportdetecteddevice, IoReportDetectedDevice routine [Kernel-Mode Driver Architecture], IoReportDetectedDevice, ntddk/IoReportDetectedDevice, k104_b906486e-318a-49b5-aa6a-683c1889c10b.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoReportDetectedDevice
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

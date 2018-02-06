@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfdpc.WdfDpcCancel
-title : WdfDpcCancel function
-author : windows-driver-content
-description : The WdfDpcCancel method attempts to cancel the execution of a DPC object's scheduled EvtDpcFunc callback function.
-old-location : wdf\wdfdpccancel.htm
-old-project : wdf
-ms.assetid : 6eb56c5b-d198-4542-a239-c54b49561196
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WdfDpcCancel, DFDpcObjectRef_4efcdae1-0c0a-4808-a1d8-640dea3555cb.xml, kmdf.wdfdpccancel, wdfdpc/WdfDpcCancel, wdf.wdfdpccancel, WdfDpcCancel method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfdpc.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDF_DMA_SYSTEM_PROFILE_CONFIG, WDF_DMA_SYSTEM_PROFILE_CONFIG"
-req.product : Windows 10 or later.
+UID: NF:wdfdpc.WdfDpcCancel
+title: WdfDpcCancel function
+author: windows-driver-content
+description: The WdfDpcCancel method attempts to cancel the execution of a DPC object's scheduled EvtDpcFunc callback function.
+old-location: wdf\wdfdpccancel.htm
+old-project: wdf
+ms.assetid: 6eb56c5b-d198-4542-a239-c54b49561196
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WdfDpcCancel, DFDpcObjectRef_4efcdae1-0c0a-4808-a1d8-640dea3555cb.xml, kmdf.wdfdpccancel, wdfdpc/WdfDpcCancel, wdf.wdfdpccancel, WdfDpcCancel method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfdpc.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfDpcCancel
+product: Windows
+targetos: Windows
+req.typenames: "*PWDF_DMA_SYSTEM_PROFILE_CONFIG, WDF_DMA_SYSTEM_PROFILE_CONFIG"
+req.product: Windows 10 or later.
 ---
 
 

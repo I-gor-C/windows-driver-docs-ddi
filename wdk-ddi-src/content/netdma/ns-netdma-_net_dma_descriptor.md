@@ -1,41 +1,46 @@
 ---
-UID : NS:netdma._NET_DMA_DESCRIPTOR
-title : "_NET_DMA_DESCRIPTOR"
-author : windows-driver-content
-description : The NET_DMA_DESCRIPTOR structure specifies the DMA transfer information for each entry in a linked list of DMA descriptors.
-old-location : netvista\net_dma_descriptor.htm
-old-project : netvista
-ms.assetid : 0465a8d7-1cdd-4647-9b78-557256f60c05
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NET_DMA_NULL_TRANSFER, NET_DMA_DESCRIPTOR, NET_DMA_DESTINATION_NO_SNOOP, NET_DMA_OP_TYPE_MASK, NET_DMA_SOURCE_PAGE_BREAK, NET_DMA_INTERRUPT_ON_COMPLETION, NET_DMA_RESERVED_MASK, PNET_DMA_DESCRIPTOR, _NET_DMA_DESCRIPTOR, NET_DMA_DESTINATION_PAGE_BREAK, NET_DMA_DESTINATION_DCA_ENABLE, netvista.net_dma_descriptor, NET_DMA_SOURCE_NO_SNOOP, netdma_ref_06e1861b-7904-4bf5-9ce5-e85ae1daa22e.xml, NET_DMA_OP_TYPE_CONTEXT_CHANGE, PNET_DMA_DESCRIPTOR structure pointer [Network Drivers Starting with Windows Vista], NET_DMA_STATUS_UPDATE_ON_COMPLETION, netdma/PNET_DMA_DESCRIPTOR, netdma/NET_DMA_DESCRIPTOR, NET_DMA_SERIALIZE_TRANSFER, *PNET_DMA_DESCRIPTOR, NET_DMA_DESCRIPTOR structure [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : netdma.h
-req.include-header : Netdma.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported for NetDMA 2.0 drivers in Windows Server 2008. (Added NextSourceAddress,   NextDestinationAddress, DCAContext32, DCAContext16, and DCAContext8 members.) Supported for NetDMA 1.1   drivers in Windows Server 2008. Supported for NetDMA 1.0 drivers in Windows Server 2008 and Windows   Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PNET_DMA_DESCRIPTOR, NET_DMA_DESCRIPTOR"
+UID: NS:netdma._NET_DMA_DESCRIPTOR
+title: "_NET_DMA_DESCRIPTOR"
+author: windows-driver-content
+description: The NET_DMA_DESCRIPTOR structure specifies the DMA transfer information for each entry in a linked list of DMA descriptors.
+old-location: netvista\net_dma_descriptor.htm
+old-project: netvista
+ms.assetid: 0465a8d7-1cdd-4647-9b78-557256f60c05
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NET_DMA_NULL_TRANSFER, NET_DMA_DESCRIPTOR, NET_DMA_DESTINATION_NO_SNOOP, NET_DMA_OP_TYPE_MASK, NET_DMA_SOURCE_PAGE_BREAK, NET_DMA_INTERRUPT_ON_COMPLETION, NET_DMA_RESERVED_MASK, PNET_DMA_DESCRIPTOR, _NET_DMA_DESCRIPTOR, NET_DMA_DESTINATION_PAGE_BREAK, NET_DMA_DESTINATION_DCA_ENABLE, netvista.net_dma_descriptor, NET_DMA_SOURCE_NO_SNOOP, netdma_ref_06e1861b-7904-4bf5-9ce5-e85ae1daa22e.xml, NET_DMA_OP_TYPE_CONTEXT_CHANGE, PNET_DMA_DESCRIPTOR structure pointer [Network Drivers Starting with Windows Vista], NET_DMA_STATUS_UPDATE_ON_COMPLETION, netdma/PNET_DMA_DESCRIPTOR, netdma/NET_DMA_DESCRIPTOR, NET_DMA_SERIALIZE_TRANSFER, *PNET_DMA_DESCRIPTOR, NET_DMA_DESCRIPTOR structure [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: netdma.h
+req.include-header: Netdma.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported for NetDMA 2.0 drivers in Windows Server 2008. (Added NextSourceAddress,   NextDestinationAddress, DCAContext32, DCAContext16, and DCAContext8 members.) Supported for NetDMA 1.1   drivers in Windows Server 2008. Supported for NetDMA 1.0 drivers in Windows Server 2008 and Windows   Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	netdma.h
+apiname:
+-	NET_DMA_DESCRIPTOR
+product: Windows
+targetos: Windows
+req.typenames: "*PNET_DMA_DESCRIPTOR, NET_DMA_DESCRIPTOR"
 ---
 
 # _NET_DMA_DESCRIPTOR structure

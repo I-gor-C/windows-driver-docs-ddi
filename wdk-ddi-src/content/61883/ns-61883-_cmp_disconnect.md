@@ -1,41 +1,46 @@
 ---
-UID : NS:61883._CMP_DISCONNECT
-title : "_CMP_DISCONNECT"
-author : windows-driver-content
-description : This structure is used to break a connection.
-old-location : ieee\cmp_disconnect.htm
-old-project : IEEE
-ms.assetid : 7EAE617D-EFF9-4F77-9B9C-5985B864B310
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : PCMP_DISCONNECT, 61883/PCMP_DISCONNECT, _CMP_DISCONNECT, CMP_DISCONNECT structure [Buses], CMP_DISCONNECT, *PCMP_DISCONNECT, IEEE.cmp_disconnect, PCMP_DISCONNECT structure pointer [Buses], 61883/CMP_DISCONNECT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : 61883.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PCMP_DISCONNECT, CMP_DISCONNECT"
+UID: NS:61883._CMP_DISCONNECT
+title: "_CMP_DISCONNECT"
+author: windows-driver-content
+description: This structure is used to break a connection.
+old-location: ieee\cmp_disconnect.htm
+old-project: IEEE
+ms.assetid: 7EAE617D-EFF9-4F77-9B9C-5985B864B310
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: PCMP_DISCONNECT, 61883/PCMP_DISCONNECT, _CMP_DISCONNECT, CMP_DISCONNECT structure [Buses], CMP_DISCONNECT, *PCMP_DISCONNECT, IEEE.cmp_disconnect, PCMP_DISCONNECT structure pointer [Buses], 61883/CMP_DISCONNECT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: 61883.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	61883.h
+apiname:
+-	CMP_DISCONNECT
+product: Windows
+targetos: Windows
+req.typenames: "*PCMP_DISCONNECT, CMP_DISCONNECT"
 ---
 
 # _CMP_DISCONNECT structure

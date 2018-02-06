@@ -1,41 +1,46 @@
 ---
-UID : NS:ndkpi._NDK_QP
-title : "_NDK_QP"
-author : windows-driver-content
-description : The NDK_QP structure specifies the attributes of an NDK queue pair (QP) object.
-old-location : netvista\ndk_qp.htm
-old-project : netvista
-ms.assetid : 43491796-35CA-4E0C-90EF-7148651C68A6
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NDK_QP, _NDK_QP, netvista.ndk_qp, ndkpi/NDK_QP, NDK_QP structure [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndkpi.h
-req.include-header : Ndkpi.h
-req.target-type : Windows
-req.target-min-winverclnt : None supported,Supported in NDIS 6.30 and later.
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDK_QP
+UID: NS:ndkpi._NDK_QP
+title: "_NDK_QP"
+author: windows-driver-content
+description: The NDK_QP structure specifies the attributes of an NDK queue pair (QP) object.
+old-location: netvista\ndk_qp.htm
+old-project: netvista
+ms.assetid: 43491796-35CA-4E0C-90EF-7148651C68A6
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NDK_QP, _NDK_QP, netvista.ndk_qp, ndkpi/NDK_QP, NDK_QP structure [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndkpi.h
+req.include-header: Ndkpi.h
+req.target-type: Windows
+req.target-min-winverclnt: None supported,Supported in NDIS 6.30 and later.
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndkpi.h
+apiname:
+-	NDK_QP
+product: Windows
+targetos: Windows
+req.typenames: NDK_QP
 ---
 
 # _NDK_QP structure

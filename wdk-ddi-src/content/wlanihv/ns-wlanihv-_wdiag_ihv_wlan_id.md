@@ -1,42 +1,47 @@
 ---
-UID : NS:wlanihv._WDIAG_IHV_WLAN_ID
-title : "_WDIAG_IHV_WLAN_ID"
-author : windows-driver-content
-description : Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
-old-location : netvista\wdiag_ihv_wlan_id.htm
-old-project : netvista
-ms.assetid : 72dc7128-fcbc-4ad8-ac81-e2767ac6ffa2
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : Native_802.11_data_types_25565f34-9a6d-4c59-908f-527c1d9a43b1.xml, wlanihv/PWDIAG_IHV_WLAN_ID, netvista.wdiag_ihv_wlan_id, _WDIAG_IHV_WLAN_ID, *PWDIAG_IHV_WLAN_ID, WDIAG_IHV_WLAN_ID, PWDIAG_IHV_WLAN_ID structure pointer [Network Drivers Starting with Windows Vista], PWDIAG_IHV_WLAN_ID, WDIAG_IHV_WLAN_ID structure [Network Drivers Starting with Windows Vista], wlanihv/WDIAG_IHV_WLAN_ID
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wlanihv.h
-req.include-header : Wlanihv.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating   systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDIAG_IHV_WLAN_ID, WDIAG_IHV_WLAN_ID"
-req.product : Windows 10 or later.
+UID: NS:wlanihv._WDIAG_IHV_WLAN_ID
+title: "_WDIAG_IHV_WLAN_ID"
+author: windows-driver-content
+description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+old-location: netvista\wdiag_ihv_wlan_id.htm
+old-project: netvista
+ms.assetid: 72dc7128-fcbc-4ad8-ac81-e2767ac6ffa2
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: Native_802.11_data_types_25565f34-9a6d-4c59-908f-527c1d9a43b1.xml, wlanihv/PWDIAG_IHV_WLAN_ID, netvista.wdiag_ihv_wlan_id, _WDIAG_IHV_WLAN_ID, *PWDIAG_IHV_WLAN_ID, WDIAG_IHV_WLAN_ID, PWDIAG_IHV_WLAN_ID structure pointer [Network Drivers Starting with Windows Vista], PWDIAG_IHV_WLAN_ID, WDIAG_IHV_WLAN_ID structure [Network Drivers Starting with Windows Vista], wlanihv/WDIAG_IHV_WLAN_ID
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wlanihv.h
+req.include-header: Wlanihv.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wlanihv.h
+apiname:
+-	WDIAG_IHV_WLAN_ID
+product: Windows
+targetos: Windows
+req.typenames: "*PWDIAG_IHV_WLAN_ID, WDIAG_IHV_WLAN_ID"
+req.product: Windows 10 or later.
 ---
 
 # _WDIAG_IHV_WLAN_ID structure

@@ -1,42 +1,47 @@
 ---
-UID : NF:rxce.RxCeQueryAdapterStatus
-title : RxCeQueryAdapterStatus function
-author : windows-driver-content
-description : RxCeQueryAdapterStatus returns the ADAPTER_STATUS structure for a given transport in a caller-allocated buffer.
-old-location : ifsk\rxcequeryadapterstatus.htm
-old-project : ifsk
-ms.assetid : ebe9bec3-6c38-48d8-b9af-03aadbc09d98
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : RxCeQueryAdapterStatus, RxCeQueryAdapterStatus function [Installable File System Drivers], ifsk.rxcequeryadapterstatus, rxce/RxCeQueryAdapterStatus, rxref_0813f428-95ae-47df-969c-c00563f3b3c8.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : rxce.h
-req.include-header : Rxce.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*LPRILWRITEPHONEBOOKENTRYPARAMS, RILWRITEPHONEBOOKENTRYPARAMS"
-req.product : Windows 10 or later.
+UID: NF:rxce.RxCeQueryAdapterStatus
+title: RxCeQueryAdapterStatus function
+author: windows-driver-content
+description: RxCeQueryAdapterStatus returns the ADAPTER_STATUS structure for a given transport in a caller-allocated buffer.
+old-location: ifsk\rxcequeryadapterstatus.htm
+old-project: ifsk
+ms.assetid: ebe9bec3-6c38-48d8-b9af-03aadbc09d98
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: RxCeQueryAdapterStatus, RxCeQueryAdapterStatus function [Installable File System Drivers], ifsk.rxcequeryadapterstatus, rxce/RxCeQueryAdapterStatus, rxref_0813f428-95ae-47df-969c-c00563f3b3c8.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: rxce.h
+req.include-header: Rxce.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	rxce.h
+apiname:
+-	RxCeQueryAdapterStatus
+product: Windows
+targetos: Windows
+req.typenames: "*LPRILWRITEPHONEBOOKENTRYPARAMS, RILWRITEPHONEBOOKENTRYPARAMS"
+req.product: Windows 10 or later.
 ---
 
 

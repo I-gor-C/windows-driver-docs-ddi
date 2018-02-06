@@ -1,41 +1,46 @@
 ---
-UID : NE:d3dumddi._DXVADDI_NOMINALRANGE
-title : "_DXVADDI_NOMINALRANGE"
-author : windows-driver-content
-description : The DXVADDI_NOMINALRANGE enumeration type contains values that identify whether sample data includes headroom (that is, values beyond 1.0 white) and toeroom (that is, superblacks below the reference 0.0 black).
-old-location : display\dxvaddi_nominalrange.htm
-old-project : display
-ms.assetid : f3f5fac9-013c-4739-a29e-c781b34e5289
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3dumddi/DXVADDI_NominalRange_Unknown, DXVADDI_NominalRange_Unknown, DXVADDI_NominalRange_0_255, DXVADDI_NominalRange_48_208, d3dumddi/DXVADDI_NominalRange_Normal, d3dumddi/DXVADDI_NOMINALRANGE, display.dxvaddi_nominalrange, DXVADDI_NominalRange_Wide, d3dumddi/DXVADDI_NominalRange_48_208, DXVA2_Structs_fee8e221-64df-474a-a178-439365c683fd.xml, _DXVADDI_NOMINALRANGE, DXVADDI_NOMINALRANGE enumeration [Display Devices], DXVADDI_NominalRangeMask, d3dumddi/DXVADDI_NominalRange_Wide, DXVADDI_NominalRange_16_235, d3dumddi/DXVADDI_NominalRange_0_255, d3dumddi/DXVADDI_NominalRange_16_235, DXVADDI_NOMINALRANGE, DXVADDI_NominalRange_Normal, d3dumddi/DXVADDI_NominalRangeMask
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXVADDI_NOMINALRANGE
+UID: NE:d3dumddi._DXVADDI_NOMINALRANGE
+title: "_DXVADDI_NOMINALRANGE"
+author: windows-driver-content
+description: The DXVADDI_NOMINALRANGE enumeration type contains values that identify whether sample data includes headroom (that is, values beyond 1.0 white) and toeroom (that is, superblacks below the reference 0.0 black).
+old-location: display\dxvaddi_nominalrange.htm
+old-project: display
+ms.assetid: f3f5fac9-013c-4739-a29e-c781b34e5289
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3dumddi/DXVADDI_NominalRange_Unknown, DXVADDI_NominalRange_Unknown, DXVADDI_NominalRange_0_255, DXVADDI_NominalRange_48_208, d3dumddi/DXVADDI_NominalRange_Normal, d3dumddi/DXVADDI_NOMINALRANGE, display.dxvaddi_nominalrange, DXVADDI_NominalRange_Wide, d3dumddi/DXVADDI_NominalRange_48_208, DXVA2_Structs_fee8e221-64df-474a-a178-439365c683fd.xml, _DXVADDI_NOMINALRANGE, DXVADDI_NOMINALRANGE enumeration [Display Devices], DXVADDI_NominalRangeMask, d3dumddi/DXVADDI_NominalRange_Wide, DXVADDI_NominalRange_16_235, d3dumddi/DXVADDI_NominalRange_0_255, d3dumddi/DXVADDI_NominalRange_16_235, DXVADDI_NOMINALRANGE, DXVADDI_NominalRange_Normal, d3dumddi/DXVADDI_NominalRangeMask
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	DXVADDI_NOMINALRANGE
+product: Windows
+targetos: Windows
+req.typenames: DXVADDI_NOMINALRANGE
 ---
 
 # _DXVADDI_NOMINALRANGE Enumeration
@@ -57,46 +62,46 @@ typedef enum _DXVADDI_NOMINALRANGE {
 ## Constants
 
 <table>
-
-<tr>
-<td>DXVADDI_NominalRange_0_255</td>
-<td>Normalized chroma [0..1] maps explicitly to [0..255] (8bit).</td>
-</tr>
-
-<tr>
-<td>DXVADDI_NominalRange_16_235</td>
-<td>Normalized chroma [0..1] maps explicitly to [16..235] (8bit).</td>
-</tr>
-
-<tr>
-<td>DXVADDI_NominalRange_48_208</td>
-<td>Normalized chroma [0..1] maps explicitly to [48..208] (8bit).</td>
-</tr>
-
-<tr>
-<td>DXVADDI_NominalRange_Normal</td>
-<td>Normalized chroma [0..1] maps to [0..255] (8bit) or [0..1023] (10 bit).</td>
-</tr>
-
-<tr>
-<td>DXVADDI_NominalRange_Unknown</td>
-<td>The nominal range is not specified.</td>
-</tr>
-
-<tr>
-<td>DXVADDI_NominalRange_Wide</td>
-<td>Normalized chroma [0..1] maps to [16..235] (8bit) or [64..940] (10 bit).</td>
-</tr>
-
-<tr>
-<td>DXVADDI_NominalRangeMask</td>
-<td>The nominal range mask. The first 3 (0x07) bits of a DWORD can be used to specify nominal range.</td>
-</tr>
+            
+                <tr>
+                    <td>DXVADDI_NominalRange_0_255</td>
+                    <td>Normalized chroma [0..1] maps explicitly to [0..255] (8bit).</td>
+                </tr>
+            
+                <tr>
+                    <td>DXVADDI_NominalRange_16_235</td>
+                    <td>Normalized chroma [0..1] maps explicitly to [16..235] (8bit).</td>
+                </tr>
+            
+                <tr>
+                    <td>DXVADDI_NominalRange_48_208</td>
+                    <td>Normalized chroma [0..1] maps explicitly to [48..208] (8bit).</td>
+                </tr>
+            
+                <tr>
+                    <td>DXVADDI_NominalRange_Normal</td>
+                    <td>Normalized chroma [0..1] maps to [0..255] (8bit) or [0..1023] (10 bit).</td>
+                </tr>
+            
+                <tr>
+                    <td>DXVADDI_NominalRange_Unknown</td>
+                    <td>The nominal range is not specified.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXVADDI_NominalRange_Wide</td>
+                    <td>Normalized chroma [0..1] maps to [16..235] (8bit) or [64..940] (10 bit).</td>
+                </tr>
+            
+                <tr>
+                    <td>DXVADDI_NominalRangeMask</td>
+                    <td>The nominal range mask. The first 3 (0x07) bits of a DWORD can be used to specify nominal range.</td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-One of the values of DXVADDI_NOMINALRANGE can be specified in the <b>NominalRange</b> member of the <a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_extendedformat.md">DXVADDI_EXTENDEDFORMAT</a> structure.
+        One of the values of DXVADDI_NOMINALRANGE can be specified in the <b>NominalRange</b> member of the <a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_extendedformat.md">DXVADDI_EXTENDEDFORMAT</a> structure.
 
 Wide gamut R'G'B' (that is, blackpoint at 16,16,16 and whitepoint at 235,235,235) must be differentiated from normal <a href="http://go.microsoft.com/fwlink/p/?linkid=10112">sRGB</a>.
 
@@ -106,9 +111,9 @@ Wide gamut R'G'B' (that is, blackpoint at 16,16,16 and whitepoint at 235,235,235
 | **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dumddi.h (include D3dumddi.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_extendedformat.md">DXVADDI_EXTENDEDFORMAT</a>
+        <a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_extendedformat.md">DXVADDI_EXTENDEDFORMAT</a>
 
  
 

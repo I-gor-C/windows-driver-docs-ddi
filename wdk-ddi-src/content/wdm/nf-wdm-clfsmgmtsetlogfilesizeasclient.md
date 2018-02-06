@@ -1,42 +1,48 @@
 ---
-UID : NF:wdm.ClfsMgmtSetLogFileSizeAsClient
-title : ClfsMgmtSetLogFileSizeAsClient function
-author : windows-driver-content
-description : The ClfsMgmtSetLogFileSizeAsClient routine sets the log file size by adding containers to a client log or deleting containers from a client log.
-old-location : kernel\clfsmgmtsetlogfilesizeasclient_.htm
-old-project : kernel
-ms.assetid : C049A6BE-6E2B-46F2-B7CF-316E4CDB35E4
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/ClfsMgmtSetLogFileSizeAsClient, kernel.clfsmgmtsetlogfilesizeasclient_, ClfsMgmtSetLogFileSizeAsClient, ClfsMgmtSetLogFileSizeAsClient routine [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows 7 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : Clfs.sys
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ClfsMgmtSetLogFileSizeAsClient
+title: ClfsMgmtSetLogFileSizeAsClient function
+author: windows-driver-content
+description: The ClfsMgmtSetLogFileSizeAsClient routine sets the log file size by adding containers to a client log or deleting containers from a client log.
+old-location: kernel\clfsmgmtsetlogfilesizeasclient_.htm
+old-project: kernel
+ms.assetid: C049A6BE-6E2B-46F2-B7CF-316E4CDB35E4
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/ClfsMgmtSetLogFileSizeAsClient, kernel.clfsmgmtsetlogfilesizeasclient_, ClfsMgmtSetLogFileSizeAsClient, ClfsMgmtSetLogFileSizeAsClient routine [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows 7 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: Clfs.sys
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Clfs.sys
+-	Ext-MS-Win-fs-clfs-l1-1-0.dll
+apiname:
+-	ClfsMgmtSetLogFileSizeAsClient
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

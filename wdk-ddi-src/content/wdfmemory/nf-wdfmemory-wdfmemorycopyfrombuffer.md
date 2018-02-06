@@ -1,42 +1,50 @@
 ---
-UID : NF:wdfmemory.WdfMemoryCopyFromBuffer
-title : WdfMemoryCopyFromBuffer function
-author : windows-driver-content
-description : The WdfMemoryCopyFromBuffer method copies the contents of a specified source buffer into a specified memory object's buffer.
-old-location : wdf\wdfmemorycopyfrombuffer.htm
-old-project : wdf
-ms.assetid : 702d5239-48cd-4c11-90bc-a86ab27b8cfe
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : PFN_WDFMEMORYCOPYFROMBUFFER, DFMemoryObjectRef_5e7dd10c-6902-4965-b868-8f3ba25d4fbc.xml, wdf.wdfmemorycopyfrombuffer, kmdf.wdfmemorycopyfrombuffer, WdfMemoryCopyFromBuffer method, wdfmemory/WdfMemoryCopyFromBuffer, WdfMemoryCopyFromBuffer
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfmemory.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : BufAfterReqCompletedIntIoctlA, BufAfterReqCompletedIoctlA, BufAfterReqCompletedReadA, BufAfterReqCompletedWriteA, DriverCreate, MemAfterReqCompletedIntIoctlA, MemAfterReqCompletedIoctlA, MemAfterReqCompletedReadA, MemAfterReqCompletedWriteA
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll : 
-req.irql : Any level (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_MEMORY_DESCRIPTOR_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfmemory.WdfMemoryCopyFromBuffer
+title: WdfMemoryCopyFromBuffer function
+author: windows-driver-content
+description: The WdfMemoryCopyFromBuffer method copies the contents of a specified source buffer into a specified memory object's buffer.
+old-location: wdf\wdfmemorycopyfrombuffer.htm
+old-project: wdf
+ms.assetid: 702d5239-48cd-4c11-90bc-a86ab27b8cfe
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: PFN_WDFMEMORYCOPYFROMBUFFER, DFMemoryObjectRef_5e7dd10c-6902-4965-b868-8f3ba25d4fbc.xml, wdf.wdfmemorycopyfrombuffer, kmdf.wdfmemorycopyfrombuffer, WdfMemoryCopyFromBuffer method, wdfmemory/WdfMemoryCopyFromBuffer, WdfMemoryCopyFromBuffer
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfmemory.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: BufAfterReqCompletedIntIoctlA, BufAfterReqCompletedIoctlA, BufAfterReqCompletedReadA, BufAfterReqCompletedWriteA, DriverCreate, MemAfterReqCompletedIntIoctlA, MemAfterReqCompletedIoctlA, MemAfterReqCompletedReadA, MemAfterReqCompletedWriteA
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll: 
+req.irql: Any level (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+-	WUDFx02000.dll
+-	WUDFx02000.dll.dll
+apiname:
+-	WdfMemoryCopyFromBuffer
+product: Windows
+targetos: Windows
+req.typenames: WDF_MEMORY_DESCRIPTOR_TYPE
+req.product: Windows 10 or later.
 ---
 
 

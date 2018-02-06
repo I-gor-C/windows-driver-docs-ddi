@@ -1,41 +1,46 @@
 ---
-UID : NC:ndis.NDIS_PD_FREE_COUNTER
-title : NDIS_PD_FREE_COUNTER
-author : windows-driver-content
-description : The PacketDirect (PD) platform calls a PD-capable miniport driver's NdisPDFreeCounter function to free a counter object.
-old-location : netvista\ndispdfreecounter.htm
-old-project : netvista
-ms.assetid : 60C47437-A999-4F82-B144-6F77410E5C07
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.ndispdfreecounter, NdisPDFreeCounter callback function [Network Drivers Starting with Windows Vista], NdisPDFreeCounter, NDIS_PD_FREE_COUNTER, NDIS_PD_FREE_COUNTER, ndis/NdisPDFreeCounter
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ndis.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
+UID: NC:ndis.NDIS_PD_FREE_COUNTER
+title: NDIS_PD_FREE_COUNTER
+author: windows-driver-content
+description: The PacketDirect (PD) platform calls a PD-capable miniport driver's NdisPDFreeCounter function to free a counter object.
+old-location: netvista\ndispdfreecounter.htm
+old-project: netvista
+ms.assetid: 60C47437-A999-4F82-B144-6F77410E5C07
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.ndispdfreecounter, NdisPDFreeCounter callback function [Network Drivers Starting with Windows Vista], NdisPDFreeCounter, NDIS_PD_FREE_COUNTER, NDIS_PD_FREE_COUNTER, ndis/NdisPDFreeCounter
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ndis.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ndis.h
+apiname:
+-	NdisPDFreeCounter
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 

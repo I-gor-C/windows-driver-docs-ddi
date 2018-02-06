@@ -1,41 +1,46 @@
 ---
-UID : NS:gpioclx._GPIO_ENABLE_INTERRUPT_PARAMETERS
-title : "_GPIO_ENABLE_INTERRUPT_PARAMETERS"
-author : windows-driver-content
-description : The GPIO_ENABLE_INTERRUPT_PARAMETERS structure specifies a general-purpose I/O (GPIO) pin and describes the interrupt attributes of this pin.
-old-location : gpio\gpio_enable_interrupt_parameters.htm
-old-project : GPIO
-ms.assetid : 9F9AA4C1-A202-4AF8-8E1D-F7E56C08A2C1
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : PGPIO_ENABLE_INTERRUPT_PARAMETERS structure pointer [Parallel Ports], gpioclx/PGPIO_ENABLE_INTERRUPT_PARAMETERS, GPIO_ENABLE_INTERRUPT_PARAMETERS, _GPIO_ENABLE_INTERRUPT_PARAMETERS, GPIO_ENABLE_INTERRUPT_PARAMETERS structure [Parallel Ports], GPIO.gpio_enable_interrupt_parameters, PGPIO_ENABLE_INTERRUPT_PARAMETERS, *PGPIO_ENABLE_INTERRUPT_PARAMETERS, gpioclx/GPIO_ENABLE_INTERRUPT_PARAMETERS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : gpioclx.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PGPIO_ENABLE_INTERRUPT_PARAMETERS, GPIO_ENABLE_INTERRUPT_PARAMETERS"
+UID: NS:gpioclx._GPIO_ENABLE_INTERRUPT_PARAMETERS
+title: "_GPIO_ENABLE_INTERRUPT_PARAMETERS"
+author: windows-driver-content
+description: The GPIO_ENABLE_INTERRUPT_PARAMETERS structure specifies a general-purpose I/O (GPIO) pin and describes the interrupt attributes of this pin.
+old-location: gpio\gpio_enable_interrupt_parameters.htm
+old-project: GPIO
+ms.assetid: 9F9AA4C1-A202-4AF8-8E1D-F7E56C08A2C1
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: PGPIO_ENABLE_INTERRUPT_PARAMETERS structure pointer [Parallel Ports], gpioclx/PGPIO_ENABLE_INTERRUPT_PARAMETERS, GPIO_ENABLE_INTERRUPT_PARAMETERS, _GPIO_ENABLE_INTERRUPT_PARAMETERS, GPIO_ENABLE_INTERRUPT_PARAMETERS structure [Parallel Ports], GPIO.gpio_enable_interrupt_parameters, PGPIO_ENABLE_INTERRUPT_PARAMETERS, *PGPIO_ENABLE_INTERRUPT_PARAMETERS, gpioclx/GPIO_ENABLE_INTERRUPT_PARAMETERS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: gpioclx.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Gpioclx.h
+apiname:
+-	GPIO_ENABLE_INTERRUPT_PARAMETERS
+product: Windows
+targetos: Windows
+req.typenames: "*PGPIO_ENABLE_INTERRUPT_PARAMETERS, GPIO_ENABLE_INTERRUPT_PARAMETERS"
 ---
 
 # _GPIO_ENABLE_INTERRUPT_PARAMETERS structure

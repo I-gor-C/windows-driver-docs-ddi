@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmthk._D3DKMT_CLOSEADAPTER
-title : "_D3DKMT_CLOSEADAPTER"
-author : windows-driver-content
-description : The D3DKMT_CLOSEADAPTER structure specifies the graphics adapter to close.
-old-location : display\d3dkmt_closeadapter.htm
-old-project : display
-ms.assetid : ef85d18a-c4cd-4999-8782-19e4114a0594
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : "_D3DKMT_CLOSEADAPTER, D3DKMT_CLOSEADAPTER structure [Display Devices], display.d3dkmt_closeadapter, D3DKMT_CLOSEADAPTER, d3dkmthk/D3DKMT_CLOSEADAPTER, OpenGL_Structs_578046d6-1625-4485-b43c-16ce2b7e812c.xml"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_CLOSEADAPTER
+UID: NS:d3dkmthk._D3DKMT_CLOSEADAPTER
+title: "_D3DKMT_CLOSEADAPTER"
+author: windows-driver-content
+description: The D3DKMT_CLOSEADAPTER structure specifies the graphics adapter to close.
+old-location: display\d3dkmt_closeadapter.htm
+old-project: display
+ms.assetid: ef85d18a-c4cd-4999-8782-19e4114a0594
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: "_D3DKMT_CLOSEADAPTER, D3DKMT_CLOSEADAPTER structure [Display Devices], display.d3dkmt_closeadapter, D3DKMT_CLOSEADAPTER, d3dkmthk/D3DKMT_CLOSEADAPTER, OpenGL_Structs_578046d6-1625-4485-b43c-16ce2b7e812c.xml"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmthk.h
+apiname:
+-	D3DKMT_CLOSEADAPTER
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_CLOSEADAPTER
 ---
 
 # _D3DKMT_CLOSEADAPTER structure

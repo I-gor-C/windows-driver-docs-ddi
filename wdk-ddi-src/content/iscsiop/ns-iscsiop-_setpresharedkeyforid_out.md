@@ -1,41 +1,46 @@
 ---
-UID : NS:iscsiop._SetPresharedKeyForId_OUT
-title : "_SetPresharedKeyForId_OUT"
-author : windows-driver-content
-description : The SetPresharedKeyForId_OUT structure holds the output data for the SetPresharedKeyForId method.
-old-location : storage\setpresharedkeyforid_out.htm
-old-project : storage
-ms.assetid : 839041be-bb8c-4e02-a260-e9adcec98ff3
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : structs-iSCSI_c0146684-fe9e-4bca-81d2-2a09b554d006.xml, PSetPresharedKeyForId_OUT, iscsiop/PSetPresharedKeyForId_OUT, iscsiop/SetPresharedKeyForId_OUT, _SetPresharedKeyForId_OUT, PSetPresharedKeyForId_OUT structure pointer [Storage Devices], *PSetPresharedKeyForId_OUT, SetPresharedKeyForId_OUT, storage.setpresharedkeyforid_out, SetPresharedKeyForId_OUT structure [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : iscsiop.h
-req.include-header : Iscsiop.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SetPresharedKeyForId_OUT, *PSetPresharedKeyForId_OUT
+UID: NS:iscsiop._SetPresharedKeyForId_OUT
+title: "_SetPresharedKeyForId_OUT"
+author: windows-driver-content
+description: The SetPresharedKeyForId_OUT structure holds the output data for the SetPresharedKeyForId method.
+old-location: storage\setpresharedkeyforid_out.htm
+old-project: storage
+ms.assetid: 839041be-bb8c-4e02-a260-e9adcec98ff3
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: structs-iSCSI_c0146684-fe9e-4bca-81d2-2a09b554d006.xml, PSetPresharedKeyForId_OUT, iscsiop/PSetPresharedKeyForId_OUT, iscsiop/SetPresharedKeyForId_OUT, _SetPresharedKeyForId_OUT, PSetPresharedKeyForId_OUT structure pointer [Storage Devices], *PSetPresharedKeyForId_OUT, SetPresharedKeyForId_OUT, storage.setpresharedkeyforid_out, SetPresharedKeyForId_OUT structure [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: iscsiop.h
+req.include-header: Iscsiop.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	iscsiop.h
+apiname:
+-	SetPresharedKeyForId_OUT
+product: Windows
+targetos: Windows
+req.typenames: SetPresharedKeyForId_OUT, *PSetPresharedKeyForId_OUT
 ---
 
 # _SetPresharedKeyForId_OUT structure

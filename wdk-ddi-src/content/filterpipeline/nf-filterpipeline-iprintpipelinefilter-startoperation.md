@@ -1,41 +1,46 @@
 ---
-UID : NF:filterpipeline.IPrintPipelineFilter.StartOperation
-title : IPrintPipelineFilter::StartOperation method
-author : windows-driver-content
-description : The StartOperation method starts the operation of a filter. The filter reads, processes, and writes data in this method.
-old-location : print\iprintpipelinefilter_startoperation.htm
-old-project : print
-ms.assetid : 87139670-9b51-4ced-9624-2ec9f4726a84
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : print.iprintpipelinefilter_startoperation, filterpipeline/IPrintPipelineFilter::StartOperation, StartOperation method [Print Devices], IPrintPipelineFilter, StartOperation, StartOperation method [Print Devices], IPrintPipelineFilter interface, filterpipeline_9040ff14-d052-4360-bb31-b171581c14b6.xml, IPrintPipelineFilter::StartOperation, IPrintPipelineFilter interface [Print Devices], StartOperation method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : filterpipeline.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : Filterpipeline.idl
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : filterpipeline.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:filterpipeline.IPrintPipelineFilter.StartOperation
+title: IPrintPipelineFilter::StartOperation method
+author: windows-driver-content
+description: The StartOperation method starts the operation of a filter. The filter reads, processes, and writes data in this method.
+old-location: print\iprintpipelinefilter_startoperation.htm
+old-project: print
+ms.assetid: 87139670-9b51-4ced-9624-2ec9f4726a84
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: print.iprintpipelinefilter_startoperation, filterpipeline/IPrintPipelineFilter::StartOperation, StartOperation method [Print Devices], IPrintPipelineFilter, StartOperation, StartOperation method [Print Devices], IPrintPipelineFilter interface, filterpipeline_9040ff14-d052-4360-bb31-b171581c14b6.xml, IPrintPipelineFilter::StartOperation, IPrintPipelineFilter interface [Print Devices], StartOperation method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: filterpipeline.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: Filterpipeline.idl
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: filterpipeline.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Filterpipeline.h
+apiname:
+-	IPrintPipelineFilter.StartOperation
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_SETINDICESUM
-title : PFND3DDDI_SETINDICESUM
-author : windows-driver-content
-description : The SetIndicesUM function sets the current index buffer to the given user memory buffer.
-old-location : display\setindicesum.htm
-old-project : display
-ms.assetid : 9ca38004-8953-4416-8552-c76813192561
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.setindicesum, SetIndicesUM callback function [Display Devices], SetIndicesUM, PFND3DDDI_SETINDICESUM, PFND3DDDI_SETINDICESUM, d3dumddi/SetIndicesUM, UserModeDisplayDriver_Functions_f692c944-6130-46e3-8e63-f3dbeb051782.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_SETINDICESUM
+title: PFND3DDDI_SETINDICESUM
+author: windows-driver-content
+description: The SetIndicesUM function sets the current index buffer to the given user memory buffer.
+old-location: display\setindicesum.htm
+old-project: display
+ms.assetid: 9ca38004-8953-4416-8552-c76813192561
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.setindicesum, SetIndicesUM callback function [Display Devices], SetIndicesUM, PFND3DDDI_SETINDICESUM, PFND3DDDI_SETINDICESUM, d3dumddi/SetIndicesUM, UserModeDisplayDriver_Functions_f692c944-6130-46e3-8e63-f3dbeb051782.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	SetIndicesUM
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

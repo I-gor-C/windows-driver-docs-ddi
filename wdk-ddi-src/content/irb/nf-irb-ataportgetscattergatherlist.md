@@ -1,41 +1,49 @@
 ---
-UID : NF:irb.AtaPortGetScatterGatherList
-title : AtaPortGetScatterGatherList function
-author : windows-driver-content
-description : The AtaPortGetScatterGatherList routine retrieves the scatter/gather list that is associated with this request.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
-old-location : storage\ataportgetscattergatherlist.htm
-old-project : storage
-ms.assetid : 11181574-b329-4182-8d17-93d44cb3b839
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : AtaPortGetScatterGatherList routine [Storage Devices], AtaPortGetScatterGatherList, storage.ataportgetscattergatherlist, atartns_ef8ff0f5-2d1c-47e1-bf1a-2b554de3969d.xml, irb/AtaPortGetScatterGatherList
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : irb.h
-req.include-header : Ata.h, Irb.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ataport.lib; Pciidex.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : IDE_POWER_STATE
+UID: NF:irb.AtaPortGetScatterGatherList
+title: AtaPortGetScatterGatherList function
+author: windows-driver-content
+description: The AtaPortGetScatterGatherList routine retrieves the scatter/gather list that is associated with this request.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
+old-location: storage\ataportgetscattergatherlist.htm
+old-project: storage
+ms.assetid: 11181574-b329-4182-8d17-93d44cb3b839
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: AtaPortGetScatterGatherList routine [Storage Devices], AtaPortGetScatterGatherList, storage.ataportgetscattergatherlist, atartns_ef8ff0f5-2d1c-47e1-bf1a-2b554de3969d.xml, irb/AtaPortGetScatterGatherList
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: irb.h
+req.include-header: Ata.h, Irb.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ataport.lib; Pciidex.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ataport.lib
+-	ataport.dll
+-	pciidex.lib
+-	pciidex.dll
+apiname:
+-	AtaPortGetScatterGatherList
+product: Windows
+targetos: Windows
+req.typenames: IDE_POWER_STATE
 ---
 
 

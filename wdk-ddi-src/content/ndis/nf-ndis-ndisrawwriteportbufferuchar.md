@@ -1,41 +1,46 @@
 ---
-UID : NF:ndis.NdisRawWritePortBufferUchar
-title : NdisRawWritePortBufferUchar macro
-author : windows-driver-content
-description : NdisRawWritePortBufferUchar writes a specified number of bytes from a caller-supplied buffer to a given I/O port.
-old-location : netvista\ndisrawwriteportbufferuchar.htm
-old-project : netvista
-ms.assetid : 2e802f1c-1d27-43cb-a69d-023519806fc2
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NdisRawWritePortBufferUchar, netvista.ndisrawwriteportbufferuchar, ndis/NdisRawWritePortBufferUchar, NdisRawWritePortBufferUchar macro [Network Drivers Starting with Windows Vista], miniport_port_raw_ref_4b54b55d-c94d-4401-8d16-4650d80c620c.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : macro
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisRawWritePortBufferUchar   (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisRawWritePortBufferUchar   (NDIS 5.1)) in Windows XP.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : ndis.h
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisRawWritePortBufferUchar
+title: NdisRawWritePortBufferUchar macro
+author: windows-driver-content
+description: NdisRawWritePortBufferUchar writes a specified number of bytes from a caller-supplied buffer to a given I/O port.
+old-location: netvista\ndisrawwriteportbufferuchar.htm
+old-project: netvista
+ms.assetid: 2e802f1c-1d27-43cb-a69d-023519806fc2
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NdisRawWritePortBufferUchar, netvista.ndisrawwriteportbufferuchar, ndis/NdisRawWritePortBufferUchar, NdisRawWritePortBufferUchar macro [Network Drivers Starting with Windows Vista], miniport_port_raw_ref_4b54b55d-c94d-4401-8d16-4650d80c620c.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: macro
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisRawWritePortBufferUchar   (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisRawWritePortBufferUchar   (NDIS 5.1)) in Windows XP.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: ndis.h
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndis.h
+apiname:
+-	NdisRawWritePortBufferUchar
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

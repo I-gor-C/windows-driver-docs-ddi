@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddscsi._ATA_PASS_THROUGH_EX
-title : "_ATA_PASS_THROUGH_EX"
-author : windows-driver-content
-description : The ATA_PASS_THROUGH_EX structure is used in conjunction with an IOCTL_ATA_PASS_THROUGH request to instruct the port driver to send an embedded ATA command to the target device.
-old-location : storage\ata_pass_through_ex.htm
-old-project : storage
-ms.assetid : 76d8f5be-0011-4a7c-ac21-7115ad7e1155
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : PATA_PASS_THROUGH_EX structure pointer [Storage Devices], _ATA_PASS_THROUGH_EX, PATA_PASS_THROUGH_EX, *PATA_PASS_THROUGH_EX, structs-IDE_72cc1a49-a438-40cb-b4b5-8ec7c87669f8.xml, ATA_PASS_THROUGH_EX, ntddscsi/PATA_PASS_THROUGH_EX, storage.ata_pass_through_ex, ntddscsi/ATA_PASS_THROUGH_EX, ATA_PASS_THROUGH_EX structure [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddscsi.h
-req.include-header : Ntddscsi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : ATA_PASS_THROUGH_EX, *PATA_PASS_THROUGH_EX
+UID: NS:ntddscsi._ATA_PASS_THROUGH_EX
+title: "_ATA_PASS_THROUGH_EX"
+author: windows-driver-content
+description: The ATA_PASS_THROUGH_EX structure is used in conjunction with an IOCTL_ATA_PASS_THROUGH request to instruct the port driver to send an embedded ATA command to the target device.
+old-location: storage\ata_pass_through_ex.htm
+old-project: storage
+ms.assetid: 76d8f5be-0011-4a7c-ac21-7115ad7e1155
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: PATA_PASS_THROUGH_EX structure pointer [Storage Devices], _ATA_PASS_THROUGH_EX, PATA_PASS_THROUGH_EX, *PATA_PASS_THROUGH_EX, structs-IDE_72cc1a49-a438-40cb-b4b5-8ec7c87669f8.xml, ATA_PASS_THROUGH_EX, ntddscsi/PATA_PASS_THROUGH_EX, storage.ata_pass_through_ex, ntddscsi/ATA_PASS_THROUGH_EX, ATA_PASS_THROUGH_EX structure [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddscsi.h
+req.include-header: Ntddscsi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddscsi.h
+apiname:
+-	ATA_PASS_THROUGH_EX
+product: Windows
+targetos: Windows
+req.typenames: ATA_PASS_THROUGH_EX, *PATA_PASS_THROUGH_EX
 ---
 
 # _ATA_PASS_THROUGH_EX structure

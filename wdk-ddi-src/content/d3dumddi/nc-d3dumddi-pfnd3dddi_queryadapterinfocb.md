@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_QUERYADAPTERINFOCB
-title : PFND3DDDI_QUERYADAPTERINFOCB
-author : windows-driver-content
-description : The pfnQueryAdapterInfoCb function retrieves graphics adapter information.
-old-location : display\pfnqueryadapterinfocb.htm
-old-project : display
-ms.assetid : 8008574f-a89e-4fed-b745-7cf5baa68e64
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.pfnqueryadapterinfocb, pfnQueryAdapterInfoCb callback function [Display Devices], pfnQueryAdapterInfoCb, PFND3DDDI_QUERYADAPTERINFOCB, PFND3DDDI_QUERYADAPTERINFOCB, d3dumddi/pfnQueryAdapterInfoCb, D3Druntime_Functions_ca5c02c9-ad59-4a10-8cb7-92d815cd6856.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_QUERYADAPTERINFOCB
+title: PFND3DDDI_QUERYADAPTERINFOCB
+author: windows-driver-content
+description: The pfnQueryAdapterInfoCb function retrieves graphics adapter information.
+old-location: display\pfnqueryadapterinfocb.htm
+old-project: display
+ms.assetid: 8008574f-a89e-4fed-b745-7cf5baa68e64
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.pfnqueryadapterinfocb, pfnQueryAdapterInfoCb callback function [Display Devices], pfnQueryAdapterInfoCb, PFND3DDDI_QUERYADAPTERINFOCB, PFND3DDDI_QUERYADAPTERINFOCB, d3dumddi/pfnQueryAdapterInfoCb, D3Druntime_Functions_ca5c02c9-ad59-4a10-8cb7-92d815cd6856.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	pfnQueryAdapterInfoCb
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:ks.KSNODE_CREATE
-title : KSNODE_CREATE
-author : windows-driver-content
-description : The KSNODE_CREATE structure describes the set of information used to create the node handle.
-old-location : stream\ksnode_create.htm
-old-project : stream
-ms.assetid : db08cc72-3797-46e3-8e4d-d8469dc126ab
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ks-struct_2fb3dcb7-5945-4f8a-b1f1-945910ec8396.xml, ks/PKSNODE_CREATE, KSNODE_CREATE, *PKSNODE_CREATE, KSNODE_CREATE structure [Streaming Media Devices], PKSNODE_CREATE structure pointer [Streaming Media Devices], ks/KSNODE_CREATE, PKSNODE_CREATE, stream.ksnode_create
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KSNODE_CREATE, *PKSNODE_CREATE
+UID: NS:ks.KSNODE_CREATE
+title: KSNODE_CREATE
+author: windows-driver-content
+description: The KSNODE_CREATE structure describes the set of information used to create the node handle.
+old-location: stream\ksnode_create.htm
+old-project: stream
+ms.assetid: db08cc72-3797-46e3-8e4d-d8469dc126ab
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ks-struct_2fb3dcb7-5945-4f8a-b1f1-945910ec8396.xml, ks/PKSNODE_CREATE, KSNODE_CREATE, *PKSNODE_CREATE, KSNODE_CREATE structure [Streaming Media Devices], PKSNODE_CREATE structure pointer [Streaming Media Devices], ks/KSNODE_CREATE, PKSNODE_CREATE, stream.ksnode_create
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	KSNODE_CREATE
+product: Windows
+targetos: Windows
+req.typenames: KSNODE_CREATE, *PKSNODE_CREATE
 ---
 
 # KSNODE_CREATE structure

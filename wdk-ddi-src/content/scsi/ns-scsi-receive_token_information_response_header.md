@@ -1,42 +1,47 @@
 ---
-UID : NS:scsi.RECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER
-title : RECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER
-author : windows-driver-content
-description : A token, created as a representation of data (ROD), for an offload read data operation is returned in a RECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER structure.
-old-location : storage\receive_token_information_response_header.htm
-old-project : storage
-ms.assetid : 54168476-1C55-4343-858C-7FBA863D35D0
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : PRECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER, scsi/RECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER, storage.receive_token_information_response_header, RECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER structure [Storage Devices], RECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER, PRECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER structure pointer [Storage Devices], *PRECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER, scsi/PRECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : scsi.h
-req.include-header : Scsi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER, *PRECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER
-req.product : Windows 10 or later.
+UID: NS:scsi.RECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER
+title: RECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER
+author: windows-driver-content
+description: A token, created as a representation of data (ROD), for an offload read data operation is returned in a RECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER structure.
+old-location: storage\receive_token_information_response_header.htm
+old-project: storage
+ms.assetid: 54168476-1C55-4343-858C-7FBA863D35D0
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: PRECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER, scsi/RECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER, storage.receive_token_information_response_header, RECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER structure [Storage Devices], RECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER, PRECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER structure pointer [Storage Devices], *PRECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER, scsi/PRECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: scsi.h
+req.include-header: Scsi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	scsi.h
+apiname:
+-	RECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER
+product: Windows
+targetos: Windows
+req.typenames: RECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER, *PRECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER
+req.product: Windows 10 or later.
 ---
 
 # RECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER structure

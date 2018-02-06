@@ -1,42 +1,47 @@
 ---
-UID : NC:wdm.KSYNCHRONIZE_ROUTINE
-title : KSYNCHRONIZE_ROUTINE
-author : windows-driver-content
-description : The SynchCritSection routine is used to access hardware resources or driver data that are shared with a driver's InterruptService routine.
-old-location : kernel\synchcritsection.htm
-old-project : kernel
-ms.assetid : 2db9b1b4-0149-4477-9f68-588c55fcbdca
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.synchcritsection, SynchCritSection routine [Kernel-Mode Driver Architecture], SynchCritSection, KSYNCHRONIZE_ROUTINE, KSYNCHRONIZE_ROUTINE, wdm/SynchCritSection, DrvrRtns_ead80ba6-d012-4140-923c-683d877d5b60.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Called at DIRQL (see Remarks section).
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
-req.product : Windows 10 or later.
+UID: NC:wdm.KSYNCHRONIZE_ROUTINE
+title: KSYNCHRONIZE_ROUTINE
+author: windows-driver-content
+description: The SynchCritSection routine is used to access hardware resources or driver data that are shared with a driver's InterruptService routine.
+old-location: kernel\synchcritsection.htm
+old-project: kernel
+ms.assetid: 2db9b1b4-0149-4477-9f68-588c55fcbdca
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.synchcritsection, SynchCritSection routine [Kernel-Mode Driver Architecture], SynchCritSection, KSYNCHRONIZE_ROUTINE, KSYNCHRONIZE_ROUTINE, wdm/SynchCritSection, DrvrRtns_ead80ba6-d012-4140-923c-683d877d5b60.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Called at DIRQL (see Remarks section).
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Wdm.h
+apiname:
+-	SynchCritSection
+product: Windows
+targetos: Windows
+req.typenames: WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+req.product: Windows 10 or later.
 ---
 
 

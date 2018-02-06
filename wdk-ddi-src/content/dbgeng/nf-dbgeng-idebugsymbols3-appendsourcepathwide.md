@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugSymbols3.AppendSourcePathWide
-title : IDebugSymbols3::AppendSourcePathWide method
-author : windows-driver-content
-description : The AppendSourcePathWide method appends directories to the source path.
-old-location : debugger\appendsourcepathwide.htm
-old-project : debugger
-ms.assetid : 54f78169-4253-4dea-921f-981658df311e
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : AppendSourcePathWide method [Windows Debugging], IDebugSymbols3 interface [Windows Debugging], AppendSourcePathWide method, AppendSourcePathWide, AppendSourcePathWide method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols3::AppendSourcePathWide, debugger.appendsourcepathwide, dbgeng/IDebugSymbols3::AppendSourcePathWide, IDebugSymbols3
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSymbols3.AppendSourcePathWide
+title: IDebugSymbols3::AppendSourcePathWide method
+author: windows-driver-content
+description: The AppendSourcePathWide method appends directories to the source path.
+old-location: debugger\appendsourcepathwide.htm
+old-project: debugger
+ms.assetid: 54f78169-4253-4dea-921f-981658df311e
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: AppendSourcePathWide method [Windows Debugging], IDebugSymbols3 interface [Windows Debugging], AppendSourcePathWide method, AppendSourcePathWide, AppendSourcePathWide method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols3::AppendSourcePathWide, debugger.appendsourcepathwide, dbgeng/IDebugSymbols3::AppendSourcePathWide, IDebugSymbols3
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Dbgeng.h
+apiname:
+-	IDebugSymbols3.AppendSourcePathWide
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

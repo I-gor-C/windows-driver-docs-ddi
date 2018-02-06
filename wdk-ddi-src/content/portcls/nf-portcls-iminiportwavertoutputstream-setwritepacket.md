@@ -1,41 +1,46 @@
 ---
-UID : NF:portcls.IMiniportWaveRTOutputStream.SetWritePacket
-title : IMiniportWaveRTOutputStream::SetWritePacket method
-author : windows-driver-content
-description : SetWritePacket informs the driver that the OS has written valid data to the WaveRT buffer.
-old-location : audio\iminiportwavertoutputstream_setwritepacket.htm
-old-project : audio
-ms.assetid : 28C73FBA-9122-4CFD-959E-495062CEEF41
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : SetWritePacket, IMiniportWaveRTOutputStream interface [Audio Devices], SetWritePacket method, SetWritePacket method [Audio Devices], portcls/IMiniportWaveRTOutputStream::SetWritePacket, IMiniportWaveRTOutputStream, audio.iminiportwavertoutputstream_setwritepacket, IMiniportWaveRTOutputStream::SetWritePacket, SetWritePacket method [Audio Devices], IMiniportWaveRTOutputStream interface
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : portcls.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 10 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : portcls.h
-req.dll : 
-req.irql : Passive level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.IMiniportWaveRTOutputStream.SetWritePacket
+title: IMiniportWaveRTOutputStream::SetWritePacket method
+author: windows-driver-content
+description: SetWritePacket informs the driver that the OS has written valid data to the WaveRT buffer.
+old-location: audio\iminiportwavertoutputstream_setwritepacket.htm
+old-project: audio
+ms.assetid: 28C73FBA-9122-4CFD-959E-495062CEEF41
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: SetWritePacket, IMiniportWaveRTOutputStream interface [Audio Devices], SetWritePacket method, SetWritePacket method [Audio Devices], portcls/IMiniportWaveRTOutputStream::SetWritePacket, IMiniportWaveRTOutputStream, audio.iminiportwavertoutputstream_setwritepacket, IMiniportWaveRTOutputStream::SetWritePacket, SetWritePacket method [Audio Devices], IMiniportWaveRTOutputStream interface
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: portcls.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 10 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: portcls.h
+req.dll: 
+req.irql: Passive level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	portcls.h
+apiname:
+-	IMiniportWaveRTOutputStream.SetWritePacket
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

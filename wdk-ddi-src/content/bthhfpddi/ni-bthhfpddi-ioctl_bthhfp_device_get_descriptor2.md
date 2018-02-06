@@ -1,41 +1,46 @@
 ---
-UID : NI:bthhfpddi.IOCTL_BTHHFP_DEVICE_GET_DESCRIPTOR2
-title : IOCTL_BTHHFP_DEVICE_GET_DESCRIPTOR2
-author : windows-driver-content
-description : The IOCTL_BTHHFP_DEVICE_GET_DESCRIPTOR2 IOCTL Gets descriptive information about the paired Handsfree profile (HFP) device.
-old-location : audio\ioctl_bthhfp_device_get_descriptor2.htm
-old-project : audio
-ms.assetid : B72D0236-1C2B-4D0B-86B4-4E9B667BA1B3
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : audio.ioctl_bthhfp_device_get_descriptor2, IOCTL_BTHHFP_DEVICE_GET_DESCRIPTOR2 control code [Audio Devices], IOCTL_BTHHFP_DEVICE_GET_DESCRIPTOR2, bthhfpddi/IOCTL_BTHHFP_DEVICE_GET_DESCRIPTOR2
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : bthhfpddi.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8.1
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HFP_BYPASS_CODEC_ID_VERSION, *PHFP_BYPASS_CODEC_ID_VERSION
+UID: NI:bthhfpddi.IOCTL_BTHHFP_DEVICE_GET_DESCRIPTOR2
+title: IOCTL_BTHHFP_DEVICE_GET_DESCRIPTOR2
+author: windows-driver-content
+description: The IOCTL_BTHHFP_DEVICE_GET_DESCRIPTOR2 IOCTL Gets descriptive information about the paired Handsfree profile (HFP) device.
+old-location: audio\ioctl_bthhfp_device_get_descriptor2.htm
+old-project: audio
+ms.assetid: B72D0236-1C2B-4D0B-86B4-4E9B667BA1B3
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: audio.ioctl_bthhfp_device_get_descriptor2, IOCTL_BTHHFP_DEVICE_GET_DESCRIPTOR2 control code [Audio Devices], IOCTL_BTHHFP_DEVICE_GET_DESCRIPTOR2, bthhfpddi/IOCTL_BTHHFP_DEVICE_GET_DESCRIPTOR2
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: bthhfpddi.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8.1
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Bthhfpddi.h
+apiname:
+-	IOCTL_BTHHFP_DEVICE_GET_DESCRIPTOR2
+product: Windows
+targetos: Windows
+req.typenames: HFP_BYPASS_CODEC_ID_VERSION, *PHFP_BYPASS_CODEC_ID_VERSION
 ---
 
 # IOCTL_BTHHFP_DEVICE_GET_DESCRIPTOR2 IOCTL

@@ -1,42 +1,47 @@
 ---
-UID : NF:rxprocs.RxLockEnumerator
-title : RxLockEnumerator function
-author : windows-driver-content
-description : RxLockEnumerator is called from a network mini-redirector to enumerate the file locks on an FCB.
-old-location : ifsk\rxlockenumerator.htm
-old-project : ifsk
-ms.assetid : 8d14604f-c9e5-4a2d-bb51-ef1925b39118
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.rxlockenumerator, RxLockEnumerator, rxref_62372da9-aa80-447e-8e79-6bc1f1c5cf54.xml, rxprocs/RxLockEnumerator, RxLockEnumerator function [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : rxprocs.h
-req.include-header : Rxprocs.h, Mrxfcb.h, Fcb.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RX_CONTEXT, *PRX_CONTEXT
-req.product : Windows 10 or later.
+UID: NF:rxprocs.RxLockEnumerator
+title: RxLockEnumerator function
+author: windows-driver-content
+description: RxLockEnumerator is called from a network mini-redirector to enumerate the file locks on an FCB.
+old-location: ifsk\rxlockenumerator.htm
+old-project: ifsk
+ms.assetid: 8d14604f-c9e5-4a2d-bb51-ef1925b39118
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.rxlockenumerator, RxLockEnumerator, rxref_62372da9-aa80-447e-8e79-6bc1f1c5cf54.xml, rxprocs/RxLockEnumerator, RxLockEnumerator function [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: rxprocs.h
+req.include-header: Rxprocs.h, Mrxfcb.h, Fcb.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	rxprocs.h
+apiname:
+-	RxLockEnumerator
+product: Windows
+targetos: Windows
+req.typenames: RX_CONTEXT, *PRX_CONTEXT
+req.product: Windows 10 or later.
 ---
 
 

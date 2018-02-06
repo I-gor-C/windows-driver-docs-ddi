@@ -1,42 +1,47 @@
 ---
-UID : NN:wudfddi.IWDFDevice3
-title : IWDFDevice3
-author : windows-driver-content
-description : To obtain the IWDFDevice3 interface, drivers call IWDFDevice::QueryInterface.
-old-location : wdf\iwdfdevice3.htm
-old-project : wdf
-ms.assetid : C4AEC0DA-EB93-481D-A94C-7BB7BF15EFBC
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.iwdfdevice3, IWDFDevice3 interface, IWDFDevice3 interface, described, IWDFDevice3, wudfddi/IWDFDevice3, umdf.iwdfdevice3
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : wudfddi.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.11
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NN:wudfddi.IWDFDevice3
+title: IWDFDevice3
+author: windows-driver-content
+description: To obtain the IWDFDevice3 interface, drivers call IWDFDevice::QueryInterface.
+old-location: wdf\iwdfdevice3.htm
+old-project: wdf
+ms.assetid: C4AEC0DA-EB93-481D-A94C-7BB7BF15EFBC
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.iwdfdevice3, IWDFDevice3 interface, IWDFDevice3 interface, described, IWDFDevice3, wudfddi/IWDFDevice3, umdf.iwdfdevice3
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: wudfddi.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.11
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFDevice3
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 # IWDFDevice3 interface

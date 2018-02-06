@@ -1,41 +1,46 @@
 ---
-UID : NE:fwpsk.FWPS_FIELDS_OUTBOUND_IPPACKET_V4_
-title : FWPS_FIELDS_OUTBOUND_IPPACKET_V4_
-author : windows-driver-content
-description : The FWPS_FIELDS_OUTBOUND_IPPACKET_V4 enumeration type specifies the data field identifiers for the FWPS_LAYER_OUTBOUND_IPPACKET_V4 and FWPS_LAYER_OUTBOUND_IPPACKET_V4_DISCARD run-time filtering layers.
-old-location : netvista\fwps_fields_outbound_ippacket_v4.htm
-old-project : netvista
-ms.assetid : 63399c9a-6c3e-45e8-a3da-ead8f880ada8
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : FWPS_FIELD_OUTBOUND_IPPACKET_V4_IP_LOCAL_ADDRESS, FWPS_FIELD_OUTBOUND_IPPACKET_V4_IP_REMOTE_ADDRESS, fwpsk/FWPS_FIELD_OUTBOUND_IPPACKET_V4_INTERFACE_TYPE, FWPS_FIELD_OUTBOUND_IPPACKET_V4_MAX, FWPS_FIELD_OUTBOUND_IPPACKET_V4_IP_LOCAL_INTERFACE, FWPS_FIELD_OUTBOUND_IPPACKET_V4_IP_LOCAL_ADDRESS_TYPE, FWPS_FIELD_OUTBOUND_IPPACKET_V4_INTERFACE_INDEX, FWPS_FIELDS_OUTBOUND_IPPACKET_V4 enumeration [Network Drivers Starting with Windows Vista], fwpsk/FWPS_FIELD_OUTBOUND_IPPACKET_V4_SUB_INTERFACE_INDEX, fwpsk/FWPS_FIELD_OUTBOUND_IPPACKET_V4_FLAGS, netvista.fwps_fields_outbound_ippacket_v4, FWPS_FIELD_OUTBOUND_IPPACKET_V4_FLAGS, fwpsk/FWPS_FIELD_OUTBOUND_IPPACKET_V4_TUNNEL_TYPE, fwpsk/FWPS_FIELD_OUTBOUND_IPPACKET_V4_IP_LOCAL_INTERFACE, FWPS_FIELD_OUTBOUND_IPPACKET_V4_SUB_INTERFACE_INDEX, FWPS_FIELDS_OUTBOUND_IPPACKET_V4, FWPS_FIELDS_OUTBOUND_IPPACKET_V4_, fwpsk/FWPS_FIELD_OUTBOUND_IPPACKET_V4_IP_LOCAL_ADDRESS, FWPS_FIELD_OUTBOUND_IPPACKET_V4_TUNNEL_TYPE, fwpsk/FWPS_FIELD_OUTBOUND_IPPACKET_V4_INTERFACE_INDEX, fwpsk/FWPS_FIELD_OUTBOUND_IPPACKET_V4_IP_REMOTE_ADDRESS, fwpsk/FWPS_FIELD_OUTBOUND_IPPACKET_V4_MAX, fwpsk/FWPS_FIELD_OUTBOUND_IPPACKET_V4_IP_LOCAL_ADDRESS_TYPE, fwpsk/FWPS_FIELDS_OUTBOUND_IPPACKET_V4, FWPS_FIELD_OUTBOUND_IPPACKET_V4_INTERFACE_TYPE, wfp_ref_5_const_3_data_fields_cb77673f-3de7-4598-b99f-77dbaac7998f.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : fwpsk.h
-req.include-header : Fwpsk.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FWPS_FIELDS_OUTBOUND_IPPACKET_V4
+UID: NE:fwpsk.FWPS_FIELDS_OUTBOUND_IPPACKET_V4_
+title: FWPS_FIELDS_OUTBOUND_IPPACKET_V4_
+author: windows-driver-content
+description: The FWPS_FIELDS_OUTBOUND_IPPACKET_V4 enumeration type specifies the data field identifiers for the FWPS_LAYER_OUTBOUND_IPPACKET_V4 and FWPS_LAYER_OUTBOUND_IPPACKET_V4_DISCARD run-time filtering layers.
+old-location: netvista\fwps_fields_outbound_ippacket_v4.htm
+old-project: netvista
+ms.assetid: 63399c9a-6c3e-45e8-a3da-ead8f880ada8
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: FWPS_FIELD_OUTBOUND_IPPACKET_V4_IP_LOCAL_ADDRESS, FWPS_FIELD_OUTBOUND_IPPACKET_V4_IP_REMOTE_ADDRESS, fwpsk/FWPS_FIELD_OUTBOUND_IPPACKET_V4_INTERFACE_TYPE, FWPS_FIELD_OUTBOUND_IPPACKET_V4_MAX, FWPS_FIELD_OUTBOUND_IPPACKET_V4_IP_LOCAL_INTERFACE, FWPS_FIELD_OUTBOUND_IPPACKET_V4_IP_LOCAL_ADDRESS_TYPE, FWPS_FIELD_OUTBOUND_IPPACKET_V4_INTERFACE_INDEX, FWPS_FIELDS_OUTBOUND_IPPACKET_V4 enumeration [Network Drivers Starting with Windows Vista], fwpsk/FWPS_FIELD_OUTBOUND_IPPACKET_V4_SUB_INTERFACE_INDEX, fwpsk/FWPS_FIELD_OUTBOUND_IPPACKET_V4_FLAGS, netvista.fwps_fields_outbound_ippacket_v4, FWPS_FIELD_OUTBOUND_IPPACKET_V4_FLAGS, fwpsk/FWPS_FIELD_OUTBOUND_IPPACKET_V4_TUNNEL_TYPE, fwpsk/FWPS_FIELD_OUTBOUND_IPPACKET_V4_IP_LOCAL_INTERFACE, FWPS_FIELD_OUTBOUND_IPPACKET_V4_SUB_INTERFACE_INDEX, FWPS_FIELDS_OUTBOUND_IPPACKET_V4, FWPS_FIELDS_OUTBOUND_IPPACKET_V4_, fwpsk/FWPS_FIELD_OUTBOUND_IPPACKET_V4_IP_LOCAL_ADDRESS, FWPS_FIELD_OUTBOUND_IPPACKET_V4_TUNNEL_TYPE, fwpsk/FWPS_FIELD_OUTBOUND_IPPACKET_V4_INTERFACE_INDEX, fwpsk/FWPS_FIELD_OUTBOUND_IPPACKET_V4_IP_REMOTE_ADDRESS, fwpsk/FWPS_FIELD_OUTBOUND_IPPACKET_V4_MAX, fwpsk/FWPS_FIELD_OUTBOUND_IPPACKET_V4_IP_LOCAL_ADDRESS_TYPE, fwpsk/FWPS_FIELDS_OUTBOUND_IPPACKET_V4, FWPS_FIELD_OUTBOUND_IPPACKET_V4_INTERFACE_TYPE, wfp_ref_5_const_3_data_fields_cb77673f-3de7-4598-b99f-77dbaac7998f.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: fwpsk.h
+req.include-header: Fwpsk.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	fwpsk.h
+apiname:
+-	FWPS_FIELDS_OUTBOUND_IPPACKET_V4
+product: Windows
+targetos: Windows
+req.typenames: FWPS_FIELDS_OUTBOUND_IPPACKET_V4
 ---
 
 # FWPS_FIELDS_OUTBOUND_IPPACKET_V4_ Enumeration
@@ -63,72 +68,72 @@ typedef enum FWPS_FIELDS_OUTBOUND_IPPACKET_V4_ {
 ## Constants
 
 <table>
-
-<tr>
-<td>FWPS_FIELD_OUTBOUND_IPPACKET_V4_COMPARTMENT_ID</td>
-<td></td>
-</tr>
-
-<tr>
-<td>FWPS_FIELD_OUTBOUND_IPPACKET_V4_FLAGS</td>
-<td>A bitwise OR of a combination of filtering condition flags. For information about the possible
+            
+                <tr>
+                    <td>FWPS_FIELD_OUTBOUND_IPPACKET_V4_COMPARTMENT_ID</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_OUTBOUND_IPPACKET_V4_FLAGS</td>
+                    <td>A bitwise OR of a combination of filtering condition flags. For information about the possible
      flags, see 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff549942">Filtering Condition Flags</a>.</td>
-</tr>
-
-<tr>
-<td>FWPS_FIELD_OUTBOUND_IPPACKET_V4_INTERFACE_INDEX</td>
-<td>The index of the network interface, as enumerated by the network stack.</td>
-</tr>
-
-<tr>
-<td>FWPS_FIELD_OUTBOUND_IPPACKET_V4_INTERFACE_TYPE</td>
-<td>The type of the local network interface, as defined by the Internet Assigned Numbers Authority
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_OUTBOUND_IPPACKET_V4_INTERFACE_INDEX</td>
+                    <td>The index of the network interface, as enumerated by the network stack.</td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_OUTBOUND_IPPACKET_V4_INTERFACE_TYPE</td>
+                    <td>The type of the local network interface, as defined by the Internet Assigned Numbers Authority
      (IANA). For more information, see 
      <a href="http://go.microsoft.com/fwlink/p/?linkid=60066">IANAifType-MIB Definitions</a>.</td>
-</tr>
-
-<tr>
-<td>FWPS_FIELD_OUTBOUND_IPPACKET_V4_IP_LOCAL_ADDRESS</td>
-<td>The local IP address.</td>
-</tr>
-
-<tr>
-<td>FWPS_FIELD_OUTBOUND_IPPACKET_V4_IP_LOCAL_ADDRESS_TYPE</td>
-<td>The local IP address type. The possible values are defined by the 
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_OUTBOUND_IPPACKET_V4_IP_LOCAL_ADDRESS</td>
+                    <td>The local IP address.</td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_OUTBOUND_IPPACKET_V4_IP_LOCAL_ADDRESS_TYPE</td>
+                    <td>The local IP address type. The possible values are defined by the 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff568757">NL_ADDRESS_TYPE</a> enumeration</td>
-</tr>
-
-<tr>
-<td>FWPS_FIELD_OUTBOUND_IPPACKET_V4_IP_LOCAL_INTERFACE</td>
-<td>The locally unique identifier (<a href="..\igpupvdev\ns-igpupvdev-_luid.md">LUID</a>) for the network interface associated with the
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_OUTBOUND_IPPACKET_V4_IP_LOCAL_INTERFACE</td>
+                    <td>The locally unique identifier (<a href="..\igpupvdev\ns-igpupvdev-_luid.md">LUID</a>) for the network interface associated with the
      local IP address.</td>
-</tr>
-
-<tr>
-<td>FWPS_FIELD_OUTBOUND_IPPACKET_V4_IP_REMOTE_ADDRESS</td>
-<td>The remote IP address.</td>
-</tr>
-
-<tr>
-<td>FWPS_FIELD_OUTBOUND_IPPACKET_V4_MAX</td>
-<td>The maximum value for this enumeration. This value might change in future versions of the NDIS
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_OUTBOUND_IPPACKET_V4_IP_REMOTE_ADDRESS</td>
+                    <td>The remote IP address.</td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_OUTBOUND_IPPACKET_V4_MAX</td>
+                    <td>The maximum value for this enumeration. This value might change in future versions of the NDIS
      header files and binaries.</td>
-</tr>
-
-<tr>
-<td>FWPS_FIELD_OUTBOUND_IPPACKET_V4_SUB_INTERFACE_INDEX</td>
-<td>The index of the logical network interface, as enumerated by the network stack.</td>
-</tr>
-
-<tr>
-<td>FWPS_FIELD_OUTBOUND_IPPACKET_V4_TUNNEL_TYPE</td>
-<td>The encapsulation method used by a tunnel if the 
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_OUTBOUND_IPPACKET_V4_SUB_INTERFACE_INDEX</td>
+                    <td>The index of the logical network interface, as enumerated by the network stack.</td>
+                </tr>
+            
+                <tr>
+                    <td>FWPS_FIELD_OUTBOUND_IPPACKET_V4_TUNNEL_TYPE</td>
+                    <td>The encapsulation method used by a tunnel if the 
      <b>IfType</b> member of the IP_ADAPTER_ADDRESSES structure is IF_TYPE_TUNNEL. The tunnel type is defined
      by IANA. For more information, see 
      <a href="http://go.microsoft.com/fwlink/p/?linkid=60066">IANAifType-MIB Definitions</a> and the
      Windows SDK.</td>
-</tr>
+                </tr>
 </table>
 
 
@@ -138,9 +143,9 @@ typedef enum FWPS_FIELDS_OUTBOUND_IPPACKET_V4_ {
 | **Windows version** | Supported starting with Windows Vista. Supported starting with Windows Vista. |
 | **Header** | fwpsk.h (include Fwpsk.h) |
 
-## See Also
+    ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568757">NL_ADDRESS_TYPE</a>
+        <a href="https://msdn.microsoft.com/library/windows/hardware/ff568757">NL_ADDRESS_TYPE</a>
 
 <a href="..\igpupvdev\ns-igpupvdev-_luid.md">LUID</a>
 

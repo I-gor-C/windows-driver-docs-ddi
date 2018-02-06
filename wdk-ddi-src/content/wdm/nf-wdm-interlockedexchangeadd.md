@@ -1,42 +1,52 @@
 ---
-UID : NF:wdm.InterlockedExchangeAdd
-title : InterlockedExchangeAdd function
-author : windows-driver-content
-description : The InterlockedExchangeAdd routine adds a value to a given integer as an atomic operation and returns the original value of the given integer.
-old-location : kernel\interlockedexchangeadd.htm
-old-project : kernel
-ms.assetid : f61878b4-6bfa-463e-9fb1-c95171ce65b4
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : InterlockedExchangeAdd, wdm/InterlockedExchangeAdd, InterlockedExchangeAdd routine [Kernel-Mode Driver Architecture], k102_ed690604-0379-476d-b838-4820f47b850a.xml, kernel.interlockedexchangeadd
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : OneCoreUAP.lib on Windows 10
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.InterlockedExchangeAdd
+title: InterlockedExchangeAdd function
+author: windows-driver-content
+description: The InterlockedExchangeAdd routine adds a value to a given integer as an atomic operation and returns the original value of the given integer.
+old-location: kernel\interlockedexchangeadd.htm
+old-project: kernel
+ms.assetid: f61878b4-6bfa-463e-9fb1-c95171ce65b4
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: InterlockedExchangeAdd, wdm/InterlockedExchangeAdd, InterlockedExchangeAdd routine [Kernel-Mode Driver Architecture], k102_ed690604-0379-476d-b838-4820f47b850a.xml, kernel.interlockedexchangeadd
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: OneCoreUAP.lib on Windows 10
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	OneCoreUAP.lib
+-	OneCoreUAP.dll
+-	API-MS-Win-Core-Interlocked-l1-1-0.dll
+-	API-MS-Win-Core-Interlocked-l1-2-0.dll
+-	KernelBase.dll
+-	MinKernelBase.dll
+apiname:
+-	InterlockedExchangeAdd
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

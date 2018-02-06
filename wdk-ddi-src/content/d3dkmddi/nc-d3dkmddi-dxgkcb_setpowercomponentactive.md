@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dkmddi.DXGKCB_SETPOWERCOMPONENTACTIVE
-title : DXGKCB_SETPOWERCOMPONENTACTIVE
-author : windows-driver-content
-description : Called by the display miniport driver to access a power component.
-old-location : display\dxgkcbsetpowercomponentactive.htm
-old-project : display
-ms.assetid : 12008d80-8bcb-4289-97ea-d3325731a95f
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkcbsetpowercomponentactive, DxgkCbSetPowerComponentActive callback function [Display Devices], DxgkCbSetPowerComponentActive, DXGKCB_SETPOWERCOMPONENTACTIVE, DXGKCB_SETPOWERCOMPONENTACTIVE, d3dkmddi/DxgkCbSetPowerComponentActive
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
+UID: NC:d3dkmddi.DXGKCB_SETPOWERCOMPONENTACTIVE
+title: DXGKCB_SETPOWERCOMPONENTACTIVE
+author: windows-driver-content
+description: Called by the display miniport driver to access a power component.
+old-location: display\dxgkcbsetpowercomponentactive.htm
+old-project: display
+ms.assetid: 12008d80-8bcb-4289-97ea-d3325731a95f
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkcbsetpowercomponentactive, DxgkCbSetPowerComponentActive callback function [Display Devices], DxgkCbSetPowerComponentActive, DXGKCB_SETPOWERCOMPONENTACTIVE, DXGKCB_SETPOWERCOMPONENTACTIVE, d3dkmddi/DxgkCbSetPowerComponentActive
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	D3dkmddi.h
+apiname:
+-	DxgkCbSetPowerComponentActive
+product: Windows
+targetos: Windows
+req.typenames: DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
 

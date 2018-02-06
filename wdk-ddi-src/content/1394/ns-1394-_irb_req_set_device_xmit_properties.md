@@ -1,41 +1,46 @@
 ---
-UID : NS:1394._IRB_REQ_SET_DEVICE_XMIT_PROPERTIES
-title : "_IRB_REQ_SET_DEVICE_XMIT_PROPERTIES"
-author : windows-driver-content
-description : This structure contains the fields necessary to carry out a SetDeviceXmitProperties request.
-old-location : ieee\irb_req_set_device_xmit_properties.htm
-old-project : IEEE
-ms.assetid : 1E99F892-CD7C-411D-8832-08F988B9F2D7
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : IRB_REQ_SET_DEVICE_XMIT_PROPERTIES, _IRB_REQ_SET_DEVICE_XMIT_PROPERTIES, 1394/IRB_REQ_SET_DEVICE_XMIT_PROPERTIES, IEEE.irb_req_set_device_xmit_properties, IRB_REQ_SET_DEVICE_XMIT_PROPERTIES structure [Buses]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : 1394.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : IRB_REQ_SET_DEVICE_XMIT_PROPERTIES
+UID: NS:1394._IRB_REQ_SET_DEVICE_XMIT_PROPERTIES
+title: "_IRB_REQ_SET_DEVICE_XMIT_PROPERTIES"
+author: windows-driver-content
+description: This structure contains the fields necessary to carry out a SetDeviceXmitProperties request.
+old-location: ieee\irb_req_set_device_xmit_properties.htm
+old-project: IEEE
+ms.assetid: 1E99F892-CD7C-411D-8832-08F988B9F2D7
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: IRB_REQ_SET_DEVICE_XMIT_PROPERTIES, _IRB_REQ_SET_DEVICE_XMIT_PROPERTIES, 1394/IRB_REQ_SET_DEVICE_XMIT_PROPERTIES, IEEE.irb_req_set_device_xmit_properties, IRB_REQ_SET_DEVICE_XMIT_PROPERTIES structure [Buses]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: 1394.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	1394.h
+apiname:
+-	IRB_REQ_SET_DEVICE_XMIT_PROPERTIES
+product: Windows
+targetos: Windows
+req.typenames: IRB_REQ_SET_DEVICE_XMIT_PROPERTIES
 ---
 
 # _IRB_REQ_SET_DEVICE_XMIT_PROPERTIES structure

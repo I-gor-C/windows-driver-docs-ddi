@@ -1,41 +1,46 @@
 ---
-UID : NF:hbaapi.HBA_RefreshInformation
-title : HBA_RefreshInformation function
-author : windows-driver-content
-description : The HBA_RefreshInformation routine refreshes the library's internally cached data for the indicated HBA.
-old-location : storage\hba_refreshinformation.htm
-old-project : storage
-ms.assetid : 7fd03702-154b-47d4-96cb-6ad9683124ca
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : HBA_RefreshInformation, hbaapi/HBA_RefreshInformation, fibreHBA_rtns_3c486993-5307-42c2-924c-743f635447e8.xml, HBA_RefreshInformation routine [Storage Devices], storage.hba_refreshinformation
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : hbaapi.h
-req.include-header : Hbaapi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Hbaapi.lib
-req.dll : Hbaapi.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HBA_WWNTYPE
+UID: NF:hbaapi.HBA_RefreshInformation
+title: HBA_RefreshInformation function
+author: windows-driver-content
+description: The HBA_RefreshInformation routine refreshes the library's internally cached data for the indicated HBA.
+old-location: storage\hba_refreshinformation.htm
+old-project: storage
+ms.assetid: 7fd03702-154b-47d4-96cb-6ad9683124ca
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: HBA_RefreshInformation, hbaapi/HBA_RefreshInformation, fibreHBA_rtns_3c486993-5307-42c2-924c-743f635447e8.xml, HBA_RefreshInformation routine [Storage Devices], storage.hba_refreshinformation
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: hbaapi.h
+req.include-header: Hbaapi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Hbaapi.lib
+req.dll: Hbaapi.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Hbaapi.dll
+apiname:
+-	HBA_RefreshInformation
+product: Windows
+targetos: Windows
+req.typenames: HBA_WWNTYPE
 ---
 
 

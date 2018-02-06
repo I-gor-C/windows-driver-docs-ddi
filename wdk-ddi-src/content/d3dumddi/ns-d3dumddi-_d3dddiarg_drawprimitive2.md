@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._D3DDDIARG_DRAWPRIMITIVE2
-title : "_D3DDDIARG_DRAWPRIMITIVE2"
-author : windows-driver-content
-description : The D3DDDIARG_DRAWPRIMITIVE2 structure describes a nonindexed primitive to draw.
-old-location : display\d3dddiarg_drawprimitive2.htm
-old-project : display
-ms.assetid : fb9668a8-54b5-4d07-8682-af2b593308a5
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : "_D3DDDIARG_DRAWPRIMITIVE2, D3DDDIARG_DRAWPRIMITIVE2 structure [Display Devices], D3DDDIARG_DRAWPRIMITIVE2, d3dumddi/D3DDDIARG_DRAWPRIMITIVE2, UMDisplayDriver_param_Structs_76f6de24-fe57-4907-a84a-692ab80e2dab.xml, display.d3dddiarg_drawprimitive2"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDIARG_DRAWPRIMITIVE2
+UID: NS:d3dumddi._D3DDDIARG_DRAWPRIMITIVE2
+title: "_D3DDDIARG_DRAWPRIMITIVE2"
+author: windows-driver-content
+description: The D3DDDIARG_DRAWPRIMITIVE2 structure describes a nonindexed primitive to draw.
+old-location: display\d3dddiarg_drawprimitive2.htm
+old-project: display
+ms.assetid: fb9668a8-54b5-4d07-8682-af2b593308a5
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: "_D3DDDIARG_DRAWPRIMITIVE2, D3DDDIARG_DRAWPRIMITIVE2 structure [Display Devices], D3DDDIARG_DRAWPRIMITIVE2, d3dumddi/D3DDDIARG_DRAWPRIMITIVE2, UMDisplayDriver_param_Structs_76f6de24-fe57-4907-a84a-692ab80e2dab.xml, display.d3dddiarg_drawprimitive2"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	D3DDDIARG_DRAWPRIMITIVE2
+product: Windows
+targetos: Windows
+req.typenames: D3DDDIARG_DRAWPRIMITIVE2
 ---
 
 # _D3DDDIARG_DRAWPRIMITIVE2 structure

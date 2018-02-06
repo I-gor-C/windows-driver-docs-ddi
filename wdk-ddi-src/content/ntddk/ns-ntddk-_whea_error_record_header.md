@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddk._WHEA_ERROR_RECORD_HEADER
-title : "_WHEA_ERROR_RECORD_HEADER"
-author : windows-driver-content
-description : The WHEA_ERROR_RECORD_HEADER structure describes general information about a hardware error condition.
-old-location : whea\whea_error_record_header.htm
-old-project : whea
-ms.assetid : 2e6476c7-d096-4756-bebb-56fe559dce6d
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : PWHEA_ERROR_RECORD_HEADER structure pointer [WHEA Drivers and Applications], WHEA_ERROR_RECORD_HEADER, _WHEA_ERROR_RECORD_HEADER, *PWHEA_ERROR_RECORD_HEADER, PWHEA_ERROR_RECORD_HEADER, whea.whea_error_record_header, ntddk/WHEA_ERROR_RECORD_HEADER, ntddk/PWHEA_ERROR_RECORD_HEADER, whearef_25871c17-6a61-422d-ba94-d63b633c7f5a.xml, WHEA_ERROR_RECORD_HEADER structure [WHEA Drivers and Applications]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_ERROR_RECORD_HEADER, *PWHEA_ERROR_RECORD_HEADER
+UID: NS:ntddk._WHEA_ERROR_RECORD_HEADER
+title: "_WHEA_ERROR_RECORD_HEADER"
+author: windows-driver-content
+description: The WHEA_ERROR_RECORD_HEADER structure describes general information about a hardware error condition.
+old-location: whea\whea_error_record_header.htm
+old-project: whea
+ms.assetid: 2e6476c7-d096-4756-bebb-56fe559dce6d
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: PWHEA_ERROR_RECORD_HEADER structure pointer [WHEA Drivers and Applications], WHEA_ERROR_RECORD_HEADER, _WHEA_ERROR_RECORD_HEADER, *PWHEA_ERROR_RECORD_HEADER, PWHEA_ERROR_RECORD_HEADER, whea.whea_error_record_header, ntddk/WHEA_ERROR_RECORD_HEADER, ntddk/PWHEA_ERROR_RECORD_HEADER, whearef_25871c17-6a61-422d-ba94-d63b633c7f5a.xml, WHEA_ERROR_RECORD_HEADER structure [WHEA Drivers and Applications]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddk.h
+apiname:
+-	WHEA_ERROR_RECORD_HEADER
+product: Windows
+targetos: Windows
+req.typenames: WHEA_ERROR_RECORD_HEADER, *PWHEA_ERROR_RECORD_HEADER
 ---
 
 # _WHEA_ERROR_RECORD_HEADER structure

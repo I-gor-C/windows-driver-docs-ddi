@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.RtlIoDecodeMemIoResource
-title : RtlIoDecodeMemIoResource function
-author : windows-driver-content
-description : The RtlIoDecodeMemIoResource routine provides the address information that is contained in an IO_RESOURCE_DESCRIPTOR structure that describes a range of memory or I/O port addresses.
-old-location : kernel\rtliodecodememioresource.htm
-old-project : kernel
-ms.assetid : a6bdbd68-b4ec-467f-9892-e968243e8994
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : RtlIoDecodeMemIoResource routine [Kernel-Mode Driver Architecture], wdm/RtlIoDecodeMemIoResource, k109_27e29ad7-3e41-44ad-b3da-027180f51d2a.xml, RtlIoDecodeMemIoResource, kernel.rtliodecodememioresource
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.RtlIoDecodeMemIoResource
+title: RtlIoDecodeMemIoResource function
+author: windows-driver-content
+description: The RtlIoDecodeMemIoResource routine provides the address information that is contained in an IO_RESOURCE_DESCRIPTOR structure that describes a range of memory or I/O port addresses.
+old-location: kernel\rtliodecodememioresource.htm
+old-project: kernel
+ms.assetid: a6bdbd68-b4ec-467f-9892-e968243e8994
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: RtlIoDecodeMemIoResource routine [Kernel-Mode Driver Architecture], wdm/RtlIoDecodeMemIoResource, k109_27e29ad7-3e41-44ad-b3da-027180f51d2a.xml, RtlIoDecodeMemIoResource, kernel.rtliodecodememioresource
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	RtlIoDecodeMemIoResource
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

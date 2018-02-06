@@ -1,41 +1,46 @@
 ---
-UID : NS:ntifs._MEMORY_BASIC_INFORMATION
-title : "_MEMORY_BASIC_INFORMATION"
-author : windows-driver-content
-description : Contains information about a range of pages in the virtual address space of a process.
-old-location : kernel\memory_basic_information.htm
-old-project : kernel
-ms.assetid : AFDDB789-E412-4EF7-8C77-2020EF81DF39
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ntifs/MEMORY_BASIC_INFORMATION, kernel.memory_basic_information, MEMORY_BASIC_INFORMATION structure [Kernel-Mode Driver Architecture], _MEMORY_BASIC_INFORMATION, PAGE_NOACCESS, PAGE_GUARD, MEM_PRIVATE, MEM_MAPPED, PAGE_READONLY, PAGE_READWRITE, PMEMORY_BASIC_INFORMATION, PMEMORY_BASIC_INFORMATION structure pointer [Kernel-Mode Driver Architecture], PAGE_NOCACHE, MEM_COMMIT, MEM_RESERVE, PAGE_EXECUTE, PAGE_WRITECOMBINE, MEM_FREE, ntifs/PMEMORY_BASIC_INFORMATION, MEM_IMAGE, MEMORY_BASIC_INFORMATION, *PMEMORY_BASIC_INFORMATION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntifs.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows 10.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PMEMORY_BASIC_INFORMATION, MEMORY_BASIC_INFORMATION"
+UID: NS:ntifs._MEMORY_BASIC_INFORMATION
+title: "_MEMORY_BASIC_INFORMATION"
+author: windows-driver-content
+description: Contains information about a range of pages in the virtual address space of a process.
+old-location: kernel\memory_basic_information.htm
+old-project: kernel
+ms.assetid: AFDDB789-E412-4EF7-8C77-2020EF81DF39
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ntifs/MEMORY_BASIC_INFORMATION, kernel.memory_basic_information, MEMORY_BASIC_INFORMATION structure [Kernel-Mode Driver Architecture], _MEMORY_BASIC_INFORMATION, PAGE_NOACCESS, PAGE_GUARD, MEM_PRIVATE, MEM_MAPPED, PAGE_READONLY, PAGE_READWRITE, PMEMORY_BASIC_INFORMATION, PMEMORY_BASIC_INFORMATION structure pointer [Kernel-Mode Driver Architecture], PAGE_NOCACHE, MEM_COMMIT, MEM_RESERVE, PAGE_EXECUTE, PAGE_WRITECOMBINE, MEM_FREE, ntifs/PMEMORY_BASIC_INFORMATION, MEM_IMAGE, MEMORY_BASIC_INFORMATION, *PMEMORY_BASIC_INFORMATION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntifs.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows 10.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntifs.h
+apiname:
+-	MEMORY_BASIC_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: "*PMEMORY_BASIC_INFORMATION, MEMORY_BASIC_INFORMATION"
 ---
 
 # _MEMORY_BASIC_INFORMATION structure

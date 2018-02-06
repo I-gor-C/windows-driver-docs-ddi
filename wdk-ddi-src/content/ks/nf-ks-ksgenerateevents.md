@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsGenerateEvents
-title : KsGenerateEvents function
-author : windows-driver-content
-description : The KsGenerateEvents function generates events of an indicated type that are present in Object's event list.
-old-location : stream\ksgenerateevents.htm
-old-project : stream
-ms.assetid : 3c96012f-8307-417c-be8f-bb466c576669
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ks/KsGenerateEvents, KsGenerateEvents function [Streaming Media Devices], avfunc_47306d1b-67f9-4ea6-81bb-3b76b848667a.xml, stream.ksgenerateevents, KsGenerateEvents
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsGenerateEvents
+title: KsGenerateEvents function
+author: windows-driver-content
+description: The KsGenerateEvents function generates events of an indicated type that are present in Object's event list.
+old-location: stream\ksgenerateevents.htm
+old-project: stream
+ms.assetid: 3c96012f-8307-417c-be8f-bb466c576669
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ks/KsGenerateEvents, KsGenerateEvents function [Streaming Media Devices], avfunc_47306d1b-67f9-4ea6-81bb-3b76b848667a.xml, stream.ksgenerateevents, KsGenerateEvents
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsGenerateEvents
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

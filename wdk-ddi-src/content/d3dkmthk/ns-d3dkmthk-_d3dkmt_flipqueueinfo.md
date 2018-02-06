@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmthk._D3DKMT_FLIPQUEUEINFO
-title : "_D3DKMT_FLIPQUEUEINFO"
-author : windows-driver-content
-description : The D3DKMT_FLIPQUEUEINFO structure describes information about the graphics adapter's queue of flip operations that the OpenGL installable client driver (ICD) obtains by calling the D3DKMTQueryAdapterInfo function.
-old-location : display\d3dkmt_flipqueueinfo.htm
-old-project : display
-ms.assetid : 5bf5eb72-aa51-4ab3-ab68-13e6303f12a9
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : "_D3DKMT_FLIPQUEUEINFO, d3dkmthk/D3DKMT_FLIPQUEUEINFO, D3DKMT_FLIPQUEUEINFO, display.d3dkmt_flipqueueinfo, OpenGL_Structs_db4a7b98-df53-4e1e-a990-0a2f45d71525.xml, D3DKMT_FLIPQUEUEINFO structure [Display Devices]"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_FLIPQUEUEINFO
+UID: NS:d3dkmthk._D3DKMT_FLIPQUEUEINFO
+title: "_D3DKMT_FLIPQUEUEINFO"
+author: windows-driver-content
+description: The D3DKMT_FLIPQUEUEINFO structure describes information about the graphics adapter's queue of flip operations that the OpenGL installable client driver (ICD) obtains by calling the D3DKMTQueryAdapterInfo function.
+old-location: display\d3dkmt_flipqueueinfo.htm
+old-project: display
+ms.assetid: 5bf5eb72-aa51-4ab3-ab68-13e6303f12a9
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: "_D3DKMT_FLIPQUEUEINFO, d3dkmthk/D3DKMT_FLIPQUEUEINFO, D3DKMT_FLIPQUEUEINFO, display.d3dkmt_flipqueueinfo, OpenGL_Structs_db4a7b98-df53-4e1e-a990-0a2f45d71525.xml, D3DKMT_FLIPQUEUEINFO structure [Display Devices]"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmthk.h
+apiname:
+-	D3DKMT_FLIPQUEUEINFO
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_FLIPQUEUEINFO
 ---
 
 # _D3DKMT_FLIPQUEUEINFO structure

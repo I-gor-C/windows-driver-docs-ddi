@@ -1,41 +1,50 @@
 ---
-UID : NF:dbgeng.IDebugClient5.DetachProcesses
-title : IDebugClient5::DetachProcesses method
-author : windows-driver-content
-description : The DetachProcesses method detaches the debugger engine from all processes in all targets, resuming all their threads.
-old-location : debugger\detachprocesses.htm
-old-project : debugger
-ms.assetid : aa410f46-7bd9-436e-9c97-495f35cff778
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : dbgeng/IDebugClient2::DetachProcesses, IDebugClient4::DetachProcesses, dbgeng/IDebugClient4::DetachProcesses, IDebugClient3 interface [Windows Debugging], DetachProcesses method, IDebugClient2::DetachProcesses, DetachProcesses method [Windows Debugging], IDebugClient2 interface, IDebugClient3::DetachProcesses, DetachProcesses method [Windows Debugging], IDebugClient2 interface [Windows Debugging], DetachProcesses method, DetachProcesses method [Windows Debugging], IDebugClient3 interface, IDebugClient interface [Windows Debugging], DetachProcesses method, IDebugClient4 interface [Windows Debugging], DetachProcesses method, dbgeng/IDebugClient3::DetachProcesses, DetachProcesses method [Windows Debugging], IDebugClient4 interface, DetachProcesses, IDebugClient5::DetachProcesses, debugger.detachprocesses, IDebugClient5 interface [Windows Debugging], DetachProcesses method, IDebugClient::DetachProcesses, DetachProcesses method [Windows Debugging], IDebugClient interface, DetachProcesses method [Windows Debugging], IDebugClient5 interface, IDebugClient_375aab38-2821-4154-911f-1df9e204146c.xml, dbgeng/IDebugClient::DetachProcesses, dbgeng/IDebugClient5::DetachProcesses, IDebugClient5
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugClient5.DetachProcesses
+title: IDebugClient5::DetachProcesses method
+author: windows-driver-content
+description: The DetachProcesses method detaches the debugger engine from all processes in all targets, resuming all their threads.
+old-location: debugger\detachprocesses.htm
+old-project: debugger
+ms.assetid: aa410f46-7bd9-436e-9c97-495f35cff778
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: dbgeng/IDebugClient2::DetachProcesses, IDebugClient4::DetachProcesses, dbgeng/IDebugClient4::DetachProcesses, IDebugClient3 interface [Windows Debugging], DetachProcesses method, IDebugClient2::DetachProcesses, DetachProcesses method [Windows Debugging], IDebugClient2 interface, IDebugClient3::DetachProcesses, DetachProcesses method [Windows Debugging], IDebugClient2 interface [Windows Debugging], DetachProcesses method, DetachProcesses method [Windows Debugging], IDebugClient3 interface, IDebugClient interface [Windows Debugging], DetachProcesses method, IDebugClient4 interface [Windows Debugging], DetachProcesses method, dbgeng/IDebugClient3::DetachProcesses, DetachProcesses method [Windows Debugging], IDebugClient4 interface, DetachProcesses, IDebugClient5::DetachProcesses, debugger.detachprocesses, IDebugClient5 interface [Windows Debugging], DetachProcesses method, IDebugClient::DetachProcesses, DetachProcesses method [Windows Debugging], IDebugClient interface, DetachProcesses method [Windows Debugging], IDebugClient5 interface, IDebugClient_375aab38-2821-4154-911f-1df9e204146c.xml, dbgeng/IDebugClient::DetachProcesses, dbgeng/IDebugClient5::DetachProcesses, IDebugClient5
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugClient.DetachProcesses
+-	IDebugClient2.DetachProcesses
+-	IDebugClient3.DetachProcesses
+-	IDebugClient4.DetachProcesses
+-	IDebugClient5.DetachProcesses
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

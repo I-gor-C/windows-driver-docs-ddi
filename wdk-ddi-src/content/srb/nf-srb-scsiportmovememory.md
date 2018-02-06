@@ -1,42 +1,48 @@
 ---
-UID : NF:srb.ScsiPortMoveMemory
-title : ScsiPortMoveMemory function
-author : windows-driver-content
-description : The ScsiPortMoveMemory routine copies data from one location to another.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future.
-old-location : storage\scsiportmovememory.htm
-old-project : storage
-ms.assetid : c4ed9551-3dc8-4f76-9bcb-26030f76c244
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : srb/ScsiPortMoveMemory, ScsiPortMoveMemory, storage.scsiportmovememory, ScsiPortMoveMemory routine [Storage Devices], scsiprt_88a58a03-0663-4aad-b048-2a2d3641e94e.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : srb.h
-req.include-header : 
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Storport.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SPB_CONTROLLER_CONFIG, *PSPB_CONTROLLER_CONFIG
-req.product : Windows 10 or later.
+UID: NF:srb.ScsiPortMoveMemory
+title: ScsiPortMoveMemory function
+author: windows-driver-content
+description: The ScsiPortMoveMemory routine copies data from one location to another.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future.
+old-location: storage\scsiportmovememory.htm
+old-project: storage
+ms.assetid: c4ed9551-3dc8-4f76-9bcb-26030f76c244
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: srb/ScsiPortMoveMemory, ScsiPortMoveMemory, storage.scsiportmovememory, ScsiPortMoveMemory routine [Storage Devices], scsiprt_88a58a03-0663-4aad-b048-2a2d3641e94e.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: srb.h
+req.include-header: 
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Storport.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	storport.lib
+-	storport.dll
+apiname:
+-	ScsiPortMoveMemory
+product: Windows
+targetos: Windows
+req.typenames: SPB_CONTROLLER_CONFIG, *PSPB_CONTROLLER_CONFIG
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.SeOpenObjectAuditAlarm
-title : SeOpenObjectAuditAlarm function
-author : windows-driver-content
-description : The SeOpenObjectAuditAlarm routine generates audit and alarm messages when an attempt is made to open an object.
-old-location : ifsk\seopenobjectauditalarm.htm
-old-project : ifsk
-ms.assetid : a4310cf8-1518-4d25-b2f9-a232ddd9c535
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : seref_87dbea09-cd36-40c2-8241-16c8180f1945.xml, SeOpenObjectAuditAlarm routine [Installable File System Drivers], SeOpenObjectAuditAlarm, ntifs/SeOpenObjectAuditAlarm, ifsk.seopenobjectauditalarm
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.SeOpenObjectAuditAlarm
+title: SeOpenObjectAuditAlarm function
+author: windows-driver-content
+description: The SeOpenObjectAuditAlarm routine generates audit and alarm messages when an attempt is made to open an object.
+old-location: ifsk\seopenobjectauditalarm.htm
+old-project: ifsk
+ms.assetid: a4310cf8-1518-4d25-b2f9-a232ddd9c535
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: seref_87dbea09-cd36-40c2-8241-16c8180f1945.xml, SeOpenObjectAuditAlarm routine [Installable File System Drivers], SeOpenObjectAuditAlarm, ntifs/SeOpenObjectAuditAlarm, ifsk.seopenobjectauditalarm
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	SeOpenObjectAuditAlarm
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

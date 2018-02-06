@@ -1,42 +1,50 @@
 ---
-UID : NF:wdfiotarget.WdfIoTargetFormatRequestForRead
-title : WdfIoTargetFormatRequestForRead function
-author : windows-driver-content
-description : The WdfIoTargetFormatRequestForRead method builds a read request for an I/O target but does not send the request.
-old-location : wdf\wdfiotargetformatrequestforread.htm
-old-project : wdf
-ms.assetid : e7c770de-0508-46e8-9820-aee6716fb7a7
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WdfIoTargetFormatRequestForRead, DFIOTargetRef_397cd31e-d4d8-40b5-ae7b-5f8e9ed62300.xml, WdfIoTargetFormatRequestForRead method, kmdf.wdfiotargetformatrequestforread, PFN_WDFIOTARGETFORMATREQUESTFORREAD, wdf.wdfiotargetformatrequestforread, wdfiotarget/WdfIoTargetFormatRequestForRead
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfiotarget.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2, RequestFormattedValid, RequestSendAndForgetNoFormatting, RequestSendAndForgetNoFormatting2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDF_IO_TARGET_STATE, WDF_IO_TARGET_STATE"
-req.product : Windows 10 or later.
+UID: NF:wdfiotarget.WdfIoTargetFormatRequestForRead
+title: WdfIoTargetFormatRequestForRead function
+author: windows-driver-content
+description: The WdfIoTargetFormatRequestForRead method builds a read request for an I/O target but does not send the request.
+old-location: wdf\wdfiotargetformatrequestforread.htm
+old-project: wdf
+ms.assetid: e7c770de-0508-46e8-9820-aee6716fb7a7
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WdfIoTargetFormatRequestForRead, DFIOTargetRef_397cd31e-d4d8-40b5-ae7b-5f8e9ed62300.xml, WdfIoTargetFormatRequestForRead method, kmdf.wdfiotargetformatrequestforread, PFN_WDFIOTARGETFORMATREQUESTFORREAD, wdf.wdfiotargetformatrequestforread, wdfiotarget/WdfIoTargetFormatRequestForRead
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfiotarget.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2, RequestFormattedValid, RequestSendAndForgetNoFormatting, RequestSendAndForgetNoFormatting2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+-	WUDFx02000.dll
+-	WUDFx02000.dll.dll
+apiname:
+-	WdfIoTargetFormatRequestForRead
+product: Windows
+targetos: Windows
+req.typenames: "*PWDF_IO_TARGET_STATE, WDF_IO_TARGET_STATE"
+req.product: Windows 10 or later.
 ---
 
 

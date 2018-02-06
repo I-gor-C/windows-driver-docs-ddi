@@ -1,41 +1,46 @@
 ---
-UID : NS:hdaudio._HDAUDIO_STREAM_FORMAT
-title : "_HDAUDIO_STREAM_FORMAT"
-author : windows-driver-content
-description : The HDAUDIO_STREAM_FORMAT structure describes the data format of a capture or render stream.
-old-location : audio\hdaudio_stream_format.htm
-old-project : audio
-ms.assetid : 475b7774-51ce-410d-aba8-a2317f44ce03
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : "*PHDAUDIO_STREAM_FORMAT, hdaudio/HDAUDIO_STREAM_FORMAT, PHDAUDIO_STREAM_FORMAT structure pointer [Audio Devices], aud-prop2_80d1ef47-903a-4f6e-95c7-e30f07b105fe.xml, _HDAUDIO_STREAM_FORMAT, HDAUDIO_STREAM_FORMAT, HDAUDIO_STREAM_FORMAT structure [Audio Devices], hdaudio/PHDAUDIO_STREAM_FORMAT, audio.hdaudio_stream_format, PHDAUDIO_STREAM_FORMAT"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : hdaudio.h
-req.include-header : Hdaudio.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HDAUDIO_STREAM_FORMAT, *PHDAUDIO_STREAM_FORMAT
+UID: NS:hdaudio._HDAUDIO_STREAM_FORMAT
+title: "_HDAUDIO_STREAM_FORMAT"
+author: windows-driver-content
+description: The HDAUDIO_STREAM_FORMAT structure describes the data format of a capture or render stream.
+old-location: audio\hdaudio_stream_format.htm
+old-project: audio
+ms.assetid: 475b7774-51ce-410d-aba8-a2317f44ce03
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: "*PHDAUDIO_STREAM_FORMAT, hdaudio/HDAUDIO_STREAM_FORMAT, PHDAUDIO_STREAM_FORMAT structure pointer [Audio Devices], aud-prop2_80d1ef47-903a-4f6e-95c7-e30f07b105fe.xml, _HDAUDIO_STREAM_FORMAT, HDAUDIO_STREAM_FORMAT, HDAUDIO_STREAM_FORMAT structure [Audio Devices], hdaudio/PHDAUDIO_STREAM_FORMAT, audio.hdaudio_stream_format, PHDAUDIO_STREAM_FORMAT"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: hdaudio.h
+req.include-header: Hdaudio.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hdaudio.h
+apiname:
+-	HDAUDIO_STREAM_FORMAT
+product: Windows
+targetos: Windows
+req.typenames: HDAUDIO_STREAM_FORMAT, *PHDAUDIO_STREAM_FORMAT
 ---
 
 # _HDAUDIO_STREAM_FORMAT structure

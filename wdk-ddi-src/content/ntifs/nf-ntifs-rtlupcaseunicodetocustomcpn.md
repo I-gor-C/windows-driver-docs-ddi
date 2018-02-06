@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.RtlUpcaseUnicodeToCustomCPN
-title : RtlUpcaseUnicodeToCustomCPN function
-author : windows-driver-content
-description : Reserved for system use.
-old-location : ifsk\rtlupcaseunicodetocustomcpn.htm
-old-project : ifsk
-ms.assetid : 906dd8c6-a7a7-4722-9ca6-78c437ab29e8
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.rtlupcaseunicodetocustomcpn, rtlref_d60b8055-e672-4cc6-be0f-f9a23a202368.xml, RtlUpcaseUnicodeToCustomCPN, ntifs/RtlUpcaseUnicodeToCustomCPN, RtlUpcaseUnicodeToCustomCPN function [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.RtlUpcaseUnicodeToCustomCPN
+title: RtlUpcaseUnicodeToCustomCPN function
+author: windows-driver-content
+description: Reserved for system use.
+old-location: ifsk\rtlupcaseunicodetocustomcpn.htm
+old-project: ifsk
+ms.assetid: 906dd8c6-a7a7-4722-9ca6-78c437ab29e8
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.rtlupcaseunicodetocustomcpn, rtlref_d60b8055-e672-4cc6-be0f-f9a23a202368.xml, RtlUpcaseUnicodeToCustomCPN, ntifs/RtlUpcaseUnicodeToCustomCPN, RtlUpcaseUnicodeToCustomCPN function [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntifs.h
+apiname:
+-	RtlUpcaseUnicodeToCustomCPN
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dhal.LPD3DHAL_DRAWPRIMITIVES2CB
-title : LPD3DHAL_DRAWPRIMITIVES2CB
-author : windows-driver-content
-description : The D3dDrawPrimitives2 function renders primitives and returns the updated render state.
-old-location : display\d3ddrawprimitives2.htm
-old-project : display
-ms.assetid : 6128ff7a-0d2c-48df-8b5e-cab33c5a74f5
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.d3ddrawprimitives2, D3dDrawPrimitives2 callback function [Display Devices], D3dDrawPrimitives2, LPD3DHAL_DRAWPRIMITIVES2CB, LPD3DHAL_DRAWPRIMITIVES2CB, d3dhal/D3dDrawPrimitives2, d3dfncs_5f3743b4-be3f-4216-883a-af5103a38c7a.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dhal.h
-req.include-header : D3dhal.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DTRANSFORMCAPS, *LPD3DTRANSFORMCAPS
+UID: NC:d3dhal.LPD3DHAL_DRAWPRIMITIVES2CB
+title: LPD3DHAL_DRAWPRIMITIVES2CB
+author: windows-driver-content
+description: The D3dDrawPrimitives2 function renders primitives and returns the updated render state.
+old-location: display\d3ddrawprimitives2.htm
+old-project: display
+ms.assetid: 6128ff7a-0d2c-48df-8b5e-cab33c5a74f5
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.d3ddrawprimitives2, D3dDrawPrimitives2 callback function [Display Devices], D3dDrawPrimitives2, LPD3DHAL_DRAWPRIMITIVES2CB, LPD3DHAL_DRAWPRIMITIVES2CB, d3dhal/D3dDrawPrimitives2, d3dfncs_5f3743b4-be3f-4216-883a-af5103a38c7a.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dhal.h
+req.include-header: D3dhal.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dhal.h
+apiname:
+-	D3dDrawPrimitives2
+product: Windows
+targetos: Windows
+req.typenames: D3DTRANSFORMCAPS, *LPD3DTRANSFORMCAPS
 ---
 
 

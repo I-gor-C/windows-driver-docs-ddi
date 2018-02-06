@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfio.WDF_IO_QUEUE_STOPPED
-title : WDF_IO_QUEUE_STOPPED function
-author : windows-driver-content
-description : The WDF_IO_QUEUE_STOPPED function returns TRUE if an I/O queue's state indicates that the queue is stopped.
-old-location : wdf\wdf_io_queue_stopped.htm
-old-project : wdf
-ms.assetid : 8257c636-824d-4909-b0cb-76d72ac980fa
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WDF_IO_QUEUE_STOPPED function, DFQueueObjectRef_55457efd-0074-4be5-b078-bb223963bfca.xml, wdf.wdf_io_queue_stopped, kmdf.wdf_io_queue_stopped, wdfio/WDF_IO_QUEUE_STOPPED, WDF_IO_QUEUE_STOPPED
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfio.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : None
-req.dll : 
-req.irql : Any IRQL.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_IO_QUEUE_STATE
-req.product : Windows 10 or later.
+UID: NF:wdfio.WDF_IO_QUEUE_STOPPED
+title: WDF_IO_QUEUE_STOPPED function
+author: windows-driver-content
+description: The WDF_IO_QUEUE_STOPPED function returns TRUE if an I/O queue's state indicates that the queue is stopped.
+old-location: wdf\wdf_io_queue_stopped.htm
+old-project: wdf
+ms.assetid: 8257c636-824d-4909-b0cb-76d72ac980fa
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WDF_IO_QUEUE_STOPPED function, DFQueueObjectRef_55457efd-0074-4be5-b078-bb223963bfca.xml, wdf.wdf_io_queue_stopped, kmdf.wdf_io_queue_stopped, wdfio/WDF_IO_QUEUE_STOPPED, WDF_IO_QUEUE_STOPPED
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfio.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: None
+req.dll: 
+req.irql: Any IRQL.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	None
+-	None.dll
+apiname:
+-	WDF_IO_QUEUE_STOPPED
+product: Windows
+targetos: Windows
+req.typenames: WDF_IO_QUEUE_STATE
+req.product: Windows 10 or later.
 ---
 
 

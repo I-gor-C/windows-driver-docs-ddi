@@ -1,41 +1,46 @@
 ---
-UID : NF:engextcpp.ExtRemoteTypedList.ExtRemoteTypedList
-title : ExtRemoteTypedList::ExtRemoteTypedList method
-author : windows-driver-content
-description : The ExtRemoteTypedList class extends the ExtRemoteList class. The ExtRemoteTypedList class adds type information allowing each item in the list to be represented by an instance of the ExtRemoteTyped class.
-old-location : debugger\extremotetypedlist.htm
-old-project : debugger
-ms.assetid : a7b87f06-491a-4b41-a355-0f2806c0dd8a
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : ExtRemoteTypedList, ExtRemoteTypedList class [Windows Debugging], debugger.extremotetypedlist, EngExtCpp_Ref_5e1242e6-5704-4b87-85e1-b02a41fc4243.xml, ExtRemoteTypedList::ExtRemoteTypedList, engextcpp/ExtRemoteTypedList, ExtRemoteTypedList class [Windows Debugging], described
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : engextcpp.hpp
-req.include-header : Engextcpp.hpp
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : engextcpp.hpp
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SILO_DRIVER_CAPABILITIES, *PSILO_DRIVER_CAPABILITIES
+UID: NF:engextcpp.ExtRemoteTypedList.ExtRemoteTypedList
+title: ExtRemoteTypedList::ExtRemoteTypedList method
+author: windows-driver-content
+description: The ExtRemoteTypedList class extends the ExtRemoteList class. The ExtRemoteTypedList class adds type information allowing each item in the list to be represented by an instance of the ExtRemoteTyped class.
+old-location: debugger\extremotetypedlist.htm
+old-project: debugger
+ms.assetid: a7b87f06-491a-4b41-a355-0f2806c0dd8a
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: ExtRemoteTypedList, ExtRemoteTypedList class [Windows Debugging], debugger.extremotetypedlist, EngExtCpp_Ref_5e1242e6-5704-4b87-85e1-b02a41fc4243.xml, ExtRemoteTypedList::ExtRemoteTypedList, engextcpp/ExtRemoteTypedList, ExtRemoteTypedList class [Windows Debugging], described
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: engextcpp.hpp
+req.include-header: Engextcpp.hpp
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: engextcpp.hpp
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	engextcpp.hpp
+apiname:
+-	ExtRemoteTypedList
+product: Windows
+targetos: Windows
+req.typenames: SILO_DRIVER_CAPABILITIES, *PSILO_DRIVER_CAPABILITIES
 ---
 
 

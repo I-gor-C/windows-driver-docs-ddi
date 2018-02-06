@@ -1,42 +1,46 @@
 ---
-UID : NF:bidispl.IBidiSpl2.SendRecvXMLStream
-title : IBidiSpl2::SendRecvXMLStream method
-author : windows-driver-content
-description : The IBidiSpl2::SendRecvXMLStream method sends a bidirectional printer communication request and receives the response as IStream objects formatted in accordance with the Bidirectional Communication Schemas.
-old-location : print\ibidispl2_ibidispl2__sendrecvxmlstream.htm
-old-project : print
-ms.assetid : 2daf99a8-42dc-4739-8e7e-80d3c9a084b7
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : gdi.ibidispl2_ibidispl2__sendrecvxmlstream, IBidiSpl2::SendRecvXMLStream, IBidiSpl2 interface [Print Devices], IBidiSpl2::SendRecvXMLStream method, SendRecvXMLStream, bidispl/IBidiSpl2::IBidiSpl2::SendRecvXMLStream, IBidiSpl2, print.ibidispl2_ibidispl2__sendrecvxmlstream, IBidiSpl2::IBidiSpl2::SendRecvXMLStream, IBidiSpl2::SendRecvXMLStream method [Print Devices], IBidiSpl2::SendRecvXMLStream method [Print Devices], IBidiSpl2 interface, _win32_IBidiSpl2_SendRecvXMLStream
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : bidispl.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Windows Vista
-req.target-min-winversvr : Windows Server 2008
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : bidispl.h
-req.dll : Bidispl.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
+UID: NF:bidispl.IBidiSpl2.SendRecvXMLStream
+title: IBidiSpl2::SendRecvXMLStream method
+author: windows-driver-content
+description: The IBidiSpl2::SendRecvXMLStream method sends a bidirectional printer communication request and receives the response as IStream objects formatted in accordance with the Bidirectional Communication Schemas.
+old-location: print\ibidispl2_ibidispl2__sendrecvxmlstream.htm
+old-project: print
+ms.assetid: 2daf99a8-42dc-4739-8e7e-80d3c9a084b7
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: gdi.ibidispl2_ibidispl2__sendrecvxmlstream, IBidiSpl2::SendRecvXMLStream, IBidiSpl2 interface [Print Devices], IBidiSpl2::SendRecvXMLStream method, SendRecvXMLStream, bidispl/IBidiSpl2::IBidiSpl2::SendRecvXMLStream, IBidiSpl2, print.ibidispl2_ibidispl2__sendrecvxmlstream, IBidiSpl2::IBidiSpl2::SendRecvXMLStream, IBidiSpl2::SendRecvXMLStream method [Print Devices], IBidiSpl2::SendRecvXMLStream method [Print Devices], IBidiSpl2 interface, _win32_IBidiSpl2_SendRecvXMLStream
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: bidispl.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Windows Vista
+req.target-min-winversvr: Windows Server 2008
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: bidispl.h
+req.dll: Bidispl.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	bidispl.dll
+apiname:
 -	IBidiSpl2.IBidiSpl2::SendRecvXMLStream
-product : Windows
-targetos : Windows
-req.typenames : "*PMPEG2_TRANSPORT_STRIDE, MPEG2_TRANSPORT_STRIDE"
+product: Windows
+targetos: Windows
+req.typenames: "*PMPEG2_TRANSPORT_STRIDE, MPEG2_TRANSPORT_STRIDE"
 ---
 
 

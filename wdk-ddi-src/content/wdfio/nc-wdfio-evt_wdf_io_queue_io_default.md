@@ -1,42 +1,47 @@
 ---
-UID : NC:wdfio.EVT_WDF_IO_QUEUE_IO_DEFAULT
-title : EVT_WDF_IO_QUEUE_IO_DEFAULT
-author : windows-driver-content
-description : A driver's EvtIoDefault event callback function processes a specified I/O request.
-old-location : wdf\evtiodefault.htm
-old-project : wdf
-ms.assetid : 0b834d01-5603-43e8-9b74-9292610cc06d
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.evtiodefault, EvtIoDefault callback function, EvtIoDefault, EVT_WDF_IO_QUEUE_IO_DEFAULT, EVT_WDF_IO_QUEUE_IO_DEFAULT, wdfio/EvtIoDefault, DFQueueObjectRef_aca0c34e-8d7d-4eba-b1ac-c91928db896e.xml, kmdf.evtiodefault
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdfio.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL (see Remarks section)"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_INTERRUPT_INFO, *PWDF_INTERRUPT_INFO
-req.product : Windows 10 or later.
+UID: NC:wdfio.EVT_WDF_IO_QUEUE_IO_DEFAULT
+title: EVT_WDF_IO_QUEUE_IO_DEFAULT
+author: windows-driver-content
+description: A driver's EvtIoDefault event callback function processes a specified I/O request.
+old-location: wdf\evtiodefault.htm
+old-project: wdf
+ms.assetid: 0b834d01-5603-43e8-9b74-9292610cc06d
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.evtiodefault, EvtIoDefault callback function, EvtIoDefault, EVT_WDF_IO_QUEUE_IO_DEFAULT, EVT_WDF_IO_QUEUE_IO_DEFAULT, wdfio/EvtIoDefault, DFQueueObjectRef_aca0c34e-8d7d-4eba-b1ac-c91928db896e.xml, kmdf.evtiodefault
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdfio.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL (see Remarks section)"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Wdfio.h
+apiname:
+-	EvtIoDefault
+product: Windows
+targetos: Windows
+req.typenames: WDF_INTERRUPT_INFO, *PWDF_INTERRUPT_INFO
+req.product: Windows 10 or later.
 ---
 
 

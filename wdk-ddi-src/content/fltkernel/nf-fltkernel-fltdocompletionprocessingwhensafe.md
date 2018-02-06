@@ -1,41 +1,47 @@
 ---
-UID : NF:fltkernel.FltDoCompletionProcessingWhenSafe
-title : FltDoCompletionProcessingWhenSafe function
-author : windows-driver-content
-description : If it is safe to do so, the FltDoCompletionProcessingWhenSafe function executes a minifilter driver postoperation callback routine.
-old-location : ifsk\fltdocompletionprocessingwhensafe.htm
-old-project : ifsk
-ms.assetid : 8143c741-8f6e-442d-a52a-c226b2e4aa57
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltApiRef_a_to_d_4e8cd7a1-1469-4ae1-97a9-51a184d0ad5a.xml, FltDoCompletionProcessingWhenSafe routine [Installable File System Drivers], ifsk.fltdocompletionprocessingwhensafe, fltkernel/FltDoCompletionProcessingWhenSafe, FltDoCompletionProcessingWhenSafe
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Microsoft Windows 2000 Update Rollup 1 for SP4, Windows XP SP2, Windows Server 2003 SP1, and later operating systems. Not available in Windows 2000 SP4 and earlier operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Fltmgr.lib
-req.dll : 
-req.irql : Any.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltDoCompletionProcessingWhenSafe
+title: FltDoCompletionProcessingWhenSafe function
+author: windows-driver-content
+description: If it is safe to do so, the FltDoCompletionProcessingWhenSafe function executes a minifilter driver postoperation callback routine.
+old-location: ifsk\fltdocompletionprocessingwhensafe.htm
+old-project: ifsk
+ms.assetid: 8143c741-8f6e-442d-a52a-c226b2e4aa57
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltApiRef_a_to_d_4e8cd7a1-1469-4ae1-97a9-51a184d0ad5a.xml, FltDoCompletionProcessingWhenSafe routine [Installable File System Drivers], ifsk.fltdocompletionprocessingwhensafe, fltkernel/FltDoCompletionProcessingWhenSafe, FltDoCompletionProcessingWhenSafe
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Microsoft Windows 2000 Update Rollup 1 for SP4, Windows XP SP2, Windows Server 2003 SP1, and later operating systems. Not available in Windows 2000 SP4 and earlier operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Fltmgr.lib
+req.dll: 
+req.irql: Any.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Fltmgr.lib
+-	Fltmgr.dll
+apiname:
+-	FltDoCompletionProcessingWhenSafe
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

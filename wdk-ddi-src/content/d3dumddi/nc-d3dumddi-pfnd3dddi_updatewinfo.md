@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_UPDATEWINFO
-title : PFND3DDDI_UPDATEWINFO
-author : windows-driver-content
-description : The UpdateWInfo function updates the w range for w buffering.
-old-location : display\updatewinfo.htm
-old-project : display
-ms.assetid : e9cd87b9-3958-4b10-895d-480e03ebea76
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.updatewinfo, UpdateWInfo callback function [Display Devices], UpdateWInfo, PFND3DDDI_UPDATEWINFO, PFND3DDDI_UPDATEWINFO, d3dumddi/UpdateWInfo, UserModeDisplayDriver_Functions_c829f8ef-b1fd-49ef-a9f0-cf92232bdb4f.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_UPDATEWINFO
+title: PFND3DDDI_UPDATEWINFO
+author: windows-driver-content
+description: The UpdateWInfo function updates the w range for w buffering.
+old-location: display\updatewinfo.htm
+old-project: display
+ms.assetid: e9cd87b9-3958-4b10-895d-480e03ebea76
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.updatewinfo, UpdateWInfo callback function [Display Devices], UpdateWInfo, PFND3DDDI_UPDATEWINFO, PFND3DDDI_UPDATEWINFO, d3dumddi/UpdateWInfo, UserModeDisplayDriver_Functions_c829f8ef-b1fd-49ef-a9f0-cf92232bdb4f.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	UpdateWInfo
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

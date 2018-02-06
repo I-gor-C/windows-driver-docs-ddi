@@ -1,41 +1,46 @@
 ---
-UID : NC:dot11wdi.MINIPORT_WDI_TAL_TXRX_PEER_DELETE_CONFIRM
-title : MINIPORT_WDI_TAL_TXRX_PEER_DELETE_CONFIRM
-author : windows-driver-content
-description : The MiniportWdiTalTxRxPeerDeleteConfirm handler function is invoked after the completion of a PeerDeleteIndication call which did not return success.
-old-location : netvista\miniportwditaltxrxpeerdeleteconfirm.htm
-old-project : netvista
-ms.assetid : 993C600F-E2FA-46D7-AE66-77048B481660
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.miniportwditaltxrxpeerdeleteconfirm, MiniportWdiTalTxRxPeerDeleteConfirm callback function [Network Drivers Starting with Windows Vista], MiniportWdiTalTxRxPeerDeleteConfirm, MINIPORT_WDI_TAL_TXRX_PEER_DELETE_CONFIRM, MINIPORT_WDI_TAL_TXRX_PEER_DELETE_CONFIRM, dot11wdi/MiniportWdiTalTxRxPeerDeleteConfirm
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : dot11wdi.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SYNTH_STATS, *PSYNTH_STATS
+UID: NC:dot11wdi.MINIPORT_WDI_TAL_TXRX_PEER_DELETE_CONFIRM
+title: MINIPORT_WDI_TAL_TXRX_PEER_DELETE_CONFIRM
+author: windows-driver-content
+description: The MiniportWdiTalTxRxPeerDeleteConfirm handler function is invoked after the completion of a PeerDeleteIndication call which did not return success.
+old-location: netvista\miniportwditaltxrxpeerdeleteconfirm.htm
+old-project: netvista
+ms.assetid: 993C600F-E2FA-46D7-AE66-77048B481660
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.miniportwditaltxrxpeerdeleteconfirm, MiniportWdiTalTxRxPeerDeleteConfirm callback function [Network Drivers Starting with Windows Vista], MiniportWdiTalTxRxPeerDeleteConfirm, MINIPORT_WDI_TAL_TXRX_PEER_DELETE_CONFIRM, MINIPORT_WDI_TAL_TXRX_PEER_DELETE_CONFIRM, dot11wdi/MiniportWdiTalTxRxPeerDeleteConfirm
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: dot11wdi.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	dot11wdi.h
+apiname:
+-	MiniportWdiTalTxRxPeerDeleteConfirm
+product: Windows
+targetos: Windows
+req.typenames: SYNTH_STATS, *PSYNTH_STATS
 ---
 
 

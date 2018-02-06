@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IRequestCallbackRequestCompletion.OnCompletion
-title : IRequestCallbackRequestCompletion::OnCompletion method
-author : windows-driver-content
-description : The OnCompletion method completes the specified request.
-old-location : wdf\irequestcallbackrequestcompletion_oncompletion.htm
-old-project : wdf
-ms.assetid : 1a4787da-2813-4a7a-820a-5c078175aba5
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : IRequestCallbackRequestCompletion interface, OnCompletion method, OnCompletion, IRequestCallbackRequestCompletion, wudfddi/IRequestCallbackRequestCompletion::OnCompletion, UMDFRequestObjectRef_b3ec1892-f32f-4c52-80f6-8699a358ea8d.xml, IRequestCallbackRequestCompletion::OnCompletion, OnCompletion method, IRequestCallbackRequestCompletion interface, OnCompletion method, wdf.irequestcallbackrequestcompletion_oncompletion, umdf.irequestcallbackrequestcompletion_oncompletion
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IRequestCallbackRequestCompletion.OnCompletion
+title: IRequestCallbackRequestCompletion::OnCompletion method
+author: windows-driver-content
+description: The OnCompletion method completes the specified request.
+old-location: wdf\irequestcallbackrequestcompletion_oncompletion.htm
+old-project: wdf
+ms.assetid: 1a4787da-2813-4a7a-820a-5c078175aba5
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: IRequestCallbackRequestCompletion interface, OnCompletion method, OnCompletion, IRequestCallbackRequestCompletion, wudfddi/IRequestCallbackRequestCompletion::OnCompletion, UMDFRequestObjectRef_b3ec1892-f32f-4c52-80f6-8699a358ea8d.xml, IRequestCallbackRequestCompletion::OnCompletion, OnCompletion method, IRequestCallbackRequestCompletion interface, OnCompletion method, wdf.irequestcallbackrequestcompletion_oncompletion, umdf.irequestcallbackrequestcompletion_oncompletion
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Wudfddi.h
+apiname:
+-	IRequestCallbackRequestCompletion.OnCompletion
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

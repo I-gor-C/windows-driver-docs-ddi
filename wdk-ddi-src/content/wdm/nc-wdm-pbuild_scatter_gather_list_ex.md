@@ -1,42 +1,47 @@
 ---
-UID : NC:wdm.PBUILD_SCATTER_GATHER_LIST_EX
-title : PBUILD_SCATTER_GATHER_LIST_EX
-author : windows-driver-content
-description : The BuildScatterGatherListEx routine allocates the resources that are required for a DMA transfer, builds a scatter/gather list, and calls the driver-supplied AdapterListControl routine to initiate the DMA transfer.
-old-location : kernel\buildscattergatherlistex.htm
-old-project : kernel
-ms.assetid : A1A89D52-5F39-45E4-AFBE-20DAD0E49442
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.buildscattergatherlistex, BuildScatterGatherListEx, BuildScatterGatherListEx callback function [Kernel-Mode Driver Architecture], BuildScatterGatherListEx, PBUILD_SCATTER_GATHER_LIST_EX, PBUILD_SCATTER_GATHER_LIST_EX, wdm/BuildScatterGatherListEx, DMA_SYNCHRONOUS_CALLBACK
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : DISPATCH_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
-req.product : Windows 10 or later.
+UID: NC:wdm.PBUILD_SCATTER_GATHER_LIST_EX
+title: PBUILD_SCATTER_GATHER_LIST_EX
+author: windows-driver-content
+description: The BuildScatterGatherListEx routine allocates the resources that are required for a DMA transfer, builds a scatter/gather list, and calls the driver-supplied AdapterListControl routine to initiate the DMA transfer.
+old-location: kernel\buildscattergatherlistex.htm
+old-project: kernel
+ms.assetid: A1A89D52-5F39-45E4-AFBE-20DAD0E49442
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.buildscattergatherlistex, BuildScatterGatherListEx, BuildScatterGatherListEx callback function [Kernel-Mode Driver Architecture], BuildScatterGatherListEx, PBUILD_SCATTER_GATHER_LIST_EX, PBUILD_SCATTER_GATHER_LIST_EX, wdm/BuildScatterGatherListEx, DMA_SYNCHRONOUS_CALLBACK
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: DISPATCH_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Wdm.h
+apiname:
+-	BuildScatterGatherListEx
+product: Windows
+targetos: Windows
+req.typenames: WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+req.product: Windows 10 or later.
 ---
 
 

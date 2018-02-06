@@ -1,42 +1,47 @@
 ---
-UID : NC:wdfpdo.EVT_WDF_DEVICE_REPORTED_MISSING
-title : EVT_WDF_DEVICE_REPORTED_MISSING
-author : windows-driver-content
-description : A bus driver's EvtDeviceReportedMissing event callback function informs the driver that the framework has reported the physical device object (PDO) missing to the Plug and Play manager.
-old-location : wdf\evtdevicereportedmissing.htm
-old-project : wdf
-ms.assetid : F64E2FFD-229F-4447-94C2-A5403E7893B7
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.evtdevicereportedmissing, EvtDeviceReportedMissing callback function, EvtDeviceReportedMissing, EVT_WDF_DEVICE_REPORTED_MISSING, EVT_WDF_DEVICE_REPORTED_MISSING, wdfpdo/EvtDeviceReportedMissing, kmdf.evtdevicereportedmissing
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdfpdo.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.11
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDF_OBJECT_CONTEXT_TYPE_INFO, WDF_OBJECT_CONTEXT_TYPE_INFO"
-req.product : Windows 10 or later.
+UID: NC:wdfpdo.EVT_WDF_DEVICE_REPORTED_MISSING
+title: EVT_WDF_DEVICE_REPORTED_MISSING
+author: windows-driver-content
+description: A bus driver's EvtDeviceReportedMissing event callback function informs the driver that the framework has reported the physical device object (PDO) missing to the Plug and Play manager.
+old-location: wdf\evtdevicereportedmissing.htm
+old-project: wdf
+ms.assetid: F64E2FFD-229F-4447-94C2-A5403E7893B7
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.evtdevicereportedmissing, EvtDeviceReportedMissing callback function, EvtDeviceReportedMissing, EVT_WDF_DEVICE_REPORTED_MISSING, EVT_WDF_DEVICE_REPORTED_MISSING, wdfpdo/EvtDeviceReportedMissing, kmdf.evtdevicereportedmissing
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdfpdo.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.11
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Wdfpdo.h
+apiname:
+-	EvtDeviceReportedMissing
+product: Windows
+targetos: Windows
+req.typenames: "*PWDF_OBJECT_CONTEXT_TYPE_INFO, WDF_OBJECT_CONTEXT_TYPE_INFO"
+req.product: Windows 10 or later.
 ---
 
 

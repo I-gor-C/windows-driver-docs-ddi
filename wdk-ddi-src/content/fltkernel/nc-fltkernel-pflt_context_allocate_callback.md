@@ -1,41 +1,46 @@
 ---
-UID : NC:fltkernel.PFLT_CONTEXT_ALLOCATE_CALLBACK
-title : PFLT_CONTEXT_ALLOCATE_CALLBACK
-author : windows-driver-content
-description : A minifilter driver can register a routine of type PFLT_CONTEXT_ALLOCATE_CALLBACK as the minifilter driver's ContextAllocateCallback routine.
-old-location : ifsk\pflt_context_allocate_callback.htm
-old-project : ifsk
-ms.assetid : ca737e84-5b03-4fcd-b715-3344d8bbaaf3
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.pflt_context_allocate_callback, ContextAllocateCallback routine [Installable File System Drivers], ContextAllocateCallback, PFLT_CONTEXT_ALLOCATE_CALLBACK, PFLT_CONTEXT_ALLOCATE_CALLBACK, fltkernel/ContextAllocateCallback, FltCallbacks_bbb085f4-6850-424b-9885-01549171458b.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<=APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NC:fltkernel.PFLT_CONTEXT_ALLOCATE_CALLBACK
+title: PFLT_CONTEXT_ALLOCATE_CALLBACK
+author: windows-driver-content
+description: A minifilter driver can register a routine of type PFLT_CONTEXT_ALLOCATE_CALLBACK as the minifilter driver's ContextAllocateCallback routine.
+old-location: ifsk\pflt_context_allocate_callback.htm
+old-project: ifsk
+ms.assetid: ca737e84-5b03-4fcd-b715-3344d8bbaaf3
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.pflt_context_allocate_callback, ContextAllocateCallback routine [Installable File System Drivers], ContextAllocateCallback, PFLT_CONTEXT_ALLOCATE_CALLBACK, PFLT_CONTEXT_ALLOCATE_CALLBACK, fltkernel/ContextAllocateCallback, FltCallbacks_bbb085f4-6850-424b-9885-01549171458b.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<=APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	fltkernel.h
+apiname:
+-	ContextAllocateCallback
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

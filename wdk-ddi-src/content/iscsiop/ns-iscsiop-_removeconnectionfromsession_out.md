@@ -1,41 +1,46 @@
 ---
-UID : NS:iscsiop._RemoveConnectionFromSession_OUT
-title : "_RemoveConnectionFromSession_OUT"
-author : windows-driver-content
-description : The RemoveConnectionFromSession_OUT structure holds the output data for the RemoveConnectionFromSession method, which is used to remove a connection from a session.
-old-location : storage\removeconnectionfromsession_out.htm
-old-project : storage
-ms.assetid : 00c6c94e-06a8-40ec-8ddd-4a4191fa1ec6
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : "_RemoveConnectionFromSession_OUT, PRemoveConnectionFromSession_OUT structure pointer [Storage Devices], storage.removeconnectionfromsession_out, RemoveConnectionFromSession_OUT structure [Storage Devices], iscsiop/PRemoveConnectionFromSession_OUT, iscsiop/RemoveConnectionFromSession_OUT, PRemoveConnectionFromSession_OUT, RemoveConnectionFromSession_OUT, *PRemoveConnectionFromSession_OUT, structs-iSCSI_a986a037-b861-4c2b-8402-86dbf7c09942.xml"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : iscsiop.h
-req.include-header : Iscsiop.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PRemoveConnectionFromSession_OUT, RemoveConnectionFromSession_OUT"
+UID: NS:iscsiop._RemoveConnectionFromSession_OUT
+title: "_RemoveConnectionFromSession_OUT"
+author: windows-driver-content
+description: The RemoveConnectionFromSession_OUT structure holds the output data for the RemoveConnectionFromSession method, which is used to remove a connection from a session.
+old-location: storage\removeconnectionfromsession_out.htm
+old-project: storage
+ms.assetid: 00c6c94e-06a8-40ec-8ddd-4a4191fa1ec6
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: "_RemoveConnectionFromSession_OUT, PRemoveConnectionFromSession_OUT structure pointer [Storage Devices], storage.removeconnectionfromsession_out, RemoveConnectionFromSession_OUT structure [Storage Devices], iscsiop/PRemoveConnectionFromSession_OUT, iscsiop/RemoveConnectionFromSession_OUT, PRemoveConnectionFromSession_OUT, RemoveConnectionFromSession_OUT, *PRemoveConnectionFromSession_OUT, structs-iSCSI_a986a037-b861-4c2b-8402-86dbf7c09942.xml"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: iscsiop.h
+req.include-header: Iscsiop.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	iscsiop.h
+apiname:
+-	RemoveConnectionFromSession_OUT
+product: Windows
+targetos: Windows
+req.typenames: "*PRemoveConnectionFromSession_OUT, RemoveConnectionFromSession_OUT"
 ---
 
 # _RemoveConnectionFromSession_OUT structure

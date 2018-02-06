@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddndis._NDIS_OFFLOAD
-title : "_NDIS_OFFLOAD"
-author : windows-driver-content
-description : The NDIS_OFFLOAD structure specifies several computational tasks that can be offloaded to the network adapter.
-old-location : netvista\ndis_offload.htm
-old-project : netvista
-ms.assetid : 9d1447f1-aae8-4c27-a27b-e521c0c8ca97
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NDIS_OFFLOAD structure [Network Drivers Starting with Windows Vista], NDIS_OFFLOAD, tcpip_offload_ref_e5f796e9-714c-43f9-98e4-1d0de0dcc8ee.xml, *PNDIS_OFFLOAD, netvista.ndis_offload, IPSEC_OFFLOAD_V2_AND_UDP_CHECKSUM_COEXISTENCE, IPSEC_OFFLOAD_V2_AND_TCP_CHECKSUM_COEXISTENCE, _NDIS_OFFLOAD, PNDIS_OFFLOAD structure pointer [Network Drivers Starting with Windows Vista], ntddndis/PNDIS_OFFLOAD, PNDIS_OFFLOAD, ntddndis/NDIS_OFFLOAD
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows Vista,Supported in NDIS 6.0 and later.
-req.target-min-winversvr : Windows Server 2008
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_OFFLOAD, *PNDIS_OFFLOAD
+UID: NS:ntddndis._NDIS_OFFLOAD
+title: "_NDIS_OFFLOAD"
+author: windows-driver-content
+description: The NDIS_OFFLOAD structure specifies several computational tasks that can be offloaded to the network adapter.
+old-location: netvista\ndis_offload.htm
+old-project: netvista
+ms.assetid: 9d1447f1-aae8-4c27-a27b-e521c0c8ca97
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NDIS_OFFLOAD structure [Network Drivers Starting with Windows Vista], NDIS_OFFLOAD, tcpip_offload_ref_e5f796e9-714c-43f9-98e4-1d0de0dcc8ee.xml, *PNDIS_OFFLOAD, netvista.ndis_offload, IPSEC_OFFLOAD_V2_AND_UDP_CHECKSUM_COEXISTENCE, IPSEC_OFFLOAD_V2_AND_TCP_CHECKSUM_COEXISTENCE, _NDIS_OFFLOAD, PNDIS_OFFLOAD structure pointer [Network Drivers Starting with Windows Vista], ntddndis/PNDIS_OFFLOAD, PNDIS_OFFLOAD, ntddndis/NDIS_OFFLOAD
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows Vista,Supported in NDIS 6.0 and later.
+req.target-min-winversvr: Windows Server 2008
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddndis.h
+apiname:
+-	NDIS_OFFLOAD
+product: Windows
+targetos: Windows
+req.typenames: NDIS_OFFLOAD, *PNDIS_OFFLOAD
 ---
 
 # _NDIS_OFFLOAD structure

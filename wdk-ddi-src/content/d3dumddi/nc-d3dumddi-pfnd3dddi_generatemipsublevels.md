@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_GENERATEMIPSUBLEVELS
-title : PFND3DDDI_GENERATEMIPSUBLEVELS
-author : windows-driver-content
-description : The GenerateMipSubLevels function regenerates the sublevels of a MIP-map texture.
-old-location : display\generatemipsublevels.htm
-old-project : display
-ms.assetid : 86567fc1-cf66-4709-a6e1-6b24408df963
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.generatemipsublevels, GenerateMipSubLevels callback function [Display Devices], GenerateMipSubLevels, PFND3DDDI_GENERATEMIPSUBLEVELS, PFND3DDDI_GENERATEMIPSUBLEVELS, d3dumddi/GenerateMipSubLevels, UserModeDisplayDriver_Functions_795601cd-37d8-4268-8e41-38806c5961e6.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_GENERATEMIPSUBLEVELS
+title: PFND3DDDI_GENERATEMIPSUBLEVELS
+author: windows-driver-content
+description: The GenerateMipSubLevels function regenerates the sublevels of a MIP-map texture.
+old-location: display\generatemipsublevels.htm
+old-project: display
+ms.assetid: 86567fc1-cf66-4709-a6e1-6b24408df963
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.generatemipsublevels, GenerateMipSubLevels callback function [Display Devices], GenerateMipSubLevels, PFND3DDDI_GENERATEMIPSUBLEVELS, PFND3DDDI_GENERATEMIPSUBLEVELS, d3dumddi/GenerateMipSubLevels, UserModeDisplayDriver_Functions_795601cd-37d8-4268-8e41-38806c5961e6.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	GenerateMipSubLevels
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddpar.IOCTL_PAR_SET_WRITE_ADDRESS
-title : IOCTL_PAR_SET_WRITE_ADDRESS
-author : windows-driver-content
-description : The IOCTL_PAR_SET_WRITE_ADDRESS request sets an extended capabilities port (ECP) or enhanced parallel port (EPP) write address (channel) for a parallel device. The parallel port bus driver queues this request on a work queue for the parallel device.
-old-location : parports\ioctl_par_set_write_address.htm
-old-project : parports
-ms.assetid : ea4a071e-aa6b-4c9f-b497-523af7e42430
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : parports.ioctl_par_set_write_address, IOCTL_PAR_SET_WRITE_ADDRESS control code [Parallel Ports], IOCTL_PAR_SET_WRITE_ADDRESS, ntddpar/IOCTL_PAR_SET_WRITE_ADDRESS, cisspd_396ff93f-623f-48a5-925e-9338672fa974.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddpar.h
-req.include-header : Ntddpar.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*POFFLOAD_SECURITY_ASSOCIATION, OFFLOAD_SECURITY_ASSOCIATION"
+UID: NI:ntddpar.IOCTL_PAR_SET_WRITE_ADDRESS
+title: IOCTL_PAR_SET_WRITE_ADDRESS
+author: windows-driver-content
+description: The IOCTL_PAR_SET_WRITE_ADDRESS request sets an extended capabilities port (ECP) or enhanced parallel port (EPP) write address (channel) for a parallel device. The parallel port bus driver queues this request on a work queue for the parallel device.
+old-location: parports\ioctl_par_set_write_address.htm
+old-project: parports
+ms.assetid: ea4a071e-aa6b-4c9f-b497-523af7e42430
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: parports.ioctl_par_set_write_address, IOCTL_PAR_SET_WRITE_ADDRESS control code [Parallel Ports], IOCTL_PAR_SET_WRITE_ADDRESS, ntddpar/IOCTL_PAR_SET_WRITE_ADDRESS, cisspd_396ff93f-623f-48a5-925e-9338672fa974.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddpar.h
+req.include-header: Ntddpar.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddpar.h
+apiname:
+-	IOCTL_PAR_SET_WRITE_ADDRESS
+product: Windows
+targetos: Windows
+req.typenames: "*POFFLOAD_SECURITY_ASSOCIATION, OFFLOAD_SECURITY_ASSOCIATION"
 ---
 
 # IOCTL_PAR_SET_WRITE_ADDRESS IOCTL

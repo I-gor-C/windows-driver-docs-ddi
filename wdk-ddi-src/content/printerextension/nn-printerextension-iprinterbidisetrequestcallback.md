@@ -1,42 +1,47 @@
 ---
-UID : NN:printerextension.IPrinterBidiSetRequestCallback
-title : IPrinterBidiSetRequestCallback
-author : windows-driver-content
-description : Describes the signature of the callback object that receives the Bidi response.
-old-location : print\iprinterbidisetrequestcallback.htm
-old-project : print
-ms.assetid : C85690D0-3CA7-46C7-B597-E36555879F08
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : print.iprinterbidisetrequestcallback, IPrinterBidiSetRequestCallback interface [Print Devices], IPrinterBidiSetRequestCallback interface [Print Devices], described, IPrinterBidiSetRequestCallback, printerextension/IPrinterBidiSetRequestCallback
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : printerextension.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8.1
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : printerextension.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PrintSchemaSelectionType
-req.product : Windows 10 or later.
+UID: NN:printerextension.IPrinterBidiSetRequestCallback
+title: IPrinterBidiSetRequestCallback
+author: windows-driver-content
+description: Describes the signature of the callback object that receives the Bidi response.
+old-location: print\iprinterbidisetrequestcallback.htm
+old-project: print
+ms.assetid: C85690D0-3CA7-46C7-B597-E36555879F08
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: print.iprinterbidisetrequestcallback, IPrinterBidiSetRequestCallback interface [Print Devices], IPrinterBidiSetRequestCallback interface [Print Devices], described, IPrinterBidiSetRequestCallback, printerextension/IPrinterBidiSetRequestCallback
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: printerextension.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8.1
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: printerextension.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Printerextension.h
+apiname:
+-	IPrinterBidiSetRequestCallback
+product: Windows
+targetos: Windows
+req.typenames: PrintSchemaSelectionType
+req.product: Windows 10 or later.
 ---
 
 # IPrinterBidiSetRequestCallback interface

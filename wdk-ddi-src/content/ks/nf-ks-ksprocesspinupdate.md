@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsProcessPinUpdate
-title : KsProcessPinUpdate function
-author : windows-driver-content
-description : The KsProcessPinUpdate function is called from within a filter-centric filter's AVStrMiniFilterProcess dispatch to update a process pin.
-old-location : stream\ksprocesspinupdate.htm
-old-project : stream
-ms.assetid : 9f6c28ad-d3dd-4be4-a637-10958a9cbd20
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ks/KsProcessPinUpdate, stream.ksprocesspinupdate, avfunc_8f096e7d-7eb1-40c7-bcc9-762e671bb3d4.xml, KsProcessPinUpdate, KsProcessPinUpdate function [Streaming Media Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsProcessPinUpdate
+title: KsProcessPinUpdate function
+author: windows-driver-content
+description: The KsProcessPinUpdate function is called from within a filter-centric filter's AVStrMiniFilterProcess dispatch to update a process pin.
+old-location: stream\ksprocesspinupdate.htm
+old-project: stream
+ms.assetid: 9f6c28ad-d3dd-4be4-a637-10958a9cbd20
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ks/KsProcessPinUpdate, stream.ksprocesspinupdate, avfunc_8f096e7d-7eb1-40c7-bcc9-762e671bb3d4.xml, KsProcessPinUpdate, KsProcessPinUpdate function [Streaming Media Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsProcessPinUpdate
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

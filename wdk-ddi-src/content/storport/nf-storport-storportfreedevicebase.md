@@ -1,42 +1,48 @@
 ---
-UID : NF:storport.StorPortFreeDeviceBase
-title : StorPortFreeDeviceBase function
-author : windows-driver-content
-description : StorPortFreeDeviceBase frees a range of device I/O memory that was mapped by StorPortGetDeviceBase.
-old-location : storage\storportfreedevicebase.htm
-old-project : storage
-ms.assetid : 4feb3bde-c243-493c-a6f9-4accd545955c
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : StorPortFreeDeviceBase, StorPortFreeDeviceBase function [Storage Devices], storport/StorPortFreeDeviceBase, storage.storportfreedevicebase, storprt_f8c3e4c6-8f38-4189-bdac-70c0c61e0f18.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Storport.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STOR_SPINLOCK
-req.product : Windows 10 or later.
+UID: NF:storport.StorPortFreeDeviceBase
+title: StorPortFreeDeviceBase function
+author: windows-driver-content
+description: StorPortFreeDeviceBase frees a range of device I/O memory that was mapped by StorPortGetDeviceBase.
+old-location: storage\storportfreedevicebase.htm
+old-project: storage
+ms.assetid: 4feb3bde-c243-493c-a6f9-4accd545955c
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: StorPortFreeDeviceBase, StorPortFreeDeviceBase function [Storage Devices], storport/StorPortFreeDeviceBase, storage.storportfreedevicebase, storprt_f8c3e4c6-8f38-4189-bdac-70c0c61e0f18.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Storport.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Storport.lib
+-	Storport.dll
+apiname:
+-	StorPortFreeDeviceBase
+product: Windows
+targetos: Windows
+req.typenames: STOR_SPINLOCK
+req.product: Windows 10 or later.
 ---
 
 

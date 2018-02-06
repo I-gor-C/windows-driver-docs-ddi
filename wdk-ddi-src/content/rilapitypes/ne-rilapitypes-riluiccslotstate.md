@@ -1,42 +1,47 @@
 ---
-UID : NE:rilapitypes.RILUICCSLOTSTATE
-title : RILUICCSLOTSTATE
-author : windows-driver-content
-description : This enumeration describes the RILUICCSLOTSTATE.
-old-location : netvista\riluiccslotstate.htm
-old-project : netvista
-ms.assetid : e88c6e79-c1a0-4ff9-ac00-f8f367aaa7c4
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : RIL_UICCSLOT_ERROR, netvista.riluiccslotstate, rilapitypes/RIL_UICCSLOT_EMPTY, RIL_UICCSLOT_EMPTY, rilapitypes/RIL_UICCSLOT_OFF_EMPTY, RIL_UICCSLOT_OFF_EMPTY, rilapitypes/RIL_UICCSLOT_ERROR, rilapitypes/RIL_UICCSLOT_OFF, RILUICCSLOTSTATE, RIL_UICCSLOT_OFF, RIL_UICCSLOT_NOT_READY, RILUICCSLOTSTATE enumeration [Network Drivers Starting with Windows Vista], rilapitypes/RILUICCSLOTSTATE, rilapitypes/RIL_UICCSLOT_NOT_READY, rilapitypes/RIL_UICCSLOT_ACTIVE, RIL_UICCSLOT_ACTIVE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : rilapitypes.h
-req.include-header : Rilapitypes.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RILUICCSLOTSTATE
-req.product : Windows 10 or later.
+UID: NE:rilapitypes.RILUICCSLOTSTATE
+title: RILUICCSLOTSTATE
+author: windows-driver-content
+description: This enumeration describes the RILUICCSLOTSTATE.
+old-location: netvista\riluiccslotstate.htm
+old-project: netvista
+ms.assetid: e88c6e79-c1a0-4ff9-ac00-f8f367aaa7c4
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: RIL_UICCSLOT_ERROR, netvista.riluiccslotstate, rilapitypes/RIL_UICCSLOT_EMPTY, RIL_UICCSLOT_EMPTY, rilapitypes/RIL_UICCSLOT_OFF_EMPTY, RIL_UICCSLOT_OFF_EMPTY, rilapitypes/RIL_UICCSLOT_ERROR, rilapitypes/RIL_UICCSLOT_OFF, RILUICCSLOTSTATE, RIL_UICCSLOT_OFF, RIL_UICCSLOT_NOT_READY, RILUICCSLOTSTATE enumeration [Network Drivers Starting with Windows Vista], rilapitypes/RILUICCSLOTSTATE, rilapitypes/RIL_UICCSLOT_NOT_READY, rilapitypes/RIL_UICCSLOT_ACTIVE, RIL_UICCSLOT_ACTIVE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: rilapitypes.h
+req.include-header: Rilapitypes.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	rilapitypes.h
+apiname:
+-	RILUICCSLOTSTATE
+product: Windows
+targetos: Windows
+req.typenames: RILUICCSLOTSTATE
+req.product: Windows 10 or later.
 ---
 
 # RILUICCSLOTSTATE Enumeration
@@ -58,41 +63,41 @@ enum RILUICCSLOTSTATE {
 ## Constants
 
 <table>
-
-<tr>
-<td>RIL_UICCSLOT_ACTIVE</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_UICCSLOT_EMPTY</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_UICCSLOT_ERROR</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_UICCSLOT_MAX</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_UICCSLOT_NOT_READY</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_UICCSLOT_OFF</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_UICCSLOT_OFF_EMPTY</td>
-<td></td>
-</tr>
+            
+                <tr>
+                    <td>RIL_UICCSLOT_ACTIVE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_UICCSLOT_EMPTY</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_UICCSLOT_ERROR</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_UICCSLOT_MAX</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_UICCSLOT_NOT_READY</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_UICCSLOT_OFF</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_UICCSLOT_OFF_EMPTY</td>
+                    <td></td>
+                </tr>
 </table>
 
 
@@ -101,9 +106,9 @@ enum RILUICCSLOTSTATE {
 | ---- |:---- |
 | **Header** | rilapitypes.h (include Rilapitypes.h) |
 
-## See Also
+    ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn946509">Cellular COM enumerations</a>
+        <a href="https://msdn.microsoft.com/library/windows/hardware/dn946509">Cellular COM enumerations</a>
 
  
 

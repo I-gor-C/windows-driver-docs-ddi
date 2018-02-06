@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisMAllocatePort
-title : NdisMAllocatePort function
-author : windows-driver-content
-description : The NdisMAllocatePort function allocates an NDIS port that is associated with a miniport adapter.
-old-location : netvista\ndismallocateport.htm
-old-project : netvista
-ms.assetid : ca3a2a12-ea80-4f77-9742-b0440fb441f7
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NdisMAllocatePort, ndis_ports_ref_c74ffd82-73c0-4e48-98da-d17ddf7976ae.xml, netvista.ndismallocateport, ndis/NdisMAllocatePort, NdisMAllocatePort function [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisMAllocatePort
+title: NdisMAllocatePort function
+author: windows-driver-content
+description: The NdisMAllocatePort function allocates an NDIS port that is associated with a miniport adapter.
+old-location: netvista\ndismallocateport.htm
+old-project: netvista
+ms.assetid: ca3a2a12-ea80-4f77-9742-b0440fb441f7
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NdisMAllocatePort, ndis_ports_ref_c74ffd82-73c0-4e48-98da-d17ddf7976ae.xml, netvista.ndismallocateport, ndis/NdisMAllocatePort, NdisMAllocatePort function [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisMAllocatePort
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

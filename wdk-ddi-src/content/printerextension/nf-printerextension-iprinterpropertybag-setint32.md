@@ -1,42 +1,47 @@
 ---
-UID : NF:printerextension.IPrinterPropertyBag.SetInt32
-title : IPrinterPropertyBag::SetInt32 method
-author : windows-driver-content
-description : Writes an integer property.
-old-location : print\iprinterpropertybag_setint32.htm
-old-project : print
-ms.assetid : 9E6B55C3-C177-4C07-9AB5-7C743CE47016
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : IPrinterPropertyBag interface [Print Devices], SetInt32 method, IPrinterPropertyBag::SetInt32, printerextension/IPrinterPropertyBag::SetInt32, IPrinterPropertyBag, SetInt32 method [Print Devices], print.iprinterpropertybag_setint32, SetInt32, SetInt32 method [Print Devices], IPrinterPropertyBag interface
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : printerextension.h
-req.include-header : Printerextension.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : printerextension.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PrintSchemaSelectionType
-req.product : Windows 10 or later.
+UID: NF:printerextension.IPrinterPropertyBag.SetInt32
+title: IPrinterPropertyBag::SetInt32 method
+author: windows-driver-content
+description: Writes an integer property.
+old-location: print\iprinterpropertybag_setint32.htm
+old-project: print
+ms.assetid: 9E6B55C3-C177-4C07-9AB5-7C743CE47016
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: IPrinterPropertyBag interface [Print Devices], SetInt32 method, IPrinterPropertyBag::SetInt32, printerextension/IPrinterPropertyBag::SetInt32, IPrinterPropertyBag, SetInt32 method [Print Devices], print.iprinterpropertybag_setint32, SetInt32, SetInt32 method [Print Devices], IPrinterPropertyBag interface
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: printerextension.h
+req.include-header: Printerextension.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: printerextension.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Printerextension.h
+apiname:
+-	IPrinterPropertyBag.SetInt32
+product: Windows
+targetos: Windows
+req.typenames: PrintSchemaSelectionType
+req.product: Windows 10 or later.
 ---
 
 

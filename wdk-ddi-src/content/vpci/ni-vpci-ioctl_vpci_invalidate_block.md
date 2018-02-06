@@ -1,42 +1,47 @@
 ---
-UID : NI:vpci.IOCTL_VPCI_INVALIDATE_BLOCK
-title : IOCTL_VPCI_INVALIDATE_BLOCK
-author : windows-driver-content
-description : The driver for a PCI Express (PCIe) virtual function (VF) issues the IOCTL_VPCI_INVALIDATE_BLOCK IOCTL request in order to be notified of changes to data in one or more VF configuration blocks.
-old-location : pci\IOCTL_VPCI_INVALIDATE_BLOCK.htm
-old-project : PCI
-ms.assetid : 66D1626A-7F22-48B8-8DB3-7B6E1634BABE
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : PCI.IOCTL_VPCI_INVALIDATE_BLOCK, IOCTL_VPCI_INVALIDATE_BLOCK control code, IOCTL_VPCI_INVALIDATE_BLOCK, vpci/IOCTL_VPCI_INVALIDATE_BLOCK
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : vpci.h
-req.include-header : Wdm.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in Windows Server 2012 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : DISPATCH_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VMB_CHANNEL_STATE_CHANGE_CALLBACKS, *PVMB_CHANNEL_STATE_CHANGE_CALLBACKS
-req.product : Windows 10 or later.
+UID: NI:vpci.IOCTL_VPCI_INVALIDATE_BLOCK
+title: IOCTL_VPCI_INVALIDATE_BLOCK
+author: windows-driver-content
+description: The driver for a PCI Express (PCIe) virtual function (VF) issues the IOCTL_VPCI_INVALIDATE_BLOCK IOCTL request in order to be notified of changes to data in one or more VF configuration blocks.
+old-location: pci\IOCTL_VPCI_INVALIDATE_BLOCK.htm
+old-project: PCI
+ms.assetid: 66D1626A-7F22-48B8-8DB3-7B6E1634BABE
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: PCI.IOCTL_VPCI_INVALIDATE_BLOCK, IOCTL_VPCI_INVALIDATE_BLOCK control code, IOCTL_VPCI_INVALIDATE_BLOCK, vpci/IOCTL_VPCI_INVALIDATE_BLOCK
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: vpci.h
+req.include-header: Wdm.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in Windows Server 2012 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: DISPATCH_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Vpci.h
+apiname:
+-	IOCTL_VPCI_INVALIDATE_BLOCK
+product: Windows
+targetos: Windows
+req.typenames: VMB_CHANNEL_STATE_CHANGE_CALLBACKS, *PVMB_CHANNEL_STATE_CHANGE_CALLBACKS
+req.product: Windows 10 or later.
 ---
 
 # IOCTL_VPCI_INVALIDATE_BLOCK IOCTL

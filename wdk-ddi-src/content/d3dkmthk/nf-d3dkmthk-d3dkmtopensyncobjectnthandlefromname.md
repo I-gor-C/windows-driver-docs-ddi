@@ -1,41 +1,48 @@
 ---
-UID : NF:d3dkmthk.D3DKMTOpenSyncObjectNtHandleFromName
-title : D3DKMTOpenSyncObjectNtHandleFromName function
-author : windows-driver-content
-description : D3DKMTOpenSyncObjectNtHandleFromName opens an NT handle for a named shared monitored fence object, similar to what D3DKMTOpenNtHandleFromName does for shared allocations.
-old-location : display\d3dkmtopensyncobjectnthandlefromname.htm
-old-project : display
-ms.assetid : 29EF6C90-E25F-4E03-8834-EC2546B670AA
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DKMTOpenSyncObjectNtHandleFromName function [Display Devices], display.d3dkmtopensyncobjectnthandlefromname, d3dkmthk/D3DKMTOpenSyncObjectNtHandleFromName, D3DKMTOpenSyncObjectNtHandleFromName
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Universal
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : GDI32.lib
-req.dll : GDI32.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_DRIVERVERSION
+UID: NF:d3dkmthk.D3DKMTOpenSyncObjectNtHandleFromName
+title: D3DKMTOpenSyncObjectNtHandleFromName function
+author: windows-driver-content
+description: D3DKMTOpenSyncObjectNtHandleFromName opens an NT handle for a named shared monitored fence object, similar to what D3DKMTOpenNtHandleFromName does for shared allocations.
+old-location: display\d3dkmtopensyncobjectnthandlefromname.htm
+old-project: display
+ms.assetid: 29EF6C90-E25F-4E03-8834-EC2546B670AA
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DKMTOpenSyncObjectNtHandleFromName function [Display Devices], display.d3dkmtopensyncobjectnthandlefromname, d3dkmthk/D3DKMTOpenSyncObjectNtHandleFromName, D3DKMTOpenSyncObjectNtHandleFromName
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Universal
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: GDI32.lib
+req.dll: GDI32.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	GDI32.dll
+-	API-MS-Win-DX-D3DKMT-L1-1-1.dll
+-	API-MS-Win-DX-D3DKMT-L1-1-2.dll
+apiname:
+-	D3DKMTOpenSyncObjectNtHandleFromName
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_DRIVERVERSION
 ---
 
 

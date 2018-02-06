@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._D3DDDIARG_DISCARD
-title : "_D3DDDIARG_DISCARD"
-author : windows-driver-content
-description : Defines video display memory that can be discarded because the contents are no longer needed.
-old-location : display\d3dddiarg_discard.htm
-old-project : display
-ms.assetid : 6efee74e-9e82-4631-8360-19061b0c015d
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DDDIARG_DISCARD, d3dumddi/D3DDDIARG_DISCARD, D3DDDIARG_DISCARD structure [Display Devices], display.d3dddiarg_discard, _D3DDDIARG_DISCARD
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDIARG_DISCARD
+UID: NS:d3dumddi._D3DDDIARG_DISCARD
+title: "_D3DDDIARG_DISCARD"
+author: windows-driver-content
+description: Defines video display memory that can be discarded because the contents are no longer needed.
+old-location: display\d3dddiarg_discard.htm
+old-project: display
+ms.assetid: 6efee74e-9e82-4631-8360-19061b0c015d
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DDDIARG_DISCARD, d3dumddi/D3DDDIARG_DISCARD, D3DDDIARG_DISCARD structure [Display Devices], display.d3dddiarg_discard, _D3DDDIARG_DISCARD
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	D3dumddi.h
+apiname:
+-	D3DDDIARG_DISCARD
+product: Windows
+targetos: Windows
+req.typenames: D3DDDIARG_DISCARD
 ---
 
 # _D3DDDIARG_DISCARD structure

@@ -1,42 +1,47 @@
 ---
-UID : NC:wlanihv.DOT11EXT_NIC_SPECIFIC_EXTENSION
-title : DOT11EXT_NIC_SPECIFIC_EXTENSION
-author : windows-driver-content
-description : Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
-old-location : netvista\dot11extnicspecificextension.htm
-old-project : netvista
-ms.assetid : e588db31-d6d7-4b79-80f5-128c6d618ab6
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.dot11extnicspecificextension, Dot11ExtNicSpecificExtension callback function [Network Drivers Starting with Windows Vista], Dot11ExtNicSpecificExtension, DOT11EXT_NIC_SPECIFIC_EXTENSION, DOT11EXT_NIC_SPECIFIC_EXTENSION, wlanihv/Dot11ExtNicSpecificExtension, Native_802.11_IHV_Ext_cab7d3ba-3192-4fb5-8827-f0c4b77bcb20.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wlanihv.h
-req.include-header : Wlanihv.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating   systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDRIVER_INFO_8W, DRIVER_INFO_8W, *LPDRIVER_INFO_8W"
-req.product : Windows 10 or later.
+UID: NC:wlanihv.DOT11EXT_NIC_SPECIFIC_EXTENSION
+title: DOT11EXT_NIC_SPECIFIC_EXTENSION
+author: windows-driver-content
+description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+old-location: netvista\dot11extnicspecificextension.htm
+old-project: netvista
+ms.assetid: e588db31-d6d7-4b79-80f5-128c6d618ab6
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.dot11extnicspecificextension, Dot11ExtNicSpecificExtension callback function [Network Drivers Starting with Windows Vista], Dot11ExtNicSpecificExtension, DOT11EXT_NIC_SPECIFIC_EXTENSION, DOT11EXT_NIC_SPECIFIC_EXTENSION, wlanihv/Dot11ExtNicSpecificExtension, Native_802.11_IHV_Ext_cab7d3ba-3192-4fb5-8827-f0c4b77bcb20.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wlanihv.h
+req.include-header: Wlanihv.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	wlanihv.h
+apiname:
+-	Dot11ExtNicSpecificExtension
+product: Windows
+targetos: Windows
+req.typenames: "*PDRIVER_INFO_8W, DRIVER_INFO_8W, *LPDRIVER_INFO_8W"
+req.product: Windows 10 or later.
 ---
 
 

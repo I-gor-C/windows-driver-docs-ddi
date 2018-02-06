@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddndis._NDIS_RECEIVE_HASH_PARAMETERS
-title : "_NDIS_RECEIVE_HASH_PARAMETERS"
-author : windows-driver-content
-description : The NDIS_RECEIVE_HASH_PARAMETERS structure specifies the receive hash parameters for a miniport adapter that supports receive hash calculations.
-old-location : netvista\ndis_receive_hash_parameters.htm
-old-project : netvista
-ms.assetid : 02c333d3-9ea7-4d24-9e09-32943c00d6a5
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NDIS_RECEIVE_HASH_PARAMETERS structure [Network Drivers Starting with Windows Vista], receive_scaling_structures_ref_80a59146-35c0-44f9-9001-142356cdccdf.xml, *PNDIS_RECEIVE_HASH_PARAMETERS, NDIS_RECEIVE_HASH_PARAMETERS, PNDIS_RECEIVE_HASH_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], netvista.ndis_receive_hash_parameters, PNDIS_RECEIVE_HASH_PARAMETERS, _NDIS_RECEIVE_HASH_PARAMETERS, ntddndis/PNDIS_RECEIVE_HASH_PARAMETERS, ntddndis/NDIS_RECEIVE_HASH_PARAMETERS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PNDIS_RECEIVE_HASH_PARAMETERS, NDIS_RECEIVE_HASH_PARAMETERS"
+UID: NS:ntddndis._NDIS_RECEIVE_HASH_PARAMETERS
+title: "_NDIS_RECEIVE_HASH_PARAMETERS"
+author: windows-driver-content
+description: The NDIS_RECEIVE_HASH_PARAMETERS structure specifies the receive hash parameters for a miniport adapter that supports receive hash calculations.
+old-location: netvista\ndis_receive_hash_parameters.htm
+old-project: netvista
+ms.assetid: 02c333d3-9ea7-4d24-9e09-32943c00d6a5
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NDIS_RECEIVE_HASH_PARAMETERS structure [Network Drivers Starting with Windows Vista], receive_scaling_structures_ref_80a59146-35c0-44f9-9001-142356cdccdf.xml, *PNDIS_RECEIVE_HASH_PARAMETERS, NDIS_RECEIVE_HASH_PARAMETERS, PNDIS_RECEIVE_HASH_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], netvista.ndis_receive_hash_parameters, PNDIS_RECEIVE_HASH_PARAMETERS, _NDIS_RECEIVE_HASH_PARAMETERS, ntddndis/PNDIS_RECEIVE_HASH_PARAMETERS, ntddndis/NDIS_RECEIVE_HASH_PARAMETERS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddndis.h
+apiname:
+-	NDIS_RECEIVE_HASH_PARAMETERS
+product: Windows
+targetos: Windows
+req.typenames: "*PNDIS_RECEIVE_HASH_PARAMETERS, NDIS_RECEIVE_HASH_PARAMETERS"
 ---
 
 # _NDIS_RECEIVE_HASH_PARAMETERS structure

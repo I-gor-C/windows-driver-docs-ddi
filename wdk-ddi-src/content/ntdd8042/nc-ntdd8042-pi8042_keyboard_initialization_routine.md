@@ -1,41 +1,46 @@
 ---
-UID : NC:ntdd8042.PI8042_KEYBOARD_INITIALIZATION_ROUTINE
-title : PI8042_KEYBOARD_INITIALIZATION_ROUTINE
-author : windows-driver-content
-description : A PI8042_KEYBOARD_INITIALIZATION_ROUTINE-typed callback routine supplements the default initialization of a keyboard device by I8042prt.
-old-location : hid\pi8042_keyboard_initialization_routine.htm
-old-project : hid
-ms.assetid : bc1c82f0-f68c-433c-87f0-16c687d18557
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : hid.pi8042_keyboard_initialization_routine, KeyboardInitializationRoutine callback function [Human Input Devices], KeyboardInitializationRoutine, PI8042_KEYBOARD_INITIALIZATION_ROUTINE, PI8042_KEYBOARD_INITIALIZATION_ROUTINE, ntdd8042/KeyboardInitializationRoutine, i8042ref_4bc54efc-bd3d-4091-a8c7-64631d187d20.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ntdd8042.h
-req.include-header : Ntdd8042.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : MSFC_VirtualFibrePortAttributes, *PMSFC_VirtualFibrePortAttributes
+UID: NC:ntdd8042.PI8042_KEYBOARD_INITIALIZATION_ROUTINE
+title: PI8042_KEYBOARD_INITIALIZATION_ROUTINE
+author: windows-driver-content
+description: A PI8042_KEYBOARD_INITIALIZATION_ROUTINE-typed callback routine supplements the default initialization of a keyboard device by I8042prt.
+old-location: hid\pi8042_keyboard_initialization_routine.htm
+old-project: hid
+ms.assetid: bc1c82f0-f68c-433c-87f0-16c687d18557
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: hid.pi8042_keyboard_initialization_routine, KeyboardInitializationRoutine callback function [Human Input Devices], KeyboardInitializationRoutine, PI8042_KEYBOARD_INITIALIZATION_ROUTINE, PI8042_KEYBOARD_INITIALIZATION_ROUTINE, ntdd8042/KeyboardInitializationRoutine, i8042ref_4bc54efc-bd3d-4091-a8c7-64631d187d20.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ntdd8042.h
+req.include-header: Ntdd8042.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	ntdd8042.h
+apiname:
+-	KeyboardInitializationRoutine
+product: Windows
+targetos: Windows
+req.typenames: MSFC_VirtualFibrePortAttributes, *PMSFC_VirtualFibrePortAttributes
 ---
 
 

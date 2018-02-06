@@ -1,41 +1,46 @@
 ---
-UID : NF:ndischimney.NdisMInitiateOffloadComplete
-title : NdisMInitiateOffloadComplete function
-author : windows-driver-content
-description : An offload target calls the NdisMInitiateOffloadComplete function to complete an offload operation that was initiated by a previous call to the MiniportInitiateOffload function.
-old-location : netvista\ndisminitiateoffloadcomplete.htm
-old-project : netvista
-ms.assetid : 983b2e04-1563-4f2e-85a7-8fd93ec1cd8c
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : ndischimney/NdisMInitiateOffloadComplete, NdisMInitiateOffloadComplete function [Network Drivers Starting with Windows Vista], NdisMInitiateOffloadComplete, tcp_chim_ndis_func_e5917638-7b7e-49e6-afad-63bbb3490cd9.xml, netvista.ndisminitiateoffloadcomplete
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndischimney.h
-req.include-header : Ndischimney.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PD_BUFFER_VIRTUAL_SUBNET_INFO
+UID: NF:ndischimney.NdisMInitiateOffloadComplete
+title: NdisMInitiateOffloadComplete function
+author: windows-driver-content
+description: An offload target calls the NdisMInitiateOffloadComplete function to complete an offload operation that was initiated by a previous call to the MiniportInitiateOffload function.
+old-location: netvista\ndisminitiateoffloadcomplete.htm
+old-project: netvista
+ms.assetid: 983b2e04-1563-4f2e-85a7-8fd93ec1cd8c
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: ndischimney/NdisMInitiateOffloadComplete, NdisMInitiateOffloadComplete function [Network Drivers Starting with Windows Vista], NdisMInitiateOffloadComplete, tcp_chim_ndis_func_e5917638-7b7e-49e6-afad-63bbb3490cd9.xml, netvista.ndisminitiateoffloadcomplete
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndischimney.h
+req.include-header: Ndischimney.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndischimney.h
+apiname:
+-	NdisMInitiateOffloadComplete
+product: Windows
+targetos: Windows
+req.typenames: PD_BUFFER_VIRTUAL_SUBNET_INFO
 ---
 
 

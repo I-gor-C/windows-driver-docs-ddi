@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddcdvd.IOCTL_AACS_READ_MEDIA_KEY_BLOCK
-title : IOCTL_AACS_READ_MEDIA_KEY_BLOCK
-author : windows-driver-content
-description : Queries the logical unit for the Media Key Block (MKB).
-old-location : storage\ioctl_aacs_read_media_key_block.htm
-old-project : storage
-ms.assetid : 08852f41-1836-4c55-bf6f-0246caa2c8bd
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_aacs_read_media_key_block, IOCTL_AACS_READ_MEDIA_KEY_BLOCK control code [Storage Devices], IOCTL_AACS_READ_MEDIA_KEY_BLOCK, ntddcdvd/IOCTL_AACS_READ_MEDIA_KEY_BLOCK, k307_0e90884e-4c78-4fd5-b30c-eed14d73ba5e.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddcdvd.h
-req.include-header : Ntddcdvd.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DVD_STRUCTURE_FORMAT, *PDVD_STRUCTURE_FORMAT
+UID: NI:ntddcdvd.IOCTL_AACS_READ_MEDIA_KEY_BLOCK
+title: IOCTL_AACS_READ_MEDIA_KEY_BLOCK
+author: windows-driver-content
+description: Queries the logical unit for the Media Key Block (MKB).
+old-location: storage\ioctl_aacs_read_media_key_block.htm
+old-project: storage
+ms.assetid: 08852f41-1836-4c55-bf6f-0246caa2c8bd
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_aacs_read_media_key_block, IOCTL_AACS_READ_MEDIA_KEY_BLOCK control code [Storage Devices], IOCTL_AACS_READ_MEDIA_KEY_BLOCK, ntddcdvd/IOCTL_AACS_READ_MEDIA_KEY_BLOCK, k307_0e90884e-4c78-4fd5-b30c-eed14d73ba5e.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddcdvd.h
+req.include-header: Ntddcdvd.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddcdvd.h
+apiname:
+-	IOCTL_AACS_READ_MEDIA_KEY_BLOCK
+product: Windows
+targetos: Windows
+req.typenames: DVD_STRUCTURE_FORMAT, *PDVD_STRUCTURE_FORMAT
 ---
 
 # IOCTL_AACS_READ_MEDIA_KEY_BLOCK IOCTL

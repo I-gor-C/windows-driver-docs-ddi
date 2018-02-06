@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisQueryAdapterInstanceName
-title : NdisQueryAdapterInstanceName function
-author : windows-driver-content
-description : The NdisQueryAdapterInstanceName function retrieves the friendly name of a physical NIC or a virtual adapter that the calling protocol driver is bound to.
-old-location : netvista\ndisqueryadapterinstancename.htm
-old-project : netvista
-ms.assetid : bd6fade6-9b9b-4b38-8e53-c70c40c1165f
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : protocol_ndis_functions_ref_e9e2070d-3b82-43a6-8964-92296de4c896.xml, NdisQueryAdapterInstanceName, netvista.ndisqueryadapterinstancename, NdisQueryAdapterInstanceName function [Network Drivers Starting with Windows Vista], ndis/NdisQueryAdapterInstanceName
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisQueryAdapterInstanceName   (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisQueryAdapterInstanceName   (NDIS 5.1)) in Windows XP.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_Miscellaneous_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisQueryAdapterInstanceName
+title: NdisQueryAdapterInstanceName function
+author: windows-driver-content
+description: The NdisQueryAdapterInstanceName function retrieves the friendly name of a physical NIC or a virtual adapter that the calling protocol driver is bound to.
+old-location: netvista\ndisqueryadapterinstancename.htm
+old-project: netvista
+ms.assetid: bd6fade6-9b9b-4b38-8e53-c70c40c1165f
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: protocol_ndis_functions_ref_e9e2070d-3b82-43a6-8964-92296de4c896.xml, NdisQueryAdapterInstanceName, netvista.ndisqueryadapterinstancename, NdisQueryAdapterInstanceName function [Network Drivers Starting with Windows Vista], ndis/NdisQueryAdapterInstanceName
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisQueryAdapterInstanceName   (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisQueryAdapterInstanceName   (NDIS 5.1)) in Windows XP.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_Miscellaneous_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisQueryAdapterInstanceName
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

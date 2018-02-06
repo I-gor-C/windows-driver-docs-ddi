@@ -1,41 +1,47 @@
 ---
-UID : NF:gpioclx.GPIO_CLX_UnregisterClient
-title : GPIO_CLX_UnregisterClient function
-author : windows-driver-content
-description : The GPIO_CLX_UnregisterClient method removes a general-purpose I/O (GPIO) controller driver's registration with the GPIO framework extension (GpioClx).
-old-location : gpio\gpio_clx_unregisterclient.htm
-old-project : GPIO
-ms.assetid : 2ECBF3D9-F613-4829-B2E0-FF5E21A596EC
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : GPIO.gpio_clx_unregisterclient, GPIO_CLX_UnregisterClient method [Parallel Ports], GPIO_CLX_UnregisterClient, gpioclx/GPIO_CLX_UnregisterClient
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : gpioclx.h
-req.include-header : 
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Msgpioclxstub.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PGPIO_CONNECT_IO_PINS_MODE, GPIO_CONNECT_IO_PINS_MODE"
+UID: NF:gpioclx.GPIO_CLX_UnregisterClient
+title: GPIO_CLX_UnregisterClient function
+author: windows-driver-content
+description: The GPIO_CLX_UnregisterClient method removes a general-purpose I/O (GPIO) controller driver's registration with the GPIO framework extension (GpioClx).
+old-location: gpio\gpio_clx_unregisterclient.htm
+old-project: GPIO
+ms.assetid: 2ECBF3D9-F613-4829-B2E0-FF5E21A596EC
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: GPIO.gpio_clx_unregisterclient, GPIO_CLX_UnregisterClient method [Parallel Ports], GPIO_CLX_UnregisterClient, gpioclx/GPIO_CLX_UnregisterClient
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: gpioclx.h
+req.include-header: 
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Msgpioclxstub.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Msgpioclxstub.lib
+-	Msgpioclxstub.dll
+apiname:
+-	GPIO_CLX_UnregisterClient
+product: Windows
+targetos: Windows
+req.typenames: "*PGPIO_CONNECT_IO_PINS_MODE, GPIO_CONNECT_IO_PINS_MODE"
 ---
 
 

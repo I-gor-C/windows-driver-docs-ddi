@@ -1,41 +1,46 @@
 ---
-UID : NS:ks._KSFILTER_DESCRIPTOR
-title : "_KSFILTER_DESCRIPTOR"
-author : windows-driver-content
-description : The KSFILTER_DESCRIPTOR structure describes the characteristics of a filter created by a given filter factory.
-old-location : stream\ksfilter_descriptor.htm
-old-project : stream
-ms.assetid : c9e3c1ea-a8c9-45db-a31c-7f8e95cf6b2b
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : avstruct_f9b8c041-9001-42a5-989e-3de86daa56fe.xml, _KSFILTER_DESCRIPTOR, stream.ksfilter_descriptor, ks/PKSFILTER_DESCRIPTOR, PKSFILTER_DESCRIPTOR structure pointer [Streaming Media Devices], KSFILTER_DESCRIPTOR, ks/KSFILTER_DESCRIPTOR, PKSFILTER_DESCRIPTOR, KSFILTER_DESCRIPTOR structure [Streaming Media Devices], *PKSFILTER_DESCRIPTOR
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and in Microsoft DirectX 8.0 and later versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KSFILTER_DESCRIPTOR, *PKSFILTER_DESCRIPTOR
+UID: NS:ks._KSFILTER_DESCRIPTOR
+title: "_KSFILTER_DESCRIPTOR"
+author: windows-driver-content
+description: The KSFILTER_DESCRIPTOR structure describes the characteristics of a filter created by a given filter factory.
+old-location: stream\ksfilter_descriptor.htm
+old-project: stream
+ms.assetid: c9e3c1ea-a8c9-45db-a31c-7f8e95cf6b2b
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: avstruct_f9b8c041-9001-42a5-989e-3de86daa56fe.xml, _KSFILTER_DESCRIPTOR, stream.ksfilter_descriptor, ks/PKSFILTER_DESCRIPTOR, PKSFILTER_DESCRIPTOR structure pointer [Streaming Media Devices], KSFILTER_DESCRIPTOR, ks/KSFILTER_DESCRIPTOR, PKSFILTER_DESCRIPTOR, KSFILTER_DESCRIPTOR structure [Streaming Media Devices], *PKSFILTER_DESCRIPTOR
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and in Microsoft DirectX 8.0 and later versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	KSFILTER_DESCRIPTOR
+product: Windows
+targetos: Windows
+req.typenames: KSFILTER_DESCRIPTOR, *PKSFILTER_DESCRIPTOR
 ---
 
 # _KSFILTER_DESCRIPTOR structure

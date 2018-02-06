@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddtape.IOCTL_TAPE_CREATE_PARTITION
-title : IOCTL_TAPE_CREATE_PARTITION
-author : windows-driver-content
-description : Creates the specified number of fixed, select, or initiator partition(s) of the given size on the media.
-old-location : storage\ioctl_tape_create_partition.htm
-old-project : storage
-ms.assetid : da220281-a08d-4aeb-abb4-471aacb2461a
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_tape_create_partition, IOCTL_TAPE_CREATE_PARTITION control code [Storage Devices], IOCTL_TAPE_CREATE_PARTITION, ntddtape/IOCTL_TAPE_CREATE_PARTITION, k307_d1911c51-33f1-4c45-bbf0-ace7714fa53f.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddtape.h
-req.include-header : Ntddtape.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TAPE_DRIVE_PROBLEM_TYPE
+UID: NI:ntddtape.IOCTL_TAPE_CREATE_PARTITION
+title: IOCTL_TAPE_CREATE_PARTITION
+author: windows-driver-content
+description: Creates the specified number of fixed, select, or initiator partition(s) of the given size on the media.
+old-location: storage\ioctl_tape_create_partition.htm
+old-project: storage
+ms.assetid: da220281-a08d-4aeb-abb4-471aacb2461a
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_tape_create_partition, IOCTL_TAPE_CREATE_PARTITION control code [Storage Devices], IOCTL_TAPE_CREATE_PARTITION, ntddtape/IOCTL_TAPE_CREATE_PARTITION, k307_d1911c51-33f1-4c45-bbf0-ace7714fa53f.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddtape.h
+req.include-header: Ntddtape.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddtape.h
+apiname:
+-	IOCTL_TAPE_CREATE_PARTITION
+product: Windows
+targetos: Windows
+req.typenames: TAPE_DRIVE_PROBLEM_TYPE
 ---
 
 # IOCTL_TAPE_CREATE_PARTITION IOCTL

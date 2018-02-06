@@ -1,41 +1,46 @@
 ---
-UID : NI:ehstorioctl.IOCTL_EHSTOR_DRIVER_PERFORM_AUTHZ
-title : IOCTL_EHSTOR_DRIVER_PERFORM_AUTHZ
-author : windows-driver-content
-description : IOCTL_EHSTOR_DRIVER_PERFORM_AUTHZ is sent by the Enhanced Storage Class Driver (EHSTOR) to the silo driver to initiate on-demand authentication or deauthentication.
-old-location : storage\ioctl_ehstor_driver_perform_authz.htm
-old-project : storage
-ms.assetid : 689EE1EB-820A-4873-92C5-08F5F1873825
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_ehstor_driver_perform_authz, IOCTL_EHSTOR_DRIVER_PERFORM_AUTHZ control code [Storage Devices], IOCTL_EHSTOR_DRIVER_PERFORM_AUTHZ, ehstorioctl/IOCTL_EHSTOR_DRIVER_PERFORM_AUTHZ
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ehstorioctl.h
-req.include-header : EhStorIoctl.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows 8
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PDO_TYPE
+UID: NI:ehstorioctl.IOCTL_EHSTOR_DRIVER_PERFORM_AUTHZ
+title: IOCTL_EHSTOR_DRIVER_PERFORM_AUTHZ
+author: windows-driver-content
+description: IOCTL_EHSTOR_DRIVER_PERFORM_AUTHZ is sent by the Enhanced Storage Class Driver (EHSTOR) to the silo driver to initiate on-demand authentication or deauthentication.
+old-location: storage\ioctl_ehstor_driver_perform_authz.htm
+old-project: storage
+ms.assetid: 689EE1EB-820A-4873-92C5-08F5F1873825
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_ehstor_driver_perform_authz, IOCTL_EHSTOR_DRIVER_PERFORM_AUTHZ control code [Storage Devices], IOCTL_EHSTOR_DRIVER_PERFORM_AUTHZ, ehstorioctl/IOCTL_EHSTOR_DRIVER_PERFORM_AUTHZ
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ehstorioctl.h
+req.include-header: EhStorIoctl.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows 8
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	EhStorIoctl.h
+apiname:
+-	IOCTL_EHSTOR_DRIVER_PERFORM_AUTHZ
+product: Windows
+targetos: Windows
+req.typenames: PDO_TYPE
 ---
 
 # IOCTL_EHSTOR_DRIVER_PERFORM_AUTHZ IOCTL

@@ -1,41 +1,46 @@
 ---
-UID : NE:d3dkmdt._DXGKMDT_OPM_ACP_PROTECTION_LEVEL
-title : "_DXGKMDT_OPM_ACP_PROTECTION_LEVEL"
-author : windows-driver-content
-description : The DXGKMDT_OPM_ACP_PROTECTION_LEVEL enumeration indicates the protection levels for a protected output that supports Analog Copy Protection (ACP).
-old-location : display\dxgkmdt_opm_acp_protection_level.htm
-old-project : display
-ms.assetid : 9a7bceab-2bf7-4148-b62a-7d03f61aa9fa
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DXGKMDT_OPM_ACP_FORCE_ULONG, DmEnums_8ddb5546-7305-4b58-85e9-8e38a9bdf8af.xml, display.dxgkmdt_opm_acp_protection_level, DXGKMDT_OPM_ACP_LEVEL_THREE, DXGKMDT_OPM_ACP_PROTECTION_LEVEL, d3dkmdt/DXGKMDT_OPM_ACP_FORCE_ULONG, d3dkmdt/DXGKMDT_OPM_ACP_PROTECTION_LEVEL, d3dkmdt/DXGKMDT_OPM_ACP_LEVEL_ONE, DXGKMDT_OPM_ACP_LEVEL_ONE, d3dkmdt/DXGKMDT_OPM_ACP_LEVEL_THREE, _DXGKMDT_OPM_ACP_PROTECTION_LEVEL, DXGKMDT_OPM_ACP_PROTECTION_LEVEL enumeration [Display Devices], DXGKMDT_OPM_ACP_OFF, d3dkmdt/DXGKMDT_OPM_ACP_LEVEL_TWO, d3dkmdt/DXGKMDT_OPM_ACP_OFF, DXGKMDT_OPM_ACP_LEVEL_TWO
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : d3dkmdt.h
-req.include-header : D3dkmdt.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGKMDT_OPM_ACP_PROTECTION_LEVEL
+UID: NE:d3dkmdt._DXGKMDT_OPM_ACP_PROTECTION_LEVEL
+title: "_DXGKMDT_OPM_ACP_PROTECTION_LEVEL"
+author: windows-driver-content
+description: The DXGKMDT_OPM_ACP_PROTECTION_LEVEL enumeration indicates the protection levels for a protected output that supports Analog Copy Protection (ACP).
+old-location: display\dxgkmdt_opm_acp_protection_level.htm
+old-project: display
+ms.assetid: 9a7bceab-2bf7-4148-b62a-7d03f61aa9fa
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DXGKMDT_OPM_ACP_FORCE_ULONG, DmEnums_8ddb5546-7305-4b58-85e9-8e38a9bdf8af.xml, display.dxgkmdt_opm_acp_protection_level, DXGKMDT_OPM_ACP_LEVEL_THREE, DXGKMDT_OPM_ACP_PROTECTION_LEVEL, d3dkmdt/DXGKMDT_OPM_ACP_FORCE_ULONG, d3dkmdt/DXGKMDT_OPM_ACP_PROTECTION_LEVEL, d3dkmdt/DXGKMDT_OPM_ACP_LEVEL_ONE, DXGKMDT_OPM_ACP_LEVEL_ONE, d3dkmdt/DXGKMDT_OPM_ACP_LEVEL_THREE, _DXGKMDT_OPM_ACP_PROTECTION_LEVEL, DXGKMDT_OPM_ACP_PROTECTION_LEVEL enumeration [Display Devices], DXGKMDT_OPM_ACP_OFF, d3dkmdt/DXGKMDT_OPM_ACP_LEVEL_TWO, d3dkmdt/DXGKMDT_OPM_ACP_OFF, DXGKMDT_OPM_ACP_LEVEL_TWO
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: d3dkmdt.h
+req.include-header: D3dkmdt.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmdt.h
+apiname:
+-	DXGKMDT_OPM_ACP_PROTECTION_LEVEL
+product: Windows
+targetos: Windows
+req.typenames: DXGKMDT_OPM_ACP_PROTECTION_LEVEL
 ---
 
 # _DXGKMDT_OPM_ACP_PROTECTION_LEVEL Enumeration
@@ -55,36 +60,36 @@ typedef enum _DXGKMDT_OPM_ACP_PROTECTION_LEVEL {
 ## Constants
 
 <table>
-
-<tr>
-<td>DXGKMDT_OPM_ACP_FORCE_ULONG</td>
-<td>Forces this enumeration to compile to 32 bits in size. Without this value, some compilers would allow this enumeration to compile to a size other than 32 bits. You should not use this value.</td>
-</tr>
-
-<tr>
-<td>DXGKMDT_OPM_ACP_LEVEL_ONE</td>
-<td>Indicates that the signal from a video output is protected by the ACP level one protection scheme.</td>
-</tr>
-
-<tr>
-<td>DXGKMDT_OPM_ACP_LEVEL_THREE</td>
-<td>Indicates that the signal from a video output is protected by the ACP level three protection scheme.</td>
-</tr>
-
-<tr>
-<td>DXGKMDT_OPM_ACP_LEVEL_TWO</td>
-<td>Indicates that the signal from a video output is protected by the ACP level two protection scheme.</td>
-</tr>
-
-<tr>
-<td>DXGKMDT_OPM_ACP_OFF</td>
-<td>Indicates that the signal from a video output is not protected by any form of ACP.</td>
-</tr>
+            
+                <tr>
+                    <td>DXGKMDT_OPM_ACP_FORCE_ULONG</td>
+                    <td>Forces this enumeration to compile to 32 bits in size. Without this value, some compilers would allow this enumeration to compile to a size other than 32 bits. You should not use this value.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXGKMDT_OPM_ACP_LEVEL_ONE</td>
+                    <td>Indicates that the signal from a video output is protected by the ACP level one protection scheme.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXGKMDT_OPM_ACP_LEVEL_THREE</td>
+                    <td>Indicates that the signal from a video output is protected by the ACP level three protection scheme.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXGKMDT_OPM_ACP_LEVEL_TWO</td>
+                    <td>Indicates that the signal from a video output is protected by the ACP level two protection scheme.</td>
+                </tr>
+            
+                <tr>
+                    <td>DXGKMDT_OPM_ACP_OFF</td>
+                    <td>Indicates that the signal from a video output is not protected by any form of ACP.</td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-ACP protects analog TV signals. For example, a DVD player can use ACP to prevent a VCR from recording a copy of a DVD movie. Currently, OPM can use ACP to protect signals from composite outputs, S-Video outputs, or component outputs. For more information about ACP, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=71273">Rovi (formerly Macrovision)</a> website.
+        ACP protects analog TV signals. For example, a DVD player can use ACP to prevent a VCR from recording a copy of a DVD movie. Currently, OPM can use ACP to protect signals from composite outputs, S-Video outputs, or component outputs. For more information about ACP, see the <a href="http://go.microsoft.com/fwlink/p/?linkid=71273">Rovi (formerly Macrovision)</a> website.
 
 Display miniport drivers use the values in DXGKMDT_OPM_ACP_PROTECTION_LEVEL to report the virtual protection level of the protected output or the actual protection level of a physical connector through calls to the driver's <a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_get_information.md">DxgkDdiOPMGetInformation</a> and <a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_get_copp_compatible_information.md">DxgkDdiOPMGetCOPPCompatibleInformation</a> functions. The values in DXGKMDT_OPM_ACP_PROTECTION_LEVEL are also used to configure the protected output's new virtual protection level in a call to the driver's <a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_configure_protected_output.md">DxgkDdiOPMConfigureProtectedOutput</a> function.
 
@@ -94,9 +99,9 @@ Display miniport drivers use the values in DXGKMDT_OPM_ACP_PROTECTION_LEVEL to r
 | **Windows version** | Available in Windows Vista and later versions of the Windows operating systems. Available in Windows Vista and later versions of the Windows operating systems. |
 | **Header** | d3dkmdt.h (include D3dkmdt.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_get_copp_compatible_information.md">DxgkDdiOPMGetCOPPCompatibleInformation</a>
+        <a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_get_copp_compatible_information.md">DxgkDdiOPMGetCOPPCompatibleInformation</a>
 
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_opm_get_information.md">DxgkDdiOPMGetInformation</a>
 

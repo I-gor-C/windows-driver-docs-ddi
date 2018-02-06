@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dhal._DD_MULTISAMPLEQUALITYLEVELSDATA
-title : "_DD_MULTISAMPLEQUALITYLEVELSDATA"
-author : windows-driver-content
-description : DirectX 9.0 and later versions only. DD_MULTISAMPLEQUALITYLEVELSDATA is the data structure pointed to by the lpvData field of DD_GETDRIVERINFODATA for DD_GETDRIVERINFO2DATA queries with the type D3DGDI2_TYPE_GETMULTISAMPLEQUALITYLEVELS.
-old-location : display\dd_multisamplequalitylevelsdata.htm
-old-project : display
-ms.assetid : ff8bc5d8-5d65-4752-9318-f775394ae2b9
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3dhal/DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA structure [Display Devices], _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA, display.dd_multisamplequalitylevelsdata, d3dstrct_6a515881-91b7-4072-bf6c-4e10153c1124.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dhal.h
-req.include-header : D3dhal.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
+UID: NS:d3dhal._DD_MULTISAMPLEQUALITYLEVELSDATA
+title: "_DD_MULTISAMPLEQUALITYLEVELSDATA"
+author: windows-driver-content
+description: DirectX 9.0 and later versions only. DD_MULTISAMPLEQUALITYLEVELSDATA is the data structure pointed to by the lpvData field of DD_GETDRIVERINFODATA for DD_GETDRIVERINFO2DATA queries with the type D3DGDI2_TYPE_GETMULTISAMPLEQUALITYLEVELS.
+old-location: display\dd_multisamplequalitylevelsdata.htm
+old-project: display
+ms.assetid: ff8bc5d8-5d65-4752-9318-f775394ae2b9
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3dhal/DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA structure [Display Devices], _DD_MULTISAMPLEQUALITYLEVELSDATA, DD_MULTISAMPLEQUALITYLEVELSDATA, display.dd_multisamplequalitylevelsdata, d3dstrct_6a515881-91b7-4072-bf6c-4e10153c1124.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dhal.h
+req.include-header: D3dhal.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dhal.h
+apiname:
+-	DD_MULTISAMPLEQUALITYLEVELSDATA
+product: Windows
+targetos: Windows
+req.typenames: DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
 # _DD_MULTISAMPLEQUALITYLEVELSDATA structure

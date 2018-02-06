@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi_hwaccess.READ_PORT_BUFFER_UCHAR
-title : READ_PORT_BUFFER_UCHAR function
-author : windows-driver-content
-description : The READ_PORT_BUFFER_UCHAR function reads a number of bytes from the specified port address into a buffer.
-old-location : wdf\read_port_buffer_uchar.htm
-old-project : wdf
-ms.assetid : CDA0A86B-94E7-4825-9826-0E12ECF42B57
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : umdf.read_port_buffer_uchar, READ_PORT_BUFFER_UCHAR, READ_PORT_BUFFER_UCHAR function, wdf.read_port_buffer_uchar, wudfddi_hwaccess/READ_PORT_BUFFER_UCHAR
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wudfddi_hwaccess.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.11
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : UMDF_IO_TARGET_OPEN_PARAMS, *PUMDF_IO_TARGET_OPEN_PARAMS
-req.product : Windows 10 or later.
+UID: NF:wudfddi_hwaccess.READ_PORT_BUFFER_UCHAR
+title: READ_PORT_BUFFER_UCHAR function
+author: windows-driver-content
+description: The READ_PORT_BUFFER_UCHAR function reads a number of bytes from the specified port address into a buffer.
+old-location: wdf\read_port_buffer_uchar.htm
+old-project: wdf
+ms.assetid: CDA0A86B-94E7-4825-9826-0E12ECF42B57
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: umdf.read_port_buffer_uchar, READ_PORT_BUFFER_UCHAR, READ_PORT_BUFFER_UCHAR function, wdf.read_port_buffer_uchar, wudfddi_hwaccess/READ_PORT_BUFFER_UCHAR
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wudfddi_hwaccess.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.11
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wudfddi_hwaccess.h
+apiname:
+-	READ_PORT_BUFFER_UCHAR
+product: Windows
+targetos: Windows
+req.typenames: UMDF_IO_TARGET_OPEN_PARAMS, *PUMDF_IO_TARGET_OPEN_PARAMS
+req.product: Windows 10 or later.
 ---
 
 

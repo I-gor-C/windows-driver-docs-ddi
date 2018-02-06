@@ -1,42 +1,48 @@
 ---
-UID : NF:udecxusbdevice.UdecxUsbDevicePlugOutAndDelete
-title : UdecxUsbDevicePlugOutAndDelete function
-author : windows-driver-content
-description : Disconnects the virtual USB device.
-old-location : buses\udecxusbdeviceplugoutanddelete.htm
-old-project : usbref
-ms.assetid : 27816655-1FE9-44A0-81BB-59808FE6F064
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : UdecxUsbDevicePlugOutAndDelete, buses.udecxusbdeviceplugoutanddelete, UdecxUsbDevicePlugOutAndDelete function [Buses], udecxusbdevice/UdecxUsbDevicePlugOutAndDelete
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : udecxusbdevice.h
-req.include-header : Udecx.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 1.15
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Udecxstub.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUDECX_USB_DEVICE_WAKE_SETTING, UDECX_USB_DEVICE_WAKE_SETTING"
-req.product : Windows 10 or later.
+UID: NF:udecxusbdevice.UdecxUsbDevicePlugOutAndDelete
+title: UdecxUsbDevicePlugOutAndDelete function
+author: windows-driver-content
+description: Disconnects the virtual USB device.
+old-location: buses\udecxusbdeviceplugoutanddelete.htm
+old-project: usbref
+ms.assetid: 27816655-1FE9-44A0-81BB-59808FE6F064
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: UdecxUsbDevicePlugOutAndDelete, buses.udecxusbdeviceplugoutanddelete, UdecxUsbDevicePlugOutAndDelete function [Buses], udecxusbdevice/UdecxUsbDevicePlugOutAndDelete
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: udecxusbdevice.h
+req.include-header: Udecx.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 1.15
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Udecxstub.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Udecxstub.lib
+-	Udecxstub.dll
+apiname:
+-	UdecxUsbDevicePlugOutAndDelete
+product: Windows
+targetos: Windows
+req.typenames: "*PUDECX_USB_DEVICE_WAKE_SETTING, UDECX_USB_DEVICE_WAKE_SETTING"
+req.product: Windows 10 or later.
 ---
 
 

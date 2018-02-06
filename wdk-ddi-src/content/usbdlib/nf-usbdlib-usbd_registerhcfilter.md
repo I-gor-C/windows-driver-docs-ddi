@@ -1,42 +1,48 @@
 ---
-UID : NF:usbdlib.USBD_RegisterHcFilter
-title : USBD_RegisterHcFilter function
-author : windows-driver-content
-description : The USBD_RegisterHcFilter routine has been deprecated in Windows XP and later operating systems.
-old-location : buses\usbd_registerhcfilter.htm
-old-project : usbref
-ms.assetid : 2cc24024-75ec-45ba-867c-efc8e7da7587
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : usbdlib/USBD_RegisterHcFilter, USBD_RegisterHcFilter routine [Buses], usbfunc_de494163-188c-4356-bd91-c6fa38693d55.xml, buses.usbd_registerhcfilter, USBD_RegisterHcFilter
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : usbdlib.h
-req.include-header : Usbdlib.h
-req.target-type : Universal
-req.target-min-winverclnt : Deprecated.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Usbd.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : USBCAMD_DEVICE_DATA2, *PUSBCAMD_DEVICE_DATA2
-req.product : Windows 10 or later.
+UID: NF:usbdlib.USBD_RegisterHcFilter
+title: USBD_RegisterHcFilter function
+author: windows-driver-content
+description: The USBD_RegisterHcFilter routine has been deprecated in Windows XP and later operating systems.
+old-location: buses\usbd_registerhcfilter.htm
+old-project: usbref
+ms.assetid: 2cc24024-75ec-45ba-867c-efc8e7da7587
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: usbdlib/USBD_RegisterHcFilter, USBD_RegisterHcFilter routine [Buses], usbfunc_de494163-188c-4356-bd91-c6fa38693d55.xml, buses.usbd_registerhcfilter, USBD_RegisterHcFilter
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: usbdlib.h
+req.include-header: Usbdlib.h
+req.target-type: Universal
+req.target-min-winverclnt: Deprecated.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Usbd.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Usbd.lib
+-	Usbd.dll
+apiname:
+-	USBD_RegisterHcFilter
+product: Windows
+targetos: Windows
+req.typenames: USBCAMD_DEVICE_DATA2, *PUSBCAMD_DEVICE_DATA2
+req.product: Windows 10 or later.
 ---
 
 

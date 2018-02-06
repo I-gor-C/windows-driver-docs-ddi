@@ -1,41 +1,46 @@
 ---
-UID : NS:d3d10umddi.D3D10_1_DDI_BLEND_DESC
-title : D3D10_1_DDI_BLEND_DESC
-author : windows-driver-content
-description : The D3D10_1_DDI_BLEND_DESC structure describes a blend state.
-old-location : display\d3d10_1_ddi_blend_desc.htm
-old-project : display
-ms.assetid : e398b1a3-60bf-4a4a-b5c2-1dc11cf3dae1
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3D10_1_DDI_BLEND_DESC structure [Display Devices], d3d10umddi/D3D10_1_DDI_BLEND_DESC, display.d3d10_1_ddi_blend_desc, UMDisplayDriver_Dx10param_Structs_088d7013-3c56-4bfc-8e68-250b8e020a52.xml, D3D10_1_DDI_BLEND_DESC
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Windows
-req.target-min-winverclnt : D3D10_1_DDI_BLEND_DESC is supported on Windows Vista with Service Pack 1 (SP1) and later versions and Windows Server 2008 and later versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3D10_1_DDI_BLEND_DESC
+UID: NS:d3d10umddi.D3D10_1_DDI_BLEND_DESC
+title: D3D10_1_DDI_BLEND_DESC
+author: windows-driver-content
+description: The D3D10_1_DDI_BLEND_DESC structure describes a blend state.
+old-location: display\d3d10_1_ddi_blend_desc.htm
+old-project: display
+ms.assetid: e398b1a3-60bf-4a4a-b5c2-1dc11cf3dae1
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3D10_1_DDI_BLEND_DESC structure [Display Devices], d3d10umddi/D3D10_1_DDI_BLEND_DESC, display.d3d10_1_ddi_blend_desc, UMDisplayDriver_Dx10param_Structs_088d7013-3c56-4bfc-8e68-250b8e020a52.xml, D3D10_1_DDI_BLEND_DESC
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Windows
+req.target-min-winverclnt: D3D10_1_DDI_BLEND_DESC is supported on Windows Vista with Service Pack 1 (SP1) and later versions and Windows Server 2008 and later versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	D3D10_1_DDI_BLEND_DESC
+product: Windows
+targetos: Windows
+req.typenames: D3D10_1_DDI_BLEND_DESC
 ---
 
 # D3D10_1_DDI_BLEND_DESC structure

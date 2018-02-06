@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dkmddi.DXGKDDI_SETPOINTERPOSITION
-title : DXGKDDI_SETPOINTERPOSITION
-author : windows-driver-content
-description : The DxgkDdiSetPointerPosition function sets the location and visibility state of the mouse pointer.
-old-location : display\dxgkddisetpointerposition.htm
-old-project : display
-ms.assetid : b30e4f19-068c-4ab0-a2e9-b1f57592be1c
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkddisetpointerposition, DxgkDdiSetPointerPosition callback function [Display Devices], DxgkDdiSetPointerPosition, DXGKDDI_SETPOINTERPOSITION, DXGKDDI_SETPOINTERPOSITION, d3dkmddi/DxgkDdiSetPointerPosition, DmFunctions_1067a75d-aece-48c2-93c1-35465c57c07e.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
+UID: NC:d3dkmddi.DXGKDDI_SETPOINTERPOSITION
+title: DXGKDDI_SETPOINTERPOSITION
+author: windows-driver-content
+description: The DxgkDdiSetPointerPosition function sets the location and visibility state of the mouse pointer.
+old-location: display\dxgkddisetpointerposition.htm
+old-project: display
+ms.assetid: b30e4f19-068c-4ab0-a2e9-b1f57592be1c
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkddisetpointerposition, DxgkDdiSetPointerPosition callback function [Display Devices], DxgkDdiSetPointerPosition, DXGKDDI_SETPOINTERPOSITION, DXGKDDI_SETPOINTERPOSITION, d3dkmddi/DxgkDdiSetPointerPosition, DmFunctions_1067a75d-aece-48c2-93c1-35465c57c07e.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DxgkDdiSetPointerPosition
+product: Windows
+targetos: Windows
+req.typenames: DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
 

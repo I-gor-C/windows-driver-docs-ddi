@@ -1,41 +1,49 @@
 ---
-UID : NF:dbgeng.IDebugClient5.AbandonCurrentProcess
-title : IDebugClient5::AbandonCurrentProcess method
-author : windows-driver-content
-description : The AbandonCurrentProcess method removes the current process from the debugger engine's process list without detaching or terminating the process.
-old-location : debugger\abandoncurrentprocess.htm
-old-project : debugger
-ms.assetid : a6abbdb8-8d19-4ae0-8272-8faa87b8e409
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugClient3::AbandonCurrentProcess, AbandonCurrentProcess method [Windows Debugging], IDebugClient2 interface, IDebugClient5 interface [Windows Debugging], AbandonCurrentProcess method, IDebugClient4 interface [Windows Debugging], AbandonCurrentProcess method, AbandonCurrentProcess method [Windows Debugging], IDebugClient4 interface, IDebugClient5::AbandonCurrentProcess, debugger.abandoncurrentprocess, dbgeng/IDebugClient3::AbandonCurrentProcess, dbgeng/IDebugClient2::AbandonCurrentProcess, AbandonCurrentProcess method [Windows Debugging], dbgeng/IDebugClient5::AbandonCurrentProcess, IDebugClient3 interface [Windows Debugging], AbandonCurrentProcess method, AbandonCurrentProcess method [Windows Debugging], IDebugClient3 interface, AbandonCurrentProcess, IDebugClient_2a3f34d6-591b-4cae-bc28-2da5f05a9548.xml, dbgeng/IDebugClient4::AbandonCurrentProcess, IDebugClient4::AbandonCurrentProcess, IDebugClient2 interface [Windows Debugging], AbandonCurrentProcess method, IDebugClient2::AbandonCurrentProcess, AbandonCurrentProcess method [Windows Debugging], IDebugClient5 interface, IDebugClient5
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugClient5.AbandonCurrentProcess
+title: IDebugClient5::AbandonCurrentProcess method
+author: windows-driver-content
+description: The AbandonCurrentProcess method removes the current process from the debugger engine's process list without detaching or terminating the process.
+old-location: debugger\abandoncurrentprocess.htm
+old-project: debugger
+ms.assetid: a6abbdb8-8d19-4ae0-8272-8faa87b8e409
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugClient3::AbandonCurrentProcess, AbandonCurrentProcess method [Windows Debugging], IDebugClient2 interface, IDebugClient5 interface [Windows Debugging], AbandonCurrentProcess method, IDebugClient4 interface [Windows Debugging], AbandonCurrentProcess method, AbandonCurrentProcess method [Windows Debugging], IDebugClient4 interface, IDebugClient5::AbandonCurrentProcess, debugger.abandoncurrentprocess, dbgeng/IDebugClient3::AbandonCurrentProcess, dbgeng/IDebugClient2::AbandonCurrentProcess, AbandonCurrentProcess method [Windows Debugging], dbgeng/IDebugClient5::AbandonCurrentProcess, IDebugClient3 interface [Windows Debugging], AbandonCurrentProcess method, AbandonCurrentProcess method [Windows Debugging], IDebugClient3 interface, AbandonCurrentProcess, IDebugClient_2a3f34d6-591b-4cae-bc28-2da5f05a9548.xml, dbgeng/IDebugClient4::AbandonCurrentProcess, IDebugClient4::AbandonCurrentProcess, IDebugClient2 interface [Windows Debugging], AbandonCurrentProcess method, IDebugClient2::AbandonCurrentProcess, AbandonCurrentProcess method [Windows Debugging], IDebugClient5 interface, IDebugClient5
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugClient2.AbandonCurrentProcess
+-	IDebugClient3.AbandonCurrentProcess
+-	IDebugClient4.AbandonCurrentProcess
+-	IDebugClient5.AbandonCurrentProcess
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

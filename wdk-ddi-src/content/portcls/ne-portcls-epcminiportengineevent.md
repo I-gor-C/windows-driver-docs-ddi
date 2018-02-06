@@ -1,41 +1,46 @@
 ---
-UID : NE:portcls.EPcMiniportEngineEvent
-title : EPcMiniportEngineEvent
-author : windows-driver-content
-description : This topic introduces the EPcMiniportEngineEvent enum, and describes the parameters that provide additional information when the miniport driver reports a glitching error.
-old-location : audio\epcminiportengineevent.htm
-old-project : audio
-ms.assetid : 6B282CA4-2EE8-48BB-99E2-1A16A92E57A5
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : portcls/eMINIPORT_LAST_BUFFER_RENDERED, eMINIPORT_GET_STREAM_POS, portcls/eMINIPORT_IHV_DEFINED, eMINIPORT_IHV_DEFINED, eMINIPORT_GLITCH_REPORT, portcls/eMINIPORT_MaxValue, portcls/eMINIPORT_SET_WAVERT_BUFFER_WRITE_POS, audio.epcminiportengineevent, eMINIPORT_PIN_STATE, portcls/eMINIPORT_BUFFER_COMPLETE, eMINIPORT_BUFFER_COMPLETE, EPcMiniportEngineEvent, eMINIPORT_PROGRAM_DMA, portcls/eMINIPORT_GET_PRESENTATION_POS, portcls/eMINIPORT_PROCESSING_MODE, eMINIPORT_GET_PRESENTATION_POS, portcls/eMINIPORT_FX_CLSID, eMINIPORT_MaxValue, portcls/EPcMiniportEngineEvent, eMINIPORT_PROCESSING_MODE, portcls/eMINIPORT_PIN_STATE, portcls/eMINIPORT_GLITCH_REPORT, EPcMiniportEngineEvent enumeration [Audio Devices], eMINIPORT_FX_CLSID, portcls/eMINIPORT_GET_STREAM_POS, portcls/eMINIPORT_PROGRAM_DMA, eMINIPORT_SET_WAVERT_BUFFER_WRITE_POS, eMINIPORT_LAST_BUFFER_RENDERED
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : portcls.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EPcMiniportEngineEvent
+UID: NE:portcls.EPcMiniportEngineEvent
+title: EPcMiniportEngineEvent
+author: windows-driver-content
+description: This topic introduces the EPcMiniportEngineEvent enum, and describes the parameters that provide additional information when the miniport driver reports a glitching error.
+old-location: audio\epcminiportengineevent.htm
+old-project: audio
+ms.assetid: 6B282CA4-2EE8-48BB-99E2-1A16A92E57A5
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: portcls/eMINIPORT_LAST_BUFFER_RENDERED, eMINIPORT_GET_STREAM_POS, portcls/eMINIPORT_IHV_DEFINED, eMINIPORT_IHV_DEFINED, eMINIPORT_GLITCH_REPORT, portcls/eMINIPORT_MaxValue, portcls/eMINIPORT_SET_WAVERT_BUFFER_WRITE_POS, audio.epcminiportengineevent, eMINIPORT_PIN_STATE, portcls/eMINIPORT_BUFFER_COMPLETE, eMINIPORT_BUFFER_COMPLETE, EPcMiniportEngineEvent, eMINIPORT_PROGRAM_DMA, portcls/eMINIPORT_GET_PRESENTATION_POS, portcls/eMINIPORT_PROCESSING_MODE, eMINIPORT_GET_PRESENTATION_POS, portcls/eMINIPORT_FX_CLSID, eMINIPORT_MaxValue, portcls/EPcMiniportEngineEvent, eMINIPORT_PROCESSING_MODE, portcls/eMINIPORT_PIN_STATE, portcls/eMINIPORT_GLITCH_REPORT, EPcMiniportEngineEvent enumeration [Audio Devices], eMINIPORT_FX_CLSID, portcls/eMINIPORT_GET_STREAM_POS, portcls/eMINIPORT_PROGRAM_DMA, eMINIPORT_SET_WAVERT_BUFFER_WRITE_POS, eMINIPORT_LAST_BUFFER_RENDERED
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: portcls.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Portcls.h
+apiname:
+-	EPcMiniportEngineEvent
+product: Windows
+targetos: Windows
+req.typenames: EPcMiniportEngineEvent
 ---
 
 # EPcMiniportEngineEvent Enumeration
@@ -64,71 +69,71 @@ typedef enum _EPcMiniportEngineEvent {
 ## Constants
 
 <table>
-
-<tr>
-<td>eMINIPORT_BUFFER_COMPLETE</td>
-<td>Specifies the ID for the buffer complete event.</td>
-</tr>
-
-<tr>
-<td>eMINIPORT_FX_CLSID</td>
-<td>Specifies the class ID for the audio processing effect (FX) that was in effect when the glitch happened.</td>
-</tr>
-
-<tr>
-<td>eMINIPORT_GET_PRESENTATION_POSITION</td>
-<td></td>
-</tr>
-
-<tr>
-<td>eMINIPORT_GET_STREAM_POSITION</td>
-<td></td>
-</tr>
-
-<tr>
-<td>eMINIPORT_GLITCH_REPORT</td>
-<td>Specifies the ID for a "glitch report" event.</td>
-</tr>
-
-<tr>
-<td>eMINIPORT_IHV_DEFINED</td>
-<td>Specifies the ID for an IHV-defined event.</td>
-</tr>
-
-<tr>
-<td>eMINIPORT_LAST_BUFFER_RENDERED</td>
-<td>Specifies the ID for the last buffer that was rendered.</td>
-</tr>
-
-<tr>
-<td>eMINIPORT_MaxValue</td>
-<td>Specifies the ID for the highest enumerated value that was used to report the glitch.</td>
-</tr>
-
-<tr>
-<td>eMINIPORT_PIN_STATE</td>
-<td>Specifies the ID for the event related to a change in pin state.</td>
-</tr>
-
-<tr>
-<td>eMINIPORT_PROCESSING_MODE</td>
-<td>Specifies the ID for the processing mode that was in effect when the glitch happened.</td>
-</tr>
-
-<tr>
-<td>eMINIPORT_PROGRAM_DMA</td>
-<td>Specifies the ID for a "program DMA" event.</td>
-</tr>
-
-<tr>
-<td>eMINIPORT_SET_WAVERT_BUFFER_WRITE_POSITION</td>
-<td></td>
-</tr>
+            
+                <tr>
+                    <td>eMINIPORT_BUFFER_COMPLETE</td>
+                    <td>Specifies the ID for the buffer complete event.</td>
+                </tr>
+            
+                <tr>
+                    <td>eMINIPORT_FX_CLSID</td>
+                    <td>Specifies the class ID for the audio processing effect (FX) that was in effect when the glitch happened.</td>
+                </tr>
+            
+                <tr>
+                    <td>eMINIPORT_GET_PRESENTATION_POSITION</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>eMINIPORT_GET_STREAM_POSITION</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>eMINIPORT_GLITCH_REPORT</td>
+                    <td>Specifies the ID for a "glitch report" event.</td>
+                </tr>
+            
+                <tr>
+                    <td>eMINIPORT_IHV_DEFINED</td>
+                    <td>Specifies the ID for an IHV-defined event.</td>
+                </tr>
+            
+                <tr>
+                    <td>eMINIPORT_LAST_BUFFER_RENDERED</td>
+                    <td>Specifies the ID for the last buffer that was rendered.</td>
+                </tr>
+            
+                <tr>
+                    <td>eMINIPORT_MaxValue</td>
+                    <td>Specifies the ID for the highest enumerated value that was used to report the glitch.</td>
+                </tr>
+            
+                <tr>
+                    <td>eMINIPORT_PIN_STATE</td>
+                    <td>Specifies the ID for the event related to a change in pin state.</td>
+                </tr>
+            
+                <tr>
+                    <td>eMINIPORT_PROCESSING_MODE</td>
+                    <td>Specifies the ID for the processing mode that was in effect when the glitch happened.</td>
+                </tr>
+            
+                <tr>
+                    <td>eMINIPORT_PROGRAM_DMA</td>
+                    <td>Specifies the ID for a "program DMA" event.</td>
+                </tr>
+            
+                <tr>
+                    <td>eMINIPORT_SET_WAVERT_BUFFER_WRITE_POSITION</td>
+                    <td></td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-The following table shows the members of the  EPcMiniportEngineEvent enum that were introduced with Windows 8. The table shows the events associated with the enum's members, and the meanings of their parameters.
+        The following table shows the members of the  EPcMiniportEngineEvent enum that were introduced with Windows 8. The table shows the events associated with the enum's members, and the meanings of their parameters.
 
 
 <table>
@@ -260,9 +265,9 @@ The following table shows the members of the  EPcMiniportEngineEvent enum that w
 | **Windows version** | Windows 8 Windows 8 |
 | **Header** | portcls.h |
 
-## See Also
+    ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265124">MiniportWriteEtwEvent</a>
+        <a href="https://msdn.microsoft.com/library/windows/hardware/dn265124">MiniportWriteEtwEvent</a>
 
 <a href="https://msdn.microsoft.com/9FF2A5D6-9382-4EE6-AA21-DCF47210F73B">Glitch Reporting for Offloaded Audio</a>
 

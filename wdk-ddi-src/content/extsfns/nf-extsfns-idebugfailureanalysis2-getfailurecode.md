@@ -1,41 +1,46 @@
 ---
-UID : NF:extsfns.IDebugFailureAnalysis2.GetFailureCode
-title : IDebugFailureAnalysis2::GetFailureCode method
-author : windows-driver-content
-description : The GetFailureCode method gets the bug check code or exception code of a DebugFailureAnalysis object.
-old-location : debugger\idebugfailureanalysis2_getfailurecode.htm
-old-project : debugger
-ms.assetid : E407482E-26DD-40C6-9405-DF5CA8996B91
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : extsfns/IDebugFailureAnalysis2::GetFailureCode, IDebugFailureAnalysis2, GetFailureCode, debugger.idebugfailureanalysis2_getfailurecode, IDebugFailureAnalysis2 interface [Windows Debugging], GetFailureCode method, GetFailureCode method [Windows Debugging], IDebugFailureAnalysis2::GetFailureCode, GetFailureCode method [Windows Debugging], IDebugFailureAnalysis2 interface
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : extsfns.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : extsfns.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FA_EXTENSION_PLUGIN_PHASE
+UID: NF:extsfns.IDebugFailureAnalysis2.GetFailureCode
+title: IDebugFailureAnalysis2::GetFailureCode method
+author: windows-driver-content
+description: The GetFailureCode method gets the bug check code or exception code of a DebugFailureAnalysis object.
+old-location: debugger\idebugfailureanalysis2_getfailurecode.htm
+old-project: debugger
+ms.assetid: E407482E-26DD-40C6-9405-DF5CA8996B91
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: extsfns/IDebugFailureAnalysis2::GetFailureCode, IDebugFailureAnalysis2, GetFailureCode, debugger.idebugfailureanalysis2_getfailurecode, IDebugFailureAnalysis2 interface [Windows Debugging], GetFailureCode method, GetFailureCode method [Windows Debugging], IDebugFailureAnalysis2::GetFailureCode, GetFailureCode method [Windows Debugging], IDebugFailureAnalysis2 interface
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: extsfns.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: extsfns.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	extsfns.h
+apiname:
+-	IDebugFailureAnalysis2.GetFailureCode
+product: Windows
+targetos: Windows
+req.typenames: FA_EXTENSION_PLUGIN_PHASE
 ---
 
 

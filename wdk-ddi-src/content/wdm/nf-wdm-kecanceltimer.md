@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.KeCancelTimer
-title : KeCancelTimer function
-author : windows-driver-content
-description : The KeCancelTimer routine dequeues a timer object before the timer interval, if any was set, expires.
-old-location : kernel\kecanceltimer.htm
-old-project : kernel
-ms.assetid : aefbf6d6-c107-4bf2-993d-d7ba8ea7ffcd
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/KeCancelTimer, KeCancelTimer, kernel.kecanceltimer, k105_89adf0ea-9f6b-4e21-be3a-7f75f1baec10.xml, KeCancelTimer routine [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : IrqlKeDispatchLte, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.KeCancelTimer
+title: KeCancelTimer function
+author: windows-driver-content
+description: The KeCancelTimer routine dequeues a timer object before the timer interval, if any was set, expires.
+old-location: kernel\kecanceltimer.htm
+old-project: kernel
+ms.assetid: aefbf6d6-c107-4bf2-993d-d7ba8ea7ffcd
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/KeCancelTimer, KeCancelTimer, kernel.kecanceltimer, k105_89adf0ea-9f6b-4e21-be3a-7f75f1baec10.xml, KeCancelTimer routine [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: IrqlKeDispatchLte, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	KeCancelTimer
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

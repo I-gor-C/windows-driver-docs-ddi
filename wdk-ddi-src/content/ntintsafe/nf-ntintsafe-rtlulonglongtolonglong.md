@@ -1,41 +1,46 @@
 ---
-UID : NF:ntintsafe.RtlULongLongToLongLong
-title : RtlULongLongToLongLong function
-author : windows-driver-content
-description : Converts a value of type ULONGLONG to a value of type LONGLONG.
-old-location : kernel\rtlulonglongtolonglong.htm
-old-project : kernel
-ms.assetid : 7F91DDA1-AF01-4DA9-AB3B-AA5CA87C5FD6
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : RtlULongLongToLongLong, ntintsafe/RtlULongLongToLongLong, kernel.rtlulonglongtolonglong, RtlULongLongToLongLong function [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntintsafe.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PUBLIC_OBJECT_TYPE_INFORMATION, *PPUBLIC_OBJECT_TYPE_INFORMATION
+UID: NF:ntintsafe.RtlULongLongToLongLong
+title: RtlULongLongToLongLong function
+author: windows-driver-content
+description: Converts a value of type ULONGLONG to a value of type LONGLONG.
+old-location: kernel\rtlulonglongtolonglong.htm
+old-project: kernel
+ms.assetid: 7F91DDA1-AF01-4DA9-AB3B-AA5CA87C5FD6
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: RtlULongLongToLongLong, ntintsafe/RtlULongLongToLongLong, kernel.rtlulonglongtolonglong, RtlULongLongToLongLong function [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntintsafe.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntintsafe.h
+apiname:
+-	RtlULongLongToLongLong
+product: Windows
+targetos: Windows
+req.typenames: PUBLIC_OBJECT_TYPE_INFORMATION, *PPUBLIC_OBJECT_TYPE_INFORMATION
 ---
 
 

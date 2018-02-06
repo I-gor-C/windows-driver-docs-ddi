@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.tagKSCAMERA_METADATA_PHOTOCONFIRMATION
-title : tagKSCAMERA_METADATA_PHOTOCONFIRMATION
-author : windows-driver-content
-description : This structure contains the photo confirmation metadata information that is filled by the camera driver.
-old-location : stream\kscamera_metadata_photoconfirmation.htm
-old-project : stream
-ms.assetid : FA3365DC-B604-468E-AACD-AC006D2B4EAF
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : PKSCAMERA_METADATA_PHOTOCONFIRMATION, PKSCAMERA_METADATA_PHOTOCONFIRMATION structure pointer [Streaming Media Devices], KSCAMERA_METADATA_PHOTOCONFIRMATION structure [Streaming Media Devices], KSCAMERA_METADATA_PHOTOCONFIRMATION, ksmedia/PKSCAMERA_METADATA_PHOTOCONFIRMATION, *PKSCAMERA_METADATA_PHOTOCONFIRMATION, tagKSCAMERA_METADATA_PHOTOCONFIRMATION, ksmedia/KSCAMERA_METADATA_PHOTOCONFIRMATION, stream.kscamera_metadata_photoconfirmation
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKSCAMERA_METADATA_PHOTOCONFIRMATION, KSCAMERA_METADATA_PHOTOCONFIRMATION"
+UID: NS:ksmedia.tagKSCAMERA_METADATA_PHOTOCONFIRMATION
+title: tagKSCAMERA_METADATA_PHOTOCONFIRMATION
+author: windows-driver-content
+description: This structure contains the photo confirmation metadata information that is filled by the camera driver.
+old-location: stream\kscamera_metadata_photoconfirmation.htm
+old-project: stream
+ms.assetid: FA3365DC-B604-468E-AACD-AC006D2B4EAF
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: PKSCAMERA_METADATA_PHOTOCONFIRMATION, PKSCAMERA_METADATA_PHOTOCONFIRMATION structure pointer [Streaming Media Devices], KSCAMERA_METADATA_PHOTOCONFIRMATION structure [Streaming Media Devices], KSCAMERA_METADATA_PHOTOCONFIRMATION, ksmedia/PKSCAMERA_METADATA_PHOTOCONFIRMATION, *PKSCAMERA_METADATA_PHOTOCONFIRMATION, tagKSCAMERA_METADATA_PHOTOCONFIRMATION, ksmedia/KSCAMERA_METADATA_PHOTOCONFIRMATION, stream.kscamera_metadata_photoconfirmation
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ksmedia.h
+apiname:
+-	KSCAMERA_METADATA_PHOTOCONFIRMATION
+product: Windows
+targetos: Windows
+req.typenames: "*PKSCAMERA_METADATA_PHOTOCONFIRMATION, KSCAMERA_METADATA_PHOTOCONFIRMATION"
 ---
 
 # tagKSCAMERA_METADATA_PHOTOCONFIRMATION structure

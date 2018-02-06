@@ -1,42 +1,47 @@
 ---
-UID : NS:windot11.DOT11_CIPHER_DEFAULT_KEY_VALUE
-title : DOT11_CIPHER_DEFAULT_KEY_VALUE
-author : windows-driver-content
-description : Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
-old-location : netvista\dot11_cipher_default_key_value.htm
-old-project : netvista
-ms.assetid : 7362b20a-6ec4-4b22-8981-3a4b647a3cfa
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.dot11_cipher_default_key_value, DOT11_CIPHER_DEFAULT_KEY_VALUE structure [Network Drivers Starting with Windows Vista], PDOT11_CIPHER_DEFAULT_KEY_VALUE structure pointer [Network Drivers Starting with Windows Vista], windot11/DOT11_CIPHER_DEFAULT_KEY_VALUE, *PDOT11_CIPHER_DEFAULT_KEY_VALUE, DOT11_CIPHER_DEFAULT_KEY_VALUE, Native_802.11_data_types_dba46983-b572-4b76-8628-776848e4b22e.xml, windot11/PDOT11_CIPHER_DEFAULT_KEY_VALUE, PDOT11_CIPHER_DEFAULT_KEY_VALUE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : windot11.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 8 and later versions of the Windows operating   systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDOT11_CIPHER_DEFAULT_KEY_VALUE, DOT11_CIPHER_DEFAULT_KEY_VALUE"
-req.product : Windows 10 or later.
+UID: NS:windot11.DOT11_CIPHER_DEFAULT_KEY_VALUE
+title: DOT11_CIPHER_DEFAULT_KEY_VALUE
+author: windows-driver-content
+description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+old-location: netvista\dot11_cipher_default_key_value.htm
+old-project: netvista
+ms.assetid: 7362b20a-6ec4-4b22-8981-3a4b647a3cfa
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.dot11_cipher_default_key_value, DOT11_CIPHER_DEFAULT_KEY_VALUE structure [Network Drivers Starting with Windows Vista], PDOT11_CIPHER_DEFAULT_KEY_VALUE structure pointer [Network Drivers Starting with Windows Vista], windot11/DOT11_CIPHER_DEFAULT_KEY_VALUE, *PDOT11_CIPHER_DEFAULT_KEY_VALUE, DOT11_CIPHER_DEFAULT_KEY_VALUE, Native_802.11_data_types_dba46983-b572-4b76-8628-776848e4b22e.xml, windot11/PDOT11_CIPHER_DEFAULT_KEY_VALUE, PDOT11_CIPHER_DEFAULT_KEY_VALUE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: windot11.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 8 and later versions of the Windows operating   systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	windot11.h
+apiname:
+-	DOT11_CIPHER_DEFAULT_KEY_VALUE
+product: Windows
+targetos: Windows
+req.typenames: "*PDOT11_CIPHER_DEFAULT_KEY_VALUE, DOT11_CIPHER_DEFAULT_KEY_VALUE"
+req.product: Windows 10 or later.
 ---
 
 # DOT11_CIPHER_DEFAULT_KEY_VALUE structure

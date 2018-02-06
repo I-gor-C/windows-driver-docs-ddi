@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._DXVADDI_QUERYEXTENSIONCAPSINPUT
-title : "_DXVADDI_QUERYEXTENSIONCAPSINPUT"
-author : windows-driver-content
-description : The DXVADDI_QUERYEXTENSIONCAPSINPUT structure describes a capability of an extension GUID that information is requested for.
-old-location : display\dxvaddi_queryextensioncapsinput.htm
-old-project : display
-ms.assetid : 6907eb45-8d29-4cdc-80eb-2d8cafbbd9bd
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DXVADDI_QUERYEXTENSIONCAPSINPUT, _DXVADDI_QUERYEXTENSIONCAPSINPUT, display.dxvaddi_queryextensioncapsinput, d3dumddi/DXVADDI_QUERYEXTENSIONCAPSINPUT, DXVADDI_QUERYEXTENSIONCAPSINPUT structure [Display Devices], DXVA2_Structs_82433e94-79b3-4398-a38e-7f7a99cc09be.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXVADDI_QUERYEXTENSIONCAPSINPUT
+UID: NS:d3dumddi._DXVADDI_QUERYEXTENSIONCAPSINPUT
+title: "_DXVADDI_QUERYEXTENSIONCAPSINPUT"
+author: windows-driver-content
+description: The DXVADDI_QUERYEXTENSIONCAPSINPUT structure describes a capability of an extension GUID that information is requested for.
+old-location: display\dxvaddi_queryextensioncapsinput.htm
+old-project: display
+ms.assetid: 6907eb45-8d29-4cdc-80eb-2d8cafbbd9bd
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DXVADDI_QUERYEXTENSIONCAPSINPUT, _DXVADDI_QUERYEXTENSIONCAPSINPUT, display.dxvaddi_queryextensioncapsinput, d3dumddi/DXVADDI_QUERYEXTENSIONCAPSINPUT, DXVADDI_QUERYEXTENSIONCAPSINPUT structure [Display Devices], DXVA2_Structs_82433e94-79b3-4398-a38e-7f7a99cc09be.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	DXVADDI_QUERYEXTENSIONCAPSINPUT
+product: Windows
+targetos: Windows
+req.typenames: DXVADDI_QUERYEXTENSIONCAPSINPUT
 ---
 
 # _DXVADDI_QUERYEXTENSIONCAPSINPUT structure

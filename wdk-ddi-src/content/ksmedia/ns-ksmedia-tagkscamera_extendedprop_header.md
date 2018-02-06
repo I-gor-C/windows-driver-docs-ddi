@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.tagKSCAMERA_EXTENDEDPROP_HEADER
-title : tagKSCAMERA_EXTENDEDPROP_HEADER
-author : windows-driver-content
-description : The KSCAMERA_EXTENDEDPROP_HEADER structure is the payload header for an extend control property.
-old-location : stream\kscamera_extendedprop_header.htm
-old-project : stream
-ms.assetid : 2CE89C1E-8FE8-4304-BD3F-5A926CAC74B4
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KSCAMERA_EXTENDEDPROP_CAPS_CANCELLABLE, PKSCAMERA_EXTENDEDPROP_HEADER, KSCAMERA_EXTENDEDPROP_HEADER structure [Streaming Media Devices], ksmedia/KSCAMERA_EXTENDEDPROP_HEADER, tagKSCAMERA_EXTENDEDPROP_HEADER, PKSCAMERA_EXTENDEDPROP_HEADER structure pointer [Streaming Media Devices], *PKSCAMERA_EXTENDEDPROP_HEADER, KSCAMERA_EXTENDEDPROP_CAPS_ASYNCCONTROL, KSCAMERA_EXTENDEDPROP_HEADER, ksmedia/PKSCAMERA_EXTENDEDPROP_HEADER, stream.kscamera_extendedprop_header
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8.1
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKSCAMERA_EXTENDEDPROP_HEADER, KSCAMERA_EXTENDEDPROP_HEADER"
+UID: NS:ksmedia.tagKSCAMERA_EXTENDEDPROP_HEADER
+title: tagKSCAMERA_EXTENDEDPROP_HEADER
+author: windows-driver-content
+description: The KSCAMERA_EXTENDEDPROP_HEADER structure is the payload header for an extend control property.
+old-location: stream\kscamera_extendedprop_header.htm
+old-project: stream
+ms.assetid: 2CE89C1E-8FE8-4304-BD3F-5A926CAC74B4
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KSCAMERA_EXTENDEDPROP_CAPS_CANCELLABLE, PKSCAMERA_EXTENDEDPROP_HEADER, KSCAMERA_EXTENDEDPROP_HEADER structure [Streaming Media Devices], ksmedia/KSCAMERA_EXTENDEDPROP_HEADER, tagKSCAMERA_EXTENDEDPROP_HEADER, PKSCAMERA_EXTENDEDPROP_HEADER structure pointer [Streaming Media Devices], *PKSCAMERA_EXTENDEDPROP_HEADER, KSCAMERA_EXTENDEDPROP_CAPS_ASYNCCONTROL, KSCAMERA_EXTENDEDPROP_HEADER, ksmedia/PKSCAMERA_EXTENDEDPROP_HEADER, stream.kscamera_extendedprop_header
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8.1
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ksmedia.h
+apiname:
+-	KSCAMERA_EXTENDEDPROP_HEADER
+product: Windows
+targetos: Windows
+req.typenames: "*PKSCAMERA_EXTENDEDPROP_HEADER, KSCAMERA_EXTENDEDPROP_HEADER"
 ---
 
 # tagKSCAMERA_EXTENDEDPROP_HEADER structure

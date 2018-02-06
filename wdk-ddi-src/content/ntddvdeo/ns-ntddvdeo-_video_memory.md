@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddvdeo._VIDEO_MEMORY
-title : "_VIDEO_MEMORY"
-author : windows-driver-content
-description : The VIDEO_MEMORY structure holds the address of a requested block of kernel-mode video memory.
-old-location : display\video_memory.htm
-old-project : display
-ms.assetid : 3d8b3b45-90d9-4e64-a52d-253c9cb86588
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : PVIDEO_MEMORY, PVIDEO_MEMORY structure pointer [Display Devices], _VIDEO_MEMORY, Video_Structs_85973586-1583-46cb-93a7-c8d37ba4ef5f.xml, ntddvdeo/VIDEO_MEMORY, VIDEO_MEMORY, *PVIDEO_MEMORY, ntddvdeo/PVIDEO_MEMORY, VIDEO_MEMORY structure [Display Devices], display.video_memory
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddvdeo.h
-req.include-header : Ntddvdeo.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PVIDEO_MEMORY, VIDEO_MEMORY"
+UID: NS:ntddvdeo._VIDEO_MEMORY
+title: "_VIDEO_MEMORY"
+author: windows-driver-content
+description: The VIDEO_MEMORY structure holds the address of a requested block of kernel-mode video memory.
+old-location: display\video_memory.htm
+old-project: display
+ms.assetid: 3d8b3b45-90d9-4e64-a52d-253c9cb86588
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: PVIDEO_MEMORY, PVIDEO_MEMORY structure pointer [Display Devices], _VIDEO_MEMORY, Video_Structs_85973586-1583-46cb-93a7-c8d37ba4ef5f.xml, ntddvdeo/VIDEO_MEMORY, VIDEO_MEMORY, *PVIDEO_MEMORY, ntddvdeo/PVIDEO_MEMORY, VIDEO_MEMORY structure [Display Devices], display.video_memory
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddvdeo.h
+req.include-header: Ntddvdeo.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddvdeo.h
+apiname:
+-	VIDEO_MEMORY
+product: Windows
+targetos: Windows
+req.typenames: "*PVIDEO_MEMORY, VIDEO_MEMORY"
 ---
 
 # _VIDEO_MEMORY structure

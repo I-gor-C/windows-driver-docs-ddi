@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_CREATEQUERY
-title : PFND3DDDI_CREATEQUERY
-author : windows-driver-content
-description : The CreateQuery function creates driver-side resources for a query that the Microsoft Direct3D runtime subsequently issues for processing.
-old-location : display\createquery.htm
-old-project : display
-ms.assetid : ac63b77b-2704-4d5b-bf1d-9d85e8a1e336
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.createquery, CreateQuery callback function [Display Devices], CreateQuery, PFND3DDDI_CREATEQUERY, PFND3DDDI_CREATEQUERY, d3dumddi/CreateQuery, UserModeDisplayDriver_Functions_b398e152-6530-4dcb-9665-ef45ad3d985b.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_CREATEQUERY
+title: PFND3DDDI_CREATEQUERY
+author: windows-driver-content
+description: The CreateQuery function creates driver-side resources for a query that the Microsoft Direct3D runtime subsequently issues for processing.
+old-location: display\createquery.htm
+old-project: display
+ms.assetid: ac63b77b-2704-4d5b-bf1d-9d85e8a1e336
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.createquery, CreateQuery callback function [Display Devices], CreateQuery, PFND3DDDI_CREATEQUERY, PFND3DDDI_CREATEQUERY, d3dumddi/CreateQuery, UserModeDisplayDriver_Functions_b398e152-6530-4dcb-9665-ef45ad3d985b.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	CreateQuery
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

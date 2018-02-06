@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltRemoveExtraCreateParameter
-title : FltRemoveExtraCreateParameter function
-author : windows-driver-content
-description : The FltRemoveExtraCreateParameter routine searches an ECP list for an ECP context structure and, if found, detaches it from the ECP list.
-old-location : ifsk\fltremoveextracreateparameter.htm
-old-project : ifsk
-ms.assetid : 924e9108-f0cf-4202-905c-04a27c15dfa3
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltRemoveExtraCreateParameter, fltkernel/FltRemoveExtraCreateParameter, ifsk.fltremoveextracreateparameter, FltApiRef_p_to_z_696787f2-1381-451f-aed4-bf307ee58291.xml, FltRemoveExtraCreateParameter routine [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : This routine is available starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltRemoveExtraCreateParameter
+title: FltRemoveExtraCreateParameter function
+author: windows-driver-content
+description: The FltRemoveExtraCreateParameter routine searches an ECP list for an ECP context structure and, if found, detaches it from the ECP list.
+old-location: ifsk\fltremoveextracreateparameter.htm
+old-project: ifsk
+ms.assetid: 924e9108-f0cf-4202-905c-04a27c15dfa3
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltRemoveExtraCreateParameter, fltkernel/FltRemoveExtraCreateParameter, ifsk.fltremoveextracreateparameter, FltApiRef_p_to_z_696787f2-1381-451f-aed4-bf307ee58291.xml, FltRemoveExtraCreateParameter routine [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: This routine is available starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltRemoveExtraCreateParameter
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

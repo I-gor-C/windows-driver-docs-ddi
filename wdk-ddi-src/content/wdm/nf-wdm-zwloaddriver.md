@@ -1,42 +1,48 @@
 ---
-UID : NF:wdm.ZwLoadDriver
-title : ZwLoadDriver function
-author : windows-driver-content
-description : The ZwLoadDriver routine loads a driver into the system.
-old-location : kernel\zwloaddriver.htm
-old-project : kernel
-ms.assetid : ab5afdc8-d4d3-4be0-a613-d92f1b847b27
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/NtLoadDriver, kernel.zwloaddriver, ZwLoadDriver routine [Kernel-Mode Driver Architecture], NtLoadDriver, k111_b421f181-1a7d-4122-a73c-604f6b98686d.xml, ZwLoadDriver, wdm/ZwLoadDriver
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows XP and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ZwLoadDriver
+title: ZwLoadDriver function
+author: windows-driver-content
+description: The ZwLoadDriver routine loads a driver into the system.
+old-location: kernel\zwloaddriver.htm
+old-project: kernel
+ms.assetid: ab5afdc8-d4d3-4be0-a613-d92f1b847b27
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/NtLoadDriver, kernel.zwloaddriver, ZwLoadDriver routine [Kernel-Mode Driver Architecture], NtLoadDriver, k111_b421f181-1a7d-4122-a73c-604f6b98686d.xml, ZwLoadDriver, wdm/ZwLoadDriver
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows XP and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ZwLoadDriver
+-	NtLoadDriver
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

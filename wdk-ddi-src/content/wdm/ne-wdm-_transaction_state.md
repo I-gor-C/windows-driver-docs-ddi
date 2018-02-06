@@ -1,42 +1,47 @@
 ---
-UID : NE:wdm._TRANSACTION_STATE
-title : "_TRANSACTION_STATE"
-author : windows-driver-content
-description : The TRANSACTION_STATE enumeration defines the states that KTM can assign to a transaction.
-old-location : kernel\transaction_state.htm
-old-project : kernel
-ms.assetid : b97bedc5-6393-49bd-b803-e70e3a3d49df
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.transaction_state, wdm/TransactionStateNormal, wdm/TransactionStateIndoubt, _TRANSACTION_STATE, TransactionStateCommittedNotify, TRANSACTION_STATE, TransactionStateNormal, TRANSACTION_STATE enumeration [Kernel-Mode Driver Architecture], wdm/TRANSACTION_STATE, ktm_ref_051131c5-e3a5-430e-afca-053fcb68f746.xml, wdm/TransactionStateCommittedNotify, TransactionStateIndoubt
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later operating system versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TRANSACTION_STATE
-req.product : Windows 10 or later.
+UID: NE:wdm._TRANSACTION_STATE
+title: "_TRANSACTION_STATE"
+author: windows-driver-content
+description: The TRANSACTION_STATE enumeration defines the states that KTM can assign to a transaction.
+old-location: kernel\transaction_state.htm
+old-project: kernel
+ms.assetid: b97bedc5-6393-49bd-b803-e70e3a3d49df
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.transaction_state, wdm/TransactionStateNormal, wdm/TransactionStateIndoubt, _TRANSACTION_STATE, TransactionStateCommittedNotify, TRANSACTION_STATE, TransactionStateNormal, TRANSACTION_STATE enumeration [Kernel-Mode Driver Architecture], wdm/TRANSACTION_STATE, ktm_ref_051131c5-e3a5-430e-afca-053fcb68f746.xml, wdm/TransactionStateCommittedNotify, TransactionStateIndoubt
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later operating system versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	TRANSACTION_STATE
+product: Windows
+targetos: Windows
+req.typenames: TRANSACTION_STATE
+req.product: Windows 10 or later.
 ---
 
 # _TRANSACTION_STATE Enumeration
@@ -54,26 +59,26 @@ typedef enum _TRANSACTION_STATE {
 ## Constants
 
 <table>
-
-<tr>
-<td>TransactionStateCommittedNotify</td>
-<td>The transaction has been committed. Commit notifications might (or might not) have been delivered to all enlistments.</td>
-</tr>
-
-<tr>
-<td>TransactionStateIndoubt</td>
-<td>The transaction's state is in doubt (that is, KTM cannot determine whether the transaction should be committed or rolled back). A transaction that has been prepared enters the "in doubt" state if its <a href="https://msdn.microsoft.com/6f6bf61a-fe53-47b5-9559-f76334969af8">superior transaction manager</a> becomes unavailable.</td>
-</tr>
-
-<tr>
-<td>TransactionStateNormal</td>
-<td>The transaction's state is neither in doubt nor committed.</td>
-</tr>
+            
+                <tr>
+                    <td>TransactionStateCommittedNotify</td>
+                    <td>The transaction has been committed. Commit notifications might (or might not) have been delivered to all enlistments.</td>
+                </tr>
+            
+                <tr>
+                    <td>TransactionStateIndoubt</td>
+                    <td>The transaction's state is in doubt (that is, KTM cannot determine whether the transaction should be committed or rolled back). A transaction that has been prepared enters the "in doubt" state if its <a href="https://msdn.microsoft.com/6f6bf61a-fe53-47b5-9559-f76334969af8">superior transaction manager</a> becomes unavailable.</td>
+                </tr>
+            
+                <tr>
+                    <td>TransactionStateNormal</td>
+                    <td>The transaction's state is neither in doubt nor committed.</td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-The <b>TRANSACTION_STATE</b> enumeration is used in the <a href="..\wdm\ns-wdm-_transaction_basic_information.md">TRANSACTION_BASIC_INFORMATION</a> structure.
+        The <b>TRANSACTION_STATE</b> enumeration is used in the <a href="..\wdm\ns-wdm-_transaction_basic_information.md">TRANSACTION_BASIC_INFORMATION</a> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -81,9 +86,9 @@ The <b>TRANSACTION_STATE</b> enumeration is used in the <a href="..\wdm\ns-wdm-_
 | **Windows version** | Available in Windows Vista and later operating system versions. Available in Windows Vista and later operating system versions. |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\wdm\ns-wdm-_transaction_basic_information.md">TRANSACTION_BASIC_INFORMATION</a>
+        <a href="..\wdm\ns-wdm-_transaction_basic_information.md">TRANSACTION_BASIC_INFORMATION</a>
 
  
 

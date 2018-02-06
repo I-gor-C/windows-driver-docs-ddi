@@ -1,41 +1,46 @@
 ---
-UID : NI:hidclass.IOCTL_HID_GET_INPUT_REPORT
-title : IOCTL_HID_GET_INPUT_REPORT
-author : windows-driver-content
-description : IOCTL_HID_GET_INPUT_REPORT returns an input report from a HID Class device.
-old-location : hid\ioctl_hid_get_input_report.htm
-old-project : hid
-ms.assetid : 800bc24b-dfa3-4da1-b9de-9d8d6e470d7e
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : hid.ioctl_hid_get_input_report, IOCTL_HID_GET_INPUT_REPORT control code [Human Input Devices], IOCTL_HID_GET_INPUT_REPORT, hidclass/IOCTL_HID_GET_INPUT_REPORT, hidioreq_6b2d889e-4579-464f-bd03-0d55bcf99687.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : hidclass.h
-req.include-header : Hidclass.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HDAUDIO_STREAM_FORMAT, *PHDAUDIO_STREAM_FORMAT
+UID: NI:hidclass.IOCTL_HID_GET_INPUT_REPORT
+title: IOCTL_HID_GET_INPUT_REPORT
+author: windows-driver-content
+description: IOCTL_HID_GET_INPUT_REPORT returns an input report from a HID Class device.
+old-location: hid\ioctl_hid_get_input_report.htm
+old-project: hid
+ms.assetid: 800bc24b-dfa3-4da1-b9de-9d8d6e470d7e
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: hid.ioctl_hid_get_input_report, IOCTL_HID_GET_INPUT_REPORT control code [Human Input Devices], IOCTL_HID_GET_INPUT_REPORT, hidclass/IOCTL_HID_GET_INPUT_REPORT, hidioreq_6b2d889e-4579-464f-bd03-0d55bcf99687.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: hidclass.h
+req.include-header: Hidclass.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hidclass.h
+apiname:
+-	IOCTL_HID_GET_INPUT_REPORT
+product: Windows
+targetos: Windows
+req.typenames: HDAUDIO_STREAM_FORMAT, *PHDAUDIO_STREAM_FORMAT
 ---
 
 # IOCTL_HID_GET_INPUT_REPORT IOCTL

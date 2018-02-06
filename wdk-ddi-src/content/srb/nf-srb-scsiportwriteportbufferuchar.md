@@ -1,42 +1,48 @@
 ---
-UID : NF:srb.ScsiPortWritePortBufferUchar
-title : ScsiPortWritePortBufferUchar function
-author : windows-driver-content
-description : The ScsiPortWritePortBufferUchar routine transfers a given number of unsigned bytes from a buffer to the HBA.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future.
-old-location : storage\scsiportwriteportbufferuchar.htm
-old-project : storage
-ms.assetid : 83b6425f-52fa-4c57-aac5-698d3a586248
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : ScsiPortWritePortBufferUchar, scsiprt_19277863-04fb-4f72-85f5-9bc877bd83c1.xml, ScsiPortWritePortBufferUchar routine [Storage Devices], storage.scsiportwriteportbufferuchar, srb/ScsiPortWritePortBufferUchar
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : srb.h
-req.include-header : Miniport.h, Scsi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Scsiport.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SPB_CONTROLLER_CONFIG, *PSPB_CONTROLLER_CONFIG
-req.product : Windows 10 or later.
+UID: NF:srb.ScsiPortWritePortBufferUchar
+title: ScsiPortWritePortBufferUchar function
+author: windows-driver-content
+description: The ScsiPortWritePortBufferUchar routine transfers a given number of unsigned bytes from a buffer to the HBA.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future.
+old-location: storage\scsiportwriteportbufferuchar.htm
+old-project: storage
+ms.assetid: 83b6425f-52fa-4c57-aac5-698d3a586248
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: ScsiPortWritePortBufferUchar, scsiprt_19277863-04fb-4f72-85f5-9bc877bd83c1.xml, ScsiPortWritePortBufferUchar routine [Storage Devices], storage.scsiportwriteportbufferuchar, srb/ScsiPortWritePortBufferUchar
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: srb.h
+req.include-header: Miniport.h, Scsi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Scsiport.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Scsiport.lib
+-	Scsiport.dll
+apiname:
+-	ScsiPortWritePortBufferUchar
+product: Windows
+targetos: Windows
+req.typenames: SPB_CONTROLLER_CONFIG, *PSPB_CONTROLLER_CONFIG
+req.product: Windows 10 or later.
 ---
 
 

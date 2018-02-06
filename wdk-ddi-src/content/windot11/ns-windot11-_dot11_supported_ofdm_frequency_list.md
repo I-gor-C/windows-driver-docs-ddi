@@ -1,42 +1,47 @@
 ---
-UID : NS:windot11._DOT11_SUPPORTED_OFDM_FREQUENCY_LIST
-title : "_DOT11_SUPPORTED_OFDM_FREQUENCY_LIST"
-author : windows-driver-content
-description : Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
-old-location : netvista\dot11_supported_ofdm_frequency_list.htm
-old-project : netvista
-ms.assetid : 0c967358-821b-4f78-acbc-dacee24dcd57
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : DOT11_SUPPORTED_OFDM_FREQUENCY_LIST, DOT11_SUPPORTED_OFDM_FREQUENCY_LIST structure [Network Drivers Starting with Windows Vista], *PDOT11_SUPPORTED_OFDM_FREQUENCY_LIST, netvista.dot11_supported_ofdm_frequency_list, _DOT11_SUPPORTED_OFDM_FREQUENCY_LIST, PDOT11_SUPPORTED_OFDM_FREQUENCY_LIST structure pointer [Network Drivers Starting with Windows Vista], Native_802.11_data_types_428915da-fa98-469c-829b-5d0313a59c3b.xml, PDOT11_SUPPORTED_OFDM_FREQUENCY_LIST, windot11/DOT11_SUPPORTED_OFDM_FREQUENCY_LIST, windot11/PDOT11_SUPPORTED_OFDM_FREQUENCY_LIST
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : windot11.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7 and later versions of the Windows operating   systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT11_SUPPORTED_OFDM_FREQUENCY_LIST, *PDOT11_SUPPORTED_OFDM_FREQUENCY_LIST
-req.product : Windows 10 or later.
+UID: NS:windot11._DOT11_SUPPORTED_OFDM_FREQUENCY_LIST
+title: "_DOT11_SUPPORTED_OFDM_FREQUENCY_LIST"
+author: windows-driver-content
+description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+old-location: netvista\dot11_supported_ofdm_frequency_list.htm
+old-project: netvista
+ms.assetid: 0c967358-821b-4f78-acbc-dacee24dcd57
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: DOT11_SUPPORTED_OFDM_FREQUENCY_LIST, DOT11_SUPPORTED_OFDM_FREQUENCY_LIST structure [Network Drivers Starting with Windows Vista], *PDOT11_SUPPORTED_OFDM_FREQUENCY_LIST, netvista.dot11_supported_ofdm_frequency_list, _DOT11_SUPPORTED_OFDM_FREQUENCY_LIST, PDOT11_SUPPORTED_OFDM_FREQUENCY_LIST structure pointer [Network Drivers Starting with Windows Vista], Native_802.11_data_types_428915da-fa98-469c-829b-5d0313a59c3b.xml, PDOT11_SUPPORTED_OFDM_FREQUENCY_LIST, windot11/DOT11_SUPPORTED_OFDM_FREQUENCY_LIST, windot11/PDOT11_SUPPORTED_OFDM_FREQUENCY_LIST
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: windot11.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7 and later versions of the Windows operating   systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	windot11.h
+apiname:
+-	DOT11_SUPPORTED_OFDM_FREQUENCY_LIST
+product: Windows
+targetos: Windows
+req.typenames: DOT11_SUPPORTED_OFDM_FREQUENCY_LIST, *PDOT11_SUPPORTED_OFDM_FREQUENCY_LIST
+req.product: Windows 10 or later.
 ---
 
 # _DOT11_SUPPORTED_OFDM_FREQUENCY_LIST structure

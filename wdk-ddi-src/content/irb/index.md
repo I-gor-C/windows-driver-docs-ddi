@@ -1,12 +1,12 @@
 ---
-UID : NA:irb
-ms.assetid : 5e249c2b-3212-3129-8ae7-2614dd9bd6bb
-ms.author : windowsdriverdev
-ms.date : 01/18/18
-ms.keywords : 
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : portal
+UID: NA:irb
+ms.assetid: 5e249c2b-3212-3129-8ae7-2614dd9bd6bb
+ms.author: windowsdriverdev
+ms.date: 01/18/18
+ms.keywords: 
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: portal
 ---
 
 # irb.h header

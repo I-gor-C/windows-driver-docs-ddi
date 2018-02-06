@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugControl3.OutputVaList
-title : IDebugControl3::OutputVaList method
-author : windows-driver-content
-description : The OutputVaList method formats a string and sends the result to the output callbacks that are registered with the engine's clients.
-old-location : debugger\outputvalist.htm
-old-project : debugger
-ms.assetid : 6b2c0c43-26a3-4e66-aa9f-45b431ce6516
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugControl interface [Windows Debugging], OutputVaList method, OutputVaList method [Windows Debugging], IDebugControl2 interface, OutputVaList method [Windows Debugging], IDebugControl interface, IDebugControl3::OutputVaList, IDebugControl2::OutputVaList, OutputVaList method [Windows Debugging], IDebugControl3 interface, IDebugControl3 interface [Windows Debugging], OutputVaList method, IDebugControl_4c0f8057-9e61-4a89-a2e8-be15bd49e5fc.xml, IDebugControl3, OutputVaList, dbgeng/IDebugControl3::OutputVaList, IDebugControl2 interface [Windows Debugging], OutputVaList method, IDebugControl::OutputVaList, debugger.outputvalist, dbgeng/IDebugControl2::OutputVaList, OutputVaList method [Windows Debugging], dbgeng/IDebugControl::OutputVaList
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h, Stdarg.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl3.OutputVaList
+title: IDebugControl3::OutputVaList method
+author: windows-driver-content
+description: The OutputVaList method formats a string and sends the result to the output callbacks that are registered with the engine's clients.
+old-location: debugger\outputvalist.htm
+old-project: debugger
+ms.assetid: 6b2c0c43-26a3-4e66-aa9f-45b431ce6516
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugControl interface [Windows Debugging], OutputVaList method, OutputVaList method [Windows Debugging], IDebugControl2 interface, OutputVaList method [Windows Debugging], IDebugControl interface, IDebugControl3::OutputVaList, IDebugControl2::OutputVaList, OutputVaList method [Windows Debugging], IDebugControl3 interface, IDebugControl3 interface [Windows Debugging], OutputVaList method, IDebugControl_4c0f8057-9e61-4a89-a2e8-be15bd49e5fc.xml, IDebugControl3, OutputVaList, dbgeng/IDebugControl3::OutputVaList, IDebugControl2 interface [Windows Debugging], OutputVaList method, IDebugControl::OutputVaList, debugger.outputvalist, dbgeng/IDebugControl2::OutputVaList, OutputVaList method [Windows Debugging], dbgeng/IDebugControl::OutputVaList
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h, Stdarg.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl.OutputVaList
+-	IDebugControl2.OutputVaList
+-	IDebugControl3.OutputVaList
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

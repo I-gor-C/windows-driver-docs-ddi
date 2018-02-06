@@ -1,41 +1,47 @@
 ---
-UID : NF:dbgeng.IDebugBreakpoint2.SetOffset
-title : IDebugBreakpoint2::SetOffset method
-author : windows-driver-content
-description : The SetOffset method sets the location that triggers a breakpoint.
-old-location : debugger\setoffset.htm
-old-project : debugger
-ms.assetid : 25898500-f16e-4838-854f-5eb299727e2b
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugBreakpoint::SetOffset, dbgeng/IDebugBreakpoint2::SetOffset, dbgeng/IDebugBreakpoint::SetOffset, ComOther_bb0d9a70-c4b5-4883-9dab-37bf04848d8c.xml, IDebugBreakpoint2, SetOffset method [Windows Debugging], IDebugBreakpoint interface, SetOffset method [Windows Debugging], SetOffset method [Windows Debugging], IDebugBreakpoint2 interface, IDebugBreakpoint2 interface [Windows Debugging], SetOffset method, IDebugBreakpoint2::SetOffset, IDebugBreakpoint interface [Windows Debugging], SetOffset method, debugger.setoffset, SetOffset
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugBreakpoint2.SetOffset
+title: IDebugBreakpoint2::SetOffset method
+author: windows-driver-content
+description: The SetOffset method sets the location that triggers a breakpoint.
+old-location: debugger\setoffset.htm
+old-project: debugger
+ms.assetid: 25898500-f16e-4838-854f-5eb299727e2b
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugBreakpoint::SetOffset, dbgeng/IDebugBreakpoint2::SetOffset, dbgeng/IDebugBreakpoint::SetOffset, ComOther_bb0d9a70-c4b5-4883-9dab-37bf04848d8c.xml, IDebugBreakpoint2, SetOffset method [Windows Debugging], IDebugBreakpoint interface, SetOffset method [Windows Debugging], SetOffset method [Windows Debugging], IDebugBreakpoint2 interface, IDebugBreakpoint2 interface [Windows Debugging], SetOffset method, IDebugBreakpoint2::SetOffset, IDebugBreakpoint interface [Windows Debugging], SetOffset method, debugger.setoffset, SetOffset
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugBreakpoint.SetOffset
+-	IDebugBreakpoint2.SetOffset
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfchildlist.WdfChildListEndScan
-title : WdfChildListEndScan function
-author : windows-driver-content
-description : The WdfChildListEndScan method processes modifications to a specified child list.
-old-location : wdf\wdfchildlistendscan.htm
-old-project : wdf
-ms.assetid : 73891793-e59f-4c67-af93-07929d7c7326
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : kmdf.wdfchildlistendscan, wdfchildlist/WdfChildListEndScan, WdfChildListEndScan, PFN_WDFCHILDLISTENDSCAN, wdf.wdfchildlistendscan, DFDeviceObjectChildListRef_ffd03c13-6074-4679-bb87-b2c028fc8ded.xml, WdfChildListEndScan method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfchildlist.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_RETRIEVE_CHILD_FLAGS
-req.product : Windows 10 or later.
+UID: NF:wdfchildlist.WdfChildListEndScan
+title: WdfChildListEndScan function
+author: windows-driver-content
+description: The WdfChildListEndScan method processes modifications to a specified child list.
+old-location: wdf\wdfchildlistendscan.htm
+old-project: wdf
+ms.assetid: 73891793-e59f-4c67-af93-07929d7c7326
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: kmdf.wdfchildlistendscan, wdfchildlist/WdfChildListEndScan, WdfChildListEndScan, PFN_WDFCHILDLISTENDSCAN, wdf.wdfchildlistendscan, DFDeviceObjectChildListRef_ffd03c13-6074-4679-bb87-b2c028fc8ded.xml, WdfChildListEndScan method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfchildlist.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfChildListEndScan
+product: Windows
+targetos: Windows
+req.typenames: WDF_RETRIEVE_CHILD_FLAGS
+req.product: Windows 10 or later.
 ---
 
 

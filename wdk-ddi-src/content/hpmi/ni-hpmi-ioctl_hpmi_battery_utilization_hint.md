@@ -1,41 +1,46 @@
 ---
-UID : NI:hpmi.IOCTL_HPMI_BATTERY_UTILIZATION_HINT
-title : IOCTL_HPMI_BATTERY_UTILIZATION_HINT
-author : windows-driver-content
-description : Set command sent to HPMI to provide battery utilization hints.
-old-location : powermeter\ioctl_hpmi_battery_utilization_hint.htm
-old-project : powermeter
-ms.assetid : CE326F69-64A4-466E-8A02-5C08AFF8490C
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : powermeter.ioctl_hpmi_battery_utilization_hint, IOCTL_HPMI_BATTERY_UTILIZATION_HINT control code [Power Metering and Budgeting Devices], IOCTL_HPMI_BATTERY_UTILIZATION_HINT, hpmi/IOCTL_HPMI_BATTERY_UTILIZATION_HINT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : hpmi.h
-req.include-header : Hpmi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 10, version 1709 and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PHPMI_HINT_BOOL, HPMI_HINT_BOOL"
+UID: NI:hpmi.IOCTL_HPMI_BATTERY_UTILIZATION_HINT
+title: IOCTL_HPMI_BATTERY_UTILIZATION_HINT
+author: windows-driver-content
+description: Set command sent to HPMI to provide battery utilization hints.
+old-location: powermeter\ioctl_hpmi_battery_utilization_hint.htm
+old-project: powermeter
+ms.assetid: CE326F69-64A4-466E-8A02-5C08AFF8490C
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: powermeter.ioctl_hpmi_battery_utilization_hint, IOCTL_HPMI_BATTERY_UTILIZATION_HINT control code [Power Metering and Budgeting Devices], IOCTL_HPMI_BATTERY_UTILIZATION_HINT, hpmi/IOCTL_HPMI_BATTERY_UTILIZATION_HINT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: hpmi.h
+req.include-header: Hpmi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 10, version 1709 and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hpmi.h
+apiname:
+-	IOCTL_HPMI_BATTERY_UTILIZATION_HINT
+product: Windows
+targetos: Windows
+req.typenames: "*PHPMI_HINT_BOOL, HPMI_HINT_BOOL"
 ---
 
 # IOCTL_HPMI_BATTERY_UTILIZATION_HINT IOCTL

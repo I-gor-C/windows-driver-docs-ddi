@@ -1,42 +1,47 @@
 ---
-UID : NS:winsplp._MONITORINIT
-title : "_MONITORINIT"
-author : windows-driver-content
-description : The MONITORINIT structure is used as an input parameter to a print monitor's InitializePrintMonitor2 function.
-old-location : print\monitorinit.htm
-old-project : print
-ms.assetid : 3445997f-a607-4071-b05e-c1a8d01892b2
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : PMONITORINIT, MONITORINIT, winsplp/PMONITORINIT, *PMONITORINIT, print.monitorinit, MONITORINIT structure [Print Devices], spoolfnc_321f67a1-b279-4909-af99-d3e564bf3555.xml, _MONITORINIT, PMONITORINIT structure pointer [Print Devices], winsplp/MONITORINIT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : winsplp.h
-req.include-header : Winsplp.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : MONITORINIT, *PMONITORINIT
-req.product : Windows 10 or later.
+UID: NS:winsplp._MONITORINIT
+title: "_MONITORINIT"
+author: windows-driver-content
+description: The MONITORINIT structure is used as an input parameter to a print monitor's InitializePrintMonitor2 function.
+old-location: print\monitorinit.htm
+old-project: print
+ms.assetid: 3445997f-a607-4071-b05e-c1a8d01892b2
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: PMONITORINIT, MONITORINIT, winsplp/PMONITORINIT, *PMONITORINIT, print.monitorinit, MONITORINIT structure [Print Devices], spoolfnc_321f67a1-b279-4909-af99-d3e564bf3555.xml, _MONITORINIT, PMONITORINIT structure pointer [Print Devices], winsplp/MONITORINIT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: winsplp.h
+req.include-header: Winsplp.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	winsplp.h
+apiname:
+-	MONITORINIT
+product: Windows
+targetos: Windows
+req.typenames: MONITORINIT, *PMONITORINIT
+req.product: Windows 10 or later.
 ---
 
 # _MONITORINIT structure

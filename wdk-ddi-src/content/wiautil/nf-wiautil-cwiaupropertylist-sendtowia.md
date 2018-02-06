@@ -1,42 +1,47 @@
 ---
-UID : NF:wiautil.CWiauPropertyList.SendToWia
-title : CWiauPropertyList::SendToWia method
-author : windows-driver-content
-description : The CWiauPropertyList::SendToWia method calls the WIA service to define all of the properties currently contained in the property list object.
-old-location : image\cwiaupropertylist_sendtowia.htm
-old-project : image
-ms.assetid : 2f7d6975-4c90-4351-bf68-89786bafcc8e
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : SendToWia method [Imaging Devices], SendToWia method [Imaging Devices], CWiauPropertyList interface, image.cwiaupropertylist_sendtowia, CWiauPropertyList::SendToWia, wiauFncs_d77b66a2-1c98-4608-9269-ab1e09a98405.xml, wiautil/CWiauPropertyList::SendToWia, SendToWia, CWiauPropertyList, CWiauPropertyList interface [Imaging Devices], SendToWia method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wiautil.h
-req.include-header : Wiautil.h, Wiamindr.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows XP and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wiautil.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SKIP_AMOUNT
-req.product : Windows 10 or later.
+UID: NF:wiautil.CWiauPropertyList.SendToWia
+title: CWiauPropertyList::SendToWia method
+author: windows-driver-content
+description: The CWiauPropertyList::SendToWia method calls the WIA service to define all of the properties currently contained in the property list object.
+old-location: image\cwiaupropertylist_sendtowia.htm
+old-project: image
+ms.assetid: 2f7d6975-4c90-4351-bf68-89786bafcc8e
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: SendToWia method [Imaging Devices], SendToWia method [Imaging Devices], CWiauPropertyList interface, image.cwiaupropertylist_sendtowia, CWiauPropertyList::SendToWia, wiauFncs_d77b66a2-1c98-4608-9269-ab1e09a98405.xml, wiautil/CWiauPropertyList::SendToWia, SendToWia, CWiauPropertyList, CWiauPropertyList interface [Imaging Devices], SendToWia method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wiautil.h
+req.include-header: Wiautil.h, Wiamindr.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows XP and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wiautil.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Wiautil.h
+apiname:
+-	CWiauPropertyList.SendToWia
+product: Windows
+targetos: Windows
+req.typenames: SKIP_AMOUNT
+req.product: Windows 10 or later.
 ---
 
 

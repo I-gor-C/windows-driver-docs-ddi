@@ -1,42 +1,47 @@
 ---
-UID : NS:wdm._IO_SECURITY_CONTEXT
-title : "_IO_SECURITY_CONTEXT"
-author : windows-driver-content
-description : The IO_SECURITY_CONTEXT structure represents the security context of an IRP_MJ_CREATE request.
-old-location : kernel\io_security_context.htm
-old-project : kernel
-ms.assetid : 6500c46b-ae39-4c91-8b84-14df0a7046a1
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/PIO_SECURITY_CONTEXT, *PIO_SECURITY_CONTEXT, kernel.io_security_context, _IO_SECURITY_CONTEXT, wdm/IO_SECURITY_CONTEXT, IO_SECURITY_CONTEXT structure [Kernel-Mode Driver Architecture], PIO_SECURITY_CONTEXT structure pointer [Kernel-Mode Driver Architecture], IO_SECURITY_CONTEXT, PIO_SECURITY_CONTEXT, kstruct_b_2c3ede84-cdd5-4e78-99b9-5ff642463f85.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PIO_SECURITY_CONTEXT, IO_SECURITY_CONTEXT"
-req.product : Windows 10 or later.
+UID: NS:wdm._IO_SECURITY_CONTEXT
+title: "_IO_SECURITY_CONTEXT"
+author: windows-driver-content
+description: The IO_SECURITY_CONTEXT structure represents the security context of an IRP_MJ_CREATE request.
+old-location: kernel\io_security_context.htm
+old-project: kernel
+ms.assetid: 6500c46b-ae39-4c91-8b84-14df0a7046a1
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/PIO_SECURITY_CONTEXT, *PIO_SECURITY_CONTEXT, kernel.io_security_context, _IO_SECURITY_CONTEXT, wdm/IO_SECURITY_CONTEXT, IO_SECURITY_CONTEXT structure [Kernel-Mode Driver Architecture], PIO_SECURITY_CONTEXT structure pointer [Kernel-Mode Driver Architecture], IO_SECURITY_CONTEXT, PIO_SECURITY_CONTEXT, kstruct_b_2c3ede84-cdd5-4e78-99b9-5ff642463f85.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	IO_SECURITY_CONTEXT
+product: Windows
+targetos: Windows
+req.typenames: "*PIO_SECURITY_CONTEXT, IO_SECURITY_CONTEXT"
+req.product: Windows 10 or later.
 ---
 
 # _IO_SECURITY_CONTEXT structure

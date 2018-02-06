@@ -1,42 +1,47 @@
 ---
-UID : NS:rilapitypes.RILUICCRECORDSTATUS
-title : RILUICCRECORDSTATUS
-author : windows-driver-content
-description : This structure represents RILUICCRECORDSTATUS.
-old-location : netvista\riluiccrecordstatus.htm
-old-project : netvista
-ms.assetid : 073fe700-ea6d-4d29-8751-66b27714f72d
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : RILUICCRECORDSTATUS structure [Network Drivers Starting with Windows Vista], *LPRILUICCRECORDSTATUS, RILUICCRECORDSTATUS, rilapitypes/RILUICCRECORDSTATUS, netvista.riluiccrecordstatus
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : rilapitypes.h
-req.include-header : Rilapitypes.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*LPRILUICCRECORDSTATUS, RILUICCRECORDSTATUS"
-req.product : Windows 10 or later.
+UID: NS:rilapitypes.RILUICCRECORDSTATUS
+title: RILUICCRECORDSTATUS
+author: windows-driver-content
+description: This structure represents RILUICCRECORDSTATUS.
+old-location: netvista\riluiccrecordstatus.htm
+old-project: netvista
+ms.assetid: 073fe700-ea6d-4d29-8751-66b27714f72d
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: RILUICCRECORDSTATUS structure [Network Drivers Starting with Windows Vista], *LPRILUICCRECORDSTATUS, RILUICCRECORDSTATUS, rilapitypes/RILUICCRECORDSTATUS, netvista.riluiccrecordstatus
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: rilapitypes.h
+req.include-header: Rilapitypes.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	rilapitypes.h
+apiname:
+-	RILUICCRECORDSTATUS
+product: Windows
+targetos: Windows
+req.typenames: "*LPRILUICCRECORDSTATUS, RILUICCRECORDSTATUS"
+req.product: Windows 10 or later.
 ---
 
 # RILUICCRECORDSTATUS structure

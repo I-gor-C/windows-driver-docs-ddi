@@ -1,41 +1,47 @@
 ---
-UID : NF:portcls.PcNewRegistryKey
-title : PcNewRegistryKey function
-author : windows-driver-content
-description : The PcNewRegistryKey function opens or creates a new registry key and creates an IRegistryKey object to represent the key. The caller accesses the key through this object.
-old-location : audio\pcnewregistrykey.htm
-old-project : audio
-ms.assetid : d8ef9e7f-8ce0-48df-973f-170c47e55777
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : PcNewRegistryKey function [Audio Devices], PcNewRegistryKey, audpc-routines_67ac1fc2-b40b-4176-8a86-0f4d6eb15e6a.xml, audio.pcnewregistrykey, portcls/PcNewRegistryKey
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : portcls.h
-req.include-header : Portcls.h
-req.target-type : Universal
-req.target-min-winverclnt : The PortCls system driver implements the PcNewRegistryKey function in Microsoft Windows 98/Me and in Windows 2000 and later operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Portcls.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.PcNewRegistryKey
+title: PcNewRegistryKey function
+author: windows-driver-content
+description: The PcNewRegistryKey function opens or creates a new registry key and creates an IRegistryKey object to represent the key. The caller accesses the key through this object.
+old-location: audio\pcnewregistrykey.htm
+old-project: audio
+ms.assetid: d8ef9e7f-8ce0-48df-973f-170c47e55777
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: PcNewRegistryKey function [Audio Devices], PcNewRegistryKey, audpc-routines_67ac1fc2-b40b-4176-8a86-0f4d6eb15e6a.xml, audio.pcnewregistrykey, portcls/PcNewRegistryKey
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: portcls.h
+req.include-header: Portcls.h
+req.target-type: Universal
+req.target-min-winverclnt: The PortCls system driver implements the PcNewRegistryKey function in Microsoft Windows 98/Me and in Windows 2000 and later operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Portcls.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Portcls.lib
+-	Portcls.dll
+apiname:
+-	PcNewRegistryKey
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

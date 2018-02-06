@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dukmdt._D3DDDI_ESCAPEFLAGS
-title : "_D3DDDI_ESCAPEFLAGS"
-author : windows-driver-content
-description : The D3DDDI_ESCAPEFLAGS structure identifies how the user-mode display driver shares information with the display miniport driver.
-old-location : display\d3dddi_escapeflags.htm
-old-project : display
-ms.assetid : 40648f6a-3393-4374-beff-e097c299f9e9
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.d3dddi_escapeflags, d3dukmdt/D3DDDI_ESCAPEFLAGS, _D3DDDI_ESCAPEFLAGS, D3D_other_Structs_5ff9ad07-6a44-4a53-a70c-5abdbe84065a.xml, D3DDDI_ESCAPEFLAGS structure [Display Devices], D3DDDI_ESCAPEFLAGS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dukmdt.h
-req.include-header : D3dumddi.h, D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDI_ESCAPEFLAGS
+UID: NS:d3dukmdt._D3DDDI_ESCAPEFLAGS
+title: "_D3DDDI_ESCAPEFLAGS"
+author: windows-driver-content
+description: The D3DDDI_ESCAPEFLAGS structure identifies how the user-mode display driver shares information with the display miniport driver.
+old-location: display\d3dddi_escapeflags.htm
+old-project: display
+ms.assetid: 40648f6a-3393-4374-beff-e097c299f9e9
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.d3dddi_escapeflags, d3dukmdt/D3DDDI_ESCAPEFLAGS, _D3DDDI_ESCAPEFLAGS, D3D_other_Structs_5ff9ad07-6a44-4a53-a70c-5abdbe84065a.xml, D3DDDI_ESCAPEFLAGS structure [Display Devices], D3DDDI_ESCAPEFLAGS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dukmdt.h
+req.include-header: D3dumddi.h, D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dukmdt.h
+apiname:
+-	D3DDDI_ESCAPEFLAGS
+product: Windows
+targetos: Windows
+req.typenames: D3DDDI_ESCAPEFLAGS
 ---
 
 # _D3DDDI_ESCAPEFLAGS structure

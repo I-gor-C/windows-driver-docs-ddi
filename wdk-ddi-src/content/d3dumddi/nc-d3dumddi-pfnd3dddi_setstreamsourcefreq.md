@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_SETSTREAMSOURCEFREQ
-title : PFND3DDDI_SETSTREAMSOURCEFREQ
-author : windows-driver-content
-description : The SetStreamSourceFreq function sets the frequency divisor of a stream source that is bound to a vertex buffer.
-old-location : display\setstreamsourcefreq.htm
-old-project : display
-ms.assetid : 92cb270c-1548-4239-81cd-5b3483769fc8
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.setstreamsourcefreq, SetStreamSourceFreq callback function [Display Devices], SetStreamSourceFreq, PFND3DDDI_SETSTREAMSOURCEFREQ, PFND3DDDI_SETSTREAMSOURCEFREQ, d3dumddi/SetStreamSourceFreq, UserModeDisplayDriver_Functions_4cb72b36-4cea-424f-b7a3-149435170f24.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_SETSTREAMSOURCEFREQ
+title: PFND3DDDI_SETSTREAMSOURCEFREQ
+author: windows-driver-content
+description: The SetStreamSourceFreq function sets the frequency divisor of a stream source that is bound to a vertex buffer.
+old-location: display\setstreamsourcefreq.htm
+old-project: display
+ms.assetid: 92cb270c-1548-4239-81cd-5b3483769fc8
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.setstreamsourcefreq, SetStreamSourceFreq callback function [Display Devices], SetStreamSourceFreq, PFND3DDDI_SETSTREAMSOURCEFREQ, PFND3DDDI_SETSTREAMSOURCEFREQ, d3dumddi/SetStreamSourceFreq, UserModeDisplayDriver_Functions_4cb72b36-4cea-424f-b7a3-149435170f24.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	SetStreamSourceFreq
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

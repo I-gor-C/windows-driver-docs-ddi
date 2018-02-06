@@ -1,41 +1,50 @@
 ---
-UID : NF:dbgeng.IDebugClient5.WriteDumpFile
-title : IDebugClient5::WriteDumpFile method
-author : windows-driver-content
-description : The WriteDumpFile method creates a user-mode or kernel-modecrash dump file.
-old-location : debugger\writedumpfile.htm
-old-project : debugger
-ms.assetid : 5f410561-b848-471e-8230-f12aa512a897
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugClient5::WriteDumpFile, WriteDumpFile method [Windows Debugging], IDebugClient3 interface, IDebugClient interface [Windows Debugging], WriteDumpFile method, dbgeng/IDebugClient3::WriteDumpFile, WriteDumpFile method [Windows Debugging], IDebugClient4 interface, dbgeng/IDebugClient::WriteDumpFile, IDebugClient::WriteDumpFile, dbgeng/IDebugClient4::WriteDumpFile, IDebugClient2::WriteDumpFile, WriteDumpFile method [Windows Debugging], IDebugClient2 interface, debugger.writedumpfile, dbgeng/IDebugClient2::WriteDumpFile, WriteDumpFile method [Windows Debugging], IDebugClient interface, IDebugClient4::WriteDumpFile, IDebugClient2 interface [Windows Debugging], WriteDumpFile method, WriteDumpFile method [Windows Debugging], IDebugClient5 interface, IDebugClient_d9fa8d64-3c92-425b-82fc-dec8553bdb52.xml, IDebugClient3::WriteDumpFile, dbgeng/IDebugClient5::WriteDumpFile, IDebugClient3 interface [Windows Debugging], WriteDumpFile method, IDebugClient5 interface [Windows Debugging], WriteDumpFile method, WriteDumpFile, WriteDumpFile method [Windows Debugging], IDebugClient4 interface [Windows Debugging], WriteDumpFile method, IDebugClient5
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugClient5.WriteDumpFile
+title: IDebugClient5::WriteDumpFile method
+author: windows-driver-content
+description: The WriteDumpFile method creates a user-mode or kernel-modecrash dump file.
+old-location: debugger\writedumpfile.htm
+old-project: debugger
+ms.assetid: 5f410561-b848-471e-8230-f12aa512a897
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugClient5::WriteDumpFile, WriteDumpFile method [Windows Debugging], IDebugClient3 interface, IDebugClient interface [Windows Debugging], WriteDumpFile method, dbgeng/IDebugClient3::WriteDumpFile, WriteDumpFile method [Windows Debugging], IDebugClient4 interface, dbgeng/IDebugClient::WriteDumpFile, IDebugClient::WriteDumpFile, dbgeng/IDebugClient4::WriteDumpFile, IDebugClient2::WriteDumpFile, WriteDumpFile method [Windows Debugging], IDebugClient2 interface, debugger.writedumpfile, dbgeng/IDebugClient2::WriteDumpFile, WriteDumpFile method [Windows Debugging], IDebugClient interface, IDebugClient4::WriteDumpFile, IDebugClient2 interface [Windows Debugging], WriteDumpFile method, WriteDumpFile method [Windows Debugging], IDebugClient5 interface, IDebugClient_d9fa8d64-3c92-425b-82fc-dec8553bdb52.xml, IDebugClient3::WriteDumpFile, dbgeng/IDebugClient5::WriteDumpFile, IDebugClient3 interface [Windows Debugging], WriteDumpFile method, IDebugClient5 interface [Windows Debugging], WriteDumpFile method, WriteDumpFile, WriteDumpFile method [Windows Debugging], IDebugClient4 interface [Windows Debugging], WriteDumpFile method, IDebugClient5
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugClient.WriteDumpFile
+-	IDebugClient2.WriteDumpFile
+-	IDebugClient3.WriteDumpFile
+-	IDebugClient4.WriteDumpFile
+-	IDebugClient5.WriteDumpFile
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

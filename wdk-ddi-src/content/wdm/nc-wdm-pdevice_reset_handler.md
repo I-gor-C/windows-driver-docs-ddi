@@ -1,42 +1,47 @@
 ---
-UID : NC:wdm.PDEVICE_RESET_HANDLER
-title : PDEVICE_RESET_HANDLER
-author : windows-driver-content
-description : The DeviceReset routine is used to reset and recover a malfunctioning device.
-old-location : kernel\devicereset.htm
-old-project : kernel
-ms.assetid : A5AA5E73-3DC1-4977-9B64-9E0FB3E6609E
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ResetDevice routine [Kernel-Mode Driver Architecture], ResetDevice, PDEVICE_RESET_HANDLER, PDEVICE_RESET_HANDLER, wdm/ResetDevice, kernel.devicereset
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdm.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Supported starting with Windows 10.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
-req.product : Windows 10 or later.
+UID: NC:wdm.PDEVICE_RESET_HANDLER
+title: PDEVICE_RESET_HANDLER
+author: windows-driver-content
+description: The DeviceReset routine is used to reset and recover a malfunctioning device.
+old-location: kernel\devicereset.htm
+old-project: kernel
+ms.assetid: A5AA5E73-3DC1-4977-9B64-9E0FB3E6609E
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ResetDevice routine [Kernel-Mode Driver Architecture], ResetDevice, PDEVICE_RESET_HANDLER, PDEVICE_RESET_HANDLER, wdm/ResetDevice, kernel.devicereset
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdm.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Supported starting with Windows 10.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Wdm.h
+apiname:
+-	ResetDevice
+product: Windows
+targetos: Windows
+req.typenames: WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+req.product: Windows 10 or later.
 ---
 
 

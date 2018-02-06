@@ -1,41 +1,50 @@
 ---
-UID : NF:dbgeng.IDebugClient5.ConnectSession
-title : IDebugClient5::ConnectSession method
-author : windows-driver-content
-description : The ConnectSession method joins the client to an existing debugger session.
-old-location : debugger\connectsession.htm
-old-project : debugger
-ms.assetid : 4531bf2f-ef3b-4d4f-b922-3a01a9468ac9
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugClient4 interface [Windows Debugging], ConnectSession method, ConnectSession method [Windows Debugging], ConnectSession method [Windows Debugging], IDebugClient5 interface, IDebugClient3 interface [Windows Debugging], ConnectSession method, dbgeng/IDebugClient2::ConnectSession, ConnectSession method [Windows Debugging], IDebugClient interface, ConnectSession, IDebugClient2 interface [Windows Debugging], ConnectSession method, dbgeng/IDebugClient3::ConnectSession, IDebugClient5 interface [Windows Debugging], ConnectSession method, dbgeng/IDebugClient::ConnectSession, ConnectSession method [Windows Debugging], IDebugClient4 interface, IDebugClient4::ConnectSession, ConnectSession method [Windows Debugging], IDebugClient3 interface, IDebugClient::ConnectSession, IDebugClient_b6ec9f48-f400-4a91-bf23-dc40dd702a15.xml, ConnectSession method [Windows Debugging], IDebugClient2 interface, IDebugClient interface [Windows Debugging], ConnectSession method, dbgeng/IDebugClient5::ConnectSession, IDebugClient2::ConnectSession, debugger.connectsession, IDebugClient3::ConnectSession, dbgeng/IDebugClient4::ConnectSession, IDebugClient5, IDebugClient5::ConnectSession
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugClient5.ConnectSession
+title: IDebugClient5::ConnectSession method
+author: windows-driver-content
+description: The ConnectSession method joins the client to an existing debugger session.
+old-location: debugger\connectsession.htm
+old-project: debugger
+ms.assetid: 4531bf2f-ef3b-4d4f-b922-3a01a9468ac9
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugClient4 interface [Windows Debugging], ConnectSession method, ConnectSession method [Windows Debugging], ConnectSession method [Windows Debugging], IDebugClient5 interface, IDebugClient3 interface [Windows Debugging], ConnectSession method, dbgeng/IDebugClient2::ConnectSession, ConnectSession method [Windows Debugging], IDebugClient interface, ConnectSession, IDebugClient2 interface [Windows Debugging], ConnectSession method, dbgeng/IDebugClient3::ConnectSession, IDebugClient5 interface [Windows Debugging], ConnectSession method, dbgeng/IDebugClient::ConnectSession, ConnectSession method [Windows Debugging], IDebugClient4 interface, IDebugClient4::ConnectSession, ConnectSession method [Windows Debugging], IDebugClient3 interface, IDebugClient::ConnectSession, IDebugClient_b6ec9f48-f400-4a91-bf23-dc40dd702a15.xml, ConnectSession method [Windows Debugging], IDebugClient2 interface, IDebugClient interface [Windows Debugging], ConnectSession method, dbgeng/IDebugClient5::ConnectSession, IDebugClient2::ConnectSession, debugger.connectsession, IDebugClient3::ConnectSession, dbgeng/IDebugClient4::ConnectSession, IDebugClient5, IDebugClient5::ConnectSession
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugClient.ConnectSession
+-	IDebugClient2.ConnectSession
+-	IDebugClient3.ConnectSession
+-	IDebugClient4.ConnectSession
+-	IDebugClient5.ConnectSession
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

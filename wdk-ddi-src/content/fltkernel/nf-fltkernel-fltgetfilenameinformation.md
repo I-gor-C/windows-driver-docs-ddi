@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltGetFileNameInformation
-title : FltGetFileNameInformation function
-author : windows-driver-content
-description : The FltGetFileNameInformation routine returns name information for a file or directory.
-old-location : ifsk\fltgetfilenameinformation.htm
-old-project : ifsk
-ms.assetid : 707e7e83-31d8-46cf-a2ef-e53a20edaeff
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltApiRef_e_to_o_1ce08fd0-5e23-43de-b012-dd71086282ea.xml, FltGetFileNameInformation routine [Installable File System Drivers], ifsk.fltgetfilenameinformation, fltkernel/FltGetFileNameInformation, FltGetFileNameInformation
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltGetFileNameInformation
+title: FltGetFileNameInformation function
+author: windows-driver-content
+description: The FltGetFileNameInformation routine returns name information for a file or directory.
+old-location: ifsk\fltgetfilenameinformation.htm
+old-project: ifsk
+ms.assetid: 707e7e83-31d8-46cf-a2ef-e53a20edaeff
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltApiRef_e_to_o_1ce08fd0-5e23-43de-b012-dd71086282ea.xml, FltGetFileNameInformation routine [Installable File System Drivers], ifsk.fltgetfilenameinformation, fltkernel/FltGetFileNameInformation, FltGetFileNameInformation
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltGetFileNameInformation
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

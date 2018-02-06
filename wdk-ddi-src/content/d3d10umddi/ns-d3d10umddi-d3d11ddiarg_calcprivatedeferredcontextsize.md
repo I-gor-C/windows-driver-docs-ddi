@@ -1,41 +1,46 @@
 ---
-UID : NS:d3d10umddi.D3D11DDIARG_CALCPRIVATEDEFERREDCONTEXTSIZE
-title : D3D11DDIARG_CALCPRIVATEDEFERREDCONTEXTSIZE
-author : windows-driver-content
-description : The D3D11DDIARG_CALCPRIVATEDEFERREDCONTEXTSIZE structure describes the parameters that the user-mode display driver uses to calculate the size of a memory block that the driver requires to store frequently-accessed data.
-old-location : display\d3d11ddiarg_calcprivatedeferredcontextsize.htm
-old-project : display
-ms.assetid : 7889400e-bd26-43b5-a860-bea9f9217002
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3D11DDIARG_CALCPRIVATEDEFERREDCONTEXTSIZE, UMDisplayDriver_Dx11param_Structs_eca4d605-7188-46b1-b429-04094a9f7db6.xml, d3d10umddi/D3D11DDIARG_CALCPRIVATEDEFERREDCONTEXTSIZE, D3D11DDIARG_CALCPRIVATEDEFERREDCONTEXTSIZE structure [Display Devices], display.d3d11ddiarg_calcprivatedeferredcontextsize
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Windows
-req.target-min-winverclnt : D3D11DDIARG_CALCPRIVATEDEFERREDCONTEXTSIZE is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3D11DDIARG_CALCPRIVATEDEFERREDCONTEXTSIZE
+UID: NS:d3d10umddi.D3D11DDIARG_CALCPRIVATEDEFERREDCONTEXTSIZE
+title: D3D11DDIARG_CALCPRIVATEDEFERREDCONTEXTSIZE
+author: windows-driver-content
+description: The D3D11DDIARG_CALCPRIVATEDEFERREDCONTEXTSIZE structure describes the parameters that the user-mode display driver uses to calculate the size of a memory block that the driver requires to store frequently-accessed data.
+old-location: display\d3d11ddiarg_calcprivatedeferredcontextsize.htm
+old-project: display
+ms.assetid: 7889400e-bd26-43b5-a860-bea9f9217002
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3D11DDIARG_CALCPRIVATEDEFERREDCONTEXTSIZE, UMDisplayDriver_Dx11param_Structs_eca4d605-7188-46b1-b429-04094a9f7db6.xml, d3d10umddi/D3D11DDIARG_CALCPRIVATEDEFERREDCONTEXTSIZE, D3D11DDIARG_CALCPRIVATEDEFERREDCONTEXTSIZE structure [Display Devices], display.d3d11ddiarg_calcprivatedeferredcontextsize
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Windows
+req.target-min-winverclnt: D3D11DDIARG_CALCPRIVATEDEFERREDCONTEXTSIZE is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	D3D11DDIARG_CALCPRIVATEDEFERREDCONTEXTSIZE
+product: Windows
+targetos: Windows
+req.typenames: D3D11DDIARG_CALCPRIVATEDEFERREDCONTEXTSIZE
 ---
 
 # D3D11DDIARG_CALCPRIVATEDEFERREDCONTEXTSIZE structure

@@ -1,42 +1,47 @@
 ---
-UID : NI:usbioctl.IOCTL_USB_STOP_TRACKING_FOR_TIME_SYNC
-title : IOCTL_USB_STOP_TRACKING_FOR_TIME_SYNC
-author : windows-driver-content
-description : This request unegisters the caller with USB driver stack for time sync services.
-old-location : buses\_ioctl_usb_stop_tracking_for_time_sync.htm
-old-project : usbref
-ms.assetid : 232AC14B-CE3C-44AC-9428-5594993CD749
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : buses._ioctl_usb_stop_tracking_for_time_sync, IOCTL_USB_STOP_TRACKING_FOR_TIME_SYNC control code [Buses], IOCTL_USB_STOP_TRACKING_FOR_TIME_SYNC, usbioctl/ IOCTL_USB_STOP_TRACKING_FOR_TIME_SYNC
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : usbioctl.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10, version 1709
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : USB_HUB_TYPE
-req.product : Windows 10 or later.
+UID: NI:usbioctl.IOCTL_USB_STOP_TRACKING_FOR_TIME_SYNC
+title: IOCTL_USB_STOP_TRACKING_FOR_TIME_SYNC
+author: windows-driver-content
+description: This request unegisters the caller with USB driver stack for time sync services.
+old-location: buses\_ioctl_usb_stop_tracking_for_time_sync.htm
+old-project: usbref
+ms.assetid: 232AC14B-CE3C-44AC-9428-5594993CD749
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: buses._ioctl_usb_stop_tracking_for_time_sync, IOCTL_USB_STOP_TRACKING_FOR_TIME_SYNC control code [Buses], IOCTL_USB_STOP_TRACKING_FOR_TIME_SYNC, usbioctl/ IOCTL_USB_STOP_TRACKING_FOR_TIME_SYNC
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: usbioctl.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10, version 1709
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Usbioctl.h
+apiname:
+-	IOCTL_USB_STOP_TRACKING_FOR_TIME_SYNC
+product: Windows
+targetos: Windows
+req.typenames: USB_HUB_TYPE
+req.product: Windows 10 or later.
 ---
 
 # IOCTL_USB_STOP_TRACKING_FOR_TIME_SYNC IOCTL

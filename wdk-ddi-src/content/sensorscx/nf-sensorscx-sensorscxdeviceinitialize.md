@@ -1,42 +1,47 @@
 ---
-UID : NF:sensorscx.SensorsCxDeviceInitialize
-title : SensorsCxDeviceInitialize function
-author : windows-driver-content
-description : This function initializes the sensor in the class extension.
-old-location : sensors\sensorscxdeviceinitialize.htm
-old-project : sensors
-ms.assetid : F6F758AC-5C8C-4226-B906-972C5BCD7A3E
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : SensorsCxDeviceInitialize, sensors.sensorscxdeviceinitialize, SensorsCxDeviceInitialize function [Sensor Devices], sensorscx/SensorsCxDeviceInitialize
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : sensorscx.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SensorConnectionType
-req.product : Windows 10 or later.
+UID: NF:sensorscx.SensorsCxDeviceInitialize
+title: SensorsCxDeviceInitialize function
+author: windows-driver-content
+description: This function initializes the sensor in the class extension.
+old-location: sensors\sensorscxdeviceinitialize.htm
+old-project: sensors
+ms.assetid: F6F758AC-5C8C-4226-B906-972C5BCD7A3E
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: SensorsCxDeviceInitialize, sensors.sensorscxdeviceinitialize, SensorsCxDeviceInitialize function [Sensor Devices], sensorscx/SensorsCxDeviceInitialize
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: sensorscx.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	SensorsCx.h
+apiname:
+-	SensorsCxDeviceInitialize
+product: Windows
+targetos: Windows
+req.typenames: SensorConnectionType
+req.product: Windows 10 or later.
 ---
 
 

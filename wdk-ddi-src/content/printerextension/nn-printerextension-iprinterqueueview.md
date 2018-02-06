@@ -1,42 +1,47 @@
 ---
-UID : NN:printerextension.IPrinterQueueView
-title : IPrinterQueueView
-author : windows-driver-content
-description : Provides a way to change the range of print jobs being monitored.
-old-location : print\iprinterqueueview.htm
-old-project : print
-ms.assetid : 81B3D4A3-7176-4656-B23D-04F0F84D9000
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : print.iprinterqueueview, IPrinterQueueView interface [Print Devices], IPrinterQueueView interface [Print Devices], described, IPrinterQueueView, printerextension/IPrinterQueueView
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : printerextension.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8.1
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : printerextension.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PrintSchemaSelectionType
-req.product : Windows 10 or later.
+UID: NN:printerextension.IPrinterQueueView
+title: IPrinterQueueView
+author: windows-driver-content
+description: Provides a way to change the range of print jobs being monitored.
+old-location: print\iprinterqueueview.htm
+old-project: print
+ms.assetid: 81B3D4A3-7176-4656-B23D-04F0F84D9000
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: print.iprinterqueueview, IPrinterQueueView interface [Print Devices], IPrinterQueueView interface [Print Devices], described, IPrinterQueueView, printerextension/IPrinterQueueView
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: printerextension.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8.1
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: printerextension.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Printerextension.h
+apiname:
+-	IPrinterQueueView
+product: Windows
+targetos: Windows
+req.typenames: PrintSchemaSelectionType
+req.product: Windows 10 or later.
 ---
 
 # IPrinterQueueView interface

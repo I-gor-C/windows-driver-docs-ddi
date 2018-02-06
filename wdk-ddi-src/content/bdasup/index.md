@@ -1,12 +1,12 @@
 ---
-UID : NA:bdasup
-ms.assetid : 501c4a0b-90dc-39ca-905e-a662bbbfe6be
-ms.author : windowsdriverdev
-ms.date : 01/18/18
-ms.keywords : 
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : portal
+UID: NA:bdasup
+ms.assetid: 501c4a0b-90dc-39ca-905e-a662bbbfe6be
+ms.author: windowsdriverdev
+ms.date: 01/18/18
+ms.keywords: 
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: portal
 ---
 
 # bdasup.h header

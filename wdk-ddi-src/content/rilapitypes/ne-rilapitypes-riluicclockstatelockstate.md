@@ -1,42 +1,47 @@
 ---
-UID : NE:rilapitypes.RILUICCLOCKSTATELOCKSTATE
-title : RILUICCLOCKSTATELOCKSTATE
-author : windows-driver-content
-description : This enumeration describes the RILUICCLOCKSTATELOCKSTATE.
-old-location : netvista\riluicclockstatelockstate.htm
-old-project : netvista
-ms.assetid : 95f73081-b809-407d-b73b-975b97301449
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : RIL_PARAM_UICCLOCKSTATE_LOCKSTATE, rilapitypes/RIL_UICCLOCKSTATE_BLOCKED, RILUICCLOCKSTATELOCKSTATE, RILUICCLOCKSTATELOCKSTATE enumeration [Network Drivers Starting with Windows Vista], RIL_UICCLOCKSTATE_VERIFIED, rilapitypes/RIL_UICCLOCKSTATE_ENABLED, rilapitypes/RIL_PARAM_UICCLOCKSTATE_LOCKSTATE, RIL_UICCLOCKSTATE_BLOCKED, rilapitypes/RILUICCLOCKSTATELOCKSTATE, RIL_UICCLOCKSTATE_ENABLED, netvista.riluicclockstatelockstate, rilapitypes/RIL_UICCLOCKSTATE_VERIFIED
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : rilapitypes.h
-req.include-header : Rilapitypes.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RILUICCLOCKSTATELOCKSTATE
-req.product : Windows 10 or later.
+UID: NE:rilapitypes.RILUICCLOCKSTATELOCKSTATE
+title: RILUICCLOCKSTATELOCKSTATE
+author: windows-driver-content
+description: This enumeration describes the RILUICCLOCKSTATELOCKSTATE.
+old-location: netvista\riluicclockstatelockstate.htm
+old-project: netvista
+ms.assetid: 95f73081-b809-407d-b73b-975b97301449
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: RIL_PARAM_UICCLOCKSTATE_LOCKSTATE, rilapitypes/RIL_UICCLOCKSTATE_BLOCKED, RILUICCLOCKSTATELOCKSTATE, RILUICCLOCKSTATELOCKSTATE enumeration [Network Drivers Starting with Windows Vista], RIL_UICCLOCKSTATE_VERIFIED, rilapitypes/RIL_UICCLOCKSTATE_ENABLED, rilapitypes/RIL_PARAM_UICCLOCKSTATE_LOCKSTATE, RIL_UICCLOCKSTATE_BLOCKED, rilapitypes/RILUICCLOCKSTATELOCKSTATE, RIL_UICCLOCKSTATE_ENABLED, netvista.riluicclockstatelockstate, rilapitypes/RIL_UICCLOCKSTATE_VERIFIED
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: rilapitypes.h
+req.include-header: Rilapitypes.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	rilapitypes.h
+apiname:
+-	RILUICCLOCKSTATELOCKSTATE
+product: Windows
+targetos: Windows
+req.typenames: RILUICCLOCKSTATELOCKSTATE
+req.product: Windows 10 or later.
 ---
 
 # RILUICCLOCKSTATELOCKSTATE Enumeration
@@ -56,31 +61,31 @@ enum RILUICCLOCKSTATELOCKSTATE {
 ## Constants
 
 <table>
-
-<tr>
-<td>RIL_UICCLOCKSTATE_ALL</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_UICCLOCKSTATE_BLOCKED</td>
-<td>Lock is blocked.</td>
-</tr>
-
-<tr>
-<td>RIL_UICCLOCKSTATE_ENABLED</td>
-<td>Lock is enabled.</td>
-</tr>
-
-<tr>
-<td>RIL_UICCLOCKSTATE_NONE</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_UICCLOCKSTATE_VERIFIED</td>
-<td>Lock is verified.</td>
-</tr>
+            
+                <tr>
+                    <td>RIL_UICCLOCKSTATE_ALL</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_UICCLOCKSTATE_BLOCKED</td>
+                    <td>Lock is blocked.</td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_UICCLOCKSTATE_ENABLED</td>
+                    <td>Lock is enabled.</td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_UICCLOCKSTATE_NONE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_UICCLOCKSTATE_VERIFIED</td>
+                    <td>Lock is verified.</td>
+                </tr>
 </table>
 
 
@@ -89,9 +94,9 @@ enum RILUICCLOCKSTATELOCKSTATE {
 | ---- |:---- |
 | **Header** | rilapitypes.h (include Rilapitypes.h) |
 
-## See Also
+    ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn946509">Cellular COM enumerations</a>
+        <a href="https://msdn.microsoft.com/library/windows/hardware/dn946509">Cellular COM enumerations</a>
 
  
 

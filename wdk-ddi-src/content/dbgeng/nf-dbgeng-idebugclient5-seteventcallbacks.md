@@ -1,41 +1,50 @@
 ---
-UID : NF:dbgeng.IDebugClient5.SetEventCallbacks
-title : IDebugClient5::SetEventCallbacks method
-author : windows-driver-content
-description : The SetEventCallbacks method registers an event callbacks object with this client.
-old-location : debugger\seteventcallbacks.htm
-old-project : debugger
-ms.assetid : c741777b-dfaf-42b0-9dd7-6678281b6359
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : dbgeng/IDebugClient::SetEventCallbacks, IDebugClient::SetEventCallbacks, IDebugClient5::SetEventCallbacks, dbgeng/IDebugClient3::SetEventCallbacks, SetEventCallbacks method [Windows Debugging], IDebugClient5 interface, dbgeng/IDebugClient2::SetEventCallbacks, dbgeng/IDebugClient5::SetEventCallbacks, IDebugClient_a234bf28-5dd1-4e92-ab72-aa8d9a3a282b.xml, IDebugClient4 interface [Windows Debugging], SetEventCallbacks method, IDebugClient5 interface [Windows Debugging], SetEventCallbacks method, SetEventCallbacks method [Windows Debugging], IDebugClient4 interface, SetEventCallbacks method [Windows Debugging], IDebugClient2 interface, IDebugClient2 interface [Windows Debugging], SetEventCallbacks method, SetEventCallbacks method [Windows Debugging], IDebugClient3 interface [Windows Debugging], SetEventCallbacks method, IDebugClient2::SetEventCallbacks, dbgeng/IDebugClient4::SetEventCallbacks, SetEventCallbacks method [Windows Debugging], IDebugClient interface, IDebugClient interface [Windows Debugging], SetEventCallbacks method, IDebugClient3::SetEventCallbacks, IDebugClient4::SetEventCallbacks, SetEventCallbacks, SetEventCallbacks method [Windows Debugging], IDebugClient3 interface, debugger.seteventcallbacks, IDebugClient5
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugClient5.SetEventCallbacks
+title: IDebugClient5::SetEventCallbacks method
+author: windows-driver-content
+description: The SetEventCallbacks method registers an event callbacks object with this client.
+old-location: debugger\seteventcallbacks.htm
+old-project: debugger
+ms.assetid: c741777b-dfaf-42b0-9dd7-6678281b6359
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: dbgeng/IDebugClient::SetEventCallbacks, IDebugClient::SetEventCallbacks, IDebugClient5::SetEventCallbacks, dbgeng/IDebugClient3::SetEventCallbacks, SetEventCallbacks method [Windows Debugging], IDebugClient5 interface, dbgeng/IDebugClient2::SetEventCallbacks, dbgeng/IDebugClient5::SetEventCallbacks, IDebugClient_a234bf28-5dd1-4e92-ab72-aa8d9a3a282b.xml, IDebugClient4 interface [Windows Debugging], SetEventCallbacks method, IDebugClient5 interface [Windows Debugging], SetEventCallbacks method, SetEventCallbacks method [Windows Debugging], IDebugClient4 interface, SetEventCallbacks method [Windows Debugging], IDebugClient2 interface, IDebugClient2 interface [Windows Debugging], SetEventCallbacks method, SetEventCallbacks method [Windows Debugging], IDebugClient3 interface [Windows Debugging], SetEventCallbacks method, IDebugClient2::SetEventCallbacks, dbgeng/IDebugClient4::SetEventCallbacks, SetEventCallbacks method [Windows Debugging], IDebugClient interface, IDebugClient interface [Windows Debugging], SetEventCallbacks method, IDebugClient3::SetEventCallbacks, IDebugClient4::SetEventCallbacks, SetEventCallbacks, SetEventCallbacks method [Windows Debugging], IDebugClient3 interface, debugger.seteventcallbacks, IDebugClient5
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugClient.SetEventCallbacks
+-	IDebugClient2.SetEventCallbacks
+-	IDebugClient3.SetEventCallbacks
+-	IDebugClient4.SetEventCallbacks
+-	IDebugClient5.SetEventCallbacks
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

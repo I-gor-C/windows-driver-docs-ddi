@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.KSPROPERTY_TUNER_INPUT_S
-title : KSPROPERTY_TUNER_INPUT_S
-author : windows-driver-content
-description : The KSPROPERTY_TUNER_INPUT_S structure describes the input connection index of a tuner device for devices that support multiple inputs.
-old-location : stream\ksproperty_tuner_input_s.htm
-old-project : stream
-ms.assetid : 02873563-7448-4406-a8ab-599569abbf7e
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.ksproperty_tuner_input_s, ksmedia/PKSPROPERTY_TUNER_INPUT_S, *PKSPROPERTY_TUNER_INPUT_S, vidcapstruct_db1848a6-76f7-4f65-923e-cfd678a90b64.xml, KSPROPERTY_TUNER_INPUT_S structure [Streaming Media Devices], KSPROPERTY_TUNER_INPUT_S, PKSPROPERTY_TUNER_INPUT_S structure pointer [Streaming Media Devices], ksmedia/KSPROPERTY_TUNER_INPUT_S, PKSPROPERTY_TUNER_INPUT_S
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKSPROPERTY_TUNER_INPUT_S, KSPROPERTY_TUNER_INPUT_S"
+UID: NS:ksmedia.KSPROPERTY_TUNER_INPUT_S
+title: KSPROPERTY_TUNER_INPUT_S
+author: windows-driver-content
+description: The KSPROPERTY_TUNER_INPUT_S structure describes the input connection index of a tuner device for devices that support multiple inputs.
+old-location: stream\ksproperty_tuner_input_s.htm
+old-project: stream
+ms.assetid: 02873563-7448-4406-a8ab-599569abbf7e
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.ksproperty_tuner_input_s, ksmedia/PKSPROPERTY_TUNER_INPUT_S, *PKSPROPERTY_TUNER_INPUT_S, vidcapstruct_db1848a6-76f7-4f65-923e-cfd678a90b64.xml, KSPROPERTY_TUNER_INPUT_S structure [Streaming Media Devices], KSPROPERTY_TUNER_INPUT_S, PKSPROPERTY_TUNER_INPUT_S structure pointer [Streaming Media Devices], ksmedia/KSPROPERTY_TUNER_INPUT_S, PKSPROPERTY_TUNER_INPUT_S
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	KSPROPERTY_TUNER_INPUT_S
+product: Windows
+targetos: Windows
+req.typenames: "*PKSPROPERTY_TUNER_INPUT_S, KSPROPERTY_TUNER_INPUT_S"
 ---
 
 # KSPROPERTY_TUNER_INPUT_S structure

@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfresource.WdfIoResourceRequirementsListSetInterfaceType
-title : WdfIoResourceRequirementsListSetInterfaceType function
-author : windows-driver-content
-description : The WdfIoResourceRequirementsListSetInterfaceType method assigns a bus type to a resource requirements list.
-old-location : wdf\wdfioresourcerequirementslistsetinterfacetype.htm
-old-project : wdf
-ms.assetid : c229eb9e-cf1f-43ea-b701-fb8fb6196b40
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdfresource/WdfIoResourceRequirementsListSetInterfaceType, kmdf.wdfioresourcerequirementslistsetinterfacetype, DFResourceObjectRef_3ce545f1-cdad-4ddb-8b65-236461296d21.xml, PFN_WDFIORESOURCEREQUIREMENTSLISTSETINTERFACETYPE, wdf.wdfioresourcerequirementslistsetinterfacetype, WdfIoResourceRequirementsListSetInterfaceType method, WdfIoResourceRequirementsListSetInterfaceType
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfresource.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_REQUEST_SEND_OPTIONS, *PWDF_REQUEST_SEND_OPTIONS
-req.product : Windows 10 or later.
+UID: NF:wdfresource.WdfIoResourceRequirementsListSetInterfaceType
+title: WdfIoResourceRequirementsListSetInterfaceType function
+author: windows-driver-content
+description: The WdfIoResourceRequirementsListSetInterfaceType method assigns a bus type to a resource requirements list.
+old-location: wdf\wdfioresourcerequirementslistsetinterfacetype.htm
+old-project: wdf
+ms.assetid: c229eb9e-cf1f-43ea-b701-fb8fb6196b40
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdfresource/WdfIoResourceRequirementsListSetInterfaceType, kmdf.wdfioresourcerequirementslistsetinterfacetype, DFResourceObjectRef_3ce545f1-cdad-4ddb-8b65-236461296d21.xml, PFN_WDFIORESOURCEREQUIREMENTSLISTSETINTERFACETYPE, wdf.wdfioresourcerequirementslistsetinterfacetype, WdfIoResourceRequirementsListSetInterfaceType method, WdfIoResourceRequirementsListSetInterfaceType
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfresource.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfIoResourceRequirementsListSetInterfaceType
+product: Windows
+targetos: Windows
+req.typenames: WDF_REQUEST_SEND_OPTIONS, *PWDF_REQUEST_SEND_OPTIONS
+req.product: Windows 10 or later.
 ---
 
 

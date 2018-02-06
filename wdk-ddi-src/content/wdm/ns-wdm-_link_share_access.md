@@ -1,42 +1,47 @@
 ---
-UID : NS:wdm._LINK_SHARE_ACCESS
-title : "_LINK_SHARE_ACCESS"
-author : windows-driver-content
-description : The share access structure used by file systems for only link files.
-old-location : kernel\link_share_access.htm
-old-project : kernel
-ms.assetid : CD9E3356-45C3-4F56-9EB3-45FB4B3F054B
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/LINK_SHARE_ACCESS, PLINK_SHARE_ACCESS, wdm/PLINK_SHARE_ACCESS, LINK_SHARE_ACCESS, _LINK_SHARE_ACCESS, kernel.link_share_access, *PLINK_SHARE_ACCESS, LINK_SHARE_ACCESS structure [Kernel-Mode Driver Architecture], PLINK_SHARE_ACCESS structure pointer [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PLINK_SHARE_ACCESS, LINK_SHARE_ACCESS"
-req.product : Windows 10 or later.
+UID: NS:wdm._LINK_SHARE_ACCESS
+title: "_LINK_SHARE_ACCESS"
+author: windows-driver-content
+description: The share access structure used by file systems for only link files.
+old-location: kernel\link_share_access.htm
+old-project: kernel
+ms.assetid: CD9E3356-45C3-4F56-9EB3-45FB4B3F054B
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/LINK_SHARE_ACCESS, PLINK_SHARE_ACCESS, wdm/PLINK_SHARE_ACCESS, LINK_SHARE_ACCESS, _LINK_SHARE_ACCESS, kernel.link_share_access, *PLINK_SHARE_ACCESS, LINK_SHARE_ACCESS structure [Kernel-Mode Driver Architecture], PLINK_SHARE_ACCESS structure pointer [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	LINK_SHARE_ACCESS
+product: Windows
+targetos: Windows
+req.typenames: "*PLINK_SHARE_ACCESS, LINK_SHARE_ACCESS"
+req.product: Windows 10 or later.
 ---
 
 # _LINK_SHARE_ACCESS structure

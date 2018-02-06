@@ -1,41 +1,46 @@
 ---
-UID : NF:ks.KsGateRemoveOnInputFromOr
-title : KsGateRemoveOnInputFromOr function
-author : windows-driver-content
-description : The KsGateRemoveOnInputFromOr function removes an existing input that is in the ON state from an OR gate.
-old-location : stream\ksgateremoveoninputfromor.htm
-old-project : stream
-ms.assetid : e7226684-afbf-46e1-aeb2-6b0c60c12680
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.ksgateremoveoninputfromor, KsGateRemoveOnInputFromOr function [Streaming Media Devices], avfunc_6f131d80-de01-44e6-a17d-eb7f9b0b968f.xml, ks/KsGateRemoveOnInputFromOr, KsGateRemoveOnInputFromOr
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsGateRemoveOnInputFromOr
+title: KsGateRemoveOnInputFromOr function
+author: windows-driver-content
+description: The KsGateRemoveOnInputFromOr function removes an existing input that is in the ON state from an OR gate.
+old-location: stream\ksgateremoveoninputfromor.htm
+old-project: stream
+ms.assetid: e7226684-afbf-46e1-aeb2-6b0c60c12680
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.ksgateremoveoninputfromor, KsGateRemoveOnInputFromOr function [Streaming Media Devices], avfunc_6f131d80-de01-44e6-a17d-eb7f9b0b968f.xml, ks/KsGateRemoveOnInputFromOr, KsGateRemoveOnInputFromOr
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	KsGateRemoveOnInputFromOr
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

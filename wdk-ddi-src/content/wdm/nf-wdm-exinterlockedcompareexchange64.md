@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.ExInterlockedCompareExchange64
-title : ExInterlockedCompareExchange64 macro
-author : windows-driver-content
-description : The ExInterlockedCompareExchange64 routine compares one integer variable to another and, if they are equal, sets the first variable to a caller-supplied value.
-old-location : kernel\exinterlockedcompareexchange64.htm
-old-project : kernel
-ms.assetid : 7d13ca70-e05a-49e0-8dd8-5ab47b4d8169
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ExInterlockedCompareExchange64 routine [Kernel-Mode Driver Architecture], wdm/ExInterlockedCompareExchange64, k102_424c24f9-3965-40fd-b02b-f9bf1f7df4ec.xml, ExInterlockedCompareExchange64, kernel.exinterlockedcompareexchange64
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : macro
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : Any level (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ExInterlockedCompareExchange64
+title: ExInterlockedCompareExchange64 macro
+author: windows-driver-content
+description: The ExInterlockedCompareExchange64 routine compares one integer variable to another and, if they are equal, sets the first variable to a caller-supplied value.
+old-location: kernel\exinterlockedcompareexchange64.htm
+old-project: kernel
+ms.assetid: 7d13ca70-e05a-49e0-8dd8-5ab47b4d8169
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ExInterlockedCompareExchange64 routine [Kernel-Mode Driver Architecture], wdm/ExInterlockedCompareExchange64, k102_424c24f9-3965-40fd-b02b-f9bf1f7df4ec.xml, ExInterlockedCompareExchange64, kernel.exinterlockedcompareexchange64
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: macro
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: Any level (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ExInterlockedCompareExchange64
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

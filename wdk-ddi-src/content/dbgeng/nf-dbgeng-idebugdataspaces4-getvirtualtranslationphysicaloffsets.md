@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugDataSpaces4.GetVirtualTranslationPhysicalOffsets
-title : IDebugDataSpaces4::GetVirtualTranslationPhysicalOffsets method
-author : windows-driver-content
-description : The GetVirtualTranslationPhysicalOffsets method returns the physical addresses of the system paging structures at different levels of the paging hierarchy.
-old-location : debugger\getvirtualtranslationphysicaloffsets.htm
-old-project : debugger
-ms.assetid : 40438ee7-2e58-4048-8739-75f21179c22c
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugDataSpaces3 interface [Windows Debugging], GetVirtualTranslationPhysicalOffsets method, dbgeng/IDebugDataSpaces3::GetVirtualTranslationPhysicalOffsets, IDebugDataSpaces4 interface [Windows Debugging], GetVirtualTranslationPhysicalOffsets method, GetVirtualTranslationPhysicalOffsets method [Windows Debugging], IDebugDataSpaces2 interface [Windows Debugging], GetVirtualTranslationPhysicalOffsets method, IDebugDataSpaces3::GetVirtualTranslationPhysicalOffsets, GetVirtualTranslationPhysicalOffsets method [Windows Debugging], IDebugDataSpaces2 interface, debugger.getvirtualtranslationphysicaloffsets, IDebugDataSpaces4::GetVirtualTranslationPhysicalOffsets, IDebugDataSpaces4, GetVirtualTranslationPhysicalOffsets, IDebugDataSpaces2::GetVirtualTranslationPhysicalOffsets, dbgeng/IDebugDataSpaces2::GetVirtualTranslationPhysicalOffsets, GetVirtualTranslationPhysicalOffsets method [Windows Debugging], IDebugDataSpaces3 interface, dbgeng/IDebugDataSpaces4::GetVirtualTranslationPhysicalOffsets, IDebugDataSpaces_661959c5-a514-4651-8eaa-fd4c4fb94bd7.xml, GetVirtualTranslationPhysicalOffsets method [Windows Debugging], IDebugDataSpaces4 interface
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugDataSpaces4.GetVirtualTranslationPhysicalOffsets
+title: IDebugDataSpaces4::GetVirtualTranslationPhysicalOffsets method
+author: windows-driver-content
+description: The GetVirtualTranslationPhysicalOffsets method returns the physical addresses of the system paging structures at different levels of the paging hierarchy.
+old-location: debugger\getvirtualtranslationphysicaloffsets.htm
+old-project: debugger
+ms.assetid: 40438ee7-2e58-4048-8739-75f21179c22c
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugDataSpaces3 interface [Windows Debugging], GetVirtualTranslationPhysicalOffsets method, dbgeng/IDebugDataSpaces3::GetVirtualTranslationPhysicalOffsets, IDebugDataSpaces4 interface [Windows Debugging], GetVirtualTranslationPhysicalOffsets method, GetVirtualTranslationPhysicalOffsets method [Windows Debugging], IDebugDataSpaces2 interface [Windows Debugging], GetVirtualTranslationPhysicalOffsets method, IDebugDataSpaces3::GetVirtualTranslationPhysicalOffsets, GetVirtualTranslationPhysicalOffsets method [Windows Debugging], IDebugDataSpaces2 interface, debugger.getvirtualtranslationphysicaloffsets, IDebugDataSpaces4::GetVirtualTranslationPhysicalOffsets, IDebugDataSpaces4, GetVirtualTranslationPhysicalOffsets, IDebugDataSpaces2::GetVirtualTranslationPhysicalOffsets, dbgeng/IDebugDataSpaces2::GetVirtualTranslationPhysicalOffsets, GetVirtualTranslationPhysicalOffsets method [Windows Debugging], IDebugDataSpaces3 interface, dbgeng/IDebugDataSpaces4::GetVirtualTranslationPhysicalOffsets, IDebugDataSpaces_661959c5-a514-4651-8eaa-fd4c4fb94bd7.xml, GetVirtualTranslationPhysicalOffsets method [Windows Debugging], IDebugDataSpaces4 interface
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugDataSpaces2.GetVirtualTranslationPhysicalOffsets
+-	IDebugDataSpaces3.GetVirtualTranslationPhysicalOffsets
+-	IDebugDataSpaces4.GetVirtualTranslationPhysicalOffsets
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

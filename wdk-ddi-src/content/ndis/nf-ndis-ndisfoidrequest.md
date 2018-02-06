@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisFOidRequest
-title : NdisFOidRequest function
-author : windows-driver-content
-description : Filter drivers call the NdisFOidRequest function to forward an OID request to underlying drivers or to originate such a request.
-old-location : netvista\ndisfoidrequest.htm
-old-project : netvista
-ms.assetid : 8434bf2c-9c9a-49a1-bf88-b67b1eec721c
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NdisFOidRequest function [Network Drivers Starting with Windows Vista], netvista.ndisfoidrequest, NdisFOidRequest, ndis_request_ref_b5034fc8-9122-4c87-b690-a6989c1592c1.xml, ndis/NdisFOidRequest
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_OID_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisFOidRequest
+title: NdisFOidRequest function
+author: windows-driver-content
+description: Filter drivers call the NdisFOidRequest function to forward an OID request to underlying drivers or to originate such a request.
+old-location: netvista\ndisfoidrequest.htm
+old-project: netvista
+ms.assetid: 8434bf2c-9c9a-49a1-bf88-b67b1eec721c
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NdisFOidRequest function [Network Drivers Starting with Windows Vista], netvista.ndisfoidrequest, NdisFOidRequest, ndis_request_ref_b5034fc8-9122-4c87-b690-a6989c1592c1.xml, ndis/NdisFOidRequest
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_OID_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisFOidRequest
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

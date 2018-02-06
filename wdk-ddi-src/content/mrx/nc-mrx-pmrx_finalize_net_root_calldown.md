@@ -1,41 +1,46 @@
 ---
-UID : NC:mrx.PMRX_FINALIZE_NET_ROOT_CALLDOWN
-title : PMRX_FINALIZE_NET_ROOT_CALLDOWN
-author : windows-driver-content
-description : The MRxFinalizeNetRoot routine is called by RDBSS to request that a network mini-redirector finalize a NET_ROOT structure.
-old-location : ifsk\mrxfinalizenetroot.htm
-old-project : ifsk
-ms.assetid : 59f5b6e0-9edc-45c9-9d22-1555edb8f7c6
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.mrxfinalizenetroot, MRxFinalizeNetRoot routine [Installable File System Drivers], MRxFinalizeNetRoot, PMRX_FINALIZE_NET_ROOT_CALLDOWN, PMRX_FINALIZE_NET_ROOT_CALLDOWN, mrx/MRxFinalizeNetRoot, mrxref_5f5d7468-3257-4800-99fe-e5e6b7c99e37.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : mrx.h
-req.include-header : Mrx.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SetDSMCounters_IN, *PSetDSMCounters_IN
+UID: NC:mrx.PMRX_FINALIZE_NET_ROOT_CALLDOWN
+title: PMRX_FINALIZE_NET_ROOT_CALLDOWN
+author: windows-driver-content
+description: The MRxFinalizeNetRoot routine is called by RDBSS to request that a network mini-redirector finalize a NET_ROOT structure.
+old-location: ifsk\mrxfinalizenetroot.htm
+old-project: ifsk
+ms.assetid: 59f5b6e0-9edc-45c9-9d22-1555edb8f7c6
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.mrxfinalizenetroot, MRxFinalizeNetRoot routine [Installable File System Drivers], MRxFinalizeNetRoot, PMRX_FINALIZE_NET_ROOT_CALLDOWN, PMRX_FINALIZE_NET_ROOT_CALLDOWN, mrx/MRxFinalizeNetRoot, mrxref_5f5d7468-3257-4800-99fe-e5e6b7c99e37.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: mrx.h
+req.include-header: Mrx.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	mrx.h
+apiname:
+-	MRxFinalizeNetRoot
+product: Windows
+targetos: Windows
+req.typenames: SetDSMCounters_IN, *PSetDSMCounters_IN
 ---
 
 

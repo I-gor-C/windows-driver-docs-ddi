@@ -1,41 +1,46 @@
 ---
-UID : NS:ndiswwan._NDIS_WWAN_SET_PACKET_SERVICE
-title : "_NDIS_WWAN_SET_PACKET_SERVICE"
-author : windows-driver-content
-description : The NDIS_WWAN_SET_PACKET_SERVICE structure represents the packet service state of the MB device.
-old-location : netvista\ndis_wwan_set_packet_service.htm
-old-project : netvista
-ms.assetid : bded1e89-3bb5-4241-ab44-875012bfad3a
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : PNDIS_WWAN_SET_PACKET_SERVICE, ndiswwan/PNDIS_WWAN_SET_PACKET_SERVICE, _NDIS_WWAN_SET_PACKET_SERVICE, NDIS_WWAN_SET_PACKET_SERVICE structure [Network Drivers Starting with Windows Vista], netvista.ndis_wwan_set_packet_service, PNDIS_WWAN_SET_PACKET_SERVICE structure pointer [Network Drivers Starting with Windows Vista], ndiswwan/NDIS_WWAN_SET_PACKET_SERVICE, WwanRef_b98b2778-6d41-426f-85c3-99add8477050.xml, NDIS_WWAN_SET_PACKET_SERVICE, *PNDIS_WWAN_SET_PACKET_SERVICE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndiswwan.h
-req.include-header : Ndiswwan.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PNDIS_WWAN_SET_PACKET_SERVICE, NDIS_WWAN_SET_PACKET_SERVICE"
+UID: NS:ndiswwan._NDIS_WWAN_SET_PACKET_SERVICE
+title: "_NDIS_WWAN_SET_PACKET_SERVICE"
+author: windows-driver-content
+description: The NDIS_WWAN_SET_PACKET_SERVICE structure represents the packet service state of the MB device.
+old-location: netvista\ndis_wwan_set_packet_service.htm
+old-project: netvista
+ms.assetid: bded1e89-3bb5-4241-ab44-875012bfad3a
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: PNDIS_WWAN_SET_PACKET_SERVICE, ndiswwan/PNDIS_WWAN_SET_PACKET_SERVICE, _NDIS_WWAN_SET_PACKET_SERVICE, NDIS_WWAN_SET_PACKET_SERVICE structure [Network Drivers Starting with Windows Vista], netvista.ndis_wwan_set_packet_service, PNDIS_WWAN_SET_PACKET_SERVICE structure pointer [Network Drivers Starting with Windows Vista], ndiswwan/NDIS_WWAN_SET_PACKET_SERVICE, WwanRef_b98b2778-6d41-426f-85c3-99add8477050.xml, NDIS_WWAN_SET_PACKET_SERVICE, *PNDIS_WWAN_SET_PACKET_SERVICE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndiswwan.h
+req.include-header: Ndiswwan.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndiswwan.h
+apiname:
+-	NDIS_WWAN_SET_PACKET_SERVICE
+product: Windows
+targetos: Windows
+req.typenames: "*PNDIS_WWAN_SET_PACKET_SERVICE, NDIS_WWAN_SET_PACKET_SERVICE"
 ---
 
 # _NDIS_WWAN_SET_PACKET_SERVICE structure

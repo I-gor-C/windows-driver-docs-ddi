@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia._timecode
-title : "_timecode"
-author : windows-driver-content
-description : The TIMECODE union describes a timecode from an external device. This structure is no longer used.
-old-location : stream\timecode.htm
-old-project : stream
-ms.assetid : 3387e014-3a62-4d76-ac6d-6446e4fa39d0
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : TIMECODE, *PTIMECODE, PTIMECODE union pointer [Streaming Media Devices], ksmedia/TIMECODE, TIMECODE union [Streaming Media Devices], PTIMECODE, ksmedia/PTIMECODE, stream.timecode, vidcapstruct_80e1d01b-8140-49e8-83bd-210fb38ea0bc.xml, _timecode
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TIMECODE
+UID: NS:ksmedia._timecode
+title: "_timecode"
+author: windows-driver-content
+description: The TIMECODE union describes a timecode from an external device. This structure is no longer used.
+old-location: stream\timecode.htm
+old-project: stream
+ms.assetid: 3387e014-3a62-4d76-ac6d-6446e4fa39d0
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: TIMECODE, *PTIMECODE, PTIMECODE union pointer [Streaming Media Devices], ksmedia/TIMECODE, TIMECODE union [Streaming Media Devices], PTIMECODE, ksmedia/PTIMECODE, stream.timecode, vidcapstruct_80e1d01b-8140-49e8-83bd-210fb38ea0bc.xml, _timecode
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	TIMECODE
+product: Windows
+targetos: Windows
+req.typenames: TIMECODE
 ---
 
 # _timecode structure

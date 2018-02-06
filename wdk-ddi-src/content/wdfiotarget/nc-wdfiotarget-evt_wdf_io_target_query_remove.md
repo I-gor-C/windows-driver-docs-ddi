@@ -1,42 +1,47 @@
 ---
-UID : NC:wdfiotarget.EVT_WDF_IO_TARGET_QUERY_REMOVE
-title : EVT_WDF_IO_TARGET_QUERY_REMOVE
-author : windows-driver-content
-description : A driver's EvtIoTargetQueryRemove event callback function indicates whether the framework can safely remove a specified remote I/O target's device.
-old-location : wdf\evtiotargetqueryremove.htm
-old-project : wdf
-ms.assetid : cb7c97e5-081e-44fc-a759-9a1ae81de41c
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.evtiotargetqueryremove, EvtIoTargetQueryRemove callback function, EvtIoTargetQueryRemove, EVT_WDF_IO_TARGET_QUERY_REMOVE, EVT_WDF_IO_TARGET_QUERY_REMOVE, wdfiotarget/EvtIoTargetQueryRemove, DFIOTargetRef_9a471005-a4c8-4918-bc4c-4147bd6018f0.xml, kmdf.evtiotargetqueryremove
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdfiotarget.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY, *PWDF_IO_QUEUE_FORWARD_PROGRESS_POLICY
-req.product : Windows 10 or later.
+UID: NC:wdfiotarget.EVT_WDF_IO_TARGET_QUERY_REMOVE
+title: EVT_WDF_IO_TARGET_QUERY_REMOVE
+author: windows-driver-content
+description: A driver's EvtIoTargetQueryRemove event callback function indicates whether the framework can safely remove a specified remote I/O target's device.
+old-location: wdf\evtiotargetqueryremove.htm
+old-project: wdf
+ms.assetid: cb7c97e5-081e-44fc-a759-9a1ae81de41c
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.evtiotargetqueryremove, EvtIoTargetQueryRemove callback function, EvtIoTargetQueryRemove, EVT_WDF_IO_TARGET_QUERY_REMOVE, EVT_WDF_IO_TARGET_QUERY_REMOVE, wdfiotarget/EvtIoTargetQueryRemove, DFIOTargetRef_9a471005-a4c8-4918-bc4c-4147bd6018f0.xml, kmdf.evtiotargetqueryremove
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdfiotarget.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	WdfIoTarget.h
+apiname:
+-	EvtIoTargetQueryRemove
+product: Windows
+targetos: Windows
+req.typenames: WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY, *PWDF_IO_QUEUE_FORWARD_PROGRESS_POLICY
+req.product: Windows 10 or later.
 ---
 
 

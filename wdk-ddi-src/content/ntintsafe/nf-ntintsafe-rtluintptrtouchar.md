@@ -1,41 +1,46 @@
 ---
-UID : NF:ntintsafe.RtlUIntPtrToUChar
-title : RtlUIntPtrToUChar function
-author : windows-driver-content
-description : Converts a value of type UINT_PTR to a value of type UCHAR.
-old-location : kernel\rtluintptrtouchar.htm
-old-project : kernel
-ms.assetid : F5E4225F-4C66-44A8-9445-7D7DBAFA1DA4
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : RtlUIntPtrToUChar function [Kernel-Mode Driver Architecture], ntintsafe/RtlUIntPtrToUChar, kernel.rtluintptrtouchar, RtlUIntPtrToUChar
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntintsafe.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PUBLIC_OBJECT_TYPE_INFORMATION, *PPUBLIC_OBJECT_TYPE_INFORMATION
+UID: NF:ntintsafe.RtlUIntPtrToUChar
+title: RtlUIntPtrToUChar function
+author: windows-driver-content
+description: Converts a value of type UINT_PTR to a value of type UCHAR.
+old-location: kernel\rtluintptrtouchar.htm
+old-project: kernel
+ms.assetid: F5E4225F-4C66-44A8-9445-7D7DBAFA1DA4
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: RtlUIntPtrToUChar function [Kernel-Mode Driver Architecture], ntintsafe/RtlUIntPtrToUChar, kernel.rtluintptrtouchar, RtlUIntPtrToUChar
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntintsafe.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntintsafe.h
+apiname:
+-	RtlUIntPtrToUChar
+product: Windows
+targetos: Windows
+req.typenames: PUBLIC_OBJECT_TYPE_INFORMATION, *PPUBLIC_OBJECT_TYPE_INFORMATION
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddser.IOCTL_SERIAL_GET_DTRRTS
-title : IOCTL_SERIAL_GET_DTRRTS
-author : windows-driver-content
-description : The IOCTL_SERIAL_GET_DTRRTS request returns information about the data terminal ready (DTR) control signal and the request to send (RTS) control signal.
-old-location : serports\ioctl_serial_get_dtrrts.htm
-old-project : serports
-ms.assetid : 9ced72c6-24f8-49c6-a68e-2b0c5c81a8c2
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : serports.ioctl_serial_get_dtrrts, IOCTL_SERIAL_GET_DTRRTS control code [Serial Ports], IOCTL_SERIAL_GET_DTRRTS, ntddser/IOCTL_SERIAL_GET_DTRRTS, serref_7c57fa0a-a5a3-41cd-bea3-b4685b39daad.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddser.h
-req.include-header : Ntddser.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SD_REQUEST_FUNCTION
+UID: NI:ntddser.IOCTL_SERIAL_GET_DTRRTS
+title: IOCTL_SERIAL_GET_DTRRTS
+author: windows-driver-content
+description: The IOCTL_SERIAL_GET_DTRRTS request returns information about the data terminal ready (DTR) control signal and the request to send (RTS) control signal.
+old-location: serports\ioctl_serial_get_dtrrts.htm
+old-project: serports
+ms.assetid: 9ced72c6-24f8-49c6-a68e-2b0c5c81a8c2
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: serports.ioctl_serial_get_dtrrts, IOCTL_SERIAL_GET_DTRRTS control code [Serial Ports], IOCTL_SERIAL_GET_DTRRTS, ntddser/IOCTL_SERIAL_GET_DTRRTS, serref_7c57fa0a-a5a3-41cd-bea3-b4685b39daad.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddser.h
+req.include-header: Ntddser.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddser.h
+apiname:
+-	IOCTL_SERIAL_GET_DTRRTS
+product: Windows
+targetos: Windows
+req.typenames: SD_REQUEST_FUNCTION
 ---
 
 # IOCTL_SERIAL_GET_DTRRTS IOCTL

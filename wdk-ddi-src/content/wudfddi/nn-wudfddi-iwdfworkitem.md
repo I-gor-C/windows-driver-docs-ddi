@@ -1,42 +1,47 @@
 ---
-UID : NN:wudfddi.IWDFWorkItem
-title : IWDFWorkItem
-author : windows-driver-content
-description : This interface exposes a work item object.
-old-location : wdf\iwdfworkitem.htm
-old-project : wdf
-ms.assetid : F9EDA26E-92E0-4936-87B7-E1E2A02A9D96
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.iwdfworkitem, IWDFWorkItem interface, IWDFWorkItem interface, described, IWDFWorkItem, wudfddi/IWDFWorkItem, umdf.iwdfworkitem
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : wudfddi.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.11
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NN:wudfddi.IWDFWorkItem
+title: IWDFWorkItem
+author: windows-driver-content
+description: This interface exposes a work item object.
+old-location: wdf\iwdfworkitem.htm
+old-project: wdf
+ms.assetid: F9EDA26E-92E0-4936-87B7-E1E2A02A9D96
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.iwdfworkitem, IWDFWorkItem interface, IWDFWorkItem interface, described, IWDFWorkItem, wudfddi/IWDFWorkItem, umdf.iwdfworkitem
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: wudfddi.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.11
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFWorkItem
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 # IWDFWorkItem interface

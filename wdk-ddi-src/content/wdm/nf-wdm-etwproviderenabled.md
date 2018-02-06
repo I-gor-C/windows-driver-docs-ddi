@@ -1,38 +1,38 @@
 ---
-UID : NF:wdm.EtwProviderEnabled
-title : EtwProviderEnabled function
-author : windows-driver-content
-description : The EtwProviderEnabled function verifies that a provider is enabled for event logging at a specified level and keyword.
-old-location : devtest\etwproviderenabled.htm
-old-project : devtest
-ms.assetid : 28b0a40e-e8e8-4953-8a3a-f3f1b58ad80f
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : EtwProviderEnabled
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.alt-api : EtwProviderEnabled
-req.alt-loc : NtosKrnl.exe
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : Any level
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.EtwProviderEnabled
+title: EtwProviderEnabled function
+author: windows-driver-content
+description: The EtwProviderEnabled function verifies that a provider is enabled for event logging at a specified level and keyword.
+old-location: devtest\etwproviderenabled.htm
+old-project: devtest
+ms.assetid: 28b0a40e-e8e8-4953-8a3a-f3f1b58ad80f
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: EtwProviderEnabled
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.alt-api: EtwProviderEnabled
+req.alt-loc: NtosKrnl.exe
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: Any level
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

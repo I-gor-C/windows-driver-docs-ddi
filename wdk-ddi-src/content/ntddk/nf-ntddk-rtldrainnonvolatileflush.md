@@ -1,41 +1,46 @@
 ---
-UID : NF:ntddk.RtlDrainNonVolatileFlush
-title : RtlDrainNonVolatileFlush function
-author : windows-driver-content
-description : The routine RtlDrainNonVolatileFlush waits for the flushes initiated by RtlFlushNonVolatileMemory to finish.
-old-location : ifsk\rtldrainnonvolatileflush.htm
-old-project : ifsk
-ms.assetid : EA1C2DF3-591C-407A-ABBF-DE615466A498
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ntddk/RtlDrainNonVolatileFlush, ifsk.rtldrainnonvolatileflush, RtlDrainNonVolatileFlush, RtlDrainNonVolatileFlush routine [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntddk.h
-req.include-header : Winnt.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10, version 1703
-req.target-min-winversvr : None supported
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.RtlDrainNonVolatileFlush
+title: RtlDrainNonVolatileFlush function
+author: windows-driver-content
+description: The routine RtlDrainNonVolatileFlush waits for the flushes initiated by RtlFlushNonVolatileMemory to finish.
+old-location: ifsk\rtldrainnonvolatileflush.htm
+old-project: ifsk
+ms.assetid: EA1C2DF3-591C-407A-ABBF-DE615466A498
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ntddk/RtlDrainNonVolatileFlush, ifsk.rtldrainnonvolatileflush, RtlDrainNonVolatileFlush, RtlDrainNonVolatileFlush routine [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntddk.h
+req.include-header: Winnt.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10, version 1703
+req.target-min-winversvr: None supported
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddk.h
+apiname:
+-	RtlDrainNonVolatileFlush
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

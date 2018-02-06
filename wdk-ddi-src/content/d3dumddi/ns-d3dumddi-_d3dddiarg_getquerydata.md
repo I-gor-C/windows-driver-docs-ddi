@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._D3DDDIARG_GETQUERYDATA
-title : "_D3DDDIARG_GETQUERYDATA"
-author : windows-driver-content
-description : The D3DDDIARG_GETQUERYDATA structure contains query information that was retrieved from the user-mode display driver.
-old-location : display\d3dddiarg_getquerydata.htm
-old-project : display
-ms.assetid : 98c6ada1-89a4-4cbd-bb6c-98c190fa15d8
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : "_D3DDDIARG_GETQUERYDATA, display.d3dddiarg_getquerydata, d3dumddi/D3DDDIARG_GETQUERYDATA, D3DDDIARG_GETQUERYDATA, D3DDDIARG_GETQUERYDATA structure [Display Devices], UMDisplayDriver_param_Structs_7f9fefc5-6bce-4a76-9841-d91a40710d4a.xml"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDIARG_GETQUERYDATA
+UID: NS:d3dumddi._D3DDDIARG_GETQUERYDATA
+title: "_D3DDDIARG_GETQUERYDATA"
+author: windows-driver-content
+description: The D3DDDIARG_GETQUERYDATA structure contains query information that was retrieved from the user-mode display driver.
+old-location: display\d3dddiarg_getquerydata.htm
+old-project: display
+ms.assetid: 98c6ada1-89a4-4cbd-bb6c-98c190fa15d8
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: "_D3DDDIARG_GETQUERYDATA, display.d3dddiarg_getquerydata, d3dumddi/D3DDDIARG_GETQUERYDATA, D3DDDIARG_GETQUERYDATA, D3DDDIARG_GETQUERYDATA structure [Display Devices], UMDisplayDriver_param_Structs_7f9fefc5-6bce-4a76-9841-d91a40710d4a.xml"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	D3DDDIARG_GETQUERYDATA
+product: Windows
+targetos: Windows
+req.typenames: D3DDDIARG_GETQUERYDATA
 ---
 
 # _D3DDDIARG_GETQUERYDATA structure

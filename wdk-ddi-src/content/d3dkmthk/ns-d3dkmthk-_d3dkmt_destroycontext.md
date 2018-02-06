@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmthk._D3DKMT_DESTROYCONTEXT
-title : "_D3DKMT_DESTROYCONTEXT"
-author : windows-driver-content
-description : The D3DKMT_DESTROYCONTEXT structure contains a handle to a kernel-mode device context to release.
-old-location : display\d3dkmt_destroycontext.htm
-old-project : display
-ms.assetid : 116c0fa7-ac3c-4a56-804c-637514a19c73
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DKMT_DESTROYCONTEXT, D3DKMT_DESTROYCONTEXT structure [Display Devices], _D3DKMT_DESTROYCONTEXT, OpenGL_Structs_97f52665-09e6-4f11-b2cc-a7abcc61827c.xml, display.d3dkmt_destroycontext, d3dkmthk/D3DKMT_DESTROYCONTEXT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_DESTROYCONTEXT
+UID: NS:d3dkmthk._D3DKMT_DESTROYCONTEXT
+title: "_D3DKMT_DESTROYCONTEXT"
+author: windows-driver-content
+description: The D3DKMT_DESTROYCONTEXT structure contains a handle to a kernel-mode device context to release.
+old-location: display\d3dkmt_destroycontext.htm
+old-project: display
+ms.assetid: 116c0fa7-ac3c-4a56-804c-637514a19c73
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DKMT_DESTROYCONTEXT, D3DKMT_DESTROYCONTEXT structure [Display Devices], _D3DKMT_DESTROYCONTEXT, OpenGL_Structs_97f52665-09e6-4f11-b2cc-a7abcc61827c.xml, display.d3dkmt_destroycontext, d3dkmthk/D3DKMT_DESTROYCONTEXT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmthk.h
+apiname:
+-	D3DKMT_DESTROYCONTEXT
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_DESTROYCONTEXT
 ---
 
 # _D3DKMT_DESTROYCONTEXT structure

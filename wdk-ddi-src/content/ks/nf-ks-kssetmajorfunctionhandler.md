@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsSetMajorFunctionHandler
-title : KsSetMajorFunctionHandler function
-author : windows-driver-content
-description : The KsSetMajorFunctionHandler function sets the handler for a specified major function to use the internal dispatching.
-old-location : stream\kssetmajorfunctionhandler.htm
-old-project : stream
-ms.assetid : 22c1957d-089a-4504-b92c-9268a37ac265
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.kssetmajorfunctionhandler, KsSetMajorFunctionHandler function [Streaming Media Devices], KsSetMajorFunctionHandler, ks/KsSetMajorFunctionHandler, ksfunc_e8761f66-4ca5-4465-bf7b-f6d2ab1d2355.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsSetMajorFunctionHandler
+title: KsSetMajorFunctionHandler function
+author: windows-driver-content
+description: The KsSetMajorFunctionHandler function sets the handler for a specified major function to use the internal dispatching.
+old-location: stream\kssetmajorfunctionhandler.htm
+old-project: stream
+ms.assetid: 22c1957d-089a-4504-b92c-9268a37ac265
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.kssetmajorfunctionhandler, KsSetMajorFunctionHandler function [Streaming Media Devices], KsSetMajorFunctionHandler, ks/KsSetMajorFunctionHandler, ksfunc_e8761f66-4ca5-4465-bf7b-f6d2ab1d2355.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsSetMajorFunctionHandler
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NC:pepfx.POFXCALLBACKCRITICALRESOURCE
-title : POFXCALLBACKCRITICALRESOURCE
-author : windows-driver-content
-description : The TransitionCriticalResource routine changes the active/inactive state of a core system component.
-old-location : kernel\transitioncriticalresource.htm
-old-project : kernel
-ms.assetid : 18CB1032-78CB-4D65-9077-02B89E9C31B4
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.transitioncriticalresource, TransitionCriticalResource, TransitionCriticalResource routine [Kernel-Mode Driver Architecture], TransitionCriticalResource, POFXCALLBACKCRITICALRESOURCE, POFXCALLBACKCRITICALRESOURCE, pepfx/TransitionCriticalResource
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : pepfx.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with Windows 10.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= HIGH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VPCI_PNP_ID, *PVPCI_PNP_ID
+UID: NC:pepfx.POFXCALLBACKCRITICALRESOURCE
+title: POFXCALLBACKCRITICALRESOURCE
+author: windows-driver-content
+description: The TransitionCriticalResource routine changes the active/inactive state of a core system component.
+old-location: kernel\transitioncriticalresource.htm
+old-project: kernel
+ms.assetid: 18CB1032-78CB-4D65-9077-02B89E9C31B4
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.transitioncriticalresource, TransitionCriticalResource, TransitionCriticalResource routine [Kernel-Mode Driver Architecture], TransitionCriticalResource, POFXCALLBACKCRITICALRESOURCE, POFXCALLBACKCRITICALRESOURCE, pepfx/TransitionCriticalResource
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: pepfx.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows 10.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= HIGH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	pepfx.h
+apiname:
+-	TransitionCriticalResource
+product: Windows
+targetos: Windows
+req.typenames: VPCI_PNP_ID, *PVPCI_PNP_ID
 ---
 
 

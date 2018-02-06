@@ -1,42 +1,48 @@
 ---
-UID : NF:wmilib.WmiSystemControl
-title : WmiSystemControl function
-author : windows-driver-content
-description : The WmiSystemControl routine is a dispatch routine for drivers that use WMI library support routines to handle WMI IRPs.
-old-location : kernel\wmisystemcontrol.htm
-old-project : kernel
-ms.assetid : 6226e75e-b744-46cd-b14b-e93ece1c2f61
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.wmisystemcontrol, WmiSystemControl routine [Kernel-Mode Driver Architecture], wmilib/WmiSystemControl, k902_7bd87d12-7e45-4dd1-a78b-6389c6894ea4.xml, WmiSystemControl
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wmilib.h
-req.include-header : Wmilib.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 2000 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : WmiComplete
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wmilib.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WMI_CHANGER_PROBLEM_DEVICE_ERROR, *PWMI_CHANGER_PROBLEM_DEVICE_ERROR
-req.product : Windows 10 or later.
+UID: NF:wmilib.WmiSystemControl
+title: WmiSystemControl function
+author: windows-driver-content
+description: The WmiSystemControl routine is a dispatch routine for drivers that use WMI library support routines to handle WMI IRPs.
+old-location: kernel\wmisystemcontrol.htm
+old-project: kernel
+ms.assetid: 6226e75e-b744-46cd-b14b-e93ece1c2f61
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.wmisystemcontrol, WmiSystemControl routine [Kernel-Mode Driver Architecture], wmilib/WmiSystemControl, k902_7bd87d12-7e45-4dd1-a78b-6389c6894ea4.xml, WmiSystemControl
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wmilib.h
+req.include-header: Wmilib.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 2000 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: WmiComplete
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wmilib.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wmilib.lib
+-	Wmilib.dll
+apiname:
+-	WmiSystemControl
+product: Windows
+targetos: Windows
+req.typenames: WMI_CHANGER_PROBLEM_DEVICE_ERROR, *PWMI_CHANGER_PROBLEM_DEVICE_ERROR
+req.product: Windows 10 or later.
 ---
 
 

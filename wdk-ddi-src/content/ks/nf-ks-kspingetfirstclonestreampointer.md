@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsPinGetFirstCloneStreamPointer
-title : KsPinGetFirstCloneStreamPointer function
-author : windows-driver-content
-description : The KsPinGetFirstCloneStreamPointer function returns the first cloned stream pointer on Pin.
-old-location : stream\kspingetfirstclonestreampointer.htm
-old-project : stream
-ms.assetid : 9b4880af-d748-4a4e-92ec-8081138d4e27
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KsPinGetFirstCloneStreamPointer, stream.kspingetfirstclonestreampointer, ks/KsPinGetFirstCloneStreamPointer, avfunc_2a3d17ef-c1b8-4b22-af1e-7f9bb01c1183.xml, KsPinGetFirstCloneStreamPointer function [Streaming Media Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsPinGetFirstCloneStreamPointer
+title: KsPinGetFirstCloneStreamPointer function
+author: windows-driver-content
+description: The KsPinGetFirstCloneStreamPointer function returns the first cloned stream pointer on Pin.
+old-location: stream\kspingetfirstclonestreampointer.htm
+old-project: stream
+ms.assetid: 9b4880af-d748-4a4e-92ec-8081138d4e27
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KsPinGetFirstCloneStreamPointer, stream.kspingetfirstclonestreampointer, ks/KsPinGetFirstCloneStreamPointer, avfunc_2a3d17ef-c1b8-4b22-af1e-7f9bb01c1183.xml, KsPinGetFirstCloneStreamPointer function [Streaming Media Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsPinGetFirstCloneStreamPointer
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisMCoActivateVcComplete
-title : NdisMCoActivateVcComplete function
-author : windows-driver-content
-description : NdisMCoActivateVcComplete notifies NDIS and the call manager that the miniport driver has finished processing a CM-initiated activate-VC request, for which the miniport driver previously returned NDIS_STATUS_PENDING.
-old-location : netvista\ndismcoactivatevccomplete.htm
-old-project : netvista
-ms.assetid : db5ff69f-dcae-4016-a078-c8edb2390c6c
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NdisMCoActivateVcComplete, netvista.ndismcoactivatevccomplete, ndis/NdisMCoActivateVcComplete, NdisMCoActivateVcComplete function [Network Drivers Starting with Windows Vista], condis_miniport_ref_3a81c66b-8e97-4194-bf90-988ac2fd05b5.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisMCoActivateVcComplete (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisMCoActivateVcComplete (NDIS   5.1)) in Windows XP.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_MCO_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisMCoActivateVcComplete
+title: NdisMCoActivateVcComplete function
+author: windows-driver-content
+description: NdisMCoActivateVcComplete notifies NDIS and the call manager that the miniport driver has finished processing a CM-initiated activate-VC request, for which the miniport driver previously returned NDIS_STATUS_PENDING.
+old-location: netvista\ndismcoactivatevccomplete.htm
+old-project: netvista
+ms.assetid: db5ff69f-dcae-4016-a078-c8edb2390c6c
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NdisMCoActivateVcComplete, netvista.ndismcoactivatevccomplete, ndis/NdisMCoActivateVcComplete, NdisMCoActivateVcComplete function [Network Drivers Starting with Windows Vista], condis_miniport_ref_3a81c66b-8e97-4194-bf90-988ac2fd05b5.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisMCoActivateVcComplete (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisMCoActivateVcComplete (NDIS   5.1)) in Windows XP.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_MCO_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisMCoActivateVcComplete
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

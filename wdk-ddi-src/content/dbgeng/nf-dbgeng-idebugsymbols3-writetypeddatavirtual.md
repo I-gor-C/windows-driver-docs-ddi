@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugSymbols3.WriteTypedDataVirtual
-title : IDebugSymbols3::WriteTypedDataVirtual method
-author : windows-driver-content
-description : The WriteTypedDataVirtual method writes data to the target's virtual address space. The number of bytes written is the size of the specified type.
-old-location : debugger\writetypeddatavirtual.htm
-old-project : debugger
-ms.assetid : c7a3854b-2405-4e20-8c6c-4e0c0d43987e
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugSymbols2::WriteTypedDataVirtual, IDebugSymbols_51186c12-dc2b-4906-a8fa-9e0f4a960135.xml, IDebugSymbols::WriteTypedDataVirtual, dbgeng/IDebugSymbols3::WriteTypedDataVirtual, WriteTypedDataVirtual method [Windows Debugging], IDebugSymbols3 interface, WriteTypedDataVirtual, debugger.writetypeddatavirtual, IDebugSymbols3 interface [Windows Debugging], WriteTypedDataVirtual method, WriteTypedDataVirtual method [Windows Debugging], IDebugSymbols interface, WriteTypedDataVirtual method [Windows Debugging], dbgeng/IDebugSymbols2::WriteTypedDataVirtual, IDebugSymbols3::WriteTypedDataVirtual, IDebugSymbols interface [Windows Debugging], WriteTypedDataVirtual method, IDebugSymbols2 interface [Windows Debugging], WriteTypedDataVirtual method, WriteTypedDataVirtual method [Windows Debugging], IDebugSymbols2 interface, IDebugSymbols3, dbgeng/IDebugSymbols::WriteTypedDataVirtual
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSymbols3.WriteTypedDataVirtual
+title: IDebugSymbols3::WriteTypedDataVirtual method
+author: windows-driver-content
+description: The WriteTypedDataVirtual method writes data to the target's virtual address space. The number of bytes written is the size of the specified type.
+old-location: debugger\writetypeddatavirtual.htm
+old-project: debugger
+ms.assetid: c7a3854b-2405-4e20-8c6c-4e0c0d43987e
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugSymbols2::WriteTypedDataVirtual, IDebugSymbols_51186c12-dc2b-4906-a8fa-9e0f4a960135.xml, IDebugSymbols::WriteTypedDataVirtual, dbgeng/IDebugSymbols3::WriteTypedDataVirtual, WriteTypedDataVirtual method [Windows Debugging], IDebugSymbols3 interface, WriteTypedDataVirtual, debugger.writetypeddatavirtual, IDebugSymbols3 interface [Windows Debugging], WriteTypedDataVirtual method, WriteTypedDataVirtual method [Windows Debugging], IDebugSymbols interface, WriteTypedDataVirtual method [Windows Debugging], dbgeng/IDebugSymbols2::WriteTypedDataVirtual, IDebugSymbols3::WriteTypedDataVirtual, IDebugSymbols interface [Windows Debugging], WriteTypedDataVirtual method, IDebugSymbols2 interface [Windows Debugging], WriteTypedDataVirtual method, WriteTypedDataVirtual method [Windows Debugging], IDebugSymbols2 interface, IDebugSymbols3, dbgeng/IDebugSymbols::WriteTypedDataVirtual
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugSymbols.WriteTypedDataVirtual
+-	IDebugSymbols2.WriteTypedDataVirtual
+-	IDebugSymbols3.WriteTypedDataVirtual
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

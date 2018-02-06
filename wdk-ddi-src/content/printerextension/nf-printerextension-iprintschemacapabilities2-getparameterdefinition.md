@@ -1,42 +1,47 @@
 ---
-UID : NF:printerextension.IPrintSchemaCapabilities2.GetParameterDefinition
-title : IPrintSchemaCapabilities2::GetParameterDefinition method
-author : windows-driver-content
-description : The GetParameterDefinition method retrieves the IPrintSchemaParameterDefinition object, and it represents the &lt;psf:ParameterDef&gt; element in the PrintCapabilites XML.
-old-location : print\iprintschemacapabilities2_getparameterdefinition.htm
-old-project : print
-ms.assetid : 19C3A3C5-446B-48FD-8E77-2E0F787B16B1
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : print.iprintschemacapabilities2_getparameterdefinition, GetParameterDefinition method [Print Devices], IPrintSchemaCapabilities2 interface, GetParameterDefinition method [Print Devices], IPrintSchemaCapabilities2::GetParameterDefinition, IPrintSchemaCapabilities2, printerextension/IPrintSchemaCapabilities2::GetParameterDefinition, GetParameterDefinition, IPrintSchemaCapabilities2 interface [Print Devices], GetParameterDefinition method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : printerextension.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8.1
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : printerextension.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PrintSchemaSelectionType
-req.product : Windows 10 or later.
+UID: NF:printerextension.IPrintSchemaCapabilities2.GetParameterDefinition
+title: IPrintSchemaCapabilities2::GetParameterDefinition method
+author: windows-driver-content
+description: The GetParameterDefinition method retrieves the IPrintSchemaParameterDefinition object, and it represents the &lt;psf:ParameterDef&gt; element in the PrintCapabilites XML.
+old-location: print\iprintschemacapabilities2_getparameterdefinition.htm
+old-project: print
+ms.assetid: 19C3A3C5-446B-48FD-8E77-2E0F787B16B1
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: print.iprintschemacapabilities2_getparameterdefinition, GetParameterDefinition method [Print Devices], IPrintSchemaCapabilities2 interface, GetParameterDefinition method [Print Devices], IPrintSchemaCapabilities2::GetParameterDefinition, IPrintSchemaCapabilities2, printerextension/IPrintSchemaCapabilities2::GetParameterDefinition, GetParameterDefinition, IPrintSchemaCapabilities2 interface [Print Devices], GetParameterDefinition method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: printerextension.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8.1
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: printerextension.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Printerextension.h
+apiname:
+-	IPrintSchemaCapabilities2.GetParameterDefinition
+product: Windows
+targetos: Windows
+req.typenames: PrintSchemaSelectionType
+req.product: Windows 10 or later.
 ---
 
 

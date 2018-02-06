@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsFreeDeviceHeader
-title : KsFreeDeviceHeader function
-author : windows-driver-content
-description : The KsFreeDeviceHeader function cleans up and frees a previously allocated device header.
-old-location : stream\ksfreedeviceheader.htm
-old-project : stream
-ms.assetid : b7e30dde-ace5-47f0-a1e8-b8337ada1550
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KsFreeDeviceHeader, KsFreeDeviceHeader function [Streaming Media Devices], ks/KsFreeDeviceHeader, stream.ksfreedeviceheader, ksfunc_25c133a5-3c21-476f-84f5-b208284d9234.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsFreeDeviceHeader
+title: KsFreeDeviceHeader function
+author: windows-driver-content
+description: The KsFreeDeviceHeader function cleans up and frees a previously allocated device header.
+old-location: stream\ksfreedeviceheader.htm
+old-project: stream
+ms.assetid: b7e30dde-ace5-47f0-a1e8-b8337ada1550
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KsFreeDeviceHeader, KsFreeDeviceHeader function [Streaming Media Devices], ks/KsFreeDeviceHeader, stream.ksfreedeviceheader, ksfunc_25c133a5-3c21-476f-84f5-b208284d9234.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsFreeDeviceHeader
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

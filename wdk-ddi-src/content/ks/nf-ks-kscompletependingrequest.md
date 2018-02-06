@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsCompletePendingRequest
-title : KsCompletePendingRequest function
-author : windows-driver-content
-description : The KsCompletePendingRequest function is used to complete an I/O request in response to which an AVStream dispatch function previously returned STATUS_PENDING.
-old-location : stream\kscompletependingrequest.htm
-old-project : stream
-ms.assetid : 9bde557e-0759-4f5b-989e-a34a701d2ebd
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.kscompletependingrequest, KsCompletePendingRequest, avfunc_e01e61fc-ec10-4781-aee2-0aa7e24ca31a.xml, KsCompletePendingRequest function [Streaming Media Devices], ks/KsCompletePendingRequest
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsCompletePendingRequest
+title: KsCompletePendingRequest function
+author: windows-driver-content
+description: The KsCompletePendingRequest function is used to complete an I/O request in response to which an AVStream dispatch function previously returned STATUS_PENDING.
+old-location: stream\kscompletependingrequest.htm
+old-project: stream
+ms.assetid: 9bde557e-0759-4f5b-989e-a34a701d2ebd
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.kscompletependingrequest, KsCompletePendingRequest, avfunc_e01e61fc-ec10-4781-aee2-0aa7e24ca31a.xml, KsCompletePendingRequest function [Streaming Media Devices], ks/KsCompletePendingRequest
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsCompletePendingRequest
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

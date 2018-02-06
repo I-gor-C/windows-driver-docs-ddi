@@ -1,41 +1,46 @@
 ---
-UID : NS:dxgiddi.DXGI1_2_DDI_BASE_FUNCTIONS
-title : DXGI1_2_DDI_BASE_FUNCTIONS
-author : windows-driver-content
-description : Contains pointers to functions that a Windows Display Driver Model (WDDM) 1.2 and later user-mode display driver can implement to perform low-level tasks like presenting rendered frames to an output, controlling gamma, getting notifications regarding shared and Windows Graphics Device Interface (GDI) interoperable surfaces, and managing a full-screen transition.
-old-location : display\dxgi1_2_ddi_base_functions.htm
-old-project : display
-ms.assetid : 7A1CD16A-4B7A-40FE-8650-AAD8CAC10FB0
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : dxgiddi/DXGI1_2_DDI_BASE_FUNCTIONS, DXGI1_2_DDI_BASE_FUNCTIONS structure [Display Devices], display.dxgi1_2_ddi_base_functions, DXGI1_2_DDI_BASE_FUNCTIONS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : dxgiddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8,WDDM 1.2 and later
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGI1_2_DDI_BASE_FUNCTIONS
+UID: NS:dxgiddi.DXGI1_2_DDI_BASE_FUNCTIONS
+title: DXGI1_2_DDI_BASE_FUNCTIONS
+author: windows-driver-content
+description: Contains pointers to functions that a Windows Display Driver Model (WDDM) 1.2 and later user-mode display driver can implement to perform low-level tasks like presenting rendered frames to an output, controlling gamma, getting notifications regarding shared and Windows Graphics Device Interface (GDI) interoperable surfaces, and managing a full-screen transition.
+old-location: display\dxgi1_2_ddi_base_functions.htm
+old-project: display
+ms.assetid: 7A1CD16A-4B7A-40FE-8650-AAD8CAC10FB0
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: dxgiddi/DXGI1_2_DDI_BASE_FUNCTIONS, DXGI1_2_DDI_BASE_FUNCTIONS structure [Display Devices], display.dxgi1_2_ddi_base_functions, DXGI1_2_DDI_BASE_FUNCTIONS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: dxgiddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8,WDDM 1.2 and later
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Dxgiddi.h
+apiname:
+-	DXGI1_2_DDI_BASE_FUNCTIONS
+product: Windows
+targetos: Windows
+req.typenames: DXGI1_2_DDI_BASE_FUNCTIONS
 ---
 
 # DXGI1_2_DDI_BASE_FUNCTIONS structure

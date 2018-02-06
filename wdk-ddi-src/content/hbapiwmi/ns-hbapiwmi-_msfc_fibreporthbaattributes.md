@@ -1,41 +1,46 @@
 ---
-UID : NS:hbapiwmi._MSFC_FibrePortHBAAttributes
-title : "_MSFC_FibrePortHBAAttributes"
-author : windows-driver-content
-description : A WMI provider uses the MSFC_FibrePortHBAAttributes WMI class to expose attribute information associated with a fibre channel port.
-old-location : storage\msfc_fibreporthbaattributes.htm
-old-project : storage
-ms.assetid : e8a31f48-bad2-49d1-81be-d345d87a0fd5
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : hbapiwmi/PMSFC_FibrePortHBAAttributes, MSFC_FibrePortHBAAttributes, structs-Fibre_8721cac7-a44b-4401-991d-1b8822aec5be.xml, *PMSFC_FibrePortHBAAttributes, storage.msfc_fibreporthbaattributes, PMSFC_FibrePortHBAAttributes, _MSFC_FibrePortHBAAttributes, hbapiwmi/MSFC_FibrePortHBAAttributes, MSFC_FibrePortHBAAttributes structure [Storage Devices], PMSFC_FibrePortHBAAttributes structure pointer [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : hbapiwmi.h
-req.include-header : Hbapiwmi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : MSFC_FibrePortHBAAttributes, *PMSFC_FibrePortHBAAttributes
+UID: NS:hbapiwmi._MSFC_FibrePortHBAAttributes
+title: "_MSFC_FibrePortHBAAttributes"
+author: windows-driver-content
+description: A WMI provider uses the MSFC_FibrePortHBAAttributes WMI class to expose attribute information associated with a fibre channel port.
+old-location: storage\msfc_fibreporthbaattributes.htm
+old-project: storage
+ms.assetid: e8a31f48-bad2-49d1-81be-d345d87a0fd5
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: hbapiwmi/PMSFC_FibrePortHBAAttributes, MSFC_FibrePortHBAAttributes, structs-Fibre_8721cac7-a44b-4401-991d-1b8822aec5be.xml, *PMSFC_FibrePortHBAAttributes, storage.msfc_fibreporthbaattributes, PMSFC_FibrePortHBAAttributes, _MSFC_FibrePortHBAAttributes, hbapiwmi/MSFC_FibrePortHBAAttributes, MSFC_FibrePortHBAAttributes structure [Storage Devices], PMSFC_FibrePortHBAAttributes structure pointer [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: hbapiwmi.h
+req.include-header: Hbapiwmi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hbapiwmi.h
+apiname:
+-	MSFC_FibrePortHBAAttributes
+product: Windows
+targetos: Windows
+req.typenames: MSFC_FibrePortHBAAttributes, *PMSFC_FibrePortHBAAttributes
 ---
 
 # _MSFC_FibrePortHBAAttributes structure

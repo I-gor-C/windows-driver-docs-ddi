@@ -1,42 +1,47 @@
 ---
-UID : NS:wdm._OB_POST_CREATE_HANDLE_INFORMATION
-title : "_OB_POST_CREATE_HANDLE_INFORMATION"
-author : windows-driver-content
-description : The OB_POST_CREATE_HANDLE_INFORMATION structure provides information to a ObjectPostCallback routine about a thread or process handle that has been opened.
-old-location : kernel\ob_post_create_handle_information.htm
-old-project : kernel
-ms.assetid : 9c33fc12-5997-4a5c-bf74-63df880055e7
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : "_OB_POST_CREATE_HANDLE_INFORMATION, OB_POST_CREATE_HANDLE_INFORMATION structure [Kernel-Mode Driver Architecture], wdm/OB_POST_CREATE_HANDLE_INFORMATION, wdm/POB_POST_CREATE_HANDLE_INFORMATION, kernel.ob_post_create_handle_information, *POB_POST_CREATE_HANDLE_INFORMATION, OB_POST_CREATE_HANDLE_INFORMATION, POB_POST_CREATE_HANDLE_INFORMATION structure pointer [Kernel-Mode Driver Architecture], POB_POST_CREATE_HANDLE_INFORMATION, kstruct_c_465a5f93-d5e9-4640-b4ae-7fa17d2f9493.xml"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Server 2008 and later versions of the Windows operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*POB_POST_CREATE_HANDLE_INFORMATION, OB_POST_CREATE_HANDLE_INFORMATION"
-req.product : Windows 10 or later.
+UID: NS:wdm._OB_POST_CREATE_HANDLE_INFORMATION
+title: "_OB_POST_CREATE_HANDLE_INFORMATION"
+author: windows-driver-content
+description: The OB_POST_CREATE_HANDLE_INFORMATION structure provides information to a ObjectPostCallback routine about a thread or process handle that has been opened.
+old-location: kernel\ob_post_create_handle_information.htm
+old-project: kernel
+ms.assetid: 9c33fc12-5997-4a5c-bf74-63df880055e7
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: "_OB_POST_CREATE_HANDLE_INFORMATION, OB_POST_CREATE_HANDLE_INFORMATION structure [Kernel-Mode Driver Architecture], wdm/OB_POST_CREATE_HANDLE_INFORMATION, wdm/POB_POST_CREATE_HANDLE_INFORMATION, kernel.ob_post_create_handle_information, *POB_POST_CREATE_HANDLE_INFORMATION, OB_POST_CREATE_HANDLE_INFORMATION, POB_POST_CREATE_HANDLE_INFORMATION structure pointer [Kernel-Mode Driver Architecture], POB_POST_CREATE_HANDLE_INFORMATION, kstruct_c_465a5f93-d5e9-4640-b4ae-7fa17d2f9493.xml"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Server 2008 and later versions of the Windows operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	OB_POST_CREATE_HANDLE_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: "*POB_POST_CREATE_HANDLE_INFORMATION, OB_POST_CREATE_HANDLE_INFORMATION"
+req.product: Windows 10 or later.
 ---
 
 # _OB_POST_CREATE_HANDLE_INFORMATION structure

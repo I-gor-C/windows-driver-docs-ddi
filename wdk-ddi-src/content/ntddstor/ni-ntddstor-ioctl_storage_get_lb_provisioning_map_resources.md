@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddstor.IOCTL_STORAGE_GET_LB_PROVISIONING_MAP_RESOURCES
-title : IOCTL_STORAGE_GET_LB_PROVISIONING_MAP_RESOURCES
-author : windows-driver-content
-description : The IOCTL_STORAGE_GET_LB_PROVISIONING_MAP_RESOURCES request is sent to the storage class driver to determine available and used mapping resources on a storage device.
-old-location : storage\ioctl_storage_get_lb_provisioning_map_resources.htm
-old-project : storage
-ms.assetid : 117F6507-CA52-4EA7-9633-75ADB19F4DDA
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_storage_get_lb_provisioning_map_resources, IOCTL_STORAGE_GET_LB_PROVISIONING_MAP_RESOURCES control code [Storage Devices], IOCTL_STORAGE_GET_LB_PROVISIONING_MAP_RESOURCES, ntddstor/IOCTL_STORAGE_GET_LB_PROVISIONING_MAP_RESOURCES
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddstor.h
-req.include-header : Ntddstor.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 8 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STORAGE_ZONE_CONDITION, *PSTORAGE_ZONE_CONDITION
+UID: NI:ntddstor.IOCTL_STORAGE_GET_LB_PROVISIONING_MAP_RESOURCES
+title: IOCTL_STORAGE_GET_LB_PROVISIONING_MAP_RESOURCES
+author: windows-driver-content
+description: The IOCTL_STORAGE_GET_LB_PROVISIONING_MAP_RESOURCES request is sent to the storage class driver to determine available and used mapping resources on a storage device.
+old-location: storage\ioctl_storage_get_lb_provisioning_map_resources.htm
+old-project: storage
+ms.assetid: 117F6507-CA52-4EA7-9633-75ADB19F4DDA
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_storage_get_lb_provisioning_map_resources, IOCTL_STORAGE_GET_LB_PROVISIONING_MAP_RESOURCES control code [Storage Devices], IOCTL_STORAGE_GET_LB_PROVISIONING_MAP_RESOURCES, ntddstor/IOCTL_STORAGE_GET_LB_PROVISIONING_MAP_RESOURCES
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddstor.h
+req.include-header: Ntddstor.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 8 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddstor.h
+apiname:
+-	IOCTL_STORAGE_GET_LB_PROVISIONING_MAP_RESOURCES
+product: Windows
+targetos: Windows
+req.typenames: STORAGE_ZONE_CONDITION, *PSTORAGE_ZONE_CONDITION
 ---
 
 # IOCTL_STORAGE_GET_LB_PROVISIONING_MAP_RESOURCES IOCTL

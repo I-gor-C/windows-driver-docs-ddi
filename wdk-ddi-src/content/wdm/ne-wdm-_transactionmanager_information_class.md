@@ -1,42 +1,47 @@
 ---
-UID : NE:wdm._TRANSACTIONMANAGER_INFORMATION_CLASS
-title : "_TRANSACTIONMANAGER_INFORMATION_CLASS"
-author : windows-driver-content
-description : The TRANSACTIONMANAGER_INFORMATION_CLASS enumeration specifies the type of information that the ZwQueryInformationTransactionManager routine can retrieve for a transaction manager object.
-old-location : kernel\transactionmanager_information_class.htm
-old-project : kernel
-ms.assetid : 71d6db29-0a93-4793-92f4-3e85615e1b61
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : "_TRANSACTIONMANAGER_INFORMATION_CLASS, wdm/TransactionManagerLogInformation, TRANSACTIONMANAGER_INFORMATION_CLASS, TransactionManagerRecoveryInformation, wdm/TRANSACTIONMANAGER_INFORMATION_CLASS, ktm_ref_55fd8dd4-e88d-40df-9091-1aecc4de38a7.xml, wdm/TransactionManagerRecoveryInformation, wdm/TransactionManagerLogPathInformation, TransactionManagerLogPathInformation, kernel.transactionmanager_information_class, TransactionManagerLogInformation, TransactionManagerBasicInformation, wdm/TransactionManagerBasicInformation, TRANSACTIONMANAGER_INFORMATION_CLASS enumeration [Kernel-Mode Driver Architecture]"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later operating system versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TRANSACTIONMANAGER_INFORMATION_CLASS
-req.product : Windows 10 or later.
+UID: NE:wdm._TRANSACTIONMANAGER_INFORMATION_CLASS
+title: "_TRANSACTIONMANAGER_INFORMATION_CLASS"
+author: windows-driver-content
+description: The TRANSACTIONMANAGER_INFORMATION_CLASS enumeration specifies the type of information that the ZwQueryInformationTransactionManager routine can retrieve for a transaction manager object.
+old-location: kernel\transactionmanager_information_class.htm
+old-project: kernel
+ms.assetid: 71d6db29-0a93-4793-92f4-3e85615e1b61
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: "_TRANSACTIONMANAGER_INFORMATION_CLASS, wdm/TransactionManagerLogInformation, TRANSACTIONMANAGER_INFORMATION_CLASS, TransactionManagerRecoveryInformation, wdm/TRANSACTIONMANAGER_INFORMATION_CLASS, ktm_ref_55fd8dd4-e88d-40df-9091-1aecc4de38a7.xml, wdm/TransactionManagerRecoveryInformation, wdm/TransactionManagerLogPathInformation, TransactionManagerLogPathInformation, kernel.transactionmanager_information_class, TransactionManagerLogInformation, TransactionManagerBasicInformation, wdm/TransactionManagerBasicInformation, TRANSACTIONMANAGER_INFORMATION_CLASS enumeration [Kernel-Mode Driver Architecture]"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later operating system versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	TRANSACTIONMANAGER_INFORMATION_CLASS
+product: Windows
+targetos: Windows
+req.typenames: TRANSACTIONMANAGER_INFORMATION_CLASS
+req.product: Windows 10 or later.
 ---
 
 # _TRANSACTIONMANAGER_INFORMATION_CLASS Enumeration
@@ -55,26 +60,26 @@ typedef enum _TRANSACTIONMANAGER_INFORMATION_CLASS {
 ## Constants
 
 <table>
-
-<tr>
-<td>TransactionManagerBasicInformation</td>
-<td>Information about a transaction manager object is stored in a <a href="..\wdm\ns-wdm-_transactionmanager_basic_information.md">TRANSACTIONMANAGER_BASIC_INFORMATION</a> structure.</td>
-</tr>
-
-<tr>
-<td>TransactionManagerLogInformation</td>
-<td>Information about a transaction manager object is stored in a <a href="..\wdm\ns-wdm-_transactionmanager_log_information.md">TRANSACTIONMANAGER_LOG_INFORMATION</a> structure.</td>
-</tr>
-
-<tr>
-<td>TransactionManagerLogPathInformation</td>
-<td>Information about a transaction manager object is stored in a <a href="..\wdm\ns-wdm-_transactionmanager_logpath_information.md">TRANSACTIONMANAGER_LOGPATH_INFORMATION</a> structure.</td>
-</tr>
-
-<tr>
-<td>TransactionManagerRecoveryInformation</td>
-<td>Information about a transaction manager object is stored in a <a href="..\wdm\ns-wdm-_transactionmanager_recovery_information.md">TRANSACTIONMANAGER_RECOVERY_INFORMATION</a> structure.</td>
-</tr>
+            
+                <tr>
+                    <td>TransactionManagerBasicInformation</td>
+                    <td>Information about a transaction manager object is stored in a <a href="..\wdm\ns-wdm-_transactionmanager_basic_information.md">TRANSACTIONMANAGER_BASIC_INFORMATION</a> structure.</td>
+                </tr>
+            
+                <tr>
+                    <td>TransactionManagerLogInformation</td>
+                    <td>Information about a transaction manager object is stored in a <a href="..\wdm\ns-wdm-_transactionmanager_log_information.md">TRANSACTIONMANAGER_LOG_INFORMATION</a> structure.</td>
+                </tr>
+            
+                <tr>
+                    <td>TransactionManagerLogPathInformation</td>
+                    <td>Information about a transaction manager object is stored in a <a href="..\wdm\ns-wdm-_transactionmanager_logpath_information.md">TRANSACTIONMANAGER_LOGPATH_INFORMATION</a> structure.</td>
+                </tr>
+            
+                <tr>
+                    <td>TransactionManagerRecoveryInformation</td>
+                    <td>Information about a transaction manager object is stored in a <a href="..\wdm\ns-wdm-_transactionmanager_recovery_information.md">TRANSACTIONMANAGER_RECOVERY_INFORMATION</a> structure.</td>
+                </tr>
 </table>
 
 
@@ -84,9 +89,9 @@ typedef enum _TRANSACTIONMANAGER_INFORMATION_CLASS {
 | **Windows version** | Available in Windows Vista and later operating system versions. Available in Windows Vista and later operating system versions. |
 | **Header** | wdm.h (include Wdm.h, Ntddk.h, Ntifs.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\wdm\ns-wdm-_transactionmanager_logpath_information.md">TRANSACTIONMANAGER_LOGPATH_INFORMATION</a>
+        <a href="..\wdm\ns-wdm-_transactionmanager_logpath_information.md">TRANSACTIONMANAGER_LOGPATH_INFORMATION</a>
 
 <a href="..\wdm\ns-wdm-_transactionmanager_log_information.md">TRANSACTIONMANAGER_LOG_INFORMATION</a>
 

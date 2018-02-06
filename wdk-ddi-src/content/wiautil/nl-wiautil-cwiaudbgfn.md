@@ -1,42 +1,47 @@
 ---
-UID : NL:wiautil.CWiauDbgFn
-title : CWiauDbgFn
-author : windows-driver-content
-description : The CWiauDbgFn class is a helper class that is used for tracing function or method entry and exit points.
-old-location : image\cwiaudbgfn_class.htm
-old-project : image
-ms.assetid : 4be4007c-5f04-48f2-b88c-c2d71f6e8b7b
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : image.cwiaudbgfn_class, CWiauDbgFn class [Imaging Devices], CWiauDbgFn class [Imaging Devices], described, CWiauDbgFn, wiautil/CWiauDbgFn, wiauFncs_485ebf85-0a5f-4bac-b9bf-6f91f5f1aedd.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : class
-req.header : wiautil.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SKIP_AMOUNT
-req.product : Windows 10 or later.
+UID: NL:wiautil.CWiauDbgFn
+title: CWiauDbgFn
+author: windows-driver-content
+description: The CWiauDbgFn class is a helper class that is used for tracing function or method entry and exit points.
+old-location: image\cwiaudbgfn_class.htm
+old-project: image
+ms.assetid: 4be4007c-5f04-48f2-b88c-c2d71f6e8b7b
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: image.cwiaudbgfn_class, CWiauDbgFn class [Imaging Devices], CWiauDbgFn class [Imaging Devices], described, CWiauDbgFn, wiautil/CWiauDbgFn, wiauFncs_485ebf85-0a5f-4bac-b9bf-6f91f5f1aedd.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: class
+req.header: wiautil.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Wiautil.h
+apiname:
+-	CWiauDbgFn
+product: Windows
+targetos: Windows
+req.typenames: SKIP_AMOUNT
+req.product: Windows 10 or later.
 ---
 
 # CWiauDbgFn Class

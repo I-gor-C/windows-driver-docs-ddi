@@ -1,41 +1,47 @@
 ---
-UID : NF:drmk.DrmForwardContentToInterface
-title : DrmForwardContentToInterface function
-author : windows-driver-content
-description : The DrmForwardContentToInterface function accepts a pointer to the COM interface of an object to which the caller intends to forward protected content.
-old-location : audio\drmforwardcontenttointerface.htm
-old-project : audio
-ms.assetid : 13326eae-3160-42e5-9254-089c8cdc97a3
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : drmk/DrmForwardContentToInterface, DrmForwardContentToInterface, audio.drmforwardcontenttointerface, DrmForwardContentToInterface function [Audio Devices], aud-prop2_c065f793-db14-4fc9-8804-f6d86754e106.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : drmk.h
-req.include-header : Drmk.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Drmk.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDI_TX_METADATA, *PWDI_TX_METADATA
+UID: NF:drmk.DrmForwardContentToInterface
+title: DrmForwardContentToInterface function
+author: windows-driver-content
+description: The DrmForwardContentToInterface function accepts a pointer to the COM interface of an object to which the caller intends to forward protected content.
+old-location: audio\drmforwardcontenttointerface.htm
+old-project: audio
+ms.assetid: 13326eae-3160-42e5-9254-089c8cdc97a3
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: drmk/DrmForwardContentToInterface, DrmForwardContentToInterface, audio.drmforwardcontenttointerface, DrmForwardContentToInterface function [Audio Devices], aud-prop2_c065f793-db14-4fc9-8804-f6d86754e106.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: drmk.h
+req.include-header: Drmk.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Drmk.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Drmk.lib
+-	Drmk.dll
+apiname:
+-	DrmForwardContentToInterface
+product: Windows
+targetos: Windows
+req.typenames: WDI_TX_METADATA, *PWDI_TX_METADATA
 ---
 
 

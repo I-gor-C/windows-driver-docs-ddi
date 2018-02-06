@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddk._FILE_FS_SIZE_INFORMATION
-title : "_FILE_FS_SIZE_INFORMATION"
-author : windows-driver-content
-description : The FILE_FS_SIZE_INFORMATION structure is used to query sector size information for a file system volume.
-old-location : ifsk\file_fs_size_information.htm
-old-project : ifsk
-ms.assetid : b7b35df9-04bb-40f0-a076-f4ed5f54ca6c
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : PFILE_FS_SIZE_INFORMATION, *PFILE_FS_SIZE_INFORMATION, ntddk/FILE_FS_SIZE_INFORMATION, FILE_FS_SIZE_INFORMATION structure [Installable File System Drivers], ntddk/PFILE_FS_SIZE_INFORMATION, fileinformationstructures_749eab67-2b42-4c11-a9a8-ef8ae9866f17.xml, _FILE_FS_SIZE_INFORMATION, FILE_FS_SIZE_INFORMATION, ifsk.file_fs_size_information, PFILE_FS_SIZE_INFORMATION structure pointer [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddk.h
-req.include-header : Ntddk.h, Ntifs.h, Fltkernel.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PFILE_FS_SIZE_INFORMATION, FILE_FS_SIZE_INFORMATION"
+UID: NS:ntddk._FILE_FS_SIZE_INFORMATION
+title: "_FILE_FS_SIZE_INFORMATION"
+author: windows-driver-content
+description: The FILE_FS_SIZE_INFORMATION structure is used to query sector size information for a file system volume.
+old-location: ifsk\file_fs_size_information.htm
+old-project: ifsk
+ms.assetid: b7b35df9-04bb-40f0-a076-f4ed5f54ca6c
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: PFILE_FS_SIZE_INFORMATION, *PFILE_FS_SIZE_INFORMATION, ntddk/FILE_FS_SIZE_INFORMATION, FILE_FS_SIZE_INFORMATION structure [Installable File System Drivers], ntddk/PFILE_FS_SIZE_INFORMATION, fileinformationstructures_749eab67-2b42-4c11-a9a8-ef8ae9866f17.xml, _FILE_FS_SIZE_INFORMATION, FILE_FS_SIZE_INFORMATION, ifsk.file_fs_size_information, PFILE_FS_SIZE_INFORMATION structure pointer [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddk.h
+req.include-header: Ntddk.h, Ntifs.h, Fltkernel.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddk.h
+apiname:
+-	FILE_FS_SIZE_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: "*PFILE_FS_SIZE_INFORMATION, FILE_FS_SIZE_INFORMATION"
 ---
 
 # _FILE_FS_SIZE_INFORMATION structure

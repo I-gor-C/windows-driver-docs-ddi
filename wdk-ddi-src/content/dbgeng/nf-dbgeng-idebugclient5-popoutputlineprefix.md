@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugClient5.PopOutputLinePrefix
-title : IDebugClient5::PopOutputLinePrefix method
-author : windows-driver-content
-description : Restores a previously saved output line prefix.
-old-location : debugger\idebugclient5_popoutputlineprefix.htm
-old-project : debugger
-ms.assetid : 40371218-E948-475E-92E6-0CB02D348008
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : debugger.idebugclient5_popoutputlineprefix, dbgeng/IDebugClient5::PopOutputLinePrefix, IDebugClient5 interface [Windows Debugging], PopOutputLinePrefix method, PopOutputLinePrefix method [Windows Debugging], IDebugClient5 interface, IDebugClient5::PopOutputLinePrefix, PopOutputLinePrefix method [Windows Debugging], IDebugClient5, PopOutputLinePrefix
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugClient5.PopOutputLinePrefix
+title: IDebugClient5::PopOutputLinePrefix method
+author: windows-driver-content
+description: Restores a previously saved output line prefix.
+old-location: debugger\idebugclient5_popoutputlineprefix.htm
+old-project: debugger
+ms.assetid: 40371218-E948-475E-92E6-0CB02D348008
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: debugger.idebugclient5_popoutputlineprefix, dbgeng/IDebugClient5::PopOutputLinePrefix, IDebugClient5 interface [Windows Debugging], PopOutputLinePrefix method, PopOutputLinePrefix method [Windows Debugging], IDebugClient5 interface, IDebugClient5::PopOutputLinePrefix, PopOutputLinePrefix method [Windows Debugging], IDebugClient5, PopOutputLinePrefix
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugClient5.PopOutputLinePrefix
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

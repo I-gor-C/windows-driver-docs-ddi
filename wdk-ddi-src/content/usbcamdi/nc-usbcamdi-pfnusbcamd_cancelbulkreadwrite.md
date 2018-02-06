@@ -1,42 +1,47 @@
 ---
-UID : NC:usbcamdi.PFNUSBCAMD_CancelBulkReadWrite
-title : PFNUSBCAMD_CancelBulkReadWrite
-author : windows-driver-content
-description : The USBCAMD_CancelBulkReadWrite service cancels a pending bulk read or write request.
-old-location : stream\usbcamd_cancelbulkreadwrite.htm
-old-project : stream
-ms.assetid : e63a56d8-fdd8-468d-b0f9-2c46c5ff7a00
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.usbcamd_cancelbulkreadwrite, USBCAMD_CancelBulkReadWrite routine [Streaming Media Devices], USBCAMD_CancelBulkReadWrite, PFNUSBCAMD_CancelBulkReadWrite, PFNUSBCAMD_CancelBulkReadWrite, usbcamdi/USBCAMD_CancelBulkReadWrite, usbcmdpr_ba242b77-cda6-4b16-a7a1-297701108cd8.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : usbcamdi.h
-req.include-header : Usbcamdi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUSB_BUS_INTERFACE_USBDI_V3, USB_BUS_INTERFACE_USBDI_V3"
-req.product : Windows 10 or later.
+UID: NC:usbcamdi.PFNUSBCAMD_CancelBulkReadWrite
+title: PFNUSBCAMD_CancelBulkReadWrite
+author: windows-driver-content
+description: The USBCAMD_CancelBulkReadWrite service cancels a pending bulk read or write request.
+old-location: stream\usbcamd_cancelbulkreadwrite.htm
+old-project: stream
+ms.assetid: e63a56d8-fdd8-468d-b0f9-2c46c5ff7a00
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.usbcamd_cancelbulkreadwrite, USBCAMD_CancelBulkReadWrite routine [Streaming Media Devices], USBCAMD_CancelBulkReadWrite, PFNUSBCAMD_CancelBulkReadWrite, PFNUSBCAMD_CancelBulkReadWrite, usbcamdi/USBCAMD_CancelBulkReadWrite, usbcmdpr_ba242b77-cda6-4b16-a7a1-297701108cd8.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: usbcamdi.h
+req.include-header: Usbcamdi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	usbcamdi.h
+apiname:
+-	USBCAMD_CancelBulkReadWrite
+product: Windows
+targetos: Windows
+req.typenames: "*PUSB_BUS_INTERFACE_USBDI_V3, USB_BUS_INTERFACE_USBDI_V3"
+req.product: Windows 10 or later.
 ---
 
 

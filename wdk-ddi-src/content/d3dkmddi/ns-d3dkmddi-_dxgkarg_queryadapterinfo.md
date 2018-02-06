@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGKARG_QUERYADAPTERINFO
-title : "_DXGKARG_QUERYADAPTERINFO"
-author : windows-driver-content
-description : The DXGKARG_QUERYADAPTERINFO structure contains parameters for a query.
-old-location : display\dxgkarg_queryadapterinfo.htm
-old-project : display
-ms.assetid : 5992c846-93de-4f95-839a-81f14db709f7
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : "_DXGKARG_QUERYADAPTERINFO, DXGKARG_QUERYADAPTERINFO structure [Display Devices], d3dkmddi/DXGKARG_QUERYADAPTERINFO, DXGKARG_QUERYADAPTERINFO, display.dxgkarg_queryadapterinfo, DmStructs_82a38a66-d65c-4b88-be6d-974590e9472a.xml"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGKARG_QUERYADAPTERINFO
+UID: NS:d3dkmddi._DXGKARG_QUERYADAPTERINFO
+title: "_DXGKARG_QUERYADAPTERINFO"
+author: windows-driver-content
+description: The DXGKARG_QUERYADAPTERINFO structure contains parameters for a query.
+old-location: display\dxgkarg_queryadapterinfo.htm
+old-project: display
+ms.assetid: 5992c846-93de-4f95-839a-81f14db709f7
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: "_DXGKARG_QUERYADAPTERINFO, DXGKARG_QUERYADAPTERINFO structure [Display Devices], d3dkmddi/DXGKARG_QUERYADAPTERINFO, DXGKARG_QUERYADAPTERINFO, display.dxgkarg_queryadapterinfo, DmStructs_82a38a66-d65c-4b88-be6d-974590e9472a.xml"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DXGKARG_QUERYADAPTERINFO
+product: Windows
+targetos: Windows
+req.typenames: DXGKARG_QUERYADAPTERINFO
 ---
 
 # _DXGKARG_QUERYADAPTERINFO structure

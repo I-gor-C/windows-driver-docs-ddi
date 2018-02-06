@@ -1,41 +1,47 @@
 ---
-UID : NF:fltkernel.FltAllocatePoolAlignedWithTag
-title : FltAllocatePoolAlignedWithTag function
-author : windows-driver-content
-description : FltAllocatePoolAlignedWithTag allocates a device-aligned buffer for use in a noncached I/O operation.
-old-location : ifsk\fltallocatepoolalignedwithtag.htm
-old-project : ifsk
-ms.assetid : ffb1493f-6076-4b93-8431-b3ffd4679f96
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltApiRef_a_to_d_b617aed0-5103-4a1e-aa0d-86247d99e803.xml, fltkernel/FltAllocatePoolAlignedWithTag, ifsk.fltallocatepoolalignedwithtag, FltAllocatePoolAlignedWithTag, FltAllocatePoolAlignedWithTag function [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : 
-req.irql : "<= APC_LEVEL (see Remarks section)"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltAllocatePoolAlignedWithTag
+title: FltAllocatePoolAlignedWithTag function
+author: windows-driver-content
+description: FltAllocatePoolAlignedWithTag allocates a device-aligned buffer for use in a noncached I/O operation.
+old-location: ifsk\fltallocatepoolalignedwithtag.htm
+old-project: ifsk
+ms.assetid: ffb1493f-6076-4b93-8431-b3ffd4679f96
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltApiRef_a_to_d_b617aed0-5103-4a1e-aa0d-86247d99e803.xml, fltkernel/FltAllocatePoolAlignedWithTag, ifsk.fltallocatepoolalignedwithtag, FltAllocatePoolAlignedWithTag, FltAllocatePoolAlignedWithTag function [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: 
+req.irql: "<= APC_LEVEL (see Remarks section)"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	FltMgr.lib
+-	FltMgr.dll
+apiname:
+-	FltAllocatePoolAlignedWithTag
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

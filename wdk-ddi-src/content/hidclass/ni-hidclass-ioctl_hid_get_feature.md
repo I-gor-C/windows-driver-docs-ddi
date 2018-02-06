@@ -1,41 +1,46 @@
 ---
-UID : NI:hidclass.IOCTL_HID_GET_FEATURE
-title : IOCTL_HID_GET_FEATURE
-author : windows-driver-content
-description : The IOCTL_HID_GET_FEATURE request obtains a feature report from a HIDClass device.
-old-location : hid\ioctl_hid_get_feature.htm
-old-project : hid
-ms.assetid : c77b4899-b76a-486c-aecd-7e052a1d9256
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : hid.ioctl_hid_get_feature, IOCTL_HID_GET_FEATURE control code [Human Input Devices], IOCTL_HID_GET_FEATURE, hidclass/IOCTL_HID_GET_FEATURE, hidioreq_2933a93c-ff74-41b8-9b0a-d1a8ae32b1cb.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : hidclass.h
-req.include-header : Hidclass.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HDAUDIO_STREAM_FORMAT, *PHDAUDIO_STREAM_FORMAT
+UID: NI:hidclass.IOCTL_HID_GET_FEATURE
+title: IOCTL_HID_GET_FEATURE
+author: windows-driver-content
+description: The IOCTL_HID_GET_FEATURE request obtains a feature report from a HIDClass device.
+old-location: hid\ioctl_hid_get_feature.htm
+old-project: hid
+ms.assetid: c77b4899-b76a-486c-aecd-7e052a1d9256
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: hid.ioctl_hid_get_feature, IOCTL_HID_GET_FEATURE control code [Human Input Devices], IOCTL_HID_GET_FEATURE, hidclass/IOCTL_HID_GET_FEATURE, hidioreq_2933a93c-ff74-41b8-9b0a-d1a8ae32b1cb.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: hidclass.h
+req.include-header: Hidclass.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hidclass.h
+apiname:
+-	IOCTL_HID_GET_FEATURE
+product: Windows
+targetos: Windows
+req.typenames: HDAUDIO_STREAM_FORMAT, *PHDAUDIO_STREAM_FORMAT
 ---
 
 # IOCTL_HID_GET_FEATURE IOCTL

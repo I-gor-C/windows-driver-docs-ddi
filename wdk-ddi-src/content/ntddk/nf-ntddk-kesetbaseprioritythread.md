@@ -1,41 +1,46 @@
 ---
-UID : NF:ntddk.KeSetBasePriorityThread
-title : KeSetBasePriorityThread function
-author : windows-driver-content
-description : The KeSetBasePriorityThread routine sets the run-time priority, relative to the current process, for a given thread.
-old-location : kernel\kesetbaseprioritythread.htm
-old-project : kernel
-ms.assetid : 7070070c-a953-4120-bddf-c1a7f080ef50
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ntddk/KeSetBasePriorityThread, kernel.kesetbaseprioritythread, KeSetBasePriorityThread routine [Kernel-Mode Driver Architecture], k105_6c558266-e459-447c-9586-4b327e24d7dd.xml, KeSetBasePriorityThread
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.KeSetBasePriorityThread
+title: KeSetBasePriorityThread function
+author: windows-driver-content
+description: The KeSetBasePriorityThread routine sets the run-time priority, relative to the current process, for a given thread.
+old-location: kernel\kesetbaseprioritythread.htm
+old-project: kernel
+ms.assetid: 7070070c-a953-4120-bddf-c1a7f080ef50
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ntddk/KeSetBasePriorityThread, kernel.kesetbaseprioritythread, KeSetBasePriorityThread routine [Kernel-Mode Driver Architecture], k105_6c558266-e459-447c-9586-4b327e24d7dd.xml, KeSetBasePriorityThread
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	KeSetBasePriorityThread
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

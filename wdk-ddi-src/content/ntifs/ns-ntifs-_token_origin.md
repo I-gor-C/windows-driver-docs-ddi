@@ -1,41 +1,46 @@
 ---
-UID : NS:ntifs._TOKEN_ORIGIN
-title : "_TOKEN_ORIGIN"
-author : windows-driver-content
-description : The TOKEN_ORIGIN structure contains information about the origin of the logon session.
-old-location : ifsk\token_origin.htm
-old-project : ifsk
-ms.assetid : 6e2175f3-3d63-40d0-854b-440862530aa8
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : PTOKEN_ORIGIN, ifsk.token_origin, TOKEN_ORIGIN structure [Installable File System Drivers], ntifs/PTOKEN_ORIGIN, securitystructures_5cc2fc36-4e83-4544-8f24-dcbf768dbb9c.xml, PTOKEN_ORIGIN structure pointer [Installable File System Drivers], _TOKEN_ORIGIN, ntifs/TOKEN_ORIGIN, TOKEN_ORIGIN, *PTOKEN_ORIGIN
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntifs.h
-req.include-header : Ntifs.h, FltKernel.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_ORIGIN, *PTOKEN_ORIGIN
+UID: NS:ntifs._TOKEN_ORIGIN
+title: "_TOKEN_ORIGIN"
+author: windows-driver-content
+description: The TOKEN_ORIGIN structure contains information about the origin of the logon session.
+old-location: ifsk\token_origin.htm
+old-project: ifsk
+ms.assetid: 6e2175f3-3d63-40d0-854b-440862530aa8
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: PTOKEN_ORIGIN, ifsk.token_origin, TOKEN_ORIGIN structure [Installable File System Drivers], ntifs/PTOKEN_ORIGIN, securitystructures_5cc2fc36-4e83-4544-8f24-dcbf768dbb9c.xml, PTOKEN_ORIGIN structure pointer [Installable File System Drivers], _TOKEN_ORIGIN, ntifs/TOKEN_ORIGIN, TOKEN_ORIGIN, *PTOKEN_ORIGIN
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntifs.h
+req.include-header: Ntifs.h, FltKernel.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntifs.h
+apiname:
+-	TOKEN_ORIGIN
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_ORIGIN, *PTOKEN_ORIGIN
 ---
 
 # _TOKEN_ORIGIN structure

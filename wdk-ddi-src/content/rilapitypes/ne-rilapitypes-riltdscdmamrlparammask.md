@@ -1,42 +1,47 @@
 ---
-UID : NE:rilapitypes.RILTDSCDMAMRLPARAMMASK
-title : RILTDSCDMAMRLPARAMMASK
-author : windows-driver-content
-description : This enumeration describes the RILTDSCDMAMRLPARAMMASK.
-old-location : netvista\riltdscdmamrlparammask.htm
-old-project : netvista
-ms.assetid : d2cc4c39-b96e-4078-bfea-2e06a07e938e
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : RIL_PARAM_TDSCDMAMRL_ALL, RIL_PARAM_TDSCDMAMRL_LAC, rilapitypes/RIL_PARAM_TDSCDMAMRL_ALL, rilapitypes/RIL_PARAM_TDSCDMAMRL_UARFCN, RILTDSCDMAMRLPARAMMASK, rilapitypes/RIL_PARAM_TDSCDMAMRL_MNC, rilapitypes/RIL_PARAM_TDSCDMAMRL_CELLID, RIL_PARAM_TDSCDMAMRL_CELLID, RIL_PARAM_TDSCDMAMRL_MCC, RIL_PARAM_TDSCDMAMRL_CELLPARAM, rilapitypes/RIL_PARAM_TDSCDMAMRL_PATHLOSS, rilapitypes/RILTDSCDMAMRLPARAMMASK, rilapitypes/RIL_PARAM_TDSCDMAMRL_CELLPARAM, rilapitypes/RIL_PARAM_TDSCDMAMRL_RSCP, RIL_PARAM_TDSCDMAMRL_MNC, netvista.riltdscdmamrlparammask, RIL_PARAM_TDSCDMAMRL_UARFCN, RILTDSCDMAMRLPARAMMASK enumeration [Network Drivers Starting with Windows Vista], RIL_PARAM_TDSCDMAMRL_PATHLOSS, rilapitypes/RIL_PARAM_TDSCDMAMRL_MCC, RIL_PARAM_TDSCDMAMRL_RSCP, rilapitypes/RIL_PARAM_TDSCDMAMRL_LAC
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : rilapitypes.h
-req.include-header : Rilapitypes.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RILTDSCDMAMRLPARAMMASK
-req.product : Windows 10 or later.
+UID: NE:rilapitypes.RILTDSCDMAMRLPARAMMASK
+title: RILTDSCDMAMRLPARAMMASK
+author: windows-driver-content
+description: This enumeration describes the RILTDSCDMAMRLPARAMMASK.
+old-location: netvista\riltdscdmamrlparammask.htm
+old-project: netvista
+ms.assetid: d2cc4c39-b96e-4078-bfea-2e06a07e938e
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: RIL_PARAM_TDSCDMAMRL_ALL, RIL_PARAM_TDSCDMAMRL_LAC, rilapitypes/RIL_PARAM_TDSCDMAMRL_ALL, rilapitypes/RIL_PARAM_TDSCDMAMRL_UARFCN, RILTDSCDMAMRLPARAMMASK, rilapitypes/RIL_PARAM_TDSCDMAMRL_MNC, rilapitypes/RIL_PARAM_TDSCDMAMRL_CELLID, RIL_PARAM_TDSCDMAMRL_CELLID, RIL_PARAM_TDSCDMAMRL_MCC, RIL_PARAM_TDSCDMAMRL_CELLPARAM, rilapitypes/RIL_PARAM_TDSCDMAMRL_PATHLOSS, rilapitypes/RILTDSCDMAMRLPARAMMASK, rilapitypes/RIL_PARAM_TDSCDMAMRL_CELLPARAM, rilapitypes/RIL_PARAM_TDSCDMAMRL_RSCP, RIL_PARAM_TDSCDMAMRL_MNC, netvista.riltdscdmamrlparammask, RIL_PARAM_TDSCDMAMRL_UARFCN, RILTDSCDMAMRLPARAMMASK enumeration [Network Drivers Starting with Windows Vista], RIL_PARAM_TDSCDMAMRL_PATHLOSS, rilapitypes/RIL_PARAM_TDSCDMAMRL_MCC, RIL_PARAM_TDSCDMAMRL_RSCP, rilapitypes/RIL_PARAM_TDSCDMAMRL_LAC
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: rilapitypes.h
+req.include-header: Rilapitypes.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	rilapitypes.h
+apiname:
+-	RILTDSCDMAMRLPARAMMASK
+product: Windows
+targetos: Windows
+req.typenames: RILTDSCDMAMRLPARAMMASK
+req.product: Windows 10 or later.
 ---
 
 # RILTDSCDMAMRLPARAMMASK Enumeration
@@ -61,56 +66,56 @@ enum RILTDSCDMAMRLPARAMMASK {
 ## Constants
 
 <table>
-
-<tr>
-<td>RIL_PARAM_TDSCDMAMRL_ALL</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_PARAM_TDSCDMAMRL_CELLID</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_PARAM_TDSCDMAMRL_CELLPARAM</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_PARAM_TDSCDMAMRL_LAC</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_PARAM_TDSCDMAMRL_MCC</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_PARAM_TDSCDMAMRL_MNC</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_PARAM_TDSCDMAMRL_PATHLOSS</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_PARAM_TDSCDMAMRL_RSCP</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_PARAM_TDSCDMAMRL_UARFCN</td>
-<td></td>
-</tr>
+            
+                <tr>
+                    <td>RIL_PARAM_TDSCDMAMRL_ALL</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_TDSCDMAMRL_CELLID</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_TDSCDMAMRL_CELLPARAM</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_TDSCDMAMRL_LAC</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_TDSCDMAMRL_MCC</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_TDSCDMAMRL_MNC</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_TDSCDMAMRL_PATHLOSS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_TDSCDMAMRL_RSCP</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_TDSCDMAMRL_UARFCN</td>
+                    <td></td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-Networks will vary, but the following table summarizes which items are returned for typical TD-SCDMA networks. 
+        Networks will vary, but the following table summarizes which items are returned for typical TD-SCDMA networks. 
 
 <b>Serving network</b>
 <table>
@@ -461,9 +466,9 @@ No
 | ---- |:---- |
 | **Header** | rilapitypes.h (include Rilapitypes.h) |
 
-## See Also
+    ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn946509">Cellular COM enumerations</a>
+        <a href="https://msdn.microsoft.com/library/windows/hardware/dn946509">Cellular COM enumerations</a>
 
  
 

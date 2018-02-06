@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddpar.IOCTL_PAR_GET_DEFAULT_MODES
-title : IOCTL_PAR_GET_DEFAULT_MODES
-author : windows-driver-content
-description : The IOCTL_PAR_GET_DEFAULT_MODES request returns the default write (forward) and read (reverse) IEEE 1284 protocols that the system-supplied bus driver for parallel ports uses.
-old-location : parports\ioctl_par_get_default_modes.htm
-old-project : parports
-ms.assetid : d2f440b2-1208-4cae-9790-b93f267499b1
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : parports.ioctl_par_get_default_modes, IOCTL_PAR_GET_DEFAULT_MODES control code [Parallel Ports], IOCTL_PAR_GET_DEFAULT_MODES, ntddpar/IOCTL_PAR_GET_DEFAULT_MODES, cisspd_29dfce16-6dea-4bff-928d-6ab83099595c.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddpar.h
-req.include-header : Ntddpar.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*POFFLOAD_SECURITY_ASSOCIATION, OFFLOAD_SECURITY_ASSOCIATION"
+UID: NI:ntddpar.IOCTL_PAR_GET_DEFAULT_MODES
+title: IOCTL_PAR_GET_DEFAULT_MODES
+author: windows-driver-content
+description: The IOCTL_PAR_GET_DEFAULT_MODES request returns the default write (forward) and read (reverse) IEEE 1284 protocols that the system-supplied bus driver for parallel ports uses.
+old-location: parports\ioctl_par_get_default_modes.htm
+old-project: parports
+ms.assetid: d2f440b2-1208-4cae-9790-b93f267499b1
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: parports.ioctl_par_get_default_modes, IOCTL_PAR_GET_DEFAULT_MODES control code [Parallel Ports], IOCTL_PAR_GET_DEFAULT_MODES, ntddpar/IOCTL_PAR_GET_DEFAULT_MODES, cisspd_29dfce16-6dea-4bff-928d-6ab83099595c.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddpar.h
+req.include-header: Ntddpar.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddpar.h
+apiname:
+-	IOCTL_PAR_GET_DEFAULT_MODES
+product: Windows
+targetos: Windows
+req.typenames: "*POFFLOAD_SECURITY_ASSOCIATION, OFFLOAD_SECURITY_ASSOCIATION"
 ---
 
 # IOCTL_PAR_GET_DEFAULT_MODES IOCTL

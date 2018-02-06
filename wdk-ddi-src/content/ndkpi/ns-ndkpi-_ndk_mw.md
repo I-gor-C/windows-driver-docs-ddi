@@ -1,41 +1,46 @@
 ---
-UID : NS:ndkpi._NDK_MW
-title : "_NDK_MW"
-author : windows-driver-content
-description : The NDK_MW structure specifies the attributes of an NDK memory window (MW) object.
-old-location : netvista\ndk_mw.htm
-old-project : netvista
-ms.assetid : C304A6AA-6ABA-40DF-8EE1-ABDEBEE3B006
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : "_NDK_MW, NDK_MW, PNDK_MW, netvista.ndk_mw, NDK_MW structure [Network Drivers Starting with Windows Vista], ndkpi/PNDK_MW, ndkpi/NDK_MW, PNDK_MW structure pointer [Network Drivers Starting with Windows Vista]"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndkpi.h
-req.include-header : Ndkpi.h
-req.target-type : Windows
-req.target-min-winverclnt : None supported,Supported in NDIS 6.30 and later.
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDK_MW
+UID: NS:ndkpi._NDK_MW
+title: "_NDK_MW"
+author: windows-driver-content
+description: The NDK_MW structure specifies the attributes of an NDK memory window (MW) object.
+old-location: netvista\ndk_mw.htm
+old-project: netvista
+ms.assetid: C304A6AA-6ABA-40DF-8EE1-ABDEBEE3B006
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: "_NDK_MW, NDK_MW, PNDK_MW, netvista.ndk_mw, NDK_MW structure [Network Drivers Starting with Windows Vista], ndkpi/PNDK_MW, ndkpi/NDK_MW, PNDK_MW structure pointer [Network Drivers Starting with Windows Vista]"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndkpi.h
+req.include-header: Ndkpi.h
+req.target-type: Windows
+req.target-min-winverclnt: None supported,Supported in NDIS 6.30 and later.
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndkpi.h
+apiname:
+-	NDK_MW
+product: Windows
+targetos: Windows
+req.typenames: NDK_MW
 ---
 
 # _NDK_MW structure

@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.RtlIsCloudFilesPlaceholder
-title : RtlIsCloudFilesPlaceholder function
-author : windows-driver-content
-description : The RtlIsCloudFilesPlaceholder routine determines if a file or a directory is a CloudFiles placeholder, based on the FileAttributes and ReparseTag values of the file.
-old-location : ifsk\rtliscloudfilesplaceholder.htm
-old-project : ifsk
-ms.assetid : 9FF2EC69-0844-4FD7-A2BC-F16C42922212
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : RtlIsCloudFilesPlaceholder routine [Installable File System Drivers], ifsk.rtliscloudfilesplaceholder, RtlIsCloudFilesPlaceholder, ntifs/RtlIsCloudFilesPlaceholder
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows 10, version 1709.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : Ntdll.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.RtlIsCloudFilesPlaceholder
+title: RtlIsCloudFilesPlaceholder function
+author: windows-driver-content
+description: The RtlIsCloudFilesPlaceholder routine determines if a file or a directory is a CloudFiles placeholder, based on the FileAttributes and ReparseTag values of the file.
+old-location: ifsk\rtliscloudfilesplaceholder.htm
+old-project: ifsk
+ms.assetid: 9FF2EC69-0844-4FD7-A2BC-F16C42922212
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: RtlIsCloudFilesPlaceholder routine [Installable File System Drivers], ifsk.rtliscloudfilesplaceholder, RtlIsCloudFilesPlaceholder, ntifs/RtlIsCloudFilesPlaceholder
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows 10, version 1709.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: Ntdll.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Ntdll.dll
+apiname:
+-	RtlIsCloudFilesPlaceholder
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

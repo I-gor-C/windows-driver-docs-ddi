@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.FsRtlQueryKernelEaFile
-title : FsRtlQueryKernelEaFile function
-author : windows-driver-content
-description : The routine FsRtlQueryKernelEaFile is used to build an explicit QueryEA request and synchronously wait for it to complete, returning the result. This allows the caller to do this by FileObject instead of a handle.
-old-location : ifsk\fsrtlquerykerneleafile.htm
-old-project : ifsk
-ms.assetid : B57BC3A4-6116-48EA-905A-CFA7AC0A5E8F
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FsRtlQueryKernelEaFile routine [Installable File System Drivers], ifsk.fsrtlquerykerneleafile, ntifs/FsRtlQueryKernelEaFile, FsRtlQueryKernelEaFile
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.FsRtlQueryKernelEaFile
+title: FsRtlQueryKernelEaFile function
+author: windows-driver-content
+description: The routine FsRtlQueryKernelEaFile is used to build an explicit QueryEA request and synchronously wait for it to complete, returning the result. This allows the caller to do this by FileObject instead of a handle.
+old-location: ifsk\fsrtlquerykerneleafile.htm
+old-project: ifsk
+ms.assetid: B57BC3A4-6116-48EA-905A-CFA7AC0A5E8F
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FsRtlQueryKernelEaFile routine [Installable File System Drivers], ifsk.fsrtlquerykerneleafile, ntifs/FsRtlQueryKernelEaFile, FsRtlQueryKernelEaFile
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntifs.h
+apiname:
+-	FsRtlQueryKernelEaFile
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

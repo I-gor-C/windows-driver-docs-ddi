@@ -1,41 +1,46 @@
 ---
-UID : NN:portcls.IPortEvents
-title : IPortEvents
-author : windows-driver-content
-description : The IPortEvents interface is used by miniport drivers to notify clients of hardware events.
-old-location : audio\iportevents.htm
-old-project : audio
-ms.assetid : bbbb5486-1217-4c4d-9421-96994a5fec82
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : audio.iportevents, IPortEvents interface [Audio Devices], IPortEvents interface [Audio Devices], described, IPortEvents, portcls/IPortEvents, audmp-routines_8e6cf7c4-af42-4c89-8c00-29470317a455.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : portcls.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Portcls.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NN:portcls.IPortEvents
+title: IPortEvents
+author: windows-driver-content
+description: The IPortEvents interface is used by miniport drivers to notify clients of hardware events.
+old-location: audio\iportevents.htm
+old-project: audio
+ms.assetid: bbbb5486-1217-4c4d-9421-96994a5fec82
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: audio.iportevents, IPortEvents interface [Audio Devices], IPortEvents interface [Audio Devices], described, IPortEvents, portcls/IPortEvents, audmp-routines_8e6cf7c4-af42-4c89-8c00-29470317a455.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: portcls.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Portcls.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	portcls.h
+apiname:
+-	IPortEvents
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 # IPortEvents interface

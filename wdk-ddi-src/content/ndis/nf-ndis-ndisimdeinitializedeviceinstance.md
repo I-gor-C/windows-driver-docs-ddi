@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisIMDeInitializeDeviceInstance
-title : NdisIMDeInitializeDeviceInstance function
-author : windows-driver-content
-description : The NdisIMDeInitializeDeviceInstance function calls an NDIS intermediate driver's MiniportHaltEx function to tear down the driver's virtual miniport.
-old-location : netvista\ndisimdeinitializedeviceinstance.htm
-old-project : netvista
-ms.assetid : badfab43-ba58-4711-a181-af87dcfeba4d
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : intermediate_ref_6e10d8e6-4dd7-4d92-9c22-949dabac84f9.xml, NdisIMDeInitializeDeviceInstance, NdisIMDeInitializeDeviceInstance function [Network Drivers Starting with Windows Vista], netvista.ndisimdeinitializedeviceinstance, ndis/NdisIMDeInitializeDeviceInstance
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see       NdisIMDeInitializeDeviceInstance (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see       NdisIMDeInitializeDeviceInstance (NDIS 5.1)) in Windows XP.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_IM_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisIMDeInitializeDeviceInstance
+title: NdisIMDeInitializeDeviceInstance function
+author: windows-driver-content
+description: The NdisIMDeInitializeDeviceInstance function calls an NDIS intermediate driver's MiniportHaltEx function to tear down the driver's virtual miniport.
+old-location: netvista\ndisimdeinitializedeviceinstance.htm
+old-project: netvista
+ms.assetid: badfab43-ba58-4711-a181-af87dcfeba4d
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: intermediate_ref_6e10d8e6-4dd7-4d92-9c22-949dabac84f9.xml, NdisIMDeInitializeDeviceInstance, NdisIMDeInitializeDeviceInstance function [Network Drivers Starting with Windows Vista], netvista.ndisimdeinitializedeviceinstance, ndis/NdisIMDeInitializeDeviceInstance
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see       NdisIMDeInitializeDeviceInstance (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see       NdisIMDeInitializeDeviceInstance (NDIS 5.1)) in Windows XP.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_IM_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisIMDeInitializeDeviceInstance
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

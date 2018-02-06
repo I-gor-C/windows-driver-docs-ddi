@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltGetVolumeFromDeviceObject
-title : FltGetVolumeFromDeviceObject function
-author : windows-driver-content
-description : The FltGetVolumeFromDeviceObject routine returns an opaque pointer for the volume represented by a volume device object (VDO).
-old-location : ifsk\fltgetvolumefromdeviceobject.htm
-old-project : ifsk
-ms.assetid : 49dc5866-d793-41a7-9d9e-e89eea6f2f28
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltGetVolumeFromDeviceObject routine [Installable File System Drivers], fltkernel/FltGetVolumeFromDeviceObject, ifsk.fltgetvolumefromdeviceobject, FltApiRef_e_to_o_fcc59f13-4385-478e-ba1b-c539f13930af.xml, FltGetVolumeFromDeviceObject
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltGetVolumeFromDeviceObject
+title: FltGetVolumeFromDeviceObject function
+author: windows-driver-content
+description: The FltGetVolumeFromDeviceObject routine returns an opaque pointer for the volume represented by a volume device object (VDO).
+old-location: ifsk\fltgetvolumefromdeviceobject.htm
+old-project: ifsk
+ms.assetid: 49dc5866-d793-41a7-9d9e-e89eea6f2f28
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltGetVolumeFromDeviceObject routine [Installable File System Drivers], fltkernel/FltGetVolumeFromDeviceObject, ifsk.fltgetvolumefromdeviceobject, FltApiRef_e_to_o_fcc59f13-4385-478e-ba1b-c539f13930af.xml, FltGetVolumeFromDeviceObject
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltGetVolumeFromDeviceObject
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

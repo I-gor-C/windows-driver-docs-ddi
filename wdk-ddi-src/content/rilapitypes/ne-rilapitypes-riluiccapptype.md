@@ -1,42 +1,47 @@
 ---
-UID : NE:rilapitypes.RILUICCAPPTYPE
-title : RILUICCAPPTYPE
-author : windows-driver-content
-description : This enumeration describes the RILUICCAPPTYPE.
-old-location : netvista\riluiccapptype.htm
-old-project : netvista
-ms.assetid : cba1fcc3-74d0-44b7-b480-3e7d754f9efe
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : RIL_UICCAPPTYPE_MF_RUIM, RIL_UICCAPPTYPE_UNKNOWN, rilapitypes/RILUICCAPPTYPE, RIL_UICCAPPTYPE_MF, rilapitypes/RIL_UICCAPPTYPE_MF_RUIM, rilapitypes/RIL_UICCAPPTYPE_UNKNOWN, rilapitypes/RIL_UICCAPPTYPE_USIM, RIL_UICCAPPTYPE_MF_SIM, rilapitypes/RIL_UICCAPPTYPE_MF_SIM, RIL_UICCAPPTYPE_CSIM, rilapitypes/RIL_UICCAPPTYPE_CSIM, rilapitypes/RIL_UICCAPPTYPE_MF, RILUICCAPPTYPE, RILUICCAPPTYPE enumeration [Network Drivers Starting with Windows Vista], RIL_UICCAPPTYPE_ISIM, rilapitypes/RIL_UICCAPPTYPE_ISIM, RIL_UICCAPPTYPE_USIM, netvista.riluiccapptype
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : rilapitypes.h
-req.include-header : Rilapitypes.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RILUICCAPPTYPE
-req.product : Windows 10 or later.
+UID: NE:rilapitypes.RILUICCAPPTYPE
+title: RILUICCAPPTYPE
+author: windows-driver-content
+description: This enumeration describes the RILUICCAPPTYPE.
+old-location: netvista\riluiccapptype.htm
+old-project: netvista
+ms.assetid: cba1fcc3-74d0-44b7-b480-3e7d754f9efe
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: RIL_UICCAPPTYPE_MF_RUIM, RIL_UICCAPPTYPE_UNKNOWN, rilapitypes/RILUICCAPPTYPE, RIL_UICCAPPTYPE_MF, rilapitypes/RIL_UICCAPPTYPE_MF_RUIM, rilapitypes/RIL_UICCAPPTYPE_UNKNOWN, rilapitypes/RIL_UICCAPPTYPE_USIM, RIL_UICCAPPTYPE_MF_SIM, rilapitypes/RIL_UICCAPPTYPE_MF_SIM, RIL_UICCAPPTYPE_CSIM, rilapitypes/RIL_UICCAPPTYPE_CSIM, rilapitypes/RIL_UICCAPPTYPE_MF, RILUICCAPPTYPE, RILUICCAPPTYPE enumeration [Network Drivers Starting with Windows Vista], RIL_UICCAPPTYPE_ISIM, rilapitypes/RIL_UICCAPPTYPE_ISIM, RIL_UICCAPPTYPE_USIM, netvista.riluiccapptype
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: rilapitypes.h
+req.include-header: Rilapitypes.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	rilapitypes.h
+apiname:
+-	RILUICCAPPTYPE
+product: Windows
+targetos: Windows
+req.typenames: RILUICCAPPTYPE
+req.product: Windows 10 or later.
 ---
 
 # RILUICCAPPTYPE Enumeration
@@ -59,51 +64,51 @@ enum RILUICCAPPTYPE {
 ## Constants
 
 <table>
-
-<tr>
-<td>RIL_UICCAPPTYPE_CSIM</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_UICCAPPTYPE_ISIM</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_UICCAPPTYPE_MAX</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_UICCAPPTYPE_MF</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_UICCAPPTYPE_MF_RUIM</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_UICCAPPTYPE_MF_SIM</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_UICCAPPTYPE_UNKNOWN</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_UICCAPPTYPE_USIM</td>
-<td></td>
-</tr>
+            
+                <tr>
+                    <td>RIL_UICCAPPTYPE_CSIM</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_UICCAPPTYPE_ISIM</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_UICCAPPTYPE_MAX</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_UICCAPPTYPE_MF</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_UICCAPPTYPE_MF_RUIM</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_UICCAPPTYPE_MF_SIM</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_UICCAPPTYPE_UNKNOWN</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_UICCAPPTYPE_USIM</td>
+                    <td></td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-Networks will vary, but the following table summarizes which items are returned for typical TD-SCDMA networks. 
+        Networks will vary, but the following table summarizes which items are returned for typical TD-SCDMA networks. 
 
 <b>Serving network</b>
 <table>
@@ -454,9 +459,9 @@ No
 | ---- |:---- |
 | **Header** | rilapitypes.h (include Rilapitypes.h) |
 
-## See Also
+    ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn946509">Cellular COM enumerations</a>
+        <a href="https://msdn.microsoft.com/library/windows/hardware/dn946509">Cellular COM enumerations</a>
 
  
 

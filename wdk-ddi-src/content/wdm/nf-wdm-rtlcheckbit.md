@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.RtlCheckBit
-title : RtlCheckBit function
-author : windows-driver-content
-description : The RtlCheckBit routine determines whether a particular bit in a given bitmap variable is clear or set.
-old-location : kernel\rtlcheckbit.htm
-old-project : kernel
-ms.assetid : 2c9842de-a256-46ed-84b4-b8a595c01a62
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : RtlCheckBit routine [Kernel-Mode Driver Architecture], RtlCheckBit, wdm/RtlCheckBit, kernel.rtlcheckbit, k109_1f4676c1-d031-4a2c-8d74-afa9d3a0ed10.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= APC_LEVEL (see Remarks section)"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.RtlCheckBit
+title: RtlCheckBit function
+author: windows-driver-content
+description: The RtlCheckBit routine determines whether a particular bit in a given bitmap variable is clear or set.
+old-location: kernel\rtlcheckbit.htm
+old-project: kernel
+ms.assetid: 2c9842de-a256-46ed-84b4-b8a595c01a62
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: RtlCheckBit routine [Kernel-Mode Driver Architecture], RtlCheckBit, wdm/RtlCheckBit, kernel.rtlcheckbit, k109_1f4676c1-d031-4a2c-8d74-afa9d3a0ed10.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= APC_LEVEL (see Remarks section)"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	RtlCheckBit
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

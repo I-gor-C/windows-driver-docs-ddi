@@ -1,41 +1,47 @@
 ---
-UID : NF:ndischimney.NdisTerminateOffload
-title : NdisTerminateOffload function
-author : windows-driver-content
-description : A protocol driver or intermediate driver calls the NdisTerminateOffload function to terminate the offload of one or more state objects
-old-location : netvista\ndisterminateoffload.htm
-old-project : netvista
-ms.assetid : 13eb4c17-2cb5-4773-b2e3-e8e624473c97
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : tcp_chim_ndis_func_44201f08-cbfc-4796-b2a9-78bbc5c348c4.xml, NdisTerminateOffload function [Network Drivers Starting with Windows Vista], NdisTerminateOffload, netvista.ndisterminateoffload, ndischimney/NdisTerminateOffload
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndischimney.h
-req.include-header : Ndischimney.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PD_BUFFER_VIRTUAL_SUBNET_INFO
+UID: NF:ndischimney.NdisTerminateOffload
+title: NdisTerminateOffload function
+author: windows-driver-content
+description: A protocol driver or intermediate driver calls the NdisTerminateOffload function to terminate the offload of one or more state objects
+old-location: netvista\ndisterminateoffload.htm
+old-project: netvista
+ms.assetid: 13eb4c17-2cb5-4773-b2e3-e8e624473c97
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: tcp_chim_ndis_func_44201f08-cbfc-4796-b2a9-78bbc5c348c4.xml, NdisTerminateOffload function [Network Drivers Starting with Windows Vista], NdisTerminateOffload, netvista.ndisterminateoffload, ndischimney/NdisTerminateOffload
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndischimney.h
+req.include-header: Ndischimney.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisTerminateOffload
+product: Windows
+targetos: Windows
+req.typenames: PD_BUFFER_VIRTUAL_SUBNET_INFO
 ---
 
 

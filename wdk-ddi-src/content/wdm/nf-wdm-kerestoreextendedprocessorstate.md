@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.KeRestoreExtendedProcessorState
-title : KeRestoreExtendedProcessorState function
-author : windows-driver-content
-description : The KeRestoreExtendedProcessorState routine restores extended processor state information that was previously saved.
-old-location : kernel\kerestoreextendedprocessorstate.htm
-old-project : kernel
-ms.assetid : ea5e654a-9cb5-4d4d-9660-339410a6a20f
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : k105_35142457-ddfe-4773-b4ed-d2d84d5c74d0.xml, KeRestoreExtendedProcessorState, KeRestoreExtendedProcessorState routine [Kernel-Mode Driver Architecture], kernel.kerestoreextendedprocessorstate, wdm/KeRestoreExtendedProcessorState
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 7 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= DISPATCH_LEVEL (see Remarks section)"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.KeRestoreExtendedProcessorState
+title: KeRestoreExtendedProcessorState function
+author: windows-driver-content
+description: The KeRestoreExtendedProcessorState routine restores extended processor state information that was previously saved.
+old-location: kernel\kerestoreextendedprocessorstate.htm
+old-project: kernel
+ms.assetid: ea5e654a-9cb5-4d4d-9660-339410a6a20f
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: k105_35142457-ddfe-4773-b4ed-d2d84d5c74d0.xml, KeRestoreExtendedProcessorState, KeRestoreExtendedProcessorState routine [Kernel-Mode Driver Architecture], kernel.kerestoreextendedprocessorstate, wdm/KeRestoreExtendedProcessorState
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 7 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= DISPATCH_LEVEL (see Remarks section)"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	KeRestoreExtendedProcessorState
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

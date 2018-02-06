@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.KeQueryPerformanceCounter
-title : KeQueryPerformanceCounter function
-author : windows-driver-content
-description : The KeQueryPerformanceCounter routine retrieves the current value and frequency of the performance counter.Use KeQueryPerformanceCounter to acquire high resolution (&lt;1us) time stamps for time interval measurements.
-old-location : kernel\kequeryperformancecounter.htm
-old-project : kernel
-ms.assetid : ee1dbd20-5502-4448-b39a-4629ddc73d01
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : k105_39f70923-56fe-42b1-bec3-fe23ae62904d.xml, KeQueryPerformanceCounter routine [Kernel-Mode Driver Architecture], kernel.kequeryperformancecounter, KeQueryPerformanceCounter, wdm/KeQueryPerformanceCounter
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Hal.lib
-req.dll : Hal.dll
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.KeQueryPerformanceCounter
+title: KeQueryPerformanceCounter function
+author: windows-driver-content
+description: The KeQueryPerformanceCounter routine retrieves the current value and frequency of the performance counter.Use KeQueryPerformanceCounter to acquire high resolution (&lt;1us) time stamps for time interval measurements.
+old-location: kernel\kequeryperformancecounter.htm
+old-project: kernel
+ms.assetid: ee1dbd20-5502-4448-b39a-4629ddc73d01
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: k105_39f70923-56fe-42b1-bec3-fe23ae62904d.xml, KeQueryPerformanceCounter routine [Kernel-Mode Driver Architecture], kernel.kequeryperformancecounter, KeQueryPerformanceCounter, wdm/KeQueryPerformanceCounter
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Hal.lib
+req.dll: Hal.dll
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Hal.dll
+apiname:
+-	KeQueryPerformanceCounter
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

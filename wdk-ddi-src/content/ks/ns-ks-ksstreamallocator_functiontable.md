@@ -1,41 +1,46 @@
 ---
-UID : NS:ks.KSSTREAMALLOCATOR_FUNCTIONTABLE
-title : KSSTREAMALLOCATOR_FUNCTIONTABLE
-author : windows-driver-content
-description : Clients can request the function table of a given allocator by sending a KSSTREAMALLOCATOR_FUNCTIONTABLE structure in a KSPROPERTY_STREAMALLOCATOR_FUNCTIONTABLE property request.
-old-location : stream\ksstreamallocator_functiontable.htm
-old-project : stream
-ms.assetid : 0bc02fa8-41ca-4430-9dff-e98e39b4eeef
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ks-struct_08e285b4-cd29-4f31-9242-3e4bdc6ccf01.xml, KSSTREAMALLOCATOR_FUNCTIONTABLE, PKSSTREAMALLOCATOR_FUNCTIONTABLE, ks/KSSTREAMALLOCATOR_FUNCTIONTABLE, KSSTREAMALLOCATOR_FUNCTIONTABLE structure [Streaming Media Devices], stream.ksstreamallocator_functiontable, ks/PKSSTREAMALLOCATOR_FUNCTIONTABLE, PKSSTREAMALLOCATOR_FUNCTIONTABLE structure pointer [Streaming Media Devices], *PKSSTREAMALLOCATOR_FUNCTIONTABLE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKSSTREAMALLOCATOR_FUNCTIONTABLE, KSSTREAMALLOCATOR_FUNCTIONTABLE"
+UID: NS:ks.KSSTREAMALLOCATOR_FUNCTIONTABLE
+title: KSSTREAMALLOCATOR_FUNCTIONTABLE
+author: windows-driver-content
+description: Clients can request the function table of a given allocator by sending a KSSTREAMALLOCATOR_FUNCTIONTABLE structure in a KSPROPERTY_STREAMALLOCATOR_FUNCTIONTABLE property request.
+old-location: stream\ksstreamallocator_functiontable.htm
+old-project: stream
+ms.assetid: 0bc02fa8-41ca-4430-9dff-e98e39b4eeef
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ks-struct_08e285b4-cd29-4f31-9242-3e4bdc6ccf01.xml, KSSTREAMALLOCATOR_FUNCTIONTABLE, PKSSTREAMALLOCATOR_FUNCTIONTABLE, ks/KSSTREAMALLOCATOR_FUNCTIONTABLE, KSSTREAMALLOCATOR_FUNCTIONTABLE structure [Streaming Media Devices], stream.ksstreamallocator_functiontable, ks/PKSSTREAMALLOCATOR_FUNCTIONTABLE, PKSSTREAMALLOCATOR_FUNCTIONTABLE structure pointer [Streaming Media Devices], *PKSSTREAMALLOCATOR_FUNCTIONTABLE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	KSSTREAMALLOCATOR_FUNCTIONTABLE
+product: Windows
+targetos: Windows
+req.typenames: "*PKSSTREAMALLOCATOR_FUNCTIONTABLE, KSSTREAMALLOCATOR_FUNCTIONTABLE"
 ---
 
 # KSSTREAMALLOCATOR_FUNCTIONTABLE structure

@@ -1,41 +1,46 @@
 ---
-UID : NS:ndiswwan._NDIS_WWAN_SIGNAL_STATE
-title : "_NDIS_WWAN_SIGNAL_STATE"
-author : windows-driver-content
-description : The NDIS_WWAN_SIGNAL_STATE structure represents the signal state of the MB device.
-old-location : netvista\ndis_wwan_signal_state.htm
-old-project : netvista
-ms.assetid : 905f8566-ad98-454f-a5cd-8f4ff46c8118
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : WwanRef_92027d1b-0311-4d61-b8cf-04518ee2863b.xml, PNDIS_WWAN_SIGNAL_STATE, NDIS_WWAN_SIGNAL_STATE, ndiswwan/PNDIS_WWAN_SIGNAL_STATE, netvista.ndis_wwan_signal_state, *PNDIS_WWAN_SIGNAL_STATE, _NDIS_WWAN_SIGNAL_STATE, PNDIS_WWAN_SIGNAL_STATE structure pointer [Network Drivers Starting with Windows Vista], NDIS_WWAN_SIGNAL_STATE structure [Network Drivers Starting with Windows Vista], ndiswwan/NDIS_WWAN_SIGNAL_STATE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndiswwan.h
-req.include-header : Ndiswwan.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PNDIS_WWAN_SIGNAL_STATE, NDIS_WWAN_SIGNAL_STATE"
+UID: NS:ndiswwan._NDIS_WWAN_SIGNAL_STATE
+title: "_NDIS_WWAN_SIGNAL_STATE"
+author: windows-driver-content
+description: The NDIS_WWAN_SIGNAL_STATE structure represents the signal state of the MB device.
+old-location: netvista\ndis_wwan_signal_state.htm
+old-project: netvista
+ms.assetid: 905f8566-ad98-454f-a5cd-8f4ff46c8118
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: WwanRef_92027d1b-0311-4d61-b8cf-04518ee2863b.xml, PNDIS_WWAN_SIGNAL_STATE, NDIS_WWAN_SIGNAL_STATE, ndiswwan/PNDIS_WWAN_SIGNAL_STATE, netvista.ndis_wwan_signal_state, *PNDIS_WWAN_SIGNAL_STATE, _NDIS_WWAN_SIGNAL_STATE, PNDIS_WWAN_SIGNAL_STATE structure pointer [Network Drivers Starting with Windows Vista], NDIS_WWAN_SIGNAL_STATE structure [Network Drivers Starting with Windows Vista], ndiswwan/NDIS_WWAN_SIGNAL_STATE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndiswwan.h
+req.include-header: Ndiswwan.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndiswwan.h
+apiname:
+-	NDIS_WWAN_SIGNAL_STATE
+product: Windows
+targetos: Windows
+req.typenames: "*PNDIS_WWAN_SIGNAL_STATE, NDIS_WWAN_SIGNAL_STATE"
 ---
 
 # _NDIS_WWAN_SIGNAL_STATE structure

@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddk._DISK_SIGNATURE
-title : "_DISK_SIGNATURE"
-author : windows-driver-content
-description : DISK_SIGNATURE contains the disk signature information for a disk's partition table.
-old-location : storage\disk_signature.htm
-old-project : storage
-ms.assetid : f3fdb436-53b6-4fb3-8746-1f852f7d928a
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : DISK_SIGNATURE, *PDISK_SIGNATURE, PDISK_SIGNATURE, structs-disk_6ea56db7-c886-43f2-b9ed-24b0f7e1cb6e.xml, DISK_SIGNATURE structure [Storage Devices], PDISK_SIGNATURE structure pointer [Storage Devices], storage.disk_signature, ntddk/DISK_SIGNATURE, ntddk/PDISK_SIGNATURE, _DISK_SIGNATURE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Windows
-req.target-min-winverclnt : This structure is only available on Windows XP and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DISK_SIGNATURE, *PDISK_SIGNATURE
+UID: NS:ntddk._DISK_SIGNATURE
+title: "_DISK_SIGNATURE"
+author: windows-driver-content
+description: DISK_SIGNATURE contains the disk signature information for a disk's partition table.
+old-location: storage\disk_signature.htm
+old-project: storage
+ms.assetid: f3fdb436-53b6-4fb3-8746-1f852f7d928a
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: DISK_SIGNATURE, *PDISK_SIGNATURE, PDISK_SIGNATURE, structs-disk_6ea56db7-c886-43f2-b9ed-24b0f7e1cb6e.xml, DISK_SIGNATURE structure [Storage Devices], PDISK_SIGNATURE structure pointer [Storage Devices], storage.disk_signature, ntddk/DISK_SIGNATURE, ntddk/PDISK_SIGNATURE, _DISK_SIGNATURE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Windows
+req.target-min-winverclnt: This structure is only available on Windows XP and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddk.h
+apiname:
+-	DISK_SIGNATURE
+product: Windows
+targetos: Windows
+req.typenames: DISK_SIGNATURE, *PDISK_SIGNATURE
 ---
 
 # _DISK_SIGNATURE structure

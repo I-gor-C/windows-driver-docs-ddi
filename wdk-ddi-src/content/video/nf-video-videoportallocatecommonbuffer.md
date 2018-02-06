@@ -1,42 +1,47 @@
 ---
-UID : NF:video.VideoPortAllocateCommonBuffer
-title : VideoPortAllocateCommonBuffer function
-author : windows-driver-content
-description : The VideoPortAllocateCommonBuffer function allocates and maps system memory so that it is simultaneously accessible from both the processor and a device for common-buffer DMA operations.
-old-location : display\videoportallocatecommonbuffer.htm
-old-project : display
-ms.assetid : 950c2509-688e-4aaa-a12d-4106bb722bbc
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.videoportallocatecommonbuffer, video/VideoPortAllocateCommonBuffer, VideoPortAllocateCommonBuffer function [Display Devices], VideoPortAllocateCommonBuffer, VideoPort_Functions_bd747ea0-7963-4008-a91c-eb5598fc6bdd.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows XP and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Videoprt.lib
-req.dll : Videoprt.sys
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_PORT_SERVICES
-req.product : Windows 10 or later.
+UID: NF:video.VideoPortAllocateCommonBuffer
+title: VideoPortAllocateCommonBuffer function
+author: windows-driver-content
+description: The VideoPortAllocateCommonBuffer function allocates and maps system memory so that it is simultaneously accessible from both the processor and a device for common-buffer DMA operations.
+old-location: display\videoportallocatecommonbuffer.htm
+old-project: display
+ms.assetid: 950c2509-688e-4aaa-a12d-4106bb722bbc
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.videoportallocatecommonbuffer, video/VideoPortAllocateCommonBuffer, VideoPortAllocateCommonBuffer function [Display Devices], VideoPortAllocateCommonBuffer, VideoPort_Functions_bd747ea0-7963-4008-a91c-eb5598fc6bdd.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows XP and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Videoprt.lib
+req.dll: Videoprt.sys
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Videoprt.sys
+apiname:
+-	VideoPortAllocateCommonBuffer
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_PORT_SERVICES
+req.product: Windows 10 or later.
 ---
 
 

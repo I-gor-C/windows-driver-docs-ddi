@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfdevice.WdfDeviceSetBusInformationForChildren
-title : WdfDeviceSetBusInformationForChildren function
-author : windows-driver-content
-description : The WdfDeviceSetBusInformationForChildren method sets information about a bus that a bus driver supports. This information is available to the bus's child devices.
-old-location : wdf\wdfdevicesetbusinformationforchildren.htm
-old-project : wdf
-ms.assetid : ecfce692-7dac-4f55-8a8a-1f51c27cce41
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.wdfdevicesetbusinformationforchildren, kmdf.wdfdevicesetbusinformationforchildren, wdfdevice/WdfDeviceSetBusInformationForChildren, WdfDeviceSetBusInformationForChildren, PFN_WDFDEVICESETBUSINFORMATIONFORCHILDREN, WdfDeviceSetBusInformationForChildren method, DFDeviceObjectGeneralRef_76b69a67-0e1e-41d6-be98-3d5f76433d97.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfdevice.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_STATE_NOTIFICATION_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfdevice.WdfDeviceSetBusInformationForChildren
+title: WdfDeviceSetBusInformationForChildren function
+author: windows-driver-content
+description: The WdfDeviceSetBusInformationForChildren method sets information about a bus that a bus driver supports. This information is available to the bus's child devices.
+old-location: wdf\wdfdevicesetbusinformationforchildren.htm
+old-project: wdf
+ms.assetid: ecfce692-7dac-4f55-8a8a-1f51c27cce41
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.wdfdevicesetbusinformationforchildren, kmdf.wdfdevicesetbusinformationforchildren, wdfdevice/WdfDeviceSetBusInformationForChildren, WdfDeviceSetBusInformationForChildren, PFN_WDFDEVICESETBUSINFORMATIONFORCHILDREN, WdfDeviceSetBusInformationForChildren method, DFDeviceObjectGeneralRef_76b69a67-0e1e-41d6-be98-3d5f76433d97.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfdevice.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfDeviceSetBusInformationForChildren
+product: Windows
+targetos: Windows
+req.typenames: WDF_STATE_NOTIFICATION_TYPE
+req.product: Windows 10 or later.
 ---
 
 

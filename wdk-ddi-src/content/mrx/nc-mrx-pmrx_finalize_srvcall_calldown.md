@@ -1,41 +1,46 @@
 ---
-UID : NC:mrx.PMRX_FINALIZE_SRVCALL_CALLDOWN
-title : PMRX_FINALIZE_SRVCALL_CALLDOWN
-author : windows-driver-content
-description : The MRxFinalizeSrvCall routine is called by RDBSS to request that a network mini-redirector finalize an SRV_CALL structure.
-old-location : ifsk\mrxfinalizesrvcall.htm
-old-project : ifsk
-ms.assetid : f870334a-cf39-47a2-868a-f6fd7c3aee1c
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.mrxfinalizesrvcall, MRxFinalizeSrvCall routine [Installable File System Drivers], MRxFinalizeSrvCall, PMRX_FINALIZE_SRVCALL_CALLDOWN, PMRX_FINALIZE_SRVCALL_CALLDOWN, mrx/MRxFinalizeSrvCall, mrxref_7f2d4c59-1668-4c73-adc4-bdb6fac34d38.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : mrx.h
-req.include-header : Mrx.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SetDSMCounters_IN, *PSetDSMCounters_IN
+UID: NC:mrx.PMRX_FINALIZE_SRVCALL_CALLDOWN
+title: PMRX_FINALIZE_SRVCALL_CALLDOWN
+author: windows-driver-content
+description: The MRxFinalizeSrvCall routine is called by RDBSS to request that a network mini-redirector finalize an SRV_CALL structure.
+old-location: ifsk\mrxfinalizesrvcall.htm
+old-project: ifsk
+ms.assetid: f870334a-cf39-47a2-868a-f6fd7c3aee1c
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.mrxfinalizesrvcall, MRxFinalizeSrvCall routine [Installable File System Drivers], MRxFinalizeSrvCall, PMRX_FINALIZE_SRVCALL_CALLDOWN, PMRX_FINALIZE_SRVCALL_CALLDOWN, mrx/MRxFinalizeSrvCall, mrxref_7f2d4c59-1668-4c73-adc4-bdb6fac34d38.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: mrx.h
+req.include-header: Mrx.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	mrx.h
+apiname:
+-	MRxFinalizeSrvCall
+product: Windows
+targetos: Windows
+req.typenames: SetDSMCounters_IN, *PSetDSMCounters_IN
 ---
 
 

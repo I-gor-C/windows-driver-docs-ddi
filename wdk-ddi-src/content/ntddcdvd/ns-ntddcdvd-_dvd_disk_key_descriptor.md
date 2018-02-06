@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddcdvd._DVD_DISK_KEY_DESCRIPTOR
-title : "_DVD_DISK_KEY_DESCRIPTOR"
-author : windows-driver-content
-description : The DVD_DISK_KEY_DESCRIPTOR structure is used in conjunction with the IOCTL_DVD_READ_STRUCTURE request to retrieve a DVD disc key descriptor.
-old-location : storage\dvd_disk_key_descriptor.htm
-old-project : storage
-ms.assetid : 48b0e44d-51bb-48b1-bcbc-6a51fde3c8db
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : ntddcdvd/PDVD_DISK_KEY_DESCRIPTOR, DVD_DISK_KEY_DESCRIPTOR, structs-DVD_b5c88389-0128-4069-b460-d9fa81a2150e.xml, PDVD_DISK_KEY_DESCRIPTOR, _DVD_DISK_KEY_DESCRIPTOR, *PDVD_DISK_KEY_DESCRIPTOR, ntddcdvd/DVD_DISK_KEY_DESCRIPTOR, storage.dvd_disk_key_descriptor, DVD_DISK_KEY_DESCRIPTOR structure [Storage Devices], PDVD_DISK_KEY_DESCRIPTOR structure pointer [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddcdvd.h
-req.include-header : Ntddcdvd.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DVD_DISK_KEY_DESCRIPTOR, *PDVD_DISK_KEY_DESCRIPTOR
+UID: NS:ntddcdvd._DVD_DISK_KEY_DESCRIPTOR
+title: "_DVD_DISK_KEY_DESCRIPTOR"
+author: windows-driver-content
+description: The DVD_DISK_KEY_DESCRIPTOR structure is used in conjunction with the IOCTL_DVD_READ_STRUCTURE request to retrieve a DVD disc key descriptor.
+old-location: storage\dvd_disk_key_descriptor.htm
+old-project: storage
+ms.assetid: 48b0e44d-51bb-48b1-bcbc-6a51fde3c8db
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: ntddcdvd/PDVD_DISK_KEY_DESCRIPTOR, DVD_DISK_KEY_DESCRIPTOR, structs-DVD_b5c88389-0128-4069-b460-d9fa81a2150e.xml, PDVD_DISK_KEY_DESCRIPTOR, _DVD_DISK_KEY_DESCRIPTOR, *PDVD_DISK_KEY_DESCRIPTOR, ntddcdvd/DVD_DISK_KEY_DESCRIPTOR, storage.dvd_disk_key_descriptor, DVD_DISK_KEY_DESCRIPTOR structure [Storage Devices], PDVD_DISK_KEY_DESCRIPTOR structure pointer [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddcdvd.h
+req.include-header: Ntddcdvd.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddcdvd.h
+apiname:
+-	DVD_DISK_KEY_DESCRIPTOR
+product: Windows
+targetos: Windows
+req.typenames: DVD_DISK_KEY_DESCRIPTOR, *PDVD_DISK_KEY_DESCRIPTOR
 ---
 
 # _DVD_DISK_KEY_DESCRIPTOR structure

@@ -1,41 +1,46 @@
 ---
-UID : NS:ntpoapi.BATTERY_REPORTING_SCALE
-title : BATTERY_REPORTING_SCALE
-author : windows-driver-content
-description : Battery miniclass drivers fill in this structure in response to certain BatteryMiniQueryInformation requests.
-old-location : battery\battery_reporting_scale.htm
-old-project : battery
-ms.assetid : aea1d82d-39b8-4535-a5c3-fb987be1e43c
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : PBATTERY_REPORTING_SCALE, PBATTERY_REPORTING_SCALE structure pointer [Battery Devices], BATTERY_REPORTING_SCALE, ntpoapi/PBATTERY_REPORTING_SCALE, BATTERY_REPORTING_SCALE structure [Battery Devices], *PBATTERY_REPORTING_SCALE, battery.battery_reporting_scale, bat-struct_6ecc4955-56b0-4c92-9ce2-46bcd7d6b273.xml, ntpoapi/BATTERY_REPORTING_SCALE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntpoapi.h
-req.include-header : Batclass.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : BATTERY_REPORTING_SCALE, *PBATTERY_REPORTING_SCALE
+UID: NS:ntpoapi.BATTERY_REPORTING_SCALE
+title: BATTERY_REPORTING_SCALE
+author: windows-driver-content
+description: Battery miniclass drivers fill in this structure in response to certain BatteryMiniQueryInformation requests.
+old-location: battery\battery_reporting_scale.htm
+old-project: battery
+ms.assetid: aea1d82d-39b8-4535-a5c3-fb987be1e43c
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: PBATTERY_REPORTING_SCALE, PBATTERY_REPORTING_SCALE structure pointer [Battery Devices], BATTERY_REPORTING_SCALE, ntpoapi/PBATTERY_REPORTING_SCALE, BATTERY_REPORTING_SCALE structure [Battery Devices], *PBATTERY_REPORTING_SCALE, battery.battery_reporting_scale, bat-struct_6ecc4955-56b0-4c92-9ce2-46bcd7d6b273.xml, ntpoapi/BATTERY_REPORTING_SCALE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntpoapi.h
+req.include-header: Batclass.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntpoapi.h
+apiname:
+-	BATTERY_REPORTING_SCALE
+product: Windows
+targetos: Windows
+req.typenames: BATTERY_REPORTING_SCALE, *PBATTERY_REPORTING_SCALE
 ---
 
 # BATTERY_REPORTING_SCALE structure

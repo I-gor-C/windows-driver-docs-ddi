@@ -1,42 +1,47 @@
 ---
-UID : NS:srb._ACCESS_RANGE
-title : "_ACCESS_RANGE"
-author : windows-driver-content
-description : An ACCESS_RANGE describes a memory or I/O port range used by an HBA.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future.
-old-location : storage\access_range.htm
-old-project : storage
-ms.assetid : 6009d11b-4f44-4591-bcb8-66e0c42d5689
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : PACCESS_RANGE structure pointer [Storage Devices], srb/ACCESS_RANGE, PACCESS_RANGE, ACCESS_RANGE, srb/PACCESS_RANGE, ACCESS_RANGE structure [Storage Devices], storage.access_range, *PACCESS_RANGE, structs-scsiport_353ffdeb-4d30-4df8-9422-ea3a9e662104.xml, _ACCESS_RANGE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : srb.h
-req.include-header : Srb.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : ACCESS_RANGE, *PACCESS_RANGE
-req.product : Windows 10 or later.
+UID: NS:srb._ACCESS_RANGE
+title: "_ACCESS_RANGE"
+author: windows-driver-content
+description: An ACCESS_RANGE describes a memory or I/O port range used by an HBA.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future.
+old-location: storage\access_range.htm
+old-project: storage
+ms.assetid: 6009d11b-4f44-4591-bcb8-66e0c42d5689
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: PACCESS_RANGE structure pointer [Storage Devices], srb/ACCESS_RANGE, PACCESS_RANGE, ACCESS_RANGE, srb/PACCESS_RANGE, ACCESS_RANGE structure [Storage Devices], storage.access_range, *PACCESS_RANGE, structs-scsiport_353ffdeb-4d30-4df8-9422-ea3a9e662104.xml, _ACCESS_RANGE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: srb.h
+req.include-header: Srb.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	srb.h
+apiname:
+-	ACCESS_RANGE
+product: Windows
+targetos: Windows
+req.typenames: ACCESS_RANGE, *PACCESS_RANGE
+req.product: Windows 10 or later.
 ---
 
 # _ACCESS_RANGE structure

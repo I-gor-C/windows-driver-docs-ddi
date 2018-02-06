@@ -1,42 +1,47 @@
 ---
-UID : NN:wudfddi.IWDFCmResourceList
-title : IWDFCmResourceList
-author : windows-driver-content
-description : This interface represents a list of hardware resources for a device.
-old-location : wdf\iwdfcmresourcelist.htm
-old-project : wdf
-ms.assetid : 8C03A1A3-1757-4622-9652-0D84DC0AFE59
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.iwdfcmresourcelist, IWDFCmResourceList interface, IWDFCmResourceList interface, described, IWDFCmResourceList, wudfddi/IWDFCmResourceList, umdf.iwdfcmresourcelist
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : wudfddi.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.11
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NN:wudfddi.IWDFCmResourceList
+title: IWDFCmResourceList
+author: windows-driver-content
+description: This interface represents a list of hardware resources for a device.
+old-location: wdf\iwdfcmresourcelist.htm
+old-project: wdf
+ms.assetid: 8C03A1A3-1757-4622-9652-0D84DC0AFE59
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.iwdfcmresourcelist, IWDFCmResourceList interface, IWDFCmResourceList interface, described, IWDFCmResourceList, wudfddi/IWDFCmResourceList, umdf.iwdfcmresourcelist
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: wudfddi.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.11
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFCmResourceList
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 # IWDFCmResourceList interface

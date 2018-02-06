@@ -1,42 +1,47 @@
 ---
-UID : NF:wdfrequest.WDF_REQUEST_REUSE_PARAMS_SET_NEW_IRP
-title : WDF_REQUEST_REUSE_PARAMS_SET_NEW_IRP function
-author : windows-driver-content
-description : The WDF_REQUEST_REUSE_PARAMS_SET_NEW_IRP function sets a new IRP in a driver's WDF_REQUEST_REUSE_PARAMS structure.
-old-location : wdf\wdf_request_reuse_params_set_new_irp.htm
-old-project : wdf
-ms.assetid : 3a18ec1b-be02-418a-8a38-deca7178ce30
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdfrequest/WDF_REQUEST_REUSE_PARAMS_SET_NEW_IRP, wdf.wdf_request_reuse_params_set_new_irp, WDF_REQUEST_REUSE_PARAMS_SET_NEW_IRP function, kmdf.wdf_request_reuse_params_set_new_irp, DFRequestObjectRef_1c9cbd6c-35a3-4de2-84f9-9d9788002d31.xml, WDF_REQUEST_REUSE_PARAMS_SET_NEW_IRP
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfrequest.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_REQUEST_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfrequest.WDF_REQUEST_REUSE_PARAMS_SET_NEW_IRP
+title: WDF_REQUEST_REUSE_PARAMS_SET_NEW_IRP function
+author: windows-driver-content
+description: The WDF_REQUEST_REUSE_PARAMS_SET_NEW_IRP function sets a new IRP in a driver's WDF_REQUEST_REUSE_PARAMS structure.
+old-location: wdf\wdf_request_reuse_params_set_new_irp.htm
+old-project: wdf
+ms.assetid: 3a18ec1b-be02-418a-8a38-deca7178ce30
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdfrequest/WDF_REQUEST_REUSE_PARAMS_SET_NEW_IRP, wdf.wdf_request_reuse_params_set_new_irp, WDF_REQUEST_REUSE_PARAMS_SET_NEW_IRP function, kmdf.wdf_request_reuse_params_set_new_irp, DFRequestObjectRef_1c9cbd6c-35a3-4de2-84f9-9d9788002d31.xml, WDF_REQUEST_REUSE_PARAMS_SET_NEW_IRP
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfrequest.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfrequest.h
+apiname:
+-	WDF_REQUEST_REUSE_PARAMS_SET_NEW_IRP
+product: Windows
+targetos: Windows
+req.typenames: WDF_REQUEST_TYPE
+req.product: Windows 10 or later.
 ---
 
 

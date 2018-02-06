@@ -1,42 +1,47 @@
 ---
-UID : NC:wdm.PMAP_TRANSFER_EX
-title : PMAP_TRANSFER_EX
-author : windows-driver-content
-description : The MapTransferEx routine sets up map registers to map the physical addresses in a scatter/gather list to the logical addresses that are required to do a DMA transfer.
-old-location : kernel\maptransferex.htm
-old-project : kernel
-ms.assetid : 9F6A20F0-94B1-4DA2-9FEA-F44D6AFDD16D
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.maptransferex, MapTransferEx, MapTransferEx callback function [Kernel-Mode Driver Architecture], MapTransferEx, PMAP_TRANSFER_EX, PMAP_TRANSFER_EX, wdm/MapTransferEx
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
-req.product : Windows 10 or later.
+UID: NC:wdm.PMAP_TRANSFER_EX
+title: PMAP_TRANSFER_EX
+author: windows-driver-content
+description: The MapTransferEx routine sets up map registers to map the physical addresses in a scatter/gather list to the logical addresses that are required to do a DMA transfer.
+old-location: kernel\maptransferex.htm
+old-project: kernel
+ms.assetid: 9F6A20F0-94B1-4DA2-9FEA-F44D6AFDD16D
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.maptransferex, MapTransferEx, MapTransferEx callback function [Kernel-Mode Driver Architecture], MapTransferEx, PMAP_TRANSFER_EX, PMAP_TRANSFER_EX, wdm/MapTransferEx
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Wdm.h
+apiname:
+-	MapTransferEx
+product: Windows
+targetos: Windows
+req.typenames: WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NS:wdfchildlist._WDF_CHILD_ADDRESS_DESCRIPTION_HEADER
-title : "_WDF_CHILD_ADDRESS_DESCRIPTION_HEADER"
-author : windows-driver-content
-description : The WDF_CHILD_ADDRESS_DESCRIPTION_HEADER structure is a header structure that must be the first member of every address description structure.
-old-location : wdf\wdf_child_address_description_header.htm
-old-project : wdf
-ms.assetid : 2ea8041c-be80-42ff-9693-f6331508f6b2
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdfchildlist/PWDF_CHILD_ADDRESS_DESCRIPTION_HEADER, PWDF_CHILD_ADDRESS_DESCRIPTION_HEADER, DFDeviceObjectChildListRef_3fc67e2b-a0f5-4e03-a901-b2629e494157.xml, wdfchildlist/WDF_CHILD_ADDRESS_DESCRIPTION_HEADER, WDF_CHILD_ADDRESS_DESCRIPTION_HEADER structure, kmdf.wdf_child_address_description_header, *PWDF_CHILD_ADDRESS_DESCRIPTION_HEADER, WDF_CHILD_ADDRESS_DESCRIPTION_HEADER, wdf.wdf_child_address_description_header, PWDF_CHILD_ADDRESS_DESCRIPTION_HEADER structure pointer, _WDF_CHILD_ADDRESS_DESCRIPTION_HEADER
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdfchildlist.h
-req.include-header : Wdf.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDF_CHILD_ADDRESS_DESCRIPTION_HEADER, WDF_CHILD_ADDRESS_DESCRIPTION_HEADER"
-req.product : Windows 10 or later.
+UID: NS:wdfchildlist._WDF_CHILD_ADDRESS_DESCRIPTION_HEADER
+title: "_WDF_CHILD_ADDRESS_DESCRIPTION_HEADER"
+author: windows-driver-content
+description: The WDF_CHILD_ADDRESS_DESCRIPTION_HEADER structure is a header structure that must be the first member of every address description structure.
+old-location: wdf\wdf_child_address_description_header.htm
+old-project: wdf
+ms.assetid: 2ea8041c-be80-42ff-9693-f6331508f6b2
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdfchildlist/PWDF_CHILD_ADDRESS_DESCRIPTION_HEADER, PWDF_CHILD_ADDRESS_DESCRIPTION_HEADER, DFDeviceObjectChildListRef_3fc67e2b-a0f5-4e03-a901-b2629e494157.xml, wdfchildlist/WDF_CHILD_ADDRESS_DESCRIPTION_HEADER, WDF_CHILD_ADDRESS_DESCRIPTION_HEADER structure, kmdf.wdf_child_address_description_header, *PWDF_CHILD_ADDRESS_DESCRIPTION_HEADER, WDF_CHILD_ADDRESS_DESCRIPTION_HEADER, wdf.wdf_child_address_description_header, PWDF_CHILD_ADDRESS_DESCRIPTION_HEADER structure pointer, _WDF_CHILD_ADDRESS_DESCRIPTION_HEADER
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdfchildlist.h
+req.include-header: Wdf.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfchildlist.h
+apiname:
+-	WDF_CHILD_ADDRESS_DESCRIPTION_HEADER
+product: Windows
+targetos: Windows
+req.typenames: "*PWDF_CHILD_ADDRESS_DESCRIPTION_HEADER, WDF_CHILD_ADDRESS_DESCRIPTION_HEADER"
+req.product: Windows 10 or later.
 ---
 
 # _WDF_CHILD_ADDRESS_DESCRIPTION_HEADER structure

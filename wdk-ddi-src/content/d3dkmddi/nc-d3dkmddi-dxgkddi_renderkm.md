@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dkmddi.DXGKDDI_RENDERKM
-title : DXGKDDI_RENDERKM
-author : windows-driver-content
-description : For display adapters that support GDI hardware acceleration, the DxgkDdiRenderKm function generates a direct memory access (DMA) buffer from the command buffer that the kernel-mode Canonical Display Driver (CDD) passed.
-old-location : display\dxgkddirenderkm.htm
-old-project : display
-ms.assetid : 5841934d-7e0a-4bb8-a7f8-17d8c0af351f
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkddirenderkm, DxgkDdiRenderKm callback function [Display Devices], DxgkDdiRenderKm, DXGKDDI_RENDERKM, DXGKDDI_RENDERKM, d3dkmddi/DxgkDdiRenderKm, DmFunctions_f8138753-f755-410c-b0a0-4422dee9bfb6.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dkmddi.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows 7 and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
+UID: NC:d3dkmddi.DXGKDDI_RENDERKM
+title: DXGKDDI_RENDERKM
+author: windows-driver-content
+description: For display adapters that support GDI hardware acceleration, the DxgkDdiRenderKm function generates a direct memory access (DMA) buffer from the command buffer that the kernel-mode Canonical Display Driver (CDD) passed.
+old-location: display\dxgkddirenderkm.htm
+old-project: display
+ms.assetid: 5841934d-7e0a-4bb8-a7f8-17d8c0af351f
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkddirenderkm, DxgkDdiRenderKm callback function [Display Devices], DxgkDdiRenderKm, DXGKDDI_RENDERKM, DXGKDDI_RENDERKM, d3dkmddi/DxgkDdiRenderKm, DmFunctions_f8138753-f755-410c-b0a0-4422dee9bfb6.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dkmddi.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows 7 and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DxgkDdiRenderKm
+product: Windows
+targetos: Windows
+req.typenames: DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
 

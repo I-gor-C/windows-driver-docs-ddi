@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfusb.IWDFUsbRequestCompletionParams.GetPipeReadParameters
-title : IWDFUsbRequestCompletionParams::GetPipeReadParameters method
-author : windows-driver-content
-description : The GetPipeReadParameters method retrieves parameters that are associated with the completion of a read request.
-old-location : wdf\iwdfusbrequestcompletionparams_getpipereadparameters.htm
-old-project : wdf
-ms.assetid : e5e3dfa0-49cc-4c2d-828e-fa5c95d3db8c
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : IWDFUsbRequestCompletionParams interface, GetPipeReadParameters method, GetPipeReadParameters, wdf.iwdfusbrequestcompletionparams_getpipereadparameters, GetPipeReadParameters method, GetPipeReadParameters method, IWDFUsbRequestCompletionParams interface, wudfusb/IWDFUsbRequestCompletionParams::GetPipeReadParameters, UMDFRequestObjectRef_d98f8b7f-c264-4044-aaef-893c717be50a.xml, umdf.iwdfusbrequestcompletionparams_getpipereadparameters, IWDFUsbRequestCompletionParams::GetPipeReadParameters, IWDFUsbRequestCompletionParams
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfusb.h
-req.include-header : Wudfusb.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.5
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfusb.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
-req.product : Windows 10 or later.
+UID: NF:wudfusb.IWDFUsbRequestCompletionParams.GetPipeReadParameters
+title: IWDFUsbRequestCompletionParams::GetPipeReadParameters method
+author: windows-driver-content
+description: The GetPipeReadParameters method retrieves parameters that are associated with the completion of a read request.
+old-location: wdf\iwdfusbrequestcompletionparams_getpipereadparameters.htm
+old-project: wdf
+ms.assetid: e5e3dfa0-49cc-4c2d-828e-fa5c95d3db8c
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: IWDFUsbRequestCompletionParams interface, GetPipeReadParameters method, GetPipeReadParameters, wdf.iwdfusbrequestcompletionparams_getpipereadparameters, GetPipeReadParameters method, GetPipeReadParameters method, IWDFUsbRequestCompletionParams interface, wudfusb/IWDFUsbRequestCompletionParams::GetPipeReadParameters, UMDFRequestObjectRef_d98f8b7f-c264-4044-aaef-893c717be50a.xml, umdf.iwdfusbrequestcompletionparams_getpipereadparameters, IWDFUsbRequestCompletionParams::GetPipeReadParameters, IWDFUsbRequestCompletionParams
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfusb.h
+req.include-header: Wudfusb.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.5
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfusb.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFUsbRequestCompletionParams.GetPipeReadParameters
+product: Windows
+targetos: Windows
+req.typenames: WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
+req.product: Windows 10 or later.
 ---
 
 

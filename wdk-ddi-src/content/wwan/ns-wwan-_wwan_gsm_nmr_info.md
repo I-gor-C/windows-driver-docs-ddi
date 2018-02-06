@@ -1,42 +1,47 @@
 ---
-UID : NS:wwan._WWAN_GSM_NMR_INFO
-title : "_WWAN_GSM_NMR_INFO"
-author : windows-driver-content
-description : The WWAN_GSM_NMR_INFO structure represents information about a neighboring GSM cell.
-old-location : netvista\wwan_gsm_nmr_info.htm
-old-project : netvista
-ms.assetid : EF22D5C3-7A3B-4A96-A050-FCB71CA2C149
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : PWWAN_GSM_NMR_INFO, wwan/WWAN_GSM_NMR_INFO, _WWAN_GSM_NMR_INFO, netvista.wwan_gsm_nmr_info, wwan/PWWAN_GSM_NMR_INFO, PWWAN_GSM_NMR_INFO structure pointer [Network Drivers Starting with Windows Vista], WWAN_GSM_NMR_INFO structure [Network Drivers Starting with Windows Vista], WWAN_GSM_NMR_INFO, *PWWAN_GSM_NMR_INFO
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wwan.h
-req.include-header : Wwan.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10, version 1709
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWWAN_GSM_NMR_INFO, WWAN_GSM_NMR_INFO"
-req.product : Windows 10 or later.
+UID: NS:wwan._WWAN_GSM_NMR_INFO
+title: "_WWAN_GSM_NMR_INFO"
+author: windows-driver-content
+description: The WWAN_GSM_NMR_INFO structure represents information about a neighboring GSM cell.
+old-location: netvista\wwan_gsm_nmr_info.htm
+old-project: netvista
+ms.assetid: EF22D5C3-7A3B-4A96-A050-FCB71CA2C149
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: PWWAN_GSM_NMR_INFO, wwan/WWAN_GSM_NMR_INFO, _WWAN_GSM_NMR_INFO, netvista.wwan_gsm_nmr_info, wwan/PWWAN_GSM_NMR_INFO, PWWAN_GSM_NMR_INFO structure pointer [Network Drivers Starting with Windows Vista], WWAN_GSM_NMR_INFO structure [Network Drivers Starting with Windows Vista], WWAN_GSM_NMR_INFO, *PWWAN_GSM_NMR_INFO
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wwan.h
+req.include-header: Wwan.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10, version 1709
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wwan.h
+apiname:
+-	WWAN_GSM_NMR_INFO
+product: Windows
+targetos: Windows
+req.typenames: "*PWWAN_GSM_NMR_INFO, WWAN_GSM_NMR_INFO"
+req.product: Windows 10 or later.
 ---
 
 # _WWAN_GSM_NMR_INFO structure

@@ -1,41 +1,47 @@
 ---
-UID : NF:gpioclx.GPIO_CLX_AcquireInterruptLock
-title : GPIO_CLX_AcquireInterruptLock function
-author : windows-driver-content
-description : The GPIO_CLX_AcquireInterruptLock method acquires an interrupt lock on a bank of pins in the general-purpose I/O (GPIO) controller.
-old-location : gpio\gpio_clx_acquireinterruptlock.htm
-old-project : GPIO
-ms.assetid : E0332415-1028-489B-AA81-DF8AEE0A28E8
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : GPIO_CLX_AcquireInterruptLock method [Parallel Ports], GPIO.gpio_clx_acquireinterruptlock, GPIO_CLX_AcquireInterruptLock, gpioclx/GPIO_CLX_AcquireInterruptLock
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : gpioclx.h
-req.include-header : 
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Msgpioclxstub.lib
-req.dll : 
-req.irql : DIRQL or at PASSIVE_LEVEL. See Remarks.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PGPIO_CONNECT_IO_PINS_MODE, GPIO_CONNECT_IO_PINS_MODE"
+UID: NF:gpioclx.GPIO_CLX_AcquireInterruptLock
+title: GPIO_CLX_AcquireInterruptLock function
+author: windows-driver-content
+description: The GPIO_CLX_AcquireInterruptLock method acquires an interrupt lock on a bank of pins in the general-purpose I/O (GPIO) controller.
+old-location: gpio\gpio_clx_acquireinterruptlock.htm
+old-project: GPIO
+ms.assetid: E0332415-1028-489B-AA81-DF8AEE0A28E8
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: GPIO_CLX_AcquireInterruptLock method [Parallel Ports], GPIO.gpio_clx_acquireinterruptlock, GPIO_CLX_AcquireInterruptLock, gpioclx/GPIO_CLX_AcquireInterruptLock
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: gpioclx.h
+req.include-header: 
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Msgpioclxstub.lib
+req.dll: 
+req.irql: DIRQL or at PASSIVE_LEVEL. See Remarks.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Msgpioclxstub.lib
+-	Msgpioclxstub.dll
+apiname:
+-	GPIO_CLX_AcquireInterruptLock
+product: Windows
+targetos: Windows
+req.typenames: "*PGPIO_CONNECT_IO_PINS_MODE, GPIO_CONNECT_IO_PINS_MODE"
 ---
 
 

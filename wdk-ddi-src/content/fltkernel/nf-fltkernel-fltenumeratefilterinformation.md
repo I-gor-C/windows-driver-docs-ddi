@@ -1,41 +1,47 @@
 ---
-UID : NF:fltkernel.FltEnumerateFilterInformation
-title : FltEnumerateFilterInformation function
-author : windows-driver-content
-description : The FltEnumerateFilterInformation routine provides information about all the registered filter drivers (including minifilter and legacy filter drivers) in the system.
-old-location : ifsk\fltenumeratefilterinformation.htm
-old-project : ifsk
-ms.assetid : c8bfa809-3f32-487c-991e-2ec040e3bc98
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltApiRef_e_to_o_dc4c496f-b21e-4b92-93c6-7efbe25400a6.xml, ifsk.fltenumeratefilterinformation, FltEnumerateFilterInformation routine [Installable File System Drivers], FltEnumerateFilterInformation, fltkernel/FltEnumerateFilterInformation
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : FltKernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltEnumerateFilterInformation
+title: FltEnumerateFilterInformation function
+author: windows-driver-content
+description: The FltEnumerateFilterInformation routine provides information about all the registered filter drivers (including minifilter and legacy filter drivers) in the system.
+old-location: ifsk\fltenumeratefilterinformation.htm
+old-project: ifsk
+ms.assetid: c8bfa809-3f32-487c-991e-2ec040e3bc98
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltApiRef_e_to_o_dc4c496f-b21e-4b92-93c6-7efbe25400a6.xml, ifsk.fltenumeratefilterinformation, FltEnumerateFilterInformation routine [Installable File System Drivers], FltEnumerateFilterInformation, fltkernel/FltEnumerateFilterInformation
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: FltKernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	FltMgr.lib
+-	FltMgr.dll
+apiname:
+-	FltEnumerateFilterInformation
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

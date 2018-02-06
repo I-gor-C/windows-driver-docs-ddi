@@ -1,41 +1,46 @@
 ---
-UID : NE:ntddndis._NDIS_SWITCH_PORT_STATE
-title : "_NDIS_SWITCH_PORT_STATE"
-author : windows-driver-content
-description : The NDIS_SWITCH_PORT_STATE enumeration specifies the current state of the Hyper-V extensible switch port.
-old-location : netvista\ndis_switch_port_state.htm
-old-project : netvista
-ms.assetid : BEF37F32-036D-4381-93B3-C159ABCFC3F9
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : "_NDIS_SWITCH_PORT_STATE, ntddndis/NDIS_SWITCH_PORT_STATE, ntddndis/NdisSwitchPortStateCreated, NdisSwitchPortStateDeleted, ntddndis/NdisSwitchPortStateDeleted, NdisSwitchPortStateCreated, ntddndis/NdisSwitchPortStateTeardown, NdisSwitchPortStateUnknown, ntddndis/NdisSwitchPortStateUnknown, NDIS_SWITCH_PORT_STATE, NDIS_SWITCH_PORT_STATE enumeration [Network Drivers Starting with Windows Vista], netvista.ndis_switch_port_state, NdisSwitchPortStateTeardown"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : ntddndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.30 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SWITCH_PORT_STATE
+UID: NE:ntddndis._NDIS_SWITCH_PORT_STATE
+title: "_NDIS_SWITCH_PORT_STATE"
+author: windows-driver-content
+description: The NDIS_SWITCH_PORT_STATE enumeration specifies the current state of the Hyper-V extensible switch port.
+old-location: netvista\ndis_switch_port_state.htm
+old-project: netvista
+ms.assetid: BEF37F32-036D-4381-93B3-C159ABCFC3F9
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: "_NDIS_SWITCH_PORT_STATE, ntddndis/NDIS_SWITCH_PORT_STATE, ntddndis/NdisSwitchPortStateCreated, NdisSwitchPortStateDeleted, ntddndis/NdisSwitchPortStateDeleted, NdisSwitchPortStateCreated, ntddndis/NdisSwitchPortStateTeardown, NdisSwitchPortStateUnknown, ntddndis/NdisSwitchPortStateUnknown, NDIS_SWITCH_PORT_STATE, NDIS_SWITCH_PORT_STATE enumeration [Network Drivers Starting with Windows Vista], netvista.ndis_switch_port_state, NdisSwitchPortStateTeardown"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: ntddndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.30 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddndis.h
+apiname:
+-	NDIS_SWITCH_PORT_STATE
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SWITCH_PORT_STATE
 ---
 
 # _NDIS_SWITCH_PORT_STATE Enumeration
@@ -54,31 +59,31 @@ typedef enum _NDIS_SWITCH_PORT_STATE {
 ## Constants
 
 <table>
-
-<tr>
-<td>NdisSwitchPortStateCreated</td>
-<td>This value specifies that the port is in the created state.</td>
-</tr>
-
-<tr>
-<td>NdisSwitchPortStateDeleted</td>
-<td>This value specifies that the port has been deleted.</td>
-</tr>
-
-<tr>
-<td>NdisSwitchPortStateTeardown</td>
-<td>This value specifies that the port is being torn down.</td>
-</tr>
-
-<tr>
-<td>NdisSwitchPortStateUnknown</td>
-<td>This value specifies an undefined port state. This value is unused.</td>
-</tr>
+            
+                <tr>
+                    <td>NdisSwitchPortStateCreated</td>
+                    <td>This value specifies that the port is in the created state.</td>
+                </tr>
+            
+                <tr>
+                    <td>NdisSwitchPortStateDeleted</td>
+                    <td>This value specifies that the port has been deleted.</td>
+                </tr>
+            
+                <tr>
+                    <td>NdisSwitchPortStateTeardown</td>
+                    <td>This value specifies that the port is being torn down.</td>
+                </tr>
+            
+                <tr>
+                    <td>NdisSwitchPortStateUnknown</td>
+                    <td>This value specifies an undefined port state. This value is unused.</td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-The <b>PortState</b>  member of the <a href="..\ntddndis\ns-ntddndis-_ndis_switch_port_parameters.md">NDIS_SWITCH_PORT_PARAMETER</a> structure is an <b>NDIS_SWITCH_PORT_STATE</b> enumeration data type. 
+        The <b>PortState</b>  member of the <a href="..\ntddndis\ns-ntddndis-_ndis_switch_port_parameters.md">NDIS_SWITCH_PORT_PARAMETER</a> structure is an <b>NDIS_SWITCH_PORT_STATE</b> enumeration data type. 
 
 
 For more information about extensible switch port states, see <a href="https://msdn.microsoft.com/FD6B6014-B840-4EC8-96F4-34C08EC303EA">Overview of Hyper-V Extensible Switch Ports</a>.
@@ -89,9 +94,9 @@ For more information about extensible switch port states, see <a href="https://m
 | **Windows version** | Supported in NDIS 6.30 and later. Supported in NDIS 6.30 and later. |
 | **Header** | ntddndis.h (include Ndis.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_switch_port_parameters.md">NDIS_SWITCH_PORT_PARAMETER</a>
+        <a href="..\ntddndis\ns-ntddndis-_ndis_switch_port_parameters.md">NDIS_SWITCH_PORT_PARAMETER</a>
 
 <b></b>
 

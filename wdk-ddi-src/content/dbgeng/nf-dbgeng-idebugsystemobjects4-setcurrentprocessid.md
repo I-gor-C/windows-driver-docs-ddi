@@ -1,41 +1,49 @@
 ---
-UID : NF:dbgeng.IDebugSystemObjects4.SetCurrentProcessId
-title : IDebugSystemObjects4::SetCurrentProcessId method
-author : windows-driver-content
-description : The SetCurrentProcessId method makes the specified process the current process.
-old-location : debugger\setcurrentprocessid.htm
-old-project : debugger
-ms.assetid : 65129c6e-5c69-409b-95f5-07b98a494533
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugSystemObjects interface [Windows Debugging], SetCurrentProcessId method, SetCurrentProcessId, IDebugSystemObjects2::SetCurrentProcessId, SetCurrentProcessId method [Windows Debugging], IDebugSystemObjects::SetCurrentProcessId, IDebugSystemObjects3 interface [Windows Debugging], SetCurrentProcessId method, IDebugSystemObjects3::SetCurrentProcessId, IDebugSystemObjects4::SetCurrentProcessId, dbgeng/IDebugSystemObjects3::SetCurrentProcessId, SetCurrentProcessId method [Windows Debugging], IDebugSystemObjects4 interface, IDebugSystemObjects4, SetCurrentProcessId method [Windows Debugging], IDebugSystemObjects2 interface, IDebugSystemObjects_e588cabd-e079-4dc0-ab0f-085181414985.xml, SetCurrentProcessId method [Windows Debugging], IDebugSystemObjects3 interface, SetCurrentProcessId method [Windows Debugging], IDebugSystemObjects interface, debugger.setcurrentprocessid, dbgeng/IDebugSystemObjects2::SetCurrentProcessId, IDebugSystemObjects2 interface [Windows Debugging], SetCurrentProcessId method, dbgeng/IDebugSystemObjects::SetCurrentProcessId, IDebugSystemObjects4 interface [Windows Debugging], SetCurrentProcessId method, dbgeng/IDebugSystemObjects4::SetCurrentProcessId
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSystemObjects4.SetCurrentProcessId
+title: IDebugSystemObjects4::SetCurrentProcessId method
+author: windows-driver-content
+description: The SetCurrentProcessId method makes the specified process the current process.
+old-location: debugger\setcurrentprocessid.htm
+old-project: debugger
+ms.assetid: 65129c6e-5c69-409b-95f5-07b98a494533
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugSystemObjects interface [Windows Debugging], SetCurrentProcessId method, SetCurrentProcessId, IDebugSystemObjects2::SetCurrentProcessId, SetCurrentProcessId method [Windows Debugging], IDebugSystemObjects::SetCurrentProcessId, IDebugSystemObjects3 interface [Windows Debugging], SetCurrentProcessId method, IDebugSystemObjects3::SetCurrentProcessId, IDebugSystemObjects4::SetCurrentProcessId, dbgeng/IDebugSystemObjects3::SetCurrentProcessId, SetCurrentProcessId method [Windows Debugging], IDebugSystemObjects4 interface, IDebugSystemObjects4, SetCurrentProcessId method [Windows Debugging], IDebugSystemObjects2 interface, IDebugSystemObjects_e588cabd-e079-4dc0-ab0f-085181414985.xml, SetCurrentProcessId method [Windows Debugging], IDebugSystemObjects3 interface, SetCurrentProcessId method [Windows Debugging], IDebugSystemObjects interface, debugger.setcurrentprocessid, dbgeng/IDebugSystemObjects2::SetCurrentProcessId, IDebugSystemObjects2 interface [Windows Debugging], SetCurrentProcessId method, dbgeng/IDebugSystemObjects::SetCurrentProcessId, IDebugSystemObjects4 interface [Windows Debugging], SetCurrentProcessId method, dbgeng/IDebugSystemObjects4::SetCurrentProcessId
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugSystemObjects.SetCurrentProcessId
+-	IDebugSystemObjects2.SetCurrentProcessId
+-	IDebugSystemObjects3.SetCurrentProcessId
+-	IDebugSystemObjects4.SetCurrentProcessId
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

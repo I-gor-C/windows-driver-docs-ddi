@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGKARG_PATCH
-title : "_DXGKARG_PATCH"
-author : windows-driver-content
-description : The DXGKARG_PATCH structure describes a direct memory access (DMA) buffer that requires patching (that is, requires the assignment of physical addresses).
-old-location : display\dxgkarg_patch.htm
-old-project : display
-ms.assetid : 37ca2208-253c-417e-a44c-fd1303d5f3dc
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3dkmddi/DXGKARG_PATCH, DXGKARG_PATCH structure [Display Devices], _DXGKARG_PATCH, display.dxgkarg_patch, DmStructs_1fd78713-859f-4584-a696-e89976b58ab7.xml, DXGKARG_PATCH
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGKARG_PATCH
+UID: NS:d3dkmddi._DXGKARG_PATCH
+title: "_DXGKARG_PATCH"
+author: windows-driver-content
+description: The DXGKARG_PATCH structure describes a direct memory access (DMA) buffer that requires patching (that is, requires the assignment of physical addresses).
+old-location: display\dxgkarg_patch.htm
+old-project: display
+ms.assetid: 37ca2208-253c-417e-a44c-fd1303d5f3dc
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3dkmddi/DXGKARG_PATCH, DXGKARG_PATCH structure [Display Devices], _DXGKARG_PATCH, display.dxgkarg_patch, DmStructs_1fd78713-859f-4584-a696-e89976b58ab7.xml, DXGKARG_PATCH
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DXGKARG_PATCH
+product: Windows
+targetos: Windows
+req.typenames: DXGKARG_PATCH
 ---
 
 # _DXGKARG_PATCH structure

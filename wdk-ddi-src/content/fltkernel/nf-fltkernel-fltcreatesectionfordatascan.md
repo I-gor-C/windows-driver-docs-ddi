@@ -1,41 +1,47 @@
 ---
-UID : NF:fltkernel.FltCreateSectionForDataScan
-title : FltCreateSectionForDataScan function
-author : windows-driver-content
-description : The FltCreateSectionForDataScan routine creates a section object for a file. The filter manager can optionally synchronize I/O with the section created.
-old-location : ifsk\fltcreatesectionfordatascan.htm
-old-project : ifsk
-ms.assetid : D1215495-C737-45B6-BECD-8CB430C71DE8
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : fltkernel/FltCreateSectionForDataScan, FltCreateSectionForDataScan, FltCreateSectionForDataScan routine [Installable File System Drivers], ifsk.fltcreatesectionfordatascan
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : The FltCreateSectionForDataScan routine is available starting with  Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltCreateSectionForDataScan
+title: FltCreateSectionForDataScan function
+author: windows-driver-content
+description: The FltCreateSectionForDataScan routine creates a section object for a file. The filter manager can optionally synchronize I/O with the section created.
+old-location: ifsk\fltcreatesectionfordatascan.htm
+old-project: ifsk
+ms.assetid: D1215495-C737-45B6-BECD-8CB430C71DE8
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: fltkernel/FltCreateSectionForDataScan, FltCreateSectionForDataScan, FltCreateSectionForDataScan routine [Installable File System Drivers], ifsk.fltcreatesectionfordatascan
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: The FltCreateSectionForDataScan routine is available starting with  Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	FltMgr.lib
+-	FltMgr.dll
+apiname:
+-	FltCreateSectionForDataScan
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsPropertyHandler
-title : KsPropertyHandler function
-author : windows-driver-content
-description : Drivers call KsPropertyHandler function for IRP handling.
-old-location : stream\kspropertyhandler.htm
-old-project : stream
-ms.assetid : af94f36f-6e1a-4ac5-be6d-64a9a8dade9e
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KsPropertyHandler, ksfunc_9595b49a-6957-4ebc-8d45-3a92f9190734.xml, stream.kspropertyhandler, KsPropertyHandler function [Streaming Media Devices], ks/KsPropertyHandler
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsPropertyHandler
+title: KsPropertyHandler function
+author: windows-driver-content
+description: Drivers call KsPropertyHandler function for IRP handling.
+old-location: stream\kspropertyhandler.htm
+old-project: stream
+ms.assetid: af94f36f-6e1a-4ac5-be6d-64a9a8dade9e
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KsPropertyHandler, ksfunc_9595b49a-6957-4ebc-8d45-3a92f9190734.xml, stream.kspropertyhandler, KsPropertyHandler function [Streaming Media Devices], ks/KsPropertyHandler
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsPropertyHandler
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

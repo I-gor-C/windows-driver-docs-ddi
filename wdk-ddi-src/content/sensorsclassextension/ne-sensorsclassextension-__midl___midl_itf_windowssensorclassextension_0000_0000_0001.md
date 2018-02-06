@@ -1,42 +1,47 @@
 ---
-UID : NE:sensorsclassextension.__MIDL___MIDL_itf_windowssensorclassextension_0000_0000_0001
-title : "__MIDL___MIDL_itf_windowssensorclassextension_0000_0000_0001"
-author : windows-driver-content
-description : The SensorState enumeration type specifies the current operational state of a sensor.
-old-location : sensors\sensorstate.htm
-old-project : sensors
-ms.assetid : 5643cb45-daa0-490e-aa0c-9e3b54c6dbef
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : SENSOR_STATE_ACCESS_DENIED, sensorsclassextension/SENSOR_STATE_MAX, SENSOR_STATE_NO_DATA, sensorsclassextension/SENSOR_STATE_ACCESS_DENIED, __MIDL___MIDL_itf_windowssensorclassextension_0000_0000_0001, SENSOR_STATE_INITIALIZING, SENSOR_STATE_MIN, SensorState enumeration [Sensor Devices], SENSOR_STATE_ERROR, sensorsclassextension/SENSOR_STATE_MIN, SENSOR_STATE_READY, SENSOR_STATE_MAX, sensorsclassextension/SENSOR_STATE_ERROR, sensorsclassextension/SensorState, sensors.sensorstate, SensorState, sensorsclassextension/SENSOR_STATE_NOT_AVAILABLE, SENSOR_STATE_NOT_AVAILABLE, Sensor_Enums_caba27ac-659e-4b9a-a466-7a7d202c6f62.xml, sensorsclassextension/SENSOR_STATE_READY, sensorsclassextension/SENSOR_STATE_NO_DATA, sensorsclassextension/SENSOR_STATE_INITIALIZING
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : sensorsclassextension.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 7,Available in Windows 7.
-req.target-min-winversvr : None supported
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= PASSIVE_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SensorState
-req.product : Windows 10 or later.
+UID: NE:sensorsclassextension.__MIDL___MIDL_itf_windowssensorclassextension_0000_0000_0001
+title: "__MIDL___MIDL_itf_windowssensorclassextension_0000_0000_0001"
+author: windows-driver-content
+description: The SensorState enumeration type specifies the current operational state of a sensor.
+old-location: sensors\sensorstate.htm
+old-project: sensors
+ms.assetid: 5643cb45-daa0-490e-aa0c-9e3b54c6dbef
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: SENSOR_STATE_ACCESS_DENIED, sensorsclassextension/SENSOR_STATE_MAX, SENSOR_STATE_NO_DATA, sensorsclassextension/SENSOR_STATE_ACCESS_DENIED, __MIDL___MIDL_itf_windowssensorclassextension_0000_0000_0001, SENSOR_STATE_INITIALIZING, SENSOR_STATE_MIN, SensorState enumeration [Sensor Devices], SENSOR_STATE_ERROR, sensorsclassextension/SENSOR_STATE_MIN, SENSOR_STATE_READY, SENSOR_STATE_MAX, sensorsclassextension/SENSOR_STATE_ERROR, sensorsclassextension/SensorState, sensors.sensorstate, SensorState, sensorsclassextension/SENSOR_STATE_NOT_AVAILABLE, SENSOR_STATE_NOT_AVAILABLE, Sensor_Enums_caba27ac-659e-4b9a-a466-7a7d202c6f62.xml, sensorsclassextension/SENSOR_STATE_READY, sensorsclassextension/SENSOR_STATE_NO_DATA, sensorsclassextension/SENSOR_STATE_INITIALIZING
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: sensorsclassextension.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 7,Available in Windows 7.
+req.target-min-winversvr: None supported
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= PASSIVE_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	SensorsClassExtension.h
+apiname:
+-	SensorState
+product: Windows
+targetos: Windows
+req.typenames: SensorState
+req.product: Windows 10 or later.
 ---
 
 # __MIDL___MIDL_itf_windowssensorclassextension_0000_0000_0001 Enumeration
@@ -60,51 +65,51 @@ enum SensorState {
 ## Constants
 
 <table>
-
-<tr>
-<td>SENSOR_STATE_ACCESS_DENIED</td>
-<td>Reserved. Do not use in driver code.</td>
-</tr>
-
-<tr>
-<td>SENSOR_STATE_ERROR</td>
-<td>Indicates that an unspecified error occurred.</td>
-</tr>
-
-<tr>
-<td>SENSOR_STATE_INITIALIZING</td>
-<td>Indicates that the sensor is not yet ready for use. Try again.</td>
-</tr>
-
-<tr>
-<td>SENSOR_STATE_MAX</td>
-<td>Reserved.</td>
-</tr>
-
-<tr>
-<td>SENSOR_STATE_MIN</td>
-<td>Reserved.</td>
-</tr>
-
-<tr>
-<td>SENSOR_STATE_NO_DATA</td>
-<td>Indicates that no data available.</td>
-</tr>
-
-<tr>
-<td>SENSOR_STATE_NOT_AVAILABLE</td>
-<td>Indicates that the sensor is not currently available for use.</td>
-</tr>
-
-<tr>
-<td>SENSOR_STATE_READY</td>
-<td>Indicates that the sensor is ready.</td>
-</tr>
+            
+                <tr>
+                    <td>SENSOR_STATE_ACCESS_DENIED</td>
+                    <td>Reserved. Do not use in driver code.</td>
+                </tr>
+            
+                <tr>
+                    <td>SENSOR_STATE_ERROR</td>
+                    <td>Indicates that an unspecified error occurred.</td>
+                </tr>
+            
+                <tr>
+                    <td>SENSOR_STATE_INITIALIZING</td>
+                    <td>Indicates that the sensor is not yet ready for use. Try again.</td>
+                </tr>
+            
+                <tr>
+                    <td>SENSOR_STATE_MAX</td>
+                    <td>Reserved.</td>
+                </tr>
+            
+                <tr>
+                    <td>SENSOR_STATE_MIN</td>
+                    <td>Reserved.</td>
+                </tr>
+            
+                <tr>
+                    <td>SENSOR_STATE_NO_DATA</td>
+                    <td>Indicates that no data available.</td>
+                </tr>
+            
+                <tr>
+                    <td>SENSOR_STATE_NOT_AVAILABLE</td>
+                    <td>Indicates that the sensor is not currently available for use.</td>
+                </tr>
+            
+                <tr>
+                    <td>SENSOR_STATE_READY</td>
+                    <td>Indicates that the sensor is ready.</td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-This enumeration also defines values used for the <a href="https://msdn.microsoft.com/1BF1568D-A889-4158-9C6D-160D9B06F0DE">SENSOR_PROPERTY_STATE</a> property.
+        This enumeration also defines values used for the <a href="https://msdn.microsoft.com/1BF1568D-A889-4158-9C6D-160D9B06F0DE">SENSOR_PROPERTY_STATE</a> property.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -112,9 +117,9 @@ This enumeration also defines values used for the <a href="https://msdn.microsof
 | **Windows version** | Windows 7,Available in Windows 7. Windows 7,Available in Windows 7. |
 | **Header** | sensorsclassextension.h |
 
-## See Also
+    ## See Also
 
-<a href="https://msdn.microsoft.com/ae3bc846-df63-4186-9554-f4600e1f2066">ISensorClassExtension::PostStateChange</a>
+        <a href="https://msdn.microsoft.com/ae3bc846-df63-4186-9554-f4600e1f2066">ISensorClassExtension::PostStateChange</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff545610">ISensorDriver::OnGetProperties</a>
 

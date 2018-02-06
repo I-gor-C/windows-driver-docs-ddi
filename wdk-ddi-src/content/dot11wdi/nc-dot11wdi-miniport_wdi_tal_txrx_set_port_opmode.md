@@ -1,41 +1,46 @@
 ---
-UID : NC:dot11wdi.MINIPORT_WDI_TAL_TXRX_SET_PORT_OPMODE
-title : MINIPORT_WDI_TAL_TXRX_SET_PORT_OPMODE
-author : windows-driver-content
-description : The MiniportWdiTalTxRxSetPortOpMode handler function specifies the opmode used for the port so that the TxEngine and RxEngine enable the corresponding functionality.
-old-location : netvista\miniportwditaltxrxsetportopmode.htm
-old-project : netvista
-ms.assetid : 86F3005E-8BB3-4309-AFDE-7FA6E0427BFD
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.miniportwditaltxrxsetportopmode, MiniportWdiTalTxRxSetPortOpMode callback function [Network Drivers Starting with Windows Vista], MiniportWdiTalTxRxSetPortOpMode, MINIPORT_WDI_TAL_TXRX_SET_PORT_OPMODE, MINIPORT_WDI_TAL_TXRX_SET_PORT_OPMODE, dot11wdi/MiniportWdiTalTxRxSetPortOpMode
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : dot11wdi.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SYNTH_STATS, *PSYNTH_STATS
+UID: NC:dot11wdi.MINIPORT_WDI_TAL_TXRX_SET_PORT_OPMODE
+title: MINIPORT_WDI_TAL_TXRX_SET_PORT_OPMODE
+author: windows-driver-content
+description: The MiniportWdiTalTxRxSetPortOpMode handler function specifies the opmode used for the port so that the TxEngine and RxEngine enable the corresponding functionality.
+old-location: netvista\miniportwditaltxrxsetportopmode.htm
+old-project: netvista
+ms.assetid: 86F3005E-8BB3-4309-AFDE-7FA6E0427BFD
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.miniportwditaltxrxsetportopmode, MiniportWdiTalTxRxSetPortOpMode callback function [Network Drivers Starting with Windows Vista], MiniportWdiTalTxRxSetPortOpMode, MINIPORT_WDI_TAL_TXRX_SET_PORT_OPMODE, MINIPORT_WDI_TAL_TXRX_SET_PORT_OPMODE, dot11wdi/MiniportWdiTalTxRxSetPortOpMode
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: dot11wdi.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	dot11wdi.h
+apiname:
+-	MiniportWdiTalTxRxSetPortOpMode
+product: Windows
+targetos: Windows
+req.typenames: SYNTH_STATS, *PSYNTH_STATS
 ---
 
 

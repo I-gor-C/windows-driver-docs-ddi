@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.ExAcquireRundownProtectionEx
-title : ExAcquireRundownProtectionEx function
-author : windows-driver-content
-description : The ExAcquireRundownProtectionEx routine tries to acquire run-down protection on a shared object so the caller can safely access the object.
-old-location : kernel\exacquirerundownprotectionex.htm
-old-project : kernel
-ms.assetid : AB5939B9-01DD-4F51-BAEB-6C5EC909FAE1
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.exacquirerundownprotectionex, ExAcquireRundownProtectionEx, ExAcquireRundownProtectionEx routine [Kernel-Mode Driver Architecture], wdm/ExAcquireRundownProtectionEx
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows Server 2003.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ExAcquireRundownProtectionEx
+title: ExAcquireRundownProtectionEx function
+author: windows-driver-content
+description: The ExAcquireRundownProtectionEx routine tries to acquire run-down protection on a shared object so the caller can safely access the object.
+old-location: kernel\exacquirerundownprotectionex.htm
+old-project: kernel
+ms.assetid: AB5939B9-01DD-4F51-BAEB-6C5EC909FAE1
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.exacquirerundownprotectionex, ExAcquireRundownProtectionEx, ExAcquireRundownProtectionEx routine [Kernel-Mode Driver Architecture], wdm/ExAcquireRundownProtectionEx
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows Server 2003.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ExAcquireRundownProtectionEx
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

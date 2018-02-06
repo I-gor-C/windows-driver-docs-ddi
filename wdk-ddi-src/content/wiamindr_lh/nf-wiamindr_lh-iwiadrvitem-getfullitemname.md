@@ -1,42 +1,47 @@
 ---
-UID : NF:wiamindr_lh.IWiaDrvItem.GetFullItemName
-title : IWiaDrvItem::GetFullItemName method
-author : windows-driver-content
-description : The IWiaDrvItem::GetFullItemName method gets the item's full name, including path information.
-old-location : image\iwiadrvitem_getfullitemname.htm
-old-project : image
-ms.assetid : 810faf49-faa9-45f2-af94-af576f4c1075
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : GetFullItemName method [Imaging Devices], IWiaDrvItem interface, IWiaDrvItem interface [Imaging Devices], GetFullItemName method, GetFullItemName, GetFullItemName method [Imaging Devices], DrvItem_1b166476-d17a-4953-9c73-6e3d7c9cd0f9.xml, IWiaDrvItem, IWiaDrvItem::GetFullItemName, image.iwiadrvitem_getfullitemname, wiamindr_lh/IWiaDrvItem::GetFullItemName
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wiamindr_lh.h
-req.include-header : Wiamindr.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Me and in Windows XP and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wiamindr_lh.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SCANWINDOW, *PSCANWINDOW
-req.product : Windows 10 or later.
+UID: NF:wiamindr_lh.IWiaDrvItem.GetFullItemName
+title: IWiaDrvItem::GetFullItemName method
+author: windows-driver-content
+description: The IWiaDrvItem::GetFullItemName method gets the item's full name, including path information.
+old-location: image\iwiadrvitem_getfullitemname.htm
+old-project: image
+ms.assetid: 810faf49-faa9-45f2-af94-af576f4c1075
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: GetFullItemName method [Imaging Devices], IWiaDrvItem interface, IWiaDrvItem interface [Imaging Devices], GetFullItemName method, GetFullItemName, GetFullItemName method [Imaging Devices], DrvItem_1b166476-d17a-4953-9c73-6e3d7c9cd0f9.xml, IWiaDrvItem, IWiaDrvItem::GetFullItemName, image.iwiadrvitem_getfullitemname, wiamindr_lh/IWiaDrvItem::GetFullItemName
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wiamindr_lh.h
+req.include-header: Wiamindr.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Me and in Windows XP and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wiamindr_lh.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	wiamindr_lh.h
+apiname:
+-	IWiaDrvItem.GetFullItemName
+product: Windows
+targetos: Windows
+req.typenames: SCANWINDOW, *PSCANWINDOW
+req.product: Windows 10 or later.
 ---
 
 

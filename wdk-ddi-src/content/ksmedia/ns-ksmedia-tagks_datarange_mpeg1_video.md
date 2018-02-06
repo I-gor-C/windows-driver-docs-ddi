@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.tagKS_DATARANGE_MPEG1_VIDEO
-title : tagKS_DATARANGE_MPEG1_VIDEO
-author : windows-driver-content
-description : The KS_DATARANGE_MPEG1_VIDEO structure describes the range of MPEG-1 video formats available for a stream.
-old-location : stream\ks_datarange_mpeg1_video.htm
-old-project : stream
-ms.assetid : 0b715c9b-9a5a-4ef6-b3cc-c17964e55bc1
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : vidcapstruct_caa12154-017f-4796-bc84-3c132475a75e.xml, PKS_DATARANGE_MPEG1_VIDEO, ksmedia/PKS_DATARANGE_MPEG1_VIDEO, ksmedia/KS_DATARANGE_MPEG1_VIDEO, PKS_DATARANGE_MPEG1_VIDEO structure pointer [Streaming Media Devices], KS_DATARANGE_MPEG1_VIDEO structure [Streaming Media Devices], tagKS_DATARANGE_MPEG1_VIDEO, KS_DATARANGE_MPEG1_VIDEO, stream.ks_datarange_mpeg1_video, *PKS_DATARANGE_MPEG1_VIDEO
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKS_DATARANGE_MPEG1_VIDEO, KS_DATARANGE_MPEG1_VIDEO"
+UID: NS:ksmedia.tagKS_DATARANGE_MPEG1_VIDEO
+title: tagKS_DATARANGE_MPEG1_VIDEO
+author: windows-driver-content
+description: The KS_DATARANGE_MPEG1_VIDEO structure describes the range of MPEG-1 video formats available for a stream.
+old-location: stream\ks_datarange_mpeg1_video.htm
+old-project: stream
+ms.assetid: 0b715c9b-9a5a-4ef6-b3cc-c17964e55bc1
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: vidcapstruct_caa12154-017f-4796-bc84-3c132475a75e.xml, PKS_DATARANGE_MPEG1_VIDEO, ksmedia/PKS_DATARANGE_MPEG1_VIDEO, ksmedia/KS_DATARANGE_MPEG1_VIDEO, PKS_DATARANGE_MPEG1_VIDEO structure pointer [Streaming Media Devices], KS_DATARANGE_MPEG1_VIDEO structure [Streaming Media Devices], tagKS_DATARANGE_MPEG1_VIDEO, KS_DATARANGE_MPEG1_VIDEO, stream.ks_datarange_mpeg1_video, *PKS_DATARANGE_MPEG1_VIDEO
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	KS_DATARANGE_MPEG1_VIDEO
+product: Windows
+targetos: Windows
+req.typenames: "*PKS_DATARANGE_MPEG1_VIDEO, KS_DATARANGE_MPEG1_VIDEO"
 ---
 
 # tagKS_DATARANGE_MPEG1_VIDEO structure

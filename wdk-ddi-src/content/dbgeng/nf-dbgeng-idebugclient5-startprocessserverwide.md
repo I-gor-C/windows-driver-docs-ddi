@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugClient5.StartProcessServerWide
-title : IDebugClient5::StartProcessServerWide method
-author : windows-driver-content
-description : The StartProcessServerWide method starts a process server.
-old-location : debugger\startprocessserverwide.htm
-old-project : debugger
-ms.assetid : 1e72578c-9359-4275-a4f2-2b5ae4dbf2b7
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : dbgeng/IDebugClient5::StartProcessServerWide, StartProcessServerWide method [Windows Debugging], IDebugClient5 interface, IDebugClient5::StartProcessServerWide, StartProcessServerWide method [Windows Debugging], IDebugClient5 interface [Windows Debugging], StartProcessServerWide method, StartProcessServerWide, debugger.startprocessserverwide, IDebugClient5
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugClient5.StartProcessServerWide
+title: IDebugClient5::StartProcessServerWide method
+author: windows-driver-content
+description: The StartProcessServerWide method starts a process server.
+old-location: debugger\startprocessserverwide.htm
+old-project: debugger
+ms.assetid: 1e72578c-9359-4275-a4f2-2b5ae4dbf2b7
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: dbgeng/IDebugClient5::StartProcessServerWide, StartProcessServerWide method [Windows Debugging], IDebugClient5 interface, IDebugClient5::StartProcessServerWide, StartProcessServerWide method [Windows Debugging], IDebugClient5 interface [Windows Debugging], StartProcessServerWide method, StartProcessServerWide, debugger.startprocessserverwide, IDebugClient5
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugClient5.StartProcessServerWide
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

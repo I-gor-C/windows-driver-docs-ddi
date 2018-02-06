@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3D11_1DDI_CALCPRIVATECRYPTOSESSIONSIZE
-title : PFND3D11_1DDI_CALCPRIVATECRYPTOSESSIONSIZE
-author : windows-driver-content
-description : Returns the number of bytes that the driver requires to store private data for the cryptographic session state.
-old-location : display\calcprivatecryptosessionsize.htm
-old-project : display
-ms.assetid : 9ca0fdd5-a724-4d5d-81b2-8885b2aed1ca
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.calcprivatecryptosessionsize, CalcPrivateCryptoSessionSize callback function [Display Devices], CalcPrivateCryptoSessionSize, PFND3D11_1DDI_CALCPRIVATECRYPTOSESSIONSIZE, PFND3D11_1DDI_CALCPRIVATECRYPTOSESSIONSIZE, d3d10umddi/CalcPrivateCryptoSessionSize
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3D11_1DDI_CALCPRIVATECRYPTOSESSIONSIZE
+title: PFND3D11_1DDI_CALCPRIVATECRYPTOSESSIONSIZE
+author: windows-driver-content
+description: Returns the number of bytes that the driver requires to store private data for the cryptographic session state.
+old-location: display\calcprivatecryptosessionsize.htm
+old-project: display
+ms.assetid: 9ca0fdd5-a724-4d5d-81b2-8885b2aed1ca
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.calcprivatecryptosessionsize, CalcPrivateCryptoSessionSize callback function [Display Devices], CalcPrivateCryptoSessionSize, PFND3D11_1DDI_CALCPRIVATECRYPTOSESSIONSIZE, PFND3D11_1DDI_CALCPRIVATECRYPTOSESSIONSIZE, d3d10umddi/CalcPrivateCryptoSessionSize
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	D3d10umddi.h
+apiname:
+-	CalcPrivateCryptoSessionSize
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

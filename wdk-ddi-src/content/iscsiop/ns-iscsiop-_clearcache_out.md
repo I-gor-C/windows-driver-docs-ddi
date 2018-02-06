@@ -1,41 +1,46 @@
 ---
-UID : NS:iscsiop._ClearCache_OUT
-title : "_ClearCache_OUT"
-author : windows-driver-content
-description : The ClearCache_OUT structure holds the output data for the ClearCache method.
-old-location : storage\clearcache_out.htm
-old-project : storage
-ms.assetid : ab97d0b0-00fc-499c-9b1b-83731fe8e935
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : iscsiop/PClearCache_OUT, *PClearCache_OUT, PClearCache_OUT, iscsiop/ClearCache_OUT, storage.clearcache_out, PClearCache_OUT structure pointer [Storage Devices], structs-iSCSI_e96c134a-dfb1-474a-b730-1fb6e8d8f86f.xml, ClearCache_OUT structure [Storage Devices], ClearCache_OUT, _ClearCache_OUT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : iscsiop.h
-req.include-header : Iscsiop.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PClearCache_OUT, ClearCache_OUT"
+UID: NS:iscsiop._ClearCache_OUT
+title: "_ClearCache_OUT"
+author: windows-driver-content
+description: The ClearCache_OUT structure holds the output data for the ClearCache method.
+old-location: storage\clearcache_out.htm
+old-project: storage
+ms.assetid: ab97d0b0-00fc-499c-9b1b-83731fe8e935
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: iscsiop/PClearCache_OUT, *PClearCache_OUT, PClearCache_OUT, iscsiop/ClearCache_OUT, storage.clearcache_out, PClearCache_OUT structure pointer [Storage Devices], structs-iSCSI_e96c134a-dfb1-474a-b730-1fb6e8d8f86f.xml, ClearCache_OUT structure [Storage Devices], ClearCache_OUT, _ClearCache_OUT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: iscsiop.h
+req.include-header: Iscsiop.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	iscsiop.h
+apiname:
+-	ClearCache_OUT
+product: Windows
+targetos: Windows
+req.typenames: "*PClearCache_OUT, ClearCache_OUT"
 ---
 
 # _ClearCache_OUT structure

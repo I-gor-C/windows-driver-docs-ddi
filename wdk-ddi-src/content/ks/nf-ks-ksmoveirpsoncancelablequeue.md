@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsMoveIrpsOnCancelableQueue
-title : KsMoveIrpsOnCancelableQueue function
-author : windows-driver-content
-description : The KsMoveIrpsOnCancelableQueue function moves the specified IRPs from the SourceList parameter to the DestinationList parameter depending on the value returned from the minidriver-defined KStrIrpListCallback function.
-old-location : stream\ksmoveirpsoncancelablequeue.htm
-old-project : stream
-ms.assetid : 1f6b4d93-fca8-40da-b87e-c95169f142ea
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.ksmoveirpsoncancelablequeue, ksfunc_e01b21f7-96b7-4a6c-b6cb-3667d7b6b4dc.xml, KsMoveIrpsOnCancelableQueue, ks/KsMoveIrpsOnCancelableQueue, KsMoveIrpsOnCancelableQueue function [Streaming Media Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsMoveIrpsOnCancelableQueue
+title: KsMoveIrpsOnCancelableQueue function
+author: windows-driver-content
+description: The KsMoveIrpsOnCancelableQueue function moves the specified IRPs from the SourceList parameter to the DestinationList parameter depending on the value returned from the minidriver-defined KStrIrpListCallback function.
+old-location: stream\ksmoveirpsoncancelablequeue.htm
+old-project: stream
+ms.assetid: 1f6b4d93-fca8-40da-b87e-c95169f142ea
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.ksmoveirpsoncancelablequeue, ksfunc_e01b21f7-96b7-4a6c-b6cb-3667d7b6b4dc.xml, KsMoveIrpsOnCancelableQueue, ks/KsMoveIrpsOnCancelableQueue, KsMoveIrpsOnCancelableQueue function [Streaming Media Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsMoveIrpsOnCancelableQueue
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

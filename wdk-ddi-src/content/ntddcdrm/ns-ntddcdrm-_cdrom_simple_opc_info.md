@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddcdrm._CDROM_SIMPLE_OPC_INFO
-title : "_CDROM_SIMPLE_OPC_INFO"
-author : windows-driver-content
-description : The CDROM_SIMPLE_OPC_INFO structure is the only input for the IOCTL_CDROM_SEND_OPC_INFORMATION I/O control code.
-old-location : storage\cdrom_simple_opc_info.htm
-old-project : storage
-ms.assetid : CE6D2C98-C4C3-4D76-B49E-1B9344B88666
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : CDROM_SIMPLE_OPC_INFO, _CDROM_SIMPLE_OPC_INFO, PCDROM_SIMPLE_OPC_INFO structure pointer [Storage Devices], ntddcdrm/CDROM_SIMPLE_OPC_INFO, *PCDROM_SIMPLE_OPC_INFO, storage.cdrom_simple_opc_info, PCDROM_SIMPLE_OPC_INFO, ntddcdrm/PCDROM_SIMPLE_OPC_INFO, CDROM_SIMPLE_OPC_INFO structure [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddcdrm.h
-req.include-header : Ntddcdrm.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : CDROM_SIMPLE_OPC_INFO, *PCDROM_SIMPLE_OPC_INFO
+UID: NS:ntddcdrm._CDROM_SIMPLE_OPC_INFO
+title: "_CDROM_SIMPLE_OPC_INFO"
+author: windows-driver-content
+description: The CDROM_SIMPLE_OPC_INFO structure is the only input for the IOCTL_CDROM_SEND_OPC_INFORMATION I/O control code.
+old-location: storage\cdrom_simple_opc_info.htm
+old-project: storage
+ms.assetid: CE6D2C98-C4C3-4D76-B49E-1B9344B88666
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: CDROM_SIMPLE_OPC_INFO, _CDROM_SIMPLE_OPC_INFO, PCDROM_SIMPLE_OPC_INFO structure pointer [Storage Devices], ntddcdrm/CDROM_SIMPLE_OPC_INFO, *PCDROM_SIMPLE_OPC_INFO, storage.cdrom_simple_opc_info, PCDROM_SIMPLE_OPC_INFO, ntddcdrm/PCDROM_SIMPLE_OPC_INFO, CDROM_SIMPLE_OPC_INFO structure [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddcdrm.h
+req.include-header: Ntddcdrm.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddcdrm.h
+apiname:
+-	CDROM_SIMPLE_OPC_INFO
+product: Windows
+targetos: Windows
+req.typenames: CDROM_SIMPLE_OPC_INFO, *PCDROM_SIMPLE_OPC_INFO
 ---
 
 # _CDROM_SIMPLE_OPC_INFO structure

@@ -1,42 +1,47 @@
 ---
-UID : NC:ucxusbdevice.EVT_UCX_USBDEVICE_DISABLE
-title : EVT_UCX_USBDEVICE_DISABLE
-author : windows-driver-content
-description : The client driver's implementation that UCX calls to release controller resources associated with the device and its default endpoint.
-old-location : buses\evt_ucx_usbdevice_disable.htm
-old-project : usbref
-ms.assetid : 85aa1d5e-e660-4fd7-a58d-8d32bbd966f2
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : buses.evt_ucx_usbdevice_disable, EvtUcxUsbDeviceDisable callback function [Buses], EvtUcxUsbDeviceDisable, EVT_UCX_USBDEVICE_DISABLE, EVT_UCX_USBDEVICE_DISABLE, ucxusbdevice/EvtUcxUsbDeviceDisable, PEVT_UCX_USBDEVICE_DISABLE callback function pointer [Buses], PEVT_UCX_USBDEVICE_DISABLE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ucxusbdevice.h
-req.include-header : Ucxclass.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : DISPATCH_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSTREAM_INFO, STREAM_INFO"
-req.product : Windows 10 or later.
+UID: NC:ucxusbdevice.EVT_UCX_USBDEVICE_DISABLE
+title: EVT_UCX_USBDEVICE_DISABLE
+author: windows-driver-content
+description: The client driver's implementation that UCX calls to release controller resources associated with the device and its default endpoint.
+old-location: buses\evt_ucx_usbdevice_disable.htm
+old-project: usbref
+ms.assetid: 85aa1d5e-e660-4fd7-a58d-8d32bbd966f2
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: buses.evt_ucx_usbdevice_disable, EvtUcxUsbDeviceDisable callback function [Buses], EvtUcxUsbDeviceDisable, EVT_UCX_USBDEVICE_DISABLE, EVT_UCX_USBDEVICE_DISABLE, ucxusbdevice/EvtUcxUsbDeviceDisable, PEVT_UCX_USBDEVICE_DISABLE callback function pointer [Buses], PEVT_UCX_USBDEVICE_DISABLE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ucxusbdevice.h
+req.include-header: Ucxclass.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: DISPATCH_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	ucxusbdevice.h
+apiname:
+-	PEVT_UCX_USBDEVICE_DISABLE
+product: Windows
+targetos: Windows
+req.typenames: "*PSTREAM_INFO, STREAM_INFO"
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NS:winbio_ioctl._WINBIO_SENSOR_ATTRIBUTES
-title : "_WINBIO_SENSOR_ATTRIBUTES"
-author : windows-driver-content
-description : The IOCTL_BIOMETRIC_GET_ATTRIBUTES structure returns the WINBIO_SENSOR_ATTRIBUTES structure as output.
-old-location : biometric\winbio_sensor_attributes.htm
-old-project : biometric
-ms.assetid : edfd5b49-f658-46c7-a3f3-221afb35abb7
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : PWINBIO_SENSOR_ATTRIBUTES, WINBIO_SENSOR_ATTRIBUTES structure [Biometric Devices], winbio_ioctl/PWINBIO_SENSOR_ATTRIBUTES, PWINBIO_SENSOR_ATTRIBUTES structure pointer [Biometric Devices], *PWINBIO_SENSOR_ATTRIBUTES, biometric_ref_958b511b-a855-4897-87d8-f0d7bb4970ce.xml, WINBIO_SENSOR_ATTRIBUTES, winbio_ioctl/WINBIO_SENSOR_ATTRIBUTES, biometric.winbio_sensor_attributes, _WINBIO_SENSOR_ATTRIBUTES
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : winbio_ioctl.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WINBIO_SENSOR_ATTRIBUTES, *PWINBIO_SENSOR_ATTRIBUTES
-req.product : Windows 10 or later.
+UID: NS:winbio_ioctl._WINBIO_SENSOR_ATTRIBUTES
+title: "_WINBIO_SENSOR_ATTRIBUTES"
+author: windows-driver-content
+description: The IOCTL_BIOMETRIC_GET_ATTRIBUTES structure returns the WINBIO_SENSOR_ATTRIBUTES structure as output.
+old-location: biometric\winbio_sensor_attributes.htm
+old-project: biometric
+ms.assetid: edfd5b49-f658-46c7-a3f3-221afb35abb7
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: PWINBIO_SENSOR_ATTRIBUTES, WINBIO_SENSOR_ATTRIBUTES structure [Biometric Devices], winbio_ioctl/PWINBIO_SENSOR_ATTRIBUTES, PWINBIO_SENSOR_ATTRIBUTES structure pointer [Biometric Devices], *PWINBIO_SENSOR_ATTRIBUTES, biometric_ref_958b511b-a855-4897-87d8-f0d7bb4970ce.xml, WINBIO_SENSOR_ATTRIBUTES, winbio_ioctl/WINBIO_SENSOR_ATTRIBUTES, biometric.winbio_sensor_attributes, _WINBIO_SENSOR_ATTRIBUTES
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: winbio_ioctl.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	winbio_ioctl.h
+apiname:
+-	WINBIO_SENSOR_ATTRIBUTES
+product: Windows
+targetos: Windows
+req.typenames: WINBIO_SENSOR_ATTRIBUTES, *PWINBIO_SENSOR_ATTRIBUTES
+req.product: Windows 10 or later.
 ---
 
 # _WINBIO_SENSOR_ATTRIBUTES structure

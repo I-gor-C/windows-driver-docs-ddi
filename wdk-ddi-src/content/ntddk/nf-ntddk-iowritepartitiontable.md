@@ -1,41 +1,46 @@
 ---
-UID : NF:ntddk.IoWritePartitionTable
-title : IoWritePartitionTable function
-author : windows-driver-content
-description : The IoWritePartitionTable routine is obsolete and is provided only to support existing drivers.
-old-location : storage\iowritepartitiontable.htm
-old-project : storage
-ms.assetid : 406508b2-7509-4d2b-ac22-63644eedcec0
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : IoWritePartitionTable routine [Storage Devices], IoWritePartitionTable, storage.iowritepartitiontable, rtns-disk_9358ac66-e3ba-43c0-856f-0f8b4c0ee832.xml, ntddk/IoWritePartitionTable
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.IoWritePartitionTable
+title: IoWritePartitionTable function
+author: windows-driver-content
+description: The IoWritePartitionTable routine is obsolete and is provided only to support existing drivers.
+old-location: storage\iowritepartitiontable.htm
+old-project: storage
+ms.assetid: 406508b2-7509-4d2b-ac22-63644eedcec0
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: IoWritePartitionTable routine [Storage Devices], IoWritePartitionTable, storage.iowritepartitiontable, rtns-disk_9358ac66-e3ba-43c0-856f-0f8b4c0ee832.xml, ntddk/IoWritePartitionTable
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoWritePartitionTable
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

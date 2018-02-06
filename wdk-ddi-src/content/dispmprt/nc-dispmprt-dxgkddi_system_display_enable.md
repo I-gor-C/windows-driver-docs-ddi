@@ -1,41 +1,46 @@
 ---
-UID : NC:dispmprt.DXGKDDI_SYSTEM_DISPLAY_ENABLE
-title : DXGKDDI_SYSTEM_DISPLAY_ENABLE
-author : windows-driver-content
-description : Called by the operating system to request the display miniport driver to reset the current display device to a specified state.
-old-location : display\dxgkddisystemdisplayenable.htm
-old-project : display
-ms.assetid : D938F7F4-E1FA-4C63-A31D-5ED160276565
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkddisystemdisplayenable, DxgkDdiSystemDisplayEnable callback function [Display Devices], DxgkDdiSystemDisplayEnable, DXGKDDI_SYSTEM_DISPLAY_ENABLE, DXGKDDI_SYSTEM_DISPLAY_ENABLE, dispmprt/DxgkDdiSystemDisplayEnable
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : dispmprt.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Any level (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
+UID: NC:dispmprt.DXGKDDI_SYSTEM_DISPLAY_ENABLE
+title: DXGKDDI_SYSTEM_DISPLAY_ENABLE
+author: windows-driver-content
+description: Called by the operating system to request the display miniport driver to reset the current display device to a specified state.
+old-location: display\dxgkddisystemdisplayenable.htm
+old-project: display
+ms.assetid: D938F7F4-E1FA-4C63-A31D-5ED160276565
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkddisystemdisplayenable, DxgkDdiSystemDisplayEnable callback function [Display Devices], DxgkDdiSystemDisplayEnable, DXGKDDI_SYSTEM_DISPLAY_ENABLE, DXGKDDI_SYSTEM_DISPLAY_ENABLE, dispmprt/DxgkDdiSystemDisplayEnable
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: dispmprt.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Any level (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	dispmprt.h
+apiname:
+-	DxgkDdiSystemDisplayEnable
+product: Windows
+targetos: Windows
+req.typenames: SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ---
 
 

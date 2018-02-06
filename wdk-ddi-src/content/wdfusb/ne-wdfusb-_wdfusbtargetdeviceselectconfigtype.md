@@ -1,42 +1,47 @@
 ---
-UID : NE:wdfusb._WdfUsbTargetDeviceSelectConfigType
-title : "_WdfUsbTargetDeviceSelectConfigType"
-author : windows-driver-content
-description : The WdfUsbTargetDeviceSelectConfigType enumeration defines types of configuration operations for USB devices.
-old-location : wdf\wdfusbtargetdeviceselectconfigtype.htm
-old-project : wdf
-ms.assetid : d3637f5e-d4c1-430c-8511-8aac18fceee2
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WdfUsbTargetDeviceSelectConfigTypeMultiInterface, wdfusb/WdfUsbTargetDeviceSelectConfigTypeDeconfig, WdfUsbTargetDeviceSelectConfigTypeSingleInterface, WdfUsbTargetDeviceSelectConfigTypeInterfacesPairs, WdfUsbTargetDeviceSelectConfigTypeUrb, kmdf.wdfusbtargetdeviceselectconfigtype, WdfUsbTargetDeviceSelectConfigType enumeration, WdfUsbTargetDeviceSelectConfigTypeInterfacesDescriptor, wdfusb/WdfUsbTargetDeviceSelectConfigTypeInvalid, DFUsbRef_e4ab4d2c-dbca-4d6e-a690-4b362331e53e.xml, WdfUsbTargetDeviceSelectConfigType, WdfUsbTargetDeviceSelectConfigTypeInvalid, wdfusb/WdfUsbTargetDeviceSelectConfigTypeInterfacesPairs, wdf.wdfusbtargetdeviceselectconfigtype, WdfUsbTargetDeviceSelectConfigTypeDeconfig, wdfusb/WdfUsbTargetDeviceSelectConfigType, wdfusb/WdfUsbTargetDeviceSelectConfigTypeSingleInterface, _WdfUsbTargetDeviceSelectConfigType, wdfusb/WdfUsbTargetDeviceSelectConfigTypeUrb, wdfusb/WdfUsbTargetDeviceSelectConfigTypeMultiInterface, wdfusb/WdfUsbTargetDeviceSelectConfigTypeInterfacesDescriptor
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : wdfusb.h
-req.include-header : Wdfusb.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL  (See Remarks section.)"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WdfUsbTargetDeviceSelectConfigType
-req.product : Windows 10 or later.
+UID: NE:wdfusb._WdfUsbTargetDeviceSelectConfigType
+title: "_WdfUsbTargetDeviceSelectConfigType"
+author: windows-driver-content
+description: The WdfUsbTargetDeviceSelectConfigType enumeration defines types of configuration operations for USB devices.
+old-location: wdf\wdfusbtargetdeviceselectconfigtype.htm
+old-project: wdf
+ms.assetid: d3637f5e-d4c1-430c-8511-8aac18fceee2
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WdfUsbTargetDeviceSelectConfigTypeMultiInterface, wdfusb/WdfUsbTargetDeviceSelectConfigTypeDeconfig, WdfUsbTargetDeviceSelectConfigTypeSingleInterface, WdfUsbTargetDeviceSelectConfigTypeInterfacesPairs, WdfUsbTargetDeviceSelectConfigTypeUrb, kmdf.wdfusbtargetdeviceselectconfigtype, WdfUsbTargetDeviceSelectConfigType enumeration, WdfUsbTargetDeviceSelectConfigTypeInterfacesDescriptor, wdfusb/WdfUsbTargetDeviceSelectConfigTypeInvalid, DFUsbRef_e4ab4d2c-dbca-4d6e-a690-4b362331e53e.xml, WdfUsbTargetDeviceSelectConfigType, WdfUsbTargetDeviceSelectConfigTypeInvalid, wdfusb/WdfUsbTargetDeviceSelectConfigTypeInterfacesPairs, wdf.wdfusbtargetdeviceselectconfigtype, WdfUsbTargetDeviceSelectConfigTypeDeconfig, wdfusb/WdfUsbTargetDeviceSelectConfigType, wdfusb/WdfUsbTargetDeviceSelectConfigTypeSingleInterface, _WdfUsbTargetDeviceSelectConfigType, wdfusb/WdfUsbTargetDeviceSelectConfigTypeUrb, wdfusb/WdfUsbTargetDeviceSelectConfigTypeMultiInterface, wdfusb/WdfUsbTargetDeviceSelectConfigTypeInterfacesDescriptor
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: wdfusb.h
+req.include-header: Wdfusb.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL  (See Remarks section.)"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfusb.h
+apiname:
+-	WdfUsbTargetDeviceSelectConfigType
+product: Windows
+targetos: Windows
+req.typenames: WdfUsbTargetDeviceSelectConfigType
+req.product: Windows 10 or later.
 ---
 
 # _WdfUsbTargetDeviceSelectConfigType Enumeration
@@ -60,46 +65,46 @@ typedef enum _WdfUsbTargetDeviceSelectConfigType {
 ## Constants
 
 <table>
-
-<tr>
-<td>WdfUsbTargetDeviceSelectConfigTypeDeconfig</td>
-<td>Deconfigure the device. This value applies to KMDF only.</td>
-</tr>
-
-<tr>
-<td>WdfUsbTargetDeviceSelectConfigTypeInterfacesDescriptor</td>
-<td>Configure the device by using configuration parameters that are contained in USB descriptors. This value applies to KMDF only.</td>
-</tr>
-
-<tr>
-<td>WdfUsbTargetDeviceSelectConfigTypeInterfacesPairs</td>
-<td>Configure the device to use multiple interfaces, possibly with alternate settings. Alternate settings are described in the USB specification.  This value applies to KMDF and UMDF.</td>
-</tr>
-
-<tr>
-<td>WdfUsbTargetDeviceSelectConfigTypeInvalid</td>
-<td>For internal use only.</td>
-</tr>
-
-<tr>
-<td>WdfUsbTargetDeviceSelectConfigTypeMultiInterface</td>
-<td>Configure the device to use multiple interfaces. This value applies to KMDF and UMDF.</td>
-</tr>
-
-<tr>
-<td>WdfUsbTargetDeviceSelectConfigTypeSingleInterface</td>
-<td>Configure the device to use a single, specified interface. This value applies to KMDF and UMDF.</td>
-</tr>
-
-<tr>
-<td>WdfUsbTargetDeviceSelectConfigTypeUrb</td>
-<td>Configure the device by using configuration parameters that are contained in a driver-supplied URB structure. This value applies to KMDF only.</td>
-</tr>
+            
+                <tr>
+                    <td>WdfUsbTargetDeviceSelectConfigTypeDeconfig</td>
+                    <td>Deconfigure the device. This value applies to KMDF only.</td>
+                </tr>
+            
+                <tr>
+                    <td>WdfUsbTargetDeviceSelectConfigTypeInterfacesDescriptor</td>
+                    <td>Configure the device by using configuration parameters that are contained in USB descriptors. This value applies to KMDF only.</td>
+                </tr>
+            
+                <tr>
+                    <td>WdfUsbTargetDeviceSelectConfigTypeInterfacesPairs</td>
+                    <td>Configure the device to use multiple interfaces, possibly with alternate settings. Alternate settings are described in the USB specification.  This value applies to KMDF and UMDF.</td>
+                </tr>
+            
+                <tr>
+                    <td>WdfUsbTargetDeviceSelectConfigTypeInvalid</td>
+                    <td>For internal use only.</td>
+                </tr>
+            
+                <tr>
+                    <td>WdfUsbTargetDeviceSelectConfigTypeMultiInterface</td>
+                    <td>Configure the device to use multiple interfaces. This value applies to KMDF and UMDF.</td>
+                </tr>
+            
+                <tr>
+                    <td>WdfUsbTargetDeviceSelectConfigTypeSingleInterface</td>
+                    <td>Configure the device to use a single, specified interface. This value applies to KMDF and UMDF.</td>
+                </tr>
+            
+                <tr>
+                    <td>WdfUsbTargetDeviceSelectConfigTypeUrb</td>
+                    <td>Configure the device by using configuration parameters that are contained in a driver-supplied URB structure. This value applies to KMDF only.</td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-The <b>WdfUsbTargetDeviceSelectConfigType</b> enumeration is used to specify the <b>Type</b> member of the <a href="..\wdfusb\ns-wdfusb-_wdf_usb_device_select_config_params.md">WDF_USB_DEVICE_SELECT_CONFIG_PARAMS</a> structure. That structure is used as input to the <a href="..\wdfusb\nf-wdfusb-wdfusbtargetdeviceselectconfig.md">WdfUsbTargetDeviceSelectConfig</a> method.
+        The <b>WdfUsbTargetDeviceSelectConfigType</b> enumeration is used to specify the <b>Type</b> member of the <a href="..\wdfusb\ns-wdfusb-_wdf_usb_device_select_config_params.md">WDF_USB_DEVICE_SELECT_CONFIG_PARAMS</a> structure. That structure is used as input to the <a href="..\wdfusb\nf-wdfusb-wdfusbtargetdeviceselectconfig.md">WdfUsbTargetDeviceSelectConfig</a> method.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -108,9 +113,9 @@ The <b>WdfUsbTargetDeviceSelectConfigType</b> enumeration is used to specify the
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfusb.h (include Wdfusb.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\wdfusb\nf-wdfusb-wdfusbtargetdeviceselectconfig.md">WdfUsbTargetDeviceSelectConfig</a>
+        <a href="..\wdfusb\nf-wdfusb-wdfusbtargetdeviceselectconfig.md">WdfUsbTargetDeviceSelectConfig</a>
 
 <a href="..\usb\ns-usb-_urb.md">URB</a>
 

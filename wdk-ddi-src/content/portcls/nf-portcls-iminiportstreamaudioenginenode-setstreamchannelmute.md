@@ -1,41 +1,46 @@
 ---
-UID : NF:portcls.IMiniportStreamAudioEngineNode.SetStreamChannelMute
-title : IMiniportStreamAudioEngineNode::SetStreamChannelMute method
-author : windows-driver-content
-description : Sets the state of the Mute node in the path of the audio stream.
-old-location : audio\iminiportstreamaudioenginenode_setstreamchannelmute.htm
-old-project : audio
-ms.assetid : AAD0101E-13FB-48A2-8834-799472B93931
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : audio.iminiportstreamaudioenginenode_setstreamchannelmute, IMiniportStreamAudioEngineNode, SetStreamChannelMute, SetStreamChannelMute method [Audio Devices], IMiniportStreamAudioEngineNode interface, IMiniportStreamAudioEngineNode::SetStreamChannelMute, IMiniportStreamAudioEngineNode interface [Audio Devices], SetStreamChannelMute method, portcls/IMiniportStreamAudioEngineNode::SetStreamChannelMute, SetStreamChannelMute method [Audio Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : portcls.h
-req.include-header : 
-req.target-type : Universal
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : portcls.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.IMiniportStreamAudioEngineNode.SetStreamChannelMute
+title: IMiniportStreamAudioEngineNode::SetStreamChannelMute method
+author: windows-driver-content
+description: Sets the state of the Mute node in the path of the audio stream.
+old-location: audio\iminiportstreamaudioenginenode_setstreamchannelmute.htm
+old-project: audio
+ms.assetid: AAD0101E-13FB-48A2-8834-799472B93931
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: audio.iminiportstreamaudioenginenode_setstreamchannelmute, IMiniportStreamAudioEngineNode, SetStreamChannelMute, SetStreamChannelMute method [Audio Devices], IMiniportStreamAudioEngineNode interface, IMiniportStreamAudioEngineNode::SetStreamChannelMute, IMiniportStreamAudioEngineNode interface [Audio Devices], SetStreamChannelMute method, portcls/IMiniportStreamAudioEngineNode::SetStreamChannelMute, SetStreamChannelMute method [Audio Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: portcls.h
+req.include-header: 
+req.target-type: Universal
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: portcls.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Portcls.h
+apiname:
+-	IMiniportStreamAudioEngineNode.SetStreamChannelMute
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

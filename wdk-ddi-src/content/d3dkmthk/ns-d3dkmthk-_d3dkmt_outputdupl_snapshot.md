@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmthk._D3DKMT_OUTPUTDUPL_SNAPSHOT
-title : "_D3DKMT_OUTPUTDUPL_SNAPSHOT"
-author : windows-driver-content
-description : Provides information on the current processes in which output duplication is occurring.
-old-location : display\d3dkmt_outputdupl_snapshot.htm
-old-project : display
-ms.assetid : bec6a398-34e8-4c03-ac15-c3f00645eac7
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DKMT_OUTPUTDUPL_SNAPSHOT, D3DKMT_OUTPUTDUPL_SNAPSHOT structure [Display Devices], _D3DKMT_OUTPUTDUPL_SNAPSHOT, d3dkmthk/D3DKMT_OUTPUTDUPL_SNAPSHOT, display.d3dkmt_outputdupl_snapshot
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_OUTPUTDUPL_SNAPSHOT
+UID: NS:d3dkmthk._D3DKMT_OUTPUTDUPL_SNAPSHOT
+title: "_D3DKMT_OUTPUTDUPL_SNAPSHOT"
+author: windows-driver-content
+description: Provides information on the current processes in which output duplication is occurring.
+old-location: display\d3dkmt_outputdupl_snapshot.htm
+old-project: display
+ms.assetid: bec6a398-34e8-4c03-ac15-c3f00645eac7
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DKMT_OUTPUTDUPL_SNAPSHOT, D3DKMT_OUTPUTDUPL_SNAPSHOT structure [Display Devices], _D3DKMT_OUTPUTDUPL_SNAPSHOT, d3dkmthk/D3DKMT_OUTPUTDUPL_SNAPSHOT, display.d3dkmt_outputdupl_snapshot
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	D3dkmthk.h
+apiname:
+-	D3DKMT_OUTPUTDUPL_SNAPSHOT
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_OUTPUTDUPL_SNAPSHOT
 ---
 
 # _D3DKMT_OUTPUTDUPL_SNAPSHOT structure

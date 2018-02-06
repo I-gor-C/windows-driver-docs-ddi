@@ -1,42 +1,52 @@
 ---
-UID : NF:wdm.InterlockedCompareExchange
-title : InterlockedCompareExchange function
-author : windows-driver-content
-description : The InterlockedCompareExchange routine performs an atomic operation that compares the input value pointed to by Destination with the value of Comparand.
-old-location : kernel\interlockedcompareexchange.htm
-old-project : kernel
-ms.assetid : 925a5481-d626-4824-8cbe-4fc2a0a6ad92
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : k102_d40d8288-4c0d-43ed-af9f-3f9afabe1455.xml, InterlockedCompareExchange routine [Kernel-Mode Driver Architecture], wdm/InterlockedCompareExchange, kernel.interlockedcompareexchange, InterlockedCompareExchange
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : OneCoreUAP.lib on Windows 10
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.InterlockedCompareExchange
+title: InterlockedCompareExchange function
+author: windows-driver-content
+description: The InterlockedCompareExchange routine performs an atomic operation that compares the input value pointed to by Destination with the value of Comparand.
+old-location: kernel\interlockedcompareexchange.htm
+old-project: kernel
+ms.assetid: 925a5481-d626-4824-8cbe-4fc2a0a6ad92
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: k102_d40d8288-4c0d-43ed-af9f-3f9afabe1455.xml, InterlockedCompareExchange routine [Kernel-Mode Driver Architecture], wdm/InterlockedCompareExchange, kernel.interlockedcompareexchange, InterlockedCompareExchange
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: OneCoreUAP.lib on Windows 10
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	OneCoreUAP.lib
+-	OneCoreUAP.dll
+-	API-MS-Win-Core-Interlocked-l1-1-0.dll
+-	API-MS-Win-Core-Interlocked-l1-2-0.dll
+-	KernelBase.dll
+-	MinKernelBase.dll
+apiname:
+-	InterlockedCompareExchange
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dhal.LPD3DHAL_CONTEXTCREATECB
-title : LPD3DHAL_CONTEXTCREATECB
-author : windows-driver-content
-description : The D3dContextCreate function creates a context.
-old-location : display\d3dcontextcreate.htm
-old-project : display
-ms.assetid : c960c3f4-7565-4163-b8c2-a13643110c8c
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.d3dcontextcreate, D3dContextCreate callback function [Display Devices], D3dContextCreate, LPD3DHAL_CONTEXTCREATECB, LPD3DHAL_CONTEXTCREATECB, d3dhal/D3dContextCreate, d3dfncs_d126e9ed-3783-4cc1-8fd6-34592b95bec7.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dhal.h
-req.include-header : D3dhal.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DTRANSFORMCAPS, *LPD3DTRANSFORMCAPS
+UID: NC:d3dhal.LPD3DHAL_CONTEXTCREATECB
+title: LPD3DHAL_CONTEXTCREATECB
+author: windows-driver-content
+description: The D3dContextCreate function creates a context.
+old-location: display\d3dcontextcreate.htm
+old-project: display
+ms.assetid: c960c3f4-7565-4163-b8c2-a13643110c8c
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.d3dcontextcreate, D3dContextCreate callback function [Display Devices], D3dContextCreate, LPD3DHAL_CONTEXTCREATECB, LPD3DHAL_CONTEXTCREATECB, d3dhal/D3dContextCreate, d3dfncs_d126e9ed-3783-4cc1-8fd6-34592b95bec7.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dhal.h
+req.include-header: D3dhal.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dhal.h
+apiname:
+-	D3dContextCreate
+product: Windows
+targetos: Windows
+req.typenames: D3DTRANSFORMCAPS, *LPD3DTRANSFORMCAPS
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NS:winddiui._DEVICEPROPERTYHEADER
-title : "_DEVICEPROPERTYHEADER"
-author : windows-driver-content
-description : The DEVICEPROPERTYHEADER structure is used as an input parameter to a printer interface DLL's DrvDevicePropertySheets function.
-old-location : print\devicepropertyheader.htm
-old-project : print
-ms.assetid : f1b9cd2f-fa5b-4f34-a237-06d00badf1d1
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : "*PDEVICEPROPERTYHEADER, _DEVICEPROPERTYHEADER, winddiui/DEVICEPROPERTYHEADER, print.devicepropertyheader, PDEVICEPROPERTYHEADER, print_interface-graphics_7dc4be04-e0ab-43bb-8e6d-f500cc7cf51c.xml, winddiui/PDEVICEPROPERTYHEADER, PDEVICEPROPERTYHEADER structure pointer [Print Devices], DEVICEPROPERTYHEADER structure [Print Devices], DEVICEPROPERTYHEADER"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : winddiui.h
-req.include-header : Winddiui.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDEVICEPROPERTYHEADER, DEVICEPROPERTYHEADER"
-req.product : Windows 10 or later.
+UID: NS:winddiui._DEVICEPROPERTYHEADER
+title: "_DEVICEPROPERTYHEADER"
+author: windows-driver-content
+description: The DEVICEPROPERTYHEADER structure is used as an input parameter to a printer interface DLL's DrvDevicePropertySheets function.
+old-location: print\devicepropertyheader.htm
+old-project: print
+ms.assetid: f1b9cd2f-fa5b-4f34-a237-06d00badf1d1
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: "*PDEVICEPROPERTYHEADER, _DEVICEPROPERTYHEADER, winddiui/DEVICEPROPERTYHEADER, print.devicepropertyheader, PDEVICEPROPERTYHEADER, print_interface-graphics_7dc4be04-e0ab-43bb-8e6d-f500cc7cf51c.xml, winddiui/PDEVICEPROPERTYHEADER, PDEVICEPROPERTYHEADER structure pointer [Print Devices], DEVICEPROPERTYHEADER structure [Print Devices], DEVICEPROPERTYHEADER"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: winddiui.h
+req.include-header: Winddiui.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	winddiui.h
+apiname:
+-	DEVICEPROPERTYHEADER
+product: Windows
+targetos: Windows
+req.typenames: "*PDEVICEPROPERTYHEADER, DEVICEPROPERTYHEADER"
+req.product: Windows 10 or later.
 ---
 
 # _DEVICEPROPERTYHEADER structure

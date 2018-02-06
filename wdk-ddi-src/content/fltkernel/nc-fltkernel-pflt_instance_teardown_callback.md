@@ -1,41 +1,46 @@
 ---
-UID : NC:fltkernel.PFLT_INSTANCE_TEARDOWN_CALLBACK
-title : PFLT_INSTANCE_TEARDOWN_CALLBACK
-author : windows-driver-content
-description : A minifilter driver can register two routines of type PFLT_INSTANCE_TEARDOWN_CALLBACK as the minifilter driver's InstanceTeardownStartCallback and InstanceTeardownCompleteCallback routines.
-old-location : ifsk\pflt_instance_teardown_callback.htm
-old-project : ifsk
-ms.assetid : d2f87c47-7f26-4c22-a5b8-2be8f309d1ba
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.pflt_instance_teardown_callback, PFLT_INSTANCE_TEARDOWN_CALLBACK function pointer [Installable File System Drivers], PFLT_INSTANCE_TEARDOWN_CALLBACK, fltkernel/PFLT_INSTANCE_TEARDOWN_CALLBACK, FltCallbacks_2bec09ed-3009-465c-842b-67e0cd7d734f.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NC:fltkernel.PFLT_INSTANCE_TEARDOWN_CALLBACK
+title: PFLT_INSTANCE_TEARDOWN_CALLBACK
+author: windows-driver-content
+description: A minifilter driver can register two routines of type PFLT_INSTANCE_TEARDOWN_CALLBACK as the minifilter driver's InstanceTeardownStartCallback and InstanceTeardownCompleteCallback routines.
+old-location: ifsk\pflt_instance_teardown_callback.htm
+old-project: ifsk
+ms.assetid: d2f87c47-7f26-4c22-a5b8-2be8f309d1ba
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.pflt_instance_teardown_callback, PFLT_INSTANCE_TEARDOWN_CALLBACK function pointer [Installable File System Drivers], PFLT_INSTANCE_TEARDOWN_CALLBACK, fltkernel/PFLT_INSTANCE_TEARDOWN_CALLBACK, FltCallbacks_2bec09ed-3009-465c-842b-67e0cd7d734f.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	fltkernel.h
+apiname:
+-	PFLT_INSTANCE_TEARDOWN_CALLBACK
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

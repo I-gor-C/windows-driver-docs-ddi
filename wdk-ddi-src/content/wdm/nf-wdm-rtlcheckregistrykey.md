@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.RtlCheckRegistryKey
-title : RtlCheckRegistryKey function
-author : windows-driver-content
-description : The RtlCheckRegistryKey routine checks for the existence of a given named key in the registry.
-old-location : kernel\rtlcheckregistrykey.htm
-old-project : kernel
-ms.assetid : b752a764-1f7d-4768-9fa2-c8976560f840
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : k109_d4610b64-e689-4734-aca9-4536889ae2b9.xml, RtlCheckRegistryKey routine [Kernel-Mode Driver Architecture], wdm/RtlCheckRegistryKey, RtlCheckRegistryKey, kernel.rtlcheckregistrykey
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 2000 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.RtlCheckRegistryKey
+title: RtlCheckRegistryKey function
+author: windows-driver-content
+description: The RtlCheckRegistryKey routine checks for the existence of a given named key in the registry.
+old-location: kernel\rtlcheckregistrykey.htm
+old-project: kernel
+ms.assetid: b752a764-1f7d-4768-9fa2-c8976560f840
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: k109_d4610b64-e689-4734-aca9-4536889ae2b9.xml, RtlCheckRegistryKey routine [Kernel-Mode Driver Architecture], wdm/RtlCheckRegistryKey, RtlCheckRegistryKey, kernel.rtlcheckregistrykey
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 2000 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	RtlCheckRegistryKey
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

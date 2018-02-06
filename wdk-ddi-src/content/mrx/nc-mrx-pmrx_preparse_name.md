@@ -1,41 +1,46 @@
 ---
-UID : NC:mrx.PMRX_PREPARSE_NAME
-title : PMRX_PREPARSE_NAME
-author : windows-driver-content
-description : The MRxPreparseName routine is called by RDBSS to give a network mini-redirector the opportunity to preparse a name.
-old-location : ifsk\mrxpreparsename.htm
-old-project : ifsk
-ms.assetid : b74acc12-8fc2-497f-9f65-8b1a85a03286
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.mrxpreparsename, MRxPreparseName routine [Installable File System Drivers], MRxPreparseName, PMRX_PREPARSE_NAME, PMRX_PREPARSE_NAME, mrx/MRxPreparseName, mrxref_4f7f0d54-93a0-4b61-bf62-6e7b1063415c.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : mrx.h
-req.include-header : Mrx.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SetDSMCounters_IN, *PSetDSMCounters_IN
+UID: NC:mrx.PMRX_PREPARSE_NAME
+title: PMRX_PREPARSE_NAME
+author: windows-driver-content
+description: The MRxPreparseName routine is called by RDBSS to give a network mini-redirector the opportunity to preparse a name.
+old-location: ifsk\mrxpreparsename.htm
+old-project: ifsk
+ms.assetid: b74acc12-8fc2-497f-9f65-8b1a85a03286
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.mrxpreparsename, MRxPreparseName routine [Installable File System Drivers], MRxPreparseName, PMRX_PREPARSE_NAME, PMRX_PREPARSE_NAME, mrx/MRxPreparseName, mrxref_4f7f0d54-93a0-4b61-bf62-6e7b1063415c.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: mrx.h
+req.include-header: Mrx.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	mrx.h
+apiname:
+-	MRxPreparseName
+product: Windows
+targetos: Windows
+req.typenames: SetDSMCounters_IN, *PSetDSMCounters_IN
 ---
 
 

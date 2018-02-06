@@ -1,42 +1,47 @@
 ---
-UID : NS:wwan._WWAN_DEVICE_SLOT_MAPPING_INFO
-title : "_WWAN_DEVICE_SLOT_MAPPING_INFO"
-author : windows-driver-content
-description : The WWAN_DEVICE_SLOT_MAPPING_INFO structure represents the executor-to-slot mapping relationship in the MB device.
-old-location : netvista\wwan_device_slot_mappings.htm
-old-project : netvista
-ms.assetid : 48DD867C-1235-4955-A01E-FF46C850DA31
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.wwan_device_slot_mappings, _WWAN_DEVICE_SLOT_MAPPING_INFO, WWAN_DEVICE_SLOT_MAPPING_INFO structure [Network Drivers Starting with Windows Vista], PWWAN_DEVICE_SLOT_MAPPING_INFO, wwan/PWWAN_DEVICE_SLOT_MAPPING_INFO, wwan/WWAN_DEVICE_SLOT_MAPPING_INFO, PWWAN_DEVICE_SLOT_MAPPING_INFO structure pointer [Network Drivers Starting with Windows Vista], WWAN_DEVICE_SLOT_MAPPING_INFO, *PWWAN_DEVICE_SLOT_MAPPING_INFO
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wwan.h
-req.include-header : Wwan.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10, version 1703
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WWAN_DEVICE_SLOT_MAPPING_INFO, *PWWAN_DEVICE_SLOT_MAPPING_INFO
-req.product : Windows 10 or later.
+UID: NS:wwan._WWAN_DEVICE_SLOT_MAPPING_INFO
+title: "_WWAN_DEVICE_SLOT_MAPPING_INFO"
+author: windows-driver-content
+description: The WWAN_DEVICE_SLOT_MAPPING_INFO structure represents the executor-to-slot mapping relationship in the MB device.
+old-location: netvista\wwan_device_slot_mappings.htm
+old-project: netvista
+ms.assetid: 48DD867C-1235-4955-A01E-FF46C850DA31
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.wwan_device_slot_mappings, _WWAN_DEVICE_SLOT_MAPPING_INFO, WWAN_DEVICE_SLOT_MAPPING_INFO structure [Network Drivers Starting with Windows Vista], PWWAN_DEVICE_SLOT_MAPPING_INFO, wwan/PWWAN_DEVICE_SLOT_MAPPING_INFO, wwan/WWAN_DEVICE_SLOT_MAPPING_INFO, PWWAN_DEVICE_SLOT_MAPPING_INFO structure pointer [Network Drivers Starting with Windows Vista], WWAN_DEVICE_SLOT_MAPPING_INFO, *PWWAN_DEVICE_SLOT_MAPPING_INFO
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wwan.h
+req.include-header: Wwan.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10, version 1703
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wwan.h
+apiname:
+-	WWAN_DEVICE_SLOT_MAPPING_INFO
+product: Windows
+targetos: Windows
+req.typenames: WWAN_DEVICE_SLOT_MAPPING_INFO, *PWWAN_DEVICE_SLOT_MAPPING_INFO
+req.product: Windows 10 or later.
 ---
 
 # _WWAN_DEVICE_SLOT_MAPPING_INFO structure

@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugDataSpaces4.SearchVirtual2
-title : IDebugDataSpaces4::SearchVirtual2 method
-author : windows-driver-content
-description : The SearchVirtual2 method searches the process's virtual memory for a specified pattern of bytes.
-old-location : debugger\searchvirtual2.htm
-old-project : debugger
-ms.assetid : f54c35da-d455-4700-b8b9-c4479bc95088
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugDataSpaces_62e68b69-35f7-4d69-bcf2-93b74fe0aa72.xml, IDebugDataSpaces4::SearchVirtual2, debugger.searchvirtual2, IDebugDataSpaces4, IDebugDataSpaces4 interface [Windows Debugging], SearchVirtual2 method, SearchVirtual2, SearchVirtual2 method [Windows Debugging], IDebugDataSpaces4 interface, SearchVirtual2 method [Windows Debugging], dbgeng/IDebugDataSpaces4::SearchVirtual2
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugDataSpaces4.SearchVirtual2
+title: IDebugDataSpaces4::SearchVirtual2 method
+author: windows-driver-content
+description: The SearchVirtual2 method searches the process's virtual memory for a specified pattern of bytes.
+old-location: debugger\searchvirtual2.htm
+old-project: debugger
+ms.assetid: f54c35da-d455-4700-b8b9-c4479bc95088
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugDataSpaces_62e68b69-35f7-4d69-bcf2-93b74fe0aa72.xml, IDebugDataSpaces4::SearchVirtual2, debugger.searchvirtual2, IDebugDataSpaces4, IDebugDataSpaces4 interface [Windows Debugging], SearchVirtual2 method, SearchVirtual2, SearchVirtual2 method [Windows Debugging], IDebugDataSpaces4 interface, SearchVirtual2 method [Windows Debugging], dbgeng/IDebugDataSpaces4::SearchVirtual2
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugDataSpaces4.SearchVirtual2
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

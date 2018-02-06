@@ -1,42 +1,47 @@
 ---
-UID : NF:wdbgexts.ReadIoSpace
-title : ReadIoSpace function
-author : windows-driver-content
-description : The ReadIoSpace function reads from the system I/O locations.
-old-location : debugger\readiospace.htm
-old-project : debugger
-ms.assetid : 31118f7f-fcc4-45f9-a248-a1d6f929f3a2
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : WdbgExts_Ref_e34c76a6-de5d-4347-90a7-959d5392680e.xml, wdbgexts/ReadIoSpace, ReadIoSpace, ReadIoSpace function [Windows Debugging], debugger.readiospace
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdbgexts.h
-req.include-header : Wdbgexts.h, Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXT_TDOP
-req.product : Windows 10 or later.
+UID: NF:wdbgexts.ReadIoSpace
+title: ReadIoSpace function
+author: windows-driver-content
+description: The ReadIoSpace function reads from the system I/O locations.
+old-location: debugger\readiospace.htm
+old-project: debugger
+ms.assetid: 31118f7f-fcc4-45f9-a248-a1d6f929f3a2
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: WdbgExts_Ref_e34c76a6-de5d-4347-90a7-959d5392680e.xml, wdbgexts/ReadIoSpace, ReadIoSpace, ReadIoSpace function [Windows Debugging], debugger.readiospace
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdbgexts.h
+req.include-header: Wdbgexts.h, Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdbgexts.h
+apiname:
+-	ReadIoSpace
+product: Windows
+targetos: Windows
+req.typenames: EXT_TDOP
+req.product: Windows 10 or later.
 ---
 
 

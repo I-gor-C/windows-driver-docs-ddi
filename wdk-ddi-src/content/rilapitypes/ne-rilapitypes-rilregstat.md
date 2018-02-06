@@ -1,42 +1,47 @@
 ---
-UID : NE:rilapitypes.RILREGSTAT
-title : RILREGSTAT
-author : windows-driver-content
-description : This enumeration describes the RILREGSTAT.
-old-location : netvista\rilregstat.htm
-old-project : netvista
-ms.assetid : 53c72dbb-cf8d-4683-a440-985669265a52
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : RILREGSTAT enumeration [Network Drivers Starting with Windows Vista], netvista.rilregstat, rilapitypes/RILREGSTAT, RIL_REGSTAT_HOME, rilapitypes/RIL_REGSTAT_DENIED, RIL_REGSTAT_ROAMING, RILREGSTAT, rilapitypes/RIL_REGSTAT_UNKNOWN, rilapitypes/RIL_REGSTAT_UNREGISTERED, RIL_REGSTAT_UNREGISTERED, rilapitypes/RIL_REGSTAT_ROAMING, rilapitypes/RIL_REGSTAT_HOME, RIL_REGSTAT_ROAMING_INTL, rilapitypes/RIL_REGSTAT_ROAMING_INTL, rilapitypes/RIL_REGSTAT_ATTEMPTING, RIL_REGSTAT_ATTEMPTING, RIL_REGSTAT_DENIED, RIL_REGSTAT_UNKNOWN
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : rilapitypes.h
-req.include-header : Rilapitypes.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RILREGSTAT
-req.product : Windows 10 or later.
+UID: NE:rilapitypes.RILREGSTAT
+title: RILREGSTAT
+author: windows-driver-content
+description: This enumeration describes the RILREGSTAT.
+old-location: netvista\rilregstat.htm
+old-project: netvista
+ms.assetid: 53c72dbb-cf8d-4683-a440-985669265a52
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: RILREGSTAT enumeration [Network Drivers Starting with Windows Vista], netvista.rilregstat, rilapitypes/RILREGSTAT, RIL_REGSTAT_HOME, rilapitypes/RIL_REGSTAT_DENIED, RIL_REGSTAT_ROAMING, RILREGSTAT, rilapitypes/RIL_REGSTAT_UNKNOWN, rilapitypes/RIL_REGSTAT_UNREGISTERED, RIL_REGSTAT_UNREGISTERED, rilapitypes/RIL_REGSTAT_ROAMING, rilapitypes/RIL_REGSTAT_HOME, RIL_REGSTAT_ROAMING_INTL, rilapitypes/RIL_REGSTAT_ROAMING_INTL, rilapitypes/RIL_REGSTAT_ATTEMPTING, RIL_REGSTAT_ATTEMPTING, RIL_REGSTAT_DENIED, RIL_REGSTAT_UNKNOWN
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: rilapitypes.h
+req.include-header: Rilapitypes.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	rilapitypes.h
+apiname:
+-	RILREGSTAT
+product: Windows
+targetos: Windows
+req.typenames: RILREGSTAT
+req.product: Windows 10 or later.
 ---
 
 # RILREGSTAT Enumeration
@@ -59,46 +64,46 @@ enum RILREGSTAT  {
 ## Constants
 
 <table>
-
-<tr>
-<td>RIL_REGSTAT_ATTEMPTING</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_REGSTAT_DENIED</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_REGSTAT_HOME</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_REGSTAT_MAX</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_REGSTAT_ROAMING</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_REGSTAT_ROAMING_DOMESTIC</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_REGSTAT_UNKNOWN</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_REGSTAT_UNREGISTERED</td>
-<td></td>
-</tr>
+            
+                <tr>
+                    <td>RIL_REGSTAT_ATTEMPTING</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_REGSTAT_DENIED</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_REGSTAT_HOME</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_REGSTAT_MAX</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_REGSTAT_ROAMING</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_REGSTAT_ROAMING_DOMESTIC</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_REGSTAT_UNKNOWN</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_REGSTAT_UNREGISTERED</td>
+                    <td></td>
+                </tr>
 </table>
 
 
@@ -107,9 +112,9 @@ enum RILREGSTAT  {
 | ---- |:---- |
 | **Header** | rilapitypes.h (include Rilapitypes.h) |
 
-## See Also
+    ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn946511">Cellular COM structures</a>
+        <a href="https://msdn.microsoft.com/library/windows/hardware/dn946511">Cellular COM structures</a>
 
  
 

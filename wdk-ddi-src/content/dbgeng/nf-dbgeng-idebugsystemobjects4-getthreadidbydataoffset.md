@@ -1,41 +1,49 @@
 ---
-UID : NF:dbgeng.IDebugSystemObjects4.GetThreadIdByDataOffset
-title : IDebugSystemObjects4::GetThreadIdByDataOffset method
-author : windows-driver-content
-description : The GetThreadIdByDataOffset method returns the engine thread ID for the specified thread. The thread is specified by its system data structure.
-old-location : debugger\getthreadidbydataoffset.htm
-old-project : debugger
-ms.assetid : f559e0da-ca5c-4fea-aa17-257abfd45f96
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : dbgeng/IDebugSystemObjects4::GetThreadIdByDataOffset, IDebugSystemObjects4::GetThreadIdByDataOffset, IDebugSystemObjects2::GetThreadIdByDataOffset, GetThreadIdByDataOffset, GetThreadIdByDataOffset method [Windows Debugging], IDebugSystemObjects interface, IDebugSystemObjects::GetThreadIdByDataOffset, IDebugSystemObjects2 interface [Windows Debugging], GetThreadIdByDataOffset method, GetThreadIdByDataOffset method [Windows Debugging], IDebugSystemObjects4 interface, dbgeng/IDebugSystemObjects::GetThreadIdByDataOffset, GetThreadIdByDataOffset method [Windows Debugging], IDebugSystemObjects2 interface, IDebugSystemObjects4, debugger.getthreadidbydataoffset, IDebugSystemObjects interface [Windows Debugging], GetThreadIdByDataOffset method, IDebugSystemObjects3 interface [Windows Debugging], GetThreadIdByDataOffset method, IDebugSystemObjects4 interface [Windows Debugging], GetThreadIdByDataOffset method, dbgeng/IDebugSystemObjects3::GetThreadIdByDataOffset, IDebugSystemObjects_bb1b0f35-219b-4883-8df7-d90a96441720.xml, IDebugSystemObjects3::GetThreadIdByDataOffset, dbgeng/IDebugSystemObjects2::GetThreadIdByDataOffset, GetThreadIdByDataOffset method [Windows Debugging], GetThreadIdByDataOffset method [Windows Debugging], IDebugSystemObjects3 interface
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSystemObjects4.GetThreadIdByDataOffset
+title: IDebugSystemObjects4::GetThreadIdByDataOffset method
+author: windows-driver-content
+description: The GetThreadIdByDataOffset method returns the engine thread ID for the specified thread. The thread is specified by its system data structure.
+old-location: debugger\getthreadidbydataoffset.htm
+old-project: debugger
+ms.assetid: f559e0da-ca5c-4fea-aa17-257abfd45f96
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: dbgeng/IDebugSystemObjects4::GetThreadIdByDataOffset, IDebugSystemObjects4::GetThreadIdByDataOffset, IDebugSystemObjects2::GetThreadIdByDataOffset, GetThreadIdByDataOffset, GetThreadIdByDataOffset method [Windows Debugging], IDebugSystemObjects interface, IDebugSystemObjects::GetThreadIdByDataOffset, IDebugSystemObjects2 interface [Windows Debugging], GetThreadIdByDataOffset method, GetThreadIdByDataOffset method [Windows Debugging], IDebugSystemObjects4 interface, dbgeng/IDebugSystemObjects::GetThreadIdByDataOffset, GetThreadIdByDataOffset method [Windows Debugging], IDebugSystemObjects2 interface, IDebugSystemObjects4, debugger.getthreadidbydataoffset, IDebugSystemObjects interface [Windows Debugging], GetThreadIdByDataOffset method, IDebugSystemObjects3 interface [Windows Debugging], GetThreadIdByDataOffset method, IDebugSystemObjects4 interface [Windows Debugging], GetThreadIdByDataOffset method, dbgeng/IDebugSystemObjects3::GetThreadIdByDataOffset, IDebugSystemObjects_bb1b0f35-219b-4883-8df7-d90a96441720.xml, IDebugSystemObjects3::GetThreadIdByDataOffset, dbgeng/IDebugSystemObjects2::GetThreadIdByDataOffset, GetThreadIdByDataOffset method [Windows Debugging], GetThreadIdByDataOffset method [Windows Debugging], IDebugSystemObjects3 interface
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugSystemObjects.GetThreadIdByDataOffset
+-	IDebugSystemObjects2.GetThreadIdByDataOffset
+-	IDebugSystemObjects3.GetThreadIdByDataOffset
+-	IDebugSystemObjects4.GetThreadIdByDataOffset
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

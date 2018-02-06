@@ -1,41 +1,46 @@
 ---
-UID : NF:ntddk.ExRaiseDatatypeMisalignment
-title : ExRaiseDatatypeMisalignment function
-author : windows-driver-content
-description : The ExRaiseDatatypeMisalignment routine can be used with structured exception handling to throw a driver-determined exception for a misaligned data type that occurs when a driver processes I/O requests.
-old-location : kernel\exraisedatatypemisalignment.htm
-old-project : kernel
-ms.assetid : 5c8bfd13-31e0-461f-93d2-53ce15c53cdb
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ExRaiseDatatypeMisalignment routine [Kernel-Mode Driver Architecture], kernel.exraisedatatypemisalignment, k102_ff274a50-ae59-4591-9484-6bc068601ee8.xml, ntddk/ExRaiseDatatypeMisalignment, ExRaiseDatatypeMisalignment
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : IrqlExPassive, PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.ExRaiseDatatypeMisalignment
+title: ExRaiseDatatypeMisalignment function
+author: windows-driver-content
+description: The ExRaiseDatatypeMisalignment routine can be used with structured exception handling to throw a driver-determined exception for a misaligned data type that occurs when a driver processes I/O requests.
+old-location: kernel\exraisedatatypemisalignment.htm
+old-project: kernel
+ms.assetid: 5c8bfd13-31e0-461f-93d2-53ce15c53cdb
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ExRaiseDatatypeMisalignment routine [Kernel-Mode Driver Architecture], kernel.exraisedatatypemisalignment, k102_ff274a50-ae59-4591-9484-6bc068601ee8.xml, ntddk/ExRaiseDatatypeMisalignment, ExRaiseDatatypeMisalignment
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: IrqlExPassive, PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ExRaiseDatatypeMisalignment
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

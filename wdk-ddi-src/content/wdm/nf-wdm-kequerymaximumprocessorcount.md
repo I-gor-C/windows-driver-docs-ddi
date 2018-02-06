@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.KeQueryMaximumProcessorCount
-title : KeQueryMaximumProcessorCount function
-author : windows-driver-content
-description : The KeQueryMaximumProcessorCount routine returns the maximum number of processors.
-old-location : kernel\kequerymaximumprocessorcount.htm
-old-project : kernel
-ms.assetid : bab2c478-4e46-40d9-a4b6-6f322b18ab0a
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : KeQueryMaximumProcessorCount routine [Kernel-Mode Driver Architecture], wdm/KeQueryMaximumProcessorCount, kernel.kequerymaximumprocessorcount, k105_231acd6b-2f7f-4e46-b2fb-ee5c61fc826b.xml, KeQueryMaximumProcessorCount
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.KeQueryMaximumProcessorCount
+title: KeQueryMaximumProcessorCount function
+author: windows-driver-content
+description: The KeQueryMaximumProcessorCount routine returns the maximum number of processors.
+old-location: kernel\kequerymaximumprocessorcount.htm
+old-project: kernel
+ms.assetid: bab2c478-4e46-40d9-a4b6-6f322b18ab0a
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: KeQueryMaximumProcessorCount routine [Kernel-Mode Driver Architecture], wdm/KeQueryMaximumProcessorCount, kernel.kequerymaximumprocessorcount, k105_231acd6b-2f7f-4e46-b2fb-ee5c61fc826b.xml, KeQueryMaximumProcessorCount
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	KeQueryMaximumProcessorCount
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

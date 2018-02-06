@@ -1,42 +1,47 @@
 ---
-UID : NS:scsi._INQUIRYDATA
-title : "_INQUIRYDATA"
-author : windows-driver-content
-description : The INQUIRYDATA structure is used in conjunction with the TapeMiniExtensionInit and TapeMiniVerifyInquiry routines to report SCSI inquiry data associated with a tape device.
-old-location : storage\inquirydata.htm
-old-project : storage
-ms.assetid : 2389fb1e-b16a-4d0a-b347-8b8a0f1cf061
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : "*PINQUIRYDATA, PINQUIRYDATA structure pointer [Storage Devices], INQUIRYDATA, INQUIRYDATA structure [Storage Devices], scsi/INQUIRYDATA, _INQUIRYDATA, structs-tape_be59bcac-0d77-4186-99a6-97c34bb37793.xml, PINQUIRYDATA, storage.inquirydata, scsi/PINQUIRYDATA"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : scsi.h
-req.include-header : Scsi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : INQUIRYDATA, *PINQUIRYDATA
-req.product : Windows 10 or later.
+UID: NS:scsi._INQUIRYDATA
+title: "_INQUIRYDATA"
+author: windows-driver-content
+description: The INQUIRYDATA structure is used in conjunction with the TapeMiniExtensionInit and TapeMiniVerifyInquiry routines to report SCSI inquiry data associated with a tape device.
+old-location: storage\inquirydata.htm
+old-project: storage
+ms.assetid: 2389fb1e-b16a-4d0a-b347-8b8a0f1cf061
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: "*PINQUIRYDATA, PINQUIRYDATA structure pointer [Storage Devices], INQUIRYDATA, INQUIRYDATA structure [Storage Devices], scsi/INQUIRYDATA, _INQUIRYDATA, structs-tape_be59bcac-0d77-4186-99a6-97c34bb37793.xml, PINQUIRYDATA, storage.inquirydata, scsi/PINQUIRYDATA"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: scsi.h
+req.include-header: Scsi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	scsi.h
+apiname:
+-	INQUIRYDATA
+product: Windows
+targetos: Windows
+req.typenames: INQUIRYDATA, *PINQUIRYDATA
+req.product: Windows 10 or later.
 ---
 
 # _INQUIRYDATA structure

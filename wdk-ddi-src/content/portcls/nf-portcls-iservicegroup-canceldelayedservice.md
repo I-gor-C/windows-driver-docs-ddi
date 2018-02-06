@@ -1,41 +1,46 @@
 ---
-UID : NF:portcls.IServiceGroup.CancelDelayedService
-title : IServiceGroup::CancelDelayedService method
-author : windows-driver-content
-description : The CancelDelayedService method cancels the previously requested delayed service.
-old-location : audio\iservicegroup_canceldelayedservice.htm
-old-project : audio
-ms.assetid : 4caffdad-569d-4038-9a11-8827c8439189
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : IServiceGroup interface [Audio Devices], CancelDelayedService method, CancelDelayedService, CancelDelayedService method [Audio Devices], audmp-routines_7d31f9ff-5b00-4f74-ad2a-08f901db81ff.xml, portcls/IServiceGroup::CancelDelayedService, IServiceGroup, audio.iservicegroup_canceldelayedservice, CancelDelayedService method [Audio Devices], IServiceGroup interface, IServiceGroup::CancelDelayedService
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : portcls.h
-req.include-header : Portcls.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : portcls.h
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.IServiceGroup.CancelDelayedService
+title: IServiceGroup::CancelDelayedService method
+author: windows-driver-content
+description: The CancelDelayedService method cancels the previously requested delayed service.
+old-location: audio\iservicegroup_canceldelayedservice.htm
+old-project: audio
+ms.assetid: 4caffdad-569d-4038-9a11-8827c8439189
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: IServiceGroup interface [Audio Devices], CancelDelayedService method, CancelDelayedService, CancelDelayedService method [Audio Devices], audmp-routines_7d31f9ff-5b00-4f74-ad2a-08f901db81ff.xml, portcls/IServiceGroup::CancelDelayedService, IServiceGroup, audio.iservicegroup_canceldelayedservice, CancelDelayedService method [Audio Devices], IServiceGroup interface, IServiceGroup::CancelDelayedService
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: portcls.h
+req.include-header: Portcls.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: portcls.h
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	portcls.h
+apiname:
+-	IServiceGroup.CancelDelayedService
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

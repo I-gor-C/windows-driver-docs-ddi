@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmdt._D3DKMDT_STAGINGSURFACEDATA
-title : "_D3DKMDT_STAGINGSURFACEDATA"
-author : windows-driver-content
-description : The D3DKMDT_STAGINGSURFACEDATA structure describes the lockable staging surface that data is transferred into from an application's back buffer.
-old-location : display\d3dkmdt_stagingsurfacedata.htm
-old-project : display
-ms.assetid : 6de0bd43-8f19-47f7-adbf-76ea312bd990
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3dkmdt/D3DKMDT_STAGINGSURFACEDATA, _D3DKMDT_STAGINGSURFACEDATA, display.d3dkmdt_stagingsurfacedata, D3DKMDT_STAGINGSURFACEDATA structure [Display Devices], DmStructs_94b90abc-85db-4439-a20b-9edeb1a69733.xml, D3DKMDT_STAGINGSURFACEDATA
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmdt.h
-req.include-header : D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMDT_STAGINGSURFACEDATA
+UID: NS:d3dkmdt._D3DKMDT_STAGINGSURFACEDATA
+title: "_D3DKMDT_STAGINGSURFACEDATA"
+author: windows-driver-content
+description: The D3DKMDT_STAGINGSURFACEDATA structure describes the lockable staging surface that data is transferred into from an application's back buffer.
+old-location: display\d3dkmdt_stagingsurfacedata.htm
+old-project: display
+ms.assetid: 6de0bd43-8f19-47f7-adbf-76ea312bd990
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3dkmdt/D3DKMDT_STAGINGSURFACEDATA, _D3DKMDT_STAGINGSURFACEDATA, display.d3dkmdt_stagingsurfacedata, D3DKMDT_STAGINGSURFACEDATA structure [Display Devices], DmStructs_94b90abc-85db-4439-a20b-9edeb1a69733.xml, D3DKMDT_STAGINGSURFACEDATA
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmdt.h
+req.include-header: D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmdt.h
+apiname:
+-	D3DKMDT_STAGINGSURFACEDATA
+product: Windows
+targetos: Windows
+req.typenames: D3DKMDT_STAGINGSURFACEDATA
 ---
 
 # _D3DKMDT_STAGINGSURFACEDATA structure

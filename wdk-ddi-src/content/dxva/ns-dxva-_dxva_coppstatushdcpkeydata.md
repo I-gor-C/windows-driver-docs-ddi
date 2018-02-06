@@ -1,41 +1,46 @@
 ---
-UID : NS:dxva._DXVA_COPPStatusHDCPKeyData
-title : "_DXVA_COPPStatusHDCPKeyData"
-author : windows-driver-content
-description : The DXVA_COPPStatusHDCPKeyData structure describes a High-bandwidth Digital Content Protection (HDCP) receiver or repeater key selection vector (KSV).
-old-location : display\dxva_coppstatushdcpkeydata.htm
-old-project : display
-ms.assetid : 2e8024b4-69db-4f10-b33f-a6b817aa0aa9
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : dxva/DXVA_COPPStatusHDCPKeyData, dxvaref_6aca4a16-16df-46ab-be65-b6033258f781.xml, DXVA_COPPStatusHDCPKeyData, DXVA_COPPStatusHDCPKeyData structure [Display Devices], display.dxva_coppstatushdcpkeydata, _DXVA_COPPStatusHDCPKeyData
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : dxva.h
-req.include-header : Dxva.h
-req.target-type : Windows
-req.target-min-winverclnt : This structure applies only to Windows Server 2003 with SP1 and later, and Windows XP with SP2 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXVA_COPPStatusHDCPKeyData
+UID: NS:dxva._DXVA_COPPStatusHDCPKeyData
+title: "_DXVA_COPPStatusHDCPKeyData"
+author: windows-driver-content
+description: The DXVA_COPPStatusHDCPKeyData structure describes a High-bandwidth Digital Content Protection (HDCP) receiver or repeater key selection vector (KSV).
+old-location: display\dxva_coppstatushdcpkeydata.htm
+old-project: display
+ms.assetid: 2e8024b4-69db-4f10-b33f-a6b817aa0aa9
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: dxva/DXVA_COPPStatusHDCPKeyData, dxvaref_6aca4a16-16df-46ab-be65-b6033258f781.xml, DXVA_COPPStatusHDCPKeyData, DXVA_COPPStatusHDCPKeyData structure [Display Devices], display.dxva_coppstatushdcpkeydata, _DXVA_COPPStatusHDCPKeyData
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: dxva.h
+req.include-header: Dxva.h
+req.target-type: Windows
+req.target-min-winverclnt: This structure applies only to Windows Server 2003 with SP1 and later, and Windows XP with SP2 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	dxva.h
+apiname:
+-	DXVA_COPPStatusHDCPKeyData
+product: Windows
+targetos: Windows
+req.typenames: DXVA_COPPStatusHDCPKeyData
 ---
 
 # _DXVA_COPPStatusHDCPKeyData structure

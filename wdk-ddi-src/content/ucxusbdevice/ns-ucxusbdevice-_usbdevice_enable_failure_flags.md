@@ -1,42 +1,47 @@
 ---
-UID : NS:ucxusbdevice._USBDEVICE_ENABLE_FAILURE_FLAGS
-title : "_USBDEVICE_ENABLE_FAILURE_FLAGS"
-author : windows-driver-content
-description : The flags that are set by the client driver in the EVT_UCX_USBDEVICE_ENABLE callback function. Indicate errors, if any, that might have occurred while enabling the device.
-old-location : buses\_usbdevice_enable_failure_flags.htm
-old-project : usbref
-ms.assetid : B239E637-2920-48A5-9F45-D3089140C8A2
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : "_USBDEVICE_ENABLE_FAILURE_FLAGS, USBDEVICE_ENABLE_FAILURE_FLAGS, P_USBDEVICE_ENABLE_FAILURE_FLAGS structure pointer [Buses], P_USBDEVICE_ENABLE_FAILURE_FLAGS, buses._usbdevice_enable_failure_flags, ucxusbdevice/P_USBDEVICE_ENABLE_FAILURE_FLAGS, USBDEVICE_ENABLE_FAILURE_FLAGS structure [Buses], ucxusbdevice/_USBDEVICE_ENABLE_FAILURE_FLAGS"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ucxusbdevice.h
-req.include-header : Ucxclass.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : USBDEVICE_ENABLE_FAILURE_FLAGS
-req.product : Windows 10 or later.
+UID: NS:ucxusbdevice._USBDEVICE_ENABLE_FAILURE_FLAGS
+title: "_USBDEVICE_ENABLE_FAILURE_FLAGS"
+author: windows-driver-content
+description: The flags that are set by the client driver in the EVT_UCX_USBDEVICE_ENABLE callback function. Indicate errors, if any, that might have occurred while enabling the device.
+old-location: buses\_usbdevice_enable_failure_flags.htm
+old-project: usbref
+ms.assetid: B239E637-2920-48A5-9F45-D3089140C8A2
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: "_USBDEVICE_ENABLE_FAILURE_FLAGS, USBDEVICE_ENABLE_FAILURE_FLAGS, P_USBDEVICE_ENABLE_FAILURE_FLAGS structure pointer [Buses], P_USBDEVICE_ENABLE_FAILURE_FLAGS, buses._usbdevice_enable_failure_flags, ucxusbdevice/P_USBDEVICE_ENABLE_FAILURE_FLAGS, USBDEVICE_ENABLE_FAILURE_FLAGS structure [Buses], ucxusbdevice/_USBDEVICE_ENABLE_FAILURE_FLAGS"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ucxusbdevice.h
+req.include-header: Ucxclass.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ucxusbdevice.h
+apiname:
+-	USBDEVICE_ENABLE_FAILURE_FLAGS
+product: Windows
+targetos: Windows
+req.typenames: USBDEVICE_ENABLE_FAILURE_FLAGS
+req.product: Windows 10 or later.
 ---
 
 # _USBDEVICE_ENABLE_FAILURE_FLAGS structure

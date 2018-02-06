@@ -1,41 +1,46 @@
 ---
-UID : NC:dot11wdi.MINIPORT_WDI_TAL_TXRX_START
-title : MINIPORT_WDI_TAL_TXRX_START
-author : windows-driver-content
-description : The MiniportWdiTalTxRxStart handler function provides TXRX configuration parameters to the TAL.
-old-location : netvista\miniportwditaltxrxstart.htm
-old-project : netvista
-ms.assetid : 6F88F4B1-8D2A-41CC-8D60-C1CF91ED072A
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.miniportwditaltxrxstart, MiniportWdiTalTxRxStart callback function [Network Drivers Starting with Windows Vista], MiniportWdiTalTxRxStart, MINIPORT_WDI_TAL_TXRX_START, MINIPORT_WDI_TAL_TXRX_START, dot11wdi/MiniportWdiTalTxRxStart
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : dot11wdi.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SYNTH_STATS, *PSYNTH_STATS
+UID: NC:dot11wdi.MINIPORT_WDI_TAL_TXRX_START
+title: MINIPORT_WDI_TAL_TXRX_START
+author: windows-driver-content
+description: The MiniportWdiTalTxRxStart handler function provides TXRX configuration parameters to the TAL.
+old-location: netvista\miniportwditaltxrxstart.htm
+old-project: netvista
+ms.assetid: 6F88F4B1-8D2A-41CC-8D60-C1CF91ED072A
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.miniportwditaltxrxstart, MiniportWdiTalTxRxStart callback function [Network Drivers Starting with Windows Vista], MiniportWdiTalTxRxStart, MINIPORT_WDI_TAL_TXRX_START, MINIPORT_WDI_TAL_TXRX_START, dot11wdi/MiniportWdiTalTxRxStart
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: dot11wdi.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	dot11wdi.h
+apiname:
+-	MiniportWdiTalTxRxStart
+product: Windows
+targetos: Windows
+req.typenames: SYNTH_STATS, *PSYNTH_STATS
 ---
 
 

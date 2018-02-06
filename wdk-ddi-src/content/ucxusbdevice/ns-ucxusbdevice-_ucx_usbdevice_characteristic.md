@@ -1,42 +1,47 @@
 ---
-UID : NS:ucxusbdevice._UCX_USBDEVICE_CHARACTERISTIC
-title : "_UCX_USBDEVICE_CHARACTERISTIC"
-author : windows-driver-content
-description : Stores the characteristics of an device.
-old-location : buses\ucx_usbdevice_characteristic.htm
-old-project : usbref
-ms.assetid : 31BF5607-51EA-4FBF-A754-872FBD45915D
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : buses.ucx_usbdevice_characteristic, _UCX_USBDEVICE_CHARACTERISTIC, *PUCX_USBDEVICE_CHARACTERISTIC, PUCX_USBDEVICE_CHARACTERISTIC structure pointer [Buses], ucxusbdevice/UCX_USBDEVICE_CHARACTERISTIC, PUCX_USBDEVICE_CHARACTERISTIC, UCX_USBDEVICE_CHARACTERISTIC, ucxusbdevice/PUCX_USBDEVICE_CHARACTERISTIC, UCX_USBDEVICE_CHARACTERISTIC structure [Buses]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ucxusbdevice.h
-req.include-header : Ucxclass.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10, version 1709
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : UCX_USBDEVICE_CHARACTERISTIC, *PUCX_USBDEVICE_CHARACTERISTIC
-req.product : Windows 10 or later.
+UID: NS:ucxusbdevice._UCX_USBDEVICE_CHARACTERISTIC
+title: "_UCX_USBDEVICE_CHARACTERISTIC"
+author: windows-driver-content
+description: Stores the characteristics of an device.
+old-location: buses\ucx_usbdevice_characteristic.htm
+old-project: usbref
+ms.assetid: 31BF5607-51EA-4FBF-A754-872FBD45915D
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: buses.ucx_usbdevice_characteristic, _UCX_USBDEVICE_CHARACTERISTIC, *PUCX_USBDEVICE_CHARACTERISTIC, PUCX_USBDEVICE_CHARACTERISTIC structure pointer [Buses], ucxusbdevice/UCX_USBDEVICE_CHARACTERISTIC, PUCX_USBDEVICE_CHARACTERISTIC, UCX_USBDEVICE_CHARACTERISTIC, ucxusbdevice/PUCX_USBDEVICE_CHARACTERISTIC, UCX_USBDEVICE_CHARACTERISTIC structure [Buses]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ucxusbdevice.h
+req.include-header: Ucxclass.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10, version 1709
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ucxusbdevice.h
+apiname:
+-	UCX_USBDEVICE_CHARACTERISTIC
+product: Windows
+targetos: Windows
+req.typenames: UCX_USBDEVICE_CHARACTERISTIC, *PUCX_USBDEVICE_CHARACTERISTIC
+req.product: Windows 10 or later.
 ---
 
 # _UCX_USBDEVICE_CHARACTERISTIC structure

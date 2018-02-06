@@ -1,41 +1,46 @@
 ---
-UID : NE:d3dkmthk._QAI_DRIVERVERSION
-title : "_QAI_DRIVERVERSION"
-author : windows-driver-content
-description : The D3DKMT_DRIVERVERSION enumeration type contains values that indicate the version of the display driver model that the display miniport driver supports.
-old-location : display\d3dkmt_driverversion.htm
-old-project : display
-ms.assetid : 12ac73ed-f829-4f22-bca9-ccc1dc29f4c4
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : KMT_DRIVERVERSION_WDDM_1_1, KMT_DRIVERVERSION_WDDM_1_0, _QAI_DRIVERVERSION enumeration [Display Devices], KMT_DRIVERVERSION_WDDM_1_2, d3dkmthk/_QAI_DRIVERVERSION, display.d3dkmt_driverversion, D3DKMT_DRIVERVERSION enumeration [Display Devices], d3dkmthk/KMT_DRIVERVERSION_WDDM_1_3, OpenGL_Structs_2f7fe9d6-ec67-46b1-9c05-51d06d186fe1.xml, D3DKMT_DRIVERVERSION, d3dkmthk/, _QAI_DRIVERVERSION, d3dkmthk/KMT_DRIVERVERSION_WDDM_2_0, KMT_DRIVERVERSION_WDDM_1_1_PRERELEASE, d3dkmthk/KMT_DRIVERVERSION_WDDM_1_1, KMT_DRIVERVERSION_WDDM_2_0, KMT_DRIVERVERSION_WDDM_1_3, d3dkmthk/KMT_DRIVERVERSION_WDDM_1_1_PRERELEASE, d3dkmthk/KMT_DRIVERVERSION_WDDM_1_2, d3dkmthk/KMT_DRIVERVERSION_WDDM_1_0
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Windows
-req.target-min-winverclnt : D3DKMT_DRIVERVERSION is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_DRIVERVERSION
+UID: NE:d3dkmthk._QAI_DRIVERVERSION
+title: "_QAI_DRIVERVERSION"
+author: windows-driver-content
+description: The D3DKMT_DRIVERVERSION enumeration type contains values that indicate the version of the display driver model that the display miniport driver supports.
+old-location: display\d3dkmt_driverversion.htm
+old-project: display
+ms.assetid: 12ac73ed-f829-4f22-bca9-ccc1dc29f4c4
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: KMT_DRIVERVERSION_WDDM_1_1, KMT_DRIVERVERSION_WDDM_1_0, _QAI_DRIVERVERSION enumeration [Display Devices], KMT_DRIVERVERSION_WDDM_1_2, d3dkmthk/_QAI_DRIVERVERSION, display.d3dkmt_driverversion, D3DKMT_DRIVERVERSION enumeration [Display Devices], d3dkmthk/KMT_DRIVERVERSION_WDDM_1_3, OpenGL_Structs_2f7fe9d6-ec67-46b1-9c05-51d06d186fe1.xml, D3DKMT_DRIVERVERSION, d3dkmthk/, _QAI_DRIVERVERSION, d3dkmthk/KMT_DRIVERVERSION_WDDM_2_0, KMT_DRIVERVERSION_WDDM_1_1_PRERELEASE, d3dkmthk/KMT_DRIVERVERSION_WDDM_1_1, KMT_DRIVERVERSION_WDDM_2_0, KMT_DRIVERVERSION_WDDM_1_3, d3dkmthk/KMT_DRIVERVERSION_WDDM_1_1_PRERELEASE, d3dkmthk/KMT_DRIVERVERSION_WDDM_1_2, d3dkmthk/KMT_DRIVERVERSION_WDDM_1_0
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Windows
+req.target-min-winverclnt: D3DKMT_DRIVERVERSION is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmthk.h
+apiname:
+-	D3DKMT_DRIVERVERSION
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_DRIVERVERSION
 ---
 
 # _QAI_DRIVERVERSION Enumeration
@@ -63,62 +68,62 @@ typedef enum _QAI_DRIVERVERSION {
 ## Constants
 
 <table>
-
-<tr>
-<td>KMT_DRIVERVERSION_WDDM_1_0</td>
-<td>The display miniport driver supports the Windows Vista display driver model (WDDM) without Windows 7 features.</td>
-</tr>
-
-<tr>
-<td>KMT_DRIVERVERSION_WDDM_1_1</td>
-<td>The display miniport driver supports the Windows Vista display driver model with released Windows 7 features.</td>
-</tr>
-
-<tr>
-<td>KMT_DRIVERVERSION_WDDM_1_1_PRERELEASE</td>
-<td>The display miniport driver supports the Windows Vista display driver model with prereleased Windows 7 features.</td>
-</tr>
-
-<tr>
-<td>KMT_DRIVERVERSION_WDDM_1_2</td>
-<td>The display miniport driver supports the Windows Vista display driver model with released Windows 8 features.
+            
+                <tr>
+                    <td>KMT_DRIVERVERSION_WDDM_1_0</td>
+                    <td>The display miniport driver supports the Windows Vista display driver model (WDDM) without Windows 7 features.</td>
+                </tr>
+            
+                <tr>
+                    <td>KMT_DRIVERVERSION_WDDM_1_1</td>
+                    <td>The display miniport driver supports the Windows Vista display driver model with released Windows 7 features.</td>
+                </tr>
+            
+                <tr>
+                    <td>KMT_DRIVERVERSION_WDDM_1_1_PRERELEASE</td>
+                    <td>The display miniport driver supports the Windows Vista display driver model with prereleased Windows 7 features.</td>
+                </tr>
+            
+                <tr>
+                    <td>KMT_DRIVERVERSION_WDDM_1_2</td>
+                    <td>The display miniport driver supports the Windows Vista display driver model with released Windows 8 features.
 
 Supported starting with Windows 8.</td>
-</tr>
-
-<tr>
-<td>KMT_DRIVERVERSION_WDDM_1_3</td>
-<td>The display miniport driver supports the Windows display driver model with released Windows 8.1 features.
+                </tr>
+            
+                <tr>
+                    <td>KMT_DRIVERVERSION_WDDM_1_3</td>
+                    <td>The display miniport driver supports the Windows display driver model with released Windows 8.1 features.
 
 Supported starting with Windows 8.1.</td>
-</tr>
-
-<tr>
-<td>KMT_DRIVERVERSION_WDDM_2_0</td>
-<td>The display miniport driver supports the Windows display driver model with released Windows 10 features.
+                </tr>
+            
+                <tr>
+                    <td>KMT_DRIVERVERSION_WDDM_2_0</td>
+                    <td>The display miniport driver supports the Windows display driver model with released Windows 10 features.
 
 Supported starting with Windows 10.</td>
-</tr>
-
-<tr>
-<td>KMT_DRIVERVERSION_WDDM_2_1</td>
-<td></td>
-</tr>
-
-<tr>
-<td>KMT_DRIVERVERSION_WDDM_2_2</td>
-<td></td>
-</tr>
-
-<tr>
-<td>KMT_DRIVERVERSION_WDDM_2_3</td>
-<td></td>
-</tr>
+                </tr>
+            
+                <tr>
+                    <td>KMT_DRIVERVERSION_WDDM_2_1</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>KMT_DRIVERVERSION_WDDM_2_2</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>KMT_DRIVERVERSION_WDDM_2_3</td>
+                    <td></td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-The <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtqueryadapterinfo.md">D3DKMTQueryAdapterInfo</a> returns a D3DKMT_DRIVERVERSION value in a variable that the <b>pPrivateDriverData</b> member of the <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_queryadapterinfo.md">D3DKMT_QUERYADAPTERINFO</a> structure points to when the OpenGL installable client driver (ICD) sets the <b>Type</b> member of <b>D3DKMT_QUERYADAPTERINFO</b> to KMTQAITYPE_DRIVERVERSION.
+        The <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtqueryadapterinfo.md">D3DKMTQueryAdapterInfo</a> returns a D3DKMT_DRIVERVERSION value in a variable that the <b>pPrivateDriverData</b> member of the <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_queryadapterinfo.md">D3DKMT_QUERYADAPTERINFO</a> structure points to when the OpenGL installable client driver (ICD) sets the <b>Type</b> member of <b>D3DKMT_QUERYADAPTERINFO</b> to KMTQAITYPE_DRIVERVERSION.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -126,9 +131,9 @@ The <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtqueryadapterinfo.md">D3DKMTQueryAdapt
 | **Windows version** | D3DKMT_DRIVERVERSION is supported beginning with the Windows 7 operating system. D3DKMT_DRIVERVERSION is supported beginning with the Windows 7 operating system. |
 | **Header** | d3dkmthk.h (include D3dkmthk.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtqueryadapterinfo.md">D3DKMTQueryAdapterInfo</a>
+        <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtqueryadapterinfo.md">D3DKMTQueryAdapterInfo</a>
 
 <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_queryadapterinfo.md">D3DKMT_QUERYADAPTERINFO</a>
 

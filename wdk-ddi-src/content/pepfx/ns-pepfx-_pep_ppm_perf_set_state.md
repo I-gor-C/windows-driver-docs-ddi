@@ -1,41 +1,46 @@
 ---
-UID : NS:pepfx._PEP_PPM_PERF_SET_STATE
-title : "_PEP_PPM_PERF_SET_STATE"
-author : windows-driver-content
-description : Used in the PEP_NOTIFY_PPM_PERF_SET notification at runtime to set the current operating performance of the processor.  .
-old-location : kernel\pep_ppm_perf_set_state.htm
-old-project : kernel
-ms.assetid : 0d822370-f08b-404d-ad0f-60ea091661d9
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : "_PEP_PPM_PERF_SET_STATE, PEP_PPM_PERF_SET_STATE, kernel.pep_ppm_perf_set_state, PPEP_PPM_PERF_SET_STATE structure pointer [Kernel-Mode Driver Architecture], PPEP_PPM_PERF_SET_STATE, *PPEP_PPM_PERF_SET_STATE, pepfx/PPEP_PPM_PERF_SET_STATE, PEP_PPM_PERF_SET_STATE structure [Kernel-Mode Driver Architecture], pepfx/PEP_PPM_PERF_SET_STATE"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : pepfx.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10, version 1709
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PEP_PPM_PERF_SET_STATE, *PPEP_PPM_PERF_SET_STATE
+UID: NS:pepfx._PEP_PPM_PERF_SET_STATE
+title: "_PEP_PPM_PERF_SET_STATE"
+author: windows-driver-content
+description: Used in the PEP_NOTIFY_PPM_PERF_SET notification at runtime to set the current operating performance of the processor.  .
+old-location: kernel\pep_ppm_perf_set_state.htm
+old-project: kernel
+ms.assetid: 0d822370-f08b-404d-ad0f-60ea091661d9
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: "_PEP_PPM_PERF_SET_STATE, PEP_PPM_PERF_SET_STATE, kernel.pep_ppm_perf_set_state, PPEP_PPM_PERF_SET_STATE structure pointer [Kernel-Mode Driver Architecture], PPEP_PPM_PERF_SET_STATE, *PPEP_PPM_PERF_SET_STATE, pepfx/PPEP_PPM_PERF_SET_STATE, PEP_PPM_PERF_SET_STATE structure [Kernel-Mode Driver Architecture], pepfx/PEP_PPM_PERF_SET_STATE"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: pepfx.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10, version 1709
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Pepfx.h
+apiname:
+-	PEP_PPM_PERF_SET_STATE
+product: Windows
+targetos: Windows
+req.typenames: PEP_PPM_PERF_SET_STATE, *PPEP_PPM_PERF_SET_STATE
 ---
 
 # _PEP_PPM_PERF_SET_STATE structure

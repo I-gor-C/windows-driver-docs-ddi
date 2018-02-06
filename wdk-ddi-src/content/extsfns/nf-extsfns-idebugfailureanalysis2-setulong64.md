@@ -1,41 +1,46 @@
 ---
-UID : NF:extsfns.IDebugFailureAnalysis2.SetUlong64
-title : IDebugFailureAnalysis2::SetUlong64 method
-author : windows-driver-content
-description : The SetUlong64 method searches a DebugFailureAnalysis object for the first FA entry that has a specified tag. If it finds an FA entry with the specified tag, it sets (overwrites) the data block of the FA entry to a specified ULONG64 value.
-old-location : debugger\idebugfailureanalysis2_setulong64.htm
-old-project : debugger
-ms.assetid : C4F293C1-D52C-4584-A8CE-98F14F3309DD
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugFailureAnalysis2, IDebugFailureAnalysis2::SetUlong64, debugger.idebugfailureanalysis2_setulong64, debugger.idebugfailureanalysis2_setextensionulong64, SetUlong64 method [Windows Debugging], SetUlong64, extsfns/IDebugFailureAnalysis2::SetUlong64, IDebugFailureAnalysis2 interface [Windows Debugging], SetUlong64 method, SetUlong64 method [Windows Debugging], IDebugFailureAnalysis2 interface
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : extsfns.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : extsfns.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FA_EXTENSION_PLUGIN_PHASE
+UID: NF:extsfns.IDebugFailureAnalysis2.SetUlong64
+title: IDebugFailureAnalysis2::SetUlong64 method
+author: windows-driver-content
+description: The SetUlong64 method searches a DebugFailureAnalysis object for the first FA entry that has a specified tag. If it finds an FA entry with the specified tag, it sets (overwrites) the data block of the FA entry to a specified ULONG64 value.
+old-location: debugger\idebugfailureanalysis2_setulong64.htm
+old-project: debugger
+ms.assetid: C4F293C1-D52C-4584-A8CE-98F14F3309DD
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugFailureAnalysis2, IDebugFailureAnalysis2::SetUlong64, debugger.idebugfailureanalysis2_setulong64, debugger.idebugfailureanalysis2_setextensionulong64, SetUlong64 method [Windows Debugging], SetUlong64, extsfns/IDebugFailureAnalysis2::SetUlong64, IDebugFailureAnalysis2 interface [Windows Debugging], SetUlong64 method, SetUlong64 method [Windows Debugging], IDebugFailureAnalysis2 interface
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: extsfns.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: extsfns.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	extsfns.h
+apiname:
+-	IDebugFailureAnalysis2.SetUlong64
+product: Windows
+targetos: Windows
+req.typenames: FA_EXTENSION_PLUGIN_PHASE
 ---
 
 

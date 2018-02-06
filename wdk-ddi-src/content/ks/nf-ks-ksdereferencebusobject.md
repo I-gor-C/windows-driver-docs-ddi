@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsDereferenceBusObject
-title : KsDereferenceBusObject function
-author : windows-driver-content
-description : Dereferences the bus Physical Device Object.
-old-location : stream\ksdereferencebusobject.htm
-old-project : stream
-ms.assetid : 5520685c-c438-460b-aac5-791098e14044
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ksfunc_e3b1ab42-bb78-44f7-bc34-64edcf843471.xml, KsDereferenceBusObject function [Streaming Media Devices], ks/KsDereferenceBusObject, KsDereferenceBusObject, stream.ksdereferencebusobject
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsDereferenceBusObject
+title: KsDereferenceBusObject function
+author: windows-driver-content
+description: Dereferences the bus Physical Device Object.
+old-location: stream\ksdereferencebusobject.htm
+old-project: stream
+ms.assetid: 5520685c-c438-460b-aac5-791098e14044
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ksfunc_e3b1ab42-bb78-44f7-bc34-64edcf843471.xml, KsDereferenceBusObject function [Streaming Media Devices], ks/KsDereferenceBusObject, KsDereferenceBusObject, stream.ksdereferencebusobject
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsDereferenceBusObject
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

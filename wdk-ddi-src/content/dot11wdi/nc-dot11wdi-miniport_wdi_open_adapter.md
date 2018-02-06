@@ -1,41 +1,46 @@
 ---
-UID : NC:dot11wdi.MINIPORT_WDI_OPEN_ADAPTER
-title : MINIPORT_WDI_OPEN_ADAPTER
-author : windows-driver-content
-description : The MiniportWdiOpenAdapter handler function is used by the Microsoft component to initiate the Open Task operation on the IHV driver.
-old-location : netvista\miniportwdiopenadapter.htm
-old-project : netvista
-ms.assetid : C4D09CAD-833A-43A0-AC03-EEDE8270EA12
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.miniportwdiopenadapter, MiniportWdiOpenAdapter callback function [Network Drivers Starting with Windows Vista], MiniportWdiOpenAdapter, MINIPORT_WDI_OPEN_ADAPTER, MINIPORT_WDI_OPEN_ADAPTER, dot11wdi/MiniportWdiOpenAdapter
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : dot11wdi.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SYNTH_STATS, *PSYNTH_STATS
+UID: NC:dot11wdi.MINIPORT_WDI_OPEN_ADAPTER
+title: MINIPORT_WDI_OPEN_ADAPTER
+author: windows-driver-content
+description: The MiniportWdiOpenAdapter handler function is used by the Microsoft component to initiate the Open Task operation on the IHV driver.
+old-location: netvista\miniportwdiopenadapter.htm
+old-project: netvista
+ms.assetid: C4D09CAD-833A-43A0-AC03-EEDE8270EA12
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.miniportwdiopenadapter, MiniportWdiOpenAdapter callback function [Network Drivers Starting with Windows Vista], MiniportWdiOpenAdapter, MINIPORT_WDI_OPEN_ADAPTER, MINIPORT_WDI_OPEN_ADAPTER, dot11wdi/MiniportWdiOpenAdapter
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: dot11wdi.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	dot11wdi.h
+apiname:
+-	MiniportWdiOpenAdapter
+product: Windows
+targetos: Windows
+req.typenames: SYNTH_STATS, *PSYNTH_STATS
 ---
 
 

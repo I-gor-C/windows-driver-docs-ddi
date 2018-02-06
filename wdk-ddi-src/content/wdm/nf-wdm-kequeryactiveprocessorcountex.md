@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.KeQueryActiveProcessorCountEx
-title : KeQueryActiveProcessorCountEx function
-author : windows-driver-content
-description : The KeQueryActiveProcessorCountEx routine returns the number of active logical processors in a specified group in a multiprocessor system or in the entire system.
-old-location : kernel\kequeryactiveprocessorcountex.htm
-old-project : kernel
-ms.assetid : 3884eb16-56a0-4b48-abf3-a74794b2c996
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : k105_7cd9a091-c100-4b0c-9ea0-9b831407d5a1.xml, KeQueryActiveProcessorCountEx, wdm/KeQueryActiveProcessorCountEx, KeQueryActiveProcessorCountEx routine [Kernel-Mode Driver Architecture], kernel.kequeryactiveprocessorcountex
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Ntddk.h, Wdm.h, Ntddk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 7 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.KeQueryActiveProcessorCountEx
+title: KeQueryActiveProcessorCountEx function
+author: windows-driver-content
+description: The KeQueryActiveProcessorCountEx routine returns the number of active logical processors in a specified group in a multiprocessor system or in the entire system.
+old-location: kernel\kequeryactiveprocessorcountex.htm
+old-project: kernel
+ms.assetid: 3884eb16-56a0-4b48-abf3-a74794b2c996
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: k105_7cd9a091-c100-4b0c-9ea0-9b831407d5a1.xml, KeQueryActiveProcessorCountEx, wdm/KeQueryActiveProcessorCountEx, KeQueryActiveProcessorCountEx routine [Kernel-Mode Driver Architecture], kernel.kequeryactiveprocessorcountex
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Ntddk.h, Wdm.h, Ntddk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 7 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	KeQueryActiveProcessorCountEx
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

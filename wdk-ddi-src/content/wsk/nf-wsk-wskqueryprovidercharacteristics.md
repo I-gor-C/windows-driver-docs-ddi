@@ -1,42 +1,48 @@
 ---
-UID : NF:wsk.WskQueryProviderCharacteristics
-title : WskQueryProviderCharacteristics function
-author : windows-driver-content
-description : The WskQueryProviderCharacteristics function queries the range of WSK NPI versions supported by the WSK subsystem.
-old-location : netvista\wskqueryprovidercharacteristics.htm
-old-project : netvista
-ms.assetid : b8a81d7e-abab-4343-a044-ac9dd913c7f2
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : WskQueryProviderCharacteristics, WskQueryProviderCharacteristics function [Network Drivers Starting with Windows Vista], wsk/WskQueryProviderCharacteristics, netvista.wskqueryprovidercharacteristics, wskref_dbe0fc4a-6df6-46aa-a17b-d3835f5d429b.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wsk.h
-req.include-header : Wsk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating   systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Netio.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WNODE_HEADER, *PWNODE_HEADER
-req.product : Windows 10 or later.
+UID: NF:wsk.WskQueryProviderCharacteristics
+title: WskQueryProviderCharacteristics function
+author: windows-driver-content
+description: The WskQueryProviderCharacteristics function queries the range of WSK NPI versions supported by the WSK subsystem.
+old-location: netvista\wskqueryprovidercharacteristics.htm
+old-project: netvista
+ms.assetid: b8a81d7e-abab-4343-a044-ac9dd913c7f2
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: WskQueryProviderCharacteristics, WskQueryProviderCharacteristics function [Network Drivers Starting with Windows Vista], wsk/WskQueryProviderCharacteristics, netvista.wskqueryprovidercharacteristics, wskref_dbe0fc4a-6df6-46aa-a17b-d3835f5d429b.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wsk.h
+req.include-header: Wsk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Netio.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	netio.lib
+-	netio.dll
+apiname:
+-	WskQueryProviderCharacteristics
+product: Windows
+targetos: Windows
+req.typenames: WNODE_HEADER, *PWNODE_HEADER
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:hbapiwmi._SendRPL_OUT
-title : "_SendRPL_OUT"
-author : windows-driver-content
-description : The SendRPL_OUT structure is used to report the output parameter data of the SendRPL WMI method to the WMI client.
-old-location : storage\sendrpl_out.htm
-old-project : storage
-ms.assetid : 36ca3d6e-7012-4bbb-a2a0-e19708aa1058
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : PSendRPL_OUT structure pointer [Storage Devices], *PSendRPL_OUT, PSendRPL_OUT, hbapiwmi/PSendRPL_OUT, SendRPL_OUT structure [Storage Devices], structs-Fibre_aef41c84-1718-4e82-aeae-d0280d6cf3b1.xml, _SendRPL_OUT, storage.sendrpl_out, SendRPL_OUT, hbapiwmi/SendRPL_OUT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : hbapiwmi.h
-req.include-header : Hbapiwmi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SendRPL_OUT, *PSendRPL_OUT
+UID: NS:hbapiwmi._SendRPL_OUT
+title: "_SendRPL_OUT"
+author: windows-driver-content
+description: The SendRPL_OUT structure is used to report the output parameter data of the SendRPL WMI method to the WMI client.
+old-location: storage\sendrpl_out.htm
+old-project: storage
+ms.assetid: 36ca3d6e-7012-4bbb-a2a0-e19708aa1058
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: PSendRPL_OUT structure pointer [Storage Devices], *PSendRPL_OUT, PSendRPL_OUT, hbapiwmi/PSendRPL_OUT, SendRPL_OUT structure [Storage Devices], structs-Fibre_aef41c84-1718-4e82-aeae-d0280d6cf3b1.xml, _SendRPL_OUT, storage.sendrpl_out, SendRPL_OUT, hbapiwmi/SendRPL_OUT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: hbapiwmi.h
+req.include-header: Hbapiwmi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hbapiwmi.h
+apiname:
+-	SendRPL_OUT
+product: Windows
+targetos: Windows
+req.typenames: SendRPL_OUT, *PSendRPL_OUT
 ---
 
 # _SendRPL_OUT structure

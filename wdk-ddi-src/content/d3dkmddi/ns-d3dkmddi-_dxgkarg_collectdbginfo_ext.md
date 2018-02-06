@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGKARG_COLLECTDBGINFO_EXT
-title : "_DXGKARG_COLLECTDBGINFO_EXT"
-author : windows-driver-content
-description : The DXGKARG_COLLECTDBGINFO_EXT structure describes extension information for a debug report.
-old-location : display\dxgkarg_collectdbginfo_ext.htm
-old-project : display
-ms.assetid : cbde31fe-06c1-44af-8940-b66e8044a5cd
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : "_DXGKARG_COLLECTDBGINFO_EXT, d3dkmddi/DXGKARG_COLLECTDBGINFO_EXT, DmStructs_3c280734-d3c8-4970-a6d8-8ad2b3dce913.xml, DXGKARG_COLLECTDBGINFO_EXT, display.dxgkarg_collectdbginfo_ext, DXGKARG_COLLECTDBGINFO_EXT structure [Display Devices]"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGKARG_COLLECTDBGINFO_EXT
+UID: NS:d3dkmddi._DXGKARG_COLLECTDBGINFO_EXT
+title: "_DXGKARG_COLLECTDBGINFO_EXT"
+author: windows-driver-content
+description: The DXGKARG_COLLECTDBGINFO_EXT structure describes extension information for a debug report.
+old-location: display\dxgkarg_collectdbginfo_ext.htm
+old-project: display
+ms.assetid: cbde31fe-06c1-44af-8940-b66e8044a5cd
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: "_DXGKARG_COLLECTDBGINFO_EXT, d3dkmddi/DXGKARG_COLLECTDBGINFO_EXT, DmStructs_3c280734-d3c8-4970-a6d8-8ad2b3dce913.xml, DXGKARG_COLLECTDBGINFO_EXT, display.dxgkarg_collectdbginfo_ext, DXGKARG_COLLECTDBGINFO_EXT structure [Display Devices]"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DXGKARG_COLLECTDBGINFO_EXT
+product: Windows
+targetos: Windows
+req.typenames: DXGKARG_COLLECTDBGINFO_EXT
 ---
 
 # _DXGKARG_COLLECTDBGINFO_EXT structure

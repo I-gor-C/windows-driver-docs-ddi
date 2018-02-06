@@ -1,42 +1,47 @@
 ---
-UID : NC:ufxclient.EVT_UFX_DEVICE_ENDPOINT_ADD
-title : EVT_UFX_DEVICE_ENDPOINT_ADD
-author : windows-driver-content
-description : The client driver's implementation to create a default endpoint object.
-old-location : buses\evt_ufx_device_endpoint_add.htm
-old-project : usbref
-ms.assetid : F366990E-7FE3-401B-B8BE-E71EAFD3AC58
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : buses.evt_ufx_device_endpoint_add, EvtUfxDeviceEndpointAdd callback function [Buses], EvtUfxDeviceEndpointAdd, EVT_UFX_DEVICE_ENDPOINT_ADD, EVT_UFX_DEVICE_ENDPOINT_ADD, ufxclient/EvtUfxDeviceEndpointAdd, PFN_UFX_DEVICE_ENDPOINT_ADD callback function pointer [Buses], PFN_UFX_DEVICE_ENDPOINT_ADD
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ufxclient.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUFX_HARDWARE_FAILURE_CONTEXT, UFX_HARDWARE_FAILURE_CONTEXT"
-req.product : Windows 10 or later.
+UID: NC:ufxclient.EVT_UFX_DEVICE_ENDPOINT_ADD
+title: EVT_UFX_DEVICE_ENDPOINT_ADD
+author: windows-driver-content
+description: The client driver's implementation to create a default endpoint object.
+old-location: buses\evt_ufx_device_endpoint_add.htm
+old-project: usbref
+ms.assetid: F366990E-7FE3-401B-B8BE-E71EAFD3AC58
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: buses.evt_ufx_device_endpoint_add, EvtUfxDeviceEndpointAdd callback function [Buses], EvtUfxDeviceEndpointAdd, EVT_UFX_DEVICE_ENDPOINT_ADD, EVT_UFX_DEVICE_ENDPOINT_ADD, ufxclient/EvtUfxDeviceEndpointAdd, PFN_UFX_DEVICE_ENDPOINT_ADD callback function pointer [Buses], PFN_UFX_DEVICE_ENDPOINT_ADD
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ufxclient.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ufxclient.h
+apiname:
+-	PFN_UFX_DEVICE_ENDPOINT_ADD
+product: Windows
+targetos: Windows
+req.typenames: "*PUFX_HARDWARE_FAILURE_CONTEXT, UFX_HARDWARE_FAILURE_CONTEXT"
+req.product: Windows 10 or later.
 ---
 
 

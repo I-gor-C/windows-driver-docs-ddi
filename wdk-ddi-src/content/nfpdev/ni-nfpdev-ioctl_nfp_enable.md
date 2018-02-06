@@ -1,41 +1,46 @@
 ---
-UID : NI:nfpdev.IOCTL_NFP_ENABLE
-title : IOCTL_NFP_ENABLE
-author : windows-driver-content
-description : The client sends the IOCTL_NFP_ENABLE request to re-enable previously disabled subscriptions, publications, and presence events.
-old-location : nfpdrivers\ioctl_nfp_enable.htm
-old-project : nfpdrivers
-ms.assetid : 25D4C7BB-782D-4BDB-9E07-F152E3705705
-ms.author : windowsdriverdev
-ms.date : 12/18/2017
-ms.keywords : nfpdrivers.ioctl_nfp_enable, IOCTL_NFP_ENABLE, _IOCTL_NFP_ENABLE, IOCTL_NFP_ENABLE control code [Near-Field Proximity Drivers], IOCTL_NFP_ENABLE, nfpdev/IOCTL_NFP_ENABLE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : nfpdev.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SECURE_ELEMENT_TECH_ROUTING_INFO, *PSECURE_ELEMENT_TECH_ROUTING_INFO
+UID: NI:nfpdev.IOCTL_NFP_ENABLE
+title: IOCTL_NFP_ENABLE
+author: windows-driver-content
+description: The client sends the IOCTL_NFP_ENABLE request to re-enable previously disabled subscriptions, publications, and presence events.
+old-location: nfpdrivers\ioctl_nfp_enable.htm
+old-project: nfpdrivers
+ms.assetid: 25D4C7BB-782D-4BDB-9E07-F152E3705705
+ms.author: windowsdriverdev
+ms.date: 12/18/2017
+ms.keywords: nfpdrivers.ioctl_nfp_enable, IOCTL_NFP_ENABLE, _IOCTL_NFP_ENABLE, IOCTL_NFP_ENABLE control code [Near-Field Proximity Drivers], IOCTL_NFP_ENABLE, nfpdev/IOCTL_NFP_ENABLE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: nfpdev.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	nfpdev.h
+apiname:
+-	IOCTL_NFP_ENABLE
+product: Windows
+targetos: Windows
+req.typenames: SECURE_ELEMENT_TECH_ROUTING_INFO, *PSECURE_ELEMENT_TECH_ROUTING_INFO
 ---
 
 # IOCTL_NFP_ENABLE IOCTL

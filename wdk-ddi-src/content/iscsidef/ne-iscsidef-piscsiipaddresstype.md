@@ -1,41 +1,46 @@
 ---
-UID : NE:iscsidef.PISCSIIPADDRESSTYPE
-title : "*PISCSIIPADDRESSTYPE"
-author : windows-driver-content
-description : The ISCSIIPADDRESSTYPE enumeration indicates formats for an IP address.
-old-location : storage\iscsiipaddresstype.htm
-old-project : storage
-ms.assetid : a92f7048-ca8a-450c-93ab-6ea040412198
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : iscsidef/ISCSI_IP_ADDRESS_IPV4, iscsidef/ISCSI_IP_ADDRESS_IPV6, *PISCSIIPADDRESSTYPE, PISCSIIPADDRESSTYPE, structs-iSCSI_3e947807-84e7-4886-aae9-95b8d1b508ab.xml, ISCSI_IP_ADDRESS_IPV4, storage.iscsiipaddresstype, ISCSIIPADDRESSTYPE, ISCSI_IP_ADDRESS_IPV6, iscsidef/PISCSIIPADDRESSTYPE, PISCSIIPADDRESSTYPE enumeration pointer [Storage Devices], iscsidef/ISCSI_IP_ADDRESS_TEXT, ISCSIIPADDRESSTYPE enumeration [Storage Devices], ISCSI_IP_ADDRESS_TEXT, iscsidef/ISCSIIPADDRESSTYPE, ISCSI_IP_ADDRESS_EMPTY, iscsidef/ISCSI_IP_ADDRESS_EMPTY
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : iscsidef.h
-req.include-header : Iscsidef.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : ISCSIIPADDRESSTYPE, *PISCSIIPADDRESSTYPE
+UID: NE:iscsidef.PISCSIIPADDRESSTYPE
+title: "*PISCSIIPADDRESSTYPE"
+author: windows-driver-content
+description: The ISCSIIPADDRESSTYPE enumeration indicates formats for an IP address.
+old-location: storage\iscsiipaddresstype.htm
+old-project: storage
+ms.assetid: a92f7048-ca8a-450c-93ab-6ea040412198
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: iscsidef/ISCSI_IP_ADDRESS_IPV4, iscsidef/ISCSI_IP_ADDRESS_IPV6, *PISCSIIPADDRESSTYPE, PISCSIIPADDRESSTYPE, structs-iSCSI_3e947807-84e7-4886-aae9-95b8d1b508ab.xml, ISCSI_IP_ADDRESS_IPV4, storage.iscsiipaddresstype, ISCSIIPADDRESSTYPE, ISCSI_IP_ADDRESS_IPV6, iscsidef/PISCSIIPADDRESSTYPE, PISCSIIPADDRESSTYPE enumeration pointer [Storage Devices], iscsidef/ISCSI_IP_ADDRESS_TEXT, ISCSIIPADDRESSTYPE enumeration [Storage Devices], ISCSI_IP_ADDRESS_TEXT, iscsidef/ISCSIIPADDRESSTYPE, ISCSI_IP_ADDRESS_EMPTY, iscsidef/ISCSI_IP_ADDRESS_EMPTY
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: iscsidef.h
+req.include-header: Iscsidef.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	iscsidef.h
+apiname:
+-	ISCSIIPADDRESSTYPE
+product: Windows
+targetos: Windows
+req.typenames: ISCSIIPADDRESSTYPE, *PISCSIIPADDRESSTYPE
 ---
 
 # *PISCSIIPADDRESSTYPE Enumeration
@@ -54,26 +59,26 @@ typedef enum  {
 ## Constants
 
 <table>
-
-<tr>
-<td>ISCSI_IP_ADDRESS_EMPTY</td>
-<td>No address is specified.</td>
-</tr>
-
-<tr>
-<td>ISCSI_IP_ADDRESS_IPV4</td>
-<td>The IP address is a binary address that complies with version 4 of the IP protocol.</td>
-</tr>
-
-<tr>
-<td>ISCSI_IP_ADDRESS_IPV6</td>
-<td>The IP address is a binary address that complies with version 6 of the IP protocol.</td>
-</tr>
-
-<tr>
-<td>ISCSI_IP_ADDRESS_TEXT</td>
-<td>The IP address is in dotted decimal text format or in DNS format.</td>
-</tr>
+            
+                <tr>
+                    <td>ISCSI_IP_ADDRESS_EMPTY</td>
+                    <td>No address is specified.</td>
+                </tr>
+            
+                <tr>
+                    <td>ISCSI_IP_ADDRESS_IPV4</td>
+                    <td>The IP address is a binary address that complies with version 4 of the IP protocol.</td>
+                </tr>
+            
+                <tr>
+                    <td>ISCSI_IP_ADDRESS_IPV6</td>
+                    <td>The IP address is a binary address that complies with version 6 of the IP protocol.</td>
+                </tr>
+            
+                <tr>
+                    <td>ISCSI_IP_ADDRESS_TEXT</td>
+                    <td>The IP address is in dotted decimal text format or in DNS format.</td>
+                </tr>
 </table>
 
 
@@ -82,9 +87,9 @@ typedef enum  {
 | ---- |:---- |
 | **Header** | iscsidef.h (include Iscsidef.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\iscsidef\ns-iscsidef-_iscsi_ip_address.md">ISCSI_IP_Address</a>
+        <a href="..\iscsidef\ns-iscsidef-_iscsi_ip_address.md">ISCSI_IP_Address</a>
 
  
 

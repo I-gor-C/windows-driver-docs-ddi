@@ -1,41 +1,46 @@
 ---
-UID : NS:hidpi._HIDP_UNKNOWN_TOKEN
-title : "_HIDP_UNKNOWN_TOKEN"
-author : windows-driver-content
-description : The HIDP_UNKNOWN_TOKEN structure contains information about a global item that the HID parser did not recognize.
-old-location : hid\hidp_unknown_token.htm
-old-project : hid
-ms.assetid : 6c9e0477-1698-41bf-9ce6-43e7e8741425
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : HIDP_UNKNOWN_TOKEN structure [Human Input Devices], hidstrct_646ea225-5fff-4430-9112-06bb4cf8c988.xml, _HIDP_UNKNOWN_TOKEN, hidpi/HIDP_UNKNOWN_TOKEN, PHIDP_UNKNOWN_TOKEN, HIDP_UNKNOWN_TOKEN, hidpi/PHIDP_UNKNOWN_TOKEN, PHIDP_UNKNOWN_TOKEN structure pointer [Human Input Devices], *PHIDP_UNKNOWN_TOKEN, hid.hidp_unknown_token
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : hidpi.h
-req.include-header : Hidpi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HIDP_UNKNOWN_TOKEN, *PHIDP_UNKNOWN_TOKEN
+UID: NS:hidpi._HIDP_UNKNOWN_TOKEN
+title: "_HIDP_UNKNOWN_TOKEN"
+author: windows-driver-content
+description: The HIDP_UNKNOWN_TOKEN structure contains information about a global item that the HID parser did not recognize.
+old-location: hid\hidp_unknown_token.htm
+old-project: hid
+ms.assetid: 6c9e0477-1698-41bf-9ce6-43e7e8741425
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: HIDP_UNKNOWN_TOKEN structure [Human Input Devices], hidstrct_646ea225-5fff-4430-9112-06bb4cf8c988.xml, _HIDP_UNKNOWN_TOKEN, hidpi/HIDP_UNKNOWN_TOKEN, PHIDP_UNKNOWN_TOKEN, HIDP_UNKNOWN_TOKEN, hidpi/PHIDP_UNKNOWN_TOKEN, PHIDP_UNKNOWN_TOKEN structure pointer [Human Input Devices], *PHIDP_UNKNOWN_TOKEN, hid.hidp_unknown_token
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: hidpi.h
+req.include-header: Hidpi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hidpi.h
+apiname:
+-	HIDP_UNKNOWN_TOKEN
+product: Windows
+targetos: Windows
+req.typenames: HIDP_UNKNOWN_TOKEN, *PHIDP_UNKNOWN_TOKEN
 ---
 
 # _HIDP_UNKNOWN_TOKEN structure

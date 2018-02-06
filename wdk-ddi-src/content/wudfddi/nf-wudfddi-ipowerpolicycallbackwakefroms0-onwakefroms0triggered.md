@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IPowerPolicyCallbackWakeFromS0.OnWakeFromS0Triggered
-title : IPowerPolicyCallbackWakeFromS0::OnWakeFromS0Triggered method
-author : windows-driver-content
-description : A driver's OnWakeFromS0Triggered event callback function informs the driver that its device, which had previously entered a low-power device state while the system power state remained at S0, might have triggered a wake signal.
-old-location : wdf\ipowerpolicycallbackwakefroms0_onwakefroms0triggered.htm
-old-project : wdf
-ms.assetid : ebcd31f9-79cd-4c43-8cac-231ff97f269e
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : IPowerPolicyCallbackWakeFromS0::OnWakeFromS0Triggered, UMDFDeviceObjectRef_52f89758-227c-4849-83ac-30826d2d36d0.xml, IPowerPolicyCallbackWakeFromS0 interface, OnWakeFromS0Triggered method, OnWakeFromS0Triggered method, IPowerPolicyCallbackWakeFromS0 interface, OnWakeFromS0Triggered method, umdf.ipowerpolicycallbackwakefroms0_onwakefroms0triggered, wdf.ipowerpolicycallbackwakefroms0_onwakefroms0triggered, wudfddi/IPowerPolicyCallbackWakeFromS0::OnWakeFromS0Triggered, IPowerPolicyCallbackWakeFromS0, OnWakeFromS0Triggered
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.9
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IPowerPolicyCallbackWakeFromS0.OnWakeFromS0Triggered
+title: IPowerPolicyCallbackWakeFromS0::OnWakeFromS0Triggered method
+author: windows-driver-content
+description: A driver's OnWakeFromS0Triggered event callback function informs the driver that its device, which had previously entered a low-power device state while the system power state remained at S0, might have triggered a wake signal.
+old-location: wdf\ipowerpolicycallbackwakefroms0_onwakefroms0triggered.htm
+old-project: wdf
+ms.assetid: ebcd31f9-79cd-4c43-8cac-231ff97f269e
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: IPowerPolicyCallbackWakeFromS0::OnWakeFromS0Triggered, UMDFDeviceObjectRef_52f89758-227c-4849-83ac-30826d2d36d0.xml, IPowerPolicyCallbackWakeFromS0 interface, OnWakeFromS0Triggered method, OnWakeFromS0Triggered method, IPowerPolicyCallbackWakeFromS0 interface, OnWakeFromS0Triggered method, umdf.ipowerpolicycallbackwakefroms0_onwakefroms0triggered, wdf.ipowerpolicycallbackwakefroms0_onwakefroms0triggered, wudfddi/IPowerPolicyCallbackWakeFromS0::OnWakeFromS0Triggered, IPowerPolicyCallbackWakeFromS0, OnWakeFromS0Triggered
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.9
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Wudfddi.h
+apiname:
+-	IPowerPolicyCallbackWakeFromS0.OnWakeFromS0Triggered
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

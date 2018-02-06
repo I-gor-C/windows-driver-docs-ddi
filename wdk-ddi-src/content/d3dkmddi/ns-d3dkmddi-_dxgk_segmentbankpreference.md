@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGK_SEGMENTBANKPREFERENCE
-title : "_DXGK_SEGMENTBANKPREFERENCE"
-author : windows-driver-content
-description : The DXGK_SEGMENTBANKPREFERENCE structure describes bank preferences for paging in an allocation.
-old-location : display\dxgk_segmentbankpreference.htm
-old-project : display
-ms.assetid : ff292137-4d95-4388-aae9-f6436b403c6a
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DXGK_SEGMENTBANKPREFERENCE, DmStructs_58615e96-0b7c-49a9-8966-0f627d7078f7.xml, DXGK_SEGMENTBANKPREFERENCE structure [Display Devices], display.dxgk_segmentbankpreference, d3dkmddi/DXGK_SEGMENTBANKPREFERENCE, _DXGK_SEGMENTBANKPREFERENCE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_SEGMENTBANKPREFERENCE
+UID: NS:d3dkmddi._DXGK_SEGMENTBANKPREFERENCE
+title: "_DXGK_SEGMENTBANKPREFERENCE"
+author: windows-driver-content
+description: The DXGK_SEGMENTBANKPREFERENCE structure describes bank preferences for paging in an allocation.
+old-location: display\dxgk_segmentbankpreference.htm
+old-project: display
+ms.assetid: ff292137-4d95-4388-aae9-f6436b403c6a
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DXGK_SEGMENTBANKPREFERENCE, DmStructs_58615e96-0b7c-49a9-8966-0f627d7078f7.xml, DXGK_SEGMENTBANKPREFERENCE structure [Display Devices], display.dxgk_segmentbankpreference, d3dkmddi/DXGK_SEGMENTBANKPREFERENCE, _DXGK_SEGMENTBANKPREFERENCE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DXGK_SEGMENTBANKPREFERENCE
+product: Windows
+targetos: Windows
+req.typenames: DXGK_SEGMENTBANKPREFERENCE
 ---
 
 # _DXGK_SEGMENTBANKPREFERENCE structure

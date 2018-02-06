@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfchildlist.WdfChildListRetrieveAddressDescription
-title : WdfChildListRetrieveAddressDescription function
-author : windows-driver-content
-description : The WdfChildListRetrieveAddressDescription method locates a child device that has a specified identification description and retrieves the device's address description.
-old-location : wdf\wdfchildlistretrieveaddressdescription.htm
-old-project : wdf
-ms.assetid : 0c551de0-970a-4733-b904-27c40cf7b42f
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WdfChildListRetrieveAddressDescription, kmdf.wdfchildlistretrieveaddressdescription, DFDeviceObjectChildListRef_bd30cd1e-b7ac-40cd-b96f-4071d08bafc1.xml, WdfChildListRetrieveAddressDescription method, PFN_WDFCHILDLISTRETRIEVEADDRESSDESCRIPTION, wdf.wdfchildlistretrieveaddressdescription, wdfchildlist/WdfChildListRetrieveAddressDescription
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfchildlist.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_RETRIEVE_CHILD_FLAGS
-req.product : Windows 10 or later.
+UID: NF:wdfchildlist.WdfChildListRetrieveAddressDescription
+title: WdfChildListRetrieveAddressDescription function
+author: windows-driver-content
+description: The WdfChildListRetrieveAddressDescription method locates a child device that has a specified identification description and retrieves the device's address description.
+old-location: wdf\wdfchildlistretrieveaddressdescription.htm
+old-project: wdf
+ms.assetid: 0c551de0-970a-4733-b904-27c40cf7b42f
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WdfChildListRetrieveAddressDescription, kmdf.wdfchildlistretrieveaddressdescription, DFDeviceObjectChildListRef_bd30cd1e-b7ac-40cd-b96f-4071d08bafc1.xml, WdfChildListRetrieveAddressDescription method, PFN_WDFCHILDLISTRETRIEVEADDRESSDESCRIPTION, wdf.wdfchildlistretrieveaddressdescription, wdfchildlist/WdfChildListRetrieveAddressDescription
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfchildlist.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfChildListRetrieveAddressDescription
+product: Windows
+targetos: Windows
+req.typenames: WDF_RETRIEVE_CHILD_FLAGS
+req.product: Windows 10 or later.
 ---
 
 

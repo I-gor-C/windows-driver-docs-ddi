@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGKARG_UNMAPCPUHOSTAPERTURE
-title : "_DXGKARG_UNMAPCPUHOSTAPERTURE"
-author : windows-driver-content
-description : The DXGKARG_UNMAPCPUHOSTAPERTURE structure is used to unmap a previously mapped range of the CPU host aperture.
-old-location : display\dxgkarg_unmapcpuhostaperture.htm
-old-project : display
-ms.assetid : 22482590-B0F7-4F35-95D5-9B352810047D
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : "_DXGKARG_UNMAPCPUHOSTAPERTURE, display.dxgkarg_unmapcpuhostaperture, d3dkmddi/DXGKARG_UNMAPCPUHOSTAPERTURE, DXGKARG_UNMAPCPUHOSTAPERTURE, DXGKARG_UNMAPCPUHOSTAPERTURE structure [Display Devices]"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGKARG_UNMAPCPUHOSTAPERTURE
+UID: NS:d3dkmddi._DXGKARG_UNMAPCPUHOSTAPERTURE
+title: "_DXGKARG_UNMAPCPUHOSTAPERTURE"
+author: windows-driver-content
+description: The DXGKARG_UNMAPCPUHOSTAPERTURE structure is used to unmap a previously mapped range of the CPU host aperture.
+old-location: display\dxgkarg_unmapcpuhostaperture.htm
+old-project: display
+ms.assetid: 22482590-B0F7-4F35-95D5-9B352810047D
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: "_DXGKARG_UNMAPCPUHOSTAPERTURE, display.dxgkarg_unmapcpuhostaperture, d3dkmddi/DXGKARG_UNMAPCPUHOSTAPERTURE, DXGKARG_UNMAPCPUHOSTAPERTURE, DXGKARG_UNMAPCPUHOSTAPERTURE structure [Display Devices]"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DXGKARG_UNMAPCPUHOSTAPERTURE
+product: Windows
+targetos: Windows
+req.typenames: DXGKARG_UNMAPCPUHOSTAPERTURE
 ---
 
 # _DXGKARG_UNMAPCPUHOSTAPERTURE structure

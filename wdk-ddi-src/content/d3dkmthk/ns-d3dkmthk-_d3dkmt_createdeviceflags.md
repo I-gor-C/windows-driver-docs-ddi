@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmthk._D3DKMT_CREATEDEVICEFLAGS
-title : "_D3DKMT_CREATEDEVICEFLAGS"
-author : windows-driver-content
-description : The D3DKMT_CREATEDEVICEFLAGS structure identifies the type of device context to be created in a call to the D3DKMTCreateDevice function.
-old-location : display\d3dkmt_createdeviceflags.htm
-old-project : display
-ms.assetid : 90d4ce0a-1f36-4f2e-bdbe-5f80c8dfb92a
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DKMT_CREATEDEVICEFLAGS structure [Display Devices], _D3DKMT_CREATEDEVICEFLAGS, D3DKMT_CREATEDEVICEFLAGS, OpenGL_Structs_7cb495c3-44aa-46cb-8bca-87b66c5d422f.xml, d3dkmthk/D3DKMT_CREATEDEVICEFLAGS, display.d3dkmt_createdeviceflags
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_CREATEDEVICEFLAGS
+UID: NS:d3dkmthk._D3DKMT_CREATEDEVICEFLAGS
+title: "_D3DKMT_CREATEDEVICEFLAGS"
+author: windows-driver-content
+description: The D3DKMT_CREATEDEVICEFLAGS structure identifies the type of device context to be created in a call to the D3DKMTCreateDevice function.
+old-location: display\d3dkmt_createdeviceflags.htm
+old-project: display
+ms.assetid: 90d4ce0a-1f36-4f2e-bdbe-5f80c8dfb92a
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DKMT_CREATEDEVICEFLAGS structure [Display Devices], _D3DKMT_CREATEDEVICEFLAGS, D3DKMT_CREATEDEVICEFLAGS, OpenGL_Structs_7cb495c3-44aa-46cb-8bca-87b66c5d422f.xml, d3dkmthk/D3DKMT_CREATEDEVICEFLAGS, display.d3dkmt_createdeviceflags
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmthk.h
+apiname:
+-	D3DKMT_CREATEDEVICEFLAGS
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_CREATEDEVICEFLAGS
 ---
 
 # _D3DKMT_CREATEDEVICEFLAGS structure

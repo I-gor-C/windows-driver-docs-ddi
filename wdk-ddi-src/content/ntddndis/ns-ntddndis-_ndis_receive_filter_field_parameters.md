@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddndis._NDIS_RECEIVE_FILTER_FIELD_PARAMETERS
-title : "_NDIS_RECEIVE_FILTER_FIELD_PARAMETERS"
-author : windows-driver-content
-description : The NDIS_RECEIVE_FILTER_FIELD_PARAMETERS structure specifies the filter test criterion for a field in a network packet header.
-old-location : netvista\ndis_receive_filter_field_parameters.htm
-old-project : netvista
-ms.assetid : 3d387fe9-a7cc-4034-b31e-ba1359db2ae1
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NDIS_RECEIVE_FILTER_FIELD_PARAMETERS_REVISION_1, PNDIS_RECEIVE_FILTER_FIELD_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], ntddndis/PNDIS_RECEIVE_FILTER_FIELD_PARAMETERS, netvista.ndis_receive_filter_field_parameters, NDIS_RECEIVE_FILTER_FIELD_PARAMETERS, _NDIS_RECEIVE_FILTER_FIELD_PARAMETERS, PNDIS_RECEIVE_FILTER_FIELD_PARAMETERS, ntddndis/NDIS_RECEIVE_FILTER_FIELD_PARAMETERS, NDIS_RECEIVE_FILTER_FIELD_PARAMETERS structure [Network Drivers Starting with Windows Vista], *PNDIS_RECEIVE_FILTER_FIELD_PARAMETERS, NDIS_RECEIVE_FILTER_FIELD_PARAMETERS_REVISION_2, virtual_machine_queue_ref_deaf4f73-294d-4e7b-8c94-65d05b461cfe.xml, NDIS_RECEIVE_FILTER_FIELD_MAC_HEADER_VLAN_UNTAGGED_OR_ZERO
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.20 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_RECEIVE_FILTER_FIELD_PARAMETERS, *PNDIS_RECEIVE_FILTER_FIELD_PARAMETERS
+UID: NS:ntddndis._NDIS_RECEIVE_FILTER_FIELD_PARAMETERS
+title: "_NDIS_RECEIVE_FILTER_FIELD_PARAMETERS"
+author: windows-driver-content
+description: The NDIS_RECEIVE_FILTER_FIELD_PARAMETERS structure specifies the filter test criterion for a field in a network packet header.
+old-location: netvista\ndis_receive_filter_field_parameters.htm
+old-project: netvista
+ms.assetid: 3d387fe9-a7cc-4034-b31e-ba1359db2ae1
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NDIS_RECEIVE_FILTER_FIELD_PARAMETERS_REVISION_1, PNDIS_RECEIVE_FILTER_FIELD_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], ntddndis/PNDIS_RECEIVE_FILTER_FIELD_PARAMETERS, netvista.ndis_receive_filter_field_parameters, NDIS_RECEIVE_FILTER_FIELD_PARAMETERS, _NDIS_RECEIVE_FILTER_FIELD_PARAMETERS, PNDIS_RECEIVE_FILTER_FIELD_PARAMETERS, ntddndis/NDIS_RECEIVE_FILTER_FIELD_PARAMETERS, NDIS_RECEIVE_FILTER_FIELD_PARAMETERS structure [Network Drivers Starting with Windows Vista], *PNDIS_RECEIVE_FILTER_FIELD_PARAMETERS, NDIS_RECEIVE_FILTER_FIELD_PARAMETERS_REVISION_2, virtual_machine_queue_ref_deaf4f73-294d-4e7b-8c94-65d05b461cfe.xml, NDIS_RECEIVE_FILTER_FIELD_MAC_HEADER_VLAN_UNTAGGED_OR_ZERO
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.20 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddndis.h
+apiname:
+-	NDIS_RECEIVE_FILTER_FIELD_PARAMETERS
+product: Windows
+targetos: Windows
+req.typenames: NDIS_RECEIVE_FILTER_FIELD_PARAMETERS, *PNDIS_RECEIVE_FILTER_FIELD_PARAMETERS
 ---
 
 # _NDIS_RECEIVE_FILTER_FIELD_PARAMETERS structure

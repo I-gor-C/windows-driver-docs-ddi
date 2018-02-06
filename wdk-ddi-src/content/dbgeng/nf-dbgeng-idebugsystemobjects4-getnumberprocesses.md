@@ -1,41 +1,49 @@
 ---
-UID : NF:dbgeng.IDebugSystemObjects4.GetNumberProcesses
-title : IDebugSystemObjects4::GetNumberProcesses method
-author : windows-driver-content
-description : The GetNumberProcesses method returns the number of processes for the current target.
-old-location : debugger\getnumberprocesses.htm
-old-project : debugger
-ms.assetid : bf0c750f-0e29-42d9-a127-953e3d49b969
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : debugger.getnumberprocesses, IDebugSystemObjects2::GetNumberProcesses, IDebugSystemObjects3::GetNumberProcesses, IDebugSystemObjects4::GetNumberProcesses, GetNumberProcesses, IDebugSystemObjects2 interface [Windows Debugging], GetNumberProcesses method, dbgeng/IDebugSystemObjects::GetNumberProcesses, IDebugSystemObjects3 interface [Windows Debugging], GetNumberProcesses method, GetNumberProcesses method [Windows Debugging], GetNumberProcesses method [Windows Debugging], IDebugSystemObjects4 interface, dbgeng/IDebugSystemObjects4::GetNumberProcesses, IDebugSystemObjects4, dbgeng/IDebugSystemObjects2::GetNumberProcesses, IDebugSystemObjects4 interface [Windows Debugging], GetNumberProcesses method, dbgeng/IDebugSystemObjects3::GetNumberProcesses, IDebugSystemObjects_28914631-9658-462c-8234-f48bb85efdf6.xml, GetNumberProcesses method [Windows Debugging], IDebugSystemObjects2 interface, IDebugSystemObjects::GetNumberProcesses, IDebugSystemObjects interface [Windows Debugging], GetNumberProcesses method, GetNumberProcesses method [Windows Debugging], IDebugSystemObjects interface, GetNumberProcesses method [Windows Debugging], IDebugSystemObjects3 interface
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSystemObjects4.GetNumberProcesses
+title: IDebugSystemObjects4::GetNumberProcesses method
+author: windows-driver-content
+description: The GetNumberProcesses method returns the number of processes for the current target.
+old-location: debugger\getnumberprocesses.htm
+old-project: debugger
+ms.assetid: bf0c750f-0e29-42d9-a127-953e3d49b969
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: debugger.getnumberprocesses, IDebugSystemObjects2::GetNumberProcesses, IDebugSystemObjects3::GetNumberProcesses, IDebugSystemObjects4::GetNumberProcesses, GetNumberProcesses, IDebugSystemObjects2 interface [Windows Debugging], GetNumberProcesses method, dbgeng/IDebugSystemObjects::GetNumberProcesses, IDebugSystemObjects3 interface [Windows Debugging], GetNumberProcesses method, GetNumberProcesses method [Windows Debugging], GetNumberProcesses method [Windows Debugging], IDebugSystemObjects4 interface, dbgeng/IDebugSystemObjects4::GetNumberProcesses, IDebugSystemObjects4, dbgeng/IDebugSystemObjects2::GetNumberProcesses, IDebugSystemObjects4 interface [Windows Debugging], GetNumberProcesses method, dbgeng/IDebugSystemObjects3::GetNumberProcesses, IDebugSystemObjects_28914631-9658-462c-8234-f48bb85efdf6.xml, GetNumberProcesses method [Windows Debugging], IDebugSystemObjects2 interface, IDebugSystemObjects::GetNumberProcesses, IDebugSystemObjects interface [Windows Debugging], GetNumberProcesses method, GetNumberProcesses method [Windows Debugging], IDebugSystemObjects interface, GetNumberProcesses method [Windows Debugging], IDebugSystemObjects3 interface
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugSystemObjects.GetNumberProcesses
+-	IDebugSystemObjects2.GetNumberProcesses
+-	IDebugSystemObjects3.GetNumberProcesses
+-	IDebugSystemObjects4.GetNumberProcesses
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NF:ntddk.RtlValidateCorrelationVector
-title : RtlValidateCorrelationVector function
-author : windows-driver-content
-description : Validates the specified correlation vector to check whether it conforms to the Correlation Vector Specification (v2).
-old-location : kernel\rtlvalidatecorrelationvector.htm
-old-project : kernel
-ms.assetid : a73ab33b-3e8c-43d8-8547-1483bcd2af52
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : RtlValidateCorrelationVector, kernel.rtlvalidatecorrelationvector, ntddk/RtlValidateCorrelationVector, RtlValidateCorrelationVector function [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntddk.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10, version 1709
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe (kernel mode)
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.RtlValidateCorrelationVector
+title: RtlValidateCorrelationVector function
+author: windows-driver-content
+description: Validates the specified correlation vector to check whether it conforms to the Correlation Vector Specification (v2).
+old-location: kernel\rtlvalidatecorrelationvector.htm
+old-project: kernel
+ms.assetid: a73ab33b-3e8c-43d8-8547-1483bcd2af52
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: RtlValidateCorrelationVector, kernel.rtlvalidatecorrelationvector, ntddk/RtlValidateCorrelationVector, RtlValidateCorrelationVector function [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntddk.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10, version 1709
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe (kernel mode)
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	RtlValidateCorrelationVector
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

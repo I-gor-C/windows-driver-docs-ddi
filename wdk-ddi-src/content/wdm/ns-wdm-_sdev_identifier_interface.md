@@ -1,42 +1,47 @@
 ---
-UID : NS:wdm._SDEV_IDENTIFIER_INTERFACE
-title : "_SDEV_IDENTIFIER_INTERFACE"
-author : windows-driver-content
-description : TBD.
-old-location : kernel\_sdev_identifier_interface.htm
-old-project : kernel
-ms.assetid : ead624cc-8aff-4a87-bdeb-066534caa61b
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : "_SDEV_IDENTIFIER_INTERFACE, *PSDEV_IDENTIFIER_INTERFACE, wdm/SDEV_IDENTIFIER_INTERFACE, SDEV_IDENTIFIER_INTERFACE, kernel._sdev_identifier_interface, SDEV_IDENTIFIER_INTERFACE structure [Kernel-Mode Driver Architecture]"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSDEV_IDENTIFIER_INTERFACE, SDEV_IDENTIFIER_INTERFACE"
-req.product : Windows 10 or later.
+UID: NS:wdm._SDEV_IDENTIFIER_INTERFACE
+title: "_SDEV_IDENTIFIER_INTERFACE"
+author: windows-driver-content
+description: TBD.
+old-location: kernel\_sdev_identifier_interface.htm
+old-project: kernel
+ms.assetid: ead624cc-8aff-4a87-bdeb-066534caa61b
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: "_SDEV_IDENTIFIER_INTERFACE, *PSDEV_IDENTIFIER_INTERFACE, wdm/SDEV_IDENTIFIER_INTERFACE, SDEV_IDENTIFIER_INTERFACE, kernel._sdev_identifier_interface, SDEV_IDENTIFIER_INTERFACE structure [Kernel-Mode Driver Architecture]"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdm.h
+apiname:
+-	SDEV_IDENTIFIER_INTERFACE
+product: Windows
+targetos: Windows
+req.typenames: "*PSDEV_IDENTIFIER_INTERFACE, SDEV_IDENTIFIER_INTERFACE"
+req.product: Windows 10 or later.
 ---
 
 # _SDEV_IDENTIFIER_INTERFACE structure

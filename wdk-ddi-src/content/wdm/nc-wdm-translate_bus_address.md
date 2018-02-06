@@ -1,42 +1,47 @@
 ---
-UID : NC:wdm.TRANSLATE_BUS_ADDRESS
-title : TRANSLATE_BUS_ADDRESS
-author : windows-driver-content
-description : The TranslateBusAddress routine translates addresses on the parent bus to logical addresses.
-old-location : kernel\translatebusaddress.htm
-old-project : kernel
-ms.assetid : DDED1237-74B7-4127-8E86-D0794A1FB49B
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.translatebusaddress, TranslateBusAddress routine [Kernel-Mode Driver Architecture], TranslateBusAddress, TRANSLATE_BUS_ADDRESS, TRANSLATE_BUS_ADDRESS, wdm/TranslateBusAddress, kernel.bustranslatebusaddress, drvr_interface_68887adb-724b-47ca-80e6-b8b934ae2414.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdm.h
-req.include-header : Ntddk.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
-req.product : Windows 10 or later.
+UID: NC:wdm.TRANSLATE_BUS_ADDRESS
+title: TRANSLATE_BUS_ADDRESS
+author: windows-driver-content
+description: The TranslateBusAddress routine translates addresses on the parent bus to logical addresses.
+old-location: kernel\translatebusaddress.htm
+old-project: kernel
+ms.assetid: DDED1237-74B7-4127-8E86-D0794A1FB49B
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.translatebusaddress, TranslateBusAddress routine [Kernel-Mode Driver Architecture], TranslateBusAddress, TRANSLATE_BUS_ADDRESS, TRANSLATE_BUS_ADDRESS, wdm/TranslateBusAddress, kernel.bustranslatebusaddress, drvr_interface_68887adb-724b-47ca-80e6-b8b934ae2414.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdm.h
+req.include-header: Ntddk.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	wdm.h
+apiname:
+-	TranslateBusAddress
+product: Windows
+targetos: Windows
+req.typenames: WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+req.product: Windows 10 or later.
 ---
 
 

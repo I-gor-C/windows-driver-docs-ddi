@@ -1,42 +1,48 @@
 ---
-UID : NF:ursdevice.UrsReportHardwareEvent
-title : UrsReportHardwareEvent function
-author : windows-driver-content
-description : Notifies the USB dual-role class extension about a new hardware event.
-old-location : buses\ursreporthardwareevent.htm
-old-project : usbref
-ms.assetid : 2BC80D99-5265-4D0C-A447-5CC2112F53F8
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ursdevice/UrsReportHardwareEvent, UrsReportHardwareEvent, UrsReportHardwareEvent function [Buses], buses.ursreporthardwareevent
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ursdevice.h
-req.include-header : Urscx.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 1.15
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Urscxstub.lib
-req.dll : 
-req.irql : HIGH_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : UMDETW_ALLOCATION_USAGE
-req.product : Windows 10 or later.
+UID: NF:ursdevice.UrsReportHardwareEvent
+title: UrsReportHardwareEvent function
+author: windows-driver-content
+description: Notifies the USB dual-role class extension about a new hardware event.
+old-location: buses\ursreporthardwareevent.htm
+old-project: usbref
+ms.assetid: 2BC80D99-5265-4D0C-A447-5CC2112F53F8
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ursdevice/UrsReportHardwareEvent, UrsReportHardwareEvent, UrsReportHardwareEvent function [Buses], buses.ursreporthardwareevent
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ursdevice.h
+req.include-header: Urscx.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 1.15
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Urscxstub.lib
+req.dll: 
+req.irql: HIGH_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Urscxstub.lib
+-	Urscxstub.dll
+apiname:
+-	UrsReportHardwareEvent
+product: Windows
+targetos: Windows
+req.typenames: UMDETW_ALLOCATION_USAGE
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NS:wdm._REG_CREATE_KEY_INFORMATION_V1
-title : "_REG_CREATE_KEY_INFORMATION_V1"
-author : windows-driver-content
-description : The REG_CREATE_KEY_INFORMATION_V1 structure contains information that a filter driver's RegistryCallback routine can use when a registry key is being created.
-old-location : kernel\reg_create_key_information_v1.htm
-old-project : kernel
-ms.assetid : d81dd8db-9074-43ea-a7bd-e83bd205c564
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/PREG_OPEN_KEY_INFORMATION_V1, _REG_CREATE_KEY_INFORMATION_V1, REG_OPEN_KEY_INFORMATION_V1, wdm/REG_OPEN_KEY_INFORMATION_V1, kernel.reg_create_key_information_v1, REG_OPEN_KEY_INFORMATION_V1 structure [Kernel-Mode Driver Architecture], wdm/REG_CREATE_KEY_INFORMATION_V1, wdm/PREG_CREATE_KEY_INFORMATION_V1, PREG_OPEN_KEY_INFORMATION_V1, PREG_CREATE_KEY_INFORMATION_V1 structure pointer [Kernel-Mode Driver Architecture], PREG_OPEN_KEY_INFORMATION_V1 structure pointer [Kernel-Mode Driver Architecture], kstruct_d_79809cef-3593-4774-8407-c26c281735eb.xml, *PREG_OPEN_KEY_INFORMATION_V1, *PREG_CREATE_KEY_INFORMATION_V1, REG_CREATE_KEY_INFORMATION_V1 structure [Kernel-Mode Driver Architecture], PREG_CREATE_KEY_INFORMATION_V1, REG_CREATE_KEY_INFORMATION_V1
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : Available on Windows 7 and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : REG_OPEN_KEY_INFORMATION_V1, *PREG_OPEN_KEY_INFORMATION_V1, REG_CREATE_KEY_INFORMATION_V1, *PREG_CREATE_KEY_INFORMATION_V1
-req.product : Windows 10 or later.
+UID: NS:wdm._REG_CREATE_KEY_INFORMATION_V1
+title: "_REG_CREATE_KEY_INFORMATION_V1"
+author: windows-driver-content
+description: The REG_CREATE_KEY_INFORMATION_V1 structure contains information that a filter driver's RegistryCallback routine can use when a registry key is being created.
+old-location: kernel\reg_create_key_information_v1.htm
+old-project: kernel
+ms.assetid: d81dd8db-9074-43ea-a7bd-e83bd205c564
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/PREG_OPEN_KEY_INFORMATION_V1, _REG_CREATE_KEY_INFORMATION_V1, REG_OPEN_KEY_INFORMATION_V1, wdm/REG_OPEN_KEY_INFORMATION_V1, kernel.reg_create_key_information_v1, REG_OPEN_KEY_INFORMATION_V1 structure [Kernel-Mode Driver Architecture], wdm/REG_CREATE_KEY_INFORMATION_V1, wdm/PREG_CREATE_KEY_INFORMATION_V1, PREG_OPEN_KEY_INFORMATION_V1, PREG_CREATE_KEY_INFORMATION_V1 structure pointer [Kernel-Mode Driver Architecture], PREG_OPEN_KEY_INFORMATION_V1 structure pointer [Kernel-Mode Driver Architecture], kstruct_d_79809cef-3593-4774-8407-c26c281735eb.xml, *PREG_OPEN_KEY_INFORMATION_V1, *PREG_CREATE_KEY_INFORMATION_V1, REG_CREATE_KEY_INFORMATION_V1 structure [Kernel-Mode Driver Architecture], PREG_CREATE_KEY_INFORMATION_V1, REG_CREATE_KEY_INFORMATION_V1
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: Available on Windows 7 and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	REG_CREATE_KEY_INFORMATION_V1
+product: Windows
+targetos: Windows
+req.typenames: REG_OPEN_KEY_INFORMATION_V1, *PREG_OPEN_KEY_INFORMATION_V1, REG_CREATE_KEY_INFORMATION_V1, *PREG_CREATE_KEY_INFORMATION_V1
+req.product: Windows 10 or later.
 ---
 
 # _REG_CREATE_KEY_INFORMATION_V1 structure

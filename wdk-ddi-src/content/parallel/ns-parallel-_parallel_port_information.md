@@ -1,41 +1,46 @@
 ---
-UID : NS:parallel._PARALLEL_PORT_INFORMATION
-title : "_PARALLEL_PORT_INFORMATION"
-author : windows-driver-content
-description : The PARALLEL_PORT_INFORMATION structure specifies information about the resources assigned to a parallel port, the capabilities of the parallel port, and pointers to callback routines that a kernel-mode driver can use to operate the parallel port.
-old-location : parports\parallel_port_information.htm
-old-project : parports
-ms.assetid : 9f170425-2c65-469e-adae-e845b11b9c8e
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : cisspd_ca857237-0c57-46e9-aedf-f6d40a25dbf8.xml, parallel/PPARALLEL_PORT_INFORMATION, PPARALLEL_PORT_INFORMATION, PARALLEL_PORT_INFORMATION structure [Parallel Ports], PARALLEL_PORT_INFORMATION, parports.parallel_port_information, parallel/PARALLEL_PORT_INFORMATION, _PARALLEL_PORT_INFORMATION, *PPARALLEL_PORT_INFORMATION, PPARALLEL_PORT_INFORMATION structure pointer [Parallel Ports]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : parallel.h
-req.include-header : Parallel.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PARALLEL_PORT_INFORMATION, *PPARALLEL_PORT_INFORMATION
+UID: NS:parallel._PARALLEL_PORT_INFORMATION
+title: "_PARALLEL_PORT_INFORMATION"
+author: windows-driver-content
+description: The PARALLEL_PORT_INFORMATION structure specifies information about the resources assigned to a parallel port, the capabilities of the parallel port, and pointers to callback routines that a kernel-mode driver can use to operate the parallel port.
+old-location: parports\parallel_port_information.htm
+old-project: parports
+ms.assetid: 9f170425-2c65-469e-adae-e845b11b9c8e
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: cisspd_ca857237-0c57-46e9-aedf-f6d40a25dbf8.xml, parallel/PPARALLEL_PORT_INFORMATION, PPARALLEL_PORT_INFORMATION, PARALLEL_PORT_INFORMATION structure [Parallel Ports], PARALLEL_PORT_INFORMATION, parports.parallel_port_information, parallel/PARALLEL_PORT_INFORMATION, _PARALLEL_PORT_INFORMATION, *PPARALLEL_PORT_INFORMATION, PPARALLEL_PORT_INFORMATION structure pointer [Parallel Ports]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: parallel.h
+req.include-header: Parallel.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	parallel.h
+apiname:
+-	PARALLEL_PORT_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: PARALLEL_PORT_INFORMATION, *PPARALLEL_PORT_INFORMATION
 ---
 
 # _PARALLEL_PORT_INFORMATION structure

@@ -1,42 +1,47 @@
 ---
-UID : NC:wdm.KBUGCHECK_CALLBACK_ROUTINE
-title : KBUGCHECK_CALLBACK_ROUTINE
-author : windows-driver-content
-description : The BugCheckCallback routine is executed whenever the system issues a bug check.
-old-location : kernel\bugcheckcallback.htm
-old-project : kernel
-ms.assetid : ecd777f0-bba2-4f14-9fa6-8f47ac83fe7f
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.bugcheckcallback, BugCheckCallback, BugCheckCallback routine [Kernel-Mode Driver Architecture], BugCheckCallback, KBUGCHECK_CALLBACK_ROUTINE, KBUGCHECK_CALLBACK_ROUTINE, wdm/BugCheckCallback, DrvrRtns_e968f3db-9875-4f94-8781-074029354e2c.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Called at HIGH_LEVEL.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
-req.product : Windows 10 or later.
+UID: NC:wdm.KBUGCHECK_CALLBACK_ROUTINE
+title: KBUGCHECK_CALLBACK_ROUTINE
+author: windows-driver-content
+description: The BugCheckCallback routine is executed whenever the system issues a bug check.
+old-location: kernel\bugcheckcallback.htm
+old-project: kernel
+ms.assetid: ecd777f0-bba2-4f14-9fa6-8f47ac83fe7f
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.bugcheckcallback, BugCheckCallback, BugCheckCallback routine [Kernel-Mode Driver Architecture], BugCheckCallback, KBUGCHECK_CALLBACK_ROUTINE, KBUGCHECK_CALLBACK_ROUTINE, wdm/BugCheckCallback, DrvrRtns_e968f3db-9875-4f94-8781-074029354e2c.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Called at HIGH_LEVEL.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Wdm.h
+apiname:
+-	BugCheckCallback
+product: Windows
+targetos: Windows
+req.typenames: WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+req.product: Windows 10 or later.
 ---
 
 

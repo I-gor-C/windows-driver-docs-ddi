@@ -1,42 +1,47 @@
 ---
-UID : NF:wdfdevice.WdfDeviceGetDeviceStackIoType
-title : WdfDeviceGetDeviceStackIoType function
-author : windows-driver-content
-description : The WdfDeviceGetDeviceStackIoType method retrieves the buffer access methods that the framework is using for a device.
-old-location : wdf\wdfdevicegetdevicestackiotype.htm
-old-project : wdf
-ms.assetid : E697F53C-2642-4E3F-AA8C-D0802B39D187
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : PFN_WDFDEVICEGETDEVICESTACKIOTYPE, wdf.wdfdevicegetdevicestackiotype, WdfDeviceGetDeviceStackIoType, wdfdevice/WdfDeviceGetDeviceStackIoType, WdfDeviceGetDeviceStackIoType method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfdevice.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : Windows 8.1
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : WUDFx02000.lib
-req.dll : WUDFx02000.dll; TBD
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_STATE_NOTIFICATION_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfdevice.WdfDeviceGetDeviceStackIoType
+title: WdfDeviceGetDeviceStackIoType function
+author: windows-driver-content
+description: The WdfDeviceGetDeviceStackIoType method retrieves the buffer access methods that the framework is using for a device.
+old-location: wdf\wdfdevicegetdevicestackiotype.htm
+old-project: wdf
+ms.assetid: E697F53C-2642-4E3F-AA8C-D0802B39D187
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: PFN_WDFDEVICEGETDEVICESTACKIOTYPE, wdf.wdfdevicegetdevicestackiotype, WdfDeviceGetDeviceStackIoType, wdfdevice/WdfDeviceGetDeviceStackIoType, WdfDeviceGetDeviceStackIoType method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfdevice.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: Windows 8.1
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: WUDFx02000.lib
+req.dll: WUDFx02000.dll; TBD
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	WUDFx02000.dll
+apiname:
+-	WdfDeviceGetDeviceStackIoType
+product: Windows
+targetos: Windows
+req.typenames: WDF_STATE_NOTIFICATION_TYPE
+req.product: Windows 10 or later.
 ---
 
 

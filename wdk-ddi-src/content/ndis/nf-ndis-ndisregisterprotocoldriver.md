@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisRegisterProtocolDriver
-title : NdisRegisterProtocolDriver function
-author : windows-driver-content
-description : A protocol driver calls the NdisRegisterProtocolDriver function to register its ProtocolXxx functions with NDIS.
-old-location : netvista\ndisregisterprotocoldriver.htm
-old-project : netvista
-ms.assetid : b48571eb-13a2-4541-80ac-c8d31f378d37
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : ndis/NdisRegisterProtocolDriver, netvista.ndisregisterprotocoldriver, protocol_ndis_functions_ref_023b338a-65cf-4ccb-bce8-d1506f37f632.xml, NdisRegisterProtocolDriver function [Network Drivers Starting with Windows Vista], NdisRegisterProtocolDriver
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_Protocol_Driver_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisRegisterProtocolDriver
+title: NdisRegisterProtocolDriver function
+author: windows-driver-content
+description: A protocol driver calls the NdisRegisterProtocolDriver function to register its ProtocolXxx functions with NDIS.
+old-location: netvista\ndisregisterprotocoldriver.htm
+old-project: netvista
+ms.assetid: b48571eb-13a2-4541-80ac-c8d31f378d37
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: ndis/NdisRegisterProtocolDriver, netvista.ndisregisterprotocoldriver, protocol_ndis_functions_ref_023b338a-65cf-4ccb-bce8-d1506f37f632.xml, NdisRegisterProtocolDriver function [Network Drivers Starting with Windows Vista], NdisRegisterProtocolDriver
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_Protocol_Driver_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisRegisterProtocolDriver
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

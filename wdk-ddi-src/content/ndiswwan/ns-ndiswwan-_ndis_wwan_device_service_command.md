@@ -1,41 +1,46 @@
 ---
-UID : NS:ndiswwan._NDIS_WWAN_DEVICE_SERVICE_COMMAND
-title : "_NDIS_WWAN_DEVICE_SERVICE_COMMAND"
-author : windows-driver-content
-description : The NDIS_WWAN_DEVICE_SERVICE_COMMAND structure describes device service command data.
-old-location : netvista\ndis_wwan_device_service_command.htm
-old-project : netvista
-ms.assetid : 372625F8-0219-4867-909D-ACCC82F6B97C
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NDIS_WWAN_DEVICE_SERVICE_COMMAND, *PNDIS_WWAN_DEVICE_SERVICE_COMMAND, NDIS_WWAN_DEVICE_SERVICE_COMMAND structure [Network Drivers Starting with Windows Vista], PNDIS_WWAN_DEVICE_SERVICE_COMMAND structure pointer [Network Drivers Starting with Windows Vista], ndiswwan/NDIS_WWAN_DEVICE_SERVICE_COMMAND, netvista.ndis_wwan_device_service_command, ndiswwan/PNDIS_WWAN_DEVICE_SERVICE_COMMAND, _NDIS_WWAN_DEVICE_SERVICE_COMMAND, PNDIS_WWAN_DEVICE_SERVICE_COMMAND
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndiswwan.h
-req.include-header : Ndiswwan.h
-req.target-type : Windows
-req.target-min-winverclnt : Versions:\_Supported in Windows 8 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PNDIS_WWAN_DEVICE_SERVICE_COMMAND, NDIS_WWAN_DEVICE_SERVICE_COMMAND"
+UID: NS:ndiswwan._NDIS_WWAN_DEVICE_SERVICE_COMMAND
+title: "_NDIS_WWAN_DEVICE_SERVICE_COMMAND"
+author: windows-driver-content
+description: The NDIS_WWAN_DEVICE_SERVICE_COMMAND structure describes device service command data.
+old-location: netvista\ndis_wwan_device_service_command.htm
+old-project: netvista
+ms.assetid: 372625F8-0219-4867-909D-ACCC82F6B97C
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NDIS_WWAN_DEVICE_SERVICE_COMMAND, *PNDIS_WWAN_DEVICE_SERVICE_COMMAND, NDIS_WWAN_DEVICE_SERVICE_COMMAND structure [Network Drivers Starting with Windows Vista], PNDIS_WWAN_DEVICE_SERVICE_COMMAND structure pointer [Network Drivers Starting with Windows Vista], ndiswwan/NDIS_WWAN_DEVICE_SERVICE_COMMAND, netvista.ndis_wwan_device_service_command, ndiswwan/PNDIS_WWAN_DEVICE_SERVICE_COMMAND, _NDIS_WWAN_DEVICE_SERVICE_COMMAND, PNDIS_WWAN_DEVICE_SERVICE_COMMAND
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndiswwan.h
+req.include-header: Ndiswwan.h
+req.target-type: Windows
+req.target-min-winverclnt: Versions:\_Supported in Windows 8 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndiswwan.h
+apiname:
+-	NDIS_WWAN_DEVICE_SERVICE_COMMAND
+product: Windows
+targetos: Windows
+req.typenames: "*PNDIS_WWAN_DEVICE_SERVICE_COMMAND, NDIS_WWAN_DEVICE_SERVICE_COMMAND"
 ---
 
 # _NDIS_WWAN_DEVICE_SERVICE_COMMAND structure

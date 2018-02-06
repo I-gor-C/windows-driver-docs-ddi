@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dkmddi.DXGKCB_QUERYVIDPNINTERFACE
-title : DXGKCB_QUERYVIDPNINTERFACE
-author : windows-driver-content
-description : The DxgkCbQueryVidPnInterface function returns a pointer to a DXGK_VIDPN_INTERFACE structure. The structure contains pointers to functions that the display miniport driver can call to inspect and alter a VidPN object.
-old-location : display\dxgkcbqueryvidpninterface.htm
-old-project : display
-ms.assetid : 649ce7fc-6852-43f3-b944-b2b64fcba874
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkcbqueryvidpninterface, DxgkCbQueryVidPnInterface callback function [Display Devices], DxgkCbQueryVidPnInterface, DXGKCB_QUERYVIDPNINTERFACE, DXGKCB_QUERYVIDPNINTERFACE, d3dkmddi/DxgkCbQueryVidPnInterface, DpFunctions_0bbf993b-c05b-402b-af4a-cf1a3ec4d4b8.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
+UID: NC:d3dkmddi.DXGKCB_QUERYVIDPNINTERFACE
+title: DXGKCB_QUERYVIDPNINTERFACE
+author: windows-driver-content
+description: The DxgkCbQueryVidPnInterface function returns a pointer to a DXGK_VIDPN_INTERFACE structure. The structure contains pointers to functions that the display miniport driver can call to inspect and alter a VidPN object.
+old-location: display\dxgkcbqueryvidpninterface.htm
+old-project: display
+ms.assetid: 649ce7fc-6852-43f3-b944-b2b64fcba874
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkcbqueryvidpninterface, DxgkCbQueryVidPnInterface callback function [Display Devices], DxgkCbQueryVidPnInterface, DXGKCB_QUERYVIDPNINTERFACE, DXGKCB_QUERYVIDPNINTERFACE, d3dkmddi/DxgkCbQueryVidPnInterface, DpFunctions_0bbf993b-c05b-402b-af4a-cf1a3ec4d4b8.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DxgkCbQueryVidPnInterface
+product: Windows
+targetos: Windows
+req.typenames: DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
 

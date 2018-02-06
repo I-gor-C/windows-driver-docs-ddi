@@ -1,42 +1,47 @@
 ---
-UID : NS:winddiui._DOCEVENT_FILTER
-title : "_DOCEVENT_FILTER"
-author : windows-driver-content
-description : The DOCEVENT_FILTER structure contains a list of document events to which the printer driver will respond. See DrvDocumentEvent for a complete list of the document events.
-old-location : print\docevent_filter.htm
-old-project : print
-ms.assetid : f486efdb-79fd-4c57-bff6-75a0dbd68cc0
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : DOCEVENT_FILTER, PDOCEVENT_FILTER, winddiui/PDOCEVENT_FILTER, print_interface-graphics_ddc1c545-869f-440d-a364-7cd90ca189e0.xml, PDOCEVENT_FILTER structure pointer [Print Devices], print.docevent_filter, _DOCEVENT_FILTER, *PDOCEVENT_FILTER, winddiui/DOCEVENT_FILTER, DOCEVENT_FILTER structure [Print Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : winddiui.h
-req.include-header : Winddiui.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOCEVENT_FILTER, *PDOCEVENT_FILTER
-req.product : Windows 10 or later.
+UID: NS:winddiui._DOCEVENT_FILTER
+title: "_DOCEVENT_FILTER"
+author: windows-driver-content
+description: The DOCEVENT_FILTER structure contains a list of document events to which the printer driver will respond. See DrvDocumentEvent for a complete list of the document events.
+old-location: print\docevent_filter.htm
+old-project: print
+ms.assetid: f486efdb-79fd-4c57-bff6-75a0dbd68cc0
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: DOCEVENT_FILTER, PDOCEVENT_FILTER, winddiui/PDOCEVENT_FILTER, print_interface-graphics_ddc1c545-869f-440d-a364-7cd90ca189e0.xml, PDOCEVENT_FILTER structure pointer [Print Devices], print.docevent_filter, _DOCEVENT_FILTER, *PDOCEVENT_FILTER, winddiui/DOCEVENT_FILTER, DOCEVENT_FILTER structure [Print Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: winddiui.h
+req.include-header: Winddiui.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	winddiui.h
+apiname:
+-	DOCEVENT_FILTER
+product: Windows
+targetos: Windows
+req.typenames: DOCEVENT_FILTER, *PDOCEVENT_FILTER
+req.product: Windows 10 or later.
 ---
 
 # _DOCEVENT_FILTER structure

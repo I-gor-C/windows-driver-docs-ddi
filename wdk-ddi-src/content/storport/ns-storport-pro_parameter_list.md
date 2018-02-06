@@ -1,42 +1,47 @@
 ---
-UID : NS:storport.PRO_PARAMETER_LIST
-title : PRO_PARAMETER_LIST
-author : windows-driver-content
-description : The PRO_PARAMETER_LIST structure is sent in a Persistent Reserve Out command to a device server.
-old-location : storage\pro_parameter_list.htm
-old-project : storage
-ms.assetid : 96c128e1-c38a-412f-adeb-cde820e1af4e
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storport/PPRO_PARAMETER_LIST, PPRO_PARAMETER_LIST, storport/PRO_PARAMETER_LIST, PRO_PARAMETER_LIST, PRO_PARAMETER_LIST structure [Storage Devices], structs-general_7481edb0-cc60-44b9-abcc-80bf0f79fbae.xml, PPRO_PARAMETER_LIST structure pointer [Storage Devices], storage.pro_parameter_list, *PPRO_PARAMETER_LIST
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : storport.h
-req.include-header : Ntddstor.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PRO_PARAMETER_LIST, *PPRO_PARAMETER_LIST
-req.product : Windows 10 or later.
+UID: NS:storport.PRO_PARAMETER_LIST
+title: PRO_PARAMETER_LIST
+author: windows-driver-content
+description: The PRO_PARAMETER_LIST structure is sent in a Persistent Reserve Out command to a device server.
+old-location: storage\pro_parameter_list.htm
+old-project: storage
+ms.assetid: 96c128e1-c38a-412f-adeb-cde820e1af4e
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storport/PPRO_PARAMETER_LIST, PPRO_PARAMETER_LIST, storport/PRO_PARAMETER_LIST, PRO_PARAMETER_LIST, PRO_PARAMETER_LIST structure [Storage Devices], structs-general_7481edb0-cc60-44b9-abcc-80bf0f79fbae.xml, PPRO_PARAMETER_LIST structure pointer [Storage Devices], storage.pro_parameter_list, *PPRO_PARAMETER_LIST
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: storport.h
+req.include-header: Ntddstor.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	storport.h
+apiname:
+-	PRO_PARAMETER_LIST
+product: Windows
+targetos: Windows
+req.typenames: PRO_PARAMETER_LIST, *PPRO_PARAMETER_LIST
+req.product: Windows 10 or later.
 ---
 
 # PRO_PARAMETER_LIST structure

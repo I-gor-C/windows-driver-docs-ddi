@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfpdo.WdfPdoInitAssignRawDevice
-title : WdfPdoInitAssignRawDevice function
-author : windows-driver-content
-description : The WdfPdoInitAssignRawDevice method indicates that the calling driver can support a specified device in raw mode.
-old-location : wdf\wdfpdoinitassignrawdevice.htm
-old-project : wdf
-ms.assetid : 419912d0-40d0-4fa9-be3b-770875271640
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WdfPdoInitAssignRawDevice, DFDeviceObjectFdoPdoRef_afe4967c-d7ea-4c78-98ff-9bcfb98f6b80.xml, wdfpdo/WdfPdoInitAssignRawDevice, wdf.wdfpdoinitassignrawdevice, kmdf.wdfpdoinitassignrawdevice, WdfPdoInitAssignRawDevice method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfpdo.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : ChildDeviceInitAPI, DriverCreate, InitFreeDeviceCallback, InitFreeDeviceCreate, InitFreeNull, KmdfIrql, KmdfIrql2,  PdoDeviceInitAPI, PdoInitFreeDeviceCallback, PdoInitFreeDeviceCreate
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDF_OBJECT_CONTEXT_TYPE_INFO, WDF_OBJECT_CONTEXT_TYPE_INFO"
-req.product : Windows 10 or later.
+UID: NF:wdfpdo.WdfPdoInitAssignRawDevice
+title: WdfPdoInitAssignRawDevice function
+author: windows-driver-content
+description: The WdfPdoInitAssignRawDevice method indicates that the calling driver can support a specified device in raw mode.
+old-location: wdf\wdfpdoinitassignrawdevice.htm
+old-project: wdf
+ms.assetid: 419912d0-40d0-4fa9-be3b-770875271640
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WdfPdoInitAssignRawDevice, DFDeviceObjectFdoPdoRef_afe4967c-d7ea-4c78-98ff-9bcfb98f6b80.xml, wdfpdo/WdfPdoInitAssignRawDevice, wdf.wdfpdoinitassignrawdevice, kmdf.wdfpdoinitassignrawdevice, WdfPdoInitAssignRawDevice method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfpdo.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: ChildDeviceInitAPI, DriverCreate, InitFreeDeviceCallback, InitFreeDeviceCreate, InitFreeNull, KmdfIrql, KmdfIrql2,  PdoDeviceInitAPI, PdoInitFreeDeviceCallback, PdoInitFreeDeviceCreate
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfPdoInitAssignRawDevice
+product: Windows
+targetos: Windows
+req.typenames: "*PWDF_OBJECT_CONTEXT_TYPE_INFO, WDF_OBJECT_CONTEXT_TYPE_INFO"
+req.product: Windows 10 or later.
 ---
 
 

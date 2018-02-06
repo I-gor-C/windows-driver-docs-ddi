@@ -1,42 +1,47 @@
 ---
-UID : NN:wudfddi.IPnpCallbackSelfManagedIo
-title : IPnpCallbackSelfManagedIo
-author : windows-driver-content
-description : The IPnpCallbackSelfManagedIo interface is a Plug and Play (PnP) and power management (PM) interface.
-old-location : wdf\ipnpcallbackselfmanagedio.htm
-old-project : wdf
-ms.assetid : 34971df0-4abc-41a1-8d2f-6e36df1daf20
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.ipnpcallbackselfmanagedio, IPnpCallbackSelfManagedIo interface, IPnpCallbackSelfManagedIo interface, described, IPnpCallbackSelfManagedIo, wudfddi/IPnpCallbackSelfManagedIo, UMDFDeviceObjectRef_0f139c45-68eb-4429-ac90-675d7eddea5a.xml, umdf.ipnpcallbackselfmanagedio
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NN:wudfddi.IPnpCallbackSelfManagedIo
+title: IPnpCallbackSelfManagedIo
+author: windows-driver-content
+description: The IPnpCallbackSelfManagedIo interface is a Plug and Play (PnP) and power management (PM) interface.
+old-location: wdf\ipnpcallbackselfmanagedio.htm
+old-project: wdf
+ms.assetid: 34971df0-4abc-41a1-8d2f-6e36df1daf20
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.ipnpcallbackselfmanagedio, IPnpCallbackSelfManagedIo interface, IPnpCallbackSelfManagedIo interface, described, IPnpCallbackSelfManagedIo, wudfddi/IPnpCallbackSelfManagedIo, UMDFDeviceObjectRef_0f139c45-68eb-4429-ac90-675d7eddea5a.xml, umdf.ipnpcallbackselfmanagedio
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Wudfddi.h
+apiname:
+-	IPnpCallbackSelfManagedIo
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 # IPnpCallbackSelfManagedIo interface

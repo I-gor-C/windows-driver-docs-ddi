@@ -1,42 +1,47 @@
 ---
-UID : NC:wdfio.EVT_WDF_IO_QUEUE_IO_STOP
-title : EVT_WDF_IO_QUEUE_IO_STOP
-author : windows-driver-content
-description : A driver's EvtIoStop event callback function completes, requeues, or suspends processing of a specified request because the request's I/O queue is being stopped.
-old-location : wdf\evtiostop.htm
-old-project : wdf
-ms.assetid : 71a789f1-4f10-44c3-8bd0-a0ea74ec28ab
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.evtiostop, EvtIoStop callback function, EvtIoStop, EVT_WDF_IO_QUEUE_IO_STOP, EVT_WDF_IO_QUEUE_IO_STOP, wdfio/EvtIoStop, DFQueueObjectRef_b9df4689-1de5-4c08-b2a2-c9f126a7d0bc.xml, kmdf.evtiostop
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdfio.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL (see Remarks section)"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_INTERRUPT_INFO, *PWDF_INTERRUPT_INFO
-req.product : Windows 10 or later.
+UID: NC:wdfio.EVT_WDF_IO_QUEUE_IO_STOP
+title: EVT_WDF_IO_QUEUE_IO_STOP
+author: windows-driver-content
+description: A driver's EvtIoStop event callback function completes, requeues, or suspends processing of a specified request because the request's I/O queue is being stopped.
+old-location: wdf\evtiostop.htm
+old-project: wdf
+ms.assetid: 71a789f1-4f10-44c3-8bd0-a0ea74ec28ab
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.evtiostop, EvtIoStop callback function, EvtIoStop, EVT_WDF_IO_QUEUE_IO_STOP, EVT_WDF_IO_QUEUE_IO_STOP, wdfio/EvtIoStop, DFQueueObjectRef_b9df4689-1de5-4c08-b2a2-c9f126a7d0bc.xml, kmdf.evtiostop
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdfio.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL (see Remarks section)"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Wdfio.h
+apiname:
+-	EvtIoStop
+product: Windows
+targetos: Windows
+req.typenames: WDF_INTERRUPT_INFO, *PWDF_INTERRUPT_INFO
+req.product: Windows 10 or later.
 ---
 
 

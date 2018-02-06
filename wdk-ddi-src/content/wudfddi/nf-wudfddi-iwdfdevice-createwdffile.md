@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFDevice.CreateWdfFile
-title : IWDFDevice::CreateWdfFile method
-author : windows-driver-content
-description : The CreateWdfFile method creates a file object for a driver to use.
-old-location : wdf\iwdfdevice_createwdffile.htm
-old-project : wdf
-ms.assetid : b356e3ac-451d-4a10-94e2-d03fcf76cb29
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : CreateWdfFile method, IWDFDevice::CreateWdfFile, IWDFDevice interface, CreateWdfFile method, wudfddi/IWDFDevice::CreateWdfFile, CreateWdfFile method, IWDFDevice interface, UMDFDeviceObjectRef_d5f035e1-d7ea-474e-9dc4-bc6b64baea2c.xml, umdf.iwdfdevice_createwdffile, wdf.iwdfdevice_createwdffile, IWDFDevice, CreateWdfFile
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.5
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFDevice.CreateWdfFile
+title: IWDFDevice::CreateWdfFile method
+author: windows-driver-content
+description: The CreateWdfFile method creates a file object for a driver to use.
+old-location: wdf\iwdfdevice_createwdffile.htm
+old-project: wdf
+ms.assetid: b356e3ac-451d-4a10-94e2-d03fcf76cb29
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: CreateWdfFile method, IWDFDevice::CreateWdfFile, IWDFDevice interface, CreateWdfFile method, wudfddi/IWDFDevice::CreateWdfFile, CreateWdfFile method, IWDFDevice interface, UMDFDeviceObjectRef_d5f035e1-d7ea-474e-9dc4-bc6b64baea2c.xml, umdf.iwdfdevice_createwdffile, wdf.iwdfdevice_createwdffile, IWDFDevice, CreateWdfFile
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.5
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFDevice.CreateWdfFile
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

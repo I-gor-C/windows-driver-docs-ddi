@@ -1,42 +1,47 @@
 ---
-UID : NS:scsiwmi.SCSIWMI_REQUEST_CONTEXT
-title : SCSIWMI_REQUEST_CONTEXT
-author : windows-driver-content
-description : A SCSIWMI_REQUEST_CONTEXT structure contains context information for a WMI SRB.
-old-location : storage\scsiwmi_request_context.htm
-old-project : storage
-ms.assetid : 524150d8-d4a7-4b61-89c4-0074c938559b
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : structs-scsibus_3323f388-8dc7-4723-bc2c-7822ed622ccd.xml, scsiwmi/PSCSIWMI_REQUEST_CONTEXT, PSCSIWMI_REQUEST_CONTEXT structure pointer [Storage Devices], PSCSIWMI_REQUEST_CONTEXT, *PSCSIWMI_REQUEST_CONTEXT, SCSIWMI_REQUEST_CONTEXT structure [Storage Devices], storage.scsiwmi_request_context, scsiwmi/SCSIWMI_REQUEST_CONTEXT, SCSIWMI_REQUEST_CONTEXT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : scsiwmi.h
-req.include-header : Scsiwmi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSCSIWMI_REQUEST_CONTEXT, SCSIWMI_REQUEST_CONTEXT"
-req.product : Windows 10 or later.
+UID: NS:scsiwmi.SCSIWMI_REQUEST_CONTEXT
+title: SCSIWMI_REQUEST_CONTEXT
+author: windows-driver-content
+description: A SCSIWMI_REQUEST_CONTEXT structure contains context information for a WMI SRB.
+old-location: storage\scsiwmi_request_context.htm
+old-project: storage
+ms.assetid: 524150d8-d4a7-4b61-89c4-0074c938559b
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: structs-scsibus_3323f388-8dc7-4723-bc2c-7822ed622ccd.xml, scsiwmi/PSCSIWMI_REQUEST_CONTEXT, PSCSIWMI_REQUEST_CONTEXT structure pointer [Storage Devices], PSCSIWMI_REQUEST_CONTEXT, *PSCSIWMI_REQUEST_CONTEXT, SCSIWMI_REQUEST_CONTEXT structure [Storage Devices], storage.scsiwmi_request_context, scsiwmi/SCSIWMI_REQUEST_CONTEXT, SCSIWMI_REQUEST_CONTEXT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: scsiwmi.h
+req.include-header: Scsiwmi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	scsiwmi.h
+apiname:
+-	SCSIWMI_REQUEST_CONTEXT
+product: Windows
+targetos: Windows
+req.typenames: "*PSCSIWMI_REQUEST_CONTEXT, SCSIWMI_REQUEST_CONTEXT"
+req.product: Windows 10 or later.
 ---
 
 # SCSIWMI_REQUEST_CONTEXT structure

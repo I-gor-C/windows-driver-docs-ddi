@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddvdeo._VIDEO_MEMORY_INFORMATION
-title : "_VIDEO_MEMORY_INFORMATION"
-author : windows-driver-content
-description : The VIDEO_MEMORY_INFORMATION structure contains information about a mapping of video memory into system space or the private virtual address space of a user-mode process.
-old-location : display\video_memory_information.htm
-old-project : display
-ms.assetid : 7d580d5c-b97f-4d26-9eec-165c5db66a0b
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : ntddvdeo/PVIDEO_MEMORY_INFORMATION, PVIDEO_MEMORY_INFORMATION, Video_Structs_efc1abe7-c8bb-403f-ae5d-136b25881929.xml, _VIDEO_MEMORY_INFORMATION, PVIDEO_MEMORY_INFORMATION structure pointer [Display Devices], VIDEO_MEMORY_INFORMATION structure [Display Devices], display.video_memory_information, VIDEO_MEMORY_INFORMATION, *PVIDEO_MEMORY_INFORMATION, ntddvdeo/VIDEO_MEMORY_INFORMATION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddvdeo.h
-req.include-header : Ntddvdeo.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_MEMORY_INFORMATION, *PVIDEO_MEMORY_INFORMATION
+UID: NS:ntddvdeo._VIDEO_MEMORY_INFORMATION
+title: "_VIDEO_MEMORY_INFORMATION"
+author: windows-driver-content
+description: The VIDEO_MEMORY_INFORMATION structure contains information about a mapping of video memory into system space or the private virtual address space of a user-mode process.
+old-location: display\video_memory_information.htm
+old-project: display
+ms.assetid: 7d580d5c-b97f-4d26-9eec-165c5db66a0b
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: ntddvdeo/PVIDEO_MEMORY_INFORMATION, PVIDEO_MEMORY_INFORMATION, Video_Structs_efc1abe7-c8bb-403f-ae5d-136b25881929.xml, _VIDEO_MEMORY_INFORMATION, PVIDEO_MEMORY_INFORMATION structure pointer [Display Devices], VIDEO_MEMORY_INFORMATION structure [Display Devices], display.video_memory_information, VIDEO_MEMORY_INFORMATION, *PVIDEO_MEMORY_INFORMATION, ntddvdeo/VIDEO_MEMORY_INFORMATION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddvdeo.h
+req.include-header: Ntddvdeo.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddvdeo.h
+apiname:
+-	VIDEO_MEMORY_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_MEMORY_INFORMATION, *PVIDEO_MEMORY_INFORMATION
 ---
 
 # _VIDEO_MEMORY_INFORMATION structure

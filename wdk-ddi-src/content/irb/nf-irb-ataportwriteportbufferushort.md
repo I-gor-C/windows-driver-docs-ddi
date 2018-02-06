@@ -1,41 +1,49 @@
 ---
-UID : NF:irb.AtaPortWritePortBufferUshort
-title : AtaPortWritePortBufferUshort function
-author : windows-driver-content
-description : The AtaPortWritePortBufferUshort routine transfers the indicated number of USHORT values from a buffer to the HBA.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
-old-location : storage\ataportwriteportbufferushort.htm
-old-project : storage
-ms.assetid : b2b5b126-8cb3-494f-a67e-f8d4f37ec639
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : atartns_78cda4b1-7995-40c3-a784-ed66d8a8d520.xml, irb/AtaPortWritePortBufferUshort, storage.ataportwriteportbufferushort, AtaPortWritePortBufferUshort routine [Storage Devices], AtaPortWritePortBufferUshort
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : irb.h
-req.include-header : Ata.h, Irb.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ataport.lib; Pciidex.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : IDE_POWER_STATE
+UID: NF:irb.AtaPortWritePortBufferUshort
+title: AtaPortWritePortBufferUshort function
+author: windows-driver-content
+description: The AtaPortWritePortBufferUshort routine transfers the indicated number of USHORT values from a buffer to the HBA.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
+old-location: storage\ataportwriteportbufferushort.htm
+old-project: storage
+ms.assetid: b2b5b126-8cb3-494f-a67e-f8d4f37ec639
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: atartns_78cda4b1-7995-40c3-a784-ed66d8a8d520.xml, irb/AtaPortWritePortBufferUshort, storage.ataportwriteportbufferushort, AtaPortWritePortBufferUshort routine [Storage Devices], AtaPortWritePortBufferUshort
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: irb.h
+req.include-header: Ata.h, Irb.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ataport.lib; Pciidex.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ataport.lib
+-	ataport.dll
+-	pciidex.lib
+-	pciidex.dll
+apiname:
+-	AtaPortWritePortBufferUshort
+product: Windows
+targetos: Windows
+req.typenames: IDE_POWER_STATE
 ---
 
 

@@ -1,41 +1,47 @@
 ---
-UID : NF:portcls.PcRegisterIoTimeout
-title : PcRegisterIoTimeout function
-author : windows-driver-content
-description : The PcRegisterIoTimeout function registers a driver-supplied I/O-timer callback routine for a specified device object.
-old-location : audio\pcregisteriotimeout.htm
-old-project : audio
-ms.assetid : 9cd7c366-1745-45b0-b9e9-87a259110621
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : audio.pcregisteriotimeout, audpc-routines_1a63a1fa-c80a-4fe4-87d6-95543e6e2f1d.xml, PcRegisterIoTimeout function [Audio Devices], PcRegisterIoTimeout, portcls/PcRegisterIoTimeout
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : portcls.h
-req.include-header : Portcls.h
-req.target-type : Universal
-req.target-min-winverclnt : The PortCls system driver implements the PcRegisterIoTimeout function in Microsoft Windows 98/Me and in Windows 2000 and later operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Portcls.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.PcRegisterIoTimeout
+title: PcRegisterIoTimeout function
+author: windows-driver-content
+description: The PcRegisterIoTimeout function registers a driver-supplied I/O-timer callback routine for a specified device object.
+old-location: audio\pcregisteriotimeout.htm
+old-project: audio
+ms.assetid: 9cd7c366-1745-45b0-b9e9-87a259110621
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: audio.pcregisteriotimeout, audpc-routines_1a63a1fa-c80a-4fe4-87d6-95543e6e2f1d.xml, PcRegisterIoTimeout function [Audio Devices], PcRegisterIoTimeout, portcls/PcRegisterIoTimeout
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: portcls.h
+req.include-header: Portcls.h
+req.target-type: Universal
+req.target-min-winverclnt: The PortCls system driver implements the PcRegisterIoTimeout function in Microsoft Windows 98/Me and in Windows 2000 and later operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Portcls.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Portcls.lib
+-	Portcls.dll
+apiname:
+-	PcRegisterIoTimeout
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

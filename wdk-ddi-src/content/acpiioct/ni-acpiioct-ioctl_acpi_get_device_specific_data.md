@@ -1,41 +1,46 @@
 ---
-UID : NI:acpiioct.IOCTL_ACPI_GET_DEVICE_SPECIFIC_DATA
-title : IOCTL_ACPI_GET_DEVICE_SPECIFIC_DATA
-author : windows-driver-content
-description : The IOCTL_ACPI_GET_DEVICE_SPECIFIC_DATA control code is used to get device specific data.
-old-location : acpi\ioctl_acpi_get_device_specific_data.htm
-old-project : acpi
-ms.assetid : D77E272D-833E-40EA-97AA-137E0A219730
-ms.author : windowsdriverdev
-ms.date : 12/31/2017
-ms.keywords : acpi.ioctl_acpi_get_device_specific_data, IOCTL_ACPI_GET_DEVICE_SPECIFIC_DATA control code [ACPI Devices], IOCTL_ACPI_GET_DEVICE_SPECIFIC_DATA, acpiioct/IOCTL_ACPI_GET_DEVICE_SPECIFIC_DATA
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : acpiioct.h
-req.include-header : Acpiioct.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : UNIT_ISOCH_PARAMS, *PUNIT_ISOCH_PARAMS
+UID: NI:acpiioct.IOCTL_ACPI_GET_DEVICE_SPECIFIC_DATA
+title: IOCTL_ACPI_GET_DEVICE_SPECIFIC_DATA
+author: windows-driver-content
+description: The IOCTL_ACPI_GET_DEVICE_SPECIFIC_DATA control code is used to get device specific data.
+old-location: acpi\ioctl_acpi_get_device_specific_data.htm
+old-project: acpi
+ms.assetid: D77E272D-833E-40EA-97AA-137E0A219730
+ms.author: windowsdriverdev
+ms.date: 12/31/2017
+ms.keywords: acpi.ioctl_acpi_get_device_specific_data, IOCTL_ACPI_GET_DEVICE_SPECIFIC_DATA control code [ACPI Devices], IOCTL_ACPI_GET_DEVICE_SPECIFIC_DATA, acpiioct/IOCTL_ACPI_GET_DEVICE_SPECIFIC_DATA
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: acpiioct.h
+req.include-header: Acpiioct.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Acpiioct.h
+apiname:
+-	IOCTL_ACPI_GET_DEVICE_SPECIFIC_DATA
+product: Windows
+targetos: Windows
+req.typenames: UNIT_ISOCH_PARAMS, *PUNIT_ISOCH_PARAMS
 ---
 
 # IOCTL_ACPI_GET_DEVICE_SPECIFIC_DATA IOCTL

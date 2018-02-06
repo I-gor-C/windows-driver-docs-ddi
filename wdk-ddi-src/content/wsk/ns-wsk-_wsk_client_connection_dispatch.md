@@ -1,42 +1,47 @@
 ---
-UID : NS:wsk._WSK_CLIENT_CONNECTION_DISPATCH
-title : "_WSK_CLIENT_CONNECTION_DISPATCH"
-author : windows-driver-content
-description : The WSK_CLIENT_CONNECTION_DISPATCH structure specifies a WSK application's dispatch table of event callback functions for a connection-oriented socket.
-old-location : netvista\wsk_client_connection_dispatch.htm
-old-project : netvista
-ms.assetid : 960eee8a-2950-4baf-b32d-be13b3d65951
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : wsk/PWSK_CLIENT_CONNECTION_DISPATCH, WSK_CLIENT_CONNECTION_DISPATCH, *PWSK_CLIENT_CONNECTION_DISPATCH, PWSK_CLIENT_CONNECTION_DISPATCH structure pointer [Network Drivers Starting with Windows Vista], WSK_CLIENT_CONNECTION_DISPATCH structure [Network Drivers Starting with Windows Vista], PWSK_CLIENT_CONNECTION_DISPATCH, _WSK_CLIENT_CONNECTION_DISPATCH, wsk/WSK_CLIENT_CONNECTION_DISPATCH, wskref_2fd26ffb-dab8-4529-9fd0-6043509312c9.xml, netvista.wsk_client_connection_dispatch
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wsk.h
-req.include-header : Wsk.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating   systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWSK_CLIENT_CONNECTION_DISPATCH, WSK_CLIENT_CONNECTION_DISPATCH"
-req.product : Windows 10 or later.
+UID: NS:wsk._WSK_CLIENT_CONNECTION_DISPATCH
+title: "_WSK_CLIENT_CONNECTION_DISPATCH"
+author: windows-driver-content
+description: The WSK_CLIENT_CONNECTION_DISPATCH structure specifies a WSK application's dispatch table of event callback functions for a connection-oriented socket.
+old-location: netvista\wsk_client_connection_dispatch.htm
+old-project: netvista
+ms.assetid: 960eee8a-2950-4baf-b32d-be13b3d65951
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: wsk/PWSK_CLIENT_CONNECTION_DISPATCH, WSK_CLIENT_CONNECTION_DISPATCH, *PWSK_CLIENT_CONNECTION_DISPATCH, PWSK_CLIENT_CONNECTION_DISPATCH structure pointer [Network Drivers Starting with Windows Vista], WSK_CLIENT_CONNECTION_DISPATCH structure [Network Drivers Starting with Windows Vista], PWSK_CLIENT_CONNECTION_DISPATCH, _WSK_CLIENT_CONNECTION_DISPATCH, wsk/WSK_CLIENT_CONNECTION_DISPATCH, wskref_2fd26ffb-dab8-4529-9fd0-6043509312c9.xml, netvista.wsk_client_connection_dispatch
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wsk.h
+req.include-header: Wsk.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wsk.h
+apiname:
+-	WSK_CLIENT_CONNECTION_DISPATCH
+product: Windows
+targetos: Windows
+req.typenames: "*PWSK_CLIENT_CONNECTION_DISPATCH, WSK_CLIENT_CONNECTION_DISPATCH"
+req.product: Windows 10 or later.
 ---
 
 # _WSK_CLIENT_CONNECTION_DISPATCH structure

@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.KeEnterCriticalRegion
-title : KeEnterCriticalRegion function
-author : windows-driver-content
-description : The KeEnterCriticalRegion routine temporarily disables the execution of normal kernel APCs, but does not prevent special kernel APCs from running.
-old-location : kernel\keentercriticalregion.htm
-old-project : kernel
-ms.assetid : 87826cc7-2710-4582-a324-365dd34e2d0d
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : KeEnterCriticalRegion, wdm/KeEnterCriticalRegion, KeEnterCriticalRegion routine [Kernel-Mode Driver Architecture], kernel.keentercriticalregion, k105_cfa63781-e7c6-455a-8e99-4b20872a0b3f.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : CriticalRegions, IrqlKeApcLte2, WithinCriticalRegion, HwStorPortProhibitedDDIs, WithinCriticalRegion(storport)
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.KeEnterCriticalRegion
+title: KeEnterCriticalRegion function
+author: windows-driver-content
+description: The KeEnterCriticalRegion routine temporarily disables the execution of normal kernel APCs, but does not prevent special kernel APCs from running.
+old-location: kernel\keentercriticalregion.htm
+old-project: kernel
+ms.assetid: 87826cc7-2710-4582-a324-365dd34e2d0d
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: KeEnterCriticalRegion, wdm/KeEnterCriticalRegion, KeEnterCriticalRegion routine [Kernel-Mode Driver Architecture], kernel.keentercriticalregion, k105_cfa63781-e7c6-455a-8e99-4b20872a0b3f.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: CriticalRegions, IrqlKeApcLte2, WithinCriticalRegion, HwStorPortProhibitedDDIs, WithinCriticalRegion(storport)
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	KeEnterCriticalRegion
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

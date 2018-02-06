@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmthk._D3DKMT_CREATEPAGINGQUEUE
-title : "_D3DKMT_CREATEPAGINGQUEUE"
-author : windows-driver-content
-description : D3DKMT_CREATEPAGINGQUEUE is used with D3DKMTCreatePagingQueue to create a device paging queue that can be used to synchronize with video memory management operations for the device, such as making the device resource resident.
-old-location : display\d3dkmt_createpagingqueue.htm
-old-project : display
-ms.assetid : F7C2847F-D095-4A79-ADBB-DA0745E3192A
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DKMT_CREATEPAGINGQUEUE, display.d3dkmt_createpagingqueue, D3DKMT_CREATEPAGINGQUEUE structure [Display Devices], d3dkmthk/D3DKMT_CREATEPAGINGQUEUE, _D3DKMT_CREATEPAGINGQUEUE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_CREATEPAGINGQUEUE
+UID: NS:d3dkmthk._D3DKMT_CREATEPAGINGQUEUE
+title: "_D3DKMT_CREATEPAGINGQUEUE"
+author: windows-driver-content
+description: D3DKMT_CREATEPAGINGQUEUE is used with D3DKMTCreatePagingQueue to create a device paging queue that can be used to synchronize with video memory management operations for the device, such as making the device resource resident.
+old-location: display\d3dkmt_createpagingqueue.htm
+old-project: display
+ms.assetid: F7C2847F-D095-4A79-ADBB-DA0745E3192A
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DKMT_CREATEPAGINGQUEUE, display.d3dkmt_createpagingqueue, D3DKMT_CREATEPAGINGQUEUE structure [Display Devices], d3dkmthk/D3DKMT_CREATEPAGINGQUEUE, _D3DKMT_CREATEPAGINGQUEUE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmthk.h
+apiname:
+-	D3DKMT_CREATEPAGINGQUEUE
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_CREATEPAGINGQUEUE
 ---
 
 # _D3DKMT_CREATEPAGINGQUEUE structure

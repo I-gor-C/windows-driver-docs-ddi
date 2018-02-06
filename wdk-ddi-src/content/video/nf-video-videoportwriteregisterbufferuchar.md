@@ -1,42 +1,47 @@
 ---
-UID : NF:video.VideoPortWriteRegisterBufferUchar
-title : VideoPortWriteRegisterBufferUchar function
-author : windows-driver-content
-description : The VideoPortWriteRegisterBufferUchar function writes a number of unsigned bytes to a mapped register.
-old-location : display\videoportwriteregisterbufferuchar.htm
-old-project : display
-ms.assetid : 43ceb589-e90f-4090-88ed-ada813ac6a6f
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : video/VideoPortWriteRegisterBufferUchar, VideoPortWriteRegisterBufferUchar function [Display Devices], VideoPortWriteRegisterBufferUchar, display.videoportwriteregisterbufferuchar, VideoPort_Functions_5a9ee1e8-744e-4141-993d-1a1710599431.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows 2000 and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Videoprt.lib
-req.dll : Videoprt.sys
-req.irql : Any level (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_PORT_SERVICES
-req.product : Windows 10 or later.
+UID: NF:video.VideoPortWriteRegisterBufferUchar
+title: VideoPortWriteRegisterBufferUchar function
+author: windows-driver-content
+description: The VideoPortWriteRegisterBufferUchar function writes a number of unsigned bytes to a mapped register.
+old-location: display\videoportwriteregisterbufferuchar.htm
+old-project: display
+ms.assetid: 43ceb589-e90f-4090-88ed-ada813ac6a6f
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: video/VideoPortWriteRegisterBufferUchar, VideoPortWriteRegisterBufferUchar function [Display Devices], VideoPortWriteRegisterBufferUchar, display.videoportwriteregisterbufferuchar, VideoPort_Functions_5a9ee1e8-744e-4141-993d-1a1710599431.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows 2000 and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Videoprt.lib
+req.dll: Videoprt.sys
+req.irql: Any level (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Videoprt.sys
+apiname:
+-	VideoPortWriteRegisterBufferUchar
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_PORT_SERVICES
+req.product: Windows 10 or later.
 ---
 
 

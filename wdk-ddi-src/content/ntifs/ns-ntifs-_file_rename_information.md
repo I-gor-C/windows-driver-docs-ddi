@@ -1,41 +1,46 @@
 ---
-UID : NS:ntifs._FILE_RENAME_INFORMATION
-title : "_FILE_RENAME_INFORMATION"
-author : windows-driver-content
-description : The FILE_RENAME_INFORMATION structure is used to rename a file.
-old-location : ifsk\file_rename_information.htm
-old-project : ifsk
-ms.assetid : 25a195ab-faf1-488d-a9b2-65ae88b57ebd
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : PFILE_RENAME_INFORMATION, fileinformationstructures_d9a99263-5aec-400a-ab30-73949a81a4f6.xml, FILE_RENAME_INFORMATION structure [Installable File System Drivers], ntifs/FILE_RENAME_INFORMATION, _FILE_RENAME_INFORMATION, ntifs/PFILE_RENAME_INFORMATION, *PFILE_RENAME_INFORMATION, FILE_RENAME_INFORMATION, PFILE_RENAME_INFORMATION structure pointer [Installable File System Drivers], ifsk.file_rename_information
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntifs.h
-req.include-header : Ntifs.h, Fltkernel.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PFILE_RENAME_INFORMATION, FILE_RENAME_INFORMATION"
+UID: NS:ntifs._FILE_RENAME_INFORMATION
+title: "_FILE_RENAME_INFORMATION"
+author: windows-driver-content
+description: The FILE_RENAME_INFORMATION structure is used to rename a file.
+old-location: ifsk\file_rename_information.htm
+old-project: ifsk
+ms.assetid: 25a195ab-faf1-488d-a9b2-65ae88b57ebd
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: PFILE_RENAME_INFORMATION, fileinformationstructures_d9a99263-5aec-400a-ab30-73949a81a4f6.xml, FILE_RENAME_INFORMATION structure [Installable File System Drivers], ntifs/FILE_RENAME_INFORMATION, _FILE_RENAME_INFORMATION, ntifs/PFILE_RENAME_INFORMATION, *PFILE_RENAME_INFORMATION, FILE_RENAME_INFORMATION, PFILE_RENAME_INFORMATION structure pointer [Installable File System Drivers], ifsk.file_rename_information
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntifs.h
+req.include-header: Ntifs.h, Fltkernel.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntifs.h
+apiname:
+-	FILE_RENAME_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: "*PFILE_RENAME_INFORMATION, FILE_RENAME_INFORMATION"
 ---
 
 # _FILE_RENAME_INFORMATION structure

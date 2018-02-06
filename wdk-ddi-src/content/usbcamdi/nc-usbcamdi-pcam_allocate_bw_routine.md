@@ -1,42 +1,47 @@
 ---
-UID : NC:usbcamdi.PCAM_ALLOCATE_BW_ROUTINE
-title : PCAM_ALLOCATE_BW_ROUTINE
-author : windows-driver-content
-description : A camera minidriver's CamAllocateBandwidth callback function selects the appropriate alternate setting within the USB video streaming interface and prepares the device to stream.
-old-location : stream\camallocatebandwidth.htm
-old-project : stream
-ms.assetid : 0dd01bf7-04a8-4d20-982a-1ec81076583f
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.camallocatebandwidth, CamAllocateBandwidth, CamAllocateBandwidth callback function [Streaming Media Devices], CamAllocateBandwidth, PCAM_ALLOCATE_BW_ROUTINE, PCAM_ALLOCATE_BW_ROUTINE, usbcamdi/CamAllocateBandwidth, usbcmdpr_4e7b22dc-0f6d-4a9b-82df-61c14cae981b.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : usbcamdi.h
-req.include-header : Usbcamdi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUSB_BUS_INTERFACE_USBDI_V3, USB_BUS_INTERFACE_USBDI_V3"
-req.product : Windows 10 or later.
+UID: NC:usbcamdi.PCAM_ALLOCATE_BW_ROUTINE
+title: PCAM_ALLOCATE_BW_ROUTINE
+author: windows-driver-content
+description: A camera minidriver's CamAllocateBandwidth callback function selects the appropriate alternate setting within the USB video streaming interface and prepares the device to stream.
+old-location: stream\camallocatebandwidth.htm
+old-project: stream
+ms.assetid: 0dd01bf7-04a8-4d20-982a-1ec81076583f
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.camallocatebandwidth, CamAllocateBandwidth, CamAllocateBandwidth callback function [Streaming Media Devices], CamAllocateBandwidth, PCAM_ALLOCATE_BW_ROUTINE, PCAM_ALLOCATE_BW_ROUTINE, usbcamdi/CamAllocateBandwidth, usbcmdpr_4e7b22dc-0f6d-4a9b-82df-61c14cae981b.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: usbcamdi.h
+req.include-header: Usbcamdi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	usbcamdi.h
+apiname:
+-	CamAllocateBandwidth
+product: Windows
+targetos: Windows
+req.typenames: "*PUSB_BUS_INTERFACE_USBDI_V3, USB_BUS_INTERFACE_USBDI_V3"
+req.product: Windows 10 or later.
 ---
 
 

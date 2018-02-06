@@ -1,42 +1,47 @@
 ---
-UID : NF:spb.SPB_TRANSFER_LIST_INIT
-title : SPB_TRANSFER_LIST_INIT function
-author : windows-driver-content
-description : The SPB_TRANSFER_LIST_INIT function initializes an SPB_TRANSFER_LIST structure.
-old-location : spb\spb_transfer_list_init.htm
-old-project : SPB
-ms.assetid : 7FFFB495-7E6A-465C-AE93-B62957179531
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : SPB_TRANSFER_LIST_INIT, SPB_TRANSFER_LIST_INIT function [Buses], SPB.spb_transfer_list_init, spb/SPB_TRANSFER_LIST_INIT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : spb.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SPB_TRANSFER_DIRECTION, *PSPB_TRANSFER_DIRECTION
-req.product : Windows 10 or later.
+UID: NF:spb.SPB_TRANSFER_LIST_INIT
+title: SPB_TRANSFER_LIST_INIT function
+author: windows-driver-content
+description: The SPB_TRANSFER_LIST_INIT function initializes an SPB_TRANSFER_LIST structure.
+old-location: spb\spb_transfer_list_init.htm
+old-project: SPB
+ms.assetid: 7FFFB495-7E6A-465C-AE93-B62957179531
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: SPB_TRANSFER_LIST_INIT, SPB_TRANSFER_LIST_INIT function [Buses], SPB.spb_transfer_list_init, spb/SPB_TRANSFER_LIST_INIT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: spb.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Spb.h
+apiname:
+-	SPB_TRANSFER_LIST_INIT
+product: Windows
+targetos: Windows
+req.typenames: SPB_TRANSFER_DIRECTION, *PSPB_TRANSFER_DIRECTION
+req.product: Windows 10 or later.
 ---
 
 

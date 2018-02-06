@@ -1,41 +1,47 @@
 ---
-UID : NF:dbgeng.IDebugControl3.OutputTextReplacements
-title : IDebugControl3::OutputTextReplacements method
-author : windows-driver-content
-description : The OutputTextReplacements method prints all the currently defined user-named aliases to the debugger's output stream.
-old-location : debugger\outputtextreplacements.htm
-old-project : debugger
-ms.assetid : ea01fa02-8f4b-45c3-9690-30c8a1e6b4e5
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugControl3 interface [Windows Debugging], OutputTextReplacements method, IDebugControl3::OutputTextReplacements, IDebugControl3, debugger.outputtextreplacements, IDebugControl_57964e7b-e11a-446f-afab-7d3326fab695.xml, OutputTextReplacements, OutputTextReplacements method [Windows Debugging], IDebugControl2 interface, OutputTextReplacements method [Windows Debugging], IDebugControl2 interface [Windows Debugging], OutputTextReplacements method, dbgeng/IDebugControl3::OutputTextReplacements, OutputTextReplacements method [Windows Debugging], IDebugControl3 interface, dbgeng/IDebugControl2::OutputTextReplacements, IDebugControl2::OutputTextReplacements
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl3.OutputTextReplacements
+title: IDebugControl3::OutputTextReplacements method
+author: windows-driver-content
+description: The OutputTextReplacements method prints all the currently defined user-named aliases to the debugger's output stream.
+old-location: debugger\outputtextreplacements.htm
+old-project: debugger
+ms.assetid: ea01fa02-8f4b-45c3-9690-30c8a1e6b4e5
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugControl3 interface [Windows Debugging], OutputTextReplacements method, IDebugControl3::OutputTextReplacements, IDebugControl3, debugger.outputtextreplacements, IDebugControl_57964e7b-e11a-446f-afab-7d3326fab695.xml, OutputTextReplacements, OutputTextReplacements method [Windows Debugging], IDebugControl2 interface, OutputTextReplacements method [Windows Debugging], IDebugControl2 interface [Windows Debugging], OutputTextReplacements method, dbgeng/IDebugControl3::OutputTextReplacements, OutputTextReplacements method [Windows Debugging], IDebugControl3 interface, dbgeng/IDebugControl2::OutputTextReplacements, IDebugControl2::OutputTextReplacements
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl2.OutputTextReplacements
+-	IDebugControl3.OutputTextReplacements
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

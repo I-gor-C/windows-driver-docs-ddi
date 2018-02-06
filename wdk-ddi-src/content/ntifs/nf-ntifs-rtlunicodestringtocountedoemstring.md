@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.RtlUnicodeStringToCountedOemString
-title : RtlUnicodeStringToCountedOemString function
-author : windows-driver-content
-description : The RtlUnicodeStringToCountedOemString routine translates the specified Unicode source string into a counted OEM string using the current system OEM code page.
-old-location : ifsk\rtlunicodestringtocountedoemstring.htm
-old-project : ifsk
-ms.assetid : 7479d5d0-69d0-42b8-9aa1-5eab8b71b118
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.rtlunicodestringtocountedoemstring, ntifs/RtlUnicodeStringToCountedOemString, rtlref_dbc62228-043f-43f1-bd19-464adf37b693.xml, RtlUnicodeStringToCountedOemString routine [Installable File System Drivers], RtlUnicodeStringToCountedOemString
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "< DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.RtlUnicodeStringToCountedOemString
+title: RtlUnicodeStringToCountedOemString function
+author: windows-driver-content
+description: The RtlUnicodeStringToCountedOemString routine translates the specified Unicode source string into a counted OEM string using the current system OEM code page.
+old-location: ifsk\rtlunicodestringtocountedoemstring.htm
+old-project: ifsk
+ms.assetid: 7479d5d0-69d0-42b8-9aa1-5eab8b71b118
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.rtlunicodestringtocountedoemstring, ntifs/RtlUnicodeStringToCountedOemString, rtlref_dbc62228-043f-43f1-bd19-464adf37b693.xml, RtlUnicodeStringToCountedOemString routine [Installable File System Drivers], RtlUnicodeStringToCountedOemString
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "< DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	RtlUnicodeStringToCountedOemString
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

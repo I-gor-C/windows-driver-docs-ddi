@@ -1,12 +1,12 @@
 ---
-UID : NA:hidport
-ms.assetid : a158f664-a913-37af-9370-c18096783d37
-ms.author : windowsdriverdev
-ms.date : 01/18/18
-ms.keywords : 
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : portal
+UID: NA:hidport
+ms.assetid: a158f664-a913-37af-9370-c18096783d37
+ms.author: windowsdriverdev
+ms.date: 01/18/18
+ms.keywords: 
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: portal
 ---
 
 # hidport.h header

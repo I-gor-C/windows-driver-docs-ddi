@@ -1,42 +1,48 @@
 ---
-UID : NF:srb.ScsiPortConvertUlongToPhysicalAddress
-title : ScsiPortConvertUlongToPhysicalAddress function
-author : windows-driver-content
-description : The ScsiPortConvertUlongToPhysicalAddress routine extends a given ULONG address into a value of type SCSI_PHYSICAL_ADDRESS.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future.
-old-location : storage\scsiportconvertulongtophysicaladdress.htm
-old-project : storage
-ms.assetid : 98d491f8-eeb5-4152-9bb6-fffabcba0360
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.scsiportconvertulongtophysicaladdress, ScsiPortConvertUlongToPhysicalAddress routine [Storage Devices], srb/ScsiPortConvertUlongToPhysicalAddress, scsiprt_9dc27865-55c2-4599-913c-babe77c62af9.xml, ScsiPortConvertUlongToPhysicalAddress
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : srb.h
-req.include-header : Miniport.h, Scsi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Scsiport.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SPB_CONTROLLER_CONFIG, *PSPB_CONTROLLER_CONFIG
-req.product : Windows 10 or later.
+UID: NF:srb.ScsiPortConvertUlongToPhysicalAddress
+title: ScsiPortConvertUlongToPhysicalAddress function
+author: windows-driver-content
+description: The ScsiPortConvertUlongToPhysicalAddress routine extends a given ULONG address into a value of type SCSI_PHYSICAL_ADDRESS.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future.
+old-location: storage\scsiportconvertulongtophysicaladdress.htm
+old-project: storage
+ms.assetid: 98d491f8-eeb5-4152-9bb6-fffabcba0360
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.scsiportconvertulongtophysicaladdress, ScsiPortConvertUlongToPhysicalAddress routine [Storage Devices], srb/ScsiPortConvertUlongToPhysicalAddress, scsiprt_9dc27865-55c2-4599-913c-babe77c62af9.xml, ScsiPortConvertUlongToPhysicalAddress
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: srb.h
+req.include-header: Miniport.h, Scsi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Scsiport.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Scsiport.lib
+-	Scsiport.dll
+apiname:
+-	ScsiPortConvertUlongToPhysicalAddress
+product: Windows
+targetos: Windows
+req.typenames: SPB_CONTROLLER_CONFIG, *PSPB_CONTROLLER_CONFIG
+req.product: Windows 10 or later.
 ---
 
 

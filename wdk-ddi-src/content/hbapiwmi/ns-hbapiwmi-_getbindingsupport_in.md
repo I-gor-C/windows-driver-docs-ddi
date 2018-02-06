@@ -1,41 +1,46 @@
 ---
-UID : NS:hbapiwmi._GetBindingSupport_IN
-title : "_GetBindingSupport_IN"
-author : windows-driver-content
-description : The GetBindingSupport_IN structure is used by a WMI client to deliver the input parameter data of the GetBindingSupport WMI method to the HBA miniport driver.
-old-location : storage\getbindingsupport_in.htm
-old-project : storage
-ms.assetid : f5383092-9e77-4b58-911a-4842a3b9e9ef
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.getbindingsupport_in, GetBindingSupport_IN structure [Storage Devices], PGetBindingSupport_IN structure pointer [Storage Devices], structs-Fibre_858abc05-6d3e-4630-a9f9-4b9aa742ea8e.xml, PGetBindingSupport_IN, hbapiwmi/PGetBindingSupport_IN, _GetBindingSupport_IN, hbapiwmi/GetBindingSupport_IN, *PGetBindingSupport_IN, GetBindingSupport_IN
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : hbapiwmi.h
-req.include-header : Hbapiwmi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PGetBindingSupport_IN, GetBindingSupport_IN"
+UID: NS:hbapiwmi._GetBindingSupport_IN
+title: "_GetBindingSupport_IN"
+author: windows-driver-content
+description: The GetBindingSupport_IN structure is used by a WMI client to deliver the input parameter data of the GetBindingSupport WMI method to the HBA miniport driver.
+old-location: storage\getbindingsupport_in.htm
+old-project: storage
+ms.assetid: f5383092-9e77-4b58-911a-4842a3b9e9ef
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.getbindingsupport_in, GetBindingSupport_IN structure [Storage Devices], PGetBindingSupport_IN structure pointer [Storage Devices], structs-Fibre_858abc05-6d3e-4630-a9f9-4b9aa742ea8e.xml, PGetBindingSupport_IN, hbapiwmi/PGetBindingSupport_IN, _GetBindingSupport_IN, hbapiwmi/GetBindingSupport_IN, *PGetBindingSupport_IN, GetBindingSupport_IN
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: hbapiwmi.h
+req.include-header: Hbapiwmi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hbapiwmi.h
+apiname:
+-	GetBindingSupport_IN
+product: Windows
+targetos: Windows
+req.typenames: "*PGetBindingSupport_IN, GetBindingSupport_IN"
 ---
 
 # _GetBindingSupport_IN structure

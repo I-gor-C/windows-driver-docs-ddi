@@ -1,42 +1,47 @@
 ---
-UID : NF:wdbgexts.GetSetSympath
-title : GetSetSympath function
-author : windows-driver-content
-description : The GetSetSympath function can be used to either get or set the symbol search path.
-old-location : debugger\getsetsympath.htm
-old-project : debugger
-ms.assetid : 2c7392c2-49c8-4b27-addc-0200eabbe87e
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : WdbgExts_Ref_66364d7b-fd3c-424a-a04d-b7bf24178039.xml, GetSetSympath function [Windows Debugging], GetSetSympath, wdbgexts/GetSetSympath, debugger.getsetsympath
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdbgexts.h
-req.include-header : Wdbgexts.h, Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXT_TDOP
-req.product : Windows 10 or later.
+UID: NF:wdbgexts.GetSetSympath
+title: GetSetSympath function
+author: windows-driver-content
+description: The GetSetSympath function can be used to either get or set the symbol search path.
+old-location: debugger\getsetsympath.htm
+old-project: debugger
+ms.assetid: 2c7392c2-49c8-4b27-addc-0200eabbe87e
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: WdbgExts_Ref_66364d7b-fd3c-424a-a04d-b7bf24178039.xml, GetSetSympath function [Windows Debugging], GetSetSympath, wdbgexts/GetSetSympath, debugger.getsetsympath
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdbgexts.h
+req.include-header: Wdbgexts.h, Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdbgexts.h
+apiname:
+-	GetSetSympath
+product: Windows
+targetos: Windows
+req.typenames: EXT_TDOP
+req.product: Windows 10 or later.
 ---
 
 

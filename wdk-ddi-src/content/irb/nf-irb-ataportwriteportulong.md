@@ -1,41 +1,49 @@
 ---
-UID : NF:irb.AtaPortWritePortUlong
-title : AtaPortWritePortUlong function
-author : windows-driver-content
-description : The AtaPortWritePortUlong routine transfers a ULONG value to the HBA.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
-old-location : storage\ataportwriteportulong.htm
-old-project : storage
-ms.assetid : 49c01a7c-4e09-4ad2-9157-ab75b1a23d66
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ataportwriteportulong, atartns_4930ccb8-61a2-415e-897a-6e3ef573e623.xml, AtaPortWritePortUlong, irb/AtaPortWritePortUlong, AtaPortWritePortUlong routine [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : irb.h
-req.include-header : Ata.h, Irb.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ataport.lib; Pciidex.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : IDE_POWER_STATE
+UID: NF:irb.AtaPortWritePortUlong
+title: AtaPortWritePortUlong function
+author: windows-driver-content
+description: The AtaPortWritePortUlong routine transfers a ULONG value to the HBA.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
+old-location: storage\ataportwriteportulong.htm
+old-project: storage
+ms.assetid: 49c01a7c-4e09-4ad2-9157-ab75b1a23d66
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ataportwriteportulong, atartns_4930ccb8-61a2-415e-897a-6e3ef573e623.xml, AtaPortWritePortUlong, irb/AtaPortWritePortUlong, AtaPortWritePortUlong routine [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: irb.h
+req.include-header: Ata.h, Irb.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ataport.lib; Pciidex.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ataport.lib
+-	ataport.dll
+-	pciidex.lib
+-	pciidex.dll
+apiname:
+-	AtaPortWritePortUlong
+product: Windows
+targetos: Windows
+req.typenames: IDE_POWER_STATE
 ---
 
 

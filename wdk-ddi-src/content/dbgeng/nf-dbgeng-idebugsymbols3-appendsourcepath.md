@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugSymbols3.AppendSourcePath
-title : IDebugSymbols3::AppendSourcePath method
-author : windows-driver-content
-description : The AppendSourcePath method appends directories to the source path.
-old-location : debugger\appendsourcepath.htm
-old-project : debugger
-ms.assetid : b82c2206-b81d-4ebf-a8fd-c08d7f57ffc9
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : AppendSourcePath method [Windows Debugging], AppendSourcePath, AppendSourcePath method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols2::AppendSourcePath, dbgeng/IDebugSymbols3::AppendSourcePath, debugger.appendsourcepath, IDebugSymbols2 interface [Windows Debugging], AppendSourcePath method, dbgeng/IDebugSymbols2::AppendSourcePath, IDebugSymbols3::AppendSourcePath, AppendSourcePath method [Windows Debugging], IDebugSymbols interface, dbgeng/IDebugSymbols::AppendSourcePath, IDebugSymbols3 interface [Windows Debugging], AppendSourcePath method, IDebugSymbols::AppendSourcePath, AppendSourcePath method [Windows Debugging], IDebugSymbols2 interface, IDebugSymbols interface [Windows Debugging], AppendSourcePath method, IDebugSymbols_8e47c1ea-e190-4f34-a952-1dcf4ef9e971.xml, IDebugSymbols3
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSymbols3.AppendSourcePath
+title: IDebugSymbols3::AppendSourcePath method
+author: windows-driver-content
+description: The AppendSourcePath method appends directories to the source path.
+old-location: debugger\appendsourcepath.htm
+old-project: debugger
+ms.assetid: b82c2206-b81d-4ebf-a8fd-c08d7f57ffc9
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: AppendSourcePath method [Windows Debugging], AppendSourcePath, AppendSourcePath method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols2::AppendSourcePath, dbgeng/IDebugSymbols3::AppendSourcePath, debugger.appendsourcepath, IDebugSymbols2 interface [Windows Debugging], AppendSourcePath method, dbgeng/IDebugSymbols2::AppendSourcePath, IDebugSymbols3::AppendSourcePath, AppendSourcePath method [Windows Debugging], IDebugSymbols interface, dbgeng/IDebugSymbols::AppendSourcePath, IDebugSymbols3 interface [Windows Debugging], AppendSourcePath method, IDebugSymbols::AppendSourcePath, AppendSourcePath method [Windows Debugging], IDebugSymbols2 interface, IDebugSymbols interface [Windows Debugging], AppendSourcePath method, IDebugSymbols_8e47c1ea-e190-4f34-a952-1dcf4ef9e971.xml, IDebugSymbols3
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Dbgeng.h
+apiname:
+-	IDebugSymbols.AppendSourcePath
+-	IDebugSymbols2.AppendSourcePath
+-	IDebugSymbols3.AppendSourcePath
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

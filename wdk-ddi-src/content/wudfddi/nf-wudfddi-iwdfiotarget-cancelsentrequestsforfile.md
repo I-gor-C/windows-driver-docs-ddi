@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFIoTarget.CancelSentRequestsForFile
-title : IWDFIoTarget::CancelSentRequestsForFile method
-author : windows-driver-content
-description : The CancelSentRequestsForFile method cancels all I/O requests that have been sent on behalf of the specified file object.
-old-location : wdf\iwdfiotarget_cancelsentrequestsforfile.htm
-old-project : wdf
-ms.assetid : df008ee8-352f-4655-b4c0-750eeb281e6a
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.iwdfiotarget_cancelsentrequestsforfile, IWDFIoTarget, CancelSentRequestsForFile method, IWDFIoTarget interface, IWDFIoTarget::CancelSentRequestsForFile, CancelSentRequestsForFile method, CancelSentRequestsForFile, IWDFIoTarget interface, CancelSentRequestsForFile method, UMDFIoTargetObjectRef_d2a2405f-312e-4e3c-8ffa-8568438805b0.xml, wudfddi/IWDFIoTarget::CancelSentRequestsForFile, umdf.iwdfiotarget_cancelsentrequestsforfile
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.5
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFIoTarget.CancelSentRequestsForFile
+title: IWDFIoTarget::CancelSentRequestsForFile method
+author: windows-driver-content
+description: The CancelSentRequestsForFile method cancels all I/O requests that have been sent on behalf of the specified file object.
+old-location: wdf\iwdfiotarget_cancelsentrequestsforfile.htm
+old-project: wdf
+ms.assetid: df008ee8-352f-4655-b4c0-750eeb281e6a
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.iwdfiotarget_cancelsentrequestsforfile, IWDFIoTarget, CancelSentRequestsForFile method, IWDFIoTarget interface, IWDFIoTarget::CancelSentRequestsForFile, CancelSentRequestsForFile method, CancelSentRequestsForFile, IWDFIoTarget interface, CancelSentRequestsForFile method, UMDFIoTargetObjectRef_d2a2405f-312e-4e3c-8ffa-8568438805b0.xml, wudfddi/IWDFIoTarget::CancelSentRequestsForFile, umdf.iwdfiotarget_cancelsentrequestsforfile
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.5
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFIoTarget.CancelSentRequestsForFile
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

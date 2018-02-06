@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltSupportsFileContextsEx
-title : FltSupportsFileContextsEx function
-author : windows-driver-content
-description : The FltSupportsFileContextsEx routine determines whether the file system or the filter manager support file contexts for a given file.
-old-location : ifsk\fltsupportsfilecontextsex.htm
-old-project : ifsk
-ms.assetid : 42401474-ea2d-441f-ad70-bd95544933ac
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltSupportsFileContextsEx routine [Installable File System Drivers], ifsk.fltsupportsfilecontextsex, FltApiRef_p_to_z_3e8b5485-5c61-4405-9c5d-7d7c966f0478.xml, fltkernel/FltSupportsFileContextsEx, FltSupportsFileContextsEx
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : This routine is available on Windows Vista and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltSupportsFileContextsEx
+title: FltSupportsFileContextsEx function
+author: windows-driver-content
+description: The FltSupportsFileContextsEx routine determines whether the file system or the filter manager support file contexts for a given file.
+old-location: ifsk\fltsupportsfilecontextsex.htm
+old-project: ifsk
+ms.assetid: 42401474-ea2d-441f-ad70-bd95544933ac
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltSupportsFileContextsEx routine [Installable File System Drivers], ifsk.fltsupportsfilecontextsex, FltApiRef_p_to_z_3e8b5485-5c61-4405-9c5d-7d7c966f0478.xml, fltkernel/FltSupportsFileContextsEx, FltSupportsFileContextsEx
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: This routine is available on Windows Vista and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltSupportsFileContextsEx
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:ks.KSDATAFORMAT
-title : KSDATAFORMAT
-author : windows-driver-content
-description : The KSDATAFORMAT structure is a variable-length structure that describes a data format.
-old-location : stream\ksdataformat.htm
-old-project : stream
-ms.assetid : e39a59f4-6ec2-402d-8f8e-12324d6cbfa8
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : "*PKSDATAFORMAT, stream.ksdataformat, ks/PKSDATARANGE, KSDATARANGE, ks-struct_787a73ee-98dd-4e97-b7ea-2ed38ff564c7.xml, PKSDATAFORMAT, *PKSDATARANGE, ks/PKSDATAFORMAT, PKSDATARANGE, KSDATAFORMAT structure [Streaming Media Devices], ks/KSDATAFORMAT, PKSDATARANGE structure pointer [Streaming Media Devices], ks/KSDATARANGE, PKSDATAFORMAT structure pointer [Streaming Media Devices], KSDATARANGE structure [Streaming Media Devices], KSDATAFORMAT"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KSDATAFORMAT, *PKSDATARANGE, KSDATARANGE, *PKSDATAFORMAT
+UID: NS:ks.KSDATAFORMAT
+title: KSDATAFORMAT
+author: windows-driver-content
+description: The KSDATAFORMAT structure is a variable-length structure that describes a data format.
+old-location: stream\ksdataformat.htm
+old-project: stream
+ms.assetid: e39a59f4-6ec2-402d-8f8e-12324d6cbfa8
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: "*PKSDATAFORMAT, stream.ksdataformat, ks/PKSDATARANGE, KSDATARANGE, ks-struct_787a73ee-98dd-4e97-b7ea-2ed38ff564c7.xml, PKSDATAFORMAT, *PKSDATARANGE, ks/PKSDATAFORMAT, PKSDATARANGE, KSDATAFORMAT structure [Streaming Media Devices], ks/KSDATAFORMAT, PKSDATARANGE structure pointer [Streaming Media Devices], ks/KSDATARANGE, PKSDATAFORMAT structure pointer [Streaming Media Devices], KSDATARANGE structure [Streaming Media Devices], KSDATAFORMAT"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	KSDATAFORMAT
+product: Windows
+targetos: Windows
+req.typenames: KSDATAFORMAT, *PKSDATARANGE, KSDATARANGE, *PKSDATAFORMAT
 ---
 
 # KSDATAFORMAT structure

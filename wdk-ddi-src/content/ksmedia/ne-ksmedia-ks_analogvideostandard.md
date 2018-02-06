@@ -1,41 +1,46 @@
 ---
-UID : NE:ksmedia.KS_AnalogVideoStandard
-title : KS_AnalogVideoStandard
-author : windows-driver-content
-description : The KS_AnalogVideoStandard enumeration defines various analog video standards that are used worldwide.
-old-location : stream\ks_analogvideostandard.htm
-old-project : stream
-ms.assetid : 33efef2f-0734-416e-9f89-394a3dd344b8
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ksmedia/KS_AnalogVideo_SECAM_K1, KS_AnalogVideo_SECAM_L1, KS_AnalogVideo_PAL_G, KS_AnalogVideo_SECAM_L, KS_AnalogVideo_NTSC_M, vidcapstruct_90d60791-13e2-42ec-a641-6eee5bbf25fa.xml, KS_AnalogVideoStandard, ksmedia/KS_AnalogVideo_SECAM_L, KS_AnalogVideo_PAL_I, KS_AnalogVideo_NTSC_M_J, KS_AnalogVideo_None, ksmedia/KS_AnalogVideo_PAL_G, ksmedia/KS_AnalogVideo_None, KS_AnalogVideo_PAL_B, ksmedia/KS_AnalogVideo_PAL_N, KS_AnalogVideo_SECAM_H, ksmedia/KS_AnalogVideo_NTSC_M_J, ksmedia/KS_AnalogVideo_PAL_H, ksmedia/KS_AnalogVideo_PAL_60, ksmedia/KS_AnalogVideo_SECAM_H, KS_AnalogVideoStandard enumeration [Streaming Media Devices], ksmedia/KS_AnalogVideoStandard, KS_AnalogVideo_PAL_N_COMBO, KS_AnalogVideo_PAL_M, ksmedia/KS_AnalogVideo_NTSC_433, KS_AnalogVideo_SECAM_D, ksmedia/KS_AnalogVideo_SECAM_K, ksmedia/KS_AnalogVideo_PAL_D, KS_AnalogVideo_SECAM_B, KS_AnalogVideo_SECAM_K, KS_AnalogVideo_PAL_H, KS_AnalogVideo_PAL_60, ksmedia/KS_AnalogVideo_SECAM_L1, KS_AnalogVideo_NTSC_433, ksmedia/KS_AnalogVideo_SECAM_D, KS_AnalogVideo_PAL_N, ksmedia/KS_AnalogVideo_PAL_B, KS_AnalogVideo_PAL_D, ksmedia/KS_AnalogVideo_SECAM_B, ksmedia/KS_AnalogVideo_SECAM_G, ksmedia/KS_AnalogVideo_PAL_N_COMBO, stream.ks_analogvideostandard, KS_AnalogVideo_SECAM_K1, ksmedia/KS_AnalogVideo_PAL_I, KS_AnalogVideo_SECAM_G, ksmedia/KS_AnalogVideo_NTSC_M, ksmedia/KS_AnalogVideo_PAL_M
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KS_AnalogVideoStandard
+UID: NE:ksmedia.KS_AnalogVideoStandard
+title: KS_AnalogVideoStandard
+author: windows-driver-content
+description: The KS_AnalogVideoStandard enumeration defines various analog video standards that are used worldwide.
+old-location: stream\ks_analogvideostandard.htm
+old-project: stream
+ms.assetid: 33efef2f-0734-416e-9f89-394a3dd344b8
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ksmedia/KS_AnalogVideo_SECAM_K1, KS_AnalogVideo_SECAM_L1, KS_AnalogVideo_PAL_G, KS_AnalogVideo_SECAM_L, KS_AnalogVideo_NTSC_M, vidcapstruct_90d60791-13e2-42ec-a641-6eee5bbf25fa.xml, KS_AnalogVideoStandard, ksmedia/KS_AnalogVideo_SECAM_L, KS_AnalogVideo_PAL_I, KS_AnalogVideo_NTSC_M_J, KS_AnalogVideo_None, ksmedia/KS_AnalogVideo_PAL_G, ksmedia/KS_AnalogVideo_None, KS_AnalogVideo_PAL_B, ksmedia/KS_AnalogVideo_PAL_N, KS_AnalogVideo_SECAM_H, ksmedia/KS_AnalogVideo_NTSC_M_J, ksmedia/KS_AnalogVideo_PAL_H, ksmedia/KS_AnalogVideo_PAL_60, ksmedia/KS_AnalogVideo_SECAM_H, KS_AnalogVideoStandard enumeration [Streaming Media Devices], ksmedia/KS_AnalogVideoStandard, KS_AnalogVideo_PAL_N_COMBO, KS_AnalogVideo_PAL_M, ksmedia/KS_AnalogVideo_NTSC_433, KS_AnalogVideo_SECAM_D, ksmedia/KS_AnalogVideo_SECAM_K, ksmedia/KS_AnalogVideo_PAL_D, KS_AnalogVideo_SECAM_B, KS_AnalogVideo_SECAM_K, KS_AnalogVideo_PAL_H, KS_AnalogVideo_PAL_60, ksmedia/KS_AnalogVideo_SECAM_L1, KS_AnalogVideo_NTSC_433, ksmedia/KS_AnalogVideo_SECAM_D, KS_AnalogVideo_PAL_N, ksmedia/KS_AnalogVideo_PAL_B, KS_AnalogVideo_PAL_D, ksmedia/KS_AnalogVideo_SECAM_B, ksmedia/KS_AnalogVideo_SECAM_G, ksmedia/KS_AnalogVideo_PAL_N_COMBO, stream.ks_analogvideostandard, KS_AnalogVideo_SECAM_K1, ksmedia/KS_AnalogVideo_PAL_I, KS_AnalogVideo_SECAM_G, ksmedia/KS_AnalogVideo_NTSC_M, ksmedia/KS_AnalogVideo_PAL_M
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	KS_AnalogVideoStandard
+product: Windows
+targetos: Windows
+req.typenames: KS_AnalogVideoStandard
 ---
 
 # KS_AnalogVideoStandard Enumeration
@@ -71,125 +76,125 @@ typedef enum  {
 ## Constants
 
 <table>
-
-<tr>
-<td>KS_AnalogVideo_None</td>
-<td>Specifies a digital sensor.</td>
-</tr>
-
-<tr>
-<td>KS_AnalogVideo_NTSC_433</td>
-<td>Specifies the NTSC 433 standard</td>
-</tr>
-
-<tr>
-<td>KS_AnalogVideo_NTSC_M</td>
-<td>Specifies the National Television Standards Committee (NTSC) "M" standard, at 7.5 IRE for black.</td>
-</tr>
-
-<tr>
-<td>KS_AnalogVideo_NTSC_M_J</td>
-<td>Specifies the NTSC "M" standard that is used in Japan, at 0 IRE for black.</td>
-</tr>
-
-<tr>
-<td>KS_AnalogVideo_PAL_60</td>
-<td>Specifies the PAL-60 standard.</td>
-</tr>
-
-<tr>
-<td>KS_AnalogVideo_PAL_B</td>
-<td>Specifies the Phase Alteration Line (PAL) "B" standard.</td>
-</tr>
-
-<tr>
-<td>KS_AnalogVideo_PAL_D</td>
-<td>Specifies the PAL "D" standard.</td>
-</tr>
-
-<tr>
-<td>KS_AnalogVideo_PAL_G</td>
-<td>Specifies the PAL "G" standard.</td>
-</tr>
-
-<tr>
-<td>KS_AnalogVideo_PAL_H</td>
-<td>Specifies the PAL "H" standard.</td>
-</tr>
-
-<tr>
-<td>KS_AnalogVideo_PAL_I</td>
-<td>Specifies the PAL "I" standard.</td>
-</tr>
-
-<tr>
-<td>KS_AnalogVideo_PAL_M</td>
-<td>Specifies the PAL "M" standard.</td>
-</tr>
-
-<tr>
-<td>KS_AnalogVideo_PAL_N</td>
-<td>Specifies the PAL "N" standard.</td>
-</tr>
-
-<tr>
-<td>KS_AnalogVideo_PAL_N_COMBO</td>
-<td>Specifies the combination PAL "N" standard (Argentina).</td>
-</tr>
-
-<tr>
-<td>KS_AnalogVideo_SECAM_B</td>
-<td>Specifies the Systeme Electronic Pour Couleur Avec Memoire (SECAM) "B" standard.</td>
-</tr>
-
-<tr>
-<td>KS_AnalogVideo_SECAM_D</td>
-<td>Specifies the SECAM "D" standard.</td>
-</tr>
-
-<tr>
-<td>KS_AnalogVideo_SECAM_G</td>
-<td>Specifies the SECAM "G" standard.</td>
-</tr>
-
-<tr>
-<td>KS_AnalogVideo_SECAM_H</td>
-<td>Specifies the SECAM "H" standard.</td>
-</tr>
-
-<tr>
-<td>KS_AnalogVideo_SECAM_K</td>
-<td>Specifies the SECAM "K" standard.</td>
-</tr>
-
-<tr>
-<td>KS_AnalogVideo_SECAM_K1</td>
-<td>Specifies the SECAM "K1" standard.</td>
-</tr>
-
-<tr>
-<td>KS_AnalogVideo_SECAM_L</td>
-<td>Specifies the SECAM "L" standard.</td>
-</tr>
-
-<tr>
-<td>KS_AnalogVideo_SECAM_L1</td>
-<td>Specifies the SECAM "L1" standard.</td>
-</tr>
+            
+                <tr>
+                    <td>KS_AnalogVideo_None</td>
+                    <td>Specifies a digital sensor.</td>
+                </tr>
+            
+                <tr>
+                    <td>KS_AnalogVideo_NTSC_433</td>
+                    <td>Specifies the NTSC 433 standard</td>
+                </tr>
+            
+                <tr>
+                    <td>KS_AnalogVideo_NTSC_M</td>
+                    <td>Specifies the National Television Standards Committee (NTSC) "M" standard, at 7.5 IRE for black.</td>
+                </tr>
+            
+                <tr>
+                    <td>KS_AnalogVideo_NTSC_M_J</td>
+                    <td>Specifies the NTSC "M" standard that is used in Japan, at 0 IRE for black.</td>
+                </tr>
+            
+                <tr>
+                    <td>KS_AnalogVideo_PAL_60</td>
+                    <td>Specifies the PAL-60 standard.</td>
+                </tr>
+            
+                <tr>
+                    <td>KS_AnalogVideo_PAL_B</td>
+                    <td>Specifies the Phase Alteration Line (PAL) "B" standard.</td>
+                </tr>
+            
+                <tr>
+                    <td>KS_AnalogVideo_PAL_D</td>
+                    <td>Specifies the PAL "D" standard.</td>
+                </tr>
+            
+                <tr>
+                    <td>KS_AnalogVideo_PAL_G</td>
+                    <td>Specifies the PAL "G" standard.</td>
+                </tr>
+            
+                <tr>
+                    <td>KS_AnalogVideo_PAL_H</td>
+                    <td>Specifies the PAL "H" standard.</td>
+                </tr>
+            
+                <tr>
+                    <td>KS_AnalogVideo_PAL_I</td>
+                    <td>Specifies the PAL "I" standard.</td>
+                </tr>
+            
+                <tr>
+                    <td>KS_AnalogVideo_PAL_M</td>
+                    <td>Specifies the PAL "M" standard.</td>
+                </tr>
+            
+                <tr>
+                    <td>KS_AnalogVideo_PAL_N</td>
+                    <td>Specifies the PAL "N" standard.</td>
+                </tr>
+            
+                <tr>
+                    <td>KS_AnalogVideo_PAL_N_COMBO</td>
+                    <td>Specifies the combination PAL "N" standard (Argentina).</td>
+                </tr>
+            
+                <tr>
+                    <td>KS_AnalogVideo_SECAM_B</td>
+                    <td>Specifies the Systeme Electronic Pour Couleur Avec Memoire (SECAM) "B" standard.</td>
+                </tr>
+            
+                <tr>
+                    <td>KS_AnalogVideo_SECAM_D</td>
+                    <td>Specifies the SECAM "D" standard.</td>
+                </tr>
+            
+                <tr>
+                    <td>KS_AnalogVideo_SECAM_G</td>
+                    <td>Specifies the SECAM "G" standard.</td>
+                </tr>
+            
+                <tr>
+                    <td>KS_AnalogVideo_SECAM_H</td>
+                    <td>Specifies the SECAM "H" standard.</td>
+                </tr>
+            
+                <tr>
+                    <td>KS_AnalogVideo_SECAM_K</td>
+                    <td>Specifies the SECAM "K" standard.</td>
+                </tr>
+            
+                <tr>
+                    <td>KS_AnalogVideo_SECAM_K1</td>
+                    <td>Specifies the SECAM "K1" standard.</td>
+                </tr>
+            
+                <tr>
+                    <td>KS_AnalogVideo_SECAM_L</td>
+                    <td>Specifies the SECAM "L" standard.</td>
+                </tr>
+            
+                <tr>
+                    <td>KS_AnalogVideo_SECAM_L1</td>
+                    <td>Specifies the SECAM "L1" standard.</td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-You can combine the values in the KS_AnalogVideoStandard enumeration with a bitwise OR  indicate support for multiple analog video standards.
+        You can combine the values in the KS_AnalogVideoStandard enumeration with a bitwise OR  indicate support for multiple analog video standards.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
 | **Header** | ksmedia.h (include Ksmedia.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\ksmedia\ns-ksmedia-ksproperty_tuner_standard_s.md">KSPROPERTY_TUNER_STANDARD_S</a>
+        <a href="..\ksmedia\ns-ksmedia-ksproperty_tuner_standard_s.md">KSPROPERTY_TUNER_STANDARD_S</a>
 
 <a href="..\ksmedia\ns-ksmedia-tagks_tvtuner_change_info.md">KS_TVTUNER_CHANGE_INFO</a>
 

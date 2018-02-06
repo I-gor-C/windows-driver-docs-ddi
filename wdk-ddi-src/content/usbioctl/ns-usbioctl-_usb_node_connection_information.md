@@ -1,42 +1,47 @@
 ---
-UID : NS:usbioctl._USB_NODE_CONNECTION_INFORMATION
-title : "_USB_NODE_CONNECTION_INFORMATION"
-author : windows-driver-content
-description : The USB_NODE_CONNECTION_INFORMATION structure is used with the IOCTL_USB_GET_NODE_CONNECTION_INFORMATION request to retrieve information about a USB port and connected device.
-old-location : buses\usb_node_connection_information.htm
-old-project : usbref
-ms.assetid : 1ed92343-c830-4e5e-a2f8-30b20057b1f0
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : "*PUSB_NODE_CONNECTION_INFORMATION, USB_NODE_CONNECTION_INFORMATION, PUSB_NODE_CONNECTION_INFORMATION structure pointer [Buses], usbstrct_3c58e495-9552-4e38-81ac-45c23d964825.xml, PUSB_NODE_CONNECTION_INFORMATION, usbioctl/PUSB_NODE_CONNECTION_INFORMATION, USB_NODE_CONNECTION_INFORMATION structure [Buses], _USB_NODE_CONNECTION_INFORMATION, buses.usb_node_connection_information, usbioctl/USB_NODE_CONNECTION_INFORMATION"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : usbioctl.h
-req.include-header : Usbioctl.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : USB_NODE_CONNECTION_INFORMATION, *PUSB_NODE_CONNECTION_INFORMATION
-req.product : Windows 10 or later.
+UID: NS:usbioctl._USB_NODE_CONNECTION_INFORMATION
+title: "_USB_NODE_CONNECTION_INFORMATION"
+author: windows-driver-content
+description: The USB_NODE_CONNECTION_INFORMATION structure is used with the IOCTL_USB_GET_NODE_CONNECTION_INFORMATION request to retrieve information about a USB port and connected device.
+old-location: buses\usb_node_connection_information.htm
+old-project: usbref
+ms.assetid: 1ed92343-c830-4e5e-a2f8-30b20057b1f0
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: "*PUSB_NODE_CONNECTION_INFORMATION, USB_NODE_CONNECTION_INFORMATION, PUSB_NODE_CONNECTION_INFORMATION structure pointer [Buses], usbstrct_3c58e495-9552-4e38-81ac-45c23d964825.xml, PUSB_NODE_CONNECTION_INFORMATION, usbioctl/PUSB_NODE_CONNECTION_INFORMATION, USB_NODE_CONNECTION_INFORMATION structure [Buses], _USB_NODE_CONNECTION_INFORMATION, buses.usb_node_connection_information, usbioctl/USB_NODE_CONNECTION_INFORMATION"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: usbioctl.h
+req.include-header: Usbioctl.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	usbioctl.h
+apiname:
+-	USB_NODE_CONNECTION_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: USB_NODE_CONNECTION_INFORMATION, *PUSB_NODE_CONNECTION_INFORMATION
+req.product: Windows 10 or later.
 ---
 
 # _USB_NODE_CONNECTION_INFORMATION structure

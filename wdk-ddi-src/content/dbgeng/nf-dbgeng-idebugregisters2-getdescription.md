@@ -1,41 +1,47 @@
 ---
-UID : NF:dbgeng.IDebugRegisters2.GetDescription
-title : IDebugRegisters2::GetDescription method
-author : windows-driver-content
-description : The GetDescription method returns the description of a register.
-old-location : debugger\getdescription.htm
-old-project : debugger
-ms.assetid : 895d18e7-673e-41bb-a3be-eb5b4a778880
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugRegisters2::GetDescription, GetDescription method [Windows Debugging], IDebugRegisters interface, IDebugRegisters2 interface [Windows Debugging], GetDescription method, GetDescription method [Windows Debugging], IDebugRegisters2 interface, debugger.getdescription, IDebugRegisters interface [Windows Debugging], GetDescription method, dbgeng/IDebugRegisters2::GetDescription, IDebugRegisters_aa062ab9-e090-4cad-b875-b6e99a019c16.xml, IDebugRegisters2, GetDescription, dbgeng/IDebugRegisters::GetDescription, IDebugRegisters::GetDescription, GetDescription method [Windows Debugging]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : DbgEng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugRegisters2.GetDescription
+title: IDebugRegisters2::GetDescription method
+author: windows-driver-content
+description: The GetDescription method returns the description of a register.
+old-location: debugger\getdescription.htm
+old-project: debugger
+ms.assetid: 895d18e7-673e-41bb-a3be-eb5b4a778880
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugRegisters2::GetDescription, GetDescription method [Windows Debugging], IDebugRegisters interface, IDebugRegisters2 interface [Windows Debugging], GetDescription method, GetDescription method [Windows Debugging], IDebugRegisters2 interface, debugger.getdescription, IDebugRegisters interface [Windows Debugging], GetDescription method, dbgeng/IDebugRegisters2::GetDescription, IDebugRegisters_aa062ab9-e090-4cad-b875-b6e99a019c16.xml, IDebugRegisters2, GetDescription, dbgeng/IDebugRegisters::GetDescription, IDebugRegisters::GetDescription, GetDescription method [Windows Debugging]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: DbgEng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugRegisters.GetDescription
+-	IDebugRegisters2.GetDescription
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

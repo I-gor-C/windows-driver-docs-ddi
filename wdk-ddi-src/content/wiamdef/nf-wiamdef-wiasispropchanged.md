@@ -1,42 +1,47 @@
 ---
-UID : NF:wiamdef.wiasIsPropChanged
-title : wiasIsPropChanged function
-author : windows-driver-content
-description : The wiasIsPropChanged function tests whether a specified property has been changed by an application.
-old-location : image\wiasispropchanged.htm
-old-project : image
-ms.assetid : 4b8f140c-ca4f-48fd-bee4-35d5a7beea52
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : wiasIsPropChanged, wiamdef/wiasIsPropChanged, wiasFncs_11e49124-0147-4140-ba56-879ae3fcbf46.xml, image.wiasispropchanged, wiasIsPropChanged function [Imaging Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wiamdef.h
-req.include-header : Wiamdef.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wiaservc.lib
-req.dll : Wiaservc.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*LPDEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2, DEVICEDIALOGDATA2"
-req.product : Windows 10 or later.
+UID: NF:wiamdef.wiasIsPropChanged
+title: wiasIsPropChanged function
+author: windows-driver-content
+description: The wiasIsPropChanged function tests whether a specified property has been changed by an application.
+old-location: image\wiasispropchanged.htm
+old-project: image
+ms.assetid: 4b8f140c-ca4f-48fd-bee4-35d5a7beea52
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: wiasIsPropChanged, wiamdef/wiasIsPropChanged, wiasFncs_11e49124-0147-4140-ba56-879ae3fcbf46.xml, image.wiasispropchanged, wiasIsPropChanged function [Imaging Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wiamdef.h
+req.include-header: Wiamdef.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wiaservc.lib
+req.dll: Wiaservc.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Wiaservc.dll
+apiname:
+-	wiasIsPropChanged
+product: Windows
+targetos: Windows
+req.typenames: "*LPDEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2, DEVICEDIALOGDATA2"
+req.product: Windows 10 or later.
 ---
 
 

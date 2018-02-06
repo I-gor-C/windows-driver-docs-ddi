@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddscsi.IOCTL_SCSI_GET_CAPABILITIES
-title : IOCTL_SCSI_GET_CAPABILITIES
-author : windows-driver-content
-description : Returns the capabilities and limitations of the underlying SCSI HBA.
-old-location : storage\ioctl_scsi_get_capabilities.htm
-old-project : storage
-ms.assetid : 1917e0f0-47a3-4f95-97d6-c60d3f511a91
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_scsi_get_capabilities, IOCTL_SCSI_GET_CAPABILITIES control code [Storage Devices], IOCTL_SCSI_GET_CAPABILITIES, ntddscsi/IOCTL_SCSI_GET_CAPABILITIES, k307_99c3b622-6b7f-4550-9740-22b46d141966.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddscsi.h
-req.include-header : Ntddscsi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : MP_STORAGE_DIAGNOSTIC_TARGET_TYPE, *PMP_STORAGE_DIAGNOSTIC_TARGET_TYPE
+UID: NI:ntddscsi.IOCTL_SCSI_GET_CAPABILITIES
+title: IOCTL_SCSI_GET_CAPABILITIES
+author: windows-driver-content
+description: Returns the capabilities and limitations of the underlying SCSI HBA.
+old-location: storage\ioctl_scsi_get_capabilities.htm
+old-project: storage
+ms.assetid: 1917e0f0-47a3-4f95-97d6-c60d3f511a91
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_scsi_get_capabilities, IOCTL_SCSI_GET_CAPABILITIES control code [Storage Devices], IOCTL_SCSI_GET_CAPABILITIES, ntddscsi/IOCTL_SCSI_GET_CAPABILITIES, k307_99c3b622-6b7f-4550-9740-22b46d141966.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddscsi.h
+req.include-header: Ntddscsi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddscsi.h
+apiname:
+-	IOCTL_SCSI_GET_CAPABILITIES
+product: Windows
+targetos: Windows
+req.typenames: MP_STORAGE_DIAGNOSTIC_TARGET_TYPE, *PMP_STORAGE_DIAGNOSTIC_TARGET_TYPE
 ---
 
 # IOCTL_SCSI_GET_CAPABILITIES IOCTL

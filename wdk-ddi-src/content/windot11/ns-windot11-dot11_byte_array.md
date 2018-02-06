@@ -1,42 +1,47 @@
 ---
-UID : NS:windot11.DOT11_BYTE_ARRAY
-title : DOT11_BYTE_ARRAY
-author : windows-driver-content
-description : Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
-old-location : netvista\dot11_byte_array.htm
-old-project : netvista
-ms.assetid : a2c67eaf-d39e-43c9-8e06-18f668c0baa3
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : PDOT11_BYTE_ARRAY structure pointer [Network Drivers Starting with Windows Vista], windot11/DOT11_BYTE_ARRAY, windot11/PDOT11_BYTE_ARRAY, *PDOT11_BYTE_ARRAY, PDOT11_BYTE_ARRAY, DOT11_BYTE_ARRAY structure [Network Drivers Starting with Windows Vista], netvista.dot11_byte_array, Native_802.11_data_types_b4146de4-b261-40d9-847d-1eebb48eafea.xml, DOT11_BYTE_ARRAY
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : windot11.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating   systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDOT11_BYTE_ARRAY, DOT11_BYTE_ARRAY"
-req.product : Windows 10 or later.
+UID: NS:windot11.DOT11_BYTE_ARRAY
+title: DOT11_BYTE_ARRAY
+author: windows-driver-content
+description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+old-location: netvista\dot11_byte_array.htm
+old-project: netvista
+ms.assetid: a2c67eaf-d39e-43c9-8e06-18f668c0baa3
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: PDOT11_BYTE_ARRAY structure pointer [Network Drivers Starting with Windows Vista], windot11/DOT11_BYTE_ARRAY, windot11/PDOT11_BYTE_ARRAY, *PDOT11_BYTE_ARRAY, PDOT11_BYTE_ARRAY, DOT11_BYTE_ARRAY structure [Network Drivers Starting with Windows Vista], netvista.dot11_byte_array, Native_802.11_data_types_b4146de4-b261-40d9-847d-1eebb48eafea.xml, DOT11_BYTE_ARRAY
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: windot11.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	windot11.h
+apiname:
+-	DOT11_BYTE_ARRAY
+product: Windows
+targetos: Windows
+req.typenames: "*PDOT11_BYTE_ARRAY, DOT11_BYTE_ARRAY"
+req.product: Windows 10 or later.
 ---
 
 # DOT11_BYTE_ARRAY structure

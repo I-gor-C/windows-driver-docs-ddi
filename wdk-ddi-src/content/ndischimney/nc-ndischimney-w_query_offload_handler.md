@@ -1,41 +1,46 @@
 ---
-UID : NC:ndischimney.W_QUERY_OFFLOAD_HANDLER
-title : W_QUERY_OFFLOAD_HANDLER
-author : windows-driver-content
-description : The MiniportQueryOffload function queries previously offloaded TCP chimney state objects.
-old-location : netvista\miniportqueryoffload.htm
-old-project : netvista
-ms.assetid : a583c4cb-53c1-4eff-bcfe-c962f736b1f8
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.miniportqueryoffload, MiniportQueryOffload callback function [Network Drivers Starting with Windows Vista], MiniportQueryOffload, W_QUERY_OFFLOAD_HANDLER, W_QUERY_OFFLOAD_HANDLER, ndischimney/MiniportQueryOffload, tcp_chim_miniport_func_920f9145-1dda-4899-85d7-845dd545a6bc.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ndischimney.h
-req.include-header : Ndischimney.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PD_BUFFER_VIRTUAL_SUBNET_INFO
+UID: NC:ndischimney.W_QUERY_OFFLOAD_HANDLER
+title: W_QUERY_OFFLOAD_HANDLER
+author: windows-driver-content
+description: The MiniportQueryOffload function queries previously offloaded TCP chimney state objects.
+old-location: netvista\miniportqueryoffload.htm
+old-project: netvista
+ms.assetid: a583c4cb-53c1-4eff-bcfe-c962f736b1f8
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.miniportqueryoffload, MiniportQueryOffload callback function [Network Drivers Starting with Windows Vista], MiniportQueryOffload, W_QUERY_OFFLOAD_HANDLER, W_QUERY_OFFLOAD_HANDLER, ndischimney/MiniportQueryOffload, tcp_chim_miniport_func_920f9145-1dda-4899-85d7-845dd545a6bc.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ndischimney.h
+req.include-header: Ndischimney.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ndischimney.h
+apiname:
+-	MiniportQueryOffload
+product: Windows
+targetos: Windows
+req.typenames: PD_BUFFER_VIRTUAL_SUBNET_INFO
 ---
 
 

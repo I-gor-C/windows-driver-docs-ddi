@@ -1,42 +1,47 @@
 ---
-UID : NF:storport.StorPortInitializeTimer
-title : StorPortInitializeTimer function
-author : windows-driver-content
-description : Creates a Storport timer context object.
-old-location : storage\storportinitializetimer.htm
-old-project : storage
-ms.assetid : 1F43EEDC-5DB4-4ABE-BBC6-A4A51FCAF0B6
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : StorPortInitializeTimer routine [Storage Devices], storport/StorPortInitializeTimer, StorPortInitializeTimer, storage.storportinitializetimer
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 8 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STOR_SPINLOCK
-req.product : Windows 10 or later.
+UID: NF:storport.StorPortInitializeTimer
+title: StorPortInitializeTimer function
+author: windows-driver-content
+description: Creates a Storport timer context object.
+old-location: storage\storportinitializetimer.htm
+old-project: storage
+ms.assetid: 1F43EEDC-5DB4-4ABE-BBC6-A4A51FCAF0B6
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: StorPortInitializeTimer routine [Storage Devices], storport/StorPortInitializeTimer, StorPortInitializeTimer, storage.storportinitializetimer
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 8 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	storport.h
+apiname:
+-	StorPortInitializeTimer
+product: Windows
+targetos: Windows
+req.typenames: STOR_SPINLOCK
+req.product: Windows 10 or later.
 ---
 
 

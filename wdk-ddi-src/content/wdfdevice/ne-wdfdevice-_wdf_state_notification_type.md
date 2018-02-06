@@ -1,42 +1,47 @@
 ---
-UID : NE:wdfdevice._WDF_STATE_NOTIFICATION_TYPE
-title : "_WDF_STATE_NOTIFICATION_TYPE"
-author : windows-driver-content
-description : The WDF_STATE_NOTIFICATION_TYPE enumeration identifies the type of Plug and Play, power, or power policy notification that a framework-based driver will receive.
-old-location : wdf\wdf_state_notification_type.htm
-old-project : wdf
-ms.assetid : fc44c970-482c-4fbf-a149-e6b732f6c9d8
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : StateNotificationInvalid, kmdf.wdf_state_notification_type, wdf.wdf_state_notification_type, StateNotificationAllStates, wdfdevice/WDF_STATE_NOTIFICATION_TYPE, StateNotificationEnterState, DFDeviceObjectGeneralRef_c1bdabfc-dd89-4eeb-b5ba-9f03a65414c5.xml, wdfdevice/StateNotificationPostProcessState, _WDF_STATE_NOTIFICATION_TYPE, StateNotificationLeaveState, wdfdevice/StateNotificationAllStates, WDF_STATE_NOTIFICATION_TYPE, wdfdevice/StateNotificationEnterState, wdfdevice/StateNotificationLeaveState, wdfdevice/StateNotificationInvalid, StateNotificationPostProcessState, WDF_STATE_NOTIFICATION_TYPE enumeration
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : wdfdevice.h
-req.include-header : Wdf.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_STATE_NOTIFICATION_TYPE
-req.product : Windows 10 or later.
+UID: NE:wdfdevice._WDF_STATE_NOTIFICATION_TYPE
+title: "_WDF_STATE_NOTIFICATION_TYPE"
+author: windows-driver-content
+description: The WDF_STATE_NOTIFICATION_TYPE enumeration identifies the type of Plug and Play, power, or power policy notification that a framework-based driver will receive.
+old-location: wdf\wdf_state_notification_type.htm
+old-project: wdf
+ms.assetid: fc44c970-482c-4fbf-a149-e6b732f6c9d8
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: StateNotificationInvalid, kmdf.wdf_state_notification_type, wdf.wdf_state_notification_type, StateNotificationAllStates, wdfdevice/WDF_STATE_NOTIFICATION_TYPE, StateNotificationEnterState, DFDeviceObjectGeneralRef_c1bdabfc-dd89-4eeb-b5ba-9f03a65414c5.xml, wdfdevice/StateNotificationPostProcessState, _WDF_STATE_NOTIFICATION_TYPE, StateNotificationLeaveState, wdfdevice/StateNotificationAllStates, WDF_STATE_NOTIFICATION_TYPE, wdfdevice/StateNotificationEnterState, wdfdevice/StateNotificationLeaveState, wdfdevice/StateNotificationInvalid, StateNotificationPostProcessState, WDF_STATE_NOTIFICATION_TYPE enumeration
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: wdfdevice.h
+req.include-header: Wdf.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfdevice.h
+apiname:
+-	WDF_STATE_NOTIFICATION_TYPE
+product: Windows
+targetos: Windows
+req.typenames: WDF_STATE_NOTIFICATION_TYPE
+req.product: Windows 10 or later.
 ---
 
 # _WDF_STATE_NOTIFICATION_TYPE Enumeration
@@ -58,36 +63,36 @@ typedef enum _WDF_STATE_NOTIFICATION_TYPE {
 ## Constants
 
 <table>
-
-<tr>
-<td>StateNotificationAllStates</td>
-<td>The driver receives enter-state, postprocess-state, and leave-state notifications.</td>
-</tr>
-
-<tr>
-<td>StateNotificationEnterState</td>
-<td>The driver is notified immediately before a device's Plug and Play, power, or power policy state machine enters a specified state.</td>
-</tr>
-
-<tr>
-<td>StateNotificationInvalid</td>
-<td>For internal use only.</td>
-</tr>
-
-<tr>
-<td>StateNotificationLeaveState</td>
-<td>The driver is notified immediately before a device's Plug and Play, power, or power policy state machine leaves a specified state.</td>
-</tr>
-
-<tr>
-<td>StateNotificationPostProcessState</td>
-<td>The driver is notified immediately after a device's Plug and Play, power, or power policy state machine enters a specified state.</td>
-</tr>
+            
+                <tr>
+                    <td>StateNotificationAllStates</td>
+                    <td>The driver receives enter-state, postprocess-state, and leave-state notifications.</td>
+                </tr>
+            
+                <tr>
+                    <td>StateNotificationEnterState</td>
+                    <td>The driver is notified immediately before a device's Plug and Play, power, or power policy state machine enters a specified state.</td>
+                </tr>
+            
+                <tr>
+                    <td>StateNotificationInvalid</td>
+                    <td>For internal use only.</td>
+                </tr>
+            
+                <tr>
+                    <td>StateNotificationLeaveState</td>
+                    <td>The driver is notified immediately before a device's Plug and Play, power, or power policy state machine leaves a specified state.</td>
+                </tr>
+            
+                <tr>
+                    <td>StateNotificationPostProcessState</td>
+                    <td>The driver is notified immediately after a device's Plug and Play, power, or power policy state machine enters a specified state.</td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-When the framework's state machine for a driver's device changes from state <i>a</i> to state <i>b</i>, the framework notifies the driver (if the driver registered an appropriate event callback function), in the following sequence:
+        When the framework's state machine for a driver's device changes from state <i>a</i> to state <i>b</i>, the framework notifies the driver (if the driver registered an appropriate event callback function), in the following sequence:
 <ol>
 <li>
 Calls state <i>a</i>'s leave-state notification callback function.
@@ -133,9 +138,9 @@ Calls state <i>b</i>'s postprocess-state notification callback function.
 | **Minimum KMDF version** | 1.0 |
 | **Header** | wdfdevice.h (include Wdf.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\wdfdevice\ns-wdfdevice-_wdf_device_power_notification_data.md">WDF_DEVICE_POWER_NOTIFICATION_DATA</a>
+        <a href="..\wdfdevice\ns-wdfdevice-_wdf_device_power_notification_data.md">WDF_DEVICE_POWER_NOTIFICATION_DATA</a>
 
 <a href="..\wdfdevice\ns-wdfdevice-_wdf_device_power_policy_notification_data.md">WDF_DEVICE_POWER_POLICY_NOTIFICATION_DATA</a>
 

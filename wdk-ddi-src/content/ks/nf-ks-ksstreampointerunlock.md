@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsStreamPointerUnlock
-title : KsStreamPointerUnlock function
-author : windows-driver-content
-description : The KsStreamPointerUnlock function unlocks a stream pointer that has previously been locked by an acquisition function (KsGetXxxEdgeStreamPointer) or by KsStreamPointerLock.
-old-location : stream\ksstreampointerunlock.htm
-old-project : stream
-ms.assetid : 1d03b97f-5c01-48b2-a0e4-2dc6bf732813
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KsStreamPointerUnlock function [Streaming Media Devices], ks/KsStreamPointerUnlock, KsStreamPointerUnlock, stream.ksstreampointerunlock, avfunc_71260371-8ee2-45e1-ad72-7eba8212d081.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsStreamPointerUnlock
+title: KsStreamPointerUnlock function
+author: windows-driver-content
+description: The KsStreamPointerUnlock function unlocks a stream pointer that has previously been locked by an acquisition function (KsGetXxxEdgeStreamPointer) or by KsStreamPointerLock.
+old-location: stream\ksstreampointerunlock.htm
+old-project: stream
+ms.assetid: 1d03b97f-5c01-48b2-a0e4-2dc6bf732813
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KsStreamPointerUnlock function [Streaming Media Devices], ks/KsStreamPointerUnlock, KsStreamPointerUnlock, stream.ksstreampointerunlock, avfunc_71260371-8ee2-45e1-ad72-7eba8212d081.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsStreamPointerUnlock
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

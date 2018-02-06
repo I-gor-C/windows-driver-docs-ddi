@@ -1,42 +1,47 @@
 ---
-UID : NS:wsk._WSK_PROVIDER_CHARACTERISTICS
-title : "_WSK_PROVIDER_CHARACTERISTICS"
-author : windows-driver-content
-description : The WSK_PROVIDER_CHARACTERISTICS structure specifies the characteristics of the WSK subsystem.
-old-location : netvista\wsk_provider_characteristics.htm
-old-project : netvista
-ms.assetid : 25371620-23bb-4a98-9554-14057742b0ca
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : WSK_PROVIDER_CHARACTERISTICS, WSK_PROVIDER_CHARACTERISTICS structure [Network Drivers Starting with Windows Vista], wsk/WSK_PROVIDER_CHARACTERISTICS, wsk/PWSK_PROVIDER_CHARACTERISTICS, PWSK_PROVIDER_CHARACTERISTICS, wskref_f552c7d1-89a7-4cb6-aa7c-5f5ddb906deb.xml, _WSK_PROVIDER_CHARACTERISTICS, *PWSK_PROVIDER_CHARACTERISTICS, PWSK_PROVIDER_CHARACTERISTICS structure pointer [Network Drivers Starting with Windows Vista], netvista.wsk_provider_characteristics
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wsk.h
-req.include-header : Wsk.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating   systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WSK_PROVIDER_CHARACTERISTICS, *PWSK_PROVIDER_CHARACTERISTICS
-req.product : Windows 10 or later.
+UID: NS:wsk._WSK_PROVIDER_CHARACTERISTICS
+title: "_WSK_PROVIDER_CHARACTERISTICS"
+author: windows-driver-content
+description: The WSK_PROVIDER_CHARACTERISTICS structure specifies the characteristics of the WSK subsystem.
+old-location: netvista\wsk_provider_characteristics.htm
+old-project: netvista
+ms.assetid: 25371620-23bb-4a98-9554-14057742b0ca
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: WSK_PROVIDER_CHARACTERISTICS, WSK_PROVIDER_CHARACTERISTICS structure [Network Drivers Starting with Windows Vista], wsk/WSK_PROVIDER_CHARACTERISTICS, wsk/PWSK_PROVIDER_CHARACTERISTICS, PWSK_PROVIDER_CHARACTERISTICS, wskref_f552c7d1-89a7-4cb6-aa7c-5f5ddb906deb.xml, _WSK_PROVIDER_CHARACTERISTICS, *PWSK_PROVIDER_CHARACTERISTICS, PWSK_PROVIDER_CHARACTERISTICS structure pointer [Network Drivers Starting with Windows Vista], netvista.wsk_provider_characteristics
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wsk.h
+req.include-header: Wsk.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wsk.h
+apiname:
+-	WSK_PROVIDER_CHARACTERISTICS
+product: Windows
+targetos: Windows
+req.typenames: WSK_PROVIDER_CHARACTERISTICS, *PWSK_PROVIDER_CHARACTERISTICS
+req.product: Windows 10 or later.
 ---
 
 # _WSK_PROVIDER_CHARACTERISTICS structure

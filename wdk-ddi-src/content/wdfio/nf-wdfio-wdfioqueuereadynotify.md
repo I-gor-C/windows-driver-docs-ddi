@@ -1,42 +1,50 @@
 ---
-UID : NF:wdfio.WdfIoQueueReadyNotify
-title : WdfIoQueueReadyNotify function
-author : windows-driver-content
-description : The WdfIoQueueReadyNotify method registers (or deregisters) an event callback function that the framework calls each time a specified I/O queue that was previously empty receives one or more I/O requests.
-old-location : wdf\wdfioqueuereadynotify.htm
-old-project : wdf
-ms.assetid : 0d48dce1-252f-4dc2-85a8-6c25e99ce0ba
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdfio/WdfIoQueueReadyNotify, DFQueueObjectRef_4816d999-fba0-46f6-8fbf-e1421d3d87e2.xml, kmdf.wdfioqueuereadynotify, WdfIoQueueReadyNotify, WdfIoQueueReadyNotify method, PFN_WDFIOQUEUEREADYNOTIFY, wdf.wdfioqueuereadynotify
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfio.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_IO_QUEUE_STATE
-req.product : Windows 10 or later.
+UID: NF:wdfio.WdfIoQueueReadyNotify
+title: WdfIoQueueReadyNotify function
+author: windows-driver-content
+description: The WdfIoQueueReadyNotify method registers (or deregisters) an event callback function that the framework calls each time a specified I/O queue that was previously empty receives one or more I/O requests.
+old-location: wdf\wdfioqueuereadynotify.htm
+old-project: wdf
+ms.assetid: 0d48dce1-252f-4dc2-85a8-6c25e99ce0ba
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdfio/WdfIoQueueReadyNotify, DFQueueObjectRef_4816d999-fba0-46f6-8fbf-e1421d3d87e2.xml, kmdf.wdfioqueuereadynotify, WdfIoQueueReadyNotify, WdfIoQueueReadyNotify method, PFN_WDFIOQUEUEREADYNOTIFY, wdf.wdfioqueuereadynotify
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfio.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+-	WUDFx02000.dll
+-	WUDFx02000.dll.dll
+apiname:
+-	WdfIoQueueReadyNotify
+product: Windows
+targetos: Windows
+req.typenames: WDF_IO_QUEUE_STATE
+req.product: Windows 10 or later.
 ---
 
 

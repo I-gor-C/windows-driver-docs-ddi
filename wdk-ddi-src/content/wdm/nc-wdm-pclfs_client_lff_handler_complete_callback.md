@@ -1,42 +1,47 @@
 ---
-UID : NC:wdm.PCLFS_CLIENT_LFF_HANDLER_COMPLETE_CALLBACK
-title : PCLFS_CLIENT_LFF_HANDLER_COMPLETE_CALLBACK
-author : windows-driver-content
-description : The ClfsLogGrowthCompleteCallback function implements the actions that the client will take when space is freed in a log that had previously been full.
-old-location : kernel\clfsloggrowthcompletecallback.htm
-old-project : kernel
-ms.assetid : f8ebeaa9-e487-461b-8d95-50094bcc2bf5
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.clfsloggrowthcompletecallback, ClfsLogGrowthCompleteCallback, ClfsLogGrowthCompleteCallback callback function [Kernel-Mode Driver Architecture], ClfsLogGrowthCompleteCallback, PCLFS_CLIENT_LFF_HANDLER_COMPLETE_CALLBACK, PCLFS_CLIENT_LFF_HANDLER_COMPLETE_CALLBACK, wdm/ClfsLogGrowthCompleteCallback, Clfs_management_656d5a55-7a42-48c3-a788-d1eec6b5e11e.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported in Windows Server 2003 R2, Windows Vista, and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Called at IRQL <= APC_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
-req.product : Windows 10 or later.
+UID: NC:wdm.PCLFS_CLIENT_LFF_HANDLER_COMPLETE_CALLBACK
+title: PCLFS_CLIENT_LFF_HANDLER_COMPLETE_CALLBACK
+author: windows-driver-content
+description: The ClfsLogGrowthCompleteCallback function implements the actions that the client will take when space is freed in a log that had previously been full.
+old-location: kernel\clfsloggrowthcompletecallback.htm
+old-project: kernel
+ms.assetid: f8ebeaa9-e487-461b-8d95-50094bcc2bf5
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.clfsloggrowthcompletecallback, ClfsLogGrowthCompleteCallback, ClfsLogGrowthCompleteCallback callback function [Kernel-Mode Driver Architecture], ClfsLogGrowthCompleteCallback, PCLFS_CLIENT_LFF_HANDLER_COMPLETE_CALLBACK, PCLFS_CLIENT_LFF_HANDLER_COMPLETE_CALLBACK, wdm/ClfsLogGrowthCompleteCallback, Clfs_management_656d5a55-7a42-48c3-a788-d1eec6b5e11e.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported in Windows Server 2003 R2, Windows Vista, and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Called at IRQL <= APC_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Wdm.h
+apiname:
+-	ClfsLogGrowthCompleteCallback
+product: Windows
+targetos: Windows
+req.typenames: WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+req.product: Windows 10 or later.
 ---
 
 

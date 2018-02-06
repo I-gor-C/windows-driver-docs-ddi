@@ -1,42 +1,48 @@
 ---
-UID : NF:wdm.ClfsSetArchiveTail
-title : ClfsSetArchiveTail function
-author : windows-driver-content
-description : The ClfsSetArchiveTail routine sets the archive tail of a CLFS log to a specified LSN.
-old-location : kernel\clfssetarchivetail.htm
-old-project : kernel
-ms.assetid : 58c1d222-72c5-4b40-9ae5-f633bac599f0
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/ClfsSetArchiveTail, Clfs_f5685e7e-3098-461d-aff1-807011c36526.xml, ClfsSetArchiveTail routine [Kernel-Mode Driver Architecture], kernel.clfssetarchivetail, ClfsSetArchiveTail
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Clfs.lib
-req.dll : Clfs.sys
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ClfsSetArchiveTail
+title: ClfsSetArchiveTail function
+author: windows-driver-content
+description: The ClfsSetArchiveTail routine sets the archive tail of a CLFS log to a specified LSN.
+old-location: kernel\clfssetarchivetail.htm
+old-project: kernel
+ms.assetid: 58c1d222-72c5-4b40-9ae5-f633bac599f0
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/ClfsSetArchiveTail, Clfs_f5685e7e-3098-461d-aff1-807011c36526.xml, ClfsSetArchiveTail routine [Kernel-Mode Driver Architecture], kernel.clfssetarchivetail, ClfsSetArchiveTail
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Clfs.lib
+req.dll: Clfs.sys
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Clfs.sys
+-	Ext-MS-Win-fs-clfs-l1-1-0.dll
+apiname:
+-	ClfsSetArchiveTail
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

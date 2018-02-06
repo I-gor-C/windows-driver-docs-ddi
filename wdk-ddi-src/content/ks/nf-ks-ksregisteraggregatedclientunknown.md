@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsRegisterAggregatedClientUnknown
-title : KsRegisterAggregatedClientUnknown function
-author : windows-driver-content
-description : In a manner very similar to COM, the KsRegisterAggregatedClientUnknown function aggregates two objects:\_the specified AVStream object and a client unknown object.
-old-location : stream\ksregisteraggregatedclientunknown.htm
-old-project : stream
-ms.assetid : b0e18e39-2435-4823-aab4-ba52d218294a
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.ksregisteraggregatedclientunknown, KsRegisterAggregatedClientUnknown function [Streaming Media Devices], KsRegisterAggregatedClientUnknown, ks/KsRegisterAggregatedClientUnknown, avfunc_1b7f6d25-4aae-4580-b8d2-5050c9ffede1.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsRegisterAggregatedClientUnknown
+title: KsRegisterAggregatedClientUnknown function
+author: windows-driver-content
+description: In a manner very similar to COM, the KsRegisterAggregatedClientUnknown function aggregates two objects:\_the specified AVStream object and a client unknown object.
+old-location: stream\ksregisteraggregatedclientunknown.htm
+old-project: stream
+ms.assetid: b0e18e39-2435-4823-aab4-ba52d218294a
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.ksregisteraggregatedclientunknown, KsRegisterAggregatedClientUnknown function [Streaming Media Devices], KsRegisterAggregatedClientUnknown, ks/KsRegisterAggregatedClientUnknown, avfunc_1b7f6d25-4aae-4580-b8d2-5050c9ffede1.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsRegisterAggregatedClientUnknown
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

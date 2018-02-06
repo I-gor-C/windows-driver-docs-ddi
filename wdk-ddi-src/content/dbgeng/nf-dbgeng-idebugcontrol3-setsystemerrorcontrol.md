@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugControl3.SetSystemErrorControl
-title : IDebugControl3::SetSystemErrorControl method
-author : windows-driver-content
-description : The SetSystemErrorControl method sets the control values for handling system errors.
-old-location : debugger\setsystemerrorcontrol.htm
-old-project : debugger
-ms.assetid : 0ff15743-29df-44dc-a18b-ba8f7e49058e
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : dbgeng/IDebugControl::SetSystemErrorControl, SetSystemErrorControl method [Windows Debugging], IDebugControl3 interface, IDebugControl interface [Windows Debugging], SetSystemErrorControl method, SetSystemErrorControl, IDebugControl2::SetSystemErrorControl, IDebugControl3::SetSystemErrorControl, dbgeng/IDebugControl3::SetSystemErrorControl, IDebugControl3, dbgeng/IDebugControl2::SetSystemErrorControl, SetSystemErrorControl method [Windows Debugging], SetSystemErrorControl method [Windows Debugging], IDebugControl2 interface, IDebugControl_60e365d4-8645-469c-8973-9f2da168bba3.xml, IDebugControl2 interface [Windows Debugging], SetSystemErrorControl method, SetSystemErrorControl method [Windows Debugging], IDebugControl interface, IDebugControl3 interface [Windows Debugging], SetSystemErrorControl method, debugger.setsystemerrorcontrol, IDebugControl::SetSystemErrorControl
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl3.SetSystemErrorControl
+title: IDebugControl3::SetSystemErrorControl method
+author: windows-driver-content
+description: The SetSystemErrorControl method sets the control values for handling system errors.
+old-location: debugger\setsystemerrorcontrol.htm
+old-project: debugger
+ms.assetid: 0ff15743-29df-44dc-a18b-ba8f7e49058e
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: dbgeng/IDebugControl::SetSystemErrorControl, SetSystemErrorControl method [Windows Debugging], IDebugControl3 interface, IDebugControl interface [Windows Debugging], SetSystemErrorControl method, SetSystemErrorControl, IDebugControl2::SetSystemErrorControl, IDebugControl3::SetSystemErrorControl, dbgeng/IDebugControl3::SetSystemErrorControl, IDebugControl3, dbgeng/IDebugControl2::SetSystemErrorControl, SetSystemErrorControl method [Windows Debugging], SetSystemErrorControl method [Windows Debugging], IDebugControl2 interface, IDebugControl_60e365d4-8645-469c-8973-9f2da168bba3.xml, IDebugControl2 interface [Windows Debugging], SetSystemErrorControl method, SetSystemErrorControl method [Windows Debugging], IDebugControl interface, IDebugControl3 interface [Windows Debugging], SetSystemErrorControl method, debugger.setsystemerrorcontrol, IDebugControl::SetSystemErrorControl
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl.SetSystemErrorControl
+-	IDebugControl2.SetSystemErrorControl
+-	IDebugControl3.SetSystemErrorControl
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

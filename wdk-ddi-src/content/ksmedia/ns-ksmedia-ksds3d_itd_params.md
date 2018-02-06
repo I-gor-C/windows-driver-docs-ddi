@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.KSDS3D_ITD_PARAMS
-title : KSDS3D_ITD_PARAMS
-author : windows-driver-content
-description : The KSDS3D_ITD_PARAMS structure specifies the parameters applied by the interaural time delay (ITD) algorithm to the left or right channel in a 3D node (KSNODETYPE_3D_EFFECTS).
-old-location : audio\ksds3d_itd_params.htm
-old-project : audio
-ms.assetid : 2c8701d5-c762-4d2c-abd7-8da90292f3c0
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : PKSDS3D_ITD_PARAMS structure pointer [Audio Devices], ksmedia/KSDS3D_ITD_PARAMS, audio.ksds3d_itd_params, aud-prop_169748c9-f538-47d2-ae3c-ae34cca26f00.xml, *PKSDS3D_ITD_PARAMS, KSDS3D_ITD_PARAMS structure [Audio Devices], PKSDS3D_ITD_PARAMS, KSDS3D_ITD_PARAMS, ksmedia/PKSDS3D_ITD_PARAMS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KSDS3D_ITD_PARAMS, *PKSDS3D_ITD_PARAMS
+UID: NS:ksmedia.KSDS3D_ITD_PARAMS
+title: KSDS3D_ITD_PARAMS
+author: windows-driver-content
+description: The KSDS3D_ITD_PARAMS structure specifies the parameters applied by the interaural time delay (ITD) algorithm to the left or right channel in a 3D node (KSNODETYPE_3D_EFFECTS).
+old-location: audio\ksds3d_itd_params.htm
+old-project: audio
+ms.assetid: 2c8701d5-c762-4d2c-abd7-8da90292f3c0
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: PKSDS3D_ITD_PARAMS structure pointer [Audio Devices], ksmedia/KSDS3D_ITD_PARAMS, audio.ksds3d_itd_params, aud-prop_169748c9-f538-47d2-ae3c-ae34cca26f00.xml, *PKSDS3D_ITD_PARAMS, KSDS3D_ITD_PARAMS structure [Audio Devices], PKSDS3D_ITD_PARAMS, KSDS3D_ITD_PARAMS, ksmedia/PKSDS3D_ITD_PARAMS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	KSDS3D_ITD_PARAMS
+product: Windows
+targetos: Windows
+req.typenames: KSDS3D_ITD_PARAMS, *PKSDS3D_ITD_PARAMS
 ---
 
 # KSDS3D_ITD_PARAMS structure

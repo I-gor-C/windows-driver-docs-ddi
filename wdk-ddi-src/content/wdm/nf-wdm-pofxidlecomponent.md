@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.PoFxIdleComponent
-title : PoFxIdleComponent function
-author : windows-driver-content
-description : The PoFxIdleComponent routine decrements the activation reference count on the specified component.
-old-location : kernel\pofxidlecomponent.htm
-old-project : kernel
-ms.assetid : 07282994-5E04-432D-85A6-4677DB2DA84A
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : PoFxIdleComponent, wdm/PoFxIdleComponent, PoFxIdleComponent routine [Kernel-Mode Driver Architecture], kernel.pofxidlecomponent
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : 
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ntoskrnl.lib
-req.dll : Ntoskrnl.exe
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.PoFxIdleComponent
+title: PoFxIdleComponent function
+author: windows-driver-content
+description: The PoFxIdleComponent routine decrements the activation reference count on the specified component.
+old-location: kernel\pofxidlecomponent.htm
+old-project: kernel
+ms.assetid: 07282994-5E04-432D-85A6-4677DB2DA84A
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: PoFxIdleComponent, wdm/PoFxIdleComponent, PoFxIdleComponent routine [Kernel-Mode Driver Architecture], kernel.pofxidlecomponent
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: 
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ntoskrnl.lib
+req.dll: Ntoskrnl.exe
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Ntoskrnl.exe
+apiname:
+-	PoFxIdleComponent
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

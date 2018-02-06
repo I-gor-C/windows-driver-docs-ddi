@@ -1,42 +1,47 @@
 ---
-UID : NS:wwan._WWAN_PACKET_SERVICE
-title : "_WWAN_PACKET_SERVICE"
-author : windows-driver-content
-description : The WWAN_PACKET_SERVICE structure represents the packet service attachment state of the MB device.
-old-location : netvista\wwan_packet_service.htm
-old-project : netvista
-ms.assetid : 5d444e1c-cbcf-47ab-9c5a-10af1f1915cf
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : wwan/WWAN_PACKET_SERVICE, _WWAN_PACKET_SERVICE, PWWAN_PACKET_SERVICE structure pointer [Network Drivers Starting with Windows Vista], *PWWAN_PACKET_SERVICE, WWAN_PACKET_SERVICE structure [Network Drivers Starting with Windows Vista], WwanRef_ce147c69-a83d-42fd-9b08-7a12e6ecaf1a.xml, netvista.wwan_packet_service, wwan/PWWAN_PACKET_SERVICE, WWAN_PACKET_SERVICE, PWWAN_PACKET_SERVICE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wwan.h
-req.include-header : Wwan.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WWAN_PACKET_SERVICE, *PWWAN_PACKET_SERVICE
-req.product : Windows 10 or later.
+UID: NS:wwan._WWAN_PACKET_SERVICE
+title: "_WWAN_PACKET_SERVICE"
+author: windows-driver-content
+description: The WWAN_PACKET_SERVICE structure represents the packet service attachment state of the MB device.
+old-location: netvista\wwan_packet_service.htm
+old-project: netvista
+ms.assetid: 5d444e1c-cbcf-47ab-9c5a-10af1f1915cf
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: wwan/WWAN_PACKET_SERVICE, _WWAN_PACKET_SERVICE, PWWAN_PACKET_SERVICE structure pointer [Network Drivers Starting with Windows Vista], *PWWAN_PACKET_SERVICE, WWAN_PACKET_SERVICE structure [Network Drivers Starting with Windows Vista], WwanRef_ce147c69-a83d-42fd-9b08-7a12e6ecaf1a.xml, netvista.wwan_packet_service, wwan/PWWAN_PACKET_SERVICE, WWAN_PACKET_SERVICE, PWWAN_PACKET_SERVICE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wwan.h
+req.include-header: Wwan.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wwan.h
+apiname:
+-	WWAN_PACKET_SERVICE
+product: Windows
+targetos: Windows
+req.typenames: WWAN_PACKET_SERVICE, *PWWAN_PACKET_SERVICE
+req.product: Windows 10 or later.
 ---
 
 # _WWAN_PACKET_SERVICE structure

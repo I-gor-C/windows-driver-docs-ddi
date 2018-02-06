@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltStartFiltering
-title : FltStartFiltering function
-author : windows-driver-content
-description : FltStartFiltering starts filtering for a registered minifilter driver.
-old-location : ifsk\fltstartfiltering.htm
-old-project : ifsk
-ms.assetid : fc24e764-d584-4927-942f-3b8b4b83af79
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltApiRef_p_to_z_f88abc20-f8b7-4399-85be-bd43674fe536.xml, FltStartFiltering, FltStartFiltering function [Installable File System Drivers], fltkernel/FltStartFiltering, ifsk.fltstartfiltering
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltStartFiltering
+title: FltStartFiltering function
+author: windows-driver-content
+description: FltStartFiltering starts filtering for a registered minifilter driver.
+old-location: ifsk\fltstartfiltering.htm
+old-project: ifsk
+ms.assetid: fc24e764-d584-4927-942f-3b8b4b83af79
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltApiRef_p_to_z_f88abc20-f8b7-4399-85be-bd43674fe536.xml, FltStartFiltering, FltStartFiltering function [Installable File System Drivers], fltkernel/FltStartFiltering, ifsk.fltstartfiltering
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltStartFiltering
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

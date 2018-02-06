@@ -1,42 +1,47 @@
 ---
-UID : NF:wiautil.CWiauPropertyList.CWiauPropertyList
-title : CWiauPropertyList::CWiauPropertyList method
-author : windows-driver-content
-description : The CWiauPropertyList::CWiauPropertyList method is the constructor for the CWiauPropertyList class.
-old-location : image\cwiaupropertylist_cwiaupropertylist.htm
-old-project : image
-ms.assetid : 5e493d3c-81b6-4db5-a550-c86eadf5a723
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : CWiauPropertyList method [Imaging Devices], wiautil/CWiauPropertyList::CWiauPropertyList, CWiauPropertyList interface [Imaging Devices], CWiauPropertyList method, CWiauPropertyList method [Imaging Devices], CWiauPropertyList interface, CWiauPropertyList::CWiauPropertyList, wiauFncs_834023ef-b425-4469-a5e7-c127fd5acf2a.xml, CWiauPropertyList, image.cwiaupropertylist_cwiaupropertylist
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wiautil.h
-req.include-header : Wiautil.h, Wiamindr.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows XP and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wiautil.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SKIP_AMOUNT
-req.product : Windows 10 or later.
+UID: NF:wiautil.CWiauPropertyList.CWiauPropertyList
+title: CWiauPropertyList::CWiauPropertyList method
+author: windows-driver-content
+description: The CWiauPropertyList::CWiauPropertyList method is the constructor for the CWiauPropertyList class.
+old-location: image\cwiaupropertylist_cwiaupropertylist.htm
+old-project: image
+ms.assetid: 5e493d3c-81b6-4db5-a550-c86eadf5a723
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: CWiauPropertyList method [Imaging Devices], wiautil/CWiauPropertyList::CWiauPropertyList, CWiauPropertyList interface [Imaging Devices], CWiauPropertyList method, CWiauPropertyList method [Imaging Devices], CWiauPropertyList interface, CWiauPropertyList::CWiauPropertyList, wiauFncs_834023ef-b425-4469-a5e7-c127fd5acf2a.xml, CWiauPropertyList, image.cwiaupropertylist_cwiaupropertylist
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wiautil.h
+req.include-header: Wiautil.h, Wiamindr.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows XP and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wiautil.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Wiautil.h
+apiname:
+-	CWiauPropertyList.CWiauPropertyList
+product: Windows
+targetos: Windows
+req.typenames: SKIP_AMOUNT
+req.product: Windows 10 or later.
 ---
 
 

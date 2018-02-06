@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddcdrm.IOCTL_CDROM_PLAY_AUDIO_MSF
-title : IOCTL_CDROM_PLAY_AUDIO_MSF
-author : windows-driver-content
-description : Plays the specified range of the media. Obsolete, beginning with Windows Vista.
-old-location : storage\ioctl_cdrom_play_audio_msf.htm
-old-project : storage
-ms.assetid : cb88fa6b-e96a-41a9-abcc-9ab28b62954f
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_cdrom_play_audio_msf, IOCTL_CDROM_PLAY_AUDIO_MSF control code [Storage Devices], IOCTL_CDROM_PLAY_AUDIO_MSF, ntddcdrm/IOCTL_CDROM_PLAY_AUDIO_MSF, k307_dce77286-4efa-4b8b-bb78-2c771bd75727.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddcdrm.h
-req.include-header : Ntddcdrm.h
-req.target-type : Windows
-req.target-min-winverclnt : Obsolete, beginning with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WRITE_ROTATION, *PWRITE_ROTATION
+UID: NI:ntddcdrm.IOCTL_CDROM_PLAY_AUDIO_MSF
+title: IOCTL_CDROM_PLAY_AUDIO_MSF
+author: windows-driver-content
+description: Plays the specified range of the media. Obsolete, beginning with Windows Vista.
+old-location: storage\ioctl_cdrom_play_audio_msf.htm
+old-project: storage
+ms.assetid: cb88fa6b-e96a-41a9-abcc-9ab28b62954f
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_cdrom_play_audio_msf, IOCTL_CDROM_PLAY_AUDIO_MSF control code [Storage Devices], IOCTL_CDROM_PLAY_AUDIO_MSF, ntddcdrm/IOCTL_CDROM_PLAY_AUDIO_MSF, k307_dce77286-4efa-4b8b-bb78-2c771bd75727.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddcdrm.h
+req.include-header: Ntddcdrm.h
+req.target-type: Windows
+req.target-min-winverclnt: Obsolete, beginning with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddcdrm.h
+apiname:
+-	IOCTL_CDROM_PLAY_AUDIO_MSF
+product: Windows
+targetos: Windows
+req.typenames: WRITE_ROTATION, *PWRITE_ROTATION
 ---
 
 # IOCTL_CDROM_PLAY_AUDIO_MSF IOCTL

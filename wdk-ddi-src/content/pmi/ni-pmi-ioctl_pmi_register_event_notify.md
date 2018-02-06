@@ -1,41 +1,46 @@
 ---
-UID : NI:pmi.IOCTL_PMI_REGISTER_EVENT_NOTIFY
-title : IOCTL_PMI_REGISTER_EVENT_NOTIFY
-author : windows-driver-content
-description : The IOCTL_PMI_REGISTER_EVENT_NOTIFY request registers the IOCTL initiator to be notified about a power meter event. When the event occurs, the Power Meter Interface (PMI) completes the IOCTL request and returns information about the event.
-old-location : powermeter\ioctl_pmi_register_event_notify.htm
-old-project : powermeter
-ms.assetid : 0d79a25b-846d-490d-9e04-d319fa860761
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : powermeter.ioctl_pmi_register_event_notify, IOCTL_PMI_REGISTER_EVENT_NOTIFY control code [Power Metering and Budgeting Devices], IOCTL_PMI_REGISTER_EVENT_NOTIFY, pmi/IOCTL_PMI_REGISTER_EVENT_NOTIFY, PowerMeterRef_9132445e-2195-4f6a-933d-0dc858128c4d.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : pmi.h
-req.include-header : Pmi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7, Windows Server 2008 R2, and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PMI_MEASUREMENT_UNIT
+UID: NI:pmi.IOCTL_PMI_REGISTER_EVENT_NOTIFY
+title: IOCTL_PMI_REGISTER_EVENT_NOTIFY
+author: windows-driver-content
+description: The IOCTL_PMI_REGISTER_EVENT_NOTIFY request registers the IOCTL initiator to be notified about a power meter event. When the event occurs, the Power Meter Interface (PMI) completes the IOCTL request and returns information about the event.
+old-location: powermeter\ioctl_pmi_register_event_notify.htm
+old-project: powermeter
+ms.assetid: 0d79a25b-846d-490d-9e04-d319fa860761
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: powermeter.ioctl_pmi_register_event_notify, IOCTL_PMI_REGISTER_EVENT_NOTIFY control code [Power Metering and Budgeting Devices], IOCTL_PMI_REGISTER_EVENT_NOTIFY, pmi/IOCTL_PMI_REGISTER_EVENT_NOTIFY, PowerMeterRef_9132445e-2195-4f6a-933d-0dc858128c4d.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: pmi.h
+req.include-header: Pmi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7, Windows Server 2008 R2, and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Pmi.h
+apiname:
+-	IOCTL_PMI_REGISTER_EVENT_NOTIFY
+product: Windows
+targetos: Windows
+req.typenames: PMI_MEASUREMENT_UNIT
 ---
 
 # IOCTL_PMI_REGISTER_EVENT_NOTIFY IOCTL

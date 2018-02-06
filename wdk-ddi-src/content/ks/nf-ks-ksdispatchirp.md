@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsDispatchIrp
-title : KsDispatchIrp function
-author : windows-driver-content
-description : KsDispatchIrp calls a dispatch routine corresponding to the function code of the specified IRP. KsDispatchIrp then returns the status code from this call.
-old-location : stream\ksdispatchirp.htm
-old-project : stream
-ms.assetid : 6ee88b2d-4086-4e6d-b80b-eff6868ce784
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KsDispatchIrp routine [Streaming Media Devices], ksfunc_ed03b195-fcb3-41ca-9794-c9b9f04ce8c9.xml, ks/KsDispatchIrp, KsDispatchIrp, stream.ksdispatchirp
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsDispatchIrp
+title: KsDispatchIrp function
+author: windows-driver-content
+description: KsDispatchIrp calls a dispatch routine corresponding to the function code of the specified IRP. KsDispatchIrp then returns the status code from this call.
+old-location: stream\ksdispatchirp.htm
+old-project: stream
+ms.assetid: 6ee88b2d-4086-4e6d-b80b-eff6868ce784
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KsDispatchIrp routine [Streaming Media Devices], ksfunc_ed03b195-fcb3-41ca-9794-c9b9f04ce8c9.xml, ks/KsDispatchIrp, KsDispatchIrp, stream.ksdispatchirp
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsDispatchIrp
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

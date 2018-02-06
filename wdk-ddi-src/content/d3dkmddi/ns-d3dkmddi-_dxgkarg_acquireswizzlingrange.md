@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGKARG_ACQUIRESWIZZLINGRANGE
-title : "_DXGKARG_ACQUIRESWIZZLINGRANGE"
-author : windows-driver-content
-description : The DXGKARG_ACQUIRESWIZZLINGRANGE structure describes parameters for making an allocation accessible through a CPU aperture.
-old-location : display\dxgkarg_acquireswizzlingrange.htm
-old-project : display
-ms.assetid : 865f4d08-f2b3-4922-956f-2c49aa4e68b0
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : "*INOUT_PDXGKARG_ACQUIRESWIZZLINGRANGE, _DXGKARG_ACQUIRESWIZZLINGRANGE, DmStructs_761fb707-877a-455c-b5cd-0c2e2b050aea.xml, display.dxgkarg_acquireswizzlingrange, DXGKARG_ACQUIRESWIZZLINGRANGE structure [Display Devices], d3dkmddi/DXGKARG_ACQUIRESWIZZLINGRANGE, DXGKARG_ACQUIRESWIZZLINGRANGE"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGKARG_ACQUIRESWIZZLINGRANGE
+UID: NS:d3dkmddi._DXGKARG_ACQUIRESWIZZLINGRANGE
+title: "_DXGKARG_ACQUIRESWIZZLINGRANGE"
+author: windows-driver-content
+description: The DXGKARG_ACQUIRESWIZZLINGRANGE structure describes parameters for making an allocation accessible through a CPU aperture.
+old-location: display\dxgkarg_acquireswizzlingrange.htm
+old-project: display
+ms.assetid: 865f4d08-f2b3-4922-956f-2c49aa4e68b0
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: "*INOUT_PDXGKARG_ACQUIRESWIZZLINGRANGE, _DXGKARG_ACQUIRESWIZZLINGRANGE, DmStructs_761fb707-877a-455c-b5cd-0c2e2b050aea.xml, display.dxgkarg_acquireswizzlingrange, DXGKARG_ACQUIRESWIZZLINGRANGE structure [Display Devices], d3dkmddi/DXGKARG_ACQUIRESWIZZLINGRANGE, DXGKARG_ACQUIRESWIZZLINGRANGE"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DXGKARG_ACQUIRESWIZZLINGRANGE
+product: Windows
+targetos: Windows
+req.typenames: DXGKARG_ACQUIRESWIZZLINGRANGE
 ---
 
 # _DXGKARG_ACQUIRESWIZZLINGRANGE structure

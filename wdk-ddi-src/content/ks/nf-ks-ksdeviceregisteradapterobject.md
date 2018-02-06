@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsDeviceRegisterAdapterObject
-title : KsDeviceRegisterAdapterObject function
-author : windows-driver-content
-description : The KsDeviceRegisterAdapterObject function registers a DMA adapter object with AVStream for performing scatter/gather DMA on the specified device. All drivers compiled for Win64 should use IKsDeviceFunctions::RegisterAdapterObjectEx instead.
-old-location : stream\ksdeviceregisteradapterobject.htm
-old-project : stream
-ms.assetid : 6e3c33fe-eb28-4985-98f3-cafa85543d68
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KsDeviceRegisterAdapterObject, avfunc_59ad20f2-ca31-4fbb-808e-48df3a0c87a8.xml, KsDeviceRegisterAdapterObject function [Streaming Media Devices], ks/KsDeviceRegisterAdapterObject, stream.ksdeviceregisteradapterobject
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsDeviceRegisterAdapterObject
+title: KsDeviceRegisterAdapterObject function
+author: windows-driver-content
+description: The KsDeviceRegisterAdapterObject function registers a DMA adapter object with AVStream for performing scatter/gather DMA on the specified device. All drivers compiled for Win64 should use IKsDeviceFunctions::RegisterAdapterObjectEx instead.
+old-location: stream\ksdeviceregisteradapterobject.htm
+old-project: stream
+ms.assetid: 6e3c33fe-eb28-4985-98f3-cafa85543d68
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KsDeviceRegisterAdapterObject, avfunc_59ad20f2-ca31-4fbb-808e-48df3a0c87a8.xml, KsDeviceRegisterAdapterObject function [Streaming Media Devices], ks/KsDeviceRegisterAdapterObject, stream.ksdeviceregisteradapterobject
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsDeviceRegisterAdapterObject
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

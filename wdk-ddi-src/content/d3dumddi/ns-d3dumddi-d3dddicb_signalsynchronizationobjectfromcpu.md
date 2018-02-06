@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi.D3DDDICB_SIGNALSYNCHRONIZATIONOBJECTFROMCPU
-title : D3DDDICB_SIGNALSYNCHRONIZATIONOBJECTFROMCPU
-author : windows-driver-content
-description : D3DDDICB_SIGNALSYNCHRONIZATIONOBJECTFROMCPU is used with pfnSignalSynchronizationObjectFromCpuCb to enable a driver to signal a monitored fence.
-old-location : display\d3dddicb_signalsynchronizationobjectfromcpu.htm
-old-project : display
-ms.assetid : 14CA5FD1-00CB-474B-A2A3-4264CAFA063A
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DDDICB_SIGNALSYNCHRONIZATIONOBJECTFROMCPU structure [Display Devices], display.d3dddicb_signalsynchronizationobjectfromcpu, d3dumddi/D3DDDICB_SIGNALSYNCHRONIZATIONOBJECTFROMCPU, D3DDDICB_SIGNALSYNCHRONIZATIONOBJECTFROMCPU
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDICB_SIGNALSYNCHRONIZATIONOBJECTFROMCPU
+UID: NS:d3dumddi.D3DDDICB_SIGNALSYNCHRONIZATIONOBJECTFROMCPU
+title: D3DDDICB_SIGNALSYNCHRONIZATIONOBJECTFROMCPU
+author: windows-driver-content
+description: D3DDDICB_SIGNALSYNCHRONIZATIONOBJECTFROMCPU is used with pfnSignalSynchronizationObjectFromCpuCb to enable a driver to signal a monitored fence.
+old-location: display\d3dddicb_signalsynchronizationobjectfromcpu.htm
+old-project: display
+ms.assetid: 14CA5FD1-00CB-474B-A2A3-4264CAFA063A
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DDDICB_SIGNALSYNCHRONIZATIONOBJECTFROMCPU structure [Display Devices], display.d3dddicb_signalsynchronizationobjectfromcpu, d3dumddi/D3DDDICB_SIGNALSYNCHRONIZATIONOBJECTFROMCPU, D3DDDICB_SIGNALSYNCHRONIZATIONOBJECTFROMCPU
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	D3DDDICB_SIGNALSYNCHRONIZATIONOBJECTFROMCPU
+product: Windows
+targetos: Windows
+req.typenames: D3DDDICB_SIGNALSYNCHRONIZATIONOBJECTFROMCPU
 ---
 
 # D3DDDICB_SIGNALSYNCHRONIZATIONOBJECTFROMCPU structure

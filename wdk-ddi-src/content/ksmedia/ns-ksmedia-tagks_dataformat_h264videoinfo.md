@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.tagKS_DATAFORMAT_H264VIDEOINFO
-title : tagKS_DATAFORMAT_H264VIDEOINFO
-author : windows-driver-content
-description : The KS_DATAFORMAT_H264VIDEOINFO structure describes the data formats range available for a stream.
-old-location : stream\ks_dataformat_h264videoinfo.htm
-old-project : stream
-ms.assetid : 6D2C0245-542E-4749-B8F3-531BFA3800E3
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ksmedia/KS_DATAFORMAT_H264VIDEOINFO, PKS_DATAFORMAT_H264VIDEOINFO structure pointer [Streaming Media Devices], KS_DATAFORMAT_H264VIDEOINFO, PKS_DATAFORMAT_H264VIDEOINFO, KS_DATAFORMAT_H264VIDEOINFO structure [Streaming Media Devices], ksmedia/PKS_DATAFORMAT_H264VIDEOINFO, tagKS_DATAFORMAT_H264VIDEOINFO, *PKS_DATAFORMAT_H264VIDEOINFO, stream.ks_dataformat_h264videoinfo
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKS_DATAFORMAT_H264VIDEOINFO, KS_DATAFORMAT_H264VIDEOINFO"
+UID: NS:ksmedia.tagKS_DATAFORMAT_H264VIDEOINFO
+title: tagKS_DATAFORMAT_H264VIDEOINFO
+author: windows-driver-content
+description: The KS_DATAFORMAT_H264VIDEOINFO structure describes the data formats range available for a stream.
+old-location: stream\ks_dataformat_h264videoinfo.htm
+old-project: stream
+ms.assetid: 6D2C0245-542E-4749-B8F3-531BFA3800E3
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ksmedia/KS_DATAFORMAT_H264VIDEOINFO, PKS_DATAFORMAT_H264VIDEOINFO structure pointer [Streaming Media Devices], KS_DATAFORMAT_H264VIDEOINFO, PKS_DATAFORMAT_H264VIDEOINFO, KS_DATAFORMAT_H264VIDEOINFO structure [Streaming Media Devices], ksmedia/PKS_DATAFORMAT_H264VIDEOINFO, tagKS_DATAFORMAT_H264VIDEOINFO, *PKS_DATAFORMAT_H264VIDEOINFO, stream.ks_dataformat_h264videoinfo
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ksmedia.h
+apiname:
+-	KS_DATAFORMAT_H264VIDEOINFO
+product: Windows
+targetos: Windows
+req.typenames: "*PKS_DATAFORMAT_H264VIDEOINFO, KS_DATAFORMAT_H264VIDEOINFO"
 ---
 
 # tagKS_DATAFORMAT_H264VIDEOINFO structure

@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.VRAM_SURFACE_INFO
-title : VRAM_SURFACE_INFO
-author : windows-driver-content
-description : The VRAM_SURFACE_INFO structure describes a region of system or display memory into which an AVStream minidriver captures audio or video data.
-old-location : stream\vram_surface_info.htm
-old-project : stream
-ms.assetid : 6fce78f7-a23e-4651-b6d8-b3d5387ccc27
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : "*PVRAM_SURFACE_INFO, PVRAM_SURFACE_INFO, VRAM_SURFACE_INFO structure [Streaming Media Devices], ksmedia/PVRAM_SURFACE_INFO, avstruct_ac2ca5de-0eea-453b-b3fd-79874fd2242a.xml, stream.vram_surface_info, PVRAM_SURFACE_INFO structure pointer [Streaming Media Devices], ksmedia/VRAM_SURFACE_INFO, VRAM_SURFACE_INFO"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VRAM_SURFACE_INFO, *PVRAM_SURFACE_INFO
+UID: NS:ksmedia.VRAM_SURFACE_INFO
+title: VRAM_SURFACE_INFO
+author: windows-driver-content
+description: The VRAM_SURFACE_INFO structure describes a region of system or display memory into which an AVStream minidriver captures audio or video data.
+old-location: stream\vram_surface_info.htm
+old-project: stream
+ms.assetid: 6fce78f7-a23e-4651-b6d8-b3d5387ccc27
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: "*PVRAM_SURFACE_INFO, PVRAM_SURFACE_INFO, VRAM_SURFACE_INFO structure [Streaming Media Devices], ksmedia/PVRAM_SURFACE_INFO, avstruct_ac2ca5de-0eea-453b-b3fd-79874fd2242a.xml, stream.vram_surface_info, PVRAM_SURFACE_INFO structure pointer [Streaming Media Devices], ksmedia/VRAM_SURFACE_INFO, VRAM_SURFACE_INFO"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	VRAM_SURFACE_INFO
+product: Windows
+targetos: Windows
+req.typenames: VRAM_SURFACE_INFO, *PVRAM_SURFACE_INFO
 ---
 
 # VRAM_SURFACE_INFO structure

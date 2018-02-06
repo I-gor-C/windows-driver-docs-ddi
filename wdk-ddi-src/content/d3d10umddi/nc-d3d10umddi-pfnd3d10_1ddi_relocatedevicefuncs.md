@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3D10_1DDI_RELOCATEDEVICEFUNCS
-title : PFND3D10_1DDI_RELOCATEDEVICEFUNCS
-author : windows-driver-content
-description : The RelocateDeviceFuncs(D3D10_1) function notifies the user-mode display driver about the new location of the driver function table.
-old-location : display\relocatedevicefuncs_d3d10_1_.htm
-old-project : display
-ms.assetid : 0141badb-0d2d-433f-950f-bf169087c574
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.relocatedevicefuncs_d3d10_1_, RelocateDeviceFuncs_D3D10_1 callback function [Display Devices], RelocateDeviceFuncs_D3D10_1, PFND3D10_1DDI_RELOCATEDEVICEFUNCS, PFND3D10_1DDI_RELOCATEDEVICEFUNCS, d3d10umddi/RelocateDeviceFuncs_D3D10_1, UserModeDisplayDriverDx10_Functions_5798bcfe-7d15-407d-b7c2-cfe907e94991.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : RelocateDeviceFuncs(D3D10_1) is supported on Windows Vista with Service Pack 1 (SP1) and later versions and Windows Server 2008 and later versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3D10_1DDI_RELOCATEDEVICEFUNCS
+title: PFND3D10_1DDI_RELOCATEDEVICEFUNCS
+author: windows-driver-content
+description: The RelocateDeviceFuncs(D3D10_1) function notifies the user-mode display driver about the new location of the driver function table.
+old-location: display\relocatedevicefuncs_d3d10_1_.htm
+old-project: display
+ms.assetid: 0141badb-0d2d-433f-950f-bf169087c574
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.relocatedevicefuncs_d3d10_1_, RelocateDeviceFuncs_D3D10_1 callback function [Display Devices], RelocateDeviceFuncs_D3D10_1, PFND3D10_1DDI_RELOCATEDEVICEFUNCS, PFND3D10_1DDI_RELOCATEDEVICEFUNCS, d3d10umddi/RelocateDeviceFuncs_D3D10_1, UserModeDisplayDriverDx10_Functions_5798bcfe-7d15-407d-b7c2-cfe907e94991.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: RelocateDeviceFuncs(D3D10_1) is supported on Windows Vista with Service Pack 1 (SP1) and later versions and Windows Server 2008 and later versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	RelocateDeviceFuncs_D3D10_1
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:ntdddisk._FORMAT_EX_PARAMETERS
-title : "_FORMAT_EX_PARAMETERS"
-author : windows-driver-content
-description : The FORMAT_EX_PARAMETERS structure is used in conjunction with the IOCTL_DISK_FORMAT_TRACKS_EX request to format the specified set of contiguous tracks on the disk.
-old-location : storage\format_ex_parameters.htm
-old-project : storage
-ms.assetid : 0c87a0b8-f355-48a4-a119-11e047e159d0
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : ntdddisk/PFORMAT_EX_PARAMETERS, storage.format_ex_parameters, FORMAT_EX_PARAMETERS structure [Storage Devices], PFORMAT_EX_PARAMETERS, FORMAT_EX_PARAMETERS, _FORMAT_EX_PARAMETERS, *PFORMAT_EX_PARAMETERS, PFORMAT_EX_PARAMETERS structure pointer [Storage Devices], ntdddisk/FORMAT_EX_PARAMETERS, structs-disk_753384dd-08cd-40ee-90dc-61a82e5e0d14.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntdddisk.h
-req.include-header : Ntdddisk.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FORMAT_EX_PARAMETERS, *PFORMAT_EX_PARAMETERS
+UID: NS:ntdddisk._FORMAT_EX_PARAMETERS
+title: "_FORMAT_EX_PARAMETERS"
+author: windows-driver-content
+description: The FORMAT_EX_PARAMETERS structure is used in conjunction with the IOCTL_DISK_FORMAT_TRACKS_EX request to format the specified set of contiguous tracks on the disk.
+old-location: storage\format_ex_parameters.htm
+old-project: storage
+ms.assetid: 0c87a0b8-f355-48a4-a119-11e047e159d0
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: ntdddisk/PFORMAT_EX_PARAMETERS, storage.format_ex_parameters, FORMAT_EX_PARAMETERS structure [Storage Devices], PFORMAT_EX_PARAMETERS, FORMAT_EX_PARAMETERS, _FORMAT_EX_PARAMETERS, *PFORMAT_EX_PARAMETERS, PFORMAT_EX_PARAMETERS structure pointer [Storage Devices], ntdddisk/FORMAT_EX_PARAMETERS, structs-disk_753384dd-08cd-40ee-90dc-61a82e5e0d14.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntdddisk.h
+req.include-header: Ntdddisk.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntdddisk.h
+apiname:
+-	FORMAT_EX_PARAMETERS
+product: Windows
+targetos: Windows
+req.typenames: FORMAT_EX_PARAMETERS, *PFORMAT_EX_PARAMETERS
 ---
 
 # _FORMAT_EX_PARAMETERS structure

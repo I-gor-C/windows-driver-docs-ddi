@@ -1,41 +1,46 @@
 ---
-UID : NS:hbapiwmi._SM_SendRPL_IN
-title : "_SM_SendRPL_IN"
-author : windows-driver-content
-description : The SM_SendRPL_IN structure is used to provide input parameters to the SM_SendRPL method.
-old-location : storage\sm_sendrpl_in.htm
-old-project : storage
-ms.assetid : 5d97b852-57ba-4696-879b-d93a8f539304
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : PSM_SendRPL_IN structure pointer [Storage Devices], hbapiwmi/PSM_SendRPL_IN, hbapiwmi/SM_SendRPL_IN, SM_SendRPL_IN structure [Storage Devices], SM_SendRPL_IN, structs-Fibre_54275ca2-35b3-43f4-a62d-63c296b14663.xml, _SM_SendRPL_IN, PSM_SendRPL_IN, *PSM_SendRPL_IN, storage.sm_sendrpl_in
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : hbapiwmi.h
-req.include-header : Hbapiwmi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSM_SendRPL_IN, SM_SendRPL_IN"
+UID: NS:hbapiwmi._SM_SendRPL_IN
+title: "_SM_SendRPL_IN"
+author: windows-driver-content
+description: The SM_SendRPL_IN structure is used to provide input parameters to the SM_SendRPL method.
+old-location: storage\sm_sendrpl_in.htm
+old-project: storage
+ms.assetid: 5d97b852-57ba-4696-879b-d93a8f539304
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: PSM_SendRPL_IN structure pointer [Storage Devices], hbapiwmi/PSM_SendRPL_IN, hbapiwmi/SM_SendRPL_IN, SM_SendRPL_IN structure [Storage Devices], SM_SendRPL_IN, structs-Fibre_54275ca2-35b3-43f4-a62d-63c296b14663.xml, _SM_SendRPL_IN, PSM_SendRPL_IN, *PSM_SendRPL_IN, storage.sm_sendrpl_in
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: hbapiwmi.h
+req.include-header: Hbapiwmi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hbapiwmi.h
+apiname:
+-	SM_SendRPL_IN
+product: Windows
+targetos: Windows
+req.typenames: "*PSM_SendRPL_IN, SM_SendRPL_IN"
 ---
 
 # _SM_SendRPL_IN structure

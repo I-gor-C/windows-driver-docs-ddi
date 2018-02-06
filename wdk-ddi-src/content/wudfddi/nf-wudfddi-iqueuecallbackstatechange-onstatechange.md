@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IQueueCallbackStateChange.OnStateChange
-title : IQueueCallbackStateChange::OnStateChange method
-author : windows-driver-content
-description : The OnStateChange method is called when the state of the I/O queue object changes.
-old-location : wdf\iqueuecallbackstatechange_onstatechange.htm
-old-project : wdf
-ms.assetid : 69a422a1-b878-496e-b1b9-e04b7c3db121
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : IQueueCallbackStateChange, UMDFQueueObjectRef_194f5013-22a2-40c4-8913-9371aa281009.xml, wdf.iqueuecallbackstatechange_onstatechange, IQueueCallbackStateChange interface, OnStateChange method, OnStateChange method, IQueueCallbackStateChange interface, IQueueCallbackStateChange::OnStateChange, OnStateChange method, OnStateChange, umdf.iqueuecallbackstatechange_onstatechange, wudfddi/IQueueCallbackStateChange::OnStateChange
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IQueueCallbackStateChange.OnStateChange
+title: IQueueCallbackStateChange::OnStateChange method
+author: windows-driver-content
+description: The OnStateChange method is called when the state of the I/O queue object changes.
+old-location: wdf\iqueuecallbackstatechange_onstatechange.htm
+old-project: wdf
+ms.assetid: 69a422a1-b878-496e-b1b9-e04b7c3db121
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: IQueueCallbackStateChange, UMDFQueueObjectRef_194f5013-22a2-40c4-8913-9371aa281009.xml, wdf.iqueuecallbackstatechange_onstatechange, IQueueCallbackStateChange interface, OnStateChange method, OnStateChange method, IQueueCallbackStateChange interface, IQueueCallbackStateChange::OnStateChange, OnStateChange method, OnStateChange, umdf.iqueuecallbackstatechange_onstatechange, wudfddi/IQueueCallbackStateChange::OnStateChange
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Wudfddi.h
+apiname:
+-	IQueueCallbackStateChange.OnStateChange
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

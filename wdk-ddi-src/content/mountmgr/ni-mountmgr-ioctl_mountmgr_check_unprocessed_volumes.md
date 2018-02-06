@@ -1,41 +1,46 @@
 ---
-UID : NI:mountmgr.IOCTL_MOUNTMGR_CHECK_UNPROCESSED_VOLUMES
-title : IOCTL_MOUNTMGR_CHECK_UNPROCESSED_VOLUMES
-author : windows-driver-content
-description : When a volume arrives in the system, it registers for the MOUNTDEV_MOUNTED_DEVICE_GUID interface class and the mount manager receives a Plug and Play notification (see Mount Manager I/O Control Codes for a discussion of this process).
-old-location : storage\ioctl_mountmgr_check_unprocessed_volumes.htm
-old-project : storage
-ms.assetid : 39f486b4-a22e-473b-9a0d-ba2c1046995a
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_mountmgr_check_unprocessed_volumes, IOCTL_MOUNTMGR_CHECK_UNPROCESSED_VOLUMES control code [Storage Devices], IOCTL_MOUNTMGR_CHECK_UNPROCESSED_VOLUMES, mountmgr/IOCTL_MOUNTMGR_CHECK_UNPROCESSED_VOLUMES, k307_eb4defdf-c3d0-41b6-8bd4-3ef1dbd3f795.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : mountmgr.h
-req.include-header : Mountmgr.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PMOUNTDEV_UNIQUE_ID, MOUNTDEV_UNIQUE_ID"
+UID: NI:mountmgr.IOCTL_MOUNTMGR_CHECK_UNPROCESSED_VOLUMES
+title: IOCTL_MOUNTMGR_CHECK_UNPROCESSED_VOLUMES
+author: windows-driver-content
+description: When a volume arrives in the system, it registers for the MOUNTDEV_MOUNTED_DEVICE_GUID interface class and the mount manager receives a Plug and Play notification (see Mount Manager I/O Control Codes for a discussion of this process).
+old-location: storage\ioctl_mountmgr_check_unprocessed_volumes.htm
+old-project: storage
+ms.assetid: 39f486b4-a22e-473b-9a0d-ba2c1046995a
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_mountmgr_check_unprocessed_volumes, IOCTL_MOUNTMGR_CHECK_UNPROCESSED_VOLUMES control code [Storage Devices], IOCTL_MOUNTMGR_CHECK_UNPROCESSED_VOLUMES, mountmgr/IOCTL_MOUNTMGR_CHECK_UNPROCESSED_VOLUMES, k307_eb4defdf-c3d0-41b6-8bd4-3ef1dbd3f795.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: mountmgr.h
+req.include-header: Mountmgr.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Mountmgr.h
+apiname:
+-	IOCTL_MOUNTMGR_CHECK_UNPROCESSED_VOLUMES
+product: Windows
+targetos: Windows
+req.typenames: "*PMOUNTDEV_UNIQUE_ID, MOUNTDEV_UNIQUE_ID"
 ---
 
 # IOCTL_MOUNTMGR_CHECK_UNPROCESSED_VOLUMES IOCTL

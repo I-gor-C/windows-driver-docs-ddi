@@ -1,41 +1,46 @@
 ---
-UID : NS:dbgeng._DEBUG_CREATE_PROCESS_OPTIONS
-title : "_DEBUG_CREATE_PROCESS_OPTIONS"
-author : windows-driver-content
-description : The DEBUG_CREATE_PROCESS_OPTIONS structure specifies the process creation options to use when creating a new process.
-old-location : debugger\debug_create_process_options.htm
-old-project : debugger
-ms.assetid : b4b279c2-d44a-442d-9f1d-0ac0d2304eb8
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : DEBUG_CREATE_PROCESS_OPTIONS, dbgeng/DEBUG_CREATE_PROCESS_OPTIONS, *PDEBUG_CREATE_PROCESS_OPTIONS, debugger.debug_create_process_options, DEBUG_CREATE_PROCESS_OPTIONS structure [Windows Debugging], _DEBUG_CREATE_PROCESS_OPTIONS, dbgeng/PDEBUG_CREATE_PROCESS_OPTIONS, PDEBUG_CREATE_PROCESS_OPTIONS, Structures_2dc7014a-a1c3-4d31-b754-834f5d06c482.xml, PDEBUG_CREATE_PROCESS_OPTIONS structure pointer [Windows Debugging]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : dbgeng.h
-req.include-header : DbgEng.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DEBUG_CREATE_PROCESS_OPTIONS, *PDEBUG_CREATE_PROCESS_OPTIONS
+UID: NS:dbgeng._DEBUG_CREATE_PROCESS_OPTIONS
+title: "_DEBUG_CREATE_PROCESS_OPTIONS"
+author: windows-driver-content
+description: The DEBUG_CREATE_PROCESS_OPTIONS structure specifies the process creation options to use when creating a new process.
+old-location: debugger\debug_create_process_options.htm
+old-project: debugger
+ms.assetid: b4b279c2-d44a-442d-9f1d-0ac0d2304eb8
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: DEBUG_CREATE_PROCESS_OPTIONS, dbgeng/DEBUG_CREATE_PROCESS_OPTIONS, *PDEBUG_CREATE_PROCESS_OPTIONS, debugger.debug_create_process_options, DEBUG_CREATE_PROCESS_OPTIONS structure [Windows Debugging], _DEBUG_CREATE_PROCESS_OPTIONS, dbgeng/PDEBUG_CREATE_PROCESS_OPTIONS, PDEBUG_CREATE_PROCESS_OPTIONS, Structures_2dc7014a-a1c3-4d31-b754-834f5d06c482.xml, PDEBUG_CREATE_PROCESS_OPTIONS structure pointer [Windows Debugging]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: dbgeng.h
+req.include-header: DbgEng.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	DbgEng.h
+apiname:
+-	DEBUG_CREATE_PROCESS_OPTIONS
+product: Windows
+targetos: Windows
+req.typenames: DEBUG_CREATE_PROCESS_OPTIONS, *PDEBUG_CREATE_PROCESS_OPTIONS
 ---
 
 # _DEBUG_CREATE_PROCESS_OPTIONS structure

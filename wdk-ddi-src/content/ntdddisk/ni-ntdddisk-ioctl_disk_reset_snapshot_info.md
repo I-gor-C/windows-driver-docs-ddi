@@ -1,41 +1,46 @@
 ---
-UID : NI:ntdddisk.IOCTL_DISK_RESET_SNAPSHOT_INFO
-title : IOCTL_DISK_RESET_SNAPSHOT_INFO
-author : windows-driver-content
-description : Clears all volume shadow copy service (VSS) hardware-based snapshot information from the disk.
-old-location : storage\ioctl_disk_reset_snapshot_info.htm
-old-project : storage
-ms.assetid : b22b00de-4711-4896-a21c-33fbc7b1d64e
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_disk_reset_snapshot_info, IOCTL_DISK_RESET_SNAPSHOT_INFO control code [Storage Devices], IOCTL_DISK_RESET_SNAPSHOT_INFO, ntdddisk/IOCTL_DISK_RESET_SNAPSHOT_INFO, k307_3c2ed554-3774-467f-80a0-5017439a0aad.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntdddisk.h
-req.include-header : Ntdddisk.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DETECTION_TYPE
+UID: NI:ntdddisk.IOCTL_DISK_RESET_SNAPSHOT_INFO
+title: IOCTL_DISK_RESET_SNAPSHOT_INFO
+author: windows-driver-content
+description: Clears all volume shadow copy service (VSS) hardware-based snapshot information from the disk.
+old-location: storage\ioctl_disk_reset_snapshot_info.htm
+old-project: storage
+ms.assetid: b22b00de-4711-4896-a21c-33fbc7b1d64e
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_disk_reset_snapshot_info, IOCTL_DISK_RESET_SNAPSHOT_INFO control code [Storage Devices], IOCTL_DISK_RESET_SNAPSHOT_INFO, ntdddisk/IOCTL_DISK_RESET_SNAPSHOT_INFO, k307_3c2ed554-3774-467f-80a0-5017439a0aad.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntdddisk.h
+req.include-header: Ntdddisk.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntdddisk.h
+apiname:
+-	IOCTL_DISK_RESET_SNAPSHOT_INFO
+product: Windows
+targetos: Windows
+req.typenames: DETECTION_TYPE
 ---
 
 # IOCTL_DISK_RESET_SNAPSHOT_INFO IOCTL

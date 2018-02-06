@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfdevice.WdfDeviceAssignMofResourceName
-title : WdfDeviceAssignMofResourceName function
-author : windows-driver-content
-description : The WdfDeviceAssignMofResourceName method registers a MOF resource name for a specified device.
-old-location : wdf\wdfdeviceassignmofresourcename.htm
-old-project : wdf
-ms.assetid : b4ab0a7b-9c5a-4295-94fc-35310ca8e05b
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdfdevice/WdfDeviceAssignMofResourceName, kmdf.wdfdeviceassignmofresourcename, PFN_WDFDEVICEASSIGNMOFRESOURCENAME, WdfDeviceAssignMofResourceName method, wdf.wdfdeviceassignmofresourcename, WdfDeviceAssignMofResourceName, DFDeviceObjectGeneralRef_8cdcec0f-02df-4e8d-83e2-ae1fdc11343d.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfdevice.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_STATE_NOTIFICATION_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfdevice.WdfDeviceAssignMofResourceName
+title: WdfDeviceAssignMofResourceName function
+author: windows-driver-content
+description: The WdfDeviceAssignMofResourceName method registers a MOF resource name for a specified device.
+old-location: wdf\wdfdeviceassignmofresourcename.htm
+old-project: wdf
+ms.assetid: b4ab0a7b-9c5a-4295-94fc-35310ca8e05b
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdfdevice/WdfDeviceAssignMofResourceName, kmdf.wdfdeviceassignmofresourcename, PFN_WDFDEVICEASSIGNMOFRESOURCENAME, WdfDeviceAssignMofResourceName method, wdf.wdfdeviceassignmofresourcename, WdfDeviceAssignMofResourceName, DFDeviceObjectGeneralRef_8cdcec0f-02df-4e8d-83e2-ae1fdc11343d.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfdevice.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfDeviceAssignMofResourceName
+product: Windows
+targetos: Windows
+req.typenames: WDF_STATE_NOTIFICATION_TYPE
+req.product: Windows 10 or later.
 ---
 
 

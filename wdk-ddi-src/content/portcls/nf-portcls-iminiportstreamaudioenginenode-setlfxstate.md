@@ -1,41 +1,46 @@
 ---
-UID : NF:portcls.IMiniportStreamAudioEngineNode.SetLfxState
-title : IMiniportStreamAudioEngineNode::SetLfxState method
-author : windows-driver-content
-description : Sets the state of the local effects (LFX) node that is in the path of the audio stream.
-old-location : audio\iminiportstreamaudioenginenode_setlfxstate.htm
-old-project : audio
-ms.assetid : 90EED6A9-F25D-4EF9-8523-CFFC90185588
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : SetLfxState, audio.iminiportstreamaudioenginenode_setlfxstate, portcls/IMiniportStreamAudioEngineNode::SetLfxState, IMiniportStreamAudioEngineNode, IMiniportStreamAudioEngineNode interface [Audio Devices], SetLfxState method, SetLfxState method [Audio Devices], IMiniportStreamAudioEngineNode interface, SetLfxState method [Audio Devices], IMiniportStreamAudioEngineNode::SetLfxState
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : portcls.h
-req.include-header : 
-req.target-type : Universal
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : portcls.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.IMiniportStreamAudioEngineNode.SetLfxState
+title: IMiniportStreamAudioEngineNode::SetLfxState method
+author: windows-driver-content
+description: Sets the state of the local effects (LFX) node that is in the path of the audio stream.
+old-location: audio\iminiportstreamaudioenginenode_setlfxstate.htm
+old-project: audio
+ms.assetid: 90EED6A9-F25D-4EF9-8523-CFFC90185588
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: SetLfxState, audio.iminiportstreamaudioenginenode_setlfxstate, portcls/IMiniportStreamAudioEngineNode::SetLfxState, IMiniportStreamAudioEngineNode, IMiniportStreamAudioEngineNode interface [Audio Devices], SetLfxState method, SetLfxState method [Audio Devices], IMiniportStreamAudioEngineNode interface, SetLfxState method [Audio Devices], IMiniportStreamAudioEngineNode::SetLfxState
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: portcls.h
+req.include-header: 
+req.target-type: Universal
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: portcls.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Portcls.h
+apiname:
+-	IMiniportStreamAudioEngineNode.SetLfxState
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

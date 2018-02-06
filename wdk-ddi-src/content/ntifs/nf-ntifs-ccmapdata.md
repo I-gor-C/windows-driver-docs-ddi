@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.CcMapData
-title : CcMapData function
-author : windows-driver-content
-description : The CcMapData routine maps a specified byte range of a cached file to a buffer in memory.
-old-location : ifsk\ccmapdata.htm
-old-project : ifsk
-ms.assetid : dccc79ba-68d9-41cf-b86d-37adb83558a0
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : CcMapData routine [Installable File System Drivers], ccref_1eb788ce-2fb2-40b4-b696-14609a0c8556.xml, ifsk.ccmapdata, CcMapData, ntifs/CcMapData
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "< DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.CcMapData
+title: CcMapData function
+author: windows-driver-content
+description: The CcMapData routine maps a specified byte range of a cached file to a buffer in memory.
+old-location: ifsk\ccmapdata.htm
+old-project: ifsk
+ms.assetid: dccc79ba-68d9-41cf-b86d-37adb83558a0
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: CcMapData routine [Installable File System Drivers], ccref_1eb788ce-2fb2-40b4-b696-14609a0c8556.xml, ifsk.ccmapdata, CcMapData, ntifs/CcMapData
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "< DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	CcMapData
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

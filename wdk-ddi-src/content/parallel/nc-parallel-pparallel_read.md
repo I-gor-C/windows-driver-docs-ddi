@@ -1,41 +1,46 @@
 ---
-UID : NC:parallel.PPARALLEL_READ
-title : PPARALLEL_READ
-author : windows-driver-content
-description : The PPARALLEL_READ-typed callback routine reads data from a parallel device. The system-supplied bus driver for parallel ports supplies this routine.
-old-location : parports\pparallel_read.htm
-old-project : parports
-ms.assetid : a478fd0d-3fbe-4cd9-aaf9-67b74b607770
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : parports.pparallel_read, PPARALLEL_READ function pointer [Parallel Ports], PPARALLEL_READ, parallel/PPARALLEL_READ, cisspd_ae27b566-d561-4bc8-9519-fc3c35069791.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : parallel.h
-req.include-header : Parallel.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RILGBATOKEN, *LPRILGBATOKEN
+UID: NC:parallel.PPARALLEL_READ
+title: PPARALLEL_READ
+author: windows-driver-content
+description: The PPARALLEL_READ-typed callback routine reads data from a parallel device. The system-supplied bus driver for parallel ports supplies this routine.
+old-location: parports\pparallel_read.htm
+old-project: parports
+ms.assetid: a478fd0d-3fbe-4cd9-aaf9-67b74b607770
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: parports.pparallel_read, PPARALLEL_READ function pointer [Parallel Ports], PPARALLEL_READ, parallel/PPARALLEL_READ, cisspd_ae27b566-d561-4bc8-9519-fc3c35069791.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: parallel.h
+req.include-header: Parallel.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	parallel.h
+apiname:
+-	PPARALLEL_READ
+product: Windows
+targetos: Windows
+req.typenames: RILGBATOKEN, *LPRILGBATOKEN
 ---
 
 

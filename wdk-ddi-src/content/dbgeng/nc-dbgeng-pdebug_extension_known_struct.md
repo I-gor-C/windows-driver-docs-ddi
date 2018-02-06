@@ -1,41 +1,46 @@
 ---
-UID : NC:dbgeng.PDEBUG_EXTENSION_KNOWN_STRUCT
-title : PDEBUG_EXTENSION_KNOWN_STRUCT
-author : windows-driver-content
-description : The engine calls the KnownStructOutput callback function to request information about structures that the extension DLL can format for printing. The engine calls this function for the following reasons.
-old-location : debugger\knownstructoutput.htm
-old-project : debugger
-ms.assetid : 76b7e097-4953-4988-8999-07bbfbd65912
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : debugger.knownstructoutput, KnownStructOutput, KnownStructOutput callback function [Windows Debugging], KnownStructOutput, PDEBUG_KNOWN_StructOutput, PDEBUG_KNOWN_StructOutput, dbgeng/KnownStructOutput, Extensions_Ref_dfff8fda-36a7-42ab-9ad7-1698c352c028.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : dbgeng.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NC:dbgeng.PDEBUG_EXTENSION_KNOWN_STRUCT
+title: PDEBUG_EXTENSION_KNOWN_STRUCT
+author: windows-driver-content
+description: The engine calls the KnownStructOutput callback function to request information about structures that the extension DLL can format for printing. The engine calls this function for the following reasons.
+old-location: debugger\knownstructoutput.htm
+old-project: debugger
+ms.assetid: 76b7e097-4953-4988-8999-07bbfbd65912
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: debugger.knownstructoutput, KnownStructOutput, KnownStructOutput callback function [Windows Debugging], KnownStructOutput, PDEBUG_KNOWN_StructOutput, PDEBUG_KNOWN_StructOutput, dbgeng/KnownStructOutput, Extensions_Ref_dfff8fda-36a7-42ab-9ad7-1698c352c028.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: dbgeng.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	dbgeng.h
+apiname:
+-	KnownStructOutput
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

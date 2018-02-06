@@ -1,41 +1,46 @@
 ---
-UID : NI:parallel.IOCTL_INTERNAL_PARCLASS_CONNECT
-title : IOCTL_INTERNAL_PARCLASS_CONNECT
-author : windows-driver-content
-description : The IOCTL_INTERNAL_PARCLASS_CONNECT request returns information about a parallel port and the callback routines that the system-supplied bus driver for parallel ports provides to operate the parallel port.
-old-location : parports\ioctl_internal_parclass_connect.htm
-old-project : parports
-ms.assetid : 77dc31a1-a50c-4727-b730-1785e5d4a355
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : parports.ioctl_internal_parclass_connect, IOCTL_INTERNAL_PARCLASS_CONNECT control code [Parallel Ports], IOCTL_INTERNAL_PARCLASS_CONNECT, parallel/IOCTL_INTERNAL_PARCLASS_CONNECT, cisspd_03b94b78-be74-4421-bb08-0860d6d8dca5.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : parallel.h
-req.include-header : Parallel.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RILGBATOKEN, *LPRILGBATOKEN
+UID: NI:parallel.IOCTL_INTERNAL_PARCLASS_CONNECT
+title: IOCTL_INTERNAL_PARCLASS_CONNECT
+author: windows-driver-content
+description: The IOCTL_INTERNAL_PARCLASS_CONNECT request returns information about a parallel port and the callback routines that the system-supplied bus driver for parallel ports provides to operate the parallel port.
+old-location: parports\ioctl_internal_parclass_connect.htm
+old-project: parports
+ms.assetid: 77dc31a1-a50c-4727-b730-1785e5d4a355
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: parports.ioctl_internal_parclass_connect, IOCTL_INTERNAL_PARCLASS_CONNECT control code [Parallel Ports], IOCTL_INTERNAL_PARCLASS_CONNECT, parallel/IOCTL_INTERNAL_PARCLASS_CONNECT, cisspd_03b94b78-be74-4421-bb08-0860d6d8dca5.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: parallel.h
+req.include-header: Parallel.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	parallel.h
+apiname:
+-	IOCTL_INTERNAL_PARCLASS_CONNECT
+product: Windows
+targetos: Windows
+req.typenames: RILGBATOKEN, *LPRILGBATOKEN
 ---
 
 # IOCTL_INTERNAL_PARCLASS_CONNECT IOCTL

@@ -1,42 +1,47 @@
 ---
-UID : NC:storport.HW_FIND_ADAPTER
-title : HW_FIND_ADAPTER
-author : windows-driver-content
-description : The HwStorFindAdapter routine uses the supplied configuration to determine whether a specific HBA is supported and, if it is, to return configuration information about that adapter.
-old-location : storage\hwstorfindadapter.htm
-old-project : storage
-ms.assetid : 8642d0b8-ebc8-4053-b35e-3a81108a2f7f
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.hwstorfindadapter, HwStorFindAdapter routine [Storage Devices], HwStorFindAdapter, HW_FIND_ADAPTER, HW_FIND_ADAPTER, storport/HwStorFindAdapter, stormini_844ef988-84c8-4f93-b732-eb0a2e8d611a.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (See Remarks section.)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSTORAGE_DEVICE_UNIQUE_IDENTIFIER, STORAGE_DEVICE_UNIQUE_IDENTIFIER"
-req.product : Windows 10 or later.
+UID: NC:storport.HW_FIND_ADAPTER
+title: HW_FIND_ADAPTER
+author: windows-driver-content
+description: The HwStorFindAdapter routine uses the supplied configuration to determine whether a specific HBA is supported and, if it is, to return configuration information about that adapter.
+old-location: storage\hwstorfindadapter.htm
+old-project: storage
+ms.assetid: 8642d0b8-ebc8-4053-b35e-3a81108a2f7f
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.hwstorfindadapter, HwStorFindAdapter routine [Storage Devices], HwStorFindAdapter, HW_FIND_ADAPTER, HW_FIND_ADAPTER, storport/HwStorFindAdapter, stormini_844ef988-84c8-4f93-b732-eb0a2e8d611a.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (See Remarks section.)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Storport.h
+apiname:
+-	HwStorFindAdapter
+product: Windows
+targetos: Windows
+req.typenames: "*PSTORAGE_DEVICE_UNIQUE_IDENTIFIER, STORAGE_DEVICE_UNIQUE_IDENTIFIER"
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NF:wdffdo.WDF_FDO_EVENT_CALLBACKS_INIT
-title : WDF_FDO_EVENT_CALLBACKS_INIT function
-author : windows-driver-content
-description : The WDF_FDO_EVENT_CALLBACKS_INIT function initializes a WDF_FDO_EVENT_CALLBACKS structure.
-old-location : wdf\wdf_fdo_event_callbacks_init.htm
-old-project : wdf
-ms.assetid : 02ff7c36-8bca-4531-bef5-d8a284d2d047
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdffdo/WDF_FDO_EVENT_CALLBACKS_INIT, WDF_FDO_EVENT_CALLBACKS_INIT, WDF_FDO_EVENT_CALLBACKS_INIT function, wdf.wdf_fdo_event_callbacks_init, kmdf.wdf_fdo_event_callbacks_init, DFDeviceObjectFdoPdoRef_fdf4f567-cbdd-4fb4-a752-344f6a298bbf.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdffdo.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_DRIVER_VERSION_AVAILABLE_PARAMS, *PWDF_DRIVER_VERSION_AVAILABLE_PARAMS
-req.product : Windows 10 or later.
+UID: NF:wdffdo.WDF_FDO_EVENT_CALLBACKS_INIT
+title: WDF_FDO_EVENT_CALLBACKS_INIT function
+author: windows-driver-content
+description: The WDF_FDO_EVENT_CALLBACKS_INIT function initializes a WDF_FDO_EVENT_CALLBACKS structure.
+old-location: wdf\wdf_fdo_event_callbacks_init.htm
+old-project: wdf
+ms.assetid: 02ff7c36-8bca-4531-bef5-d8a284d2d047
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdffdo/WDF_FDO_EVENT_CALLBACKS_INIT, WDF_FDO_EVENT_CALLBACKS_INIT, WDF_FDO_EVENT_CALLBACKS_INIT function, wdf.wdf_fdo_event_callbacks_init, kmdf.wdf_fdo_event_callbacks_init, DFDeviceObjectFdoPdoRef_fdf4f567-cbdd-4fb4-a752-344f6a298bbf.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdffdo.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdffdo.h
+apiname:
+-	WDF_FDO_EVENT_CALLBACKS_INIT
+product: Windows
+targetos: Windows
+req.typenames: WDF_DRIVER_VERSION_AVAILABLE_PARAMS, *PWDF_DRIVER_VERSION_AVAILABLE_PARAMS
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.IoWriteErrorLogEntry
-title : IoWriteErrorLogEntry function
-author : windows-driver-content
-description : The IoWriteErrorLogEntry routine queues a given error log packet to the system error logging thread.
-old-location : kernel\iowriteerrorlogentry.htm
-old-project : kernel
-ms.assetid : 1259c344-584c-410a-a152-5de1f433082c
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/IoWriteErrorLogEntry, k104_1822a499-059a-41c8-b97b-aa3a5bfd22e3.xml, kernel.iowriteerrorlogentry, IoWriteErrorLogEntry, IoWriteErrorLogEntry routine [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : IrqlDispatch
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.IoWriteErrorLogEntry
+title: IoWriteErrorLogEntry function
+author: windows-driver-content
+description: The IoWriteErrorLogEntry routine queues a given error log packet to the system error logging thread.
+old-location: kernel\iowriteerrorlogentry.htm
+old-project: kernel
+ms.assetid: 1259c344-584c-410a-a152-5de1f433082c
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/IoWriteErrorLogEntry, k104_1822a499-059a-41c8-b97b-aa3a5bfd22e3.xml, kernel.iowriteerrorlogentry, IoWriteErrorLogEntry, IoWriteErrorLogEntry routine [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: IrqlDispatch
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoWriteErrorLogEntry
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

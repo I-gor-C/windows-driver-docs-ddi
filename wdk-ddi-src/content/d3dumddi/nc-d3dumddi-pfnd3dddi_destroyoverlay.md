@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_DESTROYOVERLAY
-title : PFND3DDDI_DESTROYOVERLAY
-author : windows-driver-content
-description : The DestroyOverlay function disables the overlay hardware and frees the overlay handle.
-old-location : display\destroyoverlay.htm
-old-project : display
-ms.assetid : 63004d19-e2cd-462c-8fa5-ea4dd6e29735
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.destroyoverlay, DestroyOverlay callback function [Display Devices], DestroyOverlay, PFND3DDDI_DESTROYOVERLAY, PFND3DDDI_DESTROYOVERLAY, d3dumddi/DestroyOverlay, UserModeDisplayDriver_Functions_e3dd8286-aff0-40c0-8cf2-84ecc706df90.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_DESTROYOVERLAY
+title: PFND3DDDI_DESTROYOVERLAY
+author: windows-driver-content
+description: The DestroyOverlay function disables the overlay hardware and frees the overlay handle.
+old-location: display\destroyoverlay.htm
+old-project: display
+ms.assetid: 63004d19-e2cd-462c-8fa5-ea4dd6e29735
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.destroyoverlay, DestroyOverlay callback function [Display Devices], DestroyOverlay, PFND3DDDI_DESTROYOVERLAY, PFND3DDDI_DESTROYOVERLAY, d3dumddi/DestroyOverlay, UserModeDisplayDriver_Functions_e3dd8286-aff0-40c0-8cf2-84ecc706df90.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	DestroyOverlay
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

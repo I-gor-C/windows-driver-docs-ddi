@@ -1,41 +1,46 @@
 ---
-UID : NI:ntdddisk.IOCTL_DISK_FORMAT_TRACKS
-title : IOCTL_DISK_FORMAT_TRACKS
-author : windows-driver-content
-description : Formats the specified set of contiguous tracks on the disk.
-old-location : storage\ioctl_disk_format_tracks.htm
-old-project : storage
-ms.assetid : f27f962f-badc-4e6f-ad3b-ce2a0c8ce825
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_disk_format_tracks, IOCTL_DISK_FORMAT_TRACKS control code [Storage Devices], IOCTL_DISK_FORMAT_TRACKS, ntdddisk/IOCTL_DISK_FORMAT_TRACKS, k307_c50ddad4-851d-474e-92c1-13520556173b.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntdddisk.h
-req.include-header : Ntdddisk.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DETECTION_TYPE
+UID: NI:ntdddisk.IOCTL_DISK_FORMAT_TRACKS
+title: IOCTL_DISK_FORMAT_TRACKS
+author: windows-driver-content
+description: Formats the specified set of contiguous tracks on the disk.
+old-location: storage\ioctl_disk_format_tracks.htm
+old-project: storage
+ms.assetid: f27f962f-badc-4e6f-ad3b-ce2a0c8ce825
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_disk_format_tracks, IOCTL_DISK_FORMAT_TRACKS control code [Storage Devices], IOCTL_DISK_FORMAT_TRACKS, ntdddisk/IOCTL_DISK_FORMAT_TRACKS, k307_c50ddad4-851d-474e-92c1-13520556173b.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntdddisk.h
+req.include-header: Ntdddisk.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntdddisk.h
+apiname:
+-	IOCTL_DISK_FORMAT_TRACKS
+product: Windows
+targetos: Windows
+req.typenames: DETECTION_TYPE
 ---
 
 # IOCTL_DISK_FORMAT_TRACKS IOCTL

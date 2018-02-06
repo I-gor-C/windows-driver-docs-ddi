@@ -1,41 +1,46 @@
 ---
-UID : NF:ndis.NdisAllocateFromNPagedLookasideList
-title : NdisAllocateFromNPagedLookasideList macro
-author : windows-driver-content
-description : The NdisAllocateFromNPagedLookasideList function removes the first entry from the given lookaside list head. If the lookaside list currently is empty, an entry is allocated from nonpaged pool.
-old-location : netvista\ndisallocatefromnpagedlookasidelist.htm
-old-project : netvista
-ms.assetid : df690a05-359d-44f0-b063-4fc21d6c4d76
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NdisAllocateFromNPagedLookasideList macro [Network Drivers Starting with Windows Vista], ndis/NdisAllocateFromNPagedLookasideList, NdisAllocateFromNPagedLookasideList, netvista.ndisallocatefromnpagedlookasidelist, ndis_lookaside_ref_455986e8-a34c-44df-b454-87416d8eccf7.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : macro
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see       NdisAllocateFromNPagedLookasideList (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers   (see       NdisAllocateFromNPagedLookasideList (NDIS 5.1)) in Windows XP.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_Miscellaneous_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : ndis.h
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisAllocateFromNPagedLookasideList
+title: NdisAllocateFromNPagedLookasideList macro
+author: windows-driver-content
+description: The NdisAllocateFromNPagedLookasideList function removes the first entry from the given lookaside list head. If the lookaside list currently is empty, an entry is allocated from nonpaged pool.
+old-location: netvista\ndisallocatefromnpagedlookasidelist.htm
+old-project: netvista
+ms.assetid: df690a05-359d-44f0-b063-4fc21d6c4d76
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NdisAllocateFromNPagedLookasideList macro [Network Drivers Starting with Windows Vista], ndis/NdisAllocateFromNPagedLookasideList, NdisAllocateFromNPagedLookasideList, netvista.ndisallocatefromnpagedlookasidelist, ndis_lookaside_ref_455986e8-a34c-44df-b454-87416d8eccf7.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: macro
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see       NdisAllocateFromNPagedLookasideList (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers   (see       NdisAllocateFromNPagedLookasideList (NDIS 5.1)) in Windows XP.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_Miscellaneous_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: ndis.h
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndis.h
+apiname:
+-	NdisAllocateFromNPagedLookasideList
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

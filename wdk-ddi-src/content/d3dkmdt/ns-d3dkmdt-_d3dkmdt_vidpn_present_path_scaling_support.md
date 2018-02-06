@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmdt._D3DKMDT_VIDPN_PRESENT_PATH_SCALING_SUPPORT
-title : "_D3DKMDT_VIDPN_PRESENT_PATH_SCALING_SUPPORT"
-author : windows-driver-content
-description : The D3DKMDT_VIDPN_PRESENT_PATH_SCALING_SUPPORT structure is used to indicate the types of scaling (and centering) that are supported by a particular VidPN present path.
-old-location : display\d3dkmdt_vidpn_present_path_scaling_support.htm
-old-project : display
-ms.assetid : 44b7f841-40e5-4d7d-adca-b70b4a8ef55c
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DKMDT_VIDPN_PRESENT_PATH_SCALING_SUPPORT structure [Display Devices], D3DKMDT_VIDPN_PRESENT_PATH_SCALING_SUPPORT, DmStructs_8a17e0fc-7c6c-4c95-bbdb-471beef9e830.xml, _D3DKMDT_VIDPN_PRESENT_PATH_SCALING_SUPPORT, display.d3dkmdt_vidpn_present_path_scaling_support, d3dkmdt/D3DKMDT_VIDPN_PRESENT_PATH_SCALING_SUPPORT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmdt.h
-req.include-header : D3dkmdt.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMDT_VIDPN_PRESENT_PATH_SCALING_SUPPORT
+UID: NS:d3dkmdt._D3DKMDT_VIDPN_PRESENT_PATH_SCALING_SUPPORT
+title: "_D3DKMDT_VIDPN_PRESENT_PATH_SCALING_SUPPORT"
+author: windows-driver-content
+description: The D3DKMDT_VIDPN_PRESENT_PATH_SCALING_SUPPORT structure is used to indicate the types of scaling (and centering) that are supported by a particular VidPN present path.
+old-location: display\d3dkmdt_vidpn_present_path_scaling_support.htm
+old-project: display
+ms.assetid: 44b7f841-40e5-4d7d-adca-b70b4a8ef55c
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DKMDT_VIDPN_PRESENT_PATH_SCALING_SUPPORT structure [Display Devices], D3DKMDT_VIDPN_PRESENT_PATH_SCALING_SUPPORT, DmStructs_8a17e0fc-7c6c-4c95-bbdb-471beef9e830.xml, _D3DKMDT_VIDPN_PRESENT_PATH_SCALING_SUPPORT, display.d3dkmdt_vidpn_present_path_scaling_support, d3dkmdt/D3DKMDT_VIDPN_PRESENT_PATH_SCALING_SUPPORT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmdt.h
+req.include-header: D3dkmdt.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmdt.h
+apiname:
+-	D3DKMDT_VIDPN_PRESENT_PATH_SCALING_SUPPORT
+product: Windows
+targetos: Windows
+req.typenames: D3DKMDT_VIDPN_PRESENT_PATH_SCALING_SUPPORT
 ---
 
 # _D3DKMDT_VIDPN_PRESENT_PATH_SCALING_SUPPORT structure

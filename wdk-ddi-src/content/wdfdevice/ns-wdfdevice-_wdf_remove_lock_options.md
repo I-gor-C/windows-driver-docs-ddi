@@ -1,42 +1,47 @@
 ---
-UID : NS:wdfdevice._WDF_REMOVE_LOCK_OPTIONS
-title : "_WDF_REMOVE_LOCK_OPTIONS"
-author : windows-driver-content
-description : The WDF_REMOVE_LOCK_OPTIONS structure specifies options for acquiring a remove lock before delivering an IRP to the driver.
-old-location : wdf\wdf_remove_lock_options.htm
-old-project : wdf
-ms.assetid : 0A50C1FB-D0C6-47C4-AD71-AD0B7486AA2E
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.wdf_remove_lock_options, PWDF_REMOVE_LOCK_OPTIONS structure pointer, PWDF_REMOVE_LOCK_OPTIONS, kmdf.wdf_remove_lock_options, *PWDF_REMOVE_LOCK_OPTIONS, WDF_REMOVE_LOCK_OPTIONS, wdfdevice/PWDF_REMOVE_LOCK_OPTIONS, wdfdevice/WDF_REMOVE_LOCK_OPTIONS, WDF_REMOVE_LOCK_OPTIONS structure, _WDF_REMOVE_LOCK_OPTIONS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdfdevice.h
-req.include-header : Wdf.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.11
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDF_REMOVE_LOCK_OPTIONS, WDF_REMOVE_LOCK_OPTIONS"
-req.product : Windows 10 or later.
+UID: NS:wdfdevice._WDF_REMOVE_LOCK_OPTIONS
+title: "_WDF_REMOVE_LOCK_OPTIONS"
+author: windows-driver-content
+description: The WDF_REMOVE_LOCK_OPTIONS structure specifies options for acquiring a remove lock before delivering an IRP to the driver.
+old-location: wdf\wdf_remove_lock_options.htm
+old-project: wdf
+ms.assetid: 0A50C1FB-D0C6-47C4-AD71-AD0B7486AA2E
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.wdf_remove_lock_options, PWDF_REMOVE_LOCK_OPTIONS structure pointer, PWDF_REMOVE_LOCK_OPTIONS, kmdf.wdf_remove_lock_options, *PWDF_REMOVE_LOCK_OPTIONS, WDF_REMOVE_LOCK_OPTIONS, wdfdevice/PWDF_REMOVE_LOCK_OPTIONS, wdfdevice/WDF_REMOVE_LOCK_OPTIONS, WDF_REMOVE_LOCK_OPTIONS structure, _WDF_REMOVE_LOCK_OPTIONS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdfdevice.h
+req.include-header: Wdf.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.11
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfdevice.h
+apiname:
+-	WDF_REMOVE_LOCK_OPTIONS
+product: Windows
+targetos: Windows
+req.typenames: "*PWDF_REMOVE_LOCK_OPTIONS, WDF_REMOVE_LOCK_OPTIONS"
+req.product: Windows 10 or later.
 ---
 
 # _WDF_REMOVE_LOCK_OPTIONS structure

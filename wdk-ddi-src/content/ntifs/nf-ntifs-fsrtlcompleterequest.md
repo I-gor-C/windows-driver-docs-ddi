@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.FsRtlCompleteRequest
-title : FsRtlCompleteRequest macro
-author : windows-driver-content
-description : The FsRtlCompleteRequest macro completes an IRP with the specified status.
-old-location : ifsk\fsrtlcompleterequest.htm
-old-project : ifsk
-ms.assetid : dd53d3c5-3a31-4ea9-9f16-0d1b9397f63e
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : fsrtlref_ae47bec7-1534-4ace-a29b-d5b6a5da292c.xml, ifsk.fsrtlcompleterequest, FsRtlCompleteRequest, ntifs/FsRtlCompleteRequest, FsRtlCompleteRequest function [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : macro
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : ntifs.h
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.FsRtlCompleteRequest
+title: FsRtlCompleteRequest macro
+author: windows-driver-content
+description: The FsRtlCompleteRequest macro completes an IRP with the specified status.
+old-location: ifsk\fsrtlcompleterequest.htm
+old-project: ifsk
+ms.assetid: dd53d3c5-3a31-4ea9-9f16-0d1b9397f63e
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: fsrtlref_ae47bec7-1534-4ace-a29b-d5b6a5da292c.xml, ifsk.fsrtlcompleterequest, FsRtlCompleteRequest, ntifs/FsRtlCompleteRequest, FsRtlCompleteRequest function [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: macro
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: ntifs.h
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntifs.h
+apiname:
+-	FsRtlCompleteRequest
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

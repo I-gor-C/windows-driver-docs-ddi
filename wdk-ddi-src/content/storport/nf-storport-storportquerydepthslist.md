@@ -1,42 +1,47 @@
 ---
-UID : NF:storport.StorPortQueryDepthSList
-title : StorPortQueryDepthSList function
-author : windows-driver-content
-description : Retrieves the number of entries in a Storport managed singly linked list.
-old-location : storage\storportquerydepthslist.htm
-old-project : storage
-ms.assetid : 5E1CE999-8173-49B6-8CF7-F3A5B193A230
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storport/StorPortQueryDepthSList, storage.storportquerydepthslist, StorPortQueryDepthSList routine [Storage Devices], StorPortQueryDepthSList
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STOR_SPINLOCK
-req.product : Windows 10 or later.
+UID: NF:storport.StorPortQueryDepthSList
+title: StorPortQueryDepthSList function
+author: windows-driver-content
+description: Retrieves the number of entries in a Storport managed singly linked list.
+old-location: storage\storportquerydepthslist.htm
+old-project: storage
+ms.assetid: 5E1CE999-8173-49B6-8CF7-F3A5B193A230
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storport/StorPortQueryDepthSList, storage.storportquerydepthslist, StorPortQueryDepthSList routine [Storage Devices], StorPortQueryDepthSList
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	storport.h
+apiname:
+-	StorPortQueryDepthSList
+product: Windows
+targetos: Windows
+req.typenames: STOR_SPINLOCK
+req.product: Windows 10 or later.
 ---
 
 

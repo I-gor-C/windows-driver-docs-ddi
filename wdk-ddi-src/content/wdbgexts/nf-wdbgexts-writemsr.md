@@ -1,42 +1,47 @@
 ---
-UID : NF:wdbgexts.WriteMsr
-title : WriteMsr function
-author : windows-driver-content
-description : The WriteMsr function writes to a Model-Specific Register (MSR).
-old-location : debugger\writemsr.htm
-old-project : debugger
-ms.assetid : a88c2c74-ab9a-4d9a-aeb7-d08bfe497da4
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : WriteMsr, dbgeng/WriteMsr, WdbgExts_Ref_faeb78e1-24a2-4210-94f9-4e468ba69181.xml, debugger.writemsr, WriteMsr function [Windows Debugging]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdbgexts.h
-req.include-header : Wdbgexts.h, Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXT_TDOP
-req.product : Windows 10 or later.
+UID: NF:wdbgexts.WriteMsr
+title: WriteMsr function
+author: windows-driver-content
+description: The WriteMsr function writes to a Model-Specific Register (MSR).
+old-location: debugger\writemsr.htm
+old-project: debugger
+ms.assetid: a88c2c74-ab9a-4d9a-aeb7-d08bfe497da4
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: WriteMsr, dbgeng/WriteMsr, WdbgExts_Ref_faeb78e1-24a2-4210-94f9-4e468ba69181.xml, debugger.writemsr, WriteMsr function [Windows Debugging]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdbgexts.h
+req.include-header: Wdbgexts.h, Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	dbgeng.h
+apiname:
+-	WriteMsr
+product: Windows
+targetos: Windows
+req.typenames: EXT_TDOP
+req.product: Windows 10 or later.
 ---
 
 

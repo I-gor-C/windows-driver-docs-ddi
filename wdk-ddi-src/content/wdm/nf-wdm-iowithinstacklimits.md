@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.IoWithinStackLimits
-title : IoWithinStackLimits function
-author : windows-driver-content
-description : The IoWithinStackLimits routine determines whether a region of memory is within the stack limit of the current thread.
-old-location : kernel\iowithinstacklimits.htm
-old-project : kernel
-ms.assetid : af182cd5-23b5-4d5b-b3d4-ec65ec087d0b
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : IoWithinStackLimits routine [Kernel-Mode Driver Architecture], wdm/IoWithinStackLimits, kernel.iowithinstacklimits, IoWithinStackLimits, k104_631648cb-6ba2-47b1-8745-e6314e17be30.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available on Windows Vista and later versions of the Windows operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.IoWithinStackLimits
+title: IoWithinStackLimits function
+author: windows-driver-content
+description: The IoWithinStackLimits routine determines whether a region of memory is within the stack limit of the current thread.
+old-location: kernel\iowithinstacklimits.htm
+old-project: kernel
+ms.assetid: af182cd5-23b5-4d5b-b3d4-ec65ec087d0b
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: IoWithinStackLimits routine [Kernel-Mode Driver Architecture], wdm/IoWithinStackLimits, kernel.iowithinstacklimits, IoWithinStackLimits, k104_631648cb-6ba2-47b1-8745-e6314e17be30.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available on Windows Vista and later versions of the Windows operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoWithinStackLimits
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

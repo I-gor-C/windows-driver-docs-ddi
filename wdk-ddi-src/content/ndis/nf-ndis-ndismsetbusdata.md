@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisMSetBusData
-title : NdisMSetBusData function
-author : windows-driver-content
-description : NDIS drivers call the NdisMSetBusData function to write to the configuration space of a device.
-old-location : netvista\ndismsetbusdata.htm
-old-project : netvista
-ms.assetid : 0b9153b3-f379-40c4-87f6-1fa380070e65
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NdisMSetBusData, netvista.ndismsetbusdata, ndis/NdisMSetBusData, NdisMSetBusData function [Network Drivers Starting with Windows Vista], hardware_configuration_ref_4fd9608c-60b9-4a86-9aa3-02d6ec17da92.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisMSetBusData
+title: NdisMSetBusData function
+author: windows-driver-content
+description: NDIS drivers call the NdisMSetBusData function to write to the configuration space of a device.
+old-location: netvista\ndismsetbusdata.htm
+old-project: netvista
+ms.assetid: 0b9153b3-f379-40c4-87f6-1fa380070e65
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NdisMSetBusData, netvista.ndismsetbusdata, ndis/NdisMSetBusData, NdisMSetBusData function [Network Drivers Starting with Windows Vista], hardware_configuration_ref_4fd9608c-60b9-4a86-9aa3-02d6ec17da92.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisMSetBusData
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

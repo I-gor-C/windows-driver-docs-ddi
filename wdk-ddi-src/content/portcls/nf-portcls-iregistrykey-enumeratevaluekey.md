@@ -1,41 +1,46 @@
 ---
-UID : NF:portcls.IRegistryKey.EnumerateValueKey
-title : IRegistryKey::EnumerateValueKey method
-author : windows-driver-content
-description : The EnumerateValueKey method returns information about a registry entry that contains a value key.
-old-location : audio\iregistrykey_enumeratevaluekey.htm
-old-project : audio
-ms.assetid : 4f90b553-f652-413f-9723-a5a578de9f8d
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : audmp-routines_8b4fc752-24a3-4331-b90b-85642dc2121a.xml, EnumerateValueKey method [Audio Devices], IRegistryKey interface, EnumerateValueKey method [Audio Devices], EnumerateValueKey, IRegistryKey, portcls/IRegistryKey::EnumerateValueKey, IRegistryKey::EnumerateValueKey, IRegistryKey interface [Audio Devices], EnumerateValueKey method, audio.iregistrykey_enumeratevaluekey
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : portcls.h
-req.include-header : Portcls.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : portcls.h
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.IRegistryKey.EnumerateValueKey
+title: IRegistryKey::EnumerateValueKey method
+author: windows-driver-content
+description: The EnumerateValueKey method returns information about a registry entry that contains a value key.
+old-location: audio\iregistrykey_enumeratevaluekey.htm
+old-project: audio
+ms.assetid: 4f90b553-f652-413f-9723-a5a578de9f8d
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: audmp-routines_8b4fc752-24a3-4331-b90b-85642dc2121a.xml, EnumerateValueKey method [Audio Devices], IRegistryKey interface, EnumerateValueKey method [Audio Devices], EnumerateValueKey, IRegistryKey, portcls/IRegistryKey::EnumerateValueKey, IRegistryKey::EnumerateValueKey, IRegistryKey interface [Audio Devices], EnumerateValueKey method, audio.iregistrykey_enumeratevaluekey
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: portcls.h
+req.include-header: Portcls.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: portcls.h
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	portcls.h
+apiname:
+-	IRegistryKey.EnumerateValueKey
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

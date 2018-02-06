@@ -1,42 +1,47 @@
 ---
-UID : NS:wdfusb._WDF_USB_INTERFACE_SELECT_SETTING_PARAMS
-title : "_WDF_USB_INTERFACE_SELECT_SETTING_PARAMS"
-author : windows-driver-content
-description : The WDF_USB_INTERFACE_SELECT_SETTING_PARAMS structure contains selection information for a USB interface.
-old-location : wdf\wdf_usb_interface_select_setting_params.htm
-old-project : wdf
-ms.assetid : fad8a205-8427-48c5-b4b5-b125aa9fe85c
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WDF_USB_INTERFACE_SELECT_SETTING_PARAMS structure, wdfusb/PWDF_USB_INTERFACE_SELECT_SETTING_PARAMS, wdfusb/WDF_USB_INTERFACE_SELECT_SETTING_PARAMS, *PWDF_USB_INTERFACE_SELECT_SETTING_PARAMS, PWDF_USB_INTERFACE_SELECT_SETTING_PARAMS, DFUsbRef_a32b6d83-abf8-4cc6-9ce3-3d03551164a4.xml, _WDF_USB_INTERFACE_SELECT_SETTING_PARAMS, PWDF_USB_INTERFACE_SELECT_SETTING_PARAMS structure pointer, kmdf.wdf_usb_interface_select_setting_params, wdf.wdf_usb_interface_select_setting_params, WDF_USB_INTERFACE_SELECT_SETTING_PARAMS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdfusb.h
-req.include-header : Wdfusb.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_USB_INTERFACE_SELECT_SETTING_PARAMS, *PWDF_USB_INTERFACE_SELECT_SETTING_PARAMS
-req.product : Windows 10 or later.
+UID: NS:wdfusb._WDF_USB_INTERFACE_SELECT_SETTING_PARAMS
+title: "_WDF_USB_INTERFACE_SELECT_SETTING_PARAMS"
+author: windows-driver-content
+description: The WDF_USB_INTERFACE_SELECT_SETTING_PARAMS structure contains selection information for a USB interface.
+old-location: wdf\wdf_usb_interface_select_setting_params.htm
+old-project: wdf
+ms.assetid: fad8a205-8427-48c5-b4b5-b125aa9fe85c
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WDF_USB_INTERFACE_SELECT_SETTING_PARAMS structure, wdfusb/PWDF_USB_INTERFACE_SELECT_SETTING_PARAMS, wdfusb/WDF_USB_INTERFACE_SELECT_SETTING_PARAMS, *PWDF_USB_INTERFACE_SELECT_SETTING_PARAMS, PWDF_USB_INTERFACE_SELECT_SETTING_PARAMS, DFUsbRef_a32b6d83-abf8-4cc6-9ce3-3d03551164a4.xml, _WDF_USB_INTERFACE_SELECT_SETTING_PARAMS, PWDF_USB_INTERFACE_SELECT_SETTING_PARAMS structure pointer, kmdf.wdf_usb_interface_select_setting_params, wdf.wdf_usb_interface_select_setting_params, WDF_USB_INTERFACE_SELECT_SETTING_PARAMS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdfusb.h
+req.include-header: Wdfusb.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfusb.h
+apiname:
+-	WDF_USB_INTERFACE_SELECT_SETTING_PARAMS
+product: Windows
+targetos: Windows
+req.typenames: WDF_USB_INTERFACE_SELECT_SETTING_PARAMS, *PWDF_USB_INTERFACE_SELECT_SETTING_PARAMS
+req.product: Windows 10 or later.
 ---
 
 # _WDF_USB_INTERFACE_SELECT_SETTING_PARAMS structure

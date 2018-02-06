@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dhal._D3DHAL_DP2ISSUEQUERY
-title : "_D3DHAL_DP2ISSUEQUERY"
-author : windows-driver-content
-description : DirectX 9.0 and later versions only.
-old-location : display\d3dhal_dp2issuequery.htm
-old-project : display
-ms.assetid : e7870f7a-545e-43eb-99c5-42a740585c43
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : LPD3DHAL_DP2ISSUEQUERY, D3DHAL_DP2ISSUEQUERY, d3dstrct_bc6a2c98-b3cf-4161-8aca-fadda2a6cceb.xml, d3dhal/D3DHAL_DP2ISSUEQUERY, D3DHAL_DP2ISSUEQUERY structure [Display Devices], _D3DHAL_DP2ISSUEQUERY, LPD3DHAL_DP2ISSUEQUERY structure pointer [Display Devices], d3dhal/LPD3DHAL_DP2ISSUEQUERY, display.d3dhal_dp2issuequery, *LPD3DHAL_DP2ISSUEQUERY
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dhal.h
-req.include-header : D3dhal.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DHAL_DP2ISSUEQUERY
+UID: NS:d3dhal._D3DHAL_DP2ISSUEQUERY
+title: "_D3DHAL_DP2ISSUEQUERY"
+author: windows-driver-content
+description: DirectX 9.0 and later versions only.
+old-location: display\d3dhal_dp2issuequery.htm
+old-project: display
+ms.assetid: e7870f7a-545e-43eb-99c5-42a740585c43
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: LPD3DHAL_DP2ISSUEQUERY, D3DHAL_DP2ISSUEQUERY, d3dstrct_bc6a2c98-b3cf-4161-8aca-fadda2a6cceb.xml, d3dhal/D3DHAL_DP2ISSUEQUERY, D3DHAL_DP2ISSUEQUERY structure [Display Devices], _D3DHAL_DP2ISSUEQUERY, LPD3DHAL_DP2ISSUEQUERY structure pointer [Display Devices], d3dhal/LPD3DHAL_DP2ISSUEQUERY, display.d3dhal_dp2issuequery, *LPD3DHAL_DP2ISSUEQUERY
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dhal.h
+req.include-header: D3dhal.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dhal.h
+apiname:
+-	D3DHAL_DP2ISSUEQUERY
+product: Windows
+targetos: Windows
+req.typenames: D3DHAL_DP2ISSUEQUERY
 ---
 
 # _D3DHAL_DP2ISSUEQUERY structure

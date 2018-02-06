@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.SYSAUDIO_SELECT_GRAPH
-title : SYSAUDIO_SELECT_GRAPH
-author : windows-driver-content
-description : The SYSAUDIO_SELECT_GRAPH structure is used to specify a graph that includes an optional node such as an AEC control.
-old-location : audio\sysaudio_select_graph.htm
-old-project : audio
-ms.assetid : f114e8ef-4fb7-4fdd-9c83-d8e74c91190e
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : ksmedia/PSYSAUDIO_SELECT_GRAPH, aud-prop_9dd94d88-2ed4-4908-ac6e-eb1a82ea152d.xml, *PSYSAUDIO_SELECT_GRAPH, audio.sysaudio_select_graph, ksmedia/SYSAUDIO_SELECT_GRAPH, SYSAUDIO_SELECT_GRAPH, PSYSAUDIO_SELECT_GRAPH, PSYSAUDIO_SELECT_GRAPH structure pointer [Audio Devices], SYSAUDIO_SELECT_GRAPH structure [Audio Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SYSAUDIO_SELECT_GRAPH, *PSYSAUDIO_SELECT_GRAPH
+UID: NS:ksmedia.SYSAUDIO_SELECT_GRAPH
+title: SYSAUDIO_SELECT_GRAPH
+author: windows-driver-content
+description: The SYSAUDIO_SELECT_GRAPH structure is used to specify a graph that includes an optional node such as an AEC control.
+old-location: audio\sysaudio_select_graph.htm
+old-project: audio
+ms.assetid: f114e8ef-4fb7-4fdd-9c83-d8e74c91190e
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: ksmedia/PSYSAUDIO_SELECT_GRAPH, aud-prop_9dd94d88-2ed4-4908-ac6e-eb1a82ea152d.xml, *PSYSAUDIO_SELECT_GRAPH, audio.sysaudio_select_graph, ksmedia/SYSAUDIO_SELECT_GRAPH, SYSAUDIO_SELECT_GRAPH, PSYSAUDIO_SELECT_GRAPH, PSYSAUDIO_SELECT_GRAPH structure pointer [Audio Devices], SYSAUDIO_SELECT_GRAPH structure [Audio Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	SYSAUDIO_SELECT_GRAPH
+product: Windows
+targetos: Windows
+req.typenames: SYSAUDIO_SELECT_GRAPH, *PSYSAUDIO_SELECT_GRAPH
 ---
 
 # SYSAUDIO_SELECT_GRAPH structure

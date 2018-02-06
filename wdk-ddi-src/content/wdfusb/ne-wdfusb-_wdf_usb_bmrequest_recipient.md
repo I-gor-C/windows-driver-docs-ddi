@@ -1,42 +1,47 @@
 ---
-UID : NE:wdfusb._WDF_USB_BMREQUEST_RECIPIENT
-title : "_WDF_USB_BMREQUEST_RECIPIENT"
-author : windows-driver-content
-description : The WDF_USB_BMREQUEST_RECIPIENT enumeration identifies the data transfer recipient for a USB control transfer.
-old-location : wdf\wdf_usb_bmrequest_recipient.htm
-old-project : wdf
-ms.assetid : 0749d03d-8174-4f6e-816e-4689594c0c84
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : BmRequestToDevice, BmRequestToEndpoint, _WDF_USB_BMREQUEST_RECIPIENT, wdfusb/BmRequestToOther, BmRequestToInterface, kmdf.wdf_usb_bmrequest_recipient, DFUsbRef_646fa8bb-2b05-4247-b3e8-01daad8b204e.xml, wdfusb/WDF_USB_BMREQUEST_RECIPIENT, WDF_USB_BMREQUEST_RECIPIENT, wdfusb/BmRequestToInterface, wdfusb/BmRequestToEndpoint, BmRequestToOther, wdf.wdf_usb_bmrequest_recipient, WDF_USB_BMREQUEST_RECIPIENT enumeration, wdfusb/BmRequestToDevice
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : wdfusb.h
-req.include-header : Wdfusb.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL  (See Remarks section.)"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_USB_BMREQUEST_RECIPIENT
-req.product : Windows 10 or later.
+UID: NE:wdfusb._WDF_USB_BMREQUEST_RECIPIENT
+title: "_WDF_USB_BMREQUEST_RECIPIENT"
+author: windows-driver-content
+description: The WDF_USB_BMREQUEST_RECIPIENT enumeration identifies the data transfer recipient for a USB control transfer.
+old-location: wdf\wdf_usb_bmrequest_recipient.htm
+old-project: wdf
+ms.assetid: 0749d03d-8174-4f6e-816e-4689594c0c84
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: BmRequestToDevice, BmRequestToEndpoint, _WDF_USB_BMREQUEST_RECIPIENT, wdfusb/BmRequestToOther, BmRequestToInterface, kmdf.wdf_usb_bmrequest_recipient, DFUsbRef_646fa8bb-2b05-4247-b3e8-01daad8b204e.xml, wdfusb/WDF_USB_BMREQUEST_RECIPIENT, WDF_USB_BMREQUEST_RECIPIENT, wdfusb/BmRequestToInterface, wdfusb/BmRequestToEndpoint, BmRequestToOther, wdf.wdf_usb_bmrequest_recipient, WDF_USB_BMREQUEST_RECIPIENT enumeration, wdfusb/BmRequestToDevice
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: wdfusb.h
+req.include-header: Wdfusb.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL  (See Remarks section.)"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfusb.h
+apiname:
+-	WDF_USB_BMREQUEST_RECIPIENT
+product: Windows
+targetos: Windows
+req.typenames: WDF_USB_BMREQUEST_RECIPIENT
+req.product: Windows 10 or later.
 ---
 
 # _WDF_USB_BMREQUEST_RECIPIENT Enumeration
@@ -57,31 +62,31 @@ typedef enum _WDF_USB_BMREQUEST_RECIPIENT {
 ## Constants
 
 <table>
-
-<tr>
-<td>BmRequestToDevice</td>
-<td>The data transfer recipient is a device.</td>
-</tr>
-
-<tr>
-<td>BmRequestToEndpoint</td>
-<td>The data transfer recipient is a pipe endpoint.</td>
-</tr>
-
-<tr>
-<td>BmRequestToInterface</td>
-<td>The data transfer recipient is a device interface.</td>
-</tr>
-
-<tr>
-<td>BmRequestToOther</td>
-<td>The data transfer recipient is not a device, interface, or endpoint.</td>
-</tr>
+            
+                <tr>
+                    <td>BmRequestToDevice</td>
+                    <td>The data transfer recipient is a device.</td>
+                </tr>
+            
+                <tr>
+                    <td>BmRequestToEndpoint</td>
+                    <td>The data transfer recipient is a pipe endpoint.</td>
+                </tr>
+            
+                <tr>
+                    <td>BmRequestToInterface</td>
+                    <td>The data transfer recipient is a device interface.</td>
+                </tr>
+            
+                <tr>
+                    <td>BmRequestToOther</td>
+                    <td>The data transfer recipient is not a device, interface, or endpoint.</td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-The<b>WDF_USB_BMREQUEST_RECIPIENT</b> enumeration is used in the <a href="..\wdfusb\ns-wdfusb-_wdf_usb_control_setup_packet.md">WDF_USB_CONTROL_SETUP_PACKET</a> structure.
+        The<b>WDF_USB_BMREQUEST_RECIPIENT</b> enumeration is used in the <a href="..\wdfusb\ns-wdfusb-_wdf_usb_control_setup_packet.md">WDF_USB_CONTROL_SETUP_PACKET</a> structure.
 
 For more information about the data transfer recipient for a USB control transfer, see the USB specification.
 
@@ -92,9 +97,9 @@ For more information about the data transfer recipient for a USB control transfe
 | **Minimum UMDF version** | 2.0 |
 | **Header** | wdfusb.h (include Wdfusb.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\wdfusb\ns-wdfusb-_wdf_usb_control_setup_packet.md">WDF_USB_CONTROL_SETUP_PACKET</a>
+        <a href="..\wdfusb\ns-wdfusb-_wdf_usb_control_setup_packet.md">WDF_USB_CONTROL_SETUP_PACKET</a>
 
  
 

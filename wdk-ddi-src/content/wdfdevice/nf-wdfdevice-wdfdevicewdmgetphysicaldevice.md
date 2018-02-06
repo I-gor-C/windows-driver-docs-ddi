@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfdevice.WdfDeviceWdmGetPhysicalDevice
-title : WdfDeviceWdmGetPhysicalDevice function
-author : windows-driver-content
-description : The WdfDeviceWdmGetPhysicalDevice method retrieves the physical device's WDM PDO from the device stack.
-old-location : wdf\wdfdevicewdmgetphysicaldevice.htm
-old-project : wdf
-ms.assetid : 88bd9cc7-6769-4fdf-b149-2193d765fc6c
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WdfDeviceWdmGetPhysicalDevice, DFDeviceObjectGeneralRef_07f321bf-b857-4b36-81c0-452dc8acfc9a.xml, wdf.wdfdevicewdmgetphysicaldevice, kmdf.wdfdevicewdmgetphysicaldevice, wdfdevice/WdfDeviceWdmGetPhysicalDevice, WdfDeviceWdmGetPhysicalDevice method, PFN_WDFDEVICEWDMGETPHYSICALDEVICE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfdevice.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_STATE_NOTIFICATION_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfdevice.WdfDeviceWdmGetPhysicalDevice
+title: WdfDeviceWdmGetPhysicalDevice function
+author: windows-driver-content
+description: The WdfDeviceWdmGetPhysicalDevice method retrieves the physical device's WDM PDO from the device stack.
+old-location: wdf\wdfdevicewdmgetphysicaldevice.htm
+old-project: wdf
+ms.assetid: 88bd9cc7-6769-4fdf-b149-2193d765fc6c
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WdfDeviceWdmGetPhysicalDevice, DFDeviceObjectGeneralRef_07f321bf-b857-4b36-81c0-452dc8acfc9a.xml, wdf.wdfdevicewdmgetphysicaldevice, kmdf.wdfdevicewdmgetphysicaldevice, wdfdevice/WdfDeviceWdmGetPhysicalDevice, WdfDeviceWdmGetPhysicalDevice method, PFN_WDFDEVICEWDMGETPHYSICALDEVICE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfdevice.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfDeviceWdmGetPhysicalDevice
+product: Windows
+targetos: Windows
+req.typenames: WDF_STATE_NOTIFICATION_TYPE
+req.product: Windows 10 or later.
 ---
 
 

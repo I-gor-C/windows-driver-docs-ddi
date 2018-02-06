@@ -1,42 +1,47 @@
 ---
-UID : NF:storport.StorPortInterlockedPushEntrySList
-title : StorPortInterlockedPushEntrySList function
-author : windows-driver-content
-description : Inserts an item at the front of a Storport managed singly linked list. Access to the list is synchronized on a multiprocessor system.
-old-location : storage\storportinterlockedpushentryslist.htm
-old-project : storage
-ms.assetid : 74C32E55-79C6-449A-AFA3-27858CF4EA6B
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : StorPortInterlockedPushEntrySList, storage.storportinterlockedpushentryslist, storport/StorPortInterlockedPushEntrySList, StorPortInterlockedPushEntrySList routine [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STOR_SPINLOCK
-req.product : Windows 10 or later.
+UID: NF:storport.StorPortInterlockedPushEntrySList
+title: StorPortInterlockedPushEntrySList function
+author: windows-driver-content
+description: Inserts an item at the front of a Storport managed singly linked list. Access to the list is synchronized on a multiprocessor system.
+old-location: storage\storportinterlockedpushentryslist.htm
+old-project: storage
+ms.assetid: 74C32E55-79C6-449A-AFA3-27858CF4EA6B
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: StorPortInterlockedPushEntrySList, storage.storportinterlockedpushentryslist, storport/StorPortInterlockedPushEntrySList, StorPortInterlockedPushEntrySList routine [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	storport.h
+apiname:
+-	StorPortInterlockedPushEntrySList
+product: Windows
+targetos: Windows
+req.typenames: STOR_SPINLOCK
+req.product: Windows 10 or later.
 ---
 
 

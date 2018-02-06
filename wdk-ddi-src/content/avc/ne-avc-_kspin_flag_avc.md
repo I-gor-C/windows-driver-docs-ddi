@@ -1,41 +1,46 @@
 ---
-UID : NE:avc._KSPIN_FLAG_AVC
-title : "_KSPIN_FLAG_AVC"
-author : windows-driver-content
-description : The KSPIN_FLAG_AVC enumeration type is used for connection management and in the AVC_FUNCTION_GET_CONNECTINFO function code.
-old-location : stream\kspin_flag_avc.htm
-old-project : stream
-ms.assetid : 45a85718-8997-4c54-b283-e26247866735
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KSPIN_FLAG_AVC, KSPIN_FLAG_AVC_CONNECTED, stream.kspin_flag_avc, _KSPIN_FLAG_AVC, KSPIN_FLAG_AVC_PCRONLY, avc/KSPIN_FLAG_AVC_CONNECTED, KSPIN_FLAG_AVC_PERMANENT, avcref_9fab0898-b113-4d2f-ae4a-8cc6b01217d9.xml, avc/KSPIN_FLAG_AVCMASK, avc/KSPIN_FLAG_AVC_FIXEDPCR, avc/KSPIN_FLAG_AVC_PCRONLY, KSPIN_FLAG_AVC_FIXEDPCR, avc/KSPIN_FLAG_AVC_PERMANENT, KSPIN_FLAG_AVCMASK, avc/KSPIN_FLAG_AVC, KSPIN_FLAG_AVC enumeration [Streaming Media Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : avc.h
-req.include-header : Avc.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KSPIN_FLAG_AVC
+UID: NE:avc._KSPIN_FLAG_AVC
+title: "_KSPIN_FLAG_AVC"
+author: windows-driver-content
+description: The KSPIN_FLAG_AVC enumeration type is used for connection management and in the AVC_FUNCTION_GET_CONNECTINFO function code.
+old-location: stream\kspin_flag_avc.htm
+old-project: stream
+ms.assetid: 45a85718-8997-4c54-b283-e26247866735
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KSPIN_FLAG_AVC, KSPIN_FLAG_AVC_CONNECTED, stream.kspin_flag_avc, _KSPIN_FLAG_AVC, KSPIN_FLAG_AVC_PCRONLY, avc/KSPIN_FLAG_AVC_CONNECTED, KSPIN_FLAG_AVC_PERMANENT, avcref_9fab0898-b113-4d2f-ae4a-8cc6b01217d9.xml, avc/KSPIN_FLAG_AVCMASK, avc/KSPIN_FLAG_AVC_FIXEDPCR, avc/KSPIN_FLAG_AVC_PCRONLY, KSPIN_FLAG_AVC_FIXEDPCR, avc/KSPIN_FLAG_AVC_PERMANENT, KSPIN_FLAG_AVCMASK, avc/KSPIN_FLAG_AVC, KSPIN_FLAG_AVC enumeration [Streaming Media Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: avc.h
+req.include-header: Avc.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	avc.h
+apiname:
+-	KSPIN_FLAG_AVC
+product: Windows
+targetos: Windows
+req.typenames: KSPIN_FLAG_AVC
 ---
 
 # _KSPIN_FLAG_AVC Enumeration
@@ -55,45 +60,45 @@ typedef enum _KSPIN_FLAG_AVC {
 ## Constants
 
 <table>
-
-<tr>
-<td>KSPIN_FLAG_AVC_CONNECTED</td>
-<td>Part of the AV/C Connect Status bitmask. Represents a connection that is currently active, but not necessarily permanent.</td>
-</tr>
-
-<tr>
-<td>KSPIN_FLAG_AVC_FIXEDPCR</td>
-<td>Represents a permanent connection between a subunit plug and a unit (serial bus) plug. Specifying this flag implies KSPIN_FLAG_AVC_PERMANENT, although that bit is not set if this one is set.</td>
-</tr>
-
-<tr>
-<td>KSPIN_FLAG_AVC_PCRONLY</td>
-<td>No subunit plug control. Only unit input and output plugs are available, and this AVCPRECONNECTINFO structure represents one of them.</td>
-</tr>
-
-<tr>
-<td>KSPIN_FLAG_AVC_PERMANENT</td>
-<td>Part of the AV/C Connect Status bitmask. Represents a permanent connection between two subunits within the same unit.</td>
-</tr>
-
-<tr>
-<td>KSPIN_FLAG_AVCMASK</td>
-<td>The mask to isolate the AV/C defined bit flags</td>
-</tr>
+            
+                <tr>
+                    <td>KSPIN_FLAG_AVC_CONNECTED</td>
+                    <td>Part of the AV/C Connect Status bitmask. Represents a connection that is currently active, but not necessarily permanent.</td>
+                </tr>
+            
+                <tr>
+                    <td>KSPIN_FLAG_AVC_FIXEDPCR</td>
+                    <td>Represents a permanent connection between a subunit plug and a unit (serial bus) plug. Specifying this flag implies KSPIN_FLAG_AVC_PERMANENT, although that bit is not set if this one is set.</td>
+                </tr>
+            
+                <tr>
+                    <td>KSPIN_FLAG_AVC_PCRONLY</td>
+                    <td>No subunit plug control. Only unit input and output plugs are available, and this AVCPRECONNECTINFO structure represents one of them.</td>
+                </tr>
+            
+                <tr>
+                    <td>KSPIN_FLAG_AVC_PERMANENT</td>
+                    <td>Part of the AV/C Connect Status bitmask. Represents a permanent connection between two subunits within the same unit.</td>
+                </tr>
+            
+                <tr>
+                    <td>KSPIN_FLAG_AVCMASK</td>
+                    <td>The mask to isolate the AV/C defined bit flags</td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-These bit flags are used by the intersect handler to determine plug compatibility, as well as to indicate whether the intersect handler is responsible for obtaining a plug handle from <i>61883.sys</i>.
+        These bit flags are used by the intersect handler to determine plug compatibility, as well as to indicate whether the intersect handler is responsible for obtaining a plug handle from <i>61883.sys</i>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
 | **Header** | avc.h (include Avc.h) |
 
-## See Also
+    ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554154">AVC_FUNCTION_GET_CONNECTINFO</a>
+        <a href="https://msdn.microsoft.com/library/windows/hardware/ff554154">AVC_FUNCTION_GET_CONNECTINFO</a>
 
 <a href="..\avc\nc-avc-pfnavcintersecthandler.md">AV/C Intersect Handler</a>
 

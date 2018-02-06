@@ -1,42 +1,50 @@
 ---
-UID : NF:wdfsync.WdfWaitLockAcquire
-title : WdfWaitLockAcquire function
-author : windows-driver-content
-description : The WdfWaitLockAcquire method acquires a specified wait lock.
-old-location : wdf\wdfwaitlockacquire.htm
-old-project : wdf
-ms.assetid : 6fe7465d-938a-400f-b141-76e8a5ffbe90
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : DFSynchroRef_eccb7d51-5e5e-4b2b-8156-c22d35f46809.xml, kmdf.wdfwaitlockacquire, wdfsync/WdfWaitLockAcquire, WdfWaitLockAcquire, wdf.wdfwaitlockacquire, WdfWaitLockAcquire method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfsync.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2, WdfWaitlock, WdfWaitlockRelease
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll : 
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_REQUEST_SEND_OPTIONS, *PWDF_REQUEST_SEND_OPTIONS
-req.product : Windows 10 or later.
+UID: NF:wdfsync.WdfWaitLockAcquire
+title: WdfWaitLockAcquire function
+author: windows-driver-content
+description: The WdfWaitLockAcquire method acquires a specified wait lock.
+old-location: wdf\wdfwaitlockacquire.htm
+old-project: wdf
+ms.assetid: 6fe7465d-938a-400f-b141-76e8a5ffbe90
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: DFSynchroRef_eccb7d51-5e5e-4b2b-8156-c22d35f46809.xml, kmdf.wdfwaitlockacquire, wdfsync/WdfWaitLockAcquire, WdfWaitLockAcquire, wdf.wdfwaitlockacquire, WdfWaitLockAcquire method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfsync.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2, WdfWaitlock, WdfWaitlockRelease
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll: 
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+-	WUDFx02000.dll
+-	WUDFx02000.dll.dll
+apiname:
+-	WdfWaitLockAcquire
+product: Windows
+targetos: Windows
+req.typenames: WDF_REQUEST_SEND_OPTIONS, *PWDF_REQUEST_SEND_OPTIONS
+req.product: Windows 10 or later.
 ---
 
 

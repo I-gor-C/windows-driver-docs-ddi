@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugRegisters2.GetInstructionOffset2
-title : IDebugRegisters2::GetInstructionOffset2 method
-author : windows-driver-content
-description : The GetInstructionOffset2 method returns the location of the current thread's current instruction.
-old-location : debugger\getinstructionoffset2.htm
-old-project : debugger
-ms.assetid : c5757dbb-16bf-46f9-836f-5a94089bbb1e
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : GetInstructionOffset2 method [Windows Debugging], IDebugRegisters2 interface, GetInstructionOffset2, GetInstructionOffset2 method [Windows Debugging], IDebugRegisters_92189e99-c8f6-4422-8421-62fe194a05b6.xml, dbgeng/IDebugRegisters2::GetInstructionOffset2, IDebugRegisters2, IDebugRegisters2::GetInstructionOffset2, IDebugRegisters2 interface [Windows Debugging], GetInstructionOffset2 method, debugger.getinstructionoffset2
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : DbgEng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugRegisters2.GetInstructionOffset2
+title: IDebugRegisters2::GetInstructionOffset2 method
+author: windows-driver-content
+description: The GetInstructionOffset2 method returns the location of the current thread's current instruction.
+old-location: debugger\getinstructionoffset2.htm
+old-project: debugger
+ms.assetid: c5757dbb-16bf-46f9-836f-5a94089bbb1e
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: GetInstructionOffset2 method [Windows Debugging], IDebugRegisters2 interface, GetInstructionOffset2, GetInstructionOffset2 method [Windows Debugging], IDebugRegisters_92189e99-c8f6-4422-8421-62fe194a05b6.xml, dbgeng/IDebugRegisters2::GetInstructionOffset2, IDebugRegisters2, IDebugRegisters2::GetInstructionOffset2, IDebugRegisters2 interface [Windows Debugging], GetInstructionOffset2 method, debugger.getinstructionoffset2
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: DbgEng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugRegisters2.GetInstructionOffset2
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

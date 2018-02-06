@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.KSAC3_DOWNMIX
-title : KSAC3_DOWNMIX
-author : windows-driver-content
-description : The KSAC3_DOWNMIX structure specifies whether the program channels in an AC-3-encoded stream need to be downmixed to accommodate the speaker configuration.
-old-location : audio\ksac3_downmix.htm
-old-project : audio
-ms.assetid : d35450ec-5ddc-4312-bd77-ab7e89690f82
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : aud-prop_24e957af-1fba-467d-93f6-3b7ca211238e.xml, PKSAC3_DOWNMIX structure pointer [Audio Devices], PKSAC3_DOWNMIX, KSAC3_DOWNMIX structure [Audio Devices], ksmedia/PKSAC3_DOWNMIX, ksmedia/KSAC3_DOWNMIX, *PKSAC3_DOWNMIX, audio.ksac3_downmix, KSAC3_DOWNMIX
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KSAC3_DOWNMIX, *PKSAC3_DOWNMIX
+UID: NS:ksmedia.KSAC3_DOWNMIX
+title: KSAC3_DOWNMIX
+author: windows-driver-content
+description: The KSAC3_DOWNMIX structure specifies whether the program channels in an AC-3-encoded stream need to be downmixed to accommodate the speaker configuration.
+old-location: audio\ksac3_downmix.htm
+old-project: audio
+ms.assetid: d35450ec-5ddc-4312-bd77-ab7e89690f82
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: aud-prop_24e957af-1fba-467d-93f6-3b7ca211238e.xml, PKSAC3_DOWNMIX structure pointer [Audio Devices], PKSAC3_DOWNMIX, KSAC3_DOWNMIX structure [Audio Devices], ksmedia/PKSAC3_DOWNMIX, ksmedia/KSAC3_DOWNMIX, *PKSAC3_DOWNMIX, audio.ksac3_downmix, KSAC3_DOWNMIX
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	KSAC3_DOWNMIX
+product: Windows
+targetos: Windows
+req.typenames: KSAC3_DOWNMIX, *PKSAC3_DOWNMIX
 ---
 
 # KSAC3_DOWNMIX structure

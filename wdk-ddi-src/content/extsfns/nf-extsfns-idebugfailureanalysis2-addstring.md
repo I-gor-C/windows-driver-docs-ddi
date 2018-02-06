@@ -1,41 +1,46 @@
 ---
-UID : NF:extsfns.IDebugFailureAnalysis2.AddString
-title : IDebugFailureAnalysis2::AddString method
-author : windows-driver-content
-description : The AddString method adds a new FA entry to a DebugFailureAnalysis object and sets the data block of the FA entry to a specified string.
-old-location : debugger\idebugfailureanalysis2_addstring.htm
-old-project : debugger
-ms.assetid : 98023A9B-9091-4C0D-ADE0-978816E8F762
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugFailureAnalysis2, AddString, extsfns/IDebugFailureAnalysis2::AddString, AddString method [Windows Debugging], debugger.idebugfailureanalysis2_addstring, IDebugFailureAnalysis2::AddString, AddString method [Windows Debugging], IDebugFailureAnalysis2 interface, IDebugFailureAnalysis2 interface [Windows Debugging], AddString method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : extsfns.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : extsfns.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FA_EXTENSION_PLUGIN_PHASE
+UID: NF:extsfns.IDebugFailureAnalysis2.AddString
+title: IDebugFailureAnalysis2::AddString method
+author: windows-driver-content
+description: The AddString method adds a new FA entry to a DebugFailureAnalysis object and sets the data block of the FA entry to a specified string.
+old-location: debugger\idebugfailureanalysis2_addstring.htm
+old-project: debugger
+ms.assetid: 98023A9B-9091-4C0D-ADE0-978816E8F762
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugFailureAnalysis2, AddString, extsfns/IDebugFailureAnalysis2::AddString, AddString method [Windows Debugging], debugger.idebugfailureanalysis2_addstring, IDebugFailureAnalysis2::AddString, AddString method [Windows Debugging], IDebugFailureAnalysis2 interface, IDebugFailureAnalysis2 interface [Windows Debugging], AddString method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: extsfns.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: extsfns.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	extsfns.h
+apiname:
+-	IDebugFailureAnalysis2.AddString
+product: Windows
+targetos: Windows
+req.typenames: FA_EXTENSION_PLUGIN_PHASE
 ---
 
 

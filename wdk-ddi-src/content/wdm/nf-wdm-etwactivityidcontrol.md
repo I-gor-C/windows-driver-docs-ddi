@@ -1,38 +1,38 @@
 ---
-UID : NF:wdm.EtwActivityIdControl
-title : EtwActivityIdControl function
-author : windows-driver-content
-description : The EtwActivityIdControl function creates, queries, and sets the current activity identifier.
-old-location : devtest\etwactivityidcontrol.htm
-old-project : devtest
-ms.assetid : dd2e1558-db5d-4d48-a55e-fbdf2838ec55
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : EtwActivityIdControl
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.alt-api : EtwActivityIdControl
-req.alt-loc : NtosKrnl.exe
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : See Comments section
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.EtwActivityIdControl
+title: EtwActivityIdControl function
+author: windows-driver-content
+description: The EtwActivityIdControl function creates, queries, and sets the current activity identifier.
+old-location: devtest\etwactivityidcontrol.htm
+old-project: devtest
+ms.assetid: dd2e1558-db5d-4d48-a55e-fbdf2838ec55
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: EtwActivityIdControl
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.alt-api: EtwActivityIdControl
+req.alt-loc: NtosKrnl.exe
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: See Comments section
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

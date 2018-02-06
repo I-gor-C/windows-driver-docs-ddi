@@ -1,41 +1,46 @@
 ---
-UID : NS:ndiswwan._NDIS_WWAN_SLOT_INFO
-title : "_NDIS_WWAN_SLOT_INFO"
-author : windows-driver-content
-description : The NDIS_WWAN_SLOT_INFO structure represents the information about a slot in the modem of the MB device.
-old-location : netvista\ndis_wwan_slot_info_status.htm
-old-project : netvista
-ms.assetid : 21D9DE55-2A26-467A-B119-8AFD4B47A4FD
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : "_NDIS_WWAN_SLOT_INFO, *PNDIS_WWAN_SLOT_INFO, ndiswwan/NDIS_WWAN_SLOT_INFO, NDIS_WWAN_SLOT_INFO, PNDIS_WWAN_SLOT_INFO structure pointer [Network Drivers Starting with Windows Vista], NDIS_WWAN_SLOT_INFO structure [Network Drivers Starting with Windows Vista], ndiswwan/PNDIS_WWAN_SLOT_INFO, netvista.ndis_wwan_slot_info_status, PNDIS_WWAN_SLOT_INFO"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndiswwan.h
-req.include-header : Ndiswwan.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10, version 1703
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_WWAN_SLOT_INFO, *PNDIS_WWAN_SLOT_INFO
+UID: NS:ndiswwan._NDIS_WWAN_SLOT_INFO
+title: "_NDIS_WWAN_SLOT_INFO"
+author: windows-driver-content
+description: The NDIS_WWAN_SLOT_INFO structure represents the information about a slot in the modem of the MB device.
+old-location: netvista\ndis_wwan_slot_info_status.htm
+old-project: netvista
+ms.assetid: 21D9DE55-2A26-467A-B119-8AFD4B47A4FD
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: "_NDIS_WWAN_SLOT_INFO, *PNDIS_WWAN_SLOT_INFO, ndiswwan/NDIS_WWAN_SLOT_INFO, NDIS_WWAN_SLOT_INFO, PNDIS_WWAN_SLOT_INFO structure pointer [Network Drivers Starting with Windows Vista], NDIS_WWAN_SLOT_INFO structure [Network Drivers Starting with Windows Vista], ndiswwan/PNDIS_WWAN_SLOT_INFO, netvista.ndis_wwan_slot_info_status, PNDIS_WWAN_SLOT_INFO"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndiswwan.h
+req.include-header: Ndiswwan.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10, version 1703
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndiswwan.h
+apiname:
+-	NDIS_WWAN_SLOT_INFO
+product: Windows
+targetos: Windows
+req.typenames: NDIS_WWAN_SLOT_INFO, *PNDIS_WWAN_SLOT_INFO
 ---
 
 # _NDIS_WWAN_SLOT_INFO structure

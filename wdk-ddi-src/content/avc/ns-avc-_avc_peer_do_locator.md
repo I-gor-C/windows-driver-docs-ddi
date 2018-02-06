@@ -1,41 +1,46 @@
 ---
-UID : NS:avc._AVC_PEER_DO_LOCATOR
-title : "_AVC_PEER_DO_LOCATOR"
-author : windows-driver-content
-description : The AVC_PEER_DO_LOCATOR describes nonvirtual (peer) instances of avc.sys.
-old-location : stream\avc_peer_do_locator.htm
-old-project : stream
-ms.assetid : a1ef8626-1920-422b-a0ed-4da9ac495f74
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : avc/AVC_PEER_DO_LOCATOR, _AVC_PEER_DO_LOCATOR, PAVC_PEER_DO_LOCATOR structure pointer [Streaming Media Devices], PAVC_PEER_DO_LOCATOR, *PAVC_PEER_DO_LOCATOR, avc/PAVC_PEER_DO_LOCATOR, avcref_6e8543dc-a712-4031-8f48-cf789d320551.xml, AVC_PEER_DO_LOCATOR structure [Streaming Media Devices], stream.avc_peer_do_locator, AVC_PEER_DO_LOCATOR
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : avc.h
-req.include-header : Avc.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : AVC_PEER_DO_LOCATOR, *PAVC_PEER_DO_LOCATOR
+UID: NS:avc._AVC_PEER_DO_LOCATOR
+title: "_AVC_PEER_DO_LOCATOR"
+author: windows-driver-content
+description: The AVC_PEER_DO_LOCATOR describes nonvirtual (peer) instances of avc.sys.
+old-location: stream\avc_peer_do_locator.htm
+old-project: stream
+ms.assetid: a1ef8626-1920-422b-a0ed-4da9ac495f74
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: avc/AVC_PEER_DO_LOCATOR, _AVC_PEER_DO_LOCATOR, PAVC_PEER_DO_LOCATOR structure pointer [Streaming Media Devices], PAVC_PEER_DO_LOCATOR, *PAVC_PEER_DO_LOCATOR, avc/PAVC_PEER_DO_LOCATOR, avcref_6e8543dc-a712-4031-8f48-cf789d320551.xml, AVC_PEER_DO_LOCATOR structure [Streaming Media Devices], stream.avc_peer_do_locator, AVC_PEER_DO_LOCATOR
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: avc.h
+req.include-header: Avc.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	avc.h
+apiname:
+-	AVC_PEER_DO_LOCATOR
+product: Windows
+targetos: Windows
+req.typenames: AVC_PEER_DO_LOCATOR, *PAVC_PEER_DO_LOCATOR
 ---
 
 # _AVC_PEER_DO_LOCATOR structure

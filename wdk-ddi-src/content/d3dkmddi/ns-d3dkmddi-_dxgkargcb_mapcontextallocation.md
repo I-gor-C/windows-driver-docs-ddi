@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGKARGCB_MAPCONTEXTALLOCATION
-title : "_DXGKARGCB_MAPCONTEXTALLOCATION"
-author : windows-driver-content
-description : DXGKARGCB_MAPCONTEXTALLOCATION is used with DxgkCbMapContextAllocation to map a graphics processing unit (GPU) virtual address to the specified context allocation.
-old-location : display\dxgkargcb_mapcontextallocation.htm
-old-project : display
-ms.assetid : F26E382F-D9F8-4452-983E-4523A77ADC35
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DXGKARGCB_MAPCONTEXTALLOCATION structure [Display Devices], DXGKARGCB_MAPCONTEXTALLOCATION, _DXGKARGCB_MAPCONTEXTALLOCATION, d3dkmddi/DXGKARGCB_MAPCONTEXTALLOCATION, display.dxgkargcb_mapcontextallocation
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGKARGCB_MAPCONTEXTALLOCATION
+UID: NS:d3dkmddi._DXGKARGCB_MAPCONTEXTALLOCATION
+title: "_DXGKARGCB_MAPCONTEXTALLOCATION"
+author: windows-driver-content
+description: DXGKARGCB_MAPCONTEXTALLOCATION is used with DxgkCbMapContextAllocation to map a graphics processing unit (GPU) virtual address to the specified context allocation.
+old-location: display\dxgkargcb_mapcontextallocation.htm
+old-project: display
+ms.assetid: F26E382F-D9F8-4452-983E-4523A77ADC35
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DXGKARGCB_MAPCONTEXTALLOCATION structure [Display Devices], DXGKARGCB_MAPCONTEXTALLOCATION, _DXGKARGCB_MAPCONTEXTALLOCATION, d3dkmddi/DXGKARGCB_MAPCONTEXTALLOCATION, display.dxgkargcb_mapcontextallocation
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DXGKARGCB_MAPCONTEXTALLOCATION
+product: Windows
+targetos: Windows
+req.typenames: DXGKARGCB_MAPCONTEXTALLOCATION
 ---
 
 # _DXGKARGCB_MAPCONTEXTALLOCATION structure

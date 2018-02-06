@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.RtlDowncaseUnicodeString
-title : RtlDowncaseUnicodeString function
-author : windows-driver-content
-description : The RtlDowncaseUnicodeString routine converts the specified Unicode source string to lowercase. The translation conforms to the current system locale information.
-old-location : ifsk\rtldowncaseunicodestring.htm
-old-project : ifsk
-ms.assetid : c611b051-45fe-4509-bf2c-7059d578ea05
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : RtlDowncaseUnicodeString, rtlref_140e7faa-096a-49df-a2b7-87776cfc5b38.xml, RtlDowncaseUnicodeString routine [Installable File System Drivers], ntifs/RtlDowncaseUnicodeString, ifsk.rtldowncaseunicodestring
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "< DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.RtlDowncaseUnicodeString
+title: RtlDowncaseUnicodeString function
+author: windows-driver-content
+description: The RtlDowncaseUnicodeString routine converts the specified Unicode source string to lowercase. The translation conforms to the current system locale information.
+old-location: ifsk\rtldowncaseunicodestring.htm
+old-project: ifsk
+ms.assetid: c611b051-45fe-4509-bf2c-7059d578ea05
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: RtlDowncaseUnicodeString, rtlref_140e7faa-096a-49df-a2b7-87776cfc5b38.xml, RtlDowncaseUnicodeString routine [Installable File System Drivers], ntifs/RtlDowncaseUnicodeString, ifsk.rtldowncaseunicodestring
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "< DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	RtlDowncaseUnicodeString
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

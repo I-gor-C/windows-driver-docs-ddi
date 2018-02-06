@@ -1,41 +1,46 @@
 ---
-UID : NS:hbapiwmi._SendRNID_OUT
-title : "_SendRNID_OUT"
-author : windows-driver-content
-description : The SendRNID_OUT structure is used to report the output parameter data of the SendRNID WMI method to the WMI client.
-old-location : storage\sendrnid_out.htm
-old-project : storage
-ms.assetid : 80f264f6-51cb-4125-832b-603ed8417d32
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : PSendRNID_OUT structure pointer [Storage Devices], *PSendRNID_OUT, SendRNID_OUT, structs-Fibre_fb365ea2-b9ff-4108-af6c-48c2d812eac3.xml, hbapiwmi/PSendRNID_OUT, hbapiwmi/SendRNID_OUT, _SendRNID_OUT, storage.sendrnid_out, PSendRNID_OUT, SendRNID_OUT structure [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : hbapiwmi.h
-req.include-header : Hbapiwmi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSendRNID_OUT, SendRNID_OUT"
+UID: NS:hbapiwmi._SendRNID_OUT
+title: "_SendRNID_OUT"
+author: windows-driver-content
+description: The SendRNID_OUT structure is used to report the output parameter data of the SendRNID WMI method to the WMI client.
+old-location: storage\sendrnid_out.htm
+old-project: storage
+ms.assetid: 80f264f6-51cb-4125-832b-603ed8417d32
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: PSendRNID_OUT structure pointer [Storage Devices], *PSendRNID_OUT, SendRNID_OUT, structs-Fibre_fb365ea2-b9ff-4108-af6c-48c2d812eac3.xml, hbapiwmi/PSendRNID_OUT, hbapiwmi/SendRNID_OUT, _SendRNID_OUT, storage.sendrnid_out, PSendRNID_OUT, SendRNID_OUT structure [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: hbapiwmi.h
+req.include-header: Hbapiwmi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hbapiwmi.h
+apiname:
+-	SendRNID_OUT
+product: Windows
+targetos: Windows
+req.typenames: "*PSendRNID_OUT, SendRNID_OUT"
 ---
 
 # _SendRNID_OUT structure

@@ -1,41 +1,46 @@
 ---
-UID : NS:hbaapi.HBA_FCPBinding2
-title : HBA_FCPBinding2
-author : windows-driver-content
-description : The HBA_FCPBinding2 structure contains an array of bindings between operating system identifiers, SCSI logical unit ID descriptors (LUIDs) and fibre channel protocol (FCP) identifiers for a set of logical units.
-old-location : storage\hba_fcpbinding2.htm
-old-project : storage
-ms.assetid : f715d45c-30e1-414f-907c-9ad1203ca604
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : hbaapi/PHBA_FCPBINDING2, HBA_FCPBINDING2, structs-Fibre_b19a2c46-204e-4500-a4ed-9e3949941093.xml, HBA_FCPBinding2, HBA_FCPBinding2 structure [Storage Devices], PHBA_FCPBINDING2 structure pointer [Storage Devices], hbaapi/HBA_FCPBinding2, HBA_FCPBINDING2 structure [Storage Devices], PHBA_FCPBINDING2, *PHBA_FCPBINDING2, storage.hba_fcpbinding2
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : hbaapi.h
-req.include-header : Hbaapi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HBA_FCPBINDING2, *PHBA_FCPBINDING2
+UID: NS:hbaapi.HBA_FCPBinding2
+title: HBA_FCPBinding2
+author: windows-driver-content
+description: The HBA_FCPBinding2 structure contains an array of bindings between operating system identifiers, SCSI logical unit ID descriptors (LUIDs) and fibre channel protocol (FCP) identifiers for a set of logical units.
+old-location: storage\hba_fcpbinding2.htm
+old-project: storage
+ms.assetid: f715d45c-30e1-414f-907c-9ad1203ca604
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: hbaapi/PHBA_FCPBINDING2, HBA_FCPBINDING2, structs-Fibre_b19a2c46-204e-4500-a4ed-9e3949941093.xml, HBA_FCPBinding2, HBA_FCPBinding2 structure [Storage Devices], PHBA_FCPBINDING2 structure pointer [Storage Devices], hbaapi/HBA_FCPBinding2, HBA_FCPBINDING2 structure [Storage Devices], PHBA_FCPBINDING2, *PHBA_FCPBINDING2, storage.hba_fcpbinding2
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: hbaapi.h
+req.include-header: Hbaapi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hbaapi.h
+apiname:
+-	HBA_FCPBINDING2
+product: Windows
+targetos: Windows
+req.typenames: HBA_FCPBINDING2, *PHBA_FCPBINDING2
 ---
 
 # HBA_FCPBinding2 structure

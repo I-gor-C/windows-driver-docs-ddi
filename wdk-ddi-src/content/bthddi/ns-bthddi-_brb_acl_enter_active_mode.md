@@ -1,41 +1,46 @@
 ---
-UID : NS:bthddi._BRB_ACL_ENTER_ACTIVE_MODE
-title : "_BRB_ACL_ENTER_ACTIVE_MODE"
-author : windows-driver-content
-description : The _BRB_ACL_ENTER_ACTIVE_MODE structure specifies the remote device to be placed into active mode.
-old-location : bltooth\_brb_acl_enter_active_mode.htm
-old-project : bltooth
-ms.assetid : 2a42c8b5-acc0-463e-8ecd-179724be27d9
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : "_BRB_ACL_ENTER_ACTIVE_MODE structure [Bluetooth Devices], _BRB_ACL_ENTER_ACTIVE_MODE, bthddi/_BRB_ACL_ENTER_ACTIVE_MODE, bltooth._brb_acl_enter_active_mode, bth_structs_1cb3c3f5-063a-4213-98b0-5a2c667f5e40.xml"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : bthddi.h
-req.include-header : Bthddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Versions:\_Supported in Windows Vista, and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback   function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access   paged memory)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NS:bthddi._BRB_ACL_ENTER_ACTIVE_MODE
+title: "_BRB_ACL_ENTER_ACTIVE_MODE"
+author: windows-driver-content
+description: The _BRB_ACL_ENTER_ACTIVE_MODE structure specifies the remote device to be placed into active mode.
+old-location: bltooth\_brb_acl_enter_active_mode.htm
+old-project: bltooth
+ms.assetid: 2a42c8b5-acc0-463e-8ecd-179724be27d9
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: "_BRB_ACL_ENTER_ACTIVE_MODE structure [Bluetooth Devices], _BRB_ACL_ENTER_ACTIVE_MODE, bthddi/_BRB_ACL_ENTER_ACTIVE_MODE, bltooth._brb_acl_enter_active_mode, bth_structs_1cb3c3f5-063a-4213-98b0-5a2c667f5e40.xml"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: bthddi.h
+req.include-header: Bthddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Versions:\_Supported in Windows Vista, and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback   function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access   paged memory)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	bthddi.h
+apiname:
+-	_BRB_ACL_ENTER_ACTIVE_MODE
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 # _BRB_ACL_ENTER_ACTIVE_MODE structure

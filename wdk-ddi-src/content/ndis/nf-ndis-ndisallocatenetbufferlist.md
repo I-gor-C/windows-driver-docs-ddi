@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisAllocateNetBufferList
-title : NdisAllocateNetBufferList function
-author : windows-driver-content
-description : Call the NdisAllocateNetBufferList function to allocate and initialize a NET_BUFFER_LIST structure from a NET_BUFFER_LIST structure pool.
-old-location : netvista\ndisallocatenetbufferlist.htm
-old-project : netvista
-ms.assetid : 9c821aac-9abd-4041-a15e-64306ada1c02
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : ndis_netbuf_functions_ref_85e4ad07-739d-4c37-b436-d9ca95c9db92.xml, NdisAllocateNetBufferList function [Network Drivers Starting with Windows Vista], NdisAllocateNetBufferList, ndis/NdisAllocateNetBufferList, netvista.ndisallocatenetbufferlist
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_NetBuffer_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisAllocateNetBufferList
+title: NdisAllocateNetBufferList function
+author: windows-driver-content
+description: Call the NdisAllocateNetBufferList function to allocate and initialize a NET_BUFFER_LIST structure from a NET_BUFFER_LIST structure pool.
+old-location: netvista\ndisallocatenetbufferlist.htm
+old-project: netvista
+ms.assetid: 9c821aac-9abd-4041-a15e-64306ada1c02
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: ndis_netbuf_functions_ref_85e4ad07-739d-4c37-b436-d9ca95c9db92.xml, NdisAllocateNetBufferList function [Network Drivers Starting with Windows Vista], NdisAllocateNetBufferList, ndis/NdisAllocateNetBufferList, netvista.ndisallocatenetbufferlist
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_NetBuffer_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisAllocateNetBufferList
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NF:irb.AtaPortDeviceBusy
-title : AtaPortDeviceBusy function
-author : windows-driver-content
-description : The AtaPortDeviceBusy routine informs the port driver that the indicated device is busy.
-old-location : storage\ataportdevicebusy.htm
-old-project : storage
-ms.assetid : 919f30b1-025d-4526-a1f6-2d14c482e474
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ataportdevicebusy, AtaPortDeviceBusy routine [Storage Devices], irb/AtaPortDeviceBusy, AtaPortDeviceBusy, atartns_22d36e2a-804e-4d24-910e-051e6dccdeaa.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : irb.h
-req.include-header : Ata.h, Irb.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : IDE_POWER_STATE
+UID: NF:irb.AtaPortDeviceBusy
+title: AtaPortDeviceBusy function
+author: windows-driver-content
+description: The AtaPortDeviceBusy routine informs the port driver that the indicated device is busy.
+old-location: storage\ataportdevicebusy.htm
+old-project: storage
+ms.assetid: 919f30b1-025d-4526-a1f6-2d14c482e474
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ataportdevicebusy, AtaPortDeviceBusy routine [Storage Devices], irb/AtaPortDeviceBusy, AtaPortDeviceBusy, atartns_22d36e2a-804e-4d24-910e-051e6dccdeaa.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: irb.h
+req.include-header: Ata.h, Irb.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	irb.h
+apiname:
+-	AtaPortDeviceBusy
+product: Windows
+targetos: Windows
+req.typenames: IDE_POWER_STATE
 ---
 
 

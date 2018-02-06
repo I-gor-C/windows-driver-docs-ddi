@@ -1,41 +1,46 @@
 ---
-UID : NS:mpiodisk._MPIO_DEVINSTANCE_HEALTH_INFO
-title : "_MPIO_DEVINSTANCE_HEALTH_INFO"
-author : windows-driver-content
-description : The MPIO_DEVINSTANCE_HEALTH_INFO structure is used to query the available health information for every instance of a multi-path disk on each of the paths through which it is exposed.
-old-location : storage\mpio_devinstance_health_info.htm
-old-project : storage
-ms.assetid : 7f254389-58cf-43da-8611-a1598cc2eb66
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : PMPIO_DEVINSTANCE_HEALTH_INFO structure pointer [Storage Devices], mpiodisk/MPIO_DEVINSTANCE_HEALTH_INFO, _MPIO_DEVINSTANCE_HEALTH_INFO, PMPIO_DEVINSTANCE_HEALTH_INFO, MPIO_DEVINSTANCE_HEALTH_INFO structure [Storage Devices], *PMPIO_DEVINSTANCE_HEALTH_INFO, storage.mpio_devinstance_health_info, mpiodisk/PMPIO_DEVINSTANCE_HEALTH_INFO, structs-scsibus_4e13f03b-88d3-4ab7-a2a8-5b4064b4edd2.xml, MPIO_DEVINSTANCE_HEALTH_INFO
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : mpiodisk.h
-req.include-header : Mpiowmi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PMPIO_DEVINSTANCE_HEALTH_INFO, MPIO_DEVINSTANCE_HEALTH_INFO"
+UID: NS:mpiodisk._MPIO_DEVINSTANCE_HEALTH_INFO
+title: "_MPIO_DEVINSTANCE_HEALTH_INFO"
+author: windows-driver-content
+description: The MPIO_DEVINSTANCE_HEALTH_INFO structure is used to query the available health information for every instance of a multi-path disk on each of the paths through which it is exposed.
+old-location: storage\mpio_devinstance_health_info.htm
+old-project: storage
+ms.assetid: 7f254389-58cf-43da-8611-a1598cc2eb66
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: PMPIO_DEVINSTANCE_HEALTH_INFO structure pointer [Storage Devices], mpiodisk/MPIO_DEVINSTANCE_HEALTH_INFO, _MPIO_DEVINSTANCE_HEALTH_INFO, PMPIO_DEVINSTANCE_HEALTH_INFO, MPIO_DEVINSTANCE_HEALTH_INFO structure [Storage Devices], *PMPIO_DEVINSTANCE_HEALTH_INFO, storage.mpio_devinstance_health_info, mpiodisk/PMPIO_DEVINSTANCE_HEALTH_INFO, structs-scsibus_4e13f03b-88d3-4ab7-a2a8-5b4064b4edd2.xml, MPIO_DEVINSTANCE_HEALTH_INFO
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: mpiodisk.h
+req.include-header: Mpiowmi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	mpiodisk.h
+apiname:
+-	MPIO_DEVINSTANCE_HEALTH_INFO
+product: Windows
+targetos: Windows
+req.typenames: "*PMPIO_DEVINSTANCE_HEALTH_INFO, MPIO_DEVINSTANCE_HEALTH_INFO"
 ---
 
 # _MPIO_DEVINSTANCE_HEALTH_INFO structure

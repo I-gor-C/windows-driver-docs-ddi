@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsPinGetConnectedPinInterface
-title : KsPinGetConnectedPinInterface function
-author : windows-driver-content
-description : The KsPinGetConnectedPinInterface function queries the pin to which Pin is connected for a COM style interface.
-old-location : stream\kspingetconnectedpininterface.htm
-old-project : stream
-ms.assetid : 594614ee-0d30-4574-81ad-a523e7fadc2c
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ks/KsPinGetConnectedPinInterface, stream.kspingetconnectedpininterface, KsPinGetConnectedPinInterface, avfunc_57b89966-efc8-4b5a-96c1-da5aeb58e2d3.xml, KsPinGetConnectedPinInterface function [Streaming Media Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsPinGetConnectedPinInterface
+title: KsPinGetConnectedPinInterface function
+author: windows-driver-content
+description: The KsPinGetConnectedPinInterface function queries the pin to which Pin is connected for a COM style interface.
+old-location: stream\kspingetconnectedpininterface.htm
+old-project: stream
+ms.assetid: 594614ee-0d30-4574-81ad-a523e7fadc2c
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ks/KsPinGetConnectedPinInterface, stream.kspingetconnectedpininterface, KsPinGetConnectedPinInterface, avfunc_57b89966-efc8-4b5a-96c1-da5aeb58e2d3.xml, KsPinGetConnectedPinInterface function [Streaming Media Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsPinGetConnectedPinInterface
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

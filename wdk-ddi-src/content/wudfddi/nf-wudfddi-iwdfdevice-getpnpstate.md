@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFDevice.GetPnpState
-title : IWDFDevice::GetPnpState method
-author : windows-driver-content
-description : The GetPnpState method determines whether the given Plug and Play (PnP) property of a device is on or off (or set to the default state).
-old-location : wdf\iwdfdevice_getpnpstate.htm
-old-project : wdf
-ms.assetid : 7214a0e9-5519-4daa-bd2f-cc3c697dd867
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : UMDFDeviceObjectRef_6fe8971d-2af6-4fc0-a902-74edb5d45f39.xml, GetPnpState method, IWDFDevice interface, IWDFDevice::GetPnpState, wudfddi/IWDFDevice::GetPnpState, GetPnpState method, GetPnpState, umdf.iwdfdevice_getpnpstate, IWDFDevice, wdf.iwdfdevice_getpnpstate, IWDFDevice interface, GetPnpState method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.5
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFDevice.GetPnpState
+title: IWDFDevice::GetPnpState method
+author: windows-driver-content
+description: The GetPnpState method determines whether the given Plug and Play (PnP) property of a device is on or off (or set to the default state).
+old-location: wdf\iwdfdevice_getpnpstate.htm
+old-project: wdf
+ms.assetid: 7214a0e9-5519-4daa-bd2f-cc3c697dd867
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: UMDFDeviceObjectRef_6fe8971d-2af6-4fc0-a902-74edb5d45f39.xml, GetPnpState method, IWDFDevice interface, IWDFDevice::GetPnpState, wudfddi/IWDFDevice::GetPnpState, GetPnpState method, GetPnpState, umdf.iwdfdevice_getpnpstate, IWDFDevice, wdf.iwdfdevice_getpnpstate, IWDFDevice interface, GetPnpState method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.5
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFDevice.GetPnpState
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

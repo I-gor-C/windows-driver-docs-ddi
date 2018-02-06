@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfrequest.WdfRequestRetrieveUnsafeUserInputBuffer
-title : WdfRequestRetrieveUnsafeUserInputBuffer function
-author : windows-driver-content
-description : The WdfRequestRetrieveUnsafeUserInputBuffer method retrieves an I/O request's input buffer, if the request's technique for accessing data buffers is neither buffered nor direct I/O.
-old-location : wdf\wdfrequestretrieveunsafeuserinputbuffer.htm
-old-project : wdf
-ms.assetid : 0a5e141d-2ef5-482c-8470-560411241510
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WdfRequestRetrieveUnsafeUserInputBuffer, wdf.wdfrequestretrieveunsafeuserinputbuffer, kmdf.wdfrequestretrieveunsafeuserinputbuffer, PFN_WDFREQUESTRETRIEVEUNSAFEUSERINPUTBUFFER, WdfRequestRetrieveUnsafeUserInputBuffer method, DFRequestObjectRef_0ac5a2ff-74b6-4e9c-9a3e-0038c3e1420a.xml, wdfrequest/WdfRequestRetrieveUnsafeUserInputBuffer
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfrequest.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : BufAfterReqCompletedIntIoctl, BufAfterReqCompletedIntIoctlA, BufAfterReqCompletedIoctl, BufAfterReqCompletedIoctlA, BufAfterReqCompletedRead, BufAfterReqCompletedWrite, BufAfterReqCompletedWriteA, DriverCreate, InputBufferAPI, InvalidReqAccess, InvalidReqAccessLocal, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_REQUEST_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfrequest.WdfRequestRetrieveUnsafeUserInputBuffer
+title: WdfRequestRetrieveUnsafeUserInputBuffer function
+author: windows-driver-content
+description: The WdfRequestRetrieveUnsafeUserInputBuffer method retrieves an I/O request's input buffer, if the request's technique for accessing data buffers is neither buffered nor direct I/O.
+old-location: wdf\wdfrequestretrieveunsafeuserinputbuffer.htm
+old-project: wdf
+ms.assetid: 0a5e141d-2ef5-482c-8470-560411241510
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WdfRequestRetrieveUnsafeUserInputBuffer, wdf.wdfrequestretrieveunsafeuserinputbuffer, kmdf.wdfrequestretrieveunsafeuserinputbuffer, PFN_WDFREQUESTRETRIEVEUNSAFEUSERINPUTBUFFER, WdfRequestRetrieveUnsafeUserInputBuffer method, DFRequestObjectRef_0ac5a2ff-74b6-4e9c-9a3e-0038c3e1420a.xml, wdfrequest/WdfRequestRetrieveUnsafeUserInputBuffer
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfrequest.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: BufAfterReqCompletedIntIoctl, BufAfterReqCompletedIntIoctlA, BufAfterReqCompletedIoctl, BufAfterReqCompletedIoctlA, BufAfterReqCompletedRead, BufAfterReqCompletedWrite, BufAfterReqCompletedWriteA, DriverCreate, InputBufferAPI, InvalidReqAccess, InvalidReqAccessLocal, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfRequestRetrieveUnsafeUserInputBuffer
+product: Windows
+targetos: Windows
+req.typenames: WDF_REQUEST_TYPE
+req.product: Windows 10 or later.
 ---
 
 

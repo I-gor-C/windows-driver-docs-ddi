@@ -1,42 +1,47 @@
 ---
-UID : NF:wdbgexts.GetPebAddress
-title : GetPebAddress function
-author : windows-driver-content
-description : The GetPebAddress function returns the address of the process environment block (PEB) for a system process.
-old-location : debugger\getpebaddress.htm
-old-project : debugger
-ms.assetid : 314eb897-a441-41c7-8b74-a853de70e066
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : GetPebAddress, GetPebAddress function [Windows Debugging], debugger.getpebaddress, wdbgexts/GetPebAddress, WdbgExts_Ref_a51cb865-4701-4fbc-a075-7bcadd8ee8be.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdbgexts.h
-req.include-header : Wdbgexts.h, Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXT_TDOP
-req.product : Windows 10 or later.
+UID: NF:wdbgexts.GetPebAddress
+title: GetPebAddress function
+author: windows-driver-content
+description: The GetPebAddress function returns the address of the process environment block (PEB) for a system process.
+old-location: debugger\getpebaddress.htm
+old-project: debugger
+ms.assetid: 314eb897-a441-41c7-8b74-a853de70e066
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: GetPebAddress, GetPebAddress function [Windows Debugging], debugger.getpebaddress, wdbgexts/GetPebAddress, WdbgExts_Ref_a51cb865-4701-4fbc-a075-7bcadd8ee8be.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdbgexts.h
+req.include-header: Wdbgexts.h, Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdbgexts.h
+apiname:
+-	GetPebAddress
+product: Windows
+targetos: Windows
+req.typenames: EXT_TDOP
+req.product: Windows 10 or later.
 ---
 
 

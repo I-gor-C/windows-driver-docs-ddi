@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IPnpCallbackHardwareInterrupt.OnD0ExitPreInterruptsDisabled
-title : IPnpCallbackHardwareInterrupt::OnD0ExitPreInterruptsDisabled method
-author : windows-driver-content
-description : A driver's OnD0ExitPreInterruptsDisabled event callback function performs device-specific operations that are required before the driver disables the device's hardware interrupts.
-old-location : wdf\ipnpcallbackhardwareinterrupt_ond0exitpreinterruptsdisabled.htm
-old-project : wdf
-ms.assetid : C67EA467-D344-44D0-93E8-29D29A3A586B
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wudfddi/IPnpCallbackHardwareInterrupt::OnD0ExitPreInterruptsDisabled, wdf.ipnpcallbackhardwareinterrupt_ond0exitpreinterruptsdisabled, OnD0ExitPreInterruptsDisabled, IPnpCallbackHardwareInterrupt interface, OnD0ExitPreInterruptsDisabled method, OnD0ExitPreInterruptsDisabled method, IPnpCallbackHardwareInterrupt, IPnpCallbackHardwareInterrupt::OnD0ExitPreInterruptsDisabled, umdf.ipnpcallbackhardwareinterrupt_ond0exitpreinterruptsdisabled, OnD0ExitPreInterruptsDisabled method, IPnpCallbackHardwareInterrupt interface
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.11
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IPnpCallbackHardwareInterrupt.OnD0ExitPreInterruptsDisabled
+title: IPnpCallbackHardwareInterrupt::OnD0ExitPreInterruptsDisabled method
+author: windows-driver-content
+description: A driver's OnD0ExitPreInterruptsDisabled event callback function performs device-specific operations that are required before the driver disables the device's hardware interrupts.
+old-location: wdf\ipnpcallbackhardwareinterrupt_ond0exitpreinterruptsdisabled.htm
+old-project: wdf
+ms.assetid: C67EA467-D344-44D0-93E8-29D29A3A586B
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wudfddi/IPnpCallbackHardwareInterrupt::OnD0ExitPreInterruptsDisabled, wdf.ipnpcallbackhardwareinterrupt_ond0exitpreinterruptsdisabled, OnD0ExitPreInterruptsDisabled, IPnpCallbackHardwareInterrupt interface, OnD0ExitPreInterruptsDisabled method, OnD0ExitPreInterruptsDisabled method, IPnpCallbackHardwareInterrupt, IPnpCallbackHardwareInterrupt::OnD0ExitPreInterruptsDisabled, umdf.ipnpcallbackhardwareinterrupt_ond0exitpreinterruptsdisabled, OnD0ExitPreInterruptsDisabled method, IPnpCallbackHardwareInterrupt interface
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.11
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Wudfddi.h
+apiname:
+-	IPnpCallbackHardwareInterrupt.OnD0ExitPreInterruptsDisabled
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

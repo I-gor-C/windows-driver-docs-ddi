@@ -1,41 +1,46 @@
 ---
-UID : NF:ks.KsFilterFactoryRegisterAggregatedClientUnknown
-title : KsFilterFactoryRegisterAggregatedClientUnknown function
-author : windows-driver-content
-description : This inline function is a wrapper for KsRegisterAggregatedClientUnknown.
-old-location : stream\ksfilterfactoryregisteraggregatedclientunknown.htm
-old-project : stream
-ms.assetid : 7750a0f5-f38d-4530-81dc-589a1c2009ca
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.ksfilterfactoryregisteraggregatedclientunknown, KsFilterFactoryRegisterAggregatedClientUnknown function [Streaming Media Devices], avfunc_03ec0abd-d481-4b97-b8ab-6be504e95a55.xml, ks/KsFilterFactoryRegisterAggregatedClientUnknown, KsFilterFactoryRegisterAggregatedClientUnknown
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsFilterFactoryRegisterAggregatedClientUnknown
+title: KsFilterFactoryRegisterAggregatedClientUnknown function
+author: windows-driver-content
+description: This inline function is a wrapper for KsRegisterAggregatedClientUnknown.
+old-location: stream\ksfilterfactoryregisteraggregatedclientunknown.htm
+old-project: stream
+ms.assetid: 7750a0f5-f38d-4530-81dc-589a1c2009ca
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.ksfilterfactoryregisteraggregatedclientunknown, KsFilterFactoryRegisterAggregatedClientUnknown function [Streaming Media Devices], avfunc_03ec0abd-d481-4b97-b8ab-6be504e95a55.xml, ks/KsFilterFactoryRegisterAggregatedClientUnknown, KsFilterFactoryRegisterAggregatedClientUnknown
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	KsFilterFactoryRegisterAggregatedClientUnknown
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

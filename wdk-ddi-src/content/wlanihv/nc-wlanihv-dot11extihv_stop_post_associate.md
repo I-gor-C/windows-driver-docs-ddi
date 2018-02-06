@@ -1,42 +1,47 @@
 ---
-UID : NC:wlanihv.DOT11EXTIHV_STOP_POST_ASSOCIATE
-title : DOT11EXTIHV_STOP_POST_ASSOCIATE
-author : windows-driver-content
-description : Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
-old-location : netvista\dot11extihvstoppostassociate.htm
-old-project : netvista
-ms.assetid : bd924049-3932-4e85-908e-c3fb488b3a8c
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.dot11extihvstoppostassociate, Dot11ExtIhvStopPostAssociate callback function [Network Drivers Starting with Windows Vista], Dot11ExtIhvStopPostAssociate, DOT11EXTIHV_STOP_POST_ASSOCIATE, DOT11EXTIHV_STOP_POST_ASSOCIATE, wlanihv/Dot11ExtIhvStopPostAssociate, Native_802.11_IHV_Ext_674652ff-a01d-493b-9b11-bff378f25f2a.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wlanihv.h
-req.include-header : Wlanihv.h, Windot11.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating   systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDRIVER_INFO_8W, DRIVER_INFO_8W, *LPDRIVER_INFO_8W"
-req.product : Windows 10 or later.
+UID: NC:wlanihv.DOT11EXTIHV_STOP_POST_ASSOCIATE
+title: DOT11EXTIHV_STOP_POST_ASSOCIATE
+author: windows-driver-content
+description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+old-location: netvista\dot11extihvstoppostassociate.htm
+old-project: netvista
+ms.assetid: bd924049-3932-4e85-908e-c3fb488b3a8c
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.dot11extihvstoppostassociate, Dot11ExtIhvStopPostAssociate callback function [Network Drivers Starting with Windows Vista], Dot11ExtIhvStopPostAssociate, DOT11EXTIHV_STOP_POST_ASSOCIATE, DOT11EXTIHV_STOP_POST_ASSOCIATE, wlanihv/Dot11ExtIhvStopPostAssociate, Native_802.11_IHV_Ext_674652ff-a01d-493b-9b11-bff378f25f2a.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wlanihv.h
+req.include-header: Wlanihv.h, Windot11.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	wlanihv.h
+apiname:
+-	Dot11ExtIhvStopPostAssociate
+product: Windows
+targetos: Windows
+req.typenames: "*PDRIVER_INFO_8W, DRIVER_INFO_8W, *LPDRIVER_INFO_8W"
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,47 @@
 ---
-UID : NF:hidpi.HidP_GetExtendedAttributes
-title : HidP_GetExtendedAttributes function
-author : windows-driver-content
-description : The HidP_GetExtendedAttributes routine returns the extended attributes of a HID control.
-old-location : hid\hidp_getextendedattributes.htm
-old-project : hid
-ms.assetid : 97a8822f-ed0c-43ae-8b4e-08642558773d
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : hid.hidp_getextendedattributes, HidP_GetExtendedAttributes, HidP_GetExtendedAttributes routine [Human Input Devices], hidpi/HidP_GetExtendedAttributes, hidfunc_2870ef44-8659-4c02-9fc6-659581684253.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : hidpi.h
-req.include-header : Hidpi.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 2000 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Hidparse.lib
-req.dll : 
-req.irql : "<= DISPATCH_ LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HIDP_REPORT_TYPE
+UID: NF:hidpi.HidP_GetExtendedAttributes
+title: HidP_GetExtendedAttributes function
+author: windows-driver-content
+description: The HidP_GetExtendedAttributes routine returns the extended attributes of a HID control.
+old-location: hid\hidp_getextendedattributes.htm
+old-project: hid
+ms.assetid: 97a8822f-ed0c-43ae-8b4e-08642558773d
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: hid.hidp_getextendedattributes, HidP_GetExtendedAttributes, HidP_GetExtendedAttributes routine [Human Input Devices], hidpi/HidP_GetExtendedAttributes, hidfunc_2870ef44-8659-4c02-9fc6-659581684253.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: hidpi.h
+req.include-header: Hidpi.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 2000 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Hidparse.lib
+req.dll: 
+req.irql: "<= DISPATCH_ LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Hidparse.lib
+-	Hidparse.dll
+apiname:
+-	HidP_GetExtendedAttributes
+product: Windows
+targetos: Windows
+req.typenames: HIDP_REPORT_TYPE
 ---
 
 

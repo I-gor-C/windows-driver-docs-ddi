@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltQueryQuotaInformationFile
-title : FltQueryQuotaInformationFile function
-author : windows-driver-content
-description : The FltQueryQuotaInformationFile routine retrieves quota entries associated with a file object.
-old-location : ifsk\fltqueryquotainformationfile.htm
-old-project : ifsk
-ms.assetid : B460BE83-7050-469A-9AD6-68A47F03EB4B
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : fltkernel/FltQueryQuotaInformationFile, FltQueryQuotaInformationFile function [Installable File System Drivers], ifsk.fltqueryquotainformationfile, FltQueryQuotaInformationFile
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with  Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltQueryQuotaInformationFile
+title: FltQueryQuotaInformationFile function
+author: windows-driver-content
+description: The FltQueryQuotaInformationFile routine retrieves quota entries associated with a file object.
+old-location: ifsk\fltqueryquotainformationfile.htm
+old-project: ifsk
+ms.assetid: B460BE83-7050-469A-9AD6-68A47F03EB4B
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: fltkernel/FltQueryQuotaInformationFile, FltQueryQuotaInformationFile function [Installable File System Drivers], ifsk.fltqueryquotainformationfile, FltQueryQuotaInformationFile
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with  Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltQueryQuotaInformationFile
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NF:hbaapi.HBA_GetVendorLibraryAttributes
-title : HBA_GetVendorLibraryAttributes function
-author : windows-driver-content
-description : The HBA_GetVendorLibraryAttributes routine retrieves the vendor-specific attributes of the fibre channel HBA API library.
-old-location : storage\hba_getvendorlibraryattributes.htm
-old-project : storage
-ms.assetid : 43c55364-1f73-4413-99fb-27c85600d7a6
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : hbaapi/HBA_GetVendorLibraryAttributes, HBA_GetVendorLibraryAttributes, HBA_GetVendorLibraryAttributes routine [Storage Devices], fibreHBA_rtns_d690dcf4-4ef6-4aea-80dc-846649ed3142.xml, storage.hba_getvendorlibraryattributes
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : hbaapi.h
-req.include-header : Hbaapi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Hbaapi.lib
-req.dll : Hbaapi.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HBA_WWNTYPE
+UID: NF:hbaapi.HBA_GetVendorLibraryAttributes
+title: HBA_GetVendorLibraryAttributes function
+author: windows-driver-content
+description: The HBA_GetVendorLibraryAttributes routine retrieves the vendor-specific attributes of the fibre channel HBA API library.
+old-location: storage\hba_getvendorlibraryattributes.htm
+old-project: storage
+ms.assetid: 43c55364-1f73-4413-99fb-27c85600d7a6
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: hbaapi/HBA_GetVendorLibraryAttributes, HBA_GetVendorLibraryAttributes, HBA_GetVendorLibraryAttributes routine [Storage Devices], fibreHBA_rtns_d690dcf4-4ef6-4aea-80dc-846649ed3142.xml, storage.hba_getvendorlibraryattributes
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: hbaapi.h
+req.include-header: Hbaapi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Hbaapi.lib
+req.dll: Hbaapi.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Hbaapi.dll
+apiname:
+-	HBA_GetVendorLibraryAttributes
+product: Windows
+targetos: Windows
+req.typenames: HBA_WWNTYPE
 ---
 
 

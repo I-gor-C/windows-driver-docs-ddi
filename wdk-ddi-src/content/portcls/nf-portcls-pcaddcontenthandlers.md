@@ -1,41 +1,47 @@
 ---
-UID : NF:portcls.PcAddContentHandlers
-title : PcAddContentHandlers function
-author : windows-driver-content
-description : The PcAddContentHandlers function provides the system with a list of functions that handle protected content.
-old-location : audio\pcaddcontenthandlers.htm
-old-project : audio
-ms.assetid : c3ae9de0-3c21-498b-a29c-4ec54677826a
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : portcls/PcAddContentHandlers, audio.pcaddcontenthandlers, PcAddContentHandlers, audpc-routines_11505f52-36d9-4b58-b1f8-44083705f9b5.xml, PcAddContentHandlers function [Audio Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : portcls.h
-req.include-header : Portcls.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting in Windows XP.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Portcls.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.PcAddContentHandlers
+title: PcAddContentHandlers function
+author: windows-driver-content
+description: The PcAddContentHandlers function provides the system with a list of functions that handle protected content.
+old-location: audio\pcaddcontenthandlers.htm
+old-project: audio
+ms.assetid: c3ae9de0-3c21-498b-a29c-4ec54677826a
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: portcls/PcAddContentHandlers, audio.pcaddcontenthandlers, PcAddContentHandlers, audpc-routines_11505f52-36d9-4b58-b1f8-44083705f9b5.xml, PcAddContentHandlers function [Audio Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: portcls.h
+req.include-header: Portcls.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting in Windows XP.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Portcls.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Portcls.lib
+-	Portcls.dll
+apiname:
+-	PcAddContentHandlers
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

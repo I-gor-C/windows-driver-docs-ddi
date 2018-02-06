@@ -1,42 +1,47 @@
 ---
-UID : NF:storport.StorPortGetSystemAddress
-title : StorPortGetSystemAddress function
-author : windows-driver-content
-description : The StorPortGetSystemAddress routine returns a virtual address in system space for the data buffer of the specified SCSI request block (SRB).
-old-location : storage\storportgetsystemaddress.htm
-old-project : storage
-ms.assetid : 28bb26bd-7259-4664-8092-6b9a917c1a91
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storprt_6e6713c8-a235-43b8-a325-2d4b8fca8f35.xml, storport/StorPortGetSystemAddress, StorPortGetSystemAddress routine [Storage Devices], StorPortGetSystemAddress, storage.storportgetsystemaddress
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Universal
-req.target-min-winverclnt : This routine is available starting with Windows Server 2003 with SP2.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : StorPortIrql
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STOR_SPINLOCK
-req.product : Windows 10 or later.
+UID: NF:storport.StorPortGetSystemAddress
+title: StorPortGetSystemAddress function
+author: windows-driver-content
+description: The StorPortGetSystemAddress routine returns a virtual address in system space for the data buffer of the specified SCSI request block (SRB).
+old-location: storage\storportgetsystemaddress.htm
+old-project: storage
+ms.assetid: 28bb26bd-7259-4664-8092-6b9a917c1a91
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storprt_6e6713c8-a235-43b8-a325-2d4b8fca8f35.xml, storport/StorPortGetSystemAddress, StorPortGetSystemAddress routine [Storage Devices], StorPortGetSystemAddress, storage.storportgetsystemaddress
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Universal
+req.target-min-winverclnt: This routine is available starting with Windows Server 2003 with SP2.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: StorPortIrql
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	storport.h
+apiname:
+-	StorPortGetSystemAddress
+product: Windows
+targetos: Windows
+req.typenames: STOR_SPINLOCK
+req.product: Windows 10 or later.
 ---
 
 

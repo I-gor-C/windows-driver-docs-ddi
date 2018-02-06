@@ -1,41 +1,46 @@
 ---
-UID : NC:dispmprt.DXGKCB_MIRACAST_SEND_MESSAGE_CALLBACK
-title : DXGKCB_MIRACAST_SEND_MESSAGE_CALLBACK
-author : windows-driver-content
-description : Called in kernel mode when the message that was sent to the user-mode driver with a call to the DxgkCbMiracastSendMessage function has completed or has been canceled.
-old-location : display\dxgkcbmiracastsendmessagecallback.htm
-old-project : display
-ms.assetid : 2DD7D46A-2E2B-482D-BFD6-D0AFD975107E
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkcbmiracastsendmessagecallback, DxgkCbMiracastSendMessageCallback callback function [Display Devices], DxgkCbMiracastSendMessageCallback, DXGKCB_MIRACAST_SEND_MESSAGE_CALLBACK, DXGKCB_MIRACAST_SEND_MESSAGE_CALLBACK, dispmprt/DxgkCbMiracastSendMessageCallback
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : dispmprt.h
-req.include-header : Dispmprt.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8.1
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
+UID: NC:dispmprt.DXGKCB_MIRACAST_SEND_MESSAGE_CALLBACK
+title: DXGKCB_MIRACAST_SEND_MESSAGE_CALLBACK
+author: windows-driver-content
+description: Called in kernel mode when the message that was sent to the user-mode driver with a call to the DxgkCbMiracastSendMessage function has completed or has been canceled.
+old-location: display\dxgkcbmiracastsendmessagecallback.htm
+old-project: display
+ms.assetid: 2DD7D46A-2E2B-482D-BFD6-D0AFD975107E
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkcbmiracastsendmessagecallback, DxgkCbMiracastSendMessageCallback callback function [Display Devices], DxgkCbMiracastSendMessageCallback, DXGKCB_MIRACAST_SEND_MESSAGE_CALLBACK, DXGKCB_MIRACAST_SEND_MESSAGE_CALLBACK, dispmprt/DxgkCbMiracastSendMessageCallback
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: dispmprt.h
+req.include-header: Dispmprt.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8.1
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Dispmprt.h
+apiname:
+-	DxgkCbMiracastSendMessageCallback
+product: Windows
+targetos: Windows
+req.typenames: SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ---
 
 

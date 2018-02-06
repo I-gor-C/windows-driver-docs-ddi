@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.KSPROPERTY_TUNER_CAPS_S
-title : KSPROPERTY_TUNER_CAPS_S
-author : windows-driver-content
-description : The KSPROPERTY_TUNER_CAPS_S structure describes the hardware capabilities of TV and radio tuning devices.
-old-location : stream\ksproperty_tuner_caps_s.htm
-old-project : stream
-ms.assetid : 9d58acda-07b6-4dc2-8f6a-83c6e8bd8e44
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.ksproperty_tuner_caps_s, KSPROPERTY_TUNER_CAPS_S structure [Streaming Media Devices], ksmedia/PKSPROPERTY_TUNER_CAPS_S, vidcapstruct_28e3b0b2-5b4e-404a-8ade-d5d9c1870ae5.xml, KSPROPERTY_TUNER_CAPS_S, ksmedia/KSPROPERTY_TUNER_CAPS_S, PKSPROPERTY_TUNER_CAPS_S structure pointer [Streaming Media Devices], *PKSPROPERTY_TUNER_CAPS_S, PKSPROPERTY_TUNER_CAPS_S
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KSPROPERTY_TUNER_CAPS_S, *PKSPROPERTY_TUNER_CAPS_S
+UID: NS:ksmedia.KSPROPERTY_TUNER_CAPS_S
+title: KSPROPERTY_TUNER_CAPS_S
+author: windows-driver-content
+description: The KSPROPERTY_TUNER_CAPS_S structure describes the hardware capabilities of TV and radio tuning devices.
+old-location: stream\ksproperty_tuner_caps_s.htm
+old-project: stream
+ms.assetid: 9d58acda-07b6-4dc2-8f6a-83c6e8bd8e44
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.ksproperty_tuner_caps_s, KSPROPERTY_TUNER_CAPS_S structure [Streaming Media Devices], ksmedia/PKSPROPERTY_TUNER_CAPS_S, vidcapstruct_28e3b0b2-5b4e-404a-8ade-d5d9c1870ae5.xml, KSPROPERTY_TUNER_CAPS_S, ksmedia/KSPROPERTY_TUNER_CAPS_S, PKSPROPERTY_TUNER_CAPS_S structure pointer [Streaming Media Devices], *PKSPROPERTY_TUNER_CAPS_S, PKSPROPERTY_TUNER_CAPS_S
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	KSPROPERTY_TUNER_CAPS_S
+product: Windows
+targetos: Windows
+req.typenames: KSPROPERTY_TUNER_CAPS_S, *PKSPROPERTY_TUNER_CAPS_S
 ---
 
 # KSPROPERTY_TUNER_CAPS_S structure

@@ -1,41 +1,46 @@
 ---
-UID : NS:dispmprt._KMDDOD_INITIALIZATION_DATA
-title : "_KMDDOD_INITIALIZATION_DATA"
-author : windows-driver-content
-description : Contains pointers to functions implemented by a kernel mode display-only driver (KMDOD). The KMDOD's DriverEntry function provides the Microsoft DirectX graphics kernel subsystem with entry points by filling in the members of this structure.
-old-location : display\kmddod_initialization_data.htm
-old-project : display
-ms.assetid : 04c1ece1-1c8f-40eb-8437-ac2fe1445095
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : KMDDOD_INITIALIZATION_DATA, display.kmddod_initialization_data, PKMDDOD_INITIALIZATION_DATA, dispmprt/KMDDOD_INITIALIZATION_DATA, PKMDDOD_INITIALIZATION_DATA structure pointer [Display Devices], _KMDDOD_INITIALIZATION_DATA, dispmprt/PKMDDOD_INITIALIZATION_DATA, *PKMDDOD_INITIALIZATION_DATA, KMDDOD_INITIALIZATION_DATA structure [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : dispmprt.h
-req.include-header : Dispmprt.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKMDDOD_INITIALIZATION_DATA, KMDDOD_INITIALIZATION_DATA"
+UID: NS:dispmprt._KMDDOD_INITIALIZATION_DATA
+title: "_KMDDOD_INITIALIZATION_DATA"
+author: windows-driver-content
+description: Contains pointers to functions implemented by a kernel mode display-only driver (KMDOD). The KMDOD's DriverEntry function provides the Microsoft DirectX graphics kernel subsystem with entry points by filling in the members of this structure.
+old-location: display\kmddod_initialization_data.htm
+old-project: display
+ms.assetid: 04c1ece1-1c8f-40eb-8437-ac2fe1445095
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: KMDDOD_INITIALIZATION_DATA, display.kmddod_initialization_data, PKMDDOD_INITIALIZATION_DATA, dispmprt/KMDDOD_INITIALIZATION_DATA, PKMDDOD_INITIALIZATION_DATA structure pointer [Display Devices], _KMDDOD_INITIALIZATION_DATA, dispmprt/PKMDDOD_INITIALIZATION_DATA, *PKMDDOD_INITIALIZATION_DATA, KMDDOD_INITIALIZATION_DATA structure [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: dispmprt.h
+req.include-header: Dispmprt.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Dispmprt.h
+apiname:
+-	KMDDOD_INITIALIZATION_DATA
+product: Windows
+targetos: Windows
+req.typenames: "*PKMDDOD_INITIALIZATION_DATA, KMDDOD_INITIALIZATION_DATA"
 ---
 
 # _KMDDOD_INITIALIZATION_DATA structure

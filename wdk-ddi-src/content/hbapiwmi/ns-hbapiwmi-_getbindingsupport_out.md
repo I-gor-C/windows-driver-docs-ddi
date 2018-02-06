@@ -1,41 +1,46 @@
 ---
-UID : NS:hbapiwmi._GetBindingSupport_OUT
-title : "_GetBindingSupport_OUT"
-author : windows-driver-content
-description : The GetBindingSupport_OUT structure is used by a WMI provider to report the output parameter data of the GetBindingSupport WMI method to the WMI client.
-old-location : storage\getbindingsupport_out.htm
-old-project : storage
-ms.assetid : cd67b301-a94a-41dd-9c06-e6c674ea9173
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : "_GetBindingSupport_OUT, structs-Fibre_1db0b747-ead3-461f-a7ab-c8150f92623a.xml, GetBindingSupport_OUT structure [Storage Devices], hbapiwmi/PGetBindingSupport_OUT, PGetBindingSupport_OUT, storage.getbindingsupport_out, hbapiwmi/GetBindingSupport_OUT, PGetBindingSupport_OUT structure pointer [Storage Devices], GetBindingSupport_OUT, *PGetBindingSupport_OUT"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : hbapiwmi.h
-req.include-header : Hbapiwmi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : GetBindingSupport_OUT, *PGetBindingSupport_OUT
+UID: NS:hbapiwmi._GetBindingSupport_OUT
+title: "_GetBindingSupport_OUT"
+author: windows-driver-content
+description: The GetBindingSupport_OUT structure is used by a WMI provider to report the output parameter data of the GetBindingSupport WMI method to the WMI client.
+old-location: storage\getbindingsupport_out.htm
+old-project: storage
+ms.assetid: cd67b301-a94a-41dd-9c06-e6c674ea9173
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: "_GetBindingSupport_OUT, structs-Fibre_1db0b747-ead3-461f-a7ab-c8150f92623a.xml, GetBindingSupport_OUT structure [Storage Devices], hbapiwmi/PGetBindingSupport_OUT, PGetBindingSupport_OUT, storage.getbindingsupport_out, hbapiwmi/GetBindingSupport_OUT, PGetBindingSupport_OUT structure pointer [Storage Devices], GetBindingSupport_OUT, *PGetBindingSupport_OUT"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: hbapiwmi.h
+req.include-header: Hbapiwmi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hbapiwmi.h
+apiname:
+-	GetBindingSupport_OUT
+product: Windows
+targetos: Windows
+req.typenames: GetBindingSupport_OUT, *PGetBindingSupport_OUT
 ---
 
 # _GetBindingSupport_OUT structure

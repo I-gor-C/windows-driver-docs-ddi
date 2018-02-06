@@ -1,41 +1,46 @@
 ---
-UID : NS:hbapiwmi._ScsiInquiry_IN
-title : "_ScsiInquiry_IN"
-author : windows-driver-content
-description : The ScsiInquiry_IN structure is used by a miniport driver to deliver input parameter data to the ScsiInquiry WMI method.
-old-location : storage\scsiinquiry_in2.htm
-old-project : storage
-ms.assetid : f7690483-8269-4fb4-9960-9abdbb128b94
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : ScsiInquiry_IN, PScsiInquiry_IN structure pointer [Storage Devices], PScsiInquiry_IN, structs-Fibre_b1f0d146-5bc7-4d98-b97e-ec508b4023c9.xml, storage.scsiinquiry_in2, *PScsiInquiry_IN, ScsiInquiry_IN structure [Storage Devices], _ScsiInquiry_IN, hbapiwmi/PScsiInquiry_IN, hbapiwmi/ScsiInquiry_IN
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : hbapiwmi.h
-req.include-header : Hbapiwmi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : ScsiInquiry_IN, *PScsiInquiry_IN
+UID: NS:hbapiwmi._ScsiInquiry_IN
+title: "_ScsiInquiry_IN"
+author: windows-driver-content
+description: The ScsiInquiry_IN structure is used by a miniport driver to deliver input parameter data to the ScsiInquiry WMI method.
+old-location: storage\scsiinquiry_in2.htm
+old-project: storage
+ms.assetid: f7690483-8269-4fb4-9960-9abdbb128b94
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: ScsiInquiry_IN, PScsiInquiry_IN structure pointer [Storage Devices], PScsiInquiry_IN, structs-Fibre_b1f0d146-5bc7-4d98-b97e-ec508b4023c9.xml, storage.scsiinquiry_in2, *PScsiInquiry_IN, ScsiInquiry_IN structure [Storage Devices], _ScsiInquiry_IN, hbapiwmi/PScsiInquiry_IN, hbapiwmi/ScsiInquiry_IN
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: hbapiwmi.h
+req.include-header: Hbapiwmi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Hbapiwmi.h
+apiname:
+-	ScsiInquiry_IN
+product: Windows
+targetos: Windows
+req.typenames: ScsiInquiry_IN, *PScsiInquiry_IN
 ---
 
 # _ScsiInquiry_IN structure

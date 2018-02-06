@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddtape._TAPE_SET_POSITION
-title : "_TAPE_SET_POSITION"
-author : windows-driver-content
-description : The TAPE_SET_POSITION structure is used in conjunction with the IOCTL_TAPE_SET_POSITION request to move the current position on the tape to the specified partition and offset.
-old-location : storage\tape_set_position.htm
-old-project : storage
-ms.assetid : c9f462b2-4b56-4138-a374-9e9d3e1ae295
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : "_TAPE_SET_POSITION, ntddtape/TAPE_SET_POSITION, structs-tape_412b4b85-a0b5-4372-a32c-fa7ac5a6f33a.xml, TAPE_SET_POSITION, PTAPE_SET_POSITION, *PTAPE_SET_POSITION, ntddtape/PTAPE_SET_POSITION, storage.tape_set_position, PTAPE_SET_POSITION structure pointer [Storage Devices], TAPE_SET_POSITION structure [Storage Devices]"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddtape.h
-req.include-header : Ntddtape.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PTAPE_SET_POSITION, TAPE_SET_POSITION"
+UID: NS:ntddtape._TAPE_SET_POSITION
+title: "_TAPE_SET_POSITION"
+author: windows-driver-content
+description: The TAPE_SET_POSITION structure is used in conjunction with the IOCTL_TAPE_SET_POSITION request to move the current position on the tape to the specified partition and offset.
+old-location: storage\tape_set_position.htm
+old-project: storage
+ms.assetid: c9f462b2-4b56-4138-a374-9e9d3e1ae295
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: "_TAPE_SET_POSITION, ntddtape/TAPE_SET_POSITION, structs-tape_412b4b85-a0b5-4372-a32c-fa7ac5a6f33a.xml, TAPE_SET_POSITION, PTAPE_SET_POSITION, *PTAPE_SET_POSITION, ntddtape/PTAPE_SET_POSITION, storage.tape_set_position, PTAPE_SET_POSITION structure pointer [Storage Devices], TAPE_SET_POSITION structure [Storage Devices]"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddtape.h
+req.include-header: Ntddtape.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddtape.h
+apiname:
+-	TAPE_SET_POSITION
+product: Windows
+targetos: Windows
+req.typenames: "*PTAPE_SET_POSITION, TAPE_SET_POSITION"
 ---
 
 # _TAPE_SET_POSITION structure

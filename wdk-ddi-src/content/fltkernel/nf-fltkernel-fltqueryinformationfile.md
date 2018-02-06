@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltQueryInformationFile
-title : FltQueryInformationFile function
-author : windows-driver-content
-description : FltQueryInformationFile retrieves information for a given file.
-old-location : ifsk\fltqueryinformationfile.htm
-old-project : ifsk
-ms.assetid : f80750fb-4561-4617-bc54-1360b2e93a68
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.fltqueryinformationfile, fltkernel/FltQueryInformationFile, FltQueryInformationFile function [Installable File System Drivers], FltApiRef_p_to_z_f6c70c3b-4b99-4ae9-ba01-789c4d3ab1c3.xml, FltQueryInformationFile
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltQueryInformationFile
+title: FltQueryInformationFile function
+author: windows-driver-content
+description: FltQueryInformationFile retrieves information for a given file.
+old-location: ifsk\fltqueryinformationfile.htm
+old-project: ifsk
+ms.assetid: f80750fb-4561-4617-bc54-1360b2e93a68
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.fltqueryinformationfile, fltkernel/FltQueryInformationFile, FltQueryInformationFile function [Installable File System Drivers], FltApiRef_p_to_z_f6c70c3b-4b99-4ae9-ba01-789c4d3ab1c3.xml, FltQueryInformationFile
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltQueryInformationFile
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

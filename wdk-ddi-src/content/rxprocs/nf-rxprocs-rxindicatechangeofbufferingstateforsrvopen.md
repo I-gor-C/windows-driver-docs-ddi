@@ -1,42 +1,47 @@
 ---
-UID : NF:rxprocs.RxIndicateChangeOfBufferingStateForSrvOpen
-title : RxIndicateChangeOfBufferingStateForSrvOpen function
-author : windows-driver-content
-description : RxIndicateChangeOfBufferingStateForSrvOpen is called to register a change buffering state request (an oplock break indication, for example) for later processing. If the necessary preconditions are satisfied, the oplock is processed further.
-old-location : ifsk\rxindicatechangeofbufferingstateforsrvopen.htm
-old-project : ifsk
-ms.assetid : 70efd8d7-c275-440e-a4df-f41b799a63f0
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : rxprocs/RxIndicateChangeOfBufferingStateForSrvOpen, ifsk.rxindicatechangeofbufferingstateforsrvopen, RxIndicateChangeOfBufferingStateForSrvOpen, rxref_6fc017ff-369c-47c3-8a5c-45f808d1d86c.xml, RxIndicateChangeOfBufferingStateForSrvOpen function [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : rxprocs.h
-req.include-header : Rxprocs.h, Struchdr.h, Fcb.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RX_CONTEXT, *PRX_CONTEXT
-req.product : Windows 10 or later.
+UID: NF:rxprocs.RxIndicateChangeOfBufferingStateForSrvOpen
+title: RxIndicateChangeOfBufferingStateForSrvOpen function
+author: windows-driver-content
+description: RxIndicateChangeOfBufferingStateForSrvOpen is called to register a change buffering state request (an oplock break indication, for example) for later processing. If the necessary preconditions are satisfied, the oplock is processed further.
+old-location: ifsk\rxindicatechangeofbufferingstateforsrvopen.htm
+old-project: ifsk
+ms.assetid: 70efd8d7-c275-440e-a4df-f41b799a63f0
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: rxprocs/RxIndicateChangeOfBufferingStateForSrvOpen, ifsk.rxindicatechangeofbufferingstateforsrvopen, RxIndicateChangeOfBufferingStateForSrvOpen, rxref_6fc017ff-369c-47c3-8a5c-45f808d1d86c.xml, RxIndicateChangeOfBufferingStateForSrvOpen function [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: rxprocs.h
+req.include-header: Rxprocs.h, Struchdr.h, Fcb.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	rxprocs.h
+apiname:
+-	RxIndicateChangeOfBufferingStateForSrvOpen
+product: Windows
+targetos: Windows
+req.typenames: RX_CONTEXT, *PRX_CONTEXT
+req.product: Windows 10 or later.
 ---
 
 

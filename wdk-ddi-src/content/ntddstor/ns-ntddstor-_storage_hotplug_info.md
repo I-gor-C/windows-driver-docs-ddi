@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddstor._STORAGE_HOTPLUG_INFO
-title : "_STORAGE_HOTPLUG_INFO"
-author : windows-driver-content
-description : The STORAGE_HOTPLUG_INFO structure provides hotplug information for a device.
-old-location : storage\storage_hotplug_info.htm
-old-project : storage
-ms.assetid : dcfd5a42-cb76-4386-9f8f-98e0a217c49a
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : STORAGE_HOTPLUG_INFO structure [Storage Devices], *PSTORAGE_HOTPLUG_INFO, storage.storage_hotplug_info, structs-general_36f1b63b-a574-47e7-85b0-10954c2d84d9.xml, STORAGE_HOTPLUG_INFO, PSTORAGE_HOTPLUG_INFO structure pointer [Storage Devices], _STORAGE_HOTPLUG_INFO, ntddstor/PSTORAGE_HOTPLUG_INFO, ntddstor/STORAGE_HOTPLUG_INFO, PSTORAGE_HOTPLUG_INFO
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddstor.h
-req.include-header : Ntddstor.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSTORAGE_HOTPLUG_INFO, STORAGE_HOTPLUG_INFO"
+UID: NS:ntddstor._STORAGE_HOTPLUG_INFO
+title: "_STORAGE_HOTPLUG_INFO"
+author: windows-driver-content
+description: The STORAGE_HOTPLUG_INFO structure provides hotplug information for a device.
+old-location: storage\storage_hotplug_info.htm
+old-project: storage
+ms.assetid: dcfd5a42-cb76-4386-9f8f-98e0a217c49a
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: STORAGE_HOTPLUG_INFO structure [Storage Devices], *PSTORAGE_HOTPLUG_INFO, storage.storage_hotplug_info, structs-general_36f1b63b-a574-47e7-85b0-10954c2d84d9.xml, STORAGE_HOTPLUG_INFO, PSTORAGE_HOTPLUG_INFO structure pointer [Storage Devices], _STORAGE_HOTPLUG_INFO, ntddstor/PSTORAGE_HOTPLUG_INFO, ntddstor/STORAGE_HOTPLUG_INFO, PSTORAGE_HOTPLUG_INFO
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddstor.h
+req.include-header: Ntddstor.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddstor.h
+apiname:
+-	STORAGE_HOTPLUG_INFO
+product: Windows
+targetos: Windows
+req.typenames: "*PSTORAGE_HOTPLUG_INFO, STORAGE_HOTPLUG_INFO"
 ---
 
 # _STORAGE_HOTPLUG_INFO structure

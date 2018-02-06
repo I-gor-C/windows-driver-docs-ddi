@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_CREATESYNCHRONIZATIONOBJECTCB
-title : PFND3DDDI_CREATESYNCHRONIZATIONOBJECTCB
-author : windows-driver-content
-description : The pfnCreateSynchronizationObjectCb function creates a synchronization object that a device context can signal and wait for.
-old-location : display\pfncreatesynchronizationobjectcb.htm
-old-project : display
-ms.assetid : 1b87d3cc-685a-4768-b4fd-dbe0a0cbec37
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.pfncreatesynchronizationobjectcb, pfnCreateSynchronizationObjectCb callback function [Display Devices], pfnCreateSynchronizationObjectCb, PFND3DDDI_CREATESYNCHRONIZATIONOBJECTCB, PFND3DDDI_CREATESYNCHRONIZATIONOBJECTCB, d3dumddi/pfnCreateSynchronizationObjectCb, D3Druntime_Functions_6c4f40ee-12b2-47a8-bbec-8591b730bef5.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_CREATESYNCHRONIZATIONOBJECTCB
+title: PFND3DDDI_CREATESYNCHRONIZATIONOBJECTCB
+author: windows-driver-content
+description: The pfnCreateSynchronizationObjectCb function creates a synchronization object that a device context can signal and wait for.
+old-location: display\pfncreatesynchronizationobjectcb.htm
+old-project: display
+ms.assetid: 1b87d3cc-685a-4768-b4fd-dbe0a0cbec37
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.pfncreatesynchronizationobjectcb, pfnCreateSynchronizationObjectCb callback function [Display Devices], pfnCreateSynchronizationObjectCb, PFND3DDDI_CREATESYNCHRONIZATIONOBJECTCB, PFND3DDDI_CREATESYNCHRONIZATIONOBJECTCB, d3dumddi/pfnCreateSynchronizationObjectCb, D3Druntime_Functions_6c4f40ee-12b2-47a8-bbec-8591b730bef5.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	pfnCreateSynchronizationObjectCb
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

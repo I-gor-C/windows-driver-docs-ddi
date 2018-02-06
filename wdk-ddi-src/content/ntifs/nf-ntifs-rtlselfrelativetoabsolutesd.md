@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.RtlSelfRelativeToAbsoluteSD
-title : RtlSelfRelativeToAbsoluteSD function
-author : windows-driver-content
-description : The RtlSelfRelativeToAbsoluteSD routine creates a new security descriptor in absolute format by using a security descriptor in self-relative format as a template.
-old-location : ifsk\rtlselfrelativetoabsolutesd.htm
-old-project : ifsk
-ms.assetid : 31565c5f-a1f2-4a81-bb91-e30e13f45050
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : RtlSelfRelativeToAbsoluteSD routine [Installable File System Drivers], ntifs/RtlSelfRelativeToAbsoluteSD, ifsk.rtlselfrelativetoabsolutesd, RtlSelfRelativeToAbsoluteSD, rtlref_84aae1db-020b-440b-ab32-ade50a4b47bb.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : This routine is available on Microsoft Windows Server 2003 SP1 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.RtlSelfRelativeToAbsoluteSD
+title: RtlSelfRelativeToAbsoluteSD function
+author: windows-driver-content
+description: The RtlSelfRelativeToAbsoluteSD routine creates a new security descriptor in absolute format by using a security descriptor in self-relative format as a template.
+old-location: ifsk\rtlselfrelativetoabsolutesd.htm
+old-project: ifsk
+ms.assetid: 31565c5f-a1f2-4a81-bb91-e30e13f45050
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: RtlSelfRelativeToAbsoluteSD routine [Installable File System Drivers], ntifs/RtlSelfRelativeToAbsoluteSD, ifsk.rtlselfrelativetoabsolutesd, RtlSelfRelativeToAbsoluteSD, rtlref_84aae1db-020b-440b-ab32-ade50a4b47bb.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: This routine is available on Microsoft Windows Server 2003 SP1 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	RtlSelfRelativeToAbsoluteSD
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

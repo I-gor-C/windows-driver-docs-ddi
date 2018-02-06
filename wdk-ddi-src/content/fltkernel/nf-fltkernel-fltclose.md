@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltClose
-title : FltClose function
-author : windows-driver-content
-description : FltClose closes a file handle that was opened by FltCreateFile or FltCreateFileEx.
-old-location : ifsk\fltclose.htm
-old-project : ifsk
-ms.assetid : fd5967cc-fb30-4882-9567-4617b9f9e723
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltClose, ifsk.fltclose, fltkernel/FltClose, FltClose function [Installable File System Drivers], FltApiRef_a_to_d_f50e2397-1161-4e6e-9688-2baa417f6845.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltClose
+title: FltClose function
+author: windows-driver-content
+description: FltClose closes a file handle that was opened by FltCreateFile or FltCreateFileEx.
+old-location: ifsk\fltclose.htm
+old-project: ifsk
+ms.assetid: fd5967cc-fb30-4882-9567-4617b9f9e723
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltClose, ifsk.fltclose, fltkernel/FltClose, FltClose function [Installable File System Drivers], FltApiRef_a_to_d_f50e2397-1161-4e6e-9688-2baa417f6845.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltClose
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

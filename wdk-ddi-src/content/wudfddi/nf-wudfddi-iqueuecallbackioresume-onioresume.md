@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IQueueCallbackIoResume.OnIoResume
-title : IQueueCallbackIoResume::OnIoResume method
-author : windows-driver-content
-description : The OnIoResume method resumes the processing of the specified I/O request from the specified queue.
-old-location : wdf\iqueuecallbackioresume_onioresume.htm
-old-project : wdf
-ms.assetid : d34f6e2c-4227-41bb-a1c0-f6206daa700b
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : IQueueCallbackIoResume interface, OnIoResume method, OnIoResume method, OnIoResume, wdf.iqueuecallbackioresume_onioresume, IQueueCallbackIoResume::OnIoResume, OnIoResume method, IQueueCallbackIoResume interface, UMDFQueueObjectRef_fd16ca4e-eccf-49a2-a7f5-bce7e7931a77.xml, umdf.iqueuecallbackioresume_onioresume, wudfddi/IQueueCallbackIoResume::OnIoResume, IQueueCallbackIoResume
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IQueueCallbackIoResume.OnIoResume
+title: IQueueCallbackIoResume::OnIoResume method
+author: windows-driver-content
+description: The OnIoResume method resumes the processing of the specified I/O request from the specified queue.
+old-location: wdf\iqueuecallbackioresume_onioresume.htm
+old-project: wdf
+ms.assetid: d34f6e2c-4227-41bb-a1c0-f6206daa700b
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: IQueueCallbackIoResume interface, OnIoResume method, OnIoResume method, OnIoResume, wdf.iqueuecallbackioresume_onioresume, IQueueCallbackIoResume::OnIoResume, OnIoResume method, IQueueCallbackIoResume interface, UMDFQueueObjectRef_fd16ca4e-eccf-49a2-a7f5-bce7e7931a77.xml, umdf.iqueuecallbackioresume_onioresume, wudfddi/IQueueCallbackIoResume::OnIoResume, IQueueCallbackIoResume
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Wudfddi.h
+apiname:
+-	IQueueCallbackIoResume.OnIoResume
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

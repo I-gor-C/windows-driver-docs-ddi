@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFIoTarget.FormatRequestForIoctl
-title : IWDFIoTarget::FormatRequestForIoctl method
-author : windows-driver-content
-description : The FormatRequestForIoctl method formats an I/O request object for an I/O control operation.
-old-location : wdf\iwdfiotarget_formatrequestforioctl.htm
-old-project : wdf
-ms.assetid : fd0bbd6e-bb23-4d0c-9cac-9bb7657876a0
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : FormatRequestForIoctl, IWDFIoTarget, FormatRequestForIoctl method, IWDFIoTarget interface, UMDFIoTargetObjectRef_9c72ba41-4a3f-4bea-8ca1-bcf04dd033ad.xml, IWDFIoTarget::FormatRequestForIoctl, FormatRequestForIoctl method, wdf.iwdfiotarget_formatrequestforioctl, IWDFIoTarget interface, FormatRequestForIoctl method, wudfddi/IWDFIoTarget::FormatRequestForIoctl, umdf.iwdfiotarget_formatrequestforioctl
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.5
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFIoTarget.FormatRequestForIoctl
+title: IWDFIoTarget::FormatRequestForIoctl method
+author: windows-driver-content
+description: The FormatRequestForIoctl method formats an I/O request object for an I/O control operation.
+old-location: wdf\iwdfiotarget_formatrequestforioctl.htm
+old-project: wdf
+ms.assetid: fd0bbd6e-bb23-4d0c-9cac-9bb7657876a0
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: FormatRequestForIoctl, IWDFIoTarget, FormatRequestForIoctl method, IWDFIoTarget interface, UMDFIoTargetObjectRef_9c72ba41-4a3f-4bea-8ca1-bcf04dd033ad.xml, IWDFIoTarget::FormatRequestForIoctl, FormatRequestForIoctl method, wdf.iwdfiotarget_formatrequestforioctl, IWDFIoTarget interface, FormatRequestForIoctl method, wudfddi/IWDFIoTarget::FormatRequestForIoctl, umdf.iwdfiotarget_formatrequestforioctl
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.5
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFIoTarget.FormatRequestForIoctl
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

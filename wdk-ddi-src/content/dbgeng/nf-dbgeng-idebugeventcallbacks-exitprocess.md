@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugEventCallbacks.ExitProcess
-title : IDebugEventCallbacks::ExitProcess method
-author : windows-driver-content
-description : The ExitProcess callback method is called by the engine when an exit-processdebugging event occurs in the target.
-old-location : debugger\idebugeventcallbacks_exitprocess.htm
-old-project : debugger
-ms.assetid : 050b747e-5570-4e25-81e4-eccdde4f6995
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : dbgeng/IDebugEventCallbacks::ExitProcess, ExitProcess method [Windows Debugging], IDebugEventCallbacks interface, ExitProcess, IDebugEventCallbacks::ExitProcess, IDebugEventCallbacks, ExitProcess method [Windows Debugging], ComCallbacks_bcacc47e-294c-4dfa-a38e-2b57f534d415.xml, debugger.idebugeventcallbacks_exitprocess, IDebugEventCallbacks interface [Windows Debugging], ExitProcess method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugEventCallbacks.ExitProcess
+title: IDebugEventCallbacks::ExitProcess method
+author: windows-driver-content
+description: The ExitProcess callback method is called by the engine when an exit-processdebugging event occurs in the target.
+old-location: debugger\idebugeventcallbacks_exitprocess.htm
+old-project: debugger
+ms.assetid: 050b747e-5570-4e25-81e4-eccdde4f6995
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: dbgeng/IDebugEventCallbacks::ExitProcess, ExitProcess method [Windows Debugging], IDebugEventCallbacks interface, ExitProcess, IDebugEventCallbacks::ExitProcess, IDebugEventCallbacks, ExitProcess method [Windows Debugging], ComCallbacks_bcacc47e-294c-4dfa-a38e-2b57f534d415.xml, debugger.idebugeventcallbacks_exitprocess, IDebugEventCallbacks interface [Windows Debugging], ExitProcess method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugEventCallbacks.ExitProcess
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

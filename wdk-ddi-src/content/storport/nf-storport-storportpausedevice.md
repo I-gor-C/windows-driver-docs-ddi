@@ -1,42 +1,48 @@
 ---
-UID : NF:storport.StorPortPauseDevice
-title : StorPortPauseDevice function
-author : windows-driver-content
-description : The StorPortPauseDevice routine pauses a specific logical unit device for the specified period of time.
-old-location : storage\storportpausedevice.htm
-old-project : storage
-ms.assetid : b656882a-1cc7-45e8-bda4-c1450b599b4b
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storport/StorPortPauseDevice, StorPortPauseDevice, StorPortPauseDevice routine [Storage Devices], storprt_5506e943-789f-49d7-a9bc-c837fcd1bba2.xml, storage.storportpausedevice
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Storport.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STOR_SPINLOCK
-req.product : Windows 10 or later.
+UID: NF:storport.StorPortPauseDevice
+title: StorPortPauseDevice function
+author: windows-driver-content
+description: The StorPortPauseDevice routine pauses a specific logical unit device for the specified period of time.
+old-location: storage\storportpausedevice.htm
+old-project: storage
+ms.assetid: b656882a-1cc7-45e8-bda4-c1450b599b4b
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storport/StorPortPauseDevice, StorPortPauseDevice, StorPortPauseDevice routine [Storage Devices], storprt_5506e943-789f-49d7-a9bc-c837fcd1bba2.xml, storage.storportpausedevice
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Storport.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Storport.lib
+-	Storport.dll
+apiname:
+-	StorPortPauseDevice
+product: Windows
+targetos: Windows
+req.typenames: STOR_SPINLOCK
+req.product: Windows 10 or later.
 ---
 
 

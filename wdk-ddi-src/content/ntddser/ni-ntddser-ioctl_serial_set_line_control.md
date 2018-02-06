@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddser.IOCTL_SERIAL_SET_LINE_CONTROL
-title : IOCTL_SERIAL_SET_LINE_CONTROL
-author : windows-driver-content
-description : The IOCTL_SERIAL_SET_LINE_CONTROL request sets the line control register (LCR). The line control register controls the data size, the number of stop bits, and the parity.
-old-location : serports\ioctl_serial_set_line_control.htm
-old-project : serports
-ms.assetid : 0883b10c-1900-42b1-afc9-1e61effed111
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : serports.ioctl_serial_set_line_control, IOCTL_SERIAL_SET_LINE_CONTROL control code [Serial Ports], IOCTL_SERIAL_SET_LINE_CONTROL, ntddser/IOCTL_SERIAL_SET_LINE_CONTROL, serref_70796be3-dbb8-4918-899d-d3750813aad3.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddser.h
-req.include-header : Ntddser.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SD_REQUEST_FUNCTION
+UID: NI:ntddser.IOCTL_SERIAL_SET_LINE_CONTROL
+title: IOCTL_SERIAL_SET_LINE_CONTROL
+author: windows-driver-content
+description: The IOCTL_SERIAL_SET_LINE_CONTROL request sets the line control register (LCR). The line control register controls the data size, the number of stop bits, and the parity.
+old-location: serports\ioctl_serial_set_line_control.htm
+old-project: serports
+ms.assetid: 0883b10c-1900-42b1-afc9-1e61effed111
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: serports.ioctl_serial_set_line_control, IOCTL_SERIAL_SET_LINE_CONTROL control code [Serial Ports], IOCTL_SERIAL_SET_LINE_CONTROL, ntddser/IOCTL_SERIAL_SET_LINE_CONTROL, serref_70796be3-dbb8-4918-899d-d3750813aad3.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddser.h
+req.include-header: Ntddser.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddser.h
+apiname:
+-	IOCTL_SERIAL_SET_LINE_CONTROL
+product: Windows
+targetos: Windows
+req.typenames: SD_REQUEST_FUNCTION
 ---
 
 # IOCTL_SERIAL_SET_LINE_CONTROL IOCTL

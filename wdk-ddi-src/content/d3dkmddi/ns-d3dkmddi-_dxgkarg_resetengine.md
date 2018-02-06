@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGKARG_RESETENGINE
-title : "_DXGKARG_RESETENGINE"
-author : windows-driver-content
-description : Specifies a node within the physical display adapter that can be reset when the display port driver's GPU scheduler calls the DxgkDdiResetEngine function to request a reset operation.
-old-location : display\dxgkarg_resetengine.htm
-old-project : display
-ms.assetid : a19eea7f-ceaf-47e0-b2dd-46511fcae66f
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : "*INOUT_PDXGKARG_RESETENGINE, display.dxgkarg_resetengine, _DXGKARG_RESETENGINE, d3dkmddi/DXGKARG_RESETENGINE, DXGKARG_RESETENGINE structure [Display Devices], DXGKARG_RESETENGINE"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGKARG_RESETENGINE
+UID: NS:d3dkmddi._DXGKARG_RESETENGINE
+title: "_DXGKARG_RESETENGINE"
+author: windows-driver-content
+description: Specifies a node within the physical display adapter that can be reset when the display port driver's GPU scheduler calls the DxgkDdiResetEngine function to request a reset operation.
+old-location: display\dxgkarg_resetengine.htm
+old-project: display
+ms.assetid: a19eea7f-ceaf-47e0-b2dd-46511fcae66f
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: "*INOUT_PDXGKARG_RESETENGINE, display.dxgkarg_resetengine, _DXGKARG_RESETENGINE, d3dkmddi/DXGKARG_RESETENGINE, DXGKARG_RESETENGINE structure [Display Devices], DXGKARG_RESETENGINE"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	D3dkmddi.h
+apiname:
+-	DXGKARG_RESETENGINE
+product: Windows
+targetos: Windows
+req.typenames: DXGKARG_RESETENGINE
 ---
 
 # _DXGKARG_RESETENGINE structure

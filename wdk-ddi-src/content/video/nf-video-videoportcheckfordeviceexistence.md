@@ -1,42 +1,47 @@
 ---
-UID : NF:video.VideoPortCheckForDeviceExistence
-title : VideoPortCheckForDeviceExistence function
-author : windows-driver-content
-description : The VideoPortCheckForDeviceExistence function determines whether the specified PCI device exists in the system.
-old-location : display\videoportcheckfordeviceexistence.htm
-old-project : display
-ms.assetid : 2e0480a5-39d3-4977-9c0f-508bcf6c29a8
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.videoportcheckfordeviceexistence, video/VideoPortCheckForDeviceExistence, VideoPort_Functions_3cb7198b-a2fe-423c-b0f3-11a154d087af.xml, VideoPortCheckForDeviceExistence function [Display Devices], VideoPortCheckForDeviceExistence
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows XP and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Videoprt.lib
-req.dll : Videoprt.sys
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_PORT_SERVICES
-req.product : Windows 10 or later.
+UID: NF:video.VideoPortCheckForDeviceExistence
+title: VideoPortCheckForDeviceExistence function
+author: windows-driver-content
+description: The VideoPortCheckForDeviceExistence function determines whether the specified PCI device exists in the system.
+old-location: display\videoportcheckfordeviceexistence.htm
+old-project: display
+ms.assetid: 2e0480a5-39d3-4977-9c0f-508bcf6c29a8
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.videoportcheckfordeviceexistence, video/VideoPortCheckForDeviceExistence, VideoPort_Functions_3cb7198b-a2fe-423c-b0f3-11a154d087af.xml, VideoPortCheckForDeviceExistence function [Display Devices], VideoPortCheckForDeviceExistence
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows XP and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Videoprt.lib
+req.dll: Videoprt.sys
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Videoprt.sys
+apiname:
+-	VideoPortCheckForDeviceExistence
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_PORT_SERVICES
+req.product: Windows 10 or later.
 ---
 
 

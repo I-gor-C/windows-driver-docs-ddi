@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmthk._D3DKMT_CREATEDEVICE
-title : "_D3DKMT_CREATEDEVICE"
-author : windows-driver-content
-description : The D3DKMT_CREATEDEVICE structure describes a kernel-mode device context.
-old-location : display\d3dkmt_createdevice.htm
-old-project : display
-ms.assetid : 9a624373-e483-484f-b9d1-f9d7aed1caa8
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : OpenGL_Structs_ed68c4a8-21a9-4754-8909-666a581f7759.xml, D3DKMT_CREATEDEVICE structure [Display Devices], _D3DKMT_CREATEDEVICE, display.d3dkmt_createdevice, D3DKMT_CREATEDEVICE, d3dkmthk/D3DKMT_CREATEDEVICE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_CREATEDEVICE
+UID: NS:d3dkmthk._D3DKMT_CREATEDEVICE
+title: "_D3DKMT_CREATEDEVICE"
+author: windows-driver-content
+description: The D3DKMT_CREATEDEVICE structure describes a kernel-mode device context.
+old-location: display\d3dkmt_createdevice.htm
+old-project: display
+ms.assetid: 9a624373-e483-484f-b9d1-f9d7aed1caa8
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: OpenGL_Structs_ed68c4a8-21a9-4754-8909-666a581f7759.xml, D3DKMT_CREATEDEVICE structure [Display Devices], _D3DKMT_CREATEDEVICE, display.d3dkmt_createdevice, D3DKMT_CREATEDEVICE, d3dkmthk/D3DKMT_CREATEDEVICE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmthk.h
+apiname:
+-	D3DKMT_CREATEDEVICE
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_CREATEDEVICE
 ---
 
 # _D3DKMT_CREATEDEVICE structure

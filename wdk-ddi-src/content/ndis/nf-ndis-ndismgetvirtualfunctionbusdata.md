@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisMGetVirtualFunctionBusData
-title : NdisMGetVirtualFunctionBusData function
-author : windows-driver-content
-description : A miniport driver calls the NdisMGetVirtualFunctionBusData function to read data from the PCI Express (PCIe) configuration space of a specified Virtual Function (VF) on the network adapter.
-old-location : netvista\ndismgetvirtualfunctionbusdata.htm
-old-project : netvista
-ms.assetid : 15e2e1f4-6039-4588-a7ba-bd8aa6b78839
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NdisMGetVirtualFunctionBusData function [Network Drivers Starting with Windows Vista], ndis/NdisMGetVirtualFunctionBusData, netvista.ndismgetvirtualfunctionbusdata, NdisMGetVirtualFunctionBusData
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : None supported,Supported in NDIS 6.30 and later.
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisMGetVirtualFunctionBusData
+title: NdisMGetVirtualFunctionBusData function
+author: windows-driver-content
+description: A miniport driver calls the NdisMGetVirtualFunctionBusData function to read data from the PCI Express (PCIe) configuration space of a specified Virtual Function (VF) on the network adapter.
+old-location: netvista\ndismgetvirtualfunctionbusdata.htm
+old-project: netvista
+ms.assetid: 15e2e1f4-6039-4588-a7ba-bd8aa6b78839
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NdisMGetVirtualFunctionBusData function [Network Drivers Starting with Windows Vista], ndis/NdisMGetVirtualFunctionBusData, netvista.ndismgetvirtualfunctionbusdata, NdisMGetVirtualFunctionBusData
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: None supported,Supported in NDIS 6.30 and later.
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisMGetVirtualFunctionBusData
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

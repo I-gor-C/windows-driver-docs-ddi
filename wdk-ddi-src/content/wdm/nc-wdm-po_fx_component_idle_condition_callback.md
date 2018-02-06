@@ -1,42 +1,47 @@
 ---
-UID : NC:wdm.PO_FX_COMPONENT_IDLE_CONDITION_CALLBACK
-title : PO_FX_COMPONENT_IDLE_CONDITION_CALLBACK
-author : windows-driver-content
-description : The ComponentIdleConditionCallback callback routine notifies the driver that the specified component completed a transition from the active condition to the idle condition.
-old-location : kernel\componentidleconditioncallback.htm
-old-project : kernel
-ms.assetid : 785DF693-DB7A-4675-9F33-200F17093333
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.componentidleconditioncallback, ComponentIdleConditionCallback routine [Kernel-Mode Driver Architecture], ComponentIdleConditionCallback, PO_FX_COMPONENT_IDLE_CONDITION_CALLBACK, PO_FX_COMPONENT_IDLE_CONDITION_CALLBACK, wdm/ComponentIdleConditionCallback
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdm.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Supported starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Called at IRQL <= DISPATCH_LEVEL.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
-req.product : Windows 10 or later.
+UID: NC:wdm.PO_FX_COMPONENT_IDLE_CONDITION_CALLBACK
+title: PO_FX_COMPONENT_IDLE_CONDITION_CALLBACK
+author: windows-driver-content
+description: The ComponentIdleConditionCallback callback routine notifies the driver that the specified component completed a transition from the active condition to the idle condition.
+old-location: kernel\componentidleconditioncallback.htm
+old-project: kernel
+ms.assetid: 785DF693-DB7A-4675-9F33-200F17093333
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.componentidleconditioncallback, ComponentIdleConditionCallback routine [Kernel-Mode Driver Architecture], ComponentIdleConditionCallback, PO_FX_COMPONENT_IDLE_CONDITION_CALLBACK, PO_FX_COMPONENT_IDLE_CONDITION_CALLBACK, wdm/ComponentIdleConditionCallback
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdm.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Supported starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Called at IRQL <= DISPATCH_LEVEL.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Wdm.h
+apiname:
+-	ComponentIdleConditionCallback
+product: Windows
+targetos: Windows
+req.typenames: WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+req.product: Windows 10 or later.
 ---
 
 

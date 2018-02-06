@@ -1,41 +1,46 @@
 ---
-UID : NC:mrx.PMRX_CHKDIR_CALLDOWN
-title : PMRX_CHKDIR_CALLDOWN
-author : windows-driver-content
-description : TheMRxIsValidDirectory routine is called by RDBSS to request that a network mini-redirector check for the existence of a remote directory.
-old-location : ifsk\mrxisvaliddirectory.htm
-old-project : ifsk
-ms.assetid : c52441d8-b273-4e1f-b251-2b35afeda55d
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.mrxisvaliddirectory, MRxIsValidDirectory routine [Installable File System Drivers], MRxIsValidDirectory, PMRX_CHKDIR_CALLDOWN, PMRX_CHKDIR_CALLDOWN, mrx/MRxIsValidDirectory, mrxref_85038658-4d92-4a54-99f1-082fbc61224d.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : mrx.h
-req.include-header : Mrx.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SetDSMCounters_IN, *PSetDSMCounters_IN
+UID: NC:mrx.PMRX_CHKDIR_CALLDOWN
+title: PMRX_CHKDIR_CALLDOWN
+author: windows-driver-content
+description: TheMRxIsValidDirectory routine is called by RDBSS to request that a network mini-redirector check for the existence of a remote directory.
+old-location: ifsk\mrxisvaliddirectory.htm
+old-project: ifsk
+ms.assetid: c52441d8-b273-4e1f-b251-2b35afeda55d
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.mrxisvaliddirectory, MRxIsValidDirectory routine [Installable File System Drivers], MRxIsValidDirectory, PMRX_CHKDIR_CALLDOWN, PMRX_CHKDIR_CALLDOWN, mrx/MRxIsValidDirectory, mrxref_85038658-4d92-4a54-99f1-082fbc61224d.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: mrx.h
+req.include-header: Mrx.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	mrx.h
+apiname:
+-	MRxIsValidDirectory
+product: Windows
+targetos: Windows
+req.typenames: SetDSMCounters_IN, *PSetDSMCounters_IN
 ---
 
 

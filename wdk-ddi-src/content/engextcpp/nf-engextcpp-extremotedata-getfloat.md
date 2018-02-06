@@ -1,41 +1,46 @@
 ---
-UID : NF:engextcpp.ExtRemoteData.GetFloat
-title : ExtRemoteData::GetFloat method
-author : windows-driver-content
-description : The GetFloat method returns a float version of the ExtRemoteData object, which represents the contents of the target's memory.
-old-location : debugger\extremotedata_getfloat.htm
-old-project : debugger
-ms.assetid : f2781f6b-cc3e-427c-8181-908639613270
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : ExtRemoteData, ExtRemoteData class [Windows Debugging], GetFloat method, EngExtCpp_Ref_f1ca75e4-6dea-4237-b76a-04b3af234060.xml, ExtRemoteData::GetFloat, debugger.extremotedata_getfloat, GetFloat method [Windows Debugging], GetFloat method [Windows Debugging], ExtRemoteData class, GetFloat
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : engextcpp.hpp
-req.include-header : Engextcpp.hpp
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : engextcpp.hpp
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SILO_DRIVER_CAPABILITIES, *PSILO_DRIVER_CAPABILITIES
+UID: NF:engextcpp.ExtRemoteData.GetFloat
+title: ExtRemoteData::GetFloat method
+author: windows-driver-content
+description: The GetFloat method returns a float version of the ExtRemoteData object, which represents the contents of the target's memory.
+old-location: debugger\extremotedata_getfloat.htm
+old-project: debugger
+ms.assetid: f2781f6b-cc3e-427c-8181-908639613270
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: ExtRemoteData, ExtRemoteData class [Windows Debugging], GetFloat method, EngExtCpp_Ref_f1ca75e4-6dea-4237-b76a-04b3af234060.xml, ExtRemoteData::GetFloat, debugger.extremotedata_getfloat, GetFloat method [Windows Debugging], GetFloat method [Windows Debugging], ExtRemoteData class, GetFloat
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: engextcpp.hpp
+req.include-header: Engextcpp.hpp
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: engextcpp.hpp
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	engextcpp.hpp
+apiname:
+-	ExtRemoteData.GetFloat
+product: Windows
+targetos: Windows
+req.typenames: SILO_DRIVER_CAPABILITIES, *PSILO_DRIVER_CAPABILITIES
 ---
 
 

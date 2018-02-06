@@ -1,41 +1,46 @@
 ---
-UID : NF:iddcx.IddCxSwapChainFinishedProcessingFrame
-title : IddCxSwapChainFinishedProcessingFrame function
-author : windows-driver-content
-description : An OS callback function the driver calls report all GPU command for processing this frame have been queue.
-old-location : display\iddcxswapchainfinishedprocessingframe.htm
-old-project : display
-ms.assetid : 46c4a592-b3d4-479d-b5db-06202b5be290
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : IddCxSwapChainFinishedProcessingFrame method [Display Devices], display.iddcxswapchainfinishedprocessingframe, iddcx/IddCxSwapChainFinishedProcessingFrame, IddCxSwapChainFinishedProcessingFrame
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : iddcx.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "_Must_inspect_result_"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:iddcx.IddCxSwapChainFinishedProcessingFrame
+title: IddCxSwapChainFinishedProcessingFrame function
+author: windows-driver-content
+description: An OS callback function the driver calls report all GPU command for processing this frame have been queue.
+old-location: display\iddcxswapchainfinishedprocessingframe.htm
+old-project: display
+ms.assetid: 46c4a592-b3d4-479d-b5db-06202b5be290
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: IddCxSwapChainFinishedProcessingFrame method [Display Devices], display.iddcxswapchainfinishedprocessingframe, iddcx/IddCxSwapChainFinishedProcessingFrame, IddCxSwapChainFinishedProcessingFrame
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: iddcx.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "_Must_inspect_result_"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	iddcx.h
+apiname:
+-	IddCxSwapChainFinishedProcessingFrame
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

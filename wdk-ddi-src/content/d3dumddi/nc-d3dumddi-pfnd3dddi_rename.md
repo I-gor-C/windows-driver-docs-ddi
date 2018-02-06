@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_RENAME
-title : PFND3DDDI_RENAME
-author : windows-driver-content
-description : The Rename function informs a user-mode display driver to start using the renamed allocation that the LockAsync function previously returned for the specified resource.
-old-location : display\rename.htm
-old-project : display
-ms.assetid : 60f733e1-d376-4372-b1cc-39508b3a98e5
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.rename, Rename callback function [Display Devices], Rename, PFND3DDDI_RENAME, PFND3DDDI_RENAME, d3dumddi/Rename, UserModeDisplayDriver_Functions_50916fb2-ea0e-4143-8588-909a4cd07bec.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_RENAME
+title: PFND3DDDI_RENAME
+author: windows-driver-content
+description: The Rename function informs a user-mode display driver to start using the renamed allocation that the LockAsync function previously returned for the specified resource.
+old-location: display\rename.htm
+old-project: display
+ms.assetid: 60f733e1-d376-4372-b1cc-39508b3a98e5
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.rename, Rename callback function [Display Devices], Rename, PFND3DDDI_RENAME, PFND3DDDI_RENAME, d3dumddi/Rename, UserModeDisplayDriver_Functions_50916fb2-ea0e-4143-8588-909a4cd07bec.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	Rename
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

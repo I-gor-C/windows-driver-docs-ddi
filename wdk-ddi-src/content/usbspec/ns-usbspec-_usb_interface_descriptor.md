@@ -1,42 +1,47 @@
 ---
-UID : NS:usbspec._USB_INTERFACE_DESCRIPTOR
-title : "_USB_INTERFACE_DESCRIPTOR"
-author : windows-driver-content
-description : The USB_INTERFACE_DESCRIPTOR structure is used by USB client drivers to retrieve a USB-defined interface descriptor.
-old-location : buses\usb_interface_descriptor.htm
-old-project : usbref
-ms.assetid : 12378915-fa3d-4054-bb06-6eb8b292559c
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : "_USB_INTERFACE_DESCRIPTOR, USB_INTERFACE_DESCRIPTOR, buses.usb_interface_descriptor, usbstrct_2b4503ac-895a-4e94-87b5-10f286ed0b90.xml, PUSB_INTERFACE_DESCRIPTOR, USB_INTERFACE_DESCRIPTOR structure [Buses], usbspec/USB_INTERFACE_DESCRIPTOR, usbspec/PUSB_INTERFACE_DESCRIPTOR, *PUSB_INTERFACE_DESCRIPTOR, PUSB_INTERFACE_DESCRIPTOR structure pointer [Buses]"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : usbspec.h
-req.include-header : Usb100.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : USB_INTERFACE_DESCRIPTOR, *PUSB_INTERFACE_DESCRIPTOR
-req.product : Windows 10 or later.
+UID: NS:usbspec._USB_INTERFACE_DESCRIPTOR
+title: "_USB_INTERFACE_DESCRIPTOR"
+author: windows-driver-content
+description: The USB_INTERFACE_DESCRIPTOR structure is used by USB client drivers to retrieve a USB-defined interface descriptor.
+old-location: buses\usb_interface_descriptor.htm
+old-project: usbref
+ms.assetid: 12378915-fa3d-4054-bb06-6eb8b292559c
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: "_USB_INTERFACE_DESCRIPTOR, USB_INTERFACE_DESCRIPTOR, buses.usb_interface_descriptor, usbstrct_2b4503ac-895a-4e94-87b5-10f286ed0b90.xml, PUSB_INTERFACE_DESCRIPTOR, USB_INTERFACE_DESCRIPTOR structure [Buses], usbspec/USB_INTERFACE_DESCRIPTOR, usbspec/PUSB_INTERFACE_DESCRIPTOR, *PUSB_INTERFACE_DESCRIPTOR, PUSB_INTERFACE_DESCRIPTOR structure pointer [Buses]"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: usbspec.h
+req.include-header: Usb100.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	usbspec.h
+apiname:
+-	USB_INTERFACE_DESCRIPTOR
+product: Windows
+targetos: Windows
+req.typenames: USB_INTERFACE_DESCRIPTOR, *PUSB_INTERFACE_DESCRIPTOR
+req.product: Windows 10 or later.
 ---
 
 # _USB_INTERFACE_DESCRIPTOR structure

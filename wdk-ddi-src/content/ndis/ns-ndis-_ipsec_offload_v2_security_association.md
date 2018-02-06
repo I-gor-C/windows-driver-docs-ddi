@@ -1,41 +1,46 @@
 ---
-UID : NS:ndis._IPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION
-title : "_IPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION"
-author : windows-driver-content
-description : The IPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION structure specifies a single security association (SA).
-old-location : netvista\ipsec_offload_v2_security_association.htm
-old-project : netvista
-ms.assetid : b2c5611e-930d-41a5-a07e-7de8f8584283
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : task_offload_IPsecv2_ref_ccf0a55c-3609-4e15-928a-e46113b96df0.xml, netvista.ipsec_offload_v2_security_association, IPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION structure [Network Drivers Starting with Windows Vista], PIPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION structure pointer [Network Drivers Starting with Windows Vista], ndis/PIPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION, IPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION, ndis/IPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION, *PIPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION, _IPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION, PIPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.1 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : See Remarks section
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : IPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION, *PIPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION
+UID: NS:ndis._IPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION
+title: "_IPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION"
+author: windows-driver-content
+description: The IPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION structure specifies a single security association (SA).
+old-location: netvista\ipsec_offload_v2_security_association.htm
+old-project: netvista
+ms.assetid: b2c5611e-930d-41a5-a07e-7de8f8584283
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: task_offload_IPsecv2_ref_ccf0a55c-3609-4e15-928a-e46113b96df0.xml, netvista.ipsec_offload_v2_security_association, IPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION structure [Network Drivers Starting with Windows Vista], PIPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION structure pointer [Network Drivers Starting with Windows Vista], ndis/PIPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION, IPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION, ndis/IPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION, *PIPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION, _IPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION, PIPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.1 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: See Remarks section
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndis.h
+apiname:
+-	IPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION
+product: Windows
+targetos: Windows
+req.typenames: IPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION, *PIPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION
 ---
 
 # _IPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION structure

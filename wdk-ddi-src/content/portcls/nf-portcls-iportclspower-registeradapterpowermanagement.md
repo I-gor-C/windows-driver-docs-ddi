@@ -1,41 +1,46 @@
 ---
-UID : NF:portcls.IPortClsPower.RegisterAdapterPowerManagement
-title : IPortClsPower::RegisterAdapterPowerManagement method
-author : windows-driver-content
-description : The RegisterAdapterPowerManagement method registers the power management interface of the adapter with PortCls.
-old-location : audio\iportclspower_registeradapterpowermanagement.htm
-old-project : audio
-ms.assetid : f4eb9d18-4352-47e2-bd5f-256e1fa831d3
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : RegisterAdapterPowerManagement method [Audio Devices], IPortClsPower interface, RegisterAdapterPowerManagement, portcls/IPortClsPower::RegisterAdapterPowerManagement, IPortClsPower::RegisterAdapterPowerManagement, audio.iportclspower_registeradapterpowermanagement, IPortClsPower, RegisterAdapterPowerManagement method [Audio Devices], audmp-routines_9c179fd9-d332-478d-a114-469dc1c746fc.xml, IPortClsPower interface [Audio Devices], RegisterAdapterPowerManagement method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : portcls.h
-req.include-header : Portcls.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 7 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : portcls.h
-req.dll : 
-req.irql : PASSIVE_LEVEL.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.IPortClsPower.RegisterAdapterPowerManagement
+title: IPortClsPower::RegisterAdapterPowerManagement method
+author: windows-driver-content
+description: The RegisterAdapterPowerManagement method registers the power management interface of the adapter with PortCls.
+old-location: audio\iportclspower_registeradapterpowermanagement.htm
+old-project: audio
+ms.assetid: f4eb9d18-4352-47e2-bd5f-256e1fa831d3
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: RegisterAdapterPowerManagement method [Audio Devices], IPortClsPower interface, RegisterAdapterPowerManagement, portcls/IPortClsPower::RegisterAdapterPowerManagement, IPortClsPower::RegisterAdapterPowerManagement, audio.iportclspower_registeradapterpowermanagement, IPortClsPower, RegisterAdapterPowerManagement method [Audio Devices], audmp-routines_9c179fd9-d332-478d-a114-469dc1c746fc.xml, IPortClsPower interface [Audio Devices], RegisterAdapterPowerManagement method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: portcls.h
+req.include-header: Portcls.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 7 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: portcls.h
+req.dll: 
+req.irql: PASSIVE_LEVEL.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	portcls.h
+apiname:
+-	IPortClsPower.RegisterAdapterPowerManagement
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

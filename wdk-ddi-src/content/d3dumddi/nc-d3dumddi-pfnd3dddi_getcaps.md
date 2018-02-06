@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_GETCAPS
-title : PFND3DDDI_GETCAPS
-author : windows-driver-content
-description : The GetCaps function queries for capabilities of the graphics adapter.
-old-location : display\getcaps.htm
-old-project : display
-ms.assetid : cf6c61ce-7b53-46d0-b3ff-ed5b2b964c65
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.getcaps, GetCaps callback function [Display Devices], GetCaps, PFND3DDDI_GETCAPS, PFND3DDDI_GETCAPS, d3dumddi/GetCaps, UserModeDisplayDriver_Functions_2848e873-69ef-4b77-b8bc-8ae9f4abe2c9.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_GETCAPS
+title: PFND3DDDI_GETCAPS
+author: windows-driver-content
+description: The GetCaps function queries for capabilities of the graphics adapter.
+old-location: display\getcaps.htm
+old-project: display
+ms.assetid: cf6c61ce-7b53-46d0-b3ff-ed5b2b964c65
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.getcaps, GetCaps callback function [Display Devices], GetCaps, PFND3DDDI_GETCAPS, PFND3DDDI_GETCAPS, d3dumddi/GetCaps, UserModeDisplayDriver_Functions_2848e873-69ef-4b77-b8bc-8ae9f4abe2c9.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	GetCaps
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

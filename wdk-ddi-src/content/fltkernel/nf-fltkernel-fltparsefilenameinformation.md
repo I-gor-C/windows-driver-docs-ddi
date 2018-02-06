@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltParseFileNameInformation
-title : FltParseFileNameInformation function
-author : windows-driver-content
-description : FltParseFileNameInformation parses the contents of a FLT_FILE_NAME_INFORMATION structure.
-old-location : ifsk\fltparsefilenameinformation.htm
-old-project : ifsk
-ms.assetid : f588f59b-5efa-4783-bb45-935b91c69cb5
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltParseFileNameInformation, ifsk.fltparsefilenameinformation, FltParseFileNameInformation function [Installable File System Drivers], fltkernel/FltParseFileNameInformation, FltApiRef_p_to_z_37671009-fb66-4dba-ae61-23801aef9f21.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows XP SP2 and later versions of the Windows operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltParseFileNameInformation
+title: FltParseFileNameInformation function
+author: windows-driver-content
+description: FltParseFileNameInformation parses the contents of a FLT_FILE_NAME_INFORMATION structure.
+old-location: ifsk\fltparsefilenameinformation.htm
+old-project: ifsk
+ms.assetid: f588f59b-5efa-4783-bb45-935b91c69cb5
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltParseFileNameInformation, ifsk.fltparsefilenameinformation, FltParseFileNameInformation function [Installable File System Drivers], fltkernel/FltParseFileNameInformation, FltApiRef_p_to_z_37671009-fb66-4dba-ae61-23801aef9f21.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows XP SP2 and later versions of the Windows operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltParseFileNameInformation
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

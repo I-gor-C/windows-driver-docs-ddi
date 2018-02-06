@@ -1,41 +1,47 @@
 ---
-UID : NF:ndischimney.NdisOffloadTcpSend
-title : NdisOffloadTcpSend function
-author : windows-driver-content
-description : A protocol driver or intermediate driver calls the NdisOffloadTcpSend function to transmit data on an offloaded TCP connection.
-old-location : netvista\ndisoffloadtcpsend.htm
-old-project : netvista
-ms.assetid : a2743bbb-a6fa-4b7e-8087-132e221a5624
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : tcp_chim_ndis_func_51f71d27-0877-4046-b80d-8c05765d8e69.xml, NdisOffloadTcpSend function [Network Drivers Starting with Windows Vista], ndischimney/NdisOffloadTcpSend, NdisOffloadTcpSend, netvista.ndisoffloadtcpsend
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndischimney.h
-req.include-header : Ndischimney.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PD_BUFFER_VIRTUAL_SUBNET_INFO
+UID: NF:ndischimney.NdisOffloadTcpSend
+title: NdisOffloadTcpSend function
+author: windows-driver-content
+description: A protocol driver or intermediate driver calls the NdisOffloadTcpSend function to transmit data on an offloaded TCP connection.
+old-location: netvista\ndisoffloadtcpsend.htm
+old-project: netvista
+ms.assetid: a2743bbb-a6fa-4b7e-8087-132e221a5624
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: tcp_chim_ndis_func_51f71d27-0877-4046-b80d-8c05765d8e69.xml, NdisOffloadTcpSend function [Network Drivers Starting with Windows Vista], ndischimney/NdisOffloadTcpSend, NdisOffloadTcpSend, netvista.ndisoffloadtcpsend
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndischimney.h
+req.include-header: Ndischimney.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisOffloadTcpSend
+product: Windows
+targetos: Windows
+req.typenames: PD_BUFFER_VIRTUAL_SUBNET_INFO
 ---
 
 

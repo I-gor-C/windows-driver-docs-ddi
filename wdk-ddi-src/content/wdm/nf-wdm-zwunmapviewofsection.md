@@ -1,42 +1,48 @@
 ---
-UID : NF:wdm.ZwUnmapViewOfSection
-title : ZwUnmapViewOfSection function
-author : windows-driver-content
-description : The ZwUnmapViewOfSection routine unmaps a view of a section from the virtual address space of a subject process.
-old-location : kernel\zwunmapviewofsection.htm
-old-project : kernel
-ms.assetid : ebc67162-4e36-4af8-bc3b-764633dcda5d
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ZwUnmapViewOfSection, k111_4353325c-d2a1-47b3-b58a-b62929c417f9.xml, ZwUnmapViewOfSection routine [Kernel-Mode Driver Architecture], wdm/ZwUnmapViewOfSection, wdm/NtUnmapViewOfSection, kernel.zwunmapviewofsection, NtUnmapViewOfSection
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ZwUnmapViewOfSection
+title: ZwUnmapViewOfSection function
+author: windows-driver-content
+description: The ZwUnmapViewOfSection routine unmaps a view of a section from the virtual address space of a subject process.
+old-location: kernel\zwunmapviewofsection.htm
+old-project: kernel
+ms.assetid: ebc67162-4e36-4af8-bc3b-764633dcda5d
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ZwUnmapViewOfSection, k111_4353325c-d2a1-47b3-b58a-b62929c417f9.xml, ZwUnmapViewOfSection routine [Kernel-Mode Driver Architecture], wdm/ZwUnmapViewOfSection, wdm/NtUnmapViewOfSection, kernel.zwunmapviewofsection, NtUnmapViewOfSection
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ZwUnmapViewOfSection
+-	NtUnmapViewOfSection
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

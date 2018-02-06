@@ -1,41 +1,46 @@
 ---
-UID : NI:pcivirt.IOCTL_SRIOV_MITIGATED_RANGE_UPDATE
-title : IOCTL_SRIOV_MITIGATED_RANGE_UPDATE
-author : windows-driver-content
-description : The IOCTL_SRIOV_MITIGATED_RANGE_UPDATE request indicates that the virtualization stack wants to update to the mitigation ranges.
-old-location : pci\ioctl-sriov-mitigated-range-update.htm
-old-project : PCI
-ms.assetid : f49e6d9e-0b62-4742-9868-1717f8482d9a
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : PCI.ioctl-sriov-mitigated-range-update, IOCTL_SRIOV_MITIGATED_RANGE_UPDATE control code [Buses], IOCTL_SRIOV_MITIGATED_RANGE_UPDATE, pcivirt/IOCTL_SRIOV_MITIGATED_RANGE_UPDATE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : pcivirt.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SRIOV_PF_EVENT, *PSRIOV_PF_EVENT
+UID: NI:pcivirt.IOCTL_SRIOV_MITIGATED_RANGE_UPDATE
+title: IOCTL_SRIOV_MITIGATED_RANGE_UPDATE
+author: windows-driver-content
+description: The IOCTL_SRIOV_MITIGATED_RANGE_UPDATE request indicates that the virtualization stack wants to update to the mitigation ranges.
+old-location: pci\ioctl-sriov-mitigated-range-update.htm
+old-project: PCI
+ms.assetid: f49e6d9e-0b62-4742-9868-1717f8482d9a
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: PCI.ioctl-sriov-mitigated-range-update, IOCTL_SRIOV_MITIGATED_RANGE_UPDATE control code [Buses], IOCTL_SRIOV_MITIGATED_RANGE_UPDATE, pcivirt/IOCTL_SRIOV_MITIGATED_RANGE_UPDATE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: pcivirt.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Pcivirt.h
+apiname:
+-	IOCTL_SRIOV_MITIGATED_RANGE_UPDATE
+product: Windows
+targetos: Windows
+req.typenames: SRIOV_PF_EVENT, *PSRIOV_PF_EVENT
 ---
 
 # IOCTL_SRIOV_MITIGATED_RANGE_UPDATE IOCTL

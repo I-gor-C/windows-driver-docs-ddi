@@ -1,42 +1,47 @@
 ---
-UID : NN:wudfddi.IWDFIoTargetStateManagement
-title : IWDFIoTargetStateManagement
-author : windows-driver-content
-description : The IWDFIoTargetStateManagement interface exposes methods that manage and monitor the state of an I/O target object.
-old-location : wdf\iwdfiotargetstatemanagement.htm
-old-project : wdf
-ms.assetid : 6870b6fa-1a90-4a7a-935a-4ce8eda940a1
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.iwdfiotargetstatemanagement, IWDFIoTargetStateManagement interface, IWDFIoTargetStateManagement interface, described, IWDFIoTargetStateManagement, wudfddi/IWDFIoTargetStateManagement, UMDFIoTargetObjectRef_667496e9-fa1f-4c90-911d-d456ffc3b59e.xml, umdf.iwdfiotargetstatemanagement
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : wudfddi.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.5
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NN:wudfddi.IWDFIoTargetStateManagement
+title: IWDFIoTargetStateManagement
+author: windows-driver-content
+description: The IWDFIoTargetStateManagement interface exposes methods that manage and monitor the state of an I/O target object.
+old-location: wdf\iwdfiotargetstatemanagement.htm
+old-project: wdf
+ms.assetid: 6870b6fa-1a90-4a7a-935a-4ce8eda940a1
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.iwdfiotargetstatemanagement, IWDFIoTargetStateManagement interface, IWDFIoTargetStateManagement interface, described, IWDFIoTargetStateManagement, wudfddi/IWDFIoTargetStateManagement, UMDFIoTargetObjectRef_667496e9-fa1f-4c90-911d-d456ffc3b59e.xml, umdf.iwdfiotargetstatemanagement
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: wudfddi.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.5
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFIoTargetStateManagement
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 # IWDFIoTargetStateManagement interface

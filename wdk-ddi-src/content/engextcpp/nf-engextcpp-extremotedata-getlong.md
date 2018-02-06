@@ -1,41 +1,46 @@
 ---
-UID : NF:engextcpp.ExtRemoteData.GetLong
-title : ExtRemoteData::GetLong method
-author : windows-driver-content
-description : The GetLong method returns a LONG version of the ExtRemoteData object, which represents the contents of the target's memory.
-old-location : debugger\extremotedata_getlong.htm
-old-project : debugger
-ms.assetid : 064f50e7-bae8-4c29-9802-47efdb749652
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : ExtRemoteData, EngExtCpp_Ref_10a1810d-2e15-490a-baeb-8881106f41a6.xml, ExtRemoteData::GetLong, GetLong method [Windows Debugging], ExtRemoteData class, GetLong, GetLong method [Windows Debugging], debugger.extremotedata_getlong, ExtRemoteData class [Windows Debugging], GetLong method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : engextcpp.hpp
-req.include-header : Engextcpp.hpp
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : engextcpp.hpp
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SILO_DRIVER_CAPABILITIES, *PSILO_DRIVER_CAPABILITIES
+UID: NF:engextcpp.ExtRemoteData.GetLong
+title: ExtRemoteData::GetLong method
+author: windows-driver-content
+description: The GetLong method returns a LONG version of the ExtRemoteData object, which represents the contents of the target's memory.
+old-location: debugger\extremotedata_getlong.htm
+old-project: debugger
+ms.assetid: 064f50e7-bae8-4c29-9802-47efdb749652
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: ExtRemoteData, EngExtCpp_Ref_10a1810d-2e15-490a-baeb-8881106f41a6.xml, ExtRemoteData::GetLong, GetLong method [Windows Debugging], ExtRemoteData class, GetLong, GetLong method [Windows Debugging], debugger.extremotedata_getlong, ExtRemoteData class [Windows Debugging], GetLong method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: engextcpp.hpp
+req.include-header: Engextcpp.hpp
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: engextcpp.hpp
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	engextcpp.hpp
+apiname:
+-	ExtRemoteData.GetLong
+product: Windows
+targetos: Windows
+req.typenames: SILO_DRIVER_CAPABILITIES, *PSILO_DRIVER_CAPABILITIES
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltGetDiskDeviceObject
-title : FltGetDiskDeviceObject function
-author : windows-driver-content
-description : The FltGetDiskDeviceObject routine returns a pointer to the disk device object associated with a given volume.
-old-location : ifsk\fltgetdiskdeviceobject.htm
-old-project : ifsk
-ms.assetid : fb85aa34-5983-405b-85d3-7ebc4be49c51
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltGetDiskDeviceObject routine [Installable File System Drivers], ifsk.fltgetdiskdeviceobject, FltGetDiskDeviceObject, FltApiRef_e_to_o_830212f4-ac53-41e1-8f66-48673bdaf9e2.xml, fltkernel/FltGetDiskDeviceObject
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Fltmgr.lib
-req.dll : Fltmgr.sys
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltGetDiskDeviceObject
+title: FltGetDiskDeviceObject function
+author: windows-driver-content
+description: The FltGetDiskDeviceObject routine returns a pointer to the disk device object associated with a given volume.
+old-location: ifsk\fltgetdiskdeviceobject.htm
+old-project: ifsk
+ms.assetid: fb85aa34-5983-405b-85d3-7ebc4be49c51
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltGetDiskDeviceObject routine [Installable File System Drivers], ifsk.fltgetdiskdeviceobject, FltGetDiskDeviceObject, FltApiRef_e_to_o_830212f4-ac53-41e1-8f66-48673bdaf9e2.xml, fltkernel/FltGetDiskDeviceObject
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Fltmgr.lib
+req.dll: Fltmgr.sys
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltGetDiskDeviceObject
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

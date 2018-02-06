@@ -1,41 +1,46 @@
 ---
-UID : NF:hbaapi.HBA_RegisterForAdapterAddEvents
-title : HBA_RegisterForAdapterAddEvents function
-author : windows-driver-content
-description : The HBA_RegisterForAdapterAddEvents routine registers the indicated user callback routine to call when a new adapter is added to the system.
-old-location : storage\hba_registerforadapteraddevents.htm
-old-project : storage
-ms.assetid : 7395ccb8-2608-46ae-a378-987bd757761b
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : hbaapi/HBA_RegisterForAdapterAddEvents, HBA_RegisterForAdapterAddEvents routine [Storage Devices], fibreHBA_rtns_d44e8303-9d14-4f36-830e-bca76a494dfd.xml, storage.hba_registerforadapteraddevents, HBA_RegisterForAdapterAddEvents
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : hbaapi.h
-req.include-header : Hbaapi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Hbaapi.lib
-req.dll : Hbaapi.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HBA_WWNTYPE
+UID: NF:hbaapi.HBA_RegisterForAdapterAddEvents
+title: HBA_RegisterForAdapterAddEvents function
+author: windows-driver-content
+description: The HBA_RegisterForAdapterAddEvents routine registers the indicated user callback routine to call when a new adapter is added to the system.
+old-location: storage\hba_registerforadapteraddevents.htm
+old-project: storage
+ms.assetid: 7395ccb8-2608-46ae-a378-987bd757761b
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: hbaapi/HBA_RegisterForAdapterAddEvents, HBA_RegisterForAdapterAddEvents routine [Storage Devices], fibreHBA_rtns_d44e8303-9d14-4f36-830e-bca76a494dfd.xml, storage.hba_registerforadapteraddevents, HBA_RegisterForAdapterAddEvents
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: hbaapi.h
+req.include-header: Hbaapi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Hbaapi.lib
+req.dll: Hbaapi.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Hbaapi.dll
+apiname:
+-	HBA_RegisterForAdapterAddEvents
+product: Windows
+targetos: Windows
+req.typenames: HBA_WWNTYPE
 ---
 
 

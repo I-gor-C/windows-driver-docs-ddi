@@ -1,41 +1,46 @@
 ---
-UID : NS:hbapiwmi._RemoveLink_OUT
-title : "_RemoveLink_OUT"
-author : windows-driver-content
-description : The RemoveLink_OUT structure is used by an HBA miniport driver to report the output parameter data of the RemoveLink WMI method to the WMI client.
-old-location : storage\removelink_out.htm
-old-project : storage
-ms.assetid : 724e3143-4994-4785-9bbf-afb928e8b166
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : PRemoveLink_OUT, structs-Fibre_0210455d-c6c4-4548-ae14-63aa2e7b9a5d.xml, PRemoveLink_OUT structure pointer [Storage Devices], _RemoveLink_OUT, *PRemoveLink_OUT, hbapiwmi/RemoveLink_OUT, hbapiwmi/PRemoveLink_OUT, RemoveLink_OUT, storage.removelink_out, RemoveLink_OUT structure [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : hbapiwmi.h
-req.include-header : Hbapiwmi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RemoveLink_OUT, *PRemoveLink_OUT
+UID: NS:hbapiwmi._RemoveLink_OUT
+title: "_RemoveLink_OUT"
+author: windows-driver-content
+description: The RemoveLink_OUT structure is used by an HBA miniport driver to report the output parameter data of the RemoveLink WMI method to the WMI client.
+old-location: storage\removelink_out.htm
+old-project: storage
+ms.assetid: 724e3143-4994-4785-9bbf-afb928e8b166
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: PRemoveLink_OUT, structs-Fibre_0210455d-c6c4-4548-ae14-63aa2e7b9a5d.xml, PRemoveLink_OUT structure pointer [Storage Devices], _RemoveLink_OUT, *PRemoveLink_OUT, hbapiwmi/RemoveLink_OUT, hbapiwmi/PRemoveLink_OUT, RemoveLink_OUT, storage.removelink_out, RemoveLink_OUT structure [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: hbapiwmi.h
+req.include-header: Hbapiwmi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hbapiwmi.h
+apiname:
+-	RemoveLink_OUT
+product: Windows
+targetos: Windows
+req.typenames: RemoveLink_OUT, *PRemoveLink_OUT
 ---
 
 # _RemoveLink_OUT structure

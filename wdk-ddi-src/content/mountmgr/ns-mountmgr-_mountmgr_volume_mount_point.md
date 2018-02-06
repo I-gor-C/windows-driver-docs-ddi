@@ -1,41 +1,46 @@
 ---
-UID : NS:mountmgr._MOUNTMGR_VOLUME_MOUNT_POINT
-title : "_MOUNTMGR_VOLUME_MOUNT_POINT"
-author : windows-driver-content
-description : The MOUNTMGR_VOLUME_MOUNT_POINT structure is used in conjunction with the IOCTL_MOUNTMGR_VOLUME_MOUNT_POINT_CREATED request to inform the mount manager that a volume mount point has been created.
-old-location : storage\mountmgr_volume_mount_point.htm
-old-project : storage
-ms.assetid : 2a267992-b4d3-49e1-bb80-3849220f0d1f
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : "*PMOUNTMGR_VOLUME_MOUNT_POINT, structs-mntmgr_afa5831e-a33d-4fb6-a67b-b0b4f459e19b.xml, _MOUNTMGR_VOLUME_MOUNT_POINT, storage.mountmgr_volume_mount_point, mountmgr/MOUNTMGR_VOLUME_MOUNT_POINT, PMOUNTMGR_VOLUME_MOUNT_POINT, MOUNTMGR_VOLUME_MOUNT_POINT, mountmgr/PMOUNTMGR_VOLUME_MOUNT_POINT, MOUNTMGR_VOLUME_MOUNT_POINT structure [Storage Devices], PMOUNTMGR_VOLUME_MOUNT_POINT structure pointer [Storage Devices]"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : mountmgr.h
-req.include-header : Mountmgr.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PMOUNTMGR_VOLUME_MOUNT_POINT, MOUNTMGR_VOLUME_MOUNT_POINT"
+UID: NS:mountmgr._MOUNTMGR_VOLUME_MOUNT_POINT
+title: "_MOUNTMGR_VOLUME_MOUNT_POINT"
+author: windows-driver-content
+description: The MOUNTMGR_VOLUME_MOUNT_POINT structure is used in conjunction with the IOCTL_MOUNTMGR_VOLUME_MOUNT_POINT_CREATED request to inform the mount manager that a volume mount point has been created.
+old-location: storage\mountmgr_volume_mount_point.htm
+old-project: storage
+ms.assetid: 2a267992-b4d3-49e1-bb80-3849220f0d1f
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: "*PMOUNTMGR_VOLUME_MOUNT_POINT, structs-mntmgr_afa5831e-a33d-4fb6-a67b-b0b4f459e19b.xml, _MOUNTMGR_VOLUME_MOUNT_POINT, storage.mountmgr_volume_mount_point, mountmgr/MOUNTMGR_VOLUME_MOUNT_POINT, PMOUNTMGR_VOLUME_MOUNT_POINT, MOUNTMGR_VOLUME_MOUNT_POINT, mountmgr/PMOUNTMGR_VOLUME_MOUNT_POINT, MOUNTMGR_VOLUME_MOUNT_POINT structure [Storage Devices], PMOUNTMGR_VOLUME_MOUNT_POINT structure pointer [Storage Devices]"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: mountmgr.h
+req.include-header: Mountmgr.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	mountmgr.h
+apiname:
+-	MOUNTMGR_VOLUME_MOUNT_POINT
+product: Windows
+targetos: Windows
+req.typenames: "*PMOUNTMGR_VOLUME_MOUNT_POINT, MOUNTMGR_VOLUME_MOUNT_POINT"
 ---
 
 # _MOUNTMGR_VOLUME_MOUNT_POINT structure

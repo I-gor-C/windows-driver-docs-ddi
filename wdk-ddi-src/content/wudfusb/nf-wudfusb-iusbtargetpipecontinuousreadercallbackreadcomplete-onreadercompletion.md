@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfusb.IUsbTargetPipeContinuousReaderCallbackReadComplete.OnReaderCompletion
-title : IUsbTargetPipeContinuousReaderCallbackReadComplete::OnReaderCompletion method
-author : windows-driver-content
-description : A driver's OnReaderCompletion event callback function informs the driver that a continuous reader has successfully completed a read request.
-old-location : wdf\iusbtargetpipecontinuousreadercallbackreadcomplete_onreadercompletion.htm
-old-project : wdf
-ms.assetid : 946e0206-7609-4dc7-91c2-a6aadad91751
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : OnReaderCompletion method, IUsbTargetPipeContinuousReaderCallbackReadComplete interface, umdf.iusbtargetpipecontinuousreadercallbackreadcomplete_onreadercompletion, OnReaderCompletion, IUsbTargetPipeContinuousReaderCallbackReadComplete, OnReaderCompletion method, IUsbTargetPipeContinuousReaderCallbackReadComplete::OnReaderCompletion, IUsbTargetPipeContinuousReaderCallbackReadComplete interface, OnReaderCompletion method, wdf.iusbtargetpipecontinuousreadercallbackreadcomplete_onreadercompletion, UMDFUSBref_a221433f-9a32-4205-8f12-a0c891dbe8bf.xml, wudfusb/IUsbTargetPipeContinuousReaderCallbackReadComplete::OnReaderCompletion
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfusb.h
-req.include-header : Wudfusb.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.9
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfusb.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
-req.product : Windows 10 or later.
+UID: NF:wudfusb.IUsbTargetPipeContinuousReaderCallbackReadComplete.OnReaderCompletion
+title: IUsbTargetPipeContinuousReaderCallbackReadComplete::OnReaderCompletion method
+author: windows-driver-content
+description: A driver's OnReaderCompletion event callback function informs the driver that a continuous reader has successfully completed a read request.
+old-location: wdf\iusbtargetpipecontinuousreadercallbackreadcomplete_onreadercompletion.htm
+old-project: wdf
+ms.assetid: 946e0206-7609-4dc7-91c2-a6aadad91751
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: OnReaderCompletion method, IUsbTargetPipeContinuousReaderCallbackReadComplete interface, umdf.iusbtargetpipecontinuousreadercallbackreadcomplete_onreadercompletion, OnReaderCompletion, IUsbTargetPipeContinuousReaderCallbackReadComplete, OnReaderCompletion method, IUsbTargetPipeContinuousReaderCallbackReadComplete::OnReaderCompletion, IUsbTargetPipeContinuousReaderCallbackReadComplete interface, OnReaderCompletion method, wdf.iusbtargetpipecontinuousreadercallbackreadcomplete_onreadercompletion, UMDFUSBref_a221433f-9a32-4205-8f12-a0c891dbe8bf.xml, wudfusb/IUsbTargetPipeContinuousReaderCallbackReadComplete::OnReaderCompletion
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfusb.h
+req.include-header: Wudfusb.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.9
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfusb.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	wudfusb.h
+apiname:
+-	IUsbTargetPipeContinuousReaderCallbackReadComplete.OnReaderCompletion
+product: Windows
+targetos: Windows
+req.typenames: WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
+req.product: Windows 10 or later.
 ---
 
 

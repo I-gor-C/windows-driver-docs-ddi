@@ -1,41 +1,46 @@
 ---
-UID : NI:parallel.IOCTL_INTERNAL_DISCONNECT_IDLE
-title : IOCTL_INTERNAL_DISCONNECT_IDLE
-author : windows-driver-content
-description : The IOCTL_INTERNAL_DISCONNECT_IDLE request disconnects the IEEE 1284 operating modes that are set for a parallel device.
-old-location : parports\ioctl_internal_disconnect_idle.htm
-old-project : parports
-ms.assetid : 02fd4277-502d-4a9e-b809-10134ed0900b
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : parports.ioctl_internal_disconnect_idle, IOCTL_INTERNAL_DISCONNECT_IDLE control code [Parallel Ports], IOCTL_INTERNAL_DISCONNECT_IDLE, parallel/IOCTL_INTERNAL_DISCONNECT_IDLE, cisspd_ff4b2feb-d3b4-4b80-9f6f-f4fd16bab4c1.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : parallel.h
-req.include-header : Parallel.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RILGBATOKEN, *LPRILGBATOKEN
+UID: NI:parallel.IOCTL_INTERNAL_DISCONNECT_IDLE
+title: IOCTL_INTERNAL_DISCONNECT_IDLE
+author: windows-driver-content
+description: The IOCTL_INTERNAL_DISCONNECT_IDLE request disconnects the IEEE 1284 operating modes that are set for a parallel device.
+old-location: parports\ioctl_internal_disconnect_idle.htm
+old-project: parports
+ms.assetid: 02fd4277-502d-4a9e-b809-10134ed0900b
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: parports.ioctl_internal_disconnect_idle, IOCTL_INTERNAL_DISCONNECT_IDLE control code [Parallel Ports], IOCTL_INTERNAL_DISCONNECT_IDLE, parallel/IOCTL_INTERNAL_DISCONNECT_IDLE, cisspd_ff4b2feb-d3b4-4b80-9f6f-f4fd16bab4c1.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: parallel.h
+req.include-header: Parallel.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	parallel.h
+apiname:
+-	IOCTL_INTERNAL_DISCONNECT_IDLE
+product: Windows
+targetos: Windows
+req.typenames: RILGBATOKEN, *LPRILGBATOKEN
 ---
 
 # IOCTL_INTERNAL_DISCONNECT_IDLE IOCTL

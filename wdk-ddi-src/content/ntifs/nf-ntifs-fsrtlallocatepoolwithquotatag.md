@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.FsRtlAllocatePoolWithQuotaTag
-title : FsRtlAllocatePoolWithQuotaTag macro
-author : windows-driver-content
-description : The FsRtlAllocatePoolWithQuotaTag routine allocates pool memory, charging quota against the current process.
-old-location : ifsk\fsrtlallocatepoolwithquotatag.htm
-old-project : ifsk
-ms.assetid : 241525fd-c21b-4c24-91a0-6a79df4faea7
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FsRtlAllocatePoolWithQuotaTag, ifsk.fsrtlallocatepoolwithquotatag, fsrtlref_f4d15687-848c-4c31-8f30-48eb69498cc9.xml, FsRtlAllocatePoolWithQuotaTag routine [Installable File System Drivers], ntifs/FsRtlAllocatePoolWithQuotaTag
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : macro
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= DISPATCH_LEVEL (see Remarks section)"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.FsRtlAllocatePoolWithQuotaTag
+title: FsRtlAllocatePoolWithQuotaTag macro
+author: windows-driver-content
+description: The FsRtlAllocatePoolWithQuotaTag routine allocates pool memory, charging quota against the current process.
+old-location: ifsk\fsrtlallocatepoolwithquotatag.htm
+old-project: ifsk
+ms.assetid: 241525fd-c21b-4c24-91a0-6a79df4faea7
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FsRtlAllocatePoolWithQuotaTag, ifsk.fsrtlallocatepoolwithquotatag, fsrtlref_f4d15687-848c-4c31-8f30-48eb69498cc9.xml, FsRtlAllocatePoolWithQuotaTag routine [Installable File System Drivers], ntifs/FsRtlAllocatePoolWithQuotaTag
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: macro
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= DISPATCH_LEVEL (see Remarks section)"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	FsRtlAllocatePoolWithQuotaTag
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

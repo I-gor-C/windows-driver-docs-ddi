@@ -1,41 +1,46 @@
 ---
-UID : NS:ntdddisk._SET_PARTITION_INFORMATION_EX
-title : "_SET_PARTITION_INFORMATION_EX"
-author : windows-driver-content
-description : SET_PARTITION_INFORMATION_EX is used with the IOCTL IOCTL_DISK_SET_PARTITION_INFO_EX to set information for a specific partition.
-old-location : storage\set_partition_information_ex.htm
-old-project : storage
-ms.assetid : a30c10d4-5e85-4a59-b262-054a6fdc2fb8
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : SET_PARTITION_INFORMATION_EX, SET_PARTITION_INFORMATION_EX structure [Storage Devices], PSET_PARTITION_INFORMATION_EX, ntdddisk/PSET_PARTITION_INFORMATION_EX, structs-disk_5eaa53e2-feaf-404f-a2a8-174ae77bfab5.xml, storage.set_partition_information_ex, *PSET_PARTITION_INFORMATION_EX, _SET_PARTITION_INFORMATION_EX, PSET_PARTITION_INFORMATION_EX structure pointer [Storage Devices], ntdddisk/SET_PARTITION_INFORMATION_EX
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntdddisk.h
-req.include-header : Ntdddisk.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSET_PARTITION_INFORMATION_EX, SET_PARTITION_INFORMATION_EX"
+UID: NS:ntdddisk._SET_PARTITION_INFORMATION_EX
+title: "_SET_PARTITION_INFORMATION_EX"
+author: windows-driver-content
+description: SET_PARTITION_INFORMATION_EX is used with the IOCTL IOCTL_DISK_SET_PARTITION_INFO_EX to set information for a specific partition.
+old-location: storage\set_partition_information_ex.htm
+old-project: storage
+ms.assetid: a30c10d4-5e85-4a59-b262-054a6fdc2fb8
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: SET_PARTITION_INFORMATION_EX, SET_PARTITION_INFORMATION_EX structure [Storage Devices], PSET_PARTITION_INFORMATION_EX, ntdddisk/PSET_PARTITION_INFORMATION_EX, structs-disk_5eaa53e2-feaf-404f-a2a8-174ae77bfab5.xml, storage.set_partition_information_ex, *PSET_PARTITION_INFORMATION_EX, _SET_PARTITION_INFORMATION_EX, PSET_PARTITION_INFORMATION_EX structure pointer [Storage Devices], ntdddisk/SET_PARTITION_INFORMATION_EX
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntdddisk.h
+req.include-header: Ntdddisk.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntdddisk.h
+apiname:
+-	SET_PARTITION_INFORMATION_EX
+product: Windows
+targetos: Windows
+req.typenames: "*PSET_PARTITION_INFORMATION_EX, SET_PARTITION_INFORMATION_EX"
 ---
 
 # _SET_PARTITION_INFORMATION_EX structure

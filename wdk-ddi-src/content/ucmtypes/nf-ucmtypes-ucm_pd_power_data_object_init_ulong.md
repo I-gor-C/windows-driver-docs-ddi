@@ -1,42 +1,47 @@
 ---
-UID : NF:ucmtypes.UCM_PD_POWER_DATA_OBJECT_INIT_ULONG
-title : UCM_PD_POWER_DATA_OBJECT_INIT_ULONG function
-author : windows-driver-content
-description : Initializes a UCM_PD_POWER_DATA_OBJECT structure by interpreting Power Data Object values and sets each field correctly.
-old-location : buses\ucm_pd_power_data_object_init_ulong.htm
-old-project : usbref
-ms.assetid : F5520F9F-159E-42D9-A7F4-426CB935D29D
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : buses.ucm_pd_power_data_object_init_ulong, UCM_PD_POWER_DATA_OBJECT_INIT_ULONG, ucmtypes/UCM_PD_POWER_DATA_OBJECT_INIT_ULONG, UCM_PD_POWER_DATA_OBJECT_INIT_ULONG function [Buses]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ucmtypes.h
-req.include-header : Ucmcx.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 1.15
-req.umdf-ver : 2.15
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : UCM_TYPEC_PARTNER
-req.product : Windows 10 or later.
+UID: NF:ucmtypes.UCM_PD_POWER_DATA_OBJECT_INIT_ULONG
+title: UCM_PD_POWER_DATA_OBJECT_INIT_ULONG function
+author: windows-driver-content
+description: Initializes a UCM_PD_POWER_DATA_OBJECT structure by interpreting Power Data Object values and sets each field correctly.
+old-location: buses\ucm_pd_power_data_object_init_ulong.htm
+old-project: usbref
+ms.assetid: F5520F9F-159E-42D9-A7F4-426CB935D29D
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: buses.ucm_pd_power_data_object_init_ulong, UCM_PD_POWER_DATA_OBJECT_INIT_ULONG, ucmtypes/UCM_PD_POWER_DATA_OBJECT_INIT_ULONG, UCM_PD_POWER_DATA_OBJECT_INIT_ULONG function [Buses]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ucmtypes.h
+req.include-header: Ucmcx.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 1.15
+req.umdf-ver: 2.15
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ucmtypes.h
+apiname:
+-	UCM_PD_POWER_DATA_OBJECT_INIT_ULONG
+product: Windows
+targetos: Windows
+req.typenames: UCM_TYPEC_PARTNER
+req.product: Windows 10 or later.
 ---
 
 

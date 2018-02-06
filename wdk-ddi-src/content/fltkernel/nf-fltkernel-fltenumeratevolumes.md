@@ -1,41 +1,47 @@
 ---
-UID : NF:fltkernel.FltEnumerateVolumes
-title : FltEnumerateVolumes function
-author : windows-driver-content
-description : The FltEnumerateVolumes routine enumerates all volumes in the system.
-old-location : ifsk\fltenumeratevolumes.htm
-old-project : ifsk
-ms.assetid : 67038ff5-c450-460b-b158-f5d817fdc972
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltApiRef_e_to_o_20e817de-0825-4c5f-a831-2815c216344e.xml, ifsk.fltenumeratevolumes, FltEnumerateVolumes, FltEnumerateVolumes routine [Installable File System Drivers], fltkernel/FltEnumerateVolumes
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : FltKernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltEnumerateVolumes
+title: FltEnumerateVolumes function
+author: windows-driver-content
+description: The FltEnumerateVolumes routine enumerates all volumes in the system.
+old-location: ifsk\fltenumeratevolumes.htm
+old-project: ifsk
+ms.assetid: 67038ff5-c450-460b-b158-f5d817fdc972
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltApiRef_e_to_o_20e817de-0825-4c5f-a831-2815c216344e.xml, ifsk.fltenumeratevolumes, FltEnumerateVolumes, FltEnumerateVolumes routine [Installable File System Drivers], fltkernel/FltEnumerateVolumes
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: FltKernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	FltMgr.lib
+-	FltMgr.dll
+apiname:
+-	FltEnumerateVolumes
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

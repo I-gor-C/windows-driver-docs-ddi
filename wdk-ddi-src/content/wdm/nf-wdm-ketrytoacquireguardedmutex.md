@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.KeTryToAcquireGuardedMutex
-title : KeTryToAcquireGuardedMutex function
-author : windows-driver-content
-description : The KeTryToAcquireGuardedMutex routine acquires a guarded mutex, if available.
-old-location : kernel\ketrytoacquireguardedmutex.htm
-old-project : kernel
-ms.assetid : 5fa704ec-5068-42e9-8d52-2f775fd0e5c9
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : KeTryToAcquireGuardedMutex, kernel.ketrytoacquireguardedmutex, k105_4761d5a7-fc37-45de-a35e-7da9a99258b6.xml, KeTryToAcquireGuardedMutex routine [Kernel-Mode Driver Architecture], wdm/KeTryToAcquireGuardedMutex
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Server 2003 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : IrqlKeApcLte1, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.KeTryToAcquireGuardedMutex
+title: KeTryToAcquireGuardedMutex function
+author: windows-driver-content
+description: The KeTryToAcquireGuardedMutex routine acquires a guarded mutex, if available.
+old-location: kernel\ketrytoacquireguardedmutex.htm
+old-project: kernel
+ms.assetid: 5fa704ec-5068-42e9-8d52-2f775fd0e5c9
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: KeTryToAcquireGuardedMutex, kernel.ketrytoacquireguardedmutex, k105_4761d5a7-fc37-45de-a35e-7da9a99258b6.xml, KeTryToAcquireGuardedMutex routine [Kernel-Mode Driver Architecture], wdm/KeTryToAcquireGuardedMutex
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Server 2003 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: IrqlKeApcLte1, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	KeTryToAcquireGuardedMutex
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

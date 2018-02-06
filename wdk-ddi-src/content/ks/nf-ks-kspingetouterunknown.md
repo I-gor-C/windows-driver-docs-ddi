@@ -1,41 +1,46 @@
 ---
-UID : NF:ks.KsPinGetOuterUnknown
-title : KsPinGetOuterUnknown function
-author : windows-driver-content
-description : The KsPinGetOuterUnknown function returns the outer IUnknown of the pin specified by Pin.
-old-location : stream\kspingetouterunknown.htm
-old-project : stream
-ms.assetid : 58b14ddd-6698-487a-925d-7d559057e55d
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.kspingetouterunknown, KsPinGetOuterUnknown, avfunc_6a9c21cd-38ab-4277-8379-346af4c9c4c9.xml, ks/KsPinGetOuterUnknown, KsPinGetOuterUnknown function [Streaming Media Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsPinGetOuterUnknown
+title: KsPinGetOuterUnknown function
+author: windows-driver-content
+description: The KsPinGetOuterUnknown function returns the outer IUnknown of the pin specified by Pin.
+old-location: stream\kspingetouterunknown.htm
+old-project: stream
+ms.assetid: 58b14ddd-6698-487a-925d-7d559057e55d
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.kspingetouterunknown, KsPinGetOuterUnknown, avfunc_6a9c21cd-38ab-4277-8379-346af4c9c4c9.xml, ks/KsPinGetOuterUnknown, KsPinGetOuterUnknown function [Streaming Media Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	KsPinGetOuterUnknown
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

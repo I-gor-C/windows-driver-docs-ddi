@@ -1,42 +1,47 @@
 ---
-UID : NF:wiamindr_lh.IWiaDrvItem.AddItemToFolder
-title : IWiaDrvItem::AddItemToFolder method
-author : windows-driver-content
-description : The AddItemToFolder method adds an IWiaDrvItem item to a folder in a driver item tree.
-old-location : image\iwiadrvitem_additemtofolder.htm
-old-project : image
-ms.assetid : 3f1cd0bf-13ce-49bc-a48e-dc3d89f3c7d7
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : IWiaDrvItem interface [Imaging Devices], AddItemToFolder method, DrvItem_7979b3e5-dfd3-41bb-ae55-266cbb74866c.xml, AddItemToFolder method [Imaging Devices], IWiaDrvItem interface, IWiaDrvItem::AddItemToFolder, IWiaDrvItem, image.iwiadrvitem_additemtofolder, AddItemToFolder, AddItemToFolder method [Imaging Devices], wiamindr_lh/IWiaDrvItem::AddItemToFolder
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wiamindr_lh.h
-req.include-header : Wiamindr.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Me and in Windows XP and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wiamindr_lh.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SCANWINDOW, *PSCANWINDOW
-req.product : Windows 10 or later.
+UID: NF:wiamindr_lh.IWiaDrvItem.AddItemToFolder
+title: IWiaDrvItem::AddItemToFolder method
+author: windows-driver-content
+description: The AddItemToFolder method adds an IWiaDrvItem item to a folder in a driver item tree.
+old-location: image\iwiadrvitem_additemtofolder.htm
+old-project: image
+ms.assetid: 3f1cd0bf-13ce-49bc-a48e-dc3d89f3c7d7
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: IWiaDrvItem interface [Imaging Devices], AddItemToFolder method, DrvItem_7979b3e5-dfd3-41bb-ae55-266cbb74866c.xml, AddItemToFolder method [Imaging Devices], IWiaDrvItem interface, IWiaDrvItem::AddItemToFolder, IWiaDrvItem, image.iwiadrvitem_additemtofolder, AddItemToFolder, AddItemToFolder method [Imaging Devices], wiamindr_lh/IWiaDrvItem::AddItemToFolder
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wiamindr_lh.h
+req.include-header: Wiamindr.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Me and in Windows XP and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wiamindr_lh.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	wiamindr_lh.h
+apiname:
+-	IWiaDrvItem.AddItemToFolder
+product: Windows
+targetos: Windows
+req.typenames: SCANWINDOW, *PSCANWINDOW
+req.product: Windows 10 or later.
 ---
 
 

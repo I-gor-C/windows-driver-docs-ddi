@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisFDevicePnPEventNotify
-title : NdisFDevicePnPEventNotify function
-author : windows-driver-content
-description : A filter driver can call the NdisFDevicePnPEventNotify function to forward a device Plug and Play (PnP) or Power Management event to underlying drivers.
-old-location : netvista\ndisfdevicepnpeventnotify.htm
-old-project : netvista
-ms.assetid : ae5dd48b-7777-4232-89ad-ac4464e03e57
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : filter_ndis_functions_ref_56e249ae-0200-4c98-b20c-03cc8d3fdd7d.xml, netvista.ndisfdevicepnpeventnotify, NdisFDevicePnPEventNotify function [Network Drivers Starting with Windows Vista], NdisFDevicePnPEventNotify, ndis/NdisFDevicePnPEventNotify
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_Filter_Driver_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisFDevicePnPEventNotify
+title: NdisFDevicePnPEventNotify function
+author: windows-driver-content
+description: A filter driver can call the NdisFDevicePnPEventNotify function to forward a device Plug and Play (PnP) or Power Management event to underlying drivers.
+old-location: netvista\ndisfdevicepnpeventnotify.htm
+old-project: netvista
+ms.assetid: ae5dd48b-7777-4232-89ad-ac4464e03e57
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: filter_ndis_functions_ref_56e249ae-0200-4c98-b20c-03cc8d3fdd7d.xml, netvista.ndisfdevicepnpeventnotify, NdisFDevicePnPEventNotify function [Network Drivers Starting with Windows Vista], NdisFDevicePnPEventNotify, ndis/NdisFDevicePnPEventNotify
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_Filter_Driver_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisFDevicePnPEventNotify
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

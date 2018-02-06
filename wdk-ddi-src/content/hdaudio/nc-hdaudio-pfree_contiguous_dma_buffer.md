@@ -1,41 +1,46 @@
 ---
-UID : NC:hdaudio.PFREE_CONTIGUOUS_DMA_BUFFER
-title : PFREE_CONTIGUOUS_DMA_BUFFER
-author : windows-driver-content
-description : The FreeContiguousDmaBuffer routine frees a DMA buffer and buffer descriptor list (BDL) that were allocated by a call to AllocateContiguousDmaBuffer.The function pointer type for a FreeContiguousDmaBuffer routine is defined as:
-old-location : audio\freecontiguousdmabuffer.htm
-old-project : audio
-ms.assetid : 7aaf98cc-8a94-44e6-9fef-76e00db17405
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : audio.freecontiguousdmabuffer, FreeContiguousDmaBuffer callback function [Audio Devices], FreeContiguousDmaBuffer, PFREE_CONTIGUOUS_DMA_BUFFER, PFREE_CONTIGUOUS_DMA_BUFFER, hdaudio/FreeContiguousDmaBuffer, aud-prop2_66797c8c-c8ac-443e-9515-1269a14a87a0.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : hdaudio.h
-req.include-header : Hdaudio.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT
+UID: NC:hdaudio.PFREE_CONTIGUOUS_DMA_BUFFER
+title: PFREE_CONTIGUOUS_DMA_BUFFER
+author: windows-driver-content
+description: The FreeContiguousDmaBuffer routine frees a DMA buffer and buffer descriptor list (BDL) that were allocated by a call to AllocateContiguousDmaBuffer.The function pointer type for a FreeContiguousDmaBuffer routine is defined as:
+old-location: audio\freecontiguousdmabuffer.htm
+old-project: audio
+ms.assetid: 7aaf98cc-8a94-44e6-9fef-76e00db17405
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: audio.freecontiguousdmabuffer, FreeContiguousDmaBuffer callback function [Audio Devices], FreeContiguousDmaBuffer, PFREE_CONTIGUOUS_DMA_BUFFER, PFREE_CONTIGUOUS_DMA_BUFFER, hdaudio/FreeContiguousDmaBuffer, aud-prop2_66797c8c-c8ac-443e-9515-1269a14a87a0.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: hdaudio.h
+req.include-header: Hdaudio.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	hdaudio.h
+apiname:
+-	FreeContiguousDmaBuffer
+product: Windows
+targetos: Windows
+req.typenames: SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT
 ---
 
 

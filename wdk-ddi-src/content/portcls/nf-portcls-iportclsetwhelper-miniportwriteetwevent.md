@@ -1,41 +1,46 @@
 ---
-UID : NF:portcls.IPortClsEtwHelper.MiniportWriteEtwEvent
-title : IPortClsEtwHelper::MiniportWriteEtwEvent method
-author : windows-driver-content
-description : The MiniportWriteEtwEvent method is used by an audio miniport driver for providing the information about an Event Tracing for Windows (ETW) event.
-old-location : audio\iportclsetwhelper_miniportwriteetwevent.htm
-old-project : audio
-ms.assetid : 7E0C1140-35AA-424F-8229-21B4F4E1EBDF
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : IPortClsEtwHelper::MiniportWriteEtwEvent, audio.iportclsetwhelper_miniportwriteetwevent, MiniportWriteEtwEvent method [Audio Devices], portcls/IPortClsEtwHelper::MiniportWriteEtwEvent, MiniportWriteEtwEvent, MiniportWriteEtwEvent method [Audio Devices], IPortClsEtwHelper interface, IPortClsEtwHelper interface [Audio Devices], MiniportWriteEtwEvent method, IPortClsEtwHelper
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : portcls.h
-req.include-header : 
-req.target-type : Universal
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : portcls.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.IPortClsEtwHelper.MiniportWriteEtwEvent
+title: IPortClsEtwHelper::MiniportWriteEtwEvent method
+author: windows-driver-content
+description: The MiniportWriteEtwEvent method is used by an audio miniport driver for providing the information about an Event Tracing for Windows (ETW) event.
+old-location: audio\iportclsetwhelper_miniportwriteetwevent.htm
+old-project: audio
+ms.assetid: 7E0C1140-35AA-424F-8229-21B4F4E1EBDF
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: IPortClsEtwHelper::MiniportWriteEtwEvent, audio.iportclsetwhelper_miniportwriteetwevent, MiniportWriteEtwEvent method [Audio Devices], portcls/IPortClsEtwHelper::MiniportWriteEtwEvent, MiniportWriteEtwEvent, MiniportWriteEtwEvent method [Audio Devices], IPortClsEtwHelper interface, IPortClsEtwHelper interface [Audio Devices], MiniportWriteEtwEvent method, IPortClsEtwHelper
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: portcls.h
+req.include-header: 
+req.target-type: Universal
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: portcls.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Portcls.h
+apiname:
+-	IPortClsEtwHelper.MiniportWriteEtwEvent
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NS:windot11._DOT11_DISASSOCIATE_PEER_REQUEST
-title : "_DOT11_DISASSOCIATE_PEER_REQUEST"
-author : windows-driver-content
-description : Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
-old-location : netvista\dot11_disassociate_peer_request.htm
-old-project : netvista
-ms.assetid : aa47c030-dcd4-451b-8a4b-03ac566bb394
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.dot11_disassociate_peer_request, PDOT11_DISASSOCIATE_PEER_REQUEST, windot11/PDOT11_DISASSOCIATE_PEER_REQUEST, DOT11_DISASSOCIATE_PEER_REQUEST, windot11/DOT11_DISASSOCIATE_PEER_REQUEST, *PDOT11_DISASSOCIATE_PEER_REQUEST, Native_802.11_data_types_54282deb-6db8-44b2-b87c-e3f4426141f6.xml, PDOT11_DISASSOCIATE_PEER_REQUEST structure pointer [Network Drivers Starting with Windows Vista], DOT11_DISASSOCIATE_PEER_REQUEST structure [Network Drivers Starting with Windows Vista], _DOT11_DISASSOCIATE_PEER_REQUEST
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : windot11.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7 and later versions of the Windows operating   system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT11_DISASSOCIATE_PEER_REQUEST, *PDOT11_DISASSOCIATE_PEER_REQUEST
-req.product : Windows 10 or later.
+UID: NS:windot11._DOT11_DISASSOCIATE_PEER_REQUEST
+title: "_DOT11_DISASSOCIATE_PEER_REQUEST"
+author: windows-driver-content
+description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+old-location: netvista\dot11_disassociate_peer_request.htm
+old-project: netvista
+ms.assetid: aa47c030-dcd4-451b-8a4b-03ac566bb394
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.dot11_disassociate_peer_request, PDOT11_DISASSOCIATE_PEER_REQUEST, windot11/PDOT11_DISASSOCIATE_PEER_REQUEST, DOT11_DISASSOCIATE_PEER_REQUEST, windot11/DOT11_DISASSOCIATE_PEER_REQUEST, *PDOT11_DISASSOCIATE_PEER_REQUEST, Native_802.11_data_types_54282deb-6db8-44b2-b87c-e3f4426141f6.xml, PDOT11_DISASSOCIATE_PEER_REQUEST structure pointer [Network Drivers Starting with Windows Vista], DOT11_DISASSOCIATE_PEER_REQUEST structure [Network Drivers Starting with Windows Vista], _DOT11_DISASSOCIATE_PEER_REQUEST
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: windot11.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7 and later versions of the Windows operating   system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	windot11.h
+apiname:
+-	DOT11_DISASSOCIATE_PEER_REQUEST
+product: Windows
+targetos: Windows
+req.typenames: DOT11_DISASSOCIATE_PEER_REQUEST, *PDOT11_DISASSOCIATE_PEER_REQUEST
+req.product: Windows 10 or later.
 ---
 
 # _DOT11_DISASSOCIATE_PEER_REQUEST structure

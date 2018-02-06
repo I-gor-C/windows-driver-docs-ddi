@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.CmRegisterCallback
-title : CmRegisterCallback function
-author : windows-driver-content
-description : The CmRegisterCallback routine is obsolete for Windows Vista and later operating system versions. Use CmRegisterCallbackEx instead.The CmRegisterCallback routine registers a RegistryCallback routine.
-old-location : kernel\cmregistercallback.htm
-old-project : kernel
-ms.assetid : 1c7d1f90-f34b-4a93-bce2-581abe7cdc39
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : CmRegisterCallback, wdm/CmRegisterCallback, ConfigMgrRef_ec214e13-1342-48b5-9a31-8c6c9da57cd6.xml, CmRegisterCallback routine [Kernel-Mode Driver Architecture], kernel.cmregistercallback
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows XP and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : IrqlExApcLte2, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<=APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.CmRegisterCallback
+title: CmRegisterCallback function
+author: windows-driver-content
+description: The CmRegisterCallback routine is obsolete for Windows Vista and later operating system versions. Use CmRegisterCallbackEx instead.The CmRegisterCallback routine registers a RegistryCallback routine.
+old-location: kernel\cmregistercallback.htm
+old-project: kernel
+ms.assetid: 1c7d1f90-f34b-4a93-bce2-581abe7cdc39
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: CmRegisterCallback, wdm/CmRegisterCallback, ConfigMgrRef_ec214e13-1342-48b5-9a31-8c6c9da57cd6.xml, CmRegisterCallback routine [Kernel-Mode Driver Architecture], kernel.cmregistercallback
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows XP and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: IrqlExApcLte2, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<=APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	CmRegisterCallback
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

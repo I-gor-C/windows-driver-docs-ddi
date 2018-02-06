@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.KSDS3D_ITD_PARAMS_MSG
-title : KSDS3D_ITD_PARAMS_MSG
-author : windows-driver-content
-description : The KSDS3D_ITD_PARAMS_MSG structure specifies the parameters used by the interaural time delay (ITD) algorithm in a 3D node (KSNODETYPE_3D_EFFECTS).
-old-location : audio\ksds3d_itd_params_msg.htm
-old-project : audio
-ms.assetid : cc580766-54ca-47b2-93dd-2f234afa73ff
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : "*PKSDS3D_ITD_PARAMS_MSG, KSDS3D_ITD_PARAMS_MSG structure [Audio Devices], audio.ksds3d_itd_params_msg, PKSDS3D_ITD_PARAMS_MSG structure pointer [Audio Devices], ksmedia/PKSDS3D_ITD_PARAMS_MSG, aud-prop_af31be2f-c153-4430-9634-6d29b05208dd.xml, ksmedia/KSDS3D_ITD_PARAMS_MSG, KSDS3D_ITD_PARAMS_MSG, PKSDS3D_ITD_PARAMS_MSG"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKSDS3D_ITD_PARAMS_MSG, KSDS3D_ITD_PARAMS_MSG"
+UID: NS:ksmedia.KSDS3D_ITD_PARAMS_MSG
+title: KSDS3D_ITD_PARAMS_MSG
+author: windows-driver-content
+description: The KSDS3D_ITD_PARAMS_MSG structure specifies the parameters used by the interaural time delay (ITD) algorithm in a 3D node (KSNODETYPE_3D_EFFECTS).
+old-location: audio\ksds3d_itd_params_msg.htm
+old-project: audio
+ms.assetid: cc580766-54ca-47b2-93dd-2f234afa73ff
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: "*PKSDS3D_ITD_PARAMS_MSG, KSDS3D_ITD_PARAMS_MSG structure [Audio Devices], audio.ksds3d_itd_params_msg, PKSDS3D_ITD_PARAMS_MSG structure pointer [Audio Devices], ksmedia/PKSDS3D_ITD_PARAMS_MSG, aud-prop_af31be2f-c153-4430-9634-6d29b05208dd.xml, ksmedia/KSDS3D_ITD_PARAMS_MSG, KSDS3D_ITD_PARAMS_MSG, PKSDS3D_ITD_PARAMS_MSG"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	KSDS3D_ITD_PARAMS_MSG
+product: Windows
+targetos: Windows
+req.typenames: "*PKSDS3D_ITD_PARAMS_MSG, KSDS3D_ITD_PARAMS_MSG"
 ---
 
 # KSDS3D_ITD_PARAMS_MSG structure

@@ -1,41 +1,46 @@
 ---
-UID : NF:midatlax.RxMapMidToContext
-title : RxMapMidToContext function
-author : windows-driver-content
-description : RxMapMidToContext maps a Multiplex ID (MID) to its associated context in a MID_ATLAS structure.
-old-location : ifsk\rxmapmidtocontext.htm
-old-project : ifsk
-ms.assetid : e0625c27-6de9-401f-a6bd-52697c4a57c0
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.rxmapmidtocontext, RxMapMidToContext function [Installable File System Drivers], midatlax/RxMapMidToContext, RxMapMidToContext, rxref_e7a11999-7ace-4154-91aa-28dc99a83790.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : midatlax.h
-req.include-header : Midatlax.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PMCD_INIT_DATA, MCD_INIT_DATA"
+UID: NF:midatlax.RxMapMidToContext
+title: RxMapMidToContext function
+author: windows-driver-content
+description: RxMapMidToContext maps a Multiplex ID (MID) to its associated context in a MID_ATLAS structure.
+old-location: ifsk\rxmapmidtocontext.htm
+old-project: ifsk
+ms.assetid: e0625c27-6de9-401f-a6bd-52697c4a57c0
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.rxmapmidtocontext, RxMapMidToContext function [Installable File System Drivers], midatlax/RxMapMidToContext, RxMapMidToContext, rxref_e7a11999-7ace-4154-91aa-28dc99a83790.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: midatlax.h
+req.include-header: Midatlax.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	midatlax.h
+apiname:
+-	RxMapMidToContext
+product: Windows
+targetos: Windows
+req.typenames: "*PMCD_INIT_DATA, MCD_INIT_DATA"
 ---
 
 

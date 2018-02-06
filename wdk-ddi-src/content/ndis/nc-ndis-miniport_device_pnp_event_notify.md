@@ -1,41 +1,46 @@
 ---
-UID : NC:ndis.MINIPORT_DEVICE_PNP_EVENT_NOTIFY
-title : MINIPORT_DEVICE_PNP_EVENT_NOTIFY
-author : windows-driver-content
-description : NDIS calls a miniport driver's MiniportDevicePnPEventNotify function to notify the driver of Plug and Play (PnP) events.
-old-location : netvista\miniportdevicepnpeventnotify.htm
-old-project : netvista
-ms.assetid : e41240c0-17be-42ef-a72c-c5311115cf64
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.miniportdevicepnpeventnotify, MiniportDevicePnPEventNotify callback function [Network Drivers Starting with Windows Vista], MiniportDevicePnPEventNotify, MINIPORT_DEVICE_PNP_EVENT_NOTIFY, MINIPORT_DEVICE_PNP_EVENT_NOTIFY, ndis/MiniportDevicePnPEventNotify, miniport_functions_ref_5f503cae-149c-447c-b3f5-cb09d2c47ad7.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : NdisOidComplete
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
+UID: NC:ndis.MINIPORT_DEVICE_PNP_EVENT_NOTIFY
+title: MINIPORT_DEVICE_PNP_EVENT_NOTIFY
+author: windows-driver-content
+description: NDIS calls a miniport driver's MiniportDevicePnPEventNotify function to notify the driver of Plug and Play (PnP) events.
+old-location: netvista\miniportdevicepnpeventnotify.htm
+old-project: netvista
+ms.assetid: e41240c0-17be-42ef-a72c-c5311115cf64
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.miniportdevicepnpeventnotify, MiniportDevicePnPEventNotify callback function [Network Drivers Starting with Windows Vista], MiniportDevicePnPEventNotify, MINIPORT_DEVICE_PNP_EVENT_NOTIFY, MINIPORT_DEVICE_PNP_EVENT_NOTIFY, ndis/MiniportDevicePnPEventNotify, miniport_functions_ref_5f503cae-149c-447c-b3f5-cb09d2c47ad7.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: NdisOidComplete
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ndis.h
+apiname:
+-	MiniportDevicePnPEventNotify
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 

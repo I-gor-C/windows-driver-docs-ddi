@@ -1,42 +1,48 @@
 ---
-UID : NF:wdftimer.WDF_TIMER_CONFIG_INIT_PERIODIC
-title : WDF_TIMER_CONFIG_INIT_PERIODIC function
-author : windows-driver-content
-description : The WDF_TIMER_CONFIG_INIT_PERIODIC function initializes a WDF_TIMER_CONFIG structure for a periodic timer.
-old-location : wdf\wdf_timer_config_init_periodic.htm
-old-project : wdf
-ms.assetid : 44a5b4dd-c654-4af1-afd6-6e59d2cd1ff8
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdftimer/WDF_TIMER_CONFIG_INIT_PERIODIC, WDF_TIMER_CONFIG_INIT_PERIODIC function, kmdf.wdf_timer_config_init_periodic, DFTimerObjectRef_de3c1624-3004-46e3-b6b4-d47768cd8239.xml, WDF_TIMER_CONFIG_INIT_PERIODIC, wdf.wdf_timer_config_init_periodic
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdftimer.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : None
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_REQUEST_SEND_OPTIONS, *PWDF_REQUEST_SEND_OPTIONS
-req.product : Windows 10 or later.
+UID: NF:wdftimer.WDF_TIMER_CONFIG_INIT_PERIODIC
+title: WDF_TIMER_CONFIG_INIT_PERIODIC function
+author: windows-driver-content
+description: The WDF_TIMER_CONFIG_INIT_PERIODIC function initializes a WDF_TIMER_CONFIG structure for a periodic timer.
+old-location: wdf\wdf_timer_config_init_periodic.htm
+old-project: wdf
+ms.assetid: 44a5b4dd-c654-4af1-afd6-6e59d2cd1ff8
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdftimer/WDF_TIMER_CONFIG_INIT_PERIODIC, WDF_TIMER_CONFIG_INIT_PERIODIC function, kmdf.wdf_timer_config_init_periodic, DFTimerObjectRef_de3c1624-3004-46e3-b6b4-d47768cd8239.xml, WDF_TIMER_CONFIG_INIT_PERIODIC, wdf.wdf_timer_config_init_periodic
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdftimer.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: None
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	None
+-	None.dll
+apiname:
+-	WDF_TIMER_CONFIG_INIT_PERIODIC
+product: Windows
+targetos: Windows
+req.typenames: WDF_REQUEST_SEND_OPTIONS, *PWDF_REQUEST_SEND_OPTIONS
+req.product: Windows 10 or later.
 ---
 
 

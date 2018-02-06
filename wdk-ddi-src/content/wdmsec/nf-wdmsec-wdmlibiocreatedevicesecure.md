@@ -1,42 +1,49 @@
 ---
-UID : NF:wdmsec.WdmlibIoCreateDeviceSecure
-title : WdmlibIoCreateDeviceSecure function
-author : windows-driver-content
-description : The WdmlibIoCreateDeviceSecure function (or IoCreateDeviceSecure) creates a named device object and applies the specified security settings.
-old-location : kernel\wdmlibiocreatedevicesecure.htm
-old-project : kernel
-ms.assetid : F4B06D2E-A024-4F0B-91A2-7A7775AD99DC
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdmsec/WdmlibIoCreateDeviceSecure, kernel.wdmlibiocreatedevicesecure, WdmlibIoCreateDeviceSecure function [Kernel-Mode Driver Architecture], WdmlibIoCreateDeviceSecure, IoCreateDeviceSecure, wdmsec/IoCreateDeviceSecure
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdmsec.h
-req.include-header : Wdmsec.h
-req.target-type : Desktop
-req.target-min-winverclnt : See Remarks section.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : MiniportOnlyWdmDevice, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdmsec.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWORK_QUEUE_ITEM, WORK_QUEUE_ITEM"
-req.product : Windows 10 or later.
+UID: NF:wdmsec.WdmlibIoCreateDeviceSecure
+title: WdmlibIoCreateDeviceSecure function
+author: windows-driver-content
+description: The WdmlibIoCreateDeviceSecure function (or IoCreateDeviceSecure) creates a named device object and applies the specified security settings.
+old-location: kernel\wdmlibiocreatedevicesecure.htm
+old-project: kernel
+ms.assetid: F4B06D2E-A024-4F0B-91A2-7A7775AD99DC
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdmsec/WdmlibIoCreateDeviceSecure, kernel.wdmlibiocreatedevicesecure, WdmlibIoCreateDeviceSecure function [Kernel-Mode Driver Architecture], WdmlibIoCreateDeviceSecure, IoCreateDeviceSecure, wdmsec/IoCreateDeviceSecure
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdmsec.h
+req.include-header: Wdmsec.h
+req.target-type: Desktop
+req.target-min-winverclnt: See Remarks section.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: MiniportOnlyWdmDevice, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdmsec.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdmsec.lib
+-	Wdmsec.dll
+apiname:
+-	WdmlibIoCreateDeviceSecure
+-	IoCreateDeviceSecure
+product: Windows
+targetos: Windows
+req.typenames: "*PWORK_QUEUE_ITEM, WORK_QUEUE_ITEM"
+req.product: Windows 10 or later.
 ---
 
 

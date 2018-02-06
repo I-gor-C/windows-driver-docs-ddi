@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.IoGetDeviceObjectPointer
-title : IoGetDeviceObjectPointer function
-author : windows-driver-content
-description : The IoGetDeviceObjectPointer routine returns a pointer to the top object in the named device object's stack and a pointer to the corresponding file object, if the requested access to the objects can be granted.
-old-location : kernel\iogetdeviceobjectpointer.htm
-old-project : kernel
-ms.assetid : aeb088f3-92c3-4619-9c3b-756bd70307e7
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : IoGetDeviceObjectPointer, k104_c57b87e5-8316-4c45-a245-0fe7592c3471.xml, IoGetDeviceObjectPointer routine [Kernel-Mode Driver Architecture], wdm/IoGetDeviceObjectPointer, kernel.iogetdeviceobjectpointer
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : IrqlIoPassive5, PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.IoGetDeviceObjectPointer
+title: IoGetDeviceObjectPointer function
+author: windows-driver-content
+description: The IoGetDeviceObjectPointer routine returns a pointer to the top object in the named device object's stack and a pointer to the corresponding file object, if the requested access to the objects can be granted.
+old-location: kernel\iogetdeviceobjectpointer.htm
+old-project: kernel
+ms.assetid: aeb088f3-92c3-4619-9c3b-756bd70307e7
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: IoGetDeviceObjectPointer, k104_c57b87e5-8316-4c45-a245-0fe7592c3471.xml, IoGetDeviceObjectPointer routine [Kernel-Mode Driver Architecture], wdm/IoGetDeviceObjectPointer, kernel.iogetdeviceobjectpointer
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: IrqlIoPassive5, PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoGetDeviceObjectPointer
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

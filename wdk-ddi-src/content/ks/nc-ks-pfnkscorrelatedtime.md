@@ -1,41 +1,46 @@
 ---
-UID : NC:ks.PFNKSCORRELATEDTIME
-title : PFNKSCORRELATEDTIME
-author : windows-driver-content
-description : A streaming minidriver's KStrCorrelatedTime routine is called to retrieve both the presentation time and physical time in a correlated manner. This allows the clock owner to completely determine the current time.
-old-location : stream\kstrcorrelatedtime.htm
-old-project : stream
-ms.assetid : 6f1b2e93-bc3a-4256-af7b-b015a874112b
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.kstrcorrelatedtime, KStrCorrelatedTime routine [Streaming Media Devices], KStrCorrelatedTime, PFNKSCORRELATEDTIME, PFNKSCORRELATEDTIME, ks/KStrCorrelatedTime, ksfunc_06af0f33-8ffd-4f9e-83ad-9f37f3b18f5d.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KEYWORDSELECTOR
+UID: NC:ks.PFNKSCORRELATEDTIME
+title: PFNKSCORRELATEDTIME
+author: windows-driver-content
+description: A streaming minidriver's KStrCorrelatedTime routine is called to retrieve both the presentation time and physical time in a correlated manner. This allows the clock owner to completely determine the current time.
+old-location: stream\kstrcorrelatedtime.htm
+old-project: stream
+ms.assetid: 6f1b2e93-bc3a-4256-af7b-b015a874112b
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.kstrcorrelatedtime, KStrCorrelatedTime routine [Streaming Media Devices], KStrCorrelatedTime, PFNKSCORRELATEDTIME, PFNKSCORRELATEDTIME, ks/KStrCorrelatedTime, ksfunc_06af0f33-8ffd-4f9e-83ad-9f37f3b18f5d.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	ks.h
+apiname:
+-	KStrCorrelatedTime
+product: Windows
+targetos: Windows
+req.typenames: KEYWORDSELECTOR
 ---
 
 

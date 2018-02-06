@@ -1,42 +1,47 @@
 ---
-UID : NS:wmistr.WMIREGINFOW
-title : WMIREGINFOW
-author : windows-driver-content
-description : The WMIREGINFO structure contains information provided by a driver to register or update its data blocks and event blocks.
-old-location : kernel\wmireginfo.htm
-old-project : kernel
-ms.assetid : 7331b30f-f61c-445c-ac0f-07c887ae92d7
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : WMIREGINFOW, PWMIREGINFOW, wmistr/WMIREGINFOW, kstruct_d_2c5c2f97-d385-4cd6-8b0f-c27d4b21ea11.xml, PWMIREGINFOW structure pointer [Kernel-Mode Driver Architecture], *PWMIREGINFOW, WMIREGINFO, kernel.wmireginfo, wmistr/PWMIREGINFOW, WMIREGINFOW structure [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wmistr.h
-req.include-header : Wmistr.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWMIREGINFOW, WMIREGINFOW"
-req.product : Windows 10 or later.
+UID: NS:wmistr.WMIREGINFOW
+title: WMIREGINFOW
+author: windows-driver-content
+description: The WMIREGINFO structure contains information provided by a driver to register or update its data blocks and event blocks.
+old-location: kernel\wmireginfo.htm
+old-project: kernel
+ms.assetid: 7331b30f-f61c-445c-ac0f-07c887ae92d7
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: WMIREGINFOW, PWMIREGINFOW, wmistr/WMIREGINFOW, kstruct_d_2c5c2f97-d385-4cd6-8b0f-c27d4b21ea11.xml, PWMIREGINFOW structure pointer [Kernel-Mode Driver Architecture], *PWMIREGINFOW, WMIREGINFO, kernel.wmireginfo, wmistr/PWMIREGINFOW, WMIREGINFOW structure [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wmistr.h
+req.include-header: Wmistr.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wmistr.h
+apiname:
+-	WMIREGINFOW
+product: Windows
+targetos: Windows
+req.typenames: "*PWMIREGINFOW, WMIREGINFOW"
+req.product: Windows 10 or later.
 ---
 
 # WMIREGINFOW structure

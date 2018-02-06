@@ -1,41 +1,46 @@
 ---
-UID : NS:61883._CMP_DELETE_PLUG
-title : "_CMP_DELETE_PLUG"
-author : windows-driver-content
-description : This structure is used to delete a plug.Av61883_CreatePlug.
-old-location : ieee\cmp_delete_plug.htm
-old-project : IEEE
-ms.assetid : 93F81B97-5C37-47BF-8867-0FBEFA8F6D3B
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : IEEE.cmp_delete_plug, 61883/CMP_DELETE_PLUG, PCMP_DELETE_PLUG structure pointer [Buses], CMP_DELETE_PLUG, CMP_DELETE_PLUG structure [Buses], 61883/PCMP_DELETE_PLUG, *PCMP_DELETE_PLUG, PCMP_DELETE_PLUG, _CMP_DELETE_PLUG
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : 61883.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PCMP_DELETE_PLUG, CMP_DELETE_PLUG"
+UID: NS:61883._CMP_DELETE_PLUG
+title: "_CMP_DELETE_PLUG"
+author: windows-driver-content
+description: This structure is used to delete a plug.Av61883_CreatePlug.
+old-location: ieee\cmp_delete_plug.htm
+old-project: IEEE
+ms.assetid: 93F81B97-5C37-47BF-8867-0FBEFA8F6D3B
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: IEEE.cmp_delete_plug, 61883/CMP_DELETE_PLUG, PCMP_DELETE_PLUG structure pointer [Buses], CMP_DELETE_PLUG, CMP_DELETE_PLUG structure [Buses], 61883/PCMP_DELETE_PLUG, *PCMP_DELETE_PLUG, PCMP_DELETE_PLUG, _CMP_DELETE_PLUG
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: 61883.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	61883.h
+apiname:
+-	CMP_DELETE_PLUG
+product: Windows
+targetos: Windows
+req.typenames: "*PCMP_DELETE_PLUG, CMP_DELETE_PLUG"
 ---
 
 # _CMP_DELETE_PLUG structure

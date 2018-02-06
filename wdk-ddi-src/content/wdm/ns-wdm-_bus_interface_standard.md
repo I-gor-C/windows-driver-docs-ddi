@@ -1,42 +1,47 @@
 ---
-UID : NS:wdm._BUS_INTERFACE_STANDARD
-title : "_BUS_INTERFACE_STANDARD"
-author : windows-driver-content
-description : The BUS_INTERFACE_STANDARD interface structure enables device drivers to make direct calls to parent bus driver routines. This structure defines the GUID_BUS_INTERFACE_STANDARD interface.
-old-location : kernel\bus_interface_standard.htm
-old-project : kernel
-ms.assetid : cebe5b45-2a7a-4e33-aacb-5cc3ee112808
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : drvr_interface_fbfd342b-15f3-485b-98e4-513beb7db0f5.xml, wdm/BUS_INTERFACE_STANDARD, _BUS_INTERFACE_STANDARD, BUS_INTERFACE_STANDARD, BUS_INTERFACE_STANDARD structure [Kernel-Mode Driver Architecture], PBUS_INTERFACE_STANDARD structure pointer [Kernel-Mode Driver Architecture], *PBUS_INTERFACE_STANDARD, kernel.bus_interface_standard, PBUS_INTERFACE_STANDARD, wdm/PBUS_INTERFACE_STANDARD
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PBUS_INTERFACE_STANDARD, BUS_INTERFACE_STANDARD"
-req.product : Windows 10 or later.
+UID: NS:wdm._BUS_INTERFACE_STANDARD
+title: "_BUS_INTERFACE_STANDARD"
+author: windows-driver-content
+description: The BUS_INTERFACE_STANDARD interface structure enables device drivers to make direct calls to parent bus driver routines. This structure defines the GUID_BUS_INTERFACE_STANDARD interface.
+old-location: kernel\bus_interface_standard.htm
+old-project: kernel
+ms.assetid: cebe5b45-2a7a-4e33-aacb-5cc3ee112808
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: drvr_interface_fbfd342b-15f3-485b-98e4-513beb7db0f5.xml, wdm/BUS_INTERFACE_STANDARD, _BUS_INTERFACE_STANDARD, BUS_INTERFACE_STANDARD, BUS_INTERFACE_STANDARD structure [Kernel-Mode Driver Architecture], PBUS_INTERFACE_STANDARD structure pointer [Kernel-Mode Driver Architecture], *PBUS_INTERFACE_STANDARD, kernel.bus_interface_standard, PBUS_INTERFACE_STANDARD, wdm/PBUS_INTERFACE_STANDARD
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdm.h
+apiname:
+-	BUS_INTERFACE_STANDARD
+product: Windows
+targetos: Windows
+req.typenames: "*PBUS_INTERFACE_STANDARD, BUS_INTERFACE_STANDARD"
+req.product: Windows 10 or later.
 ---
 
 # _BUS_INTERFACE_STANDARD structure

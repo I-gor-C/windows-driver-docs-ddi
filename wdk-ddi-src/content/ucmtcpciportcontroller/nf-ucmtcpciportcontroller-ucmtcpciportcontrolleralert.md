@@ -1,42 +1,47 @@
 ---
-UID : NF:ucmtcpciportcontroller.UcmTcpciPortControllerAlert
-title : UcmTcpciPortControllerAlert function
-author : windows-driver-content
-description : Sends information about the hardware alerts that are received on the port controller to UcmTcpciCx.
-old-location : buses\ucmtcpciportcontrolleralert.htm
-old-project : usbref
-ms.assetid : 38700667-d872-4c08-b846-236e94318dba
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : UcmTcpciPortControllerAlert, ucmtcpciportcontroller/UcmTcpciPortControllerAlert, UcmTcpciPortControllerAlert method [Buses], buses.ucmtcpciportcontrolleralert
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ucmtcpciportcontroller.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : UCMTCPCI_PORT_CONTROLLER_ALERT_TYPE
-req.product : Windows 10 or later.
+UID: NF:ucmtcpciportcontroller.UcmTcpciPortControllerAlert
+title: UcmTcpciPortControllerAlert function
+author: windows-driver-content
+description: Sends information about the hardware alerts that are received on the port controller to UcmTcpciCx.
+old-location: buses\ucmtcpciportcontrolleralert.htm
+old-project: usbref
+ms.assetid: 38700667-d872-4c08-b846-236e94318dba
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: UcmTcpciPortControllerAlert, ucmtcpciportcontroller/UcmTcpciPortControllerAlert, UcmTcpciPortControllerAlert method [Buses], buses.ucmtcpciportcontrolleralert
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ucmtcpciportcontroller.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ucmtcpciportcontroller.h
+apiname:
+-	UcmTcpciPortControllerAlert
+product: Windows
+targetos: Windows
+req.typenames: UCMTCPCI_PORT_CONTROLLER_ALERT_TYPE
+req.product: Windows 10 or later.
 ---
 
 

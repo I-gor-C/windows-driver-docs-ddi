@@ -1,41 +1,46 @@
 ---
-UID : NF:ksproxy.IKsPinPipe.KsGetPipe
-title : IKsPinPipe::KsGetPipe method
-author : windows-driver-content
-description : Not recommended for application use.
-old-location : stream\ikspinpipe_ksgetpipe.htm
-old-project : stream
-ms.assetid : 5672C7E2-83AA-4BDC-BE60-E2BC54BD636F
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KsGetPipe, stream.ikspinpipe_ksgetpipe, ksproxy/IKsPinPipe::KsGetPipe, IKsPinPipe, IKsPinPipe::KsGetPipe, KsGetPipe method [Streaming Media Devices], KsGetPipe method [Streaming Media Devices], IKsPinPipe interface, IKsPinPipe interface [Streaming Media Devices], KsGetPipe method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : ksproxy.h
-req.include-header : Ksproxy.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : ksproxy.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PIPE_STATE
+UID: NF:ksproxy.IKsPinPipe.KsGetPipe
+title: IKsPinPipe::KsGetPipe method
+author: windows-driver-content
+description: Not recommended for application use.
+old-location: stream\ikspinpipe_ksgetpipe.htm
+old-project: stream
+ms.assetid: 5672C7E2-83AA-4BDC-BE60-E2BC54BD636F
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KsGetPipe, stream.ikspinpipe_ksgetpipe, ksproxy/IKsPinPipe::KsGetPipe, IKsPinPipe, IKsPinPipe::KsGetPipe, KsGetPipe method [Streaming Media Devices], KsGetPipe method [Streaming Media Devices], IKsPinPipe interface, IKsPinPipe interface [Streaming Media Devices], KsGetPipe method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: ksproxy.h
+req.include-header: Ksproxy.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: ksproxy.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	ksproxy.h
+apiname:
+-	IKsPinPipe.KsGetPipe
+product: Windows
+targetos: Windows
+req.typenames: PIPE_STATE
 ---
 
 

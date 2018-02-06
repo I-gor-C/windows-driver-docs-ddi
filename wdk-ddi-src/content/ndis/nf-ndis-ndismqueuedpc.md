@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisMQueueDpc
-title : NdisMQueueDpc function
-author : windows-driver-content
-description : NDIS miniport drivers call the NdisMQueueDpc function to schedule DPC calls on CPUs.
-old-location : netvista\ndismqueuedpc.htm
-old-project : netvista
-ms.assetid : 203be18a-b3c5-420b-bcd1-1134beb1c8bd
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.ndismqueuedpc, ndis/NdisMQueueDpc, NdisMQueueDpc, NdisMQueueDpc function [Network Drivers Starting with Windows Vista], ndis_interrupts_functions_ref_a4b04210-b671-4ab3-8b5b-989bed907aed.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported in NDIS 6.0 and 6.1. For NDIS 6.20 and later, use NdisMQueueDpcEx.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisMQueueDpc
+title: NdisMQueueDpc function
+author: windows-driver-content
+description: NDIS miniport drivers call the NdisMQueueDpc function to schedule DPC calls on CPUs.
+old-location: netvista\ndismqueuedpc.htm
+old-project: netvista
+ms.assetid: 203be18a-b3c5-420b-bcd1-1134beb1c8bd
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.ndismqueuedpc, ndis/NdisMQueueDpc, NdisMQueueDpc, NdisMQueueDpc function [Network Drivers Starting with Windows Vista], ndis_interrupts_functions_ref_a4b04210-b671-4ab3-8b5b-989bed907aed.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported in NDIS 6.0 and 6.1. For NDIS 6.20 and later, use NdisMQueueDpcEx.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisMQueueDpc
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NC:hdaudio.PUNREGISTER_EVENT_CALLBACK
-title : PUNREGISTER_EVENT_CALLBACK
-author : windows-driver-content
-description : The UnregisterEventCallback routine deletes the registration of an event callback that was previously registered by a call to RegisterEventCallback.The function pointer type for an UnregisterEventCallback routine is defined as:
-old-location : audio\unregistereventcallback.htm
-old-project : audio
-ms.assetid : 698017a0-13d5-4ed5-a1ce-1a50a62135e0
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : audio.unregistereventcallback, UnregisterEventCallback callback function [Audio Devices], UnregisterEventCallback, PUNREGISTER_EVENT_CALLBACK, PUNREGISTER_EVENT_CALLBACK, hdaudio/UnregisterEventCallback, aud-prop2_9d6c50d7-56ac-4364-9a1e-74ea0d934046.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : hdaudio.h
-req.include-header : Hdaudio.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT
+UID: NC:hdaudio.PUNREGISTER_EVENT_CALLBACK
+title: PUNREGISTER_EVENT_CALLBACK
+author: windows-driver-content
+description: The UnregisterEventCallback routine deletes the registration of an event callback that was previously registered by a call to RegisterEventCallback.The function pointer type for an UnregisterEventCallback routine is defined as:
+old-location: audio\unregistereventcallback.htm
+old-project: audio
+ms.assetid: 698017a0-13d5-4ed5-a1ce-1a50a62135e0
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: audio.unregistereventcallback, UnregisterEventCallback callback function [Audio Devices], UnregisterEventCallback, PUNREGISTER_EVENT_CALLBACK, PUNREGISTER_EVENT_CALLBACK, hdaudio/UnregisterEventCallback, aud-prop2_9d6c50d7-56ac-4364-9a1e-74ea0d934046.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: hdaudio.h
+req.include-header: Hdaudio.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	hdaudio.h
+apiname:
+-	UnregisterEventCallback
+product: Windows
+targetos: Windows
+req.typenames: SM_SetRNIDMgmtInfo_OUT, *PSM_SetRNIDMgmtInfo_OUT
 ---
 
 

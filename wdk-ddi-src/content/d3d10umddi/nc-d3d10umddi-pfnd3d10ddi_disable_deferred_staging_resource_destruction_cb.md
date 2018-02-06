@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3D10DDI_DISABLE_DEFERRED_STAGING_RESOURCE_DESTRUCTION_CB
-title : PFND3D10DDI_DISABLE_DEFERRED_STAGING_RESOURCE_DESTRUCTION_CB
-author : windows-driver-content
-description : The pfnDisableDeferredStagingResourceDestruction function disables the deferred destruction of staging resources.
-old-location : display\pfndisabledeferredstagingresourcedestruction.htm
-old-project : display
-ms.assetid : f0328782-9b5b-44e6-ac58-7eb72685aa52
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.pfndisabledeferredstagingresourcedestruction, pfnDisableDeferredStagingResourceDestruction callback function [Display Devices], pfnDisableDeferredStagingResourceDestruction, PFND3D10DDI_DISABLE_DEFERRED_STAGING_RESOURCE_DESTRUCTION_CB, PFND3D10DDI_DISABLE_DEFERRED_STAGING_RESOURCE_DESTRUCTION_CB, d3d10umddi/pfnDisableDeferredStagingResourceDestruction, d3d10state_functions_2a17cecf-fe42-4058-85d8-524e4ef4d207.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3D10DDI_DISABLE_DEFERRED_STAGING_RESOURCE_DESTRUCTION_CB
+title: PFND3D10DDI_DISABLE_DEFERRED_STAGING_RESOURCE_DESTRUCTION_CB
+author: windows-driver-content
+description: The pfnDisableDeferredStagingResourceDestruction function disables the deferred destruction of staging resources.
+old-location: display\pfndisabledeferredstagingresourcedestruction.htm
+old-project: display
+ms.assetid: f0328782-9b5b-44e6-ac58-7eb72685aa52
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.pfndisabledeferredstagingresourcedestruction, pfnDisableDeferredStagingResourceDestruction callback function [Display Devices], pfnDisableDeferredStagingResourceDestruction, PFND3D10DDI_DISABLE_DEFERRED_STAGING_RESOURCE_DESTRUCTION_CB, PFND3D10DDI_DISABLE_DEFERRED_STAGING_RESOURCE_DESTRUCTION_CB, d3d10umddi/pfnDisableDeferredStagingResourceDestruction, d3d10state_functions_2a17cecf-fe42-4058-85d8-524e4ef4d207.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	pfnDisableDeferredStagingResourceDestruction
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

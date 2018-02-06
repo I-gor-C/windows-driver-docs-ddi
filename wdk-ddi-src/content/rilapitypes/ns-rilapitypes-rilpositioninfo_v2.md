@@ -1,42 +1,47 @@
 ---
-UID : NS:rilapitypes.RILPOSITIONINFO_V2
-title : RILPOSITIONINFO_V2
-author : windows-driver-content
-description : This structure represents the RILPOSITIONINFO_V2.
-old-location : netvista\rilpositioninfo_v2.htm
-old-project : netvista
-ms.assetid : 881e85a2-4ba2-4940-94c0-61a2d335e52a
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : "*LPRILPOSITIONINFO_V2, RILPOSITIONINFO_V2, RILPOSITIONINFO, netvista.rilpositioninfo_v2, *LPRILPOSITIONINFO, rilapitypes/RILPOSITIONINFO_V2, RILPOSITIONINFO_V2 structure [Network Drivers Starting with Windows Vista]"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : rilapitypes.h
-req.include-header : Rilapitypes.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RILPOSITIONINFO_V2, *LPRILPOSITIONINFO_V2, RILPOSITIONINFO, *LPRILPOSITIONINFO
-req.product : Windows 10 or later.
+UID: NS:rilapitypes.RILPOSITIONINFO_V2
+title: RILPOSITIONINFO_V2
+author: windows-driver-content
+description: This structure represents the RILPOSITIONINFO_V2.
+old-location: netvista\rilpositioninfo_v2.htm
+old-project: netvista
+ms.assetid: 881e85a2-4ba2-4940-94c0-61a2d335e52a
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: "*LPRILPOSITIONINFO_V2, RILPOSITIONINFO_V2, RILPOSITIONINFO, netvista.rilpositioninfo_v2, *LPRILPOSITIONINFO, rilapitypes/RILPOSITIONINFO_V2, RILPOSITIONINFO_V2 structure [Network Drivers Starting with Windows Vista]"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: rilapitypes.h
+req.include-header: Rilapitypes.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	rilapitypes.h
+apiname:
+-	RILPOSITIONINFO_V2
+product: Windows
+targetos: Windows
+req.typenames: RILPOSITIONINFO_V2, *LPRILPOSITIONINFO_V2, RILPOSITIONINFO, *LPRILPOSITIONINFO
+req.product: Windows 10 or later.
 ---
 
 # RILPOSITIONINFO_V2 structure

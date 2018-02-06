@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddstor._DEVICE_DATA_SET_LB_PROVISIONING_STATE
-title : "_DEVICE_DATA_SET_LB_PROVISIONING_STATE"
-author : windows-driver-content
-description : The DEVICE_DATA_SET_LB_PROVISIONING_STATE structure is returned by an IOCTL_STORAGE_MANAGE_DATA_SET_ATTRIBUTES request when requesting logical block provisioning information for a data set range.
-old-location : storage\device_data_set_lb_provisioning_state.htm
-old-project : storage
-ms.assetid : 99FBD363-0999-4AEE-A222-69C0FB71D248
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : "*PDEVICE_DATA_SET_LB_PROVISIONING_STATE, DEVICE_DATA_SET_LB_PROVISIONING_STATE structure [Storage Devices], ntddstor/PDEVICE_DATA_SET_LB_PROVISIONING_STATE, ntddstor/DEVICE_DATA_SET_LB_PROVISIONING_STATE, _DEVICE_DATA_SET_LB_PROVISIONING_STATE, storage.device_data_set_lb_provisioning_state, PDEVICE_DATA_SET_LB_PROVISIONING_STATE structure pointer [Storage Devices], DEVICE_DATA_SET_LB_PROVISIONING_STATE, PDEVICE_DATA_SET_LB_PROVISIONING_STATE"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddstor.h
-req.include-header : Ntddstor.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDEVICE_DATA_SET_LB_PROVISIONING_STATE, DEVICE_DATA_SET_LB_PROVISIONING_STATE"
+UID: NS:ntddstor._DEVICE_DATA_SET_LB_PROVISIONING_STATE
+title: "_DEVICE_DATA_SET_LB_PROVISIONING_STATE"
+author: windows-driver-content
+description: The DEVICE_DATA_SET_LB_PROVISIONING_STATE structure is returned by an IOCTL_STORAGE_MANAGE_DATA_SET_ATTRIBUTES request when requesting logical block provisioning information for a data set range.
+old-location: storage\device_data_set_lb_provisioning_state.htm
+old-project: storage
+ms.assetid: 99FBD363-0999-4AEE-A222-69C0FB71D248
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: "*PDEVICE_DATA_SET_LB_PROVISIONING_STATE, DEVICE_DATA_SET_LB_PROVISIONING_STATE structure [Storage Devices], ntddstor/PDEVICE_DATA_SET_LB_PROVISIONING_STATE, ntddstor/DEVICE_DATA_SET_LB_PROVISIONING_STATE, _DEVICE_DATA_SET_LB_PROVISIONING_STATE, storage.device_data_set_lb_provisioning_state, PDEVICE_DATA_SET_LB_PROVISIONING_STATE structure pointer [Storage Devices], DEVICE_DATA_SET_LB_PROVISIONING_STATE, PDEVICE_DATA_SET_LB_PROVISIONING_STATE"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddstor.h
+req.include-header: Ntddstor.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddstor.h
+apiname:
+-	DEVICE_DATA_SET_LB_PROVISIONING_STATE
+product: Windows
+targetos: Windows
+req.typenames: "*PDEVICE_DATA_SET_LB_PROVISIONING_STATE, DEVICE_DATA_SET_LB_PROVISIONING_STATE"
 ---
 
 # _DEVICE_DATA_SET_LB_PROVISIONING_STATE structure

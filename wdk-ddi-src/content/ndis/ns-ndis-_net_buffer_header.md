@@ -1,41 +1,46 @@
 ---
-UID : NS:ndis._NET_BUFFER_HEADER
-title : "_NET_BUFFER_HEADER"
-author : windows-driver-content
-description : The NET_BUFFER_HEADER structure specifies header information for the NET_BUFFER structure.
-old-location : netvista\net_buffer_header.htm
-old-project : netvista
-ms.assetid : db7277d0-9671-4680-84d4-d3415ce3922f
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : ndis/PNET_BUFFER_HEADER, PNET_BUFFER_HEADER union pointer [Network Drivers Starting with Windows Vista], *PNET_BUFFER_HEADER, PNET_BUFFER_HEADER, ndis/NET_BUFFER_HEADER, NET_BUFFER_HEADER, _NET_BUFFER_HEADER, NET_BUFFER_HEADER union [Network Drivers Starting with Windows Vista], netvista.net_buffer_header, ndis_netbuf_structures_ref_a19368c6-0bef-4fe6-be52-d76e0c6ea99d.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : See Remarks section
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NET_BUFFER_HEADER, *PNET_BUFFER_HEADER
+UID: NS:ndis._NET_BUFFER_HEADER
+title: "_NET_BUFFER_HEADER"
+author: windows-driver-content
+description: The NET_BUFFER_HEADER structure specifies header information for the NET_BUFFER structure.
+old-location: netvista\net_buffer_header.htm
+old-project: netvista
+ms.assetid: db7277d0-9671-4680-84d4-d3415ce3922f
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: ndis/PNET_BUFFER_HEADER, PNET_BUFFER_HEADER union pointer [Network Drivers Starting with Windows Vista], *PNET_BUFFER_HEADER, PNET_BUFFER_HEADER, ndis/NET_BUFFER_HEADER, NET_BUFFER_HEADER, _NET_BUFFER_HEADER, NET_BUFFER_HEADER union [Network Drivers Starting with Windows Vista], netvista.net_buffer_header, ndis_netbuf_structures_ref_a19368c6-0bef-4fe6-be52-d76e0c6ea99d.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: See Remarks section
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndis.h
+apiname:
+-	NET_BUFFER_HEADER
+product: Windows
+targetos: Windows
+req.typenames: NET_BUFFER_HEADER, *PNET_BUFFER_HEADER
 ---
 
 # _NET_BUFFER_HEADER structure

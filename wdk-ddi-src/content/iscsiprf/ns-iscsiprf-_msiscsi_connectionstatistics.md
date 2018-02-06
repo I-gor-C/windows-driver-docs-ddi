@@ -1,41 +1,46 @@
 ---
-UID : NS:iscsiprf._MSiSCSI_ConnectionStatistics
-title : "_MSiSCSI_ConnectionStatistics"
-author : windows-driver-content
-description : The MSiSCSI_ConnectionStatistics structure is used by iSCSI initiators to report statistics for a connection within a session.
-old-location : storage\msiscsi_connectionstatistics.htm
-old-project : storage
-ms.assetid : f1f38292-604f-4618-b6ec-f3822d60a96c
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : PMSiSCSI_ConnectionStatistics, _MSiSCSI_ConnectionStatistics, MSiSCSI_ConnectionStatistics structure [Storage Devices], structs-iSCSI_6a149338-4636-45cd-9c15-2444e2ebcd1a.xml, *PMSiSCSI_ConnectionStatistics, PMSiSCSI_ConnectionStatistics structure pointer [Storage Devices], iscsiprf/PMSiSCSI_ConnectionStatistics, MSiSCSI_ConnectionStatistics, storage.msiscsi_connectionstatistics, iscsiprf/MSiSCSI_ConnectionStatistics
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : iscsiprf.h
-req.include-header : Iscsiprf.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : MSiSCSI_ConnectionStatistics, *PMSiSCSI_ConnectionStatistics
+UID: NS:iscsiprf._MSiSCSI_ConnectionStatistics
+title: "_MSiSCSI_ConnectionStatistics"
+author: windows-driver-content
+description: The MSiSCSI_ConnectionStatistics structure is used by iSCSI initiators to report statistics for a connection within a session.
+old-location: storage\msiscsi_connectionstatistics.htm
+old-project: storage
+ms.assetid: f1f38292-604f-4618-b6ec-f3822d60a96c
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: PMSiSCSI_ConnectionStatistics, _MSiSCSI_ConnectionStatistics, MSiSCSI_ConnectionStatistics structure [Storage Devices], structs-iSCSI_6a149338-4636-45cd-9c15-2444e2ebcd1a.xml, *PMSiSCSI_ConnectionStatistics, PMSiSCSI_ConnectionStatistics structure pointer [Storage Devices], iscsiprf/PMSiSCSI_ConnectionStatistics, MSiSCSI_ConnectionStatistics, storage.msiscsi_connectionstatistics, iscsiprf/MSiSCSI_ConnectionStatistics
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: iscsiprf.h
+req.include-header: Iscsiprf.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	iscsiprf.h
+apiname:
+-	MSiSCSI_ConnectionStatistics
+product: Windows
+targetos: Windows
+req.typenames: MSiSCSI_ConnectionStatistics, *PMSiSCSI_ConnectionStatistics
 ---
 
 # _MSiSCSI_ConnectionStatistics structure

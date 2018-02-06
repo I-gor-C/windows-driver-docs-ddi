@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.FsRtlIsPagingFile
-title : FsRtlIsPagingFile function
-author : windows-driver-content
-description : The FsRtlIsPagingFile routine determines whether a given file is a paging file.
-old-location : ifsk\fsrtlispagingfile.htm
-old-project : ifsk
-ms.assetid : 85363a0b-0e62-499e-bcdb-4b86c4a0c3a0
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FsRtlIsPagingFile, fsrtlref_80254cb1-bb65-4b1b-8fe4-c975b0f00c63.xml, ifsk.fsrtlispagingfile, FsRtlIsPagingFile routine [Installable File System Drivers], ntifs/FsRtlIsPagingFile
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : This routine is available on Update Rollup for Windows 2000 Service Pack 4 (SP4) and on Windows XP and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.FsRtlIsPagingFile
+title: FsRtlIsPagingFile function
+author: windows-driver-content
+description: The FsRtlIsPagingFile routine determines whether a given file is a paging file.
+old-location: ifsk\fsrtlispagingfile.htm
+old-project: ifsk
+ms.assetid: 85363a0b-0e62-499e-bcdb-4b86c4a0c3a0
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FsRtlIsPagingFile, fsrtlref_80254cb1-bb65-4b1b-8fe4-c975b0f00c63.xml, ifsk.fsrtlispagingfile, FsRtlIsPagingFile routine [Installable File System Drivers], ntifs/FsRtlIsPagingFile
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: This routine is available on Update Rollup for Windows 2000 Service Pack 4 (SP4) and on Windows XP and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	FsRtlIsPagingFile
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

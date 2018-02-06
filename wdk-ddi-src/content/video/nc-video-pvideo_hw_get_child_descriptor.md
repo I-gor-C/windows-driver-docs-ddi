@@ -1,42 +1,47 @@
 ---
-UID : NC:video.PVIDEO_HW_GET_CHILD_DESCRIPTOR
-title : PVIDEO_HW_GET_CHILD_DESCRIPTOR
-author : windows-driver-content
-description : HwVidGetVideoChildDescriptor returns a descriptor, a type, and an identification number for a particular child device of the display adapter.
-old-location : display\hwvidgetvideochilddescriptor.htm
-old-project : display
-ms.assetid : 175030c1-95d9-4a3b-976c-16e04852cb91
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.hwvidgetvideochilddescriptor, HwVidGetVideoChildDescriptor callback function [Display Devices], HwVidGetVideoChildDescriptor, PVIDEO_HW_GET_CHILD_DESCRIPTOR, PVIDEO_HW_GET_CHILD_DESCRIPTOR, video/HwVidGetVideoChildDescriptor, VideoMiniport_Functions_15898023-8b0d-4cda-8970-4aeb0a7fc444.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VHF_CONFIG, *PVHF_CONFIG
-req.product : Windows 10 or later.
+UID: NC:video.PVIDEO_HW_GET_CHILD_DESCRIPTOR
+title: PVIDEO_HW_GET_CHILD_DESCRIPTOR
+author: windows-driver-content
+description: HwVidGetVideoChildDescriptor returns a descriptor, a type, and an identification number for a particular child device of the display adapter.
+old-location: display\hwvidgetvideochilddescriptor.htm
+old-project: display
+ms.assetid: 175030c1-95d9-4a3b-976c-16e04852cb91
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.hwvidgetvideochilddescriptor, HwVidGetVideoChildDescriptor callback function [Display Devices], HwVidGetVideoChildDescriptor, PVIDEO_HW_GET_CHILD_DESCRIPTOR, PVIDEO_HW_GET_CHILD_DESCRIPTOR, video/HwVidGetVideoChildDescriptor, VideoMiniport_Functions_15898023-8b0d-4cda-8970-4aeb0a7fc444.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	video.h
+apiname:
+-	HwVidGetVideoChildDescriptor
+product: Windows
+targetos: Windows
+req.typenames: VHF_CONFIG, *PVHF_CONFIG
+req.product: Windows 10 or later.
 ---
 
 

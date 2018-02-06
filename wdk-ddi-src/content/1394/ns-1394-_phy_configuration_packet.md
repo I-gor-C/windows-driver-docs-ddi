@@ -1,41 +1,46 @@
 ---
-UID : NS:1394._PHY_CONFIGURATION_PACKET
-title : "_PHY_CONFIGURATION_PACKET"
-author : windows-driver-content
-description : The PHY_CONFIGURATION_PACKET structure contains a raw PHY configuration packet.
-old-location : ieee\phy_configuration_packet.htm
-old-project : IEEE
-ms.assetid : 5a5acd4a-ad99-4b8c-b8ea-490a7b467e14
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : 1394/PHY_CONFIGURATION_PACKET, PPHY_CONFIGURATION_PACKET structure pointer [Buses], *PPHY_CONFIGURATION_PACKET, PHY_CONFIGURATION_PACKET structure [Buses], 1394stct_1d0c74cf-13c7-455d-b51e-5e2f4f2a5c5a.xml, PHY_CONFIGURATION_PACKET, 1394/PPHY_CONFIGURATION_PACKET, PPHY_CONFIGURATION_PACKET, IEEE.phy_configuration_packet, _PHY_CONFIGURATION_PACKET
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : 1394.h
-req.include-header : 1394.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPHY_CONFIGURATION_PACKET, PHY_CONFIGURATION_PACKET"
+UID: NS:1394._PHY_CONFIGURATION_PACKET
+title: "_PHY_CONFIGURATION_PACKET"
+author: windows-driver-content
+description: The PHY_CONFIGURATION_PACKET structure contains a raw PHY configuration packet.
+old-location: ieee\phy_configuration_packet.htm
+old-project: IEEE
+ms.assetid: 5a5acd4a-ad99-4b8c-b8ea-490a7b467e14
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: 1394/PHY_CONFIGURATION_PACKET, PPHY_CONFIGURATION_PACKET structure pointer [Buses], *PPHY_CONFIGURATION_PACKET, PHY_CONFIGURATION_PACKET structure [Buses], 1394stct_1d0c74cf-13c7-455d-b51e-5e2f4f2a5c5a.xml, PHY_CONFIGURATION_PACKET, 1394/PPHY_CONFIGURATION_PACKET, PPHY_CONFIGURATION_PACKET, IEEE.phy_configuration_packet, _PHY_CONFIGURATION_PACKET
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: 1394.h
+req.include-header: 1394.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	1394.h
+apiname:
+-	PHY_CONFIGURATION_PACKET
+product: Windows
+targetos: Windows
+req.typenames: "*PPHY_CONFIGURATION_PACKET, PHY_CONFIGURATION_PACKET"
 ---
 
 # _PHY_CONFIGURATION_PACKET structure

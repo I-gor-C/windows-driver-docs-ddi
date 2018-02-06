@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddvdeo.IOCTL_VIDEO_SHARE_VIDEO_MEMORY
-title : IOCTL_VIDEO_SHARE_VIDEO_MEMORY
-author : windows-driver-content
-description : This IOCTL is called by a process that will share user-mode video memory as a linear frame buffer.
-old-location : display\ioctl_video_share_video_memory.htm
-old-project : display
-ms.assetid : 7e2e437c-d244-4799-abfc-35fb9d2196d7
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.ioctl_video_share_video_memory, IOCTL_VIDEO_SHARE_VIDEO_MEMORY control code [Display Devices], IOCTL_VIDEO_SHARE_VIDEO_MEMORY, ntddvdeo/IOCTL_VIDEO_SHARE_VIDEO_MEMORY, Video_IOCTLs_90056f20-b995-4709-9923-1f7385ebfdce.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddvdeo.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TAPE_WRITE_MARKS, *PTAPE_WRITE_MARKS
+UID: NI:ntddvdeo.IOCTL_VIDEO_SHARE_VIDEO_MEMORY
+title: IOCTL_VIDEO_SHARE_VIDEO_MEMORY
+author: windows-driver-content
+description: This IOCTL is called by a process that will share user-mode video memory as a linear frame buffer.
+old-location: display\ioctl_video_share_video_memory.htm
+old-project: display
+ms.assetid: 7e2e437c-d244-4799-abfc-35fb9d2196d7
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.ioctl_video_share_video_memory, IOCTL_VIDEO_SHARE_VIDEO_MEMORY control code [Display Devices], IOCTL_VIDEO_SHARE_VIDEO_MEMORY, ntddvdeo/IOCTL_VIDEO_SHARE_VIDEO_MEMORY, Video_IOCTLs_90056f20-b995-4709-9923-1f7385ebfdce.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddvdeo.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddvdeo.h
+apiname:
+-	IOCTL_VIDEO_SHARE_VIDEO_MEMORY
+product: Windows
+targetos: Windows
+req.typenames: TAPE_WRITE_MARKS, *PTAPE_WRITE_MARKS
 ---
 
 # IOCTL_VIDEO_SHARE_VIDEO_MEMORY IOCTL

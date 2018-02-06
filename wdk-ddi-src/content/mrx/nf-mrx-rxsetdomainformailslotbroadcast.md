@@ -1,41 +1,46 @@
 ---
-UID : NF:mrx.RxSetDomainForMailslotBroadcast
-title : RxSetDomainForMailslotBroadcast function
-author : windows-driver-content
-description : RxSetDomainForMailslotBroadcast is called by a network mini-redirector driver to set the domain used for mailslot broadcasts if mailslots are supported by the driver.
-old-location : ifsk\rxsetdomainformailslotbroadcast.htm
-old-project : ifsk
-ms.assetid : 22f5e525-bdf8-4047-9b77-6523cb59f090
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : mrx/RxSetDomainForMailslotBroadcast, RxSetDomainForMailslotBroadcast, rxref_d342ef48-ef62-4186-97ea-d974bc4bf596.xml, RxSetDomainForMailslotBroadcast function [Installable File System Drivers], ifsk.rxsetdomainformailslotbroadcast
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : mrx.h
-req.include-header : Mrx.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SetDSMCounters_IN, *PSetDSMCounters_IN
+UID: NF:mrx.RxSetDomainForMailslotBroadcast
+title: RxSetDomainForMailslotBroadcast function
+author: windows-driver-content
+description: RxSetDomainForMailslotBroadcast is called by a network mini-redirector driver to set the domain used for mailslot broadcasts if mailslots are supported by the driver.
+old-location: ifsk\rxsetdomainformailslotbroadcast.htm
+old-project: ifsk
+ms.assetid: 22f5e525-bdf8-4047-9b77-6523cb59f090
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: mrx/RxSetDomainForMailslotBroadcast, RxSetDomainForMailslotBroadcast, rxref_d342ef48-ef62-4186-97ea-d974bc4bf596.xml, RxSetDomainForMailslotBroadcast function [Installable File System Drivers], ifsk.rxsetdomainformailslotbroadcast
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: mrx.h
+req.include-header: Mrx.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	mrx.h
+apiname:
+-	RxSetDomainForMailslotBroadcast
+product: Windows
+targetos: Windows
+req.typenames: SetDSMCounters_IN, *PSetDSMCounters_IN
 ---
 
 

@@ -1,41 +1,47 @@
 ---
-UID : NF:hidpddi.HidP_GetCollectionDescription
-title : HidP_GetCollectionDescription function
-author : windows-driver-content
-description : Fills a device description block with collection description and the corresponding report ID information for the specified report descriptor.
-old-location : hid\hidp_getcollectiondescription.htm
-old-project : hid
-ms.assetid : F8FD0C10-115D-4ACF-8C7F-127D342EA9CD
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : hidpddi/HidP_GetCollectionDescription, HidP_GetCollectionDescription, HidP_GetCollectionDescription function [Human Input Devices], hid.hidp_getcollectiondescription
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : hidpddi.h
-req.include-header : Hidpddi.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 2000 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Hidparse.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HID_XFER_PACKET, *PHID_XFER_PACKET
+UID: NF:hidpddi.HidP_GetCollectionDescription
+title: HidP_GetCollectionDescription function
+author: windows-driver-content
+description: Fills a device description block with collection description and the corresponding report ID information for the specified report descriptor.
+old-location: hid\hidp_getcollectiondescription.htm
+old-project: hid
+ms.assetid: F8FD0C10-115D-4ACF-8C7F-127D342EA9CD
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: hidpddi/HidP_GetCollectionDescription, HidP_GetCollectionDescription, HidP_GetCollectionDescription function [Human Input Devices], hid.hidp_getcollectiondescription
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: hidpddi.h
+req.include-header: Hidpddi.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 2000 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Hidparse.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Hidparse.lib
+-	Hidparse.dll
+apiname:
+-	HidP_GetCollectionDescription
+product: Windows
+targetos: Windows
+req.typenames: HID_XFER_PACKET, *PHID_XFER_PACKET
 ---
 
 

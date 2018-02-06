@@ -1,42 +1,47 @@
 ---
-UID : NS:wdm._CM_EISA_FUNCTION_INFORMATION
-title : "_CM_EISA_FUNCTION_INFORMATION"
-author : windows-driver-content
-description : The CM_EISA_FUNCTION_INFORMATION structure defines detailed EISA configuration information returned by HalGetBusData for the input BusDataType EisaConfiguration, or by HalGetBusDataByOffset for the input BusDataType EisaConfiguration and the Offset zero, assuming the caller-allocated Buffer is of sufficient Length.
-old-location : kernel\cm_eisa_function_information.htm
-old-project : kernel
-ms.assetid : 06034776-4faf-4918-b9ec-bc095455cf14
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/PCM_EISA_FUNCTION_INFORMATION, *PCM_EISA_FUNCTION_INFORMATION, CM_EISA_FUNCTION_INFORMATION, PCM_EISA_FUNCTION_INFORMATION structure pointer [Kernel-Mode Driver Architecture], kernel.cm_eisa_function_information, CM_EISA_FUNCTION_INFORMATION structure [Kernel-Mode Driver Architecture], PCM_EISA_FUNCTION_INFORMATION, _CM_EISA_FUNCTION_INFORMATION, kstruct_a_0ecf5914-f26d-415f-b410-ff2f131b2b08.xml, wdm/CM_EISA_FUNCTION_INFORMATION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : CM_EISA_FUNCTION_INFORMATION, *PCM_EISA_FUNCTION_INFORMATION
-req.product : Windows 10 or later.
+UID: NS:wdm._CM_EISA_FUNCTION_INFORMATION
+title: "_CM_EISA_FUNCTION_INFORMATION"
+author: windows-driver-content
+description: The CM_EISA_FUNCTION_INFORMATION structure defines detailed EISA configuration information returned by HalGetBusData for the input BusDataType EisaConfiguration, or by HalGetBusDataByOffset for the input BusDataType EisaConfiguration and the Offset zero, assuming the caller-allocated Buffer is of sufficient Length.
+old-location: kernel\cm_eisa_function_information.htm
+old-project: kernel
+ms.assetid: 06034776-4faf-4918-b9ec-bc095455cf14
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/PCM_EISA_FUNCTION_INFORMATION, *PCM_EISA_FUNCTION_INFORMATION, CM_EISA_FUNCTION_INFORMATION, PCM_EISA_FUNCTION_INFORMATION structure pointer [Kernel-Mode Driver Architecture], kernel.cm_eisa_function_information, CM_EISA_FUNCTION_INFORMATION structure [Kernel-Mode Driver Architecture], PCM_EISA_FUNCTION_INFORMATION, _CM_EISA_FUNCTION_INFORMATION, kstruct_a_0ecf5914-f26d-415f-b410-ff2f131b2b08.xml, wdm/CM_EISA_FUNCTION_INFORMATION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdm.h
+apiname:
+-	CM_EISA_FUNCTION_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: CM_EISA_FUNCTION_INFORMATION, *PCM_EISA_FUNCTION_INFORMATION
+req.product: Windows 10 or later.
 ---
 
 # _CM_EISA_FUNCTION_INFORMATION structure

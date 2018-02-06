@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmdt._DXGKMDT_OPM_SET_PROTECTION_LEVEL_PARAMETERS
-title : "_DXGKMDT_OPM_SET_PROTECTION_LEVEL_PARAMETERS"
-author : windows-driver-content
-description : The DXGKMDT_OPM_SET_PROTECTION_LEVEL_PARAMETERS structure contains parameters to set the protection level of a protected output in a call to the DxgkDdiOPMConfigureProtectedOutput function.
-old-location : display\dxgkmdt_opm_set_protection_level_parameters.htm
-old-project : display
-ms.assetid : e5b35b0d-c7ad-4a67-8552-13df4c9c2b84
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkmdt_opm_set_protection_level_parameters, DXGKMDT_OPM_SET_PROTECTION_LEVEL_PARAMETERS, _DXGKMDT_OPM_SET_PROTECTION_LEVEL_PARAMETERS, d3dkmdt/DXGKMDT_OPM_SET_PROTECTION_LEVEL_PARAMETERS, DmStructs_9d43af01-039a-4f68-8583-b42ae54a5bbe.xml, DXGKMDT_OPM_SET_PROTECTION_LEVEL_PARAMETERS structure [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmdt.h
-req.include-header : D3dkmdt.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGKMDT_OPM_SET_PROTECTION_LEVEL_PARAMETERS
+UID: NS:d3dkmdt._DXGKMDT_OPM_SET_PROTECTION_LEVEL_PARAMETERS
+title: "_DXGKMDT_OPM_SET_PROTECTION_LEVEL_PARAMETERS"
+author: windows-driver-content
+description: The DXGKMDT_OPM_SET_PROTECTION_LEVEL_PARAMETERS structure contains parameters to set the protection level of a protected output in a call to the DxgkDdiOPMConfigureProtectedOutput function.
+old-location: display\dxgkmdt_opm_set_protection_level_parameters.htm
+old-project: display
+ms.assetid: e5b35b0d-c7ad-4a67-8552-13df4c9c2b84
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkmdt_opm_set_protection_level_parameters, DXGKMDT_OPM_SET_PROTECTION_LEVEL_PARAMETERS, _DXGKMDT_OPM_SET_PROTECTION_LEVEL_PARAMETERS, d3dkmdt/DXGKMDT_OPM_SET_PROTECTION_LEVEL_PARAMETERS, DmStructs_9d43af01-039a-4f68-8583-b42ae54a5bbe.xml, DXGKMDT_OPM_SET_PROTECTION_LEVEL_PARAMETERS structure [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmdt.h
+req.include-header: D3dkmdt.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmdt.h
+apiname:
+-	DXGKMDT_OPM_SET_PROTECTION_LEVEL_PARAMETERS
+product: Windows
+targetos: Windows
+req.typenames: DXGKMDT_OPM_SET_PROTECTION_LEVEL_PARAMETERS
 ---
 
 # _DXGKMDT_OPM_SET_PROTECTION_LEVEL_PARAMETERS structure

@@ -1,42 +1,50 @@
 ---
-UID : NF:wdfrequest.WdfRequestRequeue
-title : WdfRequestRequeue function
-author : windows-driver-content
-description : The WdfRequestRequeue method returns an I/O request to the head of the I/O queue from which it was delivered to the driver.
-old-location : wdf\wdfrequestrequeue.htm
-old-project : wdf
-ms.assetid : 955859d2-7c4f-454c-8621-84bacf0b9770
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WdfRequestRequeue, kmdf.wdfrequestrequeue, wdfrequest/WdfRequestRequeue, DFRequestObjectRef_a51243a8-1412-4765-93a1-7a8f3ab17814.xml, PFN_WDFREQUESTREQUEUE, wdf.wdfrequestrequeue, WdfRequestRequeue method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfrequest.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : DriverCreate, InvalidReqAccess, InvalidReqAccessLocal, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_REQUEST_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfrequest.WdfRequestRequeue
+title: WdfRequestRequeue function
+author: windows-driver-content
+description: The WdfRequestRequeue method returns an I/O request to the head of the I/O queue from which it was delivered to the driver.
+old-location: wdf\wdfrequestrequeue.htm
+old-project: wdf
+ms.assetid: 955859d2-7c4f-454c-8621-84bacf0b9770
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WdfRequestRequeue, kmdf.wdfrequestrequeue, wdfrequest/WdfRequestRequeue, DFRequestObjectRef_a51243a8-1412-4765-93a1-7a8f3ab17814.xml, PFN_WDFREQUESTREQUEUE, wdf.wdfrequestrequeue, WdfRequestRequeue method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfrequest.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: DriverCreate, InvalidReqAccess, InvalidReqAccessLocal, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+-	WUDFx02000.dll
+-	WUDFx02000.dll.dll
+apiname:
+-	WdfRequestRequeue
+product: Windows
+targetos: Windows
+req.typenames: WDF_REQUEST_TYPE
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.PoUnregisterSystemState
-title : PoUnregisterSystemState function
-author : windows-driver-content
-description : The PoUnregisterSystemState routine cancels a system state registration created by PoRegisterSystemState.
-old-location : kernel\pounregistersystemstate.htm
-old-project : kernel
-ms.assetid : 5d82342e-c800-44ac-8618-468355d14dd0
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/PoUnregisterSystemState, PoUnregisterSystemState, kernel.pounregistersystemstate, PoUnregisterSystemState routine [Kernel-Mode Driver Architecture], portn_b6118bd0-5fe1-4e75-8c17-e81d1f26814c.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<=APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.PoUnregisterSystemState
+title: PoUnregisterSystemState function
+author: windows-driver-content
+description: The PoUnregisterSystemState routine cancels a system state registration created by PoRegisterSystemState.
+old-location: kernel\pounregistersystemstate.htm
+old-project: kernel
+ms.assetid: 5d82342e-c800-44ac-8618-468355d14dd0
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/PoUnregisterSystemState, PoUnregisterSystemState, kernel.pounregistersystemstate, PoUnregisterSystemState routine [Kernel-Mode Driver Architecture], portn_b6118bd0-5fe1-4e75-8c17-e81d1f26814c.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<=APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	PoUnregisterSystemState
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

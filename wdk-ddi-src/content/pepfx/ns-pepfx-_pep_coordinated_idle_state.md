@@ -1,41 +1,46 @@
 ---
-UID : NS:pepfx._PEP_COORDINATED_IDLE_STATE
-title : "_PEP_COORDINATED_IDLE_STATE"
-author : windows-driver-content
-description : The PEP_COORIDNATED_IDLE_STATE structure describes a coordinated idle state to the OS.
-old-location : kernel\pep_coordinated_idle_state.htm
-old-project : kernel
-ms.assetid : 0B3B53F8-2D1E-430B-9C51-E35465899811
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.pep_coordinated_idle_state, *PPEP_COORDINATED_IDLE_STATE, pepfx/PEP_COORDINATED_IDLE_STATE, _PEP_COORDINATED_IDLE_STATE, PEP_COORDINATED_IDLE_STATE, PEP_COORDINATED_IDLE_STATE structure [Kernel-Mode Driver Architecture], PPEP_COORDINATED_IDLE_STATE structure pointer [Kernel-Mode Driver Architecture], PPEP_COORDINATED_IDLE_STATE, pepfx/PPEP_COORDINATED_IDLE_STATE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : pepfx.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with Windows 10.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PEP_COORDINATED_IDLE_STATE, *PPEP_COORDINATED_IDLE_STATE
+UID: NS:pepfx._PEP_COORDINATED_IDLE_STATE
+title: "_PEP_COORDINATED_IDLE_STATE"
+author: windows-driver-content
+description: The PEP_COORIDNATED_IDLE_STATE structure describes a coordinated idle state to the OS.
+old-location: kernel\pep_coordinated_idle_state.htm
+old-project: kernel
+ms.assetid: 0B3B53F8-2D1E-430B-9C51-E35465899811
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.pep_coordinated_idle_state, *PPEP_COORDINATED_IDLE_STATE, pepfx/PEP_COORDINATED_IDLE_STATE, _PEP_COORDINATED_IDLE_STATE, PEP_COORDINATED_IDLE_STATE, PEP_COORDINATED_IDLE_STATE structure [Kernel-Mode Driver Architecture], PPEP_COORDINATED_IDLE_STATE structure pointer [Kernel-Mode Driver Architecture], PPEP_COORDINATED_IDLE_STATE, pepfx/PPEP_COORDINATED_IDLE_STATE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: pepfx.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows 10.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	pepfx.h
+apiname:
+-	PEP_COORDINATED_IDLE_STATE
+product: Windows
+targetos: Windows
+req.typenames: PEP_COORDINATED_IDLE_STATE, *PPEP_COORDINATED_IDLE_STATE
 ---
 
 # _PEP_COORDINATED_IDLE_STATE structure

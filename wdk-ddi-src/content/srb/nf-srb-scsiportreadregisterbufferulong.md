@@ -1,42 +1,48 @@
 ---
-UID : NF:srb.ScsiPortReadRegisterBufferUlong
-title : ScsiPortReadRegisterBufferUlong function
-author : windows-driver-content
-description : The ScsiPortReadRegisterBufferUlong routine transfers a specified number of ULONG values from the HBA to a buffer.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future.
-old-location : storage\scsiportreadregisterbufferulong.htm
-old-project : storage
-ms.assetid : 6b2d1893-8878-4ccd-bc0c-845e1cb8f6bf
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : srb/ScsiPortReadRegisterBufferUlong, scsiprt_4356902d-5810-4006-acbe-40d41c2d68e4.xml, ScsiPortReadRegisterBufferUlong, storage.scsiportreadregisterbufferulong, ScsiPortReadRegisterBufferUlong routine [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : srb.h
-req.include-header : Miniport.h, Scsi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Scsiport.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SPB_CONTROLLER_CONFIG, *PSPB_CONTROLLER_CONFIG
-req.product : Windows 10 or later.
+UID: NF:srb.ScsiPortReadRegisterBufferUlong
+title: ScsiPortReadRegisterBufferUlong function
+author: windows-driver-content
+description: The ScsiPortReadRegisterBufferUlong routine transfers a specified number of ULONG values from the HBA to a buffer.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future.
+old-location: storage\scsiportreadregisterbufferulong.htm
+old-project: storage
+ms.assetid: 6b2d1893-8878-4ccd-bc0c-845e1cb8f6bf
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: srb/ScsiPortReadRegisterBufferUlong, scsiprt_4356902d-5810-4006-acbe-40d41c2d68e4.xml, ScsiPortReadRegisterBufferUlong, storage.scsiportreadregisterbufferulong, ScsiPortReadRegisterBufferUlong routine [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: srb.h
+req.include-header: Miniport.h, Scsi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Scsiport.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Scsiport.lib
+-	Scsiport.dll
+apiname:
+-	ScsiPortReadRegisterBufferUlong
+product: Windows
+targetos: Windows
+req.typenames: SPB_CONTROLLER_CONFIG, *PSPB_CONTROLLER_CONFIG
+req.product: Windows 10 or later.
 ---
 
 

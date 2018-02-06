@@ -1,41 +1,46 @@
 ---
-UID : NS:ndischimney._NEIGHBOR_OFFLOAD_STATE_DELEGATED
-title : "_NEIGHBOR_OFFLOAD_STATE_DELEGATED"
-author : windows-driver-content
-description : The NEIGHBOR_OFFLOAD_STATE_DELGATED structure contains the delegated variable of a neighbor state object.
-old-location : netvista\neighbor_offload_state_delegated.htm
-old-project : netvista
-ms.assetid : 94a35d0f-3585-45d0-bba8-0b4a8ebbe883
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : PNEIGHBOR_OFFLOAD_STATE_DELEGATED, *PNEIGHBOR_OFFLOAD_STATE_DELEGATED, NEIGHBOR_OFFLOAD_STATE_DELEGATED, ndischimney/PNEIGHBOR_OFFLOAD_STATE_DELEGATED, netvista.neighbor_offload_state_delegated, NEIGHBOR_OFFLOAD_STATE_DELEGATED structure [Network Drivers Starting with Windows Vista], tcp_chim_struct_860c3a42-4276-4a6e-92c2-c32bc1afa9b2.xml, _NEIGHBOR_OFFLOAD_STATE_DELEGATED, PNEIGHBOR_OFFLOAD_STATE_DELEGATED structure pointer [Network Drivers Starting with Windows Vista], ndischimney/NEIGHBOR_OFFLOAD_STATE_DELEGATED
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndischimney.h
-req.include-header : Ndischimney.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PNEIGHBOR_OFFLOAD_STATE_DELEGATED, NEIGHBOR_OFFLOAD_STATE_DELEGATED"
+UID: NS:ndischimney._NEIGHBOR_OFFLOAD_STATE_DELEGATED
+title: "_NEIGHBOR_OFFLOAD_STATE_DELEGATED"
+author: windows-driver-content
+description: The NEIGHBOR_OFFLOAD_STATE_DELGATED structure contains the delegated variable of a neighbor state object.
+old-location: netvista\neighbor_offload_state_delegated.htm
+old-project: netvista
+ms.assetid: 94a35d0f-3585-45d0-bba8-0b4a8ebbe883
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: PNEIGHBOR_OFFLOAD_STATE_DELEGATED, *PNEIGHBOR_OFFLOAD_STATE_DELEGATED, NEIGHBOR_OFFLOAD_STATE_DELEGATED, ndischimney/PNEIGHBOR_OFFLOAD_STATE_DELEGATED, netvista.neighbor_offload_state_delegated, NEIGHBOR_OFFLOAD_STATE_DELEGATED structure [Network Drivers Starting with Windows Vista], tcp_chim_struct_860c3a42-4276-4a6e-92c2-c32bc1afa9b2.xml, _NEIGHBOR_OFFLOAD_STATE_DELEGATED, PNEIGHBOR_OFFLOAD_STATE_DELEGATED structure pointer [Network Drivers Starting with Windows Vista], ndischimney/NEIGHBOR_OFFLOAD_STATE_DELEGATED
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndischimney.h
+req.include-header: Ndischimney.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndischimney.h
+apiname:
+-	NEIGHBOR_OFFLOAD_STATE_DELEGATED
+product: Windows
+targetos: Windows
+req.typenames: "*PNEIGHBOR_OFFLOAD_STATE_DELEGATED, NEIGHBOR_OFFLOAD_STATE_DELEGATED"
 ---
 
 # _NEIGHBOR_OFFLOAD_STATE_DELEGATED structure

@@ -1,42 +1,49 @@
 ---
-UID : NF:wdm.TmReadOnlyEnlistment
-title : TmReadOnlyEnlistment function
-author : windows-driver-content
-description : The TmReadOnlyEnlistment routine sets a specified enlistment to be read-only.
-old-location : kernel\tmreadonlyenlistment.htm
-old-project : kernel
-ms.assetid : 7d375152-c1d2-4e6d-a6a8-7394a7ef0e35
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.tmreadonlyenlistment, TmReadOnlyEnlistment, ktm_ref_fbd80117-d891-4e06-b271-5d838e7ecab0.xml, wdm/TmReadOnlyEnlistment, TmReadOnlyEnlistment routine [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later operating system versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.TmReadOnlyEnlistment
+title: TmReadOnlyEnlistment function
+author: windows-driver-content
+description: The TmReadOnlyEnlistment routine sets a specified enlistment to be read-only.
+old-location: kernel\tmreadonlyenlistment.htm
+old-project: kernel
+ms.assetid: 7d375152-c1d2-4e6d-a6a8-7394a7ef0e35
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.tmreadonlyenlistment, TmReadOnlyEnlistment, ktm_ref_fbd80117-d891-4e06-b271-5d838e7ecab0.xml, wdm/TmReadOnlyEnlistment, TmReadOnlyEnlistment routine [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later operating system versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+-	Ext-MS-Win-ntos-tm-l1-1-0.dll
+-	tm.sys
+apiname:
+-	TmReadOnlyEnlistment
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

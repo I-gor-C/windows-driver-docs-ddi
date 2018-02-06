@@ -1,41 +1,46 @@
 ---
-UID : NS:iddcx.IDDCX_METADATA
-title : IDDCX_METADATA
-author : windows-driver-content
-description : Gives information about the current provided surface and what is displayed on it.
-old-location : display\iddcx_metadata.htm
-old-project : display
-ms.assetid : 7128e49d-71e9-4014-9f08-591cfaeba363
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : IDDCX_METADATA structure pointer [Display Devices], IDDCX_METADATA structure [Display Devices], iddcx/IDDCX_METADATA, IDDCX_METADATA structure structure [Display Devices], IDDCX_METADATA structure, display.iddcx_metadata, IDDCX_METADATA
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : iddcx.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NS:iddcx.IDDCX_METADATA
+title: IDDCX_METADATA
+author: windows-driver-content
+description: Gives information about the current provided surface and what is displayed on it.
+old-location: display\iddcx_metadata.htm
+old-project: display
+ms.assetid: 7128e49d-71e9-4014-9f08-591cfaeba363
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: IDDCX_METADATA structure pointer [Display Devices], IDDCX_METADATA structure [Display Devices], iddcx/IDDCX_METADATA, IDDCX_METADATA structure structure [Display Devices], IDDCX_METADATA structure, display.iddcx_metadata, IDDCX_METADATA
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: iddcx.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	iddcx.h
+apiname:
+-	IDDCX_METADATA
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 # IDDCX_METADATA structure

@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddndis._NDIS_NIC_SWITCH_FREE_VF_PARAMETERS
-title : "_NDIS_NIC_SWITCH_FREE_VF_PARAMETERS"
-author : windows-driver-content
-description : The NDIS_NIC_SWITCH_FREE_VF_PARAMETERS specifies a PCI Express (PCIe) Virtual Function (VF) whose resources will be freed.
-old-location : netvista\ndis_nic_switch_free_vf_parameters.htm
-old-project : netvista
-ms.assetid : 61f3839a-f428-4585-a046-edce85d829dd
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NDIS_NIC_SWITCH_FREE_VF_PARAMETERS, PNDIS_NIC_SWITCH_FREE_VF_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], PNDIS_NIC_SWITCH_FREE_VF_PARAMETERS, _NDIS_NIC_SWITCH_FREE_VF_PARAMETERS, ntddndis/NDIS_NIC_SWITCH_FREE_VF_PARAMETERS, NDIS_NIC_SWITCH_FREE_VF_PARAMETERS structure [Network Drivers Starting with Windows Vista], ntddndis/PNDIS_NIC_SWITCH_FREE_VF_PARAMETERS, *PNDIS_NIC_SWITCH_FREE_VF_PARAMETERS, netvista.ndis_nic_switch_free_vf_parameters
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.30 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_NIC_SWITCH_FREE_VF_PARAMETERS, *PNDIS_NIC_SWITCH_FREE_VF_PARAMETERS
+UID: NS:ntddndis._NDIS_NIC_SWITCH_FREE_VF_PARAMETERS
+title: "_NDIS_NIC_SWITCH_FREE_VF_PARAMETERS"
+author: windows-driver-content
+description: The NDIS_NIC_SWITCH_FREE_VF_PARAMETERS specifies a PCI Express (PCIe) Virtual Function (VF) whose resources will be freed.
+old-location: netvista\ndis_nic_switch_free_vf_parameters.htm
+old-project: netvista
+ms.assetid: 61f3839a-f428-4585-a046-edce85d829dd
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NDIS_NIC_SWITCH_FREE_VF_PARAMETERS, PNDIS_NIC_SWITCH_FREE_VF_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], PNDIS_NIC_SWITCH_FREE_VF_PARAMETERS, _NDIS_NIC_SWITCH_FREE_VF_PARAMETERS, ntddndis/NDIS_NIC_SWITCH_FREE_VF_PARAMETERS, NDIS_NIC_SWITCH_FREE_VF_PARAMETERS structure [Network Drivers Starting with Windows Vista], ntddndis/PNDIS_NIC_SWITCH_FREE_VF_PARAMETERS, *PNDIS_NIC_SWITCH_FREE_VF_PARAMETERS, netvista.ndis_nic_switch_free_vf_parameters
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.30 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddndis.h
+apiname:
+-	NDIS_NIC_SWITCH_FREE_VF_PARAMETERS
+product: Windows
+targetos: Windows
+req.typenames: NDIS_NIC_SWITCH_FREE_VF_PARAMETERS, *PNDIS_NIC_SWITCH_FREE_VF_PARAMETERS
 ---
 
 # _NDIS_NIC_SWITCH_FREE_VF_PARAMETERS structure

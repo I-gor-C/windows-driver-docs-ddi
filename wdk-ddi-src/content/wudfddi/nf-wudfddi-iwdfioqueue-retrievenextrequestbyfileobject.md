@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFIoQueue.RetrieveNextRequestByFileObject
-title : IWDFIoQueue::RetrieveNextRequestByFileObject method
-author : windows-driver-content
-description : The RetrieveNextRequestByFileObject method retrieves from an I/O queue the next I/O request whose file object matches the specified file object.
-old-location : wdf\iwdfioqueue_retrievenextrequestbyfileobject.htm
-old-project : wdf
-ms.assetid : 136b7582-b974-44fb-8026-e9678ae6623c
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : RetrieveNextRequestByFileObject method, RetrieveNextRequestByFileObject, IWDFIoQueue::RetrieveNextRequestByFileObject, IWDFIoQueue interface, RetrieveNextRequestByFileObject method, umdf.iwdfioqueue_retrievenextrequestbyfileobject, RetrieveNextRequestByFileObject method, IWDFIoQueue interface, UMDFQueueObjectRef_15af6c6e-0a40-41bd-9b76-fb7c206bc937.xml, wudfddi/IWDFIoQueue::RetrieveNextRequestByFileObject, wdf.iwdfioqueue_retrievenextrequestbyfileobject, IWDFIoQueue
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.5
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFIoQueue.RetrieveNextRequestByFileObject
+title: IWDFIoQueue::RetrieveNextRequestByFileObject method
+author: windows-driver-content
+description: The RetrieveNextRequestByFileObject method retrieves from an I/O queue the next I/O request whose file object matches the specified file object.
+old-location: wdf\iwdfioqueue_retrievenextrequestbyfileobject.htm
+old-project: wdf
+ms.assetid: 136b7582-b974-44fb-8026-e9678ae6623c
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: RetrieveNextRequestByFileObject method, RetrieveNextRequestByFileObject, IWDFIoQueue::RetrieveNextRequestByFileObject, IWDFIoQueue interface, RetrieveNextRequestByFileObject method, umdf.iwdfioqueue_retrievenextrequestbyfileobject, RetrieveNextRequestByFileObject method, IWDFIoQueue interface, UMDFQueueObjectRef_15af6c6e-0a40-41bd-9b76-fb7c206bc937.xml, wudfddi/IWDFIoQueue::RetrieveNextRequestByFileObject, wdf.iwdfioqueue_retrievenextrequestbyfileobject, IWDFIoQueue
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.5
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFIoQueue.RetrieveNextRequestByFileObject
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

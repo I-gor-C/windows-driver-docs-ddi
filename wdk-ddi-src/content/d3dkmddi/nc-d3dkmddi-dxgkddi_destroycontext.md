@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dkmddi.DXGKDDI_DESTROYCONTEXT
-title : DXGKDDI_DESTROYCONTEXT
-author : windows-driver-content
-description : The DxgkDdiDestroyContext function destroys the specified graphics processing unit (GPU) context.
-old-location : display\dxgkddidestroycontext.htm
-old-project : display
-ms.assetid : c21f62ab-c52e-43a2-a3a1-6fd6e5fbde01
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkddidestroycontext, DxgkDdiDestroyContext callback function [Display Devices], DxgkDdiDestroyContext, DXGKDDI_DESTROYCONTEXT, DXGKDDI_DESTROYCONTEXT, d3dkmddi/DxgkDdiDestroyContext, DmFunctions_b8cd0b48-a87b-4e6f-8811-49a1e0f46f2f.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dkmddi.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
+UID: NC:d3dkmddi.DXGKDDI_DESTROYCONTEXT
+title: DXGKDDI_DESTROYCONTEXT
+author: windows-driver-content
+description: The DxgkDdiDestroyContext function destroys the specified graphics processing unit (GPU) context.
+old-location: display\dxgkddidestroycontext.htm
+old-project: display
+ms.assetid: c21f62ab-c52e-43a2-a3a1-6fd6e5fbde01
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkddidestroycontext, DxgkDdiDestroyContext callback function [Display Devices], DxgkDdiDestroyContext, DXGKDDI_DESTROYCONTEXT, DXGKDDI_DESTROYCONTEXT, d3dkmddi/DxgkDdiDestroyContext, DmFunctions_b8cd0b48-a87b-4e6f-8811-49a1e0f46f2f.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dkmddi.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DxgkDdiDestroyContext
+product: Windows
+targetos: Windows
+req.typenames: DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
 

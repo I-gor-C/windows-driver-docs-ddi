@@ -1,41 +1,47 @@
 ---
-UID : NF:fltkernel.FltFreeFileLock
-title : FltFreeFileLock function
-author : windows-driver-content
-description : The FltFreeFileLock routine uninitializes and frees an initialized FILE_LOCK structure.
-old-location : ifsk\fltfreefilelock.htm
-old-project : ifsk
-ms.assetid : bcf2ac97-0aa2-4464-a045-b98866351243
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltFreeFileLock routine [Installable File System Drivers], FltApiRef_e_to_o_823e2511-8afe-4151-bbac-a9481c079068.xml, fltkernel/FltFreeFileLock, FltFreeFileLock, ifsk.fltfreefilelock
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : This routine is available on Microsoft Windows XP SP2, Microsoft Windows Server 2003 SP1, and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltFreeFileLock
+title: FltFreeFileLock function
+author: windows-driver-content
+description: The FltFreeFileLock routine uninitializes and frees an initialized FILE_LOCK structure.
+old-location: ifsk\fltfreefilelock.htm
+old-project: ifsk
+ms.assetid: bcf2ac97-0aa2-4464-a045-b98866351243
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltFreeFileLock routine [Installable File System Drivers], FltApiRef_e_to_o_823e2511-8afe-4151-bbac-a9481c079068.xml, fltkernel/FltFreeFileLock, FltFreeFileLock, ifsk.fltfreefilelock
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: This routine is available on Microsoft Windows XP SP2, Microsoft Windows Server 2003 SP1, and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	FltMgr.lib
+-	FltMgr.dll
+apiname:
+-	FltFreeFileLock
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

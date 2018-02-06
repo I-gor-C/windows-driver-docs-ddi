@@ -1,41 +1,47 @@
 ---
-UID : NF:fwpsk.FwpsQueryConnectionRedirectState0
-title : FwpsQueryConnectionRedirectState0 function
-author : windows-driver-content
-description : The FwpsQueryConnectionRedirectState0 function returns the connection redirect state.Note  FwpsQueryConnectionRedirectState0 is a specific version of FwpsQueryConnectionRedirectState.
-old-location : netvista\fwpsqueryconnectionredirectstate0.htm
-old-project : netvista
-ms.assetid : 6db0a5ac-edab-4e84-b378-30ed0c23cd4b
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.fwpsqueryconnectionredirectstate0, fwpsk/FwpsQueryConnectionRedirectState0, FwpsQueryConnectionRedirectState0 function [Network Drivers Starting with Windows Vista], FwpsQueryConnectionRedirectState0
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fwpsk.h
-req.include-header : Fwpsk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Fwpkclnt.lib
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FWPS_VSWITCH_EVENT_TYPE
+UID: NF:fwpsk.FwpsQueryConnectionRedirectState0
+title: FwpsQueryConnectionRedirectState0 function
+author: windows-driver-content
+description: The FwpsQueryConnectionRedirectState0 function returns the connection redirect state.Note  FwpsQueryConnectionRedirectState0 is a specific version of FwpsQueryConnectionRedirectState.
+old-location: netvista\fwpsqueryconnectionredirectstate0.htm
+old-project: netvista
+ms.assetid: 6db0a5ac-edab-4e84-b378-30ed0c23cd4b
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.fwpsqueryconnectionredirectstate0, fwpsk/FwpsQueryConnectionRedirectState0, FwpsQueryConnectionRedirectState0 function [Network Drivers Starting with Windows Vista], FwpsQueryConnectionRedirectState0
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fwpsk.h
+req.include-header: Fwpsk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Fwpkclnt.lib
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	fwpkclnt.lib
+-	fwpkclnt.dll
+apiname:
+-	FwpsQueryConnectionRedirectState0
+product: Windows
+targetos: Windows
+req.typenames: FWPS_VSWITCH_EVENT_TYPE
 ---
 
 

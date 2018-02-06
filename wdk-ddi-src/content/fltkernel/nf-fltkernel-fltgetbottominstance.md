@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltGetBottomInstance
-title : FltGetBottomInstance function
-author : windows-driver-content
-description : FltGetBottomInstance returns an opaque instance pointer for the minifilter driver instance, if there is one, that is attached at the bottom of the instance stack for a given volume.
-old-location : ifsk\fltgetbottominstance.htm
-old-project : ifsk
-ms.assetid : a5e7379a-6501-4245-92ce-0474baa33e2c
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltApiRef_e_to_o_14e06d93-d5c8-4154-9184-d30beef6c126.xml, FltGetBottomInstance function [Installable File System Drivers], fltkernel/FltGetBottomInstance, ifsk.fltgetbottominstance, FltGetBottomInstance
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltGetBottomInstance
+title: FltGetBottomInstance function
+author: windows-driver-content
+description: FltGetBottomInstance returns an opaque instance pointer for the minifilter driver instance, if there is one, that is attached at the bottom of the instance stack for a given volume.
+old-location: ifsk\fltgetbottominstance.htm
+old-project: ifsk
+ms.assetid: a5e7379a-6501-4245-92ce-0474baa33e2c
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltApiRef_e_to_o_14e06d93-d5c8-4154-9184-d30beef6c126.xml, FltGetBottomInstance function [Installable File System Drivers], fltkernel/FltGetBottomInstance, ifsk.fltgetbottominstance, FltGetBottomInstance
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltGetBottomInstance
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

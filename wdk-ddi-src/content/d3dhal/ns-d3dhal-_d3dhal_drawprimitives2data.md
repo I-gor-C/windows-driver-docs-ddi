@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dhal._D3DHAL_DRAWPRIMITIVES2DATA
-title : "_D3DHAL_DRAWPRIMITIVES2DATA"
-author : windows-driver-content
-description : The D3DHAL_DRAWPRIMITIVES2DATA structure contains the information required by the D3dDrawPrimitives2 function to render primitives.
-old-location : display\d3dhal_drawprimitives2data.htm
-old-project : display
-ms.assetid : d971e866-3049-4722-bfec-ca3364f291fd
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3dhal/D3DHAL_DRAWPRIMITIVES2DATA, d3dstrct_c9c3dea2-965c-4e98-8ff7-2928afe049fb.xml, d3dhal/LPD3DHAL_DRAWPRIMITIVES2DATA, LPD3DHAL_DRAWPRIMITIVES2DATA, display.d3dhal_drawprimitives2data, LPD3DHAL_DRAWPRIMITIVES2DATA structure pointer [Display Devices], *LPD3DHAL_DRAWPRIMITIVES2DATA, _D3DHAL_DRAWPRIMITIVES2DATA, D3DHAL_DRAWPRIMITIVES2DATA, D3DHAL_DRAWPRIMITIVES2DATA structure [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dhal.h
-req.include-header : D3dhal.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DHAL_DRAWPRIMITIVES2DATA
+UID: NS:d3dhal._D3DHAL_DRAWPRIMITIVES2DATA
+title: "_D3DHAL_DRAWPRIMITIVES2DATA"
+author: windows-driver-content
+description: The D3DHAL_DRAWPRIMITIVES2DATA structure contains the information required by the D3dDrawPrimitives2 function to render primitives.
+old-location: display\d3dhal_drawprimitives2data.htm
+old-project: display
+ms.assetid: d971e866-3049-4722-bfec-ca3364f291fd
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3dhal/D3DHAL_DRAWPRIMITIVES2DATA, d3dstrct_c9c3dea2-965c-4e98-8ff7-2928afe049fb.xml, d3dhal/LPD3DHAL_DRAWPRIMITIVES2DATA, LPD3DHAL_DRAWPRIMITIVES2DATA, display.d3dhal_drawprimitives2data, LPD3DHAL_DRAWPRIMITIVES2DATA structure pointer [Display Devices], *LPD3DHAL_DRAWPRIMITIVES2DATA, _D3DHAL_DRAWPRIMITIVES2DATA, D3DHAL_DRAWPRIMITIVES2DATA, D3DHAL_DRAWPRIMITIVES2DATA structure [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dhal.h
+req.include-header: D3dhal.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dhal.h
+apiname:
+-	D3DHAL_DRAWPRIMITIVES2DATA
+product: Windows
+targetos: Windows
+req.typenames: D3DHAL_DRAWPRIMITIVES2DATA
 ---
 
 # _D3DHAL_DRAWPRIMITIVES2DATA structure

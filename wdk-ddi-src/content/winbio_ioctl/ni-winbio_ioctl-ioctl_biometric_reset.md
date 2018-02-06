@@ -1,42 +1,47 @@
 ---
-UID : NI:winbio_ioctl.IOCTL_BIOMETRIC_RESET
-title : IOCTL_BIOMETRIC_RESET
-author : windows-driver-content
-description : The IOCTL_BIOMETRIC_RESET IOCTL resets the device to a known or idle state, according to the current power state. Vendor-supplied WBDI drivers must support this IOCTL.
-old-location : biometric\ioctl_biometric_reset.htm
-old-project : biometric
-ms.assetid : 4385911b-ae38-4748-ad11-cc161922776a
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : biometric.ioctl_biometric_reset, IOCTL_BIOMETRIC_RESET control code [Biometric Devices], IOCTL_BIOMETRIC_RESET, winbio_ioctl/IOCTL_BIOMETRIC_RESET, biometric_ref_4043b840-5b38-40b2-bd80-282a28badd14.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : winbio_ioctl.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : BMP_IMAGE_INFO, *PBMP_IMAGE_INFO
-req.product : Windows 10 or later.
+UID: NI:winbio_ioctl.IOCTL_BIOMETRIC_RESET
+title: IOCTL_BIOMETRIC_RESET
+author: windows-driver-content
+description: The IOCTL_BIOMETRIC_RESET IOCTL resets the device to a known or idle state, according to the current power state. Vendor-supplied WBDI drivers must support this IOCTL.
+old-location: biometric\ioctl_biometric_reset.htm
+old-project: biometric
+ms.assetid: 4385911b-ae38-4748-ad11-cc161922776a
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: biometric.ioctl_biometric_reset, IOCTL_BIOMETRIC_RESET control code [Biometric Devices], IOCTL_BIOMETRIC_RESET, winbio_ioctl/IOCTL_BIOMETRIC_RESET, biometric_ref_4043b840-5b38-40b2-bd80-282a28badd14.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: winbio_ioctl.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Winbio_ioctl.h
+apiname:
+-	IOCTL_BIOMETRIC_RESET
+product: Windows
+targetos: Windows
+req.typenames: BMP_IMAGE_INFO, *PBMP_IMAGE_INFO
+req.product: Windows 10 or later.
 ---
 
 # IOCTL_BIOMETRIC_RESET IOCTL

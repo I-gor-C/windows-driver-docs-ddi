@@ -1,41 +1,47 @@
 ---
-UID : NF:bdasup.BdaPropertyTemplateConnections
-title : BdaPropertyTemplateConnections function
-author : windows-driver-content
-description : The BdaPropertyTemplateConnections function retrieves a list of connections that describe how pin types and node types are connected in a template topology.
-old-location : stream\bdapropertytemplateconnections.htm
-old-project : stream
-ms.assetid : 64b55b53-677a-4977-b865-0a07d34d2530
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : bdaref_919b0c2d-5bb9-4e17-8028-79f669ab7b8c.xml, stream.bdapropertytemplateconnections, BdaPropertyTemplateConnections, BdaPropertyTemplateConnections function [Streaming Media Devices], bdasup/BdaPropertyTemplateConnections
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : bdasup.h
-req.include-header : Bdasup.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available on Microsoft Windows XP and later operating systems. This routine is available on the Windows 2000 platform only if Microsoft DirectX 9.0 and later is installed on that platform.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Bdasup.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KSP_BDA_NODE_PIN, *PKSP_BDA_NODE_PIN
+UID: NF:bdasup.BdaPropertyTemplateConnections
+title: BdaPropertyTemplateConnections function
+author: windows-driver-content
+description: The BdaPropertyTemplateConnections function retrieves a list of connections that describe how pin types and node types are connected in a template topology.
+old-location: stream\bdapropertytemplateconnections.htm
+old-project: stream
+ms.assetid: 64b55b53-677a-4977-b865-0a07d34d2530
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: bdaref_919b0c2d-5bb9-4e17-8028-79f669ab7b8c.xml, stream.bdapropertytemplateconnections, BdaPropertyTemplateConnections, BdaPropertyTemplateConnections function [Streaming Media Devices], bdasup/BdaPropertyTemplateConnections
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: bdasup.h
+req.include-header: Bdasup.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available on Microsoft Windows XP and later operating systems. This routine is available on the Windows 2000 platform only if Microsoft DirectX 9.0 and later is installed on that platform.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Bdasup.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Bdasup.lib
+-	Bdasup.dll
+apiname:
+-	BdaPropertyTemplateConnections
+product: Windows
+targetos: Windows
+req.typenames: KSP_BDA_NODE_PIN, *PKSP_BDA_NODE_PIN
 ---
 
 

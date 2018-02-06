@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.PoFxSetDeviceIdleTimeout
-title : PoFxSetDeviceIdleTimeout function
-author : windows-driver-content
-description : The PoFxSetDeviceIdleTimeout routine specifies the minimum time interval from when the last component of the device enters the idle condition to when the power management framework (PoFx) calls the driver's DevicePowerNotRequiredCallback routine.
-old-location : kernel\pofxsetdeviceidletimeout.htm
-old-project : kernel
-ms.assetid : 8378D5F1-92AC-4C59-BA66-68246C011199
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.pofxsetdeviceidletimeout, wdm/PoFxSetDeviceIdleTimeout, PoFxSetDeviceIdleTimeout, PoFxSetDeviceIdleTimeout routine [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : 
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ntoskrnl.lib
-req.dll : Ntoskrnl.exe
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.PoFxSetDeviceIdleTimeout
+title: PoFxSetDeviceIdleTimeout function
+author: windows-driver-content
+description: The PoFxSetDeviceIdleTimeout routine specifies the minimum time interval from when the last component of the device enters the idle condition to when the power management framework (PoFx) calls the driver's DevicePowerNotRequiredCallback routine.
+old-location: kernel\pofxsetdeviceidletimeout.htm
+old-project: kernel
+ms.assetid: 8378D5F1-92AC-4C59-BA66-68246C011199
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.pofxsetdeviceidletimeout, wdm/PoFxSetDeviceIdleTimeout, PoFxSetDeviceIdleTimeout, PoFxSetDeviceIdleTimeout routine [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: 
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ntoskrnl.lib
+req.dll: Ntoskrnl.exe
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Ntoskrnl.exe
+apiname:
+-	PoFxSetDeviceIdleTimeout
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

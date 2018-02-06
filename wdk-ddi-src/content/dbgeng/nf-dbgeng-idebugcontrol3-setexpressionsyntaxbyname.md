@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugControl3.SetExpressionSyntaxByName
-title : IDebugControl3::SetExpressionSyntaxByName method
-author : windows-driver-content
-description : The SetExpressionSyntaxByName method sets the syntax that the engine will use to evaluate expressions.
-old-location : debugger\setexpressionsyntaxbyname.htm
-old-project : debugger
-ms.assetid : b9f1618a-e4f7-4eb1-952f-0f565a068dab
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugControl3 interface [Windows Debugging], SetExpressionSyntaxByName method, dbgeng/IDebugControl3::SetExpressionSyntaxByName, IDebugControl_88ebbf3c-a6f7-41d1-84e8-291a8db101c2.xml, SetExpressionSyntaxByName method [Windows Debugging], IDebugControl3, SetExpressionSyntaxByName method [Windows Debugging], IDebugControl3 interface, IDebugControl3::SetExpressionSyntaxByName, SetExpressionSyntaxByName, debugger.setexpressionsyntaxbyname
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl3.SetExpressionSyntaxByName
+title: IDebugControl3::SetExpressionSyntaxByName method
+author: windows-driver-content
+description: The SetExpressionSyntaxByName method sets the syntax that the engine will use to evaluate expressions.
+old-location: debugger\setexpressionsyntaxbyname.htm
+old-project: debugger
+ms.assetid: b9f1618a-e4f7-4eb1-952f-0f565a068dab
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugControl3 interface [Windows Debugging], SetExpressionSyntaxByName method, dbgeng/IDebugControl3::SetExpressionSyntaxByName, IDebugControl_88ebbf3c-a6f7-41d1-84e8-291a8db101c2.xml, SetExpressionSyntaxByName method [Windows Debugging], IDebugControl3, SetExpressionSyntaxByName method [Windows Debugging], IDebugControl3 interface, IDebugControl3::SetExpressionSyntaxByName, SetExpressionSyntaxByName, debugger.setexpressionsyntaxbyname
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl3.SetExpressionSyntaxByName
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

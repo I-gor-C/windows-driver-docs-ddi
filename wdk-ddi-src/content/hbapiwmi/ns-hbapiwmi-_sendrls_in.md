@@ -1,41 +1,46 @@
 ---
-UID : NS:hbapiwmi._SendRLS_IN
-title : "_SendRLS_IN"
-author : windows-driver-content
-description : The SendRLS_IN structure is used to deliver input parameter data to the SendRLS WMI method.
-old-location : storage\sendrls_in.htm
-old-project : storage
-ms.assetid : ba78482f-243a-4f60-907e-8d5c4a702ef2
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : SendRLS_IN structure [Storage Devices], SendRLS_IN, hbapiwmi/SendRLS_IN, *PSendRLS_IN, _SendRLS_IN, PSendRLS_IN, hbapiwmi/PSendRLS_IN, structs-Fibre_c78b38af-b1e5-4f98-a57c-9c4c81b4a5f3.xml, PSendRLS_IN structure pointer [Storage Devices], storage.sendrls_in
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : hbapiwmi.h
-req.include-header : Hbapiwmi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSendRLS_IN, SendRLS_IN"
+UID: NS:hbapiwmi._SendRLS_IN
+title: "_SendRLS_IN"
+author: windows-driver-content
+description: The SendRLS_IN structure is used to deliver input parameter data to the SendRLS WMI method.
+old-location: storage\sendrls_in.htm
+old-project: storage
+ms.assetid: ba78482f-243a-4f60-907e-8d5c4a702ef2
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: SendRLS_IN structure [Storage Devices], SendRLS_IN, hbapiwmi/SendRLS_IN, *PSendRLS_IN, _SendRLS_IN, PSendRLS_IN, hbapiwmi/PSendRLS_IN, structs-Fibre_c78b38af-b1e5-4f98-a57c-9c4c81b4a5f3.xml, PSendRLS_IN structure pointer [Storage Devices], storage.sendrls_in
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: hbapiwmi.h
+req.include-header: Hbapiwmi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hbapiwmi.h
+apiname:
+-	SendRLS_IN
+product: Windows
+targetos: Windows
+req.typenames: "*PSendRLS_IN, SendRLS_IN"
 ---
 
 # _SendRLS_IN structure

@@ -1,41 +1,46 @@
 ---
-UID : NS:ndis._NDIS_ENUM_FILTERS
-title : "_NDIS_ENUM_FILTERS"
-author : windows-driver-content
-description : The NDIS_ENUM_FILTERS structure is returned from the call to the NdisEnumerateFilterModules function to provide filter information for a filter stack.
-old-location : netvista\ndis_enum_filters.htm
-old-project : netvista
-ms.assetid : 0f57e226-dd60-4e62-8622-bfab5c66f537
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : PNDIS_ENUM_FILTERS, ndis/NDIS_ENUM_FILTERS, NDIS_ENUM_FILTERS, *PNDIS_ENUM_FILTERS, ndis/PNDIS_ENUM_FILTERS, filter_structures_ref_4fe2a9d2-2539-40bc-9131-735a6337831e.xml, PNDIS_ENUM_FILTERS structure pointer [Network Drivers Starting with Windows Vista], netvista.ndis_enum_filters, NDIS_ENUM_FILTERS structure [Network Drivers Starting with Windows Vista], _NDIS_ENUM_FILTERS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : See Remarks section
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PNDIS_ENUM_FILTERS, NDIS_ENUM_FILTERS"
+UID: NS:ndis._NDIS_ENUM_FILTERS
+title: "_NDIS_ENUM_FILTERS"
+author: windows-driver-content
+description: The NDIS_ENUM_FILTERS structure is returned from the call to the NdisEnumerateFilterModules function to provide filter information for a filter stack.
+old-location: netvista\ndis_enum_filters.htm
+old-project: netvista
+ms.assetid: 0f57e226-dd60-4e62-8622-bfab5c66f537
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: PNDIS_ENUM_FILTERS, ndis/NDIS_ENUM_FILTERS, NDIS_ENUM_FILTERS, *PNDIS_ENUM_FILTERS, ndis/PNDIS_ENUM_FILTERS, filter_structures_ref_4fe2a9d2-2539-40bc-9131-735a6337831e.xml, PNDIS_ENUM_FILTERS structure pointer [Network Drivers Starting with Windows Vista], netvista.ndis_enum_filters, NDIS_ENUM_FILTERS structure [Network Drivers Starting with Windows Vista], _NDIS_ENUM_FILTERS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: See Remarks section
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndis.h
+apiname:
+-	NDIS_ENUM_FILTERS
+product: Windows
+targetos: Windows
+req.typenames: "*PNDIS_ENUM_FILTERS, NDIS_ENUM_FILTERS"
 ---
 
 # _NDIS_ENUM_FILTERS structure

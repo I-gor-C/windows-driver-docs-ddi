@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGK_SETVIDPNSOURCEADDRESS_FLAGS
-title : "_DXGK_SETVIDPNSOURCEADDRESS_FLAGS"
-author : windows-driver-content
-description : The DXGK_SETVIDPNSOURCEADDRESS_FLAGS structure identifies the specific type of operation to perform in a call to the display miniport driver's DxgkDdiSetVidPnSourceAddress or DxgkDdiSetVidPnSourceAddressWithMultiPlaneOverlay functions.
-old-location : display\dxgk_setvidpnsourceaddress_flags.htm
-old-project : display
-ms.assetid : cdc4aec6-45d4-4a5b-aa52-7830494a12b6
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DXGK_SETVIDPNSOURCEADDRESS_FLAGS, d3dkmddi/DXGK_SETVIDPNSOURCEADDRESS_FLAGS, DXGK_SETVIDPNSOURCEADDRESS_FLAGS structure [Display Devices], DmStructs_45e34e9d-e410-44f4-a41a-aad748f01688.xml, display.dxgk_setvidpnsourceaddress_flags, _DXGK_SETVIDPNSOURCEADDRESS_FLAGS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_SETVIDPNSOURCEADDRESS_FLAGS
+UID: NS:d3dkmddi._DXGK_SETVIDPNSOURCEADDRESS_FLAGS
+title: "_DXGK_SETVIDPNSOURCEADDRESS_FLAGS"
+author: windows-driver-content
+description: The DXGK_SETVIDPNSOURCEADDRESS_FLAGS structure identifies the specific type of operation to perform in a call to the display miniport driver's DxgkDdiSetVidPnSourceAddress or DxgkDdiSetVidPnSourceAddressWithMultiPlaneOverlay functions.
+old-location: display\dxgk_setvidpnsourceaddress_flags.htm
+old-project: display
+ms.assetid: cdc4aec6-45d4-4a5b-aa52-7830494a12b6
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DXGK_SETVIDPNSOURCEADDRESS_FLAGS, d3dkmddi/DXGK_SETVIDPNSOURCEADDRESS_FLAGS, DXGK_SETVIDPNSOURCEADDRESS_FLAGS structure [Display Devices], DmStructs_45e34e9d-e410-44f4-a41a-aad748f01688.xml, display.dxgk_setvidpnsourceaddress_flags, _DXGK_SETVIDPNSOURCEADDRESS_FLAGS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DXGK_SETVIDPNSOURCEADDRESS_FLAGS
+product: Windows
+targetos: Windows
+req.typenames: DXGK_SETVIDPNSOURCEADDRESS_FLAGS
 ---
 
 # _DXGK_SETVIDPNSOURCEADDRESS_FLAGS structure

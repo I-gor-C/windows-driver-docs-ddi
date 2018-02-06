@@ -1,41 +1,46 @@
 ---
-UID : NC:netdispumdddi.PFN_REPORT_STATISTIC
-title : PFN_REPORT_STATISTIC
-author : windows-driver-content
-description : Called by the user-mode display driver to report the statistics of the Miracast link to the operating system.The data type of this function is PFN_REPORT_STATISTIC.
-old-location : display\reportstatistic.htm
-old-project : display
-ms.assetid : 13e1afa2-5552-468f-ac6b-3458dedd9b76
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.reportstatistic, PFN_REPORT_STATISTIC, ReportStatistic callback function [Display Devices], ReportStatistic, PFN_REPORT_STATISTIC, PFN_REPORT_STATISTIC, netdispumdddi/ReportStatistic
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : netdispumdddi.h
-req.include-header : Netdispumdddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8.1
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDK_SRQ_DISPATCH
+UID: NC:netdispumdddi.PFN_REPORT_STATISTIC
+title: PFN_REPORT_STATISTIC
+author: windows-driver-content
+description: Called by the user-mode display driver to report the statistics of the Miracast link to the operating system.The data type of this function is PFN_REPORT_STATISTIC.
+old-location: display\reportstatistic.htm
+old-project: display
+ms.assetid: 13e1afa2-5552-468f-ac6b-3458dedd9b76
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.reportstatistic, PFN_REPORT_STATISTIC, ReportStatistic callback function [Display Devices], ReportStatistic, PFN_REPORT_STATISTIC, PFN_REPORT_STATISTIC, netdispumdddi/ReportStatistic
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: netdispumdddi.h
+req.include-header: Netdispumdddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8.1
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Netdispumdddi.h
+apiname:
+-	ReportStatistic
+product: Windows
+targetos: Windows
+req.typenames: NDK_SRQ_DISPATCH
 ---
 
 

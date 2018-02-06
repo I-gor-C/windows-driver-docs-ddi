@@ -1,42 +1,47 @@
 ---
-UID : NE:winspool.BIDI_TYPE
-title : BIDI_TYPE
-author : windows-driver-content
-description : The BIDI_TYPE enumeration lists the possible values of data transferred in a bidi operation.
-old-location : print\bidi_type.htm
-old-project : print
-ms.assetid : ebb79ad6-91a1-4bdf-a6f6-7e04ed2358d9
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : print.bidi_type, winspool/BIDI_BLOB, winspool/BIDI_NULL, winspool/BIDI_STRING, BIDI_BOOL, BIDI_TYPE, BIDI_ENUM, BIDI_FLOAT, winspool/BIDI_ENUM, BIDI_STRING, BIDI_BLOB, BIDI_TEXT, winspool/BIDI_TYPE, winspool/BIDI_FLOAT, spoolfnc_35a684ef-3bbf-4f33-86e9-b4a3bddbbb51.xml, winspool/BIDI_INT, winspool/BIDI_TEXT, winspool/BIDI_BOOL, BIDI_NULL, BIDI_INT, BIDI_TYPE enumeration [Print Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : winspool.h
-req.include-header : Winspool.h
-req.target-type : Windows
-req.target-min-winverclnt : This enumeration is available in Windows XP and later operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : BIDI_TYPE
-req.product : Windows 10 or later.
+UID: NE:winspool.BIDI_TYPE
+title: BIDI_TYPE
+author: windows-driver-content
+description: The BIDI_TYPE enumeration lists the possible values of data transferred in a bidi operation.
+old-location: print\bidi_type.htm
+old-project: print
+ms.assetid: ebb79ad6-91a1-4bdf-a6f6-7e04ed2358d9
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: print.bidi_type, winspool/BIDI_BLOB, winspool/BIDI_NULL, winspool/BIDI_STRING, BIDI_BOOL, BIDI_TYPE, BIDI_ENUM, BIDI_FLOAT, winspool/BIDI_ENUM, BIDI_STRING, BIDI_BLOB, BIDI_TEXT, winspool/BIDI_TYPE, winspool/BIDI_FLOAT, spoolfnc_35a684ef-3bbf-4f33-86e9-b4a3bddbbb51.xml, winspool/BIDI_INT, winspool/BIDI_TEXT, winspool/BIDI_BOOL, BIDI_NULL, BIDI_INT, BIDI_TYPE enumeration [Print Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: winspool.h
+req.include-header: Winspool.h
+req.target-type: Windows
+req.target-min-winverclnt: This enumeration is available in Windows XP and later operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	winspool.h
+apiname:
+-	BIDI_TYPE
+product: Windows
+targetos: Windows
+req.typenames: BIDI_TYPE
+req.product: Windows 10 or later.
 ---
 
 # BIDI_TYPE Enumeration
@@ -59,51 +64,51 @@ typedef enum  {
 ## Constants
 
 <table>
-
-<tr>
-<td>BIDI_BLOB</td>
-<td>Indicates that the bidi data is binary data.</td>
-</tr>
-
-<tr>
-<td>BIDI_BOOL</td>
-<td>Indicates that the bidi data is either <b>TRUE</b> or <b>FALSE</b>.</td>
-</tr>
-
-<tr>
-<td>BIDI_ENUM</td>
-<td>Indicates that the bidi data value is a Unicode string.</td>
-</tr>
-
-<tr>
-<td>BIDI_FLOAT</td>
-<td>Indicates that the bidi data is a floating-point number.</td>
-</tr>
-
-<tr>
-<td>BIDI_INT</td>
-<td>Indicates that the bidi data is an integer.</td>
-</tr>
-
-<tr>
-<td>BIDI_NULL</td>
-<td>Indicates that there is no data.</td>
-</tr>
-
-<tr>
-<td>BIDI_STRING</td>
-<td>Indicates that the bidi data is a Unicode character string.</td>
-</tr>
-
-<tr>
-<td>BIDI_TEXT</td>
-<td>Indicates that the bidi data is a nonlocalizable Unicode string.</td>
-</tr>
+            
+                <tr>
+                    <td>BIDI_BLOB</td>
+                    <td>Indicates that the bidi data is binary data.</td>
+                </tr>
+            
+                <tr>
+                    <td>BIDI_BOOL</td>
+                    <td>Indicates that the bidi data is either <b>TRUE</b> or <b>FALSE</b>.</td>
+                </tr>
+            
+                <tr>
+                    <td>BIDI_ENUM</td>
+                    <td>Indicates that the bidi data value is a Unicode string.</td>
+                </tr>
+            
+                <tr>
+                    <td>BIDI_FLOAT</td>
+                    <td>Indicates that the bidi data is a floating-point number.</td>
+                </tr>
+            
+                <tr>
+                    <td>BIDI_INT</td>
+                    <td>Indicates that the bidi data is an integer.</td>
+                </tr>
+            
+                <tr>
+                    <td>BIDI_NULL</td>
+                    <td>Indicates that there is no data.</td>
+                </tr>
+            
+                <tr>
+                    <td>BIDI_STRING</td>
+                    <td>Indicates that the bidi data is a Unicode character string.</td>
+                </tr>
+            
+                <tr>
+                    <td>BIDI_TEXT</td>
+                    <td>Indicates that the bidi data is a nonlocalizable Unicode string.</td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-The following correspondence applies between Simple Network Management Protocol (SNMP) types and bidi types defined in the BIDI_TYPE enumeration.
+        The following correspondence applies between Simple Network Management Protocol (SNMP) types and bidi types defined in the BIDI_TYPE enumeration.
 <table>
 <tr>
 <th>SNMP type</th>

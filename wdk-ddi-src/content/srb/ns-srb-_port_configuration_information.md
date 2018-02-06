@@ -1,42 +1,47 @@
 ---
-UID : NS:srb._PORT_CONFIGURATION_INFORMATION
-title : "_PORT_CONFIGURATION_INFORMATION"
-author : windows-driver-content
-description : PORT_CONFIGURATION_INFORMATION (SCSI) contains configuration information for an HBA.
-old-location : storage\port_configuration_information__scsi_.htm
-old-project : storage
-ms.assetid : f3c9d851-d30d-4757-82a3-225ee67528c1
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : "_PORT_CONFIGURATION_INFORMATION, PPORT_CONFIGURATION_INFORMATION, _PORT_CONFIGURATION_INFORMATION structure [Storage Devices], srb/_PORT_CONFIGURATION_INFORMATION, srb/PPORT_CONFIGURATION_INFORMATION, *PPORT_CONFIGURATION_INFORMATION, PPORT_CONFIGURATION_INFORMATION structure pointer [Storage Devices], PORT_CONFIGURATION_INFORMATION structure [Storage Devices], storage.port_configuration_information__scsi_, structs-scsiport_1a472219-5839-443c-a3a1-26c9708b3b18.xml, PORT_CONFIGURATION_INFORMATION"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : srb.h
-req.include-header : Srb.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPORT_CONFIGURATION_INFORMATION, PORT_CONFIGURATION_INFORMATION"
-req.product : Windows 10 or later.
+UID: NS:srb._PORT_CONFIGURATION_INFORMATION
+title: "_PORT_CONFIGURATION_INFORMATION"
+author: windows-driver-content
+description: PORT_CONFIGURATION_INFORMATION (SCSI) contains configuration information for an HBA.
+old-location: storage\port_configuration_information__scsi_.htm
+old-project: storage
+ms.assetid: f3c9d851-d30d-4757-82a3-225ee67528c1
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: "_PORT_CONFIGURATION_INFORMATION, PPORT_CONFIGURATION_INFORMATION, _PORT_CONFIGURATION_INFORMATION structure [Storage Devices], srb/_PORT_CONFIGURATION_INFORMATION, srb/PPORT_CONFIGURATION_INFORMATION, *PPORT_CONFIGURATION_INFORMATION, PPORT_CONFIGURATION_INFORMATION structure pointer [Storage Devices], PORT_CONFIGURATION_INFORMATION structure [Storage Devices], storage.port_configuration_information__scsi_, structs-scsiport_1a472219-5839-443c-a3a1-26c9708b3b18.xml, PORT_CONFIGURATION_INFORMATION"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: srb.h
+req.include-header: Srb.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	srb.h
+apiname:
+-	PORT_CONFIGURATION_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: "*PPORT_CONFIGURATION_INFORMATION, PORT_CONFIGURATION_INFORMATION"
+req.product: Windows 10 or later.
 ---
 
 # _PORT_CONFIGURATION_INFORMATION structure

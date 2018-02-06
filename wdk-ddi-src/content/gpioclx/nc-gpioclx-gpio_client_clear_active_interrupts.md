@@ -1,41 +1,46 @@
 ---
-UID : NC:gpioclx.GPIO_CLIENT_CLEAR_ACTIVE_INTERRUPTS
-title : GPIO_CLIENT_CLEAR_ACTIVE_INTERRUPTS
-author : windows-driver-content
-description : The CLIENT_ClearActiveInterrupts event callback function clears active interrupts on a set of general-purpose I/O (GPIO) pins that are configured as interrupt inputs.
-old-location : gpio\client_clearactiveinterrupts.htm
-old-project : GPIO
-ms.assetid : 8D66F806-92BA-4A70-99F6-1C221E8752A3
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : GPIO.client_clearactiveinterrupts, CLIENT_ClearActiveInterrupts callback function [Parallel Ports], CLIENT_ClearActiveInterrupts, GPIO_CLIENT_CLEAR_ACTIVE_INTERRUPTS, GPIO_CLIENT_CLEAR_ACTIVE_INTERRUPTS, gpioclx/CLIENT_ClearActiveInterrupts
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : gpioclx.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Supported starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : See Remarks.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : GNSS_V2UPL_NI_INFO, *PGNSS_V2UPL_NI_INFO
+UID: NC:gpioclx.GPIO_CLIENT_CLEAR_ACTIVE_INTERRUPTS
+title: GPIO_CLIENT_CLEAR_ACTIVE_INTERRUPTS
+author: windows-driver-content
+description: The CLIENT_ClearActiveInterrupts event callback function clears active interrupts on a set of general-purpose I/O (GPIO) pins that are configured as interrupt inputs.
+old-location: gpio\client_clearactiveinterrupts.htm
+old-project: GPIO
+ms.assetid: 8D66F806-92BA-4A70-99F6-1C221E8752A3
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: GPIO.client_clearactiveinterrupts, CLIENT_ClearActiveInterrupts callback function [Parallel Ports], CLIENT_ClearActiveInterrupts, GPIO_CLIENT_CLEAR_ACTIVE_INTERRUPTS, GPIO_CLIENT_CLEAR_ACTIVE_INTERRUPTS, gpioclx/CLIENT_ClearActiveInterrupts
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: gpioclx.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Supported starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: See Remarks.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Gpioclx.h
+apiname:
+-	CLIENT_ClearActiveInterrupts
+product: Windows
+targetos: Windows
+req.typenames: GNSS_V2UPL_NI_INFO, *PGNSS_V2UPL_NI_INFO
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:iscsicfg._MSiSCSI_BootConfiguration
-title : "_MSiSCSI_BootConfiguration"
-author : windows-driver-content
-description : The MSiSCSI_BootConfiguration structure describes how the boot device is configured.
-old-location : storage\msiscsi_bootconfiguration.htm
-old-project : storage
-ms.assetid : 3a4b55b1-977d-43fb-9968-7a734e04b21b
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : structs-iSCSI_eb9ca716-5f5e-4bec-a4e0-e00d5a93b329.xml, *PMSiSCSI_BootConfiguration, MSiSCSI_BootConfiguration structure [Storage Devices], iscsicfg/MSiSCSI_BootConfiguration, MSiSCSI_BootConfiguration, _MSiSCSI_BootConfiguration, iscsicfg/PMSiSCSI_BootConfiguration, storage.msiscsi_bootconfiguration, PMSiSCSI_BootConfiguration structure pointer [Storage Devices], PMSiSCSI_BootConfiguration
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : iscsicfg.h
-req.include-header : Iscsicfg.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : MSiSCSI_BootConfiguration, *PMSiSCSI_BootConfiguration
+UID: NS:iscsicfg._MSiSCSI_BootConfiguration
+title: "_MSiSCSI_BootConfiguration"
+author: windows-driver-content
+description: The MSiSCSI_BootConfiguration structure describes how the boot device is configured.
+old-location: storage\msiscsi_bootconfiguration.htm
+old-project: storage
+ms.assetid: 3a4b55b1-977d-43fb-9968-7a734e04b21b
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: structs-iSCSI_eb9ca716-5f5e-4bec-a4e0-e00d5a93b329.xml, *PMSiSCSI_BootConfiguration, MSiSCSI_BootConfiguration structure [Storage Devices], iscsicfg/MSiSCSI_BootConfiguration, MSiSCSI_BootConfiguration, _MSiSCSI_BootConfiguration, iscsicfg/PMSiSCSI_BootConfiguration, storage.msiscsi_bootconfiguration, PMSiSCSI_BootConfiguration structure pointer [Storage Devices], PMSiSCSI_BootConfiguration
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: iscsicfg.h
+req.include-header: Iscsicfg.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	iscsicfg.h
+apiname:
+-	MSiSCSI_BootConfiguration
+product: Windows
+targetos: Windows
+req.typenames: MSiSCSI_BootConfiguration, *PMSiSCSI_BootConfiguration
 ---
 
 # _MSiSCSI_BootConfiguration structure

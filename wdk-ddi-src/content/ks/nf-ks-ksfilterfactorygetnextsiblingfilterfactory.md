@@ -1,41 +1,46 @@
 ---
-UID : NF:ks.KsFilterFactoryGetNextSiblingFilterFactory
-title : KsFilterFactoryGetNextSiblingFilterFactory function
-author : windows-driver-content
-description : The KsFilterFactoryGetNextSiblingFilterFactory function returns the next filter factory belonging to the parent device of FilterFactory.
-old-location : stream\ksfilterfactorygetnextsiblingfilterfactory.htm
-old-project : stream
-ms.assetid : e397d36c-3f28-4a70-9b4a-f13be094d47b
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.ksfilterfactorygetnextsiblingfilterfactory, KsFilterFactoryGetNextSiblingFilterFactory function [Streaming Media Devices], avfunc_b1bdc37b-de4a-4cfb-b1e9-1201225c29ab.xml, KsFilterFactoryGetNextSiblingFilterFactory, ks/KsFilterFactoryGetNextSiblingFilterFactory
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsFilterFactoryGetNextSiblingFilterFactory
+title: KsFilterFactoryGetNextSiblingFilterFactory function
+author: windows-driver-content
+description: The KsFilterFactoryGetNextSiblingFilterFactory function returns the next filter factory belonging to the parent device of FilterFactory.
+old-location: stream\ksfilterfactorygetnextsiblingfilterfactory.htm
+old-project: stream
+ms.assetid: e397d36c-3f28-4a70-9b4a-f13be094d47b
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.ksfilterfactorygetnextsiblingfilterfactory, KsFilterFactoryGetNextSiblingFilterFactory function [Streaming Media Devices], avfunc_b1bdc37b-de4a-4cfb-b1e9-1201225c29ab.xml, KsFilterFactoryGetNextSiblingFilterFactory, ks/KsFilterFactoryGetNextSiblingFilterFactory
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	KsFilterFactoryGetNextSiblingFilterFactory
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

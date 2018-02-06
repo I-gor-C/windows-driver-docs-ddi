@@ -1,41 +1,47 @@
 ---
-UID : NF:hidpi.HidP_UsageListDifference
-title : HidP_UsageListDifference function
-author : windows-driver-content
-description : The HidP_UsageListDifference routine returns the differences between two arrays of HID usages.
-old-location : hid\hidp_usagelistdifference.htm
-old-project : hid
-ms.assetid : 332ef453-6f9d-4cdd-a8c7-766158e540d8
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : HidP_UsageListDifference routine [Human Input Devices], HidP_UsageListDifference, hid.hidp_usagelistdifference, hidpi/HidP_UsageListDifference, hidfunc_91cbddd2-90f6-4784-9f1d-6d9bf8be35d3.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : hidpi.h
-req.include-header : Hidpi.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 2000 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Hidparse.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HIDP_REPORT_TYPE
+UID: NF:hidpi.HidP_UsageListDifference
+title: HidP_UsageListDifference function
+author: windows-driver-content
+description: The HidP_UsageListDifference routine returns the differences between two arrays of HID usages.
+old-location: hid\hidp_usagelistdifference.htm
+old-project: hid
+ms.assetid: 332ef453-6f9d-4cdd-a8c7-766158e540d8
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: HidP_UsageListDifference routine [Human Input Devices], HidP_UsageListDifference, hid.hidp_usagelistdifference, hidpi/HidP_UsageListDifference, hidfunc_91cbddd2-90f6-4784-9f1d-6d9bf8be35d3.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: hidpi.h
+req.include-header: Hidpi.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 2000 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Hidparse.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Hidparse.lib
+-	Hidparse.dll
+apiname:
+-	HidP_UsageListDifference
+product: Windows
+targetos: Windows
+req.typenames: HIDP_REPORT_TYPE
 ---
 
 

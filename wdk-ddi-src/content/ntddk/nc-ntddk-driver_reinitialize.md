@@ -1,41 +1,46 @@
 ---
-UID : NC:ntddk.DRIVER_REINITIALIZE
-title : DRIVER_REINITIALIZE
-author : windows-driver-content
-description : The Reinitialize routine continues driver and device initialization after the driver's DriverEntry routine returns.
-old-location : kernel\reinitialize.htm
-old-project : kernel
-ms.assetid : 5e883b80-a6e6-44b4-9e1c-78402b91edb9
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.reinitialize, Reinitialize routine [Kernel-Mode Driver Architecture], Reinitialize, DRIVER_REINITIALIZE, DRIVER_REINITIALIZE, ntddk/Reinitialize, DrvrRtns_193becfd-0e72-48f0-b6da-b916851c31a4.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ntddk.h
-req.include-header : Ntddk.h, Ntifs.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Called at PASSIVE_LEVEL.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PFILTER_INITIALIZATION_DATA, FILTER_INITIALIZATION_DATA"
+UID: NC:ntddk.DRIVER_REINITIALIZE
+title: DRIVER_REINITIALIZE
+author: windows-driver-content
+description: The Reinitialize routine continues driver and device initialization after the driver's DriverEntry routine returns.
+old-location: kernel\reinitialize.htm
+old-project: kernel
+ms.assetid: 5e883b80-a6e6-44b4-9e1c-78402b91edb9
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.reinitialize, Reinitialize routine [Kernel-Mode Driver Architecture], Reinitialize, DRIVER_REINITIALIZE, DRIVER_REINITIALIZE, ntddk/Reinitialize, DrvrRtns_193becfd-0e72-48f0-b6da-b916851c31a4.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ntddk.h
+req.include-header: Ntddk.h, Ntifs.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Called at PASSIVE_LEVEL.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ntddk.h
+apiname:
+-	Reinitialize
+product: Windows
+targetos: Windows
+req.typenames: "*PFILTER_INITIALIZATION_DATA, FILTER_INITIALIZATION_DATA"
 ---
 
 

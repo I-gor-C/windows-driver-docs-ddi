@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.SeReleaseSubjectContext
-title : SeReleaseSubjectContext function
-author : windows-driver-content
-description : The SeReleaseSubjectContext routine releases a subject security context captured by an earlier call to SeCaptureSubjectContext.
-old-location : ifsk\sereleasesubjectcontext.htm
-old-project : ifsk
-ms.assetid : efae077e-2698-4392-ac2a-8f41acdb12a2
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : SeReleaseSubjectContext, ifsk.sereleasesubjectcontext, seref_f46fe5d3-13d1-4907-85b4-47eb78116fe0.xml, ntifs/SeReleaseSubjectContext, SeReleaseSubjectContext routine [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.SeReleaseSubjectContext
+title: SeReleaseSubjectContext function
+author: windows-driver-content
+description: The SeReleaseSubjectContext routine releases a subject security context captured by an earlier call to SeCaptureSubjectContext.
+old-location: ifsk\sereleasesubjectcontext.htm
+old-project: ifsk
+ms.assetid: efae077e-2698-4392-ac2a-8f41acdb12a2
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: SeReleaseSubjectContext, ifsk.sereleasesubjectcontext, seref_f46fe5d3-13d1-4907-85b4-47eb78116fe0.xml, ntifs/SeReleaseSubjectContext, SeReleaseSubjectContext routine [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	SeReleaseSubjectContext
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

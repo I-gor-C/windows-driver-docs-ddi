@@ -1,41 +1,46 @@
 ---
-UID : NE:portcls.eEngineFormatType
-title : eEngineFormatType
-author : windows-driver-content
-description : The eEngineFormatType enumeration defines constants that specify the audio data type supported by the audio engine.
-old-location : audio\eengineformattype.htm
-old-project : audio
-ms.assetid : C16DE51F-6552-4379-B866-D7653B1BA9F2
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : portcls/eEngineFormatType, audio.eengineformattype, eEngineFormatType, eDeviceFormat, eMixFormat, portcls/eSupportedDeviceFormats, portcls/eMixFormat, eSupportedDeviceFormats, eEngineFormatType enumeration [Audio Devices], portcls/eDeviceFormat
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : portcls.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : eEngineFormatType
+UID: NE:portcls.eEngineFormatType
+title: eEngineFormatType
+author: windows-driver-content
+description: The eEngineFormatType enumeration defines constants that specify the audio data type supported by the audio engine.
+old-location: audio\eengineformattype.htm
+old-project: audio
+ms.assetid: C16DE51F-6552-4379-B866-D7653B1BA9F2
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: portcls/eEngineFormatType, audio.eengineformattype, eEngineFormatType, eDeviceFormat, eMixFormat, portcls/eSupportedDeviceFormats, portcls/eMixFormat, eSupportedDeviceFormats, eEngineFormatType enumeration [Audio Devices], portcls/eDeviceFormat
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: portcls.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Portcls.h
+apiname:
+-	eEngineFormatType
+product: Windows
+targetos: Windows
+req.typenames: eEngineFormatType
 ---
 
 # eEngineFormatType Enumeration
@@ -53,21 +58,21 @@ typedef enum _eEngineFormatType {
 ## Constants
 
 <table>
-
-<tr>
-<td>eDeviceFormat</td>
-<td>Indicates the default data format for the audio adapter.</td>
-</tr>
-
-<tr>
-<td>eMixFormat</td>
-<td>Indicates a data format for the Mixer.</td>
-</tr>
-
-<tr>
-<td>eSupportedDeviceFormats</td>
-<td>Indicates all the data formats supported by the audio adapter.</td>
-</tr>
+            
+                <tr>
+                    <td>eDeviceFormat</td>
+                    <td>Indicates the default data format for the audio adapter.</td>
+                </tr>
+            
+                <tr>
+                    <td>eMixFormat</td>
+                    <td>Indicates a data format for the Mixer.</td>
+                </tr>
+            
+                <tr>
+                    <td>eSupportedDeviceFormats</td>
+                    <td>Indicates all the data formats supported by the audio adapter.</td>
+                </tr>
 </table>
 
 
@@ -77,9 +82,9 @@ typedef enum _eEngineFormatType {
 | **Windows version** | Windows 8 Windows 8 |
 | **Header** | portcls.h |
 
-## See Also
+    ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn265082">GetEngineFormatSize</a>
+        <a href="https://msdn.microsoft.com/library/windows/hardware/dn265082">GetEngineFormatSize</a>
 
  
 

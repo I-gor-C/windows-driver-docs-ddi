@@ -1,41 +1,46 @@
 ---
-UID : NC:ntddk.PSHED_PI_INJECT_ERROR
-title : PSHED_PI_INJECT_ERROR
-author : windows-driver-content
-description : A PSHED plug-in's InjectError callback function injects an error into the hardware platform.
-old-location : whea\injecterror.htm
-old-project : whea
-ms.assetid : efd2658b-875e-4589-9ba0-42232e070b91
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : whea.injecterror, InjectError callback function [WHEA Drivers and Applications], InjectError, PSHED_PI_INJECT_ERROR, PSHED_PI_INJECT_ERROR, ntddk/InjectError, whearef_377f07ab-4ea0-4982-8298-c7139b4bfdc7.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PFILTER_INITIALIZATION_DATA, FILTER_INITIALIZATION_DATA"
+UID: NC:ntddk.PSHED_PI_INJECT_ERROR
+title: PSHED_PI_INJECT_ERROR
+author: windows-driver-content
+description: A PSHED plug-in's InjectError callback function injects an error into the hardware platform.
+old-location: whea\injecterror.htm
+old-project: whea
+ms.assetid: efd2658b-875e-4589-9ba0-42232e070b91
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: whea.injecterror, InjectError callback function [WHEA Drivers and Applications], InjectError, PSHED_PI_INJECT_ERROR, PSHED_PI_INJECT_ERROR, ntddk/InjectError, whearef_377f07ab-4ea0-4982-8298-c7139b4bfdc7.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ntddk.h
+apiname:
+-	InjectError
+product: Windows
+targetos: Windows
+req.typenames: "*PFILTER_INITIALIZATION_DATA, FILTER_INITIALIZATION_DATA"
 ---
 
 

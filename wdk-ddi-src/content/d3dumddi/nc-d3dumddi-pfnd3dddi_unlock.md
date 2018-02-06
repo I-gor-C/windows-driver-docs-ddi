@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_UNLOCK
-title : PFND3DDDI_UNLOCK
-author : windows-driver-content
-description : The Unlock function unlocks a resource or a surface within the resource that was previously locked by the Lock function.
-old-location : display\unlock.htm
-old-project : display
-ms.assetid : 23cc9c64-99d4-4602-a1b0-234fe7fcc3da
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.unlock, Unlock callback function [Display Devices], Unlock, PFND3DDDI_UNLOCK, PFND3DDDI_UNLOCK, d3dumddi/Unlock, UserModeDisplayDriver_Functions_20b0d6f7-4bda-4d0f-9c3a-27d4011d2591.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_UNLOCK
+title: PFND3DDDI_UNLOCK
+author: windows-driver-content
+description: The Unlock function unlocks a resource or a surface within the resource that was previously locked by the Lock function.
+old-location: display\unlock.htm
+old-project: display
+ms.assetid: 23cc9c64-99d4-4602-a1b0-234fe7fcc3da
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.unlock, Unlock callback function [Display Devices], Unlock, PFND3DDDI_UNLOCK, PFND3DDDI_UNLOCK, d3dumddi/Unlock, UserModeDisplayDriver_Functions_20b0d6f7-4bda-4d0f-9c3a-27d4011d2591.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	Unlock
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

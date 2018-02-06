@@ -1,41 +1,46 @@
 ---
-UID : NC:dbgeng.PDEBUG_EXTENSION_PROVIDE_VALUE
-title : PDEBUG_EXTENSION_PROVIDE_VALUE
-author : windows-driver-content
-description : The DebugExtensionProvideValue callback function sets pseudo-register values.C++ CALLBACK* PDEBUG_EXTENSION_PROVIDE_VALUE DebugExtensionProvideValue;
-old-location : debugger\debugextensionprovidevalue.htm
-old-project : debugger
-ms.assetid : b4b1953c-dc1b-495a-ab58-5cfaa6064b23
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : debugger.debugextensionprovidevalue, DebugExtensionProvideValue, DebugExtensionProvideValue callback function [Windows Debugging], DebugExtensionProvideValue, PDEBUG_EXTENSION_PROVIDE_VALUE, PDEBUG_EXTENSION_PROVIDE_VALUE, dbgeng/DebugExtensionProvideValue, DEBUG_EXT_PVTYPE_IS_VALUE, DEBUG_EXT_PVTYPE_IS_POINTER, Extensions_Ref_fa822b69-6941-46e9-8b68-d57dd8d19d14.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : dbgeng.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NC:dbgeng.PDEBUG_EXTENSION_PROVIDE_VALUE
+title: PDEBUG_EXTENSION_PROVIDE_VALUE
+author: windows-driver-content
+description: The DebugExtensionProvideValue callback function sets pseudo-register values.C++ CALLBACK* PDEBUG_EXTENSION_PROVIDE_VALUE DebugExtensionProvideValue;
+old-location: debugger\debugextensionprovidevalue.htm
+old-project: debugger
+ms.assetid: b4b1953c-dc1b-495a-ab58-5cfaa6064b23
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: debugger.debugextensionprovidevalue, DebugExtensionProvideValue, DebugExtensionProvideValue callback function [Windows Debugging], DebugExtensionProvideValue, PDEBUG_EXTENSION_PROVIDE_VALUE, PDEBUG_EXTENSION_PROVIDE_VALUE, dbgeng/DebugExtensionProvideValue, DEBUG_EXT_PVTYPE_IS_VALUE, DEBUG_EXT_PVTYPE_IS_POINTER, Extensions_Ref_fa822b69-6941-46e9-8b68-d57dd8d19d14.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: dbgeng.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Dbgeng.h
+apiname:
+-	DebugExtensionProvideValue
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

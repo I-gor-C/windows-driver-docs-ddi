@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.IoWMISetSingleInstance
-title : IoWMISetSingleInstance function
-author : windows-driver-content
-description : The IoWMISetSingleInstance routine sets the values for properties within the data block instance that matches the specified WMI class and instance name.
-old-location : kernel\iowmisetsingleinstance.htm
-old-project : kernel
-ms.assetid : 043b51cd-816f-414d-85b2-2573c42393e4
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : IoWMISetSingleInstance routine [Kernel-Mode Driver Architecture], k104_35479ad6-0f12-4d8b-b375-faa271cf65fd.xml, wdm/IoWMISetSingleInstance, kernel.iowmisetsingleinstance, IoWMISetSingleInstance
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows XP and later versions of the Windows operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.IoWMISetSingleInstance
+title: IoWMISetSingleInstance function
+author: windows-driver-content
+description: The IoWMISetSingleInstance routine sets the values for properties within the data block instance that matches the specified WMI class and instance name.
+old-location: kernel\iowmisetsingleinstance.htm
+old-project: kernel
+ms.assetid: 043b51cd-816f-414d-85b2-2573c42393e4
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: IoWMISetSingleInstance routine [Kernel-Mode Driver Architecture], k104_35479ad6-0f12-4d8b-b375-faa271cf65fd.xml, wdm/IoWMISetSingleInstance, kernel.iowmisetsingleinstance, IoWMISetSingleInstance
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows XP and later versions of the Windows operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoWMISetSingleInstance
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NF:portcls.IMiniportMidiStream.SetState
-title : IMiniportMidiStream::SetState method
-author : windows-driver-content
-description : The SetState method sets the stream's transport state to a new state value.
-old-location : audio\iminiportmidistream_setstate.htm
-old-project : audio
-ms.assetid : ee78013c-7660-4017-97ec-eff9068b707a
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : SetState method [Audio Devices], IMiniportMidiStream interface [Audio Devices], SetState method, SetState method [Audio Devices], IMiniportMidiStream interface, audio.iminiportmidistream_setstate, IMiniportMidiStream, audmp-routines_23f064df-faef-4c45-a58e-c5e3e1d7d7a5.xml, IMiniportMidiStream::SetState, portcls/IMiniportMidiStream::SetState, SetState
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : portcls.h
-req.include-header : Portcls.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : portcls.h
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.IMiniportMidiStream.SetState
+title: IMiniportMidiStream::SetState method
+author: windows-driver-content
+description: The SetState method sets the stream's transport state to a new state value.
+old-location: audio\iminiportmidistream_setstate.htm
+old-project: audio
+ms.assetid: ee78013c-7660-4017-97ec-eff9068b707a
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: SetState method [Audio Devices], IMiniportMidiStream interface [Audio Devices], SetState method, SetState method [Audio Devices], IMiniportMidiStream interface, audio.iminiportmidistream_setstate, IMiniportMidiStream, audmp-routines_23f064df-faef-4c45-a58e-c5e3e1d7d7a5.xml, IMiniportMidiStream::SetState, portcls/IMiniportMidiStream::SetState, SetState
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: portcls.h
+req.include-header: Portcls.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: portcls.h
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	portcls.h
+apiname:
+-	IMiniportMidiStream.SetState
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

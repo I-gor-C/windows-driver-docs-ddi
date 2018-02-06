@@ -1,42 +1,50 @@
 ---
-UID : NF:wdfrequest.WdfRequestSend
-title : WdfRequestSend function
-author : windows-driver-content
-description : The WdfRequestSend method sends a specified I/O request to a specified I/O target.
-old-location : wdf\wdfrequestsend.htm
-old-project : wdf
-ms.assetid : a0f4d4a4-f636-44df-911f-e3a615144fa9
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WdfRequestSend method, wdfrequest/WdfRequestSend, kmdf.wdfrequestsend, PFN_WDFREQUESTSEND, WdfRequestSend, DFRequestObjectRef_3104cf0d-01d0-4299-a123-ba7a8cc0ada9.xml, wdf.wdfrequestsend
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfrequest.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : DeferredRequestCompleted, DriverCreate, InvalidReqAccess, InvalidReqAccessLocal, KmdfIrql, ReqCompletionRoutine, ReqMarkCancelableSend, ReqSendFail, ReqSendWhileSpinlock, RequestCompleted, RequestCompletedLocal, RequestFormattedValid, RequestGetStatusValid, RequestSendAndForgetNoFormatting, RequestSendAndForgetNoFormatting2, SyncReqSend2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll : 
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_REQUEST_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfrequest.WdfRequestSend
+title: WdfRequestSend function
+author: windows-driver-content
+description: The WdfRequestSend method sends a specified I/O request to a specified I/O target.
+old-location: wdf\wdfrequestsend.htm
+old-project: wdf
+ms.assetid: a0f4d4a4-f636-44df-911f-e3a615144fa9
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WdfRequestSend method, wdfrequest/WdfRequestSend, kmdf.wdfrequestsend, PFN_WDFREQUESTSEND, WdfRequestSend, DFRequestObjectRef_3104cf0d-01d0-4299-a123-ba7a8cc0ada9.xml, wdf.wdfrequestsend
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfrequest.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: DeferredRequestCompleted, DriverCreate, InvalidReqAccess, InvalidReqAccessLocal, KmdfIrql, ReqCompletionRoutine, ReqMarkCancelableSend, ReqSendFail, ReqSendWhileSpinlock, RequestCompleted, RequestCompletedLocal, RequestFormattedValid, RequestGetStatusValid, RequestSendAndForgetNoFormatting, RequestSendAndForgetNoFormatting2, SyncReqSend2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll: 
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+-	WUDFx02000.dll
+-	WUDFx02000.dll.dll
+apiname:
+-	WdfRequestSend
+product: Windows
+targetos: Windows
+req.typenames: WDF_REQUEST_TYPE
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NF:sercx.SerCxInitialize
-title : SerCxInitialize function
-author : windows-driver-content
-description : The SerCxInitialize method completes the initialization of the serial framework extension (SerCx) after this driver creates the associated device object.
-old-location : serports\sercxinitialize.htm
-old-project : serports
-ms.assetid : 2837C3BE-71EB-4949-AB46-5333CF4575A8
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : serports.sercxinitialize, SerCxInitialize, 1/SerCxInitialize, SerCxInitialize method [Serial Ports]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : sercx.h
-req.include-header : 
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSERCX_STATUS, SERCX_STATUS"
-req.product : Windows 10 or later.
+UID: NF:sercx.SerCxInitialize
+title: SerCxInitialize function
+author: windows-driver-content
+description: The SerCxInitialize method completes the initialization of the serial framework extension (SerCx) after this driver creates the associated device object.
+old-location: serports\sercxinitialize.htm
+old-project: serports
+ms.assetid: 2837C3BE-71EB-4949-AB46-5333CF4575A8
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: serports.sercxinitialize, SerCxInitialize, 1/SerCxInitialize, SerCxInitialize method [Serial Ports]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: sercx.h
+req.include-header: 
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	1.0\Sercx.h
+apiname:
+-	SerCxInitialize
+product: Windows
+targetos: Windows
+req.typenames: "*PSERCX_STATUS, SERCX_STATUS"
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,42 +1,48 @@
 ---
-UID : NF:wdm.ClfsReserveAndAppendLogAligned
-title : ClfsReserveAndAppendLogAligned function
-author : windows-driver-content
-description : The ClfsReserveAndAppendLogAligned routine reserves space in a marshalling area or appends a record to a marshalling area or does both atomically. The record's data is aligned on specified boundaries.
-old-location : kernel\clfsreserveandappendlogaligned.htm
-old-project : kernel
-ms.assetid : 4502c9bd-d03c-4f29-b46e-ba4532b838bb
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ClfsReserveAndAppendLogAligned, Clfs_aef34ba7-9276-41a4-8136-b20ae8e8531d.xml, ClfsReserveAndAppendLogAligned routine [Kernel-Mode Driver Architecture], kernel.clfsreserveandappendlogaligned, wdm/ClfsReserveAndAppendLogAligned
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Clfs.lib
-req.dll : Clfs.sys
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ClfsReserveAndAppendLogAligned
+title: ClfsReserveAndAppendLogAligned function
+author: windows-driver-content
+description: The ClfsReserveAndAppendLogAligned routine reserves space in a marshalling area or appends a record to a marshalling area or does both atomically. The record's data is aligned on specified boundaries.
+old-location: kernel\clfsreserveandappendlogaligned.htm
+old-project: kernel
+ms.assetid: 4502c9bd-d03c-4f29-b46e-ba4532b838bb
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ClfsReserveAndAppendLogAligned, Clfs_aef34ba7-9276-41a4-8136-b20ae8e8531d.xml, ClfsReserveAndAppendLogAligned routine [Kernel-Mode Driver Architecture], kernel.clfsreserveandappendlogaligned, wdm/ClfsReserveAndAppendLogAligned
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Clfs.lib
+req.dll: Clfs.sys
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Clfs.sys
+-	Ext-MS-Win-fs-clfs-l1-1-0.dll
+apiname:
+-	ClfsReserveAndAppendLogAligned
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

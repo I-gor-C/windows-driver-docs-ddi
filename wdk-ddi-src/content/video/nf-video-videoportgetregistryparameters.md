@@ -1,42 +1,47 @@
 ---
-UID : NF:video.VideoPortGetRegistryParameters
-title : VideoPortGetRegistryParameters function
-author : windows-driver-content
-description : The VideoPortGetRegistryParameters function retrieves device-specific configuration information under the adapter key in the registry at startup.
-old-location : display\videoportgetregistryparameters.htm
-old-project : display
-ms.assetid : beca2e83-df56-4ed0-8ea8-b0090e574cd3
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.videoportgetregistryparameters, VideoPort_Functions_f4e1230a-ae49-4751-8c60-e05043dbb049.xml, VideoPortGetRegistryParameters function [Display Devices], VideoPortGetRegistryParameters, video/VideoPortGetRegistryParameters
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows 2000 and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Videoprt.lib
-req.dll : Videoprt.sys
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_PORT_SERVICES
-req.product : Windows 10 or later.
+UID: NF:video.VideoPortGetRegistryParameters
+title: VideoPortGetRegistryParameters function
+author: windows-driver-content
+description: The VideoPortGetRegistryParameters function retrieves device-specific configuration information under the adapter key in the registry at startup.
+old-location: display\videoportgetregistryparameters.htm
+old-project: display
+ms.assetid: beca2e83-df56-4ed0-8ea8-b0090e574cd3
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.videoportgetregistryparameters, VideoPort_Functions_f4e1230a-ae49-4751-8c60-e05043dbb049.xml, VideoPortGetRegistryParameters function [Display Devices], VideoPortGetRegistryParameters, video/VideoPortGetRegistryParameters
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows 2000 and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Videoprt.lib
+req.dll: Videoprt.sys
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Videoprt.sys
+apiname:
+-	VideoPortGetRegistryParameters
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_PORT_SERVICES
+req.product: Windows 10 or later.
 ---
 
 

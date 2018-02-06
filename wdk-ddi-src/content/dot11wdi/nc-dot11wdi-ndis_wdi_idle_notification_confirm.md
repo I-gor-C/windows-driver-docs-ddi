@@ -1,41 +1,46 @@
 ---
-UID : NC:dot11wdi.NDIS_WDI_IDLE_NOTIFICATION_CONFIRM
-title : NDIS_WDI_IDLE_NOTIFICATION_CONFIRM
-author : windows-driver-content
-description : Miniport drivers call NdisWdiIdleNotificationConfirm callback function to notify NDIS that the idle network adapter can safely be suspended and transitioned to a low-power state.
-old-location : netvista\ndiswdiidlenotificationconfirm.htm
-old-project : netvista
-ms.assetid : 39D070BE-FF6F-4EC8-A4E4-DF45C5089AA7
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.ndiswdiidlenotificationconfirm, NdisWdiIdleNotificationConfirm callback function [Network Drivers Starting with Windows Vista], NdisWdiIdleNotificationConfirm, NDIS_WDI_IDLE_NOTIFICATION_CONFIRM, NDIS_WDI_IDLE_NOTIFICATION_CONFIRM, dot11wdi/NdisWdiIdleNotificationConfirm
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : dot11wdi.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SYNTH_STATS, *PSYNTH_STATS
+UID: NC:dot11wdi.NDIS_WDI_IDLE_NOTIFICATION_CONFIRM
+title: NDIS_WDI_IDLE_NOTIFICATION_CONFIRM
+author: windows-driver-content
+description: Miniport drivers call NdisWdiIdleNotificationConfirm callback function to notify NDIS that the idle network adapter can safely be suspended and transitioned to a low-power state.
+old-location: netvista\ndiswdiidlenotificationconfirm.htm
+old-project: netvista
+ms.assetid: 39D070BE-FF6F-4EC8-A4E4-DF45C5089AA7
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.ndiswdiidlenotificationconfirm, NdisWdiIdleNotificationConfirm callback function [Network Drivers Starting with Windows Vista], NdisWdiIdleNotificationConfirm, NDIS_WDI_IDLE_NOTIFICATION_CONFIRM, NDIS_WDI_IDLE_NOTIFICATION_CONFIRM, dot11wdi/NdisWdiIdleNotificationConfirm
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: dot11wdi.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	dot11wdi.h
+apiname:
+-	NdisWdiIdleNotificationConfirm
+product: Windows
+targetos: Windows
+req.typenames: SYNTH_STATS, *PSYNTH_STATS
 ---
 
 

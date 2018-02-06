@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.FsRtlLogCcFlushError
-title : FsRtlLogCcFlushError function
-author : windows-driver-content
-description : The FsRtlLogCcFlushError routine logs a lost delayed-write error and displays a dialog box to the user.
-old-location : ifsk\fsrtllogccflusherror.htm
-old-project : ifsk
-ms.assetid : e516758d-d1fe-4977-93bb-f427972fdd3c
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : fsrtlref_5e72d84c-d788-4b6d-b5fe-3e9b06b0e074.xml, FsRtlLogCcFlushError routine [Installable File System Drivers], ifsk.fsrtllogccflusherror, FsRtlLogCcFlushError, ntifs/FsRtlLogCcFlushError
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : FltKernel.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.FsRtlLogCcFlushError
+title: FsRtlLogCcFlushError function
+author: windows-driver-content
+description: The FsRtlLogCcFlushError routine logs a lost delayed-write error and displays a dialog box to the user.
+old-location: ifsk\fsrtllogccflusherror.htm
+old-project: ifsk
+ms.assetid: e516758d-d1fe-4977-93bb-f427972fdd3c
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: fsrtlref_5e72d84c-d788-4b6d-b5fe-3e9b06b0e074.xml, FsRtlLogCcFlushError routine [Installable File System Drivers], ifsk.fsrtllogccflusherror, FsRtlLogCcFlushError, ntifs/FsRtlLogCcFlushError
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: FltKernel.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	FsRtlLogCcFlushError
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

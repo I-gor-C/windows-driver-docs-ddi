@@ -1,42 +1,47 @@
 ---
-UID : NS:wdfrequest._WDF_REQUEST_REUSE_PARAMS
-title : "_WDF_REQUEST_REUSE_PARAMS"
-author : windows-driver-content
-description : The WDF_REQUEST_REUSE_PARAMS structure specifies information that is associated with a reused I/O request.
-old-location : wdf\wdf_request_reuse_params.htm
-old-project : wdf
-ms.assetid : 292e8a75-2035-4333-8a3c-28e79549d374
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WDF_REQUEST_REUSE_PARAMS structure, wdfrequest/WDF_REQUEST_REUSE_PARAMS, wdf.wdf_request_reuse_params, kmdf.wdf_request_reuse_params, wdfrequest/PWDF_REQUEST_REUSE_PARAMS, PWDF_REQUEST_REUSE_PARAMS structure pointer, WDF_REQUEST_REUSE_PARAMS, DFRequestObjectRef_07ccbf40-797b-41c5-9f81-87c1494a69ce.xml, PWDF_REQUEST_REUSE_PARAMS, _WDF_REQUEST_REUSE_PARAMS, *PWDF_REQUEST_REUSE_PARAMS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdfrequest.h
-req.include-header : Wdf.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_REQUEST_REUSE_PARAMS, *PWDF_REQUEST_REUSE_PARAMS
-req.product : Windows 10 or later.
+UID: NS:wdfrequest._WDF_REQUEST_REUSE_PARAMS
+title: "_WDF_REQUEST_REUSE_PARAMS"
+author: windows-driver-content
+description: The WDF_REQUEST_REUSE_PARAMS structure specifies information that is associated with a reused I/O request.
+old-location: wdf\wdf_request_reuse_params.htm
+old-project: wdf
+ms.assetid: 292e8a75-2035-4333-8a3c-28e79549d374
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WDF_REQUEST_REUSE_PARAMS structure, wdfrequest/WDF_REQUEST_REUSE_PARAMS, wdf.wdf_request_reuse_params, kmdf.wdf_request_reuse_params, wdfrequest/PWDF_REQUEST_REUSE_PARAMS, PWDF_REQUEST_REUSE_PARAMS structure pointer, WDF_REQUEST_REUSE_PARAMS, DFRequestObjectRef_07ccbf40-797b-41c5-9f81-87c1494a69ce.xml, PWDF_REQUEST_REUSE_PARAMS, _WDF_REQUEST_REUSE_PARAMS, *PWDF_REQUEST_REUSE_PARAMS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdfrequest.h
+req.include-header: Wdf.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfrequest.h
+apiname:
+-	WDF_REQUEST_REUSE_PARAMS
+product: Windows
+targetos: Windows
+req.typenames: WDF_REQUEST_REUSE_PARAMS, *PWDF_REQUEST_REUSE_PARAMS
+req.product: Windows 10 or later.
 ---
 
 # _WDF_REQUEST_REUSE_PARAMS structure

@@ -1,41 +1,46 @@
 ---
-UID : NS:1394._IRB_REQ_ISOCH_MODIFY_STREAM_PROPERTIES
-title : "_IRB_REQ_ISOCH_MODIFY_STREAM_PROPERTIES"
-author : windows-driver-content
-description : This structure contains the fields necessary for the Bus driver to carry out an IsochModifyStreamProperties request.
-old-location : ieee\irb_req_isoch_modify_stream_properties.htm
-old-project : IEEE
-ms.assetid : 06CA5F26-8042-4EAC-A381-A0C6E7023BFD
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : "_IRB_REQ_ISOCH_MODIFY_STREAM_PROPERTIES, 1394/IRB_REQ_ISOCH_MODIFY_STREAM_PROPERTIES, IEEE.irb_req_isoch_modify_stream_properties, IRB_REQ_ISOCH_MODIFY_STREAM_PROPERTIES structure [Buses], IRB_REQ_ISOCH_MODIFY_STREAM_PROPERTIES"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : 1394.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : IRB_REQ_ISOCH_MODIFY_STREAM_PROPERTIES
+UID: NS:1394._IRB_REQ_ISOCH_MODIFY_STREAM_PROPERTIES
+title: "_IRB_REQ_ISOCH_MODIFY_STREAM_PROPERTIES"
+author: windows-driver-content
+description: This structure contains the fields necessary for the Bus driver to carry out an IsochModifyStreamProperties request.
+old-location: ieee\irb_req_isoch_modify_stream_properties.htm
+old-project: IEEE
+ms.assetid: 06CA5F26-8042-4EAC-A381-A0C6E7023BFD
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: "_IRB_REQ_ISOCH_MODIFY_STREAM_PROPERTIES, 1394/IRB_REQ_ISOCH_MODIFY_STREAM_PROPERTIES, IEEE.irb_req_isoch_modify_stream_properties, IRB_REQ_ISOCH_MODIFY_STREAM_PROPERTIES structure [Buses], IRB_REQ_ISOCH_MODIFY_STREAM_PROPERTIES"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: 1394.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	1394.h
+apiname:
+-	IRB_REQ_ISOCH_MODIFY_STREAM_PROPERTIES
+product: Windows
+targetos: Windows
+req.typenames: IRB_REQ_ISOCH_MODIFY_STREAM_PROPERTIES
 ---
 
 # _IRB_REQ_ISOCH_MODIFY_STREAM_PROPERTIES structure

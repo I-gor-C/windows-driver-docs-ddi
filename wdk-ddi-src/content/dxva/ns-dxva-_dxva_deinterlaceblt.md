@@ -1,41 +1,46 @@
 ---
-UID : NS:dxva._DXVA_DeinterlaceBlt
-title : "_DXVA_DeinterlaceBlt"
-author : windows-driver-content
-description : The DXVA_DeinterlaceBlt structure is sent by the VMR to the accelerator to specify the deinterlace or frame-rate conversion parameters for bit-block transfers.
-old-location : display\dxva_deinterlaceblt.htm
-old-project : display
-ms.assetid : 0512a825-9cec-4ca0-9686-df5b3d2b216b
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : dxva/DXVA_DeinterlaceBlt, DXVA_DeinterlaceBlt, DXVA_DeinterlaceBlt structure [Display Devices], display.dxva_deinterlaceblt, dxvaref_69a3b788-495c-42a0-acae-8d8242d963c6.xml, _DXVA_DeinterlaceBlt
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : dxva.h
-req.include-header : Dxva.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXVA_DeinterlaceBlt
+UID: NS:dxva._DXVA_DeinterlaceBlt
+title: "_DXVA_DeinterlaceBlt"
+author: windows-driver-content
+description: The DXVA_DeinterlaceBlt structure is sent by the VMR to the accelerator to specify the deinterlace or frame-rate conversion parameters for bit-block transfers.
+old-location: display\dxva_deinterlaceblt.htm
+old-project: display
+ms.assetid: 0512a825-9cec-4ca0-9686-df5b3d2b216b
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: dxva/DXVA_DeinterlaceBlt, DXVA_DeinterlaceBlt, DXVA_DeinterlaceBlt structure [Display Devices], display.dxva_deinterlaceblt, dxvaref_69a3b788-495c-42a0-acae-8d8242d963c6.xml, _DXVA_DeinterlaceBlt
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: dxva.h
+req.include-header: Dxva.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	dxva.h
+apiname:
+-	DXVA_DeinterlaceBlt
+product: Windows
+targetos: Windows
+req.typenames: DXVA_DeinterlaceBlt
 ---
 
 # _DXVA_DeinterlaceBlt structure

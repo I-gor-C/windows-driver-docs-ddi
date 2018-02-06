@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugControl3.GetRadix
-title : IDebugControl3::GetRadix method
-author : windows-driver-content
-description : The GetRadix method returns the default radix (number base) used by the debugger engine when it evaluates and displays MASM expressions, and when it displays symbol information.
-old-location : debugger\getradix.htm
-old-project : debugger
-ms.assetid : eae478e1-f70c-4344-a6e0-982a668c1f5d
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : debugger.getradix, IDebugControl::GetRadix, dbgeng/IDebugControl3::GetRadix, IDebugControl interface [Windows Debugging], GetRadix method, IDebugControl2::GetRadix, GetRadix method [Windows Debugging], dbgeng/IDebugControl2::GetRadix, IDebugControl3, GetRadix method [Windows Debugging], IDebugControl2 interface, IDebugControl3::GetRadix, IDebugControl3 interface [Windows Debugging], GetRadix method, IDebugControl2 interface [Windows Debugging], GetRadix method, GetRadix method [Windows Debugging], IDebugControl interface, IDebugControl_3f4cb732-868a-4944-bcd9-dd1f221824df.xml, GetRadix, GetRadix method [Windows Debugging], IDebugControl3 interface, dbgeng/IDebugControl::GetRadix
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl3.GetRadix
+title: IDebugControl3::GetRadix method
+author: windows-driver-content
+description: The GetRadix method returns the default radix (number base) used by the debugger engine when it evaluates and displays MASM expressions, and when it displays symbol information.
+old-location: debugger\getradix.htm
+old-project: debugger
+ms.assetid: eae478e1-f70c-4344-a6e0-982a668c1f5d
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: debugger.getradix, IDebugControl::GetRadix, dbgeng/IDebugControl3::GetRadix, IDebugControl interface [Windows Debugging], GetRadix method, IDebugControl2::GetRadix, GetRadix method [Windows Debugging], dbgeng/IDebugControl2::GetRadix, IDebugControl3, GetRadix method [Windows Debugging], IDebugControl2 interface, IDebugControl3::GetRadix, IDebugControl3 interface [Windows Debugging], GetRadix method, IDebugControl2 interface [Windows Debugging], GetRadix method, GetRadix method [Windows Debugging], IDebugControl interface, IDebugControl_3f4cb732-868a-4944-bcd9-dd1f221824df.xml, GetRadix, GetRadix method [Windows Debugging], IDebugControl3 interface, dbgeng/IDebugControl::GetRadix
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl.GetRadix
+-	IDebugControl2.GetRadix
+-	IDebugControl3.GetRadix
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

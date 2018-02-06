@@ -1,42 +1,47 @@
 ---
-UID : NS:wdfusb._WDF_USB_PIPE_INFORMATION
-title : "_WDF_USB_PIPE_INFORMATION"
-author : windows-driver-content
-description : The WDF_USB_PIPE_INFORMATION structure contains information about a USB pipe and its endpoint.
-old-location : wdf\wdf_usb_pipe_information.htm
-old-project : wdf
-ms.assetid : 05cba67b-c9da-4345-bc6f-09de12a617c1
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WDF_USB_PIPE_INFORMATION, wdfusb/WDF_USB_PIPE_INFORMATION, PWDF_USB_PIPE_INFORMATION structure pointer, WDF_USB_PIPE_INFORMATION structure, DFUsbRef_80f26f29-adf0-4017-b261-36637da41c0d.xml, PWDF_USB_PIPE_INFORMATION, wdfusb/PWDF_USB_PIPE_INFORMATION, kmdf.wdf_usb_pipe_information, wdf.wdf_usb_pipe_information, *PWDF_USB_PIPE_INFORMATION, _WDF_USB_PIPE_INFORMATION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdfusb.h
-req.include-header : Wdfusb.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDF_USB_PIPE_INFORMATION, WDF_USB_PIPE_INFORMATION"
-req.product : Windows 10 or later.
+UID: NS:wdfusb._WDF_USB_PIPE_INFORMATION
+title: "_WDF_USB_PIPE_INFORMATION"
+author: windows-driver-content
+description: The WDF_USB_PIPE_INFORMATION structure contains information about a USB pipe and its endpoint.
+old-location: wdf\wdf_usb_pipe_information.htm
+old-project: wdf
+ms.assetid: 05cba67b-c9da-4345-bc6f-09de12a617c1
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WDF_USB_PIPE_INFORMATION, wdfusb/WDF_USB_PIPE_INFORMATION, PWDF_USB_PIPE_INFORMATION structure pointer, WDF_USB_PIPE_INFORMATION structure, DFUsbRef_80f26f29-adf0-4017-b261-36637da41c0d.xml, PWDF_USB_PIPE_INFORMATION, wdfusb/PWDF_USB_PIPE_INFORMATION, kmdf.wdf_usb_pipe_information, wdf.wdf_usb_pipe_information, *PWDF_USB_PIPE_INFORMATION, _WDF_USB_PIPE_INFORMATION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdfusb.h
+req.include-header: Wdfusb.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfusb.h
+apiname:
+-	WDF_USB_PIPE_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: "*PWDF_USB_PIPE_INFORMATION, WDF_USB_PIPE_INFORMATION"
+req.product: Windows 10 or later.
 ---
 
 # _WDF_USB_PIPE_INFORMATION structure

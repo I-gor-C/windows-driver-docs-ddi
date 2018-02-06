@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_DESTROYCRYPTOSESSION
-title : PFND3DDDI_DESTROYCRYPTOSESSION
-author : windows-driver-content
-description : The DestroyCryptoSession function releases resources for the encryption session that the CreateCryptoSession function creates.
-old-location : display\destroycryptosession.htm
-old-project : display
-ms.assetid : 4035ef73-e1a2-49e4-808d-c40c980393a4
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.destroycryptosession, DestroyCryptoSession callback function [Display Devices], DestroyCryptoSession, PFND3DDDI_DESTROYCRYPTOSESSION, PFND3DDDI_DESTROYCRYPTOSESSION, d3dumddi/DestroyCryptoSession, UserModeDisplayDriver_Functions_c1fa988d-a8b7-4538-94cd-d364873f4216.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : DestroyCryptoSession is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_DESTROYCRYPTOSESSION
+title: PFND3DDDI_DESTROYCRYPTOSESSION
+author: windows-driver-content
+description: The DestroyCryptoSession function releases resources for the encryption session that the CreateCryptoSession function creates.
+old-location: display\destroycryptosession.htm
+old-project: display
+ms.assetid: 4035ef73-e1a2-49e4-808d-c40c980393a4
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.destroycryptosession, DestroyCryptoSession callback function [Display Devices], DestroyCryptoSession, PFND3DDDI_DESTROYCRYPTOSESSION, PFND3DDDI_DESTROYCRYPTOSESSION, d3dumddi/DestroyCryptoSession, UserModeDisplayDriver_Functions_c1fa988d-a8b7-4538-94cd-d364873f4216.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: DestroyCryptoSession is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	DestroyCryptoSession
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

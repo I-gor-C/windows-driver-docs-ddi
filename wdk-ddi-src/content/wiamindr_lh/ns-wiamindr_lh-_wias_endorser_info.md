@@ -1,42 +1,47 @@
 ---
-UID : NS:wiamindr_lh._WIAS_ENDORSER_INFO
-title : "_WIAS_ENDORSER_INFO"
-author : windows-driver-content
-description : The WIAS_ENDORSER_INFO structure holds custom endorser token/value pairs.
-old-location : image\wias_endorser_info.htm
-old-project : image
-ms.assetid : 4874ddab-5443-4e03-8f49-493682dabac1
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : "_WIAS_ENDORSER_INFO, PWIAS_ENDORSER_INFO structure pointer [Imaging Devices], wiamindr_lh/WIAS_ENDORSER_INFO, wiamindr_lh/PWIAS_ENDORSER_INFO, wiastrct_de79ab57-ad51-4bf0-90cb-51bd1a8352bd.xml, *PWIAS_ENDORSER_INFO, WIAS_ENDORSER_INFO, PWIAS_ENDORSER_INFO, WIAS_ENDORSER_INFO structure [Imaging Devices], image.wias_endorser_info"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wiamindr_lh.h
-req.include-header : Wiamindr.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Me and in Windows XP and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWIAS_ENDORSER_INFO, WIAS_ENDORSER_INFO"
-req.product : Windows 10 or later.
+UID: NS:wiamindr_lh._WIAS_ENDORSER_INFO
+title: "_WIAS_ENDORSER_INFO"
+author: windows-driver-content
+description: The WIAS_ENDORSER_INFO structure holds custom endorser token/value pairs.
+old-location: image\wias_endorser_info.htm
+old-project: image
+ms.assetid: 4874ddab-5443-4e03-8f49-493682dabac1
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: "_WIAS_ENDORSER_INFO, PWIAS_ENDORSER_INFO structure pointer [Imaging Devices], wiamindr_lh/WIAS_ENDORSER_INFO, wiamindr_lh/PWIAS_ENDORSER_INFO, wiastrct_de79ab57-ad51-4bf0-90cb-51bd1a8352bd.xml, *PWIAS_ENDORSER_INFO, WIAS_ENDORSER_INFO, PWIAS_ENDORSER_INFO, WIAS_ENDORSER_INFO structure [Imaging Devices], image.wias_endorser_info"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wiamindr_lh.h
+req.include-header: Wiamindr.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Me and in Windows XP and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wiamindr_lh.h
+apiname:
+-	WIAS_ENDORSER_INFO
+product: Windows
+targetos: Windows
+req.typenames: "*PWIAS_ENDORSER_INFO, WIAS_ENDORSER_INFO"
+req.product: Windows 10 or later.
 ---
 
 # _WIAS_ENDORSER_INFO structure

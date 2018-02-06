@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddk._FILE_ATTRIBUTE_TAG_INFORMATION
-title : "_FILE_ATTRIBUTE_TAG_INFORMATION"
-author : windows-driver-content
-description : The FILE_ATTRIBUTE_TAG_INFORMATION structure is used as an argument to ZwQueryInformationFile.
-old-location : kernel\file_attribute_tag_information.htm
-old-project : kernel
-ms.assetid : e330bd79-cd44-412e-b9aa-ca5b791750d4
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : PFILE_ATTRIBUTE_TAG_INFORMATION, _FILE_ATTRIBUTE_TAG_INFORMATION, kernel.file_attribute_tag_information, ntddk/PFILE_ATTRIBUTE_TAG_INFORMATION, ntddk/FILE_ATTRIBUTE_TAG_INFORMATION, PFILE_ATTRIBUTE_TAG_INFORMATION structure pointer [Kernel-Mode Driver Architecture], FILE_ATTRIBUTE_TAG_INFORMATION structure [Kernel-Mode Driver Architecture], kstruct_b_d990c73e-3b75-4c00-954d-a16cca892895.xml, *PFILE_ATTRIBUTE_TAG_INFORMATION, FILE_ATTRIBUTE_TAG_INFORMATION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddk.h
-req.include-header : Ntddk.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PFILE_ATTRIBUTE_TAG_INFORMATION, FILE_ATTRIBUTE_TAG_INFORMATION"
+UID: NS:ntddk._FILE_ATTRIBUTE_TAG_INFORMATION
+title: "_FILE_ATTRIBUTE_TAG_INFORMATION"
+author: windows-driver-content
+description: The FILE_ATTRIBUTE_TAG_INFORMATION structure is used as an argument to ZwQueryInformationFile.
+old-location: kernel\file_attribute_tag_information.htm
+old-project: kernel
+ms.assetid: e330bd79-cd44-412e-b9aa-ca5b791750d4
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: PFILE_ATTRIBUTE_TAG_INFORMATION, _FILE_ATTRIBUTE_TAG_INFORMATION, kernel.file_attribute_tag_information, ntddk/PFILE_ATTRIBUTE_TAG_INFORMATION, ntddk/FILE_ATTRIBUTE_TAG_INFORMATION, PFILE_ATTRIBUTE_TAG_INFORMATION structure pointer [Kernel-Mode Driver Architecture], FILE_ATTRIBUTE_TAG_INFORMATION structure [Kernel-Mode Driver Architecture], kstruct_b_d990c73e-3b75-4c00-954d-a16cca892895.xml, *PFILE_ATTRIBUTE_TAG_INFORMATION, FILE_ATTRIBUTE_TAG_INFORMATION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddk.h
+req.include-header: Ntddk.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddk.h
+apiname:
+-	FILE_ATTRIBUTE_TAG_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: "*PFILE_ATTRIBUTE_TAG_INFORMATION, FILE_ATTRIBUTE_TAG_INFORMATION"
 ---
 
 # _FILE_ATTRIBUTE_TAG_INFORMATION structure

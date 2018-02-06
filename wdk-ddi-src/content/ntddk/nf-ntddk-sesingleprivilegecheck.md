@@ -1,41 +1,46 @@
 ---
-UID : NF:ntddk.SeSinglePrivilegeCheck
-title : SeSinglePrivilegeCheck function
-author : windows-driver-content
-description : The SeSinglePrivilegeCheck routine checks for the passed privilege value in the context of the current thread.
-old-location : kernel\sesingleprivilegecheck.htm
-old-project : kernel
-ms.assetid : bb83318c-b14f-421a-9cd4-69e270b825c7
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ntddk/SeSinglePrivilegeCheck, k110_ee767278-7c5f-4dcd-b328-e9219b453a84.xml, SeSinglePrivilegeCheck routine [Kernel-Mode Driver Architecture], SeSinglePrivilegeCheck, kernel.sesingleprivilegecheck
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 2000 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.SeSinglePrivilegeCheck
+title: SeSinglePrivilegeCheck function
+author: windows-driver-content
+description: The SeSinglePrivilegeCheck routine checks for the passed privilege value in the context of the current thread.
+old-location: kernel\sesingleprivilegecheck.htm
+old-project: kernel
+ms.assetid: bb83318c-b14f-421a-9cd4-69e270b825c7
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ntddk/SeSinglePrivilegeCheck, k110_ee767278-7c5f-4dcd-b328-e9219b453a84.xml, SeSinglePrivilegeCheck routine [Kernel-Mode Driver Architecture], SeSinglePrivilegeCheck, kernel.sesingleprivilegecheck
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 2000 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	SeSinglePrivilegeCheck
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

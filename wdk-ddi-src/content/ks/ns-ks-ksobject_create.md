@@ -1,41 +1,46 @@
 ---
-UID : NS:ks.KSOBJECT_CREATE
-title : KSOBJECT_CREATE
-author : windows-driver-content
-description : The KSOBJECT_CREATE structure contains an array of create handlers for base object classes supported by this device object.
-old-location : stream\ksobject_create.htm
-old-project : stream
-ms.assetid : b59d76eb-77c2-4ae5-8be2-f987d7f58446
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : PKSOBJECT_CREATE structure pointer [Streaming Media Devices], PKSOBJECT_CREATE, *PKSOBJECT_CREATE, ks/PKSOBJECT_CREATE, ks-struct_885122dd-299b-47d0-b161-2d3ffac610f6.xml, KSOBJECT_CREATE structure [Streaming Media Devices], KSOBJECT_CREATE, ks/KSOBJECT_CREATE, stream.ksobject_create
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKSOBJECT_CREATE, KSOBJECT_CREATE"
+UID: NS:ks.KSOBJECT_CREATE
+title: KSOBJECT_CREATE
+author: windows-driver-content
+description: The KSOBJECT_CREATE structure contains an array of create handlers for base object classes supported by this device object.
+old-location: stream\ksobject_create.htm
+old-project: stream
+ms.assetid: b59d76eb-77c2-4ae5-8be2-f987d7f58446
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: PKSOBJECT_CREATE structure pointer [Streaming Media Devices], PKSOBJECT_CREATE, *PKSOBJECT_CREATE, ks/PKSOBJECT_CREATE, ks-struct_885122dd-299b-47d0-b161-2d3ffac610f6.xml, KSOBJECT_CREATE structure [Streaming Media Devices], KSOBJECT_CREATE, ks/KSOBJECT_CREATE, stream.ksobject_create
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	KSOBJECT_CREATE
+product: Windows
+targetos: Windows
+req.typenames: "*PKSOBJECT_CREATE, KSOBJECT_CREATE"
 ---
 
 # KSOBJECT_CREATE structure

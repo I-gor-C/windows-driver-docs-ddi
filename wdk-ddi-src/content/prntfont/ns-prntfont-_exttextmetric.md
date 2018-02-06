@@ -1,42 +1,47 @@
 ---
-UID : NS:prntfont._EXTTEXTMETRIC
-title : "_EXTTEXTMETRIC"
-author : windows-driver-content
-description : The EXTTEXTMETRIC structure is used to specify font-specific information within Unidrv font metrics files (.ufm files).
-old-location : print\exttextmetric.htm
-old-project : print
-ms.assetid : d3d2397c-71c3-4904-a1ad-96a94698e50c
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : print_unidrv-pscript_fonts_8b9f67ef-9ab0-40e4-9474-c506de9c8824.xml, EXTTEXTMETRIC structure [Print Devices], _EXTTEXTMETRIC, EXTTEXTMETRIC, print.exttextmetric, *PEXTTEXTMETRIC, prntfont/EXTTEXTMETRIC, prntfont/PEXTTEXTMETRIC, PEXTTEXTMETRIC, PEXTTEXTMETRIC structure pointer [Print Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : prntfont.h
-req.include-header : Prntfont.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PEXTTEXTMETRIC, EXTTEXTMETRIC"
-req.product : Windows 10 or later.
+UID: NS:prntfont._EXTTEXTMETRIC
+title: "_EXTTEXTMETRIC"
+author: windows-driver-content
+description: The EXTTEXTMETRIC structure is used to specify font-specific information within Unidrv font metrics files (.ufm files).
+old-location: print\exttextmetric.htm
+old-project: print
+ms.assetid: d3d2397c-71c3-4904-a1ad-96a94698e50c
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: print_unidrv-pscript_fonts_8b9f67ef-9ab0-40e4-9474-c506de9c8824.xml, EXTTEXTMETRIC structure [Print Devices], _EXTTEXTMETRIC, EXTTEXTMETRIC, print.exttextmetric, *PEXTTEXTMETRIC, prntfont/EXTTEXTMETRIC, prntfont/PEXTTEXTMETRIC, PEXTTEXTMETRIC, PEXTTEXTMETRIC structure pointer [Print Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: prntfont.h
+req.include-header: Prntfont.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	prntfont.h
+apiname:
+-	EXTTEXTMETRIC
+product: Windows
+targetos: Windows
+req.typenames: "*PEXTTEXTMETRIC, EXTTEXTMETRIC"
+req.product: Windows 10 or later.
 ---
 
 # _EXTTEXTMETRIC structure

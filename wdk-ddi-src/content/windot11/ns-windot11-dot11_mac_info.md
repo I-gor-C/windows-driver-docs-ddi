@@ -1,42 +1,47 @@
 ---
-UID : NS:windot11.DOT11_MAC_INFO
-title : DOT11_MAC_INFO
-author : windows-driver-content
-description : Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
-old-location : netvista\dot11_mac_info.htm
-old-project : netvista
-ms.assetid : 0ca8814c-e91a-4f6a-b797-c440abf5cdd2
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : DOT11_MAC_INFO, DOT11_MAC_INFO structure [Network Drivers Starting with Windows Vista], Native_802.11_data_types_435a3e63-9d42-4b74-8280-d1a0456e3dbf.xml, PDOT11_MAC_INFO structure pointer [Network Drivers Starting with Windows Vista], windot11/DOT11_MAC_INFO, windot11/PDOT11_MAC_INFO, netvista.dot11_mac_info, PDOT11_MAC_INFO, *PDOT11_MAC_INFO
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : windot11.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7 and later versions of the Windows operating   systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDOT11_MAC_INFO, DOT11_MAC_INFO"
-req.product : Windows 10 or later.
+UID: NS:windot11.DOT11_MAC_INFO
+title: DOT11_MAC_INFO
+author: windows-driver-content
+description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+old-location: netvista\dot11_mac_info.htm
+old-project: netvista
+ms.assetid: 0ca8814c-e91a-4f6a-b797-c440abf5cdd2
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: DOT11_MAC_INFO, DOT11_MAC_INFO structure [Network Drivers Starting with Windows Vista], Native_802.11_data_types_435a3e63-9d42-4b74-8280-d1a0456e3dbf.xml, PDOT11_MAC_INFO structure pointer [Network Drivers Starting with Windows Vista], windot11/DOT11_MAC_INFO, windot11/PDOT11_MAC_INFO, netvista.dot11_mac_info, PDOT11_MAC_INFO, *PDOT11_MAC_INFO
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: windot11.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7 and later versions of the Windows operating   systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	windot11.h
+apiname:
+-	DOT11_MAC_INFO
+product: Windows
+targetos: Windows
+req.typenames: "*PDOT11_MAC_INFO, DOT11_MAC_INFO"
+req.product: Windows 10 or later.
 ---
 
 # DOT11_MAC_INFO structure

@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddvdeo.IOCTL_VIDEO_QUERY_POINTER_CAPABILITIES
-title : IOCTL_VIDEO_QUERY_POINTER_CAPABILITIES
-author : windows-driver-content
-description : Returns information about the adapter's &#0034;hardware cursor&#0034; features. Support for this modal request is optional.
-old-location : display\ioctl_video_query_pointer_capabilities.htm
-old-project : display
-ms.assetid : b282dcbe-f2ed-41f2-b97d-e9c409671197
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.ioctl_video_query_pointer_capabilities, IOCTL_VIDEO_QUERY_POINTER_CAPABILITIES control code [Display Devices], IOCTL_VIDEO_QUERY_POINTER_CAPABILITIES, ntddvdeo/IOCTL_VIDEO_QUERY_POINTER_CAPABILITIES, Video_IOCTLs_42064dfd-73fb-4afc-aa3b-4e1ec4829e99.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddvdeo.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TAPE_WRITE_MARKS, *PTAPE_WRITE_MARKS
+UID: NI:ntddvdeo.IOCTL_VIDEO_QUERY_POINTER_CAPABILITIES
+title: IOCTL_VIDEO_QUERY_POINTER_CAPABILITIES
+author: windows-driver-content
+description: Returns information about the adapter's &#0034;hardware cursor&#0034; features. Support for this modal request is optional.
+old-location: display\ioctl_video_query_pointer_capabilities.htm
+old-project: display
+ms.assetid: b282dcbe-f2ed-41f2-b97d-e9c409671197
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.ioctl_video_query_pointer_capabilities, IOCTL_VIDEO_QUERY_POINTER_CAPABILITIES control code [Display Devices], IOCTL_VIDEO_QUERY_POINTER_CAPABILITIES, ntddvdeo/IOCTL_VIDEO_QUERY_POINTER_CAPABILITIES, Video_IOCTLs_42064dfd-73fb-4afc-aa3b-4e1ec4829e99.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddvdeo.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddvdeo.h
+apiname:
+-	IOCTL_VIDEO_QUERY_POINTER_CAPABILITIES
+product: Windows
+targetos: Windows
+req.typenames: TAPE_WRITE_MARKS, *PTAPE_WRITE_MARKS
 ---
 
 # IOCTL_VIDEO_QUERY_POINTER_CAPABILITIES IOCTL

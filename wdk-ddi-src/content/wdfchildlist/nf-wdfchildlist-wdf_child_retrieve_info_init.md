@@ -1,42 +1,47 @@
 ---
-UID : NF:wdfchildlist.WDF_CHILD_RETRIEVE_INFO_INIT
-title : WDF_CHILD_RETRIEVE_INFO_INIT function
-author : windows-driver-content
-description : The WDF_CHILD_RETRIEVE_INFO_INIT function initializes a WDF_CHILD_RETRIEVE_INFO structure.
-old-location : wdf\wdf_child_retrieve_info_init.htm
-old-project : wdf
-ms.assetid : e41a656c-c507-45ca-a232-6926ace3c9d9
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdfchildlist/WDF_CHILD_RETRIEVE_INFO_INIT, wdf.wdf_child_retrieve_info_init, DFDeviceObjectChildListRef_f647d2ee-4714-49b9-9ba4-18488fd66628.xml, WDF_CHILD_RETRIEVE_INFO_INIT function, WDF_CHILD_RETRIEVE_INFO_INIT, kmdf.wdf_child_retrieve_info_init
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfchildlist.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_RETRIEVE_CHILD_FLAGS
-req.product : Windows 10 or later.
+UID: NF:wdfchildlist.WDF_CHILD_RETRIEVE_INFO_INIT
+title: WDF_CHILD_RETRIEVE_INFO_INIT function
+author: windows-driver-content
+description: The WDF_CHILD_RETRIEVE_INFO_INIT function initializes a WDF_CHILD_RETRIEVE_INFO structure.
+old-location: wdf\wdf_child_retrieve_info_init.htm
+old-project: wdf
+ms.assetid: e41a656c-c507-45ca-a232-6926ace3c9d9
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdfchildlist/WDF_CHILD_RETRIEVE_INFO_INIT, wdf.wdf_child_retrieve_info_init, DFDeviceObjectChildListRef_f647d2ee-4714-49b9-9ba4-18488fd66628.xml, WDF_CHILD_RETRIEVE_INFO_INIT function, WDF_CHILD_RETRIEVE_INFO_INIT, kmdf.wdf_child_retrieve_info_init
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfchildlist.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdfchildlist.h
+apiname:
+-	WDF_CHILD_RETRIEVE_INFO_INIT
+product: Windows
+targetos: Windows
+req.typenames: WDF_RETRIEVE_CHILD_FLAGS
+req.product: Windows 10 or later.
 ---
 
 

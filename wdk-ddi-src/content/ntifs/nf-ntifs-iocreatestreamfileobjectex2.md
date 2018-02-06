@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.IoCreateStreamFileObjectEx2
-title : IoCreateStreamFileObjectEx2 function
-author : windows-driver-content
-description : The IoCreateStreamFileObjectEx2 routine creates a new stream file object with create options for a target device object.
-old-location : ifsk\iocreatestreamfileobjectex2.htm
-old-project : ifsk
-ms.assetid : 2F12F4E5-21C2-4DA8-9111-0087A16F0256
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.iocreatestreamfileobjectex2, ntifs/IoCreateStreamFileObjectEx, IoCreateStreamFileObjectEx2, IoCreateStreamFileObjectEx routine [Installable File System Drivers], IoCreateStreamFileObjectEx
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.IoCreateStreamFileObjectEx2
+title: IoCreateStreamFileObjectEx2 function
+author: windows-driver-content
+description: The IoCreateStreamFileObjectEx2 routine creates a new stream file object with create options for a target device object.
+old-location: ifsk\iocreatestreamfileobjectex2.htm
+old-project: ifsk
+ms.assetid: 2F12F4E5-21C2-4DA8-9111-0087A16F0256
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.iocreatestreamfileobjectex2, ntifs/IoCreateStreamFileObjectEx, IoCreateStreamFileObjectEx2, IoCreateStreamFileObjectEx routine [Installable File System Drivers], IoCreateStreamFileObjectEx
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoCreateStreamFileObjectEx
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

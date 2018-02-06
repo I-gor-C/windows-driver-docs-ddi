@@ -1,42 +1,47 @@
 ---
-UID : NE:rilapitypes.RILPOSITIONINFOGSMPARAMMASK
-title : RILPOSITIONINFOGSMPARAMMASK
-author : windows-driver-content
-description : This enumeration describes the RILPOSITIONINFOGSMPARAMMASK.
-old-location : netvista\rilpositioninfogsmparammask.htm
-old-project : netvista
-ms.assetid : 9785ef86-8a2f-4e08-8caf-aa25f52a76ab
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : RIL_PARAM_POSITION_GSM_MCC, RIL_PARAM_POSITION_GSM_MNC, rilapitypes/RILPOSITIONINFOGSMPARAMMASK, rilapitypes/RIL_PARAM_POSITION_GSM_BSID, RIL_PARAM_POSITION_GSM_ALL, rilapitypes/RIL_PARAM_POSITION_GSM_ALL, rilapitypes/RIL_PARAM_POSITION_GSM_CELLID, rilapitypes/RIL_PARAM_POSITION_GSM_LAC, rilapitypes/RIL_PARAM_POSITION_GSM_ARFCN, rilapitypes/RIL_PARAM_POSITION_GSM_MNC, rilapitypes/RIL_PARAM_POSITION_GSM_TA, netvista.rilpositioninfogsmparammask, RILPOSITIONINFOGSMPARAMMASK, RIL_PARAM_POSITION_GSM_TA, RIL_PARAM_POSITION_GSM_CELLID, RIL_PARAM_POSITION_GSM_BSID, RIL_PARAM_POSITION_GSM_LAC, RILPOSITIONINFOGSMPARAMMASK enumeration [Network Drivers Starting with Windows Vista], RIL_PARAM_POSITION_GSM_ARFCN, RIL_PARAM_POSITION_GSM_RXLEVEL, rilapitypes/RIL_PARAM_POSITION_GSM_MCC, rilapitypes/RIL_PARAM_POSITION_GSM_RXLEVEL
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : rilapitypes.h
-req.include-header : Rilapitypes.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RILPOSITIONINFOGSMPARAMMASK
-req.product : Windows 10 or later.
+UID: NE:rilapitypes.RILPOSITIONINFOGSMPARAMMASK
+title: RILPOSITIONINFOGSMPARAMMASK
+author: windows-driver-content
+description: This enumeration describes the RILPOSITIONINFOGSMPARAMMASK.
+old-location: netvista\rilpositioninfogsmparammask.htm
+old-project: netvista
+ms.assetid: 9785ef86-8a2f-4e08-8caf-aa25f52a76ab
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: RIL_PARAM_POSITION_GSM_MCC, RIL_PARAM_POSITION_GSM_MNC, rilapitypes/RILPOSITIONINFOGSMPARAMMASK, rilapitypes/RIL_PARAM_POSITION_GSM_BSID, RIL_PARAM_POSITION_GSM_ALL, rilapitypes/RIL_PARAM_POSITION_GSM_ALL, rilapitypes/RIL_PARAM_POSITION_GSM_CELLID, rilapitypes/RIL_PARAM_POSITION_GSM_LAC, rilapitypes/RIL_PARAM_POSITION_GSM_ARFCN, rilapitypes/RIL_PARAM_POSITION_GSM_MNC, rilapitypes/RIL_PARAM_POSITION_GSM_TA, netvista.rilpositioninfogsmparammask, RILPOSITIONINFOGSMPARAMMASK, RIL_PARAM_POSITION_GSM_TA, RIL_PARAM_POSITION_GSM_CELLID, RIL_PARAM_POSITION_GSM_BSID, RIL_PARAM_POSITION_GSM_LAC, RILPOSITIONINFOGSMPARAMMASK enumeration [Network Drivers Starting with Windows Vista], RIL_PARAM_POSITION_GSM_ARFCN, RIL_PARAM_POSITION_GSM_RXLEVEL, rilapitypes/RIL_PARAM_POSITION_GSM_MCC, rilapitypes/RIL_PARAM_POSITION_GSM_RXLEVEL
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: rilapitypes.h
+req.include-header: Rilapitypes.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	rilapitypes.h
+apiname:
+-	RILPOSITIONINFOGSMPARAMMASK
+product: Windows
+targetos: Windows
+req.typenames: RILPOSITIONINFOGSMPARAMMASK
+req.product: Windows 10 or later.
 ---
 
 # RILPOSITIONINFOGSMPARAMMASK Enumeration
@@ -61,51 +66,51 @@ enum RILPOSITIONINFOGSMPARAMMASK {
 ## Constants
 
 <table>
-
-<tr>
-<td>RIL_PARAM_POSITION_GSM_ALL</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_PARAM_POSITION_GSM_ARFCN</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_PARAM_POSITION_GSM_BSID</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_PARAM_POSITION_GSM_CELLID</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_PARAM_POSITION_GSM_LAC</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_PARAM_POSITION_GSM_MCC</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_PARAM_POSITION_GSM_MNC</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_PARAM_POSITION_GSM_RXLEVEL</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RIL_PARAM_POSITION_GSM_TA</td>
-<td></td>
-</tr>
+            
+                <tr>
+                    <td>RIL_PARAM_POSITION_GSM_ALL</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_POSITION_GSM_ARFCN</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_POSITION_GSM_BSID</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_POSITION_GSM_CELLID</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_POSITION_GSM_LAC</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_POSITION_GSM_MCC</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_POSITION_GSM_MNC</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_POSITION_GSM_RXLEVEL</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RIL_PARAM_POSITION_GSM_TA</td>
+                    <td></td>
+                </tr>
 </table>
 
 
@@ -114,9 +119,9 @@ enum RILPOSITIONINFOGSMPARAMMASK {
 | ---- |:---- |
 | **Header** | rilapitypes.h (include Rilapitypes.h) |
 
-## See Also
+    ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn946509">Cellular COM enumerations</a>
+        <a href="https://msdn.microsoft.com/library/windows/hardware/dn946509">Cellular COM enumerations</a>
 
  
 

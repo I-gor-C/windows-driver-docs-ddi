@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.KSWAVE_BUFFER
-title : KSWAVE_BUFFER
-author : windows-driver-content
-description : The KSWAVE_BUFFER structure is used to describe a sample buffer.
-old-location : stream\kswave_buffer.htm
-old-project : stream
-ms.assetid : 1bd19fcd-90da-4e1a-ac9a-692c6fddc7ab
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.kswave_buffer, dvdref_8b774201-3725-497e-8545-10c5cad2ef1f.xml, KSWAVE_BUFFER structure [Streaming Media Devices], PKSWAVE_BUFFER structure pointer [Streaming Media Devices], *PKSWAVE_BUFFER, KSWAVE_BUFFER, ksmedia/KSWAVE_BUFFER, ksmedia/PKSWAVE_BUFFER, PKSWAVE_BUFFER
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKSWAVE_BUFFER, KSWAVE_BUFFER"
+UID: NS:ksmedia.KSWAVE_BUFFER
+title: KSWAVE_BUFFER
+author: windows-driver-content
+description: The KSWAVE_BUFFER structure is used to describe a sample buffer.
+old-location: stream\kswave_buffer.htm
+old-project: stream
+ms.assetid: 1bd19fcd-90da-4e1a-ac9a-692c6fddc7ab
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.kswave_buffer, dvdref_8b774201-3725-497e-8545-10c5cad2ef1f.xml, KSWAVE_BUFFER structure [Streaming Media Devices], PKSWAVE_BUFFER structure pointer [Streaming Media Devices], *PKSWAVE_BUFFER, KSWAVE_BUFFER, ksmedia/KSWAVE_BUFFER, ksmedia/PKSWAVE_BUFFER, PKSWAVE_BUFFER
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	KSWAVE_BUFFER
+product: Windows
+targetos: Windows
+req.typenames: "*PKSWAVE_BUFFER, KSWAVE_BUFFER"
 ---
 
 # KSWAVE_BUFFER structure

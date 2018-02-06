@@ -1,42 +1,47 @@
 ---
-UID : NS:wdm.PCI_X_CAPABILITY
-title : PCI_X_CAPABILITY
-author : windows-driver-content
-description : The PCI_X_CAPABILITY structure reports the contents of the command and status registers of a device that is compliant with the PCI-X Addendum to the PCI Local Bus Specification.
-old-location : pci\pci_x_capability.htm
-old-project : PCI
-ms.assetid : b30ccf86-ae6d-484a-a3f2-8b38df26e995
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : PCI_X_CAPABILITY, PPCI_X_CAPABILITY structure pointer [Buses], pci_struct_171a6a86-48fe-4955-8f12-43df82659f7a.xml, wdm/PPCI_X_CAPABILITY, wdm/PCI_X_CAPABILITY, PCI.pci_x_capability, *PPCI_X_CAPABILITY, PPCI_X_CAPABILITY, PCI_X_CAPABILITY structure [Buses]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : Wdm.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PCI_X_CAPABILITY, *PPCI_X_CAPABILITY
-req.product : Windows 10 or later.
+UID: NS:wdm.PCI_X_CAPABILITY
+title: PCI_X_CAPABILITY
+author: windows-driver-content
+description: The PCI_X_CAPABILITY structure reports the contents of the command and status registers of a device that is compliant with the PCI-X Addendum to the PCI Local Bus Specification.
+old-location: pci\pci_x_capability.htm
+old-project: PCI
+ms.assetid: b30ccf86-ae6d-484a-a3f2-8b38df26e995
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: PCI_X_CAPABILITY, PPCI_X_CAPABILITY structure pointer [Buses], pci_struct_171a6a86-48fe-4955-8f12-43df82659f7a.xml, wdm/PPCI_X_CAPABILITY, wdm/PCI_X_CAPABILITY, PCI.pci_x_capability, *PPCI_X_CAPABILITY, PPCI_X_CAPABILITY, PCI_X_CAPABILITY structure [Buses]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: Wdm.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdm.h
+apiname:
+-	PCI_X_CAPABILITY
+product: Windows
+targetos: Windows
+req.typenames: PCI_X_CAPABILITY, *PPCI_X_CAPABILITY
+req.product: Windows 10 or later.
 ---
 
 # PCI_X_CAPABILITY structure

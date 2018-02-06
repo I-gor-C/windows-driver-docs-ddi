@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfdevice.WdfDeviceIndicateWakeStatus
-title : WdfDeviceIndicateWakeStatus function
-author : windows-driver-content
-description : The WdfDeviceIndicateWakeStatus method informs the framework that the calling bus driver has stopped waiting for a specified device to trigger a wake signal on the bus.
-old-location : wdf\wdfdeviceindicatewakestatus.htm
-old-project : wdf
-ms.assetid : 6581a309-1a6d-4795-a55c-327215ea18ee
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdfdevice/WdfDeviceIndicateWakeStatus, DFDeviceObjectGeneralRef_8b314bb3-74d4-4ef6-b1a0-f45fb498c468.xml, WdfDeviceIndicateWakeStatus, kmdf.wdfdeviceindicatewakestatus, PFN_WDFDEVICEINDICATEWAKESTATUS, wdf.wdfdeviceindicatewakestatus, WdfDeviceIndicateWakeStatus method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfdevice.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_STATE_NOTIFICATION_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfdevice.WdfDeviceIndicateWakeStatus
+title: WdfDeviceIndicateWakeStatus function
+author: windows-driver-content
+description: The WdfDeviceIndicateWakeStatus method informs the framework that the calling bus driver has stopped waiting for a specified device to trigger a wake signal on the bus.
+old-location: wdf\wdfdeviceindicatewakestatus.htm
+old-project: wdf
+ms.assetid: 6581a309-1a6d-4795-a55c-327215ea18ee
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdfdevice/WdfDeviceIndicateWakeStatus, DFDeviceObjectGeneralRef_8b314bb3-74d4-4ef6-b1a0-f45fb498c468.xml, WdfDeviceIndicateWakeStatus, kmdf.wdfdeviceindicatewakestatus, PFN_WDFDEVICEINDICATEWAKESTATUS, wdf.wdfdeviceindicatewakestatus, WdfDeviceIndicateWakeStatus method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfdevice.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfDeviceIndicateWakeStatus
+product: Windows
+targetos: Windows
+req.typenames: WDF_STATE_NOTIFICATION_TYPE
+req.product: Windows 10 or later.
 ---
 
 

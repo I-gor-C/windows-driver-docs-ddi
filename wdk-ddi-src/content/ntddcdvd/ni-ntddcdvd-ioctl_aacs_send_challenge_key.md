@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddcdvd.IOCTL_AACS_SEND_CHALLENGE_KEY
-title : IOCTL_AACS_SEND_CHALLENGE_KEY
-author : windows-driver-content
-description : Sends the host's challenge key to the logical unit. The host's challenge key consists of a point on an elliptic curve and its associated signature.
-old-location : storage\ioctl_aacs_send_challenge_key.htm
-old-project : storage
-ms.assetid : 762776f1-5423-4d02-8b59-de1e9ada8044
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_aacs_send_challenge_key, IOCTL_AACS_SEND_CHALLENGE_KEY control code [Storage Devices], IOCTL_AACS_SEND_CHALLENGE_KEY, ntddcdvd/IOCTL_AACS_SEND_CHALLENGE_KEY, k307_064ac0c8-c4f9-4232-a41a-72159ff13fd2.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddcdvd.h
-req.include-header : Ntddcdvd.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DVD_STRUCTURE_FORMAT, *PDVD_STRUCTURE_FORMAT
+UID: NI:ntddcdvd.IOCTL_AACS_SEND_CHALLENGE_KEY
+title: IOCTL_AACS_SEND_CHALLENGE_KEY
+author: windows-driver-content
+description: Sends the host's challenge key to the logical unit. The host's challenge key consists of a point on an elliptic curve and its associated signature.
+old-location: storage\ioctl_aacs_send_challenge_key.htm
+old-project: storage
+ms.assetid: 762776f1-5423-4d02-8b59-de1e9ada8044
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_aacs_send_challenge_key, IOCTL_AACS_SEND_CHALLENGE_KEY control code [Storage Devices], IOCTL_AACS_SEND_CHALLENGE_KEY, ntddcdvd/IOCTL_AACS_SEND_CHALLENGE_KEY, k307_064ac0c8-c4f9-4232-a41a-72159ff13fd2.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddcdvd.h
+req.include-header: Ntddcdvd.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddcdvd.h
+apiname:
+-	IOCTL_AACS_SEND_CHALLENGE_KEY
+product: Windows
+targetos: Windows
+req.typenames: DVD_STRUCTURE_FORMAT, *PDVD_STRUCTURE_FORMAT
 ---
 
 # IOCTL_AACS_SEND_CHALLENGE_KEY IOCTL

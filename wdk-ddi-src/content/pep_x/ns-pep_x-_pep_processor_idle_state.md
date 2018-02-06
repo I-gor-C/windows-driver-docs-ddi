@@ -1,41 +1,46 @@
 ---
-UID : NS:pep_x._PEP_PROCESSOR_IDLE_STATE
-title : "_PEP_PROCESSOR_IDLE_STATE"
-author : windows-driver-content
-description : The PEP_PROCESSOR_IDLE_STATE structure describes the capabilities of a processor idle state.
-old-location : kernel\pep_processor_idle_state.htm
-old-project : kernel
-ms.assetid : 10CAB3CA-83BF-421B-81F5-2B42790B8928
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : PPEP_PROCESSOR_IDLE_STATE, _PEP_PROCESSOR_IDLE_STATE, PEP_PROCESSOR_IDLE_STATE structure [Kernel-Mode Driver Architecture], PPEP_PROCESSOR_IDLE_STATE structure pointer [Kernel-Mode Driver Architecture], pep_x/PPEP_PROCESSOR_IDLE_STATE, *PPEP_PROCESSOR_IDLE_STATE, PEP_PROCESSOR_IDLE_STATE, kernel.pep_processor_idle_state, pep_x/PEP_PROCESSOR_IDLE_STATE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : pep_x.h
-req.include-header : Pepfx.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with Windows 10.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PEP_PROCESSOR_IDLE_STATE, *PPEP_PROCESSOR_IDLE_STATE
+UID: NS:pep_x._PEP_PROCESSOR_IDLE_STATE
+title: "_PEP_PROCESSOR_IDLE_STATE"
+author: windows-driver-content
+description: The PEP_PROCESSOR_IDLE_STATE structure describes the capabilities of a processor idle state.
+old-location: kernel\pep_processor_idle_state.htm
+old-project: kernel
+ms.assetid: 10CAB3CA-83BF-421B-81F5-2B42790B8928
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: PPEP_PROCESSOR_IDLE_STATE, _PEP_PROCESSOR_IDLE_STATE, PEP_PROCESSOR_IDLE_STATE structure [Kernel-Mode Driver Architecture], PPEP_PROCESSOR_IDLE_STATE structure pointer [Kernel-Mode Driver Architecture], pep_x/PPEP_PROCESSOR_IDLE_STATE, *PPEP_PROCESSOR_IDLE_STATE, PEP_PROCESSOR_IDLE_STATE, kernel.pep_processor_idle_state, pep_x/PEP_PROCESSOR_IDLE_STATE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: pep_x.h
+req.include-header: Pepfx.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows 10.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	pep_x.h
+apiname:
+-	PEP_PROCESSOR_IDLE_STATE
+product: Windows
+targetos: Windows
+req.typenames: PEP_PROCESSOR_IDLE_STATE, *PPEP_PROCESSOR_IDLE_STATE
 ---
 
 # _PEP_PROCESSOR_IDLE_STATE structure

@@ -1,41 +1,46 @@
 ---
-UID : NS:ks._KSFILTERFACTORY
-title : "_KSFILTERFACTORY"
-author : windows-driver-content
-description : The KSFILTERFACTORY structure represents a filter factory.
-old-location : stream\ksfilterfactory.htm
-old-project : stream
-ms.assetid : c40e25f8-e6e5-43bc-895d-a6b247d07470
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : "*PKSFILTERFACTORY, PKSFILTERFACTORY structure pointer [Streaming Media Devices], stream.ksfilterfactory, KSFILTERFACTORY, ks/PKSFILTERFACTORY, ks/KSFILTERFACTORY, PKSFILTERFACTORY, _KSFILTERFACTORY, KSFILTERFACTORY structure [Streaming Media Devices], avstruct_def7ad6b-4cda-4677-abbc-3f8a458fbc87.xml"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and in Microsoft DirectX 8.0 and later versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KSFILTERFACTORY, *PKSFILTERFACTORY
+UID: NS:ks._KSFILTERFACTORY
+title: "_KSFILTERFACTORY"
+author: windows-driver-content
+description: The KSFILTERFACTORY structure represents a filter factory.
+old-location: stream\ksfilterfactory.htm
+old-project: stream
+ms.assetid: c40e25f8-e6e5-43bc-895d-a6b247d07470
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: "*PKSFILTERFACTORY, PKSFILTERFACTORY structure pointer [Streaming Media Devices], stream.ksfilterfactory, KSFILTERFACTORY, ks/PKSFILTERFACTORY, ks/KSFILTERFACTORY, PKSFILTERFACTORY, _KSFILTERFACTORY, KSFILTERFACTORY structure [Streaming Media Devices], avstruct_def7ad6b-4cda-4677-abbc-3f8a458fbc87.xml"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and in Microsoft DirectX 8.0 and later versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	KSFILTERFACTORY
+product: Windows
+targetos: Windows
+req.typenames: KSFILTERFACTORY, *PKSFILTERFACTORY
 ---
 
 # _KSFILTERFACTORY structure

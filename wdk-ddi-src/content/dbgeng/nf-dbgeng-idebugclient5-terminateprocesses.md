@@ -1,41 +1,50 @@
 ---
-UID : NF:dbgeng.IDebugClient5.TerminateProcesses
-title : IDebugClient5::TerminateProcesses method
-author : windows-driver-content
-description : The TerminateProcesses method attempts to terminate all processes in all targets.
-old-location : debugger\terminateprocesses.htm
-old-project : debugger
-ms.assetid : e106a176-b7f9-4812-9995-a23246439b23
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : dbgeng/IDebugClient5::TerminateProcesses, TerminateProcesses, IDebugClient5::TerminateProcesses, IDebugClient_6bbf21ae-e69b-4f44-a4e7-9b5abe428903.xml, IDebugClient3 interface [Windows Debugging], TerminateProcesses method, TerminateProcesses method [Windows Debugging], dbgeng/IDebugClient4::TerminateProcesses, TerminateProcesses method [Windows Debugging], IDebugClient2 interface, TerminateProcesses method [Windows Debugging], IDebugClient3 interface, IDebugClient4::TerminateProcesses, IDebugClient4 interface [Windows Debugging], TerminateProcesses method, TerminateProcesses method [Windows Debugging], IDebugClient5 interface, IDebugClient5 interface [Windows Debugging], TerminateProcesses method, IDebugClient2 interface [Windows Debugging], TerminateProcesses method, dbgeng/IDebugClient::TerminateProcesses, dbgeng/IDebugClient2::TerminateProcesses, IDebugClient2::TerminateProcesses, IDebugClient::TerminateProcesses, IDebugClient5, IDebugClient interface [Windows Debugging], TerminateProcesses method, TerminateProcesses method [Windows Debugging], IDebugClient interface, IDebugClient3::TerminateProcesses, debugger.terminateprocesses, dbgeng/IDebugClient3::TerminateProcesses, TerminateProcesses method [Windows Debugging], IDebugClient4 interface
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugClient5.TerminateProcesses
+title: IDebugClient5::TerminateProcesses method
+author: windows-driver-content
+description: The TerminateProcesses method attempts to terminate all processes in all targets.
+old-location: debugger\terminateprocesses.htm
+old-project: debugger
+ms.assetid: e106a176-b7f9-4812-9995-a23246439b23
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: dbgeng/IDebugClient5::TerminateProcesses, TerminateProcesses, IDebugClient5::TerminateProcesses, IDebugClient_6bbf21ae-e69b-4f44-a4e7-9b5abe428903.xml, IDebugClient3 interface [Windows Debugging], TerminateProcesses method, TerminateProcesses method [Windows Debugging], dbgeng/IDebugClient4::TerminateProcesses, TerminateProcesses method [Windows Debugging], IDebugClient2 interface, TerminateProcesses method [Windows Debugging], IDebugClient3 interface, IDebugClient4::TerminateProcesses, IDebugClient4 interface [Windows Debugging], TerminateProcesses method, TerminateProcesses method [Windows Debugging], IDebugClient5 interface, IDebugClient5 interface [Windows Debugging], TerminateProcesses method, IDebugClient2 interface [Windows Debugging], TerminateProcesses method, dbgeng/IDebugClient::TerminateProcesses, dbgeng/IDebugClient2::TerminateProcesses, IDebugClient2::TerminateProcesses, IDebugClient::TerminateProcesses, IDebugClient5, IDebugClient interface [Windows Debugging], TerminateProcesses method, TerminateProcesses method [Windows Debugging], IDebugClient interface, IDebugClient3::TerminateProcesses, debugger.terminateprocesses, dbgeng/IDebugClient3::TerminateProcesses, TerminateProcesses method [Windows Debugging], IDebugClient4 interface
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugClient.TerminateProcesses
+-	IDebugClient2.TerminateProcesses
+-	IDebugClient3.TerminateProcesses
+-	IDebugClient4.TerminateProcesses
+-	IDebugClient5.TerminateProcesses
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

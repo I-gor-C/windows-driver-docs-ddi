@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugOutputCallbacks2.Output
-title : IDebugOutputCallbacks2::Output method
-author : windows-driver-content
-description : This method is not used.
-old-location : debugger\idebugoutputcallbacks2_output.htm
-old-project : debugger
-ms.assetid : 3C1A9993-8E95-455C-BC1D-DD2526A156D9
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugOutputCallbacks2, Output method [Windows Debugging], IDebugOutputCallbacks2 interface, IDebugOutputCallbacks2::Output, debugger.idebugoutputcallbacks2_output, dbgeng/IDebugOutputCallbacks2::Output, Output method [Windows Debugging], IDebugOutputCallbacks2 interface [Windows Debugging], Output method, Output
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugOutputCallbacks2.Output
+title: IDebugOutputCallbacks2::Output method
+author: windows-driver-content
+description: This method is not used.
+old-location: debugger\idebugoutputcallbacks2_output.htm
+old-project: debugger
+ms.assetid: 3C1A9993-8E95-455C-BC1D-DD2526A156D9
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugOutputCallbacks2, Output method [Windows Debugging], IDebugOutputCallbacks2 interface, IDebugOutputCallbacks2::Output, debugger.idebugoutputcallbacks2_output, dbgeng/IDebugOutputCallbacks2::Output, Output method [Windows Debugging], IDebugOutputCallbacks2 interface [Windows Debugging], Output method, Output
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugOutputCallbacks2.Output
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

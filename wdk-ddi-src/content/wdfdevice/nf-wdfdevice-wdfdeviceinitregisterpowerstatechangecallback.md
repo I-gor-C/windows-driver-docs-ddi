@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfdevice.WdfDeviceInitRegisterPowerStateChangeCallback
-title : WdfDeviceInitRegisterPowerStateChangeCallback function
-author : windows-driver-content
-description : The WdfDeviceInitRegisterPowerStateChangeCallback method registers a driver-supplied event callback function that the framework calls when a device's power state machine changes state.
-old-location : wdf\wdfdeviceinitregisterpowerstatechangecallback.htm
-old-project : wdf
-ms.assetid : f3c09dfb-d327-488b-8e5d-77a579d1e1f0
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : DFDeviceObjectGeneralRef_c2199058-308e-4207-b035-30de28c64fa5.xml, wdf.wdfdeviceinitregisterpowerstatechangecallback, kmdf.wdfdeviceinitregisterpowerstatechangecallback, PFN_WDFDEVICEINITREGISTERPOWERSTATECHANGECALLBACK, WdfDeviceInitRegisterPowerStateChangeCallback, wdfdevice/WdfDeviceInitRegisterPowerStateChangeCallback, WdfDeviceInitRegisterPowerStateChangeCallback method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfdevice.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : ChildDeviceInitAPI, DeviceInitAPI, DriverCreate, InitFreeDeviceCallback, InitFreeDeviceCreate, InitFreeNull, KmdfIrql, KmdfIrql2, PdoDeviceInitAPI, PdoInitFreeDeviceCallback, PdoInitFreeDeviceCreate
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_STATE_NOTIFICATION_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfdevice.WdfDeviceInitRegisterPowerStateChangeCallback
+title: WdfDeviceInitRegisterPowerStateChangeCallback function
+author: windows-driver-content
+description: The WdfDeviceInitRegisterPowerStateChangeCallback method registers a driver-supplied event callback function that the framework calls when a device's power state machine changes state.
+old-location: wdf\wdfdeviceinitregisterpowerstatechangecallback.htm
+old-project: wdf
+ms.assetid: f3c09dfb-d327-488b-8e5d-77a579d1e1f0
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: DFDeviceObjectGeneralRef_c2199058-308e-4207-b035-30de28c64fa5.xml, wdf.wdfdeviceinitregisterpowerstatechangecallback, kmdf.wdfdeviceinitregisterpowerstatechangecallback, PFN_WDFDEVICEINITREGISTERPOWERSTATECHANGECALLBACK, WdfDeviceInitRegisterPowerStateChangeCallback, wdfdevice/WdfDeviceInitRegisterPowerStateChangeCallback, WdfDeviceInitRegisterPowerStateChangeCallback method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfdevice.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: ChildDeviceInitAPI, DeviceInitAPI, DriverCreate, InitFreeDeviceCallback, InitFreeDeviceCreate, InitFreeNull, KmdfIrql, KmdfIrql2, PdoDeviceInitAPI, PdoInitFreeDeviceCallback, PdoInitFreeDeviceCreate
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfDeviceInitRegisterPowerStateChangeCallback
+product: Windows
+targetos: Windows
+req.typenames: WDF_STATE_NOTIFICATION_TYPE
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NC:pcivirt.SRIOV_WRITE_CONFIG
-title : SRIOV_WRITE_CONFIG
-author : windows-driver-content
-description : Writes configuration data to a PCI Express SR-IOV Virtual Function (VF).
-old-location : pci\sriov_write_config.htm
-old-project : PCI
-ms.assetid : 323c8150-ef58-42a4-8c8b-77081ecb64b3
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : PCI.sriov_write_config, SriovWriteConfig callback function [Buses], SriovWriteConfig, SRIOV_WRITE_CONFIG, SRIOV_WRITE_CONFIG, pcivirt/SriovWriteConfig, *PSRIOV_WRITE_CONFIG callback function pointer [Buses], *PSRIOV_WRITE_CONFIG
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : pcivirt.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PARCLASS_INFORMATION, *PPARCLASS_INFORMATION
+UID: NC:pcivirt.SRIOV_WRITE_CONFIG
+title: SRIOV_WRITE_CONFIG
+author: windows-driver-content
+description: Writes configuration data to a PCI Express SR-IOV Virtual Function (VF).
+old-location: pci\sriov_write_config.htm
+old-project: PCI
+ms.assetid: 323c8150-ef58-42a4-8c8b-77081ecb64b3
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: PCI.sriov_write_config, SriovWriteConfig callback function [Buses], SriovWriteConfig, SRIOV_WRITE_CONFIG, SRIOV_WRITE_CONFIG, pcivirt/SriovWriteConfig, *PSRIOV_WRITE_CONFIG callback function pointer [Buses], *PSRIOV_WRITE_CONFIG
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: pcivirt.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Pcivirt.h
+apiname:
+-	*PSRIOV_WRITE_CONFIG
+product: Windows
+targetos: Windows
+req.typenames: PARCLASS_INFORMATION, *PPARCLASS_INFORMATION
 ---
 
 

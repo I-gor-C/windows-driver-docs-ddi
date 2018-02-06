@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddcdvd.IOCTL_DVD_READ_KEY
-title : IOCTL_DVD_READ_KEY
-author : windows-driver-content
-description : Returns a copy-protection key of the specified type:\_challenge key, bus key, title key, read RPC key, set RPC key, or disk key.
-old-location : storage\ioctl_dvd_read_key.htm
-old-project : storage
-ms.assetid : 42745dae-f472-4f64-8f16-9f4dec1e986a
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_dvd_read_key, IOCTL_DVD_READ_KEY control code [Storage Devices], IOCTL_DVD_READ_KEY, ntddcdvd/IOCTL_DVD_READ_KEY, k307_6baca45d-504c-46b9-9724-f82132c2bead.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddcdvd.h
-req.include-header : Ntddcdvd.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DVD_STRUCTURE_FORMAT, *PDVD_STRUCTURE_FORMAT
+UID: NI:ntddcdvd.IOCTL_DVD_READ_KEY
+title: IOCTL_DVD_READ_KEY
+author: windows-driver-content
+description: Returns a copy-protection key of the specified type:\_challenge key, bus key, title key, read RPC key, set RPC key, or disk key.
+old-location: storage\ioctl_dvd_read_key.htm
+old-project: storage
+ms.assetid: 42745dae-f472-4f64-8f16-9f4dec1e986a
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_dvd_read_key, IOCTL_DVD_READ_KEY control code [Storage Devices], IOCTL_DVD_READ_KEY, ntddcdvd/IOCTL_DVD_READ_KEY, k307_6baca45d-504c-46b9-9724-f82132c2bead.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddcdvd.h
+req.include-header: Ntddcdvd.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddcdvd.h
+apiname:
+-	IOCTL_DVD_READ_KEY
+product: Windows
+targetos: Windows
+req.typenames: DVD_STRUCTURE_FORMAT, *PDVD_STRUCTURE_FORMAT
 ---
 
 # IOCTL_DVD_READ_KEY IOCTL

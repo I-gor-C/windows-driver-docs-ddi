@@ -1,41 +1,46 @@
 ---
-UID : NS:gpioclx._CONTROLLER_ATTRIBUTE_FLAGS
-title : "_CONTROLLER_ATTRIBUTE_FLAGS"
-author : windows-driver-content
-description : The CONTROLLER_ATTRIBUTE_FLAGS structure describes the hardware attributes of the general-purpose I/O (GPIO) controller device.
-old-location : gpio\controller_attribute_flags.htm
-old-project : GPIO
-ms.assetid : 4D3DE8AE-99FB-48C8-A2FC-099CA908EC18
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : CONTROLLER_ATTRIBUTE_FLAGS, PCONTROLLER_ATTRIBUTE_FLAGS, gpioclx/PCONTROLLER_ATTRIBUTE_FLAGS, gpioclx/CONTROLLER_ATTRIBUTE_FLAGS, GPIO.controller_attribute_flags, PCONTROLLER_ATTRIBUTE_FLAGS structure pointer [Parallel Ports], CONTROLLER_ATTRIBUTE_FLAGS structure [Parallel Ports], _CONTROLLER_ATTRIBUTE_FLAGS, *PCONTROLLER_ATTRIBUTE_FLAGS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : gpioclx.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PCONTROLLER_ATTRIBUTE_FLAGS, CONTROLLER_ATTRIBUTE_FLAGS"
+UID: NS:gpioclx._CONTROLLER_ATTRIBUTE_FLAGS
+title: "_CONTROLLER_ATTRIBUTE_FLAGS"
+author: windows-driver-content
+description: The CONTROLLER_ATTRIBUTE_FLAGS structure describes the hardware attributes of the general-purpose I/O (GPIO) controller device.
+old-location: gpio\controller_attribute_flags.htm
+old-project: GPIO
+ms.assetid: 4D3DE8AE-99FB-48C8-A2FC-099CA908EC18
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: CONTROLLER_ATTRIBUTE_FLAGS, PCONTROLLER_ATTRIBUTE_FLAGS, gpioclx/PCONTROLLER_ATTRIBUTE_FLAGS, gpioclx/CONTROLLER_ATTRIBUTE_FLAGS, GPIO.controller_attribute_flags, PCONTROLLER_ATTRIBUTE_FLAGS structure pointer [Parallel Ports], CONTROLLER_ATTRIBUTE_FLAGS structure [Parallel Ports], _CONTROLLER_ATTRIBUTE_FLAGS, *PCONTROLLER_ATTRIBUTE_FLAGS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: gpioclx.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Gpioclx.h
+apiname:
+-	CONTROLLER_ATTRIBUTE_FLAGS
+product: Windows
+targetos: Windows
+req.typenames: "*PCONTROLLER_ATTRIBUTE_FLAGS, CONTROLLER_ATTRIBUTE_FLAGS"
 ---
 
 # _CONTROLLER_ATTRIBUTE_FLAGS structure

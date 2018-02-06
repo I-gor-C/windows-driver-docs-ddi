@@ -1,41 +1,47 @@
 ---
-UID : NF:portcls.PcNewResourceList
-title : PcNewResourceList function
-author : windows-driver-content
-description : The PcNewResourceList function creates and initializes a resource list.
-old-location : audio\pcnewresourcelist.htm
-old-project : audio
-ms.assetid : 80576db6-38de-46c6-89f1-a3dde613fed1
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : PcNewResourceList, portcls/PcNewResourceList, audpc-routines_b9e7a222-20ac-482b-ae30-083765ecf5b7.xml, PcNewResourceList function [Audio Devices], audio.pcnewresourcelist
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : portcls.h
-req.include-header : Portcls.h
-req.target-type : Universal
-req.target-min-winverclnt : The PortCls system driver implements the PcNewResourceList function in Microsoft Windows 98/Me and in Windows 2000 and later operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Portcls.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.PcNewResourceList
+title: PcNewResourceList function
+author: windows-driver-content
+description: The PcNewResourceList function creates and initializes a resource list.
+old-location: audio\pcnewresourcelist.htm
+old-project: audio
+ms.assetid: 80576db6-38de-46c6-89f1-a3dde613fed1
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: PcNewResourceList, portcls/PcNewResourceList, audpc-routines_b9e7a222-20ac-482b-ae30-083765ecf5b7.xml, PcNewResourceList function [Audio Devices], audio.pcnewresourcelist
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: portcls.h
+req.include-header: Portcls.h
+req.target-type: Universal
+req.target-min-winverclnt: The PortCls system driver implements the PcNewResourceList function in Microsoft Windows 98/Me and in Windows 2000 and later operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Portcls.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Portcls.lib
+-	Portcls.dll
+apiname:
+-	PcNewResourceList
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

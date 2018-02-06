@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dhal._DD_GETFORMATCOUNTDATA
-title : "_DD_GETFORMATCOUNTDATA"
-author : windows-driver-content
-description : DirectX 8.0 and later versions only. DD_GETFORMATCOUNTDATA is the data structure pointed to by the lpvData field of DD_GETDRIVERINFODATA for DD_GETDRIVERINFO2DATA queries with the type D3DGDI2_TYPE_GETFORMATCOUNT.
-old-location : display\dd_getformatcountdata.htm
-old-project : display
-ms.assetid : 5f334f48-a262-4b09-98c4-766039de3f0e
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DD_GETFORMATCOUNTDATA structure [Display Devices], d3dhal/DD_GETFORMATCOUNTDATA, _DD_GETFORMATCOUNTDATA, d3dstrct_610983cc-4f8a-4c16-b60b-960dbf0c58e9.xml, display.dd_getformatcountdata, DD_GETFORMATCOUNTDATA
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dhal.h
-req.include-header : D3dhal.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DD_GETFORMATCOUNTDATA
+UID: NS:d3dhal._DD_GETFORMATCOUNTDATA
+title: "_DD_GETFORMATCOUNTDATA"
+author: windows-driver-content
+description: DirectX 8.0 and later versions only. DD_GETFORMATCOUNTDATA is the data structure pointed to by the lpvData field of DD_GETDRIVERINFODATA for DD_GETDRIVERINFO2DATA queries with the type D3DGDI2_TYPE_GETFORMATCOUNT.
+old-location: display\dd_getformatcountdata.htm
+old-project: display
+ms.assetid: 5f334f48-a262-4b09-98c4-766039de3f0e
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DD_GETFORMATCOUNTDATA structure [Display Devices], d3dhal/DD_GETFORMATCOUNTDATA, _DD_GETFORMATCOUNTDATA, d3dstrct_610983cc-4f8a-4c16-b60b-960dbf0c58e9.xml, display.dd_getformatcountdata, DD_GETFORMATCOUNTDATA
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dhal.h
+req.include-header: D3dhal.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dhal.h
+apiname:
+-	DD_GETFORMATCOUNTDATA
+product: Windows
+targetos: Windows
+req.typenames: DD_GETFORMATCOUNTDATA
 ---
 
 # _DD_GETFORMATCOUNTDATA structure

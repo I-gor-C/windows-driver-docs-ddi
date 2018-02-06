@@ -1,41 +1,47 @@
 ---
-UID : NF:dbgeng.IDebugClient5.GetDumpFile
-title : IDebugClient5::GetDumpFile method
-author : windows-driver-content
-description : The GetDumpFile method describes the files containing supporting information that were used when opening the current dump target.
-old-location : debugger\getdumpfile.htm
-old-project : debugger
-ms.assetid : 06317b65-4853-40da-9131-9983918b7157
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : dbgeng/IDebugClient4::GetDumpFile, debugger.getdumpfile, dbgeng/IDebugClient5::GetDumpFile, IDebugClient_f4f1540c-116c-4e74-ad19-10beb0ac2739.xml, GetDumpFile method [Windows Debugging], IDebugClient4::GetDumpFile, IDebugClient4 interface [Windows Debugging], GetDumpFile method, IDebugClient5 interface [Windows Debugging], GetDumpFile method, GetDumpFile method [Windows Debugging], IDebugClient5 interface, GetDumpFile, IDebugClient5::GetDumpFile, GetDumpFile method [Windows Debugging], IDebugClient4 interface, IDebugClient5
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugClient5.GetDumpFile
+title: IDebugClient5::GetDumpFile method
+author: windows-driver-content
+description: The GetDumpFile method describes the files containing supporting information that were used when opening the current dump target.
+old-location: debugger\getdumpfile.htm
+old-project: debugger
+ms.assetid: 06317b65-4853-40da-9131-9983918b7157
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: dbgeng/IDebugClient4::GetDumpFile, debugger.getdumpfile, dbgeng/IDebugClient5::GetDumpFile, IDebugClient_f4f1540c-116c-4e74-ad19-10beb0ac2739.xml, GetDumpFile method [Windows Debugging], IDebugClient4::GetDumpFile, IDebugClient4 interface [Windows Debugging], GetDumpFile method, IDebugClient5 interface [Windows Debugging], GetDumpFile method, GetDumpFile method [Windows Debugging], IDebugClient5 interface, GetDumpFile, IDebugClient5::GetDumpFile, GetDumpFile method [Windows Debugging], IDebugClient4 interface, IDebugClient5
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugClient4.GetDumpFile
+-	IDebugClient5.GetDumpFile
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

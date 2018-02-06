@@ -1,41 +1,46 @@
 ---
-UID : NC:fwpsk.FWPS_VSWITCH_RUNTIME_STATE_RESTORE_CALLBACK0
-title : FWPS_VSWITCH_RUNTIME_STATE_RESTORE_CALLBACK0
-author : windows-driver-content
-description : The filter engine calls the vSwitchRuntimeStateRestoreNotifyFn (FWPS_VSWITCH_RUNTIME_STATE_RESTORE_CALLBACK0) callout function to notify a callout driver about virtual switch run-time state restore events.Note  FWPS_VSWITCH_RUNTIME_STATE_RESTORE_CALLBACK0 is a specific version of FWPS_VSWITCH_RUNTIME_STATE_RESTORE_CALLBACK. See WFP Version-Independent Names and Targeting Specific Versions of Windows for more information.
-old-location : netvista\fwps_vswitch_runtime_state_restore_callback0.htm
-old-project : netvista
-ms.assetid : E684429C-1BDC-4821-89DF-08FF20D25315
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.fwps_vswitch_runtime_state_restore_callback0, vSwitchRuntimeStateRestoreNotifyFn callback function [Network Drivers Starting with Windows Vista], vSwitchRuntimeStateRestoreNotifyFn, FWPS_VSWITCH_RUNTIME_STATE_RESTORE_CALLBACK0, FWPS_VSWITCH_RUNTIME_STATE_RESTORE_CALLBACK0, fwpsk/vSwitchRuntimeStateRestoreNotifyFn
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : fwpsk.h
-req.include-header : Fwpsk.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : INSTANCE_PARTIAL_INFORMATION, PINSTANCE_PARTIAL_INFORMATION
+UID: NC:fwpsk.FWPS_VSWITCH_RUNTIME_STATE_RESTORE_CALLBACK0
+title: FWPS_VSWITCH_RUNTIME_STATE_RESTORE_CALLBACK0
+author: windows-driver-content
+description: The filter engine calls the vSwitchRuntimeStateRestoreNotifyFn (FWPS_VSWITCH_RUNTIME_STATE_RESTORE_CALLBACK0) callout function to notify a callout driver about virtual switch run-time state restore events.Note  FWPS_VSWITCH_RUNTIME_STATE_RESTORE_CALLBACK0 is a specific version of FWPS_VSWITCH_RUNTIME_STATE_RESTORE_CALLBACK. See WFP Version-Independent Names and Targeting Specific Versions of Windows for more information.
+old-location: netvista\fwps_vswitch_runtime_state_restore_callback0.htm
+old-project: netvista
+ms.assetid: E684429C-1BDC-4821-89DF-08FF20D25315
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.fwps_vswitch_runtime_state_restore_callback0, vSwitchRuntimeStateRestoreNotifyFn callback function [Network Drivers Starting with Windows Vista], vSwitchRuntimeStateRestoreNotifyFn, FWPS_VSWITCH_RUNTIME_STATE_RESTORE_CALLBACK0, FWPS_VSWITCH_RUNTIME_STATE_RESTORE_CALLBACK0, fwpsk/vSwitchRuntimeStateRestoreNotifyFn
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: fwpsk.h
+req.include-header: Fwpsk.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	fwpsk.h
+apiname:
+-	vSwitchRuntimeStateRestoreNotifyFn
+product: Windows
+targetos: Windows
+req.typenames: INSTANCE_PARTIAL_INFORMATION, PINSTANCE_PARTIAL_INFORMATION
 ---
 
 

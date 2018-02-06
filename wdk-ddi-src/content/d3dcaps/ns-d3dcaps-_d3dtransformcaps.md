@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dcaps._D3DTRANSFORMCAPS
-title : "_D3DTRANSFORMCAPS"
-author : windows-driver-content
-description : Obsolete in DirectX 8.0 and later versions. D3DTRANSFORMCAPS structure describes the transform capabilities of a device.
-old-location : display\d3dtransformcaps.htm
-old-project : display
-ms.assetid : 4eb6c31d-97b2-4d51-ae49-ed2ab395188a
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3dcaps/LPD3DTRANSFORMCAPS, *LPD3DTRANSFORMCAPS, LPD3DTRANSFORMCAPS structure pointer [Display Devices], D3DTRANSFORMCAPS structure [Display Devices], display.d3dtransformcaps, D3DTRANSFORMCAPS, LPD3DTRANSFORMCAPS, d3dstrct_9dc73cc8-edfd-424e-b902-0305de356c07.xml, d3dcaps/D3DTRANSFORMCAPS, _D3DTRANSFORMCAPS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dcaps.h
-req.include-header : D3dcaps.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DTRANSFORMCAPS, *LPD3DTRANSFORMCAPS
+UID: NS:d3dcaps._D3DTRANSFORMCAPS
+title: "_D3DTRANSFORMCAPS"
+author: windows-driver-content
+description: Obsolete in DirectX 8.0 and later versions. D3DTRANSFORMCAPS structure describes the transform capabilities of a device.
+old-location: display\d3dtransformcaps.htm
+old-project: display
+ms.assetid: 4eb6c31d-97b2-4d51-ae49-ed2ab395188a
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3dcaps/LPD3DTRANSFORMCAPS, *LPD3DTRANSFORMCAPS, LPD3DTRANSFORMCAPS structure pointer [Display Devices], D3DTRANSFORMCAPS structure [Display Devices], display.d3dtransformcaps, D3DTRANSFORMCAPS, LPD3DTRANSFORMCAPS, d3dstrct_9dc73cc8-edfd-424e-b902-0305de356c07.xml, d3dcaps/D3DTRANSFORMCAPS, _D3DTRANSFORMCAPS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dcaps.h
+req.include-header: D3dcaps.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dcaps.h
+apiname:
+-	D3DTRANSFORMCAPS
+product: Windows
+targetos: Windows
+req.typenames: D3DTRANSFORMCAPS, *LPD3DTRANSFORMCAPS
 ---
 
 # _D3DTRANSFORMCAPS structure

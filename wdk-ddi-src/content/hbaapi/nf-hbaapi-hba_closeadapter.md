@@ -1,41 +1,46 @@
 ---
-UID : NF:hbaapi.HBA_CloseAdapter
-title : HBA_CloseAdapter function
-author : windows-driver-content
-description : The HBA_CloseAdapter routine releases system resources associated with the indicated open HBA handle.
-old-location : storage\hba_closeadapter.htm
-old-project : storage
-ms.assetid : 404c7f82-02dd-4145-91e3-8820f6cbf781
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : hbaapi/HBA_CloseAdapter, HBA_CloseAdapter, fibreHBA_rtns_dcbe3983-fc4d-4a50-886b-6fdb138296a7.xml, storage.hba_closeadapter, HBA_CloseAdapter routine [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : hbaapi.h
-req.include-header : Hbaapi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Hbaapi.lib
-req.dll : Hbaapi.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HBA_WWNTYPE
+UID: NF:hbaapi.HBA_CloseAdapter
+title: HBA_CloseAdapter function
+author: windows-driver-content
+description: The HBA_CloseAdapter routine releases system resources associated with the indicated open HBA handle.
+old-location: storage\hba_closeadapter.htm
+old-project: storage
+ms.assetid: 404c7f82-02dd-4145-91e3-8820f6cbf781
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: hbaapi/HBA_CloseAdapter, HBA_CloseAdapter, fibreHBA_rtns_dcbe3983-fc4d-4a50-886b-6fdb138296a7.xml, storage.hba_closeadapter, HBA_CloseAdapter routine [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: hbaapi.h
+req.include-header: Hbaapi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Hbaapi.lib
+req.dll: Hbaapi.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Hbaapi.dll
+apiname:
+-	HBA_CloseAdapter
+product: Windows
+targetos: Windows
+req.typenames: HBA_WWNTYPE
 ---
 
 

@@ -1,42 +1,48 @@
 ---
-UID : NF:wdm.ClfsFlushToLsn
-title : ClfsFlushToLsn function
-author : windows-driver-content
-description : The ClfsFlushToLsn routine forces, to stable storage, all records that have an LSN less than or equal to a specified LSN.
-old-location : kernel\clfsflushtolsn.htm
-old-project : kernel
-ms.assetid : fb7d97d2-8c02-44c8-8cf5-e9c3b3b718bb
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ClfsFlushToLsn routine [Kernel-Mode Driver Architecture], wdm/ClfsFlushToLsn, ClfsFlushToLsn, kernel.clfsflushtolsn, Clfs_80676b51-aa14-42bf-92ae-d11cf0a694b5.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Clfs.lib
-req.dll : Clfs.sys
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ClfsFlushToLsn
+title: ClfsFlushToLsn function
+author: windows-driver-content
+description: The ClfsFlushToLsn routine forces, to stable storage, all records that have an LSN less than or equal to a specified LSN.
+old-location: kernel\clfsflushtolsn.htm
+old-project: kernel
+ms.assetid: fb7d97d2-8c02-44c8-8cf5-e9c3b3b718bb
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ClfsFlushToLsn routine [Kernel-Mode Driver Architecture], wdm/ClfsFlushToLsn, ClfsFlushToLsn, kernel.clfsflushtolsn, Clfs_80676b51-aa14-42bf-92ae-d11cf0a694b5.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Server 2003 R2, Windows Vista, and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Clfs.lib
+req.dll: Clfs.sys
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Clfs.sys
+-	Ext-MS-Win-fs-clfs-l1-1-0.dll
+apiname:
+-	ClfsFlushToLsn
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

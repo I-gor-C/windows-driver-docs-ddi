@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.KeQueryMaximumGroupCount
-title : KeQueryMaximumGroupCount function
-author : windows-driver-content
-description : The KeQueryMaximumGroupCount routine returns the maximum number of groups in a multiprocessor system.
-old-location : kernel\kequerymaximumgroupcount.htm
-old-project : kernel
-ms.assetid : b5cf231b-1a78-485f-bf26-fe50fbe63d08
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/KeQueryMaximumGroupCount, kernel.kequerymaximumgroupcount, KeQueryMaximumGroupCount routine [Kernel-Mode Driver Architecture], k105_c1e0cc3e-f9d0-4570-8a56-b799d2ca5d14.xml, KeQueryMaximumGroupCount
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 7 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.KeQueryMaximumGroupCount
+title: KeQueryMaximumGroupCount function
+author: windows-driver-content
+description: The KeQueryMaximumGroupCount routine returns the maximum number of groups in a multiprocessor system.
+old-location: kernel\kequerymaximumgroupcount.htm
+old-project: kernel
+ms.assetid: b5cf231b-1a78-485f-bf26-fe50fbe63d08
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/KeQueryMaximumGroupCount, kernel.kequerymaximumgroupcount, KeQueryMaximumGroupCount routine [Kernel-Mode Driver Architecture], k105_c1e0cc3e-f9d0-4570-8a56-b799d2ca5d14.xml, KeQueryMaximumGroupCount
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 7 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	KeQueryMaximumGroupCount
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

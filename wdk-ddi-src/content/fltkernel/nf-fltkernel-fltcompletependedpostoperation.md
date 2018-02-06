@@ -1,41 +1,47 @@
 ---
-UID : NF:fltkernel.FltCompletePendedPostOperation
-title : FltCompletePendedPostOperation function
-author : windows-driver-content
-description : FltCompletePendedPostOperation resumes completion processing for an I/O operation that was pended in a minifilter driver's postoperation callback routine.
-old-location : ifsk\fltcompletependedpostoperation.htm
-old-project : ifsk
-ms.assetid : 633c9766-f92b-436a-bac9-f77702888a3d
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltApiRef_a_to_d_ce848a3a-9d76-433d-a65c-e67ea0f9550b.xml, fltkernel/FltCompletePendedPostOperation, FltCompletePendedPostOperation routine [Installable File System Drivers], ifsk.fltcompletependedpostoperation, FltCompletePendedPostOperation
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltCompletePendedPostOperation
+title: FltCompletePendedPostOperation function
+author: windows-driver-content
+description: FltCompletePendedPostOperation resumes completion processing for an I/O operation that was pended in a minifilter driver's postoperation callback routine.
+old-location: ifsk\fltcompletependedpostoperation.htm
+old-project: ifsk
+ms.assetid: 633c9766-f92b-436a-bac9-f77702888a3d
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltApiRef_a_to_d_ce848a3a-9d76-433d-a65c-e67ea0f9550b.xml, fltkernel/FltCompletePendedPostOperation, FltCompletePendedPostOperation routine [Installable File System Drivers], ifsk.fltcompletependedpostoperation, FltCompletePendedPostOperation
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	FltMgr.lib
+-	FltMgr.dll
+apiname:
+-	FltCompletePendedPostOperation
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

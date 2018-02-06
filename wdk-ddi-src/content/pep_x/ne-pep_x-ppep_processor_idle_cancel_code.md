@@ -1,41 +1,46 @@
 ---
-UID : NE:pep_x.PPEP_PROCESSOR_IDLE_CANCEL_CODE
-title : "*PPEP_PROCESSOR_IDLE_CANCEL_CODE"
-author : windows-driver-content
-description : The PEP_PROCESSOR_IDLE_CANCEL_CODE enumeration values indicate reasons why a processor cannot enter an idle state that was previously selected by the platform extension plug-in (PEP).
-old-location : kernel\pep_processor_idle_cancel_code.htm
-old-project : kernel
-ms.assetid : 6112360C-B74F-4A77-8DE5-3EF1AAF49533
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : pep_x/PEP_PROCESSOR_IDLE_CANCEL_CODE, PEP_PROCESSOR_IDLE_CANCEL_CODE enumeration [Kernel-Mode Driver Architecture], PepIdleCancelDependencyCheckFailed, pep_x/PepIdleCancelMax, PepIdleCancelNoCState, *PPEP_PROCESSOR_IDLE_CANCEL_CODE, kernel.pep_processor_idle_cancel_code, pep_x/PepIdleCancelDependencyCheckFailed, pep_x/PepIdleCancelWorkPending, PEP_PROCESSOR_IDLE_CANCEL_CODE, pep_x/PepIdleCancelNoCState, PepIdleCancelMax, PepIdleCancelWorkPending
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : pep_x.h
-req.include-header : Pepfx.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with Windows 10.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PEP_PROCESSOR_IDLE_CANCEL_CODE, *PPEP_PROCESSOR_IDLE_CANCEL_CODE
+UID: NE:pep_x.PPEP_PROCESSOR_IDLE_CANCEL_CODE
+title: "*PPEP_PROCESSOR_IDLE_CANCEL_CODE"
+author: windows-driver-content
+description: The PEP_PROCESSOR_IDLE_CANCEL_CODE enumeration values indicate reasons why a processor cannot enter an idle state that was previously selected by the platform extension plug-in (PEP).
+old-location: kernel\pep_processor_idle_cancel_code.htm
+old-project: kernel
+ms.assetid: 6112360C-B74F-4A77-8DE5-3EF1AAF49533
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: pep_x/PEP_PROCESSOR_IDLE_CANCEL_CODE, PEP_PROCESSOR_IDLE_CANCEL_CODE enumeration [Kernel-Mode Driver Architecture], PepIdleCancelDependencyCheckFailed, pep_x/PepIdleCancelMax, PepIdleCancelNoCState, *PPEP_PROCESSOR_IDLE_CANCEL_CODE, kernel.pep_processor_idle_cancel_code, pep_x/PepIdleCancelDependencyCheckFailed, pep_x/PepIdleCancelWorkPending, PEP_PROCESSOR_IDLE_CANCEL_CODE, pep_x/PepIdleCancelNoCState, PepIdleCancelMax, PepIdleCancelWorkPending
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: pep_x.h
+req.include-header: Pepfx.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows 10.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	pep_x.h
+apiname:
+-	PEP_PROCESSOR_IDLE_CANCEL_CODE
+product: Windows
+targetos: Windows
+req.typenames: PEP_PROCESSOR_IDLE_CANCEL_CODE, *PPEP_PROCESSOR_IDLE_CANCEL_CODE
 ---
 
 # *PPEP_PROCESSOR_IDLE_CANCEL_CODE Enumeration
@@ -54,31 +59,31 @@ typedef enum _PEP_PROCESSOR_IDLE_CANCEL_CODE {
 ## Constants
 
 <table>
-
-<tr>
-<td>PepIdleCancelDependencyCheckFailed</td>
-<td>The processor can enter the selected idle state only after one or more secondary processors have entered their corresponding idle states, but not all of these secondary processors have entered the correct idle states.</td>
-</tr>
-
-<tr>
-<td>PepIdleCancelMax</td>
-<td>Reserved for use by the operating system.</td>
-</tr>
-
-<tr>
-<td>PepIdleCancelNoCState</td>
-<td>The selected idle state corresponds to a C-state that is not supported. The PEP previously received a <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186800">PEP_NOTIFY_PPM_CST_STATES</a> notification that supplied a list of the supported C-states for this processor.</td>
-</tr>
-
-<tr>
-<td>PepIdleCancelWorkPending</td>
-<td>The processor has pending work that prevents it from entering the selected idle state.</td>
-</tr>
+            
+                <tr>
+                    <td>PepIdleCancelDependencyCheckFailed</td>
+                    <td>The processor can enter the selected idle state only after one or more secondary processors have entered their corresponding idle states, but not all of these secondary processors have entered the correct idle states.</td>
+                </tr>
+            
+                <tr>
+                    <td>PepIdleCancelMax</td>
+                    <td>Reserved for use by the operating system.</td>
+                </tr>
+            
+                <tr>
+                    <td>PepIdleCancelNoCState</td>
+                    <td>The selected idle state corresponds to a C-state that is not supported. The PEP previously received a <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186800">PEP_NOTIFY_PPM_CST_STATES</a> notification that supplied a list of the supported C-states for this processor.</td>
+                </tr>
+            
+                <tr>
+                    <td>PepIdleCancelWorkPending</td>
+                    <td>The processor has pending work that prevents it from entering the selected idle state.</td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-The <b>CancelCode</b> member of the <a href="..\pep_x\ns-pep_x-_pep_ppm_idle_cancel.md">PEP_PPM_IDLE_CANCEL</a> structure contains a <b>PEP_PROCESSOR_IDLE_CANCEL_CODE</b> enumeration value.
+        The <b>CancelCode</b> member of the <a href="..\pep_x\ns-pep_x-_pep_ppm_idle_cancel.md">PEP_PPM_IDLE_CANCEL</a> structure contains a <b>PEP_PROCESSOR_IDLE_CANCEL_CODE</b> enumeration value.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -86,9 +91,9 @@ The <b>CancelCode</b> member of the <a href="..\pep_x\ns-pep_x-_pep_ppm_idle_can
 | **Windows version** | Supported starting with Windows 10. Supported starting with Windows 10. |
 | **Header** | pep_x.h (include Pepfx.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\pep_x\ns-pep_x-_pep_ppm_idle_cancel.md">PEP_PPM_IDLE_CANCEL</a>
+        <a href="..\pep_x\ns-pep_x-_pep_ppm_idle_cancel.md">PEP_PPM_IDLE_CANCEL</a>
 
 <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186800">PEP_NOTIFY_PPM_CST_STATES</a>
 

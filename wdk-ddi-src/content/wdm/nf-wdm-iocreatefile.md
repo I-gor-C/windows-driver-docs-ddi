@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.IoCreateFile
-title : IoCreateFile function
-author : windows-driver-content
-description : The IoCreateFile routine either causes a new file or directory to be created, or it opens an existing file, device, directory, or volume, giving the caller a handle for the file object.
-old-location : kernel\iocreatefile.htm
-old-project : kernel
-ms.assetid : 928f16d4-19cb-4d80-96a6-d25357bfdc30
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : IoCreateFile, kernel.iocreatefile, IoCreateFile routine [Kernel-Mode Driver Architecture], wdm/IoCreateFile, k104_7221dba8-910f-439a-acdf-5a6ca4fcd49a.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : IrqlIoPassive4, PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.IoCreateFile
+title: IoCreateFile function
+author: windows-driver-content
+description: The IoCreateFile routine either causes a new file or directory to be created, or it opens an existing file, device, directory, or volume, giving the caller a handle for the file object.
+old-location: kernel\iocreatefile.htm
+old-project: kernel
+ms.assetid: 928f16d4-19cb-4d80-96a6-d25357bfdc30
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: IoCreateFile, kernel.iocreatefile, IoCreateFile routine [Kernel-Mode Driver Architecture], wdm/IoCreateFile, k104_7221dba8-910f-439a-acdf-5a6ca4fcd49a.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: IrqlIoPassive4, PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoCreateFile
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

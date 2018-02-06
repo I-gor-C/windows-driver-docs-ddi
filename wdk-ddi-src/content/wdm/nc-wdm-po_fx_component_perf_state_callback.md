@@ -1,42 +1,47 @@
 ---
-UID : NC:wdm.PO_FX_COMPONENT_PERF_STATE_CALLBACK
-title : PO_FX_COMPONENT_PERF_STATE_CALLBACK
-author : windows-driver-content
-description : The ComponentPerfStateCallback callback routine notifies the driver that its request to change the performance state of a component is complete.
-old-location : kernel\componentperfstatecallback.htm
-old-project : kernel
-ms.assetid : A54376E6-FBA2-4A27-83C7-8E3B6F2B2A05
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.componentperfstatecallback, ComponentPerfStateCallback routine [Kernel-Mode Driver Architecture], ComponentPerfStateCallback, PO_FX_COMPONENT_PERF_STATE_CALLBACK, PO_FX_COMPONENT_PERF_STATE_CALLBACK, wdm/ComponentPerfStateCallback
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdm.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Supported starting with Windows 10.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Called at IRQL <= DISPATCH_LEVEL.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
-req.product : Windows 10 or later.
+UID: NC:wdm.PO_FX_COMPONENT_PERF_STATE_CALLBACK
+title: PO_FX_COMPONENT_PERF_STATE_CALLBACK
+author: windows-driver-content
+description: The ComponentPerfStateCallback callback routine notifies the driver that its request to change the performance state of a component is complete.
+old-location: kernel\componentperfstatecallback.htm
+old-project: kernel
+ms.assetid: A54376E6-FBA2-4A27-83C7-8E3B6F2B2A05
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.componentperfstatecallback, ComponentPerfStateCallback routine [Kernel-Mode Driver Architecture], ComponentPerfStateCallback, PO_FX_COMPONENT_PERF_STATE_CALLBACK, PO_FX_COMPONENT_PERF_STATE_CALLBACK, wdm/ComponentPerfStateCallback
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdm.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Supported starting with Windows 10.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Called at IRQL <= DISPATCH_LEVEL.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Wdm.h
+apiname:
+-	ComponentPerfStateCallback
+product: Windows
+targetos: Windows
+req.typenames: WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+req.product: Windows 10 or later.
 ---
 
 

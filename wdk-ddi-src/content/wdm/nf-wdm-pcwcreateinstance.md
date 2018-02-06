@@ -1,38 +1,38 @@
 ---
-UID : NF:wdm.PcwCreateInstance
-title : PcwCreateInstance function
-author : windows-driver-content
-description : The PcwCreateInstance function creates a new instance for the specified registered counter set.
-old-location : devtest\pcwcreateinstance.htm
-old-project : devtest
-ms.assetid : ed9bd8fa-a6e6-465a-8415-3e9c19233419
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : PcwCreateInstance
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 7 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.alt-api : PcwCreateInstance
-req.alt-loc : NtosKrnl.exe
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : <=APC_LEVEL
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.PcwCreateInstance
+title: PcwCreateInstance function
+author: windows-driver-content
+description: The PcwCreateInstance function creates a new instance for the specified registered counter set.
+old-location: devtest\pcwcreateinstance.htm
+old-project: devtest
+ms.assetid: ed9bd8fa-a6e6-465a-8415-3e9c19233419
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: PcwCreateInstance
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 7 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.alt-api: PcwCreateInstance
+req.alt-loc: NtosKrnl.exe
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: <=APC_LEVEL
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

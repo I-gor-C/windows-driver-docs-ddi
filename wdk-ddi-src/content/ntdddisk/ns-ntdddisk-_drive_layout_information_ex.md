@@ -1,41 +1,46 @@
 ---
-UID : NS:ntdddisk._DRIVE_LAYOUT_INFORMATION_EX
-title : "_DRIVE_LAYOUT_INFORMATION_EX"
-author : windows-driver-content
-description : The DRIVE_LAYOUT_INFORMATION_EX structure is used to report information about the driver layout.
-old-location : storage\drive_layout_information_ex.htm
-old-project : storage
-ms.assetid : e077f9a6-1d94-4d17-9166-b23756df6cc8
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : PDRIVE_LAYOUT_INFORMATION_EX, storage.drive_layout_information_ex, *PDRIVE_LAYOUT_INFORMATION_EX, _DRIVE_LAYOUT_INFORMATION_EX, DRIVE_LAYOUT_INFORMATION_EX structure [Storage Devices], ntdddisk/PDRIVE_LAYOUT_INFORMATION_EX, DRIVE_LAYOUT_INFORMATION_EX, PDRIVE_LAYOUT_INFORMATION_EX structure pointer [Storage Devices], structs-disk_e6755f07-50a7-48db-a39c-4485f3fb7b93.xml, ntdddisk/DRIVE_LAYOUT_INFORMATION_EX
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntdddisk.h
-req.include-header : Ntddk.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDRIVE_LAYOUT_INFORMATION_EX, DRIVE_LAYOUT_INFORMATION_EX"
+UID: NS:ntdddisk._DRIVE_LAYOUT_INFORMATION_EX
+title: "_DRIVE_LAYOUT_INFORMATION_EX"
+author: windows-driver-content
+description: The DRIVE_LAYOUT_INFORMATION_EX structure is used to report information about the driver layout.
+old-location: storage\drive_layout_information_ex.htm
+old-project: storage
+ms.assetid: e077f9a6-1d94-4d17-9166-b23756df6cc8
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: PDRIVE_LAYOUT_INFORMATION_EX, storage.drive_layout_information_ex, *PDRIVE_LAYOUT_INFORMATION_EX, _DRIVE_LAYOUT_INFORMATION_EX, DRIVE_LAYOUT_INFORMATION_EX structure [Storage Devices], ntdddisk/PDRIVE_LAYOUT_INFORMATION_EX, DRIVE_LAYOUT_INFORMATION_EX, PDRIVE_LAYOUT_INFORMATION_EX structure pointer [Storage Devices], structs-disk_e6755f07-50a7-48db-a39c-4485f3fb7b93.xml, ntdddisk/DRIVE_LAYOUT_INFORMATION_EX
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntdddisk.h
+req.include-header: Ntddk.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntdddisk.h
+apiname:
+-	DRIVE_LAYOUT_INFORMATION_EX
+product: Windows
+targetos: Windows
+req.typenames: "*PDRIVE_LAYOUT_INFORMATION_EX, DRIVE_LAYOUT_INFORMATION_EX"
 ---
 
 # _DRIVE_LAYOUT_INFORMATION_EX structure

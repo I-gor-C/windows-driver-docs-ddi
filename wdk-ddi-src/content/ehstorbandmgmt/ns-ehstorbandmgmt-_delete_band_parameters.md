@@ -1,41 +1,46 @@
 ---
-UID : NS:ehstorbandmgmt._DELETE_BAND_PARAMETERS
-title : "_DELETE_BAND_PARAMETERS"
-author : windows-driver-content
-description : A configured band is deleted according to the parameters in a DELETE_BAND_PARAMETERS structure. This structure is input for an IOCTL_EHSTOR_BANDMGMT_DELETE_BAND request.
-old-location : storage\delete_band_parameters.htm
-old-project : storage
-ms.assetid : 6C96CF49-A7B2-4A99-8C7A-FC1C8C389C18
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : DELETE_BAND_PARAMETERS structure [Storage Devices], PDELETE_BAND_PARAMETERS, DELBAND_ERASE_BEFORE_DELETE, DELETE_BAND_PARAMETERS, storage.delete_band_parameters, ehstorbandmgmt/PDELETE_BAND_PARAMETERS, ehstorbandmgmt/DELETE_BAND_PARAMETERS, *PDELETE_BAND_PARAMETERS, _DELETE_BAND_PARAMETERS, PDELETE_BAND_PARAMETERS structure pointer [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ehstorbandmgmt.h
-req.include-header : EhStorBandMgmt.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows 8
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DELETE_BAND_PARAMETERS, *PDELETE_BAND_PARAMETERS
+UID: NS:ehstorbandmgmt._DELETE_BAND_PARAMETERS
+title: "_DELETE_BAND_PARAMETERS"
+author: windows-driver-content
+description: A configured band is deleted according to the parameters in a DELETE_BAND_PARAMETERS structure. This structure is input for an IOCTL_EHSTOR_BANDMGMT_DELETE_BAND request.
+old-location: storage\delete_band_parameters.htm
+old-project: storage
+ms.assetid: 6C96CF49-A7B2-4A99-8C7A-FC1C8C389C18
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: DELETE_BAND_PARAMETERS structure [Storage Devices], PDELETE_BAND_PARAMETERS, DELBAND_ERASE_BEFORE_DELETE, DELETE_BAND_PARAMETERS, storage.delete_band_parameters, ehstorbandmgmt/PDELETE_BAND_PARAMETERS, ehstorbandmgmt/DELETE_BAND_PARAMETERS, *PDELETE_BAND_PARAMETERS, _DELETE_BAND_PARAMETERS, PDELETE_BAND_PARAMETERS structure pointer [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ehstorbandmgmt.h
+req.include-header: EhStorBandMgmt.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows 8
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	EhStorBandMgmt.h
+apiname:
+-	DELETE_BAND_PARAMETERS
+product: Windows
+targetos: Windows
+req.typenames: DELETE_BAND_PARAMETERS, *PDELETE_BAND_PARAMETERS
 ---
 
 # _DELETE_BAND_PARAMETERS structure

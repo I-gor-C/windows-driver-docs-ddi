@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfdevice.WdfDeviceInitAssignSDDLString
-title : WdfDeviceInitAssignSDDLString function
-author : windows-driver-content
-description : The WdfDeviceInitAssignSDDLString method assigns a security setting for a device.
-old-location : wdf\wdfdeviceinitassignsddlstring.htm
-old-project : wdf
-ms.assetid : 6f7d2511-5a9b-476e-a771-a528c2bead10
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.wdfdeviceinitassignsddlstring, DFDeviceObjectGeneralRef_36d9ccc6-bc81-4605-a14a-1192734d66cb.xml, wdfdevice/WdfDeviceInitAssignSDDLString, kmdf.wdfdeviceinitassignsddlstring, WdfDeviceInitAssignSDDLString method, WdfDeviceInitAssignSDDLString
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfdevice.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : ChildDeviceInitAPI, DeviceInitAPI, DriverCreate, InitFreeDeviceCallback, InitFreeDeviceCreate, InitFreeNull, KmdfIrql, KmdfIrql2, PdoDeviceInitAPI, PdoInitFreeDeviceCallback, PdoInitFreeDeviceCreate
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_STATE_NOTIFICATION_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfdevice.WdfDeviceInitAssignSDDLString
+title: WdfDeviceInitAssignSDDLString function
+author: windows-driver-content
+description: The WdfDeviceInitAssignSDDLString method assigns a security setting for a device.
+old-location: wdf\wdfdeviceinitassignsddlstring.htm
+old-project: wdf
+ms.assetid: 6f7d2511-5a9b-476e-a771-a528c2bead10
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.wdfdeviceinitassignsddlstring, DFDeviceObjectGeneralRef_36d9ccc6-bc81-4605-a14a-1192734d66cb.xml, wdfdevice/WdfDeviceInitAssignSDDLString, kmdf.wdfdeviceinitassignsddlstring, WdfDeviceInitAssignSDDLString method, WdfDeviceInitAssignSDDLString
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfdevice.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: ChildDeviceInitAPI, DeviceInitAPI, DriverCreate, InitFreeDeviceCallback, InitFreeDeviceCreate, InitFreeNull, KmdfIrql, KmdfIrql2, PdoDeviceInitAPI, PdoInitFreeDeviceCallback, PdoInitFreeDeviceCreate
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfDeviceInitAssignSDDLString
+product: Windows
+targetos: Windows
+req.typenames: WDF_STATE_NOTIFICATION_TYPE
+req.product: Windows 10 or later.
 ---
 
 

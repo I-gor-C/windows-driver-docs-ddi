@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugSymbols3.GetNumberModules
-title : IDebugSymbols3::GetNumberModules method
-author : windows-driver-content
-description : The GetNumberModules method returns the number of modules in the current process's module list.
-old-location : debugger\getnumbermodules.htm
-old-project : debugger
-ms.assetid : e74a4e51-0e3b-4d16-b39c-379dfb3905ad
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugSymbols2::GetNumberModules, GetNumberModules method [Windows Debugging], IDebugSymbols3 interface, dbgeng/IDebugSymbols2::GetNumberModules, IDebugSymbols_151a5c5e-ec01-4801-9ba2-86f26506410c.xml, IDebugSymbols3, IDebugSymbols3 interface [Windows Debugging], GetNumberModules method, GetNumberModules method [Windows Debugging], IDebugSymbols2 interface, dbgeng/IDebugSymbols::GetNumberModules, IDebugSymbols interface [Windows Debugging], GetNumberModules method, debugger.getnumbermodules, IDebugSymbols3::GetNumberModules, GetNumberModules method [Windows Debugging], dbgeng/IDebugSymbols3::GetNumberModules, IDebugSymbols::GetNumberModules, GetNumberModules method [Windows Debugging], IDebugSymbols interface, IDebugSymbols2 interface [Windows Debugging], GetNumberModules method, GetNumberModules
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSymbols3.GetNumberModules
+title: IDebugSymbols3::GetNumberModules method
+author: windows-driver-content
+description: The GetNumberModules method returns the number of modules in the current process's module list.
+old-location: debugger\getnumbermodules.htm
+old-project: debugger
+ms.assetid: e74a4e51-0e3b-4d16-b39c-379dfb3905ad
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugSymbols2::GetNumberModules, GetNumberModules method [Windows Debugging], IDebugSymbols3 interface, dbgeng/IDebugSymbols2::GetNumberModules, IDebugSymbols_151a5c5e-ec01-4801-9ba2-86f26506410c.xml, IDebugSymbols3, IDebugSymbols3 interface [Windows Debugging], GetNumberModules method, GetNumberModules method [Windows Debugging], IDebugSymbols2 interface, dbgeng/IDebugSymbols::GetNumberModules, IDebugSymbols interface [Windows Debugging], GetNumberModules method, debugger.getnumbermodules, IDebugSymbols3::GetNumberModules, GetNumberModules method [Windows Debugging], dbgeng/IDebugSymbols3::GetNumberModules, IDebugSymbols::GetNumberModules, GetNumberModules method [Windows Debugging], IDebugSymbols interface, IDebugSymbols2 interface [Windows Debugging], GetNumberModules method, GetNumberModules
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugSymbols.GetNumberModules
+-	IDebugSymbols2.GetNumberModules
+-	IDebugSymbols3.GetNumberModules
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

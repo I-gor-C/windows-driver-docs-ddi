@@ -1,41 +1,46 @@
 ---
-UID : NI:kbdmou.IOCTL_INTERNAL_KEYBOARD_CONNECT
-title : IOCTL_INTERNAL_KEYBOARD_CONNECT
-author : windows-driver-content
-description : The IOCTL_INTERNAL_KEYBOARD_CONNECT request connects the Kbdclass service to the keyboard device.
-old-location : hid\ioctl_internal_keyboard_connect.htm
-old-project : hid
-ms.assetid : 90014194-e790-4b23-9f3d-f5879dd94063
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : hid.ioctl_internal_keyboard_connect, IOCTL_INTERNAL_KEYBOARD_CONNECT control code [Human Input Devices], IOCTL_INTERNAL_KEYBOARD_CONNECT, kbdmou/IOCTL_INTERNAL_KEYBOARD_CONNECT, kfilref_b9a87851-bbc4-4567-a459-9e647d6d3315.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : kbdmou.h
-req.include-header : Kbdmou.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : MSiSCSI_SessionStatistics, *PMSiSCSI_SessionStatistics
+UID: NI:kbdmou.IOCTL_INTERNAL_KEYBOARD_CONNECT
+title: IOCTL_INTERNAL_KEYBOARD_CONNECT
+author: windows-driver-content
+description: The IOCTL_INTERNAL_KEYBOARD_CONNECT request connects the Kbdclass service to the keyboard device.
+old-location: hid\ioctl_internal_keyboard_connect.htm
+old-project: hid
+ms.assetid: 90014194-e790-4b23-9f3d-f5879dd94063
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: hid.ioctl_internal_keyboard_connect, IOCTL_INTERNAL_KEYBOARD_CONNECT control code [Human Input Devices], IOCTL_INTERNAL_KEYBOARD_CONNECT, kbdmou/IOCTL_INTERNAL_KEYBOARD_CONNECT, kfilref_b9a87851-bbc4-4567-a459-9e647d6d3315.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: kbdmou.h
+req.include-header: Kbdmou.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	kbdmou.h
+apiname:
+-	IOCTL_INTERNAL_KEYBOARD_CONNECT
+product: Windows
+targetos: Windows
+req.typenames: MSiSCSI_SessionStatistics, *PMSiSCSI_SessionStatistics
 ---
 
 # IOCTL_INTERNAL_KEYBOARD_CONNECT IOCTL

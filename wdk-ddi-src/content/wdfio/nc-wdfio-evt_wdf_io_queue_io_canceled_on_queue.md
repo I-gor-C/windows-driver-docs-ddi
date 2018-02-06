@@ -1,42 +1,47 @@
 ---
-UID : NC:wdfio.EVT_WDF_IO_QUEUE_IO_CANCELED_ON_QUEUE
-title : EVT_WDF_IO_QUEUE_IO_CANCELED_ON_QUEUE
-author : windows-driver-content
-description : A driver's EvtIoCanceledOnQueue event callback function informs the driver that it must complete an I/O request that the framework has removed from an I/O queue.
-old-location : wdf\evtiocanceledonqueue.htm
-old-project : wdf
-ms.assetid : 1b938ee8-a5f3-4a1e-9beb-231d88aa5848
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.evtiocanceledonqueue, EvtIoCanceledOnQueue callback function, EvtIoCanceledOnQueue, EVT_WDF_IO_QUEUE_IO_CANCELED_ON_QUEUE, EVT_WDF_IO_QUEUE_IO_CANCELED_ON_QUEUE, wdfio/EvtIoCanceledOnQueue, DFQueueObjectRef_24cf727b-3673-44a1-94a2-5308aa195827.xml, kmdf.evtiocanceledonqueue
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdfio.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL (see Remarks section)"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_INTERRUPT_INFO, *PWDF_INTERRUPT_INFO
-req.product : Windows 10 or later.
+UID: NC:wdfio.EVT_WDF_IO_QUEUE_IO_CANCELED_ON_QUEUE
+title: EVT_WDF_IO_QUEUE_IO_CANCELED_ON_QUEUE
+author: windows-driver-content
+description: A driver's EvtIoCanceledOnQueue event callback function informs the driver that it must complete an I/O request that the framework has removed from an I/O queue.
+old-location: wdf\evtiocanceledonqueue.htm
+old-project: wdf
+ms.assetid: 1b938ee8-a5f3-4a1e-9beb-231d88aa5848
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.evtiocanceledonqueue, EvtIoCanceledOnQueue callback function, EvtIoCanceledOnQueue, EVT_WDF_IO_QUEUE_IO_CANCELED_ON_QUEUE, EVT_WDF_IO_QUEUE_IO_CANCELED_ON_QUEUE, wdfio/EvtIoCanceledOnQueue, DFQueueObjectRef_24cf727b-3673-44a1-94a2-5308aa195827.xml, kmdf.evtiocanceledonqueue
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdfio.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL (see Remarks section)"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Wdfio.h
+apiname:
+-	EvtIoCanceledOnQueue
+product: Windows
+targetos: Windows
+req.typenames: WDF_INTERRUPT_INFO, *PWDF_INTERRUPT_INFO
+req.product: Windows 10 or later.
 ---
 
 

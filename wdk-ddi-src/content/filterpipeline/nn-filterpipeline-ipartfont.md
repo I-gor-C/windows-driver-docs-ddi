@@ -1,41 +1,46 @@
 ---
-UID : NN:filterpipeline.IPartFont
-title : IPartFont
-author : windows-driver-content
-description : The IPartFont interface is the abstraction for fonts in a part.
-old-location : print\ipartfont.htm
-old-project : print
-ms.assetid : bdb1ad56-de4c-4a9b-96b6-f9faff4abf65
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : print.ipartfont, IPartFont interface [Print Devices], IPartFont interface [Print Devices], described, IPartFont, filterpipeline/IPartFont, filterpipeline_def05492-ca27-43bb-9ec4-273aa432536b.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : filterpipeline.h
-req.include-header : Filterpipeline.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : filterpipeline.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NN:filterpipeline.IPartFont
+title: IPartFont
+author: windows-driver-content
+description: The IPartFont interface is the abstraction for fonts in a part.
+old-location: print\ipartfont.htm
+old-project: print
+ms.assetid: bdb1ad56-de4c-4a9b-96b6-f9faff4abf65
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: print.ipartfont, IPartFont interface [Print Devices], IPartFont interface [Print Devices], described, IPartFont, filterpipeline/IPartFont, filterpipeline_def05492-ca27-43bb-9ec4-273aa432536b.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: filterpipeline.h
+req.include-header: Filterpipeline.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: filterpipeline.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	filterpipeline.h
+apiname:
+-	IPartFont
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 # IPartFont interface

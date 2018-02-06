@@ -1,42 +1,47 @@
 ---
-UID : NF:prnasntp.RouterRegisterForPrintAsyncNotifications
-title : RouterRegisterForPrintAsyncNotifications function
-author : windows-driver-content
-description : The RouterRegisterForPrintAsyncNotifications function registers for asynchronous notifications associated with a printer or print server.
-old-location : print\routerregisterforprintasyncnotifications.htm
-old-project : print
-ms.assetid : 87966827-72b2-4be7-859a-628c1accca48
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : RouterRegisterForPrintAsyncNotifications, print.routerregisterforprintasyncnotifications, RouterRegisterForPrintAsyncNotifications function [Print Devices], spoolfnc_c39b58f9-b714-437d-86c0-89f2d922c920.xml, prnasntp/RouterRegisterForPrintAsyncNotifications
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : prnasntp.h
-req.include-header : Prnasntp.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Spoolss.lib
-req.dll : Spoolss.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : USERDATA, *PUSERDATA
-req.product : Windows 10 or later.
+UID: NF:prnasntp.RouterRegisterForPrintAsyncNotifications
+title: RouterRegisterForPrintAsyncNotifications function
+author: windows-driver-content
+description: The RouterRegisterForPrintAsyncNotifications function registers for asynchronous notifications associated with a printer or print server.
+old-location: print\routerregisterforprintasyncnotifications.htm
+old-project: print
+ms.assetid: 87966827-72b2-4be7-859a-628c1accca48
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: RouterRegisterForPrintAsyncNotifications, print.routerregisterforprintasyncnotifications, RouterRegisterForPrintAsyncNotifications function [Print Devices], spoolfnc_c39b58f9-b714-437d-86c0-89f2d922c920.xml, prnasntp/RouterRegisterForPrintAsyncNotifications
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: prnasntp.h
+req.include-header: Prnasntp.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Spoolss.lib
+req.dll: Spoolss.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Spoolss.dll
+apiname:
+-	RouterRegisterForPrintAsyncNotifications
+product: Windows
+targetos: Windows
+req.typenames: USERDATA, *PUSERDATA
+req.product: Windows 10 or later.
 ---
 
 

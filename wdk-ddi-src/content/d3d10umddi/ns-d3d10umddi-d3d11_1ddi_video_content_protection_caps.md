@@ -1,41 +1,46 @@
 ---
-UID : NS:d3d10umddi.D3D11_1DDI_VIDEO_CONTENT_PROTECTION_CAPS
-title : D3D11_1DDI_VIDEO_CONTENT_PROTECTION_CAPS
-author : windows-driver-content
-description : Describes the content-protection capabilities of the user-mode display driver.
-old-location : display\d3d11_1ddi_video_content_protection_caps.htm
-old-project : display
-ms.assetid : 31ff5dfc-72b1-4ce1-af83-cad3816a785c
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3D11_1DDI_VIDEO_CONTENT_PROTECTION_CAPS, d3d10umddi/D3D11_1DDI_VIDEO_CONTENT_PROTECTION_CAPS, display.d3d11_1ddi_video_content_protection_caps, D3D11_1DDI_VIDEO_CONTENT_PROTECTION_CAPS structure [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3D11_1DDI_VIDEO_CONTENT_PROTECTION_CAPS
+UID: NS:d3d10umddi.D3D11_1DDI_VIDEO_CONTENT_PROTECTION_CAPS
+title: D3D11_1DDI_VIDEO_CONTENT_PROTECTION_CAPS
+author: windows-driver-content
+description: Describes the content-protection capabilities of the user-mode display driver.
+old-location: display\d3d11_1ddi_video_content_protection_caps.htm
+old-project: display
+ms.assetid: 31ff5dfc-72b1-4ce1-af83-cad3816a785c
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3D11_1DDI_VIDEO_CONTENT_PROTECTION_CAPS, d3d10umddi/D3D11_1DDI_VIDEO_CONTENT_PROTECTION_CAPS, display.d3d11_1ddi_video_content_protection_caps, D3D11_1DDI_VIDEO_CONTENT_PROTECTION_CAPS structure [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	D3d10umddi.h
+apiname:
+-	D3D11_1DDI_VIDEO_CONTENT_PROTECTION_CAPS
+product: Windows
+targetos: Windows
+req.typenames: D3D11_1DDI_VIDEO_CONTENT_PROTECTION_CAPS
 ---
 
 # D3D11_1DDI_VIDEO_CONTENT_PROTECTION_CAPS structure

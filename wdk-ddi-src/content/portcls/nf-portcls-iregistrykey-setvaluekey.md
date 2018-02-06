@@ -1,41 +1,46 @@
 ---
-UID : NF:portcls.IRegistryKey.SetValueKey
-title : IRegistryKey::SetValueKey method
-author : windows-driver-content
-description : The SetValueKey method replaces or creates a value entry under the open key.
-old-location : audio\iregistrykey_setvaluekey.htm
-old-project : audio
-ms.assetid : 4f9dd025-b49f-44ab-88c4-38139e6cbee2
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : SetValueKey, audio.iregistrykey_setvaluekey, IRegistryKey interface [Audio Devices], SetValueKey method, audmp-routines_a7668b45-2b58-4a49-b1ef-a8d0755225b0.xml, IRegistryKey, portcls/IRegistryKey::SetValueKey, SetValueKey method [Audio Devices], SetValueKey method [Audio Devices], IRegistryKey interface, IRegistryKey::SetValueKey
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : portcls.h
-req.include-header : Portcls.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : portcls.h
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.IRegistryKey.SetValueKey
+title: IRegistryKey::SetValueKey method
+author: windows-driver-content
+description: The SetValueKey method replaces or creates a value entry under the open key.
+old-location: audio\iregistrykey_setvaluekey.htm
+old-project: audio
+ms.assetid: 4f9dd025-b49f-44ab-88c4-38139e6cbee2
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: SetValueKey, audio.iregistrykey_setvaluekey, IRegistryKey interface [Audio Devices], SetValueKey method, audmp-routines_a7668b45-2b58-4a49-b1ef-a8d0755225b0.xml, IRegistryKey, portcls/IRegistryKey::SetValueKey, SetValueKey method [Audio Devices], SetValueKey method [Audio Devices], IRegistryKey interface, IRegistryKey::SetValueKey
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: portcls.h
+req.include-header: Portcls.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: portcls.h
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	portcls.h
+apiname:
+-	IRegistryKey.SetValueKey
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

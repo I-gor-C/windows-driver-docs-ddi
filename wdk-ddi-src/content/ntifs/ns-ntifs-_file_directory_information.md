@@ -1,41 +1,46 @@
 ---
-UID : NS:ntifs._FILE_DIRECTORY_INFORMATION
-title : "_FILE_DIRECTORY_INFORMATION"
-author : windows-driver-content
-description : The FILE_DIRECTORY_INFORMATION structure is used to query detailed information for the files in a directory.
-old-location : ifsk\file_directory_information.htm
-old-project : ifsk
-ms.assetid : 012c3178-f3a0-449b-b4a2-91fff4af1a17
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FILE_DIRECTORY_INFORMATION structure [Installable File System Drivers], ifsk.file_directory_information, ntifs/FILE_DIRECTORY_INFORMATION, PFILE_DIRECTORY_INFORMATION structure pointer [Installable File System Drivers], _FILE_DIRECTORY_INFORMATION, *PFILE_DIRECTORY_INFORMATION, fileinformationstructures_4ff53e27-9b59-46f0-8ca8-b4e1fb3e3905.xml, FILE_DIRECTORY_INFORMATION, ntifs/PFILE_DIRECTORY_INFORMATION, PFILE_DIRECTORY_INFORMATION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntifs.h
-req.include-header : Ntifs.h, Fltkernel.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PFILE_DIRECTORY_INFORMATION, FILE_DIRECTORY_INFORMATION"
+UID: NS:ntifs._FILE_DIRECTORY_INFORMATION
+title: "_FILE_DIRECTORY_INFORMATION"
+author: windows-driver-content
+description: The FILE_DIRECTORY_INFORMATION structure is used to query detailed information for the files in a directory.
+old-location: ifsk\file_directory_information.htm
+old-project: ifsk
+ms.assetid: 012c3178-f3a0-449b-b4a2-91fff4af1a17
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FILE_DIRECTORY_INFORMATION structure [Installable File System Drivers], ifsk.file_directory_information, ntifs/FILE_DIRECTORY_INFORMATION, PFILE_DIRECTORY_INFORMATION structure pointer [Installable File System Drivers], _FILE_DIRECTORY_INFORMATION, *PFILE_DIRECTORY_INFORMATION, fileinformationstructures_4ff53e27-9b59-46f0-8ca8-b4e1fb3e3905.xml, FILE_DIRECTORY_INFORMATION, ntifs/PFILE_DIRECTORY_INFORMATION, PFILE_DIRECTORY_INFORMATION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntifs.h
+req.include-header: Ntifs.h, Fltkernel.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntifs.h
+apiname:
+-	FILE_DIRECTORY_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: "*PFILE_DIRECTORY_INFORMATION, FILE_DIRECTORY_INFORMATION"
 ---
 
 # _FILE_DIRECTORY_INFORMATION structure

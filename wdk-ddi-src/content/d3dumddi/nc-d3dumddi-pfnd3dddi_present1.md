@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_PRESENT1
-title : PFND3DDDI_PRESENT1
-author : windows-driver-content
-description : Notifies the user-mode display driver that an application finished rendering and that all ownership of the shared resource is released, and requests that the driver display to the destination surface.
-old-location : display\pfnpresent1_d3d_.htm
-old-project : display
-ms.assetid : 8BB8E85F-B081-422E-ACE1-C2312BA28B9F
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.pfnpresent1_d3d_, pfnPresent1 callback function [Display Devices], pfnPresent1, PFND3DDDI_PRESENT1, PFND3DDDI_PRESENT1, d3dumddi/pfnPresent1
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8.1,WDDM 1.3 and later
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_PRESENT1
+title: PFND3DDDI_PRESENT1
+author: windows-driver-content
+description: Notifies the user-mode display driver that an application finished rendering and that all ownership of the shared resource is released, and requests that the driver display to the destination surface.
+old-location: display\pfnpresent1_d3d_.htm
+old-project: display
+ms.assetid: 8BB8E85F-B081-422E-ACE1-C2312BA28B9F
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.pfnpresent1_d3d_, pfnPresent1 callback function [Display Devices], pfnPresent1, PFND3DDDI_PRESENT1, PFND3DDDI_PRESENT1, d3dumddi/pfnPresent1
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8.1,WDDM 1.3 and later
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	D3dumddi.h
+apiname:
+-	pfnPresent1
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.FsRtlInitPerStreamContext
-title : FsRtlInitPerStreamContext macro
-author : windows-driver-content
-description : The FsRtlInitPerStreamContext macro initializes a filter driver context structure.
-old-location : ifsk\fsrtlinitperstreamcontext.htm
-old-project : ifsk
-ms.assetid : eea0c2d7-0338-4f34-acae-6ab869011696
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.fsrtlinitperstreamcontext, ntifs/FsRtlInitPerStreamContext, fsrtlref_13a48f5e-d3e7-49fa-8c4c-bb2d061f2b2a.xml, FsRtlInitPerStreamContext, FsRtlInitPerStreamContext function [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : macro
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Desktop
-req.target-min-winverclnt : The FsRtlInitPerStreamContext macro is available on Microsoft Windows XP and later, and on the Update Rollup for Windows 2000 Service Pack 4 (SP4).
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : ntifs.h
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.FsRtlInitPerStreamContext
+title: FsRtlInitPerStreamContext macro
+author: windows-driver-content
+description: The FsRtlInitPerStreamContext macro initializes a filter driver context structure.
+old-location: ifsk\fsrtlinitperstreamcontext.htm
+old-project: ifsk
+ms.assetid: eea0c2d7-0338-4f34-acae-6ab869011696
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.fsrtlinitperstreamcontext, ntifs/FsRtlInitPerStreamContext, fsrtlref_13a48f5e-d3e7-49fa-8c4c-bb2d061f2b2a.xml, FsRtlInitPerStreamContext, FsRtlInitPerStreamContext function [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: macro
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Desktop
+req.target-min-winverclnt: The FsRtlInitPerStreamContext macro is available on Microsoft Windows XP and later, and on the Update Rollup for Windows 2000 Service Pack 4 (SP4).
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: ntifs.h
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntifs.h
+apiname:
+-	FsRtlInitPerStreamContext
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

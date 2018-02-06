@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddk._WHEA_MEMORY_ERROR_SECTION
-title : "_WHEA_MEMORY_ERROR_SECTION"
-author : windows-driver-content
-description : The WHEA_MEMORY_ERROR_SECTION structure describes platform memory error data.
-old-location : whea\whea_memory_error_section.htm
-old-project : whea
-ms.assetid : eede44f8-0e14-4256-9893-cbdb5ef4ef9b
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : whearef_63417420-4e27-4268-b50f-6d8dc2cdbd58.xml, PWHEA_MEMORY_ERROR_SECTION, *PWHEA_MEMORY_ERROR, WHEA_MEMORY_ERROR_SECTION, PWHEA_MEMORY_ERROR_SECTION structure pointer [WHEA Drivers and Applications], WHEA_MEMORY_ERROR_SECTION structure [WHEA Drivers and Applications], WHEA_MEMORY_ERROR, ntddk/WHEA_MEMORY_ERROR_SECTION, whea.whea_memory_error_section, ntddk/PWHEA_MEMORY_ERROR_SECTION, *PWHEA_MEMORY_ERROR_SECTION, _WHEA_MEMORY_ERROR_SECTION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_MEMORY_ERROR_SECTION, *PWHEA_MEMORY_ERROR_SECTION
+UID: NS:ntddk._WHEA_MEMORY_ERROR_SECTION
+title: "_WHEA_MEMORY_ERROR_SECTION"
+author: windows-driver-content
+description: The WHEA_MEMORY_ERROR_SECTION structure describes platform memory error data.
+old-location: whea\whea_memory_error_section.htm
+old-project: whea
+ms.assetid: eede44f8-0e14-4256-9893-cbdb5ef4ef9b
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: whearef_63417420-4e27-4268-b50f-6d8dc2cdbd58.xml, PWHEA_MEMORY_ERROR_SECTION, *PWHEA_MEMORY_ERROR, WHEA_MEMORY_ERROR_SECTION, PWHEA_MEMORY_ERROR_SECTION structure pointer [WHEA Drivers and Applications], WHEA_MEMORY_ERROR_SECTION structure [WHEA Drivers and Applications], WHEA_MEMORY_ERROR, ntddk/WHEA_MEMORY_ERROR_SECTION, whea.whea_memory_error_section, ntddk/PWHEA_MEMORY_ERROR_SECTION, *PWHEA_MEMORY_ERROR_SECTION, _WHEA_MEMORY_ERROR_SECTION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddk.h
+apiname:
+-	WHEA_MEMORY_ERROR_SECTION
+product: Windows
+targetos: Windows
+req.typenames: WHEA_MEMORY_ERROR_SECTION, *PWHEA_MEMORY_ERROR_SECTION
 ---
 
 # _WHEA_MEMORY_ERROR_SECTION structure

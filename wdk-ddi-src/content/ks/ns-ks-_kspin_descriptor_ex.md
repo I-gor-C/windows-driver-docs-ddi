@@ -1,41 +1,46 @@
 ---
-UID : NS:ks._KSPIN_DESCRIPTOR_EX
-title : "_KSPIN_DESCRIPTOR_EX"
-author : windows-driver-content
-description : The KSPIN_DESCRIPTOR_EX structure describes the characteristics of a pin type on a given filter type.
-old-location : stream\kspin_descriptor_ex.htm
-old-project : stream
-ms.assetid : 05c82973-86f9-44f9-8df2-1fc84c8be975
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KSPIN_FLAG_HYPERCRITICAL_PROCESSING, ks/KSPIN_DESCRIPTOR_EX, KSPIN_FLAG_FIXED_FORMAT, _KSPIN_DESCRIPTOR_EX, KSPIN_FLAG_GENERATE_MAPPINGS, *PKSPIN_DESCRIPTOR_EX, KSPIN_FLAG_DISTINCT_TRAILING_EDGE, KSPIN_FLAG_FRAMES_NOT_REQUIRED_FOR_PROCESSING, KSPIN_FLAG_GENERATE_EOS_EVENTS, KSPIN_DESCRIPTOR_EX, KSPIN_FLAG_DISPATCH_LEVEL_PROCESSING, PKSPIN_DESCRIPTOR_EX structure pointer [Streaming Media Devices], KSPIN_FLAG_INITIATE_PROCESSING_ON_EVERY_ARRIVAL, stream.kspin_descriptor_ex, avstruct_6a73afe1-d131-47fc-877b-1abff4a75833.xml, KSPIN_FLAG_ENFORCE_FIFO, KSPIN_FLAG_PROCESS_IF_ANY_IN_RUN_STATE, KSPIN_DESCRIPTOR_EX structure [Streaming Media Devices], KSPIN_FLAG_IMPLEMENT_CLOCK, KSPIN_FLAG_PROCESS_IN_RUN_STATE_ONLY, KSPIN_FLAG_ASYNCHRONOUS_PROCESSING, KSPIN_FLAG_DENY_USERMODE_ACCESS, KSPIN_FLAG_CRITICAL_PROCESSING, ks/PKSPIN_DESCRIPTOR_EX, KSPIN_FLAG_SPLITTER, KSPIN_FLAG_SOME_FRAMES_REQUIRED_FOR_PROCESSING, KSPIN_FLAG_USE_STANDARD_TRANSPORT, KSPIN_FLAG_RENDERER, PKSPIN_DESCRIPTOR_EX, KSPIN_FLAG_DO_NOT_INITIATE_PROCESSING, KSPIN_FLAG_DO_NOT_USE_STANDARD_TRANSPORT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and in Microsoft DirectX 8.0 and later versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KSPIN_DESCRIPTOR_EX, *PKSPIN_DESCRIPTOR_EX
+UID: NS:ks._KSPIN_DESCRIPTOR_EX
+title: "_KSPIN_DESCRIPTOR_EX"
+author: windows-driver-content
+description: The KSPIN_DESCRIPTOR_EX structure describes the characteristics of a pin type on a given filter type.
+old-location: stream\kspin_descriptor_ex.htm
+old-project: stream
+ms.assetid: 05c82973-86f9-44f9-8df2-1fc84c8be975
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KSPIN_FLAG_HYPERCRITICAL_PROCESSING, ks/KSPIN_DESCRIPTOR_EX, KSPIN_FLAG_FIXED_FORMAT, _KSPIN_DESCRIPTOR_EX, KSPIN_FLAG_GENERATE_MAPPINGS, *PKSPIN_DESCRIPTOR_EX, KSPIN_FLAG_DISTINCT_TRAILING_EDGE, KSPIN_FLAG_FRAMES_NOT_REQUIRED_FOR_PROCESSING, KSPIN_FLAG_GENERATE_EOS_EVENTS, KSPIN_DESCRIPTOR_EX, KSPIN_FLAG_DISPATCH_LEVEL_PROCESSING, PKSPIN_DESCRIPTOR_EX structure pointer [Streaming Media Devices], KSPIN_FLAG_INITIATE_PROCESSING_ON_EVERY_ARRIVAL, stream.kspin_descriptor_ex, avstruct_6a73afe1-d131-47fc-877b-1abff4a75833.xml, KSPIN_FLAG_ENFORCE_FIFO, KSPIN_FLAG_PROCESS_IF_ANY_IN_RUN_STATE, KSPIN_DESCRIPTOR_EX structure [Streaming Media Devices], KSPIN_FLAG_IMPLEMENT_CLOCK, KSPIN_FLAG_PROCESS_IN_RUN_STATE_ONLY, KSPIN_FLAG_ASYNCHRONOUS_PROCESSING, KSPIN_FLAG_DENY_USERMODE_ACCESS, KSPIN_FLAG_CRITICAL_PROCESSING, ks/PKSPIN_DESCRIPTOR_EX, KSPIN_FLAG_SPLITTER, KSPIN_FLAG_SOME_FRAMES_REQUIRED_FOR_PROCESSING, KSPIN_FLAG_USE_STANDARD_TRANSPORT, KSPIN_FLAG_RENDERER, PKSPIN_DESCRIPTOR_EX, KSPIN_FLAG_DO_NOT_INITIATE_PROCESSING, KSPIN_FLAG_DO_NOT_USE_STANDARD_TRANSPORT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and in Microsoft DirectX 8.0 and later versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	KSPIN_DESCRIPTOR_EX
+product: Windows
+targetos: Windows
+req.typenames: KSPIN_DESCRIPTOR_EX, *PKSPIN_DESCRIPTOR_EX
 ---
 
 # _KSPIN_DESCRIPTOR_EX structure

@@ -1,41 +1,46 @@
 ---
-UID : NF:portcls.IPortClsPnp.UnregisterAdapterPnpManagement
-title : IPortClsPnp::UnregisterAdapterPnpManagement method
-author : windows-driver-content
-description : The UnRegisterAdapterPowerManagement method unregisters the PnP management interface of the adapter from PortCls.
-old-location : audio\iportclspnp_unregisteradapterpnpmanagement.htm
-old-project : audio
-ms.assetid : 7FAA5C88-2846-4C98-A44A-B53A1A7A953C
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : audio.iportclspnp_unregisteradapterpnpmanagement, UnregisterAdapterPnpManagement method [Audio Devices], IPortClsPnp interface, IPortClsPnp::UnregisterAdapterPnpManagement, UnregisterAdapterPnpManagement, IPortClsPnp, UnregisterAdapterPnpManagement method [Audio Devices], portcls/IPortClsPnp::UnregisterAdapterPnpManagement, IPortClsPnp interface [Audio Devices], UnregisterAdapterPnpManagement method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : portcls.h
-req.include-header : Portcls.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 10, version 1511 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : portcls.h
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.IPortClsPnp.UnregisterAdapterPnpManagement
+title: IPortClsPnp::UnregisterAdapterPnpManagement method
+author: windows-driver-content
+description: The UnRegisterAdapterPowerManagement method unregisters the PnP management interface of the adapter from PortCls.
+old-location: audio\iportclspnp_unregisteradapterpnpmanagement.htm
+old-project: audio
+ms.assetid: 7FAA5C88-2846-4C98-A44A-B53A1A7A953C
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: audio.iportclspnp_unregisteradapterpnpmanagement, UnregisterAdapterPnpManagement method [Audio Devices], IPortClsPnp interface, IPortClsPnp::UnregisterAdapterPnpManagement, UnregisterAdapterPnpManagement, IPortClsPnp, UnregisterAdapterPnpManagement method [Audio Devices], portcls/IPortClsPnp::UnregisterAdapterPnpManagement, IPortClsPnp interface [Audio Devices], UnregisterAdapterPnpManagement method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: portcls.h
+req.include-header: Portcls.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 10, version 1511 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: portcls.h
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	portcls.h
+apiname:
+-	IPortClsPnp.UnregisterAdapterPnpManagement
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

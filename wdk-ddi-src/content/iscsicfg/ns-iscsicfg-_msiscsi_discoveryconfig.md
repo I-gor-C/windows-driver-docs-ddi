@@ -1,41 +1,46 @@
 ---
-UID : NS:iscsicfg._MSiSCSI_DiscoveryConfig
-title : "_MSiSCSI_DiscoveryConfig"
-author : windows-driver-content
-description : The MSiSCSI_DiscoveryConfig structure contains information that indicates what methods an initiator uses to do discovery.
-old-location : storage\msiscsi_discoveryconfig.htm
-old-project : storage
-ms.assetid : fe2f4a93-3fdd-422b-afce-8def3ed6688e
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : MSiSCSI_DiscoveryConfig structure [Storage Devices], MSiSCSI_DiscoveryConfig, PMSiSCSI_DiscoveryConfig structure pointer [Storage Devices], _MSiSCSI_DiscoveryConfig, PMSiSCSI_DiscoveryConfig, *PMSiSCSI_DiscoveryConfig, storage.msiscsi_discoveryconfig, structs-iSCSI_b27b8a7d-40bd-40a7-b9d8-3e49bbc8497f.xml, iscsicfg/PMSiSCSI_DiscoveryConfig, iscsicfg/MSiSCSI_DiscoveryConfig
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : iscsicfg.h
-req.include-header : Iscsicfg.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : MSiSCSI_DiscoveryConfig, *PMSiSCSI_DiscoveryConfig
+UID: NS:iscsicfg._MSiSCSI_DiscoveryConfig
+title: "_MSiSCSI_DiscoveryConfig"
+author: windows-driver-content
+description: The MSiSCSI_DiscoveryConfig structure contains information that indicates what methods an initiator uses to do discovery.
+old-location: storage\msiscsi_discoveryconfig.htm
+old-project: storage
+ms.assetid: fe2f4a93-3fdd-422b-afce-8def3ed6688e
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: MSiSCSI_DiscoveryConfig structure [Storage Devices], MSiSCSI_DiscoveryConfig, PMSiSCSI_DiscoveryConfig structure pointer [Storage Devices], _MSiSCSI_DiscoveryConfig, PMSiSCSI_DiscoveryConfig, *PMSiSCSI_DiscoveryConfig, storage.msiscsi_discoveryconfig, structs-iSCSI_b27b8a7d-40bd-40a7-b9d8-3e49bbc8497f.xml, iscsicfg/PMSiSCSI_DiscoveryConfig, iscsicfg/MSiSCSI_DiscoveryConfig
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: iscsicfg.h
+req.include-header: Iscsicfg.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	iscsicfg.h
+apiname:
+-	MSiSCSI_DiscoveryConfig
+product: Windows
+targetos: Windows
+req.typenames: MSiSCSI_DiscoveryConfig, *PMSiSCSI_DiscoveryConfig
 ---
 
 # _MSiSCSI_DiscoveryConfig structure

@@ -1,41 +1,46 @@
 ---
-UID : NS:ntifs._FILE_ID_GLOBAL_TX_DIR_INFORMATION
-title : "_FILE_ID_GLOBAL_TX_DIR_INFORMATION"
-author : windows-driver-content
-description : The FILE_ID_GLOBAL_TX_DIR_INFORMATION structure contains information about transactional visibility for the files in a directory.
-old-location : ifsk\file_id_global_tx_dir_information.htm
-old-project : ifsk
-ms.assetid : 4c4a0458-8ab3-4ef0-b455-c7a70737f322
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FILE_ID_GLOBAL_TX_DIR_INFORMATION, PFILE_ID_GLOBAL_TX_DIR_INFORMATION structure pointer [Installable File System Drivers], *PFILE_ID_GLOBAL_TX_DIR_INFORMATION, ntifs/FILE_ID_GLOBAL_TX_DIR_INFORMATION, ntifs/PFILE_ID_GLOBAL_TX_DIR_INFORMATION, ifsk.file_id_global_tx_dir_information, PFILE_ID_GLOBAL_TX_DIR_INFORMATION, _FILE_ID_GLOBAL_TX_DIR_INFORMATION, FILE_ID_GLOBAL_TX_DIR_INFORMATION structure [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntifs.h
-req.include-header : FltKernel.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7 and later versions of the Windows operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FILE_ID_GLOBAL_TX_DIR_INFORMATION, *PFILE_ID_GLOBAL_TX_DIR_INFORMATION
+UID: NS:ntifs._FILE_ID_GLOBAL_TX_DIR_INFORMATION
+title: "_FILE_ID_GLOBAL_TX_DIR_INFORMATION"
+author: windows-driver-content
+description: The FILE_ID_GLOBAL_TX_DIR_INFORMATION structure contains information about transactional visibility for the files in a directory.
+old-location: ifsk\file_id_global_tx_dir_information.htm
+old-project: ifsk
+ms.assetid: 4c4a0458-8ab3-4ef0-b455-c7a70737f322
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FILE_ID_GLOBAL_TX_DIR_INFORMATION, PFILE_ID_GLOBAL_TX_DIR_INFORMATION structure pointer [Installable File System Drivers], *PFILE_ID_GLOBAL_TX_DIR_INFORMATION, ntifs/FILE_ID_GLOBAL_TX_DIR_INFORMATION, ntifs/PFILE_ID_GLOBAL_TX_DIR_INFORMATION, ifsk.file_id_global_tx_dir_information, PFILE_ID_GLOBAL_TX_DIR_INFORMATION, _FILE_ID_GLOBAL_TX_DIR_INFORMATION, FILE_ID_GLOBAL_TX_DIR_INFORMATION structure [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntifs.h
+req.include-header: FltKernel.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7 and later versions of the Windows operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntifs.h
+apiname:
+-	FILE_ID_GLOBAL_TX_DIR_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: FILE_ID_GLOBAL_TX_DIR_INFORMATION, *PFILE_ID_GLOBAL_TX_DIR_INFORMATION
 ---
 
 # _FILE_ID_GLOBAL_TX_DIR_INFORMATION structure

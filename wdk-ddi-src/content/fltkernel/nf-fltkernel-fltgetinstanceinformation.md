@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltGetInstanceInformation
-title : FltGetInstanceInformation function
-author : windows-driver-content
-description : The FltGetInstanceInformation routine returns information about a minifilter driver instance.
-old-location : ifsk\fltgetinstanceinformation.htm
-old-project : ifsk
-ms.assetid : eb8ba04a-dbf8-4964-8b45-2620447418b5
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltGetInstanceInformation routine [Installable File System Drivers], fltkernel/FltGetInstanceInformation, FltGetInstanceInformation, FltApiRef_e_to_o_d476d1f7-fff3-45d1-91e9-25879ab9e90e.xml, ifsk.fltgetinstanceinformation
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : FltKernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltGetInstanceInformation
+title: FltGetInstanceInformation function
+author: windows-driver-content
+description: The FltGetInstanceInformation routine returns information about a minifilter driver instance.
+old-location: ifsk\fltgetinstanceinformation.htm
+old-project: ifsk
+ms.assetid: eb8ba04a-dbf8-4964-8b45-2620447418b5
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltGetInstanceInformation routine [Installable File System Drivers], fltkernel/FltGetInstanceInformation, FltGetInstanceInformation, FltApiRef_e_to_o_d476d1f7-fff3-45d1-91e9-25879ab9e90e.xml, ifsk.fltgetinstanceinformation
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: FltKernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltGetInstanceInformation
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

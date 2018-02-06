@@ -1,41 +1,50 @@
 ---
-UID : NF:dbgeng.IDebugClient5.CreateProcess
-title : IDebugClient5::CreateProcess method
-author : windows-driver-content
-description : The CreateProcess method creates a process from the specified command line.
-old-location : debugger\createprocess.htm
-old-project : debugger
-ms.assetid : 0c70c1f8-3c1c-4401-a7c4-14dc9bd0af04
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugClient::CreateProcess, dbgeng/IDebugClient2::CreateProcess, IDebugClient2 interface [Windows Debugging], CreateProcess method, CreateProcess, CreateProcess method [Windows Debugging], IDebugClient interface, dbgeng/IDebugClient::CreateProcess, dbgeng/IDebugClient4::CreateProcess, IDebugClient interface [Windows Debugging], CreateProcess method, IDebugClient5 interface [Windows Debugging], CreateProcess method, CreateProcess method [Windows Debugging], IDebugClient5 interface, IDebugClient3::CreateProcess, IDebugClient2::CreateProcess, dbgeng/IDebugClient3::CreateProcess, debugger.createprocess, IDebugClient4::CreateProcess, CreateProcess method [Windows Debugging], IDebugClient2 interface, CreateProcess method [Windows Debugging], IDebugClient_6411b416-f861-4c99-94bc-ceffd54acce0.xml, IDebugClient3 interface [Windows Debugging], CreateProcess method, CreateProcess method [Windows Debugging], IDebugClient4 interface, IDebugClient4 interface [Windows Debugging], CreateProcess method, IDebugClient5, IDebugClient5::CreateProcess, dbgeng/IDebugClient5::CreateProcess, CreateProcess method [Windows Debugging], IDebugClient3 interface
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugClient5.CreateProcess
+title: IDebugClient5::CreateProcess method
+author: windows-driver-content
+description: The CreateProcess method creates a process from the specified command line.
+old-location: debugger\createprocess.htm
+old-project: debugger
+ms.assetid: 0c70c1f8-3c1c-4401-a7c4-14dc9bd0af04
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugClient::CreateProcess, dbgeng/IDebugClient2::CreateProcess, IDebugClient2 interface [Windows Debugging], CreateProcess method, CreateProcess, CreateProcess method [Windows Debugging], IDebugClient interface, dbgeng/IDebugClient::CreateProcess, dbgeng/IDebugClient4::CreateProcess, IDebugClient interface [Windows Debugging], CreateProcess method, IDebugClient5 interface [Windows Debugging], CreateProcess method, CreateProcess method [Windows Debugging], IDebugClient5 interface, IDebugClient3::CreateProcess, IDebugClient2::CreateProcess, dbgeng/IDebugClient3::CreateProcess, debugger.createprocess, IDebugClient4::CreateProcess, CreateProcess method [Windows Debugging], IDebugClient2 interface, CreateProcess method [Windows Debugging], IDebugClient_6411b416-f861-4c99-94bc-ceffd54acce0.xml, IDebugClient3 interface [Windows Debugging], CreateProcess method, CreateProcess method [Windows Debugging], IDebugClient4 interface, IDebugClient4 interface [Windows Debugging], CreateProcess method, IDebugClient5, IDebugClient5::CreateProcess, dbgeng/IDebugClient5::CreateProcess, CreateProcess method [Windows Debugging], IDebugClient3 interface
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugClient.CreateProcess
+-	IDebugClient2.CreateProcess
+-	IDebugClient3.CreateProcess
+-	IDebugClient4.CreateProcess
+-	IDebugClient5.CreateProcess
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

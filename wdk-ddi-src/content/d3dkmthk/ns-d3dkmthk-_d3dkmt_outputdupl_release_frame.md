@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmthk._D3DKMT_OUTPUTDUPL_RELEASE_FRAME
-title : "_D3DKMT_OUTPUTDUPL_RELEASE_FRAME"
-author : windows-driver-content
-description : Defines the duplicated desktop image that is to be released in a call to the D3DKMTOutputDuplReleaseFrame function.
-old-location : display\d3dkmt_outputdupl_release_frame.htm
-old-project : display
-ms.assetid : 98d31b6b-c31a-4509-a89f-f09932468313
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3dkmthk/D3DKMT_OUTPUTDUPL_RELEASE_FRAME, D3DKMT_OUTPUTDUPL_RELEASE_FRAME, D3DKMT_OUTPUTDUPL_RELEASE_FRAME structure [Display Devices], display.d3dkmt_outputdupl_release_frame, _D3DKMT_OUTPUTDUPL_RELEASE_FRAME
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_OUTPUTDUPL_RELEASE_FRAME
+UID: NS:d3dkmthk._D3DKMT_OUTPUTDUPL_RELEASE_FRAME
+title: "_D3DKMT_OUTPUTDUPL_RELEASE_FRAME"
+author: windows-driver-content
+description: Defines the duplicated desktop image that is to be released in a call to the D3DKMTOutputDuplReleaseFrame function.
+old-location: display\d3dkmt_outputdupl_release_frame.htm
+old-project: display
+ms.assetid: 98d31b6b-c31a-4509-a89f-f09932468313
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3dkmthk/D3DKMT_OUTPUTDUPL_RELEASE_FRAME, D3DKMT_OUTPUTDUPL_RELEASE_FRAME, D3DKMT_OUTPUTDUPL_RELEASE_FRAME structure [Display Devices], display.d3dkmt_outputdupl_release_frame, _D3DKMT_OUTPUTDUPL_RELEASE_FRAME
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	D3dkmthk.h
+apiname:
+-	D3DKMT_OUTPUTDUPL_RELEASE_FRAME
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_OUTPUTDUPL_RELEASE_FRAME
 ---
 
 # _D3DKMT_OUTPUTDUPL_RELEASE_FRAME structure

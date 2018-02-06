@@ -1,42 +1,47 @@
 ---
-UID : NI:ucmtcpciportcontrollerrequests.IOCTL_UCMTCPCI_PORT_CONTROLLER_GET_STATUS
-title : IOCTL_UCMTCPCI_PORT_CONTROLLER_GET_STATUS
-author : windows-driver-content
-description : Gets values of all status registers as per the Universal Serial Bus Type-C Port Controller Interface Specification. The client driver must retrieve the values of the CC_STATUS, POWER_STATUS, and FAULT_STATUS registers.
-old-location : buses\ioctl_ucmtcpci_port_controller_get_status.htm
-old-project : usbref
-ms.assetid : F265D0F7-AA3C-4E75-A648-EDD90E8B8BE2
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : buses.ioctl_ucmtcpci_port_controller_get_status, IOCTL_UCMTCPCI_PORT_CONTROLLER_GET_STATUS control code [Buses], IOCTL_UCMTCPCI_PORT_CONTROLLER_GET_STATUS, ucmtcpciportcontrollerrequests/IOCTL_UCMTCPCI_PORT_CONTROLLER_GET_STATUS, buses.ioctl_ioctl_ucmtcpci_port_controller_get_status
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ucmtcpciportcontrollerrequests.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : UCMTCPCI_PORT_CONTROLLER_IOCTL
-req.product : Windows 10 or later.
+UID: NI:ucmtcpciportcontrollerrequests.IOCTL_UCMTCPCI_PORT_CONTROLLER_GET_STATUS
+title: IOCTL_UCMTCPCI_PORT_CONTROLLER_GET_STATUS
+author: windows-driver-content
+description: Gets values of all status registers as per the Universal Serial Bus Type-C Port Controller Interface Specification. The client driver must retrieve the values of the CC_STATUS, POWER_STATUS, and FAULT_STATUS registers.
+old-location: buses\ioctl_ucmtcpci_port_controller_get_status.htm
+old-project: usbref
+ms.assetid: F265D0F7-AA3C-4E75-A648-EDD90E8B8BE2
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: buses.ioctl_ucmtcpci_port_controller_get_status, IOCTL_UCMTCPCI_PORT_CONTROLLER_GET_STATUS control code [Buses], IOCTL_UCMTCPCI_PORT_CONTROLLER_GET_STATUS, ucmtcpciportcontrollerrequests/IOCTL_UCMTCPCI_PORT_CONTROLLER_GET_STATUS, buses.ioctl_ioctl_ucmtcpci_port_controller_get_status
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ucmtcpciportcontrollerrequests.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	UcmTcpciPortControllerRequests.h
+apiname:
+-	IOCTL_UCMTCPCI_PORT_CONTROLLER_GET_STATUS
+product: Windows
+targetos: Windows
+req.typenames: UCMTCPCI_PORT_CONTROLLER_IOCTL
+req.product: Windows 10 or later.
 ---
 
 # IOCTL_UCMTCPCI_PORT_CONTROLLER_GET_STATUS IOCTL

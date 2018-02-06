@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltPropagateActivityIdToThread
-title : FltPropagateActivityIdToThread function
-author : windows-driver-content
-description : The FltPropagateActivityIdToThread routine associates the activity ID from the IRP in the minifilter's callback data with the current thread.
-old-location : ifsk\fltpropagateactivityidtothread.htm
-old-project : ifsk
-ms.assetid : 7453EEB1-F974-4AEB-93C4-A75A79E1FE19
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : fltkernel/FltPropagateActivityIdToThread, FltPropagateActivityIdToThread, ifsk.fltpropagateactivityidtothread, FltPropagateActivityIdToThread routine [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with  Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltPropagateActivityIdToThread
+title: FltPropagateActivityIdToThread function
+author: windows-driver-content
+description: The FltPropagateActivityIdToThread routine associates the activity ID from the IRP in the minifilter's callback data with the current thread.
+old-location: ifsk\fltpropagateactivityidtothread.htm
+old-project: ifsk
+ms.assetid: 7453EEB1-F974-4AEB-93C4-A75A79E1FE19
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: fltkernel/FltPropagateActivityIdToThread, FltPropagateActivityIdToThread, ifsk.fltpropagateactivityidtothread, FltPropagateActivityIdToThread routine [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with  Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltPropagateActivityIdToThread
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

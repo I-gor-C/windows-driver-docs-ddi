@@ -1,41 +1,46 @@
 ---
-UID : NI:gnssdriver.IOCTL_GNSS_LISTEN_NMEA
-title : IOCTL_GNSS_LISTEN_NMEA
-author : windows-driver-content
-description : The IOCTL_GNSS_LISTEN_NMEA control code is used to start listening for NMEA events from the driver.
-old-location : sensors\ioctl_gnss_listen_nmea.htm
-old-project : sensors
-ms.assetid : 975F5FB4-503D-44E7-8D4C-2AEFE72B672B
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : sensors.ioctl_gnss_listen_nmea, IOCTL_GNSS_LISTEN_NMEA control code [Sensor Devices], IOCTL_GNSS_LISTEN_NMEA, gnssdriver/IOCTL_GNSS_LISTEN_NMEA
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : gnssdriver.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : GNSS_SUPL_CERT_ACTION
+UID: NI:gnssdriver.IOCTL_GNSS_LISTEN_NMEA
+title: IOCTL_GNSS_LISTEN_NMEA
+author: windows-driver-content
+description: The IOCTL_GNSS_LISTEN_NMEA control code is used to start listening for NMEA events from the driver.
+old-location: sensors\ioctl_gnss_listen_nmea.htm
+old-project: sensors
+ms.assetid: 975F5FB4-503D-44E7-8D4C-2AEFE72B672B
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: sensors.ioctl_gnss_listen_nmea, IOCTL_GNSS_LISTEN_NMEA control code [Sensor Devices], IOCTL_GNSS_LISTEN_NMEA, gnssdriver/IOCTL_GNSS_LISTEN_NMEA
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: gnssdriver.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	gnssdriver.h
+apiname:
+-	IOCTL_GNSS_LISTEN_NMEA
+product: Windows
+targetos: Windows
+req.typenames: GNSS_SUPL_CERT_ACTION
 ---
 
 # IOCTL_GNSS_LISTEN_NMEA IOCTL

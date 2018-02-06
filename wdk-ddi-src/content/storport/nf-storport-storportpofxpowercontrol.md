@@ -1,42 +1,48 @@
 ---
-UID : NF:storport.StorPortPoFxPowerControl
-title : StorPortPoFxPowerControl function
-author : windows-driver-content
-description : The StorPortPoFxPowerControl routine sends a power control request to the power management framework (PoFx) to forward to the power engine plug-in (PEP).
-old-location : storage\storportpofxpowercontrol.htm
-old-project : storage
-ms.assetid : 1EBEBD5D-E0E5-48A3-8CDA-C336575E53C6
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storport/StorPortPoFxPowerControl, storage.storportpofxpowercontrol, StorPortPoFxPowerControl routine [Storage Devices], StorPortPoFxPowerControl
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : storport.h
-req.include-header : 
-req.target-type : Universal
-req.target-min-winverclnt : Available in starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Storport.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STOR_SPINLOCK
-req.product : Windows 10 or later.
+UID: NF:storport.StorPortPoFxPowerControl
+title: StorPortPoFxPowerControl function
+author: windows-driver-content
+description: The StorPortPoFxPowerControl routine sends a power control request to the power management framework (PoFx) to forward to the power engine plug-in (PEP).
+old-location: storage\storportpofxpowercontrol.htm
+old-project: storage
+ms.assetid: 1EBEBD5D-E0E5-48A3-8CDA-C336575E53C6
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storport/StorPortPoFxPowerControl, storage.storportpofxpowercontrol, StorPortPoFxPowerControl routine [Storage Devices], StorPortPoFxPowerControl
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: storport.h
+req.include-header: 
+req.target-type: Universal
+req.target-min-winverclnt: Available in starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Storport.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	storport.lib
+-	storport.dll
+apiname:
+-	StorPortPoFxPowerControl
+product: Windows
+targetos: Windows
+req.typenames: STOR_SPINLOCK
+req.product: Windows 10 or later.
 ---
 
 

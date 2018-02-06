@@ -1,41 +1,46 @@
 ---
-UID : NE:avcstrm._AVCSTRM_FUNCTION
-title : "_AVCSTRM_FUNCTION"
-author : windows-driver-content
-description : The AVCSTRM_FUNCTION enumeration defines the functionality exposed by the avcstrm.sys driver.
-old-location : stream\avcstrm_function.htm
-old-project : stream
-ms.assetid : 0dacc4b0-003f-4c73-8705-1c1e86ce357c
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : AVCSTRM_ABORT_STREAMING, avcstrm/AVCSTRM_OPEN, AVCSTRM_FUNCTION, stream.avcstrm_function, avcstrm/AVCSTRM_CLOSE, AVCSTRM_WRITE, AVCSTRM_SET_PROPERTY, avcstrm/AVCSTRM_READ, avcstrm/AVCSTRM_GET_STATE, avcstrm/AVCSTRM_SET_STATE, _AVCSTRM_FUNCTION, avcstrm/AVCSTRM_ABORT_STREAMING, avcstrm/AVCSTRM_SET_PROPERTY, avcstrm/AVCSTRM_GET_PROPERTY, AVCSTRM_CLOSE, AVCSTRM_SET_STATE, AVCSTRM_FUNCTION enumeration [Streaming Media Devices], avcstrm/AVCSTRM_FUNCTION, avcstrm/AVCSTRM_WRITE, AVCSTRM_OPEN, avcsref_19b1714d-e3a3-40b8-8dd8-fb17ecb2e777.xml, AVCSTRM_READ, AVCSTRM_GET_STATE, AVCSTRM_GET_PROPERTY
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : avcstrm.h
-req.include-header : Avcstrm.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : AVCSTRM_FUNCTION
+UID: NE:avcstrm._AVCSTRM_FUNCTION
+title: "_AVCSTRM_FUNCTION"
+author: windows-driver-content
+description: The AVCSTRM_FUNCTION enumeration defines the functionality exposed by the avcstrm.sys driver.
+old-location: stream\avcstrm_function.htm
+old-project: stream
+ms.assetid: 0dacc4b0-003f-4c73-8705-1c1e86ce357c
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: AVCSTRM_ABORT_STREAMING, avcstrm/AVCSTRM_OPEN, AVCSTRM_FUNCTION, stream.avcstrm_function, avcstrm/AVCSTRM_CLOSE, AVCSTRM_WRITE, AVCSTRM_SET_PROPERTY, avcstrm/AVCSTRM_READ, avcstrm/AVCSTRM_GET_STATE, avcstrm/AVCSTRM_SET_STATE, _AVCSTRM_FUNCTION, avcstrm/AVCSTRM_ABORT_STREAMING, avcstrm/AVCSTRM_SET_PROPERTY, avcstrm/AVCSTRM_GET_PROPERTY, AVCSTRM_CLOSE, AVCSTRM_SET_STATE, AVCSTRM_FUNCTION enumeration [Streaming Media Devices], avcstrm/AVCSTRM_FUNCTION, avcstrm/AVCSTRM_WRITE, AVCSTRM_OPEN, avcsref_19b1714d-e3a3-40b8-8dd8-fb17ecb2e777.xml, AVCSTRM_READ, AVCSTRM_GET_STATE, AVCSTRM_GET_PROPERTY
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: avcstrm.h
+req.include-header: Avcstrm.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	avcstrm.h
+apiname:
+-	AVCSTRM_FUNCTION
+product: Windows
+targetos: Windows
+req.typenames: AVCSTRM_FUNCTION
 ---
 
 # _AVCSTRM_FUNCTION Enumeration
@@ -59,51 +64,51 @@ typedef enum _AVCSTRM_FUNCTION {
 ## Constants
 
 <table>
-
-<tr>
-<td>AVCSTRM_ABORT_STREAMING</td>
-<td>Abort streaming. This cancels <i>all</i> streaming IRPs. To cancel an individual IRP, use <a href="..\wdm\nf-wdm-iocancelirp.md">IoCancelIrp</a>.</td>
-</tr>
-
-<tr>
-<td>AVCSTRM_CLOSE</td>
-<td>Close a stream and free any resources allocated for the stream.</td>
-</tr>
-
-<tr>
-<td>AVCSTRM_GET_PROPERTY</td>
-<td>Get stream property. This function is not implemented.</td>
-</tr>
-
-<tr>
-<td>AVCSTRM_GET_STATE</td>
-<td>Obtain the stream state.</td>
-</tr>
-
-<tr>
-<td>AVCSTRM_OPEN</td>
-<td>Open a stream in a specific format.</td>
-</tr>
-
-<tr>
-<td>AVCSTRM_READ</td>
-<td>Read data from a stream.</td>
-</tr>
-
-<tr>
-<td>AVCSTRM_SET_PROPERTY</td>
-<td>Set stream property. This function is not implemented.</td>
-</tr>
-
-<tr>
-<td>AVCSTRM_SET_STATE</td>
-<td>Place the  stream into a new state.</td>
-</tr>
-
-<tr>
-<td>AVCSTRM_WRITE</td>
-<td>Write data to a stream.</td>
-</tr>
+            
+                <tr>
+                    <td>AVCSTRM_ABORT_STREAMING</td>
+                    <td>Abort streaming. This cancels <i>all</i> streaming IRPs. To cancel an individual IRP, use <a href="..\wdm\nf-wdm-iocancelirp.md">IoCancelIrp</a>.</td>
+                </tr>
+            
+                <tr>
+                    <td>AVCSTRM_CLOSE</td>
+                    <td>Close a stream and free any resources allocated for the stream.</td>
+                </tr>
+            
+                <tr>
+                    <td>AVCSTRM_GET_PROPERTY</td>
+                    <td>Get stream property. This function is not implemented.</td>
+                </tr>
+            
+                <tr>
+                    <td>AVCSTRM_GET_STATE</td>
+                    <td>Obtain the stream state.</td>
+                </tr>
+            
+                <tr>
+                    <td>AVCSTRM_OPEN</td>
+                    <td>Open a stream in a specific format.</td>
+                </tr>
+            
+                <tr>
+                    <td>AVCSTRM_READ</td>
+                    <td>Read data from a stream.</td>
+                </tr>
+            
+                <tr>
+                    <td>AVCSTRM_SET_PROPERTY</td>
+                    <td>Set stream property. This function is not implemented.</td>
+                </tr>
+            
+                <tr>
+                    <td>AVCSTRM_SET_STATE</td>
+                    <td>Place the  stream into a new state.</td>
+                </tr>
+            
+                <tr>
+                    <td>AVCSTRM_WRITE</td>
+                    <td>Write data to a stream.</td>
+                </tr>
 </table>
 
 
@@ -112,9 +117,9 @@ typedef enum _AVCSTRM_FUNCTION {
 | ---- |:---- |
 | **Header** | avcstrm.h (include Avcstrm.h) |
 
-## See Also
+    ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554132">AVCSTRM_SET_PROPERTY</a>
+        <a href="https://msdn.microsoft.com/library/windows/hardware/ff554132">AVCSTRM_SET_PROPERTY</a>
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554121">AVCSTRM_GET_PROPERTY</a>
 

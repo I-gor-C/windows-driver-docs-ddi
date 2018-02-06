@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.IoUnregisterPlugPlayNotification
-title : IoUnregisterPlugPlayNotification function
-author : windows-driver-content
-description : This routine is obsolete in Windows 7 and later versions of Windows. For more information, see the following Remarks section.The IoUnregisterPlugPlayNotification routine removes the registration of a driver's callback routine for a PnP event.
-old-location : kernel\iounregisterplugplaynotification.htm
-old-project : kernel
-ms.assetid : 55eca513-030c-47f8-9ce9-ab36183cbaf2
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.iounregisterplugplaynotification, IoUnregisterPlugPlayNotification routine [Kernel-Mode Driver Architecture], k104_7235d17c-b6f8-406a-b896-36478354ca73.xml, IoUnregisterPlugPlayNotification, wdm/IoUnregisterPlugPlayNotification
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.IoUnregisterPlugPlayNotification
+title: IoUnregisterPlugPlayNotification function
+author: windows-driver-content
+description: This routine is obsolete in Windows 7 and later versions of Windows. For more information, see the following Remarks section.The IoUnregisterPlugPlayNotification routine removes the registration of a driver's callback routine for a PnP event.
+old-location: kernel\iounregisterplugplaynotification.htm
+old-project: kernel
+ms.assetid: 55eca513-030c-47f8-9ce9-ab36183cbaf2
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.iounregisterplugplaynotification, IoUnregisterPlugPlayNotification routine [Kernel-Mode Driver Architecture], k104_7235d17c-b6f8-406a-b896-36478354ca73.xml, IoUnregisterPlugPlayNotification, wdm/IoUnregisterPlugPlayNotification
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoUnregisterPlugPlayNotification
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

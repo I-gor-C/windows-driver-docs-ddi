@@ -1,41 +1,46 @@
 ---
-UID : NC:mrx.PMRX_FINALIZE_V_NET_ROOT_CALLDOWN
-title : PMRX_FINALIZE_V_NET_ROOT_CALLDOWN
-author : windows-driver-content
-description : The MRxFinalizeVNetRoot routine is called by RDBSS to request that a network mini-redirector finalize a V_NET_ROOT structure.
-old-location : ifsk\mrxfinalizevnetroot.htm
-old-project : ifsk
-ms.assetid : 13d0c903-57b6-4a57-977a-bf1bd651660f
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.mrxfinalizevnetroot, MRxFinalizeVNetRoot routine [Installable File System Drivers], MRxFinalizeVNetRoot, PMRX_FINALIZE_V_NET_ROOT_CALLDOWN, PMRX_FINALIZE_V_NET_ROOT_CALLDOWN, mrx/MRxFinalizeVNetRoot, mrxref_a5cc53ee-2d11-4987-aeb4-fe9cc2cc9b3e.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : mrx.h
-req.include-header : Mrx.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SetDSMCounters_IN, *PSetDSMCounters_IN
+UID: NC:mrx.PMRX_FINALIZE_V_NET_ROOT_CALLDOWN
+title: PMRX_FINALIZE_V_NET_ROOT_CALLDOWN
+author: windows-driver-content
+description: The MRxFinalizeVNetRoot routine is called by RDBSS to request that a network mini-redirector finalize a V_NET_ROOT structure.
+old-location: ifsk\mrxfinalizevnetroot.htm
+old-project: ifsk
+ms.assetid: 13d0c903-57b6-4a57-977a-bf1bd651660f
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.mrxfinalizevnetroot, MRxFinalizeVNetRoot routine [Installable File System Drivers], MRxFinalizeVNetRoot, PMRX_FINALIZE_V_NET_ROOT_CALLDOWN, PMRX_FINALIZE_V_NET_ROOT_CALLDOWN, mrx/MRxFinalizeVNetRoot, mrxref_a5cc53ee-2d11-4987-aeb4-fe9cc2cc9b3e.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: mrx.h
+req.include-header: Mrx.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	mrx.h
+apiname:
+-	MRxFinalizeVNetRoot
+product: Windows
+targetos: Windows
+req.typenames: SetDSMCounters_IN, *PSetDSMCounters_IN
 ---
 
 

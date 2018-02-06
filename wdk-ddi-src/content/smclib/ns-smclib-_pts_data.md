@@ -1,42 +1,47 @@
 ---
-UID : NS:smclib._PTS_DATA
-title : "_PTS_DATA"
-author : windows-driver-content
-description : The PTS_DATA structure is used for protocol type selection (PTS).
-old-location : smartcrd\pts_data.htm
-old-project : smartcrd
-ms.assetid : aa542c6f-24f9-4ef4-a425-93905cca976a
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : scstruct_8540d432-b29a-4227-a305-da7aba23a26d.xml, *PPTS_DATA, smclib/PPTS_DATA, _PTS_DATA, PPTS_DATA, PPTS_DATA structure pointer [Smart Card Reader Devices], smartcrd.pts_data, PTS_DATA structure [Smart Card Reader Devices], PTS_DATA, smclib/PTS_DATA
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : smclib.h
-req.include-header : Smclib.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPTS_DATA, PTS_DATA"
-req.product : Windows 10 or later.
+UID: NS:smclib._PTS_DATA
+title: "_PTS_DATA"
+author: windows-driver-content
+description: The PTS_DATA structure is used for protocol type selection (PTS).
+old-location: smartcrd\pts_data.htm
+old-project: smartcrd
+ms.assetid: aa542c6f-24f9-4ef4-a425-93905cca976a
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: scstruct_8540d432-b29a-4227-a305-da7aba23a26d.xml, *PPTS_DATA, smclib/PPTS_DATA, _PTS_DATA, PPTS_DATA, PPTS_DATA structure pointer [Smart Card Reader Devices], smartcrd.pts_data, PTS_DATA structure [Smart Card Reader Devices], PTS_DATA, smclib/PTS_DATA
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: smclib.h
+req.include-header: Smclib.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	smclib.h
+apiname:
+-	PTS_DATA
+product: Windows
+targetos: Windows
+req.typenames: "*PPTS_DATA, PTS_DATA"
+req.product: Windows 10 or later.
 ---
 
 # _PTS_DATA structure

@@ -1,41 +1,46 @@
 ---
-UID : NS:ehstorbandmgmt._SET_BAND_METADATA_PARAMETERS
-title : "_SET_BAND_METADATA_PARAMETERS"
-author : windows-driver-content
-description : The metadata for a configured band is set to the parameters in a SET_BAND_METADATA_PARAMETERS structure. This structure is input for a IOCTL_EHSTOR_BANDMGMT_SET_BAND_METADATA request.
-old-location : storage\set_band_metadata_parameters.htm
-old-project : storage
-ms.assetid : 3FCCFFE1-C341-4C8D-8EEC-E07C7ECFC317
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : ehstorbandmgmt/PSET_BAND_METADATA_PARAMETERS, SET_BAND_METADATA_PARAMETERS, storage.set_band_metadata_parameters, *PSET_BAND_METADATA_PARAMETERS, SET_BAND_METADATA_PARAMETERS structure [Storage Devices], PSET_BAND_METADATA_PARAMETERS, _SET_BAND_METADATA_PARAMETERS, PSET_BAND_METADATA_PARAMETERS structure pointer [Storage Devices], ehstorbandmgmt/SET_BAND_METADATA_PARAMETERS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ehstorbandmgmt.h
-req.include-header : EhStorBandMgmt.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows 8
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSET_BAND_METADATA_PARAMETERS, SET_BAND_METADATA_PARAMETERS"
+UID: NS:ehstorbandmgmt._SET_BAND_METADATA_PARAMETERS
+title: "_SET_BAND_METADATA_PARAMETERS"
+author: windows-driver-content
+description: The metadata for a configured band is set to the parameters in a SET_BAND_METADATA_PARAMETERS structure. This structure is input for a IOCTL_EHSTOR_BANDMGMT_SET_BAND_METADATA request.
+old-location: storage\set_band_metadata_parameters.htm
+old-project: storage
+ms.assetid: 3FCCFFE1-C341-4C8D-8EEC-E07C7ECFC317
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: ehstorbandmgmt/PSET_BAND_METADATA_PARAMETERS, SET_BAND_METADATA_PARAMETERS, storage.set_band_metadata_parameters, *PSET_BAND_METADATA_PARAMETERS, SET_BAND_METADATA_PARAMETERS structure [Storage Devices], PSET_BAND_METADATA_PARAMETERS, _SET_BAND_METADATA_PARAMETERS, PSET_BAND_METADATA_PARAMETERS structure pointer [Storage Devices], ehstorbandmgmt/SET_BAND_METADATA_PARAMETERS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ehstorbandmgmt.h
+req.include-header: EhStorBandMgmt.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows 8
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	EhStorBandMgmt.h
+apiname:
+-	SET_BAND_METADATA_PARAMETERS
+product: Windows
+targetos: Windows
+req.typenames: "*PSET_BAND_METADATA_PARAMETERS, SET_BAND_METADATA_PARAMETERS"
 ---
 
 # _SET_BAND_METADATA_PARAMETERS structure

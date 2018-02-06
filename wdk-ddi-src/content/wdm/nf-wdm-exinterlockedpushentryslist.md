@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.ExInterlockedPushEntrySList
-title : ExInterlockedPushEntrySList function
-author : windows-driver-content
-description : The ExInterlockedPushEntrySList routine atomically inserts an entry at the beginning of a sequenced singly linked list.
-old-location : kernel\exinterlockedpushentryslist.htm
-old-project : kernel
-ms.assetid : 4bff45b5-c295-444d-82ea-59cfd6c37551
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ExInterlockedPushEntrySList routine [Kernel-Mode Driver Architecture], k102_53da8507-cae3-4a71-9c59-49676a8b7a95.xml, kernel.exinterlockedpushentryslist, ExInterlockedPushEntrySList, wdm/ExInterlockedPushEntrySList
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : Any level (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ExInterlockedPushEntrySList
+title: ExInterlockedPushEntrySList function
+author: windows-driver-content
+description: The ExInterlockedPushEntrySList routine atomically inserts an entry at the beginning of a sequenced singly linked list.
+old-location: kernel\exinterlockedpushentryslist.htm
+old-project: kernel
+ms.assetid: 4bff45b5-c295-444d-82ea-59cfd6c37551
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ExInterlockedPushEntrySList routine [Kernel-Mode Driver Architecture], k102_53da8507-cae3-4a71-9c59-49676a8b7a95.xml, kernel.exinterlockedpushentryslist, ExInterlockedPushEntrySList, wdm/ExInterlockedPushEntrySList
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: Any level (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ExInterlockedPushEntrySList
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

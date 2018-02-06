@@ -1,42 +1,47 @@
 ---
-UID : NS:printoem._UNIFONTOBJ
-title : "_UNIFONTOBJ"
-author : windows-driver-content
-description : The UNIFONTOBJ structure is used as an input parameter to font functions in rendering plug-ins.
-old-location : print\unifontobj.htm
-old-project : print
-ms.assetid : ff3ecef2-abf2-4ecb-b4af-81e6c6d8fb4c
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : printoem/UNIFONTOBJ, print_unidrv-pscript_rendering_05a25ef3-5ce2-43f5-ae35-790691bda143.xml, printoem/PUNIFONTOBJ, _UNIFONTOBJ, PUNIFONTOBJ structure pointer [Print Devices], PUNIFONTOBJ, UNIFONTOBJ, *PUNIFONTOBJ, UNIFONTOBJ structure [Print Devices], print.unifontobj
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : printoem.h
-req.include-header : Printoem.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUNIFONTOBJ, UNIFONTOBJ"
-req.product : Windows 10 or later.
+UID: NS:printoem._UNIFONTOBJ
+title: "_UNIFONTOBJ"
+author: windows-driver-content
+description: The UNIFONTOBJ structure is used as an input parameter to font functions in rendering plug-ins.
+old-location: print\unifontobj.htm
+old-project: print
+ms.assetid: ff3ecef2-abf2-4ecb-b4af-81e6c6d8fb4c
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: printoem/UNIFONTOBJ, print_unidrv-pscript_rendering_05a25ef3-5ce2-43f5-ae35-790691bda143.xml, printoem/PUNIFONTOBJ, _UNIFONTOBJ, PUNIFONTOBJ structure pointer [Print Devices], PUNIFONTOBJ, UNIFONTOBJ, *PUNIFONTOBJ, UNIFONTOBJ structure [Print Devices], print.unifontobj
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: printoem.h
+req.include-header: Printoem.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	printoem.h
+apiname:
+-	UNIFONTOBJ
+product: Windows
+targetos: Windows
+req.typenames: "*PUNIFONTOBJ, UNIFONTOBJ"
+req.product: Windows 10 or later.
 ---
 
 # _UNIFONTOBJ structure

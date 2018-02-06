@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfinstaller.WdfPostDeviceInstall
-title : WdfPostDeviceInstall function
-author : windows-driver-content
-description : The co-installer's WdfPostDeviceInstall function performs any operations that the co-installer might require after a non-Plug and Play (PnP) driver's installer has created the driver's kernel-mode service.
-old-location : wdf\wdfpostdeviceinstall.htm
-old-project : wdf
-ms.assetid : 78942ef8-ecf9-481f-af60-2f1266a9e73f
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : DFCoinstallerRef_6a05795f-99bb-4f4d-975f-8d2de85adff0.xml, WdfPostDeviceInstall, wdf.wdfpostdeviceinstall, PFN_WDFPOSTDEVICEINSTALL, wdfinstaller/WdfPostDeviceInstall, WdfPostDeviceInstall function, kmdf.wdfpostdeviceinstall
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfinstaller.h
-req.include-header : Wdfinstaller.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : N/A (Exported by the KMDF co-installer library. For information about the co-installer library's filename, see Using the KMDF Co-installer.)
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_FILE_INFORMATION_CLASS, *PWDF_FILE_INFORMATION_CLASS
-req.product : Windows 10 or later.
+UID: NF:wdfinstaller.WdfPostDeviceInstall
+title: WdfPostDeviceInstall function
+author: windows-driver-content
+description: The co-installer's WdfPostDeviceInstall function performs any operations that the co-installer might require after a non-Plug and Play (PnP) driver's installer has created the driver's kernel-mode service.
+old-location: wdf\wdfpostdeviceinstall.htm
+old-project: wdf
+ms.assetid: 78942ef8-ecf9-481f-af60-2f1266a9e73f
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: DFCoinstallerRef_6a05795f-99bb-4f4d-975f-8d2de85adff0.xml, WdfPostDeviceInstall, wdf.wdfpostdeviceinstall, PFN_WDFPOSTDEVICEINSTALL, wdfinstaller/WdfPostDeviceInstall, WdfPostDeviceInstall function, kmdf.wdfpostdeviceinstall
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfinstaller.h
+req.include-header: Wdfinstaller.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: N/A (Exported by the KMDF co-installer library. For information about the co-installer library's filename, see Using the KMDF Co-installer.)
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	N/A
+-	N/A.dll
+apiname:
+-	WdfPostDeviceInstall
+product: Windows
+targetos: Windows
+req.typenames: WDF_FILE_INFORMATION_CLASS, *PWDF_FILE_INFORMATION_CLASS
+req.product: Windows 10 or later.
 ---
 
 

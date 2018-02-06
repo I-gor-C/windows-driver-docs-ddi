@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_CAPTURETOSYSMEM
-title : PFND3DDDI_CAPTURETOSYSMEM
-author : windows-driver-content
-description : The CaptureToSysMem function copies the contents of a capture buffer to a destination surface.
-old-location : display\capturetosysmem.htm
-old-project : display
-ms.assetid : ea2b5338-81cf-4114-bb07-16e8ff4d2b95
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.capturetosysmem, CaptureToSysMem callback function [Display Devices], CaptureToSysMem, PFND3DDDI_CAPTURETOSYSMEM, PFND3DDDI_CAPTURETOSYSMEM, d3dumddi/CaptureToSysMem, UserModeDisplayDriver_Functions_9d7270cc-da5e-4c04-8ab6-93b9cfd7a475.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_CAPTURETOSYSMEM
+title: PFND3DDDI_CAPTURETOSYSMEM
+author: windows-driver-content
+description: The CaptureToSysMem function copies the contents of a capture buffer to a destination surface.
+old-location: display\capturetosysmem.htm
+old-project: display
+ms.assetid: ea2b5338-81cf-4114-bb07-16e8ff4d2b95
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.capturetosysmem, CaptureToSysMem callback function [Display Devices], CaptureToSysMem, PFND3DDDI_CAPTURETOSYSMEM, PFND3DDDI_CAPTURETOSYSMEM, d3dumddi/CaptureToSysMem, UserModeDisplayDriver_Functions_9d7270cc-da5e-4c04-8ab6-93b9cfd7a475.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	CaptureToSysMem
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

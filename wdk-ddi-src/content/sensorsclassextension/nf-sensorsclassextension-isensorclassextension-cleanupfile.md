@@ -1,42 +1,48 @@
 ---
-UID : NF:sensorsclassextension.ISensorClassExtension.CleanupFile
-title : ISensorClassExtension::CleanupFile method
-author : windows-driver-content
-description : The ISensorClassExtension::CleanupFile method notifies the class extension about a file handle that closes and cancels all pending I/O requests, for the specified application.
-old-location : sensors\isensorclassextension_cleanupfile.htm
-old-project : sensors
-ms.assetid : eeade123-fb83-478f-99e3-e79bbbb1919b
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : ISensorClassExtension::CleanupFile, sensors.isensorclassextension_cleanupfile, ISensorClassExtension, CleanupFile method [Sensor Devices], CleanupFile
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : sensorsclassextension.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : SensorsClassExtension.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SensorConnectionType
-req.product : Windows 10 or later.
+UID: NF:sensorsclassextension.ISensorClassExtension.CleanupFile
+title: ISensorClassExtension::CleanupFile method
+author: windows-driver-content
+description: The ISensorClassExtension::CleanupFile method notifies the class extension about a file handle that closes and cancels all pending I/O requests, for the specified application.
+old-location: sensors\isensorclassextension_cleanupfile.htm
+old-project: sensors
+ms.assetid: eeade123-fb83-478f-99e3-e79bbbb1919b
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: ISensorClassExtension::CleanupFile, sensors.isensorclassextension_cleanupfile, ISensorClassExtension, CleanupFile method [Sensor Devices], CleanupFile
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: sensorsclassextension.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: SensorsClassExtension.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	SensorsClassExtension.lib
+-	SensorsClassExtension.dll
+apiname:
+-	CleanupFile
+product: Windows
+targetos: Windows
+req.typenames: SensorConnectionType
+req.product: Windows 10 or later.
 ---
 
 

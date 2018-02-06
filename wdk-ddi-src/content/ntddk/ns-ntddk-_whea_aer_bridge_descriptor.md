@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddk._WHEA_AER_BRIDGE_DESCRIPTOR
-title : "_WHEA_AER_BRIDGE_DESCRIPTOR"
-author : windows-driver-content
-description : The WHEA_AER_BRIDGE_DESCRIPTOR structure describes a PCI Express (PCIe) bridge error source.
-old-location : whea\whea_aer_bridge_descriptor.htm
-old-project : whea
-ms.assetid : 33cc9d34-cffb-410d-9948-37c8a409e0a5
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : WHEA_AER_BRIDGE_DESCRIPTOR structure [WHEA Drivers and Applications], WHEA_AER_BRIDGE_DESCRIPTOR, ntddk/WHEA_AER_BRIDGE_DESCRIPTOR, ntddk/PWHEA_AER_BRIDGE_DESCRIPTOR, _WHEA_AER_BRIDGE_DESCRIPTOR, *PWHEA_AER_BRIDGE_DESCRIPTOR, whea.whea_aer_bridge_descriptor, PWHEA_AER_BRIDGE_DESCRIPTOR structure pointer [WHEA Drivers and Applications], whearef_52e2fbef-c8d7-42c8-b8ae-584fbc4f622f.xml, PWHEA_AER_BRIDGE_DESCRIPTOR
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_AER_BRIDGE_DESCRIPTOR, *PWHEA_AER_BRIDGE_DESCRIPTOR
+UID: NS:ntddk._WHEA_AER_BRIDGE_DESCRIPTOR
+title: "_WHEA_AER_BRIDGE_DESCRIPTOR"
+author: windows-driver-content
+description: The WHEA_AER_BRIDGE_DESCRIPTOR structure describes a PCI Express (PCIe) bridge error source.
+old-location: whea\whea_aer_bridge_descriptor.htm
+old-project: whea
+ms.assetid: 33cc9d34-cffb-410d-9948-37c8a409e0a5
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: WHEA_AER_BRIDGE_DESCRIPTOR structure [WHEA Drivers and Applications], WHEA_AER_BRIDGE_DESCRIPTOR, ntddk/WHEA_AER_BRIDGE_DESCRIPTOR, ntddk/PWHEA_AER_BRIDGE_DESCRIPTOR, _WHEA_AER_BRIDGE_DESCRIPTOR, *PWHEA_AER_BRIDGE_DESCRIPTOR, whea.whea_aer_bridge_descriptor, PWHEA_AER_BRIDGE_DESCRIPTOR structure pointer [WHEA Drivers and Applications], whearef_52e2fbef-c8d7-42c8-b8ae-584fbc4f622f.xml, PWHEA_AER_BRIDGE_DESCRIPTOR
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddk.h
+apiname:
+-	WHEA_AER_BRIDGE_DESCRIPTOR
+product: Windows
+targetos: Windows
+req.typenames: WHEA_AER_BRIDGE_DESCRIPTOR, *PWHEA_AER_BRIDGE_DESCRIPTOR
 ---
 
 # _WHEA_AER_BRIDGE_DESCRIPTOR structure

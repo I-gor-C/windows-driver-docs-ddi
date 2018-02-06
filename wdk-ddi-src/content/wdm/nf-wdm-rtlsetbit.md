@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.RtlSetBit
-title : RtlSetBit function
-author : windows-driver-content
-description : The RtlSetBit routine sets the specified bit in a bitmap to one.
-old-location : kernel\rtlsetbit.htm
-old-project : kernel
-ms.assetid : 6e78da3d-7a37-41f9-bfa6-db2e83581769
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : RtlSetBit, k109_44d68cd0-b91e-4a4e-8f4f-c40e25b768b9.xml, kernel.rtlsetbit, RtlSetBit routine [Kernel-Mode Driver Architecture], wdm/RtlSetBit
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows XP and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL (See Remarks section)"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.RtlSetBit
+title: RtlSetBit function
+author: windows-driver-content
+description: The RtlSetBit routine sets the specified bit in a bitmap to one.
+old-location: kernel\rtlsetbit.htm
+old-project: kernel
+ms.assetid: 6e78da3d-7a37-41f9-bfa6-db2e83581769
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: RtlSetBit, k109_44d68cd0-b91e-4a4e-8f4f-c40e25b768b9.xml, kernel.rtlsetbit, RtlSetBit routine [Kernel-Mode Driver Architecture], wdm/RtlSetBit
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows XP and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL (See Remarks section)"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	RtlSetBit
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:iscsiop._SetGroupPresharedKey_OUT
-title : "_SetGroupPresharedKey_OUT"
-author : windows-driver-content
-description : The SetGroupPresharedKey_OUT structure holds the output data for the SetGroupPresharedKey method.
-old-location : storage\setgrouppresharedkey_out.htm
-old-project : storage
-ms.assetid : 4ea5e428-783c-4a28-bec5-42106425ee1f
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.setgrouppresharedkey_out, _SetGroupPresharedKey_OUT, structs-iSCSI_81186f6a-bf08-42eb-a3d8-ae195cdd8135.xml, SetGroupPresharedKey_OUT, iscsiop/SetGroupPresharedKey_OUT, *PSetGroupPresharedKey_OUT, iscsiop/PSetGroupPresharedKey_OUT, SetGroupPresharedKey_OUT structure [Storage Devices], PSetGroupPresharedKey_OUT, PSetGroupPresharedKey_OUT structure pointer [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : iscsiop.h
-req.include-header : Iscsiop.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SetGroupPresharedKey_OUT, *PSetGroupPresharedKey_OUT
+UID: NS:iscsiop._SetGroupPresharedKey_OUT
+title: "_SetGroupPresharedKey_OUT"
+author: windows-driver-content
+description: The SetGroupPresharedKey_OUT structure holds the output data for the SetGroupPresharedKey method.
+old-location: storage\setgrouppresharedkey_out.htm
+old-project: storage
+ms.assetid: 4ea5e428-783c-4a28-bec5-42106425ee1f
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.setgrouppresharedkey_out, _SetGroupPresharedKey_OUT, structs-iSCSI_81186f6a-bf08-42eb-a3d8-ae195cdd8135.xml, SetGroupPresharedKey_OUT, iscsiop/SetGroupPresharedKey_OUT, *PSetGroupPresharedKey_OUT, iscsiop/PSetGroupPresharedKey_OUT, SetGroupPresharedKey_OUT structure [Storage Devices], PSetGroupPresharedKey_OUT, PSetGroupPresharedKey_OUT structure pointer [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: iscsiop.h
+req.include-header: Iscsiop.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	iscsiop.h
+apiname:
+-	SetGroupPresharedKey_OUT
+product: Windows
+targetos: Windows
+req.typenames: SetGroupPresharedKey_OUT, *PSetGroupPresharedKey_OUT
 ---
 
 # _SetGroupPresharedKey_OUT structure

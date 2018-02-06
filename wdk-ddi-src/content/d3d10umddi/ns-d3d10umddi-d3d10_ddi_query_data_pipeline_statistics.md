@@ -1,41 +1,46 @@
 ---
-UID : NS:d3d10umddi.D3D10_DDI_QUERY_DATA_PIPELINE_STATISTICS
-title : D3D10_DDI_QUERY_DATA_PIPELINE_STATISTICS
-author : windows-driver-content
-description : The D3D10_DDI_QUERY_DATA_PIPELINE_STATISTICS structure describes statistics for each stage of the graphics pipeline that is used in a call to the CreateQuery(D3D10) function to create a D3D10DDI_QUERY_PIPELINESTATS query type and in a call to the QueryGetData function to return information about the query.
-old-location : display\d3d10_ddi_query_data_pipeline_statistics.htm
-old-project : display
-ms.assetid : 5e481453-1e01-46b4-a04e-e9c575cd65b9
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3D10_DDI_QUERY_DATA_PIPELINE_STATISTICS, UMDisplayDriver_Dx10param_Structs_66e61d2d-0a0d-41aa-a25d-a7fa3ef08b4c.xml, D3D10_DDI_QUERY_DATA_PIPELINE_STATISTICS structure [Display Devices], display.d3d10_ddi_query_data_pipeline_statistics, d3d10umddi/D3D10_DDI_QUERY_DATA_PIPELINE_STATISTICS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3D10_DDI_QUERY_DATA_PIPELINE_STATISTICS
+UID: NS:d3d10umddi.D3D10_DDI_QUERY_DATA_PIPELINE_STATISTICS
+title: D3D10_DDI_QUERY_DATA_PIPELINE_STATISTICS
+author: windows-driver-content
+description: The D3D10_DDI_QUERY_DATA_PIPELINE_STATISTICS structure describes statistics for each stage of the graphics pipeline that is used in a call to the CreateQuery(D3D10) function to create a D3D10DDI_QUERY_PIPELINESTATS query type and in a call to the QueryGetData function to return information about the query.
+old-location: display\d3d10_ddi_query_data_pipeline_statistics.htm
+old-project: display
+ms.assetid: 5e481453-1e01-46b4-a04e-e9c575cd65b9
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3D10_DDI_QUERY_DATA_PIPELINE_STATISTICS, UMDisplayDriver_Dx10param_Structs_66e61d2d-0a0d-41aa-a25d-a7fa3ef08b4c.xml, D3D10_DDI_QUERY_DATA_PIPELINE_STATISTICS structure [Display Devices], display.d3d10_ddi_query_data_pipeline_statistics, d3d10umddi/D3D10_DDI_QUERY_DATA_PIPELINE_STATISTICS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	D3D10_DDI_QUERY_DATA_PIPELINE_STATISTICS
+product: Windows
+targetos: Windows
+req.typenames: D3D10_DDI_QUERY_DATA_PIPELINE_STATISTICS
 ---
 
 # D3D10_DDI_QUERY_DATA_PIPELINE_STATISTICS structure

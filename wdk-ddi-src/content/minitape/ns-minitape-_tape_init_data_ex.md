@@ -1,41 +1,46 @@
 ---
-UID : NS:minitape._TAPE_INIT_DATA_EX
-title : "_TAPE_INIT_DATA_EX"
-author : windows-driver-content
-description : TAPE_INIT_DATA_EX defines values and routines that are specific to a Windows 2000 tape miniclass driver. The tape miniclass DriverEntry routine passes this information to the tape class driver to complete miniclass driver initialization.
-old-location : storage\tape_init_data_ex.htm
-old-project : storage
-ms.assetid : 438c736e-c9be-4a75-a062-4614ea7fe028
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : "_TAPE_INIT_DATA_EX, PTAPE_INIT_DATA_EX structure pointer [Storage Devices], PTAPE_INIT_DATA_EX, minitape/PTAPE_INIT_DATA_EX, *PTAPE_INIT_DATA_EX, structs-tape_69291d6d-0f9e-4b6b-bb66-c40757bb5c69.xml, minitape/TAPE_INIT_DATA_EX, TAPE_INIT_DATA_EX structure [Storage Devices], TAPE_INIT_DATA_EX, storage.tape_init_data_ex"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : minitape.h
-req.include-header : Minitape.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PTAPE_INIT_DATA_EX, TAPE_INIT_DATA_EX"
+UID: NS:minitape._TAPE_INIT_DATA_EX
+title: "_TAPE_INIT_DATA_EX"
+author: windows-driver-content
+description: TAPE_INIT_DATA_EX defines values and routines that are specific to a Windows 2000 tape miniclass driver. The tape miniclass DriverEntry routine passes this information to the tape class driver to complete miniclass driver initialization.
+old-location: storage\tape_init_data_ex.htm
+old-project: storage
+ms.assetid: 438c736e-c9be-4a75-a062-4614ea7fe028
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: "_TAPE_INIT_DATA_EX, PTAPE_INIT_DATA_EX structure pointer [Storage Devices], PTAPE_INIT_DATA_EX, minitape/PTAPE_INIT_DATA_EX, *PTAPE_INIT_DATA_EX, structs-tape_69291d6d-0f9e-4b6b-bb66-c40757bb5c69.xml, minitape/TAPE_INIT_DATA_EX, TAPE_INIT_DATA_EX structure [Storage Devices], TAPE_INIT_DATA_EX, storage.tape_init_data_ex"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: minitape.h
+req.include-header: Minitape.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	minitape.h
+apiname:
+-	TAPE_INIT_DATA_EX
+product: Windows
+targetos: Windows
+req.typenames: "*PTAPE_INIT_DATA_EX, TAPE_INIT_DATA_EX"
 ---
 
 # _TAPE_INIT_DATA_EX structure

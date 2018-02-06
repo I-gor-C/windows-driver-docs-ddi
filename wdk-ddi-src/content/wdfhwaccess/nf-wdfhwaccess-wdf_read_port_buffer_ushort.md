@@ -1,42 +1,47 @@
 ---
-UID : NF:wdfhwaccess.WDF_READ_PORT_BUFFER_USHORT
-title : WDF_READ_PORT_BUFFER_USHORT function
-author : windows-driver-content
-description : The WDF_READ_PORT_BUFFER_USHORT function reads a number of USHORT values from the specified port address into a buffer.
-old-location : wdf\wdf_read_port_buffer_ushort.htm
-old-project : wdf
-ms.assetid : 74784405-8435-4305-A630-255D7BB24157
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdfhwaccess/WDF_READ_PORT_BUFFER_USHORT, WDF_READ_PORT_BUFFER_USHORT function, wdf.wdf_read_port_buffer_ushort, WDF_READ_PORT_BUFFER_USHORT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfhwaccess.h
-req.include-header : 
-req.target-type : Universal
-req.target-min-winverclnt : Windows 8.1
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_FILE_INFORMATION_CLASS, *PWDF_FILE_INFORMATION_CLASS
-req.product : Windows 10 or later.
+UID: NF:wdfhwaccess.WDF_READ_PORT_BUFFER_USHORT
+title: WDF_READ_PORT_BUFFER_USHORT function
+author: windows-driver-content
+description: The WDF_READ_PORT_BUFFER_USHORT function reads a number of USHORT values from the specified port address into a buffer.
+old-location: wdf\wdf_read_port_buffer_ushort.htm
+old-project: wdf
+ms.assetid: 74784405-8435-4305-A630-255D7BB24157
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdfhwaccess/WDF_READ_PORT_BUFFER_USHORT, WDF_READ_PORT_BUFFER_USHORT function, wdf.wdf_read_port_buffer_ushort, WDF_READ_PORT_BUFFER_USHORT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfhwaccess.h
+req.include-header: 
+req.target-type: Universal
+req.target-min-winverclnt: Windows 8.1
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wdfhwaccess.h
+apiname:
+-	WDF_READ_PORT_BUFFER_USHORT
+product: Windows
+targetos: Windows
+req.typenames: WDF_FILE_INFORMATION_CLASS, *PWDF_FILE_INFORMATION_CLASS
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisWriteEventLogEntry
-title : NdisWriteEventLogEntry function
-author : windows-driver-content
-description : NdisWriteEventLogEntry logs an event to the Win32 event log.
-old-location : netvista\ndiswriteeventlogentry.htm
-old-project : netvista
-ms.assetid : 1f3fbcf1-e6f4-4117-a795-f4b14ef9fc96
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.ndiswriteeventlogentry, miniport_logging_ref_435a14ad-ae5a-4ff9-80a9-2c41966ed8ba.xml, NdisWriteEventLogEntry function [Network Drivers Starting with Windows Vista], ndis/NdisWriteEventLogEntry, NdisWriteEventLogEntry
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisWriteEventLogEntry (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisWriteEventLogEntry (NDIS   5.1)) in Windows XP.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_Miscellaneous_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisWriteEventLogEntry
+title: NdisWriteEventLogEntry function
+author: windows-driver-content
+description: NdisWriteEventLogEntry logs an event to the Win32 event log.
+old-location: netvista\ndiswriteeventlogentry.htm
+old-project: netvista
+ms.assetid: 1f3fbcf1-e6f4-4117-a795-f4b14ef9fc96
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.ndiswriteeventlogentry, miniport_logging_ref_435a14ad-ae5a-4ff9-80a9-2c41966ed8ba.xml, NdisWriteEventLogEntry function [Network Drivers Starting with Windows Vista], ndis/NdisWriteEventLogEntry, NdisWriteEventLogEntry
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisWriteEventLogEntry (NDIS   5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisWriteEventLogEntry (NDIS   5.1)) in Windows XP.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_Miscellaneous_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisWriteEventLogEntry
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

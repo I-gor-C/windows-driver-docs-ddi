@@ -1,42 +1,47 @@
 ---
-UID : NI:usbioctl.IOCTL_INTERNAL_USB_CYCLE_PORT
-title : IOCTL_INTERNAL_USB_CYCLE_PORT
-author : windows-driver-content
-description : The IOCTL_INTERNAL_USB_CYCLE_PORT I/O request simulates a device unplug and replug on the port associated with the PDO.
-old-location : buses\ioctl_internal_usb_cycle_port.htm
-old-project : usbref
-ms.assetid : 81e62377-66af-4588-8be5-f6bb89a11fe0
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : buses.ioctl_internal_usb_cycle_port, IOCTL_INTERNAL_USB_CYCLE_PORT control code [Buses], IOCTL_INTERNAL_USB_CYCLE_PORT, usbioctl/IOCTL_INTERNAL_USB_CYCLE_PORT, usbirp_0f04d439-7813-4da8-9279-a4d113871687.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : usbioctl.h
-req.include-header : Usbioctl.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows XP and later operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : USB_HUB_TYPE
-req.product : Windows 10 or later.
+UID: NI:usbioctl.IOCTL_INTERNAL_USB_CYCLE_PORT
+title: IOCTL_INTERNAL_USB_CYCLE_PORT
+author: windows-driver-content
+description: The IOCTL_INTERNAL_USB_CYCLE_PORT I/O request simulates a device unplug and replug on the port associated with the PDO.
+old-location: buses\ioctl_internal_usb_cycle_port.htm
+old-project: usbref
+ms.assetid: 81e62377-66af-4588-8be5-f6bb89a11fe0
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: buses.ioctl_internal_usb_cycle_port, IOCTL_INTERNAL_USB_CYCLE_PORT control code [Buses], IOCTL_INTERNAL_USB_CYCLE_PORT, usbioctl/IOCTL_INTERNAL_USB_CYCLE_PORT, usbirp_0f04d439-7813-4da8-9279-a4d113871687.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: usbioctl.h
+req.include-header: Usbioctl.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows XP and later operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Usbioctl.h
+apiname:
+-	IOCTL_INTERNAL_USB_CYCLE_PORT
+product: Windows
+targetos: Windows
+req.typenames: USB_HUB_TYPE
+req.product: Windows 10 or later.
 ---
 
 # IOCTL_INTERNAL_USB_CYCLE_PORT IOCTL

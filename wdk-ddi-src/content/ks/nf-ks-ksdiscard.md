@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsDiscard
-title : KsDiscard macro
-author : windows-driver-content
-description : The KsDiscard macro removes a given item from an object bag.
-old-location : stream\ksdiscard.htm
-old-project : stream
-ms.assetid : cbd1cd9b-c3bd-4827-88e6-4b80d6ba7320
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KsDiscard function [Streaming Media Devices], ks/KsDiscard, stream.ksdiscard, KsDiscard, avfunc_645e5574-6c6b-4336-87fe-fe777f7d1c91.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : macro
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsDiscard
+title: KsDiscard macro
+author: windows-driver-content
+description: The KsDiscard macro removes a given item from an object bag.
+old-location: stream\ksdiscard.htm
+old-project: stream
+ms.assetid: cbd1cd9b-c3bd-4827-88e6-4b80d6ba7320
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KsDiscard function [Streaming Media Devices], ks/KsDiscard, stream.ksdiscard, KsDiscard, avfunc_645e5574-6c6b-4336-87fe-fe777f7d1c91.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: macro
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsDiscard
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

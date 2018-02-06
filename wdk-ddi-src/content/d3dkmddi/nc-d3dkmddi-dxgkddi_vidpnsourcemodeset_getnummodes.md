@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dkmddi.DXGKDDI_VIDPNSOURCEMODESET_GETNUMMODES
-title : DXGKDDI_VIDPNSOURCEMODESET_GETNUMMODES
-author : windows-driver-content
-description : The pfnGetNumModes function returns the number of source modes in a specified VidPN source mode set.
-old-location : display\dxgk_vidpnsourcemodeset_interface_pfngetnummodes.htm
-old-project : display
-ms.assetid : abdc053c-45da-4af3-84c1-7eeb4a2856cb
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgk_vidpnsourcemodeset_interface_pfngetnummodes, pfnGetNumModes callback function [Display Devices], pfnGetNumModes, DXGKDDI_VIDPNSOURCEMODESET_GETNUMMODES, DXGKDDI_VIDPNSOURCEMODESET_GETNUMMODES, d3dkmddi/pfnGetNumModes, VidPnFunctions_e2cf0efc-e1a3-4515-b539-9c475877dd78.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
+UID: NC:d3dkmddi.DXGKDDI_VIDPNSOURCEMODESET_GETNUMMODES
+title: DXGKDDI_VIDPNSOURCEMODESET_GETNUMMODES
+author: windows-driver-content
+description: The pfnGetNumModes function returns the number of source modes in a specified VidPN source mode set.
+old-location: display\dxgk_vidpnsourcemodeset_interface_pfngetnummodes.htm
+old-project: display
+ms.assetid: abdc053c-45da-4af3-84c1-7eeb4a2856cb
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgk_vidpnsourcemodeset_interface_pfngetnummodes, pfnGetNumModes callback function [Display Devices], pfnGetNumModes, DXGKDDI_VIDPNSOURCEMODESET_GETNUMMODES, DXGKDDI_VIDPNSOURCEMODESET_GETNUMMODES, d3dkmddi/pfnGetNumModes, VidPnFunctions_e2cf0efc-e1a3-4515-b539-9c475877dd78.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	pfnGetNumModes
+product: Windows
+targetos: Windows
+req.typenames: DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
 

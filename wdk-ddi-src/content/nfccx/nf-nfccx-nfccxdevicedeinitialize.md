@@ -1,41 +1,46 @@
 ---
-UID : NF:nfccx.NfcCxDeviceDeinitialize
-title : NfcCxDeviceDeinitialize function
-author : windows-driver-content
-description : Called by the client driver after a WDF device has been created during the AddDevice routine.
-old-location : nfpdrivers\_nfccxdevicedeinitialize.htm
-old-project : nfpdrivers
-ms.assetid : 1E1AC024-D628-4E31-80EF-8E929B8449FE
-ms.author : windowsdriverdev
-ms.date : 12/18/2017
-ms.keywords : nfccx/NfcCxDeviceDeinitialize, nfpdrivers._nfccxdevicedeinitialize, NfcCxDeviceDeinitialize method [Near-Field Proximity Drivers], NfcCxDeviceDeinitialize
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : nfccx.h
-req.include-header : Ncidef.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : None supported
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Nfccsstub.lib
-req.dll : NfcCx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NFC_CX_TRANSPORT_TYPE, *PNFC_CX_TRANSPORT_TYPE
+UID: NF:nfccx.NfcCxDeviceDeinitialize
+title: NfcCxDeviceDeinitialize function
+author: windows-driver-content
+description: Called by the client driver after a WDF device has been created during the AddDevice routine.
+old-location: nfpdrivers\_nfccxdevicedeinitialize.htm
+old-project: nfpdrivers
+ms.assetid: 1E1AC024-D628-4E31-80EF-8E929B8449FE
+ms.author: windowsdriverdev
+ms.date: 12/18/2017
+ms.keywords: nfccx/NfcCxDeviceDeinitialize, nfpdrivers._nfccxdevicedeinitialize, NfcCxDeviceDeinitialize method [Near-Field Proximity Drivers], NfcCxDeviceDeinitialize
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: nfccx.h
+req.include-header: Ncidef.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: None supported
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Nfccsstub.lib
+req.dll: NfcCx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NfcCx.dll
+apiname:
+-	NfcCxDeviceDeinitialize
+product: Windows
+targetos: Windows
+req.typenames: NFC_CX_TRANSPORT_TYPE, *PNFC_CX_TRANSPORT_TYPE
 ---
 
 

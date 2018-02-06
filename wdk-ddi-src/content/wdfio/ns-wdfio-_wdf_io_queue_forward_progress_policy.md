@@ -1,42 +1,47 @@
 ---
-UID : NS:wdfio._WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY
-title : "_WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY"
-author : windows-driver-content
-description : The WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY structure contains driver-supplied information that the framework uses to enable guaranteed forward progress for an I/O queue.
-old-location : wdf\wdf_io_queue_forward_progress_policy.htm
-old-project : wdf
-ms.assetid : cee3de1f-eaee-40e9-97a9-979e75e22c0a
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdfio/PWDF_IO_QUEUE_FORWARD_PROGRESS_POLICY, wdfio/WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY, _WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY, WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY, PWDF_IO_QUEUE_FORWARD_PROGRESS_POLICY, WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY structure, kmdf.wdf_io_queue_forward_progress_policy, DFQueueObjectRef_cfd7143c-1ca1-4ecf-a840-0007971f9197.xml, PWDF_IO_QUEUE_FORWARD_PROGRESS_POLICY structure pointer, *PWDF_IO_QUEUE_FORWARD_PROGRESS_POLICY, wdf.wdf_io_queue_forward_progress_policy
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdfio.h
-req.include-header : Wdf.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.9
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Any IRQL.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY, *PWDF_IO_QUEUE_FORWARD_PROGRESS_POLICY
-req.product : Windows 10 or later.
+UID: NS:wdfio._WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY
+title: "_WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY"
+author: windows-driver-content
+description: The WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY structure contains driver-supplied information that the framework uses to enable guaranteed forward progress for an I/O queue.
+old-location: wdf\wdf_io_queue_forward_progress_policy.htm
+old-project: wdf
+ms.assetid: cee3de1f-eaee-40e9-97a9-979e75e22c0a
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdfio/PWDF_IO_QUEUE_FORWARD_PROGRESS_POLICY, wdfio/WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY, _WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY, WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY, PWDF_IO_QUEUE_FORWARD_PROGRESS_POLICY, WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY structure, kmdf.wdf_io_queue_forward_progress_policy, DFQueueObjectRef_cfd7143c-1ca1-4ecf-a840-0007971f9197.xml, PWDF_IO_QUEUE_FORWARD_PROGRESS_POLICY structure pointer, *PWDF_IO_QUEUE_FORWARD_PROGRESS_POLICY, wdf.wdf_io_queue_forward_progress_policy
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdfio.h
+req.include-header: Wdf.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.9
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Any IRQL.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfio.h
+apiname:
+-	WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY
+product: Windows
+targetos: Windows
+req.typenames: WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY, *PWDF_IO_QUEUE_FORWARD_PROGRESS_POLICY
+req.product: Windows 10 or later.
 ---
 
 # _WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY structure

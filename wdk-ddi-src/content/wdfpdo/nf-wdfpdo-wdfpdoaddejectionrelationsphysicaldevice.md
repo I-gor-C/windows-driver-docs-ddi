@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfpdo.WdfPdoAddEjectionRelationsPhysicalDevice
-title : WdfPdoAddEjectionRelationsPhysicalDevice function
-author : windows-driver-content
-description : The WdfPdoAddEjectionRelationsPhysicalDevice method indicates that a specified device is ejected when another specified device is ejected.
-old-location : wdf\wdfpdoaddejectionrelationsphysicaldevice.htm
-old-project : wdf
-ms.assetid : 23a9ab2a-be8e-40ff-8654-adf170adc6f2
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WdfPdoAddEjectionRelationsPhysicalDevice, kmdf.wdfpdoaddejectionrelationsphysicaldevice, WdfPdoAddEjectionRelationsPhysicalDevice method, PFN_WDFPDOADDEJECTIONRELATIONSPHYSICALDEVICE, wdfpdo/WdfPdoAddEjectionRelationsPhysicalDevice, wdf.wdfpdoaddejectionrelationsphysicaldevice, DFDeviceObjectFdoPdoRef_c13c9c42-f704-4042-b70d-952ddb8a27b8.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfpdo.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDF_OBJECT_CONTEXT_TYPE_INFO, WDF_OBJECT_CONTEXT_TYPE_INFO"
-req.product : Windows 10 or later.
+UID: NF:wdfpdo.WdfPdoAddEjectionRelationsPhysicalDevice
+title: WdfPdoAddEjectionRelationsPhysicalDevice function
+author: windows-driver-content
+description: The WdfPdoAddEjectionRelationsPhysicalDevice method indicates that a specified device is ejected when another specified device is ejected.
+old-location: wdf\wdfpdoaddejectionrelationsphysicaldevice.htm
+old-project: wdf
+ms.assetid: 23a9ab2a-be8e-40ff-8654-adf170adc6f2
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WdfPdoAddEjectionRelationsPhysicalDevice, kmdf.wdfpdoaddejectionrelationsphysicaldevice, WdfPdoAddEjectionRelationsPhysicalDevice method, PFN_WDFPDOADDEJECTIONRELATIONSPHYSICALDEVICE, wdfpdo/WdfPdoAddEjectionRelationsPhysicalDevice, wdf.wdfpdoaddejectionrelationsphysicaldevice, DFDeviceObjectFdoPdoRef_c13c9c42-f704-4042-b70d-952ddb8a27b8.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfpdo.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfPdoAddEjectionRelationsPhysicalDevice
+product: Windows
+targetos: Windows
+req.typenames: "*PWDF_OBJECT_CONTEXT_TYPE_INFO, WDF_OBJECT_CONTEXT_TYPE_INFO"
+req.product: Windows 10 or later.
 ---
 
 

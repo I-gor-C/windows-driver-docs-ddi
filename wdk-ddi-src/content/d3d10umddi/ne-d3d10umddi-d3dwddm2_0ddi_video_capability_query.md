@@ -1,41 +1,46 @@
 ---
-UID : NE:d3d10umddi.D3DWDDM2_0DDI_VIDEO_CAPABILITY_QUERY
-title : D3DWDDM2_0DDI_VIDEO_CAPABILITY_QUERY
-author : windows-driver-content
-description : Describes the video capabilities to query.
-old-location : display\d3dwddm2_0ddi_video_capability_query.htm
-old-project : display
-ms.assetid : A8BA3FF9-A821-43ED-91CB-EECD0ABA0954
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3d10umddi/D3DWDDM2_0DDI_VIDEO_CAPABILITY_QUERY, d3d10umddi/D3DWDDM2_0DDI_VIDEO_CAPABILITY_QUERY_DECODER_DOWNSAMPLING, D3DWDDM2_0DDI_VIDEO_CAPABILITY_QUERY, d3d10umddi/D3DWDDM2_0DDI_VIDEO_CAPABILITY_QUERY_RECOMMEND_DECODER_DOWNSAMPLING, display.d3dwddm2_0ddi_video_capability_query, D3DWDDM2_0DDI_VIDEO_CAPABILITY_QUERY enumeration [Display Devices], D3DWDDM2_0DDI_VIDEO_CAPABILITY_QUERY_DECODER_DOWNSAMPLING, D3DWDDM2_0DDI_VIDEO_CAPABILITY_QUERY_RECOMMEND_DECODER_DOWNSAMPLING, d3d10umddi/D3DWDDM2_0DDI_VIDEO_CAPABILITY_QUERY_DECODER_CAPS, D3DWDDM2_0DDI_VIDEO_CAPABILITY_QUERY_DECODER_CAPS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DWDDM2_0DDI_VIDEO_CAPABILITY_QUERY
+UID: NE:d3d10umddi.D3DWDDM2_0DDI_VIDEO_CAPABILITY_QUERY
+title: D3DWDDM2_0DDI_VIDEO_CAPABILITY_QUERY
+author: windows-driver-content
+description: Describes the video capabilities to query.
+old-location: display\d3dwddm2_0ddi_video_capability_query.htm
+old-project: display
+ms.assetid: A8BA3FF9-A821-43ED-91CB-EECD0ABA0954
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3d10umddi/D3DWDDM2_0DDI_VIDEO_CAPABILITY_QUERY, d3d10umddi/D3DWDDM2_0DDI_VIDEO_CAPABILITY_QUERY_DECODER_DOWNSAMPLING, D3DWDDM2_0DDI_VIDEO_CAPABILITY_QUERY, d3d10umddi/D3DWDDM2_0DDI_VIDEO_CAPABILITY_QUERY_RECOMMEND_DECODER_DOWNSAMPLING, display.d3dwddm2_0ddi_video_capability_query, D3DWDDM2_0DDI_VIDEO_CAPABILITY_QUERY enumeration [Display Devices], D3DWDDM2_0DDI_VIDEO_CAPABILITY_QUERY_DECODER_DOWNSAMPLING, D3DWDDM2_0DDI_VIDEO_CAPABILITY_QUERY_RECOMMEND_DECODER_DOWNSAMPLING, d3d10umddi/D3DWDDM2_0DDI_VIDEO_CAPABILITY_QUERY_DECODER_CAPS, D3DWDDM2_0DDI_VIDEO_CAPABILITY_QUERY_DECODER_CAPS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	D3d10umddi.h
+apiname:
+-	D3DWDDM2_0DDI_VIDEO_CAPABILITY_QUERY
+product: Windows
+targetos: Windows
+req.typenames: D3DWDDM2_0DDI_VIDEO_CAPABILITY_QUERY
 ---
 
 # D3DWDDM2_0DDI_VIDEO_CAPABILITY_QUERY Enumeration
@@ -53,38 +58,38 @@ typedef enum D3DWDDM2_0DDI_VIDEO_CAPABILITY_QUERY {
 ## Constants
 
 <table>
-
-<tr>
-<td>D3DWDDM2_0DDI_VIDEO_CAPABILITY_QUERY_DECODER_CAPS</td>
-<td>Indicates that the driver should return video decoder capabilities.
+            
+                <tr>
+                    <td>D3DWDDM2_0DDI_VIDEO_CAPABILITY_QUERY_DECODER_CAPS</td>
+                    <td>Indicates that the driver should return video decoder capabilities.
 
 
 
 The input structure is of type <a href="..\d3d10umddi\ns-d3d10umddi-d3dwddm2_0ddi_video_capability_decoder_caps.md">D3DWDDM2_0DDI_VIDEO_CAPABILITY_DECODER_CAPS</a>.</td>
-</tr>
-
-<tr>
-<td>D3DWDDM2_0DDI_VIDEO_CAPABILITY_QUERY_DECODER_DOWNSAMPLE_OUTPUT_FORMAT</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DWDDM2_0DDI_VIDEO_CAPABILITY_QUERY_DECODER_DOWNSAMPLING</td>
-<td>Indicates that the driver should return support for the specified down sampling parameters specified.
+                </tr>
+            
+                <tr>
+                    <td>D3DWDDM2_0DDI_VIDEO_CAPABILITY_QUERY_DECODER_DOWNSAMPLE_OUTPUT_FORMAT</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DWDDM2_0DDI_VIDEO_CAPABILITY_QUERY_DECODER_DOWNSAMPLING</td>
+                    <td>Indicates that the driver should return support for the specified down sampling parameters specified.
 
 
 
 The input structure is of type <a href="..\d3d10umddi\ns-d3d10umddi-d3dwddm2_0ddi_video_capability_decoder_downsampling.md">D3DWDDM2_0DDI_VIDEO_CAPABILITY_DECODER_DOWNSAMPLING</a>.</td>
-</tr>
-
-<tr>
-<td>D3DWDDM2_0DDI_VIDEO_CAPABILITY_QUERY_RECOMMEND_DECODER_DOWNSAMPLING</td>
-<td>Indicates that the driver should recommend down sampling parameters.
+                </tr>
+            
+                <tr>
+                    <td>D3DWDDM2_0DDI_VIDEO_CAPABILITY_QUERY_RECOMMEND_DECODER_DOWNSAMPLING</td>
+                    <td>Indicates that the driver should recommend down sampling parameters.
 
 
 
 The input structure is of type <a href="..\d3d10umddi\ns-d3d10umddi-d3dwddm2_0ddi_video_capability_recommend_decoder_downsampling.md">D3DWDDM2_0DDI_VIDEO_CAPABILITY_RECOMMEND_DECODER_DOWNSAMPLING</a>.</td>
-</tr>
+                </tr>
 </table>
 
 
@@ -94,9 +99,9 @@ The input structure is of type <a href="..\d3d10umddi\ns-d3d10umddi-d3dwddm2_0dd
 | **Windows version** | Windows 10 Windows 10 |
 | **Header** | d3d10umddi.h (include D3d10umddi.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\d3d10umddi\ns-d3d10umddi-d3dwddm2_0ddi_video_capability_decoder_caps.md">D3DWDDM2_0DDI_VIDEO_CAPABILITY_DECODER_CAPS</a>
+        <a href="..\d3d10umddi\ns-d3d10umddi-d3dwddm2_0ddi_video_capability_decoder_caps.md">D3DWDDM2_0DDI_VIDEO_CAPABILITY_DECODER_CAPS</a>
 
 <a href="..\d3d10umddi\ns-d3d10umddi-d3dwddm2_0ddi_video_capability_decoder_downsampling.md">D3DWDDM2_0DDI_VIDEO_CAPABILITY_DECODER_DOWNSAMPLING</a>
 

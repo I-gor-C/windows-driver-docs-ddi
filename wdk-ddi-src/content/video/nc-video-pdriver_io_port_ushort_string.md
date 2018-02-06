@@ -1,42 +1,47 @@
 ---
-UID : NC:video.PDRIVER_IO_PORT_USHORT_STRING
-title : PDRIVER_IO_PORT_USHORT_STRING
-author : windows-driver-content
-description : SvgaHwIoPortUshortString traps an I/O port range to which a full-screen MS-DOS application in an x86-based machine is sending a sequence of USHORT-sized data.
-old-location : display\svgahwioportushortstring.htm
-old-project : display
-ms.assetid : cfb8d6d9-0210-4800-979c-7c6a6bbfe633
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.svgahwioportushortstring, SvgaHwIoPortUshortString callback function [Display Devices], SvgaHwIoPortUshortString, PDRIVER_IO_PORT_USHORT_STRING, PDRIVER_IO_PORT_USHORT_STRING, video/SvgaHwIoPortUshortString, VideoMiniport_Functions_7ac011d5-6b69-4ac5-92dd-abc8f2c43740.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VHF_CONFIG, *PVHF_CONFIG
-req.product : Windows 10 or later.
+UID: NC:video.PDRIVER_IO_PORT_USHORT_STRING
+title: PDRIVER_IO_PORT_USHORT_STRING
+author: windows-driver-content
+description: SvgaHwIoPortUshortString traps an I/O port range to which a full-screen MS-DOS application in an x86-based machine is sending a sequence of USHORT-sized data.
+old-location: display\svgahwioportushortstring.htm
+old-project: display
+ms.assetid: cfb8d6d9-0210-4800-979c-7c6a6bbfe633
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.svgahwioportushortstring, SvgaHwIoPortUshortString callback function [Display Devices], SvgaHwIoPortUshortString, PDRIVER_IO_PORT_USHORT_STRING, PDRIVER_IO_PORT_USHORT_STRING, video/SvgaHwIoPortUshortString, VideoMiniport_Functions_7ac011d5-6b69-4ac5-92dd-abc8f2c43740.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	video.h
+apiname:
+-	SvgaHwIoPortUshortString
+product: Windows
+targetos: Windows
+req.typenames: VHF_CONFIG, *PVHF_CONFIG
+req.product: Windows 10 or later.
 ---
 
 

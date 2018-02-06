@@ -1,41 +1,46 @@
 ---
-UID : NS:ndkpi._NDK_PD
-title : "_NDK_PD"
-author : windows-driver-content
-description : The NDK_PD structure specifies the attributes of an NDK protection domain (PD) object.
-old-location : netvista\ndk_pd.htm
-old-project : netvista
-ms.assetid : 77D3503A-8544-4E73-AD17-56F9C8603068
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : "_NDK_PD, NDK_PD, ndkpi/NDK_PD, PNDK_PD structure pointer [Network Drivers Starting with Windows Vista], netvista.ndk_pd, PNDK_PD, NDK_PD structure [Network Drivers Starting with Windows Vista], ndkpi/PNDK_PD"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndkpi.h
-req.include-header : Ndkpi.h
-req.target-type : Windows
-req.target-min-winverclnt : None supported,Supported in NDIS 6.30 and later.
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDK_PD
+UID: NS:ndkpi._NDK_PD
+title: "_NDK_PD"
+author: windows-driver-content
+description: The NDK_PD structure specifies the attributes of an NDK protection domain (PD) object.
+old-location: netvista\ndk_pd.htm
+old-project: netvista
+ms.assetid: 77D3503A-8544-4E73-AD17-56F9C8603068
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: "_NDK_PD, NDK_PD, ndkpi/NDK_PD, PNDK_PD structure pointer [Network Drivers Starting with Windows Vista], netvista.ndk_pd, PNDK_PD, NDK_PD structure [Network Drivers Starting with Windows Vista], ndkpi/PNDK_PD"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndkpi.h
+req.include-header: Ndkpi.h
+req.target-type: Windows
+req.target-min-winverclnt: None supported,Supported in NDIS 6.30 and later.
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndkpi.h
+apiname:
+-	NDK_PD
+product: Windows
+targetos: Windows
+req.typenames: NDK_PD
 ---
 
 # _NDK_PD structure

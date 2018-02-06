@@ -1,42 +1,47 @@
 ---
-UID : NF:upssvc.UPSGetState
-title : UPSGetState function
-author : windows-driver-content
-description : The UPSGetState function returns the operational state of the UPS.
-old-location : battery\upsgetstate.htm
-old-project : battery
-ms.assetid : c60284ff-ebbd-455d-949c-e6d31ce65d5d
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : UPSGetState, UPS_fns_27023786-6c6e-43fe-96cb-0f298fec5ff1.xml, UPSGetState function [Battery Devices], battery.upsgetstate, upssvc/UPSGetState
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : upssvc.h
-req.include-header : Upssvc.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : UMDETW_ALLOCATION_USAGE
-req.product : Windows 10 or later.
+UID: NF:upssvc.UPSGetState
+title: UPSGetState function
+author: windows-driver-content
+description: The UPSGetState function returns the operational state of the UPS.
+old-location: battery\upsgetstate.htm
+old-project: battery
+ms.assetid: c60284ff-ebbd-455d-949c-e6d31ce65d5d
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: UPSGetState, UPS_fns_27023786-6c6e-43fe-96cb-0f298fec5ff1.xml, UPSGetState function [Battery Devices], battery.upsgetstate, upssvc/UPSGetState
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: upssvc.h
+req.include-header: Upssvc.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Upssvc.h
+apiname:
+-	UPSGetState
+product: Windows
+targetos: Windows
+req.typenames: UMDETW_ALLOCATION_USAGE
+req.product: Windows 10 or later.
 ---
 
 

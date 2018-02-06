@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_DXVAHD_SETVIDEOPROCESSBLTSTATE
-title : PFND3DDDI_DXVAHD_SETVIDEOPROCESSBLTSTATE
-author : windows-driver-content
-description : The SetVideoProcessBltState function sets the state of a bit-block transfer (bitblt) for a video processor.
-old-location : display\setvideoprocessbltstate.htm
-old-project : display
-ms.assetid : 6796372c-279d-427c-a2a4-9b7c99494f53
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.setvideoprocessbltstate, SetVideoProcessBltState callback function [Display Devices], SetVideoProcessBltState, PFND3DDDI_DXVAHD_SETVIDEOPROCESSBLTSTATE, PFND3DDDI_DXVAHD_SETVIDEOPROCESSBLTSTATE, d3dumddi/SetVideoProcessBltState, UserModeDisplayDriver_Functions_58620a09-f079-4bd2-8eb9-ac619d83f20d.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : SetVideoProcessBltState is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_DXVAHD_SETVIDEOPROCESSBLTSTATE
+title: PFND3DDDI_DXVAHD_SETVIDEOPROCESSBLTSTATE
+author: windows-driver-content
+description: The SetVideoProcessBltState function sets the state of a bit-block transfer (bitblt) for a video processor.
+old-location: display\setvideoprocessbltstate.htm
+old-project: display
+ms.assetid: 6796372c-279d-427c-a2a4-9b7c99494f53
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.setvideoprocessbltstate, SetVideoProcessBltState callback function [Display Devices], SetVideoProcessBltState, PFND3DDDI_DXVAHD_SETVIDEOPROCESSBLTSTATE, PFND3DDDI_DXVAHD_SETVIDEOPROCESSBLTSTATE, d3dumddi/SetVideoProcessBltState, UserModeDisplayDriver_Functions_58620a09-f079-4bd2-8eb9-ac619d83f20d.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: SetVideoProcessBltState is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	SetVideoProcessBltState
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

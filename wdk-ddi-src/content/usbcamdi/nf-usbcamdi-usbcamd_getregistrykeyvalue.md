@@ -1,42 +1,48 @@
 ---
-UID : NF:usbcamdi.USBCAMD_GetRegistryKeyValue
-title : USBCAMD_GetRegistryKeyValue function
-author : windows-driver-content
-description : The USBCAMD_GetRegistryKeyValue function retrieves the device-instance-specific registry key value.
-old-location : stream\usbcamd_getregistrykeyvalue.htm
-old-project : stream
-ms.assetid : c3512a79-884f-4f38-9942-63a4a464585c
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : usbcamdi/USBCAMD_GetRegistryKeyValue, usbcmdpr_f93ab3a6-f063-4c69-819d-1aed77b8efe6.xml, USBCAMD_GetRegistryKeyValue function [Streaming Media Devices], USBCAMD_GetRegistryKeyValue, stream.usbcamd_getregistrykeyvalue
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : usbcamdi.h
-req.include-header : Usbcamdi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Usbcamd2.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUSB_BUS_INTERFACE_USBDI_V3, USB_BUS_INTERFACE_USBDI_V3"
-req.product : Windows 10 or later.
+UID: NF:usbcamdi.USBCAMD_GetRegistryKeyValue
+title: USBCAMD_GetRegistryKeyValue function
+author: windows-driver-content
+description: The USBCAMD_GetRegistryKeyValue function retrieves the device-instance-specific registry key value.
+old-location: stream\usbcamd_getregistrykeyvalue.htm
+old-project: stream
+ms.assetid: c3512a79-884f-4f38-9942-63a4a464585c
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: usbcamdi/USBCAMD_GetRegistryKeyValue, usbcmdpr_f93ab3a6-f063-4c69-819d-1aed77b8efe6.xml, USBCAMD_GetRegistryKeyValue function [Streaming Media Devices], USBCAMD_GetRegistryKeyValue, stream.usbcamd_getregistrykeyvalue
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: usbcamdi.h
+req.include-header: Usbcamdi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Usbcamd2.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	usbcamd2.lib
+-	usbcamd2.dll
+apiname:
+-	USBCAMD_GetRegistryKeyValue
+product: Windows
+targetos: Windows
+req.typenames: "*PUSB_BUS_INTERFACE_USBDI_V3, USB_BUS_INTERFACE_USBDI_V3"
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:iscsiop._MSiSCSI_TargetMappings
-title : "_MSiSCSI_TargetMappings"
-author : windows-driver-content
-description : The MSiSCSI_TargetMappings structure contains a set of logical unit number (LUN) mappings that are associated with an initiator instance.
-old-location : storage\msiscsi_targetmappings.htm
-old-project : storage
-ms.assetid : 6bddeaeb-9913-4c90-b8ac-3a9f7b384b80
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : MSiSCSI_TargetMappings structure [Storage Devices], PMSiSCSI_TargetMappings, *PMSiSCSI_TargetMappings, storage.msiscsi_targetmappings, PMSiSCSI_TargetMappings structure pointer [Storage Devices], _MSiSCSI_TargetMappings, iscsiop/PMSiSCSI_TargetMappings, MSiSCSI_TargetMappings, structs-iSCSI_b8a3267a-8bab-4be6-9f3c-4086cc54f0f5.xml, iscsiop/MSiSCSI_TargetMappings
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : iscsiop.h
-req.include-header : Iscsiop.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PMSiSCSI_TargetMappings, MSiSCSI_TargetMappings"
+UID: NS:iscsiop._MSiSCSI_TargetMappings
+title: "_MSiSCSI_TargetMappings"
+author: windows-driver-content
+description: The MSiSCSI_TargetMappings structure contains a set of logical unit number (LUN) mappings that are associated with an initiator instance.
+old-location: storage\msiscsi_targetmappings.htm
+old-project: storage
+ms.assetid: 6bddeaeb-9913-4c90-b8ac-3a9f7b384b80
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: MSiSCSI_TargetMappings structure [Storage Devices], PMSiSCSI_TargetMappings, *PMSiSCSI_TargetMappings, storage.msiscsi_targetmappings, PMSiSCSI_TargetMappings structure pointer [Storage Devices], _MSiSCSI_TargetMappings, iscsiop/PMSiSCSI_TargetMappings, MSiSCSI_TargetMappings, structs-iSCSI_b8a3267a-8bab-4be6-9f3c-4086cc54f0f5.xml, iscsiop/MSiSCSI_TargetMappings
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: iscsiop.h
+req.include-header: Iscsiop.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	iscsiop.h
+apiname:
+-	MSiSCSI_TargetMappings
+product: Windows
+targetos: Windows
+req.typenames: "*PMSiSCSI_TargetMappings, MSiSCSI_TargetMappings"
 ---
 
 # _MSiSCSI_TargetMappings structure

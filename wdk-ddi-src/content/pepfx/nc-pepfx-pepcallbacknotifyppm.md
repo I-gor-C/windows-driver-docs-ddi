@@ -1,41 +1,46 @@
 ---
-UID : NC:pepfx.PEPCALLBACKNOTIFYPPM
-title : PEPCALLBACKNOTIFYPPM
-author : windows-driver-content
-description : An AcceptProcessorNotification event callback routine handles processor power management (PPM) notifications from the Windows power management framework (PoFx).
-old-location : kernel\acceptprocessornotification.htm
-old-project : kernel
-ms.assetid : 06A8ED06-107E-495F-8664-01477C9CF843
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.acceptprocessornotification, AcceptProcessorNotification routine [Kernel-Mode Driver Architecture], AcceptProcessorNotification, PEPCALLBACKNOTIFYPPM, PEPCALLBACKNOTIFYPPM, pepfx/AcceptProcessorNotification
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : pepfx.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with Windows 10.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL to HIGH_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VPCI_PNP_ID, *PVPCI_PNP_ID
+UID: NC:pepfx.PEPCALLBACKNOTIFYPPM
+title: PEPCALLBACKNOTIFYPPM
+author: windows-driver-content
+description: An AcceptProcessorNotification event callback routine handles processor power management (PPM) notifications from the Windows power management framework (PoFx).
+old-location: kernel\acceptprocessornotification.htm
+old-project: kernel
+ms.assetid: 06A8ED06-107E-495F-8664-01477C9CF843
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.acceptprocessornotification, AcceptProcessorNotification routine [Kernel-Mode Driver Architecture], AcceptProcessorNotification, PEPCALLBACKNOTIFYPPM, PEPCALLBACKNOTIFYPPM, pepfx/AcceptProcessorNotification
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: pepfx.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows 10.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL to HIGH_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	pepfx.h
+apiname:
+-	AcceptProcessorNotification
+product: Windows
+targetos: Windows
+req.typenames: VPCI_PNP_ID, *PVPCI_PNP_ID
 ---
 
 

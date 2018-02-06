@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFUnifiedPropertyStore.GetPropertyData
-title : IWDFUnifiedPropertyStore::GetPropertyData method
-author : windows-driver-content
-description : The GetPropertyData method retrieves the current setting for a device property.
-old-location : wdf\iwdfunifiedpropertystore_getpropertydata.htm
-old-project : wdf
-ms.assetid : 0AAEB2F1-0449-4F0E-807A-1D2420CF6858
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : IWDFUnifiedPropertyStore::GetPropertyData, wdf.iwdfunifiedpropertystore_getpropertydata, IWDFUnifiedPropertyStore, umdf.iwdfunifiedpropertystore_getpropertydata, GetPropertyData, wudfddi/IWDFUnifiedPropertyStore::GetPropertyData, GetPropertyData method, IWDFUnifiedPropertyStore interface, GetPropertyData method, IWDFUnifiedPropertyStore interface, GetPropertyData method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.11
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFUnifiedPropertyStore.GetPropertyData
+title: IWDFUnifiedPropertyStore::GetPropertyData method
+author: windows-driver-content
+description: The GetPropertyData method retrieves the current setting for a device property.
+old-location: wdf\iwdfunifiedpropertystore_getpropertydata.htm
+old-project: wdf
+ms.assetid: 0AAEB2F1-0449-4F0E-807A-1D2420CF6858
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: IWDFUnifiedPropertyStore::GetPropertyData, wdf.iwdfunifiedpropertystore_getpropertydata, IWDFUnifiedPropertyStore, umdf.iwdfunifiedpropertystore_getpropertydata, GetPropertyData, wudfddi/IWDFUnifiedPropertyStore::GetPropertyData, GetPropertyData method, IWDFUnifiedPropertyStore interface, GetPropertyData method, IWDFUnifiedPropertyStore interface, GetPropertyData method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.11
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFUnifiedPropertyStore.GetPropertyData
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NS:wwan._WWAN_CONTEXT_STATE
-title : "_WWAN_CONTEXT_STATE"
-author : windows-driver-content
-description : The WWAN_CONTEXT_STATE structure represents the Packet Data Protocol (PDP) context state of the MB device.
-old-location : netvista\wwan_context_state.htm
-old-project : netvista
-ms.assetid : 0b2a2a94-6c1a-439f-8d54-cc43e79b3b15
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.wwan_context_state, *PWWAN_CONTEXT_STATE, WWAN_CONTEXT_STATE structure [Network Drivers Starting with Windows Vista], WWAN_CONTEXT_STATE, PWWAN_CONTEXT_STATE structure pointer [Network Drivers Starting with Windows Vista], _WWAN_CONTEXT_STATE, wwan/WWAN_CONTEXT_STATE, WwanRef_ff03afab-0fc4-4469-8a2d-f5d2a770f08d.xml, PWWAN_CONTEXT_STATE, wwan/PWWAN_CONTEXT_STATE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wwan.h
-req.include-header : Wwan.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 8 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWWAN_CONTEXT_STATE, WWAN_CONTEXT_STATE"
-req.product : Windows 10 or later.
+UID: NS:wwan._WWAN_CONTEXT_STATE
+title: "_WWAN_CONTEXT_STATE"
+author: windows-driver-content
+description: The WWAN_CONTEXT_STATE structure represents the Packet Data Protocol (PDP) context state of the MB device.
+old-location: netvista\wwan_context_state.htm
+old-project: netvista
+ms.assetid: 0b2a2a94-6c1a-439f-8d54-cc43e79b3b15
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.wwan_context_state, *PWWAN_CONTEXT_STATE, WWAN_CONTEXT_STATE structure [Network Drivers Starting with Windows Vista], WWAN_CONTEXT_STATE, PWWAN_CONTEXT_STATE structure pointer [Network Drivers Starting with Windows Vista], _WWAN_CONTEXT_STATE, wwan/WWAN_CONTEXT_STATE, WwanRef_ff03afab-0fc4-4469-8a2d-f5d2a770f08d.xml, PWWAN_CONTEXT_STATE, wwan/PWWAN_CONTEXT_STATE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wwan.h
+req.include-header: Wwan.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 8 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wwan.h
+apiname:
+-	WWAN_CONTEXT_STATE
+product: Windows
+targetos: Windows
+req.typenames: "*PWWAN_CONTEXT_STATE, WWAN_CONTEXT_STATE"
+req.product: Windows 10 or later.
 ---
 
 # _WWAN_CONTEXT_STATE structure

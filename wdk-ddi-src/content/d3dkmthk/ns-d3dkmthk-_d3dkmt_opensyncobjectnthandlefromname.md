@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmthk._D3DKMT_OPENSYNCOBJECTNTHANDLEFROMNAME
-title : "_D3DKMT_OPENSYNCOBJECTNTHANDLEFROMNAME"
-author : windows-driver-content
-description : D3DKMT_OPENSYNCOBJECTNTHANDLEFROMNAME is used with D3DKMTOpenSyncObjectNtHandleFromName to open an NT handle for a named shared monitored fence object.
-old-location : display\d3dkmt_opensyncobjectnthandlefromname.htm
-old-project : display
-ms.assetid : 6435D3B7-A1B7-4417-8272-C505A5FA500E
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DKMT_OPENSYNCOBJECTNTHANDLEFROMNAME structure [Display Devices], d3dkmthk/D3DKMT_OPENSYNCOBJECTNTHANDLEFROMNAME, _D3DKMT_OPENSYNCOBJECTNTHANDLEFROMNAME, display.d3dkmt_opensyncobjectnthandlefromname, D3DKMT_OPENSYNCOBJECTNTHANDLEFROMNAME
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_OPENSYNCOBJECTNTHANDLEFROMNAME
+UID: NS:d3dkmthk._D3DKMT_OPENSYNCOBJECTNTHANDLEFROMNAME
+title: "_D3DKMT_OPENSYNCOBJECTNTHANDLEFROMNAME"
+author: windows-driver-content
+description: D3DKMT_OPENSYNCOBJECTNTHANDLEFROMNAME is used with D3DKMTOpenSyncObjectNtHandleFromName to open an NT handle for a named shared monitored fence object.
+old-location: display\d3dkmt_opensyncobjectnthandlefromname.htm
+old-project: display
+ms.assetid: 6435D3B7-A1B7-4417-8272-C505A5FA500E
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DKMT_OPENSYNCOBJECTNTHANDLEFROMNAME structure [Display Devices], d3dkmthk/D3DKMT_OPENSYNCOBJECTNTHANDLEFROMNAME, _D3DKMT_OPENSYNCOBJECTNTHANDLEFROMNAME, display.d3dkmt_opensyncobjectnthandlefromname, D3DKMT_OPENSYNCOBJECTNTHANDLEFROMNAME
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	D3dkmthk.h
+apiname:
+-	D3DKMT_OPENSYNCOBJECTNTHANDLEFROMNAME
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_OPENSYNCOBJECTNTHANDLEFROMNAME
 ---
 
 # _D3DKMT_OPENSYNCOBJECTNTHANDLEFROMNAME structure

@@ -1,42 +1,47 @@
 ---
-UID : NS:ucmtcpciportcontroller._UCMTCPCI_PORT_CONTROLLER_CONFIG
-title : "_UCMTCPCI_PORT_CONTROLLER_CONFIG"
-author : windows-driver-content
-description : Contains configuration options for the port controller object, passed by the client driver in the call to UcmTcpciPortControllerCreate. Call UCMTCPCI_PORT_CONTROLLER_CONFIG_INIT to initialize this structure.
-old-location : buses\ucmtcpci_port_controller_config.htm
-old-project : usbref
-ms.assetid : a9027cda-0851-46e2-9006-0d757109fc3a
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ucmtcpciportcontroller/UCMTCPCI_PORT_CONTROLLER_CONFIG, ucmtcpciportcontroller/PUCMTCPCI_PORT_CONTROLLER_CONFIG, _UCMTCPCI_PORT_CONTROLLER_CONFIG, buses.ucmtcpci_port_controller_config, *PUCMTCPCI_PORT_CONTROLLER_CONFIG, PUCMTCPCI_PORT_CONTROLLER_CONFIG, UCMTCPCI_PORT_CONTROLLER_CONFIG, PUCMTCPCI_PORT_CONTROLLER_CONFIG structure pointer [Buses], UCMTCPCI_PORT_CONTROLLER_CONFIG structure [Buses]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ucmtcpciportcontroller.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUCMTCPCI_PORT_CONTROLLER_CONFIG, UCMTCPCI_PORT_CONTROLLER_CONFIG"
-req.product : Windows 10 or later.
+UID: NS:ucmtcpciportcontroller._UCMTCPCI_PORT_CONTROLLER_CONFIG
+title: "_UCMTCPCI_PORT_CONTROLLER_CONFIG"
+author: windows-driver-content
+description: Contains configuration options for the port controller object, passed by the client driver in the call to UcmTcpciPortControllerCreate. Call UCMTCPCI_PORT_CONTROLLER_CONFIG_INIT to initialize this structure.
+old-location: buses\ucmtcpci_port_controller_config.htm
+old-project: usbref
+ms.assetid: a9027cda-0851-46e2-9006-0d757109fc3a
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ucmtcpciportcontroller/UCMTCPCI_PORT_CONTROLLER_CONFIG, ucmtcpciportcontroller/PUCMTCPCI_PORT_CONTROLLER_CONFIG, _UCMTCPCI_PORT_CONTROLLER_CONFIG, buses.ucmtcpci_port_controller_config, *PUCMTCPCI_PORT_CONTROLLER_CONFIG, PUCMTCPCI_PORT_CONTROLLER_CONFIG, UCMTCPCI_PORT_CONTROLLER_CONFIG, PUCMTCPCI_PORT_CONTROLLER_CONFIG structure pointer [Buses], UCMTCPCI_PORT_CONTROLLER_CONFIG structure [Buses]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ucmtcpciportcontroller.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ucmtcpciportcontroller.h
+apiname:
+-	UCMTCPCI_PORT_CONTROLLER_CONFIG
+product: Windows
+targetos: Windows
+req.typenames: "*PUCMTCPCI_PORT_CONTROLLER_CONFIG, UCMTCPCI_PORT_CONTROLLER_CONFIG"
+req.product: Windows 10 or later.
 ---
 
 # _UCMTCPCI_PORT_CONTROLLER_CONFIG structure

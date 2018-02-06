@@ -1,42 +1,47 @@
 ---
-UID : NF:wiamdef.wiasWritePropBin
-title : wiasWritePropBin function
-author : windows-driver-content
-description : The wiasWritePropBin function writes a single binary-data property value to a WIA item.
-old-location : image\wiaswritepropbin.htm
-old-project : image
-ms.assetid : 953a43dd-1cab-442b-9d77-f310805166ee
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : wiasWritePropBin, wiasWritePropBin function [Imaging Devices], wiasFncs_fa38d5cc-94dd-4a1f-9e24-e12c42ce0429.xml, image.wiaswritepropbin, wiamdef/wiasWritePropBin
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wiamdef.h
-req.include-header : Wiamdef.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wiaservc.lib
-req.dll : Wiaservc.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*LPDEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2, DEVICEDIALOGDATA2"
-req.product : Windows 10 or later.
+UID: NF:wiamdef.wiasWritePropBin
+title: wiasWritePropBin function
+author: windows-driver-content
+description: The wiasWritePropBin function writes a single binary-data property value to a WIA item.
+old-location: image\wiaswritepropbin.htm
+old-project: image
+ms.assetid: 953a43dd-1cab-442b-9d77-f310805166ee
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: wiasWritePropBin, wiasWritePropBin function [Imaging Devices], wiasFncs_fa38d5cc-94dd-4a1f-9e24-e12c42ce0429.xml, image.wiaswritepropbin, wiamdef/wiasWritePropBin
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wiamdef.h
+req.include-header: Wiamdef.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Microsoft Windows Me and in Windows XP and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wiaservc.lib
+req.dll: Wiaservc.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Wiaservc.dll
+apiname:
+-	wiasWritePropBin
+product: Windows
+targetos: Windows
+req.typenames: "*LPDEVICEDIALOGDATA2, *PDEVICEDIALOGDATA2, DEVICEDIALOGDATA2"
+req.product: Windows 10 or later.
 ---
 
 

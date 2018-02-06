@@ -1,41 +1,46 @@
 ---
-UID : NC:ndis.NDIS_SWITCH_COPY_NET_BUFFER_LIST_INFO
-title : NDIS_SWITCH_COPY_NET_BUFFER_LIST_INFO
-author : windows-driver-content
-description : The Hyper-V extensible switch extension calls the CopyNetBufferListInfo function to copy the out-of-band (OOB) forwarding context from a source packet's NET_BUFFER_LIST structure to a destination packet's NET_BUFFER_LIST structure.
-old-location : netvista\CopyNetBufferListInfo.htm
-old-project : netvista
-ms.assetid : 5CC345FA-C3EF-4122-8E9C-6EA27B20DD5A
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.CopyNetBufferListInfo, CopyNetBufferListInfo callback function [Network Drivers Starting with Windows Vista], CopyNetBufferListInfo, NDIS_SWITCH_COPY_NET_BUFFER_LIST_INFO, NDIS_SWITCH_COPY_NET_BUFFER_LIST_INFO, ndis/CopyNetBufferListInfo
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported in NDIS 6.30 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
+UID: NC:ndis.NDIS_SWITCH_COPY_NET_BUFFER_LIST_INFO
+title: NDIS_SWITCH_COPY_NET_BUFFER_LIST_INFO
+author: windows-driver-content
+description: The Hyper-V extensible switch extension calls the CopyNetBufferListInfo function to copy the out-of-band (OOB) forwarding context from a source packet's NET_BUFFER_LIST structure to a destination packet's NET_BUFFER_LIST structure.
+old-location: netvista\CopyNetBufferListInfo.htm
+old-project: netvista
+ms.assetid: 5CC345FA-C3EF-4122-8E9C-6EA27B20DD5A
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.CopyNetBufferListInfo, CopyNetBufferListInfo callback function [Network Drivers Starting with Windows Vista], CopyNetBufferListInfo, NDIS_SWITCH_COPY_NET_BUFFER_LIST_INFO, NDIS_SWITCH_COPY_NET_BUFFER_LIST_INFO, ndis/CopyNetBufferListInfo
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported in NDIS 6.30 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ndis.h
+apiname:
+-	CopyNetBufferListInfo
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 ---
 
 

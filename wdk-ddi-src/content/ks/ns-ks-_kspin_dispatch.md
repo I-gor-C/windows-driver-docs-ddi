@@ -1,41 +1,46 @@
 ---
-UID : NS:ks._KSPIN_DISPATCH
-title : "_KSPIN_DISPATCH"
-author : windows-driver-content
-description : The KSPIN_DISPATCH structure describes the callbacks for which clients can register in order to receive notification of pin events.
-old-location : stream\kspin_dispatch.htm
-old-project : stream
-ms.assetid : 6c4aea1f-e788-49c7-91c0-831c87c6fd39
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : "*PKSPIN_DISPATCH, KSPIN_DISPATCH, PKSPIN_DISPATCH structure pointer [Streaming Media Devices], KSPIN_DISPATCH structure [Streaming Media Devices], PKSPIN_DISPATCH, ks/PKSPIN_DISPATCH, avstruct_2ef1e08b-327f-476c-9c0b-804582f67815.xml, stream.kspin_dispatch, ks/KSPIN_DISPATCH, _KSPIN_DISPATCH"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and in Microsoft DirectX 8.0 and later versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KSPIN_DISPATCH, *PKSPIN_DISPATCH
+UID: NS:ks._KSPIN_DISPATCH
+title: "_KSPIN_DISPATCH"
+author: windows-driver-content
+description: The KSPIN_DISPATCH structure describes the callbacks for which clients can register in order to receive notification of pin events.
+old-location: stream\kspin_dispatch.htm
+old-project: stream
+ms.assetid: 6c4aea1f-e788-49c7-91c0-831c87c6fd39
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: "*PKSPIN_DISPATCH, KSPIN_DISPATCH, PKSPIN_DISPATCH structure pointer [Streaming Media Devices], KSPIN_DISPATCH structure [Streaming Media Devices], PKSPIN_DISPATCH, ks/PKSPIN_DISPATCH, avstruct_2ef1e08b-327f-476c-9c0b-804582f67815.xml, stream.kspin_dispatch, ks/KSPIN_DISPATCH, _KSPIN_DISPATCH"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and in Microsoft DirectX 8.0 and later versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	KSPIN_DISPATCH
+product: Windows
+targetos: Windows
+req.typenames: KSPIN_DISPATCH, *PKSPIN_DISPATCH
 ---
 
 # _KSPIN_DISPATCH structure

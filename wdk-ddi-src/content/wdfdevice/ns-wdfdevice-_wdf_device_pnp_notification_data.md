@@ -1,42 +1,47 @@
 ---
-UID : NS:wdfdevice._WDF_DEVICE_PNP_NOTIFICATION_DATA
-title : "_WDF_DEVICE_PNP_NOTIFICATION_DATA"
-author : windows-driver-content
-description : The WDF_DEVICE_PNP_NOTIFICATION_DATA structure describes a state change within a device's Plug and Play state machine.
-old-location : wdf\wdf_device_pnp_notification_data.htm
-old-project : wdf
-ms.assetid : b49431bf-4b44-4d7b-b3a6-c3d7416bcb53
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WDF_DEVICE_PNP_NOTIFICATION_DATA, wdfdevice/WDF_DEVICE_PNP_NOTIFICATION_DATA, _WDF_DEVICE_PNP_NOTIFICATION_DATA, wdf.wdf_device_pnp_notification_data, WDF_DEVICE_PNP_NOTIFICATION_DATA structure, kmdf.wdf_device_pnp_notification_data, DFDeviceObjectGeneralRef_92c66935-afca-4567-bc55-cb3e3822201e.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdfdevice.h
-req.include-header : Wdf.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_DEVICE_PNP_NOTIFICATION_DATA
-req.product : Windows 10 or later.
+UID: NS:wdfdevice._WDF_DEVICE_PNP_NOTIFICATION_DATA
+title: "_WDF_DEVICE_PNP_NOTIFICATION_DATA"
+author: windows-driver-content
+description: The WDF_DEVICE_PNP_NOTIFICATION_DATA structure describes a state change within a device's Plug and Play state machine.
+old-location: wdf\wdf_device_pnp_notification_data.htm
+old-project: wdf
+ms.assetid: b49431bf-4b44-4d7b-b3a6-c3d7416bcb53
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WDF_DEVICE_PNP_NOTIFICATION_DATA, wdfdevice/WDF_DEVICE_PNP_NOTIFICATION_DATA, _WDF_DEVICE_PNP_NOTIFICATION_DATA, wdf.wdf_device_pnp_notification_data, WDF_DEVICE_PNP_NOTIFICATION_DATA structure, kmdf.wdf_device_pnp_notification_data, DFDeviceObjectGeneralRef_92c66935-afca-4567-bc55-cb3e3822201e.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdfdevice.h
+req.include-header: Wdf.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfdevice.h
+apiname:
+-	WDF_DEVICE_PNP_NOTIFICATION_DATA
+product: Windows
+targetos: Windows
+req.typenames: WDF_DEVICE_PNP_NOTIFICATION_DATA
+req.product: Windows 10 or later.
 ---
 
 # _WDF_DEVICE_PNP_NOTIFICATION_DATA structure

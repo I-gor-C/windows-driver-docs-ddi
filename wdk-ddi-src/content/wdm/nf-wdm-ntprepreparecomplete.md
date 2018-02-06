@@ -1,42 +1,48 @@
 ---
-UID : NF:wdm.NtPrePrepareComplete
-title : NtPrePrepareComplete function
-author : windows-driver-content
-description : The ZwPrePrepareComplete routine notifies KTM that the calling resource manager has finished preliminary preparation of a transaction's data.
-old-location : kernel\zwprepreparecomplete.htm
-old-project : kernel
-ms.assetid : 1af8dc98-9fee-4029-970f-462fdf80fdc9
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.zwprepreparecomplete, ZwPrePrepareComplete routine [Kernel-Mode Driver Architecture], wdm/NtPrePrepareComplete, wdm/ZwPrePrepareComplete, ktm_ref_f34acd5c-6983-4f8a-86ca-968dde152526.xml, NtPrePrepareComplete, ZwPrePrepareComplete
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later operating system versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.NtPrePrepareComplete
+title: NtPrePrepareComplete function
+author: windows-driver-content
+description: The ZwPrePrepareComplete routine notifies KTM that the calling resource manager has finished preliminary preparation of a transaction's data.
+old-location: kernel\zwprepreparecomplete.htm
+old-project: kernel
+ms.assetid: 1af8dc98-9fee-4029-970f-462fdf80fdc9
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.zwprepreparecomplete, ZwPrePrepareComplete routine [Kernel-Mode Driver Architecture], wdm/NtPrePrepareComplete, wdm/ZwPrePrepareComplete, ktm_ref_f34acd5c-6983-4f8a-86ca-968dde152526.xml, NtPrePrepareComplete, ZwPrePrepareComplete
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later operating system versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ZwPrePrepareComplete
+-	NtPrePrepareComplete
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

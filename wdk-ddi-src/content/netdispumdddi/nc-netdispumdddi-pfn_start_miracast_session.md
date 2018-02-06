@@ -1,41 +1,46 @@
 ---
-UID : NC:netdispumdddi.PFN_START_MIRACAST_SESSION
-title : PFN_START_MIRACAST_SESSION
-author : windows-driver-content
-description : Called by the operating system to start a Miracast connected session.
-old-location : display\startmiracastsession.htm
-old-project : display
-ms.assetid : 2778d9d0-7f97-416f-a5ae-3754b17e8a29
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.startmiracastsession, StartMiracastSession callback function [Display Devices], StartMiracastSession, PFN_START_MIRACAST_SESSION, PFN_START_MIRACAST_SESSION, netdispumdddi/StartMiracastSession
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : netdispumdddi.h
-req.include-header : Netdispumdddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8.1
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDK_SRQ_DISPATCH
+UID: NC:netdispumdddi.PFN_START_MIRACAST_SESSION
+title: PFN_START_MIRACAST_SESSION
+author: windows-driver-content
+description: Called by the operating system to start a Miracast connected session.
+old-location: display\startmiracastsession.htm
+old-project: display
+ms.assetid: 2778d9d0-7f97-416f-a5ae-3754b17e8a29
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.startmiracastsession, StartMiracastSession callback function [Display Devices], StartMiracastSession, PFN_START_MIRACAST_SESSION, PFN_START_MIRACAST_SESSION, netdispumdddi/StartMiracastSession
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: netdispumdddi.h
+req.include-header: Netdispumdddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8.1
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Netdispumdddi.h
+apiname:
+-	StartMiracastSession
+product: Windows
+targetos: Windows
+req.typenames: NDK_SRQ_DISPATCH
 ---
 
 

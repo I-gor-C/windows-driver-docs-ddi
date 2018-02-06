@@ -1,41 +1,47 @@
 ---
-UID : NF:hidpi.HidP_GetCaps
-title : HidP_GetCaps function
-author : windows-driver-content
-description : The HidP_GetCaps routine returns a top-level collection's HIDP_CAPS structure.
-old-location : hid\hidp_getcaps.htm
-old-project : hid
-ms.assetid : a43baab5-26d9-43f7-bc13-3b0864769e68
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : HidP_GetCaps routine [Human Input Devices], HidP_GetCaps, hid.hidp_getcaps, hidfunc_420188e5-e357-43cc-b195-dea7637fd3c9.xml, hidpi/HidP_GetCaps
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : hidpi.h
-req.include-header : Hidpi.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 2000 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Hidparse.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HIDP_REPORT_TYPE
+UID: NF:hidpi.HidP_GetCaps
+title: HidP_GetCaps function
+author: windows-driver-content
+description: The HidP_GetCaps routine returns a top-level collection's HIDP_CAPS structure.
+old-location: hid\hidp_getcaps.htm
+old-project: hid
+ms.assetid: a43baab5-26d9-43f7-bc13-3b0864769e68
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: HidP_GetCaps routine [Human Input Devices], HidP_GetCaps, hid.hidp_getcaps, hidfunc_420188e5-e357-43cc-b195-dea7637fd3c9.xml, hidpi/HidP_GetCaps
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: hidpi.h
+req.include-header: Hidpi.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 2000 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Hidparse.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Hidparse.lib
+-	Hidparse.dll
+apiname:
+-	HidP_GetCaps
+product: Windows
+targetos: Windows
+req.typenames: HIDP_REPORT_TYPE
 ---
 
 

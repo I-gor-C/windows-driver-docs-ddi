@@ -1,42 +1,50 @@
 ---
-UID : NF:wdfdevice.WdfDeviceGetIoTarget
-title : WdfDeviceGetIoTarget function
-author : windows-driver-content
-description : The WdfDeviceGetIoTarget method returns a handle to a function or filter driver's local I/O target, for a specified device.
-old-location : wdf\wdfdevicegetiotarget.htm
-old-project : wdf
-ms.assetid : a0749324-8b4e-4b82-8c51-b1b8883d521e
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : DFDeviceObjectGeneralRef_df48e631-f54d-4985-bc74-05c220b735f5.xml, kmdf.wdfdevicegetiotarget, WdfDeviceGetIoTarget method, wdfdevice/WdfDeviceGetIoTarget, PFN_WDFDEVICEGETIOTARGET, wdf.wdfdevicegetiotarget, WdfDeviceGetIoTarget
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfdevice.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_STATE_NOTIFICATION_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfdevice.WdfDeviceGetIoTarget
+title: WdfDeviceGetIoTarget function
+author: windows-driver-content
+description: The WdfDeviceGetIoTarget method returns a handle to a function or filter driver's local I/O target, for a specified device.
+old-location: wdf\wdfdevicegetiotarget.htm
+old-project: wdf
+ms.assetid: a0749324-8b4e-4b82-8c51-b1b8883d521e
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: DFDeviceObjectGeneralRef_df48e631-f54d-4985-bc74-05c220b735f5.xml, kmdf.wdfdevicegetiotarget, WdfDeviceGetIoTarget method, wdfdevice/WdfDeviceGetIoTarget, PFN_WDFDEVICEGETIOTARGET, wdf.wdfdevicegetiotarget, WdfDeviceGetIoTarget
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfdevice.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+-	WUDFx02000.dll
+-	WUDFx02000.dll.dll
+apiname:
+-	WdfDeviceGetIoTarget
+product: Windows
+targetos: Windows
+req.typenames: WDF_STATE_NOTIFICATION_TYPE
+req.product: Windows 10 or later.
 ---
 
 

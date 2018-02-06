@@ -1,42 +1,47 @@
 ---
-UID : NS:windot11._DOT11_AVAILABLE_CHANNEL_LIST
-title : "_DOT11_AVAILABLE_CHANNEL_LIST"
-author : windows-driver-content
-description : Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
-old-location : netvista\dot11_available_channel_list.htm
-old-project : netvista
-ms.assetid : 11fee366-5853-4702-8179-d5b764174dce
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : Native_802.11_data_types_c36ff4d6-283a-484c-8d68-0109c6150f4f.xml, DOT11_AVAILABLE_CHANNEL_LIST structure [Network Drivers Starting with Windows Vista], windot11/DOT11_AVAILABLE_CHANNEL_LIST, *PDOT11_AVAILABLE_CHANNEL_LIST, _DOT11_AVAILABLE_CHANNEL_LIST, netvista.dot11_available_channel_list, DOT11_AVAILABLE_CHANNEL_LIST, PDOT11_AVAILABLE_CHANNEL_LIST, windot11/PDOT11_AVAILABLE_CHANNEL_LIST, PDOT11_AVAILABLE_CHANNEL_LIST structure pointer [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : windot11.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7 and later versions of the Windows operating   systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT11_AVAILABLE_CHANNEL_LIST, *PDOT11_AVAILABLE_CHANNEL_LIST
-req.product : Windows 10 or later.
+UID: NS:windot11._DOT11_AVAILABLE_CHANNEL_LIST
+title: "_DOT11_AVAILABLE_CHANNEL_LIST"
+author: windows-driver-content
+description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+old-location: netvista\dot11_available_channel_list.htm
+old-project: netvista
+ms.assetid: 11fee366-5853-4702-8179-d5b764174dce
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: Native_802.11_data_types_c36ff4d6-283a-484c-8d68-0109c6150f4f.xml, DOT11_AVAILABLE_CHANNEL_LIST structure [Network Drivers Starting with Windows Vista], windot11/DOT11_AVAILABLE_CHANNEL_LIST, *PDOT11_AVAILABLE_CHANNEL_LIST, _DOT11_AVAILABLE_CHANNEL_LIST, netvista.dot11_available_channel_list, DOT11_AVAILABLE_CHANNEL_LIST, PDOT11_AVAILABLE_CHANNEL_LIST, windot11/PDOT11_AVAILABLE_CHANNEL_LIST, PDOT11_AVAILABLE_CHANNEL_LIST structure pointer [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: windot11.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7 and later versions of the Windows operating   systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	windot11.h
+apiname:
+-	DOT11_AVAILABLE_CHANNEL_LIST
+product: Windows
+targetos: Windows
+req.typenames: DOT11_AVAILABLE_CHANNEL_LIST, *PDOT11_AVAILABLE_CHANNEL_LIST
+req.product: Windows 10 or later.
 ---
 
 # _DOT11_AVAILABLE_CHANNEL_LIST structure

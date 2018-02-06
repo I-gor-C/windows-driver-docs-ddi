@@ -1,41 +1,46 @@
 ---
-UID : NF:filterpipeline.IInterFilterCommunicator.RequestReader
-title : IInterFilterCommunicator::RequestReader method
-author : windows-driver-content
-description : The RequestReader method retrieves the reader interface for an IInterFilterCommunicator object.
-old-location : print\iinterfiltercommunicator_requestreader.htm
-old-project : print
-ms.assetid : 2b38b1b7-0d65-4457-bc7d-c52ff11aba48
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : IInterFilterCommunicator::RequestReader, RequestReader, print.iinterfiltercommunicator_requestreader, IInterFilterCommunicator interface [Print Devices], RequestReader method, RequestReader method [Print Devices], IInterFilterCommunicator interface, filterpipeline/IInterFilterCommunicator::RequestReader, filterpipeline_dba6ebe4-7acb-471e-80e4-cedc8c2523b0.xml, IInterFilterCommunicator, RequestReader method [Print Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : filterpipeline.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : Filterpipeline.idl
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : filterpipeline.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:filterpipeline.IInterFilterCommunicator.RequestReader
+title: IInterFilterCommunicator::RequestReader method
+author: windows-driver-content
+description: The RequestReader method retrieves the reader interface for an IInterFilterCommunicator object.
+old-location: print\iinterfiltercommunicator_requestreader.htm
+old-project: print
+ms.assetid: 2b38b1b7-0d65-4457-bc7d-c52ff11aba48
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: IInterFilterCommunicator::RequestReader, RequestReader, print.iinterfiltercommunicator_requestreader, IInterFilterCommunicator interface [Print Devices], RequestReader method, RequestReader method [Print Devices], IInterFilterCommunicator interface, filterpipeline/IInterFilterCommunicator::RequestReader, filterpipeline_dba6ebe4-7acb-471e-80e4-cedc8c2523b0.xml, IInterFilterCommunicator, RequestReader method [Print Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: filterpipeline.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: Filterpipeline.idl
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: filterpipeline.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	filterpipeline.h
+apiname:
+-	IInterFilterCommunicator.RequestReader
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

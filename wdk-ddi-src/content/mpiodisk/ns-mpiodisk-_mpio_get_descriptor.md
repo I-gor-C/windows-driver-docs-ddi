@@ -1,41 +1,46 @@
 ---
-UID : NS:mpiodisk._MPIO_GET_DESCRIPTOR
-title : "_MPIO_GET_DESCRIPTOR"
-author : windows-driver-content
-description : The MPIO_GET_DESCRIPTOR structure is used to query for LUN instances that correspond to various paths.
-old-location : storage\mpio_get_descriptor.htm
-old-project : storage
-ms.assetid : cabd2a6d-20d0-4499-8494-7ad746f2d915
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.mpio_get_descriptor, *PMPIO_GET_DESCRIPTOR, mpiodisk/MPIO_GET_DESCRIPTOR, MPIO_GET_DESCRIPTOR, structs-scsibus_4d648295-24f6-44c1-a0a9-8a46aeada604.xml, mpiodisk/PMPIO_GET_DESCRIPTOR, _MPIO_GET_DESCRIPTOR, MPIO_GET_DESCRIPTOR structure [Storage Devices], PMPIO_GET_DESCRIPTOR structure pointer [Storage Devices], PMPIO_GET_DESCRIPTOR
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : mpiodisk.h
-req.include-header : Mpiowmi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PMPIO_GET_DESCRIPTOR, MPIO_GET_DESCRIPTOR"
+UID: NS:mpiodisk._MPIO_GET_DESCRIPTOR
+title: "_MPIO_GET_DESCRIPTOR"
+author: windows-driver-content
+description: The MPIO_GET_DESCRIPTOR structure is used to query for LUN instances that correspond to various paths.
+old-location: storage\mpio_get_descriptor.htm
+old-project: storage
+ms.assetid: cabd2a6d-20d0-4499-8494-7ad746f2d915
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.mpio_get_descriptor, *PMPIO_GET_DESCRIPTOR, mpiodisk/MPIO_GET_DESCRIPTOR, MPIO_GET_DESCRIPTOR, structs-scsibus_4d648295-24f6-44c1-a0a9-8a46aeada604.xml, mpiodisk/PMPIO_GET_DESCRIPTOR, _MPIO_GET_DESCRIPTOR, MPIO_GET_DESCRIPTOR structure [Storage Devices], PMPIO_GET_DESCRIPTOR structure pointer [Storage Devices], PMPIO_GET_DESCRIPTOR
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: mpiodisk.h
+req.include-header: Mpiowmi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	mpiodisk.h
+apiname:
+-	MPIO_GET_DESCRIPTOR
+product: Windows
+targetos: Windows
+req.typenames: "*PMPIO_GET_DESCRIPTOR, MPIO_GET_DESCRIPTOR"
 ---
 
 # _MPIO_GET_DESCRIPTOR structure

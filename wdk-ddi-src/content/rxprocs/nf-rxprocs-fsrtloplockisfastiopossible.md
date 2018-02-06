@@ -1,42 +1,47 @@
 ---
-UID : NF:rxprocs.FsRtlOplockIsFastIoPossible
-title : FsRtlOplockIsFastIoPossible macro
-author : windows-driver-content
-description : FsRtlOplockIsFastIoPossible checks a file's opportunistic lock (oplock) state to determine whether fast I/O can be performed on the file.
-old-location : ifsk\fsrtloplockisfastiopossible.htm
-old-project : ifsk
-ms.assetid : ba482fbf-862c-48b4-b8f9-aaab6c5527ee
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : rxprocs/FsRtlOplockIsFastIoPossible, FsRtlOplockIsFastIoPossible, ifsk.fsrtloplockisfastiopossible, FsRtlOplockIsFastIoPossible function [Installable File System Drivers], fsrtlref_94131dc4-e2ee-4ec0-92b9-39cd8a7d6e41.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : macro
-req.header : rxprocs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RX_CONTEXT, *PRX_CONTEXT
-req.product : Windows 10 or later.
+UID: NF:rxprocs.FsRtlOplockIsFastIoPossible
+title: FsRtlOplockIsFastIoPossible macro
+author: windows-driver-content
+description: FsRtlOplockIsFastIoPossible checks a file's opportunistic lock (oplock) state to determine whether fast I/O can be performed on the file.
+old-location: ifsk\fsrtloplockisfastiopossible.htm
+old-project: ifsk
+ms.assetid: ba482fbf-862c-48b4-b8f9-aaab6c5527ee
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: rxprocs/FsRtlOplockIsFastIoPossible, FsRtlOplockIsFastIoPossible, ifsk.fsrtloplockisfastiopossible, FsRtlOplockIsFastIoPossible function [Installable File System Drivers], fsrtlref_94131dc4-e2ee-4ec0-92b9-39cd8a7d6e41.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: macro
+req.header: rxprocs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	FsRtlOplockIsFastIoPossible
+product: Windows
+targetos: Windows
+req.typenames: RX_CONTEXT, *PRX_CONTEXT
+req.product: Windows 10 or later.
 ---
 
 

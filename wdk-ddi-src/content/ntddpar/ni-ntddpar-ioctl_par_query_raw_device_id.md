@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddpar.IOCTL_PAR_QUERY_RAW_DEVICE_ID
-title : IOCTL_PAR_QUERY_RAW_DEVICE_ID
-author : windows-driver-content
-description : The IOCTL_PAR_QUERY_RAW_DEVICE_ID request returns a raw device ID, which includes the following:\_a two-byte prefix that specifies the size, in bytes, of the device's IEEE 1284 device ID; the IEEE 1284 device ID; and a NULL terminator.
-old-location : parports\ioctl_par_query_raw_device_id.htm
-old-project : parports
-ms.assetid : 3d7b99ea-eb53-4466-bd98-15c147c00d35
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : parports.ioctl_par_query_raw_device_id, IOCTL_PAR_QUERY_RAW_DEVICE_ID control code [Parallel Ports], IOCTL_PAR_QUERY_RAW_DEVICE_ID, ntddpar/IOCTL_PAR_QUERY_RAW_DEVICE_ID, cisspd_422dd85c-1d22-4968-9b4c-fd1ef03432e5.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddpar.h
-req.include-header : Ntddpar.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*POFFLOAD_SECURITY_ASSOCIATION, OFFLOAD_SECURITY_ASSOCIATION"
+UID: NI:ntddpar.IOCTL_PAR_QUERY_RAW_DEVICE_ID
+title: IOCTL_PAR_QUERY_RAW_DEVICE_ID
+author: windows-driver-content
+description: The IOCTL_PAR_QUERY_RAW_DEVICE_ID request returns a raw device ID, which includes the following:\_a two-byte prefix that specifies the size, in bytes, of the device's IEEE 1284 device ID; the IEEE 1284 device ID; and a NULL terminator.
+old-location: parports\ioctl_par_query_raw_device_id.htm
+old-project: parports
+ms.assetid: 3d7b99ea-eb53-4466-bd98-15c147c00d35
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: parports.ioctl_par_query_raw_device_id, IOCTL_PAR_QUERY_RAW_DEVICE_ID control code [Parallel Ports], IOCTL_PAR_QUERY_RAW_DEVICE_ID, ntddpar/IOCTL_PAR_QUERY_RAW_DEVICE_ID, cisspd_422dd85c-1d22-4968-9b4c-fd1ef03432e5.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddpar.h
+req.include-header: Ntddpar.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddpar.h
+apiname:
+-	IOCTL_PAR_QUERY_RAW_DEVICE_ID
+product: Windows
+targetos: Windows
+req.typenames: "*POFFLOAD_SECURITY_ASSOCIATION, OFFLOAD_SECURITY_ASSOCIATION"
 ---
 
 # IOCTL_PAR_QUERY_RAW_DEVICE_ID IOCTL

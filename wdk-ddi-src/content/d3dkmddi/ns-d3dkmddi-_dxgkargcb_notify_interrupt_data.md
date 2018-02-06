@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGKARGCB_NOTIFY_INTERRUPT_DATA
-title : "_DXGKARGCB_NOTIFY_INTERRUPT_DATA"
-author : windows-driver-content
-description : The DXGKARGCB_NOTIFY_INTERRUPT_DATA structure describes notification information.
-old-location : display\dxgkargcb_notify_interrupt_data.htm
-old-project : display
-ms.assetid : c71078fb-5666-4038-81a0-de9375bafb5c
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DmStructs_071ed85c-70d6-44d8-95e3-7f6609331f4f.xml, _DXGKARGCB_NOTIFY_INTERRUPT_DATA, *IN_CONST_PDXGKARGCB_NOTIFY_INTERRUPT_DATA, d3dkmddi/DXGKARGCB_NOTIFY_INTERRUPT_DATA, STATUS_SUCCESS, DXGKARGCB_NOTIFY_INTERRUPT_DATA structure [Display Devices], DXGKARGCB_NOTIFY_INTERRUPT_DATA, STATUS_INVALID_PARAMETER, STATUS_NO_MEMORY, display.dxgkargcb_notify_interrupt_data
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGKARGCB_NOTIFY_INTERRUPT_DATA
+UID: NS:d3dkmddi._DXGKARGCB_NOTIFY_INTERRUPT_DATA
+title: "_DXGKARGCB_NOTIFY_INTERRUPT_DATA"
+author: windows-driver-content
+description: The DXGKARGCB_NOTIFY_INTERRUPT_DATA structure describes notification information.
+old-location: display\dxgkargcb_notify_interrupt_data.htm
+old-project: display
+ms.assetid: c71078fb-5666-4038-81a0-de9375bafb5c
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DmStructs_071ed85c-70d6-44d8-95e3-7f6609331f4f.xml, _DXGKARGCB_NOTIFY_INTERRUPT_DATA, *IN_CONST_PDXGKARGCB_NOTIFY_INTERRUPT_DATA, d3dkmddi/DXGKARGCB_NOTIFY_INTERRUPT_DATA, STATUS_SUCCESS, DXGKARGCB_NOTIFY_INTERRUPT_DATA structure [Display Devices], DXGKARGCB_NOTIFY_INTERRUPT_DATA, STATUS_INVALID_PARAMETER, STATUS_NO_MEMORY, display.dxgkargcb_notify_interrupt_data
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DXGKARGCB_NOTIFY_INTERRUPT_DATA
+product: Windows
+targetos: Windows
+req.typenames: DXGKARGCB_NOTIFY_INTERRUPT_DATA
 ---
 
 # _DXGKARGCB_NOTIFY_INTERRUPT_DATA structure

@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.SeAuditingFileOrGlobalEvents
-title : SeAuditingFileOrGlobalEvents function
-author : windows-driver-content
-description : The SeAuditingFileOrGlobalEvents routine determines whether file or global events are currently being audited.
-old-location : ifsk\seauditingfileorglobalevents.htm
-old-project : ifsk
-ms.assetid : 4797126f-c27d-4951-88e7-37c5a475e77d
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : SeAuditingFileOrGlobalEvents routine [Installable File System Drivers], ntifs/SeAuditingFileOrGlobalEvents, ifsk.seauditingfileorglobalevents, SeAuditingFileOrGlobalEvents, seref_06c1ee74-261c-4a57-b009-f76420e14055.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.SeAuditingFileOrGlobalEvents
+title: SeAuditingFileOrGlobalEvents function
+author: windows-driver-content
+description: The SeAuditingFileOrGlobalEvents routine determines whether file or global events are currently being audited.
+old-location: ifsk\seauditingfileorglobalevents.htm
+old-project: ifsk
+ms.assetid: 4797126f-c27d-4951-88e7-37c5a475e77d
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: SeAuditingFileOrGlobalEvents routine [Installable File System Drivers], ntifs/SeAuditingFileOrGlobalEvents, ifsk.seauditingfileorglobalevents, SeAuditingFileOrGlobalEvents, seref_06c1ee74-261c-4a57-b009-f76420e14055.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	SeAuditingFileOrGlobalEvents
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

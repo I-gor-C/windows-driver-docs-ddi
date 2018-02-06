@@ -1,41 +1,46 @@
 ---
-UID : NF:ntddk.RtlLeftChild
-title : RtlLeftChild macro
-author : windows-driver-content
-description : The RtlLeftChild routine returns a pointer to the left child of the specified splay link node.
-old-location : ifsk\rtlleftchild.htm
-old-project : ifsk
-ms.assetid : 26e6b0c6-7de0-43c9-a117-5c0bf0e986a2
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : RtlLeftChild routine [Installable File System Drivers], RtlLeftChild, rtlref_f2bfae7c-de1d-4d7c-84b5-947a0cfdb16f.xml, ifsk.rtlleftchild, ntddk/RtlLeftChild
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : macro
-req.header : ntddk.h
-req.include-header : Ntddk.h, Ntifs.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : ntddk.h
-req.dll : 
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.RtlLeftChild
+title: RtlLeftChild macro
+author: windows-driver-content
+description: The RtlLeftChild routine returns a pointer to the left child of the specified splay link node.
+old-location: ifsk\rtlleftchild.htm
+old-project: ifsk
+ms.assetid: 26e6b0c6-7de0-43c9-a117-5c0bf0e986a2
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: RtlLeftChild routine [Installable File System Drivers], RtlLeftChild, rtlref_f2bfae7c-de1d-4d7c-84b5-947a0cfdb16f.xml, ifsk.rtlleftchild, ntddk/RtlLeftChild
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: macro
+req.header: ntddk.h
+req.include-header: Ntddk.h, Ntifs.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: ntddk.h
+req.dll: 
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddk.h
+apiname:
+-	RtlLeftChild
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

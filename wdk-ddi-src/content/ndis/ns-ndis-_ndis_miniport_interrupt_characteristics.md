@@ -1,41 +1,46 @@
 ---
-UID : NS:ndis._NDIS_MINIPORT_INTERRUPT_CHARACTERISTICS
-title : "_NDIS_MINIPORT_INTERRUPT_CHARACTERISTICS"
-author : windows-driver-content
-description : An NDIS miniport driver defines its interrupt characteristics in an NDIS_MINIPORT_INTERRUPT_CHARACTERISTICS structure and passes the structure to the NdisMRegisterInterruptEx function.
-old-location : netvista\ndis_miniport_interrupt_characteristics.htm
-old-project : netvista
-ms.assetid : f4176e2d-d8d2-4e75-bccb-0c452da4d703
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NDIS_MINIPORT_INTERRUPT_CHARACTERISTICS, netvista.ndis_miniport_interrupt_characteristics, *PNDIS_MINIPORT_INTERRUPT_CHARACTERISTICS, ndis/PNDIS_MINIPORT_INTERRUPT_CHARACTERISTICS, NDIS_MINIPORT_INTERRUPT_CHARACTERISTICS structure [Network Drivers Starting with Windows Vista], ndis/NDIS_MINIPORT_INTERRUPT_CHARACTERISTICS, ndis_interrupts_structures_ref_87c0c090-a28d-4195-b73d-52e3a188a80b.xml, PNDIS_MINIPORT_INTERRUPT_CHARACTERISTICS, PNDIS_MINIPORT_INTERRUPT_CHARACTERISTICS structure pointer [Network Drivers Starting with Windows Vista], _NDIS_MINIPORT_INTERRUPT_CHARACTERISTICS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : See Remarks section
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_MINIPORT_INTERRUPT_CHARACTERISTICS, *PNDIS_MINIPORT_INTERRUPT_CHARACTERISTICS
+UID: NS:ndis._NDIS_MINIPORT_INTERRUPT_CHARACTERISTICS
+title: "_NDIS_MINIPORT_INTERRUPT_CHARACTERISTICS"
+author: windows-driver-content
+description: An NDIS miniport driver defines its interrupt characteristics in an NDIS_MINIPORT_INTERRUPT_CHARACTERISTICS structure and passes the structure to the NdisMRegisterInterruptEx function.
+old-location: netvista\ndis_miniport_interrupt_characteristics.htm
+old-project: netvista
+ms.assetid: f4176e2d-d8d2-4e75-bccb-0c452da4d703
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NDIS_MINIPORT_INTERRUPT_CHARACTERISTICS, netvista.ndis_miniport_interrupt_characteristics, *PNDIS_MINIPORT_INTERRUPT_CHARACTERISTICS, ndis/PNDIS_MINIPORT_INTERRUPT_CHARACTERISTICS, NDIS_MINIPORT_INTERRUPT_CHARACTERISTICS structure [Network Drivers Starting with Windows Vista], ndis/NDIS_MINIPORT_INTERRUPT_CHARACTERISTICS, ndis_interrupts_structures_ref_87c0c090-a28d-4195-b73d-52e3a188a80b.xml, PNDIS_MINIPORT_INTERRUPT_CHARACTERISTICS, PNDIS_MINIPORT_INTERRUPT_CHARACTERISTICS structure pointer [Network Drivers Starting with Windows Vista], _NDIS_MINIPORT_INTERRUPT_CHARACTERISTICS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: See Remarks section
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndis.h
+apiname:
+-	NDIS_MINIPORT_INTERRUPT_CHARACTERISTICS
+product: Windows
+targetos: Windows
+req.typenames: NDIS_MINIPORT_INTERRUPT_CHARACTERISTICS, *PNDIS_MINIPORT_INTERRUPT_CHARACTERISTICS
 ---
 
 # _NDIS_MINIPORT_INTERRUPT_CHARACTERISTICS structure

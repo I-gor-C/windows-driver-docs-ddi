@@ -1,41 +1,46 @@
 ---
-UID : NE:ntddk._PSCREATEPROCESSNOTIFYTYPE
-title : "_PSCREATEPROCESSNOTIFYTYPE"
-author : windows-driver-content
-description : Indicates the type of process notification. This enumeration is used in PsSetCreateProcessNotifyRoutineEx2 to register callback notifications.
-old-location : kernel\pscreateprocessnotifytype.htm
-old-project : kernel
-ms.assetid : 5DD02CF1-50E8-45F2-9035-E0AA48F1470C
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : "_PSCREATEPROCESSNOTIFYTYPE, ntddk/PsCreateProcessNotifySubsystems, kernel.pscreateprocessnotifytype, ntddk/PSCREATEPROCESSNOTIFYTYPE, PSCREATEPROCESSNOTIFYTYPE enumeration [Kernel-Mode Driver Architecture], PSCREATEPROCESSNOTIFYTYPE, PsCreateProcessNotifySubsystems"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10, version 1703
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PSCREATEPROCESSNOTIFYTYPE
+UID: NE:ntddk._PSCREATEPROCESSNOTIFYTYPE
+title: "_PSCREATEPROCESSNOTIFYTYPE"
+author: windows-driver-content
+description: Indicates the type of process notification. This enumeration is used in PsSetCreateProcessNotifyRoutineEx2 to register callback notifications.
+old-location: kernel\pscreateprocessnotifytype.htm
+old-project: kernel
+ms.assetid: 5DD02CF1-50E8-45F2-9035-E0AA48F1470C
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: "_PSCREATEPROCESSNOTIFYTYPE, ntddk/PsCreateProcessNotifySubsystems, kernel.pscreateprocessnotifytype, ntddk/PSCREATEPROCESSNOTIFYTYPE, PSCREATEPROCESSNOTIFYTYPE enumeration [Kernel-Mode Driver Architecture], PSCREATEPROCESSNOTIFYTYPE, PsCreateProcessNotifySubsystems"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10, version 1703
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddk.h
+apiname:
+-	PSCREATEPROCESSNOTIFYTYPE
+product: Windows
+targetos: Windows
+req.typenames: PSCREATEPROCESSNOTIFYTYPE
 ---
 
 # _PSCREATEPROCESSNOTIFYTYPE Enumeration
@@ -51,11 +56,11 @@ typedef enum _PSCREATEPROCESSNOTIFYTYPE {
 ## Constants
 
 <table>
-
-<tr>
-<td>PsCreateProcessNotifySubsystems</td>
-<td>Indicates that the driver-registered callback is invoked for processes of all subsystems, including the Win32 subsystem. Drivers can call <a href="https://msdn.microsoft.com/0eae7899-c40b-4a5f-9e9c-adae021885e7">NtQueryInformationProcess</a> to determine the underlying subsystem. The query retrieves a  <a href="..\ntddk\ne-ntddk-_subsystem_information_type.md">SUBSYSTEM_INFORMATION_TYPE</a> value.</td>
-</tr>
+            
+                <tr>
+                    <td>PsCreateProcessNotifySubsystems</td>
+                    <td>Indicates that the driver-registered callback is invoked for processes of all subsystems, including the Win32 subsystem. Drivers can call <a href="https://msdn.microsoft.com/0eae7899-c40b-4a5f-9e9c-adae021885e7">NtQueryInformationProcess</a> to determine the underlying subsystem. The query retrieves a  <a href="..\ntddk\ne-ntddk-_subsystem_information_type.md">SUBSYSTEM_INFORMATION_TYPE</a> value.</td>
+                </tr>
 </table>
 
 
@@ -65,9 +70,9 @@ typedef enum _PSCREATEPROCESSNOTIFYTYPE {
 | **Windows version** | Windows 10, version 1703 Windows 10, version 1703 |
 | **Header** | ntddk.h (include Ntddk.h) |
 
-## See Also
+    ## See Also
 
-<a href="https://msdn.microsoft.com/0eae7899-c40b-4a5f-9e9c-adae021885e7">NtQueryInformationProcess</a>
+        <a href="https://msdn.microsoft.com/0eae7899-c40b-4a5f-9e9c-adae021885e7">NtQueryInformationProcess</a>
 
 <a href="..\ntddk\nf-ntddk-pssetcreateprocessnotifyroutineex2.md">PsSetCreateProcessNotifyRoutineEx2</a>
 

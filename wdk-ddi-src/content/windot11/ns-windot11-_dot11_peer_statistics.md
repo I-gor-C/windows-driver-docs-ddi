@@ -1,42 +1,47 @@
 ---
-UID : NS:windot11._DOT11_PEER_STATISTICS
-title : "_DOT11_PEER_STATISTICS"
-author : windows-driver-content
-description : Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
-old-location : netvista\dot11_peer_statistics.htm
-old-project : netvista
-ms.assetid : 08ea7f19-e086-4d5a-bfc7-de9178d815cd
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.dot11_peer_statistics, Native_802.11_data_types_5e07a8dd-79f1-4cba-89d3-f70e04caad12.xml, *PDOT11_PEER_STATISTICS, PDOT11_PEER_STATISTICS structure pointer [Network Drivers Starting with Windows Vista], _DOT11_PEER_STATISTICS, DOT11_PEER_STATISTICS, DOT11_PEER_STATISTICS structure [Network Drivers Starting with Windows Vista], PDOT11_PEER_STATISTICS, windot11/DOT11_PEER_STATISTICS, windot11/PDOT11_PEER_STATISTICS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : windot11.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 7 and later versions of the Windows operating   systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDOT11_PEER_STATISTICS, DOT11_PEER_STATISTICS"
-req.product : Windows 10 or later.
+UID: NS:windot11._DOT11_PEER_STATISTICS
+title: "_DOT11_PEER_STATISTICS"
+author: windows-driver-content
+description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+old-location: netvista\dot11_peer_statistics.htm
+old-project: netvista
+ms.assetid: 08ea7f19-e086-4d5a-bfc7-de9178d815cd
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.dot11_peer_statistics, Native_802.11_data_types_5e07a8dd-79f1-4cba-89d3-f70e04caad12.xml, *PDOT11_PEER_STATISTICS, PDOT11_PEER_STATISTICS structure pointer [Network Drivers Starting with Windows Vista], _DOT11_PEER_STATISTICS, DOT11_PEER_STATISTICS, DOT11_PEER_STATISTICS structure [Network Drivers Starting with Windows Vista], PDOT11_PEER_STATISTICS, windot11/DOT11_PEER_STATISTICS, windot11/PDOT11_PEER_STATISTICS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: windot11.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 7 and later versions of the Windows operating   systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	windot11.h
+apiname:
+-	DOT11_PEER_STATISTICS
+product: Windows
+targetos: Windows
+req.typenames: "*PDOT11_PEER_STATISTICS, DOT11_PEER_STATISTICS"
+req.product: Windows 10 or later.
 ---
 
 # _DOT11_PEER_STATISTICS structure

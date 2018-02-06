@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisGetDeviceReservedExtension
-title : NdisGetDeviceReservedExtension function
-author : windows-driver-content
-description : The NdisGetDeviceReservedExtension function gets a pointer to the device extension that is associated with a device object.
-old-location : netvista\ndisgetdevicereservedextension.htm
-old-project : netvista
-ms.assetid : 6b2c56a9-cf77-4734-8f85-0ca740084ce3
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : NdisGetDeviceReservedExtension function [Network Drivers Starting with Windows Vista], netvista.ndisgetdevicereservedextension, ndis/NdisGetDeviceReservedExtension, NdisGetDeviceReservedExtension, ndis_devices_ref_75d6a378-f525-46bb-9a2b-becf6abaa768.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisGetDeviceReservedExtension
+title: NdisGetDeviceReservedExtension function
+author: windows-driver-content
+description: The NdisGetDeviceReservedExtension function gets a pointer to the device extension that is associated with a device object.
+old-location: netvista\ndisgetdevicereservedextension.htm
+old-project: netvista
+ms.assetid: 6b2c56a9-cf77-4734-8f85-0ca740084ce3
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: NdisGetDeviceReservedExtension function [Network Drivers Starting with Windows Vista], netvista.ndisgetdevicereservedextension, ndis/NdisGetDeviceReservedExtension, NdisGetDeviceReservedExtension, ndis_devices_ref_75d6a378-f525-46bb-9a2b-becf6abaa768.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisGetDeviceReservedExtension
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

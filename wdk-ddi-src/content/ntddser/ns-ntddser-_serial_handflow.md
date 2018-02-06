@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddser._SERIAL_HANDFLOW
-title : "_SERIAL_HANDFLOW"
-author : windows-driver-content
-description : The SERIAL_HANDFLOW structure specifies the handshake and flow control settings for a serial port.
-old-location : serports\serial_handflow.htm
-old-project : serports
-ms.assetid : E13148B7-8FCE-4407-80F6-286F0EF65B5C
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : serports.serial_handflow, ntddser/PSERIAL_HANDFLOW, PSERIAL_HANDFLOW, SERIAL_HANDFLOW structure [Serial Ports], ntddser/SERIAL_HANDFLOW, PSERIAL_HANDFLOW structure pointer [Serial Ports], _SERIAL_HANDFLOW, SERIAL_HANDFLOW, *PSERIAL_HANDFLOW
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddser.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SERIAL_HANDFLOW, *PSERIAL_HANDFLOW
+UID: NS:ntddser._SERIAL_HANDFLOW
+title: "_SERIAL_HANDFLOW"
+author: windows-driver-content
+description: The SERIAL_HANDFLOW structure specifies the handshake and flow control settings for a serial port.
+old-location: serports\serial_handflow.htm
+old-project: serports
+ms.assetid: E13148B7-8FCE-4407-80F6-286F0EF65B5C
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: serports.serial_handflow, ntddser/PSERIAL_HANDFLOW, PSERIAL_HANDFLOW, SERIAL_HANDFLOW structure [Serial Ports], ntddser/SERIAL_HANDFLOW, PSERIAL_HANDFLOW structure pointer [Serial Ports], _SERIAL_HANDFLOW, SERIAL_HANDFLOW, *PSERIAL_HANDFLOW
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddser.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddser.h
+apiname:
+-	SERIAL_HANDFLOW
+product: Windows
+targetos: Windows
+req.typenames: SERIAL_HANDFLOW, *PSERIAL_HANDFLOW
 ---
 
 # _SERIAL_HANDFLOW structure

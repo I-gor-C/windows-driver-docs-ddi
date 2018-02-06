@@ -1,41 +1,46 @@
 ---
-UID : NS:irb._IDE_REQUEST_BLOCK
-title : "_IDE_REQUEST_BLOCK"
-author : windows-driver-content
-description : The IDE_REQUEST_BLOCK structure defines an IDE request block.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
-old-location : storage\ide_request_block.htm
-old-project : storage
-ms.assetid : 9e112984-0a7e-4bb9-a10f-b50ab67ce4f3
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : irb/IDE_REQUEST_BLOCK, storage.ide_request_block, _IDE_REQUEST_BLOCK, IDE_REQUEST_BLOCK, irb/PIDE_REQUEST_BLOCK, PIDE_REQUEST_BLOCK structure pointer [Storage Devices], structs-ATA_d1c6164f-8964-4e37-a9d4-9948215ed7cc.xml, *PIDE_REQUEST_BLOCK, IDE_REQUEST_BLOCK structure [Storage Devices], PIDE_REQUEST_BLOCK
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : irb.h
-req.include-header : Irb.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : IDE_REQUEST_BLOCK, *PIDE_REQUEST_BLOCK
+UID: NS:irb._IDE_REQUEST_BLOCK
+title: "_IDE_REQUEST_BLOCK"
+author: windows-driver-content
+description: The IDE_REQUEST_BLOCK structure defines an IDE request block.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
+old-location: storage\ide_request_block.htm
+old-project: storage
+ms.assetid: 9e112984-0a7e-4bb9-a10f-b50ab67ce4f3
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: irb/IDE_REQUEST_BLOCK, storage.ide_request_block, _IDE_REQUEST_BLOCK, IDE_REQUEST_BLOCK, irb/PIDE_REQUEST_BLOCK, PIDE_REQUEST_BLOCK structure pointer [Storage Devices], structs-ATA_d1c6164f-8964-4e37-a9d4-9948215ed7cc.xml, *PIDE_REQUEST_BLOCK, IDE_REQUEST_BLOCK structure [Storage Devices], PIDE_REQUEST_BLOCK
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: irb.h
+req.include-header: Irb.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	irb.h
+apiname:
+-	IDE_REQUEST_BLOCK
+product: Windows
+targetos: Windows
+req.typenames: IDE_REQUEST_BLOCK, *PIDE_REQUEST_BLOCK
 ---
 
 # _IDE_REQUEST_BLOCK structure

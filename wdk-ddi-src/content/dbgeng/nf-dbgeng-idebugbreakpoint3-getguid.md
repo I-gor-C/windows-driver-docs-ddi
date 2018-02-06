@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugBreakpoint3.GetGuid
-title : IDebugBreakpoint3::GetGuid method
-author : windows-driver-content
-description : Returns a GUID for the breakpoint.
-old-location : debugger\idebugbreakpoint3_getguid.htm
-old-project : debugger
-ms.assetid : 0D279F79-FFA8-4661-A9E9-EFA62A97EEC7
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : GetGuid, dbgeng/IDebugBreakpoint3::GetGuid, GetGuid method [Windows Debugging], IDebugBreakpoint3 interface [Windows Debugging], GetGuid method, debugger.idebugbreakpoint3_getguid, IDebugBreakpoint3::GetGuid, IDebugBreakpoint3, GetGuid method [Windows Debugging], IDebugBreakpoint3 interface
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugBreakpoint3.GetGuid
+title: IDebugBreakpoint3::GetGuid method
+author: windows-driver-content
+description: Returns a GUID for the breakpoint.
+old-location: debugger\idebugbreakpoint3_getguid.htm
+old-project: debugger
+ms.assetid: 0D279F79-FFA8-4661-A9E9-EFA62A97EEC7
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: GetGuid, dbgeng/IDebugBreakpoint3::GetGuid, GetGuid method [Windows Debugging], IDebugBreakpoint3 interface [Windows Debugging], GetGuid method, debugger.idebugbreakpoint3_getguid, IDebugBreakpoint3::GetGuid, IDebugBreakpoint3, GetGuid method [Windows Debugging], IDebugBreakpoint3 interface
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugBreakpoint3.GetGuid
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

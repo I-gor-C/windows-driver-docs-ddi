@@ -1,41 +1,46 @@
 ---
-UID : NS:iscsiop._RemovePersistentLogin_OUT
-title : "_RemovePersistentLogin_OUT"
-author : windows-driver-content
-description : The RemovePersistentLogin_OUT structure holds the output data for the RemovePersistentLogin method.
-old-location : storage\removepersistentlogin_out.htm
-old-project : storage
-ms.assetid : 2b5aee65-ccf6-42c6-9bb3-dff93cb53cf0
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : RemovePersistentLogin_OUT, storage.removepersistentlogin_out, PRemovePersistentLogin_OUT structure pointer [Storage Devices], _RemovePersistentLogin_OUT, iscsiop/PRemovePersistentLogin_OUT, RemovePersistentLogin_OUT structure [Storage Devices], *PRemovePersistentLogin_OUT, PRemovePersistentLogin_OUT, iscsiop/RemovePersistentLogin_OUT, structs-iSCSI_59f0b686-33c3-47be-9bd7-89d14f3ffc7b.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : iscsiop.h
-req.include-header : Iscsiop.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RemovePersistentLogin_OUT, *PRemovePersistentLogin_OUT
+UID: NS:iscsiop._RemovePersistentLogin_OUT
+title: "_RemovePersistentLogin_OUT"
+author: windows-driver-content
+description: The RemovePersistentLogin_OUT structure holds the output data for the RemovePersistentLogin method.
+old-location: storage\removepersistentlogin_out.htm
+old-project: storage
+ms.assetid: 2b5aee65-ccf6-42c6-9bb3-dff93cb53cf0
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: RemovePersistentLogin_OUT, storage.removepersistentlogin_out, PRemovePersistentLogin_OUT structure pointer [Storage Devices], _RemovePersistentLogin_OUT, iscsiop/PRemovePersistentLogin_OUT, RemovePersistentLogin_OUT structure [Storage Devices], *PRemovePersistentLogin_OUT, PRemovePersistentLogin_OUT, iscsiop/RemovePersistentLogin_OUT, structs-iSCSI_59f0b686-33c3-47be-9bd7-89d14f3ffc7b.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: iscsiop.h
+req.include-header: Iscsiop.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	iscsiop.h
+apiname:
+-	RemovePersistentLogin_OUT
+product: Windows
+targetos: Windows
+req.typenames: RemovePersistentLogin_OUT, *PRemovePersistentLogin_OUT
 ---
 
 # _RemovePersistentLogin_OUT structure

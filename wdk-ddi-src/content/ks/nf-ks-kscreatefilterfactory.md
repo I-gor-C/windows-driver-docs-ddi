@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsCreateFilterFactory
-title : KsCreateFilterFactory function
-author : windows-driver-content
-description : The KsCreateFilterFactory function adds a filter factory to a given device.
-old-location : stream\kscreatefilterfactory.htm
-old-project : stream
-ms.assetid : ebfdae87-febc-4383-93f4-5d613df273a9
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : avfunc_0867c824-52e2-475a-9f36-05e6fba4cdd9.xml, stream.kscreatefilterfactory, KsCreateFilterFactory function [Streaming Media Devices], KsCreateFilterFactory, ks/KsCreateFilterFactory
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsCreateFilterFactory
+title: KsCreateFilterFactory function
+author: windows-driver-content
+description: The KsCreateFilterFactory function adds a filter factory to a given device.
+old-location: stream\kscreatefilterfactory.htm
+old-project: stream
+ms.assetid: ebfdae87-febc-4383-93f4-5d613df273a9
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: avfunc_0867c824-52e2-475a-9f36-05e6fba4cdd9.xml, stream.kscreatefilterfactory, KsCreateFilterFactory function [Streaming Media Devices], KsCreateFilterFactory, ks/KsCreateFilterFactory
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsCreateFilterFactory
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

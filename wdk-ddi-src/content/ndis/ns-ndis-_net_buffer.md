@@ -1,41 +1,46 @@
 ---
-UID : NS:ndis._NET_BUFFER
-title : "_NET_BUFFER"
-author : windows-driver-content
-description : The NET_BUFFER structure specifies data that is transmitted or received over the network.
-old-location : netvista\net_buffer.htm
-old-project : netvista
-ms.assetid : 66a725f9-ae72-41b4-8840-63c9ff89ace7
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : "_NET_BUFFER, NET_BUFFER, netvista.net_buffer, ndis_netbuf_structures_ref_e07734b2-9135-48a5-b3d4-f6e252a52c45.xml, PNET_BUFFER structure pointer [Network Drivers Starting with Windows Vista], PNET_BUFFER, ndis/PNET_BUFFER, NET_BUFFER structure [Network Drivers Starting with Windows Vista], *PNET_BUFFER, ndis/NET_BUFFER"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : See Remarks section
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PNET_BUFFER, NET_BUFFER"
+UID: NS:ndis._NET_BUFFER
+title: "_NET_BUFFER"
+author: windows-driver-content
+description: The NET_BUFFER structure specifies data that is transmitted or received over the network.
+old-location: netvista\net_buffer.htm
+old-project: netvista
+ms.assetid: 66a725f9-ae72-41b4-8840-63c9ff89ace7
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: "_NET_BUFFER, NET_BUFFER, netvista.net_buffer, ndis_netbuf_structures_ref_e07734b2-9135-48a5-b3d4-f6e252a52c45.xml, PNET_BUFFER structure pointer [Network Drivers Starting with Windows Vista], PNET_BUFFER, ndis/PNET_BUFFER, NET_BUFFER structure [Network Drivers Starting with Windows Vista], *PNET_BUFFER, ndis/NET_BUFFER"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: See Remarks section
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndis.h
+apiname:
+-	NET_BUFFER
+product: Windows
+targetos: Windows
+req.typenames: "*PNET_BUFFER, NET_BUFFER"
 ---
 
 # _NET_BUFFER structure

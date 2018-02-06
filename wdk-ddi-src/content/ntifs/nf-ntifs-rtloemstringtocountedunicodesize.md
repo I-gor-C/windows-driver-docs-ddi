@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.RtlOemStringToCountedUnicodeSize
-title : RtlOemStringToCountedUnicodeSize macro
-author : windows-driver-content
-description : The RtlOemStringToCountedUnicodeSize routine determines the size, in bytes, that a given OEM string will be after it is translated into a counted Unicode string.
-old-location : ifsk\rtloemstringtocountedunicodesize.htm
-old-project : ifsk
-ms.assetid : a618420f-ea69-471d-82a0-1e86f85e270b
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : RtlOemStringToCountedUnicodeSize, rtlref_dc10fcb6-356a-4c09-aea6-c386030039f0.xml, ntifs/RtlOemStringToCountedUnicodeSize, RtlOemStringToCountedUnicodeSize routine [Installable File System Drivers], ifsk.rtloemstringtocountedunicodesize
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : macro
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : ntifs.h
-req.dll : 
-req.irql : "< DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.RtlOemStringToCountedUnicodeSize
+title: RtlOemStringToCountedUnicodeSize macro
+author: windows-driver-content
+description: The RtlOemStringToCountedUnicodeSize routine determines the size, in bytes, that a given OEM string will be after it is translated into a counted Unicode string.
+old-location: ifsk\rtloemstringtocountedunicodesize.htm
+old-project: ifsk
+ms.assetid: a618420f-ea69-471d-82a0-1e86f85e270b
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: RtlOemStringToCountedUnicodeSize, rtlref_dc10fcb6-356a-4c09-aea6-c386030039f0.xml, ntifs/RtlOemStringToCountedUnicodeSize, RtlOemStringToCountedUnicodeSize routine [Installable File System Drivers], ifsk.rtloemstringtocountedunicodesize
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: macro
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: ntifs.h
+req.dll: 
+req.irql: "< DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntifs.h
+apiname:
+-	RtlOemStringToCountedUnicodeSize
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

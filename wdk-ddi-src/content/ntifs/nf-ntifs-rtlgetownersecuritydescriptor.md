@@ -1,41 +1,47 @@
 ---
-UID : NF:ntifs.RtlGetOwnerSecurityDescriptor
-title : RtlGetOwnerSecurityDescriptor function
-author : windows-driver-content
-description : The RtlGetOwnerSecurityDescriptor routine returns the owner information for a given security descriptor.
-old-location : ifsk\rtlgetownersecuritydescriptor.htm
-old-project : ifsk
-ms.assetid : 64c1b899-5737-474c-92ee-f18f7f2f06f5
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ifsk.rtlgetownersecuritydescriptor, ntifs/RtlGetOwnerSecurityDescriptor, RtlGetOwnerSecurityDescriptor, rtlref_7a3503c8-84ed-4ec7-9b69-5b93daaa6596.xml, RtlGetOwnerSecurityDescriptor routine [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : This routine is available on Microsoft Windows 2000 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe (kernel mode); Ntdll.dll (user mode)
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.RtlGetOwnerSecurityDescriptor
+title: RtlGetOwnerSecurityDescriptor function
+author: windows-driver-content
+description: The RtlGetOwnerSecurityDescriptor routine returns the owner information for a given security descriptor.
+old-location: ifsk\rtlgetownersecuritydescriptor.htm
+old-project: ifsk
+ms.assetid: 64c1b899-5737-474c-92ee-f18f7f2f06f5
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ifsk.rtlgetownersecuritydescriptor, ntifs/RtlGetOwnerSecurityDescriptor, RtlGetOwnerSecurityDescriptor, rtlref_7a3503c8-84ed-4ec7-9b69-5b93daaa6596.xml, RtlGetOwnerSecurityDescriptor routine [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: This routine is available on Microsoft Windows 2000 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe (kernel mode); Ntdll.dll (user mode)
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+-	Ntdll.dll
+apiname:
+-	RtlGetOwnerSecurityDescriptor
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

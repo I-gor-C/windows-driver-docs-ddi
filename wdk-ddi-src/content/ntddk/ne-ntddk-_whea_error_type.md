@@ -1,41 +1,46 @@
 ---
-UID : NE:ntddk._WHEA_ERROR_TYPE
-title : "_WHEA_ERROR_TYPE"
-author : windows-driver-content
-description : The WHEA_ERROR_TYPE enumeration defines the different types of hardware components that can report a hardware error.
-old-location : whea\whea_error_type.htm
-old-project : whea
-ms.assetid : b10dbb47-394c-42f0-9471-6e5deb73a7b9
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : ntddk/WheaErrTypeMemory, ntddk/WheaErrTypePCIXBus, ntddk/WheaErrTypeProcessor, whea.whea_error_type, WheaErrTypeProcessor, WHEA_ERROR_TYPE, WheaErrTypeNMI, PWHEA_ERROR_TYPE, ntddk/WheaErrTypeNMI, ntddk/WheaErrTypeGeneric, WheaErrTypePCIXDevice, WheaErrTypeMemory, ntddk/WHEA_ERROR_TYPE, _WHEA_ERROR_TYPE, PWHEA_ERROR_TYPE enumeration pointer [WHEA Drivers and Applications], ntddk/PWHEA_ERROR_TYPE, ntddk/WheaErrTypePCIExpress, WheaErrTypePCIXBus, whearef_4e585fa6-81e5-4196-b7fa-6194d3701835.xml, WheaErrTypeGeneric, WHEA_ERROR_TYPE enumeration [WHEA Drivers and Applications], *PWHEA_ERROR_TYPE, WheaErrTypePCIExpress, ntddk/WheaErrTypePCIXDevice
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWHEA_ERROR_TYPE, WHEA_ERROR_TYPE"
+UID: NE:ntddk._WHEA_ERROR_TYPE
+title: "_WHEA_ERROR_TYPE"
+author: windows-driver-content
+description: The WHEA_ERROR_TYPE enumeration defines the different types of hardware components that can report a hardware error.
+old-location: whea\whea_error_type.htm
+old-project: whea
+ms.assetid: b10dbb47-394c-42f0-9471-6e5deb73a7b9
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: ntddk/WheaErrTypeMemory, ntddk/WheaErrTypePCIXBus, ntddk/WheaErrTypeProcessor, whea.whea_error_type, WheaErrTypeProcessor, WHEA_ERROR_TYPE, WheaErrTypeNMI, PWHEA_ERROR_TYPE, ntddk/WheaErrTypeNMI, ntddk/WheaErrTypeGeneric, WheaErrTypePCIXDevice, WheaErrTypeMemory, ntddk/WHEA_ERROR_TYPE, _WHEA_ERROR_TYPE, PWHEA_ERROR_TYPE enumeration pointer [WHEA Drivers and Applications], ntddk/PWHEA_ERROR_TYPE, ntddk/WheaErrTypePCIExpress, WheaErrTypePCIXBus, whearef_4e585fa6-81e5-4196-b7fa-6194d3701835.xml, WheaErrTypeGeneric, WHEA_ERROR_TYPE enumeration [WHEA Drivers and Applications], *PWHEA_ERROR_TYPE, WheaErrTypePCIExpress, ntddk/WheaErrTypePCIXDevice
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddk.h
+apiname:
+-	WHEA_ERROR_TYPE
+product: Windows
+targetos: Windows
+req.typenames: "*PWHEA_ERROR_TYPE, WHEA_ERROR_TYPE"
 ---
 
 # _WHEA_ERROR_TYPE Enumeration
@@ -57,46 +62,46 @@ typedef enum _WHEA_ERROR_TYPE {
 ## Constants
 
 <table>
-
-<tr>
-<td>WheaErrTypeGeneric</td>
-<td>A hardware component that does not conform to any of the other WHEA_ERROR_TYPE enumeration values reported the hardware error.</td>
-</tr>
-
-<tr>
-<td>WheaErrTypeMemory</td>
-<td>The memory hierarchy reported the hardware error.</td>
-</tr>
-
-<tr>
-<td>WheaErrTypeNMI</td>
-<td>A nonmaskable interrupt (NMI) was signaled.</td>
-</tr>
-
-<tr>
-<td>WheaErrTypePCIExpress</td>
-<td>A PCI Express root port reported the hardware error.</td>
-</tr>
-
-<tr>
-<td>WheaErrTypePCIXBus</td>
-<td>A PCI or PCI-X bus reported the hardware error.</td>
-</tr>
-
-<tr>
-<td>WheaErrTypePCIXDevice</td>
-<td>A PCI or PCI-X device reported the hardware error.</td>
-</tr>
-
-<tr>
-<td>WheaErrTypeProcessor</td>
-<td>A processor reported the hardware error.</td>
-</tr>
+            
+                <tr>
+                    <td>WheaErrTypeGeneric</td>
+                    <td>A hardware component that does not conform to any of the other WHEA_ERROR_TYPE enumeration values reported the hardware error.</td>
+                </tr>
+            
+                <tr>
+                    <td>WheaErrTypeMemory</td>
+                    <td>The memory hierarchy reported the hardware error.</td>
+                </tr>
+            
+                <tr>
+                    <td>WheaErrTypeNMI</td>
+                    <td>A nonmaskable interrupt (NMI) was signaled.</td>
+                </tr>
+            
+                <tr>
+                    <td>WheaErrTypePCIExpress</td>
+                    <td>A PCI Express root port reported the hardware error.</td>
+                </tr>
+            
+                <tr>
+                    <td>WheaErrTypePCIXBus</td>
+                    <td>A PCI or PCI-X bus reported the hardware error.</td>
+                </tr>
+            
+                <tr>
+                    <td>WheaErrTypePCIXDevice</td>
+                    <td>A PCI or PCI-X device reported the hardware error.</td>
+                </tr>
+            
+                <tr>
+                    <td>WheaErrTypeProcessor</td>
+                    <td>A processor reported the hardware error.</td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-The <a href="https://msdn.microsoft.com/library/windows/hardware/ff560465">WHEA_ERROR_PACKET</a> structure contains a member of type WHEA_ERROR_TYPE that specifies the type of hardware component that reported the hardware error.
+        The <a href="https://msdn.microsoft.com/library/windows/hardware/ff560465">WHEA_ERROR_PACKET</a> structure contains a member of type WHEA_ERROR_TYPE that specifies the type of hardware component that reported the hardware error.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -104,9 +109,9 @@ The <a href="https://msdn.microsoft.com/library/windows/hardware/ff560465">WHEA_
 | **Windows version** | Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows. Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows. |
 | **Header** | ntddk.h (include Ntddk.h) |
 
-## See Also
+    ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560465">WHEA_ERROR_PACKET</a>
+        <a href="https://msdn.microsoft.com/library/windows/hardware/ff560465">WHEA_ERROR_PACKET</a>
 
  
 

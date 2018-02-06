@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._D3DDDIDEVINFO_VCACHE
-title : "_D3DDDIDEVINFO_VCACHE"
-author : windows-driver-content
-description : The D3DDDIDEVINFO_VCACHE structure describes the vertex-cache information of a device.
-old-location : display\d3dddidevinfo_vcache.htm
-old-project : display
-ms.assetid : 06635207-39fd-4ef9-b388-25513f8194fe
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DDDIDEVINFO_VCACHE, _D3DDDIDEVINFO_VCACHE, D3D_other_Structs_e212d960-07ba-4887-8b31-76ad54a7ae03.xml, D3DDDIDEVINFO_VCACHE structure [Display Devices], display.d3dddidevinfo_vcache, d3dumddi/D3DDDIDEVINFO_VCACHE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DDDIDEVINFO_VCACHE
+UID: NS:d3dumddi._D3DDDIDEVINFO_VCACHE
+title: "_D3DDDIDEVINFO_VCACHE"
+author: windows-driver-content
+description: The D3DDDIDEVINFO_VCACHE structure describes the vertex-cache information of a device.
+old-location: display\d3dddidevinfo_vcache.htm
+old-project: display
+ms.assetid: 06635207-39fd-4ef9-b388-25513f8194fe
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DDDIDEVINFO_VCACHE, _D3DDDIDEVINFO_VCACHE, D3D_other_Structs_e212d960-07ba-4887-8b31-76ad54a7ae03.xml, D3DDDIDEVINFO_VCACHE structure [Display Devices], display.d3dddidevinfo_vcache, d3dumddi/D3DDDIDEVINFO_VCACHE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	D3DDDIDEVINFO_VCACHE
+product: Windows
+targetos: Windows
+req.typenames: D3DDDIDEVINFO_VCACHE
 ---
 
 # _D3DDDIDEVINFO_VCACHE structure

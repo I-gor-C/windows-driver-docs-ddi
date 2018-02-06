@@ -1,41 +1,49 @@
 ---
-UID : NF:dbgeng.IDebugSystemObjects4.GetThreadIdByProcessor
-title : IDebugSystemObjects4::GetThreadIdByProcessor method
-author : windows-driver-content
-description : The GetThreadIdByProcessor method returns the engine thread ID for the kernel-modevirtual thread corresponding to the specified processor.
-old-location : debugger\getthreadidbyprocessor.htm
-old-project : debugger
-ms.assetid : c771a581-53ac-44a7-b307-b8a22ac97496
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : GetThreadIdByProcessor method [Windows Debugging], IDebugSystemObjects4 interface, GetThreadIdByProcessor, GetThreadIdByProcessor method [Windows Debugging], IDebugSystemObjects3 interface, GetThreadIdByProcessor method [Windows Debugging], IDebugSystemObjects interface, IDebugSystemObjects3 interface [Windows Debugging], GetThreadIdByProcessor method, debugger.getthreadidbyprocessor, IDebugSystemObjects2 interface [Windows Debugging], GetThreadIdByProcessor method, dbgeng/IDebugSystemObjects3::GetThreadIdByProcessor, dbgeng/IDebugSystemObjects2::GetThreadIdByProcessor, IDebugSystemObjects2::GetThreadIdByProcessor, IDebugSystemObjects::GetThreadIdByProcessor, IDebugSystemObjects_59fff866-93b2-48fb-8f49-bf778e2f0f7f.xml, IDebugSystemObjects4, IDebugSystemObjects interface [Windows Debugging], GetThreadIdByProcessor method, IDebugSystemObjects4 interface [Windows Debugging], GetThreadIdByProcessor method, IDebugSystemObjects4::GetThreadIdByProcessor, GetThreadIdByProcessor method [Windows Debugging], IDebugSystemObjects2 interface, GetThreadIdByProcessor method [Windows Debugging], IDebugSystemObjects3::GetThreadIdByProcessor, dbgeng/IDebugSystemObjects4::GetThreadIdByProcessor, dbgeng/IDebugSystemObjects::GetThreadIdByProcessor
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSystemObjects4.GetThreadIdByProcessor
+title: IDebugSystemObjects4::GetThreadIdByProcessor method
+author: windows-driver-content
+description: The GetThreadIdByProcessor method returns the engine thread ID for the kernel-modevirtual thread corresponding to the specified processor.
+old-location: debugger\getthreadidbyprocessor.htm
+old-project: debugger
+ms.assetid: c771a581-53ac-44a7-b307-b8a22ac97496
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: GetThreadIdByProcessor method [Windows Debugging], IDebugSystemObjects4 interface, GetThreadIdByProcessor, GetThreadIdByProcessor method [Windows Debugging], IDebugSystemObjects3 interface, GetThreadIdByProcessor method [Windows Debugging], IDebugSystemObjects interface, IDebugSystemObjects3 interface [Windows Debugging], GetThreadIdByProcessor method, debugger.getthreadidbyprocessor, IDebugSystemObjects2 interface [Windows Debugging], GetThreadIdByProcessor method, dbgeng/IDebugSystemObjects3::GetThreadIdByProcessor, dbgeng/IDebugSystemObjects2::GetThreadIdByProcessor, IDebugSystemObjects2::GetThreadIdByProcessor, IDebugSystemObjects::GetThreadIdByProcessor, IDebugSystemObjects_59fff866-93b2-48fb-8f49-bf778e2f0f7f.xml, IDebugSystemObjects4, IDebugSystemObjects interface [Windows Debugging], GetThreadIdByProcessor method, IDebugSystemObjects4 interface [Windows Debugging], GetThreadIdByProcessor method, IDebugSystemObjects4::GetThreadIdByProcessor, GetThreadIdByProcessor method [Windows Debugging], IDebugSystemObjects2 interface, GetThreadIdByProcessor method [Windows Debugging], IDebugSystemObjects3::GetThreadIdByProcessor, dbgeng/IDebugSystemObjects4::GetThreadIdByProcessor, dbgeng/IDebugSystemObjects::GetThreadIdByProcessor
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugSystemObjects.GetThreadIdByProcessor
+-	IDebugSystemObjects2.GetThreadIdByProcessor
+-	IDebugSystemObjects3.GetThreadIdByProcessor
+-	IDebugSystemObjects4.GetThreadIdByProcessor
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

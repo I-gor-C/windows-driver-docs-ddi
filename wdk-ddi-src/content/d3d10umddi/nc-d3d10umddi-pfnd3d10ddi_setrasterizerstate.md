@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3D10DDI_SETRASTERIZERSTATE
-title : PFND3D10DDI_SETRASTERIZERSTATE
-author : windows-driver-content
-description : The SetRasterizerState function sets the rasterizer state.
-old-location : display\setrasterizerstate.htm
-old-project : display
-ms.assetid : 8162c9c9-4ebd-45a9-adaf-576f25c3907e
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.setrasterizerstate, SetRasterizerState callback function [Display Devices], SetRasterizerState, PFND3D10DDI_SETRASTERIZERSTATE, PFND3D10DDI_SETRASTERIZERSTATE, d3d10umddi/SetRasterizerState, UserModeDisplayDriverDx10_Functions_4f21a729-b192-441f-b80d-cae10432ab0a.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3D10DDI_SETRASTERIZERSTATE
+title: PFND3D10DDI_SETRASTERIZERSTATE
+author: windows-driver-content
+description: The SetRasterizerState function sets the rasterizer state.
+old-location: display\setrasterizerstate.htm
+old-project: display
+ms.assetid: 8162c9c9-4ebd-45a9-adaf-576f25c3907e
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.setrasterizerstate, SetRasterizerState callback function [Display Devices], SetRasterizerState, PFND3D10DDI_SETRASTERIZERSTATE, PFND3D10DDI_SETRASTERIZERSTATE, d3d10umddi/SetRasterizerState, UserModeDisplayDriverDx10_Functions_4f21a729-b192-441f-b80d-cae10432ab0a.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3d10umddi.h
+apiname:
+-	SetRasterizerState
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

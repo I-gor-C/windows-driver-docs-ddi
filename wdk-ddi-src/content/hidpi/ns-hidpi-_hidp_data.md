@@ -1,41 +1,46 @@
 ---
-UID : NS:hidpi._HIDP_DATA
-title : "_HIDP_DATA"
-author : windows-driver-content
-description : The HIDP_DATA structure contains information about a HID control's data index and value in a HID report.
-old-location : hid\hidp_data.htm
-old-project : hid
-ms.assetid : f48bbf84-027f-4579-b83c-7dfb1cbe6b65
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : "_HIDP_DATA, *PHIDP_DATA, HIDP_DATA structure [Human Input Devices], PHIDP_DATA, PHIDP_DATA structure pointer [Human Input Devices], hidpi/HIDP_DATA, hidstrct_690e0e92-9de7-44e0-8550-4f84d7bb768e.xml, hidpi/PHIDP_DATA, hid.hidp_data, HIDP_DATA"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : hidpi.h
-req.include-header : Hidpi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PHIDP_DATA, HIDP_DATA"
+UID: NS:hidpi._HIDP_DATA
+title: "_HIDP_DATA"
+author: windows-driver-content
+description: The HIDP_DATA structure contains information about a HID control's data index and value in a HID report.
+old-location: hid\hidp_data.htm
+old-project: hid
+ms.assetid: f48bbf84-027f-4579-b83c-7dfb1cbe6b65
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: "_HIDP_DATA, *PHIDP_DATA, HIDP_DATA structure [Human Input Devices], PHIDP_DATA, PHIDP_DATA structure pointer [Human Input Devices], hidpi/HIDP_DATA, hidstrct_690e0e92-9de7-44e0-8550-4f84d7bb768e.xml, hidpi/PHIDP_DATA, hid.hidp_data, HIDP_DATA"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: hidpi.h
+req.include-header: Hidpi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hidpi.h
+apiname:
+-	HIDP_DATA
+product: Windows
+targetos: Windows
+req.typenames: "*PHIDP_DATA, HIDP_DATA"
 ---
 
 # _HIDP_DATA structure

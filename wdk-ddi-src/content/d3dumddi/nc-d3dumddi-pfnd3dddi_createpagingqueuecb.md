@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_CREATEPAGINGQUEUECB
-title : PFND3DDDI_CREATEPAGINGQUEUECB
-author : windows-driver-content
-description : pfnCreatePagingQueueCb is used to create a device paging queue that can be used to synchronize with video memory management operations for the device, such as making the device resource resident.
-old-location : display\pfncreatepagingqueuecb.htm
-old-project : display
-ms.assetid : 99E4CFCF-7A0A-43A9-9E23-B7A9F9375690
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.pfncreatepagingqueuecb, pfnCreatePagingQueueCb callback function [Display Devices], pfnCreatePagingQueueCb, PFND3DDDI_CREATEPAGINGQUEUECB, PFND3DDDI_CREATEPAGINGQUEUECB, d3dumddi/pfnCreatePagingQueueCb
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_CREATEPAGINGQUEUECB
+title: PFND3DDDI_CREATEPAGINGQUEUECB
+author: windows-driver-content
+description: pfnCreatePagingQueueCb is used to create a device paging queue that can be used to synchronize with video memory management operations for the device, such as making the device resource resident.
+old-location: display\pfncreatepagingqueuecb.htm
+old-project: display
+ms.assetid: 99E4CFCF-7A0A-43A9-9E23-B7A9F9375690
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.pfncreatepagingqueuecb, pfnCreatePagingQueueCb callback function [Display Devices], pfnCreatePagingQueueCb, PFND3DDDI_CREATEPAGINGQUEUECB, PFND3DDDI_CREATEPAGINGQUEUECB, d3dumddi/pfnCreatePagingQueueCb
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	pfnCreatePagingQueueCb
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsAllocateObjectHeader
-title : KsAllocateObjectHeader function
-author : windows-driver-content
-description : The KsAllocateObjectHeader function initializes the required file context header.
-old-location : stream\ksallocateobjectheader.htm
-old-project : stream
-ms.assetid : 18f5ea44-3f70-4c26-beb3-2f03568df03b
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ks/KsAllocateObjectHeader, stream.ksallocateobjectheader, KsAllocateObjectHeader, ksfunc_0ab53e6c-a934-4c4a-9377-c81ec37833f6.xml, KsAllocateObjectHeader function [Streaming Media Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : "< DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsAllocateObjectHeader
+title: KsAllocateObjectHeader function
+author: windows-driver-content
+description: The KsAllocateObjectHeader function initializes the required file context header.
+old-location: stream\ksallocateobjectheader.htm
+old-project: stream
+ms.assetid: 18f5ea44-3f70-4c26-beb3-2f03568df03b
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ks/KsAllocateObjectHeader, stream.ksallocateobjectheader, KsAllocateObjectHeader, ksfunc_0ab53e6c-a934-4c4a-9377-c81ec37833f6.xml, KsAllocateObjectHeader function [Streaming Media Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: "< DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsAllocateObjectHeader
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

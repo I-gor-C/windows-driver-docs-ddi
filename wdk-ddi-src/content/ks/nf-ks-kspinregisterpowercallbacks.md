@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsPinRegisterPowerCallbacks
-title : KsPinRegisterPowerCallbacks function
-author : windows-driver-content
-description : The KsPinRegisterPowerCallbacks function registers power management callbacks for Pin.
-old-location : stream\kspinregisterpowercallbacks.htm
-old-project : stream
-ms.assetid : e498a907-8d20-4d00-9411-8e82030af223
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.kspinregisterpowercallbacks, KsPinRegisterPowerCallbacks, ks/KsPinRegisterPowerCallbacks, avfunc_2e133cdb-6afa-47a7-8d3b-8293b63428b5.xml, KsPinRegisterPowerCallbacks function [Streaming Media Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsPinRegisterPowerCallbacks
+title: KsPinRegisterPowerCallbacks function
+author: windows-driver-content
+description: The KsPinRegisterPowerCallbacks function registers power management callbacks for Pin.
+old-location: stream\kspinregisterpowercallbacks.htm
+old-project: stream
+ms.assetid: e498a907-8d20-4d00-9411-8e82030af223
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.kspinregisterpowercallbacks, KsPinRegisterPowerCallbacks, ks/KsPinRegisterPowerCallbacks, avfunc_2e133cdb-6afa-47a7-8d3b-8293b63428b5.xml, KsPinRegisterPowerCallbacks function [Streaming Media Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsPinRegisterPowerCallbacks
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

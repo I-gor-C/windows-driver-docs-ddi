@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.CcIsThereDirtyDataEx
-title : CcIsThereDirtyDataEx function
-author : windows-driver-content
-description : The CcIsThereDirtyDataEx routine determines whether a volume contains any files that have dirty data in the system cache.
-old-location : ifsk\ccistheredirtydataex.htm
-old-project : ifsk
-ms.assetid : 88378f82-2975-4b53-9dde-53ab81df3c53
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ntifs/CcIsThereDirtyDataEx, ifsk.ccistheredirtydataex, CcIsThereDirtyDataEx routine [Installable File System Drivers], CcIsThereDirtyDataEx, ccref_13ae1f3e-b2ea-4bc6-a1cb-0101afd58d04.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h, FltKernel.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.CcIsThereDirtyDataEx
+title: CcIsThereDirtyDataEx function
+author: windows-driver-content
+description: The CcIsThereDirtyDataEx routine determines whether a volume contains any files that have dirty data in the system cache.
+old-location: ifsk\ccistheredirtydataex.htm
+old-project: ifsk
+ms.assetid: 88378f82-2975-4b53-9dde-53ab81df3c53
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ntifs/CcIsThereDirtyDataEx, ifsk.ccistheredirtydataex, CcIsThereDirtyDataEx routine [Installable File System Drivers], CcIsThereDirtyDataEx, ccref_13ae1f3e-b2ea-4bc6-a1cb-0101afd58d04.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h, FltKernel.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	CcIsThereDirtyDataEx
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

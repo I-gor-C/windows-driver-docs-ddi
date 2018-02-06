@@ -1,42 +1,47 @@
 ---
-UID : NF:storport.StorPortInterlockedRemoveHeadList
-title : StorPortInterlockedRemoveHeadList function
-author : windows-driver-content
-description : The StorPortInterlockedRemoveHeadList routine removes an entry from the beginning of a doubly linked list of STOR_LIST_ENTRY structures.
-old-location : storage\storportinterlockedremoveheadlist.htm
-old-project : storage
-ms.assetid : 6B99D78A-B582-4114-9472-D01D39FDD4C9
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storport/StorPortInterlockedRemoveHeadList, storage.storportinterlockedremoveheadlist, StorPortInterlockedRemoveHeadList routine [Storage Devices], StorPortInterlockedRemoveHeadList
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STOR_SPINLOCK
-req.product : Windows 10 or later.
+UID: NF:storport.StorPortInterlockedRemoveHeadList
+title: StorPortInterlockedRemoveHeadList function
+author: windows-driver-content
+description: The StorPortInterlockedRemoveHeadList routine removes an entry from the beginning of a doubly linked list of STOR_LIST_ENTRY structures.
+old-location: storage\storportinterlockedremoveheadlist.htm
+old-project: storage
+ms.assetid: 6B99D78A-B582-4114-9472-D01D39FDD4C9
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storport/StorPortInterlockedRemoveHeadList, storage.storportinterlockedremoveheadlist, StorPortInterlockedRemoveHeadList routine [Storage Devices], StorPortInterlockedRemoveHeadList
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	storport.h
+apiname:
+-	StorPortInterlockedRemoveHeadList
+product: Windows
+targetos: Windows
+req.typenames: STOR_SPINLOCK
+req.product: Windows 10 or later.
 ---
 
 

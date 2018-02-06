@@ -1,42 +1,47 @@
 ---
-UID : NS:usbcamdi._pipe_config_descriptor
-title : "_pipe_config_descriptor"
-author : windows-driver-content
-description : The USBCAMD_Pipe_Config_Descriptor structure describes the association between pipes and streams.
-old-location : stream\usbcamd_pipe_config_descriptor.htm
-old-project : stream
-ms.assetid : 8554a5d1-07ea-4ad5-83a4-f0c15386b3d1
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : USBCAMD_Pipe_Config_Descriptor, usbcamdi/PUSBCAMD_Pipe_Config_Descriptor, usbcmdpr_41ff7b81-10f6-469c-ad6f-d444acf15c07.xml, *PUSBCAMD_Pipe_Config_Descriptor, usbcamdi/USBCAMD_Pipe_Config_Descriptor, PUSBCAMD_Pipe_Config_Descriptor, _pipe_config_descriptor, PUSBCAMD_Pipe_Config_Descriptor structure pointer [Streaming Media Devices], USBCAMD_Pipe_Config_Descriptor structure [Streaming Media Devices], stream.usbcamd_pipe_config_descriptor
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : usbcamdi.h
-req.include-header : Usbcamdi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUSBCAMD_Pipe_Config_Descriptor, USBCAMD_Pipe_Config_Descriptor"
-req.product : Windows 10 or later.
+UID: NS:usbcamdi._pipe_config_descriptor
+title: "_pipe_config_descriptor"
+author: windows-driver-content
+description: The USBCAMD_Pipe_Config_Descriptor structure describes the association between pipes and streams.
+old-location: stream\usbcamd_pipe_config_descriptor.htm
+old-project: stream
+ms.assetid: 8554a5d1-07ea-4ad5-83a4-f0c15386b3d1
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: USBCAMD_Pipe_Config_Descriptor, usbcamdi/PUSBCAMD_Pipe_Config_Descriptor, usbcmdpr_41ff7b81-10f6-469c-ad6f-d444acf15c07.xml, *PUSBCAMD_Pipe_Config_Descriptor, usbcamdi/USBCAMD_Pipe_Config_Descriptor, PUSBCAMD_Pipe_Config_Descriptor, _pipe_config_descriptor, PUSBCAMD_Pipe_Config_Descriptor structure pointer [Streaming Media Devices], USBCAMD_Pipe_Config_Descriptor structure [Streaming Media Devices], stream.usbcamd_pipe_config_descriptor
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: usbcamdi.h
+req.include-header: Usbcamdi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	usbcamdi.h
+apiname:
+-	USBCAMD_Pipe_Config_Descriptor
+product: Windows
+targetos: Windows
+req.typenames: "*PUSBCAMD_Pipe_Config_Descriptor, USBCAMD_Pipe_Config_Descriptor"
+req.product: Windows 10 or later.
 ---
 
 # _pipe_config_descriptor structure

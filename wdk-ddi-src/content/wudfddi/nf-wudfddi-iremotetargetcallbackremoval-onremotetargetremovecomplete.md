@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IRemoteTargetCallbackRemoval.OnRemoteTargetRemoveComplete
-title : IRemoteTargetCallbackRemoval::OnRemoteTargetRemoveComplete method
-author : windows-driver-content
-description : A UMDF-based driver's OnRemoteTargetRemoveComplete event callback function performs operations that are necessary after the operating system completes the removal of a remote I/O target's device.
-old-location : wdf\iremotetargetcallbackremoval_onremotetargetremovecomplete.htm
-old-project : wdf
-ms.assetid : bfac8f91-2367-4194-8e98-e274025c049a
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : IRemoteTargetCallbackRemoval, OnRemoteTargetRemoveComplete, OnRemoteTargetRemoveComplete method, IRemoteTargetCallbackRemoval interface, IRemoteTargetCallbackRemoval interface, OnRemoteTargetRemoveComplete method, umdf.iremotetargetcallbackremoval_onremotetargetremovecomplete, IRemoteTargetCallbackRemoval::OnRemoteTargetRemoveComplete, wdf.iremotetargetcallbackremoval_onremotetargetremovecomplete, UMDFIoTargetObjectRef_bec0246d-a3e9-41b2-b577-fef78c8e4668.xml, OnRemoteTargetRemoveComplete method, wudfddi/IRemoteTargetCallbackRemoval::OnRemoteTargetRemoveComplete
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.9
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IRemoteTargetCallbackRemoval.OnRemoteTargetRemoveComplete
+title: IRemoteTargetCallbackRemoval::OnRemoteTargetRemoveComplete method
+author: windows-driver-content
+description: A UMDF-based driver's OnRemoteTargetRemoveComplete event callback function performs operations that are necessary after the operating system completes the removal of a remote I/O target's device.
+old-location: wdf\iremotetargetcallbackremoval_onremotetargetremovecomplete.htm
+old-project: wdf
+ms.assetid: bfac8f91-2367-4194-8e98-e274025c049a
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: IRemoteTargetCallbackRemoval, OnRemoteTargetRemoveComplete, OnRemoteTargetRemoveComplete method, IRemoteTargetCallbackRemoval interface, IRemoteTargetCallbackRemoval interface, OnRemoteTargetRemoveComplete method, umdf.iremotetargetcallbackremoval_onremotetargetremovecomplete, IRemoteTargetCallbackRemoval::OnRemoteTargetRemoveComplete, wdf.iremotetargetcallbackremoval_onremotetargetremovecomplete, UMDFIoTargetObjectRef_bec0246d-a3e9-41b2-b577-fef78c8e4668.xml, OnRemoteTargetRemoveComplete method, wudfddi/IRemoteTargetCallbackRemoval::OnRemoteTargetRemoveComplete
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.9
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Wudfddi.h
+apiname:
+-	IRemoteTargetCallbackRemoval.OnRemoteTargetRemoveComplete
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

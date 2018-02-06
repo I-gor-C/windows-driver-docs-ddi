@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddstor._DEVICE_TRIM_DESCRIPTOR
-title : "_DEVICE_TRIM_DESCRIPTOR"
-author : windows-driver-content
-description : The DEVICE_TRIM_DESCRIPTOR structure is used in conjunction with the IOCTL_STORAGE_QUERY_PROPERTY request to retrieve the trim descriptor data for a device.
-old-location : storage\device_trim_descriptor.htm
-old-project : storage
-ms.assetid : e36bca55-63d0-41ef-83b9-8f0cfd450323
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : DEVICE_TRIM_DESCRIPTOR structure [Storage Devices], PDEVICE_TRIM_DESCRIPTOR, PDEVICE_TRIM_DESCRIPTOR structure pointer [Storage Devices], structs-general_eeaa452e-bc49-47ac-9d6f-4a7bbc022b2f.xml, ntddstor/DEVICE_TRIM_DESCRIPTOR, storage.device_trim_descriptor, DEVICE_TRIM_DESCRIPTOR, *PDEVICE_TRIM_DESCRIPTOR, ntddstor/PDEVICE_TRIM_DESCRIPTOR, _DEVICE_TRIM_DESCRIPTOR
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddstor.h
-req.include-header : Ntddstor.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDEVICE_TRIM_DESCRIPTOR, DEVICE_TRIM_DESCRIPTOR"
+UID: NS:ntddstor._DEVICE_TRIM_DESCRIPTOR
+title: "_DEVICE_TRIM_DESCRIPTOR"
+author: windows-driver-content
+description: The DEVICE_TRIM_DESCRIPTOR structure is used in conjunction with the IOCTL_STORAGE_QUERY_PROPERTY request to retrieve the trim descriptor data for a device.
+old-location: storage\device_trim_descriptor.htm
+old-project: storage
+ms.assetid: e36bca55-63d0-41ef-83b9-8f0cfd450323
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: DEVICE_TRIM_DESCRIPTOR structure [Storage Devices], PDEVICE_TRIM_DESCRIPTOR, PDEVICE_TRIM_DESCRIPTOR structure pointer [Storage Devices], structs-general_eeaa452e-bc49-47ac-9d6f-4a7bbc022b2f.xml, ntddstor/DEVICE_TRIM_DESCRIPTOR, storage.device_trim_descriptor, DEVICE_TRIM_DESCRIPTOR, *PDEVICE_TRIM_DESCRIPTOR, ntddstor/PDEVICE_TRIM_DESCRIPTOR, _DEVICE_TRIM_DESCRIPTOR
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddstor.h
+req.include-header: Ntddstor.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddstor.h
+apiname:
+-	DEVICE_TRIM_DESCRIPTOR
+product: Windows
+targetos: Windows
+req.typenames: "*PDEVICE_TRIM_DESCRIPTOR, DEVICE_TRIM_DESCRIPTOR"
 ---
 
 # _DEVICE_TRIM_DESCRIPTOR structure

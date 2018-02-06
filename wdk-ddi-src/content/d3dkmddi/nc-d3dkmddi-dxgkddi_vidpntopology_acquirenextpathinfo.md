@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dkmddi.DXGKDDI_VIDPNTOPOLOGY_ACQUIRENEXTPATHINFO
-title : DXGKDDI_VIDPNTOPOLOGY_ACQUIRENEXTPATHINFO
-author : windows-driver-content
-description : The pfnAcquireNextPathInfo function returns a descriptor of the next video present path in a specified VidPN topology, given the current path.
-old-location : display\dxgk_vidpntopology_interface_pfnacquirenextpathinfo.htm
-old-project : display
-ms.assetid : 9f09ac0e-057c-48fb-a246-35e8ed7ddfc2
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgk_vidpntopology_interface_pfnacquirenextpathinfo, pfnAcquireNextPathInfo callback function [Display Devices], pfnAcquireNextPathInfo, DXGKDDI_VIDPNTOPOLOGY_ACQUIRENEXTPATHINFO, DXGKDDI_VIDPNTOPOLOGY_ACQUIRENEXTPATHINFO, d3dkmddi/pfnAcquireNextPathInfo, VidPnFunctions_c06f9c56-bcfd-49a8-a723-4166d7f5129f.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
+UID: NC:d3dkmddi.DXGKDDI_VIDPNTOPOLOGY_ACQUIRENEXTPATHINFO
+title: DXGKDDI_VIDPNTOPOLOGY_ACQUIRENEXTPATHINFO
+author: windows-driver-content
+description: The pfnAcquireNextPathInfo function returns a descriptor of the next video present path in a specified VidPN topology, given the current path.
+old-location: display\dxgk_vidpntopology_interface_pfnacquirenextpathinfo.htm
+old-project: display
+ms.assetid: 9f09ac0e-057c-48fb-a246-35e8ed7ddfc2
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgk_vidpntopology_interface_pfnacquirenextpathinfo, pfnAcquireNextPathInfo callback function [Display Devices], pfnAcquireNextPathInfo, DXGKDDI_VIDPNTOPOLOGY_ACQUIRENEXTPATHINFO, DXGKDDI_VIDPNTOPOLOGY_ACQUIRENEXTPATHINFO, d3dkmddi/pfnAcquireNextPathInfo, VidPnFunctions_c06f9c56-bcfd-49a8-a723-4166d7f5129f.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	pfnAcquireNextPathInfo
+product: Windows
+targetos: Windows
+req.typenames: DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
 

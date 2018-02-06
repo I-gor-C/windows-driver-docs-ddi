@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltReleaseContext
-title : FltReleaseContext function
-author : windows-driver-content
-description : FltReleaseContext decrements the reference count on a context.
-old-location : ifsk\fltreleasecontext.htm
-old-project : ifsk
-ms.assetid : b0585443-b8e9-41bc-81af-5707fda2465d
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltReleaseContext function [Installable File System Drivers], fltkernel/FltReleaseContext, FltApiRef_p_to_z_1040d19b-2ecb-4229-adda-b73f5c2bc828.xml, FltReleaseContext, ifsk.fltreleasecontext
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : See Remarks section.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltReleaseContext
+title: FltReleaseContext function
+author: windows-driver-content
+description: FltReleaseContext decrements the reference count on a context.
+old-location: ifsk\fltreleasecontext.htm
+old-project: ifsk
+ms.assetid: b0585443-b8e9-41bc-81af-5707fda2465d
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltReleaseContext function [Installable File System Drivers], fltkernel/FltReleaseContext, FltApiRef_p_to_z_1040d19b-2ecb-4229-adda-b73f5c2bc828.xml, FltReleaseContext, ifsk.fltreleasecontext
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: See Remarks section.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltReleaseContext
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

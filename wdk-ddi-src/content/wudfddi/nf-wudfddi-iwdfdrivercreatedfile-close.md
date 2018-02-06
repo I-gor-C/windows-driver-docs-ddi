@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFDriverCreatedFile.Close
-title : IWDFDriverCreatedFile::Close method
-author : windows-driver-content
-description : The Close method closes an instance of a UMDF driver-created-file object that was created by calling the IWDFDevice::CreateWdfFile method.
-old-location : wdf\iwdfdrivercreatedfile_close.htm
-old-project : wdf
-ms.assetid : a9c1d1d7-4222-4c8c-92eb-497d13952bed
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.iwdfdrivercreatedfile_close, IWDFDriverCreatedFile::Close, Close method, wudfddi/IWDFDriverCreatedFile::Close, UMDFDriverCreatedFileObjectRef_52a9f370-6f1d-4d62-84de-0b56a61b95fc.xml, IWDFDriverCreatedFile, Close method, IWDFDriverCreatedFile interface, umdf.iwdfdrivercreatedfile_close, IWDFDriverCreatedFile interface, Close method, Close
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.5
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFDriverCreatedFile.Close
+title: IWDFDriverCreatedFile::Close method
+author: windows-driver-content
+description: The Close method closes an instance of a UMDF driver-created-file object that was created by calling the IWDFDevice::CreateWdfFile method.
+old-location: wdf\iwdfdrivercreatedfile_close.htm
+old-project: wdf
+ms.assetid: a9c1d1d7-4222-4c8c-92eb-497d13952bed
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.iwdfdrivercreatedfile_close, IWDFDriverCreatedFile::Close, Close method, wudfddi/IWDFDriverCreatedFile::Close, UMDFDriverCreatedFileObjectRef_52a9f370-6f1d-4d62-84de-0b56a61b95fc.xml, IWDFDriverCreatedFile, Close method, IWDFDriverCreatedFile interface, umdf.iwdfdrivercreatedfile_close, IWDFDriverCreatedFile interface, Close method, Close
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.5
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFDriverCreatedFile.Close
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

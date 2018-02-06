@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddk._WHEA_GENERIC_ERROR
-title : "_WHEA_GENERIC_ERROR"
-author : windows-driver-content
-description : The WHEA_GENERIC_ERROR structure describes error status data for a generic error source.
-old-location : whea\whea_generic_error.htm
-old-project : whea
-ms.assetid : 7d624645-0199-4376-b84a-83d7da3ba981
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : "*PWHEA_GENERIC_ERROR, WHEA_GENERIC_ERROR, ntddk/PWHEA_GENERIC_ERROR, PWHEA_GENERIC_ERROR, _WHEA_GENERIC_ERROR, ntddk/WHEA_GENERIC_ERROR, WHEA_GENERIC_ERROR structure [WHEA Drivers and Applications], whearef_60117ecc-4c3f-438f-aba2-cd2d4268df27.xml, whea.whea_generic_error, PWHEA_GENERIC_ERROR structure pointer [WHEA Drivers and Applications]"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_GENERIC_ERROR, *PWHEA_GENERIC_ERROR
+UID: NS:ntddk._WHEA_GENERIC_ERROR
+title: "_WHEA_GENERIC_ERROR"
+author: windows-driver-content
+description: The WHEA_GENERIC_ERROR structure describes error status data for a generic error source.
+old-location: whea\whea_generic_error.htm
+old-project: whea
+ms.assetid: 7d624645-0199-4376-b84a-83d7da3ba981
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: "*PWHEA_GENERIC_ERROR, WHEA_GENERIC_ERROR, ntddk/PWHEA_GENERIC_ERROR, PWHEA_GENERIC_ERROR, _WHEA_GENERIC_ERROR, ntddk/WHEA_GENERIC_ERROR, WHEA_GENERIC_ERROR structure [WHEA Drivers and Applications], whearef_60117ecc-4c3f-438f-aba2-cd2d4268df27.xml, whea.whea_generic_error, PWHEA_GENERIC_ERROR structure pointer [WHEA Drivers and Applications]"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in Windows Server 2008, Windows Vista SP1, and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddk.h
+apiname:
+-	WHEA_GENERIC_ERROR
+product: Windows
+targetos: Windows
+req.typenames: WHEA_GENERIC_ERROR, *PWHEA_GENERIC_ERROR
 ---
 
 # _WHEA_GENERIC_ERROR structure

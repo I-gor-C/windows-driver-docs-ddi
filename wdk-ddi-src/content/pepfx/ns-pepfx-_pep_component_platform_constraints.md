@@ -1,41 +1,46 @@
 ---
-UID : NS:pepfx._PEP_COMPONENT_PLATFORM_CONSTRAINTS
-title : "_PEP_COMPONENT_PLATFORM_CONSTRAINTS"
-author : windows-driver-content
-description : The PEP_COMPONENT_PLATFORM_CONSTRAINTS structure describes the lowest-powered Fx state of that a component can be in when the platform is in a particular idle state.
-old-location : kernel\pep_component_platform_constraints.htm
-old-project : kernel
-ms.assetid : F7C2DFCC-DB74-4E2E-B252-4897FA320C03
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : PEP_COMPONENT_PLATFORM_CONSTRAINTS structure [Kernel-Mode Driver Architecture], pepfx/PEP_COMPONENT_PLATFORM_CONSTRAINTS, PPEP_COMPONENT_PLATFORM_CONSTRAINTS structure pointer [Kernel-Mode Driver Architecture], pepfx/PPEP_COMPONENT_PLATFORM_CONSTRAINTS, *PPEP_COMPONENT_PLATFORM_CONSTRAINTS, kernel.pep_component_platform_constraints, PPEP_COMPONENT_PLATFORM_CONSTRAINTS, PEP_COMPONENT_PLATFORM_CONSTRAINTS, _PEP_COMPONENT_PLATFORM_CONSTRAINTS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : pepfx.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with Windows 10.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PEP_COMPONENT_PLATFORM_CONSTRAINTS, *PPEP_COMPONENT_PLATFORM_CONSTRAINTS
+UID: NS:pepfx._PEP_COMPONENT_PLATFORM_CONSTRAINTS
+title: "_PEP_COMPONENT_PLATFORM_CONSTRAINTS"
+author: windows-driver-content
+description: The PEP_COMPONENT_PLATFORM_CONSTRAINTS structure describes the lowest-powered Fx state of that a component can be in when the platform is in a particular idle state.
+old-location: kernel\pep_component_platform_constraints.htm
+old-project: kernel
+ms.assetid: F7C2DFCC-DB74-4E2E-B252-4897FA320C03
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: PEP_COMPONENT_PLATFORM_CONSTRAINTS structure [Kernel-Mode Driver Architecture], pepfx/PEP_COMPONENT_PLATFORM_CONSTRAINTS, PPEP_COMPONENT_PLATFORM_CONSTRAINTS structure pointer [Kernel-Mode Driver Architecture], pepfx/PPEP_COMPONENT_PLATFORM_CONSTRAINTS, *PPEP_COMPONENT_PLATFORM_CONSTRAINTS, kernel.pep_component_platform_constraints, PPEP_COMPONENT_PLATFORM_CONSTRAINTS, PEP_COMPONENT_PLATFORM_CONSTRAINTS, _PEP_COMPONENT_PLATFORM_CONSTRAINTS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: pepfx.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows 10.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	pepfx.h
+apiname:
+-	PEP_COMPONENT_PLATFORM_CONSTRAINTS
+product: Windows
+targetos: Windows
+req.typenames: PEP_COMPONENT_PLATFORM_CONSTRAINTS, *PPEP_COMPONENT_PLATFORM_CONSTRAINTS
 ---
 
 # _PEP_COMPONENT_PLATFORM_CONSTRAINTS structure

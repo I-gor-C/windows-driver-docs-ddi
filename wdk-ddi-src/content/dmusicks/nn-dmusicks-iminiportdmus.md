@@ -1,41 +1,46 @@
 ---
-UID : NN:dmusicks.IMiniportDMus
-title : IMiniportDMus
-author : windows-driver-content
-description : The IMiniportDMus interface is the primary interface for a DMus miniport driver for a DirectMusic synthesizer device.
-old-location : audio\iminiportdmus.htm
-old-project : audio
-ms.assetid : 12cd3533-1830-46cd-a1eb-350f7461a61d
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : audio.iminiportdmus, IMiniportDMus interface [Audio Devices], IMiniportDMus interface [Audio Devices], described, IMiniportDMus, dmusicks/IMiniportDMus, audmp-routines_b123c50b-e4b9-4f19-a2c4-b33fb335bec6.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : dmusicks.h
-req.include-header : Dmusicks.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dmusicks.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DMUS_STREAM_TYPE
+UID: NN:dmusicks.IMiniportDMus
+title: IMiniportDMus
+author: windows-driver-content
+description: The IMiniportDMus interface is the primary interface for a DMus miniport driver for a DirectMusic synthesizer device.
+old-location: audio\iminiportdmus.htm
+old-project: audio
+ms.assetid: 12cd3533-1830-46cd-a1eb-350f7461a61d
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: audio.iminiportdmus, IMiniportDMus interface [Audio Devices], IMiniportDMus interface [Audio Devices], described, IMiniportDMus, dmusicks/IMiniportDMus, audmp-routines_b123c50b-e4b9-4f19-a2c4-b33fb335bec6.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: dmusicks.h
+req.include-header: Dmusicks.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dmusicks.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dmusicks.h
+apiname:
+-	IMiniportDMus
+product: Windows
+targetos: Windows
+req.typenames: DMUS_STREAM_TYPE
 ---
 
 # IMiniportDMus interface

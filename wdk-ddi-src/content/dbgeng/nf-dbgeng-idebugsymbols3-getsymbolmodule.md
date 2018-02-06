@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugSymbols3.GetSymbolModule
-title : IDebugSymbols3::GetSymbolModule method
-author : windows-driver-content
-description : The GetSymbolModule method returns the base address of module which contains the specified symbol.
-old-location : debugger\getsymbolmodule.htm
-old-project : debugger
-ms.assetid : f3774204-86c3-467b-96ba-739f19d300e3
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugSymbols3 interface [Windows Debugging], GetSymbolModule method, IDebugSymbols3::GetSymbolModule, dbgeng/IDebugSymbols3::GetSymbolModule, GetSymbolModule method [Windows Debugging], IDebugSymbols3 interface, GetSymbolModule method [Windows Debugging], IDebugSymbols interface, IDebugSymbols::GetSymbolModule, GetSymbolModule method [Windows Debugging], IDebugSymbols2 interface, IDebugSymbols2::GetSymbolModule, IDebugSymbols_a680615c-bc2a-4fa3-a83a-6960ed64c1e9.xml, debugger.getsymbolmodule, GetSymbolModule method [Windows Debugging], IDebugSymbols2 interface [Windows Debugging], GetSymbolModule method, dbgeng/IDebugSymbols2::GetSymbolModule, IDebugSymbols interface [Windows Debugging], GetSymbolModule method, IDebugSymbols3, GetSymbolModule, dbgeng/IDebugSymbols::GetSymbolModule
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSymbols3.GetSymbolModule
+title: IDebugSymbols3::GetSymbolModule method
+author: windows-driver-content
+description: The GetSymbolModule method returns the base address of module which contains the specified symbol.
+old-location: debugger\getsymbolmodule.htm
+old-project: debugger
+ms.assetid: f3774204-86c3-467b-96ba-739f19d300e3
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugSymbols3 interface [Windows Debugging], GetSymbolModule method, IDebugSymbols3::GetSymbolModule, dbgeng/IDebugSymbols3::GetSymbolModule, GetSymbolModule method [Windows Debugging], IDebugSymbols3 interface, GetSymbolModule method [Windows Debugging], IDebugSymbols interface, IDebugSymbols::GetSymbolModule, GetSymbolModule method [Windows Debugging], IDebugSymbols2 interface, IDebugSymbols2::GetSymbolModule, IDebugSymbols_a680615c-bc2a-4fa3-a83a-6960ed64c1e9.xml, debugger.getsymbolmodule, GetSymbolModule method [Windows Debugging], IDebugSymbols2 interface [Windows Debugging], GetSymbolModule method, dbgeng/IDebugSymbols2::GetSymbolModule, IDebugSymbols interface [Windows Debugging], GetSymbolModule method, IDebugSymbols3, GetSymbolModule, dbgeng/IDebugSymbols::GetSymbolModule
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugSymbols.GetSymbolModule
+-	IDebugSymbols2.GetSymbolModule
+-	IDebugSymbols3.GetSymbolModule
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

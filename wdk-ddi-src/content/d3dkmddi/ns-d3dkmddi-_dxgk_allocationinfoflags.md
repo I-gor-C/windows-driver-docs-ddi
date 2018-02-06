@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGK_ALLOCATIONINFOFLAGS
-title : "_DXGK_ALLOCATIONINFOFLAGS"
-author : windows-driver-content
-description : The DXGK_ALLOCATIONINFOFLAGS structure identifies properties for an allocation. The display miniport driver specifies these flags for the video memory manager.
-old-location : display\dxgk_allocationinfoflags.htm
-old-project : display
-ms.assetid : 04bd00c3-83a8-44bb-9493-cf7f43f10602
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DXGK_ALLOCATIONINFOFLAGS, DXGK_ALLOCATIONINFOFLAGS structure [Display Devices], DmStructs_4e6e499c-8427-4c0f-977d-92f648ab027e.xml, d3dkmddi/DXGK_ALLOCATIONINFOFLAGS, display.dxgk_allocationinfoflags, _DXGK_ALLOCATIONINFOFLAGS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : D3dkmddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_ALLOCATIONINFOFLAGS
+UID: NS:d3dkmddi._DXGK_ALLOCATIONINFOFLAGS
+title: "_DXGK_ALLOCATIONINFOFLAGS"
+author: windows-driver-content
+description: The DXGK_ALLOCATIONINFOFLAGS structure identifies properties for an allocation. The display miniport driver specifies these flags for the video memory manager.
+old-location: display\dxgk_allocationinfoflags.htm
+old-project: display
+ms.assetid: 04bd00c3-83a8-44bb-9493-cf7f43f10602
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DXGK_ALLOCATIONINFOFLAGS, DXGK_ALLOCATIONINFOFLAGS structure [Display Devices], DmStructs_4e6e499c-8427-4c0f-977d-92f648ab027e.xml, d3dkmddi/DXGK_ALLOCATIONINFOFLAGS, display.dxgk_allocationinfoflags, _DXGK_ALLOCATIONINFOFLAGS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: D3dkmddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DXGK_ALLOCATIONINFOFLAGS
+product: Windows
+targetos: Windows
+req.typenames: DXGK_ALLOCATIONINFOFLAGS
 ---
 
 # _DXGK_ALLOCATIONINFOFLAGS structure

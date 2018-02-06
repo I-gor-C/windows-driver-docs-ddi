@@ -1,41 +1,46 @@
 ---
-UID : NF:ks.KsPinGetDevice
-title : KsPinGetDevice function
-author : windows-driver-content
-description : The KsPinGetDevice function returns the AVStream device to which Pin belongs.
-old-location : stream\kspingetdevice.htm
-old-project : stream
-ms.assetid : 965aa806-90cc-4c82-a126-42ae433cba3b
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.kspingetdevice, KsPinGetDevice, avfunc_09495aa3-2bed-4093-a989-2ae444f1c372.xml, ks/KsPinGetDevice, KsPinGetDevice function [Streaming Media Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsPinGetDevice
+title: KsPinGetDevice function
+author: windows-driver-content
+description: The KsPinGetDevice function returns the AVStream device to which Pin belongs.
+old-location: stream\kspingetdevice.htm
+old-project: stream
+ms.assetid: 965aa806-90cc-4c82-a126-42ae433cba3b
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.kspingetdevice, KsPinGetDevice, avfunc_09495aa3-2bed-4093-a989-2ae444f1c372.xml, ks/KsPinGetDevice, KsPinGetDevice function [Streaming Media Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	KsPinGetDevice
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NE:d3dkmthk._D3DKMT_VIDMMESCAPETYPE
-title : "_D3DKMT_VIDMMESCAPETYPE"
-author : windows-driver-content
-description : The D3DKMT_VIDMMESCAPETYPE enumeration is used with the D3DKMT_VIDMM_ESCAPE structure.
-old-location : display\d3dkmt_vidmmescapetype.htm
-old-project : display
-ms.assetid : 83C903F9-0E5F-454D-B6E9-FCC7C3A9B46C
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DKMT_VIDMMESCAPETYPE, D3DKMT_VIDMMESCAPETYPE enumeration [Display Devices], d3dkmthk/D3DKMT_VIDMMESCAPETYPE_SETFAULT, D3DKMT_VIDMMESCAPETYPE_SET_BUDGET, d3dkmthk/D3DKMT_VIDMMESCAPETYPE_APERTURE_CORRUPTION_CHECK, d3dkmthk/D3DKMT_VIDMMESCAPETYPE_SUSPEND_PROCESS, _D3DKMT_VIDMMESCAPETYPE, d3dkmthk/D3DKMT_VIDMMESCAPETYPE_EVICT, d3dkmthk/D3DKMT_VIDMMESCAPETYPE_RUN_UNMAP_TO_DUMMY_PAGE_TEST, D3DKMT_VIDMMESCAPETYPE_GET_VAD_INFO, D3DKMT_VIDMMESCAPETYPE_SUSPEND_CPU_ACCESS_TEST, d3dkmthk/D3DKMT_VIDMMESCAPETYPE_GET_VAD_INFO, D3DKMT_VIDMMESCAPETYPE_EVICT_BY_NT_HANDLE, d3dkmthk/D3DKMT_VIDMMESCAPETYPE_EVICT_BY_NT_HANDLE, D3DKMT_VIDMMESCAPETYPE_EVICT_BY_CRITERIA, D3DKMT_VIDMMESCAPETYPE_RUN_COHERENCY_TEST, d3dkmthk/D3DKMT_VIDMMESCAPETYPE_SET_BUDGET, d3dkmthk/D3DKMT_VIDMMESCAPETYPE_SET_TRIM_INTERVALS, D3DKMT_VIDMMESCAPETYPE_SET_TRIM_INTERVALS, D3DKMT_VIDMMESCAPETYPE_EVICT, D3DKMT_VIDMMESCAPETYPE_RUN_UNMAP_TO_DUMMY_PAGE_TEST, d3dkmthk/D3DKMT_VIDMMESCAPETYPE, d3dkmthk/D3DKMT_VIDMMESCAPETYPE_RUN_COHERENCY_TEST, d3dkmthk/D3DKMT_VIDMMESCAPETYPE_EVICT_BY_CRITERIA, D3DKMT_VIDMMESCAPETYPE_RESUME_PROCESS, D3DKMT_VIDMMESCAPETYPE_SUSPEND_PROCESS, d3dkmthk/D3DKMT_VIDMMESCAPETYPE_GET_BUDGET, d3dkmthk/D3DKMT_VIDMMESCAPETYPE_SUSPEND_CPU_ACCESS_TEST, display.d3dkmt_vidmmescapetype, D3DKMT_VIDMMESCAPETYPE_SETFAULT, d3dkmthk/D3DKMT_VIDMMESCAPETYPE_RESUME_PROCESS, D3DKMT_VIDMMESCAPETYPE_APERTURE_CORRUPTION_CHECK, D3DKMT_VIDMMESCAPETYPE_GET_BUDGET
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : d3dkmthk.h
-req.include-header : TBD
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_VIDMMESCAPETYPE
+UID: NE:d3dkmthk._D3DKMT_VIDMMESCAPETYPE
+title: "_D3DKMT_VIDMMESCAPETYPE"
+author: windows-driver-content
+description: The D3DKMT_VIDMMESCAPETYPE enumeration is used with the D3DKMT_VIDMM_ESCAPE structure.
+old-location: display\d3dkmt_vidmmescapetype.htm
+old-project: display
+ms.assetid: 83C903F9-0E5F-454D-B6E9-FCC7C3A9B46C
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DKMT_VIDMMESCAPETYPE, D3DKMT_VIDMMESCAPETYPE enumeration [Display Devices], d3dkmthk/D3DKMT_VIDMMESCAPETYPE_SETFAULT, D3DKMT_VIDMMESCAPETYPE_SET_BUDGET, d3dkmthk/D3DKMT_VIDMMESCAPETYPE_APERTURE_CORRUPTION_CHECK, d3dkmthk/D3DKMT_VIDMMESCAPETYPE_SUSPEND_PROCESS, _D3DKMT_VIDMMESCAPETYPE, d3dkmthk/D3DKMT_VIDMMESCAPETYPE_EVICT, d3dkmthk/D3DKMT_VIDMMESCAPETYPE_RUN_UNMAP_TO_DUMMY_PAGE_TEST, D3DKMT_VIDMMESCAPETYPE_GET_VAD_INFO, D3DKMT_VIDMMESCAPETYPE_SUSPEND_CPU_ACCESS_TEST, d3dkmthk/D3DKMT_VIDMMESCAPETYPE_GET_VAD_INFO, D3DKMT_VIDMMESCAPETYPE_EVICT_BY_NT_HANDLE, d3dkmthk/D3DKMT_VIDMMESCAPETYPE_EVICT_BY_NT_HANDLE, D3DKMT_VIDMMESCAPETYPE_EVICT_BY_CRITERIA, D3DKMT_VIDMMESCAPETYPE_RUN_COHERENCY_TEST, d3dkmthk/D3DKMT_VIDMMESCAPETYPE_SET_BUDGET, d3dkmthk/D3DKMT_VIDMMESCAPETYPE_SET_TRIM_INTERVALS, D3DKMT_VIDMMESCAPETYPE_SET_TRIM_INTERVALS, D3DKMT_VIDMMESCAPETYPE_EVICT, D3DKMT_VIDMMESCAPETYPE_RUN_UNMAP_TO_DUMMY_PAGE_TEST, d3dkmthk/D3DKMT_VIDMMESCAPETYPE, d3dkmthk/D3DKMT_VIDMMESCAPETYPE_RUN_COHERENCY_TEST, d3dkmthk/D3DKMT_VIDMMESCAPETYPE_EVICT_BY_CRITERIA, D3DKMT_VIDMMESCAPETYPE_RESUME_PROCESS, D3DKMT_VIDMMESCAPETYPE_SUSPEND_PROCESS, d3dkmthk/D3DKMT_VIDMMESCAPETYPE_GET_BUDGET, d3dkmthk/D3DKMT_VIDMMESCAPETYPE_SUSPEND_CPU_ACCESS_TEST, display.d3dkmt_vidmmescapetype, D3DKMT_VIDMMESCAPETYPE_SETFAULT, d3dkmthk/D3DKMT_VIDMMESCAPETYPE_RESUME_PROCESS, D3DKMT_VIDMMESCAPETYPE_APERTURE_CORRUPTION_CHECK, D3DKMT_VIDMMESCAPETYPE_GET_BUDGET
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: d3dkmthk.h
+req.include-header: TBD
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmthk.h
+apiname:
+-	D3DKMT_VIDMMESCAPETYPE
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_VIDMMESCAPETYPE
 ---
 
 # _D3DKMT_VIDMMESCAPETYPE Enumeration
@@ -66,86 +71,86 @@ typedef enum _D3DKMT_VIDMMESCAPETYPE {
 ## Constants
 
 <table>
-
-<tr>
-<td>D3DKMT_VIDMMESCAPETYPE_APERTURE_CORRUPTION_CHECK</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DKMT_VIDMMESCAPETYPE_DEFRAG</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DKMT_VIDMMESCAPETYPE_EVICT</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DKMT_VIDMMESCAPETYPE_EVICT_BY_CRITERIA</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DKMT_VIDMMESCAPETYPE_EVICT_BY_NT_HANDLE</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DKMT_VIDMMESCAPETYPE_GET_BUDGET</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DKMT_VIDMMESCAPETYPE_GET_VAD_INFO</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DKMT_VIDMMESCAPETYPE_RESUME_PROCESS</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DKMT_VIDMMESCAPETYPE_RUN_COHERENCY_TEST</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DKMT_VIDMMESCAPETYPE_RUN_UNMAP_TO_DUMMY_PAGE_TEST</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DKMT_VIDMMESCAPETYPE_SET_BUDGET</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DKMT_VIDMMESCAPETYPE_SET_TRIM_INTERVALS</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DKMT_VIDMMESCAPETYPE_SETFAULT</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DKMT_VIDMMESCAPETYPE_SUSPEND_CPU_ACCESS_TEST</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DKMT_VIDMMESCAPETYPE_SUSPEND_PROCESS</td>
-<td></td>
-</tr>
-
-<tr>
-<td>D3DKMT_VIDMMESCAPETYPE_WAKE</td>
-<td></td>
-</tr>
+            
+                <tr>
+                    <td>D3DKMT_VIDMMESCAPETYPE_APERTURE_CORRUPTION_CHECK</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DKMT_VIDMMESCAPETYPE_DEFRAG</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DKMT_VIDMMESCAPETYPE_EVICT</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DKMT_VIDMMESCAPETYPE_EVICT_BY_CRITERIA</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DKMT_VIDMMESCAPETYPE_EVICT_BY_NT_HANDLE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DKMT_VIDMMESCAPETYPE_GET_BUDGET</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DKMT_VIDMMESCAPETYPE_GET_VAD_INFO</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DKMT_VIDMMESCAPETYPE_RESUME_PROCESS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DKMT_VIDMMESCAPETYPE_RUN_COHERENCY_TEST</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DKMT_VIDMMESCAPETYPE_RUN_UNMAP_TO_DUMMY_PAGE_TEST</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DKMT_VIDMMESCAPETYPE_SET_BUDGET</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DKMT_VIDMMESCAPETYPE_SET_TRIM_INTERVALS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DKMT_VIDMMESCAPETYPE_SETFAULT</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DKMT_VIDMMESCAPETYPE_SUSPEND_CPU_ACCESS_TEST</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DKMT_VIDMMESCAPETYPE_SUSPEND_PROCESS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>D3DKMT_VIDMMESCAPETYPE_WAKE</td>
+                    <td></td>
+                </tr>
 </table>
 
 

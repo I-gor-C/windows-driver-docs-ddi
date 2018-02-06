@@ -1,41 +1,47 @@
 ---
-UID : NF:dbgeng.IDebugRegisters2.GetNumberRegisters
-title : IDebugRegisters2::GetNumberRegisters method
-author : windows-driver-content
-description : The GetNumberRegisters method returns the number of registers on the target computer.
-old-location : debugger\getnumberregisters.htm
-old-project : debugger
-ms.assetid : 51c521fc-e89c-49c9-8110-de31af3bed83
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugRegisters2::GetNumberRegisters, GetNumberRegisters method [Windows Debugging], GetNumberRegisters, GetNumberRegisters method [Windows Debugging], IDebugRegisters2 interface, GetNumberRegisters method [Windows Debugging], IDebugRegisters interface, debugger.getnumberregisters, IDebugRegisters2 interface [Windows Debugging], GetNumberRegisters method, IDebugRegisters2, IDebugRegisters::GetNumberRegisters, dbgeng/IDebugRegisters2::GetNumberRegisters, dbgeng/IDebugRegisters::GetNumberRegisters, IDebugRegisters interface [Windows Debugging], GetNumberRegisters method, IDebugRegisters_b2fa1d95-0331-4c27-a3af-3cc8e895e88f.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : DbgEng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugRegisters2.GetNumberRegisters
+title: IDebugRegisters2::GetNumberRegisters method
+author: windows-driver-content
+description: The GetNumberRegisters method returns the number of registers on the target computer.
+old-location: debugger\getnumberregisters.htm
+old-project: debugger
+ms.assetid: 51c521fc-e89c-49c9-8110-de31af3bed83
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugRegisters2::GetNumberRegisters, GetNumberRegisters method [Windows Debugging], GetNumberRegisters, GetNumberRegisters method [Windows Debugging], IDebugRegisters2 interface, GetNumberRegisters method [Windows Debugging], IDebugRegisters interface, debugger.getnumberregisters, IDebugRegisters2 interface [Windows Debugging], GetNumberRegisters method, IDebugRegisters2, IDebugRegisters::GetNumberRegisters, dbgeng/IDebugRegisters2::GetNumberRegisters, dbgeng/IDebugRegisters::GetNumberRegisters, IDebugRegisters interface [Windows Debugging], GetNumberRegisters method, IDebugRegisters_b2fa1d95-0331-4c27-a3af-3cc8e895e88f.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: DbgEng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugRegisters.GetNumberRegisters
+-	IDebugRegisters2.GetNumberRegisters
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

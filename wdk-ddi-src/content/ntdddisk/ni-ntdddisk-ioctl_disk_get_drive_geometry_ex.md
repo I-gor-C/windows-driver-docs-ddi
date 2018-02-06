@@ -1,41 +1,46 @@
 ---
-UID : NI:ntdddisk.IOCTL_DISK_GET_DRIVE_GEOMETRY_EX
-title : IOCTL_DISK_GET_DRIVE_GEOMETRY_EX
-author : windows-driver-content
-description : Returns information about the physical disk's geometry (media type, number of cylinders, tracks per cylinder, sectors per track, and bytes per sector).The difference between IOCTL_DISK_GET_DRIVE_GEOMETRY_EX and the older IOCTL_DISK_GET_DRIVE_GEOMETRY request is that IOCTL_DISK_GET_DRIVE_GEOMETRY_EX can retrieve information from both Master Boot Record (MBR) and GUID Partition Table (GPT)-type partitioned media, whereas IOCTL_DISK_GET_DRIVE_GEOMETRY can only read MBR-style media.
-old-location : storage\ioctl_disk_get_drive_geometry_ex.htm
-old-project : storage
-ms.assetid : c0cf6b73-3283-4a58-845a-79f3b078db46
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_disk_get_drive_geometry_ex, IOCTL_DISK_GET_DRIVE_GEOMETRY_EX control code [Storage Devices], IOCTL_DISK_GET_DRIVE_GEOMETRY_EX, ntdddisk/IOCTL_DISK_GET_DRIVE_GEOMETRY_EX, k307_d20497cd-63a3-4e07-9920-b051d68841db.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntdddisk.h
-req.include-header : Ntdddisk.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DETECTION_TYPE
+UID: NI:ntdddisk.IOCTL_DISK_GET_DRIVE_GEOMETRY_EX
+title: IOCTL_DISK_GET_DRIVE_GEOMETRY_EX
+author: windows-driver-content
+description: Returns information about the physical disk's geometry (media type, number of cylinders, tracks per cylinder, sectors per track, and bytes per sector).The difference between IOCTL_DISK_GET_DRIVE_GEOMETRY_EX and the older IOCTL_DISK_GET_DRIVE_GEOMETRY request is that IOCTL_DISK_GET_DRIVE_GEOMETRY_EX can retrieve information from both Master Boot Record (MBR) and GUID Partition Table (GPT)-type partitioned media, whereas IOCTL_DISK_GET_DRIVE_GEOMETRY can only read MBR-style media.
+old-location: storage\ioctl_disk_get_drive_geometry_ex.htm
+old-project: storage
+ms.assetid: c0cf6b73-3283-4a58-845a-79f3b078db46
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_disk_get_drive_geometry_ex, IOCTL_DISK_GET_DRIVE_GEOMETRY_EX control code [Storage Devices], IOCTL_DISK_GET_DRIVE_GEOMETRY_EX, ntdddisk/IOCTL_DISK_GET_DRIVE_GEOMETRY_EX, k307_d20497cd-63a3-4e07-9920-b051d68841db.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntdddisk.h
+req.include-header: Ntdddisk.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntdddisk.h
+apiname:
+-	IOCTL_DISK_GET_DRIVE_GEOMETRY_EX
+product: Windows
+targetos: Windows
+req.typenames: DETECTION_TYPE
 ---
 
 # IOCTL_DISK_GET_DRIVE_GEOMETRY_EX IOCTL

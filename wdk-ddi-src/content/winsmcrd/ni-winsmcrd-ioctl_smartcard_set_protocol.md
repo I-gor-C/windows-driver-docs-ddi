@@ -1,42 +1,47 @@
 ---
-UID : NI:winsmcrd.IOCTL_SMARTCARD_SET_PROTOCOL
-title : IOCTL_SMARTCARD_SET_PROTOCOL
-author : windows-driver-content
-description : Sets the procotol the driver communicates to the smart card with after the card is detected.
-old-location : nfpdrivers\ioctl_smartcard_set_protocol.htm
-old-project : nfpdrivers
-ms.assetid : 9A54D427-128F-41C1-B6BD-EE09B0402C32
-ms.author : windowsdriverdev
-ms.date : 12/18/2017
-ms.keywords : nfpdrivers.ioctl_smartcard_set_protocol, IOCTL_SMARTCARD_SET_PROTOCOL control code [Near-Field Proximity Drivers], IOCTL_SMARTCARD_SET_PROTOCOL, winsmcrd/IOCTL_SMARTCARD_SET_PROTOCOL
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : winsmcrd.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDOT11_WPS_DEVICE_NAME, DOT11_WPS_DEVICE_NAME"
-req.product : Windows 10 or later.
+UID: NI:winsmcrd.IOCTL_SMARTCARD_SET_PROTOCOL
+title: IOCTL_SMARTCARD_SET_PROTOCOL
+author: windows-driver-content
+description: Sets the procotol the driver communicates to the smart card with after the card is detected.
+old-location: nfpdrivers\ioctl_smartcard_set_protocol.htm
+old-project: nfpdrivers
+ms.assetid: 9A54D427-128F-41C1-B6BD-EE09B0402C32
+ms.author: windowsdriverdev
+ms.date: 12/18/2017
+ms.keywords: nfpdrivers.ioctl_smartcard_set_protocol, IOCTL_SMARTCARD_SET_PROTOCOL control code [Near-Field Proximity Drivers], IOCTL_SMARTCARD_SET_PROTOCOL, winsmcrd/IOCTL_SMARTCARD_SET_PROTOCOL
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: winsmcrd.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	winsmcrd.h
+apiname:
+-	IOCTL_SMARTCARD_SET_PROTOCOL
+product: Windows
+targetos: Windows
+req.typenames: "*PDOT11_WPS_DEVICE_NAME, DOT11_WPS_DEVICE_NAME"
+req.product: Windows 10 or later.
 ---
 
 # IOCTL_SMARTCARD_SET_PROTOCOL IOCTL

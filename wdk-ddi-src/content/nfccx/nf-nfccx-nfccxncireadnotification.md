@@ -1,41 +1,46 @@
 ---
-UID : NF:nfccx.NfcCxNciReadNotification
-title : NfcCxNciReadNotification function
-author : windows-driver-content
-description : Called by the client driver when a read packet is available.
-old-location : nfpdrivers\_nfccxncireadnotification.htm
-old-project : nfpdrivers
-ms.assetid : 0D2FB16D-ABBC-428F-95D4-4B17E262D115
-ms.author : windowsdriverdev
-ms.date : 12/18/2017
-ms.keywords : NfcCxNciReadNotification, nfpdrivers._nfccxncireadnotification, nfccx/NfcCxNciReadNotification, NfcCxNciReadNotification method [Near-Field Proximity Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : nfccx.h
-req.include-header : Ncidef.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : None supported
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Nfccxstub.lib
-req.dll : NfcCx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NFC_CX_TRANSPORT_TYPE, *PNFC_CX_TRANSPORT_TYPE
+UID: NF:nfccx.NfcCxNciReadNotification
+title: NfcCxNciReadNotification function
+author: windows-driver-content
+description: Called by the client driver when a read packet is available.
+old-location: nfpdrivers\_nfccxncireadnotification.htm
+old-project: nfpdrivers
+ms.assetid: 0D2FB16D-ABBC-428F-95D4-4B17E262D115
+ms.author: windowsdriverdev
+ms.date: 12/18/2017
+ms.keywords: NfcCxNciReadNotification, nfpdrivers._nfccxncireadnotification, nfccx/NfcCxNciReadNotification, NfcCxNciReadNotification method [Near-Field Proximity Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: nfccx.h
+req.include-header: Ncidef.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: None supported
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Nfccxstub.lib
+req.dll: NfcCx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NfcCx.dll
+apiname:
+-	NfcCxNciReadNotification
+product: Windows
+targetos: Windows
+req.typenames: NFC_CX_TRANSPORT_TYPE, *PNFC_CX_TRANSPORT_TYPE
 ---
 
 

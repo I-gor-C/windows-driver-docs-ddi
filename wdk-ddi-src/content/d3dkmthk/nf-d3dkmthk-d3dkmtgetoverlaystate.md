@@ -1,41 +1,49 @@
 ---
-UID : NF:d3dkmthk.D3DKMTGetOverlayState
-title : D3DKMTGetOverlayState function
-author : windows-driver-content
-description : The D3DKMTGetOverlayState function retrieves the status about an overlay.
-old-location : display\d3dkmtgetoverlaystate.htm
-old-project : display
-ms.assetid : 6e3db876-c9f9-4de9-a0e2-5911132b72be
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DKMTGetOverlayState, d3dkmthk/D3DKMTGetOverlayState, D3DKMTGetOverlayState function [Display Devices], OpenGL_Functions_f2301345-c6d8-42bf-82f9-f8f97d29674f.xml, display.d3dkmtgetoverlaystate
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Universal
-req.target-min-winverclnt : D3DKMTGetOverlayState is supported beginning with the Windows 7 operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Gdi32.lib
-req.dll : Gdi32.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_DRIVERVERSION
+UID: NF:d3dkmthk.D3DKMTGetOverlayState
+title: D3DKMTGetOverlayState function
+author: windows-driver-content
+description: The D3DKMTGetOverlayState function retrieves the status about an overlay.
+old-location: display\d3dkmtgetoverlaystate.htm
+old-project: display
+ms.assetid: 6e3db876-c9f9-4de9-a0e2-5911132b72be
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DKMTGetOverlayState, d3dkmthk/D3DKMTGetOverlayState, D3DKMTGetOverlayState function [Display Devices], OpenGL_Functions_f2301345-c6d8-42bf-82f9-f8f97d29674f.xml, display.d3dkmtgetoverlaystate
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Universal
+req.target-min-winverclnt: D3DKMTGetOverlayState is supported beginning with the Windows 7 operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Gdi32.lib
+req.dll: Gdi32.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Gdi32.dll
+-	API-MS-Win-dx-d3dkmt-l1-1-0.dll
+-	API-MS-Win-dx-d3dkmt-l1-1-1.dll
+-	API-MS-Win-DX-D3DKMT-L1-1-2.dll
+apiname:
+-	D3DKMTGetOverlayState
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_DRIVERVERSION
 ---
 
 

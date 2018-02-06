@@ -1,41 +1,47 @@
 ---
-UID : NF:ntifs.RtlValidSid
-title : RtlValidSid function
-author : windows-driver-content
-description : The RtlValidSid routine validates a security identifier (SID) by verifying that the revision number is within a known range and that the number of subauthorities is less than the maximum.
-old-location : ifsk\rtlvalidsid.htm
-old-project : ifsk
-ms.assetid : d4579703-0d51-4e23-b458-b2be43951dac
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : RtlValidSid routine [Installable File System Drivers], ntifs/RtlValidSid, rtlref_8d79344c-bb78-433f-be34-84e314b232a0.xml, ifsk.rtlvalidsid, RtlValidSid
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe (kernel mode); Ntdll.dll (user mode)
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.RtlValidSid
+title: RtlValidSid function
+author: windows-driver-content
+description: The RtlValidSid routine validates a security identifier (SID) by verifying that the revision number is within a known range and that the number of subauthorities is less than the maximum.
+old-location: ifsk\rtlvalidsid.htm
+old-project: ifsk
+ms.assetid: d4579703-0d51-4e23-b458-b2be43951dac
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: RtlValidSid routine [Installable File System Drivers], ntifs/RtlValidSid, rtlref_8d79344c-bb78-433f-be34-84e314b232a0.xml, ifsk.rtlvalidsid, RtlValidSid
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe (kernel mode); Ntdll.dll (user mode)
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+-	Ntdll.dll
+apiname:
+-	RtlValidSid
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

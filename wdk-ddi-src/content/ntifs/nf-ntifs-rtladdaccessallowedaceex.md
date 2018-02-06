@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.RtlAddAccessAllowedAceEx
-title : RtlAddAccessAllowedAceEx function
-author : windows-driver-content
-description : The RtlAddAccessAllowedAceEx routine adds an access-allowed access control entry (ACE) with inheritance ACE flags to an access control list (ACL). The access is granted to the specified security identifier (SID).
-old-location : ifsk\rtladdaccessallowedaceex.htm
-old-project : ifsk
-ms.assetid : aeef74d8-d4a5-4ce4-b7f8-e2a2d263a678
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : rtlref_c28640a5-62e2-462a-9c30-b59faedc8386.xml, ntifs/RtlAddAccessAllowedAceEx, RtlAddAccessAllowedAceEx, RtlAddAccessAllowedAceEx routine [Installable File System Drivers], ifsk.rtladdaccessallowedaceex
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h, FltKernel.h
-req.target-type : Universal
-req.target-min-winverclnt : This routine is available in Microsoft Windows 2000 and later Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.RtlAddAccessAllowedAceEx
+title: RtlAddAccessAllowedAceEx function
+author: windows-driver-content
+description: The RtlAddAccessAllowedAceEx routine adds an access-allowed access control entry (ACE) with inheritance ACE flags to an access control list (ACL). The access is granted to the specified security identifier (SID).
+old-location: ifsk\rtladdaccessallowedaceex.htm
+old-project: ifsk
+ms.assetid: aeef74d8-d4a5-4ce4-b7f8-e2a2d263a678
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: rtlref_c28640a5-62e2-462a-9c30-b59faedc8386.xml, ntifs/RtlAddAccessAllowedAceEx, RtlAddAccessAllowedAceEx, RtlAddAccessAllowedAceEx routine [Installable File System Drivers], ifsk.rtladdaccessallowedaceex
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h, FltKernel.h
+req.target-type: Universal
+req.target-min-winverclnt: This routine is available in Microsoft Windows 2000 and later Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	RtlAddAccessAllowedAceEx
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

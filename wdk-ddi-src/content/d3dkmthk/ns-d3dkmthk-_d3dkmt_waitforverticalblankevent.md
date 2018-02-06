@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmthk._D3DKMT_WAITFORVERTICALBLANKEVENT
-title : "_D3DKMT_WAITFORVERTICALBLANKEVENT"
-author : windows-driver-content
-description : The D3DKMT_WAITFORVERTICALBLANKEVENT structure describes parameters for waiting for the vertical blanking interval to occur.
-old-location : display\d3dkmt_waitforverticalblankevent.htm
-old-project : display
-ms.assetid : dde8ebf7-7839-4bcc-8cb1-02a5ca922792
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : OpenGL_Structs_1072adb2-825b-4fee-a84a-b958e3d2e4d4.xml, d3dkmthk/D3DKMT_WAITFORVERTICALBLANKEVENT, D3DKMT_WAITFORVERTICALBLANKEVENT structure [Display Devices], display.d3dkmt_waitforverticalblankevent, D3DKMT_WAITFORVERTICALBLANKEVENT, _D3DKMT_WAITFORVERTICALBLANKEVENT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_WAITFORVERTICALBLANKEVENT
+UID: NS:d3dkmthk._D3DKMT_WAITFORVERTICALBLANKEVENT
+title: "_D3DKMT_WAITFORVERTICALBLANKEVENT"
+author: windows-driver-content
+description: The D3DKMT_WAITFORVERTICALBLANKEVENT structure describes parameters for waiting for the vertical blanking interval to occur.
+old-location: display\d3dkmt_waitforverticalblankevent.htm
+old-project: display
+ms.assetid: dde8ebf7-7839-4bcc-8cb1-02a5ca922792
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: OpenGL_Structs_1072adb2-825b-4fee-a84a-b958e3d2e4d4.xml, d3dkmthk/D3DKMT_WAITFORVERTICALBLANKEVENT, D3DKMT_WAITFORVERTICALBLANKEVENT structure [Display Devices], display.d3dkmt_waitforverticalblankevent, D3DKMT_WAITFORVERTICALBLANKEVENT, _D3DKMT_WAITFORVERTICALBLANKEVENT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmthk.h
+apiname:
+-	D3DKMT_WAITFORVERTICALBLANKEVENT
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_WAITFORVERTICALBLANKEVENT
 ---
 
 # _D3DKMT_WAITFORVERTICALBLANKEVENT structure

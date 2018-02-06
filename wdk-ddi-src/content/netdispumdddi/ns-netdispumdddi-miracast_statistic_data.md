@@ -1,41 +1,46 @@
 ---
-UID : NS:netdispumdddi.MIRACAST_STATISTIC_DATA
-title : MIRACAST_STATISTIC_DATA
-author : windows-driver-content
-description : Contains Miracast statistics data that the user-mode display driver reports to the operating system.
-old-location : display\miracast_statistic_data.htm
-old-project : display
-ms.assetid : 94D5C260-4076-4DB7-8ED3-E0549A872FEE
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.miracast_statistic_data, MIRACAST_STATISTIC_DATA structure [Display Devices], netdispumdddi/MIRACAST_STATISTIC_DATA, MIRACAST_STATISTIC_DATA
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : netdispumdddi.h
-req.include-header : Netdispumdddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8.1
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : MIRACAST_STATISTIC_DATA
+UID: NS:netdispumdddi.MIRACAST_STATISTIC_DATA
+title: MIRACAST_STATISTIC_DATA
+author: windows-driver-content
+description: Contains Miracast statistics data that the user-mode display driver reports to the operating system.
+old-location: display\miracast_statistic_data.htm
+old-project: display
+ms.assetid: 94D5C260-4076-4DB7-8ED3-E0549A872FEE
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.miracast_statistic_data, MIRACAST_STATISTIC_DATA structure [Display Devices], netdispumdddi/MIRACAST_STATISTIC_DATA, MIRACAST_STATISTIC_DATA
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: netdispumdddi.h
+req.include-header: Netdispumdddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8.1
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Netdispumdddi.h
+apiname:
+-	MIRACAST_STATISTIC_DATA
+product: Windows
+targetos: Windows
+req.typenames: MIRACAST_STATISTIC_DATA
 ---
 
 # MIRACAST_STATISTIC_DATA structure

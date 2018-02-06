@@ -1,41 +1,46 @@
 ---
-UID : NF:hbaapi.HBA_SendRLS
-title : HBA_SendRLS function
-author : windows-driver-content
-description : The HBA_SendRLS WMI routine sends a read link error status block (RLS) request through the indicated local port to the indicated remote port to retrieve a link error status block associated with the remote port.
-old-location : storage\hba_sendrls.htm
-old-project : storage
-ms.assetid : d2349c45-eb88-4584-bbdd-b7c46601a1bc
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : HBA_SendRLS, hbaapi/HBA_SendRLS, fibreHBA_rtns_8a7d150c-eeba-4850-9a93-7a48096d6f22.xml, HBA_SendRLS routine [Storage Devices], storage.hba_sendrls
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : hbaapi.h
-req.include-header : Hbaapi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Hbaapi.lib
-req.dll : Hbaapi.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HBA_WWNTYPE
+UID: NF:hbaapi.HBA_SendRLS
+title: HBA_SendRLS function
+author: windows-driver-content
+description: The HBA_SendRLS WMI routine sends a read link error status block (RLS) request through the indicated local port to the indicated remote port to retrieve a link error status block associated with the remote port.
+old-location: storage\hba_sendrls.htm
+old-project: storage
+ms.assetid: d2349c45-eb88-4584-bbdd-b7c46601a1bc
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: HBA_SendRLS, hbaapi/HBA_SendRLS, fibreHBA_rtns_8a7d150c-eeba-4850-9a93-7a48096d6f22.xml, HBA_SendRLS routine [Storage Devices], storage.hba_sendrls
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: hbaapi.h
+req.include-header: Hbaapi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Hbaapi.lib
+req.dll: Hbaapi.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Hbaapi.dll
+apiname:
+-	HBA_SendRLS
+product: Windows
+targetos: Windows
+req.typenames: HBA_WWNTYPE
 ---
 
 

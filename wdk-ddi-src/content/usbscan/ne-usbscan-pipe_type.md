@@ -1,42 +1,47 @@
 ---
-UID : NE:usbscan.PIPE_TYPE
-title : PIPE_TYPE
-author : windows-driver-content
-description : The PIPE_TYPE data type is used as input to the DeviceIoControl function, if the I/O control code is IOCTL_CANCEL_IO or IOCTL_RESET_PIPE.
-old-location : image\pipe_type.htm
-old-project : image
-ms.assetid : ae3077a3-01a8-4578-9a26-b8b14ec51a7a
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : WRITE_DATA_PIPE, usbscan/READ_DATA_PIPE, stifnc_dd4122fa-8df4-4190-91ec-248a1e63ab64.xml, PIPE_TYPE, usbscan/PIPE_TYPE, usbscan/EVENT_PIPE, PIPE_TYPE enumeration [Imaging Devices], EVENT_PIPE, READ_DATA_PIPE, usbscan/WRITE_DATA_PIPE, ALL_PIPE, usbscan/ALL_PIPE, image.pipe_type
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : usbscan.h
-req.include-header : Usbscan.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PIPE_TYPE
-req.product : Windows 10 or later.
+UID: NE:usbscan.PIPE_TYPE
+title: PIPE_TYPE
+author: windows-driver-content
+description: The PIPE_TYPE data type is used as input to the DeviceIoControl function, if the I/O control code is IOCTL_CANCEL_IO or IOCTL_RESET_PIPE.
+old-location: image\pipe_type.htm
+old-project: image
+ms.assetid: ae3077a3-01a8-4578-9a26-b8b14ec51a7a
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: WRITE_DATA_PIPE, usbscan/READ_DATA_PIPE, stifnc_dd4122fa-8df4-4190-91ec-248a1e63ab64.xml, PIPE_TYPE, usbscan/PIPE_TYPE, usbscan/EVENT_PIPE, PIPE_TYPE enumeration [Imaging Devices], EVENT_PIPE, READ_DATA_PIPE, usbscan/WRITE_DATA_PIPE, ALL_PIPE, usbscan/ALL_PIPE, image.pipe_type
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: usbscan.h
+req.include-header: Usbscan.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	usbscan.h
+apiname:
+-	PIPE_TYPE
+product: Windows
+targetos: Windows
+req.typenames: PIPE_TYPE
+req.product: Windows 10 or later.
 ---
 
 # PIPE_TYPE Enumeration
@@ -55,26 +60,26 @@ typedef enum  {
 ## Constants
 
 <table>
-
-<tr>
-<td>ALL_PIPE</td>
-<td>The operation should be performed on <i>all</i> transfer pipes (not just the pipes associated with the device handle supplied to <a href="https://msdn.microsoft.com/1d35c087-6672-4fc6-baa1-a886dd9d3878">DeviceIoControl</a>).</td>
-</tr>
-
-<tr>
-<td>EVENT_PIPE</td>
-<td>The operation should be performed on the interrupt pipe.</td>
-</tr>
-
-<tr>
-<td>READ_DATA_PIPE</td>
-<td>The operation should be performed on the bulk IN pipe.</td>
-</tr>
-
-<tr>
-<td>WRITE_DATA_PIPE</td>
-<td>The operation should be performed on the bulk OUT pipe.</td>
-</tr>
+            
+                <tr>
+                    <td>ALL_PIPE</td>
+                    <td>The operation should be performed on <i>all</i> transfer pipes (not just the pipes associated with the device handle supplied to <a href="https://msdn.microsoft.com/1d35c087-6672-4fc6-baa1-a886dd9d3878">DeviceIoControl</a>).</td>
+                </tr>
+            
+                <tr>
+                    <td>EVENT_PIPE</td>
+                    <td>The operation should be performed on the interrupt pipe.</td>
+                </tr>
+            
+                <tr>
+                    <td>READ_DATA_PIPE</td>
+                    <td>The operation should be performed on the bulk IN pipe.</td>
+                </tr>
+            
+                <tr>
+                    <td>WRITE_DATA_PIPE</td>
+                    <td>The operation should be performed on the bulk OUT pipe.</td>
+                </tr>
 </table>
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NC:scsiwmi.PSCSIWMI_QUERY_DATABLOCK
-title : PSCSIWMI_QUERY_DATABLOCK
-author : windows-driver-content
-description : A miniport driver's HwScsiWmiQueryDataBlock routine is called to obtain either a single instance or all instances of a data block.
-old-location : storage\hwscsiwmiquerydatablock.htm
-old-project : storage
-ms.assetid : a2e588b8-50d6-4bed-b50c-c42be24955f1
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.hwscsiwmiquerydatablock, HwScsiWmiQueryDataBlock callback function [Storage Devices], HwScsiWmiQueryDataBlock, PSCSIWMI_QUERY_DATABLOCK, PSCSIWMI_QUERY_DATABLOCK, scsiwmi/HwScsiWmiQueryDataBlock, Scsimini_1405dcfc-840b-4cc6-bd4c-63d071aa993e.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : scsiwmi.h
-req.include-header : Scsiwmi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SCSISCAN_INFO, *PSCSISCAN_INFO
-req.product : Windows 10 or later.
+UID: NC:scsiwmi.PSCSIWMI_QUERY_DATABLOCK
+title: PSCSIWMI_QUERY_DATABLOCK
+author: windows-driver-content
+description: A miniport driver's HwScsiWmiQueryDataBlock routine is called to obtain either a single instance or all instances of a data block.
+old-location: storage\hwscsiwmiquerydatablock.htm
+old-project: storage
+ms.assetid: a2e588b8-50d6-4bed-b50c-c42be24955f1
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.hwscsiwmiquerydatablock, HwScsiWmiQueryDataBlock callback function [Storage Devices], HwScsiWmiQueryDataBlock, PSCSIWMI_QUERY_DATABLOCK, PSCSIWMI_QUERY_DATABLOCK, scsiwmi/HwScsiWmiQueryDataBlock, Scsimini_1405dcfc-840b-4cc6-bd4c-63d071aa993e.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: scsiwmi.h
+req.include-header: Scsiwmi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	scsiwmi.h
+apiname:
+-	HwScsiWmiQueryDataBlock
+product: Windows
+targetos: Windows
+req.typenames: SCSISCAN_INFO, *PSCSISCAN_INFO
+req.product: Windows 10 or later.
 ---
 
 

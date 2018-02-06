@@ -1,41 +1,46 @@
 ---
-UID : NI:gnssdriver.IOCTL_GNSS_LISTEN_ERROR
-title : IOCTL_GNSS_LISTEN_ERROR
-author : windows-driver-content
-description : The IOCTL_GNSS_LISTEN_ERROR control code is used to start listening for ERROR events from the driver.
-old-location : sensors\ioctl_gnss_listen_error_.htm
-old-project : sensors
-ms.assetid : 4B08FB8D-8C4A-4C23-A809-11E7DF190236
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : sensors.ioctl_gnss_listen_error_, IOCTL_GNSS_LISTEN_ERROR control code [Sensor Devices], IOCTL_GNSS_LISTEN_ERROR, gnssdriver/IOCTL_GNSS_LISTEN_ERROR
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : gnssdriver.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : GNSS_SUPL_CERT_ACTION
+UID: NI:gnssdriver.IOCTL_GNSS_LISTEN_ERROR
+title: IOCTL_GNSS_LISTEN_ERROR
+author: windows-driver-content
+description: The IOCTL_GNSS_LISTEN_ERROR control code is used to start listening for ERROR events from the driver.
+old-location: sensors\ioctl_gnss_listen_error_.htm
+old-project: sensors
+ms.assetid: 4B08FB8D-8C4A-4C23-A809-11E7DF190236
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: sensors.ioctl_gnss_listen_error_, IOCTL_GNSS_LISTEN_ERROR control code [Sensor Devices], IOCTL_GNSS_LISTEN_ERROR, gnssdriver/IOCTL_GNSS_LISTEN_ERROR
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: gnssdriver.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	gnssdriver.h
+apiname:
+-	IOCTL_GNSS_LISTEN_ERROR
+product: Windows
+targetos: Windows
+req.typenames: GNSS_SUPL_CERT_ACTION
 ---
 
 # IOCTL_GNSS_LISTEN_ERROR IOCTL

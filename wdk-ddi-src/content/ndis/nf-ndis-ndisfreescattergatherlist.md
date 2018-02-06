@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisFreeScatterGatherList
-title : NdisFreeScatterGatherList function
-author : windows-driver-content
-description : The NdisFreeScatterGatherList function frees a scatter/gather list.
-old-location : netvista\ndisfreescattergatherlist.htm
-old-project : netvista
-ms.assetid : 140be989-e578-4bfe-8b9e-56abb274933a
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : ndis_shared_memory_ref_2376e740-d44c-4572-8731-7518d4765208.xml, netvista.ndisfreescattergatherlist, NdisFreeScatterGatherList function [Network Drivers Starting with Windows Vista], NdisFreeScatterGatherList, ndis/NdisFreeScatterGatherList
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported in NDIS 6.20 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : "= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisFreeScatterGatherList
+title: NdisFreeScatterGatherList function
+author: windows-driver-content
+description: The NdisFreeScatterGatherList function frees a scatter/gather list.
+old-location: netvista\ndisfreescattergatherlist.htm
+old-project: netvista
+ms.assetid: 140be989-e578-4bfe-8b9e-56abb274933a
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: ndis_shared_memory_ref_2376e740-d44c-4572-8731-7518d4765208.xml, netvista.ndisfreescattergatherlist, NdisFreeScatterGatherList function [Network Drivers Starting with Windows Vista], NdisFreeScatterGatherList, ndis/NdisFreeScatterGatherList
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported in NDIS 6.20 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: "= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisFreeScatterGatherList
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

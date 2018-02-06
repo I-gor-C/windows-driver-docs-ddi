@@ -1,42 +1,47 @@
 ---
-UID : NS:smclib._T1_DATA
-title : "_T1_DATA"
-author : windows-driver-content
-description : The T1_DATA structure is used by the smart card driver library to process T1 I/O.
-old-location : smartcrd\t1_data.htm
-old-project : smartcrd
-ms.assetid : af20cab0-c70b-404c-b6bd-54d9ecf75714
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : smartcrd.t1_data, *PT1_DATA, smclib/T1_DATA, T1_DATA, T1_DATA structure [Smart Card Reader Devices], T1_DATA, *PT1_DATA, _T1_DATA, scstruct_d4b3fe1d-28d8-45dc-86f1-2cb75a5bec85.xml, T1_DATA, *PT1_DATA structure [Smart Card Reader Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : smclib.h
-req.include-header : Smclib.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PT1_DATA, T1_DATA"
-req.product : Windows 10 or later.
+UID: NS:smclib._T1_DATA
+title: "_T1_DATA"
+author: windows-driver-content
+description: The T1_DATA structure is used by the smart card driver library to process T1 I/O.
+old-location: smartcrd\t1_data.htm
+old-project: smartcrd
+ms.assetid: af20cab0-c70b-404c-b6bd-54d9ecf75714
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: smartcrd.t1_data, *PT1_DATA, smclib/T1_DATA, T1_DATA, T1_DATA structure [Smart Card Reader Devices], T1_DATA, *PT1_DATA, _T1_DATA, scstruct_d4b3fe1d-28d8-45dc-86f1-2cb75a5bec85.xml, T1_DATA, *PT1_DATA structure [Smart Card Reader Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: smclib.h
+req.include-header: Smclib.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Smclib.h
+apiname:
+-	T1_DATA, *PT1_DATA
+product: Windows
+targetos: Windows
+req.typenames: "*PT1_DATA, T1_DATA"
+req.product: Windows 10 or later.
 ---
 
 # _T1_DATA structure

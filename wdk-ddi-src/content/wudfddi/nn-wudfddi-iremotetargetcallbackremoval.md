@@ -1,42 +1,47 @@
 ---
-UID : NN:wudfddi.IRemoteTargetCallbackRemoval
-title : IRemoteTargetCallbackRemoval
-author : windows-driver-content
-description : The IRemoteTargetCallbackRemoval interface provides callback functions that the framework calls to notify the driver about events that are associated with the removal of a remote I/O target.
-old-location : wdf\iremotetargetcallbackremoval.htm
-old-project : wdf
-ms.assetid : 72271173-8851-4980-9b52-f9e14f1fe071
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.iremotetargetcallbackremoval, IRemoteTargetCallbackRemoval interface, IRemoteTargetCallbackRemoval interface, described, IRemoteTargetCallbackRemoval, wudfddi/IRemoteTargetCallbackRemoval, UMDFIoTargetObjectRef_7508512a-9bfc-4563-bf01-48e9caf6ba4f.xml, umdf.iremotetargetcallbackremoval
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : wudfddi.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NN:wudfddi.IRemoteTargetCallbackRemoval
+title: IRemoteTargetCallbackRemoval
+author: windows-driver-content
+description: The IRemoteTargetCallbackRemoval interface provides callback functions that the framework calls to notify the driver about events that are associated with the removal of a remote I/O target.
+old-location: wdf\iremotetargetcallbackremoval.htm
+old-project: wdf
+ms.assetid: 72271173-8851-4980-9b52-f9e14f1fe071
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.iremotetargetcallbackremoval, IRemoteTargetCallbackRemoval interface, IRemoteTargetCallbackRemoval interface, described, IRemoteTargetCallbackRemoval, wudfddi/IRemoteTargetCallbackRemoval, UMDFIoTargetObjectRef_7508512a-9bfc-4563-bf01-48e9caf6ba4f.xml, umdf.iremotetargetcallbackremoval
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: wudfddi.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	wudfddi.h
+apiname:
+-	IRemoteTargetCallbackRemoval
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 # IRemoteTargetCallbackRemoval interface

@@ -1,42 +1,47 @@
 ---
-UID : NC:wdm.PBUILD_SCATTER_GATHER_LIST
-title : PBUILD_SCATTER_GATHER_LIST
-author : windows-driver-content
-description : The BuildScatterGatherList routine prepares the system for a DMA operation, using a driver-supplied buffer to build the scatter/gather list.
-old-location : kernel\buildscattergatherlist.htm
-old-project : kernel
-ms.assetid : 678b568a-2efe-443e-89f5-84d012431755
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.buildscattergatherlist, BuildScatterGatherList, BuildScatterGatherList callback function [Kernel-Mode Driver Architecture], BuildScatterGatherList, PBUILD_SCATTER_GATHER_LIST, PBUILD_SCATTER_GATHER_LIST, wdm/BuildScatterGatherList, kdma_cea6dde1-9a1d-4ffb-ac0d-d8a2b658b666.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdm.h
-req.include-header : Wdm.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows XP and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : IrqlDispatch
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : DISPATCH_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
-req.product : Windows 10 or later.
+UID: NC:wdm.PBUILD_SCATTER_GATHER_LIST
+title: PBUILD_SCATTER_GATHER_LIST
+author: windows-driver-content
+description: The BuildScatterGatherList routine prepares the system for a DMA operation, using a driver-supplied buffer to build the scatter/gather list.
+old-location: kernel\buildscattergatherlist.htm
+old-project: kernel
+ms.assetid: 678b568a-2efe-443e-89f5-84d012431755
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.buildscattergatherlist, BuildScatterGatherList, BuildScatterGatherList callback function [Kernel-Mode Driver Architecture], BuildScatterGatherList, PBUILD_SCATTER_GATHER_LIST, PBUILD_SCATTER_GATHER_LIST, wdm/BuildScatterGatherList, kdma_cea6dde1-9a1d-4ffb-ac0d-d8a2b658b666.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdm.h
+req.include-header: Wdm.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows XP and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: IrqlDispatch
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: DISPATCH_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	wdm.h
+apiname:
+-	BuildScatterGatherList
+product: Windows
+targetos: Windows
+req.typenames: WDI_TYPE_PMK_NAME, *PWDI_TYPE_PMK_NAME
+req.product: Windows 10 or later.
 ---
 
 

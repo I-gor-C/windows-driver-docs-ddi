@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugControl3.OutputVersionInformation
-title : IDebugControl3::OutputVersionInformation method
-author : windows-driver-content
-description : The OutputVersionInformation method prints version information about the debugger engine to the debugger console.
-old-location : debugger\outputversioninformation.htm
-old-project : debugger
-ms.assetid : cbf688b4-a174-4ab0-af98-2c0db1b2ab3a
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : dbgeng/IDebugControl3::OutputVersionInformation, IDebugControl_ea568b24-944d-4ed8-abd6-24b7c7771a1e.xml, OutputVersionInformation method [Windows Debugging], IDebugControl3, dbgeng/IDebugControl::OutputVersionInformation, dbgeng/IDebugControl2::OutputVersionInformation, IDebugControl3 interface [Windows Debugging], OutputVersionInformation method, OutputVersionInformation method [Windows Debugging], IDebugControl3 interface, OutputVersionInformation method [Windows Debugging], IDebugControl interface, debugger.outputversioninformation, OutputVersionInformation, IDebugControl2::OutputVersionInformation, IDebugControl3::OutputVersionInformation, IDebugControl interface [Windows Debugging], OutputVersionInformation method, IDebugControl::OutputVersionInformation, OutputVersionInformation method [Windows Debugging], IDebugControl2 interface, IDebugControl2 interface [Windows Debugging], OutputVersionInformation method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl3.OutputVersionInformation
+title: IDebugControl3::OutputVersionInformation method
+author: windows-driver-content
+description: The OutputVersionInformation method prints version information about the debugger engine to the debugger console.
+old-location: debugger\outputversioninformation.htm
+old-project: debugger
+ms.assetid: cbf688b4-a174-4ab0-af98-2c0db1b2ab3a
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: dbgeng/IDebugControl3::OutputVersionInformation, IDebugControl_ea568b24-944d-4ed8-abd6-24b7c7771a1e.xml, OutputVersionInformation method [Windows Debugging], IDebugControl3, dbgeng/IDebugControl::OutputVersionInformation, dbgeng/IDebugControl2::OutputVersionInformation, IDebugControl3 interface [Windows Debugging], OutputVersionInformation method, OutputVersionInformation method [Windows Debugging], IDebugControl3 interface, OutputVersionInformation method [Windows Debugging], IDebugControl interface, debugger.outputversioninformation, OutputVersionInformation, IDebugControl2::OutputVersionInformation, IDebugControl3::OutputVersionInformation, IDebugControl interface [Windows Debugging], OutputVersionInformation method, IDebugControl::OutputVersionInformation, OutputVersionInformation method [Windows Debugging], IDebugControl2 interface, IDebugControl2 interface [Windows Debugging], OutputVersionInformation method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl.OutputVersionInformation
+-	IDebugControl2.OutputVersionInformation
+-	IDebugControl3.OutputVersionInformation
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

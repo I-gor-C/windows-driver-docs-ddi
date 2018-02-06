@@ -1,41 +1,47 @@
 ---
-UID : NF:hidpi.HidP_UnsetUsages
-title : HidP_UnsetUsages function
-author : windows-driver-content
-description : The HidP_UnsetUsages routine sets specified HID control button usages OFF (zero) in a HID report.
-old-location : hid\hidp_unsetusages.htm
-old-project : hid
-ms.assetid : 55dcd9f3-6903-4718-98c2-ee42ee1026e3
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : hidfunc_7ffa6677-1a45-4e19-8001-116fbeacf097.xml, hid.hidp_unsetusages, hidpi/HidP_UnsetUsages, HidP_UnsetUsages, HidP_UnsetUsages routine [Human Input Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : hidpi.h
-req.include-header : Hidpi.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 2000 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Hidparse.lib
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HIDP_REPORT_TYPE
+UID: NF:hidpi.HidP_UnsetUsages
+title: HidP_UnsetUsages function
+author: windows-driver-content
+description: The HidP_UnsetUsages routine sets specified HID control button usages OFF (zero) in a HID report.
+old-location: hid\hidp_unsetusages.htm
+old-project: hid
+ms.assetid: 55dcd9f3-6903-4718-98c2-ee42ee1026e3
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: hidfunc_7ffa6677-1a45-4e19-8001-116fbeacf097.xml, hid.hidp_unsetusages, hidpi/HidP_UnsetUsages, HidP_UnsetUsages, HidP_UnsetUsages routine [Human Input Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: hidpi.h
+req.include-header: Hidpi.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 2000 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Hidparse.lib
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Hidparse.lib
+-	Hidparse.dll
+apiname:
+-	HidP_UnsetUsages
+product: Windows
+targetos: Windows
+req.typenames: HIDP_REPORT_TYPE
 ---
 
 

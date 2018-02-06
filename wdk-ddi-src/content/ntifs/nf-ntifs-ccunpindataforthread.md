@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.CcUnpinDataForThread
-title : CcUnpinDataForThread function
-author : windows-driver-content
-description : The CcUnpinDataForThread routine releases pages of a cached file whose buffer control block (BCB) was modified by an earlier call to CcSetBcbOwnerPointer.
-old-location : ifsk\ccunpindataforthread.htm
-old-project : ifsk
-ms.assetid : 9c29689c-ce5e-4b29-a17b-32d96f8f87e7
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ccref_71102887-ef3b-44b1-8b1f-e2b07dea3392.xml, ifsk.ccunpindataforthread, CcUnpinDataForThread routine [Installable File System Drivers], ntifs/CcUnpinDataForThread, CcUnpinDataForThread
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.CcUnpinDataForThread
+title: CcUnpinDataForThread function
+author: windows-driver-content
+description: The CcUnpinDataForThread routine releases pages of a cached file whose buffer control block (BCB) was modified by an earlier call to CcSetBcbOwnerPointer.
+old-location: ifsk\ccunpindataforthread.htm
+old-project: ifsk
+ms.assetid: 9c29689c-ce5e-4b29-a17b-32d96f8f87e7
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ccref_71102887-ef3b-44b1-8b1f-e2b07dea3392.xml, ifsk.ccunpindataforthread, CcUnpinDataForThread routine [Installable File System Drivers], ntifs/CcUnpinDataForThread, CcUnpinDataForThread
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	CcUnpinDataForThread
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

@@ -1,42 +1,50 @@
 ---
-UID : NF:wdfstring.WdfStringGetUnicodeString
-title : WdfStringGetUnicodeString function
-author : windows-driver-content
-description : The WdfStringGetUnicodeString method retrieves the Unicode string that is assigned to a specified framework string object.
-old-location : wdf\wdfstringgetunicodestring.htm
-old-project : wdf
-ms.assetid : 39041953-11ef-4f31-9b7e-09ce40b6b930
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdfstring/WdfStringGetUnicodeString, wdf.wdfstringgetunicodestring, DFStringObjectRef_d02387c6-8b77-479e-a72a-2b0a323f83a9.xml, WdfStringGetUnicodeString, PFN_WDFSTRINGGETUNICODESTRING, WdfStringGetUnicodeString method, kmdf.wdfstringgetunicodestring
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfstring.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_REQUEST_SEND_OPTIONS, *PWDF_REQUEST_SEND_OPTIONS
-req.product : Windows 10 or later.
+UID: NF:wdfstring.WdfStringGetUnicodeString
+title: WdfStringGetUnicodeString function
+author: windows-driver-content
+description: The WdfStringGetUnicodeString method retrieves the Unicode string that is assigned to a specified framework string object.
+old-location: wdf\wdfstringgetunicodestring.htm
+old-project: wdf
+ms.assetid: 39041953-11ef-4f31-9b7e-09ce40b6b930
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdfstring/WdfStringGetUnicodeString, wdf.wdfstringgetunicodestring, DFStringObjectRef_d02387c6-8b77-479e-a72a-2b0a323f83a9.xml, WdfStringGetUnicodeString, PFN_WDFSTRINGGETUNICODESTRING, WdfStringGetUnicodeString method, kmdf.wdfstringgetunicodestring
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfstring.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+-	WUDFx02000.dll
+-	WUDFx02000.dll.dll
+apiname:
+-	WdfStringGetUnicodeString
+product: Windows
+targetos: Windows
+req.typenames: WDF_REQUEST_SEND_OPTIONS, *PWDF_REQUEST_SEND_OPTIONS
+req.product: Windows 10 or later.
 ---
 
 

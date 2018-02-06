@@ -1,41 +1,46 @@
 ---
-UID : NS:bthddi._CHANNEL_CONFIG_PARAMETERS
-title : "_CHANNEL_CONFIG_PARAMETERS"
-author : windows-driver-content
-description : The CHANNEL_CONFIG_PARAMETERS structure contains configuration parameters for inbound and outbound directions of a L2CAP channel.
-old-location : bltooth\channel_config_parameters.htm
-old-project : bltooth
-ms.assetid : c2201e3c-c680-4a22-adf5-5131fb138066
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : PCHANNEL_CONFIG_PARAMETERS, CHANNEL_CONFIG_PARAMETERS, CHANNEL_CONFIG_PARAMETERS structure [Bluetooth Devices], bthddi/CHANNEL_CONFIG_PARAMETERS, bltooth.channel_config_parameters, PCHANNEL_CONFIG_PARAMETERS structure pointer [Bluetooth Devices], _CHANNEL_CONFIG_PARAMETERS, *PCHANNEL_CONFIG_PARAMETERS, bth_structs_c5360d7a-eb76-4b27-8507-8de862737a06.xml, bthddi/PCHANNEL_CONFIG_PARAMETERS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : bthddi.h
-req.include-header : Bthddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Versions:\_Supported in Windows Vista, and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback   function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access   paged memory)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : CHANNEL_CONFIG_PARAMETERS, *PCHANNEL_CONFIG_PARAMETERS
+UID: NS:bthddi._CHANNEL_CONFIG_PARAMETERS
+title: "_CHANNEL_CONFIG_PARAMETERS"
+author: windows-driver-content
+description: The CHANNEL_CONFIG_PARAMETERS structure contains configuration parameters for inbound and outbound directions of a L2CAP channel.
+old-location: bltooth\channel_config_parameters.htm
+old-project: bltooth
+ms.assetid: c2201e3c-c680-4a22-adf5-5131fb138066
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: PCHANNEL_CONFIG_PARAMETERS, CHANNEL_CONFIG_PARAMETERS, CHANNEL_CONFIG_PARAMETERS structure [Bluetooth Devices], bthddi/CHANNEL_CONFIG_PARAMETERS, bltooth.channel_config_parameters, PCHANNEL_CONFIG_PARAMETERS structure pointer [Bluetooth Devices], _CHANNEL_CONFIG_PARAMETERS, *PCHANNEL_CONFIG_PARAMETERS, bth_structs_c5360d7a-eb76-4b27-8507-8de862737a06.xml, bthddi/PCHANNEL_CONFIG_PARAMETERS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: bthddi.h
+req.include-header: Bthddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Versions:\_Supported in Windows Vista, and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Developers should code this function to operate at either IRQL = DISPATCH_LEVEL (if the callback   function does not access paged memory), or IRQL = PASSIVE_LEVEL (if the callback function must access   paged memory)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	bthddi.h
+apiname:
+-	CHANNEL_CONFIG_PARAMETERS
+product: Windows
+targetos: Windows
+req.typenames: CHANNEL_CONFIG_PARAMETERS, *PCHANNEL_CONFIG_PARAMETERS
 ---
 
 # _CHANNEL_CONFIG_PARAMETERS structure

@@ -1,41 +1,46 @@
 ---
-UID : NI:hidclass.IOCTL_HID_FLUSH_QUEUE
-title : IOCTL_HID_FLUSH_QUEUE
-author : windows-driver-content
-description : The IOCTL_HID_FLUSH_QUEUE request dequeues all of the unparsed input reports from a top-level collection's input report queue.
-old-location : hid\ioctl_hid_flush_queue.htm
-old-project : hid
-ms.assetid : 97914eb2-18fd-4b7b-8dcd-475c4d98927c
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : hid.ioctl_hid_flush_queue, IOCTL_HID_FLUSH_QUEUE control code [Human Input Devices], IOCTL_HID_FLUSH_QUEUE, hidclass/IOCTL_HID_FLUSH_QUEUE, hidioreq_d7b2ccb0-76c8-4aa7-9d05-b8226106baa6.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : hidclass.h
-req.include-header : Hidclass.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HDAUDIO_STREAM_FORMAT, *PHDAUDIO_STREAM_FORMAT
+UID: NI:hidclass.IOCTL_HID_FLUSH_QUEUE
+title: IOCTL_HID_FLUSH_QUEUE
+author: windows-driver-content
+description: The IOCTL_HID_FLUSH_QUEUE request dequeues all of the unparsed input reports from a top-level collection's input report queue.
+old-location: hid\ioctl_hid_flush_queue.htm
+old-project: hid
+ms.assetid: 97914eb2-18fd-4b7b-8dcd-475c4d98927c
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: hid.ioctl_hid_flush_queue, IOCTL_HID_FLUSH_QUEUE control code [Human Input Devices], IOCTL_HID_FLUSH_QUEUE, hidclass/IOCTL_HID_FLUSH_QUEUE, hidioreq_d7b2ccb0-76c8-4aa7-9d05-b8226106baa6.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: hidclass.h
+req.include-header: Hidclass.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hidclass.h
+apiname:
+-	IOCTL_HID_FLUSH_QUEUE
+product: Windows
+targetos: Windows
+req.typenames: HDAUDIO_STREAM_FORMAT, *PHDAUDIO_STREAM_FORMAT
 ---
 
 # IOCTL_HID_FLUSH_QUEUE IOCTL

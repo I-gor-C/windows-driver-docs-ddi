@@ -1,42 +1,48 @@
 ---
-UID : NF:srb.ScsiPortReadPortBufferUchar
-title : ScsiPortReadPortBufferUchar function
-author : windows-driver-content
-description : The ScsiPortReadPortBufferUchar routine transfers a given number of unsigned byte values from the HBA to a buffer.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future.
-old-location : storage\scsiportreadportbufferuchar.htm
-old-project : storage
-ms.assetid : 9444670d-5b9f-4d77-b867-ac5608c24e02
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.scsiportreadportbufferuchar, ScsiPortReadPortBufferUchar, srb/ScsiPortReadPortBufferUchar, scsiprt_db25989e-3b44-4f45-b768-b1b11c2ed25a.xml, ScsiPortReadPortBufferUchar routine [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : srb.h
-req.include-header : Miniport.h, Scsi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Scsiport.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SPB_CONTROLLER_CONFIG, *PSPB_CONTROLLER_CONFIG
-req.product : Windows 10 or later.
+UID: NF:srb.ScsiPortReadPortBufferUchar
+title: ScsiPortReadPortBufferUchar function
+author: windows-driver-content
+description: The ScsiPortReadPortBufferUchar routine transfers a given number of unsigned byte values from the HBA to a buffer.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future.
+old-location: storage\scsiportreadportbufferuchar.htm
+old-project: storage
+ms.assetid: 9444670d-5b9f-4d77-b867-ac5608c24e02
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.scsiportreadportbufferuchar, ScsiPortReadPortBufferUchar, srb/ScsiPortReadPortBufferUchar, scsiprt_db25989e-3b44-4f45-b768-b1b11c2ed25a.xml, ScsiPortReadPortBufferUchar routine [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: srb.h
+req.include-header: Miniport.h, Scsi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Scsiport.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Scsiport.lib
+-	Scsiport.dll
+apiname:
+-	ScsiPortReadPortBufferUchar
+product: Windows
+targetos: Windows
+req.typenames: SPB_CONTROLLER_CONFIG, *PSPB_CONTROLLER_CONFIG
+req.product: Windows 10 or later.
 ---
 
 

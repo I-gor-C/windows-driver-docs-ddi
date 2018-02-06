@@ -1,42 +1,47 @@
 ---
-UID : NF:video.VideoPortUnlockBuffer
-title : VideoPortUnlockBuffer function
-author : windows-driver-content
-description : The VideoPortUnLockBuffer function unlocks physical pages described by the specified memory descriptor list (MDL).
-old-location : display\videoportunlockbuffer.htm
-old-project : display
-ms.assetid : d5d34f32-026b-4c9f-86ae-a835d4e9c381
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : VideoPortUnlockBuffer function [Display Devices], VideoPortUnlockBuffer, display.videoportunlockbuffer, video/VideoPortUnlockBuffer, VideoPort_Functions_2cb5a81f-1956-4431-bf54-7ee6e3d79eab.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : video.h
-req.include-header : Video.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows XP and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Videoprt.lib
-req.dll : Videoprt.sys
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VIDEO_PORT_SERVICES
-req.product : Windows 10 or later.
+UID: NF:video.VideoPortUnlockBuffer
+title: VideoPortUnlockBuffer function
+author: windows-driver-content
+description: The VideoPortUnLockBuffer function unlocks physical pages described by the specified memory descriptor list (MDL).
+old-location: display\videoportunlockbuffer.htm
+old-project: display
+ms.assetid: d5d34f32-026b-4c9f-86ae-a835d4e9c381
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: VideoPortUnlockBuffer function [Display Devices], VideoPortUnlockBuffer, display.videoportunlockbuffer, video/VideoPortUnlockBuffer, VideoPort_Functions_2cb5a81f-1956-4431-bf54-7ee6e3d79eab.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: video.h
+req.include-header: Video.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows XP and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Videoprt.lib
+req.dll: Videoprt.sys
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Videoprt.sys
+apiname:
+-	VideoPortUnlockBuffer
+product: Windows
+targetos: Windows
+req.typenames: VIDEO_PORT_SERVICES
+req.product: Windows 10 or later.
 ---
 
 

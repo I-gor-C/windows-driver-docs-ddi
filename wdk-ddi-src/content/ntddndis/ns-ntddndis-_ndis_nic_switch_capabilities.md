@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddndis._NDIS_NIC_SWITCH_CAPABILITIES
-title : "_NDIS_NIC_SWITCH_CAPABILITIES"
-author : windows-driver-content
-description : The NDIS_NIC_SWITCH_CAPABILITIES structure specifies the capabilities of a NIC switch on the network adapter.
-old-location : netvista\ndis_nic_switch_capabilities.htm
-old-project : netvista
-ms.assetid : bc4b56bd-583f-4b41-b5a7-90958ce65f42
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : ntddndis/NDIS_NIC_SWITCH_CAPABILITIES, ntddndis/PNDIS_NIC_SWITCH_CAPABILITIES, *PNDIS_NIC_SWITCH_CAPABILITIES, _NDIS_NIC_SWITCH_CAPABILITIES, NDIS_NIC_SWITCH_CAPABILITIES, NDIS_NIC_SWITCH_CAPABILITIES structure [Network Drivers Starting with Windows Vista], PNDIS_NIC_SWITCH_CAPABILITIES, virtual_machine_queue_ref_b71fb086-5613-4ebb-ac19-97bd3bd9c55f.xml, PNDIS_NIC_SWITCH_CAPABILITIES structure pointer [Network Drivers Starting with Windows Vista], netvista.ndis_nic_switch_capabilities
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.20 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_NIC_SWITCH_CAPABILITIES, *PNDIS_NIC_SWITCH_CAPABILITIES
+UID: NS:ntddndis._NDIS_NIC_SWITCH_CAPABILITIES
+title: "_NDIS_NIC_SWITCH_CAPABILITIES"
+author: windows-driver-content
+description: The NDIS_NIC_SWITCH_CAPABILITIES structure specifies the capabilities of a NIC switch on the network adapter.
+old-location: netvista\ndis_nic_switch_capabilities.htm
+old-project: netvista
+ms.assetid: bc4b56bd-583f-4b41-b5a7-90958ce65f42
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: ntddndis/NDIS_NIC_SWITCH_CAPABILITIES, ntddndis/PNDIS_NIC_SWITCH_CAPABILITIES, *PNDIS_NIC_SWITCH_CAPABILITIES, _NDIS_NIC_SWITCH_CAPABILITIES, NDIS_NIC_SWITCH_CAPABILITIES, NDIS_NIC_SWITCH_CAPABILITIES structure [Network Drivers Starting with Windows Vista], PNDIS_NIC_SWITCH_CAPABILITIES, virtual_machine_queue_ref_b71fb086-5613-4ebb-ac19-97bd3bd9c55f.xml, PNDIS_NIC_SWITCH_CAPABILITIES structure pointer [Network Drivers Starting with Windows Vista], netvista.ndis_nic_switch_capabilities
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.20 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddndis.h
+apiname:
+-	NDIS_NIC_SWITCH_CAPABILITIES
+product: Windows
+targetos: Windows
+req.typenames: NDIS_NIC_SWITCH_CAPABILITIES, *PNDIS_NIC_SWITCH_CAPABILITIES
 ---
 
 # _NDIS_NIC_SWITCH_CAPABILITIES structure

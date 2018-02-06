@@ -1,41 +1,46 @@
 ---
-UID : NS:pointofservicedriverinterface._MSR_DATA_RECEIVED
-title : "_MSR_DATA_RECEIVED"
-author : windows-driver-content
-description : This structure contains the data read from a swiped magnetic stripe card.
-old-location : pos\msr_data_received.htm
-old-project : pos
-ms.assetid : f103724c-25c4-4dec-a7a3-9713440ca833
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : PMSR_DATA_RECEIVED, pointofservicedriverinterface/MSR_DATA_RECEIVED, PMSR_DATA_RECEIVED structure pointer, pos.msr_data_received, MSR_DATA_RECEIVED, MSR_DATA_RECEIVED structure, _MSR_DATA_RECEIVED, pointofservicedriverinterface/PMSR_DATA_RECEIVED, *PMSR_DATA_RECEIVED
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : pointofservicedriverinterface.h
-req.include-header : PointOfServiceDriverInterface.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PMSR_DATA_RECEIVED, MSR_DATA_RECEIVED"
+UID: NS:pointofservicedriverinterface._MSR_DATA_RECEIVED
+title: "_MSR_DATA_RECEIVED"
+author: windows-driver-content
+description: This structure contains the data read from a swiped magnetic stripe card.
+old-location: pos\msr_data_received.htm
+old-project: pos
+ms.assetid: f103724c-25c4-4dec-a7a3-9713440ca833
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: PMSR_DATA_RECEIVED, pointofservicedriverinterface/MSR_DATA_RECEIVED, PMSR_DATA_RECEIVED structure pointer, pos.msr_data_received, MSR_DATA_RECEIVED, MSR_DATA_RECEIVED structure, _MSR_DATA_RECEIVED, pointofservicedriverinterface/PMSR_DATA_RECEIVED, *PMSR_DATA_RECEIVED
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: pointofservicedriverinterface.h
+req.include-header: PointOfServiceDriverInterface.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	PointOfServiceDriverInterface.h
+apiname:
+-	MSR_DATA_RECEIVED
+product: Windows
+targetos: Windows
+req.typenames: "*PMSR_DATA_RECEIVED, MSR_DATA_RECEIVED"
 ---
 
 # _MSR_DATA_RECEIVED structure

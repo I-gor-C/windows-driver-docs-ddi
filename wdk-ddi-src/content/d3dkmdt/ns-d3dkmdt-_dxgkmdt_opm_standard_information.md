@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmdt._DXGKMDT_OPM_STANDARD_INFORMATION
-title : "_DXGKMDT_OPM_STANDARD_INFORMATION"
-author : windows-driver-content
-description : The DXGKMDT_OPM_STANDARD_INFORMATION structure contains information that is retrieved in a call to the DxgkDdiOPMGetInformation or DxgkDdiOPMGetCOPPCompatibleInformation function. The type of information is described in the ulInformation member.
-old-location : display\dxgkmdt_opm_standard_information.htm
-old-project : display
-ms.assetid : 5862e6eb-acf8-4034-ad8f-d59f87c49596
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DXGKMDT_OPM_STANDARD_INFORMATION, display.dxgkmdt_opm_standard_information, d3dkmdt/DXGKMDT_OPM_STANDARD_INFORMATION, DmStructs_95069fc9-f530-4764-900b-0fa6dee51656.xml, _DXGKMDT_OPM_STANDARD_INFORMATION, DXGKMDT_OPM_STANDARD_INFORMATION structure [Display Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmdt.h
-req.include-header : D3dkmdt.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGKMDT_OPM_STANDARD_INFORMATION
+UID: NS:d3dkmdt._DXGKMDT_OPM_STANDARD_INFORMATION
+title: "_DXGKMDT_OPM_STANDARD_INFORMATION"
+author: windows-driver-content
+description: The DXGKMDT_OPM_STANDARD_INFORMATION structure contains information that is retrieved in a call to the DxgkDdiOPMGetInformation or DxgkDdiOPMGetCOPPCompatibleInformation function. The type of information is described in the ulInformation member.
+old-location: display\dxgkmdt_opm_standard_information.htm
+old-project: display
+ms.assetid: 5862e6eb-acf8-4034-ad8f-d59f87c49596
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DXGKMDT_OPM_STANDARD_INFORMATION, display.dxgkmdt_opm_standard_information, d3dkmdt/DXGKMDT_OPM_STANDARD_INFORMATION, DmStructs_95069fc9-f530-4764-900b-0fa6dee51656.xml, _DXGKMDT_OPM_STANDARD_INFORMATION, DXGKMDT_OPM_STANDARD_INFORMATION structure [Display Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmdt.h
+req.include-header: D3dkmdt.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmdt.h
+apiname:
+-	DXGKMDT_OPM_STANDARD_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: DXGKMDT_OPM_STANDARD_INFORMATION
 ---
 
 # _DXGKMDT_OPM_STANDARD_INFORMATION structure

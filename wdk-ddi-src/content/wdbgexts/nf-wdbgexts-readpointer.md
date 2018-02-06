@@ -1,42 +1,47 @@
 ---
-UID : NF:wdbgexts.ReadPointer
-title : ReadPointer function
-author : windows-driver-content
-description : The ReadPointer function reads a pointer from the target.
-old-location : debugger\readpointer.htm
-old-project : debugger
-ms.assetid : 354b1854-2b3b-4fcf-81cb-fd24595cd9bb
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : WdbgExts_Ref_3d78e28a-910f-4b82-a262-28d83d87c6f1.xml, wdbgexts/ReadPointer, debugger.readpointer, ReadPointer function [Windows Debugging], ReadPointer
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdbgexts.h
-req.include-header : Wdbgexts.h, Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXT_TDOP
-req.product : Windows 10 or later.
+UID: NF:wdbgexts.ReadPointer
+title: ReadPointer function
+author: windows-driver-content
+description: The ReadPointer function reads a pointer from the target.
+old-location: debugger\readpointer.htm
+old-project: debugger
+ms.assetid: 354b1854-2b3b-4fcf-81cb-fd24595cd9bb
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: WdbgExts_Ref_3d78e28a-910f-4b82-a262-28d83d87c6f1.xml, wdbgexts/ReadPointer, debugger.readpointer, ReadPointer function [Windows Debugging], ReadPointer
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdbgexts.h
+req.include-header: Wdbgexts.h, Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdbgexts.h
+apiname:
+-	ReadPointer
+product: Windows
+targetos: Windows
+req.typenames: EXT_TDOP
+req.product: Windows 10 or later.
 ---
 
 

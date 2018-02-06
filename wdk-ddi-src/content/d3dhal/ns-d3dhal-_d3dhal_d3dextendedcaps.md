@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dhal._D3DHAL_D3DEXTENDEDCAPS
-title : "_D3DHAL_D3DEXTENDEDCAPS"
-author : windows-driver-content
-description : D3DHAL_D3DEXTENDEDCAPS describes additional 3D capabilities of the driver.
-old-location : display\d3dhal_d3dextendedcaps.htm
-old-project : display
-ms.assetid : b1e63dce-6d51-438c-a4aa-cc17d9292576
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DHAL_D3DEXTENDEDCAPS, LPD3DHAL_D3DEXTENDEDCAPS structure pointer [Display Devices], d3dhal/LPD3DHAL_D3DEXTENDEDCAPS, *LPD3DHAL_D3DEXTENDEDCAPS, D3DHAL_D3DEXTENDEDCAPS structure [Display Devices], _D3DHAL_D3DEXTENDEDCAPS, d3dstrct_f8cf62b4-6fd7-4a14-aa62-61e8f51ed444.xml, d3dhal/D3DHAL_D3DEXTENDEDCAPS, LPD3DHAL_D3DEXTENDEDCAPS, display.d3dhal_d3dextendedcaps
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dhal.h
-req.include-header : D3dhal.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DHAL_D3DEXTENDEDCAPS
+UID: NS:d3dhal._D3DHAL_D3DEXTENDEDCAPS
+title: "_D3DHAL_D3DEXTENDEDCAPS"
+author: windows-driver-content
+description: D3DHAL_D3DEXTENDEDCAPS describes additional 3D capabilities of the driver.
+old-location: display\d3dhal_d3dextendedcaps.htm
+old-project: display
+ms.assetid: b1e63dce-6d51-438c-a4aa-cc17d9292576
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DHAL_D3DEXTENDEDCAPS, LPD3DHAL_D3DEXTENDEDCAPS structure pointer [Display Devices], d3dhal/LPD3DHAL_D3DEXTENDEDCAPS, *LPD3DHAL_D3DEXTENDEDCAPS, D3DHAL_D3DEXTENDEDCAPS structure [Display Devices], _D3DHAL_D3DEXTENDEDCAPS, d3dstrct_f8cf62b4-6fd7-4a14-aa62-61e8f51ed444.xml, d3dhal/D3DHAL_D3DEXTENDEDCAPS, LPD3DHAL_D3DEXTENDEDCAPS, display.d3dhal_d3dextendedcaps
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dhal.h
+req.include-header: D3dhal.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dhal.h
+apiname:
+-	D3DHAL_D3DEXTENDEDCAPS
+product: Windows
+targetos: Windows
+req.typenames: D3DHAL_D3DEXTENDEDCAPS
 ---
 
 # _D3DHAL_D3DEXTENDEDCAPS structure

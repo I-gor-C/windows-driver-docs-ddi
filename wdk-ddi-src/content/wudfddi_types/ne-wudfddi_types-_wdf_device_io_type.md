@@ -1,42 +1,47 @@
 ---
-UID : NE:wudfddi_types._WDF_DEVICE_IO_TYPE
-title : "_WDF_DEVICE_IO_TYPE"
-author : windows-driver-content
-description : The WDF_DEVICE_IO_TYPE enumeration is used to specify a method for accessing data buffers.
-old-location : wdf\wdf_device_io_type__umdf_.htm
-old-project : wdf
-ms.assetid : 52733647-d577-4507-a5ad-5f56f3a9f8a2
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WdfDeviceIoNeither, wudfddi_types/WdfDeviceIoBufferedOrDirect, WDF_DEVICE_IO_TYPE enumeration, WdfDeviceIoMaximum, wudfddi_types/PWDF_DEVICE_IO_TYPE, wudfddi_types/WdfDeviceIoDirect, umdf.wdf_device_io_type__umdf_, WdfDeviceIoBufferedOrDirect, wudfddi_types/WdfDeviceIoMaximum, *PWDF_DEVICE_IO_TYPE, wudfddi_types/WdfDeviceIoNeither, WdfDeviceIoDirect, umdfstructs_df3f719d-59c4-4df5-b079-33e6962d1225.xml, PWDF_DEVICE_IO_TYPE, WdfDeviceIoBuffered, WDF_DEVICE_IO_TYPE, WdfDeviceIoUndefined, wudfddi_types/WdfDeviceIoBuffered, wudfddi_types/WdfDeviceIoUndefined, wdf.wdf_device_io_type__umdf_, _WDF_DEVICE_IO_TYPE, PWDF_DEVICE_IO_TYPE enumeration pointer, wudfddi_types/WDF_DEVICE_IO_TYPE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : wudfddi_types.h
-req.include-header : Wudfddi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.9
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_DEVICE_IO_TYPE, *PWDF_DEVICE_IO_TYPE
-req.product : Windows 10 or later.
+UID: NE:wudfddi_types._WDF_DEVICE_IO_TYPE
+title: "_WDF_DEVICE_IO_TYPE"
+author: windows-driver-content
+description: The WDF_DEVICE_IO_TYPE enumeration is used to specify a method for accessing data buffers.
+old-location: wdf\wdf_device_io_type__umdf_.htm
+old-project: wdf
+ms.assetid: 52733647-d577-4507-a5ad-5f56f3a9f8a2
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WdfDeviceIoNeither, wudfddi_types/WdfDeviceIoBufferedOrDirect, WDF_DEVICE_IO_TYPE enumeration, WdfDeviceIoMaximum, wudfddi_types/PWDF_DEVICE_IO_TYPE, wudfddi_types/WdfDeviceIoDirect, umdf.wdf_device_io_type__umdf_, WdfDeviceIoBufferedOrDirect, wudfddi_types/WdfDeviceIoMaximum, *PWDF_DEVICE_IO_TYPE, wudfddi_types/WdfDeviceIoNeither, WdfDeviceIoDirect, umdfstructs_df3f719d-59c4-4df5-b079-33e6962d1225.xml, PWDF_DEVICE_IO_TYPE, WdfDeviceIoBuffered, WDF_DEVICE_IO_TYPE, WdfDeviceIoUndefined, wudfddi_types/WdfDeviceIoBuffered, wudfddi_types/WdfDeviceIoUndefined, wdf.wdf_device_io_type__umdf_, _WDF_DEVICE_IO_TYPE, PWDF_DEVICE_IO_TYPE enumeration pointer, wudfddi_types/WDF_DEVICE_IO_TYPE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: wudfddi_types.h
+req.include-header: Wudfddi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.9
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wudfddi_types.h
+apiname:
+-	WDF_DEVICE_IO_TYPE
+product: Windows
+targetos: Windows
+req.typenames: WDF_DEVICE_IO_TYPE, *PWDF_DEVICE_IO_TYPE
+req.product: Windows 10 or later.
 ---
 
 # _WDF_DEVICE_IO_TYPE Enumeration
@@ -60,41 +65,41 @@ typedef enum _WDF_DEVICE_IO_TYPE {
 ## Constants
 
 <table>
-
-<tr>
-<td>WdfDeviceIoBuffered</td>
-<td>UMDF and the driver use <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/accessing-data-buffers-in-wdf-drivers">buffered I/O</a> to access data buffers.</td>
-</tr>
-
-<tr>
-<td>WdfDeviceIoBufferedOrDirect</td>
-<td>UMDF and the driver can use either buffered I/O or direct I/O to access data buffers.</td>
-</tr>
-
-<tr>
-<td>WdfDeviceIoDirect</td>
-<td>UMDF and the driver use <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/accessing-data-buffers-in-wdf-drivers">direct I/O</a> to access data buffers.</td>
-</tr>
-
-<tr>
-<td>WdfDeviceIoMaximum</td>
-<td>Reserved for system use.</td>
-</tr>
-
-<tr>
-<td>WdfDeviceIoNeither</td>
-<td>Reserved for system use.</td>
-</tr>
-
-<tr>
-<td>WdfDeviceIoUndefined</td>
-<td>Reserved for system use.</td>
-</tr>
+            
+                <tr>
+                    <td>WdfDeviceIoBuffered</td>
+                    <td>UMDF and the driver use <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/accessing-data-buffers-in-wdf-drivers">buffered I/O</a> to access data buffers.</td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDeviceIoBufferedOrDirect</td>
+                    <td>UMDF and the driver can use either buffered I/O or direct I/O to access data buffers.</td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDeviceIoDirect</td>
+                    <td>UMDF and the driver use <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/accessing-data-buffers-in-wdf-drivers">direct I/O</a> to access data buffers.</td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDeviceIoMaximum</td>
+                    <td>Reserved for system use.</td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDeviceIoNeither</td>
+                    <td>Reserved for system use.</td>
+                </tr>
+            
+                <tr>
+                    <td>WdfDeviceIoUndefined</td>
+                    <td>Reserved for system use.</td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-The <b>WDF_DEVICE_IO_TYPE</b> enumeration is used as input to <a href="https://msdn.microsoft.com/library/windows/hardware/ff556969">IWDFDeviceInitialize2::SetIoTypePreference</a> and as output from <a href="https://msdn.microsoft.com/library/windows/hardware/ff558994">IWDFIoRequest2::GetEffectiveIoType</a>.
+        The <b>WDF_DEVICE_IO_TYPE</b> enumeration is used as input to <a href="https://msdn.microsoft.com/library/windows/hardware/ff556969">IWDFDeviceInitialize2::SetIoTypePreference</a> and as output from <a href="https://msdn.microsoft.com/library/windows/hardware/ff558994">IWDFIoRequest2::GetEffectiveIoType</a>.
 
 You should use the following guidelines when choosing an I/O type for your driver:
 <ul>
@@ -120,9 +125,9 @@ For the KMDF version of this enumeration, see <a href="..\wudfddi_types\ne-wudfd
 | **Minimum UMDF version** | 1.9 |
 | **Header** | wudfddi_types.h (include Wudfddi.h) |
 
-## See Also
+    ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558994">IWDFIoRequest2::GetEffectiveIoType</a>
+        <a href="https://msdn.microsoft.com/library/windows/hardware/ff558994">IWDFIoRequest2::GetEffectiveIoType</a>
 
 <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_device_io_buffer_retrieval.md">WDF_DEVICE_IO_BUFFER_RETRIEVAL</a>
 

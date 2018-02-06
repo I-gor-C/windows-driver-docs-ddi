@@ -1,41 +1,46 @@
 ---
-UID : NF:ntddk.ExUuidCreate
-title : ExUuidCreate function
-author : windows-driver-content
-description : The ExUuidCreate routine initializes a UUID (GUID) structure to a newly generated value.
-old-location : kernel\exuuidcreate.htm
-old-project : kernel
-ms.assetid : e85fe5fa-b11e-41ff-a355-4da0394377d1
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ntddk/ExUuidCreate, ExUuidCreate, kernel.exuuidcreate, ExUuidCreate routine [Kernel-Mode Driver Architecture], k102_e7d2044b-4f90-41bd-bac4-819c721e80c8.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : IrqlExPassive, PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.ExUuidCreate
+title: ExUuidCreate function
+author: windows-driver-content
+description: The ExUuidCreate routine initializes a UUID (GUID) structure to a newly generated value.
+old-location: kernel\exuuidcreate.htm
+old-project: kernel
+ms.assetid: e85fe5fa-b11e-41ff-a355-4da0394377d1
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ntddk/ExUuidCreate, ExUuidCreate, kernel.exuuidcreate, ExUuidCreate routine [Kernel-Mode Driver Architecture], k102_e7d2044b-4f90-41bd-bac4-819c721e80c8.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: IrqlExPassive, PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ExUuidCreate
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

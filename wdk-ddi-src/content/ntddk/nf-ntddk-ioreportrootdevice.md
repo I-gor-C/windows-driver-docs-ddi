@@ -1,41 +1,46 @@
 ---
-UID : NF:ntddk.IoReportRootDevice
-title : IoReportRootDevice function
-author : windows-driver-content
-description : The IoReportRootDevice routine reports a device that cannot be detected by a PnP bus driver to the PnP Manager. IoReportRootDevice allows only one device per driver to be created.
-old-location : kernel\ioreportrootdevice.htm
-old-project : kernel
-ms.assetid : 43063BD3-8F2C-4F27-A304-75FBD5C87674
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : IoReportRootDevice routine [Kernel-Mode Driver Architecture], IoReportRootDevice, kernel.ioreportrootdevice, ntddk/IoReportRootDevice
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows 8 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.IoReportRootDevice
+title: IoReportRootDevice function
+author: windows-driver-content
+description: The IoReportRootDevice routine reports a device that cannot be detected by a PnP bus driver to the PnP Manager. IoReportRootDevice allows only one device per driver to be created.
+old-location: kernel\ioreportrootdevice.htm
+old-project: kernel
+ms.assetid: 43063BD3-8F2C-4F27-A304-75FBD5C87674
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: IoReportRootDevice routine [Kernel-Mode Driver Architecture], IoReportRootDevice, kernel.ioreportrootdevice, ntddk/IoReportRootDevice
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows 8 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoReportRootDevice
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

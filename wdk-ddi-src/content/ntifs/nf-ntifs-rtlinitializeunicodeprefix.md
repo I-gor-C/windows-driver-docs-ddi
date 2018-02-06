@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.RtlInitializeUnicodePrefix
-title : RtlInitializeUnicodePrefix function
-author : windows-driver-content
-description : The RtlInitializeUnicodePrefix routine initializes a prefix table.
-old-location : ifsk\rtlinitializeunicodeprefix.htm
-old-project : ifsk
-ms.assetid : 8891641a-392c-4c2b-aa5a-9464774d8610
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ntifs/RtlInitializeUnicodePrefix, RtlInitializeUnicodePrefix routine [Installable File System Drivers], RtlInitializeUnicodePrefix, rtlref_cc6170fe-7f41-45ac-909c-75e341ad8d9c.xml, ifsk.rtlinitializeunicodeprefix
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Windows XP
-req.target-min-winversvr : Windows Server 2003
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "< DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.RtlInitializeUnicodePrefix
+title: RtlInitializeUnicodePrefix function
+author: windows-driver-content
+description: The RtlInitializeUnicodePrefix routine initializes a prefix table.
+old-location: ifsk\rtlinitializeunicodeprefix.htm
+old-project: ifsk
+ms.assetid: 8891641a-392c-4c2b-aa5a-9464774d8610
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ntifs/RtlInitializeUnicodePrefix, RtlInitializeUnicodePrefix routine [Installable File System Drivers], RtlInitializeUnicodePrefix, rtlref_cc6170fe-7f41-45ac-909c-75e341ad8d9c.xml, ifsk.rtlinitializeunicodeprefix
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Windows XP
+req.target-min-winversvr: Windows Server 2003
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "< DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	RtlInitializeUnicodePrefix
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

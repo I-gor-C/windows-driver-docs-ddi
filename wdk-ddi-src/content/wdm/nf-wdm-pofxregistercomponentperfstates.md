@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.PoFxRegisterComponentPerfStates
-title : PoFxRegisterComponentPerfStates function
-author : windows-driver-content
-description : The PoFxRegisterComponentPerfStates routine registers a device component for performance state management by the power management framework (PoFx).
-old-location : kernel\pofxregistercomponentperfstates.htm
-old-project : kernel
-ms.assetid : 5A52543B-F0EA-4318-A66F-F9FA60FF94F5
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.pofxregistercomponentperfstates, PoFxRegisterComponentPerfStates, PO_FX_FLAG_PERF_PEP_OPTIONAL, wdm/PoFxRegisterComponentPerfStates, PO_FX_FLAG_PERF_QUERY_ON_F0, PO_FX_FLAG_PERF_QUERY_ON_ALL_IDLE_STATES, PoFxRegisterComponentPerfStates routine [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : 
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 10.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ntoskrnl.lib
-req.dll : Ntoskrnl.exe
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.PoFxRegisterComponentPerfStates
+title: PoFxRegisterComponentPerfStates function
+author: windows-driver-content
+description: The PoFxRegisterComponentPerfStates routine registers a device component for performance state management by the power management framework (PoFx).
+old-location: kernel\pofxregistercomponentperfstates.htm
+old-project: kernel
+ms.assetid: 5A52543B-F0EA-4318-A66F-F9FA60FF94F5
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.pofxregistercomponentperfstates, PoFxRegisterComponentPerfStates, PO_FX_FLAG_PERF_PEP_OPTIONAL, wdm/PoFxRegisterComponentPerfStates, PO_FX_FLAG_PERF_QUERY_ON_F0, PO_FX_FLAG_PERF_QUERY_ON_ALL_IDLE_STATES, PoFxRegisterComponentPerfStates routine [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: 
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 10.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ntoskrnl.lib
+req.dll: Ntoskrnl.exe
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Ntoskrnl.exe
+apiname:
+-	PoFxRegisterComponentPerfStates
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

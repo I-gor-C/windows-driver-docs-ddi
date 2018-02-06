@@ -1,42 +1,47 @@
 ---
-UID : NS:storport._STORPORT_TELEMETRY_EVENT
-title : "_STORPORT_TELEMETRY_EVENT"
-author : windows-driver-content
-description : The STORPORT_TELEMETRY_EVENT structure describes the miniport telemetry data payload.
-old-location : storage\storport_telemetry_event.htm
-old-project : storage
-ms.assetid : 50A3EB6D-C485-4C04-8E88-9BD7D7ED0A62
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : PSTORPORT_TELEMETRY_EVENT, _STORPORT_TELEMETRY_EVENT, STORPORT_TELEMETRY_EVENT, PSTORPORT_TELEMETRY_EVENT structure pointer [Storage Devices], storport/STORPORT_TELEMETRY_EVENT, storage.storport_telemetry_event, *PSTORPORT_TELEMETRY_EVENT, storport/PSTORPORT_TELEMETRY_EVENT, STORPORT_TELEMETRY_EVENT structure [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10, version 1703
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STORPORT_TELEMETRY_EVENT, *PSTORPORT_TELEMETRY_EVENT
-req.product : Windows 10 or later.
+UID: NS:storport._STORPORT_TELEMETRY_EVENT
+title: "_STORPORT_TELEMETRY_EVENT"
+author: windows-driver-content
+description: The STORPORT_TELEMETRY_EVENT structure describes the miniport telemetry data payload.
+old-location: storage\storport_telemetry_event.htm
+old-project: storage
+ms.assetid: 50A3EB6D-C485-4C04-8E88-9BD7D7ED0A62
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: PSTORPORT_TELEMETRY_EVENT, _STORPORT_TELEMETRY_EVENT, STORPORT_TELEMETRY_EVENT, PSTORPORT_TELEMETRY_EVENT structure pointer [Storage Devices], storport/STORPORT_TELEMETRY_EVENT, storage.storport_telemetry_event, *PSTORPORT_TELEMETRY_EVENT, storport/PSTORPORT_TELEMETRY_EVENT, STORPORT_TELEMETRY_EVENT structure [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10, version 1703
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	storport.h
+apiname:
+-	STORPORT_TELEMETRY_EVENT
+product: Windows
+targetos: Windows
+req.typenames: STORPORT_TELEMETRY_EVENT, *PSTORPORT_TELEMETRY_EVENT
+req.product: Windows 10 or later.
 ---
 
 # _STORPORT_TELEMETRY_EVENT structure

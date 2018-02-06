@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmthk._D3DKMT_SIGNALSYNCHRONIZATIONOBJECT
-title : "_D3DKMT_SIGNALSYNCHRONIZATIONOBJECT"
-author : windows-driver-content
-description : The D3DKMT_SIGNALSYNCHRONIZATIONOBJECT structure contains information about the synchronization events that the D3DKMTSignalSynchronizationObject function signals.
-old-location : display\d3dkmt_signalsynchronizationobject.htm
-old-project : display
-ms.assetid : 13368ea2-dd2e-48af-b528-097104dffb60
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : OpenGL_Structs_8a7c1832-e93f-47d3-b5ec-b5bea7f3321a.xml, D3DKMT_SIGNALSYNCHRONIZATIONOBJECT structure [Display Devices], _D3DKMT_SIGNALSYNCHRONIZATIONOBJECT, D3DKMT_SIGNALSYNCHRONIZATIONOBJECT, d3dkmthk/D3DKMT_SIGNALSYNCHRONIZATIONOBJECT, display.d3dkmt_signalsynchronizationobject
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_SIGNALSYNCHRONIZATIONOBJECT
+UID: NS:d3dkmthk._D3DKMT_SIGNALSYNCHRONIZATIONOBJECT
+title: "_D3DKMT_SIGNALSYNCHRONIZATIONOBJECT"
+author: windows-driver-content
+description: The D3DKMT_SIGNALSYNCHRONIZATIONOBJECT structure contains information about the synchronization events that the D3DKMTSignalSynchronizationObject function signals.
+old-location: display\d3dkmt_signalsynchronizationobject.htm
+old-project: display
+ms.assetid: 13368ea2-dd2e-48af-b528-097104dffb60
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: OpenGL_Structs_8a7c1832-e93f-47d3-b5ec-b5bea7f3321a.xml, D3DKMT_SIGNALSYNCHRONIZATIONOBJECT structure [Display Devices], _D3DKMT_SIGNALSYNCHRONIZATIONOBJECT, D3DKMT_SIGNALSYNCHRONIZATIONOBJECT, d3dkmthk/D3DKMT_SIGNALSYNCHRONIZATIONOBJECT, display.d3dkmt_signalsynchronizationobject
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmthk.h
+apiname:
+-	D3DKMT_SIGNALSYNCHRONIZATIONOBJECT
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_SIGNALSYNCHRONIZATIONOBJECT
 ---
 
 # _D3DKMT_SIGNALSYNCHRONIZATIONOBJECT structure

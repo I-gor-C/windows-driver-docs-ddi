@@ -1,41 +1,46 @@
 ---
-UID : NS:dxgiddi.DXGI_DDI_PRIMARY_DESC
-title : DXGI_DDI_PRIMARY_DESC
-author : windows-driver-content
-description : Describes a resource that is used as a primary (that is, a resource that is scanned out to the display).
-old-location : display\dxgi_ddi_primary_desc.htm
-old-project : display
-ms.assetid : eb6db822-c6d3-43d0-91af-49d19189ed83
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : UMDisplayDriver_Dx10param_Structs_a733016c-aa05-4d79-b13b-96d1bc33dac2.xml, display.dxgi_ddi_primary_desc, DXGI_DDI_PRIMARY_DESC, DXGI_DDI_PRIMARY_DESC structure [Display Devices], dxgiddi/DXGI_DDI_PRIMARY_DESC
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : dxgiddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGI_DDI_PRIMARY_DESC
+UID: NS:dxgiddi.DXGI_DDI_PRIMARY_DESC
+title: DXGI_DDI_PRIMARY_DESC
+author: windows-driver-content
+description: Describes a resource that is used as a primary (that is, a resource that is scanned out to the display).
+old-location: display\dxgi_ddi_primary_desc.htm
+old-project: display
+ms.assetid: eb6db822-c6d3-43d0-91af-49d19189ed83
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: UMDisplayDriver_Dx10param_Structs_a733016c-aa05-4d79-b13b-96d1bc33dac2.xml, display.dxgi_ddi_primary_desc, DXGI_DDI_PRIMARY_DESC, DXGI_DDI_PRIMARY_DESC structure [Display Devices], dxgiddi/DXGI_DDI_PRIMARY_DESC
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: dxgiddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	dxgiddi.h
+apiname:
+-	DXGI_DDI_PRIMARY_DESC
+product: Windows
+targetos: Windows
+req.typenames: DXGI_DDI_PRIMARY_DESC
 ---
 
 # DXGI_DDI_PRIMARY_DESC structure

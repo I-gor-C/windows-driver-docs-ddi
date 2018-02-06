@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.KSDS3D_HRTF_FILTER_FORMAT_MSG
-title : KSDS3D_HRTF_FILTER_FORMAT_MSG
-author : windows-driver-content
-description : The KSDS3D_HRTF_FILTER_FORMAT_MSG structure specifies the filter format to use for a head-relative transfer function (HRTF).
-old-location : audio\ksds3d_hrtf_filter_format_msg.htm
-old-project : audio
-ms.assetid : c0122c96-5bd3-4c1f-85d3-5d4ead5c0c86
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : ksmedia/KSDS3D_HRTF_FILTER_FORMAT_MSG, KSDS3D_HRTF_FILTER_FORMAT_MSG, *PKSDS3D_HRTF_FILTER_FORMAT_MSG, audio.ksds3d_hrtf_filter_format_msg, KSDS3D_HRTF_FILTER_FORMAT_MSG structure [Audio Devices], PKSDS3D_HRTF_FILTER_FORMAT_MSG, ksmedia/PKSDS3D_HRTF_FILTER_FORMAT_MSG, aud-prop_5ad5b67d-5302-44e1-b4e0-16d66334f57b.xml, PKSDS3D_HRTF_FILTER_FORMAT_MSG structure pointer [Audio Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KSDS3D_HRTF_FILTER_FORMAT_MSG, *PKSDS3D_HRTF_FILTER_FORMAT_MSG
+UID: NS:ksmedia.KSDS3D_HRTF_FILTER_FORMAT_MSG
+title: KSDS3D_HRTF_FILTER_FORMAT_MSG
+author: windows-driver-content
+description: The KSDS3D_HRTF_FILTER_FORMAT_MSG structure specifies the filter format to use for a head-relative transfer function (HRTF).
+old-location: audio\ksds3d_hrtf_filter_format_msg.htm
+old-project: audio
+ms.assetid: c0122c96-5bd3-4c1f-85d3-5d4ead5c0c86
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: ksmedia/KSDS3D_HRTF_FILTER_FORMAT_MSG, KSDS3D_HRTF_FILTER_FORMAT_MSG, *PKSDS3D_HRTF_FILTER_FORMAT_MSG, audio.ksds3d_hrtf_filter_format_msg, KSDS3D_HRTF_FILTER_FORMAT_MSG structure [Audio Devices], PKSDS3D_HRTF_FILTER_FORMAT_MSG, ksmedia/PKSDS3D_HRTF_FILTER_FORMAT_MSG, aud-prop_5ad5b67d-5302-44e1-b4e0-16d66334f57b.xml, PKSDS3D_HRTF_FILTER_FORMAT_MSG structure pointer [Audio Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	KSDS3D_HRTF_FILTER_FORMAT_MSG
+product: Windows
+targetos: Windows
+req.typenames: KSDS3D_HRTF_FILTER_FORMAT_MSG, *PKSDS3D_HRTF_FILTER_FORMAT_MSG
 ---
 
 # KSDS3D_HRTF_FILTER_FORMAT_MSG structure

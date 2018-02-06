@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddstor._DEVICE_DSM_NOTIFICATION_PARAMETERS
-title : "_DEVICE_DSM_NOTIFICATION_PARAMETERS"
-author : windows-driver-content
-description : The DEVICE_DSM_NOTIFICATION_PARAMETERS structure specifies the parameters for a notification action related to the data-set attributes for a device.
-old-location : storage\device_dsm_notification_parameters.htm
-old-project : storage
-ms.assetid : 57885E58-C7EC-493E-9AB8-B9DABC6CEA2A
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.device_dsm_notification_parameters, ntddstor/PDEVICE_DSM_NOTIFICATION_PARAMETERS, *PDEVICE_DSM_NOTIFICATION_PARAMETERS, PDEVICE_DSM_NOTIFICATION_PARAMETERS structure pointer [Storage Devices], DEVICE_DSM_NOTIFICATION_PARAMETERS structure [Storage Devices], PDEVICE_DSM_NOTIFICATION_PARAMETERS, _DEVICE_DSM_NOTIFICATION_PARAMETERS, DEVICE_DSM_NOTIFICATION_PARAMETERS, ntddstor/DEVICE_DSM_NOTIFICATION_PARAMETERS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddstor.h
-req.include-header : Ntddstor.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 7
-req.target-min-winversvr : Windows Server 2008 R2
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDEVICE_DSM_NOTIFICATION_PARAMETERS, DEVICE_DSM_NOTIFICATION_PARAMETERS"
+UID: NS:ntddstor._DEVICE_DSM_NOTIFICATION_PARAMETERS
+title: "_DEVICE_DSM_NOTIFICATION_PARAMETERS"
+author: windows-driver-content
+description: The DEVICE_DSM_NOTIFICATION_PARAMETERS structure specifies the parameters for a notification action related to the data-set attributes for a device.
+old-location: storage\device_dsm_notification_parameters.htm
+old-project: storage
+ms.assetid: 57885E58-C7EC-493E-9AB8-B9DABC6CEA2A
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.device_dsm_notification_parameters, ntddstor/PDEVICE_DSM_NOTIFICATION_PARAMETERS, *PDEVICE_DSM_NOTIFICATION_PARAMETERS, PDEVICE_DSM_NOTIFICATION_PARAMETERS structure pointer [Storage Devices], DEVICE_DSM_NOTIFICATION_PARAMETERS structure [Storage Devices], PDEVICE_DSM_NOTIFICATION_PARAMETERS, _DEVICE_DSM_NOTIFICATION_PARAMETERS, DEVICE_DSM_NOTIFICATION_PARAMETERS, ntddstor/DEVICE_DSM_NOTIFICATION_PARAMETERS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddstor.h
+req.include-header: Ntddstor.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 7
+req.target-min-winversvr: Windows Server 2008 R2
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddstor.h
+apiname:
+-	DEVICE_DSM_NOTIFICATION_PARAMETERS
+product: Windows
+targetos: Windows
+req.typenames: "*PDEVICE_DSM_NOTIFICATION_PARAMETERS, DEVICE_DSM_NOTIFICATION_PARAMETERS"
 ---
 
 # _DEVICE_DSM_NOTIFICATION_PARAMETERS structure

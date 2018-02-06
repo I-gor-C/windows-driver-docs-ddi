@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfio.WDF_IO_QUEUE_DRAINED
-title : WDF_IO_QUEUE_DRAINED function
-author : windows-driver-content
-description : The WDF_IO_QUEUE_DRAINED function returns TRUE if the I/O queue's state indicates that the queue is drained.
-old-location : wdf\wdf_io_queue_drained.htm
-old-project : wdf
-ms.assetid : 1b2384c3-6438-4456-b4fc-44211b8a3fb1
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.wdf_io_queue_drained, kmdf.wdf_io_queue_drained, wdfio/WDF_IO_QUEUE_DRAINED, DFQueueObjectRef_ddc761b3-266a-4942-94ed-8ecca07575d1.xml, WDF_IO_QUEUE_DRAINED function, WDF_IO_QUEUE_DRAINED
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfio.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : None
-req.dll : 
-req.irql : Any IRQL.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_IO_QUEUE_STATE
-req.product : Windows 10 or later.
+UID: NF:wdfio.WDF_IO_QUEUE_DRAINED
+title: WDF_IO_QUEUE_DRAINED function
+author: windows-driver-content
+description: The WDF_IO_QUEUE_DRAINED function returns TRUE if the I/O queue's state indicates that the queue is drained.
+old-location: wdf\wdf_io_queue_drained.htm
+old-project: wdf
+ms.assetid: 1b2384c3-6438-4456-b4fc-44211b8a3fb1
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.wdf_io_queue_drained, kmdf.wdf_io_queue_drained, wdfio/WDF_IO_QUEUE_DRAINED, DFQueueObjectRef_ddc761b3-266a-4942-94ed-8ecca07575d1.xml, WDF_IO_QUEUE_DRAINED function, WDF_IO_QUEUE_DRAINED
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfio.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: None
+req.dll: 
+req.irql: Any IRQL.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	None
+-	None.dll
+apiname:
+-	WDF_IO_QUEUE_DRAINED
+product: Windows
+targetos: Windows
+req.typenames: WDF_IO_QUEUE_STATE
+req.product: Windows 10 or later.
 ---
 
 

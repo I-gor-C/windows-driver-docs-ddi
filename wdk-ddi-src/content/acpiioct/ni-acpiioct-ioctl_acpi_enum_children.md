@@ -1,41 +1,46 @@
 ---
-UID : NI:acpiioct.IOCTL_ACPI_ENUM_CHILDREN
-title : IOCTL_ACPI_ENUM_CHILDREN
-author : windows-driver-content
-description : The IOCTL_ACPI_ENUM_CHILDREN device control request can be used to enumerate the path and name of devices or named child objects in the ACPI namespace of the device to which this request is sent.
-old-location : acpi\ioctl_acpi_enum_children.htm
-old-project : acpi
-ms.assetid : 86d713e0-ec1e-4417-9ff7-8574bd040a6e
-ms.author : windowsdriverdev
-ms.date : 12/31/2017
-ms.keywords : acpi.ioctl_acpi_enum_children, IOCTL_ACPI_ENUM_CHILDREN control code [ACPI Devices], IOCTL_ACPI_ENUM_CHILDREN, acpiioct/IOCTL_ACPI_ENUM_CHILDREN, acpi-meth-eval-ref_243e3f53-71b8-4090-bcf1-48b0c5634b5e.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : acpiioct.h
-req.include-header : Acpiioct.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows Vista and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : UNIT_ISOCH_PARAMS, *PUNIT_ISOCH_PARAMS
+UID: NI:acpiioct.IOCTL_ACPI_ENUM_CHILDREN
+title: IOCTL_ACPI_ENUM_CHILDREN
+author: windows-driver-content
+description: The IOCTL_ACPI_ENUM_CHILDREN device control request can be used to enumerate the path and name of devices or named child objects in the ACPI namespace of the device to which this request is sent.
+old-location: acpi\ioctl_acpi_enum_children.htm
+old-project: acpi
+ms.assetid: 86d713e0-ec1e-4417-9ff7-8574bd040a6e
+ms.author: windowsdriverdev
+ms.date: 12/31/2017
+ms.keywords: acpi.ioctl_acpi_enum_children, IOCTL_ACPI_ENUM_CHILDREN control code [ACPI Devices], IOCTL_ACPI_ENUM_CHILDREN, acpiioct/IOCTL_ACPI_ENUM_CHILDREN, acpi-meth-eval-ref_243e3f53-71b8-4090-bcf1-48b0c5634b5e.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: acpiioct.h
+req.include-header: Acpiioct.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows Vista and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Acpiioct.h
+apiname:
+-	IOCTL_ACPI_ENUM_CHILDREN
+product: Windows
+targetos: Windows
+req.typenames: UNIT_ISOCH_PARAMS, *PUNIT_ISOCH_PARAMS
 ---
 
 # IOCTL_ACPI_ENUM_CHILDREN IOCTL

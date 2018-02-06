@@ -1,42 +1,48 @@
 ---
-UID : NF:vhf.VhfDelete
-title : VhfDelete function
-author : windows-driver-content
-description : The HID Source device driver calls this method to delete a VHF device.
-old-location : hid\vhfdelete.htm
-old-project : hid
-ms.assetid : 85252A53-E653-4D14-B1FE-72CA9AFA1F10
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : VhfDelete method [Human Input Devices], vhf/VhfDelete, VhfDelete, hid.vhfdelete
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : vhf.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : VhfKm.lib
-req.dll : 
-req.irql : If Wait is TRUE, PASSIVE_LEVEL; if Wait is FALSE <= DISPATCH_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR, *PUSB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR
-req.product : Windows 10 or later.
+UID: NF:vhf.VhfDelete
+title: VhfDelete function
+author: windows-driver-content
+description: The HID Source device driver calls this method to delete a VHF device.
+old-location: hid\vhfdelete.htm
+old-project: hid
+ms.assetid: 85252A53-E653-4D14-B1FE-72CA9AFA1F10
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: VhfDelete method [Human Input Devices], vhf/VhfDelete, VhfDelete, hid.vhfdelete
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: vhf.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: VhfKm.lib
+req.dll: 
+req.irql: If Wait is TRUE, PASSIVE_LEVEL; if Wait is FALSE <= DISPATCH_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	vhfKm.lib
+-	vhfKm.dll
+apiname:
+-	VhfDelete
+product: Windows
+targetos: Windows
+req.typenames: USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR, *PUSB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR
+req.product: Windows 10 or later.
 ---
 
 

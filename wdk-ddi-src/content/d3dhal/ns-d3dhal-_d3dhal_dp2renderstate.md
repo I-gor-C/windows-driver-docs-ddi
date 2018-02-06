@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dhal._D3DHAL_DP2RENDERSTATE
-title : "_D3DHAL_DP2RENDERSTATE"
-author : windows-driver-content
-description : One or more D3DHAL_DP2RENDERSTATE structures are parsed from the command buffer by the D3dDrawPrimitives2 callback when the D3DHAL_DP2COMMAND structure's bCommand member is set to D3DDP2OP_RENDERSTATE, and are used to set the appropriate render state.
-old-location : display\d3dhal_dp2renderstate.htm
-old-project : display
-ms.assetid : 9d30ed5d-0621-4a90-941c-c5b0564df13f
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3dhal/LPD3DHAL_DP2RENDERSTATE, _D3DHAL_DP2RENDERSTATE, D3DHAL_DP2RENDERSTATE structure [Display Devices], d3dstrct_4cfe9ea2-c3cc-432d-bd11-85d51ba121b5.xml, d3dhal/D3DHAL_DP2RENDERSTATE, LPD3DHAL_DP2RENDERSTATE structure pointer [Display Devices], LPD3DHAL_DP2RENDERSTATE, display.d3dhal_dp2renderstate, *LPD3DHAL_DP2RENDERSTATE, D3DHAL_DP2RENDERSTATE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dhal.h
-req.include-header : D3dhal.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DHAL_DP2RENDERSTATE
+UID: NS:d3dhal._D3DHAL_DP2RENDERSTATE
+title: "_D3DHAL_DP2RENDERSTATE"
+author: windows-driver-content
+description: One or more D3DHAL_DP2RENDERSTATE structures are parsed from the command buffer by the D3dDrawPrimitives2 callback when the D3DHAL_DP2COMMAND structure's bCommand member is set to D3DDP2OP_RENDERSTATE, and are used to set the appropriate render state.
+old-location: display\d3dhal_dp2renderstate.htm
+old-project: display
+ms.assetid: 9d30ed5d-0621-4a90-941c-c5b0564df13f
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3dhal/LPD3DHAL_DP2RENDERSTATE, _D3DHAL_DP2RENDERSTATE, D3DHAL_DP2RENDERSTATE structure [Display Devices], d3dstrct_4cfe9ea2-c3cc-432d-bd11-85d51ba121b5.xml, d3dhal/D3DHAL_DP2RENDERSTATE, LPD3DHAL_DP2RENDERSTATE structure pointer [Display Devices], LPD3DHAL_DP2RENDERSTATE, display.d3dhal_dp2renderstate, *LPD3DHAL_DP2RENDERSTATE, D3DHAL_DP2RENDERSTATE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dhal.h
+req.include-header: D3dhal.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dhal.h
+apiname:
+-	D3DHAL_DP2RENDERSTATE
+product: Windows
+targetos: Windows
+req.typenames: D3DHAL_DP2RENDERSTATE
 ---
 
 # _D3DHAL_DP2RENDERSTATE structure

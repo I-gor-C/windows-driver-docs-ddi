@@ -1,42 +1,47 @@
 ---
-UID : NS:windot11._DOT11_VWIFI_COMBINATION_V3
-title : "_DOT11_VWIFI_COMBINATION_V3"
-author : windows-driver-content
-description : The DOT11_VWIFI_COMBINATION_V3 structure contains the combination of MAC entities that an 802.11 wireless miniport driver simultaneously supports when virtualized.
-old-location : netvista\dot11_vwifi_combination_v3.htm
-old-project : netvista
-ms.assetid : 65A397AE-B835-4043-9A81-24055901310B
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : windot11/DOT11_VWIFI_COMBINATION_V3, PDOT11_VWIFI_COMBINATION_V3 structure pointer [Network Drivers Starting with Windows Vista], *PDOT11_VWIFI_COMBINATION_V3, PDOT11_VWIFI_COMBINATION_V3, netvista.dot11_vwifi_combination_v3, _DOT11_VWIFI_COMBINATION_V3, DOT11_VWIFI_COMBINATION_V3 structure [Network Drivers Starting with Windows Vista], windot11/PDOT11_VWIFI_COMBINATION_V3, DOT11_VWIFI_COMBINATION_V3
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : windot11.h
-req.include-header : Windot11.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with   Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDOT11_VWIFI_COMBINATION_V3, DOT11_VWIFI_COMBINATION_V3"
-req.product : Windows 10 or later.
+UID: NS:windot11._DOT11_VWIFI_COMBINATION_V3
+title: "_DOT11_VWIFI_COMBINATION_V3"
+author: windows-driver-content
+description: The DOT11_VWIFI_COMBINATION_V3 structure contains the combination of MAC entities that an 802.11 wireless miniport driver simultaneously supports when virtualized.
+old-location: netvista\dot11_vwifi_combination_v3.htm
+old-project: netvista
+ms.assetid: 65A397AE-B835-4043-9A81-24055901310B
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: windot11/DOT11_VWIFI_COMBINATION_V3, PDOT11_VWIFI_COMBINATION_V3 structure pointer [Network Drivers Starting with Windows Vista], *PDOT11_VWIFI_COMBINATION_V3, PDOT11_VWIFI_COMBINATION_V3, netvista.dot11_vwifi_combination_v3, _DOT11_VWIFI_COMBINATION_V3, DOT11_VWIFI_COMBINATION_V3 structure [Network Drivers Starting with Windows Vista], windot11/PDOT11_VWIFI_COMBINATION_V3, DOT11_VWIFI_COMBINATION_V3
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: windot11.h
+req.include-header: Windot11.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with   Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Windot11.h
+apiname:
+-	DOT11_VWIFI_COMBINATION_V3
+product: Windows
+targetos: Windows
+req.typenames: "*PDOT11_VWIFI_COMBINATION_V3, DOT11_VWIFI_COMBINATION_V3"
+req.product: Windows 10 or later.
 ---
 
 # _DOT11_VWIFI_COMBINATION_V3 structure

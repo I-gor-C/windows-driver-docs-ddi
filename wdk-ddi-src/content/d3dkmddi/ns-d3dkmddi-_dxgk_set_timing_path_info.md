@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmddi._DXGK_SET_TIMING_PATH_INFO
-title : "_DXGK_SET_TIMING_PATH_INFO"
-author : windows-driver-content
-description : Structure to hold information to modify SetTiming path.
-old-location : display\dxgk_set_timing_path_info.htm
-old-project : display
-ms.assetid : 23B42F75-6313-430F-8CD3-EBAAE87C7815
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : DXGK_SET_TIMING_PATH_INFO structure [Display Devices], d3dkmddi/DXGK_SET_TIMING_PATH_INFO, PDXGK_SET_TIMING_PATH_INFO, display.dxgk_set_timing_path_info, PDXGK_SET_TIMING_PATH_INFO structure pointer [Display Devices], DXGK_SET_TIMING_PATH_INFO, _DXGK_SET_TIMING_PATH_INFO, d3dkmddi/PDXGK_SET_TIMING_PATH_INFO
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmddi.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_SET_TIMING_PATH_INFO
+UID: NS:d3dkmddi._DXGK_SET_TIMING_PATH_INFO
+title: "_DXGK_SET_TIMING_PATH_INFO"
+author: windows-driver-content
+description: Structure to hold information to modify SetTiming path.
+old-location: display\dxgk_set_timing_path_info.htm
+old-project: display
+ms.assetid: 23B42F75-6313-430F-8CD3-EBAAE87C7815
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: DXGK_SET_TIMING_PATH_INFO structure [Display Devices], d3dkmddi/DXGK_SET_TIMING_PATH_INFO, PDXGK_SET_TIMING_PATH_INFO, display.dxgk_set_timing_path_info, PDXGK_SET_TIMING_PATH_INFO structure pointer [Display Devices], DXGK_SET_TIMING_PATH_INFO, _DXGK_SET_TIMING_PATH_INFO, d3dkmddi/PDXGK_SET_TIMING_PATH_INFO
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmddi.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmddi.h
+apiname:
+-	DXGK_SET_TIMING_PATH_INFO
+product: Windows
+targetos: Windows
+req.typenames: DXGK_SET_TIMING_PATH_INFO
 ---
 
 # _DXGK_SET_TIMING_PATH_INFO structure

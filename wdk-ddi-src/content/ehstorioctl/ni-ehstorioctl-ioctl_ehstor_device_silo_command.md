@@ -1,41 +1,46 @@
 ---
-UID : NI:ehstorioctl.IOCTL_EHSTOR_DEVICE_SILO_COMMAND
-title : IOCTL_EHSTOR_DEVICE_SILO_COMMAND
-author : windows-driver-content
-description : This IOCTL issues a silo command to the targeted silo on the device. Both input and output data are structured according to the definition of silo commands, as found in the IEEE 1667 specification document.
-old-location : storage\ioctl_ehstor_device_silo_command.htm
-old-project : storage
-ms.assetid : 3258FA16-E1FE-4CBF-8C87-0C7A8B2A7EBF
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_ehstor_device_silo_command, IOCTL_EHSTOR_DEVICE_SILO_COMMAND control code [Storage Devices], IOCTL_EHSTOR_DEVICE_SILO_COMMAND, ehstorioctl/IOCTL_EHSTOR_DEVICE_SILO_COMMAND
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ehstorioctl.h
-req.include-header : EhStorIoctl.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PDO_TYPE
+UID: NI:ehstorioctl.IOCTL_EHSTOR_DEVICE_SILO_COMMAND
+title: IOCTL_EHSTOR_DEVICE_SILO_COMMAND
+author: windows-driver-content
+description: This IOCTL issues a silo command to the targeted silo on the device. Both input and output data are structured according to the definition of silo commands, as found in the IEEE 1667 specification document.
+old-location: storage\ioctl_ehstor_device_silo_command.htm
+old-project: storage
+ms.assetid: 3258FA16-E1FE-4CBF-8C87-0C7A8B2A7EBF
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_ehstor_device_silo_command, IOCTL_EHSTOR_DEVICE_SILO_COMMAND control code [Storage Devices], IOCTL_EHSTOR_DEVICE_SILO_COMMAND, ehstorioctl/IOCTL_EHSTOR_DEVICE_SILO_COMMAND
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ehstorioctl.h
+req.include-header: EhStorIoctl.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	EhStorIoctl.h
+apiname:
+-	IOCTL_EHSTOR_DEVICE_SILO_COMMAND
+product: Windows
+targetos: Windows
+req.typenames: PDO_TYPE
 ---
 
 # IOCTL_EHSTOR_DEVICE_SILO_COMMAND IOCTL

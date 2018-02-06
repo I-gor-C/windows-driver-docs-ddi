@@ -1,41 +1,46 @@
 ---
-UID : NC:dot11wdi.MINIPORT_WDI_TX_DATA_SEND
-title : MINIPORT_WDI_TX_DATA_SEND
-author : windows-driver-content
-description : The MiniportWdiTxDataSend handler function specifies an RA-TID or port queue to transmit from. It is issued in the context of the TX thread from the operating system, resume indication, or a work item.
-old-location : netvista\miniportwditxdatasend.htm
-old-project : netvista
-ms.assetid : A9EB1E8C-BD10-450F-9F4B-CD19C8AF13EA
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.miniportwditxdatasend, MiniportWdiTxDataSend callback function [Network Drivers Starting with Windows Vista], MiniportWdiTxDataSend, MINIPORT_WDI_TX_DATA_SEND, MINIPORT_WDI_TX_DATA_SEND, dot11wdi/MiniportWdiTxDataSend
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : dot11wdi.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SYNTH_STATS, *PSYNTH_STATS
+UID: NC:dot11wdi.MINIPORT_WDI_TX_DATA_SEND
+title: MINIPORT_WDI_TX_DATA_SEND
+author: windows-driver-content
+description: The MiniportWdiTxDataSend handler function specifies an RA-TID or port queue to transmit from. It is issued in the context of the TX thread from the operating system, resume indication, or a work item.
+old-location: netvista\miniportwditxdatasend.htm
+old-project: netvista
+ms.assetid: A9EB1E8C-BD10-450F-9F4B-CD19C8AF13EA
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.miniportwditxdatasend, MiniportWdiTxDataSend callback function [Network Drivers Starting with Windows Vista], MiniportWdiTxDataSend, MINIPORT_WDI_TX_DATA_SEND, MINIPORT_WDI_TX_DATA_SEND, dot11wdi/MiniportWdiTxDataSend
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: dot11wdi.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	dot11wdi.h
+apiname:
+-	MiniportWdiTxDataSend
+product: Windows
+targetos: Windows
+req.typenames: SYNTH_STATS, *PSYNTH_STATS
 ---
 
 

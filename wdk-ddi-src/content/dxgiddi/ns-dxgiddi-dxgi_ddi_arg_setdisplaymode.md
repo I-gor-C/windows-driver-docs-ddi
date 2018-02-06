@@ -1,41 +1,46 @@
 ---
-UID : NS:dxgiddi.DXGI_DDI_ARG_SETDISPLAYMODE
-title : DXGI_DDI_ARG_SETDISPLAYMODE
-author : windows-driver-content
-description : The DXGI_DDI_ARG_SETDISPLAYMODE structure describes parameters for setting the display mode.
-old-location : display\dxgi_ddi_arg_setdisplaymode.htm
-old-project : display
-ms.assetid : eb2b7470-cd23-4e0c-a887-42c47b881607
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : dxgiddi/DXGI_DDI_ARG_SETDISPLAYMODE, DXGI_DDI_ARG_SETDISPLAYMODE, display.dxgi_ddi_arg_setdisplaymode, DXGI_DDI_ARG_SETDISPLAYMODE structure [Display Devices], UMDisplayDriver_Dx10param_Structs_b8b2ebc4-123c-42bd-abd5-3bf1bff47ee0.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : dxgiddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGI_DDI_ARG_SETDISPLAYMODE
+UID: NS:dxgiddi.DXGI_DDI_ARG_SETDISPLAYMODE
+title: DXGI_DDI_ARG_SETDISPLAYMODE
+author: windows-driver-content
+description: The DXGI_DDI_ARG_SETDISPLAYMODE structure describes parameters for setting the display mode.
+old-location: display\dxgi_ddi_arg_setdisplaymode.htm
+old-project: display
+ms.assetid: eb2b7470-cd23-4e0c-a887-42c47b881607
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: dxgiddi/DXGI_DDI_ARG_SETDISPLAYMODE, DXGI_DDI_ARG_SETDISPLAYMODE, display.dxgi_ddi_arg_setdisplaymode, DXGI_DDI_ARG_SETDISPLAYMODE structure [Display Devices], UMDisplayDriver_Dx10param_Structs_b8b2ebc4-123c-42bd-abd5-3bf1bff47ee0.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: dxgiddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	dxgiddi.h
+apiname:
+-	DXGI_DDI_ARG_SETDISPLAYMODE
+product: Windows
+targetos: Windows
+req.typenames: DXGI_DDI_ARG_SETDISPLAYMODE
 ---
 
 # DXGI_DDI_ARG_SETDISPLAYMODE structure

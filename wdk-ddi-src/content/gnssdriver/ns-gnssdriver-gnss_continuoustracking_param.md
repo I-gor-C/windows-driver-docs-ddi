@@ -1,41 +1,46 @@
 ---
-UID : NS:gnssdriver.GNSS_CONTINUOUSTRACKING_PARAM
-title : GNSS_CONTINUOUSTRACKING_PARAM
-author : windows-driver-content
-description : This structure defines the parameters for a continuous tracking fix session.
-old-location : sensors\gnss_continuoustracking_param.htm
-old-project : sensors
-ms.assetid : D69D317C-5B42-4709-87AF-4323DF2EBE2D
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : GNSS_CONTINUOUSTRACKING_PARAM structure [Sensor Devices], GNSS_CONTINUOUSTRACKING_PARAM, sensors.gnss_continuoustracking_param, PGNSS_CONTINUOUSTRACKING_PARAM, PGNSS_CONTINUOUSTRACKING_PARAM structure pointer [Sensor Devices], gnssdriver/GNSS_CONTINUOUSTRACKING_PARAM, gnssdriver/PGNSS_CONTINUOUSTRACKING_PARAM, *PGNSS_CONTINUOUSTRACKING_PARAM
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : gnssdriver.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PGNSS_CONTINUOUSTRACKING_PARAM, GNSS_CONTINUOUSTRACKING_PARAM"
+UID: NS:gnssdriver.GNSS_CONTINUOUSTRACKING_PARAM
+title: GNSS_CONTINUOUSTRACKING_PARAM
+author: windows-driver-content
+description: This structure defines the parameters for a continuous tracking fix session.
+old-location: sensors\gnss_continuoustracking_param.htm
+old-project: sensors
+ms.assetid: D69D317C-5B42-4709-87AF-4323DF2EBE2D
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: GNSS_CONTINUOUSTRACKING_PARAM structure [Sensor Devices], GNSS_CONTINUOUSTRACKING_PARAM, sensors.gnss_continuoustracking_param, PGNSS_CONTINUOUSTRACKING_PARAM, PGNSS_CONTINUOUSTRACKING_PARAM structure pointer [Sensor Devices], gnssdriver/GNSS_CONTINUOUSTRACKING_PARAM, gnssdriver/PGNSS_CONTINUOUSTRACKING_PARAM, *PGNSS_CONTINUOUSTRACKING_PARAM
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: gnssdriver.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	gnssdriver.h
+apiname:
+-	GNSS_CONTINUOUSTRACKING_PARAM
+product: Windows
+targetos: Windows
+req.typenames: "*PGNSS_CONTINUOUSTRACKING_PARAM, GNSS_CONTINUOUSTRACKING_PARAM"
 ---
 
 # GNSS_CONTINUOUSTRACKING_PARAM structure

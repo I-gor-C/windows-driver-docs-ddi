@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugControl3.GetEventFilterText
-title : IDebugControl3::GetEventFilterText method
-author : windows-driver-content
-description : The GetEventFilterText method returns a short description of an event for a specific filter.
-old-location : debugger\geteventfiltertext.htm
-old-project : debugger
-ms.assetid : d311a030-e24c-427c-8a52-0c67d4fac653
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugControl3::GetEventFilterText, IDebugControl2 interface [Windows Debugging], GetEventFilterText method, IDebugControl3 interface [Windows Debugging], GetEventFilterText method, dbgeng/IDebugControl2::GetEventFilterText, IDebugControl::GetEventFilterText, dbgeng/IDebugControl::GetEventFilterText, GetEventFilterText method [Windows Debugging], IDebugControl2 interface, IDebugControl_61936aac-8fe2-4f18-86aa-cba1404d845f.xml, IDebugControl3, IDebugControl interface [Windows Debugging], GetEventFilterText method, GetEventFilterText, GetEventFilterText method [Windows Debugging], IDebugControl interface, debugger.geteventfiltertext, IDebugControl2::GetEventFilterText, GetEventFilterText method [Windows Debugging], IDebugControl3 interface, dbgeng/IDebugControl3::GetEventFilterText, GetEventFilterText method [Windows Debugging]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl3.GetEventFilterText
+title: IDebugControl3::GetEventFilterText method
+author: windows-driver-content
+description: The GetEventFilterText method returns a short description of an event for a specific filter.
+old-location: debugger\geteventfiltertext.htm
+old-project: debugger
+ms.assetid: d311a030-e24c-427c-8a52-0c67d4fac653
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugControl3::GetEventFilterText, IDebugControl2 interface [Windows Debugging], GetEventFilterText method, IDebugControl3 interface [Windows Debugging], GetEventFilterText method, dbgeng/IDebugControl2::GetEventFilterText, IDebugControl::GetEventFilterText, dbgeng/IDebugControl::GetEventFilterText, GetEventFilterText method [Windows Debugging], IDebugControl2 interface, IDebugControl_61936aac-8fe2-4f18-86aa-cba1404d845f.xml, IDebugControl3, IDebugControl interface [Windows Debugging], GetEventFilterText method, GetEventFilterText, GetEventFilterText method [Windows Debugging], IDebugControl interface, debugger.geteventfiltertext, IDebugControl2::GetEventFilterText, GetEventFilterText method [Windows Debugging], IDebugControl3 interface, dbgeng/IDebugControl3::GetEventFilterText, GetEventFilterText method [Windows Debugging]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl.GetEventFilterText
+-	IDebugControl2.GetEventFilterText
+-	IDebugControl3.GetEventFilterText
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

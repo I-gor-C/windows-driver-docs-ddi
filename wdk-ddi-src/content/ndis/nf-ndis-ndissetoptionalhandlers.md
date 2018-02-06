@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisSetOptionalHandlers
-title : NdisSetOptionalHandlers function
-author : windows-driver-content
-description : NDIS drivers can call the NdisSetOptionalHandlers function to set or change the entry points of driver functions.
-old-location : netvista\ndissetoptionalhandlers.htm
-old-project : netvista
-ms.assetid : 97649f4f-942a-47fc-a541-6f160c8b4eb4
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.ndissetoptionalhandlers, NdisSetOptionalHandlers function [Network Drivers Starting with Windows Vista], ndis/NdisSetOptionalHandlers, ndis_configuration_ref_343cba4f-9651-4f42-b0a9-0a85475cb6bf.xml, NdisSetOptionalHandlers
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_Miscellaneous_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisSetOptionalHandlers
+title: NdisSetOptionalHandlers function
+author: windows-driver-content
+description: NDIS drivers can call the NdisSetOptionalHandlers function to set or change the entry points of driver functions.
+old-location: netvista\ndissetoptionalhandlers.htm
+old-project: netvista
+ms.assetid: 97649f4f-942a-47fc-a541-6f160c8b4eb4
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.ndissetoptionalhandlers, NdisSetOptionalHandlers function [Network Drivers Starting with Windows Vista], ndis/NdisSetOptionalHandlers, ndis_configuration_ref_343cba4f-9651-4f42-b0a9-0a85475cb6bf.xml, NdisSetOptionalHandlers
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_Miscellaneous_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisSetOptionalHandlers
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

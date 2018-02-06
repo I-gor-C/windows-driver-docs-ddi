@@ -1,42 +1,47 @@
 ---
-UID : NF:scsiwmi.ScsiPortWmiSetInstanceName
-title : ScsiPortWmiSetInstanceName function
-author : windows-driver-content
-description : The ScsiPortWmiSetInstanceName routine updates the WNODE_ALL_DATA structure within the request context to specify the position and length of an instance name.
-old-location : storage\scsiportwmisetinstancename.htm
-old-project : storage
-ms.assetid : f624959f-e232-4918-8f0b-f232471c2c67
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : ScsiPortWmiSetInstanceName, scsiwmi/ScsiPortWmiSetInstanceName, storage.scsiportwmisetinstancename, ScsiPortWmiSetInstanceName routine [Storage Devices], scsiprt_a6ff8339-8734-4635-a17e-c3ad7bb524c3.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : scsiwmi.h
-req.include-header : Miniport.h, Scsi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SCSIWMI_ENABLE_DISABLE_CONTROL
-req.product : Windows 10 or later.
+UID: NF:scsiwmi.ScsiPortWmiSetInstanceName
+title: ScsiPortWmiSetInstanceName function
+author: windows-driver-content
+description: The ScsiPortWmiSetInstanceName routine updates the WNODE_ALL_DATA structure within the request context to specify the position and length of an instance name.
+old-location: storage\scsiportwmisetinstancename.htm
+old-project: storage
+ms.assetid: f624959f-e232-4918-8f0b-f232471c2c67
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: ScsiPortWmiSetInstanceName, scsiwmi/ScsiPortWmiSetInstanceName, storage.scsiportwmisetinstancename, ScsiPortWmiSetInstanceName routine [Storage Devices], scsiprt_a6ff8339-8734-4635-a17e-c3ad7bb524c3.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: scsiwmi.h
+req.include-header: Miniport.h, Scsi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	scsiwmi.h
+apiname:
+-	ScsiPortWmiSetInstanceName
+product: Windows
+targetos: Windows
+req.typenames: SCSIWMI_ENABLE_DISABLE_CONTROL
+req.product: Windows 10 or later.
 ---
 
 

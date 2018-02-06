@@ -1,41 +1,46 @@
 ---
-UID : NS:ks._KSGATE
-title : "_KSGATE"
-author : windows-driver-content
-description : The KSGATE structure describes an AVStream gate object.
-old-location : stream\ksgate.htm
-old-project : stream
-ms.assetid : f6b5169e-2ff1-43da-a207-0c15c75e1367
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : PKSGATE structure pointer [Streaming Media Devices], _KSGATE, ks/KSGATE, avstruct_b232aae6-2b0a-44f9-beaf-29fe4b7f8b86.xml, KSGATE, KSGATE structure [Streaming Media Devices], stream.ksgate, PKSGATE, *PKSGATE, ks/PKSGATE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and in Microsoft DirectX 8.0 and later versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKSGATE, KSGATE"
+UID: NS:ks._KSGATE
+title: "_KSGATE"
+author: windows-driver-content
+description: The KSGATE structure describes an AVStream gate object.
+old-location: stream\ksgate.htm
+old-project: stream
+ms.assetid: f6b5169e-2ff1-43da-a207-0c15c75e1367
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: PKSGATE structure pointer [Streaming Media Devices], _KSGATE, ks/KSGATE, avstruct_b232aae6-2b0a-44f9-beaf-29fe4b7f8b86.xml, KSGATE, KSGATE structure [Streaming Media Devices], stream.ksgate, PKSGATE, *PKSGATE, ks/PKSGATE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and in Microsoft DirectX 8.0 and later versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	KSGATE
+product: Windows
+targetos: Windows
+req.typenames: "*PKSGATE, KSGATE"
 ---
 
 # _KSGATE structure

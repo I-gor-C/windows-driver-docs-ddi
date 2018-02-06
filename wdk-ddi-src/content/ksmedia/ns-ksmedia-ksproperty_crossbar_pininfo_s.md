@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.KSPROPERTY_CROSSBAR_PININFO_S
-title : KSPROPERTY_CROSSBAR_PININFO_S
-author : windows-driver-content
-description : The KSPROPERTY_CROSSBAR_PININFO_S structure describes the crossbar pin information for a device.
-old-location : stream\ksproperty_crossbar_pininfo_s.htm
-old-project : stream
-ms.assetid : 7ddef9cf-aa2f-4383-b37f-8c2f3e9c99d6
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ksmedia/PKSPROPERTY_CROSSBAR_PININFO_S, stream.ksproperty_crossbar_pininfo_s, PKSPROPERTY_CROSSBAR_PININFO_S structure pointer [Streaming Media Devices], *PKSPROPERTY_CROSSBAR_PININFO_S, PKSPROPERTY_CROSSBAR_PININFO_S, vidcapstruct_a8532e73-5b8e-4ed1-a27e-e151642fff2a.xml, KSPROPERTY_CROSSBAR_PININFO_S structure [Streaming Media Devices], KSPROPERTY_CROSSBAR_PININFO_S, ksmedia/KSPROPERTY_CROSSBAR_PININFO_S
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KSPROPERTY_CROSSBAR_PININFO_S, *PKSPROPERTY_CROSSBAR_PININFO_S
+UID: NS:ksmedia.KSPROPERTY_CROSSBAR_PININFO_S
+title: KSPROPERTY_CROSSBAR_PININFO_S
+author: windows-driver-content
+description: The KSPROPERTY_CROSSBAR_PININFO_S structure describes the crossbar pin information for a device.
+old-location: stream\ksproperty_crossbar_pininfo_s.htm
+old-project: stream
+ms.assetid: 7ddef9cf-aa2f-4383-b37f-8c2f3e9c99d6
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ksmedia/PKSPROPERTY_CROSSBAR_PININFO_S, stream.ksproperty_crossbar_pininfo_s, PKSPROPERTY_CROSSBAR_PININFO_S structure pointer [Streaming Media Devices], *PKSPROPERTY_CROSSBAR_PININFO_S, PKSPROPERTY_CROSSBAR_PININFO_S, vidcapstruct_a8532e73-5b8e-4ed1-a27e-e151642fff2a.xml, KSPROPERTY_CROSSBAR_PININFO_S structure [Streaming Media Devices], KSPROPERTY_CROSSBAR_PININFO_S, ksmedia/KSPROPERTY_CROSSBAR_PININFO_S
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	KSPROPERTY_CROSSBAR_PININFO_S
+product: Windows
+targetos: Windows
+req.typenames: KSPROPERTY_CROSSBAR_PININFO_S, *PKSPROPERTY_CROSSBAR_PININFO_S
 ---
 
 # KSPROPERTY_CROSSBAR_PININFO_S structure

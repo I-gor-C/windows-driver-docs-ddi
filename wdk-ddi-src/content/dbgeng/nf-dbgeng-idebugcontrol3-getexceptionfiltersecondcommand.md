@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugControl3.GetExceptionFilterSecondCommand
-title : IDebugControl3::GetExceptionFilterSecondCommand method
-author : windows-driver-content
-description : The GetExceptionFilterSecondCommand method returns the command that will be executed by the debugger engine upon the second chance of a specified exception.
-old-location : debugger\getexceptionfiltersecondcommand.htm
-old-project : debugger
-ms.assetid : 1ea607e2-76a2-4f78-87ca-bf3242f39433
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : dbgeng/IDebugControl::GetExceptionFilterSecondCommand, IDebugControl_fba6b716-8dba-4581-87c3-b808d3ab40a1.xml, GetExceptionFilterSecondCommand method [Windows Debugging], IDebugControl2 interface, GetExceptionFilterSecondCommand, IDebugControl2::GetExceptionFilterSecondCommand, IDebugControl3::GetExceptionFilterSecondCommand, GetExceptionFilterSecondCommand method [Windows Debugging], IDebugControl3, GetExceptionFilterSecondCommand method [Windows Debugging], IDebugControl3 interface, IDebugControl3 interface [Windows Debugging], GetExceptionFilterSecondCommand method, GetExceptionFilterSecondCommand method [Windows Debugging], IDebugControl interface, dbgeng/IDebugControl2::GetExceptionFilterSecondCommand, debugger.getexceptionfiltersecondcommand, dbgeng/IDebugControl3::GetExceptionFilterSecondCommand, IDebugControl2 interface [Windows Debugging], GetExceptionFilterSecondCommand method, IDebugControl::GetExceptionFilterSecondCommand, IDebugControl interface [Windows Debugging], GetExceptionFilterSecondCommand method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugControl3.GetExceptionFilterSecondCommand
+title: IDebugControl3::GetExceptionFilterSecondCommand method
+author: windows-driver-content
+description: The GetExceptionFilterSecondCommand method returns the command that will be executed by the debugger engine upon the second chance of a specified exception.
+old-location: debugger\getexceptionfiltersecondcommand.htm
+old-project: debugger
+ms.assetid: 1ea607e2-76a2-4f78-87ca-bf3242f39433
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: dbgeng/IDebugControl::GetExceptionFilterSecondCommand, IDebugControl_fba6b716-8dba-4581-87c3-b808d3ab40a1.xml, GetExceptionFilterSecondCommand method [Windows Debugging], IDebugControl2 interface, GetExceptionFilterSecondCommand, IDebugControl2::GetExceptionFilterSecondCommand, IDebugControl3::GetExceptionFilterSecondCommand, GetExceptionFilterSecondCommand method [Windows Debugging], IDebugControl3, GetExceptionFilterSecondCommand method [Windows Debugging], IDebugControl3 interface, IDebugControl3 interface [Windows Debugging], GetExceptionFilterSecondCommand method, GetExceptionFilterSecondCommand method [Windows Debugging], IDebugControl interface, dbgeng/IDebugControl2::GetExceptionFilterSecondCommand, debugger.getexceptionfiltersecondcommand, dbgeng/IDebugControl3::GetExceptionFilterSecondCommand, IDebugControl2 interface [Windows Debugging], GetExceptionFilterSecondCommand method, IDebugControl::GetExceptionFilterSecondCommand, IDebugControl interface [Windows Debugging], GetExceptionFilterSecondCommand method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl.GetExceptionFilterSecondCommand
+-	IDebugControl2.GetExceptionFilterSecondCommand
+-	IDebugControl3.GetExceptionFilterSecondCommand
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NS:windot11.DOT11_BSS_ENTRY_PHY_SPECIFIC_INFO
-title : DOT11_BSS_ENTRY_PHY_SPECIFIC_INFO
-author : windows-driver-content
-description : Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
-old-location : netvista\dot11_bss_entry_phy_specific_info.htm
-old-project : netvista
-ms.assetid : 85bcd355-633b-4d3f-a387-1e3b2ac3a013
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : Native_802.11_data_types_bd52a4e6-211b-4bb7-9398-22545a3a70c3.xml, *PDOT11_BSS_ENTRY_PHY_SPECIFIC_INFO, netvista.dot11_bss_entry_phy_specific_info, DOT11_BSS_ENTRY_PHY_SPECIFIC_INFO, PDOT11_BSS_ENTRY_PHY_SPECIFIC_INFO union pointer [Network Drivers Starting with Windows Vista], DOT11_BSS_ENTRY_PHY_SPECIFIC_INFO union [Network Drivers Starting with Windows Vista], windot11/PDOT11_BSS_ENTRY_PHY_SPECIFIC_INFO, PDOT11_BSS_ENTRY_PHY_SPECIFIC_INFO, windot11/DOT11_BSS_ENTRY_PHY_SPECIFIC_INFO
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : windot11.h
-req.include-header : Wlclient.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating   systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDOT11_BSS_ENTRY_PHY_SPECIFIC_INFO, DOT11_BSS_ENTRY_PHY_SPECIFIC_INFO"
-req.product : Windows 10 or later.
+UID: NS:windot11.DOT11_BSS_ENTRY_PHY_SPECIFIC_INFO
+title: DOT11_BSS_ENTRY_PHY_SPECIFIC_INFO
+author: windows-driver-content
+description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+old-location: netvista\dot11_bss_entry_phy_specific_info.htm
+old-project: netvista
+ms.assetid: 85bcd355-633b-4d3f-a387-1e3b2ac3a013
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: Native_802.11_data_types_bd52a4e6-211b-4bb7-9398-22545a3a70c3.xml, *PDOT11_BSS_ENTRY_PHY_SPECIFIC_INFO, netvista.dot11_bss_entry_phy_specific_info, DOT11_BSS_ENTRY_PHY_SPECIFIC_INFO, PDOT11_BSS_ENTRY_PHY_SPECIFIC_INFO union pointer [Network Drivers Starting with Windows Vista], DOT11_BSS_ENTRY_PHY_SPECIFIC_INFO union [Network Drivers Starting with Windows Vista], windot11/PDOT11_BSS_ENTRY_PHY_SPECIFIC_INFO, PDOT11_BSS_ENTRY_PHY_SPECIFIC_INFO, windot11/DOT11_BSS_ENTRY_PHY_SPECIFIC_INFO
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: windot11.h
+req.include-header: Wlclient.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	windot11.h
+apiname:
+-	DOT11_BSS_ENTRY_PHY_SPECIFIC_INFO
+product: Windows
+targetos: Windows
+req.typenames: "*PDOT11_BSS_ENTRY_PHY_SPECIFIC_INFO, DOT11_BSS_ENTRY_PHY_SPECIFIC_INFO"
+req.product: Windows 10 or later.
 ---
 
 # DOT11_BSS_ENTRY_PHY_SPECIFIC_INFO structure

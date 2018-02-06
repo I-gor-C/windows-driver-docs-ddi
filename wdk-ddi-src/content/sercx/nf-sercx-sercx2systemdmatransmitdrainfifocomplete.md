@@ -1,42 +1,47 @@
 ---
-UID : NF:sercx.SerCx2SystemDmaTransmitDrainFifoComplete
-title : SerCx2SystemDmaTransmitDrainFifoComplete function
-author : windows-driver-content
-description : The SerCx2SystemDmaTransmitDrainFifoComplete method notifies version 2 of the serial framework extension (SerCx2) that the serial controller driver has finished draining the data from the transmit FIFO in the serial controller hardware.
-old-location : serports\sercx2systemdmatransmitdrainfifocomplete.htm
-old-project : serports
-ms.assetid : 324EB2B8-9CF0-4A8B-B6D0-B5748EBCB53E
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : 2/SerCx2SystemDmaTransmitDrainFifoComplete, SerCx2SystemDmaTransmitDrainFifoComplete, serports.sercx2systemdmatransmitdrainfifocomplete, SerCx2SystemDmaTransmitDrainFifoComplete method [Serial Ports]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : sercx.h
-req.include-header : 
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 8.1.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSERCX_STATUS, SERCX_STATUS"
-req.product : Windows 10 or later.
+UID: NF:sercx.SerCx2SystemDmaTransmitDrainFifoComplete
+title: SerCx2SystemDmaTransmitDrainFifoComplete function
+author: windows-driver-content
+description: The SerCx2SystemDmaTransmitDrainFifoComplete method notifies version 2 of the serial framework extension (SerCx2) that the serial controller driver has finished draining the data from the transmit FIFO in the serial controller hardware.
+old-location: serports\sercx2systemdmatransmitdrainfifocomplete.htm
+old-project: serports
+ms.assetid: 324EB2B8-9CF0-4A8B-B6D0-B5748EBCB53E
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: 2/SerCx2SystemDmaTransmitDrainFifoComplete, SerCx2SystemDmaTransmitDrainFifoComplete, serports.sercx2systemdmatransmitdrainfifocomplete, SerCx2SystemDmaTransmitDrainFifoComplete method [Serial Ports]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: sercx.h
+req.include-header: 
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 8.1.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	2.0\Sercx.h
+apiname:
+-	SerCx2SystemDmaTransmitDrainFifoComplete
+product: Windows
+targetos: Windows
+req.typenames: "*PSERCX_STATUS, SERCX_STATUS"
+req.product: Windows 10 or later.
 ---
 
 

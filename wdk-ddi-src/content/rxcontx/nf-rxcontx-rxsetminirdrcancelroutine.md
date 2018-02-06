@@ -1,42 +1,47 @@
 ---
-UID : NF:rxcontx.RxSetMinirdrCancelRoutine
-title : RxSetMinirdrCancelRoutine function
-author : windows-driver-content
-description : RxSetMinirdrCancelRoutine is called by a network mini-redirector driver to set up a network mini-redirector cancel routine for an RX_CONTEXT structure.
-old-location : ifsk\rxsetminirdrcancelroutine.htm
-old-project : ifsk
-ms.assetid : 5b74b4c4-d1a3-4587-900a-b54eebfeb553
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : rxref_5883f8a0-cc54-4efe-bb98-13239c78abff.xml, RxSetMinirdrCancelRoutine, rxcontx/RxSetMinirdrCancelRoutine, ifsk.rxsetminirdrcancelroutine, RxSetMinirdrCancelRoutine routine [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : rxcontx.h
-req.include-header : Mrx.h, Rxcontx.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*LPRILWRITEPHONEBOOKENTRYPARAMS, RILWRITEPHONEBOOKENTRYPARAMS"
-req.product : Windows 10 or later.
+UID: NF:rxcontx.RxSetMinirdrCancelRoutine
+title: RxSetMinirdrCancelRoutine function
+author: windows-driver-content
+description: RxSetMinirdrCancelRoutine is called by a network mini-redirector driver to set up a network mini-redirector cancel routine for an RX_CONTEXT structure.
+old-location: ifsk\rxsetminirdrcancelroutine.htm
+old-project: ifsk
+ms.assetid: 5b74b4c4-d1a3-4587-900a-b54eebfeb553
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: rxref_5883f8a0-cc54-4efe-bb98-13239c78abff.xml, RxSetMinirdrCancelRoutine, rxcontx/RxSetMinirdrCancelRoutine, ifsk.rxsetminirdrcancelroutine, RxSetMinirdrCancelRoutine routine [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: rxcontx.h
+req.include-header: Mrx.h, Rxcontx.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	rxcontx.h
+apiname:
+-	RxSetMinirdrCancelRoutine
+product: Windows
+targetos: Windows
+req.typenames: "*LPRILWRITEPHONEBOOKENTRYPARAMS, RILWRITEPHONEBOOKENTRYPARAMS"
+req.product: Windows 10 or later.
 ---
 
 

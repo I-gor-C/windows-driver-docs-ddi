@@ -1,41 +1,46 @@
 ---
-UID : NF:portcls.IMiniportWavePci.Init
-title : IMiniportWavePci::Init method
-author : windows-driver-content
-description : The Init method initializes the WavePci miniport object. Initialization includes verification of the hardware using the resources specified in the resource list.
-old-location : audio\iminiportwavepci_init.htm
-old-project : audio
-ms.assetid : 0796a1a2-1aaa-4e07-a8f1-7a3c895643e7
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : IMiniportWavePci::Init, IMiniportWavePci, Init, Init method [Audio Devices], IMiniportWavePci interface, Init method [Audio Devices], IMiniportWavePci interface [Audio Devices], Init method, portcls/IMiniportWavePci::Init, audmp-routines_fd2d7813-ebe8-4cf3-8a6c-4ebfccca5826.xml, audio.iminiportwavepci_init
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : portcls.h
-req.include-header : Portcls.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : portcls.h
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.IMiniportWavePci.Init
+title: IMiniportWavePci::Init method
+author: windows-driver-content
+description: The Init method initializes the WavePci miniport object. Initialization includes verification of the hardware using the resources specified in the resource list.
+old-location: audio\iminiportwavepci_init.htm
+old-project: audio
+ms.assetid: 0796a1a2-1aaa-4e07-a8f1-7a3c895643e7
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: IMiniportWavePci::Init, IMiniportWavePci, Init, Init method [Audio Devices], IMiniportWavePci interface, Init method [Audio Devices], IMiniportWavePci interface [Audio Devices], Init method, portcls/IMiniportWavePci::Init, audmp-routines_fd2d7813-ebe8-4cf3-8a6c-4ebfccca5826.xml, audio.iminiportwavepci_init
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: portcls.h
+req.include-header: Portcls.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: portcls.h
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	portcls.h
+apiname:
+-	IMiniportWavePci.Init
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

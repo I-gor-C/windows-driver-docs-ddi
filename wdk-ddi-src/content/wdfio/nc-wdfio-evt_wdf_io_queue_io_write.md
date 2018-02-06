@@ -1,42 +1,47 @@
 ---
-UID : NC:wdfio.EVT_WDF_IO_QUEUE_IO_WRITE
-title : EVT_WDF_IO_QUEUE_IO_WRITE
-author : windows-driver-content
-description : A driver's EvtIoWrite event callback function processes a specified write request.
-old-location : wdf\evtiowrite.htm
-old-project : wdf
-ms.assetid : 5a0fa3b4-d020-4664-afa4-352573d4f079
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.evtiowrite, EvtIoWrite callback function, EvtIoWrite, EVT_WDF_IO_QUEUE_IO_WRITE, EVT_WDF_IO_QUEUE_IO_WRITE, wdfio/EvtIoWrite, DFQueueObjectRef_c98601af-48d0-4fc1-9947-b94c50f7a994.xml, kmdf.evtiowrite
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdfio.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL (see Remarks section)"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_INTERRUPT_INFO, *PWDF_INTERRUPT_INFO
-req.product : Windows 10 or later.
+UID: NC:wdfio.EVT_WDF_IO_QUEUE_IO_WRITE
+title: EVT_WDF_IO_QUEUE_IO_WRITE
+author: windows-driver-content
+description: A driver's EvtIoWrite event callback function processes a specified write request.
+old-location: wdf\evtiowrite.htm
+old-project: wdf
+ms.assetid: 5a0fa3b4-d020-4664-afa4-352573d4f079
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.evtiowrite, EvtIoWrite callback function, EvtIoWrite, EVT_WDF_IO_QUEUE_IO_WRITE, EVT_WDF_IO_QUEUE_IO_WRITE, wdfio/EvtIoWrite, DFQueueObjectRef_c98601af-48d0-4fc1-9947-b94c50f7a994.xml, kmdf.evtiowrite
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdfio.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL (see Remarks section)"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Wdfio.h
+apiname:
+-	EvtIoWrite
+product: Windows
+targetos: Windows
+req.typenames: WDF_INTERRUPT_INFO, *PWDF_INTERRUPT_INFO
+req.product: Windows 10 or later.
 ---
 
 

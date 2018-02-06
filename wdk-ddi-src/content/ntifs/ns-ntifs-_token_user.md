@@ -1,41 +1,46 @@
 ---
-UID : NS:ntifs._TOKEN_USER
-title : "_TOKEN_USER"
-author : windows-driver-content
-description : TOKEN_USER identifies the user associated with an access token.
-old-location : ifsk\token_user.htm
-old-project : ifsk
-ms.assetid : 0168f1ea-d2b0-4343-b6e7-c6cc97214201
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : PTOKEN_USER structure pointer [Installable File System Drivers], PTOKEN_USER, ifsk.token_user, TOKEN_USER, _TOKEN_USER, TOKEN_USER structure [Installable File System Drivers], ntifs/PTOKEN_USER, ntifs/TOKEN_USER, securitystructures_0e952505-1e51-463e-ba92-c6995e6f107a.xml, *PTOKEN_USER
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_USER, *PTOKEN_USER
+UID: NS:ntifs._TOKEN_USER
+title: "_TOKEN_USER"
+author: windows-driver-content
+description: TOKEN_USER identifies the user associated with an access token.
+old-location: ifsk\token_user.htm
+old-project: ifsk
+ms.assetid: 0168f1ea-d2b0-4343-b6e7-c6cc97214201
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: PTOKEN_USER structure pointer [Installable File System Drivers], PTOKEN_USER, ifsk.token_user, TOKEN_USER, _TOKEN_USER, TOKEN_USER structure [Installable File System Drivers], ntifs/PTOKEN_USER, ntifs/TOKEN_USER, securitystructures_0e952505-1e51-463e-ba92-c6995e6f107a.xml, *PTOKEN_USER
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntifs.h
+apiname:
+-	TOKEN_USER
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_USER, *PTOKEN_USER
 ---
 
 # _TOKEN_USER structure

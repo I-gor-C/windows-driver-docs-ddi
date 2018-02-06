@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dhal._D3DHAL_DP2TRIANGLELIST
-title : "_D3DHAL_DP2TRIANGLELIST"
-author : windows-driver-content
-description : One D3DHAL_DP2TRIANGLELIST structure is parsed from the command buffer by the D3dDrawPrimitives2 callback when the D3DHAL_DP2COMMAND structure's bCommand member is set to D3DDP2OP_TRIANGLELIST, and is used to render the specified unconnected triangles.
-old-location : display\d3dhal_dp2trianglelist.htm
-old-project : display
-ms.assetid : f9a9b407-dae5-4456-8542-4f5b06af50a5
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : "_D3DHAL_DP2TRIANGLELIST, d3dhal/D3DHAL_DP2TRIANGLELIST, d3dhal/LPD3DHAL_DP2TRIANGLELIST, D3DHAL_DP2TRIANGLELIST structure [Display Devices], D3DHAL_DP2TRIANGLELIST, LPD3DHAL_DP2TRIANGLELIST structure pointer [Display Devices], d3dstrct_3e5f6bc4-358d-4db1-88b3-2f7c7484abb4.xml, *LPD3DHAL_DP2TRIANGLELIST, LPD3DHAL_DP2TRIANGLELIST, display.d3dhal_dp2trianglelist"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dhal.h
-req.include-header : D3dhal.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DHAL_DP2TRIANGLELIST, *LPD3DHAL_DP2TRIANGLELIST
+UID: NS:d3dhal._D3DHAL_DP2TRIANGLELIST
+title: "_D3DHAL_DP2TRIANGLELIST"
+author: windows-driver-content
+description: One D3DHAL_DP2TRIANGLELIST structure is parsed from the command buffer by the D3dDrawPrimitives2 callback when the D3DHAL_DP2COMMAND structure's bCommand member is set to D3DDP2OP_TRIANGLELIST, and is used to render the specified unconnected triangles.
+old-location: display\d3dhal_dp2trianglelist.htm
+old-project: display
+ms.assetid: f9a9b407-dae5-4456-8542-4f5b06af50a5
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: "_D3DHAL_DP2TRIANGLELIST, d3dhal/D3DHAL_DP2TRIANGLELIST, d3dhal/LPD3DHAL_DP2TRIANGLELIST, D3DHAL_DP2TRIANGLELIST structure [Display Devices], D3DHAL_DP2TRIANGLELIST, LPD3DHAL_DP2TRIANGLELIST structure pointer [Display Devices], d3dstrct_3e5f6bc4-358d-4db1-88b3-2f7c7484abb4.xml, *LPD3DHAL_DP2TRIANGLELIST, LPD3DHAL_DP2TRIANGLELIST, display.d3dhal_dp2trianglelist"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dhal.h
+req.include-header: D3dhal.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dhal.h
+apiname:
+-	D3DHAL_DP2TRIANGLELIST
+product: Windows
+targetos: Windows
+req.typenames: D3DHAL_DP2TRIANGLELIST, *LPD3DHAL_DP2TRIANGLELIST
 ---
 
 # _D3DHAL_DP2TRIANGLELIST structure

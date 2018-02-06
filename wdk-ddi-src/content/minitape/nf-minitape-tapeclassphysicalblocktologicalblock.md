@@ -1,41 +1,47 @@
 ---
-UID : NF:minitape.TapeClassPhysicalBlockToLogicalBlock
-title : TapeClassPhysicalBlockToLogicalBlock function
-author : windows-driver-content
-description : The TapeClassPhysicalBlockToLogicalBlock routine translates a physical block address to a pseudological block address. This routine is for SCSI-1 devices.
-old-location : storage\tapeclassphysicalblocktologicalblock.htm
-old-project : storage
-ms.assetid : fc95f5c8-2892-479d-ac25-32c07e9c7aab
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : TapeClassPhysicalBlockToLogicalBlock routine [Storage Devices], TapeClassPhysicalBlockToLogicalBlock, tapeclas_94d20234-ee4d-4096-b856-f5196b606e2d.xml, minitape/TapeClassPhysicalBlockToLogicalBlock, storage.tapeclassphysicalblocktologicalblock
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : minitape.h
-req.include-header : Minitape.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Tape.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TAPE_STATUS, *PTAPE_STATUS
+UID: NF:minitape.TapeClassPhysicalBlockToLogicalBlock
+title: TapeClassPhysicalBlockToLogicalBlock function
+author: windows-driver-content
+description: The TapeClassPhysicalBlockToLogicalBlock routine translates a physical block address to a pseudological block address. This routine is for SCSI-1 devices.
+old-location: storage\tapeclassphysicalblocktologicalblock.htm
+old-project: storage
+ms.assetid: fc95f5c8-2892-479d-ac25-32c07e9c7aab
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: TapeClassPhysicalBlockToLogicalBlock routine [Storage Devices], TapeClassPhysicalBlockToLogicalBlock, tapeclas_94d20234-ee4d-4096-b856-f5196b606e2d.xml, minitape/TapeClassPhysicalBlockToLogicalBlock, storage.tapeclassphysicalblocktologicalblock
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: minitape.h
+req.include-header: Minitape.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Tape.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Tape.lib
+-	Tape.dll
+apiname:
+-	TapeClassPhysicalBlockToLogicalBlock
+product: Windows
+targetos: Windows
+req.typenames: TAPE_STATUS, *PTAPE_STATUS
 ---
 
 

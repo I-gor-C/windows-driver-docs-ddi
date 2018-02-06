@@ -1,42 +1,48 @@
 ---
-UID : NF:usbdlib.USBD_AssignUrbToIoStackLocation
-title : USBD_AssignUrbToIoStackLocation function
-author : windows-driver-content
-description : The USBD_AssignUrbToIoStackLocation routine is called by a client driver to associate an URB with the IRP's next stack location.
-old-location : buses\usbd_assignurbtostacklocation.htm
-old-project : usbref
-ms.assetid : 66A66050-B2BF-47FA-A4E2-BF8816390B16
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : usbdlib/USBD_AssignUrbToIoStackLocation, USBD_AssignUrbToIoStackLocation, USBD_AssignUrbToIoStackLocation routine [Buses], buses.usbd_assignurbtostacklocation
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : usbdlib.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Requires WDK for Windows 8. Targets Windows Vista and later versions of the Windows operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Usbdex.lib
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : USBCAMD_DEVICE_DATA2, *PUSBCAMD_DEVICE_DATA2
-req.product : Windows 10 or later.
+UID: NF:usbdlib.USBD_AssignUrbToIoStackLocation
+title: USBD_AssignUrbToIoStackLocation function
+author: windows-driver-content
+description: The USBD_AssignUrbToIoStackLocation routine is called by a client driver to associate an URB with the IRP's next stack location.
+old-location: buses\usbd_assignurbtostacklocation.htm
+old-project: usbref
+ms.assetid: 66A66050-B2BF-47FA-A4E2-BF8816390B16
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: usbdlib/USBD_AssignUrbToIoStackLocation, USBD_AssignUrbToIoStackLocation, USBD_AssignUrbToIoStackLocation routine [Buses], buses.usbd_assignurbtostacklocation
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: usbdlib.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Requires WDK for Windows 8. Targets Windows Vista and later versions of the Windows operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Usbdex.lib
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Usbdex.lib
+-	Usbdex.dll
+apiname:
+-	USBD_AssignUrbToIoStackLocation
+product: Windows
+targetos: Windows
+req.typenames: USBCAMD_DEVICE_DATA2, *PUSBCAMD_DEVICE_DATA2
+req.product: Windows 10 or later.
 ---
 
 

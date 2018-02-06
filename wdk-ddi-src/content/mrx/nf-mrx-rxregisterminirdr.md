@@ -1,41 +1,46 @@
 ---
-UID : NF:mrx.RxRegisterMinirdr
-title : RxRegisterMinirdr function
-author : windows-driver-content
-description : RxRegisterMinirdr is called by a network mini-redirector driver to register the driver with RDBSS, which adds the registration information to an internal registration table. RDBSS also builds a device object for the network mini-redirector.
-old-location : ifsk\rxregisterminirdr.htm
-old-project : ifsk
-ms.assetid : f9c2fedd-b513-4ea9-b915-cdcc05b88d6f
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : RxRegisterMinirdr, mrx/RxRegisterMinirdr, ifsk.rxregisterminirdr, RxRegisterMinirdr function [Installable File System Drivers], rxref_72a33968-ea1e-4431-9843-5bf3aa11a12a.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : mrx.h
-req.include-header : Mrx.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SetDSMCounters_IN, *PSetDSMCounters_IN
+UID: NF:mrx.RxRegisterMinirdr
+title: RxRegisterMinirdr function
+author: windows-driver-content
+description: RxRegisterMinirdr is called by a network mini-redirector driver to register the driver with RDBSS, which adds the registration information to an internal registration table. RDBSS also builds a device object for the network mini-redirector.
+old-location: ifsk\rxregisterminirdr.htm
+old-project: ifsk
+ms.assetid: f9c2fedd-b513-4ea9-b915-cdcc05b88d6f
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: RxRegisterMinirdr, mrx/RxRegisterMinirdr, ifsk.rxregisterminirdr, RxRegisterMinirdr function [Installable File System Drivers], rxref_72a33968-ea1e-4431-9843-5bf3aa11a12a.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: mrx.h
+req.include-header: Mrx.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	mrx.h
+apiname:
+-	RxRegisterMinirdr
+product: Windows
+targetos: Windows
+req.typenames: SetDSMCounters_IN, *PSetDSMCounters_IN
 ---
 
 

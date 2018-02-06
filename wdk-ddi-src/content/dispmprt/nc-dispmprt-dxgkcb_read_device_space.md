@@ -1,41 +1,46 @@
 ---
-UID : NC:dispmprt.DXGKCB_READ_DEVICE_SPACE
-title : DXGKCB_READ_DEVICE_SPACE
-author : windows-driver-content
-description : The DxgkCbReadDeviceSpace function reads from a device configuration space or the expansion ROM of a display adapter.
-old-location : display\dxgkcbreaddevicespace.htm
-old-project : display
-ms.assetid : 118ea0b9-6463-4050-9f33-192a3d42fdce
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkcbreaddevicespace, DxgkCbReadDeviceSpace callback function [Display Devices], DxgkCbReadDeviceSpace, DXGKCB_READ_DEVICE_SPACE, DXGKCB_READ_DEVICE_SPACE, dispmprt/DxgkCbReadDeviceSpace, DpFunctions_54853b5b-487d-410e-a08d-eb777b3686e9.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : dispmprt.h
-req.include-header : Dispmprt.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
+UID: NC:dispmprt.DXGKCB_READ_DEVICE_SPACE
+title: DXGKCB_READ_DEVICE_SPACE
+author: windows-driver-content
+description: The DxgkCbReadDeviceSpace function reads from a device configuration space or the expansion ROM of a display adapter.
+old-location: display\dxgkcbreaddevicespace.htm
+old-project: display
+ms.assetid: 118ea0b9-6463-4050-9f33-192a3d42fdce
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkcbreaddevicespace, DxgkCbReadDeviceSpace callback function [Display Devices], DxgkCbReadDeviceSpace, DXGKCB_READ_DEVICE_SPACE, DXGKCB_READ_DEVICE_SPACE, dispmprt/DxgkCbReadDeviceSpace, DpFunctions_54853b5b-487d-410e-a08d-eb777b3686e9.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: dispmprt.h
+req.include-header: Dispmprt.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	dispmprt.h
+apiname:
+-	DxgkCbReadDeviceSpace
+product: Windows
+targetos: Windows
+req.typenames: SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 ---
 
 

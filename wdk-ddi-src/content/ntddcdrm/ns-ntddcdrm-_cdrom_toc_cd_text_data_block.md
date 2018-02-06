@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddcdrm._CDROM_TOC_CD_TEXT_DATA_BLOCK
-title : "_CDROM_TOC_CD_TEXT_DATA_BLOCK"
-author : windows-driver-content
-description : This structure contains CD text descriptor data used in conjunction with the data in the CDROM_TOC_CD_TEXT_DATA structure.
-old-location : storage\cdrom_toc_cd_text_data_block.htm
-old-project : storage
-ms.assetid : 119386fe-1eff-4dac-b9d5-54baefcf6e12
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : PCDROM_TOC_CD_TEXT_DATA_BLOCK, structs-CD-ROM_6bdb8d21-6388-4505-b9a1-1b3e1e594e02.xml, PCDROM_TOC_CD_TEXT_DATA_BLOCK structure pointer [Storage Devices], storage.cdrom_toc_cd_text_data_block, CDROM_TOC_CD_TEXT_DATA_BLOCK structure [Storage Devices], ntddcdrm/CDROM_TOC_CD_TEXT_DATA_BLOCK, *PCDROM_TOC_CD_TEXT_DATA_BLOCK, _CDROM_TOC_CD_TEXT_DATA_BLOCK, ntddcdrm/PCDROM_TOC_CD_TEXT_DATA_BLOCK, CDROM_TOC_CD_TEXT_DATA_BLOCK
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddcdrm.h
-req.include-header : Ntddcdrm.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : CDROM_TOC_CD_TEXT_DATA_BLOCK, *PCDROM_TOC_CD_TEXT_DATA_BLOCK
+UID: NS:ntddcdrm._CDROM_TOC_CD_TEXT_DATA_BLOCK
+title: "_CDROM_TOC_CD_TEXT_DATA_BLOCK"
+author: windows-driver-content
+description: This structure contains CD text descriptor data used in conjunction with the data in the CDROM_TOC_CD_TEXT_DATA structure.
+old-location: storage\cdrom_toc_cd_text_data_block.htm
+old-project: storage
+ms.assetid: 119386fe-1eff-4dac-b9d5-54baefcf6e12
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: PCDROM_TOC_CD_TEXT_DATA_BLOCK, structs-CD-ROM_6bdb8d21-6388-4505-b9a1-1b3e1e594e02.xml, PCDROM_TOC_CD_TEXT_DATA_BLOCK structure pointer [Storage Devices], storage.cdrom_toc_cd_text_data_block, CDROM_TOC_CD_TEXT_DATA_BLOCK structure [Storage Devices], ntddcdrm/CDROM_TOC_CD_TEXT_DATA_BLOCK, *PCDROM_TOC_CD_TEXT_DATA_BLOCK, _CDROM_TOC_CD_TEXT_DATA_BLOCK, ntddcdrm/PCDROM_TOC_CD_TEXT_DATA_BLOCK, CDROM_TOC_CD_TEXT_DATA_BLOCK
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddcdrm.h
+req.include-header: Ntddcdrm.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddcdrm.h
+apiname:
+-	CDROM_TOC_CD_TEXT_DATA_BLOCK
+product: Windows
+targetos: Windows
+req.typenames: CDROM_TOC_CD_TEXT_DATA_BLOCK, *PCDROM_TOC_CD_TEXT_DATA_BLOCK
 ---
 
 # _CDROM_TOC_CD_TEXT_DATA_BLOCK structure

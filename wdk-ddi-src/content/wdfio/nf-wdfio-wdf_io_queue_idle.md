@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfio.WDF_IO_QUEUE_IDLE
-title : WDF_IO_QUEUE_IDLE function
-author : windows-driver-content
-description : The WDF_IO_QUEUE_IDLE function returns TRUE if an I/O queue's state indicates that the queue is drained.
-old-location : wdf\wdf_io_queue_idle.htm
-old-project : wdf
-ms.assetid : 9ad3be79-13ca-4bcb-b686-09e7563610f9
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WDF_IO_QUEUE_IDLE function, DFQueueObjectRef_f836bf9d-8d2c-48db-92cd-fbcef2a0faf6.xml, wdfio/WDF_IO_QUEUE_IDLE, WDF_IO_QUEUE_IDLE, kmdf.wdf_io_queue_idle, wdf.wdf_io_queue_idle
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfio.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : None
-req.dll : 
-req.irql : Any IRQL.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_IO_QUEUE_STATE
-req.product : Windows 10 or later.
+UID: NF:wdfio.WDF_IO_QUEUE_IDLE
+title: WDF_IO_QUEUE_IDLE function
+author: windows-driver-content
+description: The WDF_IO_QUEUE_IDLE function returns TRUE if an I/O queue's state indicates that the queue is drained.
+old-location: wdf\wdf_io_queue_idle.htm
+old-project: wdf
+ms.assetid: 9ad3be79-13ca-4bcb-b686-09e7563610f9
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WDF_IO_QUEUE_IDLE function, DFQueueObjectRef_f836bf9d-8d2c-48db-92cd-fbcef2a0faf6.xml, wdfio/WDF_IO_QUEUE_IDLE, WDF_IO_QUEUE_IDLE, kmdf.wdf_io_queue_idle, wdf.wdf_io_queue_idle
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfio.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: None
+req.dll: 
+req.irql: Any IRQL.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	None
+-	None.dll
+apiname:
+-	WDF_IO_QUEUE_IDLE
+product: Windows
+targetos: Windows
+req.typenames: WDF_IO_QUEUE_STATE
+req.product: Windows 10 or later.
 ---
 
 

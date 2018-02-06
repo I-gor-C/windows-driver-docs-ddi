@@ -1,42 +1,47 @@
 ---
-UID : NS:wdfinstaller._WDF_COINSTALLER_INSTALL_OPTIONS
-title : "_WDF_COINSTALLER_INSTALL_OPTIONS"
-author : windows-driver-content
-description : The WDF_COINSTALLER_INSTALL_OPTIONS structure contains installation options that a framework-based driver's installer can specify to the framework's co-installer.
-old-location : wdf\wdf_coinstaller_install_options.htm
-old-project : wdf
-ms.assetid : be8867e4-42be-4f11-bf4b-1b0fd29daa06
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdfinstaller/WDF_COINSTALLER_INSTALL_OPTIONS, wdfinstaller/PWDF_COINSTALLER_INSTALL_OPTIONS, _WDF_COINSTALLER_INSTALL_OPTIONS, WDF_COINSTALLER_INSTALL_OPTIONS structure, WDF_COINSTALLER_INSTALL_OPTIONS, *PWDF_COINSTALLER_INSTALL_OPTIONS, PWDF_COINSTALLER_INSTALL_OPTIONS, PWDF_COINSTALLER_INSTALL_OPTIONS structure pointer, DFCoinstallerRef_71021229-7902-4d6a-a5f3-c9763860c7bf.xml, kmdf.wdf_coinstaller_install_options, wdf.wdf_coinstaller_install_options
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdfinstaller.h
-req.include-header : Wdfinstaller.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.9
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDF_COINSTALLER_INSTALL_OPTIONS, WDF_COINSTALLER_INSTALL_OPTIONS"
-req.product : Windows 10 or later.
+UID: NS:wdfinstaller._WDF_COINSTALLER_INSTALL_OPTIONS
+title: "_WDF_COINSTALLER_INSTALL_OPTIONS"
+author: windows-driver-content
+description: The WDF_COINSTALLER_INSTALL_OPTIONS structure contains installation options that a framework-based driver's installer can specify to the framework's co-installer.
+old-location: wdf\wdf_coinstaller_install_options.htm
+old-project: wdf
+ms.assetid: be8867e4-42be-4f11-bf4b-1b0fd29daa06
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdfinstaller/WDF_COINSTALLER_INSTALL_OPTIONS, wdfinstaller/PWDF_COINSTALLER_INSTALL_OPTIONS, _WDF_COINSTALLER_INSTALL_OPTIONS, WDF_COINSTALLER_INSTALL_OPTIONS structure, WDF_COINSTALLER_INSTALL_OPTIONS, *PWDF_COINSTALLER_INSTALL_OPTIONS, PWDF_COINSTALLER_INSTALL_OPTIONS, PWDF_COINSTALLER_INSTALL_OPTIONS structure pointer, DFCoinstallerRef_71021229-7902-4d6a-a5f3-c9763860c7bf.xml, kmdf.wdf_coinstaller_install_options, wdf.wdf_coinstaller_install_options
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdfinstaller.h
+req.include-header: Wdfinstaller.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.9
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfinstaller.h
+apiname:
+-	WDF_COINSTALLER_INSTALL_OPTIONS
+product: Windows
+targetos: Windows
+req.typenames: "*PWDF_COINSTALLER_INSTALL_OPTIONS, WDF_COINSTALLER_INSTALL_OPTIONS"
+req.product: Windows 10 or later.
 ---
 
 # _WDF_COINSTALLER_INSTALL_OPTIONS structure

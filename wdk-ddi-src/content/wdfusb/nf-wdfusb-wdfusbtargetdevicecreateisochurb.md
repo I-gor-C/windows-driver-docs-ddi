@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfusb.WdfUsbTargetDeviceCreateIsochUrb
-title : WdfUsbTargetDeviceCreateIsochUrb function
-author : windows-driver-content
-description : The WdfUsbTargetDeviceCreateIsochUrb method allocates an isochronous USB request block (URB).
-old-location : wdf\wdfusbtargetdevicecreateisochurb.htm
-old-project : wdf
-ms.assetid : 2D25A276-A367-4E59-9CA0-4F480675DD77
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WdfUsbTargetDeviceCreateIsochUrb method, kmdf.wdfusbtargetdevicecreateisochurb, wdf.wdfusbtargetdevicecreateisochurb, PFN_WDFUSBTARGETDEVICECREATEISOCHURB, wdfusb/WdfUsbTargetDeviceCreateIsochUrb, WdfUsbTargetDeviceCreateIsochUrb
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfusb.h
-req.include-header : Wdfusb.h
-req.target-type : Universal
-req.target-min-winverclnt : Windows Vista
-req.target-min-winversvr : 
-req.kmdf-ver : 1.11
-req.umdf-ver : 
-req.ddi-compliance : DriverCreate
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfusb.WdfUsbTargetDeviceCreateIsochUrb
+title: WdfUsbTargetDeviceCreateIsochUrb function
+author: windows-driver-content
+description: The WdfUsbTargetDeviceCreateIsochUrb method allocates an isochronous USB request block (URB).
+old-location: wdf\wdfusbtargetdevicecreateisochurb.htm
+old-project: wdf
+ms.assetid: 2D25A276-A367-4E59-9CA0-4F480675DD77
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WdfUsbTargetDeviceCreateIsochUrb method, kmdf.wdfusbtargetdevicecreateisochurb, wdf.wdfusbtargetdevicecreateisochurb, PFN_WDFUSBTARGETDEVICECREATEISOCHURB, wdfusb/WdfUsbTargetDeviceCreateIsochUrb, WdfUsbTargetDeviceCreateIsochUrb
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfusb.h
+req.include-header: Wdfusb.h
+req.target-type: Universal
+req.target-min-winverclnt: Windows Vista
+req.target-min-winversvr: 
+req.kmdf-ver: 1.11
+req.umdf-ver: 
+req.ddi-compliance: DriverCreate
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfUsbTargetDeviceCreateIsochUrb
+product: Windows
+targetos: Windows
+req.typenames: WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
+req.product: Windows 10 or later.
 ---
 
 

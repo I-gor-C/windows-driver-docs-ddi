@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddstor.IOCTL_STORAGE_GET_MEDIA_SERIAL_NUMBER
-title : IOCTL_STORAGE_GET_MEDIA_SERIAL_NUMBER
-author : windows-driver-content
-description : Queries the USB generic parent driver for the serial number of a USB device.
-old-location : storage\ioctl_storage_get_media_serial_number.htm
-old-project : storage
-ms.assetid : aa903b7e-e844-466e-85b1-33fe6ba40689
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_storage_get_media_serial_number, IOCTL_STORAGE_GET_MEDIA_SERIAL_NUMBER control code [Storage Devices], IOCTL_STORAGE_GET_MEDIA_SERIAL_NUMBER, ntddstor/IOCTL_STORAGE_GET_MEDIA_SERIAL_NUMBER, k307_dd8dcdec-9756-435c-abbb-14dd1a64ee11.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddstor.h
-req.include-header : Ntddstor.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STORAGE_ZONE_CONDITION, *PSTORAGE_ZONE_CONDITION
+UID: NI:ntddstor.IOCTL_STORAGE_GET_MEDIA_SERIAL_NUMBER
+title: IOCTL_STORAGE_GET_MEDIA_SERIAL_NUMBER
+author: windows-driver-content
+description: Queries the USB generic parent driver for the serial number of a USB device.
+old-location: storage\ioctl_storage_get_media_serial_number.htm
+old-project: storage
+ms.assetid: aa903b7e-e844-466e-85b1-33fe6ba40689
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_storage_get_media_serial_number, IOCTL_STORAGE_GET_MEDIA_SERIAL_NUMBER control code [Storage Devices], IOCTL_STORAGE_GET_MEDIA_SERIAL_NUMBER, ntddstor/IOCTL_STORAGE_GET_MEDIA_SERIAL_NUMBER, k307_dd8dcdec-9756-435c-abbb-14dd1a64ee11.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddstor.h
+req.include-header: Ntddstor.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddstor.h
+apiname:
+-	IOCTL_STORAGE_GET_MEDIA_SERIAL_NUMBER
+product: Windows
+targetos: Windows
+req.typenames: STORAGE_ZONE_CONDITION, *PSTORAGE_ZONE_CONDITION
 ---
 
 # IOCTL_STORAGE_GET_MEDIA_SERIAL_NUMBER IOCTL

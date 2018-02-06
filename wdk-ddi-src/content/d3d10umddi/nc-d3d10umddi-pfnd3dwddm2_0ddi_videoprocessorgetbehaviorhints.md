@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3DWDDM2_0DDI_VIDEOPROCESSORGETBEHAVIORHINTS
-title : PFND3DWDDM2_0DDI_VIDEOPROCESSORGETBEHAVIORHINTS
-author : windows-driver-content
-description : Returns driver hints as to which video processor operations are best performed using multi-plane overlay hardware rather than VideoProcessorBlt. Optional for Windows Display Driver Model (WDDM) 2.0, or later, drivers.
-old-location : display\videoprocessorgetbehaviorhints.htm
-old-project : display
-ms.assetid : E6CBAFEE-9587-45D5-A6CD-4CA739AF279E
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.videoprocessorgetbehaviorhints, pfnVideoProcessorGetBehaviorHints callback function [Display Devices], pfnVideoProcessorGetBehaviorHints, PFND3DWDDM2_0DDI_VIDEOPROCESSORGETBEHAVIORHINTS, PFND3DWDDM2_0DDI_VIDEOPROCESSORGETBEHAVIORHINTS, d3d10umddi/pfnVideoProcessorGetBehaviorHints
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3DWDDM2_0DDI_VIDEOPROCESSORGETBEHAVIORHINTS
+title: PFND3DWDDM2_0DDI_VIDEOPROCESSORGETBEHAVIORHINTS
+author: windows-driver-content
+description: Returns driver hints as to which video processor operations are best performed using multi-plane overlay hardware rather than VideoProcessorBlt. Optional for Windows Display Driver Model (WDDM) 2.0, or later, drivers.
+old-location: display\videoprocessorgetbehaviorhints.htm
+old-project: display
+ms.assetid: E6CBAFEE-9587-45D5-A6CD-4CA739AF279E
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.videoprocessorgetbehaviorhints, pfnVideoProcessorGetBehaviorHints callback function [Display Devices], pfnVideoProcessorGetBehaviorHints, PFND3DWDDM2_0DDI_VIDEOPROCESSORGETBEHAVIORHINTS, PFND3DWDDM2_0DDI_VIDEOPROCESSORGETBEHAVIORHINTS, d3d10umddi/pfnVideoProcessorGetBehaviorHints
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	D3d10umddi.h
+apiname:
+-	pfnVideoProcessorGetBehaviorHints
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

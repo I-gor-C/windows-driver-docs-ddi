@@ -1,41 +1,46 @@
 ---
-UID : NS:ks.KSPIN_PHYSICALCONNECTION
-title : KSPIN_PHYSICALCONNECTION
-author : windows-driver-content
-description : A structure of type KSPIN_PHYSICALCONNECTION is returned in response to a KSPROPERTY_PIN_PHYSICALCONNECTION request.
-old-location : stream\kspin_physicalconnection.htm
-old-project : stream
-ms.assetid : e11c6e8d-a338-4427-af04-bdb07b9e9a73
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ks/KSPIN_PHYSICALCONNECTION, ks-struct_7b9a3e0f-2cd9-4822-8e8a-03355dc522ed.xml, *PKSPIN_PHYSICALCONNECTION, KSPIN_PHYSICALCONNECTION structure [Streaming Media Devices], KSPIN_PHYSICALCONNECTION, ks/PKSPIN_PHYSICALCONNECTION, stream.kspin_physicalconnection, PKSPIN_PHYSICALCONNECTION structure pointer [Streaming Media Devices], PKSPIN_PHYSICALCONNECTION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKSPIN_PHYSICALCONNECTION, KSPIN_PHYSICALCONNECTION"
+UID: NS:ks.KSPIN_PHYSICALCONNECTION
+title: KSPIN_PHYSICALCONNECTION
+author: windows-driver-content
+description: A structure of type KSPIN_PHYSICALCONNECTION is returned in response to a KSPROPERTY_PIN_PHYSICALCONNECTION request.
+old-location: stream\kspin_physicalconnection.htm
+old-project: stream
+ms.assetid: e11c6e8d-a338-4427-af04-bdb07b9e9a73
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ks/KSPIN_PHYSICALCONNECTION, ks-struct_7b9a3e0f-2cd9-4822-8e8a-03355dc522ed.xml, *PKSPIN_PHYSICALCONNECTION, KSPIN_PHYSICALCONNECTION structure [Streaming Media Devices], KSPIN_PHYSICALCONNECTION, ks/PKSPIN_PHYSICALCONNECTION, stream.kspin_physicalconnection, PKSPIN_PHYSICALCONNECTION structure pointer [Streaming Media Devices], PKSPIN_PHYSICALCONNECTION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	KSPIN_PHYSICALCONNECTION
+product: Windows
+targetos: Windows
+req.typenames: "*PKSPIN_PHYSICALCONNECTION, KSPIN_PHYSICALCONNECTION"
 ---
 
 # KSPIN_PHYSICALCONNECTION structure

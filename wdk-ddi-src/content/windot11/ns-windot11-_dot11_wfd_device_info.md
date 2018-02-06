@@ -1,42 +1,47 @@
 ---
-UID : NS:windot11._DOT11_WFD_DEVICE_INFO
-title : "_DOT11_WFD_DEVICE_INFO"
-author : windows-driver-content
-description : the DOT11_WFD_DEVICE_INFO structure is included with a OID_DOT11_WFD_DEVICE_INFO request. The structure contains Wi-Fi Direct (WFD) device information related to Peer-to-Peer (P2P) attributes.
-old-location : netvista\_dot11_wfd_device_info.htm
-old-project : netvista
-ms.assetid : 6E0E9BC9-9C84-4511-A28E-2BB2D6367F74
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : PDOT11_WFD_DEVICE_INFO, windot11/ DOT11_WFD_DEVICE_INFO, DOT11_WFD_DEVICE_INFO structure [Network Drivers Starting with Windows Vista], DOT11_WFD_DEVICE_INFO, _DOT11_WFD_DEVICE_INFO, netvista._dot11_wfd_device_info, *PDOT11_WFD_DEVICE_INFO, windot11/PDOT11_WFD_DEVICE_INFO, PDOT11_WFD_DEVICE_INFO structure pointer [Network Drivers Starting with Windows Vista]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : windot11.h
-req.include-header : Windot11.h
-req.target-type : Windows
-req.target-min-winverclnt : Versions:\_Supported in Windows 8
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT11_WFD_DEVICE_INFO, *PDOT11_WFD_DEVICE_INFO
-req.product : Windows 10 or later.
+UID: NS:windot11._DOT11_WFD_DEVICE_INFO
+title: "_DOT11_WFD_DEVICE_INFO"
+author: windows-driver-content
+description: the DOT11_WFD_DEVICE_INFO structure is included with a OID_DOT11_WFD_DEVICE_INFO request. The structure contains Wi-Fi Direct (WFD) device information related to Peer-to-Peer (P2P) attributes.
+old-location: netvista\_dot11_wfd_device_info.htm
+old-project: netvista
+ms.assetid: 6E0E9BC9-9C84-4511-A28E-2BB2D6367F74
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: PDOT11_WFD_DEVICE_INFO, windot11/ DOT11_WFD_DEVICE_INFO, DOT11_WFD_DEVICE_INFO structure [Network Drivers Starting with Windows Vista], DOT11_WFD_DEVICE_INFO, _DOT11_WFD_DEVICE_INFO, netvista._dot11_wfd_device_info, *PDOT11_WFD_DEVICE_INFO, windot11/PDOT11_WFD_DEVICE_INFO, PDOT11_WFD_DEVICE_INFO structure pointer [Network Drivers Starting with Windows Vista]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: windot11.h
+req.include-header: Windot11.h
+req.target-type: Windows
+req.target-min-winverclnt: Versions:\_Supported in Windows 8
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Windot11.h
+apiname:
+-	DOT11_WFD_DEVICE_INFO
+product: Windows
+targetos: Windows
+req.typenames: DOT11_WFD_DEVICE_INFO, *PDOT11_WFD_DEVICE_INFO
+req.product: Windows 10 or later.
 ---
 
 # _DOT11_WFD_DEVICE_INFO structure

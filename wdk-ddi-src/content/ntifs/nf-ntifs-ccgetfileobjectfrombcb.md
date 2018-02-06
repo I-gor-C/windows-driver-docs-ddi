@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.CcGetFileObjectFromBcb
-title : CcGetFileObjectFromBcb function
-author : windows-driver-content
-description : Given a pointer to a pinned buffer control block (BCB) for a file, the CcGetFileObjectFromBcb routine returns a pointer to the file object that the cache manager is using for that file.
-old-location : ifsk\ccgetfileobjectfrombcb.htm
-old-project : ifsk
-ms.assetid : d30a2ee4-4736-4127-95db-b86e782c3577
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ntifs/CcGetFileObjectFromBcb, ifsk.ccgetfileobjectfrombcb, CcGetFileObjectFromBcb, ccref_7fdf1d1e-a080-4322-a09c-be0a16543050.xml, CcGetFileObjectFromBcb routine [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.CcGetFileObjectFromBcb
+title: CcGetFileObjectFromBcb function
+author: windows-driver-content
+description: Given a pointer to a pinned buffer control block (BCB) for a file, the CcGetFileObjectFromBcb routine returns a pointer to the file object that the cache manager is using for that file.
+old-location: ifsk\ccgetfileobjectfrombcb.htm
+old-project: ifsk
+ms.assetid: d30a2ee4-4736-4127-95db-b86e782c3577
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ntifs/CcGetFileObjectFromBcb, ifsk.ccgetfileobjectfrombcb, CcGetFileObjectFromBcb, ccref_7fdf1d1e-a080-4322-a09c-be0a16543050.xml, CcGetFileObjectFromBcb routine [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	CcGetFileObjectFromBcb
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

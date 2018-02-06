@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltGetFilterInformation
-title : FltGetFilterInformation function
-author : windows-driver-content
-description : The FltGetFilterInformation routine provides information about a minifilter driver.
-old-location : ifsk\fltgetfilterinformation.htm
-old-project : ifsk
-ms.assetid : d3ffe93c-4fe8-4a2e-9448-8488d2ff909e
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltGetFilterInformation, FltGetFilterInformation routine [Installable File System Drivers], fltkernel/FltGetFilterInformation, ifsk.fltgetfilterinformation, FltApiRef_e_to_o_96d634cd-87a8-49a8-a34b-ad2a1352c677.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : FltKernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : FltMgr.lib
-req.dll : Fltmgr.sys
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltGetFilterInformation
+title: FltGetFilterInformation function
+author: windows-driver-content
+description: The FltGetFilterInformation routine provides information about a minifilter driver.
+old-location: ifsk\fltgetfilterinformation.htm
+old-project: ifsk
+ms.assetid: d3ffe93c-4fe8-4a2e-9448-8488d2ff909e
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltGetFilterInformation, FltGetFilterInformation routine [Installable File System Drivers], fltkernel/FltGetFilterInformation, ifsk.fltgetfilterinformation, FltApiRef_e_to_o_96d634cd-87a8-49a8-a34b-ad2a1352c677.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: FltKernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: FltMgr.lib
+req.dll: Fltmgr.sys
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	fltmgr.sys
+apiname:
+-	FltGetFilterInformation
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

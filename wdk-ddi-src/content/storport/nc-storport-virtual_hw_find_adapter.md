@@ -1,42 +1,47 @@
 ---
-UID : NC:storport.VIRTUAL_HW_FIND_ADAPTER
-title : VIRTUAL_HW_FIND_ADAPTER
-author : windows-driver-content
-description : The Storport virtual miniport uses configuration information supplied to the VirtualHwStorFindAdapter routine to further initialize itself.
-old-location : storage\virtualhwstorfindadapter.htm
-old-project : storage
-ms.assetid : 55c16545-194e-4d23-b2e6-26821180eafa
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.virtualhwstorfindadapter, VirtualHwStorFindAdapter routine [Storage Devices], VirtualHwStorFindAdapter, VIRTUAL_HW_FIND_ADAPTER, VIRTUAL_HW_FIND_ADAPTER, storport/VirtualHwStorFindAdapter, storvmini_d41a0c2e-d224-4cfd-95e1-997b6a54904b.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSTORAGE_DEVICE_UNIQUE_IDENTIFIER, STORAGE_DEVICE_UNIQUE_IDENTIFIER"
-req.product : Windows 10 or later.
+UID: NC:storport.VIRTUAL_HW_FIND_ADAPTER
+title: VIRTUAL_HW_FIND_ADAPTER
+author: windows-driver-content
+description: The Storport virtual miniport uses configuration information supplied to the VirtualHwStorFindAdapter routine to further initialize itself.
+old-location: storage\virtualhwstorfindadapter.htm
+old-project: storage
+ms.assetid: 55c16545-194e-4d23-b2e6-26821180eafa
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.virtualhwstorfindadapter, VirtualHwStorFindAdapter routine [Storage Devices], VirtualHwStorFindAdapter, VIRTUAL_HW_FIND_ADAPTER, VIRTUAL_HW_FIND_ADAPTER, storport/VirtualHwStorFindAdapter, storvmini_d41a0c2e-d224-4cfd-95e1-997b6a54904b.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Storport.h
+apiname:
+-	VirtualHwStorFindAdapter
+product: Windows
+targetos: Windows
+req.typenames: "*PSTORAGE_DEVICE_UNIQUE_IDENTIFIER, STORAGE_DEVICE_UNIQUE_IDENTIFIER"
+req.product: Windows 10 or later.
 ---
 
 

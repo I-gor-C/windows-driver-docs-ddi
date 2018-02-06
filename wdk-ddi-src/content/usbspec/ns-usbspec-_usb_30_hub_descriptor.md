@@ -1,42 +1,47 @@
 ---
-UID : NS:usbspec._USB_30_HUB_DESCRIPTOR
-title : "_USB_30_HUB_DESCRIPTOR"
-author : windows-driver-content
-description : The USB_30_HUB_DESCRIPTOR structure contains a SuperSpeed hub descriptor. For information about the structure members, see Universal Serial Bus Revision 3.0 Specification, 10.13.2.1 Hub Descriptor, Table 10-3. SuperSpeed Hub Descriptor.
-old-location : buses\usb_30_hub_descriptor.htm
-old-project : usbref
-ms.assetid : 5B910D0B-0D1D-45D8-B418-13DC00B3398A
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : USB_30_HUB_DESCRIPTOR structure [Buses], usbspec/USB_30_HUB_DESCRIPTOR, buses.usb_30_hub_descriptor, PUSB_30_HUB_DESCRIPTOR, *PUSB_30_HUB_DESCRIPTOR, PUSB_30_HUB_DESCRIPTOR structure pointer [Buses], usbspec/PUSB_30_HUB_DESCRIPTOR, _USB_30_HUB_DESCRIPTOR, USB_30_HUB_DESCRIPTOR
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : usbspec.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : None supported
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUSB_30_HUB_DESCRIPTOR, USB_30_HUB_DESCRIPTOR"
-req.product : Windows 10 or later.
+UID: NS:usbspec._USB_30_HUB_DESCRIPTOR
+title: "_USB_30_HUB_DESCRIPTOR"
+author: windows-driver-content
+description: The USB_30_HUB_DESCRIPTOR structure contains a SuperSpeed hub descriptor. For information about the structure members, see Universal Serial Bus Revision 3.0 Specification, 10.13.2.1 Hub Descriptor, Table 10-3. SuperSpeed Hub Descriptor.
+old-location: buses\usb_30_hub_descriptor.htm
+old-project: usbref
+ms.assetid: 5B910D0B-0D1D-45D8-B418-13DC00B3398A
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: USB_30_HUB_DESCRIPTOR structure [Buses], usbspec/USB_30_HUB_DESCRIPTOR, buses.usb_30_hub_descriptor, PUSB_30_HUB_DESCRIPTOR, *PUSB_30_HUB_DESCRIPTOR, PUSB_30_HUB_DESCRIPTOR structure pointer [Buses], usbspec/PUSB_30_HUB_DESCRIPTOR, _USB_30_HUB_DESCRIPTOR, USB_30_HUB_DESCRIPTOR
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: usbspec.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: None supported
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Usbspec.h
+apiname:
+-	USB_30_HUB_DESCRIPTOR
+product: Windows
+targetos: Windows
+req.typenames: "*PUSB_30_HUB_DESCRIPTOR, USB_30_HUB_DESCRIPTOR"
+req.product: Windows 10 or later.
 ---
 
 # _USB_30_HUB_DESCRIPTOR structure

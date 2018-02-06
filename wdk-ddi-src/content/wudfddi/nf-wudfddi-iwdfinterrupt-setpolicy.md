@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFInterrupt.SetPolicy
-title : IWDFInterrupt::SetPolicy method
-author : windows-driver-content
-description : The SetPolicy method specifies the interrupt priority, processor affinity, and affinity policy for a specified interrupt.
-old-location : wdf\iwdfinterrupt_setpolicy.htm
-old-project : wdf
-ms.assetid : EDBCBB37-41A4-4234-BE8C-4C8739BC287B
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : umdf.iwdfinterrupt_setpolicy, SetPolicy method, IWDFInterrupt interface, SetPolicy method, IWDFInterrupt::SetPolicy, wdf.iwdfinterrupt_setpolicy, wudfddi/IWDFInterrupt::SetPolicy, IWDFInterrupt interface, SetPolicy method, IWDFInterrupt, SetPolicy
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.11
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFInterrupt.SetPolicy
+title: IWDFInterrupt::SetPolicy method
+author: windows-driver-content
+description: The SetPolicy method specifies the interrupt priority, processor affinity, and affinity policy for a specified interrupt.
+old-location: wdf\iwdfinterrupt_setpolicy.htm
+old-project: wdf
+ms.assetid: EDBCBB37-41A4-4234-BE8C-4C8739BC287B
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: umdf.iwdfinterrupt_setpolicy, SetPolicy method, IWDFInterrupt interface, SetPolicy method, IWDFInterrupt::SetPolicy, wdf.iwdfinterrupt_setpolicy, wudfddi/IWDFInterrupt::SetPolicy, IWDFInterrupt interface, SetPolicy method, IWDFInterrupt, SetPolicy
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.11
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFInterrupt.SetPolicy
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

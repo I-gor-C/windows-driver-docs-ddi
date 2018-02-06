@@ -1,41 +1,46 @@
 ---
-UID : NS:ndiswwan._NDIS_WWAN_DEVICE_SERVICE_SESSION_INFO
-title : "_NDIS_WWAN_DEVICE_SERVICE_SESSION_INFO"
-author : windows-driver-content
-description : The NDIS_WWAN_DEVICE_SERVICE_SESSION_INFO structure represents the status of a device service session.
-old-location : netvista\ndis_wwan_device_service_session_info.htm
-old-project : netvista
-ms.assetid : B357E186-FE99-448A-B242-13A21A729BC9
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : ndiswwan/PNDIS_WWAN_DEVICE_SERVICE_SESSION_INFO, ndiswwan/NDIS_WWAN_DEVICE_SERVICE_SESSION_INFO, NDIS_WWAN_DEVICE_SERVICE_SESSION_INFO structure [Network Drivers Starting with Windows Vista], _NDIS_WWAN_DEVICE_SERVICE_SESSION_INFO, PNDIS_WWAN_DEVICE_SERVICE_SESSION_INFO, *PNDIS_WWAN_DEVICE_SERVICE_SESSION_COMPLETE, PNDIS_WWAN_DEVICE_SERVICE_SESSION_INFO structure pointer [Network Drivers Starting with Windows Vista], netvista.ndis_wwan_device_service_session_info, NDIS_WWAN_DEVICE_SERVICE_SESSION_INFO
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ndiswwan.h
-req.include-header : Ndiswwan.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with  Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PNDIS_WWAN_DEVICE_SERVICE_SESSION_COMPLETE, NDIS_WWAN_DEVICE_SERVICE_SESSION_INFO"
+UID: NS:ndiswwan._NDIS_WWAN_DEVICE_SERVICE_SESSION_INFO
+title: "_NDIS_WWAN_DEVICE_SERVICE_SESSION_INFO"
+author: windows-driver-content
+description: The NDIS_WWAN_DEVICE_SERVICE_SESSION_INFO structure represents the status of a device service session.
+old-location: netvista\ndis_wwan_device_service_session_info.htm
+old-project: netvista
+ms.assetid: B357E186-FE99-448A-B242-13A21A729BC9
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: ndiswwan/PNDIS_WWAN_DEVICE_SERVICE_SESSION_INFO, ndiswwan/NDIS_WWAN_DEVICE_SERVICE_SESSION_INFO, NDIS_WWAN_DEVICE_SERVICE_SESSION_INFO structure [Network Drivers Starting with Windows Vista], _NDIS_WWAN_DEVICE_SERVICE_SESSION_INFO, PNDIS_WWAN_DEVICE_SERVICE_SESSION_INFO, *PNDIS_WWAN_DEVICE_SERVICE_SESSION_COMPLETE, PNDIS_WWAN_DEVICE_SERVICE_SESSION_INFO structure pointer [Network Drivers Starting with Windows Vista], netvista.ndis_wwan_device_service_session_info, NDIS_WWAN_DEVICE_SERVICE_SESSION_INFO
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ndiswwan.h
+req.include-header: Ndiswwan.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with  Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ndiswwan.h
+apiname:
+-	NDIS_WWAN_DEVICE_SERVICE_SESSION_INFO
+product: Windows
+targetos: Windows
+req.typenames: "*PNDIS_WWAN_DEVICE_SERVICE_SESSION_COMPLETE, NDIS_WWAN_DEVICE_SERVICE_SESSION_INFO"
 ---
 
 # _NDIS_WWAN_DEVICE_SERVICE_SESSION_INFO structure

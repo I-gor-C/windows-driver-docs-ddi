@@ -1,42 +1,47 @@
 ---
-UID : NI:usbscan.IOCTL_WAIT_ON_DEVICE_EVENT
-title : IOCTL_WAIT_ON_DEVICE_EVENT
-author : windows-driver-content
-description : Returns information about an event occurring on a USB interrupt pipe.
-old-location : image\ioctl_wait_on_device_event.htm
-old-project : image
-ms.assetid : 0895a19b-bb28-405a-98df-28522a18ec2b
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : image.ioctl_wait_on_device_event, IOCTL_WAIT_ON_DEVICE_EVENT control code [Imaging Devices], IOCTL_WAIT_ON_DEVICE_EVENT, usbscan/IOCTL_WAIT_ON_DEVICE_EVENT, stifnc_ef4b6e5f-ed60-4354-adae-443e1a27b215.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : usbscan.h
-req.include-header : Usbscan.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RAW_PIPE_TYPE
-req.product : Windows 10 or later.
+UID: NI:usbscan.IOCTL_WAIT_ON_DEVICE_EVENT
+title: IOCTL_WAIT_ON_DEVICE_EVENT
+author: windows-driver-content
+description: Returns information about an event occurring on a USB interrupt pipe.
+old-location: image\ioctl_wait_on_device_event.htm
+old-project: image
+ms.assetid: 0895a19b-bb28-405a-98df-28522a18ec2b
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: image.ioctl_wait_on_device_event, IOCTL_WAIT_ON_DEVICE_EVENT control code [Imaging Devices], IOCTL_WAIT_ON_DEVICE_EVENT, usbscan/IOCTL_WAIT_ON_DEVICE_EVENT, stifnc_ef4b6e5f-ed60-4354-adae-443e1a27b215.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: usbscan.h
+req.include-header: Usbscan.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Usbscan.h
+apiname:
+-	IOCTL_WAIT_ON_DEVICE_EVENT
+product: Windows
+targetos: Windows
+req.typenames: RAW_PIPE_TYPE
+req.product: Windows 10 or later.
 ---
 
 # IOCTL_WAIT_ON_DEVICE_EVENT IOCTL

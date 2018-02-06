@@ -1,41 +1,46 @@
 ---
-UID : NS:ks.KSQUERYBUFFER
-title : KSQUERYBUFFER
-author : windows-driver-content
-description : The KSQUERYBUFFER structure is used when querying for outstanding buffers available on an event with KSEVENT_TYPE_QUERYBUFFER.
-old-location : stream\ksquerybuffer.htm
-old-project : stream
-ms.assetid : 6827df53-f970-4ceb-961d-b4b95fa56cfe
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KSQUERYBUFFER structure [Streaming Media Devices], ks/PKSQUERYBUFFER, ks-struct_aa45ed01-603d-4452-8862-649a73361c48.xml, stream.ksquerybuffer, PKSQUERYBUFFER structure pointer [Streaming Media Devices], *PKSQUERYBUFFER, PKSQUERYBUFFER, KSQUERYBUFFER, ks/KSQUERYBUFFER
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KSQUERYBUFFER, *PKSQUERYBUFFER
+UID: NS:ks.KSQUERYBUFFER
+title: KSQUERYBUFFER
+author: windows-driver-content
+description: The KSQUERYBUFFER structure is used when querying for outstanding buffers available on an event with KSEVENT_TYPE_QUERYBUFFER.
+old-location: stream\ksquerybuffer.htm
+old-project: stream
+ms.assetid: 6827df53-f970-4ceb-961d-b4b95fa56cfe
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KSQUERYBUFFER structure [Streaming Media Devices], ks/PKSQUERYBUFFER, ks-struct_aa45ed01-603d-4452-8862-649a73361c48.xml, stream.ksquerybuffer, PKSQUERYBUFFER structure pointer [Streaming Media Devices], *PKSQUERYBUFFER, PKSQUERYBUFFER, KSQUERYBUFFER, ks/KSQUERYBUFFER
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	KSQUERYBUFFER
+product: Windows
+targetos: Windows
+req.typenames: KSQUERYBUFFER, *PKSQUERYBUFFER
 ---
 
 # KSQUERYBUFFER structure

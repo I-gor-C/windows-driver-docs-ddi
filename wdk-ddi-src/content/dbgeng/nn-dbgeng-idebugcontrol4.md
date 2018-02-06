@@ -1,41 +1,49 @@
 ---
-UID : NN:dbgeng.IDebugControl4
-title : IDebugControl4
-author : windows-driver-content
-description : IDebugControl4 interface
-old-location : debugger\idebugcontrol4.htm
-old-project : debugger
-ms.assetid : 693207c2-70d7-45be-ae22-436555225928
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : debugger.idebugcontrol4, IDebugControl4 interface [Windows Debugging], IDebugControl4 interface [Windows Debugging], described, IDebugControl4, dbgeng/IDebugControl4
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NN:dbgeng.IDebugControl4
+title: IDebugControl4
+author: windows-driver-content
+description: IDebugControl4 interface
+old-location: debugger\idebugcontrol4.htm
+old-project: debugger
+ms.assetid: 693207c2-70d7-45be-ae22-436555225928
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: debugger.idebugcontrol4, IDebugControl4 interface [Windows Debugging], IDebugControl4 interface [Windows Debugging], described, IDebugControl4, dbgeng/IDebugControl4
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugControl4
+-	IDebugControl4.GetManagedStatus
+-	IDebugControl4.GetManagedStatusWide
+-	IDebugControl4.ResetManagedStatus
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 # IDebugControl4 interface

@@ -1,42 +1,47 @@
 ---
-UID : NS:windot11.DOT11_CHANNEL_HINT
-title : DOT11_CHANNEL_HINT
-author : windows-driver-content
-description : The DOT11_CHANNEL_HINT structure describes suggested channel numbers for an NLO operation.
-old-location : netvista\dot11_channel_hint.htm
-old-project : netvista
-ms.assetid : B3E395C3-C642-4A5E-9005-88323A80F90E
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.dot11_channel_hint, DOT11_CHANNEL_HINT structure [Network Drivers Starting with Windows Vista], *PDOT11_CHANNEL_HINT, PDOT11_CHANNEL_HINT structure pointer [Network Drivers Starting with Windows Vista], windot11/PDOT11_CHANNEL_HINT, DOT11_CHANNEL_HINT, PDOT11_CHANNEL_HINT, windot11/DOT11_CHANNEL_HINT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : windot11.h
-req.include-header : Windot11.h
-req.target-type : Windows
-req.target-min-winverclnt : Versions:\_Supported in Windows 8
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT11_CHANNEL_HINT, *PDOT11_CHANNEL_HINT
-req.product : Windows 10 or later.
+UID: NS:windot11.DOT11_CHANNEL_HINT
+title: DOT11_CHANNEL_HINT
+author: windows-driver-content
+description: The DOT11_CHANNEL_HINT structure describes suggested channel numbers for an NLO operation.
+old-location: netvista\dot11_channel_hint.htm
+old-project: netvista
+ms.assetid: B3E395C3-C642-4A5E-9005-88323A80F90E
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.dot11_channel_hint, DOT11_CHANNEL_HINT structure [Network Drivers Starting with Windows Vista], *PDOT11_CHANNEL_HINT, PDOT11_CHANNEL_HINT structure pointer [Network Drivers Starting with Windows Vista], windot11/PDOT11_CHANNEL_HINT, DOT11_CHANNEL_HINT, PDOT11_CHANNEL_HINT, windot11/DOT11_CHANNEL_HINT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: windot11.h
+req.include-header: Windot11.h
+req.target-type: Windows
+req.target-min-winverclnt: Versions:\_Supported in Windows 8
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Windot11.h
+apiname:
+-	DOT11_CHANNEL_HINT
+product: Windows
+targetos: Windows
+req.typenames: DOT11_CHANNEL_HINT, *PDOT11_CHANNEL_HINT
+req.product: Windows 10 or later.
 ---
 
 # DOT11_CHANNEL_HINT structure

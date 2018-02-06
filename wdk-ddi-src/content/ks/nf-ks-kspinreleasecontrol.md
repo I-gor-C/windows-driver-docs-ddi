@@ -1,41 +1,46 @@
 ---
-UID : NF:ks.KsPinReleaseControl
-title : KsPinReleaseControl function
-author : windows-driver-content
-description : The KsPinReleaseControl function releases the control mutex for the AVStream pin specified by Pin.
-old-location : stream\kspinreleasecontrol.htm
-old-project : stream
-ms.assetid : ead50a69-fe33-4e6c-84f9-98491d188140
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ks/KsPinReleaseControl, KsPinReleaseControl function [Streaming Media Devices], stream.kspinreleasecontrol, avfunc_24f35b7d-4ecc-4a64-8b78-9972ba7bab5c.xml, KsPinReleaseControl
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsPinReleaseControl
+title: KsPinReleaseControl function
+author: windows-driver-content
+description: The KsPinReleaseControl function releases the control mutex for the AVStream pin specified by Pin.
+old-location: stream\kspinreleasecontrol.htm
+old-project: stream
+ms.assetid: ead50a69-fe33-4e6c-84f9-98491d188140
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ks/KsPinReleaseControl, KsPinReleaseControl function [Streaming Media Devices], stream.kspinreleasecontrol, avfunc_24f35b7d-4ecc-4a64-8b78-9972ba7bab5c.xml, KsPinReleaseControl
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	KsPinReleaseControl
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

@@ -1,38 +1,38 @@
 ---
-UID : NF:wdm.KdEnableDebugger
-title : KdEnableDebugger function
-author : windows-driver-content
-description : The KdEnableDebugger routine re-enables the kernel debugger after a call to the KdDisableDebugger routine disables the kernel debugger.
-old-location : devtest\kdenabledebugger.htm
-old-project : devtest
-ms.assetid : 90151c0d-24c9-4304-bdcf-30dc89397905
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : KdEnableDebugger
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Microsoft Windows 2000 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.alt-api : KdEnableDebugger
-req.alt-loc : NtosKrnl.exe
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : Any level
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.KdEnableDebugger
+title: KdEnableDebugger function
+author: windows-driver-content
+description: The KdEnableDebugger routine re-enables the kernel debugger after a call to the KdDisableDebugger routine disables the kernel debugger.
+old-location: devtest\kdenabledebugger.htm
+old-project: devtest
+ms.assetid: 90151c0d-24c9-4304-bdcf-30dc89397905
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: KdEnableDebugger
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Microsoft Windows 2000 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.alt-api: KdEnableDebugger
+req.alt-loc: NtosKrnl.exe
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: Any level
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

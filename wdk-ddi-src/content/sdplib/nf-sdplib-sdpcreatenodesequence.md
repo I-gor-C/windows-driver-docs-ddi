@@ -1,42 +1,47 @@
 ---
-UID : NF:sdplib.SdpCreateNodeSequence
-title : SdpCreateNodeSequence function
-author : windows-driver-content
-description : The Bluetooth SdpCreateNodeSequence function is used to create an empty sequence SDP node.
-old-location : bltooth\sdpcreatenodesequence.htm
-old-project : bltooth
-ms.assetid : 9e02f32b-cd39-4953-9698-a1800bedf0e2
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : bltooth.sdpcreatenodesequence, bth_funcs_646168a7-522f-425c-99b7-706b84e02e20.xml, SdpCreateNodeSequence function [Bluetooth Devices], SdpCreateNodeSequence, sdplib/SdpCreateNodeSequence
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : sdplib.h
-req.include-header : BthSdpddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Versions:\_Supported in Windows Vista, and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= PASSIVE_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SDCMD_DESCRIPTOR, *PSDCMD_DESCRIPTOR
-req.product : Windows 10 or later.
+UID: NF:sdplib.SdpCreateNodeSequence
+title: SdpCreateNodeSequence function
+author: windows-driver-content
+description: The Bluetooth SdpCreateNodeSequence function is used to create an empty sequence SDP node.
+old-location: bltooth\sdpcreatenodesequence.htm
+old-project: bltooth
+ms.assetid: 9e02f32b-cd39-4953-9698-a1800bedf0e2
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: bltooth.sdpcreatenodesequence, bth_funcs_646168a7-522f-425c-99b7-706b84e02e20.xml, SdpCreateNodeSequence function [Bluetooth Devices], SdpCreateNodeSequence, sdplib/SdpCreateNodeSequence
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: sdplib.h
+req.include-header: BthSdpddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Versions:\_Supported in Windows Vista, and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= PASSIVE_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	sdplib.h
+apiname:
+-	SdpCreateNodeSequence
+product: Windows
+targetos: Windows
+req.typenames: SDCMD_DESCRIPTOR, *PSDCMD_DESCRIPTOR
+req.product: Windows 10 or later.
 ---
 
 

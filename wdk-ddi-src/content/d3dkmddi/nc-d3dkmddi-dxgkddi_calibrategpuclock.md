@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dkmddi.DXGKDDI_CALIBRATEGPUCLOCK
-title : DXGKDDI_CALIBRATEGPUCLOCK
-author : windows-driver-content
-description : Called by the Microsoft DirectX graphics kernel subsystem to calibrate the GPU time stamps in the DXGK_HISTORY_BUFFER history buffer with the CPU clock time.
-old-location : display\dxgkddicalibrategpuclock.htm
-old-project : display
-ms.assetid : AF912508-D6EF-450D-AEC3-47D1C44D0DA0
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.dxgkddicalibrategpuclock, DxgkDdiCalibrateGpuClock callback function [Display Devices], DxgkDdiCalibrateGpuClock, DXGKDDI_CALIBRATEGPUCLOCK, DXGKDDI_CALIBRATEGPUCLOCK, d3dkmddi/DxgkDdiCalibrateGpuClock
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dkmddi.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8.1,WDDM 1.3
-req.target-min-winversvr : Windows Server 2012 R2
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : DISPATCH_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DD_MULTISAMPLEQUALITYLEVELSDATA
+UID: NC:d3dkmddi.DXGKDDI_CALIBRATEGPUCLOCK
+title: DXGKDDI_CALIBRATEGPUCLOCK
+author: windows-driver-content
+description: Called by the Microsoft DirectX graphics kernel subsystem to calibrate the GPU time stamps in the DXGK_HISTORY_BUFFER history buffer with the CPU clock time.
+old-location: display\dxgkddicalibrategpuclock.htm
+old-project: display
+ms.assetid: AF912508-D6EF-450D-AEC3-47D1C44D0DA0
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.dxgkddicalibrategpuclock, DxgkDdiCalibrateGpuClock callback function [Display Devices], DxgkDdiCalibrateGpuClock, DXGKDDI_CALIBRATEGPUCLOCK, DXGKDDI_CALIBRATEGPUCLOCK, d3dkmddi/DxgkDdiCalibrateGpuClock
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dkmddi.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8.1,WDDM 1.3
+req.target-min-winversvr: Windows Server 2012 R2
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: DISPATCH_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	D3dkmddi.h
+apiname:
+-	DxgkDdiCalibrateGpuClock
+product: Windows
+targetos: Windows
+req.typenames: DD_MULTISAMPLEQUALITYLEVELSDATA
 ---
 
 

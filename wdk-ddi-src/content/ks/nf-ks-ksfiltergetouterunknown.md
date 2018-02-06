@@ -1,41 +1,46 @@
 ---
-UID : NF:ks.KsFilterGetOuterUnknown
-title : KsFilterGetOuterUnknown function
-author : windows-driver-content
-description : The KsFilterGetOuterUnknown function returns the outer IUnknown interface of the filter specified by Filter.
-old-location : stream\ksfiltergetouterunknown.htm
-old-project : stream
-ms.assetid : 599a6583-dcf2-4fe3-949a-5072bff9915c
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KsFilterGetOuterUnknown function [Streaming Media Devices], avfunc_32947579-50ca-4942-a594-b991c42d6681.xml, KsFilterGetOuterUnknown, ks/KsFilterGetOuterUnknown, stream.ksfiltergetouterunknown
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsFilterGetOuterUnknown
+title: KsFilterGetOuterUnknown function
+author: windows-driver-content
+description: The KsFilterGetOuterUnknown function returns the outer IUnknown interface of the filter specified by Filter.
+old-location: stream\ksfiltergetouterunknown.htm
+old-project: stream
+ms.assetid: 599a6583-dcf2-4fe3-949a-5072bff9915c
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KsFilterGetOuterUnknown function [Streaming Media Devices], avfunc_32947579-50ca-4942-a594-b991c42d6681.xml, KsFilterGetOuterUnknown, ks/KsFilterGetOuterUnknown, stream.ksfiltergetouterunknown
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	KsFilterGetOuterUnknown
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

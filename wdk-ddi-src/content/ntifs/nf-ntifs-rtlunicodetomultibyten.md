@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.RtlUnicodeToMultiByteN
-title : RtlUnicodeToMultiByteN function
-author : windows-driver-content
-description : The RtlUnicodeToMultiByteN routine translates the specified Unicode string into a new character string, using the current system ANSI code page (ACP). The translated string is not necessarily from a multibyte character set.
-old-location : ifsk\rtlunicodetomultibyten.htm
-old-project : ifsk
-ms.assetid : e50199d2-948d-4572-8688-89d92961f85b
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : RtlUnicodeToMultiByteN, ntifs/RtlUnicodeToMultiByteN, RtlUnicodeToMultiByteN routine [Installable File System Drivers], ifsk.rtlunicodetomultibyten, rtlref_233ec1ac-8ecc-4261-8f17-11485d03ec50.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Fltkernel.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "< DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.RtlUnicodeToMultiByteN
+title: RtlUnicodeToMultiByteN function
+author: windows-driver-content
+description: The RtlUnicodeToMultiByteN routine translates the specified Unicode string into a new character string, using the current system ANSI code page (ACP). The translated string is not necessarily from a multibyte character set.
+old-location: ifsk\rtlunicodetomultibyten.htm
+old-project: ifsk
+ms.assetid: e50199d2-948d-4572-8688-89d92961f85b
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: RtlUnicodeToMultiByteN, ntifs/RtlUnicodeToMultiByteN, RtlUnicodeToMultiByteN routine [Installable File System Drivers], ifsk.rtlunicodetomultibyten, rtlref_233ec1ac-8ecc-4261-8f17-11485d03ec50.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Fltkernel.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "< DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	RtlUnicodeToMultiByteN
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

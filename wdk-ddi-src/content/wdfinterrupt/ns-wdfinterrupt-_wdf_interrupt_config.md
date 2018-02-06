@@ -1,42 +1,47 @@
 ---
-UID : NS:wdfinterrupt._WDF_INTERRUPT_CONFIG
-title : "_WDF_INTERRUPT_CONFIG"
-author : windows-driver-content
-description : The WDF_INTERRUPT_CONFIG structure contains configuration information for a device interrupt.
-old-location : wdf\wdf_interrupt_config.htm
-old-project : wdf
-ms.assetid : 10eb623d-6778-4ccb-8ed4-9926c13dec5a
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : DFInterruptObjectRef_545890e4-5222-42e8-8fba-c159a0faa140.xml, PWDF_INTERRUPT_CONFIG structure pointer, WDF_INTERRUPT_CONFIG structure, _WDF_INTERRUPT_CONFIG, WDF_INTERRUPT_CONFIG, wdf.wdf_interrupt_config, wdfinterrupt/PWDF_INTERRUPT_CONFIG, *PWDF_INTERRUPT_CONFIG, PWDF_INTERRUPT_CONFIG, kmdf.wdf_interrupt_config, wdfinterrupt/WDF_INTERRUPT_CONFIG
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdfinterrupt.h
-req.include-header : Wdf.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDF_INTERRUPT_CONFIG, WDF_INTERRUPT_CONFIG"
-req.product : Windows 10 or later.
+UID: NS:wdfinterrupt._WDF_INTERRUPT_CONFIG
+title: "_WDF_INTERRUPT_CONFIG"
+author: windows-driver-content
+description: The WDF_INTERRUPT_CONFIG structure contains configuration information for a device interrupt.
+old-location: wdf\wdf_interrupt_config.htm
+old-project: wdf
+ms.assetid: 10eb623d-6778-4ccb-8ed4-9926c13dec5a
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: DFInterruptObjectRef_545890e4-5222-42e8-8fba-c159a0faa140.xml, PWDF_INTERRUPT_CONFIG structure pointer, WDF_INTERRUPT_CONFIG structure, _WDF_INTERRUPT_CONFIG, WDF_INTERRUPT_CONFIG, wdf.wdf_interrupt_config, wdfinterrupt/PWDF_INTERRUPT_CONFIG, *PWDF_INTERRUPT_CONFIG, PWDF_INTERRUPT_CONFIG, kmdf.wdf_interrupt_config, wdfinterrupt/WDF_INTERRUPT_CONFIG
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdfinterrupt.h
+req.include-header: Wdf.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdfinterrupt.h
+apiname:
+-	WDF_INTERRUPT_CONFIG
+product: Windows
+targetos: Windows
+req.typenames: "*PWDF_INTERRUPT_CONFIG, WDF_INTERRUPT_CONFIG"
+req.product: Windows 10 or later.
 ---
 
 # _WDF_INTERRUPT_CONFIG structure

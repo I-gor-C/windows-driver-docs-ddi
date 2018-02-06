@@ -1,42 +1,47 @@
 ---
-UID : NS:wsk._WSK_TRANSPORT
-title : "_WSK_TRANSPORT"
-author : windows-driver-content
-description : The WSK_TRANSPORT structure specifies an available transport that is supported by the WSK subsystem.
-old-location : netvista\wsk_transport.htm
-old-project : netvista
-ms.assetid : aaf7b5ac-0401-4b6a-a478-3d50559817db
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : "*PWSK_TRANSPORT, WSK_TRANSPORT structure [Network Drivers Starting with Windows Vista], wskref_be7d6a6d-971e-49de-bc64-ebd1f1d04085.xml, netvista.wsk_transport, PWSK_TRANSPORT structure pointer [Network Drivers Starting with Windows Vista], wsk/WSK_TRANSPORT, wsk/PWSK_TRANSPORT, PWSK_TRANSPORT, _WSK_TRANSPORT, WSK_TRANSPORT"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wsk.h
-req.include-header : Wsk.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating   systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWSK_TRANSPORT, WSK_TRANSPORT"
-req.product : Windows 10 or later.
+UID: NS:wsk._WSK_TRANSPORT
+title: "_WSK_TRANSPORT"
+author: windows-driver-content
+description: The WSK_TRANSPORT structure specifies an available transport that is supported by the WSK subsystem.
+old-location: netvista\wsk_transport.htm
+old-project: netvista
+ms.assetid: aaf7b5ac-0401-4b6a-a478-3d50559817db
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: "*PWSK_TRANSPORT, WSK_TRANSPORT structure [Network Drivers Starting with Windows Vista], wskref_be7d6a6d-971e-49de-bc64-ebd1f1d04085.xml, netvista.wsk_transport, PWSK_TRANSPORT structure pointer [Network Drivers Starting with Windows Vista], wsk/WSK_TRANSPORT, wsk/PWSK_TRANSPORT, PWSK_TRANSPORT, _WSK_TRANSPORT, WSK_TRANSPORT"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wsk.h
+req.include-header: Wsk.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating   systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wsk.h
+apiname:
+-	WSK_TRANSPORT
+product: Windows
+targetos: Windows
+req.typenames: "*PWSK_TRANSPORT, WSK_TRANSPORT"
+req.product: Windows 10 or later.
 ---
 
 # _WSK_TRANSPORT structure

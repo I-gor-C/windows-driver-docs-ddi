@@ -1,41 +1,47 @@
 ---
-UID : NF:portcls.PcRegisterPhysicalConnectionFromExternal
-title : PcRegisterPhysicalConnectionFromExternal function
-author : windows-driver-content
-description : The PcRegisterPhysicalConnectionFromExternal function registers a physical connection to an audio adapter filter from an external audio adapter filter.
-old-location : audio\pcregisterphysicalconnectionfromexternal.htm
-old-project : audio
-ms.assetid : 636cf517-5ab0-4709-8026-b51425c81118
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : audpc-routines_ad19ffe2-ec64-4b2b-b036-cc84a986adfe.xml, audio.pcregisterphysicalconnectionfromexternal, portcls/PcRegisterPhysicalConnectionFromExternal, PcRegisterPhysicalConnectionFromExternal, PcRegisterPhysicalConnectionFromExternal function [Audio Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : portcls.h
-req.include-header : Portcls.h
-req.target-type : Universal
-req.target-min-winverclnt : The PortCls system driver implements the PcRegisterPhysicalConnectionFromExternal function in Microsoft Windows 98/Me and in Windows 2000 and later operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Portcls.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.PcRegisterPhysicalConnectionFromExternal
+title: PcRegisterPhysicalConnectionFromExternal function
+author: windows-driver-content
+description: The PcRegisterPhysicalConnectionFromExternal function registers a physical connection to an audio adapter filter from an external audio adapter filter.
+old-location: audio\pcregisterphysicalconnectionfromexternal.htm
+old-project: audio
+ms.assetid: 636cf517-5ab0-4709-8026-b51425c81118
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: audpc-routines_ad19ffe2-ec64-4b2b-b036-cc84a986adfe.xml, audio.pcregisterphysicalconnectionfromexternal, portcls/PcRegisterPhysicalConnectionFromExternal, PcRegisterPhysicalConnectionFromExternal, PcRegisterPhysicalConnectionFromExternal function [Audio Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: portcls.h
+req.include-header: Portcls.h
+req.target-type: Universal
+req.target-min-winverclnt: The PortCls system driver implements the PcRegisterPhysicalConnectionFromExternal function in Microsoft Windows 98/Me and in Windows 2000 and later operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Portcls.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Portcls.lib
+-	Portcls.dll
+apiname:
+-	PcRegisterPhysicalConnectionFromExternal
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

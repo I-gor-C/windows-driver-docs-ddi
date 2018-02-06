@@ -1,41 +1,46 @@
 ---
-UID : NC:ndischimney.TCP_OFFLOAD_EVENT_HANDLER
-title : TCP_OFFLOAD_EVENT_HANDLER
-author : windows-driver-content
-description : NDIS calls a protocol driver's or intermediate driver's ProtocolIndicateOffloadEvent function to post an indication that was initiated by an underlying driver's or offload target's call to the NdisTcpOffloadEventHandler function.
-old-location : netvista\protocoltcpoffloadevent.htm
-old-project : netvista
-ms.assetid : b64c0f9e-aa3d-43c5-bdf5-c40cae3929e3
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.protocoltcpoffloadevent, ProtocolTcpOffloadEvent callback function [Network Drivers Starting with Windows Vista], ProtocolTcpOffloadEvent, TCP_OFFLOAD_EVENT_HANDLER, TCP_OFFLOAD_EVENT_HANDLER, ndischimney/ProtocolTcpOffloadEvent, tcp_chim_protocol_func_8cc440e3-7686-42dc-8fff-baf397394951.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ndischimney.h
-req.include-header : Ndischimney.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PD_BUFFER_VIRTUAL_SUBNET_INFO
+UID: NC:ndischimney.TCP_OFFLOAD_EVENT_HANDLER
+title: TCP_OFFLOAD_EVENT_HANDLER
+author: windows-driver-content
+description: NDIS calls a protocol driver's or intermediate driver's ProtocolIndicateOffloadEvent function to post an indication that was initiated by an underlying driver's or offload target's call to the NdisTcpOffloadEventHandler function.
+old-location: netvista\protocoltcpoffloadevent.htm
+old-project: netvista
+ms.assetid: b64c0f9e-aa3d-43c5-bdf5-c40cae3929e3
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.protocoltcpoffloadevent, ProtocolTcpOffloadEvent callback function [Network Drivers Starting with Windows Vista], ProtocolTcpOffloadEvent, TCP_OFFLOAD_EVENT_HANDLER, TCP_OFFLOAD_EVENT_HANDLER, ndischimney/ProtocolTcpOffloadEvent, tcp_chim_protocol_func_8cc440e3-7686-42dc-8fff-baf397394951.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ndischimney.h
+req.include-header: Ndischimney.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ndischimney.h
+apiname:
+-	ProtocolTcpOffloadEvent
+product: Windows
+targetos: Windows
+req.typenames: PD_BUFFER_VIRTUAL_SUBNET_INFO
 ---
 
 

@@ -1,41 +1,49 @@
 ---
-UID : NF:ntstrsafe.RtlStringCbCatA
-title : RtlStringCbCatA function
-author : windows-driver-content
-description : The RtlStringCbCatW and RtlStringCbCatA functions concatenate two byte-counted strings.
-old-location : kernel\rtlstringcbcat.htm
-old-project : kernel
-ms.assetid : 1034384f-6295-42ca-bf78-47c383417500
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : RtlStringCbCatA, RtlStringCbCatW, safestrings_31bee145-512e-4daa-87c3-98abc5e88b2b.xml, ntstrsafe/RtlStringCbCatW, RtlStringCbCat, kernel.rtlstringcbcat, RtlStringCbCatW function [Kernel-Mode Driver Architecture], ntstrsafe/RtlStringCbCatA
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntstrsafe.h
-req.include-header : Ntstrsafe.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows XP with Service Pack 1 (SP1) and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : RtlStringCbCatW (Unicode) and RtlStringCbCatA (ANSI)
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ntstrsafe.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : BATTERY_REPORTING_SCALE, *PBATTERY_REPORTING_SCALE
+UID: NF:ntstrsafe.RtlStringCbCatA
+title: RtlStringCbCatA function
+author: windows-driver-content
+description: The RtlStringCbCatW and RtlStringCbCatA functions concatenate two byte-counted strings.
+old-location: kernel\rtlstringcbcat.htm
+old-project: kernel
+ms.assetid: 1034384f-6295-42ca-bf78-47c383417500
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: RtlStringCbCatA, RtlStringCbCatW, safestrings_31bee145-512e-4daa-87c3-98abc5e88b2b.xml, ntstrsafe/RtlStringCbCatW, RtlStringCbCat, kernel.rtlstringcbcat, RtlStringCbCatW function [Kernel-Mode Driver Architecture], ntstrsafe/RtlStringCbCatA
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntstrsafe.h
+req.include-header: Ntstrsafe.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows XP with Service Pack 1 (SP1) and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: RtlStringCbCatW (Unicode) and RtlStringCbCatA (ANSI)
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ntstrsafe.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ntstrsafe.lib
+-	Ntstrsafe.dll
+apiname:
+-	RtlStringCbCatW
+-	RtlStringCbCatA
+-	RtlStringCbCatW
+product: Windows
+targetos: Windows
+req.typenames: BATTERY_REPORTING_SCALE, *PBATTERY_REPORTING_SCALE
 ---
 
 

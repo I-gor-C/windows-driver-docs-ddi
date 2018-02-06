@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisFreeGenericObject
-title : NdisFreeGenericObject function
-author : windows-driver-content
-description : Call the NdisFreeGenericObject function to free a generic object that was created with the NdisAllocateGenericObject function.
-old-location : netvista\ndisfreegenericobject.htm
-old-project : netvista
-ms.assetid : 02c0ea87-d25d-4363-85e3-e47c4c5d8a9b
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : ndis_object_ref_d796ffda-61f1-473d-98ea-5ad3570889e9.xml, netvista.ndisfreegenericobject, NdisFreeGenericObject function [Network Drivers Starting with Windows Vista], ndis/NdisFreeGenericObject, NdisFreeGenericObject
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Universal
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_Miscellaneous_Function, NdisAllocateGenericObject
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisFreeGenericObject
+title: NdisFreeGenericObject function
+author: windows-driver-content
+description: Call the NdisFreeGenericObject function to free a generic object that was created with the NdisAllocateGenericObject function.
+old-location: netvista\ndisfreegenericobject.htm
+old-project: netvista
+ms.assetid: 02c0ea87-d25d-4363-85e3-e47c4c5d8a9b
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: ndis_object_ref_d796ffda-61f1-473d-98ea-5ad3570889e9.xml, netvista.ndisfreegenericobject, NdisFreeGenericObject function [Network Drivers Starting with Windows Vista], ndis/NdisFreeGenericObject, NdisFreeGenericObject
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Universal
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_Miscellaneous_Function, NdisAllocateGenericObject
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisFreeGenericObject
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

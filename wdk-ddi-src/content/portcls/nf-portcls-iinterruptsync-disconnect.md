@@ -1,41 +1,46 @@
 ---
-UID : NF:portcls.IInterruptSync.Disconnect
-title : IInterruptSync::Disconnect method
-author : windows-driver-content
-description : The Disconnect method disconnects the synchronization object from the interrupt.
-old-location : audio\iinterruptsync_disconnect.htm
-old-project : audio
-ms.assetid : 799273eb-0ff6-4815-ac32-8fbb01f457e2
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : IInterruptSync interface [Audio Devices], Disconnect method, portcls/IInterruptSync::Disconnect, IInterruptSync::Disconnect, Disconnect method [Audio Devices], IInterruptSync interface, IInterruptSync, audio.iinterruptsync_disconnect, audmp-routines_f25f0c99-96e2-4f1b-9930-e736a6394759.xml, Disconnect, Disconnect method [Audio Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : portcls.h
-req.include-header : Portcls.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : portcls.h
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.IInterruptSync.Disconnect
+title: IInterruptSync::Disconnect method
+author: windows-driver-content
+description: The Disconnect method disconnects the synchronization object from the interrupt.
+old-location: audio\iinterruptsync_disconnect.htm
+old-project: audio
+ms.assetid: 799273eb-0ff6-4815-ac32-8fbb01f457e2
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: IInterruptSync interface [Audio Devices], Disconnect method, portcls/IInterruptSync::Disconnect, IInterruptSync::Disconnect, Disconnect method [Audio Devices], IInterruptSync interface, IInterruptSync, audio.iinterruptsync_disconnect, audmp-routines_f25f0c99-96e2-4f1b-9930-e736a6394759.xml, Disconnect, Disconnect method [Audio Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: portcls.h
+req.include-header: Portcls.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: portcls.h
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	portcls.h
+apiname:
+-	IInterruptSync.Disconnect
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

@@ -1,42 +1,48 @@
 ---
-UID : NF:usbcamdi.USBCAMD_InitializeNewInterface
-title : USBCAMD_InitializeNewInterface function
-author : windows-driver-content
-description : The USBCAMD_InitializeNewInterface function provides USBCAMD with all the necessary information to configure the camera minidriver to work correctly with the stream class driver and the USB bus driver.
-old-location : stream\usbcamd_initializenewinterface.htm
-old-project : stream
-ms.assetid : d0796a9b-9823-4f13-b2df-1fc8ca74cbd1
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : usbcmdpr_4b43d8ab-fd5f-4199-afbc-b21801c4fab3.xml, stream.usbcamd_initializenewinterface, USBCAMD_InitializeNewInterface function [Streaming Media Devices], USBCAMD_InitializeNewInterface, usbcamdi/USBCAMD_InitializeNewInterface
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : usbcamdi.h
-req.include-header : Usbcamdi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Usbcamd2.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PUSB_BUS_INTERFACE_USBDI_V3, USB_BUS_INTERFACE_USBDI_V3"
-req.product : Windows 10 or later.
+UID: NF:usbcamdi.USBCAMD_InitializeNewInterface
+title: USBCAMD_InitializeNewInterface function
+author: windows-driver-content
+description: The USBCAMD_InitializeNewInterface function provides USBCAMD with all the necessary information to configure the camera minidriver to work correctly with the stream class driver and the USB bus driver.
+old-location: stream\usbcamd_initializenewinterface.htm
+old-project: stream
+ms.assetid: d0796a9b-9823-4f13-b2df-1fc8ca74cbd1
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: usbcmdpr_4b43d8ab-fd5f-4199-afbc-b21801c4fab3.xml, stream.usbcamd_initializenewinterface, USBCAMD_InitializeNewInterface function [Streaming Media Devices], USBCAMD_InitializeNewInterface, usbcamdi/USBCAMD_InitializeNewInterface
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: usbcamdi.h
+req.include-header: Usbcamdi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Usbcamd2.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	usbcamd2.lib
+-	usbcamd2.dll
+apiname:
+-	USBCAMD_InitializeNewInterface
+product: Windows
+targetos: Windows
+req.typenames: "*PUSB_BUS_INTERFACE_USBDI_V3, USB_BUS_INTERFACE_USBDI_V3"
+req.product: Windows 10 or later.
 ---
 
 

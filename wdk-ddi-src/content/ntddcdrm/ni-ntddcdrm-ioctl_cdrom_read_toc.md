@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddcdrm.IOCTL_CDROM_READ_TOC
-title : IOCTL_CDROM_READ_TOC
-author : windows-driver-content
-description : Returns the table of contents of the media. Obsolete, beginning with Windows Vista.
-old-location : storage\ioctl_cdrom_read_toc.htm
-old-project : storage
-ms.assetid : 4820dca5-7bbe-425d-9063-54450146f273
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.ioctl_cdrom_read_toc, IOCTL_CDROM_READ_TOC control code [Storage Devices], IOCTL_CDROM_READ_TOC, ntddcdrm/IOCTL_CDROM_READ_TOC, k307_8e0f2b70-edd0-424e-abb4-a81ea9f382fe.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddcdrm.h
-req.include-header : Ntddcdrm.h
-req.target-type : Windows
-req.target-min-winverclnt : Obsolete, beginning with Windows Vista.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WRITE_ROTATION, *PWRITE_ROTATION
+UID: NI:ntddcdrm.IOCTL_CDROM_READ_TOC
+title: IOCTL_CDROM_READ_TOC
+author: windows-driver-content
+description: Returns the table of contents of the media. Obsolete, beginning with Windows Vista.
+old-location: storage\ioctl_cdrom_read_toc.htm
+old-project: storage
+ms.assetid: 4820dca5-7bbe-425d-9063-54450146f273
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.ioctl_cdrom_read_toc, IOCTL_CDROM_READ_TOC control code [Storage Devices], IOCTL_CDROM_READ_TOC, ntddcdrm/IOCTL_CDROM_READ_TOC, k307_8e0f2b70-edd0-424e-abb4-a81ea9f382fe.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddcdrm.h
+req.include-header: Ntddcdrm.h
+req.target-type: Windows
+req.target-min-winverclnt: Obsolete, beginning with Windows Vista.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddcdrm.h
+apiname:
+-	IOCTL_CDROM_READ_TOC
+product: Windows
+targetos: Windows
+req.typenames: WRITE_ROTATION, *PWRITE_ROTATION
 ---
 
 # IOCTL_CDROM_READ_TOC IOCTL

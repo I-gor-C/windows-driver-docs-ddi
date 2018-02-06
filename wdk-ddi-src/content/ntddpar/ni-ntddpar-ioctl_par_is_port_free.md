@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddpar.IOCTL_PAR_IS_PORT_FREE
-title : IOCTL_PAR_IS_PORT_FREE
-author : windows-driver-content
-description : The IOCTL_PAR_IS_PORT_FREE request determines if a parallel device's parent parallel port is free at the time the system-supplied bus driver for parallel ports processes the request.
-old-location : parports\ioctl_par_is_port_free.htm
-old-project : parports
-ms.assetid : a64db598-b524-43dd-9831-20cb98cf3c29
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : parports.ioctl_par_is_port_free, IOCTL_PAR_IS_PORT_FREE control code [Parallel Ports], IOCTL_PAR_IS_PORT_FREE, ntddpar/IOCTL_PAR_IS_PORT_FREE, cisspd_3f8c9a8d-225c-48cc-b504-235c79037f99.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddpar.h
-req.include-header : Ntddpar.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*POFFLOAD_SECURITY_ASSOCIATION, OFFLOAD_SECURITY_ASSOCIATION"
+UID: NI:ntddpar.IOCTL_PAR_IS_PORT_FREE
+title: IOCTL_PAR_IS_PORT_FREE
+author: windows-driver-content
+description: The IOCTL_PAR_IS_PORT_FREE request determines if a parallel device's parent parallel port is free at the time the system-supplied bus driver for parallel ports processes the request.
+old-location: parports\ioctl_par_is_port_free.htm
+old-project: parports
+ms.assetid: a64db598-b524-43dd-9831-20cb98cf3c29
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: parports.ioctl_par_is_port_free, IOCTL_PAR_IS_PORT_FREE control code [Parallel Ports], IOCTL_PAR_IS_PORT_FREE, ntddpar/IOCTL_PAR_IS_PORT_FREE, cisspd_3f8c9a8d-225c-48cc-b504-235c79037f99.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddpar.h
+req.include-header: Ntddpar.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntddpar.h
+apiname:
+-	IOCTL_PAR_IS_PORT_FREE
+product: Windows
+targetos: Windows
+req.typenames: "*POFFLOAD_SECURITY_ASSOCIATION, OFFLOAD_SECURITY_ASSOCIATION"
 ---
 
 # IOCTL_PAR_IS_PORT_FREE IOCTL

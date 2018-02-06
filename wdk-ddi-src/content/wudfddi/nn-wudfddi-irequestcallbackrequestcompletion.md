@@ -1,42 +1,47 @@
 ---
-UID : NN:wudfddi.IRequestCallbackRequestCompletion
-title : IRequestCallbackRequestCompletion
-author : windows-driver-content
-description : A driver implements the IRequestCallbackRequestCompletion interface to complete a request object.
-old-location : wdf\irequestcallbackrequestcompletion.htm
-old-project : wdf
-ms.assetid : 65803145-8043-4902-981a-9dbbda2d69e9
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.irequestcallbackrequestcompletion, IRequestCallbackRequestCompletion interface, IRequestCallbackRequestCompletion interface, described, IRequestCallbackRequestCompletion, wudfddi/IRequestCallbackRequestCompletion, UMDFRequestObjectRef_9940e95b-e321-4cdf-95bb-3540e95f6094.xml, umdf.irequestcallbackrequestcompletion
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : wudfddi.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NN:wudfddi.IRequestCallbackRequestCompletion
+title: IRequestCallbackRequestCompletion
+author: windows-driver-content
+description: A driver implements the IRequestCallbackRequestCompletion interface to complete a request object.
+old-location: wdf\irequestcallbackrequestcompletion.htm
+old-project: wdf
+ms.assetid: 65803145-8043-4902-981a-9dbbda2d69e9
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.irequestcallbackrequestcompletion, IRequestCallbackRequestCompletion interface, IRequestCallbackRequestCompletion interface, described, IRequestCallbackRequestCompletion, wudfddi/IRequestCallbackRequestCompletion, UMDFRequestObjectRef_9940e95b-e321-4cdf-95bb-3540e95f6094.xml, umdf.irequestcallbackrequestcompletion
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: wudfddi.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	wudfddi.h
+apiname:
+-	IRequestCallbackRequestCompletion
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 # IRequestCallbackRequestCompletion interface

@@ -1,42 +1,48 @@
 ---
-UID : NF:wdfchildlist.WdfChildListRetrieveNextDevice
-title : WdfChildListRetrieveNextDevice function
-author : windows-driver-content
-description : The WdfChildListRetrieveNextDevice method traverses a specified child list and retrieves the next child device that matches specified criteria.
-old-location : wdf\wdfchildlistretrievenextdevice.htm
-old-project : wdf
-ms.assetid : 925807ff-e445-4ccf-ace6-fd913439799b
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WdfChildListRetrieveNextDevice method, wdfchildlist/WdfChildListRetrieveNextDevice, wdf.wdfchildlistretrievenextdevice, kmdf.wdfchildlistretrievenextdevice, WdfChildListRetrieveNextDevice, DFDeviceObjectChildListRef_c7ac1028-c3a3-4189-ae63-510bd199fcb2.xml, PFN_WDFCHILDLISTRETRIEVENEXTDEVICE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfchildlist.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (see Framework Library Versioning.)
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_RETRIEVE_CHILD_FLAGS
-req.product : Windows 10 or later.
+UID: NF:wdfchildlist.WdfChildListRetrieveNextDevice
+title: WdfChildListRetrieveNextDevice function
+author: windows-driver-content
+description: The WdfChildListRetrieveNextDevice method traverses a specified child list and retrieves the next child device that matches specified criteria.
+old-location: wdf\wdfchildlistretrievenextdevice.htm
+old-project: wdf
+ms.assetid: 925807ff-e445-4ccf-ace6-fd913439799b
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WdfChildListRetrieveNextDevice method, wdfchildlist/WdfChildListRetrieveNextDevice, wdf.wdfchildlistretrievenextdevice, kmdf.wdfchildlistretrievenextdevice, WdfChildListRetrieveNextDevice, DFDeviceObjectChildListRef_c7ac1028-c3a3-4189-ae63-510bd199fcb2.xml, PFN_WDFCHILDLISTRETRIEVENEXTDEVICE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfchildlist.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (see Framework Library Versioning.)
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+apiname:
+-	WdfChildListRetrieveNextDevice
+product: Windows
+targetos: Windows
+req.typenames: WDF_RETRIEVE_CHILD_FLAGS
+req.product: Windows 10 or later.
 ---
 
 

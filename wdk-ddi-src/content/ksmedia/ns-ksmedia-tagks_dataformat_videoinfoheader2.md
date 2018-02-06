@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.tagKS_DATAFORMAT_VIDEOINFOHEADER2
-title : tagKS_DATAFORMAT_VIDEOINFOHEADER2
-author : windows-driver-content
-description : The KS_DATAFORMAT_VIDEOINFOHEADER2 structure describes a video stream that includes settings for bob or weave.
-old-location : stream\ks_dataformat_videoinfoheader2.htm
-old-project : stream
-ms.assetid : 92deaecd-69d7-4e64-bdb0-a2736add0c2f
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : tagKS_DATAFORMAT_VIDEOINFOHEADER2, KS_DATAFORMAT_VIDEOINFOHEADER2 structure [Streaming Media Devices], stream.ks_dataformat_videoinfoheader2, PKS_DATAFORMAT_VIDEOINFOHEADER2, KS_DATAFORMAT_VIDEOINFOHEADER2, PKS_DATAFORMAT_VIDEOINFOHEADER2 structure pointer [Streaming Media Devices], ksmedia/KS_DATAFORMAT_VIDEOINFOHEADER2, *PKS_DATAFORMAT_VIDEOINFOHEADER2, ksmedia/PKS_DATAFORMAT_VIDEOINFOHEADER2, vidcapstruct_cadaf63f-50d5-41c5-926b-81724dddb890.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KS_DATAFORMAT_VIDEOINFOHEADER2, *PKS_DATAFORMAT_VIDEOINFOHEADER2
+UID: NS:ksmedia.tagKS_DATAFORMAT_VIDEOINFOHEADER2
+title: tagKS_DATAFORMAT_VIDEOINFOHEADER2
+author: windows-driver-content
+description: The KS_DATAFORMAT_VIDEOINFOHEADER2 structure describes a video stream that includes settings for bob or weave.
+old-location: stream\ks_dataformat_videoinfoheader2.htm
+old-project: stream
+ms.assetid: 92deaecd-69d7-4e64-bdb0-a2736add0c2f
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: tagKS_DATAFORMAT_VIDEOINFOHEADER2, KS_DATAFORMAT_VIDEOINFOHEADER2 structure [Streaming Media Devices], stream.ks_dataformat_videoinfoheader2, PKS_DATAFORMAT_VIDEOINFOHEADER2, KS_DATAFORMAT_VIDEOINFOHEADER2, PKS_DATAFORMAT_VIDEOINFOHEADER2 structure pointer [Streaming Media Devices], ksmedia/KS_DATAFORMAT_VIDEOINFOHEADER2, *PKS_DATAFORMAT_VIDEOINFOHEADER2, ksmedia/PKS_DATAFORMAT_VIDEOINFOHEADER2, vidcapstruct_cadaf63f-50d5-41c5-926b-81724dddb890.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	KS_DATAFORMAT_VIDEOINFOHEADER2
+product: Windows
+targetos: Windows
+req.typenames: KS_DATAFORMAT_VIDEOINFOHEADER2, *PKS_DATAFORMAT_VIDEOINFOHEADER2
 ---
 
 # tagKS_DATAFORMAT_VIDEOINFOHEADER2 structure

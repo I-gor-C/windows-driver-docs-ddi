@@ -1,41 +1,46 @@
 ---
-UID : NF:dbgeng.IDebugSymbolGroup2.GetSymbolRegister
-title : IDebugSymbolGroup2::GetSymbolRegister method
-author : windows-driver-content
-description : The GetSymbolRegister method returns the register that contains the value or a pointer to the value of a symbol in a symbol group.
-old-location : debugger\getsymbolregister.htm
-old-project : debugger
-ms.assetid : 6b95ca8c-604b-4497-9798-02f362095709
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugSymbolGroup2, GetSymbolRegister, GetSymbolRegister method [Windows Debugging], IDebugSymbolGroup2 interface, dbgeng/IDebugSymbolGroup2::GetSymbolRegister, GetSymbolRegister method [Windows Debugging], debugger.getsymbolregister, ComOther_9383fee9-ec27-4ccb-8768-02bd550746d7.xml, IDebugSymbolGroup2 interface [Windows Debugging], GetSymbolRegister method, IDebugSymbolGroup2::GetSymbolRegister
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSymbolGroup2.GetSymbolRegister
+title: IDebugSymbolGroup2::GetSymbolRegister method
+author: windows-driver-content
+description: The GetSymbolRegister method returns the register that contains the value or a pointer to the value of a symbol in a symbol group.
+old-location: debugger\getsymbolregister.htm
+old-project: debugger
+ms.assetid: 6b95ca8c-604b-4497-9798-02f362095709
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugSymbolGroup2, GetSymbolRegister, GetSymbolRegister method [Windows Debugging], IDebugSymbolGroup2 interface, dbgeng/IDebugSymbolGroup2::GetSymbolRegister, GetSymbolRegister method [Windows Debugging], debugger.getsymbolregister, ComOther_9383fee9-ec27-4ccb-8768-02bd550746d7.xml, IDebugSymbolGroup2 interface [Windows Debugging], GetSymbolRegister method, IDebugSymbolGroup2::GetSymbolRegister
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugSymbolGroup2.GetSymbolRegister
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

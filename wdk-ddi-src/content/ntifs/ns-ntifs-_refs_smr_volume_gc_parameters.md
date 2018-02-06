@@ -1,41 +1,46 @@
 ---
-UID : NS:ntifs._REFS_SMR_VOLUME_GC_PARAMETERS
-title : "_REFS_SMR_VOLUME_GC_PARAMETERS"
-author : windows-driver-content
-description : The REFS_SMR_VOLUME_GC_PARAMETERS structure.
-old-location : ifsk\refs_smr_volume_gc_parameters.htm
-old-project : ifsk
-ms.assetid : 78C8FFFE-8A80-4C92-B822-5C6675E2BC18
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ntifs/PREFS_SMR_VOLUME_GC_PARAMETERS, ifsk.refs_smr_volume_gc_parameters, *PREFS_SMR_VOLUME_GC_PARAMETERS, REFS_SMR_VOLUME_GC_PARAMETERS, REFS_SMR_VOLUME_GC_PARAMETERS structure [Installable File System Drivers], PREFS_SMR_VOLUME_GC_PARAMETERS structure pointer [Installable File System Drivers], ntifs/REFS_SMR_VOLUME_GC_PARAMETERS, _REFS_SMR_VOLUME_GC_PARAMETERS, PREFS_SMR_VOLUME_GC_PARAMETERS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows 10, version 1709.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PREFS_SMR_VOLUME_GC_PARAMETERS, REFS_SMR_VOLUME_GC_PARAMETERS"
+UID: NS:ntifs._REFS_SMR_VOLUME_GC_PARAMETERS
+title: "_REFS_SMR_VOLUME_GC_PARAMETERS"
+author: windows-driver-content
+description: The REFS_SMR_VOLUME_GC_PARAMETERS structure.
+old-location: ifsk\refs_smr_volume_gc_parameters.htm
+old-project: ifsk
+ms.assetid: 78C8FFFE-8A80-4C92-B822-5C6675E2BC18
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ntifs/PREFS_SMR_VOLUME_GC_PARAMETERS, ifsk.refs_smr_volume_gc_parameters, *PREFS_SMR_VOLUME_GC_PARAMETERS, REFS_SMR_VOLUME_GC_PARAMETERS, REFS_SMR_VOLUME_GC_PARAMETERS structure [Installable File System Drivers], PREFS_SMR_VOLUME_GC_PARAMETERS structure pointer [Installable File System Drivers], ntifs/REFS_SMR_VOLUME_GC_PARAMETERS, _REFS_SMR_VOLUME_GC_PARAMETERS, PREFS_SMR_VOLUME_GC_PARAMETERS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows 10, version 1709.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntifs.h
+apiname:
+-	REFS_SMR_VOLUME_GC_PARAMETERS
+product: Windows
+targetos: Windows
+req.typenames: "*PREFS_SMR_VOLUME_GC_PARAMETERS, REFS_SMR_VOLUME_GC_PARAMETERS"
 ---
 
 # _REFS_SMR_VOLUME_GC_PARAMETERS structure

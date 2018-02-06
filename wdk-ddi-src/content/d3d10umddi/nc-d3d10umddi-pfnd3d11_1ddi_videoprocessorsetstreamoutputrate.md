@@ -1,41 +1,46 @@
 ---
-UID : NC:d3d10umddi.PFND3D11_1DDI_VIDEOPROCESSORSETSTREAMOUTPUTRATE
-title : PFND3D11_1DDI_VIDEOPROCESSORSETSTREAMOUTPUTRATE
-author : windows-driver-content
-description : Sets the rate at which the video processor produces output frames for an input stream.
-old-location : display\videoprocessorsetstreamoutputrate.htm
-old-project : display
-ms.assetid : fc1236f2-fcbf-4b3f-978f-a34260b78159
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.videoprocessorsetstreamoutputrate, pfnVideoProcessorSetStreamOutputRate callback function [Display Devices], pfnVideoProcessorSetStreamOutputRate, PFND3D11_1DDI_VIDEOPROCESSORSETSTREAMOUTPUTRATE, PFND3D11_1DDI_VIDEOPROCESSORSETSTREAMOUTPUTRATE, d3d10umddi/pfnVideoProcessorSetStreamOutputRate
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSETRESULT_INFO, SETRESULT_INFO"
+UID: NC:d3d10umddi.PFND3D11_1DDI_VIDEOPROCESSORSETSTREAMOUTPUTRATE
+title: PFND3D11_1DDI_VIDEOPROCESSORSETSTREAMOUTPUTRATE
+author: windows-driver-content
+description: Sets the rate at which the video processor produces output frames for an input stream.
+old-location: display\videoprocessorsetstreamoutputrate.htm
+old-project: display
+ms.assetid: fc1236f2-fcbf-4b3f-978f-a34260b78159
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.videoprocessorsetstreamoutputrate, pfnVideoProcessorSetStreamOutputRate callback function [Display Devices], pfnVideoProcessorSetStreamOutputRate, PFND3D11_1DDI_VIDEOPROCESSORSETSTREAMOUTPUTRATE, PFND3D11_1DDI_VIDEOPROCESSORSETSTREAMOUTPUTRATE, d3d10umddi/pfnVideoProcessorSetStreamOutputRate
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	D3d10umddi.h
+apiname:
+-	pfnVideoProcessorSetStreamOutputRate
+product: Windows
+targetos: Windows
+req.typenames: "*PSETRESULT_INFO, SETRESULT_INFO"
 ---
 
 

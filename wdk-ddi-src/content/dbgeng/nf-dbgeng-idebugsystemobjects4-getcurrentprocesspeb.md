@@ -1,41 +1,49 @@
 ---
-UID : NF:dbgeng.IDebugSystemObjects4.GetCurrentProcessPeb
-title : IDebugSystemObjects4::GetCurrentProcessPeb method
-author : windows-driver-content
-description : The GetCurrentProcessPeb method returns the process environment block (PEB) of the current process.
-old-location : debugger\getcurrentprocesspeb.htm
-old-project : debugger
-ms.assetid : fa1e2915-3cb5-4634-a8fb-0d2d565c1c00
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugSystemObjects4::GetCurrentProcessPeb, GetCurrentProcessPeb method [Windows Debugging], IDebugSystemObjects::GetCurrentProcessPeb, IDebugSystemObjects2::GetCurrentProcessPeb, dbgeng/IDebugSystemObjects2::GetCurrentProcessPeb, dbgeng/IDebugSystemObjects::GetCurrentProcessPeb, debugger.getcurrentprocesspeb, GetCurrentProcessPeb method [Windows Debugging], IDebugSystemObjects3 interface, IDebugSystemObjects4, IDebugSystemObjects2 interface [Windows Debugging], GetCurrentProcessPeb method, dbgeng/IDebugSystemObjects4::GetCurrentProcessPeb, IDebugSystemObjects3 interface [Windows Debugging], GetCurrentProcessPeb method, IDebugSystemObjects_fd672d78-9254-4f24-9f10-99a91d825f2e.xml, IDebugSystemObjects interface [Windows Debugging], GetCurrentProcessPeb method, GetCurrentProcessPeb method [Windows Debugging], IDebugSystemObjects2 interface, GetCurrentProcessPeb method [Windows Debugging], IDebugSystemObjects4 interface, IDebugSystemObjects3::GetCurrentProcessPeb, dbgeng/IDebugSystemObjects3::GetCurrentProcessPeb, GetCurrentProcessPeb, IDebugSystemObjects4 interface [Windows Debugging], GetCurrentProcessPeb method, GetCurrentProcessPeb method [Windows Debugging], IDebugSystemObjects interface
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSystemObjects4.GetCurrentProcessPeb
+title: IDebugSystemObjects4::GetCurrentProcessPeb method
+author: windows-driver-content
+description: The GetCurrentProcessPeb method returns the process environment block (PEB) of the current process.
+old-location: debugger\getcurrentprocesspeb.htm
+old-project: debugger
+ms.assetid: fa1e2915-3cb5-4634-a8fb-0d2d565c1c00
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugSystemObjects4::GetCurrentProcessPeb, GetCurrentProcessPeb method [Windows Debugging], IDebugSystemObjects::GetCurrentProcessPeb, IDebugSystemObjects2::GetCurrentProcessPeb, dbgeng/IDebugSystemObjects2::GetCurrentProcessPeb, dbgeng/IDebugSystemObjects::GetCurrentProcessPeb, debugger.getcurrentprocesspeb, GetCurrentProcessPeb method [Windows Debugging], IDebugSystemObjects3 interface, IDebugSystemObjects4, IDebugSystemObjects2 interface [Windows Debugging], GetCurrentProcessPeb method, dbgeng/IDebugSystemObjects4::GetCurrentProcessPeb, IDebugSystemObjects3 interface [Windows Debugging], GetCurrentProcessPeb method, IDebugSystemObjects_fd672d78-9254-4f24-9f10-99a91d825f2e.xml, IDebugSystemObjects interface [Windows Debugging], GetCurrentProcessPeb method, GetCurrentProcessPeb method [Windows Debugging], IDebugSystemObjects2 interface, GetCurrentProcessPeb method [Windows Debugging], IDebugSystemObjects4 interface, IDebugSystemObjects3::GetCurrentProcessPeb, dbgeng/IDebugSystemObjects3::GetCurrentProcessPeb, GetCurrentProcessPeb, IDebugSystemObjects4 interface [Windows Debugging], GetCurrentProcessPeb method, GetCurrentProcessPeb method [Windows Debugging], IDebugSystemObjects interface
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugSystemObjects.GetCurrentProcessPeb
+-	IDebugSystemObjects2.GetCurrentProcessPeb
+-	IDebugSystemObjects3.GetCurrentProcessPeb
+-	IDebugSystemObjects4.GetCurrentProcessPeb
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

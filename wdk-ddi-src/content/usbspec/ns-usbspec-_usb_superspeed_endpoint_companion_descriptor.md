@@ -1,42 +1,47 @@
 ---
-UID : NS:usbspec._USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR
-title : "_USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR"
-author : windows-driver-content
-description : The USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR structure is used by USB client drivers to retrieve a USB-defined SuperSpeed Endpoint Companion descriptor. For more information, see section 9.6.7 and Table 9-20 in the official USB 3.0 specification.
-old-location : buses\usb_superspeed_endpoint_companion_descriptor.htm
-old-project : usbref
-ms.assetid : 725ADCA2-FE86-4131-8D70-2BF63F26F89D
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : "*PUSB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR, PUSB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR structure pointer [Buses], USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR structure [Buses], _USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR, USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR, usbspec/PUSB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR, usbspec/USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR, buses.usb_superspeed_endpoint_companion_descriptor, PUSB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : usbspec.h
-req.include-header : Usbspec.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : None supported
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR, *PUSB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR
-req.product : Windows 10 or later.
+UID: NS:usbspec._USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR
+title: "_USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR"
+author: windows-driver-content
+description: The USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR structure is used by USB client drivers to retrieve a USB-defined SuperSpeed Endpoint Companion descriptor. For more information, see section 9.6.7 and Table 9-20 in the official USB 3.0 specification.
+old-location: buses\usb_superspeed_endpoint_companion_descriptor.htm
+old-project: usbref
+ms.assetid: 725ADCA2-FE86-4131-8D70-2BF63F26F89D
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: "*PUSB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR, PUSB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR structure pointer [Buses], USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR structure [Buses], _USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR, USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR, usbspec/PUSB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR, usbspec/USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR, buses.usb_superspeed_endpoint_companion_descriptor, PUSB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: usbspec.h
+req.include-header: Usbspec.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: None supported
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	usbspec.h
+apiname:
+-	USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR
+product: Windows
+targetos: Windows
+req.typenames: USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR, *PUSB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR
+req.product: Windows 10 or later.
 ---
 
 # _USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR structure

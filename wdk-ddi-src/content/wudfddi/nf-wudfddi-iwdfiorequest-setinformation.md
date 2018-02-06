@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFIoRequest.SetInformation
-title : IWDFIoRequest::SetInformation method
-author : windows-driver-content
-description : The SetInformation method sets the size of information for a request.
-old-location : wdf\iwdfiorequest_setinformation.htm
-old-project : wdf
-ms.assetid : dc2c907c-1e3b-418c-85f8-9902dc83f7ab
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.iwdfiorequest_setinformation, UMDFRequestObjectRef_6b29fa48-7024-44de-ab4f-68907515483a.xml, SetInformation, IWDFIoRequest::SetInformation, IWDFIoRequest, umdf.iwdfiorequest_setinformation, SetInformation method, SetInformation method, IWDFIoRequest interface, wudfddi/IWDFIoRequest::SetInformation, IWDFIoRequest interface, SetInformation method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.5
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFIoRequest.SetInformation
+title: IWDFIoRequest::SetInformation method
+author: windows-driver-content
+description: The SetInformation method sets the size of information for a request.
+old-location: wdf\iwdfiorequest_setinformation.htm
+old-project: wdf
+ms.assetid: dc2c907c-1e3b-418c-85f8-9902dc83f7ab
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.iwdfiorequest_setinformation, UMDFRequestObjectRef_6b29fa48-7024-44de-ab4f-68907515483a.xml, SetInformation, IWDFIoRequest::SetInformation, IWDFIoRequest, umdf.iwdfiorequest_setinformation, SetInformation method, SetInformation method, IWDFIoRequest interface, wudfddi/IWDFIoRequest::SetInformation, IWDFIoRequest interface, SetInformation method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.5
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFIoRequest.SetInformation
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

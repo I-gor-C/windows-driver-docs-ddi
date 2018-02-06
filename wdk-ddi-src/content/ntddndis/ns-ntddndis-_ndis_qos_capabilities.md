@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddndis._NDIS_QOS_CAPABILITIES
-title : "_NDIS_QOS_CAPABILITIES"
-author : windows-driver-content
-description : The NDIS_QOS_CAPABILITIES structure specifies the NDIS Quality of Service (QoS) capabilities of a network adapter that supports the IEEE 802.1 Data Center Bridging (DCB) interface.
-old-location : netvista\ndis_qos_capabilities.htm
-old-project : netvista
-ms.assetid : 23698bb8-3fb6-4e60-aaac-75c2e3341d54
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : PNDIS_QOS_CAPABILITIES structure pointer [Network Drivers Starting with Windows Vista], NDIS_QOS_CAPABILITIES, ntddndis/NDIS_QOS_CAPABILITIES, netvista.ndis_qos_capabilities, ntddndis/PNDIS_QOS_CAPABILITIES, PNDIS_QOS_CAPABILITIES, NDIS_QOS_CAPABILITIES structure [Network Drivers Starting with Windows Vista], _NDIS_QOS_CAPABILITIES
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.30 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_QOS_CAPABILITIES, PNDIS_QOS_CAPABILITIES
+UID: NS:ntddndis._NDIS_QOS_CAPABILITIES
+title: "_NDIS_QOS_CAPABILITIES"
+author: windows-driver-content
+description: The NDIS_QOS_CAPABILITIES structure specifies the NDIS Quality of Service (QoS) capabilities of a network adapter that supports the IEEE 802.1 Data Center Bridging (DCB) interface.
+old-location: netvista\ndis_qos_capabilities.htm
+old-project: netvista
+ms.assetid: 23698bb8-3fb6-4e60-aaac-75c2e3341d54
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: PNDIS_QOS_CAPABILITIES structure pointer [Network Drivers Starting with Windows Vista], NDIS_QOS_CAPABILITIES, ntddndis/NDIS_QOS_CAPABILITIES, netvista.ndis_qos_capabilities, ntddndis/PNDIS_QOS_CAPABILITIES, PNDIS_QOS_CAPABILITIES, NDIS_QOS_CAPABILITIES structure [Network Drivers Starting with Windows Vista], _NDIS_QOS_CAPABILITIES
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.30 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddndis.h
+apiname:
+-	NDIS_QOS_CAPABILITIES
+product: Windows
+targetos: Windows
+req.typenames: NDIS_QOS_CAPABILITIES, PNDIS_QOS_CAPABILITIES
 ---
 
 # _NDIS_QOS_CAPABILITIES structure

@@ -1,41 +1,46 @@
 ---
-UID : NC:pepfx.POFXCALLBACKPROCESSORIDLEVETO
-title : POFXCALLBACKPROCESSORIDLEVETO
-author : windows-driver-content
-description : The ProcessorIdleVeto routine increments or decrements the veto count for a veto code for a processor idle state.
-old-location : kernel\processoridleveto.htm
-old-project : kernel
-ms.assetid : 505276EE-5D41-4AB2-82FB-FBDEF994F372
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.processoridleveto, ProcessorIdleVetoreadv, ProcessorIdleVeto routine [Kernel-Mode Driver Architecture], ProcessorIdleVeto, POFXCALLBACKPROCESSORIDLEVETO, POFXCALLBACKPROCESSORIDLEVETO, pepfx/ProcessorIdleVeto
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : pepfx.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with Windows 10.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : VPCI_PNP_ID, *PVPCI_PNP_ID
+UID: NC:pepfx.POFXCALLBACKPROCESSORIDLEVETO
+title: POFXCALLBACKPROCESSORIDLEVETO
+author: windows-driver-content
+description: The ProcessorIdleVeto routine increments or decrements the veto count for a veto code for a processor idle state.
+old-location: kernel\processoridleveto.htm
+old-project: kernel
+ms.assetid: 505276EE-5D41-4AB2-82FB-FBDEF994F372
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.processoridleveto, ProcessorIdleVetoreadv, ProcessorIdleVeto routine [Kernel-Mode Driver Architecture], ProcessorIdleVeto, POFXCALLBACKPROCESSORIDLEVETO, POFXCALLBACKPROCESSORIDLEVETO, pepfx/ProcessorIdleVeto
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: pepfx.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows 10.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	pepfx.h
+apiname:
+-	ProcessorIdleVeto
+product: Windows
+targetos: Windows
+req.typenames: VPCI_PNP_ID, *PVPCI_PNP_ID
 ---
 
 

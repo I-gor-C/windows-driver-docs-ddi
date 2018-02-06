@@ -1,41 +1,46 @@
 ---
-UID : NS:avc._AVC_PIN_ID
-title : "_AVC_PIN_ID"
-author : windows-driver-content
-description : The AVC_PIN_ID structure describes a pin on a subunit.
-old-location : stream\avc_pin_id.htm
-old-project : stream
-ms.assetid : 0341b1c4-a050-45f4-b9fc-b28b6a8af75d
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : "*PAVC_PIN_ID, PAVC_PIN_ID, stream.avc_pin_id, AVC_PIN_ID, _AVC_PIN_ID, avcref_28e8a7a5-a90b-4e1b-ad4c-1a1ccbc405c5.xml, AVC_PIN_ID structure [Streaming Media Devices], avc/PAVC_PIN_ID, avc/AVC_PIN_ID, PAVC_PIN_ID structure pointer [Streaming Media Devices]"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : avc.h
-req.include-header : Avc.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PAVC_PIN_ID, AVC_PIN_ID"
+UID: NS:avc._AVC_PIN_ID
+title: "_AVC_PIN_ID"
+author: windows-driver-content
+description: The AVC_PIN_ID structure describes a pin on a subunit.
+old-location: stream\avc_pin_id.htm
+old-project: stream
+ms.assetid: 0341b1c4-a050-45f4-b9fc-b28b6a8af75d
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: "*PAVC_PIN_ID, PAVC_PIN_ID, stream.avc_pin_id, AVC_PIN_ID, _AVC_PIN_ID, avcref_28e8a7a5-a90b-4e1b-ad4c-1a1ccbc405c5.xml, AVC_PIN_ID structure [Streaming Media Devices], avc/PAVC_PIN_ID, avc/AVC_PIN_ID, PAVC_PIN_ID structure pointer [Streaming Media Devices]"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: avc.h
+req.include-header: Avc.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	avc.h
+apiname:
+-	AVC_PIN_ID
+product: Windows
+targetos: Windows
+req.typenames: "*PAVC_PIN_ID, AVC_PIN_ID"
 ---
 
 # _AVC_PIN_ID structure

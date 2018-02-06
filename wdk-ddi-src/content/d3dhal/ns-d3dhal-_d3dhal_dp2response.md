@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dhal._D3DHAL_DP2RESPONSE
-title : "_D3DHAL_DP2RESPONSE"
-author : windows-driver-content
-description : DirectX 9.0 and later versions only.
-old-location : display\d3dhal_dp2response.htm
-old-project : display
-ms.assetid : 3a8ae2a9-21cd-4b0d-b293-60865a4fdfe6
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : LPD3DHAL_DP2RESPONSE structure pointer [Display Devices], _D3DHAL_DP2RESPONSE, D3DHAL_DP2RESPONSE structure [Display Devices], *LPD3DHAL_DP2RESPONSE, display.d3dhal_dp2response, D3DHAL_DP2RESPONSE, d3dhal/D3DHAL_DP2RESPONSE, d3dstrct_cd629a64-c8e9-45d2-a0bc-048ff623cc97.xml, d3dhal/LPD3DHAL_DP2RESPONSE, LPD3DHAL_DP2RESPONSE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dhal.h
-req.include-header : D3dhal.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*LPD3DHAL_DP2RESPONSE, D3DHAL_DP2RESPONSE"
+UID: NS:d3dhal._D3DHAL_DP2RESPONSE
+title: "_D3DHAL_DP2RESPONSE"
+author: windows-driver-content
+description: DirectX 9.0 and later versions only.
+old-location: display\d3dhal_dp2response.htm
+old-project: display
+ms.assetid: 3a8ae2a9-21cd-4b0d-b293-60865a4fdfe6
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: LPD3DHAL_DP2RESPONSE structure pointer [Display Devices], _D3DHAL_DP2RESPONSE, D3DHAL_DP2RESPONSE structure [Display Devices], *LPD3DHAL_DP2RESPONSE, display.d3dhal_dp2response, D3DHAL_DP2RESPONSE, d3dhal/D3DHAL_DP2RESPONSE, d3dstrct_cd629a64-c8e9-45d2-a0bc-048ff623cc97.xml, d3dhal/LPD3DHAL_DP2RESPONSE, LPD3DHAL_DP2RESPONSE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dhal.h
+req.include-header: D3dhal.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dhal.h
+apiname:
+-	D3DHAL_DP2RESPONSE
+product: Windows
+targetos: Windows
+req.typenames: "*LPD3DHAL_DP2RESPONSE, D3DHAL_DP2RESPONSE"
 ---
 
 # _D3DHAL_DP2RESPONSE structure

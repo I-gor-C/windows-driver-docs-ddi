@@ -1,42 +1,50 @@
 ---
-UID : NF:wdfregistry.WdfRegistryAssignMemory
-title : WdfRegistryAssignMemory function
-author : windows-driver-content
-description : The WdfRegistryAssignMemory method assigns data that is contained in a specified memory buffer to a specified value name in the registry.
-old-location : wdf\wdfregistryassignmemory.htm
-old-project : wdf
-ms.assetid : 692a9cdf-3cb7-41c1-96a8-28daed13aa60
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.wdfregistryassignmemory, DFRegKeyObjectRef_263749e2-fb1e-4153-9387-32cc256d7fe4.xml, wdfregistry/WdfRegistryAssignMemory, WdfRegistryAssignMemory method, WdfRegistryAssignMemory, PFN_WDFREGISTRYASSIGNMEMORY, kmdf.wdfregistryassignmemory
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfregistry.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_QUERY_INTERFACE_CONFIG, *PWDF_QUERY_INTERFACE_CONFIG
-req.product : Windows 10 or later.
+UID: NF:wdfregistry.WdfRegistryAssignMemory
+title: WdfRegistryAssignMemory function
+author: windows-driver-content
+description: The WdfRegistryAssignMemory method assigns data that is contained in a specified memory buffer to a specified value name in the registry.
+old-location: wdf\wdfregistryassignmemory.htm
+old-project: wdf
+ms.assetid: 692a9cdf-3cb7-41c1-96a8-28daed13aa60
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.wdfregistryassignmemory, DFRegKeyObjectRef_263749e2-fb1e-4153-9387-32cc256d7fe4.xml, wdfregistry/WdfRegistryAssignMemory, WdfRegistryAssignMemory method, WdfRegistryAssignMemory, PFN_WDFREGISTRYASSIGNMEMORY, kmdf.wdfregistryassignmemory
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfregistry.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+-	WUDFx02000.dll
+-	WUDFx02000.dll.dll
+apiname:
+-	WdfRegistryAssignMemory
+product: Windows
+targetos: Windows
+req.typenames: WDF_QUERY_INTERFACE_CONFIG, *PWDF_QUERY_INTERFACE_CONFIG
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.ZwQueryEaFile
-title : ZwQueryEaFile function
-author : windows-driver-content
-description : The ZwQueryEaFile routine returns information about extended-attribute (EA) values for a file.
-old-location : kernel\zwqueryeafile.htm
-old-project : kernel
-ms.assetid : c4261a83-3c91-4bc1-93bf-d2d04c324e94
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : ZwQueryEaFile routine [Kernel-Mode Driver Architecture], ntifs/ZwQueryEaFile, ZwQueryEaFile, kernel.zwqueryeafile
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : FltKernel.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Microsoft Windows 2000 and later versions of the Windows operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.ZwQueryEaFile
+title: ZwQueryEaFile function
+author: windows-driver-content
+description: The ZwQueryEaFile routine returns information about extended-attribute (EA) values for a file.
+old-location: kernel\zwqueryeafile.htm
+old-project: kernel
+ms.assetid: c4261a83-3c91-4bc1-93bf-d2d04c324e94
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: ZwQueryEaFile routine [Kernel-Mode Driver Architecture], ntifs/ZwQueryEaFile, ZwQueryEaFile, kernel.zwqueryeafile
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: FltKernel.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Microsoft Windows 2000 and later versions of the Windows operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ZwQueryEaFile
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

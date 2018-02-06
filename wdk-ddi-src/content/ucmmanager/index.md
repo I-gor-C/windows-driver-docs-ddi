@@ -1,12 +1,12 @@
 ---
-UID : NA:ucmmanager
-ms.assetid : 3e459ad2-db6c-372c-95bd-d836bce39752
-ms.author : windowsdriverdev
-ms.date : 01/18/18
-ms.keywords : 
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : portal
+UID: NA:ucmmanager
+ms.assetid: 3e459ad2-db6c-372c-95bd-d836bce39752
+ms.author: windowsdriverdev
+ms.date: 01/18/18
+ms.keywords: 
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: portal
 ---
 
 # ucmmanager.h header

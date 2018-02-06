@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmthk._D3DKMT_CREATEDCFROMMEMORY
-title : "_D3DKMT_CREATEDCFROMMEMORY"
-author : windows-driver-content
-description : The D3DKMT_CREATEDCFROMMEMORY structure describes parameters for creating the display context.
-old-location : display\d3dkmt_createdcfrommemory.htm
-old-project : display
-ms.assetid : 260fd894-fc5a-4a27-ac35-3f1b145b52b7
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DKMT_CREATEDCFROMMEMORY structure [Display Devices], OpenGL_Structs_b56e280f-e29b-4781-942a-a36024786d9e.xml, _D3DKMT_CREATEDCFROMMEMORY, d3dkmthk/D3DKMT_CREATEDCFROMMEMORY, D3DKMT_CREATEDCFROMMEMORY, display.d3dkmt_createdcfrommemory
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_CREATEDCFROMMEMORY
+UID: NS:d3dkmthk._D3DKMT_CREATEDCFROMMEMORY
+title: "_D3DKMT_CREATEDCFROMMEMORY"
+author: windows-driver-content
+description: The D3DKMT_CREATEDCFROMMEMORY structure describes parameters for creating the display context.
+old-location: display\d3dkmt_createdcfrommemory.htm
+old-project: display
+ms.assetid: 260fd894-fc5a-4a27-ac35-3f1b145b52b7
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DKMT_CREATEDCFROMMEMORY structure [Display Devices], OpenGL_Structs_b56e280f-e29b-4781-942a-a36024786d9e.xml, _D3DKMT_CREATEDCFROMMEMORY, d3dkmthk/D3DKMT_CREATEDCFROMMEMORY, D3DKMT_CREATEDCFROMMEMORY, display.d3dkmt_createdcfrommemory
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmthk.h
+apiname:
+-	D3DKMT_CREATEDCFROMMEMORY
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_CREATEDCFROMMEMORY
 ---
 
 # _D3DKMT_CREATEDCFROMMEMORY structure

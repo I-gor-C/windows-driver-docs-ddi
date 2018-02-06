@@ -1,41 +1,46 @@
 ---
-UID : NF:fltkernel.FltCbdqEnable
-title : FltCbdqEnable function
-author : windows-driver-content
-description : FltCbdqEnable enables a callback data queue that was disabled by a previous call to FltCbdqDisable.
-old-location : ifsk\fltcbdqenable.htm
-old-project : ifsk
-ms.assetid : cc9167cc-366e-4824-9968-1e2895a61a0c
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : FltCbdqEnable, FltCbdqEnable function [Installable File System Drivers], ifsk.fltcbdqenable, FltApiRef_a_to_d_518b7b11-d2cd-4d69-9191-da63831da3bd.xml, fltkernel/FltCbdqEnable
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : fltkernel.h
-req.include-header : Fltkernel.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : See Remarks section
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : EXpsFontRestriction
+UID: NF:fltkernel.FltCbdqEnable
+title: FltCbdqEnable function
+author: windows-driver-content
+description: FltCbdqEnable enables a callback data queue that was disabled by a previous call to FltCbdqDisable.
+old-location: ifsk\fltcbdqenable.htm
+old-project: ifsk
+ms.assetid: cc9167cc-366e-4824-9968-1e2895a61a0c
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: FltCbdqEnable, FltCbdqEnable function [Installable File System Drivers], ifsk.fltcbdqenable, FltApiRef_a_to_d_518b7b11-d2cd-4d69-9191-da63831da3bd.xml, fltkernel/FltCbdqEnable
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: fltkernel.h
+req.include-header: Fltkernel.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: See Remarks section
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	fltkernel.h
+apiname:
+-	FltCbdqEnable
+product: Windows
+targetos: Windows
+req.typenames: EXpsFontRestriction
 ---
 
 

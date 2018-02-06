@@ -1,42 +1,47 @@
 ---
-UID : NC:vhf.EVT_VHF_ASYNC_OPERATION
-title : EVT_VHF_ASYNC_OPERATION
-author : windows-driver-content
-description : The HID source driver implements this event callback if it wants to support one of the four asynchronous operation to get and set HID reports.
-old-location : hid\evtvhfasyncoperation.htm
-old-project : hid
-ms.assetid : C42174FE-202F-405D-840B-8613762F43AC
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : hid.evtvhfasyncoperation, EvtVhfAsyncOperation callback function [Human Input Devices], EvtVhfAsyncOperation, EVT_VHF_ASYNC_OPERATION, EVT_VHF_ASYNC_OPERATION, vhf/EvtVhfAsyncOperation
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : vhf.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : None supported
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR, *PUSB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR
-req.product : Windows 10 or later.
+UID: NC:vhf.EVT_VHF_ASYNC_OPERATION
+title: EVT_VHF_ASYNC_OPERATION
+author: windows-driver-content
+description: The HID source driver implements this event callback if it wants to support one of the four asynchronous operation to get and set HID reports.
+old-location: hid\evtvhfasyncoperation.htm
+old-project: hid
+ms.assetid: C42174FE-202F-405D-840B-8613762F43AC
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: hid.evtvhfasyncoperation, EvtVhfAsyncOperation callback function [Human Input Devices], EvtVhfAsyncOperation, EVT_VHF_ASYNC_OPERATION, EVT_VHF_ASYNC_OPERATION, vhf/EvtVhfAsyncOperation
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: vhf.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: None supported
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	vhf.h
+apiname:
+-	EvtVhfAsyncOperation
+product: Windows
+targetos: Windows
+req.typenames: USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR, *PUSB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR
+req.product: Windows 10 or later.
 ---
 
 

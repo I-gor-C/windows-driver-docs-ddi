@@ -1,42 +1,47 @@
 ---
-UID : NC:wdfinterrupt.EVT_WDF_INTERRUPT_ISR
-title : EVT_WDF_INTERRUPT_ISR
-author : windows-driver-content
-description : A driver's EvtInterruptIsr event callback function services a hardware interrupt.
-old-location : wdf\evtinterruptisr.htm
-old-project : wdf
-ms.assetid : 6f28a66a-9c17-4020-bfe2-295c22af6ba7
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.evtinterruptisr, EvtInterruptIsr callback function, EvtInterruptIsr, EVT_WDF_INTERRUPT_ISR, EVT_WDF_INTERRUPT_ISR, wdfinterrupt/EvtInterruptIsr, DFInterruptObjectRef_0a8902c4-d292-418f-bab3-d7fc36d69fd5.xml, kmdf.evtinterruptisr
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdfinterrupt.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : "(See Remarks section.)"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDF_COINSTALLER_INSTALL_OPTIONS, WDF_COINSTALLER_INSTALL_OPTIONS"
-req.product : Windows 10 or later.
+UID: NC:wdfinterrupt.EVT_WDF_INTERRUPT_ISR
+title: EVT_WDF_INTERRUPT_ISR
+author: windows-driver-content
+description: A driver's EvtInterruptIsr event callback function services a hardware interrupt.
+old-location: wdf\evtinterruptisr.htm
+old-project: wdf
+ms.assetid: 6f28a66a-9c17-4020-bfe2-295c22af6ba7
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.evtinterruptisr, EvtInterruptIsr callback function, EvtInterruptIsr, EVT_WDF_INTERRUPT_ISR, EVT_WDF_INTERRUPT_ISR, wdfinterrupt/EvtInterruptIsr, DFInterruptObjectRef_0a8902c4-d292-418f-bab3-d7fc36d69fd5.xml, kmdf.evtinterruptisr
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdfinterrupt.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: "(See Remarks section.)"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Wdfinterrupt.h
+apiname:
+-	EvtInterruptIsr
+product: Windows
+targetos: Windows
+req.typenames: "*PWDF_COINSTALLER_INSTALL_OPTIONS, WDF_COINSTALLER_INSTALL_OPTIONS"
+req.product: Windows 10 or later.
 ---
 
 

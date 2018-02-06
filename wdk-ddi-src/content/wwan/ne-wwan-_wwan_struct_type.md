@@ -1,42 +1,47 @@
 ---
-UID : NE:wwan._WWAN_STRUCT_TYPE
-title : "_WWAN_STRUCT_TYPE"
-author : windows-driver-content
-description : The WWAN_STRUCT_TYPE enumeration lists the different types of the list elements that follow the WWAN_LIST_HEADER object in memory.
-old-location : netvista\wwan_struct_type.htm
-old-project : netvista
-ms.assetid : 43729964-9338-45ab-ad59-406176c1ae9f
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : wwan/WwanStructReserved3, WwanStructContext, _WWAN_STRUCT_TYPE, netvista.wwan_struct_type, wwan/WWAN_STRUCT_TYPE, WwanStructTN, WwanStructSmsCdma, wwan/WwanStructMax, WwanStructReserved0, WwanStructReserved3, WwanStructDeviceCellularClass, WWAN_STRUCT_TYPE, WWAN_STRUCT_TYPE enumeration [Network Drivers Starting with Windows Vista], WwanStructProvider2, wwan/WwanStructContext, wwan/WwanStructDeviceServiceEntry, wwan/WwanStructDeviceCellularClass, wwan/WwanStructTN, wwan/WwanStructReserved0, WwanStructReserved2, wwan/WwanStructProvider2, PWWAN_STRUCT_TYPE enumeration pointer [Network Drivers Starting with Windows Vista], wwan/WwanStructProvider, wwan/WwanStructReserved1, WwanStructDeviceServiceEntry, WwanStructDeviceServiceCommandId, wwan/PWWAN_STRUCT_TYPE, WwanStructProvider, wwan/WwanStructSmsPdu, wwan/WwanStructDeviceServiceCommandId, *PWWAN_STRUCT_TYPE, WwanStructMax, wwan/WwanStructReserved2, WwanStructReserved1, WwanStructDeviceServiceGuid, PWWAN_STRUCT_TYPE, wwan/WwanStructDeviceServiceGuid, wwan/WwanStructSmsCdma, WwanStructSmsPdu, WwanRef_6b201902-91a4-45ee-bc26-2fd321ff7d8c.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : wwan.h
-req.include-header : Wwan.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 8 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WWAN_STRUCT_TYPE, *PWWAN_STRUCT_TYPE
-req.product : Windows 10 or later.
+UID: NE:wwan._WWAN_STRUCT_TYPE
+title: "_WWAN_STRUCT_TYPE"
+author: windows-driver-content
+description: The WWAN_STRUCT_TYPE enumeration lists the different types of the list elements that follow the WWAN_LIST_HEADER object in memory.
+old-location: netvista\wwan_struct_type.htm
+old-project: netvista
+ms.assetid: 43729964-9338-45ab-ad59-406176c1ae9f
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: wwan/WwanStructReserved3, WwanStructContext, _WWAN_STRUCT_TYPE, netvista.wwan_struct_type, wwan/WWAN_STRUCT_TYPE, WwanStructTN, WwanStructSmsCdma, wwan/WwanStructMax, WwanStructReserved0, WwanStructReserved3, WwanStructDeviceCellularClass, WWAN_STRUCT_TYPE, WWAN_STRUCT_TYPE enumeration [Network Drivers Starting with Windows Vista], WwanStructProvider2, wwan/WwanStructContext, wwan/WwanStructDeviceServiceEntry, wwan/WwanStructDeviceCellularClass, wwan/WwanStructTN, wwan/WwanStructReserved0, WwanStructReserved2, wwan/WwanStructProvider2, PWWAN_STRUCT_TYPE enumeration pointer [Network Drivers Starting with Windows Vista], wwan/WwanStructProvider, wwan/WwanStructReserved1, WwanStructDeviceServiceEntry, WwanStructDeviceServiceCommandId, wwan/PWWAN_STRUCT_TYPE, WwanStructProvider, wwan/WwanStructSmsPdu, wwan/WwanStructDeviceServiceCommandId, *PWWAN_STRUCT_TYPE, WwanStructMax, wwan/WwanStructReserved2, WwanStructReserved1, WwanStructDeviceServiceGuid, PWWAN_STRUCT_TYPE, wwan/WwanStructDeviceServiceGuid, wwan/WwanStructSmsCdma, WwanStructSmsPdu, WwanRef_6b201902-91a4-45ee-bc26-2fd321ff7d8c.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: wwan.h
+req.include-header: Wwan.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 8 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wwan.h
+apiname:
+-	WWAN_STRUCT_TYPE
+product: Windows
+targetos: Windows
+req.typenames: WWAN_STRUCT_TYPE, *PWWAN_STRUCT_TYPE
+req.product: Windows 10 or later.
 ---
 
 # _WWAN_STRUCT_TYPE Enumeration
@@ -67,15 +72,15 @@ typedef enum _WWAN_STRUCT_TYPE {
 ## Constants
 
 <table>
-
-<tr>
-<td>WwanStructCellularClass</td>
-<td></td>
-</tr>
-
-<tr>
-<td>WwanStructContext</td>
-<td>The elements are of type 
+            
+                <tr>
+                    <td>WwanStructCellularClass</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WwanStructContext</td>
+                    <td>The elements are of type 
      <a href="..\wwan\ns-wwan-_wwan_context.md">WWAN_CONTEXT</a>.
      
 
@@ -83,59 +88,59 @@ typedef enum _WWAN_STRUCT_TYPE {
 <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/network/oid-wwan-provisioned-contexts">
      OID_WWAN_PROVISIONED_CONTEXTS</a> uses this value to represent a list of provisioned
      contexts.</td>
-</tr>
-
-<tr>
-<td>WwanStructContextV2</td>
-<td></td>
-</tr>
-
-<tr>
-<td>WwanStructDeviceServiceCommandId</td>
-<td>The elements are of type ULONG.</td>
-</tr>
-
-<tr>
-<td>WwanStructDeviceServiceEntry</td>
-<td>The elements are of type 
+                </tr>
+            
+                <tr>
+                    <td>WwanStructContextV2</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WwanStructDeviceServiceCommandId</td>
+                    <td>The elements are of type ULONG.</td>
+                </tr>
+            
+                <tr>
+                    <td>WwanStructDeviceServiceEntry</td>
+                    <td>The elements are of type 
      <a href="..\wwan\ns-wwan-_wwan_device_service_entry.md">WWAN_DEVICE_SERVICE_ENTRY</a>.</td>
-</tr>
-
-<tr>
-<td>WwanStructDeviceServiceGuid</td>
-<td>The elements are of type 
+                </tr>
+            
+                <tr>
+                    <td>WwanStructDeviceServiceGuid</td>
+                    <td>The elements are of type 
      GUID.</td>
-</tr>
-
-<tr>
-<td>WwanStructDeviceSlotMap</td>
-<td></td>
-</tr>
-
-<tr>
-<td>WwanStructMax</td>
-<td>The total number of supported types.</td>
-</tr>
-
-<tr>
-<td>WwanStructNetworkBlacklistProvider</td>
-<td></td>
-</tr>
-
-<tr>
-<td>WwanStructProvider</td>
-<td>The elements are of type 
+                </tr>
+            
+                <tr>
+                    <td>WwanStructDeviceSlotMap</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WwanStructMax</td>
+                    <td>The total number of supported types.</td>
+                </tr>
+            
+                <tr>
+                    <td>WwanStructNetworkBlacklistProvider</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WwanStructProvider</td>
+                    <td>The elements are of type 
      <a href="..\wwan\ns-wwan-_wwan_provider.md">WWAN_PROVIDER</a>.
      
 
 Both <a href="https://msdn.microsoft.com/library/windows/hardware/ff569830">OID_WWAN_PREFERRED_PROVIDERS</a> and 
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff569843">OID_WWAN_VISIBLE_PROVIDERS</a> use this
      value to represent a list of network providers for WWAN 1.0 miniport drivers.</td>
-</tr>
-
-<tr>
-<td>WwanStructProvider2</td>
-<td>The elements are of type 
+                </tr>
+            
+                <tr>
+                    <td>WwanStructProvider2</td>
+                    <td>The elements are of type 
      <a href="..\wwan\ns-wwan-_wwan_provider2.md">WWAN_PROVIDER2</a>.
 
 The following OIDs use this value to represent a list of network providers for WWAN 2.0 miniport drivers:
@@ -150,80 +155,80 @@ The following OIDs use this value to represent a list of network providers for W
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh831868">OID_WWAN_PREFERRED_MULTICARRIER_PROVIDERS</a></td>
-</tr>
-
-<tr>
-<td>WwanStructRegisterAcquisitionOrder</td>
-<td></td>
-</tr>
-
-<tr>
-<td>WwanStructRegistrationState</td>
-<td></td>
-</tr>
-
-<tr>
-<td>WwanStructReserved0</td>
-<td>The value is reserved for future use. Do not use.</td>
-</tr>
-
-<tr>
-<td>WwanStructReserved1</td>
-<td>The value is reserved for future use. Do not use.</td>
-</tr>
-
-<tr>
-<td>WwanStructReserved2</td>
-<td>The value is reserved for future use. Do not use.</td>
-</tr>
-
-<tr>
-<td>WwanStructReserved3</td>
-<td>The value is reserved for future use. Do not use.</td>
-</tr>
-
-<tr>
-<td>WwanStructSarConfig</td>
-<td></td>
-</tr>
-
-<tr>
-<td>WwanStructSignalState</td>
-<td></td>
-</tr>
-
-<tr>
-<td>WwanStructSmsCdma</td>
-<td>The elements are of type 
+                </tr>
+            
+                <tr>
+                    <td>WwanStructRegisterAcquisitionOrder</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WwanStructRegistrationState</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WwanStructReserved0</td>
+                    <td>The value is reserved for future use. Do not use.</td>
+                </tr>
+            
+                <tr>
+                    <td>WwanStructReserved1</td>
+                    <td>The value is reserved for future use. Do not use.</td>
+                </tr>
+            
+                <tr>
+                    <td>WwanStructReserved2</td>
+                    <td>The value is reserved for future use. Do not use.</td>
+                </tr>
+            
+                <tr>
+                    <td>WwanStructReserved3</td>
+                    <td>The value is reserved for future use. Do not use.</td>
+                </tr>
+            
+                <tr>
+                    <td>WwanStructSarConfig</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WwanStructSignalState</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WwanStructSmsCdma</td>
+                    <td>The elements are of type 
      <a href="..\wwan\ns-wwan-_wwan_sms_cdma_record.md">WWAN_SMS_CDMA_RECORD</a>.</td>
-</tr>
-
-<tr>
-<td>WwanStructSmsPdu</td>
-<td>The elements are of type 
+                </tr>
+            
+                <tr>
+                    <td>WwanStructSmsPdu</td>
+                    <td>The elements are of type 
      <a href="..\wwan\ns-wwan-_wwan_sms_pdu_record.md">WWAN_SMS_PDU_RECORD</a>.</td>
-</tr>
-
-<tr>
-<td>WwanStructTN</td>
-<td>The elements are NULL-terminated strings of Telephone Number (TNs), with each string having
+                </tr>
+            
+                <tr>
+                    <td>WwanStructTN</td>
+                    <td>The elements are NULL-terminated strings of Telephone Number (TNs), with each string having
      WWAN_TN_LEN characters.
      
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569833">OID_WWAN_READY_INFO</a> uses this value to
      represent a list of TNs assigned to the device.</td>
-</tr>
-
-<tr>
-<td>WwanStructUiccApplication</td>
-<td></td>
-</tr>
-
-<tr>
-<td>WwanStructUiccTerminalCapability</td>
-<td></td>
-</tr>
+                </tr>
+            
+                <tr>
+                    <td>WwanStructUiccApplication</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WwanStructUiccTerminalCapability</td>
+                    <td></td>
+                </tr>
 </table>
 
 
@@ -233,9 +238,9 @@ The following OIDs use this value to represent a list of network providers for W
 | **Windows version** | Available in Windows 8 and later versions of Windows. Available in Windows 8 and later versions of Windows. |
 | **Header** | wwan.h (include Wwan.h) |
 
-## See Also
+    ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff569843">OID_WWAN_VISIBLE_PROVIDERS</a>
+        <a href="https://msdn.microsoft.com/library/windows/hardware/ff569843">OID_WWAN_VISIBLE_PROVIDERS</a>
 
 <a href="..\wwan\ns-wwan-_wwan_sms_pdu_record.md">WWAN_SMS_PDU_RECORD</a>
 

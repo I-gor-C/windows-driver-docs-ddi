@@ -1,41 +1,47 @@
 ---
-UID : NF:drmk.DrmAddContentHandlers
-title : DrmAddContentHandlers function
-author : windows-driver-content
-description : The DrmAddContentHandlers function provides the system with a list of functions that handle protected content.
-old-location : audio\drmaddcontenthandlers.htm
-old-project : audio
-ms.assetid : da2ec371-052a-4ea1-9336-9e32df936227
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : audio.drmaddcontenthandlers, DrmAddContentHandlers, drmk/DrmAddContentHandlers, aud-prop2_94f530fb-9766-4d61-a002-b1c7bd5183d5.xml, DrmAddContentHandlers function [Audio Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : drmk.h
-req.include-header : Drmk.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Drmk.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDI_TX_METADATA, *PWDI_TX_METADATA
+UID: NF:drmk.DrmAddContentHandlers
+title: DrmAddContentHandlers function
+author: windows-driver-content
+description: The DrmAddContentHandlers function provides the system with a list of functions that handle protected content.
+old-location: audio\drmaddcontenthandlers.htm
+old-project: audio
+ms.assetid: da2ec371-052a-4ea1-9336-9e32df936227
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: audio.drmaddcontenthandlers, DrmAddContentHandlers, drmk/DrmAddContentHandlers, aud-prop2_94f530fb-9766-4d61-a002-b1c7bd5183d5.xml, DrmAddContentHandlers function [Audio Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: drmk.h
+req.include-header: Drmk.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Drmk.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Drmk.lib
+-	Drmk.dll
+apiname:
+-	DrmAddContentHandlers
+product: Windows
+targetos: Windows
+req.typenames: WDI_TX_METADATA, *PWDI_TX_METADATA
 ---
 
 

@@ -1,42 +1,47 @@
 ---
-UID : NC:wdfdevice.EVT_WDF_DEVICE_SELF_MANAGED_IO_RESTART
-title : EVT_WDF_DEVICE_SELF_MANAGED_IO_RESTART
-author : windows-driver-content
-description : A driver's EvtDeviceSelfManagedIoRestart event callback function restarts a device's self-managed I/O operations.
-old-location : wdf\evtdeviceselfmanagediorestart.htm
-old-project : wdf
-ms.assetid : 13d7fbc6-6f93-4ef9-abd4-f2adc4e8e23a
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.evtdeviceselfmanagediorestart, EvtDeviceSelfManagedIoRestart callback function, EvtDeviceSelfManagedIoRestart, EVT_WDF_DEVICE_SELF_MANAGED_IO_RESTART, EVT_WDF_DEVICE_SELF_MANAGED_IO_RESTART, wdfdevice/EvtDeviceSelfManagedIoRestart, DFDeviceObjectGeneralRef_31761962-577a-4a53-8b55-226801f42960.xml, kmdf.evtdeviceselfmanagediorestart
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdfdevice.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_DEVICE_SHUTDOWN_FLAGS
-req.product : Windows 10 or later.
+UID: NC:wdfdevice.EVT_WDF_DEVICE_SELF_MANAGED_IO_RESTART
+title: EVT_WDF_DEVICE_SELF_MANAGED_IO_RESTART
+author: windows-driver-content
+description: A driver's EvtDeviceSelfManagedIoRestart event callback function restarts a device's self-managed I/O operations.
+old-location: wdf\evtdeviceselfmanagediorestart.htm
+old-project: wdf
+ms.assetid: 13d7fbc6-6f93-4ef9-abd4-f2adc4e8e23a
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.evtdeviceselfmanagediorestart, EvtDeviceSelfManagedIoRestart callback function, EvtDeviceSelfManagedIoRestart, EVT_WDF_DEVICE_SELF_MANAGED_IO_RESTART, EVT_WDF_DEVICE_SELF_MANAGED_IO_RESTART, wdfdevice/EvtDeviceSelfManagedIoRestart, DFDeviceObjectGeneralRef_31761962-577a-4a53-8b55-226801f42960.xml, kmdf.evtdeviceselfmanagediorestart
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdfdevice.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Wdfdevice.h
+apiname:
+-	EvtDeviceSelfManagedIoRestart
+product: Windows
+targetos: Windows
+req.typenames: WDF_DEVICE_SHUTDOWN_FLAGS
+req.product: Windows 10 or later.
 ---
 
 

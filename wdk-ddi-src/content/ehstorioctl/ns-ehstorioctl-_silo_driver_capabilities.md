@@ -1,41 +1,46 @@
 ---
-UID : NS:ehstorioctl._SILO_DRIVER_CAPABILITIES
-title : "_SILO_DRIVER_CAPABILITIES"
-author : windows-driver-content
-description : This structure is used to specify the capabilities and support for IOCTL redirection of a storage silo driver. SILO_DRIVER_CAPABILITIES is included in the system buffer of an IOCTL_EHSTOR_DRIVER_REPORT_CAPABILITIES request.
-old-location : storage\silo_driver_capabilities.htm
-old-project : storage
-ms.assetid : E2CD35A6-0FF2-4ABA-850E-12683C5F0D8D
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.silo_driver_capabilities, SILO_DRIVER_CAPABILITIES, CAP_ON_DEMAND_AUTHENTICATION, *PSILO_DRIVER_CAPABILITIES, PSILO_DRIVER_CAPABILITIES, ehstorioctl/SILO_DRIVER_CAPABILITIES, ehstorioctl/PSILO_DRIVER_CAPABILITIES, CAP_BANDING_SUPPORT, _SILO_DRIVER_CAPABILITIES, PSILO_DRIVER_CAPABILITIES structure pointer [Storage Devices], SILO_DRIVER_CAPABILITIES structure [Storage Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ehstorioctl.h
-req.include-header : EhStorIoctl.h
-req.target-type : Windows
-req.target-min-winverclnt : Available starting with Windows 8
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SILO_DRIVER_CAPABILITIES, *PSILO_DRIVER_CAPABILITIES
+UID: NS:ehstorioctl._SILO_DRIVER_CAPABILITIES
+title: "_SILO_DRIVER_CAPABILITIES"
+author: windows-driver-content
+description: This structure is used to specify the capabilities and support for IOCTL redirection of a storage silo driver. SILO_DRIVER_CAPABILITIES is included in the system buffer of an IOCTL_EHSTOR_DRIVER_REPORT_CAPABILITIES request.
+old-location: storage\silo_driver_capabilities.htm
+old-project: storage
+ms.assetid: E2CD35A6-0FF2-4ABA-850E-12683C5F0D8D
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.silo_driver_capabilities, SILO_DRIVER_CAPABILITIES, CAP_ON_DEMAND_AUTHENTICATION, *PSILO_DRIVER_CAPABILITIES, PSILO_DRIVER_CAPABILITIES, ehstorioctl/SILO_DRIVER_CAPABILITIES, ehstorioctl/PSILO_DRIVER_CAPABILITIES, CAP_BANDING_SUPPORT, _SILO_DRIVER_CAPABILITIES, PSILO_DRIVER_CAPABILITIES structure pointer [Storage Devices], SILO_DRIVER_CAPABILITIES structure [Storage Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ehstorioctl.h
+req.include-header: EhStorIoctl.h
+req.target-type: Windows
+req.target-min-winverclnt: Available starting with Windows 8
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	EhStorIoctl.h
+apiname:
+-	SILO_DRIVER_CAPABILITIES
+product: Windows
+targetos: Windows
+req.typenames: SILO_DRIVER_CAPABILITIES, *PSILO_DRIVER_CAPABILITIES
 ---
 
 # _SILO_DRIVER_CAPABILITIES structure

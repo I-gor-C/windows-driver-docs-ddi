@@ -1,42 +1,47 @@
 ---
-UID : NE:rilapitypes.RILDMCONFIGINFOITEM
-title : RILDMCONFIGINFOITEM
-author : windows-driver-content
-description : This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
-old-location : netvista\rildmconfiginfoitem_2.htm
-old-project : netvista
-ms.assetid : b7239fae-253c-4ac9-ba96-8e10cce5598d
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : RILDMCONFIG_UDP_KEEPALIVE_TIMER, rilapitypes/RILDMCONFIG_RINGING_TIMER, RILDMCONFIGINFOITEM, rilapitypes/RILDMCONFIG_IMS_ROAMING_ENABLED, rilapitypes/RILDMCONFIG_MD5_AUTH, rilapitypes/RILDMCONFIG_RINGBACK_TIMER, rilapitypes/RILDMCONFIG_SIP_TIMER_F, RILDMCONFIG_1XRTT_FALLBACK_REDIAL_TIMER, rilapitypes/RILDMCONFIG_AMR_WB_ENABLE, RILDMCONFIG_RTC_INACTIVITY_TIMER, rilapitypes/RILDMCONFIG_RTC_INACTIVITY_TIMER, RILDMCONFIG_IMS_VIDEO_ENABLED, RILDMCONFIGINFOITEM enumeration [Network Drivers Starting with Windows Vista], RILDMCONFIG_IMS_NAI, RILDMCONFIG_REQUEST_CONTEXT, RILDMCONFIG_AMR_WB_ENABLE, rilapitypes/RILDMCONFIG_IMS_IRAT_REG_DELAY, RILDMCONFIG_MAX, RILDMCONFIG_PCSCF_PORT_NUMBER, RILDMCONFIG_AMR_WB_SRC_CTL_RATE, rilapitypes/RILDMCONFIG_MAX, RILDMCONFIG_EPDG_ADDRESS, rilapitypes/RILDMCONFIG_IMS_VOICE_ENABLED, RILDMCONFIG_IMS_VOICE_ENABLED, RILDMCONFIG_IMS_PRESENCE_ENABLED, rilapitypes/RILDMCONFIG_IMS_NW_ENABLED_FLAGS, RILDMCONFIG_IMS_NW_ENABLED_FLAGS, rilapitypes/RILDMCONFIG_IMS_XCAP_ENABLED, rilapitypes/RILDMCONFIG_RTT_MODE, rilapitypes/RILDMCONFIG_AMR_WB_MODE_SET, RILDMCONFIG_SMS_OVER_IP_NW_INDICATION, rilapitypes/RILDMCONFIG_SMS_OVER_IP_NW_INDICATION, rilapitypes/RILDMCONFIG_1XRTT_FALLBACK_REDIAL_ENABLE, rilapitypes/RILDMCONFIG_SIP_SESSION_TIMER_MIN, RILDMCONFIG_MULTIPARTY_SERVER, rilapitypes/RILDMCONFIG_VOWIFI_ENTITLEMENT_CHECK, RILDMCONFIG_MD5_AUTH, RILDMCONFIG_SIP_TIMER_T2, rilapitypes/RILDMCONFIG_AMR_MODE_SET, RILDMCONFIG_RINGING_TIMER, rilapitypes/RILDMCONFIG_EPDG_ADDRESS, rilapitypes/RILDMCONFIG_PCSCF_ADDRESS, rilapitypes/RILDMCONFIG_AMR_WB_SRC_CTL_RATE, RILDMCONFIG_IMS_IRAT_REG_DELAY, RILDMCONFIG_1XRTT_FALLBACK_REDIAL_ENABLE, RILDMCONFIG_AMR_MODE_SET, RILDMCONFIG_SIP_TIMER_F, rilapitypes/RILDMCONFIG_AMR_SRC_CTL_RATE, rilapitypes/RILDMCONFIG_IMS_VIDEO_ENABLED, RILDMCONFIG_IMS_TEST_MODE_STATUS, rilapitypes/RILDMCONFIG_SIP_TIMER_T2, rilapitypes/RILDMCONFIG_PCSCF_PORT_NUMBER, RILDMCONFIG_AMR_WB_MODE_SET, RILDMCONFIG_IMS_ROAMING_ENABLED, netvista.rildmconfiginfoitem_2, rilapitypes/RILDMCONFIG_SIP_SESSION_TIMER, RILDMCONFIG_AMR_SRC_CTL_RATE, rilapitypes/RILDMCONFIG_MULTIPARTY_SERVER, rilapitypes/RILDMCONFIG_DOMAIN_NAME, RILDMCONFIG_SIP_SESSION_TIMER, RILDMCONFIG_PCSCF_ADDRESS, rilapitypes/RILDMCONFIGINFOITEM, rilapitypes/RILDMCONFIG_REQUEST_CONTEXT, rilapitypes/RILDMCONFIG_IMS_NAI, rilapitypes/RILDMCONFIG_UDP_KEEPALIVE_TIMER, RILDMCONFIG_SMS_FORMAT_TYPE, rilapitypes/RILDMCONFIG_1XRTT_FALLBACK_REDIAL_TIMER, RILDMCONFIG_IMS_XCAP_ENABLED, rilapitypes/RILDMCONFIG_IMS_PRESENCE_ENABLED, RILDMCONFIG_RTT_MODE, RILDMCONFIG_SIP_SESSION_TIMER_MIN, rilapitypes/RILDMCONFIG_IMS_TEST_MODE_STATUS, RILDMCONFIG_VOWIFI_ENTITLEMENT_CHECK, rilapitypes/RILDMCONFIG_SMS_FORMAT_TYPE, RILDMCONFIG_RINGBACK_TIMER, RILDMCONFIG_DOMAIN_NAME
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : rilapitypes.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RILDMCONFIGINFOITEM
-req.product : Windows 10 or later.
+UID: NE:rilapitypes.RILDMCONFIGINFOITEM
+title: RILDMCONFIGINFOITEM
+author: windows-driver-content
+description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+old-location: netvista\rildmconfiginfoitem_2.htm
+old-project: netvista
+ms.assetid: b7239fae-253c-4ac9-ba96-8e10cce5598d
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: RILDMCONFIG_UDP_KEEPALIVE_TIMER, rilapitypes/RILDMCONFIG_RINGING_TIMER, RILDMCONFIGINFOITEM, rilapitypes/RILDMCONFIG_IMS_ROAMING_ENABLED, rilapitypes/RILDMCONFIG_MD5_AUTH, rilapitypes/RILDMCONFIG_RINGBACK_TIMER, rilapitypes/RILDMCONFIG_SIP_TIMER_F, RILDMCONFIG_1XRTT_FALLBACK_REDIAL_TIMER, rilapitypes/RILDMCONFIG_AMR_WB_ENABLE, RILDMCONFIG_RTC_INACTIVITY_TIMER, rilapitypes/RILDMCONFIG_RTC_INACTIVITY_TIMER, RILDMCONFIG_IMS_VIDEO_ENABLED, RILDMCONFIGINFOITEM enumeration [Network Drivers Starting with Windows Vista], RILDMCONFIG_IMS_NAI, RILDMCONFIG_REQUEST_CONTEXT, RILDMCONFIG_AMR_WB_ENABLE, rilapitypes/RILDMCONFIG_IMS_IRAT_REG_DELAY, RILDMCONFIG_MAX, RILDMCONFIG_PCSCF_PORT_NUMBER, RILDMCONFIG_AMR_WB_SRC_CTL_RATE, rilapitypes/RILDMCONFIG_MAX, RILDMCONFIG_EPDG_ADDRESS, rilapitypes/RILDMCONFIG_IMS_VOICE_ENABLED, RILDMCONFIG_IMS_VOICE_ENABLED, RILDMCONFIG_IMS_PRESENCE_ENABLED, rilapitypes/RILDMCONFIG_IMS_NW_ENABLED_FLAGS, RILDMCONFIG_IMS_NW_ENABLED_FLAGS, rilapitypes/RILDMCONFIG_IMS_XCAP_ENABLED, rilapitypes/RILDMCONFIG_RTT_MODE, rilapitypes/RILDMCONFIG_AMR_WB_MODE_SET, RILDMCONFIG_SMS_OVER_IP_NW_INDICATION, rilapitypes/RILDMCONFIG_SMS_OVER_IP_NW_INDICATION, rilapitypes/RILDMCONFIG_1XRTT_FALLBACK_REDIAL_ENABLE, rilapitypes/RILDMCONFIG_SIP_SESSION_TIMER_MIN, RILDMCONFIG_MULTIPARTY_SERVER, rilapitypes/RILDMCONFIG_VOWIFI_ENTITLEMENT_CHECK, RILDMCONFIG_MD5_AUTH, RILDMCONFIG_SIP_TIMER_T2, rilapitypes/RILDMCONFIG_AMR_MODE_SET, RILDMCONFIG_RINGING_TIMER, rilapitypes/RILDMCONFIG_EPDG_ADDRESS, rilapitypes/RILDMCONFIG_PCSCF_ADDRESS, rilapitypes/RILDMCONFIG_AMR_WB_SRC_CTL_RATE, RILDMCONFIG_IMS_IRAT_REG_DELAY, RILDMCONFIG_1XRTT_FALLBACK_REDIAL_ENABLE, RILDMCONFIG_AMR_MODE_SET, RILDMCONFIG_SIP_TIMER_F, rilapitypes/RILDMCONFIG_AMR_SRC_CTL_RATE, rilapitypes/RILDMCONFIG_IMS_VIDEO_ENABLED, RILDMCONFIG_IMS_TEST_MODE_STATUS, rilapitypes/RILDMCONFIG_SIP_TIMER_T2, rilapitypes/RILDMCONFIG_PCSCF_PORT_NUMBER, RILDMCONFIG_AMR_WB_MODE_SET, RILDMCONFIG_IMS_ROAMING_ENABLED, netvista.rildmconfiginfoitem_2, rilapitypes/RILDMCONFIG_SIP_SESSION_TIMER, RILDMCONFIG_AMR_SRC_CTL_RATE, rilapitypes/RILDMCONFIG_MULTIPARTY_SERVER, rilapitypes/RILDMCONFIG_DOMAIN_NAME, RILDMCONFIG_SIP_SESSION_TIMER, RILDMCONFIG_PCSCF_ADDRESS, rilapitypes/RILDMCONFIGINFOITEM, rilapitypes/RILDMCONFIG_REQUEST_CONTEXT, rilapitypes/RILDMCONFIG_IMS_NAI, rilapitypes/RILDMCONFIG_UDP_KEEPALIVE_TIMER, RILDMCONFIG_SMS_FORMAT_TYPE, rilapitypes/RILDMCONFIG_1XRTT_FALLBACK_REDIAL_TIMER, RILDMCONFIG_IMS_XCAP_ENABLED, rilapitypes/RILDMCONFIG_IMS_PRESENCE_ENABLED, RILDMCONFIG_RTT_MODE, RILDMCONFIG_SIP_SESSION_TIMER_MIN, rilapitypes/RILDMCONFIG_IMS_TEST_MODE_STATUS, RILDMCONFIG_VOWIFI_ENTITLEMENT_CHECK, rilapitypes/RILDMCONFIG_SMS_FORMAT_TYPE, RILDMCONFIG_RINGBACK_TIMER, RILDMCONFIG_DOMAIN_NAME
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: rilapitypes.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	rilapitypes.h
+apiname:
+-	RILDMCONFIGINFOITEM
+product: Windows
+targetos: Windows
+req.typenames: RILDMCONFIGINFOITEM
+req.product: Windows 10 or later.
 ---
 
 # RILDMCONFIGINFOITEM Enumeration
@@ -87,191 +92,191 @@ typedef enum _RILDMCONFIGINFOITEM {
 ## Constants
 
 <table>
-
-<tr>
-<td>RILDMCONFIG_1XRTT_FALLBACK_REDIAL_ENABLE</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RILDMCONFIG_1XRTT_FALLBACK_REDIAL_TIMER</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RILDMCONFIG_AMR_MODE_SET</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RILDMCONFIG_AMR_SRC_CTL_RATE</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RILDMCONFIG_AMR_WB_ENABLE</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RILDMCONFIG_AMR_WB_MODE_SET</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RILDMCONFIG_AMR_WB_SRC_CTL_RATE</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RILDMCONFIG_DOMAIN_NAME</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RILDMCONFIG_EPDG_ADDRESS</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RILDMCONFIG_IMS_IRAT_REG_DELAY</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RILDMCONFIG_IMS_NAI</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RILDMCONFIG_IMS_NW_ENABLED_FLAGS</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RILDMCONFIG_IMS_PRESENCE_ENABLED</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RILDMCONFIG_IMS_ROAMING_ENABLED</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RILDMCONFIG_IMS_TEST_MODE_STATUS</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RILDMCONFIG_IMS_VIDEO_ENABLED</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RILDMCONFIG_IMS_VOICE_ENABLED</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RILDMCONFIG_IMS_XCAP_ENABLED</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RILDMCONFIG_MAX</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RILDMCONFIG_MD5_AUTH</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RILDMCONFIG_MULTIPARTY_SERVER</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RILDMCONFIG_PCSCF_ADDRESS</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RILDMCONFIG_PCSCF_PORT_NUMBER</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RILDMCONFIG_REQUEST_CONTEXT</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RILDMCONFIG_RINGBACK_TIMER</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RILDMCONFIG_RINGING_TIMER</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RILDMCONFIG_RTC_INACTIVITY_TIMER</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RILDMCONFIG_RTT_MODE</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RILDMCONFIG_SIP_SESSION_TIMER</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RILDMCONFIG_SIP_SESSION_TIMER_MIN</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RILDMCONFIG_SIP_TIMER_F</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RILDMCONFIG_SIP_TIMER_T1</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RILDMCONFIG_SIP_TIMER_T2</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RILDMCONFIG_SMS_FORMAT_TYPE</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RILDMCONFIG_SMS_OVER_IP_NW_INDICATION</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RILDMCONFIG_UDP_KEEPALIVE_TIMER</td>
-<td></td>
-</tr>
-
-<tr>
-<td>RILDMCONFIG_VOWIFI_ENTITLEMENT_CHECK</td>
-<td></td>
-</tr>
+            
+                <tr>
+                    <td>RILDMCONFIG_1XRTT_FALLBACK_REDIAL_ENABLE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RILDMCONFIG_1XRTT_FALLBACK_REDIAL_TIMER</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RILDMCONFIG_AMR_MODE_SET</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RILDMCONFIG_AMR_SRC_CTL_RATE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RILDMCONFIG_AMR_WB_ENABLE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RILDMCONFIG_AMR_WB_MODE_SET</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RILDMCONFIG_AMR_WB_SRC_CTL_RATE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RILDMCONFIG_DOMAIN_NAME</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RILDMCONFIG_EPDG_ADDRESS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RILDMCONFIG_IMS_IRAT_REG_DELAY</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RILDMCONFIG_IMS_NAI</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RILDMCONFIG_IMS_NW_ENABLED_FLAGS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RILDMCONFIG_IMS_PRESENCE_ENABLED</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RILDMCONFIG_IMS_ROAMING_ENABLED</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RILDMCONFIG_IMS_TEST_MODE_STATUS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RILDMCONFIG_IMS_VIDEO_ENABLED</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RILDMCONFIG_IMS_VOICE_ENABLED</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RILDMCONFIG_IMS_XCAP_ENABLED</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RILDMCONFIG_MAX</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RILDMCONFIG_MD5_AUTH</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RILDMCONFIG_MULTIPARTY_SERVER</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RILDMCONFIG_PCSCF_ADDRESS</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RILDMCONFIG_PCSCF_PORT_NUMBER</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RILDMCONFIG_REQUEST_CONTEXT</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RILDMCONFIG_RINGBACK_TIMER</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RILDMCONFIG_RINGING_TIMER</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RILDMCONFIG_RTC_INACTIVITY_TIMER</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RILDMCONFIG_RTT_MODE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RILDMCONFIG_SIP_SESSION_TIMER</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RILDMCONFIG_SIP_SESSION_TIMER_MIN</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RILDMCONFIG_SIP_TIMER_F</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RILDMCONFIG_SIP_TIMER_T1</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RILDMCONFIG_SIP_TIMER_T2</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RILDMCONFIG_SMS_FORMAT_TYPE</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RILDMCONFIG_SMS_OVER_IP_NW_INDICATION</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RILDMCONFIG_UDP_KEEPALIVE_TIMER</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>RILDMCONFIG_VOWIFI_ENTITLEMENT_CHECK</td>
+                    <td></td>
+                </tr>
 </table>
 
 

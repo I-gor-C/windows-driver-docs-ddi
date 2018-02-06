@@ -1,42 +1,48 @@
 ---
-UID : NF:wdm.ZwSinglePhaseReject
-title : ZwSinglePhaseReject function
-author : windows-driver-content
-description : The ZwSinglePhaseReject routine informs KTM that the calling resource manager will not support single-phase commit operations for a specified enlistment.
-old-location : kernel\zwsinglephasereject.htm
-old-project : kernel
-ms.assetid : a653a980-8ad6-46e7-ad9d-f060ab333731
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/NtSinglePhaseReject, ZwSinglePhaseReject, kernel.zwsinglephasereject, wdm/ZwSinglePhaseReject, ZwSinglePhaseReject routine [Kernel-Mode Driver Architecture], NtSinglePhaseReject, ktm_ref_9bc69cd9-19ee-4f3e-b5c8-fea8ddb05e17.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later operating system versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ZwSinglePhaseReject
+title: ZwSinglePhaseReject function
+author: windows-driver-content
+description: The ZwSinglePhaseReject routine informs KTM that the calling resource manager will not support single-phase commit operations for a specified enlistment.
+old-location: kernel\zwsinglephasereject.htm
+old-project: kernel
+ms.assetid: a653a980-8ad6-46e7-ad9d-f060ab333731
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/NtSinglePhaseReject, ZwSinglePhaseReject, kernel.zwsinglephasereject, wdm/ZwSinglePhaseReject, ZwSinglePhaseReject routine [Kernel-Mode Driver Architecture], NtSinglePhaseReject, ktm_ref_9bc69cd9-19ee-4f3e-b5c8-fea8ddb05e17.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later operating system versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ZwSinglePhaseReject
+-	NtSinglePhaseReject
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,48 @@
 ---
-UID : NF:dbgeng.IDebugSymbols3.AddSymbolOptions
-title : IDebugSymbols3::AddSymbolOptions method
-author : windows-driver-content
-description : The AddSymbolOptions method turns on some of the engine's global symbol options.
-old-location : debugger\addsymboloptions.htm
-old-project : debugger
-ms.assetid : 952b4a7b-2713-4d7a-b70e-4fd1867bc096
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugSymbols interface [Windows Debugging], AddSymbolOptions method, AddSymbolOptions, debugger.addsymboloptions, AddSymbolOptions method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols::AddSymbolOptions, dbgeng/IDebugSymbols3::AddSymbolOptions, IDebugSymbols3, AddSymbolOptions method [Windows Debugging], AddSymbolOptions method [Windows Debugging], IDebugSymbols2 interface, AddSymbolOptions method [Windows Debugging], IDebugSymbols interface, IDebugSymbols_a7ffc5ae-fc9e-4298-a351-95871b8fd12e.xml, IDebugSymbols2 interface [Windows Debugging], AddSymbolOptions method, dbgeng/IDebugSymbols::AddSymbolOptions, dbgeng/IDebugSymbols2::AddSymbolOptions, IDebugSymbols2::AddSymbolOptions, IDebugSymbols3 interface [Windows Debugging], AddSymbolOptions method, IDebugSymbols3::AddSymbolOptions
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h, Dbghelp.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugSymbols3.AddSymbolOptions
+title: IDebugSymbols3::AddSymbolOptions method
+author: windows-driver-content
+description: The AddSymbolOptions method turns on some of the engine's global symbol options.
+old-location: debugger\addsymboloptions.htm
+old-project: debugger
+ms.assetid: 952b4a7b-2713-4d7a-b70e-4fd1867bc096
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugSymbols interface [Windows Debugging], AddSymbolOptions method, AddSymbolOptions, debugger.addsymboloptions, AddSymbolOptions method [Windows Debugging], IDebugSymbols3 interface, IDebugSymbols::AddSymbolOptions, dbgeng/IDebugSymbols3::AddSymbolOptions, IDebugSymbols3, AddSymbolOptions method [Windows Debugging], AddSymbolOptions method [Windows Debugging], IDebugSymbols2 interface, AddSymbolOptions method [Windows Debugging], IDebugSymbols interface, IDebugSymbols_a7ffc5ae-fc9e-4298-a351-95871b8fd12e.xml, IDebugSymbols2 interface [Windows Debugging], AddSymbolOptions method, dbgeng/IDebugSymbols::AddSymbolOptions, dbgeng/IDebugSymbols2::AddSymbolOptions, IDebugSymbols2::AddSymbolOptions, IDebugSymbols3 interface [Windows Debugging], AddSymbolOptions method, IDebugSymbols3::AddSymbolOptions
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h, Dbghelp.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	Dbgeng.h
+apiname:
+-	IDebugSymbols.AddSymbolOptions
+-	IDebugSymbols2.AddSymbolOptions
+-	IDebugSymbols3.AddSymbolOptions
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:dxgiddi._DXGI_DDI_ARG_RECLAIMRESOURCES
-title : "_DXGI_DDI_ARG_RECLAIMRESOURCES"
-author : windows-driver-content
-description : Describes video memory resources that are to be reclaimed and that the user-mode display driver previously offered for reuse. Used with the pfnReclaimResources function by Windows Display Driver Model (WDDM) 1.2 and later user-mode display drivers.
-old-location : display\dxgi_ddi_arg_reclaimresources.htm
-old-project : display
-ms.assetid : 43e34157-2cf1-4e2c-bcd8-c4425e89fb0f
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : dxgiddi/DXGI_DDI_ARG_RECLAIMRESOURCES, display.dxgi_ddi_arg_reclaimresources, DXGI_DDI_ARG_RECLAIMRESOURCES structure [Display Devices], DXGI_DDI_ARG_RECLAIMRESOURCES, _DXGI_DDI_ARG_RECLAIMRESOURCES
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : dxgiddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8,WDDM 1.2 and later
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGI_DDI_ARG_RECLAIMRESOURCES
+UID: NS:dxgiddi._DXGI_DDI_ARG_RECLAIMRESOURCES
+title: "_DXGI_DDI_ARG_RECLAIMRESOURCES"
+author: windows-driver-content
+description: Describes video memory resources that are to be reclaimed and that the user-mode display driver previously offered for reuse. Used with the pfnReclaimResources function by Windows Display Driver Model (WDDM) 1.2 and later user-mode display drivers.
+old-location: display\dxgi_ddi_arg_reclaimresources.htm
+old-project: display
+ms.assetid: 43e34157-2cf1-4e2c-bcd8-c4425e89fb0f
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: dxgiddi/DXGI_DDI_ARG_RECLAIMRESOURCES, display.dxgi_ddi_arg_reclaimresources, DXGI_DDI_ARG_RECLAIMRESOURCES structure [Display Devices], DXGI_DDI_ARG_RECLAIMRESOURCES, _DXGI_DDI_ARG_RECLAIMRESOURCES
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: dxgiddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8,WDDM 1.2 and later
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Dxgiddi.h
+apiname:
+-	DXGI_DDI_ARG_RECLAIMRESOURCES
+product: Windows
+targetos: Windows
+req.typenames: DXGI_DDI_ARG_RECLAIMRESOURCES
 ---
 
 # _DXGI_DDI_ARG_RECLAIMRESOURCES structure

@@ -1,41 +1,46 @@
 ---
-UID : NS:ks.KSPRIORITY
-title : KSPRIORITY
-author : windows-driver-content
-description : The KSPRIORITY structure is used to specify priority and is used with the KSPROPERTY_CONNECTION_PRIORITY property.
-old-location : stream\kspriority.htm
-old-project : stream
-ms.assetid : 3bbef5f6-f859-4528-b044-baf8f99c2c2f
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : "*PKSPRIORITY, KSPRIORITY structure [Streaming Media Devices], PKSPRIORITY structure pointer [Streaming Media Devices], ks/KSPRIORITY, KSPRIORITY, ks/PKSPRIORITY, stream.kspriority, ks-struct_08294311-6f72-4888-bfb8-b4598e1fc9bd.xml, PKSPRIORITY"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKSPRIORITY, KSPRIORITY"
+UID: NS:ks.KSPRIORITY
+title: KSPRIORITY
+author: windows-driver-content
+description: The KSPRIORITY structure is used to specify priority and is used with the KSPROPERTY_CONNECTION_PRIORITY property.
+old-location: stream\kspriority.htm
+old-project: stream
+ms.assetid: 3bbef5f6-f859-4528-b044-baf8f99c2c2f
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: "*PKSPRIORITY, KSPRIORITY structure [Streaming Media Devices], PKSPRIORITY structure pointer [Streaming Media Devices], ks/KSPRIORITY, KSPRIORITY, ks/PKSPRIORITY, stream.kspriority, ks-struct_08294311-6f72-4888-bfb8-b4598e1fc9bd.xml, PKSPRIORITY"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ks.h
+apiname:
+-	KSPRIORITY
+product: Windows
+targetos: Windows
+req.typenames: "*PKSPRIORITY, KSPRIORITY"
 ---
 
 # KSPRIORITY structure

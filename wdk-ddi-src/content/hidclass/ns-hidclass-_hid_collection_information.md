@@ -1,41 +1,46 @@
 ---
-UID : NS:hidclass._HID_COLLECTION_INFORMATION
-title : "_HID_COLLECTION_INFORMATION"
-author : windows-driver-content
-description : The HID_COLLECTION_INFORMATION structure contains general information about a top-level collection.
-old-location : hid\hid_collection_information.htm
-old-project : hid
-ms.assetid : 47490858-3fe0-4a94-adae-6589cad6a842
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : PHID_COLLECTION_INFORMATION structure pointer [Human Input Devices], *PHID_COLLECTION_INFORMATION, PHID_COLLECTION_INFORMATION, hidstrct_d61a583e-66c7-4851-ba75-3e5973a95c70.xml, HID_COLLECTION_INFORMATION, hid.hid_collection_information, _HID_COLLECTION_INFORMATION, hidclass/PHID_COLLECTION_INFORMATION, HID_COLLECTION_INFORMATION structure [Human Input Devices], hidclass/HID_COLLECTION_INFORMATION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : hidclass.h
-req.include-header : Hidclass.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HID_COLLECTION_INFORMATION, *PHID_COLLECTION_INFORMATION
+UID: NS:hidclass._HID_COLLECTION_INFORMATION
+title: "_HID_COLLECTION_INFORMATION"
+author: windows-driver-content
+description: The HID_COLLECTION_INFORMATION structure contains general information about a top-level collection.
+old-location: hid\hid_collection_information.htm
+old-project: hid
+ms.assetid: 47490858-3fe0-4a94-adae-6589cad6a842
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: PHID_COLLECTION_INFORMATION structure pointer [Human Input Devices], *PHID_COLLECTION_INFORMATION, PHID_COLLECTION_INFORMATION, hidstrct_d61a583e-66c7-4851-ba75-3e5973a95c70.xml, HID_COLLECTION_INFORMATION, hid.hid_collection_information, _HID_COLLECTION_INFORMATION, hidclass/PHID_COLLECTION_INFORMATION, HID_COLLECTION_INFORMATION structure [Human Input Devices], hidclass/HID_COLLECTION_INFORMATION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: hidclass.h
+req.include-header: Hidclass.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hidclass.h
+apiname:
+-	HID_COLLECTION_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: HID_COLLECTION_INFORMATION, *PHID_COLLECTION_INFORMATION
 ---
 
 # _HID_COLLECTION_INFORMATION structure

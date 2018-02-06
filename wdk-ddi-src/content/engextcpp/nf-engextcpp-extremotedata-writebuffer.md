@@ -1,41 +1,46 @@
 ---
-UID : NF:engextcpp.ExtRemoteData.WriteBuffer
-title : ExtRemoteData::WriteBuffer method
-author : windows-driver-content
-description : The WriteBuffer method writes data to the target's memory. The data is located in the beginning of the region represented by the ExtRemoteData object. However, the size of the data can be different.
-old-location : debugger\extremotedata_writebuffer.htm
-old-project : debugger
-ms.assetid : b50f0cf3-4cd5-4f9e-9749-49b1c9365a8f
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : debugger.extremotedata_writebuffer, ExtRemoteData, WriteBuffer, ExtRemoteData::WriteBuffer, WriteBuffer method [Windows Debugging], ExtRemoteData class, EngExtCpp_Ref_0a08b058-ddc3-44e4-9d80-bb20d6e8f952.xml, WriteBuffer method [Windows Debugging], ExtRemoteData class [Windows Debugging], WriteBuffer method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : engextcpp.hpp
-req.include-header : Engextcpp.hpp
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : engextcpp.hpp
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SILO_DRIVER_CAPABILITIES, *PSILO_DRIVER_CAPABILITIES
+UID: NF:engextcpp.ExtRemoteData.WriteBuffer
+title: ExtRemoteData::WriteBuffer method
+author: windows-driver-content
+description: The WriteBuffer method writes data to the target's memory. The data is located in the beginning of the region represented by the ExtRemoteData object. However, the size of the data can be different.
+old-location: debugger\extremotedata_writebuffer.htm
+old-project: debugger
+ms.assetid: b50f0cf3-4cd5-4f9e-9749-49b1c9365a8f
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: debugger.extremotedata_writebuffer, ExtRemoteData, WriteBuffer, ExtRemoteData::WriteBuffer, WriteBuffer method [Windows Debugging], ExtRemoteData class, EngExtCpp_Ref_0a08b058-ddc3-44e4-9d80-bb20d6e8f952.xml, WriteBuffer method [Windows Debugging], ExtRemoteData class [Windows Debugging], WriteBuffer method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: engextcpp.hpp
+req.include-header: Engextcpp.hpp
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: engextcpp.hpp
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	engextcpp.hpp
+apiname:
+-	ExtRemoteData.WriteBuffer
+product: Windows
+targetos: Windows
+req.typenames: SILO_DRIVER_CAPABILITIES, *PSILO_DRIVER_CAPABILITIES
 ---
 
 

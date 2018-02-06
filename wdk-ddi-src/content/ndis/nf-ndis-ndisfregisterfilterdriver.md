@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisFRegisterFilterDriver
-title : NdisFRegisterFilterDriver function
-author : windows-driver-content
-description : A filter driver calls the NdisFRegisterFilterDriver function to register its FilterXxx functions with NDIS.
-old-location : netvista\ndisfregisterfilterdriver.htm
-old-project : netvista
-ms.assetid : 14381de2-36d9-4ec8-9d4e-7af3e6d8ecf3
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : ndis/NdisFRegisterFilterDriver, filter_ndis_functions_ref_a772ecb2-0cba-439e-82f1-928c3b40f3fd.xml, NdisFRegisterFilterDriver, NdisFRegisterFilterDriver function [Network Drivers Starting with Windows Vista], netvista.ndisfregisterfilterdriver
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported in NDIS 6.0 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_Filter_Driver_Function, NdisFDeregisterFilterDriver
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisFRegisterFilterDriver
+title: NdisFRegisterFilterDriver function
+author: windows-driver-content
+description: A filter driver calls the NdisFRegisterFilterDriver function to register its FilterXxx functions with NDIS.
+old-location: netvista\ndisfregisterfilterdriver.htm
+old-project: netvista
+ms.assetid: 14381de2-36d9-4ec8-9d4e-7af3e6d8ecf3
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: ndis/NdisFRegisterFilterDriver, filter_ndis_functions_ref_a772ecb2-0cba-439e-82f1-928c3b40f3fd.xml, NdisFRegisterFilterDriver, NdisFRegisterFilterDriver function [Network Drivers Starting with Windows Vista], netvista.ndisfregisterfilterdriver
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported in NDIS 6.0 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_Filter_Driver_Function, NdisFDeregisterFilterDriver
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisFRegisterFilterDriver
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

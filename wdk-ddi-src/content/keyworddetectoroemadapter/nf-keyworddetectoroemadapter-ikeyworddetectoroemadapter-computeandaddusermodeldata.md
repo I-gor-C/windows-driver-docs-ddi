@@ -1,41 +1,46 @@
 ---
-UID : NF:keyworddetectoroemadapter.IKeywordDetectorOemAdapter.ComputeAndAddUserModelData
-title : IKeywordDetectorOemAdapter::ComputeAndAddUserModelData method
-author : windows-driver-content
-description : The ComputeAndAddUserModelData method is used by the training user experience to compute the user-specific information relative to the user-independent keyword.
-old-location : audio\ikeyworddetectoroemadapter_computeandaddusermodeldata.htm
-old-project : audio
-ms.assetid : 4E810EAD-3864-44C1-9845-60DAB288BB48
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : audio.ikeyworddetectoroemadapter_computeandaddusermodeldata, IKeywordDetectorOemAdapter, keyworddetectoroemadapter/IKeywordDetectorOemAdapter::ComputeAndAddUserModelData, ComputeAndAddUserModelData method [Audio Devices], IKeywordDetectorOemAdapter interface [Audio Devices], ComputeAndAddUserModelData method, IKeywordDetectorOemAdapter::ComputeAndAddUserModelData, ComputeAndAddUserModelData method [Audio Devices], IKeywordDetectorOemAdapter interface, ComputeAndAddUserModelData
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : keyworddetectoroemadapter.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Windows 10
-req.target-min-winversvr : Windows Server 2016
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : KeywordDetectorOemAdapter.idl
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : keyworddetectoroemadapter.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KEYWORDID
+UID: NF:keyworddetectoroemadapter.IKeywordDetectorOemAdapter.ComputeAndAddUserModelData
+title: IKeywordDetectorOemAdapter::ComputeAndAddUserModelData method
+author: windows-driver-content
+description: The ComputeAndAddUserModelData method is used by the training user experience to compute the user-specific information relative to the user-independent keyword.
+old-location: audio\ikeyworddetectoroemadapter_computeandaddusermodeldata.htm
+old-project: audio
+ms.assetid: 4E810EAD-3864-44C1-9845-60DAB288BB48
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: audio.ikeyworddetectoroemadapter_computeandaddusermodeldata, IKeywordDetectorOemAdapter, keyworddetectoroemadapter/IKeywordDetectorOemAdapter::ComputeAndAddUserModelData, ComputeAndAddUserModelData method [Audio Devices], IKeywordDetectorOemAdapter interface [Audio Devices], ComputeAndAddUserModelData method, IKeywordDetectorOemAdapter::ComputeAndAddUserModelData, ComputeAndAddUserModelData method [Audio Devices], IKeywordDetectorOemAdapter interface, ComputeAndAddUserModelData
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: keyworddetectoroemadapter.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr: Windows Server 2016
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: KeywordDetectorOemAdapter.idl
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: keyworddetectoroemadapter.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	KeywordDetectorOemAdapter.h
+apiname:
+-	IKeywordDetectorOemAdapter.ComputeAndAddUserModelData
+product: Windows
+targetos: Windows
+req.typenames: KEYWORDID
 ---
 
 

@@ -1,42 +1,48 @@
 ---
-UID : NF:wdm.ZwSetInformationEnlistment
-title : ZwSetInformationEnlistment function
-author : windows-driver-content
-description : The ZwSetInformationEnlistment routine sets information for a specified enlistment object.
-old-location : kernel\zwsetinformationenlistment.htm
-old-project : kernel
-ms.assetid : c87547b0-a16e-48b5-91ca-c414c5317ac6
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : NtSetInformationEnlistment, ZwSetInformationEnlistment, ZwSetInformationEnlistment routine [Kernel-Mode Driver Architecture], wdm/ZwSetInformationEnlistment, kernel.zwsetinformationenlistment, wdm/NtSetInformationEnlistment, ktm_ref_3e37f795-0826-43df-bb96-14f1031437da.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later operating system versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.ZwSetInformationEnlistment
+title: ZwSetInformationEnlistment function
+author: windows-driver-content
+description: The ZwSetInformationEnlistment routine sets information for a specified enlistment object.
+old-location: kernel\zwsetinformationenlistment.htm
+old-project: kernel
+ms.assetid: c87547b0-a16e-48b5-91ca-c414c5317ac6
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: NtSetInformationEnlistment, ZwSetInformationEnlistment, ZwSetInformationEnlistment routine [Kernel-Mode Driver Architecture], wdm/ZwSetInformationEnlistment, kernel.zwsetinformationenlistment, wdm/NtSetInformationEnlistment, ktm_ref_3e37f795-0826-43df-bb96-14f1031437da.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later operating system versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ZwSetInformationEnlistment
+-	NtSetInformationEnlistment
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

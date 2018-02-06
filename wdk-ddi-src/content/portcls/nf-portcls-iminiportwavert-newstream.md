@@ -1,41 +1,46 @@
 ---
-UID : NF:portcls.IMiniportWaveRT.NewStream
-title : IMiniportWaveRT::NewStream method
-author : windows-driver-content
-description : The NewStream method creates a new instance of a WaveRT stream object.
-old-location : audio\iminiportwavert_newstream.htm
-old-project : audio
-ms.assetid : efd2eea8-2b05-49a2-b136-a3e1e3e739c5
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : portcls/IMiniportWaveRT::NewStream, IMiniportWaveRT, audmp-routines_f6e65bf7-d19d-42fc-a0f0-2d2c83e88250.xml, IMiniportWaveRT::NewStream, audio.iminiportwavert_newstream, NewStream method [Audio Devices], IMiniportWaveRT interface, NewStream method [Audio Devices], NewStream, IMiniportWaveRT interface [Audio Devices], NewStream method
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : portcls.h
-req.include-header : 
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : portcls.h
-req.dll : 
-req.irql : Passive level.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.IMiniportWaveRT.NewStream
+title: IMiniportWaveRT::NewStream method
+author: windows-driver-content
+description: The NewStream method creates a new instance of a WaveRT stream object.
+old-location: audio\iminiportwavert_newstream.htm
+old-project: audio
+ms.assetid: efd2eea8-2b05-49a2-b136-a3e1e3e739c5
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: portcls/IMiniportWaveRT::NewStream, IMiniportWaveRT, audmp-routines_f6e65bf7-d19d-42fc-a0f0-2d2c83e88250.xml, IMiniportWaveRT::NewStream, audio.iminiportwavert_newstream, NewStream method [Audio Devices], IMiniportWaveRT interface, NewStream method [Audio Devices], NewStream, IMiniportWaveRT interface [Audio Devices], NewStream method
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: portcls.h
+req.include-header: 
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: portcls.h
+req.dll: 
+req.irql: Passive level.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	portcls.h
+apiname:
+-	IMiniportWaveRT.NewStream
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

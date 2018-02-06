@@ -1,41 +1,46 @@
 ---
-UID : NS:ks.KSPIN_CINSTANCES
-title : KSPIN_CINSTANCES
-author : windows-driver-content
-description : "."
-old-location : stream\kspin_cinstances.htm
-old-project : stream
-ms.assetid : 90C861C3-26E0-43C0-A4CA-FD5491995DAB
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ks/KSPIN_CINSTANCES, ks/PKSPIN_CINSTANCES, PKSPIN_CINSTANCES, KSPIN_CINSTANCES structure [Streaming Media Devices], KSPIN_CINSTANCES, PKSPIN_CINSTANCES structure pointer [Streaming Media Devices], stream.kspin_cinstances, *PKSPIN_CINSTANCES
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ks.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKSPIN_CINSTANCES, KSPIN_CINSTANCES"
+UID: NS:ks.KSPIN_CINSTANCES
+title: KSPIN_CINSTANCES
+author: windows-driver-content
+description: "."
+old-location: stream\kspin_cinstances.htm
+old-project: stream
+ms.assetid: 90C861C3-26E0-43C0-A4CA-FD5491995DAB
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ks/KSPIN_CINSTANCES, ks/PKSPIN_CINSTANCES, PKSPIN_CINSTANCES, KSPIN_CINSTANCES structure [Streaming Media Devices], KSPIN_CINSTANCES, PKSPIN_CINSTANCES structure pointer [Streaming Media Devices], stream.kspin_cinstances, *PKSPIN_CINSTANCES
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ks.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ks.h
+apiname:
+-	KSPIN_CINSTANCES
+product: Windows
+targetos: Windows
+req.typenames: "*PKSPIN_CINSTANCES, KSPIN_CINSTANCES"
 ---
 
 # KSPIN_CINSTANCES structure

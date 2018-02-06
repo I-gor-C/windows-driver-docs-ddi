@@ -1,41 +1,46 @@
 ---
-UID : NS:1394._CYCLE_TIME
-title : "_CYCLE_TIME"
-author : windows-driver-content
-description : The CYCLE_TIME structure contains the IEEE 1394 isochronous cycle time.
-old-location : ieee\cycle_time.htm
-old-project : IEEE
-ms.assetid : dcb19338-3848-4f90-876c-357f92fb2637
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : CYCLE_TIME, 1394/CYCLE_TIME, CYCLE_TIME structure [Buses], IEEE.cycle_time, PCYCLE_TIME structure pointer [Buses], 1394/PCYCLE_TIME, _CYCLE_TIME, *PCYCLE_TIME, 1394stct_c6b1a6fa-b259-488d-a4a9-e4dace0fcf3d.xml, PCYCLE_TIME
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : 1394.h
-req.include-header : 1394.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PCYCLE_TIME, CYCLE_TIME"
+UID: NS:1394._CYCLE_TIME
+title: "_CYCLE_TIME"
+author: windows-driver-content
+description: The CYCLE_TIME structure contains the IEEE 1394 isochronous cycle time.
+old-location: ieee\cycle_time.htm
+old-project: IEEE
+ms.assetid: dcb19338-3848-4f90-876c-357f92fb2637
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: CYCLE_TIME, 1394/CYCLE_TIME, CYCLE_TIME structure [Buses], IEEE.cycle_time, PCYCLE_TIME structure pointer [Buses], 1394/PCYCLE_TIME, _CYCLE_TIME, *PCYCLE_TIME, 1394stct_c6b1a6fa-b259-488d-a4a9-e4dace0fcf3d.xml, PCYCLE_TIME
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: 1394.h
+req.include-header: 1394.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	1394.h
+apiname:
+-	CYCLE_TIME
+product: Windows
+targetos: Windows
+req.typenames: "*PCYCLE_TIME, CYCLE_TIME"
 ---
 
 # _CYCLE_TIME structure

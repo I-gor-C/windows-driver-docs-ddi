@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dkmthk._D3DKMT_ADAPTERADDRESS
-title : "_D3DKMT_ADAPTERADDRESS"
-author : windows-driver-content
-description : The D3DKMT_ADAPTERADDRESS structure describes the physical location of the graphics adapter.
-old-location : display\d3dkmt_adapteraddress.htm
-old-project : display
-ms.assetid : 70f45ca2-4be6-4e74-b2e8-55ef7a43192f
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3DKMT_ADAPTERADDRESS, d3dkmthk/D3DKMT_ADAPTERADDRESS, OpenGL_Structs_98b1caf8-46c4-4f78-896c-031e8f3f61d0.xml, _D3DKMT_ADAPTERADDRESS, D3DKMT_ADAPTERADDRESS structure [Display Devices], display.d3dkmt_adapteraddress
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dkmthk.h
-req.include-header : D3dkmthk.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3DKMT_ADAPTERADDRESS
+UID: NS:d3dkmthk._D3DKMT_ADAPTERADDRESS
+title: "_D3DKMT_ADAPTERADDRESS"
+author: windows-driver-content
+description: The D3DKMT_ADAPTERADDRESS structure describes the physical location of the graphics adapter.
+old-location: display\d3dkmt_adapteraddress.htm
+old-project: display
+ms.assetid: 70f45ca2-4be6-4e74-b2e8-55ef7a43192f
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3DKMT_ADAPTERADDRESS, d3dkmthk/D3DKMT_ADAPTERADDRESS, OpenGL_Structs_98b1caf8-46c4-4f78-896c-031e8f3f61d0.xml, _D3DKMT_ADAPTERADDRESS, D3DKMT_ADAPTERADDRESS structure [Display Devices], display.d3dkmt_adapteraddress
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dkmthk.h
+req.include-header: D3dkmthk.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dkmthk.h
+apiname:
+-	D3DKMT_ADAPTERADDRESS
+product: Windows
+targetos: Windows
+req.typenames: D3DKMT_ADAPTERADDRESS
 ---
 
 # _D3DKMT_ADAPTERADDRESS structure

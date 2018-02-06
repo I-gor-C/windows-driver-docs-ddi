@@ -1,42 +1,47 @@
 ---
-UID : NI:winsmcrd.IOCTL_SMARTCARD_GET_STATE
-title : IOCTL_SMARTCARD_GET_STATE
-author : windows-driver-content
-description : The IOCTL_SMARTCARD_GET_STATE control code gets the current status of the smart card.
-old-location : nfpdrivers\ioctl_smartcard_get_state.htm
-old-project : nfpdrivers
-ms.assetid : 18666E48-9505-448E-ABA1-536D365FC49D
-ms.author : windowsdriverdev
-ms.date : 12/18/2017
-ms.keywords : nfpdrivers.ioctl_smartcard_get_state, IOCTL_SMARTCARD_GET_STATE control code [Near-Field Proximity Drivers], IOCTL_SMARTCARD_GET_STATE, winsmcrd/IOCTL_SMARTCARD_GET_STATE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : winsmcrd.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PDOT11_WPS_DEVICE_NAME, DOT11_WPS_DEVICE_NAME"
-req.product : Windows 10 or later.
+UID: NI:winsmcrd.IOCTL_SMARTCARD_GET_STATE
+title: IOCTL_SMARTCARD_GET_STATE
+author: windows-driver-content
+description: The IOCTL_SMARTCARD_GET_STATE control code gets the current status of the smart card.
+old-location: nfpdrivers\ioctl_smartcard_get_state.htm
+old-project: nfpdrivers
+ms.assetid: 18666E48-9505-448E-ABA1-536D365FC49D
+ms.author: windowsdriverdev
+ms.date: 12/18/2017
+ms.keywords: nfpdrivers.ioctl_smartcard_get_state, IOCTL_SMARTCARD_GET_STATE control code [Near-Field Proximity Drivers], IOCTL_SMARTCARD_GET_STATE, winsmcrd/IOCTL_SMARTCARD_GET_STATE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: winsmcrd.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	winsmcrd.h
+apiname:
+-	IOCTL_SMARTCARD_GET_STATE
+product: Windows
+targetos: Windows
+req.typenames: "*PDOT11_WPS_DEVICE_NAME, DOT11_WPS_DEVICE_NAME"
+req.product: Windows 10 or later.
 ---
 
 # IOCTL_SMARTCARD_GET_STATE IOCTL

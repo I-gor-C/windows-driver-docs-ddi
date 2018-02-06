@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.KSRTAUDIO_HWLATENCY
-title : KSRTAUDIO_HWLATENCY
-author : windows-driver-content
-description : The KSRTAUDIO_HWLATENCY structure describes the latency that the audio hardware adds to a wave stream during playback or recording.
-old-location : audio\ksrtaudio_hwlatency.htm
-old-project : audio
-ms.assetid : dd9998d0-46e6-4b12-aa96-1e6eede15f47
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : aud-prop_dd10bf1b-e1b6-4dfd-bb50-1540ef3caed5.xml, KSRTAUDIO_HWLATENCY, audio.ksrtaudio_hwlatency, *PKSRTAUDIO_HWLATENCY, PKSRTAUDIO_HWLATENCY structure pointer [Audio Devices], PKSRTAUDIO_HWLATENCY, KSRTAUDIO_HWLATENCY structure [Audio Devices], ksmedia/PKSRTAUDIO_HWLATENCY, ksmedia/KSRTAUDIO_HWLATENCY
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKSRTAUDIO_HWLATENCY, KSRTAUDIO_HWLATENCY"
+UID: NS:ksmedia.KSRTAUDIO_HWLATENCY
+title: KSRTAUDIO_HWLATENCY
+author: windows-driver-content
+description: The KSRTAUDIO_HWLATENCY structure describes the latency that the audio hardware adds to a wave stream during playback or recording.
+old-location: audio\ksrtaudio_hwlatency.htm
+old-project: audio
+ms.assetid: dd9998d0-46e6-4b12-aa96-1e6eede15f47
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: aud-prop_dd10bf1b-e1b6-4dfd-bb50-1540ef3caed5.xml, KSRTAUDIO_HWLATENCY, audio.ksrtaudio_hwlatency, *PKSRTAUDIO_HWLATENCY, PKSRTAUDIO_HWLATENCY structure pointer [Audio Devices], PKSRTAUDIO_HWLATENCY, KSRTAUDIO_HWLATENCY structure [Audio Devices], ksmedia/PKSRTAUDIO_HWLATENCY, ksmedia/KSRTAUDIO_HWLATENCY
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	KSRTAUDIO_HWLATENCY
+product: Windows
+targetos: Windows
+req.typenames: "*PKSRTAUDIO_HWLATENCY, KSRTAUDIO_HWLATENCY"
 ---
 
 # KSRTAUDIO_HWLATENCY structure

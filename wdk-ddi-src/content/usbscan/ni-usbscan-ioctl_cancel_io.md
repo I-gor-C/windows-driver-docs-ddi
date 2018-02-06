@@ -1,42 +1,47 @@
 ---
-UID : NI:usbscan.IOCTL_CANCEL_IO
-title : IOCTL_CANCEL_IO
-author : windows-driver-content
-description : Cancels activity on the specified USB transfer pipe that is associated with the specified device handle.
-old-location : image\ioctl_cancel_io.htm
-old-project : image
-ms.assetid : 5748e949-3edb-405a-ab2f-05c929cf5aa6
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : image.ioctl_cancel_io, IOCTL_CANCEL_IO control code [Imaging Devices], IOCTL_CANCEL_IO, usbscan/IOCTL_CANCEL_IO, stifnc_df576f5d-a45a-4aa8-91c6-e288f9d99c14.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : usbscan.h
-req.include-header : Usbscan.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RAW_PIPE_TYPE
-req.product : Windows 10 or later.
+UID: NI:usbscan.IOCTL_CANCEL_IO
+title: IOCTL_CANCEL_IO
+author: windows-driver-content
+description: Cancels activity on the specified USB transfer pipe that is associated with the specified device handle.
+old-location: image\ioctl_cancel_io.htm
+old-project: image
+ms.assetid: 5748e949-3edb-405a-ab2f-05c929cf5aa6
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: image.ioctl_cancel_io, IOCTL_CANCEL_IO control code [Imaging Devices], IOCTL_CANCEL_IO, usbscan/IOCTL_CANCEL_IO, stifnc_df576f5d-a45a-4aa8-91c6-e288f9d99c14.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: usbscan.h
+req.include-header: Usbscan.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Usbscan.h
+apiname:
+-	IOCTL_CANCEL_IO
+product: Windows
+targetos: Windows
+req.typenames: RAW_PIPE_TYPE
+req.product: Windows 10 or later.
 ---
 
 # IOCTL_CANCEL_IO IOCTL

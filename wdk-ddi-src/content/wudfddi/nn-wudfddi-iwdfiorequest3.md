@@ -1,42 +1,47 @@
 ---
-UID : NN:wudfddi.IWDFIoRequest3
-title : IWDFIoRequest3
-author : windows-driver-content
-description : To obtain the IWDFIoRequest3 interface, drivers call IWDFIoRequest::QueryInterface.
-old-location : wdf\iwdfiorequest3.htm
-old-project : wdf
-ms.assetid : 12F4CDB7-EEA5-49D1-AD41-6F5F0C9ED6C3
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.iwdfiorequest3, IWDFIoRequest3 interface, IWDFIoRequest3 interface, described, IWDFIoRequest3, wudfddi/IWDFIoRequest3, umdf.iwdfiorequest3
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : interface
-req.header : wudfddi.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.11
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NN:wudfddi.IWDFIoRequest3
+title: IWDFIoRequest3
+author: windows-driver-content
+description: To obtain the IWDFIoRequest3 interface, drivers call IWDFIoRequest::QueryInterface.
+old-location: wdf\iwdfiorequest3.htm
+old-project: wdf
+ms.assetid: 12F4CDB7-EEA5-49D1-AD41-6F5F0C9ED6C3
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.iwdfiorequest3, IWDFIoRequest3 interface, IWDFIoRequest3 interface, described, IWDFIoRequest3, wudfddi/IWDFIoRequest3, umdf.iwdfiorequest3
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: interface
+req.header: wudfddi.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.11
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFIoRequest3
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 # IWDFIoRequest3 interface

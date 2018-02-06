@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.KeQueryUnbiasedInterruptTime
-title : KeQueryUnbiasedInterruptTime function
-author : windows-driver-content
-description : The KeQueryUnbiasedInterruptTime routine returns the current value of the system interrupt time count.
-old-location : kernel\kequeryunbiasedinterrupttime.htm
-old-project : kernel
-ms.assetid : 2a041946-0335-466e-b2f9-b486031e777a
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : k105_34119e3c-6e9a-4e27-9d0e-3d9eb579df46.xml, KeQueryUnbiasedInterruptTime, KeQueryUnbiasedInterruptTime routine [Kernel-Mode Driver Architecture], kernel.kequeryunbiasedinterrupttime, wdm/KeQueryUnbiasedInterruptTime
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 7.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.KeQueryUnbiasedInterruptTime
+title: KeQueryUnbiasedInterruptTime function
+author: windows-driver-content
+description: The KeQueryUnbiasedInterruptTime routine returns the current value of the system interrupt time count.
+old-location: kernel\kequeryunbiasedinterrupttime.htm
+old-project: kernel
+ms.assetid: 2a041946-0335-466e-b2f9-b486031e777a
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: k105_34119e3c-6e9a-4e27-9d0e-3d9eb579df46.xml, KeQueryUnbiasedInterruptTime, KeQueryUnbiasedInterruptTime routine [Kernel-Mode Driver Architecture], kernel.kequeryunbiasedinterrupttime, wdm/KeQueryUnbiasedInterruptTime
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 7.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	KeQueryUnbiasedInterruptTime
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

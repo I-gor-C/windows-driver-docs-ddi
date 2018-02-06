@@ -1,42 +1,47 @@
 ---
-UID : NC:wdfdmatransaction.EVT_WDF_RESERVE_DMA
-title : EVT_WDF_RESERVE_DMA
-author : windows-driver-content
-description : The EvtReserveDma event callback function is called when the framework has reserved resources to execute and release a transaction. Reserved resources include map registers and the WDM DMA adapter's lock.
-old-location : wdf\evtreservedma.htm
-old-project : wdf
-ms.assetid : 3663EF19-5F16-43D1-BFBC-28280E28D4DE
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.evtreservedma, EvtReserveDma callback function, EvtReserveDma, EVT_WDF_RESERVE_DMA, EVT_WDF_RESERVE_DMA, wdfdmatransaction/EvtReserveDma, kmdf.evtreservedma
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : wdfdmatransaction.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.11
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : DISPATCH_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDF_DMA_SYSTEM_PROFILE_CONFIG, WDF_DMA_SYSTEM_PROFILE_CONFIG"
-req.product : Windows 10 or later.
+UID: NC:wdfdmatransaction.EVT_WDF_RESERVE_DMA
+title: EVT_WDF_RESERVE_DMA
+author: windows-driver-content
+description: The EvtReserveDma event callback function is called when the framework has reserved resources to execute and release a transaction. Reserved resources include map registers and the WDM DMA adapter's lock.
+old-location: wdf\evtreservedma.htm
+old-project: wdf
+ms.assetid: 3663EF19-5F16-43D1-BFBC-28280E28D4DE
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.evtreservedma, EvtReserveDma callback function, EvtReserveDma, EVT_WDF_RESERVE_DMA, EVT_WDF_RESERVE_DMA, wdfdmatransaction/EvtReserveDma, kmdf.evtreservedma
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: wdfdmatransaction.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.11
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: DISPATCH_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	WdfDmaTransaction.h
+apiname:
+-	EvtReserveDma
+product: Windows
+targetos: Windows
+req.typenames: "*PWDF_DMA_SYSTEM_PROFILE_CONFIG, WDF_DMA_SYSTEM_PROFILE_CONFIG"
+req.product: Windows 10 or later.
 ---
 
 

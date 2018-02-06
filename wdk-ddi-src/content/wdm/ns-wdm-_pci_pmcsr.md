@@ -1,42 +1,47 @@
 ---
-UID : NS:wdm._PCI_PMCSR
-title : "_PCI_PMCSR"
-author : windows-driver-content
-description : The PCI_PMCSR structure is used to report the contents of the device's power management control status register.
-old-location : pci\pci_pmcsr.htm
-old-project : PCI
-ms.assetid : 5c4bf4c0-c36f-4779-a012-6364c94f37a1
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : wdm/PPCI_PMCSR, _PCI_PMCSR, PCI_PMCSR structure [Buses], PCI_PMCSR, wdm/PCI_PMCSR, PPCI_PMCSR structure pointer [Buses], PPCI_PMCSR, *PPCI_PMCSR, PCI.pci_pmcsr, pci_struct_03c3c722-9aa9-4fff-a50e-4499122d7490.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdm.h
-req.include-header : Wdm.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL (see Remarks section)
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPCI_PMCSR, PCI_PMCSR"
-req.product : Windows 10 or later.
+UID: NS:wdm._PCI_PMCSR
+title: "_PCI_PMCSR"
+author: windows-driver-content
+description: The PCI_PMCSR structure is used to report the contents of the device's power management control status register.
+old-location: pci\pci_pmcsr.htm
+old-project: PCI
+ms.assetid: 5c4bf4c0-c36f-4779-a012-6364c94f37a1
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: wdm/PPCI_PMCSR, _PCI_PMCSR, PCI_PMCSR structure [Buses], PCI_PMCSR, wdm/PCI_PMCSR, PPCI_PMCSR structure pointer [Buses], PPCI_PMCSR, *PPCI_PMCSR, PCI.pci_pmcsr, pci_struct_03c3c722-9aa9-4fff-a50e-4499122d7490.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdm.h
+req.include-header: Wdm.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL (see Remarks section)
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdm.h
+apiname:
+-	PCI_PMCSR
+product: Windows
+targetos: Windows
+req.typenames: "*PPCI_PMCSR, PCI_PMCSR"
+req.product: Windows 10 or later.
 ---
 
 # _PCI_PMCSR structure

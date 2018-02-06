@@ -1,41 +1,46 @@
 ---
-UID : NS:hdaudio._HDAUDIO_CODEC_RESPONSE
-title : "_HDAUDIO_CODEC_RESPONSE"
-author : windows-driver-content
-description : The HDAUDIO_CODEC_RESPONSE structure specifies either a response to a codec command or an unsolicited response from a codec.
-old-location : audio\hdaudio_codec_response.htm
-old-project : audio
-ms.assetid : 56b9cdb5-2734-45b5-aeaf-ae6d606d1a5c
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : HDAUDIO_CODEC_RESPONSE, hdaudio/HDAUDIO_CODEC_RESPONSE, PHDAUDIO_CODEC_RESPONSE structure pointer [Audio Devices], aud-prop2_2cf51d01-4493-439c-9a5f-30b86d76502b.xml, hdaudio/PHDAUDIO_CODEC_RESPONSE, PHDAUDIO_CODEC_RESPONSE, audio.hdaudio_codec_response, _HDAUDIO_CODEC_RESPONSE, HDAUDIO_CODEC_RESPONSE structure [Audio Devices], *PHDAUDIO_CODEC_RESPONSE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : hdaudio.h
-req.include-header : Hdaudio.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HDAUDIO_CODEC_RESPONSE, *PHDAUDIO_CODEC_RESPONSE
+UID: NS:hdaudio._HDAUDIO_CODEC_RESPONSE
+title: "_HDAUDIO_CODEC_RESPONSE"
+author: windows-driver-content
+description: The HDAUDIO_CODEC_RESPONSE structure specifies either a response to a codec command or an unsolicited response from a codec.
+old-location: audio\hdaudio_codec_response.htm
+old-project: audio
+ms.assetid: 56b9cdb5-2734-45b5-aeaf-ae6d606d1a5c
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: HDAUDIO_CODEC_RESPONSE, hdaudio/HDAUDIO_CODEC_RESPONSE, PHDAUDIO_CODEC_RESPONSE structure pointer [Audio Devices], aud-prop2_2cf51d01-4493-439c-9a5f-30b86d76502b.xml, hdaudio/PHDAUDIO_CODEC_RESPONSE, PHDAUDIO_CODEC_RESPONSE, audio.hdaudio_codec_response, _HDAUDIO_CODEC_RESPONSE, HDAUDIO_CODEC_RESPONSE structure [Audio Devices], *PHDAUDIO_CODEC_RESPONSE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: hdaudio.h
+req.include-header: Hdaudio.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hdaudio.h
+apiname:
+-	HDAUDIO_CODEC_RESPONSE
+product: Windows
+targetos: Windows
+req.typenames: HDAUDIO_CODEC_RESPONSE, *PHDAUDIO_CODEC_RESPONSE
 ---
 
 # _HDAUDIO_CODEC_RESPONSE structure

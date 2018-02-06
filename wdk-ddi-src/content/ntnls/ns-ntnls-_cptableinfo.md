@@ -1,41 +1,46 @@
 ---
-UID : NS:ntnls._CPTABLEINFO
-title : "_CPTABLEINFO"
-author : windows-driver-content
-description : Stores the NLS file formats.
-old-location : kernel\cptableinfo.htm
-old-project : kernel
-ms.assetid : 20EE0017-760E-48A1-8658-2A0278843074
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : CPTABLEINFO structure [Kernel-Mode Driver Architecture], kernel.cptableinfo, CPTABLEINFO, _CPTABLEINFO, PCPTABLEINFO structure pointer [Kernel-Mode Driver Architecture], *PCPTABLEINFO, ntnls/CPTABLEINFO, PCPTABLEINFO, ntnls/PCPTABLEINFO
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntnls.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PCPTABLEINFO, CPTABLEINFO"
+UID: NS:ntnls._CPTABLEINFO
+title: "_CPTABLEINFO"
+author: windows-driver-content
+description: Stores the NLS file formats.
+old-location: kernel\cptableinfo.htm
+old-project: kernel
+ms.assetid: 20EE0017-760E-48A1-8658-2A0278843074
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: CPTABLEINFO structure [Kernel-Mode Driver Architecture], kernel.cptableinfo, CPTABLEINFO, _CPTABLEINFO, PCPTABLEINFO structure pointer [Kernel-Mode Driver Architecture], *PCPTABLEINFO, ntnls/CPTABLEINFO, PCPTABLEINFO, ntnls/PCPTABLEINFO
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntnls.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntnls.h
+apiname:
+-	CPTABLEINFO
+product: Windows
+targetos: Windows
+req.typenames: "*PCPTABLEINFO, CPTABLEINFO"
 ---
 
 # _CPTABLEINFO structure

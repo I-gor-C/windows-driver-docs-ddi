@@ -1,42 +1,47 @@
 ---
-UID : NE:wwan._WWAN_CONTEXT_TYPE
-title : "_WWAN_CONTEXT_TYPE"
-author : windows-driver-content
-description : The WWAN_CONTEXT_TYPE enumeration lists the different types of connection contexts that are supported by the MB device.
-old-location : netvista\wwan_context_type.htm
-old-project : netvista
-ms.assetid : 73a18050-fc89-41df-82ce-0f29c5716496
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : wwan/WwanContextTypeVoice, WwanContextTypeCustom, wwan/WwanContextTypeCustom, WwanRef_2f94e3ef-ec5c-47cc-8fe0-295c517ad43a.xml, WwanContextTypePurchase, *PWWAN_CONTEXT_TYPE, WwanContextTypeVoice, wwan/WWAN_CONTEXT_TYPE, WwanContextTypeInternet, netvista.wwan_context_type, wwan/WwanContextTypePurchase, wwan/WwanContextTypeMax, WWAN_CONTEXT_TYPE enumeration [Network Drivers Starting with Windows Vista], PWWAN_CONTEXT_TYPE enumeration pointer [Network Drivers Starting with Windows Vista], WwanContextTypeMax, WwanContextTypeVpn, wwan/WwanContextTypeInternet, WwanContextTypeVideoShare, wwan/WwanContextTypeVpn, wwan/PWWAN_CONTEXT_TYPE, WWAN_CONTEXT_TYPE, wwan/WwanContextTypeVideoShare, _WWAN_CONTEXT_TYPE, wwan/WwanContextTypeNone, PWWAN_CONTEXT_TYPE, WwanContextTypeNone
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : wwan.h
-req.include-header : Wwan.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 8 and later versions of Windows.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWWAN_CONTEXT_TYPE, WWAN_CONTEXT_TYPE"
-req.product : Windows 10 or later.
+UID: NE:wwan._WWAN_CONTEXT_TYPE
+title: "_WWAN_CONTEXT_TYPE"
+author: windows-driver-content
+description: The WWAN_CONTEXT_TYPE enumeration lists the different types of connection contexts that are supported by the MB device.
+old-location: netvista\wwan_context_type.htm
+old-project: netvista
+ms.assetid: 73a18050-fc89-41df-82ce-0f29c5716496
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: wwan/WwanContextTypeVoice, WwanContextTypeCustom, wwan/WwanContextTypeCustom, WwanRef_2f94e3ef-ec5c-47cc-8fe0-295c517ad43a.xml, WwanContextTypePurchase, *PWWAN_CONTEXT_TYPE, WwanContextTypeVoice, wwan/WWAN_CONTEXT_TYPE, WwanContextTypeInternet, netvista.wwan_context_type, wwan/WwanContextTypePurchase, wwan/WwanContextTypeMax, WWAN_CONTEXT_TYPE enumeration [Network Drivers Starting with Windows Vista], PWWAN_CONTEXT_TYPE enumeration pointer [Network Drivers Starting with Windows Vista], WwanContextTypeMax, WwanContextTypeVpn, wwan/WwanContextTypeInternet, WwanContextTypeVideoShare, wwan/WwanContextTypeVpn, wwan/PWWAN_CONTEXT_TYPE, WWAN_CONTEXT_TYPE, wwan/WwanContextTypeVideoShare, _WWAN_CONTEXT_TYPE, wwan/WwanContextTypeNone, PWWAN_CONTEXT_TYPE, WwanContextTypeNone
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: wwan.h
+req.include-header: Wwan.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 8 and later versions of Windows.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wwan.h
+apiname:
+-	WWAN_CONTEXT_TYPE
+product: Windows
+targetos: Windows
+req.typenames: "*PWWAN_CONTEXT_TYPE, WWAN_CONTEXT_TYPE"
+req.product: Windows 10 or later.
 ---
 
 # _WWAN_CONTEXT_TYPE Enumeration
@@ -60,92 +65,92 @@ typedef enum _WWAN_CONTEXT_TYPE {
 ## Constants
 
 <table>
-
-<tr>
-<td>WwanContextTypeAdmin</td>
-<td></td>
-</tr>
-
-<tr>
-<td>WwanContextTypeApp</td>
-<td></td>
-</tr>
-
-<tr>
-<td>WwanContextTypeCustom</td>
-<td>The context represents a connection to a custom service.</td>
-</tr>
-
-<tr>
-<td>WwanContextTypeEmergencyCall</td>
-<td></td>
-</tr>
-
-<tr>
-<td>WwanContextTypeIms</td>
-<td></td>
-</tr>
-
-<tr>
-<td>WwanContextTypeInternet</td>
-<td>The context represents a connection to the Internet.</td>
-</tr>
-
-<tr>
-<td>WwanContextTypeLteAttach</td>
-<td></td>
-</tr>
-
-<tr>
-<td>WwanContextTypeMax</td>
-<td>The total number of supported context types.</td>
-</tr>
-
-<tr>
-<td>WwanContextTypeMms</td>
-<td></td>
-</tr>
-
-<tr>
-<td>WwanContextTypeNone</td>
-<td>The context is not yet provisioned.</td>
-</tr>
-
-<tr>
-<td>WwanContextTypePurchase</td>
-<td>Purchase a connection. For example, a walled garden, hot-lining or captive portal.</td>
-</tr>
-
-<tr>
-<td>WwanContextTypeTethering</td>
-<td></td>
-</tr>
-
-<tr>
-<td>WwanContextTypeVideoShare</td>
-<td>The context represents a connection to a video sharing service.</td>
-</tr>
-
-<tr>
-<td>WwanContextTypeVoice</td>
-<td>The context represents a connection to a Voice-over-IP (VOIP) service.</td>
-</tr>
-
-<tr>
-<td>WwanContextTypeVpn</td>
-<td>The context represents a connection to virtual private network (VPN to a corporate
+            
+                <tr>
+                    <td>WwanContextTypeAdmin</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WwanContextTypeApp</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WwanContextTypeCustom</td>
+                    <td>The context represents a connection to a custom service.</td>
+                </tr>
+            
+                <tr>
+                    <td>WwanContextTypeEmergencyCall</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WwanContextTypeIms</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WwanContextTypeInternet</td>
+                    <td>The context represents a connection to the Internet.</td>
+                </tr>
+            
+                <tr>
+                    <td>WwanContextTypeLteAttach</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WwanContextTypeMax</td>
+                    <td>The total number of supported context types.</td>
+                </tr>
+            
+                <tr>
+                    <td>WwanContextTypeMms</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WwanContextTypeNone</td>
+                    <td>The context is not yet provisioned.</td>
+                </tr>
+            
+                <tr>
+                    <td>WwanContextTypePurchase</td>
+                    <td>Purchase a connection. For example, a walled garden, hot-lining or captive portal.</td>
+                </tr>
+            
+                <tr>
+                    <td>WwanContextTypeTethering</td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>WwanContextTypeVideoShare</td>
+                    <td>The context represents a connection to a video sharing service.</td>
+                </tr>
+            
+                <tr>
+                    <td>WwanContextTypeVoice</td>
+                    <td>The context represents a connection to a Voice-over-IP (VOIP) service.</td>
+                </tr>
+            
+                <tr>
+                    <td>WwanContextTypeVpn</td>
+                    <td>The context represents a connection to virtual private network (VPN to a corporate
      network).</td>
-</tr>
-
-<tr>
-<td>WwanContextTypeXcap</td>
-<td></td>
-</tr>
+                </tr>
+            
+                <tr>
+                    <td>WwanContextTypeXcap</td>
+                    <td></td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-This enumeration indicates the usage of the provisioned context. For example, whether the context is
+        This enumeration indicates the usage of the provisioned context. For example, whether the context is
     used to connect to the Internet, or to a VPN into a corporate network. Miniport driver should specify 
     <b>WwanContextTypeNone</b> for empty (unprovisioned) context slots.
 
@@ -155,9 +160,9 @@ This enumeration indicates the usage of the provisioned context. For example, wh
 | **Windows version** | Available in Windows 8 and later versions of Windows. Available in Windows 8 and later versions of Windows. |
 | **Header** | wwan.h (include Wwan.h) |
 
-## See Also
+    ## See Also
 
-<a href="..\wwan\ns-wwan-_wwan_context.md">WWAN_CONTEXT</a>
+        <a href="..\wwan\ns-wwan-_wwan_context.md">WWAN_CONTEXT</a>
 
  
 

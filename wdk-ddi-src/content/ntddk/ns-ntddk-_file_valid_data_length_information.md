@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddk._FILE_VALID_DATA_LENGTH_INFORMATION
-title : "_FILE_VALID_DATA_LENGTH_INFORMATION"
-author : windows-driver-content
-description : The FILE_VALID_DATA_LENGTH_INFORMATION structure is used as an argument to ZwSetInformationFile.
-old-location : kernel\file_valid_data_length_information.htm
-old-project : kernel
-ms.assetid : 78badbac-9f77-4911-a42b-c0421be47f20
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : PFILE_VALID_DATA_LENGTH_INFORMATION, FILE_VALID_DATA_LENGTH_INFORMATION, _FILE_VALID_DATA_LENGTH_INFORMATION, *PFILE_VALID_DATA_LENGTH_INFORMATION, kernel.file_valid_data_length_information, FILE_VALID_DATA_LENGTH_INFORMATION structure [Kernel-Mode Driver Architecture], ntddk/FILE_VALID_DATA_LENGTH_INFORMATION, PFILE_VALID_DATA_LENGTH_INFORMATION structure pointer [Kernel-Mode Driver Architecture], kstruct_b_4db45831-d238-4274-b0f3-f1945e187eb5.xml, ntddk/PFILE_VALID_DATA_LENGTH_INFORMATION
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddk.h
-req.include-header : Ntddk.h
-req.target-type : Windows
-req.target-min-winverclnt : Available on Microsoft Windows XP and later versions of the Windows operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FILE_VALID_DATA_LENGTH_INFORMATION, *PFILE_VALID_DATA_LENGTH_INFORMATION
+UID: NS:ntddk._FILE_VALID_DATA_LENGTH_INFORMATION
+title: "_FILE_VALID_DATA_LENGTH_INFORMATION"
+author: windows-driver-content
+description: The FILE_VALID_DATA_LENGTH_INFORMATION structure is used as an argument to ZwSetInformationFile.
+old-location: kernel\file_valid_data_length_information.htm
+old-project: kernel
+ms.assetid: 78badbac-9f77-4911-a42b-c0421be47f20
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: PFILE_VALID_DATA_LENGTH_INFORMATION, FILE_VALID_DATA_LENGTH_INFORMATION, _FILE_VALID_DATA_LENGTH_INFORMATION, *PFILE_VALID_DATA_LENGTH_INFORMATION, kernel.file_valid_data_length_information, FILE_VALID_DATA_LENGTH_INFORMATION structure [Kernel-Mode Driver Architecture], ntddk/FILE_VALID_DATA_LENGTH_INFORMATION, PFILE_VALID_DATA_LENGTH_INFORMATION structure pointer [Kernel-Mode Driver Architecture], kstruct_b_4db45831-d238-4274-b0f3-f1945e187eb5.xml, ntddk/PFILE_VALID_DATA_LENGTH_INFORMATION
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddk.h
+req.include-header: Ntddk.h
+req.target-type: Windows
+req.target-min-winverclnt: Available on Microsoft Windows XP and later versions of the Windows operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddk.h
+apiname:
+-	FILE_VALID_DATA_LENGTH_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: FILE_VALID_DATA_LENGTH_INFORMATION, *PFILE_VALID_DATA_LENGTH_INFORMATION
 ---
 
 # _FILE_VALID_DATA_LENGTH_INFORMATION structure

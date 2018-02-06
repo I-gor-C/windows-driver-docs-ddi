@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsStreamPointerAdvanceOffsets
-title : KsStreamPointerAdvanceOffsets function
-author : windows-driver-content
-description : The KsStreamPointerAdvanceOffsets function advances the offsets of StreamPointer.
-old-location : stream\ksstreampointeradvanceoffsets.htm
-old-project : stream
-ms.assetid : 0377371b-b755-4473-a449-9a85e1ca456c
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : KsStreamPointerAdvanceOffsets function [Streaming Media Devices], stream.ksstreampointeradvanceoffsets, ks/KsStreamPointerAdvanceOffsets, KsStreamPointerAdvanceOffsets, avfunc_31a73e93-c2b5-4867-9bb1-40090d0ea07e.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsStreamPointerAdvanceOffsets
+title: KsStreamPointerAdvanceOffsets function
+author: windows-driver-content
+description: The KsStreamPointerAdvanceOffsets function advances the offsets of StreamPointer.
+old-location: stream\ksstreampointeradvanceoffsets.htm
+old-project: stream
+ms.assetid: 0377371b-b755-4473-a449-9a85e1ca456c
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: KsStreamPointerAdvanceOffsets function [Streaming Media Devices], stream.ksstreampointeradvanceoffsets, ks/KsStreamPointerAdvanceOffsets, KsStreamPointerAdvanceOffsets, avfunc_31a73e93-c2b5-4867-9bb1-40090d0ea07e.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsStreamPointerAdvanceOffsets
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

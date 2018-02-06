@@ -1,41 +1,46 @@
 ---
-UID : NF:extsfns.IDebugFailureAnalysis2.GetNext
-title : IDebugFailureAnalysis2::GetNext method
-author : windows-driver-content
-description : The GetNext method searches a DebugFailureAnalysis object for the next FA entry, after a given FA entry, that satisfies conditions specified by the Tag and TagMask parameters.
-old-location : debugger\idebugfailureanalysis2_getnext.htm
-old-project : debugger
-ms.assetid : 935E4BAD-2B4E-44DD-8AE6-A0FD1FE9F2BF
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : IDebugFailureAnalysis2::GetNext, IDebugFailureAnalysis2, extsfns/IDebugFailureAnalysis2::GetNext, debugger.idebugfailureanalysis2_getnext, GetNext, IDebugFailureAnalysis2 interface [Windows Debugging], GetNext method, GetNext method [Windows Debugging], IDebugFailureAnalysis2 interface, GetNext method [Windows Debugging]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : extsfns.h
-req.include-header : 
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : extsfns.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : FA_EXTENSION_PLUGIN_PHASE
+UID: NF:extsfns.IDebugFailureAnalysis2.GetNext
+title: IDebugFailureAnalysis2::GetNext method
+author: windows-driver-content
+description: The GetNext method searches a DebugFailureAnalysis object for the next FA entry, after a given FA entry, that satisfies conditions specified by the Tag and TagMask parameters.
+old-location: debugger\idebugfailureanalysis2_getnext.htm
+old-project: debugger
+ms.assetid: 935E4BAD-2B4E-44DD-8AE6-A0FD1FE9F2BF
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: IDebugFailureAnalysis2::GetNext, IDebugFailureAnalysis2, extsfns/IDebugFailureAnalysis2::GetNext, debugger.idebugfailureanalysis2_getnext, GetNext, IDebugFailureAnalysis2 interface [Windows Debugging], GetNext method, GetNext method [Windows Debugging], IDebugFailureAnalysis2 interface, GetNext method [Windows Debugging]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: extsfns.h
+req.include-header: 
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: extsfns.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	extsfns.h
+apiname:
+-	IDebugFailureAnalysis2.GetNext
+product: Windows
+targetos: Windows
+req.typenames: FA_EXTENSION_PLUGIN_PHASE
 ---
 
 

@@ -1,41 +1,47 @@
 ---
-UID : NF:ks.KsCancelIo
-title : KsCancelIo function
-author : windows-driver-content
-description : The KsCancelIo function cancels all IRPs on the specified cancel list. If an IRP on the list does not have a cancel routine, only the cancel bit is set in the IRP. The function can be called at IRQ level DISPATCH_LEVEL or lower.
-old-location : stream\kscancelio.htm
-old-project : stream
-ms.assetid : 082a63d5-5ba5-4cd3-aea3-0184317e1e96
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.kscancelio, ksfunc_135412c3-120f-4b19-ac05-da63ab6b1ddd.xml, KsCancelIo function [Streaming Media Devices], ks/KsCancelIo, KsCancelIo
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ks.lib
-req.dll : 
-req.irql : "< DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : 
+UID: NF:ks.KsCancelIo
+title: KsCancelIo function
+author: windows-driver-content
+description: The KsCancelIo function cancels all IRPs on the specified cancel list. If an IRP on the list does not have a cancel routine, only the cancel bit is set in the IRP. The function can be called at IRQ level DISPATCH_LEVEL or lower.
+old-location: stream\kscancelio.htm
+old-project: stream
+ms.assetid: 082a63d5-5ba5-4cd3-aea3-0184317e1e96
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.kscancelio, ksfunc_135412c3-120f-4b19-ac05-da63ab6b1ddd.xml, KsCancelIo function [Streaming Media Devices], ks/KsCancelIo, KsCancelIo
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ks.lib
+req.dll: 
+req.irql: "< DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Ks.lib
+-	Ks.dll
+apiname:
+-	KsCancelIo
+product: Windows
+targetos: Windows
+req.typenames: 
 ---
 
 

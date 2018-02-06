@@ -1,41 +1,46 @@
 ---
-UID : NI:ntddser.IOCTL_SERIAL_SET_HANDFLOW
-title : IOCTL_SERIAL_SET_HANDFLOW
-author : windows-driver-content
-description : The IOCTL_SERIAL_SET_HANDFLOW request sets the configuration of handshake flow control. The serial controller driver verifies the specified handshake flow control information.
-old-location : serports\ioctl_serial_set_handflow.htm
-old-project : serports
-ms.assetid : f281eab9-f724-4bdb-9dc4-2577ef2840f0
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : serports.ioctl_serial_set_handflow, IOCTL_SERIAL_SET_HANDFLOW control code [Serial Ports], IOCTL_SERIAL_SET_HANDFLOW, ntddser/IOCTL_SERIAL_SET_HANDFLOW, serref_732613c0-4ff9-46a8-929d-e5d02be9a57c.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : ntddser.h
-req.include-header : Ntddser.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : SD_REQUEST_FUNCTION
+UID: NI:ntddser.IOCTL_SERIAL_SET_HANDFLOW
+title: IOCTL_SERIAL_SET_HANDFLOW
+author: windows-driver-content
+description: The IOCTL_SERIAL_SET_HANDFLOW request sets the configuration of handshake flow control. The serial controller driver verifies the specified handshake flow control information.
+old-location: serports\ioctl_serial_set_handflow.htm
+old-project: serports
+ms.assetid: f281eab9-f724-4bdb-9dc4-2577ef2840f0
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: serports.ioctl_serial_set_handflow, IOCTL_SERIAL_SET_HANDFLOW control code [Serial Ports], IOCTL_SERIAL_SET_HANDFLOW, ntddser/IOCTL_SERIAL_SET_HANDFLOW, serref_732613c0-4ff9-46a8-929d-e5d02be9a57c.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: ntddser.h
+req.include-header: Ntddser.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddser.h
+apiname:
+-	IOCTL_SERIAL_SET_HANDFLOW
+product: Windows
+targetos: Windows
+req.typenames: SD_REQUEST_FUNCTION
 ---
 
 # IOCTL_SERIAL_SET_HANDFLOW IOCTL

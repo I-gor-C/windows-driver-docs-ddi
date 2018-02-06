@@ -1,42 +1,47 @@
 ---
-UID : NF:ursdevice.URS_CONFIG_INIT
-title : URS_CONFIG_INIT function
-author : windows-driver-content
-description : Initializes a URS_CONFIG structure.
-old-location : buses\urs_config_init.htm
-old-project : usbref
-ms.assetid : 72229643-1177-4884-94A9-89920A5488A6
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : URS_CONFIG_INIT function [Buses], buses.urs_config_init, ursdevice/URS_CONFIG_INIT, URS_CONFIG_INIT
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ursdevice.h
-req.include-header : Urscx.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : UMDETW_ALLOCATION_USAGE
-req.product : Windows 10 or later.
+UID: NF:ursdevice.URS_CONFIG_INIT
+title: URS_CONFIG_INIT function
+author: windows-driver-content
+description: Initializes a URS_CONFIG structure.
+old-location: buses\urs_config_init.htm
+old-project: usbref
+ms.assetid: 72229643-1177-4884-94A9-89920A5488A6
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: URS_CONFIG_INIT function [Buses], buses.urs_config_init, ursdevice/URS_CONFIG_INIT, URS_CONFIG_INIT
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ursdevice.h
+req.include-header: Urscx.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ursdevice.h
+apiname:
+-	URS_CONFIG_INIT
+product: Windows
+targetos: Windows
+req.typenames: UMDETW_ALLOCATION_USAGE
+req.product: Windows 10 or later.
 ---
 
 

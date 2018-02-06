@@ -1,41 +1,46 @@
 ---
-UID : NF:ntifs.IoSetTopLevelIrp
-title : IoSetTopLevelIrp function
-author : windows-driver-content
-description : The IoSetTopLevelIrp routine sets the value of the TopLevelIrp field of the current thread.
-old-location : ifsk\iosettoplevelirp.htm
-old-project : ifsk
-ms.assetid : 10d1889b-d79c-4c06-a012-77414c88ce17
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : ntifs/IoSetTopLevelIrp, ioref_1c046677-97df-4f46-956c-108a203f83f2.xml, IoSetTopLevelIrp routine [Installable File System Drivers], IoSetTopLevelIrp, ifsk.iosettoplevelirp
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ntifs.h
-req.include-header : Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : TOKEN_TYPE
+UID: NF:ntifs.IoSetTopLevelIrp
+title: IoSetTopLevelIrp function
+author: windows-driver-content
+description: The IoSetTopLevelIrp routine sets the value of the TopLevelIrp field of the current thread.
+old-location: ifsk\iosettoplevelirp.htm
+old-project: ifsk
+ms.assetid: 10d1889b-d79c-4c06-a012-77414c88ce17
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: ntifs/IoSetTopLevelIrp, ioref_1c046677-97df-4f46-956c-108a203f83f2.xml, IoSetTopLevelIrp routine [Installable File System Drivers], IoSetTopLevelIrp, ifsk.iosettoplevelirp
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ntifs.h
+req.include-header: Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	IoSetTopLevelIrp
+product: Windows
+targetos: Windows
+req.typenames: TOKEN_TYPE
 ---
 
 

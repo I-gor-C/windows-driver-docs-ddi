@@ -1,41 +1,46 @@
 ---
-UID : NC:minitape.TAPE_EXTENSION_INIT_ROUTINE
-title : TAPE_EXTENSION_INIT_ROUTINE
-author : windows-driver-content
-description : ExtensionInit initializes an optional, driver-specific context area. This routine is called by TapeClassInitialize when the tape miniclass driver is loaded. This routine is optional.
-old-location : storage\tapeminiextensioninit.htm
-old-project : storage
-ms.assetid : 4837b9c2-a3c1-4574-8f5b-4bf7c7d037a0
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storage.tapeminiextensioninit, (*TAPE_EXTENSION_INIT_ROUTINE) routine [Storage Devices], (*TAPE_EXTENSION_INIT_ROUTINE), TAPE_EXTENSION_INIT_ROUTINE, TAPE_EXTENSION_INIT_ROUTINE, minitape/(*TAPE_EXTENSION_INIT_ROUTINE), tapemini_858bcb61-472e-45c4-8438-060eb61f1c4a.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : minitape.h
-req.include-header : Minitape.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPROCESSOR_NUMBER, PROCESSOR_NUMBER"
+UID: NC:minitape.TAPE_EXTENSION_INIT_ROUTINE
+title: TAPE_EXTENSION_INIT_ROUTINE
+author: windows-driver-content
+description: ExtensionInit initializes an optional, driver-specific context area. This routine is called by TapeClassInitialize when the tape miniclass driver is loaded. This routine is optional.
+old-location: storage\tapeminiextensioninit.htm
+old-project: storage
+ms.assetid: 4837b9c2-a3c1-4574-8f5b-4bf7c7d037a0
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storage.tapeminiextensioninit, (*TAPE_EXTENSION_INIT_ROUTINE) routine [Storage Devices], (*TAPE_EXTENSION_INIT_ROUTINE), TAPE_EXTENSION_INIT_ROUTINE, TAPE_EXTENSION_INIT_ROUTINE, minitape/(*TAPE_EXTENSION_INIT_ROUTINE), tapemini_858bcb61-472e-45c4-8438-060eb61f1c4a.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: minitape.h
+req.include-header: Minitape.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	minitape.h
+apiname:
+-	(*TAPE_EXTENSION_INIT_ROUTINE)
+product: Windows
+targetos: Windows
+req.typenames: "*PPROCESSOR_NUMBER, PROCESSOR_NUMBER"
 ---
 
 

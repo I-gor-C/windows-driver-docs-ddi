@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_GETINFO
-title : PFND3DDDI_GETINFO
-author : windows-driver-content
-description : The GetInfo function retrieves information about the specified display device.
-old-location : display\getinfo.htm
-old-project : display
-ms.assetid : dcc0519e-f919-48bc-829f-416648de0b40
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.getinfo, GetInfo callback function [Display Devices], GetInfo, PFND3DDDI_GETINFO, PFND3DDDI_GETINFO, d3dumddi/GetInfo, UserModeDisplayDriver_Functions_21bbab23-9804-468e-80fb-6618f8356ac7.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_GETINFO
+title: PFND3DDDI_GETINFO
+author: windows-driver-content
+description: The GetInfo function retrieves information about the specified display device.
+old-location: display\getinfo.htm
+old-project: display
+ms.assetid: dcc0519e-f919-48bc-829f-416648de0b40
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.getinfo, GetInfo callback function [Display Devices], GetInfo, PFND3DDDI_GETINFO, PFND3DDDI_GETINFO, d3dumddi/GetInfo, UserModeDisplayDriver_Functions_21bbab23-9804-468e-80fb-6618f8356ac7.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	GetInfo
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

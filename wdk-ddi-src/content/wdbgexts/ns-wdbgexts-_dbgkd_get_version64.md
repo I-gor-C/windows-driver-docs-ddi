@@ -1,42 +1,47 @@
 ---
-UID : NS:wdbgexts._DBGKD_GET_VERSION64
-title : "_DBGKD_GET_VERSION64"
-author : windows-driver-content
-description : The IG_GET_KERNEL_VERSION Ioctl operation receives information related to the operating system version of the target.
-old-location : debugger\ig_get_kernel_version.htm
-old-project : debugger
-ms.assetid : 692e58b5-74ea-48f3-a9c2-81953b7d600d
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : PDBGKD_GET_VERSION64 structure pointer [Windows Debugging], PDBGKD_GET_VERSION64, debugger.ig_get_kernel_version, _DBGKD_GET_VERSION64, *PDBGKD_GET_VERSION64, WdbgExts_Ref_33e7f185-3831-439b-9e92-8d942627f66b.xml, DBGKD_GET_VERSION64 structure [Windows Debugging], wdbgexts/DBGKD_GET_VERSION64, wdbgexts/PDBGKD_GET_VERSION64, DBGKD_GET_VERSION64
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : wdbgexts.h
-req.include-header : Wdbgexts.h, Dbgeng.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DBGKD_GET_VERSION64, *PDBGKD_GET_VERSION64
-req.product : Windows 10 or later.
+UID: NS:wdbgexts._DBGKD_GET_VERSION64
+title: "_DBGKD_GET_VERSION64"
+author: windows-driver-content
+description: The IG_GET_KERNEL_VERSION Ioctl operation receives information related to the operating system version of the target.
+old-location: debugger\ig_get_kernel_version.htm
+old-project: debugger
+ms.assetid: 692e58b5-74ea-48f3-a9c2-81953b7d600d
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: PDBGKD_GET_VERSION64 structure pointer [Windows Debugging], PDBGKD_GET_VERSION64, debugger.ig_get_kernel_version, _DBGKD_GET_VERSION64, *PDBGKD_GET_VERSION64, WdbgExts_Ref_33e7f185-3831-439b-9e92-8d942627f66b.xml, DBGKD_GET_VERSION64 structure [Windows Debugging], wdbgexts/DBGKD_GET_VERSION64, wdbgexts/PDBGKD_GET_VERSION64, DBGKD_GET_VERSION64
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: wdbgexts.h
+req.include-header: Wdbgexts.h, Dbgeng.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	wdbgexts.h
+apiname:
+-	DBGKD_GET_VERSION64
+product: Windows
+targetos: Windows
+req.typenames: DBGKD_GET_VERSION64, *PDBGKD_GET_VERSION64
+req.product: Windows 10 or later.
 ---
 
 # _DBGKD_GET_VERSION64 structure

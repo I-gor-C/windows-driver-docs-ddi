@@ -1,42 +1,47 @@
 ---
-UID : NS:strmini._HW_STREAM_DESCRIPTOR
-title : "_HW_STREAM_DESCRIPTOR"
-author : windows-driver-content
-description : The minidriver uses the HW_STREAM_DESCRIPTOR structure to return stream information to the stream class driver.
-old-location : stream\hw_stream_descriptor.htm
-old-project : stream
-ms.assetid : ebc44350-3093-44ba-a2c9-73133fd18db7
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : PHW_STREAM_DESCRIPTOR, strmini/HW_STREAM_DESCRIPTOR, PHW_STREAM_DESCRIPTOR structure pointer [Streaming Media Devices], _HW_STREAM_DESCRIPTOR, strclass-struct_57b4a9ea-44c1-4584-94f4-060a3fa58bf1.xml, HW_STREAM_DESCRIPTOR structure [Streaming Media Devices], stream.hw_stream_descriptor, strmini/PHW_STREAM_DESCRIPTOR, *PHW_STREAM_DESCRIPTOR, HW_STREAM_DESCRIPTOR
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : strmini.h
-req.include-header : Strmini.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HW_STREAM_DESCRIPTOR, *PHW_STREAM_DESCRIPTOR
-req.product : Windows 10 or later.
+UID: NS:strmini._HW_STREAM_DESCRIPTOR
+title: "_HW_STREAM_DESCRIPTOR"
+author: windows-driver-content
+description: The minidriver uses the HW_STREAM_DESCRIPTOR structure to return stream information to the stream class driver.
+old-location: stream\hw_stream_descriptor.htm
+old-project: stream
+ms.assetid: ebc44350-3093-44ba-a2c9-73133fd18db7
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: PHW_STREAM_DESCRIPTOR, strmini/HW_STREAM_DESCRIPTOR, PHW_STREAM_DESCRIPTOR structure pointer [Streaming Media Devices], _HW_STREAM_DESCRIPTOR, strclass-struct_57b4a9ea-44c1-4584-94f4-060a3fa58bf1.xml, HW_STREAM_DESCRIPTOR structure [Streaming Media Devices], stream.hw_stream_descriptor, strmini/PHW_STREAM_DESCRIPTOR, *PHW_STREAM_DESCRIPTOR, HW_STREAM_DESCRIPTOR
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: strmini.h
+req.include-header: Strmini.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	strmini.h
+apiname:
+-	HW_STREAM_DESCRIPTOR
+product: Windows
+targetos: Windows
+req.typenames: HW_STREAM_DESCRIPTOR, *PHW_STREAM_DESCRIPTOR
+req.product: Windows 10 or later.
 ---
 
 # _HW_STREAM_DESCRIPTOR structure

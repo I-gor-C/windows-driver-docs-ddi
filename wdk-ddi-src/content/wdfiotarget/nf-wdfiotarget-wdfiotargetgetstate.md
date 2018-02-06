@@ -1,42 +1,50 @@
 ---
-UID : NF:wdfiotarget.WdfIoTargetGetState
-title : WdfIoTargetGetState function
-author : windows-driver-content
-description : The WdfIoTargetGetState method returns state information for a local or remote I/O target.
-old-location : wdf\wdfiotargetgetstate.htm
-old-project : wdf
-ms.assetid : 38e22922-d9de-4dfd-9da9-c131b789f5d6
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : WdfIoTargetGetState, kmdf.wdfiotargetgetstate, PFN_WDFIOTARGETGETSTATE, wdfiotarget/WdfIoTargetGetState, DFIOTargetRef_a11b8879-0766-4071-b1bd-c4cd43a0973b.xml, WdfIoTargetGetState method, wdf.wdfiotargetgetstate
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfiotarget.h
-req.include-header : Wdf.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PWDF_IO_TARGET_STATE, WDF_IO_TARGET_STATE"
-req.product : Windows 10 or later.
+UID: NF:wdfiotarget.WdfIoTargetGetState
+title: WdfIoTargetGetState function
+author: windows-driver-content
+description: The WdfIoTargetGetState method returns state information for a local or remote I/O target.
+old-location: wdf\wdfiotargetgetstate.htm
+old-project: wdf
+ms.assetid: 38e22922-d9de-4dfd-9da9-c131b789f5d6
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: WdfIoTargetGetState, kmdf.wdfiotargetgetstate, PFN_WDFIOTARGETGETSTATE, wdfiotarget/WdfIoTargetGetState, DFIOTargetRef_a11b8879-0766-4071-b1bd-c4cd43a0973b.xml, WdfIoTargetGetState method, wdf.wdfiotargetgetstate
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfiotarget.h
+req.include-header: Wdf.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+-	WUDFx02000.dll
+-	WUDFx02000.dll.dll
+apiname:
+-	WdfIoTargetGetState
+product: Windows
+targetos: Windows
+req.typenames: "*PWDF_IO_TARGET_STATE, WDF_IO_TARGET_STATE"
+req.product: Windows 10 or later.
 ---
 
 

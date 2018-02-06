@@ -1,41 +1,46 @@
 ---
-UID : NF:midatlax.RxCreateMidAtlas
-title : RxCreateMidAtlas function
-author : windows-driver-content
-description : RxCreateMidAtlas allocates a new instance of MID_ATLAS data structure and initializes it.
-old-location : ifsk\rxcreatemidatlas.htm
-old-project : ifsk
-ms.assetid : 7c3fed89-a4e1-436f-9cbb-e140ad42bb13
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : RxCreateMidAtlas function [Installable File System Drivers], ifsk.rxcreatemidatlas, midatlax/RxCreateMidAtlas, rxref_539434e3-e1ea-4c97-b480-51bfe40eb44e.xml, RxCreateMidAtlas
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : midatlax.h
-req.include-header : Midatlax.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PMCD_INIT_DATA, MCD_INIT_DATA"
+UID: NF:midatlax.RxCreateMidAtlas
+title: RxCreateMidAtlas function
+author: windows-driver-content
+description: RxCreateMidAtlas allocates a new instance of MID_ATLAS data structure and initializes it.
+old-location: ifsk\rxcreatemidatlas.htm
+old-project: ifsk
+ms.assetid: 7c3fed89-a4e1-436f-9cbb-e140ad42bb13
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: RxCreateMidAtlas function [Installable File System Drivers], ifsk.rxcreatemidatlas, midatlax/RxCreateMidAtlas, rxref_539434e3-e1ea-4c97-b480-51bfe40eb44e.xml, RxCreateMidAtlas
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: midatlax.h
+req.include-header: Midatlax.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	midatlax.h
+apiname:
+-	RxCreateMidAtlas
+product: Windows
+targetos: Windows
+req.typenames: "*PMCD_INIT_DATA, MCD_INIT_DATA"
 ---
 
 

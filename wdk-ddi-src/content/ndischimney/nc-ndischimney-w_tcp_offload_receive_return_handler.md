@@ -1,41 +1,46 @@
 ---
-UID : NC:ndischimney.W_TCP_OFFLOAD_RECEIVE_RETURN_HANDLER
-title : W_TCP_OFFLOAD_RECEIVE_RETURN_HANDLER
-author : windows-driver-content
-description : NDIS calls the MiniportTcpOffloadReceiveReturn function to return ownership of NET_BUFFER_LIST and associated structures to an offload target.
-old-location : netvista\miniporttcpoffloadreceivereturn.htm
-old-project : netvista
-ms.assetid : b746f58d-d029-4fcd-a59d-baba037fc38e
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.miniporttcpoffloadreceivereturn, MiniportTcpOffloadReceiveReturn callback function [Network Drivers Starting with Windows Vista], MiniportTcpOffloadReceiveReturn, W_TCP_OFFLOAD_RECEIVE_RETURN_HANDLER, W_TCP_OFFLOAD_RECEIVE_RETURN_HANDLER, ndischimney/MiniportTcpOffloadReceiveReturn, tcp_chim_miniport_func_c6477511-6f31-4a37-9b28-d157e1fa09af.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ndischimney.h
-req.include-header : Ndischimney.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PD_BUFFER_VIRTUAL_SUBNET_INFO
+UID: NC:ndischimney.W_TCP_OFFLOAD_RECEIVE_RETURN_HANDLER
+title: W_TCP_OFFLOAD_RECEIVE_RETURN_HANDLER
+author: windows-driver-content
+description: NDIS calls the MiniportTcpOffloadReceiveReturn function to return ownership of NET_BUFFER_LIST and associated structures to an offload target.
+old-location: netvista\miniporttcpoffloadreceivereturn.htm
+old-project: netvista
+ms.assetid: b746f58d-d029-4fcd-a59d-baba037fc38e
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.miniporttcpoffloadreceivereturn, MiniportTcpOffloadReceiveReturn callback function [Network Drivers Starting with Windows Vista], MiniportTcpOffloadReceiveReturn, W_TCP_OFFLOAD_RECEIVE_RETURN_HANDLER, W_TCP_OFFLOAD_RECEIVE_RETURN_HANDLER, ndischimney/MiniportTcpOffloadReceiveReturn, tcp_chim_miniport_func_c6477511-6f31-4a37-9b28-d157e1fa09af.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ndischimney.h
+req.include-header: Ndischimney.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Ndischimney.h
+apiname:
+-	MiniportTcpOffloadReceiveReturn
+product: Windows
+targetos: Windows
+req.typenames: PD_BUFFER_VIRTUAL_SUBNET_INFO
 ---
 
 

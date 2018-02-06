@@ -1,42 +1,47 @@
 ---
-UID : NE:wudfinterrupt._WDF_INTERRUPT_PRIORITY
-title : "_WDF_INTERRUPT_PRIORITY"
-author : windows-driver-content
-description : The WDF_INTERRUPT_PRIORITY enumeration type identifies relative priorities for device interrupts.
-old-location : wdf\wdf_interrupt_priority_umdf.htm
-old-project : wdf
-ms.assetid : ECAB84B8-1C39-473C-A6AE-41D1EBDB1FF4
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wudfinterrupt/WdfIrqPriorityUndefined, wdf.wdf_interrupt_priority_umdf, WDF_INTERRUPT_PRIORITY, WdfIrqPriorityHigh, umdf.wdf_interrupt_priority, WdfIrqPriorityUndefined, wudfinterrupt/WDF_INTERRUPT_PRIORITY, wudfinterrupt/WdfIrqPriorityNormal, wudfinterrupt/WdfIrqPriorityHigh, PWDF_INTERRUPT_PRIORITY, PWDF_INTERRUPT_PRIORITY enumeration pointer, _WDF_INTERRUPT_PRIORITY, *PWDF_INTERRUPT_PRIORITY, wudfinterrupt/WdfIrqPriorityLow, WdfIrqPriorityLow, WDF_INTERRUPT_PRIORITY enumeration, WdfIrqPriorityNormal, wudfinterrupt/PWDF_INTERRUPT_PRIORITY
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : enum
-req.header : wudfinterrupt.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.11
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_INTERRUPT_PRIORITY, *PWDF_INTERRUPT_PRIORITY
-req.product : Windows 10 or later.
+UID: NE:wudfinterrupt._WDF_INTERRUPT_PRIORITY
+title: "_WDF_INTERRUPT_PRIORITY"
+author: windows-driver-content
+description: The WDF_INTERRUPT_PRIORITY enumeration type identifies relative priorities for device interrupts.
+old-location: wdf\wdf_interrupt_priority_umdf.htm
+old-project: wdf
+ms.assetid: ECAB84B8-1C39-473C-A6AE-41D1EBDB1FF4
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wudfinterrupt/WdfIrqPriorityUndefined, wdf.wdf_interrupt_priority_umdf, WDF_INTERRUPT_PRIORITY, WdfIrqPriorityHigh, umdf.wdf_interrupt_priority, WdfIrqPriorityUndefined, wudfinterrupt/WDF_INTERRUPT_PRIORITY, wudfinterrupt/WdfIrqPriorityNormal, wudfinterrupt/WdfIrqPriorityHigh, PWDF_INTERRUPT_PRIORITY, PWDF_INTERRUPT_PRIORITY enumeration pointer, _WDF_INTERRUPT_PRIORITY, *PWDF_INTERRUPT_PRIORITY, wudfinterrupt/WdfIrqPriorityLow, WdfIrqPriorityLow, WDF_INTERRUPT_PRIORITY enumeration, WdfIrqPriorityNormal, wudfinterrupt/PWDF_INTERRUPT_PRIORITY
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: enum
+req.header: wudfinterrupt.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.11
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Wudfinterrupt.h
+apiname:
+-	WDF_INTERRUPT_PRIORITY
+product: Windows
+targetos: Windows
+req.typenames: WDF_INTERRUPT_PRIORITY, *PWDF_INTERRUPT_PRIORITY
+req.product: Windows 10 or later.
 ---
 
 # _WDF_INTERRUPT_PRIORITY Enumeration
@@ -58,31 +63,31 @@ typedef enum _WDF_INTERRUPT_PRIORITY {
 ## Constants
 
 <table>
-
-<tr>
-<td>WdfIrqPriorityHigh</td>
-<td>The device's interrupt has a relatively high priority, typically because the interrupt must be serviced immediately.</td>
-</tr>
-
-<tr>
-<td>WdfIrqPriorityLow</td>
-<td>The device's interrupt has a relatively low priority, typically because the interrupt does not have to be serviced immediately.</td>
-</tr>
-
-<tr>
-<td>WdfIrqPriorityNormal</td>
-<td>The device's interrupt priority is neither relatively low nor relatively high.</td>
-</tr>
-
-<tr>
-<td>WdfIrqPriorityUndefined</td>
-<td>The relative priority of a device's interrupt is undefined.</td>
-</tr>
+            
+                <tr>
+                    <td>WdfIrqPriorityHigh</td>
+                    <td>The device's interrupt has a relatively high priority, typically because the interrupt must be serviced immediately.</td>
+                </tr>
+            
+                <tr>
+                    <td>WdfIrqPriorityLow</td>
+                    <td>The device's interrupt has a relatively low priority, typically because the interrupt does not have to be serviced immediately.</td>
+                </tr>
+            
+                <tr>
+                    <td>WdfIrqPriorityNormal</td>
+                    <td>The device's interrupt priority is neither relatively low nor relatively high.</td>
+                </tr>
+            
+                <tr>
+                    <td>WdfIrqPriorityUndefined</td>
+                    <td>The relative priority of a device's interrupt is undefined.</td>
+                </tr>
 </table>
 
-## Remarks
+    ## Remarks
 
-The <a href="..\wudfinterrupt\ne-wudfinterrupt-_wdf_interrupt_priority.md">WDF_INTERRUPT_PRIORITY</a> enumeration type is used as input to the <a href="https://msdn.microsoft.com/EDBCBB37-41A4-4234-BE8C-4C8739BC287B">IWDFInterrupt::SetPolicy</a> method.
+        The <a href="..\wudfinterrupt\ne-wudfinterrupt-_wdf_interrupt_priority.md">WDF_INTERRUPT_PRIORITY</a> enumeration type is used as input to the <a href="https://msdn.microsoft.com/EDBCBB37-41A4-4234-BE8C-4C8739BC287B">IWDFInterrupt::SetPolicy</a> method.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -90,9 +95,9 @@ The <a href="..\wudfinterrupt\ne-wudfinterrupt-_wdf_interrupt_priority.md">WDF_I
 | **Minimum UMDF version** | 1.11 |
 | **Header** | wudfinterrupt.h |
 
-## See Also
+    ## See Also
 
-<a href="https://msdn.microsoft.com/EDBCBB37-41A4-4234-BE8C-4C8739BC287B">IWDFInterrupt::SetPolicy</a>
+        <a href="https://msdn.microsoft.com/EDBCBB37-41A4-4234-BE8C-4C8739BC287B">IWDFInterrupt::SetPolicy</a>
 
  
 

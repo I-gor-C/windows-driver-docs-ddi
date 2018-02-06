@@ -1,42 +1,47 @@
 ---
-UID : NF:wudfddi.IWDFIoRequest2.Requeue
-title : IWDFIoRequest2::Requeue method
-author : windows-driver-content
-description : The Requeue method returns an I/O request to the head of the I/O queue from which it was delivered to the driver.
-old-location : wdf\iwdfiorequest2_requeue.htm
-old-project : wdf
-ms.assetid : 1e33f284-6cb9-426f-a900-76b827341927
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : wdf.iwdfiorequest2_requeue, IWDFIoRequest2::Requeue, Requeue method, IWDFIoRequest2, Requeue method, IWDFIoRequest2 interface, Requeue, IWDFIoRequest2 interface, Requeue method, umdf.iwdfiorequest2_requeue, UMDFRequestObjectRef_e86bd6e8-ed4b-42e8-a32f-29c4415e1384.xml, wudfddi/IWDFIoRequest2::Requeue
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : wudfddi.h
-req.include-header : Wudfddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 1.9
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : Unavailable in UMDF 2.0 and later.
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : wudfddi.h
-req.dll : WUDFx.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : POWER_ACTION, *PPOWER_ACTION
-req.product : Windows 10 or later.
+UID: NF:wudfddi.IWDFIoRequest2.Requeue
+title: IWDFIoRequest2::Requeue method
+author: windows-driver-content
+description: The Requeue method returns an I/O request to the head of the I/O queue from which it was delivered to the driver.
+old-location: wdf\iwdfiorequest2_requeue.htm
+old-project: wdf
+ms.assetid: 1e33f284-6cb9-426f-a900-76b827341927
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: wdf.iwdfiorequest2_requeue, IWDFIoRequest2::Requeue, Requeue method, IWDFIoRequest2, Requeue method, IWDFIoRequest2 interface, Requeue, IWDFIoRequest2 interface, Requeue method, umdf.iwdfiorequest2_requeue, UMDFRequestObjectRef_e86bd6e8-ed4b-42e8-a32f-29c4415e1384.xml, wudfddi/IWDFIoRequest2::Requeue
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: wudfddi.h
+req.include-header: Wudfddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 1.9
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: Unavailable in UMDF 2.0 and later.
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: wudfddi.h
+req.dll: WUDFx.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	WUDFx.dll
+apiname:
+-	IWDFIoRequest2.Requeue
+product: Windows
+targetos: Windows
+req.typenames: POWER_ACTION, *PPOWER_ACTION
+req.product: Windows 10 or later.
 ---
 
 

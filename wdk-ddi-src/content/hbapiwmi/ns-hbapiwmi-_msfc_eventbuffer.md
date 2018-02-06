@@ -1,41 +1,46 @@
 ---
-UID : NS:hbapiwmi._MSFC_EventBuffer
-title : "_MSFC_EventBuffer"
-author : windows-driver-content
-description : The MSFC_EventBuffer structure is used in conjunction with the GetEventBuffer method to retrieve the next events in the HBA's event queue.
-old-location : storage\msfc_eventbuffer.htm
-old-project : storage
-ms.assetid : 7d41c092-251e-4f93-b5be-ff989b37196b
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : hbapiwmi/MSFC_EventBuffer, structs-Fibre_d89430e7-c05b-4314-946e-fd8e70d938ac.xml, PMSFC_EventBuffer structure pointer [Storage Devices], _MSFC_EventBuffer, storage.msfc_eventbuffer, MSFC_EventBuffer structure [Storage Devices], hbapiwmi/PMSFC_EventBuffer, MSFC_EventBuffer, PMSFC_EventBuffer, *PMSFC_EventBuffer
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : hbapiwmi.h
-req.include-header : Hbapiwmi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PMSFC_EventBuffer, MSFC_EventBuffer"
+UID: NS:hbapiwmi._MSFC_EventBuffer
+title: "_MSFC_EventBuffer"
+author: windows-driver-content
+description: The MSFC_EventBuffer structure is used in conjunction with the GetEventBuffer method to retrieve the next events in the HBA's event queue.
+old-location: storage\msfc_eventbuffer.htm
+old-project: storage
+ms.assetid: 7d41c092-251e-4f93-b5be-ff989b37196b
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: hbapiwmi/MSFC_EventBuffer, structs-Fibre_d89430e7-c05b-4314-946e-fd8e70d938ac.xml, PMSFC_EventBuffer structure pointer [Storage Devices], _MSFC_EventBuffer, storage.msfc_eventbuffer, MSFC_EventBuffer structure [Storage Devices], hbapiwmi/PMSFC_EventBuffer, MSFC_EventBuffer, PMSFC_EventBuffer, *PMSFC_EventBuffer
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: hbapiwmi.h
+req.include-header: Hbapiwmi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hbapiwmi.h
+apiname:
+-	MSFC_EventBuffer
+product: Windows
+targetos: Windows
+req.typenames: "*PMSFC_EventBuffer, MSFC_EventBuffer"
 ---
 
 # _MSFC_EventBuffer structure

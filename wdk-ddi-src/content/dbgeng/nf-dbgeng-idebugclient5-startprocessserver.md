@@ -1,41 +1,50 @@
 ---
-UID : NF:dbgeng.IDebugClient5.StartProcessServer
-title : IDebugClient5::StartProcessServer method
-author : windows-driver-content
-description : The StartProcessServer method starts a process server.
-old-location : debugger\startprocessserver.htm
-old-project : debugger
-ms.assetid : dc0bade2-7781-4c08-aea5-0ff4809d3321
-ms.author : windowsdriverdev
-ms.date : 1/19/2018
-ms.keywords : dbgeng/IDebugClient2::StartProcessServer, StartProcessServer, IDebugClient3 interface [Windows Debugging], StartProcessServer method, IDebugClient5::StartProcessServer, IDebugClient interface [Windows Debugging], StartProcessServer method, dbgeng/IDebugClient4::StartProcessServer, IDebugClient5 interface [Windows Debugging], StartProcessServer method, StartProcessServer method [Windows Debugging], IDebugClient5 interface, StartProcessServer method [Windows Debugging], IDebugClient4 interface, IDebugClient_de137b80-ffd7-4399-85a3-50b3c870c28c.xml, IDebugClient4 interface [Windows Debugging], StartProcessServer method, IDebugClient2 interface [Windows Debugging], StartProcessServer method, IDebugClient4::StartProcessServer, StartProcessServer method [Windows Debugging], IDebugClient::StartProcessServer, StartProcessServer method [Windows Debugging], IDebugClient2 interface, StartProcessServer method [Windows Debugging], IDebugClient3 interface, IDebugClient2::StartProcessServer, dbgeng/IDebugClient3::StartProcessServer, dbgeng/IDebugClient::StartProcessServer, debugger.startprocessserver, IDebugClient3::StartProcessServer, StartProcessServer method [Windows Debugging], IDebugClient interface, IDebugClient5, dbgeng/IDebugClient5::StartProcessServer
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dbgeng.h
-req.include-header : Dbgeng.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dbgeng.h
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DOT4_ACTIVITY, *PDOT4_ACTIVITY
+UID: NF:dbgeng.IDebugClient5.StartProcessServer
+title: IDebugClient5::StartProcessServer method
+author: windows-driver-content
+description: The StartProcessServer method starts a process server.
+old-location: debugger\startprocessserver.htm
+old-project: debugger
+ms.assetid: dc0bade2-7781-4c08-aea5-0ff4809d3321
+ms.author: windowsdriverdev
+ms.date: 1/19/2018
+ms.keywords: dbgeng/IDebugClient2::StartProcessServer, StartProcessServer, IDebugClient3 interface [Windows Debugging], StartProcessServer method, IDebugClient5::StartProcessServer, IDebugClient interface [Windows Debugging], StartProcessServer method, dbgeng/IDebugClient4::StartProcessServer, IDebugClient5 interface [Windows Debugging], StartProcessServer method, StartProcessServer method [Windows Debugging], IDebugClient5 interface, StartProcessServer method [Windows Debugging], IDebugClient4 interface, IDebugClient_de137b80-ffd7-4399-85a3-50b3c870c28c.xml, IDebugClient4 interface [Windows Debugging], StartProcessServer method, IDebugClient2 interface [Windows Debugging], StartProcessServer method, IDebugClient4::StartProcessServer, StartProcessServer method [Windows Debugging], IDebugClient::StartProcessServer, StartProcessServer method [Windows Debugging], IDebugClient2 interface, StartProcessServer method [Windows Debugging], IDebugClient3 interface, IDebugClient2::StartProcessServer, dbgeng/IDebugClient3::StartProcessServer, dbgeng/IDebugClient::StartProcessServer, debugger.startprocessserver, IDebugClient3::StartProcessServer, StartProcessServer method [Windows Debugging], IDebugClient interface, IDebugClient5, dbgeng/IDebugClient5::StartProcessServer
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dbgeng.h
+req.include-header: Dbgeng.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dbgeng.h
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dbgeng.h
+apiname:
+-	IDebugClient.StartProcessServer
+-	IDebugClient2.StartProcessServer
+-	IDebugClient3.StartProcessServer
+-	IDebugClient4.StartProcessServer
+-	IDebugClient5.StartProcessServer
+product: Windows
+targetos: Windows
+req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 

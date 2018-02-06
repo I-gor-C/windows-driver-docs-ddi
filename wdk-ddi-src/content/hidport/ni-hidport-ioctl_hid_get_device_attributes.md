@@ -1,41 +1,46 @@
 ---
-UID : NI:hidport.IOCTL_HID_GET_DEVICE_ATTRIBUTES
-title : IOCTL_HID_GET_DEVICE_ATTRIBUTES
-author : windows-driver-content
-description : The IOCTL_HID_GET_DEVICE_ATTRIBUTES request obtains a HIDClass device's attributes in a HID_DEVICE_ATTRIBUTES structure.
-old-location : hid\ioctl_hid_get_device_attributes.htm
-old-project : hid
-ms.assetid : ee68c045-e99a-471d-ae22-396673d68168
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : hid.ioctl_hid_get_device_attributes, IOCTL_HID_GET_DEVICE_ATTRIBUTES control code [Human Input Devices], IOCTL_HID_GET_DEVICE_ATTRIBUTES, hidport/IOCTL_HID_GET_DEVICE_ATTRIBUTES, hidioreq_417c2e10-9ca8-4a9f-8a30-1ff401b65b13.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : ioctl
-req.header : hidport.h
-req.include-header : Hidport.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : USAGE_AND_PAGE, *PUSAGE_AND_PAGE
+UID: NI:hidport.IOCTL_HID_GET_DEVICE_ATTRIBUTES
+title: IOCTL_HID_GET_DEVICE_ATTRIBUTES
+author: windows-driver-content
+description: The IOCTL_HID_GET_DEVICE_ATTRIBUTES request obtains a HIDClass device's attributes in a HID_DEVICE_ATTRIBUTES structure.
+old-location: hid\ioctl_hid_get_device_attributes.htm
+old-project: hid
+ms.assetid: ee68c045-e99a-471d-ae22-396673d68168
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: hid.ioctl_hid_get_device_attributes, IOCTL_HID_GET_DEVICE_ATTRIBUTES control code [Human Input Devices], IOCTL_HID_GET_DEVICE_ATTRIBUTES, hidport/IOCTL_HID_GET_DEVICE_ATTRIBUTES, hidioreq_417c2e10-9ca8-4a9f-8a30-1ff401b65b13.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: ioctl
+req.header: hidport.h
+req.include-header: Hidport.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hidport.h
+apiname:
+-	IOCTL_HID_GET_DEVICE_ATTRIBUTES
+product: Windows
+targetos: Windows
+req.typenames: USAGE_AND_PAGE, *PUSAGE_AND_PAGE
 ---
 
 # IOCTL_HID_GET_DEVICE_ATTRIBUTES IOCTL

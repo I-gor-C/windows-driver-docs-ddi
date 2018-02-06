@@ -1,42 +1,50 @@
 ---
-UID : NF:wdfusb.WdfUsbInterfaceGetInterfaceNumber
-title : WdfUsbInterfaceGetInterfaceNumber function
-author : windows-driver-content
-description : The WdfUsbInterfaceGetInterfaceNumber method returns the interface number of a specified USB interface object.
-old-location : wdf\wdfusbinterfacegetinterfacenumber.htm
-old-project : wdf
-ms.assetid : bc39e3ae-6899-423d-be1d-b3322efface8
-ms.author : windowsdriverdev
-ms.date : 1/11/2018
-ms.keywords : DFUsbRef_035fbae3-67d4-4df6-8718-30851a0d60ca.xml, kmdf.wdfusbinterfacegetinterfacenumber, WdfUsbInterfaceGetInterfaceNumber, WdfUsbInterfaceGetInterfaceNumber method, wdfusb/WdfUsbInterfaceGetInterfaceNumber, PFN_WDFUSBINTERFACEGETINTERFACENUMBER, wdf.wdfusbinterfacegetinterfacenumber
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdfusb.h
-req.include-header : Wdfusb.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 1.0
-req.umdf-ver : 2.0
-req.ddi-compliance : DriverCreate, KmdfIrql, KmdfIrql2, UsbKmdfIrql, UsbKmdfIrql2
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
-req.dll : 
-req.irql : "<=DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdfusb.WdfUsbInterfaceGetInterfaceNumber
+title: WdfUsbInterfaceGetInterfaceNumber function
+author: windows-driver-content
+description: The WdfUsbInterfaceGetInterfaceNumber method returns the interface number of a specified USB interface object.
+old-location: wdf\wdfusbinterfacegetinterfacenumber.htm
+old-project: wdf
+ms.assetid: bc39e3ae-6899-423d-be1d-b3322efface8
+ms.author: windowsdriverdev
+ms.date: 1/11/2018
+ms.keywords: DFUsbRef_035fbae3-67d4-4df6-8718-30851a0d60ca.xml, kmdf.wdfusbinterfacegetinterfacenumber, WdfUsbInterfaceGetInterfaceNumber, WdfUsbInterfaceGetInterfaceNumber method, wdfusb/WdfUsbInterfaceGetInterfaceNumber, PFN_WDFUSBINTERFACEGETINTERFACENUMBER, wdf.wdfusbinterfacegetinterfacenumber
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdfusb.h
+req.include-header: Wdfusb.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 1.0
+req.umdf-ver: 2.0
+req.ddi-compliance: DriverCreate, KmdfIrql, KmdfIrql2, UsbKmdfIrql, UsbKmdfIrql2
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
+req.dll: 
+req.irql: "<=DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Wdf01000.sys
+-	Wdf01000.sys.dll
+-	WUDFx02000.dll
+-	WUDFx02000.dll.dll
+apiname:
+-	WdfUsbInterfaceGetInterfaceNumber
+product: Windows
+targetos: Windows
+req.typenames: WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
+req.product: Windows 10 or later.
 ---
 
 

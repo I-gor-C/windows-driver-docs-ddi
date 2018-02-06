@@ -1,41 +1,46 @@
 ---
-UID : NS:d3dumddi._DXVADDI_PRIVATEBUFFER
-title : "_DXVADDI_PRIVATEBUFFER"
-author : windows-driver-content
-description : The DXVADDI_PRIVATEBUFFER structure describes a private buffer that a nonstandard decoder uses to perform a decode operation.
-old-location : display\dxvaddi_privatebuffer.htm
-old-project : display
-ms.assetid : 3e41472c-4c9d-4727-af08-a350e1967ef0
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : d3dumddi/DXVADDI_PRIVATEBUFFER, DXVADDI_PRIVATEBUFFER structure [Display Devices], display.dxvaddi_privatebuffer, DXVA2_Structs_90012dba-8a0c-4685-a528-1a57265e5688.xml, _DXVADDI_PRIVATEBUFFER, DXVADDI_PRIVATEBUFFER
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXVADDI_PRIVATEBUFFER
+UID: NS:d3dumddi._DXVADDI_PRIVATEBUFFER
+title: "_DXVADDI_PRIVATEBUFFER"
+author: windows-driver-content
+description: The DXVADDI_PRIVATEBUFFER structure describes a private buffer that a nonstandard decoder uses to perform a decode operation.
+old-location: display\dxvaddi_privatebuffer.htm
+old-project: display
+ms.assetid: 3e41472c-4c9d-4727-af08-a350e1967ef0
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: d3dumddi/DXVADDI_PRIVATEBUFFER, DXVADDI_PRIVATEBUFFER structure [Display Devices], display.dxvaddi_privatebuffer, DXVA2_Structs_90012dba-8a0c-4685-a528-1a57265e5688.xml, _DXVADDI_PRIVATEBUFFER, DXVADDI_PRIVATEBUFFER
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	d3dumddi.h
+apiname:
+-	DXVADDI_PRIVATEBUFFER
+product: Windows
+targetos: Windows
+req.typenames: DXVADDI_PRIVATEBUFFER
 ---
 
 # _DXVADDI_PRIVATEBUFFER structure

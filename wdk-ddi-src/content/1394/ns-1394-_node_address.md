@@ -1,41 +1,46 @@
 ---
-UID : NS:1394._NODE_ADDRESS
-title : "_NODE_ADDRESS"
-author : windows-driver-content
-description : The NODE_ADDRESS structure specifies the 10-bit bus number and 6-bit node number that serve as the node address for a 1394 node.
-old-location : ieee\node_address.htm
-old-project : IEEE
-ms.assetid : ecafa166-356e-48d6-84c4-0f0c339289ac
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : PNODE_ADDRESS, 1394stct_4b87009c-620b-4840-aea3-52e059d388cd.xml, PNODE_ADDRESS structure pointer [Buses], *PNODE_ADDRESS, NODE_ADDRESS, _NODE_ADDRESS, IEEE.node_address, NODE_ADDRESS structure [Buses], 1394/PNODE_ADDRESS, 1394/NODE_ADDRESS
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : 1394.h
-req.include-header : 1394.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NODE_ADDRESS, *PNODE_ADDRESS
+UID: NS:1394._NODE_ADDRESS
+title: "_NODE_ADDRESS"
+author: windows-driver-content
+description: The NODE_ADDRESS structure specifies the 10-bit bus number and 6-bit node number that serve as the node address for a 1394 node.
+old-location: ieee\node_address.htm
+old-project: IEEE
+ms.assetid: ecafa166-356e-48d6-84c4-0f0c339289ac
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: PNODE_ADDRESS, 1394stct_4b87009c-620b-4840-aea3-52e059d388cd.xml, PNODE_ADDRESS structure pointer [Buses], *PNODE_ADDRESS, NODE_ADDRESS, _NODE_ADDRESS, IEEE.node_address, NODE_ADDRESS structure [Buses], 1394/PNODE_ADDRESS, 1394/NODE_ADDRESS
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: 1394.h
+req.include-header: 1394.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	1394.h
+apiname:
+-	NODE_ADDRESS
+product: Windows
+targetos: Windows
+req.typenames: NODE_ADDRESS, *PNODE_ADDRESS
 ---
 
 # _NODE_ADDRESS structure

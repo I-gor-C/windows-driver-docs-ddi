@@ -1,42 +1,47 @@
 ---
-UID : NF:rxprocs.RxFsdPostRequest
-title : RxFsdPostRequest function
-author : windows-driver-content
-description : RxFsdPostRequest queues the I/O request packet (IRP) specified by an RX_CONTEXT structure to the worker queue for processing by the file system process (FSP).
-old-location : ifsk\rxfsdpostrequest.htm
-old-project : ifsk
-ms.assetid : 0b1bc248-6b8e-498c-936d-64f6ff9fa183
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : rxref_ceb83e58-1e5a-49d0-b281-50cd5067e09f.xml, RxFsdPostRequest, ifsk.rxfsdpostrequest, rxprocs/RxFsdPostRequest, RxFsdPostRequest function [Installable File System Drivers]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : rxprocs.h
-req.include-header : Rxprocs.h, Rxcontx.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.exe
-req.dll : 
-req.irql : "<= APC_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : RX_CONTEXT, *PRX_CONTEXT
-req.product : Windows 10 or later.
+UID: NF:rxprocs.RxFsdPostRequest
+title: RxFsdPostRequest function
+author: windows-driver-content
+description: RxFsdPostRequest queues the I/O request packet (IRP) specified by an RX_CONTEXT structure to the worker queue for processing by the file system process (FSP).
+old-location: ifsk\rxfsdpostrequest.htm
+old-project: ifsk
+ms.assetid: 0b1bc248-6b8e-498c-936d-64f6ff9fa183
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: rxref_ceb83e58-1e5a-49d0-b281-50cd5067e09f.xml, RxFsdPostRequest, ifsk.rxfsdpostrequest, rxprocs/RxFsdPostRequest, RxFsdPostRequest function [Installable File System Drivers]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: rxprocs.h
+req.include-header: Rxprocs.h, Rxcontx.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.exe
+req.dll: 
+req.irql: "<= APC_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	rxprocs.h
+apiname:
+-	RxFsdPostRequest
+product: Windows
+targetos: Windows
+req.typenames: RX_CONTEXT, *PRX_CONTEXT
+req.product: Windows 10 or later.
 ---
 
 

@@ -1,41 +1,46 @@
 ---
-UID : NS:hidpi._HIDP_VALUE_CAPS
-title : "_HIDP_VALUE_CAPS"
-author : windows-driver-content
-description : The HIDP_VALUE_CAPS structure contains information that describes the capability of a set of HID control values (either a single usage or a usage range).
-old-location : hid\hidp_value_caps.htm
-old-project : hid
-ms.assetid : 37084f3a-f57e-45bb-a364-157b3d155394
-ms.author : windowsdriverdev
-ms.date : 12/21/2017
-ms.keywords : hidpi/PHIDP_VALUE_CAPS, HIDP_VALUE_CAPS structure [Human Input Devices], hidpi/HIDP_VALUE_CAPS, hidstrct_cbe30aff-5a6a-40d4-9621-b8d93ebb1948.xml, _HIDP_VALUE_CAPS, *PHIDP_VALUE_CAPS, HIDP_VALUE_CAPS, PHIDP_VALUE_CAPS, hid.hidp_value_caps, PHIDP_VALUE_CAPS structure pointer [Human Input Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : hidpi.h
-req.include-header : Hidpi.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PHIDP_VALUE_CAPS, HIDP_VALUE_CAPS"
+UID: NS:hidpi._HIDP_VALUE_CAPS
+title: "_HIDP_VALUE_CAPS"
+author: windows-driver-content
+description: The HIDP_VALUE_CAPS structure contains information that describes the capability of a set of HID control values (either a single usage or a usage range).
+old-location: hid\hidp_value_caps.htm
+old-project: hid
+ms.assetid: 37084f3a-f57e-45bb-a364-157b3d155394
+ms.author: windowsdriverdev
+ms.date: 12/21/2017
+ms.keywords: hidpi/PHIDP_VALUE_CAPS, HIDP_VALUE_CAPS structure [Human Input Devices], hidpi/HIDP_VALUE_CAPS, hidstrct_cbe30aff-5a6a-40d4-9621-b8d93ebb1948.xml, _HIDP_VALUE_CAPS, *PHIDP_VALUE_CAPS, HIDP_VALUE_CAPS, PHIDP_VALUE_CAPS, hid.hidp_value_caps, PHIDP_VALUE_CAPS structure pointer [Human Input Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: hidpi.h
+req.include-header: Hidpi.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	hidpi.h
+apiname:
+-	HIDP_VALUE_CAPS
+product: Windows
+targetos: Windows
+req.typenames: "*PHIDP_VALUE_CAPS, HIDP_VALUE_CAPS"
 ---
 
 # _HIDP_VALUE_CAPS structure

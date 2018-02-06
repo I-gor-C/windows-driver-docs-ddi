@@ -1,42 +1,48 @@
 ---
-UID : NF:storport.StorPortResume
-title : StorPortResume function
-author : windows-driver-content
-description : The StorPortResume routine resumes a paused adapter.
-old-location : storage\storportresume.htm
-old-project : storage
-ms.assetid : 2a1e380b-ddad-495b-a921-ebd85525d1a6
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : storprt_3970ca06-96f5-4d0a-84b0-781145133788.xml, storport/StorPortResume, storage.storportresume, StorPortResume routine [Storage Devices], StorPortResume
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : storport.h
-req.include-header : Storport.h
-req.target-type : Universal
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Storport.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : STOR_SPINLOCK
-req.product : Windows 10 or later.
+UID: NF:storport.StorPortResume
+title: StorPortResume function
+author: windows-driver-content
+description: The StorPortResume routine resumes a paused adapter.
+old-location: storage\storportresume.htm
+old-project: storage
+ms.assetid: 2a1e380b-ddad-495b-a921-ebd85525d1a6
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: storprt_3970ca06-96f5-4d0a-84b0-781145133788.xml, storport/StorPortResume, storage.storportresume, StorPortResume routine [Storage Devices], StorPortResume
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: storport.h
+req.include-header: Storport.h
+req.target-type: Universal
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Storport.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Storport.lib
+-	Storport.dll
+apiname:
+-	StorPortResume
+product: Windows
+targetos: Windows
+req.typenames: STOR_SPINLOCK
+req.product: Windows 10 or later.
 ---
 
 

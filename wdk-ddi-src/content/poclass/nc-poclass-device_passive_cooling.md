@@ -1,41 +1,46 @@
 ---
-UID : NC:poclass.DEVICE_PASSIVE_COOLING
-title : DEVICE_PASSIVE_COOLING
-author : windows-driver-content
-description : The PassiveCooling callback routine controls the degree to which the device must throttle its performance to meet cooling requirements.
-old-location : kernel\passivecooling.htm
-old-project : kernel
-ms.assetid : 17ADC83B-53C8-43BD-9FFB-1197501FE275
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : kernel.passivecooling, PassiveCooling routine [Kernel-Mode Driver Architecture], PassiveCooling, DEVICE_PASSIVE_COOLING, DEVICE_PASSIVE_COOLING, poclass/PassiveCooling
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : poclass.h
-req.include-header : Poclass.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported starting with Windows 8.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : Called at PASSIVE_LEVEL.
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : PMI_THRESHOLD_CONFIGURATION, *PPMI_THRESHOLD_CONFIGURATION
+UID: NC:poclass.DEVICE_PASSIVE_COOLING
+title: DEVICE_PASSIVE_COOLING
+author: windows-driver-content
+description: The PassiveCooling callback routine controls the degree to which the device must throttle its performance to meet cooling requirements.
+old-location: kernel\passivecooling.htm
+old-project: kernel
+ms.assetid: 17ADC83B-53C8-43BD-9FFB-1197501FE275
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: kernel.passivecooling, PassiveCooling routine [Kernel-Mode Driver Architecture], PassiveCooling, DEVICE_PASSIVE_COOLING, DEVICE_PASSIVE_COOLING, poclass/PassiveCooling
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: poclass.h
+req.include-header: Poclass.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported starting with Windows 8.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: Called at PASSIVE_LEVEL.
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	Poclass.h
+apiname:
+-	PassiveCooling
+product: Windows
+targetos: Windows
+req.typenames: PMI_THRESHOLD_CONFIGURATION, *PPMI_THRESHOLD_CONFIGURATION
 ---
 
 

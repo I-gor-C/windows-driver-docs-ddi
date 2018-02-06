@@ -1,41 +1,46 @@
 ---
-UID : NS:pepfx._PEP_WORK_COMPLETE_PERF_STATE
-title : "_PEP_WORK_COMPLETE_PERF_STATE"
-author : windows-driver-content
-description : The PEP_WORK_COMPLETE_PERF_STATE structure describes the completion status of a previously requested update to the performance values assigned to a list of performance state (P-state) sets.
-old-location : kernel\pep_work_complete_perf_state.htm
-old-project : kernel
-ms.assetid : B28BE626-5DF1-4B55-8D1A-04B1FF2245EA
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : PPEP_WORK_COMPLETE_PERF_STATE structure pointer [Kernel-Mode Driver Architecture], _PEP_WORK_COMPLETE_PERF_STATE, pepfx/PPEP_WORK_COMPLETE_PERF_STATE, PEP_WORK_COMPLETE_PERF_STATE structure [Kernel-Mode Driver Architecture], PPEP_WORK_COMPLETE_PERF_STATE, *PPEP_WORK_COMPLETE_PERF_STATE, pepfx/PEP_WORK_COMPLETE_PERF_STATE, kernel.pep_work_complete_perf_state, PEP_WORK_COMPLETE_PERF_STATE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : pepfx.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : Supported starting with Windows 10.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPEP_WORK_COMPLETE_PERF_STATE, PEP_WORK_COMPLETE_PERF_STATE"
+UID: NS:pepfx._PEP_WORK_COMPLETE_PERF_STATE
+title: "_PEP_WORK_COMPLETE_PERF_STATE"
+author: windows-driver-content
+description: The PEP_WORK_COMPLETE_PERF_STATE structure describes the completion status of a previously requested update to the performance values assigned to a list of performance state (P-state) sets.
+old-location: kernel\pep_work_complete_perf_state.htm
+old-project: kernel
+ms.assetid: B28BE626-5DF1-4B55-8D1A-04B1FF2245EA
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: PPEP_WORK_COMPLETE_PERF_STATE structure pointer [Kernel-Mode Driver Architecture], _PEP_WORK_COMPLETE_PERF_STATE, pepfx/PPEP_WORK_COMPLETE_PERF_STATE, PEP_WORK_COMPLETE_PERF_STATE structure [Kernel-Mode Driver Architecture], PPEP_WORK_COMPLETE_PERF_STATE, *PPEP_WORK_COMPLETE_PERF_STATE, pepfx/PEP_WORK_COMPLETE_PERF_STATE, kernel.pep_work_complete_perf_state, PEP_WORK_COMPLETE_PERF_STATE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: pepfx.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: Supported starting with Windows 10.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	pepfx.h
+apiname:
+-	PEP_WORK_COMPLETE_PERF_STATE
+product: Windows
+targetos: Windows
+req.typenames: "*PPEP_WORK_COMPLETE_PERF_STATE, PEP_WORK_COMPLETE_PERF_STATE"
 ---
 
 # _PEP_WORK_COMPLETE_PERF_STATE structure

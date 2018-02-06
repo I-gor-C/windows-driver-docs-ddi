@@ -1,41 +1,46 @@
 ---
-UID : NS:ntddndis._NDIS_SWITCH_PORT_PROPERTY_CUSTOM
-title : "_NDIS_SWITCH_PORT_PROPERTY_CUSTOM"
-author : windows-driver-content
-description : The NDIS_SWITCH_PORT_PROPERTY_CUSTOM structure specifies a custom policy property for a Hyper-V extensible switch port.
-old-location : netvista\ndis_switch_port_property_custom.htm
-old-project : netvista
-ms.assetid : 5ac17c34-c71c-45a7-870f-7e135c8bd5ca
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.ndis_switch_port_property_custom, NDIS_SWITCH_PORT_PROPERTY_CUSTOM structure [Network Drivers Starting with Windows Vista], _NDIS_SWITCH_PORT_PROPERTY_CUSTOM, *PNDIS_SWITCH_PORT_PROPERTY_CUSTOM, NDIS_SWITCH_PORT_PROPERTY_CUSTOM, PNDIS_SWITCH_PORT_PROPERTY_CUSTOM, ntddndis/NDIS_SWITCH_PORT_PROPERTY_CUSTOM, PNDIS_SWITCH_PORT_PROPERTY_CUSTOM structure pointer [Network Drivers Starting with Windows Vista], ntddndis/PNDIS_SWITCH_PORT_PROPERTY_CUSTOM
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntddndis.h
-req.include-header : Ndis.h
-req.target-type : Windows
-req.target-min-winverclnt : Supported in NDIS 6.30 and later.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SWITCH_PORT_PROPERTY_CUSTOM, *PNDIS_SWITCH_PORT_PROPERTY_CUSTOM
+UID: NS:ntddndis._NDIS_SWITCH_PORT_PROPERTY_CUSTOM
+title: "_NDIS_SWITCH_PORT_PROPERTY_CUSTOM"
+author: windows-driver-content
+description: The NDIS_SWITCH_PORT_PROPERTY_CUSTOM structure specifies a custom policy property for a Hyper-V extensible switch port.
+old-location: netvista\ndis_switch_port_property_custom.htm
+old-project: netvista
+ms.assetid: 5ac17c34-c71c-45a7-870f-7e135c8bd5ca
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.ndis_switch_port_property_custom, NDIS_SWITCH_PORT_PROPERTY_CUSTOM structure [Network Drivers Starting with Windows Vista], _NDIS_SWITCH_PORT_PROPERTY_CUSTOM, *PNDIS_SWITCH_PORT_PROPERTY_CUSTOM, NDIS_SWITCH_PORT_PROPERTY_CUSTOM, PNDIS_SWITCH_PORT_PROPERTY_CUSTOM, ntddndis/NDIS_SWITCH_PORT_PROPERTY_CUSTOM, PNDIS_SWITCH_PORT_PROPERTY_CUSTOM structure pointer [Network Drivers Starting with Windows Vista], ntddndis/PNDIS_SWITCH_PORT_PROPERTY_CUSTOM
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntddndis.h
+req.include-header: Ndis.h
+req.target-type: Windows
+req.target-min-winverclnt: Supported in NDIS 6.30 and later.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	Ntddndis.h
+apiname:
+-	NDIS_SWITCH_PORT_PROPERTY_CUSTOM
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SWITCH_PORT_PROPERTY_CUSTOM, *PNDIS_SWITCH_PORT_PROPERTY_CUSTOM
 ---
 
 # _NDIS_SWITCH_PORT_PROPERTY_CUSTOM structure

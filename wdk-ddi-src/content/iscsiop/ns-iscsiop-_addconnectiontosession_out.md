@@ -1,41 +1,46 @@
 ---
-UID : NS:iscsiop._AddConnectionToSession_OUT
-title : "_AddConnectionToSession_OUT"
-author : windows-driver-content
-description : The AddConnectionToSession_OUT structure holds output data for the AddConnectionToSession method.
-old-location : storage\addconnectiontosession_out.htm
-old-project : storage
-ms.assetid : 9c7df21b-c7cd-4492-b457-6c2e82286961
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : "*PAddConnectionToSession_OUT, structs-iSCSI_d630117d-61cb-4c93-97c3-2a0c0b13b04c.xml, iscsiop/AddConnectionToSession_OUT, PAddConnectionToSession_OUT structure pointer [Storage Devices], AddConnectionToSession_OUT, PAddConnectionToSession_OUT, iscsiop/PAddConnectionToSession_OUT, _AddConnectionToSession_OUT, AddConnectionToSession_OUT structure [Storage Devices], storage.addconnectiontosession_out"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : iscsiop.h
-req.include-header : Iscsiop.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PAddConnectionToSession_OUT, AddConnectionToSession_OUT"
+UID: NS:iscsiop._AddConnectionToSession_OUT
+title: "_AddConnectionToSession_OUT"
+author: windows-driver-content
+description: The AddConnectionToSession_OUT structure holds output data for the AddConnectionToSession method.
+old-location: storage\addconnectiontosession_out.htm
+old-project: storage
+ms.assetid: 9c7df21b-c7cd-4492-b457-6c2e82286961
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: "*PAddConnectionToSession_OUT, structs-iSCSI_d630117d-61cb-4c93-97c3-2a0c0b13b04c.xml, iscsiop/AddConnectionToSession_OUT, PAddConnectionToSession_OUT structure pointer [Storage Devices], AddConnectionToSession_OUT, PAddConnectionToSession_OUT, iscsiop/PAddConnectionToSession_OUT, _AddConnectionToSession_OUT, AddConnectionToSession_OUT structure [Storage Devices], storage.addconnectiontosession_out"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: iscsiop.h
+req.include-header: Iscsiop.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	iscsiop.h
+apiname:
+-	AddConnectionToSession_OUT
+product: Windows
+targetos: Windows
+req.typenames: "*PAddConnectionToSession_OUT, AddConnectionToSession_OUT"
 ---
 
 # _AddConnectionToSession_OUT structure

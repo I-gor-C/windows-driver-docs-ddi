@@ -1,42 +1,48 @@
 ---
-UID : NF:strmini.StreamClassCompleteRequestAndMarkQueueReady
-title : StreamClassCompleteRequestAndMarkQueueReady function
-author : windows-driver-content
-description : The StreamClassCompleteRequestAndMarkQueueReady routine completes a request, and signals the class driver that the minidriver is ready to receive a new request of the same type.
-old-location : stream\streamclasscompleterequestandmarkqueueready.htm
-old-project : stream
-ms.assetid : 10d08fe7-13ab-4bdb-ab91-bac3822de8ee
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : StreamClassCompleteRequestAndMarkQueueReady, strclass-routines_c94691a3-a806-4b2a-a566-7a4a9d209a6c.xml, StreamClassCompleteRequestAndMarkQueueReady routine [Streaming Media Devices], stream.streamclasscompleterequestandmarkqueueready, strmini/StreamClassCompleteRequestAndMarkQueueReady
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : strmini.h
-req.include-header : Strmini.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Stream.lib
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PSTREAM_PRIORITY, STREAM_PRIORITY"
-req.product : Windows 10 or later.
+UID: NF:strmini.StreamClassCompleteRequestAndMarkQueueReady
+title: StreamClassCompleteRequestAndMarkQueueReady function
+author: windows-driver-content
+description: The StreamClassCompleteRequestAndMarkQueueReady routine completes a request, and signals the class driver that the minidriver is ready to receive a new request of the same type.
+old-location: stream\streamclasscompleterequestandmarkqueueready.htm
+old-project: stream
+ms.assetid: 10d08fe7-13ab-4bdb-ab91-bac3822de8ee
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: StreamClassCompleteRequestAndMarkQueueReady, strclass-routines_c94691a3-a806-4b2a-a566-7a4a9d209a6c.xml, StreamClassCompleteRequestAndMarkQueueReady routine [Streaming Media Devices], stream.streamclasscompleterequestandmarkqueueready, strmini/StreamClassCompleteRequestAndMarkQueueReady
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: strmini.h
+req.include-header: Strmini.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Stream.lib
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	Stream.lib
+-	Stream.dll
+apiname:
+-	StreamClassCompleteRequestAndMarkQueueReady
+product: Windows
+targetos: Windows
+req.typenames: "*PSTREAM_PRIORITY, STREAM_PRIORITY"
+req.product: Windows 10 or later.
 ---
 
 

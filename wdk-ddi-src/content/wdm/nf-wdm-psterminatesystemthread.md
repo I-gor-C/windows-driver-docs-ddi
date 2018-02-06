@@ -1,42 +1,47 @@
 ---
-UID : NF:wdm.PsTerminateSystemThread
-title : PsTerminateSystemThread function
-author : windows-driver-content
-description : The PsTerminateSystemThread routine terminates the current system thread.
-old-location : kernel\psterminatesystemthread.htm
-old-project : kernel
-ms.assetid : 04f9f699-0ca1-4b22-b66f-04fcf53935c4
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : k108_a8e19a60-578c-42a6-b77a-cf6c4098c815.xml, kernel.psterminatesystemthread, PsTerminateSystemThread, PsTerminateSystemThread routine [Kernel-Mode Driver Architecture], wdm/PsTerminateSystemThread
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : wdm.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : IrqlPsPassive, PowerIrpDDis, HwStorPortProhibitedDDIs
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : PASSIVE_LEVEL
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WORK_QUEUE_TYPE
-req.product : Windows 10 or later.
+UID: NF:wdm.PsTerminateSystemThread
+title: PsTerminateSystemThread function
+author: windows-driver-content
+description: The PsTerminateSystemThread routine terminates the current system thread.
+old-location: kernel\psterminatesystemthread.htm
+old-project: kernel
+ms.assetid: 04f9f699-0ca1-4b22-b66f-04fcf53935c4
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: k108_a8e19a60-578c-42a6-b77a-cf6c4098c815.xml, kernel.psterminatesystemthread, PsTerminateSystemThread, PsTerminateSystemThread routine [Kernel-Mode Driver Architecture], wdm/PsTerminateSystemThread
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: wdm.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: IrqlPsPassive, PowerIrpDDis, HwStorPortProhibitedDDIs
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: PASSIVE_LEVEL
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	PsTerminateSystemThread
+product: Windows
+targetos: Windows
+req.typenames: WORK_QUEUE_TYPE
+req.product: Windows 10 or later.
 ---
 
 

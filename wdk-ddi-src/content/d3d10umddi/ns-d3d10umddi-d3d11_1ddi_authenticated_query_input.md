@@ -1,41 +1,46 @@
 ---
-UID : NS:d3d10umddi.D3D11_1DDI_AUTHENTICATED_QUERY_INPUT
-title : D3D11_1DDI_AUTHENTICATED_QUERY_INPUT
-author : windows-driver-content
-description : Contains input data for the QueryAuthenticatedChannel(D3D11_1) function.
-old-location : display\d3d11_1ddi_authenticated_query_input.htm
-old-project : display
-ms.assetid : f7a4fb53-aa01-4279-a59a-fd92b0ceeab7
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : D3D11_1DDI_AUTHENTICATED_QUERY_ENCRYPTION_WHEN_ACCESSIBLE_GUID_COUNT, d3d10umddi/D3D11_1DDI_AUTHENTICATED_QUERY_INPUT, D3D11_1DDI_AUTHENTICATED_QUERY_RESTRICTED_SHARED_RESOURCE_PROCESS, display.d3d11_1ddi_authenticated_query_input, D3D11_1DDI_AUTHENTICATED_QUERY_PROTECTION, D3D11_1DDI_AUTHENTICATED_QUERY_RESTRICTED_SHARED_RESOURCE_PROCESS_COUNT, D3D11_1DDI_AUTHENTICATED_QUERY_CURRENT_ENCRYPTION_WHEN_ACCESSIBLE, D3D11_1DDI_AUTHENTICATED_QUERY_CHANNEL_TYPE, D3D11_1DDI_AUTHENTICATED_QUERY_ENCRYPTION_WHEN_ACCESSIBLE_GUID, D3D11_1DDI_AUTHENTICATED_QUERY_UNRESTRICTED_PROTECTED_SHARED_RESOURCE_COUNT, D3D11_1DDI_AUTHENTICATED_QUERY_OUTPUT_ID_COUNT, D3D11_1DDI_AUTHENTICATED_QUERY_OUTPUT_ID, D3D11_1DDI_AUTHENTICATED_QUERY_CRYPTO_SESSION, D3D11_1DDI_AUTHENTICATED_QUERY_ACCESSIBILITY_ATTRIBUTES, D3D11_1DDI_AUTHENTICATED_QUERY_INPUT, D3D11_1DDI_AUTHENTICATED_QUERY_INPUT structure [Display Devices], D3D11_1DDI_AUTHENTICATED_QUERY_DEVICE_HANDLE
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : d3d10umddi.h
-req.include-header : D3d10umddi.h
-req.target-type : Windows
-req.target-min-winverclnt : Windows 8
-req.target-min-winversvr : Windows Server 2012
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : D3D11_1DDI_AUTHENTICATED_QUERY_INPUT
+UID: NS:d3d10umddi.D3D11_1DDI_AUTHENTICATED_QUERY_INPUT
+title: D3D11_1DDI_AUTHENTICATED_QUERY_INPUT
+author: windows-driver-content
+description: Contains input data for the QueryAuthenticatedChannel(D3D11_1) function.
+old-location: display\d3d11_1ddi_authenticated_query_input.htm
+old-project: display
+ms.assetid: f7a4fb53-aa01-4279-a59a-fd92b0ceeab7
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: D3D11_1DDI_AUTHENTICATED_QUERY_ENCRYPTION_WHEN_ACCESSIBLE_GUID_COUNT, d3d10umddi/D3D11_1DDI_AUTHENTICATED_QUERY_INPUT, D3D11_1DDI_AUTHENTICATED_QUERY_RESTRICTED_SHARED_RESOURCE_PROCESS, display.d3d11_1ddi_authenticated_query_input, D3D11_1DDI_AUTHENTICATED_QUERY_PROTECTION, D3D11_1DDI_AUTHENTICATED_QUERY_RESTRICTED_SHARED_RESOURCE_PROCESS_COUNT, D3D11_1DDI_AUTHENTICATED_QUERY_CURRENT_ENCRYPTION_WHEN_ACCESSIBLE, D3D11_1DDI_AUTHENTICATED_QUERY_CHANNEL_TYPE, D3D11_1DDI_AUTHENTICATED_QUERY_ENCRYPTION_WHEN_ACCESSIBLE_GUID, D3D11_1DDI_AUTHENTICATED_QUERY_UNRESTRICTED_PROTECTED_SHARED_RESOURCE_COUNT, D3D11_1DDI_AUTHENTICATED_QUERY_OUTPUT_ID_COUNT, D3D11_1DDI_AUTHENTICATED_QUERY_OUTPUT_ID, D3D11_1DDI_AUTHENTICATED_QUERY_CRYPTO_SESSION, D3D11_1DDI_AUTHENTICATED_QUERY_ACCESSIBILITY_ATTRIBUTES, D3D11_1DDI_AUTHENTICATED_QUERY_INPUT, D3D11_1DDI_AUTHENTICATED_QUERY_INPUT structure [Display Devices], D3D11_1DDI_AUTHENTICATED_QUERY_DEVICE_HANDLE
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: d3d10umddi.h
+req.include-header: D3d10umddi.h
+req.target-type: Windows
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	D3d10umddi.h
+apiname:
+-	D3D11_1DDI_AUTHENTICATED_QUERY_INPUT
+product: Windows
+targetos: Windows
+req.typenames: D3D11_1DDI_AUTHENTICATED_QUERY_INPUT
 ---
 
 # D3D11_1DDI_AUTHENTICATED_QUERY_INPUT structure

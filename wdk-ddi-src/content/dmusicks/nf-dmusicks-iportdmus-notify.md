@@ -1,41 +1,46 @@
 ---
-UID : NF:dmusicks.IPortDMus.Notify
-title : IPortDMus::Notify method
-author : windows-driver-content
-description : The Notify method should be called from the miniport driver's interrupt service routine (ISR) when a hardware interrupt has occurred.
-old-location : audio\iportdmus_notify.htm
-old-project : audio
-ms.assetid : 64158ea5-23ca-42a3-9284-2b1523e616b8
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : IPortDMus::Notify, audio.iportdmus_notify, dmusicks/IPortDMus::Notify, IPortDMus interface [Audio Devices], Notify method, Notify, IPortDMus, Notify method [Audio Devices], IPortDMus interface, audmp-routines_cc818dda-ae0e-435e-8d94-f1632a4c4319.xml, Notify method [Audio Devices]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : dmusicks.h
-req.include-header : Dmusicks.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : dmusicks.h
-req.dll : 
-req.irql : Any level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DMUS_STREAM_TYPE
+UID: NF:dmusicks.IPortDMus.Notify
+title: IPortDMus::Notify method
+author: windows-driver-content
+description: The Notify method should be called from the miniport driver's interrupt service routine (ISR) when a hardware interrupt has occurred.
+old-location: audio\iportdmus_notify.htm
+old-project: audio
+ms.assetid: 64158ea5-23ca-42a3-9284-2b1523e616b8
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: IPortDMus::Notify, audio.iportdmus_notify, dmusicks/IPortDMus::Notify, IPortDMus interface [Audio Devices], Notify method, Notify, IPortDMus, Notify method [Audio Devices], IPortDMus interface, audmp-routines_cc818dda-ae0e-435e-8d94-f1632a4c4319.xml, Notify method [Audio Devices]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: dmusicks.h
+req.include-header: Dmusicks.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: dmusicks.h
+req.dll: 
+req.irql: Any level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	dmusicks.h
+apiname:
+-	IPortDMus.Notify
+product: Windows
+targetos: Windows
+req.typenames: DMUS_STREAM_TYPE
 ---
 
 

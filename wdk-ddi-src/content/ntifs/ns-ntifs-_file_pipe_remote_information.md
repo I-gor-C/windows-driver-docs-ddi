@@ -1,41 +1,46 @@
 ---
-UID : NS:ntifs._FILE_PIPE_REMOTE_INFORMATION
-title : "_FILE_PIPE_REMOTE_INFORMATION"
-author : windows-driver-content
-description : The FILE_PIPE_REMOTE_INFORMATION structure contains information about the remote end of a named pipe.
-old-location : ifsk\file_pipe_remote_information.htm
-old-project : ifsk
-ms.assetid : e0e62227-5e84-45bd-9127-f5bbb30ba6f3
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : "_FILE_PIPE_REMOTE_INFORMATION, PFILE_PIPE_REMOTE_INFORMATION, FILE_PIPE_REMOTE_INFORMATION structure [Installable File System Drivers], ifsk.file_pipe_remote_information, ntifs/PFILE_PIPE_REMOTE_INFORMATION, FILE_PIPE_REMOTE_INFORMATION, PFILE_PIPE_REMOTE_INFORMATION structure pointer [Installable File System Drivers], *PFILE_PIPE_REMOTE_INFORMATION, ntifs/FILE_PIPE_REMOTE_INFORMATION"
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ntifs.h
-req.include-header : FltKernel.h, Ntifs.h
-req.target-type : Windows
-req.target-min-winverclnt : Available in Windows 2000 and later versions of the Windows operating system.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PFILE_PIPE_REMOTE_INFORMATION, FILE_PIPE_REMOTE_INFORMATION"
+UID: NS:ntifs._FILE_PIPE_REMOTE_INFORMATION
+title: "_FILE_PIPE_REMOTE_INFORMATION"
+author: windows-driver-content
+description: The FILE_PIPE_REMOTE_INFORMATION structure contains information about the remote end of a named pipe.
+old-location: ifsk\file_pipe_remote_information.htm
+old-project: ifsk
+ms.assetid: e0e62227-5e84-45bd-9127-f5bbb30ba6f3
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: "_FILE_PIPE_REMOTE_INFORMATION, PFILE_PIPE_REMOTE_INFORMATION, FILE_PIPE_REMOTE_INFORMATION structure [Installable File System Drivers], ifsk.file_pipe_remote_information, ntifs/PFILE_PIPE_REMOTE_INFORMATION, FILE_PIPE_REMOTE_INFORMATION, PFILE_PIPE_REMOTE_INFORMATION structure pointer [Installable File System Drivers], *PFILE_PIPE_REMOTE_INFORMATION, ntifs/FILE_PIPE_REMOTE_INFORMATION"
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ntifs.h
+req.include-header: FltKernel.h, Ntifs.h
+req.target-type: Windows
+req.target-min-winverclnt: Available in Windows 2000 and later versions of the Windows operating system.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ntifs.h
+apiname:
+-	FILE_PIPE_REMOTE_INFORMATION
+product: Windows
+targetos: Windows
+req.typenames: "*PFILE_PIPE_REMOTE_INFORMATION, FILE_PIPE_REMOTE_INFORMATION"
 ---
 
 # _FILE_PIPE_REMOTE_INFORMATION structure

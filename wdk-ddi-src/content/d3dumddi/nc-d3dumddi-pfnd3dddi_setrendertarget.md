@@ -1,41 +1,46 @@
 ---
-UID : NC:d3dumddi.PFND3DDDI_SETRENDERTARGET
-title : PFND3DDDI_SETRENDERTARGET
-author : windows-driver-content
-description : The SetRenderTarget function sets the render target surface.
-old-location : display\setrendertarget.htm
-old-project : display
-ms.assetid : 067378bd-a2d8-4c83-9436-531519eadaa3
-ms.author : windowsdriverdev
-ms.date : 12/29/2017
-ms.keywords : display.setrendertarget, SetRenderTarget callback function [Display Devices], SetRenderTarget, PFND3DDDI_SETRENDERTARGET, PFND3DDDI_SETRENDERTARGET, d3dumddi/SetRenderTarget, UserModeDisplayDriver_Functions_c6c2e714-ac5c-4106-98da-1d87a322c652.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : d3dumddi.h
-req.include-header : D3dumddi.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Windows Vista and later versions of the Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : DXGK_PTE
+UID: NC:d3dumddi.PFND3DDDI_SETRENDERTARGET
+title: PFND3DDDI_SETRENDERTARGET
+author: windows-driver-content
+description: The SetRenderTarget function sets the render target surface.
+old-location: display\setrendertarget.htm
+old-project: display
+ms.assetid: 067378bd-a2d8-4c83-9436-531519eadaa3
+ms.author: windowsdriverdev
+ms.date: 12/29/2017
+ms.keywords: display.setrendertarget, SetRenderTarget callback function [Display Devices], SetRenderTarget, PFND3DDDI_SETRENDERTARGET, PFND3DDDI_SETRENDERTARGET, d3dumddi/SetRenderTarget, UserModeDisplayDriver_Functions_c6c2e714-ac5c-4106-98da-1d87a322c652.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: d3dumddi.h
+req.include-header: D3dumddi.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	d3dumddi.h
+apiname:
+-	SetRenderTarget
+product: Windows
+targetos: Windows
+req.typenames: DXGK_PTE
 ---
 
 

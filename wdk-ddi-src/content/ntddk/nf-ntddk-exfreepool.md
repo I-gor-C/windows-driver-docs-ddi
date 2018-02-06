@@ -1,41 +1,46 @@
 ---
-UID : NF:ntddk.ExFreePool
-title : ExFreePool macro
-author : windows-driver-content
-description : The ExFreePool routine deallocates a block of pool memory.
-old-location : kernel\exfreepool.htm
-old-project : kernel
-ms.assetid : c26f9b28-396d-40de-bdc3-287fc3ac4113
-ms.author : windowsdriverdev
-ms.date : 1/4/2018
-ms.keywords : wdm/ExFreePool, ExFreePool, k102_134b475a-f669-4f1e-8836-f41945d7230c.xml, kernel.exfreepool, ExFreePool routine [Kernel-Mode Driver Architecture]
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : macro
-req.header : ntddk.h
-req.include-header : Wdm.h, Ntddk.h, Ntifs.h
-req.target-type : Universal
-req.target-min-winverclnt : Available starting with Windows 2000.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : DoubleExFreePool
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : NtosKrnl.lib
-req.dll : NtosKrnl.exe
-req.irql : "<= DISPATCH_LEVEL (see Remarks section)"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
+UID: NF:ntddk.ExFreePool
+title: ExFreePool macro
+author: windows-driver-content
+description: The ExFreePool routine deallocates a block of pool memory.
+old-location: kernel\exfreepool.htm
+old-project: kernel
+ms.assetid: c26f9b28-396d-40de-bdc3-287fc3ac4113
+ms.author: windowsdriverdev
+ms.date: 1/4/2018
+ms.keywords: wdm/ExFreePool, ExFreePool, k102_134b475a-f669-4f1e-8836-f41945d7230c.xml, kernel.exfreepool, ExFreePool routine [Kernel-Mode Driver Architecture]
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: macro
+req.header: ntddk.h
+req.include-header: Wdm.h, Ntddk.h, Ntifs.h
+req.target-type: Universal
+req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: DoubleExFreePool
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
+req.irql: "<= DISPATCH_LEVEL (see Remarks section)"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	NtosKrnl.exe
+apiname:
+-	ExFreePool
+product: Windows
+targetos: Windows
+req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 ---
 
 

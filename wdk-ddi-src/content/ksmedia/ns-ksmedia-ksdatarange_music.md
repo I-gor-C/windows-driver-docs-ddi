@@ -1,41 +1,46 @@
 ---
-UID : NS:ksmedia.KSDATARANGE_MUSIC
-title : KSDATARANGE_MUSIC
-author : windows-driver-content
-description : The KSDATARANGE_MUSIC structure specifies a range of DirectMusic MIDI formats.
-old-location : audio\ksdatarange_music.htm
-old-project : audio
-ms.assetid : 2ada5d1c-9c46-4f7b-99e5-72aa8f6fee9f
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : aud-prop_5c82e83d-000e-440e-bfcb-8daef30f5056.xml, PKSDATARANGE_MUSIC structure pointer [Audio Devices], KSDATARANGE_MUSIC, audio.ksdatarange_music, *PKSDATARANGE_MUSIC, PKSDATARANGE_MUSIC, KSDATARANGE_MUSIC structure [Audio Devices], ksmedia/KSDATARANGE_MUSIC, ksmedia/PKSDATARANGE_MUSIC
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : struct
-req.header : ksmedia.h
-req.include-header : Ksmedia.h
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PKSDATARANGE_MUSIC, KSDATARANGE_MUSIC"
+UID: NS:ksmedia.KSDATARANGE_MUSIC
+title: KSDATARANGE_MUSIC
+author: windows-driver-content
+description: The KSDATARANGE_MUSIC structure specifies a range of DirectMusic MIDI formats.
+old-location: audio\ksdatarange_music.htm
+old-project: audio
+ms.assetid: 2ada5d1c-9c46-4f7b-99e5-72aa8f6fee9f
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: aud-prop_5c82e83d-000e-440e-bfcb-8daef30f5056.xml, PKSDATARANGE_MUSIC structure pointer [Audio Devices], KSDATARANGE_MUSIC, audio.ksdatarange_music, *PKSDATARANGE_MUSIC, PKSDATARANGE_MUSIC, KSDATARANGE_MUSIC structure [Audio Devices], ksmedia/KSDATARANGE_MUSIC, ksmedia/PKSDATARANGE_MUSIC
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: struct
+req.header: ksmedia.h
+req.include-header: Ksmedia.h
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	HeaderDef
+apilocation:
+-	ksmedia.h
+apiname:
+-	KSDATARANGE_MUSIC
+product: Windows
+targetos: Windows
+req.typenames: "*PKSDATARANGE_MUSIC, KSDATARANGE_MUSIC"
 ---
 
 # KSDATARANGE_MUSIC structure

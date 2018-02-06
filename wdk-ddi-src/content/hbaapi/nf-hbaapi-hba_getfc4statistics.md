@@ -1,41 +1,46 @@
 ---
-UID : NF:hbaapi.HBA_GetFC4Statistics
-title : HBA_GetFC4Statistics function
-author : windows-driver-content
-description : The HBA_GetFC4Statistics routine retrieves traffic statistics that a specific FC-4 protocol has collected for the indicated port and local adapter.
-old-location : storage\hba_getfc4statistics.htm
-old-project : storage
-ms.assetid : 9c86c753-dddf-488d-b332-4b79602c454a
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : fibreHBA_rtns_483a1f57-5e5b-4919-a61b-5853ffb5be6f.xml, HBA_GetFC4Statistics routine [Storage Devices], storage.hba_getfc4statistics, HBA_GetFC4Statistics, hbaapi/HBA_GetFC4Statistics
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : hbaapi.h
-req.include-header : Hbaapi.h
-req.target-type : Desktop
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Hbaapi.lib
-req.dll : Hbaapi.dll
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : HBA_WWNTYPE
+UID: NF:hbaapi.HBA_GetFC4Statistics
+title: HBA_GetFC4Statistics function
+author: windows-driver-content
+description: The HBA_GetFC4Statistics routine retrieves traffic statistics that a specific FC-4 protocol has collected for the indicated port and local adapter.
+old-location: storage\hba_getfc4statistics.htm
+old-project: storage
+ms.assetid: 9c86c753-dddf-488d-b332-4b79602c454a
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: fibreHBA_rtns_483a1f57-5e5b-4919-a61b-5853ffb5be6f.xml, HBA_GetFC4Statistics routine [Storage Devices], storage.hba_getfc4statistics, HBA_GetFC4Statistics, hbaapi/HBA_GetFC4Statistics
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: hbaapi.h
+req.include-header: Hbaapi.h
+req.target-type: Desktop
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Hbaapi.lib
+req.dll: Hbaapi.dll
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	DllExport
+apilocation:
+-	Hbaapi.dll
+apiname:
+-	HBA_GetFC4Statistics
+product: Windows
+targetos: Windows
+req.typenames: HBA_WWNTYPE
 ---
 
 

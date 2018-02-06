@@ -1,41 +1,46 @@
 ---
-UID : NC:ks.PFNKSDEFAULTFREE
-title : PFNKSDEFAULTFREE
-author : windows-driver-content
-description : An AVStream minidriver's AVStrMiniAllocatorFreeFrame routine frees the specified frame.
-old-location : stream\avstrminiallocatorfreeframe.htm
-old-project : stream
-ms.assetid : ac8dd796-bc14-4b63-a0cb-5200cc1f0ce2
-ms.author : windowsdriverdev
-ms.date : 1/9/2018
-ms.keywords : stream.avstrminiallocatorfreeframe, AVStrMiniAllocatorFreeFrame, AVStrMiniAllocatorFreeFrame routine [Streaming Media Devices], AVStrMiniAllocatorFreeFrame, PFNKSDEFAULTFREE, PFNKSDEFAULTFREE, ks/AVStrMiniAllocatorFreeFrame, avstclbk_c8c89d05-d36c-4a86-b92f-5465c1bc3eb2.xml
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : callback
-req.header : ks.h
-req.include-header : Ks.h
-req.target-type : Desktop
-req.target-min-winverclnt : Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : KEYWORDSELECTOR
+UID: NC:ks.PFNKSDEFAULTFREE
+title: PFNKSDEFAULTFREE
+author: windows-driver-content
+description: An AVStream minidriver's AVStrMiniAllocatorFreeFrame routine frees the specified frame.
+old-location: stream\avstrminiallocatorfreeframe.htm
+old-project: stream
+ms.assetid: ac8dd796-bc14-4b63-a0cb-5200cc1f0ce2
+ms.author: windowsdriverdev
+ms.date: 1/9/2018
+ms.keywords: stream.avstrminiallocatorfreeframe, AVStrMiniAllocatorFreeFrame, AVStrMiniAllocatorFreeFrame routine [Streaming Media Devices], AVStrMiniAllocatorFreeFrame, PFNKSDEFAULTFREE, PFNKSDEFAULTFREE, ks/AVStrMiniAllocatorFreeFrame, avstclbk_c8c89d05-d36c-4a86-b92f-5465c1bc3eb2.xml
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: callback
+req.header: ks.h
+req.include-header: Ks.h
+req.target-type: Desktop
+req.target-min-winverclnt: Available in Microsoft Windows XP and later operating systems and DirectX 8.0 and later DirectX versions.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	UserDefined
+apilocation:
+-	ks.h
+apiname:
+-	AVStrMiniAllocatorFreeFrame
+product: Windows
+targetos: Windows
+req.typenames: KEYWORDSELECTOR
 ---
 
 

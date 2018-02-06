@@ -1,41 +1,47 @@
 ---
-UID : NF:ndis.NdisCmDispatchIncomingCall
-title : NdisCmDispatchIncomingCall function
-author : windows-driver-content
-description : NdisCmDispatchIncomingCall informs the client of an incoming call on a SAP previously registered by that client.
-old-location : netvista\ndiscmdispatchincomingcall.htm
-old-project : netvista
-ms.assetid : 2172aeec-8502-414e-9d01-9292c0eb7ce8
-ms.author : windowsdriverdev
-ms.date : 1/18/2018
-ms.keywords : netvista.ndiscmdispatchincomingcall, NdisCmDispatchIncomingCall, condis_call_manager_ref_892a99ac-d4f0-4f4b-9656-a43c99d67aca.xml, NdisCmDispatchIncomingCall function [Network Drivers Starting with Windows Vista], ndis/NdisCmDispatchIncomingCall
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : function
-req.header : ndis.h
-req.include-header : Ndis.h
-req.target-type : Desktop
-req.target-min-winverclnt : Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisCmDispatchIncomingCall   (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisCmDispatchIncomingCall   (NDIS 5.1)) in Windows XP.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : Irql_CallManager_Function
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : Ndis.lib
-req.dll : 
-req.irql : "<= DISPATCH_LEVEL"
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
+UID: NF:ndis.NdisCmDispatchIncomingCall
+title: NdisCmDispatchIncomingCall function
+author: windows-driver-content
+description: NdisCmDispatchIncomingCall informs the client of an incoming call on a SAP previously registered by that client.
+old-location: netvista\ndiscmdispatchincomingcall.htm
+old-project: netvista
+ms.assetid: 2172aeec-8502-414e-9d01-9292c0eb7ce8
+ms.author: windowsdriverdev
+ms.date: 1/18/2018
+ms.keywords: netvista.ndiscmdispatchincomingcall, NdisCmDispatchIncomingCall, condis_call_manager_ref_892a99ac-d4f0-4f4b-9656-a43c99d67aca.xml, NdisCmDispatchIncomingCall function [Network Drivers Starting with Windows Vista], ndis/NdisCmDispatchIncomingCall
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: function
+req.header: ndis.h
+req.include-header: Ndis.h
+req.target-type: Desktop
+req.target-min-winverclnt: Supported for NDIS 6.0 and NDIS 5.1 drivers (see    NdisCmDispatchIncomingCall   (NDIS 5.1)) in Windows Vista. Supported for NDIS 5.1 drivers (see    NdisCmDispatchIncomingCall   (NDIS 5.1)) in Windows XP.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: Irql_CallManager_Function
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: Ndis.lib
+req.dll: 
+req.irql: "<= DISPATCH_LEVEL"
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	LibDef
+apilocation:
+-	ndis.lib
+-	ndis.dll
+apiname:
+-	NdisCmDispatchIncomingCall
+product: Windows
+targetos: Windows
+req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 ---
 
 

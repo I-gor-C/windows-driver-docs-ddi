@@ -1,41 +1,46 @@
 ---
-UID : NF:portcls.IMiniportWaveRT.GetDeviceDescription
-title : IMiniportWaveRT::GetDeviceDescription method
-author : windows-driver-content
-description : The GetDeviceDescription method returns a pointer to a DEVICE_DESCRIPTION structure describing the device.
-old-location : audio\iminiportwavert_getdevicedescription.htm
-old-project : audio
-ms.assetid : c6c0da06-c304-4d2d-907c-ccbb141c385b
-ms.author : windowsdriverdev
-ms.date : 12/14/2017
-ms.keywords : GetDeviceDescription, GetDeviceDescription method [Audio Devices], IMiniportWaveRT interface, IMiniportWaveRT, portcls/IMiniportWaveRT::GetDeviceDescription, IMiniportWaveRT interface [Audio Devices], GetDeviceDescription method, audmp-routines_3a5441ed-a935-42ea-84be-29f1f6b6db07.xml, GetDeviceDescription method [Audio Devices], IMiniportWaveRT::GetDeviceDescription, audio.iminiportwavert_getdevicedescription
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : method
-req.header : portcls.h
-req.include-header : 
-req.target-type : Universal
-req.target-min-winverclnt : Available in Windows Vista and later Windows operating systems.
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : portcls.h
-req.dll : 
-req.irql : Passive level
-topictype : 
-apitype : 
-apilocation : 
-apiname : 
-product : Windows
-targetos : Windows
-req.typenames : "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
+UID: NF:portcls.IMiniportWaveRT.GetDeviceDescription
+title: IMiniportWaveRT::GetDeviceDescription method
+author: windows-driver-content
+description: The GetDeviceDescription method returns a pointer to a DEVICE_DESCRIPTION structure describing the device.
+old-location: audio\iminiportwavert_getdevicedescription.htm
+old-project: audio
+ms.assetid: c6c0da06-c304-4d2d-907c-ccbb141c385b
+ms.author: windowsdriverdev
+ms.date: 12/14/2017
+ms.keywords: GetDeviceDescription, GetDeviceDescription method [Audio Devices], IMiniportWaveRT interface, IMiniportWaveRT, portcls/IMiniportWaveRT::GetDeviceDescription, IMiniportWaveRT interface [Audio Devices], GetDeviceDescription method, audmp-routines_3a5441ed-a935-42ea-84be-29f1f6b6db07.xml, GetDeviceDescription method [Audio Devices], IMiniportWaveRT::GetDeviceDescription, audio.iminiportwavert_getdevicedescription
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: method
+req.header: portcls.h
+req.include-header: 
+req.target-type: Universal
+req.target-min-winverclnt: Available in Windows Vista and later Windows operating systems.
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: portcls.h
+req.dll: 
+req.irql: Passive level
+topictype:
+-	APIRef
+-	kbSyntax
+apitype:
+-	COM
+apilocation:
+-	portcls.h
+apiname:
+-	IMiniportWaveRT.GetDeviceDescription
+product: Windows
+targetos: Windows
+req.typenames: "*PPC_EXIT_LATENCY, PC_EXIT_LATENCY"
 ---
 
 

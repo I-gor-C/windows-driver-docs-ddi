@@ -1,38 +1,38 @@
 ---
-UID : NF:wpprecorder.WppRecorderLogCreate
-title : WppRecorderLogCreate macro
-author : windows-driver-content
-description : The WppRecorderLogCreate method creates a buffer to contain the recorder log.
-old-location : devtest\wpprecorderlogcreate.htm
-old-project : devtest
-ms.assetid : 103796C6-989F-4FE3-A8E6-4B8F5648E521
-ms.author : windowsdriverdev
-ms.date : 1/10/2018
-ms.keywords : WppRecorderLogCreate
-ms.prod : windows-hardware
-ms.technology : windows-devices
-ms.topic : macro
-req.header : wpprecorder.h
-req.include-header : 
-req.target-type : Windows
-req.target-min-winverclnt : 
-req.target-min-winversvr : 
-req.kmdf-ver : 
-req.umdf-ver : 
-req.alt-api : WppRecorderLogCreate
-req.alt-loc : Wpprecorder.h
-req.ddi-compliance : 
-req.unicode-ansi : 
-req.idl : 
-req.max-support : 
-req.namespace : 
-req.assembly : 
-req.type-library : 
-req.lib : 
-req.dll : 
-req.irql : 
-req.typenames : "*PWNODE_HEADER, WNODE_HEADER"
-req.product : Windows 10 or later.
+UID: NF:wpprecorder.WppRecorderLogCreate
+title: WppRecorderLogCreate macro
+author: windows-driver-content
+description: The WppRecorderLogCreate method creates a buffer to contain the recorder log.
+old-location: devtest\wpprecorderlogcreate.htm
+old-project: devtest
+ms.assetid: 103796C6-989F-4FE3-A8E6-4B8F5648E521
+ms.author: windowsdriverdev
+ms.date: 1/10/2018
+ms.keywords: WppRecorderLogCreate
+ms.prod: windows-hardware
+ms.technology: windows-devices
+ms.topic: macro
+req.header: wpprecorder.h
+req.include-header: 
+req.target-type: Windows
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.alt-api: WppRecorderLogCreate
+req.alt-loc: Wpprecorder.h
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+req.lib: 
+req.dll: 
+req.irql: 
+req.typenames: *PWNODE_HEADER, WNODE_HEADER
+req.product: Windows 10 or later.
 ---
 
 
